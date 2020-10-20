@@ -1,0 +1,34 @@
+2. Variables aléatoires discrètes
+****************************************
+
+Tribu Borélienne
+	On appelle ouvert, un ensemble ouvert donc qui ne contient aucun point de sa frontière.
+
+	On note :math:`\mathbb{R}^d` le produit cartésien de d fois l'ensemble :math:`\mathbb{R}`.
+
+	La tribu borélienne est une tribu engendré par l'ensemble des ouverts d'Omega.
+
+		* Comme la tribu borélienne est engendrée par l'ensemble des ouverts de oméga, elle les contient tous.
+		* C'est une tribu donc elle contient les complémentaires de tous les ouverts, donc tous les fermés.
+		* C'est une tribu donc elle contient toute réunion d'ouverts et de fermés
+
+2.2.1 Loi discrètes
+~~~~~~~~~~~~~~~~~~~~
+
+.. 2.2.1.1 Poisson ~~~~~~~~~~~~~~~~~~~~
+	2.2.1.2 Exponentielle ~~~~~~~~~~~~~~~~~~~~~~~
+ 	3. Variables aléatoires continues/à densité *************************************************
+	4. Fonction caractéristiques *************************************************
+		espérance exponentielle, caractériser une loi
+	5. Convergence *************************************************
+		suites de v.a. et théorèmes limites (théorie des grands nombres)
+
+Non traité
+	* Support d'une loi de probabilité
+	* Probabilité image
+	* Loi marginale
+	* Formule de décomposition
+	* Loi d'un vecteur
+	* Indépendance si une famille est indépendante
+
+Fonction indicatrice

@@ -6,7 +6,8 @@ Probabilités
 1. Espaces de probabilités
 ********************************
 
-On note
+1.1 Notations
+~~~~~~~~~~~~~~~~
 
 * :math:`\omega` (petit-omega) un résultat possible
 * :math:`\Omega` (omega) l'ensemble des résultats possibles
@@ -16,8 +17,12 @@ On note
 * :math:`\mathbb{P}(A)` la probabilité de l'évènement A, comprise entre 0 et 1
 * :math:`\mathbb{P}(A) \cap \mathbb{P}(B) = \emptyset` deux événements incompatibles
 
-2. Variables aléatoires discrètes
-****************************************
+.. note::
+
+	Le nombre d'éléments d'un ensemble E, appelé cardinal de E est généralement noté \|E\| ou #E ou card(E) ou card E.
+
+1.2 Définitions
+~~~~~~~~~~~~~~~~
 
 Tribu
 	:math:`\mathbb{F}` est une tribu sur :math:`\Omega`, soit un ensemble d'éléments de :math:`\Omega`,
@@ -27,50 +32,42 @@ Tribu
 		* la tribu est stable par complémentaire
 		* la tribu est stable par union dénombrable
 
-Tribu Borélienne
-	On appelle ouvert, un ensemble ouvert tel que ]0,255[ soit un ensemble qui ne contient aucun point de sa
-	frontière.
-
-	On note :math:`\mathbb{R}^d` le produit cartésien de d fois l'ensemble :math:`\mathbb{R}`.
-
-	La tribu borélienne est une tribu engendré par l'ensemble des ouverts d'Omega.
-
-		* Comme la tribu borélienne est engendrée par l'ensemble des ouverts de oméga, elle les contient tous.
-		* C'est une tribu donc elle contient les complémentaires de tous les ouverts, donc tous les fermés.
-		* C'est une tribu donc elle contient toute réunion d'ouverts et de fermés
-
-.. http://www.les-mathematiques.net/phorum/read.php?3,779703,779703
-	http://dictionnaire.sensagent.leparisien.fr/Tribu%20bor%C3%A9lienne/fr-fr/
-	https://www.techno-science.net/definition/5291.html
-	https://www.ilemaths.net/sujet-tribu-borelienne-402711.html
-	https://fr.wikipedia.org/wiki/Tribu_bor%C3%A9lienne
-	Yann J#2613 et FennecFeu#4212
-
 Probabilité
-	Il s'agit d'une fonction :math:`\mathbb{P}(\mathbb{F}) \to [0,1]`. Quelques propriétés :
+	| Soit un espace de probabilité :math:`(\Omega, F)`.
+
+	Il s'agit d'une application :math:`\mathbb{P}(F) \to [0,1]`, soit les probabilités des éléments de l'ensemble F
+	sont toutes comprises dans l'intervalle 0-1.
+
+	Quelques propriétés :
+		* :math:`\mathbb{P}(\Omega) = 1` et :math:`\mathbb{P}(\emptyset) = 0`
 		* :math:`\mathbb{P}(\overline{A}) = 1 - \mathbb{P}(A)`
 		* :math:`\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cap B)`
 		* :math:`A \subset B \to \mathbb{P}(A) \le \mathbb{P}(B)`
 
-2.1 Oméga non fini/dénombrable
----------------------------------------
+2. Variable aléatoire discrète (:math:`\Omega` fini)
+******************************************************
 
-Non traité
+:math:`\Omega` fini
+	Un ensemble fini est un ensemble qui est dénombrable. Si Omega est fini, cela signifie que les probabilités
+	sont par exemple dans :math:`\mathbb{B}` ou dans :math:`\mathbb{Z}`.
 
-2.2 Oméga fini/dénombrable
----------------------------------------
+	Lorsque oméga est fini, on prends :math:`\mathbb{F}=P(\Omega)` soit l'ensemble des parties (donc tous les sous-ensembles
+	possibles) d'Omega.
 
-Lorsque oméga est fini, on prends :math:`\mathbb{F}=P(\Omega)` soit l'ensemble des parties (donc tous les sous-ensembles
-possibles) d'Omega.
-
-Probabilité uniforme
-	Soit :math:`\Omega` fini et dénombrable, :math:`\forall{w} \in \Omega \ alors \ \mathbb{P}(w) = \frac{1}{card(\Omega)}`.
-
-	Dans ce cas, :math:`\mathbb{P}(A) = \frac{card(A)}{card(\Omega)}`
+Loi discrète
+	On définit :math:`\mathbb{P}_{X_w}{k} = \mathbb{P}(X_w=k)` la probabilité que :math:`X_w` prenne la valeur k.
 
 	.. note::
 
-		Le cardinal = nombre d'éléments est aussi noté `|` ou `#`.
+			w est optionnel s'il n'y a qu'une seule loi X.
+
+.. note::
+
+	Dans le cas discret, la tribu étant l'ensemble de parties d'Omega, on peut écrire l'espace
+	de probabilité :math:`(\Omega, \mathbb{P})` au lieu de :math:`(\Omega, \mathbb{F}, \mathbb{P})`
+
+2.1 Probabilités
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Probabilité conditionnelle
 	Soit A et B deux évènements, il est possible de calculer la probabilités de A sachant celle de B
@@ -83,29 +80,127 @@ Probabilité conditionnelle
 
 		Par produit en croix, on obtient :math:`\mathbb{P}(A \cap B) = \mathbb{P}(B) * \mathbb{P}(A|B)`.
 
-2.2.1 Loi discrètes
-~~~~~~~~~~~~~~~~~~~~
+Probabilité uniforme
+	Soit :math:`\Omega` fini et dénombrable, :math:`\forall{w} \in \Omega \ alors \ \mathbb{P}(w) = \frac{1}{card(\Omega)}`.
 
-2.2.1.1 Poisson
-~~~~~~~~~~~~~~~~~~~~
+	Dans ce cas, :math:`\mathbb{P}(A) = \frac{card(A)}{card(\Omega)} = \frac{|A|}{|\Omega|}`
 
-Poisson
+2.2 Variables aléatoires indépendantes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-2.2.1.2 Exponentielle
-~~~~~~~~~~~~~~~~~~~~~~~
+Variables aléatoires indépendantes
+	Les variables :math:`X_1, ..., X_n` sont indépendantes (noté :math:`\perp` (perp)) si
 
-Exponentielle
+	.. math::
 
-3. Variables aléatoires continues/à densité
-*************************************************
+		\mathbb{P}(X_1, ..., X_n = xn) = \prod_{i=1}^n \mathbb{P}(X_i = xi)
+
+	.. note::
+
+		En texte, la probabilité des événements :math:`X_1, ..., X_n` est égale au
+		produit des probabilités de chaque événement.
+
+		.. code-block:: c
+
+				//on lance 1 dé, 1 pièce, 1 dé
+				//la probabilité pour la somme des dés dépends de 2 événements disjoints (1er et 3ème)
+				p(somme dés = 7, pièce = F) = 1/6 * 1/2
+
+				//p(A) = |A|/|Ω| = \|{toutes les combinaisons qui font 7}\| / \|{toutes les combinaisons possibles}|
+				p(somme dés=7) = (p(6+1) + p(2+5) + p(4+3) +
+ 						p(1+6) + p(5+2) + p(3+4))
+ 						/ (6*6) //6 possibilités au premier lancé, 6 au second
+ 				= 6/36 = 1/6
+
+2.3 Lois de probabilités
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Loi binomiale
+	Une loi binomiale notée B(n,p) correspond au nombre de succès sur n épreuves, avec une probabilité
+	p de succès.
+
+	.. math::
+
+		\begin{cases}
+		\mathbb{P}(X=k) = 0 & si & k > n  \\
+		\mathbb{P}(X=k) =  C_n^k p^k(1-p)^{n-k}  & sinon  \\
+		\end{cases}
+
+	.. note::
+
+		Il faut lire ici
+			* Si k (nombre de succès) est plus grand que n (nombre d'épreuves), alors la probabilité d'avoir k succès sur n est 0
+			* sinon, alors on multiplie la probabilité d'avoir k succès (:math:`p^k`) par la probabilité d'avoir n-k échecs (:math:`(1-p)^{n-k}`).
+
+				* on a n-k échecs car on a pris les k premiers tirages bons (succès) car on veut k succès donc le reste des n tirages sont forcément des échecs
+				* on doit cependant multiplier le tout par les permutation de notre tirage (:math:`C_n^k`)
+
+Loi de poisson
+	L'objectif est de trouver le nombre de succès sachant un certain nombre d'épreuves n indépendantes.
+	On suppose n très grand et p très petit.
+
+	Notation : :math:`\lambda` ~ :math:`\mathbb{P}(\lambda)`
+
+	On suppose que :math:`\lambda` = np = E(X) et donc p = :math:`\frac{\lambda}{n}`
+
+	Loi de poisson : :math:`\mathbb{P}(X=k) = \frac{\lambda^k *  e^{-\lambda}}{k!}`
+
+Loi géométrique
+	Soit N éléments au total et K le nombre d'éléments voulus. On fait n tirages sans remise.
+	La loi géométrique permet de déterminer le premier succès
+
+	Notation : X ~ H(N, K, n)
+
+	.. math::
+
+		X_i \ = \ \begin{cases}
+		1 & si & le & tirage & est & bon \\
+		0 & sinon
+		 \end{cases}
+
+	:math:`EX_i = \frac{K}{N} \ et \ V(X_i) = \frac{K}{N} * (1 - \frac{K}{N})`
+
+	:math:`EX = n * EX_i = n * \frac{K}{N}`
+
+	:math:`VX = n * \frac{K}{N} * (1 - \frac{K}{N}) * \frac{N-n}{N-1}`
 
 
-4. Fonction caractéristiques
-*************************************************
+2.3 Espérance
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. espérance exponentielle, caractériser une loi
+prochainement
 
-5. Convergence
-*************************************************
 
-.. suites de v.a. et théorèmes limites (théorie des grands nombres)
+
+
+
+
+
+
+
+
+
+
+------
+
+Crédits
+	| Oleg LOUKIANOV (enseignant à l'IUT de Sénart-Fontainebleau)
+	| Vathana LY VATH (enseignant à l'ENSIIE)
+
+Sources
+	* Tribu et Tribu borélienne
+		* http://www.les-mathematiques.net/phorum/read.php?3,779703,779703
+		* http://dictionnaire.sensagent.leparisien.fr/Tribu%20bor%C3%A9lienne/fr-fr/
+		* https://www.techno-science.net/definition/5291.html
+		* https://www.ilemaths.net/sujet-tribu-borelienne-402711.html
+		* https://fr.wikipedia.org/wiki/Tribu_bor%C3%A9lienne
+		* Discord: Yann J#2613 et FennecFeu#4212
+	* Lois
+		* http://www.math.univ-toulouse.fr/~rau/retro%20stat%20inf/c1.pdf
+		* https://misterprepa.net/les-lois-discretes-formules-mathematiques/
+		* http://maths.cnam.fr/Membres/ghorbanzadeh/lois.pdf
+		* https://fr.wikipedia.org/wiki/Loi_de_probabilit%C3%A9#Lois_discr%C3%A8tes
+		* https://fr.wikipedia.org/wiki/Loi_de_probabilit%C3%A9_marginale
+		* https://fr.wikipedia.org/wiki/Loi_de_Bernoulli
+	* autre
+		* http://atomurl.net/math/
