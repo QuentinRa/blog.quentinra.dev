@@ -21,8 +21,7 @@ copyright = '2020, Quentin Ra'
 author = 'Quentin Ra'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.1'
-
+release = '0.0.3'
 
 # -- General configuration ---------------------------------------------------
 
@@ -71,5 +70,6 @@ html_context['github_repo'] = 'ramsamy.ws-res'
 html_context['github_version'] = 'master/'
 
 # -- GraphViz configuration ----------------------------------
+
 graphviz_dot='C:/graphviz/bin/dot.exe'
 graphviz_output_format = 'svg'

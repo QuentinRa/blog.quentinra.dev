@@ -1,0 +1,8 @@
+..
+	perror
+
+-Wall -Wextra
+
+aptitude install manpages-dev
+
+build-essential installe make gcc ...
