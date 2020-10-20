@@ -9,6 +9,11 @@ notamment :
   Fontainebleau (Seine-et-Marne, France).
 * durant mes années à l'ENSIIE, mon école d'ingénieur, à Évry
 
+Les crédits appropriés ainsi que les sources sont en
+bas de page de chaque cours.
+
+J'ai rédigé la totalité des cours présents, depuis mes notes de cours principalement.
+
 Dernière mise à jour le |today|.
 
 .. toctree::
@@ -25,5 +30,13 @@ Dernière mise à jour le |today|.
     :name: system
     :maxdepth: 1
 
-    Linux et Bash                  <system/bash/index>
+    Architecture Linux             <system/linux/index>
+    Bash et Scripts                <system/linux/bash>
     Docker				                 <system/docker/index>
+
+.. toctree::
+    :caption: Programmation impérative
+    :name: imperative
+    :maxdepth: 1
+
+    Langage C					             <imperative/c/index>

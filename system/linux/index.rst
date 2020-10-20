@@ -1,6 +1,6 @@
-.. _bash:
+.. _linux:
 
-Linux et Bash
+Architecture Linux
 ================================
 
 1. Introduction

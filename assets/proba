@@ -12,10 +12,27 @@ Tribu Borélienne
 		* C'est une tribu donc elle contient les complémentaires de tous les ouverts, donc tous les fermés.
 		* C'est une tribu donc elle contient toute réunion d'ouverts et de fermés
 
-2.2.1 Loi discrètes
-~~~~~~~~~~~~~~~~~~~~
 
-.. 2.2.1.1 Poisson ~~~~~~~~~~~~~~~~~~~~
+Loi géométrique
+	Soit N éléments au total et K le nombre d'éléments voulus. On fait n tirages sans remise.
+	La loi géométrique permet de déterminer le premier succès
+
+	Notation : X ~ H(N, K, n)
+
+	.. math::
+
+		X_i \ = \ \begin{cases}
+		1 & si & le & tirage & est & bon \\
+		0 & sinon
+		 \end{cases}
+
+	:math:`EX_i = \frac{K}{N} \ et \ V(X_i) = \frac{K}{N} * (1 - \frac{K}{N})`
+
+	:math:`EX = n * EX_i = n * \frac{K}{N}`
+
+	:math:`VX = n * \frac{K}{N} * (1 - \frac{K}{N}) * \frac{N-n}{N-1}`
+
+
 	2.2.1.2 Exponentielle ~~~~~~~~~~~~~~~~~~~~~~~
  	3. Variables aléatoires continues/à densité *************************************************
 	4. Fonction caractéristiques *************************************************

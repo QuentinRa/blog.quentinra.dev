@@ -34,9 +34,9 @@ Degré
 	Il s'agit du nombre de voisins.
 
 	* Dans un graphe non orienté, c'est :math:`d(X) = |\Gamma(X)|`.
-	* Dans un Graphe orienté c'est : :math:`|\Gamma^{+}(X)| + |\Gamma^{-}(X)| = d^+(X) + d^-(X)`
-		soit la somme du demi-degré extérieur + demi-degré intérieur.
-
+	*
+		Dans un Graphe orienté c'est : :math:`|\Gamma^{+}(X)| + |\Gamma^{-}(X)| = d^+(X) + d^-(X)` soit la
+		somme du demi-degré extérieur + demi-degré intérieur.
 		On parle de prédécesseur (entrants) et de successeur (sortants).
 
 Incidence
@@ -56,9 +56,11 @@ Graphes particuliers
 
 		Il existe également :
 
-			* les graphes dit k-régulier : tous les sommets ont le degré
+			* les graphes dit k-régulier : tous les sommets sont de degré k
 			* les graphes complets : chaque sommet est adjacent à tous les autres (:math:`|V| = \frac{n(n-1)}{2}`)
-			* les graphes bi-parti : les sommets sont classé en deux groupes, ceux d'un degré = a et ceux d'un degré=b (:math:`b > a \ge 1`).
+			*
+				les graphes bi-parti : les sommets sont classé en deux groupes, ceux d'un degré = a et ceux
+				d'un degré=b (:math:`b > a \ge 1`).
 
 
 2. Propriétés complexes

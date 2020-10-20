@@ -21,9 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/proba" beforeDir="false" afterPath="$PROJECT_DIR$/assets/proba" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/bash/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/docker/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/docker/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/bash/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,24 +48,24 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/_template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/linux" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\system\linux" />
+      <recent name="C:\Users\quent\Documents\texas-res\_template" />
+      <recent name="C:\Users\quent\Documents\texas-res\_ext" />
+      <recent name="C:\Users\quent\Documents\texas-res" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\bash" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\_template" />
       <recent name="C:\Users\quent\Documents\texas-res\_ext" />
       <recent name="C:\Users\quent\Documents\texas-res" />
       <recent name="C:\Users\quent\Documents\texas-res\assets" />
-      <recent name="C:\Users\quent\Documents\texas-res\out" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\_template" />
-      <recent name="C:\Users\quent\Documents\texas-res\_ext" />
-      <recent name="C:\Users\quent\Documents\texas-res" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\bash" />
       <recent name="C:\Users\quent\Documents\texas-res\out" />
     </key>
   </component>
@@ -81,7 +84,7 @@
       <workItem from="1603127589733" duration="13234000" />
       <workItem from="1603190644024" duration="2417000" />
       <workItem from="1603194328253" duration="1091000" />
-      <workItem from="1603195648558" duration="15957000" />
+      <workItem from="1603195648558" duration="24648000" />
     </task>
     <servers />
   </component>

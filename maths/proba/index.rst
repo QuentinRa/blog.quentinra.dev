@@ -141,34 +141,90 @@ Loi de poisson
 
 	Notation : :math:`\lambda` ~ :math:`\mathbb{P}(\lambda)`
 
-	On suppose que :math:`\lambda` = np = E(X) et donc p = :math:`\frac{\lambda}{n}`
-
 	Loi de poisson : :math:`\mathbb{P}(X=k) = \frac{\lambda^k *  e^{-\lambda}}{k!}`
 
+	| Espérance : E(X) = np = :math:`\lambda`
+	| Variance : :math:`\sigma = \frac{\lambda}{n}`
+
+.. hint::
+
+	Ceci ce démontre avec la formule de l'espérance.
+
+		:math:`\sum_{k \in \mathbb{N}} k * P(X=k)`
+
+		:math:`= \sum_{k \in \mathbb{N}} k *  \frac{\lambda^k *  e^{-\lambda}}{k!}`
+
+		:math:`= \sum_{k \in \mathbb{N}} k *  \frac{\lambda^k *  e^{-\lambda}}{k!}`
+
+		:math:`= e^{-\lambda} * \sum_{k \in \mathbb{N}}  \frac{\lambda^k}{(k-1)!}`
+
+		:math:`= \lambda e^{-\lambda} * \sum_{k \in \mathbb{N}} \frac{\lambda^{k-1}}{(k-1)!}`
+
+		par developments en série de e^x`
+
+		:math:`= \lambda e^{-\lambda} * e^{\lambda}`
+
+		:math:`= \lambda e^{-\lambda+\lambda} =`
+
+		:math:`= \lambda e^{0}`
+
+		:math:`= \lambda * 1`
+
+		:math:`= \lambda`
+
 Loi géométrique
-	Soit N éléments au total et K le nombre d'éléments voulus. On fait n tirages sans remise.
-	La loi géométrique permet de déterminer le premier succès
+	On fait n tirages sans remise. La loi géométrique permet de déterminer le premier succès
 
-	Notation : X ~ H(N, K, n)
+	Notation : T ~ :math:`G(p)`
 
-	.. math::
+	Loi géométrique : :math:`\mathbb{P}(X=k) = (1-p)^{k-1}p`
 
-		X_i \ = \ \begin{cases}
-		1 & si & le & tirage & est & bon \\
-		0 & sinon
-		 \end{cases}
-
-	:math:`EX_i = \frac{K}{N} \ et \ V(X_i) = \frac{K}{N} * (1 - \frac{K}{N})`
-
-	:math:`EX = n * EX_i = n * \frac{K}{N}`
-
-	:math:`VX = n * \frac{K}{N} * (1 - \frac{K}{N}) * \frac{N-n}{N-1}`
-
+	| Espérance : :math:`\mathbb{E}(X) =`
+	| Variance : :math:`\mathbb{V}(X) =`
 
 2.3 Espérance
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-prochainement
+**2.3.1 Définition**
+
+Espérance
+	On définit l'espérance (~moyenne) notée :math:`\mathbb{E}(X)` ou :math:`\mathbb{E}X` ou :math:`\mathbb{E}[X]`
+
+	.. math::
+
+		\sum_{x_i \in \Omega}^{} x_i \mathbb{P}{(X_w = x_i )}
+
+	.. note::
+
+		Cette formule dit que l'espérance c'est la somme de chacune des valeurs d'Omega multiplié par
+		sa probabilité.
+
+	L'espérance est
+
+		* Linéaire : :math:`\mathbb{E}[X, \lambda Y] = \mathbb{E}[Y] + \lambda \mathbb{E}[Y]`
+		* Positivité : Si X vad positive, ps :math:`\mathbb{E}(X) \ge 0`
+		* Croissance : :math:`X \ge Y` ps :math:`\mathbb{E}(X) \ge \mathbb{E}(Y)`
+
+	.. note::
+
+		ps est l'abréviation de presque sûr.
+
+**2.3.2 Inégalités**
+
+Tchebychev
+	Si a > 0 alors :math:`\mathbb{P}( |x| \ge a) \le \frac{\mathbb{E}[X^2]}{a^2}`
+
+Jensen
+	X intégrable et :math:`\varphi` converge alors :math:`\mathbb{E}[\varphi(x)] > \varphi (\mathbb{E}[X])`
+
+Cauchy-Schwarz
+	Soit deux v.a. X, Y alors :math:`\mathbb{E}[XY]^2 \le \mathbb{E}[X^2] * \mathbb{E}[Y^2]`
+
+Markov
+	:math:`\mathbb{P}( |x| \ge a) \le \frac{\mathbb{E}[ |X| ]}{a}`
+
+2.4 Variance et co-variance
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -177,8 +233,8 @@ prochainement
 
 
 
-
-
+|
+|
 
 
 ------
@@ -202,5 +258,14 @@ Sources
 		* https://fr.wikipedia.org/wiki/Loi_de_probabilit%C3%A9#Lois_discr%C3%A8tes
 		* https://fr.wikipedia.org/wiki/Loi_de_probabilit%C3%A9_marginale
 		* https://fr.wikipedia.org/wiki/Loi_de_Bernoulli
+		* https://fr.wikipedia.org/wiki/Liste_de_lois_de_probabilit%C3%A9
+		* https://fr.wikipedia.org/wiki/Loi_g%C3%A9om%C3%A9trique
+		* Poisson
+
+			* https://www.techno-science.net/definition/6212.html
+			* http://www.jybaudot.fr/Probas/parampoisson.html
+
 	* autre
 		* http://atomurl.net/math/
+		* https://fr.wikipedia.org/wiki/Formulaire_de_d%C3%A9veloppements_en_s%C3%A9ries
+		* https://fr.wikiversity.org/wiki/S%C3%A9rie_enti%C3%A8re
