@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1j3SOdW56l2HX11sGuoiPU6zFXG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_template" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\_template" />
+      <recent name="C:\Users\quent\Documents\texas-res\_ext" />
+      <recent name="C:\Users\quent\Documents\texas-res" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets" />
+      <recent name="C:\Users\quent\Documents\texas-res\out" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\_template" />
+      <recent name="C:\Users\quent\Documents\texas-res\_ext" />
+      <recent name="C:\Users\quent\Documents\texas-res" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\bash" />
+      <recent name="C:\Users\quent\Documents\texas-res\out" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="" />
+      <created>1603031250187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603031250187</updated>
+      <workItem from="1603031251205" duration="2768000" />
+      <workItem from="1603034027917" duration="16924000" />
+      <workItem from="1603057246018" duration="1557000" />
+      <workItem from="1603098927407" duration="9173000" />
+      <workItem from="1603127589733" duration="13234000" />
+      <workItem from="1603190644024" duration="2417000" />
+      <workItem from="1603194328253" duration="1091000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <envs>
+      <env key="Path" value="C:\Users\quent\AppData\Local\Programs\Python\Python39\;C:\Users\quent\AppData\Local\Programs\Python\Python39\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath\;C:\Windows\system32\;C:\Windows\;C:\Windows\System32\Wbem\;C:\Windows\System32\WindowsPowerShell\v1.0\\;C:\Windows\System32\OpenSSH\\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR\;C:\Program Files\Git\cmd\;C:\wamp64\bin\php\php7.4.0\;C:\composer\;C:\Program Files\PuTTY\\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\\;C:\Program Files\Git LFS\;c:\opt\apache-maven-3.6.3\bin\;C:\Users\quent\AppData\Local\Microsoft\WindowsApps\;C:\Users\quent\AppData\Roaming\Composer\vendor\bin\;C:\Program Files\Java\java-1.8.0-openjdk\bin\;C:\Program Files\Java\jdk-11.0.2\bin\;c:\opt\apache-maven-3.6.3\bin\;" />
+    </envs>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="601" y="279" key="#Other_File_Types" timestamp="1603040187608">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="601" y="279" key="#Other_File_Types/0.0.1536.824@0.0.1536.824" timestamp="1603040187608" />
+    <state x="524" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603195296181">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="524" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1603195296181" />
+    <state x="202" y="164" width="902" height="505" key="EnvironmentVariablesDialog" timestamp="1603047236484">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="202" y="164" width="902" height="505" key="EnvironmentVariablesDialog/0.0.1536.824@0.0.1536.824" timestamp="1603047236484" />
+    <state x="548" y="156" key="FileChooserDialogImpl" timestamp="1603034588921">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="156" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603034588921" />
+    <state x="604" y="343" key="NewPhpFileDialog" timestamp="1603191408316">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="604" y="343" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1603191408316" />
+    <state x="279" y="54" width="977" height="710" key="SettingsEditor" timestamp="1603195411332">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="279" y="54" width="977" height="710" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603195411332" />
+  </component>
+</project>
