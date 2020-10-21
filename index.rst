@@ -23,6 +23,8 @@ Dernière mise à jour le |today|.
 
     Probabilités                  <maths/proba/index>
     Théorie des graphes           <maths/graph/index>
+    Analyse numérique      				<maths/analyse/index>
+    Algèbre Matricielle    				<maths/matrix/index>
     Bric à Brac           				<maths/bric/index>
 
 .. toctree::
