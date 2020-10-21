@@ -1,0 +1,31 @@
+**à traiter**
+	https://fr.wikipedia.org/wiki/Mineur_(alg%C3%A8bre_lin%C3%A9aire)
+
+
+Polynôme caractéristique
+		https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Cayley-Hamilton
+		(revenir au cours, la fin de la page est claire)
+
+rang et noyau
+	ker (A- lam Id)
+
+	rg(A-l Id) < n
+
+A* = adjoint de A
+	https://fr.wikipedia.org/wiki/Matrice_adjointe
+
+Produit scalaire
+	forme sesquilinéaire ou hermitienne
+
+déterminant
+	https://fr.wikipedia.org/wiki/D%C3%A9terminant_(math%C3%A9matiques)
+  échanger des lignes c'est pas bon
+	on a juste addition et mul ok
+
+	méthode avec ||
+
+Trace
+	???
+
+.. Mn,m (R)
+	Vecteur (n ou m) = 1 ou R^n

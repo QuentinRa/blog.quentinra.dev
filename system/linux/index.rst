@@ -127,6 +127,23 @@ Voici un exemple: :code:`sphinx-build make -D="C:/Users/temp/" renard.txt index.
 	Cette commande existe mais les options n'exitent pas forcément pour cette commande (ceci est un
 	exemple).
 
+2.3 éditeurs de texte
+-----------------------
+
+Un éditeur de texte vous permet, comme le nom l'indique, d'éditer du texte (donc un fichier). Pär
+exemple il existe NotePad++ sous Windows.
+
+Il est existe
+	* des graphiques : `Sublime text <https://www.sublimetext.com/>`_ (logiciel), emacs, pluma
+	* en ligne de commande : vim, emacs, nano
+
+Vous pouvez aussi utiliser (non recommandé pour les débutants), des IDE (Integrated Development Environment)
+tels que :
+
+	* vscode (tous langages mais moins d'intégration)
+	* `logiciels Jetbrains <https://www.jetbrains.com/>` : Intellij IDEA (java), PHPStorm, CLion, ...
+	* ...
+
 3. Système de fichiers et Permissions
 ========================================
 

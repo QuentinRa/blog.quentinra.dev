@@ -4,39 +4,74 @@
 Matrice
 ================================
 
-1. Définitions
+1. Introduction
 =====================
 
-.. Mn,m (R)
-	Vecteur (n ou m) = 1 ou R^n
+...
 
-On note
-	* :math:`Gl_n(R)` l'ensemble des matrices inversibles
+2. Matrices particulières
+===========================
 
-Trace
-	???
+2.1 Matrices remarquables
+*************************************
+
+* Matrice nulle, toutes les valeurs sont à 0
+* Matrice carré, matrice de la forme :math:`M_{n}`
+* Matrice transposée :math:`t_A` = :math:`A^t` = Matrice inverse lignes et colonnes
+
+2.2 Matrice identité
+*************************************
+
+2.3 Vecteurs (matrice ligne/colonne)
+*************************************
+
+2.4 Matrice normales
+**************************
+
+Une matrice est normale si :math:`A A^* = A^* A`.
+
+	.. note::
+
+		Une matrice A multipliée par la transposée de la co-matrice est égale
+		à la transposée de la co-matrice multiplié par une matrice A.
+
+2.5 Matrices triangulaires
+******************************
+
+Une matrice triangulaire est soit:
+
+	* inférieure (TI) : la diagonale vaut 1, au dessus on a des 0, et en dessous des valeurs.
+	* inférieure stricte (TIS) : TI mais diagonale vaut 0.
+	* supérieure (TS) : la diagonale vaut 1, en dessous que des 0, et au dessus des valeurs.
+	* supérieure stricte (TSS) : TS mais diagonale vaut 0
+
+2.6 Matrice symétrique (:math:`\mathbb{R}`) ou hermitienne (:math:`\mathbb{C}`)
+************************************************************************************
+
+Une matrice A est symétrique si :math:`A = A^*` (donc A est égal à la transposée de la co-matrice de A).
+
+2.7 Matrice orthogonale (:math:`\mathbb{R}`) ou unitaire (:math:`\mathbb{C}`)
+************************************************************************************
+
+Une matrice est orthogonale ou unitaire si :math:`A A^* = A^* A = Id`.
+
+4. Matrices inverses
+===========================
+
+4.1 Vocabulaire et notations
+***************************************************
+
+On note :math:`Gl_n(R)` l'ensemble des matrices inversibles.
 
 Déterminant
-	https://fr.wikipedia.org/wiki/D%C3%A9terminant_(math%C3%A9matiques)
 	Le déterminant est un chiffre permettant et aider à obtenir des informations sur une matrice.
 
 	Il sert par exemple à déterminer
 		* si une matrice est inversible si :math:`det(A) \neq 0`
 		* valeurs propres d'une matrice
 
-.. échanger des lignes c'est pas bon
-	on a juste addition et mul ok
-
-	méthode avec ||
-
-Produit scalaire
-	forme sesquilinéaire ou hermitienne
-
-A* = adjoint de A
-	https://fr.wikipedia.org/wiki/Matrice_adjointe
-
 Vecteurs propres et valeurs propres
-	S'il existe un lambda non null tel que A x = \lambda x alors x est un vecteur propre de A
+	S'il existe un lambda non null tel que :math:`A x = \lambda x` alors x est un vecteur propre de A
 	pour la valeur propre lambda
 
 	On appelle élément propre le couple (lambda, x)
@@ -58,11 +93,37 @@ Vecteurs propres et valeurs propres
 Polynôme caractéristique
 	Le polynôme caractéristique de A : :math:`X_a(T) = det(A -T Id)`
 
-	https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Cayley-Hamilton
+4.2 Réduction de matrice/d'endomorphisme
+***************************************************
 
-	(revenir au cours, la fin de la page est claire)
 
-rang et noyau
-	ker (A- lam Id)
 
-	rg(A-l Id) < n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|
+|
+|
+
+-----
+
+* Denis Monnerat (enseignant à l'IUT de Sénart-Fontainebleau)
+* Jéremy Possamaï (enseignant à l'IUT de Sénart-Fontainebleau)
+* Vicent Torri (enseignant à l'ENSIIE)
+
+**Sources**
+	* Matrices (définitions)
+		* https://fr.wikipedia.org/wiki/Matrice_normale
