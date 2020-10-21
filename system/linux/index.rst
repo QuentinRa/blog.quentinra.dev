@@ -12,29 +12,29 @@ Ce cours vise à rassembler la théorie de notions telles que
 	* chemins
 	* appels systèmes
 	* Permissions
-	* etc...
+	* etc.
 
 La section :ref:`bash` est basé sur le même plan, sauf qu'il s'agit du cas pratique,
 soit comment coder (a.k.a l'implémentation) des concepts vu ici.
 
-1.1 Pourquoi linux ?
+1.1 Pourquoi Linux ?
 ***********************
 
 Linux est gratuit (la plupart des distributions), léger, généralement plus performant et open-source
 (vous avez le code-source, et pouvez le modifier et vous savez ce qu'il y a dedans).
 
-La plupart des serveurs tournent sous linux, et de nombreux ordinateurs sont également sous linux pour les raisons
+La plupart des serveurs tournent sous Linux, et de nombreux ordinateurs sont également sous Linux pour les raisons
 plus hautes.
 
-1.2 Installer linux
+1.2 Installer Linux
 ***********************
 
-J'ai rédigé un guide pour installer linux ici : :download:`installer Linux <../../assets/linux-setup.pdf>`,
+J'ai rédigé un guide pour installer Linux ici : :download:`installer Linux <../../assets/linux-setup.pdf>`,
 sinon il existe de nombreux guides.
 
-Pour les versions de linux, mon avis est :
+Pour les versions de Linux, mon avis est :
 
-		* ubuntu : simple pour des nouveaux sur linux
+		* ubuntu : simple pour des nouveaux sur Linux
 		* debian : le plus équilibré entre novices et expert
 		* archlinux : bien pour travailler
 		* fedora : beau
@@ -49,8 +49,8 @@ Certaines fois, il se peut que vous n'ayez pas d'interface graphique, seulement 
 
 .. note::
 
-	Notez que lorsque vous saisissez un mot de passe sous linux (stockés sous la forme de hash),
-	votre saisie n'est pas affiché. Il se peut également que le clavier numérique (chiffres...)
+	Notez que lorsque vous saisissez un mot de passe sous Linux (stockés sous la forme de hash),
+	votre saisie n'est pas affichée. Il se peut également que le clavier numérique (chiffres...)
 	soit désactivé.
 
 2.1 Le principe
@@ -78,17 +78,17 @@ Une commande est toujours de la forme :code:`commande [[-option] [argument]]*`.
 
 .. note::
 
-	[argument] indique que argument est optionnel
+	[argument] indique qu':code:`argument` est optionnel
 
-	[valeur]* indique qu'il peut y avoir 0, 1, n fois valeur (ex: [1]* = 1 ou 111 ou 11...1 ou ...)
+	[valeur]* indique qu'il peut y avoir 0, 1, n fois valeur (ex : [1]* = 1 ou 111 ou 11...1 ou ...)
 
 Plus d'explications :
 	* commande est une commande par exemple `ls` ou `sphinx-build`.
 		* Après le nom de la commande, il y a **toujours** un espace.
-		* Une peut ne pas avoir d'arguments
+		* Une commande peut ne pas avoir d'arguments
 		* il peut y avoir un tiret dans le nom de la commande
-	* les options d'une commande sont précédées d'un tiret du 6: :code:`-`
-		* il peut y avoir 0 options
+	* les options d'une commande sont précédées d'un tiret du 6 : :code:`-`
+		* il peut y avoir 0 option
 		* une option n'est pas forcément suivie d'un argument
 	* enfin il y a les arguments
 		* il peut y avoir des arguments sans options
@@ -97,7 +97,7 @@ Plus d'explications :
 		.. note::
 
 			Si vous voulez un argument par exemple -> Mon Fichier.pdf soit considéré comme un seul
-			argument, alors il faut mettre des doubles quotes : "Mon Fichier.pdf"
+			argument, alors il faut mettre des doubles cotes : "Mon Fichier.pdf"
 			(il existe d'autres solutions).
 
 Voici un exemple: :code:`sphinx-build make -D="C:/Users/temp/" renard.txt index.rst -f build0006.sb -s`.
@@ -112,8 +112,8 @@ Voici un exemple: :code:`sphinx-build make -D="C:/Users/temp/" renard.txt index.
 
 	Comment interpréter cette ligne ? (un peu compliqué)
 
-		Dans cette exemple, on peut imaginer que la commande `sphinx-build` propose plusieurs commandes,
-		dont :code:`make` (permet de créer quelquechose).
+		Dans cet exemple, on peut imaginer que la commande `sphinx-build` propose plusieurs commandes,
+		dont :code:`make` (permet de créer quelque chose).
 
 		L'option :code:`-D` peut servir à définir le répertoire dans lequel mettre ce qui a été créé et :code:`-f`
 		peut servir à donner le nom du fichier créé. L'option :code:`-s` (silent) sert généralement à dire que vous ne
@@ -124,16 +124,16 @@ Voici un exemple: :code:`sphinx-build make -D="C:/Users/temp/" renard.txt index.
 
 .. note::
 
-	Cette commande existe mais les options n'exitent pas forcément pour cette commande (ceci est un
+	Cette commande existe mais les options n'existent pas forcément pour cette commande (ceci est un
 	exemple).
 
 2.3 éditeurs de texte
 -----------------------
 
-Un éditeur de texte vous permet, comme le nom l'indique, d'éditer du texte (donc un fichier). Pär
+Un éditeur de texte vous permet, comme le nom l'indique, d'éditer du texte (donc un fichier). Par
 exemple il existe NotePad++ sous Windows.
 
-Il est existe
+Il en existe
 	* des graphiques : `Sublime text <https://www.sublimetext.com/>`_ (logiciel), emacs, pluma
 	* en ligne de commande : vim, emacs, nano
 
@@ -152,12 +152,12 @@ tels que :
 		Fun Fact -- "Tout est fichier sous Linux"
 
 		Les utilisateurs de Linux ont tendance à dire que tout est fichier sous linux,
-		c'est à dire que
+		c'est-à-dire que
 
-					* un disque dur;
-					* un terminal;
-					* un connexion réseau;
-					* un processus;
+					* un disque dur ;
+					* un terminal ;
+					* un connexion réseau ;
+					* un processus ;
 					* ...
 
 		sont des fichiers.
@@ -172,7 +172,7 @@ Windows        Linux             Nom       Sémantique (sens)
 ============== ===============   ========  ====================================================================
 C:\\           /                 Racine    Le point de départ de l'arborescence des fichiers
 C:\\users\user /usr/user/home/   Domicile  Le dossier utilisateur de :code:`user`, il contient vos Documents,
-               ou ~ (tilde)                votre bureau etc... :code:`~` est un raccourcis pour
+               ou ~ (tilde)                votre bureau etc... :code:`~` est un raccourci pour
                                            :code:`/usr/user/home/`
 Dossier actuel .                 Dossier   Il s'agit du dossier dans lequel vous vous trouvez
                                  Courant
@@ -180,10 +180,10 @@ Dossier actuel .                 Dossier   Il s'agit du dossier dans lequel vous
 
 .. note::
 
-	Vous entendrez pour dossier les mots : répertoire, catalogue qui sont des synonymes.
+	Vous entendrez pour dossier les mots : répertoire, catalogue, qui sont des synonymes.
 
-	Vous entendrez pour fichier le mot: fichier régulier, qui veut juste dire fichier normal (donc pas un lien,
-	ou les fichiers spéciaux (terminaux etc...)).
+	Vous entendrez pour fichier le mot : fichier régulier, qui veut juste dire fichier normal (donc pas un lien,
+	ou les fichiers spéciaux (terminaux etc.)).
 
 Chemin
 	Il s'agit d'un chemin partant tel que :code:`/usr/user/home/`.
@@ -198,7 +198,7 @@ Chemin
 
 		Il existe deux types de chemins :
 
-			* les chemins dit absolus : ils comment par :code:`/` donc par la racine.
+			* les chemins dit absolus : ils commencent par :code:`/` donc par la racine.
 			*
 				les chemins relatif : :code:`~/Bureau` est l'équivalent du chemin absolu
 				:code:`/usr/user/home/Bureau`. Un autre exemple serait un fichier dans votre
