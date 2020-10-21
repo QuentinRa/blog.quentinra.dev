@@ -21,9 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/bash" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/bash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/proba" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/proba" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/proba" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/proba" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/linux" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/linux" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -59,11 +58,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\assets" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\linux" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux" />
       <recent name="C:\Users\quent\Documents\texas-res\_template" />
       <recent name="C:\Users\quent\Documents\texas-res\_ext" />
       <recent name="C:\Users\quent\Documents\texas-res" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\bash" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -83,7 +82,7 @@
       <workItem from="1603194328253" duration="1091000" />
       <workItem from="1603195648558" duration="25900000" />
       <workItem from="1603226050560" duration="253000" />
-      <workItem from="1603263820160" duration="12290000" />
+      <workItem from="1603263820160" duration="22189000" />
     </task>
     <servers />
   </component>
