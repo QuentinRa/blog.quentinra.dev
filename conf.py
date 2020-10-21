@@ -44,7 +44,14 @@ language = 'fr'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'Readme.md']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'Readme.md',
+'.github/CONTRIBUTING.md',
+'.github/ISSUE_TEMPLATE/bug_report.md',
+'.github/ISSUE_TEMPLATE/feature_request.md',
+'.github/PULL_REQUEST_TEMPLATE/pull_request_template.md',
+'.github/SECURITY.md',
+'.github/CODE_OF_CONDUCT.md',
+]
 
 # -- Options for HTML output -------------------------------------------------
 

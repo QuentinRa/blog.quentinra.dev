@@ -202,12 +202,14 @@ Espérance
 	L'espérance est
 
 		* Linéaire : :math:`\mathbb{E}[X, \lambda Y] = \mathbb{E}[Y] + \lambda \mathbb{E}[Y]`
-		* Positivité : Si X vad positive, ps :math:`\mathbb{E}(X) \ge 0`
-		* Croissance : :math:`X \ge Y` ps :math:`\mathbb{E}(X) \ge \mathbb{E}(Y)`
+		* Positive : Si X vad positive, ps :math:`\mathbb{E}(X) \ge 0`
+		* Croissante : :math:`X \ge Y` ps :math:`\mathbb{E}(X) \ge \mathbb{E}(Y)`
+		* indépendante, alors :math:`\mathbb{E}[X * Y] = \mathbb{E}[X] * \mathbb{E}[Y]`
 
 	.. note::
 
-		ps est l'abréviation de presque sûr.
+		| ps est l'abréviation de presque sûr.
+		| , (virgule) se lit "et" donc plus (+)
 
 **2.3.2 Inégalités**
 
@@ -225,6 +227,43 @@ Markov
 
 2.4 Variance et co-variance
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Variance de X
+	Il s'agit de l'écart autour de la moyenne.
+
+	.. math::
+
+		V(X) = \mathbb{E}[(X - \mathbb{E}[X])^2]
+
+		V(X) = \mathbb{E}[X^2] - \mathbb{E}[X]^2
+
+	Propriétés de la variance
+
+		* :math:`V(a + \lambda X^2) = \lambda^2 V(X)`
+		* :math:`V(X + Y) = V(X) + V(Y) - 2cov(XY)` (voir co-variance)
+
+Co-variance (ou covariance)
+	La covariance permet de calculer la variation et l'indépendance de deux
+	variables aléatoires.
+
+	.. math::
+
+		\mathbb{E}[ ( X - \mathbb{E}[X]) (Y - \mathbb{E}[Y]) ]
+
+		\mathbb{E}[XY] - \mathbb{E}[X] \mathbb{E}[Y]
+
+	Propriétés de la variance
+
+		* cov(X,X) = V(X)
+		* cov(X,Y) = cov(Y,X)
+		* :math:`cov(\lambda * X,Y) =  \lambda *cov(Y,X)`
+		* si a et b sont indépendants (:math:`\perp`) alors cov(XY) = 0 (réciproque n'est pas vraie)
+		* :math:`\mathbb{P}(X, Y) = \frac{cov(X,Y)}{\sqrt{V(X)*V(Y)}}`
+
+
+
+
+
 
 
 
@@ -265,7 +304,12 @@ Sources
 			* https://www.techno-science.net/definition/6212.html
 			* http://www.jybaudot.fr/Probas/parampoisson.html
 
-	* autre
-		* http://atomurl.net/math/
+	* Espérance, variance et covariance
+		* https://www.techno-science.net/definition/5950.html
 		* https://fr.wikipedia.org/wiki/Formulaire_de_d%C3%A9veloppements_en_s%C3%A9ries
 		* https://fr.wikiversity.org/wiki/S%C3%A9rie_enti%C3%A8re
+		* https://fr.wikipedia.org/wiki/Covariance
+		* http://dictionnaire.sensagent.leparisien.fr/Variance%20(statistiques%20et%20probabilit%C3%A9s)/fr-fr/
+
+	* autre
+		* http://atomurl.net/math/
