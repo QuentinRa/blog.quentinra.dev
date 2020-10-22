@@ -10,3 +10,5 @@ build-essential installe make gcc ...
 ls *.{jpg,jpeg,png}
 
 packages
+
+~/.bashrc

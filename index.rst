@@ -42,3 +42,10 @@ Dernière mise à jour le |today|.
     :maxdepth: 1
 
     Langage C					             <imperative/c/index>
+
+.. toctree::
+    :caption: Utilitaires
+    :name: utils
+    :maxdepth: 1
+
+    Vim (Vi IMproved)	             <utils/vim/index>
