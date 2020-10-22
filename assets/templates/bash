@@ -6,3 +6,7 @@
 aptitude install manpages-dev
 
 build-essential installe make gcc ...
+
+ls *.{jpg,jpeg,png}
+
+packages

@@ -26,9 +26,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/analyse" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/analyse" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/analyse/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/analyse/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/matrix/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/bash" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/bash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/bash.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/bash.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +94,7 @@
       <workItem from="1603379769362" duration="409000" />
       <workItem from="1603380241750" duration="4304000" />
       <workItem from="1603386767993" duration="4063000" />
+      <workItem from="1603395578398" duration="2678000" />
     </task>
     <servers />
   </component>
