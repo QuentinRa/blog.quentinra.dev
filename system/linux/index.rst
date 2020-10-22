@@ -51,7 +51,7 @@ Certaines fois, il se peut que vous n'ayez pas d'interface graphique, seulement 
 
 	Notez que lorsque vous saisissez un mot de passe sous Linux (stockés sous la forme de hash),
 	votre saisie n'est pas affichée. Il se peut également que le clavier numérique (chiffres...)
-	soit désactivé.
+	soit désactivés.
 
 2.1 Le principe
 ***********************
@@ -128,7 +128,7 @@ Voici un exemple: :code:`sphinx-build make -D="C:/Users/temp/" renard.txt index.
 	exemple).
 
 2.3 éditeurs de texte
------------------------
+************************
 
 Un éditeur de texte vous permet, comme le nom l'indique, d'éditer du texte (donc un fichier). Par
 exemple il existe NotePad++ sous Windows.
@@ -171,11 +171,16 @@ Linux et Windows ont une hiérarchie des fichiers assez similaire :
 Windows        Linux             Nom       Sémantique (sens)
 ============== ===============   ========  ====================================================================
 C:\\           /                 Racine    Le point de départ de l'arborescence des fichiers
+
 C:\\users\user /usr/user/home/   Domicile  Le dossier utilisateur de :code:`user`, il contient vos Documents,
                ou ~ (tilde)                votre bureau etc... :code:`~` est un raccourci pour
                                            :code:`/usr/user/home/`
-Dossier actuel .                 Dossier   Il s'agit du dossier dans lequel vous vous trouvez
+
+\              .                 Dossier   Il s'agit du dossier dans lequel vous vous trouvez
                                  Courant
+
+\              \.\.              Dossier   Il s'agit du dossier contenant votre dossier actuel. La racine
+                                 Parent    est son propre parent.
 ============== ===============   ========  ====================================================================
 
 .. note::
@@ -208,29 +213,220 @@ Chemin
 
 	Un fichier qui commence par un . est un fichier caché.
 
+.. note::
+
+	Si vous mettez /.../ avec un nombre pair de slashes, alors les slashes sont fusionnés.
 
 3.2 Utilisateurs et Groupes
 *****************************
 
+Les utilisateurs sous Linux sont répartis en 3 groupes :
+	* :code:`u` : utilisateur, vous êtes le seul dans ce groupe
+	* :code:`g` : groupe, il s'agit de votre "groupe principal"
+	* :code:`o` : tous les autres utilisateurs
+
+.. note::
+
+		Pour :code:`g`, vous pouvez par exemple créer un groupe "Famille" ou "Promo-année"
+		et parce que vous pourrez définir des permissions particulières pour les membres de ce
+		groupe (ex: ils peuvent tous lire les dossiers de /pub/cours/ ...).
+
 3.3 Permissions
 *****************************
 
+Les permissions sont
+	* `r` : read, sa valeur est `4`
+	* `w` : write, sa valeur est `2`
+	* `x` : execute, sa valeur est `1`
 
+Assigner des permissions, c'est donner une valeur à chacun des groupes
+d'utilisateurs :code:`u`, :code:`g`, :code:`o`.
 
+Si vous assignez u=7 alors vous aurez les droits 4 (read) + write (2) + x (exécuter).
 
+.. note::
 
+	Vous pouvez retrouver la notation 751 par exemple donc chiffre1chiffre2chiffre3 qui signifie
+	u=chiffre1, g=chiffre2, o=chiffre3
 
+.. hint::
 
+	Read permet de lire un fichier, Write permet de créer et modifier un dossier/fichier.
 
+	Enfin exécuter, permet de traverser un répertoire (par exemple vous pouvez bloquer
+	à un répertoire mais pas aux enfants) et d'exécuter un script.
 
+.. note::
 
+	Il existe un groupe d'utilisateur spéciaux : les `super administrateurs`. Certaines actions
+	nécessitent des permissions ultra élevées (a.k.a :code:`root`).
 
+4. Motifs (glob pattern) et Manipulations de textes
+====================================================
 
+4.1 Motifs
+*************
 
+En Shell, les chaines de caractères contenant \*, ?, [, ... sont des motifs,
+donc le shell remplace notre texte par le motif correspondant seulement s’il en existe un sinon
+il reste inchangé.
 
+Les wildcards (\*, ?, [ ) sont :
 
+	*	:code:`x` qui signifie exactement un fois le caractère x
+	*	:code:`*` qui signifie un chaine de caractères possiblement vide
+	*	:code:`?` qui signifie exactement un caractère
+	*	:code:`[...]` qui signifie exactement un caractère parmi ceux entre crochet
+	*	:code:`[^...]` ou :code:`[ !...]` signifie exactement un caractère qui ne soit pas parmi ceux entre crochet.
 
+.. note::
 
+	Il est également possible d'utiliser des intervals : 	:code:`[a-z]` ou :code:`[0-9]`
 
+Il existe quelques expressions pour éviter de devoir tapper certains motifs
 
+	* :code:`[[ :digit :]]` pour un nombre
+	* :code:`[[ :upper :]]` pour une majuscule
+	* :code:`[[ :lower :]]` pour une minuscule
+	* :code:`[[ :space :]]` pour les caractères espace, tabulation, saut de ligne…
+	* :code:`[[ :alnum :]]` pour tous les caractères alphanumériques.
 
+.. note::
+
+	On peut protéger un caractère avec \ ou encore avec [caractère] (donc seulement caractère dans l’intervalle).
+
+	Ex : \$ ou [$] pour faire ‘$‘ .
+
+4.2 Regex ou expression régulières
+***************************************
+
+Alternativement aux motifs, il est possible d'utiliser des expressions régulières.
+
+La plupart des motifs existent en regex, sauf
+
+	* :code:`?` (exactement un caractère) a été remplacé par :code:`.`
+
+De nouveaux symbols ont été introduits :
+
+	* :code:`x?` signifie que x est optionnel
+	* :code:`x+` signifie au moins une fois x
+	* :code:`$x` signifie une ligne qui commence par x
+	* :code:`x^` signifie une ligne qui finit par x
+	* :code:`x{n, m}` signifie au moins n fois x et au maximum m fois. Notez que n et m sont facultatifs.
+
+.. warning::
+
+	Souvent (pour ne pas dire tout le temps), seulement la partie qui matche (=correspond)
+	à votre expression régulière est ~retournée/affichée.
+
+	Pär exemple si vous avez un fichier que que vous exécutez la regex suivant dessus, en affichant
+	les matches :code:`x^` : pour chaque ligne qui finit par x, alors  :code:`x` sera affiché (et non
+	la vraie ligne qui finie par x).
+
+.. note::
+
+	Vous pouvez grouper des caractères pour leur appliquer une expression régulière en les mettant
+	entre parenthèses: :code:`(ab)+` signifie au moins une fois :code:`ab`.
+
+4.3 Utilisation
+***********************
+
+Les motifs/regex sont utilisés partout :
+	* vous recherchez un fichier dont vous ne connaissez que l'extension par exemple
+	* vous voulez obtenir tous les fichiers (*)
+	* vous voulez modifier les lignes d'un fichiers qui sont d'un certain format.
+
+5. Encodage des entiers
+========================================
+
+5.1 Entiers signés
+***********************
+
+On utilisera des base principalement les base 2 (binaire), 8 (octal) et 16 (hexadécimal) pour représenter des
+nombres.
+
+Les valeurs prises sont de 0 à n-1 avec n le nombre de la base.
+
+On représentera les entiers jusqu’à 9 puis les lettres de l’alphabet de A à Z (base max 35 -> 0-Z).
+
+5.1.1 BASE 2
+--------------
+
+Soit un nombre, je recherche une combinaison pour l’obtenir, je mets 1 si j’ai utilisé un chiffre sinon 0.
+
+Inversement, si j’ai un chiffre binaire, je fais la somme des 1 multipliés par la puissance de 2 correspondante
+pour obtenir mon nombre.
+
+=========== =========== =========== =========== =========== =========== =========== =========== ===========
+:math:`2^8` :math:`2^7` :math:`2^6` :math:`2^5` :math:`2^4` :math:`2^3` :math:`2^2` :math:`2^1` :math:`2^0`
+=========== =========== =========== =========== =========== =========== =========== =========== ===========
+256         128         64          32          16          8           4           2           1
+=========== =========== =========== =========== =========== =========== =========== =========== ===========
+
+.. code:: bash
+
+		#Ex avec 12
+		12
+		# décompose avec des valeurs du tableau
+		= 8 + 4
+		#on réécris le tableau avec des 1 dans les 2^ utilisés pour écrire 12
+		= 0*256+0*128+0*64+0*32+0*16+1*8+1*4+0*2+0*1
+		# ce qui donne
+		000001100
+		# puis pour revenir à 12, on multiple par 2^ position du 1 dans le tableau
+		# ce qui donne (de droite vers le dernier 1 à gauche)
+		0*2^0+0*2^1+1*2^2+1*2^3 = 2^2+2^3 = 4 + 8 = 12
+
+5.1.2 BASE 8
+--------------
+
+Pour la base 8, on part du principe que un nombre en base 8 ⇔ 3 en base 2,
+on rajoute des zéros devant notre nombre binaire pour convertir s’il en manque.
+
+5.1.3 BASE 16
+--------------
+
+Sur le même principe, un nombre en base 16 ⇔ 4 en base 2.
+
+5.2 Entiers non signés
+***********************
+
+Dans la machine, les entiers sont signé : ceux commençant par (bit de poids fort) 0 sont positif tandis que
+ceux commençant par un 1 sont négatifs.
+Sur n bits signés valeurs vont de : :math:`]-2^{n-1}, 0] \cup ]0,2^{n-1}-1[`.
+
+5.2.1 Pour écrire un chiffre négatif (complément à 2)
+----------------------------------------------------------
+
+* on fait l’inverse dit complément à 1 (1 devient 0 et 0 devient 1)
+* on ajoute 1 au résultat.
+
+5.2.2 Pour lire un chiffre
+----------------------------------------------------------
+
+* Si le bit de poids fort est 1, on fait le complément à 2 et on met un 1 devant le résultat.
+* Si le bit de poids fort est 0, on fait comme pour les entiers non signés.
+
+5.2.3 Faire des calculs
+----------------------------------------------------------
+
+* On fait le complément si un nombre est négatif puis on fait la somme.
+* Pour faire une soustraction, je fais le complément du 2e membre (peu importe son signe).
+* Il peut y avoir des débordement (on ne peut pas obtenir le bon résultat car il n’est pas dans notre intervalle) :
+* Si le bit de signe et le dernier bit de retenu (vaut 0 si pas de retenue) sont identiques alors il n’y a pas de débordement.
+* S’ils sont différent alors il y a un débordement (=overflow)
+
+6. Scripts
+========================================
+
+...
+
+7. Processus et signaux
+========================================
+
+...
+
+8. Appels systèmes
+========================================
+
+...
