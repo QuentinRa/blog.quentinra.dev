@@ -1,0 +1,115 @@
+#!/bin/bash
+#
+# usage : <archive.shz> <dir-src>
+#
+# Write an encoded version of all the files of a directory
+# 
+# 	archive.shz = archive name
+# 	dir-src = source folder
+#
+# When the archive is executed, then the archive is decompressed
+
+############### BUILTIN COMMANDS
+
+# Encoded a file and write the output on stdout
+#
+# usage: <file>
+#
+# Print error if there is no file or
+# file is not a regular file
+#
+function encodefile(){
+  # check file
+	if [ $# != 1 ]; then
+		echo "encodeFile:ERROR: usage: <file>"
+		return 1
+	fi
+
+  # check file is regular file
+	if [ ! -f $1 ]; then
+		echo "encodeFile:ERROR: $1 must be a regular file."
+		return 2
+	fi
+
+  # echo empty line
+	echo
+
+  # <<EOF means the beginning of input
+	echo "base64 -d > $1.tmp <<EOF"
+	# here the input for base64 -d is the encrypted text
+	echo "$(base64 $1)"
+	# EOF tag for end of input
+	echo "EOF"
+	echo "chmod 644 $1.tmp"
+
+	return
+}
+
+function encodedir(){
+	if [ $# != 1 ]; then
+		echo "encodeFile:ERROR: usage: <dir>"
+		return 1
+	fi
+
+	if [ ! -d $1 ]; then
+		echo "encodeFile:ERROR: $1 must be a directory."
+		return 2
+	fi
+
+  # get all files in the directory, separated by a space
+  # such as:file1 file2 file 3
+	files=$(find $1 -maxdepth 1 | tr '\n' ' ');
+
+  # for each file
+	for i in $files; do
+	  # if file equals file name, then just pass (find toto.txt return toto.txt among all the values)
+		if [ $i == $1 ]; then # prevent infinite recursivity
+			continue;
+		fi
+		# if file
+		if [ -f $i ]; then
+			encodefile $i
+	  # else directory
+		elif [ -d $i -a $i != "." -a $i != ".." ]; then
+			echo "mkdir $i"
+			encodedir $i
+		else # error
+			echo "encodeFile:WARNING: $i is not a regular file." >&2
+		fi
+	done
+
+	return
+}
+
+############### BUILTIN COMMANDS - END
+
+# check script arguments
+
+if [ $# != 2  ]; then
+	echo "$0:ERROR: usage $0 <archive.shz> <dir-src>"
+	exit 1
+fi
+
+a=$(echo $1 | grep -q "[.]shz$"; echo $?)
+
+if [[ $a != 0 ]]; then
+	echo "$0:ERROR: $1 must ends with .shz"
+	exit 2
+fi
+
+if [ ! -d $2  ]; then
+	echo "$2 must be a directory"
+	exit 3
+fi
+
+echo "$0:DEBUG: arguments ok"
+
+# create file.shz
+echo "" > $1
+# add script header
+echo "#!/bin/bash" > $1
+
+# encode dir
+encodedir $2 >> $1
+
+exit

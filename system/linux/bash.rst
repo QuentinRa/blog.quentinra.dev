@@ -43,3 +43,38 @@ Bash et Scripts bash
 
 ...
 
+
+4. Motifs (glob pattern) et Manipulations de textes
+====================================================
+
+...
+
+5. Encodage des entiers
+========================================
+
+...
+
+6. Scripts
+========================================
+
+...
+
+7. Processus et signaux
+========================================
+
+...
+
+8. Appels systèmes
+========================================
+
+...
+
+
+9. Exercices
+================================
+
+.. toctree::
+    :name: exercices
+    :maxdepth: 1
+
+    Exercices Scripts			      <exercices/scripts>

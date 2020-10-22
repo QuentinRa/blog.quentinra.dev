@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/linux-setup.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/linux/linux-setup.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/bash.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/bash.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/linux/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,25 +45,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/linux" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/linux/ensiie" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\assets\templates" />
-      <recent name="C:\Users\quent\Documents\texas-res\_template" />
-      <recent name="C:\Users\quent\Documents\texas-res\_ext" />
-      <recent name="C:\Users\quent\Documents\texas-res" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\linux\ensiie" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\linux" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux" />
       <recent name="C:\Users\quent\Documents\texas-res\_template" />
       <recent name="C:\Users\quent\Documents\texas-res\_ext" />
-      <recent name="C:\Users\quent\Documents\texas-res" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\linux\" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\linux" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\templates" />
+      <recent name="C:\Users\quent\Documents\texas-res\_template" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -86,6 +88,7 @@
       <workItem from="1603353670942" duration="356000" />
       <workItem from="1603362127835" duration="14092000" />
       <workItem from="1603379769362" duration="409000" />
+      <workItem from="1603380241750" duration="4304000" />
     </task>
     <servers />
   </component>

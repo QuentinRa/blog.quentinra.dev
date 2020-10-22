@@ -29,7 +29,7 @@ plus hautes.
 1.2 Installer Linux
 ***********************
 
-J'ai rédigé un guide pour installer Linux ici : :download:`installer Linux <../../assets/linux-setup.pdf>`,
+J'ai rédigé un guide pour installer Linux ici : :download:`installer Linux <../../assets/linux/linux-setup.pdf>`,
 sinon il existe de nombreux guides.
 
 Pour les versions de Linux, mon avis est :
