@@ -175,6 +175,12 @@ Si A est normale alors :math:`|||A||| = \rho (A)`
 
 	...
 
+:math:`\rho(A) \le ||A||`
+
+.. note::
+
+	On peut toujours trouver une norme d'une matrice pour approcher le rayon spectral.
+
 |
 |
 |

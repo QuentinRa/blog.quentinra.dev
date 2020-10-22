@@ -16,14 +16,19 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/linux-setup.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/linux/linux-setup.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/bash.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/bash.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/analyse" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/analyse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/analyse/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/analyse/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +94,7 @@
       <workItem from="1603362127835" duration="14092000" />
       <workItem from="1603379769362" duration="409000" />
       <workItem from="1603380241750" duration="4304000" />
+      <workItem from="1603386767993" duration="4063000" />
     </task>
     <servers />
   </component>
@@ -105,7 +111,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -141,10 +153,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="376" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1603309508641" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1603376992963">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1603391118403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603376992963" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603391118403" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603363019709">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

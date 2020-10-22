@@ -1,1 +1,12 @@
-http://math.univ-lyon1.fr/~pujo/analyse-num-cours.pdf
+		* https://www.i2m.univ-amu.fr/perso/thierry.gallouet/licence.d/anum.d/anum-tg2.pdf
+			* éléments page 68+ intéressants
+		* http://math.univ-lyon1.fr/~pujo/analyse-num-cours.pdf
+		* https://newikis.com/fr/Conditionnement_(analyse_num%C3%A9rique)
+		* http://dictionnaire.sensagent.leparisien.fr/Conditionnement%20(analyse%20num%C3%A9rique)/fr-fr/
+		* https://www.math.univ-paris13.fr/~halpern/teaching/MACS1_2010/systemes.pdf
+		* https://www.i2m.univ-amu.fr/perso/thierry.gallouet/licence.d/anum.d/anum-c3.pdf
+		* https://fr.wikipedia.org/wiki/Stabilit%C3%A9_num%C3%A9rique
+
+
+Le conditionnement et la stabilité permettent de quantifier les erreurs de calcul, par exemple
+les erreurs d'arrondis.
