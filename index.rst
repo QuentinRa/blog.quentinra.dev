@@ -1,20 +1,15 @@
 ##########################################
-Bienvenue mes ressources
+Bienvenue sur ramsamy.ws/ressources
 ##########################################
 
-Cette page contiendra toutes les connaissances que j'ai acquises,
-notamment :
+Ce site à pour objectif de réunir un maximum de cours
+écris par des étudiants pour des étudiants.
 
-* durant mes 2 années à l'IUT de Sénart-Fontainebleau à
-  Fontainebleau (Seine-et-Marne, France).
-* durant mes années à l'ENSIIE, mon école d'ingénieur, à Évry
+Les cours ont pour la majorité été pris en note dans l'un des établissement suivant
+	* département informatique de l'IUT de Sénart-Fontainebleau à Fontainebleau (Seine-et-Marne, France).
+	* l'ENSIIE, école d'ingénieur en informatique à Évry
 
-Les crédits appropriés ainsi que les sources sont en
-bas de page de chaque cours.
-
-J'ai rédigé la totalité des cours présents, depuis mes notes de cours principalement.
-
-Dernière mise à jour le |today|.
+Les crédits appropriés ainsi que les sources sont en bas de page de chaque cours.
 
 .. toctree::
     :caption: Mathématiques
@@ -49,3 +44,11 @@ Dernière mise à jour le |today|.
     :maxdepth: 1
 
     Vim (Vi IMproved)	             <utils/vim/index>
+
+-----
+
+Fondé par Quentin Ramsamy--Ageorges.
+
+Version |release|.
+
+Dernière mise à jour le |today|.

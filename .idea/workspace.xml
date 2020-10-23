@@ -27,16 +27,7 @@
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/analyse/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/analyse/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/bric/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/matrix/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/proba/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/docker/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/docker/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/bash.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/bash.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/vim/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/utils/vim/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +97,9 @@
       <workItem from="1603395578398" duration="4637000" />
       <workItem from="1603445661688" duration="3029000" />
       <workItem from="1603448756261" duration="2702000" />
+      <workItem from="1603451661519" duration="305000" />
+      <workItem from="1603454781798" duration="1236000" />
+      <workItem from="1603461405144" duration="1085000" />
     </task>
     <servers />
   </component>
