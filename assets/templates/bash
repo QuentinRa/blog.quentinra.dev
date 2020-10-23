@@ -12,3 +12,22 @@ ls *.{jpg,jpeg,png}
 packages
 
 ~/.bashrc
+
+Entrer/Sortir en mode console uniquement :
+
+Entrer : Ctrl-alt-F1 ou Ctrl-Alt-F3
+Sortir : Alt-F7 ou Ctrl-Alt-F1 ou Ctrl-Alt-F2
+
+Multiplicateurs de terminaux :
+
+Screen : screen –S <nom du nouveau terminal>
+Pour se déplacer entre les terminaux : Ctrl-a-d
+Revenir à un terminal : screen –r <nom du terminal>
+
+Tmux : Lancer tmux : tmux
+Créer un terminal vertical : ctrl-b % et un terminal horizontal : ctrl-b "
+Supprimer un terminal : ctrl-b x
+Pour changer : ctrl-b ->
+Fermer les terminaux : ctrl-b d
+
+paquets
