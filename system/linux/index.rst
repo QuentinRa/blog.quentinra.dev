@@ -45,6 +45,9 @@ Pour les versions de Linux, mon avis est :
 
 Certaines fois, il se peut que vous n'ayez pas d'interface graphique, seulement un terminal affiché.
 
+L'écran noir suivant est ce qu'on appelle un terminal, une console, un invite de commande et qui
+est le principal (ou le seul) moyen de saisir des instructions à exécuter sur votre machine.
+
 .. image:: /assets/linux/terminal.png
 
 .. note::
@@ -56,9 +59,9 @@ Certaines fois, il se peut que vous n'ayez pas d'interface graphique, seulement 
 2.1 Le principe
 ***********************
 
-L'idée est que le terminal (ou invite de commande ou shell) est une interface qui vous permet
-d'interagir avec votre machine. Vous allez écrire des commandes, dans un certain langage, et le système
-va effectuer des actions.
+Le terminal est une interface qui vous permet d'interagir avec votre machine.
+Vous allez écrire des commandes, dans un certain langage (bash, sh, ...), et le système
+va effectuer des actions (afficher un fichier, ...).
 
 Le langage par défaut est généralement le bash, mais il existe d'autres : sh, csh, tesh, ksh, bash, ash, zsh...
 
@@ -67,9 +70,18 @@ Le langage par défaut est généralement le bash, mais il existe d'autres : sh,
 	:code:`sh> cd ~` : le :code:`sh>` ne fait pas partie de la commande, mais indique que la commande ici est
 	exécutée en :code:`sh` (Bourne Shell).
 
-	:code:`$ cd ~` : le :code:`$` indique qu'il s'agit d'une commande normale. (plus de détail plus loin)
+	:code:`$ cd ~` : le :code:`$` indique qu'il s'agit d'une commande normale (voir bash), donc vous le verrez souvent
+	devant des commandes.
 
-	:code:`# cd ~` : le :code:`#` indique une commande nécessitant d'être administrateur.
+	:code:`# cd ~` : le :code:`#` indique une commande nécessitant d'être administrateur (voir utilisateurs et permissions).
+
+.. note::
+
+	Vous pouvez à tous moment, passer d'une version graphique à une version console (et inversement si un gestionnaire
+	graphique est installé).
+
+	* Entrer en mode console : Ctrl-alt-F1, ..., Ctrl-Alt-F9
+	* Quitter le mode console : Alt-f7
 
 2.2 Commandes
 ***********************
@@ -112,7 +124,7 @@ Voici un exemple: :code:`sphinx-build make -D="C:/Users/temp/" renard.txt index.
 
 	Comment interpréter cette ligne ? (un peu compliqué)
 
-		Dans cet exemple, on peut imaginer que la commande `sphinx-build` propose plusieurs commandes,
+		Dans cet exemple, on peut imaginer que la commande :code:`sphinx-build` propose plusieurs sous commandes,
 		dont :code:`make` (permet de créer quelque chose).
 
 		L'option :code:`-D` peut servir à définir le répertoire dans lequel mettre ce qui a été créé et :code:`-f`
@@ -336,8 +348,8 @@ Les motifs/regex sont utilisés partout :
 	* vous voulez obtenir tous les fichiers (*)
 	* vous voulez modifier les lignes d'un fichiers qui sont d'un certain format.
 
-5. Encodage des entiers
-========================================
+5. Encodage des entiers et des réels (flottants)
+=================================================
 
 5.1 Entiers signés
 ***********************
@@ -395,6 +407,11 @@ Dans la machine, les entiers sont signé : ceux commençant par (bit de poids fo
 ceux commençant par un 1 sont négatifs.
 Sur n bits signés valeurs vont de : :math:`]-2^{n-1}, 0] \cup ]0,2^{n-1}-1[`.
 
+5.3 Entiers flottants
+**********************
+
+`non traité pour l'instant`
+
 5.2.1 Pour écrire un chiffre négatif (complément à 2)
 ----------------------------------------------------------
 
@@ -416,10 +433,69 @@ Sur n bits signés valeurs vont de : :math:`]-2^{n-1}, 0] \cup ]0,2^{n-1}-1[`.
 * Si le bit de signe et le dernier bit de retenu (vaut 0 si pas de retenue) sont identiques alors il n’y a pas de débordement.
 * S’ils sont différent alors il y a un débordement (=overflow)
 
-6. Scripts
+6. Environnement
 ========================================
 
-...
+6.1 Variables d'environnement
+********************************
+
+Les variables d'environnement sont des variables telles qui contiennent des informations
+clés sur l'environnement tel que
+
+	* PATH : contient une liste de dossier dans lesquels chercher les commandes
+	* HOME : contient le chemin de votre domicile
+	* PWD : votre dossier actuel
+	* LANG : langue de l'utilisateur
+	* ...
+
+.. note::
+
+	Rappelez vous du tout est fichier sous linux, donc la commande :code:`ls` qui liste les fichiers/dossier
+	d'un répertoire, est un script donc un fichier dans un certain repertoire (:code:`/bin/ls`).
+
+	Pour éviter de devoir donner le chemin absolu ou relatif à chaque fois qu'on voudrais utiliser la commande,
+	on l'ajoute à PATH, parce que dès qu'on tape une commande dans un terminal, alors on va regarder dans tous les
+	dossier du path s'il y a un fichier avec ce nom, et si oui on va l'exécuter.
+
+6.2 Paquets
+********************************
+
+... rien pour l'instant ...
+
+7. Scripts
+========================================
+
+Les scripts sont des fichiers qui contiennent des commandes, on peut voir ça comme un programme
+qui une fois lancé va exécuter des instructions.
+
+Un script peut contenir des fonctions (des bouts de code répétitif qui ont été factorisés
+pour éviter de recopier du code). On appelle ces fonctions des :code:`buildin`.
+
+.. note::
+
+	On appelle une :code:`buildin` de la même façon que l'on appelle une commande, soit
+	:code:`buildin [[-option] [argument]]`.
+
+Les scripts demande la permission :code:`x` pour être exécutés, ou vous pouvez appeler
+un langage en lui donnant un entrée le script : :code:`$ bash < script.sh` avec :code:`bash` ici
+le langage dans lequel exécuter le script.
+
+.. warning::
+
+	La première ligne d'un script défini le langage du script, pour un script bash, la première ligne
+	serait
+
+	.. code::
+
+		#!/bin/bash
+		#
+		# usage: utilisation du script
+		#
+		# détails
+		#
+		# ...
+
+		# ici votre code
 
 7. Processus et signaux
 ========================================

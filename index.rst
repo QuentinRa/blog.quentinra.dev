@@ -3,7 +3,7 @@ Bienvenue sur ramsamy.ws/ressources
 ##########################################
 
 Ce site à pour objectif de réunir un maximum de cours
-écris par des étudiants pour des étudiants.
+écrits par des étudiants pour des étudiants.
 
 Les cours ont pour la majorité été pris en note dans l'un des établissement suivant
 	* département informatique de l'IUT de Sénart-Fontainebleau à Fontainebleau (Seine-et-Marne, France).
@@ -47,8 +47,8 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
 
 -----
 
-Fondé par Quentin Ramsamy--Ageorges.
+Ce site a été créé par Quentin Ramsamy--Ageorges (ramsamy.ws@gmail.com).
 
-Version |release|.
-
-Dernière mise à jour le |today|.
+| Version |release|.
+| Création le 20 juillet 2020.
+| Dernière mise à jour le |today|.

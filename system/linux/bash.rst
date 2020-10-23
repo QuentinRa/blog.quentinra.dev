@@ -106,19 +106,24 @@ Nombreux sont cités dans le cours. Leur utilisation est la suivante, pour la pl
 
 ...
 
+6. Environnement
+========================================
+
+...
+
 .. _bash_sh:
 
-6. Scripts
+7. Scripts
 ========================================
 
 ...
 
-7. Processus et signaux
+8. Processus et signaux
 ========================================
 
 ...
 
-8. Appels systèmes
+9. Appels systèmes
 ========================================
 
 ...

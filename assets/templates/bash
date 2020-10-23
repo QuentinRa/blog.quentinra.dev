@@ -1,22 +1,10 @@
 ..
-	perror
-
--Wall -Wextra
-
 aptitude install manpages-dev
-
 build-essential installe make gcc ...
-
 ls *.{jpg,jpeg,png}
-
-packages
-
 ~/.bashrc
-
-Entrer/Sortir en mode console uniquement :
-
-Entrer : Ctrl-alt-F1 ou Ctrl-Alt-F3
-Sortir : Alt-F7 ou Ctrl-Alt-F1 ou Ctrl-Alt-F2
+https://www.diskinternals.com/linux-reader/bash-script/
+https://medium.com/sysf/bash-scripting-everything-you-need-to-know-about-bash-shell-programming-cd08595f2fba
 
 Multiplicateurs de terminaux :
 
@@ -29,5 +17,3 @@ Créer un terminal vertical : ctrl-b % et un terminal horizontal : ctrl-b "
 Supprimer un terminal : ctrl-b x
 Pour changer : ctrl-b ->
 Fermer les terminaux : ctrl-b d
-
-paquets
