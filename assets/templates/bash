@@ -17,3 +17,21 @@ Créer un terminal vertical : ctrl-b % et un terminal horizontal : ctrl-b "
 Supprimer un terminal : ctrl-b x
 Pour changer : ctrl-b ->
 Fermer les terminaux : ctrl-b d
+
+ps <rien> : affiche processus du même euid et du même terminal
+Ex : ps renvoi 2 choses ps et bash
+Option -e : tous les processus
+Option -C <comande> : sélectionne selon <comande>
+Option -p 1234,3001 : sélectionne selon PID
+Option -s 1053 : sélectionne selon session (SID)
+Option -t /dev/pts/3 : sélectionne selon terminal (tty)
+Option -u <données> : sélectionne selon utilisateur
+
+Formatage : -j (job format)
+-l (long format)
+-f (full format)
+-o (personnalisée selon attributs)
+Ex : ps -o pid, ppid, pgid, tpgid, sid, comm, etc…
+<n°processus, n°processus père, n°groupe, id groupe avant plan , n° session, commande>
+Jobs donne liste des processus et explicitant s’ils sont avant/arrière-plan.
+Fg : premier plan et bg arrière-plan

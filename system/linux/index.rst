@@ -497,12 +497,108 @@ le langage dans lequel exécuter le script.
 
 		# ici votre code
 
-7. Processus et signaux
+8. Processus et signaux
 ========================================
 
-...
+Un processus est une sorte de boite crée lorsque vous exécutez une commande.
 
-8. Appels systèmes
+Il contient entre autres
+
+	* code (à exécuter)
+	* l'environnement d'exécution : nom du programme, fichiers ouverts, droits, ...
+	* des données (pile, tas, variables)
+
+Chaque processus a un identifiant unique, appelé PID.
+
+8.1 Hiérarchie
+********************
+
+Le processus 1, systemd est le parent de tous les processus. Un processus peut être
+dupliqué, ce qui permet de créer de nouveaux processus (le processus 0 est celui qui init qui initie systemd).
+Le PPGID est l'id du processus parent.
+
+.. note::
+
+	Un processus qui finit par :code:`d` est généralement un daemon (linux) ou un
+	un service (windows voir linux).
+
+	Un daemon est un processus qui ne s'arrête jamais.
+
+.. note::
+
+	Comme tout est fichier sous linux, chaque processus est une sorte de fichier (nom=pid) dans :code:`/proc/`.
+
+A sa mort, un processus retourne à son père un code de retour. Vous pouvez le consultez
+avec la commande :code:`$ echo $?`.
+
+.. note::
+
+	Si le processus parent meurt, alors le parent du processus fils devient -1.
+
+8.2 Ordonnancement
+********************
+
+Les processus (programmes) s’exécutent en presque en "parallèle" (pseudo-parallélisme).
+
+L'ordonnanceur (ou le gouverneur) va faire en sorte que chaque processus puisse s'exécuter un petit peu,
+puis est mis en pause pendant qu'un autre s'exécute, et ce en boucle.
+
+.. note::
+
+	Un processus n'est donc pas exécuté d'un coup, ses données sont mise en mémoire jusqu'à ce qu'il soit
+	réveillé.
+
+8.3 Signaux
+*************
+
+Les signaux sont des suites de touches qui sont réceptionnées par la session au premier plan (voir
+ci-après pour session et arrière plan) et provoquent l'exécution d'une fonction par le processus.
+
+Il y en a 34.
+
+	* :code:`CTRL-C` (signal SIGINT) : exit donc met fin au processus
+	* :code:`CTRL-Z` (signal SIGTSTP) : suspend donc met fin à une action (saisie, ...)
+
+.. hint::
+
+	:code:`CTRL-D` n'est pas un signal, il s'agit de EOF (End Of File) donc l'arrêt donc provoque
+	l'arrêt d'une saisie.
+
+8.4 Session et terminaux
+*******************************
+
+Un processus appartient à une session (sid), qui elle même appartient généralement à un terminal (tty).
+
+Une session est partitionnée en groupes de processus.
+
+.. note::
+
+	Comme tout est fichier sous linux, un terminal se trouve dans :code:`/dev/tty`.
+
+.. note::
+
+	Si la session meurt, alors tous les processus reçoivent le signal SIGHUP.
+
+8.5 Session et premier/arrière plan
+************************************
+
+Un seul groupe de processus d'une session est au 1er plan
+
+	* peut bénéficier/droit aux entrées/sorties
+	* peut lire/écrire
+	* reçoit signaux (CTRL-C)
+
+Les autres groupes sont à l’arrière-plan
+
+	* ne peuvent pas lire/écrire sur le terminal
+	* ne reçoivent pas les signaux (sauf CTRL-Z)
+
+.. warning::
+
+	Par défaut dans certains cas, les processus en arrière plan peuvent écrire sur le terminal.
+	Il est possible de changer ce comportement en modifiant une variable d'environnement.
+
+9. Appels systèmes
 ========================================
 
 ...
@@ -527,4 +623,7 @@ le langage dans lequel exécuter le script.
 	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
 
 **Références**
-	* aucune
+	* https://en.wikipedia.org/wiki/Daemon_(computing)
+	* https://systemd.io/
+	* https://www.computerhope.com/unix/signals.htm
+	* https://www.linuxtricks.fr/wiki/signaux-unix-unix-signals

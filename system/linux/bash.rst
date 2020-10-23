@@ -129,7 +129,7 @@ Nombreux sont cités dans le cours. Leur utilisation est la suivante, pour la pl
 ...
 
 
-9. Exercices
+10. Exercices
 ================================
 
 .. toctree::
