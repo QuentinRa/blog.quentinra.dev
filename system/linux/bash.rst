@@ -137,10 +137,23 @@ Nombreux sont cités dans le cours. Leur utilisation est la suivante, pour la pl
 --------
 
 **Crédits**
-	* Denis Monnerat (enseignant à l'IUT de Sénart-Fontainebleau)
-	* Ivan Augé (enseignant à l'ENSIIE)
+	* enseignants à l'IUT de Sénart-Fontainebleau
+		* Denis Monnerat
+		* Luc Hernandez
+		* Selma Naboulsi
+		* Denis Monnerat
+		* Frédéric Gervais
+		* Pierre Petrik
+		* Luc Dartois
+		* Pierre Valarcher
+	* enseignants à l'ENSIIE
+			* Renaud RIOBOO
+			* Christophe MOUILLERON
+			* Julien FOREST
+			* Ivan Augé
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
 
-**Sources**
+**Références**
 	* bash
 		* https://iq.opengenus.org/bash-bourne-again-shell/
 		* https://en.wikipedia.org/wiki/Bash_(Unix_shell)

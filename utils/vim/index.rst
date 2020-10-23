@@ -4,7 +4,7 @@
 vim (Vi IMproved)
 ================================
 
-| :math:`\color{grey}{Version \ 1.0}`
+| :math:`\color{grey}{Version \ 1.0.0}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 23/10/2020}`
 
 vim est un éditeur de texte basé sur vi,
@@ -66,6 +66,7 @@ Voici un exemple de .vimrc
 		* :code:`:q!` : en mode commande, permet de quitter sans sauvegarder
 		* :code:`u` : permet de revenir en arrière
 		* :code:`CTRL+R` : permet d'annuler un retour en arrière
+		* :code:`h`, :code:`j`, :code:`l`, :code:`k` : en mode commande, déplacement gauche, haut, droite, bas
 
 2.1 Insertion
 *****************

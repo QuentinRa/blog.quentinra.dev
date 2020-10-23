@@ -123,8 +123,9 @@ Propriétés
 
 **Crédits**
 	* Vicent Torri (enseignant à l'ENSIIE)
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
 
-**Sources**
+**Références**
 	* Analyse numérique
 		* https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Analyse_num%C3%A9rique
 		* http://math.univ-bpclermont.fr/~cindea/blog/post/intro-ana-num-interet/

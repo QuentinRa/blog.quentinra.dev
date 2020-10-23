@@ -188,11 +188,12 @@ Si A est normale alors :math:`|||A||| = \rho (A)`
 -----
 
 **Crédits**
-		* Denis Monnerat (enseignant à l'IUT de Sénart-Fontainebleau)
-		* Jéremy Possamaï (enseignant à l'IUT de Sénart-Fontainebleau)
-		* Vicent Torri (enseignant à l'ENSIIE)
+	* Denis Monnerat (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Jéremy Possamaï (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Vicent Torri (enseignant à l'ENSIIE)
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
 
-**Sources**
+**Références**
 	* Matrices (définitions)
 		* https://fr.wikipedia.org/wiki/Matrice_normale
 	* Bornes

@@ -1,5 +1,6 @@
 .. _graph:
 
+================================
 Théorie des graphes
 ================================
 
@@ -18,7 +19,7 @@ Graphe
 L'ordre d'un graphe corresponds au nombre de sommets (E) du graphe soit \|E| ou card(E) ou \#E.
 
 1. Définitions
-********************************
+==================
 
 Adjacent ou Voisins
 	On dit que deux sommets sont adjacents s'ils sont reliés par une arête.
@@ -64,10 +65,10 @@ Graphes particuliers
 
 
 2. Propriétés complexes
-********************************
+=========================
 
 2.1 Sous-Graphe
----------------------------------------
+*****************
 
 Sous-graphe (dit sous-graphe induit)
 	G' est un sous-graphe de G si et seulement si il a été obtenu
@@ -76,7 +77,7 @@ Sous-graphe (dit sous-graphe induit)
 		* en ne supprimant que les arrêtes liées/incidentes au sommets supprimés
 
 2.2 Connexité et forte connexité
----------------------------------------
+**********************************
 
 Connexe
 	Un graphe est connexe s'il est composé d'une seule composante connexe.
@@ -132,7 +133,7 @@ Isthme
 	On appelle isthme une arrête telle que la retirer rends le graphe non connexe.
 
 2.3 Fermeture Transitive et Graphe partiel
---------------------------------------------------
+*******************************************
 
 Fermeture transitive (noté :math:`\tau` (tau))
 	Il s'agit d'ajouter toutes les arrêtes qui peuvent être obtenues par transitivité.
@@ -160,7 +161,7 @@ Graphe partiel
 	Il s'agit d'un graphe :math:`\tau`-minimal :math:`\tau`-équivalent avec le minimum d'arcs
 
 2.4 Matrices d'adjacence et Matrice d'incidence
---------------------------------------------------
+*************************************************
 
 Matrices d'adjacence
 	Il s'agit d'une matrice Sommet*Sommet (départ->arrivé dans un GO) dans laquelle on met un 1 s'il existe un arrête
@@ -175,10 +176,10 @@ Matrice d'incidence
 	est entrante ou sortante : on met -1 si sortant, 1 si entrant et 0 sinon.
 
 3. Tris et parcours
-********************************
+======================
 
 3.1 Tri Topologique
----------------------------------------
+**********************
 
 Tri Topologique
 	Il s'agit d'un ordre dans lequel chaque sommet est avant ses successeurs.
@@ -187,7 +188,7 @@ Tri Topologique
 	ainsi que leur arrêtes, et on recommence.
 
 3.2 Parcours en profondeur
----------------------------------------
+******************************
 
 Parcours en profondeur (DFS : depth-first search)
 
@@ -198,16 +199,16 @@ Parcours en profondeur (DFS : depth-first search)
 		3: On marque le sommet bloquant "fini", on recommence avec 2: si possible
 			sinon on fait 3:
 
-3.1 Parcours en largeur
----------------------------------------
+3.3 Parcours en largeur
+****************************
 
 Parcours en largeur (BFS : breadth-first search)
 
 4. Graphes eulérien et graphes hamiltoniens
-**********************************************
+=============================================
 
 4.1 Graphes eulérien
----------------------------------------
+***********************
 
 Graphes eulérien
 	Un graphe est eulérien s’il est connexe et tous ses sommets sont de degré pair.
@@ -237,19 +238,26 @@ Algorithme
 * Rappel: un isthme est une arête qui rends un graphe connexe non connexe si elle est retirée.
 
 4.2 Graphes hamiltoniens
----------------------------------------
+******************************
 
+
+
+
+
+
+|
 |
 
 ------
 
-Crédits
-	| Jérémy POSSAMAÏ (enseignant à l'IUT de Sénart-Fontainebleau)
-	| Massimissa MERABET (enseignant à l'ENSIIE)
+**Crédits**
+	* Jérémy POSSAMAÏ (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Massimissa MERABET (enseignant à l'ENSIIE)
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
 
-Sources
-	| https://fr.wikipedia.org/wiki/Lexique_de_la_th%C3%A9orie_des_graphes
-	| http://atomurl.net/math/
-	| https://fr.wikiversity.org/wiki/Th%C3%A9orie_des_graphes/Propri%C3%A9t%C3%A9s
-	| https://fr.wikipedia.org/wiki/Tri_topologique
-	| https://fr.wikipedia.org/wiki/Graphe_eul%C3%A9rien
+**Références**
+	* https://fr.wikipedia.org/wiki/Lexique_de_la_th%C3%A9orie_des_graphes
+	* http://atomurl.net/math/
+	* https://fr.wikiversity.org/wiki/Th%C3%A9orie_des_graphes/Propri%C3%A9t%C3%A9s
+	* https://fr.wikipedia.org/wiki/Tri_topologique
+	* https://fr.wikipedia.org/wiki/Graphe_eul%C3%A9rien

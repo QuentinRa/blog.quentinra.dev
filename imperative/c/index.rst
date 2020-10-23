@@ -1,10 +1,11 @@
 .. _language-c:
 
+================================
 Langage C
 ================================
 
 8. Flux
-********************************
+================================
 
 Un flux est littéralement un flux de données
 tel que les caractères d'un fichier.

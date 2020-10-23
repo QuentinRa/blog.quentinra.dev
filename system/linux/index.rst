@@ -430,3 +430,25 @@ Sur n bits signés valeurs vont de : :math:`]-2^{n-1}, 0] \cup ]0,2^{n-1}-1[`.
 ========================================
 
 ...
+
+-----
+
+**Crédits**
+	* enseignants à l'IUT de Sénart-Fontainebleau
+		* Denis Monnerat
+		* Luc Hernandez
+		* Selma Naboulsi
+		* Denis Monnerat
+		* Frédéric Gervais
+		* Pierre Petrik
+		* Luc Dartois
+		* Pierre Valarcher
+	* enseignants à l'ENSIIE
+			* Renaud RIOBOO
+			* Christophe MOUILLERON
+			* Julien FOREST
+			* Ivan Augé
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
+
+**Références**
+	* aucune

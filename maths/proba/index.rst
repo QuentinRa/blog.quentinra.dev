@@ -1,13 +1,14 @@
 .. _proba:
 
+================================
 Probabilités
 ================================
 
 1. Espaces de probabilités
-********************************
+================================
 
 1.1 Notations
-~~~~~~~~~~~~~~~~
+***************
 
 * :math:`\omega` (petit-omega) un résultat possible
 * :math:`\Omega` (omega) l'ensemble des résultats possibles
@@ -22,7 +23,7 @@ Probabilités
 	Le nombre d'éléments d'un ensemble E, appelé cardinal de E est généralement noté \|E\| ou #E ou card(E) ou card E.
 
 1.2 Définitions
-~~~~~~~~~~~~~~~~
+*****************
 
 Tribu
 	:math:`\mathbb{F}` est une tribu sur :math:`\Omega`, soit un ensemble d'éléments de :math:`\Omega`,
@@ -45,7 +46,7 @@ Probabilité
 		* :math:`A \subset B \to \mathbb{P}(A) \le \mathbb{P}(B)`
 
 2. Variable aléatoire discrète (:math:`\Omega` fini)
-******************************************************
+================================================================
 
 :math:`\Omega` fini
 	Un ensemble fini est un ensemble qui est dénombrable. Si Omega est fini, cela signifie que les probabilités
@@ -67,7 +68,7 @@ Loi discrète
 	de probabilité :math:`(\Omega, \mathbb{P})` au lieu de :math:`(\Omega, \mathbb{F}, \mathbb{P})`
 
 2.1 Probabilités
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+******************
 
 Probabilité conditionnelle
 	Soit A et B deux évènements, il est possible de calculer la probabilités de A sachant celle de B
@@ -86,7 +87,7 @@ Probabilité uniforme
 	Dans ce cas, :math:`\mathbb{P}(A) = \frac{card(A)}{card(\Omega)} = \frac{|A|}{|\Omega|}`
 
 2.2 Variables aléatoires indépendantes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*****************************************
 
 Variables aléatoires indépendantes
 	Les variables :math:`X_1, ..., X_n` sont indépendantes (noté :math:`\perp` (perp)) si
@@ -113,38 +114,42 @@ Variables aléatoires indépendantes
  				= 6/36 = 1/6
 
 2.3 Lois de probabilités
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+************************************
 
-Loi binomiale
-	Une loi binomiale notée B(n,p) correspond au nombre de succès sur n épreuves, avec une probabilité
-	p de succès.
+2.3.1 Loi binomiale
+------------------------
 
-	.. math::
+Une loi binomiale notée B(n,p) correspond au nombre de succès sur n épreuves, avec une probabilité
+p de succès.
 
-		\begin{cases}
-		\mathbb{P}(X=k) = 0 & si & k > n  \\
-		\mathbb{P}(X=k) =  C_n^k p^k(1-p)^{n-k}  & sinon  \\
-		\end{cases}
+.. math::
 
-	.. note::
+	\begin{cases}
+	\mathbb{P}(X=k) = 0 & si & k > n  \\
+	\mathbb{P}(X=k) =  C_n^k p^k(1-p)^{n-k}  & sinon  \\
+	\end{cases}
 
-		Il faut lire ici
-			* Si k (nombre de succès) est plus grand que n (nombre d'épreuves), alors la probabilité d'avoir k succès sur n est 0
-			* sinon, alors on multiplie la probabilité d'avoir k succès (:math:`p^k`) par la probabilité d'avoir n-k échecs (:math:`(1-p)^{n-k}`).
+.. note::
 
-				* on a n-k échecs car on a pris les k premiers tirages bons (succès) car on veut k succès donc le reste des n tirages sont forcément des échecs
-				* on doit cependant multiplier le tout par les permutation de notre tirage (:math:`C_n^k`)
+	Il faut lire ici
+		* Si k (nombre de succès) est plus grand que n (nombre d'épreuves), alors la probabilité d'avoir k succès sur n est 0
+		* sinon, alors on multiplie la probabilité d'avoir k succès (:math:`p^k`) par la probabilité d'avoir n-k échecs (:math:`(1-p)^{n-k}`).
 
-Loi de poisson
-	L'objectif est de trouver le nombre de succès sachant un certain nombre d'épreuves n indépendantes.
-	On suppose n très grand et p très petit.
+			* on a n-k échecs car on a pris les k premiers tirages bons (succès) car on veut k succès donc le reste des n tirages sont forcément des échecs
+			* on doit cependant multiplier le tout par les permutation de notre tirage (:math:`C_n^k`)
 
-	Notation : :math:`\lambda` ~ :math:`\mathbb{P}(\lambda)`
+2.3.2 Loi de poisson
+------------------------
 
-	Loi de poisson : :math:`\mathbb{P}(X=k) = \frac{\lambda^k *  e^{-\lambda}}{k!}`
+L'objectif est de trouver le nombre de succès sachant un certain nombre d'épreuves n indépendantes.
+On suppose n très grand et p très petit.
 
-	| Espérance : E(X) = np = :math:`\lambda`
-	| Variance : :math:`\sigma = \frac{\lambda}{n}`
+Notation : :math:`\lambda` ~ :math:`\mathbb{P}(\lambda)`
+
+Loi de poisson : :math:`\mathbb{P}(X=k) = \frac{\lambda^k *  e^{-\lambda}}{k!}`
+
+| Espérance : E(X) = np = :math:`\lambda`
+| Variance : :math:`\sigma = \frac{\lambda}{n}`
 
 .. hint::
 
@@ -172,20 +177,23 @@ Loi de poisson
 
 		:math:`= \lambda`
 
-Loi géométrique
-	On fait n tirages sans remise. La loi géométrique permet de déterminer le premier succès
+2.3.3 Loi géométrique
+------------------------
 
-	Notation : T ~ :math:`G(p)`
+On fait n tirages sans remise. La loi géométrique permet de déterminer le premier succès
 
-	Loi géométrique : :math:`\mathbb{P}(X=k) = (1-p)^{k-1}p`
+Notation : T ~ :math:`G(p)`
 
-	| Espérance : :math:`\mathbb{E}(X) =`
-	| Variance : :math:`\mathbb{V}(X) =`
+Loi géométrique : :math:`\mathbb{P}(X=k) = (1-p)^{k-1}p`
 
-2.3 Espérance
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| Espérance : :math:`\mathbb{E}(X) = \ ?`
+| Variance : :math:`\mathbb{V}(X) = \ ?`
 
-**2.3.1 Définition**
+2.4 Espérance
+******************
+
+2.4.1 Définition
+------------------------
 
 Espérance
 	On définit l'espérance (~moyenne) notée :math:`\mathbb{E}(X)` ou :math:`\mathbb{E}X` ou :math:`\mathbb{E}[X]`
@@ -211,7 +219,8 @@ Espérance
 		| ps est l'abréviation de presque sûr.
 		| , (virgule) se lit "et" donc plus (+)
 
-**2.3.2 Inégalités**
+2.4.2 Inégalités
+------------------------
 
 Tchebychev
 	Si a > 0 alors :math:`\mathbb{P}( |x| \ge a) \le \frac{\mathbb{E}[X^2]}{a^2}`
@@ -225,40 +234,44 @@ Cauchy-Schwarz
 Markov
 	:math:`\mathbb{P}( |x| \ge a) \le \frac{\mathbb{E}[ |X| ]}{a}`
 
-2.4 Variance et co-variance
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2.5 Variance et co-variance
+************************************
 
-Variance de X
-	Il s'agit de l'écart autour de la moyenne.
+2.5.1 Variance de X
+------------------------
 
-	.. math::
+Il s'agit de l'écart autour de la moyenne.
 
-		V(X) = \mathbb{E}[(X - \mathbb{E}[X])^2]
+.. math::
 
-		V(X) = \mathbb{E}[X^2] - \mathbb{E}[X]^2
+	V(X) = \mathbb{E}[(X - \mathbb{E}[X])^2]
 
-	Propriétés de la variance
+	V(X) = \mathbb{E}[X^2] - \mathbb{E}[X]^2
 
-		* :math:`V(a + \lambda X^2) = \lambda^2 V(X)`
-		* :math:`V(X + Y) = V(X) + V(Y) - 2cov(XY)` (voir co-variance)
+Propriétés de la variance
 
-Co-variance (ou covariance)
-	La covariance permet de calculer la variation et l'indépendance de deux
-	variables aléatoires.
+	* :math:`V(a + \lambda X^2) = \lambda^2 V(X)`
+	* :math:`V(X + Y) = V(X) + V(Y) - 2cov(XY)` (voir co-variance)
 
-	.. math::
+2.5.2 Co-variance (ou covariance)
+-----------------------------------
 
-		\mathbb{E}[ ( X - \mathbb{E}[X]) (Y - \mathbb{E}[Y]) ]
+La covariance permet de calculer la variation et l'indépendance de deux
+variables aléatoires.
 
-		\mathbb{E}[XY] - \mathbb{E}[X] \mathbb{E}[Y]
+.. math::
 
-	Propriétés de la variance
+	\mathbb{E}[ ( X - \mathbb{E}[X]) (Y - \mathbb{E}[Y]) ]
 
-		* cov(X,X) = V(X)
-		* cov(X,Y) = cov(Y,X)
-		* :math:`cov(\lambda * X,Y) =  \lambda *cov(Y,X)`
-		* si a et b sont indépendants (:math:`\perp`) alors cov(XY) = 0 (réciproque n'est pas vraie)
-		* :math:`\mathbb{P}(X, Y) = \frac{cov(X,Y)}{\sqrt{V(X)*V(Y)}}`
+	\mathbb{E}[XY] - \mathbb{E}[X] \mathbb{E}[Y]
+
+Propriétés de la variance
+
+	* cov(X,X) = V(X)
+	* cov(X,Y) = cov(Y,X)
+	* :math:`cov(\lambda * X,Y) =  \lambda *cov(Y,X)`
+	* si a et b sont indépendants (:math:`\perp`) alors cov(XY) = 0 (réciproque n'est pas vraie)
+	* :math:`\mathbb{P}(X, Y) = \frac{cov(X,Y)}{\sqrt{V(X)*V(Y)}}`
 
 
 
@@ -278,11 +291,12 @@ Co-variance (ou covariance)
 
 ------
 
-Crédits
-	| Oleg LOUKIANOV (enseignant à l'IUT de Sénart-Fontainebleau)
-	| Vathana LY VATH (enseignant à l'ENSIIE)
+**Crédits**
+	* Oleg LOUKIANOV (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Vathana LY VATH (enseignant à l'ENSIIE)
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
 
-Sources
+**Références**
 	* Tribu et Tribu borélienne
 		* http://www.les-mathematiques.net/phorum/read.php?3,779703,779703
 		* http://dictionnaire.sensagent.leparisien.fr/Tribu%20bor%C3%A9lienne/fr-fr/

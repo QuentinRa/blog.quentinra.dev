@@ -1,13 +1,17 @@
 .. _docker:
 
+================================
 Docker
 ================================
 
+| :math:`\color{grey}{Version \ 1.0.1}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 23/10/2020}`
+
 1. Présentation de Docker
---------------------------------
+==============================
 
 1.1 Pourquoi ?
-~~~~~~~~~~~~~~~~~~~~~~~~
+****************************
 
 Il se peut que vous voulez déployer (partager) une application, pour permettre
 à d'autres personnes de l'utiliser.
@@ -30,7 +34,7 @@ utilise les ressources de votre Machine.
 	des fichiers manquants etc...), mais à la fin de l'exécution, votre machine sera inchangée !
 
 1.1 Principe
-~~~~~~~~~~~~~~~~~~~~~~~~
+****************************
 
 Docker = Conteneur permet d'empaqueter une application sous la forme d'une "image" [#0]_.
 
@@ -42,13 +46,13 @@ Puis sur n'importe quelle machine, vous pouvez lancer votre application avec
 
 
 1.2 Écrire son DockerFile
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+****************************
 
 Un fichier DockerFile doit obligatoirement s'appeler DockerFile (sans extension).
 Les instructions de votre DockerFile seront exécutés via la commande docker.
 
 1.3 Isolation
-~~~~~~~~~~~~~~~~~~~~~~~~
+****************************
 
 Une machine virtuelle consiste à recréer entièrement une machine (OS=Système d'exploitation, système de fichiers...)
 ce qui peu être trop si tout ce qu'on veut tester/déployer c'est une application.
@@ -57,10 +61,10 @@ Un Docker est moins isolé car il va utiliser le système de fichiers, la RAM, l
 Les échanges entre ce qu'il y a dans le conteneur et le système actuels passent par une API.
 
 2. DockerFile
----------------------------
+================================
 
 2.1 Compiler un DockerFile
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+****************************
 
 Un DockerFile se compile avec la commande :code:`docker build .` si le DockerFile est dans votre répertoire courant.
 
@@ -79,7 +83,7 @@ Vous avez ci-après quelques explications en détail.
 		docker build url_git # charger les fichiers d'un dépôt GIT
 
 2.2 Syntaxe basique
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+****************************
 
 La syntaxe générale est
 	* une instruction en majuscules (FROM, RUN, WORKDIR, ... voir :ref:`instructions`)
@@ -112,7 +116,7 @@ Un DockerFile ressemble généralement à ça.
 .. _instructions:
 
 3. Instructions
---------------------------------
+===================
 
 .. note::
 
@@ -123,7 +127,7 @@ Un DockerFile ressemble généralement à ça.
 	{nombre} sera remplacé par 5 (et non {5}).
 
 3.1 Instruction basiques
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+****************************
 
 **3.1.1 FROM**
 
@@ -172,7 +176,7 @@ Rends un port (+protocole) accessible depuis l'extérieur du docker.
 Crée un utilisateur. Sous Windows, vous devez d'abord appeler la commande RUN net user /add {name}.
 
 3.2 Instruction avancés
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+***************************
 
 **3.2.1 VOLUME**
 
@@ -207,7 +211,7 @@ Si cette image est utilisée comme base (FROM) pour une image, alors les instruc
 Vous interagissez avec un programme en lui envoyant des signaux. Par exemple CTRL+C envoi un signal de mort dont le code vaut 9. Vous pouvez ici changer le signal requis pour arrêter le programme.
 
 3.3 Instruction à l'exécution
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**********************************
 
 Il est possible d'exécuter du code à l'exécution, c'est à dire lorsque vous utilisez
 :code:`docker run image`.
@@ -236,7 +240,7 @@ Les arguments additionnels passés à l'image à l'exécution seront utilisées 
 	docker run {image} arguments #ici les arguments sont passées à la commande donnée en ENTRYPOINT
 
 3.4 Instruction qui modifient l'environnement
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+***********************************************
 
 **3.4.1 Variables d'environnement**
 
@@ -283,7 +287,7 @@ Les directives vous permettent de changer la version du DockerFile ou encore le 
 	#escape={caractère} changer le caractère d'échappement (\ par défaut)
 
 4. Autre
---------------------------------
+=================
 
 Kubernetes
 	Il se peut que vous vouliez qu'une application soit lancée X fois et qu'il y ait toujours
@@ -322,11 +326,11 @@ Kubernetes
 	Par exemple si vous utilisez la commande ls : le shell regarde dans le path s'il existe une tel commande,
 	trouve /bin/ls et l'exécute.
 
+-----
 
-------
-
-Crédits
+**Crédits**
 	* Denis Clavier (étudiant à l'ENSIIE)
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
 
-Sources
+**Références**
 	* https://docs.docker.com/
