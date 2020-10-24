@@ -38,10 +38,11 @@ on identifie une case par des coefficients i (ligne) et j (colonne) qui commence
 * Matrice :code:`diagonale` : matrice nulle avec les valeurs dans la diagonale non nulles
 * Matrice :code:`conjuguée` : :math:`conj(A)` revient à inverser le signe des coefficient complexes [#1]_.
 * Matrice :code:`transposée` : :math:`t_A` = :math:`A^t` = Matrice inverse lignes et colonnes
-* Matrice :code:`adjointe` notée : :math:`A^*` soit :math:`{conj(A)}^t` avec conj(A) la matrice conjuguée de A
+* Matrice :code:`adjointe` notée : :math:`A^*` soit la transposée de la matricée conjuguée
 * :code:`Vecteur` ou Matrice :code:`ligne` ou :code:`colonne` : Matrice de la forme :math:`M_{n,1}` ou :math:`M_{1,m}`
 * Matrice A :code:`symétrique` (:math:`\mathbb{R}`) ou :code:`hermitienne` (:math:`\mathbb{C}`)  : :math:`A = A^*`.
 * Matrice :code:`orthogonale` (:math:`\mathbb{R}`) ou :code:`unitaire` (:math:`\mathbb{C}`) si :math:`A A^* = A^* A = Id`.
+* Matrice :code:`normale` si :math:`A A^* = A^* A`.
 
 .. [#1] Dans :math:`\mathbb{R}`, la conjuguée de A est égale à la co-matrice de A (voir :ref:`matrix_inverse`).
 
@@ -52,17 +53,7 @@ La matrice identité est une matrice :math:`Id_n` tel que :math:`A_n * Id_n = Id
 
 Il s'agit d'une matrice diagonale, avec uniquement des 1 sur la diagonale.
 
-2.3 Matrice normales
-**************************
-
-Une matrice est normale si :math:`A A^* = A^* A`.
-
-	.. note::
-
-		Une matrice A multipliée par la transposée de la co-matrice est égale
-		à la transposée de la co-matrice multiplié par une matrice A.
-
-2.4 Matrices triangulaires
+2.3 Matrices triangulaires
 ******************************
 
 Une matrice triangulaire est soit:
@@ -190,11 +181,68 @@ Le résultat sera une matrice math:`M_{p1, n2}`.
 5. Matrice Inverse et Réduction d'endomorphisme
 ===================================================
 
-...
+.. _determinant:
 
+5.1 Calcul du déterminant
+***************************
 
+5.1.1 Définition
+*********************************
 
+Déterminant
+	Le déterminant est un chiffre permettant et aider à obtenir des informations sur une matrice.
 
+	Il sert par exemple à déterminer
+
+		* si une matrice est inversible si :math:`det(A) \neq 0`
+		* valeurs propres d'une matrice
+
+Il est possible de le calculer avec un
+	* calcul par développement (recommandé pour les matrices avec plusieurs zéros mais pas trop et de taille max 3~4)
+	* pivot de gauss (attention, changer des lignes change le signe du déterminant donc non recommandé (-1^changement))
+
+Propriétés
+	* si :math:`A=\begin{pmatrix} a \end{pmatrix}`, det(A) = a
+	* si :math:`A=\begin{pmatrix} a & b \\ c & d \end{pmatrix}`, det(A) = ad-bc
+	* det(AB) = det(A) * det(B)
+	* :math:`det(A^t)` = det(A)
+
+5.1.2 Calcul par développement
+*********************************
+
+* on prends notre matrice A
+* on choisi une ligne/colonne (généralement celle avec les plus gros coefficients)
+*
+	on met les coefficients choisi avec + puis - puis + ... suivit du calcul du déterminant
+	pour la matrice restant, après avoir retiré la ligne+colonne dans laquelle se trouvait la valeur.
+
+.. hint::
+
+	Soit la matrice :math:`M1\ \begin{pmatrix}{-1} & 4 & -7 \\{2} & -5 & 8 \\{-3} & 6 & -9\end{pmatrix}`,
+	on va prendre la colonne :math:`\begin{pmatrix} -7 \\ 8 \\ -9\end{pmatrix}` car elle a les plus gros coefficients.
+
+	.. math::
+
+			det(M_1) = \color{red}{+} -7 * det(\begin{pmatrix} 2 & -5 \\ -3 & 6 \end{pmatrix})
+			\color{red}{-} 8 * det(\begin{pmatrix} -1 & 4 \\ -3 & 6 \end{pmatrix})
+			\color{red}{+} -9 * det(\begin{pmatrix} -1 & 4 \\ 2 & -5\end{pmatrix})
+
+	.. math::
+
+			det(M_1) = -7 * -3 -8 * 6 -9 * -3 = 0
+
+	Il est important de noter les signes qui font +-+.
+
+	La matrice :math:`\begin{pmatrix} 2 & -5 \\ -3 & 6 \end{pmatrix}` est obtenue en supprimant la ligne et
+	la colonne de -7.
+
+5.2 Matrice inverse
+***************************
+
+Une inverse est une matrice notée :math:`A^{-1}` telle que :math:`A*A^{-1}=Id`. Une matrice ne possède
+pas forcément un inverse. Une matrice dont le déterminant est différent de 0 est inversible.
+
+On note :math:`Gl_n(R)` l'ensemble des matrices inversibles.
 
 |
 |
@@ -214,6 +262,7 @@ Le résultat sera une matrice math:`M_{p1, n2}`.
 		* https://fr.wikipedia.org/wiki/Matrice_normale
 		* http://uel.unisciel.fr/physique/outils_nancy/outils_nancy_ch11/co/apprendre_ch11_17.html
 		* https://en.wikipedia.org/wiki/Matrix_(mathematics)
+		* https://fr.wikipedia.org/wiki/D%C3%A9terminant_(math%C3%A9matiques)
 	* Bornes
 		* https://fr.wikipedia.org/wiki/Borne_sup%C3%A9rieure_et_borne_inf%C3%A9rieure
 		* https://fr.wikipedia.org/wiki/Extremum
@@ -223,3 +272,4 @@ Le résultat sera une matrice math:`M_{p1, n2}`.
 		* https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
 	* outils
 		* http://atomurl.net/math/
+		* https://www.dcode.fr/determinant-matrice
