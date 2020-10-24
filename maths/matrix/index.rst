@@ -7,7 +7,25 @@ Matrice
 1. Introduction
 =====================
 
-...
+On note :math:`M_{n,p}` une matrice de n lignes et p colonnes. Il s'agit d'un tableau à deux dimensions dans lequel
+on identifie une case par des coefficients i (ligne) et j (colonne) qui commencent à 1.
+
+.. math::
+
+	M=\ \begin{pmatrix}
+	\ a_{1,1} & \cdots & a_{1, p-1} \\
+	\vdots  & \cdots & \vdots  \\
+	\ a_{n-1,1} & \cdots & a_{n-1, p-1}
+	 \end{pmatrix}
+
+.. note::
+
+	Les matrices sont souvent utilisées pour résoudre des systèmes linéaires (voir :ref:`gauss`)
+
+.. note::
+
+	Des matrices :math:`M_{n,p}` sont parfois notées :math:`M_{np}` lorsqu'il est évident
+	qui est n et qui est p.
 
 2. Matrices particulières
 ===========================
@@ -15,9 +33,17 @@ Matrice
 2.1 Matrices remarquables
 *************************************
 
-* Matrice nulle, toutes les valeurs sont à 0
-* Matrice carré, matrice de la forme :math:`M_{n}`
-* Matrice transposée :math:`t_A` = :math:`A^t` = Matrice inverse lignes et colonnes
+* Matrice :code:`nulle` : toutes les valeurs sont à 0
+* Matrice :code:`carré` : matrice de la forme :math:`M_{n}`
+* Matrice :code:`diagonale` : matrice nulle avec les valeurs dans la diagonale non nulles
+* Matrice :code:`conjuguée` : :math:`conj(A)` revient à inverser le signe des coefficient complexes [#1]_.
+* Matrice :code:`transposée` : :math:`t_A` = :math:`A^t` = Matrice inverse lignes et colonnes
+* Matrice :code:`adjointe` notée : :math:`A^*` soit :math:`{conj(A)}^t` avec conj(A) la matrice conjuguée de A
+* :code:`Vecteur` ou Matrice :code:`ligne` ou :code:`colonne` : Matrice de la forme :math:`M_{n,1}` ou :math:`M_{1,m}`
+* Matrice A :code:`symétrique` (:math:`\mathbb{R}`) ou :code:`hermitienne` (:math:`\mathbb{C}`)  : :math:`A = A^*`.
+* Matrice :code:`orthogonale` (:math:`\mathbb{R}`) ou :code:`unitaire` (:math:`\mathbb{C}`) si :math:`A A^* = A^* A = Id`.
+
+.. [#1] Dans :math:`\mathbb{R}`, la conjuguée de A est égale à la co-matrice de A (voir :ref:`matrix_inverse`).
 
 2.2 Matrice identité ou unité
 *************************************
@@ -26,12 +52,7 @@ La matrice identité est une matrice :math:`Id_n` tel que :math:`A_n * Id_n = Id
 
 Il s'agit d'une matrice diagonale, avec uniquement des 1 sur la diagonale.
 
-2.3 Vecteurs (matrice ligne/colonne)
-*************************************
-
-
-
-2.4 Matrice normales
+2.3 Matrice normales
 **************************
 
 Une matrice est normale si :math:`A A^* = A^* A`.
@@ -41,7 +62,7 @@ Une matrice est normale si :math:`A A^* = A^* A`.
 		Une matrice A multipliée par la transposée de la co-matrice est égale
 		à la transposée de la co-matrice multiplié par une matrice A.
 
-2.5 Matrices triangulaires
+2.4 Matrices triangulaires
 ******************************
 
 Une matrice triangulaire est soit:
@@ -51,135 +72,129 @@ Une matrice triangulaire est soit:
 	* supérieure (TS) : la diagonale vaut 1, en dessous que des 0, et au dessus des valeurs.
 	* supérieure stricte (TSS) : TS mais diagonale vaut 0
 
-2.6 Matrice symétrique (:math:`\mathbb{R}`) ou hermitienne (:math:`\mathbb{C}`)
-************************************************************************************
+3. Opérations sur les matrices
+===============================
 
-Une matrice A est symétrique si :math:`A = A^*` (donc A est égal à la transposée de la co-matrice de A).
+3.1 Addition avec une matrice
+******************************
 
-2.7 Matrice orthogonale (:math:`\mathbb{R}`) ou unitaire (:math:`\mathbb{C}`)
-************************************************************************************
+Il est possible de faire l'addition entre deux matrices, seulement si elles ont le même
+nombre de lignes et colonnes.
 
-Une matrice est orthogonale ou unitaire si :math:`A A^* = A^* A = Id`.
+.. math::
 
-4. Matrice Inverse et Réduction d'endomorphisme
-===================================================
+			\begin{pmatrix}
+		1 & 2 & 3 \\
+		4 & 5 & 6
+		 \end{pmatrix}
+		 +
+		 \begin{pmatrix}
+		0 & 1 & 2 \\
+		1 & 2 & 3
+		 \end{pmatrix} = \begin{pmatrix}
+		1 & 3 & 5 \\
+		5 & 7 & 9
+		 \end{pmatrix}
 
-Déterminant
-	Le déterminant est un chiffre permettant et aider à obtenir des informations sur une matrice.
+.. warning::
 
-	Il sert par exemple à déterminer
-		* si une matrice est inversible si :math:`det(A) \neq 0`
-		* valeurs propres d'une matrice
+	La soustraction n'est pas possible, mais il est possible de faire A + -1*B.
 
-Vecteurs propres et valeurs propres
-	S'il existe un lambda non null tel que :math:`A x = \lambda x` alors x est un vecteur propre de A
-	pour la valeur propre lambda
+3.2 Multiplication
+******************************
 
-	On appelle élément propre le couple (lambda, x)
+3.2.1 Multiplication par un réel
+**********************************
 
-	.. note::
+Condition: aucune. Il suffit de multiplier tous les membres de la matrice par le coefficient.
 
-		On appelle spectre d'une matrice l'ensemble des valeurs propres d'une matrice, noté
-		:math:`\sigma(A).`
+.. math::
 
-		https://fr.wikipedia.org/wiki/Spectre_d%27une_matrice
+	-2 *
+	\begin{pmatrix}
+	1 & 2 & 3 \\
+	4 & 5 & 6
+	\end{pmatrix}
+	\ = \
+	\begin{pmatrix}
+	-2 & -4 & -6 \\
+	-8 & -10 & -12
+	\end{pmatrix}
 
-		On note :math:`\rho` (rho) le noyau spectral : :math:`\rho (A) = \max_{\lambda \in \sigma(A)} | \lambda|`
+.. warning::
 
-		.. note::
+	Soit une matrice A et un réel r. A / r est impossible mais :math:`A * (1/r)` est possible.
 
-			Ceci se lit comme le noyeau spectral est la valeur absolue du plus grand lambda atteint
-			sachant que lambda se trouve dans :math:`\sigma(A)` soit l'ensemble des vecteurs propres.
+3.2.1 Multiplication par une matrice
+**************************************
 
-Polynôme caractéristique
-	Le polynôme caractéristique de A : :math:`X_a(T) = det(A -T Id)`
+Condition: Le coefficient des lignes de la matrice 1 doit être le même que le coefficient des colonnes de
+la matrice 2 soit :math:`M1_{n1, \ {\color{red}p1}} = M2_{{\color{red}n2}, \ p2} \ avec \ p1=n2`.
 
-4.1 Matrices inverses
-***************************************************
+Le résultat sera une matrice math:`M_{p1, n2}`.
 
-On note :math:`Gl_n(R)` l'ensemble des matrices inversibles.
+.. math::
+
+	\ \ \  \  \  \  \  \  \  \  \  \  \ \  \  \  \  \  \  \  \  \  \  \ \  \
+	M1\ \begin{pmatrix}
+	\color{blue}{1} & 4 \\
+	\color{blue}{2} & 5  \\
+	\color{blue}{3} & 6
+	\end{pmatrix}
+
+.. math::
+
+		M2
+		\begin{pmatrix}
+		\color{red}{9} & \color{red}{8} & \color{red}{7} \\
+		6 & 5 & 4
+		\end{pmatrix}
+		\
+		M
+		\begin{pmatrix}
+		\color{red}{9}*\color{blue}{1}+\color{red}{8}*\color{blue}{2}+\color{red}{7}*\color{blue}{3}=46 & 9*4+8*5+7*6=118 \\
+		6*1+5*2+4*3=28 & 6*4+5*5+4*6=73
+		\end{pmatrix}
+
+.. note::
+
+	Pour faire le produit, on place généralement les matrices de la forme une haut (M2), une en dessous (M) et
+	une à gauche de M (M1).
+
+	Pour obtenir la valeur de la case :math:`M_{1, 1}` on fait la somme des multiplications de la colonne 1,
+	ligne 1 de M1 * colonne 1, ligne 1 de M2 + colonne 2, ligne 1 de M1 * colonne1, ligne 2 de M2 etc...
+
+	Si vous avez compris, on fixe la ligne de M1 à 1 et la colonne de M2 à 1 et on multiplie les valeurs en avançant
+	dans les colonnes (M1) et dans les lignes (M2).
+
+.. warning::
+
+	Soit deux matrices A, B. A / B est impossible mais :math:`A * B^-1` est possible.
+
+.. hint::
+
+	Si A est une matrice diagonale, alors le calcul revient à faire à multiplier chaque colonne
+	par le coefficient la la diagonale.
+
+	Si la matrice est diagonale identité inversée, alors les lignes sont échangées.
+
+.. _gauss:
+
+4. Pivot de gauss
+=========================
 
 ...
 
-4.2 Réduction de matrice/d'endomorphism
-***************************************************
+.. _matrix_inverse:
 
-L'objectif est calculer :math:`A^n`. On va réduire la matrice à une matrice diagonale.
+5. Matrice Inverse et Réduction d'endomorphisme
+===================================================
 
-	:math:`B^n = P * A^n * P^{-1}`
+...
 
-.. _norme:
 
-5. Normes
-=========================================
 
-Une norme N sur un ensemble E est une mesure de l'erreur sur E.
 
-	* :math:`N(x) \ge 0`
-	* :math:`N(x+y) \le N(x)+N(y)`
-	* :math:`N(x) = 0 \Leftrightarrow x = 0`
-	* :math:`N(\lambda{x}) = |\lambda| N(x)`
-
-.. note::
-
-	On met \|\|\|A||| pour la norme d'une matrice. On note \|\|Ax|| pour la norme d'un vecteur.
-
-5.1 Normes en 1, 2 et :math:`+\infty`
-***************************************************
-
-5.1.1 Norme en 1
----------------------------------------------------
-
-:math:`||x||_1 = \sum_{i=1}^{n}{ |\ x_i |}`
-
-.. note::
-
-	...
-
-5.1.2 Norme en 2
----------------------------------------------------
-
-:math:`||x||_2 = (\sum_{i=1}^{n}{ |\ x_i |^2} )^{1/2}`
-
-.. note::
-
-	...
-
-Si A est normale alors :math:`|||A||| = \rho (A)`
-
-.. note::
-
-	...
-
-5.1.3 Norme en :math:`+\infty`
----------------------------------------------------
-
-:math:`||x||_{+\infty	} = \max_{i \in \mathbb{[}1:n\mathbb{]}} | \ x_i |^2`
-
-.. note::
-
-	...
-
-5.2 Opérations sur les normes
-***************************************************
-
-:math:`|||A|||| = \sup_{x \neq 0} \frac{||Ax||}{||x||}`
-
-.. note::
-
-	...
-
-:math:`||Ax|| \le |||A||| * ||x||`
-
-.. note::
-
-	...
-
-:math:`\rho(A) \le ||A||`
-
-.. note::
-
-	On peut toujours trouver une norme d'une matrice pour approcher le rayon spectral.
 
 |
 |
@@ -188,14 +203,17 @@ Si A est normale alors :math:`|||A||| = \rho (A)`
 -----
 
 **Crédits**
-	* Denis Monnerat (enseignant à l'IUT de Sénart-Fontainebleau)
-	* Jéremy Possamaï (enseignant à l'IUT de Sénart-Fontainebleau)
-	* Vicent Torri (enseignant à l'ENSIIE)
-	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
+	* Denis MONNERAT (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Jéremy POSSAMAÏ (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Vicent TORRI (enseignant à l'ENSIIE)
+	* Christophe MOUILLERON (enseignant à l'ENSIIE)
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
 	* Matrices (définitions)
 		* https://fr.wikipedia.org/wiki/Matrice_normale
+		* http://uel.unisciel.fr/physique/outils_nancy/outils_nancy_ch11/co/apprendre_ch11_17.html
+		* https://en.wikipedia.org/wiki/Matrix_(mathematics)
 	* Bornes
 		* https://fr.wikipedia.org/wiki/Borne_sup%C3%A9rieure_et_borne_inf%C3%A9rieure
 		* https://fr.wikipedia.org/wiki/Extremum
@@ -203,3 +221,5 @@ Si A est normale alors :math:`|||A||| = \rho (A)`
 		* https://fr.wikibooks.org/wiki/LaTeX/%C3%89crire_des_math%C3%A9matiques
 		* https://www.commentcamarche.net/contents/620-latex-table-de-caracteres*
 		* https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
+	* outils
+		* http://atomurl.net/math/

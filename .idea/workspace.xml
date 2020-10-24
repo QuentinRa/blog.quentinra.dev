@@ -27,8 +27,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/matrix" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/matrix" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/analyse/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/analyse/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +106,7 @@
       <workItem from="1603472890164" duration="8097000" />
       <workItem from="1603487269974" duration="11000" />
       <workItem from="1603487671535" duration="8000" />
-      <workItem from="1603554073117" duration="377000" />
+      <workItem from="1603554073117" duration="6206000" />
     </task>
     <servers />
   </component>
@@ -175,10 +176,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="ShowDiffWithBranchDialog/0.0.1536.824@0.0.1536.824" timestamp="1603484549092" />
-    <state x="376" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603309508641">
+    <state x="376" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603556286896">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="376" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1603309508641" />
+    <state x="376" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1603556286896" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1603391118403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

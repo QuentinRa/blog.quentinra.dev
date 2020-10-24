@@ -11,9 +11,6 @@ rang et noyau
 
 	rg(A-l Id) < n
 
-A* = adjoint de A
-	https://fr.wikipedia.org/wiki/Matrice_adjointe
-
 Produit scalaire
 	forme sesquilinéaire ou hermitienne
 
@@ -37,3 +34,147 @@ J=lambda Id + N et Id et N commutent
 Matrices semblables
 
 normes subordonnées et norme d'opérateurs
+
+4. Matrice Inverse et Réduction d'endomorphisme
+===================================================
+
+Déterminant
+	Le déterminant est un chiffre permettant et aider à obtenir des informations sur une matrice.
+
+	Il sert par exemple à déterminer
+		* si une matrice est inversible si :math:`det(A) \neq 0`
+		* valeurs propres d'une matrice
+
+Vecteurs propres et valeurs propres
+	S'il existe un lambda non null tel que :math:`A x = \lambda x` alors x est un vecteur propre de A
+	pour la valeur propre lambda
+
+	On appelle élément propre le couple (lambda, x)
+
+	.. note::
+
+		On appelle spectre d'une matrice l'ensemble des valeurs propres d'une matrice, noté
+		:math:`\sigma(A).`
+
+		https://fr.wikipedia.org/wiki/Spectre_d%27une_matrice
+
+		On note :math:`\rho` (rho) le noyau spectral : :math:`\rho (A) = \max_{\lambda \in \sigma(A)} | \lambda|`
+
+		.. note::
+
+			Ceci se lit comme le noyeau spectral est la valeur absolue du plus grand lambda atteint
+			sachant que lambda se trouve dans :math:`\sigma(A)` soit l'ensemble des vecteurs propres.
+
+Polynôme caractéristique
+	Le polynôme caractéristique de A : :math:`X_a(T) = det(A -T Id)`
+
+4.1 Matrices inverses
+***************************************************
+
+On note :math:`Gl_n(R)` l'ensemble des matrices inversibles.
+
+...
+
+4.2 Réduction de matrice/d'endomorphism
+***************************************************
+
+L'objectif est calculer :math:`A^n`. On va réduire la matrice à une matrice diagonale.
+
+	:math:`B^n = P * A^n * P^{-1}`
+
+.. _norme:
+
+5. Normes
+=========================================
+
+Une norme N sur un ensemble E est une mesure de l'erreur sur E.
+
+	* :math:`N(x) \ge 0`
+	* :math:`N(x+y) \le N(x)+N(y)`
+	* :math:`N(x) = 0 \Leftrightarrow x = 0`
+	* :math:`N(\lambda{x}) = |\lambda| N(x)`
+
+.. note::
+
+	On met \|\|\|A||| pour la norme d'une matrice. On note \|\|Ax|| pour la norme d'un vecteur.
+
+5.1 Normes en 1, 2 et :math:`+\infty`
+***************************************************
+
+5.1.1 Norme en 1
+---------------------------------------------------
+
+:math:`||x||_1 = \sum_{i=1}^{n}{ |\ x_i |}`
+
+.. note::
+
+	...
+
+5.1.2 Norme en 2
+---------------------------------------------------
+
+:math:`||x||_2 = (\sum_{i=1}^{n}{ |\ x_i |^2} )^{1/2}`
+
+.. note::
+
+	...
+
+Si A est normale alors :math:`|||A||| = \rho (A)`
+
+.. note::
+
+	...
+
+5.1.3 Norme en :math:`+\infty`
+---------------------------------------------------
+
+:math:`||x||_{+\infty	} = \max_{i \in \mathbb{[}1:n\mathbb{]}} | \ x_i |^2`
+
+.. note::
+
+	...
+
+5.2 Opérations sur les normes
+***************************************************
+
+:math:`|||A|||| = \sup_{x \neq 0} \frac{||Ax||}{||x||}`
+
+.. note::
+
+	...
+
+:math:`||Ax|| \le |||A||| * ||x||`
+
+.. note::
+
+	...
+
+:math:`\rho(A) \le ||A||`
+
+.. note::
+
+	On peut toujours trouver une norme d'une matrice pour approcher le rayon spectral.
+
+|
+|
+|
+
+-----
+
+**Crédits**
+	* Denis MONNERAT (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Jéremy POSSAMAÏ (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Vicent TORRI (enseignant à l'ENSIIE)
+	* Christophe MOUILLERON (enseignant à l'ENSIIE)
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
+
+**Références**
+	* Matrices (définitions)
+		* https://fr.wikipedia.org/wiki/Matrice_normale
+	* Bornes
+		* https://fr.wikipedia.org/wiki/Borne_sup%C3%A9rieure_et_borne_inf%C3%A9rieure
+		* https://fr.wikipedia.org/wiki/Extremum
+	* latex
+		* https://fr.wikibooks.org/wiki/LaTeX/%C3%89crire_des_math%C3%A9matiques
+		* https://www.commentcamarche.net/contents/620-latex-table-de-caracteres*
+		* https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
