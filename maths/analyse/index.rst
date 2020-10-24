@@ -96,18 +96,18 @@ Propriétés
 
 .. math::
 
-	cond_2(A) = sqrt{\frac{\sigma_n}{\sigma_1}} \\
+	cond_2(A) = \sqrt{\frac{\sigma_n}{\sigma_1}} \\
 	ou \ si \ A \ définie \ positive \\
-	cond_2(A) = sqrt{\frac{\lambda_n}{\lambda_1}} \\
+	cond_2(A) = \sqrt{\frac{\lambda_n}{\lambda_1}} \\
 
 .. note::
 
 	:math:`\sigma` est la plus petite valeur propre, :math:`\lambda` la plus grande valeur propre.
 
+3.3 Conditionnement en p
+********************************
 
-
-
-
+Si on considère une norme :math:`|||\ |||_p` alors :math:`cond_p(A) = |||A||_p |||A^{-1}||_p`
 
 
 
