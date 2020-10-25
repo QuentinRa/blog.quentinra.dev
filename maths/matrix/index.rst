@@ -178,7 +178,7 @@ Le résultat sera une matrice math:`M_{p1, n2}`.
 
 .. _matrix_inverse:
 
-5. Matrice Inverse et Réduction d'endomorphisme
+5. Matrice Inverse
 ===================================================
 
 .. _determinant:
@@ -206,6 +206,7 @@ Propriétés
 	* si :math:`A=\begin{pmatrix} a & b \\ c & d \end{pmatrix}`, det(A) = ad-bc
 	* det(AB) = det(A) * det(B)
 	* :math:`det(A^t)` = det(A)
+	* si A est une matrice diagonale, alors det(A) = produit de valeurs de la diagonale
 
 5.1.2 Calcul par développement
 *********************************
@@ -244,6 +245,95 @@ pas forcément un inverse. Une matrice dont le déterminant est différent de 0 
 
 On note :math:`Gl_n(R)` l'ensemble des matrices inversibles.
 
+Il existe deux méthodes :
+	* en utilisant GAUSS
+	* en utilisant la co-matrice
+
+5.2.1 Calcul d'inverse avec Gauss
+***********************************
+
+L'idée est de mettre parallèlement votre matrice (à gauche) et la matrice identité (à droite).
+
+	* L'objectif est d'obtenir la matrice identité (à gauche).
+	* Toutes les opérations faites sur la matrice de gauche doivent être refaites sur la matrice de droite.
+	* La matrice de droite est :math:`A^{-1}`.
+
+.. note::
+
+	Supposons :math:`A=\begin{pmatrix} 3 & -2 & 4 \\ 2 & -4 & 5 \\1 & 8 & 2\end{pmatrix}` est inversible, on pose
+	au début
+
+	.. math::
+
+		\begin{pmatrix}3 & -2 & 4 \\ 2 & -4 & 5 \\1 & 8 & 2\end{pmatrix}
+		\begin{pmatrix}1 & 0 & 0 \\0 & 1 & 0 \\ 0 & 0 & 1\end{pmatrix}
+
+	et à la fin on obtient
+
+	.. math::
+
+		\begin{pmatrix}1 & 0 & 0 \\0 & 1 & 0 \\ 0 & 0 & 1\end{pmatrix} \ et \
+		\begin{pmatrix}8/11 & -6/11 & -1/11 \\ -1/66 & -1/33 & 7/66 \\-10/33 & 13/33 & 4/33\end{pmatrix} = A^-1
+
+5.2.2 Calcul via la co-matrice
+***********************************
+
+On peut calculer l'inverse d'une matrice avec :math:`A^{-1} = \frac{1}{det(A)} * Com(A)^t`.
+
+La co-matrice de A notée Com(A) corresponds à une matrice
+
+	* le point haut gauche est un plus
+	* le points voisins ont des signes différents
+	*
+		le point :math:`a_{1,1}` est calculée en calculant le déterminant de la matrice A après
+		avoir retiré la ligne 1 et la colonne 1.
+
+.. note::
+
+	La matrice :math:`A=\begin{pmatrix} 3 & -2 & 4 \\ 2 & -4 & 5 \\1 & 8 & 2\end{pmatrix}` est inversible est inversible
+	de déterminant det(A)=-66.
+
+	.. math::
+
+		A^{-1} = \frac{1}{-66}
+		\begin{pmatrix}
+		+ \begin{pmatrix}-4 & 5 \\ 8 & 2\end{pmatrix} & - \begin{pmatrix}2 & 5 \\ 1 & 2\end{pmatrix} & + \begin{pmatrix}2 & -4 \\ 1 & 8\end{pmatrix} \\
+		- \begin{pmatrix}-2 & 4 \\ 8 & 2\end{pmatrix} & + \begin{pmatrix}3 & 4 \\ 1 & 2\end{pmatrix} & - \begin{pmatrix}3 & -2 \\ 1 & 8\end{pmatrix} \\
+		+ \begin{pmatrix}-2 & 4 \\ -4 & 5\end{pmatrix} & - \begin{pmatrix}3 & 4 \\ 2 & 5\end{pmatrix} & + \begin{pmatrix}3 & -2 \\ 2 & 4\end{pmatrix}
+		\end{pmatrix}^t
+
+	Il ne faut pas oublier de faire la transposée !
+
+6. Réduction d'endomorphisme
+===============================
+
+L'objectif est calculer :math:`A^n` ou :math:`exp(A)`. On va réduire la matrice à une matrice diagonale.
+
+On cherche à trouver une matrice P inversible et D diagonale telles que :math:`A^n = P * D^n * P^{-1}`
+
+.. note::
+
+	:math:`A^n` consiste à mettre tous les coefficients d'une matrice diagonale à la puissance n.
+
+	exp(A) consiste à faire exp(coefficient) pour chacun des coefficients d'une matrice diagonale.
+
+.. note::
+
+	:math:`A^n` et :math:`D^n` sont appelées matrices semblables.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 |
 |
 |
@@ -263,6 +353,7 @@ On note :math:`Gl_n(R)` l'ensemble des matrices inversibles.
 		* http://uel.unisciel.fr/physique/outils_nancy/outils_nancy_ch11/co/apprendre_ch11_17.html
 		* https://en.wikipedia.org/wiki/Matrix_(mathematics)
 		* https://fr.wikipedia.org/wiki/D%C3%A9terminant_(math%C3%A9matiques)
+		* https://fr.wikipedia.org/wiki/Matrices_semblables
 	* Bornes
 		* https://fr.wikipedia.org/wiki/Borne_sup%C3%A9rieure_et_borne_inf%C3%A9rieure
 		* https://fr.wikipedia.org/wiki/Extremum
@@ -273,3 +364,5 @@ On note :math:`Gl_n(R)` l'ensemble des matrices inversibles.
 	* outils
 		* http://atomurl.net/math/
 		* https://www.dcode.fr/determinant-matrice
+		* https://calculis.net/matrice-inverse
+		* https://www.dcode.fr/inverse-matrice

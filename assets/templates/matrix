@@ -12,18 +12,13 @@ Produit scalaire
 Trace
 	???
 
-.. Mn,m (R)
-	Vecteur (n ou m) = 1 ou R^n
-
 Th de Jordan ???
 voir cours
 J=lambda Id + N et Id et N commutent
 
-Matrices semblables
-
 normes subordonnées et norme d'opérateurs
 
-4. Matrice Inverse et Réduction d'endomorphisme
+Réduction d'endomorphisme
 ===================================================
 
 Vecteurs propres et valeurs propres
@@ -49,16 +44,8 @@ Vecteurs propres et valeurs propres
 Polynôme caractéristique
 	Le polynôme caractéristique de A : :math:`X_a(T) = det(A -T Id)`
 
-Polynôme caractéristique
 		https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Cayley-Hamilton
 		(revenir au cours, la fin de la page est claire)
-
-4.2 Réduction de matrice/d'endomorphism
-***************************************************
-
-L'objectif est calculer :math:`A^n`. On va réduire la matrice à une matrice diagonale.
-
-	:math:`B^n = P * A^n * P^{-1}`
 
 .. _norme:
 
