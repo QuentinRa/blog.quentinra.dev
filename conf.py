@@ -21,7 +21,7 @@ copyright = '2020, Quentin Ra'
 author = 'Quentin Ra'
 
 # The full version, including alpha/beta/rc tags
-release = '1.2.29'
+release = '1.2.30'
 # version 0 : html, css, php, js
 # version 1 : restructured
 # version 1.x : docker, vim,

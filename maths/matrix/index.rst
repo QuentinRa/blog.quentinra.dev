@@ -436,6 +436,18 @@ Les étapes sont :
 
 	Le :math:`\lambda` en 1,1 (:math:`\lambda_1`) dans D donne le vecteur i,1 dans P etc.
 
+7. Exercices
+==============
+
+.. toctree::
+    :name: exercices
+    :maxdepth: 1
+
+    Calculs	de matrices		      <exercices/calculs>
+    Calculs de déterminant      <exercices/determinant>
+    Résolution (GAUSS)		      <exercices/gauss>
+    Réduction d'endomorphisme   <exercices/reductions>
+
 |
 
 -----
