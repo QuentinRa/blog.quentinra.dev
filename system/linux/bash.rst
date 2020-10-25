@@ -109,7 +109,7 @@ Commande :code:`cat` ou :code:`less`
 Commande :code:`mkdir`
 	Crée un répertoire
 
-	| :code:`-p : tous les dossier non-existants du chemin son crées
+	| :code:`-p` : tous les dossier non-existants du chemin son crées
 
 Commande :code:`touch`
 	Permet de créer un fichier ou met à jour sa date de modification s'il existe

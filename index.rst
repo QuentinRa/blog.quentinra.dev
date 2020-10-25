@@ -39,6 +39,15 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     Langage C					             <imperative/c/index>
 
 .. toctree::
+    :caption: Entreprise
+    :name: business
+    :maxdepth: 1
+
+    Entreprise					           <business/env/index>
+    Macroéconomie					         <business/env/macro>
+    Documents d'une Entreprise     <business/docs/index>
+
+.. toctree::
     :caption: Utilitaires
     :name: utils
     :maxdepth: 1

@@ -28,7 +28,7 @@ NOM
 -----
 
 **Crédits**
-	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
 	* lien
