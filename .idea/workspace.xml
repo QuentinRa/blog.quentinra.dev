@@ -27,17 +27,11 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/template.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/analyse" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/maths/analyse" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/bash" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/system/bash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/c" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/imperative/c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/graph" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/maths/graph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/linux" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/system/linux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/matrix" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/maths/matrix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/proba" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/maths/proba" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/git" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/autres/git" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/maths/matrix" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/maths/matrix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/sql" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/autres/sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/bash.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/bash.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,19 +59,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\assets\templates\imperative" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\templates\system" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\templates\maths" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\linux\" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\assets\templates\business" />
       <recent name="C:\Users\quent\Documents\texas-res\business\env" />
       <recent name="C:\Users\quent\Documents\texas-res\business\docs" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\linux\ensiie" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\linux" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\templates\autres" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\templates\imperative" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\templates\system" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\templates\maths" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -116,7 +110,8 @@
       <workItem from="1603487671535" duration="8000" />
       <workItem from="1603554073117" duration="6264000" />
       <workItem from="1603566947044" duration="3519000" />
-      <workItem from="1603620274495" duration="11196000" />
+      <workItem from="1603620274495" duration="12227000" />
+      <workItem from="1603644841967" duration="4971000" />
     </task>
     <servers />
   </component>

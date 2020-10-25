@@ -3,49 +3,12 @@
 
 rang et noyau
 	ker (A- lam Id)
-
 	rg(A-l Id) < n
 
 Produit scalaire
 	forme sesquilinéaire ou hermitienne
 
-Trace
-	???
-
-Th de Jordan ???
-voir cours
-J=lambda Id + N et Id et N commutent
-
 normes subordonnées et norme d'opérateurs
-
-Réduction d'endomorphisme
-===================================================
-
-Vecteurs propres et valeurs propres
-	S'il existe un lambda non null tel que :math:`A x = \lambda x` alors x est un vecteur propre de A
-	pour la valeur propre lambda
-
-	On appelle élément propre le couple (lambda, x)
-
-	.. note::
-
-		On appelle spectre d'une matrice l'ensemble des valeurs propres d'une matrice, noté
-		:math:`\sigma(A).`
-
-		https://fr.wikipedia.org/wiki/Spectre_d%27une_matrice
-
-		On note :math:`\rho` (rho) le noyau spectral : :math:`\rho (A) = \max_{\lambda \in \sigma(A)} | \lambda|`
-
-		.. note::
-
-			Ceci se lit comme le noyeau spectral est la valeur absolue du plus grand lambda atteint
-			sachant que lambda se trouve dans :math:`\sigma(A)` soit l'ensemble des vecteurs propres.
-
-Polynôme caractéristique
-	Le polynôme caractéristique de A : :math:`X_a(T) = det(A -T Id)`
-
-		https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Cayley-Hamilton
-		(revenir au cours, la fin de la page est claire)
 
 .. _norme:
 

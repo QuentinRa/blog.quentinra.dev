@@ -20,12 +20,62 @@ on identifie une case par des coefficients i (ligne) et j (colonne) qui commence
 
 .. note::
 
-	Les matrices sont souvent utilisées pour résoudre des systèmes linéaires (voir :ref:`gauss`)
+	Des matrices :math:`M_{n,p}` sont parfois notées :math:`M_{np}` lorsqu'il est évident
+	qui est n et qui est p.
+
+1.1 Matrice d'un système linéaire
+**************************************
+
+Les systèmes linéaires sont souvent représentés sous la forme de matrices
+pour pouvoir utiliser la méthode de résolution de GAUSS.
+
+Les règles sont :
+
+		* on ne met que les indices des variables, une variable par colonne
+		* si la variable n'est pas présente, on met 0
+		* s'il n'y a pas de coefficient, alors on met 1
+		* la dernière colonne est celle des seconds membres
+		*
+			le nombre de ligne = le nombre de variables, s'il y a plus de lignes que d'inconnues alors [...].
+			S'il y a moins de lignes que d'inconnues alors certaines inconnues sont des paramètres.
 
 .. note::
 
-	Des matrices :math:`M_{n,p}` sont parfois notées :math:`M_{np}` lorsqu'il est évident
-	qui est n et qui est p.
+	Par exemple le système
+
+	.. math::
+
+		\left \{
+		\begin{array}{r c l}
+		x_1 \ \ - \ \ x_2 + 2x_3 = 3 \\
+		x_1 \ \ + \ 2x_2 \ \ \ \ \ \ \ \ \ \ = 0
+		\end{array}
+		\right .
+
+	donne la matrice
+
+	.. math::
+
+		\begin{pmatrix}
+		\ 1 & -1 & 2 & 3 \\
+		\ 1 & 2 & 0 & 0
+		\end{pmatrix}
+
+	On échelonne ensuite avec le pivot de GAUSS.
+
+		* On obtient dans la colonne du second membre une valeur.
+		*
+			dans l'une des autre colonnes, et ce pour chaque ligne, on aura un seul 1.
+			Si ce 1 est dans la colonne 1, alors on a :math:`x_1` = valeur du second membre de la même ligne.
+
+	Par exemple, si on fini avec cette matrice, :math:`x_1=3` et :math:`x_3=12`, :math:`x_2` sera un paramètre.
+
+	.. math::
+
+		\begin{pmatrix}
+		\ 1 & 0 & 0 & 3 \\
+		\ 0 & 0 & 1 & 12
+		\end{pmatrix}
 
 2. Matrices particulières
 ===========================
@@ -309,7 +359,7 @@ La co-matrice de A notée Com(A) corresponds à une matrice
 
 L'objectif est calculer :math:`A^n` ou :math:`exp(A)`. On va réduire la matrice à une matrice diagonale.
 
-On cherche à trouver une matrice P inversible et D diagonale telles que :math:`A^n = P * D^n * P^{-1}`
+On cherche à trouver une matrice P inversible et D diagonale telles que :math:`A^n = P * D^n * P^{-1}`.
 
 .. note::
 
@@ -321,21 +371,71 @@ On cherche à trouver une matrice P inversible et D diagonale telles que :math:`
 
 	:math:`A^n` et :math:`D^n` sont appelées matrices semblables.
 
+L'objectif va être de calculer des valeurs propres, qui seront les coefficients de la matrice diagonale,
+ainsi que de calculer P.
 
+.. note::
 
+	Il est possible que la réduction d'endomorphisme soit aussi appelé Théorème de Jordan (à confirmer?).
 
+6.1 Définitions
+****************
 
+Vecteurs propres et valeurs propres
+	S'il existe un lambda non null tel que :math:`A x = \lambda x` alors x est un vecteur propre de A
+	pour la valeur propre lambda
 
+	On appelle élément propre le couple (lambda, x)
 
+	.. note::
 
+		0 (zéro) peut être une valeur propre, puisque seul le vecteur propre doit être non null.
 
+Spectre
+	On appelle spectre d'une matrice l'ensemble des valeurs propres d'une matrice, noté :math:`\sigma(A).`
 
+	On note :math:`\rho` (rho) le noyau spectral : :math:`\rho (A) = \max_{\lambda \in \sigma(A)} | \lambda|`
 
+	.. note::
 
+		Ceci se lit comme le noyeau spectral est la valeur absolue du plus grand lambda atteint
+		sachant que lambda se trouve dans :math:`\sigma(A)` soit l'ensemble des vecteurs propres.
 
+Polynôme caractéristique
+	Les vecteurs propres sont des solutions de :math:`det(\lambda{I_n}-A_n) = 0`.
 
-|
-|
+	On appelle polynôme caractéristique :math:`x_A(\lambda) = det(\lambda{I_n}-A_n)` soit un polynôme
+	en lambda de degré n.
+
+	.. note::
+
+		Je crois que l'on doit ce théorème à Cayley-Hamilton.
+
+Trace
+	La trace, notée tr(A) correspond à la somme des valeurs de la diagonale de la matrice A.
+
+6.2 Calcul
+*************
+
+Les étapes sont :
+
+	* calculer  :math:`\lambda{I_n}-A_n`
+	* résoudre :math:`det(\lambda{I_n}-A_n) = 0` et trouver les lambda (valeurs propres)
+	* les valeurs propres forment la matrice diagonale D
+	* On pose :math:`A = \lambda x`
+	*
+		On résout l'équation précédent pour chacune des valeurs propres (remplace \lambda).
+		On obtient des vecteurs x :math:`(x_1, ..., x_1)`
+	* en mettant tous les vecteurs à côté on obtient la matrice P
+	* calculer :math:`P^{-1}`
+	* (optionnel) on vérifie que :math:`P*D^1*P^{-1}=A`
+
+.. note::
+
+	L'ordre des :math:`\lambda` n'a pas d'importance, mais une fois choisi numérotez vos lambda.
+
+	Le :math:`\lambda` en 1,1 (:math:`\lambda_1`) dans D donne le vecteur i,1 dans P etc.
+
 |
 
 -----
@@ -348,12 +448,11 @@ On cherche à trouver une matrice P inversible et D diagonale telles que :math:`
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* Matrices (définitions)
+	* Matrices
 		* https://fr.wikipedia.org/wiki/Matrice_normale
 		* http://uel.unisciel.fr/physique/outils_nancy/outils_nancy_ch11/co/apprendre_ch11_17.html
 		* https://en.wikipedia.org/wiki/Matrix_(mathematics)
 		* https://fr.wikipedia.org/wiki/D%C3%A9terminant_(math%C3%A9matiques)
-		* https://fr.wikipedia.org/wiki/Matrices_semblables
 	* Bornes
 		* https://fr.wikipedia.org/wiki/Borne_sup%C3%A9rieure_et_borne_inf%C3%A9rieure
 		* https://fr.wikipedia.org/wiki/Extremum
@@ -361,6 +460,12 @@ On cherche à trouver une matrice P inversible et D diagonale telles que :math:`
 		* https://fr.wikibooks.org/wiki/LaTeX/%C3%89crire_des_math%C3%A9matiques
 		* https://www.commentcamarche.net/contents/620-latex-table-de-caracteres*
 		* https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
+	* endomorphisme
+		* https://fr.wikipedia.org/wiki/Spectre_d%27une_matrice
+		* https://fr.wikipedia.org/wiki/Matrices_semblables
+		* https://fr.wikipedia.org/wiki/Polyn%C3%B4me_caract%C3%A9ristique
+		* https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Cayley-Hamilton
+		* https://fr.wikipedia.org/wiki/R%C3%A9duction_de_Jordan
 	* outils
 		* http://atomurl.net/math/
 		* https://www.dcode.fr/determinant-matrice
