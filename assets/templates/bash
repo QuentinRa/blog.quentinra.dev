@@ -2,9 +2,6 @@
 aptitude install manpages-dev
 build-essential installe make gcc ...
 ls *.{jpg,jpeg,png}
-~/.bashrc
-https://www.diskinternals.com/linux-reader/bash-script/
-https://medium.com/sysf/bash-scripting-everything-you-need-to-know-about-bash-shell-programming-cd08595f2fba
 
 Multiplicateurs de terminaux :
 
@@ -13,7 +10,7 @@ Pour se déplacer entre les terminaux : Ctrl-a-d
 Revenir à un terminal : screen –r <nom du terminal>
 
 Tmux : Lancer tmux : tmux
-Créer un terminal vertical : ctrl-b % et un terminal horizontal : ctrl-b "
+Créer un terminal vertical : ctrl-b % et un terminal horizontal : ctrl-b et sans cotes '"'
 Supprimer un terminal : ctrl-b x
 Pour changer : ctrl-b ->
 Fermer les terminaux : ctrl-b d
@@ -35,3 +32,8 @@ Ex : ps -o pid, ppid, pgid, tpgid, sid, comm, etc…
 <n°processus, n°processus père, n°groupe, id groupe avant plan , n° session, commande>
 Jobs donne liste des processus et explicitant s’ils sont avant/arrière-plan.
 Fg : premier plan et bg arrière-plan
+
+#numérote les lignes d'un fichier
+nl #-ba (toutes) -bt (sans lignes vides)
+#affiche les 10 dernières lignes d'un fichier
+tail #-n (décroissant) n+2 (tout depuis la 2e ligne)
