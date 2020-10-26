@@ -18,3 +18,11 @@ Niveau supérieur
 ***********************
 
 ...
+
+|
+
+-----
+
+**Crédits**
+	* Christophe MOUILLERON (enseignant à l'ENSIIE)
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

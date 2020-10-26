@@ -447,6 +447,7 @@ Les étapes sont :
     Calculs de déterminant      <exercices/determinant>
     Résolution (GAUSS)		      <exercices/gauss>
     Réduction d'endomorphisme   <exercices/reductions>
+    Astuces de calcul   				<astuces>
 
 |
 
