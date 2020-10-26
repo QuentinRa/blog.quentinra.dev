@@ -391,6 +391,9 @@ Vecteurs propres et valeurs propres
 
 		0 (zéro) peut être une valeur propre, puisque seul le vecteur propre doit être non null.
 
+espace propre
+	On appelle l'espace propre l'ensemble des vecteurs propres.
+
 Spectre
 	On appelle spectre d'une matrice l'ensemble des valeurs propres d'une matrice, noté :math:`\sigma(A).`
 
