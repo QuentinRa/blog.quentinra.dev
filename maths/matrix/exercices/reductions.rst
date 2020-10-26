@@ -1,5 +1,3 @@
-.. _matrix_reductions:
-
 ================================
 Réductions d'endomorphisme
 ================================
@@ -43,12 +41,12 @@ Pour chacun des matrices suivantes, calculer **le polynôme caractéristique**, 
 Niveau avancé
 ***********************
 
-...
+aucun
 
 Niveau supérieur
 ***********************
 
-...
+aucun
 
 |
 

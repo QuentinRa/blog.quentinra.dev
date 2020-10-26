@@ -28,13 +28,17 @@
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/exercice.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/exercice.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/template.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/maths/bric" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/maths/bric" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/astuces.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/astuces.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/calculs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/calculs.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/calculs/f1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/calculs/f1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/determinant.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/determinant.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/determinant/f1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/determinant/f1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/determinant/f2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/determinant/f2.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/gauss.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/gauss.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/matrix/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +54,7 @@
   <component name="ProjectId" id="1j3SOdW56l2HX11sGuoiPU6zFXG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -114,7 +119,7 @@
       <workItem from="1603566947044" duration="3519000" />
       <workItem from="1603620274495" duration="12227000" />
       <workItem from="1603644841967" duration="7914000" />
-      <workItem from="1603713103921" duration="2886000" />
+      <workItem from="1603713103921" duration="14820000" />
     </task>
     <servers />
   </component>

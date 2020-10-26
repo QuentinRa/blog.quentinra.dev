@@ -2,4 +2,181 @@
 1/1 Opérations simples sur les matrices
 ========================================
 
+.. math::
 
+		B+I_3 = \begin{pmatrix}
+		2 & 2 & 3 \\
+		2 & 4 & 4 \\
+		3 & 4 & 6
+		 \end{pmatrix}
+
+.. note::
+
+	On rappelle que B et :math:`I_3` on la même taille. On peut donc faire l'addition et on
+	fait l'addition coefficient à coefficient.
+
+.. math::
+
+	A + B = impossible
+
+.. note::
+
+	Impossible car les deux matrices ont une taille différente
+
+.. math::
+
+		2A = \begin{pmatrix}
+		2 & 4 & 6 \\
+		8 & 10 & 12
+		\end{pmatrix}
+
+.. note::
+
+	On multiplie chaque coefficient par lambda ici 2.
+
+.. math::
+
+		B = \begin{pmatrix}
+		1 & 2 & 3 \\
+		2 & 3 & 4 \\
+		3 & 4 & 5
+		\end{pmatrix}
+		\ \ \ \ \ \  \ \ \  \ \ \  \  \\
+		A = \begin{pmatrix}
+		1 & 2 & 3 \\
+		4 & 5 & 6
+		 \end{pmatrix}
+		\begin{pmatrix}
+		14 & 20 & 26 \\
+		32 & 47 & 62
+		 \end{pmatrix} = AB
+
+.. note::
+
+	Le coefficient des colonnes de A est bien égal à celui des lignes de B
+	(:math:`A_{2,\color{red}{3}} * B_{\color{red}{3}, 3}`) donc le produit est possible.
+
+	**Astuce**
+
+	On remarque que les éléments de chaque ligne de AB suivent un pas (:math:`i_1=6`, :math:`i_2=15`) et
+	les éléments de B augmentent de 1 d'une colonne à une autre
+
+	Donc d'un élément de AB à un autre sur la ligne 1, on ajoute :math:`1*1 + 1*2 * 1*3 = 6`, 1 2 et 3 étant
+	les coefficients de la ligne 1 et le "1 fois" étant le coefficient pour passer d'une colonne à une autre.
+
+	Ceci vous permet de tout deviner si vous avez calculé le premier élément de chaque ligne.
+
+.. math::
+
+	BA = Impossible
+
+.. note::
+
+	Le coefficient des colonnes de B est différent à celui des lignes de A
+	(:math:`B_{3,\color{red}{3}} * A_{\color{red}{2}, 3}`) donc le produit est impossible.
+
+.. math::
+
+		B = \begin{pmatrix}
+		1 & 2 & 3 \\
+		2 & 3 & 4 \\
+		3 & 4 & 5
+		\end{pmatrix}
+		\ \ \ \ \ \ \ \ \ \ \ \ \\
+		D = \begin{pmatrix}
+		1 & 0 & 0  \\
+		0 & 2 & 0 \\
+		0 & 0 & 3
+		 \end{pmatrix}
+		\begin{pmatrix}
+		1& 4& 9\\
+		2& 6& 12\\
+		3& 8& 15
+		 \end{pmatrix} = DB
+
+.. note::
+
+	Matrices carrés 3,3 donc produit ok.
+
+.. math::
+
+		D = \begin{pmatrix}
+		1 & 0 & 0  \\
+		0 & 2 & 0 \\
+		0 & 0 & 3
+		 \end{pmatrix}
+		\ \ \ \ \ \ \ \ \ \ \ \ \\
+		B = \begin{pmatrix}
+		1 & 2 & 3 \\
+		2 & 3 & 4 \\
+		3 & 4 & 5
+		\end{pmatrix}
+		\begin{pmatrix}
+		1& 4& 9\\
+		2& 6& 12\\
+		3& 8& 15
+		 \end{pmatrix} = BD
+
+.. note::
+
+	Matrices carrés 3,3 donc produit ok.
+
+	On remarque que :math:`DB = BD` donc ?
+
+.. math::
+
+	I_2A = A \ et \ AI_3=A
+
+.. note::
+
+	:math:`A_{2,3}` peut être multiplié à gauche par une matrice :math:`I_2` (car 2 à gauche)
+	et :math:`I_3` à droite (car 3 à droite).
+
+	I est la matrice identité, peu importe s'il s'agit d'une multiplication à gauche ou à droite, la
+	matrice de départ est inchangée.
+
+.. math::
+
+	A^t =
+		\begin{pmatrix}
+		1 & 4 \\
+		2 & 5\\
+		3 & 6
+		\end{pmatrix}
+
+.. note::
+
+	Transposée = inverse les lignes et les colonnes.
+
+.. math::
+
+	J_2A = \begin{pmatrix}
+	4 & 5 & 6 \\
+	1 & 2 & 3
+	\end{pmatrix}
+
+.. note::
+
+	On remarque que les lignes ont étés inversées.
+
+.. math::
+
+		\begin{pmatrix}
+		1 & 4 \\
+		2 & 5 \\
+		3 & 6
+		\end{pmatrix}
+		\ \ \ \ \ \ \ \ \ \ \ \ \ \ \\
+		\begin{pmatrix}
+		1 & 2 & 3 \\
+		4 & 5 & 6
+		\end{pmatrix}
+		\begin{pmatrix}
+		14 & 32 \\
+		42 & 67
+		\end{pmatrix} = AA^t
+
+.. note::
+
+	On remarque encore l'histoire de pas vu plus haut, mais cependant cette fois le multiplicateur
+	n'est plus 1 mais 3.

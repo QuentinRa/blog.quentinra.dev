@@ -1,5 +1,3 @@
-.. _matrix_gauss:
-
 ================================
 Exercices sur GAUSS
 ================================
@@ -7,17 +5,17 @@ Exercices sur GAUSS
 Niveau débutant
 ***********************
 
-...
+aucun
 
 Niveau avancé
 ***********************
 
-...
+aucun
 
 Niveau supérieur
 ***********************
 
-...
+aucun
 
 |
 
