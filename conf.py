@@ -21,7 +21,7 @@ copyright = '2020, Quentin Ra'
 author = 'Quentin Ra'
 
 # The full version, including alpha/beta/rc tags
-release = '1.2.37'
+release = '1.2.38'
 # version 0 : html, css, php, js
 # version 1 : restructured text
 # version 1.1 : docker
@@ -33,7 +33,7 @@ release = '1.2.37'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 import sphinx_rtd_theme
-extensions = ['recommonmark', "sphinx_rtd_theme", 'sphinx.ext.graphviz']
+extensions = ['recommonmark', "sphinx_rtd_theme", 'sphinx.ext.graphviz','rst2pdf.pdfbuilder']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -84,3 +84,7 @@ html_context['github_version'] = 'master/'
 
 graphviz_dot='C:/graphviz/bin/dot.exe'
 graphviz_output_format = 'svg'
+
+# -- PDF
+
+pdf_documents = [('index', u'ramsamy-ws.ressources', u'Cours (ramsamy-ws)', u'Quentin Ra')]

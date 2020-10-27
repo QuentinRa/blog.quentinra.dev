@@ -27,16 +27,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/exercice.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/exercice.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/business/macro" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/business/macro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/env/macro.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/env/macro.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/calculs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/calculs.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/determinant.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/determinant.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/gauss.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/gauss.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions/a1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions/s1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions/a2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions/s2.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions/d1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/exercices/scripts.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/exercices/scripts.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +113,7 @@
       <workItem from="1603644841967" duration="7914000" />
       <workItem from="1603713103921" duration="15549000" />
       <workItem from="1603746602893" duration="815000" />
-      <workItem from="1603798608384" duration="13201000" />
+      <workItem from="1603798608384" duration="20734000" />
     </task>
     <servers />
   </component>
@@ -165,10 +159,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="601" y="279" key="#Other_File_Types/0.0.1536.824@0.0.1536.824" timestamp="1603634300641" />
-    <state x="524" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603651021472">
+    <state x="524" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603821629954">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="524" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1603651021472" />
+    <state x="524" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1603821629954" />
     <state x="202" y="164" width="902" height="505" key="EnvironmentVariablesDialog" timestamp="1603047236484">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

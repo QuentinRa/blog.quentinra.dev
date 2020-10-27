@@ -85,14 +85,14 @@ On résout notre système avec 5
 Matrice :math:`A_2`
 -------------------
 
-c
+...
 
 Matrice :math:`A_3`
 -------------------
 
-b
+...
 
 Matrice :math:`A_4`
 -------------------
 
-a
+...
