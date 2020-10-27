@@ -451,6 +451,7 @@ Les étapes sont :
     Résolution (GAUSS)		      <exercices/gauss>
     Réduction d'endomorphisme   <exercices/reductions>
     Astuces de calcul   				<astuces>
+    Astuces de calcul   				<exercices/non_rank>
 
 |
 

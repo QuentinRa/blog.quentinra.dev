@@ -28,6 +28,7 @@
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/non_rank.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/matrix/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +111,8 @@
       <workItem from="1603620274495" duration="12227000" />
       <workItem from="1603644841967" duration="7914000" />
       <workItem from="1603713103921" duration="15549000" />
-      <workItem from="1603746602893" duration="763000" />
+      <workItem from="1603746602893" duration="815000" />
+      <workItem from="1603798608384" duration="2468000" />
     </task>
     <servers />
   </component>
