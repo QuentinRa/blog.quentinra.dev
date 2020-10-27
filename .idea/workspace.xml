@@ -28,7 +28,14 @@
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/calculs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/calculs.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/calculs/f1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/calculs/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/determinant.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/determinant.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/determinant/f1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/determinant/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/determinant/f2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/determinant/d2.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/non_rank.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions/f1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions/d1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/matrix/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,31 +52,30 @@
   <component name="ProjectId" id="1j3SOdW56l2HX11sGuoiPU6zFXG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/matrix" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/matrix/exercices/reductions" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="proofread" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\matrix\exercices\reductions" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\matrix" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\matrix\exercices\determinant" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\matrix\exerices" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\matrix\ensiie" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\assets\templates\autres" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\templates\imperative" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\templates\system" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\templates\maths" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\maths\matrix" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\matrix\exercices\determinant" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\matrix\exercices\reductions" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\matrix\exerices" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\matrix\ensiie" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -112,7 +118,7 @@
       <workItem from="1603644841967" duration="7914000" />
       <workItem from="1603713103921" duration="15549000" />
       <workItem from="1603746602893" duration="815000" />
-      <workItem from="1603798608384" duration="2468000" />
+      <workItem from="1603798608384" duration="7042000" />
     </task>
     <servers />
   </component>

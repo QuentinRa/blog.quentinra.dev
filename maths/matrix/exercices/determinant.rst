@@ -41,7 +41,7 @@ Calculer les déterminants des matrices suivantes. A quelle(s) conditions sont-e
 .. toctree::
    :maxdepth: 1
 
-	Proposition de correction n°1			<determinant/f1>
+	Proposition de correction n°1			<determinant/d1>
 
 
 2/2 Calculs de matrices inverses
@@ -80,7 +80,7 @@ Si le déterminant est non-null, calculez l'inverse des matrices suivantes.
 .. toctree::
    :maxdepth: 1
 
-	Proposition de correction n°1			<determinant/f2>
+	Proposition de correction n°1			<determinant/d2>
 
 Niveau avancé
 ***********************

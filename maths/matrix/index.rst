@@ -446,12 +446,12 @@ Les étapes sont :
     :name: exercices
     :maxdepth: 1
 
-    Calculs	de matrices		      <exercices/calculs>
-    Calculs de déterminant      <exercices/determinant>
-    Résolution (GAUSS)		      <exercices/gauss>
-    Réduction d'endomorphisme   <exercices/reductions>
-    Astuces de calcul   				<astuces>
-    Astuces de calcul   				<exercices/non_rank>
+    Calculs	de matrices		      					<exercices/calculs>
+    Déterminant et Matrices inverses      <exercices/determinant>
+    Résolution (GAUSS)		      					<exercices/gauss>
+    Réduction d'endomorphisme   					<exercices/reductions>
+    Non triés					   									<exercices/non_rank>
+		Astuces de calcul   									<astuces>
 
 |
 

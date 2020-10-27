@@ -52,7 +52,7 @@ Calculer
 .. toctree::
    :maxdepth: 1
 
-	Proposition de correction n°1			<calculs/f1>
+	Proposition de correction n°1			<calculs/d1>
 
 Niveau avancé
 ***********************
