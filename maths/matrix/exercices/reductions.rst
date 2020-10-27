@@ -14,19 +14,20 @@ Pour chacun des matrices suivantes, calculer **le polynôme caractéristique**, 
 .. math::
 
 		A_1 = \begin{pmatrix}
-		1 & 2  \\
-		2 & 4
-		\ \ \ \ \ \ \end{pmatrix}
+		1&2\\
+		2&4\end{pmatrix}
+		\ \ \ \ \ \
 		A_2 = \begin{pmatrix}
 		3 & -1 \\
 		1 & 1
-		 \end{pmatrix}
+		\end{pmatrix}
 		\\ \\
 		A_3 = \begin{pmatrix}
 		9 & -6 & 2 \\
 		0 & 1 & 0 \\
 		-40 & 30 & -9
-		\ \ \ \ \ \ \end{pmatrix}
+		\end{pmatrix}
+		\ \ \ \ \ \
 		A_4 = \begin{pmatrix}
 		1 & 4 & 6\\
 		0 & 2 & 5 \\
@@ -38,7 +39,7 @@ Pour chacun des matrices suivantes, calculer **le polynôme caractéristique**, 
 
 	Proposition de correction n°1			<reductions/d1>
 
-Niveau avancé
+Niveau supérieur
 ***********************
 
 1/2 Applications aux suites définies par récurrences linéaires
@@ -58,7 +59,7 @@ On considère la suite :math:`(U_n)_{n \in \mathbb{N}}` définie par
 .. toctree::
    :maxdepth: 1
 
-	Proposition de correction n°1			<reductions/a1>
+	Proposition de correction n°1			<reductions/s1>
 
 2/2 Réduction d'endomorphisme et récurrences linéaires
 --------------------------------------------------------
@@ -76,9 +77,9 @@ puis exprimer :math:`U_n` en fonction de n uniquement.
 .. toctree::
    :maxdepth: 1
 
-	Proposition de correction n°1			<reductions/a2>
+	Proposition de correction n°1			<reductions/s2>
 
-Niveau supérieur
+Niveau avancé
 ***********************
 
 aucun

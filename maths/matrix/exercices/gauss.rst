@@ -7,12 +7,12 @@ Niveau débutant
 
 aucun
 
-Niveau avancé
+Niveau supérieur
 ***********************
 
 aucun
 
-Niveau supérieur
+Niveau avancé
 ***********************
 
 aucun

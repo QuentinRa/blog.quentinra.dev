@@ -2,4 +2,97 @@
 1/1 Calculs d'espaces propres
 ========================================
 
+.. hint::
 
+	On va calculer le polynôme caractéristique :math:`λIn−An` puis trouver les valeurs propres (lambda)
+	et enfin on va résoudre :math:`A=λx` pour toute valeur propre afin de trouver tous les vecteurs propres.
+
+.. note::
+
+	Après avoir résolu le système :math:`A=λx`, on obtient x en fonction de y (ou l'inverse).
+
+	Pour trouver le vecteur propre depuis le résultat, par exemple si on a :code:`x = -2y` alors
+	on prends le coefficient opposé donc ici x=-2 et y=1 ce qui donne :math:`\begin{pmatrix}x\\y\end{pmatrix}`
+	= :math:`\begin{pmatrix}-2\alpha \\1\alpha \end{pmatrix}`
+
+Matrice :math:`A_1`
+-------------------
+
+.. math::
+
+		\begin{pmatrix}\lambda & 0 \\0 & \lambda \end{pmatrix}
+		− \begin{pmatrix}1&2\\2&4\end{pmatrix}
+		=
+		\begin{pmatrix}
+		\lambda-1 & -2 \\
+		-2 & \lambda -4
+		\end{pmatrix} = X
+
+On calcule le déterminant et on résous det(X)=0 pour trouver les :math:`\lambda`.
+
+.. math::
+
+		0 = (\lambda-1) * (\lambda -4) - -2*-2
+		= \lambda^2 -4\lambda - \lambda +4  -4
+		\\
+		= \lambda^2 - 5\lambda = (\lambda -0)(\lambda - 5)
+
+Les valeurs propres sont donc :math:`\lambda_1 = 0` et :code:`\lambda_2 5`.
+
+On résout notre système avec 0
+
+	.. math::
+
+				\begin{cases}
+				1x + 2y = 0x\\
+				2x + 4y = 0y
+				\end{cases}
+				=
+				\begin{cases}
+				1x + 2y = 0\\
+				\end{cases}
+				=
+				\begin{cases}
+				x = -2y\\
+				\end{cases}
+
+	On obtient le vecteur propre :math:`\begin{pmatrix}-2\alpha \\1\alpha \end{pmatrix}`
+
+On résout notre système avec 5
+
+	.. math::
+
+		\begin{cases}
+		1x + 2y = 5x\\
+		2x + 4y = 5y
+		\end{cases}
+		=
+		\begin{cases}
+		-4x + 2y = 0\\
+		2x + -1y = 0
+		\end{cases}
+		=
+		\begin{cases}
+		2x + -1y = 0
+		\end{cases}
+		=
+		\begin{cases}
+		2x = y
+		\end{cases}
+
+	On obtient le vecteur propre :math:`\begin{pmatrix}1\alpha \\2\alpha \end{pmatrix}`
+
+Matrice :math:`A_2`
+-------------------
+
+c
+
+Matrice :math:`A_3`
+-------------------
+
+b
+
+Matrice :math:`A_4`
+-------------------
+
+a

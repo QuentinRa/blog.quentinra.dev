@@ -54,12 +54,12 @@ Calculer
 
 	Proposition de correction n°1			<calculs/d1>
 
-Niveau avancé
+Niveau supérieur
 ***********************
 
 aucun
 
-Niveau supérieur
+Niveau avancé
 ***********************
 
 aucun

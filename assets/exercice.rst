@@ -13,15 +13,15 @@ Niveau débutant
 
 	Proposition de correction n°1			<path>
 
-Niveau avancé
-***********************
-
-...
-
 Niveau supérieur
 ***********************
 
-...
+aucun
+
+Niveau avancé
+***********************
+
+aucun
 
 |
 

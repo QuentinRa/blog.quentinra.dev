@@ -9,7 +9,7 @@ Niveau débutant
 
 ...
 
-Niveau avancé
+Niveau supérieur
 ***********************
 
 1/1 Fonction round
@@ -39,7 +39,7 @@ En particulier, vous devez gérer que
 	$ ./round.sh -5.1285 1
 	-5.1
 
-Niveau supérieur
+Niveau avancé
 ***********************
 
 1/1 Auto-encrypted archive

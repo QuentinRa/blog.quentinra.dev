@@ -82,12 +82,12 @@ Si le déterminant est non-null, calculez l'inverse des matrices suivantes.
 
 	Proposition de correction n°1			<determinant/d2>
 
-Niveau avancé
+Niveau supérieur
 ***********************
 
 aucun
 
-Niveau supérieur
+Niveau avancé
 ***********************
 
 aucun

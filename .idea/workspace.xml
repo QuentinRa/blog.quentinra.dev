@@ -28,9 +28,15 @@
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/exercice.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/exercice.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/template.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/proba/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/calculs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/calculs.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/determinant.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/determinant.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/gauss.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/gauss.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions/a1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions/s1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions/a2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions/s2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/scripts.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/exercices/scripts.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +119,7 @@
       <workItem from="1603644841967" duration="7914000" />
       <workItem from="1603713103921" duration="15549000" />
       <workItem from="1603746602893" duration="815000" />
-      <workItem from="1603798608384" duration="9905000" />
+      <workItem from="1603798608384" duration="13201000" />
     </task>
     <servers />
   </component>
