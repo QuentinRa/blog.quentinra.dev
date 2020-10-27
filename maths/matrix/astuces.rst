@@ -34,6 +34,18 @@ Donc dans l'exemple suivant, det(A) = det(A\').
 		\vdots &  \vdots  &   &     \\
 		\end{pmatrix}
 
+Réductions d'endomorphisme
+===============================
+
+Toutes les matrices ne sont pas diagonalisables.
+
+**Vecteur x**
+
+Après avoir résolu le système :math:`A=λx`, on obtient x en fonction de y (ou l'inverse).
+
+Pour trouver le vecteur propre depuis le résultat, par exemple si on a :code:`x = -2y` alors
+on prends le coefficient opposé donc ici x=-2 et y=1 ce qui donne :math:`\begin{pmatrix}x\\y\end{pmatrix}`
+= :math:`\begin{pmatrix}-2\alpha \\1\alpha \end{pmatrix}`
 
 |
 

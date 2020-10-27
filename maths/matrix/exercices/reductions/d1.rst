@@ -37,7 +37,7 @@ On calcule le déterminant et on résous det(X)=0 pour trouver les :math:`\lambd
 		\\
 		= \lambda^2 - 5\lambda = (\lambda -0)(\lambda - 5)
 
-Les valeurs propres sont donc :math:`\lambda_1 = 0` et :code:`\lambda_2 5`.
+Les valeurs propres sont donc :math:`\lambda_1 = 0` et :math:`\lambda_2 = 5`.
 
 On résout notre système avec 0
 
@@ -82,8 +82,36 @@ On résout notre système avec 5
 
 	On obtient le vecteur propre :math:`\begin{pmatrix}1\alpha \\2\alpha \end{pmatrix}`
 
+...
+
 Matrice :math:`A_2`
 -------------------
+
+**Calcul de** :math:`λIn−An`
+
+.. math::
+
+		\begin{pmatrix}\lambda & 0 \\0 & \lambda \end{pmatrix}
+		− \begin{pmatrix}3 & -1 \\1 & 1\end{pmatrix}
+		=\begin{pmatrix}\lambda-3 & 1 \\-1 & \lambda-1\end{pmatrix}=x_{A_4}
+
+**polynôme caractéristique**
+
+.. math::
+
+		det(\ x_{A_4})  = 0  \Leftrightarrow (\lambda-3)*(\lambda-1)- 1*-1=0
+		\\
+		\lambda^2-\lambda-3\lambda+3+1=0
+		\Leftrightarrow
+		\lambda^2-4\lambda+4=0
+		\Leftrightarrow (\lambda-2)(\lambda-2)
+		\\
+		donc \ \lambda_1 = \lambda_2 = 2
+
+.. note::
+
+	On remarque qu'on aura qu'un système à résoudre, il faut donc que ce système
+	nous donne 2 vecteurs, sinon la matrice n'est pas diagonalisable.
 
 ...
 
