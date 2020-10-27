@@ -8,7 +8,10 @@ Niveau débutant
 1/1 Exercice
 ------------------------
 
-...
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<path>
 
 Niveau avancé
 ***********************

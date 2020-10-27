@@ -280,7 +280,14 @@ Propriétés de la variance
 
 
 
+7. Exercices
+==============
 
+.. toctree::
+    :name: exercices
+    :maxdepth: 1
+
+		Non triés				<exercices/non_rank>
 
 
 

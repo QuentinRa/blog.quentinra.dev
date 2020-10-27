@@ -20,8 +20,14 @@ NOM
 
 
 
+i. Exercices
+==============
 
+.. toctree::
+    :name: exercices
+    :maxdepth: 1
 
+		nom				<path>
 |
 
 -----
