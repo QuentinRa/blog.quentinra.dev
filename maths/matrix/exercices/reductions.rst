@@ -49,12 +49,12 @@ On considère la suite :math:`(U_n)_{n \in \mathbb{N}}` définie par
 :math:`\begin{cases} u_0 = 0\\u_1 = 1\\ \forall{n  \geq 2}, u_n = 5u_{n-1} - 6u_{n-2} \end{cases}`.
 
 |
-	2.1 Soit :math:`A = \begin{pmatrix}0&1\\-6&5\end{pmatrix}`. Vérifier :math:`\forall n \in \mathbb{N}^*`,
+	1. Soit :math:`A = \begin{pmatrix}0&1\\-6&5\end{pmatrix}`. Vérifier :math:`\forall n \in \mathbb{N}^*`,
 	on a :math:`\begin{pmatrix}U_n\\U_{n+1}\end{pmatrix} = A \begin{pmatrix}U_{n-1}\\U_n\end{pmatrix}`
-| 2.2 Calculer les valeurs propres de A et les espaces propres associés.
-| 2.3 En déduire une matrice P et une matrice diagonale D telles que :math:`A = PDP^{-1}`
-| 2.4 Grâce à la question précédente, calculer :math:`A^n` pour :math:`n \in \mathbb{N}`.
-| 2.5 En déduire la valeur de :math:`U_n` en fonction de n uniquement
+| 2. Calculer les valeurs propres de A et les espaces propres associés.
+| 3. En déduire une matrice P et une matrice diagonale D telles que :math:`A = PDP^{-1}`
+| 4. Grâce à la question précédente, calculer :math:`A^n` pour :math:`n \in \mathbb{N}`.
+| 5. En déduire la valeur de :math:`U_n` en fonction de n uniquement
 
 .. toctree::
    :maxdepth: 1
