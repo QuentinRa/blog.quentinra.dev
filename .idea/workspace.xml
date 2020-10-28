@@ -26,8 +26,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions/s1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions/s2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions/s2.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +113,7 @@
       <workItem from="1603798608384" duration="22405000" />
       <workItem from="1603830400785" duration="13000" />
       <workItem from="1603895204646" duration="3224000" />
-      <workItem from="1603898862519" duration="7726000" />
+      <workItem from="1603898862519" duration="10460000" />
     </task>
     <servers />
   </component>
