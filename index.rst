@@ -5,7 +5,7 @@ Bienvenue sur ramsamy.ws/ressources
 Ce site à pour objectif de réunir un maximum de cours
 écrits par des étudiants pour des étudiants.
 
-Les cours ont pour la majorité été pris en note dans l'un des établissement suivant
+Les cours ont pour la majorité été pris en note dans l'un des établissements suivants
 	* département informatique de l'IUT de Sénart-Fontainebleau à Fontainebleau (Seine-et-Marne, France).
 	* l'ENSIIE, école d'ingénieur en informatique à Évry
 

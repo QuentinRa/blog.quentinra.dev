@@ -1,34 +1,41 @@
 ## À propos
 
-L'objectif de ce dépôt est de réécrire la partie ressources
-de mon site web, qui présentait des cours/connaissances.
+Ce dépot est associé à un site (qui n'existe pas enore)
+qui à pour objectif de réunir un maximum de cours écrits 
+par des étudiants pour des étudiants.
 
-ReadTheDocs et Sphinx rendent la rédaction de documentation
-plus flexible, et ce dépôt github permet à n'importe qui
-de proposer des cours/améliorer des cours existants.
+Les cours ont pour la majorité été pris en note dans l’un des 
+établissements suivants
 
-La documentation (le sité généré) n'est pas encore en ligne.
+* département informatique de l’IUT de Sénart-Fontainebleau à 
+Fontainebleau (Seine-et-Marne, France).
+* l’ENSIIE, école d’ingénieur en informatique à Évry
 
-### Compiler la doc chez soi
+Les crédits appropriés ainsi que les sources sont en bas 
+de page de chaque cours.
 
-Pas encore de tutoriel pour compiler la documentation
-mais voici
+Si vous avez un problème ou une question, vous pouvez créer
+une `issue` ou envoyer un mail à `ramsamy.ws@gmail.com`.
 
-* commandes utiles
-```bash
-pip install graphviz
-pip install mathjax
-pip install sphinx
-pip install sphinx-rtd-theme
-```
+## Fonctionnement
 
-* conseils sous windows
-    * il faut ajouter au PATH
-        * votre dossier Python (fait de base)
-        * le dossier {dossier python}/Script (non fait de base)
-        
-* Graphviz (permet de tracer des graphes)
-    * sous Windows, j'ai dû exécuter la commande dot.exe -c
-    la toute première fois
-    
-* la commande `make html` compile dans _build/html la documentation
+Les cours sont écrits au format `ReStructured Text`. Le format
+d'un cours est défini par le template `assets/template.rst`.
+
+Les cours sont triés par categories, un dossier pour chaque cours.
+
+Chaque cours peut contenir un dossier exercices avec des fichiers
+d'exercices au format spécifié dans `assets/exercice.rst`.
+
+# Mentions
+
+Créé par Quentin Ramsamy--Ageorges (ramsamy.ws@gmail.com).
+
+Version 1.2.40.
+\
+Création le 20 juillet 2020.
+\
+Dernière mise à jour le 28 octobre 2020.
+
+Merci à tout contributeur et lecteur, ainsi qu'à toutes
+personnes ayant permis et aidant dans la création de cette plateforme.

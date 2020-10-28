@@ -21,7 +21,7 @@ copyright = '2020, Quentin Ra'
 author = 'Quentin Ra'
 
 # The full version, including alpha/beta/rc tags
-release = '1.2.39'
+release = '1.2.40'
 # version 0 : html, css, php, js
 # version 1 : restructured text
 # version 1.1 : docker
@@ -55,6 +55,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'Readme.md',
 '.github/PULL_REQUEST_TEMPLATE/pull_request_template.md',
 '.github/SECURITY.md',
 '.github/CODE_OF_CONDUCT.md',
+'.github/INSTALL.md',
 ]
 
 # -- Options for HTML output -------------------------------------------------
