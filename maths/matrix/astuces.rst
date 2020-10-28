@@ -34,6 +34,14 @@ Donc dans l'exemple suivant, det(A) = det(A\').
 		\vdots &  \vdots  &   &     \\
 		\end{pmatrix}
 
+Matrice inverse
+===============================
+
+**Matrice 2,2**
+
+L'inverse d'une matrice :math:`\begin{pmatrix}a&b\\c&d\end{pmatrix}` est
+:math:`\begin{pmatrix}d&-c\\-b&a\end{pmatrix}`.
+
 Réductions d'endomorphisme
 ===============================
 
@@ -46,6 +54,10 @@ Après avoir résolu le système :math:`A=λx`, on obtient x en fonction de y (o
 Pour trouver le vecteur propre depuis le résultat, par exemple si on a :code:`x = -2y` alors
 on prends le coefficient opposé donc ici x=-2 et y=1 ce qui donne :math:`\begin{pmatrix}x\\y\end{pmatrix}`
 = :math:`\begin{pmatrix}-2\alpha \\1\alpha \end{pmatrix}`
+
+**autre**
+
+Parfois on peut simplifier l'écriture en factorisant.
 
 |
 
