@@ -1,6 +1,6 @@
 ## À propos
 
-Ce dépot est associé à un site (qui n'existe pas enore)
+Ce dépôt est associé à un site (qui n'existe pas encore)
 qui à pour objectif de réunir un maximum de cours écrits 
 par des étudiants pour des étudiants.
 
@@ -24,7 +24,7 @@ d'un cours est défini par le template `assets/template.rst`.
 
 Les cours sont triés par categories, un dossier pour chaque cours.
 
-Chaque cours peut contenir un dossier exercices avec des fichiers
+Chaque cours peut contenir un dossier "exercices" avec des fichiers
 d'exercices au format spécifié dans `assets/exercice.rst`.
 
 # Mentions
