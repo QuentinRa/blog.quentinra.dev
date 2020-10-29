@@ -14,8 +14,40 @@ Question 1
 
 Quelle est la probabilité pour que les trois questions soient des questions d’algèbre ?
 
+Il y a 22 questions puis 21 après un tirage, puis 20 après les deux tirages.
+
+Il y a 10 questions d'algèbres, puis il y en aurait 9 puis 8 s'il y a pioché
+3 questions d'algèbres.
+
+On défini	:math:`A_i = "probabilité\ que\ la\ ième\ question\ soit\ une\ question\ d'algèbre"`
+
+	* :math:`P(A_1) = 10/22`
+	* :math:`P(A_2|A_1) = \frac{\frac{10*9}{22*21}}{10/22} = 9/21`
+	* :math:`P(A_3|A_1 \cap A_2) = \frac{\frac{10*9*8}{22*21*20}}{\frac{10*9}{22*21}} = 8/20`
+
+:math:`P(A_1 \cap A_2 \cap A_3) = \frac{10*9*8}{22*21*20}`
+
 Question 2
 -------------
 
 Quelle est la probabilité de tirer, dans l’ordre, une question d’algèbre,une question de trigonométrie,
 une question d’arithmétique ?
+
+Il y a 22 questions puis 21 après un tirage, puis 20 après les deux tirages.
+
+Le fait qu'on ai tiré une question d'algèbre/trigonométrie/arithmétique ne change pas le nombre
+de questions de cette catégories mais uniquement le nombre de questions.
+
+On défini
+
+	* :math:`A_i = "probabilité\ que\ la\ ième\ question\ soit\ une\ question\ d'algèbre"`
+	* :math:`T_i = "probabilité\ que\ la\ ième\ question\ soit\ une\ question\ de trigonométrie"`
+	*	:math:`Ar_i = "probabilité\ que\ la\ ième\ question\ soit\ une\ question\ d'arithmétique"`
+
+Ce qui donne
+
+	* :math:`P(A_1) = 10/22`
+	* :math:`P(T_2|A_1) = \frac{\frac{10*7}{22*21}}{10/22} = 7/21`
+	* :math:`P(Ar_3|A_1 \cap T_2) = \frac{\frac{10*7*5}{22*21*20}}{\frac{10*7}{22*21}} = 5/20`
+
+:math:`P(A_1 \cap T_2 \cap Ar_3) = \frac{10*7*5}{22*21*20}`
