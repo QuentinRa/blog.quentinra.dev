@@ -25,11 +25,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/correction.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/math/graph/exercice/nr1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/math/graph/exercice/nr2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maths/graph/exercices/non_rank.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maths/graph/exercices/notions.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maths/graph/exercices/notions/d1.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maths/graph/exercices/parcours.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition/d4.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition/d4.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition/d5.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition/d5.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition/d6.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition/d6.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/proba/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/proba/exercices/condition" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/graph/exercices/parcours" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="proofread" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -65,11 +69,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\assets\templates\maths" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\maths\proba\exercices\condition" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\proba\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\matrix\exercices\reductions" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\matrix" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\matrix\exercices\determinant" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\parcours" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\notions" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -122,7 +126,7 @@
       <workItem from="1603918478553" duration="4000" />
       <workItem from="1603918506214" duration="11000" />
       <workItem from="1603918562688" duration="61000" />
-      <workItem from="1603965229942" duration="15266000" />
+      <workItem from="1603965229942" duration="19330000" />
     </task>
     <servers />
   </component>

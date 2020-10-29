@@ -243,7 +243,16 @@ Algorithme
 
 
 
+8. Exercices
+==============
 
+.. toctree::
+    :name: exercices
+    :maxdepth: 1
+
+		Notions et Définitions					<exercices/notions>
+		Parcours												<exercices/parcours>
+		Non triés												<exercices/non_rank>
 
 |
 |
