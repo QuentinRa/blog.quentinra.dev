@@ -80,9 +80,89 @@ Résolution de S2
 
 	S_2 \begin{cases} u_0 = 0 \\ u_1 = 3\\ u_{n+2} = u_{n+1}+2u_{n} \ pour \ n  \geq 0\end{cases}
 
+On cherche à trouver une matrice A qui vérifie le produit suivant
+
+.. math::
+
+		\begin{pmatrix}
+		U_{n}\\
+		U_{n+1}\\
+		\end{pmatrix}
+		\\
+		A = \begin{pmatrix}
+		? & ? \\
+		? & ?
+		\end{pmatrix}
+		\begin{pmatrix}
+		U_{n+1}\\
+		U_{n+2}
+		\end{pmatrix}
+		\\
+		A = \begin{pmatrix}
+		0 & 1 \\
+		2 & 1
+		\end{pmatrix}
+		\begin{pmatrix}
+		U_{n+1}\\
+		U_{n+2}
+		\end{pmatrix}
+
+On calcule :math:`P, D^n, P^{-1}`
+
+.. math::
+
+		A = \begin{pmatrix}
+		0 & 1 \\
+		2 & 1
+		\end{pmatrix}
+		\\
+		det(A) = 0   \Leftrightarrow \lambda(\lambda-1) - -1 * -2  =0 \Leftrightarrow \\
+		\lambda^2-\lambda-2 = 0 \Leftrightarrow \\
+		\lambda_1=-1 \ et \ \lambda_2=2 \\
+		donc \ D=\begin{pmatrix}-1&0\\0&2\end{pmatrix}
+
+.. math::
+
+		\begin{cases}
+		y=-1x\\
+		2x+y=-1y
+		\end{cases}
+		 \Leftrightarrow
+		\begin{cases}
+		x=-y
+		\end{cases}
+		\\
+		\begin{cases}
+		y=2x\\
+		2x+y=2y
+		\end{cases}
+		 \Leftrightarrow
+		\begin{cases}
+		2x=y
+		\end{cases}
+		\\
+		donc \ P=\begin{pmatrix}2&2\\-1&1\end{pmatrix}
+		et \ P^{-1} = \begin{pmatrix}\frac{1}{4}&-\frac{1}{2}\\\frac{1}{4}& \frac{1}{2}\end{pmatrix}
+
+.. math::
+
+		\begin{pmatrix}2&2\\-1&1\end{pmatrix}
+		\begin{pmatrix}(-1)^n&0\\0&2^n\end{pmatrix}
+		\begin{pmatrix}\frac{1}{4}&-\frac{1}{2}\\\frac{1}{4}& \frac{1}{2}\end{pmatrix}
+		* \begin{pmatrix}0\\3\end{pmatrix}
+		= \\
+		\left( \begin{array}{cc} -2 & 2^{n+1} \\ 1 & 2^n \end{array} \right)
+		* \begin{pmatrix}-\frac{3}{2}\\\frac{3}{2}\end{pmatrix}
+		= \\
+		\left( \begin{array}{c} 3+3 \times 2^n \\ -\frac{3}{2}+3 \times 2^{n-1} \end{array} \right)
+
+On garde la ligne :math:`u_n= 3+3 \times 2^n`.
+
 Résolution de S3
 --------------------------
 
 .. math::
 
 	S_3 \begin{cases} u_0 = 2\\ v_0 = 1\\ U_{n+1} = U_{n}-2V_{n} \ pour \ n  \geq 0\\V_{n+1} = V_{n}-2U_{n} \ pour \ n  \geq 0 \end{cases}
+
+Je ne sais pas faire...

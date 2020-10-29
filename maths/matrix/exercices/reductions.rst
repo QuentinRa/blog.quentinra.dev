@@ -91,3 +91,8 @@ aucun
 **Crédits**
 	* Christophe MOUILLERON (enseignant à l'ENSIIE)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
+
+**Références**
+	* https://www.dcode.fr/racine-polynome
+	* https://www.dcode.fr/inverse-matrice
+	* https://www.dcode.fr/produit-matriciel
