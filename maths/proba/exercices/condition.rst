@@ -15,6 +15,11 @@ noire si chaque bille est :
 | 1. remise dans le sac après tirage,
 | 2. non remise dans le sac.
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<condition/d1>
+
 2/6 Probabilités conditionnelles
 ----------------------------------------------------
 
@@ -30,6 +35,11 @@ Le candidat tire successivement les trois questions sans remettre dans le tas un
 	2. Quelle est la probabilité de tirer, dans l’ordre, une question d’algèbre,une question de trigonométrie,
 	une question d’arithmétique ?
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<condition/d2>
+
 3/6 Probabilités conditionnelles
 ----------------------------------------------------
 
@@ -42,12 +52,22 @@ hasard une boule dans l’urne U2 que l’on place dans l’urne U3 . Enfin on t
 
 Quelle est la probabilité pour que les boules tirées soient toutes de couleurs différentes ?
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<condition/d3>
+
 4/6 Probabilités conditionnelles
 ----------------------------------------------------
 
 On cherche une lettre qui a la probabilité p de se trouver dans l’un des 4 tiroirs d’un secrétaire. Quelle
 est la probabilité qu’elle se trouve dans le quatrième tiroir, sachant que l’on ne l’a pas trouvée dans les
 trois premiers ?
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<condition/d4>
 
 5/6 Théorème de Bayes
 --------------------------------
@@ -64,6 +84,11 @@ Il n’y a pas d’autre personne à ce carrefour.
 Le voyageur s’adresse à une et une seule de ces personnes. Il demande son chemin et s’aperçoit que ce
 chemin est le bon. Quelle est la probabilité qu’il se soit adressé à B1
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<condition/d5>
+
 6/6 Théorème de Bayes
 ---------------------------------------
 
@@ -78,6 +103,11 @@ patient est en bonne santé, et ceci se produit dans 2 % des cas.
 |
 	2. Sous les mêmes conditions calculer la probabilité pour qu’un client soit atteint sachant que deux
 	tests (indépendants) ont été positifs.
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<condition/d6>
 
 Niveau supérieur
 ***********************

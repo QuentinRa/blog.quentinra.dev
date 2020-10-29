@@ -1,0 +1,21 @@
+================================
+2/6 Probabilités conditionnelles
+================================
+
+Un candidat doit tirer 3 questions à l’oral sur les 22 préparées par l’examinateur, comprenant :
+	* 10 questions d’algèbre,
+	* 7 questions de trigonométrie,
+	* 5 questions d’arithmétique.
+
+Le candidat tire successivement les trois questions sans remettre dans le tas une question qu’il a tirée.
+
+Question 1
+-------------
+
+Quelle est la probabilité pour que les trois questions soient des questions d’algèbre ?
+
+Question 2
+-------------
+
+Quelle est la probabilité de tirer, dans l’ordre, une question d’algèbre,une question de trigonométrie,
+une question d’arithmétique ?

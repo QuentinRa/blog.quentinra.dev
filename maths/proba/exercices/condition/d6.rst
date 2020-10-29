@@ -1,0 +1,19 @@
+================================
+6/6 Théorème de Bayes
+================================
+
+Pour dépister une maladie, on applique un test. Si le patient est effectivement atteint, le test donne un
+résultat positif dans 96 % des cas. Mais il se peut aussi que le résultat du test soit positif alors que le
+patient est en bonne santé, et ceci se produit dans 2 % des cas.
+
+Question 1
+--------------
+
+Sachant qu’en moyenne 0.05 % des patients sont atteints de la maladie à dépister, calculer la
+probabilité pour qu’un client soit atteint sachant que son test a été positif.
+
+Question 2
+--------------
+
+Sous les mêmes conditions calculer la probabilité pour qu’un client soit atteint sachant que deux
+tests (indépendants) ont été positifs.

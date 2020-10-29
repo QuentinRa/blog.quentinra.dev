@@ -1,0 +1,15 @@
+================================
+3/6 Probabilités conditionnelles
+================================
+
+On considère 3 urnes U1, U2,U3. La première contient initialement 2 boules blanches et 3 boules rouges.
+La deuxième contient 2 boules vertes et 4 boules blanches. La troisième contient 5 boules noires et 2
+boules rouges.
+
+On tire au hasard une boule dans l’urne U1 que l’on place dans l’urne U2. Puis on tire au
+hasard une boule dans l’urne U2 que l’on place dans l’urne U3 . Enfin on tire une boule dans l’urne U3.
+
+Question 1
+-------------
+
+Quelle est la probabilité pour que les boules tirées soient toutes de couleurs différentes ?

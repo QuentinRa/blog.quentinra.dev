@@ -1,0 +1,20 @@
+================================
+5/6 Théorème de Bayes
+================================
+
+Un voyageur arrive à un carrefour. Il sait qu’à cet endroit il va trouver 2 routes : une impasse et la bonne
+route. Il y a 3 personnes à ce carrefour : B1, B2 et B3.
+
+	* B1 dit une fois sur dix la vérité,
+	* B2 dit cinq fois sur dix la vérité,
+	* B3 dit neuf fois sur dix la vérité.
+
+Il n’y a pas d’autre personne à ce carrefour.
+
+Le voyageur s’adresse à une et une seule de ces personnes. Il demande son chemin et s’aperçoit que ce
+chemin est le bon.
+
+Question 1
+-------------------
+
+Quelle est la probabilité qu’il se soit adressé à B1 ?
