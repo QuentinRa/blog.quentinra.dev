@@ -49,11 +49,11 @@ Probabilité
 ================================================================
 
 :math:`\Omega` fini
-	Un ensemble fini est un ensemble qui est dénombrable. Si Omega est fini, cela signifie que les probabilités
-	sont par exemple dans :math:`\mathbb{B}` ou dans :math:`\mathbb{Z}`.
+	Un ensemble fini est un ensemble qui est dénombrable. Si Oméga est fini, cela signifie que les probabilités
+	sont par exemple dans :math:`\mathbb{N}` ou dans :math:`\mathbb{Z}`.
 
-	Lorsque oméga est fini, on prends :math:`\mathbb{F}=P(\Omega)` soit l'ensemble des parties (donc tous les sous-ensembles
-	possibles) d'Omega.
+	Lorsque oméga est fini, on prend :math:`\mathbb{F}=P(\Omega)` soit l'ensemble des parties (donc tous les sous-ensembles
+	possibles) d'Oméga.
 
 Loi discrète
 	On définit :math:`\mathbb{P}_{X_w}{k} = \mathbb{P}(X_w=k)` la probabilité que :math:`X_w` prenne la valeur k.
@@ -64,14 +64,14 @@ Loi discrète
 
 .. note::
 
-	Dans le cas discret, la tribu étant l'ensemble de parties d'Omega, on peut écrire l'espace
+	Dans le cas discret, la tribu étant l'ensemble de parties d'Oméga, on peut écrire l'espace
 	de probabilité :math:`(\Omega, \mathbb{P})` au lieu de :math:`(\Omega, \mathbb{F}, \mathbb{P})`
 
 2.1 Probabilités
 ******************
 
 Probabilité conditionnelle
-	Soit A et B deux évènements, il est possible de calculer la probabilités de A sachant celle de B
+	Soit A et B deux évènements, il est possible de calculer la probabilité de A sachant celle de B
 
 	.. math::
 
@@ -104,10 +104,10 @@ Variables aléatoires indépendantes
 		.. code-block:: c
 
 				//on lance 1 dé, 1 pièce, 1 dé
-				//la probabilité pour la somme des dés dépends de 2 événements disjoints (1er et 3ème)
+				//la probabilité pour la somme des dés dépends de 2 événements disjoints (1er et 3e)
 				p(somme dés = 7, pièce = F) = 1/6 * 1/2
 
-				//p(A) = |A|/|Ω| = \|{toutes les combinaisons qui font 7}\| / \|{toutes les combinaisons possibles}|
+				//p(A) = |A|/|Ω| = |toutes les combinaisons qui font 7| / |toutes les combinaisons possibles|
 				p(somme dés=7) = (p(6+1) + p(2+5) + p(4+3) +
  						p(1+6) + p(5+2) + p(3+4))
  						/ (6*6) //6 possibilités au premier lancé, 6 au second
@@ -136,13 +136,13 @@ p de succès.
 		* sinon, alors on multiplie la probabilité d'avoir k succès (:math:`p^k`) par la probabilité d'avoir n-k échecs (:math:`(1-p)^{n-k}`).
 
 			* on a n-k échecs car on a pris les k premiers tirages bons (succès) car on veut k succès donc le reste des n tirages sont forcément des échecs
-			* on doit cependant multiplier le tout par les permutation de notre tirage (:math:`C_n^k`)
+			* on doit cependant multiplier le tout par les permutations de notre tirage (:math:`C_n^k`)
 
 2.3.2 Loi de poisson
 ------------------------
 
 L'objectif est de trouver le nombre de succès sachant un certain nombre d'épreuves n indépendantes.
-On suppose n très grand et p très petit.
+On suppose n, le nombre d'épreuves, très grand et p, leur probabilité, très petite.
 
 Notation : :math:`\lambda` ~ :math:`\mathbb{P}(\lambda)`
 
@@ -153,7 +153,7 @@ Loi de poisson : :math:`\mathbb{P}(X=k) = \frac{\lambda^k *  e^{-\lambda}}{k!}`
 
 .. hint::
 
-	Ceci ce démontre avec la formule de l'espérance.
+	Ceci se démontre avec la formule de l'espérance.
 
 		:math:`\sum_{k \in \mathbb{N}} k * P(X=k)`
 
@@ -165,7 +165,7 @@ Loi de poisson : :math:`\mathbb{P}(X=k) = \frac{\lambda^k *  e^{-\lambda}}{k!}`
 
 		:math:`= \lambda e^{-\lambda} * \sum_{k \in \mathbb{N}} \frac{\lambda^{k-1}}{(k-1)!}`
 
-		par developments en série de e^x`
+		par développement en série de e^x`
 
 		:math:`= \lambda e^{-\lambda} * e^{\lambda}`
 
@@ -204,7 +204,7 @@ Espérance
 
 	.. note::
 
-		Cette formule dit que l'espérance c'est la somme de chacune des valeurs d'Omega multiplié par
+		Cette formule dit que l'espérance c'est la somme de chacune des valeurs d'Oméga multiplié par
 		sa probabilité.
 
 	L'espérance est
