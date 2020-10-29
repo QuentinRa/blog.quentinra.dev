@@ -9,3 +9,12 @@ Question 1
 
 Quelle est la probabilité qu’elle se trouve dans le quatrième tiroir, sachant que l’on ne l’a pas trouvée dans les
 trois premiers ?
+
+On définit
+
+	* :math:`X_i = La\ lettre\ est\ dans\ le\ ième\ tiroir`
+
+La probabilité que la lettre ne soit pas dans le tiroir i est donc de 1-p : :math:`P(\overline{X_i}) = 1 - P(X_i) = 1-p`.
+
+La probabilité donc que la lettre soit dans le 4e tiroir, demande à ce qu'elle ne soit pas dans l'un des trois
+premiers tiroirs : :math:`P(X_4)= (1-p)^3 * p`.

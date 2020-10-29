@@ -12,8 +12,12 @@ Question 1
 Sachant qu’en moyenne 0.05 % des patients sont atteints de la maladie à dépister, calculer la
 probabilité pour qu’un client soit atteint sachant que son test a été positif.
 
+...
+
 Question 2
 --------------
 
 Sous les mêmes conditions calculer la probabilité pour qu’un client soit atteint sachant que deux
 tests (indépendants) ont été positifs.
+
+...

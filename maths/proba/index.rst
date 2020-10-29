@@ -81,6 +81,13 @@ Probabilité conditionnelle
 
 		Par produit en croix, on obtient :math:`\mathbb{P}(A \cap B) = \mathbb{P}(B) * \mathbb{P}(A|B)`.
 
+Formule de Bayes
+	On déduis depuis la formule de la probabilité conditionnelle, la formule suivante appelée formule de bayes
+
+	.. math::
+
+		\mathbb{P}(A|B) := \frac{\mathbb{P}(B) * \mathbb{P}(A|B)}{\mathbb{P}(B)}
+
 Probabilité uniforme
 	Soit :math:`\Omega` fini et dénombrable, :math:`\forall{w} \in \Omega \ alors \ \mathbb{P}(w) = \frac{1}{card(\Omega)}`.
 
