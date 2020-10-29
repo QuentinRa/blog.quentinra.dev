@@ -1,0 +1,43 @@
+===================================
+1/1 Dénombrement
+===================================
+
+Un jeu de cartes comprend 32 cartes. On distribue au hasard 5 cartes à chacun des 2 joueurs X et Y
+
+Question 1.1
+--------------
+
+Calculer la probabilité que X ait au moins 1 as.
+
+**Univers**
+
+Omega correspond au nombre de tirages de 5 cartes sur 32, l'ordre n'ayant pas d'importance,
+:math:`|\Omega|=C_{32}^5`
+
+**Calcul de P(X)**
+
+.. hint::
+
+	On passe par la probabilité complémentaire, car on a "au moins"
+
+On définit :math:`P(X) = 1 - P(\overline{X})`.
+
+La probabilité de n'avoir aucun as est celle de piocher nos 5 cartes, peu importe l'ordre,
+parmi les 28 restantes, ce qui s'écrit :math:`C_{28}^5`
+
+.. math::
+
+	P(\overline{X}) := \frac{|\overline{X}|}{|\Omega|} = \frac{C_{28}^5}{C_{32}^5}
+
+Question 1.2
+--------------
+
+Sachant que Y a exactement un as, calculer la probabilité que X ait au moins un as.
+
+On considère Y qui a tiré 5 des 32 cartes, dont 1 as. Il reste donc 28 cartes, dont
+25 qui ne sont pas des as. On refait donc pareil que précédemment.
+
+| :math:`|\Omega| = C_{28}^5`
+| :math:`|\overline{X}| = C_{25}^5`
+
+:math:`P(X) = 1 - P(\overline{X}) = 1 - \frac{C_{25}^5}{C_{28}^5}`
