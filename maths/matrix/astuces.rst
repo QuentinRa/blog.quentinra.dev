@@ -40,7 +40,7 @@ Matrice inverse
 **Matrice 2,2**
 
 L'inverse d'une matrice :math:`\begin{pmatrix}a&b\\c&d\end{pmatrix}` est
-:math:`\begin{pmatrix}d&-c\\-b&a\end{pmatrix}`.
+:math:`\frac{1}{ad-bc} * \begin{pmatrix}d&-c\\-b&a\end{pmatrix}`.
 
 Réductions d'endomorphisme
 ===============================

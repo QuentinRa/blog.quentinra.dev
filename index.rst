@@ -12,6 +12,11 @@ Les cours ont pour la majorité été pris en note dans l'un des établissements
 Les crédits appropriés ainsi que les sources sont en bas de page de chaque cours.
 
 .. toctree::
+    :maxdepth: 1
+
+    Comment contribuer ?          <contribuer>
+
+.. toctree::
     :caption: Mathématiques
     :name: maths
     :maxdepth: 1

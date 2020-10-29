@@ -1,5 +1,3 @@
-:= signifie par définition
-
 *italic*
 **bold**
 ``code``
@@ -137,3 +135,54 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+.. note::
+
+	Le ReStructured Text est assez simple, vous pouvez l'apprendre sur le tas.
+
+	Notez qu'il y a beaucoup de lignes vides, qui servent de séparateurs. Il y a aussi
+	des indentations (2 espaces) pour indiquer que l'on rentre dans un bloc.
+
+	.. code:: rst
+
+		.. commentaire
+
+		=====
+		TITRE
+		=====
+
+		.. note::
+
+			Une note (fond bleu), vous avez aussi hint (vert), warning (jaune) et important (rouge)
+
+		.. code:: langage
+
+			écrire du code ici
+
+		.. math::
+
+			écrire des maths
+
+		Alternativement, vous pouvez écrire du code :code:`code ici` ou des :math:`latex ici`, qui sera
+		incrusté dans votre texte.
+
+		Sous-titre
+		**********
+
+		Sous sous-titre
+		---------------
+
+		Définition (sera en gras)
+			Contenu de la définition
+
+		* liste
+
+			1.	liste numérotée
+			2.
+				Cette élément (2) est sur une ou plusieurs lignes
+
+				...
+			3.
+
+		| "a" est sur sa propre ligne
+		| "b" est sur sa propre ligne

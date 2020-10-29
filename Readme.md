@@ -1,6 +1,7 @@
 ## À propos
 
-Ce dépôt est associé à un site (qui n'existe pas encore)
+Ce dépôt est associé à un site
+(https://etu.ramsamy-ws.ovh/fr/latest/)
 qui à pour objectif de réunir un maximum de cours écrits 
 par des étudiants pour des étudiants.
 
@@ -31,7 +32,7 @@ d'exercices au format spécifié dans `assets/exercice.rst`.
 
 Créé par Quentin Ramsamy--Ageorges (ramsamy.ws@gmail.com).
 
-Version 1.2.40.
+Version 1.2.58.
 \
 Création le 20 juillet 2020.
 \
