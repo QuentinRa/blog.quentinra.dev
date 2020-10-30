@@ -192,6 +192,9 @@ Tri Topologique
 
 Parcours en profondeur (DFS : depth-first search)
 
+Dans l'idée on parcours entièrement une branche, puis on revient aux intersections
+et on parcours entièrement une autre branche jusqu'à avoir tout parcouru.
+
 	.. code-block::
 
 		1: On prends un sommet au hasard, on l'empile.
@@ -203,6 +206,15 @@ Parcours en profondeur (DFS : depth-first search)
 ****************************
 
 Parcours en largeur (BFS : breadth-first search)
+
+Dans l'idée, on prends un sommet au hasard, on marque ses voisins, puis on fait pareils pour
+les voisins jusqu'à avoir tout marqué.
+
+	.. code-block::
+
+		1: On prend un sommet au hasard qu'on marque, et on note ses sauvegarde ses voisins
+		2: On marque les voisins sauvegardés puis on garde leurs voisins non marqués et on recommence
+			 tant qu'il reste des sommets avec des voisins non marqués.
 
 4. Graphes eulérien et graphes hamiltoniens
 =============================================
@@ -240,8 +252,7 @@ Algorithme
 4.2 Graphes hamiltoniens
 ******************************
 
-
-
+...
 
 8. Exercices
 ==============
@@ -270,3 +281,5 @@ Algorithme
 	* https://fr.wikiversity.org/wiki/Th%C3%A9orie_des_graphes/Propri%C3%A9t%C3%A9s
 	* https://fr.wikipedia.org/wiki/Tri_topologique
 	* https://fr.wikipedia.org/wiki/Graphe_eul%C3%A9rien
+	* https://fr.wikipedia.org/wiki/Algorithme_de_parcours_en_largeur
+	* https://fr.wikipedia.org/wiki/Algorithme_de_parcours_en_profondeur
