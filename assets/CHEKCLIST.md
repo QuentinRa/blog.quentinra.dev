@@ -4,20 +4,24 @@ Les choses non faites et à faire
 
 **Général**
 * Corriger les fautes (https://seomagnifier.com/french-grammar-checker)
-* Ajouter tutoriel pour contribuer
+* améliorer le tutoriel pour contribuer
 
 **Analyse numérique**
 * TD1 - exo 2, 3, 4, 6
-* TD2
-* Fin du cours (normes)
-* Réécrire la partie sur les normes (voir templates)
+* TD2 - exos ???
+* Fin du cours (CM1) + réécrire la partie sur les normes (voir templates)
+* ajouter l'interpolation
 
 **Linux**
-* Réécrire le cours, je crois c'est incompressible
+* Réécrire le cours, je crois c'est incomprehensible/trop condensé
 
 **Algèbre matriciel**
-* faire exercices non rank
+
+**Probabilités**
+
+**Bric à Brac**
+* Faire les exercices (3)
+* Faire les exercices non_rank 
 
 **Graphes**
-* faire exercices (2)
 * faire exercices non rank
