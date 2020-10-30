@@ -130,9 +130,13 @@ Question 7
 Donner les arcs incidents intérieurement à d et son demi-degré intérieur.
 Donner les arcs incidents extérieurement à b et son demi degré extérieur.
 
-:math:`d^+(d) = |\{a,b\}| = 2`
+.. note::
 
-:math:`d^-(b) = |\{a,d,h\}| = 3`
+	Intérieur = entrant, extérieur = sortant.
+
+:math:`d^-(d) = |\{a,b\}| = 2`
+
+:math:`d^+(b) = |\{a,d,h\}| = 3`
 
 Question 8
 ------------------
