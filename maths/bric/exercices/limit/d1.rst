@@ -2,4 +2,69 @@
 Calcul de limites
 ================================
 
+Limite 1
+-------------------
+
+.. math::
+
+	\lim_{x \rightarrow +\infty} \frac{x-2}{x^2+x+1}
+
+Plus l'infini divisé par plus l'infini = FI. On factorise par la fonction
+la plus croissante en +inf : :math:`x^2` en bas et x en haut.
+
+.. math::
+
+		\lim_{x \rightarrow +\infty} \frac{x-2}{x^2+x+1}
+		\Leftrightarrow
+		\lim_{x \rightarrow +\infty} \frac{x(1-\frac{2}{x})}{x^2(1+x+\frac{1}{x^2})}
+		\Leftrightarrow
+		\lim_{x \rightarrow +\infty} \frac{1-\frac{2}{x}}{x(1+x+\frac{1}{x^2})}
+		\Leftrightarrow \\
+		\lim_{x \rightarrow +\infty} \frac{1 - 0}{+\infty * (1 + +\infty + 0)}
+		\Leftrightarrow
+		\lim_{x \rightarrow +\infty} \frac{1}{+\infty} = 0^+
+
+Limite 2
+-------------------
+
+.. math::
+
+	\lim_{x \rightarrow 3^+} \frac{1-x^2}{x^2-7x+12}
+
+...
+
+Limite 3
+-------------------
+
+.. math::
+
+	\lim_{x \rightarrow -\infty} \frac{1-x^2}{3x+2}
+
+...
+
+Limite 4
+-------------------
+
+.. math::
+
+	\lim_{x \rightarrow 3} \frac{2-x}{x^2-6x+9}
+
+...
+
+Limite 5
+-------------------
+
+.. math::
+
+	\lim_{x \rightarrow +\infty} exp(x)+cos(x)
+
+...
+
+Limite 6
+-------------------
+
+.. math::
+
+	\lim_{x \rightarrow 2} \frac{x-2}{x^2-3x+2}
+
 ...

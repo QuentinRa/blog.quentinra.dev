@@ -6,6 +6,8 @@ Comment contribuer ?
 
 Désolé, mais vous allez avoir besoin d'un compte `github <https://github.com/>`_ pour contribuer...
 
+Le dépôt est ici : `https://github.com/QuentinRa/ramsamy.ws-res <https://github.com/QuentinRa/ramsamy.ws-res>`_.
+
 1. Rédaction des cours
 *************************
 
