@@ -7,9 +7,9 @@ Les choses non faites et à faire
 * Ajouter tutoriel pour contribuer
 
 **Analyse numérique**
-* TD1
+* TD1 - exo 2, 3, 4, 6
 * TD2
-* Fin du cours
+* Fin du cours (normes)
 * Réécrire la partie sur les normes (voir templates)
 
 **Linux**

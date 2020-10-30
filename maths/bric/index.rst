@@ -91,6 +91,18 @@ Les outils pour simplifier une forme indeterminée et obtenir une forme connues 
 	* par croissance comparée
 	* via le calcul de développement limités (règle de l'hôpital = :math:`{DL}_1`)
 
+Exercices
+*************
+
+.. toctree::
+    :name: exercices
+    :maxdepth: 1
+
+		Limites										<exercices/limit>
+		Dérivées									<exercices/derive>
+		Études de fonctions				<exercices/etude>
+		Non triés									<exercices/non_rank>
+
 |
 
 ----
