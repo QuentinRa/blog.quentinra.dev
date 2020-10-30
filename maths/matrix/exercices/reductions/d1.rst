@@ -1,5 +1,5 @@
 ========================================
-1/1 Calculs d'espaces propres
+1/2 Calculs d'espaces propres
 ========================================
 
 .. hint::

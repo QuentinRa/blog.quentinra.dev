@@ -1,0 +1,81 @@
+==========================================================
+2/2 Calcul matriciel et interpolation polynomiale
+==========================================================
+
+On considère le polynôme :math:`P(x) = ax^3+bx^2+cx+d` et la matrice
+:math:`A = \begin{pmatrix}1&0&0&0 \\1&-1&1&-1\\1&1&1&1\\1&2&4&8\end{pmatrix}`
+
+Question 1
+------------------
+
+Calculer P(-1), P(0), P(1) et P(2)
+
+| :math:`P(-1) = -a + b -c + d`
+| :math:`P(0) = d`
+| :math:`P(1) = a + b + c + d`
+| :math:`P(2) = 8a + 4b + 2c + d`
+
+Question 2
+------------------
+
+Calculer :math:`A \begin{pmatrix}d\\c\\b\\a\end{pmatrix}` et comparer avec le résultat de 1.
+
+.. math::
+
+		D = \begin{pmatrix}d\\c\\b\\a\end{pmatrix} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+		\ \ \ \ \ \ \ \ \ \ \ \ \\
+		A = \begin{pmatrix}
+		1&0&0&0 \\
+		1&-1&1&-1\\
+		1&1&1&1\\
+		1&2&4&8
+		\end{pmatrix}
+		\begin{pmatrix}d\\d-c+b-a\\d+c+b+a\\d+2c+4b+8a\end{pmatrix}
+		= \begin{pmatrix}P(0)\\P(-1)\\P(1)\\P(2)\end{pmatrix} = P\\
+
+.. hint::
+
+	On introduit D et P pour la dernière question.
+
+Question 3
+------------------
+
+Calculer det(A) afin de vérifier qu'il est non nul, puis calculer :math:`A^-1`
+
+On utilise l'astuce de calcul et on retire la première ligne première colonne.
+
+.. math::
+
+		2* det( \begin{bmatrix}1 & -1 \\1 & 1 \end{bmatrix} )
+		- 4 * det( \begin{bmatrix}-1 & -1 \\1 & 1 \end{bmatrix} )
+		+ 8 * det( \begin{bmatrix}-1 & 1 \\1 & 1 \end{bmatrix} )\\
+		= 2 * 2 - 4*0+8*-2 = 4-16=-12 \\
+		donc \ inversible
+
+.. math::
+
+	A^{-1} =
+	\begin{pmatrix} 1 & 0 & 0 & 0 \\
+	-\frac{1}{2} & -\frac{1}{3} & 1 & -\frac{1}{6} \\ -1 & \frac{1}{2} & \frac{1}{2} & 0 \\
+	\frac{1}{2} & -\frac{1}{6} & -\frac{1}{2} & \frac{1}{6}
+	\end{pmatrix}
+
+Question 4
+------------------
+
+En déduire les coefficients P(x) sachant que P(0)=p(1)=2 et P(-1)=P(2)=6.
+
+Si on a :math:`A*D = P` alors :math:`A*D = P \Leftrightarrow A^{-1}*A*D=A^{-1}*P \Leftrightarrow D = A^{-1}*P`
+
+or `P=\begin{pmatrix}P(0)\\P(-1)\\P(1)\\P(2)\end{pmatrix}=\begin{pmatrix}2\\6\\2\\6\end{pmatrix}`
+et on a calculé :math:`A^-1` donc
+
+.. math::
+
+		\begin{pmatrix}2\\6\\2\\6\end{pmatrix} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \  \ \ \ \\
+		\begin{pmatrix} 1 & 0 & 0 & 0 \\
+		-\frac{1}{2} & -\frac{1}{3} & 1 & -\frac{1}{6} \\ -1 & \frac{1}{2} & \frac{1}{2} & 0 \\
+		\frac{1}{2} & -\frac{1}{6} & -\frac{1}{2} & \frac{1}{6}
+		\end{pmatrix}
+		\begin{pmatrix}2\\-1+-2+2+-1=-2\\-2+3+1+0=2\\1+-1+-1+1=0\end{pmatrix}
+		= \begin{pmatrix}d\\c\\b\\a\end{pmatrix}\\

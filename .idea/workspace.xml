@@ -26,7 +26,11 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/CHEKCLIST.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/CHEKCLIST.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/maths/analyse" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/maths/analyse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/non_rank.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions/d1.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,11 +66,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\parcours" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\matrix\exercices\reductions" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\proba\exercices\denombrement" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\templates\autres" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\templates\imperative" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\templates\system" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\templates\maths" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -121,7 +125,7 @@
       <workItem from="1603918562688" duration="61000" />
       <workItem from="1603965229942" duration="23689000" />
       <workItem from="1603997723134" duration="4358000" />
-      <workItem from="1604060745455" duration="14678000" />
+      <workItem from="1604060745455" duration="18997000" />
     </task>
     <servers />
   </component>
