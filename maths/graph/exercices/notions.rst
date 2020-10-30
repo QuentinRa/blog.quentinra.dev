@@ -18,6 +18,7 @@ Soit G le graphe suivant,
       a -> b;a-> d;
       b -> a;b -> d;b -> h;
 			c -> a;
+			c -> i;
 			d -> h;d -> c;
 			h -> i;
 			i -> h;

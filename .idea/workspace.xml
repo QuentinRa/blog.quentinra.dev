@@ -25,14 +25,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/maths/bric/exercices/derive.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maths/bric/exercices/etude.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maths/bric/exercices/limit.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maths/bric/exercices/limit/d1.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maths/bric/exercices/non_rank.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/CHEKCLIST.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/CHEKCLIST.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/bric/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/non_rank.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/notions.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/notions.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/notions/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/notions/d1.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +123,7 @@
       <workItem from="1603918562688" duration="61000" />
       <workItem from="1603965229942" duration="23689000" />
       <workItem from="1603997723134" duration="4358000" />
-      <workItem from="1604060745455" duration="7360000" />
+      <workItem from="1604060745455" duration="9838000" />
     </task>
     <servers />
   </component>

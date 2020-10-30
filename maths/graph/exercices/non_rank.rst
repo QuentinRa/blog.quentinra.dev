@@ -23,3 +23,12 @@ sauf dans la salle vide.
 1. Modéliser ce problème dans le musée 1 sous forme d’un problème de graphe et le résoudre.
 2. Modéliser ce problème dans le musée 2 sous forme d’un problème de graphe et le résoudre.
 3. Pourquoi la modélisation n’est-elle pas la même, qu’est ce qui a changé ?
+
+|
+
+-----
+
+**Crédits**
+	* Massimissa MERABET (enseignant à l'ENSIIE)
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
+	* Wikle (étudiant à l'ENSIIE)
