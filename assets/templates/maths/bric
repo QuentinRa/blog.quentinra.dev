@@ -25,3 +25,10 @@ cos(x) R
 sin(x) R
 exp(x) R
 x^(x) R
+
+def
+	->f', d' f'(x)=0
+	-> limite def
+		-> tab de variations
+		-> f(x)=0, asymptotes, tangentes, symétrie, convexité, pts d'inflexions
+			-> Cf : on trouve la courbe
