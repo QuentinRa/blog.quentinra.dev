@@ -10,75 +10,13 @@ Produit scalaire
 
 normes subordonnées et norme d'opérateurs
 
-.. _norme:
+rayon vs noyau
+et Sp(A)
 
-5. Normes
-=========================================
+Noyeau Ax=0
 
-Une norme N sur un ensemble E est une mesure de l'erreur sur E.
+Ker(lambdaIn-A) = 0 pas de vp sinon ça engendre des vp
 
-	* :math:`N(x) \ge 0`
-	* :math:`N(x+y) \le N(x)+N(y)`
-	* :math:`N(x) = 0 \Leftrightarrow x = 0`
-	* :math:`N(\lambda{x}) = |\lambda| N(x)`
-
-.. note::
-
-	On met \|\|\|A||| pour la norme d'une matrice. On note \|\|Ax|| pour la norme d'un vecteur.
-
-5.1 Normes en 1, 2 et :math:`+\infty`
-***************************************************
-
-5.1.1 Norme en 1
----------------------------------------------------
-
-:math:`||x||_1 = \sum_{i=1}^{n}{ |\ x_i |}`
-
-.. note::
-
-	...
-
-5.1.2 Norme en 2
----------------------------------------------------
-
-:math:`||x||_2 = (\sum_{i=1}^{n}{ |\ x_i |^2} )^{1/2}`
-
-.. note::
-
-	...
-
-Si A est normale alors :math:`|||A||| = \rho (A)`
-
-.. note::
-
-	...
-
-5.1.3 Norme en :math:`+\infty`
----------------------------------------------------
-
-:math:`||x||_{+\infty	} = \max_{i \in \mathbb{[}1:n\mathbb{]}} | \ x_i |^2`
-
-.. note::
-
-	...
-
-5.2 Opérations sur les normes
-***************************************************
-
-:math:`|||A|||| = \sup_{x \neq 0} \frac{||Ax||}{||x||}`
-
-.. note::
-
-	...
-
-:math:`||Ax|| \le |||A||| * ||x||`
-
-.. note::
-
-	...
-
-:math:`\rho(A) \le ||A||`
-
-.. note::
-
-	On peut toujours trouver une norme d'une matrice pour approcher le rayon spectral.
+dim(Ker(A)) = pivots nuls
+dim(Im(A)) = pivots non nuls
+dim(Ker) + dim(Im(A)) = n (An)

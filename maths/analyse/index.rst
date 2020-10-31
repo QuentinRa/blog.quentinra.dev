@@ -52,7 +52,7 @@ proche du résultat théorique.
 
 Soit x, le résultat exact et :math:`x_{appro}` une valeur approchée, alors l'erreur absolue se calcule :math:`|x-x_{appro}|`.
 
-Cependant l'erreur absolu n'est pas suffisante.
+Cependant l'erreur absolue n'est pas suffisante.
 
 	| x=10^{-6}
 	| y=2*10^{-6}
@@ -69,7 +69,85 @@ ou :math:`\frac{|||AB|||}{|||A|||}` avec A et B des matrices ayant la même sém
 	| y=2*10^{-6}
 	| :math:`\frac{|x-y|}{|x|}=1` = pas petit
 
-3. Conditionnement
+.. _norme:
+
+3. Normes
+=================================
+
+Une norme N sur un ensemble E est une mesure de l'erreur sur E.
+
+	* croissante : :math:`N(x) \ge 0`
+	* inégalité triangulaire : :math:`N(x+y) \le N(x)+N(y)`
+	* seul moment où la norme est nulle : :math:`N(x) = 0 \Leftrightarrow x = 0`
+	* :math:`N(\lambda{x}) = |\lambda| N(x)`
+
+.. note::
+
+	On note :math:`| \cdot  |` pour la norme d'un réel/complexe.
+
+	On note :math:`|| \cdot ||` pour la norme d'un vecteur.
+
+	On met :math:`||| \cdot  |||` pour la norme d'une matrice.
+
+3.1 Normes en 1, 2 et :math:`+\infty`
+***************************************************
+
+3.1.1 Norme en 1
+---------------------------------------------------
+
+:math:`||x||_1 = \sum_{i=1}^{n}{ |\ x_i |}`
+
+3.1.2 Norme en 2
+---------------------------------------------------
+
+:math:`||x||_2 = (\sum_{i=1}^{n}{ |\ x_i |^2} )^{1/2} = \sqrt{\sum_{i=1}^{n}{ |\ x_i |^2}}`
+
+ou :math:`|||A|||_2 = \max_{  y \neq 0 } \frac{||Ay||_2}{||y||_2}`.
+
+Si A est normale alors :math:`|||A|||_2 = \rho (A)` sinon :math:`|||A|||_2 = \sqrt{\rho (A^*A)}`
+
+3.1.3 Norme en :math:`+\infty`
+---------------------------------------------------
+
+:math:`||x||_{+\infty	} = \max_{i \in \mathbb{[}1:n\mathbb{]}} | \ x_i |^2`
+
+.. note::
+
+	On note que max = maximum atteint alors que sup c'est comme une limite donc
+	pas forcément atteint.
+
+3.2 Opérations sur les normes
+***************************************************
+
+:math:`|||A|||| = \sup_{x \neq 0} \frac{||Ax||}{||x||}`
+
+:math:`||Ax|| \le |||A||| * ||x||`
+
+:math:`\rho(A) \le ||A||`
+
+.. note::
+
+	On peut toujours trouver une norme d'une matrice pour approcher le rayon spectral.
+
+:math:`||v||^2_2 = v^t * v`
+
+:math:`||Qx||^2_2 = (Qx)^* Qx = x^* Q^* Qx = x^* x = ||x||^2_2` car :math:`Q^**Q=Id`
+donc :math:`\color{red}{||Qx||^2_2 =||x||^2_2}`
+
+:math:`||AQ||_2 = ||QA||_2 = ||A||_2`
+
+.. note::
+
+	Démonstration
+
+	.. math::
+
+		||AQ||_2 := \max_{  x \neq 0 } \frac{||AQx||_2}{||x||_2}
+		\\
+		on \ pose \ y = Qx \\
+		= \max_{  x \neq 0 } \frac{||Ay||_2}{||y||_2} := |||A|||
+
+4. Conditionnement
 =================================
 
 Le conditionnement permet de mesurer l'impact des erreurs d'arrondis sur x (Ax=b).
@@ -79,7 +157,7 @@ Le conditionnement permet de mesurer l'impact des erreurs d'arrondis sur x (Ax=b
 	Je crois, que le conditionnement permet de mesurer la dépendance entre b (la solution du problème)
 	et x (le paramètre).
 
-3.1 Conditionnement en 1
+4.1 Conditionnement en 1
 ********************************
 
 .. math::
@@ -91,7 +169,7 @@ Propriétés
 	* :math:`A \in Gl_n(R) \ alors \ cond(\lambda{A}) = cond(A)`
 	* :math:`A, B \in Gl_n(R) \ alors \ cond(AB) \le cond(A) * cond(B)`
 
-3.2 Conditionnement en 2
+4.2 Conditionnement en 2
 ********************************
 
 .. math::
@@ -104,7 +182,7 @@ Propriétés
 
 	:math:`\sigma` est la plus petite valeur propre, :math:`\lambda` la plus grande valeur propre.
 
-3.3 Conditionnement en p
+4.3 Conditionnement en p
 ********************************
 
 Si on considère une norme :math:`|||\ |||_p` alors :math:`cond_p(A) = |||A||_p |||A^{-1}||_p`
@@ -117,12 +195,12 @@ Si on considère une norme :math:`|||\ |||_p` alors :math:`cond_p(A) = |||A||_p 
 
 
 |
-|
 
 -----
 
 **Crédits**
 	* Vicent Torri (enseignant à l'ENSIIE)
+	* Christophe MOUILLERON (enseignant à l'ENSIIE)
 	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
 
 **Références**
@@ -134,3 +212,6 @@ Si on considère une norme :math:`|||\ |||_p` alors :math:`cond_p(A) = |||A||_p 
 		* https://fr.wikibooks.org/wiki/LaTeX/%C3%89crire_des_math%C3%A9matiques
 		* https://www.commentcamarche.net/contents/620-latex-table-de-caracteres*
 		* https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
+	* outils
+		* http://atomurl.net/math/
+		* https://www.dcode.fr/norme-vecteur

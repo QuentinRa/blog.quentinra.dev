@@ -9,7 +9,7 @@ Les choses non faites et à faire
 **Analyse numérique**
 * TD1 - exo 2, 3, 4, 6
 * TD2 - exos ???
-* Fin du cours (CM1) + réécrire la partie sur les normes (voir templates)
+* Fin du cours (CM1)
 * ajouter l'interpolation
 
 **Linux**
@@ -18,10 +18,11 @@ Les choses non faites et à faire
 **Algèbre matriciel**
 
 **Probabilités**
+* Faire les exercices non rank 
 
 **Bric à Brac**
-* Faire les exercices (3)
-* Faire les exercices non_rank 
+* Faire les exercices (1)
+* Faire les exercices non rank 
 
 **Graphes**
 * faire exercices non rank
