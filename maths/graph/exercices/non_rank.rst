@@ -35,6 +35,8 @@ machine M quelles sont les machines qui peuvent suivrent dans la chaîne de prod
 donc relier M à chacune de ces machines par une succession de tapis roulant. Modélisez ce problème
 par un problème graphe et résolvez le.
 
+.. image:: /assets/math/graph/exercice/nr3.png
+
 |
 
 -----

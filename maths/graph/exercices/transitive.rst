@@ -11,14 +11,14 @@ Niveau débutant
 1. \
 	Dessinez la fermeture transitive des graphes suivants
 
-...
+.. image:: /assets/math/graph/exercice/t1.png
 
 2. \
 	Ajouter aux graphes :math:`G'` et :math:`G''` des arcs tels que :math:`G'` et :math:`G''`
 	sont :math:`\tau`-minimal :math:`\tau`-équivalence
 	à G et :math:`G''` possède strictement moins d'arc que :math:`G'`.
 
-...
+.. image:: /assets/math/graph/exercice/t1_2.png
 
 3. \
 	Montrez que G est fortement connexe si et seulement si le circuit :math:`(x_1, x_2, x_3; ..., x_n)` est
@@ -38,7 +38,7 @@ Niveau débutant
 2/3 :math:`\tau`-équivalence et graphes réduits
 --------------------------------------------------
 
-...
+.. image:: /assets/math/graph/exercice/t2.png
 
 1. \
 	Calculez les fermetures transitives des graphes :math:`G_1` et :math:`G_2`.
@@ -77,7 +77,7 @@ Niveau débutant
 	1. \
 		Testez l'algorithme de Roy-Warshall sur le graphe suivant
 
-		...
+		.. image:: /assets/math/graph/exercice/t3.png
 
 	2. \
 		Quelle est la complexité de cet algorithme ?
@@ -113,4 +113,5 @@ aucun
 -----
 
 **Crédits**
+	* Massimissa MERABET (enseignant à l'ENSIIE)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
