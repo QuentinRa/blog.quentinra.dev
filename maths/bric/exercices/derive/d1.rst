@@ -2,4 +2,76 @@
 Calcul de dérivées
 ================================
 
-...
+1. :math:`x \mapsto cos(x) exp(2x)`
+--------------------------------------
+
+On a f(x) = a*b donc f'(x) = a'b + ab' donc on a
+
+.. math::
+
+		cos(x)'exp(2x)+cos(x)exp(2x)'
+		\Leftrightarrow
+		-sin(x)exp(2x)+cos(x)* 2 * exp(2x)
+
+L'ensemble de dérivation est
+
+	* sin(x) = :math:`\text{]-$\infty $;+$\infty $[}`
+	* exp(x) = :math:`\text{]-$\infty $;+$\infty $[}`
+	* cos(x) = :math:`\text{]-$\infty $;+$\infty $[}`
+
+Donc :math:`\text{]-$\infty $;+$\infty $[}`.
+
+2. :math:`x \mapsto ln(1+x^2)`
+--------------------------------------
+
+La dérivée de ln(u) est u\'/u.
+
+.. math::
+
+		ln(1+x^2)'
+		\Leftrightarrow
+		\frac{2x}{1+x^2}
+
+L'ensemble de dérivation est
+
+	* :math:`\frac{2x}{1+x^2} = \text{]-$\infty $;+$\infty $[}`
+
+Donc :math:`\text{]-$\infty $;+$\infty $[}`.
+
+3. :math:`x \mapsto exp(-x^2)`
+--------------------------------------
+
+La dérivée de exp(u) est u\'exp(u).
+
+.. math::
+
+		exp(-x^2)
+		=
+		-2x*exp(-x^2)
+
+L'ensemble de dérivation est
+
+	* exp(-x^2) = :math:`\text{]-$\infty $;+$\infty $[}`
+	* -2x = :math:`\text{]-$\infty $;+$\infty $[}`
+
+Donc :math:`\text{]-$\infty $;+$\infty $[}`.
+
+4. :math:`x \mapsto x^x`
+--------------------------------------
+
+On réécrit :math:`x^x` comme exp(x ln(x)).
+
+.. math::
+
+		exp(x ln(x))'
+		\Leftrightarrow
+		(1+ln(x)) * exp(x ln(x))
+		\Leftrightarrow
+		(1+ln(x)) * x^x
+
+L'ensemble de dérivation est
+
+	* x^x = :math:`\text{]-$\infty $;+$\infty $[}`
+	* ln(x) = :math:`x \gt 0`
+
+Donc :math:`x \gt 0`.

@@ -5,3 +5,23 @@ dérivée
 limites
 tangente
 formulaire
+
+notez les identités remarquables, penser les factorisations
+
+dérivée de exp(u), cos(x)
+
+ensemble de dérivation
+
+x^x = exp(xlnx)
+
+1/sqrt(x) = x^-1/2
+x^n = nx^n-1
+soit sqrt = 1/x x^-1/x = 1/2sqrtx
+
+ln(u) = u'/u
+
+ln x>0
+cos(x) R
+sin(x) R
+exp(x) R
+x^(x) R
