@@ -1,5 +1,25 @@
 ================================
-Études de fonctions
+1/1 Études de fonctions
 ================================
+
+Pour chacune des fonctions suivantes, faire une étude complète et tracer la courbe représentative.
+
+1. :math:`x \mapsto x^4-5x^2+4`
+-----------------------------------
+
+...
+
+2. :math:`x \mapsto cos(x)+sin(x)`
+-----------------------------------------
+
+...
+
+3. :math:`x \mapsto \frac{3x-1}{x-4}`
+-----------------------------------------
+
+...
+
+4. :math:`x \mapsto exp(-x^2)`
+-----------------------------------
 
 ...

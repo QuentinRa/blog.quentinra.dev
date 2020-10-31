@@ -5,7 +5,7 @@ Limites
 Niveau débutant
 ***********************
 
-1/1 Calcul de limites
+1/2 Calcul de limites
 ------------------------
 
 Calculez les limites suivantes
@@ -23,6 +23,22 @@ Calculez les limites suivantes
    :maxdepth: 1
 
 	Proposition de correction n°1			<limit/d1>
+
+2/2 - Attention aux limites
+---------------------------------------------------------
+
+Soit :math:`f(x, y) = \frac{x + y^2}{x+y}`, définie sur :math:`\mathbb{R}^+*\mathbb{R}^+` privé de (0,0)
+
+1. Calculer la valeur de :math:`g(y) = \lim_{x \rightarrow 0} f(x,y)`.
+
+2. Calculer la valeur de :math:`h(y) = \lim_{y \rightarrow 0} f(x,y)`
+
+3. Calculer les limite :math:`\lim_{y \rightarrow 0} g(y)` et :math:`\lim_{y \rightarrow 0} h(y)` . Commenter.
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<limit/d2>
 
 Niveau supérieur
 ***********************

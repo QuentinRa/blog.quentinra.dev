@@ -25,7 +25,21 @@ Pour chacune des fonctions suivantes, faire une étude complète et tracer la co
 Niveau supérieur
 ***********************
 
-aucun
+1/1 Exponentielle contre puissance
+------------------------------------
+
+1.
+	Montrer par récurrence sur :math:`n \in \mathbb{N}^*` la propriété H(n) =
+	:math:`\forall x \in \mathbb{R}, exp(x) > \frac{x^n}{n!}`
+
+2. En déduire que :math:`\lim_{x \rightarrow +\infty } \frac{exp(x)}{x^n} = +\infty`.
+
+3. Montrer alors que :math:`\lim_{y \rightarrow +\infty } \frac{y}{ln (y)^n} = +\infty`.
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<etude/s1>
 
 Niveau avancé
 ***********************

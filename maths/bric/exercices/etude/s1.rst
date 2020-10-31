@@ -1,0 +1,25 @@
+=======================================
+1/1 Exponentielle contre puissance
+=======================================
+
+Question 1
+-----------------
+
+Montrer par récurrence sur :math:`n \in \mathbb{N}^*` la propriété H(n) =
+:math:`\forall x \in \mathbb{R}, exp(x) > \frac{x^n}{n!}`
+
+...
+
+Question 2
+-----------------
+
+En déduire que :math:`\lim_{x \rightarrow +\infty } \frac{exp(x)}{x^n} = +\infty`.
+
+...
+
+Question 3
+-----------------
+
+Montrer alors que :math:`\lim_{y \rightarrow +\infty } \frac{y}{ln (y)^n} = +\infty`.
+
+...

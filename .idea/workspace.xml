@@ -26,8 +26,13 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/maths/bric" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/maths/bric" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/bric/exercices/derive/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/derive/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/etude.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/etude.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/etude/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/etude/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/limit.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/limit.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/limit/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/limit/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/non_rank.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,25 +54,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/bric/exercices/etude" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/bric/exercices/non_rank" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\limit" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\derive" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\etude" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\matrix\exercices\reductions" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\proba\exercices\denombrement" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\non_rank" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\etude" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\derive" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\limit" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\parcours" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\maths\matrix\exercices\reductions" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\proba\exercices\denombrement" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\templates\autres" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\templates\imperative" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\templates\system" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -123,7 +128,7 @@
       <workItem from="1603965229942" duration="23689000" />
       <workItem from="1603997723134" duration="4358000" />
       <workItem from="1604060745455" duration="21934000" />
-      <workItem from="1604150794999" duration="6336000" />
+      <workItem from="1604150794999" duration="8173000" />
     </task>
     <servers />
   </component>
