@@ -263,6 +263,7 @@ Algorithme
 
 		Notions et Définitions					<exercices/notions>
 		Parcours												<exercices/parcours>
+		Fermeture transitive						<exercices/transitive>
 		Non triés												<exercices/non_rank>
 
 |

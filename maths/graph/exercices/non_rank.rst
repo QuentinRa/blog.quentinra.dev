@@ -24,6 +24,17 @@ sauf dans la salle vide.
 2. Modéliser ce problème dans le musée 2 sous forme d’un problème de graphe et le résoudre.
 3. Pourquoi la modélisation n’est-elle pas la même, qu’est ce qui a changé ?
 
+3. Équipement d'un atelier
+-------------------------------------
+
+Dans un grand atelier sont installées neuf machines, a, b, . . ., h et i. Les pièces mécaniques
+qui y sont fabriquées doivent passer successivement sur plusieurs machines (perceuses, soudeuses,
+polisseuses, ...). On désire construire, pour un coût minimum, des tapis roulants permettant de
+conduire les pièces d’une machine à une autre machine. Le tableau ci-dessous indique pour chaque
+machine M quelles sont les machines qui peuvent suivrent dans la chaîne de production. On doit
+donc relier M à chacune de ces machines par une succession de tapis roulant. Modélisez ce problème
+par un problème graphe et résolvez le.
+
 |
 
 -----
