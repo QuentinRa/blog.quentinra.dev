@@ -2,4 +2,105 @@
 3/3 Calculer la fermeture transitive d'un graphe
 ==================================================
 
-...
+Question 1
+-------------
+
+Décrire en français un algorithme calculant la fermeture transitive d'un graphe en utilisant
+les algorithmes de parcours de graphe.
+
+Pour chaque sommet, on explore (largeur/profondeur). L'ensemble résultant étant les sommets à relier
+par fermeture transitive.
+
+Question 2
+-------------
+
+1. \
+	Soit A la matrice d'adjacence d'un graphe G. Que représente :math:`A^p` ?
+
+A^p est la matrice d'adjacence après p transitions.
+
+2. \
+	Soit B la matrice A avec des 1 sur la diagonale. Que représente :math:`B^p`.
+
+B^p est la matrice d'adjacence d'au plus p transitions (car on revient au point de départ car 1 sur la diagonale).
+
+3. \
+	Décrire un algorithme en français utilisant les puissances de la matrice A ou
+	de B pour calculer la fermeture transitive d'un graphe
+
+On cherche s'il existe un p (inférieur n) tel qu'il existe un chemin entre notre sommet
+courant a et un autre b, pour tout couple de sommets.
+
+Question 3
+-------------
+
+1. \
+	Testez l'algorithme de Roy-Warshall sur le graphe suivant
+
+	.. image:: /assets/math/graph/exercice/t3.png
+
+.. code::
+
+	| On prends le sommet A
+	| A est a pour prédécesseur C et pour successeur B : on créer c,b
+	| On prends le sommet B
+	| B est a pour prédécesseur A et pour successeur D : on créer a,d
+	| B est a pour prédécesseur A et pour successeur C : on créer a,c
+	| B est a pour prédécesseur C et pour successeur D : on créer c,d
+	| On prends le sommet C
+	| C est a pour prédécesseur B et pour successeur A : on créer b,a
+	| C est a pour prédécesseur A et pour successeur B : a,b existe déjà
+	| On prends le sommet C
+	| aucun successeur
+
+2. \
+	Quelle est la complexité de cet algorithme ?
+
+La complexité est de O(n*n*n).
+
+3. \
+	Re-décrire l'algorithme en utilisant la matrice d'adjacence de G.
+
+.. code::
+
+	On prends un sommet,
+		pour chaque sommet (i) de la ligne de notre sommet
+			pour chaque sommet (j) de la colonne de notre sommet
+				si j différent de i et
+				si la matrice contient 1 pour i et 1 pour j, alors on crée (j,i)
+
+4.
+	Testez l'algorithme sur le graphe décrit par la matrice suivante :
+
+	.. math::
+
+		\begin{pmatrix}0&1&1&0\\1&0&0&1\\0&0&0&1\\0&1&0&0\end{pmatrix}
+
+.. code:: none
+
+	| On prends A
+		| On check successeur B
+			| prédécesseur B invalide
+		| On check successeur C
+			| prédécesseur B valide donc on crée (b,c)
+	| On prends B
+		** on n'oublie pas le nouveau 1 : (b,c) **
+		| On check successeur A
+			| prédécesseur A invalide
+			| prédécesseur D valide donc on crée (d,a)
+		| On check successeur C
+			| prédécesseur A valide mais (a,c) existe déjà
+			| prédécesseur B valide mais (b,c) existe déjà
+		| On check successeur D
+			| prédécesseur B valide mais (b,d) existe déjà
+	| On prends C
+		| On check successeur D
+			| prédécesseur A valide donc on crée (a,d)
+			| prédécesseur B valide mais (b,d) existe déjà
+	| On prends D
+		** on n'oublie pas le nouveau 1 : (d,a) **
+		| On check successeur A
+			| prédécesseur B valide mais (b,a) existe déjà
+		| On check successeur B
+			| prédécesseur A valide mais (a,b) existe déjà
+			| prédécesseur D valide mais (d,b) existe déjà
