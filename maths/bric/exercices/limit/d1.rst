@@ -29,9 +29,16 @@ Limite 2
 
 .. math::
 
-	\lim_{x \rightarrow 3^+} \frac{1-x^2}{x^2-7x+12}
+	\lim_{x \rightarrow 3^-} \frac{1-x^2}{x^2-7x+12}
 
-...
+On a 8 divisé par 0 mais on ne sait pas si c'est 0+ ou 0-.
+
+.. math::
+
+		\lim_{x \rightarrow 3^-} \frac{1-x^2}{x^2-7x+12}
+		\Leftrightarrow
+		\lim_{x \rightarrow 3^-} \frac{1-x^2}{(x-3)(x-4)}
+		= \frac{-8}{0^-*-1^+}=\frac{-8}{0^+}=-\infty
 
 Limite 3
 -------------------
@@ -40,7 +47,17 @@ Limite 3
 
 	\lim_{x \rightarrow -\infty} \frac{1-x^2}{3x+2}
 
-...
+On a moins infini divisé par moins l'infini ce qui est une FI. On essaye de factoriser.
+
+.. math::
+
+		\lim_{x \rightarrow -\infty} \frac{1-x^2}{3x+2}
+		\Leftrightarrow
+		\lim_{x \rightarrow -\infty} \frac{x^2*(\frac{1}{x^2} - 1)}{x(3+\frac{2}{x})}
+		\Leftrightarrow
+		\lim_{x \rightarrow -\infty} \frac{x*(\frac{1}{x^2} - 1)}{3+\frac{2}{x}}
+		= \frac{-\infty*(0^- - 1)}{3+0^-1}
+		= \frac{+\infty}{3} = +\infty
 
 Limite 4
 -------------------
@@ -49,7 +66,16 @@ Limite 4
 
 	\lim_{x \rightarrow 3} \frac{2-x}{x^2-6x+9}
 
-...
+On remarque qu'on a une limite -1 divisé 0, cependant on ne sait pas si c'est 0+ ou 0-.
+
+.. math::
+
+		\lim_{x \rightarrow 3} \frac{2-x}{x^2-6x+9}
+		\Leftrightarrow
+		\lim_{x \rightarrow 3} \frac{(2-x)}{(x-1)(x-3)}
+		\Leftrightarrow^{(x-1) \gt 0 \ et \ (x-3) > 0 \ en \ 3}
+		\Leftrightarrow
+		\lim_{x \rightarrow 3} \frac{-1}{0^+} = -\infty
 
 Limite 5
 -------------------
@@ -58,7 +84,12 @@ Limite 5
 
 	\lim_{x \rightarrow +\infty} exp(x)+cos(x)
 
-...
+exp(x) est plus croissante en + l'infini que cos(x) donc
+
+.. math::
+
+		\lim_{x \rightarrow +\infty} exp(x)+cos(x) \ge \lim_{x \rightarrow +\infty} exp(x)
+		\Leftrightarrow \lim_{x \rightarrow +\infty} exp(x)+cos(x) \ge +\infty
 
 Limite 6
 -------------------
@@ -67,4 +98,16 @@ Limite 6
 
 	\lim_{x \rightarrow 2} \frac{x-2}{x^2-3x+2}
 
-...
+En 2, limite de 0/0 = FI. On remarque que la forme factorisée du
+polynôme au dénominateur se simplifie avec le numérateur.
+
+.. math::
+
+		\lim_{x \rightarrow 2} \frac{x-2}{x^2-3x+2}
+		\Leftrightarrow
+		\lim_{x \rightarrow 2} \frac{(x-2)}{(x-2)(x-1)}
+		\Leftrightarrow
+		\lim_{x \rightarrow 2} \frac{1}{x-1}
+		\Leftrightarrow
+		\lim_{x \rightarrow 2} \frac{1}{2-1}= \frac{1}{1} =  1
+

@@ -113,3 +113,5 @@ Exercices
 
 **Références**
 	* https://fr.wikipedia.org/wiki/Coefficient_binomial
+	* https://www.dcode.fr/limite
+	* https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_des_croissances_compar%C3%A9es
