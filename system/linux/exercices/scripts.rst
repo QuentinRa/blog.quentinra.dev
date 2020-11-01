@@ -67,6 +67,7 @@ Le fichier généré se décompresse automatiquement lorsque l'archive est exéc
 	$ cat dossier/a.tmp
 	aaaa
 
-.. hint::
+.. toctree::
+   :maxdepth: 1
 
-	`Proposition de correction n°1 <../../../_static/linux/scripts/shzip.sh>`_
+	Proposition de correction n°1			<scripts/a1>

@@ -37,3 +37,128 @@ Fg : premier plan et bg arrière-plan
 nl #-ba (toutes) -bt (sans lignes vides)
 #affiche les 10 dernières lignes d'un fichier
 tail #-n (décroissant) n+2 (tout depuis la 2e ligne)
+
+#obtenir des infos sur une commande
+man
+info
+
+#informations sur un fichier
+file
+
+#afficher quelque chose
+echo #-n (pas de saut de ligne) -e (caractère hexa, ...)
+#affiche le nombre
+wc #-l (lignes) -w (mots) -m (caractères)
+
+#chemin du dossier courant
+pwd
+
+#date et heure
+date
+
+# récupérer une ressource à une adresse
+wget #-d (dossier)
+
+#archier/dé-archiver (tar)
+#tar xvf (dé-archiver) ; tar czvf file.tar.gz file1 file2 ... (archiver)
+tar #-x (extraire) -v (log) -f(argument) -c (create) -z (compression)
+
+#renommer une commande
+alias
+
+#affiche les options du bash et leur état
+shopt #-ps (activer) -pu (désactiver)
+
+#Affiche les informations sur l'environnement
+printenv #HOME (chemin du domicile ~) PATH (chemin du path)
+
+#système exploitation, noyau et configuration
+uname
+
+awk #affiche un fichier, édité, sans le modifier ; awk 'pattern { action }' fichier
+# action=print=afficher par défaut, $x = colonne x, $0 = toutes, conditions possibles sur NF=nb col/NR=nb lignes
+
+tr #supprime un caractère ou le remplace -d (supprime) ('old' 'new' pour remplacer)
+
+sort #trie les lignes d'un fichier (sans le modifier,rediriger la sortie)
+#-n (nombre) -k (colonne) -b(ignore blancs) -r (décroissant) -d (dictionnaire) -t: (utilise : comme séparateur colonnes)
+
+expr #substr chaine x pos (sous chaine depuis x jusqu'à pos) index chaine char (retourne la position dans une chaine d'un char
+
+hexdump #convertit texte -> hex/oct et inversement
+#-b (octal) -C (hexadécimal) -e (personnalisable) -v (reécrit lignes identiques) _ax (1er champ)
+#ex: hexdump -ve '\"%08_ax\"  8/1 \"%02x\" \"  \" 8/1 \"%02x\" \"\n\"'
+
+grep #selectionne la partie d'un fichier qui match avec la regex
+#--color affiche la partie dans une couleur -E (il faut protéger les caractères non réguliers)
+#-i (pas sensible case) -w (mot exact) -c (nombre de ligne match) -n (n°ligne du match) -r (récursive)
+#-L (stop au 1er match par fichier, affiche ceux sans match) -l (stop au 1er match par fichier, affiche ceux avec match)
+#
+#  .  : un caractère , (a|b) : soit a soit b , ^ : début , $: fin
+#  +  : au moins un fois ce qui le précède,  *  : 0 ou plus ce qui le précède
+
+sed #sed d'afficher une modification sur un fichier sans le modifier
+#sed '{nombre}{commande}\{texte}' {fichier}
+#nombre: indice de la ligne, aucun pour toutes, $ : dernière
+#commande: indice de la ligne, aucun pour toutes, $ : dernière
+#texte : texte à écrire. \ pour saut de ligne
+#
+#permet de modifier un motif (wildcards) par un autre
+#sed 's/{motif}/{remplacement}/{option}
+#motif: texte
+#remplacement: texte
+#option: g (pour toutes) rien (pour ligne actuelle) n° d'occurrence (le 4e)
+#
+# suprime un certain nombre de lignes
+# -e (résultats bizarres)
+# sed '/motif/d : supprime toutes les lignes ayant ce motif
+# sed -e 'xd' : supprime la ligne x
+# sed -e 'x,yd' : supprime les lignes dans l'intervalle [x,y]
+
+
+Général
+
+ssh #login@host -u (port)
+
+sleep #dormir/mettre en pause ; durée en ms
+
+slimlock #verrouiller l'écran
+Information sur un fichier
+
+stat #affiche pleins d'infos sur un fichier/plusieurs
+# -c (personnalisable : -c " %s (taille) %n (nom) %A (perms) %w (date création) %x (dernier accès) %F (type))
+
+file #affiche des informations basiques
+Recherche
+
+find #-type (f=fichier, d=dossiers) -empty (vide) -name (pattern) -mtime (modifiée x*24heures)
+# -size (taille xb = x bytes) -quit (stop au 1er trouvé) -amin (accès x minutes) -cmin (inchangé n minutes)
+# -perm (perms ex: 0744 ou -u-gw = ug ou uw) -printf (affichage) -newer (modif après file)
+# -mindepth (min profondeur) -maxdepth (max profondeur) -exec cp {} \; (éxcute la commande cp)
+# -execdir mv {} "toto" \; (exécute la commande mv dans le répertoire du fichier trouvé)
+
+locate #cherche dans une bd, doit être mis à jour avec sudo updatedb
+
+which #retourne la première commande trouvée
+
+whereis #cherche une commande dans PATH
+Compilateur
+
+gcc #permet de compiler un executable
+#-o (renommer sortie) -g (pleins infos) -lm (math.h) -lgraph (graph.h) -lpthread (threads.h)
+#-c (fichier objet) -MM (dépendances) -ansi (standard 89) -Wall (avertissement struct)
+#-E (fichier intermédiaires) -pedantic (strict check)
+Processus
+
+fg #passe un processus au 1er plan, %numero permet de choisir lequel
+
+bg #passe un processus à l'arrière plan, %numero permet de choisir lequel
+
+& #passe un processus à l'arrière plan
+
+ps #liste les processus
+# -e (tous) -C (selon commande) -p (pid) -s (sid) -u (données) -o personnalisé : pid, (n° processus)
+# -t (chemin terminal /dev/pts/x) -j (job format) -l (long " ) -f (full ")
+#
+# ppid, (n° processus père) pgid, (n° groupe) tpgid (id processus 1er plan) sid (n°session)
+# comm (commande)

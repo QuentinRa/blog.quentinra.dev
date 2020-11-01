@@ -29,7 +29,7 @@ plus hautes.
 1.2 Installer Linux
 ***********************
 
-J'ai rédigé un guide pour installer Linux ici : :download:`installer Linux <../../assets/linux/linux-setup.pdf>`,
+J'ai rédigé un guide pour installer Linux ici : :download:`installer Linux <../../assets/system/linux/linux-setup.pdf>`,
 sinon il existe de nombreux guides.
 
 Pour les versions de Linux, mon avis est :
@@ -48,7 +48,7 @@ Certaines fois, il se peut que vous n'ayez pas d'interface graphique, seulement 
 L'écran noir suivant est ce qu'on appelle un terminal, une console, un invite de commande et qui
 est le principal (ou le seul) moyen de saisir des instructions à exécuter sur votre machine.
 
-.. image:: /assets/linux/terminal.png
+.. image:: /assets/system/linux/terminal.png
 
 .. note::
 
@@ -515,7 +515,7 @@ Chaque processus a un identifiant unique, appelé PID.
 
 Le processus 1, systemd est le parent de tous les processus. Un processus peut être
 dupliqué, ce qui permet de créer de nouveaux processus (le processus 0 est celui qui init qui initie systemd).
-Le PPGID est l'id du processus parent.
+Le PPGID est l'Id du processus parent.
 
 .. note::
 
@@ -607,19 +607,19 @@ Les autres groupes sont à l’arrière-plan
 
 **Crédits**
 	* enseignants à l'IUT de Sénart-Fontainebleau
-		* Denis Monnerat
-		* Luc Hernandez
-		* Selma Naboulsi
-		* Denis Monnerat
-		* Frédéric Gervais
-		* Pierre Petrik
-		* Luc Dartois
-		* Pierre Valarcher
+		* Denis MONNERAT
+		* Luc HERNANDEZ
+		* Selma NABOULSI
+		* Denis MONNERAT
+		* Frédéric GERVAIS
+		* Pierre PETRIK
+		* Luc DARTOIS
+		* Pierre VALARCHER
 	* enseignants à l'ENSIIE
 			* Renaud RIOBOO
 			* Christophe MOUILLERON
 			* Julien FOREST
-			* Ivan Augé
+			* Ivan AUGÉ
 	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
 
 **Références**
