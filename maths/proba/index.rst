@@ -294,12 +294,10 @@ Propriétés de la variance
     :name: exercices
     :maxdepth: 1
 
-		Dénombrement															<exercices/count>
-		Probabilités conditionnelles							<exercices/condition>
-		Non triés																	<exercices/non_rank>
-
-
-
+		Dénombrement                              <exercices/count>
+		Probabilités conditionnelles              <exercices/condition>
+		Loi de probabilités                       <exercices/loi>
+		Non triés                                 <exercices/non_rank>
 
 |
 |

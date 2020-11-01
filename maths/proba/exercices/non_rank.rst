@@ -225,6 +225,42 @@ et soit
 4. \
 	Retrouver E(X) et V(X).
 
+Exercice 4 - Somme de Riemann
+--------------------------------
+
+Soit :math:`n \in \mathbb{N}^*`. On considère la suite :math:`u_k` définie par :
+
+.. math::
+
+	\forall k \in \mathbb{N}, u_k = \frac{a_nk}{n^2+k^2}
+
+1. \
+	Déterminer le réel :math:`a_n` sous forme d’une somme pour que la relation (1) définisse une loi de probabilité.
+
+2. \
+	Étudier la convergence de la suite (:math:`a_n`).
+
+Exercice 6 - Tirage de boules
+---------------------------------------------
+
+Soit n un entier non nul. Dans une urne contenant initialement n boules numérotées 1 à n, on effectue
+deux tirages successifs d’une boule selon le protocole suivant : Si on note k (:math:`k \in [1,n]`) le numéro de
+la boule tirée au premier tirage, celle-ci est remise dans l’urne avec k boules supplémentaires portant
+toutes le numéro k ; on effectue alors un second tirage.
+
+On appelle :math:`X_1` la variable égale au numéro de la
+boule tirée au premier tirage et :math:`X_2`, celle égale au numéro de la boule tirée au second tirage.
+
+1. \
+	Déterminer la loi de probabilité de :math:`X_1`,
+
+2. \
+	Déterminer la loi de probabilité de :math:`X_2` et vérifier que
+
+	.. math::
+
+		\sum_{k=1}^{n} p(X_2 = k) = 1
+
 |
 
 -----
