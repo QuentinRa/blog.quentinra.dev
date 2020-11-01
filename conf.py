@@ -13,6 +13,8 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('_ext'))
+import os
+on_rtd = os.environ.get('READTHEDOCS') == 'True'
 
 # -- Project information -----------------------------------------------------
 
@@ -21,7 +23,7 @@ copyright = '2020, Quentin Ra'
 author = 'Quentin Ra'
 
 # The full version, including alpha/beta/rc tags
-release = '1.2.67'
+release = '1.2.76'
 # version 0 : html, css, php, js
 # version 1 : restructured text
 # version 1.1 : docker
@@ -83,7 +85,11 @@ html_context['github_version'] = 'master/'
 
 # -- GraphViz configuration ----------------------------------
 
-graphviz_dot='C:/graphviz/bin/dot.exe'
+if on_rtd: # default for rtd
+    pass
+else: # path on windows
+   graphviz_dot='C:/graphviz/bin/dot.exe'
+
 graphviz_output_format = 'svg'
 
 # -- PDF
