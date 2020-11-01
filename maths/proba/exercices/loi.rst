@@ -69,8 +69,8 @@ En déduire la loi de probabilité de la variable aléatoire X qui représente l
 Niveau supérieur
 ***********************
 
-1/2 - Loi conditionnelle
--------------------------------------
+1/2 - Loi d’une variable aléatoire discrète
+-----------------------------------------------
 
 Dans une urne, on place n boules portant des numéros 2 à 2 distincts.
 
@@ -87,6 +87,9 @@ On note :math:`X_2` le nombre de tirages effectués par ce second joueur.
 
 2. \
 	Déterminer la loi de probabilité de :math:`X_2`, conditionnée par :math:`X_1`.
+
+3. \
+	(bonus) Déterminer la loi de probabilité de :math:`X_2`.
 
 .. toctree::
    :maxdepth: 1

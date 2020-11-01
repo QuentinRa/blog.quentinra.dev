@@ -35,3 +35,5 @@ def
 
 https://fr.wikipedia.org/wiki/Formulaire_de_d%C3%A9veloppements_en_s%C3%A9ries
 https://www.dcode.fr/derivee
+
+[[1,n]] = {1,2, ...., n}
