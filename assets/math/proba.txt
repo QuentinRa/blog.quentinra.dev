@@ -1,3 +1,13 @@
+https://www.techno-science.net/definition/6357.html
+
+On remplace l'intégrale par
+
+.. math::
+
+	\sum_{k=0}^{+\infty} f(k) = 1
+
+On peut sortir une constante de la somme
+
 2. Variables aléatoires discrètes
 ****************************************
 

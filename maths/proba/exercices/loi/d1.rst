@@ -2,3 +2,79 @@
 1/3 - Application numérique
 ================================
 
+Connaissant la fonction de densité discrète :math:`f(x) = \frac{e^{-1}}{x!}, x = 0,1, 2...`.
+
+Question 1
+--------------
+
+Déterminer P(X=2)
+
+.. math::
+
+	P(X=2) = \frac{e^{-1}}{2!}
+
+Question 2
+--------------
+
+Calculer P(X < 2)
+
+On détermine P(X < 2) = P(X=0) + P(X=1)
+
+.. math::
+
+	P(X < 2) = P(X=0) + P(X=1) = \frac{e^{-1}}{0!} + \frac{e^{-1}}{1!}
+	= e^{-1} + e^{-1} = 2 e^{-1}
+
+Question 3
+--------------
+
+Démontrer que :math:`e^{-1}` est la constante pour laquelle la fonction :math:`\frac{c}{x!}` est une densité de probabilité.
+
+.. math::
+
+		densité := \sum_{k=0}^{+\infty} f(k) = 1
+		\Leftrightarrow
+		\sum_{k=0}^{+\infty} \frac{c}{k!} = 1
+		\Leftrightarrow
+		c * \sum_{k=0}^{+\infty} \frac{1}{k!} = 1
+		\Leftrightarrow^{car\ 1^k = 1}
+		c * \sum_{k=0}^{+\infty} \frac{1^k}{k!} = 1\\
+		\Leftrightarrow^{développement \ série}
+		c * e = 1 \Leftrightarrow  c = \frac{1}{e} \Leftrightarrow c = e^{-1}
+
+La fonction est croissante (à démontrer).
+
+On a également x positif donc la fonction est positive car elle est croissante et f(0)=e^{-1} > 0.
+
+Question 4
+--------------
+
+A quelle condition portant sur :math:`\alpha`
+
+.. math::
+
+	p_n = \alpha * \frac{\lambda^n}{n!} \ pour \ n \ge 0
+
+sont-ils les coefficients d’une loi de probabilité, pour :math:`\lambda > 0` ?
+
+:math:`p_n` est une loi de proba si (cours)
+
+	* la fonction est croissante
+	* la fonction est positive, soit :math:`\forall n \in N; p_n \gt 0`
+	* :math:`\sum_{n=0}^{+\infty} p_n = 1`
+
+Donc on vérifie
+
+	* la fonction est croissante
+	* si :math:`\alpha \gt 0` alors :math:`p_n \gt 0`
+	*
+		.. math::
+
+				\sum_{n=0}^{+\infty} p_n = 1
+				\Leftrightarrow
+				\sum_{n=0}^{+\infty} \alpha * \frac{\lambda^n}{n!} = 1
+				\Leftrightarrow
+				\alpha * \sum_{n=0}^{+\infty} \frac{\lambda^n}{n!} = 1
+				\Leftrightarrow^{développement \ série}
+				\alpha * e = 1\\
+				\Leftrightarrow  \alpha = \frac{1}{e} \Leftrightarrow \alpha = e^{-1}

@@ -18,7 +18,8 @@ Les choses non faites et à faire
 **Algèbre matriciel**
 
 **Probabilités**
-* Faire les exercices non rank 
+* Faire les exercices non rank (1,2,3)
+* Ajouter densité de probabilité
 
 **Bric à Brac**
 * Faire les exercices (1)
@@ -26,3 +27,4 @@ Les choses non faites et à faire
 
 **Graphes**
 * faire exercices non rank
+* Peut-être corriger truc sur les parcours

@@ -17,7 +17,7 @@ Connaissant la fonction de densité discrète :math:`f(x) = \frac{e^{-1}}{x!}, x
 	Calculer P(X < 2),
 
 3. \
-	Démontrer que :math:`e^{-1}` est la constante pour laquelle la fonction c=x! est une densité de probabilité.
+	Démontrer que :math:`e^{-1}` est la constante pour laquelle la fonction :math:`\frac{c}{x!}` est une densité de probabilité.
 
 4. \
 	A quelle condition portant sur :math:`\alpha`
