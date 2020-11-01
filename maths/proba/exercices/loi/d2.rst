@@ -2,3 +2,47 @@
 2/3 - Série exponentielle
 ================================
 
+Soit a un réel non nul. On considère la suite (:math:`u_n`) définie par :
+
+.. math::
+
+	\forall n \in \mathbb{N}, u_n = \frac{1}{8} * \frac{2+a^n}{n!}
+
+Pour quelle valeur du réel a, la suite (:math:`u_n`) définit-elle bien une loi de probabilité ?
+
+.. math::
+
+		\sum_{n=0}^{+\infty} \frac{1}{8} * \frac{2+a^n}{n!} = 1
+		\\\Leftrightarrow
+		\frac{1}{8} \sum_{n=0}^{+\infty} \frac{2}{n!}+\frac{a^n}{n!} = 1
+		\\\Leftrightarrow
+		\frac{1}{8} \sum_{n=0}^{+\infty} \frac{2}{n!} + \frac{1}{8}
+		\sum_{n=0}^{+\infty}\frac{a^n}{n!} = 1\\
+		\\\Leftrightarrow
+		\frac{1}{8} * 2 \sum_{n=0}^{+\infty} \frac{1}{n!} + \frac{1}{8}
+		\sum_{n=0}^{+\infty}\frac{a^n}{n!} = 1\\
+		\\\Leftrightarrow^{1^n = 1}
+		\frac{2}{8} \sum_{n=0}^{+\infty} \frac{1^n}{n!} + \frac{1}{8}
+		\sum_{n=0}^{+\infty}\frac{a^n}{n!} = 1\\
+		\\\Leftrightarrow^{développement \ série\ de \ e}
+		\frac{2}{8} e^1 + \frac{1}{8}
+		\sum_{n=0}^{+\infty}\frac{a^n}{n!} = 1
+		\\\Leftrightarrow^{développement\ série \ de \ e}
+		\frac{2e}{8} + \frac{1}{8} e^a = 1
+		\\\Leftrightarrow
+		\frac{2e}{8} + \frac{e^a}{8} = 1
+		\\\Leftrightarrow
+		\frac{e^a}{8} = \frac{8}{8} - \frac{2e}{8}
+		\\\Leftrightarrow
+		e^a = 8* (\frac{8}{8} - \frac{2e}{8})
+		\\\Leftrightarrow
+		e^a = 8 - 2e
+		\\\Leftrightarrow^{fonctions\ croissantes}
+		ln(e^a) = ln(8-2e)
+		\\\Leftrightarrow
+		a = ln(8-2e)
+
+* a > 0 donc la somme vaut 1
+* suite à termes positif donc croissante.
+
+Donc c'est bien une loi de probabilité.

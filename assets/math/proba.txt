@@ -8,6 +8,8 @@ On remplace l'intégrale par
 
 On peut sortir une constante de la somme
 
+Apprendre par coeur la technique de sortie jcrois
+
 2. Variables aléatoires discrètes
 ****************************************
 
