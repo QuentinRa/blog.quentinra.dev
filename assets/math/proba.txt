@@ -10,6 +10,8 @@ On peut sortir une constante de la somme
 
 Apprendre par coeur la technique de sortie jcrois
 
+https://fr.wikipedia.org/wiki/%C3%89v%C3%A9nement_%C3%A9l%C3%A9mentaire
+
 2. Variables aléatoires discrètes
 ****************************************
 
