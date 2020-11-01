@@ -26,11 +26,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/CHEKCLIST.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/CHEKCLIST.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/math/graph.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/math/graph.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/save.rstt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/save.rstt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition/d3.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,25 +50,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/proba/exercices/loi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/proba/exercices/condition" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\maths\proba\exercices\loi" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\proba\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\transitive" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\non_rank" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices\scripts" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\linux" />
       <recent name="C:\Users\quent\Documents\texas-res\assets" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\math" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\limit" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\proba\exercices\condition" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\proba\exercices\loi" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\proba\exercices" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\transitive" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -128,7 +126,7 @@
       <workItem from="1604060745455" duration="21934000" />
       <workItem from="1604150794999" duration="28724000" />
       <workItem from="1604231564969" duration="22248000" />
-      <workItem from="1604257948518" duration="3292000" />
+      <workItem from="1604257948518" duration="4716000" />
     </task>
     <servers />
   </component>

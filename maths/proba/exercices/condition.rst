@@ -68,6 +68,7 @@ trois premiers ?
    :maxdepth: 1
 
 	Proposition de correction n°1			<condition/d4>
+	Proposition de correction n°2			<condition/d4_1>
 
 5/6 Théorème de Bayes
 --------------------------------

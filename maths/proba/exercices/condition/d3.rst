@@ -14,9 +14,9 @@ Question 1
 
 Quelle est la probabilité pour que les boules tirées soient toutes de couleurs différentes ?
 
-U1 = 2B + 3R
-U2 = 2V + 3B
-U3 = 5N + 2R
+| U1 = 2B + 3R
+| U2 = 2V + 4B
+| U3 = 5N + 2R
 
 On définit
 
@@ -34,21 +34,21 @@ si X="boules tirées soient toutes de couleurs différentes" alors
 	Vous pouvez voir ça comme un arbre, si ça aide pour les calculs. On calcule la somme des probabilités
 	de 4 branches.
 
-* :math:`P(B_1V_2N_3)=\frac{2*2*5}{5*6*8}=20/240`
-* :math:`P(B_1V_2R_3)=\frac{2*2*2}{5*6*8}=8/240`
-* :math:`P(R_1V_2N_3)=\frac{3*2*5}{5*6*8}=30/240`
-* :math:`P(R_1B_2N_3)=\frac{3*3*5}{5**6*8}=45/240`
+* :math:`P(B_1V_2N_3)=\frac{2*2*5}{5*7*8}=20/280`
+* :math:`P(B_1V_2R_3)=\frac{2*2*2}{5*7*8}=8/280`
+* :math:`P(R_1V_2N_3)=\frac{3*2*5}{5*7*8}=30/280`
+* :math:`P(R_1B_2N_3)=\frac{3*4*5}{5**7*8}=60/280`
 
 .. note::
 
-	Si vous vous demandez comment on obtient :math:`P(B_1V_2N_3)=\frac{2*2*5}{5*6*8}=20/240` ou n'importe
+	Si vous vous demandez comment on obtient :math:`P(B_1V_2N_3)=\frac{2*2*5}{5*7*8}=20/280` ou n'importe
 	laquelle de ces autres valeurs.
 
 		* On a 5 boules au début, donc 2 blanches. Donc :math:`P(B_1)=2/5`.
-		*	On a ensuite 5 boules + 1 blanche et 2 boules vertes. Donc :math:`P(V_2|B_1)=2/6`.
+		*	On a ensuite 6 boules + 1 blanche et 2 boules vertes. Donc :math:`P(V_2|B_1)=2/7`.
 		*	On a ensuite 7 boules + 1 verte et 5 boules noires. Donc :math:`P(N_3|B_1 \cap V_2)=5/8`.
 		*	Or (cours) :math:`P(B_1V_2N_3)=P(B_1)*P(V_2|B_1)*P(N_3|B_1 \cap V_2)`
 
-	Ce qui donne :math:`P(B_1V_2N_3)=\frac{2*2*5}{5*6*8}`
+	Ce qui donne :math:`P(B_1V_2N_3)=\frac{2*2*5}{5*7*8}`
 
-:math:`P(X)=20/240 + 8/240 + 30/240 + 45/240 = 103/240`
+:math:`P(X)=20/280 + 8/280 + 30/280 + 60/280 = 118/280`

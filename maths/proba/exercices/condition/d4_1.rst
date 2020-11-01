@@ -1,0 +1,19 @@
+================================
+4/6 Probabilités conditionnelles
+================================
+
+On cherche une lettre qui a la probabilité p de se trouver dans l’un des 4 tiroirs d’un secrétaire.
+
+Question 1
+---------------
+
+Quelle est la probabilité qu’elle se trouve dans le quatrième tiroir, sachant que l’on ne l’a pas trouvée dans les
+trois premiers ?
+
+On définit X=la lettre est dans la 4ème tiroir.
+
+On a 4 tiroir donc la probabilité que la lettre soit dans un tiroir est 1/4.
+
+Cependant, il se peut que la lettre ne soit dans aucun tiroir, donc on cherche
+la probabilité que la lettre soit dans un tiroir (p) et que ce tiroir soit le 4ème (1/4)
+ce qui donne P(X) = p/4.
