@@ -10,6 +10,7 @@ Les choses non faites et à faire
 * TD1 - exo 2, 3, 4, 6
 * TD2 - exos ???
 * Fin du cours (CM1)
+* CM2 (entier) - GAUSS et factorisation LU
 * ajouter l'interpolation
 
 **Linux**
@@ -18,8 +19,10 @@ Les choses non faites et à faire
 **Algèbre matriciel**
 
 **Probabilités**
+* Faire le dernier exo de prob cond
+* Faire le dernier exo de loi
 * Faire les exercices non rank (1,2,3)
-* Ajouter densité de probabilité
+* Ajouter densité de probabilité au cours
 
 **Bric à Brac**
 * Faire les exercices (1)

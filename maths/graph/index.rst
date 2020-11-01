@@ -63,6 +63,15 @@ Graphes particuliers
 				les graphes bi-parti : les sommets sont classé en deux groupes, ceux d'un degré = a et ceux
 				d'un degré=b (:math:`b > a \ge 1`).
 
+Cycle, Chaines élémentaires
+	On dit qu'une chaine ou un cycle est élémentaire si on passe 1 seule fois
+	par chaque sommet.
+
+Graphes simples et Graphes complexes
+	Par opposition au graphes complexes, un graphe simple
+
+		* ne contient pas de boucles,
+		* a au plus une arrête relie deux sommets (Pour aller de A vers B, j’ai au plus un chemin (arrête) pour y aller)
 
 2. Propriétés complexes
 =========================
@@ -75,6 +84,9 @@ Sous-graphe (dit sous-graphe induit)
 
 		* en ne supprimant que des sommets de G
 		* en ne supprimant que les arrêtes liées/incidentes au sommets supprimés
+
+Clique
+	Une clique est un sous-graphe complet.
 
 2.2 Connexité et forte connexité
 **********************************
