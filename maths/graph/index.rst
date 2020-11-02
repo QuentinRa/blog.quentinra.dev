@@ -4,7 +4,7 @@
 Théorie des graphes
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.0}`
+| :math:`\color{grey}{Version \ 1.0.1}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 02/11/2020}`
 
 Graphe
@@ -580,10 +580,12 @@ Arbre couvrant de poids minimum (ACM)
     :name: exercices
     :maxdepth: 1
 
-		Notions et Définitions					<exercices/notions>
-		Parcours												<exercices/parcours>
-		Fermeture transitive						<exercices/transitive>
-		Non triés												<exercices/non_rank>
+		Notions et Définitions          <exercices/notions>
+		Parcours                        <exercices/parcours>
+		Fermeture transitive            <exercices/transitive>
+		Stabilité                       <exercices/stable>
+		Étude des degrés                <exercices/voisins>
+		Non triés                       <exercices/non_rank>
 
 ------
 

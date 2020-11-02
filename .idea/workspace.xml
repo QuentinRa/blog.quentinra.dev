@@ -26,10 +26,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.readthedocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.readthedocs.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/CHEKCLIST.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/CHEKCLIST.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/math/graph.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/non_rank.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/graph/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,25 +51,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/graph/exercices/voisins" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\proba\exercices\condition" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\proba\exercices\loi" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\proba\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\transitive" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\assets" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices\scripts" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\linux" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\math" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\limit" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\voisins" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\stable" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices" />
+      <recent name="C:\Users\quent\Documents\texas-res" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\proba\exercices\condition" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -133,7 +132,7 @@
       <workItem from="1604304438755" duration="12901000" />
       <workItem from="1604329163464" duration="828000" />
       <workItem from="1604330206391" duration="1083000" />
-      <workItem from="1604339015653" duration="9897000" />
+      <workItem from="1604339015653" duration="11444000" />
     </task>
     <servers />
   </component>

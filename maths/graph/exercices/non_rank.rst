@@ -37,6 +37,32 @@ par un problème graphe et résolvez le.
 
 .. image:: /assets/math/graph/exercice/nr3.png
 
+4. Stable et degré
+--------------------
+
+Soit G un graphe tel que :math:`1 \le d(x_1) \le ... \le d(x_n)`
+et il existe p dans :math:`[2,n]` tel que :math:`\sum_{i=0}^{p-2} d(x_{n-i} \le n-p`.
+
+Montrer que tout stable maximal possède au moins p éléments.
+
+5. Empiler
+--------------
+
+Soient :math:`C_1, C_2, C_3` les trois cylindres (à base triangulaire) suivants. Ils sont colorés sur
+les trois faces verticales (pas sur les bases). La couleur de la face arrière est indiquée en haut.
+
+.. image:: /assets/math/graph/exercice/nr5.png
+
+On cherche une façon d’empiler parallèlement les cyclindres de sorte que chaque face de la pile
+ainsi construite possède au plus une fois chaque couleur. Modéliser ce problème par un problème
+de graphe et le résoudre.
+
+6. Plan de mariage
+--------------------
+
+Comment effectuer à un mariage un plan de table de sorte que deux personnes qui ne s’apprécient
+pas ne soient pas à la même table ? Modéliser ce problème par un problème de graphe.
+
 |
 
 -----
