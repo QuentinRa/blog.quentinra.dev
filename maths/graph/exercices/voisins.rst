@@ -40,7 +40,7 @@ d’amitiés).
 .. toctree::
    :maxdepth: 1
 
-	Proposition de correction n°1			<voisins/d1>
+	Proposition de correction n°1			<voisins/d2>
 
 3/3 Graphe dense et chemin
 -----------------------------------
@@ -51,7 +51,7 @@ d + 1 nœuds dans G.
 .. toctree::
    :maxdepth: 1
 
-	Proposition de correction n°1			<voisins/d1>
+	Proposition de correction n°1			<voisins/d3>
 
 Niveau supérieur
 ***********************
