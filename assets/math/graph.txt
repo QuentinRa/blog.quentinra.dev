@@ -1,4 +1,6 @@
 https://fr.wikipedia.org/wiki/Th%C3%A9orie_spectrale_des_graphes
+https://fr.wikipedia.org/wiki/Taux_d%27expansion_(th%C3%A9orie_des_graphes)
+https://fr.wikipedia.org/wiki/Graphe_dual
 
 Stabilité
 	Un ensemble stable S est un sous-ensemble tel que les sommets de l'ensemble ne sont jamais
@@ -39,3 +41,93 @@ Fonction de grundy
 
 	Il est recommandé de partir d'un sommet qui n'a pas de prédécesseur,
 	car il fait forcément parti du noyau.
+
+Bases de cycle et cocycles
+============================
+
+Base de cycles
+	On considère l'ensemble des arrêtes V ordonné. On note chaque cycle
+	est comme un ensemble qui associe à chaque arrête une valeur : 0,1,-1.
+
+		* 0 : si le cycle ne parcours par l'arrête
+		* 1 : si le cycle parcours l'arrête dans le bon sens
+		* -1 : si le cycle parcours l'arrête dans le sens inverse
+
+	On note un cycle :math:`C_n = (0, ...,1,-1)`
+
+	Une base de cycles B est un ensemble de cycles, tels
+	que la base de cycles est libre et génératrice.
+
+	On note :math:`\mu(G)` (mu) le nombre d'éléments d'une base de cycle,
+	appelé nombre cyclomatique. math:`\mu(μ(G) = m − n + p` avec n sommets m arcs et p composantes
+	connexes.
+
+Base de cocycles
+	On appelle cocycle de A, l'ensemble des arcs incidents à A,
+  noté :math:`\omega{(A)}`. On associe à chaque arc une valeur
+
+  		* 0 : si le cocycle ne parcours par l'arrête
+  		* 1 : si le cocycle parcours l'arrête dans le bon sens
+  		* -1 : si le cocycle parcours l'arrête dans le sens inverse
+
+  .. hint::
+
+   	En gros il faut que les sommets du cocycles soit incidents à tous les autres
+
+  Une base de cycle est un ensemble de cocycles, tel que la base
+  soit libre et génératrice.
+
+
+	On note :math:`\gamma(G)` (gamma) le nombre d'éléments d'une base de cocycle,
+ 	appelé nombre cocyclomatique. math:`\gamma(μ(G) = n - p` avec n sommets et p composantes
+  connexes.
+
+Graphes planaires et isomorphisme
+========================================
+
+Planaire
+	Un graphe est planaire si on peut le représenter tel qu'aucune arrête ne traverse
+	une autre arrête.
+
+	On appelle Graphe planaire topologique la représentation planaire d'un graphe planaire.
+
+	Un graphe est planaire si n-m+f = 2 avec n sommets, m arrêtes et f faces (donc f=m-n+2).
+
+Isomorphe
+	Deux graphes sont isomorphes si on peut obtenir la même représentation en déplaçant
+	des arrêtes
+
+Face
+	Une face est une région d'un graphe planaire délimitée/entourée par des arrêtes.
+
+	Les arrêtes externes (celles vers l'extérieur) du graphe délimites la face
+	dite infinie.
+
+Frontière et contour
+	On appelle frontière ou contours, les arrêtes qui entourent une face.
+
+	Le contour cependant est un cycle élémentaire et ne dépend pas de la représentation.
+
+	Dans un graphe planaire topologique, les contours forment une base de cycles.
+
+Graphe dual
+	Un graphe dual noté G* est un graphe dans lequel les sommets sont
+	les faces de G et les arrêtes leur frontières.
+
+Mineur d'un graphe
+	Le mineur d'un graphe G est obtenu en effectuant un nombre quelconque d'opérations parmi :
+
+		* supprime un sommet isolé (d(sommet) = 1)
+		* supprime une arrête
+		* contracte une arrête : les deux sommets aux extrémités sont fusionnés.
+
+-------
+G planaire connexe -> m < 3n -5
+G planaire connexe et 1 face finie, ya au moins un sommet e tel que d(e) < 6
+
+Kuratowski
+	Les graphes K3,3 et K5 ne sont pas planaires. Tout graphe
+	contenant un sous-graphe qui soit l'un de ces deux là n'est pas planaire.
+
+Robertson–Seymour
+	Graphe est planaire ssi il ne contient pas comme mineur K3,3 et K5

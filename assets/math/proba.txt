@@ -90,3 +90,6 @@ P(X=x,Y=y)
 Support \delta
 
 E[X|Y]
+
+E[g(x)|X] = g(X)
+E[E[sigma(x,y)]|X] = sigma(x,y)
