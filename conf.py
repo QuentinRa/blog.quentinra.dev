@@ -84,11 +84,10 @@ html_context['github_repo'] = 'ramsamy.ws-res'
 html_context['github_version'] = 'master/'
 
 # -- GraphViz configuration ----------------------------------
+import shutil
 
-if on_rtd: # default for rtd
-    pass
-else: # path on windows
-   graphviz_dot='C:/graphviz/bin/dot.exe'
+if shutil.which("dot") == None :
+	graphviz_dot="C:/graphviz/bin/dot.exe"
 
 graphviz_output_format = 'svg'
 

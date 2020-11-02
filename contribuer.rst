@@ -99,17 +99,40 @@ Remplacez le contenu de l'ancien fichier par le nouveau.
 
 On s'occupera ensuite de valider vos changement (donc ce ne sera pas fait automatiquement, contrairement à la méthode compliquée).
 
-6. Intégration readthedoc et Sphinx (compliqué)
-**************************************************
+6. Compiler la doc chez soi
+****************************************************
 
-...
+.. code:: bash
 
-7. Compiler la doc chez soi (compliqué)
-************************************************
+		git clone https://github.com/QuentinRa/ramsamy.ws-res.git
+		make html
+		open _build/html/index.html
 
-...
+.. note::
 
-|
+	Ces commandes téléchargent lé dépôt git, compilent la doc et ouvre le site généré.
+
+	Vous devez cependant installer, une et une seule fois, certaines composantes
+	sinon la compilation va échouer.
+
+Les pré-requis sont :
+	* Installer python (et ajouter au PATH+ ajouter le dossier Scripts!)
+	* Installer pip :code:`python -m pip install -U pip`
+	* Installer sphinx :code:`pip install -U sphinx`
+	* Installer le thème :code:`pip install -U sphinx-rtd-theme`
+	* Installer graphviz :code:`pip install -U graphviz`
+
+		* sous windows, vous devez ajouter graphviz/dot.exe au path
+		* sous windows, ouvrez un terminal et lancez :code:`dot -c` à la toute première utilisation
+		* si vous avez des problèmes, mettez dot.exe dans :code:`C:/graphviz/bin/dot.exe`
+
+.. warning::
+
+	Vous devez recompiler le site pour voir vos changements.
+
+.. note::
+
+	Créez une nouvelle branche, et travaillez dessus
 
 -----
 

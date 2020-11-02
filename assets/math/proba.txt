@@ -78,3 +78,24 @@ Support
 Page 18 ?
 
 file:///C:/Users/quent/Desktop/Calculer%20le%20mode%20et%20la%20m%C3%A9diane%20-%20Maxicours.html
+
+CM4
+------------
+
+
+Espérance conditionnelle
+
+P(X=x,Y=y)
+
+Support \delta
+
+
+
+
+
+
+
+
+
+
+
