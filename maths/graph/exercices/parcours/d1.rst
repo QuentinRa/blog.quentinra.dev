@@ -2,6 +2,9 @@
 1/1 Parcours en profondeur et en largeur
 ========================================
 
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
 .. graphviz::
 
 	digraph {
@@ -98,7 +101,24 @@ Appliquer l’algorithme de parcours en largeur au graphe ci-dessus en partant d
 	| f(b) = {}, f(a) = {}, f(c) = {}, f(k) = {} : les feuilles sont vides donc terminé
 	| résultat: {h,i,j,g,e,f,d,b,k,c}
 
-Algorithme complet
+Question 2.2
+-------------------
+
+Pourquoi pouvez-vous affirmer que ce graphe est connexe ?
+
+On est passé par tous les sommets donc le graphe est connexe.
+
+Question 2.3
+-------------------
+
+Quelle est la complexité de l’algorithme ?
+
+Réponse internet : :math:`O(|V|+|E|)`
+
+Bonus
+-----------------
+
+Autre parcours
 
 .. code:: none
 
@@ -119,17 +139,3 @@ Algorithme complet
 			| g déjà terminé
 
 	Donc résultat : h,i,j,e,b,d,k,c,g,f,a
-
-Question 2.2
--------------------
-
-Pourquoi pouvez-vous affirmer que ce graphe est connexe ?
-
-On est passé par tous les sommets donc le graphe est connexe.
-
-Question 2.3
--------------------
-
-Quelle est la complexité de l’algorithme ?
-
-Réponse internet : :math:`O(|V|+|E|)`

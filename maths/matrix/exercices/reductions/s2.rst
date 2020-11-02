@@ -2,6 +2,9 @@
 2/2 Réduction d'endomorphisme et récurrences linéaires
 ==============================================================
 
+.. image:: https://img.shields.io/badge/correction-incomplète%20mais%20vérifiée-yellow.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction incomplète mais vérifiée
+
 Résolution de S1
 --------------------------
 

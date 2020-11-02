@@ -2,6 +2,9 @@
 1/2 Applications aux suites définies par récurrences linéaires
 ======================================================================
 
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
 On considère la suite :math:`(U_n)_{n \in \mathbb{N}}` définie par
 :math:`\begin{cases} u_0 = 0\\u_1 = 1\\ \forall{n  \geq 2}, u_n = 5u_{n-1} - 6u_{n-2} \end{cases}`.
 

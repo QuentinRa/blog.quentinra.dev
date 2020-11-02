@@ -89,13 +89,4 @@ P(X=x,Y=y)
 
 Support \delta
 
-
-
-
-
-
-
-
-
-
-
+E[X|Y]

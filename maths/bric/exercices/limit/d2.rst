@@ -2,6 +2,9 @@
 2/2 - Attention aux limites
 ======================================================
 
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
 Soit :math:`f(x, y) = \frac{x + y^2}{x+y}`, définie sur :math:`\mathbb{R}^+*\mathbb{R}^+` privé de (0,0)
 
 1. Calculer la valeur de :math:`g(y) = \lim_{x \rightarrow 0} f(x,y)`.
