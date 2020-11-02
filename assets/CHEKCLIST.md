@@ -30,4 +30,5 @@ Les choses non faites et à faire
 
 **Graphes**
 * faire exercices non rank
-* Peut-être corriger truc sur les parcours
+* ajouter les parcours
+* regarder la théorie spectrale
