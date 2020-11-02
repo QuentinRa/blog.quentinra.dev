@@ -26,10 +26,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/CHEKCLIST.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/CHEKCLIST.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/graph/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/non_rank.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/voisins.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/voisins.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/voisins/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/voisins/d1.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +132,7 @@
       <workItem from="1604304438755" duration="12901000" />
       <workItem from="1604329163464" duration="828000" />
       <workItem from="1604330206391" duration="1083000" />
-      <workItem from="1604339015653" duration="11444000" />
+      <workItem from="1604339015653" duration="12130000" />
     </task>
     <servers />
   </component>

@@ -63,7 +63,27 @@ de graphe et le résoudre.
 Comment effectuer à un mariage un plan de table de sorte que deux personnes qui ne s’apprécient
 pas ne soient pas à la même table ? Modéliser ce problème par un problème de graphe.
 
-|
+7. Petite poignée de main
+-----------------------------
+
+Le couple Madame M et monsieur N invitent 4 couples chez eux. En arrivant, certains se
+saluent, d’autres non, en particulier les membres d’un couple ne se saluent pas. Monsieur N a
+demandé à tout le monde combien de personnes ils avaient salué et chaque personne a donné une
+réponse différente.
+
+1. Montrer alors que
+
+	* pour chaque couple, les deux personnes du couple ont serré ensemble 8 mains ;
+	* Madame M et Monsieur N ont salué les mêmes personnes.
+
+2. Cela est-t-il toujours vrai si madame M n’est pas en couple avec monsieur N ?
+
+8. Accès par autoroutes
+-----------------------------
+
+Dans un département comptant 2p + 1 villes, chaque ville est reliée à p autres villes par une
+autoroute. Montrer qu’il est possible de se rendre depuis le chef-lieu du département dans toutes
+les autres villes en empruntant que des autoroutes.
 
 -----
 

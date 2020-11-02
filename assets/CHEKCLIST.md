@@ -29,6 +29,7 @@ Les choses non faites et à faire
 * Faire les exercices non rank 
 
 **Graphes**
+* faire exercices stable + degrés (6)
 * faire exercices non rank
 * ajouter les parcours
 * regarder la théorie spectrale
