@@ -32,7 +32,7 @@ Question 1
 Question 1.1
 -------------------
 
-Appliquer l’algorithme de parcours en profondeur au graphe ci-dessus en partant du noeud de votre choix.
+Appliquer l’algorithme de parcours en profondeur au graphe ci-dessus en partant du nœud de votre choix.
 
 .. hint::
 
@@ -84,7 +84,7 @@ Question 2
 Question 2.1
 -------------------
 
-Appliquer l’algorithme de parcours en largeur au graphe ci-dessus en partant du noeud de votre choix.
+Appliquer l’algorithme de parcours en largeur au graphe ci-dessus en partant du nœud de votre choix.
 
 .. hint::
 

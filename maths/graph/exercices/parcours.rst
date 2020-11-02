@@ -31,13 +31,13 @@ Niveau débutant
 
 1. \
 
-	| 1.1 Appliquer l’algorithme de parcours en profondeur au graphe ci-dessus en partant du noeud de votre choix.
+	| 1.1 Appliquer l’algorithme de parcours en profondeur au graphe ci-dessus en partant du nœud de votre choix.
 	| 1.2  Pourquoi pouvez-vous affirmer que ce graphe est connexe ?
 	| 1.3 Quelle est la complexité de l’algorithme ?
 
 2. \
 
-	| 2.1 Appliquer l’algorithme de parcours en largeur au graphe ci-dessus en partant du noeud de votre choix.
+	| 2.1 Appliquer l’algorithme de parcours en largeur au graphe ci-dessus en partant du nœud de votre choix.
 	| 2.2 Pourquoi pouvez-vous affirmer que ce graphe est connexe ?
 	| 2.3 Quelle est la complexité de l’algorithme ?
 

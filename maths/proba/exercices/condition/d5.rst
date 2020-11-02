@@ -19,7 +19,7 @@ chemin est le bon. Quelle est la probabilité qu’il se soit adressé à B1 ?
 
 On considère
 
-	* :math:`B_i = Le\ voyageur\ à\ parlé\ à\ la\ ieme\ personne`
+	* :math:`B_i = Le\ voyageur\ à\ parlé\ à\ la\ ième\ personne`
 	* :math:`V = Le\ voyageur\ à\ dit\ la\ vérité\ donc\ le\ chemin\ est\ bon`
 
 On sait que

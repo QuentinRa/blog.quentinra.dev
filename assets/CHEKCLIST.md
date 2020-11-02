@@ -8,7 +8,7 @@ Les choses non faites et à faire
 
 **Analyse numérique**
 * TD1 - exo 2, 3, 4, 6
-* TD2 - exos ???
+* TD2 - exo ???
 * Fin du cours (CM1)
 * CM2 (entier) - GAUSS et factorisation LU
 * ajouter l'interpolation
@@ -29,7 +29,7 @@ Les choses non faites et à faire
 * Faire les exercices non rank 
 
 **Graphes**
-* faire exercices stable + degrés (6)
+* faire exercices stabilités + degrés (6)
 * faire exercices non rank
 * ajouter les parcours
 * regarder la théorie spectrale

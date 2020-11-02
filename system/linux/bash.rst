@@ -63,7 +63,7 @@ par exemple définir des variables d'environnement, ou encore des raccourcis pou
 	Notez que linux propose un paquet :code:`man` pour manuel qui permet d'en apprendre plus sur
 	le fonctionnement d'une commande.
 
-	Donc par reflexe si vous ne connaissez pas quelque chose (ex: la commande :code:`ls`) alors testez
+	Donc par réflexe si vous ne connaissez pas quelque chose (ex: la commande :code:`ls`) alors testez
 	:code:`$ man ls`.
 
 2.2 éditeurs de texte
@@ -179,7 +179,7 @@ Commande :code:`chmod`
 Commande :code:`umask`
 	affiche les permissions manquantes par défaut à la création d'un fichier
 
-	:code:`umask` retourne 0026, celà veut dire que les permissions 751 sont celles par défaut.
+	:code:`umask` retourne 0026, cela veut dire que les permissions 751 sont celles par défaut.
 
 4. Motifs (glob pattern) et Manipulations de textes
 ====================================================

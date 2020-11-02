@@ -31,7 +31,7 @@ Dans un grand atelier sont installées neuf machines, a, b, . . ., h et i. Les p
 qui y sont fabriquées doivent passer successivement sur plusieurs machines (perceuses, soudeuses,
 polisseuses, ...). On désire construire, pour un coût minimum, des tapis roulants permettant de
 conduire les pièces d’une machine à une autre machine. Le tableau ci-dessous indique pour chaque
-machine M quelles sont les machines qui peuvent suivrent dans la chaîne de production. On doit
+machine M quelles sont les machines qui peuvent suivent dans la chaîne de production. On doit
 donc relier M à chacune de ces machines par une succession de tapis roulant. Modélisez ce problème
 par un problème graphe et résolvez le.
 
@@ -53,7 +53,7 @@ les trois faces verticales (pas sur les bases). La couleur de la face arrière e
 
 .. image:: /assets/math/graph/exercice/nr5.png
 
-On cherche une façon d’empiler parallèlement les cyclindres de sorte que chaque face de la pile
+On cherche une façon d’empiler parallèlement les cylindres de sorte que chaque face de la pile
 ainsi construite possède au plus une fois chaque couleur. Modéliser ce problème par un problème
 de graphe et le résoudre.
 

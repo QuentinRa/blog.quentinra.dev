@@ -401,7 +401,7 @@ Spectre
 
 	.. note::
 
-		Ceci se lit comme le noyeau spectral est la valeur absolue du plus grand lambda atteint
+		Ceci se lit comme le noyau spectral est la valeur absolue du plus grand lambda atteint
 		sachant que lambda se trouve dans :math:`\sigma(A)` soit l'ensemble des vecteurs propres.
 
 Polynôme caractéristique
@@ -459,7 +459,7 @@ Les étapes sont :
 
 **Crédits**
 	* Denis MONNERAT (enseignant à l'IUT de Sénart-Fontainebleau)
-	* Jéremy POSSAMAÏ (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Jérémy POSSAMAÏ (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Vicent TORRI (enseignant à l'ENSIIE)
 	* Christophe MOUILLERON (enseignant à l'ENSIIE)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

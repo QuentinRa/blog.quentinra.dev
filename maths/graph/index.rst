@@ -4,7 +4,7 @@
 Théorie des graphes
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.1}`
+| :math:`\color{grey}{Version \ 1.0.2}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 02/11/2020}`
 
 Graphe
@@ -78,7 +78,7 @@ Cycle, Chaines élémentaires
 	par chaque sommet.
 
 Graphes réguliers
-		Les graphes dit k-régulier sont des graphes pour lequels tous les sommets sont de degré k.
+		Les graphes dit k-régulier sont des graphes pour lesquels tous les sommets sont de degré k.
 
 Graphe complet
 		Un graphe complet est un graphe dans lequel chaque sommet est adjacent à tous les autres

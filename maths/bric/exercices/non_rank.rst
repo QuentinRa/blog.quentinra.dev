@@ -5,7 +5,7 @@ Non triés
 1/1 - Dérivées de fonctions réciproques usuelles
 ---------------------------------------------------------
 
-On rappelle que si :math:`f : I  \rightarrow  J` est dérivable et bijective, alors la bijection reciproque
+On rappelle que si :math:`f : I  \rightarrow  J` est dérivable et bijective, alors la bijection réciproque
 :math:`f^{-1}` est dérivable et sa dérivée satisfait :math:`f^{-1}=\frac{1}{f'(f(x))}`
 pour tout :math:`x in J` où cela a du sens.
 

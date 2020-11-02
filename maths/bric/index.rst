@@ -37,8 +37,8 @@ extrema                        extrema (min/max) et convexité (monte vite ?)
 * :code:`symétrie centrale` : :math:`y_0 - f(x_0 - h) = f(x_0 + h) - y_0`
 * :code:`asymptote verticale` : :math:`\lim_{x \rightarrow a}f(x) = \pm \infty`
 * :code:`asymptote horizontale` : :math:`\lim_{x \rightarrow +\infty}f(x) = a \infty`
-* :code:`Asympottes obliques` : :math:`\lim_{x \rightarrow \pm\infty}\frac{f(x)}{x} = a \in \mathbb{R}^* \infty`
-* :code:`Asympottes obliques` : :math:`\lim_{x \rightarrow \pm\infty}\frac{f(x)}{x} - ax = b \in \mathbb{R}\infty`
+* :code:`Asymptotes obliques` : :math:`\lim_{x \rightarrow \pm\infty}\frac{f(x)}{x} = a \in \mathbb{R}^* \infty`
+* :code:`Asymptotes obliques` : :math:`\lim_{x \rightarrow \pm\infty}\frac{f(x)}{x} - ax = b \in \mathbb{R}\infty`
 * :code:`convexe` : croissance de plus en plus rapide, dérivée croissante et dérivée seconde positive
 * :code:`concave` : croissance de plus en plus lente, dérivée décroissante et dérivée seconde négative
 * :code:`point d'inflexion` : si une fonction passe de convexe à concave ou inversement, alors c'est le point x du changement
@@ -123,7 +123,7 @@ Limites utiles
 Formes indéterminées (FI)
 --------------------------
 
-Les outils pour simplifier une forme indeterminée et obtenir une forme connues sont :
+Les outils pour simplifier une forme indéterminée et obtenir une forme connues sont :
 
 	* les encadrements : si :math:`f(x) \le g(x)` alors :math:`\lim_{x \rightarrow a}f(x) \le \lim_{x \rightarrow a} g(x)`
 	* les identités remarquables
