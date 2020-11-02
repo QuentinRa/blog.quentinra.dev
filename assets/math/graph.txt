@@ -1,6 +1,7 @@
 https://fr.wikipedia.org/wiki/Th%C3%A9orie_spectrale_des_graphes
 https://fr.wikipedia.org/wiki/Taux_d%27expansion_(th%C3%A9orie_des_graphes)
 https://fr.wikipedia.org/wiki/Graphe_dual
+https://fr.wikipedia.org/wiki/Line_graph
 
 Stabilité
 	Un ensemble stable S est un sous-ensemble tel que les sommets de l'ensemble ne sont jamais
@@ -131,3 +132,137 @@ Kuratowski
 
 Robertson–Seymour
 	Graphe est planaire ssi il ne contient pas comme mineur K3,3 et K5
+
+Couplage d'un  graphe
+	Sous-ensemble d'arêtes de G tel que 2 arrêtes sont non adjacentes.
+
+	| Maximal : on ne peut pas ajouter une arête sinon c'est plus un couplage
+	| Maximum : il n'existe pas de couplage plus grand
+	| Parfait : tous les sommets sont reliés à une arrête dans le couplage
+
+	Algorithme
+
+		.. code::
+
+			1: On prends un arrête.
+				2: On supprime toutes les autres arrêtes liées à l'un des sommet de notre arrête
+				3: On refait 1
+			4: Le couplage maximal est l'ensemble des arrêtes prises en 1.
+
+Coloration
+=============================
+
+L'objectif est de colorier un graphe avec un minimum de couleurs
+tel que deux sommets incidents ont une couleur différente.
+
+nombre chromatique
+		On note :math:`\gamma(G)` (gamma) le nombre chromatique soit le nombre
+		minimum de couleurs requises pour colorier le graphe.
+
+:math:`\gamma(G)` est difficile à trouver, mais on peut l'approcher
+	* si un graphe n'est pas planaire, :math:`\gamma(G)=|V|`
+	* si un graphe est stable, :math:`\gamma(G)=1`
+	* si un graphe est complet, :math:`\gamma(G)=|V|`
+	* si un graphe est planaire, :math:`\gamma(G) \le 4`
+	* minorant : :math:`\gamma(G) \ge |clique maximum|` (taille d'une clique maximum = ordre)
+	* majorant : :math:`\gamma(G) \le d_max(G)+1`
+
+Algorithme glouton de Welsh-Powell
+	.. code:: None
+
+		Je trie les sommets par degré décroissants.
+		Tant que tous les sommets ne sont pas coloriés,
+			Je prends une couleur et colorie tous les sommets à condition
+			qu'il ne soit pas voisins d'un sommet que je viens de colorier
+			de cette couleur.
+
+.. note::
+
+	Pour savoir si c'est la solution optimale, on compare la nombre chromatique
+	au minorant.
+
+Algorithme Reliement-contraction
+	Les opérations sont
+
+		* On contracte = fusion deux sommets ayant la même couleur
+		* On relie = ajoute une arrête, si deux sommets sont de couleur différente
+
+	L'idée est :
+
+	.. code::
+			1: Jusqu'à ce que toute nos graphes soient des cliques
+				2: On créée deux sous-graphe :
+					- un obtenu par reliement
+					- un obtenu par contraction
+
+			Le degré de la plus petite clique est le nombre chromatique.
+			Les sommets ensembles (contractés) sont de la même couleur.
+
+	.. note::
+
+		2^m possibilités, avec m le arrêtes manquantes au graphe de départ pour qu'il
+		soit complet donc complexité exponentielle.
+
+Coloration des arrêtes
+--------------------------
+
+On peut aussi colorier les arrêtes, on parlera d'indice chromatique
+plutôt que nombre.
+
+Line Graph
+	Le graphe des arrêtes associé à G noté L(G) est un graphe tel que
+
+			* un sommet de L est une arrête de G
+			* deux arêtes de L ne sont reliées que si elles ont un sommet commun dans G
+
+	L'indice chromatique est égal au nombre chromatique de L(G).
+
+Arbres
+=============================
+
+Un graphe qui respecte l'un de ces propriétés (qui sont équivalentes)
+est un arbre
+
+	*	connexe et sans cycle
+	*	Il existe un unique chaîne reliant deux sommet x,y
+	*	connexe mais ne l’est plus si on retire une arrête
+	*	sans cycle mais ne l’est plus si on ajoute une arrête
+	* connexe et |E| =|V| -1
+	*	sans cycle et |E| =|V| -1
+
+Arbre couvrant
+	Soit T un arbre couvrant de G, alors T est un graphe partiel connexe
+	et sans cycle de G soit un graphe partiel qui est arbre.
+
+	Ce graphe partiel n'existe que si G est connexe.
+
+	Les arêtes retirées pour obtenir le graphe partiel forment
+	une base de cycles.
+
+Arbre couvrant de poids minimum (ACM)
+	Soit un graphe **donné** non orienté connexe et ayant des arêtes pondérées donc
+	avec une valeur/un poids.
+
+	Un Arbre couvrant de poids minimum (ACM) est arbre couvrant donc la somme des poids
+	des arêtes est minimale.
+
+	Algorithme de Kruskal
+
+		.. code::
+
+			On colorie tous nos sommets.
+				Tant qu'on peut toujours ajouter des arrêtes sans créer de cycle
+						On prends les arrêtes avec les plus petit poids
+							si on ne crée pas de cycle, on ajoute l'arête
+							puis on recommence avec les nouvelles arêtes au plus petit poids
+
+
+	Algorithme de Prism
+
+  		.. code::
+
+  			1: On prends un sommet.
+  				2: On ajoute toutes les arrêtes de notre sommet
+  					3: On garde l'arrête de poids minimal qui ne crée pas de cycle
+  						4: On continue mais en ajoutant les nouvelles arrêtes de notre nouveau sommet
+  						et on recommence 3:
