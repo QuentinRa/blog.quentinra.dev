@@ -26,8 +26,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/CHEKCLIST.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/CHEKCLIST.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/proba/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,26 +49,26 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/conception/uml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/imperative/c" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\conception\uml" />
-      <recent name="C:\Users\quent\Documents\texas-res\conception\ihm" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\voisins" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\stable" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c" />
       <recent name="C:\Users\quent\Documents\texas-res\assets" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices\scripts" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\linux" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\math" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\limit" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c" />
+      <recent name="C:\Users\quent\Documents\texas-res\conception\uml" />
+      <recent name="C:\Users\quent\Documents\texas-res\conception\ihm" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\voisins" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\stable" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -133,7 +133,8 @@
       <workItem from="1604330206391" duration="1083000" />
       <workItem from="1604339015653" duration="13757000" />
       <workItem from="1604354636463" duration="1160000" />
-      <workItem from="1604405222010" duration="13556000" />
+      <workItem from="1604405222010" duration="14949000" />
+      <workItem from="1604442476129" duration="3654000" />
     </task>
     <servers />
   </component>

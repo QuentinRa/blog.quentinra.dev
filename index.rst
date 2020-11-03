@@ -42,6 +42,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :maxdepth: 1
 
     Langage C                            <imperative/c/index>
+    Langage C - Avancé                   <imperative/c/advanced>
 
 .. toctree::
     :caption: Conception
