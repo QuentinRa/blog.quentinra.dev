@@ -4,6 +4,11 @@
 Probabilités
 ================================
 
+.. danger::
+
+	Le cours sera refait très prochainement. Vous pouvez consultez les
+	exercices mais il n'est pas recommandé de lire le cours.
+
 1. Espaces de probabilités
 ================================
 
@@ -281,11 +286,60 @@ Propriétés de la variance
 	* :math:`\mathbb{P}(X, Y) = \frac{cov(X,Y)}{\sqrt{V(X)*V(Y)}}`
 
 
+TEMPORAIRE
+=======================
 
+Intégration 0/5 terminé(e)s
 
+Intégration 1
+********************************
 
+Une variable a densité est une fonction positive
+qui vérifie
 
+.. math::
 
+	\int_{-\infty}^{+\infty} fxdx = 1
+
+est la densité de la loi X.
+
+On définit la probabilité P(X=x)
+
+.. math::
+
+	\int_{x \in \Delta A}^{} fxdx
+
+On définit la probabilité :math:`P(a \le X \le b)`
+
+.. math::
+
+	\int_{a}^{b} fxdx
+
+X une v.a. réelle la fonction F(F_x) définie par
+F(x) = P(X \le x) est sa fonction de répartition.
+
+	* 0 \le F(x) \le 1
+	* F est croissante et continue à droite
+	* :math:`\lim_{x \rightarrow +\infty}F(x) = 1`
+	* :math:`\lim_{x \rightarrow -\infty}F(x) = 0`
+
+Loi d'un vecteur
+Loi marginales
+
+Rien
+
+Espérance X+ ou p-intégrable ?
+
+:math:`E[X] = \int_{\Omega}^{} X_w dP_w`
+
+	* Si E[X] = 0, la loi est centrée
+	* Si E[X] est finie, on peut centrer la loi
+	* Moment d'ordre K = E[X^k]
+	* Moment absolu d'ordre K = E[\|X\|^k]
+
+Théorème de transfert
+	X v.a définie alors si :math:`` ou :math:`` existe, l'autre
+	existe aussi.
 
 7. Exercices
 ==============
