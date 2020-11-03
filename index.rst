@@ -14,50 +14,59 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
 .. toctree::
     :maxdepth: 1
 
-    Comment contribuer ?          <contribuer>
+    Comment contribuer ?                 <contribuer>
 
 .. toctree::
     :caption: Mathématiques
     :name: maths
     :maxdepth: 1
 
-    Probabilités                  <maths/proba/index>
-    Théorie des graphes           <maths/graph/index>
-    Analyse numérique      				<maths/analyse/index>
-    Algèbre Matricielle    				<maths/matrix/index>
-    Bric à Brac           				<maths/bric/index>
+    Probabilités                         <maths/proba/index>
+    Théorie des graphes                  <maths/graph/index>
+    Analyse numérique                    <maths/analyse/index>
+    Algèbre Matricielle                  <maths/matrix/index>
+    Bric à Brac                          <maths/bric/index>
 
 .. toctree::
     :caption: Système
     :name: system
     :maxdepth: 1
 
-    Architecture Linux             <system/linux/index>
-    Bash et Scripts                <system/linux/bash>
-    Docker				                 <system/docker/index>
+    Architecture Linux                   <system/linux/index>
+    Bash et Scripts                      <system/linux/bash>
+    Docker                               <system/docker/index>
 
 .. toctree::
     :caption: Programmation impérative
     :name: imperative
     :maxdepth: 1
 
-    Langage C					             <imperative/c/index>
+    Langage C                            <imperative/c/index>
+
+.. toctree::
+    :caption: Conception
+    :name: conception
+    :maxdepth: 1
+
+    Interfaces Homme-Machine            <conception/ihm/index>
+    Modélisation relationnelle          <conception/uml/model>
+    Unified Modeling Language (UML)     <conception/uml/index>
 
 .. toctree::
     :caption: Entreprise
     :name: business
     :maxdepth: 1
 
-    Entreprise					           <business/env/index>
-    Macroéconomie					         <business/env/macro>
-    Documents d'une Entreprise     <business/docs/index>
+    Entreprise                          <business/env/index>
+    Macroéconomie                       <business/env/macro>
+    Documents d'une Entreprise          <business/docs/index>
 
 .. toctree::
     :caption: Utilitaires
     :name: utils
     :maxdepth: 1
 
-    Vim (Vi IMproved)	             <utils/vim/index>
+    Vim (Vi IMproved)                   <utils/vim/index>
 
 -----
 

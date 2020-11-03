@@ -79,6 +79,46 @@ Page 18 ?
 
 file:///C:/Users/quent/Desktop/Calculer%20le%20mode%20et%20la%20m%C3%A9diane%20-%20Maxicours.html
 
+CM3
+------------
+
+Variables à densité/continues
+===================================
+
+Une variable a densité est une fonction positive
+qui vérifie
+
+.. math::
+
+	\int_{-\infty}^{+\infty} fxdx = 1
+
+est la densité de la loi X.
+
+On définit la probabilité P(X=x)
+
+.. math::
+
+	\int_{x \in \delata A}^{} fxdx
+
+On définit la probabilité P(a \le X \le b)
+
+.. math::
+
+	\int_{a}^{b} fxdx
+
+X une v.a. réelle la fonction F(F_x) défonoe par
+F(x) = P(X \le x) est sa fonction de répartition.
+
+	* 0 \le F(x) \le 1
+	* F est croissante et continue à droite
+	* \lim_{x \rightarrow +\infty}F(x) = 1
+	* \lim_{x \rightarrow -\infty}F(x) = 0
+
+Loi d'un vecteur
+Loi marginales
+
+
+
 CM4
 ------------
 
