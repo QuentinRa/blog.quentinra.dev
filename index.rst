@@ -63,6 +63,19 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     Documents d'une Entreprise          <business/docs/index>
 
 .. toctree::
+    :caption: Jeux vidéos
+    :name: games
+    :maxdepth: 1
+
+.. toctree::
+    :caption: Langues
+    :name: language
+    :maxdepth: 1
+
+		Anglais                          <language/english/index>
+		Japonais                         <language/japanese/index>
+
+.. toctree::
     :caption: Utilitaires
     :name: utils
     :maxdepth: 1
