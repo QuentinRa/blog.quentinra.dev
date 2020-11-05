@@ -4,6 +4,13 @@
 
 Pour chacune des fonctions suivantes, faire une étude complète et tracer la courbe représentative.
 
+def
+	->f', d' f'(x)=0
+	-> limite def
+		-> tab de variations
+		-> f(x)=0, asymptotes, tangentes, symétrie, convexité, pts d'inflexions
+			-> Cf : on trouve la courbe
+
 1. :math:`x \mapsto x^4-5x^2+4`
 -----------------------------------
 
@@ -12,7 +19,13 @@ Pour chacune des fonctions suivantes, faire une étude complète et tracer la co
 2. :math:`x \mapsto cos(x)+sin(x)`
 -----------------------------------------
 
-...
+Domaines de définitions
+
+	* sin(x) = :math:`\text{]-$\infty $;+$\infty $[}`
+	* cos(x) = :math:`\text{]-$\infty $;+$\infty $[}`
+
+Dérivée f'
+
 
 3. :math:`x \mapsto \frac{3x-1}{x-4}`
 -----------------------------------------

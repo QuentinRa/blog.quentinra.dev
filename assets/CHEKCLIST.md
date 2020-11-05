@@ -41,7 +41,6 @@ Les choses non faites et à faire
 * Ajouter les Cours de DUT
 
 **Bric à Brac**
-* Faire les exercices (1)
 * Faire les exercices non rank 
 
 **Graphes**
