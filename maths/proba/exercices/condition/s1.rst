@@ -1,0 +1,52 @@
+================================
+1/1 Théorème de Bayes
+================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+Pour dépister une maladie, on applique un test. Si le patient est effectivement atteint, le test donne un
+résultat positif dans 96 % des cas. Mais il se peut aussi que le résultat du test soit positif alors que le
+patient est en bonne santé, et ceci se produit dans 2 % des cas.
+
+On défini
+
+	* M = le patient est malade
+	* P = le patient à un test positif
+
+| :math:`P(P|M) = 0.96`
+| :math:`P(P|\overline{M}) = 0.02`
+
+Question 1
+--------------
+
+Sachant qu’en moyenne 0.05 % des patients sont atteints de la maladie à dépister, calculer la
+probabilité pour qu’un client soit atteint sachant que son test a été positif.
+
+| P(M) = 0.0005
+| P(M|P) = ???
+
+.. math::
+
+		P(M|P) = \frac{P(M \cap P)}{P(P)} = \frac{P(M) * P(P|M)}
+		{P(P|M) * P(M) + P(P|\overline{M}) * P(\overline{M})} \\
+		= \frac{0.0005*0.96}{0.96*0.0005+0.02*(1-0.0005)} = 0.02344894968 \approx 0.023
+
+Question 2
+--------------
+
+Sous les mêmes conditions calculer la probabilité pour qu’un client soit atteint sachant que deux
+tests (indépendants) ont été positifs.
+
+On définit S = le patient à deux tests positifs
+
+.. math::
+
+		P(M|S) = \frac{P(M \cap S)}{P(S)}
+		=^{indépendance}
+		\frac{P(M) * P(P_1|M) * P(P_2|M)}{P(P_2) * P(P_1)}\\
+		=
+		\frac{(0.0005*0.96)^2}{(0.96*0.0005+0.02*(1-0.0005))^2 }
+		=
+		\frac{0.0005*0.96^2}{0.96^2*0.0005+0.02^2*(1-0.0005)} \\
+		= \frac{0.0004608}{0.0008606} = 0.53544039043  \approx 0.53

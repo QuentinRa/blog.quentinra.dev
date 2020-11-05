@@ -1,6 +1,9 @@
 ================================
-3/6 Probabilités conditionnelles
+3/5 Probabilités conditionnelles
 ================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
 
 On considère 3 urnes U1, U2,U3. La première contient initialement 2 boules blanches et 3 boules rouges.
 La deuxième contient 2 boules vertes et 4 boules blanches. La troisième contient 5 boules noires et 2

@@ -2,6 +2,9 @@
 2/3 - Série exponentielle
 ================================
 
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
 Soit a un réel non nul. On considère la suite (:math:`u_n`) définie par :
 
 .. math::

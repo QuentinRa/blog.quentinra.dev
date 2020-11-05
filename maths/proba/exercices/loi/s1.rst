@@ -2,6 +2,9 @@
 1/2 - Loi d’une variable aléatoire discrète
 =============================================
 
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
 Dans une urne, on place n boules portant des numéros 2 à 2 distincts.
 
 Un premier joueur effectue des tirages d’une boule sans remise jusqu’à ce qu’il obtienne la boule portant

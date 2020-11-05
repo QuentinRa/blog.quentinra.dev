@@ -25,9 +25,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/maths/proba/exercices/condition/s1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/math/proba.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/math/proba.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/proba/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition/d3.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition/d4.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition/d4.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition/d4_1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition/d4_1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition/d5.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition/d5.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition/d6.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/count/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/count/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/loi/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/loi/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/loi/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/loi/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/loi/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/loi/d3.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/loi/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/loi/s1.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,19 +69,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\language\japanese" />
-      <recent name="C:\Users\quent\Documents\texas-res\language" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c" />
-      <recent name="C:\Users\quent\Documents\texas-res\conception\uml" />
-      <recent name="C:\Users\quent\Documents\texas-res\conception\ihm" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\language\english" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c" />
       <recent name="C:\Users\quent\Documents\texas-res\assets" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices\scripts" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\linux" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\language\japanese" />
+      <recent name="C:\Users\quent\Documents\texas-res\language" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c" />
+      <recent name="C:\Users\quent\Documents\texas-res\conception\uml" />
+      <recent name="C:\Users\quent\Documents\texas-res\conception\ihm" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -139,7 +152,7 @@
       <workItem from="1604509486558" duration="143000" />
       <workItem from="1604516546482" duration="3697000" />
       <workItem from="1604530650296" duration="8000" />
-      <workItem from="1604579201739" duration="9544000" />
+      <workItem from="1604579201739" duration="13689000" />
     </task>
     <servers />
   </component>

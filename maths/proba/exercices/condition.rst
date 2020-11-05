@@ -5,7 +5,7 @@ Probabilités conditionnelles
 Niveau débutant
 ***********************
 
-1/6 Probabilités conditionnelles
+1/5 Probabilités conditionnelles
 ----------------------------------------------------
 
 Un sac contient 7 billes rouges, 5 billes blanches et 3 billes noires. Trois billes sont tirées successivement.
@@ -20,7 +20,7 @@ noire si chaque bille est :
 
 	Proposition de correction n°1			<condition/d1>
 
-2/6 Probabilités conditionnelles
+2/5 Probabilités conditionnelles
 ----------------------------------------------------
 
 Un candidat doit tirer 3 questions à l’oral sur les 22 préparées par l’examinateur, comprenant :
@@ -40,7 +40,7 @@ Le candidat tire successivement les trois questions sans remettre dans le tas un
 
 	Proposition de correction n°1			<condition/d2>
 
-3/6 Probabilités conditionnelles
+3/5 Probabilités conditionnelles
 ----------------------------------------------------
 
 On considère 3 urnes U1, U2,U3. La première contient initialement 2 boules blanches et 3 boules rouges.
@@ -57,7 +57,7 @@ Quelle est la probabilité pour que les boules tirées soient toutes de couleurs
 
 	Proposition de correction n°1			<condition/d3>
 
-4/6 Probabilités conditionnelles
+4/5 Probabilités conditionnelles
 ----------------------------------------------------
 
 On cherche une lettre qui a la probabilité p de se trouver dans l’un des 4 tiroirs d’un secrétaire. Quelle
@@ -70,7 +70,7 @@ trois premiers ?
 	Proposition de correction n°1			<condition/d4>
 	Proposition de correction n°2			<condition/d4_1>
 
-5/6 Théorème de Bayes
+5/5 Théorème de Bayes
 --------------------------------
 
 Un voyageur arrive à un carrefour. Il sait qu’à cet endroit il va trouver 2 routes : une impasse et la bonne
@@ -90,7 +90,10 @@ chemin est le bon. Quelle est la probabilité qu’il se soit adressé à B1
 
 	Proposition de correction n°1			<condition/d5>
 
-6/6 Théorème de Bayes
+Niveau supérieur
+***********************
+
+1/1 Théorème de Bayes
 ---------------------------------------
 
 Pour dépister une maladie, on applique un test. Si le patient est effectivement atteint, le test donne un
@@ -108,12 +111,7 @@ patient est en bonne santé, et ceci se produit dans 2 % des cas.
 .. toctree::
    :maxdepth: 1
 
-	Proposition de correction n°1			<condition/d6>
-
-Niveau supérieur
-***********************
-
-aucun
+	Proposition de correction n°1			<condition/s1>
 
 Niveau avancé
 ***********************

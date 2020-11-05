@@ -1,20 +1,3 @@
-https://www.techno-science.net/definition/6357.html
-
-On remplace l'intégrale par
-
-.. math::
-
-	\sum_{k=0}^{+\infty} f(k) = 1
-
-On peut sortir une constante de la somme
-
-Apprendre par coeur la technique de sortie jcrois
-
-https://fr.wikipedia.org/wiki/%C3%89v%C3%A9nement_%C3%A9l%C3%A9mentaire
-
-2. Variables aléatoires discrètes
-****************************************
-
 Tribu Borélienne
 	On appelle ouvert, un ensemble ouvert donc qui ne contient aucun point de sa frontière.
 
@@ -46,6 +29,9 @@ Loi hyper-géométrique
 
 	:math:`VX = n * \frac{K}{N} * (1 - \frac{K}{N}) * \frac{N-n}{N-1}`
 
+=================================================================
+THEMES
+================================================================
 
 espérance exponentielle, caractériser une loi
 Convergence
@@ -65,20 +51,35 @@ Page 18 ?
 file:///C:/Users/quent/Desktop/Calculer%20le%20mode%20et%20la%20m%C3%A9diane%20-%20Maxicours.html
 Loi d'un vecteur
 Loi marginales
-Transferts
 
 Espérance X+ ou p-intégrable ?
 
-:math:`E[X] = \int_{\Omega}^{} X_w dP_w`
+Moment d'ordre K = E[X^k]
+Moment absolu d'ordre K = E[\|X\|^k]
 
-	* Si E[X] = 0, la loi est centrée
-	* Si E[X] est finie, on peut centrer la loi
-	* Moment d'ordre K = E[X^k]
-	* Moment absolu d'ordre K = E[\|X\|^k]
+http://michel.quercia.free.fr/probabilit%C3%A9s/probas.pdf
 
-Théorème de transfert
-	X v.a définie alors si :math:`` ou :math:`` existe, l'autre
-	existe aussi.
+================================================================
+
+=================================================================
+NOTES
+================================================================
+
+https://www.techno-science.net/definition/6357.html
+
+On remplace l'intégrale par
+
+.. math::
+
+	\sum_{k=0}^{+\infty} f(k) = 1
+
+On peut sortir une constante de la somme
+
+Apprendre par coeur la technique de sortie jcrois
+
+https://fr.wikipedia.org/wiki/%C3%89v%C3%A9nement_%C3%A9l%C3%A9mentaire
+
+================================================================
 
 CM4
 ------------

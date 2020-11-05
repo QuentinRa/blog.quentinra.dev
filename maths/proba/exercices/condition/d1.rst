@@ -1,6 +1,9 @@
 ================================
-1/6 Probabilités conditionnelles
+1/5 Probabilités conditionnelles
 ================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
 
 Un sac contient 7 billes rouges, 5 billes blanches et 3 billes noires. Trois billes sont tirées successivement.
 Quelle est la probabilité pour que la première bille tirée soit rouge, la deuxième blanche, la troisième

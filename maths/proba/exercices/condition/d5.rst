@@ -1,6 +1,9 @@
 ================================
-5/6 Théorème de Bayes
+5/5 Théorème de Bayes
 ================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
 
 Un voyageur arrive à un carrefour. Il sait qu’à cet endroit il va trouver 2 routes : une impasse et la bonne
 route. Il y a 3 personnes à ce carrefour : B1, B2 et B3.
