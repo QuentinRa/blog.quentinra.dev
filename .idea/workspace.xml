@@ -26,7 +26,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/math/proba.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/math/proba.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +137,9 @@
       <workItem from="1604442476129" duration="3704000" />
       <workItem from="1604509461334" duration="4000" />
       <workItem from="1604509486558" duration="143000" />
-      <workItem from="1604516546482" duration="3295000" />
+      <workItem from="1604516546482" duration="3697000" />
+      <workItem from="1604530650296" duration="8000" />
+      <workItem from="1604579201739" duration="9544000" />
     </task>
     <servers />
   </component>
@@ -227,9 +230,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1604069107407" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604307551481">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604587412266">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604307551481" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604587412266" />
   </component>
 </project>

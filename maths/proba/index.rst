@@ -50,6 +50,12 @@ Probabilité
 		* :math:`\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cap B)`
 		* :math:`A \subset B \to \mathbb{P}(A) \le \mathbb{P}(B)`
 
+Support
+	On appelle support d'une loi, l'espace de définition d'une loi de probabilité,
+	soit le X dans P(X = x).  Proba en dehors = 0
+
+	Somme dans le support donc que les valeurs possibles.
+
 2. Variable aléatoire discrète (:math:`\Omega` fini)
 ================================================================
 
@@ -198,8 +204,8 @@ Notation : T ~ :math:`G(p)`
 
 Loi géométrique : :math:`\mathbb{P}(X=k) = (1-p)^{k-1}p`
 
-| Espérance : :math:`\mathbb{E}(X) = \ ?`
-| Variance : :math:`\mathbb{V}(X) = \ ?`
+| Espérance : :math:`\mathbb{E}(X) = \ \frac{1}{p}`
+| Variance : :math:`\mathbb{V}(X) = \ \frac{1-p}{p^2}`
 
 2.4 Espérance
 ******************
@@ -273,9 +279,9 @@ variables aléatoires.
 
 .. math::
 
-	\mathbb{E}[ ( X - \mathbb{E}[X]) (Y - \mathbb{E}[Y]) ]
+	cov(x,y) = \mathbb{E}[ ( X - \mathbb{E}[X]) (Y - \mathbb{E}[Y]) ]
 
-	\mathbb{E}[XY] - \mathbb{E}[X] \mathbb{E}[Y]
+	cov(x,y) = \mathbb{E}[XY] - \mathbb{E}[X] \mathbb{E}[Y]
 
 Propriétés de la variance
 
@@ -285,63 +291,119 @@ Propriétés de la variance
 	* si a et b sont indépendants (:math:`\perp`) alors cov(XY) = 0 (réciproque n'est pas vraie)
 	* :math:`\mathbb{P}(X, Y) = \frac{cov(X,Y)}{\sqrt{V(X)*V(Y)}}`
 
+3. Variables à densité/continues
+===================================
 
-TEMPORAIRE
-=======================
+Une variable à densité ou continue est une variable
+aléatoire qui prends des valeurs dans :math:`\mathbb{R}`.
 
-Intégration 0/5 terminé(e)s
+On note généralement :math:`f_X(x)` notre variable aléatoire qui suit la loi
+X.
 
-Intégration 1
-********************************
+Calculer la probabilité la probabilité que P(X=x) revient à calculer
+l'air sous la courbe de :math:`f_X(x)` soit une intégrale.
 
-Une variable a densité est une fonction positive
-qui vérifie
+On a les propriétés suivantes :
 
-.. math::
+	* :math:`\mathbb{P}(X \in A) = \int_{x \in \Delta A}^{} fxdx`
+	* densité/loi de proba si :math:`\int_{-\infty}^{+\infty} fxdx = 1`
+	* P(X=valeur) = 0
+	* :math:`\mathbb{P}(a \le X \le b) = \int_{a}^{b} fxdx`
+	* la fonction doit être positive
 
-	\int_{-\infty}^{+\infty} fxdx = 1
+3.1 Fonction de répartition
+******************************
 
-est la densité de la loi X.
+La fonction :math:`F_x(x)` est définie par :math:`F_X(x) = P(X \le x)`.
 
-On définit la probabilité P(X=x)
+On a les propriétés suivantes :
 
-.. math::
-
-	\int_{x \in \Delta A}^{} fxdx
-
-On définit la probabilité :math:`P(a \le X \le b)`
-
-.. math::
-
-	\int_{a}^{b} fxdx
-
-X une v.a. réelle la fonction F(F_x) définie par
-F(x) = P(X \le x) est sa fonction de répartition.
-
-	* 0 \le F(x) \le 1
+	* :math:`\mathbb{P}(X \le x) := \mathbb{P}(X < x)`
+	* :math:`0 \ge F_X(x) \ge 1`
 	* F est croissante et continue à droite
 	* :math:`\lim_{x \rightarrow +\infty}F(x) = 1`
 	* :math:`\lim_{x \rightarrow -\infty}F(x) = 0`
-
-Loi d'un vecteur
-Loi marginales
-
-Rien
-
-Espérance X+ ou p-intégrable ?
-
-:math:`E[X] = \int_{\Omega}^{} X_w dP_w`
-
-	* Si E[X] = 0, la loi est centrée
-	* Si E[X] est finie, on peut centrer la loi
-	* Moment d'ordre K = E[X^k]
-	* Moment absolu d'ordre K = E[\|X\|^k]
+	* Si A_n suite monotone, P(\lim_{n \rightarrow +\infty} A_n) = \lim_{n \rightarrow +\infty} A_n * P(A_n)
 
 Théorème de transfert
-	X v.a définie alors si :math:`` ou :math:`` existe, l'autre
-	existe aussi.
+	Le théorème de transfert consiste à prendre une variable aléatoire, lui
+	appliquer une fonction et obtenir une nouvelle valeur aléatoire.
 
-7. Exercices
+3.2 Espérance et variance
+******************************
+
+Espérance
+	Soit :math:`f_X(x)` une fonction de densité intégrable (les densités non intégrables n'ont pas d'espérance),
+	on définit
+
+	.. math::
+
+		\mathbb{E}[X] = \int_{-\infty}^{+\infty} xf(x)dx
+
+	Remarques
+
+		* E(X) = 0, alors X est centrée
+		* E(X) est finie, alors X peut être centrée
+
+Variance
+	Soit :math:`f_X(x)` une fonction de densité intégrable, on définit
+
+	.. math::
+
+		V[X] = \int_{-\infty}^{+\infty} (x-\mathbb{E}[X])^2f(x)dx
+
+3.3 Loi usuelles
+******************************
+
+3.3.1 Loi uniforme
+-------------------------------------
+
+Une loi uniforme sur un interval [a,b] a pour densité
+
+.. math::
+
+	f(x) = \frac{1}{b-a} {\bf 1}\!\!{\rm 1}_{[a,b]}x
+
+3.3.2 Loi gaussienne
+-------------------------------------
+
+La loi normale, notée :math:`N(m,\sigma^2)` avec m la moyenne et sigma la variance à pour densité
+
+.. math::
+
+	f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} * e^{ -\frac{1}{2} (\frac{x-m}{\sigma})^2 }
+
+Loi normale centée réduite, N(0,1) à pour densité
+
+.. math::
+
+	f(x) = \frac{1}{\sqrt{2\pi}} e^{-\frac{1}{2} x^2}
+
+On utilise généralement la forme :math:`\frac{X-m}{\sigma}` pour centrer réduire la loi.
+
+3.3.3 Loi exponentielle
+-------------------------------------
+
+La loi exponentielle :math:`\epsilon(\lambda)` est définie par la loi  de densité
+
+.. math::
+
+	f(x) = \lambda e^{-\lambda{x}} {\bf 1}\!\!{\rm 1}_{\mathbb{R}^+}x
+
+:math:`E[X] = \frac{1}{\lambda}`.
+
+3.3.4 Loi de Cauchy
+-------------------------------------
+
+La loi de cauchy est définie par la densité suivante, sachant a>0
+
+.. math::
+
+	f(x) = \frac{a}{\pi} \frac{1}{x^2+a^2}
+
+:math:`E[X] = existe\ pas`.
+
+5. Exercices
 ==============
 
 .. toctree::
@@ -381,6 +443,10 @@ Théorème de transfert
 		* https://fr.wikipedia.org/wiki/Loi_de_Bernoulli
 		* https://fr.wikipedia.org/wiki/Liste_de_lois_de_probabilit%C3%A9
 		* https://fr.wikipedia.org/wiki/Loi_g%C3%A9om%C3%A9trique
+		* https://fr.wikipedia.org/wiki/Loi_normale#Loi_normale_centr%C3%A9e_r%C3%A9duite
+		* https://fr.wikipedia.org/wiki/Fonction_gaussienne
+		* https://fr.wikipedia.org/wiki/Loi_normale
+		* https://fr.wikipedia.org/wiki/Loi_exponentielle
 		* Poisson
 
 			* https://www.techno-science.net/definition/6212.html
