@@ -134,6 +134,27 @@ Les pré-requis sont :
 
 	Créez une nouvelle branche, et travaillez dessus
 
+7. Corrections vérifiées
+****************************************************
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+.. image:: https://img.shields.io/badge/correction-non%20vérifiée-red.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction non vérifiée
+
+Le label "correction vérifiée" est présent sur les correction proposées qui ont été vérifiées
+par une autre personne que le rédacteur.
+
+Le label "correction non vérifiée" est pour toutes les autres correction.
+
+D'autres labels peuvent être présents pour les cas particuliers.
+
+.. note::
+
+	Si vous avez vérifié une correction, vous n'avez qu'à modifier le fichier et ajouter l'un des labels. Leur code
+	sera trouve dans `correction.rst <_static/correction.rst>`_ et `correction2.rst <_static/correction2.rst>`_ .
+
 -----
 
 **Crédits**

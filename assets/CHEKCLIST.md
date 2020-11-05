@@ -35,14 +35,10 @@ Les choses non faites et à faire
 * commencer tout ça, ajout des cours
 
 **Probabilités**
-* Faire le dernier exo de prob cond
 * Faire le dernier exo de loi
 * Faire les exercices non rank (1,2,3)
-* Ajouter densité de probabilité au cours
-* Ajouter le CM3
 * Ajouter le CM4
 * Ajouter les Cours de DUT
-* Refaire le cours
 
 **Bric à Brac**
 * Faire les exercices (1)
@@ -51,5 +47,5 @@ Les choses non faites et à faire
 **Graphes**
 * faire exercices stabilités + degrés (6)
 * faire exercices non rank
-* ajouter les parcours
+* ajouter les distances
 * regarder la théorie spectrale

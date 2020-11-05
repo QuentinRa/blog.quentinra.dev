@@ -4,11 +4,6 @@
 Probabilités
 ================================
 
-.. danger::
-
-	Le cours sera refait très prochainement. Vous pouvez consultez les
-	exercices mais il n'est pas recommandé de lire le cours.
-
 1. Espaces de probabilités
 ================================
 
@@ -55,6 +50,10 @@ Support
 	soit le X dans P(X = x).  Proba en dehors = 0
 
 	Somme dans le support donc que les valeurs possibles.
+
+Loi de probabilité/Densité de probabilité
+	Il s'agit d'une application, croissante et à valeur positives telle que
+	la somme des valeurs fasse 1.
 
 2. Variable aléatoire discrète (:math:`\Omega` fini)
 ================================================================
