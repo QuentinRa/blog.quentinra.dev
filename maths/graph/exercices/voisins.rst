@@ -27,9 +27,9 @@ Décrivez le degré des nœuds
 
 Soit un graphe G = (V,E) non orienté avec n = \|V\| et m = \|E\|.
 
-1. Montrer qu’il existe deux noeuds qui ont le même degré.
+1. Montrer qu’il existe deux nœuds qui ont le même degré.
 2. Montrer que :math:`\sum_{x \in V} deg(x) = 2m`
-3. Montrer que le nombre de noeuds de degré impair est pair.
+3. Montrer que le nombre de nœuds de degré impair est pair.
 4. Cela reste-il vrai pour les graphes orientés ?
 5. Cela reste-il vrai pour les graphes infinis ?
 6. Combien d’arêtes possède un graphe dont tous les noeuds sont de degré d ?

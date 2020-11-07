@@ -26,10 +26,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/non_rank.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/graph/exercices/voisins.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/voisins.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/graph/exercices/voisins/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/voisins/d2.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/voisins/d3.rst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +143,7 @@
       <workItem from="1604579201739" duration="21734000" />
       <workItem from="1604666719958" duration="15602000" />
       <workItem from="1604690102714" duration="4251000" />
-      <workItem from="1604737993803" duration="15964000" />
+      <workItem from="1604737993803" duration="18074000" />
     </task>
     <servers />
   </component>
@@ -240,10 +238,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="ShowDiffWithBranchDialog/0.0.1536.824@0.0.1536.824" timestamp="1603484549092" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1604074152982">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1604780667314">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1604074152982" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1604780667314" />
     <state x="620" y="194" width="449" height="436" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1604669521277">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
