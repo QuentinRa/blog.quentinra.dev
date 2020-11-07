@@ -2,4 +2,37 @@
 2/3 Propriété des degrés
 ================================
 
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+Soit un graphe G = (V,E) non orienté avec n = \|V\| et m = \|E\|.
+
+1. Montrer qu’il existe deux noeuds qui ont le même degré.
+-------------------------------------------------------------
+
+...
+
+2. Montrer que :math:`\sum_{x \in V} deg(x) = 2m`
+-------------------------------------------------------------
+
+...
+
+3. Montrer que le nombre de noeuds de degré impair est pair.
+-------------------------------------------------------------
+
+...
+
+4. Cela reste-il vrai pour les graphes orientés ?
+-------------------------------------------------------------
+
+...
+
+5. Cela reste-il vrai pour les graphes infinis ?
+-------------------------------------------------------------
+
+...
+
+6. Combien d’arêtes possède un graphe dont tous les nœuds sont de degré d ?
+-----------------------------------------------------------------------------------
+
 ...

@@ -20,23 +20,19 @@ Décrivez le degré des nœuds
    :maxdepth: 1
 
 	Proposition de correction n°1			<voisins/d1>
-	Proposition de correction n°1			<voisins/d1_2>
+	Proposition de correction n°2			<voisins/d1_2>
 
 2/3 Propriété des degrés
 -----------------------------------
 
-On veut montrer que, dans
-un réseau social, la plupart des gens ont l’impression d’avoir moins d’amis que leurs amis. On
-représente le réseau par un graphe non orienté avec n nœuds (les gens) et m arêtes (les liens
-d’amitiés).
+Soit un graphe G = (V,E) non orienté avec n = \|V\| et m = \|E\|.
 
-1. \
-	Montrer que la moyenne du nombre d’amis d’une personne est :math:`\frac{2m}{n}`
-
-2. \
-	On considère la liste contenant, pour chaque personne, pour chaque ami de cette personne, le
-	nombre d’amis de cet ami. Montrer que la moyenne de cette liste, i.e. la moyenne du nombre
-	d’amis d’un ami, est :math:`\frac{\sum_{v \in V}^{} deg(v)^2}{2m}`
+1. Montrer qu’il existe deux noeuds qui ont le même degré.
+2. Montrer que :math:`\sum_{x \in V} deg(x) = 2m`
+3. Montrer que le nombre de noeuds de degré impair est pair.
+4. Cela reste-il vrai pour les graphes orientés ?
+5. Cela reste-il vrai pour les graphes infinis ?
+6. Combien d’arêtes possède un graphe dont tous les noeuds sont de degré d ?
 
 .. toctree::
    :maxdepth: 1

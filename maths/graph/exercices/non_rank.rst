@@ -85,6 +85,22 @@ Dans un département comptant 2p + 1 villes, chaque ville est reliée à p autre
 autoroute. Montrer qu’il est possible de se rendre depuis le chef-lieu du département dans toutes
 les autres villes en empruntant que des autoroutes.
 
+9. Propriété des degrés
+-----------------------------------
+
+On veut montrer que, dans
+un réseau social, la plupart des gens ont l’impression d’avoir moins d’amis que leurs amis. On
+représente le réseau par un graphe non orienté avec n nœuds (les gens) et m arêtes (les liens
+d’amitiés).
+
+1. \
+	Montrer que la moyenne du nombre d’amis d’une personne est :math:`\frac{2m}{n}`
+
+2. \
+	On considère la liste contenant, pour chaque personne, pour chaque ami de cette personne, le
+	nombre d’amis de cet ami. Montrer que la moyenne de cette liste, i.e. la moyenne du nombre
+	d’amis d’un ami, est :math:`\frac{\sum_{v \in V}^{} deg(v)^2}{2m}`
+
 -----
 
 **Crédits**

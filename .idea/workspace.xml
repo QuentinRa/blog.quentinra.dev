@@ -26,8 +26,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/non_rank.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/graph/exercices/voisins.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/voisins.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/voisins/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/voisins/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/voisins/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/voisins/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/voisins/d3.rst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +145,7 @@
       <workItem from="1604579201739" duration="21734000" />
       <workItem from="1604666719958" duration="15602000" />
       <workItem from="1604690102714" duration="4251000" />
-      <workItem from="1604737993803" duration="13902000" />
+      <workItem from="1604737993803" duration="15964000" />
     </task>
     <servers />
   </component>
