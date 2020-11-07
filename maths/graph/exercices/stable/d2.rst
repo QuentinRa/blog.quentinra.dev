@@ -9,7 +9,7 @@
 
 .. image:: /assets/math/graph/exercice/s_d2.png
 
-1. Question 1
+Question 1
 ----------------
 
 Déterminez, dans G, une clique maximale, une clique maximum et une partition de G en 3
@@ -23,7 +23,7 @@ hormis e qui n'est pas dans la clique car il n'est pas relié aux 4 autres.
 
 P(G) = { (a,b,c), (g,d,e), (h,i,j)  }
 
-2. Question 2
+Question 2
 ----------------
 
 Montrer que trouver une clique dans un graphe est équivalent à trouver un stable dans un

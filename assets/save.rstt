@@ -5,6 +5,19 @@
 
 **** caractères - fin ****
 
+**** graphviz ****
+
+.. graphviz::
+
+	digraph {
+		size="10,8";
+  	rankdir="LR";
+  	a-> d [arrowhead = none];
+  	a [style=filled,color=red];
+	}
+
+**** graphviz - fin ****
+
 *italic*
 **bold**
 ``code``
