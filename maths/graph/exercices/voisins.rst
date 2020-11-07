@@ -20,6 +20,7 @@ Décrivez le degré des nœuds
    :maxdepth: 1
 
 	Proposition de correction n°1			<voisins/d1>
+	Proposition de correction n°1			<voisins/d1_2>
 
 2/3 Propriété des degrés
 -----------------------------------
