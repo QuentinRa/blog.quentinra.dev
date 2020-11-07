@@ -2,4 +2,58 @@
 2/3 Clique et stable
 ================================
 
-...
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+|
+
+.. image:: /assets/math/graph/exercice/s_d2.png
+
+1. Question 1
+----------------
+
+Déterminez, dans G, une clique maximale, une clique maximum et une partition de G en 3
+cliques
+
+Une clique maximale est h,i,j. i étant de degré 2, on ne peut pas agrandir la clique
+donc maximale.
+
+Une clique maximum est h,f,a,c. On n'a pas de degré 5 ou plus qui ne soit pas dans la clic
+hormis e qui n'est pas dans la clique car il n'est pas relié aux 4 autres.
+
+P(G) = { (a,b,c), (g,d,e), (h,i,j)  }
+
+2. Question 2
+----------------
+
+Montrer que trouver une clique dans un graphe est équivalent à trouver un stable dans un
+autre graphe que l’on déterminera. Donnez un exemple avec G.
+
+Soit G le graphe
+
+.. graphviz::
+
+	digraph {
+		size="10,8";
+  	rankdir="LR";
+    a -> b [arrowhead = none];
+		a-> d [arrowhead = none];
+		b -> d [arrowhead = none];
+		c -> a [arrowhead = none];
+		d -> c [arrowhead = none];
+		f->c [arrowhead = none];
+  }
+
+On trouve la clique a,b,d. On remarque que le Graphe G', complémentaire de G
+à pour stable a,b,d.
+
+.. graphviz::
+
+	digraph {
+		size="10,8";
+  	rankdir="LR";
+    a -> f [arrowhead = none];
+    b -> f [arrowhead = none];
+    d -> f [arrowhead = none];
+    c -> b [arrowhead = none];
+  }
