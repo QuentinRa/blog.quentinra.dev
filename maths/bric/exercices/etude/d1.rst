@@ -24,8 +24,14 @@ Domaines de définitions
 	* sin(x) = :math:`\text{]-$\infty $;+$\infty $[}`
 	* cos(x) = :math:`\text{]-$\infty $;+$\infty $[}`
 
-Dérivée f'
+Dérivée
 
+	*:math:`f'(x) = -sin(x)+cos(x)`
+	* Domaine de f' : :math:`\text{]-$\infty $;+$\infty $[}`
+	* f'(x) = 0 quand :math:`x = \frac{\pi}{4}` (utiliser le cercle trigo)
+
+Tableau de variations
+...
 
 3. :math:`x \mapsto \frac{3x-1}{x-4}`
 -----------------------------------------
