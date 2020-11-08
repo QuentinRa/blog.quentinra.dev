@@ -115,6 +115,19 @@ sait utiliser et inversement.
 	//représentation hexadécimale vers décimale pointée
 	char *inet_ntoa(struct in_addr in);
 
+	//obtenir une adresse ip depuis un nom de domaine
+	// donc par exemple l'adresse IP de www.google.com
+	struct hostent *gethostbyname(const char *name);
+	struct hostent *gethostbyaddr(const char *addr, int len, int type);
+
+	/*avec*/ struct hostent {
+			char *h_name;		//nom officiel
+			char **h_aliases;	//autres noms
+			int h_addrtype;		//type : AF_INET = 0
+			int h_lenght;		//taille des adresses en bytes
+			in_addr** h_addr_list;	//list des adresses, null = fin
+	};
+
 3.3.2 - Sérialisation des entiers
 -------------------------------------------
 
@@ -130,18 +143,6 @@ votre nombre ait la même valeur.
 	//Réseau vers format machine
 	ulong  ntohl(ulong netlong);
 	ulong  ntohs(ulong netshort);
-
-	//obtenir une adresse ip depuis un nom de domaine
-	// donc par exemple l'adresse IP de www.google.com
-	struct hostent *gethostbyname(const char *name);
-	struct hostent *gethostbyaddr(const char *addr, int len, int type);
-		/*avec*/ struct hostent {
-			char *h_name;		//nom officiel
-			char **h_aliases;	//autres noms
-			int h_addrtype;		//type : AF_INET = 0
-			int h_lenght;		//taille des adresses en bytes
-			in_addr** h_addr_list;	//list des adresses, null = fin
-		};
 
 3.3.3 - Création d'un socket et fermeture
 -------------------------------------------

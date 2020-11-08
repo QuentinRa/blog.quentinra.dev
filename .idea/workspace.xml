@@ -25,12 +25,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/save.rstt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/save.rstt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/etude/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/etude/d1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/bric/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/advanced.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/advanced.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +148,8 @@
       <workItem from="1604854340940" duration="80000" />
       <workItem from="1604854442021" duration="88000" />
       <workItem from="1604854848117" duration="2372000" />
-      <workItem from="1604861020315" duration="4185000" />
+      <workItem from="1604861020315" duration="4285000" />
+      <workItem from="1604875845071" duration="467000" />
     </task>
     <servers />
   </component>
