@@ -18,6 +18,14 @@
 
 **** graphviz - fin ****
 
+****** uml *********
+
+.. uml::
+
+	Foo <-- Bar
+
+****** uml - fin *********
+
 *italic*
 **bold**
 ``code``

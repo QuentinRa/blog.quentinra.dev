@@ -25,9 +25,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/voisins.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/voisins.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/voisins/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/voisins/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/save.rstt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/save.rstt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/etude/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/etude/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,19 +60,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\bric\exercice\etude" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\conception" />
+      <recent name="C:\Users\quent\Documents\texas-res\language\english" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\voisins" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\conception\files" />
       <recent name="C:\Users\quent\Documents\texas-res\language\japanese" />
       <recent name="C:\Users\quent\Documents\texas-res\language" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\assets\conception" />
-      <recent name="C:\Users\quent\Documents\texas-res\language\english" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices\scripts" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -143,7 +146,13 @@
       <workItem from="1604579201739" duration="21734000" />
       <workItem from="1604666719958" duration="15602000" />
       <workItem from="1604690102714" duration="4251000" />
-      <workItem from="1604737993803" duration="18074000" />
+      <workItem from="1604737993803" duration="18586000" />
+      <workItem from="1604843144735" duration="8986000" />
+      <workItem from="1604854287870" duration="44000" />
+      <workItem from="1604854340940" duration="80000" />
+      <workItem from="1604854442021" duration="88000" />
+      <workItem from="1604854848117" duration="2372000" />
+      <workItem from="1604861020315" duration="4185000" />
     </task>
     <servers />
   </component>
@@ -230,10 +239,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="343" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1603191408316" />
-    <state x="279" y="54" width="977" height="710" key="SettingsEditor" timestamp="1604330252354">
+    <state x="279" y="54" width="977" height="710" key="SettingsEditor" timestamp="1604861682764">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="279" y="54" width="977" height="710" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604330252354" />
+    <state x="279" y="54" width="977" height="710" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604861682764" />
     <state x="93" y="93" width="1350" height="638" key="ShowDiffWithBranchDialog" timestamp="1603484549092">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

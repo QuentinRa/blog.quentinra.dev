@@ -36,8 +36,14 @@ release = '1.4.97'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
+# note for pip3.8
 import sphinx_rtd_theme
-extensions = ['recommonmark', "sphinx_rtd_theme", 'sphinx.ext.graphviz']
+extensions = [
+'recommonmark',
+"sphinx_rtd_theme", 'sphinx.ext.graphviz',
+'sphinxcontrib.plantuml'
+,'matplotlib.sphinxext.plot_directive',
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -96,3 +102,13 @@ graphviz_output_format = 'svg'
 # -- PDF
 
 pdf_documents = [('index', u'ramsamy-ws.ressources', u'Cours (ramsamy-ws)', u'Quentin Ra')]
+
+# -- plantuml
+# https://github.com/sphinx-contrib/plantuml/
+
+if shutil.which("plantuml") == None :
+	plantuml="java -jar C:/graphviz/bin/plantuml.jar"
+
+# plots
+# https://matplotlib.org/3.1.3/devel/plot_directive.html
+plot_include_source=False
