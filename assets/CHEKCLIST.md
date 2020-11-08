@@ -44,7 +44,6 @@ Les choses non faites et à faire
 * Faire les exercices non rank 
 
 **Graphes**
-* faire exercices stabilités + degrés (6)
 * faire exercices non rank
 * ajouter les distances
 * regarder la théorie spectrale

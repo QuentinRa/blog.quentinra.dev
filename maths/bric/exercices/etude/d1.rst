@@ -4,13 +4,6 @@
 
 Pour chacune des fonctions suivantes, faire une étude complète et tracer la courbe représentative.
 
-.. def
-	->f', d' f'(x)=0
-	-> limite def
-		-> tab de variations
-		-> f(x)=0, asymptotes, tangentes, symétrie, convexité, pts d'inflexions
-			-> Cf : on trouve la courbe
-
 1. :math:`x \mapsto x^4-5x^2+4`
 -----------------------------------
 

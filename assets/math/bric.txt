@@ -1,39 +1,14 @@
 := signifie par définition
-
+[[1,n]] = {1,2, ...., n}
+notez les identités remarquables
+penser les factorisations
 tvi
-dérivée
-limites
-tangente
 formulaire
+dev série : https://fr.wikipedia.org/wiki/Formulaire_de_d%C3%A9veloppements_en_s%C3%A9ries
 
-notez les identités remarquables, penser les factorisations
-
-dérivée de exp(u), cos(x)
-
-ensemble de dérivation
-
-x^x = exp(xlnx)
-
-1/sqrt(x) = x^-1/2
-x^n = nx^n-1
-soit sqrt = 1/x x^-1/x = 1/2sqrtx
-
-ln(u) = u'/u
-
+**ensemble de dérivation**
 ln x>0
 cos(x) R
 sin(x) R
 exp(x) R
 x^(x) R
-
-def
-	->f', d' f'(x)=0
-	-> limite def
-		-> tab de variations
-		-> f(x)=0, asymptotes, tangentes, symétrie, convexité, pts d'inflexions
-			-> Cf : on trouve la courbe
-
-https://fr.wikipedia.org/wiki/Formulaire_de_d%C3%A9veloppements_en_s%C3%A9ries
-https://www.dcode.fr/derivee
-
-[[1,n]] = {1,2, ...., n}

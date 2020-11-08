@@ -42,6 +42,26 @@ extrema                        extrema (min/max) et convexité (monte vite ?)
 * :code:`convexe` : croissance de plus en plus rapide, dérivée croissante et dérivée seconde positive
 * :code:`concave` : croissance de plus en plus lente, dérivée décroissante et dérivée seconde négative
 * :code:`point d'inflexion` : si une fonction passe de convexe à concave ou inversement, alors c'est le point x du changement
+* :code:`tangente` : pente de la courbe, f(a)<f(x) alors :math:`pente\ =\frac{f(x)-f(a)}{x-a}`. Si a=x alors :math:`pente\ =\lim_{x \rightarrow a} \frac{f(x)-f(a)}{x-a} = f'(a)`
+
+Une suite possible d'étapes pour étudier une fonction serait
+
+	1. Domaine de définition
+	2. Dérivée
+
+		| 2.1. Domaine de la dérivée
+		| 2.2. Résoudre f'(x)=0
+		| 2.3. Tableau de variations
+
+	3. Calculs optionnels
+
+		| 3.1. Calcul des asymptotes
+		| 3.2. Calcul des tangentes
+		| 3.3. Calcul de symétries
+		| 3.4. Calcul de convexités/concavités
+		| 3.5. Calcul de points d'inflexions
+
+	4. Dessiner la courbe
 
 Dérivées
 **************
@@ -61,7 +81,7 @@ x (variable)                                     1
 :math:`x^n`                                  :math:`nx^{n-1}`
 :math:`\frac{1}{x}`                          :math:`\frac{-1}{x^2}`
 :math:`\frac{1}{x^n}`                        :math:`\frac{-n}{x^{n+1}}`
-:math:`\sqrt{x}`                             :math:`\frac{1}{2\sqrt{x}}`
+:math:`\sqrt{x}`                             :math:`\frac{1}{2\sqrt{x}}` ou :math:`(\sqrt{x})' = (x^{\frac{1}{2}})' = \frac{1}{2} x^{-\frac{1}{2}} = \frac{\sqrt{x}^-1}{2} =  \frac{1}{2\sqrt{x}}`
 :math:`\ln{x}` (logarithme népérien)         :math:`\frac{1}{x}`
 :math:`\log_a{x}` (logarithme)               :math:`\frac{1}{xln(a)}`
 :math:`e^{x}` (exponentielle)                :math:`e^x`
