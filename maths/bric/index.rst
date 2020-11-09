@@ -41,8 +41,18 @@ extrema                        extrema (min/max) et convexité (monte vite ?)
 * :code:`Asymptotes obliques` : :math:`\lim_{x \rightarrow \pm\infty}\frac{f(x)}{x} - ax = b \in \mathbb{R}\infty`
 * :code:`convexe` : croissance de plus en plus rapide, dérivée croissante et dérivée seconde positive
 * :code:`concave` : croissance de plus en plus lente, dérivée décroissante et dérivée seconde négative
-* :code:`point d'inflexion` : si une fonction passe de convexe à concave ou inversement, alors c'est le point x du changement
-* :code:`tangente` : pente de la courbe, f(a)<f(x) alors :math:`pente\ =\frac{f(x)-f(a)}{x-a}`. Si a=x alors :math:`pente\ =\lim_{x \rightarrow a} \frac{f(x)-f(a)}{x-a} = f'(a)`
+
+*
+	:code:`point d'inflexion` : si une fonction passe de convexe à concave ou inversement, alors c'est le point x du changement.
+	On calcule les dérivés secondes et troisièmes. On résouds :math:`f''(x) = 0` et on calcule pour certains x trouvés
+	:math:`f'''(x)`. Si :math:`f'''(x)` est égale à 0, alors x n'est pas un point d'inflexion. Sinon, si le résultat
+	est négatif alors on passe de convexe à concave et si le résultat est positif, alors on passe de concave à connexe.
+
+*
+	:code:`tangente` : pente de la courbe, f(a)<f(x) alors :math:`pente\ =\frac{f(x)-f(a)}{x-a}`.
+	Si a=x alors :math:`pente\ =\lim_{x \rightarrow a} \frac{f(x)-f(a)}{x-a} = f'(a)`.
+	La tangente peut aussi être approchée par :math:`pente\ = f(a) + f'(a) (x-a)`, avec a le point pour lequel vous voulez
+	la tangente.
 
 Une suite possible d'étapes pour étudier une fonction serait
 
@@ -229,6 +239,7 @@ Exercices
 	* https://www.dcode.fr/domaine-definition-fonction
 	* https://www.wolframalpha.com/
 	* https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_des_croissances_compar%C3%A9es
+	* https://www.solumaths.com/fr/calculatrice-en-ligne/calculer/equation_tangente
 	* matplotlib
 			* https://stackoverflow.com/questions/31556446/how-to-draw-axis-in-the-middle-of-the-figure
 			* https://matplotlib.org/3.2.1/gallery/lines_bars_and_markers/simple_plot.html#sphx-glr-gallery-lines-bars-and-markers-simple-plot-py

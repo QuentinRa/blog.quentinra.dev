@@ -4,10 +4,71 @@
 
 Pour chacune des fonctions suivantes, faire une étude complète et tracer la courbe représentative.
 
+.. image:: https://img.shields.io/badge/courbes-vérifiées-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: courbes vérifiées
+
+.. note::
+
+	La question 2 a beaucoup été développée
+
 1. :math:`x \mapsto x^4-5x^2+4`
 -----------------------------------
 
+:code:`Domaines de définitions`
+
 ...
+
+:code:`Dérivée`
+
+...
+
+:code:`Tableau de variations`
+
+...
+
+:code:`symétrie`
+
+...
+
+:code:`asymptotes`
+
+...
+
+:code:`tangentes`
+
+...
+
+:code:`points d'inflexions`
+
+...
+
+:code:`Tracé de la courbe`
+
+.. plot::
+
+		import math
+		import numpy as np
+		import matplotlib.pyplot as plt
+
+		x = np.arange(-2.6, 2.6, 0.001)
+		y = x**4-5*x**2+4
+
+		fig = plt.figure()
+		ax = fig.add_subplot(1, 1, 1)
+
+		# Move left y-axis and bottim x-axis to centre, passing through (0,0)
+		ax.spines['left'].set_position('center')
+
+		# Eliminate upper and right axes
+		ax.spines['right'].set_color('none')
+		ax.spines['top'].set_color('none')
+
+		# Show ticks in the left and lower axes only
+		ax.xaxis.set_ticks_position('bottom')
+		ax.yaxis.set_ticks_position('left')
+
+		plt.plot(x,y)
+		plt.show()
 
 2. :math:`x \mapsto cos(x)+sin(x)`
 -----------------------------------------
@@ -68,7 +129,28 @@ et après calcul il y a bien symétrie par rapport à x.
 Il n'y a pas d'asymptotes car la fonction n'a pas de limite
 car elle est périodique : monte descend monte descend.
 
-.. a :code:`tangentes` :code:`points d'inflexions` :code:`Tracé de la courbe`
+:code:`tangentes`
+
+pente en :math:`\frac{\pi}{2}` : :math:`f(\frac{\pi}{2}) + f'(\frac{\pi}{2}) (x-\frac{\pi}{2}) \Leftrightarrow 1 + -1 * (x-\frac{\pi}{2}) \Leftrightarrow 1+-x+\frac{\pi}{2}`
+
+.. note::
+
+	Pour tracer la tangente, on remplace x par 0 (par exemple) pour obtenir un premier
+	y, ce qui nous donne un premier point. On remplace ensuite x par 1 (par exemple) et
+	on obtient notre second point. On trace ensuite notre droite.
+
+:code:`points d'inflexions`
+
+| On calcule la dérivée seconde : :math:`f''(x) = (cos(x) -sin(x))' = -sin(x) - cos(x)`.
+| On calcule la dérivée troisième : :math:`f'''(x) = (-cos(x) -sin(x))' = sin(x) - cos(x)`.
+
+On résout :math:`f''(x) = 0 \Leftrightarrow x = \frac{-\pi}{4}[4\pi]`.
+
+On teste les valeur de x dans la dérivée troisième donc par exemple :math:`\frac{-\pi}{4}`,
+ce qui donne :math:`f'''(\frac{-\pi}{4}) = sin(\frac{-\pi}{4}) - cos(\frac{-\pi}{4}) = -\sqrt(2)`
+or :math:`-\sqrt(2)` est négatif donc on passe de convexe à concave.
+
+:code:`Tracé de la courbe`
 
 .. plot::
 
@@ -100,9 +182,69 @@ car elle est périodique : monte descend monte descend.
 3. :math:`x \mapsto \frac{3x-1}{x-4}`
 -----------------------------------------
 
+:code:`Domaines de définitions`
+
+...
+
+:code:`Dérivée`
+
+...
+
+:code:`Tableau de variations`
+
+...
+
+:code:`symétrie`
+
+...
+
+:code:`asymptotes`
+
+...
+
+:code:`tangentes`
+
+...
+
+:code:`points d'inflexions`
+
+...
+
+:code:`Tracé de la courbe`
+
 ...
 
 4. :math:`x \mapsto exp(-x^2)`
 -----------------------------------
+
+:code:`Domaines de définitions`
+
+...
+
+:code:`Dérivée`
+
+...
+
+:code:`Tableau de variations`
+
+...
+
+:code:`symétrie`
+
+...
+
+:code:`asymptotes`
+
+...
+
+:code:`tangentes`
+
+...
+
+:code:`points d'inflexions`
+
+...
+
+:code:`Tracé de la courbe`
 
 ...

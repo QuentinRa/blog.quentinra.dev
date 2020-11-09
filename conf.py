@@ -23,7 +23,7 @@ copyright = '2020, Quentin Ra'
 author = 'Quentin Ra'
 
 # The full version, including alpha/beta/rc tags
-release = '1.4.97'
+release = '1.4.111'
 # version 0 : html, css, php, js
 # version 1 : restructured text
 # version 1.1 : system/docker
