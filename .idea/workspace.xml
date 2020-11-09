@@ -26,9 +26,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/CHEKCLIST.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/CHEKCLIST.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/non_rank.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/grundy/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/grundy/d1.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +48,7 @@
   <component name="ProjectId" id="1j3SOdW56l2HX11sGuoiPU6zFXG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -157,7 +156,7 @@
       <workItem from="1604854848117" duration="2372000" />
       <workItem from="1604861020315" duration="4285000" />
       <workItem from="1604875845071" duration="4630000" />
-      <workItem from="1604920690123" duration="17998000" />
+      <workItem from="1604920690123" duration="19526000" />
     </task>
     <servers />
   </component>

@@ -2,4 +2,37 @@
 1/3 Fonction de Grundy
 ================================
 
-...
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+|
+
+.. image:: /assets/math/graph/exercice/g1d.png
+
+1. Donnez la ou les fonctions de Grundy du graphe G suivant.
+----------------------------------------------------------------
+
+| On prends le sommet 1, on lui donne 0
+| On prends le sommet 2, on lui donne 1
+| On prends les sommets 5 et 3 : on leur donne 0
+| On prends le sommet 4, on lui donne la valeur 1
+| On prends le sommet 6, on lui donne la valeur 1
+
+On peut trouver une autre application en tentant d'ajouter un
+sommet, par exemple 4 dans le noyau.
+
+| Si 4 vaut 0, alors 5 vaut 1
+| Si 5 vaut 1 alors 6 vaut 0
+| si 6 vaut 0, alors 1 vaut 1
+| si 1 vaut 1, alors 2 vaut 0
+| si 2 vaut 0, alors 3 et 5 (déjà 1 donc ok) valent 1
+
+Il n'y a pas d'autres noyaux : trouver un autre noyau reviendrait à
+trouver un noyeau de taille 4 sauf que comme on l'a vu en essayant d'ajouter 4,
+on se retrouve obligé de retirer d'autres sommets du noyau pour obtenir un noyau valide.
+
+2. En déduire deux noyaux de G
+----------------------------------------------------------------
+
+Le noyau est le sommets à 0 : 1,3,5
+et 2,4,6.
