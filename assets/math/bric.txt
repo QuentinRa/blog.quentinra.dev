@@ -12,3 +12,6 @@ cos(x) R
 sin(x) R
 exp(x) R
 x^(x) R
+
+http://math.feld.cvut.cz/mt/exd/eed0.htm
+http://math.feld.cvut.cz/mt/menue3dd.htm

@@ -12,17 +12,17 @@ Pour chacune des fonctions suivantes, donner une primitive.
 
 .. math::
 
-		1.1 \ \ \ \ \ f_1(x) =  \frac{\ln{x}}{x}
+		1. \ \ \ \ \ f_1(x) =  \frac{\ln{x}}{x}
 		\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
-		1.2 \ \ \ \ \ f_2(x) =  \frac{1}{x\ln{x}}
+		2. \ \ \ \ \ f_2(x) =  \frac{1}{x\ln{x}}
 		\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
-		1.3 \ \ \ \ \ f_3(x) =  \frac{1}{2\sqrt{x}(\sqrt{x}-1)}
+		3. \ \ \ \ \ f_3(x) =  \frac{1}{2\sqrt{x}(\sqrt{x}-1)}
 		\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \\
-		1.4 \ \ \ \ \ f_4(x) =  tan(x)
+		4. \ \ \ \ \ f_4(x) =  tan(x)
 		\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
-		1.5 \ \ \ \ \ f_5(x) =  sin^2(x) cos (x)
+		5. \ \ \ \ \ f_5(x) =  sin^2(x) cos (x)
 		\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
-		1.6 \ \ \ \ \ f_6(x) =  xexp(-x^2)
+		6. \ \ \ \ \ f_6(x) =  xexp(-x^2)
 		\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \\
 
 .. toctree::
