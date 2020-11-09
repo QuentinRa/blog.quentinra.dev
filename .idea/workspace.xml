@@ -26,9 +26,6 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/etude/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/etude/d1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/bric/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +39,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1j3SOdW56l2HX11sGuoiPU6zFXG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -52,26 +55,26 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/graph/exercices/voisins" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/bric/exercices" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="kite.configurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\voisins" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\conception\files" />
+      <recent name="C:\Users\quent\Documents\texas-res\language\japanese" />
+      <recent name="C:\Users\quent\Documents\texas-res\language" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\assets\math\bric\exercice\etude" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\conception" />
       <recent name="C:\Users\quent\Documents\texas-res\language\english" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c" />
       <recent name="C:\Users\quent\Documents\texas-res\assets" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\voisins" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\conception\files" />
-      <recent name="C:\Users\quent\Documents\texas-res\language\japanese" />
-      <recent name="C:\Users\quent\Documents\texas-res\language" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -153,7 +156,7 @@
       <workItem from="1604854848117" duration="2372000" />
       <workItem from="1604861020315" duration="4285000" />
       <workItem from="1604875845071" duration="4630000" />
-      <workItem from="1604920690123" duration="6067000" />
+      <workItem from="1604920690123" duration="10129000" />
     </task>
     <servers />
   </component>
@@ -216,10 +219,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="202" y="164" width="902" height="505" key="EnvironmentVariablesDialog/0.0.1536.824@0.0.1536.824" timestamp="1603047236484" />
-    <state x="548" y="156" key="FileChooserDialogImpl" timestamp="1603034588921">
+    <state x="548" y="156" key="FileChooserDialogImpl" timestamp="1604934130951">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="156" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603034588921" />
+    <state x="548" y="156" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604934130951" />
     <state width="1024" height="250" key="GridCell.Tab.0.bottom" timestamp="1604770820136">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -240,10 +243,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="343" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1603191408316" />
-    <state x="279" y="54" width="977" height="710" key="SettingsEditor" timestamp="1604861682764">
+    <state x="279" y="54" width="977" height="710" key="SettingsEditor" timestamp="1604934148218">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="279" y="54" width="977" height="710" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604861682764" />
+    <state x="279" y="54" width="977" height="710" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604934148218" />
     <state x="93" y="93" width="1350" height="638" key="ShowDiffWithBranchDialog" timestamp="1603484549092">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -268,9 +271,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1604774161732" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604776155313">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604933828869">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604776155313" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604933828869" />
   </component>
 </project>

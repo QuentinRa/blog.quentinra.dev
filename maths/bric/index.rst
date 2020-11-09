@@ -212,6 +212,43 @@ Les outils pour simplifier une forme indéterminée et obtenir une forme connues
 	Attention, en 0, x > x^2 donc pour factoriser, la fonction de plus haut
 	n'est pas forcément la fonction la plus croissante.
 
+Primitives
+***************************
+
+La primitive d'une fonction continue f(x) notée F(x) est une fonction qui une fois
+dérivée donne la fonction f(x).
+
+Les primitives sont à une constantes (c) près, car les constantes font 0 une fois dérivées.
+
+============================================ ============================================
+Fonction                                     Primitive
+============================================ ============================================
+:math:`a`                                    :math:`ax + c`
+:math:`x`                                    :math:`\frac{x^2}{2} + c`
+:math:`x^n`                                  :math:`\frac{x^{n+1}}{n+1} + c`
+:math:`\frac{1}{x}\ ou\ x^{-1}`              :math:`\ln{x} + c`
+:math:`\frac{1}{x-a}`                        :math:`\ln{x-a} + c`
+:math:`\ln{x}`                               :math:`x\ln{x}-x + c`
+:math:`e^x`                                  :math:`e^x`
+:math:`a^x`                                  :math:`\frac{a^x}{\ln{a}} + c`
+============================================ ============================================
+
+============================================ ============================================
+Fonction                                     Primitive
+============================================ ============================================
+:math:`cos(x)`                               :math:`sin(x) + c`
+:math:`sin(x)`                               :math:`-cos(x) + c`
+:math:`tan(x)`                               :math:`-\ln{|cos(x)|}`
+:math:`\frac{1}{1+x^2}`                      :math:`arctan(x) + c`
+:math:`\frac{1}{\sqrt{1-x^2}}`               :math:`arccos(x) + c`
+:math:`\frac{-1}{\sqrt{1-x^2}}`              :math:`arcsin(x) + c`
+============================================ ============================================
+
+Intégrales
+***************************
+
+...
+
 Exercices
 *************
 
@@ -219,10 +256,12 @@ Exercices
     :name: exercices
     :maxdepth: 1
 
-		Limites										<exercices/limit>
-		Dérivées									<exercices/derive>
-		Études de fonctions				<exercices/etude>
-		Non triés									<exercices/non_rank>
+		Limites                   <exercices/limit>
+		Dérivées                  <exercices/derive>
+		Études de fonctions       <exercices/etude>
+		Primitives                <exercices/primitives>
+		Calculs d'intégrales      <exercices/integral>
+		Non triés                 <exercices/non_rank>
 
 |
 
