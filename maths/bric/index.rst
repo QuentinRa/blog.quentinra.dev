@@ -238,7 +238,7 @@ Fonction                                     Primitive
 ============================================ ============================================
 :math:`cos(x)`                               :math:`sin(x) + c`
 :math:`sin(x)`                               :math:`-cos(x) + c`
-:math:`tan(x)`                               :math:`-\ln{|cos(x)|}`
+:math:`tan(x)`                               :math:`-\ln{|cos(x)|} + c`
 :math:`\frac{1}{1+x^2}`                      :math:`arctan(x) + c`
 :math:`\frac{1}{\sqrt{1-x^2}}`               :math:`arccos(x) + c`
 :math:`\frac{-1}{\sqrt{1-x^2}}`              :math:`arcsin(x) + c`
@@ -247,7 +247,46 @@ Fonction                                     Primitive
 Intégrales
 ***************************
 
-...
+Une intégrable sur [a,b] est l'aire sous la courbe d'une fonction f entre a et b.
+
+.. math::
+
+	F(x) = \int_{a}^{b} f(x)dx = [F(x)]_{a}^{b} = F(b) - F(a)
+
+Propriétés
+	* transitivité : :math:`\int_{a}^{c} f(x)dx = \int_{a}^{b} f(x)dx + \int_{b}^{c} f(x)dx`
+	* composée : :math:`\int_{a}^{b} (f(x)+g(x))dx = \int_{a}^{b} f(x)dx + \int_{a}^{b} g(x)dx`
+	* sortir une constante : :math:`\int_{a}^{b} \alpha f(x) dx = \alpha * \int_{a}^{b} f(x)dx`
+
+Intégration par parties (IPP)
+--------------------------------
+
+L'intégration par partie permet de découper une intégrales en deux intégrales plus faciles
+à calculer.
+
+Sur le même principe que :math:`(u(x)v(x))' = u'(x)v(x) + u(x)v'(x)`, on a
+
+.. math::
+
+	\int_{a}^{b} (u(x)v(x))'dx = \int_{a}^{b} u'(x)v(x)dx + \int_{a}^{b} u(x)v'(x)dx
+
+Exemples d'usages
+	* u=polynôme et v=fonction trigonométrique
+	* u=fonction à dérivée simple et v=1
+
+Changement de variable
+--------------------------------
+
+Le changement de variable permet de résoudre des intégrales complexes
+en la réécrivant après avoir remplacé les bornes et des termes par de nouveaux.
+
+	* On pose une variable par exemple y = ... x
+	* On calcule les nouvelles bornes de notre intégrable
+
+		* b = x, donc trouver c=y ?
+		* a = x, donc trouver d=y ?
+
+	* on doit aussi réécrire dx en fonction de y donc dy.
 
 Exercices
 *************

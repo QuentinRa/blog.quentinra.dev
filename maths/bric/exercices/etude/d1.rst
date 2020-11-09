@@ -4,7 +4,7 @@
 
 Pour chacune des fonctions suivantes, faire une étude complète et tracer la courbe représentative.
 
-.. image:: https://img.shields.io/badge/courbes-vérifiées-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+.. .. image:: https://img.shields.io/badge/courbes-vérifiées-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
    :alt: courbes vérifiées
 
 .. note::
