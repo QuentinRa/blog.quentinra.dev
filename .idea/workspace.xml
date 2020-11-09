@@ -26,7 +26,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/grundy/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/grundy/d3.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/etude/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/etude/d1.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,11 +70,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\primitives" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\bric\exercice" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\math\bric\exercice\etude" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\conception" />
       <recent name="C:\Users\quent\Documents\texas-res\language\english" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -156,7 +156,7 @@
       <workItem from="1604854848117" duration="2372000" />
       <workItem from="1604861020315" duration="4285000" />
       <workItem from="1604875845071" duration="4630000" />
-      <workItem from="1604920690123" duration="23273000" />
+      <workItem from="1604920690123" duration="28185000" />
     </task>
     <servers />
   </component>

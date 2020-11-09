@@ -4,12 +4,12 @@
 
 Pour chacune des fonctions suivantes, faire une étude complète et tracer la courbe représentative.
 
-.. .. image:: https://img.shields.io/badge/courbes-vérifiées-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+.. image:: https://img.shields.io/badge/courbes-vérifiées-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
    :alt: courbes vérifiées
 
 .. note::
 
-	La question 2 a beaucoup été développée
+	La question 2 a beaucoup été développée pour des raisons éducatives, les autres pas du tout.
 
 1. :math:`x \mapsto x^4-5x^2+4`
 -----------------------------------
@@ -56,7 +56,7 @@ Pour chacune des fonctions suivantes, faire une étude complète et tracer la co
 		fig = plt.figure()
 		ax = fig.add_subplot(1, 1, 1)
 
-		# Move left y-axis and bottim x-axis to centre, passing through (0,0)
+		# Move left y-axis and bottom x-axis to centre, passing through (0,0)
 		ax.spines['left'].set_position('center')
 
 		# Eliminate upper and right axes
@@ -83,7 +83,7 @@ Pour chacune des fonctions suivantes, faire une étude complète et tracer la co
 	* :math:`f'(x) = -sin(x)+cos(x)`
 	* Domaine de :math:`f'` : :math:`\text{]-$\infty $;+$\infty $[}`
 	*
-		f\'(x) = 0 quand :math:`x = \frac{\pi}{4}`, :math:`x = \frac{-3\pi}{4}` et :math:`x = \frac{5\pi}{4}` (utiliser le cercle trigo)
+		f\'(x) = 0 quand :math:`x = \frac{\pi}{4}`, :math:`x = \frac{-3\pi}{4}` et :math:`x = \frac{5\pi}{4}` (utiliser le cercle trigonométrique)
 		donc on remarque que :math:`x = \frac{\pi}{4} [4\pi]`
 
 		.. math::
@@ -164,7 +164,7 @@ or :math:`-\sqrt(2)` est négatif donc on passe de convexe à concave.
 		fig = plt.figure()
 		ax = fig.add_subplot(1, 1, 1)
 
-		# Move left y-axis and bottim x-axis to centre, passing through (0,0)
+		# Move left y-axis and bottom x-axis to centre, passing through (0,0)
 		ax.spines['left'].set_position('center')
 		ax.spines['bottom'].set_position('center')
 
@@ -212,22 +212,44 @@ or :math:`-\sqrt(2)` est négatif donc on passe de convexe à concave.
 
 :code:`Tracé de la courbe`
 
-...
+.. image:: /assets/math/bric/exercice/e1d.png
 
 4. :math:`x \mapsto exp(-x^2)`
 -----------------------------------
 
 :code:`Domaines de définitions`
 
-...
+exp(x) = :math:`\text{]-$\infty $;+$\infty $[}`
 
 :code:`Dérivée`
 
-...
+	* :math:`f'(x) = (e^{-x^2})' = -2x * e^{-x^2}`
+	* Domaine de :math:`f'` : :math:`\text{]-$\infty $;+$\infty $[}`
+	*
+		f\'(x) = 0 quand :math:`x = 0`.
+
+		.. math::
+
+				-2*x * e^{-x^2} = 0
+				\Leftrightarrow
+				\begin{cases}
+				e^{-x^2} = 0\ (impossible\ car\ e^0 = 1\ et\ e^x croissante ) \\
+				\ ou\  \\
+				-2x=0 \Leftrightarrow x=0
+				\end{cases}
 
 :code:`Tableau de variations`
 
-...
+On étudie sur :math:`[-\infty, +\infty[`.
+
+====================== ============================================================================================================
+\                      :math:`-\infty \ \ \ \ \ \ \ \ \ ` :math:`0 \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`+\infty \ \ \ \ \ \ \ \ \ `
+====================== ============================================================================================================
+signe :math:`-2x`      :math:`+ \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`\| \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`- \ \ \ \ \ \ \ \ \ \ \ \ `
+signe :math:`e^{-x^2}` :math:`\ \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`+ \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`\ \ \ \ \ \ \ \ \ \ \ \ \ `
+signe f\'(x)           :math:`+ \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`\| \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`- \ \ \ \ \ \ \ \ \ \ \ \ `
+variation f            :math:`0 \ \ \  \nearrow \ \ \ 1 \ \  \ \searrow \ \ 0`
+====================== ============================================================================================================
 
 :code:`symétrie`
 
@@ -247,4 +269,22 @@ or :math:`-\sqrt(2)` est négatif donc on passe de convexe à concave.
 
 :code:`Tracé de la courbe`
 
-...
+.. plot::
+
+		import math
+		import numpy as np
+		import matplotlib.pyplot as plt
+
+		x = np.arange(-1.5, 1.5, 0.001)
+		y = np.exp(-x**2)
+
+		fig = plt.figure()
+		ax = fig.add_subplot(1, 1, 1)
+		ax.spines['left'].set_position('center')
+		ax.spines['right'].set_color('none')
+		ax.spines['top'].set_color('none')
+		ax.xaxis.set_ticks_position('bottom')
+		ax.yaxis.set_ticks_position('left')
+
+		plt.plot(x,y)
+		plt.show()
