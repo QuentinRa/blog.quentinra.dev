@@ -585,6 +585,7 @@ Arbre couvrant de poids minimum (ACM)
 		Fermeture transitive            <exercices/transitive>
 		Stabilité                       <exercices/stable>
 		Étude des degrés                <exercices/voisins>
+		Fonction de Grundy              <exercices/grundy>
 		Non triés                       <exercices/non_rank>
 
 ------

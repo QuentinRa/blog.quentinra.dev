@@ -101,6 +101,27 @@ d’amitiés).
 	nombre d’amis de cet ami. Montrer que la moyenne de cette liste, i.e. la moyenne du nombre
 	d’amis d’un ami, est :math:`\frac{\sum_{v \in V}^{} deg(v)^2}{2m}`
 
+10. Jeux de Nim
+-----------------------------------
+
+Soit les jeux suivants. Déterminez pour lesquels le joueur 1 a une stratégie gagnante et pour
+lesquels le joueur 2 a une stratégie gagnante. Le premier joueur est toujours le joueur 1.
+
+1. \
+	Deux joueurs ont devant eux n baguettes. À chaque tour, un joueur retire 1, 2 ou 3 baguettes.
+	Le joueur obligé de retirer la dernière baguette perd le jeu.
+
+2. \
+	Deux joueurs ont devant eux une tablette de chocolat avec nm lignes et colonnes. A chaque
+	tour, un joueur doit manger soit autant de lignes qu’il veut soit autant de colonne qu’il veut
+	(au moins une). Le perdant est celui qui doit manger le dernier carré de chocolat.
+
+3. \
+	Deux joueurs ont devant eux un plateau avec des jetons disposés sur une grille (certains cases
+	peuvent être vide). A chaque tour, un joueur doit choisir un jeton, le retirer lui et tous ses
+	voisins (horizontaux, diagonaux et verticaux). Le joueur qui retire le dernier jeton gagne la
+	partie.
+
 -----
 
 **Crédits**

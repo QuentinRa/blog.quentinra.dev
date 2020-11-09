@@ -5,6 +5,8 @@ Les choses non faites et à faire
 **Général**
 * Corriger les fautes (https://seomagnifier.com/french-grammar-checker)
 * améliorer le tutoriel pour contribuer
+* faire le lien exos
+* mieux gérer le crédit des corrigés et des exos
 
 **Analyse numérique**
 * TD1 - exo 2, 3, 4, 6
@@ -41,9 +43,11 @@ Les choses non faites et à faire
 * Ajouter les Cours de DUT
 
 **Bric à Brac**
+* Faire les exercices etudes, primitives, intégrales
 * Faire les exercices non rank 
 
 **Graphes**
+* faire les exercies grundy
 * faire exercices non rank
 * ajouter les distances
 * regarder la théorie spectrale
