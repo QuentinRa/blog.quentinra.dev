@@ -4,7 +4,7 @@
 Théorie des graphes
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.2}`
+| :math:`\color{grey}{Version \ 1.0.3}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 02/11/2020}`
 
 Graphe
@@ -266,7 +266,7 @@ Base de cycles
 	que la base de cycles est libre et génératrice.
 
 	On note :math:`\mu(G)` (mu) le nombre d'éléments d'une base de cycle,
-	appelé nombre cyclomatique. math:`\mu(μ(G) = m − n + p` avec n sommets m arcs et p composantes
+	appelé nombre cyclomatique. :math:`\mu(μ(G) = m − n + p` avec n sommets m arcs et p composantes
 	connexes.
 
 Base de cocycles
@@ -285,7 +285,7 @@ Base de cocycles
   soit libre et génératrice.
 
 	On note :math:`\gamma(G)` (gamma) le nombre d'éléments d'une base de cocycle,
-	appelé nombre cocyclomatique. math:`\gamma(μ(G) = n - p` avec n sommets et p composantes
+	appelé nombre cocyclomatique. :math:`\gamma(μ(G) = n - p` avec n sommets et p composantes
 	connexes.
 
 2.5 Graphes planaires

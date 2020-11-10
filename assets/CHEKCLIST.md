@@ -47,7 +47,8 @@ Les choses non faites et à faire
 * Faire les exercices non rank 
 
 **Graphes**
-* faire les exercies grundy
+* faire les exercices sur les cocycles (revoir l'exo 1)
+* adapter le cours sur les bases car possibles erreurs
 * faire exercices non rank
 * ajouter les distances
 * regarder la théorie spectrale
