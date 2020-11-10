@@ -26,7 +26,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/etude/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/etude/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/planaire.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/planaire.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/graph/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +56,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/graph/exercices/bases" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/graph/exercices/planaire" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="kite.configurable" />
@@ -71,11 +71,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\language\english" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\planaire" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\bases" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\grundy" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\cauchy" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\integral" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -158,7 +158,7 @@
       <workItem from="1604861020315" duration="4285000" />
       <workItem from="1604875845071" duration="4630000" />
       <workItem from="1604920690123" duration="28226000" />
-      <workItem from="1604995081313" duration="12659000" />
+      <workItem from="1604995081313" duration="15032000" />
     </task>
     <servers />
   </component>

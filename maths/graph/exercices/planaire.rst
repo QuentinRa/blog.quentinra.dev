@@ -13,6 +13,11 @@ d’Euler. Sinon pourquoi n’est-il pas planaire ?
 
 .. image:: /assets/math/graph/exercice/p1d.png
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<planaire/d1>
+
 Le graphe de Petersen
 -------------------------
 

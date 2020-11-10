@@ -301,6 +301,7 @@ Planaire
 
 		* si n-m+f = 2 avec n sommets, m arêtes et f faces (donc f=m-n+2).
 		* si m < 3n -5 avec G connexe, n sommets et m arêtes
+		* si le degré de chaque sommet est strictement supérieur à 5, le graphe n'est pas planaire
 
 	Si un graphe est planaire, alors il existe forcément un sommet e tel que d(e) < 6.
 
