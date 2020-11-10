@@ -16,31 +16,35 @@ Pour chacune des fonctions suivantes, faire une étude complète et tracer la co
 
 :code:`Domaines de définitions`
 
-...
+:math:`\text{]-$\infty $;+$\infty $[}`
 
 :code:`Dérivée`
 
-...
+* :math:`f'(x) = 4x^3-10x`
+	* Domaine de :math:`f'` : :math:`\text{]-$\infty $;+$\infty $[}`
+	*
+		f\'(x) = 0 quand :math:`x = \sqrt{2.5}` ou :math:`x = -\sqrt{2.5}` ou :math:`x = 0`
+
+.. math::
+
+		4x^3-10x = 0
+		\Leftrightarrow
+		4x^3 = 10x
+		\Leftrightarrow
+		4x^2 = 10
+		\Leftrightarrow
+		x^2 = \frac{10}{4}
+		\Leftrightarrow
+		x = \sqrt{\frac{10}{4}} ou\ x=-\sqrt{\frac{10}{4}}
 
 :code:`Tableau de variations`
 
-...
-
-:code:`symétrie`
-
-...
-
-:code:`asymptotes`
-
-...
-
-:code:`tangentes`
-
-...
-
-:code:`points d'inflexions`
-
-...
+====================== ============================================================================================================
+\                      :math:`-\infty \ \ \ \ \ \ \ \ \ ` :math:`-\sqrt{2.5} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`0 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`\sqrt{2.5} \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`+\infty \ \ \ \ \ \ \ \ \ `
+====================== ============================================================================================================
+signe f\'(x)           :math:`- \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`\| \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`+ \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`\| \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`- \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`\| \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`+ \ \ \ \ \ \ \ \ \ \ \ \ `
+variation f            :math:`+\infty \ \searrow \ \ -2.25 \ \ \ \ \ \ \nearrow \ \ \ \ \ \ \ \ \ 4 \ \ \ \ \ \ \ \ \  \searrow \ \ \ \ \ \  -2.25 \ \ \ \ \nearrow \ \  +\infty`
+====================== ============================================================================================================
 
 :code:`Tracé de la courbe`
 
@@ -184,31 +188,40 @@ or :math:`-\sqrt(2)` est négatif donc on passe de convexe à concave.
 
 :code:`Domaines de définitions`
 
-...
+Domaine = :math:`]-\infty;4[ \cup ]4, +\infty]`
 
 :code:`Dérivée`
 
-...
+On réécrit l'équation pour avoir un degré plus grand en bas :math:`3+\frac{11}{x-4}`.
+
+	* :math:`f'(x) = \frac{-11}{(x-4)^2}`
+	* Domaine de :math:`f'` : :math:`]-\infty;4[ \cup ]4, +\infty]`
+	*
+		f\'(x) = 0 quand :math:`x = 4` ou :math:`x = -4`.
+
+		.. math::
+
+				\frac{-11}{(x-4)^2} = 0
+				\Leftrightarrow
+				(x-4)^2 = 0
+				\Leftrightarrow
+				x^2-16=0
+				\Leftrightarrow
+				x^2=16
+				\Leftrightarrow
+				x = 4\ ou\ x=-4
+
 
 :code:`Tableau de variations`
 
-...
+On étudie sur :math:`[-\infty, +\infty[`.
 
-:code:`symétrie`
-
-...
-
-:code:`asymptotes`
-
-...
-
-:code:`tangentes`
-
-...
-
-:code:`points d'inflexions`
-
-...
+====================== ============================================================================================================
+\                      :math:`-\infty \ \ \ \ \ \ \ \ \ ` :math:`-4 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`4 \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`+\infty \ \ \ \ \ \ \ \ \ `
+====================== ============================================================================================================
+signe f\'(x)           :math:`- \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`\| \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`\ \ \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`\| \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`- \ \ \ \ \ \ \ \ \ \ \ \ `
+variation f            :math:`+\infty \ \searrow \ \ -1.625 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \  +\infty \ \ \ \ \searrow \ \  3`
+====================== ============================================================================================================
 
 :code:`Tracé de la courbe`
 
@@ -250,22 +263,6 @@ signe :math:`e^{-x^2}` :math:`\ \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`+ \ \ \ \ \ \ \
 signe f\'(x)           :math:`+ \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`\| \ \ \ \ \ \ \ \ \ \ \ \ ` :math:`- \ \ \ \ \ \ \ \ \ \ \ \ `
 variation f            :math:`0 \ \ \  \nearrow \ \ \ 1 \ \  \ \searrow \ \ 0`
 ====================== ============================================================================================================
-
-:code:`symétrie`
-
-...
-
-:code:`asymptotes`
-
-...
-
-:code:`tangentes`
-
-...
-
-:code:`points d'inflexions`
-
-...
 
 :code:`Tracé de la courbe`
 
