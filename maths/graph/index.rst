@@ -587,6 +587,7 @@ Arbre couvrant de poids minimum (ACM)
 		Étude des degrés                <exercices/voisins>
 		Fonction de Grundy              <exercices/grundy>
 		Bases de cycles et cocycles     <exercices/bases>
+		Graphes planaires               <exercices/planaire>
 		Non triés                       <exercices/non_rank>
 
 ------
