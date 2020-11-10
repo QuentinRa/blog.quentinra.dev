@@ -25,7 +25,7 @@ Les choses non faites et à faire
 
 **Modélisation**
 * ajouter le cours de modélisation relationnelle
-* ajouter le cours d'uml
+* ajouter le cours d’UML
 
 **Linux**
 * Réécrire le cours, je crois c'est incomprehensible/trop condensé
@@ -43,12 +43,18 @@ Les choses non faites et à faire
 * Ajouter les Cours de DUT
 
 **Bric à Brac**
-* Faire les exercices etudes, primitives, intégrales
+* Faire les exercices sur les primitives, intégrales
 * Faire les exercices non rank 
 
 **Graphes**
-* faire les exercices sur les cocycles (revoir l'exo 1)
+* revoir exercices (c1d, p2d)
 * adapter le cours sur les bases car possibles erreurs
 * faire exercices non rank
 * ajouter les distances
 * regarder la théorie spectrale
+
+**entreprise**
+* ajouter bilan comptable, factures et compte de résultat
+* continuer cours macroéconomie
+* faire cours gestion économique
+* faire cours entreprise

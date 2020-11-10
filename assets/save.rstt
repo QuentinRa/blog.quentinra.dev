@@ -23,6 +23,22 @@
 .. uml::
 
 	Foo <-- Bar
+	Class01 "1" *-- "many" Class02 : contains
+
+  Object : equals()
+  ArrayList : Object[] elementData
+  ArrayList : size()
+
+	Personne : + int age()
+	Personne : + int age
+	Personne : - varchar prenom
+	Personne : - varchar nom
+
+	object "<u>personne1" as p1
+
+	p1 : prenom = "Numphy"
+	p1 : nom = "Gamma"
+	p1 : age = "25"
 
 ****** uml - fin *********
 

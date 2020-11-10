@@ -1,0 +1,161 @@
+.. _dc:
+
+================================
+Diagramme de classes (DC)
+================================
+
+Un diagramme de classe ressemble fortement à un diagramme de base de données, cependant
+il y a des différences vues dans :ref:`dbd`.
+
+1. Classe et objet
+==============================
+
+.. uml::
+
+	Personne : + age() : int
+	Personne : + age : int
+	Personne : - prenom : varchar
+	Personne : - nom : varchar
+
+	object "<u>personne1" as p1
+
+	p1 : prenom = "Numphy"
+	p1 : nom = "Gamma"
+	p1 : age = "25"
+
+:code:`Personne` est une **classe**, c'est à dire une représentation abstraite de quelque chose (ici une personne).
+Elle contient des champs appelés **attributs** dans lequel on mettera des valeurs (age, prenom, nom). Elle
+contient également des fonctions appelées **operations** qui sont les opérations que je peut appliquer
+sur ma classe (ici l'opération age retourne un int : entier qui indiquera l'age de la personne).
+
+:code:`personne1` est un **objet** de la classe personne, c'est à dire que l'on a donné des valeurs
+aux attributs.
+
+.. note::
+
+	On souligne généralement les objets. Les classes commencent généralement par une majuscule.
+
+2. Attributs, opérations et types
+====================================
+
+Un attribut ressemble à ça :code:`/ v nom : type = valeur`
+mais en retirant les éléments facultatifs, vous verrez plus :code:`nom : type`.
+
+	* :code:`/` : facultatif, indique un attribut dérivée cad obtenu avec les valeurs de d'autres attributs
+	* :code:`v` : facultatif, la visibilité de l'attribut (publique par défaut notée +, privé -, package ~ et hérité #).
+	* :code:`nom` : nom de l'attribut
+	* :code:`type` : type de l'attribut, si l'attribut est multivalué on le note type[min..max].
+	* :code:`valeur` : facultatif, valeur par défaut (peut être un ensemble).
+
+.. warning::
+
+	Un attribut/opération souligné est un attribut/opération de classe (static), donc la valeur
+	de cette attribut est la même dans tous les objets de la classe !
+
+	Les constantes sont généralement statiques.
+
+Les types généralement utilisés sont
+
+=============================== ========================================================================================
+Type                            Description
+=============================== ========================================================================================
+varchar(n)                      chaine de caractères de taille maximum n
+int/number ou int(n)            un entier (si n alors n chiffres, 11 par défaut, int(0) = booléen)
+text                            chaine de caractères de taille infinie
+float ou real                   un réel
+string                          n'existe généralement pas mais souvent utilisé pour une chaine de caractères
+boolean                         n'existe généralement pas mais souvent utilisé pour les booléens
+decimal(n,p)                    chiffre de taille n dont p chiffres après la virgule
+date                            contient une date
+=============================== ========================================================================================
+
+Remarque : certains attributs ont pour type une autre classe, on parle d'attribut composé.
+Certains plutôt que de les mettre dans la classe, préfère les mettre sur les associations.
+
+Opérations
+
+Une opération est de la forme :code:`v nom(args: type,…) : r`.
+
+	* :code:`v` : facultatif, la visibilité de l'attribut (publique par défaut notée +, privé -, package ~ et hérité #).
+	* :code:`args:type` : facultatifs, pour chaque argument de l'opération, on met :code:`args` : le nom et :code:`type`: le type de l'argument
+	* :code:`r` : facultatif, si votre fonction retourne quelque chose, alors le type de ce qui est retourné
+
+.. note::
+
+	Il existe des fonctions qui ont pour but de créer des objects. On les appelents :code:`Constructeurs`.
+	Ils ont généralement le même nom que la classe et n'ont pas de type de retour. On ajoute généralement
+	« constructor » devant le nom, juste après la visibilité.
+
+3. Associations et multiplicité
+====================================
+
+.. uml::
+
+		ClasseA "n" -- "m" ClasseB : nom
+
+Si deux classes (donc leurs objets) interagissent avec d'autres classes (donc des objets d'autres classes),
+alors on représente cette interaction par un train appelé association. Les association ont généralement
+un nom, aucun sens, et une multiplicité.
+
+**Multiplicité**
+
+La multiplicité représente combien d’objets d’une classe sont en relation
+avec combien d’autres d’une autre classe. On note :
+
+		* n : exactement n éléments
+		* :math:`*` : entre 0 et inf
+		* n..m : entre n et m, par exemple 0..1
+
+On lit la multiplicité comme suit : La classe A est en relation avec m instances de B, et la classe
+B est en relation avec n instance de A.
+
+.. note::
+
+	Une association entre deux objets est appelée un lien.
+
+**Classes d'associations**
+
+Une classe d'association est un moyen de faire porter plus d'information
+à une association qu'uniquement son nom.
+
+.. uml::
+
+		class Student {
+			Name
+		}
+		Student "0..*" - "1..*" Course
+		(Student, Course) .. Enrollment
+
+		class Enrollment {
+			drop()
+			cancel()
+		}
+
+**Associations : agrégations**
+
+Association où une classe joue un rôle plus fort que l’autre (domine l’autre ex : relation patron (1) - ouvrier (*))
+
+.. uml::
+
+		agrégat o-- "*" "élément agrégé"
+
+**Associations : compositions**
+
+Il s’agît d’une agrégation plus forte où une classe (composant) n’existe pas en dehors de sa relation avec
+une autre (composite). (ex : les roues n’existent pas sans voiture)
+
+.. uml::
+
+		Composite *-- Composant : composition
+
+La destruction du composite entraine celle du composant (classe interne).
+
+|
+
+-----
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
+
+**Références**
+	* lien
