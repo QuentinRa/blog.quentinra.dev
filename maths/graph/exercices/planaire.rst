@@ -5,7 +5,7 @@ Graphes planaires
 Niveau débutant
 ***********************
 
-Planaire ?
+1/3 Planaire ?
 ----------------------------
 
 Parmi les graphes suivants : lesquels sont planaires ou non ? Si c’est le cas, vérifiez la formule
@@ -18,8 +18,8 @@ d’Euler. Sinon pourquoi n’est-il pas planaire ?
 
 	Proposition de correction n°1			<planaire/d1>
 
-Le graphe de Petersen
--------------------------
+2/3 Le graphe de Petersen
+----------------------------
 
 On veut montrer que le graphe suivant, nommé graphe de Petersen, n’est pas planaire.
 
@@ -35,10 +35,20 @@ On veut montrer que le graphe suivant, nommé graphe de Petersen, n’est pas pl
 4. \
 	En déduire que le graphe de Petersen n’est pas planaire.
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<planaire/d2>
+
 K3,3 est planaire sur un mug !
 ----------------------------------------
 
 Montrer qu’il est possible de dessiner K3,3 planaire sur un tore.
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<planaire/d3>
 
 Dessin de circuit imprimé
 ----------------------------------------
