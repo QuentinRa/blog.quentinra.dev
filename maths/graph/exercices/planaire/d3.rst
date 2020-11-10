@@ -1,8 +1,17 @@
-================================
-TITRE
-================================
+===================================================
+3/3 K3,3 est planaire sur un mug !
+===================================================
 
-.. image:: https://img.shields.io/badge/correction-non%20vérifiée-red.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
-   :alt: correction non vérifiée
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
 
-...
+Montrer qu’il est possible de dessiner K3,3 planaire sur un tore.
+
+.. hint::
+
+	Un tore est équivalent à un rectangle où
+
+		* quand on dépasse en haut, on se retrouve en bas ; et inversement
+		* quand on dépasse à gauche on se retrouve à droite ; et inversement
+
+.. image:: /assets/math/graph/exercice/p3d.png

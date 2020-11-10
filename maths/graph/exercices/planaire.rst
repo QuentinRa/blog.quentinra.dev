@@ -40,7 +40,7 @@ On veut montrer que le graphe suivant, nommé graphe de Petersen, n’est pas pl
 
 	Proposition de correction n°1			<planaire/d2>
 
-K3,3 est planaire sur un mug !
+3/3 K3,3 est planaire sur un mug !
 ----------------------------------------
 
 Montrer qu’il est possible de dessiner K3,3 planaire sur un tore.
