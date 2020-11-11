@@ -29,6 +29,9 @@ Une urne contient n houles blanches et n houles noires.
 On tire les boules au hasard et sans remise jusqu'à ce que l'on ait tiré la dernière boule blanche.
 Soit K le nombre total de boules tirées.
 
+On définit P(X=k) : :math:`\frac{nn!(k-1)!}{(2n)!(k-n)!}` et
+:math:`Sn = \sum_{k=n}^{k=2n} \frac{(k-1)!}{(k-n)!} = \frac{nn!}{(2n)!}`.
+
 1. Calculer l'espérance mathématique de K [#f1]_.
 
 2. Calculer la variance de K .
