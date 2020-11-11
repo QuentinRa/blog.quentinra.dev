@@ -42,6 +42,11 @@
 
 ****** uml - fin *********
 
+.. literalinclude:: configuration.json
+  :language: JSON
+
+https://sublime-and-sphinx-guide.readthedocs.io/en/latest/code_blocks.html
+
 *italic*
 **bold**
 ``code``
