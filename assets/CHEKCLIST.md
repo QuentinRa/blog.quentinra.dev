@@ -37,14 +37,16 @@ Les choses non faites et à faire
 * commencer tout ça, ajout des cours
 
 **Probabilités**
-* Faire le dernier exo de loi
-* Faire les exercices non rank (1,2,3)
+* Faire les exercices non rank
 * Ajouter le CM4
 * Ajouter les Cours de DUT
 
 **Bric à Brac**
-* Faire les exercices sur les primitives, intégrales
-* Faire les exercices non rank 
+* Faire les exercices sur les intégrales (1/3)
+* Faire les exercices non rank
+* ajouter les notations de landau
+* ajouter les complexes
+* ajouter les développements en série
 
 **Graphes**
 * revoir exercices (c1d, p2d)

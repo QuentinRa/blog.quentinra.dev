@@ -6,15 +6,5 @@ tvi
 formulaire
 dev série : https://fr.wikipedia.org/wiki/Formulaire_de_d%C3%A9veloppements_en_s%C3%A9ries
 
-**ensemble de dérivation**
-ln x>0
-cos(x) R
-sin(x) R
-exp(x) R
-x^(x) R
-
 http://math.feld.cvut.cz/mt/exd/eed0.htm
 http://math.feld.cvut.cz/mt/menue3dd.htm
-
-https://www.symbolab.com/solver/simplify-calculator/
-https://mathpapa.com/simplify-calculator/

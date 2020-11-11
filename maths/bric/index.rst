@@ -4,6 +4,24 @@
 Bric à Brac
 ================================
 
+.. note::
+
+	Le bric à brac est comme son nom l'indique une réserve de trucs utiles, pas assez
+	approfondis pour en faire un cours.
+
+	Les grandes thèmes sont (pas forcément dans cette ordre) :
+
+		1. Connaissances
+
+			* Coefficient binomial
+			* Factorielle
+
+		2. Études de fonctions
+		3. Limites
+		4. Dérivées
+		5. Primitives
+		6. Intégrales
+
 Coefficient binomial
 ***********************
 
@@ -13,6 +31,23 @@ Coefficient binomial
 
 	| :math:`C^1_n = n`
 	| :math:`C^2_n = \frac{n(n-1)}{2}`
+
+Factorielle
+***********************
+
+La factorielle de n notée n! est une fonction définie par :
+:math:`\prod_{1 \le i \le n}^{} i = n * (n-1) * ... * 2 * 1` (c'est le produit
+de n termes, chaque terme est plus petit de 1 que le précédent).
+
+	* 0! = 1
+	* 1! = 1
+
+Exemple : 5! = 5*4*3*2*1 = 120
+
+**Simplifications**
+
+	* :math:`\frac{n!}{(n+m)!} = \frac{1}{(n+1) * (n+2) * ... * (n+m)}`
+	* si n > m, :math:`\frac{n!}{(n-m)!} = n * (n-1) * ... * (n-m+1)`
 
 Étude de fonctions d'une variable réelle
 ******************************************
@@ -72,6 +107,12 @@ Une suite possible d'étapes pour étudier une fonction serait
 		| 3.5. Calcul de points d'inflexions
 
 	4. Dessiner la courbe
+
+Quelques domaines de définitions
+
+	* cos(x), sin(x) : R
+	* exp(x) : R
+	* ln(x) : R+, x > 0
 
 Dérivées
 **************
@@ -323,6 +364,8 @@ Exercices
 	* https://www.wolframalpha.com/
 	* https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_des_croissances_compar%C3%A9es
 	* https://www.solumaths.com/fr/calculatrice-en-ligne/calculer/equation_tangente
+	* https://www.symbolab.com/solver/simplify-calculator/
+	* https://mathpapa.com/simplify-calculator/
 	* matplotlib
 			* https://stackoverflow.com/questions/31556446/how-to-draw-axis-in-the-middle-of-the-figure
 			* https://matplotlib.org/3.2.1/gallery/lines_bars_and_markers/simple_plot.html#sphx-glr-gallery-lines-bars-and-markers-simple-plot-py
