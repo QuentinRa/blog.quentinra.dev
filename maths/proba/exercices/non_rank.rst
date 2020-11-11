@@ -69,15 +69,6 @@ probabilité pour que chaque mari soit assis en face de sa femme ?
 qu’aucun mari ne danse avec sa femme ? Quelle est la limite de cette probabilité quand n augmente
 indéfiniment ?
 
-Exercice 1 - Calcul d'espérance
-----------------------------------
-
-Un sac contient deux boules blanches et 3 boules noires.
-Quatre personnes A,B,C,D tirent dans l'ordre indiqué une boule et ne la remettent pas dans le sac.
-La première qui tire une boule blanche reçoit 10 €.
-
-Calculer l'espérance mathématique des gains des 4 personnes.
-
 Exercice 2 - Porcelaine cassée
 ------------------------------------
 
@@ -115,19 +106,6 @@ commerçant après vérification des conteneurs.
 	Sachant que chaque conteneur contient 10 000 assiettes et que chaque conteneur endommagé
 	contient entre 500 et 1000 assiettes endommagées,
 	à combien peut-on estimer le coût unitaire de chaque assiette non endommagée ?
-
-Exercice 3 - Espérance et Variance
--------------------------------------
-
-Une urne contient n houles blanches et n houles noires.
-On tire les boules au hasard et sans remise jusqu'à ce que l'on ait tiré la dernière boule blanche.
-Soit K le nombre total de boules tirées.
-
-1. Calculer l'espérance mathématique de K [#f1]_.
-
-2. Calculer la variance de K .
-
-.. [#f1] On rappelle la formule de Pascal : :math:`\sum_{k=n}^N C^n_k =  C^{n+1}_{N+1}`
 
 Exercice 4 - Espérance et équivalant simple
 -------------------------------------------------

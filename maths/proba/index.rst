@@ -412,6 +412,7 @@ La loi de cauchy est définie par la densité suivante, sachant a>0
 		Dénombrement                              <exercices/count>
 		Probabilités conditionnelles              <exercices/condition>
 		Loi de probabilités                       <exercices/loi>
+		Espérance et variance                     <exercices/avg>
 		Non triés                                 <exercices/non_rank>
 
 |
