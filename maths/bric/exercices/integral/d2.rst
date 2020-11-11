@@ -2,4 +2,39 @@
 2/3 - Intégration par parties
 ================================
 
+Calculer les valeurs des intégrales suivantes en utilisant la technique d’intégration par parties.
+
+1. :math:`\int_{1}^{e} x\ln{x}\ dx`
+--------------------------------------
+
+.. math::
+
+		\text{on pose u=ln(x) et v'=x. On a u'=$\frac{1}{x}$ et v=$\frac{x^2}{2}$} \\
+		\begin{bmatrix}\ln(x) * \frac{x^2}{2}\end{bmatrix}_{1}^{e} - \int_{1}^{e} \frac{1}{x} \frac{x^2}{2} \ dx \
+		\Leftrightarrow
+		\frac{e^2}{2} - \begin{bmatrix} \frac{x^2}{4} \end{bmatrix}_{1}^{e}
+		\Leftrightarrow
+		\frac{e^2}{2} - (\frac{e^2}{4} - \frac{1}{4}) = \frac{e^2 + 1}{4}
+
+2. :math:`\int_{0}^{1} x^2e^{1-x}\ dx`
+----------------------------------------
+
+.. math::
+
+		\text{on pose u=$x^2$ et v'=$e^{1-x}$. On a u'=$2x$ et v=$-e^{1-x}$} \\
+		\begin{bmatrix}x^2 * -e^{1-x} \end{bmatrix}_{0}^{1} - \int_{0}^{1} 2x * -e^{1-x} \ dx
+		\\
+		\begin{bmatrix}x^2 * -e^{1-x} \end{bmatrix}_{0}^{1} - \int_{0}^{1} -2 * x *e^{1-x} \ dx
+		\\
+		-1 - \begin{bmatrix} -2 (-e^{1-x} - e^{1-x}*x) \end{bmatrix}_{0}^{1} \\
+		= -1 - (4+2e) = -5-2e
+
+3. :math:`\int_{0}^{\frac{\pi}{3}} x^2cos(3{x})\ dx`
+-------------------------------------------------------------
+
+...
+
+4. :math:`\int_{0}^{\frac{1}{2}} arcsin(x)\ dx`
+-------------------------------------------------------------
+
 ...

@@ -26,8 +26,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/CHEKCLIST.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/CHEKCLIST.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/math/bric.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/math/bric.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral/d2.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/bric/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +160,7 @@
       <workItem from="1604875845071" duration="4630000" />
       <workItem from="1604920690123" duration="28226000" />
       <workItem from="1604995081313" duration="32347000" />
-      <workItem from="1605094851427" duration="19121000" />
+      <workItem from="1605094851427" duration="25294000" />
     </task>
     <servers />
   </component>

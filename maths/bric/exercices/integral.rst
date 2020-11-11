@@ -35,7 +35,7 @@ Calculer les valeurs des intégrales suivantes en utilisant la technique d’int
 
 .. math::
 
-		1.\int_{1}^{e} x\ln{x}\ dx \ \ \ \ \ \ \ \ \ \ 2.\int_{1}^{e} x^2e^{1-x}\ dx \\
+		1.\int_{1}^{e} x\ln{x}\ dx \ \ \ \ \ \ \ \ \ \ 2.\int_{0}^{1} x^2e^{1-x}\ dx \\
 		3.\int_{0}^{\frac{\pi}{3}} x^2cos(3{x})\ dx \ \ \ \ \ \ \ \ \ \ 4.\int_{0}^{\frac{1}{2}} arcsin(x)\ dx \\
 
 .. toctree::

@@ -311,15 +311,18 @@ Intégration par parties (IPP)
 L'intégration par partie permet de découper une intégrales en deux intégrales plus faciles
 à calculer.
 
-Sur le même principe que :math:`(u(x)v(x))' = u'(x)v(x) + u(x)v'(x)`, on a
+On pose u : fonction dont on connait la dérivée et v\' la dérivée d'une fonction
+dont on connait la primitive
 
 .. math::
 
-	\int_{a}^{b} (u(x)v(x))'dx = \int_{a}^{b} u'(x)v(x)dx + \int_{a}^{b} u(x)v'(x)dx
+		\int_{a}^{b} u(x)v(x)' \ dx =  [u(x)v(x)]_{a}^{b} - \int_{a}^{b} u(x)'v(x) \ dx
 
 Exemples d'usages
+
 	* u=polynôme et v=fonction trigonométrique
 	* u=fonction à dérivée simple et v=1
+	* xln(x), on pose u=ln(x) et v'=x donc :math:`u=\frac{1}{x}` et :math:`v'=\frac{x^2}{2}`
 
 Changement de variable
 --------------------------------
