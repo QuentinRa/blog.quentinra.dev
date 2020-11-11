@@ -58,6 +58,15 @@ la réponse attendue.
 		en utilisant les approches a) et b) présentées précédemment.
 	| Réponse: 1 tuple.
 
+9. \
+	| Liste des villes dans lesquelles se trouvent soit un viticulteur soit un buveur.
+	| Réponse: 17 tuples.
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<jointures/s1>
+
 Niveau avancé
 ***********************
 

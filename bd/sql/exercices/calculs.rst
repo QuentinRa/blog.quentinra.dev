@@ -60,6 +60,11 @@ la réponse attendue.
 		colonne "nombre de vins produits".
 	| Réponse: VALLE: 3, COULIS DUTHEIL: 2, PARENT: 2, MEDEVILLE: 2.
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<calculs/s1>
+
 Niveau avancé
 ***********************
 
