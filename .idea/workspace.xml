@@ -26,8 +26,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/non_rank.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/proba/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/avg.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/avg.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/loi/s2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/loi/s2.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +159,7 @@
       <workItem from="1604875845071" duration="4630000" />
       <workItem from="1604920690123" duration="28226000" />
       <workItem from="1604995081313" duration="32347000" />
-      <workItem from="1605094851427" duration="8496000" />
+      <workItem from="1605094851427" duration="11898000" />
     </task>
     <servers />
   </component>

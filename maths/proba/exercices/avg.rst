@@ -1,5 +1,5 @@
 ================================
-TITRE
+Espérance et variance
 ================================
 
 Niveau débutant
