@@ -1,0 +1,48 @@
+================================
+1/3 Primitives
+================================
+
+Pour chacune des fonctions suivantes, donner une primitive.
+
+:math:`f_1(x) =  \frac{\ln{x}}{x}`
+-------------------------------------------
+
+.. math::
+
+	\frac{1}{x} * ln(x) = u' * u^n = \frac{ln(x)^2}{2}
+
+:math:`f_2(x) =  \frac{1}{x\ln{x}}`
+-------------------------------------------
+
+.. math::
+
+	\frac{1}{x\ln{x}} = \frac{\frac{1}{x}}{\frac{ln(x)}{1}} = \frac{\frac{1}{x}}{ln(x)}  = \frac{u'}{u} = ln(u) = ln(ln(x))
+
+:math:`f_3(x) =  \frac{1}{2\sqrt{x}(\sqrt{x}-1)}`
+-------------------------------------------------------
+
+.. math::
+
+		\frac{1}{2\sqrt{x}(\sqrt{x}-1)}
+		= \frac{-\frac{1}{2\sqrt{x}}}{\sqrt{x}-1}= \frac{u'}{u}= ln(\sqrt{x}-1)
+
+:math:`f_4(x) =  tan(x)`
+-------------------------------------------
+
+.. math::
+
+	tan(x) = \frac{sin(x)}{cos(x)} = \frac{-u'}{u} = -ln(cos(x))
+
+:math:`f_5(x) =  sin^2(x) cos (x)`
+-------------------------------------------
+
+.. math::
+
+	sin^2(x) cos (x) = cos(x) * sin^2(x) = u' * u^2 = \frac{(\sin x)^3}{3}
+
+:math:`f_6(x) =  xexp(-x^2)`
+-------------------------------------------
+
+.. math::
+
+	xexp(-x^2) = e^{-x^2} = u'e^u = \frac{e^{-x^2}}{-2}

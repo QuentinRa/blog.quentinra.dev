@@ -5,10 +5,28 @@ Calculs d'intégrales
 Niveau débutant
 ***********************
 
-1/3 - Calculs d'intégrales
--------------------------------
+1/1 Primitives
+-------------------------
 
-ressource not found
+Pour chacune des fonctions suivantes, donner une primitive.
+
+.. math::
+
+		1. \ \ \ \ \ f_1(x) =  \frac{\ln{x}}{x}
+		\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+		2. \ \ \ \ \ f_2(x) =  \frac{1}{x\ln{x}}
+		\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+		3. \ \ \ \ \ f_3(x) =  \frac{1}{2\sqrt{x}(\sqrt{x}-1)} \\
+		4. \ \ \ \ \ f_4(x) =  tan(x)
+		\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+		5. \ \ \ \ \ f_5(x) =  sin^2(x) cos (x)
+		\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+		6. \ \ \ \ \ f_6(x) =  xexp(-x^2) \\
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<integral/d1>
 
 2/3 - Intégration par parties
 -------------------------------

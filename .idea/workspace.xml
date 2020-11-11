@@ -25,14 +25,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/maths/bric/exercices/integral/d1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/CHEKCLIST.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/CHEKCLIST.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/save.rstt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/save.rstt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/template.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/uml/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/uml/model.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/model.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/non_rank.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/planaire.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/planaire.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/primitives.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/primitives/d1.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,19 +66,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\math\bric\exercice" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\math\bric\exercice\etude" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\conception" />
-      <recent name="C:\Users\quent\Documents\texas-res\language\english" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\planaire" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\bases" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\grundy" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\cauchy" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\integral" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\bric\exercice" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\bric\exercice\etude" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\conception" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -163,7 +161,8 @@
       <workItem from="1604861020315" duration="4285000" />
       <workItem from="1604875845071" duration="4630000" />
       <workItem from="1604920690123" duration="28226000" />
-      <workItem from="1604995081313" duration="32049000" />
+      <workItem from="1604995081313" duration="32347000" />
+      <workItem from="1605094851427" duration="6178000" />
     </task>
     <servers />
   </component>

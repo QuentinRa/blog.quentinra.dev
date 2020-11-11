@@ -236,6 +236,12 @@ Fonction                                     Primitive
 ============================================ ============================================
 Fonction                                     Primitive
 ============================================ ============================================
+:math:`u'u^n`                                :math:`\frac{u^{n+1}}{n+1}`
+============================================ ============================================
+
+============================================ ============================================
+Fonction                                     Primitive
+============================================ ============================================
 :math:`cos(x)`                               :math:`sin(x) + c`
 :math:`sin(x)`                               :math:`-cos(x) + c`
 :math:`tan(x)`                               :math:`-\ln{|cos(x)|} + c`
@@ -298,8 +304,7 @@ Exercices
 		Limites                   <exercices/limit>
 		Dérivées                  <exercices/derive>
 		Études de fonctions       <exercices/etude>
-		Primitives                <exercices/primitives>
-		Calculs d'intégrales      <exercices/integral>
+		Primitives  et intégrales <exercices/integral>
 		Non triés                 <exercices/non_rank>
 
 |
