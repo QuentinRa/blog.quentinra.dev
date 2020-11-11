@@ -49,6 +49,7 @@
   <component name="ProjectId" id="1j3SOdW56l2HX11sGuoiPU6zFXG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -159,7 +160,7 @@
       <workItem from="1604920690123" duration="28226000" />
       <workItem from="1604995081313" duration="32347000" />
       <workItem from="1605094851427" duration="31138000" />
-      <workItem from="1605135318607" duration="140000" />
+      <workItem from="1605135318607" duration="785000" />
     </task>
     <servers />
   </component>
