@@ -54,6 +54,16 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     Unified Modeling Language (UML)     <conception/uml/index>
 
 .. toctree::
+    :caption: Langages de bases de données
+    :name: bd
+    :maxdepth: 1
+
+    SQL (Structured Query Language)      <bd/sql/index>
+    SQL - avancé                         <bd/sql/advanced>
+    SQLite                               <bd/sql/sqlite>
+    PL/SQL (Procedural Language)         <bd/plsql/index>
+
+.. toctree::
     :caption: Entreprise
     :name: business
     :maxdepth: 1

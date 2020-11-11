@@ -1,4 +1,4 @@
-.. _model:
+.. _relation:
 
 ================================
 Modélisation relationnelle
