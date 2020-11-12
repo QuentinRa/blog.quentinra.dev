@@ -26,8 +26,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.readthedocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.readthedocs.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/save.rstt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/save.rstt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bd/sql/exercices/calculs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/bd/sql/exercices/calculs.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bd/sql/exercices/jointures.rst" beforeDir="false" afterPath="$PROJECT_DIR$/bd/sql/exercices/jointures.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bd/sql/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/bd/sql/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,26 +58,26 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bd/sql/exercices/jointures" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/db/ensiie1a_vins" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="kite.configurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\.github" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\integral" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\math\bric\exercice" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\math\bric\exercice\etude" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\db\ensiie1a_vins" />
       <recent name="C:\Users\quent\Documents\texas-res\bd\sql\exercices\jointures" />
       <recent name="C:\Users\quent\Documents\texas-res\bd\sql\exercices\calculs" />
       <recent name="C:\Users\quent\Documents\texas-res\bd\sql\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\bd\sql" />
-      <recent name="C:\Users\quent\Documents\texas-res\bd\plsql" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\db\bases" />
+      <recent name="C:\Users\quent\Documents\texas-res\.github" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\integral" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\bric\exercice" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -160,7 +162,8 @@
       <workItem from="1604920690123" duration="28226000" />
       <workItem from="1604995081313" duration="32347000" />
       <workItem from="1605094851427" duration="31138000" />
-      <workItem from="1605135318607" duration="785000" />
+      <workItem from="1605135318607" duration="1433000" />
+      <workItem from="1605191389561" duration="5670000" />
     </task>
     <servers />
   </component>

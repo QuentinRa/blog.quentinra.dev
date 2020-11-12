@@ -13,6 +13,10 @@ Niveau supérieur
 1/1 Jointures
 -------------------------------------
 
+.. warning::
+
+	Fichier de la base à importer : :download:`setup.sql <../../../assets/db/bases/vins_ensiie_1a_import.sql>`
+
 Écrivez les requêtes suivantes en SQL89 et en SQL92.
 
 En particulier, vous devez vérifier que que votre requête retourne

@@ -55,6 +55,18 @@ est décrit dans le cours de modélisation relationnelle (:ref:`relation`).
 9. Exercices
 ==============
 
+.. danger::
+
+	Les exercices vous demandent généralement de faire des requêtes donc dans
+	une base de données, sur un paquet de données.
+
+	Chaque exercice vous fournit un fichier :code:`setup.sql` qui est à importer
+	dans votre base de données dans une base nommée comme vous voulez
+
+	Si vous n'avez pas de base de données sous la main, allez sur
+	`sqliteonline.com <https://sqliteonline.com/>`_ et importez le fichier :code:`setup.sql`
+	dans une base de données mariadb.
+
 .. toctree::
     :name: exercices
     :maxdepth: 1

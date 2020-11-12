@@ -13,6 +13,10 @@ Niveau supérieur
 1/1 - Exercice Fonctions de calcul et agrégats
 -------------------------------------------------
 
+.. warning::
+
+	Fichier de la base à importer : :download:`setup.sql <../../../assets/db/bases/vins_ensiie_1a_import.sql>`
+
 Écrivez les requêtes correspondant aux cas suivants.
 
 En particulier, vous devez vérifier que que votre requête retourne
