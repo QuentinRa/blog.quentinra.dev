@@ -26,10 +26,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/save.rstt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/save.rstt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bd/sql/exercices/calculs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/bd/sql/exercices/calculs.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bd/sql/exercices/jointures.rst" beforeDir="false" afterPath="$PROJECT_DIR$/bd/sql/exercices/jointures.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bd/sql/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/bd/sql/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +163,7 @@
       <workItem from="1604995081313" duration="32347000" />
       <workItem from="1605094851427" duration="31138000" />
       <workItem from="1605135318607" duration="1433000" />
-      <workItem from="1605191389561" duration="5670000" />
+      <workItem from="1605191389561" duration="9933000" />
     </task>
     <servers />
   </component>

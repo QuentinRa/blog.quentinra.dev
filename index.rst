@@ -21,19 +21,16 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :name: maths
     :maxdepth: 1
 
-    Probabilités                         <maths/proba/index>
-    Théorie des graphes                  <maths/graph/index>
-    Analyse numérique                    <maths/analyse/index>
-    Algèbre Matricielle                  <maths/matrix/index>
-    Bric à Brac                          <maths/bric/index>
+		Théorie des graphes                  <maths/graph/index>
+		Analyse numérique                    <maths/analyse/index>
+		Algèbre Matricielle                  <maths/matrix/index>
+		Bric à Brac                          <maths/bric/index>
 
 .. toctree::
     :caption: Système
     :name: system
     :maxdepth: 1
 
-    Architecture Linux                   <system/linux/index>
-    Bash et Scripts                      <system/linux/bash>
     Docker                               <system/docker/index>
 
 .. toctree::
@@ -41,36 +38,22 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :name: imperative
     :maxdepth: 1
 
-    Langage C                            <imperative/c/index>
-    Langage C - Avancé                   <imperative/c/advanced>
-
 .. toctree::
     :caption: Conception
     :name: conception
     :maxdepth: 1
 
     Interfaces Homme-Machine            <conception/ihm/index>
-    Modélisation relationnelle          <conception/uml/model>
-    Unified Modeling Language (UML)     <conception/uml/index>
 
 .. toctree::
     :caption: Langages de bases de données
     :name: bd
     :maxdepth: 1
 
-    SQL (Structured Query Language)      <bd/sql/index>
-    SQL - avancé                         <bd/sql/advanced>
-    SQLite                               <bd/sql/sqlite>
-    PL/SQL (Procedural Language)         <bd/plsql/index>
-
 .. toctree::
     :caption: Entreprise
     :name: business
     :maxdepth: 1
-
-    Entreprise                          <business/env/index>
-    Macroéconomie                       <business/env/macro>
-    Documents d'une Entreprise          <business/docs/index>
 
 .. toctree::
     :caption: Jeux vidéos
@@ -82,15 +65,35 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :name: language
     :maxdepth: 1
 
-		Anglais                          <language/english/index>
-		Japonais                         <language/japanese/index>
-
 .. toctree::
     :caption: Utilitaires
     :name: utils
     :maxdepth: 1
 
     Vim (Vi IMproved)                   <utils/vim/index>
+
+.. toctree::
+    :caption: Cours non stables
+    :name: pp
+    :maxdepth: 1
+
+		Anglais                          <language/english/index>
+		Japonais                         <language/japanese/index>
+    Entreprise                          <business/env/index>
+    Macroéconomie                       <business/env/macro>
+    Documents d'une Entreprise          <business/docs/index>
+    SQL (Structured Query Language)      <bd/sql/index>
+    SQL - avancé                         <bd/sql/advanced>
+    SQLite                               <bd/sql/sqlite>
+    PL/SQL (Procedural Language)         <bd/plsql/index>
+    Modélisation relationnelle          <conception/uml/model>
+    Unified Modeling Language (UML)     <conception/uml/index>
+    Langage C                            <imperative/c/index>
+    Langage C - Avancé                   <imperative/c/advanced>
+    Architecture Linux                   <system/linux/index>
+    Bash et Scripts                      <system/linux/bash>
+    Probabilités                         <maths/proba/index>
+    Algèbre Matricielle                  <maths/matrix/index>
 
 -----
 
