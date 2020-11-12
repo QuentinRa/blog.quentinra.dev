@@ -94,7 +94,6 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     Architecture Linux                   <system/linux/index>
     Bash et Scripts                      <system/linux/bash>
     Probabilités                         <maths/proba/index>
-    Algèbre Matricielle                  <maths/matrix/index>
 
 -----
 

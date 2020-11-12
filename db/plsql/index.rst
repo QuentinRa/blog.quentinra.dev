@@ -4,6 +4,9 @@
 PL/SQL (Procedural Language)
 ================================
 
+| :math:`\color{grey}{Version \ 1.0.0}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 12/11/2020}`
+
 Le PL/SQL (PL pour Procedural Language) est un langage complémentaire au SQL
 qui ajoute des fonctions appelés procédures, ainsi que des triggers (=déclencheurs).
 
