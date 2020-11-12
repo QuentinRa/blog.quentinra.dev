@@ -115,6 +115,8 @@ Pour éviter de surcharger cette page (car c'est long), les explications sont su
 		Select et FROM            <manipulation/projection>
 		Where                     <manipulation/restriction>
 		Insert, Update, Delete    <manipulation/update>
+		Gérer les résultats       <manipulation/order>
+		Opérations ensemblistes   <manipulation/ensembles>
 
 3. Jointures
 =========================================
