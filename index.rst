@@ -50,6 +50,9 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :name: bd
     :maxdepth: 1
 
+		SQL (Structured Query Language)      <db/sql/index>
+		PL/SQL (Procedural Language)         <db/plsql/index>
+
 .. toctree::
     :caption: Entreprise
     :name: business
@@ -77,17 +80,15 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :name: pp
     :maxdepth: 1
 
-		Anglais                          <language/english/index>
-		Japonais                         <language/japanese/index>
-    Entreprise                          <business/env/index>
-    Macroéconomie                       <business/env/macro>
-    Documents d'une Entreprise          <business/docs/index>
-    SQL (Structured Query Language)      <bd/sql/index>
-    SQL - avancé                         <bd/sql/advanced>
-    SQLite                               <bd/sql/sqlite>
-    PL/SQL (Procedural Language)         <bd/plsql/index>
-    Modélisation relationnelle          <conception/uml/model>
-    Unified Modeling Language (UML)     <conception/uml/index>
+		Anglais                              <language/english/index>
+		Japonais                             <language/japanese/index>
+    Entreprise                           <business/env/index>
+    Macroéconomie                        <business/env/macro>
+    Documents d'une Entreprise           <business/docs/index>
+    SQL - avancé                         <db/sql/advanced>
+    SQLite                               <db/sql/sqlite>
+    Modélisation relationnelle           <conception/uml/model>
+    Unified Modeling Language (UML)      <conception/uml/index>
     Langage C                            <imperative/c/index>
     Langage C - Avancé                   <imperative/c/advanced>
     Architecture Linux                   <system/linux/index>

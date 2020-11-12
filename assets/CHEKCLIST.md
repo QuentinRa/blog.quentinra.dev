@@ -20,7 +20,7 @@ Les choses non faites et à faire
 
 **Base de données**
 * ajouter le cours sur le SQL
-* ajouter le cours sur le Pl/SQL
+* ajouter les triggers plsql
 * ajouter le cours sur SQLite ?
 
 **Modélisation**
