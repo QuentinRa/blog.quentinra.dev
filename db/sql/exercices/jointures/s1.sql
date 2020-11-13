@@ -60,12 +60,6 @@ SELECT DISTINCT n_buveur, nom
 FROM buveur
 where n_buveur NOT IN (select n_buveur from commande);
 
-(SELECT DISTINCT n_buveur, nom
- FROM buveur)
-EXCEPT
-(SELECT DISTINCT n_buveur, NULL
- FROM commande);
-
 -- b
 SELECT DISTINCT n_buveur, nom
 FROM buveur b

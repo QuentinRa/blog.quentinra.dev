@@ -4,7 +4,7 @@
 SQL (Structured Query Language)
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.0}`
+| :math:`\color{grey}{Version \ 1.0.1}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 13/11/2020}`
 
 Le SQL est un language permettant d'accéder à une base de données (BD ou DB).
@@ -35,6 +35,18 @@ Base de données (relationnelle)
 	contenant des **tuples**/lignes (implémentation d'un objet).
 
 	Vous avez un cours ici sur la :ref:`relation`.
+
+Schéma (compliqué mais important)
+	Un schéma est un ensemble d'informations, classés dans une table.
+
+	Le schéma d'un utilisateur regroupe ses tables, ses vues, ses contraintes.
+
+	Le schéma d'une requête c'est les tables récupérés, les attributs sélectionnés
+
+	Le schéma d'une base de données (INFORMATION_SCHEMA) est le catalogue de la base, il contient les tables
+	(TABLES), les utilisateurs (USERS), les attributs (COLUMNS/DOMAINS), les contraintes (CHECK_CONSTRAINTS) etc...
+
+	Pour appeler une table d’un schéma on fait : schema.table.
 
 Relation
 	Une relation R est un ensemble tel que les éléments soient des attributs
@@ -293,9 +305,10 @@ On peut annuler une transaction avec ROLLBACK ou la valider avec COMMIT.
     :name: exercices
     :maxdepth: 1
 
-		Jointures				<exercices/jointures>
-		Calculs 				<exercices/calculs>
-		Non triés 	  	<exercices/non_rank>
+		Commandes générales       <exercices/general>
+		Jointures				          <exercices/jointures>
+		Calculs                   <exercices/calculs>
+		Non triés                 <exercices/non_rank>
 
 |
 

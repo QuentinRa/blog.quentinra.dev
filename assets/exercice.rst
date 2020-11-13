@@ -13,6 +13,9 @@ Niveau débutant
 
 	Proposition de correction n°1			<path>
 
+| :code:`[TAG] TPX YEAR SCHOOL`
+| :code:`[TAG] `
+
 Niveau supérieur
 ***********************
 

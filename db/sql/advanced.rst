@@ -21,9 +21,6 @@ DML, DDL, DCL
 		* DDL = Data Definition donc Create, Alter, Drop
 		* DCL = Data control donc Grant, Revoke
 
-Schéma
-	... expliquer les différents schéma etc...
-
 Ordre des requêtes
 	Les requêtes SQL sont fait dans un ordre qui n'est pas logique :
 	From -> Where -> GROUP BY -> HAVING -> Select -> Order by.
