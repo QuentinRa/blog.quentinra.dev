@@ -4,6 +4,9 @@
 SQL (Structured Query Language)
 ================================
 
+| :math:`\color{grey}{Version \ 1.0.0}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 13/11/2020}`
+
 Le SQL est un language permettant d'accéder à une base de données (BD ou DB).
 
 Il est possible de simplifier la gestion d'une base de données ou d'ajouter
@@ -92,8 +95,6 @@ varchar(n)                      chaine de caractères de taille maximum n
 int/number ou int(n)            un entier (si n alors n chiffres, 11 par défaut, int(0) = booléen)
 text                            chaine de caractères de taille infinie
 float ou real                   un réel
-string                          n'existe généralement pas mais souvent utilisé pour une chaine de caractères
-boolean                         n'existe généralement pas mais souvent utilisé pour les booléens
 decimal(n,p)                    chiffre de taille n dont p chiffres après la virgule
 date                            contient une date
 =============================== ========================================================================================
@@ -216,26 +217,48 @@ Les qualificatifs sont :
 	dans lequels ils ont la même valeur dans attribut1. Puis une sous-groupe sera créé sur le même
 	fonctionnement avec attribut2.
 
-5. Création de table
+5. Gestion des table
 =========================================
 
-...
+Une base de données est composées de tables
+qui ont comme propriétés des attributs. Chaque attribut à un type et des contraintes.
+
+	*	Vous pouvez créer une table avec : CREATE TABLE
+	*	Vous pouvez modifier une table avec : ALTER TABLE
+	*	Vous pouvez supprimer une table avec : DROP TABLE
+
+Les explications sont ici :
+
+.. toctree::
+    :maxdepth: 1
+
+		Creation de tables                      <tables/create>
+		Modification et Suppression de tables   <tables/alter>
 
 6. Création d'utilisateurs
 =========================================
 
-...
+Le tout premier utilisateur de votre base de données est
+souvent :code:`root:aucun mot de passe` (il est recommandé de le désactiver
+pour des raisons de sécurité).
 
-7. Triggers/Déclencheurs SQL
-=========================================
+	* Vous pouvez créer des utilisateurs avec : CREATE USER
+	* Vous pouvez supprimer des utilisateurs avec : DROP USER
+	* Vous pouvez gérer les droits des utilisateurs avec : GRANT et REVOKE
 
-...
+Les explications sont ici :
 
-8. Transactions
+.. toctree::
+    :maxdepth: 1
+
+		Creation et Suppression d'utilisateurs   <users/create>
+		Gestion des permissions                  <users/perms>
+
+7. Transactions
 =========================================
 
 Certaines requêtes SQL peuvent nécessiter d’autres requêtes pour être « valident » dans la base
-(création table référencée...).
+(par exemple un insert d'une table à besoin d'un insert dans un autre table).
 
 On utilise une transaction pour envoyer ces requêtes liées ensembles.
 
@@ -251,7 +274,7 @@ On utilise une transaction pour envoyer ces requêtes liées ensembles.
 
 On peut annuler une transaction avec ROLLBACK ou la valider avec COMMIT.
 
-9. Exercices
+8. Exercices
 ==============
 
 .. danger::

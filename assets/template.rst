@@ -4,8 +4,8 @@
 NOM
 ================================
 
-| :math:`\color{grey}{Version \ ??.??.??}`
-| :math:`\color{grey}{Dernière \ édition \ le \ ??/??/????}`
+| :math:`\color{grey}{Version \ 1.0.0}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 13/11/2020}`
 
 1. Nom de partie
 ===================================

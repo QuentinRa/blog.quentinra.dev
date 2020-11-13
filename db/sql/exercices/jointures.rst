@@ -24,19 +24,19 @@ la réponse attendue.
 
 1. \
 	| Numéros et noms des différents viticulteurs qui proposent des vins de 'LOIRE' de millesime 1993.
-	| Réponse: 1 tuple.
+	| :code:`Réponse attendue` :  1 tuple.
 
 2. \
 	| Numéros et noms des buveurs ayant commandé un vin de cru 'POMMARD'.
-	| Réponse: 4 tuples.
+	| :code:`Réponse attendue` : 4 tuples.
 
 3. \
 	| Noms des viticulteurs à qui le buveur 'DUPOND' a commandé du vin.
-	| Réponse: 2 tuples.
+	| :code:`Réponse attendue` : 2 tuples.
 
 4. \
 	| Numéros et noms des viticulteurs qui habitent la même ville qu'un de leurs clients.
-	| Réponse: 1 tuple.
+	| :code:`Réponse attendue` : 1 tuple.
 
 5. \
 	|
@@ -46,25 +46,25 @@ la réponse attendue.
 			b) en testant les propriétés que certains attributs doivent vérifier, (NOT) EXISTS ou ALL (ANY)
 			c) en testant le résultat d'une jointure externe. [LEFT/RIGHT/FULL] OUTER JOIN
 
-	| Réponse: 7 tuples.
+	| :code:`Réponse attendue` : 7 tuples.
 
 6. \
 	| Liste des crus qui ont été commandés mais pas en quantité supérieure ou égale à 12, en utilisant les mêmes approches que précédemment.
-	| Réponse: 3 tuples.
+	| :code:`Réponse attendue` : 3 tuples.
 
 7. \
 	| Numéros et noms des buveurs qui n'ont commandé que des vins de la région de 'BOURGOGNE', en utilisant les approches a) et b) présentées précédemment.
-	| Réponse: 3 tuples.
+	| :code:`Réponse attendue` : 3 tuples.
 
 8. \
 	|
 		Numéros et noms des buveurs qui n'ont commandé que des vins des régions de 'BOURGOGNE' et de 'BORDEAUX',
 		en utilisant les approches a) et b) présentées précédemment.
-	| Réponse: 1 tuple.
+	| :code:`Réponse attendue` : 1 tuple.
 
 9. \
 	| Liste des villes dans lesquelles se trouvent soit un viticulteur soit un buveur.
-	| Réponse: 17 tuples.
+	| :code:`Réponse attendue` : 17 tuples.
 
 .. toctree::
    :maxdepth: 1

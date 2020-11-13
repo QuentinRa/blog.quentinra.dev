@@ -1,13 +1,1 @@
-Il est également possible de placer des contraintes sur un attribut :
-
-Contraintes
-NOT NULL	valeur nulle impossible
-NULL	Peut seulement prendre la valeur NULL
-PRIMARY KEY	Clé, déjà NOT NULL de base
-UNIQUE	Attribut est unique
-REFERENCES ou FOREIGN KEY	Clé étrangère
-
-Si le nom d'un attribut/d'une table est un mot réservé alors il faut l'échapper avec des quotes
-: `nom_table` ou `nom_attribut` (par exemple desc, user, ...)
-
 notez que les attributs du group by sont forcément dans la clause select
