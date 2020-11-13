@@ -19,6 +19,10 @@ donc selon un critère.
 		WHERE attribut IN (valeurs, ...);
 		WHERE attribut IN (Select attribut FROM ...);
 
+		-- IS ou IS NOT une valeur (par exemple NULL)
+		WHERE attribut IS valeur
+		WHERE attribut IS NOT valeur
+
 		-- requête SQL retourne au moins une ligne
 		-- NOT EXISTS pour la négation
 		-- exemple plus bas car compliqué

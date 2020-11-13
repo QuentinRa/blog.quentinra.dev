@@ -211,10 +211,6 @@ Les qualificatifs sont :
 	*	DISTINCT = sans doublons
 	*	\* = tous y compris les valeurs nulles. (->pas besoin de nom attribut)
 
-.. danger::
-
-	La clause HAVING ne marche que si la clause GROUP BY est présente.
-
 .. code:: sql
 
 	Select attribut, SUM(DISTINCT attribut2) -- ici les deux colonnes seront attribut et sum
@@ -222,12 +218,18 @@ Les qualificatifs sont :
 	GROUP BY attribut -- crée des groupes, ceux ayant la même valeur dans attribut sont ensembles
 	HAVING MAX(attribut2) > 10; -- le calcul de having est fait sur les groupes
 
-.. note::
+Group By ?
+	HAVING Fait des opérations sur des groupes, donc nécessite une clause appelée GROUP BY.
 
-	La clause :code:`Group by` partitionne les résultats, c'est-à-dire que si vous mettez
-	:code:`Group by attribut1, attribut2`, alors les résultats seront groupés dans un groupe
-	dans lequels ils ont la même valeur dans attribut1. Puis une sous-groupe sera créé sur le même
-	fonctionnement avec attribut2.
+	La clause Group by attr1, ... partitionne les résultats tel que les tuples dans chaque
+	partition aient la même valeur dans les attributs attr1, ...
+
+	Ainsi, si vous faites HAVING count(*) > 3, vous n'affichez que les partition qui
+	ont plus de 3 éléments !
+
+	.. danger::
+
+		Les valeurs données à Group by (attr1, ...) doivent forcément être dans le select.
 
 5. Gestion des table
 =========================================
