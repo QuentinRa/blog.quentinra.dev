@@ -30,7 +30,8 @@ FROM buveur b LEFT OUTER JOIN commande c on b.n_buveur = c.n_buveur
 GROUP BY b.n_buveur, nom
 HAVING `nombre de vins commandés` > 0;
 
--- 5. Quantité de vin moyenne vendue pour chaque viticulteur de la région 'BOURGOGNE'. Affichez le numéro et le nom de chaque viticulteur
+-- 5. Quantité de vin moyenne vendue pour chaque viticulteur de la région 'BOURGOGNE'.
+-- Affichez le numéro et le nom de chaque viticulteur
 -- puis la quantité de vin moyenne vendue dans une colonne "quantité moyenne vendue".
 
 SELECT n_viticulteur, nom, avg(c_qte) as "quantité moyenne vendue"

@@ -38,6 +38,9 @@ Fonction                                     Dérivée
 :math:`cos(x)`                               :math:`-sin(x)`
 :math:`sin(x)`                               :math:`cos(x)`
 :math:`tan(x)`                               :math:`1+tan^2(x)` ou :math:`\frac{1}{cos^2(x)}`
+:math:`arccos(x)`                            :math:`-\frac{1}{\sqrt{1-x^2}}`
+:math:`arcsin(x)`                            :math:`\frac{1}{\sqrt{1-x^2}}`
+:math:`arctan(x)`                            :math:`\frac{1}{1+x^2}`
 ============================================ ============================================
 
 ============================================ ============================================

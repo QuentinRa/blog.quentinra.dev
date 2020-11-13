@@ -8,7 +8,5 @@
 .. literalinclude:: s1.sql
   :language: sql
 
-|
-
 **Crédits**
 	* Correction de l'erreur Question 7 - Adrien[79]#9734

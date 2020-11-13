@@ -15,3 +15,5 @@ https://fr.wikipedia.org/wiki/Interpolation_num%C3%A9rique
 http://dictionnaire.sensagent.leparisien.fr/Interpolation%20polynomiale/fr-fr/
 
 https://fr.wikipedia.org/wiki/Interpolation_polynomiale
+
+https://fr.wikipedia.org/wiki/M%C3%A9thode_des_trap%C3%A8zes

@@ -26,9 +26,11 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/math/analyse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/math/analyse.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sql/exercices/calculs/a1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/calculs/a1.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/sql/exercices/jointures/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/jointures/s1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/exercices/jointures/s1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/jointures/s1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/derive.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/derive.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral/d2.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +165,8 @@
       <workItem from="1605094851427" duration="31138000" />
       <workItem from="1605135318607" duration="1433000" />
       <workItem from="1605191389561" duration="25285000" />
-      <workItem from="1605258170449" duration="19230000" />
+      <workItem from="1605258170449" duration="21081000" />
+      <workItem from="1605291238847" duration="5256000" />
     </task>
     <servers />
   </component>
