@@ -19,9 +19,10 @@ Les choses non faites et à faire
 * ajouter l'interpolation
 
 **Base de données**
-* ajouter le cours sur le SQL
 * ajouter les triggers plsql
 * ajouter le cours sur SQLite ?
+* notez que les attributs du group by sont forcément dans la clause select
+* Organisation Indexée : B+
 
 **Modélisation**
 * ajouter le cours de modélisation relationnelle
@@ -29,9 +30,6 @@ Les choses non faites et à faire
 
 **Linux**
 * Réécrire le cours, je crois c'est incomprehensible/trop condensé
-
-**Algèbre matriciel**
-* ajouter GAUSS et finir le cours
 
 **Jeux vidéos**
 * commencer tout ça, ajout des cours
@@ -42,7 +40,8 @@ Les choses non faites et à faire
 * Ajouter les Cours de DUT
 
 **Bric à Brac**
-* Faire les exercices sur les intégrales (1/3)
+* reductions/s2 question 3
+* Faire les exercices sur les intégrales (2/3)
 * Faire les exercices non rank
 * ajouter les notations de landau
 * ajouter les complexes

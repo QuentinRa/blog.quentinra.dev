@@ -56,3 +56,7 @@ On peut le montrer simplement en contractant
 les arrêtes reliant le cycle externe aux sommets de l'étoile.
 On obtient alors k5 donc le graphe n'est pas planaire.
 
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

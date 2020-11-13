@@ -54,3 +54,9 @@ Ce qui donne
 	* :math:`P(Ar_3|A_1 \cap T_2) = \frac{\frac{10*7*5}{22*21*20}}{\frac{10*7}{22*21}} = 5/20`
 
 :math:`P(A_1 \cap T_2 \cap Ar_3) = \frac{10*7*5}{22*21*20}`
+
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

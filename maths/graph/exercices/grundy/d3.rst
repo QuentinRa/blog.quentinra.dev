@@ -58,3 +58,8 @@ On liste les sommets par ordre décroissants de successeurs :
 | 4 voisin de 3(0) et 8(1) donc 2
 | 2 voisin de 5(0) et 4(2) donc 1
 | 6 voisin donc 1 (1), 2(2),8(1),7(0) donc 2
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

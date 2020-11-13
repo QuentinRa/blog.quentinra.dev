@@ -54,3 +54,8 @@ concernés par l'arête.
 .. math::
 
 	|V| = \frac{(d+1)*d}{2}
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

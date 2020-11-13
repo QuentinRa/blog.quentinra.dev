@@ -28,3 +28,8 @@ On lit de gauche à droite et de haut en bas.
 5. non planaire : m < 3n -5 faux car m>50 donc plus grand que 25=3n -5
 
 6. non planaire : m < 3n -5 faux car m=3n -5
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

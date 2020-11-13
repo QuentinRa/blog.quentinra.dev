@@ -26,30 +26,90 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/exercice.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/exercice.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/CHEKCLIST.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/CHEKCLIST.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/db/sql.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/imperative/c.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/imperative/c.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/sql/exercices/calculs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/calculs.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sql/exercices/calculs/a1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/calculs/a1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sql/exercices/calculs/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/calculs/s1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/sql/exercices/general.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/general.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sql/exercices/general/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/general/d1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/sql/exercices/jointures.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/jointures.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sql/exercices/jointures/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/jointures/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sql/exercices/jointures/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/jointures/s1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/bric/exercices/derive.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/derive.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/derive/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/derive/d1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/bric/exercices/etude.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/etude.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/etude/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/etude/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/etude/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/etude/s1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral/d3.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral/s1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/bric/exercices/limit.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/limit.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/bric/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/non_rank.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/graph/exercices/bases.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/bases.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/bases/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/bases/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/bases/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/bases/d2.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/graph/exercices/grundy.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/grundy.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/grundy/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/grundy/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/grundy/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/grundy/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/grundy/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/grundy/d3.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/non_rank.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/graph/exercices/notions.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/notions.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/notions/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/notions/d1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/graph/exercices/parcours.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/parcours.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/parcours/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/parcours/d1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/graph/exercices/planaire.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/planaire.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/planaire/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/planaire/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/planaire/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/planaire/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/planaire/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/planaire/d3.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/graph/exercices/stable.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/stable.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/stable/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/stable/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/stable/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/stable/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/stable/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/stable/d3.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/graph/exercices/transitive.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/transitive.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/transitive/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/transitive/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/transitive/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/transitive/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/transitive/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/transitive/d3.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/graph/exercices/voisins.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/voisins.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/voisins/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/voisins/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/voisins/d1_2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/voisins/d1_2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/voisins/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/voisins/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/voisins/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/voisins/d3.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/calculs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/calculs.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/calculs/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/calculs/d1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/determinant.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/determinant.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/determinant/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/determinant/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/determinant/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/determinant/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/gauss.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/gauss.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/non_rank.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions/s1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/matrix/exercices/reductions/s2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/exercices/reductions/s2.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/proba/exercices/avg.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/avg.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/avg/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/avg/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/avg/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/avg/s1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition/d3.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition/d4.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition/d4.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition/d4_1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition/d4_1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition/d5.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition/d5.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/condition/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/condition/s1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/proba/exercices/count.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/count.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/count/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/count/d1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/proba/exercices/loi.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/loi.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/loi/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/loi/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/loi/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/loi/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/loi/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/loi/d3.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/loi/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/loi/s1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/loi/s2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/loi/s2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/exercices/non_rank.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,19 +145,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\assets\db\sql" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\sql\tables" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\sql\users" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\sql\create" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\db" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\db\sql\gestion" />
       <recent name="C:\Users\quent\Documents\texas-res\db\sql\concurrence" />
       <recent name="C:\Users\quent\Documents\texas-res\db\sql\optimisation" />
       <recent name="C:\Users\quent\Documents\texas-res\db\sql\exercices\general" />
       <recent name="C:\Users\quent\Documents\texas-res\db\sql\exercices\jointures" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\autres" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\db\sql" />
+      <recent name="C:\Users\quent\Documents\texas-res\db\sql\tables" />
+      <recent name="C:\Users\quent\Documents\texas-res\db\sql\users" />
+      <recent name="C:\Users\quent\Documents\texas-res\db\sql\create" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -185,7 +245,7 @@
       <workItem from="1605135318607" duration="1433000" />
       <workItem from="1605191389561" duration="25285000" />
       <workItem from="1605258170449" duration="21081000" />
-      <workItem from="1605291238847" duration="6613000" />
+      <workItem from="1605291238847" duration="8322000" />
     </task>
     <servers />
   </component>

@@ -72,4 +72,4 @@ aucun
 
 **Crédits**
 	* Massimissa MERABET (enseignant à l'ENSIIE)
-	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
+	* Dimitri WATEL (enseignant à l'ENSIIE)

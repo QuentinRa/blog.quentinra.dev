@@ -55,3 +55,9 @@ si X="boules tirées soient toutes de couleurs différentes" alors
 	Ce qui donne :math:`P(B_1V_2N_3)=\frac{2*2*5}{5*7*8}`
 
 :math:`P(X)=20/280 + 8/280 + 30/280 + 60/280 = 118/280`
+
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

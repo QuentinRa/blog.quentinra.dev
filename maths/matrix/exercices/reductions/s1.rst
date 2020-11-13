@@ -97,3 +97,9 @@ En déduire la valeur de :math:`u_n` en fonction de n uniquement
 U_n est une suite géométrique, :math:`u_n=A^n*U_0` et :math:`U_0=\begin{pmatrix}u_0\\u_1\end{pmatrix}=\begin{pmatrix}0\\1\end{pmatrix}`.
 
 Et je sais pas comment mais on trouve :math:`u_n=Sommet\ haut\ droit\ de\ la\ matrice=-2*2^{n}+3^n`.
+
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

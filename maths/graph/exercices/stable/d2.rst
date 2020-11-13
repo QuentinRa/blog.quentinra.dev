@@ -57,3 +57,8 @@ On trouve la clique a,b,d. On remarque que le Graphe G', complémentaire de G
     d -> f [arrowhead = none];
     c -> b [arrowhead = none];
   }
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

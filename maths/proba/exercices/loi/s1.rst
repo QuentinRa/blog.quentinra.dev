@@ -56,3 +56,9 @@ Question 3 (bonus)
 .. math::
 
 	P(X_2=k) = P(X_2 = l\ et\ X_1 \in [1,n]) = \sum_{k=1}^{n-l} P(X_2=l\ et\ X_1=k)
+
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

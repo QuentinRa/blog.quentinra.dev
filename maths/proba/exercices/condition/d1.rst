@@ -55,3 +55,9 @@ Sur le même principe que précédemment, on retire une boule à chaque fois, do
 	* :math:`\frac{3}{13}` d'avoir une boule noire, car on a déjà pioché deux boules, 3 inchangé car ce n'était pas des noires
 
 donc :math:`P(R_1 \cap B_2 \cap N_3)=\frac{7*5*3}{15*14*13}`
+
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

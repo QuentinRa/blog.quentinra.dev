@@ -197,3 +197,8 @@ comme pour :math:`A_2`.
 
 	Le déterminant vaut 1 (1*1*1*1=1) donc inversible (car != 0) et la matrice inverse est :
 	:math:`A_4^{-1}=\begin{pmatrix}1 & 0 & 0 & 0\\0 & 1 & 0 & 0\\0 & 0 & 1 & 0\\\frac{-d}{a} & \frac{-c}{a} & \frac{-b}{a} & \frac{1}{a}\end{pmatrix}`
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

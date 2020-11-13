@@ -46,3 +46,9 @@ En déduire la valeur de la somme.
 		=^{définition} \sum_{k=n}^{k=2n} P(X=k) = 1 \\
 		\Leftrightarrow \sum_{k=n}^{k=2n} \frac{nn!(k-1)!}{(2n)!(k-n)!} = 1
 		\Leftrightarrow \sum_{k=n}^{k=2n} \frac{(k-1)!}{(k-n)!} = \frac{nn!}{(2n)!}
+
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

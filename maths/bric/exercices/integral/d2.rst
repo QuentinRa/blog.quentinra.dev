@@ -81,3 +81,6 @@ Calculer les valeurs des intégrales suivantes en utilisant la technique d’int
 		\frac{\frac{\pi}{6}}{2} - \begin{bmatrix} -\sqrt{1-x^2} \end{bmatrix}_{0}^{\frac{1}{2}}
 		= \frac{\frac{\pi}{6}}{2} - (1- \frac{\sqrt{3}}{2})
 		= -1 + \frac{\sqrt{3}}{2} + \frac{\pi}{12}
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

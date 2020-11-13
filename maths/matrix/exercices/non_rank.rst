@@ -9,5 +9,4 @@ aucun
 -----
 
 **Crédits**
-	* Christophe MOUILLERON (enseignant à l'ENSIIE)
-	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
+	* aucun

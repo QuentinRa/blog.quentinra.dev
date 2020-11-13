@@ -285,3 +285,6 @@ variation f            :math:`0 \ \ \  \nearrow \ \ \ 1 \ \  \ \searrow \ \ 0`
 
 		plt.plot(x,y)
 		plt.show()
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

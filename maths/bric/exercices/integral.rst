@@ -120,4 +120,4 @@ aucun
 -----
 
 **Crédits**
-	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
+	* Christophe MOUILLERON (enseignant à l'ENSIIE)

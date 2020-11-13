@@ -2,3 +2,4 @@ perror
 -Wall -Wextra
 
 http://web4.ensiie.fr/~urbain/enseignement/ipi/
+http://web4.ensiie.fr/~guillaume.burel/cours/IPI/tp6.html

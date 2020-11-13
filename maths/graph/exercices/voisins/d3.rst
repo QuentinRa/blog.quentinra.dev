@@ -12,3 +12,8 @@ Sachant que chaque sommet de la chaine à un degré d, alors le "dernier" nœud
 est relié à d autres sommets, car il y a tous ceux avant + le suivant (il n'est pas relié
 à lui même car cela crée un cycle) donc on a d sommets + lui-même = d+1. On peut toujours
 ajouter un sommet en répétant le raisonnement.
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

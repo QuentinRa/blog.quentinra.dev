@@ -394,3 +394,9 @@ Vecteur: :math:`\begin{pmatrix}4 \alpha \\ \alpha \\ 0\end{pmatrix}`.
 		\end{cases}
 
 Vecteur: :math:`\begin{pmatrix}13\alpha\\ 5\alpha \\ \alpha\end{pmatrix}`.
+
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

@@ -7,3 +7,6 @@
 
 .. literalinclude:: d1.sql
   :language: sql
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

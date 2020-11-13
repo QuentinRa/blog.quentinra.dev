@@ -23,3 +23,9 @@ On définit :math:`E_i` = "le joueur i tire une boule blanche"
 | :math:`\mathbb{E}[E_3] = 1/5 * 10 = 2`
 | :math:`\mathbb{E}[E_4] = 1/10 * 10 = 1`
 
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
+

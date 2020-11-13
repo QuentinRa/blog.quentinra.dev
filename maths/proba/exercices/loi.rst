@@ -137,4 +137,5 @@ aucun
 -----
 
 **Crédits**
-	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
+	* Cyril BENEZET (enseignant à l'ENSIIE)
+	* Vathana LY VATH (enseignant à l'ENSIIE)

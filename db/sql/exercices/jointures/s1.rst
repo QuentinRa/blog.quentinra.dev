@@ -9,4 +9,5 @@
   :language: sql
 
 **Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 	* Correction de l'erreur Question 7 - Adrien[79]#9734

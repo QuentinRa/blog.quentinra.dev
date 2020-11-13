@@ -37,3 +37,8 @@ on aurait alors 2 sommets pas dans stable, or le sommet choisi étant de degré 
 Un stable de poids maximum est a,c,e.
 
 Même logique que plus haut.
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

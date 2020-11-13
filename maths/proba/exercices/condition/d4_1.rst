@@ -20,3 +20,9 @@ On a 4 tiroir donc la probabilité que la lettre soit dans un tiroir est 1/4.
 Cependant, il se peut que la lettre ne soit dans aucun tiroir, donc on cherche
 la probabilité que la lettre soit dans un tiroir (p) et que ce tiroir soit le 4ème (1/4)
 ce qui donne P(X) = p/4.
+
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

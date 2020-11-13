@@ -228,3 +228,9 @@
 	Calculez les fermetures transitives des graphes :math:`G_{1r}` et :math:`G_{2r}`.
 
 Les fermetures transitives sont les mêmes.
+
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

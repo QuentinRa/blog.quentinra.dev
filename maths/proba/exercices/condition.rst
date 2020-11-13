@@ -135,5 +135,5 @@ aucun
 -----
 
 **Crédits**
+	* Cyril BENEZET (enseignant à l'ENSIIE)
 	* Vathana LY VATH (enseignant à l'ENSIIE)
-	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

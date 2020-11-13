@@ -68,3 +68,9 @@ On rappelle la formule de Pascal : :math:`\sum_{k=n}^N C^n_k =  C^{n+1}_{N+1}`
 		= \frac{n(2n+2)(2n+1)}{(n+2)} -  \frac{n(2 n + 1)}{(n + 1)} -
 		\frac{n^2(2 n + 1)^2}{(n + 1)^2}
 		= \frac{n^2(2n+1)}{(n+1)^2(n+2)}
+
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

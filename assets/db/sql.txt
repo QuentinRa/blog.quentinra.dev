@@ -1,3 +1,0 @@
-notez que les attributs du group by sont forcément dans la clause select
-
-Organisation Indexée : B+

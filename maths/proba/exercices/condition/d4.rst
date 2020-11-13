@@ -21,3 +21,9 @@ La probabilité que la lettre ne soit pas dans le tiroir i est donc de 1-p : :ma
 
 La probabilité donc que la lettre soit dans le 4e tiroir, demande à ce qu'elle ne soit pas dans l'un des trois
 premiers tiroirs : :math:`P(X_4)= (1-p)^3 * p`.
+
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

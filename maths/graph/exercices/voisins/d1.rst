@@ -36,3 +36,8 @@ dans une grille ?
 
 Chaque sommet est lié à 2 ou 3 ou 4 arêtes donc
 :code:`d(x) = 2` ou :code:`d(x) = 3` ou :code:`d(x) = 4`.
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

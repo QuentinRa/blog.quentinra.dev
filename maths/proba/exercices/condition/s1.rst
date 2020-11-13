@@ -50,3 +50,9 @@ On définit S = le patient à deux tests positifs
 		=
 		\frac{0.0005*0.96^2}{0.96^2*0.0005+0.02^2*(1-0.0005)} \\
 		= \frac{0.0004608}{0.0008606} = 0.53544039043  \approx 0.53
+
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

@@ -78,3 +78,6 @@ On pose y = exp(x) et x = ln y donc
 
 On a démontré dans la question 2 que la limite :math:`\lim_{x \rightarrow +\infty } \frac{exp(x)}{x^n} = +\infty`
 donc on a terminé.
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

@@ -139,3 +139,8 @@ Autre parcours
 			| g déjà terminé
 
 	Donc résultat : h,i,j,e,b,d,k,c,g,f,a
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

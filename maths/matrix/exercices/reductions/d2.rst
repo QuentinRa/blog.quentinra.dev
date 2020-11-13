@@ -82,3 +82,9 @@ et on a calculé :math:`A^-1` donc
 		\end{pmatrix}
 		\begin{pmatrix}2\\-1+-2+2+-1=-2\\-2+3+1+0=2\\1+-1+-1+1=0\end{pmatrix}
 		= \begin{pmatrix}d\\c\\b\\a\end{pmatrix}\\
+
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

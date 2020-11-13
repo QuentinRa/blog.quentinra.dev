@@ -126,3 +126,8 @@ Soit :math:`G'` un graphe avec des arrêtes de G en moins, :math:`G'` n'est pas 
 il n'est pas :math:`\tau`-équivalent à G.
 
 Donc G est :math:`\tau`-minimum :math:`\tau`-équivalent à lui-même.
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

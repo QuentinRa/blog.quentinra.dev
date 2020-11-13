@@ -44,3 +44,9 @@ On considère Y qui a tiré 5 des 32 cartes, dont 1 as. Il reste donc 28 cartes,
 | :math:`|\overline{X}| = C_{25}^5`
 
 :math:`P(X) = 1 - P(\overline{X}) = 1 - \frac{C_{25}^5}{C_{28}^5}`
+
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

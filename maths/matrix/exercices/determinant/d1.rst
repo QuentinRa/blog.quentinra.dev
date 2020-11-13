@@ -197,3 +197,8 @@ On a alors
 
 Donc c'est inversible lors que ni :math:`2a=0`, ni :math:`(1+a)=0`, ni :math:`(1-a)=0`
 donc si :math:`a \notin \{0,-1, 1\}`
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

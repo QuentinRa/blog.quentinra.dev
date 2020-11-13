@@ -27,3 +27,8 @@ On calcule en utilisant la fonction de grundy le noyau :
 | On met 1 au sommet 3
 
 Donc on a 1 et 5 dans le noyau ou 1 et 3 comme noyau.
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

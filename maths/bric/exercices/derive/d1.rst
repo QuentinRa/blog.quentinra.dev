@@ -78,3 +78,6 @@ L'ensemble de dérivation est
 	* ln(x) = :math:`x \gt 0`
 
 Donc :math:`x \gt 0`.
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

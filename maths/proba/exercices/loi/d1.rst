@@ -81,3 +81,9 @@ Donc on vérifie
 				\Leftrightarrow^{développement \ série}
 				\alpha * e = 1\\
 				\Leftrightarrow  \alpha = \frac{1}{e} \Leftrightarrow \alpha = e^{-1}
+
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

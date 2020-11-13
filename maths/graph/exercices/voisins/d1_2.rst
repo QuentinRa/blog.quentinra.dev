@@ -56,3 +56,9 @@ Chaque sommet est lié à 2 ou 3 ou 4 arêtes donc soit
 .. math::
 
 	|V| = 2n_1 + 3n_2 + 4n_3
+
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

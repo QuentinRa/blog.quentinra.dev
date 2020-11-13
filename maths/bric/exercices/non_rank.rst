@@ -23,4 +23,3 @@ pour tout :math:`x in J` où cela a du sens.
 
 **Crédits**
 	* Christophe MOUILLERON (enseignant à l'ENSIIE)
-	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

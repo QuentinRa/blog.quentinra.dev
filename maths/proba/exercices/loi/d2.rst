@@ -49,3 +49,9 @@ Pour quelle valeur du réel a, la suite (:math:`u_n`) définit-elle bien une loi
 * suite à termes positif donc croissante.
 
 Donc c'est bien une loi de probabilité.
+
+
+|
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
