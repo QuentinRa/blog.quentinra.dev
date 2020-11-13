@@ -162,3 +162,23 @@ ps #liste les processus
 #
 # ppid, (n° processus père) pgid, (n° groupe) tpgid (id processus 1er plan) sid (n°session)
 # comm (commande)
+
+non, en gros un processus c'est l'environnement d'exécution de ton programme + ton programme.
+
+Donc dès que tu fais ./a.out, ça crée un processus avec l'environnement
+- nom du programme
+- terminal qui a lancé le programme
+- emplacement des variables dans la mémoire
+- variables d'environnement (PATH, ...)
+- ton code
+- etc....
+
+Les processus ont un id, appelé pid. Le parent de tous à pour pid 1 (systemd). (il est crée par init.d le 0).
+
+Un processus ne reproduit en se dupliquant, donc par exemple systemd a copié son environnement, a changé le code a exécuté et à crée le processus au pid 3 etc... en c, on fait ça avec la fonctionint fork().
+
+C'est un peu tout ce qu'il y a dire jcrois, mais en gros on résumé souvent à un processus = un programme. En gros voyez vos processus comme des parties de votre pc qui peuvent exécuter du code, donc si vous voulez lancer une commande, exécuter un programme, ect... vous créez un processus et vous le lancez ! (je ferais un truc plus sérieux sur mon site, mais normalement ça vous suffit)
+
+Juste un point sur les signaux. Un processus est sensibilisé à des signaux donc en gros CTRL+Z, CTRL+C etc... sont des commandes qui envoient un message aux processus (meurt ! arrête toi !) qui déclenche une action (le processus se tue, ...). Cette action vous pouvez la modifier (c'est ce qu'on a fait la dernière fois).
+
+Par exemple dire CTRL+Z, au lieu de mettre en pause, maintenant ça affiche "ntm je m'arrête pas"

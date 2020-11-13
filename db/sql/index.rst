@@ -4,7 +4,7 @@
 SQL (Structured Query Language)
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.1}`
+| :math:`\color{grey}{Version \ 1.0.2}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 13/11/2020}`
 
 Le SQL est un language permettant d'accéder à une base de données (BD ou DB).
@@ -310,7 +310,11 @@ On peut annuler une transaction avec ROLLBACK ou la valider avec COMMIT.
 		Calculs                   <exercices/calculs>
 		Non triés                 <exercices/non_rank>
 
-|
+Dans la continuité du cours
+
+.. toctree::
+
+		SQL - avancé <advanced>
 
 -----
 

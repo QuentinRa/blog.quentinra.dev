@@ -1,3 +1,3 @@
 notez que les attributs du group by sont forcément dans la clause select
 
-Quel est le schéma du résultat de la requête ?
+Organisation Indexée : B+

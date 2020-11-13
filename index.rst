@@ -85,7 +85,6 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     Entreprise                           <business/env/index>
     Macroéconomie                        <business/env/macro>
     Documents d'une Entreprise           <business/docs/index>
-    SQL - avancé                         <db/sql/advanced>
     SQLite                               <db/sql/sqlite>
     Modélisation relationnelle           <conception/uml/model>
     Unified Modeling Language (UML)      <conception/uml/index>

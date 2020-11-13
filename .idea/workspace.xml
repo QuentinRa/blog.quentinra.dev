@@ -27,14 +27,10 @@
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/db/sql.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/sql.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/db/tp1.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/exercice.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/exercice.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/imperative/c.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/imperative/c.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/system/bash.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/system/bash.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/sql/advanced.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/advanced.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/exercices/calculs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/calculs.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/exercices/jointures.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/jointures.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/exercices/jointures/s1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/jointures/s1.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/sql/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +59,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/db/sql/exercices/general" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/db/sql/gestion" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
@@ -71,18 +67,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\db\sql" />
       <recent name="C:\Users\quent\Documents\texas-res\db\sql\tables" />
       <recent name="C:\Users\quent\Documents\texas-res\db\sql\users" />
       <recent name="C:\Users\quent\Documents\texas-res\db\sql\create" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\db" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\db\bases" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\db\sql\gestion" />
+      <recent name="C:\Users\quent\Documents\texas-res\db\sql\concurrence" />
+      <recent name="C:\Users\quent\Documents\texas-res\db\sql\optimisation" />
       <recent name="C:\Users\quent\Documents\texas-res\db\sql\exercices\general" />
       <recent name="C:\Users\quent\Documents\texas-res\db\sql\exercices\jointures" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\sql\exercices\calculs" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\sql\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\sql\tables" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -169,7 +165,7 @@
       <workItem from="1605094851427" duration="31138000" />
       <workItem from="1605135318607" duration="1433000" />
       <workItem from="1605191389561" duration="25285000" />
-      <workItem from="1605258170449" duration="8356000" />
+      <workItem from="1605258170449" duration="11769000" />
     </task>
     <servers />
   </component>
@@ -284,9 +280,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605033283850" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605261064526">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605268975794">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605261064526" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605268975794" />
   </component>
 </project>
