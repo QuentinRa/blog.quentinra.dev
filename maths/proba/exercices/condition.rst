@@ -20,6 +20,8 @@ noire si chaque bille est :
 
 	Proposition de correction n°1			<condition/d1>
 
+| :code:`[TAG] ENSIIE MBR TD1 2020 S1`
+
 2/5 Probabilités conditionnelles
 ----------------------------------------------------
 
@@ -40,6 +42,8 @@ Le candidat tire successivement les trois questions sans remettre dans le tas un
 
 	Proposition de correction n°1			<condition/d2>
 
+| :code:`[TAG] ENSIIE MBR TD1 2020 S1`
+
 3/5 Probabilités conditionnelles
 ----------------------------------------------------
 
@@ -57,6 +61,8 @@ Quelle est la probabilité pour que les boules tirées soient toutes de couleurs
 
 	Proposition de correction n°1			<condition/d3>
 
+| :code:`[TAG] ENSIIE MBR TD1 2020 S1`
+
 4/5 Probabilités conditionnelles
 ----------------------------------------------------
 
@@ -69,6 +75,8 @@ trois premiers ?
 
 	Proposition de correction n°1			<condition/d4>
 	Proposition de correction n°2			<condition/d4_1>
+
+| :code:`[TAG] ENSIIE MBR TD1 2020 S1`
 
 5/5 Théorème de Bayes
 --------------------------------
@@ -89,6 +97,8 @@ chemin est le bon. Quelle est la probabilité qu’il se soit adressé à B1
    :maxdepth: 1
 
 	Proposition de correction n°1			<condition/d5>
+
+| :code:`[TAG] ENSIIE MBR TD1 2020 S1`
 
 Niveau supérieur
 ***********************
@@ -112,6 +122,8 @@ patient est en bonne santé, et ceci se produit dans 2 % des cas.
    :maxdepth: 1
 
 	Proposition de correction n°1			<condition/s1>
+
+| :code:`[TAG] ENSIIE MBR TD1 2020 S1`
 
 Niveau avancé
 ***********************

@@ -39,6 +39,8 @@ Pour chacun des matrices suivantes, calculer **le polynôme caractéristique**, 
 
 	Proposition de correction n°1			<reductions/d1>
 
+| :code:`[TAG] ENSIIE MOM TD2 2020 S1`
+
 2/2 Calcul matriciel et interpolation polynomiale
 ---------------------------------------------------
 
@@ -54,6 +56,8 @@ On considère le polynôme :math:`P(x) = ax^3+bx^2+cx+d` et la matrice
    :maxdepth: 1
 
 	Proposition de correction n°1			<reductions/d2>
+
+| :code:`[TAG] ENSIIE MOM TD2 2020 S1`
 
 Niveau supérieur
 ***********************
@@ -77,6 +81,8 @@ On considère la suite :math:`(U_n)_{n \in \mathbb{N}}` définie par
 
 	Proposition de correction n°1			<reductions/s1>
 
+| :code:`[TAG] ENSIIE MOM TD2 2020 S1`
+
 2/2 Réduction d'endomorphisme et récurrences linéaires
 --------------------------------------------------------
 
@@ -94,6 +100,8 @@ puis exprimer :math:`U_n` en fonction de n uniquement.
    :maxdepth: 1
 
 	Proposition de correction n°1			<reductions/s2>
+
+| :code:`[TAG] ENSIIE MOM TD2 2020 S1`
 
 Niveau avancé
 ***********************

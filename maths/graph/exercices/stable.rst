@@ -24,6 +24,8 @@ et p(h) = 1.
 
 	Proposition de correction n°1			<stable/d1>
 
+| :code:`[TAG] ENSIIE MTG TD3 2020 S1`
+
 2/3 Clique et stable
 ------------------------
 
@@ -41,6 +43,8 @@ et p(h) = 1.
    :maxdepth: 1
 
 	Proposition de correction n°1			<stable/d2>
+
+| :code:`[TAG] ENSIIE MTG TD3 2020 S1`
 
 3/3 Stable maximum sous forme d’équations
 ---------------------------------------------
@@ -70,6 +74,8 @@ Soit P le problème suivant :
    :maxdepth: 1
 
 	Proposition de correction n°1			<stable/d3>
+
+| :code:`[TAG] ENSIIE MTG TD3 2020 S1`
 
 Niveau supérieur
 ***********************

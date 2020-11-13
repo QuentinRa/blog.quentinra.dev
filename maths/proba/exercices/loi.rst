@@ -33,6 +33,8 @@ Connaissant la fonction de densité discrète :math:`f(x) = \frac{e^{-1}}{x!}, x
 
 	Proposition de correction n°1			<loi/d1>
 
+| :code:`[TAG] ENSIIE MBR TD2 2020 S1`
+
 2/3 - Série exponentielle
 ------------------------------------
 
@@ -48,6 +50,8 @@ Pour quelle valeur du réel a, la suite (:math:`u_n`) définit-elle bien une loi
    :maxdepth: 1
 
 	Proposition de correction n°1			<loi/d2>
+
+| :code:`[TAG] ENSIIE MBR TD2 2020 S1`
 
 3/3 Application numérique
 ------------------------------------------------
@@ -65,6 +69,8 @@ En déduire la loi de probabilité de la variable aléatoire X qui représente l
    :maxdepth: 1
 
 	Proposition de correction n°1			<loi/d3>
+
+| :code:`[TAG] ENSIIE MBR TD2 2020 S1`
 
 Niveau supérieur
 ***********************
@@ -96,6 +102,8 @@ On note :math:`X_2` le nombre de tirages effectués par ce second joueur.
 
 	Proposition de correction n°1			<loi/s1>
 
+| :code:`[TAG] ENSIIE MBR TD2 2020 S1`
+
 2/2 - Tirage de boules
 -----------------------------------
 
@@ -116,6 +124,8 @@ ce que l’on ait tiré la dernière boule blanche. Soit k le nombre total de bo
    :maxdepth: 1
 
 	Proposition de correction n°1			<loi/s2>
+
+| :code:`[TAG] ENSIIE MBR TD2 2020 S1`
 
 Niveau avancé
 ***********************

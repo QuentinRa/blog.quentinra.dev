@@ -54,6 +54,8 @@ Calculer
 
 	Proposition de correction n°1			<calculs/d1>
 
+| :code:`[TAG] ENSIIE MOM TD1 2020 S1`
+
 Niveau supérieur
 ***********************
 

@@ -49,6 +49,8 @@ Soit G le graphe suivant,
 
 	Proposition de correction n°1			<notions/d1>
 
+| :code:`[TAG] ENSIIE MTG TD1 2020 S1`
+
 Niveau supérieur
 ***********************
 

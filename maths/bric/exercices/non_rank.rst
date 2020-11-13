@@ -15,6 +15,8 @@ pour tout :math:`x in J` où cela a du sens.
 
 3. Même question pour arcsin et arctan.
 
+| :code:`[TAG] ENSIIE MOM TD3 2020 S1`
+
 |
 
 -----

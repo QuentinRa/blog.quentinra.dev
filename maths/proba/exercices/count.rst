@@ -18,6 +18,8 @@ Un jeu de cartes comprend 32 cartes. On distribue au hasard 5 cartes à chacun d
 
 	Proposition de correction n°1			<count/d1>
 
+| :code:`[TAG] ENSIIE MBR TD1 2020 S1`
+
 Niveau supérieur
 ***********************
 

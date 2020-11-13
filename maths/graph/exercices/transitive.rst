@@ -35,6 +35,8 @@ Niveau débutant
 
 	Proposition de correction n°1			<transitive/d1>
 
+| :code:`[TAG] ENSIIE MTG TD2 2020 S1`
+
 2/3 :math:`\tau`-équivalence et graphes réduits
 --------------------------------------------------
 
@@ -53,6 +55,8 @@ Niveau débutant
    :maxdepth: 1
 
 	Proposition de correction n°1			<transitive/d2>
+
+| :code:`[TAG] ENSIIE MTG TD2 2020 S1`
 
 3/3 Calculer la fermeture transitive d'un graphe
 --------------------------------------------------
@@ -97,6 +101,8 @@ Niveau débutant
    :maxdepth: 1
 
 	Proposition de correction n°1			<transitive/d3>
+
+| :code:`[TAG] ENSIIE MTG TD2 2020 S1`
 
 Niveau supérieur
 ***********************

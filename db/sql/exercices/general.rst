@@ -36,9 +36,9 @@ Donner une requête SQL donnant
 
 	Proposition de correction n°1			<general/d1>
 
-| :code:`[TAG] ENSIIE IBD TP1 2018`
-| :code:`[TAG] ENSIIE IBD TP1 2019`
-| :code:`[TAG] ENSIIE IBD TP1 2020`
+| :code:`[TAG] ENSIIE IBD TP1 2018 S1`
+| :code:`[TAG] ENSIIE IBD TP1 2019 S1`
+| :code:`[TAG] ENSIIE IBD TP1 2020 S1`
 
 Niveau supérieur
 ***********************

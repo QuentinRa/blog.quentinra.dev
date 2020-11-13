@@ -18,6 +18,8 @@ d’Euler. Sinon pourquoi n’est-il pas planaire ?
 
 	Proposition de correction n°1			<planaire/d1>
 
+| :code:`[TAG] ENSIIE MTG TD7 2020 S1`
+
 2/3 Le graphe de Petersen
 ----------------------------
 
@@ -40,6 +42,8 @@ On veut montrer que le graphe suivant, nommé graphe de Petersen, n’est pas pl
 
 	Proposition de correction n°1			<planaire/d2>
 
+| :code:`[TAG] ENSIIE MTG TD7 2020 S1`
+
 3/3 K3,3 est planaire sur un mug !
 ----------------------------------------
 
@@ -49,6 +53,8 @@ Montrer qu’il est possible de dessiner K3,3 planaire sur un tore.
    :maxdepth: 1
 
 	Proposition de correction n°1			<planaire/d3>
+
+| :code:`[TAG] ENSIIE MTG TD7 2020 S1`
 
 Niveau supérieur
 ***********************

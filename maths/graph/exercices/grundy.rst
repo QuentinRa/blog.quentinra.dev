@@ -18,6 +18,8 @@ Niveau débutant
 
 	Proposition de correction n°1			<grundy/d1>
 
+| :code:`[TAG] ENSIIE MTG TD5 2020 S1`
+
 2/3 Surveillance
 -----------------------------------
 
@@ -31,6 +33,8 @@ et où les placer ? Modéliser le problème par un problème de graphes et le r�
    :maxdepth: 1
 
 	Proposition de correction n°1			<grundy/d2>
+
+| :code:`[TAG] ENSIIE MTG TD5 2020 S1`
 
 3/3 Fonction de Grundy sans circuit
 -------------------------------------
@@ -51,6 +55,8 @@ Soit G = (V,A) le graphe suivant :
    :maxdepth: 1
 
 	Proposition de correction n°1			<grundy/d3>
+
+| :code:`[TAG] ENSIIE MTG TD5 2020 S1`
 
 Niveau supérieur
 ***********************

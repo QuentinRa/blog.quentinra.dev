@@ -28,6 +28,8 @@ Pour chacune des fonctions suivantes, donner une primitive.
 
 	Proposition de correction n°1			<integral/d1>
 
+| :code:`[TAG] ENSIIE MOM TD4 2020 S1`
+
 2/3 - Intégration par parties
 -------------------------------
 
@@ -42,6 +44,8 @@ Calculer les valeurs des intégrales suivantes en utilisant la technique d’int
    :maxdepth: 1
 
 	Proposition de correction n°1			<integral/d2>
+
+| :code:`[TAG] ENSIIE MOM TD4 2020 S1`
 
 3/3 - Changement de variable
 -------------------------------
@@ -59,6 +63,8 @@ Calculer les valeurs des intégrales suivantes en utilisant la technique d’int
    :maxdepth: 1
 
 	Proposition de correction n°1			<integral/d3>
+
+| :code:`[TAG] ENSIIE MOM TD4 2020 S1`
 
 Niveau supérieur
 ***********************

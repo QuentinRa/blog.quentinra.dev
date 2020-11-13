@@ -22,6 +22,8 @@ Décrivez le degré des nœuds
 	Proposition de correction n°1			<voisins/d1>
 	Proposition de correction n°2			<voisins/d1_2>
 
+| :code:`[TAG] ENSIIE MTG TD4 2020 S1`
+
 2/3 Propriété des degrés
 -----------------------------------
 
@@ -39,6 +41,8 @@ Soit un graphe G = (V,E) non orienté avec n = \|V\| et m = \|E\|.
 
 	Proposition de correction n°1			<voisins/d2>
 
+| :code:`[TAG] ENSIIE MTG TD4 2020 S1`
+
 3/3 Graphe dense et chemin
 -----------------------------------
 
@@ -49,6 +53,8 @@ d + 1 nœuds dans G.
    :maxdepth: 1
 
 	Proposition de correction n°1			<voisins/d3>
+
+| :code:`[TAG] ENSIIE MTG TD4 2020 S1`
 
 Niveau supérieur
 ***********************

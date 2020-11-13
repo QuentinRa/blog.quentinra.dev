@@ -24,6 +24,8 @@ Calculez les limites suivantes
 
 	Proposition de correction n°1			<limit/d1>
 
+| :code:`[TAG] ENSIIE MOM TD3 2020 S1`
+
 2/2 - Attention aux limites
 ---------------------------------------------------------
 
@@ -39,6 +41,8 @@ Soit :math:`f(x, y) = \frac{x + y^2}{x+y}`, définie sur :math:`\mathbb{R}^+*\ma
    :maxdepth: 1
 
 	Proposition de correction n°1			<limit/d2>
+
+| :code:`[TAG] ENSIIE MOM TD3 2020 S1`
 
 Niveau supérieur
 ***********************

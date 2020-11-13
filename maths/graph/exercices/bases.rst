@@ -28,6 +28,8 @@ Niveau débutant
 
 	Proposition de correction n°1			<bases/d1>
 
+| :code:`[TAG] ENSIIE MTG TD6 2020 S1`
+
 2/2 Orthogonalité des cycles et des cocycles
 ------------------------------------------------------
 
@@ -58,6 +60,8 @@ Niveau débutant
    :maxdepth: 1
 
 	Proposition de correction n°1			<bases/d2>
+
+| :code:`[TAG] ENSIIE MTG TD6 2020 S1`
 
 Niveau supérieur
 ***********************

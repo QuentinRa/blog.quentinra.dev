@@ -19,6 +19,8 @@ Calculer l'espérance mathématique des gains des 4 personnes.
 
 	Proposition de correction n°1			<avg/d1>
 
+| :code:`[TAG] ENSIIE MBR TD2 2020 S1`
+
 Niveau supérieur
 ***********************
 
@@ -42,6 +44,8 @@ On définit P(X=k) : :math:`\frac{nn!(k-1)!}{(2n)!(k-n)!}` et
    :maxdepth: 1
 
 	Proposition de correction n°1			<avg/s1>
+
+| :code:`[TAG] ENSIIE MBR TD2-SUITE 2020 S1`
 
 Niveau avancé
 ***********************

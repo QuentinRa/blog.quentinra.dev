@@ -22,6 +22,8 @@ Pour chacune des fonctions suivantes, faire une étude complète et tracer la co
 
 	Proposition de correction n°1			<etude/d1>
 
+| :code:`[TAG] ENSIIE MOM TD3 2020 S1`
+
 Niveau supérieur
 ***********************
 
@@ -40,6 +42,8 @@ Niveau supérieur
    :maxdepth: 1
 
 	Proposition de correction n°1			<etude/s1>
+
+| :code:`[TAG] ENSIIE MOM TD3 2020 S1`
 
 Niveau avancé
 ***********************

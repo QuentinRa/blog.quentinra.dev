@@ -22,6 +22,8 @@ Pour chacune des fonctions suivantes, préciser l'ensemble de dérivation et cal
 
 	Proposition de correction n°1			<derive/d1>
 
+| :code:`[TAG] ENSIIE MOM TD3 2020 S1`
+
 Niveau supérieur
 ***********************
 
