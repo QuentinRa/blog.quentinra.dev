@@ -90,18 +90,25 @@ FROM vin v NATURAL JOIN commande c1
            LEFT OUTER JOIN commande c2 on (v.n_vin = c2.n_vin AND c2.c_qte >= 12)
 Where c2.n_commande IS NULL;
 
--- 7. Numéros et noms des buveurs qui n'ont commandé que des vins de la région de 'BOURGOGNE', en utilisant les approches a) et b) présentées précédemment.
+-- 7. Numéros et noms des buveurs qui n'ont commandé que des vins de la région de 'BOURGOGNE',
+-- en utilisant les approches a) et b) présentées précédemment.
 -- Réponse: 3 tuples.
 
 -- a
 SELECT DISTINCT n_buveur, nom
 FROM buveur NATURAL JOIN commande c
-WHERE c.n_vin NOT IN (select n_vin from commande NATURAL JOIN vin where region='BOURGOGNE');
+-- on prends les buveurs qui ne sont pas dans la liste
+-- des buveurs qui n'ont pas commandé un autre vin
+WHERE n_buveur NOT IN (select DISTINCT n_buveur from commande NATURAL JOIN vin where region<>'BOURGOGNE');
 
 -- b
+
 SELECT DISTINCT n_buveur, nom
-FROM buveur NATURAL JOIN commande c1
-WHERE NOT EXISTS(select n_vin from commande c2 NATURAL JOIN vin where c1.n_vin=c2.n_vin AND region='BOURGOGNE');
+FROM buveur NATURAL JOIN commande c
+-- on prends les buveurs qui ne sont pas dans la liste
+-- des buveurs qui n'ont pas commandé un autre vin
+WHERE NOT EXISTS (Select DISTINCT n_buveur from commande
+    NATURAL JOIN vin where region<>'BOURGOGNE' AND c.n_buveur=n_buveur);
 
 -- 8. Numéros et noms des buveurs qui n'ont commandé que des vins des régions de 'BOURGOGNE' et de 'BORDEAUX',
 --    en utilisant les approches a) et b) présentées précédemment.

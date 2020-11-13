@@ -92,7 +92,10 @@ L'assignation en SQL se fait avec :code:`:=` (ou = mais vous étonnez pas si vou
 
 Le modulo en SQL se fait avec :code:`MOD(x,y)`.
 
-On utilise généralemnt :code:`\ ` (backslash) pour échapper un caractère mais dès fois
+Vous pouvez extraire un élément d'une date/timestamp avec :code:`EXTRACT(element from attribut)`
+avec element : YEAR, MONTH, DAY, MICROSECOND, SECOND, MINUTE, HOUR.
+
+On utilise généralement :code:`\ ` (backslash) pour échapper un caractère mais dès fois
 on doit utiliser un :code:`'` (single quote) (à vous de tester !).
 
 Si votre nom de table ou d'attribut n'est pas valide (par exemple appeler un attribut
