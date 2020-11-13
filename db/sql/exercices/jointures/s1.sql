@@ -60,10 +60,23 @@ SELECT DISTINCT n_buveur, nom
 FROM buveur
 where n_buveur NOT IN (select n_buveur from commande);
 
+-- on prends l'ensemble de tous les buveurs, privés de celui des buveurs qui ont commandé
+SELECT DISTINCT n_buveur, nom
+FROM buveur
+    EXCEPT
+SELECT DISTINCT n_buveur, nom
+FROM commande NATURAL JOIN buveur;
+
 -- b
 SELECT DISTINCT n_buveur, nom
 FROM buveur b
 where NOT EXISTS (select DISTINCT n_buveur from commande c where
+        c.n_buveur=b.n_buveur);
+
+SELECT DISTINCT n_buveur, nom
+FROM buveur b
+-- le numéro de buveur est différent de tous les noms de buveurs dans commande
+where n_buveur <> ALL (select DISTINCT n_buveur from commande c where
         c.n_buveur=b.n_buveur);
 
 -- c
