@@ -24,9 +24,10 @@ Les choses non faites et à faire
 * notez que les attributs du group by sont forcément dans la clause select
 * Organisation Indexée : B+
 
-**Modélisation**
+**Conception**
 * ajouter le cours de modélisation relationnelle
-* ajouter le cours d’UML
+* Diagramme de déploiement
+* TDD et BDD et pair programming
 
 **Linux**
 * Réécrire le cours, je crois c'est incomprehensible/trop condensé
