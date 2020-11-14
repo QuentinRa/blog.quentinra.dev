@@ -1,8 +1,7 @@
 -- Nombre de crus différents.
 -- Réponse: 13.
 
-SELECT DISTINCT cru FROM vin;
-SELECT cru FROM vin GROUP BY cru; -- fusionne les doublons
+SELECT count(DISTINCT cru) FROM vin;
 
 -- Quantité totale des vins livrés en 2001. Utilisez l'opérateur BETWEEN dans une première requête et la fonction EXTRACT() dans une seconde requête.
 -- Réponse: 24.

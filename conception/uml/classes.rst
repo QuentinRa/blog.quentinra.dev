@@ -4,7 +4,7 @@
 Diagramme de classes (DC)
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.0}`
+| :math:`\color{grey}{Version \ 1.0.1}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 14/11/2020}`
 
 .. note::
@@ -166,7 +166,10 @@ qu'une classe devrait généraliser 0 ou 1 parents mais pas plus.
 -----
 
 **Crédits**
+	* Florent Madelaine (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Luc Hernandez (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Luc Dartois (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* lien
+	* aucune

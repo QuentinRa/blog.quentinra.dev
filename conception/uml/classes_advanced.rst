@@ -4,7 +4,7 @@
 Diagramme de classes (DC) - avancé
 ====================================
 
-| :math:`\color{grey}{Version \ 1.0.0}`
+| :math:`\color{grey}{Version \ 1.0.1}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 14/11/2020}`
 
 .. note::
@@ -93,3 +93,14 @@ La personne que l’on choisit pour implémenter l’interface doit être celle 
 
 Les interfaces peuvent contenir des méthodes ayant un comportement par défaut,
 sur le DC on les annote de « default ». C’est utile si on modifie une interface déjà implémentée.
+
+-----
+
+**Crédits**
+	* Florent Madelaine (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Luc Hernandez (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Luc Dartois (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
+
+**Références**
+	* aucun
