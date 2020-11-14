@@ -26,10 +26,13 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/uml/classes.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/classes.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/uml/classes_advanced.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/classes_advanced.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/uml/dcu.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/dcu.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/exercices/calculs/s1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/calculs/s1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/uml/automate.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/diagrammes/automate.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/uml/classes.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/diagrammes/classes.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/uml/classes_advanced.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/diagrammes/classes_advanced.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/uml/db.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/diagrammes/db.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/uml/dcu.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/diagrammes/dcu.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/uml/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/uml/sequence.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/diagrammes/sequence.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,19 +68,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\assets\conception\uml\classes" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\autres" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\db\sql" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\sql\tables" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\sql\users" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\assets\conception\uml\classes" />
       <recent name="C:\Users\quent\Documents\texas-res\conception\uml" />
       <recent name="C:\Users\quent\Documents\texas-res\db\sql\gestion" />
       <recent name="C:\Users\quent\Documents\texas-res\db\sql\concurrence" />
       <recent name="C:\Users\quent\Documents\texas-res\db\sql\optimisation" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\conception\uml\diagrammes" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\conception\uml\classes" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\autres" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\db\sql" />
+      <recent name="C:\Users\quent\Documents\texas-res\db\sql\tables" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -168,7 +171,7 @@
       <workItem from="1605291238847" duration="11825000" />
       <workItem from="1605315588137" duration="1810000" />
       <workItem from="1605317450289" duration="134000" />
-      <workItem from="1605364432193" duration="1762000" />
+      <workItem from="1605364432193" duration="2906000" />
     </task>
     <servers />
   </component>
