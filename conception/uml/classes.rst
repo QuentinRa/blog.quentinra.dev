@@ -4,8 +4,13 @@
 Diagramme de classes (DC)
 ================================
 
-Un diagramme de classe ressemble fortement à un diagramme de base de données, cependant
-il y a des différences vues dans :ref:`dbd`.
+| :math:`\color{grey}{Version \ 1.0.0}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 14/11/2020}`
+
+.. note::
+
+	Vous avez à votre disposition un cours avancé sur
+	les diagrammes de classes ici : :ref:`dc_advanced`
 
 1. Classe et objet
 ==============================
@@ -131,26 +136,32 @@ Une classe d'association est un moyen de faire porter plus d'information
 			cancel()
 		}
 
-**Associations : agrégations**
+4. Généralisation
+===========================
 
-Association où une classe joue un rôle plus fort que l’autre (domine l’autre ex : relation patron (1) - ouvrier (*))
+La généralisation est aussi appelé **héritage** par abus de langage (héritage
+est une notion concrète donc une implémentation de la généralisation
+qui est le concept derrière).
+
+Si des classes ont un/des éléments (attributs/opérations)
+en commun alors on peut les regrouper dans une superclasse/classe parent.
+
+Les classes ditent enfant, généralisent alors de la classe parent.
 
 .. uml::
 
-		agrégat o-- "*" "élément agrégé"
+	Parent <|-- Enfant
+	SuperClasse <|-- Classe
 
-**Associations : compositions**
+Il est préférable d'éviter une généralisation multiple, c'est à dire
+qu'une classe devrait généraliser 0 ou 1 parents mais pas plus.
 
-Il s’agît d’une agrégation plus forte où une classe (composant) n’existe pas en dehors de sa relation avec
-une autre (composite). (ex : les roues n’existent pas sans voiture)
+5. Plus d'informations
+====================================
 
-.. uml::
+.. toctree::
 
-		Composite *-- Composant : composition
-
-La destruction du composite entraine celle du composant (classe interne).
-
-|
+	Diagramme de classes (DC) - avancé <classes_advanced>
 
 -----
 

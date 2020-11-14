@@ -44,6 +44,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :maxdepth: 1
 
     Interfaces Homme-Machine            <conception/ihm/index>
+    Unified Modeling Language (UML)      <conception/uml/index>
 
 .. toctree::
     :caption: Langages de bases de données
@@ -87,7 +88,6 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     Documents d'une Entreprise           <business/docs/index>
     SQLite                               <db/sql/sqlite>
     Modélisation relationnelle           <conception/uml/model>
-    Unified Modeling Language (UML)      <conception/uml/index>
     Langage C                            <imperative/c/index>
     Langage C - Avancé                   <imperative/c/advanced>
     Architecture Linux                   <system/linux/index>

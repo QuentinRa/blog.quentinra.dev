@@ -27,7 +27,11 @@ Vous pouvez trouver ici les différents cours sur liés à l'UML.
 .. toctree::
    :maxdepth: 1
 
-	Diagrammes de classes			<classes>
+	Diagrammes de classes			    <classes>
+	Diagrammes de Base de données <db>
+	Diagrammes de cas d'usages    <dcu>
+	Diagrammes séquence           <sequence>
+	Diagrammes d'état-transitions <automate>
 
 |
 
