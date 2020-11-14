@@ -53,6 +53,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :name: bd
     :maxdepth: 1
 
+    Modélisation relationnelle           <db/model/index>
 		SQL (Structured Query Language)      <db/sql/index>
 		PL/SQL (Procedural Language)         <db/plsql/index>
 
@@ -88,7 +89,6 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     Entreprise                           <business/env/index>
     Macroéconomie                        <business/env/macro>
     Documents d'une Entreprise           <business/docs/index>
-    Modélisation relationnelle           <conception/uml/model>
     Langage C                            <imperative/c/index>
     Langage C - Avancé                   <imperative/c/advanced>
     Architecture Linux                   <system/linux/index>

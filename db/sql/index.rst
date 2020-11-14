@@ -327,6 +327,7 @@ Dans la continuité du cours
 	* Régine LALEAU (enseignant à mon IUT)
 	* Didier DIAZ (enseignant à mon IUT)
 	* Marie SAFRANSKI (enseignant à l'ENSIIE)
+	* Julien FOREST (enseignant à l'ENSIIE)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**

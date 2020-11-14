@@ -21,7 +21,7 @@ de certains symboles et quelques ajouts.
 1. Vocabulaire et nouvelles notations
 =========================================
 
-Identifiant
+Identifiant ou discriminant
 	Généralement appelé clé par abus de langage (pareil que héritage et généralisation, la clef
 	est la notation concrète de la notion d'identifiant), un identifiant ou groupe d'identifiant
 	sont des attributs qui ont forcément une valeur unique et non nulle.
