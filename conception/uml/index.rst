@@ -17,7 +17,7 @@ Il existe plusieurs types de diagramme :
 	* :code:`diagramme séquence` : diagramme de l'exécution d'un programme
 	* :code:`diagramme de déploiement` : comment utiliser le programme
 	* :code:`diagramme de cas d'usages` : quelles sont les interactions faites avec le programme.
-	* :code:`diagramme d'états-transitions` : automate du programme
+	* :code:`diagramme d'états-transitions` : automate d'un programme
 
 Le logiciel StarUML est un logiciel open-source que j'utilise principalement pour faire des diagrammes UML,
 mais vous pouvez trouver d'autres outils dans la section références (tel que plantuml).
@@ -34,12 +34,10 @@ Vous pouvez trouver ici les différents cours sur liés à l'UML.
 	Diagrammes séquence           <diagrammes/sequence>
 	Diagrammes d'état-transitions <diagrammes/automate>
 
-|
-
 -----
 
 **Crédits**
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* https://plantuml.com/fr/class-diagram
+	* https://plantuml.com/fr/

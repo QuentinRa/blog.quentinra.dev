@@ -26,7 +26,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/uml/diagrammes/automate.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/diagrammes/automate.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/uml/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/conception/uml/classes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/conception/patrons" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
@@ -63,11 +64,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\conception\patrons" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\conception\uml\classes" />
       <recent name="C:\Users\quent\Documents\texas-res\conception\uml" />
       <recent name="C:\Users\quent\Documents\texas-res\db\sql\gestion" />
       <recent name="C:\Users\quent\Documents\texas-res\db\sql\concurrence" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\sql\optimisation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\assets\conception\uml\activity" />
@@ -165,7 +166,7 @@
       <workItem from="1605291238847" duration="11825000" />
       <workItem from="1605315588137" duration="1810000" />
       <workItem from="1605317450289" duration="134000" />
-      <workItem from="1605364432193" duration="11253000" />
+      <workItem from="1605364432193" duration="12054000" />
     </task>
     <servers />
   </component>
