@@ -101,6 +101,7 @@ Il existe 7 grandes règles
 		Règle 5 : associations réflexives				                <rules/rule5.rst>
 		Règle 6 : héritage				                              <rules/rule6.rst>
 		Règle 7 : associations n-aires				                  <rules/rule7.rst>
+		Règle 8 (extra) : cas particuliers                      <rules/rule8.rst>
 
 .. warning::
 

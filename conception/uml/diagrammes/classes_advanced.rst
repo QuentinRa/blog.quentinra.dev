@@ -168,6 +168,21 @@ que c'est une constante qui ne changera jamais de valeur).
 		Carré: int nombreMagique = 9 {final}
 		@enduml
 
+6. Attributs composés/composite
+=================================
+
+Il existe des attributs dit composés, c'est-à-dire qu'ils sont composés de plusieurs attributs.
+
+.. uml::
+
+		@startuml
+		class Classe {
+			{field} attribut composé :
+			{field} - composite : type
+			{field} - composite : type
+ 		}
+		@enduml
+
 7. Packages
 =============================
 
@@ -202,6 +217,8 @@ elle est déjà entièrement définie à un endroit.
 	Notez que "net.sourceforge.plantuml" est la syntaxe la plus courante des packages en java.
 	Les / du chemin de dossiers sont remplacés par des "." et il n'y a aucune majuscule ni caractères
 	non alphabétiques.
+
+
 
 -----
 

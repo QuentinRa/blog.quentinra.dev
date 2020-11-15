@@ -44,3 +44,12 @@ Donne la relation
 
 		* tous les patriarches doivent être présents au moins une fois dans Membre
 		* Membre.patriarche peut être NULL
+
+.. note::
+
+	Soit A et B deux relations et (c1,c2) la relation de cardinalité a à gauche et b à droite, alors
+
+		* si (0..1,0..*) : aucune contrainte
+		* si (1,0..*) : clef de A doit être non nulle
+		* si (1,1..*) : clef de A doit être non nulle et toutes les clef de A doivent apparaitre au moins une fois dans b
+		* si (0..1,1..*) : toutes les clef de A doivent apparaitre au moins une fois dans b

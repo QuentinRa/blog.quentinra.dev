@@ -54,9 +54,15 @@ Donne la relation
 
 	Dirige(#code_secret=>Membre, #clan=>Patriarche, années : number)
 
-.. note::
 
-	On n'oublie cependant pas les contraintes de multiplicité, ici
-	un patriarche est forcément associé à un membre au plus donc :
+	contraintes
 
 		* clan IN Dirige (qui veut dire que tous les id des patriarches sont dans Dirige)
+
+.. note::
+
+	Soit A et B deux relations, C la nouvelle relation et (c1,c2) la relation de cardinalité a à gauche et b à droite, alors
+
+		* si (0..*,0..*) : aucune contrainte
+		* si (0..*,1..*) : toutes les clef de A doivent être au moins une fois dans C
+		* si (1..*,1..*) : toutes les clef de A et B doivent être au moins une fois dans C

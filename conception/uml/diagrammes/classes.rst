@@ -52,13 +52,6 @@ mais en retirant les éléments facultatifs, vous verrez plus :code:`nom : type`
 	* :code:`type` : type de l'attribut, si l'attribut est multivalué on le note type[min..max].
 	* :code:`valeur` : facultatif, valeur par défaut (peut être un ensemble).
 
-.. warning::
-
-	Un attribut/opération souligné est un attribut/opération de classe (static), donc la valeur
-	de cette attribut est la même dans tous les objets de la classe !
-
-	Les constantes sont généralement statiques.
-
 Les types généralement utilisés sont
 
 =============================== ========================================================================================
@@ -87,9 +80,16 @@ Une opération est de la forme :code:`v nom(args: type,…) : r`.
 
 .. note::
 
-	Il existe des fonctions qui ont pour but de créer des objects. On les appelents :code:`Constructeurs`.
+	Il existe des fonctions qui ont pour but de créer des objects. On les appellent :code:`Constructeurs`.
 	Ils ont généralement le même nom que la classe et n'ont pas de type de retour. On ajoute généralement
 	« constructor » devant le nom, juste après la visibilité.
+
+.. warning::
+
+	Un attribut/opération souligné est un attribut/opération de classe (static), donc la valeur
+	de cette attribut est la même dans tous les objets de la classe !
+
+	Les constantes sont généralement statiques.
 
 3. Associations et multiplicité
 ====================================

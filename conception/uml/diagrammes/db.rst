@@ -4,7 +4,7 @@
 Diagrammes de base de données
 ========================================
 
-| :math:`\color{grey}{Version \ 1.0.2}`
+| :math:`\color{grey}{Version \ 1.0.3}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 15/11/2020}`
 
 Le diagramme de base de données est un diagramme
@@ -49,6 +49,7 @@ Identifiant artificiel
 		**Notation**
 
 			* une notation pourrait être :math:`\circledast` devant le nom de la clef
+			* en pratique, on n'en tient souvent pas compte donc on met rien devant
 
 Contraintes d’intégrité
 	Il s'agit simplement d'un mot englobant toutes les contraintes tel que le type des attributs,
