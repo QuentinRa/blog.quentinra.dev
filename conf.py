@@ -23,7 +23,7 @@ copyright = '2020, Quentin Ra'
 author = 'Quentin Ra'
 
 # The full version, including alpha/beta/rc tags
-release = '1.5.145'
+release = '1.16.169'
 # version 0 : html, css, php, js
 # version 1 : restructured text
 # version 1.1 : system/docker
@@ -31,6 +31,17 @@ release = '1.5.145'
 # version 1.3 : maths/graphes
 # version 1.4 : conception/ihm
 # version 1.5 : maths/matrix
+# version 1.6 : db/sql
+# version 1.7 : db/plsql
+# version 1.8 : conception/classes
+# version 1.9 : conception/usage
+# version 1.10 : conception/sequence
+# version 1.11 : conception/objets
+# version 1.12 : conception/bd
+# version 1.13 : conception/automate
+# version 1.14 : conception/mdd
+# version 1.15 : conception/patrons
+# version 1.16 : db/model
 
 # -- General configuration ---------------------------------------------------
 

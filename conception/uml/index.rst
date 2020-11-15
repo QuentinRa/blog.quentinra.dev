@@ -41,3 +41,6 @@ Vous pouvez trouver ici les différents cours sur liés à l'UML.
 
 **Références**
 	* https://plantuml.com/fr/
+	* https://staruml.io/
+	* https://app.diagrams.net/
+	* https://www.planttext.com/

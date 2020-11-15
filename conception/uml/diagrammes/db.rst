@@ -4,6 +4,9 @@
 Diagrammes de base de données
 ========================================
 
+| :math:`\color{grey}{Version \ 1.0.1}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 15/11/2020}`
+
 Le diagramme de base de données est un diagramme
 de classes, avec quelques changements des sémantiques (=sens)
 de certains symboles et quelques ajouts.
@@ -31,6 +34,22 @@ Identifiant ou discriminant
 		* On souligne généralement une clef
 		* On peut également mettre # devant le nom de la clef
 
+Identifiant candidat
+	Il s'agit d'un attribut pouvant possiblement être utilisé comme une clef. Il est donc
+	unique et non nul.
+
+		**Notation**
+
+		* On met une :math:`*` devant le nom de la clef
+
+Identifiant artificiel
+	Il s'agit d'une clef dont la valeur est générée, souvent un entier qui augmente
+	de 1 à chaque ligne inséré et appelé "id".
+
+		**Notation**
+
+			* une notation pourrait être :math:`\circledast` devant le nom de la clef
+
 Contraintes d’intégrité
 	Il s'agit simplement d'un mot englobant toutes les contraintes tel que le type des attributs,
 	la multiplicité et le respect des propriétés (attribut dans un interval, clef primaire etc...).
@@ -55,7 +74,10 @@ aucun
 **Crédits**
 	* Florent Madelaine (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Luc Hernandez (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Marie SAFRANSKI (enseignant à l'ENSIIE)
+	* Julien FOREST (enseignant à l'ENSIIE)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* aucune
+	* https://stph.scenari-community.org/bdd/mod3/co/mod3c.html
+	* https://librecours.net/

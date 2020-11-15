@@ -4,8 +4,8 @@
 Diagramme de classes (DC)
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.1}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 14/11/2020}`
+| :math:`\color{grey}{Version \ 1.0.2}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 15/11/2020}`
 
 .. note::
 
@@ -136,17 +136,26 @@ Une classe d'association est un moyen de faire porter plus d'information
 			cancel()
 		}
 
-4. Généralisation
-===========================
+.. note::
+
+	Une association d'une classe vers elle même est appelée **association réflexive**.
+
+	Il est possible d'y avoir plusieurs associations entre deux classes.
+
+4. Généralisation ou spécialisation
+=======================================
 
 La généralisation est aussi appelé **héritage** par abus de langage (héritage
 est une notion concrète donc une implémentation de la généralisation
-qui est le concept derrière).
+qui est le concept abstrait).
 
 Si des classes ont un/des éléments (attributs/opérations)
 en commun alors on peut les regrouper dans une superclasse/classe parent.
 
-Les classes ditent enfant, généralisent alors de la classe parent.
+La généralisation sert majoritairement à grouper des propriétés identiques
+dans une seule classe.
+
+Les classes appelés enfants, généralisent alors de la classe parent.
 
 .. uml::
 
@@ -169,6 +178,8 @@ qu'une classe devrait généraliser 0 ou 1 parents mais pas plus.
 	* Florent Madelaine (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Luc Hernandez (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Luc Dartois (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Marie SAFRANSKI (enseignant à l'ENSIIE)
+	* Julien FOREST (enseignant à l'ENSIIE)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**

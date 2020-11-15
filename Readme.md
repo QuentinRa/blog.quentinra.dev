@@ -32,11 +32,11 @@ d'exercices au format spécifié dans `assets/exercice.rst`.
 
 Créé par Quentin Ramsamy--Ageorges (ramsamy.ws@gmail.com).
 
-Version 1.5.145.
+Version 1.16.169.
 \
 Création le 20 juillet 2020.
 \
-Dernière mise à jour le 12 novembre 2020.
+Dernière mise à jour le 15 novembre 2020.
 
 Merci à tout contributeur et lecteur, ainsi qu'à toutes
 personnes ayant permis et aidant dans la création de cette plateforme.
