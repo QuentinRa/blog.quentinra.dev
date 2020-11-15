@@ -61,13 +61,24 @@ On lit ça comme :
 ================================
 
 Une classe abstraite est une classe qui possède toutes les propriétés d’une classe normale
-sauf qu’elle n’est pas instanciable
+sauf qu’elle n’est pas instantiable
 (car au moins une de ses méthodes peut-être abstraite (=non implémentée)).
 
 Elle permet de regrouper une méthode/opération commune mais implémenté différemment
 dans ses sous-classes mais qui doit forcément être présente.
 
 On écrit le mot clé « abstract » devant le nom de la classe et/ou on met son nom en italique.
+
+.. uml::
+
+	abstract class ClasseAbstraite
+
+	ClasseAbstraite <|-- Enfant
+
+	class Enfant {
+		Object[] elementData
+		size()
+	}
 
 .. hint::
 
@@ -125,6 +136,72 @@ Il s'agit donc d'une annotation qu'on ajoute à destination des lecteurs.
 
 		Client -- Produit : commander
 		@enduml
+
+.. _contraintes_association:
+
+5. Contrainte d'association
+=============================
+
+Une contrainte d'association peut être
+
+	* une **inclusion** (:code:`{IN}`, :code:`{SUBSET}`, :code:`{I}`) : si une des association incluse existe, alors l'autre aussi.
+	* une **exclusion** (:code:`{X}`) : si une des association exclusion existe, alors les autres ne peuvent pas exister
+	* une **égalité** ou **simultanéité** (:code:`{=}`, :code:`{AND}`, :code:`{S}`) : si une association existe, toutes les autres doivent exister
+	* une **totalité** ou **couverture** ou **inclusif** (:code:`{T}`, :code:`{OR}`) : au moins une des association doit exister
+	* une **partition** ou **exclusif** (:code:`{XT}`, :code:`{P}`, :code:`{+}`) : exactement une association existe
+
+La contraintes d'association est un trait en pointillés touchant toutes les associations concernés.
+
+Dans le cas de l'inclusion, c'est une flèche de l'association A vers l'association B pour indiquer
+que A ne peut exister que si B existe.
+
+6. Contrainte d'attribut
+=============================
+
+Une contrainte d'attribut est par exemple un interval des valeurs
+que peut prendre un attribut, ou encore pour déclarer un attribut final (c'est-à-dire
+que c'est une constante qui ne changera jamais de valeur).
+
+.. uml::
+
+		@startuml
+		Carré: int nombreMagique = 9 {final}
+		@enduml
+
+7. Packages
+=============================
+
+Un package est un conteneur souvent utilisé pour découper
+de grands diagrammes en petit diagrammes.
+
+Si on quitte le model conceptuel, alors créer des packages revient
+à créer des dossiers, dans lesquels on classe nos diagrammes.
+
+Les dossiers ont un nom et son liés entre-eux, donc les classes
+d'un package sont aussi accessible dans d'autres. Dit autrement, vous
+n'avez pas besoin de recopier la totalité d'une classe dans un autre package, car
+elle est déjà entièrement définie à un endroit.
+
+.. uml::
+
+		@startuml
+
+		package "Classic Collections" #DDDDDD {
+			Object <|-- ArrayList
+		}
+
+		package net.sourceforge.plantuml {
+			Object <|-- Demo1
+			Demo1 *- Demo2
+		}
+
+		@enduml
+
+.. note::
+
+	Notez que "net.sourceforge.plantuml" est la syntaxe la plus courante des packages en java.
+	Les / du chemin de dossiers sont remplacés par des "." et il n'y a aucune majuscule ni caractères
+	non alphabétiques.
 
 -----
 

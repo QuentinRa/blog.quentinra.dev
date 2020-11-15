@@ -165,6 +165,14 @@ Les classes appelés enfants, généralisent alors de la classe parent.
 Il est préférable d'éviter une généralisation multiple, c'est à dire
 qu'une classe devrait généraliser 0 ou 1 parents mais pas plus.
 
+.. note::
+
+	On parle d'héritage ou de généralisation exclusive lorsque les classes filles sont soumises
+	à une contrainte d'association exclusive (voir :ref:`contraintes_association`).
+
+	On parle d'héritage sans spécificité lorsque les classes filles n'ont pas de propriétés
+	additionnelles (attributs, opérations, ...).
+
 5. Plus d'informations
 ====================================
 
