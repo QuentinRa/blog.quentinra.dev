@@ -2,14 +2,22 @@
 Règle 3 : association * vers 0..1 ou * vers 1
 =============================================================
 
-L’identifiant de la classe du côté de 0..1/1 va
-dans la classe du côté de \*. Si on a une classe d’association, elle va dans la classe du côté de \*.
+Processus
+	* \
+		L’identifiant de la classe du côté de 0..1/1 va dans la classe du côté de \*.
+	* \
+		Si on a une classe d’association, elle va dans la classe du côté de \*.
+	* \
+		Si on a 1 et pas 0..1, alors l'attribut est non null.
+	* \
+		Tout en respectant les contraintes de multiplicité (Soit A,B nos relations)
 
-La différence entre 0..1 et 1, est que l'attribut
-peut être null si 0..1 et ne peux pas être null si 1.
+			* si (0..1,0..*) : aucune contrainte
+			* si (1,0..*) : clef de A doit être non nulle
+			* si (1,1..*) : clef de A doit être non nulle et A in B = toutes les clef de A doivent apparaitre au moins une fois dans B
+			* si (0..1,1..*) : A in B = toutes les clef de A doivent apparaitre au moins une fois dans B
 
-Le fait d'avoir 0..* ou 1..* détermine si 1..* que la clef ajoutée dans relation du côté du \*
-doit prendre toutes les valeurs de l'autre relation, au moins une fois.
+**Exemple de cas**
 
 .. uml::
 
@@ -40,16 +48,4 @@ Donne la relation
 	Patriarche(nom:varchar, #nomClan: varchar,age : number)
 	Membre(nom:varchar, #code_secret: varchar,  patriarche=>Patriarche.nomClan, années: number)
 
-	contraintes
-
-		* tous les patriarches doivent être présents au moins une fois dans Membre
-		* Membre.patriarche peut être NULL
-
-.. note::
-
-	Soit A et B deux relations et (c1,c2) la relation de cardinalité a à gauche et b à droite, alors
-
-		* si (0..1,0..*) : aucune contrainte
-		* si (1,0..*) : clef de A doit être non nulle
-		* si (1,1..*) : clef de A doit être non nulle et toutes les clef de A doivent apparaitre au moins une fois dans b
-		* si (0..1,1..*) : toutes les clef de A doivent apparaitre au moins une fois dans b
+	Patriarche in Membre

@@ -1,13 +1,23 @@
 =============================================================
-Règle 2 : association x..* vers x..*
+Règle 2 : association n..* vers m..*
 =============================================================
 
-On crée une relation avec comme nom celui de l’association.
+Processus
+	* \
+		On crée une relation avec comme nom celui de l’association.
+	* \
+		Ses attributs sont les identifiants des deux classes, et éventuellement les
+		attributs de la classe d’association si présente.
+	* \
+		Son identifiant est un couple d’identifiant, qui sont les identifiant des deux classes.
+	* \
+		Tout en respectant les contraintes de multiplicité (Soit A,B nos relations et C la relation de l'association)
 
-Ses attributs sont les identifiants des deux classes, et éventuellement les
-attributs de la classe d’association si présente.
+			*	si (0..*,0..*) : aucune contrainte
+			* si (0..*,1..*) : A in C = toutes les clef de A doivent être au moins une fois dans C
+			*	si (1..*,1..*) : A in C, B in C = toutes les clef de A et B doivent être au moins une fois dans C
 
-Son identifiant est un couple d’identifiant, qui sont les identifiant des deux classes.
+**Exemple de cas**
 
 .. uml::
 
@@ -37,32 +47,26 @@ Donne la relation
 
 	Patriarche(nom:varchar, #nomClan: varchar,age : number)
 	Membre(nom:varchar, #code_secret: varchar)
-
-	et
-
 	Dirige(#(clan=>Patriarche.nomClan,code=>Membre.code_secret), années : number)
 
-	ou
+	clan IN Dirige
 
+ou
+
+.. code:: none
+
+	Patriarche(nom:varchar, #nomClan: varchar,age : number)
+	Membre(nom:varchar, #code_secret: varchar)
 	Dirige(#code_secret=>Membre.code_secret, #clan=>Patriarche.nomClan, années : number)
 
-	ou
+	clan IN Dirige
 
+ou
+
+.. code:: none
+
+	Patriarche(nom:varchar, #nomClan: varchar,age : number)
+	Membre(nom:varchar, #code_secret: varchar)
 	Dirige(#code_secret=>Membre(code_secret), #clan=>Patriarche(nomClan), années : number)
 
-	ou sans spécifier la clef, car il n'y en a qu'une
-
-	Dirige(#code_secret=>Membre, #clan=>Patriarche, années : number)
-
-
-	contraintes
-
-		* clan IN Dirige (qui veut dire que tous les id des patriarches sont dans Dirige)
-
-.. note::
-
-	Soit A et B deux relations, C la nouvelle relation et (c1,c2) la relation de cardinalité a à gauche et b à droite, alors
-
-		* si (0..*,0..*) : aucune contrainte
-		* si (0..*,1..*) : toutes les clef de A doivent être au moins une fois dans C
-		* si (1..*,1..*) : toutes les clef de A et B doivent être au moins une fois dans C
+	clan IN Dirige

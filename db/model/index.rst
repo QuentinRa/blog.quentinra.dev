@@ -4,7 +4,7 @@
 Modélisation relationnelle
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.1}`
+| :math:`\color{grey}{Version \ 1.0.3}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 15/11/2020}`
 
 La modélisation relationnelle à pour objectif depuis ce que veut un client,
@@ -95,9 +95,9 @@ Il existe 7 grandes règles
     :maxdepth: 1
 
 		Règle 1 : une classe donne une relation				          <rules/rule1.rst>
-		Règle 2 : association x..* vers x..*	                  <rules/rule2.rst>
-		Règle 3 : association * vers 0..1 ou * vers 1				    <rules/rule3.rst>
-		Règle 4 : associations 1 vers 1				                  <rules/rule4.rst>
+		Règle 2 : association n..* vers m..*	                  <rules/rule2.rst>
+		Règle 3 : association n..* vers 0..1 ou n..* vers 1			<rules/rule3.rst>
+		Règle 4 : associations 1 vers 1	ou 0..1 vers 0..1       <rules/rule4.rst>
 		Règle 5 : associations réflexives				                <rules/rule5.rst>
 		Règle 6 : héritage				                              <rules/rule6.rst>
 		Règle 7 : associations n-aires				                  <rules/rule7.rst>
