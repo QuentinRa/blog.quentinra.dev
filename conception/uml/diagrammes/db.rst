@@ -4,7 +4,7 @@
 Diagrammes de base de données
 ========================================
 
-| :math:`\color{grey}{Version \ 1.0.1}`
+| :math:`\color{grey}{Version \ 1.0.2}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 15/11/2020}`
 
 Le diagramme de base de données est un diagramme
@@ -53,6 +53,10 @@ Identifiant artificiel
 Contraintes d’intégrité
 	Il s'agit simplement d'un mot englobant toutes les contraintes tel que le type des attributs,
 	la multiplicité et le respect des propriétés (attribut dans un interval, clef primaire etc...).
+
+Domaine
+	Généralement utilisé pour parler des valeurs possible pouvant être prises par un attribut,
+	donc dans presque tout les cas, il s'agit du type de l'attribut.
 
 2. Ce qui est différent
 =========================================

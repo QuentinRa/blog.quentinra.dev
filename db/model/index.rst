@@ -4,18 +4,18 @@
 Modélisation relationnelle
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.0}`
+| :math:`\color{grey}{Version \ 1.0.1}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 15/11/2020}`
 
 La modélisation relationnelle à pour objectif depuis ce que veut un client,
 d'obtenir une base de données la plus proche de ce qui réponds à son besoin.
 
-Cela passe par trois grandes étapes, que vous pouvez sauter/raccourcis
+Cela passe par trois grandes étapes, que vous pouvez sauter/raccourcir
 (si vous êtes la même personne qui a écouté le client et celle qui fait la base, par exemple) :
 
 	* depuis un texte de ce que veut le client, obtenir un diagramme de bases de données
-	* depuis un diagramme de bases de données, obtenir une écriture relationnel
-	* depuis un écriture relationnel, créer la base de données relationnelle
+	* depuis un diagramme de bases de données, obtenir une écriture relationnelle
+	* depuis un écriture relationnelle, créer la base de données relationnelle
 
 On parle respectivement de
 
@@ -29,11 +29,11 @@ On parle respectivement de
 Tout d'abord, vous devez savoir ce qu'est un diagramme de base
 de données, le cours est ici : :ref:`ddb`.
 
-Petite rappel si besoin :
+Petite rappel de vocabulaire si besoin :
 
 	* **classe** = une représentation abstraite de quelque chose (ex: Personne)
 	* **attribut** = les propriétés d'une classe (ex: nom pour une personne)
-	* **objet** = une classe qu'on a créée (=implémenté), donc donné des valeurs aux attributs
+	* **objet** = une classe qu'on a créée (=implémenté) donc donné des valeurs aux attributs
 	* **association** = trait entre deux classes
 	* **identifiant/discriminant** (ou clé) = un attribut qui prends des valeurs uniques et non nulles
 	* **généralisation (ou héritage)** = parent généralise un enfant ça veut dire qu'un enfant est un parent mais avec des trucs en plus
@@ -76,6 +76,13 @@ La modèle relationnel, est une représentation d'un diagramme de base de
 données en utilisant le langage relationnel, c'est-à-dire une représentation
 textuel de votre base de données.
 
+Relation
+	Une relation R est un ensemble tel que les éléments soient des attributs
+	ayant un type : R(attribut=>domaine, ...).
+
+	Le domaine correspond aux valeurs possible pouvant être prises par un attribut,
+	donc dans presque tout les cas, il s'agit du type de l'attribut.
+
 La syntaxe d'une relation est
 
 	* NomRelation(attribut=>type, #clef=>type, clef_étrangère=>Relation.attribut, ...)
@@ -94,6 +101,18 @@ Il existe 7 grandes règles
 		Règle 5 : associations réflexives				                <rules/rule5.rst>
 		Règle 6 : héritage				                              <rules/rule6.rst>
 		Règle 7 : associations n-aires				                  <rules/rule7.rst>
+
+.. warning::
+
+	Le modèle relationnel finit souvent par être accompagné de notes, il s'agit de contraintes
+	que le programmeur devra respecter, pour garantir une cohérence avec le diagramme de bases
+	de données
+
+		* :code:`clef(attribut)` : pour les clef artificielles déclarées
+		* :code:`not null` : si un attribut ne peut pas prendre de valeurs nulles
+		*
+			:code:`attribut in relation` : s'il doit forcément exister une occurence de attribut dans relation (souvent lié
+			aux multiplicités 1..*).
 
 3. Modèle relationnel vers implémentation physique
 =====================================================

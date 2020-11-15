@@ -4,8 +4,8 @@
 SQL (Structured Query Language)
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.2}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 13/11/2020}`
+| :math:`\color{grey}{Version \ 1.0.3}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 15/11/2020}`
 
 Le SQL est un language permettant d'accéder à une base de données (BD ou DB).
 
@@ -16,6 +16,9 @@ des nouveaux usages avec le PL/SQL (:ref:`plsql`), une extension du SQL.
 
 	Dans la continuité de ce cours, vous pouvez en apprendre plus
 	sur ce cours dans la partie avancée (:ref:`sql_advanced`).
+
+	Le cours :ref:`relation` introduit les étapes pour concevoir une base de données
+	depuis des spécifications.
 
 1. Vocabulaire et syntaxe basique
 =========================================
@@ -48,10 +51,6 @@ Schéma (compliqué mais important)
 
 	Pour appeler une table d’un schéma on fait : schema.table.
 
-Relation
-	Une relation R est un ensemble tel que les éléments soient des attributs
-	ayant un type : R(attribut=>type, ...).
-
 SQL-89 et SQL-92
 	Toutes les bases sont généralement dans une version qui supporte le SQL-92,
 	cependant certaines sont encore en SQL-89, donc vous devrez apprendre les quelques
@@ -60,7 +59,17 @@ SQL-89 et SQL-92
 Clef et Clef étrangère
 	Une clef (dite clef primaire ou primary key) est un attribut ou un ensemble d'attributs qui sont uniques et non nulls.
 
-	Une clef étrangère (dite foreign key) est une clef qui pointe sur la clef d'une autre relation.
+	Une clef étrangère (dite foreign key) est un attribut ou un groupe d'attributs qui pointent sur les clefs d'une autre relation.
+
+Table
+	Une table est la représentation d'une relation (voir :ref:`relation`). Elle possède des attributs
+	qui sont ses colonnes.
+
+	Les lignes sont appelées tuples (ou enregistrement), il s'agit des valeurs prises par les attributs.
+
+	Par exemple une relation viticulteur(#n_viticulteur:number, nom:varchar, prenom:varchar, v_ville:varchar) donne la table suivante
+
+	.. image:: /assets/db/sql/table.png
 
 1.2 Comment ça marche
 -----------------------------
@@ -319,7 +328,8 @@ Dans la continuité du cours
 
 .. toctree::
 
-		SQL - avancé <advanced>
+		SQL - avancé               <advanced>
+		Modélisation relationnelle <../model/index>
 
 -----
 
