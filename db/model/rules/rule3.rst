@@ -42,5 +42,5 @@ Donne la relation
 
 	contraintes
 
-		* tous les patriarches doivent être présents au moins une fois dans Membre.patriarche
+		* tous les patriarches doivent être présents au moins une fois dans Membre
 		* Membre.patriarche peut être NULL

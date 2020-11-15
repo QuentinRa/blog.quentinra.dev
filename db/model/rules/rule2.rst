@@ -53,3 +53,10 @@ Donne la relation
 	ou sans spécifier la clef, car il n'y en a qu'une
 
 	Dirige(#code_secret=>Membre, #clan=>Patriarche, années : number)
+
+.. note::
+
+	On n'oublie cependant pas les contraintes de multiplicité, ici
+	un patriarche est forcément associé à un membre au plus donc :
+
+		* clan IN Dirige (qui veut dire que tous les id des patriarches sont dans Dirige)

@@ -26,11 +26,13 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/uml/diagrammes/db.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/diagrammes/db.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/uml/model.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/model/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/advanced.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/advanced.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/template.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/model/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/model/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/model/rules/rule2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/model/rules/rule2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/model/rules/rule3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/model/rules/rule3.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/model/rules/rule5.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/model/rules/rule5.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/model/rules/rule6.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/model/rules/rule6.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/model/rules/rule7.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/model/rules/rule7.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,19 +68,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\db\model" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\db\sql" />
+      <recent name="C:\Users\quent\Documents\texas-res\db\model" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\conception\uml\activity" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\conception\uml\seq" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\db\model\rules" />
       <recent name="C:\Users\quent\Documents\texas-res\conception\patrons" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\conception\uml\classes" />
       <recent name="C:\Users\quent\Documents\texas-res\conception\uml" />
       <recent name="C:\Users\quent\Documents\texas-res\db\sql\gestion" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\db\model" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\conception\uml\activity" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\conception\uml\seq" />
-      <recent name="C:\Users\quent\Documents\texas-res\conception\mdd" />
-      <recent name="C:\Users\quent\Documents\texas-res\conception\uml\diagrammes" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -169,7 +171,8 @@
       <workItem from="1605291238847" duration="11825000" />
       <workItem from="1605315588137" duration="1810000" />
       <workItem from="1605317450289" duration="134000" />
-      <workItem from="1605364432193" duration="20619000" />
+      <workItem from="1605364432193" duration="22037000" />
+      <workItem from="1605440987293" duration="2138000" />
     </task>
     <servers />
   </component>

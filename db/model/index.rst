@@ -4,6 +4,9 @@
 Modélisation relationnelle
 ================================
 
+| :math:`\color{grey}{Version \ 1.0.0}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 15/11/2020}`
+
 La modélisation relationnelle à pour objectif depuis ce que veut un client,
 d'obtenir une base de données la plus proche de ce qui réponds à son besoin.
 
@@ -92,15 +95,20 @@ Il existe 7 grandes règles
 		Règle 6 : héritage				                              <rules/rule6.rst>
 		Règle 7 : associations n-aires				                  <rules/rule7.rst>
 
-3. Modèle relationnel vers SQL
-==============================================
+3. Modèle relationnel vers implémentation physique
+=====================================================
 
-...
+L'implémentation physique est généralement en SQL (cours :ref:`sql`). Dans ce cas
 
+	* une relation donne une table
+	* les attributs de la relation sont ceux de la table
+	* vous devez faire en sorte que les contraintes soient respectés
 
-
-
-
+		* contrainte sur le nombre de tuples
+		* contraintes d'unicité (clefs)
+		* contraintes de clef étrangères
+		* contraintes nul ou non null
+		* ...
 
 Exercices
 ==============
