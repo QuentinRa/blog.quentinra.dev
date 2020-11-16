@@ -4,7 +4,7 @@
 Théorie des graphes
 ================================
 
-| :math:`\color{grey}{Version \ 1.1.4}`
+| :math:`\color{grey}{Version \ 1.1.5}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 16/11/2020}`
 
 Graphe
@@ -67,10 +67,10 @@ Ordre
 ==================== ==================== ==================================================
 Graphe non orienté   Graphe orienté       Description
 ==================== ==================== ==================================================
-Chaine								Chemin              Chaque sommets est de degré 2 sauf les extrémités
-Cycle						      Circuit             Tous les sommets sont de degré 2
-Étoile						    Étoile              Un sommet de degré \|E\|-1 et les autres de degré 1
-Roue						      Roue                Tous les sommets de degré 3 sauf 1 de degré \|E\|-1
+Chaine               Chemin               Chaque sommets est de degré 2 sauf les extrémités
+Cycle                Circuit              Tous les sommets sont de degré 2
+Étoile               Étoile               Un sommet de degré \|E\|-1 et les autres de degré 1
+Roue                 Roue                 Tous les sommets de degré 3 sauf 1 de degré \|E\|-1
 ==================== ==================== ==================================================
 
 Cycle, Chaines élémentaires
@@ -504,10 +504,12 @@ Arbre couvrant de poids minimum (ACM)
 		Graphes planaires               <exercices/planaire>
 		Non triés                       <exercices/non_rank>
 
-**Cours associés**
+8. Avancé
+==============
+
+Vous pouvez trouver ici un cours sur des concepts avancés de la théorie des graphes
 
 .. toctree::
-    :maxdepth: 1
 
 		Cours avancé sur les graphes    <advanced>
 
@@ -530,4 +532,3 @@ Arbre couvrant de poids minimum (ACM)
 	* https://fr.wikipedia.org/wiki/Graphe_dual
 	* https://fr.wikipedia.org/wiki/Line_graph
 	* https://fr.wikipedia.org/wiki/Automorphisme_de_graphe
-	* https://fr.wikipedia.org/wiki/Th%C3%A9orie_spectrale_des_graphes

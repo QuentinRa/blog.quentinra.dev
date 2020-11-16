@@ -80,7 +80,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     Vim (Vi IMproved)                   <utils/vim/index>
 
 .. toctree::
-    :caption: Cours non stables
+    :caption: Brouillons
     :name: pp
     :maxdepth: 1
 

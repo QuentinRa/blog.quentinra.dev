@@ -98,7 +98,26 @@ Base de cocycles
 2. Ordonnancement
 ======================================
 
-...
+On dispose de
+
+	* tâches à effectuer
+	* certaines tâches dépendent de d'autre tâches
+	* les tâches prennent un durée à s'effectuer donnée
+	* on ne prends pas en compte le fait que certaines tâches ne peuvent pas se faire en même temps (problème de ressources etc...).
+	* on ne prends pas en compte le fait si certaines tâches doivent être effectuée avant (ou commencée après) un certain moment
+
+L'ordonnancement permet de trouver le moyen les plus efficace d'ordonner les tâches afin d'obtenir
+un résultats en une durée optimale.
+
+Les données traités sont généralement sous la forme d'un tableaux avec tâches, tâches dépendantes et durée.
+
+Il existe deux méthodes qui dépendant dont l'efficacité varie selon votre projet
+
+.. toctree::
+			:maxdepth: 1
+
+				Méthode Potentiel-tâches       <ordonnancement/mpt>
+				Méthode P.E.R.T.               <ordonnancement/pert>
 
 3. Exercices
 ==============
@@ -111,3 +130,15 @@ Base de cocycles
 		Fonction de Grundy              <exercices/grundy>
 		Bases de cycles et cocycles     <exercices/bases>
 		Non triés                       <exercices/non_rank>
+
+------
+
+**Crédits**
+	* Massimissa MERABET (enseignant à l'ENSIIE)
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
+
+**Références**
+	* https://fr.wikipedia.org/wiki/Lexique_de_la_th%C3%A9orie_des_graphes
+	* http://atomurl.net/math/
+	* https://fr.wikiversity.org/wiki/Th%C3%A9orie_des_graphes/Propri%C3%A9t%C3%A9s
+	* https://fr.wikipedia.org/wiki/Th%C3%A9orie_spectrale_des_graphes
