@@ -12,33 +12,6 @@ et sa date au plus tard (donc le coût avec un maximum de retard sans retarder l
 On ajoute deux sommets : début et fin. Les arcs partant de début vers
 les sommets n'ayant pas de tâches antérieures ont pour coût zéro.
 
-Définitions
-----------------------
-
-Coût optimal
-	La chaine ayant le plus haut coût.
-
-Marges
-	| **totale** : Retard possible pouvant être pris sur une tâche sans affecter le coût optimal.
-	| :code:`calcul` : début max-début min
-	| **libre** : marge totale mais sans modifier les dates de début des tâches suivantes
-	| :code:`calcul` : pour chaque sommet, on regarde de combien on peut augmenter le début sans que début+cout > début des suivants
-	| **certaine** : marge libre mais en considérant que toutes les tâches ont commencé au plus tard
-	| :code:`calcul` : Pour chacun prédécesseur de i, si leur début max+coût-début max de i >= a > 0 pour tous, a est la marge libre
-
-Tâche critique et chaine critique
-	Une tâche est critique si ça date de début et sa date maximale de début sont la même.
-
-	Une chaine critique est une chaine de tâches critiques.
-
-Déterminer la date au plus tôt
-	La date au plus tôt du premier est zéro. La date au plus tôt de n'importe quel sommet
-	est le plus grand coût parmi la somme des (date au plus tôt + coût) des prédécesseurs.
-
-Déterminer la date au plus tard
-	On part de la fin, sa date au plus tard est sa date au plus tôt. La date au plus tard
-	est le minimum parmi (date au plus tôt du sommet actuel - coût du prédécesseur).
-
 Exemple
 -----------------
 
