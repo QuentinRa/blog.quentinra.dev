@@ -171,7 +171,7 @@ qu'une classe devrait généraliser 0 ou 1 parents mais pas plus.
 	à une contrainte d'association exclusive (voir :ref:`contraintes_association`).
 
 	On parle d'héritage sans spécificité lorsque les classes filles n'ont pas de propriétés
-	additionnelles (attributs, opérations, ...).
+	additionnelles (attributs, opérations, ...) et qu'aucune classe n'a d'association avec une classe fille.
 
 5. Plus d'informations
 ====================================
@@ -186,7 +186,7 @@ qu'une classe devrait généraliser 0 ou 1 parents mais pas plus.
 	* Florent Madelaine (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Luc Hernandez (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Luc Dartois (enseignant à l'IUT de Sénart-Fontainebleau)
-	* Marie SAFRANSKI (enseignant à l'ENSIIE)
+	* Marie SZAFRANSKI (enseignant à l'ENSIIE)
 	* Julien FOREST (enseignant à l'ENSIIE)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 

@@ -56,7 +56,7 @@ Donne la relation
 	Patriarche(nom:varchar, #nomClan: varchar,age : number)
 	Membre(nom:varchar, #code_secret: varchar, nomClan=>Patriarche.nomClan, années : number)
 
-Association tordues 0..1 et 1
+Cas tordus
 ===============================
 
 Il se peut que vous tombiez (R.I.P x100) sur deux classes avec un seul attribut qui est une clef primaire.

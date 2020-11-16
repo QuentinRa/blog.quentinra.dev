@@ -79,7 +79,7 @@ aucun
 **Crédits**
 	* Florent Madelaine (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Luc Hernandez (enseignant à l'IUT de Sénart-Fontainebleau)
-	* Marie SAFRANSKI (enseignant à l'ENSIIE)
+	* Marie SZAFRANSKI (enseignant à l'ENSIIE)
 	* Julien FOREST (enseignant à l'ENSIIE)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
