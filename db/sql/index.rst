@@ -328,8 +328,7 @@ Dans la continuité du cours
 
 .. toctree::
 
-		SQL - avancé               <advanced>
-		Modélisation relationnelle <../model/index>
+		SQL (Structured Query Language) - avancé    <advanced>
 
 -----
 

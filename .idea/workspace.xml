@@ -26,10 +26,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/model/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/model/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/model/rules/rule2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/model/rules/rule2.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/model/rules/rule3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/model/rules/rule3.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/model/rules/rule4.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/model/rules/rule4.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sql/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +168,9 @@
       <workItem from="1605317450289" duration="134000" />
       <workItem from="1605364432193" duration="22037000" />
       <workItem from="1605440987293" duration="20234000" />
-      <workItem from="1605473784966" duration="1808000" />
+      <workItem from="1605473784966" duration="2491000" />
+      <workItem from="1605515067780" duration="2723000" />
+      <workItem from="1605522126262" duration="3099000" />
     </task>
     <servers />
   </component>

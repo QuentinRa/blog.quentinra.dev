@@ -4,8 +4,8 @@
 Théorie des graphes
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.3}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 02/11/2020}`
+| :math:`\color{grey}{Version \ 1.1.4}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 16/11/2020}`
 
 Graphe
 	Un graphe (G) est un ensemble de sommets (E pour Edge)
@@ -204,91 +204,7 @@ Graphe partiel
 :math:`\tau`-minimum :math:`\tau`-équivalent
 	Il s'agit d'un graphe :math:`\tau`-minimal :math:`\tau`-équivalent avec le minimum d'arcs
 
-2.4 Noyau et base de cycles
-*******************************************
-
-2.4.1 Noyau
-----------------
-
-Stabilité
-	Un ensemble stable S est un sous-ensemble tel que les sommets de l'ensemble ne sont jamais
-	voisins.
-
-	Stable maximal : on ajoute un sommet et il n'est plus stable
-
-	Stable maximum : on ne peut pas créer d'ensemble S plus grand. On note :math:`\alpha (G) = card(stable\ maximum)`
-
-	Soit h le degré maximal et n le nombre de sommets, :math:`|Stable\ maximal| \ge \lceil \frac{n}{h+1} \rceil`.
-
-Partitionnement
-	On peut partitionner un graphe en cliques. Une partition
-
-		* est un ensemble de cliques
-		* tous les sommets doivent être dans une clique
-		* les sommets doivent être présent dans exactement une clique
-
-	:math:`|S| \le |P|`. Si :math:`|S| = |P|` alors S est stable maximum et P une partition minimum.
-
-Ensemble absorbant
-	Une ensemble A absorbant est un ensemble tel que tout sommet qui
-	n'est pas dans l'ensemble est un successeur d'un sommet dans A.
-
-	:math:`\beta (G) = card(plus\ grand\ ensemble\ absorbant)`
-
-Noyau
-	Sous-ensemble stable et absorbant.
-
-	Un graphe peut avoir 0,1 ou plusieurs noyaux.
-
-Fonction de grundy
-	Soit un graphe orienté, la fonction de grundy g(v) retourne le plus petit
-	entier non attribué aux successeurs de v.
-
-	Tous les sommets ayant comme valeur 0 sont censés composer le noyau (vérifiez!).
-
-	Il est recommandé de partir d'un sommet qui n'a pas de prédécesseur,
-	car il fait forcément parti du noyau.
-
-2.4.2 base de cycles
--------------------------
-
-Base de cycles
-	On considère l'ensemble des arrêtes V ordonné. On note chaque cycle
-	est comme un ensemble qui associe à chaque arrête une valeur : 0,1,-1.
-
-		* 0 : si le cycle ne parcours par l'arrête
-		* 1 : si le cycle parcours l'arrête dans le bon sens
-		* -1 : si le cycle parcours l'arrête dans le sens inverse
-
-	On note un cycle :math:`C_n = (0, ...,1,-1)`
-
-	Une base de cycles B est un ensemble de cycles, tels
-	que la base de cycles est libre et génératrice.
-
-	On note :math:`\mu(G)` (mu) le nombre d'éléments d'une base de cycle,
-	appelé nombre cyclomatique. :math:`\mu(μ(G) = m − n + p` avec n sommets m arcs et p composantes
-	connexes.
-
-Base de cocycles
-	On appelle cocycle de A, l'ensemble des arcs incidents à A,
-	noté :math:`\omega{(A)}`. On associe à chaque arc une valeur
-
-  	* 0 : si le cocycle ne parcours par l'arrête
-  	* 1 : si le cocycle parcours l'arrête dans le bon sens
-  	* -1 : si le cocycle parcours l'arrête dans le sens inverse
-
-  .. hint::
-
-   	En gros il faut que les sommets du cocycles soit incidents à tous les autres
-
-  Une base de cycle est un ensemble de cocycles, tel que la base
-  soit libre et génératrice.
-
-	On note :math:`\gamma(G)` (gamma) le nombre d'éléments d'une base de cocycle,
-	appelé nombre cocyclomatique. :math:`\gamma(μ(G) = n - p` avec n sommets et p composantes
-	connexes.
-
-2.5 Graphes planaires
+2.4 Graphes planaires
 *******************************************
 
 Planaire
@@ -584,12 +500,16 @@ Arbre couvrant de poids minimum (ACM)
 		Notions et Définitions          <exercices/notions>
 		Parcours                        <exercices/parcours>
 		Fermeture transitive            <exercices/transitive>
-		Stabilité                       <exercices/stable>
 		Étude des degrés                <exercices/voisins>
-		Fonction de Grundy              <exercices/grundy>
-		Bases de cycles et cocycles     <exercices/bases>
 		Graphes planaires               <exercices/planaire>
 		Non triés                       <exercices/non_rank>
+
+**Cours associés**
+
+.. toctree::
+    :maxdepth: 1
+
+		Cours avancé sur les graphes    <advanced>
 
 ------
 
