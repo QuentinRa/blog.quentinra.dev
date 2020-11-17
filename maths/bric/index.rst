@@ -17,6 +17,7 @@ Les grandes thèmes sont :
 		3. Limites                               <limit>
 		4. Dérivées                              <derive>
 		5. Primitives et Intégrales              <integral>
+		6. Développements limités                <dl>
 
 Exercices
 *************
@@ -50,6 +51,7 @@ Exercices
 	* https://www.solumaths.com/fr/calculatrice-en-ligne/calculer/equation_tangente
 	* https://www.symbolab.com/solver/simplify-calculator/
 	* https://mathpapa.com/simplify-calculator/
+	* https://math-linux.com/latex-26/faq/latex-faq/article/latex-derivatives-limits-sums-products-and-integrals
 	* matplotlib
 			* https://stackoverflow.com/questions/31556446/how-to-draw-axis-in-the-middle-of-the-figure
 			* https://matplotlib.org/3.2.1/gallery/lines_bars_and_markers/simple_plot.html#sphx-glr-gallery-lines-bars-and-markers-simple-plot-py

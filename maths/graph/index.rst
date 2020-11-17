@@ -4,7 +4,7 @@
 Théorie des graphes
 ================================
 
-| :math:`\color{grey}{Version \ 1.1.5}`
+| :math:`\color{grey}{Version \ 1.1.6}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 16/11/2020}`
 
 Graphe
@@ -510,6 +510,7 @@ Arbre couvrant de poids minimum (ACM)
 Vous pouvez trouver ici un cours sur des concepts avancés de la théorie des graphes
 
 .. toctree::
+		:maxdepth: 3
 
 		Cours avancé sur les graphes    <advanced>
 

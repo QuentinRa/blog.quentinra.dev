@@ -11,11 +11,11 @@ Il existe trois méthodes possibles
 		traduction par classe mère                 <rule6/parent>
 		traduction par références                  <rule6/ref>
 
-**Exemple de cas**
+La traduction par classe fille est généralement utilisée lorsque la mère est
+abstraite.
 
-...
+La traduction par classe mère est généralement utilisée lorsque les filles
+ont peu de spécificités.
 
-Cas tordus
-======================
-
-...
+La traduction par référence est celle majoritairement utilisée dans le
+reste de cas.
