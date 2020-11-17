@@ -56,7 +56,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/language/japanese/chiffres" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/language/japanese/voc" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="proofread" />
@@ -71,11 +71,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\assets\conception\uml\seq" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\language\japanese\voc" />
       <recent name="C:\Users\quent\Documents\texas-res\language\japanese\chiffres" />
       <recent name="C:\Users\quent\Documents\texas-res\language\japanese\alphabet" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\dl" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\bric" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

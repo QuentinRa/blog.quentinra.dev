@@ -4,7 +4,7 @@
 Japonais
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.0}`
+| :math:`\color{grey}{Version \ 1.1.2}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 17/11/2020}`
 
 **Ce cours est un cours d'initiation au japonais et à la culture japonais.**
@@ -49,6 +49,22 @@ une quantité (objets, personnes, age) et l'argent.
 			Kanji                     <chiffres/kanji>
 			Hiragana et Katakana      <chiffres/kana>
 
+4. S'exprimer en japonais
+================================
+
+...
+
+5. Vocabulaire
+========================
+
+.. toctree::
+		:maxdepth: 1
+
+			Monde du travail                    <voc/work>
+			Date, Mois, Heure, Calendrier       <voc/time>
+			Pays, Monde, Carte, Nationalités    <voc/world>
+
+
 -----
 
 **Crédits**
@@ -56,11 +72,25 @@ une quantité (objets, personnes, age) et l'argent.
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* https://fr.wikipedia.org/wiki/%C3%89critures_du_japonais
-	* https://fr.wikipedia.org/wiki/Kanji
-	* https://fr.wikipedia.org/wiki/R%C5%8Dmaji
-	* https://fr.wikipedia.org/wiki/Katakana
-	* https://fr.wikipedia.org/wiki/Hiragana
-	* http://www.romajidesu.com/
-	* https://www.lexilogos.com/japonais_chiffres.htm
-	* https://translation2.paralink.com/Japanese-French-Translator/
+	* connaissances
+
+		* langue
+
+				* https://fr.wikipedia.org/wiki/%C3%89critures_du_japonais
+				* https://fr.wikipedia.org/wiki/Kanji
+				* https://fr.wikipedia.org/wiki/R%C5%8Dmaji
+				* https://fr.wikipedia.org/wiki/Katakana
+				* https://fr.wikipedia.org/wiki/Hiragana
+
+		* chiffres
+
+			* https://www.lexilogos.com/japonais_chiffres.htm
+			* https://fr.wikipedia.org/wiki/Num%C3%A9ration_japonaise
+			* https://dicjapo.com/listes-de-vocabulaire-japonais/compteurs-en-japonais/
+			* https://yesjapan.com/YJ6/question/5070/what-is-the-difference-between-ikutsu-and-ikura/
+			* https://elon.io/learn-japanese-hepburn/lexicon/27669/ikutsu
+
+	* outils
+
+			* http://www.romajidesu.com/
+			* https://translation2.paralink.com/Japanese-French-Translator/

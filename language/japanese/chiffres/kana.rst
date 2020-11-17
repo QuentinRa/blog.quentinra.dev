@@ -42,12 +42,33 @@ Les chiffres en japonais sont formés de la forme suivante :
 **1,000,000** ひゃくまん (hyakuman)
 ===================================================== =
 
-2.1 Compter
+3.1 Compter
 -----------------------------
 
-...
+En japonais, les mots pour compter une quantité changent en fonction de que ce l'on compte
 
-2.2 Argent
+Voici les différentes façon de demander combien ? et les réponses.
+
+	* :code:`objets` : いくつ (ikutsu) ? voir après [#1]_
+	* :code:`objets` : なんこ (nanko) ? chiffre-ko (ko=こ). Exceptions : いっこ (ikko-1), ろっこ (rokko-6), じゅっこ (jukko)
+	* :code:`personnes` : なんにん (nannin) ? chiffre-nin. Exceptions : voir après [#2]_
+	* :code:`age` : なんさい (nansai) ? chiffre-sai (sai=さい). Exceptions : いっさい (issai), はっさい (hassai), じゅっさい (jussai)
+
+.. [#1] ひとつ (Hitotsu), ふたつ (Futatsu), みっつ (Mittsu), よっつ (Yottsu),
+	いつつ (Itsutsu), むっつ (Muttsu), ななつ (Nanatsu), やっつ (Yattsu), ここのつ (Kokonotsu), とお (Too)
+
+.. [#2] ひとり (Hitori), ふたり (Futari), しちにん (Shichi-nin alternative de nana-nin)
+
+3.2 Argent
 -----------------------------
 
-...
+La monnaie (argent = okane = おかね) japonaise est le Yen ¥ (noté et prononcé "en" = えん). On
+indique par exemple 300¥ comme 300-en donc sanbyaku-en.
+
+Le mot ikura (いくら) permet de demander combien (argent).
+
+Quelques mot associés
+
+	* たかい (takai) : cher
+	* やすい (yasui) : pas cher
+	* むりょう (muryoo/muryou) : gratuit
