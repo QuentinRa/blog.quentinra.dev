@@ -21,11 +21,9 @@ Les choses non faites et à faire
 **Base de données**
 * ajouter les triggers plsql
 * ajouter le cours sur SQLite ?
-* notez que les attributs du group by sont forcément dans la clause select
 * Organisation Indexée : B+
 
 **Conception**
-* ajouter le cours de modélisation relationnelle
 * Diagramme de déploiement
 * TDD et BDD et pair programming
 
@@ -44,7 +42,6 @@ Les choses non faites et à faire
 * reductions/s2 question 3
 * Faire les exercices sur les intégrales (2/3)
 * Faire les exercices non rank
-* ajouter les notations de landau
 * ajouter les complexes
 * ajouter les développements en série
 

@@ -26,9 +26,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/model/rules/rule6.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/model/rules/rule6.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/CHEKCLIST.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/CHEKCLIST.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/non_rank.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/bric/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,26 +57,26 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/bric" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/bric/exercices/dl" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\maths\bric" />
-      <recent name="C:\Users\quent\Documents\texas-res\team\scrum" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\ordonnancement" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\model\rules\rule6" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\model\rules" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\assets\db\sql" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\db\model" />
       <recent name="C:\Users\quent\Documents\texas-res\db\model" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\conception\uml\activity" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\conception\uml\seq" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\dl" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\bric" />
+      <recent name="C:\Users\quent\Documents\texas-res\team\scrum" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\ordonnancement" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -172,7 +172,7 @@
       <workItem from="1605473784966" duration="2491000" />
       <workItem from="1605515067780" duration="2723000" />
       <workItem from="1605522126262" duration="29383000" />
-      <workItem from="1605600583982" duration="7331000" />
+      <workItem from="1605600583982" duration="11137000" />
     </task>
     <servers />
   </component>

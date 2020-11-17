@@ -30,6 +30,7 @@ Exercices
 		Dérivées                  <exercices/derive>
 		Études de fonctions       <exercices/etude>
 		Primitives  et intégrales <exercices/integral>
+		Développements limités    <exercices/dl>
 		Non triés                 <exercices/non_rank>
 
 |

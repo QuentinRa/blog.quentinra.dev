@@ -2,7 +2,7 @@
 Non triés
 ================================
 
-1/1 - Dérivées de fonctions réciproques usuelles
+Dérivées de fonctions réciproques usuelles
 ---------------------------------------------------------
 
 On rappelle que si :math:`f : I  \rightarrow  J` est dérivable et bijective, alors la bijection réciproque
@@ -16,6 +16,22 @@ pour tout :math:`x in J` où cela a du sens.
 3. Même question pour arcsin et arctan.
 
 | :code:`[TAG] ENSIIE MOM TD3 2020 S1`
+
+Étude asymptotique grâce à un DL
+---------------------------------------------------------
+
+En utilisant un développement limité, déterminer pour chacune des fonctions suivantes son
+asymptote en :math:`+\infty` ainsi que la position de la courbe par rapport à cette asymptote.
+
+.. math::
+
+		f(x) = \sqrt{\frac{x^3}{1 + x}}
+		\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+		f_2(x) = \frac{(2x + 1)^2}{x^2 + x + 1}
+		\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+		f_3(x) = x^2 \ln \frac{x + 1}{x - 1}
+
+| :code:`[TAG] ENSIIE MOM TD5 2020 S1`
 
 |
 
