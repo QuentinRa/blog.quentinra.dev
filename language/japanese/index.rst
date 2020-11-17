@@ -4,8 +4,8 @@
 Japonais
 ================================
 
-| :math:`\color{grey}{Version \ 1.1.2}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 17/11/2020}`
+| :math:`\color{grey}{Version \ 1.1.3}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 18/11/2020}`
 
 **Ce cours est un cours d'initiation au japonais et à la culture japonais.**
 
@@ -81,6 +81,7 @@ une quantité (objets, personnes, age) et l'argent.
 				* https://fr.wikipedia.org/wiki/R%C5%8Dmaji
 				* https://fr.wikipedia.org/wiki/Katakana
 				* https://fr.wikipedia.org/wiki/Hiragana
+				* https://www.sljfaq.org/afaq/wi-and-we-kana.html
 
 		* chiffres
 
@@ -94,3 +95,10 @@ une quantité (objets, personnes, age) et l'argent.
 
 			* http://www.romajidesu.com/
 			* https://translation2.paralink.com/Japanese-French-Translator/
+			* https://www.lexilogos.com/clavier/hiragana_conversion.htm
+			* https://www.lexilogos.com/clavier/nihongo_hiragana.htm
+
+	* cours
+
+			* https://fr.wikibooks.org/wiki/Japonais
+			* https://fr.wikibooks.org/wiki/Japonais/Hiragana
