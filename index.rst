@@ -72,6 +72,8 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :name: language
     :maxdepth: 1
 
+		Japonais                             <language/japanese/index>
+
 .. toctree::
     :caption: Utilitaires
     :name: utils
@@ -85,7 +87,6 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :maxdepth: 1
 
 		Anglais                              <language/english/index>
-		Japonais                             <language/japanese/index>
     Entreprise                           <business/env/index>
     Macroéconomie                        <business/env/macro>
     Documents d'une Entreprise           <business/docs/index>
