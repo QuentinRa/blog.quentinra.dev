@@ -37,16 +37,17 @@ Les Rōmaji sont des caractères latins pour écrire des mots
 qui ne peuvent pas être écrits en japonais ou des mots qui doivent
 pouvoir être lus par des personnes qui ne lisent pas le japonais.
 
-2. Chiffres
+3. Chiffres
 ======================================
+
+Cette partie inclus les chiffres jusqu'à 99 millions, exprimer
+une quantité (objets, personnes, age) et l'argent.
 
 .. toctree::
 		:maxdepth: 1
 
 			Kanji                     <chiffres/kanji>
 			Hiragana et Katakana      <chiffres/kana>
-
-|
 
 -----
 
@@ -60,3 +61,6 @@ pouvoir être lus par des personnes qui ne lisent pas le japonais.
 	* https://fr.wikipedia.org/wiki/R%C5%8Dmaji
 	* https://fr.wikipedia.org/wiki/Katakana
 	* https://fr.wikipedia.org/wiki/Hiragana
+	* http://www.romajidesu.com/
+	* https://www.lexilogos.com/japonais_chiffres.htm
+	* https://translation2.paralink.com/Japanese-French-Translator/
