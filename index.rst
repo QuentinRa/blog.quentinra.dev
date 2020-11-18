@@ -58,6 +58,14 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
 		PL/SQL (Procedural Language)         <db/plsql/index>
 
 .. toctree::
+    :caption: Travailler sur un projet
+    :name: team
+    :maxdepth: 1
+
+		Gestion de projet                   <team/gestion/index>
+		Méthode Agile:Scrum                 <team/agile/scrum>
+
+.. toctree::
     :caption: Entreprise
     :name: business
     :maxdepth: 1
