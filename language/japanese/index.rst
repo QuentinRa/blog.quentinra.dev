@@ -4,10 +4,10 @@
 Japonais
 ================================
 
-| :math:`\color{grey}{Version \ 1.1.3}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 18/11/2020}`
+| :math:`\color{grey}{Version \ 0.2.4}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 19/11/2020}`
 
-**Ce cours est un cours d'initiation au japonais et à la culture japonais.**
+**Ce cours est un cours d'initiation au japonais et à la culture japonaise.**
 
 1. Histoire
 ======================================
@@ -29,9 +29,9 @@ La langue japonaise possède 3 jeux de lettres :
 Les kanjis sont les caractères inspiré de la langue chinoise
 et sont couramment utilisés.
 
-Les hiragana servent principalement à l'écriture, il ne sont interprétable
-que d'une façon donc diminuent les ambiguïtés, contrairement aux kanjis. Les Katana
-sont généralement utilisés pour écrire des mots étrangers.
+Les hiragana sont un jeu de caractère basé sur des syllabes. Ils ne sont interprétable
+que d'une façon donc diminuent les ambiguïtés, contrairement aux kanjis. Le Katakana
+est utilisé pour écrire des mots étrangers.
 
 Les Rōmaji sont des caractères latins pour écrire des mots
 qui ne peuvent pas être écrits en japonais ou des mots qui doivent

@@ -4,8 +4,8 @@
 Modélisation relationnelle
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.4}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 16/11/2020}`
+| :math:`\color{grey}{Version \ 1.0.5}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 18/11/2020}`
 
 La modélisation relationnelle à pour objectif depuis ce que veut un client,
 d'obtenir une base de données la plus proche de ce qui réponds à son besoin.
@@ -134,6 +134,19 @@ Exercices
 ==============
 
 aucun
+
+|
+
+.. note::
+
+	Le langage relationnel est basé sur l'algèbre relationnelle, si vous êtes curieux, il y a un cours
+	cours ici, qui fait le lien entre certains notations (dessins), leur notation relationnelle
+	et le code SQL.
+
+	.. toctree::
+			:maxdepth: 1
+
+			Algèbre relationnelle et langage assertionnel <algebra>
 
 -----
 
