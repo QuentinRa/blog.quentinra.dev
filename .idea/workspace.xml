@@ -25,8 +25,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/team/gestion/steps/risk.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/team/gestion/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/team/gestion/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team/gestion/steps/gantt.rst" beforeDir="false" afterPath="$PROJECT_DIR$/team/gestion/steps/gantt.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team/gestion/steps/pert.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team/gestion/steps/setup.rst" beforeDir="false" afterPath="$PROJECT_DIR$/team/gestion/steps/setup.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team/gestion/steps/task.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team/gestion/steps/wbs.rst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +179,7 @@
       <workItem from="1605600583982" duration="16144000" />
       <workItem from="1605647835996" duration="21000" />
       <workItem from="1605647893099" duration="7000" />
-      <workItem from="1605719620643" duration="8516000" />
+      <workItem from="1605719620643" duration="10219000" />
     </task>
     <servers />
   </component>
