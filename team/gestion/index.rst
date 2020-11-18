@@ -20,6 +20,9 @@ en équipe. Vous trouverez principalement
 1. Vocabulaire
 ===============================
 
+Besoin
+	C'est ce que votre client veut.
+
 Livrables
 	C'est ce que vous livrez au client.
 
@@ -29,6 +32,10 @@ Jalons
 Périmètre du projet
 	Ensemble de tout ce qui concerne le projet, donc les tâches et leur durée, les livrables, le
 	budget etc...
+
+HJ
+	HJ est l'abréviation de Homme-Jour. Il s'agit de l'unité généralement utilisée pour désigner
+	le coût d'une tâche.
 
 2. Déroulement d'un projet
 ===============================
@@ -41,6 +48,25 @@ Un projet à deux vies et deux équipes généralement différentes pour chacune
 Cela se déroule généralement comme ça :
 
 .. image:: /assets/team/gestion/vie.png
+
+Comment
+
+Voici une liste possible des étapes (checklist) d’un projet :
+
+.. toctree::
+		:maxdepth: 1
+
+			Analyser le besoin, établir le périmètre du projet                     <steps/setup>
+			Lister et décomposer les taches nécessaires au projet (WBS)            <steps/wbs>
+			Établir les responsabilités pour chaque tache                          <steps/task>
+			Définir l'ordre des taches et leur durée (PERT)                        <steps/pert>
+			Répartir les activités dans le temps (=planning) (GANTT)               <steps/gantt>
+
+On doit parallèlement gérer :
+
+	* les coûts (enveloppe budgétaire)
+	* la priorisation (MoSCoW)
+	* les risques
 
 3. Gérer son équipe (chef de projet)
 =======================================

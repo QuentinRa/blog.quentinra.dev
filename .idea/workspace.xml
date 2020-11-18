@@ -26,7 +26,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team/gestion/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/team/gestion/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/team/scrum" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/team/gestion/steps" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="proofread" />
@@ -63,11 +63,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\team\gestion\steps" />
       <recent name="C:\Users\quent\Documents\texas-res\team\scrum" />
       <recent name="C:\Users\quent\Documents\texas-res\team\gestion" />
       <recent name="C:\Users\quent\Documents\texas-res\language\japanese\voc" />
       <recent name="C:\Users\quent\Documents\texas-res\language\japanese\chiffres" />
-      <recent name="C:\Users\quent\Documents\texas-res\language\japanese\alphabet" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\assets\team\gestion" />
@@ -173,7 +173,7 @@
       <workItem from="1605600583982" duration="16144000" />
       <workItem from="1605647835996" duration="21000" />
       <workItem from="1605647893099" duration="7000" />
-      <workItem from="1605719620643" duration="6928000" />
+      <workItem from="1605719620643" duration="8516000" />
     </task>
     <servers />
   </component>
