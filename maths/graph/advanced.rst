@@ -95,6 +95,8 @@ Base de cocycles
 	appelé nombre cocyclomatique. :math:`\gamma(μ(G) = n - p` avec n sommets et p composantes
 	connexes.
 
+.. _ordonnancement_graph:
+
 2. Ordonnancement
 ======================================
 

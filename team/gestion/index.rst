@@ -54,9 +54,9 @@ Tout d'abord pour commencer
 .. toctree::
 		:maxdepth: 1
 
-		Analyser le besoin, établir le périmètre du projet                     <steps/setup>
-		Répartir les activités dans le temps (=planning) (GANTT)               <steps/gantt>
-		Étude des risques                                                      <steps/risk>
+		Analyser le besoin, établir le périmètre du projet         <steps/setup>
+		Répartir les activités dans le temps                       <steps/gantt>
+		Étude des risques                                          <steps/risk>
 
 
 3. Gérer son équipe (chef de projet)
