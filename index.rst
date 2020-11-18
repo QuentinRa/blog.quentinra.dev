@@ -63,6 +63,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :maxdepth: 1
 
 		Gestion de projet                   <team/gestion/index>
+		Cahier des charges                  <team/gestion/cdc>
 		Méthode Agile:Scrum                 <team/agile/scrum>
 
 .. toctree::

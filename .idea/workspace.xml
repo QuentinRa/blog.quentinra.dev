@@ -26,10 +26,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/advanced.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/advanced.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/ordonnancement/pert.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/ordonnancement/pert.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/team/gestion.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/team/gestion/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/team/gestion/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team/gestion/steps/gantt.rst" beforeDir="false" afterPath="$PROJECT_DIR$/team/gestion/steps/gantt.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/team/gestion/steps/setup.rst" beforeDir="false" afterPath="$PROJECT_DIR$/team/gestion/steps/setup.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -177,7 +176,7 @@
       <workItem from="1605600583982" duration="16144000" />
       <workItem from="1605647835996" duration="21000" />
       <workItem from="1605647893099" duration="7000" />
-      <workItem from="1605719620643" duration="11551000" />
+      <workItem from="1605719620643" duration="14935000" />
     </task>
     <servers />
   </component>
@@ -292,10 +291,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="376" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1603556286896" />
-    <state x="480" y="163" width="575" height="498" key="find.popup" timestamp="1605735949430">
+    <state x="480" y="163" width="575" height="498" key="find.popup" timestamp="1605737311316">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="480" y="163" width="575" height="498" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1605735949430" />
+    <state x="480" y="163" width="575" height="498" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1605737311316" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1605033283850">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
