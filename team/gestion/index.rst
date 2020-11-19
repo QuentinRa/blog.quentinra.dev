@@ -5,7 +5,7 @@ Gestion de Projet
 ================================
 
 | :math:`\color{grey}{Version \ 1.0.0}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 18/11/2020}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 19/11/2020}`
 
 Ce cours vise à vous aider à gérer vos projets, principalement
 en équipe. Vous trouverez principalement

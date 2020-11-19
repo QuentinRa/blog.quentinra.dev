@@ -4,6 +4,9 @@
 Cahier des charges
 ================================
 
+| :math:`\color{grey}{Version \ 1.0.0}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 19/11/2020}`
+
 Le cahier des charges (CDC) est un document englobant tout ce qu'il faut savoir sur le projet à réaliser.
 
 Cette partie contient une vue technique du cahier des charges, pour plus de conseils sur sa rédaction,
