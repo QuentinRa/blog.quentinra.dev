@@ -4,7 +4,7 @@
 Japonais
 ================================
 
-| :math:`\color{grey}{Version \ 0.2.4}`
+| :math:`\color{grey}{Version \ 0.2.5}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 19/11/2020}`
 
 **Ce cours est un cours d'initiation au japonais et à la culture japonaise.**
@@ -40,7 +40,7 @@ pouvoir être lus par des personnes qui ne lisent pas le japonais.
 3. Chiffres
 ======================================
 
-Cette partie inclus les chiffres jusqu'à 99 millions, exprimer
+Cette partie inclus les chiffres, exprimer
 une quantité (objets, personnes, age) et l'argent.
 
 .. toctree::
@@ -52,7 +52,17 @@ une quantité (objets, personnes, age) et l'argent.
 4. S'exprimer en japonais
 ================================
 
-...
+En japonais, tous les caractères sont généralement à la suite des autres
+sans espaces. Une phrase finie par un rond (まる maru). Les espaces
+sont réalisés par des **particules** que l'on retrouve entre chaque mots.
+
+	* **ni** ...
+	* **wa** ...
+	* **mo** qui veut dire aussi (donc sujet de la nouvelle phrase pareil que celle d'avant)
+	* **to** veut dire "et" (personne A et personne B)
+
+Notez les u que vous verrez pas exemple : sayounara, il est également possible
+d'écrire sayōnara, le o barre signifie que l'on insiste sur le o.
 
 5. Vocabulaire
 ========================
@@ -60,6 +70,7 @@ une quantité (objets, personnes, age) et l'argent.
 .. toctree::
 		:maxdepth: 1
 
+			Connaissances générales             <voc/general>
 			Monde du travail                    <voc/work>
 			Date, Mois, Heure, Calendrier       <voc/time>
 			Pays, Monde, Carte, Nationalités    <voc/world>
@@ -102,3 +113,6 @@ une quantité (objets, personnes, age) et l'argent.
 
 			* https://fr.wikibooks.org/wiki/Japonais
 			* https://fr.wikibooks.org/wiki/Japonais/Hiragana
+			* https://www.kanpai.fr/apprendre-japonais/comment-dire-oui-non-japonais
+			* https://www.apprendrelejaponais.net/au-revoir-en-japonais.html
+			* https://www.ici-japon.com/apprendre-le-japonais/la-particule-to/
