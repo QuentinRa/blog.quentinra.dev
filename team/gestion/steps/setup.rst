@@ -20,8 +20,8 @@ La méthode Agile-Scrum (:ref:`scrum`) est une méthode généralement utilisée
 car elle est flexible et fait régulièrement intervenir le client, ce qui
 diminue le risque, cependant tous les projets ne sont pas agiles.
 
-Généralement, après avoir discuté avec le client, vous avez un texte
-ce qu'il veut.
+Généralement, après avoir discuté avec le client, vous avez rédigé un texte
+décrivant ce qu'il veut.
 
 	* vous pouvez dans un premier temps faire une maquette de ce que le client veut et lui montrer
 
@@ -39,7 +39,9 @@ ce qu'il veut.
 		* vous pouvez associer à chaque tâche un coût en temps
 
 	* dans un dernier temps, il est critique d'étudier la faisabilité de ce que vous souhaitez faire
-
+	* \
+		vous pouvez également faire un Diagramme UML du projet mais seulement si ça aide,
+		ou mieux : pratiquer le :ref:`mdd` (parce que c'est long mais ça aide) !
 
 **Prioriser ses tâches**
 
@@ -73,3 +75,4 @@ sur ce que vous devriez penser lors avant de vous lancer
 
 	* besoin de matériel supplémentaire ?
 	* restrictions ?
+	* méthode de développement particulière ? :ref:`mdd`, :ref:`scrum`, tdd, pair-programming

@@ -20,14 +20,11 @@ en équipe. Vous trouverez principalement
 1. Vocabulaire
 ===============================
 
-Besoin
-	C'est ce que votre client veut.
+**Besoin** : C'est ce que votre client veut.
 
-Livrables
-	C'est ce que vous livrez au client.
+**Livrables** : C'est ce que vous livrez au client.
 
-Jalons
-	Les dates clef d'un projet, par exemple la signature d'un contrat.
+**Jalons** : Les dates clef d'un projet, par exemple la signature d'un contrat.
 
 Périmètre du projet
 	Ensemble de tout ce qui concerne le projet, donc les tâches et leur durée, les livrables, le
@@ -37,8 +34,9 @@ HJ "Homme-Jour"
 	HJ est l'abréviation de Homme-Jour. Il s'agit de l'unité généralement utilisée pour désigner
 	le coût d'une tâche.
 
-| Maitre d'ouvrage = relation client.
-| Maitre d'oeuvre = côté technologique.
+**Maitre d'ouvrage** : caractérise la personne en relation avec le client.
+
+**Maitre d'oeuvre** : caractérise la personne en relation avec le côté technologique.
 
 2. Déroulement d'un projet
 ===============================
@@ -88,7 +86,17 @@ Enfin, une fois le projet sur la fin, vous aurez sûrement à gérer
 4. Réunions et reporting
 =======================================
 
-...
+Les réunions comprennent les échanges avec le reste
+de l'équipe (suivit=quotidienne) et celles avec le client (pilotage=1 fois par mois).
+A chaque réunion, un compte rendu de réunion est rédigé.
+
+Le reporting consiste a régulièrement partager les informations avec les intervenants
+du projet.
+
+.. toctree::
+
+	Réunions  <report/reunions>
+	Reporting <report/reporting>
 
 -----
 
