@@ -81,7 +81,32 @@ Enfin, une fois le projet sur la fin, vous aurez sûrement à gérer
 3. Gérer son équipe (chef de projet)
 =======================================
 
-...
+Les points importants à gérer dans une équipe sont (Chef de projet, ou autres) :
+
+	*	Collaboration (->outils), partage d’informations, échanges
+	*	Intérêt de chacun
+	*	Recherche de l’erreur (pas du coupable)
+	*	Motivation, adhésion des membres de l’équipe
+	*	Gestion des conflits
+
+Durant le projet, des changements plus ou moins importants peuvent avoir lieu, que ce soit sur le programme
+ou dans les membres de l’équipe.
+
+Cela nécessite un effort d’adaptation, une possible surcharge pour les membres. On représente ces notions par
+la courbe du changement.
+
+.. image:: /assets/team/gestion/courbeC.png
+
+Dénis : refus de changer
+Résistance : négociation, marchandage
+Exploration : créativité, recherche de soi, changement déclenché
+Engagement : Motivation de l’entourage, performances en croissance
+
+On distingue 3 types de personnes face au changement :
+
+	*	les opposants (contre) : 10%
+	*	les proactifs (pour) : 10%
+	*	les passifs (attendent des preuves) : 80%
 
 4. Réunions et reporting
 =======================================
