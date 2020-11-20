@@ -1152,7 +1152,7 @@ b_date</ColNames>
       <Primary>1</Primary>
     </key>
     <check id="364" parent="343" name="dom_prix_representation">
-      <Predicate>`prix` &gt;= 50 and `prix` &lt;= 300</Predicate>
+      <Predicate>`prix` &gt;= 10 and `prix` &lt;= 500</Predicate>
     </check>
     <column id="365" parent="343" name="r_date">
       <Position>1</Position>
@@ -1200,7 +1200,7 @@ r_date</ColNames>
       <Primary>1</Primary>
     </key>
     <check id="375" parent="345" name="dom_duree_spectacle">
-      <Predicate>`duree` &gt; 60 and `duree` &lt; 240</Predicate>
+      <Predicate>`duree` &gt;= 60 and `duree` &lt;= 240</Predicate>
     </check>
     <check id="376" parent="345" name="dom_type_spectacle">
       <Predicate>`s_type` in (&apos;theatre&apos;,&apos;danse&apos;,&apos;concert&apos;)</Predicate>
@@ -1209,6 +1209,7 @@ r_date</ColNames>
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="378" parent="345" name="nom">
       <Position>2</Position>

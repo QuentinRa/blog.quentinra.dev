@@ -339,11 +339,13 @@ LES VUES AVEC UN CALCUL/GROUP BY ne peuvent pas être mises à jour.
     :name: exercices
     :maxdepth: 1
 
-		Commandes générales       <exercices/general>
-		Jointures				          <exercices/jointures>
-		Calculs                   <exercices/calculs>
-		Création de tables et vue <exercices/create>
-		Non triés                 <exercices/non_rank>
+		Commandes générales            <exercices/general>
+		Jointures				               <exercices/jointures>
+		Calculs                        <exercices/calculs>
+		Création de tables et vue      <exercices/create>
+		Insert, Update, Delete         <exercices/dml>
+		Utilisateurs                   <exercices/user>
+		Non triés                      <exercices/non_rank>
 
 Dans la continuité du cours
 
