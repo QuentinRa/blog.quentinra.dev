@@ -26,23 +26,23 @@ Niveau débutant
 	(a)
 		Quels sont les noms et prénoms des guichetiers.
 	(b)
-		Pour chaque type de spectacle, combien de spectacles ont eté proposés en 2019 ?
+		Pour chaque type de spectacle, combien de spectacles ont eté proposés en 2013 ?
 	(c)
-		Quel est le prix moyen d’une place de type 'theatre' pour l’année 2019 ?
+		Quel est le prix moyen d’une place de type 'theatre' pour l’année 2013 ?
 	(d)
-		Quel est le chiffre d’affaire des spectacles de type 'theatre' pour l’année 2019 ?
+		Quel est le chiffre d’affaire des spectacles de type 'theatre' pour l’année 2013 ?
 	(e)
 
 			Quelle requête permettrait d’obtenir l’attribut dérivé n_spectacle de la relation Billet ?
 			Sans définir explicitement un déclencheur, on se placera dans le cadre où l’on a accès aux attributs
-			NEW.n billet, NEW.n salle, NEW.b date, NEW.nom client d’un billet qu’on est en train d’insérer
+			NEW.n_billet, NEW.n_salle, NEW.b_date, NEW.nom_client d’un billet qu’on est en train d’insérer
 
 .. note::
 
 	Un déclencheur ou trigger est un script qui tourne en permanence. À chaque insertion par exemple,
 	il va regarder que toutes les contraintes sont respectées. Dans le cas où tout est ok, alors
 	les valeurs du insert (contenues dans NEW) remplacent les anciennes valeurs (mise dans OLD au cas où
-	vous voulez les utiliser dans un script PL/SQL par exemple). - Calistro <:sad:>
+	vous voulez cf PL/SQL). - Calistro <:<wtf la question>:>
 
 .. toctree::
    :maxdepth: 1
