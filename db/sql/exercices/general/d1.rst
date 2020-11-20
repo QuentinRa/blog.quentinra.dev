@@ -5,6 +5,9 @@
 .. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
    :alt: correction vérifiée
 
+.. image:: https://img.shields.io/badge/sgbd-mariadb%2010.4-orange.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: sgbd mariadb10.4
+
 .. literalinclude:: d1.sql
   :language: sql
 

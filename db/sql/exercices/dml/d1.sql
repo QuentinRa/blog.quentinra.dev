@@ -62,7 +62,7 @@ where s_type='theatre' AND extract(YEAR from b_date) = '2013';
 --     Sans définir explicitement un déclencheur, on se placera dans le cadre où l’on a accès aux attributs
 --     NEW.n_billet, NEW.n_salle, NEW.b_date, NEW.nom_client d’un billet qu’on est en train d’insérer
 
---  en gros je reformule :
+-- en gros je reformule :
 -- un attribut dérivé est obtenu à partir des valeurs de d'autres attributs.
 -- sachant que NEW.n_billet, NEW.n_salle, NEW.b_date, NEW.nom_client contienne les valeurs à insérer,
 -- comment calculer NEW.n_spectacle

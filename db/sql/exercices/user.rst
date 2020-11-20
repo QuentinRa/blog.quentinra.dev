@@ -11,8 +11,8 @@ Niveau débutant
 On suppose que trois classes d’utilisateurs ont accès à tout ou partie de cette base de données :
 
 	*
-		L’administrateur de la base qui initialise et alimente la base en debut de saison avec tous les spectacles et toutes les ´
-		representations associées,
+		L’administrateur de la base qui initialise et alimente la base en debut de saison avec tous les spectacles et toutes les
+		représentations associées,
 	*
 		Les guichetiers qui gèrent les réservations de ces représentations et émettent les billets,
 	*
@@ -28,6 +28,11 @@ en ligne de votre SGBD (idéalement postgre) :
 		(un client).
 	(b) \
 		Donnez les droits appropriés a chaque classe d’utilisateurs sur les relations et les vues.
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<user/d1>
 
 | :code:`[TAG] ENSIIE IBD TDM1 2018 S1`
 | :code:`[TAG] ENSIIE IBD TDM1 2019 S1`

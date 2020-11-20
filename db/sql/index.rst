@@ -107,7 +107,7 @@ avec element : YEAR, MONTH, DAY, MICROSECOND, SECOND, MINUTE, HOUR.
 On utilise généralement :code:`\ ` (backslash) pour échapper un caractère mais dès fois
 on doit utiliser un :code:`'` (single quote) (à vous de tester !).
 
-Si votre nom de table ou d'attribut n'est pas valide (par exemple appeler un attribut
+Si votre nom de table ou d'attribut réservé (par exemple appeler un attribut
 date alors que c'est déjà un type), vous devrez empêcher son interprétation avec \`nom invalide\` (quotes obliques).
 
 Les types sont

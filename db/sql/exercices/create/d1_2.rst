@@ -5,6 +5,9 @@
 .. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
    :alt: correction vérifiée
 
+.. image:: https://img.shields.io/badge/sgbd-mariadb%2010.4-orange.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: sgbd mariadb10.4
+
 1. créer les tables Personne, Guichet, Spectacle, Salle, Représentation et Billet, en ajoutant les contraintes demandées
 
 .. literalinclude:: d1_2.sql
