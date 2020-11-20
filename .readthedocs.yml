@@ -5,9 +5,6 @@
 # Required
 version: 2
 
-formats:
-  - pdf
-
 sphinx:
   builder: html
   configuration: conf.py
