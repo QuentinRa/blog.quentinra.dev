@@ -27,8 +27,6 @@
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/language/japanese/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/language/japanese/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/japanese/voc/general.rst" beforeDir="false" afterPath="$PROJECT_DIR$/language/japanese/voc/general.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/japanese/voc/jap.txt" beforeDir="false" afterPath="$PROJECT_DIR$/language/japanese/voc/jap.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +176,7 @@
       <workItem from="1605719620643" duration="15554000" />
       <workItem from="1605784982472" duration="18550000" />
       <workItem from="1605814489928" duration="1186000" />
-      <workItem from="1605872327253" duration="5377000" />
+      <workItem from="1605872327253" duration="7355000" />
     </task>
     <servers />
   </component>

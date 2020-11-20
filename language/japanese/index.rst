@@ -72,6 +72,7 @@ d'écrire sayōnara, le o barre signifie que l'on insiste sur le o.
 
 			Connaissances générales             <voc/general>
 			Monde du travail                    <voc/work>
+			Monde de l'école                    <voc/school>
 			Date, Mois, Heure, Calendrier       <voc/time>
 			Pays, Monde, Carte, Nationalités    <voc/world>
 
