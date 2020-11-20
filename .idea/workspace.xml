@@ -26,10 +26,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/tables/alter.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/tables/alter.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/tables/create.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/tables/create.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/japanese/alphabet/kana.rst" beforeDir="false" afterPath="$PROJECT_DIR$/language/japanese/alphabet/kana.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
