@@ -108,6 +108,7 @@ d'écrire sayōnara, le o barre signifie que l'on insiste sur le o.
 			* https://translation2.paralink.com/Japanese-French-Translator/
 			* https://www.lexilogos.com/clavier/hiragana_conversion.htm
 			* https://www.lexilogos.com/clavier/nihongo_hiragana.htm
+			* http://www.dictionnaire-japonais.com/search.php?w=
 
 	* cours
 

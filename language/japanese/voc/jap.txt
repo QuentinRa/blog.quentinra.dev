@@ -1,1 +1,3 @@
 がくせい = gakusei = étudiant
+
+froid/chaud balec
