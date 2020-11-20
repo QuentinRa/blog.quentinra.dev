@@ -1,0 +1,42 @@
+================================
+1/1 Que le spectacle continue
+================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+1. créer les tables Personne, Guichet, Spectacle, Salle, Représentation et Billet, en ajoutant les contraintes demandées
+
+.. literalinclude:: d1.sql
+  :language: sql
+
+2. Créez la vue V_Guichetier définie par V Guichetier = join(Guichetier, Personne)
+
+.. code:: sql
+
+	CREATE VIEW V_Guichetier(id_guichetier, nom, prenom)
+	as SELECT id_guichetier, nom, prenom
+	FROM personne JOIN guichetier
+			ON personne.id_personne = guichetier.id_guichetier
+
+3.
+	Définissez une vue Guichet qui récapitule les informations pertinentes
+	pour les représentations des spectacles proposés ainsi que l’état courant
+	des réservations sur chaque représentation. Cette vue contiendra les colonnes
+	(n_spectacle, n_salle, b_date, nom, s_type, prix, nb_places_libres).
+
+.. code:: sql
+
+		CREATE VIEW Guichet(n_spectacle, n_salle, b_date, nom, s_type, prix, nb_places_libres)
+		as SELECT sp.n_spectacle, r.n_salle, r_date, nom, s_type, prix,
+						nb_places -  (select count(*)
+						FROM billet
+						where n_spectacle=sp.n_spectacle
+						)
+		FROM spectacle sp JOIN representation r on sp.n_spectacle = r.n_spectacle
+		JOIN salle s on r.n_salle = s.n_salle
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
+	* Fix intervals (bornes sont incluses) ElFamosoRaphiki#1803
+	* Fix Representation n'existe pas - Mathxxl#5261

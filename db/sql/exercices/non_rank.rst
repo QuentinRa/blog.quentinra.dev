@@ -22,4 +22,4 @@ aucun
 -----
 
 **Crédits**
-	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
+	* aucun

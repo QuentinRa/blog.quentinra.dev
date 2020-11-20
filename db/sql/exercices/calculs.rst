@@ -125,3 +125,10 @@ Niveau avancé
 | :code:`[TAG] ENSIIE IBD TP1 2018 S1`
 | :code:`[TAG] ENSIIE IBD TP1 2019 S1`
 | :code:`[TAG] ENSIIE IBD TP1 2020 S1`
+
+|
+
+-----
+
+**Crédits**
+	* Marie SZAFRANSKI (enseignant à l'ENSIIE)

@@ -4,8 +4,8 @@
 SQL (Structured Query Language) - avancé
 ==========================================
 
-| :math:`\color{grey}{Version \ 1.0.1}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 14/11/2020}`
+| :math:`\color{grey}{Version \ 1.1.3}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 20/11/2020}`
 
 .. danger::
 
@@ -28,27 +28,7 @@ Ordre des requêtes
 	Les requêtes SQL sont fait dans un ordre qui n'est pas logique :
 	From -> Where -> GROUP BY -> HAVING -> Select -> Order by.
 
-2. Vues
-===========================
-
-Pour donner la permissions de voir/modifier... certains champs par des utilisateurs
-ou pour faciliter des accès, on crée un table fictive : une vue.
-
-La table fonctionne ensuite comme une table normale cependant certaines insertions
-peuvent échouer s’il nous manque les clés dans les attributs.
-
-LES VUES AVEC UN CALCUL/GROUP BY ne peuvent pas être mises à jour.
-
-.. code:: sql
-
-		-- Création d'une vue
-		CREATE VIEW nomVue [Attributs] AS requête SQL>
-		-- regarde delete/update possible avant de le faire.
-		CREATE VIEW nomVue [ Attributs ] AS requête WITH CHECK OPTION
-		-- supprimer
-		DROP VIEW nom_vue;
-
-3. Triggers/Déclencheurs SQL
+2. Triggers/Déclencheurs SQL
 =========================================
 
 Les triggers/déclencheurs SQL permettent de bloquer des opérations
@@ -75,7 +55,7 @@ Enfin, après avoir ajouté des contraints, vous pouvez ajouter une action au tr
 
 Pour les clefs étrangères, on ferait FOREIGN KEY() REFERENCES ... ON DELETE (ou UPDATE) set null/... .
 
-4. Optimisation
+3. Optimisation
 =========================================
 
 Il existe déjà un optimiseur SQL qui sert à réduire le temps et le nombre d'accès disque fait
@@ -116,7 +96,7 @@ Les tris sur les disques sont couteux donc éviter d'en avoir.
 		Optimiser : jointures     <optimisation/jointures>
 		Optimiser : indexes       <optimisation/indexes>
 
-5. Gestion de la mémoire secondaire
+4. Gestion de la mémoire secondaire
 =========================================
 
 Une base de donnée utilise/interagit avec 3 types de mémoire
@@ -142,7 +122,7 @@ Les différentes gestions :
 		Organisation Indexée : non dense ou creux        <gestion/creux>
 		Organisation Indexée : secondaire ou non plaçant <gestion/secondaire>
 
-6. Stratégie de sauvegarde
+5. Stratégie de sauvegarde
 =========================================
 
 La stratégie de sauvegarde sert à déterminer comment et à quels intervals la base de données
@@ -184,7 +164,7 @@ Types de pannes
 	* système: problème de la RAM.
 	* mémoire secondaire: crash d'un disque
 
-7. Concurrence
+6. Concurrence
 =========================================
 
 Il est possible que plusieurs utilisateurs font des calculs/modifications soit lecture/écriture sur
@@ -220,6 +200,28 @@ On parle de transaction pour caractériser l'ensemble des ordres DML suivis d'un
 
 		Verrous                   <concurrence/lock>
 		Interblocage              <concurrence/interblocage>
+
+7. Exercices
+==============
+
+.. danger::
+
+	Les exercices vous demandent généralement de faire des requêtes donc dans
+	une base de données, sur un paquet de données.
+
+	Chaque exercice vous fournit un fichier :code:`setup.sql` qui est à importer
+	dans votre base de données dans une base nommée comme vous voulez
+
+	Si vous n'avez pas de base de données sous la main, allez sur
+	`sqliteonline.com <https://sqliteonline.com/>`_ et importez le fichier :code:`setup.sql`
+	dans une base de données mariadb.
+
+.. toctree::
+    :name: exercices
+    :maxdepth: 1
+
+		Non triés                 <exercices/non_rank>
+
 
 |
 

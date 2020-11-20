@@ -4,8 +4,8 @@
 SQL (Structured Query Language)
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.3}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 15/11/2020}`
+| :math:`\color{grey}{Version \ 1.1.4}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 20/11/2020}`
 
 Le SQL est un language permettant d'accéder à une base de données (BD ou DB).
 
@@ -300,7 +300,27 @@ On utilise une transaction pour envoyer ces requêtes liées ensembles.
 
 On peut annuler une transaction avec ROLLBACK ou la valider avec COMMIT.
 
-8. Exercices
+8. Vues
+===========================
+
+Pour donner la permissions de voir/modifier... certains champs par des utilisateurs
+ou pour faciliter des accès, on crée un table fictive : une vue.
+
+La table fonctionne ensuite comme une table normale cependant certaines insertions
+peuvent échouer s’il nous manque les clés dans les attributs.
+
+LES VUES AVEC UN CALCUL/GROUP BY ne peuvent pas être mises à jour.
+
+.. code:: sql
+
+		-- Création d'une vue
+		CREATE VIEW nomVue [Attributs] AS requêteSQL
+		-- regarde delete/update possible avant de le faire.
+		CREATE VIEW nomVue [ Attributs ] AS requêteSQL WITH CHECK OPTION
+		-- supprimer
+		DROP VIEW nom_vue;
+
+9. Exercices
 ==============
 
 .. danger::
@@ -322,6 +342,7 @@ On peut annuler une transaction avec ROLLBACK ou la valider avec COMMIT.
 		Commandes générales       <exercices/general>
 		Jointures				          <exercices/jointures>
 		Calculs                   <exercices/calculs>
+		Création de tables et vue <exercices/create>
 		Non triés                 <exercices/non_rank>
 
 Dans la continuité du cours

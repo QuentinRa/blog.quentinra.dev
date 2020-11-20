@@ -49,3 +49,10 @@ Niveau avancé
 ***********************
 
 aucun
+
+|
+
+-----
+
+**Crédits**
+	* Marie SZAFRANSKI (enseignant à l'ENSIIE)
