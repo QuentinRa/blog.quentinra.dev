@@ -118,6 +118,10 @@ graphviz_output_format = 'svg'
 
 pdf_documents = [('index', u'ramsamy-ws.ressources', u'Cours (ramsamy-ws)', u'Quentin Ra')]
 
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-latex-output
+# https://docs.readthedocs.io/en/stable/guides/pdf-non-ascii-languages.html
+latex_engine = 'xelatex'
+
 # -- plantuml
 # https://github.com/sphinx-contrib/plantuml/
 
