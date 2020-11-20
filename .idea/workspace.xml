@@ -25,14 +25,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cb3c6624-4827-4984-b744-f74bd3d26571.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cb3c6624-4827-4984-b744-f74bd3d26571.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/advanced.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/advanced.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/exercices/calculs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/calculs.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/exercices/general.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/general.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/exercices/jointures.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/jointures.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/non_rank.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/db/buf.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/db/choc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/db/ok.sql" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/bases/spectacles_ensiie_1a_import.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sql/exercices/create/d1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/create/d1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sql/exercices/create/d1_2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/create/d1_2.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +74,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\team\gestion\steps" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\db\bases" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\db" />
       <recent name="C:\Users\quent\Documents\texas-res\team\agile\scrum" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\team\gestion" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\db\model" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\language\japanese" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -183,7 +181,7 @@
       <workItem from="1605784982472" duration="18550000" />
       <workItem from="1605814489928" duration="1186000" />
       <workItem from="1605872327253" duration="12379000" />
-      <workItem from="1605889095941" duration="7394000" />
+      <workItem from="1605889095941" duration="8504000" />
     </task>
     <servers />
   </component>

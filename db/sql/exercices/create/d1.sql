@@ -57,7 +57,7 @@ FOREIGN KEY (n_spectacle) REFERENCES Spectacle (n_spectacle) ON DELETE CASCADE,
 CONSTRAINT fk_representation_salle
 FOREIGN KEY (n_salle) REFERENCES Salle (n_salle) ON DELETE RESTRICT,
 -- contrainte prix, on aurait pu mettre between
-CONSTRAINT dom_prix_representation CHECK (prix >= 50 and prix <= 300)
+CONSTRAINT dom_prix_representation CHECK (prix >= 10 and prix <= 50)
 );
 
 -- création de la table billet

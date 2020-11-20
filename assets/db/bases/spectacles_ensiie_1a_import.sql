@@ -41,12 +41,12 @@ CREATE TABLE Spectacle(
 -- clef
                           CONSTRAINT pk_spectacle PRIMARY KEY (n_spectacle),
 -- contrainte durée, on aurait pu mettre between
-                          CONSTRAINT dom_duree_spectacle CHECK (duree > 60 AND duree < 240),
+                          CONSTRAINT dom_duree_spectacle CHECK (duree >= 60 AND duree <= 240),
 -- contrainte valeur
                           CONSTRAINT dom_type_spectacle CHECK (s_type IN ('theatre', 'danse', 'concert'))
 );
 
--- création de la salle
+-- création de la table salle
 CREATE TABLE Salle(
                       n_salle INTEGER,
                       nb_places INTEGER,
@@ -56,6 +56,7 @@ CREATE TABLE Salle(
                       CONSTRAINT dom_places_salle CHECK (nb_places >= 100 AND nb_places <= 500)
 );
 
+-- création de la table représentation
 CREATE TABLE Representation(
                                r_date DATE,
                                n_salle INTEGER,
@@ -71,7 +72,7 @@ CREATE TABLE Representation(
                                CONSTRAINT fk_representation_salle
                                    FOREIGN KEY (n_salle) REFERENCES Salle (n_salle) ON DELETE RESTRICT,
 -- contrainte prix, on aurait pu mettre between
-                               CONSTRAINT dom_prix_representation CHECK (prix >= 50 and prix <= 300)
+                               CONSTRAINT dom_prix_representation CHECK (prix >= 10 and prix <= 50)
 );
 
 -- création de la table billet
