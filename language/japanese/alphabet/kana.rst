@@ -6,19 +6,19 @@ Il existe 5 voyelles a,i,u,e,o. On met l'un des lettres k,s,t,n,h,m,y,r,w devant
 généralement les syllabes à l'origine de tous les mots. Certaines syllabes complexes sont obtenues
 en ajoutant un accent sur une syllabe existante : g,z,d,b,p.
 
-==== ==== ==== ==== ==== ====
-\    a    i    u    e    o
-\    あ   い    う    え    お
-k    か   き    く    け    こ
-s    さ   し    す    せ    そ
-t    た   ち    つ    て    と
-n    な   に    ぬ    ね    の
-h    は   ひ    ふ    へ    ほ
-m    ま   み    む    め    も
-y    や   .    ゆ    .    よ
-r    ら   り    る    れ    ろ
-w    わ   .    .    .    を
-==== ==== ==== ==== ==== ====
+==== ==== ======== ========== ==== ====
+\    a    i        u          e    o
+\    あ   い        う         え    お
+k    か   き        く         け    こ
+s    さ   し (shi)  す         せ    そ
+t    た   ち (chi)  つ (tsu)   て    と
+n    な   に        ぬ         ね    の
+h    は   ひ        ふ (fu)    へ    ほ
+m    ま   み        む         め    も
+y    や   .         ゆ         .    よ
+r    ら   り        る         れ    ろ
+w    わ   .         .          .    を
+==== ==== ======== ========== ==== ====
 
 ==== ==== ======= ========= ==== ====
 \    a    i       u         e    o

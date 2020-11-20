@@ -4,7 +4,7 @@
 SQL (Structured Query Language)
 ================================
 
-| :math:`\color{grey}{Version \ 1.1.4}`
+| :math:`\color{grey}{Version \ 1.3.6}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 20/11/2020}`
 
 Le SQL est un language permettant d'accéder à une base de données (BD ou DB).
@@ -110,6 +110,10 @@ on doit utiliser un :code:`'` (single quote) (à vous de tester !).
 Si votre nom de table ou d'attribut réservé (par exemple appeler un attribut
 date alors que c'est déjà un type), vous devrez empêcher son interprétation avec \`nom invalide\` (quotes obliques).
 
+Vous pouvez extraire des caractères d'un texte avec :code:`LEFT(attribut, taille)` (ou RIGHT en partant de la droite).
+
+Liste complète : `SQL Server Functions <https://www.w3schools.com/SQL/sql_ref_sqlserver.asp>`_.
+
 Les types sont
 
 =============================== ========================================================================================
@@ -121,6 +125,7 @@ text                            chaine de caractères de taille infinie
 float ou real                   un réel
 decimal(n,p)                    chiffre de taille n dont p chiffres après la virgule
 date                            contient une date
+enum(...)                       ne peux prendre que l'un des valeurs ...
 =============================== ========================================================================================
 
 2. Manipulation des tuples
@@ -272,6 +277,10 @@ pour des raisons de sécurité).
 	* Vous pouvez supprimer des utilisateurs avec : DROP USER
 	* Vous pouvez gérer les droits des utilisateurs avec : GRANT et REVOKE
 
+Il est possible de créer des rôles, c'est à dire que si vous êtes dans un cas
+où les utilisateurs de votre base de données font partie de groupe (client, admins, ...)
+alors vous pouvez créer un rôle, donner des permissions au rôle et enfin donner le rôle au utilisateurs.
+
 Les explications sont ici :
 
 .. toctree::
@@ -279,6 +288,7 @@ Les explications sont ici :
 
 		Creation et Suppression d'utilisateurs   <users/create>
 		Gestion des permissions                  <users/perms>
+		Manipulation des rôles                   <users/roles>
 
 7. Transactions
 =========================================
@@ -365,3 +375,6 @@ Dans la continuité du cours
 **Références**
 	* https://www.guru99.com/sql-commands-dbms-query.html
 	* https://www.w3schools.com/sql/
+	* https://www.w3schools.com/SQL/sql_ref_sqlserver.asp
+	* https://www.geeksforgeeks.org/sql-creating-roles/
+	* https://mariadb.com/kb/en/

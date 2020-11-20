@@ -19,3 +19,20 @@ Drop Table permet de supprimer une table.
 		;
 
 		DROP TABLE table
+
+Scénario dans lequel la table n'est pas vide
+
+.. code:: sql
+
+		-- renomme la table
+		ALTER TABLE table
+			rename table_tmp;
+
+		-- crée la table altérée
+		CREATE TABLE table(...);
+
+		-- copie les anciennes valeurs dans la nouvelle
+		INSERT INTO table(...) SELECT ... from table_tmp;
+
+		-- supprime l'ancienne table
+		DROP TABLE table_tmp;

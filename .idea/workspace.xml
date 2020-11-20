@@ -25,20 +25,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cb3c6624-4827-4984-b744-f74bd3d26571.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cb3c6624-4827-4984-b744-f74bd3d26571.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cb3c6624-4827-4984-b744-f74bd3d26571/storage_v2/_src_/schema/test.kkQ2AA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cb3c6624-4827-4984-b744-f74bd3d26571/storage_v2/_src_/schema/test.kkQ2AA.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/exercices/calculs/a1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/calculs/a1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/exercices/calculs/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/calculs/s1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/exercices/create/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/create/d1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/exercices/create/d1_2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/create/d1_2.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/exercices/dml/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/dml/d1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/exercices/dml/d1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/dml/d1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/exercices/general/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/general/d1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/exercices/jointures/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/jointures/d1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/exercices/jointures/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/jointures/s1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sql/exercices/user.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/user.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/sql/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sql/tables/alter.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/tables/alter.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sql/tables/create.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/tables/create.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language/japanese/alphabet/kana.rst" beforeDir="false" afterPath="$PROJECT_DIR$/language/japanese/alphabet/kana.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +180,7 @@
       <workItem from="1605784982472" duration="18550000" />
       <workItem from="1605814489928" duration="1186000" />
       <workItem from="1605872327253" duration="12379000" />
-      <workItem from="1605889095941" duration="17262000" />
+      <workItem from="1605889095941" duration="19932000" />
     </task>
     <servers />
   </component>
