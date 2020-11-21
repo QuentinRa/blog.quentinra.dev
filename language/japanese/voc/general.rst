@@ -42,6 +42,8 @@ Autres
 	* félicitation : おめでとう (omedetou)
 	* joyeux noël : めりいくりすます (meriikurisumasu)
 	* joyeux anniversaire : おたんじょうびおめでとう (otanjoubiomedetou)
+	* âge : とし (toshi)
+	* profession : しごと (sigoto)
 
 5.2 Formules de politesse
 ---------------------------

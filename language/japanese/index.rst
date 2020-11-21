@@ -57,12 +57,25 @@ sans espaces. Une phrase finie par un rond (まる maru). Les espaces
 sont réalisés par des **particules** que l'on retrouve entre chaque mots.
 
 	* **ni** ...
-	* **wa** ...
+	* **wa** indique que le terme suivant réfère au sujet
 	* **mo** qui veut dire aussi (donc sujet de la nouvelle phrase pareil que celle d'avant)
 	* **to** veut dire "et" (personne A et personne B)
+	* **ka** ajouté en fin de phrase. Spécifie sans ambiguïtés qu'il s'agit d'une question.
 
-Notez les u que vous verrez pas exemple : sayounara, il est également possible
-d'écrire sayōnara, le o barre signifie que l'on insiste sur le o.
+Verbes
+	On met le verbe après l'action, par exemple "je suis beau" devient "je beau être".
+
+	Le verbe être est :code:`desu (です)`.
+
+Pronoms
+	On utilise watashi (わたし) pour dire je (ou familier : ore (おれ) ou boku (ぼく)).
+
+	Vous pouvez dire tu avec あなた (anata) ou きさま (kisama).
+
+.. note::
+
+	Certains mots comme sayōnara ou sayounara, ont un ō qui est prononcé. Il s'agit d'une notation pour
+	insister sur le o.
 
 5. Vocabulaire
 ========================
@@ -75,7 +88,6 @@ d'écrire sayōnara, le o barre signifie que l'on insiste sur le o.
 			Monde de l'école                    <voc/school>
 			Date, Mois, Heure, Calendrier       <voc/time>
 			Pays, Monde, Carte, Nationalités    <voc/world>
-
 
 -----
 
@@ -110,6 +122,7 @@ d'écrire sayōnara, le o barre signifie que l'on insiste sur le o.
 			* https://www.lexilogos.com/clavier/hiragana_conversion.htm
 			* https://www.lexilogos.com/clavier/nihongo_hiragana.htm
 			* http://www.dictionnaire-japonais.com/search.php?w=
+			* https://www.wordhippo.com/what-is/process-form.html
 
 	* cours
 
