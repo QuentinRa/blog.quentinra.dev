@@ -26,10 +26,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/dl.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/dl.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/dl/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/dl/d1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/bric/exercices/dl/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/dl/s1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/bric/exercices/dl/s2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/dl/s2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral/d3.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +181,7 @@
       <workItem from="1605814489928" duration="1186000" />
       <workItem from="1605872327253" duration="12379000" />
       <workItem from="1605889095941" duration="19932000" />
-      <workItem from="1605959780929" duration="25357000" />
+      <workItem from="1605959780929" duration="26952000" />
     </task>
     <servers />
   </component>

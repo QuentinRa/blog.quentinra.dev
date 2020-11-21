@@ -2,6 +2,34 @@
 1/2 Calculs de DLs
 ================================
 
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+Calculer les développements limités des fonctions suivantes.
+
+1. :math:`f_1(x) = \sqrt{1 + x^2} \text{à l’ordre 8 en 0.}`
+-------------------------------------------------------------------------
+
+...
+
+2. :math:`f_2(x) = \sqrt{1 + x + x^2}  \text{à l’ordre 4 en 0.}`
+-------------------------------------------------------------------------
+
+...
+
+3. :math:`f_3(x) = \ln(x + \sqrt{1 - \frac{x^2}{4}}) \text{à l’ordre 3 en x = 0.}`
+--------------------------------------------------------------------------------------
+
+...
+
+4. :math:`f_4(x) = ln(1 + x) \text{à l’ordre 4 en x = 1.}`
+-------------------------------------------------------------------------
+
+...
+
+5. :math:`f_5(x) = arccos(x) \text{à l’ordre 5 en 0.}`
+-------------------------------------------------------------------------
+
 ...
 
 **Crédits**

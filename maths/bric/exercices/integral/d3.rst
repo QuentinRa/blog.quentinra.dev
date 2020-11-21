@@ -97,9 +97,15 @@ Question 5
 Question 6
 --------------
 
-:math:`\ En\ posant\ t = \sqrt{1+x}, calculer \int_{0}^{3} \frac{1+\sqrt{1+x}dx}{1+x+\sqrt{1+x}}`
+:math:`\ En\ posant\ y = \sqrt{1+x}, calculer \int_{0}^{3} \frac{1+\sqrt{1+x}dx}{1+x+\sqrt{1+x}}`
 
-...
+.. math::
+
+		\int_{0}^{3} \frac{1+\sqrt{1+x}dx}{1+x+\sqrt{1+x}}\\
+		\\ \ \\
+		\text{on pose y=$\sqrt{1+x}$, on a $y^2-1=x$ et $dx$=$2ydy$ } \\
+		\text{ Les bornes sont y=$1$ et y=$2$ } \\ \ \\
+		\int_{1}^{2} \frac{1+y * 2ydy}{1+y^2-1+y} \Leftrightarrow \int_{1}^{2}2dy - [2y]^2_1 = 4-2=2
 
 ...
 

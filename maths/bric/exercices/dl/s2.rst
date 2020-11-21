@@ -2,6 +2,63 @@
 2/2 Calculs de limites par Développement limité
 ==================================================
 
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+Calculer les limites suivantes en passant par le développement
+limité des fonctions suivantes :
+
+.. math::
+
+	1. \ \ \ \ \ \lim_{x \rightarrow 0^+} \frac{\sin x}{\sqrt{1 - cos x}}
+	\ \ \ \ \ \ \ \ \ \ \ \ \
+	2. \ \ \ \ \ \lim_{ x \rightarrow +\infty} \big(1 + \frac{1}{x} \big)^x \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \\
+
+	3. \ \ \ \ \ \lim_{x \rightarrow 0} \frac{sin(x) - x cos(x)}{tan(x)^3}
+	\ \ \ \ \
+	4. \ \ \ \ \ \lim_{x \rightarrow 0} \frac{\sqrt{1 + x} -  \sqrt{1 - x} - x}{x^3} \ \ \ \ \ \\
+
+	5. \ \ \ \ \ \lim_{x \rightarrow \pi/3} \frac{sin(3x)}{1-2\cos{x}}
+	\ \ \ \ \
+	6. \ \ \ \ \ \lim_{x \rightarrow +\infty} \big(\frac{a^{\frac{1}{x}} + b^{\frac{1}{x}}}{2} \big)^x, \ \  \text{}a \ge 1, b\ge 1 \\
+
+	7. \ \ \ \ \ \lim_{x \rightarrow 0} \frac{\ln(\cos x)}{x^2} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+	\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+	\ \ \ \ \ \ \ \ \ \\
+
+Question 1
+---------------------
+
+...
+
+Question 2
+---------------------
+
+...
+
+Question 3
+---------------------
+
+...
+
+Question 4
+---------------------
+
+...
+
+Question 5
+---------------------
+
+...
+
+Question 6
+---------------------
+
+...
+
+Question 7
+---------------------
+
 ...
 
 **Crédits**
