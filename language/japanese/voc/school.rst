@@ -5,8 +5,8 @@
 On appelle
 
 	* un étudiant : がくせい (gakusei)
-	* une école : ... (?)
-	* une université : ... (?)
+	* une école : がっこう (gakkou)
+	* une université : だいがく (daigaku)
 
 Dans la classe
 

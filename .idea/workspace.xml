@@ -29,6 +29,7 @@
       <change beforePath="$PROJECT_DIR$/language/japanese/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/language/japanese/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/language/japanese/voc/general.rst" beforeDir="false" afterPath="$PROJECT_DIR$/language/japanese/voc/general.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/language/japanese/voc/school.rst" beforeDir="false" afterPath="$PROJECT_DIR$/language/japanese/voc/school.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language/japanese/voc/work.rst" beforeDir="false" afterPath="$PROJECT_DIR$/language/japanese/voc/work.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/language/japanese/voc/world.rst" beforeDir="false" afterPath="$PROJECT_DIR$/language/japanese/voc/world.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +182,7 @@
       <workItem from="1605814489928" duration="1186000" />
       <workItem from="1605872327253" duration="12379000" />
       <workItem from="1605889095941" duration="19932000" />
-      <workItem from="1605959780929" duration="6480000" />
+      <workItem from="1605959780929" duration="10803000" />
     </task>
     <servers />
   </component>

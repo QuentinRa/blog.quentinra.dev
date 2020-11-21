@@ -12,7 +12,8 @@ Japonais
 1. Histoire
 ======================================
 
-...
+Au japon la majorité est à 20 ans, はたち hatachi est une façon spécial de dire 20 ans ajoutée
+car c'est un âge spécial. Il y a un jour férié en janvier pour célébrer tous ceux qui ont 20 ans.
 
 2. Lettres
 ======================================
@@ -56,21 +57,29 @@ En japonais, tous les caractères sont généralement à la suite des autres
 sans espaces. Une phrase finie par un rond (まる maru). Les espaces
 sont réalisés par des **particules** que l'on retrouve entre chaque mots.
 
-	* **ni** ...
-	* **wa** indique que le terme suivant réfère au sujet
-	* **mo** qui veut dire aussi (donc sujet de la nouvelle phrase pareil que celle d'avant)
-	* **to** veut dire "et" (personne A et personne B)
-	* **ka** ajouté en fin de phrase. Spécifie sans ambiguïtés qu'il s'agit d'une question.
+	* **ni** (に) ...
+	* **no** (の) deux sujets se suivent, on met no pour dire que le second réfère au premier (employé d'une entreprise...)
+	* **wa** (は=ha se prononce wa) indique que le terme suivant réfère au sujet
+	* **mo** (も) qui veut dire aussi (donc sujet de la nouvelle phrase pareil que celle d'avant)
+	* **to** (と) veut dire "et" (personne A et personne B)
+	* **ka** (か) ajouté en fin de phrase. Spécifie sans ambiguïtés qu'il s'agit d'une question.
 
 Verbes
 	On met le verbe après l'action, par exemple "je suis beau" devient "je beau être".
+
+	Si on veut faire une négation, on ajoute でわ ありません (Dewa arimasen) ou  じゃあ ありません (Jaa arimasen) après le sujet.
 
 	Le verbe être est :code:`desu (です)`.
 
 Pronoms
 	On utilise watashi (わたし) pour dire je (ou familier : ore (おれ) ou boku (ぼく)).
 
-	Vous pouvez dire tu avec あなた (anata) ou きさま (kisama).
+	Vous pouvez dire tu avec きみわ (kimi wa), あなた (anata) ou きさま (kisama).
+
+	On peut dire il avec  あの人 (anohito), あの かた (anokata).
+
+On ajoute généralement un o devant un nom (par exemple namae devient oname) car
+c'est plus poli (ex: oname wa ~ quel est ton nom ?).
 
 .. note::
 
@@ -106,6 +115,7 @@ Pronoms
 				* https://fr.wikipedia.org/wiki/Katakana
 				* https://fr.wikipedia.org/wiki/Hiragana
 				* https://www.sljfaq.org/afaq/wi-and-we-kana.html
+				* https://www.japanesepod101.com/forum/viewtopic.php?t=846
 
 		* chiffres
 
@@ -131,3 +141,4 @@ Pronoms
 			* https://www.kanpai.fr/apprendre-japonais/comment-dire-oui-non-japonais
 			* https://www.apprendrelejaponais.net/au-revoir-en-japonais.html
 			* https://www.ici-japon.com/apprendre-le-japonais/la-particule-to/
+			* http://www.crapulescorp.net/japonais/cours/grammaire/construction_des_phrases_simples.php5

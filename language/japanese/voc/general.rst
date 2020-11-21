@@ -7,6 +7,10 @@
 
 On dit はい (hai) pour dire oui et いいえ (iie) pour dire non.
 
+	* oui : うん (un), ええ (ee), そうです (so desu)
+	* euh... : ええ (ee), それわ (soreha)
+	* non : けっこうです (kekkodesu)
+
 Bonjour
 	* matin/vient de se lever : おはよう (ohayou)
 	* matin/vient de se lever (poli) : おはよう ございます (ohayou gozaimasu)
