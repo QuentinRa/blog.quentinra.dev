@@ -16,10 +16,10 @@ Niveau débutant
 		a(x) = \frac{1}{x} \ \ \ \ \ \ \ \ d(x) = 1 \ \ \ \ \ \ \ \
 		g(x) = x\ln(x) \ \ \ \ \ \ \ \  j(x) = x + \ln(x) \\
 
-		b(x) =\frac{1}{\ln x} \ \ \ \ \ \ \ \ e(x) = \frac{\exp(x)}{2}
+		b(x) =\frac{1}{\ln x} \ \ \ \ \ \ \ \ e(x) = \frac{\exp(x)}{2} \ \ \ \ \ \ \ \
 		h(x) = \exp(\frac{x}{2}) \ \ \ \ \ \ \ \ k(x) = \frac{1}{x + ln(x)}\\
 
-		c(x) = x^2 \ \ \ \ \ \ \ \ f(x) = (x - 1)(x + 1)
+		c(x) = x^2 \ \ \ \ \ \ \ \ f(x) = (x - 1)(x + 1) \ \ \ \ \ \ \ \
 		i(x) = exp(-x) \ \ \ \ \ \ \ \ l(x) = exp(2 - x)\\
 
 2. \

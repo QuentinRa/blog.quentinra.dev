@@ -2,4 +2,69 @@
 1/1 Ordres de grandeur
 ================================
 
-...
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+.. math::
+
+		a(x) = \frac{1}{x} \ \ \ \ \ \ \ \ d(x) = 1 \ \ \ \ \ \ \ \
+		g(x) = x\ln(x) \ \ \ \ \ \ \ \  j(x) = x + \ln(x) \\
+
+		b(x) =\frac{1}{\ln x} \ \ \ \ \ \ \ \ e(x) = \frac{\exp(x)}{2} \ \ \ \ \ \ \ \
+		h(x) = \exp(\frac{x}{2}) \ \ \ \ \ \ \ \ k(x) = \frac{1}{x + ln(x)}\\
+
+		c(x) = x^2 \ \ \ \ \ \ \ \ f(x) = (x - 1)(x + 1) \ \ \ \ \ \ \ \
+		i(x) = exp(-x) \ \ \ \ \ \ \ \ l(x) = exp(2 - x)\\
+
+Questions 1 et 2
+-------------------
+
+1. Classer les fonctions suivantes par ordre de grandeur croissant au voisinage de :math:`+\infty` :
+2. Indiquer parmi les fonctions ci-dessus lesquelles sont équivalentes au voisinage de :math:`+\infty`.
+
+Tentative de groupes, en regardant les limites à l'œil :
+
+	* 0 : i < l < k < a < b
+	* 1 : d
+	* +inf : j < g < f < c < h < e
+
+On calcule
+
+	* :math:`\frac{e(x)}{h(x)} = \frac{1}{2} * \frac{e^x}{e^{x/2}} = \frac{1}{2} * e^{x/2}` tends vers +inf donc :math:`h\ o\ e`
+	* :math:`\frac{j(x)}{g(x)} = \frac{x+\ln(x)}{x\ln(x)} = \frac{1}{\ln(x)} + \frac{1}{x}` tends vers 0 donc :math:`j\ o\ g`
+	* :math:`\frac{f(x)}{c(x)} = \frac{(x+1)(x-1)}{x^2} = (1-\frac{1}{x})(1+\frac{1}{x})` tends vers 1 donc :math:`f\ \sim c`
+	* :math:`\frac{g(x)}{c(x)} = \frac{x\ln(x)}{x^2} = \frac{\ln(x)}{x}` tends vers 0 donc :math:`g\ o\ c`
+	* :math:`\frac{a(x)}{b(x)} = \frac{\frac{1}{x}}{\frac{1}{\ln(x)}}` tends vers 0 donc :math:`a\ o\ b`
+	* :math:`\frac{a(x)}{k(x)} = \frac{x+\ln(x)}{x} = 1 + \frac{\ln(x)}{x}` tends vers 1 donc :math:`a\ \sim k`
+	* :math:`\frac{l(x)}{k(x)} = (x+\ln(x))*exp(2-x) = e^2 (x+\ln(x)) e^{-x} = e^2 * (1+\frac{\ln(x)}{x}) xe^{-x}` tends vers 0 donc :math:`l\ o\ k`
+	* :math:`\frac{l(x)}{i(x)} = \frac{exp(2-x)}{exp(-x)} = \frac{e^{2-x}}{e^{-x}} = e^{2-x+x}` tends vers :math:`e^2` donc :math:`l\ \Theta\ i`
+
+Donc on a :math:`i\ \Theta\ l\ o\ k \sim a\ o\ b\ o\ d\ o\ j\ o\ g\ o\ f \sim c\ o\ h\ o\ e`
+
+Question 3
+---------------
+
+Refaire les questions précédentes en considérant cette fois le voisinage de 0 avec x > 0.
+
+Tentative de groupes, en regardant les limites à l’œil :
+
+	* -inf : j
+	* -1 : f
+	* 0 : c < g < b < k
+	* 1/2 : e
+	* 1 : i < h < d
+	* exp(2) : l
+	* +inf : a
+
+On calcule
+
+	* :math:`\frac{j(x)}{a(x)} = x(x+\ln(x)) = x^2+x\ln(x)` tends vers 0 donc :math:`j\ o\ a`
+	* :math:`\frac{b(x)}{k(x)} = \frac{x+\ln(x)}{\ln(x)}` tends vers 1 donc :math:`b \sim k`
+	* :math:`\frac{c(x)}{b(x)} = x^2\ln(x)` tends vers 0 donc :math:`c\ o\ b`
+	* :math:`\frac{c(x)}{g(x)} = \frac{x^2}{x\ln(x)} = \frac{x}{\ln(x)}` tends vers 0 donc :math:`c\ o\ g`
+	* :math:`\frac{g(x)}{b(x)} = x(\ln(x))^2` tends vers 0 donc :math:`g\ o\ b`
+
+Donc on a :math:`c\ o\ g\ o\ b \sim k\ o\ e\ \Theta\ f\ \Theta\ i \sim h \sim d\ \Theta\ l\ o\ j\ o\ a`
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
