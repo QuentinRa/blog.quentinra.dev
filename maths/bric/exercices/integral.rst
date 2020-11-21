@@ -54,7 +54,7 @@ Calculer les valeurs des intégrales suivantes en utilisant la technique d’int
 
 		1. \ En\ posant\ y = x^3 + 1, calculer \int_{0}^{1} \frac{x^2dx}{\sqrt{x^3+1}}. \\
 		2. \ En\ posant\ y = \sqrt{1+x}, calculer \int_{0}^{1} \frac{xdx}{1+\sqrt{1+x}}. \\
-		3. \ En\ posant\ y = sh(t), calculer \int_{0}^{1} \frac{dx}{\sqrt{1+x^2}}. \\
+		3. \ En\ posant\ x = sh(t), calculer \int_{0}^{1} \frac{dx}{\sqrt{1+x^2}}. \\
 		4. \ En\ posant\ y = exp(x)\ puis\ y=2tan(t), calculer \int_{\ln{2}}^{\ln{(2\sqrt{3})}} \frac{dx}{exp(x)+4exp(-x)}. \\
 		5. \ En\ posant\ y = \frac{2x-1}{\sqrt{5}}, calculer \int_{\frac{1-\sqrt{5}}{2}}^{\frac{1+\sqrt{5}}{2}} \frac{dx}{\sqrt{1+x-x^2}}. \\
 		6. \ En\ posant\ t = \sqrt{1+x}, calculer \int_{0}^{3} \frac{1+\sqrt{1+x}dx}{1+x+\sqrt{1+x}}. \\

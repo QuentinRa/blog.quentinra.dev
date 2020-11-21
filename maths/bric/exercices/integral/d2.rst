@@ -2,6 +2,9 @@
 2/3 - Intégration par parties
 ================================
 
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
 Calculer les valeurs des intégrales suivantes en utilisant la technique d’intégration par parties.
 
 1. :math:`\int_{1}^{e} x\ln{x}\ dx`

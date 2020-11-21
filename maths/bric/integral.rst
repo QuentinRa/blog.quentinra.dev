@@ -21,6 +21,8 @@ Fonction                                     Primitive
 :math:`a`                                    :math:`ax + c`
 :math:`x`                                    :math:`\frac{x^2}{2} + c`
 :math:`x^n`                                  :math:`\frac{x^{n+1}}{n+1} + c`
+:math:`\sqrt{x}`                             :math:`\frac{2\sqrt{x}^{3/2}}{3} + c`
+:math:`\frac{1}{\sqrt{x}}`                   :math:`2 \sqrt{x} + c`
 :math:`\frac{1}{x}\ ou\ x^{-1}`              :math:`\ln{x} + c`
 :math:`\frac{1}{x-a}`                        :math:`\ln{x-a} + c`
 :math:`\ln{x}`                               :math:`x\ln{x}-x + c`
@@ -85,14 +87,22 @@ Le changement de variable permet de résoudre des intégrales complexes
 en la réécrivant après avoir remplacé les bornes et des termes par de nouveaux.
 
 	* On pose une variable par exemple y = ... x
-	* On calcule les nouvelles bornes de notre intégrable
+	* On calcule les nouvelles bornes de notre intégrale [a,b]
 
-		* b = x, donc trouver c=y ?
-		* a = x, donc trouver d=y ?
+		* on remplace x par b dans y et on calcule
+		* on remplace x par a dans y et on calcule
 
 	* on doit aussi réécrire dx en fonction de y donc dy.
 
-|
+		* avec dy/dx
+			* on pose dy/dx = y\'
+			* puis on résous pour pour avoir ... dy = dx.
+			* Et enfin on remplace dx dans l'intégrale
+		* avec dx/dy
+			* on exprime x en fonction de y
+			* on pose dx/dy = x\'
+			* puis on résous pour pour avoir ... dy = dx.
+			* Et enfin on remplace dx dans l'intégrale
 
 -----
 

@@ -72,6 +72,13 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :maxdepth: 1
 
 .. toctree::
+    :caption: Économie
+    :name: business2
+    :maxdepth: 1
+
+		Macroéconomie                        <business/env/macro>
+
+.. toctree::
     :caption: Jeux vidéos
     :name: games
     :maxdepth: 1
@@ -97,7 +104,6 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
 
 		Anglais                              <language/english/index>
     Entreprise                           <business/env/index>
-    Macroéconomie                        <business/env/macro>
     Documents d'une Entreprise           <business/docs/index>
     Langage C                            <imperative/c/index>
     Langage C - Avancé                   <imperative/c/advanced>
