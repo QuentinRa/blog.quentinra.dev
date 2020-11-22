@@ -64,6 +64,20 @@ On déclare une constante en C en mettant const devant.
 
 	const int UNE_CONSTANTE = 5; // nom toujours en majuscules par convention
 
+Alternativement, le C possède un système de "MACRO" (je sais pas si c'est le bon terme),
+c'est-à-dire que vous pouvez créer un chaine de caractères (ex: MACRO) et lui associer une valeur
+(qui peut être un entier donc une valeur ou du code !) et le c
+va remplacer toutes les MACRO par la valeur.
+
+.. code:: c
+
+	#define SIZE 512 // remplace tous les SIZE par 512
+	#define NL \n // remplace NL (new line) par \n
+	#define P printf // remplace P par printf
+
+	// appel :
+	P("taille: %d %c", SIZE, NL); // affiche taille: 512 (retourne à la ligne)
+
 Casting
 -------------------------
 
