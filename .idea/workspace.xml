@@ -26,10 +26,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/c.txt" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/c.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imperative/c/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/notions/address.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/notions/address.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/notions/libraries.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/notions/libraries.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imperative/c/notions/structures.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/notions/structures.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/notions/type.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/notions/type.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +182,7 @@
       <workItem from="1605872327253" duration="12379000" />
       <workItem from="1605889095941" duration="19932000" />
       <workItem from="1605959780929" duration="27178000" />
-      <workItem from="1606043151427" duration="19354000" />
+      <workItem from="1606043151427" duration="21836000" />
     </task>
     <servers />
   </component>

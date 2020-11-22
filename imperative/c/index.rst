@@ -61,7 +61,7 @@ Vous aurez plus de détails dans les parties suivantes.
 		Structures and symboles       <notions/structures>
 		Librairies                    <notions/libraries>
 		Notions d'adresse             <notions/address>
-		Afficher un résultat          <notions/address>
+		Afficher un résultat          <notions/print>
 
 3. Coder en C
 ==================================

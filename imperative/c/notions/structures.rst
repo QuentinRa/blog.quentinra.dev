@@ -2,9 +2,16 @@
 2. Spécificité du C - Structures and symboles
 ================================================================
 
+Condition
+	Une condition qui vaut 1 est vraie, sinon elle est fausse.
+
+	Vous pouvez utilisez des comparaisons (voir opérateurs, les ==, >, <, ...) qui retournent
+	1 ou 0.
+
+	Vous pouvez spécifier plusieurs conditions avec les opérateurs logiques (voir opérateurs &&, ||).
+
 Branchement
 	Le branchement se fait avec if(condition) et condition une expression.
-	Si l'expression vaut 1 (entier) ou vrai alors c'est vrai sinon c'est faux.
 
 		.. code:: c
 
@@ -62,3 +69,16 @@ Boucles
 
 		* break : quitte la boucle dans laquelle le break est
 		* continue : saute le code et passe directement au prochain tour d'une boucle
+
+Opérateurs
+	Les opérateurs en c sont :
+
+		* assignation (donner une valeur) : :code:`=`
+		* opération : :code:`+` (plus), :code:`-` (moins), :code:`*` (multiplié), :code:`/` (divisé)
+		* opération (2) : :code:`==` (comparaison), :code:`!` (négation), :code:`!=` (différent)
+		* opération (3) : :code:`>` (sup), :code:`<` (inf), :code:`<=` (inf égal), :code:`>=` (sup égal)
+		* opération puis assignation : :code:`+=`, ...
+		* opération puis assignation (2) : :code:`var++` (+1), :code:`var--` (-1)
+		* barrel shift : :code:`a >> b` (divise a par 2^b), :code:`a << b`  (multiplie a par 2^b)
+		* logique : :code:`&&` (et), :code:`||` (ou), :code:`&` (et bit à bit), :code:`|` (ou bit à bit)
+		* logique (2) : :code:`xor` (ou exclusif), :code:`^` (ou exclusif)
