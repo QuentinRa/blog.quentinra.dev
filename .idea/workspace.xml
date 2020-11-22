@@ -26,7 +26,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/template.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +56,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/tdl/automates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/imperative/c" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="proofread" />
@@ -71,11 +71,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\assets\team\gestion" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\notions" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\tdl\automates" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\automate" />
       <recent name="C:\Users\quent\Documents\texas-res\db\sql\exercices\user" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\sql\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\sql\exercices\dml" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -180,7 +180,7 @@
       <workItem from="1605872327253" duration="12379000" />
       <workItem from="1605889095941" duration="19932000" />
       <workItem from="1605959780929" duration="27178000" />
-      <workItem from="1606043151427" duration="11551000" />
+      <workItem from="1606043151427" duration="14807000" />
     </task>
     <servers />
   </component>

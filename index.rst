@@ -39,6 +39,8 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :name: imperative
     :maxdepth: 1
 
+    Langage C                            <imperative/c/index>
+
 .. toctree::
     :caption: Conception
     :name: conception
@@ -106,8 +108,6 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
 		Anglais                              <language/english/index>
     Entreprise                           <business/env/index>
     Documents d'une Entreprise           <business/docs/index>
-    Langage C                            <imperative/c/index>
-    Langage C - Avancé                   <imperative/c/advanced>
     Architecture Linux                   <system/linux/index>
     Bash et Scripts                      <system/linux/bash>
     Probabilités                         <maths/proba/index>
