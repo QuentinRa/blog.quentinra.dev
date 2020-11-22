@@ -25,6 +25,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
 		Analyse numérique                    <maths/analyse/index>
 		Algèbre Matricielle                  <maths/matrix/index>
 		Bric à Brac                          <maths/bric/index>
+		Théorie des langages                 <maths/tdl/index>
 
 .. toctree::
     :caption: Système
