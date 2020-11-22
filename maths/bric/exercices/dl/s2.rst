@@ -5,6 +5,9 @@
 .. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
    :alt: correction vérifiée
 
+.. image:: https://img.shields.io/badge/correction-incomplète-yellow.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction incomplète
+
 Calculer les limites suivantes en passant par le développement
 limité des fonctions suivantes :
 
@@ -29,12 +32,36 @@ limité des fonctions suivantes :
 Question 1
 ---------------------
 
-...
+.. math::
+
+		\lim_{x \rightarrow 0^+} \frac{\sin x}{\sqrt{1 - cos x}} \\
+
+		sin x= x + O(x^3) \\
+		cos x= 1 - \frac{x^2}{2} + O(x^4) \\
+		\sqrt{1-cos x}= \sqrt{\frac{x^2}{2} + O(x^4)} =  \sqrt{\frac{x^2}{2}} \sqrt{1 + O(x^4)}  = \frac{x}{\sqrt{2}} \sqrt{1 + O(x^4)} \\
+
+		\lim_{x \rightarrow 0^+} \frac{\sin x}{\sqrt{1 - cos x}}
+		\Leftrightarrow
+		\lim_{x \rightarrow 0^+} \frac{x + O(x^3)}{\frac{x}{\sqrt{2}} \sqrt{1 + O(x^4)}}
+		\Leftrightarrow
+		\lim_{x \rightarrow 0^+} \sqrt2\frac{1+ O(x^2)}{\sqrt{1 + O(x^2)}}
+		\Leftrightarrow
+		\lim_{x \rightarrow 0^+} \sqrt2 \frac{1}{1}  = \sqrt2
 
 Question 2
 ---------------------
 
-...
+.. math::
+
+		\lim_{ x \rightarrow +\infty} \big(1 + \frac{1}{x} \big)^x
+		\Leftrightarrow
+		\lim_{ x \rightarrow +\infty} exp(x \ln (1+\frac{1}{x})) \\
+
+		\text{On a ln(1+Y) avec Y = 1/x (tends vers 0 en +inf donc bien une erreur).} \\
+
+		\ln (1+\frac{1}{x}) = \frac{1}{x} + O(\frac{1}{x^2}) \\
+
+		\lim_{ x \rightarrow +\infty} exp(1 + O(\frac{1}{x})) = exp(1)
 
 Question 3
 ---------------------
@@ -44,7 +71,21 @@ Question 3
 Question 4
 ---------------------
 
-...
+.. math::
+
+		\sqrt{1+x}= 1+\frac{1}{2}x-\frac{1}{8}x^2+\frac{1}{16}x^3+ O(x^4) \\
+		\sqrt{1-x}= 1-\frac{1}{2}x+\frac{1}{8}x^2-\frac{1}{16}x^3+ O(x^4) \\
+
+		\lim_{x \rightarrow 0} \frac{\sqrt{1 + x} -  \sqrt{1 - x} - x}{x^3}
+
+		\Leftrightarrow
+
+		\lim_{x \rightarrow 0} \frac{1+\frac{1}{2}x-\frac{1}{8}x^2+\frac{1}{16}x^3+ O(x^4) -  (1-\frac{1}{2}x+\frac{1}{8}x^2-\frac{1}{16}x^3+ O(x^4)) - x}{x^3}
+
+		\\ \Leftrightarrow
+
+		\lim_{x \rightarrow 0} \frac{\frac{x^3}{8} + O(x^4)}{x^3} \Leftrightarrow
+		\lim_{x \rightarrow 0} \frac{1}{8} + O(x) = \frac{1}{8}
 
 Question 5
 ---------------------
@@ -59,7 +100,11 @@ Question 6
 Question 7
 ---------------------
 
-...
+.. math::
+
+		\ln{(1+Y)}\ donne\ \frac{-x^2}{2} + O(x^4) \\
+		\lim_{x \rightarrow 0} \frac{\frac{-x^2}{2} + O(x^4)}{x^2}  \Leftrightarrow
+		\lim_{x \rightarrow 0} \frac{-1}{2} O(x^2) =  \frac{-1}{2}
 
 **Crédits**
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

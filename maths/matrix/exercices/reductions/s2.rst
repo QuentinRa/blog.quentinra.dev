@@ -2,8 +2,11 @@
 2/2 Réduction d'endomorphisme et récurrences linéaires
 ==============================================================
 
-.. image:: https://img.shields.io/badge/correction-incomplète%20mais%20vérifiée-yellow.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
-   :alt: correction incomplète mais vérifiée
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+.. image:: https://img.shields.io/badge/correction-incomplète-yellow.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction incomplète
 
 Résolution de S1
 --------------------------
@@ -168,10 +171,7 @@ Résolution de S3
 
 	S_3 \begin{cases} u_0 = 2\\ v_0 = 1\\ U_{n+1} = U_{n}-2V_{n} \ pour \ n  \geq 0\\V_{n+1} = V_{n}-2U_{n} \ pour \ n  \geq 0 \end{cases}
 
-Je ne sais pas faire...
-
-
-|
+...
 
 **Crédits**
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
