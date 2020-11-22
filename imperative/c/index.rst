@@ -223,8 +223,12 @@ Un pointeur est déclaré type* (au moins une étoile pour indiquer qu'il contie
 	Pointeur de fonction    <address/function>
 	Tableau dynamique       <address/array>
 
+8. Flux et Fichiers
+==========================
 
-8. Autres notions
+...
+
+9. Autres notions
 ==========================
 
 Voici quelques notions diverses
@@ -232,12 +236,13 @@ Voici quelques notions diverses
 .. toctree::
 		:maxdepth: 1
 
-		Tris en C                   <more/tris>
-		Récursivité en C            <more/recursive>
-		Piles, Files et Listes      <more/manage>
-		Structures                  <more/structures>
+		Arguments à la ligne de commande           <more/args>
+		Tris en C                                  <more/tris>
+		Récursivité en C                           <more/recursive>
+		Piles, Files et Listes                     <more/manage>
+		Structures                                 <more/structures>
 
-9. Exercices
+10. Exercices
 ==============
 
 .. toctree::

@@ -26,9 +26,14 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/advanced.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/advanced.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/c.txt" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/c.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exemples-net.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/advanced/net/exemples-net.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imperative/c/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/initiation.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/initiation.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/notions/type.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/notions/type.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/more/manage.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/more/manage.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/more/recursive.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/more/recursive.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/more/structures.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/more/structures.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/more/tris.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/more/tris.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,11 +70,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\advanced\net" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\imperative\c" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\math\tdl" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\db\bases" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\db" />
-      <recent name="C:\Users\quent\Documents\texas-res\team\agile\scrum" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\team\gestion" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\more" />
@@ -181,7 +186,7 @@
       <workItem from="1605872327253" duration="12379000" />
       <workItem from="1605889095941" duration="19932000" />
       <workItem from="1605959780929" duration="27178000" />
-      <workItem from="1606043151427" duration="24027000" />
+      <workItem from="1606043151427" duration="26017000" />
     </task>
     <servers />
   </component>
