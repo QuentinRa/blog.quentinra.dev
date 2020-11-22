@@ -91,6 +91,12 @@ Ordre = 5
 
 :math:`e^{x}= 1 + x + \frac{x^{2}}{2} + \frac{x^{3}}{6} + \frac{x^{4}}{24} + \frac{x^{5}}{120} + O\left(x^{6}\right)`
 
+Ordre = 4
+
+:math:`\sqrt{1+x}= 1+\frac{1}{2}x-\frac{1}{8}x^2+\frac{1}{16}x^3-\frac{5}{128}x^4+ O(x^5)`
+
+:math:`\sqrt{x}= 1+\frac{1}{2}\left(x-1\right)-\frac{1}{8}\left(x-1\right)^2+\frac{1}{16}\left(x-1\right)^3-\frac{5}{128}\left(x-1\right)^4 + O(x^5)`
+
 -----
 
 **Crédits**

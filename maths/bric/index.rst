@@ -52,6 +52,7 @@ Exercices
 	* https://www.solumaths.com/fr/calculatrice-en-ligne/calculer/equation_tangente
 	* https://www.symbolab.com/solver/simplify-calculator/
 	* https://mathpapa.com/simplify-calculator/
+	* https://www.symbolab.com/solver/taylor-series-calculator/
 	* https://math-linux.com/latex-26/faq/latex-faq/article/latex-derivatives-limits-sums-products-and-integrals
 	* matplotlib
 			* https://stackoverflow.com/questions/31556446/how-to-draw-axis-in-the-middle-of-the-figure
