@@ -61,11 +61,39 @@ Vous aurez plus de détails dans les parties suivantes.
 		Structures and symboles       <notions/structures>
 		Librairies                    <notions/libraries>
 		Notions d'adresse             <notions/address>
+		Afficher un résultat          <notions/address>
 
 3. Coder en C
 ==================================
 
-...
+La fonction :math:`main` est appelée à l'exécution et execute le code
+dedans, puis retourne un résultat avec return généralement : 0 (ok) et 1 (problème).
+
+La déclaration d'une variable se fait avec :code:`type nom_variable;` ou :code:`type nom_variable = valeur;`.
+Si vous ne donnez pas de valeur, alors la compilateur va donner une valeur par défaut (généralement
+0 si la variable est un entier etc...).
+
+Une instruction finit toujours par un :code:`;`.
+
+Bloc
+	Il s'agit de la structure la plus basique, un bloc commence par { et finit par }.
+
+	Toutes les variables déclarées dans le bloc n'existent pas en dehors.
+
+	Le code dans un bloc est indenté de 1 tabulation (4 espaces) généralement.
+
+.. code:: c
+
+	//programme fait (a+b)^2 avec a=5 et b=6 puis affiche le résultat
+	int main(void) {
+	 int a = 5;
+	 int b = 6;
+	 int r;
+	 r = a+b;
+	 r *= r; // pareil que r = r * r; ou r = (a+b) * (a+b)
+	 print("r=%d", r);
+	 return EXIT_SUCCESS; //constante qui vaut généralement 0 (ok)
+	}
 
 4. Fonctions
 ==================================
@@ -98,6 +126,7 @@ Voici quelques notions diverses
 		Tris en C                   <more/tris>
 		Récursivité en C            <more/recursive>
 		Piles, Files et Listes      <more/manage>
+		Structures                  <more/structures>
 
 9. Exercices
 ==============
