@@ -26,11 +26,16 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imperative/c/exercices/array/address.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/array/address.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/array/tab.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/array/tab.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/array/string.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/array/string.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/fonctions/initiales.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/fonctions/lecture.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/fonctions/miroir.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/fonctions/statistiques.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/fonctions/truandage.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/functions.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/structure/functions.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/maths.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/structure/maths.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,26 +64,26 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/imperative/c/exercices/structure/math" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/imperative/c/exercices/array/address" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="proofread" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure\math" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array\tab" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure\fonctions" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array\string" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array\address" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\assets\imperative\c\exercice" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure\boucles\boucles1" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\advanced\net" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array\address" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array\string" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure\fonctions" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure\math" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array\tab" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -184,7 +189,8 @@
       <workItem from="1605889095941" duration="19932000" />
       <workItem from="1605959780929" duration="27178000" />
       <workItem from="1606043151427" duration="26242000" />
-      <workItem from="1606120322624" duration="26132000" />
+      <workItem from="1606120322624" duration="27592000" />
+      <workItem from="1606152833917" duration="2084000" />
     </task>
     <servers />
   </component>

@@ -23,7 +23,7 @@ copyright = '2020, Quentin Ra'
 author = 'Quentin Ra'
 
 # The full version, including alpha/beta/rc tags
-release = '1.19.204'
+release = '1.20.229'
 # version 0 : html, css, php, js
 # version 1 : restructured text
 # version 1.1 : system/docker
@@ -44,7 +44,8 @@ release = '1.19.204'
 # version 1.16 : db/model
 # version 1.17 : team/agile
 # version 1.18 : team/gestion
-# version 1.19 : team/c dc
+# version 1.19 : team/cdc
+# version 1.20 : imperative/c
 
 # -- General configuration ---------------------------------------------------
 
