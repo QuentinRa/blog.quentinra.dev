@@ -8,7 +8,6 @@ les plus utilisés sont int (entier), char (caractère) et float/double (réel).
 Un type signed prends toutes les valeurs positives >= 0 sur le nombre de bit indiqué.
 Un type unsigned prends 2^n-1 bits négatifs (<=) et 2^n bits positifs (>0).
 
-
 ==================== ================================= ========= =======
 Types                Formats                           Notation  Bits
 ==================== ================================= ========= =======
@@ -77,6 +76,15 @@ va remplacer toutes les MACRO par la valeur.
 
 	// appel :
 	P("taille: %d %c", SIZE, NL); // affiche taille: 512 (retourne à la ligne)
+
+Taille d'un type
+---------------------
+
+L'opérateur sizeof permet d'obtenir la taille d'un type, par exemple sizeof(int)
+retourne la taille d'un int sur la machine actuelle (4 octets généralement pour un int).
+
+Attention, sizeof n'est pas une fonction donc : fonction() * 2 * sizeof(int)
+va faire 2 * sizeof(int) puis fonction() * résultat.
 
 Casting
 -------------------------

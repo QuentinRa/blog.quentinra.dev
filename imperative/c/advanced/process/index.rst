@@ -29,6 +29,9 @@ n'importe quel fils mais 1 seul), ou wait_pid (attends un/plusieurs processus pa
 		//attends un processus, pid=0=fils, pid=-1=groupe
 		int waitpid(int pid, int *status, int options);
 
+		// tue le processus actuel et retourne comme "code" comme code de retour
+		exit(int code);
+
 Exemple de code
 
 .. code:: c

@@ -36,6 +36,7 @@ On dispose des fonctions
 	* close : fermer le fichier
 	* lseek : se déplacer dans le fichier
 	* perror : lorsqu'un appel système rate, perror contient des informations sur l'erreur
+	* fstat/stat : retourne des informations sur le fichier
 
 .. code:: c
 
@@ -74,3 +75,15 @@ On dispose des fonctions
 		 // Fermeture
 		 close(fr);
 		}
+
+Note sur perror
+	Il existe une variable ERRNO qui contient une code.
+
+	Si un appel système rate (par exemple write) alors write va mettre dans
+	ERRNO le code d'erreur.
+
+	Il existe un fichier dans lequel il y a toutes les correspondances code vers message, donc
+	pour chaque code, il y a un message d'erreur.
+
+	perror(message) va lire le code, trouver le message associé et afficher dans la sortie d'erreur :
+	message de l'erreur: message.

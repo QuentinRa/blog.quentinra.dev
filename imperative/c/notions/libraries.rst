@@ -15,6 +15,12 @@ dans lesquels on déclare des fonctions (signature) et des constantes.
 Ils sont associés à un .c du même nom qui contient le code des fonctions. Plus
 de détails dans la section correspondante.
 
+.. note::
+
+	Une fonction qui retourne un entier, retourne généralement -1 pour dire qu'il y a eu
+	une erreur. Une fonction qui retourne une adresse retourne généralement NULL pour dire
+	qu'il y a eu une erreur.
+
 Librairie standard
 
 .. code::
@@ -64,3 +70,10 @@ Librairie des chaines de caractères
 	strtol(string, erreur, base) // convertit un char* en long (ou int/double/... si casté)
 
 	strtoul, strtod // variantes de strtol pour unsigned et réels
+
+Autres
+
+.. code:: c
+
+	// termine un processus, donc quitte généralement le programme
+	exit(int code);

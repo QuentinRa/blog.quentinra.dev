@@ -30,6 +30,7 @@ Les fonctions sont
 	* fseek, rewind : vous permet de vous déplacer dans le fichier
 	* ftell : indique votre position dans le fichier
 	* fflush : vide les tampons
+	* feof : indique pour un fichier si on a attends la fin
 
 .. code:: c
 
@@ -46,6 +47,8 @@ Les fonctions sont
 		long ftell(flux); //position du curseur
 		int fflush(flux); //vide les tampons
 
+		int feof(flux); //fin du fichier ? 1: oui, 0:non
+
 		//fermeture du flux
 		int fclose(flux);
 
@@ -54,3 +57,8 @@ Les fonctions sont
 
      Manipulation de flux d'octets                    <octets>
      Manipulation de flux de caractères               <string>
+
+Note sur feof et EOF
+	EOF est une variable qui indique que le fichier est fini ou non.
+	feof est une fonction qui regarde la valeur de EOF et indique si la fichier
+	est fini ou non.

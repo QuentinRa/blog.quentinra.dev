@@ -1,23 +1,5 @@
-goto tag; //déplacement vers une étiquette (ligne du style tag: /* code */)
-switch(e){
-	//test si e correspond à valeur
-	//break pour quitter le switch
-	case valeur: code; break;
-	//tous les case ont échoué
-	default: code; break;
-}
-//renomme un type, ex typedef int entier;
-typedef <type_nom_actuel> <type_nouveau_actuel>;
-
 dup/dup2
 
-exit
-perror
--1
-
-fstat
-
-perror
 -Wall -Wextra
 
 http://web4.ensiie.fr/~urbain/enseignement/ipi/

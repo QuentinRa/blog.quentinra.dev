@@ -4,7 +4,7 @@
 Langage C
 ================================
 
-| :math:`\color{grey}{Version \ 1.1.2}`
+| :math:`\color{grey}{Version \ 1.1.3}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 23/11/2020}`
 
 .. note::
@@ -203,10 +203,11 @@ On peut obtenir l'adresse d'une variable avec :code:`&` devant son nom.
 On peut obtenir la valeur a une adresse avec :code:`*` devant l'adresse.
 
 Un pointeur est déclaré type* (au moins une étoile pour indiquer qu'il contient une adresse).
+Un pointeur qui ne pointe vers aucune adresse à la valeur NULL.
 
 .. code:: c
 
-		double* d; // case qui contiendra une adresse
+		double* d = NULL; // case qui contiendra une adresse
 		int valeur = 17;
 		d = &valeur;
 		printf("%p", &a); // affiche une valeur par exemple Ox15612349

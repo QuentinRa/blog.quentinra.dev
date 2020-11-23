@@ -4,7 +4,7 @@
 Langage C - avancé
 ================================
 
-| :math:`\color{grey}{Version \ 1.1.3}`
+| :math:`\color{grey}{Version \ 1.2.4}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 23/11/2020}`
 
 .. warning::
@@ -109,6 +109,32 @@ avec l'option :code:`-lpthread` de gcc.
 		Threads            <advanced/threads/index>
 		Concurrence        <advanced/threads/mutex>
 		Sémaphores         <advanced/threads/sema>
+
+6. Autres Concepts
+=======================
+
+Étiquettes
+	Il n'est pas du tout recommandé d'utiliser des étiquettes car cela rends le code
+	plus difficile à lire.
+
+	Une étiquette consiste à créer un repère dans le texte, vers lequel vous pouvez retourner
+	(par exemple vous avez une étiquette ligne 5, et la ligne 5 est passée, vous pouvez placer
+	une étiquette pour revenir et re-exécuter tout le code depuis la ligne 5).
+
+	.. code:: c
+
+		nom_etiquette:
+
+		 // code
+
+		goto nom_etiquette; //refait tout le code depuis nom_etiquette:
+
+7. Exercices
+==========================
+
+.. toctree::
+    :name: exercices
+    :maxdepth: 1
 
 ------
 

@@ -13,10 +13,13 @@ un nouveau type qui est composé d'un ou plusieurs types dit primitifs.
 			type2 nom2;
 			...
 		};
+
 		//utilisation
 		struct nom a;//type: struct nom
+
 		//renommer
 		typedef struct nom nouveau_nom;
+
 		//utilisation
 		nouveau_nom b;
 
@@ -25,6 +28,7 @@ un nouveau type qui est composé d'un ou plusieurs types dit primitifs.
 			type1 nom1;
 			...
 		} nouveau_nom;
+
 		//utilisation
 		nouveau_nom b;//type: struct nom OU nouveau_nom
 
