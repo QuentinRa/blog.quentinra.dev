@@ -226,7 +226,20 @@ Un pointeur est déclaré type* (au moins une étoile pour indiquer qu'il contie
 8. Flux et Fichiers
 ==========================
 
-...
+Un flux est une route en lecture ou écriture par
+laquelle on peut récupérer des données, ce qui comprends écrire ou lire dans un terminal,
+écrire ou lire dans un fichier...
+
+Tous les flux sont des flux d'octets (=byte) cependant pour qu'il soit
+plus facile de lire/écrire du texte, il existe un type de flux dérivé qui
+sont les flux de caractères (donc les octets sont interprétés comme des caractères ASCII)
+par exemple un terminal est un flux de texte.
+
+.. toctree::
+  :maxdepth: 1
+
+     Manipulation de flux                             <flux/principe>
+     Manipulation de flux via appels système linux    <flux/system>
 
 9. Autres notions
 ==========================

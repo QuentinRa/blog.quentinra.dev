@@ -33,6 +33,11 @@ Les choses non faites et à faire
 **Jeux vidéos**
 * commencer tout ça, ajout des cours
 
+**imperative**
+* ajouter les pointeurs de fonctions
+* ajouter détails threads et processus
+* ajouter détails réseau
+
 **Probabilités**
 * Faire les exercices non rank
 * Ajouter le CM4

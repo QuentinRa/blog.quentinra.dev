@@ -60,12 +60,52 @@ Il est recommandé (voir obligatoire) d'avoir une idée de ce qu'on entends par 
 4. Processus
 ==========================================
 
-...
+Un processus est un programme + tout l'environnement dans lequel il s'exécute.
+
+pid
+	Il s'agit de l'identifiant d'un processus, il est utilisé
+	par toutes les fonctions qui permettent de toucher au processus (tuer, attendre, ...).
+
+On crée généralement des processus pour déléguer un travail à faire parallèlement
+au processus principal (le main).
+
+On peut communiquer entre des processus en utilisant des signaux ou des canals
+appelés tubes.
+
+.. toctree::
+	 :maxdepth: 1
+
+		Processus           <advanced/process/index>
+		Recouvrement        <advanced/process/exec>
+		Signaux             <advanced/process/signals>
+		Tubes               <advanced/process/pipe>
 
 5. Threads et concurrence
 ==========================================
 
-...
+Un thread est un processus léger. Contrairement à un processus,
+il est exécuté dans un processus et donc son environnement est
+celui du processus (mêmes variables....).
+
+Le principe est que vous allez donner une tâche à un thread,
+dont le code est dans une fonction. Une fois
+le thread lancé, le code est exécuté. Le thread s'arrête
+si le processus meurt ou la fonction est terminée.
+
+Il est possible que plusieurs Thread essayent d'écrire/lire
+une même variable en même temps : cela pose un problème de concurrence
+car on n'a aucune garantie si l'écriture s'est bien passée ou un thread
+n'a pas lu une mauvaise valeur.
+
+Attention ! La librairie des threads doit être chargée à la compilation
+avec l'option :code:`-lpthread` de gcc.
+
+.. toctree::
+	 :maxdepth: 1
+
+		Threads            <advanced/threads/index>
+		Concurrence        <advanced/threads/mutex>
+		Sémaphores         <advanced/threads/sema>
 
 |
 
