@@ -18,19 +18,6 @@ est le plus proche.
 
 | :code:`[TAG] IUTSF APL S1 TP4 2019`
 
-1/6 Triple
-------------------------
-
-Écrivez un programme qui demande un entier naturel, puis affiche le multiple de 3 dont il
-est le plus proche.
-
-.. toctree::
-   :maxdepth: 1
-
-	Proposition de correction n°1			<if/d1>
-
-| :code:`[TAG] IUTSF APL S1 TP4 2019`
-
 2/6 Produit
 ------------------------
 

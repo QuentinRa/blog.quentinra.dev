@@ -4,7 +4,7 @@
 Langage C
 ================================
 
-| :math:`\color{grey}{Version \ 1.1.3}`
+| :math:`\color{grey}{Version \ 1.2.7}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 23/11/2020}`
 
 .. note::
@@ -279,6 +279,7 @@ Il est recommandé de suivre l'ordre des exercices.
 		 Branchements  (if)                 <exercices/structure/if>
 		 Boucles (while, for, ...)          <exercices/structure/boucles>
 		 Types                              <exercices/structure/types>
+		 Maths (avec math.h)                <exercices/structure/maths>
 		 Tableaux                           <exercices/array/tab>
 		 Adresses et allocation dynamique   <exercices/array/address>
 		 Chaines de caractères              <exercices/array/string>
