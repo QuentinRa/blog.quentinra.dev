@@ -4,8 +4,8 @@
 Langage C
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.0}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 22/11/2020}`
+| :math:`\color{grey}{Version \ 1.1.2}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 23/11/2020}`
 
 .. note::
 
@@ -235,6 +235,17 @@ plus facile de lire/écrire du texte, il existe un type de flux dérivé qui
 sont les flux de caractères (donc les octets sont interprétés comme des caractères ASCII)
 par exemple un terminal est un flux de texte.
 
+Curseur
+	Vos position dans le fichier est définie par un curseur qui pointe sur
+	le prochain caractère lu. Généralement on lit en avancement de un et on ne
+	cherche jamais à reculer.
+
+Tampon
+	Lorsque vous lisez/écrivez, l'opération n'est pas faite tout de suite. Les entrées/sorties (I/O)
+	sont très couteuses donc le système attends généralement que vous avez beaucoup écrit/lu avant
+	de procéder à la lecture/écriture et de vous renvoyer le résultat. Il conserve vos demandes
+	dans ce qu'on appelle un buffer/tampon.
+
 .. toctree::
   :maxdepth: 1
 
@@ -265,7 +276,7 @@ Voici quelques notions diverses
 Resources associées au cours
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
 
 	Langage C - initiation <initiation>
 	Langage C - avancé <advanced>

@@ -4,6 +4,9 @@
 Langage C - avancé
 ================================
 
+| :math:`\color{grey}{Version \ 1.1.3}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 23/11/2020}`
+
 .. warning::
 
 	Cette partie est complémentaire de du tutoriel
@@ -106,8 +109,6 @@ avec l'option :code:`-lpthread` de gcc.
 		Threads            <advanced/threads/index>
 		Concurrence        <advanced/threads/mutex>
 		Sémaphores         <advanced/threads/sema>
-
-|
 
 ------
 

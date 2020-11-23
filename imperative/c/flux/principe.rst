@@ -6,17 +6,6 @@ La logique est que vous allez ouvrir un fichier dans un mode (lecture/écriture)
 et toutes les informations seront conservées dans une variable. Vous devrez donc passer cette variable
 aux fonctions d'écriture/lecture/... pour qu'elles travaillent sur votre fichier.
 
-Curseur
-	Vos position dans le fichier est définie par un curseur qui pointe sur
-	le prochain caractère lu. Généralement on lit en avancement de un et on ne
-	cherche jamais à reculer.
-
-Tampon
-	Lorsque vous lisez/écrivez, l'opération n'est pas faite tout de suite. Les entrées/sorties (I/O)
-	sont très couteuses donc le système attends généralement que vous avez beaucoup écrit/lu avant
-	de procéder à la lecture/écriture et de vous renvoyer le résultat. Il conserve vos demandes
-	dans ce qu'on appelle un buffer/tampon.
-
 Il existe trois flux pré-ouverts pour vous et que vous n'avez pas a fermer
 
 	*	stdin : saisie à la console
