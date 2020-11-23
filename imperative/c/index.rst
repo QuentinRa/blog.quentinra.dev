@@ -270,9 +270,19 @@ Voici quelques notions diverses
 10. Exercices
 ==============
 
+Il est recommandé de suivre l'ordre des exercices.
+
 .. toctree::
     :name: exercices
     :maxdepth: 1
+
+		 Branchements  (if)                 <exercices/structure/if>
+		 Boucles (while, for, ...)          <exercices/structure/boucles>
+		 Types                              <exercices/structure/types>
+		 Tableaux                           <exercices/array/tab>
+		 Adresses et allocation dynamique   <exercices/array/address>
+		 Chaines de caractères              <exercices/array/string>
+		 Fonctions                          <exercices/structure/functions>
 
 Resources associées au cours
 
