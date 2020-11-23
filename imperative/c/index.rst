@@ -281,7 +281,7 @@ Il est recommandé de suivre l'ordre des exercices.
 		 Types                              <exercices/structure/types>
 		 Maths (avec math.h)                <exercices/structure/maths>
 		 Tableaux                           <exercices/array/tab>
-		 Adresses et allocation dynamique   <exercices/array/address>
+		 Adresses                           <exercices/array/address>
 		 Chaines de caractères              <exercices/array/string>
 		 Fonctions                          <exercices/structure/functions>
 

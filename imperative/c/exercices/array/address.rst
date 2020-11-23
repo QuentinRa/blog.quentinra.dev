@@ -1,5 +1,5 @@
 ==========================================
-Adresses et allocation dynamique
+Adresses
 ==========================================
 
 Niveau débutant
