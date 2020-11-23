@@ -26,7 +26,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/imperative/c/exercices/structure/if" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/imperative/c/exercices/structure/boucles" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="proofread" />
@@ -63,11 +63,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure\boucles" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure\if" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\advanced\process" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\flux" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure" />
@@ -180,7 +180,7 @@
       <workItem from="1605889095941" duration="19932000" />
       <workItem from="1605959780929" duration="27178000" />
       <workItem from="1606043151427" duration="26242000" />
-      <workItem from="1606120322624" duration="18147000" />
+      <workItem from="1606120322624" duration="19850000" />
     </task>
     <servers />
   </component>
