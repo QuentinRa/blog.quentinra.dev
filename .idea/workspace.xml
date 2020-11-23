@@ -27,6 +27,20 @@
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/bornes.c" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/boucles1/bornes.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/d3.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/d4.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/d4.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/d5.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/d5.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/d6.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/d6.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/division.c" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/boucles1/division.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/filtrage.c" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/boucles1/filtrage.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/sequencedowhile.c" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/boucles1/sequencedowhile.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/sequencefor.c" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/boucles1/sequencefor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/sequencewhile.c" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/boucles1/sequencewhile.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/table.c" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/boucles1/table.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/tables.c" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/structure/boucles/boucles1/tables.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,17 +78,17 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure\boucles" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure\boucles\boucles3" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure\boucles\boucles2" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure\if" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\advanced\process" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure\boucles\boucles1" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\advanced\net" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\imperative\c" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\math\tdl" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -180,7 +194,7 @@
       <workItem from="1605889095941" duration="19932000" />
       <workItem from="1605959780929" duration="27178000" />
       <workItem from="1606043151427" duration="26242000" />
-      <workItem from="1606120322624" duration="19850000" />
+      <workItem from="1606120322624" duration="21316000" />
     </task>
     <servers />
   </component>

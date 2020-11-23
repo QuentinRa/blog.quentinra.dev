@@ -1,5 +1,5 @@
 ======================================================
-1/15 Séquence
+1/1 Disque
 ======================================================
 
 .. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
@@ -8,13 +8,7 @@
 .. image:: https://img.shields.io/badge/version-c89-orange.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
    :alt: version c89
 
-.. literalinclude:: boucles1/sequencefor.c
-  :language: c
-
-.. literalinclude:: boucles1/sequencedowhile.c
-  :language: c
-
-.. literalinclude:: boucles1/sequencewhile.c
+.. literalinclude:: boucles3/disque.c
   :language: c
 
 **Crédits**
