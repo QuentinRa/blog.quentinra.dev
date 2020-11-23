@@ -4,7 +4,7 @@
 Langage C
 ================================
 
-| :math:`\color{grey}{Version \ 1.2.7}`
+| :math:`\color{grey}{Version \ 1.3.8}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 23/11/2020}`
 
 .. note::
@@ -284,6 +284,12 @@ Il est recommandé de suivre l'ordre des exercices.
 		 Adresses                           <exercices/array/address>
 		 Chaines de caractères              <exercices/array/string>
 		 Fonctions                          <exercices/structure/functions>
+		 Allocation dynamique               <exercices/others/malloc>
+		 Structures                         <exercices/others/structure>
+		 Flux d'octets                      <exercices/others/flux_o>
+		 Flux de texte                      <exercices/others/flux_t>
+		 Listes chainées                    <exercices/others/linked_list>
+		 Récursivité                        <exercices/others/recursive>
 
 Resources associées au cours
 

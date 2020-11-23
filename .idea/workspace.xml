@@ -26,16 +26,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/array/address.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/array/address.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/array/string.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/array/string.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/fonctions/initiales.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/fonctions/lecture.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/fonctions/miroir.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/fonctions/statistiques.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/fonctions/truandage.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/structure/functions.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/structure/functions.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +55,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/imperative/c/exercices/array/address" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/imperative/c/exercices/others/recursive" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="proofread" />
@@ -72,18 +63,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\structure\structure1" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\imperative\c\exercice" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure\boucles\boucles1" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\advanced\net" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\malloc\malloc1" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\linked\linked1" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\malloc" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array\address" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array\string" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure\fonctions" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\structure\math" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array\tab" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\recursive" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\linked" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\structure" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\malloc" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\linked\maillon" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -190,7 +181,7 @@
       <workItem from="1605959780929" duration="27178000" />
       <workItem from="1606043151427" duration="26242000" />
       <workItem from="1606120322624" duration="27592000" />
-      <workItem from="1606152833917" duration="2084000" />
+      <workItem from="1606152833917" duration="7109000" />
     </task>
     <servers />
   </component>
@@ -309,10 +300,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="376" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1603556286896" />
-    <state x="480" y="163" width="575" height="498" key="find.popup" timestamp="1605737311316">
+    <state x="480" y="163" width="575" height="498" key="find.popup" timestamp="1606159215190">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="480" y="163" width="575" height="498" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1605737311316" />
+    <state x="480" y="163" width="575" height="498" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1606159215190" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1606146395715">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

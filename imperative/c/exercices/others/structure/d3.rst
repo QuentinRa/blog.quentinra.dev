@@ -1,0 +1,15 @@
+======================================================
+3. Groupe
+======================================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+.. image:: https://img.shields.io/badge/version-c89-orange.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: version c89
+
+.. literalinclude:: structure1/groupe.c
+  :language: c
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
