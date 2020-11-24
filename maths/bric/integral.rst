@@ -4,8 +4,8 @@
 Primitives  et intégrales
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.0}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 11/11/2020}`
+| :math:`\color{grey}{Version \ 1.2.3}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 24/11/2020}`
 
 Primitives
 ***************************
@@ -103,6 +103,62 @@ en la réécrivant après avoir remplacé les bornes et des termes par de nouvea
 			* on pose dx/dy = x\'
 			* puis on résous pour pour avoir ... dy = dx.
 			* Et enfin on remplace dx dans l'intégrale
+
+Intégrabilité sur un interval
+----------------------------------------
+
+On a des fonctions, lorsqu'on calcule l'intégrale ça peut donner
+quelque chose qui tends vers l'infini ou une valeur finie.
+
+	* lorsqu'on tends vers +infini, on regarde de notre point vers +infini
+	* lorsqu'on tends vers 0+, on regarde de notre 0+ vers +notre point
+
+On définit alors l'intégrabilité sur ]a,b[ d'une fonction **continue** f tel que la plus grande
+valeur prise par une intégrale syr un sous ensemble [c,d] de ]a,b[ soit inférieur (strict) à + l'infini.
+
+.. math::
+
+	\int_{a}^{b} |f(x)| dx = \sup_{[c,d] \subset ]a,b[} \int_{c}^{d} |f(x)| dx < +\infty
+
+Propriétés
+	1. f est continue sur [a,b] alors f est intégrable
+	2. f doit être positive sinon il y a des problèmes
+	3. soit g intégrable sur ]a,+inf[ alors si :math:`\forall{x}\ge a,\ |f(x)| \le g(x)` : f est intégrable.
+	4. soit g intégrable et positive sur ]a,+inf[ alors si :math:`f = o_{x \rightarrow(g)}\ ou\ f = O_{x \rightarrow(g)}` : f est intégrable.
+	5. soit g intégrable et :math:`f \sim_{x \rightarrow +\infty} c * g(x)` : f est intégrable.
+	6. Les propriétés 3,4,5 sont également valables en 0+.
+
+En pratique
+	* Déterminer le domaine de définition de f : Df
+	* si l'un des bornes a,b n'est pas dans Df, alors on démontre l'intégrabilité
+		* en -infini, on fait comme en +infini
+		* en :math:`a^+`, on fait comme en +infini
+		* en :math:`b^-`, on fait comme en +infini
+	* calcule (IPP, changement de variable, primitive). L'IPP peut échouer.
+
+Intégrales doubles
+-----------------------------------
+
+Une intégrale double c'est une intégrale à deux variables, voici la notation
+et la réécriture via le théorème de Fubini-Tonelli :
+
+.. math::
+
+	\int \int_{D_x*D_y} f(x,y) d(x,y)
+	= \int_{D_x} \begin{pmatrix}\int_{D_y} f(x,y) dy\end{pmatrix} dx
+	= \int_{D_y} \begin{pmatrix}\int_{D_x} f(x,y) dx\end{pmatrix} dy
+
+x et y sont séparables
+	* si y est dans l'expression de f, alors elle est constantes dans l'intégrale en x donc	on peut sortir y
+	* on peut sortir l'intégrale en x de celle de y comme si c'était une constante car elle est constante dans y.
+
+domaine simple
+	*
+		soit f(x,y) si, x a pour domaine l'interval [a,b] et y à pour domaine [c,x] inclus dans [a,b]
+		alors on peut primitiver l'intégrale sur [c,x] puis calculer celle sur [a,b]
+	*
+		**(pas sûr)** soit f(x,y) si, x a pour domaine l'interval [a,b] et y à pour domaine [x,d] inclus dans [a,b]
+		alors on peut primitiver l'intégrale : on obtient :math:`\frac{d-primitive}{2}` puis calculer celle sur [a,b]
 
 -----
 

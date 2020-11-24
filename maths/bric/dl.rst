@@ -4,8 +4,8 @@
 Développements limités
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.0}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 17/11/2020}`
+| :math:`\color{grey}{Version \ 1.0.2}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 24/11/2020}`
 
 Développement limité
 	Un développement limité d'une fonction consiste à réécrire cette fonction
@@ -43,7 +43,7 @@ Développement limité
 Pour comparer f et g, on calcule :math:`limit = \lim_{x \rightarrow a} \frac{f(x)}{g(x)}` alors
 
 	* :code:`limit=0`, f petit et g grand donc :math:`f = o_{x \rightarrow a}\ (g)`
-	* :code:`limit=1`, équivalence donc :math:`f ~_{x \rightarrow a}\ g`
+	* :code:`limit=1`, équivalence donc :math:`f \sim_{x \rightarrow a}\ g`
 	* :code:`limit=R\{0,1}`, :math:`f \approx l * g` donc :math:`f = \Theta_{x \rightarrow a}\ (g)`
 	* :code:`limit=+inf ou -inf`, f grand g petit donc :math:`g = o_{x \rightarrow a}\ (f)`
 	* :code:`limit=none`, f et g pas comparables
