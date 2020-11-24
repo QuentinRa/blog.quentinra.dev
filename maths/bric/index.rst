@@ -4,6 +4,9 @@
 Bric à Brac
 ================================
 
+| :math:`\color{grey}{Version \ 1.3.3}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 24/11/2020}`
+
 Le bric à brac est comme son nom l'indique une réserve de trucs utiles, pas assez
 approfondis pour en faire un cours.
 
@@ -18,6 +21,7 @@ Les grandes thèmes sont :
 		4. Dérivées                              <derive>
 		5. Primitives et Intégrales              <integral>
 		6. Développements limités                <dl>
+		7. Nombres complexes                     <complex>
 
 Exercices
 *************

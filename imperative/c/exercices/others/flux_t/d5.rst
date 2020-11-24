@@ -11,5 +11,7 @@
 .. literalinclude:: flux2/censure.c
   :language: c
 
+:download:`rgb.txt <../../../../../assets/imperative/c/exercice/files/texte_raw.txt>`
+
 **Crédits**
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
