@@ -1,0 +1,29 @@
+====================================
+3. Graphe planaire
+====================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+Décrire un algorithme simple qui, connaissant un graphe planaire G, renvoie un entier k égal
+soit à :math:`\chi(G)`, soit à :math:`\chi(G)+1`.
+
+Donc on créé un algorithme qui renvoi le nombre chromatique minimum ou le nombre chromatique + 1
+pour un graphe planaire.
+
+Cours : un graphe planaire est coloriable en maximum 4 couleurs,
+donc on doit gérer les cas nombre chromatique égal à 0,1 et 2.
+
+	* nombre chromatique = 2 : bi-parti
+	* nombre chromatique = 1 : complet
+	* nombre chromatique = 0 : aucun sommet
+
+.. code:: none
+
+	si graphe chromatique, return 2
+	si graphe complet, return 1
+	si 0 sommets, return 0
+	sinon retourne 4
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

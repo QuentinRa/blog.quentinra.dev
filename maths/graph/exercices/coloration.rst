@@ -41,6 +41,11 @@ Soit G un graphe et k un entier strictement positif. Montrer que si G est k-colo
 existe une orientation des arêtes de G qui soit sans circuit et telle que tout chemin est de longueur
 inférieure ou égale à k.
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<coloration/d2>
+
 | :code:`[TAG] ENSIIE MTG TD8 2020 S1`
 
 3. Graphe planaire
@@ -48,6 +53,11 @@ inférieure ou égale à k.
 
 Décrire un algorithme simple qui, connaissant un graphe planaire G, renvoie un entier k égal
 soit à :math:`\chi(G)`, soit à :math:`\chi(G)+1`.
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<coloration/d3>
 
 | :code:`[TAG] ENSIIE MTG TD8 2020 S1`
 
