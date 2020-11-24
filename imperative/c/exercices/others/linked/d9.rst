@@ -14,7 +14,7 @@
 .. literalinclude:: linked2/crible.c
   :language: c
 
-:download:`setup.sql <maillons/maillon_int.c>`
+:download:`maillon_int.c <maillons/maillon_int.c>`
 
 **Crédits**
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

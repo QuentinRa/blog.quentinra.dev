@@ -10,21 +10,24 @@ Niveau débutant
 
 Testez la fonction suivante dans gdb :
 
-void exemple(unsigned n) {
-  if (n != 0) {
-    putchar('>');
-    exemple(n-1);
-    putchar('<');
-  } else
-    putchar('O');
-}
+.. code:: c
+
+		void exemple(unsigned n) {
+		 if (n != 0) {
+		  putchar('>');
+		  exemple(n-1);
+		  putchar('<');
+		} else
+		 putchar('O');
+		}
+
 Placez un point d'arrêt sur les trois lignes qui contiennent putchar, lancez le programme, et à chaque fois qu'il atteint un
 point d'arrêt utlisez la commande bt pour voir la pile des appels. Pouvez-vous identifier les phases ascendantes et descendantes ?
 
 .. toctree::
    :maxdepth: 1
 
-	Proposition de correction n°1			<linked/d1>
+	Proposition de correction n°1			<recursive/d1>
 
 | :code:`[TAG] IUTSF APL S1 TP24 2019`
 
@@ -43,7 +46,7 @@ fonction avec m valant 15.
 .. toctree::
    :maxdepth: 1
 
-	Proposition de correction n°1			<linked/d2>
+	Proposition de correction n°1			<recursive/d2>
 
 | :code:`[TAG] IUTSF APL S1 TP24 2019`
 
@@ -60,7 +63,7 @@ Employez la récursivité plutôt qu'une boucle.
 .. toctree::
    :maxdepth: 1
 
-	Proposition de correction n°1			<linked/d3>
+	Proposition de correction n°1			<recursive/d3>
 
 | :code:`[TAG] IUTSF APL S1 TP24 2019`
 

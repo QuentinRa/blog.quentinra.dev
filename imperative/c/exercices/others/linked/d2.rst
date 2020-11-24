@@ -14,7 +14,7 @@
 .. literalinclude:: linked1/circulation.c
   :language: c
 
-:download:`setup.sql <maillons/maillon_us.c>`
+:download:`maillon_us.c <maillons/maillon_us.c>`
 
 **Crédits**
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
