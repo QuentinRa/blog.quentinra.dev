@@ -4,8 +4,8 @@
 Théorie des graphes
 ================================
 
-| :math:`\color{grey}{Version \ 1.1.6}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 16/11/2020}`
+| :math:`\color{grey}{Version \ 1.2.7}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 24/11/2020}`
 
 Graphe
 	Un graphe (G) est un ensemble de sommets (E pour Edge)
@@ -502,6 +502,7 @@ Arbre couvrant de poids minimum (ACM)
 		Fermeture transitive            <exercices/transitive>
 		Étude des degrés                <exercices/voisins>
 		Graphes planaires               <exercices/planaire>
+		Coloration de graphe            <exercices/coloration>
 		Non triés                       <exercices/non_rank>
 
 8. Avancé

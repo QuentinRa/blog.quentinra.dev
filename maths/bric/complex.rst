@@ -7,8 +7,6 @@ Nombres complexes
 | :math:`\color{grey}{Version \ 1.0.0}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 24/11/2020}`
 
-équation de degré 2 : 2 solutions i et -i.
-
 1. Définition
 ------------------
 
