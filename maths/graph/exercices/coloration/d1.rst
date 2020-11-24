@@ -2,7 +2,95 @@
 1. Quelques bornes
 ====================================
 
-...
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+1. \
+	Quel est le nombre chromatique d’un cycle élémentaire ? D’un graphe biparti ?
+
+2. \
+	Soit G0 un graphe partiel de G. Quelle relation peut-on établir entre les nombres chromatiques
+	de ces graphes ? En déduire que si la taille d’une clique maximum de G est :math:`\omega(G)` alors
+	:math:`\chi(G) \ge \omega(G)`
+
+3. \
+	Soit G un graphe d’ordre n, avec :math:`\alpha(G)` la taille du plus grand stable de G. Prouver que :
+
+		* :math:`\chi(G) * \alpha(G) > n`
+		* :math:`\chi(G) + \alpha(G) \le n+1`
+
+4. \
+	Montrer qu’il existe des graphes qui sont 4-coloriables et qui ne sont pas planaires.
+
+Question 1
+-------------
+
+cycle élémentaire (n forcément supérieur à 3 car par propriété chaque sommet est de degré 2)
+
+	* si 2n = \|E\|, :math:`\gamma(G) = 2`
+	* si 2n+1 = \|E\|, :math:`\gamma(G) = 3` (testez avec 3 sommets en non-orienté)
+
+graphe biparti
+
+	*
+		deux couleurs : tous les sommets du premier ensemble d'une couleur et ceux du 2e d'une autre couleur
+		car les les sommets d'un même ensemble ne sont pas reliés entre-eux
+
+Question 2
+-------------
+
+G0 possède possiblement moins que G et contient moins d'arêtes donc son
+nombre chromatique sera inférieur ou égal à celui de G.
+
+Sachant qu'une clique maximum est un graphe partiel de G, alors
+le nombre chromatique de G sera forcément plus grand ou égal à la taille de la clique.
+
+Ou on sait que dans une clique tous les sommets sont liés donc tous de couleur différente
+donc un graphe contenant cette clique devra être colorié avec au moins autant de couleurs.
+
+Question 3
+-------------
+
+Tous les sommets d'un stable peuvent être de la même couleur car ils
+ne sont pas liés (par définition).
+
+... todo ici
+
+:math:`\chi(G) + \alpha(G) \le n+1`, alpha(G) vaut toujours 1 et chi(G) vaut au pire
+n (tous les sommets de couleurs différente) donc :math:`\chi(G) + \alpha(G) \le n+1`.
+
+Question 4
+-------------
+
+4 coloriable = coloriable en 4 couleurs.
+
+.. graphviz::
+
+	digraph {
+		size="10,8";
+  	rankdir="LR";
+		a [style=filled,color=red];
+		e [style=filled,color=red];
+		f [style=filled,color=red];
+		b [style=filled,color=yellow];
+		c [style=filled,color=green];
+		d [style=filled,color=blue];
+    a -> b;
+    b -> c;
+    a -> c;
+    d -> c;
+    c -> d;
+    c -> e;
+    e -> b;
+		a-> d;
+		b -> d;
+		b -> f;
+		f -> d;
+		f -> c;
+  }
+
+Sinon, vous pouvez prendre un graphe qui est 2-coloriable (au minimum)
+et qui peut donc être coloriés en 4 couleurs comme K3,3.
 
 **Crédits**
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

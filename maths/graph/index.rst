@@ -378,7 +378,7 @@ L'objectif est de colorier un graphe avec un minimum de couleurs
 tel que deux sommets incidents ont une couleur différente.
 
 nombre chromatique
-		On note :math:`\gamma(G)` (gamma) le nombre chromatique soit le nombre
+		On note :math:`\gamma(G)` (gamma) ou :math:`\chi(G)` (chi) le nombre chromatique soit le nombre
 		minimum de couleurs requises pour colorier le graphe.
 
 :math:`\gamma(G)` est difficile à trouver, mais on peut l'approcher
