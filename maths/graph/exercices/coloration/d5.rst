@@ -5,7 +5,278 @@
 .. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
    :alt: correction vérifiée
 
+Appliquez l’algorithme de reliement contraction sur le graphe suivant.
 
+.. image:: /assets/math/graph/exercice/coloration5.png
+
+Nos arêtes manquantes sont [c,b], [d,b], [e,b], [c,f].
+
+.. graphviz::
+
+	digraph {
+		size="10,8";
+  	rankdir="LR";
+    a -> b [arrowhead = none];
+    a -> c [arrowhead = none];
+    a -> d [arrowhead = none];
+    a -> e [arrowhead = none];
+    a -> f [arrowhead = none];
+    b -> f [arrowhead = none];
+    c -> d [arrowhead = none];
+    c -> e [arrowhead = none];
+    d -> f [arrowhead = none];
+    d -> e [arrowhead = none];
+    e -> f [arrowhead = none];
+  }
+
+**On travaille sur c,b**
+
+Contraction (terminé)
+
+.. graphviz::
+
+	digraph {
+		size="10,8";
+  	rankdir="LR";
+    a -> bc [arrowhead = none];
+    a -> d [arrowhead = none];
+    a -> e [arrowhead = none];
+    a -> f [arrowhead = none];
+    bc -> f [arrowhead = none];
+    bc -> d [arrowhead = none];
+    bc -> e [arrowhead = none];
+    d -> f [arrowhead = none];
+    d -> e [arrowhead = none];
+    e -> f [arrowhead = none];
+  }
+
+Reliement (1)
+
+.. graphviz::
+
+	digraph {
+		size="10,8";
+  	rankdir="LR";
+    a -> b [arrowhead = none];
+    a -> c [arrowhead = none];
+    a -> d [arrowhead = none];
+    a -> e [arrowhead = none];
+    a -> f [arrowhead = none];
+    b -> f [arrowhead = none];
+    b -> c [arrowhead = none];
+    c -> d [arrowhead = none];
+    c -> e [arrowhead = none];
+    d -> f [arrowhead = none];
+    d -> e [arrowhead = none];
+    e -> f [arrowhead = none];
+  }
+
+**On travaille sur d,b**
+
+On continue reliement (1) avec contraction (d,b) : contraction (2)
+
+.. graphviz::
+
+	digraph {
+		size="10,8";
+  	rankdir="LR";
+    a -> db [arrowhead = none];
+    a -> c [arrowhead = none];
+    a -> e [arrowhead = none];
+    a -> f [arrowhead = none];
+    db -> f [arrowhead = none];
+    db -> c [arrowhead = none];
+    c -> e [arrowhead = none];
+    db -> e [arrowhead = none];
+    e -> f [arrowhead = none];
+  }
+
+On continue reliement (1) avec reliement (d,b) : reliement (2)
+
+.. graphviz::
+
+	digraph {
+		size="10,8";
+  	rankdir="LR";
+    a -> b [arrowhead = none];
+    a -> c [arrowhead = none];
+    a -> d [arrowhead = none];
+    a -> e [arrowhead = none];
+    a -> f [arrowhead = none];
+    b -> f [arrowhead = none];
+    b -> c [arrowhead = none];
+    c -> d [arrowhead = none];
+    c -> e [arrowhead = none];
+    d -> f [arrowhead = none];
+    d -> e [arrowhead = none];
+    d -> b [arrowhead = none];
+    e -> f [arrowhead = none];
+  }
+
+**On travaille sur e,b**
+
+contraction (2) : arête présente donc rien à faire
+
+reliement (2), on contracte e,b : contraction (3)
+
+.. graphviz::
+
+	digraph {
+		size="10,8";
+  	rankdir="LR";
+    a -> eb [arrowhead = none];
+    a -> c [arrowhead = none];
+    a -> d [arrowhead = none];
+    a -> f [arrowhead = none];
+    eb -> f [arrowhead = none];
+    eb -> c [arrowhead = none];
+    c -> d [arrowhead = none];
+    d -> f [arrowhead = none];
+    d -> eb [arrowhead = none];
+  }
+
+reliement (2), on relie e,b : reliement (3)
+
+.. graphviz::
+
+	digraph {
+		size="10,8";
+  	rankdir="LR";
+    a -> b [arrowhead = none];
+    a -> c [arrowhead = none];
+    a -> d [arrowhead = none];
+    a -> e [arrowhead = none];
+    a -> f [arrowhead = none];
+    b -> f [arrowhead = none];
+    b -> c [arrowhead = none];
+    b -> e [arrowhead = none];
+    c -> d [arrowhead = none];
+    c -> e [arrowhead = none];
+    d -> f [arrowhead = none];
+    d -> e [arrowhead = none];
+    d -> b [arrowhead = none];
+    e -> f [arrowhead = none];
+  }
+
+**Enfin, on travaille sur c,f**
+
+contraction (2), on relie c,f : terminé
+
+.. graphviz::
+
+	digraph {
+		size="10,8";
+  	rankdir="LR";
+    a -> db [arrowhead = none];
+    a -> c [arrowhead = none];
+    a -> e [arrowhead = none];
+    a -> f [arrowhead = none];
+    db -> f [arrowhead = none];
+    db -> c [arrowhead = none];
+    c -> e [arrowhead = none];
+    db -> e [arrowhead = none];
+    e -> f [arrowhead = none];
+    c -> f [arrowhead = none];
+  }
+
+contraction (2), on contracte c,f : terminé
+
+.. graphviz::
+
+	digraph {
+		size="10,8";
+  	rankdir="LR";
+    a -> db [arrowhead = none];
+    a -> cf [arrowhead = none];
+    a -> e [arrowhead = none];
+    db -> cf [arrowhead = none];
+    cf -> e [arrowhead = none];
+    db -> e [arrowhead = none];
+  }
+
+contraction (3), on relie c,f : terminé
+
+.. graphviz::
+
+	digraph {
+		size="10,8";
+  	rankdir="LR";
+    a -> eb [arrowhead = none];
+    a -> c [arrowhead = none];
+    a -> d [arrowhead = none];
+    a -> f [arrowhead = none];
+    eb -> f [arrowhead = none];
+    eb -> c [arrowhead = none];
+    c -> d [arrowhead = none];
+    c -> f [arrowhead = none];
+    d -> f [arrowhead = none];
+    d -> eb [arrowhead = none];
+  }
+
+
+contraction (3), on contracte c,f : terminé
+
+.. graphviz::
+
+	digraph {
+		size="10,8";
+  	rankdir="LR";
+    a -> eb [arrowhead = none];
+    a -> cf [arrowhead = none];
+    a -> d [arrowhead = none];
+    eb -> cf [arrowhead = none];
+    cf -> d [arrowhead = none];
+    d -> eb [arrowhead = none];
+  }
+
+reliement (3), on relie c,f : terminé
+
+.. graphviz::
+
+	digraph {
+		size="10,8";
+  	rankdir="LR";
+    a -> b [arrowhead = none];
+    a -> c [arrowhead = none];
+    a -> d [arrowhead = none];
+    a -> e [arrowhead = none];
+    a -> f [arrowhead = none];
+    b -> f [arrowhead = none];
+    b -> c [arrowhead = none];
+    b -> e [arrowhead = none];
+    c -> d [arrowhead = none];
+    c -> e [arrowhead = none];
+    c -> f [arrowhead = none];
+    d -> f [arrowhead = none];
+    d -> e [arrowhead = none];
+    d -> b [arrowhead = none];
+    e -> f [arrowhead = none];
+  }
+
+reliement (3), on contracte c,f : terminé
+
+.. graphviz::
+
+	digraph {
+		size="10,8";
+  	rankdir="LR";
+    a -> b [arrowhead = none];
+    a -> cf [arrowhead = none];
+    a -> d [arrowhead = none];
+    a -> e [arrowhead = none];
+    b -> cf [arrowhead = none];
+    b -> e [arrowhead = none];
+    cf -> d [arrowhead = none];
+    cf -> e [arrowhead = none];
+    d -> e [arrowhead = none];
+    d -> b [arrowhead = none];
+    e -> cf [arrowhead = none];
+  }
+
+Les plus petites cliques sont de taille 4. On a deux solution,
+
+	* rouge: A,D. vert: E,B. bleu: C,F.
+	* rouge: A,E. vert: D,B. bleu: C,F.
 
 **Crédits**
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

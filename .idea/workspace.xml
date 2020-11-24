@@ -26,7 +26,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/coloration.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/coloration.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/coloration/d5.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/coloration/d5.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +185,7 @@
       <workItem from="1606152833917" duration="7162000" />
       <workItem from="1606160987477" duration="75000" />
       <workItem from="1606170432496" duration="94000" />
-      <workItem from="1606205331971" duration="20029000" />
+      <workItem from="1606205331971" duration="23812000" />
     </task>
     <servers />
   </component>

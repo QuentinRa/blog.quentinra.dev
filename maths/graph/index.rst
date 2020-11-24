@@ -413,8 +413,8 @@ Algorithme Reliement-contraction
 
 	.. code::
 
-		1: Jusqu'à ce que toute nos graphes soient des cliques
-			2: On créée deux sous-graphe :
+		1: Jusqu'à ce que toute nos sous-graphes soient des cliques
+			2: On créée deux sous-graphe (sur une des arrêtes manquantes) :
 				- un obtenu par reliement
 				- un obtenu par contraction
 
