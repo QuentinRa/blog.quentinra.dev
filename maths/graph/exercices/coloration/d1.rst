@@ -54,10 +54,14 @@ Question 3
 Tous les sommets d'un stable peuvent être de la même couleur car ils
 ne sont pas liés (par définition).
 
-... todo ici
+Chaque couleur forme un ensemble stable. Le nombre chromatique est le nombre de couleurs
+donc le nombre d'ensembles stables. Sachant que alpha est la taille du plus grand ensemble
+stable, alors les autres sont inférieur ou égaux en nombre de sommets. Donc
+nombre d'ensembles stables * taille du plus grand stable est toujours plus grand ou égal
+au nombre de sommets.
 
-:math:`\chi(G) + \alpha(G) \le n+1`, alpha(G) vaut toujours 1 et chi(G) vaut au pire
-n (tous les sommets de couleurs différente) donc :math:`\chi(G) + \alpha(G) \le n+1`.
+:math:`\chi(G) + \alpha(G) \le n+1`, alpha(G) vaut toujours 1 (1 couleur pour le stable) et chi(G) vaut au pire
+n (tous les sommets de couleurs différentes) donc :math:`\chi(G) + \alpha(G) \le n+1`.
 
 Question 4
 -------------

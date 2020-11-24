@@ -9,7 +9,14 @@ Soit G un graphe et k un entier strictement positif. Montrer que si G est k-colo
 existe une orientation des arêtes de G qui soit sans circuit et telle que tout chemin est de longueur
 inférieure ou égale à k.
 
-...
+On numérote tous les sommet de 1 à k et on met une arête
+d'un sommet i à un sommet j seulement si i < j.
+
+Il n'y a pas de circuit car tous les sommets sont ordonnées et vont de i vers j donc
+il n'y a aucun arc de j vers i donc pas de circuit possible.
+
+Sachant qu'on a mis tous nos sommets de 1 à k, il n'existe pas de chemin plus grand
+car on a utilsé tous nos sommets et qu'il n'y a pas de circuit.
 
 **Crédits**
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
