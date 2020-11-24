@@ -75,6 +75,11 @@ soit à :math:`\chi(G)`, soit à :math:`\chi(G)+1`.
 
 .. image:: /assets/math/graph/exercice/coloration4.png
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<coloration/d4>
+
 | :code:`[TAG] ENSIIE MTG TD8 2020 S1`
 
 5. Reliement contraction
@@ -83,6 +88,11 @@ soit à :math:`\chi(G)`, soit à :math:`\chi(G)+1`.
 Appliquez l’algorithme de reliement contraction sur le graphe suivant.
 
 .. image:: /assets/math/graph/exercice/coloration5.png
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<coloration/d5>
 
 | :code:`[TAG] ENSIIE MTG TD8 2020 S1`
 
