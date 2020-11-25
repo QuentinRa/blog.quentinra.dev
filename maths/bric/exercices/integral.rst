@@ -110,6 +110,26 @@ Calculez les intégrales suivantes
 
 	Proposition de correction n°1			<integral/s1>
 
+Un calcul par intégrales simples
+---------------------------------
+
+On considère la fonction f(x, y) = :math:`\frac{x^2-y^2}{(x^2+y^2)^2}`
+
+1. Calculer la dérivée de g(x, y) = :math:`\frac{y}{x^2+y^2}` par rapport à y.
+
+2. En déduire la valeur de :math:`\int_{x=0}^1 ( \int_{y=0}^1 f(x,y) dy) dx`.
+
+3. Calculer maintenant la valeur de :math:`\int_{y=0}^1 ( \int_{y=0}^1 f(x,y) dx) dy`.
+
+4. Que pouvez-vous dire sur la fonction f ?
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<integral/s2>
+
+| :code:`[TAG] ENSIIE MOM TD7 2020 S1`
+
 Niveau avancé
 ***********************
 

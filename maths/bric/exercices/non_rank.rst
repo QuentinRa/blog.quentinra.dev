@@ -33,6 +33,37 @@ asymptote en :math:`+\infty` ainsi que la position de la courbe par rapport à c
 
 | :code:`[TAG] ENSIIE MOM TD5 2020 S1`
 
+Fonction :math:`\Gamma`
+-----------------------------
+
+On considère maintenant la fonction :math:`\Gamma : \mathbb{R}^*_+ \rightarrow \mathbb{R}`,
+ :math:`x \rightarrow \int_{0}^{+\infty} t^{x-1}e^{-t}dt`.
+
+1. Calculer :math:`\Gamma(1)` et :math:`\Gamma(2)`.
+
+2. Montrer que :math:`\Gamma(x+1) = x \Gamma(x)`
+
+3. En déduire une formule pour :math:`\Gamma(n),\ \forall{n \in \mathbb{N}^*}` [#2]_
+
+4. Que pouvez-vous en déduire sur la courbe de la fonction :math:`\Gamma` ? Tracer cette courbe
+
+.. [#2] On admet que la dérivée :math:`k^n` de :math:`\Gamma` est :math:`\Gamma^{(k)}(x) = \int_{0}^{+\infty} (\ln t)^kt^{x-1}e^{-t}dt`
+
+
+Intégrales multiples
+--------------------------------
+
+Calculer la valeur des intégrales multiples suivantes.
+
+.. math::
+
+	1. \int \int_{D} \frac{dx dy}{1 + x^2 + y^2} \ \ \ \ \ \ \text{où D = {(x, y) $\in \mathbb{R}^2$
+	| $x^2+y^2 \le 1$}.} \\
+
+	2.
+	\int \int_{D} xy dx dy \ \ \ \ \ \ \text{ sur D =
+	$\big\{$ (x, y) $\mathbb{R}^2$ | x > 0, y > 0 et $(\frac{x}{a})^2+(\frac{y}{b})^2 \le 1$$\big\}$ .}
+
 |
 
 -----
