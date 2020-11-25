@@ -36,37 +36,27 @@ asymptote en :math:`+\infty` ainsi que la position de la courbe par rapport à c
 Fonction :math:`\Gamma`
 -----------------------------
 
+On considère d'abord la fonction :math:`\Gamma : \mathbb{R}^*_+ \rightarrow \mathbb{R}`,
+ :math:`t \rightarrow t^{x-1}e^{-t}`.
+
+1. Donner un équivalent simple de :math:`f_x` quand t tend vers :math:`0^+`.
+
+2. Montrer que :math:`f_x(t) = o_{t \rightarrow +\infty} (t^{-2})`
+
+3. À quelle(s) condition(s) la fonction :math:`f_x` est-elle intégrable à la fois en :math:`0` et en :math:`+\infty`?
+
 On considère maintenant la fonction :math:`\Gamma : \mathbb{R}^*_+ \rightarrow \mathbb{R}`,
  :math:`x \rightarrow \int_{0}^{+\infty} t^{x-1}e^{-t}dt`.
 
-1. Calculer :math:`\Gamma(1)` et :math:`\Gamma(2)`.
+4. Calculer :math:`\Gamma(1)` et :math:`\Gamma(2)`.
 
-2. Montrer que :math:`\Gamma(x+1) = x \Gamma(x)`
+5. Montrer que :math:`\Gamma(x+1) = x \Gamma(x)`
 
-3. En déduire une formule pour :math:`\Gamma(n),\ \forall{n \in \mathbb{N}^*}` [#2]_
+6. En déduire une formule pour :math:`\Gamma(n),\ \forall{n \in \mathbb{N}^*}` [#2]_
 
-4. Que pouvez-vous en déduire sur la courbe de la fonction :math:`\Gamma` ? Tracer cette courbe
+7. Que pouvez-vous en déduire sur la courbe de la fonction :math:`\Gamma` ? Tracer cette courbe
 
 .. [#2] On admet que la dérivée :math:`k^n` de :math:`\Gamma` est :math:`\Gamma^{(k)}(x) = \int_{0}^{+\infty} (\ln t)^kt^{x-1}e^{-t}dt`
-
-
-Intégrales multiples
---------------------------------
-
-Calculer la valeur des intégrales multiples suivantes.
-
-.. math::
-
-	1. \int \int_{D} \frac{dx dy}{1 + x^2 + y^2} \ \ \ \ \ \ \text{où D = {(x, y) $\in \mathbb{R}^2$
-	| $x^2+y^2 \le 1$}.} \\
-
-	2.
-	\int \int_{D} xy dx dy \ \ \ \ \ \ \text{ sur D =
-	$\big\{$ (x, y) $\mathbb{R}^2$ | x > 0, y > 0 et $(\frac{x}{a})^2+(\frac{y}{b})^2 \le 1$$\big\}$ .} \\
-
-	3. \int\int_D \frac{dxdy}{(x+y)^3}\ \ \ \ \text{où  D = \{{(x, y) $\in R^2$ | 1 < x, 1 < y et x + y < 3}\}.} \\
-
-	4. \int\int_D x\ dxdy\ \ \ \text{où  D = \{{(x, y) $\in R^2$ | 0 < x < y et $x^2+y^2 \le 1$}\}.}
 
 |
 

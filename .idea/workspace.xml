@@ -27,10 +27,7 @@
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral/d1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral/d2.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral/d3.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral/s1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral/s2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral/s2.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/bric/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/non_rank.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -190,7 +187,7 @@
       <workItem from="1606160987477" duration="75000" />
       <workItem from="1606170432496" duration="94000" />
       <workItem from="1606205331971" duration="36519000" />
-      <workItem from="1606290594433" duration="4275000" />
+      <workItem from="1606290594433" duration="8178000" />
     </task>
     <servers />
   </component>

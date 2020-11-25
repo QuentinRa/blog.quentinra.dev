@@ -67,6 +67,8 @@ On remarque que si on dérive en x ou en y, on n'obtient pas le même résultat.
 Le théorème de Fubini demande a ce que f soit continue donc
 c'est lié au fait que si x et y valent 0 alors la fonction n'est pas définie.
 
+Donc f n'est pas continue car le théorème de Fubini ne s'applique pas.
+
 **Crédits**
 	* Christophe MOUILLERON (enseignant à l'ENSIIE)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

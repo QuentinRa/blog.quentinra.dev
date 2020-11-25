@@ -1,0 +1,64 @@
+================================
+3. Intégrales multiples
+================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+Calculer la valeur des intégrales multiples suivantes.
+
+.. math::
+
+	1. \int \int_{D} \frac{dx dy}{1 + x^2 + y^2} \ \ \ \ \ \ \text{où D = {(x, y) $\in \mathbb{R}^2$
+	| $x^2+y^2 \le 1$}.} \\
+
+	2.
+	\int \int_{D} xy dx dy \ \ \ \ \ \ \text{ sur D =
+	$\big\{$ (x, y) $\mathbb{R}^2$ | x > 0, y > 0 et $(\frac{x}{a})^2+(\frac{y}{b})^2 \le 1$$\big\}$ .} \\
+
+	3. \int\int_D \frac{dxdy}{(x+y)^3}\ \ \ \ \text{où  D = \{{(x, y) $\in R^2$ | 1 < x, 1 < y et x + y < 3}\}.} \\
+
+	4. \int\int_D x\ dxdy\ \ \ \text{où  D = \{{(x, y) $\in R^2$ | 0 < x < y et $x^2+y^2 \le 1$}\}.}
+
+Question 1
+------------------
+
+On remarque que :math:`r = \sqrt{x+y} \Leftrightarrow r^2 = x^2 + y^2` donc on va pouvoir
+remplacer par r.
+
+r = rayon d'un cercle donc si vous tracez votre cercle trigonométrique, les valeurs du rayon vont
+de 0 (centre) à 1 (bordure du cercle).
+
+On doit également calculer theta (l'angle) pour faire l'intégrale, donc les valeurs possibles de l'angle
+et la réponse est :math:`]-\pi,\pi[` ou :math:`[0,2\pi[`, on prends :math:`]-\pi,\pi[`.
+
+.. math::
+
+		\int_{r=0}^{1} \int_{\theta = -\pi}^{\pi}  \frac{1}{1+r^2} {\color{red} rd\theta{}dr}
+		\Leftrightarrow
+		(\int_{r=0}^{1} \frac{1}{1+r^2} dr) (\int_{\theta = -\pi}^{\pi} d\theta)
+		\Leftrightarrow \\
+		\begin{bmatrix}\frac{1}{2}\ln{1+r^2}\end{bmatrix}_{r=0}^{1}
+		* \begin{bmatrix}\theta\end{bmatrix}_{\theta = -\pi}^{\pi}
+		= \frac{1}{2}\ln{2} * 2\pi = \pi \ln(2)
+
+Note: :math:`{\color{red} rd\theta{}dr}` vient du cours ! déterminant (=r) * :math:`d\theta{}dr`.
+
+Question 2
+------------------
+
+...
+
+Question 3
+------------------
+
+...
+
+Question 4
+------------------
+
+...
+
+**Crédits**
+	* Christophe MOUILLERON (enseignant à l'ENSIIE)
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

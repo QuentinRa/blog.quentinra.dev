@@ -130,6 +130,31 @@ On considère la fonction f(x, y) = :math:`\frac{x^2-y^2}{(x^2+y^2)^2}`
 
 | :code:`[TAG] ENSIIE MOM TD7 2020 S1`
 
+3. Intégrales multiples
+--------------------------------
+
+Calculer la valeur des intégrales multiples suivantes.
+
+.. math::
+
+	1. \int \int_{D} \frac{dx dy}{1 + x^2 + y^2} \ \ \ \ \ \ \text{où D = {(x, y) $\in \mathbb{R}^2$
+	| $x^2+y^2 \le 1$}.} \\
+
+	2.
+	\int \int_{D} xy dx dy \ \ \ \ \ \ \text{ sur D =
+	$\big\{$ (x, y) $\mathbb{R}^2$ | x > 0, y > 0 et $(\frac{x}{a})^2+(\frac{y}{b})^2 \le 1$$\big\}$ .} \\
+
+	3. \int\int_D \frac{dxdy}{(x+y)^3}\ \ \ \ \text{où  D = \{{(x, y) $\in R^2$ | 1 < x, 1 < y et x + y < 3}\}.} \\
+
+	4. \int\int_D x\ dxdy\ \ \ \text{où  D = \{{(x, y) $\in R^2$ | 0 < x < y et $x^2+y^2 \le 1$}\}.}
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<integral/s3>
+
+| :code:`[TAG] ENSIIE MOM TD7 2020 S1`
+
 Niveau avancé
 ***********************
 
