@@ -32,7 +32,7 @@ ordre inverse.
 
 Exemple de session :
 
-.. code:: c
+.. code:: bash
 
 		bob@box:~$ ./a.out laval denis luc radar
 		laval est un palindrome,
@@ -114,6 +114,29 @@ l'affiche ensuite en une colonne de texte justifié large de 50 caractères. Exe
 	Proposition de correction n°1			<malloc/d5>
 
 | :code:`[TAG] IUTSF APL S1 TP16 2019`
+
+6. Allocations
+-------------------
+
+1. \
+	Proposez une fonction qui sur la donnée de deux double, et seulement deux,
+	retourne un pointeur sur un double de la valeur maximale des deux paramètres.
+
+2. \
+	Proposez une fonction qui sur la donnée de deux tableaux ta, tb de même taille size
+	(donc trois paramètres) retourne un pointeur sur leur vecteur de différences.
+
+3. \
+	On souhaite obtenir un tableau trié contenant les mêmes valeurs qu'un tableau
+	t passé en paramètre sans modifier ce dernier. Proposez une fonction qui retourne
+	un pointeur sur un tel tableau trié.
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<malloc/d6>
+
+| :code:`[TAG] ENSIIE IPI S1 TP5 2020`
 
 Niveau supérieur
 ***********************

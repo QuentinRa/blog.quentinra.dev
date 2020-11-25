@@ -26,14 +26,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/plsql/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/plsql/oracle.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/oracle.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/plsql/oracle/cursor.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/plsql/oracle/declare.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/plsql/oracle/exceptions.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/plsql/oracle/structures.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/plsql/oracle/variables.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/plsql/postgre.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/postgre.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/others/malloc.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/others/malloc.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,26 +55,26 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/db/plsql/plsql" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/imperative/c/exercices/others/malloc" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="proofread" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\malloc" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\malloc\malloc2" />
+      <recent name="C:\Users\quent\Documents\texas-res\db\plsql\plsql" />
+      <recent name="C:\Users\quent\Documents\texas-res\db\plsql\postgre" />
+      <recent name="C:\Users\quent\Documents\texas-res\db\plsql" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\imperative\c\exercice\files" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\structure\structure1" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\imperative\c\exercice" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\malloc\malloc1" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\db\plsql\plsql" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\plsql\postgre" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\plsql" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\integral" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\coloration" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -194,7 +187,8 @@
       <workItem from="1606205331971" duration="36519000" />
       <workItem from="1606290594433" duration="11222000" />
       <workItem from="1606323626730" duration="4452000" />
-      <workItem from="1606329073361" duration="8899000" />
+      <workItem from="1606329073361" duration="8947000" />
+      <workItem from="1606342835695" duration="210000" />
     </task>
     <servers />
   </component>
