@@ -4,8 +4,8 @@
 Modélisation relationnelle
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.5}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 18/11/2020}`
+| :math:`\color{grey}{Version \ 1.1.6}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 25/11/2020}`
 
 La modélisation relationnelle à pour objectif depuis ce que veut un client,
 d'obtenir une base de données la plus proche de ce qui réponds à son besoin.
@@ -151,7 +151,7 @@ aucun
 -----
 
 **Crédits**
-	* Pierre VALARCHER (enseignant à mon IUT)
+	* Pierre VALARCHER (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Marie SZAFRANSKI (enseignant à l'ENSIIE)
 	* Julien FOREST (enseignant à l'ENSIIE)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

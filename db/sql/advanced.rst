@@ -4,8 +4,8 @@
 SQL (Structured Query Language) - avancé
 ==========================================
 
-| :math:`\color{grey}{Version \ 1.1.3}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 20/11/2020}`
+| :math:`\color{grey}{Version \ 1.1.4}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 25/11/2020}`
 
 .. danger::
 
@@ -228,8 +228,8 @@ On parle de transaction pour caractériser l'ensemble des ordres DML suivis d'un
 -----
 
 **Crédits**
-	* Régine LALEAU (enseignant à mon IUT)
-	* Didier DIAZ (enseignant à mon IUT)
+	* Régine LALEAU (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Didier DIAZ (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**

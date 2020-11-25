@@ -10,216 +10,78 @@ PL/SQL (Procedural Language)
 Le PL/SQL (PL pour Procedural Language) est un langage complémentaire au SQL
 qui ajoute des fonctions appelés procédures, ainsi que des triggers (=déclencheurs).
 
-.. danger::
+On vous propose deux cours dans la continuité des concepts généraux proposés
+ici pour apprendre l'implémentation dans les SGBD (syntaxe différente)
 
-	Par défaut, la sortie standard n'est pas affichée, donc vous ne verrez pas les print/echo
-	donc les affichages de votre procédure. Utilisez la commande suivante
-	pour l'activer : :code:`set serveroutput on`.
+.. toctree::
+	 :maxdepth: 1
 
-	Vous pouvez appeler show erreurs pour avoir le détails des erreurs : :code:`show errors`.
+		 PL/SQL sous Oracle             <oracle>
+		 PL/SQL sous Postgre            <postgre>
 
-1. Procédures
-================================
+1. Vocabulaire
+======================
 
-Voici le format général d'une procédure :
+DML (rappel)
+	Ordres SELECT, INSERT, UPDATE et DELETE donc les ordres qui manipulent les données.
 
-.. code:: sql
+Les principales utilités du PL/SQL est de
 
-		CREATE OR REPLACE PROCEDURE
-		nomProcedure(nom1 type,nom2 type) IS
-		-- declaration des variables
-		BEGIN
-		-- instructions
+	* créer des **fonctions** appelées **procédures**
+		* pour des ordres souvent exécutés
+		* pour des ordres complexes
+		* pour simplifier/faciliter la manipulation de données
+	* créer des **déclencheur** ou **trigger**, c'est-à-dire du code exécuté à chaque ordre DML
+		* pour vérifier l'intégrité des données
+		* si vous avez des tuples qui ont des attributs dérivés calculés dans la base
 
-		-- COMMIT ou ROLLBACK
-		EXCEPTIONS
-		--traitement des erreurs
-		END NomProcedure;
-		/ -- compiler
+Le symbol pour concaténer deux chaines est :code:`||`.
 
-Explications :
+2. Les procédures
+=========================
 
-	* :code:`nomProcedure(nom1 type,nom2 type)` est la signature de votre procédure donc le nom et les arguments
-	* :code:`-- declaration des variables` dans cet espace, vous devez déclarer toutes vos variables (voir partie correspondante)
-	* :code:`-- instructions` ici vous écrivez votre code
-	*
-		:code:`-- COMMIT ou ROLLBACK` il est recommandé ou obligatoire (si insert) de COMMIT (sauvegarder les modifications
-		faites) ou ROLLBACK (annuler les modifications faites).
-	* :code:`EXCEPTIONS`, partie facultative permettant de traiter de possibles erreurs
+Cette partie est différente selon votre SGBD, l'idée est
 
-Vous appelez ensuite votre procédure comme suit :
+	* une partie [DECLARE] pour déclarer les variables
+	* une partie [BEGIN] pour le code
+	* une partie [EXCEPTION] pour les erreurs appelés exceptions
+	* END; pour indiquer que la déclaration du bloc est finie.
 
-.. code:: sql
+Quelques notes
+	* les noms des variables commencent généralement (faites le !) par :code:`v` pour variable
+	* on peut stocker les résultats des requêtes qui retournent une ligne dans une variable (une par attribut)
+	* si une requête retourne plusieurs lignes, on utilise un **curseur**
 
-		execute nomProcedure(arguments); -- ou execute nomProcedure
-		--ou
-		call nomProcedure(arguments); -- appelle
-		-- ou
-		begin
-			nomProcedure(arguments);
-			--ou
-			nomProcedure
-		end;
-		/
+COMMIT et ROLLBACK
+	Il s'agit de deux instructions ULTRA IMPORTANTES donc a connaître.
 
-2. Déclaration des variables
-================================
+	Lorsque vous faites une ordre DML, le SGBD ne sauvegarde pas automatiquement les changements sur le serveur.
+	Si vous êtes sûr de vos changements, allez vous utiliser la requête SQL :code:`COMMIT;` sinon vous pouvez annuler
+	vos modifications locales avec :code:`ROLLBACK`.
 
-On déclare une variable avant le bloc begin. La syntaxe
-est la suivante :code:`v_nom [CONSTANT] type [[NOT NULL] := expression ]` (entre crochets = facultatif).
+Curseur
+	Lorsqu'une requête retourne plusieurs lignes, on utilise un curseur.
+	Un curseur va pointer sur la ligne actuellement lu.
 
-En gros, vous avez avoir deux utilités aux variables :
+	Ses attributs sont les attributs du select et leurs valeurs sont celles de la ligne actuellement
+	lue.
 
-	* stocker une valeur (par exemple un 5, ...)
-	*
-		récupérer le résultat d'une requête **qui ne retourne qu'une seule ligne**, si vous voulez
-		récupérer le résultat d'un :code:`select *`, alors il vous faudra autant de variables qu'il
-		y a de lignes, on utilise donc un curseur pour éviter ça.
+	Vous pouvez avancer d'une ligne mais généralement pas reculer.
 
-.. code:: sql
+	Si une curseur est vide ou il y a un problème alors aucune EXCEPTION n'est levée. Vous devez donc
+	faire un IF et vérifier s'il y a un problème en regardant les propriétés du curseur (nombre de lignes, ...).
 
-		--on met un v devant le nom pour se rappeler que c'est une variable locale
-		-- exemple avec une constante
-		v_constante CONSTANT integer := 5;
-		-- exemple avec une variable
-		v_variable real NOT NULL;
-
-Il est possible/recommandé de demander aux variables de prendre le type d'un attribut,
-plutôt que de leur donner directement le type (donc vous laissez %type).
-
-.. code::sql
-
-		v_nom table.attribut%type ; -- d'une colonne (attribut)
-		--ou
-		v_nom v_variable%type ; -- d'une autre variable
-
-3. Structures basiques
-=======================
-
-Voici toutes les structures en PL/SQL.
-
-.. code:: sql
-
-		-- if
-		if condition THEN [ELSIF condition THEN]
-			[ELSE condition THEN]
-		END IF;
-
-		-- do ... while
-		LOOP ... EXIT WHEN condition END LOOP;
-
-		-- for i in seq ...
-		FOR i IN min AND max LOOP ... END LOOP;
-
-		-- while
-		WHILE condition LOOP ... END LOOP;
-
-		-- if(){} else if(){} ...
-		CASE variable WHEN valeur THEN instruction
-			WHEN valeur THEN instruction
-			ELSE instruction
-		END CASE;
-
-Pour afficher quelque chose, on utilise
-
-.. code:: sql
-
-	dbms_output.put_line('texte');
-
-.. note::
-
-	Le symbol pour concaténer deux chaines est :code:`||`.
-
-Pour récupérer les résultats des requêtes retournant un nombre fixe
-de lignes, vous allez utilise select into.
-
-.. code:: sql
-
-		Select ... into v_var1 v_var2 ... -- autant de variables que de résultats du select
-		from ... ;
-
-		-- select count(*) in v_count from ... va stocker le count(*) dans la variable v_count (qui a été déclarée)
-
-4. Curseurs et requêtes a nombre de lignes variables
-================================================================
-
-Lorsque le nombre de résultats n'est pas fixe (+ d'une ligne),
-on utilise un curseur (=structure).
-
-Dans la partie de déclarations de variables
-
-.. code:: sql
-
-		--déclaration (donc dans la partie déclarations)
-		CURSOR nom_curseur IS
-		--requête du curseur
-		SELECT attribut, attribut ... FROM relation ;
-		--déclaration des variables du curseur dans lesquelles les attributs seront conservés
-		v_nom type ;
-		...
-
-Puis dans votre partie d'instructions :
-
-.. code:: sql
-
-		--ouvrir
-		OPEN nom_curseur;
-
-		--lecture
-		FETCH nom_curseur INTO variable, variable, ...;
-		-- chaque lecture va déplacer le curseur de lecture et donc la prochaine lecture lira la ligne suivante.
-
-		--fermer
-		CLOSE nom_curseur;
-
-Les exceptions ne marchent pas sur les curseurs, vous devez utiliser des
-if et vérifier les propriétés du curseurs et gérer tout ça vous même.
-
-.. code:: sql
-
-		-- Renvoi NULL si aucun appel a Fetch, TRUE si Fetch a réussi à retourner une ligne ou le cas échéant FALSE
-		nom_curseur%FOUND
-
-		-- Renvoi NULL si aucun appel a Fetch, FALSE si Fetch a réussi à retourner une ligne ou le cas échéant TRUE.
-		nom_curseur%NOTFOUND
-
-		-- Retourne TRUE si le curseur est ouvert sinon FALSE
-		nom_curseur%ISOPEN
-
-		-- Renvoi le nombre de lignes Equivalent du NO_DATA_FOUND si renvoi 0
-		nom_curseur%ROWCOUNT
-
-5. Exceptions
-================================
-
-Vous mettez vos exceptions dans le bloc EXCEPTIONS.
-
-.. code:: sql
-
-		-- Pas de données trouvés
-		WHEN NO_DATA_FOUND THEN instructions END
-
-		-- Division par zero
-		WHEN ZERO_DIVIDE_THEN THEN instructions END
-
-		--	Requête retourne plus d’éléments que on n’as déclaré de variables dans le into (voir curseurs)
-		WHEN TOO_MANY_ROWS THEN instructions END
-
-		--	Autres
-		WHEN OTHERS THEN instructions END
-
-6. Triggers/Déclencheurs
+3. Triggers/Déclencheurs
 ===========================
 
-.. note::
-
-	Cette partie n'est pas encore disponible
+...
 
 -----
 
 **Crédits**
+	* Marie SZAFRANSKI (enseignant à l'ENSIIE)
 	* Didier DIAZ (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* aucune
+	* https://www.tutorialspoint.com/plsql/index.htm

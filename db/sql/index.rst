@@ -4,8 +4,8 @@
 SQL (Structured Query Language)
 ================================
 
-| :math:`\color{grey}{Version \ 1.3.6}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 20/11/2020}`
+| :math:`\color{grey}{Version \ 1.3.7}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 25/11/2020}`
 
 Le SQL est un language permettant d'accéder à une base de données (BD ou DB).
 
@@ -366,8 +366,8 @@ Dans la continuité du cours
 -----
 
 **Crédits**
-	* Régine LALEAU (enseignant à mon IUT)
-	* Didier DIAZ (enseignant à mon IUT)
+	* Régine LALEAU (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Didier DIAZ (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Marie SZAFRANSKI (enseignant à l'ENSIIE)
 	* Julien FOREST (enseignant à l'ENSIIE)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
