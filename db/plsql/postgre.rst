@@ -1,13 +1,13 @@
 .. _plsql_postgre:
 
-======================================
-PL/(pg)SQL (Procedural Language)
-======================================
+=========================================
+Particularités de Postgre pour le PL/SQL
+=========================================
 
 | :math:`\color{grey}{Version \ 1.0.0}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 25/11/2020}`
 
-1. Vocabulaire
+1. Général
 ======================
 
 On utilise RAISE NOTICE pour afficher un message
@@ -15,20 +15,6 @@ On utilise RAISE NOTICE pour afficher un message
 .. code:: sql
 
 	RAISE NOTICE 'texte';
-
-2. Les procédures
-=========================
-
-.. note::
-
-	Cette partie n'est pas encore disponible
-
-3. Triggers/Déclencheurs
-===========================
-
-.. note::
-
-	Cette partie n'est pas encore disponible
 
 -----
 

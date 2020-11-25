@@ -12,16 +12,21 @@ Voici toutes les structures en PL/SQL.
 		END IF;
 
 		-- do ... while
-		LOOP ... EXIT WHEN condition END LOOP;
+		LOOP ...
+			EXIT WHEN condition
+		END LOOP;
 
 		-- for i in seq ...
 		FOR i IN min AND max LOOP ... END LOOP;
+		-- inverse
+		FOR i IN REVERSE min AND max LOOP ... END LOOP;
 
 		-- while
 		WHILE condition LOOP ... END LOOP;
 
 		-- if(){} else if(){} ...
-		CASE variable WHEN valeur THEN instruction
+		CASE variable
+			WHEN valeur THEN instruction
 			WHEN valeur THEN instruction
 			ELSE instruction
 		END CASE;

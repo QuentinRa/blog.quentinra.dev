@@ -37,41 +37,30 @@ Les principales utilités du PL/SQL est de
 
 Le symbol pour concaténer deux chaines est :code:`||`.
 
-2. Les procédures
-=========================
+2. La syntaxe des fonctions et procédures
+=============================================
 
-Cette partie est différente selon votre SGBD, l'idée est
+.. toctree::
+	 :maxdepth: 1
 
-	* une partie [DECLARE] pour déclarer les variables
-	* une partie [BEGIN] pour le code
-	* une partie [EXCEPTION] pour les erreurs appelés exceptions
-	* END; pour indiquer que la déclaration du bloc est finie.
+	 Déclaration d'un bloc de code       <plsql/declare>
+	 Déclaration des variables           <plsql/variables>
+	 Structures (IF, WHILE, ...)         <plsql/structures>
+	 Déclaration des curseurs            <plsql/cursor>
+	 Déclaration des curseurs (non liés) <plsql/n_cursor>
+	 Capturer des exceptions             <plsql/exceptions>
 
-Quelques notes
-	* les noms des variables commencent généralement (faites le !) par :code:`v` pour variable
-	* on peut stocker les résultats des requêtes qui retournent une ligne dans une variable (une par attribut)
-	* si une requête retourne plusieurs lignes, on utilise un **curseur**
+3. Fonctions
+===========================
 
-COMMIT et ROLLBACK
-	Il s'agit de deux instructions ULTRA IMPORTANTES donc a connaître.
+Une fonction est qui ne retourne généralement rien et a pour but de réaliser
+une action est appelé procédure et est crée différemment sous oracle.
 
-	Lorsque vous faites une ordre DML, le SGBD ne sauvegarde pas automatiquement les changements sur le serveur.
-	Si vous êtes sûr de vos changements, allez vous utiliser la requête SQL :code:`COMMIT;` sinon vous pouvez annuler
-	vos modifications locales avec :code:`ROLLBACK`.
+.. toctree::
 
-Curseur
-	Lorsqu'une requête retourne plusieurs lignes, on utilise un curseur.
-	Un curseur va pointer sur la ligne actuellement lu.
+	Déclaration de fonctions             <plsql/fonctions>
 
-	Ses attributs sont les attributs du select et leurs valeurs sont celles de la ligne actuellement
-	lue.
-
-	Vous pouvez avancer d'une ligne mais généralement pas reculer.
-
-	Si une curseur est vide ou il y a un problème alors aucune EXCEPTION n'est levée. Vous devez donc
-	faire un IF et vérifier s'il y a un problème en regardant les propriétés du curseur (nombre de lignes, ...).
-
-3. Triggers/Déclencheurs
+4. Triggers/Déclencheurs
 ===========================
 
 ...
@@ -85,3 +74,6 @@ Curseur
 
 **Références**
 	* https://www.tutorialspoint.com/plsql/index.htm
+	* https://pediaa.com/what-is-the-difference-between-procedure-and-function-in-oracle/
+	* https://www.guru99.com/subprograms-procedures-functions-pl-sql.html
+	* https://www.tutorialspoint.com/postgresql/postgresql_functions.htm
