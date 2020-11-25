@@ -8,7 +8,7 @@
 .. image:: https://img.shields.io/badge/version-c89-orange.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
    :alt: version c89
 
-.. literalinclude:: lecture.c
+.. literalinclude:: string1/lecture.c
   :language: c
 
 **Crédits**

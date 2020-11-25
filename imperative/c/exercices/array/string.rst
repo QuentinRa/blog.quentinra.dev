@@ -102,6 +102,25 @@ Voyez-vous les lettres ?
 
 | :code:`[TAG] IUTSF APL S1 TP12 2019`
 
+7. Custom string.h
+---------------------------------
+
+1. Écrire une fonction qui retourne la longueur d'une chaîne de caractère, vue comme un tableau.
+2. Écrire une fonction qui sur la donnée d'une chaîne de caractères retourne une copie de cette chaîne.
+3. Écrire une fonction qui sur la donnée de deux chaînes de caractères retourne la concaténation de ces chaînes. (Exemple : avec "coucou" et "toto", retourne "coucoutoto".)
+4. Écrire une fonction qui sur la donnée d'une chaîne de caractères et de deux indices i et j, retourne une copie de la sous-chaîne comprise entre l'indice i inclus et j non-inclus. Penser à bien renseigner les préconditions de la fonction !
+5. Écrire une fonction qui sur la donnée d'un caractère sep et d'une chaîne s, retourne un tableau contenant les sous-chaînes de s délimitées par sep. Par exemple, pour sep = ';' et s = "ab;cde;;f;g hi", cette fonction retourne une tableau de taille 5 contenant les chaînes "ab" "cde" "" "f" et "g hi". [#2]_
+6. Écrire une fonction qui sur la donnée d'une chaîne de caractère s et d'un caractère c retourne l'adresse de la première occurrence de c dans s, ou NULL si c n'est pas présent dans s.
+
+.. [#2] NB : en pratique, pour pouvoir utiliser une telle fonction, il faudrait soit retourner également sa taille (avec un enregistrement, ou dans un paramètre supplémentaire passé par référence), ou alors ajouter une case supplémentaire contenant l'adresse NULL marquant la fin du tableau.
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<string/d7>
+
+| :code:`[TAG] ENSIIE IPI S1 TP5 2020`
+
 Niveau supérieur
 ***********************
 

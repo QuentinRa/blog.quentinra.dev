@@ -1,5 +1,5 @@
 ======================================================
-5. Miroir
+6. Truandage
 ======================================================
 
 .. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
@@ -8,7 +8,16 @@
 .. image:: https://img.shields.io/badge/version-c89-orange.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
    :alt: version c89
 
-.. literalinclude:: string1/miroir.c
+.. literalinclude:: string2/str1.c
+  :language: c
+
+.. literalinclude:: string2/str2.c
+  :language: c
+
+.. literalinclude:: string2/str3.c
+  :language: c
+
+.. literalinclude:: string2/str4.c
   :language: c
 
 **Crédits**
