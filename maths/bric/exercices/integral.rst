@@ -5,7 +5,7 @@ Calculs d'intégrales
 Niveau débutant
 ***********************
 
-1/1 Primitives
+1. Primitives
 -------------------------
 
 Pour chacune des fonctions suivantes, donner une primitive.
@@ -30,7 +30,7 @@ Pour chacune des fonctions suivantes, donner une primitive.
 
 | :code:`[TAG] ENSIIE MOM TD4 2020 S1`
 
-2/3 - Intégration par parties
+2. Intégration par parties
 -------------------------------
 
 Calculer les valeurs des intégrales suivantes en utilisant la technique d’intégration par parties.
@@ -47,7 +47,7 @@ Calculer les valeurs des intégrales suivantes en utilisant la technique d’int
 
 | :code:`[TAG] ENSIIE MOM TD4 2020 S1`
 
-3/3 - Changement de variable
+3. Changement de variable
 -------------------------------
 
 .. math::
@@ -69,7 +69,7 @@ Calculer les valeurs des intégrales suivantes en utilisant la technique d’int
 Niveau supérieur
 ***********************
 
-1/1 - Calculs d'intégrales
+1. Calculs d'intégrales
 -------------------------------
 
 Calculez les intégrales suivantes
@@ -110,8 +110,8 @@ Calculez les intégrales suivantes
 
 	Proposition de correction n°1			<integral/s1>
 
-Un calcul par intégrales simples
----------------------------------
+2. Un calcul par intégrales simples
+-----------------------------------------
 
 On considère la fonction f(x, y) = :math:`\frac{x^2-y^2}{(x^2+y^2)^2}`
 

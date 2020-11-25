@@ -27,6 +27,10 @@
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral/d3.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/bric/exercices/integral/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/integral/s1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/bric/exercices/non_rank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/exercices/non_rank.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +60,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/graph/exercices/coloration" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/bric/exercices/integral" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="proofread" />
@@ -71,11 +75,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\malloc\malloc1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\bric\exercices\integral" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\coloration" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\bric" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\flux_t" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\imperative\c\exercice\files" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -186,7 +190,7 @@
       <workItem from="1606160987477" duration="75000" />
       <workItem from="1606170432496" duration="94000" />
       <workItem from="1606205331971" duration="36519000" />
-      <workItem from="1606290594433" duration="1137000" />
+      <workItem from="1606290594433" duration="4275000" />
     </task>
     <servers />
   </component>

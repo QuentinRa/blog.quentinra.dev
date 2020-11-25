@@ -1,0 +1,72 @@
+================================
+1/1 - Calculs d'intégrales
+================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+On considère la fonction f(x, y) = :math:`\frac{x^2-y^2}{(x^2+y^2)^2}`
+
+1. Calculer la dérivée de g(x, y) = :math:`\frac{y}{x^2+y^2}` par rapport à y.
+
+2. En déduire la valeur de :math:`\int_{x=0}^1 ( \int_{y=0}^1 f(x,y) dy) dx`.
+
+3. Calculer maintenant la valeur de :math:`\int_{y=0}^1 ( \int_{y=0}^1 f(x,y) dx) dy`.
+
+4. Que pouvez-vous dire sur la fonction f ?
+
+Question 1
+-----------------
+
+On fait la dérivée en y en considérant x comme une constante. Dérivée : (u/v)\'.
+
+:math:`\frac{\partial g}{\partial y} (x,y)` = dérivée partielle de g par rapport à y.
+
+.. math::
+
+	\frac{1 * (x^2+y^2) - y (2y)}{(x^2+y^2)^2} = \frac{x^2 - y^2 }{(x^2+y^2)^2} = f(x,y)
+
+Question 2
+-----------------
+
+Dériver g donne f donc g est une primitive de f.
+
+Vérifier intégrabilité en zéro (si les deux valent 0) !
+
+.. math::
+
+	\int_{x=0}^1 ( \int_{y=0}^1 f(x,y) dy) dx \\
+	\Leftrightarrow  \int_{x=0}^1  \begin{bmatrix}g(x,y)\end{bmatrix}_{y=0}^1 dx \\
+	\Leftrightarrow \int_{x=0}^1 (\frac{1}{1+x^2} - 0) dx \\
+	\Leftrightarrow \begin{bmatrix} arctan(x) \end{bmatrix} _{0}^1
+	\Leftrightarrow \frac{\pi}{4} - 0 = \frac{\pi}{4}
+
+Question 3
+-----------------
+
+On essaye avec :math:`h(x,y) = \frac{x}{x^2+y^2}` car x et y ont l'air d'être a peu près pareil.
+
+.. math::
+
+	\frac{1 * (x^2+y^2) - x (2x)}{(x^2+y^2)^2} = \frac{y^2 - x^2 }{(x^2+y^2)^2} = -f(x,y)\ donc\ on\ test\ -x \\
+	h(x,y) = \frac{-1 * (x^2+y^2) + x (2x)}{(x^2+y^2)^2} = \frac{x^2 - y^2 }{(x^2+y^2)^2} = f(x,y)
+
+.. math::
+
+	\int_{y=0}^1 ( \int_{x=0}^1 f(x,y) dx) dy \\
+	\Leftrightarrow  \int_{y=0}^1  \begin{bmatrix}h(x,y)\end{bmatrix}_{x=0}^1 dx \\
+	\Leftrightarrow  \int_{y=0}^1  (\frac{-1}{1+x^2} - 0) dx \\
+	\Leftrightarrow  \begin{bmatrix}-arctan(x)\end{bmatrix}_{0}^1
+	\Leftrightarrow -\frac{\pi}{4} - 0 = -\frac{\pi}{4}
+
+Question 4
+-----------------
+
+On remarque que si on dérive en x ou en y, on n'obtient pas le même résultat.
+
+Le théorème de Fubini demande a ce que f soit continue donc
+c'est lié au fait que si x et y valent 0 alors la fonction n'est pas définie.
+
+**Crédits**
+	* Christophe MOUILLERON (enseignant à l'ENSIIE)
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
