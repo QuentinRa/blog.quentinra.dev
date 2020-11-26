@@ -25,12 +25,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cb3c6624-4827-4984-b744-f74bd3d26571.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cb3c6624-4827-4984-b744-f74bd3d26571.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cb3c6624-4827-4984-b744-f74bd3d26571/storage_v2/_src_/schema/test.kkQ2AA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cb3c6624-4827-4984-b744-f74bd3d26571/storage_v2/_src_/schema/test.kkQ2AA.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/plsql/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/plsql/oracle.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/oracle.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/plsql/postgre.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/postgre.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/plsql/exercices/triggers.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/exercices/triggers.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +55,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/db/bases" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/db/plsql/exercices/triggers" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="proofread" />
@@ -74,11 +70,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\assets\imperative\c\exercice" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\db\plsql\exercices\triggers" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\db\bases" />
       <recent name="C:\Users\quent\Documents\texas-res\db\plsql\exercices\non_rank" />
       <recent name="C:\Users\quent\Documents\texas-res\db\plsql\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\linked\linked3" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\linked" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -195,7 +191,7 @@
       <workItem from="1606342835695" duration="243000" />
       <workItem from="1606344789519" duration="425000" />
       <workItem from="1606383592219" duration="1370000" />
-      <workItem from="1606398397096" duration="10893000" />
+      <workItem from="1606398397096" duration="12862000" />
     </task>
     <servers />
   </component>
