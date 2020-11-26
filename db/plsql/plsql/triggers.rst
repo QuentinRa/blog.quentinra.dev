@@ -10,7 +10,7 @@ Voici la syntaxe d'un trigger. Un événement est
 
 .. code:: sql
 
-		CREATE [OR REPLACE] TRIGGER nom trigger
+		CREATE [OR REPLACE] TRIGGER nom
 		BEFORE/AFTER evenement ON table
 		[FOR EACH ROW]
 		[WHEN condition]
@@ -18,22 +18,22 @@ Voici la syntaxe d'un trigger. Un événement est
 
 		-- autre version
 
-		CREATE [OR REPLACE] TRIGGER nom trigger
+		CREATE [OR REPLACE] TRIGGER nom
 		BEFORE/AFTER evenement ON table
 		[FOR EACH ROW]
 		[WHEN condition]
 		-- renvoi vers une procédure
-		EXECUTE PROCEDURE nom fonction (arguments)
+		EXECUTE PROCEDURE fonction(arguments);
 
 		-- Forme complète
 
-		CREATE [OR REPLACE] TRIGGER nom trigger
+		CREATE [OR REPLACE] TRIGGER nom
 		BEFORE/AFTER/INSTEAD OF evenement [OR ... ] ON table
 		[FOR [EACH] ROW/STATEMENT]
 		[WHEN condition]
 		-- code (DECLARE, BEGIN ...)
 		-- ou
-		EXECUTE PROCEDURE nom fonction (arguments
+		EXECUTE PROCEDURE fonction(arguments);
 
 Before et After
 	Le trigger peut être exécuté avant un ordre DML (before) ou après (after).
