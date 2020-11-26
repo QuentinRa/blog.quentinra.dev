@@ -171,6 +171,19 @@ entièrement la liste.
 
 | :code:`[TAG] IUTSF APL S1 TP23 2019`
 
+10. Jeux de listes
+-------------------------------
+
+1. Proposer une fonction qui insère entre chaque paire d'éléments consécutifs d'une liste leur moitié.
+2. Proposer une fonction qui retourne une liste comportant les mêmes éléments mais triée (par insertion) par ordre croissant qu'une liste passée en paramètre. On ne modifiera pas la liste passée en paramètre.
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<linked/d10>
+
+| :code:`[TAG] ENSIIE IPI S1 TP8 2020`
+
 Niveau supérieur
 ***********************
 

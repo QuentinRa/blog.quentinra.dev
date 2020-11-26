@@ -26,8 +26,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/array/string/d7.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/array/string/d7.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/array/string/string2/str4.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/others/linked_list.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/others/linked_list.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,26 +55,26 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/imperative/c/exercices/array/string/string2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/imperative/c/exercices/others/linked/linked3" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="proofread" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array\string\string2" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array\string" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\malloc" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\malloc\malloc2" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\plsql\plsql" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array\string\string1" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\imperative\c\exercice\files" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\structure\structure1" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\imperative\c\exercice" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\linked\linked3" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\linked" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array\string\string2" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array\string" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\others\malloc" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -191,7 +190,8 @@
       <workItem from="1606329073361" duration="8947000" />
       <workItem from="1606342835695" duration="243000" />
       <workItem from="1606344789519" duration="425000" />
-      <workItem from="1606383592219" duration="209000" />
+      <workItem from="1606383592219" duration="1370000" />
+      <workItem from="1606398397096" duration="399000" />
     </task>
     <servers />
   </component>
