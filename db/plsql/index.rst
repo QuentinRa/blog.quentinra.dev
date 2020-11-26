@@ -70,6 +70,7 @@ déclencheur qui va exécuter une action.
 	*
 		Ex : si vous avez un attribut d dérivée d'un calcul, alors vous pouvez
 		faire en sorte qu'a chaque update/insert, d soit recalculé et mis à jour et spécifier comment.
+	* Ex: archiver les anciennes données après une suppression
 
 Il existe 3 types de triggers
 

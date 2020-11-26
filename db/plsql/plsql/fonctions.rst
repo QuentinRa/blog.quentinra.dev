@@ -10,7 +10,7 @@ Déclaration de fonctions
 		-- instructions
 		RETURN nom_variable_retour;
 		END;
-		LANGUAGE langage; -- plpgsql, ...
+		LANGUAGE langage; -- plpgsql, c, java, ...
 
 		-- ou
 

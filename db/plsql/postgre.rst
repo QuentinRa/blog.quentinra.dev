@@ -16,6 +16,12 @@ On utilise RAISE NOTICE pour afficher un message
 
 	RAISE NOTICE 'texte';
 
+4. Triggers
+==========================
+
+Sous POSTGRE, execute PROCEDURE prends une fonction qui retourne un TRIGGER
+(vous pouvez retourner NULL).
+
 -----
 
 **Crédits**
