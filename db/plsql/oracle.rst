@@ -4,8 +4,8 @@
 Particularités de Oracle pour le PL/SQL
 ============================================
 
-| :math:`\color{grey}{Version \ 2.0.0}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 25/11/2020}`
+| :math:`\color{grey}{Version \ 2.0.1}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 26/11/2020}`
 
 1. Général
 ===============================================

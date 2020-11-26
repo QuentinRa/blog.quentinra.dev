@@ -4,8 +4,8 @@
 PL/SQL (Procedural Language)
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.0}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 12/11/2020}`
+| :math:`\color{grey}{Version \ 1.2.4}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 26/11/2020}`
 
 Le PL/SQL (PL pour Procedural Language) est un langage complémentaire au SQL
 qui ajoute des fonctions appelés procédures, ainsi que des triggers (=déclencheurs).
@@ -82,6 +82,29 @@ Il existe 3 types de triggers
   :maxdepth: 1
 
 		Déclaration de triggers             <plsql/triggers>
+
+5. Exercices
+==============
+
+.. danger::
+
+	Les exercices vous demandent généralement de faire des requêtes donc dans
+	une base de données, sur un paquet de données.
+
+	Chaque exercice vous fournit un fichier :code:`setup.sql` qui est à importer
+	dans votre base de données dans une base nommée comme vous voulez
+
+	Si vous n'avez pas de base de données sous la main, allez sur
+	`sqliteonline.com <https://sqliteonline.com/>`_ et importez le fichier :code:`setup.sql`
+	dans une base de données mariadb.
+
+.. toctree::
+    :name: exercices
+    :maxdepth: 1
+
+		Fonctions				<exercices/functions>
+		Triggers				<exercices/triggers>
+		Non triés				<exercices/non_rank>
 
 -----
 

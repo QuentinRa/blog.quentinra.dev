@@ -1065,249 +1065,173 @@
     <user id="339" parent="1" name="root">
       <Host>msi</Host>
     </user>
-    <table id="340" parent="7" name="billet"/>
-    <table id="341" parent="7" name="guichetier"/>
-    <table id="342" parent="7" name="personne"/>
-    <table id="343" parent="7" name="representation"/>
-    <table id="344" parent="7" name="salle"/>
-    <table id="345" parent="7" name="spectacle"/>
-    <view id="346" parent="7" name="guichet">
-      <SourceTextLength>464</SourceTextLength>
-      <Definer>root@localhost</Definer>
-    </view>
-    <view id="347" parent="7" name="representation_avec_places">
-      <SourceTextLength>306</SourceTextLength>
-      <Definer>root@localhost</Definer>
-    </view>
-    <view id="348" parent="7" name="v_guichetier">
-      <SourceTextLength>257</SourceTextLength>
-      <Definer>root@localhost</Definer>
-    </view>
-    <column id="349" parent="340" name="n_billet">
+    <table id="340" parent="7" name="buveur"/>
+    <table id="341" parent="7" name="commande"/>
+    <table id="342" parent="7" name="livraison"/>
+    <table id="343" parent="7" name="vin"/>
+    <table id="344" parent="7" name="viticulteur"/>
+    <column id="345" parent="340" name="n_buveur">
       <Position>1</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="350" parent="340" name="n_salle">
+    <column id="346" parent="340" name="nom">
+      <Position>2</Position>
+      <DataType>varchar(20)|0s</DataType>
+    </column>
+    <column id="347" parent="340" name="prenom">
+      <Position>3</Position>
+      <DataType>varchar(20)|0s</DataType>
+    </column>
+    <column id="348" parent="340" name="b_ville">
+      <Position>4</Position>
+      <DataType>varchar(30)|0s</DataType>
+    </column>
+    <key id="349" parent="340" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>n_buveur</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <check id="350" parent="341" name="dom_c_qte">
+      <Predicate>`c_qte` = 6 or `c_qte` = 12 or `c_qte` = 18</Predicate>
+    </check>
+    <column id="351" parent="341" name="n_commande">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="352" parent="341" name="n_buveur">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
-    </column>
-    <column id="351" parent="340" name="b_date">
-      <Position>3</Position>
-      <DataType>date|0s</DataType>
-    </column>
-    <column id="352" parent="340" name="nom_client">
-      <Position>4</Position>
-      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="353" parent="340" name="n_spectacle">
+    <column id="353" parent="341" name="n_vin">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="354" parent="341" name="c_date">
+      <Position>4</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="355" parent="341" name="c_qte">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <index id="354" parent="340" name="n_billet">
-      <ColNames>n_billet</ColNames>
+    <index id="356" parent="341" name="ck_commande">
+      <ColNames>n_buveur
+n_vin
+c_date</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="355" parent="340" name="fk_billet_representation">
-      <ColNames>n_salle
-b_date</ColNames>
+    <index id="357" parent="341" name="fk_vin">
+      <ColNames>n_vin</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="356" parent="340" name="fk_billet_spectacle">
-      <ColNames>n_spectacle</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="357" parent="340" name="PRIMARY">
+    <key id="358" parent="341" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>n_billet</ColNames>
+      <ColNames>n_commande</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="358" parent="340" name="n_billet">
-      <ColNames>n_billet</ColNames>
-      <UnderlyingIndexName>n_billet</UnderlyingIndexName>
+    <key id="359" parent="341" name="ck_commande">
+      <ColNames>n_buveur
+n_vin
+c_date</ColNames>
+      <UnderlyingIndexName>ck_commande</UnderlyingIndexName>
     </key>
-    <column id="359" parent="341" name="id_guichetier">
+    <column id="360" parent="342" name="n_commande">
       <Position>1</Position>
-      <DataType>varchar(10)|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="360" parent="341" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id_guichetier</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="361" parent="342" name="id_personne">
-      <Position>1</Position>
-      <DataType>varchar(10)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="362" parent="342" name="nom">
+    <column id="361" parent="342" name="l_date">
       <Position>2</Position>
-      <DataType>varchar(50)|0s</DataType>
-    </column>
-    <column id="363" parent="342" name="prenom">
-      <Position>3</Position>
-      <DataType>varchar(50)|0s</DataType>
-    </column>
-    <key id="364" parent="342" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id_personne</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <check id="365" parent="343" name="dom_prix_representation">
-      <Predicate>`prix` &gt;= 10 and `prix` &lt;= 500</Predicate>
-    </check>
-    <column id="366" parent="343" name="r_date">
-      <Position>1</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="367" parent="343" name="n_salle">
-      <Position>2</Position>
+    <column id="362" parent="342" name="l_qte">
+      <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="368" parent="343" name="prix">
-      <Position>3</Position>
-      <DataType>int(11)|0s</DataType>
-    </column>
-    <column id="369" parent="343" name="n_spectacle">
-      <Position>4</Position>
-      <DataType>int(11)|0s</DataType>
-    </column>
-    <index id="370" parent="343" name="fk_representation_spectacle">
-      <ColNames>n_spectacle</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="371" parent="343" name="PRIMARY">
+    <key id="363" parent="342" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>n_salle
-r_date</ColNames>
+      <ColNames>n_commande
+l_date</ColNames>
       <Primary>1</Primary>
     </key>
-    <check id="372" parent="344" name="dom_places_salle">
-      <Predicate>`nb_places` &gt;= 100 and `nb_places` &lt;= 500</Predicate>
+    <check id="364" parent="343" name="dom_millesime">
+      <Predicate>`millesime` &gt; 1970 and `millesime` &lt; 2012</Predicate>
     </check>
-    <column id="373" parent="344" name="n_salle">
+    <column id="365" parent="343" name="n_vin">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="374" parent="344" name="nb_places">
+    <column id="366" parent="343" name="cru">
       <Position>2</Position>
-      <DataType>int(11)|0s</DataType>
-    </column>
-    <key id="375" parent="344" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>n_salle</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <check id="376" parent="345" name="dom_duree_spectacle">
-      <Predicate>`duree` &gt;= 60 and `duree` &lt;= 240</Predicate>
-    </check>
-    <check id="377" parent="345" name="dom_type_spectacle">
-      <Predicate>`s_type` in (&apos;theatre&apos;,&apos;danse&apos;,&apos;concert&apos;)</Predicate>
-    </check>
-    <column id="378" parent="345" name="n_spectacle">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="379" parent="345" name="nom">
-      <Position>2</Position>
-      <DataType>varchar(100)|0s</DataType>
-    </column>
-    <column id="380" parent="345" name="duree">
+    <column id="367" parent="343" name="millesime">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="381" parent="345" name="s_type">
+    <column id="368" parent="343" name="region">
       <Position>4</Position>
-      <DataType>varchar(10)|0s</DataType>
+      <DataType>varchar(15)|0s</DataType>
     </column>
-    <key id="382" parent="345" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>n_spectacle</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="383" parent="346" name="n_spectacle">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="384" parent="346" name="n_salle">
-      <Position>2</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="385" parent="346" name="b_date">
-      <Position>3</Position>
-      <DataType>date|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="386" parent="346" name="nom">
-      <Position>4</Position>
-      <DataType>varchar(100)|0s</DataType>
-    </column>
-    <column id="387" parent="346" name="s_type">
+    <column id="369" parent="343" name="n_viticulteur">
       <Position>5</Position>
-      <DataType>varchar(10)|0s</DataType>
-    </column>
-    <column id="388" parent="346" name="prix">
-      <Position>6</Position>
       <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="389" parent="346" name="nb_places_libres">
-      <Position>7</Position>
-      <DataType>bigint(22)|0s</DataType>
-    </column>
-    <column id="390" parent="347" name="n_spectacle">
+    <index id="370" parent="343" name="ck_vin">
+      <ColNames>cru
+millesime
+n_viticulteur</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <index id="371" parent="343" name="fk_viticulteur">
+      <ColNames>n_viticulteur</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="372" parent="343" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>n_vin</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="373" parent="343" name="ck_vin">
+      <ColNames>cru
+millesime
+n_viticulteur</ColNames>
+      <UnderlyingIndexName>ck_vin</UnderlyingIndexName>
+    </key>
+    <column id="374" parent="344" name="n_viticulteur">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="391" parent="347" name="n_salle">
+    <column id="375" parent="344" name="nom">
       <Position>2</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>varchar(30)|0s</DataType>
     </column>
-    <column id="392" parent="347" name="b_date">
+    <column id="376" parent="344" name="prenom">
       <Position>3</Position>
-      <DataType>date|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>varchar(20)|0s</DataType>
     </column>
-    <column id="393" parent="347" name="nom">
+    <column id="377" parent="344" name="v_ville">
       <Position>4</Position>
-      <DataType>varchar(100)|0s</DataType>
+      <DataType>varchar(30)|0s</DataType>
     </column>
-    <column id="394" parent="347" name="s_type">
-      <Position>5</Position>
-      <DataType>varchar(10)|0s</DataType>
-    </column>
-    <column id="395" parent="347" name="prix">
-      <Position>6</Position>
-      <DataType>int(11)|0s</DataType>
-    </column>
-    <column id="396" parent="347" name="nb_places_libres">
-      <Position>7</Position>
-      <DataType>bigint(22)|0s</DataType>
-    </column>
-    <column id="397" parent="348" name="id_guichetier">
-      <Position>1</Position>
-      <DataType>varchar(10)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="398" parent="348" name="nom">
-      <Position>2</Position>
-      <DataType>varchar(50)|0s</DataType>
-    </column>
-    <column id="399" parent="348" name="prenom">
-      <Position>3</Position>
-      <DataType>varchar(50)|0s</DataType>
-    </column>
+    <key id="378" parent="344" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>n_viticulteur</ColNames>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>
