@@ -1,5 +1,5 @@
 ======================================================
-6. Truandage
+7. Custom string.h
 ======================================================
 
 .. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
@@ -18,6 +18,12 @@
   :language: c
 
 .. literalinclude:: string2/str4.c
+  :language: c
+
+.. literalinclude:: string2/str5.c
+  :language: c
+
+.. literalinclude:: string2/str6.c
   :language: c
 
 **Crédits**

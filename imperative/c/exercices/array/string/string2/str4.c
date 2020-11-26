@@ -13,8 +13,13 @@ char* substr(const char* str1, const int i, const int j){
     int sub_size= j-i;
     int pos = 0;
     char* substr = NULL;
+    if (i == j){ // retourne une chaine vide
+        substr = (char*) malloc(1*sizeof(char));
+        substr[0] = '\0';
+        return substr;
+    }
     // pas bons arguments
-    if(i <= 0 || j <= i || j > size || i+j > size) return NULL;
+    if(i < 0 || j < i || j > size || j-i > size) return NULL;
     substr = (char*) malloc((sub_size+1)*sizeof(char));
     //prends de i jusqu'à j
     for (int k = i; k < j; k++, pos++) {
