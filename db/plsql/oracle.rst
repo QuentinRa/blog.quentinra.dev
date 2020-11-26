@@ -22,6 +22,12 @@ Pour afficher quelque chose, on utilise
 
 Vous pouvez appeler show erreurs pour avoir le détails des erreurs : :code:`show errors`.
 
+Sous oracle, vous pouvez utiliser :code:`raise_application_error(code, message)`
+pour lever une exception.
+
+Pour créer une exception personnalisée, vous devez déclarez une variable de type EXCEPTION
+et faire :code:`PRAGMA EXCEPTION_INIT(nom_variable, code);` dans DECLARE.
+
 2. Procédures
 ===========================
 

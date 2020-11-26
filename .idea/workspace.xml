@@ -26,7 +26,11 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/exercices/others/linked_list.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/exercices/others/linked_list.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/plsql/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/plsql/oracle.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/oracle.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sql/exercices/create/d1_2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/create/d1_2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sql/exercices/create/d1_2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/create/d1_2.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +195,7 @@
       <workItem from="1606342835695" duration="243000" />
       <workItem from="1606344789519" duration="425000" />
       <workItem from="1606383592219" duration="1370000" />
-      <workItem from="1606398397096" duration="399000" />
+      <workItem from="1606398397096" duration="3733000" />
     </task>
     <servers />
   </component>

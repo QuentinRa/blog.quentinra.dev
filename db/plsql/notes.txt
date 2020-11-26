@@ -1,0 +1,2 @@
+Sous oracle, les variables NEW et OLD sont accédées avec :new et :old.
+

@@ -10,7 +10,7 @@ CREATE TABLE Guichetier(
     -- clef étrangère
     -- ON DELETE CASCADE = si la personne n'existe plus, alors le guichetier non plus
     -- par défaut, bloque la suppression
-    id_guichetier varchar(10) references Personne ON DELETE CASCADE
+    id_guichetier varchar(10) primary key references Personne ON DELETE CASCADE
 );
 
 -- création de spectacle

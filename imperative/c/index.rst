@@ -4,8 +4,8 @@
 Langage C
 ================================
 
-| :math:`\color{grey}{Version \ 1.3.8}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 23/11/2020}`
+| :math:`\color{grey}{Version \ 1.3.10}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 26/11/2020}`
 
 .. note::
 

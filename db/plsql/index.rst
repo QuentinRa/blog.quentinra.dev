@@ -63,7 +63,24 @@ une action est appelé procédure et est crée différemment sous oracle.
 4. Triggers/Déclencheurs
 ===========================
 
-...
+L'idée est qu'il y a des événements qui déclenche/trigger votre
+déclencheur qui va exécuter une action.
+
+	* Ex : ajout, suppression, update va par exemple trigger la vérification des clef étrangères
+	*
+		Ex : si vous avez un attribut d dérivée d'un calcul, alors vous pouvez
+		faire en sorte qu'a chaque update/insert, d soit recalculé et mis à jour et spécifier comment.
+
+Il existe 3 types de triggers
+
+	* DML : exécuté sur tous les lignes de l'événement
+	* DML ligne : exécuté une fois par événement
+	* schéma DDL ou base : exécuté une fois
+
+.. toctree::
+  :maxdepth: 1
+
+		Déclaration de triggers             <plsql/triggers>
 
 -----
 
