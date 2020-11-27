@@ -8,6 +8,8 @@ http://dimitri.watel.free.fr/teaching/s2_mom/s2_mom.php
 https://www.ljll.math.upmc.fr/~nardoni/TDagrl3/TD4cor.pdf
 https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/
 
+https://www.ionos.fr/startupguide/productivite/lettre-de-motivation/
+
 https://stackoverflow.com/questions/6101311/what-is-the-native-keyword-in-java-for ?
 
 maths

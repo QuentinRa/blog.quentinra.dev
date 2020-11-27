@@ -4,6 +4,9 @@
 Entreprise
 ================================
 
+| :math:`\color{grey}{Version \ 1.0.0}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 27/11/2020}`
+
 Ce cours est une synthèse de toutes
 les notions liées aux monde des entreprises, ce qui comprends principalement
 des notions autour
@@ -71,9 +74,12 @@ ou de changements internes.
 -----
 
 **Crédits**
-	* Anabelle DEMULE THENON (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Anabelle DEMULE THENON (enseignante à l'IUT de Sénart-Fontainebleau)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
 	* https://www.scribbr.fr/methodologie/analyse-pestel/
 	* https://www.scribbr.fr/methodologie/matrice-swot/
+	* https://fr.wikipedia.org/wiki/Matrice_BCG
+	* https://www.marketing-etudiant.fr/matrice-bcg.html
+	* https://www.e-marketing.fr/Thematique/academie-1078/fiche-outils-10154/Les-niveaux-strategie-307676.htm
