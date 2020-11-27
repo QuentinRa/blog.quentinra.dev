@@ -21,11 +21,11 @@ $fvs$ LANGUAGE plpgsql;
 
 -- ***
 -- *** d_verifie_stock()
--- *** --> avant chaque insert et update dans commande,
+-- *** avant chaque insert et update dans commande,
 -- *** vérifie qu'il reste assez de vins en stock. Retourne une exception sinon
 DROP TRIGGER d_verifie_stock ON commande;
 CREATE TRIGGER d_verifie_stock
     BEFORE INSERT OR UPDATE ON commande
 EXECUTE PROCEDURE f_verifie_stock();
 
--- ...
+--

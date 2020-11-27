@@ -21,3 +21,6 @@ Déclaration de fonctions
 		RETURN nom_variable_retour;
 		END;
 		/ -- compile
+
+Notez que les arguments peuvent également être accédés avec $1 (premier argument),
+$2 (2e ...), ... Donc vous pouvez ne pas donner de noms à vos arguments.

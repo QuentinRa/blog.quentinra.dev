@@ -79,12 +79,14 @@ Une requête SQL est de la forme :
 .. code:: sql
 
 	-- ceci est un commentaire
-	Select * from table where attr=v;
+	Select * from t where attr=v;
 
-Cette requêtes affiche pour chacune des lignes de table (from table) pour lesquelles
-l'attribut attr de table (donc table.attr) à pour valeur v, les valeurs de tous (*) les
-attributs de cette ligne (testez sur `w3school/select <https://www.w3schools.com/sql/sql_select.asp>`_
-si vous comprenez pas).
+Cette requête affiche
+
+	* pour chacune des lignes de table (instruction from t) pour lesquelles l'attribut nommé attr de la table t à pour valeur v
+	* les valeurs de tous (Select \*) les attributs de chaque ligne
+
+Testez sur `w3school/select <https://www.w3schools.com/sql/sql_select.asp>`_ si vous comprenez pas.
 
 .. note::
 

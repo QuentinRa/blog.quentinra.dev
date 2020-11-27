@@ -25,13 +25,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/db/bases/vins_ensiie_1a_import_p.sql" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/bases/vins_ensiie_1a_import_p.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/db/bases/vins_ensiie_1a_import_p_function.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/plsql/exercices/triggers.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/exercices/triggers.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/autres/calistro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/autres/calistro.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/plsql/exercices/triggers/d1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/exercices/triggers/d1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/plsql/plsql/triggers.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/plsql/triggers.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/plsql/plsql/fonctions.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/plsql/fonctions.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/plsql/plsql/variables.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/plsql/variables.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sql/exercices/user/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/user/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sql/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +196,8 @@
       <workItem from="1606342835695" duration="243000" />
       <workItem from="1606344789519" duration="425000" />
       <workItem from="1606383592219" duration="1370000" />
-      <workItem from="1606398397096" duration="15702000" />
+      <workItem from="1606398397096" duration="18421000" />
+      <workItem from="1606478167444" duration="5795000" />
     </task>
     <servers />
   </component>

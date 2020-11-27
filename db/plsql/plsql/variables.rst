@@ -26,7 +26,7 @@ En gros, vous avez avoir deux utilités aux variables :
 Il est possible/recommandé de demander aux variables de prendre le type d'un attribut,
 plutôt que de leur donner directement le type (donc vous laissez %type).
 
-.. code::sql
+.. code:: sql
 
 		v_nom table.attribut%type ; -- d'une colonne (attribut)
 		--ou
@@ -42,7 +42,7 @@ Quelques types méconnus
 
 Il existe
 
-	* ARRAY[taille] := {...} qui permet de créer un tableau
+	* t ARRAY[taille] := {...} qui permet de créer un tableau de taille élément avec chaque élément de type t
 	* RECORD := SQL qui permet de stocker le résultat d'une requête SQL retournant une ligne
 	* table%ROWTYPE est le type d'un tuple d'une table
 	* CREATE TYPE pour créer des types
