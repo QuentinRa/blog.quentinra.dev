@@ -1,0 +1,79 @@
+.. _company:
+
+================================
+Entreprise
+================================
+
+Ce cours est une synthèse de toutes
+les notions liées aux monde des entreprises, ce qui comprends principalement
+des notions autour
+
+	* vocabulaire et chiffres clef
+	* connaissances générales (vocabulaire et informations)
+	* étudier son environnement et élaborer une stratégie
+	* gérer ses salariés
+	* fonder une entreprise
+	* les différentes méthodes de répartition du travail
+	* comment vendre ses produits
+	* les titres financiers
+
+Ce cours est extrêmement théorique, un cours complémentaire sera
+ajouté avec moins d'informations et plus de cas pratiques.
+
+1. Vocabulaire et chiffres clef
+======================================
+
+Voici le vocabulaire à connaitre, les termes les plus important sont mis en valeur
+
+.. toctree::
+	 :maxdepth: 1
+
+		Vocabulaire lié a vos chiffres       <voc/ca>
+		Vocabulaire lié au marché            <voc/market>
+
+Alternativement, voici quelques termes qui vous devez connaitre mais qui font partie
+de la catégorie "connaissances générales".
+
+.. toctree::
+	 :maxdepth: 1
+
+		Le terme Startup                    <voc/startup>
+		Raison d'être/ADN et RSE            <voc/why>
+
+2. Environnement d'entreprise et la stratégie
+==================================================
+
+Une entreprise doit en permanence étudier son environnement
+pour détecter les opportunité et les menaces.
+
+Vous devez donc surveiller les chiffres de vos concurrents
+et vous préparer aux décisions qu'il pourraient prendre pour éviter
+de faire faillite car leur décision vous fait perdre des client/du chiffre
+d'affaire (décisions comme aller à l'étranger, salaires plus élevés donc potentiellement
+vos salariés vont partir, changer le public des produits, fusionner/racheter avec une autre entreprise, ...).
+
+De façon général, vous avez le schéma de l'environnement concurrentiel de Mickael Porter ou la notation PESTEL
+qui peuvent vous aider.
+
+Une entreprise doit avoir une stratégie, qu'elle doit toujours vérifier
+ou peut possiblement changer en fonction des changements de l'environnement par exemple
+ou de changements internes.
+
+.. toctree::
+	 :maxdepth: 1
+
+		P.E.S.T.E.L.                    <env/pestel>
+		Environnement concurrentiel     <env/mp_ec>
+		Établir une stratégie           <env/strategy>
+
+|
+
+-----
+
+**Crédits**
+	* Anabelle DEMULE THENON (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
+
+**Références**
+	* https://www.scribbr.fr/methodologie/analyse-pestel/
+	* https://www.scribbr.fr/methodologie/matrice-swot/

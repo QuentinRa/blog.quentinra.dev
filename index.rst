@@ -74,12 +74,15 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :name: business
     :maxdepth: 1
 
+		Entreprises : création et environnement     <business/corp/index>
+		Documents d'une enterprise                  <business/corp/docs>
+
 .. toctree::
     :caption: Économie
     :name: business2
     :maxdepth: 1
 
-		Macroéconomie                        <business/env/macro>
+		Macroéconomie                        <business/economy/macro>
 
 .. toctree::
     :caption: Jeux vidéos
@@ -106,8 +109,6 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :maxdepth: 1
 
 		Anglais                              <language/english/index>
-    Entreprise                           <business/env/index>
-    Documents d'une Entreprise           <business/docs/index>
     Architecture Linux                   <system/linux/index>
     Bash et Scripts                      <system/linux/bash>
     Probabilités                         <maths/proba/index>
