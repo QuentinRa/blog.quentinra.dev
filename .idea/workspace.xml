@@ -26,11 +26,12 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/autres/calistro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/autres/calistro.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/corp/env/mp_ec.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/env/mp_ec.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/corp/env/pestel.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/env/pestel.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business/corp/env/strategy.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/env/strategy.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business/corp/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/corp/voc/ca.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/voc/ca.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/corp/voc/market.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/voc/market.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/corp/voc/startup.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/voc/startup.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/corp/voc/why.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/voc/why.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +197,7 @@
       <workItem from="1606344789519" duration="425000" />
       <workItem from="1606383592219" duration="1370000" />
       <workItem from="1606398397096" duration="18421000" />
-      <workItem from="1606478167444" duration="14545000" />
+      <workItem from="1606478167444" duration="15534000" />
     </task>
     <servers />
   </component>
@@ -315,10 +316,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="376" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1603556286896" />
-    <state x="480" y="163" width="575" height="498" key="find.popup" timestamp="1606323902691">
+    <state x="480" y="163" width="575" height="498" key="find.popup" timestamp="1606501214488">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="480" y="163" width="575" height="498" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1606323902691" />
+    <state x="480" y="163" width="575" height="498" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1606501214488" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1606146395715">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -69,8 +69,6 @@ ou de changements internes.
 		Environnement concurrentiel     <env/mp_ec>
 		Établir une stratégie           <env/strategy>
 
-|
-
 -----
 
 **Crédits**

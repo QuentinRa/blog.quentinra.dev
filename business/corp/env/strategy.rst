@@ -53,6 +53,9 @@ Relais de croissance :code:`❤`
 Avantage concurrentiel = facteur clef de succès = plus value = valeur ajoutée :code:`❤`
 	Ce que l’entreprise a que les autres n’ont pas et qui lui procure un avantage.
 
+Pivoter :code:`❤`
+	Il s’agit pour une entreprise de faire évoluer sur un point clé son business model ou passer d’un marché à un autre (BtoB vers BtoC)
+
 Les outils
 -------------------------------
 
