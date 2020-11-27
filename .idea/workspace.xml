@@ -26,12 +26,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/corp/env/strategy.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/env/strategy.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/corp/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/corp/voc/ca.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/voc/ca.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/corp/voc/market.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/voc/market.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/corp/voc/startup.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/voc/startup.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/corp/voc/why.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/voc/why.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/corp/docs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/docs.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,26 +55,26 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/business/corp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/business/docs" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="proofread" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\assets\business\corp" />
-      <recent name="C:\Users\quent\Documents\texas-res\business\corp\env" />
-      <recent name="C:\Users\quent\Documents\texas-res\business\corp\voc" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\plsql\exercices\triggers" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\db\bases" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\business\docs" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\business\corp" />
       <recent name="C:\Users\quent\Documents\texas-res\business\corp" />
       <recent name="C:\Users\quent\Documents\texas-res\business\economy" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array\string\string1" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\business\docs" />
+      <recent name="C:\Users\quent\Documents\texas-res\business\corp\facture" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\business\corp" />
+      <recent name="C:\Users\quent\Documents\texas-res\business\corp\env" />
+      <recent name="C:\Users\quent\Documents\texas-res\business\corp\voc" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -198,6 +193,8 @@
       <workItem from="1606383592219" duration="1370000" />
       <workItem from="1606398397096" duration="18421000" />
       <workItem from="1606478167444" duration="15534000" />
+      <workItem from="1606504537996" duration="34000" />
+      <workItem from="1606507565918" duration="2905000" />
     </task>
     <servers />
   </component>
