@@ -41,6 +41,7 @@ de la catégorie "connaissances générales".
 	 :maxdepth: 1
 
 		Le terme Startup                    <voc/startup>
+		Services d'une entreprise           <voc/services>
 		Raison d'être/ADN et RSE            <voc/why>
 
 2. Environnement d'entreprise et la stratégie

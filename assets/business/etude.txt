@@ -1,4 +1,26 @@
-Ressource sont rares
+GESTION COMPTABLE ET
+FINANCIERE
+
+Introduction générale: objectifs de la gestion
+économique
+
+Les ressources sont rares et la gestion économique cherche
+a déterminer pourquoi et comment des groupes d'acteurs ont utilisé ces
+ressources.
+
+Les objectifs de la gestion économique visent à traduire ces
+finalités macroéconomiques dans des grandeurs mesurables
+(agrégats économiques):
+- le taux de croissance,
+- le taux de chômage,
+- le PIB et revenu par tête...
+
+Les principaux objectifs sont relatifs sont résumés par
+Kaldor dans le carré de compétitivité
+- l’emploi,
+- la croissance,
+- la stabilité des prix,
+- l’équilibre de la balance extérieure.
 
 Objectifs:
  Analyser le processus décisionnel:
@@ -25,6 +47,33 @@ prix et niveau d’emploi).
  Analyser les déterminants de la formation des
 prix/ajustements stratégiques induits aussi bien chez les
 producteurs que les consommateurs.
+
+Complexité des échanges modernes
+	* qui achète ? (nous)
+	* quoi ? (multiples types de biens)
+	* destination finale ? (entreprise/directement nous)
+
+Les ventes de l’ensemble de ces biens s’effectuent soit
+sur le marché domestique, soit sur le marché extérieur.
+
+Le terme “capitalisme”
+
+La propriété privée des moyens de production,
+- La liberté d’entreprendre et liberté des échanges,
+- Le salariat ou le marché du travail,
+- La recherche du profit,
+- L’accumulation du capital.
+
+les agents
+	* patron
+	* salarié
+
+Autorégulation du marché/Smith
+
+offre et demande
+
+besoins -> productions mais ressources sont limités
+
 
 Stop page 13
 
