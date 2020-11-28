@@ -1,3 +1,8 @@
+La gestion économique consiste à étudier pourquoi les agents économiques ont fait tel ou tel choix.
+Notamment étudier pourquoi les ressources qui sont finies et limités sont utilisés de tel façon.
+
+|
+
 Keynes théorie emploi, intérêt et monnaie (1936) sert de fondement à la th de la macroéconomie.
 
 VI. La mesure de l’activité économique
@@ -15,10 +20,5 @@ importations.
 
 Pourquoi ne peut-on pas avoir un taux de chômage nul ? Parce qu’une personne ne trouve pas du travail tout de suite.
 Consommation intermédiaire : achat à une autre entreprise d’un produit pour faire son produit.
-
-2.3 Taux d'inflation
-*****************************
-L’inflation est une augmentation soutenue du niveau général des prix. Le taux d’inflation est le
-taux auquel ces prix augmentent.
 
 Stop page 7
