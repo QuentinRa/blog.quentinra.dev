@@ -18,7 +18,6 @@ des notions autour
 	* fonder une entreprise
 	* les différentes méthodes de répartition du travail
 	* comment vendre ses produits
-	* les titres financiers
 
 Ce cours est extrêmement théorique, un cours complémentaire sera
 ajouté avec moins d'informations et plus de cas pratiques.
@@ -43,6 +42,7 @@ de la catégorie "connaissances générales".
 		Le terme Startup                    <voc/startup>
 		Services d'une entreprise           <voc/services>
 		Raison d'être/ADN et RSE            <voc/why>
+		Connaissances générales             <voc/all>
 
 2. Environnement d'entreprise et la stratégie
 ==================================================
@@ -69,6 +69,34 @@ ou de changements internes.
 		P.E.S.T.E.L.                    <env/pestel>
 		Environnement concurrentiel     <env/mp_ec>
 		Établir une stratégie           <env/strategy>
+
+3. Fonder une entreprise
+===============================
+
+Une entreprise peut être une SARL (sociétés à responsabilités limité)
+ou une société anonyme (la plupart des entreprises).
+
+Dans le cas d'une SARL, les fondateurs sont des associés (part sociale)
+alors que dans une société anonyme, on parle d'actionnaires (actions).
+
+.. toctree::
+  :maxdepth: 1
+
+		Sociétés anonymes       <create/sa>
+	  Business Model et Plan  <create/plan>
+
+4. Gérer ses salariés/Recruter
+=================================
+
+Les RH sont le service de l'entreprise chargé des recrutements.
+Ils suivent un plan appelé la GPEC.
+
+.. toctree::
+  :maxdepth: 1
+
+		Plan GPEC             <people/gpec>
+		Pyramide de Maslow    <people/maslow>
+		Parcours des salariés <people/parcours>
 
 -----
 
