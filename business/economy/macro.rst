@@ -46,6 +46,10 @@ On va globalement s'intéresser
 	* aux décisions prises par des agents (en passant par des variables)
 	* interactions entre agents (modèles et équations)
 
+Économie fermée
+	Il s'agit du cadre dans lequel on considère l'économie dans ce cours. Une économie fermée
+	est une économie qui ne tiens pas compte des échanges avec l'extérieur.
+
 2. Présentation des variables
 ================================
 
@@ -61,6 +65,12 @@ Il existe trois grandes variables étudiées par la micro économie :
 	PIB (mesure de l'activité économie)     <macro/var/pib>
 	Taux de chômage                         <macro/var/work>
 	Taux d'inflation                        <macro/var/inf>
+
+Ces variables sont en relation deux à deux :
+
+	* **loi d'Okun** : PIB et Chômage
+	* **loi de Phillips** : Inflation et Chômage
+	* **relation  de Demande Agrégée** : PIB et Inflation
 
 3. Présentation des modèles
 =======================================
@@ -78,6 +88,19 @@ Les modèles sont divisés par temporalité
 	* moyen terme : ???
 	* long terme : ???
 
+4. Analyse économique à court terme
+========================================
+
+Une modification du marché des biens et services entraine une modification de la production donc de ceux qui produisent etc...
+
+.. toctree::
+	 :maxdepth: 1
+
+		 L'offre          <macro/act/offer>
+		 La demande       <macro/act/demand>
+
+
+
 -----
 
 **Crédits**
@@ -90,3 +113,5 @@ Les modèles sont divisés par temporalité
 	* https://fr.wikipedia.org/wiki/Carr%C3%A9_magique_de_Kaldor (carré de compétitivité de Kaldor)
 	* https://fr.wikipedia.org/wiki/%C3%89conomie_(discipline)
 	* https://www.studocu.com/fr/document/universite-paris-saclay/licence-economie-gestion-premiere-annee/notes-de-cours/macro-cours-1/1759259/view
+	* https://fr.wikipedia.org/wiki/Demande_agr%C3%A9g%C3%A9e
+	* https://macropol.wordpress.com/2015/02/15/la-demande-et-loffre-agregee/

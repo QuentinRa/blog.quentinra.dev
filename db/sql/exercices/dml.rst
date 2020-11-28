@@ -40,14 +40,13 @@ Niveau débutant
 
 .. note::
 
-	**Aide (e)** : Un déclencheur ou trigger est défini dans le cours de PL/SQL. Ici vous n'allez pas créer de trigger
-	mais coder un ordre select qui va remplir un attribut dérivé.
+	**Aide (e)** : Un déclencheur ou trigger est défini dans le cours de PL/SQL. En gros, lorsque vous allez
+	faire un insert, vous n'allez pas donner l'attribut dérivé. Le trigger va être déclenché et va avoir pour
+	travail de remplir cette attribut (n_spectacle) avec une valeur.
 
-	Il existes deux variables NEW et OLD. New est une structure contenant les attributs de votre INSERT
-	et leurs valeurs. Ici OLD qui contient les anciennes valeurs du tuple est NULL (car vous le créez).
-
-	Vous devez écrire une requête SQL qui utilise la variable NEW (utilisation: new.attribut)
-	et qui retourne (select) la valeur à donner à NEW.n_spectacle. - Calistro <:<wtf la question e>:>
+	Vous devez écrire la requête SQL qui donne la valeur a donner à n_spectacle. Les valeurs du tuple qui va être inséré sont
+	contenues dans NEW, donc vous pouvez utiliser NEW.attribut dans un where par exemple.
+	- Calistro <wtf la question>
 
 .. toctree::
    :maxdepth: 1
