@@ -10,7 +10,8 @@ Niveau débutant
 
 .. note::
 
-	Fichier de la base à importer : :download:`setup.sql <../../../assets/db/bases/spectacles_ensiie_1a_import.sql>`
+	| Fichier de la base à importer (mariadb) : :download:`setup.sql <../../../assets/db/bases/spectacles_ensiie_1a_import.sql>`
+	| Fichier de la base à importer (postgre) : :download:`setup.sql <../../../assets/db/bases/spectacles_ensiie_1a_import_p.sql>`
 
 1. Donnez les expressions SQL permettant d’ajouter les personnes suivantes :
 
@@ -39,10 +40,14 @@ Niveau débutant
 
 .. note::
 
-	Un déclencheur ou trigger est un script qui tourne en permanence. À chaque insertion par exemple,
-	il va regarder que toutes les contraintes sont respectées. Dans le cas où tout est ok, alors
-	les valeurs du insert (contenues dans NEW) remplacent les anciennes valeurs (mise dans OLD au cas où
-	vous voulez cf PL/SQL). - Calistro <:<wtf la question>:>
+	**Aide (e)** : Un déclencheur ou trigger est défini dans le cours de PL/SQL. Ici vous n'allez pas créer de trigger
+	mais coder un ordre select qui va remplir un attribut dérivé.
+
+	Il existes deux variables NEW et OLD. New est une structure contenant les attributs de votre INSERT
+	et leurs valeurs. Ici OLD qui contient les anciennes valeurs du tuple est NULL (car vous le créez).
+
+	Vous devez écrire une requête SQL qui utilise la variable NEW (utilisation: new.attribut)
+	et qui retourne (select) la valeur à donner à NEW.n_spectacle. - Calistro <:<wtf la question e>:>
 
 .. toctree::
    :maxdepth: 1

@@ -36,7 +36,7 @@ CREATE TABLE Guichetier(
 
 -- création de spectacle
 CREATE TABLE Spectacle(
-                          n_spectacle INTEGER AUTO_INCREMENT,
+                          n_spectacle SERIAL,
                           nom VARCHAR(100),
                           duree INTEGER, -- on considère c'est des minutes
                           s_type VARCHAR(10),
@@ -113,12 +113,12 @@ as SELECT sp.n_spectacle, r.n_salle, r_date, nom, s_type, prix,
 -- merci à Plutoker#8827
 -- merci à ElFamosoRaphiki#1803
 
-DELETE FROM Billet WHERE 1;
-DELETE FROM Guichetier WHERE 1;
-DELETE FROM Personne WHERE 1;
-DELETE FROM Representation WHERE 1;
-DELETE FROM Salle WHERE 1;
-DELETE FROM Spectacle WHERE 1;
+DELETE FROM Billet WHERE TRUE;
+DELETE FROM Guichetier WHERE TRUE;
+DELETE FROM Personne WHERE TRUE;
+DELETE FROM Representation WHERE TRUE;
+DELETE FROM Salle WHERE TRUE;
+DELETE FROM Spectacle WHERE TRUE;
 
 -- theatre
 INSERT INTO Spectacle(nom, s_type)

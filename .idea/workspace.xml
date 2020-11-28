@@ -26,8 +26,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/business/etude.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/business/etude.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/corp/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/db/bases/spectacles_ensiie_1a_import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/bases/spectacles_ensiie_1a_import.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sql/exercices/dml.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/dml.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sql/exercices/dml/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/dml/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sql/exercices/dml/d1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/sql/exercices/dml/d1.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +198,7 @@
       <workItem from="1606478167444" duration="15534000" />
       <workItem from="1606504537996" duration="34000" />
       <workItem from="1606507565918" duration="3121000" />
-      <workItem from="1606563395772" duration="3260000" />
+      <workItem from="1606563395772" duration="7594000" />
     </task>
     <servers />
   </component>
@@ -323,9 +325,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606146395715" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606323939265">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606570327279">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606323939265" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606570327279" />
   </component>
 </project>

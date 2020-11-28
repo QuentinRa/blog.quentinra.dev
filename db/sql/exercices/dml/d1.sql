@@ -53,10 +53,16 @@ where extract(YEAR from b_date) = '2013' AND s_type='theatre';
 
 -- devient
 
-Select sum(prix) * (nb_places - nb_places_libres) as "CA theatre"
-FROM guichet join salle s on guichet.n_salle = s.n_salle
-where s_type='theatre' AND extract(YEAR from b_date) = '2013';
-;
+-- on va calculer une requête qui retourne pour chaque salle
+-- qté * nombre de places vendues
+-- puis on fait la somme du résultat de cette requête
+SELECT SUM(Montant.result)
+FROM
+    -- ici on créé une table depuis une requête avec un attribut result pour résultat
+    (Select prix * (nb_places - nb_places_libres) as "result"
+     FROM Guichet NATURAL JOIN Salle
+     where s_type='theatre' AND extract(YEAR from b_date) = '2013')
+        as Montant;
 
 -- (e) Quelle requête permettrait d’obtenir l’attribut dérivé n_spectacle de la relation Billet ?
 --     Sans définir explicitement un déclencheur, on se placera dans le cadre où l’on a accès aux attributs
