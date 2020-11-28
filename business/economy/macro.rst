@@ -96,10 +96,9 @@ Une modification du marché des biens et services entraine une modification de l
 .. toctree::
 	 :maxdepth: 1
 
-		 L'offre          <macro/act/offer>
-		 La demande       <macro/act/demand>
-
-
+		 L'offre               <macro/act/offer>
+		 La demande            <macro/act/demand>
+		 Modèle : équilibre    <macro/act/balance>
 
 -----
 
