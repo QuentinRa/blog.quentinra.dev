@@ -1,6 +1,7 @@
 -------------- cours
 
 https://docs.anaconda.com/restructuredtext/detailed/
+https://docutils.sourceforge.io/docs/user/rst/quickref.html
 
 data:,test%test
 

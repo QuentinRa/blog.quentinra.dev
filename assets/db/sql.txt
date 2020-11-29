@@ -1,2 +1,0 @@
-on update/delete
-cascade/restrict

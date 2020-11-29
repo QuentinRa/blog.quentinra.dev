@@ -29,14 +29,22 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/autres/calistro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/autres/calistro.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/business/eco.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/business/eco.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/business/etude.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/business/etude.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/economy/macro.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/economy/macro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/economy/macro/fin/circ.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/fin/circ.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/CHEKCLIST.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/CHEKCLIST.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/autres/calistro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/_calistro.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/autres/git.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/git.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/autres/rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/business/eco.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/business/etude.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/etude.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/db/sql.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/math/analyse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/maths/analyse.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/math/bric.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/maths/bric.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/math/matrix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/maths/matrix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/math/proba.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/maths/proba.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/system/bash.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/bash.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/system/linux.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/economy/macro/exercices/general.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/exercices/general.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/economy/macro/exercices/is.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/exercices/is.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/economy/macro/exercices/lm.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/exercices/lm.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,11 +81,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\_notes\maths" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\_notes" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\notes" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\business\macro" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\business\corp" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\business\docs" />
-      <recent name="C:\Users\quent\Documents\texas-res\business\corp" />
-      <recent name="C:\Users\quent\Documents\texas-res\business\economy" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\exercices" />
@@ -206,7 +214,7 @@
       <workItem from="1606504537996" duration="34000" />
       <workItem from="1606507565918" duration="3121000" />
       <workItem from="1606563395772" duration="27985000" />
-      <workItem from="1606640317445" duration="16882000" />
+      <workItem from="1606640317445" duration="19802000" />
     </task>
     <servers />
   </component>
@@ -325,10 +333,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="376" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1603556286896" />
-    <state x="480" y="163" width="575" height="498" key="find.popup" timestamp="1606648629142">
+    <state x="480" y="163" width="575" height="498" key="find.popup" timestamp="1606667864316">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="480" y="163" width="575" height="498" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1606648629142" />
+    <state x="480" y="163" width="575" height="498" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1606667864316" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1606146395715">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
