@@ -26,5 +26,5 @@ Vocabulaire
 	* flux financier : flux d'argent
 	* comptant : paiement tout de suite
 	* à crédit : paiement se fera plus tard
-	* **débit** : flux entrant = emploi = destination = but
-	* **crédit** : flux sortant = ressource = origine = moyen
+	* **débit** : flux entrant = **emploi** = destination = but
+	* **crédit** : flux sortant = **ressource** = origine = moyen

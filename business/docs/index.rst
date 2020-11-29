@@ -75,6 +75,8 @@ obligatoires qui sont le bilan comptable et le compte de résultat.
 -----
 
 **Crédits**
+	* Anabelle DEMULE THENON (enseignante à l'IUT de Sénart-Fontainebleau)
+	* Sandrine LARGE (enseignante à l'IUT de Sénart-Fontainebleau)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**

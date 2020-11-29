@@ -29,12 +29,11 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/corp/c2g/cdr.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/docs/c2g/cdr.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/corp/docs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/docs/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/corp/facture/examples.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/docs/facture/examples.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/corp/facture/products.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/docs/facture/products.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/corp/facture/reductions.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/docs/facture/reductions.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/docs/bilan/compte.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/docs/bilan/compte.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/docs/bilan/flux.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/docs/bilan/flux.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/docs/bilan/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/docs/bilan/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/docs/bilan/table.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/docs/bilan/table.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/docs/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +203,7 @@
       <workItem from="1606504537996" duration="34000" />
       <workItem from="1606507565918" duration="3121000" />
       <workItem from="1606563395772" duration="27985000" />
-      <workItem from="1606640317445" duration="25565000" />
+      <workItem from="1606640317445" duration="29965000" />
     </task>
     <servers />
   </component>
