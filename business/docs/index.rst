@@ -4,8 +4,8 @@
 Documents d'une Entreprise
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.0}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 28/11/2020}`
+| :math:`\color{grey}{Version \ 2.1.1}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 29/11/2020}`
 
 Cette partie indique les documents
 que vous risquez de trouver dans une entreprise.
@@ -57,10 +57,25 @@ heures supplémentaires = variables).
 
 		Compte de résultat différentiel    <c2g/cdr>
 
+3. Bilan comptable et compte de résultat
+================================================
+
+On appelle un échange entre deux acteurs un flux. Toute entreprise
+doit converser la totalité des flux donc ses échanges dans deux documents
+obligatoires qui sont le bilan comptable et le compte de résultat.
+
+.. toctree::
+	 :maxdepth: 1
+
+		Notion de flux                   <bilan/flux>
+		Bilan comptable                  <bilan/index>
+		Compte de résultat               <bilan/compte>
+		Ressource : Table comptable      <bilan/table>
+
 -----
 
 **Crédits**
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* lien
+	* aucun

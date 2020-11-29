@@ -29,22 +29,12 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/CHEKCLIST.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/CHEKCLIST.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/autres/calistro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/_calistro.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/autres/git.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/git.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/autres/rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/business/eco.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/business/etude.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/etude.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/db/sql.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/math/analyse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/maths/analyse.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/math/bric.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/maths/bric.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/math/matrix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/maths/matrix.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/math/proba.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/maths/proba.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/system/bash.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/bash.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/system/linux.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/economy/macro/exercices/general.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/exercices/general.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/economy/macro/exercices/is.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/exercices/is.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/economy/macro/exercices/lm.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/exercices/lm.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/corp/c2g/cdr.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/docs/c2g/cdr.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/corp/docs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/docs/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/corp/facture/examples.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/docs/facture/examples.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/corp/facture/products.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/docs/facture/products.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/corp/facture/reductions.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/docs/facture/reductions.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +63,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/business/economy/macro/exercices" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/business/docs/bilan" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="proofread" />
@@ -81,18 +71,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\business\docs" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\_notes\maths" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\_notes" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\notes" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\business\macro" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\business\corp" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\business\docs\bilan" />
       <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\fin" />
       <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\act" />
       <recent name="C:\Users\quent\Documents\texas-res\business\corp\docs" />
-      <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\var" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -214,7 +204,7 @@
       <workItem from="1606504537996" duration="34000" />
       <workItem from="1606507565918" duration="3121000" />
       <workItem from="1606563395772" duration="27985000" />
-      <workItem from="1606640317445" duration="19802000" />
+      <workItem from="1606640317445" duration="25565000" />
     </task>
     <servers />
   </component>
@@ -333,17 +323,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="376" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1603556286896" />
-    <state x="480" y="163" width="575" height="498" key="find.popup" timestamp="1606667864316">
+    <state x="480" y="163" width="575" height="498" key="find.popup" timestamp="1606671409594">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="480" y="163" width="575" height="498" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1606667864316" />
+    <state x="480" y="163" width="575" height="498" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1606671409594" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1606146395715">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606146395715" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606648619894">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606671386413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606648619894" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606671386413" />
   </component>
 </project>
