@@ -98,7 +98,31 @@ Une modification du marché des biens et services entraine une modification de l
 
 		 L'offre                                               <macro/act/offer>
 		 La demande                                            <macro/act/demand>
-		 Modèle : équilibre Offre-Demande                      <macro/act/balance>
+		 Modèle : équilibre Offre-Demande IS                   <macro/act/balance>
+
+Cependant pour comprendre le fonctionnement de l'économie a court terme, il faut également voir la partie
+sur les marchés financiers et la monnaie.
+
+5. Le marché financier
+============================================
+
+Le marché financier constitue une étude de l'évolution de la valeur de
+la monnaie, ce qui est au à l'inflation (ex: s'il faut plus de monnaie pour acheter
+qu'avant = inflation, alors la valeur de votre monnaie a diminuée).
+
+.. toctree::
+	 :maxdepth: 1
+
+		Définition de la monnaie                     <macro/fin/def>
+		Motifs de détention de la monnaie            <macro/fin/motif>
+		Vitesse de circulation de la monnaie         <macro/fin/circ>
+		Situation d'équilibre : LM                   <macro/fin/balance>
+
+6. Modèle IS/LM
+============================================
+
+La partie 4 présente la partie IS du modèle et la partie 5 présente la partie LM du modèle,
+cette partie présente la mise en commun des deux modèles pour obtenir un modèle à court terme.
 
 -----
 
@@ -114,3 +138,4 @@ Une modification du marché des biens et services entraine une modification de l
 	* https://www.studocu.com/fr/document/universite-paris-saclay/licence-economie-gestion-premiere-annee/notes-de-cours/macro-cours-1/1759259/view
 	* https://fr.wikipedia.org/wiki/Demande_agr%C3%A9g%C3%A9e
 	* https://macropol.wordpress.com/2015/02/15/la-demande-et-loffre-agregee/
+	* https://www.lafinancepourtous.com/decryptages/politiques-economiques/theories-economiques/theorie-quantitative-de-la-monnaie/

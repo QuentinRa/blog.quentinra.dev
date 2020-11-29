@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -58,7 +61,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/business/economy/macro/act" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/business/economy/macro/fin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="proofread" />
@@ -73,11 +76,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array\string\string1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\fin" />
       <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\act" />
       <recent name="C:\Users\quent\Documents\texas-res\business\corp\docs" />
       <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\var" />
       <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\work" />
-      <recent name="C:\Users\quent\Documents\texas-res\business\corp\people" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -199,7 +202,7 @@
       <workItem from="1606504537996" duration="34000" />
       <workItem from="1606507565918" duration="3121000" />
       <workItem from="1606563395772" duration="27985000" />
-      <workItem from="1606640317445" duration="6485000" />
+      <workItem from="1606640317445" duration="12919000" />
     </task>
     <servers />
   </component>
@@ -318,17 +321,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="376" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1603556286896" />
-    <state x="480" y="163" width="575" height="498" key="find.popup" timestamp="1606501214488">
+    <state x="480" y="163" width="575" height="498" key="find.popup" timestamp="1606648629142">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="480" y="163" width="575" height="498" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1606501214488" />
+    <state x="480" y="163" width="575" height="498" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1606648629142" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1606146395715">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606146395715" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606570327279">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606648619894">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606570327279" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606648619894" />
   </component>
 </project>

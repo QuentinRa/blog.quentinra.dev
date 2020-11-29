@@ -9,7 +9,8 @@ Variables
 	* :code:`G` = Dépenses de l'état/publiques
 	* :code:`NX` = N : importations et X : exportations, aucun ici (économie fermée)
 
-La demande en économie fermée est :code:`D = C + I + G`.
+La demande en économie fermée est :code:`D = C + I + G` ou :code:`Z = C + I + G` (deux lettres ^pour la demande,
+ici on va garder D).
 
 Consommation (C)
 	La consommation consiste aux achats de bien et services. L'argent dépensé corresponds

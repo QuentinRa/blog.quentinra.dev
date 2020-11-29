@@ -15,7 +15,7 @@ correspond au moment où :code:`Y = D` donc :code:`Y = C + I + G = c0 + c(Y-T) +
 Cette equation deux fois Y or on veut une equations Y= donc
 on peut réécrire l'équation sous la forme :code:`Y = 1/(1-c) * (c0 + I + G - cT)`.
 
-	* :code:`c0 + I + G - cT` : dépenses autonomes (donc ne varie pas avec Y)
+	* :code:`c0 + I + G - cT` : dépenses autonomes (dépenses qui ne dépendent pas du revenu Y)
 	* :code:`1/(1-c)` : multiplicateur keynésien
 
 Multiplicateur Keynésien
@@ -31,6 +31,16 @@ Multiplicateur Keynésien
 			* provoque une augmentation de la consommation (C = c0 + cYd)
 			* provoque une augmentation du revenu Y  (remplace nouveau C dans Y = C + I + D)
 			* et pareil que précédemment...
-			* on mesure l'impact avec Y/T = nombre, baisse de 1€ = augmentation (nombre) ou diminution (-nombre) de Y.
+			* on mesure l'impact/le multiplicateur fiscal avec Y/T = nombre, baisse de 1€ = augmentation (nombre) ou diminution (-nombre) de Y.
 
 	Lorsqu'on observe ce comportement en + l'infini, alors cela tends vers :code:`1/(1-c)` : le multiplicateur keynésien.
+
+Demande effective de Keynes
+	* Distinction entre les dépenses
+		* anticipée
+		* réalisées
+	* Dans le cas Y=D
+			* Anticipation correcte
+			* D > Y donc déstockage/embauche
+			* D < Y donc stock/licencie
+	* Ce qui fait la différence est donc la qualité des anticipations
