@@ -4,8 +4,8 @@
 Macroéconomie
 ================================
 
-| :math:`\color{grey}{Version \ 2.1.1}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 28/11/2020}`
+| :math:`\color{grey}{Version \ 2.2.5}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 29/11/2020}`
 
 Ce cours est un cours très théorique sur la modélisation de
 l'économie au niveau de grand groupes d'acteurs (**macro**).
@@ -88,7 +88,7 @@ Les modèles sont divisés par temporalité
 	* moyen terme : ???
 	* long terme : ???
 
-4. Analyse économique à court terme
+4. Le marché des biens et services
 ========================================
 
 Une modification du marché des biens et services entraine une modification de la production donc de ceux qui produisent etc...
@@ -124,6 +124,30 @@ qu'avant = inflation, alors la valeur de votre monnaie a diminuée).
 La partie 4 présente la partie IS du modèle et la partie 5 présente la partie LM du modèle,
 cette partie présente la mise en commun des deux modèles pour obtenir un modèle à court terme.
 
+Ce modèle présente les variations du PIB (IS) si on fait varier les taux d'intérêts (LM).
+
+La courbe I=S est négative, si le taux d'intérêt diminue, alors S augmente (car moins d'argent à dépenser)
+donc Y augmente car S augmente. On a donc une courbe IS (Y+, i-) donc quand Y augmente i diminue et inversement.
+
+La courbe L=M est positive, le taux d'intérêt augmente a mesure que Y augmente.
+
+Le moment ou IS=LM c'est l'équilibre entre le marché financier et celui des biens et services.
+
+.. figure:: /assets/business/macro/68747470733a2f2f7777772e6d656c6368696f722e66722f6c652d6d6f64656c652d6c6d.png
+
+	Crédit : Image de melchior (https://www.melchior.fr/le-modele-lm)
+
+7. Exercices
+==========================
+
+.. toctree::
+	 :maxdepth: 1
+
+		Macroéconomie                   <macro/exercices/general>
+		Marché des biens et services    <macro/exercices/is>
+		Marché financier                <macro/exercices/lm>
+		Modèle IS/LM                    <macro/exercices/is_lm>
+
 -----
 
 **Crédits**
@@ -139,3 +163,4 @@ cette partie présente la mise en commun des deux modèles pour obtenir un modè
 	* https://fr.wikipedia.org/wiki/Demande_agr%C3%A9g%C3%A9e
 	* https://macropol.wordpress.com/2015/02/15/la-demande-et-loffre-agregee/
 	* https://www.lafinancepourtous.com/decryptages/politiques-economiques/theories-economiques/theorie-quantitative-de-la-monnaie/
+	* https://www.melchior.fr/le-modele-lm

@@ -32,7 +32,7 @@ d'exercices au format spécifié dans `assets/exercice.rst`.
 
 Créé par Quentin Ramsamy--Ageorges (ramsamy.ws@gmail.com).
 
-Version 1.21.265.
+Version 1.22.269.
 \
 Création le 20 juillet 2020.
 \

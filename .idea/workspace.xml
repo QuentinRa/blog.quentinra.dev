@@ -29,10 +29,14 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/autres/calistro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/autres/calistro.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/business/eco.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/business/eco.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/business/etude.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/business/etude.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business/economy/macro.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business/economy/macro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/economy/macro/act/balance.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/act/balance.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/economy/macro/act/demand.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/act/demand.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/economy/macro/fin/circ.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/fin/circ.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +65,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/business/economy/macro/fin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/business/economy/macro/exercices" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="proofread" />
@@ -69,18 +73,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\business\macro" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\business\corp" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\business\docs" />
       <recent name="C:\Users\quent\Documents\texas-res\business\corp" />
       <recent name="C:\Users\quent\Documents\texas-res\business\economy" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\array\string\string1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\fin" />
       <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\act" />
       <recent name="C:\Users\quent\Documents\texas-res\business\corp\docs" />
       <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\var" />
-      <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\work" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -202,7 +206,7 @@
       <workItem from="1606504537996" duration="34000" />
       <workItem from="1606507565918" duration="3121000" />
       <workItem from="1606563395772" duration="27985000" />
-      <workItem from="1606640317445" duration="12919000" />
+      <workItem from="1606640317445" duration="16882000" />
     </task>
     <servers />
   </component>

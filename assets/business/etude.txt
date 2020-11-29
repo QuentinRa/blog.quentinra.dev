@@ -76,6 +76,9 @@ besoins -> productions mais ressources sont limités
 
 https://partage.imt.fr/index.php/s/A8FAQyYBYGpeZZa?path=%2F
 
+La gestion économique consiste à étudier pourquoi les agents économiques ont fait tel ou tel choix.
+Notamment étudier pourquoi les ressources qui sont finies et limités sont utilisés de tel façon.
+
 Stop page 13
 
 	* Philippe CASTELNAU (Institut Mines-Telecom Business School)

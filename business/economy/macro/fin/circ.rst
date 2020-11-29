@@ -13,3 +13,8 @@ monétaire (argent en circulation) fait varier les prix. Fischer
 
 On considère généralement que V est fixe sur une période de temps. Donc
 la masse monétaire se répercute directement sur les prix.
+
+Mesure du pouvoir d'achat
+	On pose k = 1/v soit l'inverse de la vitesse de circulation.
+
+	On obtient :code:`M/p = k Y` soit la demande de monnaie proportionnelle au revenu/production/pib.
