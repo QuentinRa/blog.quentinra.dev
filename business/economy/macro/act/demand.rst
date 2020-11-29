@@ -21,17 +21,21 @@ Consommation (C)
 
 	Les acteurs peuvent consommer ou épargner leur revenu disponible.
 
-		* :code:`S` = épargne
+		* :code:`S` = épargne (privée)
 		* :code:`c0` = consommation incompressibles (minimum pour la survie)
 		* :code:`c` = valeur entre 0 et 1 qui indique le pourcentage du revenu disponible utilisé pour les autres consommations (propension marginale à consommer)
 		* On a donc :code:`C = c0 + c(Y-T) = c0 + cYd`
-		* On a donc :code:`S = Y - T - C = Yd - C`
 
 L'investissement (I)
 	Il s'agit de l'achat d'immobilisations (nouvelles machines, voiture, ....), soit des biens durables.
 	Un investissement est réalisé avec un emprunt donc est influencé par le taux d'intérêt.
 
 	Taux d'intérêt réel : taux d'intérêt nominal (courant) corrigé par l'inflation.
+
+		* On a donc :code:`S_privée = Y - T - C = Yd - C`
+		* On a donc :code:`S_publique = T - G` (impôts moins dépenses)
+		* :code:`I = S_privée+S_publique = S_nationale`
+		* Modèle IS : De la même manière que Offre = Demande, autant d'argent épargné doit être investit.
 
 Dépenses de l'état/publiques (G)
 	L'état fait des dépenses (G) et prélève des impôts (T).

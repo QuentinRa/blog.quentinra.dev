@@ -4,4 +4,18 @@ Notamment étudier pourquoi les ressources qui sont finies et limités sont util
 Keynes théorie emploi, intérêt et monnaie (1936) sert de fondement à la th de la macroéconomie.
 
 Stop page 7
-Stop page 19 (presque finie)
+Stop page 23 (presque finie)
+
+Demande effective de J.M. Keynes
+
+	* Distinction entre les dépenses
+		* anticipée
+		* réalisées
+	* Dans le cas Y=D
+			* Anticipation correcte
+			* D > Y donc déstockage/embauche
+			* D < Y donc stock/licencie
+	* Ce qui fait la différence est donc la qualité des anticipations
+
+Impact d’une hausse des dépenses publiques
+	* ???
