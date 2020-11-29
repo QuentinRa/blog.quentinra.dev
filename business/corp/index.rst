@@ -5,7 +5,7 @@ Entreprise
 ================================
 
 | :math:`\color{grey}{Version \ 1.0.0}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 27/11/2020}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 29/11/2020}`
 
 Ce cours est une synthèse de toutes
 les notions liées aux monde des entreprises, ce qui comprends principalement

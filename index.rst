@@ -76,6 +76,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
 
 		Entreprises : création et environnement     <business/corp/index>
 		Documents d'une enterprise                  <business/corp/docs>
+		Insertion professionnelle                   <business/corp/insertion>
 
 .. toctree::
     :caption: Économie

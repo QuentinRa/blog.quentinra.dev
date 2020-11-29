@@ -4,6 +4,9 @@
 Documents d'une Entreprise
 ================================
 
+| :math:`\color{grey}{Version \ 1.0.0}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 28/11/2020}`
+
 Cette partie indique les documents
 que vous risquez de trouver dans une entreprise.
 
