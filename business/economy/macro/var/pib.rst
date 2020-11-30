@@ -30,6 +30,6 @@ On distingue également deux PIB :
 Taux de croissance
 	Le taux de croissance est le taux : (pib année x+n)/(pib année x).
 
-Indice des prix à la consommation (IPC)
+Indice des prix à la consommation (IPC)/ Déflateur du PIB
 	L'Indice des prix à la consommation correspond au calcul : PIB nominal/PIB réel
 

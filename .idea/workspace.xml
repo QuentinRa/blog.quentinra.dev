@@ -29,9 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/economy/macro/exercices/general/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/exercices/general/d1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/economy/macro/exercices/general/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/exercices/general/d2.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/economy/macro/exercices/general/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/exercices/general/d3.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/economy/macro/exercices/is/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/exercices/is/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/economy/macro/var/pib.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/var/pib.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +201,7 @@
       <workItem from="1606507565918" duration="3121000" />
       <workItem from="1606563395772" duration="27985000" />
       <workItem from="1606640317445" duration="30012000" />
-      <workItem from="1606727106834" duration="21496000" />
+      <workItem from="1606727106834" duration="25530000" />
     </task>
     <servers />
   </component>
