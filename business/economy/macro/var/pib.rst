@@ -27,4 +27,9 @@ On distingue également deux PIB :
 
 		* on calculée Somme(qte année x * prix de l'année x) pour les années x = PIB nominal
 
-Le taux de croissance est le taux : (pib année x+n)/(pib année x).
+Taux de croissance
+	Le taux de croissance est le taux : (pib année x+n)/(pib année x).
+
+Indice des prix à la consommation (IPC)
+	L'Indice des prix à la consommation correspond au calcul : PIB nominal/PIB réel
+

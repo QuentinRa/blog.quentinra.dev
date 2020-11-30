@@ -42,7 +42,7 @@ Ordinateurs 4         1000 euros 6         500 euros
 =========== ========= ========== ========= ============
 
 1.
-	Utilisez l’année 2000 pour créer un indice des prix. Avec cet indice, mesurez le tau
+	Utilisez l’année 2000 pour créer un indice des prix. Avec cet indice, mesurez le taux
 	d’inflation de la première à la deuxième année.
 2.
 	Utilisez l’année 2001 pour créer un indice des prix. Avec cet indice, mesurez le taux
