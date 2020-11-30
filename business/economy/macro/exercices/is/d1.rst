@@ -75,14 +75,15 @@ multiplicateur des dépenses gouvernementales ?
 	* On augmente G de 250 donc 750.
 	* dY = 1/(1-0.75) * (0+0+250-0.75*0) = 250/0.25 = 1000
 	* dC = 0 + 0.75(1000 − 0) = 0.75*1000 = 750
-	* ce qui donne
+	* ce qui donne comme nouvelles valeurs
 		* Y* = Y + dY = 2500 + 1000 = 3500
 		* C* = C + dC = 1750 + 750 = 2500
 	* multiplicateur = dY/dC
-		* dY = 1/(1-c) * (c0 + dI + dG - cT)
-		* dY = 1/(1-c) * 750
-		* dY = 1/(1-c) * dC
-		* dY/dC = 1/(1-c)
+		* on voit que dY = 1/(1-0.75) * 250
+		* on est un génie et on en déduis que ça fait
+		* dY = 4 * 250
+		* or dG = 250
+		* donc dY/dG = 4 = multiplicateur des dépenses gouvernementales
 
 Question 6
 ---------------------
@@ -91,7 +92,12 @@ A partir des résultats de la question précédente, calculez l’épargne priv�
 publique et l’épargne nationale. Qu’en est-il de la relation entre l’épargne nationale et
 l’investissement ?
 
-...
+	* (5) C = 2500
+	* (5) Y = 3500
+	* S_privée = Y - T - C = 3500 - 500 - 2500 = 500
+	* S_publique = T - G = 500-750 = -250
+	* S_nationale = S_privée+S_publique = 500-250 = 250
+	* I = S_nationale ? 250 = 250  ? vrai
 
 Question 7
 ---------------------
@@ -101,7 +107,18 @@ proposés, calculez les variations des variables d’équilibre lorsque les imp�
 250. Quel est le montant des variables d’équilibre à présent. Quel est le multiplicateur
 des impôts ?
 
-...
+	* On réduit T de 250 soit dT=-250
+	* dY = 1/(1-0.75) * (0+0+0-0.75*-250) = 187.5/0.25 = 750
+	* dC = 0 + 0.75(750 − -250) = 0.75*500 = 750
+	* ce qui donne comme nouvelles valeurs
+		* Y* = Y + dY = 2500 + 750 = 3250
+		* C* = C + dC = 1750 + 750 = 2500
+	* multiplicateur = dY/dC
+		* on voit que dY = 1/(1-0.75) * (-0.75*-250)
+		* on est un génie et on en déduis que ça fait
+		* dY = 4 * -0.75 * - 250 = -3 * -250
+		* or dT = -250
+		* donc dY/dT = -3 = multiplicateur des impôts
 
 Question 8
 ---------------------
@@ -110,7 +127,12 @@ A partir des résultats de la question précédente, calculez l’épargne priv�
 publique et l’épargne nationale. Qu’en est-il de la relation entre l’épargne nationale et
 l’investissement ?
 
-...
+	* (5) C = 2500
+	* (5) Y = 3250
+	* S_privée = Y - T - C = 3250 - 250 - 2500 = 500
+	* S_publique = T - G = 250-500 = -250
+	* S_nationale = S_privée+S_publique = 500-250 = 250
+	* I = S_nationale ? 250 = 250  ? vrai
 
 Question 9
 ---------------------
@@ -119,16 +141,28 @@ En vous appuyant sur vos résultats comparez l’impact d’une hausse des dépe
 budgétaires et d’une baisse des impôts d’un même montant 250 sur le revenu national
 et la consommation. Qu’en déduisez-vous ?
 
-...
+	* Hausse de G de 250 donc dG = +250
+	* Baisse de T de 250 donc dT = -250
+	* depuis les calculs
+		* multiplicateur 3 pour impôts donc Y = 3*250 = 750
+		* multiplicateur 4 pour dépenses donc Y = 4*250 = 1000
+	* donc dépenses augmente plus le PIB que les impôts
+	* ce qui est du au fait que les impôts influencent indirectement le revenu car on aura plus de revenu disponible (Yd).
 
 Question 10
 ---------------------
+
+**<attention> réponse foireuse**
 
 De même comparez l’impact d’une hausse des dépenses budgétaires et d’une baisse
 des impôts d’un même montant 250 sur l’égalité entre l’investissement et l’épargne.
 Qu’en déduisez-vous ?
 
-...
+	* Sur le même principe
+	* Y = c0 + c(Y-T) + I + G
+		* Si G augmente alors toujours autant d'investissements
+		* Si T baisse alors épargne donc investissements car S = Yd - C = Y - T - C
+		* donc si Y-T augmente alors c(Y-T) laisse un plus grand S
 
 **Crédits**
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
