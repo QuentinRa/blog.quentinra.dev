@@ -84,9 +84,8 @@ phénomènes non quantifiables (effets psychologiques, l'histoire, ...) ne sont 
 
 Les modèles sont divisés par temporalité
 
-	* court terme : ???
-	* moyen terme : ???
-	* long terme : ???
+	* court terme : changer une variable n'a pas encore de conséquences, rigidité des prix
+	* moyen terme et long terme : on doit calculer des ajustements face aux conséquences
 
 4. Le marché des biens et services
 ========================================
@@ -164,3 +163,5 @@ Le moment ou IS=LM c'est l'équilibre entre le marché financier et celui des bi
 	* https://macropol.wordpress.com/2015/02/15/la-demande-et-loffre-agregee/
 	* https://www.lafinancepourtous.com/decryptages/politiques-economiques/theories-economiques/theorie-quantitative-de-la-monnaie/
 	* https://www.melchior.fr/le-modele-lm
+	* http://public.iutenligne.net/economie/simonnet/equilibre_macroeconomique/Chapitre-2/index.html
+	*

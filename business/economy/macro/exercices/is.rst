@@ -56,6 +56,11 @@ avec c0 = 250, c1 = 0.75, I = 250, G = 500 et T = 500.
 	des impôts d’un même montant 250 sur l’égalité entre l’investissement et l’épargne.
 	Qu’en déduisez-vous ?
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<is/d1>
+
 | :code:`[TAG] ENSIIE MME TD2 2020 S1`
 
 2. L’équilibre sur le marché des biens et services
@@ -84,6 +89,11 @@ avec c0 = 200, c1 = 0.75, I = 100, G = 100 et T = 100.
 	la nouvelle droite de dépense planifiée. Evaluez (calculez) et représentez sur le
 	graphique la variation des dépenses autonomes et le déplacement de la courbe de
 	dépense planifiée.
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<is/d2>
 
 | :code:`[TAG] ENSIIE MME TD2 2020 S1`
 

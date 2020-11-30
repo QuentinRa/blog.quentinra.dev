@@ -20,6 +20,11 @@ et donnez une justification.
 	Le mariage d’un homme avec sa femme de ménage (si celle-ci continue à faire le
 	ménage pour le couple) réduit le PIB d’une nation.
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<general/d1>
+
 | :code:`[TAG] ENSIIE MME TD1 2020 S1`
 
 2. Inflation
@@ -47,6 +52,11 @@ Ordinateurs 4         1000 euros 6         500 euros
 	l’inflation. Comment le résoudre ? Quelle hypothèse doit-on avancer pour résoudre ce
 	problème ?
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<general/d2>
+
 | :code:`[TAG] ENSIIE MME TD1 2020 S1`
 
 3. Calcul du PIB
@@ -73,6 +83,11 @@ Ordinateurs 4         4000 euros 6         500 euros
 	Mettez en évidence les changement du déflateur de PIB en utilisant 2000 et 2001
 	comme des années de base. Mettez en relation vos résultats avec votre réponse de la
 	question précédente.
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<general/d3>
 
 | :code:`[TAG] ENSIIE MME TD1 2020 S1`
 

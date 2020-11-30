@@ -45,6 +45,11 @@ Ms=16.000 euros.
 
 | :code:`[TAG] ENSIIE MME TD3 2020 S1`
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<lm/d1>
+
 2. Bons du Trésor, prix et taux d’intérêt
 ------------------------------------------------
 
@@ -59,6 +64,11 @@ On vous propose un bon du Trésor qui vous rapportera 100 euros dans une année.
 	relation.
 3.
 	Si le taux d’intérêt est de 8%, quel est le prix du bon du Trésor aujourd’hui ?
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<lm/d2>
 
 | :code:`[TAG] ENSIIE MME TD3 2020 S1`
 
@@ -87,6 +97,11 @@ Md = PY (0, 35 − i).
 	“Lorsque les individus gagnent plus d’argent, ils veulent détenir plus de bons du
 	Trésor”. Qu’est-ce qui est faux dans cette affirmation ?
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<lm/d3>
+
 | :code:`[TAG] ENSIIE MME TD3 2020 S1`
 
 4. La vitesse de circulation de la monnaie et inflation
@@ -105,6 +120,11 @@ Md = PY (0, 35 − i).
 	“L’inflation est toujours et partout un phénomène monétaire”. Cette affirmation repose
 	sur une hypothèse relative à la vitesse de circulation de la monnaie, laquelle ? Cette
 	hypothèse est-elle réaliste ?
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<lm/d4>
 
 | :code:`[TAG] ENSIIE MME TD3 2020 S1`
 

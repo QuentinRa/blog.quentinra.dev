@@ -1,0 +1,36 @@
+================================
+1. Vrai-faux-incertain
+================================
+
+.. image:: https://img.shields.io/badge/correction-non%20vérifiée-red.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+Indiquez si les phrases suivantes sont vraies ou fausses
+et donnez une justification.
+
+1.
+	Une réduction du taux de chômage suppose une forte croissance du PIB.
+2.
+	Si l’indice des prix à la consommation est de 108 au Japon et de 104 aux États-Unis,
+	cela signifie que le taux d’inflation est plus élevé au Japon qu’aux États-Unis.
+3.
+	Le mariage d’un homme avec sa femme de ménage (si celle-ci continue à faire le
+	ménage pour le couple) réduit le PIB d’une nation.
+
+Question 1
+---------------------------
+
+Faux, le taux de chômage n'est pas influencé par le PIB.
+
+Question 2
+---------------------------
+
+Faux, pour obtenir le taux d'inflation, il faut comparer avec l'indice
+des prix du même pays une autre année. Regarder uniquement les indices
+des prix ne donne pas d'informations sur le taux d'inflation.
+
+Question 3
+---------------------------
+
+Vrai et Faux. Si la femme n'est plus payée, alors elle a moins
+pour consommer donc Y diminue. Si elle est toujours payée, alors aucun changement.
