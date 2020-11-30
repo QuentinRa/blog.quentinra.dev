@@ -49,7 +49,16 @@ Potentiel-tâches et PERT.
 3. Plus court chemin
 =============================
 
-...
+Voici quatre algorithmes pour trouver le plus court
+chemin dans un graphe.
+
+.. toctree::
+			:maxdepth: 1
+
+				Algorithme de Dijkstra         <files/pcc/dijkstra>
+				Algorithme de Bellman-Ford     <files/pcc/bellman_ford>
+				Algorithme de Floyd-Warshall   <files/pcc/floyd_warshall>
+				Algorithme de Johnson          <files/pcc/johnson>
 
 4. Exercices
 ==============
