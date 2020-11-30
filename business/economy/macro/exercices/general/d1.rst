@@ -2,7 +2,7 @@
 1. Vrai-faux-incertain
 ================================
 
-.. image:: https://img.shields.io/badge/correction-%20vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
    :alt: correction vérifiée
 
 Indiquez si les phrases suivantes sont vraies ou fausses
@@ -34,3 +34,6 @@ Question 3
 
 Vrai et Faux. Si la femme n'est plus payée, alors elle a moins
 pour consommer donc Y diminue. Si elle est toujours payée, alors aucun changement.
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

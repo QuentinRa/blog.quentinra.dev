@@ -2,6 +2,69 @@
 3. Calcul du PIB
 ================================
 
-.. image:: https://img.shields.io/badge/correction-non%20vérifiée-red.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
    :alt: correction vérifiée
 
+Supposons qu’un pays ne produise que deux biens, des voitures et des ordinateurs. Les unités
+produites et leur prix sont indiqués dans le tableau ci-dessous :
+
+=========== ========= ========== ========= ============
+\           2000      2000       2001      2001
+=========== ========= ========== ========= ============
+            Quantités Prix       Quantités Prix
+Voitures    10        2000 euros 12        3000 euros
+Ordinateurs 4         1000 euros 6         500 euros
+=========== ========= ========== ========= ============
+
+1. Calculez le PIB nominal pour chaque année.
+2. Calculez le PIB réel pour chaque année, en utilisant l’année 2000 comme année de base.
+3. Calculez le PIB réel pour chaque année, en utilisant l’année 2001 comme année de base.
+4. Déterminez le taux de croissance du PIB en vous appuyant sur vos réponses de 1, 2, et 3. L’économie a t-elle connu une croissance ?
+
+5.
+
+	Mettez en évidence les changement du déflateur de PIB en utilisant 2000 et 2001
+	comme des années de base. Mettez en relation vos résultats avec votre réponse de la
+	question précédente.
+
+Question 1
+-------------------
+
+	* PIB_n(2000) = 10*2000+4*1000 = 24000
+	* PIB_n(2001) = 12*3000+6*500 = 39000
+
+Question 2
+-------------------
+
+	* PIB_r(base=2000, 2000) = PIB_n(2000) = 10*2000+4*1000 = 24000
+	* PIB_r(base=2000, 2001) = 12*2000+6*1000 = 30000
+
+Question 3
+-------------------
+
+	* PIB_r(base=2001, 2000) = 10*3000+4*500 = 32000
+	* PIB_r(base=2001, 2001) = PIB_n(2001) = 12*3000+6*500 = 39000
+
+Question 4
+-------------------
+
+	* Taux de croissance (nominal) = (PIB_n(2001)-PIB_n(2000))/PIB_n(2000) = (39000-24000)/24000 = 0.625
+	* Taux de croissance (base 2000) = (PIB(b=2000,2001)-PIB(2000))/PIB(2000) = (30000-24000)/24000 = 0.25
+	* Taux de croissance (base 2001) = (PIB(2001)-PIB(b=2001, 2000))/PIB(b=2001, 2000) = (39000-32000)/32000 = ~0.21875
+
+L'économie a connue une croissance.
+
+Question 5
+-------------------
+
+On rappelle que D=PIB_n(année) / PIB_r(année), donc ici on aura D(base=année, année)=PIB_n(année) / PIB_r(b=base, année)
+
+	* D(base=2000, 2000) = 1
+	* D(base=2000, 2001) = 39000/30000 = 1.3
+	* D(base=2001, 2000) = 24000/32000 = 0.75
+	* D(base=2001, 2001) = 1
+
+Augmentation parallèle à la croissance.
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
