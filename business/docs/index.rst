@@ -4,8 +4,8 @@
 Documents d'une Entreprise
 ================================
 
-| :math:`\color{grey}{Version \ 2.1.1}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 29/11/2020}`
+| :math:`\color{grey}{Version \ 2.1.2}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 30/11/2020}`
 
 Cette partie indique les documents
 que vous risquez de trouver dans une entreprise.
@@ -62,7 +62,16 @@ heures supplémentaires = variables).
 
 On appelle un échange entre deux acteurs un flux. Toute entreprise
 doit converser la totalité des flux donc ses échanges dans deux documents
-obligatoires qui sont le bilan comptable et le compte de résultat.
+obligatoires qui sont le bilan comptable, le compte de résultat et
+les annexes qui représentent un exercice comptable.
+
+Exercice comptable
+	Il s'agit d'une période de 12 mois, généralement de Janvier
+	à Janvier mais pouvant aller de Juillet à Juillet par exemple.
+
+	Certaines entreprises commencent leur exercice comptable à une date
+	antérieur au postérieur à Janvier pour éviter d'être encore plus surchargé
+	en période de fêtes.
 
 .. toctree::
 	 :maxdepth: 1

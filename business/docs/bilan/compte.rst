@@ -10,7 +10,7 @@ et on met en face de chaque débit/crédit, le débit/crédit correspond ce qui 
 	* le montant de la transaction (en euros € mais on met pas de €)
 
 Le compte de résultat est imaginé comme une photo de l'activité de l'entreprise
-à un instant t.
+à un instant t. Il fait l'inventaire des dépenses et recettes de l'entreprise.
 
 ====================== ======================== ================ ================== ================= ===================
 \                      Date du jour
