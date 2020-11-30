@@ -29,9 +29,12 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/docs/bilan/compte.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/docs/bilan/compte.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/docs/bilan/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/docs/bilan/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/docs/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/advanced.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/advanced.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/ordonnancement/mpt.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/files/ordonnancement/mpt.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/ordonnancement/pert.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/files/ordonnancement/pert.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,26 +63,26 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/business/docs/bilan" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/graph/files/noyau" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="proofread" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files\noyau" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files\color" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files\special" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files\tri" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files\noyau" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph" />
       <recent name="C:\Users\quent\Documents\texas-res\business\docs" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\_notes\maths" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\_notes" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\notes" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\business\macro" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\business\docs\bilan" />
-      <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\fin" />
-      <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\act" />
-      <recent name="C:\Users\quent\Documents\texas-res\business\corp\docs" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -202,7 +205,7 @@
       <workItem from="1606507565918" duration="3121000" />
       <workItem from="1606563395772" duration="27985000" />
       <workItem from="1606640317445" duration="30012000" />
-      <workItem from="1606727106834" duration="2127000" />
+      <workItem from="1606727106834" duration="7052000" />
     </task>
     <servers />
   </component>
@@ -257,10 +260,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="-45" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604666744937" />
-    <state x="524" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604254127157">
+    <state x="524" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606735459103">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="524" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1604254127157" />
+    <state x="524" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1606735459103" />
     <state x="520" y="281" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1604353217209">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
