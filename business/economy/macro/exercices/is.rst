@@ -86,7 +86,7 @@ avec c0 = 200, c1 = 0.75, I = 100, G = 100 et T = 100.
 	graphiquement l’écart entre dépenses effectives et planifiées qui en résulte.
 5.
 	Si les impôts diminuent de 12,5. Quel est le nouveau revenu d’équilibre ? Représentez
-	la nouvelle droite de dépense planifiée. Evaluez (calculez) et représentez sur le
+	la nouvelle droite de dépense planifiée. Évaluez (calculez) et représentez sur le
 	graphique la variation des dépenses autonomes et le déplacement de la courbe de
 	dépense planifiée.
 

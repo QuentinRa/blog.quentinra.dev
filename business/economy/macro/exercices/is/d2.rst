@@ -2,6 +2,138 @@
 2. L’équilibre sur le marché des biens et services
 ============================================================
 
-.. image:: https://img.shields.io/badge/correction-non%20vérifiée-red.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
-   :alt: correction vérifiée
+.. image:: https://img.shields.io/badge/correction-vérifiée-yellow.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction partiellement vérifiée
 
+Soit une économie fermée keynésienne à une période caractérisée par :
+
+	*	C = c0 + c1(Y − T)
+	*	I = I0
+	*	G = G0
+	*	T = T0
+
+avec c0 = 200, c1 = 0.75, I = 100, G = 100 et T = 100.
+
+1.
+	Représentez graphiquement la dépense réalisée et planifiée en fonction du revenu.
+2.
+	Quel est le niveau d’équilibre du revenu.
+3.
+	Quel est le montant des dépenses autonomes ?
+4.
+	Quelles sont les conséquences économiques si le PIB est de 600 ? Représentez
+	graphiquement l’écart entre dépenses effectives et planifiées qui en résulte.
+5.
+	Si les impôts diminuent de 12,5. Quel est le nouveau revenu d’équilibre ? Représentez
+	la nouvelle droite de dépense planifiée. Evaluez (calculez) et représentez sur le
+	graphique la variation des dépenses autonomes et le déplacement de la courbe de
+	dépense planifiée.
+
+Question 1 (pas sûr)
+--------------------------
+
+Pas d'informations sur la dépense réalisée donc pas faisable au début, mais
+après toutes les questions.
+
+On a en orange la courbe planifiée et en bleu la courbe effective.
+
+.. plot::
+
+		import math
+		import numpy as np
+		import matplotlib.pyplot as plt
+
+		x = np.arange(-800, 800, 0.001)
+		y = 200+0.75*(x-100)+100+100
+
+		fig = plt.figure()
+		ax = fig.add_subplot(1, 1, 1)
+
+		ax.plot(x, y, color='tab:blue')
+
+		x = np.arange(-800, 800, 0.001)
+		y = (200+0.75*(x-100)+100+100) * (775/600) + 75 # correction calistro (375-300)
+
+		ax.plot(x, y, color='tab:orange')
+
+		# Move left y-axis and bottom x-axis to centre, passing through (0,0)
+		ax.spines['left'].set_position('center')
+
+		# Eliminate upper and right axes
+		ax.spines['right'].set_color('none')
+		ax.spines['top'].set_color('none')
+
+		# Show ticks in the left and lower axes only
+		ax.xaxis.set_ticks_position('bottom')
+		ax.yaxis.set_ticks_position('left')
+
+		plt.show()
+
+Question 2
+--------------------------
+
+	* Niveau d'équilibre : Y = C + I + G
+	* Y = 1/(1-c) * (c0 + I + G − c \* T)
+	* Notation c1 (ici) est le c du cours
+	* Y = 1/(1-0.75) * (200+100+100-0.75*100)= 4 * 325 = 1300
+
+Question 3 (pas sûr)
+--------------------------
+
+	* dépenses autonomes = ce qui est vital à dépenser/dépends pas de Y
+	* donc en théorie ça fait c0 donc 200 ou alors 0.75(1300-100) = 900
+	* mais la réponse est 325 de 4 * 325 :code:`^^`
+
+Question 4
+--------------------------
+
+	* Y = c0 + c1(Y − T) + I + G
+	* Y = 200 + 0.75(600-100) + 100 + 100 = 775
+	* on voit que 775 (planifié) est plus grand que 600 (effectif)
+	* on voit donc bien que planifié != effectif donc pas d'équilibre
+
+Question 5
+--------------------------
+
+	* T diminue de 12.5 donc T = 87.5
+	* On calcule Y =  1/(1-c) * (c0 + I + G − c \* T)
+	* Y = 4 * (200+100+100-0.75*87.5) = 1337.5
+
+On a en orange la courbe planifiée et en bleu la courbe effective.
+La courbe orange est un peu plus haute que la courbe bleue ce qui
+est normal car les dépenses autonomes ont diminué (-0.75 * -12.5 = 9.375).
+
+.. plot::
+
+		import math
+		import numpy as np
+		import matplotlib.pyplot as plt
+
+		x = np.arange(-800, 800, 0.001)
+		y = (200+0.75*(x-100)+100+100)
+
+		fig = plt.figure()
+		ax = fig.add_subplot(1, 1, 1)
+
+		ax.plot(x, y, color='tab:blue')
+
+		x = np.arange(-800, 800, 0.001)
+		y = (200+0.75*(x-87.5)+100+100)
+
+		ax.plot(x, y, color='tab:orange')
+
+		# Move left y-axis and bottom x-axis to centre, passing through (0,0)
+		ax.spines['left'].set_position('center')
+
+		# Eliminate upper and right axes
+		ax.spines['right'].set_color('none')
+		ax.spines['top'].set_color('none')
+
+		# Show ticks in the left and lower axes only
+		ax.xaxis.set_ticks_position('bottom')
+		ax.yaxis.set_ticks_position('left')
+
+		plt.show()
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
