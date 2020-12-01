@@ -32,6 +32,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :name: system
     :maxdepth: 1
 
+    Assembleur (ARM)                     <system/arm/index>
     Docker                               <system/docker/index>
 
 .. toctree::

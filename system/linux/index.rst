@@ -610,7 +610,6 @@ Les autres groupes sont à l’arrière-plan
 		* Denis MONNERAT
 		* Luc HERNANDEZ
 		* Selma NABOULSI
-		* Denis MONNERAT
 		* Frédéric GERVAIS
 		* Pierre PETRIK
 		* Luc DARTOIS
