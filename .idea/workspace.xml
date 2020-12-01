@@ -29,10 +29,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/_notes/_calistro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/_calistro.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/economy/macro/exercices/lm.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/exercices/lm.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business/economy/macro/exercices/lm/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/exercices/lm/d1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/economy/macro/fin/def.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/fin/def.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/economy/macro/exercices/lm/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/exercices/lm/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/economy/macro/exercices/lm/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/exercices/lm/d3.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/economy/macro/exercices/lm/d4.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/exercices/lm/d4.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +204,7 @@
       <workItem from="1606563395772" duration="27985000" />
       <workItem from="1606640317445" duration="30012000" />
       <workItem from="1606727106834" duration="32716000" />
-      <workItem from="1606810975830" duration="5506000" />
+      <workItem from="1606810975830" duration="6965000" />
     </task>
     <servers />
   </component>

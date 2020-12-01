@@ -256,3 +256,6 @@ Calcul de i
 		* − i = -0.10
 		* i = 0.1
 	* Donc i = 10%
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
