@@ -33,19 +33,24 @@ construction d’une ligne entre deux agences est donné par le tableau suivant
 
 Modélisez ce problème par un problème de graphe et résolvez le.
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<arbres/d2>
+
 | :code:`[TAG] ENSIIE MTG TD9 2020 S1`
 
 3. Quelques propriétés des arbres
 -----------------------------------------------------------------
 
 1.
-	Montrer que tout arbre avec 2 sommets admet au moins deux sommets pendants (i.e. de
+	Montrer que tout arbre avec 2 (au moins) sommets admet au moins deux sommets pendants (i.e. de
 	degré 1).
 2.
 	Démontrer que tout graphe connexe d’au moins deux sommets admet au moins deux sommets
 	qui ne sont pas des points d’articulation.
 3.
-	Donner un graphe qui n’a que deux sommets qui ne sont pas des points d’articulation.
+	Donner un graphe qui n’a que deux sommets qui ne sont pas des points d’articulation (.
 
 | :code:`[TAG] ENSIIE MTG TD9 2020 S1`
 
