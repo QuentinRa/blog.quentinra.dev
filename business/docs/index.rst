@@ -11,7 +11,7 @@ Cette partie indique les documents
 que vous risquez de trouver dans une entreprise.
 
 1. Factures
---------------------------
+================================================
 
 La facture est un document obligatoire établi par le vendeur pour consigner ses conditions de vente et obtenir du client son règlement.
 
@@ -37,7 +37,7 @@ La facture doit toujours faire apparaître la TVA
 	*	Taux réduit 10% et 5,5% (produits alimentaires)
 
 2. Control de Gestion
----------------------------
+================================================
 
 Le control de gestion consiste en des méthodes
 

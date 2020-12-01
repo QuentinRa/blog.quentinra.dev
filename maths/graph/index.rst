@@ -4,8 +4,8 @@
 Théorie des graphes
 ================================
 
-| :math:`\color{grey}{Version \ 2.2.7}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 30/11/2020}`
+| :math:`\color{grey}{Version \ 2.3.8}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 01/12/2020}`
 
 Graphe
 	Un graphe (G) est un ensemble de sommets (E pour Edge)
@@ -125,6 +125,7 @@ est un arbre
 		Étude des degrés                <exercices/voisins>
 		Graphes planaires               <exercices/planaire>
 		Coloration de graphe            <exercices/coloration>
+		Arbres                          <exercices/arbres>
 		Non triés                       <exercices/non_rank>
 
 8. Avancé

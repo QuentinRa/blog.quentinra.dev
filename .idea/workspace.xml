@@ -29,8 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/economy/macro/exercices/lm/d4.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/exercices/lm/d4.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/economy/macro/fin/circ.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/fin/circ.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/docs/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,26 +59,26 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/business/economy/macro/exercices/lm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/graph/exercices" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="proofread" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\exercices\lm" />
-      <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\exercices\is" />
-      <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\exercices\is_lm" />
-      <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\exercices\general" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files\noyau" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files\noyau" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph" />
       <recent name="C:\Users\quent\Documents\texas-res\business\docs" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\_notes\maths" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices" />
+      <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\exercices\lm" />
+      <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\exercices\is" />
+      <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\exercices\is_lm" />
+      <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\exercices\general" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -202,7 +202,7 @@
       <workItem from="1606563395772" duration="27985000" />
       <workItem from="1606640317445" duration="30012000" />
       <workItem from="1606727106834" duration="32716000" />
-      <workItem from="1606810975830" duration="10443000" />
+      <workItem from="1606810975830" duration="11781000" />
     </task>
     <servers />
   </component>

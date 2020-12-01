@@ -1,0 +1,18 @@
+==================================================
+1. Arbre couvrant et base de cycle
+==================================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+Soit G le graphe suivant :
+
+.. image:: /assets/math/graph/exercice/a1d.png
+
+Donner un arbre couvrant T de G tel que la base de cycle associée corresponde à l’ensemble
+des faces finies de G.
+
+...
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
