@@ -15,12 +15,12 @@ des faces finies de G.
 On retire des arêtes pour ne plus avoir de cycles donc
 
 	* On a 4 faces donc 4 cycles à briser
-	* On retire 4 arêtes au pif :
+	* On prends 4 arêtes au pif :
 		* (b,f) de b,c,f,b
 		* (f,e) de f,c,a,h,e,f
 		* (h,d) de a,d,h,a
 		* (g,d) de a,d,g,b,c,a
-	* on regarde que retire l'une des 4 arêtes ne créé par un nouveau cycle
+	* on regarde que retirer l'une des 4 arêtes ne créé par un nouveau cycle
 		* test de b,f : ne créé pas de nouveau cycle
 		* test de f,e : ne créé pas de nouveau cycle
 		* test de h,d : ne créé pas de nouveau cycle

@@ -246,8 +246,6 @@ Voici une liste d'astuces qui vous aideront peut-être
 
 aucun
 
-|
-
 -----
 
 **Crédits**
