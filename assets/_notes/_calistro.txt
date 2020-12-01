@@ -1,5 +1,7 @@
 -------------- cours
 
+https://www.youtube.com/watch?v=7kYXEBHePJc
+
 https://docs.anaconda.com/restructuredtext/detailed/
 https://docutils.sourceforge.io/docs/user/rst/quickref.html
 

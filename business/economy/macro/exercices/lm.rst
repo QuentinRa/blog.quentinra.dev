@@ -43,12 +43,12 @@ Ms=16.000 euros.
 	Celle-ci passe à 15.000 euros. Représentez sur le même graphique que précédemment
 	et analysez les conséquences de la baisse de monnaie dans cette économie.
 
-| :code:`[TAG] ENSIIE MME TD3 2020 S1`
-
 .. toctree::
    :maxdepth: 1
 
 	Proposition de correction n°1			<lm/d1>
+
+| :code:`[TAG] ENSIIE MME TD3 2020 S1`
 
 2. Bons du Trésor, prix et taux d’intérêt
 ------------------------------------------------

@@ -8,4 +8,5 @@ et des dépôts accédés via mobile/carte (monnaie scripturale = M3 = M2 + plac
 On rappelle que ce sont les banques centrales qui émettent de la monnaie, et donc ce sont elles qui
 vont varier l'inflation.
 
-Fonctions de la monnaie : intermédiaire des échanges, mesure de la valeur et réserve de pouvoir d'achat.
+Fonctions de la monnaie (Keynes)
+	Intermédiaire des échanges, mesure de la valeur et réserve de pouvoir d'achat.
