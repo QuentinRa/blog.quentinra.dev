@@ -50,7 +50,12 @@ Modélisez ce problème par un problème de graphe et résolvez le.
 	Démontrer que tout graphe connexe d’au moins deux sommets admet au moins deux sommets
 	qui ne sont pas des points d’articulation.
 3.
-	Donner un graphe qui n’a que deux sommets qui ne sont pas des points d’articulation (.
+	Donner un graphe qui n’a que deux sommets qui ne sont pas des points d’articulation.
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<arbres/d3>
 
 | :code:`[TAG] ENSIIE MTG TD9 2020 S1`
 
