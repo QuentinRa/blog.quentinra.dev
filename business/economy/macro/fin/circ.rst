@@ -11,7 +11,7 @@ monétaire (argent en circulation) fait varier les prix. Fischer
 	* :code:`P` = Le niveau des prix
 	* :code:`T` = nombre de transactions = :code:`Y` Le niveau de production (=PIB)
 
-On considère généralement que V est fixe sur une période de temps. Donc
+On considère généralement que v est fixe sur une période de temps. Donc
 la masse monétaire se répercute directement sur les prix.
 
 Mesure du pouvoir d'achat
