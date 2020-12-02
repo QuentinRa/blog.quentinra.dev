@@ -6,6 +6,7 @@ Opérations
 		* :code:`mov{cond}{s} Rd, Operand2` : 	Déplace une constante/ contenu dans Rd
 		* :code:`ldr{cond}{size} Rd, {address}` : Met dans Rd la valeur à address
 		* :code:`str{cond}{size} Rd, {address}` : 	Met à l'{address} la valeur contenue dans Rd
+		* :code:`b` de branchement est l'équivalent d'un goto en C et permet de se déplacer à un étiquette (donc nom: )
 
 Les termes bizarres
 	* les {cond} sont expliqués dans la partie conditions, facultatif

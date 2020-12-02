@@ -4,7 +4,7 @@
 Assembleur (ARM)
 ================================
 
-| :math:`\color{grey}{Version \ 1.1.2}`
+| :math:`\color{grey}{Version \ 1.2.3}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 02/12/2020}`
 
 Attention ! Coder en assembleur peut se révéler assez
@@ -106,6 +106,17 @@ pour certaines opérations comme add).
 			Opérateurs et Flags                <cond/flag>
 			Opérations qui changent les flags  <cond/c_flag>
 			Exemples de code avec conditions   <cond/example>
+
+6. Barrel Shifter
+===========================
+
+Il est possible d’effectuer des opérations simples (décalages) sur Operand2 (seulement)
+(par exemple multiplier/diviser un nombre par 2^n, soit les opérateurs >> et << en c).
+
+.. toctree::
+	 :maxdepth: 1
+
+			Barrel Shifter <code/bs>
 
 7. Exercices
 ==============
