@@ -77,6 +77,36 @@ Voici la liste des opérations généralement utilisées.
 			Fonctions                          <fonction/index>
 			Appel d'un appel système           <fonction/swi>
 
+5. Conditions
+===================================
+
+Tous les {cond} des opérations indique qu'on peut ajouter
+à la suite une condition, c'est a dire un if qui fait l'opération
+si le if est vrai, sinon ne fait pas l'opération.
+
+Il existe 4 'flags' (drapeaux) NZCV qui contiennent des booléens valant true
+s'ils ont étés levés par une opération
+
+	*	N: résultat est négatif ?
+	*	Z: résultat vaut zéro ?
+	*	V: bit de sortie vaut 1 ? (dernière retenue d'une opération de bits, voir cours linux)
+	*	C: il y a eu débordement ? (voir cours linux)
+
+Vous allez ajouter des qualificatifs (ex: :code:`ne`, ...) et ces qualificatifs
+vont vérifier des valeurs des flags NZCV et si les valeurs associés au qualificatif
+valent True (vrai) alors l'opération est exécutée.
+
+Il existe des opérations qui ont pour put de changer les flags. Vous pouvez ajouter
+un :code:`s` à la fin d'un opération pour que l'opération modifie les flags (seulement
+pour certaines opérations comme add).
+
+.. toctree::
+	 :maxdepth: 1
+
+			Opérateurs et Flags                <cond/flag>
+			Opérations qui changent les flags  <cond/c_flag>
+			Exemples de code avec conditions   <cond/example>
+
 7. Exercices
 ==============
 

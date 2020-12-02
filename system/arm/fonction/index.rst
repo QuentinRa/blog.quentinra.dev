@@ -52,3 +52,22 @@ Appel de la fonction
 
 			; ...
 
+Code de la fonction
+	Le code de la fonction est plus ou moins le même celui du main, sauf que
+	vous devez sauvegarder la ligne vers laquelle retourner après l'exécution
+	de la fonction.
+
+	Imaginons a et b deux fonctions, main appelle a puis b appelle a.
+
+		* a va savoir qu'après avoir terminé, il doit retourner à la ligne x de main, car cette ligne est dans pc
+		* a appelle b
+		* b va savoir qu'après avoir terminé, il doit retourner à la ligne x de a, car cette ligne est dans pc
+		* a ne sait plus retourner dans main, car pc ne contient plus la ligne
+
+	La solution est d'empiler les valeurs des registres avant d'appeler une fonction (donc y compris pc).
+
+	.. toctree::
+		  :maxdepth: 1
+
+			 Exemple des valeurs de pc/lr             <example>
+			 Fonctionnement de la pile                <pile>
