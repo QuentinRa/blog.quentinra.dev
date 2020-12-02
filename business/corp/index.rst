@@ -4,8 +4,8 @@
 Entreprise
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.0}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 29/11/2020}`
+| :math:`\color{grey}{Version \ 1.1.1}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 02/12/2020}`
 
 Ce cours est une synthèse de toutes
 les notions liées aux monde des entreprises, ce qui comprends principalement
@@ -94,9 +94,24 @@ Ils suivent un plan appelé la GPEC.
 .. toctree::
   :maxdepth: 1
 
-		Plan GPEC             <people/gpec>
-		Pyramide de Maslow    <people/maslow>
-		Parcours des salariés <people/parcours>
+		Plan GPEC              <people/gpec>
+		Pyramide de Maslow     <people/maslow>
+		Parcours des salariés  <people/parcours>
+		Encadrer ses salariés  <people/encadrer>
+		Former ses salariés    <people/former>
+
+5. Produire et vendre ses produits
+=====================================
+
+Les RH sont le service de l'entreprise chargé des recrutements.
+Ils suivent un plan appelé la GPEC.
+
+.. toctree::
+  :maxdepth: 1
+
+		Acheter              <make/buy>
+		Produire             <make/prod>
+		Vendre ses produits  <make/sell>
 
 -----
 

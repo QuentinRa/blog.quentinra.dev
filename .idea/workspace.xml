@@ -29,11 +29,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/grundy/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/grundy/d3.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/arm/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/arm/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/arm/op/move.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/arm/op/move.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/corp/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,26 +58,26 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/arm/cond" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/business/corp/make" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="kite.configurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\business\corp\make" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\arm\cond" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\arm\fonction" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\arm\op" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\arm\code" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files\noyau" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph" />
       <recent name="C:\Users\quent\Documents\texas-res\business\docs" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\system\arm\cond" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\arm\fonction" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\arm\op" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\arm\code" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\arm" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -208,7 +204,8 @@
       <workItem from="1606810975830" duration="30962000" />
       <workItem from="1606895146519" duration="8129000" />
       <workItem from="1606929291128" duration="737000" />
-      <workItem from="1606930184274" duration="4162000" />
+      <workItem from="1606930184274" duration="4799000" />
+      <workItem from="1606945104798" duration="3650000" />
     </task>
     <servers />
   </component>
