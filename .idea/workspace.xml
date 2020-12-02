@@ -28,9 +28,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/system/arm/op/example.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/arm/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/arm/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/arm/op/arithmetic.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/arm/op/arithmetic.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/arm/op/move.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/arm/op/move.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/arm/op" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/arm/fonction" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -67,11 +68,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\system\arm\fonction" />
       <recent name="C:\Users\quent\Documents\texas-res\system\arm\op" />
       <recent name="C:\Users\quent\Documents\texas-res\system\arm\code" />
       <recent name="C:\Users\quent\Documents\texas-res\system\arm" />
       <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\exercices\is_lm" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\arbres" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice" />
@@ -203,7 +204,7 @@
       <workItem from="1606640317445" duration="30012000" />
       <workItem from="1606727106834" duration="32716000" />
       <workItem from="1606810975830" duration="30962000" />
-      <workItem from="1606895146519" duration="3195000" />
+      <workItem from="1606895146519" duration="8084000" />
     </task>
     <servers />
   </component>

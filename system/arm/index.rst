@@ -4,8 +4,8 @@
 Assembleur (ARM)
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.0}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 01/12/2020}`
+| :math:`\color{grey}{Version \ 1.1.2}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 02/12/2020}`
 
 Attention ! Coder en assembleur peut se révéler assez
 compliqué donc si vous n'avez pas les idées claires
@@ -67,6 +67,15 @@ Voici la liste des opérations généralement utilisées.
 			Manipulation des registres         <op/move>
 			Opérations arithmétiques           <op/arithmetic>
 			Exemple de code commenté           <op/example>
+
+4. Fonctions
+============================
+
+.. toctree::
+	 :maxdepth: 1
+
+			Fonctions                          <fonction/index>
+			Appel d'un appel système           <fonction/swi>
 
 7. Exercices
 ==============
