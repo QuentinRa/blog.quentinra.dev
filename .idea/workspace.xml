@@ -28,15 +28,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/system/arm/code/register.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system/arm/code/structure.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system/arm/code/syscall.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system/arm/code/types.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system/arm/index.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/arm/op/example.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/template.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/arm/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/arm/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,26 +59,26 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/arm/code" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/arm/op" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="proofread" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\system\arm\op" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\arm\code" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\arm" />
+      <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\exercices\is_lm" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\arbres" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files\noyau" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph" />
       <recent name="C:\Users\quent\Documents\texas-res\business\docs" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\system\arm\code" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\arm" />
-      <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\exercices\is_lm" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\arbres" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -208,7 +202,8 @@
       <workItem from="1606563395772" duration="27985000" />
       <workItem from="1606640317445" duration="30012000" />
       <workItem from="1606727106834" duration="32716000" />
-      <workItem from="1606810975830" duration="30915000" />
+      <workItem from="1606810975830" duration="30962000" />
+      <workItem from="1606895146519" duration="3195000" />
     </task>
     <servers />
   </component>
@@ -263,10 +258,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="-45" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604666744937" />
-    <state x="524" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606735459103">
+    <state x="524" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606903609944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="524" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1606735459103" />
+    <state x="524" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1606903609944" />
     <state x="520" y="281" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1604353217209">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -303,10 +298,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="343" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1603191408316" />
-    <state x="279" y="54" width="977" height="710" key="SettingsEditor" timestamp="1605626357931">
+    <state x="279" y="54" width="977" height="710" key="SettingsEditor" timestamp="1606903643426">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="279" y="54" width="977" height="710" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605626357931" />
+    <state x="279" y="54" width="977" height="710" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606903643426" />
     <state x="93" y="93" width="1350" height="638" key="ShowDiffWithBranchDialog" timestamp="1603484549092">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -331,10 +326,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="480" y="163" width="575" height="498" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1606850053217" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1606146395715">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1606903667666">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606146395715" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606903667666" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606816008229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

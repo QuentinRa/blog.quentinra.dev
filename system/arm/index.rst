@@ -47,6 +47,26 @@ Quelques propriétés de l'assembleur
 		 Types                      <code/types>
 		 Appels systèmes            <code/syscall>
 		 Registres                  <code/register>
+		 Constantes immédiates      <code/const>
+
+3. Opérations
+===============================
+
+Explication
+	Une opération est de la forme :code:`nom Rd, Rn, Operand2` (par exemple).
+		* nom en minuscules ou majuscules de l'opération
+		* généralement s'il y a un registre nommé Rd dans la déclaration, alors l'opération va mettre le résultat dans le registre Rd
+		* s'il y a Operand2 alors on peut mettre une constante immédiate
+		* ex: add r0,r1,#4 va faire r0 = valeur(r1) + 4
+
+Voici la liste des opérations généralement utilisées.
+
+.. toctree::
+	 :maxdepth: 1
+
+			Manipulation des registres         <op/move>
+			Opérations arithmétiques           <op/arithmetic>
+			Exemple de code commenté           <op/example>
 
 7. Exercices
 ==============
@@ -71,4 +91,3 @@ Quelques propriétés de l'assembleur
 	* https://www.tutorialspoint.com/assembly_programming/assembly_system_calls.htm
 	* https://en.wikipedia.org/wiki/Stack_register
 	* https://www.elprocus.com/what-is-stack-stack-pointer-types-operations-its-application/
-	*
