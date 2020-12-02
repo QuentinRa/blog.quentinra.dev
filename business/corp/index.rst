@@ -4,7 +4,7 @@
 Entreprise
 ================================
 
-| :math:`\color{grey}{Version \ 1.1.1}`
+| :math:`\color{grey}{Version \ 1.1.2}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 02/12/2020}`
 
 Ce cours est une synthèse de toutes
