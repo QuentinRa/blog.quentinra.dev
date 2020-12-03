@@ -28,9 +28,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cb3c6624-4827-4984-b744-f74bd3d26571.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cb3c6624-4827-4984-b744-f74bd3d26571.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/corp/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/corp/make/prod.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/make/prod.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/plsql/exercices/functions/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/exercices/functions/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/plsql/exercices/triggers.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/exercices/triggers.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/plsql/exercices/triggers/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/exercices/triggers/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/plsql/exercices/triggers/d1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/exercices/triggers/d1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/plsql/plsql/fonctions.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/plsql/fonctions.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/plsql/plsql/triggers.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/plsql/triggers.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,19 +71,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\business\corp\people" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files\noyau" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\business\corp\voc" />
       <recent name="C:\Users\quent\Documents\texas-res\business\corp\env" />
       <recent name="C:\Users\quent\Documents\texas-res\business\corp\make" />
       <recent name="C:\Users\quent\Documents\texas-res\system\arm\cond" />
       <recent name="C:\Users\quent\Documents\texas-res\system\arm\fonction" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\business\corp\people" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files\noyau" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -207,7 +212,8 @@
       <workItem from="1606929291128" duration="737000" />
       <workItem from="1606930184274" duration="4799000" />
       <workItem from="1606945104798" duration="4278000" />
-      <workItem from="1606984549638" duration="1453000" />
+      <workItem from="1606984549638" duration="3346000" />
+      <workItem from="1606996556672" duration="1730000" />
     </task>
     <servers />
   </component>
@@ -282,22 +288,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="156" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604934130951" />
-    <state width="1024" height="370" key="GridCell.Tab.0.bottom" timestamp="1606407339374">
+    <state width="1024" height="370" key="GridCell.Tab.0.bottom" timestamp="1606997564354">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="370" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606407339374" />
-    <state width="1024" height="370" key="GridCell.Tab.0.center" timestamp="1606407339374">
+    <state width="1024" height="370" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606997564354" />
+    <state width="1024" height="370" key="GridCell.Tab.0.center" timestamp="1606997564354">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="370" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606407339374" />
-    <state width="1024" height="370" key="GridCell.Tab.0.left" timestamp="1606407339374">
+    <state width="1024" height="370" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606997564354" />
+    <state width="1024" height="370" key="GridCell.Tab.0.left" timestamp="1606997564353">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="370" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606407339374" />
-    <state width="1024" height="370" key="GridCell.Tab.0.right" timestamp="1606407339374">
+    <state width="1024" height="370" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606997564353" />
+    <state width="1024" height="370" key="GridCell.Tab.0.right" timestamp="1606997564354">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="370" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606407339374" />
+    <state width="1024" height="370" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606997564354" />
     <state x="604" y="343" key="NewPhpFileDialog" timestamp="1603191408316">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -334,9 +340,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606903667666" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606933853398">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606989334753">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606933853398" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606989334753" />
   </component>
 </project>

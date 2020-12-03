@@ -8,7 +8,7 @@ Voici la syntaxe d'un trigger. Un événement est
 	* Update(colonne) ou UPDATE OF colonne : seulement la mise à jour d'une colonne déclenche le trigger
 	* vous pouvez mettre plusieurs événements avec OR
 
-.. code:: sql
+.. code:: plpgsql
 
 		CREATE [OR REPLACE] TRIGGER nom
 		BEFORE/AFTER evenement ON table

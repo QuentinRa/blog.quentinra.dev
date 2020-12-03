@@ -10,7 +10,7 @@ Niveau débutant
 
 .. note::
 
-	Fichier de la base à importer : :download:`setup.sql <../../../assets/db/bases/vins_ensiie_1a_import_p.sql>`
+	Fichier de la base à importer (postgre) : :download:`setup.sql <../../../assets/db/bases/vins_ensiie_1a_import_p.sql>`
 
 1. \
 	Créez un déclencheur qui vérifie, avant qu’une commande ne soit validée,
