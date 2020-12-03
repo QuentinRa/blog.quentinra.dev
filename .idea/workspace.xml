@@ -28,10 +28,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/plsql/exercices/triggers.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/exercices/triggers.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/plsql/exercices/triggers/d1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/plsql/exercices/triggers/d1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/bases.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/bases.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/bases/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/bases/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/bases/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/bases/d2.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +209,7 @@
       <workItem from="1606930184274" duration="4799000" />
       <workItem from="1606945104798" duration="4278000" />
       <workItem from="1606984549638" duration="3346000" />
-      <workItem from="1606996556672" duration="7868000" />
+      <workItem from="1606996556672" duration="13535000" />
     </task>
     <servers />
   </component>

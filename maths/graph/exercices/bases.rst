@@ -5,7 +5,7 @@ Bases de cycles et cocycles
 Niveau débutant
 ***********************
 
-1/2 Rechercher des bases
+1. Rechercher des bases
 ---------------------------
 
 .. image:: /assets/math/graph/exercice/b1d.png
@@ -30,7 +30,7 @@ Niveau débutant
 
 | :code:`[TAG] ENSIIE MTG TD6 2020 S1`
 
-2/2 Orthogonalité des cycles et des cocycles
+2. Orthogonalité des cycles et des cocycles
 ------------------------------------------------------
 
 1.\
