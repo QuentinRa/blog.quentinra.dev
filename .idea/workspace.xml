@@ -29,8 +29,6 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/economy/macro/exercices/is/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/exercices/is/d2.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/economy/macro/exercices/is_lm/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro/exercices/is_lm/d1.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +57,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/db/plsql/exercices/triggers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/cyber/voc" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="kite.configurable" />
@@ -67,11 +65,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\system\cyber\voc" />
       <recent name="C:\Users\quent\Documents\texas-res\db\plsql\exercices\triggers" />
       <recent name="C:\Users\quent\Documents\texas-res\business\corp\voc" />
       <recent name="C:\Users\quent\Documents\texas-res\business\corp\env" />
       <recent name="C:\Users\quent\Documents\texas-res\business\corp\make" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\arm\cond" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\business\corp\people" />
@@ -208,7 +206,7 @@
       <workItem from="1606930184274" duration="4799000" />
       <workItem from="1606945104798" duration="4278000" />
       <workItem from="1606984549638" duration="3346000" />
-      <workItem from="1606996556672" duration="20913000" />
+      <workItem from="1606996556672" duration="22743000" />
     </task>
     <servers />
   </component>
