@@ -63,7 +63,7 @@ Toyotisme (organisation travail mise en œuvre par Toyota) :code:`❤`
 			La circulation dans l’entreprise doit être à la fois verticale mais aussi horizontale.
 			Les infos remontent des salariés aux dirigeants.
 
-Industrie 4.0
+Industrie 4.0 :code:`❤`
 	Industrie 4.0 = Industrie d’aujourd’hui et de demain = usine du futur = smart manusfacturing.
 
 	**Objectifs** : Usine du futur plus agile, plus flexible, moins couteuse et plus respectueuse de ses travailleurs

@@ -4,8 +4,8 @@
 Entreprise
 ================================
 
-| :math:`\color{grey}{Version \ 1.1.2}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 02/12/2020}`
+| :math:`\color{grey}{Version \ 1.1.3}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 03/12/2020}`
 
 Ce cours est une synthèse de toutes
 les notions liées aux monde des entreprises, ce qui comprends principalement
@@ -42,6 +42,8 @@ de la catégorie "connaissances générales".
 		Le terme Startup                    <voc/startup>
 		Services d'une entreprise           <voc/services>
 		Raison d'être/ADN et RSE            <voc/why>
+		Titres financiers                   <voc/titres>
+		Digitalisation                      <voc/digit>
 		Connaissances générales             <voc/all>
 
 2. Environnement d'entreprise et la stratégie
