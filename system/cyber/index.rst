@@ -21,8 +21,8 @@ connaissances utiles aux cyber-experts tel que
 .. toctree::
 	 :maxdepth: 1
 
-			Mots clefs cyber          <voc/keyword>
-			Vocabulaire courant       <voc/all>
+			Mots clefs cyber          <voc/all>
+			Vocabulaire courant       <voc/keyword>
 			As a service              <voc/aas>
 
 2. Grands attaques

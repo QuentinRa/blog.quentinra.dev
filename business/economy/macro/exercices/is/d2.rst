@@ -77,8 +77,8 @@ Question 2
 	* Notation c1 (ici) est le c du cours
 	* Y = 1/(1-0.75) * (200+100+100-0.75*100)= 4 * 325 = 1300
 
-Question 3 (pas sûr)
---------------------------
+Question 3
+-----------
 
 	* dépenses autonomes = ce qui est vital à dépenser/dépends pas de Y
 	* c0 + I + G - cT

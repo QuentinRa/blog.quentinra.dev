@@ -7,10 +7,9 @@ CREATE OR REPLACE FUNCTION
     RETURNS void AS $fisv$
 BEGIN
     IF qte < 0 THEN
-        RAISE '% pas une quantité valide', qte;
-RETURN; -- jamais atteint en théorie
-END IF;
-UPDATE vin set stock = qte WHERE n_vin=num_vin;
+        RAISE EXCEPTION '% pas une quantité valide', qte;
+    END IF;
+    UPDATE vin set stock = qte WHERE n_vin=num_vin;
 END; $fisv$ LANGUAGE plpgsql;
 
 -- ***
@@ -31,14 +30,28 @@ v_nvin vin.n_vin%type; -- prends le type de n_vin
 BEGIN
     OPEN c_vin;
 
-LOOP
-FETCH c_vin INTO v_nvin;
-        EXIT WHEN not FOUND;
-        -- Un appel à la fonction f initialise stock vin serait bienvenu
-EXECUTE f_initialise_stock_vin(v_nvin, 24);
-END LOOP;
+    -- plus simple de faire un foreach mais c'est juste pour montrer des trucs
+    LOOP
+      FETCH c_vin INTO v_nvin;
+      EXIT WHEN not FOUND;
+      -- Un appel à la fonction f initialise stock vin serait bienvenu
+      EXECUTE f_initialise_stock_vin(v_nvin, 24);
+    END LOOP;
 
     CLOSE c_vin;
+END;
+$fis$ LANGUAGE plpgsql;
+
+-- alternative
+
+CREATE OR REPLACE FUNCTION f_initialise_stock()
+    RETURNS void AS $fis$
+DECLARE
+    c_vin CURSOR IS SELECT n_vin FROM vin;
+BEGIN
+    FOR vin IN c_vin LOOP
+        EXECUTE f_initialise_stock_vin(vin.n_vin, 24);
+    END LOOP;
 END;
 $fis$ LANGUAGE plpgsql;
 
