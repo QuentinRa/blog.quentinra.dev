@@ -10,6 +10,10 @@ NotPetya
 	Environ 6 millions de manque à gagner par entreprise infectée.
 	C’est un ransomware apparut en 2017.
 
+Bot Mirai
+	Virus permettant de prendre contrôle d’un objet connecté, par exemple pour
+	lancer des attaques de déni de service (DDoS).
+
 En vrac
 	*	Cabinet de conseil Deloitte en 2017, 4 mois dans le système.
 	*	Yahoo, 2016, plus d’un an dans le système, perte 1 Mds

@@ -20,3 +20,6 @@ Menaces persistantes avancée (APT)
 
 Course à l’armement
 	Tous les états vont tenter de mettre au point des cyber-armes (phénomène d’escalade).
+
+Zero Day ou 0 Day
+	Il s’agit d’une faille/vulnérabilité non connue/corrigée.
