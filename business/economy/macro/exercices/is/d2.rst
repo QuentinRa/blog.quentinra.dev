@@ -3,7 +3,7 @@
 ============================================================
 
 .. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
-   :alt: correction partiellement vérifiée
+   :alt: correction vérifiée
 
 Soit une économie fermée keynésienne à une période caractérisée par :
 
@@ -29,7 +29,7 @@ avec c0 = 200, c1 = 0.75, I = 100, G = 100 et T = 100.
 	graphique la variation des dépenses autonomes et le déplacement de la courbe de
 	dépense planifiée.
 
-Question 1 (pas sûr)
+Question 1 (non vérifiée)
 --------------------------
 
 Pas d'informations sur la dépense réalisée donc pas faisable au début, mais
@@ -81,8 +81,10 @@ Question 3 (pas sûr)
 --------------------------
 
 	* dépenses autonomes = ce qui est vital à dépenser/dépends pas de Y
-	* donc en théorie ça fait c0 donc 200 ou alors 0.75(1300-100) = 900
-	* mais la réponse est 325 de 4 * 325 :code:`^^`
+	* c0 + I + G - cT
+	* 200 + 100 + 100 - 0.75*100
+	* 400-75 = 325
+	* dépenses autonomes = 325
 
 Question 4
 --------------------------
@@ -137,3 +139,4 @@ est normal car les dépenses autonomes ont diminué (-0.75 * -12.5 = 9.375).
 
 **Crédits**
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
+	* 04/12/2020 - iNESS#1182 - explication question 3 ajoutée

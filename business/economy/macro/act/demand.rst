@@ -23,7 +23,7 @@ Consommation (C)
 	Les acteurs peuvent consommer ou épargner leur revenu disponible.
 
 		* :code:`S` = épargne (privée)
-		* :code:`c0` = consommation incompressibles (minimum pour la survie) dites autonomes
+		* :code:`c0` = consommation incompressibles (minimum pour la survie)
 		* :code:`c` = valeur entre 0 et 1 qui indique le pourcentage du revenu disponible utilisé pour les autres consommations (propension marginale à consommer)
 		* On a donc :code:`C = c0 + c(Y-T) = c0 + cYd`
 
