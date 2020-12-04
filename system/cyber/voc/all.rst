@@ -7,6 +7,7 @@ Voici quelques mots clefs utilisés dans le monde cyber.
 Cyberspace
 	Espace de communication constitué par l’interconnexion mondiale d’équipements de traitement
 	des données électroniques. Il est composé de 5 couches :
+
 		*	Physique, matérielle : appareils (pc, box, disque)
 		*	Syntaxique, logique : interactions entre appareils (protocoles réseaux…
 		*	Sémantique : l’environnement (métadonnées)

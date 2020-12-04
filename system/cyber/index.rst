@@ -134,6 +134,14 @@ Les méthodes de défense
 		EDR                                     <cyber/d/err>
 		Réagir a une attaque                    <cyber/d/ra>
 
+Failles de sécurité
+
+.. toctree::
+	 :maxdepth: 1
+
+		 Les problèmes du web (général)                  <cyber/f/web>
+		 Les problèmes du web (connexion)                <cyber/f/web1>
+
 -----
 
 **Crédits**
@@ -147,3 +155,4 @@ Les méthodes de défense
 	* https://tryhackme.com/path/outline/beginner
 	* https://www.cybersecurityeducation.org/careers/incident-responder/
 	* https://www.tutorialspoint.com/splunk/index.htm
+	* https://www.hackerone.com/

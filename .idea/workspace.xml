@@ -29,7 +29,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/cyber/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/cyber/voc/all.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/voc/all.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +61,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/cyber/cyber/a" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/cyber/cyber/f" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="kite.configurable" />
@@ -73,11 +76,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files\noyau" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\system\cyber\cyber\f" />
       <recent name="C:\Users\quent\Documents\texas-res\system\cyber\cyber\a" />
       <recent name="C:\Users\quent\Documents\texas-res\system\cyber\bestof" />
       <recent name="C:\Users\quent\Documents\texas-res\system\cyber\voc" />
       <recent name="C:\Users\quent\Documents\texas-res\db\plsql\exercices\triggers" />
-      <recent name="C:\Users\quent\Documents\texas-res\business\corp\voc" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -208,7 +211,7 @@
       <workItem from="1606945104798" duration="4278000" />
       <workItem from="1606984549638" duration="3346000" />
       <workItem from="1606996556672" duration="27380000" />
-      <workItem from="1607068435225" duration="6531000" />
+      <workItem from="1607068435225" duration="12852000" />
     </task>
     <servers />
   </component>
