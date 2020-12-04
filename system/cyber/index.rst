@@ -75,7 +75,31 @@ Voici une liste de quelques grandes attaques
 ... Autres
 	La quadrature du net est une association qui milite pour la liberté sur internet.
 
-4. CyberSécurité
+4. CyberExpert
+=====================
+
+Vous pouvez être un expert en cybersécurité en attaque (offense) et/ou en défense.
+
+Offense
+	En tant qu'agent de la cyber-offensive, vous allez testez des attaques
+	donc attaquer l'entreprise et ses produits et essayer de trouver des failles.
+
+	Il est important d'avoir une bonne connaissance du web (et des langages associés comme
+	PHP, Javascript, HTML/CSS, ....) et en réseau (architecture linux, cloud, ...).
+
+Defense
+	L'objectif est de détecter et stocker les attaques le plus rapidement possible. Vous devez
+	analyser l'état du système et détecter tout comportement anormal, et pour ça il est important
+	de connaitre de nombreuses attaques ainsi que leur fonctionnement.
+
+	En cas d'attaque, un responsable des incidents (Incident Responder) vient généralement vous épauler
+	afin de déterminer les objectifs et les conséquences de l'attaque.
+
+	Enfin, comprendre le fonctionnement de l'attaque, du malware est très utile a se protéger
+	d'éventuelles prochaines attaques. Certaines entreprises choisissent de partager les informations
+	de l'attaque pour crééer un réseau solidaire qui s'ent
+
+5. CyberSécurité
 ==============================
 
 Les attaques
@@ -114,7 +138,12 @@ Les méthodes de défense
 
 **Crédits**
 	* Anabelle DEMULE THENON (enseignante à l'IUT de Sénart-Fontainebleau)
+	* TRY HACK ME (https://tryhackme.com/)
+	* Julien CARCAU (étudiant à l'ENSIIE)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* aucune
+	* https://tryhackme.com/
+	* https://tryhackme.com/path/outline/beginner
+	* https://www.cybersecurityeducation.org/careers/incident-responder/
+	* https://www.tutorialspoint.com/splunk/index.htm

@@ -29,11 +29,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/cyber/bestof/all.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/bestof/all.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/cyber/bestof/stuxnet.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/bestof/stuxnet.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/cyber/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/cyber/voc/keyword.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/voc/keyword.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +208,7 @@
       <workItem from="1606945104798" duration="4278000" />
       <workItem from="1606984549638" duration="3346000" />
       <workItem from="1606996556672" duration="27380000" />
-      <workItem from="1607068435225" duration="2442000" />
+      <workItem from="1607068435225" duration="6531000" />
     </task>
     <servers />
   </component>
@@ -247,10 +243,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="73" key="#Deployment/0.0.1536.824@0.0.1536.824" timestamp="1604266325393" />
-    <state x="395" y="93" key="#Inspections" timestamp="1604254537304">
+    <state x="395" y="93" key="#Inspections" timestamp="1607072373772">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="395" y="93" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1604254537304" />
+    <state x="395" y="93" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1607072373772" />
     <state x="532" y="239" key="#Notifications" timestamp="1605557991729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

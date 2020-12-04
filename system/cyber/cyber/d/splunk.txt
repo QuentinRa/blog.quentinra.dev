@@ -1,0 +1,10 @@
+=================================================
+4. CyberSécurité - Splunk (Analyser des données)
+=================================================
+
+Commande
+	search
+
+		* event de sécurité les plus récurrents : top
+		* import stocké : index
+		* view -> dashboard
