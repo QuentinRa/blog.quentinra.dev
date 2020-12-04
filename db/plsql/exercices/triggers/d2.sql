@@ -30,7 +30,7 @@ BEGIN
     FOR vin in vins_c LOOP
         -- L'insertion des informations dans la table vin m
         -- La fonction permettant de convertir un entier en chaîne de caractère est 'to char'
-        -- Par exemple to char('42', 'FM00')
+        -- Par exemple to_char('42', 'FM9999MI')
             n_vin := vin.n_vin::varchar(11);
             -- L'opérateur de concaténation est '||'
             n_vin := vin.millesime||n_vin;
@@ -42,7 +42,7 @@ BEGIN
 EXCEPTION
     -- Si on appelle la fonction alors que vin_m contient déjà des valeurs (unique violation)
     WHEN UNIQUE_VIOLATION THEN
-        RAISE EXCEPTION 'duplicate value';
+        RAISE EXCEPTION UNIQUE_VIOLATION USING MESSAGE = 'Table probablement déjà initialisée.';
 END;
 $fun$ LANGUAGE plpgsql;
 
