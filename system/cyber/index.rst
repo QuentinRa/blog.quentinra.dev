@@ -141,6 +141,7 @@ Failles de sécurité
 
 		 Les problèmes du web (général)                  <cyber/f/web>
 		 Les problèmes du web (connexion)                <cyber/f/web1>
+		 Les problèmes du web (exploration)              <cyber/f/web2>
 
 -----
 
