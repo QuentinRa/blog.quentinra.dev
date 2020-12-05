@@ -30,9 +30,10 @@ Formulaires/Connexion
 		(voir `tuto ici <https://portswigger.net/burp/documentation/desktop/getting-started/proxy-setup/browser>`).
 
 		Une fois fait, dans BurpSuite créez un projet puis allez dans Proxy puis cliquez sur :code:`intercept`
-		et activez :code:`intercept is on`. Remplissez le formulaire et envoyez le.
+		et activez :code:`intercept is on`. Remplissez le formulaire et envoyez le (activez l'interception après
+		être arrivé sur la page !).
 
-		Allez dans :code:`dashboard` puis trouver la requête dans :code:`event log` et cliquez dessus et faites
+		Allez dans :code:`target` puis trouver la requête dans la liste et cliquez dessus et faites
 		:code:`send to intruder`.
 
 		Allez dans :code:`intruder` et mettez :code:`cluster bomb` dans le type d'attaque. Les mots remplacés

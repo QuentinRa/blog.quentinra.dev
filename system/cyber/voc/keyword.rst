@@ -23,3 +23,11 @@ Course à l’armement
 
 Zero Day ou 0 Day
 	Il s’agit d’une faille/vulnérabilité non connue/corrigée.
+
+SOC : Security Operation Center
+	Génération de données qui sont analysés et qui génèrent ou non des alertes. Ces alertes
+	sont analysés par des analystes qui les relaient à une autre équipe chargé de la sécurité
+	qui cherche a prévoir des incidents.
+
+	Le SOC est un endroit ou toute ces personnes sont réunies et gèrent les éventuels problèmes
+	de sécurité.

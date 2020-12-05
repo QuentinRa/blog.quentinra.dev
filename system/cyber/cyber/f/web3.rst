@@ -80,5 +80,32 @@ Injections SQL
 			* :code:`--dump-all` : sauvegarde **toutes** les données
 			* :code:`--batch` : fait toutes les requête d'un coup et n'attends pas votre saisie.
 
+		Notes
+
+			* votre antivirus peut vous bloquer les tentatives d'injections, mais en passant par l'option -r (donc BurpSuite) ça marche
+			* spécifier le sgbd (option dbms) est assez recommandé
+			* si on vous demande des choix oui et non
+				* performs union test : tester oui et non
+				* GET parameter '...' is vulnerable, ... : mettez oui si vous voulez exploiter ce paramètre
+				* POST parameter '...' is invulnerable, ... : mettez oui si vous voulez tenter d'exploiter ce paramètre (mais ça fail souvent)
+			* oubliez pas le dump-all pour afficher tout
+			* :code:`--tamper=space2comment` : option qui contourne un WAS (Web Application Firewall)
+
 	Ressources : https://github.com/payloadbox/sql-injection-payload-list
+
 	Vidéo : https://www.youtube.com/watch?v=Kitx7cSNsuE
+
+Injections Javascript
+	Une injection Javascript est facile à faire, il suffit d'écrire du Javascript dans les champs d'un formulaire.
+
+	Par exemple :code:`<script>alert('virus');</script>`. Si les injections Javascript n'ont pas été gérées et qu'une
+	personne a par exemple l'utilisateur 5 remplit son prénom avec ce bout de code, alors /profil/5 affichera
+	un champ prénom vide et va afficher une alerte \'virus\'.
+
+	Le moyen pour vous protéger de ces attaques et d'échapper les caractères HTML à l'entrée (saisie) et à la sortie
+	(affichage) ou uniquement à la sortie (ce qui est généralement ce qui est fait).
+
+	Attention cependant aux fonctions comme :code:`htmlspecialchars`, cette fonction n'échappe pas seulement les
+	< et > mais aussi les é, à, ... et les transformes en &code; (code étant la valeur ascii du caractère).
+	Le problème est que les balisent &code; sont ré-échappés à la lecture de la page par le navigateur donc vous
+	vous retrouvez avec des affichages cassés. La règle est simple : n'échappez que le strict minimum.

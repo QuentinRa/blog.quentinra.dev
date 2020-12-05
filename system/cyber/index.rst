@@ -11,9 +11,17 @@ Ce cours a pour objectif de contenir de nombreuses
 connaissances utiles aux cyber-experts tel que
 
 	* du vocabulaire
-	* des connaissances générales (grandes attaques)
-	* des problèmes de sécurités
-	* etc...
+	* des connaissances générales
+	* les grandes attaques informatiques
+	* cybersécurité en france et ailleurs
+	* les attaques
+	* les moyens de ce défendre
+	* les problèmes/failles de sécurités connues
+	* cyber-expert
+
+Ce cours présente en grande partie des connaissances générales mais la dernière partie
+demande des connaissances en programmation (web: SQL, PHP, JavaScript, POST, GET, ..., linux: commandes, ...)
+car elle détaille des procédés pour réaliser et se protéger de failles connues.
 
 1. Vocabulaire
 ===================================
@@ -160,3 +168,5 @@ Failles de sécurité
 	* https://www.hackerone.com/
 	* https://www.security-sleuth.com/sleuth-blog/2017/1/3/sqlmap-cheat-sheet
 	* https://github.com/payloadbox/sql-injection-payload-list
+	* https://www.youtube.com/watch?v=Trb1c2HqCA4&ab_channel=Capgemini
+	* https://www.youtube.com/watch?v=ih0SC-dN6MU&ab_channel=TechBeacon
