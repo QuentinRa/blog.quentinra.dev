@@ -142,6 +142,7 @@ Failles de sécurité
 		 Les problèmes du web (général)                  <cyber/f/web>
 		 Les problèmes du web (connexion)                <cyber/f/web1>
 		 Les problèmes du web (exploration)              <cyber/f/web2>
+		 Les problèmes du web (injections)               <cyber/f/web3>
 
 -----
 
@@ -157,3 +158,5 @@ Failles de sécurité
 	* https://www.cybersecurityeducation.org/careers/incident-responder/
 	* https://www.tutorialspoint.com/splunk/index.htm
 	* https://www.hackerone.com/
+	* https://www.security-sleuth.com/sleuth-blog/2017/1/3/sqlmap-cheat-sheet
+	* https://github.com/payloadbox/sql-injection-payload-list

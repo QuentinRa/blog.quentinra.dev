@@ -15,7 +15,7 @@ Formulaires/Connexion
 
 	Vous pouvez tester une telle attaque avec le logiciel :code:`BurpSuite`. Vous aurez besoin
 	de capturer le \"formulaire\", puis trouver les champs (ex: user, password) qui contiennent les données
-	et ré-génerer le formulaire en modifiants les valeurs des champs avec une liste de valeurs.
+	et ré-générer le formulaire en modifiants les valeurs des champs avec une liste de valeurs.
 
 	Le dépôt https://github.com/danielmiessler/SecLists/ contient un dossier Password et un dossier Usernames
 	qui contiennent des fichiers de listes de mots de passes/usernames souvent utilisés.
