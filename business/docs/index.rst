@@ -81,6 +81,70 @@ Exercice comptable
 		Compte de résultat               <bilan/compte>
 		Ressource : Table comptable      <bilan/table>
 
+4. Compte-rendu du conseil d’administration
+============================================
+
+Il s'agit d'un compte rendu écrit des actions prises par la société.
+
+Le document doit être entièrement neutre et objectif. Il est concis
+donc va directement aux faits et est clair, peu importe le public.
+
+Mentions obligatoires
+
+	* Dénomination Sociale (=nom), Adresse du siège, RCS (registre du commerce (métiers pour les artisans) et des sociétés). Assurances si le métier l’oblige.
+	* Montant du capital, SIREN, Durée de l'exercice
+	* Lieu, Date et n° du conseil d'administration
+	* les personnes présentes
+	* le nombre de votes pour chaque décision/ordre
+	* décision prise
+
+5. Rapport aux actionnaires
+==============================================
+
+Il s'agit d'un rapport donné aux actionnaires décrivant
+les actions prises par la société ainsi que les décisions
+à venir.
+
+Il contient
+
+	* les documents obligatoires : compte de résultat, bilan et les annexes
+	* description du produit et du vendeur
+
+		* présentez l'entreprise, son histoire (faites les ressortir dans la rédaction)
+
+			* mission, vision, valeurs, équipe
+			* d'où l'on vient, où on est, où sont les autres, où on va
+
+		* ses produits
+
+			* prix
+
+	* les chiffres clefs et les chiffres à venir (estimés)
+
+		* moyens utilisés (Recrutement, Marketing, Investissements, Finances, ...)
+
+			* il faut donner des chiffres et donner des explications
+			* on a fait. Pourquoi. Prévision, prévision des autres et des complications
+
+		* stratégies pour obtenir les résultats estimés
+		* création de valeur ?
+
+	* positionnement et concurrents
+
+		* prix **et** qualité, on doit voir la relation entre les deux
+
+	* analyse des forces et faiblesses de l'entreprise
+
+		* raison des réussites/échecs
+		* problèmes rencontrés et leurs solutions
+
+Attention,
+
+	* le rapport est très peu descriptif : il s'agit d'une analyse
+	* ce n'est pas un journal de bord
+	* la rédaction sans fautes et dans un français correct
+	* les chiffres ne valent rien s'ils ne sont pas comparés a ceux des autres
+
 -----
 
 **Crédits**
@@ -89,4 +153,4 @@ Exercice comptable
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* aucun
+	* https://jentreprendslareleve.com/documentation/guide-de-redaction-du-rapport-aux-actionnaires/
