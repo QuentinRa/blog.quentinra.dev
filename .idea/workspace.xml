@@ -29,10 +29,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/cyber/cyber/f/web1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/cyber/f/web1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/cyber/cyber/f/web3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/cyber/f/web3.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/cyber/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/cyber/voc/keyword.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/voc/keyword.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +214,7 @@
       <workItem from="1606996556672" duration="27380000" />
       <workItem from="1607068435225" duration="28090000" />
       <workItem from="1607161643398" duration="6543000" />
-      <workItem from="1607183185846" duration="13617000" />
+      <workItem from="1607183185846" duration="20250000" />
     </task>
     <servers />
   </component>

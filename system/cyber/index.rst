@@ -4,8 +4,8 @@
 CyberCriminalité
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.1}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 04/12/2020}`
+| :math:`\color{grey}{Version \ 1.0.4}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 05/12/2020}`
 
 Ce cours a pour objectif de contenir de nombreuses
 connaissances utiles aux cyber-experts tel que

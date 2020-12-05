@@ -23,7 +23,7 @@ copyright = '2020, Quentin Ra'
 author = 'Quentin Ra'
 
 # The full version, including alpha/beta/rc tags
-release = '1.25.308'
+release = '1.26.312'
 # version 0 : html, css, php, js
 # version 1 : restructured text
 # version 1.1 : system/docker
@@ -51,6 +51,7 @@ release = '1.25.308'
 # version 1.23 : business/docs
 # version 1.24 : system/arm
 # version 1.25 : system/cyber
+# version 1.26 : business/cesim
 
 # -- General configuration ---------------------------------------------------
 
