@@ -72,9 +72,13 @@ limite du tour avec \"enregistrer en tant que décision d'équipe\". Vous pouvez
 3. Résultats
 =================================
 
-Ce qui est important pour avoir note est la plus grande augmentation
+Ce qui est important pour avoir la meilleure note est la plus grande augmentation
 du taux de retour cumulé aux actionnaires (tour 4 au tour 8)
-et le plus gros retour aux actionnaires au tour 8.
+et le plus gros retour aux actionnaires au tour 8 (la meilleure stratégie
+est d'obtenir un taux le plus bas possible au tour 4 = 19 points donc
+vous aurez au minimum (19+8)/2=13.5, le 8 représentant le pire classement
+au tour 8 donc si vous faites mieux vous pouvez avoir une très bonne note, attention
+a ne pas finir en liquidation et perdre 2 points).
 
 Sinon de façon générale
 

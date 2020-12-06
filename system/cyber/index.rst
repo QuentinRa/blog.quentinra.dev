@@ -1,11 +1,11 @@
 .. _cyber:
 
 ================================
-CyberCriminalité
+Cybersécurité
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.4}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 05/12/2020}`
+| :math:`\color{grey}{Version \ 1.1.5}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 06/12/2020}`
 
 Ce cours a pour objectif de contenir de nombreuses
 connaissances utiles aux cyber-experts tel que
@@ -96,7 +96,7 @@ Offense
 	PHP, Javascript, HTML/CSS, ....) et en réseau (architecture linux, cloud, ...).
 
 Defense
-	L'objectif est de détecter et stocker les attaques le plus rapidement possible. Vous devez
+	L'objectif est de détecter et stopper les attaques le plus rapidement possible. Vous devez
 	analyser l'état du système et détecter tout comportement anormal, et pour ça il est important
 	de connaitre de nombreuses attaques ainsi que leur fonctionnement.
 
@@ -105,7 +105,8 @@ Defense
 
 	Enfin, comprendre le fonctionnement de l'attaque, du malware est très utile a se protéger
 	d'éventuelles prochaines attaques. Certaines entreprises choisissent de partager les informations
-	de l'attaque pour crééer un réseau solidaire qui s'ent
+	de l'attaque pour inciter les entreprises a parler, ce qui permet de prendre des mesures pour les autres
+	qui auraient également cette vulnérabilité.
 
 5. CyberSécurité
 ==============================

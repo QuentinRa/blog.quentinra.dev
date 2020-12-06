@@ -34,7 +34,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
 
     Assembleur (ARM)                     <system/arm/index>
     Docker                               <system/docker/index>
-    Cybercriminalité                     <system/cyber/index>
+    Cybersécurité                        <system/cyber/index>
 
 .. toctree::
     :caption: Programmation impérative
