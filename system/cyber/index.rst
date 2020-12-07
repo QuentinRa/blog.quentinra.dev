@@ -147,10 +147,11 @@ Failles de sécurité
 .. toctree::
 	 :maxdepth: 1
 
-		 Les problèmes du web (général)                  <cyber/f/web>
-		 Les problèmes du web (connexion)                <cyber/f/web1>
-		 Les problèmes du web (exploration)              <cyber/f/web2>
-		 Les problèmes du web (injections)               <cyber/f/web3>
+		 Les failles du web (général)                  <cyber/f/web>
+		 Les failles du web (connexion)                <cyber/f/web1>
+		 Les failles du web (exploration)              <cyber/f/web2>
+		 Les failles du web (injections)               <cyber/f/web3>
+		 Les failles du système (réseau)               <cyber/f/net>
 
 -----
 

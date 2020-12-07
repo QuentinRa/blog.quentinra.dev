@@ -131,3 +131,5 @@ Injections Javascript (CrossSiteScripting XSS)
 		les bons champs pour récupérer les données et de limiter au maximum les risques d'injection.
 
 		Plus d'infos : https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Input_Validation_Cheat_Sheet.md
+
+	Vidéo de présentation et d'un exemple : https://www.youtube.com/watch?v=cNYhpbUtkJw
