@@ -23,7 +23,8 @@ Partitionnement
 
 Ensemble absorbant
 	Une ensemble A absorbant est un ensemble tel que tout sommet qui
-	n'est pas dans l'ensemble est un successeur d'un sommet dans A.
+	n'est pas dans l'ensemble à un successeur d'un sommet dans A. Donc pour reformuler tous les autres sommets
+	qui ne sont pas dans l'ensemble absorbant ont une flèche vers un élément de l'ensemble absorbant.
 
 	:math:`\beta (G) = card(plus\ grand\ ensemble\ absorbant)`
 

@@ -127,6 +127,7 @@ est un arbre
 		Coloration de graphe            <exercices/coloration>
 		Arbres                          <exercices/arbres>
 		Non triés                       <exercices/non_rank>
+		Annales                         <annales/index>
 
 8. Avancé
 ==============

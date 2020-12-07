@@ -1,11 +1,11 @@
 =====================================
-Contrôle de Graphes - 07/12/2020
+1. Contrôle MTG 2020 ENSIIE
 =====================================
-
-Ramsamy\-\-Ageorges_Quentin_071865278JC
 
 Exercice 1. Généralités sur les graphes - 10 points
 ----------------------------------------------------
+
+.. image:: /assets/math/graph/annales/c/ctrl0.png
 
 1. Écrire la matrice d’adjacence du graphe G.
 
@@ -218,14 +218,14 @@ une partition minimum supérieur à la partie entière de nombre d'arêtes/2.
 	Ajouter des arcs aux graphes G\′ et G\′\′ tels que G\′ et G\′\′ soient τ-minimal τ-équivalent
 	au graphe K5 et G\′\′ possède strictement moins d’arc que G\′
 
-.. image:: /assets/math/graph/ctrl1.png
+.. image:: /assets/math/graph/annales/c/rep/ctrl1.png
 
 Exercice 2 — Grundy
 -------------------------
 
 Soit la matrice d’adjacence suivante d’un graphe de 9 sommets numérotés de 0 à 8.
 
-.. image:: /assets/math/graph/ctrl2.png
+.. image:: /assets/math/graph/annales/c/ctrl2.png
 
 1. Calculer la fonction de Grundy. Est-elle unique et pourquoi ? On attend un argument général.
 
@@ -273,7 +273,7 @@ deux sommets du noyau ne sont pas voisins sinon il ne formeraient pas un stable.
 Exercice 3 — Maximiser une fonction polynomiale en variables 0-1 - 4 points
 ----------------------------------------------------------------------------------------------------
 
-.. image:: /assets/math/graph/ctrl3.png
+.. image:: /assets/math/graph/annales/c/ctrl3.png
 
 1.
 	Construire un graphe d’exclusion dont les sommets sont les monômes de f(x) et tel qu’il
@@ -281,6 +281,8 @@ Exercice 3 — Maximiser une fonction polynomiale en variables 0-1 - 4 points
 
 On construit un graphe en testant toutes les combinaisons des xi et en regardant les
 valeurs de chacun des termes.
+
+... a tracer ...
 
 2.
 	On veut trouver la valeur maximum que peut prendre f(x).
@@ -290,3 +292,8 @@ valeurs de chacun des termes.
 On passe par le graphe complémentaire, les coefficients devant les monômes étants les poids.
 Si on trouve un stable de poids maximum donc aura les valeurs toutes les valeurs pouvant valoir 1 en même temps
 ce qui nous donne la valeur maximum que peut prendre f(x).
+
+... a tracer ...
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
