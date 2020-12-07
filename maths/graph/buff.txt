@@ -1,0 +1,31 @@
+Buff
+--------------
+
+.. graphviz::
+
+	digraph {
+		size="10,8";
+  	rankdir="LR";
+  	"Bourse" -> "Opéra" [ label="5" ];
+		a [style=filled,color=red];
+    a -> b [arrowhead = none];
+	}
+
+.. graphviz::
+
+	digraph {
+		size="10,8";
+		rankdir="LR";
+		a->c;
+		b->a;
+		c->b;
+		c->e;
+		d->b;
+		d->f;
+		d->c;
+		e->a;
+		e->f;
+		e->d;
+		f->b;
+		f->a;
+	}

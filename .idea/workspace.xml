@@ -29,9 +29,6 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/cesim/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/cesim/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/cyber/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,19 +65,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\system\cyber" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\cyber\cyber\d" />
+      <recent name="C:\Users\quent\Documents\texas-res\business\corp\people" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\system\cyber\cyber\f" />
       <recent name="C:\Users\quent\Documents\texas-res\db\plsql\exercices\triggers" />
       <recent name="C:\Users\quent\Documents\texas-res\system\cyber\cyber\a" />
       <recent name="C:\Users\quent\Documents\texas-res\system\cyber\bestof" />
       <recent name="C:\Users\quent\Documents\texas-res\system\cyber\voc" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\assets\system\cyber" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\cyber\cyber\d" />
-      <recent name="C:\Users\quent\Documents\texas-res\business\corp\people" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\files\noyau" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -214,7 +211,8 @@
       <workItem from="1607068435225" duration="28090000" />
       <workItem from="1607161643398" duration="6543000" />
       <workItem from="1607183185846" duration="20278000" />
-      <workItem from="1607245980561" duration="930000" />
+      <workItem from="1607245980561" duration="2135000" />
+      <workItem from="1607329932043" duration="9785000" />
     </task>
     <servers />
   </component>
@@ -333,17 +331,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="376" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1603556286896" />
-    <state x="480" y="163" width="575" height="498" key="find.popup" timestamp="1607168496516">
+    <state x="480" y="163" width="575" height="498" key="find.popup" timestamp="1607335220347">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="480" y="163" width="575" height="498" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1607168496516" />
+    <state x="480" y="163" width="575" height="498" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1607335220347" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1606903667666">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606903667666" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607246535824">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607338554384">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1607246535824" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1607338554384" />
   </component>
 </project>
