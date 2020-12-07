@@ -121,7 +121,6 @@ Les attaques
 		Attaque via sous-traitants               <cyber/a/filiale>
 		Phishing                                 <cyber/a/phishing>
 		Ransomware                               <cyber/a/ransomware>
-		Cross-site scripting (XSS)               <cyber/a/xss>
 		Crypto jacking                           <cyber/a/crypto_jacking>
 
 Autres types d'attaques

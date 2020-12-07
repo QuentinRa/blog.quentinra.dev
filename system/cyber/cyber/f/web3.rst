@@ -95,17 +95,39 @@ Injections SQL
 
 	Vidéo : https://www.youtube.com/watch?v=Kitx7cSNsuE
 
-Injections Javascript
-	Une injection Javascript est facile à faire, il suffit d'écrire du Javascript dans les champs d'un formulaire.
+Injections Javascript (CrossSiteScripting XSS)
+	Une injection Javascript est facile à faire, il suffit d'écrire du Javascript dans les champs d'un formulaire, par exemple
+	de login ou encore dans les commentaires d'un site web.
 
-	Par exemple :code:`<script>alert('virus');</script>`. Si les injections Javascript n'ont pas été gérées et qu'une
-	personne a par exemple l'utilisateur 5 remplit son prénom avec ce bout de code, alors /profil/5 affichera
+	**Stored XSS** : Par exemple :code:`<script>alert('virus');</script>`. Si les injections Javascript n'ont pas été gérées et qu'une
+	personne a (ex: l'utilisateur id=5) remplit son prénom avec ce bout de code, alors /profil/5 affichera
 	un champ prénom vide et va afficher une alerte \'virus\'.
 
+	Plus couramment, l'injection est fait au survol d'une image : :code:`<img src='LINK' onmouseover="alert('virus')">`. Ici
+	survolé l'image, par exemple mis en commentaire exécute le code malicieux qui affiche une popup avec virus dedans.
+
 	Le moyen pour vous protéger de ces attaques et d'échapper les caractères HTML à l'entrée (saisie) et à la sortie
-	(affichage) ou uniquement à la sortie (ce qui est généralement ce qui est fait).
+	(affichage) ou uniquement à la sortie (c'est généralement ce qui est fait).
 
 	Attention cependant aux fonctions comme :code:`htmlspecialchars`, cette fonction n'échappe pas seulement les
 	< et > mais aussi les é, à, ... et les transformes en &code; (code étant la valeur ascii du caractère).
 	Le problème est que les balisent &code; sont ré-échappés à la lecture de la page par le navigateur donc vous
 	vous retrouvez avec des affichages cassés. La règle est simple : n'échappez que le strict minimum.
+
+	**Reflected XSS** : Il est également possible de mettre le code dans un lien (par exemple un lien très long ou un lien caché
+	par un raccourcisseur de lien) et donc vous ne l'auriez pas vu, et aurez cliqué dessus :
+	:code:`https://site.com/?id=<script>code...</script>`.
+
+	Comment détecter qu'il y a une faille XSS ?
+		Vous pouvez utiliser le logiciel OWASP ZAP (https://www.zaproxy.org/) qui va scanner un site
+		et détecter les vulnérabilités.
+
+		Lancez simplement le logiciel, faites un scan automatique, attendez l'indexation et la scan puis allez voir les résultats
+		dans alertes.
+
+	Mitigating XSS
+		Si vous souhaitez avoir des données propres dans votre base, donc faire en plus un filtre à l'entrée
+		alors il existe des outils. Le plus simple a faire est de limiter la saisie, donc d'utiliser
+		les bons champs pour récupérer les données et de limiter au maximum les risques d'injection.
+
+		Plus d'infos : https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Input_Validation_Cheat_Sheet.md
