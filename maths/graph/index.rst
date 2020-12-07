@@ -4,8 +4,8 @@
 Théorie des graphes
 ================================
 
-| :math:`\color{grey}{Version \ 2.3.8}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 01/12/2020}`
+| :math:`\color{grey}{Version \ 2.4.9}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 07/12/2020}`
 
 Graphe
 	Un graphe (G) est un ensemble de sommets (E pour Edge)

@@ -4,8 +4,8 @@
 Théorie des graphes - avancé
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.2}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 16/11/2020}`
+| :math:`\color{grey}{Version \ 1.0.3}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 07/12/2020}`
 
 Il s'agit de la partie avancée du cours sur les graphes (:ref:`graph`).
 

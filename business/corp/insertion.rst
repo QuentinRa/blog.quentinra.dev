@@ -4,8 +4,8 @@
 Insertion professionnelle
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.0}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 29/11/2020}`
+| :math:`\color{grey}{Version \ 1.1.1}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 07/12/2020}`
 
 Ce cours consiste à donner des bases
 pour se comportement professionnellement
@@ -47,6 +47,7 @@ que vous postulez même si ce n'est pas obligé.
 .. toctree::
 	 :maxdepth: 1
 
+	 Astuces et aides                     <docs/help>
 	 Rédiger un CV                        <docs/cv>
 	 Rédiger une lettre de motivation     <docs/letter>
 	 Passer une entretien                 <docs/meet>
@@ -67,4 +68,5 @@ Il faut au mieux se mettre à la place de votre auditoire
 
 **Crédits**
 	* Marie-Hélène RENAUD (enseignante à l'IUT de Sénart-Fontainebleau)
+	* Cours communication ENSIIE (enseignante à l'IUT de Sénart-Fontainebleau)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
