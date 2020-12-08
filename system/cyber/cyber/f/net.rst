@@ -31,3 +31,45 @@ Fuites de données
 		Vous pouvez utiliser Fichier > Export et choisir par exemple http pour récupérer des fichiers téléchargés par exemple.
 
 	Vidéo de présentation et d'un exemple : https://www.youtube.com/watch?v=yZTPMoYY2CA
+
+Explorer un ordinateur
+	Vous pouvez trouver des vulnérabilités, des services et applications en scannant une machine depuis son IP. Par exemple
+	vous pouvez trouver les ports ouverts d'une machine.
+
+	:code:`nmap` est une commande qui vous permet de scanner une machine pour récolter des informations.
+
+		* Vous avez plusieurs types de scans
+
+			* :code:`-sL` : liste toutes les cibles
+			* :code:`-sn` : ne pas regarder les ports
+
+		* Vous avez ensuite le protocole
+
+			* scan UDP : :code:`-sU`
+			* scan TCP : :code:`-sS` ou :code:`-sT`
+
+		* :code:`-p <port>` : définir un port
+		* :code:`-p- <port-port>` : définir un interval de ports
+		* :code:`-T<n>` : timing template, n désigne l'agressivité de 0 (discret) à 5 (agressif)
+
+		* vous pouvez lier un script a exécuter
+
+			* :code:`--script=<lua script>` : https://nmap.org/nsedoc/, https://nmap.org/nsedoc/scripts/
+
+		* :code:`-O` : détecter l'OS
+		* :code:`-A` : détecter l'OS + version, scan avec script et table de routage
+		* :code:`-v` : affiche toutes les informations
+
+	Se protéger ?
+
+		*
+			Non testé mais il existe des outils Intrusion Detection (IDS) & Prevention Systems (IPS)
+			qui surveillent votre réseau comme `Snort <https://www.snort.org/>`_ et `suricata <https://suricata-ids.org/>`_
+			a installer sur un pare-feu (ex: `pfsense <https://www.pfsense.org/>`_). Ils seraient capables de détecter
+			des tentatives de scans, de reverse scripting, traffic dangereux etc.
+
+		*
+			Je sais que sur OVH, vous pouvez installer un firewall externe pour bloquer les accès a votre VPS qui ne sont
+			pas conformes a des règles que vous avez défini (ips, ports, et protocoles).
+
+	Vidéo de présentation et d'un exemple : https://www.youtube.com/watch?v=StmtQKoFiWg
