@@ -29,7 +29,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/advanced.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/advanced.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/plus_court/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/plus_court/d1.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +216,7 @@
       <workItem from="1607329932043" duration="9882000" />
       <workItem from="1607343357434" duration="6595000" />
       <workItem from="1607356315849" duration="9027000" />
-      <workItem from="1607423483133" duration="6036000" />
+      <workItem from="1607423483133" duration="10411000" />
     </task>
     <servers />
   </component>
@@ -319,10 +319,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="ShowDiffWithBranchDialog/0.0.1536.824@0.0.1536.824" timestamp="1603484549092" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1604780667314">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1607434757008">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1604780667314" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1607434757008" />
     <state x="349" y="70" key="com.intellij.database.dbimport.ImportDialog" timestamp="1605899266055">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -343,9 +343,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606903667666" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607423698497">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607432971861">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1607423698497" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1607432971861" />
   </component>
 </project>

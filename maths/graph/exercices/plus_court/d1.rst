@@ -11,19 +11,39 @@ Soit G le graphe suivant
 
 1. Dessinez un arbre des plus courts chemins de S vers les autres nœuds.
 
-...
+.. graphviz::
+
+	digraph {
+		size="10,8";
+		rankdir="LR";
+		S->B [ label="1" ];
+		B->C [ label="2" ];
+		B->D [ label="1" ];
+		D->A [ label="3" ];
+		C->E [ label="1" ];
+	}
 
 2. Dans quel ordre l’algorithme de Dijkstra énumérerait les nœuds du graphe ?
 
-...
+S,B,D,C,E,A.
 
 3. Appliquez l’algorithme pour calculer les poids des plus courts chemins de S vers les autres nœuds.
 
-...
+================ ================ ================ ================ ================ ================ ================ =============
+Étape            S                A                B                C                D                E                Marqué
+================ ================ ================ ================ ================ ================ ================ =============
+0                0                :math:`+\infty`  :math:`+\infty`  :math:`+\infty`  :math:`+\infty`  :math:`+\infty`  S
+1                \-               S(7)             S(1)             :math:`+\infty`  :math:`+\infty`  :math:`+\infty`  B
+2                \-               B(6)             \-               B(3)             B(2)             :math:`+\infty`  D
+3                \-               D(5)             \-               B(3)             \-               D(5)             C
+4                \-               D(5)             \-               \-               \-               C(4)             E
+5                \-               D(5)             \-               \-               \-               \-               A
+================ ================ ================ ================ ================ ================ ================ =============
 
 4. Comment modifier l’algorithme pour reconstruire les plus court chemins ?
 
-...
+Pareil que à la question 3. Dans l'algorithme original on n'a pas S(1) mais juste 1 donc on ne connait
+pas le prédécesseur, sauf que je l'ai mis direct parce que c'est mieux ^^.
 
 **Crédits**
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
