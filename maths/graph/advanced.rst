@@ -4,8 +4,8 @@
 Théorie des graphes - avancé
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.3}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 07/12/2020}`
+| :math:`\color{grey}{Version \ 1.1.4}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 08/12/2020}`
 
 Il s'agit de la partie avancée du cours sur les graphes (:ref:`graph`).
 
@@ -70,6 +70,7 @@ chemin dans un graphe.
 		Stabilité                       <exercices/stable>
 		Fonction de Grundy              <exercices/grundy>
 		Bases de cycles et cocycles     <exercices/bases>
+		Plus court chemin               <exercices/plus_court>
 		Non triés                       <exercices/non_rank>
 
 ------
