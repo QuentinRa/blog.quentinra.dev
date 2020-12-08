@@ -1,0 +1,36 @@
+================================
+2. Algorithme de Ford-Bellman
+================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+1.
+	Soit G un graphe avec les arcs pondérés et s un nœud de ce graphe. Soit :math:`d^k(u)` le poids
+	d’un plus court chemin de s vers u utilisant au plus k arcs. Montrer qu’il existe u tel que
+	:math:`d^{n-1}(u) > d^n(u)` si et seulement s’il existe circuit absorbant dans le graphe.
+
+Soit un plus court chemin qui utilise n-1 arêtes, alors si on trouve avec une arête de plus
+mais qui est encore plus court, il existe un circuit absorbant.
+
+Si on a n-1 arêtes alors on a fait une boucle quelque part et en faisant cette boucle
+on trouve une distance inférieure donc elle est absorbante.
+
+2. Appliquer l’algorithme de Ford-Bellman au graphe suivant :
+
+.. image:: /assets/math/graph/exercice/ordo2.png
+
+================ ================ ================ ================ ================
+Étape            S                A                B                C
+================ ================ ================ ================ ================
+0                0                :math:`+\infty`  :math:`+\infty`  :math:`+\infty`
+1                \-               S(2)             S(4)             S(1)
+1-bis            \-               C(-2)            A(3)             S(1)
+2                \-               C(-2)            A(-1)            B(0)
+================ ================ ================ ================ ================
+
+Le circuit b,c,a,b est de poids négatif alors donc a chaque fois qu'on tourne on peut diminuer
+la distance de 1 donc on peut toujours obtenir un chemin plus petit.
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

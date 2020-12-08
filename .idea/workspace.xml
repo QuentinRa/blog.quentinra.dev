@@ -29,7 +29,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/plus_court/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/plus_court/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/plus_court.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/plus_court.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +216,7 @@
       <workItem from="1607329932043" duration="9882000" />
       <workItem from="1607343357434" duration="6595000" />
       <workItem from="1607356315849" duration="9027000" />
-      <workItem from="1607423483133" duration="10411000" />
+      <workItem from="1607423483133" duration="12268000" />
     </task>
     <servers />
   </component>

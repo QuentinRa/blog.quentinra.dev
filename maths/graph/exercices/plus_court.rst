@@ -36,6 +36,11 @@ Soit G le graphe suivant
 
 .. image:: /assets/math/graph/exercice/ordo2.png
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<plus_court/d2>
+
 | :code:`[TAG] ENSIIE MTG TD10 2020 S1`
 
 3. Recharger les batteries
