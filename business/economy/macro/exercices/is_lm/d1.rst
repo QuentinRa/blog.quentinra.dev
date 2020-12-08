@@ -2,8 +2,8 @@
 1. Demande et offre de monnaie
 ================================
 
-.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
-   :alt: correction vérifiée
+.. image:: https://img.shields.io/badge/correction-partiellement%20vérifiée-yellow.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction partiellement vérifiée
 
 Soit une économie fermée keynésienne à une période caractérisée par :
 
@@ -196,26 +196,144 @@ Financement de la politique budgétaire par l'emprunt
 
 	Qu'est-ce qu'un effet d’éviction ? Expliquez pourquoi cette politique induit un effet d’éviction.
 
-...
+Réponse
 
+	* Le gouvernement augmente de 10 ses dépenses donc G=20
+	* Y = C + I + G donc le PIB augmente
+
+			* Y = C + I + G
+			* Y = 10 + 0.5 * (Y − T) + 10 + 0.1Y - 80i + 20
+			* Y = 10 + 10 + 20 + 0.5Y - 0.5T +0.1Y -80i
+			* Y -0.5Y - 0.1Y = 40 - 0.5T - 80i
+			* Y(1-0.5-0.1) = 40 - 0.5T - 80i
+			* Y = (40 - 0.5T - 80i) / (1-0.5-0.1)
+			* Y = 1/(1-0.5-0.1) * (40 - 0.5T - 80i)
+			* Y = 2.5 * (40 - 0.5T - 80i)
+			* Y = 100 - 1.25T - 200i
+			* Y = 100 - 1.25*10 - 200i
+			* Y = 100 - 12.5 - 200i
+			* Y = 87.5 - 200i
+			* Y = 87.5 - 200Y/400
+			* Y = 87.5 - 0.5Y
+			* Y = 87.5/(1+0.5) = 58.333...
+
+	* Et
+	* Y = 87.5 - 200i
+
+			* 200i = 87.5 - Y
+			* 200i = 87.5 - 58.333...
+			* 200i = 29.1666...
+			* i = 29.1666.../200
+			* i = 0.1458333...
+
+	* Donc on a bien une augmentation du PIB qui entraine ici une augmentation du taux d'intérêt
+	*
+		Le taux d'intérêt augmente car pour rester sur l'égalité LM (donc conserver Md=Ms) suite
+		à l'augmentation de monnaie, alors on a dû augmenter le taux d'intérêt. Cependant une hausse
+		d'intérêt réduit les investissements donc le PIB : c'est un effet dit d'éviction.
+
+.. plot::
+
+		import math
+		import numpy as np
+		import matplotlib.pyplot as plt
+
+		w = 0.5
+
+		x = np.arange(-w, w, 0.001)
+		y = 400*x
+
+		fig = plt.figure()
+		ax = fig.add_subplot(1, 1, 1)
+
+		ax.plot(x, y, color='tab:orange')
+
+		x = np.arange(-w, w, 0.001)
+		y = 72.5 - 200*x
+		ax.plot(x, y, color='tab:blue')
+
+		x = np.arange(-w, w, 0.001)
+		y = 41.6666666 + 0*x
+		ax.plot(x, y, color='tab:pink')
+
+		x = np.arange(-w, w, 0.001)
+		y = 0.10416666666667 + 0*x
+		ax.plot(x, y, color='tab:purple')
+
+		# Move left y-axis and bottom x-axis to centre, passing through (0,0)
+		ax.spines['left'].set_position('center')
+
+		# Eliminate upper and right axes
+		ax.spines['right'].set_color('none')
+		ax.spines['top'].set_color('none')
+
+		# Show ticks in the left and lower axes only
+		ax.xaxis.set_ticks_position('bottom')
+		ax.yaxis.set_ticks_position('left')
+
+		plt.show()
 
 (b)
 	Quelles sont les nouvelles variables d'équilibre : calculez i', C', I', Y' d'équilibre, ainsi que la
 	demande de monnaie. Quel a été l'impact de l’augmentation budgétaire sur ces variables ?
 
-...
+Réponse
+
+	* (a) : Y = 58.333...
+	* (a) : i = 0.1458333...
+	* C = 10 + 0.5 * (Y − T)
+
+		* 10 + 0.5 * (58.333... - 10)
+		* 10 + 0.5 * 48.333...
+		* 10 + 24.1666...
+		* C = 34.1666...
+
+	* I = 10 + 0.1Y - 80i
+
+		* 10 + 0.1 * 58.333..  - 80 * 0.1458333...
+		* 10 + 5.8333...  - 11.666...
+		* I = 4.167
+
+	* Y = 34.1666... + 4.167 + 20 = 58.333... OK
 
 (c)
 	A présent calculons les variables d'équilibre en éliminant l’effet d’éviction. Pour cela calculez les
 	variables d’équilibre Y°, C°, I°, ainsi que la demande de monnaie en conservant le taux d'intérêt initial
 	i\*. Que constatez-vous ?
 
-...
+Réponse
+
+	* on garde i = 0.1041666...
+	* Y = 87.5 - 200i
+
+			* Y = 87.5 - 200 * 0.1041666...
+			* Y = 87.5 - 20.8333...
+			* Y = 66.666...
+
+	* C = 10 + 0.5 * (Y − T)
+
+		* 10 + 0.5 * (66.666... - 10)
+		* 10 + 0.5 * 56.666...
+		* 10 + 28.333...
+		* C = 38.333...
+
+	* I = 10 + 0.1Y - 80i
+
+		* 10 + 0.1 * 66.666..  - 80 * 0.1041666...
+		* 10 + 6.666...  - 8.333...
+		* I = 8.333...
+
+	* Y = 38.333... + 8.333 + 20 = 66.666... OK
+	* On remarque que Y° donc sans effet d'éviction est plus grand que Y'
 
 (d)
 	Calculez l’effet d’éviction en faisant la différence entre Y° et Y'
 
-...
+Réponse
+
+	* Y° - Y' = dY = 66.666... - 58.333... = 8.333...
+	* C° - C' = dC = 38.333... - 34.1666... = 4.1666...
+	* I° - I' = dI = 8.333... - 4.167 = 4.166333...
 
 (e)
 	Mettez en évidence l'égalité entre l’épargne privée, publique et l'investissement avec et sans l’effet
@@ -223,7 +341,21 @@ Financement de la politique budgétaire par l'emprunt
 	dépenses publiques est égale à la différence entre l'investissement sans et avec effet d’éviction. Quel
 	est son montant ?
 
-...
+Réponse
+
+	* S_privée = Y - T - C = Yd - C
+
+		* avec : 66.666... - 10 - 38.333... = 18.333...
+		* sans : 58.333... - 10 - 34.1666... = 14.1666...
+
+	* S_publique = T - G
+
+		* avec ou sans : 10 - 20 = -10
+
+	* I = S_privée+S_publique = S_nationale
+
+		* avec : 18.333... - 10 = 8.333...
+		* sans : 14.1666... - 10 = 4.1666...
 
 Question 6
 ----------------------
@@ -236,20 +368,71 @@ Financement de la politique budgétaire par l'emprunt.
 	d’équilibre i\* et Y\*. Sur un nouveau graphique, représentez (de manière stylisée) les conséquences de
 	cette politique.
 
-...
+Réponse
+
+	* Le gouvernement augmente de 10 ses dépenses donc G=20
+	* Y = C + I + G donc le PIB augmente
+
+			* Y = C + I + G
+			* Y = 10 + 0.5 * (Y − T) + 10 + 0.1Y - 80i + 20
+			* Y = 10 + 10 + 20 + 0.5Y - 0.5T +0.1Y -80i
+			* Y -0.5Y - 0.1Y = 40 - 0.5T - 80i
+			* Y(1-0.5-0.1) = 40 - 0.5T - 80i
+			* Y = (40 - 0.5T - 80i) / (1-0.5-0.1)
+			* Y = 1/(1-0.5-0.1) * (40 - 0.5T - 80i)
+			* Y = 2.5 * (40 - 0.5T - 80i)
+			* Y = 100 - 1.25T - 200i
+			* Y = 100 - 1.25 * **20** - 200i
+			* Y = 100 - 25 - 200i
+			* Y = 75 - 200i
+			* Y = 75 - 200Y/400
+			* Y = 75 - 0.5Y
+			* Y = 75/(1+0.5) = 50
+
+	* Et
+	* Y = 75 - 200i
+
+			* 200i = 75 - Y
+			* 200i = 75-50
+			* 200i = 25
+			* i = 25/200
+			* i = 0.125
+	* Augmentation du taux d'intérêt et augmentation du PIB
 
 (b)
 	L’impact d’une augmentation des dépenses budgétaires sur les variables d’équilibre a été calculé à
 	la question 5.b). A présent calculez l’impact d’une augmentation des impôts sur ces
-	variables d’équilibre (nous les noterons Y\', C°, I°, Md\') ?
+	variables d’équilibre (nous les noterons Y°, C°, I°, Md°) ?
 
-...
+Réponse
+
+	* (6a) Y = 50
+	* (6a) i = 0.125
+	* (2) Md = 400i
+	* C = 10 + 0.5 * (Y − T)
+
+		* C = 10 + 0.5 * (50-20)
+		* C = 10 + 0.5 * 30
+		* C = 10 + 15
+		* C = 25
+
+	* I = 10 + 0.1Y - 80i
+
+		* I = 10 + 0.1 * 50 - 80 * 0.125
+		* I = 10 + 5 - 10
+		* I = 5
+
+	* Y = C + I + G = 25 + 5 + 20 = 50 : OK
 
 (c)
 	Expliquez pourquoi l’augmentation de la hausse du budget compensée par une augmentation égale
 	des impôts ne se neutralise pas quant à leur effet sur le revenu national ?
 
-...
+Réponse
+
+	* L'augmentation des impôts impact directement la consommation et la fait baisser
+	* L'augmentation des dépenses augmente le PIB mais ne change pas la consommation
+	* Donc ils ne se compensent pas directement
 
 Question 7
 ----------------------
@@ -262,19 +445,32 @@ Utilisation d’une politique monétaire.
 	cette politique sur les courbes IS et LM ainsi que sur les variables d’équilibre i\* et Y\*. Sur un nouveau
 	graphique, représentez (de manière stylisée) les conséquences de cette politique.
 
-...
+Réponse
+
+	* Si l'offre de monnaie augmente, alors I va augmenter car il est plus facile d'investir et d'épargner
+	* Or Y = C + I + G donc Y va augmenter
+	* Le taux d'intérêt augmente mais comme la masse monétaire est grande, il augmente moins
 
 (b)
 	On rappelle que les conséquences de la politiques budgétaire ont été calculées à la question 5.b).
 	Quel est le montant de l’augmentation de l'offre de monnaie qui permet de compenser l'effet
 	d'éviction ?
 
-...
+Réponse
+
+	* Y = 66.666...
+	* i = 0.1041666...
+	* Md = 0.05 * 66.666.../0.1041666... = 32
 
 (c)
 	Calculez les nouvelles variables d’équilibres (nous les noterons Y°, C°, I°, Md°).
 
-...
+Réponse
+
+	* (IS) Y = 87.5 - 200i
+	* (LM) Md = 0.05 * Y/i = 32 donne i = 0.05/32 * Y = 0.0015625 * Y
+	* Donc Y = 87.5 - 200 * 0.0015625 * Y' donne Y' = 66.66666
+	* Donc i = 0.0015625 * 66.66666 = 0.10415
 
 Question 8
 ----------------
