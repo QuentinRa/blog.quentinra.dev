@@ -73,3 +73,22 @@ Explorer un ordinateur
 			pas conformes a des règles que vous avez défini (ips, ports, et protocoles).
 
 	Vidéo de présentation et d'un exemple : https://www.youtube.com/watch?v=StmtQKoFiWg
+
+Connexion FTP
+	FTP (File Transfert protocol) est un protocole de transfert de fichiers utilisé pour déposer et télécharger
+	des fichiers sur une autre machine (dite serveur). Le protocole FTP utilise le port 21 (connexion, ... ou le port 22 si sftp)
+	mais les données transférés passent par le port 20.
+
+	Certains serveurs ont une utilisateur ftp :code:`anonymous` c'est-à-dire qui n'a pas besoin de mot de passe et qui certaines
+	fois peut faire des choses sur le serveur qu'il ne devrait pas pouvoir faire. Il est donc recommandé de le désactiver.
+
+	En tant qu'utilisateur anonyme, nous ne sommes pas associé a une session et n'avons donc pas des permissions restreintes,
+	si par exemple un script que nous avons déposé est exécuté, alors nous pourrions obtenir une porte dérobée sur le serveur.
+
+	Vous pouvez utilsez :code:`FileZilla` sous windows pour vous connecter en ftp. Sinon en ligne de commande
+	:code:`ftp <ip>`.
+
+		* :code:`ls` : liste les fichiers/dossiers d'un répertoire
+		* :code:`cd` : se déplacer
+		* :code:`put` : déposer un fichier sur le serveur
+		* :code:`get` : récupérer un fichier sur le serveur
