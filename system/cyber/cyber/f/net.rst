@@ -1,6 +1,6 @@
-========================================
-4. CyberSécurité - Les problèmes du web
-========================================
+=============================================
+4. CyberSécurité - Les problèmes du système
+=============================================
 
 On rappelle d'une adresse IP est l'adresse d'une machine (127.0.0.1 = adresse IP locale). Il existe
 des adresses publiques (n'importe qui peut vous trouver avec) ou des adresses privées (seuls ceux sur le même
@@ -74,7 +74,7 @@ Explorer un ordinateur
 
 	Vidéo de présentation et d'un exemple : https://www.youtube.com/watch?v=StmtQKoFiWg
 
-Connexion FTP
+Transferts de fichiers via FTP
 	FTP (File Transfert protocol) est un protocole de transfert de fichiers utilisé pour déposer et télécharger
 	des fichiers sur une autre machine (dite serveur). Le protocole FTP utilise le port 21 (connexion, ... ou le port 22 si sftp)
 	mais les données transférés passent par le port 20.
@@ -92,3 +92,32 @@ Connexion FTP
 		* :code:`cd` : se déplacer
 		* :code:`put` : déposer un fichier sur le serveur
 		* :code:`get` : récupérer un fichier sur le serveur
+
+	Voici une vidéo + exemple : https://www.youtube.com/watch?v=i-jqFYTPEV4
+
+Transferts de fichiers via SMB/NFS
+	FTP est un protocole souvent utilisé pour partager des fichiers de façon externe. En interne, les protocoles
+	SMB (~windows) ou NFS (~linux) sont majoritairement utilisés.
+
+	Samba est un outil qui relie des infrastructures utilisant l'un des deux protocole et uniformise les échanges. Les échanges
+	faits sont encryptés par défaut donc assez sécurisés. Vous pouvez ainsi relier tous les ordinateurs, photocopieuses, imprimantes
+	d'une entreprise à un même dossier :code:`share` dont le contenu sera commun à toutes.
+
+	enum (enum4linux)
+		Télécharger ici l'alternative de enum.exe `enum4linux.pl <https://github.com/CiscoCXSecurity/enum4linux/blob/master/enum4linux.pl>`_
+		sachant que je n'ai pas trouvé comment faire sous windows.
+
+			* utilisation : :code:`./enum4linux.pl <options> <ip>`
+			* :code:`-U` : liste des utilisateurs
+			* :code:`-M` : liste des machines
+			* :code:`-S` : liste des shares
+			* :code:`-o` : infos sur le système
+			* :code:`-i` : infos sur les imprimantes
+			* :code:`-v` : affiche tout ce qui est fait
+
+		Note: vous devez installer :code:`smbclient` pour utiliser enum4linux.
+
+		Pour vous connecter a un dossier partagé : :code:`smbclient //IP/nom_dossier_share`. Vous pouvez tester de ne pas mettre
+		de mot de passe. Les commandes sont les mêmes que plus haut en FTP (ls, cd, get, put, pwd, more).
+
+	Voici une vidéo + exemple : https://www.youtube.com/watch?v=HscyCbModk4
