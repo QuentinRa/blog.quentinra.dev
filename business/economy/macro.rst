@@ -164,4 +164,4 @@ Le moment ou IS=LM c'est l'équilibre entre le marché financier et celui des bi
 	* https://www.lafinancepourtous.com/decryptages/politiques-economiques/theories-economiques/theorie-quantitative-de-la-monnaie/
 	* https://www.melchior.fr/le-modele-lm
 	* http://public.iutenligne.net/economie/simonnet/equilibre_macroeconomique/Chapitre-2/index.html
-	*
+	* http://cerdom.over-blog.com/pages/Approche_neoclassique_approche_keynesienne-1578739.html
