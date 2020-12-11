@@ -33,9 +33,9 @@
 	Quelle affirmation est correcte
 
 | :code:`(a)` Une politique monétaire expansionniste est plus favorable à l’investissement qu’une politique budgétaireexpansionniste
-| :code:`(a)` Une baisse du déficit budgétaire par une hausse des impôts conduit à un déplacement vers la droite de lacourbe IS
-| :code:`(a)` L’augmentation de la masse monétaire conduit à un déplacement vers le haut de la courbe LM
-| :code:`(a)` Aucune bonne réponse
+| :code:`(b)` Une baisse du déficit budgétaire par une hausse des impôts conduit à un déplacement vers la droite de lacourbe IS
+| :code:`(c)` L’augmentation de la masse monétaire conduit à un déplacement vers le haut de la courbe LM
+| :code:`(d)` Aucune bonne réponse
 
 5.
 	Soit l’économie suivante : C = 100 + 0,25Yd ; I = 15 + 0,25Y – 50i ; T = 100 ; G = 50 ; Md = 0,1Y/i et Ms = 550. A l’équilibre
