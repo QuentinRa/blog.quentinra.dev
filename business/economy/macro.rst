@@ -146,6 +146,7 @@ Le moment ou IS=LM c'est l'équilibre entre le marché financier et celui des bi
 		Marché des biens et services    <macro/exercices/is>
 		Marché financier                <macro/exercices/lm>
 		Modèle IS/LM                    <macro/exercices/is_lm>
+		Annales                         <macro/exercices/annales>
 
 -----
 
