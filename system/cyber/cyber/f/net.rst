@@ -12,6 +12,10 @@ Les données sont échangées entre deux machines (donc deux IP), en passant par
 
 Le cours sur le réseau contient toutes les informations détaillées.
 
+exploit-db.com
+	Le site exploit-db (et son package associé : exploitdb, avec la commande searchsploit) permet de voir
+	toutes les failles reportées d'un logiciel.
+
 Fuites de données
 	Il est important de vérifier tous les échanges de données faits sur un système car on peut s'apercevoir que certains
 	sont faits a notre insu.
@@ -95,6 +99,10 @@ Transferts de fichiers via FTP
 
 	Voici une vidéo + exemple : https://www.youtube.com/watch?v=i-jqFYTPEV4
 
+	Une faille existe dans la version 1.3.5 ProFTPd dont le module mod_copy permet avec les commandes
+	:code:`SITE CPFR <file>` (copie) et :code:`SITE CPTO <path>` (coller). Si vous êtes un utilisateur anonyme, vous pouvez
+	déplacer n'importe quel fichier vers n'importe quel endroit.
+
 Transferts de fichiers via SMB/NFS
 	FTP est un protocole souvent utilisé pour partager des fichiers de façon externe. En interne, les protocoles
 	SMB (~windows) ou NFS (~linux) sont majoritairement utilisés.
@@ -117,10 +125,18 @@ Transferts de fichiers via SMB/NFS
 
 		Note: vous devez installer :code:`smbclient` pour utiliser enum4linux.
 
-		Pour vous connecter a un dossier partagé : :code:`smbclient //IP/nom_dossier_share`. Vous pouvez tester de ne pas mettre
-		de mot de passe. Les commandes sont les mêmes que plus haut en FTP (ls, cd, get, put, pwd, more).
+		Commades :
+
+			* connecter a un dossier partagé : :code:`smbclient //IP/nom_share`
+			* Vous pouvez tester sans mot de passe
+			* Les commandes sont les mêmes que plus haut en FTP (ls, cd, get, put, pwd, more).
+			* télécharger tous le fichiers d'une share : :code:`smbget -R  smb://IP/nom_share`
 
 	Voici une vidéo + exemple : https://www.youtube.com/watch?v=HscyCbModk4
+
+	En utilisant :code:`nmap`, vous pouvez explorer les utilisateurs et les :code:`shares` avec la commande
+	code:`nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse ip`, sachant que 445 est le port utilisé
+	par Samba (port 139 avant 2000).
 
 Privilèges
 	Un utilisateur doit généralement escalader en privilèges pour faire certaines actions, c'est-à-dire prouver qu'il a par exemple

@@ -30,7 +30,6 @@
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/cyber/cyber/f/net.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/cyber/f/net.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/cyber/cyber/f/web.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/cyber/f/web.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +222,8 @@
       <workItem from="1607675117636" duration="5053000" />
       <workItem from="1607688505143" duration="5272000" />
       <workItem from="1607700355463" duration="9228000" />
-      <workItem from="1607716975045" duration="4511000" />
+      <workItem from="1607716975045" duration="6230000" />
+      <workItem from="1607770805464" duration="3134000" />
     </task>
     <servers />
   </component>
