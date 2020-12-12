@@ -5,7 +5,7 @@
 Les points clefs
 
 	* pas de schéma fixe (donc a tout moment une personne peut avoir des propriétés que les autres n'ont pas)
-	* pas de langage de requêtes standard
+	* pas de langage de requêtes standard (donc il y a pleins de langages)
 	* donnée complexes et omissibles (pas obliger de tout spécifier)
 	* open-source
 

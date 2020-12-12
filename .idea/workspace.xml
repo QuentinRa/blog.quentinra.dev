@@ -29,8 +29,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/CHEKCLIST.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/CHEKCLIST.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/cypher/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/cypher/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/cypher/intro/buf.txt" beforeDir="false" afterPath="$PROJECT_DIR$/db/cypher/intro/buf.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/cypher/intro/idea.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/cypher/intro/idea.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/cypher/intro/key.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/cypher/intro/key.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +62,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/db/cypher/intro" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/db/cypher/rep" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="kite.configurable" />
@@ -68,18 +70,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\db\cypher\rep" />
       <recent name="C:\Users\quent\Documents\texas-res\db\cypher\intro" />
       <recent name="C:\Users\quent\Documents\texas-res\db\cypher" />
       <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\exercices\annales" />
       <recent name="C:\Users\quent\Documents\texas-res\business\economy\macro\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\plus_court" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\db\cypher" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\annales\c" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\annales\c\rep" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\annales" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\annales\c" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -224,7 +226,7 @@
       <workItem from="1607688505143" duration="5272000" />
       <workItem from="1607700355463" duration="9228000" />
       <workItem from="1607716975045" duration="6230000" />
-      <workItem from="1607770805464" duration="12409000" />
+      <workItem from="1607770805464" duration="17017000" />
     </task>
     <servers />
   </component>

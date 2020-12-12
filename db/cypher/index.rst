@@ -4,7 +4,7 @@
 Bases de données Graphes
 ================================
 
-| :math:`\color{grey}{Version \ 0.1.1}`
+| :math:`\color{grey}{Version \ 0.2.2}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 12/12/2020}`
 
 1. Introduction
@@ -28,15 +28,19 @@ qui complète les SGBD relationnels.
 
 Motifs graphe
 	Il s'agit d'une règle, par exemple x-motif->y. On liste toutes les arêtes avec leurs valuations en on obtient
-	un ensemble avec toutes les valeurs x et leur y associé qui correspondent a la règle. Apparement c'est utile pour
+	un ensemble avec toutes les valeurs x et leur y associé qui correspondent a la règle. Apparemment c'est utile pour
 	faire des recherches.
-
-**Nous allons utiliser Neo4J et son langage : Cypher dans ce cours.**
 
 2. Présentation de Cypher
 ==================================
 
-...
+Cypher est le langage utilisé dans Neo4J, une SGBD graphe.
+
+.. toctree::
+	 :maxdepth: 1
+
+		 Représentation d'un nœud        <rep/node>
+		 Représentation d'une arête      <rep/vertex>
 
 -----
 
