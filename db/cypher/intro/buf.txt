@@ -1,0 +1,11 @@
+On va avoir pour chaque tuple (relationnel), un nœud a créer noté
+:code:`(ref: nom{attribut: valeur, ...})`.
+
+	* :code:`nom` correspond au nom de l'objet
+	* :code:`ref`, facultatif, ???
+	* spécifier des attributs est facultatif
+
+On note une relation entre deux nœud :code:`ref1-[...]->ref2`. :code:`...` correspond
+a l'arête dont la syntaxe est la même que celle d'un nœud.
+
+Pour une association n-aire, on créé n nœud et 1 pour l'association qu'on relie aux n nœuds.

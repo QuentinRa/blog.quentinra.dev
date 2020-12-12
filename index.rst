@@ -61,6 +61,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     Modélisation relationnelle           <db/model/index>
 		SQL (Structured Query Language)      <db/sql/index>
 		PL/SQL (Procedural Language)         <db/plsql/index>
+		Bases de données Graphes             <db/cypher/index>
 
 .. toctree::
     :caption: Travailler sur un projet
