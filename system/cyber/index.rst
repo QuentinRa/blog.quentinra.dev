@@ -152,6 +152,7 @@ Failles de sécurité
 		 Les failles du web (exploration)              <cyber/f/web2>
 		 Les failles du web (injections)               <cyber/f/web3>
 		 Les failles du système (réseau)               <cyber/f/net>
+		 Les failles du système et du web              <cyber/f/net2>
 
 -----
 

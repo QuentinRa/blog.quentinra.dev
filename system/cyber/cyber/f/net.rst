@@ -16,6 +16,8 @@ exploit-db.com
 	Le site exploit-db (et son package associé : exploitdb, avec la commande searchsploit) permet de voir
 	toutes les failles reportées d'un logiciel.
 
+	Autres : https://attackerkb.com/, https://www.rapid7.com/, https://cve.mitre.org/cve/.
+
 Fuites de données
 	Il est important de vérifier tous les échanges de données faits sur un système car on peut s'apercevoir que certains
 	sont faits a notre insu.
