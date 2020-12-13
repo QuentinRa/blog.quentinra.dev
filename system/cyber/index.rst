@@ -4,8 +4,8 @@
 Cybersécurité
 ================================
 
-| :math:`\color{grey}{Version \ 1.1.5}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 06/12/2020}`
+| :math:`\color{grey}{Version \ 1.5.11}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 12/12/2020}`
 
 Ce cours a pour objectif de contenir de nombreuses
 connaissances utiles aux cyber-experts tel que

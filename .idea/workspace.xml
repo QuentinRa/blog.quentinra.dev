@@ -29,8 +29,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/cyber/cyber/f/net.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/cyber/f/net.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/cyber/cyber/f/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/cyber/f/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/cyber/cyber/f/net2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/cyber/f/net2.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/cyber/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -226,7 +225,9 @@
       <workItem from="1607700355463" duration="9228000" />
       <workItem from="1607716975045" duration="6230000" />
       <workItem from="1607770805464" duration="21371000" />
-      <workItem from="1607806829879" duration="1925000" />
+      <workItem from="1607806829879" duration="1972000" />
+      <workItem from="1607813077250" duration="47000" />
+      <workItem from="1607859385682" duration="24325000" />
     </task>
     <servers />
   </component>
