@@ -38,6 +38,11 @@ Les Rōmaji sont des caractères latins pour écrire des mots
 qui ne peuvent pas être écrits en japonais ou des mots qui doivent
 pouvoir être lus par des personnes qui ne lisent pas le japonais.
 
+.. note::
+
+	Certains mots comme sayōnara ou sayounara, ont un ō qui est prononcé. Il s'agit d'une notation pour
+	insister sur le o.
+
 3. Chiffres
 ======================================
 
@@ -67,27 +72,13 @@ sont réalisés par des **particules** que l'on retrouve entre chaque mots.
 	* **ne** (ね) en fin de phrase, veut dire n'est ce pas
 	* **kara** et **made**, voir temps : particules pour désigner le début (départ) et la fin (arrivée)
 
-Verbes
-	On met le verbe après l'action, par exemple "je suis beau" devient "je beau être".
+Autres
 
-	Si on veut faire une négation, on ajoute でわ ありません (Dewa arimasen) ou  じゃあ ありません (Jaa arimasen) après le sujet.
+.. toctree::
+	 :maxdepth: 1
 
-	Le verbe être est :code:`desu (です)`.
-
-Pronoms
-	On utilise watashi (わたし) pour dire je (ou familier : ore (おれ) ou boku (ぼく)).
-
-	Vous pouvez dire tu avec きみわ (kimi wa), あなた (anata) ou きさま (kisama).
-
-	On peut dire il avec  あの人 (anohito), あの かた (anokata).
-
-On ajoute généralement un o devant un nom (par exemple namae devient oname) car
-c'est plus poli (ex: oname wa ~ quel est ton nom ?).
-
-.. note::
-
-	Certains mots comme sayōnara ou sayounara, ont un ō qui est prononcé. Il s'agit d'une notation pour
-	insister sur le o.
+		Conjugaison et verbes        <syntax/verbes>
+		Pronoms                      <syntax/pronoms>
 
 5. Vocabulaire
 ========================
@@ -139,9 +130,10 @@ c'est plus poli (ex: oname wa ~ quel est ton nom ?).
 
 	* cours
 
-			* https://fr.wikibooks.org/wiki/Japonais
-			* https://fr.wikibooks.org/wiki/Japonais/Hiragana
-			* https://www.kanpai.fr/apprendre-japonais/comment-dire-oui-non-japonais
-			* https://www.apprendrelejaponais.net/au-revoir-en-japonais.html
-			* https://www.ici-japon.com/apprendre-le-japonais/la-particule-to/
-			* http://www.crapulescorp.net/japonais/cours/grammaire/construction_des_phrases_simples.php5
+		* https://fr.wikibooks.org/wiki/Japonais
+		* https://fr.wikibooks.org/wiki/Japonais/Hiragana
+		* https://www.kanpai.fr/apprendre-japonais/comment-dire-oui-non-japonais
+		* https://www.apprendrelejaponais.net/au-revoir-en-japonais.html
+		* https://www.ici-japon.com/apprendre-le-japonais/la-particule-to/
+		* http://www.crapulescorp.net/japonais/cours/grammaire/construction_des_phrases_simples.php5
+		* https://fr.wikibōks.org/wiki/japonais/vocabulaire/temps#heure_(%e6%99%82)

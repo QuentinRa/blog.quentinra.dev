@@ -4,14 +4,4 @@ froid/chaud balec
 
 ---------------------
 
-https://fr.wikibōks.org/wiki/japonais/vocabulaire/temps#heure_(%e6%99%82)
-
-tōkyō wa ima nanji-desu
-watashi no ichi (1ere) nichi (journée)
-Demander l'heure : ima nanjimade
-
-okimasu
-oyasumi
-benkyoushimasu
-kaerimasu (rentrer)
-nemasu
+...

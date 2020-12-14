@@ -15,6 +15,7 @@ Vocabulaire
 
 	* <...>じ (ji) : heure
 	* <...>っぷん (-ppun) : <valeur>-minute
+	* いま (ima) : maintenant
 	* ごぜん (gozen) : matin
 	* ひる (hiru) : midi/pause déjeuner
 	* ごご (gogo) : après-midi
@@ -24,6 +25,7 @@ Notions
 	* Quel heure ... : nanji (suivit de ni truc/kara ... /made ...)
 	* Quel minute ... : nanpun (suivit de ni truc/kara ... /made ...)
 	* De ...h à ...h :  ... ji kara ...ji made
+	* <truc> de quel ...h à ...h ? : <truc> nanji kara nanji made ka.
 
 Heures
 
@@ -37,6 +39,8 @@ Minutes ふん (fun)/ ぷん (pun)
 	* fun : 2,5,7,9 (ex: gofun)
 	* pun : 1 (いっぷん=ippun), 3, 4, 6 (ろっぷん=roppun), 8 (はっぷん=happun), 10 (じゅっぷん=juppun)
 	* et demi : はん (han) ou さんじゅっぷん (sanjuppun)
+
+On dire par exemple <heure> ji <minute> pun/fun <gogo/gozen>.
 
 2. Jour de la semaine
 ===========================
