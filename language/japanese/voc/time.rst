@@ -40,7 +40,7 @@ Minutes ふん (fun)/ ぷん (pun)
 	* pun : 1 (いっぷん=ippun), 3, 4, 6 (ろっぷん=roppun), 8 (はっぷん=happun), 10 (じゅっぷん=juppun)
 	* et demi : はん (han) ou さんじゅっぷん (sanjuppun)
 
-On dire par exemple <heure> ji <minute> pun/fun <gogo/gozen>.
+On dire par exemple <gogo/gozen> <heure> ji <minute> pun/fun.
 
 2. Jour de la semaine
 ===========================
@@ -53,9 +53,12 @@ Vocabulaire
 	* あさ (asa) : matin
 	* にち (nichi) : jour
 	* ばん (ban) : soir
+	* よる (yoru) : soir/nuit
 	* きのう (kinou) : hier
 	* きょう (kyou) : aujourd'hui
 	* あした (ashita) : demain
+	* おととい (ototoi) : avant-hier
+	* おととい (ototoi) : avant-hier
 
 Jours de la semaine ようび (youbi)
 

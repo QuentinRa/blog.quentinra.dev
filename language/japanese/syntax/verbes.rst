@@ -18,10 +18,11 @@ Créer des verbes d'action
 
 Quelques bases verbales de verbes d'actions
 
-	* おき (oki) : se lever
-	* ね (ne) : se coucher
-	* やすみ (yasumi) : se reposer
-	* おわり (owari) : finir
-	* べんきょう (benkyou) : étudier
-	* あたらき (ataraki) : travailler
-	* かえり (kaeri) : rentrer (à la maison)
+	* おき ます (okimasu) : se lever
+	* ね ます (nemasu) : se coucher
+	* やすみ ます (yasumimasu) : se reposer
+	* おわり ます (owarimasu) : finir
+	* べんきょう ます (benkyoushimasu) : étudier
+	* はたらき ます (hatarakimasu) : travailler
+	* かえり ます (kaerimasu) : rentrer (à la maison)
+	* よみ ます (yomimasu) : lire

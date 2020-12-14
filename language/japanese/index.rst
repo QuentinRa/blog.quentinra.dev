@@ -62,7 +62,7 @@ En japonais, tous les caractères sont généralement à la suite des autres
 sans espaces. Une phrase finie par un rond (まる maru). Les espaces
 sont réalisés par des **particules** que l'on retrouve entre chaque mots.
 
-	* **ni** (に) pour indiquer un moment ou un lieu/direction (moment/lieu **ni** ... verbe alors verbe exécuté à lieu/moment)
+	* **ni** (に) pour indiquer un moment ou un lieu/direction (moment/lieu **ni** ... verbe alors verbe exécuté à lieu/moment). Si l'action dure, alors on utilise made.
 	* **no** (の) deux sujets se suivent, on met no pour dire que le second réfère au premier (employé d'une entreprise...)
 	* **wa** (は=ha se prononce wa) indique que le terme suivant réfère au sujet
 	* **mo** (も) qui veut dire aussi (donc sujet de la nouvelle phrase pareil que celle d'avant)
