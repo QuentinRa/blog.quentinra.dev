@@ -30,7 +30,7 @@ Pour cela, nous allons travailler avec les polynômes :math:`P_n(X) = \frac{(X+i
 
 	P_2(X) = \frac{(X+i)^5-(X-i)^5}{2i}
 	\\ = \frac{X^5 + 5iX^4 - 10X^3 - 10iX^2 + 5X + i - (X^5 - 5iX^4 - 10X^3 + 10iX^2 + 5X - i)}{2i}
-	\\ = \frac{10iX^4 - 20iX^2 + 2i}{2i} = \color{orange}{5X^4 - 10X^2 - 1}
+	\\ = \frac{10iX^4 - 20iX^2 + 2i}{2i} = \color{orange}{5X^4 - 10X^2 + 1}
 
 	\\
 
@@ -46,12 +46,13 @@ Pour cela, nous allons travailler avec les polynômes :math:`P_n(X) = \frac{(X+i
 
 **Question 3**. Résoudre :math:`P_2(X) = 0`. En déduire la forme factorisée de :math:`P_2(X)`.
 
-On pose Y = X^2 comme ça on a un polynôme facile donc :math:`5Y^2 - 10Y - 1`.
+On pose Y = X^2 comme ça on a un polynôme facile donc :math:`5Y^2 - 10Y + 1`.
 
-	* :math:`\Delta = b^2 - 4ac = (-10)^2 - 4 * 5 * -1 = 100 + 20 = 120`
-	* :math:`x_1 = \frac{10-\sqrt{120}}{10} = 1 - \sqrt{\frac{6}{5}}`
-	* :math:`x_2 = \frac{10+\sqrt{120}}{10} = 1 + \sqrt{\frac{6}{5}}`
-	* :math:`\color{orange}{(X - 1 + \sqrt{\frac{6}{5}})(X - 1 - \sqrt{\frac{6}{5}})}`
+	* :math:`\Delta = b^2 - 4ac = (-10)^2 - 4 * 5 * 1 = 100 - 20 = 80`
+	* :math:`x_1 = \frac{10-\sqrt{80}}{10} = 1 - \frac{2}{\sqrt{5}}`
+	* :math:`x_2 = \frac{10+\sqrt{80}}{10} = 1 + \frac{2}{\sqrt{5}}`
+	* :math:`(Y - 1 + \frac{2}{\sqrt{5}})(Y - 1 - \frac{2}{\sqrt{5}}`
+	* :math:`\color{orange}{(X^2 - 1 + \frac{2}{\sqrt{5}})(X^2 - 1 - \frac{2}{\sqrt{5}})}`
 
 2. Étude de quelques propriétés de :math:`P_n`
 =================================================
@@ -75,20 +76,27 @@ et :math:`b_n` valent :math:`2^n` au signe près.
 	* :math:`P_n(1) = \frac{(1+i)^{2n+1}-(1-i)^{2n+1}}{2i} = \frac{a_n + ib_n - (a_n - ib_n)}{2i} = \frac{2ib_n}{2i} = b_n = \pm 2^n`
 	* :math:`\color{orange}{P_n(1) = \pm 2^n \Leftrightarrow |P_n(1)| = 2^n}`
 
-**Question 6**. Montrer à l’aide de la formule du binôme de Newton que Pn est :
+**Question 6**. Montrer à l’aide de la formule du binôme de Newton que :math:`P_n` est :
 
-Note: aucune formule n'a été démontrée avec la formule du binôme de Newton car
-je n'ai pas su réécrire :math:`P_n` avec la formule du binôme de Newton mais
-les propriétés ont étés partiellement mises en avant dans la partie 1 donc j'ai complété.
+Formule du binôme de Newton : :math:`\sum_{k=0}^{n} \begin{pmatrix}n\\k\end{pmatrix} x^{n-k}y^k`
 
-	* \(i) de degré 2n,
+Je n'ai pas bien compris ce qu'il fallait faire donc j'ai essayé de réécrire
+:math:`P_n` avec la formule du binôme de Newton :math:`\sum_{k=0}^{k \le n-1} \begin{pmatrix}2n+1\\k+1\end{pmatrix} X^{2n-2k} * i^{2^{n+1}-2k} - i^{2^{n+1}}`.
 
-.. a(2!)/(0!\*(2-0)!) * x^2 y^0 + (2!)/(1!\*(2-1)!) x^1y^1 + (2!)/(2!\*(2-2)!) x^0 y^2
-		1 \* x^2 + 2 \* x^1y^1 + 1 \* x^0 y^2
+Ce qui indique que le polynôme est de degré 2n-2k donc 2n quand k vaut 0 car dans le polynôme de Newton,
+lorsque k=0 donc a le plus grand degré qui est celui du polynôme. Ensuite il n'y a que des puissances
+paires car les monômes qui n'ont pas de i sont de même signe dans le conjugué et avec le - devant
+la parenthèse rends leurs signes opposés et donc ils s'annulent. Les coefficients sont réels car
+dans ma formule i ne sert qu'a déterminer si on a -1 ou 1, ne vaut donc que -1 ou 1 et donc il disparait.
+Enfin le coefficient dominant est 2n + 1 car dans la formule, lorsque k=0 alors on a le coefficient devant
+le monôme de degré 2n, or :math:`\begin{pmatrix}2n+1\\k+1\end{pmatrix} = 2n+1` donc 2n + 1
+est le coefficient dominant.
 
-...
+	* \(i) de degré :math:`2n`,
 
-
+Selon (ii), nous avons uniquement des coefficients pairs donc le coefficient
+de degré :math:`2^{n+1}` et le premier coefficient est celui :math:`2^n` donc :math:`P_n` est de degré
+:math:`2^n`.
 
 	* \(ii) pair (le coefficient devant :math:`X^n` est non nul uniquement quand n est pair),
 
@@ -102,11 +110,16 @@ pour les monômes de degré impair leur partie dans :math:`z` s'annulent avec le
 
 	* \(iii) à coefficients réels,
 
-...
+Le polynôme est divisé par 2i donc on factoriser par 2i et on élimine la partie imaginaire, donc il ne
+reste plus que la partie réelle.
 
 	* \(iv) de coefficient dominant 2n + 1.
 
-...
+Le coefficient dominant donc celui devant le monôme de degré :math:`2n` corresponds
+au second terme du binôme de Newton pour :math:`X^{2n+1}` car le premier terme, 1,
+devant était sur un monôme qui a été annulé (on regarde la ligne 2n+1 dans
+le triangle de pascal, 2e terme et on trouve bien a chaque fois 2n+1 qui correspond au
+2e coefficient soit :math:`X^{2n}`).
 
 **Question 7**. Montrer aussi que le coefficient de :math:`X^{2n−2}` dans :math:`P_n` vaut :math:`\frac{n(1− 2n)(1 + 2n)}{3}`.
 
@@ -137,6 +150,8 @@ Ainsi, :math:`P_n(x) = 0` lorsque :math:`\frac{x + i}{x - i} = \exp{\frac{2ik\pi
 
 		x = i \frac{e^{2i\theta} + 1}{e^{2i\theta} - 1} = \frac{1}{\tan{\theta}}
 		\ \ \ \ \ avec \ \theta = \frac{k\pi}{2n+1} \in \left]-\frac{\pi}{2},\frac{\pi}{2}\right[ \backslash \{0\}.
+
+...
 
 **Question 12**. Donner la factorisation complète de :math:`P_n`, et en déduire que
 
