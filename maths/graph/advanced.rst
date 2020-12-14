@@ -71,6 +71,7 @@ chemin dans un graphe.
 		Fonction de Grundy              <exercices/grundy>
 		Bases de cycles et cocycles     <exercices/bases>
 		Plus court chemin               <exercices/plus_court>
+		Ordonnancement                  <exercices/ordonnancement>
 		Non triés                       <exercices/non_rank>
 
 ------
