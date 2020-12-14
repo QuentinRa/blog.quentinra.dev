@@ -35,3 +35,35 @@ PORT    STATE SERVICE
 |_  /var        9204224.0  1836516.0  6877112.0  22%   16.0T        32000
 
 Nmap done: 1 IP address (1 host up) scanned in 1.66 seconds
+
+DirtyCow
+https://dirtycow.ninja/
+
+That C source code is a portion of a kernel exploit called DirtyCow. Dirty COW (CVE-2016-5195) is a privilege escalation
+ vulnerability in the Linux Kernel, taking advantage of a race condition that was found in the way
+  the Linux kernel's memory subsystem handled the copy-on-write (COW) breakage of private read-only memory mappings.
+   An unprivileged local user could use this flaw to gain write access to otherwise read-only memory mappings and
+   thus increase their privileges on the system.
+
+https://www.lemondeinformatique.fr/actualites/lire-8-outils-osint-pour-le-cyber-renseignement-80484.html
+
+https://namechk.com/
+https://namecheckup.com/
+https://whatsmyname.app/
+https://github.com/WebBreacher/WhatsMyName
+https://github.com/sherlock-project/sherlock
+
+https://yandex.com/images/
+https://tineye.com/
+https://www.bing.com/visualsearch?FORM=ILPVIS
+
+https://haveibeenpwned.com/
+https://scylla.sh/api
+username:
+password:
+email:
+domain:@
+https://dehashed.com/search?query=rudolphthered%40hotmail.com
+
+http://exif.regex.info/exif.cgi
+https://exifmeta.com/

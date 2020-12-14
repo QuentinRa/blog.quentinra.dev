@@ -163,7 +163,7 @@ Piratage
 			* fichiers sensibles, mot de passes
 			* des informations sur la machine (noyau, version, ...)
 
-				* noyau, version
+				* noyau, version (:code:`cat /etc/*release`)
 				* processus, ... qui pourraient être vulnérables
 				* scripts de sauvegarde (exploit crontabs)
 				* fichier/dossiers avec des mauvaises configurations (permissions, etc.)

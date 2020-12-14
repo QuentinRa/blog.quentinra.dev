@@ -29,12 +29,12 @@ Metasploit (metasploit-framework)
 
 	Il s'agit d'un framework pour tester vos architectures.
 
-	| Rechercher un module d'un service/truc (ex: apache, iis, ...) : :code:`msf5 > search <service>`
-	| Utiliser le module : :code:`msf5 > use <module>`
-	| Définition des options : :code:`msf5 exploit('module') > set <option> <valeur>`
-	| Définition du reste des options : :code:`msf5 exploit('module') > options`
-	| Voir les options : :code:`msf5 exploit('module') > show options`
-	| Exécuter : :code:`msf5 exploit() > run`
+	| Rechercher un module d'un service/truc (ex: apache, iis, ...) : :code:`msf6 > search <service>`
+	| Utiliser le module : :code:`msf6 > use <module>`
+	| Définition des options : :code:`msf6 exploit('module') > set <option> <valeur>`
+	| Définition du reste des options : :code:`msf6 exploit('module') > options`
+	| Voir les options : :code:`msf6 exploit('module') > show options`
+	| Exécuter : :code:`msf6 exploit() > run`
 
 	Avec option, quelques choses du genre
 
@@ -47,5 +47,7 @@ Metasploit (metasploit-framework)
 		* ...
 
 	| Après le run d'une ShellShock attack (CVE 2014-6271), lancer un shell sur la machine : :code:`meterpreter > shell`
+
+	Vidéo d'un exemple : https://www.youtube.com/watch?v=6DOp2Fn1AsQ
 
 
