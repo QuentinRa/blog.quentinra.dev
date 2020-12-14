@@ -67,3 +67,5 @@ https://dehashed.com/search?query=rudolphthered%40hotmail.com
 
 http://exif.regex.info/exif.cgi
 https://exifmeta.com/
+
+https://github.com/khast3x/h8mail

@@ -57,12 +57,13 @@ En japonais, tous les caractères sont généralement à la suite des autres
 sans espaces. Une phrase finie par un rond (まる maru). Les espaces
 sont réalisés par des **particules** que l'on retrouve entre chaque mots.
 
-	* **ni** (に) ...
+	* **ni** (に) pour indiquer un moment ou un lieu/direction (moment/lieu **ni** ... verbe)
 	* **no** (の) deux sujets se suivent, on met no pour dire que le second réfère au premier (employé d'une entreprise...)
 	* **wa** (は=ha se prononce wa) indique que le terme suivant réfère au sujet
 	* **mo** (も) qui veut dire aussi (donc sujet de la nouvelle phrase pareil que celle d'avant)
 	* **to** (と) veut dire "et" (personne A et personne B)
 	* **ka** (か) ajouté en fin de phrase. Spécifie sans ambiguïtés qu'il s'agit d'une question.
+	* **he** (へ) pour indiquer une destination (je vais **à** l'école)
 
 Verbes
 	On met le verbe après l'action, par exemple "je suis beau" devient "je beau être".
