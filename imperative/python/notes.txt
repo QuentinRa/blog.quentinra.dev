@@ -1,0 +1,59 @@
+
+python3
+
+python3 hello.py # exécuter du code python
+
+print("...");
+
+histoire de scope
+
+4 tabs
+
+def fonction:
+	code
+
+String (a string of characters)
+Integer - a whole number (-50, 50, 60, 91)
+Float - a floating-point number (21.3, -5.1921)
+List - a list of items ([1, 2, 3], ["hi", 6, 7.91])
+
+variable = valeur
+
+passage par référence
+
+% ** * / + -
+[] + [] = contat
+ "" + "" = contat
+or and not
+value in array => boolean
+
+True/False
+
+if bool:
+	code
+
+if condition
+
+demander saisie
+input("text:")
+
+range(1,9) # inclus
+
+for i in ... :
+	code
+
+
+Librairies
+
+	* https://pypi.org/
+	* pip install X
+
+Requests
+Beautiful Soup
+
+from bs4 import BeautifulSoup
+import requests
+
+https://polymath.cloud/python/
+https://realpython.com/python-modulo-operator/
+https://automatetheboringstuff.com/

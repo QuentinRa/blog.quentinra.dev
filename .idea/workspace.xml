@@ -29,8 +29,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/ord/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/ord/d1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/ordonnancement.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/ordonnancement.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/cyber/cyber/f/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/cyber/f/notes.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,19 +66,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\language\japanese\syntax" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice\ord" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\db\cypher" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\annales\c" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\ord" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\system\cyber\cyber\f" />
       <recent name="C:\Users\quent\Documents\texas-res\db\cypher\rep" />
       <recent name="C:\Users\quent\Documents\texas-res\db\cypher\intro" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\language\japanese\syntax" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice\ord" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\db\cypher" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\annales\c" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -229,7 +228,7 @@
       <workItem from="1607813077250" duration="47000" />
       <workItem from="1607859385682" duration="25821000" />
       <workItem from="1607932212861" duration="27637000" />
-      <workItem from="1608022661528" duration="22841000" />
+      <workItem from="1608022661528" duration="25324000" />
     </task>
     <servers />
   </component>
