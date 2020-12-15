@@ -71,6 +71,7 @@ sont réalisés par des **particules** que l'on retrouve entre chaque mots.
 	* **he** (へ) pour indiquer une destination (je vais **à** l'école)
 	* **ne** (ね) en fin de phrase, veut dire n'est ce pas
 	* **kara** et **made**, voir temps : particules pour désigner le début (départ) et la fin (arrivée)
+	* **wo** (を=se prononce o), sert a faire un complément d'objet (objet wo verbe)
 
 Autres
 

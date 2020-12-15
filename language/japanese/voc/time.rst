@@ -17,7 +17,7 @@ Vocabulaire
 	* <...>っぷん (-ppun) : <valeur>-minute
 	* いま (ima) : maintenant
 	* ごぜん (gozen) : matin
-	* ひる (hiru) : midi/pause déjeuner
+	* ひる (hiru) : midi
 	* ごご (gogo) : après-midi
 
 Notions
@@ -69,3 +69,31 @@ Jours de la semaine ようび (youbi)
 	*	きんようび (Kin'youbi) : Vendredi
 	*	どようび (Doyoubi) : Samedi
 	*	にちようび (Nichiyoubi) : Dimanche
+
+3. Date, Saisons, etc...
+==================================
+
+Vocabulaire
+
+	* ねん (nen) : année
+	* がつ (gatsu) : mois
+	* しゅう (shuu) : semaine
+	* にち (nichi) : jour (ex: 24)
+	* ようび (youbi) : jour (ex: mercredi)
+	* きせつ (kisetsu) : saison
+	* Quel ... on est ? : nan-... desu ka. (nen/gatsu/....)
+
+Autre
+
+	* つき (tsuki) : mois
+	* とし (toshi) : année/âge
+	* année (nen ねん) : (kyo... きょ), après (rai らい), cette (kotochi ことし)
+	* mois (getsu げつ) : avant (sen... せん), après (rai... らい), cette (kon... こん)
+	* semaine (shuu しゅう) : avant (sen... せん), après (rai... らい), cette (kon... こん)
+
+Saisons
+
+	* ふゆ (fuyu) : hiver (décembre à février)
+	* はる (haru) : printemps (mars à juin)
+	* なつ (natsu) : été (juillet à septembre)
+	* あき (aki) : automne (octobre à novembre)
