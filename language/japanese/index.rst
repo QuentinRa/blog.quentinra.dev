@@ -4,8 +4,8 @@
 Japonais
 ================================
 
-| :math:`\color{grey}{Version \ 0.2.5}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 19/11/2020}`
+| :math:`\color{grey}{Version \ 0.5.13}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 15/12/2020}`
 
 **Ce cours est un cours d'initiation au japonais et à la culture japonaise.**
 

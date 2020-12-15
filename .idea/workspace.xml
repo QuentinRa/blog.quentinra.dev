@@ -30,7 +30,7 @@
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/language/japanese/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/language/japanese/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/japanese/voc/time.rst" beforeDir="false" afterPath="$PROJECT_DIR$/language/japanese/voc/time.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/exercices/ord/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/exercices/ord/d1.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +229,7 @@
       <workItem from="1607813077250" duration="47000" />
       <workItem from="1607859385682" duration="25821000" />
       <workItem from="1607932212861" duration="27637000" />
-      <workItem from="1608022661528" duration="7811000" />
+      <workItem from="1608022661528" duration="12060000" />
     </task>
     <servers />
   </component>
@@ -336,10 +336,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="ShowDiffWithBranchDialog/0.0.1536.824@0.0.1536.824" timestamp="1603484549092" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1607434757008">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1608037605458">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1607434757008" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1608037605458" />
     <state x="349" y="70" key="com.intellij.database.dbimport.ImportDialog" timestamp="1605899266055">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
