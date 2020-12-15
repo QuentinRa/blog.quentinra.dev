@@ -120,6 +120,12 @@ Autres
 			* https://yesjapan.com/YJ6/question/5070/what-is-the-difference-between-ikutsu-and-ikura/
 			* https://elon.io/learn-japanese-hepburn/lexicon/27669/ikutsu
 
+		* temps
+
+			* https://fr.wikibooks.org/wiki/Japonais/Vocabulaire/Temps
+			* https://fr.wikipedia.org/wiki/Mois_de_l%27ann%C3%A9e_en_japonais
+			* https://fr.wikipedia.org/wiki/Dates_en_japonais
+
 	* outils
 
 			* http://www.romajidesu.com/
@@ -137,4 +143,3 @@ Autres
 		* https://www.apprendrelejaponais.net/au-revoir-en-japonais.html
 		* https://www.ici-japon.com/apprendre-le-japonais/la-particule-to/
 		* http://www.crapulescorp.net/japonais/cours/grammaire/construction_des_phrases_simples.php5
-		* https://fr.wikibōks.org/wiki/japonais/vocabulaire/temps#heure_(%e6%99%82)
