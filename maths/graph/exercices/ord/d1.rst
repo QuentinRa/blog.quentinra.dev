@@ -197,7 +197,7 @@ Exercice 3
 Exercice 4
 -----------------
 
-Le chemin critique est :code:`(C,D,A,G,I,H)`.
+Le chemin critique est :code:`(Début,C,D,A,G,I,H,Fin)`.
 
 Exercice 5
 -----------------

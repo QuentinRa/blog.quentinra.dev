@@ -40,6 +40,13 @@ faites avant) correspondant à la production d’un film :
 4. Donnez le ou les chemins critiques.
 5. Donnez la marge libre :math:`m_i` et la marge totale :math:`M_i` de chaque tâche i.
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<ord/d2>
+
+| :code:`[TAG] ENSIIE MTG TP11 2020 S1`
+
 ------------------------------
 
 Niveau supérieur
