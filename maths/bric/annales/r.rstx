@@ -60,7 +60,7 @@ On pose Y = X^2 comme ça on a un polynôme facile donc :math:`5Y^2 - 10Y + 1`.
 **Question 4**. Montrer par récurrence sur :math:`n \in \mathbb{N}` que :math:`(1 + i)^{2n+1} = a_n + ib_n`, où :math:`a_n`
 et :math:`b_n` valent :math:`2^n` au signe près.
 
-		* Initialisation (n=0) : math:`(1 + i) = 2^0 + i*2^0 = 1+i` OK
+		* Initialisation (n=0) : :math:`(1 + i) = 2^0 + i*2^0 = 1+i` OK
 		* Hérédité, on suppose :math:`(1 + i)^{2n+1} = a_n + ib_n`, on démontre au rang n+1
 		* ...
 		* Conclusion : :math:`n \in \mathbb{N},\ (1 + i)^{2n+1} = a_n + ib_n`
@@ -141,7 +141,19 @@ Ainsi, :math:`P_n(x) = 0` lorsque :math:`\frac{x + i}{x - i} = \exp{\frac{2ik\pi
 
 **Question 10**. Vérifier qu’il n’y a pas de solution lorsque k = 0.
 
-...
+On remplace k par 0 donc on a
+
+.. math::
+
+	\frac{x + i}{x - i} = \exp{\frac{2ik\pi}{2n+1}}
+	\Leftrightarrow
+	\frac{x + i}{x - i} = \exp{0} = 1
+	\Leftrightarrow
+	x + i = x - i
+	\Leftrightarrow
+	i = - i
+	\Leftrightarrow
+	\color{orange}{impossible}
 
 **Question 11**. Montrer que, lorsque :math:`k \neq 0`, on obtient une unique solution qui est
 
@@ -193,7 +205,12 @@ est le coefficient de plus haut degré, et b le coefficient de degré un de moin
 **Question 15**. Expliquer pourquoi, pour tout :math:`\theta \in \left]-\frac{\pi}{2},\frac{\pi}{2}\right[`,
 on a :math:`\sin{\theta} \le \theta \le \tan{\theta}`.
 
-...
+Sin correspond a l'ordonnée sur le cercle donc prends des valeurs en :math:`-\pi` et :math:`\pi`,
+sauf qu'on reste sur 0 :math:`sin(\pi/2)` à :math:`\pi`. Si on trace la courbe, alors on voit que
+celle de \pi est légèrement au dessus lors que x tends vers 0 et la courbe de la tangente tends a être
+juste au dessus lorsque x tends vers 0
+
+Courbe de WolframAlpha : https://www.wolframalpha.com/input/?i=sin%28x%29%2C+x%2C+tan%28x%29
 
 **Question 16**. En déduire l’encadrement suivant :
 
