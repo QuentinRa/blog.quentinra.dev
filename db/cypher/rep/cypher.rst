@@ -9,7 +9,7 @@ Une requête Cypher est de la forme
 	MATCH (ref:nœud)
 	WHERE condition
 	RETURN ref.attribut
-	LIMIT valeur;
+	LIMIT valeur
 
 Clause :code:`MATCH`
 
@@ -18,6 +18,7 @@ Clause :code:`MATCH`
 	* on peut donner des nœuds liés : (ref:nœud)-[:LIEN]->(ref:nœud) (:code:`jointure sql`)
 	* des relations : (a)-[r]->b avec r : \*j, \*i..j, \*..j, \*
 	* on peut mettre des propriétés du nœud qui auront le même effet qu'un where
+	* il est possible de stocker dans une ref un chemin (MATCH c = a-->b<--c)
 
 Clause :code:`WHERE`
 

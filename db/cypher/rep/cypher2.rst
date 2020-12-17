@@ -28,8 +28,8 @@ et WHERE et définir comme en SQL avec SET les nouvelles valeurs
 
 .. code:: cypher
 
-	MATCH (p: Person)
-	SET p.age = p.age + 1, p:label
+	MATCH (p:Person)
+	SET p.age=p.age*10
 	RETURN p
 
 **Suppression à jour d'un nœud/une arête**
@@ -48,5 +48,5 @@ supprimer toutes les arêtes d'un nœud et le nœud.
 	DELETE p ; suppression des arêtes
 
 	MATCH (p: Person)
-	DETACH DELETE p ; supprime arêtes + nœud
+	DETACH DELETE p ; supprime arêtes et noeuds
 

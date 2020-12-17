@@ -4,8 +4,8 @@
 Bases de données Graphes
 ================================
 
-| :math:`\color{grey}{Version \ 0.2.2}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 12/12/2020}`
+| :math:`\color{grey}{Version \ 0.3.5}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 17/12/2020}`
 
 1. Introduction
 ===================================
@@ -41,8 +41,16 @@ Cypher est le langage utilisé dans Neo4J, une SGBD graphe.
 
 		 Représentation d'un nœud        <rep/node>
 		 Représentation d'une arête      <rep/vertex>
-		 Requêtes Cypher                 <rep/cypher>
-		 Requêtes Cypher (2) : DDL       <rep/cypher2>
+		 Requêtes Cypher : base          <rep/cypher>
+		 Requêtes Cypher : DDL           <rep/cypher2>
+
+Requêtes avancées
+
+.. toctree::
+	 :maxdepth: 1
+
+		 Listes       <adv/list>
+		 Fonctions    <adv/functions>
 
 -----
 
