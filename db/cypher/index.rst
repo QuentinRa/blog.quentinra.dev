@@ -53,6 +53,15 @@ Requêtes avancées
 		 Fonctions                      <adv/functions>
 		 Clauses avancées               <adv/clauses>
 
+3. Exercices
+==================================
+
+.. toctree::
+	 :maxdepth: 1
+
+		 Cypher                 <exercices/cypher>
+		 Non triés              <exercices/non_rank>
+
 -----
 
 **Crédits**

@@ -28,7 +28,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/db/cypher/adv/clauses.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/cypher/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/cypher/index.rst" afterDir="false" />
@@ -62,26 +61,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/db/cypher/rep" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/db/cypher/exercices/cypher" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="kite.configurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Cypher" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\db\cypher\exercices" />
+      <recent name="C:\Users\quent\Documents\texas-res\db\cypher" />
       <recent name="C:\Users\quent\Documents\texas-res\assets" />
       <recent name="C:\Users\quent\Documents\texas-res\cr" />
       <recent name="C:\Users\quent\Documents\texas-res\system\cyber\cyber\f" />
-      <recent name="C:\Users\quent\Documents\texas-res\language\japanese\syntax" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\exercice\ord" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\db\cypher\exercices\cypher" />
+      <recent name="C:\Users\quent\Documents\texas-res\db\cypher\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\db\cypher\rep" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\ord" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\cyber\cyber\f" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\cypher\intro" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -238,7 +237,8 @@
       <workItem from="1608138886034" duration="901000" />
       <workItem from="1608145288930" duration="1575000" />
       <workItem from="1608195538096" duration="1317000" />
-      <workItem from="1608204852289" duration="15053000" />
+      <workItem from="1608204852289" duration="16209000" />
+      <workItem from="1608235632187" duration="616000" />
     </task>
     <servers />
   </component>
@@ -289,14 +289,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="56" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1605558009232" />
+    <state x="194" y="249" key="#SQL_Dialects" timestamp="1608235656652">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="194" y="249" key="#SQL_Dialects/0.0.1536.824@0.0.1536.824" timestamp="1608235656652" />
     <state x="-45" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604666744937">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="-45" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604666744937" />
-    <state x="524" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608228465340">
+    <state x="524" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608235496406">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="524" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1608228465340" />
+    <state x="524" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1608235496406" />
     <state x="520" y="281" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1604353217209">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -333,14 +337,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1024" height="370" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606997564354" />
+    <state x="349" y="150" key="IDE.errors.dialog" timestamp="1608235680329">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="150" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1608235680329" />
     <state x="604" y="343" key="NewPhpFileDialog" timestamp="1603191408316">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="343" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1603191408316" />
-    <state x="279" y="54" width="977" height="710" key="SettingsEditor" timestamp="1606929325567">
+    <state x="279" y="54" width="977" height="710" key="SettingsEditor" timestamp="1608235737288">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="279" y="54" width="977" height="710" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606929325567" />
+    <state x="279" y="54" width="977" height="710" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608235737288" />
     <state x="93" y="93" width="1350" height="638" key="ShowDiffWithBranchDialog" timestamp="1603484549092">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -373,9 +381,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1608119960636" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608234213751">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608235692723">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608234213751" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608235692723" />
   </component>
 </project>
