@@ -18,7 +18,7 @@ on_rtd = os.environ.get('READTHEDOCS') == 'True'
 
 # -- Project information -----------------------------------------------------
 
-project = 'learndoc'
+project = 'learngo'
 copyright = '2020, Quentin Ra'
 author = 'Quentin Ra'
 

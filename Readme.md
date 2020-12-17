@@ -16,7 +16,7 @@ Les crédits appropriés ainsi que les sources sont en bas
 de page de chaque cours.
 
 Si vous avez un problème ou une question, vous pouvez créer
-une `issue` ou envoyer un mail à `learndoc@lgs-games.com`.
+une `issue` ou envoyer un mail à `learngo@lgs-games.com`.
 
 ## Fonctionnement
 
@@ -30,7 +30,7 @@ d'exercices au format spécifié dans `assets/exercice.rst`.
 
 # Mentions
 
-Créé par Quentin Ramsamy--Ageorges (learndoc@lgs-games.com).
+Créé par Quentin Ramsamy--Ageorges (admin@lgs-games.com).
 
 Version 2.26.356.
 \

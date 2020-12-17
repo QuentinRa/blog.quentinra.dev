@@ -41,6 +41,7 @@ Cypher est le langage utilisé dans Neo4J, une SGBD graphe.
 
 		 Représentation d'un nœud        <rep/node>
 		 Représentation d'une arête      <rep/vertex>
+		 Requêtes Cypher                 <rep/cypher>
 
 -----
 
