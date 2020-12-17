@@ -1,0 +1,14 @@
+
+MERGE: Match existing or create new nodes and patterns.
+This is especially useful together with unique constraints.
+
+
+range(début, fin) ; inclus
+comme des tableaux
+range(début, fin)[0]
+range(début, fin)[-1] ; depuis la fin
+range(début, fin)[1..3] ; prends 1 et 2
+range(début, fin)[..3] ; prends 0,1,2
+range(début, fin)[3..] ; prends 3,4,...
+size(..) = taille liste
+

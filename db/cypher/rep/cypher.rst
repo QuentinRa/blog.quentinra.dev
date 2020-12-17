@@ -22,13 +22,22 @@ Clause :code:`MATCH`
 Clause :code:`WHERE`
 
 	* comme en SQL
-	* Ex: ref.attribut <opérateur> valeur (=, !=, <>, >, <, >=, <=, ...)
+	* Ex: ref.attribut <opérateur> valeur (=, !=, <>, >, <, >=, <=, ...) et AND/OR/NOT/IS/XOR
+	* attribut IN [valeur, valeur]
+	* REGEX (like en sql) : attribut  =~ 'expression régulière'
+	* REGEX : attribut STARTS/ENDS WITH ... ou attribut CONTAINS ...
+	* LABELS : attribut:label (=table/classe)
+	* TYPE : type(attribut) retourne le type d'un attribut ou exists(ref.attribut)
+	* RELATION : vous pouvez spécifier une arête comme condition (marche avec NOT/exists/...)
 
 Clause :code:`RETURN`
 
 	* équivalent du Select en SQL
-	* prends les attributs a afficher comme ref.* (=tous ceux de ref)
-	* RETURN AS ...
+	* prends les attributs a afficher comme ref.* (=tous ceux de ref) ou * (=tous)
+	* RETURN attribut AS ...
+	* vous pouvez retourner un nœud, une arête
+	* vous pouvez retourner le résultat d'un calcul fait dans le RETURN
+	* RETURN DISTINCT = pas de doublons
 
 Clause :code:`LIMIT`
 
@@ -42,3 +51,12 @@ Clause :code:`OPTIONAL MATCH`
 	* la requête va afficher les MATCH même s'ils ne respectent pas la clause OPTIONAL MATCH
 	* Met des valeurs NULL
 	* c'est pareil qu'un LEFT OUTER JOIN en SQL
+
+Clause :code:`ORDER BY`
+
+	* comme en SQL, tris des résultats
+	* ASC ou DESC ou un/des attribut(s)
+
+Clause :code:`SKIP`
+
+	* permet de sauter les <x> premiers résultats
