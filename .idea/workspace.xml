@@ -29,8 +29,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/cypher/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/cypher/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/cypher/exercices/cypher.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/cypher/exercices/cypher.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/cypher/exercices/cypher/d1.cyp" beforeDir="false" afterPath="$PROJECT_DIR$/db/cypher/exercices/cypher/d1.cyp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/cypher/exercices/cypher/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/cypher/exercices/cypher/d1.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,19 +69,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\db\cypher\exercices\cypher" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\db\bases" />
+      <recent name="C:\Users\quent\Documents\texas-res\db\cypher\exercices" />
+      <recent name="C:\Users\quent\Documents\texas-res\db\cypher\rep" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\ord" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\db\cypher\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\db\cypher" />
       <recent name="C:\Users\quent\Documents\texas-res\assets" />
       <recent name="C:\Users\quent\Documents\texas-res\cr" />
       <recent name="C:\Users\quent\Documents\texas-res\system\cyber\cyber\f" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\db\cypher\exercices\cypher" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\cypher\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\cypher\rep" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\ord" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -238,7 +239,7 @@
       <workItem from="1608145288930" duration="1575000" />
       <workItem from="1608195538096" duration="1317000" />
       <workItem from="1608204852289" duration="16209000" />
-      <workItem from="1608235632187" duration="616000" />
+      <workItem from="1608235632187" duration="1092000" />
     </task>
     <servers />
   </component>

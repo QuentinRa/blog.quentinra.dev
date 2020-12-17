@@ -2,11 +2,24 @@
 Cypher
 ================================
 
+.. note::
+
+	Pour faire les exercices, vous aurez besoin d'avoir un compte Neo4J ou d'utiliser
+	une alternative qui supporte le Cypher (ex: PHPStorm avec le plugin "Graph Database Console").
+
+	Sur Neo4J, vous allez créer une nouvelle base de données (sandbox/logiciel), la lancer
+	et copier le contenu du script de création puis cliquer sur la flèche "run" pour importer
+	tous les données. Le script est donné dans le sujet de chaque exercice.
+
 Niveau débutant
 ***********************
 
 1. Quelques requêtes
 ------------------------
+
+.. note::
+
+	Fichier de la base : :download:`setup.sql <../../../assets/db/bases/movies.cypher>`
 
 Écrivez les requêtes Cypher qui donnent les résultats suivants.
 
@@ -25,6 +38,7 @@ Niveau débutant
    :maxdepth: 1
 
 	Proposition de correction n°1			<cypher/d1>
+	Proposition de correction n°2			<cypher/d2>
 
 | :code:`[TAG] ENSIIE IBD TP4 2020 S1`
 
