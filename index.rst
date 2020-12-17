@@ -1,5 +1,5 @@
 ##########################################
-Bienvenue sur ramsamy.ws/ressources
+Bienvenue sur learndoc
 ##########################################
 
 Ce site à pour objectif de réunir un maximum de cours
@@ -120,7 +120,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
 
 -----
 
-Ce site a été créé par Quentin Ramsamy--Ageorges (ramsamy.ws@gmail.com).
+Ce site a été créé par Quentin Ramsamy--Ageorges (learndoc@lgs-games.com).
 
 | Version |release|.
 | Création le 20 juillet 2020.

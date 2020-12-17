@@ -287,6 +287,8 @@ Propriétés de la variance
 	* cov(X,X) = V(X)
 	* cov(X,Y) = cov(Y,X)
 	* :math:`cov(\lambda * X,Y) =  \lambda *cov(Y,X)`
+	* :math:`cov(\lambda * X) =  \lambda^2 *cov(X)`
+	* :math:`cov(A+B,C) = cov(A,C) + cov(B,C)` (cov bilinéaire/bi=2 variables)
 	* si a et b sont indépendants (:math:`\perp`) alors cov(XY) = 0 (réciproque n'est pas vraie)
 	* :math:`\mathbb{P}(X, Y) = \frac{cov(X,Y)}{\sqrt{V(X)*V(Y)}}`
 

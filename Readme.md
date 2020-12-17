@@ -1,9 +1,9 @@
 ## À propos
 
-Ce dépôt est associé à un site
-(https://etu.ramsamy-ws.ovh/fr/latest/)
-qui à pour objectif de réunir un maximum de cours écrits 
-par des étudiants pour des étudiants.
+L'objectif de ce dépôt est de partager
+et réunir un maximum de cours. Ces cours seront probablement
+rédigés en grande partie par des étudiants mais n'importe
+qui peut y contribuer.
 
 Les cours ont pour la majorité été pris en note dans l’un des 
 établissements suivants
@@ -16,7 +16,7 @@ Les crédits appropriés ainsi que les sources sont en bas
 de page de chaque cours.
 
 Si vous avez un problème ou une question, vous pouvez créer
-une `issue` ou envoyer un mail à `ramsamy.ws@gmail.com`.
+une `issue` ou envoyer un mail à `learndoc@lgs-games.com`.
 
 ## Fonctionnement
 
@@ -30,13 +30,13 @@ d'exercices au format spécifié dans `assets/exercice.rst`.
 
 # Mentions
 
-Créé par Quentin Ramsamy--Ageorges (ramsamy.ws@gmail.com).
+Créé par Quentin Ramsamy--Ageorges (learndoc@lgs-games.com).
 
-Version 1.26.312.
+Version 2.26.356.
 \
 Création le 20 juillet 2020.
 \
-Dernière mise à jour le 04 décembre 2020.
+Dernière mise à jour le 17 décembre 2020.
 
 Merci à tout contributeur et lecteur, ainsi qu'à toutes
 personnes ayant permis et aidant dans la création de cette plateforme.
