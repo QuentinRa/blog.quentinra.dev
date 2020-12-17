@@ -28,11 +28,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/db/cypher/adv/clauses.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/cypher/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/cypher/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/cypher/rep/cypher.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/cypher/rep/cypher.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/cypher/rep/cypher2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/db/cypher/rep/cypher2.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/cypher/rep/tmp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/db/cypher/rep/tmp.txt" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -239,7 +238,7 @@
       <workItem from="1608138886034" duration="901000" />
       <workItem from="1608145288930" duration="1575000" />
       <workItem from="1608195538096" duration="1317000" />
-      <workItem from="1608204852289" duration="13355000" />
+      <workItem from="1608204852289" duration="15053000" />
     </task>
     <servers />
   </component>
@@ -374,9 +373,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1608119960636" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608195551403">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608234213751">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608195551403" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608234213751" />
   </component>
 </project>

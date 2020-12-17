@@ -32,7 +32,7 @@ d'exercices au format spécifié dans `assets/exercice.rst`.
 
 Créé par Quentin Ramsamy--Ageorges (admin@lgs-games.com).
 
-Version 2.26.356.
+Version 2.27.360.
 \
 Création le 20 juillet 2020.
 \

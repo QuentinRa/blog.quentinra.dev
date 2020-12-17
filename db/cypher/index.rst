@@ -4,7 +4,7 @@
 Bases de données Graphes
 ================================
 
-| :math:`\color{grey}{Version \ 0.3.5}`
+| :math:`\color{grey}{Version \ 1.0.1}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 17/12/2020}`
 
 1. Introduction
@@ -49,8 +49,9 @@ Requêtes avancées
 .. toctree::
 	 :maxdepth: 1
 
-		 Listes       <adv/list>
-		 Fonctions    <adv/functions>
+		 Listes                         <adv/list>
+		 Fonctions                      <adv/functions>
+		 Clauses avancées               <adv/clauses>
 
 -----
 
