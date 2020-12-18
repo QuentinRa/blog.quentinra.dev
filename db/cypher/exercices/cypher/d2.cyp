@@ -1,6 +1,7 @@
 // 1. Quels sont tous les noms des Films dans lesquels à joué Meg Ryan ?
 
-...
+MATCH (m:Movie)<-[a:ACTED_IN]-(p:ShowbizPerson{name:"Meg Ryan"})
+RETURN m
 
 // 2. Quels sont le(s) noms des réalisateur.ice(s) du film \"The Matrix\" ?
 
