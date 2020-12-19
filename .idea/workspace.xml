@@ -29,10 +29,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/template.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/corp/com.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/com.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/corp/com/exercices/clair.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/com/exercices/clair.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/corp/com/exercices/clair/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/com/exercices/clair/d1.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -242,7 +241,7 @@
       <workItem from="1608204852289" duration="16209000" />
       <workItem from="1608235632187" duration="1257000" />
       <workItem from="1608294461029" duration="10035000" />
-      <workItem from="1608388331189" duration="2693000" />
+      <workItem from="1608388331189" duration="4208000" />
     </task>
     <servers />
   </component>

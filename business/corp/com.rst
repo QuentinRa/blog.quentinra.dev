@@ -66,6 +66,28 @@ Le texte en lui même :
 L'objectif de cette partie est de synthétiser des méthodes
 pour écrire plus lisiblement.
 
+Titres
+	*	Les titres de publications sont en italiques lorsqu'ils sont écris sur pc, sinon ils sont soulignés.
+	*	Les titres (de section, ...) doivent être parlants.
+
+Lisibilité
+
+	*	Éviter les suite de que (que ... qu'il ... que ... qu'à ...)
+	*	Éviter les négations et les doubles négations (il n'est pas en retard : il est en avance (ou à l'heure))
+	*	éviter les « Sujet verbe et verbe phrase » : « Sujet verbe phrase et il le/l' verbe ».
+	*	Il faut être concis : aller au faits.
+	* Il faut éviter les phrases trop longues
+
+Listes à puce
+	On met un point-virgule à la fin d'une ligne de la liste sauf pour la dernière où on met un point.
+
+Spécial
+	On écrit toujours prénom NOM (avec nom en majuscules et prénom en premier).
+
+		* Je crois **en** quelqu'un/quelque chose
+		* ... **de** quelqu'un
+		* mauvais emplois de vocabulaire
+		* phrases ambigus
 
 4. Exercices
 ===========================
