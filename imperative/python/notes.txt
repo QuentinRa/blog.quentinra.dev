@@ -42,12 +42,6 @@ range(1,9) # inclus
 for i in ... :
 	code
 
-
-Librairies
-
-	* https://pypi.org/
-	* pip install X
-
 Requests
 Beautiful Soup
 

@@ -47,6 +47,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :maxdepth: 1
 
     Langage C                            <imperative/c/index>
+    Langage Python                       <imperative/python/index>
 
 .. toctree::
     :caption: Conception

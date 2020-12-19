@@ -93,6 +93,10 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'Readme.md',
 '.github/INSTALL.md',
 ]
 
+html_css_files = [
+    'css/style.css',
+]
+
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
