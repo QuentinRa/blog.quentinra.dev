@@ -29,6 +29,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/template.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,26 +63,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/db/cypher/exercices/cypher" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/business/corp/com/exercices/clair" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Cypher" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\db\cypher\exercices\cypher" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\db\bases" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\cypher\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\cypher\rep" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\exercices\ord" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\db\cypher\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\db\cypher" />
       <recent name="C:\Users\quent\Documents\texas-res\assets" />
       <recent name="C:\Users\quent\Documents\texas-res\cr" />
       <recent name="C:\Users\quent\Documents\texas-res\system\cyber\cyber\f" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\business\corp\com\exercices\clair" />
+      <recent name="C:\Users\quent\Documents\texas-res\business\corp\com\exercices" />
+      <recent name="C:\Users\quent\Documents\texas-res\business\corp" />
+      <recent name="C:\Users\quent\Documents\texas-res\db\cypher\exercices\cypher" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\db\bases" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -237,7 +241,8 @@
       <workItem from="1608195538096" duration="1317000" />
       <workItem from="1608204852289" duration="16209000" />
       <workItem from="1608235632187" duration="1257000" />
-      <workItem from="1608294461029" duration="10006000" />
+      <workItem from="1608294461029" duration="10035000" />
+      <workItem from="1608388331189" duration="2693000" />
     </task>
     <servers />
   </component>
@@ -336,10 +341,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1024" height="370" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606997564354" />
-    <state x="349" y="150" key="IDE.errors.dialog" timestamp="1608235680329">
+    <state x="349" y="150" key="IDE.errors.dialog" timestamp="1608389671887">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="349" y="150" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1608235680329" />
+    <state x="349" y="150" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1608389671887" />
     <state x="604" y="343" key="NewPhpFileDialog" timestamp="1603191408316">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -372,10 +377,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="376" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1603556286896" />
-    <state x="480" y="163" width="575" height="498" key="find.popup" timestamp="1608210963087">
+    <state x="480" y="163" width="575" height="498" key="find.popup" timestamp="1608389006630">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="480" y="163" width="575" height="498" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1608210963087" />
+    <state x="480" y="163" width="575" height="498" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1608389006630" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1608119960636">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

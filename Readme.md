@@ -3,7 +3,10 @@
 L'objectif de ce dépôt est de partager
 et réunir un maximum de cours. Ces cours seront probablement
 rédigés en grande partie par des étudiants mais n'importe
-qui peut y contribuer.
+qui peut y contribuer. Il vise les étudiants qui voudraient se rappeler
+certaines notions sans devoir rechercher de vieux de cours et également aider
+des personnes ayant des difficultés à comprendre un cours en leur proposant
+un autre support.
 
 Les cours ont pour la majorité été pris en note dans l’un des 
 établissements suivants

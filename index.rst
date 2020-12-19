@@ -2,8 +2,13 @@
 Bienvenue sur learngo
 ##########################################
 
-Ce site à pour objectif de réunir un maximum de cours
-écrits par des étudiants pour des étudiants.
+L'objectif de ce dépôt est de partager
+et réunir un maximum de cours. Ces cours seront probablement
+rédigés en grande partie par des étudiants mais n'importe
+qui peut y contribuer. Il vise les étudiants qui voudraient se rappeler
+certaines notions sans devoir rechercher de vieux de cours et également aider
+des personnes ayant des difficultés à comprendre un cours en leur proposant
+un autre support.
 
 Les cours ont pour la majorité été pris en note dans l'un des établissements suivants
 	* département informatique de l'IUT de Sénart-Fontainebleau à Fontainebleau (Seine-et-Marne, France).
@@ -81,6 +86,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
 		Documents d'une enterprise                  <business/docs/index>
 		Insertion professionnelle                   <business/corp/insertion>
 		Simulation CESIM                            <business/cesim/index>
+		L'Art de communiquer                        <business/corp/com>
 
 .. toctree::
     :caption: Économie

@@ -53,7 +53,8 @@ release = '2.27.362'
 # version 1.25 : system/cyber
 # version 1.26 : business/cesim
 # version 2+ => nouvelle doc
-# version 1.27 : db/cypher
+# version 2.27 : db/cypher
+# version 2.28 : business/com
 
 # -- General configuration ---------------------------------------------------
 
