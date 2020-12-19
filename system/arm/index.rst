@@ -7,10 +7,6 @@ Assembleur (ARM)
 | :math:`\color{grey}{Version \ 1.2.3}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 02/12/2020}`
 
-Attention ! Coder en assembleur peut se révéler assez
-compliqué donc si vous n'avez pas les idées claires
-prenez une nuit de sommeil ^^.
-
 1. Introduction
 ===================================
 
