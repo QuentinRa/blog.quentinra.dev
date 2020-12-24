@@ -90,3 +90,10 @@ To search the a system for these type of files run the following: find / -perm -
 Idée trop smart : vois ya une commande qui est exécutée par un script
 avec permissions root, on change le PATH donc la commande pointée est le notre
 et boom : un bash en root.
+
+Deploy the instance attached to this task and log in using the Remote Desktop Protocol
+(RDP). Open the application "TBFC_APP.exe" on the Desktop and enter the correct password!
+
+Remmina
+
+Cyberchef filtre magique détecte auto l'encodage

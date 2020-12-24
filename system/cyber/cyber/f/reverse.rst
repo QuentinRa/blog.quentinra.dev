@@ -36,3 +36,6 @@ Assembleur
 			* :code:`ds` : avance d'une instruction
 			* :code:`dr` : voir les valeurs de tous les registres
 			* :code:`ood` : relancer le programme
+
+Si vous chercher a voir le code d'un .NET vous pouvez utiliser `ILSpy <https://github.com/icsharpcode/ILSpy>`_
+ou `Dotpeek <https://www.jetbrains.com/decompiler/>`_.

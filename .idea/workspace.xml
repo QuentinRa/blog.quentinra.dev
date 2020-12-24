@@ -29,7 +29,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/arm/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/arm/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/cyber/cyber/a/ransomware.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/cyber/a/ransomware.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/cyber/cyber/f/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/cyber/f/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/cyber/cyber/f/reverse.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/cyber/f/reverse.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/cyber/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/index.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
@@ -240,7 +242,10 @@
       <workItem from="1608204852289" duration="16209000" />
       <workItem from="1608235632187" duration="1257000" />
       <workItem from="1608294461029" duration="10035000" />
-      <workItem from="1608388331189" duration="13188000" />
+      <workItem from="1608388331189" duration="13425000" />
+      <workItem from="1608503968688" duration="157000" />
+      <workItem from="1608815303538" duration="14000" />
+      <workItem from="1608819981795" duration="9287000" />
     </task>
     <servers />
   </component>
