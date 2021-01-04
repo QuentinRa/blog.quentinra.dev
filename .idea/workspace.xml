@@ -29,10 +29,6 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/cyber/cyber/a/ransomware.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/cyber/a/ransomware.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/cyber/cyber/f/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/cyber/f/notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/cyber/cyber/f/reverse.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/cyber/f/reverse.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/cyber/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/index.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,11 +67,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\annales\c\rep" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\system\linux\annales" />
       <recent name="C:\Users\quent\Documents\texas-res\db\cypher\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\db\cypher" />
       <recent name="C:\Users\quent\Documents\texas-res\assets" />
-      <recent name="C:\Users\quent\Documents\texas-res\cr" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\cyber\cyber\f" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\imperative\python" />
@@ -245,7 +241,8 @@
       <workItem from="1608388331189" duration="13425000" />
       <workItem from="1608503968688" duration="157000" />
       <workItem from="1608815303538" duration="14000" />
-      <workItem from="1608819981795" duration="9287000" />
+      <workItem from="1608819981795" duration="9990000" />
+      <workItem from="1609750958057" duration="21293000" />
     </task>
     <servers />
   </component>
@@ -344,10 +341,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1024" height="370" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606997564354" />
-    <state x="349" y="150" key="IDE.errors.dialog" timestamp="1608389671887">
+    <state x="349" y="150" key="IDE.errors.dialog" timestamp="1609751198167">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="349" y="150" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1608389671887" />
+    <state x="349" y="150" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1609751198167" />
     <state x="604" y="343" key="NewPhpFileDialog" timestamp="1603191408316">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -380,10 +377,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="376" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1603556286896" />
-    <state x="480" y="163" width="575" height="498" key="find.popup" timestamp="1608389006630">
+    <state x="480" y="163" width="575" height="534" key="find.popup" timestamp="1609770451341">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="480" y="163" width="575" height="498" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1608389006630" />
+    <state x="480" y="163" width="575" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1609770451341" />
     <state x="684" y="302" width="609" height="280" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1608394586647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -392,9 +389,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1608119960636" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608397145651">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1609771135450">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608397145651" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1609771135450" />
   </component>
 </project>
