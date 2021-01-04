@@ -2,8 +2,6 @@
 1. PARTIEL MTG 2021 ENSIIE
 =====================================
 
-Quentin RAMSAMY--AGEORGES
-
 Exercice 1 — Ordonnancement - 8 points
 =======================================
 
@@ -12,7 +10,7 @@ usine de fabrication de vaccin contre le Covid-19 pour le compte de Pfizer pour 
 puisse répondre à la demande mondiale. Le devis a été réalisé grâce à l’emploi de méthode
 d’ordonnancement potentiel tâche.
 
-.. image:: /assets/math/graph/annales/c/rep/partiel_1.png
+.. image:: /assets/math/graph/annales/p/partiel_1.png
 
 1.
 	Tracer le graphe des taches associé à la table des données décrite ci-dessous (les cases
@@ -157,7 +155,7 @@ Exercice 2 — Arbre couvrant de poids minimum - 7 points
 
 Soit le graphe G = (V, E) suivant :
 
-.. image:: /assets/math/graph/annales/c/rep/partiel_1_2.png
+.. image:: /assets/math/graph/annales/p/partiel_1_2.png
 
 1.
 	**Trouver un arbre couvrant de poids minimum du graphe G en utilisant l’algorithme de**
@@ -254,7 +252,7 @@ Une usine chimique fabrique cinq produits A, B, C, D et E. Le stockage dans un m
 entrepôt de certains d’entre eux peut poser des problèmes. Le tableau suivant indique les
 incompatibilités de stockage. La lettre \"i\" signifie incompatible.
 
-.. image:: /assets/math/graph/annales/c/rep/partiel_1_3.png
+.. image:: /assets/math/graph/annales/p/partiel_1_3.png
 
 1. **Modéliser cette situation à l’aide d’un graphe G non-orienté.**
 

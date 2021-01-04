@@ -26,7 +26,16 @@ aucune
 3. Partiels
 ============================
 
-aucun
+1. Partiel MTG 2021 ENSIIE
+------------------------------
+
+.. toctree::
+   :maxdepth: 1
+
+	Sujet du contrôle           			<p/partiel1>
+	Proposition de correction n°1			<p/rep/p1>
+
+| :code:`[TAG] ENSIIE MTG CC1 2020 S1`
 
 ------
 

@@ -29,7 +29,13 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/annales/r.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/annales/r.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/math/graph/annales/c/rep/partiel_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/math/graph/annales/p/partiel_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/math/graph/annales/c/rep/partiel_1_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/math/graph/annales/p/partiel_1_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/math/graph/annales/c/rep/partiel_1_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/math/graph/annales/p/partiel_1_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/annales/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/annales/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/annales/r.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/annales/p/rep/p1.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,19 +73,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\annales\c\rep" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\system\linux\annales" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\cypher\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\cypher" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\imperative\python" />
       <recent name="C:\Users\quent\Documents\texas-res\business\corp\com\exercices\clair" />
       <recent name="C:\Users\quent\Documents\texas-res\business\corp\com\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\business\corp" />
       <recent name="C:\Users\quent\Documents\texas-res\db\cypher\exercices\cypher" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\graph\annales\p\rep" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\annales\p" />
+      <recent name="C:\Users\quent\Documents\texas-res\_todo" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\annales\c\rep" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\system\linux\annales" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -244,7 +250,7 @@
       <workItem from="1608815303538" duration="14000" />
       <workItem from="1608819981795" duration="9990000" />
       <workItem from="1609750958057" duration="21773000" />
-      <workItem from="1609774875548" duration="3666000" />
+      <workItem from="1609774875548" duration="7391000" />
     </task>
     <servers />
   </component>
@@ -359,10 +365,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="ShowDiffWithBranchDialog/0.0.1536.824@0.0.1536.824" timestamp="1603484549092" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1608037605458">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1609784936962">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1608037605458" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1609784936962" />
     <state x="618" y="333" key="VCS.ChangelistChooser" timestamp="1608215518092">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

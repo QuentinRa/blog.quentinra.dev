@@ -18,12 +18,12 @@ on_rtd = os.environ.get('READTHEDOCS') == 'True'
 
 # -- Project information -----------------------------------------------------
 
-project = 'learngo'
+project = ''
 copyright = '2020, Quentin Ra'
 author = 'Quentin Ra'
 
 # The full version, including alpha/beta/rc tags
-release = '2.27.362'
+release = '3.28.362'
 # version 0 : html, css, php, js
 # version 1 : restructured text
 # version 1.1 : system/docker
@@ -55,6 +55,7 @@ release = '2.27.362'
 # version 2+ => nouvelle doc
 # version 2.27 : db/cypher
 # version 2.28 : business/com
+# version 3+ => début du clean
 
 # -- General configuration ---------------------------------------------------
 
@@ -94,7 +95,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'Readme.md',
 ]
 
 html_css_files = [
-    'css/style.css',
+    'css/light.css',
 ]
 
 # -- Options for HTML output -------------------------------------------------

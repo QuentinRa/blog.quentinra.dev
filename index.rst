@@ -16,6 +16,11 @@ Les cours ont pour la majorité été pris en note dans l'un des établissements
 
 Les crédits appropriés ainsi que les sources sont en bas de page de chaque cours.
 
+.. note::
+
+	Si vous voulez changer les couleurs du site, vous pouvez le faire avec le plugin "DarkReader" (par exemple
+	mettre des couleurs plus claires ou foncées, par défaut j'ai mis entre clair et sombre).
+
 .. toctree::
     :maxdepth: 1
 
