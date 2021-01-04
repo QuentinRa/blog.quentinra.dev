@@ -10,17 +10,25 @@ Exercice 1 (Commandes shell, 5 points)
 1. Donner une commande shell qui imprime le contenu du répertoire de
 login de l’utilisateur user quel que soit le répertoire coutant.
 
-ls -la /home/user
+.. code::
 
-# alternative
+	ls -la /home/user
 
-find /home/user -maxdepth 1
+	# alternative
+
+	find /home/user -maxdepth 1
+
+	# ou alors en utilisant la question suivante
+
+	ls $(grep 'user' /etc/passwd | cut -d: -f6)
 
 2. Donner une commande shell différentes qui impriment le nom du répertoire
 de login de l’utilisateur user quel que soit le répertoire courant
 
 getent passwd user | cut -d: -f6
 	récupère dans le fichier /etc/passwd la 6e partie avec : comme séparateur
+
+	Alternative : :code:`grep 'user' /etc/passwd | cut -d: -f6`.
 
 3. Donner une commande shell qui affiche les noms de tous les fichiers
 de suffixe .h du répertoire /tmp.
@@ -102,8 +110,8 @@ message d’erreur pertinent.
 
 		# check des arguments
 		if [ $# -ne 3 ]; then
-			echo "./script.sh <s> <n> <f>"
-			exit
+		 echo "Usage : ./script.sh <s> <n> <f>"
+		 exit
 		fi
 
 		s=$1
@@ -113,38 +121,37 @@ message d’erreur pertinent.
 		# check f
 		# already exists
 		if [ -f $f ]; then
-			# redirect on error
-			echo "Error: FileAlreadyExists ($f)" 1>&2
-			exit
+		 # redirect on error
+		 echo "Error: FileAlreadyExists ($f)" 1>&2
+		 exit
 		fi
 
 		# create failed
 		t=$(touch $f 2>/dev/null)
 
+		# check if there is a error
 		if [ ! -z $t ] ; then
-			# redirect on error
-			echo "Error: CreateFileFailed (touch $f)" 1>&2
-			exit
+		 # redirect on error
+		 echo "Error: CreateFileFailed (touch $f)" 1>&2
+		 exit
 		fi
+
+		# check if file is writable (so everything is ok)
 		if [ ! -w $f ]; then
-			# redirect on error
-			echo "Error: CreateFileFailed ($f)" 1>&2
-			exit
+		 # redirect on error
+		 echo "Error: CreateFileFailed ($f)" 1>&2
+		 exit
 		fi
 
 		for (( i = 0; i < $n; i++ )); do
-			# last line
-			if [ $(($i+1)) -ge $n ]; then
-				for (( j = 0; j <= i; j++ )); do
-					echo -n "$s"
-				done
-			# not last line so space
-			else; then
-				for (( j = 0; j <= i; j++ )); do
-					echo -n "$s"
-				done
-				echo -n " "
-			fi;
+		 for (( j = 0; j <= i; j++ )); do
+		  echo -n "$s"
+		 done
+
+		 # si c'est pas le dernier mot, alors on met un espace
+		 if [ $(($i+1)) -ne $n ]; then
+		  echo -n " "
+		 fi;
 		done > $f
 
 		exit
@@ -161,58 +168,22 @@ On utilisera uniquement les flux noyaux
 
 .. code:: c
 
-		#include <stdio.h> //printf
-		#include <stdlib.h> //EXIT_SUCCESS
 		#include <unistd.h> //fork
 		#include <wait.h> //wait
 
 		void child1(){
-		 printf("il");
-		 fflush(stdout); // force affichage
-		}
-
-		void child2(){
-		  printf("il\b\bbeau"); // reviens de 2 caractères (efface le il)
-		  fflush(stdout); // force affichage
-		}
-
-		int main(int argc, char ** argv) {
-		  pid_t c1, c2;
-
-		  c1 = fork();
-		  if (c1 == 0){ //dans le fils 1
-		    child1();
-		    return EXIT_SUCCESS;
-		  }
-		  wait(NULL); // attends fils
-
-		  printf(" fait ");
-		  fflush(stdout);
-
-		  c2 = fork();
-		  if (c2 == 0){ //dans le fils 2
-		    child2();
-		    return EXIT_SUCCESS;
-		  }
-		  wait(NULL); // attends fils
-
-		  return EXIT_SUCCESS;
-		}
-
-Si printf, ... ne sont pas autorisés alors on peut faire
-
-.. code:: c
-
-		#include <unistd.h> //fork
-		#include <wait.h> //wait
-
-		void child1(){
-		 write(1,"il",2);
+		 int w = write(1,"il",2);
+		 if (w == -1){
+		  perror("write failed");
+		 }
 		 exit(0); //vide les buffers car force fermeture
 		}
 
 		void child2(){
 		  write(1,"il\b\bbeau",8); // reviens de 2 caractères (efface le il)
+		  if (w == -1){
+		   perror("write failed");
+		  }
 		  exit(0); //vide les buffers car force fermeture
 		}
 
@@ -222,14 +193,24 @@ Si printf, ... ne sont pas autorisés alors on peut faire
 		  c1 = fork();
 		  if (c1 == 0){ //dans le fils 1
 		    child1();
+		  } else if (c1 == -1){
+		    perror("fork child 1 failed");
+		    exit(-1);
 		  }
+
 		  wait(NULL); // attends fils (on pourrait aussi sleep)
 
-		  write(1," fait ",6);
+		  int w = write(1," fait ",6);
+		  if (w == -1){
+		    perror("write failed");
+		  }
 
 		  c2 = fork();
 		  if (c2 == 0){ //dans le fils 2
 		    child2();
+		  }  else if (c2 == -1){
+		    perror("fork child 2 failed");
+		    exit(-2);
 		  }
 		  wait(NULL); // attends fils (on pourrait aussi sleep)
 
@@ -242,6 +223,9 @@ Exercice 5 (Généralités 5 points)
 .. image:: /assets/system/linux/annales/exo5.png
 
 1. Décrire précisément son comportement
+
+(la réponse a cette question se trouve dans le poly du cours mais je n'ai pas recopié car
+ce n'était pas **précisément** détaillé...)
 
 Main
 
@@ -280,9 +264,11 @@ les entiers congrus à 0, 1 et 2 modulo 3
 
 On a déjà trois fils, on va créer 3 pipes (variables globales).
 
-int zero[2];
-int un[2];
-int deux[2];
+.. code:: c
+
+	int zero[2];
+	int un[2];
+	int deux[2];
 
 Dans le main
 
@@ -321,3 +307,9 @@ On ajoute un wait_verbose pour le 3e fils
     waitverbose(0); //un
     waitverbose(0); //deux
     exit(0);
+
+La logique est pareil, on confie le travail du cas 0 a un fils, du cas 1 à un autre et du cas 2 au dernier.
+On lit dans le père, et si on écrit le nombre lu dans le pipe associé a notre cas après avoir vérifié
+le modulo (nombre%3). Enfin on attends maintenant 3 fils avant de quitter.
+
+On peut ajouter -1 par exemple pour quitter dans la boucle.
