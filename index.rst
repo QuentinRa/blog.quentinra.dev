@@ -43,6 +43,8 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :name: system
     :maxdepth: 1
 
+    Architecture Linux                   <system/linux/index>
+    Bash et Scripts                      <system/linux/bash>
     Assembleur (ARM)                     <system/arm/index>
     Docker                               <system/docker/index>
     Cybersécurité                        <system/cyber/index>
@@ -112,6 +114,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :name: language
     :maxdepth: 1
 
+		Anglais                              <language/english/index>
 		Japonais                             <language/japanese/index>
 
 .. toctree::
@@ -120,15 +123,6 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :maxdepth: 1
 
     Vim (Vi IMproved)                   <utils/vim/index>
-
-.. toctree::
-    :caption: Brouillons
-    :name: pp
-    :maxdepth: 1
-
-		Anglais                              <language/english/index>
-    Architecture Linux                   <system/linux/index>
-    Bash et Scripts                      <system/linux/bash>
 
 -----
 

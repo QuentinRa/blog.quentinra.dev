@@ -4,13 +4,13 @@
 Anglais
 ================================
 
-0. Novice tips
-**********************
-
-...
+| :math:`\color{grey}{Version \ 0.1.3}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 05/01/2021}`
 
 1. General
 **********************
+
+...
 
 2. Grammar
 **********************
@@ -62,37 +62,6 @@ scared of my wits                             petrified
 shaking like a leaf                           felt nervous
 I wish the earth would swallow me up          felt embarrassed
 ============================================= ==========================================================
-
-5. School
-**************
-
-| Degree
-| ...
-
-6. Work world
-**************************
-
-| resume
-| internship
-| interviews
-| companies, wages, ...
-| ...
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-|
 
 -----
 
