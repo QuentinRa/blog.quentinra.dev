@@ -6,6 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/_build" />
       <excludeFolder url="file://$MODULE_DIR$/_ext" />
       <excludeFolder url="file://$MODULE_DIR$/_template" />
+      <excludeFolder url="file://$MODULE_DIR$/assets/libs" />
       <excludeFolder url="file://$MODULE_DIR$/out" />
       <excludePattern pattern="make.bat" />
       <excludePattern pattern="Makefile" />
