@@ -1,0 +1,111 @@
+3. Variables à densité/continues
+===================================
+
+Une variable à densité ou continue est une variable
+aléatoire qui prends des valeurs dans :math:`\mathbb{R}`.
+
+On note généralement :math:`f_X(x)` notre variable aléatoire qui suit la loi
+X.
+
+Calculer la probabilité la probabilité que P(X=x) revient à calculer
+l'air sous la courbe de :math:`f_X(x)` soit une intégrale.
+
+On a les propriétés suivantes :
+
+	* :math:`\mathbb{P}(X \in A) = \int_{x \in \Delta A}^{} fxdx`
+	* densité/loi de proba si :math:`\int_{-\infty}^{+\infty} fxdx = 1`
+	* P(X=valeur) = 0
+	* :math:`\mathbb{P}(a \le X \le b) = \int_{a}^{b} fxdx`
+	* la fonction doit être positive
+
+3.1 Fonction de répartition
+******************************
+
+La fonction :math:`F_x(x)` est définie par :math:`F_X(x) = P(X \le x)`.
+
+On a les propriétés suivantes :
+
+	* :math:`\mathbb{P}(X \le x) := \mathbb{P}(X < x)`
+	* :math:`0 \ge F_X(x) \ge 1`
+	* F est croissante et continue à droite
+	* :math:`\lim_{x \rightarrow +\infty}F(x) = 1`
+	* :math:`\lim_{x \rightarrow -\infty}F(x) = 0`
+	* Si A_n suite monotone, P(\lim_{n \rightarrow +\infty} A_n) = \lim_{n \rightarrow +\infty} A_n * P(A_n)
+
+Théorème de transfert
+	Le théorème de transfert consiste à prendre une variable aléatoire, lui
+	appliquer une fonction et obtenir une nouvelle valeur aléatoire.
+
+3.2 Espérance et variance
+******************************
+
+Espérance
+	Soit :math:`f_X(x)` une fonction de densité intégrable (les densités non intégrables n'ont pas d'espérance),
+	on définit
+
+	.. math::
+
+		\mathbb{E}[X] = \int_{-\infty}^{+\infty} xf(x)dx
+
+	Remarques
+
+		* E(X) = 0, alors X est centrée
+		* E(X) est finie, alors X peut être centrée
+
+Variance
+	Soit :math:`f_X(x)` une fonction de densité intégrable, on définit
+
+	.. math::
+
+		V[X] = \int_{-\infty}^{+\infty} (x-\mathbb{E}[X])^2f(x)dx
+
+3.3 Loi usuelles
+******************************
+
+3.3.1 Loi uniforme
+-------------------------------------
+
+Une loi uniforme sur un interval [a,b] a pour densité
+
+.. math::
+
+	f(x) = \frac{1}{b-a} {\bf 1}\!\!{\rm 1}_{[a,b]}x
+
+3.3.2 Loi gaussienne
+-------------------------------------
+
+La loi normale, notée :math:`N(m,\sigma^2)` avec m la moyenne et sigma la variance à pour densité
+
+.. math::
+
+	f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} * e^{ -\frac{1}{2} (\frac{x-m}{\sigma})^2 }
+
+Loi normale centée réduite, N(0,1) à pour densité
+
+.. math::
+
+	f(x) = \frac{1}{\sqrt{2\pi}} e^{-\frac{1}{2} x^2}
+
+On utilise généralement la forme :math:`\frac{X-m}{\sigma}` pour centrer réduire la loi.
+
+3.3.3 Loi exponentielle
+-------------------------------------
+
+La loi exponentielle :math:`\epsilon(\lambda)` est définie par la loi  de densité
+
+.. math::
+
+	f(x) = \lambda e^{-\lambda{x}} {\bf 1}\!\!{\rm 1}_{\mathbb{R}^+}x
+
+:math:`E[X] = \frac{1}{\lambda}`.
+
+3.3.4 Loi de Cauchy
+-------------------------------------
+
+La loi de cauchy est définie par la densité suivante, sachant a>0
+
+.. math::
+
+	f(x) = \frac{a}{\pi} \frac{1}{x^2+a^2}
+
+:math:`E[X] = existe\ pas`.

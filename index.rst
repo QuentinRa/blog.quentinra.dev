@@ -36,6 +36,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
 		Algèbre Matricielle                  <maths/matrix/index>
 		Bric à Brac                          <maths/bric/index>
 		Théorie des langages                 <maths/tdl/index>
+    Probabilités                         <maths/proba/index>
 
 .. toctree::
     :caption: Système
@@ -128,7 +129,6 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
 		Anglais                              <language/english/index>
     Architecture Linux                   <system/linux/index>
     Bash et Scripts                      <system/linux/bash>
-    Probabilités                         <maths/proba/index>
 
 -----
 
