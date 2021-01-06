@@ -63,6 +63,8 @@ Il y aura une fuite mémoire.
 	* Il y a une division par 0 à la troisième ligne.
 	* Il y a une erreur de conversion de type.
 
+**Crédits**
+	* Anonymous#8678 (étudiant à l'ENSIIE)
 
 
 

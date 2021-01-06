@@ -28,10 +28,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cb3c6624-4827-4984-b744-f74bd3d26571.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cb3c6624-4827-4984-b744-f74bd3d26571.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/annales/i/qcm1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/annales/i/qcm1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/annales/i/rep/q1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/annales/i/rep/q1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/annales/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/annales/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/annales/i/rep/q2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/annales/i/rep/q2.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,26 +62,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/db/sql/annales/my" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\db\sql\annales\my" />
+      <recent name="C:\Users\quent\Documents\texas-res\db\sql\annales" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\proba\files\discret" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\python" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\db\sql\annales\old" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\linux" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\_notes\annales" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\analyse\trash" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\graph\annales\p\rep" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph\annales\p" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\assets" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\proba\files\discret" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\python" />
-      <recent name="C:\Users\quent\Documents\texas-res\business\corp\com\exercices\clair" />
-      <recent name="C:\Users\quent\Documents\texas-res\business\corp\com\exercices" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -251,7 +250,8 @@
       <workItem from="1609838082063" duration="18548000" />
       <workItem from="1609873030047" duration="1127000" />
       <workItem from="1609874818823" duration="4704000" />
-      <workItem from="1609923696485" duration="8718000" />
+      <workItem from="1609923696485" duration="17781000" />
+      <workItem from="1609963431321" duration="7848000" />
     </task>
     <servers />
   </component>
@@ -334,22 +334,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="156" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604934130951" />
-    <state width="1024" height="370" key="GridCell.Tab.0.bottom" timestamp="1606997564354">
+    <state width="1023" height="370" key="GridCell.Tab.0.bottom" timestamp="1609934555092">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="370" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606997564354" />
-    <state width="1024" height="370" key="GridCell.Tab.0.center" timestamp="1606997564354">
+    <state width="1023" height="370" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609934555092" />
+    <state width="1023" height="370" key="GridCell.Tab.0.center" timestamp="1609934555092">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="370" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606997564354" />
-    <state width="1024" height="370" key="GridCell.Tab.0.left" timestamp="1606997564353">
+    <state width="1023" height="370" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609934555092" />
+    <state width="1023" height="370" key="GridCell.Tab.0.left" timestamp="1609934555092">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="370" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606997564353" />
-    <state width="1024" height="370" key="GridCell.Tab.0.right" timestamp="1606997564354">
+    <state width="1023" height="370" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609934555092" />
+    <state width="1023" height="370" key="GridCell.Tab.0.right" timestamp="1609934555092">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="370" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606997564354" />
+    <state width="1023" height="370" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609934555092" />
     <state x="349" y="150" key="IDE.errors.dialog" timestamp="1609877609782">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -386,10 +386,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="376" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1603556286896" />
-    <state x="480" y="163" width="575" height="534" key="find.popup" timestamp="1609874977563">
+    <state x="480" y="163" width="575" height="534" key="find.popup" timestamp="1609937800774">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="480" y="163" width="575" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1609874977563" />
+    <state x="480" y="163" width="575" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1609937800774" />
     <state x="684" y="302" width="609" height="280" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1608394586647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -398,9 +398,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1608119960636" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1609774887537">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1609937696802">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1609774887537" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1609937696802" />
   </component>
 </project>
