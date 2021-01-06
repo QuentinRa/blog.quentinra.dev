@@ -290,6 +290,7 @@ Il est recommandé de suivre l'ordre des exercices.
 		 Flux de texte                      <exercices/others/flux_t>
 		 Listes chainées                    <exercices/others/linked_list>
 		 Récursivité                        <exercices/others/recursive>
+		 Annales                            <annales/index>
 
 Resources associées au cours
 
