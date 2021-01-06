@@ -29,10 +29,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/system/linux/terminal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/_linux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/_linux.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/files/intro.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/intro.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/annales/i/qcm1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/annales/i/qcm1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/annales/i/rep/q1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/annales/i/rep/q1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/annales/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/annales/index.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -252,7 +251,7 @@
       <workItem from="1609838082063" duration="18548000" />
       <workItem from="1609873030047" duration="1127000" />
       <workItem from="1609874818823" duration="4704000" />
-      <workItem from="1609923696485" duration="2917000" />
+      <workItem from="1609923696485" duration="8718000" />
     </task>
     <servers />
   </component>
