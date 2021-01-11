@@ -1,7 +1,7 @@
-.. _etiquette:
+.. _rst:
 
 ================================
-NOM
+ReStructured Text (rst)
 ================================
 
 | :math:`\color{grey}{Version \ 1.0.0}`
@@ -10,25 +10,7 @@ NOM
 1. Nom de partie
 ===================================
 
-1.1 Nom de sous-partie
-********************************
-
-1.1.1 Nom de sous sous-partie
---------------------------------
-
-...
-
-
-
-i. Exercices
-==============
-
-.. toctree::
-    :name: exercices
-    :maxdepth: 1
-
-		nom				<path>
-|
+... 
 
 -----
 

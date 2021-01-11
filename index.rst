@@ -1,5 +1,5 @@
 ##########################################
-Bienvenue sur learngo
+Bienvenue sur memorize
 ##########################################
 
 L'objectif de ce dépôt est de partager
@@ -25,6 +25,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :maxdepth: 1
 
     Comment contribuer ?                 <contribuer>
+    Status                               <status>
 
 .. toctree::
     :caption: Mathématiques
@@ -122,7 +123,9 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :name: utils
     :maxdepth: 1
 
-    Vim (Vi IMproved)                   <utils/vim/index>
+    ReStructured Text (rst)             <utils/rst>
+    Git                                 <utils/git>
+    Vim (Vi IMproved)                   <utils/vim>
 
 -----
 

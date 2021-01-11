@@ -35,7 +35,7 @@ aucune
 	Sujet du contrôle           			<p/partiel1>
 	Proposition de correction n°1			<p/rep/p1>
 
-| :code:`[TAG] ENSIIE MTG CC1 2020 S1`
+| :code:`[TAG] ENSIIE MTG PARTIEL 2020 S1`
 
 ------
 
