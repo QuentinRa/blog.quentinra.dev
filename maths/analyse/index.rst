@@ -4,26 +4,35 @@
 Analyse numérique
 ================================
 
-.. warning::
+L'objectif est de résoudre numériquement un système linéaire (sl) donc Ax=b
+et réussir à calculer les valeurs propres d'une matrice (voir le cours d'algèbre matriciel si besoin).
 
-	Ce cours suppose des bases en analyse et en algèbre matriciel
+Il existe des méthodes directes et des méthodes itératives. Le calcul étant fait numériquement, il peut
+y avoir des erreurs et des problèmes qu'il faudra estimer. Il faudra également calculer le temps
+d'exécution (i.e. le nombre d'opérations).
 
 1. Introduction
 =================================
 
-1.1 Objectif
+1.1 Méthodes
 **********************
 
-L'objectif est de résoudre numériquement un système linéaire (sl)
-et réussir à calculer les valeurs propres d'une matrice.
-
-1.2 Comment résoudre ax=b
-***************************
-
 - méthode directe : faire un nombre fini d'opérations
+
+	*	Formule de Cramer
+	*	Système triangulaire
+	*	Méthode de Gauss
+	*	Factorisation LU
+	*	Factorisation de Cholesky
+	*	Factorisation QR
+
 - méthode itérative : approcher x par récurrence
 
-1.3 Problèmes
+	*	Méthode de Jacobi
+	*	Méthode de Gauss Seidel
+	*	Méthode de relaxation
+
+1.2 Problèmes
 **********************
 
 Les calculs étant fait sur ordinateurs, il y aura des erreurs. Il faut pouvoir
@@ -36,43 +45,17 @@ estimer et/ou majorer cette erreur.
 Les calculs peuvent êtres très longs si le système est très grand. Il faut
 connaitre le cout/un ordre d'idée de chaque méthode.
 
-2. Erreurs absolues ou relatives
+2. Erreurs et normes
 =================================
 
 Une erreur est une quantité qui mesure si un résultat calculé est numériquement
 proche du résultat théorique.
 
-.. note::
+.. toctree::
+	 :maxdepth: 1
 
-	Cette partie nécessite des connaissances sur les normes (:ref:`norme`).
-
-
-2.1 Erreur absolue
-**********************
-
-Soit x, le résultat exact et :math:`x_{appro}` une valeur approchée, alors l'erreur absolue se calcule :math:`|x-x_{appro}|`.
-
-Cependant l'erreur absolue n'est pas suffisante.
-
-	| x=10^{-6}
-	| y=2*10^{-6}
-	| \|x-y|=10^{-6}=petite erreur sauf que y=2*x.
-
-2.2 Erreur relative
-**********************
-
-Soit x, le résultat exact et :math:`x_{appro}` une valeur approchée, alors l'erreur relative
-se calcule :math:`\frac{|x-x_{appro}|}{|x|}`
-ou :math:`\frac{|||AB|||}{|||A|||}` avec A et B des matrices ayant la même sémantique que x et :math:`x_{appro}`.
-
-	| x=10^{-6}
-	| y=2*10^{-6}
-	| :math:`\frac{|x-y|}{|x|}=1` = pas petit
-
-.. _norme:
-
-3. Normes
-=================================
+		 Erreur absolue       <files/err/abs>
+		 Erreur absolue       <files/err/relative>
 
 Une norme N sur un ensemble E est une mesure de l'erreur sur E.
 
@@ -89,118 +72,47 @@ Une norme N sur un ensemble E est une mesure de l'erreur sur E.
 
 	On met :math:`||| \cdot  |||` pour la norme d'une matrice.
 
-3.1 Normes en 1, 2 et :math:`+\infty`
-***************************************************
+.. toctree::
+	 :maxdepth: 1
 
-3.1.1 Norme en 1
----------------------------------------------------
+		 Norme en 1                     <files/err/norm1>
+		 Norme en 2                     <files/err/norm2>
+		 Norme en +l'infini             <files/err/norm3>
+		 Opérations sur les normes       <files/err/op>
 
-:math:`||x||_1 = \sum_{i=1}^{n}{ |\ x_i |}`
-
-3.1.2 Norme en 2
----------------------------------------------------
-
-:math:`||x||_2 = (\sum_{i=1}^{n}{ |\ x_i |^2} )^{1/2} = \sqrt{\sum_{i=1}^{n}{ |\ x_i |^2}}`
-
-ou :math:`|||A|||_2 = \max_{  y \neq 0 } \frac{||Ay||_2}{||y||_2}`.
-
-Si A est normale alors :math:`|||A|||_2 = \rho (A)` sinon :math:`|||A|||_2 = \sqrt{\rho (A^*A)}`
-
-3.1.3 Norme en :math:`+\infty`
----------------------------------------------------
-
-:math:`||x||_{+\infty	} = \max_{i \in \mathbb{[}1:n\mathbb{]}} | \ x_i |^2`
-
-.. note::
-
-	On note que max = maximum atteint alors que sup c'est comme une limite donc
-	pas forcément atteint.
-
-3.2 Opérations sur les normes
-***************************************************
-
-:math:`|||A|||| = \sup_{x \neq 0} \frac{||Ax||}{||x||}`
-
-:math:`||Ax|| \le |||A||| * ||x||`
-
-:math:`\rho(A) \le ||A||`
-
-.. note::
-
-	On peut toujours trouver une norme d'une matrice pour approcher le rayon spectral.
-
-:math:`||v||^2_2 = v^t * v`
-
-:math:`||Qx||^2_2 = (Qx)^* Qx = x^* Q^* Qx = x^* x = ||x||^2_2` car :math:`Q^**Q=Id`
-donc :math:`\color{red}{||Qx||^2_2 =||x||^2_2}`
-
-:math:`||AQ||_2 = ||QA||_2 = ||A||_2`
-
-.. note::
-
-	Démonstration
-
-	.. math::
-
-		||AQ||_2 := \max_{  x \neq 0 } \frac{||AQx||_2}{||x||_2}
-		\\
-		on \ pose \ y = Qx \\
-		= \max_{  x \neq 0 } \frac{||Ay||_2}{||y||_2} := |||A|||
-
-4. Conditionnement
+3. Conditionnement
 =================================
 
 Le conditionnement permet de mesurer l'impact des erreurs d'arrondis sur x (Ax=b).
 
-.. note::
+Je crois, que le conditionnement permet de mesurer la dépendance entre b (la solution du problème)
+et x (le paramètre).
 
-	Je crois, que le conditionnement permet de mesurer la dépendance entre b (la solution du problème)
-	et x (le paramètre).
+.. toctree::
+	 :maxdepth: 1
 
-4.1 Conditionnement en 1
-********************************
+		 Conditionnement en 1                     <files/cond/cond1>
+		 Conditionnement en 2                     <files/cond/cond2>
+		 Conditionnement en p                     <files/cond/cond3>
 
-.. math::
+4. Méthodes directes
+======================================
 
-	cond(A) = |||A||| * |||A^{-1}|||
+.. toctree::
+	 :maxdepth: 1
 
-Propriétés
-	* :math:`A \in Gl_n(R) \ alors \ cond(A) \ge 1`
-	* :math:`A \in Gl_n(R) \ alors \ cond(\lambda{A}) = cond(A)`
-	* :math:`A, B \in Gl_n(R) \ alors \ cond(AB) \le cond(A) * cond(B)`
-
-4.2 Conditionnement en 2
-********************************
-
-.. math::
-
-	cond_2(A) = \sqrt{\frac{\sigma_n}{\sigma_1}} \\
-	ou \ si \ A \ définie \ positive \\
-	cond_2(A) = \sqrt{\frac{\lambda_n}{\lambda_1}} \\
-
-.. note::
-
-	:math:`\sigma` est la plus petite valeur propre, :math:`\lambda` la plus grande valeur propre.
-
-4.3 Conditionnement en p
-********************************
-
-Si on considère une norme :math:`|||\ |||_p` alors :math:`cond_p(A) = |||A||_p |||A^{-1}||_p`
-
-
-
-
-
-
-
-
-|
+		 Formule de Cramer                    <files/meth_d/cramer>
+		 Système triangulaire                 <files/meth_d/tri>
+		 Factorisation de Cholesky            <files/meth_d/cholesky>
+		 Méthode de Gauss                     <files/meth_d/gauss>
+		 Factorisation LU                     <files/meth_d/lu>
 
 -----
 
 **Crédits**
 	* Vicent Torri (enseignant à l'ENSIIE)
 	* Christophe MOUILLERON (enseignant à l'ENSIIE)
+	* Camel#9490 (étudiant à l'ENSIIE)
 	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
 
 **Références**
@@ -215,3 +127,6 @@ Si on considère une norme :math:`|||\ |||_p` alors :math:`cond_p(A) = |||A||_p 
 	* outils
 		* http://atomurl.net/math/
 		* https://www.dcode.fr/norme-vecteur
+		* ++ de Camel
+	* méthodes
+		* http://bibmath.net/dico/index.php?action=affiche&quoi=./r/relaxation.html
