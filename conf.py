@@ -23,7 +23,7 @@ copyright = '2020, Quentin Ra'
 author = 'Quentin Ra'
 
 # The full version, including alpha/beta/rc tags
-release = 'build-3.28.362'
+release = 'build-3.30.385'
 # version 0 : html, css, php, js
 # version 1 : restructured text
 # version 1.1 : system/docker
@@ -57,6 +57,7 @@ release = 'build-3.28.362'
 # version 2.28 : business/com
 # version 3+ => début du clean
 # version 3.29 : maths/analyse
+# version 3.30 : utils/git
 
 # -- General configuration ---------------------------------------------------
 

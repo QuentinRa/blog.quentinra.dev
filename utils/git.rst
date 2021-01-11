@@ -4,7 +4,7 @@
 Git
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.0}`
+| :math:`\color{grey}{Version \ 1.0.1}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 11/01/2021}`
 
 Git est un gestionnaire de version de votre code. Il vous permet de créer des sauvegardes
@@ -45,8 +45,8 @@ alors vous avez un tuto ici : https://docs.github.com/en/free-pro-team@latest/gi
 :code:`git add <fichiers>` (ou git add . pour tout ajouter)
 	Seulement les fichiers ajoutés seront commits.
 
-:code:`git commit -m "nom_du_commit"`
-	Création de la sauvegarde, ayant pour nom \"nom_du_commit\". Elle est locale, il faudra l'envoyer
+:code:`git commit -m "description du commit"`
+	Création de la sauvegarde, ayant pour description \"description du commit\". Le commit est local, il faudra l'envoyer
 	sur le serveur.
 
 :code:`git push`
@@ -84,12 +84,48 @@ alors vous avez un tuto ici : https://docs.github.com/en/free-pro-team@latest/gi
 4. Bonne conduite
 =================================
 
-...
+Commits atomiques
+	Si possible et dans la mesure du raisonnable, essayer de faire des petits commits, par exemple
+	un par fonctionnalité.
 
-5. Github/Fonctionnalités expert
+Commits détaillés
+	Lorsque vous faites des commits, vous pouvez "leur donner une description". Il est généralement mieux de faire
+	un commit de la forme
+
+	.. code:: bash
+
+		git commit -m "une courte description du commit
+
+		un description
+		plus longue et détaillée
+		"
+
+	Seulement la partie "courte" sera affichée dans le gestionnaire mais vous pourrez si besoin voir
+	la partie longue.
+
+Readme.md
+	À la racine de votre projet, il est écrit en Markdown (.md) et contient une description du dépôt.
+
+.gitignore
+	À la racine de votre projet, il décrit les chemins de fichiers/dossiers qui ne seront pas ajoutés.
+	Vous pouvez utiliser des regex (donc faire \*.o pour tous les fichiers .o par exemple).
+
+	Site utile pour générer des .gitignore : https://www.toptal.com/developers/gitignore
+
+5. Fonctionnalités expert (~Github)
 ========================================
 
-...
+Voici quelques fonctionnalités ultra pratiques mais possiblement compliquées a utiliser.
+Elles sont disponibles sur Github mais toutes ne sont pas disponibles partout.
+
+.. toctree::
+	 :maxdepth: 1
+
+
+		Pages Wiki & Documentation                  <git/wiki>
+		Intégration continues (actions)             <git/actions>
+		PullRequest et Issues                       <git/special>
+		Organisation                                <git/org>
 
 -----
 
