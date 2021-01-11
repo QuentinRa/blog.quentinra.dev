@@ -1,14 +1,6 @@
 https://www.easycalculation.com/algebra/gauss-seidel-method.php
 https://www.easycalculation.com/operations-research/gaussjacobi.php
-https://www.easycalculation.com/matrix/cholesky-decomposition-matrix.php
-
-https://mxncalc.com/lu-factorization-calculator
-https://fr.mathworks.com/help/matlab/math/determine-whether-matrix-is-positive-definite.html
 https://www.math.utah.edu/~zwick/Classes/Fall2012_2270/Lectures/Lecture33_with_Examples.pdf
-https://www.symbolab.com/solver/matrix-eigenvectors-calculator/eigenvectors%20%5Cbegin%7Bpmatrix%7D2%26-1%260%5C%5C%20-1%262%26-1%5C%5C%200%26-1%262%5Cend%7Bpmatrix%7D
-
-https://www.atozmath.com/MatrixEv.aspx?q=choleskydecomp&q1=2%2c-1%2c0%3b-1%2c2%2c-1%3b0%2c-1%2c2%60choleskydecomp%60&dm=D&dp=8&do=1#PrevPart
-
 https://keisan.casio.com/exec/system/15052019544540
 
 =============================

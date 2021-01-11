@@ -29,6 +29,13 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/_notes/annales/r2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/annales/r2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/analyse/files/meth_d/cholesky.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/analyse/files/meth_d/cholesky.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/analyse/files/meth_d/cramer.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/analyse/files/meth_d/cramer.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/analyse/files/meth_d/gauss.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/analyse/files/meth_d/gauss.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/analyse/files/meth_d/lu.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/analyse/files/meth_d/lu.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/analyse/files/meth_d/tri.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/analyse/files/meth_d/tri.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/analyse/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/analyse/index.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
@@ -61,7 +68,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/analyse/files/meth_d" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/analyse/files/meth_i" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
@@ -76,11 +83,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\maths\analyse\trash" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\analyse\files\meth_i" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\analyse\files\meth_d" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\analyse\files\cond" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\analyse\files\err" />
       <recent name="C:\Users\quent\Documents\texas-res\db\sql\annales\my" />
-      <recent name="C:\Users\quent\Documents\texas-res\db\sql\annales" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -252,7 +259,7 @@
       <workItem from="1609923696485" duration="17781000" />
       <workItem from="1609963431321" duration="8077000" />
       <workItem from="1610015882383" duration="68000" />
-      <workItem from="1610378797547" duration="3074000" />
+      <workItem from="1610378797547" duration="9735000" />
     </task>
     <servers />
   </component>
@@ -399,9 +406,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1608119960636" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1610381299964">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1610386347229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1610381299964" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1610386347229" />
   </component>
 </project>

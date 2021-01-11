@@ -4,6 +4,9 @@
 Analyse numérique
 ================================
 
+| :math:`\color{grey}{Version \ 2.0.2}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 11/01/2021}`
+
 L'objectif est de résoudre numériquement un système linéaire (sl) donc Ax=b
 et réussir à calculer les valeurs propres d'une matrice (voir le cours d'algèbre matriciel si besoin).
 
@@ -24,13 +27,13 @@ d'exécution (i.e. le nombre d'opérations).
 	*	Méthode de Gauss
 	*	Factorisation LU
 	*	Factorisation de Cholesky
-	*	Factorisation QR
+	*	Décomposition QR
 
 - méthode itérative : approcher x par récurrence
 
 	*	Méthode de Jacobi
 	*	Méthode de Gauss Seidel
-	*	Méthode de relaxation
+	*	Méthode de relaxation (SOR)
 
 1.2 Problèmes
 **********************
@@ -107,18 +110,44 @@ et x (le paramètre).
 		 Méthode de Gauss                     <files/meth_d/gauss>
 		 Factorisation LU                     <files/meth_d/lu>
 
+5. Méthodes itératives
+==============================
+
+L'objectif est de créer une suite :math:`x^n` qui converge vers la solution x
+tel que :math:`x^{(n+1)} = B x^{(n)} + \widetilde{b}` avec B et :math:`\widetilde{b}` donnés.
+
+On décompose A = D - E - F avec
+
+	 * D : diagonale
+	 * E : triangulaire inférieure stricte
+	 * F : triangulaire supérieure stricte
+
+La décomposition est unique.
+
+On s'arrête généralement quand :math:`\frac{|| A x^{(k)} - b ||}{||b||} \le \epsilon`
+avec :math:`\epsilon > 0` (0.001 par exemple).
+
+.. toctree::
+	 :maxdepth: 1
+
+		 Méthode de Jacobi                <files/meth_i/jacobi>
+		 Méthode de Gauss Seidel          <files/meth_i/gauss>
+		 Méthode de relaxation            <files/meth_i/relax>
+
 -----
 
 **Crédits**
 	* Vicent Torri (enseignant à l'ENSIIE)
 	* Christophe MOUILLERON (enseignant à l'ENSIIE)
 	* Camel#9490 (étudiant à l'ENSIIE)
+	* Tails#9080 (étudiant à l'ENSIIE)
 	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
 
 **Références**
 	* Analyse numérique
 		* https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Analyse_num%C3%A9rique
 		* http://math.univ-bpclermont.fr/~cindea/blog/post/intro-ana-num-interet/
+		* https://www.math.univ-paris13.fr/~halpern/teaching/MACS1_2010/systemes.pdf
 		* https://www.i2m.univ-amu.fr/perso/thierry.gallouet/licence.d/anum.d/anum-tg2.pdf
 	* latex
 		* https://fr.wikibooks.org/wiki/LaTeX/%C3%89crire_des_math%C3%A9matiques
