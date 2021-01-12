@@ -4,7 +4,66 @@
 Bash et Scripts bash
 ================================
 
+:code:`prérequis` (cours :ref:`linux`) avoir une idée des thèmes suivants
 
+	* bases de linux (introduction)
+	* permissions
+	* notion de chemins
+	* notion de glob pattern/regex
+	* scripts
+	* processus
+
+1. Introduction
+========================
+
+Le bash est le langage le plus répandu sur les machines UNIX.
+
+Sortit en 1988, il contient de nombreuses améliorations par rapport au Bourne Shell
+de 1977.
+
+Quelques points à noter sont :
+	* :code:`.bashrc` pour configurer vos terminaux bash
+	* les scripts :code:`.sh` (shell) sont généralement écris en bash
+	* certaines fonctionnalités du bash : [[]] (()) ... ne sont pas portables (norme POSIX).
+
+Généralement un terminal bash possède une ligne qui démarre
+comme :code:`nom_utilisateur@machine:position_actuelle$`
+donc par exemple :code:`calistro@MSI:~$`.
+
+.. toctree::
+	 :maxdepth: 1
+
+		 .bashrc              <files/bash/bashrc>
+
+2. Commandes
+===========================
+
+Si vous ne savez pas comment marche une commande, utilisez le man ! Je ne mettrais pas toutes les options
+de chaque commande.
+
+.. hint::
+
+	si je met <commande>, ça veut dire que vous devez remplacer <commande> par une commande
+	donc :code:`ls <chemin>` donnerait :code:`ls ~` par exemple. Si je met :code:`{chemin}`, cela veut dire
+	que l'argument est facultatif. Si je met un \* ou un +, la logique est la même que pour les regex (donc 0 ou plus,
+	1 ou plus).
+
+.. toctree::
+	 :maxdepth: 1
+
+			Utilitaire de survie I : man, ls, cd, cat, echo             <files/bash/comm1>
+			Utilitaire de survie II : mkdir, touch, mv, cp, rm          <files/bash/comm2>
+			Utilitaire de survie III : éditeur de texte                 <files/bash/idt>
+			Permissions : chmod et umask                                <files/bash/perms>
+			Utilisateurs : adduser, deluser, id, su, ...                <files/bash/users>
+
+3. Exercices
+===========================
+
+.. toctree::
+	 :maxdepth: 1
+
+		 Annales         <annales/index>
 
 --------
 
