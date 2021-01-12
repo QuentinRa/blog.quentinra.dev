@@ -4,8 +4,8 @@
 Langage C - avancé
 ================================
 
-| :math:`\color{grey}{Version \ 1.2.4}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 23/11/2020}`
+| :math:`\color{grey}{Version \ 1.3.5}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 12/01/2021}`
 
 .. warning::
 
@@ -137,7 +137,9 @@ avec l'option :code:`-lpthread` de gcc.
     :maxdepth: 1
 
 		Processus           <exercices/adv/proc>
+		Signaux             <exercices/adv/signaux>
 		Sémaphores          <exercices/adv/sem>
+		Annales             <annales/index>
 
 ------
 

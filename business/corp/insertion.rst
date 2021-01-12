@@ -5,7 +5,7 @@ Insertion professionnelle
 ================================
 
 | :math:`\color{grey}{Version \ 1.2.2}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 12/01/2020}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 12/01/2021}`
 
 Ce cours consiste à donner des bases
 pour se comportement professionnellement

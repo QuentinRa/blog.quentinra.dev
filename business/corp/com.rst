@@ -5,7 +5,7 @@ L'Art de la communication
 ================================
 
 | :math:`\color{grey}{Version \ 1.1.1}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 12/01/2020}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 12/01/2021}`
 
 Ce cours vise a regrouper quelques notions de communication, donc
 beaucoup de texte, mais certaines notions sont ultra utiles.

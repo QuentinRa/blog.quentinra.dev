@@ -44,6 +44,6 @@ Une fois le fichier créé, la commande make permet d'appeler une étiquette du 
 
 .. code:: bash
 
-		make #appelle but
-		make clean #appelle clean, qui supprime tous les .o et programme
+		make # appelle but
+		make clean # appelle clean, qui supprime tous les .o et programme
 		...

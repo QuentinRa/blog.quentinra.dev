@@ -19,6 +19,16 @@ Cette page contient des contrôles pour vous exercer.
 
 | :code:`[TAG] ENSIIE MTG CC1 2020 S1`
 
+2. Exercice Noté IUTSF
+------------------------------
+
+.. toctree::
+   :maxdepth: 1
+
+	Sujet du contrôle           			<i/tp1>
+
+| :code:`[TAG] ENSIIE MTG CC1 2020 S1`
+
 2. Contrôles de mi-semestre
 ============================
 

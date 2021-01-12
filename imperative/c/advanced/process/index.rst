@@ -25,12 +25,18 @@ n'importe quel fils mais 1 seul), ou wait_pid (attends un/plusieurs processus pa
 
 		//attendre un processus, status contiendra au reveil l'action qui l'a réveillé
 		//voir WIF_EXITED retourne true si exit, WEXITSTATUS retourne le code d'exit. etc...
+		// ex : if(WEXITSTATUS(status)){ ... }
+		// retourne -1 lorsque plus de fils a attendre
 		int wait(int *status) ;//retourne le processus qui l'a réveillé
 		//attends un processus, pid=0=fils, pid=-1=groupe
+		//retourne le pid du fils
 		int waitpid(int pid, int *status, int options);
 
 		// tue le processus actuel et retourne comme "code" comme code de retour
 		exit(int code);
+
+		// affiche un message d'erreur pour les appels système (fork, wait par exemple)
+		perror(char *message_supplémentaire);
 
 Exemple de code
 
@@ -41,14 +47,14 @@ Exemple de code
 		#include<unistd.h>
 
 		int main(void){
-		 if(fork() = 0){
+		 if(fork() == 0){ // on devrait vérifier le cas == -1 donc échec
 		  print("1. On est dans le fils\n");
 		 } else {
 		  wait(NULL); // on attends que le fils affiche ses messages
 		  printf("2. On est dans le père\n"); // on continue le code du père
 		 }
 		 printf("mon pid est %d\n",  getpid()); // cette ligne est affichée dans le fils et le père
-		 return 0
+		 return 0;
 		}
 
 Le résultat est
