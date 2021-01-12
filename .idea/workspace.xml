@@ -29,7 +29,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/_bash.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/_bash.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/annales/r.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/annales/p/rep/p1.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/linux/bash.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/bash.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
@@ -62,7 +62,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/linux/files/bash" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/linux/annales/c/rep" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
@@ -70,18 +70,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\system\linux\annales\c\rep" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\linux\annales\p" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\files\bash" />
       <recent name="C:\Users\quent\Documents\texas-res\business\corp\com\schema" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\files\proc" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\linux\files\enc" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\linux\files\glob" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\system\linux\annales\p\rep" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\business\corp\com" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\linux\images" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\linux\images\use" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\files\base" />
-      <recent name="C:\Users\quent\Documents\texas-res\utils" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -255,7 +255,7 @@
       <workItem from="1610015882383" duration="68000" />
       <workItem from="1610378797547" duration="19780000" />
       <workItem from="1610400836717" duration="33000" />
-      <workItem from="1610449930463" duration="20410000" />
+      <workItem from="1610449930463" duration="21080000" />
     </task>
     <servers />
   </component>

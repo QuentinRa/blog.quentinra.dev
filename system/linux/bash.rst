@@ -23,8 +23,8 @@ de 1977.
 
 Quelques points à noter sont :
 	* :code:`.bashrc` pour configurer vos terminaux bash
-	* les scripts :code:`.sh` (shell) sont généralement écris en bash
-	* certaines fonctionnalités du bash : [[]] (()) ... ne sont pas portables (norme POSIX).
+	* les scripts :code:`.sh` (shell) sont généralement écrits en bash
+	* certaines fonctionnalités du bash : [[]] (()) ... ne sont pas portables (norme POSIX) bien que très utilisés
 
 Généralement un terminal bash possède une ligne qui démarre
 comme :code:`nom_utilisateur@machine:position_actuelle$`
@@ -63,7 +63,8 @@ de chaque commande.
 .. toctree::
 	 :maxdepth: 1
 
-		 Annales         <annales/index>
+		Exercices Scripts			      <exercices/scripts>
+		Annales                     <annales/index>
 
 --------
 
