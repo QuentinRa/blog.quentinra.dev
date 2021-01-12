@@ -1,5 +1,5 @@
 =================================================
-1. Partiel 2021 Système d'exploitation
+2. Partiel 2021 Système d'exploitation
 =================================================
 
 Exercice 1 (Commandes shell, 5 points)

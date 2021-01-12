@@ -311,3 +311,6 @@ On lit dans le père, et si on écrit le nombre lu dans le pipe associé a notre
 le modulo (nombre%3). Enfin on attends maintenant 3 fils avant de quitter.
 
 On peut ajouter -1 par exemple pour quitter dans la boucle.
+
+**Crédits**
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)

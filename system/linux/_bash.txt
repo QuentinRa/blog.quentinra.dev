@@ -6,12 +6,3 @@ On accède à une variable d'environnement, comme une variable normale.
 	* :code:`${NOM}` ou :code:`$NOM` pour lire la valeur
 	* :code:`NOM=valeur` pour créer/changer la valeur
 	* :code:`export NOM=valeur` : change la valeur de cette variable partout
-
-10. Exercices
-================================
-
-.. toctree::
-    :name: exercices
-    :maxdepth: 1
-
-    Exercices Scripts			      <exercices/scripts>

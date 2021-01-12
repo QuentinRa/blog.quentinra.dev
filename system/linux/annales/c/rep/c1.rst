@@ -2,4 +2,79 @@
 1. Contrôle 2018 ASR
 ================================================
 
-...
+**Exercice 1**
+
+(a)	cp cif /
+
+Justification : L’utilisateur n’as pas de privilèges donc ne peut pas écrire à la racine.
+Réponse : Permission denied
+Aucune modification.
+
+(b)	cat cif | cp DIR/
+
+| :code:`Justification` : Option -r manquante ainsi que la destination.
+| :code:`Réponse` : option/argument missing
+| Aucune modification.
+
+(c)	less DIR/fic > log.txt && wc -l cif
+
+|
+	:code:`Justification` : On crée le fichier log.txt qui contient le résultat de less DIR/fic
+	soit "This is a great day !" et on compte le nombre de ligne de cif.
+| :code:`Réponse` : 1 (cif à une ligne)
+| Fichier log.txt créé
+
+(d)	tail cif || mv DIR/ 2> gol.txt
+
+|
+	:code:`Justification` : on affiche les 10 dernières lignes de cif. Le code de retour vaut 0 donc on
+	ne fait pas la seconde instruction.
+| :code:`Réponse` : Affiche le résultat de tail soit "This is a great day !"
+| Aucune modification.
+
+(e)	cp DIR/fic 2>> gol.txt | wc -l
+
+|
+	:code:`Justification` : il manque un argument a cp (destination) donc on écrit le message
+	(argument missing dans) gol.txt et on compte le nombre de ligne de la sortie
+	STANDARD mais on a plus le message d’erreur donc pas de ligne à lire.
+| :code:`Réponse` : 0
+| gol.txt modifié (contient "This is a great day !" et "Missing argument for cp").
+
+**Exercice 2**
+
+(a)	:code:`cat DIR/*[[ :lower :]] ?[[ :digit :]].?`
+
+| But : lire les fichier de la forme <chaine><minuscule><caractère><chiffre><point><caractère>
+| Résultat : erreur fichier/dossier n’existe pas (DIR/\*[[ :lower:]] ?[[:digit:]].? n’existe pas)
+
+(b)	:code:`mv   ?*5   ../5?[[ :upper :]]*    /DIR`
+
+| But : déplacer les fichiers/dossiers de la forme <caractère><chaine>5 du dossier courant et ceux de la forme 5<caractère><majuscule><chaine> dans la racine.
+| Résultat : la fonction mv échoue dès le départ car on ne peut pas lire à la racine.
+
+**Exercice 3**
+
+.. math::
+
+	6072/15 = 404 (400*15=6000+4*15=60)\ reste\ 12 \\
+	404/15 = 26 (15*20=300+15*6=90)\ reste\ 14 \\
+	26/15 = 1 (15*1=15)\ reste\ 11 \\
+	11/15 = 0\ reste\ 11 \\
+	(BBEC)_{15} \\
+
+**Exercice 4**
+
+Un nombre en base 16 = 4 en base 2 : :math:`(111\ 0010\ 0111)_2` , il nous manque un 4e
+chiffre pour le 1er bloc, on le rajoute (devant) :math:`(0111\ 0010\ 0111)_2` puis on convertit :
+:math:`(7\ 2\ 7)_{16}`.
+
+Un nombre en base 8 = 3 nombre en base 2 et 4 nombres en base 2 = 1 nombre en base 16.
+:math:`026376` (on sait qu’il est en base 8 car il commence par 0) donne en base 2 :
+:math:`(2\ 6\ 3\ 7\ 6)_8 = (010\ 110\ 011\ 111\ 110)_2`
+puis on forme des groupes de 4 :math:`(010\ 1100\ 1111\ 1110)_2` et on complète
+avec un 0 au début :math:`(0010\ 1100\ 1111\ 1110)_2` et on convertit en base 16 :
+:math:`(2\ C\ F\ E)_{16}`.
+
+**Crédits**
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)

@@ -26,7 +26,7 @@ aucune
 3. Partiels
 ============================
 
-1. Partiel 2021 Système d'exploitation
+1. Partiel 2018 ASR
 ----------------------------------------
 
 .. toctree::
@@ -35,7 +35,18 @@ aucune
 	Sujet du contrôle           			<p/partiel1>
 	Proposition de correction n°1			<p/rep/p1>
 
-| :code:`[TAG] ENSIIE OS P1 2021 S1`
+| :code:`[TAG] IUTSF ASR PARTIEL 2018 S1`
+
+2. Partiel 2021 Système d'exploitation
+----------------------------------------
+
+.. toctree::
+   :maxdepth: 1
+
+	Sujet du contrôle           			<p/partiel2>
+	Proposition de correction n°1			<p/rep/p2>
+
+| :code:`[TAG] ENSIIE OS PARTIEL 2021 S1`
 
 ------
 
