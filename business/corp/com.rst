@@ -4,8 +4,8 @@
 L'Art de la communication
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.0}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 19/12/2020}`
+| :math:`\color{grey}{Version \ 1.1.1}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 12/01/2020}`
 
 Ce cours vise a regrouper quelques notions de communication, donc
 beaucoup de texte, mais certaines notions sont ultra utiles.
@@ -89,7 +89,37 @@ Spécial
 		* mauvais emplois de vocabulaire
 		* phrases ambigus
 
-4. Exercices
+4. Schéma de la communication
+================================
+
+Un schéma de la communication a été établi par des chercheurs
+en prenant en compte les comportement observés tels que le "feedback" ou encore
+la notion de bruit.
+
+Cette partie vise à aider a comprendre les différents éléments qui constituent un message
+en le décryptant avec le schéma et d'analyser par exemple tous les petits détails non-verbaux
+que vous pourriez utiliser pour communiquer.
+
+.. image:: /assets/business/corp/com/schema_com.png
+
+.. toctree::
+	 :maxdepth: 1
+
+		Étapes de la communication      <com/schema/steps>
+		Analyse des composants          <com/schema/analyse>
+		Fonctions du langage            <com/schema/fonctions>
+
+Le mode d'emploi pour analyser est le suivant
+
+	* déterminer le contexte : ou, quand, à partir de quoi
+	* déterminer les émetteurs
+	* déterminer les destinataires
+	* déterminer des références (culturelles, télévisuelles, etc.)
+	* déterminer les canaux
+	* déterminer le code
+	* déterminer les fonctions du langage et celle qui est dominante
+
+5. Exercices
 ===========================
 
 .. toctree::
