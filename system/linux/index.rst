@@ -160,7 +160,10 @@ serait
 8. Exercices
 ======================
 
-aucun
+.. toctree::
+	 :maxdepth: 1
+
+		Annales                     <annales/index>
 
 -----
 

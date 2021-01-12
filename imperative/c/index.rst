@@ -293,12 +293,13 @@ Il est recommandé de suivre l'ordre des exercices.
 		 Annales                            <annales/index>
 
 Resources associées au cours
+=======================================
 
 .. toctree::
-    :maxdepth: 2
+  :maxdepth: 2
 
-	Langage C - initiation <initiation>
-	Langage C - avancé <advanced>
+		Langage C - initiation <initiation>
+		Langage C - avancé     <advanced>
 
 ------
 

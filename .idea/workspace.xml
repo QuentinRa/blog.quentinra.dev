@@ -29,6 +29,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/exercice.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/exercice.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/advanced.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/advanced.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/c/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/index.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +64,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/linux/annales/c/rep" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/imperative/c/exercices/adv" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
@@ -68,11 +72,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\adv" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\annales\c\rep" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\annales\p" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\files\bash" />
       <recent name="C:\Users\quent\Documents\texas-res\business\corp\com\schema" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\linux\files\proc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\annales\p\rep" />
@@ -253,7 +257,7 @@
       <workItem from="1610015882383" duration="68000" />
       <workItem from="1610378797547" duration="19780000" />
       <workItem from="1610400836717" duration="33000" />
-      <workItem from="1610449930463" duration="24419000" />
+      <workItem from="1610449930463" duration="27064000" />
     </task>
     <servers />
   </component>
@@ -388,10 +392,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="376" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1603556286896" />
-    <state x="480" y="163" width="575" height="534" key="find.popup" timestamp="1610400332783">
+    <state x="480" y="163" width="575" height="534" key="find.popup" timestamp="1610483584732">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="480" y="163" width="575" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1610400332783" />
+    <state x="480" y="163" width="575" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1610483584732" />
     <state x="684" y="302" width="609" height="280" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1608394586647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

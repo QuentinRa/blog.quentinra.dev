@@ -136,6 +136,9 @@ avec l'option :code:`-lpthread` de gcc.
     :name: exercices
     :maxdepth: 1
 
+		Processus           <exercices/adv/proc>
+		Sémaphores          <exercices/adv/sem>
+
 ------
 
 **Crédits**

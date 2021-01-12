@@ -1,21 +1,16 @@
 ================================
-TITRE
+Sémaphores
 ================================
 
 Niveau débutant
 ***********************
 
-1. Exercice
+1.
 ------------------------
 
-.. toctree::
-   :maxdepth: 1
+...
 
-	Proposition de correction n°1			<path>
-
-| :code:`[TAG] TPX YEAR SCHOOL`
-| :code:`[TAG] ENSIIE IBD TP1 2020 S1`
-| :code:`[TAG] `
+| :code:`[TAG] IUTSF ASR TP4 2019 S3`
 
 Niveau supérieur
 ***********************
@@ -27,7 +22,9 @@ Niveau avancé
 
 aucun
 
+|
+
 -----
 
 **Crédits**
-	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
+	* Pierre VALARCHER (enseignant à l'IUT de Sénart-Fontainebleau)
