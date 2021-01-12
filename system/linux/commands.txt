@@ -1,0 +1,7 @@
+>>
+printenv $HOME
+printenv $PATH
+uname : info type (linux), noyau etc.
+id
+whoami
+which display

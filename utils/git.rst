@@ -4,7 +4,7 @@
 Git
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.1}`
+| :math:`\color{grey}{Version \ 1.0.2}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 11/01/2021}`
 
 Git est un gestionnaire de version de votre code. Il vous permet de créer des sauvegardes
@@ -72,8 +72,8 @@ alors vous avez un tuto ici : https://docs.github.com/en/free-pro-team@latest/gi
 :code:`git checkout <nom>`
 	Vous déplacer sur une autre branche (attention, les modifications locales sont perdues)
 
-:code:`git merge <nom>`
-	Fusionne votre branche actuelle et une branche <nom>. Si des fichiers ont étés modifiés dans les deux branches,
+:code:`git merge`
+	Fusionne votre branche actuelle avec master. Si des fichiers ont étés modifiés dans les deux branches,
 	alors vous devrez manuellement choisir quoi garder (vous allez voir des fichiers bizarres ============>...
 	et faudra supprimer le code non voulu : c'est relou).
 

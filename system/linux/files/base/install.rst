@@ -12,7 +12,7 @@ Pour les versions de Linux, mon avis est :
 
 Pour installer linux, téléchargez l'ISO, gravez le sur une clef et utilisez le menu d'installation.
 Vous pouvez vous aider de la documentation officielle, j'ai fait un petit guide ici
-:download:`installer Linux <../../../assets/system/linux/linux-setup.pdf>` (mais je ne le recommande pas sauf
+:download:`installer Linux <../../../../assets/system/linux/linux-setup.pdf>` (mais je ne le recommande pas sauf
 pour les explications).
 
 DualBoot
