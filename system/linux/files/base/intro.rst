@@ -17,6 +17,7 @@ généralement utilisé pour
 
 Vous pouvez tout faire sans utiliser la souris, juste avec un terminal. Les commandes "basiques" sont
 
+	* :code:`man` : voir le manuel d'utilisation d'une commande
 	* :code:`cd` : se déplacer dans un dossier
 	* :code:`ls` : voir le contenu d'un dossier
 	* :code:`cat` : voir le contenu d'un fichier
@@ -55,6 +56,10 @@ Une commande est toujours de la forme :code:`commande -option argument`.
 
 Note
 
+	* les options et les arguments sont facultatifs, leur nombre est variable et l'ordre ne compte généralement pas
+	* certaines options doivent être suivies d'un argument juste après
+	* vous pouvez avoir des arguments sans options
+	* vous pouvez certaines fois fusionner des options (voir exemple juste après)
 	* option -h ou -help ou --help existe généralement et donne de l'aide sur une commande
 	* man nom_commande : donne des infos sur une commande
 

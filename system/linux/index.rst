@@ -61,6 +61,7 @@ le chemin vers la location d'un dossier/fichier.
 
 		Comprendre la notion de chemin  <files/perms/path>
 		Gestion des permissions         <files/perms/gestion>
+		Variables d'environnement       <files/perms/env>
 
 4. Motifs (glob pattern) et Manipulations de textes
 ========================================================
@@ -98,6 +99,65 @@ Big Endian et Little Endian (bits poids fort/faible) sont expliqués dans la pre
 		Manipulation des entiers              <files/enc/use>
 		Encodage des flottants                <files/enc/float>
 
+6. Processus et Signaux
+================================
+
+Un processus est une sorte de boite crée lorsque vous exécutez une commande.
+
+Il contient entre autres
+
+	* code (à exécuter)
+	* l'environnement d'exécution : nom du programme, fichiers ouverts, droits, ...
+	* des données (pile, tas, variables)
+
+Chaque processus a un identifiant unique, appelé PID.
+
+.. toctree::
+	 :maxdepth: 1
+
+		Hiérarchie                        <files/proc/born>
+		Ordonnancement                    <files/proc/ordo>
+		Signaux                           <files/proc/signaux>
+		Session et terminaux              <files/proc/session>
+		Session et premier/arrière plan   <files/proc/plan>
+
+7. Scripts
+===================================
+
+Les scripts sont des fichiers qui contiennent des commandes, on peut voir ça comme un programme
+qui une fois lancé va exécuter des instructions.
+
+Un script peut contenir des fonctions (des bouts de code répétitif qui ont été factorisés
+pour éviter de recopier du code). On appelle ces fonctions des :code:`buildin`.
+
+.. note::
+
+	On appelle une :code:`buildin` de la même façon que l'on appelle une commande, soit
+	:code:`buildin [[-option] [argument]]`.
+
+Les scripts demande la permission :code:`x` pour être exécutés, ou vous pouvez appeler
+un langage en lui donnant un entrée le script : :code:`$ bash < script.sh` avec :code:`bash` ici
+le langage dans lequel exécuter le script.
+
+La première ligne d'un script défini le langage du script, pour un script bash, la première ligne
+serait
+
+.. code::
+
+	#!/bin/bash
+	#
+	# usage: utilisation du script
+	#
+	# détails
+	#
+	# ...
+
+	ici votre code
+
+8. Exercices
+======================
+
+aucun
 
 -----
 
@@ -122,3 +182,4 @@ Big Endian et Little Endian (bits poids fort/faible) sont expliqués dans la pre
 	* https://systemd.io/
 	* https://www.computerhope.com/unix/signals.htm
 	* https://www.linuxtricks.fr/wiki/signaux-unix-unix-signals
+	* https://gchq.github.io/CyberChef/
