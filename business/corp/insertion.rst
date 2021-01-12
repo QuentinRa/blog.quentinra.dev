@@ -4,8 +4,8 @@
 Insertion professionnelle
 ================================
 
-| :math:`\color{grey}{Version \ 1.1.1}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 07/12/2020}`
+| :math:`\color{grey}{Version \ 1.2.2}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 12/01/2020}`
 
 Ce cours consiste à donner des bases
 pour se comportement professionnellement
@@ -63,6 +63,40 @@ Il faut au mieux se mettre à la place de votre auditoire
 
 	 Rédiger un rapport          <docs/rapport>
 	 Concevoir un diaporama      <docs/diaporama>
+
+4. Site web professionnel
+=============================
+
+Quelques points en vrac
+
+	* l'orthographe, ponctuation, syntaxe et vocabulaire
+	* le professionnalisme et la clarté
+	* informations pertinentes
+
+		* on doit savoir facilement qui vous êtes, comment vous contacter
+		* mentions légales (obligatoire)
+
+	* page d'accueil (+carrousel)
+	* navigation fluide (mettre en avant la page actuelle ou fil d'Ariane)
+	* couleurs (fond d'écran correct, équilibre texte-images) et choix typographiques (gras notamment)
+	* par exemple une catégorie "mes réalisations" avec les petits projets et/ou une catégorie "projets"
+	* faire une bonne IHM (voir cours associé)
+
+Quelques conseils
+
+	* Vraiment mettre en gras pour ceux qui lisent entre les lignes !
+	* choisir des couleurs sobres/qui font pas mal aux yeux le soir ou illisible le jour (mode jour/nuit ?)
+	*
+		donner un lien vers un git pour voir votre code mais rappeler le thème du projet. Par exemple vous pouvez
+		présenter le projet d'un point de vue utilisateur puis d'un point de vue programmeur (outils, difficultés,
+		vos prouesses de programmation etc.)
+	* Ne pas oublier les mentions légales (hébergeur, créateur, ...) + crédits (s'il y en a) ainsi que votre politique sur les données personnelles
+	* pensez a tester le côté "responsive" de votre site, au moins pour tablette, téléphone et PC.
+	* ajouter un captcha dans le formulaire de contact
+	* vous pouvez mettre sur la page d'accueil une bannière pour indiquer si vous cherchez un stage/...
+	* utilisez bootstrap + un framework c'est smart
+	* pour ceux qui n'aiment pas coder en html, PHP etc. vous pouvez toujours utiliser des alternatives comme
+	* préciser les langage, les méthodes, les outils, etc.
 
 -----
 

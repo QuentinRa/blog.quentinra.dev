@@ -29,11 +29,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/_linux.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/commands.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/files/base/intro.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/base/intro.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/files/enc/float.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/enc/float.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/corp/insertion.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/insertion.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/linux/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/index.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
@@ -259,7 +255,7 @@
       <workItem from="1610015882383" duration="68000" />
       <workItem from="1610378797547" duration="19780000" />
       <workItem from="1610400836717" duration="33000" />
-      <workItem from="1610449930463" duration="11655000" />
+      <workItem from="1610449930463" duration="13597000" />
     </task>
     <servers />
   </component>

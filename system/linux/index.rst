@@ -4,6 +4,9 @@
 Architecture Linux
 ================================
 
+| :math:`\color{grey}{Version \ 2.1.3}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 12/01/2020}`
+
 Ce cours est une approche principalement théorique de linux, vous y trouverez notamment
 des explications sur
 
