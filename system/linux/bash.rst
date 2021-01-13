@@ -98,7 +98,7 @@ tapez la dans un terminal puis regarder le code de retour.
 		 Structure basique et déclarations   <files/scripts/base>
 		 Branchements                        <files/scripts/if>
 		 Boucles et lecture à la console     <files/scripts/boucles>
-		 Arguments                           <files/scripts/args>
+		 Arguments à la ligne de commande    <files/scripts/args>
 		 Fonctions (builtin)                 <files/scripts/functions>
 
 5. Exercices

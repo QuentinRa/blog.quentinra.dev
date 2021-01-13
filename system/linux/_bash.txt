@@ -15,6 +15,11 @@ ldap
 ftp
 ln -s [chemin_raccourcis] chemin nom
 
+-----------
+
+# affichage
+printf "format" arguments
+
 Multiplicateurs de terminaux :
 ----------------------------------------
 

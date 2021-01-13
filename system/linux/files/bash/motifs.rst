@@ -4,7 +4,7 @@ Motifs : grep, sed, awk
 
 Commande :code:`grep` : sélectionne la partie d'un fichier qui match avec la regex
 	Rappel les regex sont .,  (a|b) : soit a soit b , ^ : début , $: fin
-  et +  : au moins un fois ce qui le précède,  *  : 0 ou plus ce qui le précède.
+	et \+ : au moins un fois ce qui le précède, \*  : 0 ou plus ce qui le précède.
 
 	| :code:`--color` : si grep affiche tout, alors le match sera mis en couleur
 	| :code:`-E` : les regex sont automatiquement échappé sinon vous devez faire \( pour dire que ( n'est pas le caractère (.
