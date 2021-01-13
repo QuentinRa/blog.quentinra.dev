@@ -1,5 +1,5 @@
 ==============================================
-Introduction
+Introduction et utilisation générale
 ==============================================
 
 Niveau débutant
@@ -121,6 +121,84 @@ Commandes utiles : cd, echo, printenv, chmod
 		Proposition de correction n°1			<begin/d3>
 
 | :code:`[TAG] IUTSF ASR TP1 2018 S1`
+
+4. Code de retour et redirections
+---------------------------------------
+
+Créer des fichiers fi et fifi. Les fichiers nofi et nofifi n'existent pas.
+
+1. Expliquer les commandes suivantes
+
+.. code:: bash
+
+		$ echo Hello world!
+		$ echo $?
+		$ ls fi
+		$ echo $?
+		$ ls -l fi
+		$ echo $?
+		$ ls nofi
+		$ echo $?
+
+2. Même chose.
+
+.. code:: bash
+
+	$ echo Hello world1! | echo Hello world2!
+	$ echo Hello world2! | echo Hello world1!
+
+3. Même chose.
+
+.. code:: bash
+
+	$ ls fi ; echo $?
+	$ ls nofi ; echo $?
+	$ ls fi && echo Hello world! ; echo $?
+	$ ls nofi && echo Hello world! ; echo $?
+	$ ls fi || echo Hello world! ; echo $?
+	$ ls nofi || echo Hello world! ; echo $?
+	$ ls nofi || ls fi ; echo $?
+	$ ls fi || ls nofi ; echo $?
+	$ ls nofi && ls fi ; echo $?
+
+4. Même chose
+
+.. code:: bash
+
+	$ ls nofi fi
+	$ ls nofi fi > output
+	$ cat output
+	$ ls nofi fifi > output
+	$ cat output
+	$ ls nofi fi >> output
+	$ ls nofi fi 2> error
+	$ cat error
+	$ ls fi nofifi 2> error
+	$ cat error
+	$ ls nofi fi 2>> error
+	$ ls nofi fi > output 2> error
+	$ cat output
+	$ cat error
+	$ ls nofi fi > both 2>&1
+	$ cat both
+
+5. Même chose
+
+.. code:: bash
+
+		$ wc both
+		$ wc < both
+		$ ls -l /etc/ > output
+		$ cat output
+		$ wc < ouput
+		$ ls -l /etc/ | wc
+
+.. toctree::
+   :maxdepth: 1
+
+		Proposition de correction n°1			<begin/d4>
+
+| :code:`[TAG] IUTSF ASR TP5 2018 S1`
 
 -----
 

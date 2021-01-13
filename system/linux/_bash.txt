@@ -25,3 +25,7 @@ sort
 sort -t -k1.0,1.4 (trie du char 0 à 3 de la colonne 1)
 
 exécute comme puis la remplace par le résultat ``
+
+nl -b a
+
+shopt

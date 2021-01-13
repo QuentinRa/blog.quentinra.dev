@@ -1,0 +1,113 @@
+================================
+1. Mes premiers motifs
+================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+Mon petit rappel de cours.
+
+On note que le patterns sont :
+
+	*	* qui signifie une chaine de caractères qui peut être une chaine d'espaces (=vide).
+	*	? signifie exactement un caractère.
+	*	[] signifie exactement un caractère parmi ceux entre-crochets.
+	*	[!] ou [^] signifie exactement un caractère parmi ceux qui ne sont pas entre-crochets.
+	*	On peut écrire un intervalle dans les crochets avec - (tiret).
+
+On peut écrire [a-z] pour un mot qui contient une lettre entre a et z.
+
+Si on écrit ls /etc/\*[a-z] on recherche les fichiers qui commencent par soit des caractères (c87fjg)
+soit un chaine d'espace ('rien') et qui finissent par un lettre entre a et z du type :
+
+	*	a : ici la chaine de caractères est vide
+	* jesuisz	: ici la chaine de caractères est jesuis
+	* j4fmUigOo  : ici la chaine de caractères est j4fmUigO
+	* z : ici la chaine de caractères est vide
+
+Les raccourcis pour dire :
+
+	*	[a-z] est [[:lower:]]
+	*	[A-Z] est [[:upper:]]
+	*	[0-9] est [[:digit:]]
+	*	[   ] est [[:space:]]
+
+.. code:: bash
+
+	# La commande tar permet de créer et d'extraire une archive.
+	# L'option x permet de désarchiver.
+	# L'option v demande à ce que tout ce qui soit fait nous soit montré.
+	# L'option f permet de placer un nom de fichier après l'option.
+
+	$ tar xvf globpattern.tar
+	GLOB/
+	GLOB/1glob22gloB333
+	GLOB/gLob/
+	GLOB/gLob/pAtterN
+	GLOB/gLob/44patterN
+	GLOB/gLob/patterN
+	GLOB/gLob/paTTerN/
+	GLOB/gLob/paTTerN/theglobpattern
+	GLOB/gLob/Pattern4
+	GLOB/1glob
+	GLOB/11glob22blog3
+	GLOB/1glob22
+	GLOB/pattern/
+	GLOB/gloB1bloG
+
+	# On note bien que l'option v est celle qui nous a permis de voir tous les fichiers qui ont étés extraits.
+
+	#	Voici l'arborescence obtenue :
+	GLOB
+	 -11glob22blog3
+	  -1glob
+		-1glob22
+		-1glob22gloB333
+		-gLob
+		 -44patterN
+		 -patterN
+		 -paTTerN
+		  -theglobpattern
+		 -pAtterN
+		 -Pattern4
+	 -gloB1bloG
+	 -pattern
+
+	# On veut maintenant la liste des noms de fichiers/répertoire ...
+
+	# 1) ... de GLOB/gLob/ qui se terminent par une majuscule.
+	$ ls -ld GLOB/gLob/*[[:upper:]]
+	GLOB/gLob/44patterN
+	GLOB/gLob/patterN
+	GLOB/gLob/paTTerN
+	GLOB/gLob/pAtterN
+	# On vérifie dans notre arborescence et effectivement le résultat est correct.
+	# On note qu'on pouvait écrire également ls -ld GLOB/gLob/*[A-Z]
+
+	# 2) ... de GLOB/ qui contiennent au moins une majuscule.
+	$ ls -ld GLOB/*[[:upper:]]*
+	GLOB/1glob22gloB333
+	GLOB/gLob
+	GLOB/gloB1bloG
+	# On vérifie dans notre arboresence et effectivement le résultat est correct.
+	# On note qu'on pouvait écrire également ls -ld GLOB/*[A-Z]*
+
+	# 3) ... de GLOB/ et de GLOB/gLob/ dont le deuxi`eme caract`ere est un chiffre.
+	$ ls -ld GLOB/?[[:digit:]]* GLOB/gLob/?[[:digit:]]*
+	GLOB/11glob22blog3
+	GLOB/gLob/44patterN
+	# On vérifie dans notre arboresence et effectivement le résultat est correct.
+	# On note qu'on pouvait écrire également ls -ld GLOB/?[0-9]* GLOB/gLob/?[0-9]*
+
+	# 4) ... de GLOB/ qui contiennent au moins un nombre d’au moins 2 chiffres.
+	$ ls -ld GLOB/*[[:digit:]][[:digit:]]*
+	GLOB/11glob22blog3
+	GLOB/1glob22
+	GLOB/1glob22gloB333
+	# On vérifie dans notre arboresence et effectivement le résultat est correct.
+	# On note qu'on pouvait écrire également ls -ld GLOB/*[0-9][0-9]*
+
+...
+
+**Crédits**
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)

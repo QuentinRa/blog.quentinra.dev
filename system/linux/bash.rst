@@ -71,9 +71,9 @@ de chaque commande.
 .. toctree::
 	 :maxdepth: 1
 
-		Introduction      			                <exercices/begin>
+		Introduction et utilisation générale    <exercices/begin>
 		Utilisateurs et Permissions        			<exercices/perms>
-		Motifs  (sed)      			                <exercices/motifs>
+		Motifs  (sed, ...) 			                <exercices/motifs>
 		Expression régulières  (grep)           <exercices/er>
 		Processus          			                <exercices/proc>
 		Recherche          			                <exercices/find>

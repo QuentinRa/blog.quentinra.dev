@@ -29,7 +29,11 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/_bash.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/_bash.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/linux/bash.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/bash.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/commands.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/begin.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/exercices/begin.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/motifs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/exercices/motifs.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +65,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/linux/exercices/perms" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/system/linux/exercices" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
@@ -69,11 +73,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\system\linux\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices\perms" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\adv" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\annales\c\rep" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\linux\annales\p" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\annales\p\rep" />
@@ -256,7 +260,7 @@
       <workItem from="1610400836717" duration="33000" />
       <workItem from="1610449930463" duration="29557000" />
       <workItem from="1610497254555" duration="3467000" />
-      <workItem from="1610536100782" duration="2803000" />
+      <workItem from="1610536100782" duration="6189000" />
     </task>
     <servers />
   </component>
