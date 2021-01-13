@@ -1,0 +1,211 @@
+========================================================
+1. Création d'utilisateur et permissions
+========================================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+| Le répertoire /etc/group contient les informations sur les groupes.
+| Le répertoire /etc/gshadow contient les informations sécurisées sur les groupes.
+| Le répertoire /etc/login.defs contient la configuration de la suite des mots de passe cachés "shadow password".
+
+.. code:: bash
+
+		$ cat /etc/group
+		[...]
+		# reija appartient indentifiant du groupe 1000 et à un mot de passe x les dernier :
+		# auraient étés suivis des éventuelles utilisateurs du dit groupe
+		reija:x:1000:[...]
+		[...]
+
+		# La commande groupadd permet d'ajouter un groupe d'utilisateurs.
+		$ groupadd grp1
+		$ groupadd grp2
+		$ cat /etc/group
+		[...]
+		grp1:x:1001:
+		grp2:x:1002:
+		[...]
+
+		# La commande useradd permet d'ajouter un utilisateur.
+		# L'option -d permet de spécifier le répertoire dans lequel on met le répertoire domicile.
+		# L'option -m permet de créer le répertoire domicile lors de la création de l'utilisateur.
+		# L'option -g permet de spécifier le groupe primaire de l'utilisateur à créer.
+		# -p définir le mot de passe.
+		$ useradd east -b /home -m -g grp1
+		$ cat /etc/passwd
+		east:x:1001:1001::/home/east:/bin/sh
+		$ useradd west -b /home -m -g grp1
+		$ cat /etc/passwd
+		west:x:1002:1001::/home/west:/bin/sh
+		$ useradd north -b /home -m -g grp2
+		$ cat /etc/passwd
+		north:x:1003:1002::/home/north:/bin/sh
+		$ useradd south -b /home -m -g grp2
+		$ cat /etc/passwd
+		south:x:1004:1002::/home/south:/bin/sh
+
+		# nom_utilisateur:x:n°:groupe_primaire:_:domicile:type_de_shell
+		/home$ la
+		drwxr-xr-x  2 east  grp1  4096 oct.  27 20:13 east
+		drwxr-xr-x  2 north grp2  4096 oct.  27 20:20 north
+		drwxr-xr-x 20 reija reija 4096 oct.  27 20:05 reija
+		drwxr-xr-x  2 south grp2  4096 oct.  27 20:21 south
+		drwxr-xr-x  2 west  grp1  4096 oct.  27 20:19 west
+
+		# La commande passwd permet de définir ou redéfinir le mot de passe d'un utilisateur.
+		# la saisie ne s'affiche pas à l'écran
+		$ passwd east
+		east
+		$ passwd west
+		west
+		$ passwd north
+		north
+		$ passwd south
+		south
+
+		# La commande exit/logout permet de quitter la session courante.
+		exit
+		# On se connect en tant que east
+		$ su east
+		# passwword : east
+
+	 	On regarde les infos sur les utilisateurs (id) :
+
+		$ id east
+		uid=1001(east) gid=1001(grp1) groupes=1001(grp1)
+		$ id west
+		uid=1002(west) gid=1001(grp1) groupes=1001(grp1)
+		$ id north
+		uid=1003(north) gid=1002(grp2) groupes=1002(grp2)
+		$ id south
+		uid=1004(south) gid=1002(grp2) groupes=1002(grp2)
+
+
+		# Les permissions possibles sont (r) pour lire (w) pour modifier et (x) pour exécuter,
+		# - indique pas de permission. Je fais un ls pour voir les permissions.
+		$ touch fi-east
+		-rw-r--r-- 1 east grp1    0 oct.  27 21:05 fi-east
+		# - pour fichier, east possède rw, groupe 1 r et les autres r sur fi-east
+
+		$ mkdir -p dir-east/sub-dir-east
+		drwxr-xr-x 3 east grp1 4096 oct.  27 21:05 dir-east
+		# d pour dossier, east possède rwx, groupe1 rx et les autres rx sur dir-east
+		drwxr-xr-x 2 east grp1 4096 oct.  27 21:05 sub-dir-east
+		#	d pour dossier, east possède rwx, groupe1 rx et les autres rx sur dir-east
+		# On note que u, g et o possèdent le droit x sur le dossier précédent aussi ils peuvent accéder à celui-ci.
+
+
+		$ touch dir-east/sub-dir-east/fifi-east
+		-rw-r--r-- 1 east grp1    0 oct.  27 21:05 fifi-east
+		# - pour fichier, east possède rw, groupe 1 r et les autres r sur fi-east
+		# On note que u, g et o possèdent le droit x sur les deux dossiers précédents aussi ils peuvent
+		# accéder à celui-ci.
+
+		#	On peut avoir que personne ne peut exécuter ni fi-east ni fifi-east et que seulement east peut modifier
+		# les fichiers ou les renommer ce que même west qui est dans son groupe ne peut faire.
+
+		# On note que pour accéder à un dossier les utilisateurs doivent posséder la permission x ainsi pour
+		# accéder à un dossier du répertoire domicile de east, les utilisateurs doivent posséder la permission x
+		# sur tous les dossier antérieur.
+		drwxr-xr-x  3 east  grp1  4096 oct.  27 21:05 east
+		# Ainsi les utilisateurs peuvent tous traverser east : u=rwx, g=rx et o=rx
+		# La complétion sur le nom des fichiers se fait. On note que ce n'est pas toujours le cas et auquel
+		# cas chaque utilisateur doit utiliser chmod pour permettre aux autres utilisateurs d'accéder à sa session.
+
+
+		# umask affiche les permissions manquantes pour un utilisateur lors de la création d'un fichier
+		$ umask
+		0022
+		#	On ne compte pas le 1er zéro ce qui donne 022 : lors de la création d'un fichier/dossier,
+		# sur ce même fichier l'utilisateur possède rwx (4+2+1 donc 0 en manquantes), ceux de son groupe possèdent
+		# rx (4+0+1 donc 2 manquant soit w) et enfin other (les autres) possèdent également rx
+		# (4+0+1 donc 2 manquant soit w).
+		$ umask -S
+		u=rwx,g=rx,o=rx
+		#	Affiche directement les permission.
+
+		# umask -S <permissions> permet de modifier directement ces permissions
+		umask -S u=rwx,g=rx,o=x retire le droit de lire pour les autres que east et son groupe.
+
+		# Aucun changement n'as encore eu lieu, les modification seront effective pour tout dossier/fichier
+		# nouvellement crée.
+
+		# On vérifie si les modification subsistent après modification
+		$ exit
+		$ su east
+		$ umask
+		$ 0022
+
+		# sachant que o ne possède que x soit 1 il lui manque donc 6 donc si les modification avaient étés
+		# gardés alors on aurait 0026
+		$ umask -S
+		u=rwx,g=rx,o=rx
+
+		# Un fichier /etc/login.defs permet de configurer les options de login. Il va donc falloir
+		# le modifier pour pouvoir rendre umask permanente.
+		# On l'ouvre avec un éditeur de texte.
+		$	vim /etc/login.defs
+		#	On recherche umask (find de la barre de recherche sur vim).
+		#	On peut noter que chaque paramètre de configuration est entièrement commenté (#).
+
+		#	Login configuration initializations:
+		#[...]
+		#	UMASK		Default "umask" value.
+		#[...]
+		UMASK	022
+		# On modifie la valeur de umask par 026
+
+		$ exit
+		$ su east
+		$ umask
+		0026
+		# La modification est maintenant effective après déconnexion.
+
+		# Umask affiche le permissions accordés à chaque utilisateur à chaque création de dossier/fichier or
+		# les dossier/fichiers crées en II-5 on étés crées selon l'ancienne valeur de umask et ne sont donc
+		# pas affectés par le changement. On utilise chmod qui permet de modifier les permissions sur un
+		# fichier/dossier pour les fichiers/dossiers concernés.
+		# On rappelle que les permissions précédentes étaient u=rwx g=rx et o=rx et
+		# on veut maintenant u=rwx g=rx o=x
+		$ chmod o-r fi-east # ou chmod 751 fi-east
+		$ chmod o-r dir-east/ # ou chmod 751 dir-east/
+		$ chmod o-r dir-east/sub-dir-east/ # ou chmod 751 dir-east/sub-dir-east/
+		$ chmod o-r dir-east/sub-dir-east/fifi-east # ou chmod 751 dir-east/sub-dir-east/fifi-east
+
+		# Autres
+		# 1) east à oublié son mot de passe et n'est plus présent sur le site.
+		$ passwd -d east
+		# 2) south veut que son shell de login soit sh
+		$ vim /etc/passwd
+		[...]
+		south:x:1004:1002::/home/south:/bin/sh
+		[...]
+		# On remplace sauvegarde et quitte.
+		# 3) north veut que son shell de login soit tcsh
+		$ vim /etc/passwd
+		[...]
+		north:x:1003:1002::/home/north:/bin/tcsh
+		[...]
+		# On remplace sauvegarde et quitte.
+		# 4) Changer le groupe primaire de west sans changer l'utilisateur.
+		# probablement en modifiant /etc/group
+		$ id west
+		uid=1002(west) gid=1002(grp2) groupes=1002(grp2)
+		#	On note bien la différence par rapoport à avant :
+		$ id west
+		uid=1002(west) gid=1001(grp1) groupes=1001(grp1)
+		# Bien que ls /home/
+		drwxr-xr-x  2 west  grp1  4096 oct.  27 20:19 west
+		# Affiche toujours west dans le groupe1.
+
+		# On nettoie tout ça
+		$ sudo deluser east
+		$ sudo deluser west
+		$ sudo deluser north
+		$ sudo deluser south
+		$ sudo delgroup grp1
+		$ sudo delgroup grp2
+
+**Crédits**
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)

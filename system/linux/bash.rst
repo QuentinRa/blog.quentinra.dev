@@ -4,6 +4,9 @@
 Bash et Scripts bash
 ================================
 
+| :math:`\color{grey}{Version \ 2.3.14}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 12/01/2021}`
+
 :code:`prérequis` (cours :ref:`linux`) avoir une idée des thèmes suivants
 
 	* bases de linux (introduction)
@@ -69,6 +72,7 @@ de chaque commande.
 	 :maxdepth: 1
 
 		Introduction      			                <exercices/begin>
+		Utilisateurs et Permissions        			<exercices/perms>
 		Motifs  (sed)      			                <exercices/motifs>
 		Expression régulières  (grep)           <exercices/er>
 		Processus          			                <exercices/proc>
