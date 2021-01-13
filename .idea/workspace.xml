@@ -29,7 +29,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/exercices/find.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/exercices/find.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/bash.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/bash.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/er.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/motifs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/exercices/motifs.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,10 +72,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\linux\exercices" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices\motifs" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices\perms" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c\exercices\adv" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\linux\annales\c\rep" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\annales\p\rep" />
@@ -256,7 +258,7 @@
       <workItem from="1610400836717" duration="33000" />
       <workItem from="1610449930463" duration="29557000" />
       <workItem from="1610497254555" duration="3467000" />
-      <workItem from="1610536100782" duration="9459000" />
+      <workItem from="1610536100782" duration="10805000" />
     </task>
     <servers />
   </component>

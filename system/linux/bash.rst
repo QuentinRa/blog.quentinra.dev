@@ -73,8 +73,7 @@ de chaque commande.
 
 		Introduction et utilisation générale    <exercices/begin>
 		Utilisateurs et Permissions        			<exercices/perms>
-		Motifs  (sed, ...) 			                <exercices/motifs>
-		Expression régulières  (grep)           <exercices/er>
+		Motifs et expression régulières 			  <exercices/motifs>
 		Processus          			                <exercices/proc>
 		Recherche          			                <exercices/find>
 		Scripts			                            <exercices/scripts>
