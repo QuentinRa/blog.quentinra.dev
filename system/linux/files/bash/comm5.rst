@@ -16,3 +16,11 @@ Commande :code:`tar` : archiver/dé-archiver
 
 Commande :code:`wget <url>` : permet de télécharger une ressource depuis une url
 	| :code:`-d` : dossier
+
+Commande :code:`ssh login@host` : permet de se connecter à une autre machine
+	login corresponds à votre nom d'utilisateur et host à l'adresse ip de la machine ou du réseau
+	sur lequel vous vous connectez. Vous pouvez utiliser un nom de domaine.
+
+	| :code:`-u` : port, optionnel si 22
+
+Commande :code:`diff <fichier> <fichier>` : montre la différence entre deux fichiers

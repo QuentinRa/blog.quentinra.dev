@@ -1,32 +1,64 @@
-6. Environnement
-========================================
+..
+aptitude install manpages-dev
+build-essential installe make gcc ...
+ls *.{jpg,jpeg,png}
 
-On accède à une variable d'environnement, comme une variable normale.
+gcc #permet de compiler un executable
+#-o (renommer sortie) -g (pleins infos) -lm (math.h) -lgraph (graph.h) -lpthread (threads.h)
+#-c (fichier objet) -MM (dépendances) -ansi (standard 89) -Wall (avertissement struct)
+#-E (fichier intermédiaires) -pedantic (strict check)
 
-	* :code:`${NOM}` ou :code:`$NOM` pour lire la valeur
-	* :code:`NOM=valeur` pour créer/changer la valeur
-	* :code:`export NOM=valeur` : change la valeur de cette variable partout
-
-uname : info type (linux), noyau etc.
-id
-l_
-expr
-sort
--h
--r reverse
--b sans blancs
-sort -t -k1.0,1.4 (trie du char 0 à 3 de la colonne 1)
-shopt
-
-#chemin du dossier courant
-pwd
-
-#date et heure
-date
+#
 alias
+patch -i <patch> -o <sortie> : fait un diff sur un original
+ldap
+ftp
+ln -s [chemin_raccourcis] chemin nom
 
-#affiche les options du bash et leur état
-shopt #-ps (activer) -pu (désactiver)
+Multiplicateurs de terminaux :
+----------------------------------------
 
-#Affiche les informations sur l'environnement
-printenv #HOME (chemin du domicile ~) PATH (chemin du path)
+Screen : screen –S <nom du nouveau terminal>
+Pour se déplacer entre les terminaux : Ctrl-a-d
+Revenir à un terminal : screen –r <nom du terminal>
+
+Tmux : Lancer tmux : tmux
+Créer un terminal vertical : ctrl-b % et un terminal horizontal : ctrl-b et sans cotes '"'
+Supprimer un terminal : ctrl-b x
+Pour changer : ctrl-b ->
+Fermer les terminaux : ctrl-b d
+
+-------------------------------------
+
+Processus
+
+fg #passe un processus au 1er plan, %numero permet de choisir lequel
+
+bg #passe un processus à l'arrière plan, %numero permet de choisir lequel
+
+& #passe un processus à l'arrière plan
+
+ps #liste les processus
+# -e (tous) -C (selon commande) -p (pid) -s (sid) -u (données) -o personnalisé : pid, (n° processus)
+# -t (chemin terminal /dev/pts/x) -j (job format) -l (long " ) -f (full ")
+#
+# ppid, (n° processus père) pgid, (n° groupe) tpgid (id processus 1er plan) sid (n°session)
+# comm (commande)
+
+ps <rien> : affiche processus du même euid et du même terminal
+Ex : ps renvoi 2 choses ps et bash
+Option -e : tous les processus
+Option -C <comande> : sélectionne selon <comande>
+Option -p 1234,3001 : sélectionne selon PID
+Option -s 1053 : sélectionne selon session (SID)
+Option -t /dev/pts/3 : sélectionne selon terminal (tty)
+Option -u <données> : sélectionne selon utilisateur
+
+Formatage : -j (job format)
+-l (long format)
+-f (full format)
+-o (personnalisée selon attributs)
+Ex : ps -o pid, ppid, pgid, tpgid, sid, comm, etc…
+<n°processus, n°processus père, n°groupe, id groupe avant plan , n° session, commande>
+Jobs donne liste des processus et explicitant s’ils sont avant/arrière-plan.
+Fg : premier plan et bg arrière-plan

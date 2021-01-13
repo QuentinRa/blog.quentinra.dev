@@ -29,11 +29,16 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/__bash.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/system/linux/_bash.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/_bash.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/linux/bash.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/bash.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/linux/files/bash/comm1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/bash/comm1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/files/bash/find.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/bash/find.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/files/bric/redirect.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/bric/redirect.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bash/comm4.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/bash/comm4.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bash/comm5.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/bash/comm5.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bash/perms.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/bash/perms.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bric/convert.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/bric/convert.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bric/var.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/bric/var.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/glob/er.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/glob/er.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,11 +85,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices\proc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\system\linux" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\annales\p\rep" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\business\corp\com" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\linux\images" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\linux\images\use" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\linux\files\base" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -260,7 +265,7 @@
       <workItem from="1610400836717" duration="33000" />
       <workItem from="1610449930463" duration="29557000" />
       <workItem from="1610497254555" duration="3467000" />
-      <workItem from="1610536100782" duration="23974000" />
+      <workItem from="1610536100782" duration="31618000" />
     </task>
     <servers />
   </component>
@@ -395,10 +400,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="376" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1603556286896" />
-    <state x="480" y="163" width="575" height="596" key="find.popup" timestamp="1610562723217">
+    <state x="480" y="163" width="575" height="596" key="find.popup" timestamp="1610569537274">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="480" y="163" width="575" height="596" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1610562723217" />
+    <state x="480" y="163" width="575" height="596" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1610569537274" />
     <state x="684" y="302" width="609" height="280" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1608394586647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

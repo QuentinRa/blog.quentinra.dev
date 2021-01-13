@@ -54,11 +54,12 @@ de chaque commande.
 .. toctree::
 	 :maxdepth: 1
 
-			Utilitaire de survie I : man, ls, cd, cat, echo             <files/bash/comm1>
+			Utilitaire de survie I : man, ls, cd, cat, echo, pwd        <files/bash/comm1>
 			Utilitaire de survie II : mkdir, touch, mv, cp, rm          <files/bash/comm2>
 			Utilitaire de survie III : éditeur de texte                 <files/bash/idt>
 			Permissions : chmod et umask                                <files/bash/perms>
 			Recherche : find, whereis, locate, which                    <files/bash/find>
+			Motifs : grep, sed, awk                                     <files/bash/motifs>
 			Utilisateurs : adduser, deluser, id, su, ...                <files/bash/users>
 
 Alternativement, voici des commandes que vous pouvez utiliser
@@ -67,8 +68,9 @@ de temps en temps
 .. toctree::
 	 :maxdepth: 1
 
-			Traitement de texte : wc, nl, tail             <files/bash/comm4>
-			Utilitaire de survie spécial : tar, wget       <files/bash/comm5>
+			Traitement de texte : wc, nl, tail, tr, sort, expr   <files/bash/comm4>
+			Utilitaire de survie spécial : tar, wget, ssh        <files/bash/comm5>
+			Connaitre son environnement : id, uname, stat, file  <files/bash/comm6>
 
 3. Bric à brac
 ==================================
@@ -77,14 +79,27 @@ de temps en temps
 	 :maxdepth: 1
 
 		 Les opérateurs : &&, ||, ;, `` et les calculs   <files/bric/op>
-		 Variables et variables d'environnement          <files/bric/var>
+		 Variables d'environnement                       <files/bric/var>
 		 Conversion et bases : #, hexdump, ...           <files/bric/convert>
 		 Redirections et pipe : |, >, <, >> et <<        <files/bric/redirect>
 
 4. Scripts
 ================================
 
-...
+Les scripts bash regroupent tout ce que vous pouvez faire en bash, donc
+ce qui sera présenté juste après peut aussi être fait en dehors d'un script.
+
+En particulier, si une partie de votre script ne marche pas, ou vous voulez vérifier alors
+tapez la dans un terminal puis regarder le code de retour.
+
+.. toctree::
+	 :maxdepth: 1
+
+		 Structure basique et déclarations   <files/scripts/base>
+		 Branchements                        <files/scripts/if>
+		 Boucles et lecture à la console     <files/scripts/boucles>
+		 Arguments                           <files/scripts/args>
+		 Fonctions (builtin)                 <files/scripts/functions>
 
 5. Exercices
 ===========================

@@ -14,6 +14,7 @@ De nouveaux symbols ont été introduits :
 	* :code:`x+` signifie au moins une fois x
 	* :code:`^x` signifie une ligne qui commence par x
 	* :code:`x$` signifie une ligne qui finit par x
+	* :code:`(x|y)` signifie soit x soit y
 	* :code:`x{n, m}` signifie au moins n fois x et au maximum m fois. Notez que n et m sont facultatifs.
 
 .. warning::
