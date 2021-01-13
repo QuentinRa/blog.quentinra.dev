@@ -26,6 +26,27 @@ On récupère l'archive :download:`globpattern.tar <../../../assets/system/linux
 
 | :code:`[TAG] IUTSF ASR TP4 2018 S1`
 
+2. Motifs pour les noms de fichiers/répertoires
+------------------------------------------------
+
+Restriction : une seule ligne de commande, depuis le domicile sans se déplacer.
+
+Donnez une commande pour afficher le contenu de
+
+1. mon domicile dont le nom se termine par ~
+2. mon domicile dont le nom se termine par ~ ou commence par # (attention # est un caractère spécial)
+3. mon domicile dont l'extension du nom est constitué d'un seul caractère
+4. ~/ASR/ dont le troisième caractère du nom est une voyelle
+5. ~/ASR/ dont le nom contient une lettre parmi a,b,c,d,i,j,k,l, suivie d'un chiffre parmi 1,2,3,6,7,8,9
+6. ~/ASR/ dont le nom ne commence ni ne se termine par un chiffre
+
+.. toctree::
+   :maxdepth: 1
+
+		Proposition de correction n°1			<motifs/d2>
+
+| :code:`[TAG] IUTSF ASR TD3 2018 S1`
+
 Niveau supérieur
 ***********************
 
@@ -128,4 +149,5 @@ aucun
 
 **Crédits**
 	* Selma NABOULSI (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Luc DARTOIS (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Ivan Augé (enseignant à l'ENSIIE)

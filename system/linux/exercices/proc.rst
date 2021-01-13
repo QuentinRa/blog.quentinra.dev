@@ -69,4 +69,5 @@ aucun
 
 **Crédits**
 	* Selma NABOULSI (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Denis MONNERAT (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Ivan Augé (enseignant à l'ENSIIE)

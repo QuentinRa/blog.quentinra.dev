@@ -4,8 +4,8 @@
 Bash et Scripts bash
 ================================
 
-| :math:`\color{grey}{Version \ 2.3.14}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 12/01/2021}`
+| :math:`\color{grey}{Version \ 2.4.15}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 13/01/2021}`
 
 :code:`prérequis` (cours :ref:`linux`) avoir une idée des thèmes suivants
 
@@ -58,14 +58,24 @@ de chaque commande.
 			Utilitaire de survie II : mkdir, touch, mv, cp, rm          <files/bash/comm2>
 			Utilitaire de survie III : éditeur de texte                 <files/bash/idt>
 			Permissions : chmod et umask                                <files/bash/perms>
+			Recherche : find, whereis, locate, which                    <files/bash/find>
 			Utilisateurs : adduser, deluser, id, su, ...                <files/bash/users>
 
-3. Scripts
+3. Bric à brac
+==================================
+
+.. toctree::
+	 :maxdepth: 1
+
+		 Conversion et bases : #, hexdump, ...        <files/bric/convert>
+		 Redirections : >, <, >> et <<                <files/bric/redirect>
+
+4. Scripts
 ================================
 
 ...
 
-4. Exercices
+5. Exercices
 ===========================
 
 .. toctree::
@@ -78,6 +88,7 @@ de chaque commande.
 		Recherche          			                <exercices/find>
 		Scripts			                            <exercices/scripts>
 		Appels systèmes                         <exercices/sys>
+		Bases  (2, 8, 16, ...)                  <exercices/bases>
 		Commandes complexes (expr, sort, ...) 	<exercices/more>
 		Annales                                 <annales/index>
 

@@ -1,0 +1,74 @@
+================================
+1. Entrainement aux bases
+================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+Je ne mettrais pas les calculs pour le moment.
+
+1. Convertir en base 10 (décimal) les nombres en base 2 suivants : 101, 0101, 1101110.
+
+Réponses : 5,5,110.
+
+2. Convertir 193 en base 2, puis 1715 vers la base 12
+
+| 193/2 = 96 (reste 1)
+| 96/2 = 48 (reste 0)
+| 48/2 = 24 (reste 0)
+| 24/2 = 12 (reste 0)
+| 12/2 = 6 (reste 0)
+| 6/2 = 3 (reste 0)
+| 3/2 = 1 (reste 1)
+| 1/2 = 0 (reste 1)
+|
+| Donc on a 11000001
+| on remonte du dernier reste au premier
+
+| 1715 / 12 : dur de calculer de tête donc je fais par étapes
+| 1715 = 1440 + 275 = 1440 + 264 + 11 = 12\*120 (1440) +12\*22 (264) (reste 11)
+| 1715 / 12 = 142 (reste 11)
+| 142 / 12 = 11 (reste 10)
+| 11 / 12 = 0 (reste 11)
+|
+| Donc on a 11 10 11 soit BAB
+| on remonte du dernier reste au premier
+
+3. Quelles représentations ne sont pas valides en base 18
+
+	* 0003477ABI027
+	* DIGHO
+
+Logique : en base 15 on a de 0 à 14 donc en base 18 on a de 0 à 17 soit de 0 à F(15),G(16), H(17).
+
+4. Convertir vers la base 2 : 0x8A0F1, 0xF0F0F0F0F0, 074253
+
+| 4 chiffres en base 2 = 1 en base 16.
+| 3 chiffres en base 2 = 1 en base 8.
+| Ox = base 16
+| 0 = base 8
+
+	* 0x8A0F1 = 1000 1010 0000 1111 0001
+	* 0xF0F0F0F0F0 = 1111 0000 1111 0000 1111 0000 1111 0000
+	* 074253 = 111 100 010 101 011
+
+
+5. Convertir vers le base 16 : :math:`(11000100111001000111011)_2`, :math:`(37204607315)_8`.
+
+On ajoute un zéro devant pour avoir 6 blocs de 4.
+
+	* :math:`(11000100111001000111011)_2` = 0x62723B
+	* :math:`(37204607315)_8` = :math:`(000011111010000100110000111011001101)_2` (ajouté des 0 devant) = 0x0FA130ECD
+
+6. Représenter sur 8 bits les entiers non signés : 0, 1, 117, 254, 257
+
+7. Effectuer les opérations suivantes (non signées) sans passer par la base 10
+
+	* :math:`(11010011)_2 + (10100011)_2` = 101110110
+	* :math:`(11010)_2 * (100111)_2` = 1100000 (pose la multiplication comme en cp et on fait la somme de tous les résultats)
+	* 0xa73 + 0x1ce = 0xC41
+	* :math:`(11010000)_2 - (10100011)_2` = 00101101
+	* 0xa733 - 0x1ce7 = 0x8A4C
+
+**Crédits**
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
