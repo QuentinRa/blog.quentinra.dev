@@ -1,0 +1,203 @@
+==================================
+1. Informations sur les Processus
+==================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+hello.sh (bonjour est pareil mais avec "bonjour" à la place de "hello").
+
+.. code:: bash
+
+	#!/bin/bash
+
+	for (( i = 0;; i++ )); do # boucle infinie donc CTRL-C pour terminer
+		echo "hello"
+		# La commande sleep permet d'arrêter une commande pendant une durée :
+		# sleep n(s/m/h/d) avec n un nombre
+		# et s=secondes m=minutes h=heures d=days
+		sleep 2s;
+	done
+
+	exit
+
+.. code:: bash
+
+	# ps affiche les processus du terminal :
+	$ ps
+	PID TTY  TIME CMD
+	14334 pts/0 00:00:00 bash # notre interpréteur de commande
+	14334 pts/0 00:00:00 ps   # ps
+	# On ouvre un nouveau terminal :
+	$ ps
+	PID TTY TIME CMD
+	14591 pts/1 00:00:00 bash
+	14591 pts/1 00:00:00 ps
+
+	#	Combien de bash tournent à son nom dans le système ?
+	$ ps -C bash
+	14334 pts/0    00:00:00 bash
+	14591 pts/1    00:00:00 bash
+
+	# PID : nombre représentant l'id du processus (alias tgid)
+	# TTY : adresse du terminal associé à notre session.
+	# CMD : commande
+
+	$ la /dev/pts/
+	crw--w----  1 ramsamy tty  136, 0 20 nov.  13:48 0
+	c---------  1 root    root   5, 2 19 nov.  10:10 ptmx
+	$ la /dev/pts/
+	crw--w----  1 ramsamy tty  136, 0 20 nov.  13:52 0
+	crw--w----  1 ramsamy tty  136, 1 20 nov.  13:49 1
+	crw--w----  1 ramsamy tty  136, 2 20 nov.  13:52 2
+	c---------  1 root    root   5, 2 19 nov.  10:10 ptmx
+
+	# Exploration des terminaux ouverts
+	#
+	# Passage en mode console only
+	# CTRL-Alt-F1 Arch linux (tty1)
+	# CTRL-Alt-F2 Arch linux (tty2)
+	# CTRL-Alt-F3 Arch linux (tty3)
+	# CTRL-Alt-F4 Arch linux (tty4)
+	# ...
+	# on observe un tty qui augmente
+	# retour : ALT-F7
+	#
+	# tous les terminaux sont dans ce dossier
+	$ la /dev/tty
+	tty    tty14  tty20  tty27  tty33  tty4   tty46  tty52  tty59  tty8
+	tty0   tty15  tty21  tty28  tty34  tty40  tty47  tty53  tty6   tty9
+	tty1   tty16  tty22  tty29  tty35  tty41  tty48  tty54  tty60  ttyS0
+	tty10  tty17  tty23  tty3   tty36  tty42  tty49  tty55  tty61  ttyS1
+	tty11  tty18  tty24  tty30  tty37  tty43  tty5   tty56  tty62  ttyS2
+	tty12  tty19  tty25  tty31  tty38  tty44  tty50  tty57  tty63  ttyS3
+	tty13  tty2   tty26  tty32  tty39  tty45  tty51  tty58  tty7
+
+	$ hello.sh &
+	# On lance hello.sh en arrière plan à cause du &.
+	# CTRL-C envoi le signal SIGINT qui est seulement lu par les processus au 1er plan.
+	# CTRL-C n'as plus d'effet sur lui.
+	# & s'avère utile lorsqu'on veut récupérer la ligne de commande si le programme lance par & est long.
+
+	# 3)
+	# CTRL-Z permet de mettre en pause un script au 1er plan.
+	# La commande fg permet de passer de l'arrière plan au premier plan.
+	hello
+	hello
+	$ fg # passe hello.sh au 1er plan
+	$ ./hello.sh
+	hello
+	# CTRL-Z
+	$ bg # passe hello.sh à l'arrière plan
+	hello
+	$ fg  # passe hello.sh au 1er plan
+	./hello.sh
+	hello
+	# CTRL-C
+	# On peut maintenant arrêter/mettre en pause le script avec SIGINT car hello.sh est au 1er plan.
+
+	# 4)
+	$ ./hello.sh
+	# ps -o tty,pid,pgid,ppid,tpgid,cmd pour afficher les options voulues ;
+	$ ps -p 17054 -o tty,pid,pgid,ppid,tpgid,cmd
+	TT         PID  PGID  PPID TPGID CMD
+	pts/4    17054 17054 15353 17054 /bin/bash ./hello.sh
+	# Le tpgid est le n° du processus en avant plan dans un terminal soit 17054 ici.
+	$ ps -t /dev/pts/4 -o tty,pid,pgid,ppid,tpgid,cmd
+	TT PID PGID PPID TPGID CMD
+	pts/4    15353 15353 14330 17054 bash
+	pts/4    17054 17054 15353 17054 /bin/bash ./hello.sh
+	pts/4    18092 17054 17054 17054 sleep 2s
+
+	# 5) On termine, on relance en arrière plan :
+	./hello.sh & (18427)
+	$ ps -p 18427 -o tty,pid,pgid,ppid,tpgid,cmd
+	TT PID  PGID  PPID TPGID CMD
+	pts/4 18427 18427 15353 15353 /bin/bash ./hello.sh
+	$ ps -t /dev/pts/4 -o tty,pid,pgid,ppid,tpgid,cmd
+	TT PID  PGID  PPID TPGID CMD
+	pts/4 15353 15353 14330 15353 bash
+	pts/4 18427 18427 15353 15353 /bin/bash ./hello.sh
+	pts/4 18473 18427 18427 15353 sleep 2s
+	# Le tpgid indique bien quel est le pid du processus qui tourne au 1er plan,
+	# ici c'est le bash qui prends la relève des que le script est passé à l'arrière plan.
+	$ fg
+	# CTRL-C
+
+	# 6)
+	$ ./hello.sh
+	hello
+	# CTRL-Z
+	$ ps
+	PID TTY          TIME CMD
+	15353 pts/4    00:00:00 bash
+	19096 pts/4    00:00:00 hello.sh
+	19136 pts/4    00:00:00 sleep
+	19141 pts/4    00:00:00 ps
+	# La commande CTRL-Z permet de mettre en pause l'activite d'un programme
+	# sans pour autant arrêter/fermer/tuer son processus.
+
+	# 7) Pour arrêter le fichier après un CTRL-Z,
+	#	on fais fg pour le garder au 1er plan puis CTRL-C.
+	$ ./hello.sh
+	hello
+	# CTRL-Z
+	$ fg
+	# CTRL-C
+	# On peut faire fg %tache ou bg%tache pour spécifier quelle tache on met au premier plan/arrière plan.
+
+	# 8)
+	$ ./hello.sh | ./bonjour.sh
+	# Lance les processus hello.sh et sleep de hello.sh
+	# Et les processus bonjour.sh et sleep de bonjour.sh
+	#
+	# Les processus d'avant et après la pipeline sont lancés ! soit 4.
+	# On peut les arrêter avec CTRL-C car ils sont au premier plan et ils sont dépendant l'un de l'autre.
+	$ ps -t /dev/pts/4 -o tty,pid,pgid,ppid,tpgid,cmd
+	TT         PID  PGID  PPID TPGID CMD
+	pts/4    15353 15353 14330 15353 bash
+	pts/4    20116 20116 15353 15353 /bin/bash ./hello.sh
+	pts/4    20117 20116 15353 15353 /bin/bash ./bonjour.sh
+	pts/4    20122 20116 20116 15353 sleep 2s
+	pts/4    20123 20116 20117 15353 sleep 2s
+	#	Leur pgid soit leur processus parent est le même; or si le processus parent meurt
+	# alors tous les processus engendrés meurent.
+
+	#	9)
+	$ ./hello.sh & ./bonjour.sh
+	# On vient de lancer hello.sh en arière plan et
+	# bonjour.sh au premier plan.
+	$ ps -t /dev/pts/4 -o tty,pid,pgid,ppid,tpgid,cmd
+	TT         PID  PGID  PPID TPGID CMD
+	pts/4    20562 20562 15353 20563 /bin/bash ./hello.sh
+	pts/4    20563 20563 15353 20563 /bin/bash ./bonjour.sh
+	pts/4    20700 20562 20562 20563 sleep 2s
+	pts/4    20701 20563 20563 20563 sleep 2s
+	# Le TPGID est bien le PID de bonjour.sh car celui lancé au premier plan.
+	# Jobs permet de voir les processus en fonction de s'il sont au premier ou à l'arrière plan.
+	$ jobs
+	[1]-  En cours d'exécution   ./hello.sh &
+	[2]+  Stoppé                 ./bonjour.sh
+
+	# CTRL-C aura un effect sur les processus au 1er plan soit bonjour.sh donc :
+	# lorsque de l'appui sur CTRL-C seulement hello.sh continu de tourner.
+	$ ps
+	PID TTY          TIME CMD
+	15353 pts/4    00:00:00 bash
+	20562 pts/4    00:00:00 hello.sh
+	21275 pts/4    00:00:00 sleep
+	21278 pts/4    00:00:00 ps
+
+	# 10) On termine le second processus.
+	$ fg
+	# CTRL-C
+	$ ./hello.sh & ./bonjour.sh &
+	[1] 21377
+	[2] 21378
+	# fg %2 va ramener le 2e processus au premier plan soit bonjour.sh
+	# CTRL-C va arrêter du coup bonjour.sh
+	$ fg
+	# CTRL-C...
+
+**Crédits**
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)

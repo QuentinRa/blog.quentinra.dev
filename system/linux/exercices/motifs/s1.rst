@@ -214,7 +214,6 @@
 		$ sed 's/^Include[[:space:]]=/#/' DIR/pacman.conf > DIR/pacman-v1.conf
 		$ grep 'Include[[:space:]]'  DIR/pacman-v1.conf
 
-
 		# 17)
 		$ sed '^#(ipv4|ipv6)/d' DIR/sysctl.conf > DIR/sysctl-v1.conf
 		$ grep -E '^#(ipv4|ipv6)' DIR/sysctl.conf
