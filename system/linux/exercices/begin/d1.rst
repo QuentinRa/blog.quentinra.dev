@@ -1,0 +1,46 @@
+==================================================
+1. Je découvre mon environnement le plus proche
+==================================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+.. code:: bash
+
+		$ whoami # donne le nom d'utilisateur de la session
+		reija
+
+		$ id # donne pleins d'infos sur l'utilisateur courant
+		uid=1000(reija) gid=1000(reija) groupes=1000(reija),[...]
+		# donne l'id de l'utilisateur et celui
+		# de son groupe (pour les permissions) et les groupes auquel il fait parti.
+
+		$ uname # donne des infos sur la machine
+		Linux
+
+		$ printenv HOME # affiche le chemin absolu du répertoire domicile.
+		/home/reija
+
+		$ ls # affiche ce que contient le répertoire ciblé (courant si rien)
+		TP01_reponses.txt
+		$ ls -l # affiche le contenu du répertoire avec des infos dessus.
+		-rw-r--r-- 1 reija reija 633 oct.  27 14:28 TP01_reponses.txt
+		$ ls -la # affiche ls -l et les fichiers cachés (commençant par un point)
+		drwxr-xr-x 2 reija reija 4096 oct.  27 14:23 .
+		drwxr-xr-x 3 reija reija 4096 oct.  27 14:21 ..
+		-rw-r--r-- 1 reija reija  633 oct.  27 14:28 TP01_reponses.txt
+		# DECRYPTAGE : ls -l ou -la renvoit un permissions sur le dossier/fichier, un tiret indique une
+		# permission manquante.Le 1er caractère indique la nature de l'élément (d = dossier).
+		#
+		# Remarque : . = répertoire courant ; .. = répertoire parent.
+
+		$ pwd # affiche notre répertoire de travail
+		/home/reija/Bureau/ASR/ASR1.1/TP00/TP01
+
+		$ cd /etc/ # se déplacer
+		$ pwd # afficher notre position
+		/etc
+		$ cd # pareil que faire cd ~ ou cd $HOME ou cd /home/reija
+
+**Crédits**
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)

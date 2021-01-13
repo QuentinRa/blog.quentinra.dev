@@ -6,3 +6,22 @@ On accède à une variable d'environnement, comme une variable normale.
 	* :code:`${NOM}` ou :code:`$NOM` pour lire la valeur
 	* :code:`NOM=valeur` pour créer/changer la valeur
 	* :code:`export NOM=valeur` : change la valeur de cette variable partout
+
+>>
+printenv $HOME
+printenv $PATH
+uname : info type (linux), noyau etc.
+id
+whoami
+which display
+
+wget
+l_
+expr
+sort
+-h
+-r reverse
+-b sans blancs
+sort -t -k1.0,1.4 (trie du char 0 à 3 de la colonne 1)
+
+exécute comme puis la remplace par le résultat ``

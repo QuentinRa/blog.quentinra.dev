@@ -1,5 +1,3 @@
-.. _bash-sh:
-
 ==============================================
 Exercices Scripts Bash
 ==============================================
@@ -7,12 +5,12 @@ Exercices Scripts Bash
 Niveau débutant
 ***********************
 
-...
+aucun
 
 Niveau supérieur
 ***********************
 
-1/1 Fonction round
+1. Fonction round
 ------------------------
 
 Écrire un script :code:`round.sh` qui prends deux arguments :
@@ -42,7 +40,7 @@ En particulier, vous devez gérer que
 Niveau avancé
 ***********************
 
-1/1 Auto-encrypted archive
+1. Auto-encrypted archive
 -----------------------------
 
 L'objectif est de créer une archive d'une répertoire donné.
@@ -71,3 +69,9 @@ Le fichier généré se décompresse automatiquement lorsque l'archive est exéc
    :maxdepth: 1
 
 	Proposition de correction n°1			<scripts/a1>
+
+-----
+
+**Crédits**
+	* Selma NABOULSI (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Ivan Augé (enseignant à l'ENSIIE)

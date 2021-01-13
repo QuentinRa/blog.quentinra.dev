@@ -57,14 +57,26 @@ de chaque commande.
 			Permissions : chmod et umask                                <files/bash/perms>
 			Utilisateurs : adduser, deluser, id, su, ...                <files/bash/users>
 
-3. Exercices
+3. Scripts
+================================
+
+...
+
+4. Exercices
 ===========================
 
 .. toctree::
 	 :maxdepth: 1
 
-		Exercices Scripts			      <exercices/scripts>
-		Annales                     <annales/index>
+		Introduction      			                <exercices/begin>
+		Motifs  (sed)      			                <exercices/motifs>
+		Expression régulières  (grep)           <exercices/er>
+		Processus          			                <exercices/proc>
+		Recherche          			                <exercices/find>
+		Scripts			                            <exercices/scripts>
+		Appels systèmes                         <exercices/sys>
+		Commandes complexes (expr, sort, ...) 	<exercices/more>
+		Annales                                 <annales/index>
 
 --------
 

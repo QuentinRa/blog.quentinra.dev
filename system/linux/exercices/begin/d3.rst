@@ -1,0 +1,70 @@
+===================================
+3. Commandes et exécutables
+===================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+.. code:: bash
+
+		# Si te tape quelque chose à la ligne de commande, l'interpréteur de commande va chercher une commande qui
+		# corresponds à ce que j'ai tapé.
+
+		$ cd ~ ou cd
+		$ fi21
+		fi21: commande introuvable
+
+		$	printenv PATH
+		/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+		#
+		#	La valeur de PATH est celle dans laquelle l'interpréteur de commande va chercher un certain fi21 pour l'excécuter.
+		#	On peut voir que le répertoire courant, soit mon home soit /home/reija ne s'y trouve pas.
+
+		#	Si je reste dans mon domicile et je tape ./fi21, l'interpréteur de commande va chercher si dans mon répertoire     		courant ( . ) il y a un certain exécutable fi21 pour l'exécuter.
+		$ ./fi21
+		bash: ./fi21: Aucun fichier ou dossier de ce type
+
+		# l'interpréteur de commande va chercher si dans le repertoire que je lui ai donnée,
+		# s'il y a un certain exécutable fi21 pour l'exécuter.
+		$ ./ASR/ASR1.1/TP01/BB/DIR2/fi21
+		bash: ./Bureau/ASR/ASR1.1/TP00/TP01/BB/DIR2/fi21: Permission non accordée
+
+		$ la ./ASR/ASR1.1/TP01/BB/DIR2/fi21
+		-rw-r--r-- 1 reija reija 0 oct.  27 15:12 ./ASR/ASR1.1/TP01/BB/DIR2/fi21
+		# On peut voir que l'on ne possède pas la permission x sur ce fichier qui permet d'exécuter.
+
+		# Je me place dans DIR2, et je tape fi21. En tapant fi21, même si je suis dans DIR2,
+		# l'interpréteur de commande va chercher dans le PATH fi21.
+		# Il faut lui préciser ou est fi21 ou ajouter au PATH l'endroit ou est fi21.
+		#
+		$ cd ASR/ASR1.1/TP01/BB/DIR2/fi21
+		$ fi21
+		fi21: commande introuvable
+
+		# Même en précisant ou l'interpréteur de commande doit chercher fi21, on n'a toujours pas changé le problème lié
+		# aux permissions.
+		$ ./fi21
+		bash: ./fi21: Permission non accordée
+
+		# La commande chmod permet d'ajouter des permissions.
+		# Forme : chmod <permissions> <sur quoi>
+		$ chmod u+x ./fi21 ajoute la permission x à user sur fi21
+		$ chmod 744 ./fi21 donne toutes les permissions à user sur fi21
+		$ ./fi21
+		# L'opération marche mais résulte en un résultat vide car fi21 est vide.
+
+		# Je veut écire pwd dans un fichier fi21
+		# 1ère Méthode : j'ouvre un éditeur de texte (vim,vi,subl,emacs,nano) et j'écris pwd dedans
+		# 2ème Méthode : echo "pwd" > fi21
+		# echo "<quelquechose>" affiche le quelquechose à l'écran
+		# echo "<quelquechose>" > <fichier> va rediriger la sortie (affichage) dans un fichier donc au lieu d'afficher
+		# pwd à l'écran, il va être affiché dans fi21.
+		# cat <fichier> permet d'afficher le contenu d'un fichier
+		$ cat fi21
+		$ pwd # l'opération s'est bien passée donc le fichier n'est plus vide
+		$ ./fi21 # va donc chercher dans le répertoire actuel fi21 (ok) , l'exécuter (droit x : ok) et va donc exécuter
+		#	la commande pwd contenue dedans
+		/home/reija/ASR/ASR1.1/TP01/BB/DIR2
+
+**Crédits**
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
