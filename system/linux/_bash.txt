@@ -7,15 +7,8 @@ On accède à une variable d'environnement, comme une variable normale.
 	* :code:`NOM=valeur` pour créer/changer la valeur
 	* :code:`export NOM=valeur` : change la valeur de cette variable partout
 
->>
-printenv $HOME
-printenv $PATH
 uname : info type (linux), noyau etc.
 id
-whoami
-which display
-
-wget
 l_
 expr
 sort
@@ -23,9 +16,17 @@ sort
 -r reverse
 -b sans blancs
 sort -t -k1.0,1.4 (trie du char 0 à 3 de la colonne 1)
-
-exécute comme puis la remplace par le résultat ``
-
-nl -b a
-
 shopt
+
+#chemin du dossier courant
+pwd
+
+#date et heure
+date
+alias
+
+#affiche les options du bash et leur état
+shopt #-ps (activer) -pu (désactiver)
+
+#Affiche les informations sur l'environnement
+printenv #HOME (chemin du domicile ~) PATH (chemin du path)

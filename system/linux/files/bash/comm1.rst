@@ -24,6 +24,7 @@ Utilitaire de survie I : man, ls, cd, cat
 	Les "" sont facultatifs mais recommandés et obligatoires dans certains cas.
 
 	| :code:`-n` : pas de saut de ligne après le echo
+	| :code:`-e` : -caractère hexadécimal, ...
 
 :code:`cat <fichier>` ou :code:`less <fichier>` : vous permet de lire un fichier
 	Pour fermer un fichier ouvert avec less, appuyez sur q.

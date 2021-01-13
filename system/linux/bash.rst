@@ -61,14 +61,25 @@ de chaque commande.
 			Recherche : find, whereis, locate, which                    <files/bash/find>
 			Utilisateurs : adduser, deluser, id, su, ...                <files/bash/users>
 
+Alternativement, voici des commandes que vous pouvez utiliser
+de temps en temps
+
+.. toctree::
+	 :maxdepth: 1
+
+			Traitement de texte : wc, nl, tail             <files/bash/comm4>
+			Utilitaire de survie spécial : tar, wget       <files/bash/comm5>
+
 3. Bric à brac
 ==================================
 
 .. toctree::
 	 :maxdepth: 1
 
-		 Conversion et bases : #, hexdump, ...        <files/bric/convert>
-		 Redirections : >, <, >> et <<                <files/bric/redirect>
+		 Les opérateurs : &&, ||, ;, `` et les calculs   <files/bric/op>
+		 Variables et variables d'environnement          <files/bric/var>
+		 Conversion et bases : #, hexdump, ...           <files/bric/convert>
+		 Redirections et pipe : |, >, <, >> et <<        <files/bric/redirect>
 
 4. Scripts
 ================================
