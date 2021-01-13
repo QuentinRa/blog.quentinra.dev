@@ -28,5 +28,5 @@ vous pouvez passer un nombre illimité d'arguments : :code:`./mon_script 1 "15" 
 	$@ # contient 1 "premier" "15" "salut !" "110016"
 	# donc voici un exemple
 	for i in "$@"; do
-		echo $i
+	 echo $i
 	done

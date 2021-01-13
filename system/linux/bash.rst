@@ -5,7 +5,7 @@ Bash et Scripts bash
 ================================
 
 | :math:`\color{grey}{Version \ 2.4.15}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 13/01/2021}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 14/01/2021}`
 
 :code:`prérequis` (cours :ref:`linux`) avoir une idée des thèmes suivants
 
@@ -81,6 +81,7 @@ de temps en temps
 		 Les opérateurs : &&, ||, ;, `` et les calculs   <files/bric/op>
 		 Variables d'environnement                       <files/bric/var>
 		 Conversion et bases : #, hexdump, ...           <files/bric/convert>
+		 Processus, premier et arrière plan              <files/bric/proc>
 		 Redirections et pipe : |, >, <, >> et <<        <files/bric/redirect>
 
 4. Scripts
@@ -92,6 +93,10 @@ ce qui sera présenté juste après peut aussi être fait en dehors d'un script.
 En particulier, si une partie de votre script ne marche pas, ou vous voulez vérifier alors
 tapez la dans un terminal puis regarder le code de retour.
 
+Pour rappel, pour exécuter un script, il faut la permission x. Si le script n'est pas dans votre
+path (donc :code:`mon_script` dit commande not found), alors il faut donner le chemin en commençant
+par :code:`./` donc :code:`./mon_script` par exemple (il y a d'autres alternatives dans le cours).
+
 .. toctree::
 	 :maxdepth: 1
 
@@ -101,7 +106,22 @@ tapez la dans un terminal puis regarder le code de retour.
 		 Arguments à la ligne de commande    <files/scripts/args>
 		 Fonctions (builtin)                 <files/scripts/functions>
 
-5. Exercices
+5. Appels systèmes
+==============================
+
+Dans le cas ou vous feriez des appels systèmes en C, voici une aide. Je rappelle (?) que c'est
+assez simple de comprendre cette partie si vous savez déjà le faire en C (voir cours de C)
+sachant que vous utilisez des fonctions du man 3 alors qu'ici on va utiliser les fonctions du man 2.
+
+Donc si vous ne savez pas utiliser :code:`open`, vous ferrez un :code:`man 2 open` (alors que normalement
+vous ferriez un :code:`man 3 fopen`).
+
+.. toctree::
+	 :maxdepth: 1
+
+		 Appels systèmes en C   <files/base/sys>
+
+6. Exercices
 ===========================
 
 .. toctree::

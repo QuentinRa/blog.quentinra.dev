@@ -31,7 +31,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/linux/_bash.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/_bash.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/linux/bash.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/bash.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/files/bash/motifs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/bash/motifs.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/scripts/args.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/scripts/args.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -258,7 +258,7 @@
       <workItem from="1610400836717" duration="33000" />
       <workItem from="1610449930463" duration="29557000" />
       <workItem from="1610497254555" duration="3467000" />
-      <workItem from="1610536100782" duration="36937000" />
+      <workItem from="1610536100782" duration="39089000" />
     </task>
     <servers />
   </component>
