@@ -29,11 +29,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/_bash.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/_bash.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/bash.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/bash.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/commands.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/exercices/begin.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/exercices/begin.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/exercices/motifs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/exercices/motifs.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/find.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/exercices/find.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -260,7 +256,7 @@
       <workItem from="1610400836717" duration="33000" />
       <workItem from="1610449930463" duration="29557000" />
       <workItem from="1610497254555" duration="3467000" />
-      <workItem from="1610536100782" duration="6189000" />
+      <workItem from="1610536100782" duration="9459000" />
     </task>
     <servers />
   </component>

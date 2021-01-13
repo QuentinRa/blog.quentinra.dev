@@ -1,0 +1,336 @@
+================================
+1. Find Tree
+================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+.. code:: bash
+
+	# La commande tar permet de créer et d'extraire une archive.
+	# L'option x permet de désarchiver.
+	# L'option v demande à ce que tout ce qui soit fait nous soit montré.
+	# L'option f permet de placer un nom de fichier après l'option.
+	$ tar xvf arch_for_find.tar.gz
+
+	$ mkdir -p TREE/lib/kernel/config/AA/BB/CC/XX
+	$ mkdir -p TREE/lib/kernel/config/AA/BB/CC/YY
+
+	Arbre :
+	 TREE/
+	  lib/ --4096 rwxr-xr-x
+	   kernel/ --4096 rwxr-xr-x
+	    install.d/
+	     50-mkinitcpio.install
+       50-depmod.install
+       90-loaderentry.install
+      config/
+       AA/BB/CC/XX --- crées par nous
+       AA/BB/DD/YY --- crées par nous
+			auth/ --4096 rwxr-x--x
+			 transm.d
+			krb5/ --4096 rwxr-xr-x
+			 plugins/
+			  inout.dev
+        preauth/
+			   pkinit.so
+         otp.so
+        play.in
+        custom.install/
+				kdb/
+         kldap.so
+				 db2.so
+			 synch/
+			  atom.install
+				settings.sh
+
+	# La commande find permet de chercher quelquechose.
+	#
+	# L'option -type permet de spécifier si c'est un dossier (d), un fichier (f), un lien (l) ...
+	# L'option -name permet de donner le motif/nom de ce qu'on recherche.
+	# L'option -empty affiche les répertoires vides.
+	# L'option -size n permet de spécifier la taille exacte n, -n pour inférieur à n et +n pour supperieur a n.
+	# Les format de size sont rien soit b :
+	#    c soit byte (1octect = 1byte)
+	# L'option -mtime n affiche les truc modifiés (n -n +n)*24 heure (moins de 4*24h s'écrit -4)
+	# L'option -perm xxx affiche les truc qui ont exactement ces permissions, ne rien mettre <=> à mettre 0 ex : 2 <=> 002
+	#    -perm \xxx affiche les truc qui ont au moins la permissions xxx exemple /111 pour r
+	# L'option -mindepth x commence a appliquer find depuis la profondeur x, commence à 1.
+	# L'option -maxdepth x arrête d'a appliquer find à la profondeur x, commence à 1.
+	# L'option -amin n permet de voir les fichiers accédés il y a n (ou +n ou -n) minutes.
+	# L'option -exec {} \; permet d'exécuter une commande avec {} sortie du find et \; le délimiteur des arguments.
+	# L'option -cmin n permet d'afficher le fichier qui n'on pas changé de statut depuis n nimutes (ou +n, ou -n).
+	# L'option -newer f1 permet affiche les fichers dont la date modification est après celle de f1.
+	# L'option -quit permet d'arrêter find au 1er élément.
+	# L'option -print permet d'afficher le résultat si arrêté précédement/ non affiché.
+	# L'option -printf permet d'afficher selon un certain format personnalisé
+	#   %p permet d'afficher le nom
+	#   %t permet d'afficher la dernière date de modification
+	#   %T permet d'afficher la dernière date de modification selon un format
+	#   %D affiche au format xx/mm/yy
+	# L'option -mtime n permet d'afficher les fichiers modifiés il y a n (ou +n ou -n) *24heures
+	# L'option -atime n affiche les fichiers dont la date d'accès est de n (ou +n ou -n) *24heures
+
+	# 1.  des répertoires dont le nom se termine par .install
+	$ find TREE/ -type d -name "*.install"
+	TREE/lib/krb5/plugins/custom.install
+
+	# 2.  des fichiers réeguliers dont le nom se termine par .d
+	$ find TREE/ -type f -name "*.d"
+	TREE/lib/auth/transm.d
+
+	# 3.  des répertoires vides.
+	$ find TREE/ -type d -empty
+	TREE/lib/kernel/config/AA/BB/CC/XX
+	TREE/lib/kernel/config/AA/BB/CC/YY
+	TREE/lib/krb5/plugins/custom.install
+
+	# 4.  des fichiers réeguliers dont la taille est inférieure à 1000 octets.
+	$ find TREE/ -type f -size -1000c
+	TREE/lib/kernel/install.d/50-depmod.install
+	TREE/lib/kernel/install.d/50-mkinitcpio.install
+	TREE/lib/auth/transm.d
+	TREE/lib/krb5/synch/atom.install
+	TREE/lib/krb5/synch/settings.sh
+
+	#	5.  des fichiers réguliers dont la taille est supérieure à 30000 octets.
+	$ find TREE/ -type f -size +30000c
+	TREE/lib/krb5/plugins/kdb/db2.so
+	TREE/lib/krb5/plugins/preauth/pkinit.so
+
+	# 6.  des fichiers réguliers dont la taille est 1024 octets.
+	$ find TREE/ -type f -size 1024c
+	TREE/lib/krb5/plugins/play.in
+
+	# 7.  des fichiers réguliers dont le contenu occupe 2 blocs.
+	$ find TREE/ -type f -size 2
+	TREE/lib/krb5/plugins/play.in
+	TREE/lib/krb5/synch/settings.sh
+
+	# 8.  des fichiers réguliers dont le contenu occupe plus de 30 blocs.
+	$ find TREE/ -type f -size +30
+	TREE/lib/krb5/plugins/kdb/db2.so
+	TREE/lib/krb5/plugins/preauth/otp.so
+	TREE/lib/krb5/plugins/preauth/pkinit.so
+
+	# 9.  des fichiers réguliers dont le contenu occupe moins de 3 blocs.
+	$ find TREE/ -type f -size -3
+	TREE/lib/kernel/install.d/50-depmod.install
+	TREE/lib/kernel/install.d/50-mkinitcpio.install
+	TREE/lib/auth/transm.d
+	TREE/lib/krb5/plugins/play.in
+	TREE/lib/krb5/synch/atom.install
+	TREE/lib/krb5/synch/settings.sh
+
+	# 10.  des fichiers réguliers dont le contenu occupe plus d’un bloc et moins de 4 blocs.
+	$ find TREE/ -type f -size +1 -size -4
+	TREE/lib/krb5/plugins/play.in
+	TREE/lib/krb5/plugins/inout.dev
+	TREE/lib/krb5/synch/settings.sh
+
+	# 11.  des   éléments  qui  ont  une  date  de  dernière  modification  postérieure à celle du fichier
+	# lib/krb5/synch/atom.install
+	$ find TREE/ -newer lib/krb5/synch/atom.install
+	TREE/lib/kernel/config
+	TREE/lib/kernel/config/AA
+	TREE/lib/kernel/config/AA/BB
+	TREE/lib/kernel/config/AA/BB/CC
+	TREE/lib/kernel/config/AA/BB/CC/XX
+	TREE/lib/kernel/config/AA/BB/CC/YY
+	TREE/lib/krb5/plugins
+	TREE/lib/krb5/plugins/play.in
+	TREE/lib/krb5/plugins/inout.dev
+	TREE/lib/krb5/synch
+	TREE/lib/krb5/synch/settings.sh
+
+	# 12.  des  éléments dans toute l’arborescence commencant à partir de	lib/krb5/synch/
+	# qui ont étés modifiés il y a moins de 4 jours.
+	$ find TREE/lib/krb5/synch/ -mtime -4
+
+	# 13.  des  éléments dans toute l’arborescence commençant à partir de	lib/kernel/install.d qui
+	# ont étés modifiés il y a plus de 3 jours.
+	$ find TREE/lib/kernel/install.d -mtime +3
+	TREE/lib/kernel/install.d
+	TREE/lib/kernel/install.d/50-depmod.install
+	TREE/lib/kernel/install.d/90-loaderentry.install
+	TREE/lib/kernel/install.d/50-mkinitcpio.install
+
+	# 14.  des  éléments qui ont  été modifiés il y a 3 jours et dont le temps de dernier accès remonte à 2 jours.
+	$ find TREE/ -mtime 3 -atime 2
+
+	# 15.  des  répertoires  qui  sont  modifiables  par  le  groupe  ou  par  les  autres  utilisateurs. On n’utilisera pas d’opérateurs.
+	$ find TREE/ -type d -perm /222
+	TREE/
+	TREE/lib
+	TREE/lib/kernel
+	TREE/lib/kernel/install.d
+	TREE/lib/kernel/config
+	TREE/lib/kernel/config/AA
+	TREE/lib/kernel/config/AA/BB
+	TREE/lib/kernel/config/AA/BB/CC
+	TREE/lib/kernel/config/AA/BB/CC/XX
+	TREE/lib/kernel/config/AA/BB/CC/YY
+	TREE/lib/auth
+	TREE/lib/krb5
+	TREE/lib/krb5/plugins
+	TREE/lib/krb5/plugins/kdb
+	TREE/lib/krb5/plugins/custom.install
+	TREE/lib/krb5/plugins/preauth
+	TREE/lib/krb5/synch
+
+	# 16.  des répertoires dont le contenu est lisible par tous. On n’utilisera pas d’opérateurs.
+	$ find TREE/ -type d -perm /111
+	TREE/
+	TREE/lib
+	TREE/lib/kernel
+	TREE/lib/kernel/install.d
+	TREE/lib/kernel/config
+	TREE/lib/kernel/config/AA
+	TREE/lib/kernel/config/AA/BB
+	TREE/lib/kernel/config/AA/BB/CC
+	TREE/lib/kernel/config/AA/BB/CC/XX
+	TREE/lib/kernel/config/AA/BB/CC/YY
+	TREE/lib/auth
+	TREE/lib/krb5
+	TREE/lib/krb5/plugins
+	TREE/lib/krb5/plugins/kdb
+	TREE/lib/krb5/plugins/custom.install
+	TREE/lib/krb5/plugins/preauth
+	TREE/lib/krb5/synch
+
+	# 17.  des fichiers réguliers dont les permissions sont exactement : lisibles et modifiables par le propriétaire, et seulement lisibles par les autres utilisateurs. On n’utilisera pas d’opéerateurs.
+	$ find TREE/ -type d -perm 644
+
+
+	# 1) On copie, dans chacun des répertoires lib/kernel/config/AA/BB/CC/, lib/kernel/config/AA/BB/CC/XX, lib/kernel/config/AA/BB/DD/, et lib/kernel/config/AA/BB/DD/YY, tous les fichiers réguliers de toute l’arborescence TREE dont le nom commence par un chiffre, et qui se trouvent à une profondeur d’au plus 4(donc moins de 5.)
+	$ find TREE/ -maxdepth 5 -type f -name [[:digit:]]*
+	TREE/lib/kernel/install.d/50-depmod.install
+	TREE/lib/kernel/install.d/90-loaderentry.install
+	TREE/lib/kernel/install.d/50-mkinitcpio.install
+
+	#	1  2 3 4 5 et commence par chiffre
+	$ find TREE/ -maxdepth 4 -type f -name [[:digit:]]* -exec cp {} TREE/lib/kernel/config/AA/BB/CC/XX/ \;
+	$ la TREE/lib/kernel/config/AA/BB/CC/XX/
+	-rwxr-xr-x 1 ramsamy students18  191 13 nov.  13:46 50-depmod.install
+	-rwxr-xr-x 1 ramsamy students18  173 13 nov.  13:46 50-mkinitcpio.install
+	-rwxr-xr-x 1 ramsamy students18 2052 13 nov.  13:46 90-loaderentry.install
+
+	$ find TREE/ -maxdepth 4 -type f -name [[:digit:]]* -exec cp {} TREE/lib/kernel/config/AA/BB/CC/ \;
+	$ la TREE/lib/kernel/config/AA/BB/CC/
+	-rwxr-xr-x 1 ramsamy students18  191 13 nov.  13:48 50-depmod.install
+	-rwxr-xr-x 1 ramsamy students18  173 13 nov.  13:48 50-mkinitcpio.install
+	-rwxr-xr-x 1 ramsamy students18 2052 13 nov.  13:48 90-loaderentry.install
+	drwxr-xr-x 2 ramsamy students18 4096 13 nov.  13:46 XX
+	drwxr-xr-x 2 ramsamy students18 4096  6 nov.  13:53 YY
+
+	$ find TREE/ -maxdepth 4 -type f -name [[:digit:]]* -exec cp {} TREE/lib/kernel/config/AA/BB/DD/ \;
+	$ la TREE/lib/kernel/config/AA/BB/DD/
+	-rwxr-xr-x 1 ramsamy students18  191 13 nov.  14:10 50-depmod.install
+	-rwxr-xr-x 1 ramsamy students18  173 13 nov.  14:10 50-mkinitcpio.install
+	-rwxr-xr-x 1 ramsamy students18 2052 13 nov.  14:10 90-loaderentry.install
+	drwxr-xr-x 2 ramsamy students18 4096  6 nov.  13:53 YY
+
+	# 2.  On donne la liste de tous les  éléments dans toute l’arborescence commençant par TREE dont le temps de dernier accès est passée d’au moins 30 minutes.
+	$ find TREE/ -amin +29	/* car strictement supérieur et on veut 30 minutes */
+	TREE/
+	TREE/lib
+	TREE/lib/kernel
+	TREE/lib/kernel/install.d
+	TREE/lib/kernel/install.d/50-depmod.install
+	TREE/lib/kernel/install.d/90-loaderentry.install
+	TREE/lib/kernel/install.d/50-mkinitcpio.install
+	TREE/lib/kernel/config
+	TREE/lib/kernel/config/AA
+	TREE/lib/kernel/config/AA/BB
+	TREE/lib/kernel/config/AA/BB/CC
+	TREE/lib/kernel/config/AA/BB/CC/XX
+	TREE/lib/kernel/config/AA/BB/CC/YY
+	TREE/lib/auth
+	TREE/lib/auth/transm.d
+	TREE/lib/krb5
+	TREE/lib/krb5/plugins
+	TREE/lib/krb5/plugins/play.in
+	TREE/lib/krb5/plugins/kdb
+	TREE/lib/krb5/plugins/kdb/db2.so
+	TREE/lib/krb5/plugins/kdb/kldap.so
+	TREE/lib/krb5/plugins/custom.install
+	TREE/lib/krb5/plugins/inout.dev
+	TREE/lib/krb5/plugins/preauth
+	TREE/lib/krb5/plugins/preauth/otp.so
+	TREE/lib/krb5/plugins/preauth/pkinit.so
+	TREE/lib/krb5/synch
+	TREE/lib/krb5/synch/atom.install
+	TREE/lib/krb5/synch/settings.sh
+
+	# 3.  On positionne les permissions d’accès à 0700 pour tous les répertoires dans l’arborescence
+	# commençant par TREE dont le nom commence par une majuscule, et qui se trouvent à
+	# une profondeur d’au moins 6 (donc plus de 5.)
+	$ find TREE/ -mindepth 6 -type d -name "[[:upper:]]*" -exec chmod 700 {} \;
+	# On met l'arguement de -name entre guillements <!>
+	$ la -R TREE/lib/kernel/config/AA/BB/
+	drwx------ 3 ramsamy students18 4096 13 nov.  14:09 CC
+	drwx------ 3 ramsamy students18 4096 13 nov.  14:10 DD
+	drwx------ 2 ramsamy students18 4096 13 nov.  13:46 XX
+	drwx------ 2 ramsamy students18 4096  6 nov.  13:53 YY
+
+	# 4.  On donne la liste de tous les  éléments dans toute l’arborescence commençant par TREE dont le
+	# temps de changement de statut remonte à au moins 15 minutes.
+	# <!> Normalement il n'y aurais pas eu les fichiers modifiés par le chmod mais j'ai pas été assez rapide...
+	$ find TREE/ -cmin +14 #	car strictement supérieur et on veut 15 minutes
+	TREE/
+	TREE/lib
+	TREE/lib/kernel
+	TREE/lib/kernel/install.d
+	TREE/lib/kernel/install.d/50-depmod.install
+	TREE/lib/kernel/install.d/90-loaderentry.install
+	TREE/lib/kernel/install.d/50-mkinitcpio.install
+	TREE/lib/kernel/config
+	TREE/lib/kernel/config/AA
+	TREE/lib/kernel/config/AA/BB
+	TREE/lib/kernel/config/AA/BB/CC/50-depmod.install
+	TREE/lib/kernel/config/AA/BB/CC/90-loaderentry.install
+	TREE/lib/kernel/config/AA/BB/CC/50-mkinitcpio.install
+	TREE/lib/kernel/config/AA/BB/CC/XX
+	TREE/lib/kernel/config/AA/BB/CC/XX/50-depmod.install
+	TREE/lib/kernel/config/AA/BB/CC/XX/90-loaderentry.install
+	TREE/lib/kernel/config/AA/BB/CC/XX/50-mkinitcpio.install
+	TREE/lib/auth
+	TREE/lib/auth/transm.d
+	TREE/lib/krb5
+	TREE/lib/krb5/plugins
+	TREE/lib/krb5/plugins/play.in
+	TREE/lib/krb5/plugins/kdb
+	TREE/lib/krb5/plugins/kdb/db2.so
+	TREE/lib/krb5/plugins/kdb/kldap.so
+	TREE/lib/krb5/plugins/custom.install
+	TREE/lib/krb5/plugins/inout.dev
+	TREE/lib/krb5/plugins/preauth
+	TREE/lib/krb5/plugins/preauth/otp.so
+	TREE/lib/krb5/plugins/preauth/pkinit.so
+	TREE/lib/krb5/synch
+	TREE/lib/krb5/synch/atom.install
+	TREE/lib/krb5/synch/settings.sh
+
+	# 1. dans l’arborescence commençant par /, les fichiers dont le nom se termine par .h et on arrête
+	# la recherche dès qu’on en trouve un. On ne veut pas voir les messages d’erreurs à l’écran.
+	$ find / -name "*.h" -print -quit 2> error
+	# on affiche avec -print et on arrête dès que l'on en as trouvé 1 avec -quit
+
+	#	2.  dans l’arborescence commençant par /, les  éléments dont la date de dernière modification est plus
+	# récente que celle du fichier transm.d. Pour chacun d’eux, on veut afficher le nom
+	# complet du fichier suivi, sur la mˆeme ligne, du symbole -- suivi, sur la même ligne, de la  date  de  dernière  modification,  et  avec  un  fichier  par  ligne.  On  ne  veut  pas  voir  les
+	# messages d’erreurs à l’ écran.
+	#
+	# ce qui donne : 	nom complet -- date dernière modification
+	# nom complet -- date dernière modification
+	# [...]
+	# PAS DE MESSAGES D'ERREUR ET UN FICHIER PAR LIGNE :
+	$ find / -newer TREE/lib/auth/transm.d -printf "%p -- %t\n" 2> error
+	# %p : nom du fichier
+	# %t : time de dernière modification
+	$ find / -newer TREE/lib/auth/transm.d -printf "%p -- %TD\n" 2> error
+	# %T format permet de spécifier un format de date de modification
+	# %D xx/yy/mm
+
+**Crédits**
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
