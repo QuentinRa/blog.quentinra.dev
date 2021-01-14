@@ -16,6 +16,10 @@ ftp
 ln -s [chemin_raccourcis] chemin nom
 printf "format" arguments
 
+------
+
+# (bases)
+
 Multiplicateurs de terminaux :
 ----------------------------------------
 
@@ -28,38 +32,3 @@ Créer un terminal vertical : ctrl-b % et un terminal horizontal : ctrl-b et san
 Supprimer un terminal : ctrl-b x
 Pour changer : ctrl-b ->
 Fermer les terminaux : ctrl-b d
-
--------------------------------------
-
-Processus
-
-fg #passe un processus au 1er plan, %numero permet de choisir lequel
-
-bg #passe un processus à l'arrière plan, %numero permet de choisir lequel
-
-& #passe un processus à l'arrière plan
-
-ps #liste les processus
-# -e (tous) -C (selon commande) -p (pid) -s (sid) -u (données) -o personnalisé : pid, (n° processus)
-# -t (chemin terminal /dev/pts/x) -j (job format) -l (long " ) -f (full ")
-#
-# ppid, (n° processus père) pgid, (n° groupe) tpgid (id processus 1er plan) sid (n°session)
-# comm (commande)
-
-ps <rien> : affiche processus du même euid et du même terminal
-Ex : ps renvoi 2 choses ps et bash
-Option -e : tous les processus
-Option -C <comande> : sélectionne selon <comande>
-Option -p 1234,3001 : sélectionne selon PID
-Option -s 1053 : sélectionne selon session (SID)
-Option -t /dev/pts/3 : sélectionne selon terminal (tty)
-Option -u <données> : sélectionne selon utilisateur
-
-Formatage : -j (job format)
--l (long format)
--f (full format)
--o (personnalisée selon attributs)
-Ex : ps -o pid, ppid, pgid, tpgid, sid, comm, etc…
-<n°processus, n°processus père, n°groupe, id groupe avant plan , n° session, commande>
-Jobs donne liste des processus et explicitant s’ils sont avant/arrière-plan.
-Fg : premier plan et bg arrière-plan

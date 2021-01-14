@@ -30,8 +30,8 @@
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/linux/_bash.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/_bash.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/bash.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/bash.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/files/scripts/args.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/scripts/args.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/base/sys.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/base/sys.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bric/proc.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/bric/proc.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -258,7 +258,9 @@
       <workItem from="1610400836717" duration="33000" />
       <workItem from="1610449930463" duration="29557000" />
       <workItem from="1610497254555" duration="3467000" />
-      <workItem from="1610536100782" duration="39089000" />
+      <workItem from="1610536100782" duration="39149000" />
+      <workItem from="1610584743496" duration="224000" />
+      <workItem from="1610621154663" duration="1077000" />
     </task>
     <servers />
   </component>
