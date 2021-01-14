@@ -68,6 +68,9 @@ vous allez passer un descripteur : soit 1 (=stdout) soit 2 (=stderr).
 	Écris taille caractères et retourne le nombre de caractères écris. Si write retourne -1 alors
 	l'écriture a échouée.
 
+	| Un exemple typique est :code:`write(1, "Hello, World", 12);`.
+	| Un exemple rare est :code:`write(1, &x, sizeof(int));` pour écrire un entier (donc x est de type int).
+
 	.. attribute:: buf
 
 		Une adresse d'une variable/tableau de ce qu'il faut écrire.
@@ -127,3 +130,21 @@ Quelques autres méthodes utiles
 		 time_t    st_mtime;   /* time of last modification */
 		 time_t    st_ctime;   /* time of last status change */
 		};
+
+.. method:: long strtol(const char *string, char **check, int base);
+
+	Une fonction pour convertir un argumenter en int.
+
+	.. attribute:: string
+
+		Une chaine de caractères donc par exemple "2".
+
+	.. attribute:: check
+
+		Un pointeur pour vérifier la conversion. Généralement ce n'est pas vérifié (par nous) donc on passe
+		:code:`NULL`.
+
+	.. attribute:: base
+
+		Mettez 10 pour base 10 donc les nombres normaux, sinon une base. Si vous mettez 0 alors le base
+		sera automatiquement détectée.

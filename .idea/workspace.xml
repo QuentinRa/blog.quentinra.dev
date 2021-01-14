@@ -29,10 +29,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/exercices/__d.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/exercices/more.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/exercices/more.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/exercices/motifs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/exercices/motifs.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/files/bric/convert.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/bric/convert.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bric/redirect.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/bric/redirect.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/enc/float.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/enc/float.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/sys/methods.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/sys/methods.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/index.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +64,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/linux/exercices/motifs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/linux/exercices/float" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
@@ -79,11 +79,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\annales\p\rep" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices\float" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices\motifs" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\linux\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices\more" />
       <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices\sys" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices\scripts\files" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -261,7 +261,7 @@
       <workItem from="1610497254555" duration="3467000" />
       <workItem from="1610536100782" duration="39149000" />
       <workItem from="1610584743496" duration="224000" />
-      <workItem from="1610621154663" duration="14372000" />
+      <workItem from="1610621154663" duration="17333000" />
     </task>
     <servers />
   </component>

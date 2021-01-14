@@ -23,6 +23,9 @@ On considère f0 et f1 des flux de données (donc par exemple :code:`cat fichier
 
 Exemple : stocker le man de ls dans fi.txt :code:`man ls > fi.txt`.
 
+Une redirection souvent utilisée est :code:`... commande ... 2> /dev/null`. Il s'agit
+de rediriger toutes les erreurs dans un fichier poubelle donc on ne verra aucune erreur.
+
 Un pipe est un tube qui fait que le résultat (sorties) d'une commande
 deviennent automatiquement l'entrée d'une autre commande.
 

@@ -4,8 +4,8 @@
 Architecture Linux
 ================================
 
-| :math:`\color{grey}{Version \ 2.1.3}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 12/01/2021}`
+| :math:`\color{grey}{Version \ 2.1.4}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 14/01/2021}`
 
 Ce cours est une approche principalement théorique de linux, vous y trouverez notamment
 des explications sur
@@ -163,15 +163,7 @@ serait
 .. toctree::
 	 :maxdepth: 1
 
-		Introduction et utilisation générale    <exercices/begin>
-		Utilisateurs et Permissions        			<exercices/perms>
-		Motifs et expression régulières 			  <exercices/motifs>
-		Processus          			                <exercices/proc>
-		Recherche          			                <exercices/find>
-		Scripts			                            <exercices/scripts>
-		Appels systèmes                         <exercices/sys>
-		Bases  (2, 8, 16, ...)                  <exercices/bases>
-		Autres Commandes (expr, sort, ...) 	    <exercices/more>
+		Représentation des nombres réels        <exercices/float>
 		Annales                                 <annales/index>
 
 -----
