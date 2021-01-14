@@ -47,6 +47,68 @@ Donnez une commande pour afficher le contenu de
 
 | :code:`[TAG] IUTSF ASR TD3 2018 S1`
 
+3. sed le StreamEditor
+-------------------------------
+
+| On récupère le fichier :download:`message.hex <../../../assets/system/linux/exercices/message.hex>`.
+
+À l’aide de la commande sed
+
+1. \
+	Sans modifier le fichier, on affiche à l’écran le résultat de la transformation obtenue
+	en insérant ZZZZ
+
+		(a) Avant chaque ligne.
+		(b) Au début du ficher.
+		(c) Avant la dernière ligne.
+		(d) Après chaque ligne.
+		(e) Après la dernière ligne.
+
+2. \
+	On insère une ligne vide après chaque ligne du fichier en enregistrant le résultat dans le
+	fichier Message.hex.
+3. On insère une ligne vide après la ligne 2.
+4. On insère Hello avant la première ligne et Bye après la dernière ligne.
+5. \
+	Sans modifier Message.hex, on affiche le résultat de la suppression de toutes les lignes
+	vides du fichier Message.hex.
+6. On remplace toute occurrence d’un caractère d’espacement dans message.hex par ?
+7. On remplace toute suite de caractères d’espacement dans message.hex par ?
+
+.. toctree::
+   :maxdepth: 1
+
+		Proposition de correction n°1			<motifs/d3>
+
+| :code:`[TAG] IUTSF ASR TP8 2018 S1`
+
+4. awk
+-------------------------------
+
+| On récupère le fichier :download:`message.hex <../../../assets/system/linux/exercices/message.hex>`.
+
+A l’aide de la commande awk :
+
+1. À partir du fichier message.hex, on affiche :
+
+		(a) Le premier champ (mot) de chaque ligne.
+		(b) Le troisième champ de chaque ligne.
+		(c) Le nombre de champs de chaque ligne.
+		(d) Les lignes dont le nombre de champs est plus petit que 2.
+		(e) Le quatrième champ de la troisième ligne.
+
+2. On affiche :
+
+		(a) La taille de chaque fichier/répertoire contenu dans le répertoire /etc/
+		(b) Les noms des fichiers/répertoires de /etc/ dont la taille est supérieure à 512 octets.
+
+.. toctree::
+   :maxdepth: 1
+
+		Proposition de correction n°1			<motifs/d4>
+
+| :code:`[TAG] IUTSF ASR TP8 2018 S1`
+
 Niveau supérieur
 ***********************
 

@@ -1,0 +1,71 @@
+================================
+3. sed le StreamEditor
+================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+.. code:: bash
+
+		# sed est un éditeur de texte non interactif, c'est à dire qu'il ne permet pas de modifier
+		# de fichier en lui même, mais il est
+		# capable de modifier l'affichage du fichier sur l'entrée standard.
+		#
+		# FORME : sed '<numéro_ligne>basic-command\<texte>' <fichier>
+		# Résultat : sed affiche le message modifié selon basic-command à l'entrée standard.
+		#
+		# Ex sed '2a\lol' message.hex # met lol après la 2e ligne de message.hex.
+		#
+		# Les basic-command sont :
+		# a : ajouter <texte> après la ligne indiqué dans <numéro_ligne>
+		# i : ajouter <texte> avant la ligne indiqué dans <numéro_ligne>
+		# c : supprime la ligne <numéro_ligne> et met le texte à la place.
+		#
+		# Deux valeurs raccourcis pour le <numéro_ligne> sont :
+		# rien pour dire toutes les lignes
+		# $ pour dire la dernière ligne
+
+		# 1. Sans modifier message.hex, on affiche le résultat de l'insertion de ZZZZ ...
+		# (a) Avant chaque ligne
+		$ sed 'i\ZZZZ' message.hex
+
+		# (b) Au début du fichier
+		$ sed '1i\ZZZZ' message.hex
+
+		# (c) Avant la dernière ligne
+		$ sed '$i\ZZZZ' message.hex
+
+		# (d) Après chaque ligne
+		$ sed 'a\ZZZZ' message.hex
+
+		# (e) Après la dernière ligne
+		$ sed '$a\ZZZZ' message.hex
+
+		# 2. On insère une ligne vide après chaque ligne et on dirige la sortie dans Message.hex :
+		#
+		# On note que pour écrire une nouvelle ligne, on se contente d'écrire un \.
+		$ sed 'a\\' message.hex > Message.hex
+		# Et a redirigé la sortie dans Message.hex
+
+		# 3. On insère une ligne vide après la ligne 2 :
+		$ sed '2a\\' message.hex
+
+		# 4. On insère Hello avant la 1ere ligne et Bye après la dernière ligne.
+		$ sed '1i\Hello' message.hex | sed '$a\Bye'
+
+		# 5. Sans modifier Message.hex, on affiche la suppression de toutes ses lignes vides.
+		# L'option d permet de supprimer.
+		$ sed -e '/^$/d'
+		# Le ^ signifie début de la ligne et $ fin de la ligne. Etant donné qu'il n'y a rien entre le ^ et $ cela signifie que toutes les lignes qui entre le début et la fin ont rien vont être supprimés (=lignes vides).
+
+		# 6. On remplace toutes caractère d'espacement par ? :
+		# Forme : sed 's/motif_a_remplacer/motif_remplacement/<option>' <fichier>
+		# Résultat : avec g tous les motifs à remplacer seront remplacés, avec rien seulement le 1er sera remplacé.
+		# L'option -e (non obligatoire) permet de dire que tu vas peut être trouver quelque chose de bizarre mais c'est pas grave.
+		$ sed -e 's/[[:space:]]/?/g' message.hex
+
+		# 7. On remplace toute suite d'espacement par ? :
+		$ sed -e 's/[[:space:]][[:space:]]*/?/g' message.hex
+
+**Crédits**
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)

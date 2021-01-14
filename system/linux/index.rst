@@ -163,7 +163,16 @@ serait
 .. toctree::
 	 :maxdepth: 1
 
-		Annales                     <annales/index>
+		Introduction et utilisation générale    <exercices/begin>
+		Utilisateurs et Permissions        			<exercices/perms>
+		Motifs et expression régulières 			  <exercices/motifs>
+		Processus          			                <exercices/proc>
+		Recherche          			                <exercices/find>
+		Scripts			                            <exercices/scripts>
+		Appels systèmes                         <exercices/sys>
+		Bases  (2, 8, 16, ...)                  <exercices/bases>
+		Autres Commandes (expr, sort, ...) 	    <exercices/more>
+		Annales                                 <annales/index>
 
 -----
 

@@ -137,7 +137,7 @@ vous ferriez un :code:`man 3 fopen`).
 		Scripts			                            <exercices/scripts>
 		Appels systèmes                         <exercices/sys>
 		Bases  (2, 8, 16, ...)                  <exercices/bases>
-		Commandes complexes (expr, sort, ...) 	<exercices/more>
+		Autres Commandes (expr, sort, ...) 	    <exercices/more>
 		Annales                                 <annales/index>
 
 --------
