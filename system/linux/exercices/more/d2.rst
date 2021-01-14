@@ -1,0 +1,59 @@
+================================
+2. Commande sort
+================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+.. code:: bash
+
+		# La commande sort trie les lignes d'un fichier, elle travaille sur l'entrée standard
+		# si le fichier n'est pas indiqué.
+		#
+		# L'option -b permet d'ignorer les blancs.
+		# L'option -n permet de trier selon les valeurs numériques.
+		# L'option -r permet de trier dans l'ordre inverse du tri actuel.
+		# L'option -k permet d'appliquer le tri à un certain champ (colonne). On peut définir de
+		# ou à ou avec un intervalle -k 4.5,4.7 pour du champ 4, 5eme caractère au champ 4, 7eme caractère.
+		# L'option -t permet d'écrire un séparateur de champ par exemple si le champ 3 est : champ 3 :
+		# alors si on écrit t: les : seront considérés comme un séparateur de champs en plus des espaces qui
+		# le normalement.
+
+		# 1) On le trie par ordre croissant sur la taille des éléments.
+		$ sort -nb -k 5 ls-output.txt
+		# On le trie par ordre décroissant sur la taille des éléments.
+		$ sort -nbr -k 5 ls-output.txt
+
+		# La commande tail permet de voir les dernières lignes d'un fichier.
+		# L'option -n permet de dire la nombre de ligne que l'on veut afficher.
+		# On souhaite supprimer la première ligne du fichier ls-output :
+		# total 1048
+		$ sort -nbr ls-output.txt
+		# affiche total 1048 au début donc on est prêt pour utiliser tail c'est à dire prendre toutes
+		# les lignes sauf la première
+		sort -nbr ls-output.txt | tail -n +2
+		# Sachant qu'avec tail nous sommes à la dernière ligne alors +1 nous arrivons à la 1ere
+		# et +2 à la deuxième donc on coupe de
+		# la ligne ou on est jusqu'à la dernière.
+		# Dès que je dis "coupe", c'est pas "on la retire" mais on la coupe du fichier de base pour la prendre.
+		# On re-trie par ordre croissant :
+		$ sort -nbr ls-output.txt | tail -n+1 | sort -nb -k 5
+
+		# par ordre décroissant :
+		$ sort -nbr ls-output.txt | tail -n+1 | sort -nbr -k 5
+
+		==============================
+		= On trie find-output.txt
+		==============================
+
+		# 1) par ordre de date de dernière modification de la plus récénte à la moins récente :
+		$ sort -nbrt: -k 2.1,2.4 -k 2.6,2.7 -k 2.9,2.10 find-output.txt
+
+		# 2) par ordre de date de dernière modification de la plus ancienne à la moins ancienne :
+		$ sort -nbt: -k 2.1,2.4 -k 2.6,2.7 -k 2.9,2.10 find-output.txt
+
+		# On note le t: pour considérer les : comme un séparateur de champs, le -k 2.1,2.4
+		# permet de prendre du 1er caractère au 4ème du 2ème champ et ainsi de suite...
+
+**Crédits**
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)

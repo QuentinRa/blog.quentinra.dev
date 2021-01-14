@@ -109,6 +109,42 @@ A l’aide de la commande awk :
 
 | :code:`[TAG] IUTSF ASR TP8 2018 S1`
 
+5. Recap des expression régulières
+-------------------------------------
+
+1. Quels chaînes de caractères cherche t'on a attraper avec
+
+	* :code:`'^$'`
+	* :code:`'^...$'`
+	* :code:`'.c$'`
+	* :code:`'.[config]$'`
+	* :code:`'^..[$'`[:digit:]]'`
+	* :code:`'^.\.[[:digit:]]'`
+	* :code:`[^[[:upper:]]].$'`
+
+2. Quels chaînes de caractères cherche t'on a attraper avec
+
+	* :code:`'T?ST?AR'`
+	* :code:`'(back)?(slash)?'`
+	* :code:`'^[[:space:]]*$'`
+	* :code:`'^.?..$'`
+	* :code:`'^[[:space:]]+$'`
+	* :code:`'[$][[:digit:]]?$'`
+
+3. Quels chaînes de caractères cherche t'on a attraper avec
+
+	* :code:`'[.](config|cfg)'`
+	* :code:`'[$]([[:digit:]]|$)'`
+	* :code:`'(.{3})(.{5})\2\1`
+	* :code:`'[$]([[:digit:]]|$)'`
+
+.. toctree::
+   :maxdepth: 1
+
+		Proposition de correction n°1			<motifs/d5>
+
+| :code:`[TAG] IUTSF ASR TD10 2018 S1`
+
 Niveau supérieur
 ***********************
 

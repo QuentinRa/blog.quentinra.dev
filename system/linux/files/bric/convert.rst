@@ -8,3 +8,9 @@ Conversion et bases : #, hexdump, ...
 	| :code:`-b` : octal
 	| :code:`-C` : hexadécimal
 	| :code:`-e` : personnalisable
+
+Le bash peut faire des conversions de chiffres pour vous
+avec :code:`base#nombre`. Il s'agit d'un calcul donc vous devez le mettre dans le bon bloc
+
+	* :code:`$[base#nombre]`
+	* Ex: :code:`echo $[2#101]` : affiche 5

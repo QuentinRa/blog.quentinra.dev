@@ -1,0 +1,40 @@
+================================
+1. Commande expr
+================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+.. code:: bash
+
+		# Forme : expr length <mot>
+		# Résultat : affiche la taille de <mot>.
+
+		# 1.
+		$ expr length stock_market
+		# retourne 12 car stock_market contient 12 caractères
+
+		# Forme : expr substr <chaine_caractères> <position> <x>
+		# Résultat : affiche x caractères depuis la position dans la chaine de caractères
+
+		# 2.
+		$ expr substr stock_market 1 5
+		# retourne stock soit depuis la position 1 : s et longueur 5 stock
+
+		# 3.
+		$ expr substr stock_market 7 12
+		# retourne market soit depusi la position 7 : m et de longueur 12 market
+
+		# Forme : expr index <chaine_caractères> <caractère*>
+		# Résultat : affiche la position du 1er des caractères qu'il trouve
+
+		# 4.
+		$ expr index stock_market "_"
+		# retourne 6 car le 1er caractère qu'il a trouvé est _ en 6
+
+		# 5.
+		$ expr index stock_market "_c"
+		# retourne 4 car le 1er caractère qu'il a trouvé est c en 4
+
+**Crédits**
+	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
