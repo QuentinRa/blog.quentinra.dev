@@ -40,12 +40,53 @@ Niveau débutant
 
 		Proposition de correction n°1			<bases/d1>
 
-| :code:`[TAG] IUTSF ASR TP5 2018 S1`
+| :code:`[TAG] IUTSF ASR TD5 2018 S1`
 
 Niveau supérieur
 ***********************
 
-aucun
+1. Message crypté
+------------------------------
+
+| On récupère le fichier :download:`message.hex <../../../assets/system/linux/exercices/message.hex>`.
+| On récupère le fichier :download:`message.oct <../../../assets/system/linux/exercices/message.oct>`.
+
+1. \
+	Après avoir regardé les fichiers, donner les commandes hexdump qui depuis un message.txt ont donné
+	les fichiers message.hex et message.oct (vous n'avez évidement pas le message.txt pour tester).
+2. \
+	Déduire ce que signifie le premier champ sur chaque ligne, dans chacun des deux fichiers. On en
+	donne les valeurs en décimal.
+3. \
+	On déduit, du point précédent la taille, en octets, du fichier message.txt
+
+4. On affiche à l’aide de echo :
+
+	1. \
+		La chaîne de caractères formée par le caractère dont la valeur du code ascii est celle du
+		premier octet dans le fichier message.hex
+
+	2. \
+		La chaîne de caractères formée par les deux caractères dont les valeurs du code ascii sont
+		celles du premier et du deuxième octets dans le fichier message.hex
+	3. \
+		En utilisant des techniques des TP précédents, on affiche à l’écran, le résultat obtenu
+		à partir du fichier message.hex, en omettant de chaque ligne son premier champ et en
+		substituant chaque suite de caractères d’espacement par \x
+	4. \
+		En faisant un copier-coller, à partir du résultat obtenu à l’écran suite à la transformation
+		précédente, on reconstitue le fichier message.txt dans son répertoire
+	5. \
+		On vérifie la taille du fichier trouvée avec la taille trouvée en 3
+
+5. On refait 4 mais avec message.oct
+
+.. toctree::
+   :maxdepth: 1
+
+		Proposition de correction n°1			<bases/s1>
+
+| :code:`[TAG] IUTSF ASR TP8 2018 S1`
 
 Niveau avancé
 ***********************
