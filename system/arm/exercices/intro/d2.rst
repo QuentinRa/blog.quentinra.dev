@@ -1,0 +1,48 @@
+================================
+2. Compréhension de code
+================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+.. code:: ca65
+
+		 .data
+		; word = 4 octets
+		int1: .word 78
+		int2: .word 1003
+		int3: .word -4
+
+		 .text
+		 .globl _start
+		_start:
+		 ; mets dans r0 l'adresse de l'entier 1
+		 ; mets la valeur contenue à l'adresse dans r0 dans r1
+		 ldr r0, =int1
+		 ldr r1, [r0]
+
+		 ; pareil mais int2 dans r2
+		 ldr r0, =int2
+		 ldr r2, [r0]
+
+		 ; pareil mais int3 dans r3
+		 ldr r0, =int3
+		 ldr r3, [r0]
+
+		 ; met r1 dans r4
+		 mov r4, r1
+
+		 # Z = 0 et N = 0 (positif). On a fait r2-r4 donc 1003-78
+		 cmp r2, r4
+		 ; condition ok (!N) donc on met r2 dans r4
+		 movpl r4, r2
+
+		 ; N = 1
+		 cmp r3, r4
+		 ; on ne fait pas (!N)
+		 movpl r4, r3
+
+Le programme cherche le plus grand des 3.
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

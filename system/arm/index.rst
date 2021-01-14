@@ -4,8 +4,8 @@
 Assembleur (ARM)
 ================================
 
-| :math:`\color{grey}{Version \ 1.2.3}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 02/12/2020}`
+| :math:`\color{grey}{Version \ 1.3.5}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 14/01/2021}`
 
 1. Introduction
 ===================================
@@ -30,6 +30,11 @@ ou alors directement "linker" pour obtenir une exécutable.
 		ld -O0 file.o # donne a.out
 		#Lancement
 		./a.out
+
+Un truc pratique : la commande :code:`objdump` qui donne le code
+assembleur d'un .c (par contre c'est beaucoup plus compliqué que ce que vous feriez).
+
+Ex : :code:`gcc fichier.c` puis :code:`objdump -d a.out`.
 
 2. Coder en ARM
 ================
@@ -121,6 +126,9 @@ Il est possible d’effectuer des opérations simples (décalages) sur Operand2 
     :name: exercices
     :maxdepth: 1
 
+			Exercices en vrac       <exercices/intro>
+			Annales                 <annales/index>
+
 -----
 
 **Crédits**
@@ -137,3 +145,4 @@ Il est possible d’effectuer des opérations simples (décalages) sur Operand2 
 	* https://www.tutorialspoint.com/assembly_programming/assembly_system_calls.htm
 	* https://en.wikipedia.org/wiki/Stack_register
 	* https://www.elprocus.com/what-is-stack-stack-pointer-types-operations-its-application/
+	* http://www.davespace.co.uk/arm/introduction-to-arm/

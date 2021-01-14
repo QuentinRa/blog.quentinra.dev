@@ -1,0 +1,16 @@
+=======================================
+1. Compréhension des instructions
+=======================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+1. :code:`ldr r1, [r0]` équivaux à :code:`r1 := [r0]`
+2. :code:`cmp r7, r8`  équivaux à :code:`set NZCV après calcul de r7-r8`
+3. :code:`eorne r7, r8, r8`  équivaux à :code:`if(Z==0){ r7 := r8 EOR r8}`
+4. :code:`subs r3, r2, #5`  équivaux à :code:`r2 := r2 - 5`
+5. :code:`mvnne r3, r2`  équivaux à :code:`if(Z == 0){ r3 := ^r2 }` (^ = XOR bit à bit)
+6. :code:`rsbles r3, r2, #0`  équivaux à :code:`if(Z || N != V){r3 := #0 - r2 - NOT(carry)}`
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
