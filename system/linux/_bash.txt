@@ -1,25 +1,3 @@
-..
-aptitude install manpages-dev
-build-essential installe make gcc ...
-ls *.{jpg,jpeg,png}
-
-gcc #permet de compiler un executable
-#-o (renommer sortie) -g (pleins infos) -lm (math.h) -lgraph (graph.h) -lpthread (threads.h)
-#-c (fichier objet) -MM (dépendances) -ansi (standard 89) -Wall (avertissement struct)
-#-E (fichier intermédiaires) -pedantic (strict check)
-
-#
-alias
-patch -i <patch> -o <sortie> : fait un diff sur un original
-ldap
-ftp
-ln -s [chemin_raccourcis] chemin nom
-printf "format" arguments
-
-------
-
-# (bases)
-
 Multiplicateurs de terminaux :
 ----------------------------------------
 
@@ -32,3 +10,7 @@ Créer un terminal vertical : ctrl-b % et un terminal horizontal : ctrl-b et san
 Supprimer un terminal : ctrl-b x
 Pour changer : ctrl-b ->
 Fermer les terminaux : ctrl-b d
+
+------
+
+# (bases)

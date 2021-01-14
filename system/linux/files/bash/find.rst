@@ -2,6 +2,12 @@
 Recherche : find, whereis, locate, which
 =============================================
 
+Vous pouvez faire de la recherche en jouant avec les motifs,
+par exemple afficher tous les png ou jpg ou les gifs
+avec ls :code:`ls *.{jpg,gif,png}`. Vous pouvez également afficher
+tous les .h par exemple :code:`ls *.h` mais attention, cela n'offre
+aucune garantie dans le sens que cela affiche les dossiers et les fichiers.
+
 Commande :code:`find <répertoire>` : recherche de dossiers/fichiers
 	| :code:`-type` : f=fichier, d=dossiers
 	| :code:`-empty` : trucs vides

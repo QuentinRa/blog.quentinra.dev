@@ -24,3 +24,11 @@ Commande :code:`ssh login@host` : permet de se connecter à une autre machine
 	| :code:`-u` : port, optionnel si 22
 
 Commande :code:`diff <fichier> <fichier>` : montre la différence entre deux fichiers
+
+Commande :code:`patch <fichier> <patch>` : patch un fichier
+	Jamais utilisé mais je laisse ça là si besoin.
+
+	| :code:`-i <patch>` : donner le patch
+	| :code:`-o <path>` : définir le chemin de sortie
+
+Autres : ldap, ftp...

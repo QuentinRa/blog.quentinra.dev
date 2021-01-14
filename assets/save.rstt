@@ -44,6 +44,14 @@
 
 ****** uml - fin *********
 
+.. method:: ...
+
+	...
+
+	.. attribute:: ...
+
+		...
+
 .. class:: Request
 
   Zero or more paragraphs of introductory material for the class.

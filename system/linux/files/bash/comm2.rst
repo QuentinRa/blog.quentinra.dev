@@ -23,3 +23,10 @@ Commande :code:`rm <chemin>*` : Permet de supprimer un fichier/dossier
 	| :code:`-r` : supprimer un dossier et ses sous-dossier (existe aussi :code:`rmdir`
 	| :code:`-f` : sans confirmation (si destination existe)
 	| :code:`-i` : demander confirmation si destination existe
+
+Commande :code:`ln` : Permet de créer un lien symbolique
+	Forme est : :code:`ln -s chemin_i chemin_o`.
+
+	| :code:`-s` : lien symbolique vers chemin_lien
+	| :code:`chemin_i` : cible du lien
+	| :code:`chemin_o` : destination du fichier créé

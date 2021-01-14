@@ -31,7 +31,18 @@ Utilitaire de survie I : man, ls, cd, cat
 	| :code:`-n` : pas de saut de ligne après le echo
 	| :code:`-e` : -caractère hexadécimal, ...
 
+	Alternativement, vous pouvez utiliser :code:`printf "format" arguments` pour faire des echo
+	dynamiques.
+
 :code:`cat <fichier>` ou :code:`less <fichier>` : vous permet de lire un fichier
 	Pour fermer un fichier ouvert avec less, appuyez sur q.
 
 :code:`pwd` : affiche le chemin du répertoire actuel (chemin absolu)
+
+:code:`alias` : permet de créer une commande depuis une autre commande
+	Mon alias préféré est :code:`la` qui fait la commande :code:`ls -la`.
+
+	Sans arguments, affiche tous les alias. Pour changer définitivement un alias,
+	il faut le mettre dans votre .bashrc.
+
+	| :code:`<commande1>='<commande2>'` : commande1 fera maintenant commande2

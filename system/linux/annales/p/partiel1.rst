@@ -54,7 +54,7 @@ Exercice 8
 		00000010
 
 (a)	Combien d’entiers signés contient integer.dat ?
-(b)
+(b) \
 	|
 		En exprimant -si on le souhaite- le résultat simplement à l’aide de puissance de 2,
 		quelle est en décimal la valeur de chacun de ces entiers pour une machine little-endian ?

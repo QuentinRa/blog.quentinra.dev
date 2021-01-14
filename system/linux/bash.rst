@@ -37,6 +37,7 @@ donc par exemple :code:`calistro@MSI:~$`.
 	 :maxdepth: 1
 
 		 .bashrc              <files/bash/bashrc>
+		 Utilitaire de dev    <files/bash/utils>
 
 2. Commandes
 ===========================
@@ -54,8 +55,8 @@ de chaque commande.
 .. toctree::
 	 :maxdepth: 1
 
-			Utilitaire de survie I : man, ls, cd, cat, echo, pwd        <files/bash/comm1>
-			Utilitaire de survie II : mkdir, touch, mv, cp, rm          <files/bash/comm2>
+			Utilitaire de survie I : man, ls, cd, cat, echo, pwd, alias <files/bash/comm1>
+			Utilitaire de survie II : mkdir, touch, mv, cp, rm, ln      <files/bash/comm2>
 			Utilitaire de survie III : éditeur de texte                 <files/bash/idt>
 			Permissions : chmod et umask                                <files/bash/perms>
 			Recherche : find, whereis, locate, which                    <files/bash/find>
@@ -68,9 +69,9 @@ de temps en temps
 .. toctree::
 	 :maxdepth: 1
 
-			Traitement de texte : wc, nl, tail, tr, sort, expr   <files/bash/comm4>
-			Utilitaire de survie spécial : tar, wget, ssh        <files/bash/comm5>
-			Connaitre son environnement : id, uname, stat, file  <files/bash/comm6>
+			Traitement de texte : wc, nl, tail, tr, sort, expr           <files/bash/comm4>
+			Utilitaire de survie spécial : tar, wget, ssh, diff, patch   <files/bash/comm5>
+			Connaitre son environnement : id, uname, stat, file          <files/bash/comm6>
 
 3. Bric à brac
 ==================================
@@ -119,7 +120,8 @@ vous ferriez un :code:`man 3 fopen`).
 .. toctree::
 	 :maxdepth: 1
 
-		 Appels systèmes en C   <files/base/sys>
+		 Appels systèmes en C   <files/sys/methods>
+		 Code théorique         <files/sys/code>
 
 6. Exercices
 ===========================
