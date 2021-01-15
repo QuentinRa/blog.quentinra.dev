@@ -16,7 +16,7 @@ le digital dans l’ensemble de ses activités.
 
 L’adhésion des salariés est indispensable et critique dans la réussite de la transformation.
 
-	*	numérique : cloud, CRM, IA, …
+	*	numérique : cloud, CRM, IA, ...
 	*	digitale : numérique + comprendre les attentes des consommateurs (IOT, M-Commerce)
 
 **L’objectif clef est la création de valeur pour le client.**

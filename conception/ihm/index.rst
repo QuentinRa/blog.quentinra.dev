@@ -213,12 +213,12 @@ Ex: les débutants utiliseront <copier> tandis que les experts auront tendance �
 ****************
 
 On ne doit montrer que les informations utiles (ne pas écrire un gros paragraphe pour 3 mots utiles,
-des images qui ne servent à rien…) qui complètent les informations nécessaires.
+des images qui ne servent à rien...) qui complètent les informations nécessaires.
 
 9. Gérer les erreurs/robustesse
 ********************************
 
-On prévient l’utilisateur lorsqu’une erreur arrive (mettre en rouge…), propose possiblement une solution (un lien qui règle problème).
+On prévient l’utilisateur lorsqu’une erreur arrive (mettre en rouge...), propose possiblement une solution (un lien qui règle problème).
 
 10. Documentation
 ************************

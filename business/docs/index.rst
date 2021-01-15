@@ -19,7 +19,7 @@ Les éléments obligatoires sont :
 
 	*	Dénomination Sociale (=nom), Adresse du siège, RCS (registre du commerce (métiers pour les artisans) et des sociétés). Assurances si le métier l’oblige.
 	*	Date Facture et/ou Date Prestation. N° de facture : par ordre chronologique et unique.
-	*	Quantité, désignation précise des produits (marque…), Prix unitaire HT (hors taxes), Montant HT (Quantité * Prix Unitaire), Taux TVA, Montant TVA et le Montant TTC.
+	*	Quantité, désignation précise des produits (marque...), Prix unitaire HT (hors taxes), Montant HT (Quantité * Prix Unitaire), Taux TVA, Montant TVA et le Montant TTC.
 	*	Réductions commerciales (taux, montant). Majorations (transport, emballage, montage)
 	*	Modalités de paiement (Paiement comptant -> escompte (remise) ou Pénalités (oubli de payer)), retard
 	*	Conditions de Livraison

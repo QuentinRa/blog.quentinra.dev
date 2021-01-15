@@ -44,7 +44,7 @@ Il existe 4 familles de patrons :
 	* **Iterator** : Le patron Iterator (+Iterable) permet d’itérer un objet sans connaitre son contenu. (parcours de façon générique, simultanée sans duplication).
 	* **Observable** : Le patron Observable (+Observer) associe à un observer des objets observables qu’il peut actualiser s’il a changé (utile répercuter M->V).
 	* **Décorateur** : pointeur sur un objet, rédéfini de ses méthodes
-	* **Memento** : charge et sauvegarde objet, ou utiliser fichiers xml, json, bd…
+	* **Memento** : charge et sauvegarde objet, ou utiliser fichiers xml, json, bd...
 	* **NullObjet** : classe dont les méthodes ne font rien
 
 4. Patrons d’architecture

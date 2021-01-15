@@ -72,7 +72,7 @@ Certains plutôt que de les mettre dans la classe, préfère les mettre sur les 
 
 Opérations
 
-Une opération est de la forme :code:`v nom(args: type,…) : r`.
+Une opération est de la forme :code:`v nom(args: type, ...) : r`.
 
 	* :code:`v` : facultatif, la visibilité de l'attribut (publique par défaut notée +, privé -, package ~ et hérité #).
 	* :code:`args:type` : facultatifs, pour chaque argument de l'opération, on met :code:`args` : le nom et :code:`type`: le type de l'argument

@@ -22,10 +22,10 @@ La logique Keynésienne
 	demandant à la Banque Centrale de diminuer les taux d’intérêt.
 
 La logique néoclassique
-	Le chômage est alors dû à un coût du travail trop élevé, donc ce n'est pas rentable d'embaucher. L’Etat
+	Le chômage est alors dû à un coût du travail trop élevé, donc ce n'est pas rentable d'embaucher. L’État
 	doit lutter contre ce qui empêchent le marché du travail de
 	« fonctionner correctement » (syndicats, salaire minimum, protection de l’emploi, allocations
-	chômage…). Une alternative consiste à baisser les charges sociales sur les bas salaires afin de concilier
+	chômage...). Une alternative consiste à baisser les charges sociales sur les bas salaires afin de concilier
 	une équité redistributive et lutter contre le chômage.
 
 Plus récemment, une troisième école est apparue, la synthèse moderne qui concilie les deux autres écoles.

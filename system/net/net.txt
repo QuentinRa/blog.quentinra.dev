@@ -1,0 +1,113 @@
+ifconfig #version obsolète de ip a, permet d’obtenir des info sur le réseau
+#Note : RT = paquets reçus, TX = paquets transmis
+#ifconfig nom interface : affiche les infos d’une interface
+#
+#-a : affiche toutes les interfaces
+
+hostname # renvoi le nom de l’host
+
+ping #interroge une machine (=envoie un signal attendant une réponse)
+#-c <x> : arrêter après avoir fait le Ping x fois
+#-b <broadcast address> : Ping toutes les adresses du réseau
+#-t <timeToLive> : nombre de transit max du paquet
+#-s <size> : taille du ping
+
+arp #version obsolète de ip n, affiche le cache ARP (voir partie concernée pour des explications)
+
+route #version obsolète de ip r, affiche les routes configurés (voir partie concernée)
+
+dig #permet de se connecter à un domaine à la ligne de commande
+#@serveur : demande si ce serveur connait adresse/nom
+#nom/adresse : sur quoi chercher les données
+#
+#-t : indique le type de données que l’on veut obtenir parmi
+# 	NS : nom du serveur
+# 	A : ipv4 (défaut)
+# 	AAAA : ipv6
+# 	MS : serveur de mail
+# -x obtenir le nom si on a donné une adresse
+
+whois # obtenir des infos sur le réseau d’une adresse/nom
+#adresse/nom : sur quoi obtenir les infos
+
+ip # la commande incontournable qui permet d’obtenir et modifier les interfaces réseaux, le cache ARP, les tables de routage…
+# a/addr/address : afficher toutes les interfaces réseau
+# 	show <interface> pour afficher seulement <interface>
+# link : affiche les interfaces réseau (peu d’infos), permet de les activer/désactiver
+# r/route : affiche la table de routage
+# 	add <dest> via <gateway>  dev <interface>  : ajoute une route pour destination qui renvoi à l’adresse de gateway.
+# 		n/neightbour : affiche le cache ARP
+# -r : affiche les noms plutôt que les adresses
+
+nc/ncat/netcat <port> # utilitaire ouvrant des connections réseau
+# -u : udp (voir partie protocoles), tcp de base
+# -l : écoute et affiche les connections entrantes
+
+ss # affiche infos sur les ports ouverts selon protocoles ou options…
+#-4 : ipv4
+#-u : udp (voir partie protocoles)
+#-a : affiche
+
+tcpdump # root, permet d’écouter le réseau.
+# -i <interface> : interface à écouter
+# -e : affiche l’entête de la requête
+# -n : affiche les noms plutôt que les adresses
+# -l : copie le résultat dans un buffer : tcmdump -l | tee <file>
+# -o : pas d’optimisations (écouter prends beaucoup de ressources)
+# -F : lis depuis fichier
+# -v / -vv : affiche plus ou moins de détails
+# -t : n’affiche pas le temps (heure récéption…)
+# -w : écrit le résultat dans un fichier
+#
+# On peut spécifier de regarder un host, ou les échanges entre plusieurs host avec un filtre :
+# 	host <nom/adresse> [AND host <nom/adresse>]
+
+tshark # même chose que tcpdump
+# -f "filtre" : donner un filtre (host … [AND …])
+# -F <fichier> : lire depuis un fichier
+
+wireshark # même chose que tcpdump
+
+dd # crée un fichier
+# -count : taille = nombre de bloc de 512o
+# if="src" : source
+# of="dest" : destination
+# bs : taille d'un bloc
+
+traceroute/ tracepath # commandes permettant de cartographier son réseau.
+
+iptables # root, permet d’appliquer des filtres sur le réseau
+# -t <table> : indique sur quel table on touche (FILTER par défaut)
+# -A <chaine> : Ajouter une règle à la fin de la chaine
+# -I <chaine> : ajoute une règle au début
+# -D <chaine> : supprime une règle
+# -o <interface> : sort par l’interface, -i <interface> qui rentre
+# -j <action> : chaine ou
+# 	SNAT/DNAT : translation sur source/destination
+#  	ACCEPT : autoriser
+#  	DENY/DROP : jetter (sans réponse), REJECT (répond)
+# -s/-d : source/destination
+# --sport/--dport : port source/port destination
+# -p <protocole> : indique le protocole
+# --to : par quoi remplacer si SNAT/DNAT
+#
+# Note : on peut mettre plusieurs adresses dans -s, -d … en les
+# séparant par des virgules. Pour dire toutes sauf x, on met !x.
+
+imunes # permet d’émuler un réseau virtuel, root
+# commande image -l (root) pour voir les id des émulations
+#
+# -b -e <id> : terminer l’émulation
+#
+# Sur l’interface graphique, on lance avec experiment->execute,
+# on termine avec experimente->terminate.
+#
+# Lors de l’exécution du réseau virtuel, on peut lancer des
+# commandes sur une de nos machines en ouvrant son terminal
+# (double clic dessus) ou alors avec la commande :
+# 	sudo himage machine[@id] <commande> avec @id optionnel si un seul nœud virtuel.
+#
+# On peut également ajouter les règles de configuration via l’interface graphique avec clic droit->configure et :
+# 	- custom startup config : cocher enabled
+# 	- editor -> create -> fill default
+# 	- on écrit nos lignes, on quitte en sauvegardant.

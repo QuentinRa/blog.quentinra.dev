@@ -60,7 +60,7 @@ rectangle pour représenter cette durée.
 2.1 Messages synchrones et asynchrones
 -------------------------------------------
 
-Lorsqu’une opération renvoi quelque chose (void, String,…) on parle de message synchrone = appel = bloquant.
+Lorsqu’une opération renvoi quelque chose (void, String, ...) on parle de message synchrone = appel = bloquant.
 
 Si l’opération lance un nouveau thread par exemple, elle ne renvoi rien.
 On parle de message asynchrone.
