@@ -50,7 +50,14 @@ qui sont le Masque de diffusion et le Masque de sous-réseau.
 3. Adresses IPV6 :code:`théorie`
 ==================================
 
-...
+Les adresses IPV6 sont introduites car les adresses IPV4 ne permettaient plus
+de représenter le nombre croissant de machines.
+
+.. toctree::
+	 :maxdepth: 1
+
+			IPV6 et Notation CHN  <files/ipv6/not>
+			EUI-64 et SLAAC       <files/ipv6/eui>
 
 4. Protocoles :code:`théorie`
 ==============================
