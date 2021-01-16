@@ -1,0 +1,36 @@
+=================================
+Commandes basiques : ping, dig
+=================================
+
+Commande :code:`ping`
+	Interroge une machine (=envoie un signal attendant une réponse).
+
+	| :code:`-c <x>` : arrêter après avoir fait le Ping x fois
+	| :code:`-b <broadcast address>` : Ping toutes les adresses du réseau
+	| :code:`-t <timeToLive>` : nombre de transit max du paquet
+	| :code:`-s <size>` : taille du ping
+
+Commande :code:`dig`
+	Permet de se connecter à un domaine à la ligne de commande. C'est
+	pratique pour trouver tous les services/sous domaines associés à un domaine.
+
+	| :code:`@serveur` : demande si ce serveur connait adresse/nom
+	| :code:`nom/adresse` : sur quoi chercher les données
+	| :code:`-t` : indique le type de données que l’on veut obtenir parmi
+
+		* :code:`NS` : nom du serveur
+		* :code:`A` : ipv4
+		* :code:`AAAA` : ipv6
+		* :code:`MS` : serveur de mail
+
+	| :code:`-x` : obtenir le nom si on a donné une adresse
+
+Commande :code:`whois <adresse/nom>`
+	Obtenir des infos sur le réseau d’une adresse/nom.
+
+Commande :code:`nc`, :code:`ncat`, :code:`netcat`
+	Utilitaire ouvrant des connections réseau.
+
+	:code:`<port>` : le port
+	:code:`-l` : écoute (donc vous faites un serveur)
+	:code:`-u` : udp

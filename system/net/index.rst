@@ -4,7 +4,7 @@
 Réseau
 ================================
 
-| :math:`\color{grey}{Version \ 0.6.10}`
+| :math:`\color{grey}{Version \ 0.7.11}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 17/01/2021}`
 
 1. Introduction et Vocabulaire
@@ -95,6 +95,17 @@ On peut configurer notre réseau tel que :
 			LAN et WAN             <files/all/lw>
 			Domaines et DNS        <files/all/dns>
 			Plages A,B,C et CIDR   <files/all/cidr>
+
+7. Commandes
+========================
+
+.. toctree::
+	 :maxdepth: 1
+
+			Récupérer des informations : ip, hostname, ifconfig, ss <files/c/c1>
+			Commandes basiques : ping, dig, ncat, whois             <files/c/c2>
+			Surveiller le trafic : wireshark, tshark, tcpdump       <files/c/c3>
+			ARP et Filtres de réseaux : arp, route, iptables        <files/c/c4>
 
 -----
 
