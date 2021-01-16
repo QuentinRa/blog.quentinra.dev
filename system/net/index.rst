@@ -4,7 +4,7 @@
 Réseau
 ================================
 
-| :math:`\color{grey}{Version \ 0.5.9}`
+| :math:`\color{grey}{Version \ 0.6.10}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 17/01/2021}`
 
 1. Introduction et Vocabulaire
@@ -85,6 +85,16 @@ On peut configurer notre réseau tel que :
 			ARP                   <files/tdr/arp>
 			Table de routage      <files/tdr/iptables>
 			Filtres de réseaux    <files/tdr/filter>
+
+6. Connaissances générales
+============================
+
+.. toctree::
+	 :maxdepth: 1
+
+			LAN et WAN             <files/all/lw>
+			Domaines et DNS        <files/all/dns>
+			Plages A,B,C et CIDR   <files/all/cidr>
 
 -----
 

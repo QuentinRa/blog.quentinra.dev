@@ -6,6 +6,9 @@ Le protocole TCP/IP peut être représenté sous la forme de 4 niveaux qui vont 
 à envoyer au paquet envoyé. Chaque niveau effectue des opérations et ajoute des informations
 permettant l’envoi du paquet.
 
+Comment se déroule le transfert
+--------------------------------------
+
 Ces opérations sont réalisées par des protocoles (TCP, IP, IMCP...)
 
 .. image:: /assets/system/net/cours/protocol.png
@@ -16,3 +19,25 @@ Ces opérations sont réalisées par des protocoles (TCP, IP, IMCP...)
 	*	le niveau de transport (TCP et UDP).
 	*	le niveau internet qui apporte une adresse et méthode de routage
 	*	le niveau de liaison qui permet l’échange du paquet (protocole Ethernet et l’ARP).
+
+:code:`Plus de détails dans la partie sur le modèle OSI`.
+
+Quelques termes
+------------------
+
+Paquets
+	Les données sont envoyées sous la forme de paquets donc avec un header
+	qui contient des informations : la taille, la destination, la source
+	et le payload qui contient les données envoyées.
+
+Maximum Transmission Unit (MTU)
+	Pour éviter des pertes, généralement une taille maximum pour chaque adresse IP est définie. En local,
+	cette limite est généralement de 65000ko mais pour les autres adresses c'est généralement vers
+	10000ko.
+
+	Si un paquet est trop gros, alors il est découpé. Des informations dans les headers permettent de
+	reconstituer le paquet.
+
+Protocol Data Unit (PDU)
+	Les informations sur ce que vous transportez, en quel quantité etc. Je crois c'est un peu les headers
+	de chaque protocole.
