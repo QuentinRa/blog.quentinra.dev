@@ -3,7 +3,11 @@ NetWork address translation : translation d’adresse
 =====================================================
 
 La table NAT permet à une machine de communiquer avec une autre sans que celle si
-n’ai connaissance la machine avec qui elle communique.
+n’ai connaissance de la machine avec qui elle communique. Il s'agit d'un cas de proxy.
+
+En fait une machine vous connaissez deux machines disons A et B. B ne connait pas A mais veut
+lui envoyer un message. Il va donc vous envoyer un message, vous voyez que c'est pour A donc
+vous changez l'adresse de destination de la votre vers celle de A et vous envoyez à A le paquet.
 
 .. image:: /assets/system/net/cours/imunes.png
 

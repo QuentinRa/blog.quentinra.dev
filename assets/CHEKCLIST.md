@@ -32,6 +32,7 @@
 **Conception**
 * Diagramme de déploiement
 * TDD et BDD et pair programming
+* SOLID
 
 **Base de données**
 * SQLite

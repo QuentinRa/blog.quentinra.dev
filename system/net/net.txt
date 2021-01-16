@@ -1,3 +1,6 @@
+On parle de LAN pour réseau domestique et WAN pour le réseau mondial.
+
+
 ifconfig #version obsolète de ip a, permet d’obtenir des info sur le réseau
 #Note : RT = paquets reçus, TX = paquets transmis
 #ifconfig nom interface : affiche les infos d’une interface

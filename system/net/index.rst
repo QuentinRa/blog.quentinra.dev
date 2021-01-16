@@ -4,8 +4,8 @@
 Réseau
 ================================
 
-| :math:`\color{grey}{Version \ 0.5.8}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 15/01/2021}`
+| :math:`\color{grey}{Version \ 0.5.9}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 17/01/2021}`
 
 1. Introduction et Vocabulaire
 ===================================
@@ -32,10 +32,10 @@ En particulier
 ===================================
 
 Les adresses seront souvent sous une forme binaire, donc on a introduit
-deux notations : notation décimale pointée et la notation CIDR (qui permet
-facilement de savoir combien on peut avoir de machines sur un réseau).
+deux notations : notation décimale pointée (+ masques) et la notation CIDR qui regroupe
+toutes les informations.
 
-Chaque réseau à deux adresses réservées (donc deux slots en moins par sous-réseau)
+Chaque réseau à deux adresses réservées (donc deux adresses en moins par sous-réseau)
 qui sont le Masque de diffusion et le Masque de sous-réseau.
 
 .. toctree::
@@ -66,12 +66,13 @@ de représenter le nombre croissant de machines.
 	 :maxdepth: 1
 
 			Protocoles                   <files/proto/index>
+			Modèle OSI                   <files/proto/osi>
 			Protocoles : TCP, UDP, IMCP  <files/proto/bunch>
 			Protocole IP                 <files/proto/ip>
 			Ethernet                     <files/proto/eth>
 
-5. Table de routage et ARP
-==============================
+5. Table de routage et ARP :code:`théorie`
+================================================
 
 On peut configurer notre réseau tel que :
 
@@ -98,4 +99,7 @@ On peut configurer notre réseau tel que :
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* aucune
+	* https://www.futura-sciences.com/tech/definitions/tech-modele-osi-1252/
+	* https://si.blaisepascal.fr/1t-le-modele-osi/
+	* https://openclassrooms.com/fr/courses/857447-apprenez-le-fonctionnement-des-reseaux-tcp-ip/851033-la-creation-dinternet-le-modele-osi
+	* https://www.reseaux-telecoms.net/actualites/lire-les-7-couches-du-modele-osi-28083.html

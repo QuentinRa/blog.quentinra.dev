@@ -5,7 +5,7 @@ Notations : décimale pointée et CIDR
 Notation décimale pointée
 ---------------------------
 
-Il s'agit d'une écrire dans laquelle on sépare chaque octet de l'adresse par un .,
+Il s'agit d'une écriture dans laquelle on sépare chaque octet de l'adresse par un .,
 chaque octet est convertit de base 2 vers base 10.
 
 Par exemple 77.33.225.0 est l'écrire pointée de l'adresse réseau 01001101001000011110000100000000.

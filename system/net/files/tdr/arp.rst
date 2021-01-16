@@ -8,7 +8,7 @@ machine connaissant son IP (mais pas son adresse MAC).
 
 Tout d’abord, il faut savoir qu’il existe un cache ARP c’est-à-dire que chaque fois que le
 protocole de recherche est exécuté, le chemin pour retrouver la machine est enregistré dans la cache
-ARP pour éviter de recommencer la recherche, il est la première chose regardée lorsque l’on
+ARP pour éviter de recommencer la recherche. Ce cache est la première chose regardée lorsque l’on
 cherche une machine.
 
 La recherche se déroule de la façon suivante

@@ -2,10 +2,10 @@
 Compter le nombre de machines/attribution
 =============================================
 
-Sous tous les réseaux, 2 adresses sont toujours réservées, il s’agît de l’adresse de diffusion
-et le masque de sous réseau.
+Sous tous les réseaux, 2 adresses sont toujours réservées, il s’agît du masque de diffusion
+et du masque de sous réseau.
 
-Le nombre de machines sur un réseau est calculable avec : :math:`2^(32 - nombre de bits fixes) - 2`.
+Le nombre de machines sur un réseau est calculable avec : :math:`2^{(32 - nombre de bits fixes)} - 2`.
 
 :code:`Exemple (compliqué)`
 

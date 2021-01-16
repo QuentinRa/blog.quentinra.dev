@@ -10,18 +10,18 @@ Protocole
 
 	Il existe quelques protocoles connus au niveau machine qui sont UDP, TCP, ...
 
-	Au niveau programmeur, le protocole consiste à déterminer si le type des informations envoyés,
+	Au niveau programmeur, le protocole consiste à déterminer le type des informations envoyés,
 	les séparateurs, etc...
 
 Adresse IPV4
-	Une adresse IPV4 est de la forme, 172.16.1.0. Elle est formée de 4 octets sur 32 bits.
+	Une adresse IPV4 est de la forme 172.16.1.0. Elle est formée de 4 octets sur 32 bits.
 
 	Certaines machines ont également un nom qui peux être utilisé à la place d'une adresse IP,
 	mais cela ne marche que pour un réseau domestique.
 
 Adresse MAC
-	L'adresse MAC qui est une adresse physique, unique, qui est celle
-	de la carte réseau utilisée pour se connecter à internet (ex : 6octects de la forme FF:FF:FF:FF:FF:FF).
+	L'adresse MAC est une adresse physique unique correspondant à la carte réseau utilisée
+	pour se connecter à internet (ex : 6 octets de la forme FF:FF:FF:FF:FF:FF).
 
 Interfaces réseaux
 	Une interface réseau est définie par ce qui fait la liaison entre notre machine et le réseau.
