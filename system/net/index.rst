@@ -107,6 +107,15 @@ On peut configurer notre réseau tel que :
 			Surveiller le trafic : wireshark, tshark, tcpdump       <files/c/c3>
 			ARP et Filtres de réseaux : arp, route, iptables        <files/c/c4>
 
+8. Exercices
+===========================
+
+.. toctree::
+	 :maxdepth: 1
+
+			Comprendre les notions     <exercices/cours>
+			Tables de routages et ARP  <exercices/arp>
+
 -----
 
 **Crédits**
