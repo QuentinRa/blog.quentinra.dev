@@ -46,6 +46,11 @@ IP 85.85.160.0 - 85.85.163.255.
 	Donner l'adresse et le masque de chaque sous-réseau attribué ainsi que sa notation CIDR
 	et indiquer combien de machines on peut mettre sur chaque sous-réseau attribué.
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<cours/d2>
+
 | :code:`[TAG] IUTSF ASR TD1 2019 S2`
 
 Niveau supérieur
