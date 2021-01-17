@@ -4,8 +4,8 @@
 Python
 ================================
 
-| :math:`\color{grey}{Version \ 1.1.1}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 19/12/2020}`
+| :math:`\color{grey}{Version \ 0.2.2}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 17/01/2020}`
 
 1. Présentation de python
 ===================================
@@ -37,6 +37,29 @@ les librairies et leur version utilisées dans le projet (1 par ligne de la form
 		 Opérateurs arithmétiques       <elements/op>
 		 Opérateurs de conditions       <elements/cond>
 		 Astuces                        <elements/tips>
+
+3. Coder en python
+=======================
+
+.. toctree::
+	 :maxdepth: 1
+
+		Déclarations : if, while, for   <code/dec>
+		Chaines de caractères           <code/string>
+		Déclaration de fonction         <code/func>
+		Tableaux et listes              <code/tab>
+		Classes et Objets               <code/class>
+
+4. Autres
+============================
+
+.. toctree::
+	 :maxdepth: 1
+
+		Modules               <adv/mod>
+		Dictionnaires         <adv/dic>
+		Exceptions            <adv/ex>
+		Fonctions variadiques <adv/var>
 
 -----
 

@@ -30,7 +30,7 @@ Types	  Formats         Notation/Exemples
 int	    %d	42
 float   %f %.xf %0x.yf	0.5
 object
-string	%s              'string' ou "string" ou """paragraphe"""
+string	%s              \'string\' ou \"string\" ou \"\"\"paragraphe\"\"\"
 {aucun} %s %r %i        False ou True
 ======= =============== ============================================
 

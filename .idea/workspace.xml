@@ -29,7 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/corp/com.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/com.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/python/elements/base.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/python/elements/base.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/python/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/python/index.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +62,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/business/corp/site" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/imperative/python/adv" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
@@ -69,11 +70,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\python\adv" />
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\python\code" />
       <recent name="C:\Users\quent\Documents\texas-res\business\corp\site" />
       <recent name="C:\Users\quent\Documents\texas-res\system\net\exercices\ipv6" />
       <recent name="C:\Users\quent\Documents\texas-res\system\net\exercices\cours" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\net\exercices\arp" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\net\exercices" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\net\cours" />
@@ -262,7 +263,7 @@
       <workItem from="1610713390388" duration="7053000" />
       <workItem from="1610741668093" duration="1665000" />
       <workItem from="1610822458397" duration="8999000" />
-      <workItem from="1610892524976" duration="7029000" />
+      <workItem from="1610892524976" duration="9368000" />
     </task>
     <servers />
   </component>
