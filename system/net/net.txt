@@ -1,5 +1,0 @@
-dd # crée un fichier
-# -count : taille = nombre de bloc de 512o
-# if="src" : source
-# of="dest" : destination
-# bs : taille d'un bloc

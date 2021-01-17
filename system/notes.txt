@@ -1,3 +1,15 @@
+Fichiers
+------------
+
+/dev/zero
+/dev/random
+
+dd # crée un fichier
+# -count : taille = nombre de bloc de 512o
+# if="src" : source
+# of="dest" : destination
+# bs : taille d'un bloc
+
 Multiplicateurs de terminaux :
 ----------------------------------------
 
@@ -10,7 +22,3 @@ Créer un terminal vertical : ctrl-b % et un terminal horizontal : ctrl-b et san
 Supprimer un terminal : ctrl-b x
 Pour changer : ctrl-b ->
 Fermer les terminaux : ctrl-b d
-
-------
-
-# (bases)

@@ -233,7 +233,7 @@ a .wy-menu-vertical li span.toctree-expand {
 .rst-content .wy-alert-danger.warning,
 .wy-alert.wy-alert-danger {
     background-image: initial;
-    background-color: rgb(236, 158, 150);
+    background-color: rgb(198, 148, 143);
 }
 .rst-content .danger .admonition-title,
 .rst-content .danger .wy-alert-title,
@@ -263,7 +263,7 @@ a .wy-menu-vertical li span.toctree-expand {
 .wy-alert.wy-alert-danger .rst-content .admonition-title,
 .wy-alert.wy-alert-danger .wy-alert-title {
     background-image: initial;
-    background-color: rgb(217, 101, 89);
+    background-color: rgb(147, 69, 61);
 }
 .rst-content .admonition-todo,
 .rst-content .attention,

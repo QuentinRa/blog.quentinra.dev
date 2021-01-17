@@ -29,17 +29,87 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/template.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/ihm/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/ihm/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/patrons/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/patrons/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/uml/diagrammes/automate.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/diagrammes/automate.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/uml/diagrammes/classes.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/diagrammes/classes.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/uml/diagrammes/classes_advanced.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/diagrammes/classes_advanced.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/uml/diagrammes/db.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/diagrammes/db.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/uml/diagrammes/dcu.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/diagrammes/dcu.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/uml/diagrammes/objets.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/diagrammes/objets.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/uml/diagrammes/sequence.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/uml/diagrammes/sequence.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/light.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/light.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/java/code/vocab.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/java/code/vocab.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/_bash.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/_bash.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/bash.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/bases.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/bases.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/bases/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/bases/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/bases/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/bases/s1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/begin.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/begin.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/begin/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/begin/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/begin/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/begin/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/begin/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/begin/d3.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/begin/d4.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/begin/d4.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/find.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/find.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/find/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/find/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/more.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/more.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/more/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/more/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/more/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/more/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/motifs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/motifs.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/motifs/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/motifs/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/motifs/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/motifs/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/motifs/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/motifs/d3.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/motifs/d4.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/motifs/d4.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/motifs/d5.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/motifs/d5.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/motifs/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/motifs/s1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/perms.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/perms.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/perms/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/perms/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/proc.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/proc.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/proc/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/proc/s1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/scripts.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/scripts.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/scripts/a1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/scripts/a1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/scripts/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/scripts/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/scripts/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/scripts/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/scripts/files/bin2dot-with-for.sh" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/scripts/files/bin2dot-with-for.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/scripts/files/bin2dot-with-read.sh" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/scripts/files/bin2dot-with-read.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/scripts/files/check-data.sh" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/scripts/files/check-data.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/scripts/files/mult_mat.sh" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/scripts/files/mult_mat.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/scripts/files/round.sh" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/scripts/files/round.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/scripts/files/shzip.sh" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/scripts/files/shzip.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/scripts/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/scripts/s1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/scripts/s2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/scripts/s2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/sys.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/sys.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/sys/d1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/sys/d1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/sys/d2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/sys/d2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/sys/d3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/sys/d3.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/sys/d4.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/sys/d4.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/sys/d5.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/sys/d5.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/sys/d6.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/sys/d6.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/sys/files/copy.c" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/sys/files/copy.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/sys/files/get_numb.c" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/sys/files/get_numb.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/sys/files/put_numb.c" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/sys/files/put_numb.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/sys/files/read_file.c" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/sys/files/read_file.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/sys/files/store_nb_rep.c" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/sys/files/store_nb_rep.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/exercices/sys/files/store_numb.c" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/exercices/sys/files/store_numb.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bash/bashrc.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/bash/bashrc.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bash/comm1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/bash/comm1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bash/comm2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/bash/comm2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bash/comm4.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/bash/comm4.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bash/comm5.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/bash/comm5.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bash/comm6.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/bash/comm6.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bash/find.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/bash/find.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bash/idt.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/bash/idt.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bash/motifs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/bash/motifs.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bash/perms.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/bash/perms.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bash/users.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/bash/users.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bash/utils.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/bash/utils.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bric/convert.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/bric/convert.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bric/op.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/bric/op.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bric/proc.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/bric/proc.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bric/redirect.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/bric/redirect.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/bric/var.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/bric/var.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/scripts/args.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/scripts/args.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/scripts/base.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/scripts/base.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/scripts/boucles.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/scripts/boucles.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/scripts/functions.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/scripts/functions.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/scripts/if.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/scripts/if.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/sys/code.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/sys/code.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/sys/methods.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/bash/files/sys/methods.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/net/exercices/ipv6/d1.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/net/files/proto/ip.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/proto/ip.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/net/net.txt" beforeDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,11 +156,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\imperative\python\code" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\system\bash\files" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\bash" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\bash\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\net\cours" />
       <recent name="C:\Users\quent\Documents\texas-res\system\arm" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices\sys\files" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\linux\exercices\scripts\files" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\linux\files\sys" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -272,7 +342,7 @@
       <workItem from="1610713390388" duration="7053000" />
       <workItem from="1610741668093" duration="1665000" />
       <workItem from="1610822458397" duration="8999000" />
-      <workItem from="1610892524976" duration="13352000" />
+      <workItem from="1610892524976" duration="15208000" />
     </task>
     <servers />
   </component>
@@ -407,10 +477,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="376" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1603556286896" />
-    <state x="480" y="163" width="575" height="596" key="find.popup" timestamp="1610904854057">
+    <state x="480" y="163" width="575" height="596" key="find.popup" timestamp="1610909234440">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="480" y="163" width="575" height="596" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1610904854057" />
+    <state x="480" y="163" width="575" height="596" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1610909234440" />
     <state x="684" y="302" width="609" height="280" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1608394586647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

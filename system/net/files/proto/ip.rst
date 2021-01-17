@@ -10,6 +10,8 @@ Le protocole Internet ressemble à ça (bleu = entête ip, gris = données) :
 
 .. image:: /assets/system/net/cours/ip.png
 
+Explications
+
 	*	Version contient 4 ou 6 pour ipv4 ou ipv6.
 	*	IHL correspond à la taille de l’entête (zone bleu), 20 octet en général (c’est-à-dire du de version à destination IP comprise). On stockera la taille divisée par 4 (soit 5 stocké pour 20octets).
 	*	TPL : taille du paquet (en bits)

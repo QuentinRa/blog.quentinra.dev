@@ -45,7 +45,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :maxdepth: 1
 
     Architecture Linux                   <system/linux/index>
-    Bash et Scripts                      <system/linux/bash>
+    Bash et Scripts                      <system/bash/index>
     Assembleur (ARM)                     <system/arm/index>
     Docker                               <system/docker/index>
     Cybersécurité                        <system/cyber/index>

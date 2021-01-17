@@ -4,8 +4,8 @@
 Bash et Scripts bash
 ================================
 
-| :math:`\color{grey}{Version \ 2.4.15}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 14/01/2021}`
+| :math:`\color{grey}{Version \ 3.5.17}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 17/01/2021}`
 
 :code:`prérequis` (cours :ref:`linux`) avoir une idée des thèmes suivants
 
@@ -52,16 +52,29 @@ de chaque commande.
 	que l'argument est facultatif. Si je met un \* ou un +, la logique est la même que pour les regex (donc 0 ou plus,
 	1 ou plus).
 
+2.1 Utilitaire de survie
+--------------------------
+
 .. toctree::
 	 :maxdepth: 1
 
 			Utilitaire de survie I : man, ls, cd, cat, echo, pwd, alias <files/bash/comm1>
 			Utilitaire de survie II : mkdir, touch, mv, cp, rm, ln      <files/bash/comm2>
 			Utilitaire de survie III : éditeur de texte                 <files/bash/idt>
+
+2.2 Commandes utiles
+--------------------------
+
+.. toctree::
+	 :maxdepth: 1
+
 			Permissions : chmod et umask                                <files/bash/perms>
 			Recherche : find, whereis, locate, which                    <files/bash/find>
 			Motifs : grep, sed, awk                                     <files/bash/motifs>
 			Utilisateurs : adduser, deluser, id, su, ...                <files/bash/users>
+
+2.3 Autres commandes
+-------------------------
 
 Alternativement, voici des commandes que vous pouvez utiliser
 de temps en temps
@@ -138,7 +151,7 @@ vous ferriez un :code:`man 3 fopen`).
 		Appels systèmes                         <exercices/sys>
 		Bases  (2, 8, 16, ...)                  <exercices/bases>
 		Autres Commandes (expr, sort, ...) 	    <exercices/more>
-		Annales                                 <annales/index>
+		Annales                                 <../linux/annales/index>
 
 --------
 

@@ -17,6 +17,8 @@ Commande :code:`grep` : sélectionne la partie d'un fichier qui match avec la re
 	| :code:`-l` : stop au 1er match par fichier, affiche ceux avec match
 	| :code:`-v` : affiche tout ce qui ne matche pas
 	| :code:`-o` : n'affiche que la partie qui matche.
+	| :code:`-H` : affiche le nom du fichier qui match
+	| :code:`-q` : quiet
 
 Commande :code:`sed` : afficher une modification sur un fichier sans le modifier
 	Il y a plusieurs formes de syntaxe de sed et c'est une commande assez compliqué.
@@ -30,6 +32,7 @@ Commande :code:`sed` : afficher une modification sur un fichier sans le modifier
 		| :code:`c<caractères>` : pour toute ligne du fichier, remplace la ligne par <caractères>
 		| :code:`e<commande>` : pour toute ligne du fichier, exécute et affiche le résultat de commande avant chaque ligne
 		| :code:`d` : supprime toutes les lignes du fichier
+		| :code:`p` : afficher
 
 	Si vous ne voulez pas toucher a tous les lignes, vous devez spécifier les lignes avant le caractères
 	de commande (a,i,c,e,d) :
