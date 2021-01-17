@@ -4,8 +4,8 @@
 L'Art de la communication
 ================================
 
-| :math:`\color{grey}{Version \ 1.1.1}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 12/01/2021}`
+| :math:`\color{grey}{Version \ 1.1.2}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 17/01/2021}`
 
 Ce cours vise a regrouper quelques notions de communication, donc
 beaucoup de texte, mais certaines notions sont ultra utiles.
@@ -108,6 +108,7 @@ que vous pourriez utiliser pour communiquer.
 		Étapes de la communication      <com/schema/steps>
 		Analyse des composants          <com/schema/analyse>
 		Fonctions du langage            <com/schema/fonctions>
+		Déperdition du message          <com/schema/dm>
 
 Le mode d'emploi pour analyser est le suivant
 
