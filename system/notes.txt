@@ -1,3 +1,58 @@
+Tabulation : autocompletion
+Flèches (bas/haut) pour revenir à la commande précédente
+
+dirname
+basename
+
+Possible de grouper des instructions
+avec () ou {} (par exemple pour && ou ||)
+
+$$ variable qui contient le pid du shell
+
+!n = faire la n-ieme commande de l'historique
+!ls = dernière commande qui commence par ls
+!! = dernière commande
+
+<<EOF
+contenu
+EOF
+
+case mot in
+	motif )
+		code
+		;;
+	motif1 | motif2 )
+		code
+		;;
+	*)
+		code défaut
+		;;
+esac
+
+-n : chaine non vide
+-z : chaine vide
+
+-e : fichier existe et pas lien mort
+-h : fichier existe et lien symbolique
+-r, -w, -x : existe et peut être r/w/x
+
+cd - : revenir au dernier répertoire avant celui-ci
+$OLDPWD (variable)
+
+tty : voir son numéro de tty
+
+On peut écrire dans le terminal d'un autre
+avec cat /dev/tty1 > /dev/tty2 par exemple.
+
+commande uniq
+
+xdg-open
+xpdf
+
+stty erase m (delete suppr)
+stty eof f
+(change les caractères)
+
 Fichiers
 ------------
 
