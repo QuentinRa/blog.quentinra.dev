@@ -17,6 +17,11 @@ et le nombre maximal de machines.
 3. :code:`194.10.0.0/17`
 4. :code:`157.31.112.0/19`
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<cours/d1>
+
 | :code:`[TAG] IUTSF ASR TD1 2019 S2`
 
 2. Attribution d'adresses
