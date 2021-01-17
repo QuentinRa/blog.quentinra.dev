@@ -133,3 +133,8 @@ On peut configurer notre réseau tel que :
 	* https://si.blaisepascal.fr/1t-le-modele-osi/
 	* https://openclassrooms.com/fr/courses/857447-apprenez-le-fonctionnement-des-reseaux-tcp-ip/851033-la-creation-dinternet-le-modele-osi
 	* https://www.reseaux-telecoms.net/actualites/lire-les-7-couches-du-modele-osi-28083.html
+
+	* outils
+
+		* https://www.browserling.com/tools/ip-to-bin
+		* https://www.browserling.com/tools/bin-to-ip

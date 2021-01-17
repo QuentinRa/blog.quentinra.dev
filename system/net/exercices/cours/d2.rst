@@ -1,11 +1,38 @@
 ================================
-TITRE
+2. Attribution d'adresses
 ================================
 
 .. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
    :alt: correction vérifiée
 
-...
+(a)
+
+	* 85.85.160.0 : 01010101.01010101.10100000.00000000
+	* 85.85.163.255 : 01010101.01010101.10100011.11111111
+	* On a donc l'adresse réseau
+	* 01010101.01010101.10100000.00000000 = 85.85.160.0 et 22 fixe donc
+	* 85.85.160.0/22
+	* masque (broadcast) : 01010101.01010101.10100011.11111111 = 85.85.163.255
+	* masque (netmask) : 11111111.11111111.11111100.00000000 = 255.255.252.0
+
+On peut mettre :math:`2^{32-22} - 2 = 1024 - 2 = 1022` machines.
+
+(b)
+
+On ne peut pas mettre tout le monde (1526 > 1022 donc évidemment impossible).
+
+Tout d'abord le problème est plus complexe. On doit créer des sous-réseaux
+donc on aura 2 masque par sous-réseaux donc 2 places en moins.
+
+Pour créer un sous-réseau, on doit fixer des bits, ici on va en fixer
+1 seul car on peut pas mettre les 3 mais juste 2.
+
+On aura donc 23 (22 + 1 rajoute) bits fixes, ce qui nous donne :math:`2^{1} = 2`
+sous-réseaux. On peut mettre :math:`2^{32-23} - 2 = 512 - 2 = 510` machines
+sur chacun des sous-réseaux.
+
+| On aura donc C1 : 85.85.160.0/23 et 85.85.161.255.
+| On aura donc C3 : 85.85.162.0/23 et 85.85.163.255.
 
 **Crédits**
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
