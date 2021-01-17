@@ -58,6 +58,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
 
     Langage C                            <imperative/c/index>
     Langage Python                       <imperative/python/index>
+    Langage Java                         <imperative/java/index>
 
 .. toctree::
     :caption: Conception

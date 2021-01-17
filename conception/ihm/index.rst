@@ -249,8 +249,8 @@ aucun
 -----
 
 **Crédits**
-	* Florent Madelaine (enseignant à l'IUT de Sénart-Fontainebleau)
-	* Luc Hernandez (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Florent MADELAINE (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Luc HERNANDEZ (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**

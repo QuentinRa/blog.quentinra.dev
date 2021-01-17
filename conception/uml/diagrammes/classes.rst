@@ -183,9 +183,9 @@ qu'une classe devrait généraliser 0 ou 1 parents mais pas plus.
 -----
 
 **Crédits**
-	* Florent Madelaine (enseignant à l'IUT de Sénart-Fontainebleau)
-	* Luc Hernandez (enseignant à l'IUT de Sénart-Fontainebleau)
-	* Luc Dartois (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Florent MADELAINE (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Luc HERNANDEZ (enseignant à l'IUT de Sénart-Fontainebleau)
+	* Luc DARTOIS (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Marie SZAFRANSKI (enseignant à l'ENSIIE)
 	* Julien FOREST (enseignant à l'ENSIIE)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
