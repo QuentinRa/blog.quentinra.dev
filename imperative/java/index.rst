@@ -45,11 +45,14 @@ Packages
 4. Implémentation de concepts (avancé)
 =========================================
 
-Dictionnaires
-Pile et Files
-Généricité
-Méthodes variadiques
-Énumérations
+.. toctree::
+	 :maxdepth: 1
+
+		Dictionnaires         <code/a/dic>
+		Pile et Files         <code/a/sc>
+		Généricité            <code/a/gen>
+		Méthodes variadiques  <code/a/var>
+		Énumérations          <code/a/enum>
 
 5. Implémentation de concepts (pro)
 =========================================
