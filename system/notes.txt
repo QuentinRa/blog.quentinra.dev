@@ -77,3 +77,41 @@ Créer un terminal vertical : ctrl-b % et un terminal horizontal : ctrl-b et san
 Supprimer un terminal : ctrl-b x
 Pour changer : ctrl-b ->
 Fermer les terminaux : ctrl-b d
+
+args
+----
+
+shift n : décale les arguments ($2 devient $1, ...)
+
+set -- valeur, valeur, ...
+
+définit les valeurs de $1, $2, ...
+
+variable locale (globale par défaut)
+local v
+local v=6
+
+peut activer le débug avec
+#!bash -x
+
+$* $@
+
+duplication de fd
+--------------------
+
+int dup(int fd); : duplique fd et le retourne
+
+int dup2(int old, int new); : le descripteur
+old accède au descripteur de new, qui est fermé si ouvert. fait que le descripteur
+de new accède au même flux que old. Ferme new si ouvert.
+
+int fileno(File* f) : retourne le descripteur noyau.
+
+exec
+----------------------
+
+char* getenv
+setenv
+unsetenv
+
+int main(..., char* env[]);

@@ -29,9 +29,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/java/code/vocab.rst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/imperative/java/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/java/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imperative/java/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/java/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/notes.txt" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -266,7 +266,8 @@
       <workItem from="1610822458397" duration="8999000" />
       <workItem from="1610892524976" duration="18666000" />
       <workItem from="1610956162297" duration="43000" />
-      <workItem from="1610958641088" duration="12323000" />
+      <workItem from="1610958641088" duration="13312000" />
+      <workItem from="1610984785534" duration="4004000" />
     </task>
     <servers />
   </component>

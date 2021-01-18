@@ -70,3 +70,5 @@ Classes sympas
 JOptionPane //affiche un popup de dialog
 System //retourne un saut de ligne du système, système d'exploitation actuel, ...
 JFileChooser //sélectionner un fichier
+
+Installer Java

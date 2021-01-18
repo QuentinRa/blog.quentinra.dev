@@ -4,8 +4,8 @@
 JAVA
 ================================
 
-| :math:`\color{grey}{Version \ 0.1.1}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 17/01/2021}`
+| :math:`\color{grey}{Version \ 0.6.8}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 18/01/2021}`
 
 1. Introduction  :code:`théorique`
 ===================================
