@@ -31,10 +31,20 @@ produit un fichier au langage machine (.class).
 		Structures et Opérateurs       <base/struct>
 		Les instructions basiques      <base/inst>
 
+La javadoc
+
+	* JDK 7 : https://docs.oracle.com/javase/7/docs/api/overview-summary.html
+	* JDK 10 : https://docs.oracle.com/javase/10/docs/api/overview-summary.html
+	* JDK 14 : https://docs.oracle.com/en/java/javase/14/docs/api/index.html
+
+sont des documentations des classes et des méthodes. N'hésitez pas à les utiliser
+pour trouver les import a effectuer par exemple (qui sont manquants désolé!).
+
 3. Implémentation de concepts (simple)
 ===============================================
 
 Création d'une classe
+Tableaux
 Héritage et Substitution de liskov
 Abstraction et Interfaces
 Exceptions
@@ -48,6 +58,7 @@ Packages
 .. toctree::
 	 :maxdepth: 1
 
+		Tableaux dynamiques   <code/a/sc2>
 		Dictionnaires         <code/a/dic>
 		Pile et Files         <code/a/sc>
 		Généricité            <code/a/gen>
@@ -87,11 +98,13 @@ Dessins
 
 Ici, en vrac, quelques trucs que vous n'allez probablement jamais utiliser.
 
-Annotations
-Constructeurs statique
-Caractères unicode
-Lambda expressions
-Stream ? Consumer ?
+.. toctree::
+	 :maxdepth: 1
+
+		Annotations             <code/m/annotation>
+		Constructeurs statique  <code/m/static>
+		Caractères unicode      <code/m/unicode>
+		Lambda expressions      <code/m/lambda>
 
 -----
 

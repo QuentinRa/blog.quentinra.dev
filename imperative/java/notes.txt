@@ -27,16 +27,6 @@ finalize
 
 passage par valeur.référence
 
-HashSet
-
-//il s'agit d'un tableau dynamique qui conserver l'ordre d'arrivée
-//mais dans lequel les éléments sont uniques
-HashSet<Classe> set = new HashSet<>();
-set.add(valeur);
-set.contains(valeur);
-set.remove(valeur);
-set.clear();
-
 En java, il n'existe pas de notion d'adresse. Les types primitifs sont passés par valeurs.
 Les objets sont passés par référence. (transmettre une object à transmet sa référence, ce qui
  reviens à un passage par adresse en C).
@@ -46,21 +36,6 @@ int[] tableau;
 //création d'un tableau
 tableau = new int[]{elements};
 tableau = new int[4]{1,2,3,4};
-
-Table dynamique
-
-//vous donnez la classe entre les crochets
-//par exemple ArrayList<Integer> crée une tableau dynamique d'entiers (int n'est pas une classe)
-ArrayList<Classe> list;
-list = new ArrayList<>();//initialisation
-
-//méthodes
-list.add(element);//ajout
-list.remove(element);//suppresion
-list.clear();//vider
-list.get(indice);//récupérer
-list.toArray(); //créer un tableau statique
-ArrayList<Classe> copie = new ArrayList<>(list); //clone
 
 ------------------
 
@@ -87,3 +62,11 @@ introspection
 
 equals
 ==
+
+package.info
+
+Classes sympas
+
+JOptionPane //affiche un popup de dialog
+System //retourne un saut de ligne du système, système d'exploitation actuel, ...
+JFileChooser //sélectionner un fichier
