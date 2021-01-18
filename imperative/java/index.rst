@@ -54,10 +54,13 @@ Méthodes variadiques
 5. Implémentation de concepts (pro)
 =========================================
 
-Threads
-Base de données (interne)
-Base de données (externe)
-Réseau
+.. toctree::
+	 :maxdepth: 1
+
+		Threads                    <code/p/threads>
+		Base de données (interne)  <code/p/bdi>
+		Base de données (externe)  <code/p/bde>
+		Réseau                     <code/p/net>
 
 6. Autres concepts
 ======================

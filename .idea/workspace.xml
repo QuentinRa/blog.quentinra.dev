@@ -29,9 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/_notes/_calistro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/_calistro.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imperative/java/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/java/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/java/intro/f.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/java/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/java/notes.txt" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +62,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/imperative/java/base" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/imperative/java/code/p" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
@@ -78,11 +77,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\net\cours" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\java\code\p" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\java\base" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\java\code" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\java\intro" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\java" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\python\adv" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -266,7 +265,7 @@
       <workItem from="1610822458397" duration="8999000" />
       <workItem from="1610892524976" duration="18666000" />
       <workItem from="1610956162297" duration="43000" />
-      <workItem from="1610958641088" duration="4172000" />
+      <workItem from="1610958641088" duration="6246000" />
     </task>
     <servers />
   </component>

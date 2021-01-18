@@ -32,3 +32,8 @@ passage par valeur.référence
 .class
 machine virtuelle
 classe = type
+itérateur
+
+classe interne : attribut
+classe imbriquée : static
+classe locale : anonyme
