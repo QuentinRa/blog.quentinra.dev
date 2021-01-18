@@ -37,3 +37,10 @@ itérateur
 classe interne : attribut
 classe imbriquée : static
 classe locale : anonyme
+
+this();
+
+foreach
+v.length
+
+classe finale

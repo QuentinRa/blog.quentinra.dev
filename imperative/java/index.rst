@@ -65,9 +65,12 @@ Méthodes variadiques
 6. Autres concepts
 ======================
 
-Manipulation de flux
-Tris
-Récursivité
+.. toctree::
+	 :maxdepth: 1
+
+		Manipulation de flux    <code/o/flux>
+		Tris                    <code/o/tris>
+		Récursivité             <code/o/rec>
 
 7. Interfaces graphiques
 ===============================
