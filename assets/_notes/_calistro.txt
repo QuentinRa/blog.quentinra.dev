@@ -131,6 +131,7 @@ git
 
 autres
 	* https://pandoc.org/
+	* https://www.remove.bg/fr
 
 ----------------- libs
 

@@ -17,3 +17,18 @@ public //accès à tout le monde
 private //seulement dans la classe
 protected //disponible dans la classe et dans les classes qui héritent de cette classe
 //rien=~package-private, disponible dans la classe et dans toutes les classes dans le même dossier dit package
+
+Note: Le comparateur == compare deux adresses. La méthode equals est censé être utilisée comme
+comparateur mais elle ne fait que comparer les adresses par défaut à moins d'avoir été réécrite
+sur le principe de l'héritage
+
+Garbage Collector
+finalize
+
+passage par valeur.référence
+
+------------------
+
+.class
+machine virtuelle
+classe = type

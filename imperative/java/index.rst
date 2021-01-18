@@ -23,11 +23,13 @@ produit un fichier au langage machine (.class).
 2. Introduction :code:`code`
 ==============================
 
-Compilation
-Types
-Structures
-Opérateurs arithmétiques
-Les instructions basiques
+.. toctree::
+	 :maxdepth: 1
+
+		Compilation                    <base/compilation>
+		Types                          <base/types>
+		Structures et Opérateurs       <base/struct>
+		Les instructions basiques      <base/inst>
 
 3. Implémentation de concepts (simple)
 ===============================================
@@ -79,6 +81,8 @@ Ici, en vrac, quelques trucs que vous n'allez probablement jamais utiliser.
 Annotations
 Constructeurs statique
 Caractères unicode
+Lambda expressions
+Stream ? Consumer ?
 
 -----
 
