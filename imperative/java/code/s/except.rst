@@ -115,6 +115,6 @@ n'importe quel object qui est fermable (extends Closable).
 
 .. code:: java
 
-		try(Closable c = ...) {
+		try (Closable c = ...) {
 		 ...
 		}
