@@ -29,7 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/exercices/arp.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/exercices/arp.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/cesim/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/cesim/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -266,7 +267,8 @@
       <workItem from="1610956162297" duration="43000" />
       <workItem from="1610958641088" duration="13312000" />
       <workItem from="1610984785534" duration="4147000" />
-      <workItem from="1611046768155" duration="2854000" />
+      <workItem from="1611046768155" duration="4119000" />
+      <workItem from="1611055914278" duration="1743000" />
     </task>
     <servers />
   </component>

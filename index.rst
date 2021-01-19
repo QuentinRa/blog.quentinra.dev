@@ -52,7 +52,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     Réseau                               <system/net/index>
 
 .. toctree::
-    :caption: Programmation impérative
+    :caption: Programmation
     :name: imperative
     :maxdepth: 1
 

@@ -4,7 +4,7 @@
 Simulation CESIM
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.0}`
+| :math:`\color{grey}{Version \ 1.1.1}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 05/12/2020}`
 
 Ce cours n'est qu'un Guide de CESIM pour l'étude de cas
@@ -14,7 +14,8 @@ de gestion d'un Hôtel fait en cours de 1A à l'ENSIIE.
 ===================================
 
 Vous allez avoir des tours et alterner hiver/été. Vous allez
-prendre des décisions pour la prochaine période.
+prendre des décisions pour la prochaine période. Vous commencez avant le premier
+hiver et donc prenez les décisions de l'hiver.
 
 Allez sur Décisions > Liste des décisions.
 
@@ -28,46 +29,59 @@ limite du tour avec \"enregistrer en tant que décision d'équipe\". Vous pouvez
 2. Présentation du site
 ===================================
 
-	* Planning : le plus important, le planning de la session
-	* Manuels : important, guide complet de cesim et doc de passation de l'hôtel
-	* Décisions : vous allez prendre les décisions d'un tour ici
+Planning
+	Le plus important, le planning de la session
 
-		* Conditions du marché : contient un texte donnant une aide sur l'état du marché et des prévisions sur la demande
+Manuels
+	Important, guide complet de cesim et doc de passation de l'hôtel.
 
-			* si votre hôtel a un bon rapport qualité/prix, alors vous aurez au moins ces chiffres mais jamais beaucoup plus (généralement au max 2x plus)
+	Personnellement, c'est utile pour comprendre ce que sont certains chiffres etc. ou avoir
+	une idée/de l'inspiration pour le rapport final (avec la doc de passation).
 
-		* Ventes : ici vous prenez les décisions sur combien de chambres sont vendues
+Décisions
+	Vous allez prendre les décisions d'un tour ici
 
-			* il y a les ventes au guichet
-			* il y a les ventes aux agences (c'est souvent stratégique de tout vendre aux agences pour un revenu minimum)
-			*
+	Conditions du marché
+		Contient un texte donnant une aide sur l'état du marché et des prévisions sur la demande
 
-				il y a le marketing (généralement le marketing influence le prix de vente aux agences,
-				mais il peut aussi ne rien changer si votre place dans la marché est au top)
+		Note : si votre hôtel a un bon rapport qualité/prix, alors vous aurez au moins ces chiffres
+		mais jamais beaucoup plus (généralement au max 2x plus). Donc si 2000 clients sont prévus, alors
+		votre nombre sera sûrement entre 2500 et 3200 si vous avez un hôtel bien côté sinon vous pouvez
+		avoir moins qu'estimé.
 
-		* Opérations : ici vous gérer votre hôtel
+	Ventes : ici vous prenez les décisions sur combien de chambres sont vendues
 
-			* vous pouvez rénover votre hôtel (qualité)
-			* vous pouvez investir dans
+		* il y a les ventes au guichet
+		* il y a les ventes aux agences (c'est souvent stratégique de tout vendre aux agences pour un revenu minimum)
+		*
 
-				* des chambres
-				* réductions des coûts administratifs : vous verrez que vos coûts augmentent avec votre chiffre d'affaires et vous pouvez donc payer pour le diminuer
-				* réductions des coûts directs : à priori ils influent sur la qualité
+			il y a le marketing (généralement le marketing influence le prix de vente aux agences,
+			mais il peut aussi ne rien changer si votre place dans la marché est au top)
 
-			* vous employés des salariés
+	Opérations : ici vous gérer votre hôtel
 
-				* vous pouvez les former pour augmenter le nombre de clients qu'ils gèrent donc diminuer le stress
-				* vous pouvez employer des employés temporaires (permanents ça coute cher donc prendre des temporaires l'été par exemple)
-				* les cases en bleu sont les estimations de niveau de vos salariés après formation
-				* recruter et licencier coûte cher et fait baisser la qualité, il faut donc garder un turnover stable (à 0)
+		* vous pouvez rénover votre hôtel (qualité)
+		* vous pouvez investir dans
 
-		* Finance
+			* des chambres
+			* réductions des coûts administratifs : vous verrez que vos coûts augmentent avec votre chiffre d'affaires et vous pouvez donc payer pour le diminuer
+			* réductions des coûts directs : à priori ils influent sur la qualité
 
-			* Vous pouvez emprunter de l'argent
-			* vous pouvez verser des dividendes
-			* vous pouvez modifier les délais de paiement (il faut mieux éviter)
+		* vous employés des salariés
 
-	* Résultats : vous allez voir les résultats d'un tour ici
+			* vous pouvez les former pour augmenter le nombre de clients qu'ils gèrent donc diminuer le stress
+			* vous pouvez employer des employés temporaires (permanents ça coute cher donc prendre des temporaires l'été par exemple)
+			* les cases en bleu sont les estimations de niveau de vos salariés après formation
+			* recruter et licencier coûte cher et fait baisser la qualité, il faut donc garder un turnover stable (à 0)
+
+	Finance
+
+		* Vous pouvez emprunter de l'argent
+		* vous pouvez verser des dividendes
+		* vous pouvez modifier les délais de paiement (il faut mieux éviter)
+
+Résultats
+	Vous allez voir les résultats d'un tour ici.
 
 3. Résultats
 =================================
@@ -104,6 +118,39 @@ Sinon de façon générale
 		* les investissements liés aux salariés
 		* le taux d'occupation
 		* prix
+
+4. Idées d'éléments d'une stratégie
+=====================================
+
+En hiver, vous aurez moins de clients donc risquez de finir en négatif.
+
+	* Il faut faire attention à ne pas avoir trop d'employés permanents pour éviter des dépenses inutiles (trop par rapport à la clientèle)
+	* Une solution est de former ses employés
+	* Vous pouvez réduire certaines dépenses
+
+		* Faire moins de marketing (ex: 5000€ ?)
+		* Faire moins de formation ?
+		* Faire moins de rénovations ?
+		* baisser les prix ?
+		* vendre un max aux agences
+
+	* faire par exemple 5000€ de dividendes (donc pas beaucoup) [#1]_
+
+Il peut parfois être intéressant de faire un résultat négatif (pas d'impôts, investissements, ...)
+mais ça baisse le retour cumulé, la valeur de l'action etc.
+donc a moins de savoir ce que vous faites, ne jouez pas avec ça.
+
+En été, c'est là qu'il faut vendre un max
+
+	* faire des petits prix ? (ex: 70€ ? 80€ ? : relatif à la qualité et aux autres)
+	* faire beaucoup de marketing (ex: 50k ?, 100k ?)
+	* recruter des saisonniers (peu de stress, qualité ?)
+	* augmenter la formation (ex: 10k ?)
+	* dividendes importantes (ex: 100k ?)
+
+.. [#1] on rappelle que les dividendes sont une partie du résultat. Donc si vous versez 50k alors que vous avez
+	5k de résultat, vous devez le justifier aux actionnaires. Alternativement, il est important d'avoir un taux
+	stable pour favoriser les prognostics donc évitez d'être imprévisibles dans les taux.
 
 -----
 
