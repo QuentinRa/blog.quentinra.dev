@@ -4,7 +4,7 @@
 JAVA
 ================================
 
-| :math:`\color{grey}{Version \ 0.6.8}`
+| :math:`\color{grey}{Version \ 0.6.9}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 18/01/2021}`
 
 1. Introduction  :code:`théorique`
@@ -19,6 +19,7 @@ produit un fichier au langage machine (.class).
 
 		Historique       <intro/historique>
 		Vocabulaire      <intro/vocab>
+		Installation     <intro/install>
 
 2. Introduction :code:`code`
 ==============================
@@ -89,9 +90,12 @@ Packages
 7. Interfaces graphiques
 ===============================
 
-JComponent et Composants graphiques
-Mise en page (Layout)
-Dessins
+.. toctree::
+	 :maxdepth: 1
+
+		JComponent et Composants graphiques  <code/i/jc>
+		Mise en page (Layout)                <code/i/layout>
+		Dessins                              <code/i/draw>
 
 8. Les mystiques
 ========================

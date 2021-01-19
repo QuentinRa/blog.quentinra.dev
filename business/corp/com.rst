@@ -35,7 +35,7 @@ Lors d'un débat, il faut
 	* présenter les personnes et leur positions ; ainsi que le contexte
 	* faire une conclusion, qui reprends les arguments utilisés, et récapitule les échanges. Il n'y a pas forcément de " gagnant ".
 
-2. Communication informatique
+2. Communication informationnelle
 =====================================
 
 Objectif : transmettre l'information le plus objectivement et de la façon la plus claire possible.
