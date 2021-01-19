@@ -134,6 +134,8 @@ On peut configurer notre réseau tel que :
 	* https://si.blaisepascal.fr/1t-le-modele-osi/
 	* https://openclassrooms.com/fr/courses/857447-apprenez-le-fonctionnement-des-reseaux-tcp-ip/851033-la-creation-dinternet-le-modele-osi
 	* https://www.reseaux-telecoms.net/actualites/lire-les-7-couches-du-modele-osi-28083.html
+	* https://www.commentcamarche.net/contents/530-le-protocole-ip
+	* https://fr.wikibooks.org/wiki/R%C3%A9seaux_TCP/IP/La_pile_TCP/IP
 
 	* outils
 
