@@ -14,6 +14,11 @@ Java est un langage dont le code fonctionne sur n'importe qu'elle machine
 (Write once, run anywhere). La compilation d'une fichier java (.java)
 produit un fichier au langage machine (.class).
 
+Java est un langage orienté objet ce qui veux dire que tout
+(8 exceptions = 8 types primitifs) est représenté sous ce qu'on appelle une classe.
+
+Le vocabulaire est requis avant de continuer. Avoir Java d'installé, ça aide.
+
 .. toctree::
 	 :maxdepth: 1
 
@@ -44,14 +49,16 @@ pour trouver les import a effectuer par exemple (qui sont manquants désolé!).
 3. Implémentation de concepts (simple)
 ===============================================
 
-Création d'une classe
-Tableaux
-Héritage et Substitution de liskov
-Abstraction et Interfaces
-Exceptions
-Javadoc
-Packages
-Événements
+.. toctree::
+	 :maxdepth: 1
+
+		Création d'une classe                 <code/s/start>
+		Tableaux                              <code/s/tab>
+		Héritage et Substitution de liskov    <code/s/legacy>
+		Abstraction et Interfaces             <code/s/abs>
+		Exceptions                            <code/s/except>
+		Javadoc                               <code/s/doc>
+		Packages                              <code/s/packages>
 
 4. Implémentation de concepts (avancé)
 =========================================
@@ -96,6 +103,7 @@ Packages
 		JComponent et Composants graphiques  <code/i/jc>
 		Mise en page (Layout)                <code/i/layout>
 		Dessins                              <code/i/draw>
+		Événements                           <code/i/event>
 
 8. Les mystiques
 ========================

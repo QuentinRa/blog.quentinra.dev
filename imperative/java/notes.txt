@@ -1,6 +1,3 @@
-Java est un langage orienté objet ce qui veux dire que tout
-(8 exceptions) est représenté sous ce qu'on appelle une classe
-
 Une classe peut être déclarée finale, ce qui signifie qu'elle ne peut pas être héritée.
 
 Constructeur
@@ -29,13 +26,7 @@ passage par valeur.référence
 
 En java, il n'existe pas de notion d'adresse. Les types primitifs sont passés par valeurs.
 Les objets sont passés par référence. (transmettre une object à transmet sa référence, ce qui
- reviens à un passage par adresse en C).
-
-//Déclaration d'un tableau
-int[] tableau;
-//création d'un tableau
-tableau = new int[]{elements};
-tableau = new int[4]{1,2,3,4};
+reviens à un passage par adresse en C).
 
 ------------------
 
@@ -51,7 +42,6 @@ classe locale : anonyme
 this();
 
 foreach
-v.length
 
 classe finale
 
@@ -72,3 +62,10 @@ System //retourne un saut de ligne du système, système d'exploitation actuel, 
 JFileChooser //sélectionner un fichier
 
 Installer Java
+
+Un attribut est
+
+	* (rien) : par défaut, cela veut dire qu'il est package-private
+	* :code:`public` : un attribut public est accessible partout, déconseillé (iceberg).
+	* :code:`private` : .
+	* :code:`protected` : attribut privé par défaut.
