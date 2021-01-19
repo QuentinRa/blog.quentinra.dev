@@ -29,9 +29,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/java/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/java/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/java/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/java/notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/net/exercices/arp.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/exercices/arp.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,19 +68,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\assets\_notes" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\bash\files" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\bash" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\bash\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\system\net\cours" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\imperative\java\code\m" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\java\code\a" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\java\code\o" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\java\code\p" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\java\base" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\system\net\exercices" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\_notes" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\bash\files" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\bash" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\bash\exercices" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -267,7 +265,8 @@
       <workItem from="1610892524976" duration="18666000" />
       <workItem from="1610956162297" duration="43000" />
       <workItem from="1610958641088" duration="13312000" />
-      <workItem from="1610984785534" duration="4004000" />
+      <workItem from="1610984785534" duration="4147000" />
+      <workItem from="1611046768155" duration="2854000" />
     </task>
     <servers />
   </component>
