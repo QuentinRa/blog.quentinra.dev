@@ -1,0 +1,43 @@
+================================
+1. Tables de routage
+================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+Compléter les adresses MAC et IP dans la trace tcpdump générée pendant l'exécution
+de la commande ping précédente :
+
+On reconnait le :code:`who-has ... tell ...`
+d'un protocole ARP. On envoi à toutes les machines (broadcast : ff:ff:ff:ff:ff:ff)
+le fait qu'une personne cherche une adresse et on le mec cherché
+va répondre pour dire "je suis ici" à la machine ayant l'IP 172.16.2.161.
+
+.. code:: bash
+
+		34:17:eb:99:29:ad > ff:ff:ff:ff:ff:ff, ethertype ARP (0x806), length 42:
+		Request who-has 172.16.2.81 tell 172.16.2.161, length 28
+
+La machine retourne à la MAC émettrice sa mac.
+
+.. code:: bash
+
+		64:00:6a:8d:1a:31 > 34:17:eb:99:29:ad, ethertype ARP (0x806), length 60:
+		Reply 172.16.2.81 is-at 64:00:6a:8d:1a:31, length 46
+
+On réalise le ping.
+
+.. code:: bash
+
+		34:17:eb:99:29:ad > 64:00:6a:8d:1a:31, ethertype IPV4 (0x800), length 98:
+		172.16.2.161 > 172.16.2.81 ICMP echo request, id 25160, seq 1, length 64
+
+Réponse du ping.
+
+.. code:: bash
+
+		64:00:6a:8d:1a:31 > 34:17:eb:99:29:ad, ethertype IPV4 (0x800), length 98:
+		172.16.2.81 > 172.16.2.161 ICMP echo reply, id 25160, seq 1, length 64
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
