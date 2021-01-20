@@ -6,6 +6,13 @@ Pour regarder plus en détails, le protocole IP (ipv4/ipv6) permet de
 fragmenter un paquet en plusieurs paquets car la MTU ne permet pas l’envoi d’un
 paquet de cette taille en une transmission.
 
+La procédure d'envoi est une sorte de clap (message implique une confirmation de réception)
+
+	* A envoi à B
+	* B indique la bonne réception : ack
+	* B réponds à A
+	* A indique la bonne réception : ack
+
 Le protocole Internet ressemble à ça (bleu = entête ip, gris = données) :
 
 .. image:: /assets/system/net/cours/ip.png
@@ -40,3 +47,5 @@ Pour savoir si des paquets sont fragmentés, on doit vérifier :
 	*	ils ont le même id
 	*	le paquet à l’offset 0 (et tous sauf le dernier) ont un flag[+] sur tcpdump ce qui signifie qu’un autre paquet va arriver par opposition au flag[none].
 	*	ils ont le même protocole
+
+Dans la commande ping, un flag[+] indique des fragments à venir.

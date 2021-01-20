@@ -29,6 +29,11 @@ Lorsqu'on demande à tshark de fournir une trace pour la même ligne de commande
 (b) Quelle a été cette ligne de commande ?
 (c) tshark ne semble par être en accord avec tcpdump sur la valeur a placer dans le champ fragment offset. Que se passe-t-il ?
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<ip/d1>
+
 | :code:`[TAG] IUTSF ASR TD2 2019 S2`
 
 2. PAYLOAD IP
@@ -53,6 +58,11 @@ Le paquet suivant a été montré par tcpdump :
 | fd08 0400 0809 0a0b 0c0d 0e0f 1011 1213
 | .......................................
 | .......................................
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<ip/d2>
 
 | :code:`[TAG] IUTSF ASR TD2 2019 S2`
 

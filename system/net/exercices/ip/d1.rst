@@ -1,0 +1,32 @@
+================================
+1. tshark and tcpdump
+================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+(a) Expliquer pourquoi autant de datagrammes ont voyagé
+
+Il y a 4 datagrammes au lieu de 2
+car les données sont plus grandes que la MTU
+donc les paquets 1 et 3 ont étés fragmentés. On peut
+voir cela avec l'offset ou encore avec le flag[+].
+
+Il y a un seul echo request (et son echo reply)
+
+(b) Quelle a été cette ligne de commande ?
+
+Il y a un seul (-c1) echo request (et son echo reply)
+donc la commande est un ping de 172.16.2.161.
+
+:code:`ping -c1 172.16.2.161`.
+
+(c) tshark ne semble par être en accord avec tcpdump sur la valeur a placer dans le champ fragment offset. Que se passe-t-il ?
+
+La commande tcpdump fait une modification sur l'offset
+donc il faut diviser par 8 (8bits=1octet) pour obtenir la vraie valeur : 1480/8=185.
+
+Dans tshark, on voit la valeur dans le header donc elle n'a pas été modifiée.
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
