@@ -1,0 +1,27 @@
+==================================
+3. Routes et voisinage réseau II
+==================================
+
+.. image:: https://img.shields.io/badge/correction-non%20vérifiée-red.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction non vérifiée
+
+On sait que la route par défaut est
+172.16.1.254 (5c:54:00:e7:b9:0f) via
+eno1 172.16.2.161 (34:17:eb:99:29)
+
+
+Compléter les adresses MAC et IP dans la trace tcpdump générée pendant l'exécution
+de la commande ping précédente :
+
+.. code:: bash
+
+		5c:54:00:e7:b9:0f > 34:17:eb:99:29, ethertype IPV4 (0x800), length 98:
+		(tos 0x0, ttl 64, id 59310, offset 0, flags [DF], proto ICMP (1), length 64)
+		172.16.2.161 > 172.16.1.254 ICMP echo request, id 27844, seq 1, length 64
+
+		34:17:eb:99:29 > 5c:54:00:e7:b9:0f, ethertype IPV4 (0x800), length 98:
+		(tos 0x0, ttl 56, id 18522, offset 0, flags [none], proto ICMP (1), length 84)
+		172.16.1.254 > 172.16.2.161 ICMP echo reply, id 27844, seq 1, length 64
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

@@ -67,6 +67,11 @@ de la commande ping précédente :
 		..:..:..:..:..:.. > ..:..:..:..:..:.., ethertype IPV4 (0x800), length 98:
 		............... > ............... ICMP echo reply, id 25160, seq 1, length 64
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<arp/d2>
+
 | :code:`[TAG] IUTSF ASR TD2 2019 S2`
 
 3. Routes et voisinage réseau II
@@ -120,6 +125,11 @@ de la commande ping précédente :
 		..:..:..:..:..:.. > ..:..:..:..:..:.., ethertype IPV4 (0x800), length 98:
 		(tos 0x0, ttl 56, id 18522, offset 0, flags [none], proto ICMP (1), length 84)
 		............... > ............... ICMP echo reply, id 27844, seq 1, length 64
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<arp/d3>
 
 | :code:`[TAG] IUTSF ASR TD2 2019 S2`
 
