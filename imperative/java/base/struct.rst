@@ -48,6 +48,15 @@ est vraie : exécute le code et met à jour les variables.
 	 // code
 	}
 
+La boucle for each permet de parcourir un tableau. Elle stocke
+dans une variable la valeur a l'index actuel.
+
+.. code:: java
+
+	foreach(TypeDUnElement element: tableau){
+	 // code
+	}
+
 La boucle do while fait le code une fois puis reboucle tant que la condition est vraie
 
 .. code:: java

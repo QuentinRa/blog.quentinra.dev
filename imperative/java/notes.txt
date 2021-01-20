@@ -1,26 +1,6 @@
-Une classe peut être déclarée finale, ce qui signifie qu'elle ne peut pas être héritée.
-
-Constructeur
-
-Une constructeur est une méthode permettant de créer des objets d'une classe. Par défaut,
-il existe un constructeur vide/sans argument, mais dès lors que l'utilisateur crée une
-constructeur, alors il est supprimé sauf si l'utilisateur l'écris dans le code.
-
-Modificateurs/Qualificatifs
-
-Il est possible de restreindre l'accès à une méthode/classe/attribut via le qualificatif utilisé pour déclarer l'élément.
-
-public //accès à tout le monde
-private //seulement dans la classe
-protected //disponible dans la classe et dans les classes qui héritent de cette classe
-//rien=~package-private, disponible dans la classe et dans toutes les classes dans le même dossier dit package
-
 Note: Le comparateur == compare deux adresses. La méthode equals est censé être utilisée comme
 comparateur mais elle ne fait que comparer les adresses par défaut à moins d'avoir été réécrite
 sur le principe de l'héritage
-
-Garbage Collector
-finalize
 
 passage par valeur.référence
 
@@ -29,43 +9,17 @@ Les objets sont passés par référence. (transmettre une object à transmet sa 
 reviens à un passage par adresse en C).
 
 ------------------
-
-.class
-machine virtuelle
 classe = type
+
 itérateur
 
-classe interne : attribut
-classe imbriquée : static
-classe locale : anonyme
-
-this();
-
-foreach
-
-classe finale
-
+.class
 introspection
-
 (.getClass())
 .class
-
-equals
-==
-
-package.info
 
 Classes sympas
 
 JOptionPane //affiche un popup de dialog
 System //retourne un saut de ligne du système, système d'exploitation actuel, ...
 JFileChooser //sélectionner un fichier
-
-Installer Java
-
-Un attribut est
-
-	* (rien) : par défaut, cela veut dire qu'il est package-private
-	* :code:`public` : un attribut public est accessible partout, déconseillé (iceberg).
-	* :code:`private` : .
-	* :code:`protected` : attribut privé par défaut.

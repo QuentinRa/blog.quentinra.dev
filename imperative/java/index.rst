@@ -4,7 +4,7 @@
 JAVA
 ================================
 
-| :math:`\color{grey}{Version \ 0.7.11}`
+| :math:`\color{grey}{Version \ 0.7.13}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 20/01/2021}`
 
 1. Introduction  :code:`théorique`

@@ -92,3 +92,21 @@ dans le même ordre).
 	 }
 
 	}
+
+Création d'un objet
+-------------------------
+
+Vous donnez le type de l'objet (donc sa classe)
+et vous utiliser :code:`new` suivit du nom de la classe pour appeler le constructeur.
+
+.. code:: java
+
+	// on considère la classe NomClasse juste au dessus
+	NomClasse variable;
+	variable = new NomClasse(45); // on appelle le constructeur avec un entier
+
+	// autre
+	NomClasse variable = new NomClasse(45);
+
+Vous ne pouvez pas détruire un objet. Le garbage collector regarde
+en permanence les variables inutilisées et les libèrent pour faire de la place.

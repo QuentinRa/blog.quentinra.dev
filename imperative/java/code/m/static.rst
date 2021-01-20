@@ -9,8 +9,8 @@ La classe est crée, par expérience, au moment ou elle est utilisée par le pro
 .. code:: java
 
 		public class uneClasse {
-				static {
-					// du code, par exemple une initialisation des variables statiques
-				}
-				// ...
+		 static {
+		  // du code, par exemple une initialisation des variables statiques
+		 }
+		 // ...
 		}

@@ -96,6 +96,23 @@ Méthodes
 
 		:code:`Ici` : nombreDePersonnes.
 
+Constructeur
+	Il s'agit d'une méthode sans type de retour ayant le même nom que la classe. Elle sert à créer
+	des objets/instances de la classe, donc essentiellement donner des valeurs aux attributs.
+
+	:code:`Ici` : Personne(String nom, String prénom).
+
+Modificateurs/Qualificatifs
+	Il est possible de restreindre l'accès à une méthode/classe/attribut
+	via le qualificatif utilisé pour déclarer l'élément.
+
+	Il en existe 4 (sur les attributs/les méthodes)
+
+		* (rien=package private, par défaut) : peut être accédée par les classes du dossier (package)
+		* :code:`public` : tout le monde peut y accéder
+		* :code:`protected` : les classes qui héritent peuvent y accéder (voir héritage)
+		* :code:`private` : seulement les méthodes de cette classe peuvent y accéder
+
 Présentation des bonnes pratiques
 ----------------------------------------
 

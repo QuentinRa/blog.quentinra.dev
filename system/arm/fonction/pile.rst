@@ -10,7 +10,7 @@ L'utilisation de la pile est simple
 Donc vous mettez des valeurs sur la pile, le premier registre le plus en bas, etc...
 puis vous récupérer les valeurs.
 
-.. code:: ca65
+.. code:: none
 
 		push {lr} ; empile des registres
 		pop {pc} ; depile des registres

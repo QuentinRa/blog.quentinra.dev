@@ -12,7 +12,7 @@ fonctionnelles c'est-à-dire des interfaces avec une méthode.
 .. code:: java
 
 	() -> {
-		// ici du code
+	 // ici du code
 	}
 
 Notes

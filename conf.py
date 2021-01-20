@@ -19,11 +19,11 @@ on_rtd = os.environ.get('READTHEDOCS') == 'True'
 # -- Project information -----------------------------------------------------
 
 project = ''
-copyright = '2020, Quentin Ra'
+copyright = '2021, Quentin Ra'
 author = 'Quentin Ra'
 
 # The full version, including alpha/beta/rc tags
-release = 'build-3.33.406'
+release = 'build-3.34.452'
 # version 0 : html, css, php, js
 # version 1 : restructured text
 # version 1.1 : system/docker
@@ -61,6 +61,7 @@ release = 'build-3.33.406'
 # version 3.31 : utils/rst
 # version 3.32 : system/linux
 # version 3.33 : system/bash
+# version 3.34 : imperative/java
 
 # -- General configuration ---------------------------------------------------
 
@@ -143,7 +144,7 @@ graphviz_output_format = 'svg'
 
 # -- PDF
 
-pdf_documents = [('index', u'ramsamy-ws.ressources', u'Cours (ramsamy-ws)', u'Quentin Ra')]
+pdf_documents = [('index', u'memorize', u'Memorize', u'Quentin Ra')]
 
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-latex-output
 # https://docs.readthedocs.io/en/stable/guides/pdf-non-ascii-languages.html

@@ -25,6 +25,19 @@ des fichiers plus loin.
 
 Plus d'informations : https://docs.oracle.com/javase/tutorial/deployment/jar/build.html
 
+On inclus généralement un Manifest (/META-INF/MANIFEST.MF) dans l'archive.
+
+| Plus d'informations : https://docs.oracle.com/javase/tutorial/deployment/jar/manifestindex.html
+| En particulier :  https://docs.oracle.com/javase/tutorial/deployment/jar/defman.html
+
+Exemple simple
+
+.. code:: none
+
+	Manifest-Version: 1.0
+	Created-By: ...
+	Main-Class: package.Main
+
 Accès aux fichiers
 --------------------
 

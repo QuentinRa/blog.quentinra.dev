@@ -5,16 +5,16 @@ Classes particulières
 Il existe des classes "particulières" ou plutôt des façons
 particulières de déclarer une classe.
 
-Classes internes
------------------------
+Classes internes/imbriquées
+---------------------------
 
 Vous pouvez mettre une classe dans une autre. Généralement la classe est
 static et private. Si elle est publique c'est probablement que vous devriez
 faire un fichier à part. Elle peut être final aussi (interdire l'héritage).
 
-Si la classe est static si on y accède : :code:`UneClasse.ClasseInterne`
+Si la classe est static (classe imbriquée) si on y accède : :code:`UneClasse.ClasseInterne`
 ou encore :code:`new UneClasse.ClasseInterne()`. Sinon vous pouvez en
-faire un attribut d'instance.
+faire un attribut d'instance (classe interne).
 
 .. code:: java
 
@@ -28,8 +28,8 @@ faire un attribut d'instance.
 Les cas pratiques sont les Listeners qui sont utilisés uniquement par une classe
 et dans le cas ou ne pouvez pas mettre tous ça dans un package.
 
-Classes anonymes
------------------------------
+Classes anonymes (dite locale)
+-------------------------------
 
 Un bon programmeur ne fait jamais de classes anonymes car il ne peut pas leur associer
 de la documentation. Il s'agit d'une classe qui est créée comme une variable.
