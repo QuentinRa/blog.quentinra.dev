@@ -141,3 +141,5 @@ On peut configurer notre réseau tel que :
 
 		* https://www.browserling.com/tools/ip-to-bin
 		* https://www.browserling.com/tools/bin-to-ip
+		* https://www.browserling.com/tools/hex-to-ip
+		* https://www.binaryhexconverter.com/hex-to-decimal-converter

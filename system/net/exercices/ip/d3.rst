@@ -1,0 +1,32 @@
+================================
+3. Fragmentation IP
+================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+| 1. Tous les versions valent 4.
+| 2. Les tailles du header sont de 4.
+| 3. La taille de a,b,d,e est 1500 bytes. Celle de c est de 108 bytes.
+| 4. Tous les paquets ont l'ID 48460.
+| 5. Les paquets a,b,d,e sont fragmentés. Le paquet c est le dernier paquet.
+| 6. Offsets (ordre trouvé avec 2. et 3.)
+
+	* a: 555 = (4500 - 60 = 4440)/8 donc le 4e paquet
+	* b: 185 = (1500 - 20 = 1480)/8 donc le 2e paquet
+	* c: 740 = (6000 - 80 = 5920)/8 donc le 5e paquet
+	* d: 0 = donc le 1er paquet
+	* e: 370 = (3000 - 40=2960)/8 donc le 3e paquet (40 = 2*20 donc 2 headers)
+
+| #. TTL = 64 pour tous
+| 7. Protocole = 1 = ICMP
+| #. Ignore la checksum
+| 8. Source : 172.16.3.80
+| 9. Destination : 172.16.2.117
+
+Les paquets ont le même protocole, la même source, la même destination, la même version
+et les tailles sont en accordance avec les offsets et les paquets ont étés fragmentés. On a
+l'ordre :code:`d,b,e,a,c`.
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

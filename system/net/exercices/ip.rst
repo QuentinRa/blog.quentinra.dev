@@ -68,7 +68,7 @@ Mêmes questions pour ce paquet.
 
 | :code:`[TAG] IUTSF ASR TD2 2019 S2`
 
-2. Fragmentation IP
+3. Fragmentation IP
 ============================
 
 Par quoi les cinq datagrammes IP suivants sont-ils liés ? Quelle en est la machine
@@ -115,6 +115,11 @@ réseau qui est responsable de cet événement ?
 		| 9495 9697 9899 9a9b 9c9d 9e9f a0a1 a2a3
 		| .......................................
 		| .......................................
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<ip/d3>
 
 | :code:`[TAG] IUTSF ASR TD2 2019 S2`
 
