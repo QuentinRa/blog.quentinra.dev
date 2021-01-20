@@ -4,7 +4,7 @@ Lambda expressions
 
 Un ajout depuis la version 8 sont les
 lambda expression (code qui n'est pas objet
-mais fonctionnel).
+mais fonctionnel donc a éviter d'utiliser).
 
 On utilise généralement une lambda expression pour les interfaces
 fonctionnelles c'est-à-dire des interfaces avec une méthode.

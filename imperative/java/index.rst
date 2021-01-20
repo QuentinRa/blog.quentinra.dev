@@ -4,8 +4,8 @@
 JAVA
 ================================
 
-| :math:`\color{grey}{Version \ 0.6.9}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 18/01/2021}`
+| :math:`\color{grey}{Version \ 0.7.11}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 20/01/2021}`
 
 1. Introduction  :code:`théorique`
 ===================================
@@ -132,3 +132,5 @@ Ici, en vrac, quelques trucs que vous n'allez probablement jamais utiliser.
 	* https://fr.wikibooks.org/wiki/Programmation_Java/Annotations
 	* https://www.lwjgl.org/
 	* https://libgdx.com/
+	* https://docs.oracle.com/javase/tutorial/deployment/jar/build.html
+	* https://search.maven.org/
