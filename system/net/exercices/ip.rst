@@ -53,6 +53,8 @@ Le paquet suivant a été montré par tcpdump :
 (d) Quel protocole est transporté par ce paquet ?
 (e) Quelles sont en notation décimale pointée les adresses source et destination ?
 
+Mêmes questions pour ce paquet.
+
 | 4500 0054 c886 4000 4001 143d ac10 0350
 | ac10 0275 0800 fd82 5487 0001 8c8f 2d59
 | fd08 0400 0809 0a0b 0c0d 0e0f 1011 1213
