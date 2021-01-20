@@ -117,6 +117,9 @@ Ici, en vrac, quelques trucs que vous n'allez probablement jamais utiliser.
 		Constructeurs statique  <code/m/static>
 		Caractères unicode      <code/m/unicode>
 		Lambda expressions      <code/m/lambda>
+		Manipulation des Jar    <code/m/jar>
+		Gradle et Maven         <code/m/mvg>
+		Classes particulières   <code/m/classes>
 
 -----
 
