@@ -126,4 +126,6 @@ Ici, en vrac, quelques trucs que vous n'allez probablement jamais utiliser.
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* aucune
+	* https://fr.wikibooks.org/wiki/Programmation_Java/Annotations
+	* https://www.lwjgl.org/
+	* https://libgdx.com/
