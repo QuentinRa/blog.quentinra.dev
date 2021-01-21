@@ -4,8 +4,8 @@
 Réseau
 ================================
 
-| :math:`\color{grey}{Version \ 0.7.12}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 19/01/2021}`
+| :math:`\color{grey}{Version \ 0.7.13}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 21/01/2021}`
 
 1. Introduction et Vocabulaire
 ===================================
@@ -116,6 +116,7 @@ On peut configurer notre réseau tel que :
 			Comprendre les notions     <exercices/cours>
 			Tables de routages et ARP  <exercices/arp>
 			Protocole IP               <exercices/ip>
+			Routage et Filtres         <exercices/route>
 
 -----
 
