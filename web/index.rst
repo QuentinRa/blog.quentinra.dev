@@ -4,11 +4,11 @@
 Web
 ================================
 
-| :math:`\color{grey}{Version \ 0.1.2}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 22/01/2021}`
+| :math:`\color{grey}{Version \ 0.2.3}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 21/01/2021}`
 
 1. Introduction
-===================================
+===================
 
 On définit le Web par les pages web que vous consultez
 en tapant une URL (ex : https://duckduckgo.com/).
@@ -26,7 +26,7 @@ Résumé
 	* HTML5 : contenu d'une page affichée (fichier .html)
 	* CSS : style d'une page (fichier .css)
 	* JavaScript : animations dans le navigateur (fichier .js)
-	* PHP : code qui modifie l'HTML avant de l'envoyer, côté serveur (fichier .php)
+	* PHP (+SQL) : code qui modifie l'HTML avant de l'envoyer, côté serveur (fichier .php)
 
 Note sur les frameworks
 ---------------------------
@@ -46,6 +46,24 @@ avec :code:`let's encrypt`.
 
 Vous pouvez préciser le port avec :code:`url:port` si votre site web (ou le site web)
 utilise un autre port que 80/443.
+
+Note sur la console
+-----------------------
+
+En appuyant sur F12 ou sur CTRL+i ou [clic droit puis inspecter] vous pouvez ouvrir
+une console.
+
+	* Elements : voir le code de la page (HTML/CSS), modifiable
+	* Console : tapez du javascript
+	* Source : voir les fichiers du site
+	* Application : voir les cookies/sauvegardes locales/autres crées par le site
+
+Note sur FTP
+-------------------------
+
+Vous allez généralement devoir mettre vos fichiers sur le serveur web. On utilise généralement
+FileZilla sous Windows ou :code:`ftp`. Il suffit de se connecter et déplacer les fichiers
+sur le serveur.
 
 2. Organisation
 ==================
@@ -84,27 +102,60 @@ pour bloquer l'accès extérieur (donc depuis un navigateur). On verra cela plus
 3. HTML
 ====================
 
-...
+Pour faire tourner de l'HTML, il suffit de déposer un .html dans votre navigateur.
+
+Alternativement si vous êtes sous linux et avez un :code:`public_html`
+alors vous pouvez y accéder via une url (généralement
+de la forme :code:`https://domaine/~nom_utilisateur/fichier.html` si fichier.html
+est dans public_html). Si ce dossier n'est pas configurer, alors regarder
+le cours pour "setup" un serveur apache.
+
+Sinon vous pouvez utiliser le moyen vu en PHP (wamp) qui est un logiciel
+qui "setup" un serveur apache lorsqu'il est lancé (donc pas permanent).
 
 4. CSS
 ====================
 
-...
+Un fichier généralement appelé style.css. Voir le cours pour l'appliquer
+au HTML. Aucune configuration requise.
 
 5. JS
 ====================
 
-...
+Un fichier .js. Permet d'exécuter des scripts dans le navigateur. Aucune configuration requise.
+
+Vous noterez que dans la partie console de la console F12 alors vous pouvez directement
+taper du javascript sur n'importe quel site.
 
 6. PHP
 ====================
 
-...
+Vous pouvez faire de l'HTML dans un PHP mais pas l'inverse. Vous devez
+avoir une machine qui fait office de serveur (cela peut être la votre dans
+ce cas l'URL sera http://localhost).
+
+Pour ce faire, vous pouvez configurer un serveur apache.
+
+Ou vous pouvez installer WampServer (Windows), XamppServer (Linux) ou
+MampServer (MacOs).
+
+Petite note, sous wamp, l'URL http://localhost correspond à la "racine"
+
+	* Windows : C:\wamp64\www\index.php
+	* Linux : ??? (faire un find du dossier www)
+	* Mac : ???
+
+Les scripts PHP utilisent souvent une base de données. Ici vous
+pouvez y accéder avec http://localhost/phpmyadmin/, root sans mot de passe.
 
 -----
 
 **Crédits**
+	* Tous les contributeurs des autres cours de web, indirectement
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* aucune
+	* https://filezilla-project.org/
+	* https://www.w3schools.com/
+	* https://validator.w3.org/
+	* https://codeigniter.com/
