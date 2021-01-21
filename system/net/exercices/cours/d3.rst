@@ -1,0 +1,136 @@
+================================
+3. Découverte
+================================
+
+.. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction vérifiée
+
+Liens utilisés
+
+	* http://www.aboutlinux.info/2006/11/ifconfig-dissected-and-demystified.html
+	* https://www.wireshark.org/tools/oui-lookup.html
+	* http://lifeofageekadmin.com/how-to-configure-network-interface-using-ifconfig/
+	* https://support.google.com/wifi/answer/6274166?hl=fr
+
+Question 1
+------------
+
+.. code:: bash
+
+	$ ifconfig -a
+	docker0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+		inet 172.17.0.1  netmask 255.255.0.0  broadcast 172.17.255.255
+		ether 02:42:5a:30:6a:dd  txqueuelen 0  (Ethernet)
+		RX packets 0  bytes 0 (0.0 B)
+		RX errors 0  dropped 0  overruns 0  frame 0
+		TX packets 0  bytes 0 (0.0 B)
+		TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+	eno1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+		inet 172.16.2.129  netmask 255.255.0.0  broadcast 172.16.255.255
+		inet6 fe80::3617:ebff:fe98:96d8  prefixlen 64  scopeid 0x20<link>
+		ether 34:17:eb:98:96:d8  txqueuelen 1000  (Ethernet)
+		RX packets 343038  bytes 367830857 (350.7 MiB)
+		RX errors 0  dropped 0  overruns 0  frame 0
+		TX packets 468931  bytes 525791367 (501.4 MiB)
+		TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+		device interrupt 20  memory 0xf7f00000-f7f20000
+	lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+		inet 127.0.0.1  netmask 255.0.0.0
+		inet6 ::1  prefixlen 128  scopeid 0x10<host>
+		loop  txqueuelen 1000  (Local Loopback)
+		RX packets 2  bytes 100 (100.0 B)
+		RX errors 0  dropped 0  overruns 0  frame 0
+		TX packets 2  bytes 100 (100.0 B)
+		TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+a)
+
+L'interface eno1 est de type ethernet (ether devant adresse mac) et elle est active :
+son mtu (Maximum transmission unit)	qui est la taille maximum d'un paquet pouvant être transmis de 1500.
+Son adresse mac la valeur de ether soit : 34:17:eb:98:96:d8.
+
+b)
+
+On trouve la fabricant de la carte réseau avec l'adresse mac et le oui :
+
+.. code:: none
+
+	(sublime text - ctrl+s sur 34-17-eb car 34:17:eb)
+	34-17-EB   (hex)		Dell Inc.
+	3417EB     (base 16)		Dell Inc.
+
+c)
+
+| Adresse ipv4 : 172.16.2.129
+| Adresse broadcast : 172.16.255.255
+| Adresse netMast (sous réseau) : 255.255.0.0
+
+d)
+
+| RX correspond au nombre de packets reçus et donc
+| TX correspond au nombre de packets transmis.
+
+e)
+
+| L'interface lo est de type interface loopback.
+| Elle sert pour les transmissions réseau au sein d'une même machine.
+| Le système d'exploitation gère les fonctions de réseau sans générer de trafic exterieur.
+
+Question 2
+-------------
+
+| L'adresse ipv4 auquel appartient notre machine est : 172.16.0.1
+
+| Wan : un réseau d'ordinateur connectés entre-eux à l'extérieur de notre réseau.
+| Lan : appareils connectés à notre réseau personnel.
+
+Notre adresse est donc de type LAN car elles sont de la forme 172.16.... qui sont privés.
+Et car elles sont de type ethernet.
+
+Question 3
+---------------
+
+.. code:: bash
+
+	$ hostname
+	salle234-08.arda
+
+Nous renvoi la machine suivie du domaine.
+
+Question 4
+------------------------
+
+(a)
+
+La commande fait un ping sur localhost. Donc on envoi les paquets
+et on les reçoit.
+
+(b)
+
+
+On peut lire dans la commande HWaddress, ligne duckduckgo.com que l'adresse mac de l'interface
+est ....
+
+La première fois, il regarde physiquement qui est ou, puis après, il le met dans le cache.
+
+5)
+
+.. code::
+
+	$ ping -b 172.16.255.255;
+
+6)
+
+| Kernel IP routing table
+| Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+| default         gatekeeper.arda 0.0.0.0         UG    202    0        0 eno1
+| 172.16.0.0      0.0.0.0         255.255.0.0     U     202    0        0 eno1
+| 172.17.0.0      0.0.0.0         255.255.0.0     U     0      0        0 docker0
+
+
+| Si l'IP est de la forme 172.16.0.0 alors il est redirigé vers ce pc.
+| Si l'IP est de la forme 172.17.0.0 alors il est redirigé vers ce pc.
+| Sinon alors l'IP est redirigée vers gatekeeper.arda.
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

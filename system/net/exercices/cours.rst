@@ -80,6 +80,11 @@ IP 85.85.160.0 - 85.85.163.255.
 
 6. La commande route permet d'afficher la table de routage de votre machine. Expliquez le résultat.
 
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<cours/d3>
+
 | :code:`[TAG] IUTSF ASR TP1 2019 S2`
 
 Niveau supérieur
@@ -90,12 +95,12 @@ Niveau supérieur
 
 La commande ping permet de préciser avec l'option -t la durée de vie (TTL : Time To Live)
 du paquet ip correspondant. Ce paramètre représente le nombre maximal de routeurs de transit.
-A chaque routeur traversé, le TTL est décrementé. Lorsqu'il atteint la valeur 0, le paquet est détruit,
+A chaque routeur traversé, le TTL est décrémenté. Lorsqu'il atteint la valeur 0, le paquet est détruit,
 et un paquet ICMP (11 : Time exceeded) est envoyé à la source si le routeur est configuré pour cela
 (ceci évite qu'un paquet boucle à l'infini s’il existe un problème de boucle de routage).
 
 En utilisant la commande ping, et en incrémentant manuellement le ttl à chaque tentative,
-donnez si possible tous les noeuds jusqu'aux machines (la commande ping ne devra pas
+donnez si possible tous les nœuds jusqu'aux machines (la commande ping ne devra pas
 attendre plus d'une seconde)
 
 	* www.archlinux.org
@@ -103,10 +108,10 @@ attendre plus d'une seconde)
 	* www.google.fr
 	* www.rien.org
 
-On va automatiser la démarche pour découvrir l'ensemble des noeuds traversés jusqu'à une machine.
+On va automatiser la démarche pour découvrir l'ensemble des nœuds traversés jusqu'à une machine.
 
-Ecrire un script trace.sh qui prend en argument un nom/ip de machine,
-et qui affiche les noeuds traversés. On utlise la même idée que précédemment:
+Écrire un script trace.sh qui prend en argument un nom/ip de machine,
+et qui affiche les nœuds traversés. On utilise la même idée que précédemment:
 la commande ping, et les options -c, -t, -W. Un exemple de la sortie attendue :
 
 .. code:: bash
