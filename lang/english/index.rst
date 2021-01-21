@@ -10,7 +10,13 @@ Anglais
 1. General
 **********************
 
-...
+Symbols
+
+	* :code:`=` : is or equals or comes to
+	* :code:`+` : and or plus or to add
+	* :code:`-` : less or minus or to subtract
+	* :code:`*` : times or multiplied by
+	* :code:`/` : over or divided by
 
 2. Grammar
 **********************

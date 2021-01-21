@@ -61,6 +61,11 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     Langage Java                         <imperative/java/index>
 
 .. toctree::
+    :caption: Programmation web
+    :name: web
+    :maxdepth: 1
+
+.. toctree::
     :caption: Conception
     :name: conception
     :maxdepth: 1

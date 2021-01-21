@@ -29,7 +29,7 @@ b    ば   び       ぶ        べ    ぼ
 p    ぱ   ぴ       ぷ        ぺ    ぽ
 ==== ==== ======= ========= ==== ====
 
-:download:`version originale </assets/language/japanese/hiragana.png>`
+:download:`version originale </assets/lang/japanese/hiragana.png>`
 
 Enfin, il y a le caractère n : ん
 
