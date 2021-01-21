@@ -92,7 +92,8 @@ ce qui suit.
 Il s'agira d'analyser la solution de chacun des deux experts et indiquer
 pourquoi elle réponds ou ne réponds pas aux exigences de l'organisation.
 
-...
+| Expert 1 : :download:`expert1.txt <../../../assets/system/net/exercices/route2-2.txt>`
+| Expert 2 : :download:`expert2.txt <../../../assets/system/net/exercices/route2-3.txt>`
 
 | :code:`[TAG] IUTSF ASR TD4 2019 S2`
 
