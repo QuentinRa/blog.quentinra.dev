@@ -4,8 +4,8 @@
 NOM
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.0}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 17/01/2021}`
+| :math:`\color{grey}{Version \ 0.0.1}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 22/01/2021}`
 
 1. Nom de partie
 ===================================
@@ -28,7 +28,6 @@ i. Exercices
     :maxdepth: 1
 
 		nom				<path>
-|
 
 -----
 

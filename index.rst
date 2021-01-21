@@ -65,6 +65,9 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :name: web
     :maxdepth: 1
 
+    Généralités                         <web/index>
+    Langage PHP                         <web/php/index>
+
 .. toctree::
     :caption: Conception
     :name: conception
