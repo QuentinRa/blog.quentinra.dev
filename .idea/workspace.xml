@@ -29,24 +29,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/language/japanese/hiragana.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lang/japanese/hiragana.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/english/an.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lang/english/an.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/english/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/lang/english/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/japanese/alphabet/kana.rst" beforeDir="false" afterPath="$PROJECT_DIR$/lang/japanese/alphabet/kana.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/japanese/alphabet/kanji.rst" beforeDir="false" afterPath="$PROJECT_DIR$/lang/japanese/alphabet/kanji.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/japanese/alphabet/romaji.rst" beforeDir="false" afterPath="$PROJECT_DIR$/lang/japanese/alphabet/romaji.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/japanese/chiffres/kana.rst" beforeDir="false" afterPath="$PROJECT_DIR$/lang/japanese/chiffres/kana.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/japanese/chiffres/kanji.rst" beforeDir="false" afterPath="$PROJECT_DIR$/lang/japanese/chiffres/kanji.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/japanese/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/lang/japanese/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/japanese/syntax/pronoms.rst" beforeDir="false" afterPath="$PROJECT_DIR$/lang/japanese/syntax/pronoms.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/japanese/syntax/verbes.rst" beforeDir="false" afterPath="$PROJECT_DIR$/lang/japanese/syntax/verbes.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/japanese/voc/general.rst" beforeDir="false" afterPath="$PROJECT_DIR$/lang/japanese/voc/general.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/japanese/voc/jap.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lang/japanese/voc/jap.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/japanese/voc/school.rst" beforeDir="false" afterPath="$PROJECT_DIR$/lang/japanese/voc/school.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/japanese/voc/time.rst" beforeDir="false" afterPath="$PROJECT_DIR$/lang/japanese/voc/time.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/japanese/voc/work.rst" beforeDir="false" afterPath="$PROJECT_DIR$/lang/japanese/voc/work.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/japanese/voc/world.rst" beforeDir="false" afterPath="$PROJECT_DIR$/lang/japanese/voc/world.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/english/an.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lang/english/an.txt" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -290,7 +273,7 @@
       <workItem from="1611174608549" duration="3929000" />
       <workItem from="1611178826175" duration="1446000" />
       <workItem from="1611218365859" duration="4011000" />
-      <workItem from="1611230584954" duration="5771000" />
+      <workItem from="1611230584954" duration="7885000" />
     </task>
     <servers />
   </component>
