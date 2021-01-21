@@ -122,8 +122,8 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :name: language
     :maxdepth: 1
 
-		Anglais                              <language/english/index>
-		Japonais                             <language/japanese/index>
+		Anglais                              <lang/english/index>
+		Japonais                             <lang/japanese/index>
 
 .. toctree::
     :caption: Utilitaires
