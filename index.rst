@@ -66,6 +66,9 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :maxdepth: 1
 
     Généralités                         <web/index>
+    Langage HTML                        <web/html/index>
+    Langage CSS                         <web/css/index>
+    Langage JS                          <web/js/index>
     Langage PHP                         <web/php/index>
 
 .. toctree::

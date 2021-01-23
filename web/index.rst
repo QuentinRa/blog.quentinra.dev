@@ -142,7 +142,7 @@ MampServer (MacOs).
 Petite note, sous wamp, l'URL http://localhost correspond à la "racine"
 
 	* Windows : C:\wamp64\www\index.php
-	* Linux : ??? (faire un find du dossier www)
+	* Linux : /var/www/html/
 	* Mac : ???
 
 Les scripts PHP utilisent souvent une base de données. Ici vous

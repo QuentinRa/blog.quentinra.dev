@@ -29,6 +29,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
@@ -61,26 +62,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/js" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\web\js" />
+      <recent name="C:\Users\quent\Documents\texas-res\web\css" />
+      <recent name="C:\Users\quent\Documents\texas-res\web\html" />
+      <recent name="C:\Users\quent\Documents\texas-res\web\php" />
+      <recent name="C:\Users\quent\Documents\texas-res\web" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\web\html\cours" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\net\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\java\code\i" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\imperative\java" />
       <recent name="C:\Users\quent\Documents\texas-res\system\net\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\_notes" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\web\php" />
-      <recent name="C:\Users\quent\Documents\texas-res\web" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\system\net\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\net\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\java\code\m" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -274,7 +275,11 @@
       <workItem from="1611178826175" duration="1446000" />
       <workItem from="1611218365859" duration="4011000" />
       <workItem from="1611230584954" duration="7990000" />
-      <workItem from="1611250792798" duration="9497000" />
+      <workItem from="1611250792798" duration="9549000" />
+      <workItem from="1611310793540" duration="631000" />
+      <workItem from="1611410977160" duration="753000" />
+      <workItem from="1611419426168" duration="2000" />
+      <workItem from="1611424770769" duration="2625000" />
     </task>
     <servers />
   </component>
@@ -377,10 +382,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="349" y="150" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1609877609782" />
-    <state x="604" y="343" key="NewPhpFileDialog" timestamp="1603191408316">
+    <state x="604" y="343" key="NewPhpFileDialog" timestamp="1611425652123">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="343" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1603191408316" />
+    <state x="604" y="343" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1611425652123" />
     <state x="397" y="0" width="1139" height="824" key="SettingsEditor" timestamp="1609787489980">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -409,10 +414,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="376" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1603556286896" />
-    <state x="480" y="163" width="575" height="596" key="find.popup" timestamp="1611262072790">
+    <state x="480" y="163" width="575" height="596" key="find.popup" timestamp="1611424849616">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="480" y="163" width="575" height="596" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1611262072790" />
+    <state x="480" y="163" width="575" height="596" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1611424849616" />
     <state x="684" y="302" width="609" height="280" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1608394586647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
