@@ -29,13 +29,6 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/css.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/php/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/php/index.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -284,7 +277,7 @@
       <workItem from="1611310793540" duration="631000" />
       <workItem from="1611410977160" duration="753000" />
       <workItem from="1611419426168" duration="2000" />
-      <workItem from="1611424770769" duration="9857000" />
+      <workItem from="1611424770769" duration="13261000" />
     </task>
     <servers />
   </component>

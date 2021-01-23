@@ -1,0 +1,56 @@
+
+Protocole
+	Façon dont les données sont échangées.
+
+	TCP, IP, ...
+
+	Format et structure
+	Méthode de partage/transfert
+	Gestion des erreurs
+	Début et Fin.
+
+	Couche
+  	Fait des couches comme ça un protocole qui s'appuie sur le notre ne refait pas tout de zéro.
+
+  	Protocole supérieur HTTP.
+  	Protocole Edge, Apache, Firefox, ... qui implémentent HTTP donc peuvent parler en eux.
+
+  	Couches sont indépendantes.
+
+  7 couches OSI
+  TCP/IP
+
+  	* Application : app, pré, session (http: Get /, ...)
+  	* Trans : trans : tcp/udp (savoir a qui envoyé, socket, port)
+  	* Réseau : Réseau/Internet : ethernet et ip4/ipv6
+  	* Liaison/Physique : Accès au réseau : règle d'accès au média : wifi, adsl, ethernet
+
+  Donnée brute : charge utile ? header pour tous les protocoles nécessaires. Paquets.
+  l'encapsulation dans différent protocoles.
+  dés-encapsulation.
+
+  https://www.developpez.net/forums/d1422341/systemes/reseaux/protocoles/comprendre-entites-protocolaires/
+
+  Fait API
+  	Détermine les fonctions pour communiquer (ex: fct qui fait tout, ou alors une fct init, close, ...)
+
+https://fr.linkedin.com/learning/les-fondements-des-reseaux-les-protocoles-et-les-outils-cli/comprendre-la-notion-de-protocole-et-de-couches-protocolaires
+
+Port
+	Il s'agit de l'endroit par lequel les données vont transiter.
+
+	Ex : ftp (21), ssh (22), ...
+
+Service
+	Les point d'entrées/sorties d'un protocole. Le concept associé est un socket=prise. Chaque
+	machine va ouvrir un tuyau à un port, pour faire transiter les données.
+
+PDU (Protocol Data Unit)
+	Message échangé. On détermine si c'est int, string, ...
+
+	Pour les entiers l’endianness est spécifiée, le format des flottants, le charset
+  pour les caractères et les chaînes de caractères, .
+
+  https://www.fun-mooc.fr/c4x/MinesTelecom/04003S03/asset/c_4_t.pdf
+  https://www.developpez.net/forums/d1422341/systemes/reseaux/protocoles/comprendre-entites-protocolaires/
+  https://www.edrawsoft.com/fr/network-protocol.html
