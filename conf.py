@@ -24,8 +24,8 @@ author = 'Quentin Ra'
 
 # The full version, including alpha/beta/rc tags
 release = 'build-3.34.452'
-# version 0 : html, css, php, js
-# version 1 : restructured text
+# version 0 : fait en html, css, php, js
+# version 1 : refonte mais en restructured text avec sphinx
 # version 1.1 : system/docker
 # version 1.2 : utils/vim
 # version 1.3 : maths/graphes
@@ -62,6 +62,7 @@ release = 'build-3.34.452'
 # version 3.32 : system/linux
 # version 3.33 : system/bash
 # version 3.34 : imperative/java
+# version 3.35 : web/html
 
 # -- General configuration ---------------------------------------------------
 

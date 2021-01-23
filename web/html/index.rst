@@ -8,7 +8,7 @@ HTML
 | :math:`\color{grey}{Dernière \ édition \ le \ 23/01/2021}`
 
 Il est important d'avoir lu le cours sur les généralités du web
-et d'avoir lu la partie HTML.
+ainsi que d'avoir lu la partie HTML.
 
 Ce cours se base sur :code:`HTML5`.
 
@@ -25,48 +25,36 @@ Voici un exemple, une balise image : :code:`<img src='chemin/image.png' alt='des
 
 
 		Fichier type HTML               <files/html5>
-
-Notes
-
-	* les \"\" ou \'\' après le nom d'un attribut (alt, ...) sont optionnels mais recommandés
-	*  Apprendre l'HTML : https://www.w3schools.com/html/default.asp
-	* les attributs id et class sont utilisés en javascript et en CSS pour référencer une balise
-	* N'oubliez pas de vérifier votre code ici : https://validator.w3.org/#validate_by_input
+		Quelques notes                  <files/notes>
 
 2. Balises principales
 ================================
 
-Titres :code:`<hn>titre</hn>`
+Titres :code:`<hn>titre</hn>` (`h <https://www.w3schools.com/tags/tag_hn.asp>`_)
 	n va de 1 à 6 et fait varier la taille.
 	1 seule balise h1 par page, utilisé par les moteurs de recherche comme mots clefs du site.
 
-	Page:  https://www.w3schools.com/tags/tag_hn.asp
-
-Texte :code:`<p>paragraphe</p>`
+Texte :code:`<p>paragraphe</p>` (`p <https://www.w3schools.com/tags/tag_p.asp>`_)
 	On utilise généralement des balises span dedans pour mettre en couleur une partie
-	par exemple.
+	par exemple. P est bloquante par défaut (1 par ligne, css pour changer ça ou utiliser div+span).
 
-	Page: https://www.w3schools.com/tags/tag_p.asp
-
-Conteneur :code:`<div> des balises </div>`
+Conteneur :code:`<div> des balises </div>` (`div <https://www.w3schools.com/tags/tag_div.asp>`_)
 	Une balise non affichée qui sert à grouper des composants pour leur appliquer une style généralement
 	(position à un endroit etc.).
 
-	Page: https://www.w3schools.com/tags/tag_div.asp
-
-Lien/Ancre :code:`<a href='destination'>texte affiché</a>`
+Lien/Ancre :code:`<a href='destination'>texte affiché</a>` (`a <https://www.w3schools.com/html/html_links.asp>`_)
 	Texte affiché qui change la page avec la valeur dans href. On utilise l'attribut
 	:code:`target="_blank"` pour ouvrir dans un nouvel onglet.
 
 	Si vous ne savez pas la valeur d'un lien, mettez #. Si vous voulez un lien qui référence une balise
-	ayant un id alors vous utilisez #id à la fin de l'url de destination.
+	ayant un id alors vous utilisez #id à la fin de l'URL de destination.
 
-	Page: https://www.w3schools.com/html/html_links.asp
-
-Image :code:`<img src="chemin" />`
+Image :code:`<img src="chemin" />`  (`img <https://www.w3schools.com/html/html_images.asp>`_)
 	Généralement on mets un attribut :code:`alt` avec du texte si l'image ne charge pas.
 
-	Page: https://www.w3schools.com/html/html_images.asp
+Balise rien :code:`<span>quelque chose</span>` (`span <https://www.w3schools.com/tags/tag_span.asp>`_)
+	Une balise qui ne fait rien. Utile pour appliquer du style a une partie d'un texte (on ne peut pas
+	mettre une div dans une p). Utile lorsqu'on ne peut pas utiliser une p.
 
 3. Balises de style
 ================================
@@ -91,10 +79,74 @@ Balise :code:`<s>texte</s>`
 Balise :code:`<u>texte</u>`
 	Souligne le texte.
 
-4. Tags meta
+4. Autres balises
 ================================
 
-...
+Balise :code:`<ol> ... </ol>`
+	Liste numérotée. Chaque élément est une balise li.
+
+Balise :code:`<ul> ... </ul>`
+	Liste non numérotée. Chaque élément est une balise li.
+
+Balise :code:`<li> ... </li>`
+	Utilisé dans une balise ul/ol. Voir `listes <https://www.w3schools.com/html/html_lists.asp>`_
+
+Balise :code:`<pre>truc</pre>` (`pre <https://www.w3schools.com/tags/tag_pre.asp>`_)
+	Une balise pre affiche exactement ce qu'il y dedans (respecte les espaces, etc.).
+
+Balise :code:`<code>code</code>` (`code <https://www.w3schools.com/tags/tag_code.asp>`_)
+	Utilisée pour affiche du code. Généralement ne fait pas la coloration syntaxique, il faudra
+	sûrement utiliser une librairie JS.
+
+5. Formulaires
+===========================
+
+`Formulaires <https://www.w3schools.com/html/html_forms.asp>`_.
+
+Formulaire :code:`<form action="script.php" method="...">`
+	Plus de détails en PHP mais un formulaire est une balise logique qui regroupe
+	tous les champs de saisie (input, ...). Lorsque le formulaire est validé, alors toutes
+	les valeurs sont envoyés selon une méthode (post/get) a un script PHP qui traite les données.
+
+	On place généralement une vérification en javascript/html en plus de la vérification en PHP.
+
+Balise de saisie :code:`<input type="..." >` (`input <https://www.w3schools.com/tags/tag_input.asp>`_)
+	Une balise \"joker\" qui selon le type donné devient une checkbox (checkbox),
+	un calendrier pour saisir une date (date), du texte (text), un téléphone (tel), un mot de passe
+	(password), une interval (range) ou encore des boutons radios (radio).
+
+	L'attribut :code:`placeholder="valeur"` permet de mettre un indication de saisie qui disparait lorsque
+	l'utilisateur commence à taper.
+
+	L'attribut :code:`value="valeur"` permet de donner une valeur par défaut. Vous pourrez ainsi ré-remplir
+	un formulaire si les données sont incorrectes.
+
+	L'attribut :code:`form="<id>"` permet à une balise de ne pas être dans la balise form mais d'envoyer
+	quand même ses données lorsque le formulaire est envoyé.
+
+	L'attribut :code:`required` (sans valeur ou alors true) indique que le champ est obligatoire. Attention,
+	n'importe qui peut éditer le html et retirer cet attribut.
+
+Zone de texte :code:`<textarea>...</textarea>` (`textarea <https://www.w3schools.com/tags/tag_textarea.asp>`_)
+	Une zone de texte, col et row permettent de lui donner une taille rapidement. Certains
+	attributs de input sont utilisables (required, form, placeholder, ...)
+
+6. Tags meta
+================================
+
+Voici quelques tags meta souvent utilisés.
+
+.. code:: html
+
+		<!-- icône du site dans l'onglet, facultatif -->
+		<link rel="icon" href=".../icon.png">
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- auteur, ... pour le référencement (facultatif) -->
+		<META NAME="AUTHOR" CONTENT="...">
+		<META NAME="COPYRIGHT" CONTENT="...">
+		<META NAME="KEYWORDS" CONTENT="....">
+		<META NAME="DESCRIPTION" CONTENT="...">
 
 -----
 
