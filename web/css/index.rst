@@ -4,8 +4,8 @@
 CSS
 ================================
 
-| :math:`\color{grey}{Version \ 0.0.1}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 21/01/2021}`
+| :math:`\color{grey}{Version \ 0.2.6}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 23/01/2021}`
 
 Il est important d'avoir lu le cours sur les généralités du web
 ainsi que d'avoir lu les parties HTML et CSS.
@@ -41,7 +41,18 @@ On indique au HTML notre fichier de css comme suit
 		<!-- importation d'un fichier de style -->
 		<link rel="stylesheet" href="chemin/vers/style.css">
 
-2. Logique d'application
+Voici un exemple de fichier css.
+
+.. code:: css
+
+	@charset "UTF-8";
+
+	/* un commentaire */
+	body {
+	 scroll-behavior:smooth;
+	}
+
+2. Sélecteur
 =================================
 
 Sélecteur
@@ -60,18 +71,111 @@ et on détermine les propriétés des éléments sélectionnés.
 
 		/* balises */
 		html, hr, section, ... {
-			/* ici on définit le style */
+		 /* ici on définit le style */
 		}
 		.uneClasse, #id {
-			/* ici on définit le style */
+		 /* ici on définit le style */
 		}
 
+.. [#1] Voici un exemple d'utilisation de classes (une balise peut avoir une ou plusieurs classes)
+
+	.. code:: html
+
+			<!-- on aura .text-small, .text-red et #texte-intro comme sélecteurs disponibles -->
+			<p class="text-small text-red" id="texte-intro">...</p>
+
+3. Valeur de styles
+=================================
+
+Il y en a beaucoup trop... Listes
+
+	* liste : https://www.w3schools.com/cssref/default.asp
+	* liste courte (page 2) : https://perso.limsi.fr/annlor/enseignement/ensiie/pw/resume_html_css.pdf
+
+Le format est :code:`propriété: valeur;` ou :code:`propriété: valeur !important`
+pour forcer un style a être appliqué.
+
+Les unités de tailles sont généralement des :code:`px` (pixels) mais il en existe
+pleins d'autres (rem, ...) et vous pouvez aussi utiliser un pourcentage (:code:`50%` par exemple).
+
+Voici quelques propriétés
+
+.. code:: css
+
+		/* exemple avec sélecteur div */
+		div {
+		 /* générales */
+
+		 background: yellow; /* fond, utiliser un nom, ou rgb(r,g,b) ou #code_hexa */
+		 color: red; /* couleur du texte, voir background pour les valeurs */
+		 font-size: 15px; /* taille du texte */
+		 font-family: "Open Sans", sans-serif; /* définir la police s'il trouve pas la 1er, il test la 2e etc. */
+		 font-weight: 400; /* 400=regular, 100=light, 800=bold je crois */
+		 text-decoration: underline #dd4441; /* souligne du texte en dd4441 donc rouge */
+		 text-decoration: none; /* retire le soulignement, ex: plus de trucs sous un lien */
+
+		 width: 5px; /* largeur */
+		 height: 5px; /* hauteur */
+
+		 display: block; /* affichage, block=afficher, none=cacher, ... */
+
+		 border: 1px solid #202735; /* mettre une bordure */
+		 border-radius: 4px; /* arrondir tous les angles (sinon faut préciser les 4 valeurs) */
+
+		 cursor: pointer; /* met la souris du clic */
+		 outline: none; /* redire la ligne bizarre lors du clic sur un faux bouton */
+		}
+
+Des propriétés notables sont
+
+	* margin : mets des marges entre le composant et l'extérieur
+	* padding : mets des marges entre le contenu du composant et sa bordure
+	* :code:`scroll-behavior:smooth;` : a mettre a body, fait que la défilement (barre droite) est doux
+
+4. Faire des constantes
+=========================
+
+.. code:: none
+
+		/* déclarer des constantes */
+		:root {
+		 --special-grey1: #5d6372;
+		 --special-red1: #dd4441;
+		}
+
+		.red {
+		 color: var(--special-red1);
+		}
+
+5. Responsive
+=======================
+
+Il est possible de faire un style, qui n'est activé que l'écran est
+d'au moins une certaine taille par exemple. On parle de media-queries.
+
+.. code:: none
+
+		@media min-width(750px) AND max-width(950px) {
+		 .telephone-div {
+		  ...
+		 }
+		}
+
+Vous pouvez faire des test, en ouvrant la console puis en cliquant en haut
+à gauche de la console sur :code:`Activer/Désactiver l'émulation` (icône téléphone+tablette)
+ou avec CTRL+SHIFT+M. La barre en haut vous permet de facilement virtuellement changer
+le taille de votre écran et/ou son orientation.
 
 -----
 
 **Crédits**
+	* Anne-Laure LIGOZAT (enseignante à l'ENSIIE)
+	* Vitera Y (enseignant à l'ENSIIE)
+	* Thomas LAURENT (enseignant à l'ENSIIE)
 	* Denis MONNERAT (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* aucune
+	* https://www.w3schools.com/css/default.asp
+	* https://validator.w3.org/#validate_by_input
+	* https://perso.limsi.fr/annlor/enseignement/ensiie/pw/resume_html_css.pdf

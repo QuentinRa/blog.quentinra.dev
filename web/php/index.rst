@@ -15,6 +15,9 @@ PHP
 -----
 
 **Crédits**
+	* Anne-Laure LIGOZAT (enseignante à l'ENSIIE)
+	* Vitera Y (enseignant à l'ENSIIE)
+	* Thomas LAURENT (enseignant à l'ENSIIE)
 	* Denis MONNERAT (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 

@@ -63,6 +63,7 @@ release = 'build-3.34.452'
 # version 3.33 : system/bash
 # version 3.34 : imperative/java
 # version 3.35 : web/html
+# version 3.36 : web/css
 
 # -- General configuration ---------------------------------------------------
 
