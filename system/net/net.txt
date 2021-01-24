@@ -4,24 +4,8 @@
 			Protocole IP                 <files/proto/ip>
 			Ethernet                     <files/proto/eth>
 
-  TCP/IP
-
-  	* Application : app, pré, session (http: Get /, ...)
-  	* Trans : trans : tcp/udp (savoir a qui envoyé, socket, port)
-  	* Réseau : Réseau/Internet : ethernet et ip4/ipv6
-  	* Liaison/Physique : Accès au réseau : règle d'accès au média : wifi, adsl, ethernet
-
-  Donnée brute : charge utile ? header pour tous les protocoles nécessaires. Paquets.
-  l'encapsulation dans différent protocoles.
-  dés-encapsulation.
-
 $ dig +short lunix120.ensiie.fr
- ip
-
-A envoi B via A-R=1500 et R-R2=1000 R2-B=15000
-paquets PDU=1200
-fragmenté en 2 paquets (x2 header)
-mais on ne sait pas le comportement en R2-B
+ip
 
 
 UDP

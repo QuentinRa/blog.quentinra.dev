@@ -68,6 +68,8 @@ de représenter le nombre croissant de machines.
 
 			Protocoles                 <files/proto/def>
 			Couches et Modèle OSI      <files/proto/osi>
+			Protocole TCP/IP           <files/proto/tcp_ip>
+			Headers et Fragmentation   <files/proto/def2>
 
 5. Table de routage et ARP :code:`théorie`
 ================================================
@@ -145,6 +147,9 @@ On peut configurer notre réseau tel que :
 	* https://en.wikipedia.org/wiki/List_of_network_protocols_(OSI_model)#Layer_7_(Application_Layer)
 	* https://fr.wikipedia.org/wiki/Liste_de_ports_logiciels
 	* https://en.wikipedia.org/wiki/List_of_network_protocols_(OSI_model)
+	* https://www.computer-networking.info/1st/html/intro/services-protocols.html
+	* https://wikidiff.com/service/protocol
+	* https://www.computer-networking.info/1st/html/bibliography.html
 
 	* outils
 
