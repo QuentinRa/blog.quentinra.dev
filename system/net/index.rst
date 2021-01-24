@@ -4,7 +4,7 @@
 Réseau
 ================================
 
-| :math:`\color{grey}{Version \ 0.8.15}`
+| :math:`\color{grey}{Version \ 0.8.19}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 24/01/2021}`
 
 1. Introduction et Vocabulaire
@@ -69,7 +69,8 @@ de représenter le nombre croissant de machines.
 			Protocoles                 <files/proto/def>
 			Couches et Modèle OSI      <files/proto/osi>
 			Protocole TCP/IP           <files/proto/tcp_ip>
-			Headers et Fragmentation   <files/proto/def2>
+			Headers ICMP, TCP, UDP, IP <files/proto/def2>
+			Protocole Ethernet         <files/proto/eth>
 
 5. Table de routage et ARP :code:`théorie`
 ================================================
@@ -150,6 +151,7 @@ On peut configurer notre réseau tel que :
 	* https://www.computer-networking.info/1st/html/intro/services-protocols.html
 	* https://wikidiff.com/service/protocol
 	* https://www.computer-networking.info/1st/html/bibliography.html
+	* https://www.computer-networking.info/1st/html/intro/services-protocols.html
 
 	* outils
 

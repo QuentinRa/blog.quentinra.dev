@@ -64,6 +64,7 @@ release = 'build-3.34.452'
 # version 3.34 : imperative/java
 # version 3.35 : web/html
 # version 3.36 : web/css
+# version 3.37 : system/net
 
 # -- General configuration ---------------------------------------------------
 

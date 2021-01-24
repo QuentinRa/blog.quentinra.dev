@@ -1,0 +1,54 @@
+row
+col
+
+mb-5
+mx-auto
+px-3 pt-4 pb-5
+
+h1
+
+justify-content-center
+
+form-group (div)
+form-control (input)
+
+align-self-center text-center
+
+font-weight-bold
+small
+
+d-print-none
+text-justify
+
+
+modal alert
+alert alert-info
+
+carousel-caption
+pointer
+
+<div class="modal fade" id="zoom" tabindex="-1" role="dialog"
+	 aria-labelledby="zoomLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content bg-my-grey text-my-dark">
+			<div class="modal-header">
+				<h5 class="modal-title" id="zoomLabel"></h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body text-center" id="zoomBody"></div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$('#zoom').on('show.bs.modal', function (e) {
+		let div = e.relatedTarget;
+		let img = div.getElementsByTagName("img")[0];
+		let modalTitle = document.getElementById('zoomLabel');
+		let modalContent = document.getElementById('zoomBody');
+		modalTitle.innerText = img.alt;
+		modalContent.innerHTML = "<img src='"+img.src+"' alt='"+img.src+"' class='mw-100' />";
+	});
+</script>

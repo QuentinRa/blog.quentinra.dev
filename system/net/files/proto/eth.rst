@@ -8,7 +8,7 @@ par un câble des nœuds (=machines) à un HUB (=switch) avec une certaine méth
 .. image:: /assets/system/net/cours/ether.png
 
 Le Hub reçoit un signal sur un port et le renvoi sur tous les autres ports. Donc ici,
-nœud1 et en contact avec nœud2 et nœud3 et réciproquement alors qu’ils ne sont pas directement relié !
+nœud1 et en contact avec nœud2 et nœud3 et réciproquement alors qu’ils ne sont pas directement reliés !
 
 La technique utilisée est CSMA/CP (Carrier sensitive multiple access with collision detection)
 qui est explicable facilement ainsi :
@@ -27,8 +27,3 @@ La trame Ethernet est la suivante :
 
 La partie mac destination contient l’adresse de la machine destinatrice,
 mac destination est la Mac de l’adresse de la machine émettrice.
-
-Payload (=charge) contient les données de ce que l’on transporte, sa taille est limitée par le MTU.
-
-MTU : Maximum transmission unit, il s’agît du nombre maximum d’octet que l’on est
-capable de traiter en un seul coup (1500 généralement).

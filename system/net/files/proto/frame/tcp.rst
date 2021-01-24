@@ -21,3 +21,20 @@ TCP (numéro 6)
 		* 2 octets pour la checksum
 		* 2 octets pour ...
 		* 4 octets pour des options (optionnel)
+
+Particularité
+
+	* mode connecté (socket, listen, bind, ...)
+	* contrôle d’erreur de transmission
+	* très utilisé
+
+Le protocole TCP utilise un système de seq pour "numéroter" les messages. Le receveur
+envoi toujours un ACK pour attester la bonne réception.
+
+	* On prends A et B
+	* A génère un numéro de séquence x
+	* A envoi un message, seq=x
+	* B atteste, seq=x+1
+	* B génère un numéro de séquence y
+	* B réponds, seq=y
+	* A atteste, seq=y+1

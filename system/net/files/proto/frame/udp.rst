@@ -15,3 +15,8 @@ UDP (numéro 17)
 		* 2 octets pour le port destination
 		* 2 octets pour la taille
 		* 2 octets pour le checksum
+
+Particularités
+
+	* aucune garantie qu’un message arrive
+	* aucune garantie qu’un message reçu est correct

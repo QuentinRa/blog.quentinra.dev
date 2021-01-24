@@ -45,6 +45,8 @@ Maximum Transmission Unit (MTU)
 	Si un paquet est trop gros, alors il est découpé. Des informations dans les headers permettent de
 	reconstituer le paquet.
 
+	Sa valeur par défaut est de 1500.
+
 Certains paquets sont plus grands que la MTU (logique) et sont donc fragmentés. On peut alors
 s'intéresser aux cas ou un paquet transite sur plusieurs réseaux ayant des MTU différentes.
 

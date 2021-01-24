@@ -70,6 +70,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     Langage CSS                         <web/css/index>
     Langage JS                          <web/js/index>
     Langage PHP                         <web/php/index>
+    Bootstrap (CSS)                     <web/mdb/index>
 
 .. toctree::
     :caption: Conception
