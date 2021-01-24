@@ -69,3 +69,38 @@ Routeur/HUB
   $ dig +short lunix120.ensiie.fr
   ip
 
+A envoi B via A-R=1500 et R-R2=1000 R2-B=15000
+paquets PDU=1200
+fragmenté en 2 paquets (x2 header)
+mais on ne sait pas le comportement en R2-B
+
+
+UDP
+ Surcouche sur IP pour les applications.
+– flux de messages
+– aucune garantie qu’un message arrive
+– aucune garantie qu’un message reçu est correct
+ options:
+– controle d’erreur de transmission
+ Peu utilisé.
+
+TCP
+Mode connecté
+– flux octets bidirectionnel
+– contrôle d’erreur de transmission
+– contrôle de flux au niveau applicatif
+– contrôle de flux au niveau réseau
+– s’adapte au réseau physique:
+- si altération de PDU =) diminue la taille des PDU
+- si perte de PDU (congestion du réseau) =) diminue le débit
+Options:
+– envoi et réception de données hors flux
+Très utilisé.
+
+TCP
+x, envoi
+seq=x
+y, réponse
+seq=y, ack=x+1
+réponse
+ack=y+1

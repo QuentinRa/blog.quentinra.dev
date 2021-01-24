@@ -37,8 +37,8 @@ Destination   Gateway        Genmask         Flags Metric Ref  Use IFace
 
 | :code:`[TAG] IUTSF ASR TD1 2019 S2`
 
-2. Guess the routes
-----------------------------------
+2. Guess "the" routes
+-----------------------
 
 .. image:: /assets/system/net/exercices/route4.png
 
