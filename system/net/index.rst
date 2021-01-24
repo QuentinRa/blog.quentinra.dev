@@ -66,8 +66,8 @@ de représenter le nombre croissant de machines.
 .. toctree::
 	 :maxdepth: 1
 
-			Protocoles             <files/proto/def>
-			Couches et Modèle OSI  <files/proto/osi>
+			Protocoles                 <files/proto/def>
+			Couches et Modèle OSI      <files/proto/osi>
 
 5. Table de routage et ARP :code:`théorie`
 ================================================
@@ -142,6 +142,10 @@ On peut configurer notre réseau tel que :
 	* https://www.developpez.net/forums/d1422341/systemes/reseaux/protocoles/comprendre-entites-protocolaires/
 	* https://www.edrawsoft.com/fr/network-protocol.html
 	* https://fr.linkedin.com/learning/les-fondements-des-reseaux-les-protocoles-et-les-outils-cli/apprehender-l-encapsulation-de-donnees?autoplay=true&trk=learning-course_table-of-contents_video&upsellOrderOrigin=default_guest_learning
+	* https://en.wikipedia.org/wiki/List_of_network_protocols_(OSI_model)#Layer_7_(Application_Layer)
+	* https://fr.wikipedia.org/wiki/Liste_de_ports_logiciels
+	* https://en.wikipedia.org/wiki/List_of_network_protocols_(OSI_model)
+
 	* outils
 
 		* https://www.browserling.com/tools/ip-to-bin

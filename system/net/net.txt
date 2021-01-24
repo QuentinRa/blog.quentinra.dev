@@ -4,18 +4,6 @@
 			Protocole IP                 <files/proto/ip>
 			Ethernet                     <files/proto/eth>
 
-
-	Il s'agit de la manière dont les données sont transférés. Les machines se mettent d'accord
-	sur le protocole pour que éviter des mauvaises interprétations.
-
-	Il existe quelques protocoles connus au niveau machine qui sont UDP, TCP, ...
-
-	Au niveau programmeur, le protocole consiste à déterminer le type des informations envoyés,
-	les séparateurs, etc...
-
-  Couches sont indépendantes.
-
-  7 couches OSI
   TCP/IP
 
   	* Application : app, pré, session (http: Get /, ...)
@@ -27,29 +15,8 @@
   l'encapsulation dans différent protocoles.
   dés-encapsulation.
 
-  https://www.developpez.net/forums/d1422341/systemes/reseaux/protocoles/comprendre-entites-protocolaires/
-
-  Fait API
-  	Détermine les fonctions pour communiquer (ex: fct qui fait tout, ou alors une fct init, close, ...)
-
-https://fr.linkedin.com/learning/les-fondements-des-reseaux-les-protocoles-et-les-outils-cli/comprendre-la-notion-de-protocole-et-de-couches-protocolaires
-
-Port
-	Il s'agit de l'endroit par lequel les données vont transiter.
-
-	Ex : ftp (21), ssh (22), ...
-Routeur/HUB
-	Fait le transit entre les machines de réseaux différents.
-
-	message soient arrivés, dans l'ordre, intègres
-
-	Problème des collisions
-   Explique les différences entre les débits des supports et réels
-
-  Ports
-
-  $ dig +short lunix120.ensiie.fr
-  ip
+$ dig +short lunix120.ensiie.fr
+ ip
 
 A envoi B via A-R=1500 et R-R2=1000 R2-B=15000
 paquets PDU=1200

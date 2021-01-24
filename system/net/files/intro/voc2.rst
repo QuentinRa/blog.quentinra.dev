@@ -21,6 +21,9 @@ Hub/Switch
 	Pour éviter des pertes de paquets, on connecte toutes les machines à un HUB qui reçoit les paquets
 	et en envoi une copie à toutes les machines du réseau.
 
+	La Switch gère le fait que les messages soient bien arrivés, qu'ils sont dans le bonne ordre et qu'ils
+	sont intègres (donc pas corrompus).
+
 	C'est pratique car si A envoi un paquet à B et B envoi un paquet à A alors les paquets seront perdus car ils
 	vont se percuter. Le Hub vérifie donc qu'il est possible d'envoyer avant d'envoyer.
 

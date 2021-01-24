@@ -29,7 +29,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/net/files/intro/voc2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/intro/voc2.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/net/files/proto/def.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/proto/def.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/net/files/proto/index.rst.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/proto/index.rst.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/net/files/proto/osi.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/proto/osi.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/net/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/net/net.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/net.txt" afterDir="false" />
     </list>
@@ -71,9 +74,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\system\net\cours" />
       <recent name="C:\Users\quent\Documents\texas-res\system\net\exercices\route" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\net\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\system\net\cours" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\web\html\cours" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\java\code\i" />
     </key>
@@ -281,7 +284,7 @@
       <workItem from="1611410977160" duration="753000" />
       <workItem from="1611419426168" duration="2000" />
       <workItem from="1611424770769" duration="13544000" />
-      <workItem from="1611492731276" duration="16285000" />
+      <workItem from="1611492731276" duration="19207000" />
     </task>
     <servers />
   </component>

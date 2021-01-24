@@ -22,13 +22,10 @@ Ces opérations sont réalisées par des protocoles (TCP, IP, IMCP...)
 
 :code:`Plus de détails dans la partie sur le modèle OSI`.
 
+.. image:: /assets/system/net/cours/protocol.png
+
 Quelques termes
 ------------------
-
-Paquets
-	Les données sont envoyées sous la forme de paquets donc avec un header
-	qui contient des informations : la taille, la destination, la source
-	et le payload qui contient les données envoyées.
 
 Maximum Transmission Unit (MTU)
 	Pour éviter des pertes, généralement une taille maximum pour chaque adresse IP est définie. En local,
@@ -37,7 +34,3 @@ Maximum Transmission Unit (MTU)
 
 	Si un paquet est trop gros, alors il est découpé. Des informations dans les headers permettent de
 	reconstituer le paquet.
-
-Protocol Data Unit (PDU)
-	Les informations sur ce que vous transportez, en quel quantité etc. Je crois c'est un peu les headers
-	de chaque protocole.

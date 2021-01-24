@@ -18,10 +18,16 @@ Protocole
 Elements d'un protocole
 	Les éléments principaux de mise en place d'un protocole sont la détermination
 
-		* du format et de la structure (endianness ? format des flottants ? charset ?, ...)
+		* du format et de la structure (endianness ? format des flottants ? charset ? séparateur ? ...)
 		* de la méthode pour transférer les données
 		* de la gestion des erreurs (dans quels cas on considère qu'il y a une erreur, que faire, ...)
 		* détermination du début et de la fin de la communication
+
+	Les étapes sont
+
+		* Choisir la couche N-1
+		* Déterminer l'API
+		* Coder les services, en utilisant l'API de la couche N-1
 
 Couches et OSI
 	Pour permettre une implémentation plus facile de chaque protocole, des couches
