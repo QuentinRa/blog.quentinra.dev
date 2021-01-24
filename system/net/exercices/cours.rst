@@ -129,6 +129,55 @@ IP 85.85.160.0 - 85.85.163.255.
 
 | :code:`[TAG] ENSIIE PWR CM1 2021 S2`
 
+4. Maitre des protocoles
+===================================
+
+1. \
+	L’établissement de la liaison de communication avec l’entité vis-à-vis
+	est une phase complexe des protocoles.
+
+2. \
+	Un protocole de niveau N est défini indépendamment de la couche
+	N-1 sur laquelle il s’appuie.
+
+3. \
+	Un protocole peut être implanté sur n’importe quel autre protocole
+	qui s'appuie sur la couche N-1.
+
+4. \
+	Soit A et B, 2 mises en oeuvre d’une présentation API d’un protocole
+	P, écrites par 2 personnes différentes. A et B peuvent elles communiquer ?
+
+5. \
+	Soit A une mise en oeuvre d’une présentation API1 d’un protocole
+	P, et B une mise en oeuvre d’une présentation API2 d’un protocole
+	P. A et B peuvent elles communiquer ?
+
+6. \
+	Dans l’automate qui spécifie le dialogue d’un protocole N apparait
+	les services du protocole N-1.
+
+7. \
+ 	La mise en oeuvre d’un protocole de niveau N utilise les services du
+	protocole N-1.
+
+8. \
+	La mise en oeuvre d’un protocole de niveau N-1 appelle les services
+	du protocole N.
+
+9. \
+	Un protocole peut-il ne pas avoir de service?
+
+10. \
+	Une entité d’un protocole peut-elle ne pas avoir de service?
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<cours/d5>
+
+| :code:`[TAG] ENSIIE PWR CM1 2021 S2`
+
 Niveau supérieur
 ***********************
 

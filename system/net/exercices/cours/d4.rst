@@ -69,14 +69,43 @@ On commencer par cherche le nombre de bits fixes.
 	J’ai à disposition le réseau 192.168.5.64/28, je désire faire 3 sous réseaux
 	de 6, 4 et 3 hôtes. Est-ce possible?
 
-...
+Attention, pour rappel (cours), c'est compliqué !
+
+| IP : 11000000.10101000.00000101.01000000
+| NetMask : 11111111.11111111.11111111.11110000 = 255.255.255.240
+| Réseau : 11000000.10101000.00000101.01000000 = 192.168.5.64/28
+
+Pour faire 3 sous réseaux, il faut donc trouver un n tel que 2^n >= 3 donc n=2. Nous devons
+donc fixer 2 bits.
+
+| NetMask (+2) : 11111111.11111111.11111111.11111100 = 255.255.255.252
+| Réseau (+2) : 11000000.10101000.00000101.01000000 = 192.168.5.64/30
+| On sait du cours qu'on peut mettre 2^{32-30} - 2 (les 2 masques) donc 2 machines donc la réponse est non.
 
 8. \
 	J’ai à disposition le réseau 192.168.5.64/27, je désire faire 3 sous réseaux
 	de 6, 4 et 3 hôtes. Donnez un découpage possible (IP/MR
 	de chaque sous réseau).
 
-...
+Attention, pour rappel (cours), c'est compliqué !
+
+| IP : 11000000.10101000.00000101.01000000
+| NetMask : 11111111.11111111.11111111.11110000 = 255.255.255.240
+| Réseau : 11000000.10101000.00000101.01000000 = 192.168.5.64/27
+
+Pour faire 3 sous réseaux, il faut donc trouver un n tel que 2^n >= 3 donc n=2. Nous devons
+donc fixer 2 bits.
+
+| NetMask (+2) : 11111111.11111111.11111111.11111000 = 255.255.255.248
+| Réseau (+2) : 11000000.10101000.00000101.01000000 = 192.168.5.64/29
+| On sait du cours qu'on peut mettre 2^{32-29} - 2 (les 2 masques) donc 6 machines donc c'est possible.
+
+On aura alors
+
+| Réseau 1 : 11000000.10101000.00000101.01001000 = 192.168.5.72/29
+| Réseau 2 : 11000000.10101000.00000101.01010000 = 192.168.5.80/29
+| Réseau 3 : 11000000.10101000.00000101.01011000 = 192.168.5.88/29
+| Réseau 4 : inutilisé (192.168.5.64/29)
 
 **Crédits**
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

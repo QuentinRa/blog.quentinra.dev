@@ -4,8 +4,8 @@
 Réseau
 ================================
 
-| :math:`\color{grey}{Version \ 0.7.13}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 21/01/2021}`
+| :math:`\color{grey}{Version \ 0.8.15}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 24/01/2021}`
 
 1. Introduction et Vocabulaire
 ===================================

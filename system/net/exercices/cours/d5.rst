@@ -1,5 +1,13 @@
-1. L’établissement de la liaison de communication avec l’entité vis-à-vis
-est une phase complexe des protocoles.
+================================
+4. Synthèse des notions
+================================
+
+.. image:: https://img.shields.io/badge/correction-non%20vérifiée-red.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction non vérifiée
+
+1. \
+	**L’établissement de la liaison de communication avec l’entité vis-à-vis**
+	**est une phase complexe des protocoles.**
 
 Non, il suffit de déterminer un port utilisé pour communiquer
 et qu'une machine ai l'adresse mac des autres. Si vous n'avez que les adresses
@@ -8,22 +16,22 @@ va envoyer le message a toutes les machines du réseau "est tu <ip>?"
 et seulement la machine correspondante répondra si elle existe.
 
 2. \
-	Un protocole de niveau N est défini indépendamment de la couche
-	N-1 sur laquelle il s’appuie.
+	**Un protocole de niveau N est défini indépendamment de la couche**
+	**N-1 sur laquelle il s’appuie.**
 
 Oui, les communications se font en passant par l'API.
 
 3. \
-	Un protocole peut être implanté sur n’importe quel autre protocole
-	qui s'appuie sur la couche N-1.
+	**Un protocole peut être implanté sur n’importe quel autre protocole**
+	**qui s'appuie sur la couche N-1.**
 
 Non, un protocole ne peut implementer que des protocoles de la couche
 N-1 et non des protocoles de la même couche. Il deviendrait sinon
 un protocole de la couche supérieure.
 
 4. \
-	Soit A et B, 2 mises en oeuvre d’une présentation API d’un protocole
-	P, écrites par 2 personnes différentes. A et B peuvent elles communiquer ?
+	**Soit A et B, 2 mises en oeuvre d’une présentation API d’un protocole**
+	**P, écrites par 2 personnes différentes. A et B peuvent elles communiquer ?**
 
 En théorie A et B réalisent la même API donc s'ils ont bien codés
 alors oui ils peuvent communiquer (donc si le code des fonctions
@@ -33,45 +41,48 @@ la méthode x pour sérialiser une valeur. L'API ne dicte pas le code, donc c'es
 de bien respecter les indications de l'API).
 
 5. \
-	Soit A une mise en oeuvre d’une présentation API1 d’un protocole
-	P, et B une mise en oeuvre d’une présentation API2 d’un protocole
-	P. A et B peuvent elles communiquer ?
+	**Soit A une mise en oeuvre d’une présentation API1 d’un protocole**
+	**P, et B une mise en oeuvre d’une présentation API2 d’un protocole**
+	**P. A et B peuvent elles communiquer ?**
 
 Non, il s'agit de deux API différentes d'un protocol, donc le fonctionnement
 du protocole via l'API est différent.
 
 6. \
-	Dans l’automate qui spécifie le dialogue d’un protocole N apparait
-	les services du protocole N-1.
+	**Dans l’automate qui spécifie le dialogue d’un protocole N apparait**
+	**les services du protocole N-1.**
 
 Non, l'automate va spécifier des dialogues dont le code utilisera
 les services du protocole N-1, cependant l'utilisation des services N-1 ne sera pas apparent.
 
 7. \
- 	La mise en oeuvre d’un protocole de niveau N utilise les services du
-	protocole N-1.
+ 	**La mise en oeuvre d’un protocole de niveau N utilise les services du**
+	**protocole N-1.**
 
 Oui un protocole peut utiliser les services des protocoles
 au niveau N-1, c'était tout l'objectif lorsque le modèle OSI
 puis TCP/IP ont découpé la structure en couches.
 
 8. \
-	La mise en oeuvre d’un protocole de niveau N-1 appelle les services
-	du protocole N.
+	**La mise en oeuvre d’un protocole de niveau N-1 appelle les services**
+	**du protocole N.**
 
 Non, un protocole ne peut utiliser que les services des protocoles
 au niveau N-1 (c'est un arbre donc pas de cycles !).
 
 9. \
-	Un protocole peut-il ne pas avoir de service?
+	**Un protocole peut-il ne pas avoir de service?**
 
 Oui, on peut prendre l'exemple du protocole UDP. Vous n'allez jamais vous connecter
 à une machine, juste envoyer un message en précisant le destinataire et qui peut être arrivera
 a destination mais vous n'en n'aurez jamais de confirmation.
 
 10. \
-	Une entité d’un protocole peut-elle ne pas avoir de service?
+	**Une entité d’un protocole peut-elle ne pas avoir de service?**
 
 Oui, enfin je suppose. Une entité de protocole est une partie d'un protocole généralement
 un processus, donc il est possible de déléguer la réalisation des services
 à une autre entité protocolaire.
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

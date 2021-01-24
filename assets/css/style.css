@@ -1687,3 +1687,7 @@ span[id*="MathJax-Span"] {
 .wy-body-for-nav .keep-us-sustainable a {
     color: rgb(222, 219, 215);
 }
+
+.m-question {
+    font-weight: bold;
+}
