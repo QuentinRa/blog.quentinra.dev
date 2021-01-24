@@ -26,7 +26,7 @@ En particulier
 
 	* Adresses IPV4 (théorie) : écriture (ndp, CIDR), notions (masques, ...)
 	* Adresses IPV6 (théorie) : écriture (CHN, EUI64, SLAAC)
-	* Protocoles (théorie) : TCP, UDP, IMCP, IP + frames et Ethernet
+	* Protocoles (théorie) : TCP, UDP, IMCP, IP, frames et Ethernet
 	* Tables de routage + Arp : comment trouver une machine et configurer son réseau
 
 2. Adresses IPV4 :code:`théorie`
@@ -66,11 +66,7 @@ de représenter le nombre croissant de machines.
 .. toctree::
 	 :maxdepth: 1
 
-			Protocoles                   <files/proto/index>
-			Modèle OSI                   <files/proto/osi>
-			Protocoles : TCP, UDP, IMCP  <files/proto/bunch>
-			Protocole IP                 <files/proto/ip>
-			Ethernet                     <files/proto/eth>
+			Protocoles                   <files/proto/def>
 
 5. Table de routage et ARP :code:`théorie`
 ================================================
@@ -140,6 +136,7 @@ On peut configurer notre réseau tel que :
 	* https://fr.wikibooks.org/wiki/R%C3%A9seaux_TCP/IP/La_pile_TCP/IP
 	* https://community.cisco.com/t5/switching/datagram-vs-packet/td-p/3182138
 	* https://community.fs.com/fr/blog/whats-the-difference-hub-vs-switch-vs-router.html
+	* https://insolus.com/blog/internet-majuscule-minuscule
 
 	* outils
 

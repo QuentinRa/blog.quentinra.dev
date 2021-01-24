@@ -29,14 +29,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/files/all/lw.rst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/system/net/files/intro/voc.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/intro/voc.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/files/ipv4/struct.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/ipv4/struct.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/files/proto/bunch.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/proto/bunch.rst.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/files/proto/eth.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/proto/eth.rst.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/files/proto/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/proto/index.rst.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/files/proto/ip.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/proto/ip.rst.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/files/proto/osi.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/proto/osi.rst.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/net/files/ipv4/count.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/ipv4/count.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/net/files/ipv4/mask.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/ipv4/mask.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/net/files/ipv4/not.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/ipv4/not.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/net/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/net/net.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/net.txt" afterDir="false" />
     </list>
@@ -288,7 +284,7 @@
       <workItem from="1611410977160" duration="753000" />
       <workItem from="1611419426168" duration="2000" />
       <workItem from="1611424770769" duration="13544000" />
-      <workItem from="1611492731276" duration="11155000" />
+      <workItem from="1611492731276" duration="13782000" />
     </task>
     <servers />
   </component>

@@ -14,7 +14,7 @@ Il se construit simplement :
 	*	on met les bits restants à '0' pour atteindre 32 bits
 
 Ex: soit l'adresse réseau 77.33.225.0 (01001101001000011110000100000000),
-la partie fixe est 77.33.225 soit les 24 premiers bits donc on met 24 '1' et
+la partie fixe est 77.33.225 (choisi arbitrairement les 24 premiers bits) donc on met 24 '1' et
 8 '0' ce qui donne le masque de sous-réseau 255.255.255.0 (11111111111111111111111100000000)
 
 Construction à partir de la notation CIDR. Soit 77.33.128.0/17.
@@ -23,6 +23,9 @@ Construction à partir de la notation CIDR. Soit 77.33.128.0/17.
 	*	on écrit quotient fois 255. donc ici 2 : 255.255.
 	*	on fait ensuite 255 (=max) - 2^(8 - 1 (=reste)) + 1 = 255-128+1=128
 	*	on ajoute le résultat et si encore des octets alors on met .0 ce qui donne 255.255.128.0
+
+C'est l'organisme qui génère les adresses de réseaux (par exemple votre hébergeur) qui vous
+donne le nombre de bits fixes.
 
 Masque de diffusion = broadcast mask
 ----------------------------------------
@@ -33,3 +36,5 @@ et qui cible donc plusieurs machines.
 
 Ex: soit l'adresse réseau 77.33.225.0/24 (01001101001000011110000100000000),
 en remplaçant la partie host par des 1, on obtient 77.33.225.255 (01001101001000011110000111111111).
+
+Vous l'utiliserez notamment avec le protocole ARP pour chercher une machine.

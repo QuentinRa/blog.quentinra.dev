@@ -7,7 +7,20 @@ et du masque de sous réseau.
 
 Le nombre de machines sur un réseau est calculable avec : :math:`2^{(32 - nombre de bits fixes)} - 2`.
 
-:code:`Exemple (compliqué)`
+Diviser un réseau (compliqué)
+------------------------------
+
+Je vais juste mettre la théorie ici, regardez l'exemple dès que vous en aurez besoin.
+
+	* on suppose que vous voulez x sous-réseaux, sachant que vous avez N bits fixes actuellement
+	* résoudre n : :math:`2^{n} \ge x`
+	* si :code:`32-N-n \le 0` alors pas possible
+	* sinon c'est bon. Il faudra alors calculer le nombre de machines, puis les adresses.
+	* voir formule ce qui donnera : :math:`2^{(32 - {N+n})} - 2`
+	* pour les adresses, il suffit de faire toutes les combinaisons de 0/1 comme valeurs de bits fixes ajoutés (donc 0,1 (n=1) ou 10,01,11 (n=2) ou 001,010,... (n=3) etc.)
+
+Exemple (compliqué)
+-----------------------
 
 Imaginons que nous soyons sur un réseau, ayant 22 bits fixes. On peut mettre dessus :
 :math:`2^{32-22} - 2 = 1024 - 2 = 1022` machines sur le réseau.

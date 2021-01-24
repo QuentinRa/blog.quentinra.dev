@@ -2,6 +2,12 @@
 Définitions de bases
 =================================
 
+Internet et internet
+	internet désigne un réseau de machines connectées entre elles.
+
+	Internet désigne le plus grand réseau de machine interconnectés donc la version
+	large.
+
 Protocole
 	Une définition simple : forme des données + procédure d'envoi. Il s'agit donc
 	de la façon dont les données sont échangées.
