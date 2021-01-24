@@ -54,3 +54,18 @@ PDU (Protocol Data Unit)
   https://www.fun-mooc.fr/c4x/MinesTelecom/04003S03/asset/c_4_t.pdf
   https://www.developpez.net/forums/d1422341/systemes/reseaux/protocoles/comprendre-entites-protocolaires/
   https://www.edrawsoft.com/fr/network-protocol.html
+  https://fr.linkedin.com/learning/les-fondements-des-reseaux-les-protocoles-et-les-outils-cli/apprehender-l-encapsulation-de-donnees?autoplay=true&trk=learning-course_table-of-contents_video&upsellOrderOrigin=default_guest_learning
+
+Routeur/HUB
+	Fait le transit entre les machines de réseaux différents.
+
+	message soient arrivés, dans l'ordre, intègres
+
+	Problème des collisions
+   Explique les différences entre les débits des supports et réels
+
+  Ports
+
+  $ dig +short lunix120.ensiie.fr
+  ip
+

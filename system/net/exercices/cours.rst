@@ -87,6 +87,48 @@ IP 85.85.160.0 - 85.85.163.255.
 
 | :code:`[TAG] IUTSF ASR TP1 2019 S2`
 
+4. Synthèse des notions
+===================================
+
+1. \
+	Donnez le /n du masque réseau, les numéros de réseau et d’hôte et
+	l’adresse de broadcast pour IP=225.67.129.30 et MR=255.255.192.0.
+
+2. \
+	Donnez le masque réseau, les numéros de réseau et d’hôte et l’adresse
+	de broadcast pour IP=225.67.127.30/19.
+
+3. \
+	Donnez le masque réseau et son /n puis les numéros de réseau et
+	d’hôte et l’adresse de broadcast pour IP=193.54.193.12.
+
+4. \
+	Donnez le masque réseau et son /n puis les numéros de réseau et
+	d’hôte et l’adresse de broadcast pour IP=225.67.127.30.
+
+5. \
+	Donnez le nombre d’hôtes du réseau IP=8.8.8.8 et
+	MR=255.255.255.192
+
+6. \
+	Donnez le nombre d’hôtes du réseau IP=8.8.8.8/22.
+
+7. \
+	J’ai à disposition le réseau 192.168.5.64/28, je désire faire 3 sous réseaux
+	de 6, 4 et 3 hôtes. Est-ce possible?
+
+8. \
+	J’ai à disposition le réseau 192.168.5.64/27, je désire faire 3 sous réseaux
+	de 6, 4 et 3 hôtes. Donnez un découpage possible (IP/MR
+	de chaque sous réseau).
+
+.. toctree::
+   :maxdepth: 1
+
+	Proposition de correction n°1			<cours/d4>
+
+| :code:`[TAG] ENSIIE PWR CM1 2021 S2`
+
 Niveau supérieur
 ***********************
 

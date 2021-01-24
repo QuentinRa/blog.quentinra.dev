@@ -2,7 +2,10 @@
 est une phase complexe des protocoles.
 
 Non, il suffit de déterminer un port utilisé pour communiquer
-et qu'une machine ai l'adresse des autres.
+et qu'une machine ai l'adresse mac des autres. Si vous n'avez que les adresses
+IP, alors le protocole ARP sera enclenché ce qui est complexe car notre machine
+va envoyer le message a toutes les machines du réseau "est tu <ip>?"
+et seulement la machine correspondante répondra si elle existe.
 
 2. \
 	Un protocole de niveau N est défini indépendamment de la couche
@@ -22,8 +25,12 @@ un protocole de la couche supérieure.
 	Soit A et B, 2 mises en oeuvre d’une présentation API d’un protocole
 	P, écrites par 2 personnes différentes. A et B peuvent elles communiquer ?
 
-En théorie A et B réalisent la même API donc s'il ont bien codé
-alors oui ils peuvent communiquer.
+En théorie A et B réalisent la même API donc s'ils ont bien codés
+alors oui ils peuvent communiquer (donc si le code des fonctions
+respecte bien les conditions imposées par l'API qui ne peuvent être vérifiées
+qu'a l'exécution par exemple que tous les entiers soient en BigEndian ou alors utiliser
+la méthode x pour sérialiser une valeur. L'API ne dicte pas le code, donc c'est au programmeur
+de bien respecter les indications de l'API).
 
 5. \
 	Soit A une mise en oeuvre d’une présentation API1 d’un protocole
@@ -38,7 +45,7 @@ du protocole via l'API est différent.
 	les services du protocole N-1.
 
 Non, l'automate va spécifier des dialogues dont le code utilisera
-les services du protocole N-1 cependant ceci ne sera pas apparent.
+les services du protocole N-1, cependant l'utilisation des services N-1 ne sera pas apparent.
 
 7. \
  	La mise en oeuvre d’un protocole de niveau N utilise les services du
@@ -59,10 +66,12 @@ au niveau N-1 (c'est un arbre donc pas de cycles !).
 	Un protocole peut-il ne pas avoir de service?
 
 Oui, on peut prendre l'exemple du protocole UDP. Vous n'allez jamais vous connecter
-à une machine, juste envoyé un message en précisant a qui et qui peut être arrivera
-a destination.
+à une machine, juste envoyer un message en précisant le destinataire et qui peut être arrivera
+a destination mais vous n'en n'aurez jamais de confirmation.
 
 10. \
 	Une entité d’un protocole peut-elle ne pas avoir de service?
 
-Une entité d'un protocole c'est par exemple un processus utilisé par le protocole. Un service
+Oui, enfin je suppose. Une entité de protocole est une partie d'un protocole généralement
+un processus, donc il est possible de déléguer la réalisation des services
+à une autre entité protocolaire.
