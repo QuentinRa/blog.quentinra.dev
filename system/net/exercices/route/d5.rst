@@ -1,0 +1,31 @@
+================================
+2. Guess the routes
+================================
+
+.. image:: https://img.shields.io/badge/correction-non%20vérifiée-red.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction non vérifiée
+
+.. image:: /assets/system/net/exercices/route4.png
+
+1. De combien de réseaux est constitué notre réseau?
+
+On peut voir trois sous-réseaux
+
+	* 192.168.1.[...]=privé connecté à R via eth1
+	* 192.168.2.[...]=privé connecté à R via eth2
+	* 193.54.195.[...]=extérieur connecté à R via eth0
+
+2. Donnez la table de routage de la machine A.
+
+...
+
+3. Donnez la table de routage de la machine Z.
+
+...
+
+4. Donnez la table de routage de la machine R.
+
+...
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

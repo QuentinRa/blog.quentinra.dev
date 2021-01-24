@@ -5,65 +5,39 @@
 .. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
    :alt: correction vérifiée
 
-(a) Il y a 3 interfaces réseau : eth0, eth1 (Ethernet) et lo (loopback).
+Compléter les adresses MAC et IP dans la trace tcpdump générée pendant l'exécution
+de la commande ping précédente :
 
-(b)
+On reconnait le :code:`who-has ... tell ...`
+d'un protocole ARP. On envoi à toutes les machines (broadcast : ff:ff:ff:ff:ff:ff)
+le fait qu'une personne cherche une adresse et on le mec cherché
+va répondre pour dire "je suis ici" à la machine ayant l'IP 172.16.2.161.
 
-	* 92.103.29.192
+.. code:: bash
 
-		* binaire : 01011100.01100111.00011101.11000000
-		* mask : 11111111.11111111.11111111.11110000 donc /28
-		* on voit que les bits après le 28e sont à 0 : adresse réseau
-		* 92.103.29.192/28
+		34:17:eb:99:29:ad > ff:ff:ff:ff:ff:ff, ethertype ARP (0x806), length 42:
+		Request who-has 172.16.2.81 tell 172.16.2.161, length 28
 
-	* 172.16.0.0
+La machine retourne à la MAC émettrice sa mac.
 
-		* binaire : 10101100.00010000.00000000.00000000
-		* mask : 11111111.11111111.00000000.00000000 donc /16
-		* on voit que ... donc adresse réseau
-		* 172.16.0.0/16
+.. code:: bash
 
-	* Pareil pour 127.0.0.0 donc 127.0.0.0/8
-	* Pareil pour 0.0.0.0 donc 0.0.0.0/0
+		64:00:6a:8d:1a:31 > 34:17:eb:99:29:ad, ethertype ARP (0x806), length 60:
+		Reply 172.16.2.81 is-at 64:00:6a:8d:1a:31, length 46
 
-(c)
+On réalise le ping.
 
-On rappelle que 0.0.0.0 = cas par défaut donc dans la table de routage,
-si on n'a matché aucune adresse, alors on route sur 0.0.0.0.
+.. code:: bash
 
-Dans le cas ou Gateway est 0.0.0.0 alors il n'y a pas de Gateway donc
-on envoi directement à l'host.
+		34:17:eb:99:29:ad > 64:00:6a:8d:1a:31, ethertype IPV4 (0x800), length 98:
+		172.16.2.161 > 172.16.2.81 ICMP echo request, id 25160, seq 1, length 64
 
-Dans le cas ou on a deux filtres (ou plus) ok pour une adresse alors
-on prends celui qui se rapproche le plus.
+Réponse du ping.
 
-	* 172.16.1.117
+.. code:: bash
 
-		* filtre 172.16.0.0 : ok
-		* paquet envoyé directement via eth1
-
-	* 172.16.2.117
-
-		* filtre 172.16.0.0 : ok
-		* paquet envoyé directement via eth1
-
-	* 172.17.1.117
-
-		* filtre 0.0.0.0 : ok
-		* paquet renvoyé à 92.103.29.193 via eth0
-
-	* 92.103.29.200
-
-		* binaire : 01011100.01100111.00011101.11001000
-		* 92.103.29.192 : ok, le masque n'est pas modifié
-		* paquet envoyé directement via eth0
-
-	* 92.103.29.208
-
-		* binaire : 01011100.01100111.00011101.11010000
-		* on voit que le 28e bit vaut 1 (0 normalement) donc adresse réseau n'est pas conforme à 92.103.29.192
-		* filtre 0.0.0.0 : ok
-		* paquet renvoyé à 92.103.29.193 via eth0
+		64:00:6a:8d:1a:31 > 34:17:eb:99:29:ad, ethertype IPV4 (0x800), length 98:
+		172.16.2.81 > 172.16.2.161 ICMP echo reply, id 25160, seq 1, length 64
 
 **Crédits**
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)

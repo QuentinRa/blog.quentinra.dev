@@ -247,3 +247,5 @@ aucun
 
 **Crédits**
 	* Selma NABOULSI (enseignants à l'IUT de Sénart-Fontainebleau)
+	* Frédéric GERVAIS (enseignants à l'IUT de Sénart-Fontainebleau)
+	* enseignant de l'ENSIIE du cours 2018-2019

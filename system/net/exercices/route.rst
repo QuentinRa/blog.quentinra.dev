@@ -1,123 +1,58 @@
 ================================
-Routage et Filtres
+Tables de routage
 ================================
 
 Niveau débutant
 ***********************
 
-1. Étude de réseau
-------------------------
+1. Tables de routage
+==========================
 
-On donne la configuration suivante.
+Kernel IP Routing Table
 
-.. image:: /assets/system/net/exercices/route1.png
+============= ============== =============== ===== ====== ==== === =====
+Destination   Gateway        Genmask         Flags Metric Ref  Use IFace
+============= ============== =============== ===== ====== ==== === =====
+92.103.29.192 0.0.0.0        255.255.255.240 U      0      0    0   eth0
+172.16.0.0    0.0.0.0        255.255.0.0     U      0      0    0   eth1
+127.0.0.0     0.0.0.0        255.0.0.0       U      0      0    0   lo
+0.0.0.0       92.103.29.193  0.0.0.0         UG     1      0    0   eth0
+============= ============== =============== ===== ====== ==== === =====
 
-Voici le résultat de certaines commandes données sur certaines machines :
-:download:`résultat.txt <../../../assets/system/net/exercices/route1-2.txt>`.
+(a) \
+	Combien d'interfaces réseau cette machine possède-t-elle ?
 
-Depuis A1, On ping B1. Qu'obtiendra-t-on parmi les possibilités suivantes ? Pourquoi ?
+(b) \
+	Les adresses dans la colonne gauche sont-elles des adresses de hosts ou des adresses
+	de réseaux ? Réécrire ces adresses en utilisant la notation CIDR.
 
-:code:`ping 172.16.2.1`.
+(c) \
+	Qu'arrive-t-il à un paquet émis par cette machine à destination de 172.16.1.117 ?
+	de 172.16.2.117 ? de 172.17.1.117 ? de 92.103.29.200 ? 92.103.29.208 ?
 
-(a)
+.. toctree::
+   :maxdepth: 1
 
-	| PING 172.16.2.1 (172.16.2.1) 56(84) bytes of data
-	| From 172.16.1.254 icmp_seq=1 Destination Host Unreachable
-	| From 172.16.1.254 icmp_seq=2 Destination Host Unreachable
-	| ...
+	Proposition de correction n°1			<route/d1>
 
-(b)
+| :code:`[TAG] IUTSF ASR TD1 2019 S2`
 
-	| PING 172.16.2.1 (172.16.2.1) 56(84) bytes of data
-	| From 172.16.1.254 icmp_seq=1 Destination Net Unreachable
-	| From 172.16.1.254 icmp_seq=2 Destination Net Unreachable
-	| ...
+2. Guess the routes
+----------------------------------
 
-(c)
+.. image:: /assets/system/net/exercices/route4.png
 
-	| PING 172.16.2.1 (172.16.2.1) 56(84) bytes of data
-	| 64 bytes from 172.16.2.1: icmp_seq=102 ttl=63 time=1.61 ms
-	| 64 bytes from 172.16.2.1: icmp_seq=103 ttl=63 time=1.57 ms
-	| ...
+1. De combien de réseaux est constitué notre réseau?
+2. Donnez la table de routage de la machine A.
+3. Donnez la table de routage de la machine Z.
+4. Donnez la table de routage de la machine R.
 
-(d)
+.. toctree::
+   :maxdepth: 1
 
-	| PING 172.16.2.1 (172.16.2.1) 56(84) bytes of data
-	| From 172.16.1.1 icmp_seq=1 Destination Host Unreachable
-	| From 172.16.1.1 icmp_seq=2 Destination Host Unreachable
-	| ...
+	Proposition de correction n°1			<route/d2>
 
-(e)
-
-	| connect: Network is unreachable
-
-(f)
-
-	| PING 172.16.2.1 (172.16.2.1) 56(84) bytes of data
-	| <rien, le ping ne finit jamais>
-
-| :code:`[TAG] IUTSF ASR TD4 2019 S2`
-
-2. Expert en réseau
-----------------------------
-
-On donne la configuration suivante.
-
-.. image:: /assets/system/net/exercices/route2.png
-
-Où on n'a fait figurer qu'une machine représentative de chaque segment mais d'autres
-machines existent sur chacun des segments. Le fonctionnement de l'organisation
-exige que :
-
-(a)
-
-	N'importe quelle machine du réseau 10.10.10.0/24 doit pouvoir initier une communication
-	vers n'importe quelle machine Y du réseau 172.16.10.0/24, et Y devra y répondre.
-
-(b)
-
-	N'importe quelle machine du réseau 172.16.10.0/24 doit pouvoir initier une communication
-	vers n'importe quelle machine Z du réseau 192.168.10.0/24, et Z devra y répondre.
-
-(b)
-
-	N'importe quelle machine du réseau 192.168.10.0/24 doit pouvoir initier une communication
-	vers n'importe quelle machine X du réseau 10.10.10.0/24, et X devra y répondre.
-
-Ce sont là les seuls cas de communications qui peuvent avoir lieu.
-
-Deux experts se sont penchés sur la question de la configuration du réseau et préconisent
-ce qui suit.
-
-Il s'agira d'analyser la solution de chacun des deux experts et indiquer
-pourquoi elle réponds ou ne réponds pas aux exigences de l'organisation.
-
-| Expert 1 : :download:`expert1.txt <../../../assets/system/net/exercices/route2-2.txt>`
-| Expert 2 : :download:`expert2.txt <../../../assets/system/net/exercices/route2-3.txt>`
-
-| :code:`[TAG] IUTSF ASR TD4 2019 S2`
-
-3. iptables
--------------------
-
-Pour chacune des situations suivantes, on écrit une règle de iptables qui réalise
-l'objectif :
-
-(a)
-
-	Une passerelle relie trois réseaux : 192.168.0.0/16, 172.16.0.0/16 et l'extérieur. On veut
-	permettre les connexions ssh entre les deux réseaux internes et empêcher les connexions ssh vers
-	l'extérieur. Quelle règle mettre en place et où la mettre en place ?
-
-
-(b)
-
-	On a annoncé que le serveur web de son domaine est sur l'adresse routable
-	addr_ip. En réalité, ce serveur web se trouve sur le LAN sur une machine avec une seule interface
-	réseau ayant l'adresse 10.3.2.1. Quelle règle mettre en place et où la mettre en place afin que le trafic
-	web entrant soit dirigé là où il faut ?
-
-| :code:`[TAG] IUTSF ASR TD4 2019 S2`
+| :code:`[TAG] ENSIIE PWR CM1 2021 S2`
 
 Niveau supérieur
 ***********************
@@ -132,4 +67,6 @@ aucun
 -----
 
 **Crédits**
-	* ...
+	* Selma NABOULSI (enseignants à l'IUT de Sénart-Fontainebleau)
+	* Frédéric GERVAIS (enseignants à l'IUT de Sénart-Fontainebleau)
+	* enseignant de l'ENSIIE du cours 2018-2019

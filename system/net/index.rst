@@ -114,9 +114,10 @@ On peut configurer notre réseau tel que :
 	 :maxdepth: 1
 
 			Comprendre les notions     <exercices/cours>
-			Tables de routages et ARP  <exercices/arp>
+			Tables de routage          <exercices/route>
+			Protocole ARP              <exercices/arp>
 			Protocole IP               <exercices/ip>
-			Routage et Filtres         <exercices/route>
+			iptables (Nat/NetFilter)   <exercices/iptables>
 
 -----
 
