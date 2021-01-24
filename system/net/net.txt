@@ -1,4 +1,21 @@
 
+	Il s'agit de la manière dont les données sont transférés. Les machines se mettent d'accord
+	sur le protocole pour que éviter des mauvaises interprétations.
+
+	Il existe quelques protocoles connus au niveau machine qui sont UDP, TCP, ...
+
+	Au niveau programmeur, le protocole consiste à déterminer le type des informations envoyés,
+	les séparateurs, etc...
+
+Réseau domestique
+	Dans un réseau domestique, vous pouvez utiliser des noms pour identifier une machine (ex: p12-salle233)
+	et généralement, les machines ont une adresse privée pour communiquer entre-elles.
+
+Payload=Charge
+Datagram
+Paquet
+Internet et internet
+
 Protocole
 	Façon dont les données sont échangées.
 

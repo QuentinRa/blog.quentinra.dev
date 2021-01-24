@@ -3,15 +3,18 @@ Définitions de bases
 =================================
 
 Protocole
-	Une définition simple : forme des données + procédure d'envoi.
+	Une définition simple : forme des données + procédure d'envoi. Il s'agit donc
+	de la façon dont les données sont échangées.
 
-	Il s'agit de la manière dont les données sont transférés. Les machines se mettent d'accord
-	sur le protocole pour que éviter des mauvaises interprétations.
+	Exemples : TCP, UDP, FTP, IP, ...
 
-	Il existe quelques protocoles connus au niveau machine qui sont UDP, TCP, ...
+Protocol Data Unit (PDU)
+	Il s'agit de la forme utilisée pour échanger les données par un protocole. Il s'agit d'un
+	ensemble contenant un en-tête (header) propre au protocole et des données.
 
-	Au niveau programmeur, le protocole consiste à déterminer le type des informations envoyés,
-	les séparateurs, etc...
+	On va donner des noms a cet ensemble selon le protocole : paquet (TCP), datagram (UDP), ...
+
+	On peut grossièrement dire paquet partout.
 
 Adresse IPV4
 	Une adresse IPV4 est de la forme 172.16.1.0. Elle est formée de 4 octets sur 32 bits.
@@ -31,3 +34,12 @@ Interfaces réseaux
 	Elle est appelée lo (loopback) et est associée à l’adresse 127.0.0.1 (plage).
 
 	Quelques exemples : :code:`eth0` (Ethernet0), ...
+
+Port
+	Il s'agit de l'endroit ou le canal utilisé par un processus est ouvert. Un message sera
+	envoyé depuis de port et une machine devra répondre en utilisant ce port.
+
+	Généralement, pour des raisons de sécurité, ces ports sont changés de leur valeurs par défaut.
+	Ils sont utilisés par les protocoles de la couche applicative.
+
+	Quelques ports connus : 21 (ftp), 22 (ssh), 80 (http), ...

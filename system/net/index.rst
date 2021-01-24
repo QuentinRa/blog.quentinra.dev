@@ -18,7 +18,8 @@ Vous pouvez utiliser :code:`imunes` (http://imunes.net/) pour simuler un réseau
 .. toctree::
 	 :maxdepth: 1
 
-		 Définitions de bases            <files/intro/voc>
+		 Définitions de base             <files/intro/voc>
+		 Les structures physiques        <files/intro/voc2>
 		 Introduction à imunes           <files/intro/imunes>
 
 En particulier
@@ -92,7 +93,6 @@ On peut configurer notre réseau tel que :
 .. toctree::
 	 :maxdepth: 1
 
-			LAN et WAN             <files/all/lw>
 			Domaines et DNS        <files/all/dns>
 			Plages A,B,C et CIDR   <files/all/cidr>
 
@@ -138,6 +138,8 @@ On peut configurer notre réseau tel que :
 	* https://www.reseaux-telecoms.net/actualites/lire-les-7-couches-du-modele-osi-28083.html
 	* https://www.commentcamarche.net/contents/530-le-protocole-ip
 	* https://fr.wikibooks.org/wiki/R%C3%A9seaux_TCP/IP/La_pile_TCP/IP
+	* https://community.cisco.com/t5/switching/datagram-vs-packet/td-p/3182138
+	* https://community.fs.com/fr/blog/whats-the-difference-hub-vs-switch-vs-router.html
 
 	* outils
 

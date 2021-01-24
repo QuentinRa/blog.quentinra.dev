@@ -10,10 +10,14 @@ Une adresse IPV4 (Internet Protocol version 4) est une adresse sur
 		id_host : les bits restants sont assignés à une machine. Lors que l'id_host vaut 0, on obtient
 		l'adresse réseau, sinon l'adresse est une adresse machine.
 
-Par exemple, votre hébergeur internet va vous donner une plage d'adresses dont le début est de
-la forme 77.33.225.* et la dernière partie (*) est la partie host soit celle qui de chaque machine
-(77.33.225.1, 77.33.225.2, ...).
+**Exemple**
 
-.. hint::
+On considère l'adresse 77.33.225.0 qui notée en binaire (on verra comment dans la partie suivante) donne
+01001101.00100001.11100001.00000000. On va dire qu'il y a 17 bits fixes (nombre pris au hasard ici, voir CIDR)
+donc on a
 
-	On insiste sur le fait que vous n'aurez pas une adresse IP en zéro (car c'est celle du réseau).
+	* id_net (17 bits) : 01001101.00100001.1
+	* id_host (15 bits) : 1100001.00000000
+
+Vous remarquez que id_host contient des 1 donc cette adresse n'est pas une adresse de réseau
+mais une adresse de machine (host).
