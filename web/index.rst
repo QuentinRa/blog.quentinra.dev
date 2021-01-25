@@ -4,8 +4,8 @@
 Web
 ================================
 
-| :math:`\color{grey}{Version \ 0.4.5}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 24/01/2021}`
+| :math:`\color{grey}{Version \ 0.5.8}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 25/01/2021}`
 
 1. Introduction
 ===================

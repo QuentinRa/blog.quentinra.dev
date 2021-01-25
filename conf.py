@@ -66,6 +66,7 @@ release = 'build-3.34.452'
 # version 3.36 : web/css
 # version 3.37 : system/net
 # version 3.38 : web/mdb
+# version 3.39 : web/general
 
 # -- General configuration ---------------------------------------------------
 

@@ -1,7 +1,7 @@
-.. _etiquette:
+.. _ocaml:
 
 ================================
-NOM
+OCaml
 ================================
 
 | :math:`\color{grey}{Version \ 0.0.1}`
@@ -10,28 +10,13 @@ NOM
 1. Nom de partie
 ===================================
 
-1.1 Nom de sous-partie
-********************************
-
-1.1.1 Nom de sous sous-partie
---------------------------------
-
 ...
-
-
-
-i. Exercices
-==============
-
-.. toctree::
-    :name: exercices
-    :maxdepth: 1
-
-		nom				<path>
 
 -----
 
 **Crédits**
+	* Stefania DUMBRAVA (enseignante à l'ENSIIE)
+	* Christophe MOUILLERON (enseignant à l'ENSIIE)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**

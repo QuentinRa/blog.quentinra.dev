@@ -52,13 +52,22 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     Réseau                               <system/net/index>
 
 .. toctree::
-    :caption: Programmation
+    :caption: Programmation impérative
     :name: imperative
     :maxdepth: 1
 
     Langage C                            <imperative/c/index>
     Langage Python                       <imperative/python/index>
     Langage Java                         <imperative/java/index>
+
+.. toctree::
+    :caption: Programmation fonctionnelle
+    :name: functional
+    :maxdepth: 1
+
+    Programmation Fonctionnelle <functional/index>
+    Langage OCaml               <functional/ocaml/index>
+    Langage R                   <functional/r/index>
 
 .. toctree::
     :caption: Programmation web
