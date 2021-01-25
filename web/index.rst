@@ -146,3 +146,5 @@ pouvez y accéder avec http://localhost/phpmyadmin/, root sans mot de passe.
 	* https://httpd.apache.org/docs/current/howto/htaccess.html
 	* https://www.godaddy.com/garage/htaccess-tutorial-and-cheat-sheet/
 	* https://www.contentkingapp.com/academy/redirects/
+	* https://searchfacts.com/robots-txt-allow-disallow-all/
+	* https://www.semrush.com/blog/beginners-guide-robots-txt/

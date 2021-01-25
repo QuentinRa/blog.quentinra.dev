@@ -11,7 +11,10 @@ voyez tout son contenu.
 Introduction
 ---------------------
 
-Un .htaccess est un fichier :code:`.htaccess` à la racine de votre site.
+Un .htaccess est un fichier :code:`.htaccess` à la racine de votre site
+(vous pouvez en mettre dans des sous-répertoires, mais tous les .htaccess depuis la racine
+jusqu'à votre répertoire seront pris en compte dans l'application des règles).
+
 Attention, le serveur doit être configuré (voir cours associé) pour que
 les .htaccess aient un effet.
 
@@ -37,6 +40,24 @@ qui redirige les accès à l'uri par l'adresse en <to> avec le code <code>.
 Si mon site est https://duckduckgo.com/ alors https://duckduckgo.com/api/
 va ouvrir rediriger vers la page https://duckduckgo.com/. Le code 301 indique
 que c'est permanent sinon on mets 302.
+
+Pour empêcher l'accès à des ressources, on peut utiliser
+
+.. code:: bash
+
+	RedirectMatch 404 regex
+
+Changer le fichier par défaut
+
+.. code:: bash
+
+	DirectoryIndex index.php index.htm index.html autre.html
+
+Rediriger toutes les 404 vers un fichier
+
+.. code:: bash
+
+	ErrorDocument 404 /error404.php
 
 Réécriture des URL
 -----------------------

@@ -28,11 +28,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/note/captcha.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/note/captcha.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/note/robots.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/note/robots.rst" afterDir="false" />
     </list>
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
+    <list id="35a1cab6-097d-4a11-944c-f8e3831e6d1c" name="cours web ajouts" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/note/htaccess.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/note/htaccess.rst" afterDir="false" />
+    </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +95,7 @@
       <changelist id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="" />
       <changelist id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
       <changelist id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
+      <changelist id="35a1cab6-097d-4a11-944c-f8e3831e6d1c" name="cours web ajouts" comment="" />
       <created>1603031250187</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -284,7 +289,7 @@
       <workItem from="1611424770769" duration="13544000" />
       <workItem from="1611492731276" duration="26219000" />
       <workItem from="1611526327407" duration="41000" />
-      <workItem from="1611565063397" duration="15662000" />
+      <workItem from="1611565063397" duration="17976000" />
     </task>
     <servers />
   </component>
@@ -403,10 +408,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1611576258404" />
-    <state x="618" y="333" key="VCS.ChangelistChooser" timestamp="1611571072192">
+    <state x="618" y="333" key="VCS.ChangelistChooser" timestamp="1611584772748">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="618" y="333" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1611571072192" />
+    <state x="618" y="333" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1611584772748" />
     <state x="349" y="70" key="com.intellij.database.dbimport.ImportDialog" timestamp="1605899266055">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
