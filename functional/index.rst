@@ -4,7 +4,7 @@
 Programmation Fonctionnelle
 ================================
 
-| :math:`\color{grey}{Version \ 0.1.3}`
+| :math:`\color{grey}{Version \ 0.4.7}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 25/01/2021}`
 
 1. Introduction

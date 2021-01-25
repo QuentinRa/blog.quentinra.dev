@@ -4,7 +4,7 @@
 OCaml
 ================================
 
-| :math:`\color{grey}{Version \ 0.0.1}`
+| :math:`\color{grey}{Version \ 0.1.3}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 25/01/2021}`
 
 1. Introduction
@@ -36,7 +36,8 @@ Sous Windows, j'ai installé une WSL (windows store -> debian) puis
 	* :code:`subl -c` pour lancer la version graphique de sublime text.
 	* :code:`emacs -c` pour lancer la version graphique d'emacs (si installé).
 
-Vous avez un compilateur bytecode : :code:`ocamlc`.
+Vous avez un compilateur bytecode : :code:`ocamlc`. Pour compiler, faire
+comme en c (-o pour renommer, ...).
 
 2. Particularités du OCaml
 =================================
@@ -48,6 +49,11 @@ Chaque ligne finit par :code:`;;`.
 
 On utilise l'interpréteur OCAML. On tape nos expressions après le :code:`#`.
 
+Chaque expression retourne quelque chose de la forme :code:`nom : type = valeur`.
+
+	* nom : nom de la variable ou - si anonyme
+	* type : int, float, bool ...
+
 -----
 
 **Crédits**
@@ -56,4 +62,6 @@ On utilise l'interpréteur OCAML. On tape nos expressions après le :code:`#`.
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* aucune
+	* https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-1.pdf
+	* https://ocaml.org/learn/tutorials/functional_programming.fr.html#Qu-39-est-ce-que-la-programmation-fonctionnelle
+	* http://deptinfo.unice.fr/~elozes/PF/
