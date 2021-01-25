@@ -4,8 +4,8 @@
 Boostrap
 ================================
 
-| :math:`\color{grey}{Version \ 0.1.2}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 24/01/2021}`
+| :math:`\color{grey}{Version \ 0.3.5}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 25/01/2021}`
 
 Ce guide est basé sur :code:`Bootstrap4` et :code:`Material Design For Bootstrap (MDB)`.
 
@@ -130,16 +130,56 @@ Placement du texte
 	| Classe :code:`text-truncate` : mets ... si l'écran est trop petit pour afficher
 	| Classe :code:`text-break` : découpe un mot trop long si si l'écran est trop petit pour afficher
 
-5. Formulaires
+5. Tableaux
+========================
+
+On déclare comme classes du tableau les classes de style.
+
+	* :code:`table` : pour avoir le style d'un tableau bootstrap
+	* :code:`table-dark` (ou light) : tableau sombre/clair
+	* :code:`table-borderless` : supprime la bordure
+	* :code:`table-<couleur>` : colorier une balise td
+	* :code:`table-hover` : ligne parcourue mise en avant
+	* :code:`table-responsive` : si le tableau est trop grand alors il aura un scroll horizontal pour tout voir
+
+7. Autres
 ======================
 
-...
+Alertes
+	Plutôt cool pour afficher un message qui doit se voir (erreur, info, ...). Utilisez
+	les classes :code:`alert alert-<couleur>` (faut les 2 dans une div).
+
+	Vous pouvez utiliser :code:`alert-heading` pour un titre et la balise :code:`<hr>` pour embellir votre alerte.
+
+Boutons
+	Vous utilisez les classes :code:`btn btn-<couleur>` pour faire un beau bouton (ou
+	btn-outline-<couleur>).
+
+Card
+	Regardez `la doc des card <https://getbootstrap.com/docs/4.6/components/card/>`_,
+	c'est une petite carte (qu'on peut retourner avec du js) comme une carte pokemon.
+
+Carrousel
+	Regardez `la doc des carrousel <https://getbootstrap.com/docs/4.6/components/carousel/>`_,
+	il s'agit d'une galerie/... donc des images que l'on veut parcourir avec des flèches etc.
+
+Collapse
+	Regardez `la doc collapse <https://getbootstrap.com/docs/4.6/components/collapse/>`_,
+	super pratique si vous voulez permettre à l'utilisateur d'afficher/cacher des informations.
+
+Formulaire
+	Regardez `la doc des forms <https://getbootstrap.com/docs/4.6/components/forms/>`_.
+
+	On utilise généralement la classe :code:`form-group` pour un chaque div
+	contenant l'input+le label. Chaque input a la classe :code:`form-control`.
 
 -----
 
 **Crédits**
+	* Documentation officielle (getbootstrap.com)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
 	* https://getbootstrap.com/docs/5.0/getting-started/introduction/
 	* https://www.ipraxa.com/blog/bootstrap-5-whats-new-whats-changed/
+	* https://www.w3schools.com/bootstrap4/
