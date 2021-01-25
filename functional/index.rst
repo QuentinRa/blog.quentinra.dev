@@ -73,3 +73,5 @@ Le fait d'utiliser des valeur immuables vous font généralement écrire moins d
 	* https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-1.pdf
 	* https://docs.microsoft.com/fr-fr/dotnet/fsharp/introduction-to-functional-programming/
 	* https://leblogducodeur.fr/introduction-a-la-programmation-fonctionnelle/
+	* https://ocaml.org/learn/tutorials/functional_programming.fr.html#Qu-39-est-ce-que-la-programmation-fonctionnelle
+	* http://deptinfo.unice.fr/~elozes/PF/
