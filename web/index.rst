@@ -4,8 +4,8 @@
 Web
 ================================
 
-| :math:`\color{grey}{Version \ 0.2.3}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 21/01/2021}`
+| :math:`\color{grey}{Version \ 0.4.5}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 24/01/2021}`
 
 1. Introduction
 ===================
@@ -15,8 +15,9 @@ en tapant une URL (ex : https://duckduckgo.com/).
 
 Les pages web sont écries en HTML, le style est définit en CSS. Lorsque vous tapez
 une url, alors elle est envoyée à un serveur qui retourne une page HTML qui est affichée dans votre navigateur.
-Vous pouvez exécuter du code sur le serveur (ex: mettre la date du jour, ...) avec PHP. Enfin, vous pouvez
-exécuter du code dans la navigateur du client (ex: animations, ...) avec la JavaScript.
+Vous pouvez exécuter du code sur le serveur (ex: mettre la date du jour, utiliser des boucles, ...)
+avec PHP. Enfin, vous pouvez
+exécuter du code dans la navigateur du client (ex: animations, ...) avec le JavaScript.
 
 Il existe de nombreuses personnes qui n'aiment pas le web, donc il existe de nombreux moyens
 de coder des sites sans faire de HTML/CSS/...
@@ -28,42 +29,26 @@ Résumé
 	* JavaScript : animations dans le navigateur (fichier .js)
 	* PHP (+SQL) : code qui modifie l'HTML avant de l'envoyer, côté serveur (fichier .php)
 
-Note sur les frameworks
----------------------------
+Il est recommandé de lire les points suivants car c'est utile et certains
+vous feront gagner du temps.
 
-Alternativement, pour simplifier le développement car beaucoup de sites se ressemblent,
-il existe des framework. Des frameworks CSS connus sont : Bootstrap, MDBoostrap, w3css
-et des frameworks PHP connus sont : Zend, Symphony, Laravel et CodeIgniter (pas trop vrai mais :p).
+.. toctree::
+	 :maxdepth: 1
 
-Note sur les protocoles
-------------------------
+		Note sur les frameworks     <note/framework>
+		Note sur les protocoles     <note/proto>
+		Note sur la console         <note/cons>
+		Note sur FTP                <note/ftp>
+		Note sur les caractères     <note/char>
 
-Il est intéressant de savoir qu'une page est soit en :code:`http` (port 80)
-ou soit :code:`https` (port 443, sécurisé).
+Autres sujets plus généraux (pour les pros)
 
-N'importe quel serveur peut devenir https gratuitement et facilement
-avec :code:`let's encrypt`.
+.. toctree::
+	 :maxdepth: 1
 
-Vous pouvez préciser le port avec :code:`url:port` si votre site web (ou le site web)
-utilise un autre port que 80/443.
-
-Note sur la console
------------------------
-
-En appuyant sur F12 ou sur CTRL+i ou [clic droit puis inspecter] vous pouvez ouvrir
-une console.
-
-	* Elements : voir le code de la page (HTML/CSS), modifiable
-	* Console : tapez du javascript
-	* Source : voir les fichiers du site
-	* Application : voir les cookies/sauvegardes locales/autres crées par le site
-
-Note sur FTP
--------------------------
-
-Vous allez généralement devoir mettre vos fichiers sur le serveur web. On utilise généralement
-FileZilla sous Windows ou :code:`ftp`. Il suffit de se connecter et déplacer les fichiers
-sur le serveur.
+		.htaccess         <note/htaccess>
+		robots.txt, ...   <note/robots>
+		Captcha           <note/captcha>
 
 2. Organisation
 ==================
@@ -93,11 +78,9 @@ Lorsque vous tapez une url
 	* :code:`https://mangadex.org/title/46592/kill-the-hero`
 	* :code:`https://mangadex.org/` : correspond à la racine
 	* :code:`title/46592/kill-the-hero` : depuis la racine dossier title/.../kill-the-hero/
-	* lorsqu'il n'y a pas affiché [...].html ou [...].php alors c'est que le fichier index est utilisé (php ou html)
 
-Attention, vous voyez que n'importe qui peut visiter votre site et trouver
-tout ce que vous auriez pu cacher. Généralement, un fichier .htaccess sera utilisé
-pour bloquer l'accès extérieur (donc depuis un navigateur). On verra cela plus tard.
+Lorsqu'il n'y a pas affiché [...].html ou [...].php ou ... donc aucun nom de fichier
+alors c'est que le fichier index (html ou php ou ...) est utilisé.
 
 3. HTML
 ====================
@@ -160,3 +143,6 @@ pouvez y accéder avec http://localhost/phpmyadmin/, root sans mot de passe.
 	* https://validator.w3.org/
 	* https://codeigniter.com/
 	* https://www.w3schools.com/howto/default.asp
+	* https://httpd.apache.org/docs/current/howto/htaccess.html
+	* https://www.godaddy.com/garage/htaccess-tutorial-and-cheat-sheet/
+	* https://www.contentkingapp.com/academy/redirects/

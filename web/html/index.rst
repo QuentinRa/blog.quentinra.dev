@@ -4,8 +4,8 @@
 HTML
 ================================
 
-| :math:`\color{grey}{Version \ 0.2.4}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 23/01/2021}`
+| :math:`\color{grey}{Version \ 0.3.6}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 25/01/2021}`
 
 Il est important d'avoir lu le cours sur les généralités du web
 ainsi que d'avoir lu la partie HTML.
@@ -26,6 +26,16 @@ Voici un exemple, une balise image : :code:`<img src='chemin/image.png' alt='des
 
 		Fichier type HTML               <files/html5>
 		Quelques notes                  <files/notes>
+
+Note pour javascript et CSS : vous pouvez importer une librairie sans télécharger
+de fichier .css ou .js ou autre en passant par un CDN (Content Delivery Network).
+
+L'idée est que des sites comme https://cdnjs.com/, https://www.jsdelivr.com/, ... Il suffit
+de copier les liens des js/css comme source et c'est bon. Certains CDN vous permettent
+de ne pas spécifier une version, donc le lien source redirigera toujours vers la
+dernière version de la librairie (donc si vous téléchargez mathjax-4.0.js c'est une
+version fixe, mais avec un CDN le lien est fixe mais le fichier affiché sera mathjax-4.x
+avec x la dernière version).
 
 2. Balises principales
 ================================
@@ -147,6 +157,18 @@ Voici quelques tags meta souvent utilisés.
 		<META NAME="COPYRIGHT" CONTENT="...">
 		<META NAME="KEYWORDS" CONTENT="....">
 		<META NAME="DESCRIPTION" CONTENT="...">
+
+7. Icônes
+===============
+
+Vous pouvez embellir votre site avec des icônes très facilement. La référence
+incontournable est font-awesome (CC-1.0) mais récemment bootstrap à sortit une librairie
+open-source.
+
+Liens
+
+	* https://icons.getbootstrap.com/ (voir utilisation #usage)
+	* https://fontawesome.com/icons (usage: :code:`<i class="fad fa-heart"></i>` par exemple)
 
 -----
 

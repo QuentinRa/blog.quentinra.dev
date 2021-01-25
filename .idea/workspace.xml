@@ -29,7 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/exercices/proto.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/exercices/proto.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.rst" afterDir="false" />
     </list>
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
@@ -62,7 +63,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/net/exercices/proto" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/note" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
@@ -70,11 +71,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\web\note" />
       <recent name="C:\Users\quent\Documents\texas-res\system\net\exercices\proto" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\net\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\web" />
       <recent name="C:\Users\quent\Documents\texas-res\system\net\files\proto\frame" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\net\files\proto" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\net\exercices" />
@@ -283,7 +284,7 @@
       <workItem from="1611424770769" duration="13544000" />
       <workItem from="1611492731276" duration="26219000" />
       <workItem from="1611526327407" duration="41000" />
-      <workItem from="1611565063397" duration="10390000" />
+      <workItem from="1611565063397" duration="15662000" />
     </task>
     <servers />
   </component>
