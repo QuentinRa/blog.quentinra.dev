@@ -1,0 +1,18 @@
+Fonction Client "aimes-tu"
+ Entrée moi : chaîne de caractère
+ Entrée vav : chaîne de caractère
+ Entrée on : adresse machine
+ Entrée item : chaîne de caractère
+ Sortie rep : { OUI, NON, PDR }
+
+ canal = openT( moi )
+ PDU = 'MESS' + .........
+ écrireT(canal, PDU, vav, on)
+ if lireT_TO(canal, PDU, ........., ........., to) = TO then
+  rep = . . . .
+  else if PDU est un PDU réponse then
+  rep = extraitREP(.........)
+ else
+  rep = .........
+ end if
+ closeT( canal )

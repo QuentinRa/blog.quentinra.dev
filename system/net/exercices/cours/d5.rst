@@ -10,16 +10,20 @@
 	**est une phase complexe des protocoles.**
 
 Non, il suffit de déterminer un port utilisé pour communiquer
-et qu'une machine ai l'adresse mac des autres. Si vous n'avez que les adresses
-IP, alors le protocole ARP sera enclenché ce qui est complexe car notre machine
-va envoyer le message a toutes les machines du réseau "est tu <ip>?"
-et seulement la machine correspondante répondra si elle existe.
+et qu'une machine ai l'adresse mac des autres.
+
+Oui, si vous n'avez que les adresses IP, alors le protocole ARP sera enclenché ce qui est complexe
+car notre machine va envoyer le message a toutes les machines du réseau "est tu <ip>?"
+et seulement la machine correspondante répondra si elle existe. On obtiendra alors
+les macs qui nous permettrons de communiquer.
 
 2. \
 	**Un protocole de niveau N est défini indépendamment de la couche**
 	**N-1 sur laquelle il s’appuie.**
 
 Oui, les communications se font en passant par l'API.
+
+Le cours spécifie que les couches sont indépendantes.
 
 3. \
 	**Un protocole peut être implanté sur n’importe quel autre protocole**
@@ -29,6 +33,10 @@ Non, un protocole ne peut implementer que des protocoles de la couche
 N-1 et non des protocoles de la même couche. Il deviendrait sinon
 un protocole de la couche supérieure.
 
+Par exemple Firefox implémente HTTP mais apache ne peut pas implémenter Firefox
+tout en étant au même niveau que Firefox (tous deux des applications utilisant un
+protocol de la couche 7: application).
+
 4. \
 	**Soit A et B, 2 mises en oeuvre d’une présentation API d’un protocole**
 	**P, écrites par 2 personnes différentes. A et B peuvent elles communiquer ?**
@@ -36,9 +44,10 @@ un protocole de la couche supérieure.
 En théorie A et B réalisent la même API donc s'ils ont bien codés
 alors oui ils peuvent communiquer (donc si le code des fonctions
 respecte bien les conditions imposées par l'API qui ne peuvent être vérifiées
-qu'a l'exécution par exemple que tous les entiers soient en BigEndian ou alors utiliser
-la méthode x pour sérialiser une valeur. L'API ne dicte pas le code, donc c'est au programmeur
-de bien respecter les indications de l'API).
+qu'a l'exécution : que tous les entiers soient en BigEndian, utiliser
+la méthode x pour sérialiser une valeur, ... L'API ne dicte pas le code mais
+déclare uniquement les services donc seulement la forme peut être vérifiée. Dans la documentation,
+il y a souvent des détails de fond à respecter donc c'est au programmeur de bien respecter les indications de l'API).
 
 5. \
 	**Soit A une mise en oeuvre d’une présentation API1 d’un protocole**
@@ -52,8 +61,14 @@ du protocole via l'API est différent.
 	**Dans l’automate qui spécifie le dialogue d’un protocole N apparait**
 	**les services du protocole N-1.**
 
-Non, l'automate va spécifier des dialogues dont le code utilisera
-les services du protocole N-1, cependant l'utilisation des services N-1 ne sera pas apparent.
+Un protocole de niveau N (ex: Firefox) va implémenter
+un protocole de niveau N-1 (ex: HTTP) en écrivant du code
+pour que les services de l'API (ici: HTTP) marchent.
+
+Cependant, le protocole de N ne va pas spécifier dans son automate
+les services de N-1 car ils seront bien utilisés mais dans le code,
+donc ce ne sera pas apparent (à tout moment le code peut changer, et on pourra utiliser
+d'autres services du N-1) donc Non.
 
 7. \
  	**La mise en oeuvre d’un protocole de niveau N utilise les services du**
@@ -68,14 +83,14 @@ puis TCP/IP ont découpé la structure en couches.
 	**du protocole N.**
 
 Non, un protocole ne peut utiliser que les services des protocoles
-au niveau N-1 (c'est un arbre donc pas de cycles !).
+au niveau N-1 (sinon les couches ne seraient pas indépendantes, toujours de N vers N-1 et pas N-1 vers N).
 
 9. \
 	**Un protocole peut-il ne pas avoir de service?**
 
-Oui, on peut prendre l'exemple du protocole UDP. Vous n'allez jamais vous connecter
-à une machine, juste envoyer un message en précisant le destinataire et qui peut être arrivera
-a destination mais vous n'en n'aurez jamais de confirmation.
+Un protocole qui n'a pas de services ne ferait rien
+cependant rien n'interdit ce genre de comportement
+donc je dirais oui.
 
 10. \
 	**Une entité d’un protocole peut-elle ne pas avoir de service?**

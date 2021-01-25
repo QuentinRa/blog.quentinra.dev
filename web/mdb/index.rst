@@ -4,7 +4,7 @@
 Boostrap
 ================================
 
-| :math:`\color{grey}{Version \ 0.3.5}`
+| :math:`\color{grey}{Version \ 0.3.6}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 25/01/2021}`
 
 Ce guide est basé sur :code:`Bootstrap4` et :code:`Material Design For Bootstrap (MDB)`.
@@ -172,6 +172,12 @@ Formulaire
 
 	On utilise généralement la classe :code:`form-group` pour un chaque div
 	contenant l'input+le label. Chaque input a la classe :code:`form-control`.
+
+Modals
+	Une popup bootstrap, voir la documentation.
+
+Nav et Navbar
+	Barre de navigation, voir la documentation.
 
 -----
 
