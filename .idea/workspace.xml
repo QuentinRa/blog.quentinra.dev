@@ -28,16 +28,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/system/net/exercices/cours/d5.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/exercices/cours/d5.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mdb/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/mdb/index.rst" afterDir="false" />
-    </list>
-    <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mdb/f.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mdb/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/mdb/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mdb/list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/net/exercices/proto.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/exercices/proto.rst" afterDir="false" />
     </list>
+    <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,14 +50,6 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/web/mdb/index.rst">
-      <ranges>
-        <range start1="6" end1="7" start2="6" end2="7" changelist="71afdc5f-c39b-47b5-8450-562b663807d8" />
-        <range start1="175" end1="175" start2="175" end2="181" changelist="d4a57474-184d-4e44-87b4-c5fed694ad2d" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectId" id="1j3SOdW56l2HX11sGuoiPU6zFXG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -76,7 +62,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/system/net/exercices" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/net/exercices/proto" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
@@ -84,11 +70,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\system\net\exercices\proto" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\net\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\web" />
       <recent name="C:\Users\quent\Documents\texas-res\system\net\files\proto\frame" />
       <recent name="C:\Users\quent\Documents\texas-res\system\net\files\proto" />
-      <recent name="C:\Users\quent\Documents\texas-res\system\net\exercices\arp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\net\exercices" />
@@ -297,7 +283,7 @@
       <workItem from="1611424770769" duration="13544000" />
       <workItem from="1611492731276" duration="26219000" />
       <workItem from="1611526327407" duration="41000" />
-      <workItem from="1611565063397" duration="8337000" />
+      <workItem from="1611565063397" duration="10390000" />
     </task>
     <servers />
   </component>
@@ -412,10 +398,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="ShowDiffWithBranchDialog/0.0.1536.824@0.0.1536.824" timestamp="1603484549092" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1609784936962">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1611576258404">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1609784936962" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1611576258404" />
     <state x="618" y="333" key="VCS.ChangelistChooser" timestamp="1611571072192">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -444,9 +430,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1611074486360" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1611180218621">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1611575362513">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1611180218621" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1611575362513" />
   </component>
 </project>

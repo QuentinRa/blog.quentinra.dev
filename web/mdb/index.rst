@@ -142,7 +142,7 @@ On déclare comme classes du tableau les classes de style.
 	* :code:`table-hover` : ligne parcourue mise en avant
 	* :code:`table-responsive` : si le tableau est trop grand alors il aura un scroll horizontal pour tout voir
 
-7. Autres
+6. Autres
 ======================
 
 Alertes

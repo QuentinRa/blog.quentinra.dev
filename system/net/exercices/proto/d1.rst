@@ -1,0 +1,83 @@
+================================
+1. Comment communiquer
+================================
+
+.. image:: https://img.shields.io/badge/correction-non%20vérifiée-red.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction non vérifiée
+
+.. image:: https://img.shields.io/badge/sujet-non%20vérifié-red.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: sujet non vérifié
+
+.. warning::
+
+		Je recommande de ne pas faire cet exercice, les questions 3 et 4 ont un
+		code théorique qui est impossible à compléter sans jouer aux devinettes,
+		avoir la correction officielle ou alors être celui qui l'a créé.
+
+**1. Illustrez sur la figure 1 "Léo demande à Léa si elle aime les pâtes" et Léa répond non.**
+
+.. image:: /assets/system/net/exercices/proto1-1.png
+
+**2. Illustrez sur la figure 2 "Bob demande à Bob si il aime le raisin".**
+
+Même raisonnement mais sans réponse.
+
+**3. Donnez l’algorithme d’un client "aimes-tu"**
+
+.. code:: js
+
+		Fonction Client "aimes-tu"
+		 Entrée moi : chaîne de caractère, ex: Léo
+		 Entrée vav : chaîne de caractère, ex: Léa
+		 Entrée on : adresse machine, ex: D, G donc la machine
+		 Entrée item : chaîne de caractère, ex: le message
+		 Sortie rep : { OUI, NON, PDR }
+
+		 canal = openT( moi ) // ouvre la connexion
+		 PDU = 'MESS' + item // construction du message
+		 écrireT(canal, PDU, vav, on) // envoi à Léa
+		 // on attends sa réponse ? Je sais pas c'est quoi to
+		 if lireT_TO(canal, PDU, vav, on, to) = TO then
+			rep = .... // on fait un truc je sais pas quoi
+			else if PDU est un PDU réponse then
+		  // on a reçu une réponse (donc REP suivi de la réponse)
+			rep = extraitREP(PDU)
+		 else
+			rep = "PDR"
+		 end if
+		 // on n'a rien retourné mais bref...
+		 // fermeture du canal
+		 closeT( canal )
+
+**4. Donnez l’algorithme d’un serveur "aimes-tu"**
+
+.. code:: js
+
+		Fonction Serveur "aimes-tu"
+		 Entrée moi : chaîne de caractère
+
+		 // lancement du serveur
+		 canal = openT( moi )
+		 while non fin do
+		  // on suppose qu'on lit dans canal, qqch, depuis une source étant à une certaine machine
+		  lireT(canal, PDU, moi, on)
+		  if PDU est un message then
+		   // récupère la partie après MESS
+		   item = extraitITEM(PDU)
+		   // on affiche la question
+		   écrireSTDOUT(item)
+		   // je sais pas c'est quoi to et TO :(
+		   // mais bon on récupère la réponse
+		   if lireSTDIN_TO(rep,to) = TO then
+		    rep=oui si répondu oui, sinon non
+		   end if
+		   // ajoute la réponse
+		   PDU = 'REP' + rep
+			 // on envoi, ici on va dire to=destination :)
+		   écrireT(canal, PDU, to, on)
+		  end if
+		 end while
+		 closeT( canal )
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
