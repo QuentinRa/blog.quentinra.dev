@@ -1,9 +1,0 @@
-L'HTML est basé sur un système de balises/tags. Vous aurez par exemple
-
-	* un tag pour afficher du texte
-	* un tag pour afficher une image
-	* un tag pour afficher un titre
-	* ...
-
-Vous pouvez ensuite modifier les propriétés de tags en modifiants les valeurs
-de ses attributs

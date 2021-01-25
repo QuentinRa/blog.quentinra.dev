@@ -28,17 +28,109 @@ donc super utile.
 
 L'un des avantages des framework css est qu'ils sont déjà responsive donc s'adaptent à la taille de l'écran.
 
-2. Mise en page
+Il suffit de copier ces liens dans le balise head
+
+.. code:: html
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<!-- bootstrap javascript (peut être dans le footer aussi) -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+2. breakpoint
+=====================
+
+Bootstrap vous permet de placer 5 types de classes
+
+	* nom : toujours présent
+	* nom-sm : style uniquement si l'écran est petit (téléphone, >576px)
+	* nom-md : style uniquement si l'écran est moyen (tablette/petit pc, >768px)
+	* nom-lg : style uniquement si l'écran est grand (pc, >992px)
+	* nom-xl : style uniquement si l'écran est très grand (pc, >1200px)
+
+Attention, tous les classes de styles n'ont pas 5 variantes.
+
+Les classes :code:`display` sont très utiles pour afficher/ou non un composant.
+
+Exemples
+
+	* :code:`d-print-none` : ne pas afficher avec CTRL+P donc imprimer
+	* :code:`display-<none/block>` : cacher/afficher
+	* :code:`display-<breakpoint>-<none/block>` : pareil sauf que ce n'est fait que si l'écran est d'au moins breakpoint taille
+	* Il existe d'autres valeurs que none/block (flex, ...)
+
+3. Mise en page
 ==========================
 
-...
+Bootstrap utilise un système de lignes et colonnes. La largeur de l'écran équivaut
+à 12 colonnes.
 
-3. Couleurs et Fonds
+Classe :code:`row` : mettre des div sur la même ligne.
+
+Classe :code:`col-n` : crée une colonne qui prends la place de n colonnes sur 12. Valeur n=auto possible.
+
+.. code:: html
+
+	<div class="row mx-0">
+		<div class="col-md-6 col-12"> ... </div>
+		<div class="col-md-6 col-12"> ... </div>
+	</div>
+
+Autres classes utiles
+----------------------
+
+Deux autres classes pratiques sont :code:`container`
+et :code:`container-fluid`.
+
+Vous pouvez centrer/... le contenu avec des classes du style :code:`justify-content-center`
+ou faire des affichages particuliers avec les classes du type :code:`align-items-center`.
+
+Marge et padding
+-------------------------
+
+Vous pouvez appliquer des marges avec :code:`mt, mb, ml, mr`
+et des paddings avec :code:`pt, pb, pl, pr` suivit de :code:`-nombre` entre
+0 et 5 (valeur qui détermine responsivement une taille plus ou moins grande).
+
+Note: t = top, b = bottom, l = left et r = right.
+
+Vous avez les classes :code:`mx, my, px, my` qui sont l'équivalent de
+faire left+right (x) et top+bottom (y).
+
+Taille
+-------
+
+On détaille la largeur avec :code:`w-n` qui vaut 25,50,75,100,auto donc un pourcentage de la largeur
+de l'écran. Il existe la même pour la hauteur avec :code:`h-n`.
+
+On peut définir une taille maximale avec :code:`mw-100` (max width 100) par exemple.
+
+4. Couleurs et Fonds
 ==========================
 
-...
+Titres
+	Vous pouvez donner le style d'une H1 à une H2 (car une 1 par document) en utilisant
+	la classe :code:`hn` (n de 1 à 6).
 
-4. Formulaires
+Couleur
+	Vous pouvez donner une couleur de police parmi les prédéfinies [#1]_ avec :code:`text-<couleur>`.
+
+Fond
+	Vous pouvez donner une couleur de police parmi les prédéfinies [#1]_ avec :code:`bg-<couleur>`.
+
+.. [#1] les couleurs sont listées ici : https://getbootstrap.com/docs/4.6/utilities/colors/
+
+Autres
+	| Classe :code:`lead` qui donne une apparence qui sort du lot à un paragraphe.
+	| Classe :code:`display-n` (n de 1 à 4) qui fait des gros titres.
+
+Placement du texte
+	| Classe :code:`text-justify` (ou left, right, center). Aligne le texte.
+	| Classe :code:`text-truncate` : mets ... si l'écran est trop petit pour afficher
+	| Classe :code:`text-break` : découpe un mot trop long si si l'écran est trop petit pour afficher
+
+5. Formulaires
 ======================
 
 ...

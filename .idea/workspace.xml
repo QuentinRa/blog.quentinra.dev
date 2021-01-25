@@ -29,16 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/files/proto/def2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/proto/def2.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/files/proto/eth.rst.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/proto/eth.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/files/proto/frame/ip.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/proto/frame/ip.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/files/proto/frame/tcp.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/proto/frame/tcp.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/files/proto/frame/udp.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/proto/frame/udp.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/files/proto/ip.rst.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/net.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/net.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/mdb/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/mdb/index.rst" afterDir="false" />
     </list>
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -288,7 +280,9 @@
       <workItem from="1611410977160" duration="753000" />
       <workItem from="1611419426168" duration="2000" />
       <workItem from="1611424770769" duration="13544000" />
-      <workItem from="1611492731276" duration="26173000" />
+      <workItem from="1611492731276" duration="26219000" />
+      <workItem from="1611526327407" duration="41000" />
+      <workItem from="1611565063397" duration="2982000" />
     </task>
     <servers />
   </component>
