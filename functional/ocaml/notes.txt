@@ -7,14 +7,24 @@ Notes sur les compilateurs
 idea/bin/idea.sh
 -c
 idea fichier
-
 https://ocaml.org/docs/install.html#From-Source
-
 Attention, faut l'option --disable-sandboxing
 https://github.com/ocaml/opam-repository/issues/12050
 https://github.com/ocaml/ocaml
 https://reasonml-editor.github.io/reasonml-idea-plugin/docs/get-started/project-configuration
 https://ocamlverse.github.io/content/quickstart_ocaml_project_dune.html
 https://dune.readthedocs.io/en/stable/
-
 ./_build/default/src/main.exe
+
+Type composite (n-uplets)
+on mets des valeurs (valeur, valeur, ...)
+le type est celui de chaque des valeurs. L'ordre compte.
+
+Type liste
+[valeur;valeur;]
+type: <type> list donc int list etc.
+valuer::list : ajoute valeur au début.
+
+Liste : tête et le reste.
+List.hd : premier élément
+List.tl : tout sauf le premier

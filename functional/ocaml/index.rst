@@ -4,8 +4,8 @@
 OCaml
 ================================
 
-| :math:`\color{grey}{Version \ 0.1.3}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 25/01/2021}`
+| :math:`\color{grey}{Version \ 0.3.5}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 26/01/2021}`
 
 1. Introduction
 ===================================
@@ -23,8 +23,9 @@ Vous pouvez
 .. toctree::
 	 :maxdepth: 1
 
-		Installation OCaml (Linux)          <files/i_linux>
-		Installation OCaml (Windows)        <files/i_win>
+		Installation OCaml (Linux)     <files/i_linux>
+		Installation OCaml (Windows)   <files/i_win>
+		Interpréteur                   <files/inter>
 
 2. Particularités du OCaml
 =================================
@@ -32,32 +33,41 @@ Vous pouvez
 Chaque ligne finit par :code:`;;`. Un commentaire
 se fait avec :code:`(* commentaire *)`.
 
+3. Types en OCaml
+==========================
+
 On ne peut faire des opérations que entre éléments du même type.
 Alternativement, chaque type à ses propres symboles
 
 	* entiers :code:`+, -, *, /` et :code:`mod` (modulo)
 	* flottants :code:`+., -., *., /.`
 	* string :code:`^` (concaténation)
-	* tous : :code:`>, >=, <, <=, =, !=`
-
-Vous pouvez convertir un nombre avec type_to_of_type
-donc float_of_int prends un int et retourne un float.
+	* booléens : not, && (et logique), || (ou logique)
+	* tous : :code:`>, >=, <, <=, = (égal), != (différent), <> (différent)`
 
 Les types sont
 
 	* int (entier a), float (réel, a.b)
 	* bool (booléen donc true/false)
 	* char (caractère, \'A\'), string (chaine, \"Hello\")
+	* unit : type qui contient uniquement ()
 
-3. Exploration
-==========================
+4. Fonctions
+=============
 
-On utilise l'interpréteur OCAML. On tape nos expressions après le :code:`#`.
+Vous pouvez convertir un nombre avec type_to_of_type
+donc float_of_int prends un int et retourne un float.
 
-Chaque expression retourne quelque chose de la forme :code:`nom : type = valeur`.
+Vous pouvez trouver les valeur min/max avec max_type (ou min_type).
 
-	* nom : nom de la variable ou - si anonyme
-	* type : int, float ...
+Taille d'une String : String.length(string);
+
+Fonctions maths : ceil, floor, sqrt, expr, log, log10.
+
+5. Variables
+=======================
+
+...
 
 -----
 
