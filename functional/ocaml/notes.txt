@@ -1,7 +1,3 @@
-
-(* une pour chaque type de données *)
-print_string "texte à afficher\n"
-
 Notes sur les compilateurs
 
 idea/bin/idea.sh
