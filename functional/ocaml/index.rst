@@ -20,29 +20,34 @@ Vous pouvez
 	* lancer ocaml et taper des expressions
 	* Exécuter des instructions en ligne : https://try.ocamlpro.com/
 
-Vous aurez besoin de la commande :code:`ocaml` qui s'installe facilement sous linux.
+.. toctree::
+	 :maxdepth: 1
 
-	* :code:`sudo apt-get update;`
-	* :code:`sudo apt-get install ocaml;`
-
-Sous Windows, j'ai installé une WSL (windows store -> debian) puis
-
-	* faire les commandes sous linux
-	* faire :code:`sudo apt-get update;sudo apt-get install sublime-text;`
-	* installer Xming (+Xming Fonts : http://www.straightrunning.com/XmingNotes/ voir tableau)
-	* enfin tester Ocaml
-	* :code:`ocaml` (CTRL-D) pour quitter, si c'est bon alors ok
-	* lancez Xming (à refaire à chaque démarrage)
-	* :code:`subl -c` pour lancer la version graphique de sublime text.
-	* :code:`emacs -c` pour lancer la version graphique d'emacs (si installé).
-
-Vous avez un compilateur bytecode : :code:`ocamlc`. Pour compiler, faire
-comme en c (-o pour renommer, ...).
+		Installation OCaml (Linux)          <files/i_linux>
+		Installation OCaml (Windows)        <files/i_win>
 
 2. Particularités du OCaml
 =================================
 
-Chaque ligne finit par :code:`;;`.
+Chaque ligne finit par :code:`;;`. Un commentaire
+se fait avec :code:`(* commentaire *)`.
+
+On ne peut faire des opérations que entre éléments du même type.
+Alternativement, chaque type à ses propres symboles
+
+	* entiers :code:`+, -, *, /` et :code:`mod` (modulo)
+	* flottants :code:`+., -., *., /.`
+	* string :code:`^` (concaténation)
+	* tous : :code:`>, >=, <, <=, =, !=`
+
+Vous pouvez convertir un nombre avec type_to_of_type
+donc float_of_int prends un int et retourne un float.
+
+Les types sont
+
+	* int (entier a), float (réel, a.b)
+	* bool (booléen donc true/false)
+	* char (caractère, \'A\'), string (chaine, \"Hello\")
 
 3. Exploration
 ==========================
@@ -52,7 +57,7 @@ On utilise l'interpréteur OCAML. On tape nos expressions après le :code:`#`.
 Chaque expression retourne quelque chose de la forme :code:`nom : type = valeur`.
 
 	* nom : nom de la variable ou - si anonyme
-	* type : int, float, bool ...
+	* type : int, float ...
 
 -----
 

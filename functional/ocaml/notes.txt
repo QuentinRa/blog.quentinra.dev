@@ -2,13 +2,6 @@
 (* une pour chaque type de données *)
 print_string "texte à afficher\n"
 
-Ocaml, on ne peut faire des opérations que entre éléments du même type.
-Alternativement, chaque type à son propre symbol
-
-	* entiers :code:`+, -, *, /`
-	* flottants :code:`+., -., *., /.`
-	* tous : :code:`>, >=, <, <=, =, !=`
-
 Notes sur les compilateurs
 
 idea/bin/idea.sh
@@ -21,3 +14,7 @@ Attention, faut l'option --disable-sandboxing
 https://github.com/ocaml/opam-repository/issues/12050
 https://github.com/ocaml/ocaml
 https://reasonml-editor.github.io/reasonml-idea-plugin/docs/get-started/project-configuration
+https://ocamlverse.github.io/content/quickstart_ocaml_project_dune.html
+https://dune.readthedocs.io/en/stable/
+
+./_build/default/src/main.exe
