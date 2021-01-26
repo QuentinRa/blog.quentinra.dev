@@ -60,12 +60,12 @@ Les types sont
 3. Fonctions utiles
 =====================
 
-Vous pouvez convertir un nombre avec type_to_of_type
+Vous pouvez convertir un nombre avec :code:`<type_to>_of_<type>`
 donc float_of_int prends un int et retourne un float.
 
-Vous pouvez trouver les valeur min/max avec max_type (ou min_type).
+Vous pouvez trouver les valeur min/max avec :code:`max_type` (ou :code:`min_type`).
 
-Taille d'une String : String.length(string);
+Taille d'une String : :code:`String.length(string)`;
 
 Fonctions maths : ceil, floor, sqrt, expr, log, log10.
 
@@ -118,7 +118,7 @@ On utilise la forme :code:`function entrée -> code`. La fonction
 devra ensuite être stockée dans une variable qui servira à l'appeler.
 On peut utiliser :code:`fun` plutôt que :code:`function`
 
-.. code::
+.. code:: ocaml
 
 	(* exemple avec le calcul de diam depuis un r *)
 	let diam = function r -> r *. r ;; (* déclaration *)
@@ -155,14 +155,50 @@ Fonction récursive
 		let rec fact = function n -> if n = 0 then 1 else n * fact (n - 1) ;;
 		fact 5 ;;
 
+Boucle
+	On peut modéliser une boucle avec une fonction récursive.
+
+	.. code:: ocaml
+
+		let boucle n =
+		 (
+			let rec boucle_i =
+			 function (i) ->
+				if i = n
+				 then ()
+				else
+				begin
+				 (* du code de la boucle *)
+				 print_string(string_of_int (i)^"\n");
+				 boucle_i(i+1);
+				end
+			 in boucle_i (0)
+		 );;
+
+		boucle 5
+
+Couplets/Types composites
+	En fait lorsque vous faites (valeur1, valeur2) par exemple lors d'un appel de fonction,
+	vous créez un type de type (type valeur 1, type valeur 2). Vous pouvez ainsi créer
+	autant de types de voulu. Les valeurs n'ont pas besoin d'avoir le même type.
+
+	.. code:: ocaml
+
+		# let (a,b,c) = (5, "test", 3.0) ;;
+		int * string * float = (5, "test", 3.)
+
 -----
 
 **Crédits**
 	* Stefania DUMBRAVA (enseignante à l'ENSIIE)
+	* Julien FOREST (enseignant à l'ENSIIE)
 	* Christophe MOUILLERON (enseignant à l'ENSIIE)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
 	* https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-1.pdf
+	* https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-2.pdf
+	* https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-3.pdf
+	* https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-4.pdf
 	* https://ocaml.org/learn/tutorials/functional_programming.fr.html#Qu-39-est-ce-que-la-programmation-fonctionnelle
 	* http://deptinfo.unice.fr/~elozes/PF/
