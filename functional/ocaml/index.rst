@@ -187,6 +187,15 @@ Couplets/Types composites
 		# let (a,b,c) = (5, "test", 3.0) ;;
 		int * string * float = (5, "test", 3.)
 
+7. Exercices
+==============
+
+.. toctree::
+    :name: exercices
+    :maxdepth: 1
+
+		Introduction          <exercices/intro>
+
 -----
 
 **Crédits**

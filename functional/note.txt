@@ -1,3 +1,0 @@
-Les fonctions sont des citoyens de première classe.
-
-Fonction passé en argument : tos
