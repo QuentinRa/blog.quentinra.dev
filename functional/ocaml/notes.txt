@@ -11,6 +11,15 @@ Les exercices sont à faire dans la boucle d'interaction ; ils doivent égalemen
 Bytecode : ocamlc [source].ml -o [exec]
 Natif : ocamlopt [source].ml -o [exec]
 
+(* dune build main.exe *)
+(* ./_build/default/src/main.exe *)
+(* https://dune.build/ *)
+
+let () =
+  print_endline "Hello, world!"
+let x = 5+3;;
+print_int x;;
+
 On remarque que l'exécution d'un objet natif n'affiche rien, il faut donc introduire quelques primitives d'affichage.
 
 idea/bin/idea.sh

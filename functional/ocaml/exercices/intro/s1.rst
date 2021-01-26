@@ -1,0 +1,126 @@
+================================
+1. Maths en OCaml
+================================
+
+.. image:: https://img.shields.io/badge/correction-non%20vérifiée-red.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
+   :alt: correction non vérifiée
+
+.. code:: ocaml
+
+		(* on sait que arctan(1)*4=~pi
+
+		On note que ce sont des flottants
+		donc on vera utiliser *.
+		et print_float
+
+		La fonction atan corresponds à arctan
+		sa signature est float -> float
+
+		*)
+		let pi = (let x = 1.0 in atan(x) *. 4.0);;
+		let _ = Printf.printf "--- Calcul de pi\n";;
+		print_float (pi);;
+		print_endline ("");;
+
+		(*
+
+		On sait que le volume d'une sphère
+		corresponds à (4 * pi * r^3)/3
+
+		On fait donc une fonction qui prends un r
+		et qui retourne le calcul.
+
+		la fonction est de type
+		float -> float.
+
+		*)
+		let volume = fun r -> ((4.0 *. pi *. r *. r *. r)/.(3.0));;
+		let _ = Printf.printf "--- Calcul de volume\n";;
+		print_float (volume 3.0);; (* on a un peu près la bonne valeur, a cause de pi *)
+		print_endline ("");;
+		print_float (volume 5.0);; (* on a un peu près la bonne valeur, a cause de pi *)
+		print_endline ("");;
+
+		(*
+
+		On sait qu'un nombre est pair si nombre%2 vaut 0, sinon
+		il est impair.
+
+		On fait une fonction de type int -> bool donc qui prends
+		un entier et retourne pair=true et impair=false.
+
+		*)
+		let parite = fun n -> (if n mod 2 = 0 then true else false)
+		let _ = Printf.printf "--- Calcul de parité\n";;
+		let _ = Printf.printf "%d est pair ? %b\n" 4 (parite 4);;
+		let _ = Printf.printf "%d est pair ? %b\n" 5 (parite 5);;
+		let _ = Printf.printf "%d est pair ? %b\n" 1242 (parite 1242);;
+
+		(*
+
+		Même principe que précédemment mais la fonction
+		est de type int->string donc prends un entier
+		et retourne "pair" ou "impair".
+
+		*)
+
+		let parite_s = fun n -> (if n mod 2 = 0 then "pair" else "impair")
+		let _ = Printf.printf "--- Calcul de parité (2)\n";;
+		let _ = Printf.printf "%d est pair ? %s\n" 4 (parite_s 4);;
+		let _ = Printf.printf "%d est pair ? %s\n" 5 (parite_s 5);;
+		let _ = Printf.printf "%d est pair ? %s\n" 1242 (parite_s 1242);;
+
+		(*
+
+		Même qui précédemment mais cette on retourne (int->string)
+
+				- L'entier n est pair
+				- L'entier n est impair
+
+		Pour suivre une logique fonctionnelle, j'ai fait en sorte
+		que la fonction n'ai pas trop d'effets de bord (donc pas de print dedans)
+		même si ...
+
+		*)
+
+		let parite_p = fun n -> ("L'entier "^string_of_int(n)^" est "^parite_s(n))
+		let _ = Printf.printf "--- Calcul de parité (3)\n";;
+		let _ = Printf.printf "%s\n" (parite_p 4);;
+		let _ = Printf.printf "%s\n" (parite_p 5);;
+		let _ = Printf.printf "%s\n" (parite_p 1242);;
+
+		(*
+		Soit h l'hypoténuse et c1,c2 les deux autres côtés d'un triangle.
+		On sait que h^2=c1^2+c2^2 est vrai dans un triangle rectangle.
+
+		La fonction is_rectangle va retourner vrai si donné h,c1,c2
+		alors le triangle est rectangle.
+
+		Son type est (c1,c2,h) -> bool soit float * float * float -> bool
+
+		*)
+		let is_rectangle = fun (c1,c2,h) -> (if (c1*.c1+.c2*.c2)=(h*.h) then true else false);;
+		let _ = Printf.printf "--- Triangle rectangle\n";;
+		let _ = Printf.printf "rectangle (c1=%f,c1=%f,h=%f) ? %b \n" 1.0 4.0 5.0 (is_rectangle (1.0,4.0,5.0));;
+		let _ = Printf.printf "rectangle (c1=%f,c1=%f,h=%f) ? %b \n" 5.0 12.0 13.0 (is_rectangle (5.0,12.0,13.0));;
+
+7.
+
+	Proposer une fonction qui, sur la donnée de trois entier c1, c2 et c3, teste s'ils peuvent
+	représenter les longueurs des côtés d'un triangle rectangle.
+
+...
+
+8.
+
+	Proposer une fonction qui, sur la donnée d'un pas dx, d'une fonction et d'un point x,
+	calcule une approximation de la dérivée de la fonction en ce point.
+
+...
+
+9. Proposer une fonction qui, sur la donnée de deux fonctions f et g, retourne la fonction composée f ⚬ g.
+
+...
+
+**Crédits**
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
