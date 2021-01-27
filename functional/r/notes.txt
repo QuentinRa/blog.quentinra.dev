@@ -1,0 +1,71 @@
+| When you are at the R prompt (>):
+| -- Typing skip() allows you to skip the current question.
+| -- Typing play() lets you experiment with R on your own; swirl will ignore what you
+| do...
+| -- UNTIL you type nxt() which will regain swirl's attention.
+| -- Typing bye() causes swirl to exit. Your progress will be saved.
+| -- Typing main() returns you to swirl's main menu.
+| -- Typing info() displays these options again.
+
+help.start()
+
+Assignation
+x <- valeur
+
+taper expression = affiche la valeur
+
+Vecteur (structure de données) : tableau de nombres
+c() = concatenate = combine
+c(valeur, valeur, ...)
+
+int = nombre
+float = n.n
+TRUE FALSE
+NULL
+"string"
+marche si pas même type (vecteur * nombre ok)
+
+?fonction = affiche l'aide sur une fonction
+See Also utile
+args(fonction) : savoir ses arguments
+
+abs
+sqrt
+^
+/
++
+-
+*
+
+Si on fait une opération sur un vecteur
+elle est faite sur chaque élément
+(sqrt(x) = sqrt de chaque valeur qui donne un vecteur).
+S'il font pas la même taille, alors on réutilise le
+vecteur plus petit depuis sa première valeur.
+(1, 2, 3, 4) + c(0,10)
+[1]  1 12  3 14
+Par contre la taille du plus petit doit être un mutliple du plus
+grand sinon warning.
+
+getwd() retourne le répertoire courant
+setwd
+ls() // toutes les variables etc.
+list.files() ou dir() // fichier d'un répertoire
+
+
+dir.create("testdir") = créer rep
+file.create("mytest.R")
+file.exists("mytest.R")
+BOOLEAN
+file.info("mytest.R")
+size isdir mode               mtime               ctime               atime exe
+mytest.R    0 FALSE  666 2021-01-27 14:30:21 2021-01-27 14:30:21 2021-01-27 14:30:21  no
+
+file.copy("mytest2.R", "mytest3.R")
+file.rename("","")
+file.path("mytest3.R") // chemin reltif
+on peut passer plusieurs trucs pour qu'il crée le chemin (a,b,c)
+
+This is the R analog to "Take only pictures, leave only footprints."
+
+structure$key = récupérer une valeur particulière.

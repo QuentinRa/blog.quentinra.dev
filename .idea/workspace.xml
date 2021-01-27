@@ -29,7 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/ocaml/exercices/intro/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/ocaml/exercices/intro/s1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functional/ocaml/exercices/intro.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/ocaml/exercices/intro.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functional/ocaml/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/functional/ocaml/notes.txt" afterDir="false" />
     </list>
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
     <list id="35a1cab6-097d-4a11-944c-f8e3831e6d1c" name="cours web ajouts" comment="" />
@@ -292,7 +293,8 @@
       <workItem from="1611657411355" duration="5000" />
       <workItem from="1611661245577" duration="79000" />
       <workItem from="1611664290294" duration="25606000" />
-      <workItem from="1611737177617" duration="347000" />
+      <workItem from="1611737177617" duration="2497000" />
+      <workItem from="1611752402462" duration="2046000" />
     </task>
     <servers />
   </component>

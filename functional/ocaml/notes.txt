@@ -22,6 +22,8 @@ print_int x;;
 
 On remarque que l'exécution d'un objet natif n'affiche rien, il faut donc introduire quelques primitives d'affichage.
 
+https://caml.inria.fr/pub/docs/manual-ocaml/index.html#sec6
+
 idea/bin/idea.sh
 -c
 idea fichier

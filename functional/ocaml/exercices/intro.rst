@@ -51,4 +51,5 @@ aucun
 -----
 
 **Crédits**
-	* ...
+	* Stefania DUMBRAVA (enseignante à l'ENSIIE)
+	* Julien FOREST (enseignant à l'ENSIIE)
