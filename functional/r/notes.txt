@@ -69,3 +69,26 @@ on peut passer plusieurs trucs pour qu'il crée le chemin (a,b,c)
 This is the R analog to "Take only pictures, leave only footprints."
 
 structure$key = récupérer une valeur particulière.
+
+log(100, base = 10)
+
+runif(10) // vecteur de 10 nombres aléatoires entre 0 et 1
+
+graphique
+-----------
+
+plot(runif(10), main = "Titre du graphique")
+
+https://pbil.univ-lyon1.fr/R/pdf/lang01.pdf
+https://pbil.univ-lyon1.fr/R/pdf/lang02.pdf
+
+// lire fichier
+cat(readLines("https://pbil.univ-lyon1.fr/R/donnees/demo.r"), sep = "\n")
+//exécute
+source("https://pbil.univ-lyon1.fr/R/donnees/demo.r")
+
+vecteur[v:v2] prends de v à v2
+https://fxjollois.github.io/cours-2016-2017/initiation-a-r-tp1.html
+https://fxjollois.github.io/cours-2016-2017/index.html
+https://fr.wikibooks.org/wiki/Programmer_en_R/Les_fonctions_statistiques_de_base
+https://www.dunod.com/sites/default/files/atoms/files/9782100712861/Feuilletage.pdf
