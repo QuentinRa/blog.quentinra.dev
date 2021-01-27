@@ -5,16 +5,14 @@
 .. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
    :alt: correction vérifiée
 
-Les fonctions ont étés
-volontairement faites avec beaucoup de syntaxe, des
-appels à des print_type plutôt que printf ont
+Le code a volontairement été écrit avec beaucoup de syntaxe
+et une version C-like donc utilisant un couple pour les fonctions multivaluées
+sont disponibles en commentaires (plus compréhensibles mais qui ne sont pas découpables
+donc a éviter selon les cas).
+
+Des appels à des print_type plutôt que printf ont
 étés fait dès que possible. Et enfin dans la mesure
 du possible, le code a été écrit en fonctionnel pur.
-
-Notez un choix personnel d'utiliser "(argument, ...)"
-pour les arguments des fonctions plutôt
-que de mettre "argument argument" (ce n'est pas juste une syntaxe
-différente mais bien un type différent).
 
 .. code:: ocaml
 
@@ -61,11 +59,11 @@ différente mais bien un type différent).
 		un entier et retourne pair=true et impair=false.
 
 		*)
-		let parite = fun n -> (if n mod 2 = 0 then true else false)
+		let parity = fun n -> (if n mod 2 = 0 then true else false)
 		let _ = Printf.printf "--- Calcul de parité\n";;
-		let _ = Printf.printf "%d est pair ? %b\n" 4 (parite 4);;
-		let _ = Printf.printf "%d est pair ? %b\n" 5 (parite 5);;
-		let _ = Printf.printf "%d est pair ? %b\n" 1242 (parite 1242);;
+		let _ = Printf.printf "%d est pair ? %b\n" 4 (parity 4);;
+		let _ = Printf.printf "%d est pair ? %b\n" 5 (parity 5);;
+		let _ = Printf.printf "%d est pair ? %b\n" 1242 (parity 1242);;
 
 		(*
 
@@ -75,11 +73,11 @@ différente mais bien un type différent).
 
 		*)
 
-		let parite_s = fun n -> (if n mod 2 = 0 then "pair" else "impair")
+		let parity_s = fun n -> (if n mod 2 = 0 then "pair" else "impair")
 		let _ = Printf.printf "--- Calcul de parité (2)\n";;
-		let _ = Printf.printf "%d est pair ? %s\n" 4 (parite_s 4);;
-		let _ = Printf.printf "%d est pair ? %s\n" 5 (parite_s 5);;
-		let _ = Printf.printf "%d est pair ? %s\n" 1242 (parite_s 1242);;
+		let _ = Printf.printf "%d est pair ? %s\n" 4 (parity_s 4);;
+		let _ = Printf.printf "%d est pair ? %s\n" 5 (parity_s 5);;
+		let _ = Printf.printf "%d est pair ? %s\n" 1242 (parity_s 1242);;
 
 		(*
 
@@ -94,11 +92,11 @@ différente mais bien un type différent).
 
 		*)
 
-		let parite_p = fun n -> ("L'entier "^string_of_int(n)^" est "^parite_s(n))
+		let parity_p = fun n -> ("L'entier "^string_of_int(n)^" est "^parity_s(n))
 		let _ = Printf.printf "--- Calcul de parité (3)\n";;
-		let _ = Printf.printf "%s\n" (parite_p 4);;
-		let _ = Printf.printf "%s\n" (parite_p 5);;
-		let _ = Printf.printf "%s\n" (parite_p 1242);;
+		let _ = Printf.printf "%s\n" (parity_p 4);;
+		let _ = Printf.printf "%s\n" (parity_p 5);;
+		let _ = Printf.printf "%s\n" (parity_p 1242);;
 
 		(*
 		Soit h l'hypoténuse et c1,c2 les deux autres côtés d'un triangle.
@@ -110,10 +108,15 @@ différente mais bien un type différent).
 		Son type est (c1,c2,h) -> bool soit float * float * float -> bool
 
 		*)
+		(* C-like
 		let is_rectangle = fun (c1,c2,h) -> (if (c1*.c1+.c2*.c2)=(h*.h) then true else false);;
+		*)
+		let is_rectangle = fun c1 c2 h -> (if (c1*.c1+.c2*.c2)=(h*.h) then true else false);;
+		let is_r_1_4_5 = is_rectangle 1.0 4.0 5.0;;
+		let is_r_5_12_13 = is_rectangle 5.0 12.0 13.0;;
 		let _ = Printf.printf "--- Triangle rectangle\n";;
-		let _ = Printf.printf "rectangle (c1=%f,c1=%f,h=%f) ? %b \n" 1.0 4.0 5.0 (is_rectangle (1.0,4.0,5.0));;
-		let _ = Printf.printf "rectangle (c1=%f,c1=%f,h=%f) ? %b \n" 5.0 12.0 13.0 (is_rectangle (5.0,12.0,13.0));;
+		let _ = Printf.printf "rectangle (c1=%f,c1=%f,h=%f) ? %b \n" 1.0 4.0 5.0 is_r_1_4_5;;
+		let _ = Printf.printf "rectangle (c1=%f,c1=%f,h=%f) ? %b \n" 5.0 12.0 13.0 is_r_5_12_13;;
 
 		(*
 
@@ -126,11 +129,15 @@ différente mais bien un type différent).
 		donc (float, fun, float) -> fun
 
 		*)
-
+		(* version C-like
 		let derive = fun (dx,f,x) -> ((f(x+.dx) -. f(x))/.(dx));;
+		*)
+		let derive dx f x = ((f(x+.dx) -. f(x))/.(dx));;
+		let derive_zero f x = derive 0.00000001 f x ;; (* exemple de modularité *)
 		let _ = Printf.printf "--- Dérivée\n";;
 		(* cos' en zéro = -sin(x) puis -sin(1.0) = -0.84 donc ok *)
-		let _ = Printf.printf "résultat %f\n" (derive (0.00000001,cos,1.0));;
+		let _ = Printf.printf "résultat %f\n" (derive 0.00000001 cos 1.0);;
+		let _ = Printf.printf "résultat %f\n" (derive_zero cos 1.0);;
 
 		(*
 
@@ -144,8 +151,12 @@ différente mais bien un type différent).
 		*)
 		let carre = fun x -> x*x;;
 		let plus_un = fun x -> x+1;;
+		(* version C-like
 		let composee = fun (f1,f2) -> (fun x -> f2 (f1 x));;
 		let f_rond_g = composee (carre,plus_un);;
+		*)
+		let composee = fun f1 f2 -> (fun x -> f2 (f1 x));;
+		let f_rond_g = composee carre plus_un;;
 		let _ = Printf.printf "--- Composée\n";;
 		let _ = Printf.printf "résultat de f ⚬ g = %d" (f_rond_g 3);;
 
