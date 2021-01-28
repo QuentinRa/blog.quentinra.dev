@@ -1,9 +1,26 @@
 Autres
 -------------------
 
+pandoc .\f.rst -f rst -t latex -o res.tex
+
 structure$key = récupérer une valeur particulière.
 print
 On peut appeler une variable variable.nom.
+
+Pour connaˆıtre les sp´ecialisations de la m´ethode g´en´erique
+print() on utilise la fonction methods()
+methods("print")
+x <- rpois(100, lambda = 2)
+table(x)
+z <- hist(x, plot = FALSE)
+
+c("a","e") %in% voyelles
+x[-match(c("a","b","c","f"), names(x))]
+
+Stop p87
+https://pbil.univ-lyon1.fr/R/pdf/lang03.pdf
+
+http://www3.jouy.inra.fr/miaj/public/formation/initiationRv10.pdf
 
 Graphique
 -----------

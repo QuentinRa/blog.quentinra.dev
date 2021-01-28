@@ -30,13 +30,19 @@ Vous pouvez obtenir de l'aide sur une fonction avec :code:`?nom_fonction`
 qui sous RStudio/IntelliJ ouvre une page de documentation. Vous
 pouvez faire :code:`args(fonction)` pour voir ses arguments. Vous
 pouvez voir des exemples d'utilisation avec :code:`example(fonction)`.
+Enfin, on peut utiliser :code:`body(fonction)` pour voir le corps
+d'une fonction.
 
 Les commentaires se font avec :code:`#`. Pas de symbol en fin de ligne.
+Vous pouvez mettre plusieurs instructions sur une ligne avec des :code:`;` entre.
 
 La commande :code:`ls` liste toutes les variables. Pour nettoyer
 toutes vos variables, tapez :code:`rm(list=ls())`.
 
 Vous pouvez obtenir de l'aide avec :code:`help.start()`.
+
+La fonction :code:`print()` permet d'afficher
+quelque chose en mode compilé.
 
 3. Types et Opérateurs
 ========================
@@ -45,17 +51,21 @@ Le R est faiblement typé mais les données sont implicitement
 de l'un des types suivant
 
 	* nombres (dit numeric) : 1,2,4, 4.5, ...
-	* les booléens (dits logical) : TRUE ou FALSE
+	* complexes (dit complex) : i
+	* les booléens (dits logical) : TRUE (ou T) ou FALSE (ou F)
 	* autre : la valeur NULL, la valeur NA (not available), la valeur Inf (infini)
 	* les strings (dit character) : "chaine de caractères"
-	* les vecteurs, les matrices et les DataFrames
+	* les vecteurs, les matrices (matrix) et les DataFrames (data.frame)
 
 Pour être exact, toutes les valeurs en R sont des vecteurs (valeur=vecteur de taille 1).
 La valeur NA est utilisée lorsqu'une donnée est manquante. Tout calcul utilisant
 NA retourne NA.
 
-Fonctions utiles : :code:`is_na`, :code:`class(data)` (savoir le type),
+Fonctions utiles : :code:`is_na` (ou nan/finite/infinite), :code:`class(data)` (savoir le type),
 :code:`identical(x,y)` (savoir si x identique à y)...
+
+Vous pouvez créer un valeur en utilisant :code:`complex(n)` pour créer
+n nombres complexes par exemple.
 
 Les opérations sont
 
@@ -79,7 +89,7 @@ pouvez faire des opérations dessus (ex: vecteur * 2 + 100) comme en python avec
 Dans ce cas, alors l'opération sera faite sur chacun des éléments
 ce qui donnera un vecteur.
 
-Vous utiliser le constructeur :code:`c(valeur, valeur, ...)` pour créer un vecteur.
+Vous utilisez le constructeur :code:`c(valeur, valeur, ...)` pour créer un vecteur.
 Si vous donnez un vecteur comme valeur, alors les valeurs du vecteurs seront
 concaténées pour former le nouveau vecteur.
 
@@ -89,7 +99,7 @@ le plus petit doit avoir une taille multiple du plus grand (sinon warning).
 
 .. code:: r
 
-		> (1, 2, 3, 4) + c(0,10)
+		> c(1, 2, 3, 4) + c(0,10)
 		[1]  1 12  3 14 # résultat de 1 + 0, 2+10, 3 + 0, 4 + 10
 
 Il est possible de créer un vecteur depuis un interval avec :code:`debut:fin`
@@ -99,7 +109,7 @@ Un vecteur est comme un tableau en C, donc on peut récupérer des valeurs
 avec :code:`vecteur[indices]`. Les différences sont que vous pouvez passer
 un vecteur d'indices, que R ne fait pas d'erreur si vous utilisez un indices
 en dehors du vecteur (donc faire attention) et que les indices comment à 1. Vous
-pouvez prendre tout sauf les indices donnée en mettant un :code:`-` (moins)
+pouvez prendre tout sauf les indices donnés en mettant un :code:`-` (moins)
 devant le vecteur/chaque indice.
 
 .. code:: r
@@ -172,11 +182,11 @@ Général
 
 	* :code:`runif(n)` : génère n nombres aléatoires entre 0 et 1
 	* :code:`pi` : variable qui contient pi
-	* :code:`LETTERS` : vecteur qui contient l'alphabet
+	* :code:`LETTERS` ou :code:`letters` : vecteur qui contient l'alphabet
 	* les fonctions min/max
 	* :code:`summary(data)` : prends un vecteur/... et fait une analyse (moyenne, ...)
 	* :code:`seq(from = x, to = y, length = l)` : suite "séquentielle" de l nombres entre x et y
-	* :code:`rep(valeur, n)` : vecteur de taille n contenant n fois valeur
+	* :code:`rep(valeur, n)` : vecteur de taille n contenant n fois valeur (=vecteur, nombre, ...)
 	* :code:`sample(v, n)` : prends un échantillon de n valeur d'un vecteur v
 
 Lois
@@ -216,12 +226,61 @@ Manipulation de chaine de caractères
 	* :code:`paste(s1, ..., collapse = C)` : fusionne les résultats en les séparant par C
 	* :code:`paste(s1, ..., sep = S)` : s1, ... sont fusionnés avec le séparateur S entre
 
-7. Affichage graphique
+7. Fonctions
+=======================
+
+On déclare un bloc entre crochets :code:`{}` dans lequel
+chaque ligne est une expression. La valeur d'une variable
+contenant une fonction corresponds à la valeur de sa dernière expression.
+
+.. code:: r
+
+	# La valeur de f corresponds à la valeur de r soit 5^1 = 5
+	# x et r existent en dehors du bloc
+  > f <- {
+	 x <- 5
+	 r <- x^(mod(x,2))
+	}
+	> x
+	5
+
+Note: dans un bloc, vous pouvez utiliser des variables de l'extérieur. Si une variable
+n'est pas déclarée dans le bloc, alors le bloc parent sera regardé.
+
+Une fonction est déclarée avec le mot :code:`function` suivie
+d'un bloc. Les variables n'existent que dans la fonction. Vous pouvez
+déterminer des arguments qui ont un nom et optionnellement
+une valeur par défaut. Vous retournez le résultat
+avec :code:`return(valeur)`.
+
+.. code:: r
+
+	> fest <- function (quotient = 1) {
+		x <- 5 * quotient
+		r <- x^(mod(quotient,3))
+		# # si aucun, alors la ligne précédente est retournée donc pareil
+		return(r); # faudra faire un print() si pas de return
+	}
+	# x n'existe pas ici
+
+Pour appeler une fonction, vous mettez :code:`nom(arguments)` et
+donner les arguments dans l'ordre ou vous pouvez utiliser leurs nom
+donc :code:`nom(arg3 = valeur, arg1 = valeur, ...)` et l'ordre
+n'a pas d'importance.
+
+Alternativement, s'il n'y qu'un argument
+commençant par f par exemple, vous pouvez utiliser f comme nom
+lors de l'appel ou un diminutif du vrai nom.
+
+Notez que vous pouvez faire une fonction variadique (donc qui prends
+un nombre d'argument variable) en mettant un dernier argument :code:`...`.
+
+8. Affichage graphique
 ========================
 
 ...
 
-8. RMarkdown
+9. RMarkdown
 ===========================
 
 Le RMarkdown (fichier .Rmd) est basé sur le Markdown donc vous aurez
