@@ -16,7 +16,8 @@ pouvez faire :code:`args(fonction)` pour voir ses arguments.
 
 Les commentaires se font avec :code:`#`. Pas de symbol en fin de ligne.
 
-La commande :code:`ls` liste toutes les variables.
+La commande :code:`ls` liste toutes les variables. Pour nettoyer
+toutes vos variables, tapez :code:`rm(list=ls())`.
 
 2. Types et Opérateurs
 ========================
@@ -26,7 +27,7 @@ Le R est faiblement typé, les types sont déduis. On remarque
 	* int : entiers
 	* float : flottants
 	* les booléens : TRUE ou FALSE
-	* la valeur NULL
+	* autre : la valeur NULL, la valeur NA (not available)
 	* les strings : "chaine de caractères"
 	* les vecteurs, on utilise c(valeur, ...) pour créer un vecteur
 
@@ -48,6 +49,13 @@ le plus petit doit avoir une taille multiple du plus grand (sinon warning).
 
 		> (1, 2, 3, 4) + c(0,10)
 		[1]  1 12  3 14 # 1 + 0, 2+10, 3 + 0, 4 + 10
+
+Les conditions sont
+
+	* les basiques : :code:`>, >=, <=, <, ==, !=`
+	* union/or : :code:`|` (tester plusieurs conditions - ou logique)
+	* intersection/and : :code:`&` (tester plusieurs conditions - et logique)
+	* négation : :code:`!` (inverse le résultat de la condition)
 
 3. Gérer son environnement
 ============================

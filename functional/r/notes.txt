@@ -24,6 +24,17 @@ Autres
 structure$key = récupérer une valeur particulière.
 vecteur[v:v2] prends de v à v2
 
+paste(my_char, collapse = " ")
+paste(LETTERS, 1:4, sep = "-")
+
+// ajouter un élément au vecteur
+c(my_char, "Quentin")
+
+1:3 = créer un vecteur de taille 3-1+1
+allant de 1 à 3 inclus.
+
+LETTERS = vecteur qui contient l'alphabet
+
 Graphique
 -----------
 
@@ -33,3 +44,45 @@ plot(runif(10), main = "Titre du graphique")
 cat(readLines("https://pbil.univ-lyon1.fr/R/donnees/demo.r"), sep = "\n")
 //exécute
 source("https://pbil.univ-lyon1.fr/R/donnees/demo.r")
+
+Valeurs manquantes
+-------------------
+
+Il arrive souvent que des valeurs soient manquantes. Il est intéressant
+de chercher pourquoi.
+
+rnorm(1000)  vector containing 1000 draws from a standard normal distribution
+z <- rep(NA, 1000) vecteur qui contient 1000 fois NA
+
+my_data <- sample(c(y, z), 100) 100 éléments de la concaténation des 2
+
+is_na() indique si na
+
+sum(my_na) true=1 et false=0
+
+NaN = not a number
+
+Inf = infini
+
+x[1:10] : de 1 à 10
+
+x[is.na(x)] is.na : vecteur des positions des na
+x[vecteur]
+
+Indices commencent à 1
+R ne se fâche pas si vous utilisez des mauvais indexes
+donc il faut faire attention.
+
+Si vous mettez un - devant l'indexe, alors tout sera
+affiché sauf cette/ces indexes.
+x[-c(2, 10)]
+
+tableau d'éléments nommés :
+c(nom = valeur)
+names() : obtenir les noms
+
+on peut assigner les noms avec
+names(vect) <- c("foo", "bar", "norf")
+
+identical check si pareil
+vect["bar"]
