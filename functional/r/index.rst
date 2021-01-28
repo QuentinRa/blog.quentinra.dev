@@ -44,22 +44,23 @@ Vous pouvez obtenir de l'aide avec :code:`help.start()`.
 Le R est faiblement typé mais les données sont implicitement
 de l'un des types suivant
 
-	* nombres (ex: 4, 4.5, ...)
-	* les booléens : TRUE ou FALSE
+	* nombres (dit numeric) : 1,2,4, 4.5, ...
+	* les booléens (dits logical) : TRUE ou FALSE
 	* autre : la valeur NULL, la valeur NA (not available), la valeur Inf (infini)
-	* les strings : "chaine de caractères"
+	* les strings (dit character) : "chaine de caractères"
 	* les vecteurs, les matrices et les DataFrames
 
 Pour être exact, toutes les valeurs en R sont des vecteurs (valeur=vecteur de taille 1).
 La valeur NA est utilisée lorsqu'une donnée est manquante. Tout calcul utilisant
 NA retourne NA.
 
+Fonctions utiles : :code:`is_na`, :code:`class(data)` (savoir le type), ...
+
 Les opérations sont
 
-	* les basiques : :code:`+,-,/,*`
-	* :code:`nombre^puissance`
+	* les basiques : :code:`+,-,/,*`, :code:`nombre^puissance`
 	* l'assignation : :code:`variable <- valeur` (= marche mais à éviter)
-	* autre : :code:`sqrt, abs, log, xor, ...`
+	* autre : :code:`sqrt, abs, log, xor, sum, ...`
 	* concatenation (string) : :code:`paste(string, string, ...)`
 
 Les conditions sont
@@ -94,9 +95,58 @@ Il est possible de créer un vecteur depuis un interval avec :code:`debut:fin`
 donc :code:`1:100` crée un vecteur ayant 100 valeurs allant de 1 à 100 inclus.
 
 Un vecteur est comme un tableau en C, donc on peut récupérer des valeurs
-avec :code:`vecteur[indice(s)]`. La différence est que vous pouvez passer
-un vecteur d'indices, et que R ne fait pas d'erreur si vous utilisez un indices
-en dehors du vecteur (donc faire attention).
+avec :code:`vecteur[indices]`. Les différences sont que vous pouvez passer
+un vecteur d'indices, que R ne fait pas d'erreur si vous utilisez un indices
+en dehors du vecteur (donc faire attention) et que les indices comment à 1. Vous
+pouvez prendre tout sauf les indices donnée en mettant un :code:`-` (moins)
+devant le vecteur/chaque indice.
+
+.. code:: r
+
+	# passe vecteur d'indices de 1 à 25 donc les 25 premiers de vecteur
+	> vecteur[1:25]
+	[1] 76 90 66 59 28 93 20 68 27 67 38 96 11 48 68 64 46 28 47 93 17 53 86 97 46
+	> vecteur[c(1,2)] # seulement les 2 premiers
+	[1] 76 90
+	> vecteur[-c(1,2)] # tous sauf deux premiers
+	[1] 66 59 28 93 20 68 27 67 38 96 11 48 68 64 46 28 47 93 17 53 86 97 46
+	> vecteur[c(-1,-2)] # tous sauf deux premiers (pareil que plus haut)
+	[1] 66 59 28 93 20 68 27 67 38 96 11 48 68 64 46 28 47 93 17 53 86 97 46
+	> y <- seq(1,10)
+	> vecteur[y] # y donc seq(1,10) donc les indexes 1 à 10
+	[1] 76 90 66 59 28 93 20 68 27 67
+
+Vous pouvez obtenir la taille d'un vecteur avec :code:`length(vecteur)`.
+
+Si un vecteur a une dimension (:code:`dim(vecteur)`) alors
+c'est une matrice. Vous pouvez créer explicitement une matrice
+avec :code:`matrix(data, nrow, ncol)`.
+
+.. code:: r
+
+	> y <- seq(1,10)
+	> matrix(y, 2, 5) # déclaration d'une matrice depuis y
+	 [,1] [,2] [,3] [,4] [,5]
+	[1,] 1 3 5 7 9
+	[2,] 2 4 6 8 10
+	> dim(y) <- c(2,5) # ou on force la dimension en transformant y
+	> y
+	 [,1] [,2] [,3] [,4] [,5]
+	[1,] 1 3 5 7 9
+	[2,] 2 4 6 8 10
+	# ajouter des colonnes (avant et/ou après)
+	> cbind(colonne_before, matrice, colonne_after)
+
+La particularité d'une matrice est que tous les éléments
+ont le même type. Si ce n'est pas le cas, alors utilisez
+un dataframe.
+
+.. code:: r
+
+		# création, mettez des vecteurs et/ou des matrices
+		> dataframe <- data.frame(vecteur, matrice, ...)
+		# mettre des noms aux colonnes
+		colnames(dataframe) <- vecteur_noms_colonnes
 
 5. Fonctions utiles en stats
 ==============================
@@ -105,13 +155,16 @@ Général
 
 	* :code:`runif(n)` : génère n nombres aléatoires entre 0 et 1
 	* :code:`pi` : variable qui contient pi
+	* :code:`LETTERS` : vecteur qui contient l'alphabet
 	* les fonctions min/max
 	* :code:`summary(data)` : prends un vecteur/... et fait une analyse (moyenne, ...)
-	* seq(from = x, to = y, length = l) : suite "séquentielle" de l nombres entre x et y
+	* :code:`seq(from = x, to = y, length = l)` : suite "séquentielle" de l nombres entre x et y
+	* :code:`rep(valeur, n)` : vecteur de taille n contenant n fois valeur
+	* :code:`sample(v, n)` : prends un échantillon de n valeur d'un vecteur v
 
 Lois
 
-	*	Gaussienne : :code:`rnorm(n,mean=0,std=1)`
+	*	Gaussienne/Normale : :code:`rnorm(n,mean=0,std=1)`
 	*	Uniforme : :code:`runif(n,min=0,max=1)`
 	*	Poisson : :code:`rpois(n,lambda)`
 	*	Exponentielle : :code:`rexp(n,rate=1)`
@@ -140,6 +193,11 @@ Fonctions de manipulation
 
 .. [#2] :code:`file.path("dossier1", "dossier2", "fichier")`. Le path marche sous tout
 	système d'exploitation (donc mettra des / sous Linux et des \\ sous Windows).
+
+Manipulation de chaine de caractères
+
+	* :code:`paste(s1, ..., collapse = C)` : fusionne les résultats en les séparant par C
+	* :code:`paste(s1, ..., sep = S)` : s1, ... sont fusionnés avec le séparateur S entre
 
 7. Affichage graphique
 ========================
