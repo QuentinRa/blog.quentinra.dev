@@ -54,7 +54,8 @@ Pour être exact, toutes les valeurs en R sont des vecteurs (valeur=vecteur de t
 La valeur NA est utilisée lorsqu'une donnée est manquante. Tout calcul utilisant
 NA retourne NA.
 
-Fonctions utiles : :code:`is_na`, :code:`class(data)` (savoir le type), ...
+Fonctions utiles : :code:`is_na`, :code:`class(data)` (savoir le type),
+:code:`identical(x,y)` (savoir si x identique à y)...
 
 Les opérations sont
 
@@ -117,6 +118,22 @@ devant le vecteur/chaque indice.
 	[1] 76 90 66 59 28 93 20 68 27 67
 
 Vous pouvez obtenir la taille d'un vecteur avec :code:`length(vecteur)`.
+La fonction :code:`attributes(vecteur)` permet de voir si notre vecteur
+a des propriétés ainsi que leurs valeurs.
+
+Vous pouvez nommer des indices d'un vecteur avec :code:`nom = valeur`.
+On peut obtenir/modifier des noms avec :code:`names()`.
+
+.. code:: r
+
+	# création
+	> r <- c(oui = 1, non = 0)
+	> r["oui"]
+	oui
+	1
+	# forcer des noms
+	> r <- c(r, 2) # taille 3
+	> names(r) <- c("oui", "non", "jsp")
 
 Si un vecteur a une dimension (:code:`dim(vecteur)`) alors
 c'est une matrice. Vous pouvez créer explicitement une matrice
@@ -204,6 +221,51 @@ Manipulation de chaine de caractères
 
 ...
 
+8. RMarkdown
+===========================
+
+Le RMarkdown (fichier .Rmd) est basé sur le Markdown donc vous aurez
+plus d'infos sur le cours de Markdown. Voici un exemple
+de fichier, avec des métadonnées.
+
+.. code:: md
+
+	---
+	title: "Titre du document"
+	output: html_document
+	---
+
+	# Header1
+	## Header2
+	### Header3
+	....
+
+	[texte affiché](lien)
+	![texte si image non trouvée](chemin)
+
+	*Un texte en italique*
+	**Un texte en gras**
+
+	> une citation
+
+	```{r}
+	Code en R
+	```
+
+Bloc de code
+	Vous pouvez créer un bloc de code avec CTRL+ALT+I. Vous pouvez même éditer
+	le code (completion, ...) et le compiler pour faire apparaitre le résultat
+	dans le fichier.
+
+	Vous pouvez faire
+
+		* :code:`{r  include = FALSE}` : compilé mais non affiché
+		* :code:`{r  echo = FALSE}` : compilé mais n'affiche pas le code
+		* :code:`{r  message = FALSE}` : compilé, pas de messages
+		* :code:`{r  warning = FALSE}` : compilé, pas de warnings
+
+Lien utile : https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf
+
 -----
 
 **Crédits**
@@ -220,3 +282,6 @@ Manipulation de chaine de caractères
 	* https://fxjollois.github.io/cours-2016-2017/index.html
 	* https://fr.wikibooks.org/wiki/Programmer_en_R/Les_fonctions_statistiques_de_base
 	* https://www.dunod.com/sites/default/files/atoms/files/9782100712861/Feuilletage.pdf
+	* https://rmarkdown.rstudio.com/lesson-1.html
+	* https://abcdr.thinkr.fr/redaction-markdown/
+	* https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf

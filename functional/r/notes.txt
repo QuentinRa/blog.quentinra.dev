@@ -2,7 +2,8 @@ Autres
 -------------------
 
 structure$key = récupérer une valeur particulière.
-vecteur[v:v2] prends de v à v2
+print
+On peut appeler une variable variable.nom.
 
 Graphique
 -----------
@@ -19,26 +20,6 @@ Valeurs manquantes
 
 Il arrive souvent que des valeurs soient manquantes. Il est intéressant
 de chercher pourquoi.
-
-tableau d'éléments nommés :
-c(nom = valeur)
-names() : obtenir les noms
-
-on peut assigner les noms avec
-names(vect) <- c("foo", "bar", "norf")
-
-identical check si pareil
-vect["bar"]
-
-matrices : 1 type
-dataframes : * type
-
-attributes(my_vector) : voir les attributs
-
-print
-
-On peut appeler une variable variable.nom.
-
 
 plot(x = taille, y = poids) : produit une graphe
 taille = axe x
