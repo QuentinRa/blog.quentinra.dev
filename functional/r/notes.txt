@@ -86,3 +86,64 @@ names(vect) <- c("foo", "bar", "norf")
 
 identical check si pareil
 vect["bar"]
+
+matrices : 1 type
+dataframes : * type
+
+dim() : dimension, NULL vecteur
+dim(my_vector) <- c(4, 5)
+
+length() : taille vecteur
+
+attributes(my_vector) : voir les attributs
+
+class(my_vector) : type
+
+créer une matrice
+matrix()
+
+// donne des noms aux colonnes
+cbind(patients, my_matrix)
+
+// frame avec que des colonnes
+// patients puis valeurs
+my_data <- data.frame(patients, my_matrix)
+// mettre des noms aux colonnes
+colnames(my_data) <- cnames
+
+print
+
+On peut appeler une variable variable.nom.
+
+
+plot(x = taille, y = poids) : produit une graphe
+taille = axe x
+poids = axe y
+
+plot(x = valeurs_x, y = valeurs_y, pch = 19, col = "royalblue3",
+las = 1, main = "titre", xlab = "titre axe [x]",
+ylab = "titre axe [y]")
+
+legend
+lines
+boxplot = carré
+dotchart(table(rpois(500, lambda = 2)), pch = 19)
+
+help.start()
+help.search("logarithm") = ??gauss
+example(fonction) voir des exemples
+
+suite de 100 nombres entre 0 et 100
+seq(from = 0, to = 100, length = 100)
+
+paquets
+------------------
+
+Librairies sont dans des paquets.
+
+library()
+library(ISwR)
+installed.packages() // voir la liste
+
+install.packages("swirl") // installer
+library(swirl) // lancer

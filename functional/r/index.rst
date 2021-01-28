@@ -35,8 +35,8 @@ Les opérations sont
 
 	* les basiques : :code:`+,-,/,*`
 	* :code:`nombre^puissance`
-	* l'assignation : :code:`variable <- valeur`
-	* autre : :code:`sqrt, abs, log, ...`
+	* l'assignation : :code:`variable <- valeur` (= marche mais à éviter)
+	* autre : :code:`sqrt, abs, log, xor, ...`
 	* concatenation (string) : :code:`paste(string, string, ...)`
 
 Vous pouvez faire des opérations sur des vecteurs comme si c'était des nombres
@@ -82,9 +82,12 @@ Fonctions de manipulation
 4. Fonctions utiles en stats
 ==============================
 
-Génération
+Général
 
 	* :code:`runif(n)` : génère n nombres aléatoires entre 0 et 1
+	* :code:`pi` : variable qui contient pi
+	* les fonctions min/max
+	* :code:`summary(data)` : prends un vecteur/... et fait une analyse (moyenne, ...)
 
 5. Affichage graphique
 ========================
@@ -101,6 +104,8 @@ Génération
 	* Swirl, R programming
 	* https://pbil.univ-lyon1.fr/R/pdf/lang01.pdf
 	* https://pbil.univ-lyon1.fr/R/pdf/lang02.pdf
+	* https://pbil.univ-lyon1.fr/R/pdf/lang03.pdf
+	* https://pbil.univ-lyon1.fr/R/pdf/lang04.pdf
 	* https://fxjollois.github.io/cours-2016-2017/initiation-a-r-tp1.html
 	* https://fxjollois.github.io/cours-2016-2017/index.html
 	* https://fr.wikibooks.org/wiki/Programmer_en_R/Les_fonctions_statistiques_de_base
