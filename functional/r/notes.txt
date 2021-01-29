@@ -17,9 +17,6 @@ z <- hist(x, plot = FALSE)
 c("a","e") %in% voyelles
 x[-match(c("a","b","c","f"), names(x))]
 
-Stop p87
-https://pbil.univ-lyon1.fr/R/pdf/lang03.pdf
-
 http://www3.jouy.inra.fr/miaj/public/formation/initiationRv10.pdf
 
 dariush.ghorbanzadeh@lecnam.net
@@ -31,6 +28,11 @@ Les modalit´es d’un facteur sont stock´ees en interne par des entiers,
 pour y acc´eder utiliser la fonction as.integer()
 levels(fcouleurs)
 table(fdouleur) <- compte le nombre d'occurences
+
+http://pgsql.pedago.ensiie.fr/~marine.astruc/tp2/tp_php_2020_eleves/public/
+
+sort() : classer les données
+chisq.test(tc)$expected
 
 jitter()
 

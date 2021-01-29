@@ -92,8 +92,8 @@ Structures de contrôle
 	* while infini (utiliser break pour quitter) : :code:`repeat {}`
 
 Utile : :code:`next` (passer au suivant), :code:`break` (quitter boucle),
-:code:`lapply(v, f)` (applique à tous les éléments une fonction),
-:code:`sapply`, :code:`tapply` :code:`apply`.
+:code:`lapply(v, f)` (applique à tous les éléments une fonction, vecteur),
+:code:`sapply` (..., matrice), :code:`tapply` :code:`apply`.
 
 4. Vecteurs, Listes, Matrices et DataFrames
 ==============================================
@@ -248,13 +248,18 @@ Général
 
 	* :code:`runif(n)` : génère n nombres aléatoires entre 0 et 1
 	* :code:`pi` : variable qui contient pi
-	* :code:`LETTERS` ou :code:`letters` : vecteur qui contient l'alphabet
 	* les fonctions min/max
 	* :code:`summary(data)` : prends un vecteur/... et fait une analyse (moyenne, ...)
 	* :code:`seq(from = x, to = y, length = l)` : suite "séquentielle" de l nombres entre x et y
 	* :code:`rep(valeur, n)` : vecteur de taille n contenant n fois valeur (=vecteur, nombre, ...)
 	* :code:`sample(v, n)` : prends un échantillon de n valeur d'un vecteur v
 	* :code:`zapsmall(...)` : choisi et round automatiquement pour donner un arrondi propre.
+
+Jeux de données
+
+	* :code:`library(MASS); data(survey)` : données du style {sexe, droitier/gaucher, fumeur?, age, ...}
+	* :code:`library(ade4); data(deug)` : données du style {matière, grade, ...}
+	* :code:`LETTERS` ou :code:`letters` : vecteur qui contient l'alphabet
 
 Lois
 
@@ -345,7 +350,40 @@ un nombre d'argument variable) en mettant un dernier argument :code:`...`.
 8. Affichage graphique
 ========================
 
-...
+Les fonctions basiques sont : :code:`plot` (graphique),
+:code:`hist` (histogramme), curve, pie, barplot, image, ...
+Elles ont toutes les mêmes arguments ou presque
+
+	* :code:`main = "titre"` : titre
+	* :code:`xlab = "titre x"` : titre de l'axe x
+	* :code:`ylab = "titre y"` : titre de l'axe y
+	* :code:`col = couleur` : couleur de qqch (ex: red(1.0), package crayon)
+	* :code:`border = couleur` : couleur de bordure (histogramme, ...)
+	* :code:`breaks = seq(...)` : augmenter le séquencement (histogramme, plus de blocs)
+	* :code:`na.rm = TRUE` : supprime les valeurs NA
+
+Il faut utiliser :code:`proba = TRUE` pour pouvoir par exemple obtenir
+la densité (:code:`density(..., adjust = valeur)`). Si valeur vaut plus petite
+que 1 alors on regarde le cas discret et si la valeur est plus grande alors on
+regarde le cas continu.
+
+Si vous avez beaucoup de points qui se superposent, vous pouvez utiliser
+:code:`jitter` ou :code:`sunflowerplot` pour identifier les endroits concernés.
+
+Certains fonctions peuvent prendre une table (:code:`table(vecteur)`)
+donc un tableau qui compte le nombre d'occurrences d'une valeur et mets
+le résultat dans une colonne par valeur. Ensuite vous pouvez appeler
+:code:`hist` (donne un diagramme batons), :code:`pie` (camembert), :code:`balloonplot`
+(tableau de contingence)....
+
+Les fonctions de dessin (appliquées sur le dernier graphique)
+
+	* :code:`points` : dessine des points
+	* :code:`line` : dessine des points
+	* :code:`legend` : ajouter une légende
+	* :code:`title` : ajouter un titre
+	* :code:`text` : ajouter un texte
+	* Autres : rect, segments, polygon, box, grid, ...
 
 9. RMarkdown
 ===========================
@@ -395,6 +433,7 @@ Lien utile : https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.
 -----
 
 **Crédits**
+	* Jean R. LOBRY (Université de Lyon)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**

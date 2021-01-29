@@ -114,17 +114,17 @@ taper du javascript sur n'importe quel site.
 ====================
 
 Vous pouvez faire de l'HTML dans un PHP mais pas l'inverse. Vous devez
-avoir une machine qui fait office de serveur (cela peut être la votre dans
-ce cas l'URL sera http://localhost).
+avoir une machine qui fait office de serveur (si c'est votre
+cas, l'URL sera http://localhost).
 
 Pour ce faire, vous pouvez configurer un serveur apache.
 
 Ou vous pouvez installer WampServer (Windows), XamppServer (Linux) ou
 MampServer (MacOs).
 
-Petite note, sous wamp, l'URL http://localhost correspond à la "racine"
+Petite note, sous wamp, l'URL http://localhost correspond à la "racine" se trouvant à l'emplacement
 
-	* Windows : C:\wamp64\www\index.php
+	* Windows : C:\\wamp64\\www\\index.php
 	* Linux : /var/www/html/
 	* Mac : ???
 
