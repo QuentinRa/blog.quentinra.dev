@@ -56,9 +56,10 @@ quelque chose en mode compilé.
 .. toctree::
 	 :maxdepth: 1
 
-		Types en R                               <files/types>
-		Opérations et Structures                 <files/op>
-		Vecteurs, Listes, Matrices et DataFrames <files/v>
+		Types en R                  <files/types>
+		Opérations et Structures    <files/op>
+		Structures de données       <files/v>
+		Notation nom1.nom           <files/dot>
 
 4. Fonctions
 =======================
@@ -115,6 +116,8 @@ un nombre d'argument variable) en mettant un dernier argument :code:`...`.
 Général
 
 	* :code:`runif(n)` : génère n nombres aléatoires entre 0 et 1
+	* :code:`choose(n,k)` : choisi n éléments parmi k (vecteur)
+	* :code:`factorial(n)` : n factoriel
 	* :code:`pi` : variable qui contient pi
 	* les fonctions min/max
 	* :code:`summary(data)` : prends un vecteur/... et fait une analyse (moyenne, ...)
@@ -135,9 +138,15 @@ Lois
 	*	Uniforme : :code:`runif(n,min=0,max=1)`
 	*	Poisson : :code:`rpois(n,lambda)`
 	*	Exponentielle : :code:`rexp(n,rate=1)`
-	*	χ^2 : :code:`rchisq(n,df)`
+	*	χ^2 : :code:`rchisq(n,df)` et :code:`chisq.test(v)$expected` pour tester la différence.
 	*	Binomiale : :code:`rbinom(n,size,prob)`
 	*	Cauchy : :code:`rcauchy(n,location=0,scale=1)`
+
+Vous remarquez que toutes les fonctions commencent par r. Il existe des variantes :
+
+	* :code:`pfunc(q,...)` : pour la probabilité cumulée jusqu'à q (vecteur de quantiles) donc proba d'être :code:`<=q`
+	* :code:`qfunc(p,...)` : pour le quantile associée à la probabilité cumulée p (vecteur de probabilités)
+	* :code:`dfunc(x,...)` : pour la densité de probabilité en x (vecteur de quantiles)
 
 6. Gérer son environnement
 ============================
@@ -147,7 +156,9 @@ Fonctions de déplacement
 	* :code:`getwd()` : retourne le répertoire courant
 	* :code:`sedwd(path)` : change le répertoire courant
 	* :code:`dir()` ou :code:`list.files()` : liste les fichiers du répertoire
-	* :code:`source(path)` : exécute un fichier R
+	* :code:`source(path)` : exécute un fichier R (path/url)
+	* :code:`cat(path, sep = S)` : affiche fichier R (S = \\n, ...)
+	* :code:`readLines(path)` : lis un fichier R
 
 Fonctions de manipulation
 
@@ -166,6 +177,8 @@ Manipulation de chaine de caractères
 
 	* :code:`paste(s1, ..., collapse = C)` : fusionne les résultats en les séparant par C
 	* :code:`paste(s1, ..., sep = S)` : s1, ... sont fusionnés avec le séparateur S entre
+
+Vous pouvez générer des fichiers
 
 7. Affichage graphique
 ========================
@@ -190,9 +203,7 @@ regarde le cas continu.
 Si vous avez beaucoup de points qui se superposent, vous pouvez utiliser
 :code:`jitter` ou :code:`sunflowerplot` pour identifier les endroits concernés.
 
-Certains fonctions peuvent prendre une table (:code:`table(vecteur)`)
-donc un tableau qui compte le nombre d'occurrences d'une valeur et mets
-le résultat dans une colonne par valeur. Ensuite vous pouvez appeler
+Certains fonctions peuvent prendre une table et donne un graphique :
 :code:`hist` (donne un diagramme batons), :code:`pie` (camembert), :code:`balloonplot`
 (tableau de contingence)....
 
@@ -271,3 +282,5 @@ Lien utile : https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.
 	* https://abcdr.thinkr.fr/redaction-markdown/
 	* https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf
 	* http://www3.jouy.inra.fr/miaj/public/formation/initiationRv10.pdf
+	* https://stackoverflow.com/questions/7526467/what-does-the-dot-mean-in-r-personal-preference-naming-convention-or-more
+	* https://stats.stackexchange.com/questions/10712/what-is-the-meaning-of-the-dot-in-r

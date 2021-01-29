@@ -1,13 +1,14 @@
-===========================================
-Vecteurs, Listes, Matrices et DataFrames
-===========================================
+=====================
+Structures de données
+=====================
 
 Un vecteur corresponds à un tableau de valeurs en C. Mais vous
 pouvez faire des opérations dessus (ex: vecteur * 2 + 100) comme en python avec un numpy array.
 Dans ce cas, alors l'opération sera faite sur chacun des éléments
 ce qui donnera un vecteur.
 
-Vous utilisez le constructeur :code:`c(valeur, valeur, ...)` pour créer un vecteur.
+Vous utilisez le constructeur :code:`c(valeur, valeur, ...)` pour créer un vecteur
+(ou :code:`vector(mode="type", length=n)`).
 Si vous donnez un vecteur comme valeur, alors les valeurs du vecteurs seront
 concaténées pour former le nouveau vecteur.
 
@@ -22,6 +23,8 @@ le plus petit doit avoir une taille multiple du plus grand (sinon warning).
 
 Il est possible de créer un vecteur depuis un interval avec :code:`debut:fin`
 donc :code:`1:100` crée un vecteur ayant 100 valeurs allant de 1 à 100 inclus.
+
+**Indexes**
 
 Un vecteur est comme un tableau en C, donc on peut récupérer des valeurs
 avec :code:`vecteur[indices]`. Les différences sont que vous pouvez passer
@@ -45,9 +48,17 @@ devant le vecteur/chaque indice.
 	> vecteur[y] # y donc seq(1,10) donc les indexes 1 à 10
 	[1] 76 90 66 59 28 93 20 68 27 67
 
-Vous pouvez obtenir la taille d'un vecteur avec :code:`length(vecteur)`.
-La fonction :code:`attributes(vecteur)` permet de voir si notre vecteur
-a des propriétés ainsi que leurs valeurs.
+**Fonctions utiles**
+
+	* :code:`length(vecteur)` : retourne la taille
+	* :code:`which.min/which.max` : retourne l'indice du min/max
+	* :code:`which(...)` : retourne les indices des éléments selon la condition (ex: vecteur > 10)
+	* :code:`rev` (inverse), :code:`sum/prod` (somme/produit de tous les éléments)
+	* :code:`attributes(vecteur)` : voir les attributs
+	* :code:`any/all` : retourne true si un/tous les éléments respectent une condition
+	* :code:`sort` : trie les données
+
+**Indexes nommés**
 
 Vous pouvez nommer des indices d'un vecteur avec :code:`nom = valeur`.
 On peut obtenir/modifier des noms avec :code:`names()`.
@@ -63,26 +74,12 @@ On peut obtenir/modifier des noms avec :code:`names()`.
 	> r <- c(r, 2) # taille 3
 	> names(r) <- c("oui", "non", "jsp")
 
-Si un vecteur a une dimension (:code:`dim(vecteur)`) alors
-c'est une matrice. Vous pouvez créer explicitement une matrice
-avec :code:`matrix(data, nrow, ncol)`.
+Tables
+-------
 
-.. code:: r
-
-	> y <- seq(1,10)
-	# déclaration d'une matrice depuis y
-	# byrow = remplissage de haut en bas, FALSE par défaut
-	> matrix(y, 2, 5, byrow = FALSE)
-	 [,1] [,2] [,3] [,4] [,5]
-	[1,] 1 3 5 7 9
-	[2,] 2 4 6 8 10
-	> dim(y) <- c(2,5) # ou on force la dimension en transformant y
-	> y
-	 [,1] [,2] [,3] [,4] [,5]
-	[1,] 1 3 5 7 9
-	[2,] 2 4 6 8 10
-	# ajouter des colonnes (avant et/ou après)
-	> cbind(colonne_before, matrice, colonne_after)
+Une table, crée avec :code:`table(vecteur)` est un tableau
+qui contient des valeurs (uniques) associées a leur nombre d'occurrences
+dans le vecteur.
 
 Liste
 ------
@@ -105,6 +102,27 @@ un élément avec :code:`[[indice]]` ou obtenir une sous-liste avec :code:`[]`.
 Matrice
 ---------
 
+Si un vecteur a une dimension (:code:`dim(vecteur)`) alors
+c'est une matrice. Vous pouvez créer explicitement une matrice
+avec :code:`matrix(data, nrow, ncol)`.
+
+.. code:: r
+
+	> y <- seq(1,10)
+	# déclaration d'une matrice depuis y
+	# byrow = remplissage de haut en bas, FALSE par défaut
+	> matrix(y, 2, 5, byrow = FALSE)
+	 [,1] [,2] [,3] [,4] [,5]
+	[1,] 1 3 5 7 9
+	[2,] 2 4 6 8 10
+	> dim(y) <- c(2,5) # ou on force la dimension en transformant y
+	> y
+	 [,1] [,2] [,3] [,4] [,5]
+	[1,] 1 3 5 7 9
+	[2,] 2 4 6 8 10
+	# ajouter des colonnes (avant et/ou après)
+	> cbind(colonne_before, matrice, colonne_after)
+
 Il est possible de faire des matrices ayant 3, ... dimensions en modifiant
 dim(m).
 
@@ -119,10 +137,14 @@ Fonctions importantes
 Autres fonctions utiles sur les matrices : :code:`ncol(m)`, :code:`nrow(m)`,
 :code:`cbind(...)` (insérer colonnes), :code:`rbind(...)` (insérer lignes),
 :code:`rownames(m)` (noms lignes), :code:`colnames(m)` (noms colonnes)...
+Alternativement, vous pouvez définir row/col avec :code:`dimnames(m) <- list(c("col1row1", ...), ...)`
 
 Pour récupérer seulement une partie, on utilise :code:`[indice_i,indice_j]`
 vous donnez deux indices (vous pouvez omettre j = tous mais laissez la virgule).
 Le sélecteur sélectionne tous les lignes i et toutes les colonnes j.
+
+Parfois, R transforme en un vecteur la sous-matrice. Vous pouvez empêcher
+cette transformation avec :code:`[i,j,drop=FALSE]`.
 
 DataFrame
 ------------

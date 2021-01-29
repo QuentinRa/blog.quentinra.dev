@@ -16,8 +16,12 @@ Pour être exact, toutes les valeurs en R sont des vecteurs (valeur=vecteur de t
 La valeur NA est utilisée lorsqu'une donnée est manquante. Tout calcul utilisant
 NA retourne NA.
 
-Fonctions utiles : :code:`is_na` (ou nan/finite/infinite), :code:`class(data)` (savoir le type),
-:code:`identical(x,y)` (savoir si x identique à y)...
+Fonctions utiles
+
+	* :code:`is_na` (ou nan/finite/infinite) : TRUE si vrai sinon FALSE
+	* :code:`class(data)` : savoir le type
+	* :code:`mode(data)` : savoir le type/mode
+	* :code:`identical(x,y)` : savoir si x identique à y
 
 Vous pouvez créer un valeur en utilisant :code:`complex(n)` pour créer
 n nombres complexes par exemple. Vous pouvez convertir

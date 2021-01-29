@@ -1,55 +1,31 @@
-Autres
--------------------
 
-On peut appeler une variable variable.nom.
-
-Pour connaˆıtre les sp´ecialisations de la m´ethode g´en´erique
-print() on utilise la fonction methods()
-methods("print")
-x <- rpois(100, lambda = 2)
-table(x)
-z <- hist(x, plot = FALSE)
-
-c("a","e") %in% voyelles
 x[-match(c("a","b","c","f"), names(x))]
 
-http://www3.jouy.inra.fr/miaj/public/formation/initiationRv10.pdf
-
-dariush.ghorbanzadeh@lecnam.net
+Facteur
+---------
 
 couleurs <- c("bleu", "bleu", "bleu", "blanc", "rouge", "rouge", "noir")
 fcouleurs <- factor(couleurs, levels = c("vert", "bleu", "blanc", "rouge"))
-
-Les modalit´es d’un facteur sont stock´ees en interne par des entiers,
-pour y acc´eder utiliser la fonction as.integer()
+Les modalités d’un facteur sont stockées en interne par des entiers,
+pour y accéder utiliser la fonction as.integer()
 levels(fcouleurs)
-table(fdouleur) <- compte le nombre d'occurences
+– facteur : suite d’éléments catégoriels avec les différents niveaux possibles,
 
-http://pgsql.pedago.ensiie.fr/~marine.astruc/tp2/tp_php_2020_eleves/public/
+séries temporelles
+--------------------
 
-sort() : classer les données
-chisq.test(tc)$expected
-
-jitter()
+Series temporelles : jeu de données de type séries temporelles (avec fréquence, dates)
 
 Graphique
 -----------
-
-plot(runif(10), main = "Titre du graphique")
-
-// lire fichier
-cat(readLines("https://pbil.univ-lyon1.fr/R/donnees/demo.r"), sep = "\n")
-//exécute
-source("https://pbil.univ-lyon1.fr/R/donnees/demo.r")
-
 Il existe de nombreuses fonctions pour ouvrir un nouveau
-p´eriph´erique graphique (e.g. pdf(), jpeg(),
+périphérique graphique (e.g. pdf(), jpeg(),
 postscipt(), x11(), png(), gnome(), quartz(),
 xfig(), bitmap(), pictex()).
 Elles ne sont pas toutes disponibles pour tous les syst`emes
 d’exploitation.
 Pour en savoir plus voir ?Devices.
-Le dispositif utilis´e par d´efaut est donn´e par
+Le dispositif utilisé par défaut est donné par
 getOption("device").
 
 save as pdf
@@ -57,20 +33,10 @@ pdf("monfichier.pdf")
 plot(0)
 dev.off()
 
-locator() permet de r´ecup´erer les coordonn´ees des points
+locator() permet de récupérer les coordonnées des points
 lorsque en cliquant dessus.
 identify() permet d’identifier des points. Donne le rang des
-points dans le jeu de donn´ees.
-
-ricardo.carrizovergara@ensiie.fr
-
-retourne les indices ou c'est ok
-which(ints > 7)
-
-Like the which() function, the functions any() and all() take logical vectors as their
-| argument. The any() function will return TRUE if one or more of the elements in the
-| logical vector is TRUE. The all() function will return TRUE if every element in the
-| logical vector is TRUE.
+points dans le jeu de données.
 
 view(data)
 head(data)
@@ -84,32 +50,7 @@ M_DOC
 – save(monobjet,file="monobjet.rdata") permet de sauver l’objet monobjet sous le format R. Il est aussi
 possible de sauver plusieurs objets dans le mˆeme fichier. Par exemple :
 save(objet1,objet2,file="mesobjets.rdata").
-– load("mesobjets.rdata") permet de recharger des objets sauvegard´es au cours d’une
-session pr´ec´edente.
+– load("mesobjets.rdata") permet de recharger des objets sauvegardés au cours d’une
+session précédente.
 – write.table(montableau,file="montableau.txt") permet de sauvegarder le tableau
-de donn´ees montableau sous un format .txt.
-
-
-– facteur : suite d’´el´ements cat´egoriels avec les diff´erents niveaux possibles,
-– s´eries temporelles : jeu de donn´ees de type s´eries temporelles (avec fr´equence, dates)
-
-class = mode()
-x<-vector(mode="numeric", length=5)
-
-On a la possibilit´e d’attribuer des noms aux lignes et aux colonnes d’une matrice via l’option
-dimnames (ces noms doivent ˆetre de type character ).
-
-Remarque : les fonctions de la forme rfunc ont toutes des petites soeurs de la forme
-– pfunc(q,p1,p2,...) : pour la probabilit´e cumul´ee jusqu’`a q,
-– qfunc(p,p1,p2,...) : pour le quantile associ´e `a la probabilit´e cumul´ee p,
-– dfunc(x,p1,p2,...) : pour la densit´e de probabilit´e en x.
-Cela permet ainsi de tracer des densit´es et de connaˆıtre la probabilit´e d’ˆetre sup´erieur ou ´egal
-`a q sous une loi donn´ee. Si on prend l’exemple de la loi normale de moyenne 0 et de variance 1
-avec q = 2.5 (cf. Figure2.1), on a :
-> 1-pnorm(2.5)
-[1] 0.006209665
-
-x[,3,drop=FALSE]
-– %% : modulo
-5%/%3 : division entière
-[1] 1
+de données montableau sous un format .txt.
