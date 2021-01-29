@@ -78,9 +78,22 @@ Les opérations sont
 Les conditions sont
 
 	* les basiques : :code:`>, >=, <=, <, ==, !=`
-	* ou logique : :code:`|` (tester une condition vraie)
-	* et logique : :code:`&` (tester plusieurs conditions vraies)
+	* ou logique : :code:`|` (tester une condition vraie, || marche mais fait uniquement le premier d'une vecteur)
+	* et logique : :code:`&` (tester plusieurs conditions vraies, && marche mais ...)
 	* négation : :code:`!` (inverse le résultat de la condition)
+
+Structures de contrôle
+
+	* branchement : :code:`if (condition) { bloc }` ou :code:`if (c){ code } else { code }`
+	* branchement (2) : :code:`ifelse(condition, valeur_si_true, valeur_si_false)`
+	* branchements : :code:`switch(valeur, possible_valeur_1, ....)`
+	* for (a éviter, utiliser les indexes) ou un if : :code:`for(i in vecteur) {}`
+	* while : :code:`while(condition) {}`
+	* while infini (utiliser break pour quitter) : :code:`repeat {}`
+
+Utile : :code:`next` (passer au suivant), :code:`break` (quitter boucle),
+:code:`lapply(v, f)` (applique à tous les éléments une fonction),
+:code:`sapply`, :code:`tapply` :code:`apply`.
 
 4. Vecteurs, Listes, Matrices et DataFrames
 ==============================================
@@ -203,6 +216,10 @@ Autres fonctions utiles sur les matrices : :code:`ncol(m)`, :code:`nrow(m)`,
 :code:`cbind(...)` (insérer colonnes), :code:`rbind(...)` (insérer lignes),
 :code:`rownames(m)` (noms lignes), :code:`colnames(m)` (noms colonnes)...
 
+Pour récupérer seulement une partie, on utilise :code:`[indice_i,indice_j]`
+vous donnez deux indices (vous pouvez omettre j = tous mais laissez la virgule).
+Le sélecteur sélectionne tous les lignes i et toutes les colonnes j.
+
 DataFrame
 ------------
 
@@ -216,6 +233,13 @@ un dataframe.
 		> dataframe <- data.frame(vecteur, matrice, ...)
 		# mettre des noms aux colonnes
 		colnames(dataframe) <- vecteur_noms_colonnes
+
+Vous pouvez utiliser :code:`$` comme pour les listes
+car dataframe hérite de list. Vous pouvez utiliser le :code:`[i,j]`
+des matrices, avec i/j pouvant être dataframe$nom_colonne par exemple.
+
+Vous pouvez utiliser :code:`order` pour obtenir les indices des lignes
+dans l'ordre et utiliser cette valeur pour i.
 
 5. Fonctions utiles en stats
 ==============================
@@ -387,3 +411,4 @@ Lien utile : https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.
 	* https://rmarkdown.rstudio.com/lesson-1.html
 	* https://abcdr.thinkr.fr/redaction-markdown/
 	* https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf
+	* http://www3.jouy.inra.fr/miaj/public/formation/initiationRv10.pdf

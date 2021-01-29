@@ -44,6 +44,44 @@ cat(readLines("https://pbil.univ-lyon1.fr/R/donnees/demo.r"), sep = "\n")
 //exécute
 source("https://pbil.univ-lyon1.fr/R/donnees/demo.r")
 
+Il existe de nombreuses fonctions pour ouvrir un nouveau
+p´eriph´erique graphique (e.g. pdf(), jpeg(),
+postscipt(), x11(), png(), gnome(), quartz(),
+xfig(), bitmap(), pictex()).
+Elles ne sont pas toutes disponibles pour tous les syst`emes
+d’exploitation.
+Pour en savoir plus voir ?Devices.
+Le dispositif utilis´e par d´efaut est donn´e par
+getOption("device").
+
+save as pdf
+pdf("monfichier.pdf")
+plot(0)
+dev.off()
+
+locator() permet de r´ecup´erer les coordonn´ees des points
+lorsque en cliquant dessus.
+identify() permet d’identifier des points. Donne le rang des
+points dans le jeu de donn´ees.
+
+Ces fonctions permettent de retoucher un graphique d´ej`a existant
+(e.g. points(), abline(), arrows(), lines(),
+seqments(), polygon(), rect(), box(), axis(),
+title(), rug(), grid(), legend(), text(), mtext())
+
+ricardo.carrizovergara@ensiie.fr
+
+retourne les indices ou c'est ok
+which(ints > 7)
+
+Like the which() function, the functions any() and all() take logical vectors as their
+| argument. The any() function will return TRUE if one or more of the elements in the
+| logical vector is TRUE. The all() function will return TRUE if every element in the
+| logical vector is TRUE.
+
+view(data)
+head(data)
+
 Valeurs manquantes
 -------------------
 
