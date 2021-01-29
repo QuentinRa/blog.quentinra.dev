@@ -4,7 +4,7 @@
 Langage R
 ================================
 
-| :math:`\color{grey}{Version \ 0.4.14}`
+| :math:`\color{grey}{Version \ 0.5.16}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 29/01/2021}`
 
 1. Introduction
@@ -148,6 +148,14 @@ Vous remarquez que toutes les fonctions commencent par r. Il existe des variante
 	* :code:`qfunc(p,...)` : pour le quantile associée à la probabilité cumulée p (vecteur de probabilités)
 	* :code:`dfunc(x,...)` : pour la densité de probabilité en x (vecteur de quantiles)
 
+Fonctions de calculs
+
+	* :code:`mean(x)` : moyenne
+	* :code:`median(x)` : médiane
+	* :code:`var(x)` : variance
+	* :code:`cov(x)` : covariance
+	* :code:`cor(x)` : corrélation
+
 6. Gérer son environnement
 ============================
 
@@ -178,7 +186,10 @@ Manipulation de chaine de caractères
 	* :code:`paste(s1, ..., collapse = C)` : fusionne les résultats en les séparant par C
 	* :code:`paste(s1, ..., sep = S)` : s1, ... sont fusionnés avec le séparateur S entre
 
-Vous pouvez générer des fichiers
+Vous pouvez générer des fichiers contenant un graphique les fonctions (:code:`pdf(path)`,
+:code:`jpeg(path),`, :code:`png(path)`, ...). Elle créent un périphérique graphique
+qui sera utilisé plutôt que celui par défaut pour dessiner le graphique. Pour fermer
+le périphérique, utilisez :code:`dev.off()`.
 
 7. Affichage graphique
 ========================
@@ -265,6 +276,8 @@ Lien utile : https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.
 
 **Crédits**
 	* Jean R. LOBRY (Université de Lyon)
+	* Brigitte SCHAEFFER (INRA-Jouy)
+	* Sophie SCHBATH (INRA-Jouy)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**

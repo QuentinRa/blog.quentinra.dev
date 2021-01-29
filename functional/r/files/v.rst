@@ -50,6 +50,8 @@ devant le vecteur/chaque indice.
 
 **Fonctions utiles**
 
+La fonction :code:`head(v)` pour voir les premières valeurs d'un vecteur/...
+
 	* :code:`length(vecteur)` : retourne la taille
 	* :code:`which.min/which.max` : retourne l'indice du min/max
 	* :code:`which(...)` : retourne les indices des éléments selon la condition (ex: vecteur > 10)
@@ -57,6 +59,7 @@ devant le vecteur/chaque indice.
 	* :code:`attributes(vecteur)` : voir les attributs
 	* :code:`any/all` : retourne true si un/tous les éléments respectent une condition
 	* :code:`sort` : trie les données
+	* :code:`view` : voir le contenu d'un vecteur
 
 **Indexes nommés**
 
@@ -73,6 +76,9 @@ On peut obtenir/modifier des noms avec :code:`names()`.
 	# forcer des noms
 	> r <- c(r, 2) # taille 3
 	> names(r) <- c("oui", "non", "jsp")
+
+Vous pouvez faire une condition sur les noms avec :code:`match(c("nom", "nom1", ...), names(x))`
+qui retourne les indices des noms ayant matché. Mettre un moins devant match inverse le résultat.
 
 Tables
 -------
@@ -130,6 +136,7 @@ Fonctions importantes
 
 	* :code:`t(m)` : transposée
 	* :code:`solve(m)` : inverse une matrice
+	* :code:`solve(A,b)` : résous Ax=b
 	* :code:`diag(...)` : comme matrix, mais crée une matrice diagonale
 	* :code:`m1 %*% m2` : produit matriciel
 	* :code:`eigen(m)` : valeur et vecteur propre (utiliser $vector ou $values)

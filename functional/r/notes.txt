@@ -1,5 +1,4 @@
-
-x[-match(c("a","b","c","f"), names(x))]
+Page28 http://www3.jouy.inra.fr/miaj/public/formation/initiationRv10.pdf
 
 Facteur
 ---------
@@ -18,39 +17,19 @@ Series temporelles : jeu de données de type séries temporelles (avec fréquenc
 
 Graphique
 -----------
-Il existe de nombreuses fonctions pour ouvrir un nouveau
-périphérique graphique (e.g. pdf(), jpeg(),
-postscipt(), x11(), png(), gnome(), quartz(),
-xfig(), bitmap(), pictex()).
-Elles ne sont pas toutes disponibles pour tous les syst`emes
-d’exploitation.
-Pour en savoir plus voir ?Devices.
-Le dispositif utilisé par défaut est donné par
-getOption("device").
-
-save as pdf
-pdf("monfichier.pdf")
-plot(0)
-dev.off()
 
 locator() permet de récupérer les coordonnées des points
 lorsque en cliquant dessus.
 identify() permet d’identifier des points. Donne le rang des
 points dans le jeu de données.
 
-view(data)
-head(data)
-
-Il arrive souvent que des valeurs soient manquantes. Il est intéressant
-de chercher pourquoi.
-
 M_DOC
 ---------------------------
 
-– save(monobjet,file="monobjet.rdata") permet de sauver l’objet monobjet sous le format R. Il est aussi
+– save(mo,file="mo.rdata") permet de sauver l’objet mo sous le format R. Il est aussi
 possible de sauver plusieurs objets dans le mˆeme fichier. Par exemple :
-save(objet1,objet2,file="mesobjets.rdata").
-– load("mesobjets.rdata") permet de recharger des objets sauvegardés au cours d’une
+save(objet1,objet2,file="mos.rdata").
+– load("mos.rdata") permet de recharger des objets sauvegardés au cours d’une
 session précédente.
-– write.table(montableau,file="montableau.txt") permet de sauvegarder le tableau
-de données montableau sous un format .txt.
+– write.table(mot,file="mot.txt") permet de sauvegarder le tableau
+de données mot sous un format .txt.
