@@ -29,9 +29,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/save.rstt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/save.rstt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functional/r/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functional/r/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.rst" afterDir="false" />
     </list>
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
     <list id="35a1cab6-097d-4a11-944c-f8e3831e6d1c" name="cours web ajouts" comment="" />
@@ -74,26 +74,26 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/functional/ocaml/exercices/intro" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/functional/r/files/base" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\functional\r\files\base" />
+      <recent name="C:\Users\quent\Documents\texas-res\functional\r\files" />
+      <recent name="C:\Users\quent\Documents\texas-res\functional\r\base" />
+      <recent name="C:\Users\quent\Documents\texas-res\functional\ocaml\exercices\intro" />
+      <recent name="C:\Users\quent\Documents\texas-res\functional\ocaml\exercices" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\functional\r\files" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\net\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\system\net\cours" />
       <recent name="C:\Users\quent\Documents\texas-res\system\net\exercices\route" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\web\html\cours" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\java\code\i" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\quent\Documents\texas-res\functional\ocaml\exercices\intro" />
-      <recent name="C:\Users\quent\Documents\texas-res\functional\ocaml\exercices" />
-      <recent name="C:\Users\quent\Documents\texas-res\functional\ocaml\files" />
-      <recent name="C:\Users\quent\Documents\texas-res\fonctional" />
-      <recent name="C:\Users\quent\Documents\texas-res\fonctional\ocaml" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -308,7 +308,7 @@
       <workItem from="1611776499389" duration="1636000" />
       <workItem from="1611837079193" duration="739000" />
       <workItem from="1611841992819" duration="24991000" />
-      <workItem from="1611910300838" duration="17107000" />
+      <workItem from="1611910300838" duration="23192000" />
     </task>
     <servers />
   </component>

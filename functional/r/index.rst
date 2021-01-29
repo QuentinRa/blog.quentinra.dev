@@ -4,7 +4,7 @@
 Langage R
 ================================
 
-| :math:`\color{grey}{Version \ 0.3.12}`
+| :math:`\color{grey}{Version \ 0.4.14}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 29/01/2021}`
 
 1. Introduction
@@ -22,6 +22,12 @@ Quelques points
 
 	* en mode interpréteur, taper le nom d'une variable affiche sa valeur
 	* la documentation est généralement écrite en RMarkdown
+
+Vous allez utiliser des packages (librairies) contenant des fonctions/constantes/... Vous
+pouvez voir la liste des packages installés avec :code:`installed.packages()`,
+installer un package avec :code:`install.packages("nom")`.
+Enfin pour l'utiliser dans le code, il faudra le charger (sauf s'il l'est déjà
+par défaut), ceci est fait avec :code:`library("nom");`.
 
 2. Notes
 ===================================
@@ -44,261 +50,17 @@ Vous pouvez obtenir de l'aide avec :code:`help.start()`.
 La fonction :code:`print()` permet d'afficher
 quelque chose en mode compilé.
 
-3. Types et Opérateurs
+3. Particularités du R
 ========================
 
-Le R est faiblement typé mais les données sont implicitement
-de l'un des types suivant
+.. toctree::
+	 :maxdepth: 1
 
-	* nombres (dit numeric) : 1,2,4, 4.5, ...
-	* complexes (dit complex) : i
-	* les booléens (dits logical) : TRUE (ou T) ou FALSE (ou F)
-	* autre : la valeur NULL, la valeur NA (not available), la valeur Inf (infini)
-	* les strings (dit character) : "chaine de caractères"
-	* les vecteurs, les matrices (matrix) et les DataFrames (data.frame)
+		Types en R                               <files/types>
+		Opérations et Structures                 <files/op>
+		Vecteurs, Listes, Matrices et DataFrames <files/v>
 
-Pour être exact, toutes les valeurs en R sont des vecteurs (valeur=vecteur de taille 1).
-La valeur NA est utilisée lorsqu'une donnée est manquante. Tout calcul utilisant
-NA retourne NA.
-
-Fonctions utiles : :code:`is_na` (ou nan/finite/infinite), :code:`class(data)` (savoir le type),
-:code:`identical(x,y)` (savoir si x identique à y)...
-
-Vous pouvez créer un valeur en utilisant :code:`complex(n)` pour créer
-n nombres complexes par exemple. Vous pouvez convertir
-avec des fonctions du style :code:`as.integer(valeur)`.
-
-Les opérations sont
-
-	* les basiques : :code:`+,-,/,*`, :code:`nombre^puissance`
-	* l'assignation : :code:`variable <- valeur` (= marche mais à éviter)
-	* autre : :code:`sqrt, abs, log, xor, sum, ...`
-	* concatenation (string) : :code:`paste(string, string, ...)`
-
-Les conditions sont
-
-	* les basiques : :code:`>, >=, <=, <, ==, !=`
-	* ou logique : :code:`|` (tester une condition vraie, || marche mais fait uniquement le premier d'une vecteur)
-	* et logique : :code:`&` (tester plusieurs conditions vraies, && marche mais ...)
-	* négation : :code:`!` (inverse le résultat de la condition)
-
-Structures de contrôle
-
-	* branchement : :code:`if (condition) { bloc }` ou :code:`if (c){ code } else { code }`
-	* branchement (2) : :code:`ifelse(condition, valeur_si_true, valeur_si_false)`
-	* branchements : :code:`switch(valeur, possible_valeur_1, ....)`
-	* for (a éviter, utiliser les indexes) ou un if : :code:`for(i in vecteur) {}`
-	* while : :code:`while(condition) {}`
-	* while infini (utiliser break pour quitter) : :code:`repeat {}`
-
-Utile : :code:`next` (passer au suivant), :code:`break` (quitter boucle),
-:code:`lapply(v, f)` (applique à tous les éléments une fonction, vecteur),
-:code:`sapply` (..., matrice), :code:`tapply` :code:`apply`.
-
-4. Vecteurs, Listes, Matrices et DataFrames
-==============================================
-
-Un vecteur corresponds à un tableau de valeurs en C. Mais vous
-pouvez faire des opérations dessus (ex: vecteur * 2 + 100) comme en python avec un numpy array.
-Dans ce cas, alors l'opération sera faite sur chacun des éléments
-ce qui donnera un vecteur.
-
-Vous utilisez le constructeur :code:`c(valeur, valeur, ...)` pour créer un vecteur.
-Si vous donnez un vecteur comme valeur, alors les valeurs du vecteurs seront
-concaténées pour former le nouveau vecteur.
-
-Dans le cas ou vous manipulez deux vecteurs de taille différente, alors on re-parcours
-le plus petit vecteur depuis le début. Attention cependant,
-le plus petit doit avoir une taille multiple du plus grand (sinon warning).
-
-.. code:: r
-
-		> c(1, 2, 3, 4) + c(0,10)
-		[1]  1 12  3 14 # résultat de 1 + 0, 2+10, 3 + 0, 4 + 10
-
-Il est possible de créer un vecteur depuis un interval avec :code:`debut:fin`
-donc :code:`1:100` crée un vecteur ayant 100 valeurs allant de 1 à 100 inclus.
-
-Un vecteur est comme un tableau en C, donc on peut récupérer des valeurs
-avec :code:`vecteur[indices]`. Les différences sont que vous pouvez passer
-un vecteur d'indices, que R ne fait pas d'erreur si vous utilisez un indices
-en dehors du vecteur (donc faire attention) et que les indices comment à 1. Vous
-pouvez prendre tout sauf les indices donnés en mettant un :code:`-` (moins)
-devant le vecteur/chaque indice.
-
-.. code:: r
-
-	# passe vecteur d'indices de 1 à 25 donc les 25 premiers de vecteur
-	> vecteur[1:25]
-	[1] 76 90 66 59 28 93 20 68 27 67 38 96 11 48 68 64 46 28 47 93 17 53 86 97 46
-	> vecteur[c(1,2)] # seulement les 2 premiers
-	[1] 76 90
-	> vecteur[-c(1,2)] # tous sauf deux premiers
-	[1] 66 59 28 93 20 68 27 67 38 96 11 48 68 64 46 28 47 93 17 53 86 97 46
-	> vecteur[c(-1,-2)] # tous sauf deux premiers (pareil que plus haut)
-	[1] 66 59 28 93 20 68 27 67 38 96 11 48 68 64 46 28 47 93 17 53 86 97 46
-	> y <- seq(1,10)
-	> vecteur[y] # y donc seq(1,10) donc les indexes 1 à 10
-	[1] 76 90 66 59 28 93 20 68 27 67
-
-Vous pouvez obtenir la taille d'un vecteur avec :code:`length(vecteur)`.
-La fonction :code:`attributes(vecteur)` permet de voir si notre vecteur
-a des propriétés ainsi que leurs valeurs.
-
-Vous pouvez nommer des indices d'un vecteur avec :code:`nom = valeur`.
-On peut obtenir/modifier des noms avec :code:`names()`.
-
-.. code:: r
-
-	# création
-	> r <- c(oui = 1, non = 0)
-	> r["oui"]
-	oui
-	1
-	# forcer des noms
-	> r <- c(r, 2) # taille 3
-	> names(r) <- c("oui", "non", "jsp")
-
-Si un vecteur a une dimension (:code:`dim(vecteur)`) alors
-c'est une matrice. Vous pouvez créer explicitement une matrice
-avec :code:`matrix(data, nrow, ncol)`.
-
-.. code:: r
-
-	> y <- seq(1,10)
-	# déclaration d'une matrice depuis y
-	# byrow = remplissage de haut en bas, FALSE par défaut
-	> matrix(y, 2, 5, byrow = FALSE)
-	 [,1] [,2] [,3] [,4] [,5]
-	[1,] 1 3 5 7 9
-	[2,] 2 4 6 8 10
-	> dim(y) <- c(2,5) # ou on force la dimension en transformant y
-	> y
-	 [,1] [,2] [,3] [,4] [,5]
-	[1,] 1 3 5 7 9
-	[2,] 2 4 6 8 10
-	# ajouter des colonnes (avant et/ou après)
-	> cbind(colonne_before, matrice, colonne_after)
-
-Liste
-------
-
-Une liste est un vecteur dans lequel les éléments peuvent avoir des types différentes.
-On utile :code:`list(clef = valeur, valeur, ...)` pour créer une liste.
-
-Si un élément à une clef/nom, on utile :code:`$` pour y accéder. On peut récupérer
-un élément avec :code:`[[indice]]` ou obtenir une sous-liste avec :code:`[]`.
-
-.. code:: r
-
-	> l <- list(age = 42, id = 13, nom = "Joseph", 1117521156)
-	> l$nom # accès à un élément nommé
-	[1] "Joseph"
-	> info <- l[c("id", "nom")] # contient $id 13 et $nom "Joseph"
-	> l[[1]]
-	42
-
-Matrice
----------
-
-Il est possible de faire des matrices ayant 3, ... dimensions en modifiant
-dim(m).
-
-Fonctions importantes
-
-	* :code:`t(m)` : transposée
-	* :code:`solve(m)` : inverse une matrice
-	* :code:`diag(...)` : comme matrix, mais crée une matrice diagonale
-	* :code:`m1 %*% m2` : produit matriciel
-	* :code:`eigen(m)` : valeur et vecteur propre (utiliser $vector ou $values)
-
-Autres fonctions utiles sur les matrices : :code:`ncol(m)`, :code:`nrow(m)`,
-:code:`cbind(...)` (insérer colonnes), :code:`rbind(...)` (insérer lignes),
-:code:`rownames(m)` (noms lignes), :code:`colnames(m)` (noms colonnes)...
-
-Pour récupérer seulement une partie, on utilise :code:`[indice_i,indice_j]`
-vous donnez deux indices (vous pouvez omettre j = tous mais laissez la virgule).
-Le sélecteur sélectionne tous les lignes i et toutes les colonnes j.
-
-DataFrame
-------------
-
-La particularité d'une matrice est que tous les éléments
-ont le même type. Si ce n'est pas le cas, alors utilisez
-un dataframe.
-
-.. code:: r
-
-		# création, mettez des vecteurs et/ou des matrices
-		> dataframe <- data.frame(vecteur, matrice, ...)
-		# mettre des noms aux colonnes
-		colnames(dataframe) <- vecteur_noms_colonnes
-
-Vous pouvez utiliser :code:`$` comme pour les listes
-car dataframe hérite de list. Vous pouvez utiliser le :code:`[i,j]`
-des matrices, avec i/j pouvant être dataframe$nom_colonne par exemple.
-
-Vous pouvez utiliser :code:`order` pour obtenir les indices des lignes
-dans l'ordre et utiliser cette valeur pour i.
-
-5. Fonctions utiles en stats
-==============================
-
-Général
-
-	* :code:`runif(n)` : génère n nombres aléatoires entre 0 et 1
-	* :code:`pi` : variable qui contient pi
-	* les fonctions min/max
-	* :code:`summary(data)` : prends un vecteur/... et fait une analyse (moyenne, ...)
-	* :code:`seq(from = x, to = y, length = l)` : suite "séquentielle" de l nombres entre x et y
-	* :code:`rep(valeur, n)` : vecteur de taille n contenant n fois valeur (=vecteur, nombre, ...)
-	* :code:`sample(v, n)` : prends un échantillon de n valeur d'un vecteur v
-	* :code:`zapsmall(...)` : choisi et round automatiquement pour donner un arrondi propre.
-
-Jeux de données
-
-	* :code:`library(MASS); data(survey)` : données du style {sexe, droitier/gaucher, fumeur?, age, ...}
-	* :code:`library(ade4); data(deug)` : données du style {matière, grade, ...}
-	* :code:`LETTERS` ou :code:`letters` : vecteur qui contient l'alphabet
-
-Lois
-
-	*	Gaussienne/Normale : :code:`rnorm(n,mean=0,std=1)`
-	*	Uniforme : :code:`runif(n,min=0,max=1)`
-	*	Poisson : :code:`rpois(n,lambda)`
-	*	Exponentielle : :code:`rexp(n,rate=1)`
-	*	χ^2 : :code:`rchisq(n,df)`
-	*	Binomiale : :code:`rbinom(n,size,prob)`
-	*	Cauchy : :code:`rcauchy(n,location=0,scale=1)`
-
-6. Gérer son environnement
-============================
-
-Fonctions de déplacement
-
-	* :code:`getwd()` : retourne le répertoire courant
-	* :code:`sedwd(path)` : change le répertoire courant
-	* :code:`dir()` ou :code:`list.files()` : liste les fichiers du répertoire
-
-Fonctions de manipulation
-
-	* :code:`file.path(partie, partie, ...)` : crée un path [#2]_
-	* :code:`dir.create(path)` : créer un dossier
-	* :code:`file.create(path)` : créer un fichier
-	* :code:`file.exists(path)` : TRUE si existe sinon FALSE
-	* :code:`file.info(path)` : infos sur un fichier
-	* :code:`file.copy(path,new_path)` : copie un fichier
-	* :code:`file.rename(path,new_path)` : renomme un fichier
-
-.. [#2] :code:`file.path("dossier1", "dossier2", "fichier")`. Le path marche sous tout
-	système d'exploitation (donc mettra des / sous Linux et des \\ sous Windows).
-
-Manipulation de chaine de caractères
-
-	* :code:`paste(s1, ..., collapse = C)` : fusionne les résultats en les séparant par C
-	* :code:`paste(s1, ..., sep = S)` : s1, ... sont fusionnés avec le séparateur S entre
-
-7. Fonctions
+4. Fonctions
 =======================
 
 On déclare un bloc entre crochets :code:`{}` dans lequel
@@ -347,7 +109,65 @@ lors de l'appel ou un diminutif du vrai nom.
 Notez que vous pouvez faire une fonction variadique (donc qui prends
 un nombre d'argument variable) en mettant un dernier argument :code:`...`.
 
-8. Affichage graphique
+5. Fonctions utiles en stats
+==============================
+
+Général
+
+	* :code:`runif(n)` : génère n nombres aléatoires entre 0 et 1
+	* :code:`pi` : variable qui contient pi
+	* les fonctions min/max
+	* :code:`summary(data)` : prends un vecteur/... et fait une analyse (moyenne, ...)
+	* :code:`seq(from = x, to = y, length = l)` : suite "séquentielle" de l nombres entre x et y
+	* :code:`rep(valeur, n)` : vecteur de taille n contenant n fois valeur (=vecteur, nombre, ...)
+	* :code:`sample(v, n)` : prends un échantillon de n valeur d'un vecteur v
+	* :code:`zapsmall(...)` : choisi et round automatiquement pour donner un arrondi propre.
+
+Jeux de données
+
+	* :code:`library(MASS); data(survey)` : données du style {sexe, droitier/gaucher, fumeur?, age, ...}
+	* :code:`library(ade4); data(deug)` : données du style {matière, grade, ...}
+	* :code:`LETTERS` ou :code:`letters` : vecteur qui contient l'alphabet
+
+Lois
+
+	*	Gaussienne/Normale : :code:`rnorm(n,mean=0,std=1)`
+	*	Uniforme : :code:`runif(n,min=0,max=1)`
+	*	Poisson : :code:`rpois(n,lambda)`
+	*	Exponentielle : :code:`rexp(n,rate=1)`
+	*	χ^2 : :code:`rchisq(n,df)`
+	*	Binomiale : :code:`rbinom(n,size,prob)`
+	*	Cauchy : :code:`rcauchy(n,location=0,scale=1)`
+
+6. Gérer son environnement
+============================
+
+Fonctions de déplacement
+
+	* :code:`getwd()` : retourne le répertoire courant
+	* :code:`sedwd(path)` : change le répertoire courant
+	* :code:`dir()` ou :code:`list.files()` : liste les fichiers du répertoire
+	* :code:`source(path)` : exécute un fichier R
+
+Fonctions de manipulation
+
+	* :code:`file.path(partie, partie, ...)` : crée un path [#2]_
+	* :code:`dir.create(path)` : créer un dossier
+	* :code:`file.create(path)` : créer un fichier
+	* :code:`file.exists(path)` : TRUE si existe sinon FALSE
+	* :code:`file.info(path)` : infos sur un fichier
+	* :code:`file.copy(path,new_path)` : copie un fichier
+	* :code:`file.rename(path,new_path)` : renomme un fichier
+
+.. [#2] :code:`file.path("dossier1", "dossier2", "fichier")`. Le path marche sous tout
+	système d'exploitation (donc mettra des / sous Linux et des \\ sous Windows).
+
+Manipulation de chaine de caractères
+
+	* :code:`paste(s1, ..., collapse = C)` : fusionne les résultats en les séparant par C
+	* :code:`paste(s1, ..., sep = S)` : s1, ... sont fusionnés avec le séparateur S entre
+
+7. Affichage graphique
 ========================
 
 Les fonctions basiques sont : :code:`plot` (graphique),
@@ -385,7 +205,7 @@ Les fonctions de dessin (appliquées sur le dernier graphique)
 	* :code:`text` : ajouter un texte
 	* Autres : rect, segments, polygon, box, grid, ...
 
-9. RMarkdown
+8. RMarkdown
 ===========================
 
 Le RMarkdown (fichier .Rmd) est basé sur le Markdown donc vous aurez

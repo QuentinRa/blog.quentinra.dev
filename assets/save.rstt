@@ -5,6 +5,8 @@
 
 **** caractères - fin ****
 
+pandoc .\f.rst -f rst -t latex -o res.tex
+
 :download:`setup.sql <../../../assets/db/bases/vins_ensiie_1a_import.sql>`
 
 **** graphviz ****
