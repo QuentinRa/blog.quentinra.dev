@@ -4,8 +4,8 @@
 Langage R
 ================================
 
-| :math:`\color{grey}{Version \ 0.2.7}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 28/01/2021}`
+| :math:`\color{grey}{Version \ 0.3.12}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 29/01/2021}`
 
 1. Introduction
 ===================
@@ -65,7 +65,8 @@ Fonctions utiles : :code:`is_na` (ou nan/finite/infinite), :code:`class(data)` (
 :code:`identical(x,y)` (savoir si x identique à y)...
 
 Vous pouvez créer un valeur en utilisant :code:`complex(n)` pour créer
-n nombres complexes par exemple.
+n nombres complexes par exemple. Vous pouvez convertir
+avec des fonctions du style :code:`as.integer(valeur)`.
 
 Les opérations sont
 
@@ -81,8 +82,8 @@ Les conditions sont
 	* et logique : :code:`&` (tester plusieurs conditions vraies)
 	* négation : :code:`!` (inverse le résultat de la condition)
 
-4. Vecteurs, Matrices et DataFrames
-====================================
+4. Vecteurs, Listes, Matrices et DataFrames
+==============================================
 
 Un vecteur corresponds à un tableau de valeurs en C. Mais vous
 pouvez faire des opérations dessus (ex: vecteur * 2 + 100) comme en python avec un numpy array.
@@ -152,7 +153,9 @@ avec :code:`matrix(data, nrow, ncol)`.
 .. code:: r
 
 	> y <- seq(1,10)
-	> matrix(y, 2, 5) # déclaration d'une matrice depuis y
+	# déclaration d'une matrice depuis y
+	# byrow = remplissage de haut en bas, FALSE par défaut
+	> matrix(y, 2, 5, byrow = FALSE)
 	 [,1] [,2] [,3] [,4] [,5]
 	[1,] 1 3 5 7 9
 	[2,] 2 4 6 8 10
@@ -163,6 +166,45 @@ avec :code:`matrix(data, nrow, ncol)`.
 	[2,] 2 4 6 8 10
 	# ajouter des colonnes (avant et/ou après)
 	> cbind(colonne_before, matrice, colonne_after)
+
+Liste
+------
+
+Une liste est un vecteur dans lequel les éléments peuvent avoir des types différentes.
+On utile :code:`list(clef = valeur, valeur, ...)` pour créer une liste.
+
+Si un élément à une clef/nom, on utile :code:`$` pour y accéder. On peut récupérer
+un élément avec :code:`[[indice]]` ou obtenir une sous-liste avec :code:`[]`.
+
+.. code:: r
+
+	> l <- list(age = 42, id = 13, nom = "Joseph", 1117521156)
+	> l$nom # accès à un élément nommé
+	[1] "Joseph"
+	> info <- l[c("id", "nom")] # contient $id 13 et $nom "Joseph"
+	> l[[1]]
+	42
+
+Matrice
+---------
+
+Il est possible de faire des matrices ayant 3, ... dimensions en modifiant
+dim(m).
+
+Fonctions importantes
+
+	* :code:`t(m)` : transposée
+	* :code:`solve(m)` : inverse une matrice
+	* :code:`diag(...)` : comme matrix, mais crée une matrice diagonale
+	* :code:`m1 %*% m2` : produit matriciel
+	* :code:`eigen(m)` : valeur et vecteur propre (utiliser $vector ou $values)
+
+Autres fonctions utiles sur les matrices : :code:`ncol(m)`, :code:`nrow(m)`,
+:code:`cbind(...)` (insérer colonnes), :code:`rbind(...)` (insérer lignes),
+:code:`rownames(m)` (noms lignes), :code:`colnames(m)` (noms colonnes)...
+
+DataFrame
+------------
 
 La particularité d'une matrice est que tous les éléments
 ont le même type. Si ce n'est pas le cas, alors utilisez
@@ -188,6 +230,7 @@ Général
 	* :code:`seq(from = x, to = y, length = l)` : suite "séquentielle" de l nombres entre x et y
 	* :code:`rep(valeur, n)` : vecteur de taille n contenant n fois valeur (=vecteur, nombre, ...)
 	* :code:`sample(v, n)` : prends un échantillon de n valeur d'un vecteur v
+	* :code:`zapsmall(...)` : choisi et round automatiquement pour donner un arrondi propre.
 
 Lois
 
@@ -237,7 +280,7 @@ contenant une fonction corresponds à la valeur de sa dernière expression.
 
 	# La valeur de f corresponds à la valeur de r soit 5^1 = 5
 	# x et r existent en dehors du bloc
-  > f <- {
+	> f <- {
 	 x <- 5
 	 r <- x^(mod(x,2))
 	}
@@ -256,10 +299,10 @@ avec :code:`return(valeur)`.
 .. code:: r
 
 	> fest <- function (quotient = 1) {
-		x <- 5 * quotient
-		r <- x^(mod(quotient,3))
-		# # si aucun, alors la ligne précédente est retournée donc pareil
-		return(r); # faudra faire un print() si pas de return
+	 x <- 5 * quotient
+	 r <- x^(mod(quotient,3))
+	 # # si aucun, alors la ligne précédente est retournée donc pareil
+	 return(r); # faudra faire un print() si pas de return
 	}
 	# x n'existe pas ici
 

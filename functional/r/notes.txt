@@ -22,6 +22,18 @@ https://pbil.univ-lyon1.fr/R/pdf/lang03.pdf
 
 http://www3.jouy.inra.fr/miaj/public/formation/initiationRv10.pdf
 
+dariush.ghorbanzadeh@lecnam.net
+
+couleurs <- c("bleu", "bleu", "bleu", "blanc", "rouge", "rouge", "noir")
+fcouleurs <- factor(couleurs, levels = c("vert", "bleu", "blanc", "rouge"))
+
+Les modalit´es d’un facteur sont stock´ees en interne par des entiers,
+pour y acc´eder utiliser la fonction as.integer()
+levels(fcouleurs)
+table(fdouleur) <- compte le nombre d'occurences
+
+jitter()
+
 Graphique
 -----------
 
