@@ -29,9 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/files/v.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/files/v.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/php/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/php/index.rst" afterDir="false" />
     </list>
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
     <list id="35a1cab6-097d-4a11-944c-f8e3831e6d1c" name="cours web ajouts" comment="" />
@@ -309,7 +308,8 @@
       <workItem from="1611837079193" duration="739000" />
       <workItem from="1611841992819" duration="24991000" />
       <workItem from="1611910300838" duration="23221000" />
-      <workItem from="1611951179638" duration="4917000" />
+      <workItem from="1611951179638" duration="5183000" />
+      <workItem from="1612008248859" duration="2168000" />
     </task>
     <servers />
   </component>
@@ -338,5 +338,15 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/web/php/test.php</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

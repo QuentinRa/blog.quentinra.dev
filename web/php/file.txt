@@ -1,0 +1,29 @@
+Variables
+○ pas de déclaration de type
+○ pas de type fixe
+○ nom de variables préfixés par $
+○ sensible à la casse : nclient ≠ nClient
+○ fonction isset($var) : variable définie et non NULL ?
+● Constantes
+○ define (“NOM”, valeur)
+■ le nom en majuscule par convention
+
+Portée des variables
+○ dans les fonctions → locale
+○ hors des fonctions → globale
+○ global : pour utiliser une variable globale dans une fonction
+○ static : pour conserver la valeur au fil des appels de la fonction
+● Variables superglobales
+○ $_GET : paramètres d’URL
+○ $_POST : valeurs passées par POST
+○ $_SERVER : informations sur le script (nom, chemin…), client (IP, port…), serveur…
+○ $_SESSION : valeurs stockées dans les sessions
+
+'$variable'
+"$variable"
+{$boisson}
+Utilisation de l’antislash : \
+syntaxe heredoc : <<<
+<<<EOD
+Ceci est une chaîne.
+EOD; // même identifiant qu’au début

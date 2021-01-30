@@ -4,8 +4,8 @@
 HTML
 ================================
 
-| :math:`\color{grey}{Version \ 0.3.6}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 25/01/2021}`
+| :math:`\color{grey}{Version \ 0.3.7}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 30/01/2021}`
 
 Il est important d'avoir lu le cours sur les généralités du web
 ainsi que d'avoir lu la partie HTML.
@@ -134,12 +134,31 @@ Balise de saisie :code:`<input type="..." >` (`input <https://www.w3schools.com/
 	L'attribut :code:`form="<id>"` permet à une balise de ne pas être dans la balise form mais d'envoyer
 	quand même ses données lorsque le formulaire est envoyé.
 
+	L'attribut :code:`name="nom_unique"` est un chaine de caractère permettant sur le serveur de récupérer
+	une donnée d'un formulaire.
+
 	L'attribut :code:`required` (sans valeur ou alors true) indique que le champ est obligatoire. Attention,
 	n'importe qui peut éditer le html et retirer cet attribut.
+
+	L'attribut :code:`checked` (sans valeur ou alors true) permet de cocher par défaut une checkbox/un bouton radio.
+
+Balise :code:`<label for="" />`
+	Généralement, vous allez vouloir mettre :code:`Prénom: champ de saisie`. Ici prénom est le label, et cliquer
+	dessus déclenche automatiquement le début de la saisie. Il faut pour cela que l'attribut for ait pour valeur
+	l'id du input, ou alors mettre la balise input dans la balise label (:code:`<label>Prénom: <input ...></label>`).
+
+Dans un formulaire, il faut généralement un bouton pour envoyer le formulaire. Il
+s'agit d'un bouton normal mais ayant un attribut :code:`type="submit"` (envoyer)
+ou :code:`type="reset"` (vider le formulaire).
 
 Zone de texte :code:`<textarea>...</textarea>` (`textarea <https://www.w3schools.com/tags/tag_textarea.asp>`_)
 	Une zone de texte, col et row permettent de lui donner une taille rapidement. Certains
 	attributs de input sont utilisables (required, form, placeholder, ...)
+
+Autres balises : :code:`select` (liste déroulante), ...
+
+Vous pouvez cacher des balises input avec hidden, mais attention n'importe qui peut
+les voir dans le code et modifier leur valeur.
 
 6. Tags meta
 ================================
