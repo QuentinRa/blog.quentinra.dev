@@ -4,7 +4,7 @@
 PHP
 ================================
 
-| :math:`\color{grey}{Version \ 0.2.3}`
+| :math:`\color{grey}{Version \ 0.4.9}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 30/01/2021}`
 
 1. Introduction
@@ -41,7 +41,7 @@ raccourcie qui fait un echo
 
 Une ligne finit toujours par un :code:`;`.
 
-Les commentaires se font avec :code:`//` ou :code:`/* */`.
+Les commentaires se font avec :code:`//` ou :code:`/* */` ou :code:`#`.
 
 On utilise :code:`echo` pour écrire du texte PHP dans de l'HTML.
 
@@ -71,6 +71,8 @@ aucun truc à l'écran alors vous faites :code:`header("Location: path");exit();
 
 Si votre script ne contient que du PHP, alors vous n'avez pas à mettre le :code:`?>` à la fin.
 
+Sur le même principe que la javadoc en Java, vous pouvez écrire de la PHPDoc.
+
 3. Particularités du PHP
 =============================
 
@@ -86,18 +88,22 @@ est de la forme :code:`$nom`.
 		echo {$nombre}; // affiche 5
 		// echo ${nombre}; // affiche 5 aussi (comme en Shell)
 		// echo ${"nombre"}; // affiche 5 aussi mais le nom peut être une string
+		echo gettype($nombre); // retourne int
+		echo is_int($nombre); // retourne TRUE
 
 Les opérateurs basiques sont disponibles donc :code:`+,-,*,/` avec :code:`%` (modulo)
 et :code:`.` (concaténation). On utilise :code:`=` pour l'assignation. La puissance
 est faite avec :code:`nombre ** puissance`.
 
-Les opérateurs de comparaison sont :code:`==` (égalité [#1]_), :code:`===` (égalité [#2]_),
-:code:`!=` (différent [#1]_), :code:`<>` (différent [#1]_), :code:`!==` (différence [#2]_). Les opérateurs
-traditionnels se font avec :code:`>, <, >=, <=`.
+Les opérateurs de comparaison sont :code:`==` (égalité [#1]_), :code:`===` (égalité stricte [#2]_),
+:code:`!=` (différent [#1]_), :code:`<>` (différent [#1]_), :code:`!==` (différence stricte [#2]_).
+Les opérateurs traditionnels se font avec :code:`>, <, >=, <=`.
 
-.. [#1] ces opérateurs comparent les valeurs, si les éléments sont de types différents : FAUX
+.. [#1] Les opérateurs basiques sont utilisés si les deux éléments sont du même types mais donne des résultats
+	surprenants si ce n'est pas le cas : :code:`0 == 'true' && 0 == 'false'`
+	retourne VRAI en PHP.
 
-.. [#2] ces opérateurs comparent les valeurs, si les éléments sont de types différents alors ils sont convertis dans le même type avant
+.. [#2] pour éviter les mauvaises comparaisons Si les types sont différents on utilise la comparaison stricte.
 
 Les structures (if, for, while, ...) existent ainsi que les mots clefs :code:`continue` (passer au tour suivant)
 et :code:`break` (quitter boucle). Leur déclaration est la même qu'en C, hormis le $ devant le nom
@@ -110,7 +116,19 @@ nom sans $ donc :code:`NOM` ici.
 
 Vous pouvez tester plusieurs conditions avec :code:`||` (ou logique, donc au moins une vraie),
 :code:`&&` (et logique, donc toutes vraies) et pouvez même utiliser :code:`or` ou :code:`and`
-directement. Le xor est fait avec :code:`^`. On fait une négation avec :code:`!`.
+directement mais cela posera des problèmes de priorité.
+Le xor est fait avec :code:`^`. On fait une négation avec :code:`!`.
+
+Il est possible de glisser du html dans des blocs (if, for, ...) avec la syntaxe
+:code:`:` (au lieu de :code:`{`) puis un :code:`endif` (si if à la place de :code:`}`).
+
+.. code:: html
+
+	<?php if(condition) : ?>
+	<p>vrai</p>
+	<?php else : ?>
+	<p>faux (facultatif)</p>
+	<?php endif; ?>
 
 4. Tableaux
 =============

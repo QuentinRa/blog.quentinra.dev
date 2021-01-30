@@ -16,13 +16,7 @@ syntaxe heredoc : <<<
 Ceci est une chaîne.
 EOD; // même identifiant qu’au début
 
-<?php if(condition) : ?>
-<p>vrai</p>
-<?php else : ?>
-<p>faux (facultatif)</p>
-<?php endif; ?>
-
-&$p1
+explode
 
 class SimpleClass
 {
@@ -33,6 +27,15 @@ echo $this->var;
 }
 $s = new SimpleClass();
 $s->displayVar();
+$foo->foo
+// Montre toutes les erreurs
+error_reporting(E_ALL);
 
+https://www.php.net/manual/fr/language.constants.php
+https://www.php.net/manual/fr/language.oop5.php
+https://www.php.net/manual/fr/reserved.variables.server.php
+https://www.php.net/manual/fr/reserved.variables.session.php
+https://www.php.net/manual/fr/reserved.variables.cookies.php
+https://www.php.net/manual/fr/language.functions.php
 
 Page 34 à 45 (PDO)+ Injections ?
