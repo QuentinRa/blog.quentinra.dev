@@ -26,16 +26,16 @@ Structures de contrôle
 	* branchement : :code:`if (condition) { bloc }` ou :code:`if (c){ code } else { code }`
 	* branchement (2) : :code:`ifelse(condition, valeur_si_true, valeur_si_false)`
 	* branchements : :code:`switch(valeur, possible_valeur_1, ....)`
-	* for (a éviter, utiliser les indexes) ou un if : :code:`for(i in vecteur) {}`
+	* for (a éviter, utiliser les indexes ou un if) : :code:`for(i in vecteur) {}`
 	* while : :code:`while(condition) {}`
 	* while infini (utiliser break pour quitter) : :code:`repeat {}`
 
 Utile : :code:`next` (passer au suivant), :code:`break` (quitter boucle).
 
 Vous avez des méthodes qui exécutent une fonction f sur tous les
-éléments de v et
+éléments de v.
 
-	* :code:`lapply(v, f)` : retourne un vecteur
-	* :code:`sapply(v, f)` : retourne une matrice
-	* :code:`tapply(v, f)` : retourne un data.frame
-	* :code:`apply(v, f)` : retourne ...
+	* :code:`lapply(v, f)` : appliquer a tous les éléments d'une liste
+	* :code:`sapply(v, f)` : appliquer a tous les éléments d'une matrice
+	* :code:`tapply(v, f)` : appliquer a tous les éléments d'un tableau
+	* :code:`apply(v, f)` : appliquer a tous les éléments d'une matrice

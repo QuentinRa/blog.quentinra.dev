@@ -35,6 +35,23 @@ et :code:`body` qui contient la partie affichée de votre site.
 		</body>
 		</html>
 
+Version courte
+
+.. code:: html
+
+		<!DOCTYPE html>
+		<html lang="fr">
+		<head>
+			<title>titre du site</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		</head>
+		<body>
+			<!-- code -->
+		</body>
+		</html>
+
+.. code:: html
+
 Notez les balises section, header, ... Il s'agit de balises qui ne sont rien d'autres
 que contenir d'autre balises. Celles-ci ont pour utilité de créer des groupes sémantiques
 de balises afin de comprendre plus facilement quel code fait quoi

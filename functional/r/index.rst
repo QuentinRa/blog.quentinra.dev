@@ -189,22 +189,25 @@ Manipulation de chaine de caractères
 Vous pouvez générer des fichiers contenant un graphique les fonctions (:code:`pdf(path)`,
 :code:`jpeg(path),`, :code:`png(path)`, ...). Elle créent un périphérique graphique
 qui sera utilisé plutôt que celui par défaut pour dessiner le graphique. Pour fermer
-le périphérique, utilisez :code:`dev.off()`.
+le périphérique, utilisez :code:`dev.off()`. Vous pouvez aussi faire
+une sauvegarde du device avec :code:`dev.copy(device=format,"nom")`.
 
 7. Affichage graphique
 ========================
 
 Les fonctions basiques sont : :code:`plot` (graphique),
-:code:`hist` (histogramme), curve, pie, barplot, image, ...
+:code:`hist` (histogramme), curve, pie, barplot, biplot, image, ...
 Elles ont toutes les mêmes arguments ou presque
 
 	* :code:`main = "titre"` : titre
 	* :code:`xlab = "titre x"` : titre de l'axe x
 	* :code:`ylab = "titre y"` : titre de l'axe y
+	* :code:`xlim = valeur` : limite supérieure x
+	* :code:`ylim = valeur` : limite supérieure y
 	* :code:`col = couleur` : couleur de qqch (ex: red(1.0), package crayon)
 	* :code:`border = couleur` : couleur de bordure (histogramme, ...)
 	* :code:`breaks = seq(...)` : augmenter le séquencement (histogramme, plus de blocs)
-	* :code:`na.rm = TRUE` : supprime les valeurs NA
+	* :code:`type = "l"` : l=ligne, b=ligne avec points (plot)
 
 Il faut utiliser :code:`proba = TRUE` pour pouvoir par exemple obtenir
 la densité (:code:`density(..., adjust = valeur)`). Si valeur vaut plus petite
@@ -224,8 +227,12 @@ Les fonctions de dessin (appliquées sur le dernier graphique)
 	* :code:`line` : dessine des points
 	* :code:`legend` : ajouter une légende
 	* :code:`title` : ajouter un titre
-	* :code:`text` : ajouter un texte
+	* :code:`mtext` : ajouter un texte
+	* :code:`abline` : trace une droite y=bx+a (paramètres h=x ou v=y si besoin)
 	* Autres : rect, segments, polygon, box, grid, ...
+
+La fonction par permet de définir l'environnement (fond, ...) et est utilisée
+avant les dessins pour les prochains dessins (ex: :code:` par(bg="...")`).
 
 8. RMarkdown
 ===========================
@@ -297,3 +304,6 @@ Lien utile : https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.
 	* http://www3.jouy.inra.fr/miaj/public/formation/initiationRv10.pdf
 	* https://stackoverflow.com/questions/7526467/what-does-the-dot-mean-in-r-personal-preference-naming-convention-or-more
 	* https://stats.stackexchange.com/questions/10712/what-is-the-meaning-of-the-dot-in-r
+	* https://www.reddit.com/r/datasets/comments/exnzrd/coronavirus_datasets/
+	* https://rviews.rstudio.com/2020/03/05/covid-19-epidemiology-with-r/
+	* https://www.dunod.com/sites/default/files/atoms/files/9782100712861/Feuilletage.pdf
