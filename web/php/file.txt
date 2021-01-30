@@ -15,3 +15,24 @@ syntaxe heredoc : <<<
 <<<EOD
 Ceci est une chaîne.
 EOD; // même identifiant qu’au début
+
+<?php if(condition) : ?>
+<p>vrai</p>
+<?php else : ?>
+<p>faux (facultatif)</p>
+<?php endif; ?>
+
+&$p1
+
+class SimpleClass
+{
+public $var = ‘une valeur par défaut’;
+public function displayVar() {
+echo $this->var;
+}
+}
+$s = new SimpleClass();
+$s->displayVar();
+
+
+Page 34 à 45 (PDO)+ Injections ?
