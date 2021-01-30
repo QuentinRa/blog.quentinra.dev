@@ -45,8 +45,60 @@ Les commentaires se font avec :code:`//` ou :code:`/* */`.
 
 On utilise :code:`echo` pour écrire du texte PHP dans de l'HTML.
 
-3. Requêtes GET/POST
-===================================
+Vous pouvez savoir si une variable existe avec :code:`isset($variable)`.
+
+Vous pouvez utiliser :code:`''` ou :code:`""` pour du texte, mais dans le premier cas
+alors les variables seront considérés comme du texte alors que dans le second
+cas les variables seront remplacées par leur valeur. Vous pouvez protéger
+un caractère avec :code:`\caractère`.
+
+3. Particularités du PHP
+=============================
+
+Le PHP est un langage faiblement typé. Les types
+sont int, float, String, array et booléens. Une variable
+est de la forme :code:`$nom`.
+
+.. code:: php
+
+	$nombre = 5;
+	echo $nombre; // affiche 5
+	echo ${nombre}; // affiche 5
+	echo ${"nombre"}; // affiche 5
+	echo {$nombre}; // affiche 5
+
+Les opérateurs basiques sont disponibles donc :code:`+,-,*,/` avec :code:`%` (modulo)
+et :code:`.` (concaténation). On utilise :code:`=` pour l'assignation. La puissance
+est faite avec :code:`nombre ** puissance`.
+
+Les opérateurs de comparaison sont :code:`==` (égalité [#1]_), :code:`===` (égalité [#2]_),
+:code:`!=` (différent [#1]_), :code:`<>` (différent [#1]_), :code:`!==` (différence [#2]_). Les opérateurs
+traditionnels se font avec :code:`>, <, >=, <=`.
+
+.. [#1] ces opérateurs comparent les valeurs, si les éléments sont de types différents : FAUX
+
+.. [#2] ces opérateurs comparent les valeurs, si les éléments sont de types différents alors ils sont convertis dans le même type avant
+
+Les structures (if, for, while, ...) existent ainsi que les mots clefs :code:`continue` (passer au tour suivant)
+et :code:`break` (quitter boucle). Leur déclaration est la même qu'en C, hormis le $ devant le nom
+des variables. Il existe une nouvelle boucle : le foreach (=for i in) qui sera expliquée dans la partie
+sur les tableaux.
+
+Il est possible de créer des constantes avec :code:`define("NOM", valeur);` sachant que le nom
+est toujours en majuscules (convention). Notez que une constante est accédée avec son
+nom sans $ donc :code:`NOM` ici.
+
+Vous pouvez tester plusieurs conditions avec :code:`||` (ou logique, donc au moins une vraie),
+:code:`&&` (et logique, donc toutes vraies) et pouvez même utiliser :code:`or` ou :code:`and`
+directement. Le xor est fait avec :code:`^`. On fait une négation avec :code:`!`.
+
+4. Tableaux
+=============
+
+...
+
+5. Requêtes GET/POST
+=======================
 
 GET
 	Les données d'un formulaire sont envoyées dans l'URL.
@@ -85,3 +137,5 @@ dans :code:`$_SESSION` et retourner sur page (vous utiliserez $_SESSION pour ré
 
 **Références**
 	* https://www.javatpoint.com/get-vs-post
+	* https://www.php.net/manual/fr/language.operators.php
+	* https://www.php.net/manual/fr/language.basic-syntax.php

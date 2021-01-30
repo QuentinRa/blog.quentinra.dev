@@ -1,12 +1,4 @@
-Variables
-○ pas de déclaration de type
-○ pas de type fixe
-○ nom de variables préfixés par $
-○ sensible à la casse : nclient ≠ nClient
-○ fonction isset($var) : variable définie et non NULL ?
-● Constantes
-○ define (“NOM”, valeur)
-■ le nom en majuscule par convention
+for i in
 
 Portée des variables
 ○ dans les fonctions → locale
@@ -19,10 +11,6 @@ Portée des variables
 ○ $_SERVER : informations sur le script (nom, chemin…), client (IP, port…), serveur…
 ○ $_SESSION : valeurs stockées dans les sessions
 
-'$variable'
-"$variable"
-{$boisson}
-Utilisation de l’antislash : \
 syntaxe heredoc : <<<
 <<<EOD
 Ceci est une chaîne.

@@ -52,6 +52,11 @@ Voici un exemple de fichier css.
 	 scroll-behavior:smooth;
 	}
 
+.. warning::
+
+	Si vous modifiez un fichier css et que le style ne s'est pas appliqué, alors il faudra
+	sûrement recharger le cache donc avec :code:`CTRL-SHIT-R` généralement.
+
 2. Sélecteur
 =================================
 
