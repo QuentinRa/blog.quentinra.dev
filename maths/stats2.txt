@@ -1,3 +1,6 @@
+Université du Havre - ISEL
+Initiation à R - Eric Preud’homme
+
 exercice
 ---------------------
 
@@ -20,31 +23,40 @@ grep // grep(pattern = "a" , Texte9, value = FALSE, fixed = TRUE)
 cours/théorie
 ---------------
 
+P : fonction de répartition (Probabilité P(X≤k))
+Q : inverse de la fonction de répartition (Quantile)
+D : densité pour une loi continue (P(x=k) pour une loi discrète)
+R : échantillon aléatoire suivant la loi en question (Random)
+
 FONCTIONS
 Lois de proba
-P Q D
-Beta  pbeta qbeta dbeta
-Binomiale pbinom qbinom dbinom
-Cauchy pcauchy qcauchy dcauchy
-Khi-deux pchisq qchisq dchisq
-Exponentielle pexp qexp dexp
-F pf qf df
-Gamma pgamma qgamma dgamma
-Géométrique pgeom qgeom dgeom
-Hypergéométrique phyper qhyper dhyper
-Logistique plogis qlogis dlogis
-Log Normale plnorm qlnorm dlnorm
-Binomiale négative pnbinom qnbinom dnbinom
-Normale pnorm qnorm dnorm
-Poisson ppois qpois dpois
-Student t pt qt dt
-Uniforme punif qunif dunif
-Weibull pweibull qweibull dweibull
+P Q D R
+Beta  pbeta qbeta dbeta rbeta
+Binomiale pbinom qbinom dbinom rbinom
+Cauchy pcauchy qcauchy dcauchy rcauchy
+Khi-deux pchisq qchisq dchisq rchisq
+Exponentielle pexp qexp dexp rexp
+F pf qf df rf
+Gamma pgamma qgamma dgamma rgamma
+Géométrique pgeom qgeom dgeom rgeom
+Hypergéométrique phyper qhyper dhyper rhyper
+Logistique plogis qlogis dlogis rlogis
+Log Normale plnorm qlnorm dlnorm rlnorm
+Binomiale négative pnbinom qnbinom dnbinom rnbinom
+Normale pnorm qnorm dnorm rnorm
+Poisson ppois qpois dpois rpois
+Student t pt qt dt rt
+Uniforme punif qunif dunif runif
+Weibull pweibull qweibull dweibull rweibull
 
 Par exemple pour la loi Normale, la densité est dnorm(x,mu,sigma)
 où mu et sigma représentent la moyenne et l’écart-type de la loi.
 
 gamma(n)=(n-1) !
+
+Ainsi pour calculer P(X=2) pour une loi binomiale B(5,1/3) On fait : dbinom(x=2,size=5,prob=1/3)
+Pour P(X≤2) on aurait fait : pbinom(q=2,size=5,prob=1/3)
+Calculer P(X>2) pour une loi normale N(1,3) : 1-pnorm(q=2,mean=1,sd=3)
 
 tracer
 -----------------
@@ -57,6 +69,14 @@ contour(x,y,z,add=TRUE) # Pour le tracé des lignes de couleur
 library(rgl)
 plot3d # interactif
 
+L’option ADD=TRUE permet de superposer au graphique précédent.
+
+boxplot
+
+install.packages(‘GGgally’)
+library(GGally)
+ggpairs(stid[, c("Taille", "Poids")],aes(colour=stid$Sexe))
+
 utiles
 -----------------
 
@@ -67,10 +87,6 @@ apply(matrice, 1 ou 2, fonction)
 
 maths
 ---------------------
-
-P : fonction de répartition (Probabilité P(X≤k))
-Q : inverse de la fonction de répartition (Quantile)
-D : densité pour une loi continue (P(x=k) pour une loi discrète)
 
 det : retourne le déterminant d'une matrice
 solve : inverse aussi ou
@@ -88,6 +104,78 @@ Rang
 
 	library(matlib); R(m).
 
+La fonction solve permet de résoudre les systèmes n’ayant pas de « problèmes »,
+c’est à dire avec une solution.
+
+La fonction echelon permet de mettre le système sous forme
+triangulaire ce qui permet d’achever la résolution des systèmes « à problème » facilement.
+
+showEqn(A,b)
+	Voir le système de la matrice A et le vecteur b.
+
+	echelon : mettre sous forme triangulaire. On obtient x1 = ..., x2 = ... etc.
+
+Trace(m)=somme des valeurs propres.
+
+optimisation
+-----------------
+
+install.packages("numDeriv")
+library(numDeriv)
+
+Montrons que le point (1,1,1) est un point critique de cette fonction.
+Pour cela nous calculons le Gradient
+
+grad(func=ma_fonction,x=c(1,1,1))
+
+[1] 0 0 0
+Le gradient est nul, le point est donc critique.
+
+Pour déterminer la nature de ce point stationnaire, nous calculons la hessienne :
+hessian(func=ma_fonction,x=c(1,1,1))
+
+Il nous reste à déterminer les valeurs propres : eigen(hessian(...))
+
+Les valeurs propres sont positives et négatives, le point (1,1,1) est donc un point selle.
+
+Polynômes
+R possède une fonction pour trouver les racines de polynômes (réelles ou complexes) : polyroot
+auquel on donne les coeff du polynome (x^0, x^1, ...)
+
+uniroot(f,lower=0,upper=3) avec une fonction continue qui change de signe permet de trouver le 0 (TVI)
+	valeur approchée du x pour lequel f(x)~= zéro
+  valeur du x pour lequel f(x)~= zéro
+  iter : le nombre d’itérations pour arriver au résultat
+  estim.prec, l’estimation de la précision de la solution. (peut l'augmenter avec l’option tol=)
+
+integrate
+	Calculer des intégrales
+
+	integrate(f, lower = 0, upper = 1)
+
+Il est possible d’approcher les fonctions par des polynômes en utilisant la formule de Taylor.
+Le module pracma permet de faire ces calculs.
+
+library(pracma)
+taylor(f, 0, 5) // en 0 d'ordre 5
+
+polyval ???
+
+statistiques pondérées
+--------------------------
+
+valeurs 1,2,... associés à un pourcentage (ici plutôt un nombre)
+-> Désagréger les données pondérées
+-> création de deux vecteurs
+-> fusion
+-> analyse
+
+-> sans désagréger
+-> install.packages('questionr')
+-> library(questionr)
+-> wtd.mean(valeurs, nombre)
+-> wtd.var(valeurs, nombre)
+
 structure
 -----------------
 
@@ -95,5 +183,42 @@ Les accolades peuvent être omises s’il n’y a qu’une instruction.
 
 Les tableaux commencent à 1
 
+saveRDS (saveRDS(object = ....)) et readRDS pour save des données.
 
-Stop page 52/451
+Factor : qualitative
+-> quantitative : entiers, ...
+-> qualitative : valeur (Homme, Femme, ...)
+
+Factor permet de qualifier les données, par exemple de créer des groupes
+disant que 1 corresponds à une valeur et 2 à une autre.
+
+Si vous avez de nombreuses variables qualitatives dans votre fichier,
+il est possible que R les voie comme du texte. Pour éviter de faire factor()
+sur chacune d’entre elle : read.csv2("wisc_cancer.csv", stringsAsFactors = TRUE)
+Ici nous demandons à R de convertir toutes les variables chaînes de caractères en variables qualitatives.
+
+write.csv2
+
+Sous-partie d'un dataframe
+	subset(stid,Sexe==2,select=c(Groupe,Sexe,Note.Fr.))
+	-> select : variables gardées
+	-> stid : fichier
+	-> sexe==2 : condition
+
+esprit d'analyse
+----------------------
+
+Superpose histogramme + courbe pour essayer de trouver la loi.
+
+summary() et/ou head().
+
+On peut check les dimensions (dim()) voir combien de données on manipule.
+On peut check names() : les noms des colonnes.
+str() : voir les types des colonnes et avoir une idée des valeurs.
+
+Pour les autres fonctions, R connaît la variance (var),
+l’écart-type (sd) les quantiles (quantile).
+
+On étudie aussi chaque partie
+
+Stop page 101/451
