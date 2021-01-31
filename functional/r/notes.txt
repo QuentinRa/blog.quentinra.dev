@@ -199,3 +199,9 @@ d’une comparaison multiple.
 
 https://mooc-francophone.com/cours/mooc-introduction-statistique-r/
 https://www.fun-mooc.fr/
+https://samm.univ-paris1.fr/IMG/pdf/notes_statr.pdf
+https://irma.math.unistra.fr/~ricka/stat/TD1_L3.pdf
+http://math.univ-lyon1.fr/~gannaz/Cours/cours_stat.pdf
+https://www.tutorialspoint.com/r/index.htm
+
+taux 0.5 donc moyenne 2 (exp)

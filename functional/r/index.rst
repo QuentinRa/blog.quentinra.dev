@@ -4,8 +4,8 @@
 Langage R
 ================================
 
-| :math:`\color{grey}{Version \ 0.5.16}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 29/01/2021}`
+| :math:`\color{grey}{Version \ 0.6.21}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 31/01/2021}`
 
 1. Introduction
 ===================
@@ -278,6 +278,15 @@ Bloc de code
 		* :code:`{r  warning = FALSE}` : compilé, pas de warnings
 
 Lien utile : https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf
+
+9. Exercices
+==============
+
+.. toctree::
+    :name: exercices
+    :maxdepth: 1
+
+		Introduction				<exercices/intro>
 
 -----
 

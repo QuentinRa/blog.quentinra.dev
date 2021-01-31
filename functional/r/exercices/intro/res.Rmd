@@ -1,0 +1,188 @@
+---
+title: "TP Statistiques 1"
+output: html_document
+---
+
+### Génération et sauvegarde de données
+
+On génère un échantillon de 40 observations
+pour chaque loi.
+
+```{r warning = FALSE}
+# création des données
+r <- data.frame(
+        rnorm(40,0,1),
+        runif(40,0,1),
+        rpois(40,17),
+        rexp(40, rate = 1),
+        rchisq(40, df = 1.3),
+        rbinom(40, 100,0.5),
+        rcauchy(40, location = 0, scale = 1)
+)
+
+# noms des colonnes
+colnames(r) <- c("gaussienne", "uniforme0-1", "poisson, p=17",
+                 "exp", "chisq (1.3)", "binomiale (40,100,0.5)",
+                 "cauchy"
+)
+
+# écriture du csv, on ne met pas de colonne avec le numéro de la ligne
+write.csv(r, file = "data2.csv", row.names = FALSE)
+```
+
+```{r}
+# relecture
+file <- read.csv("data2.csv", header = TRUE)
+# voir la valeur de la colonne gaussienne
+file$gaussienne
+```
+### Tracer les données
+
+On récupère et on affiche 10 valeurs.
+
+```{r}
+plot(sample(file$gaussienne, 10), main = "Gaussienne 0-1 (10 tirages)",
+    xlab = "tirages")
+abline(h=0) # trace une ligne en y=0
+abline(h=-1) # trace une ligne en y=-1
+abline(h=1) # trace une ligne en y=1
+abline(h=2) # trace une ligne en y=2
+abline(h=-2) # trace une ligne en y=-2
+abline(h=3) # trace une ligne en y=3
+abline(h=-3) # trace une ligne en y=-3
+```
+On observe que nous avons 8 valeurs entre -1 et 1
+par exemple dans un cas ou de façon générale
+il y a souvent beaucoup de valeurs autour de 0.
+
+```{r echo = FALSE}
+plot(rnorm(100,mean = 0, sd = 1), main = "Gaussienne 0-1 (100 tirages)",
+     xlab = "tirages")
+abline(h=0) # trace une ligne en y=0
+abline(h=-1) # trace une ligne en y=-1
+abline(h=1) # trace une ligne en y=1
+abline(h=2) # trace une ligne en y=2
+abline(h=-2) # trace une ligne en y=-2
+abline(h=3) # trace une ligne en y=3
+abline(h=-3) # trace une ligne en y=-3
+```
+
+```{r echo = FALSE}
+plot(rnorm(1000,mean = 0, sd = 1), main = "Gaussienne 0-1 (100 tirages)",
+     xlab = "tirages")
+abline(h=0) # trace une ligne en y=0
+abline(h=-1) # trace une ligne en y=-1
+abline(h=1) # trace une ligne en y=1
+abline(h=2) # trace une ligne en y=2
+abline(h=-2) # trace une ligne en y=-2
+abline(h=3) # trace une ligne en y=3
+abline(h=-3) # trace une ligne en y=-3
+```
+En augmentant le nombre de tirages, notre hypothèse précédente
+semble être vraie.
+
+Est-ce que vous pouvez conclure quelque chose sur cette distribution,
+à partir d’une visualisation ?
+
+```{r}
+file2 <- read.csv("distribution_inconnue.csv", header = TRUE)
+
+plot(file2$V1);
+```
+On voit une accumulation autour de 12 et 3
+donc peut être deux lois gaussiennes avec une moyenne
+de 12 et 3 respectivement. On peut supposer avec l'échelle qu'il y a eu
+100 tirages.
+
+On remarque un comportement potentiellement similaire avec Chisq
+avec presque tous les points étant proches et plus grand ou égal à 0 ici.
+
+```{r echo = FALSE}
+plot(rchisq(10, df = 1.3), main = "Chisq 1.3 (10 tirages)")
+abline(h=0) # trace une ligne en y=0
+abline(h=-1) # trace une ligne en y=-1
+abline(h=1) # trace une ligne en y=1
+abline(h=2) # trace une ligne en y=2
+abline(h=-2) # trace une ligne en y=-2
+abline(h=3) # trace une ligne en y=3
+abline(h=-3) # trace une ligne en y=-3
+plot(rchisq(100, df = 1.3), main = "Chisq 1.3 (100 tirages)",)
+abline(h=0) # trace une ligne en y=0
+abline(h=-1) # trace une ligne en y=-1
+abline(h=1) # trace une ligne en y=1
+abline(h=2) # trace une ligne en y=2
+abline(h=-2) # trace une ligne en y=-2
+abline(h=3) # trace une ligne en y=3
+abline(h=-3) # trace une ligne en y=-3
+plot(rchisq(100, df = 1.3), main = "Chisq 1.3 (1000 tirages)")
+abline(h=0) # trace une ligne en y=0
+abline(h=-1) # trace une ligne en y=-1
+abline(h=1) # trace une ligne en y=1
+abline(h=2) # trace une ligne en y=2
+abline(h=-2) # trace une ligne en y=-2
+abline(h=3) # trace une ligne en y=3
+abline(h=-3) # trace une ligne en y=-3
+```
+
+### Histogrammes
+
+```{r}
+hist(rnorm(100, mean = 0, sd = 1),
+     main = "Histogramme gaussienne 0-1 (100 tirages)");
+
+file2 <- read.csv("distribution_inconnue.csv", header = TRUE)
+hist(file2$V1, main = "Histogramme de la distribution inconnue");
+```
+On observe qu'il est possible que la distribution
+soit le résultat de trois et non deux lois gaussiennes
+car il y a deux pics vers 12.
+
+```{r echo = FALSE}
+hist(rnorm(100, mean = 0, sd = 1),
+     main = "Histogramme gaussienne 0-1 (100 tirages)",
+     breaks = 25);
+
+file2 <- read.csv("distribution_inconnue.csv", header = TRUE)
+hist(file2$V1, main = "Histogramme de la distribution inconnue",
+     breaks = 25, freq = TRUE);
+```
+En testant avec Cauchy, on observe une accumulation autour
+de la location mais très peu d'écarts autour.
+
+```{r}
+hist(rcauchy(1000, location = 0, scale = 1),
+     main = "Histogramme Cauchy",
+     breaks = 5);
+hist(rcauchy(1000, location = 5, scale = 1),
+     main = "Histogramme Cauchy",
+     breaks = 5);
+```
+
+### Moments
+
+```{r message = FALSE}
+require("e1071") # ou moments
+file <- read.csv("data2.csv", header = TRUE)
+```
+```{r}
+m <- t(sapply(file, function (x){
+  return(c(mean(x), var(x), skewness(x), kurtosis(x)))
+}))
+colnames(m)<-c("Moyenne", "Variance", "Skewness", "Kurtosis")
+rownames(m)<-c("gaussienne", "uniforme0-1", "poisson, p=17",
+"exp", "chisq (1.3)", "binomiale (40,100,0.5)",
+ "cauchy")
+m # print
+```
+
+### Quantiles
+```{r}
+q <- t(sapply(file, function (x){
+  return(quantile(x, probs = c(0.25,0.5,0.75)))
+}))
+colnames(q) <- c("Q1", "Q2", "Q3")
+cbind(m, q)
+
+boxplot(t(m)) # voir les quartiles
+# boxplot(t(m)[1,]) : quartiles de la première loi
+```

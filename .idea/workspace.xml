@@ -28,38 +28,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/save.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/CHEKCLIST.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/_notes/_calistro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/_notes/annales/my/create_fill_consult.sql" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/my/create_fill_consult.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/_notes/annales/my/part1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/my/part1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/_notes/annales/my/part2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/my/part2.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/_notes/annales/my/r2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/my/r2.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/_notes/annales/r.rst" beforeDir="false" afterPath="$PROJECT_DIR$/r.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/_notes/annales/r2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/r2.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/_notes/cesim.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/_notes/etude.txt" beforeDir="false" afterPath="$PROJECT_DIR$/business/etude.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/_notes/git.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/_notes/maths/analyse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/analyse/analyse.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/_notes/maths/bric.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/bric/bric.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/_notes/maths/matrix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/matrix.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/_notes/maths/proba.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/proba.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/save.rstt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/corp/insertion.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/insertion.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/economy/macro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/business/economy/macro.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/ihm/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/ihm/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/c.txt" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/c.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/java/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/java/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/java/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/java/notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/status.rst" beforeDir="false" afterPath="$PROJECT_DIR$/status.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/docker/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/docker/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team/gestion/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/team/gestion/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/git.rst" beforeDir="false" afterPath="$PROJECT_DIR$/utils/git.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/rst.rst" beforeDir="false" afterPath="$PROJECT_DIR$/utils/rst.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/files/html5.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/files/html5.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functional/r/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functional/r/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/notes.txt" afterDir="false" />
     </list>
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
     <list id="35a1cab6-097d-4a11-944c-f8e3831e6d1c" name="cours web ajouts" comment="" />
@@ -103,26 +74,26 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/functional/r/files/base" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/functional/r/exercices/intro" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\functional\r\exercices\intro" />
+      <recent name="C:\Users\quent\Documents\texas-res\functional\r\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\functional\r\files\base" />
       <recent name="C:\Users\quent\Documents\texas-res\functional\r\files" />
       <recent name="C:\Users\quent\Documents\texas-res\functional\r\base" />
-      <recent name="C:\Users\quent\Documents\texas-res\functional\ocaml\exercices\intro" />
-      <recent name="C:\Users\quent\Documents\texas-res\functional\ocaml\exercices" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\functional\r\exercices" />
+      <recent name="C:\Users\quent\Documents\texas-res\functional\r\exercices\intro" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\_notes\sqlnr1" />
       <recent name="C:\Users\quent\Documents\texas-res" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\_notes" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\proba" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\matrix" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\bric" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -342,7 +313,8 @@
       <workItem from="1611951179638" duration="5183000" />
       <workItem from="1612008248859" duration="22353000" />
       <workItem from="1612043115236" duration="9000" />
-      <workItem from="1612082373477" duration="4261000" />
+      <workItem from="1612082373477" duration="8916000" />
+      <workItem from="1612094602109" duration="1127000" />
     </task>
     <servers />
   </component>
