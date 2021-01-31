@@ -334,3 +334,4 @@ Kubernetes
 
 **Références**
 	* https://docs.docker.com/
+	* https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/

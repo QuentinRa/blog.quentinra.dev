@@ -133,4 +133,5 @@ Elles sont disponibles sur Github mais toutes ne sont pas disponibles partout.
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* aucune
+	* https://docs.github.com/en/github/using-git/changing-a-remotes-url
+	* http://adopteungit.fr/methodologie/2017/04/26/commits-atomiques-la-bonne-approche.html

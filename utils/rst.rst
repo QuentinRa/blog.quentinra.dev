@@ -209,4 +209,19 @@ Il existe aussi warning, danger, important, hint.
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
+	* https://docs.anaconda.com/restructuredtext/detailed/
+	* https://docutils.sourceforge.io/docs/user/rst/quickref.html
 	* https://sublime-and-sphinx-guide.readthedocs.io/en/latest/code_blocks.html
+	* https://pandoc.org/
+	* https://rst2pdf.org/
+	* Sphinx
+		* https://matplotlibguide.readthedocs.io/en/latest/Matplotlib/basic.html
+		* https://plantuml.com/
+		* https://graphs.grevian.org/example
+		* https://www.sphinx-doc.org/en/master/usage/extensions/graphviz.html
+		* https://sphinx-tutorial.readthedocs.io/step-1/
+		* http://docs.mathjax.org/en/latest/basic/a11y-extensions.html
+		* https://sphinx-doc-zh.readthedocs.io/en/latest/ext/math.html
+		* https://documentation.help/Sphinx/math.html
+		* https://fr.wikipedia.org/wiki/ReStructuredText
+		* https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html

@@ -190,3 +190,4 @@ serait
 	* https://www.computerhope.com/unix/signals.htm
 	* https://www.linuxtricks.fr/wiki/signaux-unix-unix-signals
 	* https://gchq.github.io/CyberChef/
+	* https://askubuntu.com/questions/1188952/download-mega-nz-files-from-command-line

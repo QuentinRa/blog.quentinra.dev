@@ -134,3 +134,29 @@ Ici, en vrac, quelques trucs que vous n'allez probablement jamais utiliser.
 	* https://libgdx.com/
 	* https://docs.oracle.com/javase/tutorial/deployment/jar/build.html
 	* https://search.maven.org/
+	* https://www.baeldung.com/gradle-build-to-maven-pom
+	* https://mvnrepository.com/artifact/org.springframework.security
+	* https://justinmahar.github.io/easyjre/
+
+**Autres**
+	* https://stackoverflow.com/questions/6101311/what-is-the-native-keyword-in-java-for
+  * https://stackoverflow.com/questions/4577424/distinguish-between-a-single-click-and-a-double-click-in-java
+  * https://github.com/srikanth-lingala/zip4j
+  * https://stackoverflow.com/questions/758083/how-do-i-put-a-java-app-in-the-system-tray
+  * https://stackoverflow.com/questions/5349642/how-to-set-icon-for-jframe-window-and-tray
+	* https://stackoverflow.com/questions/3542018/how-can-i-get-list-of-all-drives-but-also-get-the-corresponding-drive-type-remo
+	* https://www.yworks.com/products/yguard
+	* https://www.guardsquare.com/en/products/proguard
+	* https://www.baeldung.com/java-download-file
+	* https://docs.spring.io/spring-security/site/docs/4.2.4.RELEASE/apidocs/org/springframework/security/crypto/password/Pbkdf2PasswordEncoder.html
+	* https://www.devglan.com/online-tools/jasypt-online-encryption-decryption
+
+	* innodb
+
+		* https://stackoverflow.com/questions/12951327/inno-setup-check-if-file-exist-in-destination-or-else-if-doesnt-abort-the-ins
+		* https://stackoverflow.com/questions/15638663/creating-an-installer-that-will-perform-an-update-if-an-older-version-is-already
+		* https://stackoverflow.com/questions/14685149/creating-an-installer-for-java-desktop-application#14686023
+		* http://izpack.org/
+		* http://jrsoftware.org/ishelp/index.php?topic=consts&anchor=userappdata
+		* http://stackoverflow.com/questions/13728902/powershell-script-after-install
+		* http://stackoverflow.com/questions/252226/signing-a-windows-exe-file

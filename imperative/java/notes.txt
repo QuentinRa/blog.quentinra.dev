@@ -23,3 +23,13 @@ Classes sympas
 JOptionPane //affiche un popup de dialog
 System //retourne un saut de ligne du système, système d'exploitation actuel, ...
 JFileChooser //sélectionner un fichier
+
+more
+--------------------------
+
+zip4j
+install4j
+yguard/proguard (Obfuscator)
+protector4j
+easy jre
+innodb

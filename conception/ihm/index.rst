@@ -255,3 +255,5 @@ aucun
 
 **Références**
 	* https://fr.wikipedia.org/wiki/Skeuomorphisme
+	* https://www.sketch.com/
+	* https://www.nngroup.com/articles/ten-usability-heuristics/

@@ -142,6 +142,7 @@ pouvez y accéder avec http://localhost/phpmyadmin/, root sans mot de passe.
 	* https://www.w3schools.com/
 	* https://validator.w3.org/
 	* https://codeigniter.com/
+	* http://robots-txt.com/
 	* https://www.w3schools.com/howto/default.asp
 	* https://httpd.apache.org/docs/current/howto/htaccess.html
 	* https://www.godaddy.com/garage/htaccess-tutorial-and-cheat-sheet/

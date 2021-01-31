@@ -3,6 +3,7 @@ dup/dup2
 -Wall -Wextra
 
 http://web4.ensiie.fr/~urbain/enseignement/ipi/
+https://web4.ensiie.fr/~guillaume.burel/cours/IPI/
 http://web4.ensiie.fr/~guillaume.burel/cours/IPI/tp6.html
 
 Exercice réseau

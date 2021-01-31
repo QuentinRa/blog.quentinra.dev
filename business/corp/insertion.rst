@@ -83,3 +83,4 @@ Il faut au mieux se mettre à la place de votre auditoire
 
 **Références**
 	* https://www.digitaweb.com/blog/rgaa-criteres-accessibilite-1
+	* https://www.ionos.fr/startupguide/productivite/lettre-de-motivation/

@@ -1,0 +1,39 @@
+---------- outils
+
+https://www.wolframalpha.com/input/?i=cos%28x%29%2F%281%2Bsin%28x%29%29
+
+-------------- latex
+
+https://detexify.kirelabs.org/classify.html
+https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
+https://en.wikipedia.org/wiki/Wikipedia:LaTeX_symbols
+https://fr.wikipedia.org/wiki/Aide:Formules_TeX
+http://atomurl.net/math/
+https://fr.wikibooks.org/wiki/LaTeX/%C3%89crire_des_math%C3%A9matiques
+https://www.commentcamarche.net/contents/620-latex-table-de-caracteres
+https://www.xm1math.net/doculatex/espacements.html
+https://tex.stackexchange.com/questions/83032/angled-fraction-like-superscript
+https://tex.stackexchange.com/questions/22100/the-bar-and-overline-commands
+https://tex.stackexchange.com/questions/3372/how-do-i-typeset-arbitrary-fractions-like-the-standard-symbol-for-5-%c2%bd/251123#251123
+
+
+--------- optimisation
+
+http://dimitri.watel.free.fr/teaching/s2_mom/s2_mom.php
+http://pgoutet.free.fr/td/maths3_optimisation_contrainte.pdf
+https://www.ljll.math.upmc.fr/~nardoni/TDagrl3/TD4cor.pdf
+
+--------------- Général
+
+https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Fubini
+https://fr.wikipedia.org/wiki/Fonction_monotone
+http://gilles.dubois10.free.fr/analyse_reelle/suitesmonotones.html
+https://fr.wikipedia.org/wiki/Sous-suite
+https://fr.wikipedia.org/wiki/Fonction_g%C3%A9n%C3%A9ratrice_des_moments
+https://fr.wikipedia.org/wiki/Lemme_de_Zorn
+https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Pascal
+https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Cantor
+https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_fermeture/compl%C3%A9mentaire_de_Kuratowski
+https://fr.wikipedia.org/wiki/Graphe_planaire
+https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Dirichlet_%28s%C3%A9ries_de_Fourier%29
+https://fr.wikipedia.org/wiki/Principe_des_tiroirs

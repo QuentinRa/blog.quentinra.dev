@@ -50,8 +50,6 @@ Version courte
 		</body>
 		</html>
 
-.. code:: html
-
 Notez les balises section, header, ... Il s'agit de balises qui ne sont rien d'autres
 que contenir d'autre balises. Celles-ci ont pour utilité de créer des groupes sémantiques
 de balises afin de comprendre plus facilement quel code fait quoi

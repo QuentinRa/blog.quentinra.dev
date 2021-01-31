@@ -131,4 +131,4 @@ du projet.
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* aucune
+	* https://www.codeur.com/blog/gestion-de-projet-diagramme-pert/
