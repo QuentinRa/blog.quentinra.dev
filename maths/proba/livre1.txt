@@ -1,0 +1,145 @@
+Statistique et probabilités
+- Daniel FREDON
+- Myriam MAUMY-BERTRAND
+- Frédéric BERTRAND
+---------------------------------
+
+La fonction caractéristique de A, ou fonction
+indicatrice de A, est définie tel 1_A(x) = 1 si x in A sinon 0
+
+A^m_n
+est le nombre de suites distinctes à m éléments sans répétition qu’il est possible
+de former avec un ensemble de n éléments
+
+(n p)
+est le nombre de choix possibles de p éléments différents pris dans une collection
+de n objets, indépendamment de l’ordre dans lequel les éléments sont
+choisis.
+
+Formule du binôme de Newton
+
+Fonctions génératrices
+Nous appelons fonction génératrice d’une suite d’entiers naturels
+donc une f(x) qui corresponds à une somme.
+
+	* Décalage vers la droite : commence à 0
+	* Décalage vers la gauche : finit à n+1
+	* Mise à l’échelle : multiplication de tous les termes par lambda
+	* Addition : ajoute un terme lambda à tous les termes
+	* Différence : on soustrait au terme actuel le terme précédent
+	* Convolution : on multiplie chaque résultat avec le résultat au même indice d'une autre fonction génératrice
+	* Multiplication/Division par l’indice : multiplie/divise chaque terme par son indice
+
+Fonctions génératrices usuelles : consultez la fiche sur les séries entières du tome d’analyse
+
+Soit il reçoit 1 ou 2 bonbons
+x + (ou) x^2
+on a 4 enfants donc (x+x^2)^n ce qui donne (x+x^2)^4
+
+En faisant le développement de (x+x^2)^4, les coefficients devant
+les coefficient * x^{k}  désignent le nombre de façon de distribuer k bonbons
+à 4 enfants (on rappelle qu'il ne reçoit que 1 ou 2 donc on a un nombre fini de réponses).
+
+n <= 12
+3 types de beignets (choco, fraise, vanille)
+2 de chaque
+pas plus de 4 au choco
+
+choco >=2 <= 4 donc va en x4
+fraise >=2 <= 8 donc va en x8
+vanille >=2 <= 8 donc va en x8
+On multiplie les coefficients et on a la réponse.
+
+https://www.wolframalpha.com/input/?i=%28x%5E2%2Bx%5E3%2Bx%5E4%2Bx%5E5%2Bx%5E6%2Bx%5E7%2Bx%5E8%2Bx%5E9%2Bx%5E10%2Bx%5E11%2Bx%5E12%29*%28x%5E2%2Bx%5E3%2Bx%5E4%2Bx%5E5%2Bx%5E6%2Bx%5E7%2Bx%5E8%2Bx%5E9%2Bx%5E10%2Bx%5E11%2Bx%5E12%29%28x%5E2%2Bx%5E3%2Bx%5E4%29
+
+convergence absolue de la somme
+
+si la somme est sur un interval fini alors alors la somme converge absolument
+3 autres 4
+
+probas
+-------------
+
+F : L'ensemble des événements
+Tout singleton omega est appelé événement élémentaire.
+
+Ensemble des événements = sigma-algèbre ou une tribu
+
+	* ens vide et Omega inclus dans F
+	* chaque événements et son complémentaire dans F
+	* si on prends une suite d'événements dans F alors l'union/l'intersection est dans F
+
+Événements incompatibles
+	Impossible que A et B se réalisent simultanément
+
+appelée probabilité conditionnelle relative à A ou probabilité
+sachant A
+
+Formule des probabilités composées
+	Si on a une suite d'événements dont l'intersection est non nulle alors
+	on peut écrire PA_1 * P(A2|A1) * ...
+
+Système complet d’événements
+	* pour tous les événements l'intersection est nulle deux à deux
+	* union des événements corresponds à omega
+
+Formule des probabilités totales
+	La somme de toutes les réalisations de notre événement.
+
+Formule de Bayes
+	P(Ai|B) = (P(Ai)P(B|Ai)) / somme(j∈I, P(Aj)P(B|Aj))
+
+Variables aléatoires réelles.
+Variables aléatoires discrètes
+
+réelles : à valeurs dans R
+
+Fonction de répartition
+
+Soit X une variable aléatoire réelle définie sur un espace probabilisé (Omega, F, P) .
+Nous appelons fonction de répartition de la variable aléatoire X la fonction
+numérique réelle F_X définie par
+
+	\forall{x} \in \mathbb{R},\ F_x(x) = P(X \le x)
+
+Elle est compris entre 0 et 1 et est croissante sur R. Sa limite en moins l'infini
+est 0 et 1 en + l'infini. FX est continue à droite et admet une limite à gauche en tout point de R
+
+Variable aléatoire discrète
+	Dans un ensemble dénombrable.
+
+Loi d’une variable aléatoire discrète
+Soit X une variable aléatoire discrète définie sur un espace probabilisé (Omega, F)
+Nous appelons loi de la variable aléatoire X tel que
+
+	* somme des probabilités = 1
+	* probabilités sont supérieures/égales à 0
+	* probabiltié <= x c'est la somme des probabilités de tant que k <= x de p(X=k)
+
+Moments et fonctions génératrices d'une v.a. discrète
+
+Espérance mathématique
+	Nous disons que la variable aléatoire X admet une espérance mathématique
+	ou que la série des probabilités converge absolument.
+
+	Nous appelons alors espérance mathématique de X, la moyenne pondérée notée
+  E(X) et définie par ...
+
+  L_1 (Omega, F, P) désigne l'ensemble des variables aléatoires discrètes définies sur
+  Omega et admettant une espérance.
+
+Espérance d'une fonction d'une variable aléatoire
+	Lorsque g(X) admet une espérance mathématique alors
+	on a E[g(x)] soit Somme ... g(x_i) * ...
+
+	E(b) = b si b constant
+	E(aX+By) = aE(X) + bE(y)
+
+Moment simple et moment centré d'ordre r
+Soit r ∈ N^*. Sous réserve d'existence, nous appelons moment simple d'ordre r
+de la variable aléatoire X la valeur μ_r(X) = E(X^r).
+
+Moment d'ordre 1 : E(X)
+Moment d'ordre 2 : V(X)
+Moment d'ordre 3 : Skewness ou coefficient d’asymétrie
+Moment d'ordre 4 : Kurtosis ou coefficient d’aplatissement
