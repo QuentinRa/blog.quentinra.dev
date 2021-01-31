@@ -1,0 +1,100 @@
+R Statistical Software
+Vincent ISOZ, Daname KOLANI
+--------------------------------
+
+packages
+--------------
+
+Nombre très petit R renvoi des * (cf régression linéaire univariée, ...)
+options(digits= ) : précision nombres à virgule
+options(show.signif.stars=FALSE)
+
+(.packages()) : packages actuellement utilisés par la session
+
+dataset
+-------------
+
+Trouver des Dataset
+data(package = .packages(all.available = TRUE))
+
+https://www.qlik.com/us/products/qlik-sense/data-sources
+
+rdata
+---------------
+
+Les fichiers *.Rdata (fichiers binaires très rapides à charger et à enregistrer) vont stocker toutes
+les variables, dates frames, listes, matrices, vecteurs, etc. que vous avez créés ou modifiés pendant
+une session de travail R.
+
+save(variable, file = "path.Rdata");
+save.image(file = "path.Rdata"); # toutes
+load(file = "path.Rdata");
+
+Fonctions maths
+-----------------
+
+circular: tracer un cercle trigonométrique.
+
+outer : table logique (a&b : vrai/vrai => vrai, etc.)
+Rappelon que outer( ) correspond au "produit dyadique" ou "outer product" et qu'il a une place très
+importante en statistiques avancées comme nous l'avons démontré dans le cours théorique (estimation de
+paramètres via la méthode de vraisemblance et particulièrement via la matrice de Fisher).
+
+is.element : savoir si dans un ensemble
+intersect
+union
+setdiff = différence
+
+sd() : écart type
+iqr() : écart/étendue interquartile
+mad() : déviation absolue de la médian
+
+fivenum( ) qui renvoie respectivement le minimum, le 1er quartile (25ème centile),
+ la médiane (50ème centile), le 3ème quartile (75ème centile) et le maximum.
+
+ unique()
+
+Ou en passant par la fonction mlv( ) du package modeest:
+pour voir les plus fréquentes valeurs.
+
+Il y a aussi la commande describe( ) du package psych qui permet
+de se faire une idée du contenu d'un data frame.
+
+ou aggregate.
+
+Il y a aussi la commande native brkdn( ) qui signifie "breakdown" qui donne quelques informations triviales
+
+stat.desc( ) (pastecs)
+describeBy( ) (psych)
+summary_stats( ) (descriptr)
+
+if faut utiliser type=2
+
+Dans R, nous aurons alors les règles suivantes:
+• Si le skewness est nul, la distribution est symétrique (cela ne signifiant pas que la symétrie
+ a lieu sur un pic de la distribution car dans le cas bimodal l'axe
+ de symétrie peut-être entre les deux valeurs modales symétriques).
+ Si le skewness est positif, la distribution (la valeur modale/médiane)
+  est penchée à droite (ou il y a des valeurs extrêmes à droite).
+  Si le skewness est négatif, la distribution (la valeur modale/médiane) est penchée à gauche
+   (ou il y a des valeurs extrêmes à gauche)
+
+• Si le kurtosis est nul (mesokurtique) alors l'aplatissement est similaire à celui d'une distribution
+ Normale. Si la valeur d'excès est supérieure à 0 alors la distribution d'intérêt
+  (leptokurtique) est alors plus haute que celle d'une distribution Normale à moyenne égale
+   (inversement - platikurtique - si l'excès de kurtosis est négatif bien évidemment)
+
+descidist( ) du package fitdistrplus
+
+Nous pouvons ensuite représenter l'une ou l'autre des ces deux matrices sous la forme des ellipses
+ de corrélation de la loi Normale bivariée avec la commande plotcorr( ) du package ellipse:
+ou avec les packages ggplot2 et reshape2 nous pouvons constuire une heatmap de corrélations
+ avec les fonctions qplot( ) et melt( )
+
+nombres
+----------------
+
+Re(x) : partie réelle, Img(x) : partie imaginaire
+Mod, Arg, Conj
+
+Stop page 172

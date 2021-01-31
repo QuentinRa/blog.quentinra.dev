@@ -132,6 +132,8 @@ Espérance d'une fonction d'une variable aléatoire
 	Lorsque g(X) admet une espérance mathématique alors
 	on a E[g(x)] soit Somme ... g(x_i) * ...
 
+	Admet un espérance si la série est est absolument convergente.
+
 	E(b) = b si b constant
 	E(aX+By) = aE(X) + bE(y)
 
@@ -143,3 +145,74 @@ Moment d'ordre 1 : E(X)
 Moment d'ordre 2 : V(X)
 Moment d'ordre 3 : Skewness ou coefficient d’asymétrie
 Moment d'ordre 4 : Kurtosis ou coefficient d’aplatissement
+
+moment centré d'ordre r de X le réel μm_r (X) = E ((X − E(X))^r) = E ((X − μ)^r)
+= 0 si r = 1
+r = 2 = variance
+
+Les
+caractéristiques de forme des distributions sont associées aux moments
+centrés d'ordres r = 3 et r = 4.
+
+Variance et écart-type
+σ^2 ou σ^2_X μm_2 (X)
+
+écart-type de X = sqrt(σ) donc σ ou σ_X
+
+formule de Huygens
+e(x^2) - e^2(x)
+
+Var(aX + b) = a^2Var(X)
+
+E(X) = 0, alors X est une variable aléatoire centrée
+Var(X) = 1, alors X est une variable aléatoire réduite
+
+– Si X admet une variance non nulle, la variable X^* = (X − μX)/σ_X
+est appelée variable centrée et réduite associée à X.
+
+Moment d'ordre 3 : Skewness ou coefficient d’asymétrie
+
+	E((X-μ)^3)/σ^3
+
+Moment d'ordre 4 : Kurtosis ou coefficient d’aplatissement
+
+	E((X-μ)^4)/σ^4 - 3
+
+Fonction génératrice des moments
+	Fonction qui pour l'ensemble des t, alors l'espérance t*X inférieure à + l'infini
+	???
+
+Fonction génératrice
+	???
+
+k^2 = k(k − 1) + k
+
+Couples de variables aléatoires discrètes. Indépendance
+	Nous appelons loi d’un couple (X,Y) ou encore loi conjointe de X et Y
+	la probabilité P([X=xi] union [Y=yi]) avec Omega qui corresponds au produit cartésien de OmegaX OmegaY.
+
+	Si les deux Omega sont petits alors on peut faire un tableau à double entrée <3.
+
+	Conditions
+
+		* la somme i,j des probas vaut 1
+		* toutes les probas sont positives
+
+Lois marginales
+	Les v.a. X et Y sont appelées variables marginales du couple (X,Y). La loi de la
+  v.a. X, respectivement la loi de la v.a. Y du couple (X,Y) est appelée loi marginale
+  de X, respectivement loi marginale de Y.
+
+Lois conditionnelles
+	Nous appelons loi de X conditionnée par A, ou loi de X sachant A, la suite numérique
+	P_a([X = x_i])
+	Nous appelons
+  loi de X conditionnée par Y, ou sachant Y, la famille
+  P_(Y=y_j)([X = x_i]) donc si j'ai bien compris c'est les probabilités de X=x_i a travers la loi X.
+
+  	* Si X et Y sont indépendantes alors la loi de X sachant Y est égale à la loi de X
+
+---------------------------
+Lois discrètes usuelles finies
+
+62 (64 sur 160)

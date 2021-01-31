@@ -46,6 +46,7 @@ Général
 	* (embauche) https://www.fiverr.com/
 	* (emoji) https://emojipedia.org/smiling-face-with-halo/
 	* (team?) https://opencollective.com/
+	* (book) https://www.academia.edu/
 
 Images
 	*	https://www.remove.bg/fr

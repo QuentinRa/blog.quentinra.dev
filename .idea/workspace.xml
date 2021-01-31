@@ -29,6 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/save.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/proba/livre1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/livre1.txt" afterDir="false" />
     </list>
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
     <list id="35a1cab6-097d-4a11-944c-f8e3831e6d1c" name="cours web ajouts" comment="" />
@@ -312,7 +314,7 @@
       <workItem from="1612008248859" duration="22353000" />
       <workItem from="1612043115236" duration="9000" />
       <workItem from="1612082373477" duration="8916000" />
-      <workItem from="1612094602109" duration="7337000" />
+      <workItem from="1612094602109" duration="13221000" />
     </task>
     <servers />
   </component>
