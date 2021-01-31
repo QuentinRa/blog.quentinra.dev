@@ -28,17 +28,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/functional/r/files/op.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/files/op.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/files/html5.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/files/html5.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functional/ocaml/exercices/intro/s1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/ocaml/exercices/intro/s1.rst" afterDir="false" />
     </list>
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
     <list id="35a1cab6-097d-4a11-944c-f8e3831e6d1c" name="cours web ajouts" comment="" />
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
-    <list id="91f544b9-32a5-44b3-88b5-61cf542db8de" name="merge du cours terminé" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list id="91f544b9-32a5-44b3-88b5-61cf542db8de" name="merge du cours terminé" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,20 +59,6 @@
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/web/php/index.rst">
-      <ranges>
-        <range start1="6" end1="7" start2="6" end2="7" changelist="91f544b9-32a5-44b3-88b5-61cf542db8de" />
-        <range start1="43" end1="44" start2="43" end2="44" changelist="71afdc5f-c39b-47b5-8450-562b663807d8" />
-        <range start1="72" end1="72" start2="72" end2="74" changelist="71afdc5f-c39b-47b5-8450-562b663807d8" />
-        <range start1="88" end1="88" start2="90" end2="92" changelist="71afdc5f-c39b-47b5-8450-562b663807d8" />
-        <range start1="93" end1="96" start2="97" end2="100" changelist="71afdc5f-c39b-47b5-8450-562b663807d8" />
-        <range start1="97" end1="98" start2="101" end2="104" changelist="71afdc5f-c39b-47b5-8450-562b663807d8" />
-        <range start1="99" end1="100" start2="105" end2="106" changelist="71afdc5f-c39b-47b5-8450-562b663807d8" />
-        <range start1="112" end1="113" start2="118" end2="131" changelist="71afdc5f-c39b-47b5-8450-562b663807d8" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectId" id="1j3SOdW56l2HX11sGuoiPU6zFXG" />
   <component name="ProjectViewState">
@@ -328,7 +310,9 @@
       <workItem from="1611841992819" duration="24991000" />
       <workItem from="1611910300838" duration="23221000" />
       <workItem from="1611951179638" duration="5183000" />
-      <workItem from="1612008248859" duration="22225000" />
+      <workItem from="1612008248859" duration="22353000" />
+      <workItem from="1612043115236" duration="9000" />
+      <workItem from="1612082373477" duration="663000" />
     </task>
     <servers />
   </component>
