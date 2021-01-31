@@ -1,0 +1,99 @@
+exercice
+---------------------
+
+Idée : donner un affichage (vecteur)
+et demander comment on l'as eu.
+
+Strings
+--------------
+
+stringi ou stringr
+
+substring
+paste
+tolower
+toupper
+chartr // tr en shell
+strsplit
+grep // grep(pattern = "a" , Texte9, value = FALSE, fixed = TRUE)
+
+cours/théorie
+---------------
+
+FONCTIONS
+Lois de proba
+P Q D
+Beta  pbeta qbeta dbeta
+Binomiale pbinom qbinom dbinom
+Cauchy pcauchy qcauchy dcauchy
+Khi-deux pchisq qchisq dchisq
+Exponentielle pexp qexp dexp
+F pf qf df
+Gamma pgamma qgamma dgamma
+Géométrique pgeom qgeom dgeom
+Hypergéométrique phyper qhyper dhyper
+Logistique plogis qlogis dlogis
+Log Normale plnorm qlnorm dlnorm
+Binomiale négative pnbinom qnbinom dnbinom
+Normale pnorm qnorm dnorm
+Poisson ppois qpois dpois
+Student t pt qt dt
+Uniforme punif qunif dunif
+Weibull pweibull qweibull dweibull
+
+Par exemple pour la loi Normale, la densité est dnorm(x,mu,sigma)
+où mu et sigma représentent la moyenne et l’écart-type de la loi.
+
+gamma(n)=(n-1) !
+
+tracer
+-----------------
+
+persp/contour pour tracer
+
+image(x,y,z) # Pour l’image couleur
+contour(x,y,z,add=TRUE) # Pour le tracé des lignes de couleur
+
+library(rgl)
+plot3d # interactif
+
+utiles
+-----------------
+
+head/tail pour voir le début
+
+apply(matrice, 1 ou 2, fonction)
+	1 : colonnes, 2 : lignes
+
+maths
+---------------------
+
+P : fonction de répartition (Probabilité P(X≤k))
+Q : inverse de la fonction de répartition (Quantile)
+D : densité pour une loi continue (P(x=k) pour une loi discrète)
+
+det : retourne le déterminant d'une matrice
+solve : inverse aussi ou
+	library(matlib) (A est une 3,3)
+	echelon(A, diag(3), verbose=TRUE, fractions=TRUE)
+	// Affiche toutes les étapes
+
+5x = 10, que vaut x? solve(5,10)
+
+
+Rang
+	On rappelle que le rang est la dimension de l’image d’une matrice. Si le rang est égal à la taille de
+	la matrice, celle-ci est inversible, ses colonnes (et lignes) sont libres, elles forment une base
+	de l’espace.
+
+	library(matlib); R(m).
+
+structure
+-----------------
+
+Les accolades peuvent être omises s’il n’y a qu’une instruction.
+
+Les tableaux commencent à 1
+
+
+Stop page 52/451

@@ -2,13 +2,10 @@
 Bienvenue sur memorize
 ##########################################
 
-L'objectif de ce dépôt est de partager
-et réunir un maximum de cours. Ces cours seront probablement
-rédigés en grande partie par des étudiants mais n'importe
-qui peut y contribuer. Il vise les étudiants qui voudraient se rappeler
-certaines notions sans devoir rechercher de vieux de cours et également aider
-des personnes ayant des difficultés à comprendre un cours en leur proposant
-un autre support.
+L'objectif de ce site est de permettre à des étudiants
+d'expliquer à d'autres personnes leur cours. Les cours étant
+principalement écrits par des étudiants, il serait apprécié de signaler
+toute erreur que vous liriez.
 
 Les cours ont pour la majorité été pris en note dans l'un des établissements suivants
 	* département informatique de l'IUT de Sénart-Fontainebleau à Fontainebleau (Seine-et-Marne, France).
@@ -152,7 +149,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
 
 -----
 
-Ce site a été créé par Quentin Ramsamy--Ageorges (admin@lgs-games.com).
+Ce site a été créé par Quentin Ramsamy\--Ageorges (admin@lgs-games.com).
 
 | Version |release|.
 | Création le 20 juillet 2020.
