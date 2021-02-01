@@ -391,6 +391,135 @@ Le but des statistiques descriptives est de décrire une population connue.
 Celui des statistiques inférentielles est de donner des résultats sur une population inconnue
 à partir d’un échantillon (connu). C’est plus difficile et nécessite le recours aux probabilités.
 
+Test d’indépendance du Khi deux – Test de Fisher
+Ce test est utilisé pour étudier l’indépendance de deux variables qualitatives.
+C’est un des tests les plus célèbres
+----> recherche si ya une relation entre des variables
+
+Si les effectifs théoriques de chaque cellule sont supérieurs ou égaux à 5 alors T suit
+approximativement une loi du ² à (p-1)(q-1) degrés de liberté. Dans le cas contraire,
+il faut opérer des regroupements ou utiliser un test exact de Fisher. Certains n’utilisent
+d’ailleurs que ce test exact.
+> chisq.test(tableau,correct=FALSE)
+Si p-value ~= 0.05 alors possiblement faux sinon indépendantes.
+Ceci est confirmé par le calcul des résidus
+	* Calcul des résidus (contributions)
+	* regarde le $expected
+	Leurs carrés correspondent aux contributions. Plus la valeur du résidu est élevée, plus la cellule joue
+	un rôle dans la liaison entre les variables. Si le résidu est négatif, les modalités se repoussent, si
+	le résidu est positif, elles s’attirent.
+
+	Formule de calcul des résidus : (observed - expected) / sqrt(expected).
+	test$residuals
+
+Test exact de Fisher
+Dans le cas où les effectifs théoriques sont inférieurs à 5, il faut changer de test.
+> fisher.test(tableau)
+attention test gourmand
+
+Test du Khi deux d’adéquation ou de conformité
+L’utilité de ces tests est de comparer une distribution observée à une distribution théorique connue
+(normale, uniforme, poisson etc...) . Le but étant de vérifier, en général, les conditions
+d'application d'autres tests.
+>
+Pour cela nous allons mesurer "l'écart" entre les valeurs observées et les valeurs théoriques
+que l'on aurait si H0 était vraie. Ensuite nous comparons cet "écart" à des valeurs critiques...
+> chisq.test(nos_resultats , p = théorique)
+
+On souhaite voir si cette distribution est proche de la loi de Poisson. On va donc ajuster une distribution
+de Poisson à ces données. Nous choisirons une loi de paramètre 3 puisque
+la moyenne de notre échantillon donne 3. Le calcul des effectifs théoriques donne.
+
+c2<-sum((Freq-Chtheo)^2/Chtheo)
+Pval<-1-pchisq(c2,df=5-1-1) // df = degré de liberté. Je crois ya 5 groupes mais -1 et -1 ?
+> (p-1)(q-1) degrés de liberté
+> (1,2,...,p) et (1,2,...,q) de modalités
+> k-r-1 degrés de liberté où r est le nombre de paramètres de F0 estimés à partir des observations
+
+Tests de normalité
+Ce test a pour but de vérifier la normalité d’une population parent à partir d’un échantillon.
+Il sert, en général, de préliminaire à un autre test (paramétrique).
+
+R sait faire par défaut le test de Shapiro-Wilk. Si nous en voulons d’autres, il faut activer
+l’extension « nortest ». Nous retrouvons alors Anderson Darling, Cramer von Mises etc.
+
+Pour tous ces tests, l’hypothèse H0 est la normalité de la distribution. Si nous rejetons H0,
+la distribution parent a de fortes chances de ne plus être gaussienne.
+
+shapiro.test : dessus 5% alors probablement gaussienne
+library(nortest) ad.test(arbres$Hauteurs) Anderson-Darling normality test
+cvm.test(arbres$Hauteurs) Cramer-von Mises normality test
+
+Un test ne suffit JAMAIS pour conclure. Un graphique du type Droite de Henry est le complément indispensable.
+
+qqnorm(arbres$Hauteurs,xlab="Fractiles",ylab="Hauteurs",col="blue", main="Droite de Henry pour la variable Hauteurs",datax=TRUE) qqline(arbres$Hauteurs,datax=TRUE,col="red")
+
+R trace la fonction de répartition avec une échelle des ordonnées spéciale
+« gausso-arithmétique » (Y=aX+b si X est gaussien). Avec cette échelle, la fonction de répartition des distributions
+normales est représentée par une droite appelée « droite de Henry ».
+Par conséquent plus « l'allure » de la fonction de répartition de votre échantillon est linéaire
+plus cette distribution vérifie l'hypothèse de normalité.
+
+Tests sur les proportions (variable qualitative)
+	Test de comparaison d’une proportion à une valeur fixée, intervalle de confiance d’une proportion
+		Je crois on veut tester si un truc existe dans un échantillon.
+
+		prop.test(x,n,p0,correct=TRUE ou FALSE), alternative="two.sided" (default),
+		 "greater" or "less".)
+
+		 correct= sert à demander s’il doit y avoir correction de continuité
+		 alternative = sert à choisir l’hypothèse H1 : p=p0 ou p>p0 ou p<p0.
+
+		 Binomiale : H0
+		 Binomiale bilatéral : H1 jcrois
+
+		 Ex: 102 succès sur 140 avec proba 0.8
+		 prop.test(102,140,p=0.8,correct=FALSE)
+		 p-value < 5%  nous rejetons H0. p ne peut être égal à 80% au risque <5%*
+		 # binom.test(102,140,p=0.8) # alternative
+
+	Test de comparaison de deux proportions
+		Si on a deux lois avec x1 succès sur N1 et x2 sur N2
+		prop.test(c(x1,x2),c(N1,N2),correct=FALSE)
+		La pvaleur est très nettement inférieure à 5%. Il y a donc une différence très significative entre
+		x1 et x2.
+
+	Tests d'égalités de variances (Fisher, Bartlett)
+		Préliminaire pour tester le test précédent.
+
+		Les populations sont supposées normales18 et les échantillons qui en sont issus sont aléatoires et prélevés indépendamment19les uns des autres.
+
+		1. Test de Fisher (comparaison de 2 variances)
+			var.test(Note.Fr.~Sexe,data=stid)
+
+		2. Test de Bartlett (comparaisons multiples de variances)
+		Ce test permet de tester l'égalité de plusieurs variances simultanément
+		(Fisher ne permet d'en tester que 2) mais il est aussi moins puissant.
+			bartlett.test(vecteur1(quantitatif),vecteur2(qualitatif))
+
+	Tests d’égalité de moyennes (Student)
+		1. Test de Student de Comparaison d’une moyenne à une valeur fixée et intervalle de confiance
+
+		Notre échantillon étant de taille supérieure à 30, pas besoin de vérifier la normalité.
+
+		Nous allons ici comparer une moyenne à une valeur fixée à l’avance (indépendamment de l’échantillon).
+    Typiquement utilisé en contrôle de qualité
+
+		t.test(isel03$Taille,alternative="two.sided", mu=170)
+		Pour obtenir un simple intervalle de confiance de la moyenne il suffit de donner à R : t.test(isel03$Taille)$conf.int
+
+		2. Test de Student de comparaison de 2 moyennes
+
+		#T Test en supposant les variances égales (vérifié auparavant avec Fisher)
+		t.test(x=arbres1,y=arbres2,alternative="two.sided",var.equal=TRUE)
+
+		3. Test T pour données appariées (Paired)
+		Lorsque les échantillons ne sont pas indépendants, le test précédent n’est plus applicable.
+
+		Un plan B a été inventé dans le cas où les 2 échantillons n’en sont qu’un seul : par exemple
+		lorsque des mêmes individus ont été mesurés deux fois. Dans ce cas, nous calculons la différence
+		pour chaque individu (cohérent car ce sont les mêmes) et nous testons la nullité.
 
 
-Stop page 206/451
+
+Stop page 243/451
