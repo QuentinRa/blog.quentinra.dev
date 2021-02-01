@@ -4,8 +4,8 @@
 HTML
 ================================
 
-| :math:`\color{grey}{Version \ 0.3.7}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 30/01/2021}`
+| :math:`\color{grey}{Version \ 1.3.7}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 01/12/2021}`
 
 Il est important d'avoir lu le cours sur les généralités du web
 ainsi que d'avoir lu la partie HTML.
@@ -54,7 +54,7 @@ Conteneur :code:`<div> des balises </div>` (`div <https://www.w3schools.com/tags
 
 Lien/Ancre :code:`<a href='destination'>texte affiché</a>` (`a <https://www.w3schools.com/html/html_links.asp>`_)
 	Texte affiché qui change la page avec la valeur dans href. On utilise l'attribut
-	:code:`target="_blank"` pour ouvrir dans un nouvel onglet.
+	:code:`target="_blank"` pour ouvrir dans un nouvel onglet. On appelle souvent ça une ancre (a pour ancre).
 
 	Si vous ne savez pas la valeur d'un lien, mettez #. Si vous voulez un lien qui référence une balise
 	ayant un id alors vous utilisez #id à la fin de l'URL de destination.
@@ -101,12 +101,46 @@ Balise :code:`<ul> ... </ul>`
 Balise :code:`<li> ... </li>`
 	Utilisé dans une balise ul/ol. Voir `listes <https://www.w3schools.com/html/html_lists.asp>`_
 
+Balise :code:`<dl> <dt>word</dt><dd>def</dd> ... </dl>`
+	Une liste de mots (word) et leur définition (def).
+
 Balise :code:`<pre>truc</pre>` (`pre <https://www.w3schools.com/tags/tag_pre.asp>`_)
 	Une balise pre affiche exactement ce qu'il y dedans (respecte les espaces, etc.).
 
 Balise :code:`<code>code</code>` (`code <https://www.w3schools.com/tags/tag_code.asp>`_)
 	Utilisée pour affiche du code. Généralement ne fait pas la coloration syntaxique, il faudra
 	sûrement utiliser une librairie JS.
+
+Tableaux
+	On déclare un tableau avec la balise :code:`<table>`. Dedans on mets deux balises
+	:code:`<thead>` (qui contiendra l'en-tête) et :code:`<tbody>` (le contenu du tableau).
+
+	Dans la :code:`thead`, on met une balise :code:`tr` (=1 ligne de header) qui contient des balises
+	:code:`<th>nom colonne</th>`.
+
+	Dans la :code:`tbody`, on met une balise :code:`tr` (=1 ligne de body) qui contient des balises
+	:code:`<td>valeur</td>`.
+
+	.. code:: html
+
+		<table>
+		 <thead>
+		  <tr>
+		   <td>col1</td>
+		   <td>col2</td>
+		  </tr>
+		 </thead>
+		 <tbody>
+		  <tr>
+		   <td>ligne-1 col-1</td>
+		   <td>ligne-1 col-2</td>
+		  </tr>
+		  <tr>
+		   <td>ligne-2 col-1</td>
+		   <td>ligne-2 col-2</td>
+		  </tr>
+		 </tbody>
+		</table>
 
 5. Formulaires
 ===========================

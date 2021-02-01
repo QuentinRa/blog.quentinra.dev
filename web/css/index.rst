@@ -1,11 +1,11 @@
 .. _css:
 
 ================================
-CSS
+CSS (Cascading Style Sheets)
 ================================
 
-| :math:`\color{grey}{Version \ 0.2.6}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 23/01/2021}`
+| :math:`\color{grey}{Version \ 0.8.7}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 01/02/2021}`
 
 Il est important d'avoir lu le cours sur les généralités du web
 ainsi que d'avoir lu les parties HTML et CSS.
@@ -89,6 +89,26 @@ et on détermine les propriétés des éléments sélectionnés.
 			<!-- on aura .text-small, .text-red et #texte-intro comme sélecteurs disponibles -->
 			<p class="text-small text-red" id="texte-intro">...</p>
 
+Il est possible d'aller plus loin dans la sélection en utilisant
+un sélecteur basé sur l'état d'une balise, par exemple un style si la souris est au dessus d'un lien
+ou encore si on clique sur un bouton.
+
+.. code:: css
+
+	balise:hover {} /* style au survol */
+	balise:active {} /* style d'un bouton cliqué */
+	balise:visited {} /* style d'un lien visité */
+	...
+
+Il existe encore plus de possibilités
+
+	* style d'une balise contenue dans une autre :code:`balise1 > balise2`
+	* une balise ayant deux classes de styles :code:`.classe1.classe2`
+	* récupérer le nième élément d'une div (https://www.w3schools.com/cssref/sel_nth-child.asp)
+	* ...
+
+La liste complète est ici : https://www.w3schools.com/cssref/css_selectors.asp.
+
 3. Valeur de styles
 =================================
 
@@ -136,6 +156,8 @@ Des propriétés notables sont
 	* margin : mets des marges entre le composant et l'extérieur
 	* padding : mets des marges entre le contenu du composant et sa bordure
 	* :code:`scroll-behavior:smooth;` : a mettre a body, fait que la défilement (barre droite) est doux
+
+Vous pouvez faire des calculs avec :code:`calc(...)`.
 
 4. Faire des constantes
 =========================

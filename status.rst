@@ -20,6 +20,7 @@ UML                    Diagramme de déploiement               \
 Méthodologies          TDD, BDD et pair programming           \
 Méthodologies          SOLID, https://suckless.org/           \
 UML                    SOLID                                  \
+CSS                    SCSS et Animations                     \
 ====================== ====================================== =========================
 
 Ajout de cours

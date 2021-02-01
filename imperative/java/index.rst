@@ -5,17 +5,17 @@ JAVA
 ================================
 
 | :math:`\color{grey}{Version \ 0.8.15}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 20/01/2021}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 01/02/2021}`
 
 1. Introduction  :code:`théorique`
 ===================================
 
 Java est un langage dont le code fonctionne sur n'importe qu'elle machine
-(Write once, run anywhere). La compilation d'une fichier java (.java)
+(Write once, run anywhere). La compilation d'un fichier java (.java)
 produit un fichier au langage machine (.class).
 
 Java est un langage orienté objet ce qui veux dire que tout
-(8 exceptions = 8 types primitifs) est représenté sous ce qu'on appelle une classe.
+(8 exceptions = 8 types primitifs) est représenté par ce qu'on appelle une classe.
 
 Le vocabulaire est requis avant de continuer. Avoir Java d'installé, ça aide.
 
@@ -170,6 +170,7 @@ sûr (search: code signing certificate).
 **Crédits**
 	* Florent MADELAINE (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Luc HERNANDEZ (enseignant à l'IUT de Sénart-Fontainebleau)
+	* David ROUSSEL (enseignant à l'ENSIIE)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**

@@ -9,6 +9,7 @@ Portée des variables
 ○ $_GET : paramètres d’URL
 ○ $_POST : valeurs passées par POST
 ○ $_SERVER : informations sur le script (nom, chemin…), client (IP, port…), serveur…
+	session_start()
 ○ $_SESSION : valeurs stockées dans les sessions
 
 syntaxe heredoc : <<<
@@ -37,5 +38,7 @@ https://www.php.net/manual/fr/reserved.variables.server.php
 https://www.php.net/manual/fr/reserved.variables.session.php
 https://www.php.net/manual/fr/reserved.variables.cookies.php
 https://www.php.net/manual/fr/language.functions.php
+
+Modèle MVC
 
 Page 34 à 45 (PDO)+ Injections ?
