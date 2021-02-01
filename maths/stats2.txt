@@ -23,40 +23,7 @@ grep // grep(pattern = "a" , Texte9, value = FALSE, fixed = TRUE)
 cours/théorie
 ---------------
 
-P : fonction de répartition (Probabilité P(X≤k))
-Q : inverse de la fonction de répartition (Quantile)
-D : densité pour une loi continue (P(x=k) pour une loi discrète)
-R : échantillon aléatoire suivant la loi en question (Random)
-
-FONCTIONS
-Lois de proba
-P Q D R
-Beta  pbeta qbeta dbeta rbeta
-Binomiale pbinom qbinom dbinom rbinom
-Cauchy pcauchy qcauchy dcauchy rcauchy
-Khi-deux pchisq qchisq dchisq rchisq
-Exponentielle pexp qexp dexp rexp
-F pf qf df rf
-Gamma pgamma qgamma dgamma rgamma
-Géométrique pgeom qgeom dgeom rgeom
-Hypergéométrique phyper qhyper dhyper rhyper
-Logistique plogis qlogis dlogis rlogis
-Log Normale plnorm qlnorm dlnorm rlnorm
-Binomiale négative pnbinom qnbinom dnbinom rnbinom
-Normale pnorm qnorm dnorm rnorm
-Poisson ppois qpois dpois rpois
-Student t pt qt dt rt
-Uniforme punif qunif dunif runif
-Weibull pweibull qweibull dweibull rweibull
-
-Par exemple pour la loi Normale, la densité est dnorm(x,mu,sigma)
-où mu et sigma représentent la moyenne et l’écart-type de la loi.
-
-gamma(n)=(n-1) !
-
-Ainsi pour calculer P(X=2) pour une loi binomiale B(5,1/3) On fait : dbinom(x=2,size=5,prob=1/3)
-Pour P(X≤2) on aurait fait : pbinom(q=2,size=5,prob=1/3)
-Calculer P(X>2) pour une loi normale N(1,3) : 1-pnorm(q=2,mean=1,sd=3)
+...
 
 tracer
 -----------------
@@ -185,10 +152,6 @@ Les tableaux commencent à 1
 
 saveRDS (saveRDS(object = ....)) et readRDS pour save des données.
 
-Factor : qualitative
--> quantitative : entiers, ...
--> qualitative : valeur (Homme, Femme, ...)
-
 Factor permet de qualifier les données, par exemple de créer des groupes
 disant que 1 corresponds à une valeur et 2 à une autre.
 	-> levels()
@@ -220,18 +183,6 @@ col=rainbow(10)
 
 esprit d'analyse
 ----------------------
-
--> summary() permet de calculer des statistiques élémentaires sur les variables quantitatives
-
-Pour les autres fonctions, R connaît la variance (var),
-l’écart-type (sd) les quantiles (quantile).
-
-On va généralement partitionner les résultats entre
--> apprentissage : analyse/construire un modèle
--> validation : vérifier notre modèle
-On veut donc être assuré qu’un seul et même individu n’a pas pu servir à construire ET
-à valider le modèle. On parle de validation croisée ou de modélisation supervisée.
--> On peut utiliser sample
 
 En statistique, on est très souvent amené à changer le type des variables. Par exemple,
 une variable âge (quantitative) peut être transformée en une variable qualitative
@@ -266,16 +217,6 @@ Recodage d’une variable qualitative en qualitative
 -> fct_collapse(v, "col" = c("old1","old2"))
 -> elle sort aussi à regouper des valeurs pareils genre eu, Europ, Europe, ...
 
-Plusieurs solutions sont possibles : supprimer les individus (la pire), considérer la catégorie
-« manquant » comme une valeur à part entière (pour les variables qualis),
-remplacer les valeurs manquantes par des valeurs les plus adaptées (en tenant compte des
-liaisons avec les autres variables)…
-Cette dernière solution porte le doux nom d’imputation des données manquantes. R est très
-très fort là dedans, car il possède des extensions dédiées très puissantes. Cela dit,
-comme je le disais au début, ce ne sont que des solutions de « rattrapage »,
-il vaut mieux TOUT faire pour avoir le moins possible de données manquantes.
--> library(visdat) vis_miss(stid) : voir données manquantes graphiquement
-
 ----> Statistiques descriptives
 --> Variables qualitatives
 ----> Diagramme à bandes (barplot)
@@ -287,17 +228,6 @@ il vaut mieux TOUT faire pour avoir le moins possible de données manquantes.
 	#Pourcentage total prop.table(tableau)
 	#Pourcentage ligne prop.table(tableau,1)
 	#Pourcentage colonne prop.table(tableau,2)
-
-Variables quantitatives
-	* Rappelons qu'une variable quantitative est en général une variable évaluée
-	par des nombres réels. Elle est quantifiable.
-
-	Il y en a de deux sortes.
-		Les variables quantitatives discrètes qui ne prennent que quelques valeurs
-		Les variables quantitatives continues qui peuvent en prendre beaucoup
-
-	Une variable n'est pas quantitative parce qu'elle prends des entiers comme valeurs.
-	Et inversement, une variable quantitative n'est pas forcément un nombre.
 
 Le package pivottabler permet de faire des tableaux de ce genre, très sophistiqués.
 	install.packages('pivottabler') library(pivottabler)
