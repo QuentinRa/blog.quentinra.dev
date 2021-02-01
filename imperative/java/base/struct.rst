@@ -95,3 +95,9 @@ Les opérateurs en c sont :
 
 Sur des chaines de caractères, vous pouvez faire la concaténation
 avec :code:`+`.
+
+Le comparateur :code:`==` compare deux adresses. La méthode :code:`equals` est censé être utilisée comme
+comparateur mais elle ne fait que comparer les adresses par défaut à moins d'avoir été réécrite
+sur le principe de l'héritage. Il est donc recommandé
+d'utiliser :code:`objet.equals(unAutreObjet)` si vous voulez tester si deux objets
+sont égaux.

@@ -5,7 +5,8 @@ Types
 Java possède 8 types primitifs
 qui ne sont pas des objets.
 
-Les classes sont des types, et chaque type primitif à une classe associée.
+Les classes sont également des types, et chaque type primitif à une classe associée
+(Integer pour int, ...).
 
 ======= ===== ============ ===========
 Type    Bits  Description  Notation

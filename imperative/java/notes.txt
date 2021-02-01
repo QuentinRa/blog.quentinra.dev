@@ -1,15 +1,4 @@
-Note: Le comparateur == compare deux adresses. La méthode equals est censé être utilisée comme
-comparateur mais elle ne fait que comparer les adresses par défaut à moins d'avoir été réécrite
-sur le principe de l'héritage
-
-passage par valeur.référence
-
-En java, il n'existe pas de notion d'adresse. Les types primitifs sont passés par valeurs.
-Les objets sont passés par référence. (transmettre une object à transmet sa référence, ce qui
-reviens à un passage par adresse en C).
-
 ------------------
-classe = type
 
 itérateur
 
@@ -23,13 +12,3 @@ Classes sympas
 JOptionPane //affiche un popup de dialog
 System //retourne un saut de ligne du système, système d'exploitation actuel, ...
 JFileChooser //sélectionner un fichier
-
-more
---------------------------
-
-zip4j
-install4j
-yguard/proguard (Obfuscator)
-protector4j
-easy jre
-innodb
