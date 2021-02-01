@@ -221,14 +221,7 @@ col=rainbow(10)
 esprit d'analyse
 ----------------------
 
-Superpose histogramme + courbe pour essayer de trouver la loi.
-
-summary() et/ou head().
-	-> summary() permet de calculer des statistiques élémentaires sur les variables quantitatives
-
-On peut check les dimensions (dim()) voir combien de données on manipule.
-On peut check names() : les noms des colonnes.
-str() : voir les types des colonnes et avoir une idée des valeurs.
+-> summary() permet de calculer des statistiques élémentaires sur les variables quantitatives
 
 Pour les autres fonctions, R connaît la variance (var),
 l’écart-type (sd) les quantiles (quantile).
@@ -272,13 +265,6 @@ Recodage d’une variable qualitative en qualitative
 -> library(forcats)
 -> fct_collapse(v, "col" = c("old1","old2"))
 -> elle sort aussi à regouper des valeurs pareils genre eu, Europ, Europe, ...
-
-La gestion des valeurs manquantes est un très très gros sujet en statistique.
-La morale est qu’il vaut mieux ne pas en avoir ! Notre monde étant imparfait,
-il va falloir apprendre à les repérer et les gérer.
--> complete.cases(stid)
--> retourne le nombre de NA
--> complete : FALSE : au moins une donnée manquante pour l’individu. TRUE : aucune donnée manquante.
 
 Plusieurs solutions sont possibles : supprimer les individus (la pire), considérer la catégorie
 « manquant » comme une valeur à part entière (pour les variables qualis),
