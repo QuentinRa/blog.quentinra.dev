@@ -29,7 +29,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/php/file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/web/php/file.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/php/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/php/index.rst" afterDir="false" />
     </list>
@@ -316,7 +316,7 @@
       <workItem from="1612043115236" duration="9000" />
       <workItem from="1612082373477" duration="8916000" />
       <workItem from="1612094602109" duration="21316000" />
-      <workItem from="1612166376941" duration="15245000" />
+      <workItem from="1612166376941" duration="18057000" />
     </task>
     <servers />
   </component>

@@ -4,7 +4,7 @@
 PHP
 ================================
 
-| :math:`\color{grey}{Version \ 0.7.11}`
+| :math:`\color{grey}{Version \ 0.9.12}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 01/02/2021}`
 
 1. Introduction
@@ -40,6 +40,17 @@ URI (Universal Resource Identifier)
 	On utilise souvent cette notion. Une url est de la forme https://domaine.com/...
 	par exemple. Ici la partie après le nom du serveur donc les ... constituent
 	ce qu'on appelle l'URI.
+
+Généralement pour avoir des informations sur le serveur (verifier tout est bon, etc),
+on fait un script index.php dans notre dossier public_html/www avec phpinfo();
+qui retourne des infos sur le serveur
+
+.. code:: php
+
+	<?php
+	phpinfo();
+
+On peut activer les erreurs avec :code:`error_reporting(E_ALL);`.
 
 2. Ce qu'il faut savoir
 ===========================
@@ -234,7 +245,45 @@ sa valeur entre deux appels de la fonction (comme en C).
 6. Classes et objets
 ======================
 
-...
+Une classe est un ensemble permettant de définir les propriétés d'un concept abstrait.
+On définit des propriétés (attributs) et des fonctions appelés méthodes qui modélisent
+son comportement. On parle d'instanciation lorsqu'on crée un objet c'est à dire une version
+de la classe dans laquelle on a donné des valeurs aux attributs.
+
+Une grande partie de ce qui suit est faisable en JAVA (notamment les public/private/protected,
+le constructeur, le this, l'héritage avec extends/implements, les statics/final, toString,
+abstract, exceptions, ...)
+donc vous devez aller voir les bases pour des uses complexes...
+
+.. code:: php
+
+	class MaClasse {
+	 public $attribut;
+
+		// constructeur
+    public function __construct() {
+			setAsFive();
+    }
+
+	 public function setAsFive() {
+	  $this->attribut = 5; // l'attribut contiendra 5
+	 }
+	}
+
+	$c = new MaClasse(); // instanciation
+	$c->attribut = 7;
+	$c->setAsFive(); // vaut 5
+
+On utilise :code:`$instance->...` pour accéder aux propriétés de l'objet
+depuis une instance. A l'intérieur de la classe, on utilise :code:`$this->...` (ou self) pour utiliser
+un attribut/une fonction de la classe.
+
+On accède à un attribut/fonction statique avec :code:`NomClasse::$variable` (ou fonction).
+
+On utilisera :code:`parent` (au lieu de :code:`super` en JAVA) pour référencer la classe
+parent (ex: :code:`parent::__construct();` par exemple).
+
+On peut instancier une classe depuis une String : :code:`$cours = "PHP"; new $cours();`
 
 7. Requêtes GET/POST
 =======================
@@ -286,6 +335,10 @@ Vous pouvez utiliser des filtres pour vérifier le contenu de vos formulaires
 		* FILTER_VALIDATE\_ : on valide les données.
 
 Bien sur, vous pouvez faire vos vérifications à la main ou ne pas en faire.
+
+Vous pouvez supprimer les espaces (avant/après) avec :code:`trim()`. Et
+vous pouvez remplacer les :code:`\n` par des :code:`<br>` ou inversement
+avec :code:`nl2br`.
 
 8. Sessions et Cookies
 ========================
@@ -372,6 +425,9 @@ Exemple avec PDO
 		$sth->bindValue(':user' , $user, PDO::PARAM_STR);
 		$sth->bindValue(':password', $pwd , PDO::PARAM_STR);
 		$stmt->execute();
+		// ou requête non préparée
+		$res = $pdo->query("code sql");
+		// fait un $res->fetch() pour parcourir les résultats
 
 10. Modèle MVC
 =======================

@@ -2,25 +2,3 @@ syntaxe heredoc : <<<
 <<<EOD
 Ceci est une chaîne.
 EOD; // même identifiant qu’au début
-
-explode/trim
-
-nl2br
-de manière à convertir les sauts lignes en balise <br />.
-
-class SimpleClass
-{
-public $var = ‘une valeur par défaut’;
-public function displayVar() {
-echo $this->var;
-}
-}
-$s = new SimpleClass();
-$s->displayVar();
-$foo->foo
-// Montre toutes les erreurs
-error_reporting(E_ALL);
-
-Modèle MVC
-
-Page 34 à 45 (PDO)+ Injections ?
