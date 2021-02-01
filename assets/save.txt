@@ -12,8 +12,9 @@
 	digraph {
 		size="10,8";
   	rankdir="LR";
-  	a-> d [arrowhead = none];
-  	a [style=filled,color=red];
+  	"Bourse" -> "Opéra" [ label="5" ];
+		a [style=filled,color=red];
+    a -> b [arrowhead = none];
 	}
 
 .. method:: ...

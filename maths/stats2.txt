@@ -191,6 +191,8 @@ Factor : qualitative
 
 Factor permet de qualifier les données, par exemple de créer des groupes
 disant que 1 corresponds à une valeur et 2 à une autre.
+	-> levels()
+	-> droplevels()
 
 Si vous avez de nombreuses variables qualitatives dans votre fichier,
 il est possible que R les voie comme du texte. Pour éviter de faire factor()
@@ -205,12 +207,24 @@ Sous-partie d'un dataframe
 	-> stid : fichier
 	-> sexe==2 : condition
 
+library(lattice)
+	regroup<-make.groups(nom=valeur, ...)
+
+merge(x, y, by="name")# fusionne les data frames x et y par la colonne name.
+
+order(vecteur) : donne les indexes dans l'ordre
+
+range(variable) : min et max
+
+col=rainbow(10)
+
 esprit d'analyse
 ----------------------
 
 Superpose histogramme + courbe pour essayer de trouver la loi.
 
 summary() et/ou head().
+	-> summary() permet de calculer des statistiques élémentaires sur les variables quantitatives
 
 On peut check les dimensions (dim()) voir combien de données on manipule.
 On peut check names() : les noms des colonnes.
@@ -219,6 +233,164 @@ str() : voir les types des colonnes et avoir une idée des valeurs.
 Pour les autres fonctions, R connaît la variance (var),
 l’écart-type (sd) les quantiles (quantile).
 
-On étudie aussi chaque partie
+On va généralement partitionner les résultats entre
+-> apprentissage : analyse/construire un modèle
+-> validation : vérifier notre modèle
+On veut donc être assuré qu’un seul et même individu n’a pas pu servir à construire ET
+à valider le modèle. On parle de validation croisée ou de modélisation supervisée.
+-> On peut utiliser sample
 
-Stop page 101/451
+En statistique, on est très souvent amené à changer le type des variables. Par exemple,
+une variable âge (quantitative) peut être transformée en une variable qualitative
+(« Enfant », « Adulte », « Personne âgée ») pour les besoins d’une étude, ou pour
+faciliter une interprétation.
+-> fait des sélection d'indices et on réécrit les valeurs de la sélection
+-> discrétisation non supervisée (on ne sait pas comment découper, laisse R faire)
+	-> library(arules)
+		-> discretize(v, method = "frequency", breaks = 5)
+			-> on veut 5 groupes
+		-> discretize(v, method = "interval", breaks = 4)
+			-> on veut 4 classes de même amplitude (donc 1-10 11-20 ...
+		-> method = "cluster" (homogène)
+			-> fait des groupes assez écartés
+	-> library(ggplot2)
+	-> ggplot(essai, aes(x = Age,fill=Recodx)) + geom_dotplot(dotsize = 3, binwidth=0.9,stackdir = "center")
+-> Discrétisation supervisée
+	-> on découpe mais en se basant sur une var qualitative (cible)
+	-> on va essayer de former des groupes avec un maximum de valeurs homogènes/identiques/proches
+	-> l'’algorithme va maximiser le khi-deux de liaison entre les deux variables qualitatives obtenues
+	-> library(discretization); res<-chiM(data=essai,alpha=0.05)
+-> utilité faire des groupes puis étudier les sous-groupes
+-> genre dans un groupe la répartition etc.
+
+Recodage d’une variable qualitative en qualitative
+->library(forcats)
+-><-fct_recode(stid$Sexe,"H"="1","F"="2") // transforme "1" en "H"
+// ou alors on utilise les indexes
+
+-> regouper (utile lorsque Khi deux et que les effectifs théoriques sont inférieurs à 5)
+-> library(forcats)
+-> fct_collapse(v, "col" = c("old1","old2"))
+-> elle sort aussi à regouper des valeurs pareils genre eu, Europ, Europe, ...
+
+La gestion des valeurs manquantes est un très très gros sujet en statistique.
+La morale est qu’il vaut mieux ne pas en avoir ! Notre monde étant imparfait,
+il va falloir apprendre à les repérer et les gérer.
+-> complete.cases(stid)
+-> retourne le nombre de NA
+-> complete : FALSE : au moins une donnée manquante pour l’individu. TRUE : aucune donnée manquante.
+
+Plusieurs solutions sont possibles : supprimer les individus (la pire), considérer la catégorie
+« manquant » comme une valeur à part entière (pour les variables qualis),
+remplacer les valeurs manquantes par des valeurs les plus adaptées (en tenant compte des
+liaisons avec les autres variables)…
+Cette dernière solution porte le doux nom d’imputation des données manquantes. R est très
+très fort là dedans, car il possède des extensions dédiées très puissantes. Cela dit,
+comme je le disais au début, ce ne sont que des solutions de « rattrapage »,
+il vaut mieux TOUT faire pour avoir le moins possible de données manquantes.
+-> library(visdat) vis_miss(stid) : voir données manquantes graphiquement
+
+----> Statistiques descriptives
+--> Variables qualitatives
+----> Diagramme à bandes (barplot)
+----> Diagramme à bandes ordonnées (sort puis barplot)
+      Parfois, on peut souhaiter trier selon les effectifs (Pareto).
+--> Une variable qualitative ordinale : trié les facteurs (levels()[c(1,3,2)]
+--> Liaison entre deux variables qualitatives : tableaux croisés
+	-> La fonction table permet de faire cela pour les effectifs, prop.table pour les fréquences
+	#Pourcentage total prop.table(tableau)
+	#Pourcentage ligne prop.table(tableau,1)
+	#Pourcentage colonne prop.table(tableau,2)
+
+Variables quantitatives
+	* Rappelons qu'une variable quantitative est en général une variable évaluée
+	par des nombres réels. Elle est quantifiable.
+
+	Il y en a de deux sortes.
+		Les variables quantitatives discrètes qui ne prennent que quelques valeurs
+		Les variables quantitatives continues qui peuvent en prendre beaucoup
+
+	Une variable n'est pas quantitative parce qu'elle prends des entiers comme valeurs.
+	Et inversement, une variable quantitative n'est pas forcément un nombre.
+
+Le package pivottabler permet de faire des tableaux de ce genre, très sophistiqués.
+	install.packages('pivottabler') library(pivottabler)
+
+	qhpvt(notes, rows=c("Groupe"),columns=c("Bac"),
+	c("Moy. Français"="mean(Français)","ecart_typ Fra"="sd(Français)"),
+	 formats=list("%.1f"), totals=list("Groupe"="Ensemble"))
+
+	totals='totals=NONE'
+
+	Ultra cool ! Genre on peut avoir les moyennes pour chaque filière (colonne) par rapport
+	aux Groupes (G1, G2, G3, G4) et ajouter une ligne total avec
+	la moyenne pour tous les groupes selon chaque filière.
+	La deuxième liste c'est genre des sous-catégories de la colonne (donc pour chaque colonne
+	on calcule ça).
+	On peut diviser les lignes aussi.
+
+Lorsque le skewness est proche de 0, la distribution est symétrique.
+Kurtosis est un coefficient mesurant l'aplatissement
+-> on peut voir par exemple si ya autant partout (k=faible) ou alors ya un pic (k=important)
+-> Kurtosis=3 = loi gaussienne
+
+Discrète
+-> on utilise la fonction barplot en augmentant l’espace entre les barres (space=).
+
+Histogramme des densités (prob=TRUE)
+Dans certains cas, il est indispensable de tracer un histogramme des densités
+(=effectif/(eff. total * largeur classe)) au lieu des effectifs. Par exemple,
+pour des classes de largeur inégales, ou la superposition d'une courbe de densité de proba.
+---> au lieu d'avoir un histogramme d'effectifs
+
+ecdf
+	-> fonction de répartition
+	-> Fonction de répartition avec superposition d’une loi théorique
+
+On voit ici que la taille des STID193 suit approximativement une loi gaussienne.
+Cela peut être confirmé par un test de normalité.
+
+Boxplot
+	Ils sont pourtant très utiles, car ils représentent sur un seul graphique : min, max, Q1,Q2,Q3
+	et la moyenne (haut : Q3 + 1.5h, Q3, Mediane, Q1, Q1-1.5h)
+	On rappelle que les valeurs extrêmes sont inférieures à Q1-1.5(Q3-Q1) ou supérieures à Q3+1.5(Q3-Q1).
+
+Le « Taille ~ Groupe » veut dire, que l’on va distinguer la taille selon les groupes.
+Attention : Il faut pour cela que Groupe soit qualitative.
+
+Cartographie simple avec R, Carte choroplèthe
+	R possède la capacité de représenter des données géographiques grâce à ggplot.
+	library(ggplot2) library(dplyr) require(maps) require(viridis)
+	world_map <- map_data("france")
+	left_join(donnees, france_map, by = "region")
+
+On peut ajouter des droites pour se repérer davantage sur le graphique.
+abline(h=mean(stid$Taille)) abline(v=mean(stid$Poids))
+
+Ajustement linéaire
+Coefficient de corrélation (cor) et une droite de régression (lm)
+coefficients(modele)
+Le coefficient de corrélation linéaire est assez élevé (un test le prouverait).
+Le nuage a une forme allongée, on peut donc effectuer un ajustement linéaire.
+Il est possible de récupérer les valeurs des résidus (residuals(modele)) et les valeurs
+y prédites (fitted(modele)).
+
+Matrices de graphiques (pairs, GGally)
+C’est utile pour étudier la liaison entre plusieurs variables numériques
+
+Matrice des corrélations
+Ces matrices sont utiles pour repérer les liens entre les variables quantitatives.
+Les coefficients de corrélation linéaire sont calculés et représentés sous forme de carrés
+de couleurs Pour cela, nous avons besoin d’une extension corrplot.
+library(corrplot)
+corrplot(M, method="circle")
+R possède des graphiques intéressants pour représenter simultanément des variables qualitatives et quantitatives.
+
+Statistique inférentielle (tests)
+Le but des statistiques descriptives est de décrire une population connue.
+Celui des statistiques inférentielles est de donner des résultats sur une population inconnue
+à partir d’un échantillon (connu). C’est plus difficile et nécessite le recours aux probabilités.
+
+
+
+Stop page 206/451
