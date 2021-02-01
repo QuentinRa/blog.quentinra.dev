@@ -29,6 +29,8 @@ Résumé
 	* JavaScript : animations dans le navigateur (fichier .js)
 	* PHP (+SQL) : code qui modifie l'HTML avant de l'envoyer, côté serveur (fichier .php)
 
+On parle de FrontEnd : HTML/CSS/JS et BackEnd : PHP/SQL.
+
 Il est recommandé de lire les points suivants car c'est utile et certains
 vous feront gagner du temps.
 

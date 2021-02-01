@@ -4,8 +4,8 @@
 PHP
 ================================
 
-| :math:`\color{grey}{Version \ 0.4.9}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 30/01/2021}`
+| :math:`\color{grey}{Version \ 0.7.11}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 01/02/2021}`
 
 1. Introduction
 ===================================
@@ -36,6 +36,11 @@ raccourcie qui fait un echo
 	<!-- fait exactement pareil que celle plus haut donc echo ... -->
 	<p><?="Hello World, we are the ".date("Y-m-d")." !"?></p>
 
+URI (Universal Resource Identifier)
+	On utilise souvent cette notion. Une url est de la forme https://domaine.com/...
+	par exemple. Ici la partie après le nom du serveur donc les ... constituent
+	ce qu'on appelle l'URI.
+
 2. Ce qu'il faut savoir
 ===========================
 
@@ -47,7 +52,7 @@ On utilise :code:`echo` pour écrire du texte PHP dans de l'HTML.
 
 Vous pouvez savoir si une variable existe avec :code:`isset($variable)`.
 A l'inverse, la fonction :code:`unset($variable)` vous permet de détruire
-une variable.
+une variable. Vous pouvez regarder si une variable est vide avec :code:`empty($var)`.
 
 Vous pouvez utiliser :code:`''` ou :code:`""` pour du texte, mais dans le premier cas
 alors les variables seront considérés comme du texte alors que dans le second
@@ -105,7 +110,7 @@ Les opérateurs traditionnels se font avec :code:`>, <, >=, <=`.
 
 .. [#2] pour éviter les mauvaises comparaisons Si les types sont différents on utilise la comparaison stricte.
 
-Les structures (if, for, while, ...) existent ainsi que les mots clefs :code:`continue` (passer au tour suivant)
+Les structures (if, for, while, switch) existent ainsi que les mots clefs :code:`continue` (passer au tour suivant)
 et :code:`break` (quitter boucle). Leur déclaration est la même qu'en C, hormis le $ devant le nom
 des variables. Il existe une nouvelle boucle : le foreach (=for i in) qui sera expliquée dans la partie
 sur les tableaux.
@@ -209,6 +214,23 @@ fonction retourne une valeur, alors on la retourne avec :code:`return valeur;`.
 	my_pow(5, 2); // 5^2 = 25
 	my_pow(5, 3); // 5^3 = 125
 
+Il existe un mur entre reste du code/code de la fonction donc les variables ne sont
+pas partagées sauf si elles sont globales.
+
+.. code:: php
+
+	<?php
+	global $var; // déclare, mais il faudra lui donner une valeur
+	$var = 5; // valeur
+
+	function f(){
+	 global $var; // recharge la variable dans la scope
+	 echo $var; // ok: donne 5
+	}
+
+On peut également déclarer une variable static. Une telle variable conserve
+sa valeur entre deux appels de la fonction (comme en C).
+
 6. Classes et objets
 ======================
 
@@ -218,7 +240,8 @@ fonction retourne une valeur, alors on la retourne avec :code:`return valeur;`.
 =======================
 
 GET
-	Les données d'un formulaire sont envoyées dans l'URL.
+	Les données d'un formulaire sont envoyées dans l'URL. Normalement uniquement utilisé
+	pour récupérer quelque chose (rfc 2616).
 
 	Exemple : :code:`https://example.com/?search=get%20request&page=5`. Ici le formulaire envoie
 	au serveur deux variables : search (qui contient get request) et page (qui contient 5).
@@ -229,13 +252,14 @@ GET
 POST
 	Les données envoyées ne sont pas affichées à l'utilisateur (c'est pas vrai car il peut voir le code HTML,
 	mais le formulaire doit être ré-remplie par l'utilisateur et ne l'est pas automatiquement comme avec
-	une requête GET).
+	une requête GET). Normalement uniquement utilisé pour changer l'état du serveur (rfc 2616).
 
 Vous avez vu en HTML qu'il fallait donner une valeur à action : un script php (chemin depuis la racine
 ou une url). Vous deviez également donner des "name" aux champs input pour qu'on puisse les utiliser
 en PHP.
 
 Lorsque le formulaire est reçu par un script, il contient des tableaux :code:`$_GET` et :code:`$_POST`
+(et :code:`$_FILE` pour un fichier upload)
 dont vous pouvez voir le contenu avec un var_dump. Ces tableaux contient toutes les valeurs
 de votre formulaire qui ont un name, indexés donc avec le name.
 
@@ -249,12 +273,127 @@ dans :code:`$_SESSION` et retourner sur page (vous utiliserez $_SESSION pour ré
 	par exemple ou aux injections SQL). Vous aurez beaucoup plus d'explications dans la partie
 	CyberSécurité > Les failles du web (injections).
 
+	On utilise généralement :code:`htmlentities/htmlspecialchars` pour gérer les < et > mais il vaut
+	mieux uniquement remplacer les caractères problématiques sinon les accents, ... seront aussi
+	échappés ce qui peut donner des résultats bizarres.
+
+Vous pouvez utiliser des filtres pour vérifier le contenu de vos formulaires
+
+	* :code:`filter_var` : filtrer une valeur
+	* :code:`filter_var_array` : filtrer un tableau de valeurs
+
+		* FILTER_SANITIZE\_ : généralement on nettoie les données avant de les lires
+		* FILTER_VALIDATE\_ : on valide les données.
+
+Bien sur, vous pouvez faire vos vérifications à la main ou ne pas en faire.
+
 8. Sessions et Cookies
 ========================
 
-...
+La variable :code:`$_SERVER` contient des informations sur la page ou encore le client.
+La variable :code:`$_SESSION` contient des informations sur la session de l'utilisateur
+actuel (vous donnez ces valeurs) et que vous pouvez utiliser sur toutes les pages.
+La variable :code:`$_COOKIE` marche comme :code:`$_SESSION`, concerne les cookies
+et n'est généralement plus utilisée (RGPD, ...).
 
-9. Migration de PHP
+.. code:: php
+
+	<?php
+	session_start(); // la session existe dans le script actuel
+	$_SESSION['lang'] = 'FR'; // exemple d'assignation d'une valeur
+	session_destroy(); // détruire
+
+Vous utiliserez généralement une session pour "vous souvenir" qu'une utilisateur
+est connecté etc.
+
+On utilisera
+
+	* :code:`password_hash("mdp", PASSWORD_DEFAULT)` pour encrypter (hasher) un password
+	* :code:`password_verify("mdp", $ash)` pour vérifier le mot de passe
+
+9. SQL en PHP
+===========================
+
+Vous pouvez utiliser des méthodes de la forme :code:`mysqli_...` pour mariadb/mysql par exemple
+ou alors utiliser du code générique avec PDO.
+
+.. code:: php
+
+	<?php
+	// création d'un objet connexion, utilisé pour les requêtes
+	// vérifier si ok
+	$connexion = mysqli_connect("host","user","passwd","db_name");
+	// requête simple, vérifier si ok
+	$res=mysqli_query($connexion, "ordre SQL");
+	while($ligne=mysqli_fetch_assoc($res)){ // on peut faire un foreach !
+	 // lecture ligne par ligne
+	}
+	mysqli_close($connexion);
+
+Fonctions utiles
+
+	* mysqli_num_rows
+	* mysqli_affected_rows
+	* mysqli_insert_id
+
+Notez que si l'utilisateur utilise des :code:`'` il peut casser votre code (sauf si c'est
+une requête préparée) car le SQL va croire que c'est la fin de l'argument. On peut utiliser
+:code:`addslashes/stripslashes` (mets/retire des slash) ou utiliser :code:`mysqli_escape_string/pg_escape_string/...`
+par exemple.
+
+Pour faire une requête préparée, on utile remplace les :code:`"... WHERE nom='".$_POST['nom']".';"`
+par :code:`"... WHERE nom=? ;"` donc plus d'injection.
+
+.. code:: php
+
+	<?php
+	// création d'un objet connexion, utilisé pour les requêtes
+	// vérifier si ok
+	$connexion = mysqli_connect("host","user","passwd","db_name");
+	// requête simple, vérifier si ok
+	$stmt=mysqli_prepare($connexion, "ordre SQL avec ?");
+	mysqli_stmt_bind_param($stmt, "types (i, d, s, ...)", array(valeur, valeur, ...));
+	mysqli_execute($stmt);
+	// traitement du résultat mysqli_stmt_bind_result/mysqli_stmt_fetch
+	// ou mysqli_stmt_get_result
+	while($ligne=mysqli_fetch_assoc(mysqli_stmt_get_result($stmt))){ // on peut faire un foreach
+	 // lecture ligne par ligne
+	}
+	mysqli_close($connexion);
+
+Exemple avec PDO
+
+.. code:: php
+
+		<?php
+		$user = "... saisie ..."; $pwd = "... saisie ...";
+		$db = new PDO("mysql:host=nom_host;charset=UTF8;dbname=nom_base", "user","password");
+		$stmt = $db->prepare("... WHERE user = :user AND password = :password;");
+		$sth->bindValue(':user' , $user, PDO::PARAM_STR);
+		$sth->bindValue(':password', $pwd , PDO::PARAM_STR);
+		$stmt->execute();
+
+10. Modèle MVC
+=======================
+
+Le modèle MVC en PHP consiste à séparer le code entre
+
+	* Model : fichier/classes/code qui gère la base de données (ex: api entre code et la base, ...)
+	* Vue : du php/html qui se contente d'afficher, absolument rien d'autre.
+	* Contrôleur : il récupère les données du Model, les formatent et les passent à la vue.
+
+Vous pouvez voir les contrôleurs comme des personnes associés à chaque page
+ou plutôt chaque groupe de pages ayant la même sémantique (ex: les pages liées au compte, ...).
+
+Le contrôleur va avoir des méthodes qui correspondent aux "pages"
+qu'il gère (index, login, logout, ... pour Account par exemple).
+
+Dans chaque de ces méthodes, il va récupérer les données du Model, charger d'éventuelles
+librairies/... puis appeler les vues (vue du header, vue de la barre de navigation, ...)
+pour qu'elles affichent les parties de la page. On découpe généralement les pages en plusieurs
+parties pour pouvoir bricoler et fabriquer des pages en réutilisant certaines parties communes.
+
+11. Migration de PHP
 ===========================
 
 PHP 5.6 vers PHP 7
@@ -286,3 +425,9 @@ PHP 5.6 vers PHP 7
 	* https://www.php.net/manual/fr/language.operators.php
 	* https://www.php.net/manual/fr/language.basic-syntax.php
 	* https://www.w3schools.com/php/default.asp
+	* https://www.php.net/manual/fr/language.constants.php
+	* https://www.php.net/manual/fr/language.oop5.php
+	* https://www.php.net/manual/fr/reserved.variables.server.php
+	* https://www.php.net/manual/fr/reserved.variables.session.php
+	* https://www.php.net/manual/fr/reserved.variables.cookies.php
+	* https://www.php.net/manual/fr/language.functions.php

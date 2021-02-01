@@ -1,23 +1,12 @@
-for i in
-
-Portée des variables
-○ dans les fonctions → locale
-○ hors des fonctions → globale
-○ global : pour utiliser une variable globale dans une fonction
-○ static : pour conserver la valeur au fil des appels de la fonction
-● Variables superglobales
-○ $_GET : paramètres d’URL
-○ $_POST : valeurs passées par POST
-○ $_SERVER : informations sur le script (nom, chemin…), client (IP, port…), serveur…
-	session_start()
-○ $_SESSION : valeurs stockées dans les sessions
-
 syntaxe heredoc : <<<
 <<<EOD
 Ceci est une chaîne.
 EOD; // même identifiant qu’au début
 
-explode
+explode/trim
+
+nl2br
+de manière à convertir les sauts lignes en balise <br />.
 
 class SimpleClass
 {
@@ -31,13 +20,6 @@ $s->displayVar();
 $foo->foo
 // Montre toutes les erreurs
 error_reporting(E_ALL);
-
-https://www.php.net/manual/fr/language.constants.php
-https://www.php.net/manual/fr/language.oop5.php
-https://www.php.net/manual/fr/reserved.variables.server.php
-https://www.php.net/manual/fr/reserved.variables.session.php
-https://www.php.net/manual/fr/reserved.variables.cookies.php
-https://www.php.net/manual/fr/language.functions.php
 
 Modèle MVC
 
