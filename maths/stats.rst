@@ -5,10 +5,6 @@ Statistiques et R
 Les prérequis sont de savoir lire du R (concepts de base et un peu avancés). Attention,
 mon niveau de compréhension en statistiques est faible.
 
-Sources
-
-	* Initiation à R, Eric Preud’homme, Université du Havre (ISEL)
-
 1. Introduction
 ===================
 
@@ -17,8 +13,8 @@ de déterminer une loi de probabilité qui se rapproche aux observations
 ce qui nous permettra de déduire ou émettre des hypothèses.
 
 On considère généralement des données de la forme d'une matrice. Les colonnes (j)
-sont appelés variables et les lignes (i) sont les individus. La valeur i,j corresponds
-à la valeur de la variable j pour l'individu i.
+sont appelés variables et les lignes (i) sont les individus (ce qui forme une population).
+La valeur i,j corresponds à la valeur de la variable j pour l'individu i.
 
 Il existe deux types de variables, dites variables
 
@@ -49,6 +45,9 @@ Vous pouvez aussi graphiquement voir les données manquantes (pourcentages totau
 
 On rappelle la fonction :code:`data("data_set")` qui importe un dataset
 depuis un nom ou liste les dataset disponibles.
+
+On appelle Modèle votre hypothèse du comportement de la population, généré
+depuis les observations.
 
 2. Recherche d'une stratégie d'analyse
 ============================================
@@ -87,7 +86,7 @@ lire tout le cours par contre avant d'avoir des détails.
 		* pour chercher la loi, on peut essayer des trucs comme
 
 			* si la moyenne est 3 : une loi de poisson de paramètre 3
-			* ...
+			* si la distribution est linéaire, c'est sûrement une loi normale/gaussienne
 
 .. [#1] On va généralement partitionner nos observations entre deux parties (75%/25% par exemple)
 	pour avoir une majorité de données servant à construire notre modèle (apprentissage) et un autre
@@ -278,44 +277,110 @@ QQ plot/Diagramme Quantile-Quantile
 	pour mettre en fonction de l'axe x.
 
 Test d’indépendance
-	On utilise généralement le célèbre test du Khi deux mais si le résultat
-	n'est pas acceptable alors on utilisera le test très gourmant en ressources
-	de Fisher.
+------------------------
 
-	du Khi deux (:code:`chisq.test(data,correct=FALSE)`)
-		Attention, au moins 5 individus, si p-value acceptable alors indépendantes.
+On utilise généralement le célèbre test du Khi deux mais si le résultat
+n'est pas acceptable alors on utilisera le test très gourmant en ressources
+de Fisher.
 
-		On a généralement deux lois X (1,...,p) et Y (1, ..., q) alors on a une loi du Khi Deux
-		qui suit (p-1)(q-1) degrés de liberté (ou alors k-r-1 avec k groupes/classes, r paramètres estimés).
+du Khi deux (:code:`chisq.test(data,correct=FALSE)`)
+	Attention, au moins 5 individus, si p-value acceptable alors indépendantes.
 
-		On peut regarder le :code:`$expected` pour vérifier ou encore les résidus
-		:code:`$residuals` (valeur ij élevé = joue un rôle élevé dans la liaison des variables)
-		calculés selon la formule :math:`(observed - expected) / sqrt(expected)`.
+	On a généralement deux lois X (1,...,p) et Y (1, ..., q) alors on a une loi du Khi Deux
+	qui suit (p-1)(q-1) degrés de liberté (ou alors k-r-1 avec k groupes/classes, r paramètres estimés).
 
-	de Fisher (:code:`fisher.test(data)`)
-		Si p-value acceptable alors indépendantes.
+	On peut regarder le :code:`$expected` pour vérifier ou encore les résidus
+	:code:`$residuals` (valeur ij élevé = joue un rôle élevé dans la liaison des variables)
+	calculés selon la formule :math:`(observed - expected) / sqrt(expected)`.
 
-Test du Khi deux d’adéquation ou de conformité
-	Ce test permet de tester si une distribution inconnue est de la forme
-	d'une loi connue (généralement pour vérifier une hypothèse descriptive).
+	Le correct corresponds à la correction de continuité (T=oui, F=non).
 
-	L'idée est d'observer la différence entre la théorie et nos valeurs
-	:code:`chisq.test(observations , p = théorie)`.
+de Fisher (:code:`fisher.test(data)`)
+	Si p-value acceptable alors indépendantes.
 
-	Attention, il faut vérifier le degré de liberté soit la valeur de df. Si R a échoué
-	a trouvé le bon degré, on devra faire le calcul manuellement.
+Test d’adéquation du Khi deux
+--------------------------------
 
-		* temp <- sum((observed-expected)^2/expected)
-		* res <- 1-pchisq(temp, df=...vrai_df...)
+Également appelé test de conformité, ce test permet de tester si une distribution
+inconnue est de la forme d'une loi connue (généralement pour vérifier une hypothèse descriptive).
+
+L'idée est d'observer la différence entre la théorie et nos valeurs
+:code:`chisq.test(observations , p = théorie)`.
+
+Attention, il faut vérifier le degré de liberté soit la valeur de df. Si R a échoué
+a trouvé le bon degré, on devra faire le calcul manuellement.
+
+	* temp <- sum((observed-expected)^2/expected)
+	* res <- 1-pchisq(temp, df=...vrai_df...)
 
 Test de normalité
-	Ce test permet de tester si une distribution suit une loi normale/gaussienne.
+-------------------------------
 
-	de Shapiro-Wilk : :code:`shapiro.test()`
-	de Anderson-Darling (package nortest)  : :code:`ad.test()`
-	de Cramer-von Mises (package nortest) : :code:`cvm.test()`
+Ce test permet de tester si une distribution suit une loi normale/gaussienne.
 
-	Droite de Henry
-		Il s'agit d'un QQ-Plot mais pour une loi normale. On utilise
-		la fonction :code:`qqnorm` pour tracer les points et :code:`qqline`
-		pour tracer la droite.
+| de **Shapiro-Wilk** : :code:`shapiro.test()`
+| de **Anderson-Darling** (package nortest)  : :code:`ad.test()`
+| de **Cramer-von Mises** (package nortest) : :code:`cvm.test()`
+
+Droite de Henry
+	Il s'agit d'un QQ-Plot mais pour une loi normale. On utilise
+	la fonction :code:`qqnorm` pour tracer les points et :code:`qqline`
+	pour tracer la droite.
+
+Tests d'égalités de variances
+----------------------------------
+
+On suppose que vous avez fait le test de normalité.
+
+de Fisher (2 variances)
+	Code : :code:`var.test(...)`. On peut donner deux dataset (x,y) ou un dataset (data)
+	et un dataset divisé en 2 groupes (formula).
+
+de Bartlett
+	Code : :code:`bartlett.test(v_quantitatif, v_qualitatif)`
+
+	On doit donc donner un vecteur qualitatif sur lequel on a appliqué factor en 2e argument.
+
+Test de comparaison
+------------------------
+
+On cherche à trouver la proportion d'individus suivant un certain critère. On suppose
+que vous avez fait de le test des variances avant.
+
+Cas binomiale : on a reçu x succès sur n, p=proba et on veut vérifier si c'est vrai
+	Code : :code:`prop.test(x,n,p=proba,correct=FALSE)` (ou binom.test)
+
+	Le résultat indique l'intervalle dans lequel peut être p et sa valeur estimée,
+	en plus de p-value...
+
+Cas "binomiale double" : on a x succès sur N1 et y sur N2
+	Code : :code:`prop.test(x=c(x,y), n=c(N1,N2),correct=FALSE)`
+
+Tests d’égalité de moyennes
+----------------------------------
+
+On suppose une population de plus de 30 individus ou alors que vous avez fait le test
+de normalité.
+
+de Student T
+	| Code (1) : :code:`t.test(x=data, alternative="two.sided", mu=valeur)`
+	| Code (2) : :code:`t.test(x=data1, y=data2, alternative="two.sided", var.equal=TRUE)`
+
+	On peut traiter ici les cas avec une ou deux moyennes.
+	Comme toujours, on regarde p-value et on peut aussi regarder l'intervalle de confiance ($conf.int).
+
+-----
+
+**Crédits**
+
+	* Nicolas BRUNEL (enseignant à l'ENSIIE)
+	* Christophe MOUILLERON (enseignant à l'ENSIIE)
+	* "Initiation à R" de Eric Preud’homme (Université du Havre)
+	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
+
+**Références**
+
+	* http://www.jybaudot.fr/Inferentielle/ajuskhidx.html
+	* https://fr.wikipedia.org/wiki/Test_F
+	* http://www.unit.eu/cours/cyberrisques/etage_3_frederic/co/Module_Etage_3_22.html
+	* https://support.minitab.com/fr-fr/minitab/18/help-and-how-to/modeling-statistics/anova/supporting-topics/basics/understanding-test-for-equal-variances/

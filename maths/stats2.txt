@@ -41,73 +41,13 @@ Skewness et Kurtosis
 Statistique inférentielle (tests)
 =====================================
 
-R trace la fonction de répartition avec une échelle des ordonnées spéciale
-« gausso-arithmétique » (Y=aX+b si X est gaussien). Avec cette échelle, la fonction
-de répartition des distributions
-normales est représentée par une droite appelée « droite de Henry ».
-Par conséquent plus « l'allure » de la fonction de répartition de votre échantillon est linéaire
-plus cette distribution vérifie l'hypothèse de normalité.
+Tests d'égalités de variances : ~ Indépendance requise.
 
-Tests sur les proportions (variable qualitative)
-	Test de comparaison d’une proportion à une valeur fixée, intervalle de confiance d’une proportion
-		Je crois on veut tester si un truc existe dans un échantillon.
+3. Test T pour données appariées (Paired)
+Lorsque les échantillons ne sont pas indépendants, le test précédent n’est plus applicable.
 
-		prop.test(x,n,p0,correct=TRUE ou FALSE), alternative="two.sided" (default),
-		 "greater" or "less".)
-
-		 correct= sert à demander s’il doit y avoir correction de continuité
-		 alternative = sert à choisir l’hypothèse H1 : p=p0 ou p>p0 ou p<p0.
-
-		 Binomiale : H0
-		 Binomiale bilatéral : H1 jcrois
-
-		 Ex: 102 succès sur 140 avec proba 0.8
-		 prop.test(102,140,p=0.8,correct=FALSE)
-		 p-value < 5%  nous rejetons H0. p ne peut être égal à 80% au risque <5%*
-		 # binom.test(102,140,p=0.8) # alternative
-
-	Test de comparaison de deux proportions
-		Si on a deux lois avec x1 succès sur N1 et x2 sur N2
-		prop.test(c(x1,x2),c(N1,N2),correct=FALSE)
-		La pvaleur est très nettement inférieure à 5%. Il y a donc une différence très significative entre
-		x1 et x2.
-
-	Tests d'égalités de variances (Fisher, Bartlett)
-		Préliminaire pour tester le test précédent.
-
-		Les populations sont supposées normales18 et les échantillons qui en sont issus sont aléatoires et prélevés indépendamment19les uns des autres.
-
-		1. Test de Fisher (comparaison de 2 variances)
-			var.test(Note.Fr.~Sexe,data=stid)
-
-		2. Test de Bartlett (comparaisons multiples de variances)
-		Ce test permet de tester l'égalité de plusieurs variances simultanément
-		(Fisher ne permet d'en tester que 2) mais il est aussi moins puissant.
-			bartlett.test(vecteur1(quantitatif),vecteur2(qualitatif))
-
-	Tests d’égalité de moyennes (Student)
-		1. Test de Student de Comparaison d’une moyenne à une valeur fixée et intervalle de confiance
-
-		Notre échantillon étant de taille supérieure à 30, pas besoin de vérifier la normalité.
-
-		Nous allons ici comparer une moyenne à une valeur fixée à l’avance (indépendamment de l’échantillon).
-    Typiquement utilisé en contrôle de qualité
-
-		t.test(isel03$Taille,alternative="two.sided", mu=170)
-		Pour obtenir un simple intervalle de confiance de la moyenne il suffit de donner à R : t.test(isel03$Taille)$conf.int
-
-		2. Test de Student de comparaison de 2 moyennes
-
-		#T Test en supposant les variances égales (vérifié auparavant avec Fisher)
-		t.test(x=arbres1,y=arbres2,alternative="two.sided",var.equal=TRUE)
-
-		3. Test T pour données appariées (Paired)
-		Lorsque les échantillons ne sont pas indépendants, le test précédent n’est plus applicable.
-
-		Un plan B a été inventé dans le cas où les 2 échantillons n’en sont qu’un seul : par exemple
-		lorsque des mêmes individus ont été mesurés deux fois. Dans ce cas, nous calculons la différence
-		pour chaque individu (cohérent car ce sont les mêmes) et nous testons la nullité.
-
-
+Un plan B a été inventé dans le cas où les 2 échantillons n’en sont qu’un seul : par exemple
+lorsque des mêmes individus ont été mesurés deux fois. Dans ce cas, nous calculons la différence
+pour chaque individu (cohérent car ce sont les mêmes) et nous testons la nullité.
 
 Stop page 243/451
