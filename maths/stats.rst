@@ -123,7 +123,57 @@ Donc si on veut calculer :math:`P(X \le k)` on utilise une fonction de type
 p. Si on veut calculer :math:`P(X \gt k)` alors on fait :code:`1-fonction_de_type_p`.
 Enfin si on veut calculer :math:`P(X = k)` alors on utilise une fonction de type d.
 
-4. Statistiques descriptives
+4. Transformer nos variables
+==============================
+
+Il est possible, pour des raisons de lisibilités, faciliter le traitement ou autre
+que vous vouliez transformer une variable quantitative en qualitative par exemple.
+
+L'utilité de faire des groupes est de pouvoir observer à différentes échelles
+la répartition, ... donc de regarder sur le grand ensemble global puis redescendre
+à des ensembles locaux.
+
+Discrétisation non supervisée
+	On ne sait pas comment former des groupes qualitatifs donc on laisse R faire.
+	On charge la librairie :code:`arules`.
+
+	On peut choisir de découper en x parties nos données : :code:`discretize(data, method = "frequency", breaks = x)`
+	ce qui donne des groupes a peu près égaux.
+
+	On peut choisir de découper en x intervals de même taille : :code:`discretize(v, method = "interval", breaks = x)`
+	mais qui ne contiennent pas forcément le même nombre de valeurs.
+
+	On peut faire des groupes homogènes donc les valeurs ont
+	l'air d'être dans des groupes proches/logiques : :code:`r <- discretize(Age, method = "cluster", breaks = x)`.
+
+	On peut voir graphiquement avec :code:`plot (default), ggplot (ggplot2), ...`
+
+Discrétion supervisée
+	Il s'agit d'un découpage dans lequel on essaye de regrouper le plus d'individus dans un groupe
+	ayant un caractère qualitatif.
+
+	Discrétion avec Khi-deux
+		On va regarder pour un tableau de données si les données sont suffisamment proches (alpha) pour
+		qu'elles soient dans le même groupe.
+
+		La fonction est :code:`chiM(data, alpha = ...)` de la librairie :code:`discretization`.
+
+Fusion
+	Attention, pour l'analyse un groupe doit avoir au moins 5 individus et parfois
+	au minimum 30 (loi normale). Vous pouvez faire une jointure/fusion avec :code:`merge`
+	par exemple si deux jeux de données ont une colonne
+	en commun avec :code:`merge(data1, data2, by="nom_colonne")`.
+
+Données "doubles"
+	Il est possible que certaines données aient étés mal rentrées par faute de frappe
+	parce qu'on a rentrée 500 fois la même valeur à la main au lieu d'utiliser
+	les jointures et un code/id.
+
+	Par exemple imaginons dans vos données [Firefox, mozilla, Mozilla]. Vous pouvez alors les regrouper
+	dans un groupe avec :code:`fct_collapse(data, "col" = c("Firefox","mozilla", "Mozilla"))`
+	du package :code:`forcats`.
+
+5. Statistiques descriptives
 ==================================
 
 ...

@@ -12,14 +12,12 @@ Cours                  Tâches                                 Programmeur assig
 Analyse numérique      Ajouter les équations différentielles  \
 Analyse numérique      Ajouter l'interpolation polynomiale    \
 JAVA                   Ajouter Intellij IDEA                  \
-JAVA                   Ajouter la mise en production          \
 Bric à Brac            Développements en série                \
 Théorie des graphes    Calculs de distances                   \
 Théorie des graphes    Théorie spectrale                      \
 UML                    Diagramme de déploiement               \
 Méthodologies          TDD, BDD et pair programming           \
 Méthodologies          SOLID, https://suckless.org/           \
-UML                    SOLID                                  \
 CSS                    SCSS et Animations                     \
 ====================== ====================================== =========================
 

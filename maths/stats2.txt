@@ -1,132 +1,13 @@
 Université du Havre - ISEL
 Initiation à R - Eric Preud’homme
 
+library(MASS); data(survey)
+
 exercice
 ---------------------
 
 Idée : donner un affichage (vecteur)
 et demander comment on l'as eu.
-
-Strings
---------------
-
-stringi ou stringr
-
-substring
-paste
-tolower
-toupper
-chartr // tr en shell
-strsplit
-grep // grep(pattern = "a" , Texte9, value = FALSE, fixed = TRUE)
-
-cours/théorie
----------------
-
-...
-
-tracer
------------------
-
-persp/contour pour tracer
-
-image(x,y,z) # Pour l’image couleur
-contour(x,y,z,add=TRUE) # Pour le tracé des lignes de couleur
-
-library(rgl)
-plot3d # interactif
-
-L’option ADD=TRUE permet de superposer au graphique précédent.
-
-boxplot
-
-install.packages(‘GGgally’)
-library(GGally)
-ggpairs(stid[, c("Taille", "Poids")],aes(colour=stid$Sexe))
-
-utiles
------------------
-
-head/tail pour voir le début
-
-apply(matrice, 1 ou 2, fonction)
-	1 : colonnes, 2 : lignes
-
-maths
----------------------
-
-det : retourne le déterminant d'une matrice
-solve : inverse aussi ou
-	library(matlib) (A est une 3,3)
-	echelon(A, diag(3), verbose=TRUE, fractions=TRUE)
-	// Affiche toutes les étapes
-
-5x = 10, que vaut x? solve(5,10)
-
-
-Rang
-	On rappelle que le rang est la dimension de l’image d’une matrice. Si le rang est égal à la taille de
-	la matrice, celle-ci est inversible, ses colonnes (et lignes) sont libres, elles forment une base
-	de l’espace.
-
-	library(matlib); R(m).
-
-La fonction solve permet de résoudre les systèmes n’ayant pas de « problèmes »,
-c’est à dire avec une solution.
-
-La fonction echelon permet de mettre le système sous forme
-triangulaire ce qui permet d’achever la résolution des systèmes « à problème » facilement.
-
-showEqn(A,b)
-	Voir le système de la matrice A et le vecteur b.
-
-	echelon : mettre sous forme triangulaire. On obtient x1 = ..., x2 = ... etc.
-
-Trace(m)=somme des valeurs propres.
-
-optimisation
------------------
-
-install.packages("numDeriv")
-library(numDeriv)
-
-Montrons que le point (1,1,1) est un point critique de cette fonction.
-Pour cela nous calculons le Gradient
-
-grad(func=ma_fonction,x=c(1,1,1))
-
-[1] 0 0 0
-Le gradient est nul, le point est donc critique.
-
-Pour déterminer la nature de ce point stationnaire, nous calculons la hessienne :
-hessian(func=ma_fonction,x=c(1,1,1))
-
-Il nous reste à déterminer les valeurs propres : eigen(hessian(...))
-
-Les valeurs propres sont positives et négatives, le point (1,1,1) est donc un point selle.
-
-Polynômes
-R possède une fonction pour trouver les racines de polynômes (réelles ou complexes) : polyroot
-auquel on donne les coeff du polynome (x^0, x^1, ...)
-
-uniroot(f,lower=0,upper=3) avec une fonction continue qui change de signe permet de trouver le 0 (TVI)
-	valeur approchée du x pour lequel f(x)~= zéro
-  valeur du x pour lequel f(x)~= zéro
-  iter : le nombre d’itérations pour arriver au résultat
-  estim.prec, l’estimation de la précision de la solution. (peut l'augmenter avec l’option tol=)
-
-integrate
-	Calculer des intégrales
-
-	integrate(f, lower = 0, upper = 1)
-
-Il est possible d’approcher les fonctions par des polynômes en utilisant la formule de Taylor.
-Le module pracma permet de faire ces calculs.
-
-library(pracma)
-taylor(f, 0, 5) // en 0 d'ordre 5
-
-polyval ???
 
 statistiques pondérées
 --------------------------
@@ -146,24 +27,6 @@ valeurs 1,2,... associés à un pourcentage (ici plutôt un nombre)
 structure
 -----------------
 
-Les accolades peuvent être omises s’il n’y a qu’une instruction.
-
-Les tableaux commencent à 1
-
-saveRDS (saveRDS(object = ....)) et readRDS pour save des données.
-
-Factor permet de qualifier les données, par exemple de créer des groupes
-disant que 1 corresponds à une valeur et 2 à une autre.
-	-> levels()
-	-> droplevels()
-
-Si vous avez de nombreuses variables qualitatives dans votre fichier,
-il est possible que R les voie comme du texte. Pour éviter de faire factor()
-sur chacune d’entre elle : read.csv2("wisc_cancer.csv", stringsAsFactors = TRUE)
-Ici nous demandons à R de convertir toutes les variables chaînes de caractères en variables qualitatives.
-
-write.csv2
-
 Sous-partie d'un dataframe
 	subset(stid,Sexe==2,select=c(Groupe,Sexe,Note.Fr.))
 	-> select : variables gardées
@@ -173,49 +36,12 @@ Sous-partie d'un dataframe
 library(lattice)
 	regroup<-make.groups(nom=valeur, ...)
 
-merge(x, y, by="name")# fusionne les data frames x et y par la colonne name.
-
 order(vecteur) : donne les indexes dans l'ordre
 
 range(variable) : min et max
 
-col=rainbow(10)
-
 esprit d'analyse
 ----------------------
-
-En statistique, on est très souvent amené à changer le type des variables. Par exemple,
-une variable âge (quantitative) peut être transformée en une variable qualitative
-(« Enfant », « Adulte », « Personne âgée ») pour les besoins d’une étude, ou pour
-faciliter une interprétation.
--> fait des sélection d'indices et on réécrit les valeurs de la sélection
--> discrétisation non supervisée (on ne sait pas comment découper, laisse R faire)
-	-> library(arules)
-		-> discretize(v, method = "frequency", breaks = 5)
-			-> on veut 5 groupes
-		-> discretize(v, method = "interval", breaks = 4)
-			-> on veut 4 classes de même amplitude (donc 1-10 11-20 ...
-		-> method = "cluster" (homogène)
-			-> fait des groupes assez écartés
-	-> library(ggplot2)
-	-> ggplot(essai, aes(x = Age,fill=Recodx)) + geom_dotplot(dotsize = 3, binwidth=0.9,stackdir = "center")
--> Discrétisation supervisée
-	-> on découpe mais en se basant sur une var qualitative (cible)
-	-> on va essayer de former des groupes avec un maximum de valeurs homogènes/identiques/proches
-	-> l'’algorithme va maximiser le khi-deux de liaison entre les deux variables qualitatives obtenues
-	-> library(discretization); res<-chiM(data=essai,alpha=0.05)
--> utilité faire des groupes puis étudier les sous-groupes
--> genre dans un groupe la répartition etc.
-
-Recodage d’une variable qualitative en qualitative
-->library(forcats)
--><-fct_recode(stid$Sexe,"H"="1","F"="2") // transforme "1" en "H"
-// ou alors on utilise les indexes
-
--> regouper (utile lorsque Khi deux et que les effectifs théoriques sont inférieurs à 5)
--> library(forcats)
--> fct_collapse(v, "col" = c("old1","old2"))
--> elle sort aussi à regouper des valeurs pareils genre eu, Europ, Europe, ...
 
 ----> Statistiques descriptives
 --> Variables qualitatives

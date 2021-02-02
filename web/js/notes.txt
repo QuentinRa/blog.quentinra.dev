@@ -1,0 +1,28 @@
+Ajax (XMLHttpRequest) : requête http asynchrone.
+WebWorkers : programmation parallèle.
+WebSockets : communication bidirectionnlle entre le client et le serveur.
+Canvas 2D Context : dessin avec la balise canvas
+Jquery
+Mootools, Angular.js, Protoptype.js, Dojo, React, Ember, Backbone,
+Pixi, Phaser (jeux)
+
+après l'avantage du xml c'est les fichier dtd pour les vérifier DTD Tutorial (w3schools.com)
+
+console.log
+
+Dom
+
+Déclare une variable
+-> var/let/const
+-> ; optionnel
+
+do{}while();
+
+https://www.w3schools.com/Js/default.asp
+https://developer.mozilla.org/fr/docs/Web/API MDN
+http://www.iut-fbleau.fr/sitebp/web/wim41/biblio/jquery/jquery.pdf
+https://dwarves.iut-fbleau.fr/git/monnerat/wim4_2021/src/master/cours/jscomp.pdf
+http://www.iut-fbleau.fr/sitebp/web/wim41/ajax/ajax.pdf
+http://www.iut-fbleau.fr/sitebp/web/wim41/js/dom.pdf
+http://www.iut-fbleau.fr/sitebp/web/wim41/js/js.pdf
+http://pgsql.pedago.ensiie.fr/~vitera.y/cours/ipw/poly/03-applications-interactives.pdf

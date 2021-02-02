@@ -1,0 +1,139 @@
+Général
+--------------
+
+head/tail pour voir le début
+
+apply(matrice, 1 ou 2, fonction)
+	1 : colonnes, 2 : lignes
+
+Les accolades peuvent être omises s’il n’y a qu’une instruction.
+
+Les tableaux commencent à 1
+
+saveRDS (saveRDS(object = ....)) et readRDS pour save des données.
+
+Factor permet de qualifier les données, par exemple de créer des groupes
+disant que 1 corresponds à une valeur et 2 à une autre.
+	-> levels()
+	-> droplevels()
+->library(forcats)
+-><-fct_recode(stid$Sexe,"H"="1","F"="2") // transforme "1" en "H"
+// ou alors on utilise les indexes
+merge // jointure
+// fct_collapse (forcats)
+
+write.csv2
+
+warning() et warning("")
+
+Strings
+--------------
+
+stringi ou stringr
+
+substring
+paste
+tolower
+toupper
+chartr // tr en shell
+strsplit
+grep // grep(pattern = "a" , Texte9, value = FALSE, fixed = TRUE)
+
+tracer
+-----------------
+
+persp/contour pour tracer
+
+image(x,y,z) # Pour l’image couleur
+contour(x,y,z,add=TRUE) # Pour le tracé des lignes de couleur
+
+library(rgl)
+plot3d # interactif
+
+L’option ADD=TRUE permet de superposer au graphique précédent.
+
+boxplot
+
+install.packages(‘GGgally’)
+library(GGally)
+ggpairs(stid[, c("Taille", "Poids")],aes(colour=stid$Sexe))
+
+col=rainbow(10)
+
+ggplot(essai, aes(x = Age,fill=Recodx)) + geom_dotplot(dotsize = 3, binwidth=0.9,stackdir = "center")
+
+maths
+---------------------
+
+det : retourne le déterminant d'une matrice
+solve : inverse aussi ou
+	library(matlib) (A est une 3,3)
+	echelon(A, diag(3), verbose=TRUE, fractions=TRUE)
+	// Affiche toutes les étapes
+
+5x = 10, que vaut x? solve(5,10)
+
+
+Rang
+	On rappelle que le rang est la dimension de l’image d’une matrice. Si le rang est égal à la taille de
+	la matrice, celle-ci est inversible, ses colonnes (et lignes) sont libres, elles forment une base
+	de l’espace.
+
+	library(matlib); R(m).
+
+La fonction solve permet de résoudre les systèmes n’ayant pas de « problèmes »,
+c’est à dire avec une solution.
+
+La fonction echelon permet de mettre le système sous forme
+triangulaire ce qui permet d’achever la résolution des systèmes « à problème » facilement.
+
+showEqn(A,b)
+	Voir le système de la matrice A et le vecteur b.
+
+	echelon : mettre sous forme triangulaire. On obtient x1 = ..., x2 = ... etc.
+
+Trace(m)=somme des valeurs propres.
+
+optimisation
+-----------------
+
+install.packages("numDeriv")
+library(numDeriv)
+
+Montrons que le point (1,1,1) est un point critique de cette fonction.
+Pour cela nous calculons le Gradient
+
+grad(func=ma_fonction,x=c(1,1,1))
+
+[1] 0 0 0
+Le gradient est nul, le point est donc critique.
+
+Pour déterminer la nature de ce point stationnaire, nous calculons la hessienne :
+hessian(func=ma_fonction,x=c(1,1,1))
+
+Il nous reste à déterminer les valeurs propres : eigen(hessian(...))
+
+Les valeurs propres sont positives et négatives, le point (1,1,1) est donc un point selle.
+
+Polynômes
+R possède une fonction pour trouver les racines de polynômes (réelles ou complexes) : polyroot
+auquel on donne les coeff du polynome (x^0, x^1, ...)
+
+uniroot(f,lower=0,upper=3) avec une fonction continue qui change de signe permet de trouver le 0 (TVI)
+	valeur approchée du x pour lequel f(x)~= zéro
+  valeur du x pour lequel f(x)~= zéro
+  iter : le nombre d’itérations pour arriver au résultat
+  estim.prec, l’estimation de la précision de la solution. (peut l'augmenter avec l’option tol=)
+
+integrate
+	Calculer des intégrales
+
+	integrate(f, lower = 0, upper = 1)
+
+Il est possible d’approcher les fonctions par des polynômes en utilisant la formule de Taylor.
+Le module pracma permet de faire ces calculs.
+
+library(pracma)
+taylor(f, 0, 5) // en 0 d'ordre 5
+
+polyval ???
