@@ -21,6 +21,7 @@ disant que 1 corresponds à une valeur et 2 à une autre.
 // ou alors on utilise les indexes
 merge // jointure
 // fct_collapse (forcats)
+--> Une variable qualitative ordinale : trié les facteurs (levels()[c(1,3,2)]
 
 write.csv2
 

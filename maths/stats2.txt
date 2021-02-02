@@ -6,23 +6,7 @@ library(MASS); data(survey)
 exercice
 ---------------------
 
-Idée : donner un affichage (vecteur)
-et demander comment on l'as eu.
-
-statistiques pondérées
---------------------------
-
-valeurs 1,2,... associés à un pourcentage (ici plutôt un nombre)
--> Désagréger les données pondérées
--> création de deux vecteurs
--> fusion
--> analyse
-
--> sans désagréger
--> install.packages('questionr')
--> library(questionr)
--> wtd.mean(valeurs, nombre)
--> wtd.var(valeurs, nombre)
+Idée : donner un affichage (vecteur) et demander comment on l'as eu.
 
 structure
 -----------------
@@ -45,45 +29,12 @@ esprit d'analyse
 
 ----> Statistiques descriptives
 --> Variables qualitatives
-----> Diagramme à bandes (barplot)
-----> Diagramme à bandes ordonnées (sort puis barplot)
-      Parfois, on peut souhaiter trier selon les effectifs (Pareto).
---> Une variable qualitative ordinale : trié les facteurs (levels()[c(1,3,2)]
 --> Liaison entre deux variables qualitatives : tableaux croisés
-	-> La fonction table permet de faire cela pour les effectifs, prop.table pour les fréquences
-	#Pourcentage total prop.table(tableau)
-	#Pourcentage ligne prop.table(tableau,1)
-	#Pourcentage colonne prop.table(tableau,2)
-
-Le package pivottabler permet de faire des tableaux de ce genre, très sophistiqués.
-	install.packages('pivottabler') library(pivottabler)
-
-	qhpvt(notes, rows=c("Groupe"),columns=c("Bac"),
-	c("Moy. Français"="mean(Français)","ecart_typ Fra"="sd(Français)"),
-	 formats=list("%.1f"), totals=list("Groupe"="Ensemble"))
-
-	totals='totals=NONE'
-
-	Ultra cool ! Genre on peut avoir les moyennes pour chaque filière (colonne) par rapport
-	aux Groupes (G1, G2, G3, G4) et ajouter une ligne total avec
-	la moyenne pour tous les groupes selon chaque filière.
-	La deuxième liste c'est genre des sous-catégories de la colonne (donc pour chaque colonne
-	on calcule ça).
-	On peut diviser les lignes aussi.
 
 Lorsque le skewness est proche de 0, la distribution est symétrique.
 Kurtosis est un coefficient mesurant l'aplatissement
 -> on peut voir par exemple si ya autant partout (k=faible) ou alors ya un pic (k=important)
 -> Kurtosis=3 = loi gaussienne
-
-Discrète
--> on utilise la fonction barplot en augmentant l’espace entre les barres (space=).
-
-Histogramme des densités (prob=TRUE)
-Dans certains cas, il est indispensable de tracer un histogramme des densités
-(=effectif/(eff. total * largeur classe)) au lieu des effectifs. Par exemple,
-pour des classes de largeur inégales, ou la superposition d'une courbe de densité de proba.
----> au lieu d'avoir un histogramme d'effectifs
 
 ecdf
 	-> fonction de répartition

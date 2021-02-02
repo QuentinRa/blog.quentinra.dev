@@ -43,6 +43,9 @@ qui indique le nombre de valeurs nulles correspondant à cette variable.
 Vous pouvez aussi graphiquement voir les données manquantes (pourcentages totaux) avec
 :code:`library(visdat);vis_miss(...data ici...)`.
 
+On rappelle la fonction :code:`data("data_set")` qui importe un dataset
+depuis un nom ou liste les dataset disponibles.
+
 2. Recherche d'une stratégie d'analyse
 ============================================
 
@@ -173,7 +176,57 @@ Données "doubles"
 	dans un groupe avec :code:`fct_collapse(data, "col" = c("Firefox","mozilla", "Mozilla"))`
 	du package :code:`forcats`.
 
+Statistiques pondérées
+	Si on a des valeurs associés à une probabilités dans deux vecteurs, alors on peut soit
+	les fusionner soit travailler dessus sans les désagréger avec :code:`wtd.mean(v,p)`,
+	:code:`wtd.mean(v,p)`, ... du package :code:`questionr`.
+
 5. Statistiques descriptives
 ==================================
 
-...
+Le but des statistiques descriptives est de décrire notre échantillon.
+
+Occurrences et fréquence
+	Avec :code:`table(v)` vous obtenez le nombre d'occurrences de chaque valeur dans v.
+
+	Vous pouvez obtenir les probabilités (la fréquence) de chaque valeur avec :code:`prop.table`.
+	Si vous donnez 1/2 alors le calcul ne sera fait que sur les lignes/colonnes.
+
+	Un histogramme semble être le meilleur moyen d'observer graphiquement ces valeurs.
+
+Diagrammes a bandes
+	Fonction :code:`barplot (space=augmenter l'espacement).
+
+	Vous pouvez ordonner avec sort() avant. Attention ce n'est pas très lisible s'il y a beaucoup
+	de valeurs, donc uniquement pour les variables qualitatives.
+
+Histogramme
+	Généralement on l'utilise pour voir graphiquement le nombre d'individus (:code:`hist()`)
+	mais on peut aussi l'utiliser pour retrouver la loi.
+
+	Lorsqu'on met :code:`proba=TRUE`, on obtient un histogramme des densités sur lequel on
+	pourra superposer une loi. La différence est que les x sont des probas (densité)
+	au lieu d'être un nombre (fréquence).
+
+Tableaux croisés
+	Observer l'évolution de deux variables aléatoires. On a généralement X1, X1 par rapport
+	à X2, ... et ce pour toutes les variables.
+
+	On utilise la fonction :code:`qhpvt` de la librairie :code:`pivottabler`.
+
+	Forme : :code:`qhpvt(data, rows = ..., columns = ..., calculations = "...")`
+
+		* data : vos données (data.frame)
+		* rows : la colonne du DataFrame dont chaque valeur aura une ligne
+		* cols : la colonne du DataFrame dont chaque valeur aura une colonne
+		* calculations/cal : le calcul de chaque valeur i,j
+
+			* "mean()" : faire la fonction mean (moyenne)
+			* "n()" : faire la fonction n (nombre d'éléménets)
+			* ...
+
+		* formats : format d'une cellule (list("%.1f") par exemple)
+		* totals : ligne total (vous pouvez la renommer/retirer avec :code:`totals='totals=NONE'`)
+
+	Vous pouvez faire plusieurs calculs, mettre plusieurs lignes/colonnes en utilisant
+	des vecteurs.
