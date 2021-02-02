@@ -1,5 +1,12 @@
+exercice
+---------------------
+
+Idée : donner un affichage (vecteur) et demander comment on l'as eu.
+
 Général
 --------------
+
+plot legend.text
 
 head/tail pour voir le début
 
@@ -22,10 +29,14 @@ disant que 1 corresponds à une valeur et 2 à une autre.
 merge // jointure
 // fct_collapse (forcats)
 --> Une variable qualitative ordinale : trié les facteurs (levels()[c(1,3,2)]
+Le « Taille ~ Groupe » veut dire, que l’on va distinguer la taille selon les groupes.
+Attention : Il faut pour cela que Groupe soit qualitative.
 
 write.csv2
 
 warning() et warning("")
+
+range(variable) : min et max
 
 Strings
 --------------

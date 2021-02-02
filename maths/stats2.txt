@@ -1,154 +1,49 @@
-Université du Havre - ISEL
-Initiation à R - Eric Preud’homme
-
-library(MASS); data(survey)
-
-exercice
----------------------
-
-Idée : donner un affichage (vecteur) et demander comment on l'as eu.
-
 structure
 -----------------
 
-Sous-partie d'un dataframe
-	subset(stid,Sexe==2,select=c(Groupe,Sexe,Note.Fr.))
-	-> select : variables gardées
-	-> stid : fichier
-	-> sexe==2 : condition
+Sous-partie d'un dataframe, subset(stid,Sexe==2,select=c(Groupe,Sexe,Note.Fr.))
+-> select : variables gardées, -> stid : fichier, -> sexe==2 : condition
 
-library(lattice)
-	regroup<-make.groups(nom=valeur, ...)
+library(lattice)	regroup<-make.groups(nom=valeur, ...)
 
 order(vecteur) : donne les indexes dans l'ordre
-
-range(variable) : min et max
 
 esprit d'analyse
 ----------------------
 
-----> Statistiques descriptives
---> Variables qualitatives
---> Liaison entre deux variables qualitatives : tableaux croisés
+Skewness et Kurtosis
+	Lorsque le skewness est proche de 0, la distribution est symétrique.
+	Kurtosis est un coefficient mesurant l'aplatissement si
+	Kurtosis alors la répartition est équilibrée, si Kurtosis est important
+	alors il y a un pic à un endroit. Une loi gaussienne corresponds à Kurtosis=3.
 
-Lorsque le skewness est proche de 0, la distribution est symétrique.
-Kurtosis est un coefficient mesurant l'aplatissement
--> on peut voir par exemple si ya autant partout (k=faible) ou alors ya un pic (k=important)
--> Kurtosis=3 = loi gaussienne
+??? Ajustement linéaire
+	Coefficient de corrélation (cor) et une droite de régression (lm)
+	coefficients(modele)
+	Le coefficient de corrélation linéaire est assez élevé (un test le prouverait).
+	Le nuage a une forme allongée, on peut donc effectuer un ajustement linéaire.
+	Il est possible de récupérer les valeurs des résidus (residuals(modele)) et les valeurs
+	y prédites (fitted(modele)).
 
-ecdf
-	-> fonction de répartition
-	-> Fonction de répartition avec superposition d’une loi théorique
+	Matrices de graphiques (pairs, GGally)
+		Étudier la liaison entre plusieurs variables numériques
 
-On voit ici que la taille des STID193 suit approximativement une loi gaussienne.
-Cela peut être confirmé par un test de normalité.
+	Matrice des corrélations
+		Repérer les liens entre les variables quantitatives.
 
-Boxplot
-	Ils sont pourtant très utiles, car ils représentent sur un seul graphique : min, max, Q1,Q2,Q3
-	et la moyenne (haut : Q3 + 1.5h, Q3, Mediane, Q1, Q1-1.5h)
-	On rappelle que les valeurs extrêmes sont inférieures à Q1-1.5(Q3-Q1) ou supérieures à Q3+1.5(Q3-Q1).
+		Les coefficients de corrélation linéaire sont calculés et représentés sous forme de carrés
+		de couleurs Pour cela, nous avons besoin d’une extension corrplot.
 
-Le « Taille ~ Groupe » veut dire, que l’on va distinguer la taille selon les groupes.
-Attention : Il faut pour cela que Groupe soit qualitative.
+		library(corrplot) ; corrplot(M, method="circle")
 
-Cartographie simple avec R, Carte choroplèthe
-	R possède la capacité de représenter des données géographiques grâce à ggplot.
-	library(ggplot2) library(dplyr) require(maps) require(viridis)
-	world_map <- map_data("france")
-	left_join(donnees, france_map, by = "region")
-
-On peut ajouter des droites pour se repérer davantage sur le graphique.
-abline(h=mean(stid$Taille)) abline(v=mean(stid$Poids))
-
-Ajustement linéaire
-Coefficient de corrélation (cor) et une droite de régression (lm)
-coefficients(modele)
-Le coefficient de corrélation linéaire est assez élevé (un test le prouverait).
-Le nuage a une forme allongée, on peut donc effectuer un ajustement linéaire.
-Il est possible de récupérer les valeurs des résidus (residuals(modele)) et les valeurs
-y prédites (fitted(modele)).
-
-Matrices de graphiques (pairs, GGally)
-C’est utile pour étudier la liaison entre plusieurs variables numériques
-
-Matrice des corrélations
-Ces matrices sont utiles pour repérer les liens entre les variables quantitatives.
-Les coefficients de corrélation linéaire sont calculés et représentés sous forme de carrés
-de couleurs Pour cela, nous avons besoin d’une extension corrplot.
-library(corrplot)
-corrplot(M, method="circle")
-R possède des graphiques intéressants pour représenter simultanément des variables qualitatives et quantitatives.
+		Cela affiche une cercle avec 1 : ... et -1 ...
 
 Statistique inférentielle (tests)
-Le but des statistiques descriptives est de décrire une population connue.
-Celui des statistiques inférentielles est de donner des résultats sur une population inconnue
-à partir d’un échantillon (connu). C’est plus difficile et nécessite le recours aux probabilités.
-
-Test d’indépendance du Khi deux – Test de Fisher
-Ce test est utilisé pour étudier l’indépendance de deux variables qualitatives.
-C’est un des tests les plus célèbres
-----> recherche si ya une relation entre des variables
-
-Si les effectifs théoriques de chaque cellule sont supérieurs ou égaux à 5 alors T suit
-approximativement une loi du ² à (p-1)(q-1) degrés de liberté. Dans le cas contraire,
-il faut opérer des regroupements ou utiliser un test exact de Fisher. Certains n’utilisent
-d’ailleurs que ce test exact.
-> chisq.test(tableau,correct=FALSE)
-Si p-value ~= 0.05 alors possiblement faux sinon indépendantes.
-Ceci est confirmé par le calcul des résidus
-	* Calcul des résidus (contributions)
-	* regarde le $expected
-	Leurs carrés correspondent aux contributions. Plus la valeur du résidu est élevée, plus la cellule joue
-	un rôle dans la liaison entre les variables. Si le résidu est négatif, les modalités se repoussent, si
-	le résidu est positif, elles s’attirent.
-
-	Formule de calcul des résidus : (observed - expected) / sqrt(expected).
-	test$residuals
-
-Test exact de Fisher
-Dans le cas où les effectifs théoriques sont inférieurs à 5, il faut changer de test.
-> fisher.test(tableau)
-attention test gourmand
-
-Test du Khi deux d’adéquation ou de conformité
-L’utilité de ces tests est de comparer une distribution observée à une distribution théorique connue
-(normale, uniforme, poisson etc...) . Le but étant de vérifier, en général, les conditions
-d'application d'autres tests.
->
-Pour cela nous allons mesurer "l'écart" entre les valeurs observées et les valeurs théoriques
-que l'on aurait si H0 était vraie. Ensuite nous comparons cet "écart" à des valeurs critiques...
-> chisq.test(nos_resultats , p = théorique)
-
-On souhaite voir si cette distribution est proche de la loi de Poisson. On va donc ajuster une distribution
-de Poisson à ces données. Nous choisirons une loi de paramètre 3 puisque
-la moyenne de notre échantillon donne 3. Le calcul des effectifs théoriques donne.
-
-c2<-sum((Freq-Chtheo)^2/Chtheo)
-Pval<-1-pchisq(c2,df=5-1-1) // df = degré de liberté. Je crois ya 5 groupes mais -1 et -1 ?
-> (p-1)(q-1) degrés de liberté
-> (1,2,...,p) et (1,2,...,q) de modalités
-> k-r-1 degrés de liberté où r est le nombre de paramètres de F0 estimés à partir des observations
-
-Tests de normalité
-Ce test a pour but de vérifier la normalité d’une population parent à partir d’un échantillon.
-Il sert, en général, de préliminaire à un autre test (paramétrique).
-
-R sait faire par défaut le test de Shapiro-Wilk. Si nous en voulons d’autres, il faut activer
-l’extension « nortest ». Nous retrouvons alors Anderson Darling, Cramer von Mises etc.
-
-Pour tous ces tests, l’hypothèse H0 est la normalité de la distribution. Si nous rejetons H0,
-la distribution parent a de fortes chances de ne plus être gaussienne.
-
-shapiro.test : dessus 5% alors probablement gaussienne
-library(nortest) ad.test(arbres$Hauteurs) Anderson-Darling normality test
-cvm.test(arbres$Hauteurs) Cramer-von Mises normality test
-
-Un test ne suffit JAMAIS pour conclure. Un graphique du type Droite de Henry est le complément indispensable.
-
-qqnorm(arbres$Hauteurs,xlab="Fractiles",ylab="Hauteurs",col="blue", main="Droite de Henry pour la variable Hauteurs",datax=TRUE) qqline(arbres$Hauteurs,datax=TRUE,col="red")
+=====================================
 
 R trace la fonction de répartition avec une échelle des ordonnées spéciale
-« gausso-arithmétique » (Y=aX+b si X est gaussien). Avec cette échelle, la fonction de répartition des distributions
+« gausso-arithmétique » (Y=aX+b si X est gaussien). Avec cette échelle, la fonction
+de répartition des distributions
 normales est représentée par une droite appelée « droite de Henry ».
 Par conséquent plus « l'allure » de la fonction de répartition de votre échantillon est linéaire
 plus cette distribution vérifie l'hypothèse de normalité.

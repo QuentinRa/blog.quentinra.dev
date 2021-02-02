@@ -1,0 +1,5 @@
+Cartographie simple avec R, Carte choroplèthe
+->R possède la capacité de représenter des données géographiques grâce à ggplot.
+->library(ggplot2) library(dplyr) require(maps) require(viridis)
+->world_map <- map_data("france")
+->left_join(donnees, france_map, by = "region")

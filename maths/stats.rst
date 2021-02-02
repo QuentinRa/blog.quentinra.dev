@@ -5,6 +5,10 @@ Statistiques et R
 Les prérequis sont de savoir lire du R (concepts de base et un peu avancés). Attention,
 mon niveau de compréhension en statistiques est faible.
 
+Sources
+
+	* Initiation à R, Eric Preud’homme, Université du Havre (ISEL)
+
 1. Introduction
 ===================
 
@@ -66,6 +70,7 @@ lire tout le cours par contre avant d'avoir des détails.
 		* :code:`names()` : savoir les noms des variables manipulées
 		* :code:`str()` : voir les types des variables et une idée des valeurs prises
 		* :code:`complete.cases()` : le nombre de lignes sans NA donc ok
+		* :code:`range()` : retourne le min et le max
 		* D'autres fonctions : :code:`var, sd, quantile, ...`
 
 	* Objectif 3 : présentation
@@ -118,7 +123,7 @@ Les différentes lois sont
 	* **Binomiale négative** : fonction :code:`nbinom`
 	* **Normale** (Gaussienne) : fonction :code:`norm` (norm(x,mu,sigma) avec mu=moyenne, sigma=écart type donc 0,1 = centrée)
 	* **Poisson** : fonction :code:`pois`
-	* **Student t** : fonction :code:`t`
+	* **Student T** : fonction :code:`t`
 	* **Uniforme** : fonction :code:`unif`
 	* **Weibull** : fonction :code:`weibull`
 
@@ -186,6 +191,13 @@ Statistiques pondérées
 
 Le but des statistiques descriptives est de décrire notre échantillon.
 
+Améliorer nos graphiques
+	On peut ajouter des droites comme la moyenne sur nos axes pour situer
+	la répartition des données.
+
+	On peut également tester la fonction de répartition (:code:`ecdf(rloi(...))` en R)
+	en la superposant à un graphique précédemment obtenu (on rappelle le add=TRUE).
+
 Occurrences et fréquence
 	Avec :code:`table(v)` vous obtenez le nombre d'occurrences de chaque valeur dans v.
 
@@ -195,7 +207,7 @@ Occurrences et fréquence
 	Un histogramme semble être le meilleur moyen d'observer graphiquement ces valeurs.
 
 Diagrammes a bandes
-	Fonction :code:`barplot (space=augmenter l'espacement).
+	Fonction :code:`barplot` (space=augmenter l'espacement).
 
 	Vous pouvez ordonner avec sort() avant. Attention ce n'est pas très lisible s'il y a beaucoup
 	de valeurs, donc uniquement pour les variables qualitatives.
@@ -230,3 +242,80 @@ Tableaux croisés
 
 	Vous pouvez faire plusieurs calculs, mettre plusieurs lignes/colonnes en utilisant
 	des vecteurs.
+
+Quantiles
+	On utilise généralement :code:`boxplot` car on peut voir graphiquement les 3 quartiles,
+	la médiane ainsi que le min et le max.
+
+	Les valeurs extrêmes sont inférieures à :code:`Q1-1.5(Q3-Q1)` ou supérieures à :code:`Q3+1.5(Q3-Q1)`.
+
+	Il est possible de faire un boxplot pour chaque groupe, séparés selon une variable
+	quantitative avec :code:`tableau ~ nom_variable_qualitative` (ex: tableau des ages
+	et un sexe (H/F) alors on obtient deux boxplot, une pour chaque sexe).
+
+6. Statistique inférentielle
+==============================
+
+L'objectif est d'émettre des hypothèses sur un échantillon inconnu
+depuis les résultats d'analyse d'un échantillon connu en utilisant
+les probabilités.
+
+On va donc faire des tests et généralement on va devoir
+vérifier que des préconditions sont vraies pour que les test soient valides.
+
+Le test est généralement **acceptable** si la :code:`p-value` est au dessus
+de 5% donc 0.05 (la règle du je suis sur au seul de 95%).
+
+Attention ! Les tests permettent de renforcer vos suppositions mais en aucun
+cas il ne certifient qu'elles soient vraies. Ce n'est donc pas suffisant
+et il faudra probablement faire des tests de plus en plus précis.
+
+QQ plot/Diagramme Quantile-Quantile
+	Si les observations et la distribution sont la même, alors les points
+	tourneront autour de la droite. Cela peut être un moyen utile de vérifier un test.
+
+	On utilisera les fonctions comme :code:`qqplot, qqline, qq, ...`. Utilie :code:`datax=TRUE`
+	pour mettre en fonction de l'axe x.
+
+Test d’indépendance
+	On utilise généralement le célèbre test du Khi deux mais si le résultat
+	n'est pas acceptable alors on utilisera le test très gourmant en ressources
+	de Fisher.
+
+	du Khi deux (:code:`chisq.test(data,correct=FALSE)`)
+		Attention, au moins 5 individus, si p-value acceptable alors indépendantes.
+
+		On a généralement deux lois X (1,...,p) et Y (1, ..., q) alors on a une loi du Khi Deux
+		qui suit (p-1)(q-1) degrés de liberté (ou alors k-r-1 avec k groupes/classes, r paramètres estimés).
+
+		On peut regarder le :code:`$expected` pour vérifier ou encore les résidus
+		:code:`$residuals` (valeur ij élevé = joue un rôle élevé dans la liaison des variables)
+		calculés selon la formule :math:`(observed - expected) / sqrt(expected)`.
+
+	de Fisher (:code:`fisher.test(data)`)
+		Si p-value acceptable alors indépendantes.
+
+Test du Khi deux d’adéquation ou de conformité
+	Ce test permet de tester si une distribution inconnue est de la forme
+	d'une loi connue (généralement pour vérifier une hypothèse descriptive).
+
+	L'idée est d'observer la différence entre la théorie et nos valeurs
+	:code:`chisq.test(observations , p = théorie)`.
+
+	Attention, il faut vérifier le degré de liberté soit la valeur de df. Si R a échoué
+	a trouvé le bon degré, on devra faire le calcul manuellement.
+
+		* temp <- sum((observed-expected)^2/expected)
+		* res <- 1-pchisq(temp, df=...vrai_df...)
+
+Test de normalité
+	Ce test permet de tester si une distribution suit une loi normale/gaussienne.
+
+	de Shapiro-Wilk : :code:`shapiro.test()`
+	de Anderson-Darling (package nortest)  : :code:`ad.test()`
+	de Cramer-von Mises (package nortest) : :code:`cvm.test()`
+
+	Droite de Henry
+		Il s'agit d'un QQ-Plot mais pour une loi normale. On utilise
+		la fonction :code:`qqnorm` pour tracer les points et :code:`qqline`
+		pour tracer la droite.
