@@ -8,6 +8,8 @@ Général
 
 plot legend.text
 
+View()
+
 head/tail pour voir le début
 
 apply(matrice, 1 ou 2, fonction)

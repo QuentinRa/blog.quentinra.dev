@@ -34,7 +34,7 @@ Skewness et Kurtosis
 		Les coefficients de corrélation linéaire sont calculés et représentés sous forme de carrés
 		de couleurs Pour cela, nous avons besoin d’une extension corrplot.
 
-		library(corrplot) ; corrplot(M, method="circle")
+		library(corrplot); corrplot(M, method="circle")
 
 		Cela affiche une cercle avec 1 : ... et -1 ...
 
@@ -50,4 +50,68 @@ Un plan B a été inventé dans le cas où les 2 échantillons n’en sont qu’
 lorsque des mêmes individus ont été mesurés deux fois. Dans ce cas, nous calculons la différence
 pour chaque individu (cohérent car ce sont les mêmes) et nous testons la nullité.
 
-Stop page 243/451
+Test de nullité du coefficient de corrélation linéaire
+	Ce test permet de vérifier la liaison entre deux variables quantitatives (gaussiennes ou plus
+	de 30 effectifs)
+
+	cor et cor.test
+
+	Nous savons que r doit être compris entre -1 et 1 et que, lorsque le coefficient est proche de 1 ou de -1, cela
+  peut être le signe d’une corrélation linéaire. Dans la pratique, il est préférable d’utiliser un test pour savoir si
+  ce coefficient est significativement non nul.
+
+Matrice des corrélations
+ Si vous avez besoin de calculer les corrélations 2 à 2 entre n variables quantitatives,
+ il existe un bon outil : la matrice des corrélations.
+
+	voir plus avant
+
+	# Pour avoir le test de significativité
+	cor.mtest
+	Les valeurs en dessous de 5% = corrélation
+
+	M<-cor(froment[,2:6])
+	corrplot(M, method="circle")
+	corrplot(M, method="number") // avec des nombres
+	corrplot(M, method="number", type='upper') // partie sup
+
+http://www.sthda.com/french/wiki/visualiser-une-matrice-de-correlation-par-un-correlogramme
+
+Liaison entre une variable qualitative
+et une quantitative : Analyse de la variance (Anova)
+	Nous avons vu dans les paragraphes précédents comment comparer 2 moyennes.
+	 La méthode présentée ici généralise cela.
+
+	 ----> Anova à un critère
+
+	 Elle a pour but de mesurer la liaison entre une variable qualitative (le type d’arbre) et une variable
+   quantitative (la hauteur). Cela revient à comparer les moyennes de k populations qui son supposées
+   normales27et de même variance28, à partir d'échantillons aléatoires et indépendantsles uns des autres.
+
+   Ce nombre, compris entre 0
+   et 1 mesure l'intensité de la liaison entre X et Y. S'il vaut zéro il n'y a aucune liaison entre X et Y. Inversement,
+   s'il vaut 1, la liaison est parfaite.
+
+   Si F est supérieur à la valeur critique (ou si p est inférieur à la valeur de référence (0.05 en général)), on
+   rejette H0. Les moyennes entre différentes classes sont significativement différentes, la variable X a donc une
+   influence sur Y ou encore, le pouvoir discriminant de X sur Y est significatif.
+
+   analyse <- aov(Hauteurs ~ Types, data=arbres)# analyse de variance
+   summary(analyse)
+   La pvaleur est inférieure à 5% (0,00261), nous rejetons donc H0.
+   Il y a donc une différence significative entre les moyennes.
+   (Type d'arbre dépends de la forêt)
+
+   Tests de Tukey
+   Ces tests permettent de savoir quelles sont les moyennes qui différent des autres.
+   TukeyHSD(analyse)
+   diff de -2 donc  différence significative
+   p adj en dessous de 5% aussi
+   tapply(arbres$Hauteurs,arbres$Types,shapiro.test)
+
+	 ----> Anova à deux critères
+   Lorsque nous voulons étudier l’influence de deux variables qualitatives sur une variable
+   quantitative, il est possible de faire deux ANOVA à un critère mais nous perdons alors
+   la possibilité de voir une interaction entre les deux facteurs.
+
+Stop page 260/451

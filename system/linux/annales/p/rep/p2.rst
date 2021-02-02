@@ -62,10 +62,12 @@ le nombre de lignes (donc de match).
 	find $(echo $PATH | tr ':' '\n') -maxdepth 0 -type d | tr '\n' ':' | cut -d: -f1,3 | tr ':' '\n'
 
 La première étape est d'obtenir toutes les valeurs du path, une par ligne. Ensuite
-on sait que find avec maxdepth de 0 retourne 1 seul résultat : le dossier du find, sauf
+on sait que find avec maxdepth de 0 retourne 1 seul résultat : le chemin (argument) du find, sauf
 qu'on filtre uniquement sur les dossiers. On trouve donc tous les dossiers
 du path mais un par ligne. On remets les : en séparateur, on prends
 le 1 et le 3 élément et enfin on remet un élément par ligne.
+
+:code:`Note` : cette question est vicieuse donc ce n'est pas la bonne réponse mais j'ai eu un kiff.
 
 Exercice 2 (sed 2 points)
 =============================
@@ -87,7 +89,7 @@ pour finir le groupe (à la place du ]). Attention aussi aux :code:`+` qui corre
 
 On peut la placer avant le :code:`.*` ce qui donne
 
-:code:`sed -e "s/\([a-z]+\)\([0-9]+\).*/\2\1/"`
+:code:`sed -e "s/\([a-z]\+\)\([0-9]\+\).*/\2\1/"`
 
 	* :code:`\([a-z]+\)` : corresponds à au moins une lettre minuscule (1)
 	* :code:`\([0-9]+\)` : corresponds à au moins un chiffre (2)
