@@ -114,4 +114,78 @@ et une quantitative : Analyse de la variance (Anova)
    quantitative, il est possible de faire deux ANOVA à un critère mais nous perdons alors
    la possibilité de voir une interaction entre les deux facteurs.
 
-Stop page 260/451
+		Ex. Alcool et vitesse sur risque d’accident
+
+		La théorie des plans d’expériences explique que pour minimiser l’erreur pour estimer les
+		effets des facteurs, il faut utiliser une matrice orthogonale. (Hadamard)
+
+		En conséquence, pour ce type de problème, il est hautement souhaitable de construire un plan
+		d’expériences (orthogonal) adapté à la situation. L’erreur est alors au minimum divisée par
+		2… Voir le paragraphe dans ce support.
+
+		fit<-aov(Teneur~Sol+Sonde+Sol:Sonde,data=Donnees)
+		Sonde+Sol = prod cartésien donc sonde puis sous groupe par sol
+		en fonction du type de sol et du type de sonde
+
+		attach(Donnees) ???
+		interaction.plot(Sol, Sonde, Teneur,lwd=2,ylab="Teneur moyenne", main="Effet du facteur Sol en fonction du facteur Sonde")
+		Représentation des interactions
+
+		3 droites, une par sonde en fonction du sol (x) par la teneur (y)
+
+		Nous voyons que les trois droites sont quasiment parallèles. L’effet du facteur Sol (pente d’une droite) ne dépend pas de la sonde choisie (les trois pentes sont quasiment les mêmes).
+    Il n’y a donc pas d’interaction Sol Sonde sur Teneur.
+
+    Méthodes non paramétriques
+    (T Test, Anova etc...) demande loi normale. Méthodes moins puissantes ici.
+    Elles portent le nom de méthodes non paramétriques, ou « distribution free » en anglais,
+    ce qui est plus parlant.
+    Si la normalité ne fait plus partie des hypothèses d’application,
+    d’autres conditions peuvent être exigées (indépendance des échantillons,
+    distributions symétriques, continues...).
+
+    Parmi les tests précédents certains étaient non paramétriques : tests sur les proportions, tests d’adéquation, de normalité
+
+    Alternative T test si non indépendantes
+    --> comparer la médiane d’un échantillon à une valeur fixée
+
+    SIGN test ???
+    // tests si la médiane de poids vaut 60
+    SIGN.test(poids, md = 60, alternative = "two.sided", conf.level = 0.95)
+
+    Test de Wilcoxon (ou  signedrank test)
+    il ressemble au test précédent sauf qu’il est effectué sur des rangs. Ce test est
+    plus puissant que le précédent. Toutefois pour être appliqué, la population parent doit être symétrique ce
+    qui n’est pas toujours évident à vérifier : histogramme, coefficient d’asymétrie…
+		wilcox.test(poids, mu = 60, alternative = "two.sided", conf.level = 0.95)
+
+    Test de Mann et Whitney (ou de Wilcoxon) (comparaison de 2 médianes)
+
+    --> tester l’égalité des médianes
+    Nous considérons une variable numérique ordinale observée sur deux
+    populations indépendantes. Nous disposons de deux échantillons (de tailles n1 et n2)
+    constitués d’observations indépendantes respectivement
+    d’une loi G1 et d’une loi G2.
+
+		C’est probablement le test non paramétrique le plus connu et le plus utilisé
+
+		Pour des effectifs suffisamment élevés (n1+n2>30) la distribution de Y1 est
+		approximativement normale de
+    moyenne n1(n1+n2+1)/2 et de variance n1n2(n1+n2+1)/12.
+
+		wilcox.test(stid$Poids~stid$Sexe,alternative = "two.sided", conf.level = 0.95)
+		La pvaleur vaut pratiquement 0. Il y a donc une différence significative entre les médianes.
+
+		Nous devons vérifier les hypothèses d’application de ce test. Les fonctions de répartition ne doivent pas se
+    croiser. La fonction ECDF (empirical cumulative distribution function) permet de le vérifier.
+    (trace les deux courbes et on regarde)
+
+
+		Test de Mann et Whitney (Wilcoxon) pour données appariées.
+		Si les deux échantillons n’en sont qu’un : individus mesurés deux fois par exemple, on ne peut utiliser le test précédent.
+		Deux test a deux moments sur la même population
+    wilcox.test(before,after,paired=T)
+
+    Le test de Kruskal et Wallis (comparaison de k distributions quant à leurs positions)
+
+Stop page 272/451
