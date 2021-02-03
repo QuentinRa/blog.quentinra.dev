@@ -160,7 +160,7 @@ Variance et écart-type
 écart-type de X = sqrt(σ) donc σ ou σ_X
 
 formule de Huygens
-e(x^2) - e^2(x)
+E(x^2) - E^2(x)
 
 Var(aX + b) = a^2Var(X)
 

@@ -72,14 +72,12 @@ lire tout le cours par contre avant d'avoir des détails.
 		* :code:`range()` : retourne le min et le max
 		* D'autres fonctions : :code:`var, sd, quantile, ...`
 
-	* Objectif 3 : présentation
+	* Objectif 2 : Statistiques descriptives
 
 		* Ici on risque généralement de transformer les données
 		* par exemple changer un type de variable (quantitative -> qualitatif ou inverse)
-		* faire des vérifications (indépendance ou corrélation, ...)
-
-	* Objectif 4 : trouver une loi
-
+		* on va faire plusieurs graphiques pour essayer de trouver des propriétés à tester
+		* on va essayer de regarder si la distribution semble normale, les variables indépendantes, ...
 		* on peut faire un histogramme, un diagramme de points, ...
 		* on peut superposer une loi pour tester
 		* on peut observer les moments
@@ -87,6 +85,13 @@ lire tout le cours par contre avant d'avoir des détails.
 
 			* si la moyenne est 3 : une loi de poisson de paramètre 3
 			* si la distribution est linéaire, c'est sûrement une loi normale/gaussienne
+
+	Objectif 4 : Statistiques inférentielle
+
+		* ici on va faire des tests pour vérifier notre modèle
+		* certains tests on besoin de conditions (autres tests) pour être faits (normalité, indépendance, ...)
+		* un test ne suffit pas à conclure
+		* on distingue les tests paramétriques (conditions à respecter) des tests non paramétriques
 
 .. [#1] On va généralement partitionner nos observations entre deux parties (75%/25% par exemple)
 	pour avoir une majorité de données servant à construire notre modèle (apprentissage) et un autre
@@ -244,7 +249,7 @@ Tableaux croisés
 
 Quantiles
 	On utilise généralement :code:`boxplot` car on peut voir graphiquement les 3 quartiles,
-	la médiane ainsi que le min et le max.
+	la médiane ainsi que le min et le max. La fonction :code:`quantiles()` retourne tous les quantiles.
 
 	Les valeurs extrêmes sont inférieures à :code:`Q1-1.5(Q3-Q1)` ou supérieures à :code:`Q3+1.5(Q3-Q1)`.
 
@@ -252,18 +257,33 @@ Quantiles
 	quantitative avec :code:`tableau ~ nom_variable_qualitative` (ex: tableau des ages
 	et un sexe (H/F) alors on obtient deux boxplot, une pour chaque sexe).
 
+Moments
+	| Moment d'ordre 1 : E(X)
+	| Moment d'ordre 2 : V(X)
+	| Moment d'ordre 3 : Skewness ou coefficient d’asymétrie, :code:`E[(X-\mu)^3]/\sigma^3`
+	| Moment d'ordre 4 : Kurtosis ou coefficient d’aplatissement, :code:`E[(X-\mu)^4]/\sigma^4 - 3`
+
+	Si Skewness est proche de 0 alors la distribution est symétrique.
+
+	Si Kurtosis est faible alors la répartition est équilibrée sinon il y a un pic. En particulier,
+	si Kurtosis vaut 3 alors on a une loi gaussienne.
+
+	On étudie les moments avec :code:`mean`, :code:`var`. :code:`` et :code:`` sont
+	dans la librairie :code:`e1071` (ou :code:`moments`).
+
 6. Statistique inférentielle
 ==============================
 
-L'objectif est d'émettre des hypothèses sur un échantillon inconnu
-depuis les résultats d'analyse d'un échantillon connu en utilisant
-les probabilités.
+L'objectif est de pouvoir déduire le comportement d'une population
+inconnue depuis les résultats d'analyse d'une population connue. En particulier,
+les tests servent à vérifier le modèle que nous avons choisi pour représenter
+la distribution.
 
 On va donc faire des tests et généralement on va devoir
 vérifier que des préconditions sont vraies pour que les test soient valides.
 
 Le test est généralement **acceptable** si la :code:`p-value` est au dessus
-de 5% donc 0.05 (la règle du je suis sur au seul de 95%).
+de 5% donc 0.05 (le "je suis sûr au seul de 95%").
 
 Attention ! Les tests permettent de renforcer vos suppositions mais en aucun
 cas il ne certifient qu'elles soient vraies. Ce n'est donc pas suffisant
@@ -273,21 +293,16 @@ QQ plot/Diagramme Quantile-Quantile
 	Si les observations et la distribution sont la même, alors les points
 	tourneront autour de la droite. Cela peut être un moyen utile de vérifier un test.
 
-	On utilisera les fonctions comme :code:`qqplot, qqline, qq, ...`. Utilie :code:`datax=TRUE`
+	On utilisera les fonctions comme :code:`qqplot, qqline, qq, ...`. :code:`datax=TRUE` est utile
 	pour mettre en fonction de l'axe x.
 
 Test d’indépendance
 ------------------------
 
-On utilise généralement le célèbre test du Khi deux mais si le résultat
-n'est pas acceptable alors on utilisera le test très gourmant en ressources
-de Fisher.
+:code:`Motivation` : variables qualitatives indépendantes si p-value acceptable.
 
-du Khi deux (:code:`chisq.test(data,correct=FALSE)`)
-	Attention, au moins 5 individus, si p-value acceptable alors indépendantes.
-
-	On a généralement deux lois X (1,...,p) et Y (1, ..., q) alors on a une loi du Khi Deux
-	qui suit (p-1)(q-1) degrés de liberté (ou alors k-r-1 avec k groupes/classes, r paramètres estimés).
+du Khi deux (:code:`chisq.test(tab,correct=FALSE)`)
+	| :code:`Prérequis` : tab de 2 variables qualitatives, au moins 5 individus
 
 	On peut regarder le :code:`$expected` pour vérifier ou encore les résidus
 	:code:`$residuals` (valeur ij élevé = joue un rôle élevé dans la liaison des variables)
@@ -295,28 +310,36 @@ du Khi deux (:code:`chisq.test(data,correct=FALSE)`)
 
 	Le correct corresponds à la correction de continuité (T=oui, F=non).
 
-de Fisher (:code:`fisher.test(data)`)
-	Si p-value acceptable alors indépendantes.
+de Fisher (:code:`fisher.test(tab)`)
+	| :code:`Prérequis` : tab de 2 variables qualitatives
+
+	Très gourmand en ressources, préférez le célèbre test du Khi-Deux.
 
 Test d’adéquation du Khi deux
 --------------------------------
 
-Également appelé test de conformité, ce test permet de tester si une distribution
-inconnue est de la forme d'une loi connue (généralement pour vérifier une hypothèse descriptive).
+*Également appelé test de conformité*.
 
-L'idée est d'observer la différence entre la théorie et nos valeurs
-:code:`chisq.test(observations , p = théorie)`.
+| :code:`Motivation` : tester si une distribution inconnue est de la forme d'une loi connue.
+| :code:`chisq.test(observations , p = théorie)`
 
-Attention, il faut vérifier le degré de liberté soit la valeur de df. Si R a échoué
+L'idée est d'observer la différence entre la théorie et nos valeurs.
+
+On a généralement deux lois X (1,...,p) et Y (1, ..., q) alors on a une loi du Khi Deux
+qui suit (p-1)(q-1) degrés de liberté (ou alors k-r-1 avec k groupes/classes, r paramètres estimés).
+
+On note df le degré de liberté qu'il faut vérifier. Si R a échoué
 a trouvé le bon degré, on devra faire le calcul manuellement.
 
-	* temp <- sum((observed-expected)^2/expected)
-	* res <- 1-pchisq(temp, df=...vrai_df...)
+.. code:: r
+
+	> temp <- sum((observed-expected)^2/expected)
+	> res <- 1-pchisq(temp, df=...vrai_df...)
 
 Test de normalité
--------------------------------
+------------------
 
-Ce test permet de tester si une distribution suit une loi normale/gaussienne.
+| :code:`Motivation` : tester si une distribution suit une loi normale/gaussienne.
 
 | de **Shapiro-Wilk** : :code:`shapiro.test()`
 | de **Anderson-Darling** (package nortest)  : :code:`ad.test()`
@@ -327,34 +350,38 @@ Droite de Henry
 	la fonction :code:`qqnorm` pour tracer les points et :code:`qqline`
 	pour tracer la droite.
 
+Test de comparaison/sur les proportions
+----------------------------------------
+
+| :code:`Motivation` : trouver la proportion d'individus suivant un certain critère
+
+Cas 1 proportion (:code:`prop.test(x,n,p=proba,correct=FALSE)` (ou binom.test))
+	On a reçu x succès sur n, p=proba et on veut vérifier si c'est vrai
+
+	Le résultat indique l'intervalle dans lequel peut être p et sa valeur estimée,
+	en plus de p-value.
+
+Cas 2 proportions (:code:`prop.test(x=c(x,y), n=c(N1,N2),correct=FALSE)`)
+	On a x succès sur N1 et y sur N2.
+
 Tests d'égalités de variances
 ----------------------------------
 
-On suppose que vous avez fait le test de normalité.
+de Fisher (2 variances, :code:`var.test(...)`)
+	:code:`Prérequis` : test de normalité ok, populations indépendantes
 
-de Fisher (2 variances)
-	Code : :code:`var.test(...)`. On peut donner deux dataset (x,y) ou un dataset (data)
-	et un dataset divisé en 2 groupes (formula).
+	On peut donner deux dataset (x,y) ou un dataset (data) et un dataset divisé en 2 groupes (formula).
 
-de Bartlett
-	Code : :code:`bartlett.test(v_quantitatif, v_qualitatif)`
+	En gros vous pouvez soit tester la variance en général de deux jeux de données ou alors
+	vous pouvez filtrer pour prendre une seule variable, divisée par groupe et tester l'égalité de
+	la variance des sous-groupes.
 
-	On doit donc donner un vecteur qualitatif sur lequel on a appliqué factor en 2e argument.
+de Bartlett (:code:`bartlett.test(v_quantitatif, v_qualitatif)`)
+	:code:`Prérequis` : test de normalité ok, 4 individus minimum par échantillon et pas trop d'échantillons par rapport à leur taille
 
-Test de comparaison
-------------------------
-
-On cherche à trouver la proportion d'individus suivant un certain critère. On suppose
-que vous avez fait de le test des variances avant.
-
-Cas binomiale : on a reçu x succès sur n, p=proba et on veut vérifier si c'est vrai
-	Code : :code:`prop.test(x,n,p=proba,correct=FALSE)` (ou binom.test)
-
-	Le résultat indique l'intervalle dans lequel peut être p et sa valeur estimée,
-	en plus de p-value...
-
-Cas "binomiale double" : on a x succès sur N1 et y sur N2
-	Code : :code:`prop.test(x=c(x,y), n=c(N1,N2),correct=FALSE)`
+	On va donner un vecteur de valeurs quantitatives et un vecteur qualitatif (factor) permettant
+	de faire des groupes (échantillons) de valeurs du premier vecteur. On va ensuite
+	comparer l'égalité de la variance de chaque groupe. Il est moins puissant que Fisher.
 
 Tests d’égalité de moyennes
 ----------------------------------
@@ -382,5 +409,6 @@ de Student T
 
 	* http://www.jybaudot.fr/Inferentielle/ajuskhidx.html
 	* https://fr.wikipedia.org/wiki/Test_F
+	* https://en.wikipedia.org/wiki/Nonparametric_statistics
 	* http://www.unit.eu/cours/cyberrisques/etage_3_frederic/co/Module_Etage_3_22.html
 	* https://support.minitab.com/fr-fr/minitab/18/help-and-how-to/modeling-statistics/anova/supporting-topics/basics/understanding-test-for-equal-variances/

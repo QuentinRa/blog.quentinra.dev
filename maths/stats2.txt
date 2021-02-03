@@ -11,12 +11,6 @@ order(vecteur) : donne les indexes dans l'ordre
 esprit d'analyse
 ----------------------
 
-Skewness et Kurtosis
-	Lorsque le skewness est proche de 0, la distribution est symétrique.
-	Kurtosis est un coefficient mesurant l'aplatissement si
-	Kurtosis alors la répartition est équilibrée, si Kurtosis est important
-	alors il y a un pic à un endroit. Une loi gaussienne corresponds à Kurtosis=3.
-
 ??? Ajustement linéaire
 	Coefficient de corrélation (cor) et une droite de régression (lm)
 	coefficients(modele)
@@ -189,3 +183,4 @@ et une quantitative : Analyse de la variance (Anova)
     Le test de Kruskal et Wallis (comparaison de k distributions quant à leurs positions)
 
 Stop page 272/451
+Stop page 234/451
