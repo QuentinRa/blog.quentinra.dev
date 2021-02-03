@@ -64,6 +64,7 @@ lire tout le cours par contre avant d'avoir des détails.
 	* Objectif 2 : avoir une idée générale des données que l'on manipule
 
 		* :code:`summary()` : le nombre de NA, les moyennes, ...
+		* :code:`view()` : afficher (graphiquement)
 		* :code:`head()` : le début donc les premières valeurs
 		* :code:`dim()` : savoir combien de lignes=individus/colonnes=variables on manipule
 		* :code:`names()` : savoir les noms des variables manipulées
@@ -91,7 +92,7 @@ lire tout le cours par contre avant d'avoir des détails.
 		* ici on va faire des tests pour vérifier notre modèle
 		* certains tests on besoin de conditions (autres tests) pour être faits (normalité, indépendance, ...)
 		* un test ne suffit pas à conclure
-		* on distingue les tests paramétriques (conditions à respecter) des tests non paramétriques
+		* on distingue les tests paramétriques (modèle suit une loi normale) des tests non paramétriques
 
 .. [#1] On va généralement partitionner nos observations entre deux parties (75%/25% par exemple)
 	pour avoir une majorité de données servant à construire notre modèle (apprentissage) et un autre
@@ -389,12 +390,44 @@ Tests d’égalité de moyennes
 On suppose une population de plus de 30 individus ou alors que vous avez fait le test
 de normalité.
 
-de Student T
-	| Code (1) : :code:`t.test(x=data, alternative="two.sided", mu=valeur)`
-	| Code (2) : :code:`t.test(x=data1, y=data2, alternative="two.sided", var.equal=TRUE)`
+de Student T à moyenne fixée (:code:`t.test(x=data, alternative="two.sided", mu=valeur)`)
+	| :code:`Prérequis` : test de normalité ou plus de 30 individus
 
-	On peut traiter ici les cas avec une ou deux moyennes.
-	Comme toujours, on regarde p-value et on peut aussi regarder l'intervalle de confiance ($conf.int).
+	| (2) :code:`t.test(x=data1, y=data2, alternative="two.sided", var.equal=TRUE)`
+
+	Elle consiste a tester si pour un échantillon la moyenne vaut bien mu.
+
+de Student T a deux moyennes (:code:`t.test(x=data1, y=data2, alternative="two.sided", var.equal=TRUE)`)
+	| :code:`Prérequis` : test de normalité ou plus de 30 individus, test de variance égales
+
+	On test si la moyenne de deux échantillons est la même.
+
+Test sur les données appariés
+-------------------------------
+
+Attention si votre jeu de données contient des données appariés, c'est-à-dire que vous
+avez un échantillon A et un échantillon B concernant les mêmes individus (par exemple
+a deux moments différents).
+
+Test (de nullité) du coefficient de corrélation linéaire
+	| :code:`Prérequis` : test de normalité ou plus de 30 individus, deux variables quantitatives
+	| :code:`Résultat` : 0 = corrélation possible, ou valeur entre -1 et 1
+	| :code:`Calcul` : :code:`cor.test()` (test de corrélation)
+
+	Matrice des corrélations
+		On peut utiliser :code:`cor.mtest(data)$p` du package :code:`corrplot`
+		pour voir la matrice des corrélations, avec data une matrice ou un data.frame
+		par exemple. On peut voir les corrélations deux à deux.
+
+	On peut utiliser :code:`corrplot(cor(data), method="circle")` ou
+	:code:`corrplot(cor(data), method="number")` du package :code:`corrplot`
+	pour avoir un aperçu graphique.
+
+ANOVA : analyse de la variance
+------------------------------------
+
+Anova a permet de comparer une ou plusieurs variables quantitatives
+selon une variable qualitative.
 
 -----
 
@@ -412,3 +445,5 @@ de Student T
 	* https://en.wikipedia.org/wiki/Nonparametric_statistics
 	* http://www.unit.eu/cours/cyberrisques/etage_3_frederic/co/Module_Etage_3_22.html
 	* https://support.minitab.com/fr-fr/minitab/18/help-and-how-to/modeling-statistics/anova/supporting-topics/basics/understanding-test-for-equal-variances/
+	* http://foucart.thierry.free.fr/StatPC/livre/chapitre6/fisher.htm
+	* http://www.sthda.com/french/wiki/visualiser-une-matrice-de-correlation-par-un-correlogramme

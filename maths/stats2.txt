@@ -8,6 +8,9 @@ library(lattice)	regroup<-make.groups(nom=valeur, ...)
 
 order(vecteur) : donne les indexes dans l'ordre
 
+sum(is.na(Height))
+Height[is.na(Height)] <- mean(Height, na.rm = TRUE)
+
 esprit d'analyse
 ----------------------
 
@@ -25,51 +28,8 @@ esprit d'analyse
 	Matrice des corrélations
 		Repérer les liens entre les variables quantitatives.
 
-		Les coefficients de corrélation linéaire sont calculés et représentés sous forme de carrés
-		de couleurs Pour cela, nous avons besoin d’une extension corrplot.
-
-		library(corrplot); corrplot(M, method="circle")
-
-		Cela affiche une cercle avec 1 : ... et -1 ...
-
 Statistique inférentielle (tests)
 =====================================
-
-Tests d'égalités de variances : ~ Indépendance requise.
-
-3. Test T pour données appariées (Paired)
-Lorsque les échantillons ne sont pas indépendants, le test précédent n’est plus applicable.
-
-Un plan B a été inventé dans le cas où les 2 échantillons n’en sont qu’un seul : par exemple
-lorsque des mêmes individus ont été mesurés deux fois. Dans ce cas, nous calculons la différence
-pour chaque individu (cohérent car ce sont les mêmes) et nous testons la nullité.
-
-Test de nullité du coefficient de corrélation linéaire
-	Ce test permet de vérifier la liaison entre deux variables quantitatives (gaussiennes ou plus
-	de 30 effectifs)
-
-	cor et cor.test
-
-	Nous savons que r doit être compris entre -1 et 1 et que, lorsque le coefficient est proche de 1 ou de -1, cela
-  peut être le signe d’une corrélation linéaire. Dans la pratique, il est préférable d’utiliser un test pour savoir si
-  ce coefficient est significativement non nul.
-
-Matrice des corrélations
- Si vous avez besoin de calculer les corrélations 2 à 2 entre n variables quantitatives,
- il existe un bon outil : la matrice des corrélations.
-
-	voir plus avant
-
-	# Pour avoir le test de significativité
-	cor.mtest
-	Les valeurs en dessous de 5% = corrélation
-
-	M<-cor(froment[,2:6])
-	corrplot(M, method="circle")
-	corrplot(M, method="number") // avec des nombres
-	corrplot(M, method="number", type='upper') // partie sup
-
-http://www.sthda.com/french/wiki/visualiser-une-matrice-de-correlation-par-un-correlogramme
 
 Liaison entre une variable qualitative
 et une quantitative : Analyse de la variance (Anova)
@@ -183,4 +143,4 @@ et une quantitative : Analyse de la variance (Anova)
     Le test de Kruskal et Wallis (comparaison de k distributions quant à leurs positions)
 
 Stop page 272/451
-Stop page 234/451
+Stop page 250/451
