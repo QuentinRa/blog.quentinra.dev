@@ -1,0 +1,138 @@
+Définition: Le but principal de la statistique est de déterminer les caractéristiques d'une population
+donnée à partir de l'étude d'une partie de cette population, appelée "échantillon" ou "échantillon
+représentatif". La détermination de ces caractéristiques doit permettre aux statistiques d'être un outil
+d'aide à la décision!
+
+Remarque: Le traitement des données concerne la "statistique descriptive". L'interprétation des
+données à partir des estimateurs s'appelle "l'inférence statistique" (ou "statistique inférentielle"), et
+l'analyse de données en masse la "statistique fréquentielle" (en opposition à l'inférence bayésienne).
+
+Lorsque nous observons un événement prenant en compte certains facteurs, il peut arriver qu'une
+deuxième observation ait lieu dans des conditions qui semblent identiques. En répétant ces mesures
+plusieurs fois sur différents objets supposés similaires, nous pouvons constater que les résultats
+observables sont distribués statistiquement autour d'une valeur moyenne qui est, finalement le résultat
+possible le plus probable. Dans la pratique, nous n'effectuons cependant parfois qu'une seule mesure et
+il s'agit alors de déterminer la valeur de l'erreur que nous commettons en adoptant celle-ci comme
+moyenne mesurée. Cette détermination nécessite de connaître le type de distribution statistique auquel
+nous avons affaire et c'est ce que nous allons nous attarder (entre autres) à étudier ici (les bases du
+moins!). Il existe cependant plusieurs approches méthodologiques courantes (les moins courantes
+n'étant pas citées pour l'instant) face au hasard
+
+Vincent ISOZ [v3.0 - 2013]
+
+empiriques = grande population ?
+
+3. Enfin, quand nous pouvons lier des probabilités aux événements aléatoires, soit que ces probabilités
+découlent de calculs ou de mesures, soit qu'elles reposent sur une expérience acquise auprès de
+situations antérieures de même nature que la situation actuelle, nous pouvons faire appel aux
+statistiques descriptives et inférentielles (contenu du présent chapitre) pour tirer des informations
+exploitables et pertinentes de cette masse de données acquises.
+
+R1. Sans la statistique mathématique, un calcul sur des données (par exemple une moyenne), n'est
+qu'un "indicateur ponctuel". C'est la statistique mathématique qui lui donne le statut d'estimateur
+dont on maîtrise le biais, l'incertitude et autres caractéristiques statistiques. Nous cherchons en
+général à ce que l'estimateur soit sans biais, convergeant et efficace (nous verrons lors de notre
+étude des estimateurs plus loin de quoi il s'agit exactement).
+R2. Lorsque nous communiquons une statistique il devrait être obligatoire de préciser l'intervalle de
+confiance ainsi que la taille de l'échantillon étudié et ses caractéristiques détaillées sinon quoi elle
+n'a quasiment aucune valeur scientifique.
+
+---------------->
+Il faut que l'échantillon soit représentatif de la population
+Pour cela, l'échantillonnage aléatoire est le meilleur moyen d'y parvenir.
+
+D1. Nous sommes en présence d'un "caractère quantitatif" lorsque chaque élément observé fait
+explicitement l'objet d'une même mesure. A un caractère quantitatif donné, nous associons une
+"variable quantitative" continue ou discrète qui synthétise toutes les valeurs possibles que la mesure
+considérée est susceptible de prendre (ce type d'information étant représenté par des courbes de loi de
+Gauss-Laplace, de la loi bêta, de la loi de Poisson, etc.).
+
+D2. Nous sommes en présence d'un "caractère qualitatif" lorsque chaque élément observé fait
+explicitement l'objet d'un rattachement unique à une "modalité" choisie dans un ensemble de modalités
+exclusives (de type: homme | femme) permettant de classer tous les éléments de l'ensemble étudié selon
+un certain point de vue (ce type d'information étant représenté par des diagrammes à barre, fromages,
+diagrammes à bulles, etc.). L'ensemble des modalités d'un caractère peut être établi a priori avant
+l'enquête (une liste, une nomenclature, un code) ou après enquête. Une population étudiée peut être
+représentée par un caractère mixte, ou ensemble de modalités tel que genre, tranche salariale, tranche
+d'âge, nombre d'enfants, situation matrimoniale par exemple pour un individu.
+
+D3. Un "échantillon aléatoire" est un échantillon tiré au hasard dans lequel tous les individus d'une
+population ont la même chance, ou "équiprobabilité" (et nous insistons sur le fait que cette probabilité
+doit être égale), de se retrouver dans l'échantillon.
+
+D4. Dans le cas contraire d'un échantillon dont les éléments n'ont pas été pris au hasard, nous disons
+alors que l'échantillon est "biaisé" (dans le cas inverse nous disons qu'il est "non-biaisé")
+
+La notion de "moyenne" ou "tendance centrale" est avec la notion de "variable" à la base des statistiques.
+
+D1. La "moyenne arithmétique" ou "moyenne empirique" (xi/n)
+
+moyenne pondérée par les effectifs (xi * nombre d'occurrences)/n
+= d'espérance mathématique (en proba)
+
+fréquence des classes ni/n
+
+moyenne pondérée par les fréquences de classe fi*xi
+
+un intervalle de classe est fermé à gauche et ouvert à droite: [...,...[.
+règle de Sturges"
+il est souvent utile et nécessaire de
+regrouper les mesures/données dans des intervalles de classe de largeur donnée
+
+Le "mode", noté Mod ou simplement M, est par définition la valeur qui apparaît le plus
+grand nombre de fois dans une série de valeurs.
+
+D2. La "médiane" ou "moyenne milieu", notée (ou plus simplement M), est la valeur qui coupe une
+population en deux parties égales.
+
+dispersion des écarts absolus : somme des écarts absolus
+
+Il existe un autre cas pratique où le statisticien n'a à sa disposition que des valeurs regroupées sous
+forme d'intervalles de classes statistiques. La procédure pour déterminer la médiane est alors différente:
+Lorsque nous avons à notre disposition uniquement une variable classée, l'abscisse du point de la
+médiane se situe en général à l'intérieur d'une classe. Pour obtenir alors une valeur plus précise de la
+médiane, nous procédons à une interpolation linéaire. C'est ce que nous appelons la "méthode
+d'interpolation linéaire de la médiane".
+
+La valeur de la médiane peut être lue sur le graphique (F(x)) ou calculée analytiquement.
+La valeur de la médiane M se trouve évidemment au croisement entre la probabilité de 50% (0.5) et
+l'abscisse.
+M = a + (b-a) * \frac{0.5-F(a)}{F(b)-F(a)}
+
+Pour éviter d'obtenir une moyenne arithmétique ayant peu de sens, nous calculons
+souvent une "moyenne élaguée", c'est à dire une moyenne arithmétique calculée après avoir enlevé
+des valeurs aberrantes à la série.
+
+Les "quantiles" généralisent la notion de médiane en coupant la distribution en des ensembles donnés
+de parties égales (de même cardinal pourrions-nous dire...) ou autrement dit en intervalles réguliers.
+Nous définissons ainsi les "quartiles", les "déciles" et les "centiles" (ou "percentiles") sur la population,
+ordonnée dans l'ordre croissant, que nous divisons en 4, 10 ou 100 parties de même effectif.
+
+Nous parlerons ainsi du centile 90 pour indiquer la valeur séparant les premiers 90% de la population
+des 10% restants.
+
+Ce concept est très important dans le cadre des intervalles de confiance que nous verrons beaucoup
+plus loin dans ce chapitre et très utile dans le domaine de la qualité avec l'utilisation des boîtes à
+moustaches (traduction de Box & Whiskers Plot ou BoxPlot) permettant de comparer ("discriminer"
+comme disent les spécialistes) rapidement deux populations de données ou plus et surtout d'éliminer les
+valeurs aberrantes (prendre comme référence la médiane sera justement plus judicieux!):
+
+Une autre représentation mentale très importante des boîtes à moustache est la suivante (elle permet
+donc de se donner une idée de l'asymétrie de la distribution):
+
+D3. Par analogie avec la médiane, nous définissons la "médiale" comme étant la valeur (dans l'ordre
+croissant des valeurs) qui partage la somme (cumuls) des valeurs en deux masses égales (donc la
+somme totale divisée par deux).
+
+Dans le cas de salaires, alors que le médiane donne le 50% des salaires se trouvant en-dessous et
+en-dessus, la médiale donne combien de salariés se partagent (et donc le salaire partageant) la première
+moitié et combien de salariés se partagent la seconde moitié de l'ensemble des coûts salariaux.
+
+La "moyenne quadratique" parfois simplement notée Q qui est définie par: ...
+racine m-ième de la somme des xi^m/n. L'écart type est une moyenne quadratique.
+
+moyenne pondérée
+en statistiques pour calculer une espérance (le dénominateur étant
+toujours égal à l'unité en probabilités)
+
+2.1. LISSAGE DE LAPLACE (309)
