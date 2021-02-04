@@ -138,6 +138,10 @@ Il y a plusieurs façon d'interpréter cette question, par exemple
 	test test test
 	# version 3
 	$ ./script.sh "test" 3 "file.txt"
+	$ cat /tmp/file.txt
+	test test test
+	# version 4
+	$ ./script.sh "test" 3 "file.txt"
 	# version 1 ou 2 mais avec 0 fois ?
 
 .. code:: bash

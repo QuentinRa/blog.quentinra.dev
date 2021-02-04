@@ -31,8 +31,101 @@ esprit d'analyse
 Statistique inférentielle (tests)
 =====================================
 
-    --> tester l’égalité des médianes
+--> Le test de Kruskal et Wallis (comparaison de k distributions quant à leurs positions)
+Cette quantité suit un Khi2 à (k-1) degrés de liberté pour n suffisamment grand (au moins 15 en pratique).
+kruskal.test(Taille ~ Groupe, data = stid)
+On ne peut pas dire qu’il y ait une difference significative entre les tailles des étudiants selon le groupe.
+Remarques : Pour k=2, ce test est équivalent à Mann et Whitney.
 
-    Le test de Kruskal et Wallis (comparaison de k distributions quant à leurs positions)
+--> Méthode du Bootstrap : estimation et intervalle de confiance non paramétriques
+Dans le cas où les lois ne sont pas connues, ou bien si l’on recherche des intervalles de confiances
+de paramètres « exotiques » : coefficient de corrélation linéaire, quantile etc.
+on peut utiliser la méthode du Bootstrap. Les prérequis sont simples : rien.
+--> création d'un plus grand échantillon, triés (donc ça fait une loi normale)
+n <- 10000
+fonction <- mean # on calcule la moyenne, médiane, quantiles possible
+res <- sapply(1:n, FUN = function (x) { return(fonction(sample(data, length(data), replace = T)))})
+res.sorted <- sort(res)
+c(res[250], res[9750]) // prends la valeur à 2.5% début/fin pour faire les 5%
+Il faut maintenant déterminer les bornes de l’intervalle de confiance à 95% de la moyenne. Nous excluons les
+2.5% des valeurs les plus faibles et les 2.5% des valeurs les plus hautes de notre série. Il suffit
+donc d’afficher la 250e valeur et la 9750e. Les moyennes entre ces deux valeurs sont des candidats
+probables de la vraie moyenne de la population.
+Voici donc l’intervalle de confiance à 95% de la moyenne.
 
-Stop page 272/451
+8. Méthodes supervisées
+=============================
+
+Dans le problème d'apprentissage non supervisé, nous n'observons que les caractéristiques des individus et
+n'avons aucune variable cible. L’objectif est de mieux « connaître » les individus et les variables.
+Nous avons vu cela dans les méthodes précédentes.
+
+Dans les méthodes supervisées, une variable est privilégiée. Cette variable cible va servir
+à guider l’apprentissage à partir des données.
+
+Méthodes supervisées classiques.
+Si la variable cible Y est quantitative, la régression linéaire est incontournable.
+Les arbres de décision sont utilisés aussi.
+
+Si la variable cible est qualitative, la régression logistique, l’analyse discriminante,
+les arbres de décision, et leur généralisation : les forêts aléatoires, sont utilisés.
+
+---> Régression linéaire
+Cette méthode statistique permet d’étudier la liaison entre une variable numérique32 Y et un ensemble
+de variables X1, X2,...,Xp indépendantes, non corrélées entre elles autant que faire se peut 33. La variable
+Y est donc la variable cible. La régression est donc une méthode supervisée. Elle permet de bien comprendre
+les facteurs agissant sur une variable particulière, par contre, elle n’est pas très efficace en prévision.
+
+Dans le cas de deux variables : X et Y, on parle de régression linaire simple.
+Il s’agit alors de trouver la « meilleure » droite permettant d’ajuster Y en X.
+
+En gros avoir données et tracer droite qui se rapproche de données.
+L'origine du terme «régression» pour décrire le processus d'ajustement d’une droite aux données.
+
+Si Y est qualitative ou discrète, il vaut mieux se rabattre sur la régression logistique.
+Nous effectuons la régression sur le modèle complet grâce à l’instruction lm() :
+fit<-lm(Y~X1+X2+X3+X4,data=froment)
+summary(fit) # synthèse des résultats
+
+La p-valeur (0,029) nous dit que la liaison globale entre Y et les Xiest significative. (Nous rejetons
+l’hypothèse : [H0 = la liaison n’est pas significative] ).
+
+R donne ici des paramètres importants comme l’estimation de l’écart type commun résiduel  : s=1,24
+(racine carrée de MSerreur). C’est ce qui va nous servir à prédire Y. Plus RSE (ou S) est petit, meilleure sera la
+précision du modèle.
+Nous trouvons aussi le R² qui est le quotient de la variance expliquée par la régression par la variance totale.
+Ici 79,5% de la variance totale de la variable Y est expliquée par le modèle.
+Multiple R-squared: 0.7948
+Le R² ajusté (0.658) est très utile pour comparer des modèles entre eux.
+
+Notre problème vient du fait que les régresseurs sont corrélés entre eux : vérifiez-le en calculant la matrice
+des corrélations des régresseurs.
+
+Nous voyons que les variables X2,X3 et X4 sont corrélées entre elles (alpha=5%). Elles ne peuvent donc pas toutes être dans le modèle ! Il faut faire un tri.
+Par contre, nous voyons que tous les Xi sont corrélés à Y et c’est une bonne chose !
+
+Grâce à regsubsets de l’extension leaps nous allons rechercher un modèle plus adéquat. On privilégiera
+les modèles à faible s ou à fort r² ajusté.
+library(leaps)
+meilleur<-regsubsets(Y~X1+X2+X3+X4,data=froment,nbest=10)
+# visualisation des résultats
+summary(meilleur)
+X 3 "*"
+Ainsi, le meilleur modèle à 1 variable est X3, le meilleur à 2 variables est X1 X4 etc.
+
+cases noires le best
+plot(meilleur,scale="adjr2",main="Modèles classés en fonction de r²ajusté")
+on regarde pour r^2 ajusté (axe y)
+On afficher cela plus clairement avec : library(car) subsets(meilleur, statistic="adjr2")
+
+je crois qu'on cherche des valeurs <5%
+
+Analyse des résidus et des valeurs influentes (extension MASS)
+Calcul de la distance de Cook, du DFFITS et du résidu par validation croisée.
+
+library(MASS)
+#Nous faisons l’ajustement avec la librarie MASS
+fit <- lm(Y~X1+X4,data=froment) data.frame(froment$Y, froment$X1, froment$X4,
+cook=cooks.distance(fit),dffits=dffits(fit), std.res=stdres(fit), std.res.valX=studres(fit))
+
+Stop page 293/451
