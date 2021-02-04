@@ -3,3 +3,10 @@ Cartographie simple avec R, Carte choroplèthe
 ->library(ggplot2) library(dplyr) require(maps) require(viridis)
 ->world_map <- map_data("france")
 ->left_join(donnees, france_map, by = "region")
+
+attach(Donnees) ???
+interaction.plot(Sol, Sonde, Teneur,lwd=2,ylab="Teneur moyenne", main="Effet du facteur Sol en fonction du facteur Sonde")
+Représentation des interactions
+3 droites, une par sonde en fonction du sol (x) par la teneur (y)
+Nous voyons que les trois droites sont quasiment parallèles. L’effet du facteur Sol (pente d’une droite) ne dépend pas de la sonde choisie (les trois pentes sont quasiment les mêmes).
+Il n’y a donc pas d’interaction Sol Sonde sur Teneur.

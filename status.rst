@@ -19,6 +19,7 @@ UML                    Diagramme de déploiement               \
 Méthodologies          TDD, BDD et pair programming           \
 Méthodologies          SOLID, https://suckless.org/           \
 CSS                    SCSS et Animations                     \
+Github                 https://jekyllrb.com/, ...             \
 ====================== ====================================== =========================
 
 Ajout de cours
@@ -32,4 +33,6 @@ BigData & Cloud        Ajout du cours                         \
 Jeux vidéos & RPG      Ajout du cours                         \
 LIBGDX                 Ajout du cours                         \
 Control de Gestion     Ajout du cours                         \
+Node.js                Ajout du cours                         \
+Riot.js                Ajout du cours                         \
 ====================== ====================================== =========================

@@ -297,6 +297,11 @@ QQ plot/Diagramme Quantile-Quantile
 	On utilisera les fonctions comme :code:`qqplot, qqline, qq, ...`. :code:`datax=TRUE` est utile
 	pour mettre en fonction de l'axe x.
 
+Test paramétriques et non paramétriques (distribution free)
+	Un test paramétrique demande a ce que la distribution suive une loi normale
+	ce qui est le cas pour de nombreux tests (anova, Student T, ...). Les
+	autres, dits non paramétriques, sont moins puissants mais ne demande pas ce prérequis.
+
 Test d’indépendance
 ------------------------
 
@@ -402,6 +407,26 @@ de Student T a deux moyennes (:code:`t.test(x=data1, y=data2, alternative="two.s
 
 	On test si la moyenne de deux échantillons est la même.
 
+Tests d’égalité de médiane
+----------------------------------
+
+avec le test des signes (:code:`SIGN.test(data, md = médiane, alternative = "two.sided", conf.level = 0.95)`)
+	| :code:`Prérequis` : aucun
+
+	La fonction est dans le package :code:`BSDA`.
+
+(SignedRank) de Wilcoxon (:code:`wilcox.test(data, mu = mu, alternative = "two.sided", conf.level = 0.95)`)
+	| :code:`Prérequis` : population symétrique
+
+	Test plus puissant que le celui des signes (utilise le rang).
+
+Mann–Whitney U (comparaison de 2 médianes)
+	| :code:`Prérequis` : 2 échantillons n1 et n2 avec n1+n2>30, fonctions de répartition (ecdf) ne se croisent pas.
+	| :code:`Info` : moyenne :math:`n1(n1+n2+1)/2` et variance :code:`n1n2(n1+n2+1)/12`
+	| :code:`wilcox.test(data,alternative = "two.sided", conf.level = 0.95)`
+
+	Aussi appelé Mann–Whitney–Wilcoxon (MWW), Wilcoxon rank-sum test, ou Wilcoxon–Mann–Whitney test.
+
 Test sur les données appariés
 -------------------------------
 
@@ -423,11 +448,44 @@ Test (de nullité) du coefficient de corrélation linéaire
 	:code:`corrplot(cor(data), method="number")` du package :code:`corrplot`
 	pour avoir un aperçu graphique.
 
+Mann–Whitney U (comparaison de 2 médianes)
+	| :code:`Prérequis` : aucun
+	| :code:`wilcox.test(data_before, data_after, paired=TRUE)`
+
 ANOVA : analyse de la variance
 ------------------------------------
 
 Anova a permet de comparer une ou plusieurs variables quantitatives
-selon une variable qualitative.
+selon une ou plusieurs variables qualitatives. On va donc faire
+des groupes de population selon un ou plusieurs critères.
+
+Anova à un critère (n quantitative, 1 qualitative)
+	| :code:`Prérequis` : test normalité, égalité des variances (peuvent être omis sous conditions)
+
+	.. code:: R
+
+		anova <- aov(data ~ qualif, data=data)
+		summary(anova) # si Pr(>F) < 5% alors différence significative
+
+	Le test compare les moyennes et si il est valide, alors le type (qualification)
+	a une influence sur la variable quantitative (data, un dataframe de valeurs).
+
+	Tests (des étendues) de Tukey/test DSH (:code:`TukeyHSD(anova)`)
+		Ce test permet de voir si la différence des moyennes est significative ou non.
+		On vérifie que "p adj" est supérieur à 5% sinon le test n'est pas valide.
+
+Anova à deux critères (n quantitative, 2 qualitative)
+	| :code:`Prérequis` : test normalité, égalité des variances
+	| :code:`Exemple` : (Alcool,vitesse) sur risque d’accident
+
+	.. code:: R
+
+		anova <- aov(data ~ qualif1+qualif2+qualif1:qualif2, data=data)
+		summary(anova) # si Pr(>F) < 5% alors différence significative
+
+	On fait un test anova, sauf qu'on demande de faire data par qualification1,
+	data par qualification2 puis data par qualification1 et qualification2
+	(testez `qualif1:qualif2` pour voir le vecteur utilisé).
 
 -----
 
@@ -447,3 +505,4 @@ selon une variable qualitative.
 	* https://support.minitab.com/fr-fr/minitab/18/help-and-how-to/modeling-statistics/anova/supporting-topics/basics/understanding-test-for-equal-variances/
 	* http://foucart.thierry.free.fr/StatPC/livre/chapitre6/fisher.htm
 	* http://www.sthda.com/french/wiki/visualiser-une-matrice-de-correlation-par-un-correlogramme
+	* https://fr.wikipedia.org/wiki/Plan_d%27exp%C3%A9riences
