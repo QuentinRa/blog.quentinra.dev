@@ -136,3 +136,106 @@ en statistiques pour calculer une espérance (le dénominateur étant
 toujours égal à l'unité en probabilités)
 
 2.1. LISSAGE DE LAPLACE (309)
+
+Pour en revenir à nos fréquences de classes vues bien plus haut et avant de continuer avec l'étude de
+quelques propriétés mathématiques des moyennes... il faut savoir que lorsque nous travaillons avec des
+lois discrètes de probabilités il arrive très (très) fréquemment que nous rencontrions un problème
+typique dont la source est la taille de la population. Considérons comme exemple le cas où nous avons
+12 documents et que souhaiterions estimer la probabilité d'occurrence du mot "Viagra". Nous avons sur
+un échantillon les valeurs suivantes
+
+Et ici nous avons un phénomène courant. Il n'y a aucun document avec 5 occurrences du mot qui nous
+intéresse. L'idée (très courante dans le domaine du Data Mining) est alors d'ajouter artificiellement et
+empiriquement un comptage en utilisant une technique appelée "lissage de Laplace" qui consiste à
+additionner k unités à chaque occurrence et qui est courant dans le domaine du Data Mining. Dès lors le
+tableau devient: (ex: ajouter 1 à tout le monde)
+
+P2. La moyenne arithmétique a une propriété de linéarité
+P3. La somme pondérée des écarts à la moyenne arithmétique est nulle.
+
+existait trois types de variables quantitatives très importantes qu'il convient absolument de différencier:
+1. Les variables discrètes (par comptage): Sont analysées avec des lois statistiques basées sur un
+domaine de définition dénombrable toujours strictement positif (loi de Poisson typiquement dans
+l'industrie). Sont quasiment toujours représentées sous forme graphique par des histogrammes.
+
+2. Les variables continues (par mesure): Sont analysées avec des lois statistiques basées sur un domaine
+de définition non dénombrable strictement positif ou pouvant prendre toute valeur positive ou négative
+(loi Normale typiquement dans l'industrie). Sont également quasiment toujours représentées sous forme
+graphique par des histogrammes avec des intervalles de classe.
+
+3. Les variables par attribut (de classification): Il ne s'agit pas de données numériques mais de données
+qualitatives de type {Oui, Non}, {Réussi, Échec}, {A temps, En retard}, etc. Les données de type
+attribut suivent une loi Binomiale
+
+Soit X une variable aléatoire (v.a.) numérique (quantitative). Elle est complètement décrite par la
+valeur de la probabilité (pour les variables discrètes) ou par la probabilité cumulée (pour les variables
+continues)
+Cette probabilité (cumulée) F(x) s'appelle la "fonction de répartition" de la variable X.
+P(a <= x <= b) = F(b) - F(a)
+
+fonction de répartition empirique
+
+Définition: Nous définissons "l'espérance mathématique", appelée aussi "moment d'ordre 1",
+appelée aussi "règle des parties".
+En d'autres termes, nous savons qu'à chaque événement de l'espace des échantillons est associé une
+probabilité à laquelle nous associons également une valeur (donnée par la variable aléatoire). La
+question étant alors de savoir quelle valeur, à long terme, nous pouvons obtenir. La valeur espérée,
+(l'espérance mathématique donc...) est alors la moyenne pondérée, par la probabilité, de toutes les
+valeurs des événements de l'espace des échantillons.
+
+E(aX) = aE(X)
+E(X+Y) = E(X)+E(Y)
+E(c) = c
+
+Définition: Après avoir traduit la tendance par l'espérance il est intéressant de traduire la dispersion ou
+"déviation standard" autour de l'espérance par une valeur appelée "variance de X" ou encore "moment
+centré du deuxième ordre", notée V(X) ou sigma^2_X (lire "sigma-deux")
+
+La variance n'est cependant pas comparable directement à la moyenne, car l'unité de la variance est le
+carré de l'unité de la variable, ce qui découle directement de sa définition. Pour que l'indicateur de
+dispersion puisse être comparé aux paramètres de tendance centrale (moyenne, médiane et... mode), il
+suffit d'en prendre la racine carrée.
+L'écart-type est donc la moyenne quadratique des écarts (ou "écart moyen quadratique") entre les
+observations et leur moyenne.
+
+coefficient de variation : sigma/u
+
+"L'écart absolu moyen" (moyenne des valeurs absolues des écarts à la moyenne):
+qui est un indicateur élémentaire très utilisé lorsque nous ne souhaitons pas faire de l'inférence
+statistique sur une série de mesures
+
+"La déviation absolue de la médiane" noté MAD (médiane des valeurs absolues des écarts à la
+médiane):
+qui est considéré comme un indicateur plus robuste de la dispersion que ceux donnés par l'écart absolu
+moyen ou l'écart-type (malheureusement cet indicateur n'est pas intégré nativement dans les tableurs).
+----> on retire la médiane a toute les valeurs.
+---> MAD = médiane après sort()
+
+Le terme de la somme se trouvant dans l'expression de la variance (écart-type) est appelée "somme des
+carrés des écarts à la moyenne". Nous l'appelons aussi la "somme des carrés totale", ou encore la
+"variation totale" dans le cadre de l'étude de l'ANOVA (voir la fin de ce chapitre).
+
+variable centrée réduite
+Y = (X - mu)/sigma
+
+Ainsi, toute répartition statistique définie par une moyenne et un écart-type peut être transformée en
+une autre distribution statistique souvent plus simple à analyser.
+
+V(nX) = n^2V(x)
+V(X+Y) = V(X) + V(Y) + 2cov(X,Y)
+
+Nous venons de voir dans la dernière relation le concept de "covariance" dont nous verrons une
+expression plus commode un peu plus bas mais donc définie par:
+
+Remarque: Les statistiques peuvent être découpées selon le nombre de variables aléatoires que
+nous étudions. Ainsi, lorsqu'une seule variable aléatoire est étudiée, nous parlons de "statistique
+univariée", pour deux variables aléatoires de "statistique bivariée" et en général, de "statistique
+multivariée".
+
+En effet si, en général X et Y
+croissent simultanément, les produits seront positifs (corrélés positivement), tandis
+que si Y décroît lorsque X croît, ces même produits seront négatifs (corrélés négativement).
+
+Maintenance, considérons un vecteur de composantes et un autre vecteur de
+composantes , tous deux étant des variables aléatoires, le calcul de la covariance des
+composantes deux à deux donne ce que l'on appelle la "matrice des covariances"
