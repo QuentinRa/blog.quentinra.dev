@@ -327,3 +327,96 @@ valeurs.
 Ces fonctions sont en pratique bornées par ce que nous appelons "l'étendue de la distribution", ou
 "dispersion de la distribution", qui correspond à la différence entre la donnée maximale (à droite) et la
 donnée minimale (à gauche) des valeurs observées (max-min).
+
+----------- 342
+
+D1. La relation mathématique qui donne la probabilité qu'a une variable aléatoire d'avoir une valeur
+donnée de la fonction de distribution est appelée "fonction de densité", "fonction de masse" ou encore
+"fonction marginale".
+
+D2. La relation mathématique qui donne la probabilité cumulée qu'a une variable aléatoire d'être
+inférieure ou égale à une certaine valeur est nommée la "fonction de répartition" ou "fonction
+cumulée".
+
+D3. Des variables aléatoires sont dites "indépendantes et identiquement distribuées" (i.i.d.) si elles
+suivent toutes la même fonction de distribution et qu'elles sont indépendantes...
+
+---> P(A) = 1/N : "fonction discrète uniforme" (ou "loi discrète uniforme")
+E(X) = N+1/2
+E(X) = N^2-1/12
+
+----> FONCTION DE BERNOULLI
+Ainsi, une variable aléatoire X suit une "fonction de Bernoulli" (ou "loi de Bernoulli") si elle ne peut
+prendre que les valeurs 0 ou 1, associées aux probabilités p et q
+
+Remarquons que par extension, si nous considérons N événements où nous obtenons dans un ordre
+particulier k fois une des issues possible (réussite) et N-k l'autre (échec), alors la probabilité d'obtenir
+une telle série (de k réussites et N-k échecs ordonnés dans un ordre particulier) sera donnée par:
+P(x=k) : p^k q^{N-k}
+E(x) = p
+V(x) = p * q
+
+----> FONCTION GÉOMÉTRIQUE
+La loi géométrique ou "loi de Pascal" consiste dans une épreuve de type Bernoulli, dont la probabilité
+de succès est p et celle d'échec q=1-p sont constantes, que nous renouvelons de manière
+indépendante jusqu'au premier succès.
+P(x=k) q^{k-1}*p
+
+E(x)= 1/p
+V(x)= (1-p)/p^2
+
+----> FONCTION BINOMIALE
+
+Si nous revenons maintenant à notre épreuve de Bernoulli. Plus généralement, tout N-uplet particulier
+formé de k succès et de N-k échecs aura pour probabilité (dans le cadre d'un tirage avec remise ou sans
+remise si la population est grande en première approximation...):
+P(x=k) = p^k q^{N-k} * (C^k_k)
+d'être tiré (ou d'apparaître) quel que soit l'ordre d'apparition des échecs et réussites.
+
+E(x) = np
+V(x) = p(1-p)/n
+
+----> FONCTION BINOMIALE NÉGATIVE
+
+La loi binomiale négative s'applique dans la même situation que la loi binomiale mais elle donne la
+probabilité d'avoir E échecs avant la R-ème réussite quand la probabilité de succès est p (ou
+inversement la probabilité d'avoir R réussites avant le E-ème échec quand la probabilité d'échec est p).
+
+P(ok) = p P(ko)= 1-p = q
+p^{nok} * q^{nko} * C^N_k
+
+ce qui correspond donc à la probabilité d'avoir nko échecs avant la nok-ème réussite.
+
+E(x) = 1/p
+V(x) = q/p^2
+
+----> FONCTION HYPERGÉOMÉTRIQUE
+
+V(x) = kpq * fpc^2
+V(x) = sqrt(kpq) * fpc
+
+fpc = "facteur de correction de population" ou
+      en anglais "finite population correction factor"
+      = (n-k)/(n-1)
+
+----> FONCTION DE POISSON
+
+Pour certains événements forts rares, la probabilité p est très faible et tend vers zéro. Toutefois la valeur
+moyenne n*p tend vers une valeur fixe lorsque n tend vers l'infini.
+
+Nous obtenons ainsi la "fonction de Poisson" (ou "loi de Poisson"), appelée également parfois "loi des
+événements rares", donnée donc par:
+E(x) = np
+
+Le fait important que pour la loi de Poisson nous ayons la variance qui soit égale à l'espérance est
+appelé "propriété d'équidispersion de la de Poisson". Il s'agit d'une propriété souvent utilisée dans la
+pratique comme indicateur pour identifier si des données (à support discret) sont distribuées selon une
+loi de Poisson.
+
+----> FONCTION DE GAUSS-LAPLACE/LOI NORMALE
+
+Cette caractéristique est la plus importante fonction de distribution en statistiques suite au résultat d'un
+théorème connu appelé "théorème central limite" qui comme nous le verrons, permet de démontrer
+(entre autres) que toute suite de variables aléatoires indépendantes de même loi ayant une espérance et
+un écart-type fini et non nécessairement égales converge vers une fonction de Gauss-Laplace (loi
+Normale).
