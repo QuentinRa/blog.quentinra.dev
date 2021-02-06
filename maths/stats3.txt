@@ -420,3 +420,110 @@ théorème connu appelé "théorème central limite" qui comme nous le verrons, 
 (entre autres) que toute suite de variables aléatoires indépendantes de même loi ayant une espérance et
 un écart-type fini et non nécessairement égales converge vers une fonction de Gauss-Laplace (loi
 Normale).
+
+Pour information, une variable suivant une loi Normale centrée réduite est très souvent par tradition
+notée Z (pour "Zentriert" en allemand).
+En revenant aux variables non normées:
+
+nous obtenons donc la "fonction Gauss-Laplace" (ou "loi de Gauss-Laplace") ou également appelée
+"loi Normale" donnée sous forme de densité de probabilité par:
+k-u/sigma
+
+Interval 1 sigma (-sigma, sigma) : ~68.3%
+Interval 2 sigma (-2sigma, 2sigma) : ~95.4%
+Interval 3 sigma (-3sigma, 3sigma) : ~99.7%
+
+La largeur de l'intervalle a une très grande importance dans l'interprétation des incertitudes d'une
+mesure. La présentation d'un résultat comme N+n*sigma=p% signifie que la valeur moyenne a environ p% de
+chance (probabilité) de se trouver entre les limites N-n*sigma,N+n*sigma
+
+La loi de Gauss-Laplace n'est par ailleurs pas qu'un outil d'analyse de données mais également de
+génération de données.
+
+Le fait que la somme de deux lois Normales donne toujours une loi Normale est ce que nous nommons
+en statistiques la "stabilité par la somme" de la loi de Gauss-Laplace.
+
+-----> LOI NORMALE CENTRÉE RÉDUITE
+
+k* = k-mu/sigma
+LNCR(mu=0,sigma=1)
+
+henry coeff de la droite
+0.01k-2
+sachant égal à k-mu/sigma
+donc mu=200
+sigma=100
+
+-----> DIAGRAMME QUANTILE-QUANTILE
+
+Une autre manière de juger qualitativement de l'ajustement de données expérimentales avec une loi
+théorique (quelle qu'elle soit!!!) est l'utilisation d'un "diagramme quantile-quantile".
+
+L'idée est assez simple, il s'agit de comparer les données expérimentales, aux données théoriques
+supposées suivre une loi donnée.
+
+Et bien évidemment on peut comparer les quantiles observés à toute loi théorique supposée. Plus les
+points seront alignés sur la droite, meilleur sera l'ajustement! C'est très visuel, très simple et beaucoup
+utilisé par les non spécialistes en statistiques dans les entreprises.
+
+---> FONCTION LOG-NORMALE
+y = ln(x)
+
+nous voyons que y suit une fonction de probabilité de type loi Normale de moyenne mu et de variance
+sigma^2 (moments de la loi Normale).
+
+---> FONCTION UNIFORME CONTINUE
+
+Soient a < b . Nous définissons la fonction de distribution de la "fonction uniforme" (ou "loi uniforme")
+par la relation
+
+P(x) = 1/(b-a) indicatrice[a,b]
+
+E(x) : (a+b)/2
+V(x) : (b-a)^2/12
+
+Cette fonction est souvent utilisée en simulation dans les entreprises pour signaler que la
+variable aléatoire a des probabilités égales d'avoir une valeur comprise dans un certain intervalle.
+
+---> FONCTION DE PARETO
+
+La "fonction de Pareto" (ou "loi de Pareto"), appelée aussi "loi de puissance" ou encore "loi scalante"
+est la formalisation du principe des 80-20. Cet outil d'aide à la décision détermine les facteurs (environ
+20%) cruciaux qui influencent la plus grande partie (80%) de l'objectif.
+
+1 - (x_m/x)^k avec x >= x_m
+
+---> FONCTION EXPONENTIELLE
+
+Nous définissons la "fonction exponentielle" (ou "loi exponentielle") par la relation de fonction de
+distribution suivante:
+lambda * e^{-lambdax} * indicatrice[0,+inf]
+
+E(x) = 1/lambda
+V(x) = 1/lambda^2
+
+---> FONCTION DE CAUCHY
+
+Soient X,Y deux variables aléatoires indépendantes suivant des lois Normales centrées réduites
+(variance unité et espérance nulle).
+
+Pas d'espérance.
+
+---> LOI BÊTA
+---> LOI FONCTION GAMMA
+
+Beta(a)/lambda^a
+
+---> FONCTION DE KHI-DEUX (OU DE PEARSON)
+
+La "fonction de Khi-deux" (appelée aussi "loi du Khi-deux" ou encore "loi de Pearson") n'est par
+définition qu'un cas particulier de la fonction de distribution Gamma dans le cas a = k/2 où et
+lambda = 1/2, avec k entier positif
+
+E(k) = 2k
+
+pour indiquer que la distribution de la variable aléatoire X est la loi du Khi-deux. Par ailleurs il est
+courant de nommer le paramètre k "degré de liberté" et de l'abréger "ddl".
+
+---> FONCTION DE STUDENT T
+
