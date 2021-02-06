@@ -634,3 +634,85 @@ Si la probabilité P obtenue pour la somme est au-dessus d'une certaine probabil
 l'avance, nous dirons alors que la différence avec un échantillon tiré au hasard dans une population
 parfaitement équilibrée n'est pas significative (en bilatéral...) et respectivement si elle est en-dessous, la
 différence sera donc significative et nous rejetterons l'équilibre supposé.
+
+---- TEST DE L'ÉGALITÉ DE DEUX PROPORTIONS
+
+Toujours dans le même contexte que l'approximation précédente de la loi Binomiale par une loi
+Normale, l'industrie (en particulier la biostatistique) est friande de comparer deux proportions de deux
+populations différentes afin de savoir si elles sont statistiquement égales ou non (autrement dit:
+significativement différentes ou pas).
+
+test Z de l'égalité de deux proportions
+
+48/50 et 26/30 ~~~ 95% ?
+
+---- TEST DES SIGNES
+
+Nous mesurons quelque chose sur un échantillon puis, plus tard, nous mesurons la même chose sur ce
+même échantillon mais avec une autre méthode (donc il s'agit donc d'échantillons appariés!). Les deux
+classements ordonnées des mesures sont comparés et chaque observation est affectée d'un signe ("+"
+en cas d'élévation dans le classement, "–" en cas de descente). Celles qui restent au même niveau sont
+éliminées.
+Selon l'hypothèse à tester, il y a autant de "+" que de "–", c'est-à-dire que la médiane de la distribution
+n'a pas bougé (cette affirmation peut ne pas paraître évidente à la première lecture il faut donc bien
+prendure du temps parfois pour réfléchir là-dessus).
+
+D1. "L'intervalle de tolérance" (ou "intervalle de fluctuation") est un intervalle contenant un certain
+pourcentage (souvent 68.26, 95.44 ou 99.73%) des individus d'une population de mesures.
+D2. "L'intervalle de confiance" pour un échantillon de moyenne contient l'intervalle de valeur à un
+niveau de confiance donné (souvent 90, 95 ou 99%) de l'espérance (moyenne vraie) de la
+population.
+D3. "L'intervalle de prédiction" permet de déterminer un intervalle d'un valeur individuelle basée sur la
+connaissance de la moyenne échantillonnale et de l'écart-type de la population.
+
+------------
+
+"inégalité de Markov"
+"inégalité de Bienaymé-Tchebychev" (abrégée "inégalité BT")
+
+--------- FONCTION CARACTÉRISTIQUE
+
+Avant de donner une démonstration à la manière de l'ingénieur du théorème central limite, introduisons
+d'abord le concept de "fonction caractéristique" qui tient une place centrale en statistiques.
+
+rond_barré_x (k) = E[e^{ikX}].
+
+
+rond_barré_x (k) = \sqrt{2pi} F(-k)
+raison pour laquelle la fonction caractéristique de la loi Normale centrée réduite est souvent assimilée à
+une simple transformée de Fourier.
+F(k) = 1/\sqrt{2pi} e^{-k^2/2}
+
+rond_barré_x (k) = e^{-k^2/2}
+
+--- THÉORÈME CENTRAL LIMITE
+
+Le théorème central limite est un ensemble de résultats du début du 20ème siècle sur la convergence
+faible d'une suite de variables aléatoires en probabilité. Intuitivement, d'après ces résultats, toute
+somme (implicitement: la moyenne de ses variables) de variables aléatoires indépendantes et
+identiquement distribuées tend vers une certaine variable aléatoire.
+
+Le résultat le plus connu et le plus
+important est simplement appelé "théorème central limite" qui concerne une somme de variables
+aléatoires indépendantes avec variance existante dont le nombre tend vers l'infini
+et c'est celui-ci que nous allons démontrer de manière heuristique ici.
+
+Ce théorème de probabilités possède donc une interprétation en statistique mathématique. Cette
+dernière associe une loi de probabilité à une population. Chaque élément extrait de la population est
+donc considéré comme une variable aléatoire et, en réunissant un nombre n de ces variables supposées
+indépendantes, nous obtenons un échantillon. La somme de ces variables aléatoires divisée par n donne
+une nouvelle variable nommée la moyenne empirique. Celle-ci, une fois réduite, tend vers une variable
+Normale réduite lorsque n tend vers l'infini comme nous le savons.
+
+En deux mots, le Théorème Central Limite (TCL) dit que pour de grands échantillons, la somme
+centrée et réduite de n variables aléatoires identiquement distribuées suit une loi Normale centrée et
+réduite.
+
+========= TESTS D'HYPOTHÈSE ET D'ADÉQUATION
+
+Définition: Lorsque nous cherchons à savoir si nous pouvons faire confiance à la valeur d'une
+statistique (moyenne, médiane, variance, coefficient de corrélation, etc.) avec une certaine certitude,
+nous parlons de "test d'hypothèse" et plus particulièrement de "test de conformité" (nous parlons de
+"test d'adéquation" quand il s'agit de vérifier que des mesures suivent bien une loi donnée et non juste
+une statistique).
+
