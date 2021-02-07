@@ -30,11 +30,19 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :maxdepth: 1
 
 		Théorie des graphes                  <maths/graph/index>
-		Analyse numérique                    <maths/analyse/index>
 		Algèbre Matricielle                  <maths/matrix/index>
 		Bric à Brac                          <maths/bric/index>
 		Théorie des langages                 <maths/tdl/index>
     Probabilités                         <maths/proba/index>
+
+.. toctree::
+    :caption: Analyse de données
+    :name: data
+    :maxdepth: 1
+
+		Analyse numérique        <maths/analyse/index>
+		Statistiques en R        <maths/stats/index>
+    Langage R                <functional/r/index>
 
 .. toctree::
     :caption: Système
@@ -64,7 +72,6 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
 
     Programmation Fonctionnelle <functional/index>
     Langage OCaml               <functional/ocaml/index>
-    Langage R                   <functional/r/index>
 
 .. toctree::
     :caption: Programmation web

@@ -23,33 +23,8 @@ Améliorer nos graphiques
 	On peut également tester la fonction de répartition (:code:`ecdf(rloi(...))` en R)
 	en la superposant à un graphique précédemment obtenu (on rappelle le add=TRUE).
 
-Quantiles
-	On utilise généralement :code:`boxplot` car on peut voir graphiquement les 3 quartiles,
-	la médiane ainsi que le min et le max. La fonction :code:`quantiles()` retourne tous les quantiles.
-
-	Les valeurs extrêmes sont inférieures à :code:`Q1-1.5(Q3-Q1)` ou supérieures à :code:`Q3+1.5(Q3-Q1)`.
-
-	Il est possible de faire un boxplot pour chaque groupe, séparés selon une variable
-	quantitative avec :code:`tableau ~ nom_variable_qualitative` (ex: tableau des ages
-	et un sexe (H/F) alors on obtient deux boxplot, une pour chaque sexe).
-
 6. Statistique inférentielle
 ==============================
-
-L'objectif est de pouvoir déduire le comportement d'une population
-inconnue depuis les résultats d'analyse d'une population connue. En particulier,
-les tests servent à vérifier le modèle que nous avons choisi pour représenter
-la distribution.
-
-On va donc faire des tests et généralement on va devoir
-vérifier que des préconditions sont vraies pour que les test soient valides.
-
-Le test est généralement **acceptable** si la :code:`p-value` est au dessus
-de 5% donc 0.05 (le "je suis sûr au seul de 95%").
-
-Attention ! Les tests permettent de renforcer vos suppositions mais en aucun
-cas il ne certifient qu'elles soient vraies. Ce n'est donc pas suffisant
-et il faudra probablement faire des tests de plus en plus précis.
 
 QQ plot/Diagramme Quantile-Quantile
 	Si les observations et la distribution sont la même, alors les points
@@ -203,10 +178,6 @@ Mann–Whitney U (comparaison de 2 médianes)
 Test sur les données appariés
 -------------------------------
 
-Attention si votre jeu de données contient des données appariés, c'est-à-dire que vous
-avez un échantillon A et un échantillon B concernant les mêmes individus (par exemple
-a deux moments différents).
-
 Test (de nullité) du coefficient de corrélation linéaire
 	| :code:`Prérequis` : test de normalité ou plus de 30 individus, deux variables quantitatives
 	| :code:`Résultat` : 0 = corrélation possible, ou valeur entre -1 et 1
@@ -220,10 +191,6 @@ Test (de nullité) du coefficient de corrélation linéaire
 	On peut utiliser :code:`corrplot(cor(data), method="circle")` ou
 	:code:`corrplot(cor(data), method="number")` du package :code:`corrplot`
 	pour avoir un aperçu graphique.
-
-Mann–Whitney U (comparaison de 2 médianes)
-	| :code:`Prérequis` : aucun
-	| :code:`wilcox.test(data_before, data_after, paired=TRUE)`
 
 ANOVA : analyse de la variance
 ------------------------------------

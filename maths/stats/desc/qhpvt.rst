@@ -1,12 +1,12 @@
-==================================
-Tableaux croisés (:code:`qhpvt`)
-==================================
+=================
+Tableaux croisés
+=================
+
+| **Fonction** : :code:`qhpvt`
+| **Note** : super pratique, librairie :code:`pivottabler`
 
 Un tableaux croisés permet d'observer l'évolution de deux variables aléatoires.
-
 On a généralement X1, X1 par rapport à X2, ... et ce pour toutes les variables.
-
-On utilise la fonction :code:`qhpvt` de la librairie :code:`pivottabler`.
 
 Forme : :code:`qhpvt(data, rows = ..., columns = ..., calculations = "...")`
 

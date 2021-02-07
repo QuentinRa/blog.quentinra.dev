@@ -2,6 +2,9 @@
 Statistiques et R
 ===================================
 
+| :math:`\color{grey}{Version \ 0.12.37}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 07/02/2021}`
+
 Les prérequis sont de savoir lire du R (concepts de base et un peu avancés).
 Ceci n'est pas un cours de maths donc ce ne sont pas des vraies statistiques
 mais uniquement un cours d'initiation du point de vue d'un programmeur.
@@ -170,7 +173,7 @@ Gérer les valeurs NA
 
 		* solution 1 : supprimer les lignes (et donc perdre beaucoup d'informations)
 		* solution 2 : remplacer NA par une valeur (en tenant compte des autres valeurs pour ne rien fausser)
-		* ... d'autres solutions ... ?
+		* solution 2 (moyenne) : :code:`ech$quant[is.na(ech$quant)] <- mean(ech$quant, na.rm = TRUE)`
 
 Fonctions utiles
 		* :code:`summary()` : le nombre de NA, les moyennes, ...
@@ -260,7 +263,6 @@ Quelques notes
 	* on se rappelle que pour une loi de poisson, moyenne = variance = paramètre
 	* si la moyenne est 3, tester une loi de poisson de paramètre 3 ?
 	* si la distribution est linéaire, c'est sûrement une loi normale/gaussienne
-	* ...
 
 Cette partie contient une liste d'outils pour décrire votre échantillon.
 
@@ -268,13 +270,47 @@ Cette partie contient une liste d'outils pour décrire votre échantillon.
 
 		Histogramme (var numérique)               <desc/hist>
 		Diagrammes a bandes (var qual/~quant)     <desc/barplot>
-		Tableaux croisés (plusieurs variables)    <desc/qhpvt>
 		Boîtes à moustaches (quantiles, ...)      <desc/boxplot>
+		Tableaux croisés (plusieurs variables)    <desc/qhpvt>
+		Quantile-Quantile (QQ plot)               <desc/qhpvt>
 
 7. Statistiques inférentielle
 ===============================
 
-...
+L'objectif est de pouvoir déduire le comportement d'une population
+inconnue depuis les résultats d'analyse d'une population connue. En particulier,
+les tests servent à vérifier que le modèle choisi pour représenter
+la distribution semble cohérent.
+
+On distingue deux types de test
+
+	* paramétriques : la loi doit être normale/gaussienne
+	* non-paramétriques : les autres tests
+
+Je distingue les tests préliminaire (test
+de normalité, ...) qui servent à savoir si ont devra faire
+un test de type paramétrique ou de type non-paramétrique.
+
+Dans le cas ou vous auriez des données appariés, c'est-à-dire des jeux de données
+issus d'une même population (par exemple à deux moments différents, ...) alors
+il est extrêmement possible que les tests soient faux mais certains tests
+sont fait spécialement pour les données appariés.
+
+Je crois qu'il y a plus de 120 tests qui existent donc je vais uniquement
+ceux que j'ai appris.
+
+:code:`Note` : les tests sont généralement fait avec alpha=0.95 donc fiable
+à 95% mais attention à vérifier si le test est valide. Pour cela en R, regarder
+la :code:`p-value` dans le résultat, si elle est en dessous de 5% alors le test
+est rejeté sinon il a de fortes chances d'être correct.
+
+.. toctree::
+	 :maxdepth: 1
+
+		Tests préliminaires       <tests/pre>
+		Tests paramétriques       <tests/par>
+		Tests non-paramétriques   <tests/n_par>
+		Tests appariés            <tests/app>
 
 8. Incertitudes et robustesse
 ===============================
@@ -318,3 +354,6 @@ et essayer de vérifier.
 	* https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_d%27%C3%A9chantillonnage
 	* http://www.fabricemonna.com/wp-content/uploads/2019/12/Poly-eudiant-Estimation-et-intervalle-de-confiance.pdf
 	* http://mapage.noos.fr/jerome.giovendo/CoursFluctuation.pdf
+	* https://openclassrooms.com/fr/courses/4525256-initiez-vous-au-langage-r-pour-analyser-vos-donnees/6250873-utilisez-les-facteurs
+	* https://fr.wikibooks.org/wiki/Programmer_en_R
+	* http://www.math-evry.cnrs.fr/_media/members/pneuvial/demstat/201411_ds1_04.testsechapp.pdf

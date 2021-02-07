@@ -8,9 +8,6 @@ library(lattice)	regroup<-make.groups(nom=valeur, ...)
 
 order(vecteur) : donne les indexes dans l'ordre
 
-sum(is.na(Height))
-Height[is.na(Height)] <- mean(Height, na.rm = TRUE)
-
 esprit d'analyse
 ----------------------
 
