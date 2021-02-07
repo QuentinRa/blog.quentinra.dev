@@ -1,96 +1,3 @@
-On répète les résultats plusieurs fois sur un échantillon
-similaire et on obtient un résultat distribué autour de la moyenne
-donc le résultat le plus probable. En pratique, une seule mesure est faite
-et il faut déterminer l'erreur faite en choisissant cette valeur comme moyenne.
-
-empiriques = grande population ?
-
-préciser l'intervalle de confiance ainsi que la taille de l'échantillon étudié
-et ses caractéristiques détaillées
-
-il est souvent utile et nécessaire de
-regrouper les mesures/données dans des intervalles de classe de largeur donnée
-
-Pour éviter d'obtenir une moyenne arithmétique ayant peu de sens, nous calculons
-souvent une "moyenne élaguée", c'est à dire une moyenne arithmétique calculée après avoir enlevé
-des valeurs aberrantes à la série.
-l'utilisation des boîtes à
-moustaches (traduction de Box & Whiskers Plot ou BoxPlot) permettant de comparer ("discriminer"
-comme disent les spécialistes) rapidement deux populations de données ou plus et surtout d'éliminer les
-valeurs aberrantes (prendre comme référence la médiane sera justement plus judicieux!):
-
-========> ESPÉRANCE ET VARIANCE DE LA MOYENNE (ERREUR STANDARD ET FCP)
-
-L'analyse du coefficient de corrélation poursuit donc l'objectif de déterminer le degré d'association
-entre les différentes variables: celui-ci est souvent exprimé par le coefficient de détermination,
-qui est le carré du coefficient de corrélation. Le coefficient de détermination mesure donc
-la contribution d'une des variables à l'explication de la seconde.
-
-"théorème central limite" qui comme nous le verrons, permet de démontrer
-(entre autres) que toute suite de variables aléatoires indépendantes de même loi ayant une espérance et
-un écart-type fini et non nécessairement égales converge vers une fonction de Gauss-Laplace (loi
-Normale).
-
-FACTEUR DE CORRECTION SUR POPULATION FINIE
-=============================================
-
-Maintenant démontrons un autre résultat qui nous sera indispensables dans certains tests statistiques
-que nous verrons plus loin.
-
-fcp
-fpc = "facteur de correction de population" ou
-      en anglais "finite population correction factor"
-      = (n-k)/(n-1)
-
-que nous avons déjà rencontré lors de notre étude la loi hypergéométrique, et appelé "facteur de
-correction sur population finie" et il a pour effet de réduire l'erreur-standard d'autant plus que n est
-grand.
-
-(multiplie par fcp)
-
------> DIAGRAMME QUANTILE-QUANTILE
-
-Une autre manière de juger qualitativement de l'ajustement de données expérimentales avec une loi
-théorique (quelle qu'elle soit!!!) est l'utilisation d'un "diagramme quantile-quantile".
-
-L'idée est assez simple, il s'agit de comparer les données expérimentales, aux données théoriques
-supposées suivre une loi donnée.
-
-Et bien évidemment on peut comparer les quantiles observés à toute loi théorique supposée. Plus les
-points seront alignés sur la droite, meilleur sera l'ajustement! C'est très visuel, très simple et beaucoup
-utilisé par les non spécialistes en statistiques dans les entreprises.
-
-=============================================
-=============================================
-=============================================
-=============================================
-=============================================
-=============================================
-
-===========================
-INTERVALLES DE CONFIANCE
-===========================
-
-Jusqu'à maintenant nous avons toujours déterminé les différents estimateurs de vraisemblance ou
-estimateurs simples (variance, écart-type) à partir de lois (fonctions) statistiques théoriques ou
-mesurées sur toute une population de données.
-
-Définition: Un "intervalle de confiance" est un couple de nombres qui définit une plage de valeurs
-possibles avec une certaine probabilité pour un estimateur statistique donné (plage calculée à l'aide de
-paramètres vrais mesurés). Il s'agit du cas le plus fréquent en statistiques.
-
-Autrement dit, nous pouvons calculer le nombre n d'individus à mesurer pour s'assurer un intervalle de
-confiance donné (associé à Z) de la moyenne mesurée en supposant l'écart-type théorique connu (ou
-imposé) et en souhaitant un précision de delta en valeur absolue sur la moyenne.
-
-n = (Z_{alpha/2} sigma)^2/delta
-
-Ces intervalles ont évidemment pour origine que nous travaillons très souvent en statistiques sur des
-échantillons et non sur toute la population disponible. L'échantillonage choisi influe donc sur
-l'estimateur ponctuel. Nous parlons alors de "fluctuation d'échantillonage".
-
-----
-
 "independant one-sample t-test" (en anglais) ou "test-T à 1 échantillon":
 "test-T bilatéral sur la différence de deux moyennes".
 
@@ -143,49 +50,6 @@ niveau de confiance donné (souvent 90, 95 ou 99%) de l'espérance (moyenne vrai
 population.
 D3. "L'intervalle de prédiction" permet de déterminer un intervalle d'un valeur individuelle basée sur la
 connaissance de la moyenne échantillonnale et de l'écart-type de la population.
-
-------------
-
-"inégalité de Markov"
-"inégalité de Bienaymé-Tchebychev" (abrégée "inégalité BT")
-
---------- FONCTION CARACTÉRISTIQUE
-
-Avant de donner une démonstration à la manière de l'ingénieur du théorème central limite, introduisons
-d'abord le concept de "fonction caractéristique" qui tient une place centrale en statistiques.
-
-rond_barré_x (k) = E[e^{ikX}].
-
-
-rond_barré_x (k) = \sqrt{2pi} F(-k)
-raison pour laquelle la fonction caractéristique de la loi Normale centrée réduite est souvent assimilée à
-une simple transformée de Fourier.
-F(k) = 1/\sqrt{2pi} e^{-k^2/2}
-
-rond_barré_x (k) = e^{-k^2/2}
-
---- THÉORÈME CENTRAL LIMITE
-
-Le théorème central limite est un ensemble de résultats du début du 20ème siècle sur la convergence
-faible d'une suite de variables aléatoires en probabilité. Intuitivement, d'après ces résultats, toute
-somme (implicitement: la moyenne de ses variables) de variables aléatoires indépendantes et
-identiquement distribuées tend vers une certaine variable aléatoire.
-
-Le résultat le plus connu et le plus
-important est simplement appelé "théorème central limite" qui concerne une somme de variables
-aléatoires indépendantes avec variance existante dont le nombre tend vers l'infini
-et c'est celui-ci que nous allons démontrer de manière heuristique ici.
-
-Ce théorème de probabilités possède donc une interprétation en statistique mathématique. Cette
-dernière associe une loi de probabilité à une population. Chaque élément extrait de la population est
-donc considéré comme une variable aléatoire et, en réunissant un nombre n de ces variables supposées
-indépendantes, nous obtenons un échantillon. La somme de ces variables aléatoires divisée par n donne
-une nouvelle variable nommée la moyenne empirique. Celle-ci, une fois réduite, tend vers une variable
-Normale réduite lorsque n tend vers l'infini comme nous le savons.
-
-En deux mots, le Théorème Central Limite (TCL) dit que pour de grands échantillons, la somme
-centrée et réduite de n variables aléatoires identiquement distribuées suit une loi Normale centrée et
-réduite.
 
 ========= TESTS D'HYPOTHÈSE ET D'ADÉQUATION
 
@@ -333,25 +197,6 @@ observation_th_i
 pour tout critère
 la somme est ... = chi^2
 % qui indique le % que ce soit probable.
-
-============= Robustesse
-
-D1. Un test est dit "test robuste" s'il reste valable alors que les hypothèses d'application ne sont pas
-toutes réunies. Ce peut être une taille d'échantillon un peu faible ou une loi de probabilité (loi normale
-pour les tests paramétriques) qui n'est pas très bien vérifiée. Par exemple, l'ANOVA est robuste par
-rapport à l'hypothèse de normalité mais pas par rapport à celle de l'homoscédasticité
-
-Par conséquent, à moins d'être uniquement descriptives, vos études devront respecter quelques règles
-pour que leurs conclusions soient généralisables.
-Première condition d'une bonne robustesse: les données. Intuitivement, chacun sait qu'on ne transforme
-pas un cas en généralité (ce qui ne relèverait pas des statistiques mais des discussions de comptoir). Une
-quantité suffisante de données permet de bâtir des modèles fiables et solides. À titre d'exemple, des
-prévisions établies à partir d'une série chronologique montrant une saisonnalité nécessitent au moins
-trois ou quatre ans d'historique.
-La quantité ne suffit pas, il faut la qualité. Mieux vaut s'abstenir que réaliser une étude sur des
-informations non fiables qui peuvent conduire à des décisions coûteuses. Par ailleurs, il convient
-d'éliminer ou d'imputer certaines observations (voir outliers). Si ce n'est pas possible, on se tourne vers
-des méthodes adaptées, par exemple celles qui utilisent la médiane plutôt que la moyenne.
 
 ================== STATISTIQUES DE RANGS
 
@@ -585,21 +430,3 @@ dernier ne dit pas quelle population est significativement différente mais uniq
 moins une qui l'est. En réalité, comme nous allons le démontrer, le test de Kruskal-Wallis n'est qu'une
 extension du test U de Mann-Whitney vu plus haut pour un nombre de populations supérieur ou égal à
 trois.
-
-============================= CALCULS D'ERREURS/INCERTITUDES
-
-Il est impossible de connaître (mesurer) la valeur exacte d'une grandeur physique expérimentalement, il
-est très important donc d'en déterminer l'incertitude.
-Nous appelons bien évidemment "erreur", la différence entre la valeur mesurée et la valeur exacte.
-Cependant, comme nous ignorons la valeur exacte, nous ne pouvons pas connaître l'erreur commise
-quand même.... Le résultat est donc toujours incertain. C'est la raison pour laquelle nous parlons des
-"incertitudes de mesure".
-Nous distinguons deux types d'incertitudes:
-1. Les "erreurs systématiques": elles affectent le résultat constamment et dans le même sens (erreurs
-des appareils de mesures, limites de précision, etc.). Il faut alors éliminer, ou corriger le résultat, si
-possible !
-2. Les "erreurs accidentelles" (statistiques): il faut alors répéter les mesures, calculer la moyenne et
-évaluer l'incertitude en utilisant les outils de statistique.
-Le deuxième type d'erreurs fait un très gros usage de tous les outils statistiques que nous avons
-présentés jusqu'à maintenant. Nous ne reviendrons donc pas dessus et nous nous concentrerons alors
-uniquement sur quelques nouveaux concepts.

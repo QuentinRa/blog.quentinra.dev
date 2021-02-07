@@ -63,3 +63,26 @@ Le second moment est la variance (a(a+1)/lambda^2)
 Une fois ce système établie, la méthode des moments consiste à utiliser les moments empiriques, en
 l'occurrence pour notre exemple les deux premiers
 que l'on pose égaux aux moments théoriques vrais...
+
+---------------> coefficient de détermination
+
+L'analyse du coefficient de corrélation poursuit donc l'objectif de déterminer le degré d'association
+entre les différentes variables: celui-ci est souvent exprimé par le coefficient de détermination,
+qui est le carré du coefficient de corrélation. Le coefficient de détermination mesure donc
+la contribution d'une des variables à l'explication de la seconde.
+
+---------------> facteur de correction sur population finie
+
+Maintenant démontrons un autre résultat qui nous sera indispensables dans certains tests statistiques
+que nous verrons plus loin.
+
+fcp
+fpc = "facteur de correction de population" ou
+      en anglais "finite population correction factor"
+      = (n-k)/(n-1)
+
+que nous avons déjà rencontré lors de notre étude la loi hypergéométrique, et appelé "facteur de
+correction sur population finie" et il a pour effet de réduire l'erreur-standard d'autant plus que n est
+grand.
+
+(multiplie par fcp)

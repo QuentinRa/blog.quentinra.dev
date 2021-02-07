@@ -28,15 +28,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/cours_proba.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/cours_proba.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/inutile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/inutile.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/stats/stats.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/stats.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats/stats3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/stats3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/stats3.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/stats/to_next.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/to_next.txt" afterDir="false" />
     </list>
-    <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats/stats.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/stats.rst" afterDir="false" />
-    </list>
+    <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
     <list id="35a1cab6-097d-4a11-944c-f8e3831e6d1c" name="cours web ajouts" comment="" />
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
@@ -66,17 +65,6 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/maths/stats/stats.rst">
-      <ranges>
-        <range start1="112" end1="116" start2="112" end2="116" changelist="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" />
-        <range start1="122" end1="124" start2="122" end2="123" changelist="71afdc5f-c39b-47b5-8450-562b663807d8" />
-        <range start1="191" end1="193" start2="190" end2="192" changelist="71afdc5f-c39b-47b5-8450-562b663807d8" />
-        <range start1="211" end1="211" start2="210" end2="218" changelist="71afdc5f-c39b-47b5-8450-562b663807d8" />
-        <range start1="220" end1="221" start2="227" end2="239" changelist="71afdc5f-c39b-47b5-8450-562b663807d8" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectId" id="1j3SOdW56l2HX11sGuoiPU6zFXG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -91,7 +79,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/functional/r/exercices/intro" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/stats/desc" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -99,11 +87,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\stats\desc" />
       <recent name="C:\Users\quent\Documents\texas-res\functional\r\exercices\intro" />
       <recent name="C:\Users\quent\Documents\texas-res\functional\r\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\functional\r\files\base" />
       <recent name="C:\Users\quent\Documents\texas-res\functional\r\files" />
-      <recent name="C:\Users\quent\Documents\texas-res\functional\r\base" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\maths" />
@@ -349,7 +337,7 @@
       <workItem from="1612546751406" duration="1522000" />
       <workItem from="1612611633750" duration="22445000" />
       <workItem from="1612689599553" duration="18171000" />
-      <workItem from="1612709932876" duration="3178000" />
+      <workItem from="1612709932876" duration="7211000" />
     </task>
     <servers />
   </component>

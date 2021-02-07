@@ -69,6 +69,25 @@ une autre distribution statistique souvent plus simple à analyser.
 V(nX) = n^2V(x)
 V(X+Y) = V(X) + V(Y) + 2cov(X,Y)
 
+----> fonction caractéristique
+
+Avant de donner une démonstration à la manière de l'ingénieur du théorème central limite, introduisons
+d'abord le concept de "fonction caractéristique" qui tient une place centrale en statistiques.
+
+rond_barré_x (k) = E[e^{ikX}].
+
+rond_barré_x (k) = \sqrt{2pi} F(-k)
+raison pour laquelle la fonction caractéristique de la loi Normale centrée réduite est souvent assimilée à
+une simple transformée de Fourier.
+F(k) = 1/\sqrt{2pi} e^{-k^2/2}
+
+rond_barré_x (k) = e^{-k^2/2}
+
+----> autres
+
+"inégalité de Markov"
+"inégalité de Bienaymé-Tchebychev" (abrégée "inégalité BT")
+
 ========================================
 ========================================
 ==== LOI DE PROBABILITÉS

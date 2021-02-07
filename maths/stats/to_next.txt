@@ -1,38 +1,10 @@
-Il existe deux types de variables, dites variables
 
-	* quantitatives : généralement les valeurs sont des nombres (entiers/réels par exemple : un age)
+empiriques = grande population ?
 
-		* continue : peut prendre beaucoup de valeurs (loi continue)
-		* discrète : peut prendre un nombre fini de valeurs (loi discrète)
+certains tests on besoin de conditions (autres tests) pour être faits (normalité, indépendance, ...)
+on distingue les tests paramétriques (modèle suit une loi normale) des tests non paramétriques
 
-	* qualitatives : généralement une valeur permettant de qualifier l'individu (ex: groupe d'ages comme seniors, jeunes, ...)
-
-Attention, un nombre n'est pas formée une variable quantitatives et une texte ou autre
-n'est pas forcément une variable qualitatives. R détecte les variables qualitatives en leur
-donnant le type :code:`factor` mais parfois il se trompe (lui aussi :p) donc il faudra
-forcer le type. Je crois qu'une variable est qualitative si on peut l'utiliser pour grouper
-les individus (~groupes importants).
-
-2. Recherche d'une stratégie d'analyse
-============================================
-
-		* pour chercher la loi, on peut essayer des trucs comme
-
-			* si la moyenne est 3 : une loi de poisson de paramètre 3
-			* si la distribution est linéaire, c'est sûrement une loi normale/gaussienne
-
-		* certains tests on besoin de conditions (autres tests) pour être faits (normalité, indépendance, ...)
-		* on distingue les tests paramétriques (modèle suit une loi normale) des tests non paramétriques
-
-4. Transformer nos variables
-==============================
-
-L'utilité de faire des groupes est de pouvoir observer à différentes échelles
-la répartition, ... donc de regarder sur le grand ensemble global puis redescendre
-à des ensembles locaux.
-
-Discrétisation non supervisée
-	On peut voir graphiquement avec :code:`plot (default), ggplot (ggplot2), ...`
+On peut voir graphiquement avec :code:`plot (default), ggplot (ggplot2), ...`
 
 Statistiques pondérées
 	Si on a des valeurs associés à une probabilités dans deux vecteurs, alors on peut soit
@@ -50,51 +22,6 @@ Améliorer nos graphiques
 
 	On peut également tester la fonction de répartition (:code:`ecdf(rloi(...))` en R)
 	en la superposant à un graphique précédemment obtenu (on rappelle le add=TRUE).
-
-Occurrences et fréquence
-	Avec :code:`table(v)` vous obtenez le nombre d'occurrences de chaque valeur dans v.
-
-	Vous pouvez obtenir les probabilités (la fréquence) de chaque valeur avec :code:`prop.table`.
-	Si vous donnez 1/2 alors le calcul ne sera fait que sur les lignes/colonnes.
-
-	Un histogramme semble être le meilleur moyen d'observer graphiquement ces valeurs.
-
-Diagrammes a bandes
-	Fonction :code:`barplot` (space=augmenter l'espacement).
-
-	Vous pouvez ordonner avec sort() avant. Attention ce n'est pas très lisible s'il y a beaucoup
-	de valeurs, donc uniquement pour les variables qualitatives.
-
-Histogramme
-	Généralement on l'utilise pour voir graphiquement le nombre d'individus (:code:`hist()`)
-	mais on peut aussi l'utiliser pour retrouver la loi.
-
-	Lorsqu'on met :code:`proba=TRUE`, on obtient un histogramme des densités sur lequel on
-	pourra superposer une loi. La différence est que les x sont des probas (densité)
-	au lieu d'être un nombre (fréquence).
-
-Tableaux croisés
-	Observer l'évolution de deux variables aléatoires. On a généralement X1, X1 par rapport
-	à X2, ... et ce pour toutes les variables.
-
-	On utilise la fonction :code:`qhpvt` de la librairie :code:`pivottabler`.
-
-	Forme : :code:`qhpvt(data, rows = ..., columns = ..., calculations = "...")`
-
-		* data : vos données (data.frame)
-		* rows : la colonne du DataFrame dont chaque valeur aura une ligne
-		* cols : la colonne du DataFrame dont chaque valeur aura une colonne
-		* calculations/cal : le calcul de chaque valeur i,j
-
-			* "mean()" : faire la fonction mean (moyenne)
-			* "n()" : faire la fonction n (nombre d'éléménets)
-			* ...
-
-		* formats : format d'une cellule (list("%.1f") par exemple)
-		* totals : ligne total (vous pouvez la renommer/retirer avec :code:`totals='totals=NONE'`)
-
-	Vous pouvez faire plusieurs calculs, mettre plusieurs lignes/colonnes en utilisant
-	des vecteurs.
 
 Quantiles
 	On utilise généralement :code:`boxplot` car on peut voir graphiquement les 3 quartiles,
@@ -130,6 +57,18 @@ QQ plot/Diagramme Quantile-Quantile
 
 	On utilisera les fonctions comme :code:`qqplot, qqline, qq, ...`. :code:`datax=TRUE` est utile
 	pour mettre en fonction de l'axe x.
+
+-----> DIAGRAMME QUANTILE-QUANTILE
+
+Une autre manière de juger qualitativement de l'ajustement de données expérimentales avec une loi
+théorique (quelle qu'elle soit!!!) est l'utilisation d'un "diagramme quantile-quantile".
+
+L'idée est assez simple, il s'agit de comparer les données expérimentales, aux données théoriques
+supposées suivre une loi donnée.
+
+Et bien évidemment on peut comparer les quantiles observés à toute loi théorique supposée. Plus les
+points seront alignés sur la droite, meilleur sera l'ajustement! C'est très visuel, très simple et beaucoup
+utilisé par les non spécialistes en statistiques dans les entreprises.
 
 Test paramétriques et non paramétriques (distribution free)
 	Un test paramétrique demande a ce que la distribution suive une loi normale

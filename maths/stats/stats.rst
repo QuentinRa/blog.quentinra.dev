@@ -213,9 +213,19 @@ Il est généralement avisé et recommandé de traiter les valeurs dites anormal
 de valeur trop importantes/faibles qui donnent des valeurs pouvant ne pas être représentatives. On obtient
 une moyenne élaguée...
 
+Intervalles de confiance
+	On va généralement donner un interval (moyenne, variance, ...) plutôt qu'une valeur car on travaille
+	sur une partie de la population de taille n (il faudra aussi donner la valeur de n). L'erreur suit au travai
+	sur un échantillon est appelée : fluctuation d'échantillonnage.
+
+	On répète les résultats plusieurs fois sur un échantillon
+	similaire et on obtient un résultat distribué autour de la moyenne
+	donc le résultat le plus probable. En pratique, une seule mesure est faite
+	et il faut déterminer l'erreur faite en choisissant cette valeur comme moyenne.
+
 Enfin, on va pas cherche une loi exacte mais qui rende les observations le plus vraisemblable possible,
 donc qui maximise la loi : L (vraisemblance). La/Les valeurs de theta qui maximisent L(theta)
-sont appelées estimateurs du maximum de vraisemblance.
+sont appelées estimateurs du maximum de vraisemblance. Des estimateurs sont par exemple : :code:`variance, écart-type, ...`.
 
 .. toctree::
 	 :maxdepth: 1
@@ -225,21 +235,63 @@ sont appelées estimateurs du maximum de vraisemblance.
 		Transformation de variables      <files/var_t>
 		Fusion de données                <files/fusion>
 
+Le Théorème Central Limite (TCL) indique que la somme de n variables i.i.d
+centrée et réduite suit une loi normale centrée réduite. Donc dans la majorité des cas, nous pourrons
+approcher notre distribution par une LNCR.
+
 6. Statistique descriptive
 ===============================
+
+Occurrences et fréquence
+	Avec :code:`table(v)` vous obtenez le nombre d'occurrences de chaque valeur dans v.
+
+	Vous pouvez obtenir les probabilités (la fréquence) de chaque valeur avec :code:`prop.table`.
+	Si vous donnez 1 ou 2 alors le calcul ne sera fait que sur les lignes ou colonnes.
 
 Valeurs aberrantes
 	Utiliser des boîtes à moustaches (boxplot) pour voir la présence de valeurs extrêmes.
 
+Il est généralement pratique de tester des variables quantitatives après
+leur avoir appliqué une variable qualitative (fait des groupes selon un critère
+comme les notes du BAC par filière) pour étudier la répartition dans un plus petit ensemble.
+
 Quelques notes
 
 	* on se rappelle que pour une loi de poisson, moyenne = variance = paramètre
+	* si la moyenne est 3, tester une loi de poisson de paramètre 3 ?
+	* si la distribution est linéaire, c'est sûrement une loi normale/gaussienne
 	* ...
+
+Cette partie contient une liste d'outils pour décrire votre échantillon.
+
+.. toctree::
+
+		Histogramme (var numérique)               <desc/hist>
+		Diagrammes a bandes (var qual/~quant)     <desc/barplot>
+		Tableaux croisés (plusieurs variables)    <desc/qhpvt>
+		Boîtes à moustaches (quantiles, ...)      <desc/boxplot>
 
 7. Statistiques inférentielle
 ===============================
 
 ...
+
+8. Incertitudes et robustesse
+===============================
+
+Il existe deux types d'incertitudes de mesure qui sont les
+
+	* erreurs systématiques : toujours les mêmes (précision, ...)
+	* erreurs accidentelles : problème statistique, ...
+
+Vous aurez plus de détails en analyse numérique.
+
+Les fonctions (de test notamment) demandent des prérequis (préconditions)
+qui ne sont pas vérifiées avant un calcul mais que vous devez respecter. Vous devez
+donc vérifier les tailles, les paramètres et même si tous vos paramètres sont bons, le
+test peut quand même être faux ! Et même si le test est bon, cela ne garantie pas qu'il
+le sera sur le reste de l'échantillon donc j'appelle à la prudence ou a faire des maths
+et essayer de vérifier.
 
 -----
 
@@ -248,7 +300,7 @@ Quelques notes
 	* Nicolas BRUNEL (enseignant à l'ENSIIE)
 	* Christophe MOUILLERON (enseignant à l'ENSIIE)
 	* "Initiation à R" de Eric Preud’homme (Université du Havre)
-	* "OperaMagistris" de Vincent ISOZ
+	* "OperaMagistris, éléments de mathématiques appliqués" de Vincent ISOZ
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
@@ -264,3 +316,5 @@ Quelques notes
 	* https://www.alloprof.qc.ca/fr/eleves/bv/mathematiques/le-coefficient-de-correlation-lineaire-m1377
 	* https://team.inria.fr/imagine/files/2015/09/tp_lissage.pdf
 	* https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_d%27%C3%A9chantillonnage
+	* http://www.fabricemonna.com/wp-content/uploads/2019/12/Poly-eudiant-Estimation-et-intervalle-de-confiance.pdf
+	* http://mapage.noos.fr/jerome.giovendo/CoursFluctuation.pdf
