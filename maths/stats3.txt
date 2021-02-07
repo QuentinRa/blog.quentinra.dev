@@ -1,11 +1,3 @@
-Définition: Le but principal de la statistique est de déterminer les caractéristiques d'une population
-donnée à partir de l'étude d'une partie de cette population, appelée "échantillon" ou "échantillon
-représentatif". La détermination de ces caractéristiques doit permettre aux statistiques d'être un outil
-d'aide à la décision!
-
-Remarque: Le traitement des données concerne la "statistique descriptive". L'interprétation des
-données à partir des estimateurs s'appelle "l'inférence statistique" (ou "statistique inférentielle"), et
-l'analyse de données en masse la "statistique fréquentielle" (en opposition à l'inférence bayésienne).
 
 Lorsque nous observons un événement prenant en compte certains facteurs, il peut arriver qu'une
 deuxième observation ait lieu dans des conditions qui semblent identiques. En répétant ces mesures
@@ -612,10 +604,6 @@ l'estimateur ponctuel. Nous parlons alors de "fluctuation d'échantillonage".
 "test-T bilatéral sur la différence de deux moyennes".
 
 "test-T de deux moyennes d'échantillons appariés (ou échantillons dépendants)".
-
-Définition: Nous parlons "d'échantillons appariés" (par paires) si les échantillons de valeurs sont prises
-2 fois sur les mêmes individus (donc les valeurs des paires ne sont pas indépendantes, contrairement à
-deux échantillons pris indépendamment).
 
 Avant d'aller plus en détails, rappelons qu'il faut être extrêmement prudent quant à la manière d'obtenir
 les deux échantillons. Il faut que l'expérience soit non biaisée, cela signifie pour rappel, que le protocole

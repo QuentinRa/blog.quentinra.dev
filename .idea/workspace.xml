@@ -29,6 +29,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/inutile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/inutile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/stats3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats3.txt" afterDir="false" />
     </list>
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -328,7 +331,8 @@
       <workItem from="1612514193225" duration="12318000" />
       <workItem from="1612534693801" duration="10000" />
       <workItem from="1612546751406" duration="1522000" />
-      <workItem from="1612611633750" duration="20118000" />
+      <workItem from="1612611633750" duration="22445000" />
+      <workItem from="1612689599553" duration="2350000" />
     </task>
     <servers />
   </component>
