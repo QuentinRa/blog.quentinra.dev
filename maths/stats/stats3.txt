@@ -19,50 +19,6 @@ moustaches (traduction de Box & Whiskers Plot ou BoxPlot) permettant de comparer
 comme disent les spécialistes) rapidement deux populations de données ou plus et surtout d'éliminer les
 valeurs aberrantes (prendre comme référence la médiane sera justement plus judicieux!):
 
-====> Fonction Répartition
-Soit X une variable aléatoire (v.a.) numérique (quantitative). Elle est complètement décrite par la
-valeur de la probabilité (pour les variables discrètes) ou par la probabilité cumulée (pour les variables
-continues)
-Cette probabilité (cumulée) F(x) s'appelle la "fonction de répartition" de la variable X.
-P(a <= x <= b) = F(b) - F(a)
-
-============> Définition: Nous définissons "l'espérance mathématique", appelée aussi "moment d'ordre 1",
-appelée aussi "règle des parties".
-En d'autres termes, nous savons qu'à chaque événement de l'espace des échantillons est associé une
-probabilité à laquelle nous associons également une valeur (donnée par la variable aléatoire). La
-question étant alors de savoir quelle valeur, à long terme, nous pouvons obtenir. La valeur espérée,
-(l'espérance mathématique donc...) est alors la moyenne pondérée, par la probabilité, de toutes les
-valeurs des événements de l'espace des échantillons.
-
-E(aX) = aE(X)
-E(X+Y) = E(X)+E(Y)
-E(c) = c
-
-Définition: Après avoir traduit la tendance par l'espérance il est intéressant de traduire la dispersion ou
-"déviation standard" autour de l'espérance par une valeur appelée "variance de X" ou encore "moment
-centré du deuxième ordre", notée V(X) ou sigma^2_X (lire "sigma-deux")
-
-La variance n'est cependant pas comparable directement à la moyenne, car l'unité de la variance est le
-carré de l'unité de la variable, ce qui découle directement de sa définition. Pour que l'indicateur de
-dispersion puisse être comparé aux paramètres de tendance centrale (moyenne, médiane et... mode), il
-suffit d'en prendre la racine carrée.
-L'écart-type est donc la moyenne quadratique des écarts (ou "écart moyen quadratique") entre les
-observations et leur moyenne.
-
-coefficient de variation : sigma/mu
-
-Le terme de la somme se trouvant dans l'expression de la variance (écart-type) est appelée "somme des
-carrés des écarts à la moyenne". Nous l'appelons aussi la "somme des carrés totale", ou encore la
-"variation totale" dans le cadre de l'étude de l'ANOVA (voir la fin de ce chapitre).
-
-variable centrée réduite
-Y = (X - mu)/sigma
-
-Ainsi, toute répartition statistique définie par une moyenne et un écart-type peut être transformée en
-une autre distribution statistique souvent plus simple à analyser.
-
-V(nX) = n^2V(x)
-V(X+Y) = V(X) + V(Y) + 2cov(X,Y)
 
 ========> ESPÉRANCE ET VARIANCE DE LA MOYENNE (ERREUR STANDARD ET FCP)
 Souvent en statistique, il est utile de déterminer l'écart-type de la moyenne empirique (ou en d'autres
@@ -87,53 +43,23 @@ entre les différentes variables: celui-ci est souvent exprimé par le coefficie
 qui est le carré du coefficient de corrélation. Le coefficient de détermination mesure donc
 la contribution d'une des variables à l'explication de la seconde.
 
------------ 342
-
-----> FONCTION GÉOMÉTRIQUE
-La loi géométrique ou "loi de Pascal" consiste dans une épreuve de type Bernoulli, dont la probabilité
-de succès est p et celle d'échec q=1-p sont constantes, que nous renouvelons de manière
-indépendante jusqu'au premier succès.
-P(x=k) q^{k-1}*p
-
-E(x)= 1/p
-V(x)= (1-p)/p^2
-
-----> FONCTION BINOMIALE NÉGATIVE
-
-La loi binomiale négative s'applique dans la même situation que la loi binomiale mais elle donne la
-probabilité d'avoir E échecs avant la R-ème réussite quand la probabilité de succès est p (ou
-inversement la probabilité d'avoir R réussites avant le E-ème échec quand la probabilité d'échec est p).
-
-P(ok) = p P(ko)= 1-p = q
-p^{nok} * q^{nko} * C^N_k
-
-ce qui correspond donc à la probabilité d'avoir nko échecs avant la nok-ème réussite.
-
-E(x) = 1/p
-V(x) = q/p^2
-
-----> FONCTION HYPERGÉOMÉTRIQUE
-
-V(x) = kpq * fpc^2
-V(x) = sqrt(kpq) * fpc
-
 fpc = "facteur de correction de population" ou
       en anglais "finite population correction factor"
       = (n-k)/(n-1)
 
-----> FONCTION DE POISSON
+-----> DIAGRAMME QUANTILE-QUANTILE
 
-Pour certains événements forts rares, la probabilité p est très faible et tend vers zéro. Toutefois la valeur
-moyenne n*p tend vers une valeur fixe lorsque n tend vers l'infini.
+Une autre manière de juger qualitativement de l'ajustement de données expérimentales avec une loi
+théorique (quelle qu'elle soit!!!) est l'utilisation d'un "diagramme quantile-quantile".
 
-Nous obtenons ainsi la "fonction de Poisson" (ou "loi de Poisson"), appelée également parfois "loi des
-événements rares", donnée donc par:
-E(x) = np
+L'idée est assez simple, il s'agit de comparer les données expérimentales, aux données théoriques
+supposées suivre une loi donnée.
 
-Le fait important que pour la loi de Poisson nous ayons la variance qui soit égale à l'espérance est
-appelé "propriété d'équidispersion de la de Poisson". Il s'agit d'une propriété souvent utilisée dans la
-pratique comme indicateur pour identifier si des données (à support discret) sont distribuées selon une
-loi de Poisson.
+Et bien évidemment on peut comparer les quantiles observés à toute loi théorique supposée. Plus les
+points seront alignés sur la droite, meilleur sera l'ajustement! C'est très visuel, très simple et beaucoup
+utilisé par les non spécialistes en statistiques dans les entreprises.
+
+----------- 342
 
 ----> FONCTION DE GAUSS-LAPLACE/LOI NORMALE
 
@@ -175,62 +101,6 @@ henry coeff de la droite
 sachant égal à k-mu/sigma
 donc mu=200
 sigma=100
-
------> DIAGRAMME QUANTILE-QUANTILE
-
-Une autre manière de juger qualitativement de l'ajustement de données expérimentales avec une loi
-théorique (quelle qu'elle soit!!!) est l'utilisation d'un "diagramme quantile-quantile".
-
-L'idée est assez simple, il s'agit de comparer les données expérimentales, aux données théoriques
-supposées suivre une loi donnée.
-
-Et bien évidemment on peut comparer les quantiles observés à toute loi théorique supposée. Plus les
-points seront alignés sur la droite, meilleur sera l'ajustement! C'est très visuel, très simple et beaucoup
-utilisé par les non spécialistes en statistiques dans les entreprises.
-
----> FONCTION LOG-NORMALE
-y = ln(x)
-
-nous voyons que y suit une fonction de probabilité de type loi Normale de moyenne mu et de variance
-sigma^2 (moments de la loi Normale).
-
----> FONCTION DE PARETO
-
-La "fonction de Pareto" (ou "loi de Pareto"), appelée aussi "loi de puissance" ou encore "loi scalante"
-est la formalisation du principe des 80-20. Cet outil d'aide à la décision détermine les facteurs (environ
-20%) cruciaux qui influencent la plus grande partie (80%) de l'objectif.
-
-1 - (x_m/x)^k avec x >= x_m
-
----> FONCTION EXPONENTIELLE
-
-Nous définissons la "fonction exponentielle" (ou "loi exponentielle") par la relation de fonction de
-distribution suivante:
-lambda * e^{-lambdax} * indicatrice[0,+inf]
-
-E(x) = 1/lambda
-V(x) = 1/lambda^2
-
----> LOI BÊTA
----> LOI FONCTION GAMMA
-
-Beta(a)/lambda^a
-
----> FONCTION DE KHI-DEUX (OU DE PEARSON)
-
-La "fonction de Khi-deux" (appelée aussi "loi du Khi-deux" ou encore "loi de Pearson") n'est par
-définition qu'un cas particulier de la fonction de distribution Gamma dans le cas a = k/2 où et
-lambda = 1/2, avec k entier positif
-
-E(k) = 2k
-
-pour indiquer que la distribution de la variable aléatoire X est la loi du Khi-deux. Par ailleurs il est
-courant de nommer le paramètre k "degré de liberté" et de l'abréger "ddl".
-
----> FONCTION DE FISHER
-
-. Les paramètres k et l sont des entiers positifs et correspondent aux degrés de liberté des deux
-lois du Khi-deux sous-jacentes. Cette distribution est souvent notée F(k,l) et peut être obtenue
 
 ==========================================
 ESTIMATEURS DE VRAISEMBLANCE

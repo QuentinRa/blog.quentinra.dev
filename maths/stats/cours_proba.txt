@@ -6,6 +6,12 @@
 
 -----> Fonction de répartition
 
+Soit X une variable aléatoire (v.a.) numérique (quantitative). Elle est complètement décrite par la
+valeur de la probabilité (pour les variables discrètes) ou par la probabilité cumulée (pour les variables
+continues)
+Cette probabilité (cumulée) F(x) s'appelle la "fonction de répartition" de la variable X.
+P(a <= x <= b) = F(b) - F(a)
+
 D2. La relation mathématique qui donne la probabilité cumulée qu'a une variable aléatoire d'être
 inférieure ou égale à une certaine valeur est nommée la "fonction de répartition" ou "fonction
 cumulée".
@@ -22,6 +28,46 @@ qu'un événement a une probabilité nulle qu'il ne peut arriver!!!
 D1. La relation mathématique qui donne la probabilité qu'a une variable aléatoire d'avoir une valeur
 donnée de la fonction de distribution est appelée "fonction de densité", "fonction de masse" ou encore
 "fonction marginale".
+
+-------> Espérance et variance
+
+"l'espérance mathématique", appelée aussi "moment d'ordre 1", appelée aussi "règle des parties".
+
+En d'autres termes, nous savons qu'à chaque événement de l'espace des échantillons est associé une
+probabilité à laquelle nous associons également une valeur (donnée par la variable aléatoire). La
+question étant alors de savoir quelle valeur, à long terme, nous pouvons obtenir. La valeur espérée,
+(l'espérance mathématique donc...) est alors la moyenne pondérée, par la probabilité, de toutes les
+valeurs des événements de l'espace des échantillons.
+
+E(aX) = aE(X)
+E(X+Y) = E(X)+E(Y)
+E(c) = c
+
+Définition: Après avoir traduit la tendance par l'espérance il est intéressant de traduire la dispersion ou
+"déviation standard" autour de l'espérance par une valeur appelée "variance de X" ou encore "moment
+centré du deuxième ordre", notée V(X) ou sigma^2_X (lire "sigma-deux")
+
+La variance n'est cependant pas comparable directement à la moyenne, car l'unité de la variance est le
+carré de l'unité de la variable, ce qui découle directement de sa définition. Pour que l'indicateur de
+dispersion puisse être comparé aux paramètres de tendance centrale (moyenne, médiane et... mode), il
+suffit d'en prendre la racine carrée.
+L'écart-type est donc la moyenne quadratique des écarts (ou "écart moyen quadratique") entre les
+observations et leur moyenne.
+
+coefficient de variation : sigma/mu
+
+Le terme de la somme se trouvant dans l'expression de la variance (écart-type) est appelée "somme des
+carrés des écarts à la moyenne". Nous l'appelons aussi la "somme des carrés totale", ou encore la
+"variation totale" dans le cadre de l'étude de l'ANOVA (voir la fin de ce chapitre).
+
+variable centrée réduite
+Y = (X - mu)/sigma
+
+Ainsi, toute répartition statistique définie par une moyenne et un écart-type peut être transformée en
+une autre distribution statistique souvent plus simple à analyser.
+
+V(nX) = n^2V(x)
+V(X+Y) = V(X) + V(Y) + 2cov(X,Y)
 
 ========================================
 ========================================

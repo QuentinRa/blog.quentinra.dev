@@ -40,7 +40,16 @@ La loi de cauchy n'a ni espérance ni variance.
 Loi khi-deux
 -------------------
 
-...
+Il s'agit d'une loi de la somme des carrés de k loi normales
+centrées réduites indépendantes, avec k le degré de liberté (ddl ou df).
+
+Il s'agit d'une loi Gamma de paramètres k_gamma=k/2
+et de theta = 1/2.
+
+.. math::
+
+		E(X=k) = k \\
+		V(X=k) = 2k
 
 Loi exponentielle
 -------------------
@@ -51,30 +60,75 @@ Loi exponentielle
 	E(x) = 1/\lambda \\
 	V(x) = 1/\lambda^2
 
-Loi F
--------------------
+Loi F/Loi de Fisher
+---------------------
 
-...
+Elle est construite depuis deux variables aléatoires indépendantes
+suivant une loi du khi-deux à respectivement d1 et d2 degrés de liberté
+(on note F(d1,d2)).
+
+.. math::
+
+	E(x) = d2/(d2-2) \\
+	V(x) = compliquée
 
 Loi Gamma
 -------------------
 
-...
+Une loi gamma possède un paramètre k (nombre de lois)
+et Theta (échelle) soit :math:`\Gamma(k,\theta)`.
+
+.. math::
+
+		E(X=k) = k\theta \\
+		V(X=k) = k\theta^2
 
 Loi géométrique
 -------------------
 
-...
+La loi géométrique (ou loi de Pascal) indiquant la probabilité d'avoir n le nombre de succès
+sachant une probabilité p.
+
+.. math::
+
+	P(X=n) = q^{n-1} * p \\
+	E(X)= 1/p \\
+	V(X)= q/p^2
 
 Loi hypergéométrique
 -----------------------
 
-...
+Il s'agit d'une loi G(n,p,N) indiquant la probabilité d'avoir n le nombre de succès
+sachant une probabilité p sur un ensemble de N valeurs possibles.
+
+.. math::
+
+	P(X=n) = q^{n-1} * p * C^N_n \\
+	E(X) = np \\
+	V(X) = npq * \frac{N-n}{N-1}
+
+Loi log normale
+------------------------
+
+Loi X est une loi log-normale si
+Y = ln(X) suit une loi normale d'espérance :math:`\mu`
+et de variance :code:`\sigma^2`.
+
+.. math::
+
+		E(X=k) = e^{\mu+\sigma^2/2} \\
+		V(X=k) = (e^{\sigma^2} - 1) * e^{2\mu+\sigma^2}
 
 Loi binomiale négative
 ------------------------
 
-...
+On cherche la probabilité d'avoir k échec avant un succès
+sachant une probabilité p de succès et q=1-p d'échec.
+
+.. math::
+
+	E(X=k) = (kq)/p
+	V(X=k) = (kq)/p^2
 
 Loi normale/gaussienne
 -----------------------
@@ -84,7 +138,17 @@ Loi normale/gaussienne
 Loi poisson
 -------------------
 
-...
+Aussi appelée la loi des événements rares, lorsque la probabilité
+p est petite et le nombre d'expériences N est grand alors
+la moyenne n*p tends vers une valeur fixe : :math:`\lambda`.
+
+.. math::
+
+	E(X) = np = \lambda \\
+	V(X) = np = \lambda
+
+On remarque V(X) = E(X) ce qui peut être utile en statistique descriptives
+pour identifier une possible loi de poisson.
 
 Loi Student T
 -------------------
@@ -122,3 +186,9 @@ Loi Weibull
 -------------------
 
 ...
+
+Loi de Pareto
+-------------------
+
+Connue avec la règle des 80-20 tels que 80% des effets
+sont le résultat de 20% des causes.
