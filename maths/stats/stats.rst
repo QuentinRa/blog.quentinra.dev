@@ -110,18 +110,17 @@ Corrélation :code:`cor`
 	fortement corrélés.
 
 Moments
-	| Moment d'ordre 1 : E(X) donc la moyenne
-	| Moment d'ordre 2 : V(X) donc la variance
-	| Moment d'ordre 3 : Skewness ou coefficient d’asymétrie, :code:`E[(X-\mu)^3]/\sigma^3`
-	| Moment d'ordre 4 : Kurtosis ou coefficient d’aplatissement, :code:`E[(X-\mu)^4]/\sigma^4 - 3`
+	| Moment d'ordre 1 : E(X) donc la moyenne (:code:`mean`)
+	| Moment d'ordre 2 : V(X) donc la variance (:code:`var`)
+	| Moment d'ordre 3 : Skewness (coefficient d’asymétrie), :code:`E[(X-\mu)^3]/\sigma^3` (:code:`skewness`) [#3]_
+	| Moment d'ordre 4 : Kurtosis (coefficient d’aplatissement), :code:`E[(X-\mu)^4]/\sigma^4 - 3` (:code:`kurtosis`) [#3]_
 
 	Si Skewness est proche de 0 alors la distribution est symétrique.
 
 	Si Kurtosis est faible alors la répartition est équilibrée sinon il y a un pic. En particulier,
 	si Kurtosis vaut 3 alors on a une loi gaussienne.
 
-	On étudie les moments avec :code:`mean`, :code:`var`. :code:`skewness` et :code:`kurtosis` sont
-	dans la librairie :code:`e1071` (ou :code:`moments`).
+	.. [#3] fonctions de la librairie :code:`e1071` (ou :code:`moments`).
 
 3. Recherche d'une stratégie d'analyse
 ============================================
@@ -189,8 +188,8 @@ Autre
 	* Statistique bivariée : deux variable
 	* Statistique multivariée : plusieurs variable
 
-5. Statistique descriptive
-============================
+5. Préparation
+================
 
 Vous trouverez d'abord un rappel sur les lois (théorie) et leur fonctions associées en R.
 
@@ -210,6 +209,14 @@ rentrées à la main (notamment) et qui ont étés mal écrites (faute, accent m
 
 Il arrive généralement que l'on trie les valeurs, ceci ce fait avec :code:`sort`.
 
+Il est généralement avisé et recommandé de traiter les valeurs dites anormales/aberrantes/extrêmes. Il s'agit
+de valeur trop importantes/faibles qui donnent des valeurs pouvant ne pas être représentatives. On obtient
+une moyenne élaguée...
+
+Enfin, on va pas cherche une loi exacte mais qui rende les observations le plus vraisemblable possible,
+donc qui maximise la loi : L (vraisemblance). La/Les valeurs de theta qui maximisent L(theta)
+sont appelées estimateurs du maximum de vraisemblance.
+
 .. toctree::
 	 :maxdepth: 1
 
@@ -218,7 +225,18 @@ Il arrive généralement que l'on trie les valeurs, ceci ce fait avec :code:`sor
 		Transformation de variables      <files/var_t>
 		Fusion de données                <files/fusion>
 
-6. Statistiques inférentielle
+6. Statistique descriptive
+===============================
+
+Valeurs aberrantes
+	Utiliser des boîtes à moustaches (boxplot) pour voir la présence de valeurs extrêmes.
+
+Quelques notes
+
+	* on se rappelle que pour une loi de poisson, moyenne = variance = paramètre
+	* ...
+
+7. Statistiques inférentielle
 ===============================
 
 ...

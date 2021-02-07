@@ -67,26 +67,6 @@ utilisé par les non spécialistes en statistiques dans les entreprises.
 =============================================
 =============================================
 
-==========================================
-ESTIMATEURS DE VRAISEMBLANCE
-==========================================
-
-Nous supposons que nous disposons d'observations xi qui sont des réalisations de variables
-aléatoires non biaisées (dans le sens qu'elles sont choisies aléatoirement parmi un lot) indépendantes
-Xi de loi de probabilité inconnue mais identique.
-
-Nous allons chercher à estimer cette loi de probabilité P inconnue à partir des observations
-
-Supposons que nous procédons par tâtonnements pour estimer la loi de probabilité P inconnue. Une
-manière de procéder est de se demander si les observations avaient une probabilité
-élevée ou non de sortir avec cette loi de probabilité arbitraire P.
-
-On va pas cherche une loi exacte mais qui rende les observations le plus vraisemblable possible
-
-Cette quantité L porte le nom de "vraisemblance".
-La ou les valeurs du paramètre theta qui maximisent la vraisemblance L(theta) sont appelées "estimateurs
-du maximum de vraisemblance" (estimateur MV).
-
 ===========================
 INTERVALLES DE CONFIANCE
 ===========================
