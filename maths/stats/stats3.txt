@@ -19,33 +19,34 @@ moustaches (traduction de Box & Whiskers Plot ou BoxPlot) permettant de comparer
 comme disent les spécialistes) rapidement deux populations de données ou plus et surtout d'éliminer les
 valeurs aberrantes (prendre comme référence la médiane sera justement plus judicieux!):
 
-
 ========> ESPÉRANCE ET VARIANCE DE LA MOYENNE (ERREUR STANDARD ET FCP)
-Souvent en statistique, il est utile de déterminer l'écart-type de la moyenne empirique (ou en d'autres
-termes...: l'erreur quadratique moyenne). Voyons de quoi il s'agit:
-
-en gros si sont identiquement distribuées et indépendantes
-alors E(X) = 1/n * n mu
-sinon  1/n * somme des espérances
-
-variance : 1/n^2
-V(x) = sigma^2/n
---> d'où l'écart-type de la moyenne appelé aussi "erreur-type", "erreur-standard" ou encore "variation non systématique":
-sigma(x) = sigma/sqrt(n)
-
-la loi de probabilité de la
-variable aléatoire X, moyenne de n variables aléatoires identiquement distribuées et linéairement
-indépendantes, est alors la loi:
-N(mu, sigma/sqrt(n))
 
 L'analyse du coefficient de corrélation poursuit donc l'objectif de déterminer le degré d'association
 entre les différentes variables: celui-ci est souvent exprimé par le coefficient de détermination,
 qui est le carré du coefficient de corrélation. Le coefficient de détermination mesure donc
 la contribution d'une des variables à l'explication de la seconde.
 
+"théorème central limite" qui comme nous le verrons, permet de démontrer
+(entre autres) que toute suite de variables aléatoires indépendantes de même loi ayant une espérance et
+un écart-type fini et non nécessairement égales converge vers une fonction de Gauss-Laplace (loi
+Normale).
+
+FACTEUR DE CORRECTION SUR POPULATION FINIE
+=============================================
+
+Maintenant démontrons un autre résultat qui nous sera indispensables dans certains tests statistiques
+que nous verrons plus loin.
+
+fcp
 fpc = "facteur de correction de population" ou
       en anglais "finite population correction factor"
       = (n-k)/(n-1)
+
+que nous avons déjà rencontré lors de notre étude la loi hypergéométrique, et appelé "facteur de
+correction sur population finie" et il a pour effet de réduire l'erreur-standard d'autant plus que n est
+grand.
+
+(multiplie par fcp)
 
 -----> DIAGRAMME QUANTILE-QUANTILE
 
@@ -59,48 +60,12 @@ Et bien évidemment on peut comparer les quantiles observés à toute loi théor
 points seront alignés sur la droite, meilleur sera l'ajustement! C'est très visuel, très simple et beaucoup
 utilisé par les non spécialistes en statistiques dans les entreprises.
 
------------ 342
-
-----> FONCTION DE GAUSS-LAPLACE/LOI NORMALE
-
-Cette caractéristique est la plus importante fonction de distribution en statistiques suite au résultat d'un
-théorème connu appelé "théorème central limite" qui comme nous le verrons, permet de démontrer
-(entre autres) que toute suite de variables aléatoires indépendantes de même loi ayant une espérance et
-un écart-type fini et non nécessairement égales converge vers une fonction de Gauss-Laplace (loi
-Normale).
-
-Pour information, une variable suivant une loi Normale centrée réduite est très souvent par tradition
-notée Z (pour "Zentriert" en allemand).
-En revenant aux variables non normées:
-
-nous obtenons donc la "fonction Gauss-Laplace" (ou "loi de Gauss-Laplace") ou également appelée
-"loi Normale" donnée sous forme de densité de probabilité par:
-k-u/sigma
-
-Interval 1 sigma (-sigma, sigma) : ~68.3%
-Interval 2 sigma (-2sigma, 2sigma) : ~95.4%
-Interval 3 sigma (-3sigma, 3sigma) : ~99.7%
-
-La largeur de l'intervalle a une très grande importance dans l'interprétation des incertitudes d'une
-mesure. La présentation d'un résultat comme N+n*sigma=p% signifie que la valeur moyenne a environ p% de
-chance (probabilité) de se trouver entre les limites N-n*sigma,N+n*sigma
-
-La loi de Gauss-Laplace n'est par ailleurs pas qu'un outil d'analyse de données mais également de
-génération de données.
-
-Le fait que la somme de deux lois Normales donne toujours une loi Normale est ce que nous nommons
-en statistiques la "stabilité par la somme" de la loi de Gauss-Laplace.
-
------> LOI NORMALE CENTRÉE RÉDUITE
-
-k* = k-mu/sigma
-LNCR(mu=0,sigma=1)
-
-henry coeff de la droite
-0.01k-2
-sachant égal à k-mu/sigma
-donc mu=200
-sigma=100
+=============================================
+=============================================
+=============================================
+=============================================
+=============================================
+=============================================
 
 ==========================================
 ESTIMATEURS DE VRAISEMBLANCE
@@ -121,34 +86,6 @@ On va pas cherche une loi exacte mais qui rende les observations le plus vraisem
 Cette quantité L porte le nom de "vraisemblance".
 La ou les valeurs du paramètre theta qui maximisent la vraisemblance L(theta) sont appelées "estimateurs
 du maximum de vraisemblance" (estimateur MV).
-
----> ESTIMATEURS DE LA LOI GAMMA
-
-Nous allons utiliser ici une technique appelée "méthode des moments" pour déterminer les estimateurs
-des paramètres de la loi Gamma.
-Supposons que X1, ..., Xn sont des variables aléatoires indépendantes et identiquement distribuées selon
-la loi Gamma avec pour densité:
-
-Le premier moment est l'espérance (a/lambda)
-Le second moment est la variance (a(a+1)/lambda^2)
-
-Une fois ce système établie, la méthode des moments consiste à utiliser les moments empiriques, en
-l'occurrence pour notre exemple les deux premiers
-que l'on pose égaux aux moments théoriques vrais...
-
-=============================================
-FACTEUR DE CORRECTION SUR POPULATION FINIE
-=============================================
-
-Maintenant démontrons un autre résultat qui nous sera indispensables dans certains tests statistiques
-que nous verrons plus loin.
-
-fcp
-que nous avons déjà rencontré lors de notre étude la loi hypergéométrique, et appelé "facteur de
-correction sur population finie" et il a pour effet de réduire l'erreur-standard d'autant plus que n est
-grand.
-
-(multiplie par fcp)
 
 ===========================
 INTERVALLES DE CONFIANCE

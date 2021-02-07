@@ -4,8 +4,8 @@
 PHP
 ================================
 
-| :math:`\color{grey}{Version \ 0.9.12}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 01/02/2021}`
+| :math:`\color{grey}{Version \ 0.9.13}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 07/02/2021}`
 
 1. Introduction
 ===================================
@@ -241,6 +241,16 @@ pas partagées sauf si elles sont globales.
 
 On peut également déclarer une variable static. Une telle variable conserve
 sa valeur entre deux appels de la fonction (comme en C).
+
+En php 7.3 au plus, on peut ajouter le type de retour dans la déclaration
+
+.. code:: php
+
+	<?php
+	// retourne type_retour
+	function f() : type_retour { ... }
+	// peut retourner type_retour ou null
+	function f() : ?type_retour { ... }
 
 6. Classes et objets
 ======================

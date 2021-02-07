@@ -30,3 +30,36 @@ N = nombre de produits
 N log(N) - (freq_prod_i * log(freq_prod_i))
 /
 N
+
+============================ UNKNOWN
+
+Souvent en statistique, il est utile de déterminer l'écart-type de la moyenne empirique (ou en d'autres
+termes...: l'erreur quadratique moyenne). Voyons de quoi il s'agit:
+
+en gros si sont identiquement distribuées et indépendantes
+alors E(X) = 1/n * n mu
+sinon  1/n * somme des espérances
+
+variance : 1/n^2
+V(x) = sigma^2/n
+--> d'où l'écart-type de la moyenne appelé aussi "erreur-type", "erreur-standard" ou encore "variation non systématique":
+sigma(x) = sigma/sqrt(n)
+
+la loi de probabilité de la
+variable aléatoire X, moyenne de n variables aléatoires identiquement distribuées et linéairement
+indépendantes, est alors la loi:
+N(mu, sigma/sqrt(n))
+
+---> ESTIMATEURS DE LA LOI GAMMA
+
+Nous allons utiliser ici une technique appelée "méthode des moments" pour déterminer les estimateurs
+des paramètres de la loi Gamma.
+Supposons que X1, ..., Xn sont des variables aléatoires indépendantes et identiquement distribuées selon
+la loi Gamma avec pour densité:
+
+Le premier moment est l'espérance (a/lambda)
+Le second moment est la variance (a(a+1)/lambda^2)
+
+Une fois ce système établie, la méthode des moments consiste à utiliser les moments empiriques, en
+l'occurrence pour notre exemple les deux premiers
+que l'on pose égaux aux moments théoriques vrais...

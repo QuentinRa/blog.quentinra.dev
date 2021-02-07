@@ -133,7 +133,37 @@ sachant une probabilité p de succès et q=1-p d'échec.
 Loi normale/gaussienne
 -----------------------
 
-...
+Une loi très importante en stats. On la note
+N(mu, sigma^2) avec mu la moyenne est sigma-carré la variance.
+
+Sa forme corresponds à une loi pour laquelle kurtosis (moment d'ordre 4)
+vaut 3.
+
+.. math::
+
+	E(X) = \mu \\
+	V(X) = \sigma^2
+
+Lorsque N(0,1) alors on dit qu'il s'agit d'une loi centrée réduite. En théorie,
+selon le théorème centrale limite alors toute loi peut être ramenée
+à une loi normale avec :math:`\frac{k-\mu}{\sigma}`.
+
+Généralement, on a un n-sigma-interval donc en prenant un interval de
+n sigma on regarde a quel point la sous-distribution est fidèle à la loi
+
+	*	Interval 1 sigma (-sigma, sigma) : ~68.3%
+	*	Interval 2 sigma (-2sigma, 2sigma) : ~95.4%
+	*	Interval 3 sigma (-3sigma, 3sigma) : ~99.7%
+
+Le pourcentage signifie qu'il y a p% de chance que la moyenne soit dans l'interval
+n-sigma.
+
+Droite de Henry
+	Il s'agit d'une droite qui est proche d'une distribution normale. Elle est généralement
+	utilisée pour voir s'il s'agit bien d'une distribution gaussienne.
+
+	Le coefficient de la droite (ak+b) est égal à :math:`(k-\mu)/\sigma` donc résoudre
+	l'équation permet d'obtenir mu et sigma.
 
 Loi poisson
 -------------------

@@ -109,6 +109,20 @@ Corrélation :code:`cor`
 	ou 1 (corrélation imparfaite) alors elles sont
 	fortement corrélés.
 
+Moments
+	| Moment d'ordre 1 : E(X) donc la moyenne
+	| Moment d'ordre 2 : V(X) donc la variance
+	| Moment d'ordre 3 : Skewness ou coefficient d’asymétrie, :code:`E[(X-\mu)^3]/\sigma^3`
+	| Moment d'ordre 4 : Kurtosis ou coefficient d’aplatissement, :code:`E[(X-\mu)^4]/\sigma^4 - 3`
+
+	Si Skewness est proche de 0 alors la distribution est symétrique.
+
+	Si Kurtosis est faible alors la répartition est équilibrée sinon il y a un pic. En particulier,
+	si Kurtosis vaut 3 alors on a une loi gaussienne.
+
+	On étudie les moments avec :code:`mean`, :code:`var`. :code:`skewness` et :code:`kurtosis` sont
+	dans la librairie :code:`e1071` (ou :code:`moments`).
+
 3. Recherche d'une stratégie d'analyse
 ============================================
 
