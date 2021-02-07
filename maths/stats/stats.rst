@@ -11,7 +11,8 @@ mais uniquement un cours d'initiation du point de vue d'un programmeur.
 
 L'objectif des statistiques est depuis des observations (=données=Data)
 d'une population (pas forcément humaine),
-de déterminer des caractéristiques puis une loi de probabilité qui est proche des observations
+de déterminer des caractéristiques puis une loi de probabilité (~fonction de répartition)
+qui est proche des observations
 ce qui nous permettra de déduire ou émettre des hypothèses.
 
 Population
@@ -26,9 +27,14 @@ Variables
 		La valeur fait l'objet d'une mesure (1,4,5, ... cm) donc on associe
 		une loi qui représente les valeurs pouvant être prises.
 
+			* suivant une loi discrète : nombre de valeurs finies (dénombrable, comptage)
+			* suivant une loi continue : nombre de valeurs infinies (non dénombrable, mesure)
+
+		Ces données sont généralement représentées par des histogrammes.
+
 	Variable qualitative
 		La valeur est un critère ou permet de grouper les individus (le sexe, ...). Généralement
-		le type est :code:`factor()` en R.
+		le type est :code:`factor()` en R. Ces données suivent généralement une loi Binomiale.
 
 Individu
 	Il s'agit d'une ligne (i) de la matrice. Ainsi, la valeur
@@ -66,11 +72,13 @@ Moyenne
 	* arithmétique/empirique : somme des valeurs/nombre de valeurs
 	* pondérée par les effectifs (E(x)) : somme(valeur * fréquence) avec fréquence=#occurrences/#total
 
+	Dispersion des écarts absolus : somme des \|valeur-moyenne\|
+
 Médiane (moyenne milieu)
 	Valeur qui coupe la population en deux parties égales. On peut lire la médiane sur un graphique
-	(F(x) ou ecdf en R : la médiane se trouve au f(x)=0.5)
+	(F(x) ou :code:`ecdf(loi)` en R : la médiane se trouve au f(x)=0.5)
 
-	Dispersion des écarts absolus : somme des \|valeur-médiane\|
+	Dispersion des écarts absolus (:code:`mad()`) : somme des \|valeur-médiane\|
 
 Médiale
 	Valeur qui divise en deux parties la somme cumulée des valeurs (permet de savoir
@@ -79,11 +87,27 @@ Médiale
 Mode
 	Valeur qui apparait le plus de fois.
 
-Quantiles
-	Il s'agit d'un découpage de la distribution en part égales (4=quartile,10=déciles, 100=centiles, ...).
+Quantiles :code:`quantiles`
+	Il s'agit d'un découpage de la distribution en part égales (4=quartile,10=déciles, 100=centiles...).
 
 	Le quartile 3 (ou 3ème quartile) désigne ainsi la valeur séparant 3/4 de la distribution et le
 	dernier 1/4.
+
+Covariance :code:`cov`
+	Si X,Y sont indépendantes alors la covariance vaut 0 (pas réciproque), sinon une covariance
+	faible indique des variables faiblement dépendantes et une covariance forte indique des variables
+	fortement dépendantes (=liées). On calcule généralement
+	une matrice des covariance (X1, ... Xn) pour voir les dépendances deux à deux.
+
+Corrélation :code:`cor`
+	Si X et Y (deux v.a.) sont dépendantes et Y augmente quand X augmente (corrélation positive), sinon
+	Y diminue lorsque X augmente (corrélation négative). On calcule généralement
+	une matrice des corrélation (X1, ... Xn) pour voir les corrélations deux à deux.
+
+	Le coefficient de corrélation linéaire est généralement entre -1 et 1. S'il vaut 0 alors
+	les variables ne sont pas corrélés. Sinon lorsqu'il est proche de -1 (corrélation négative parfaite)
+	ou 1 (corrélation imparfaite) alors elles sont
+	fortement corrélés.
 
 3. Recherche d'une stratégie d'analyse
 ============================================
@@ -146,6 +170,11 @@ Fonctions utiles
 		* :code:`range()` : retourne le min et le max
 		* D'autres fonctions : :code:`var, sd, quantile, ...`
 
+Autre
+	* Statistique univariée : une variable
+	* Statistique bivariée : deux variable
+	* Statistique multivariée : plusieurs variable
+
 5. Statistique descriptive
 ============================
 
@@ -198,3 +227,6 @@ rentrées à la main (notamment) et qui ont étés mal écrites (faute, accent m
 	* http://foucart.thierry.free.fr/StatPC/livre/chapitre6/fisher.htm
 	* http://www.sthda.com/french/wiki/visualiser-une-matrice-de-correlation-par-un-correlogramme
 	* https://fr.wikipedia.org/wiki/Plan_d%27exp%C3%A9riences
+	* https://www.alloprof.qc.ca/fr/eleves/bv/mathematiques/le-coefficient-de-correlation-lineaire-m1377
+	* https://team.inria.fr/imagine/files/2015/09/tp_lissage.pdf
+	* https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_d%27%C3%A9chantillonnage

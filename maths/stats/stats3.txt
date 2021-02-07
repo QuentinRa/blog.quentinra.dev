@@ -11,8 +11,6 @@ et ses caractéristiques détaillées
 il est souvent utile et nécessaire de
 regrouper les mesures/données dans des intervalles de classe de largeur donnée
 
-Médiane : M = a + (b-a) * \frac{0.5-F(a)}{F(b)-F(a)}
-
 Pour éviter d'obtenir une moyenne arithmétique ayant peu de sens, nous calculons
 souvent une "moyenne élaguée", c'est à dire une moyenne arithmétique calculée après avoir enlevé
 des valeurs aberrantes à la série.
@@ -21,52 +19,14 @@ moustaches (traduction de Box & Whiskers Plot ou BoxPlot) permettant de comparer
 comme disent les spécialistes) rapidement deux populations de données ou plus et surtout d'éliminer les
 valeurs aberrantes (prendre comme référence la médiane sera justement plus judicieux!):
 
-La "moyenne quadratique" parfois simplement notée Q qui est définie par: ...
-racine m-ième de la somme des xi^m/n. L'écart type est une moyenne quadratique.
-
----------------->
-
-2.1. LISSAGE DE LAPLACE (309)
-
-Pour en revenir à nos fréquences de classes vues bien plus haut et avant de continuer avec l'étude de
-quelques propriétés mathématiques des moyennes... il faut savoir que lorsque nous travaillons avec des
-lois discrètes de probabilités il arrive très (très) fréquemment que nous rencontrions un problème
-typique dont la source est la taille de la population. Considérons comme exemple le cas où nous avons
-12 documents et que souhaiterions estimer la probabilité d'occurrence du mot "Viagra". Nous avons sur
-un échantillon les valeurs suivantes
-
-Et ici nous avons un phénomène courant. Il n'y a aucun document avec 5 occurrences du mot qui nous
-intéresse. L'idée (très courante dans le domaine du Data Mining) est alors d'ajouter artificiellement et
-empiriquement un comptage en utilisant une technique appelée "lissage de Laplace" qui consiste à
-additionner k unités à chaque occurrence et qui est courant dans le domaine du Data Mining. Dès lors le
-tableau devient: (ex: ajouter 1 à tout le monde)
-
-P2. La moyenne arithmétique a une propriété de linéarité
-P3. La somme pondérée des écarts à la moyenne arithmétique est nulle.
-
-existait trois types de variables quantitatives très importantes qu'il convient absolument de différencier:
-1. Les variables discrètes (par comptage): Sont analysées avec des lois statistiques basées sur un
-domaine de définition dénombrable toujours strictement positif (loi de Poisson typiquement dans
-l'industrie). Sont quasiment toujours représentées sous forme graphique par des histogrammes.
-
-2. Les variables continues (par mesure): Sont analysées avec des lois statistiques basées sur un domaine
-de définition non dénombrable strictement positif ou pouvant prendre toute valeur positive ou négative
-(loi Normale typiquement dans l'industrie). Sont également quasiment toujours représentées sous forme
-graphique par des histogrammes avec des intervalles de classe.
-
-3. Les variables par attribut (de classification): Il ne s'agit pas de données numériques mais de données
-qualitatives de type {Oui, Non}, {Réussi, Échec}, {A temps, En retard}, etc. Les données de type
-attribut suivent une loi Binomiale
-
+====> Fonction Répartition
 Soit X une variable aléatoire (v.a.) numérique (quantitative). Elle est complètement décrite par la
 valeur de la probabilité (pour les variables discrètes) ou par la probabilité cumulée (pour les variables
 continues)
 Cette probabilité (cumulée) F(x) s'appelle la "fonction de répartition" de la variable X.
 P(a <= x <= b) = F(b) - F(a)
 
-fonction de répartition empirique
-
-Définition: Nous définissons "l'espérance mathématique", appelée aussi "moment d'ordre 1",
+============> Définition: Nous définissons "l'espérance mathématique", appelée aussi "moment d'ordre 1",
 appelée aussi "règle des parties".
 En d'autres termes, nous savons qu'à chaque événement de l'espace des échantillons est associé une
 probabilité à laquelle nous associons également une valeur (donnée par la variable aléatoire). La
@@ -89,18 +49,7 @@ suffit d'en prendre la racine carrée.
 L'écart-type est donc la moyenne quadratique des écarts (ou "écart moyen quadratique") entre les
 observations et leur moyenne.
 
-coefficient de variation : sigma/u
-
-"L'écart absolu moyen" (moyenne des valeurs absolues des écarts à la moyenne):
-qui est un indicateur élémentaire très utilisé lorsque nous ne souhaitons pas faire de l'inférence
-statistique sur une série de mesures
-
-"La déviation absolue de la médiane" noté MAD (médiane des valeurs absolues des écarts à la
-médiane):
-qui est considéré comme un indicateur plus robuste de la dispersion que ceux donnés par l'écart absolu
-moyen ou l'écart-type (malheureusement cet indicateur n'est pas intégré nativement dans les tableurs).
-----> on retire la médiane a toute les valeurs.
----> MAD = médiane après sort()
+coefficient de variation : sigma/mu
 
 Le terme de la somme se trouvant dans l'expression de la variance (écart-type) est appelée "somme des
 carrés des écarts à la moyenne". Nous l'appelons aussi la "somme des carrés totale", ou encore la
@@ -115,27 +64,7 @@ une autre distribution statistique souvent plus simple à analyser.
 V(nX) = n^2V(x)
 V(X+Y) = V(X) + V(Y) + 2cov(X,Y)
 
-Nous venons de voir dans la dernière relation le concept de "covariance" dont nous verrons une
-expression plus commode un peu plus bas mais donc définie par:
-
-Remarque: Les statistiques peuvent être découpées selon le nombre de variables aléatoires que
-nous étudions. Ainsi, lorsqu'une seule variable aléatoire est étudiée, nous parlons de "statistique
-univariée", pour deux variables aléatoires de "statistique bivariée" et en général, de "statistique
-multivariée".
-
-En effet si, en général X et Y
-croissent simultanément, les produits seront positifs (corrélés positivement), tandis
-que si Y décroît lorsque X croît, ces même produits seront négatifs (corrélés négativement).
-
-Maintenance, considérons un vecteur de composantes et un autre vecteur de
-composantes , tous deux étant des variables aléatoires, le calcul de la covariance des
-composantes deux à deux donne ce que l'on appelle la "matrice des covariances"
-
-Remarque: Donc plus la covariance est faible, plus les séries sont indépendantes. A l'inverse, plus la
-covariance est élevée, plus les séries sont liées.
-si X, Y sont indépendantes cov=0
-
-3.1.3. ESPÉRANCE ET VARIANCE DE LA MOYENNE (ERREUR STANDARD ET FCP)
+========> ESPÉRANCE ET VARIANCE DE LA MOYENNE (ERREUR STANDARD ET FCP)
 Souvent en statistique, il est utile de déterminer l'écart-type de la moyenne empirique (ou en d'autres
 termes...: l'erreur quadratique moyenne). Voyons de quoi il s'agit:
 
@@ -153,59 +82,19 @@ variable aléatoire X, moyenne de n variables aléatoires identiquement distribu
 indépendantes, est alors la loi:
 N(mu, sigma/sqrt(n))
 
-nous allons démontrer cette relation immédiatement car l'utilisation de la covariance seule pour
-l'analyse des données n'est pas géniale car elle n'est pas à proprement parler bornée et simple d'usage
-(au niveau de l'interprétation). Nous allons donc construire un indicateur plus facile d'usage en
-entreprise.
-
-Finalement nous obtenons une forme de l'inégalité statistique dite "inégalité de Cauchy-Schwarz"
--1 < ... < 1
-
-Si les variances de X et Y sont non nulles, la corrélation entre X et Y est définie par le "coefficient de
-corrélation linéaire" (il s'agit donc de la covariance standardisée afin que son amplitude ne soit pas
-dépendante de l'unité de mesure choisie):
-
-Il traduit la plus ou moins grande dépendance linéaire
-de X et Y et ou, géométriquement, le plus ou moins grand aplatissement. Nous pouvons donc dire qu'un
-coefficient de corrélation nul ou proche de 0 signifie qu'il n'y a pas de relation linéaire entre les
-caractères. Mais il n'entraîne aucune notion d'indépendance plus générale.
-
-Quand le coefficient de corrélation est proche de 1 ou -1, les caractères sont dits fortement corrélés. Il
-faut prendre garde à la confusion fréquente entre corrélation et causalité. Cependant, que deux
-phénomènes soient corrélés n'implique en aucune façon que l'un soit cause de l'autre.
-
-----> -1
-nous avons affaire à une corrélation négative dite "corrélation négative parfaite" (dans la
-cas d'une relation linéaire tous les points de mesures sont situés sur une droite de pente négative).
-----> 1
-nous avons affaire à une corrélation négative ou positive dite "corrélation imparfaite"
-(dans la cas d'une relation linéaire tous les points de mesures sont situés sur une droite de pente
-
 L'analyse du coefficient de corrélation poursuit donc l'objectif de déterminer le degré d'association
-entre les différentes variables: celui-ci est souvent exprimé par le coefficient de détermination, qui est
-le carré du coefficient de corrélation. Le coefficient de détermination mesure donc la contribution d'une
-des variables à l'explication de la seconde.
+entre les différentes variables: celui-ci est souvent exprimé par le coefficient de détermination,
+qui est le carré du coefficient de corrélation. Le coefficient de détermination mesure donc
+la contribution d'une des variables à l'explication de la seconde.
 
 D1. Nous disons que X est une variable continue si sa "fonction de répartition" est continue (déjà
 définie plus haut).
-la "fonction de survie" (survival function) ou "fonction de queue" : 1-F(x)
 
 Il est intéressant de remarquer que la définition amène à ce que la probabilité qu'une
 variable aléatoire totalement continue prenne une valeur donnée est nulle! Donc ce n'est pas parce
 qu'un événement a une probabilité nulle qu'il ne peut arriver!!!
 
------------ 338
-
-3.3. POSTULAT FONDAMENTAL DE LA STATISTIQUE
-Le but ultime de la statistique est de remonter de l'échantillon à la fonction de répartition analytique qui
-lui aurait donné naissance.
-
-Diversité (ex: vendeurs/produits et le taux de divsersité)
-Formule de Shannon
-N = nombre de produits
-N log(N) - (freq_prod_i * log(freq_prod_i))
-/
-N
+-----------
 
 5. FONCTIONS DE DISTRIBUTIONS = loi
 Lorsque nous observons des phénomènes probabilistes, et que nous prenons note des valeurs prises par

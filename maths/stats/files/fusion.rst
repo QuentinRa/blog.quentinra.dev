@@ -8,8 +8,12 @@ Fusion
 	par exemple si deux jeux de données ont une colonne
 	en commun avec :code:`merge(data1, data2, by="nom_colonne")`.
 
-Lissage de Laplace
+Lissage de Laplace (Lissage laplacien ou Additive Smoothing)
+	On ajoute artificiellement et empiriquement alpha (généralement 1) unités à chacune des valeurs,
+	donc dans le cas où on chercherait à calculer la moyenne selon un critère (ex: par année)
+	et qu'on aurait 0 comme valeur associée au critère (ex: 0 de ... en 2015).
 
+	Ceci n'affecterait pas la moyenne car elle est linéaire.
 
 Méthode du Bootstrap
 	Cette partie est revue en tests mais elle permet de faire des tests sur une petit

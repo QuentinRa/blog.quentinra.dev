@@ -6,6 +6,7 @@ Idée : donner un affichage (vecteur) et demander comment on l'as eu.
 	* http://www.dagnelie.be/
 	* https://www.math.univ-toulouse.fr/~xgendre/ens/l3sid/L3SID_SE_TP1.pdf
 	* https://odr.inra.fr/intranet/carto/cartowiki/index.php/Statistiques_descriptives_avec_R
+	* https://larmarange.github.io/analyse-R/statistique-univariee.html
 
 Général
 --------------

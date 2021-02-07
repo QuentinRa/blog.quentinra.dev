@@ -14,3 +14,19 @@ Il n’y a donc pas d’interaction Sol Sonde sur Teneur.
 ============================= MOAR
 
 L'analyse de données en masse la "statistique fréquentielle" (en opposition à l'inférence bayésienne).
+
+Médiane : M = a + (b-a) * \frac{0.5-F(a)}{F(b)-F(a)}
+
+La "moyenne quadratique" parfois simplement notée Q qui est définie par: ...
+racine m-ième de la somme des xi^m/n. L'écart type est une moyenne quadratique.
+
+P3. La somme pondérée des écarts à la moyenne arithmétique est nulle.
+
+la "fonction de survie" (survival function) ou "fonction de queue" : 1-F(x)
+
+Diversité (ex: vendeurs/produits et le taux de divsersité)
+Formule de Shannon
+N = nombre de produits
+N log(N) - (freq_prod_i * log(freq_prod_i))
+/
+N
