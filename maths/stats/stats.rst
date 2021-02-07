@@ -3,6 +3,8 @@ Statistiques et R
 ===================================
 
 Les prérequis sont de savoir lire du R (concepts de base et un peu avancés).
+Ceci n'est pas un cours de maths donc ce ne sont pas des vraies statistiques
+mais uniquement un cours d'initiation du point de vue d'un programmeur.
 
 1. Introduction
 ===================
@@ -17,8 +19,16 @@ Population
 	d'une matrice.
 
 Variables
-	Il s'agit généralement des colonnes (j) de la matrice. Elles sont
+	Il s'agit généralement des colonnes (j) de la matrice. Elles sont (de caractère)
 	qualitatives ou quantitatives.
+
+	Variable quantitative
+		La valeur fait l'objet d'une mesure (1,4,5, ... cm) donc on associe
+		une loi qui représente les valeurs pouvant être prises.
+
+	Variable qualitative
+		La valeur est un critère ou permet de grouper les individus (le sexe, ...). Généralement
+		le type est :code:`factor()` en R.
 
 Individu
 	Il s'agit d'une ligne (i) de la matrice. Ainsi, la valeur
@@ -49,7 +59,33 @@ Pour la suite, on considère data : notre jeu de données, ech = échantillon
 et var : une variable (qualitative/quantitative), quant : une variable
 quantitative et qual : une variable quantitative.
 
-2. Recherche d'une stratégie d'analyse
+2. Fondements mathématiques
+=================================
+
+Moyenne
+	* arithmétique/empirique : somme des valeurs/nombre de valeurs
+	* pondérée par les effectifs (E(x)) : somme(valeur * fréquence) avec fréquence=#occurrences/#total
+
+Médiane (moyenne milieu)
+	Valeur qui coupe la population en deux parties égales. On peut lire la médiane sur un graphique
+	(F(x) ou ecdf en R : la médiane se trouve au f(x)=0.5)
+
+	Dispersion des écarts absolus : somme des \|valeur-médiane\|
+
+Médiale
+	Valeur qui divise en deux parties la somme cumulée des valeurs (permet de savoir
+	combien d'individus sont en dessous/...).
+
+Mode
+	Valeur qui apparait le plus de fois.
+
+Quantiles
+	Il s'agit d'un découpage de la distribution en part égales (4=quartile,10=déciles, 100=centiles, ...).
+
+	Le quartile 3 (ou 3ème quartile) désigne ainsi la valeur séparant 3/4 de la distribution et le
+	dernier 1/4.
+
+3. Recherche d'une stratégie d'analyse
 ============================================
 
 J'essaye actuellement d'élaborer un plan pour analyser les données.
@@ -76,15 +112,18 @@ J'essaye actuellement d'élaborer un plan pour analyser les données.
 
 		* on va faire des tests pour vérifier notre modèle
 		* un test ne suffit pas à conclure
-		* il faudra ensuite tester le modèle sur un autre échantillon
+		* il faut déterminer des intervalles de confiance
 
-Découverte
+4. Découverte
 =========================
 
 Extraire un échantillon
 	On va généralement faire un échantillon (:code:`ech <- sample(data, size)`)
 	de 75% de nos données pour avoir une majorité de données servant à construire notre modèle (apprentissage) et un autre
 	set d'observations permettant de vérifier notre modèle (validation).
+
+	Il est important que toutes les valeurs de l'échantillon soient prises au hasard (même chance d'être prises)
+	sinon l'échantillon est biaisé.
 
 Gérer les valeurs NA
 	Vous pouvez voir le nombre de valeurs NA avec :code:`sum(is.na(ech$var))` (pour chaque
@@ -107,13 +146,35 @@ Fonctions utiles
 		* :code:`range()` : retourne le min et le max
 		* D'autres fonctions : :code:`var, sd, quantile, ...`
 
-Statistique descriptive
-=========================
+5. Statistique descriptive
+============================
 
-...
+Vous trouverez d'abord un rappel sur les lois (théorie) et leur fonctions associées en R.
 
-Statistiques inférentielle
-=============================
+Il est possible (lisibilité/sémantique/...)
+que vous vouliez transformer une variable quantitative en qualitative
+(ou inversement).
+
+Alternativement, vous pouvez vouloir changer le type d'une variable pour qu'il soit
+correctement utiliser par R.
+
+Dans le cas où vous n'auriez pas assez d'individus pour faire certains tests (partie
+suivante) avec la contrainte de 30 individus par exemple, vous pouvez
+fusionner vos données (entre autres).
+
+La partie fusion de données traite aussi du cas ou vos avez des données ayant étés
+rentrées à la main (notamment) et qui ont étés mal écrites (faute, accent manquant, ...).
+
+.. toctree::
+	 :maxdepth: 1
+
+		Lois de probabilités (rappels)   <files/lois>
+		Lois de probabilités en R        <files/rfunc>
+		Transformation de variables      <files/var_t>
+		Fusion de données                <files/fusion>
+
+6. Statistiques inférentielle
+===============================
 
 ...
 

@@ -29,10 +29,14 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/R.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/inutile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/inutile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/inutile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/inutile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/stats.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/stats.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/stats2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/stats3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/to_next.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/to_next.txt" afterDir="false" />
     </list>
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
     <list id="35a1cab6-097d-4a11-944c-f8e3831e6d1c" name="cours web ajouts" comment="" />
@@ -91,11 +95,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\functional\r\base" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\stats" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\functional\r\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\functional\r\exercices\intro" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\_notes\sqlnr1" />
       <recent name="C:\Users\quent\Documents\texas-res" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\_notes" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -332,7 +336,7 @@
       <workItem from="1612534693801" duration="10000" />
       <workItem from="1612546751406" duration="1522000" />
       <workItem from="1612611633750" duration="22445000" />
-      <workItem from="1612689599553" duration="2350000" />
+      <workItem from="1612689599553" duration="6290000" />
     </task>
     <servers />
   </component>
