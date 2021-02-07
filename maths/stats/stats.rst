@@ -194,6 +194,8 @@ fusionner vos données (entre autres).
 La partie fusion de données traite aussi du cas ou vos avez des données ayant étés
 rentrées à la main (notamment) et qui ont étés mal écrites (faute, accent manquant, ...).
 
+Il arrive généralement que l'on trie les valeurs, ceci ce fait avec :code:`sort`.
+
 .. toctree::
 	 :maxdepth: 1
 

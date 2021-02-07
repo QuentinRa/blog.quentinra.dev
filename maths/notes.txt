@@ -1,6 +1,8 @@
 ---------- outils
 
 https://www.wolframalpha.com/input/?i=cos%28x%29%2F%281%2Bsin%28x%29%29
+https://stackoverflow.com/questions/21192606/can-i-add-latex-packages-to-mathjax
+https://detexify.kirelabs.org/classify.html
 
 -------------- latex
 

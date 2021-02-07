@@ -87,54 +87,7 @@ entre les différentes variables: celui-ci est souvent exprimé par le coefficie
 qui est le carré du coefficient de corrélation. Le coefficient de détermination mesure donc
 la contribution d'une des variables à l'explication de la seconde.
 
-D1. Nous disons que X est une variable continue si sa "fonction de répartition" est continue (déjà
-définie plus haut).
-
-Il est intéressant de remarquer que la définition amène à ce que la probabilité qu'une
-variable aléatoire totalement continue prenne une valeur donnée est nulle! Donc ce n'est pas parce
-qu'un événement a une probabilité nulle qu'il ne peut arriver!!!
-
------------
-
-5. FONCTIONS DE DISTRIBUTIONS = loi
-Lorsque nous observons des phénomènes probabilistes, et que nous prenons note des valeurs prises par
-ces derniers et que nous les reportons graphiquement, nous observons toujours que les différentes
-mesures obtenues suivent une caractéristique courbe ou droite typique fréquemment reproductible.
-Dans le domaine des probabilités et statistiques, nous appelons ces caractéristiques des "fonctions de
-distribution" car elles indiquent la fréquence avec laquelle la variable aléatoire apparaît avec certaines
-valeurs.
-
-Ces fonctions sont en pratique bornées par ce que nous appelons "l'étendue de la distribution", ou
-"dispersion de la distribution", qui correspond à la différence entre la donnée maximale (à droite) et la
-donnée minimale (à gauche) des valeurs observées (max-min).
-
 ----------- 342
-
-D1. La relation mathématique qui donne la probabilité qu'a une variable aléatoire d'avoir une valeur
-donnée de la fonction de distribution est appelée "fonction de densité", "fonction de masse" ou encore
-"fonction marginale".
-
-D2. La relation mathématique qui donne la probabilité cumulée qu'a une variable aléatoire d'être
-inférieure ou égale à une certaine valeur est nommée la "fonction de répartition" ou "fonction
-cumulée".
-
-D3. Des variables aléatoires sont dites "indépendantes et identiquement distribuées" (i.i.d.) si elles
-suivent toutes la même fonction de distribution et qu'elles sont indépendantes...
-
----> P(A) = 1/N : "fonction discrète uniforme" (ou "loi discrète uniforme")
-E(X) = N+1/2
-E(X) = N^2-1/12
-
-----> FONCTION DE BERNOULLI
-Ainsi, une variable aléatoire X suit une "fonction de Bernoulli" (ou "loi de Bernoulli") si elle ne peut
-prendre que les valeurs 0 ou 1, associées aux probabilités p et q
-
-Remarquons que par extension, si nous considérons N événements où nous obtenons dans un ordre
-particulier k fois une des issues possible (réussite) et N-k l'autre (échec), alors la probabilité d'obtenir
-une telle série (de k réussites et N-k échecs ordonnés dans un ordre particulier) sera donnée par:
-P(x=k) : p^k q^{N-k}
-E(x) = p
-V(x) = p * q
 
 ----> FONCTION GÉOMÉTRIQUE
 La loi géométrique ou "loi de Pascal" consiste dans une épreuve de type Bernoulli, dont la probabilité
@@ -144,17 +97,6 @@ P(x=k) q^{k-1}*p
 
 E(x)= 1/p
 V(x)= (1-p)/p^2
-
-----> FONCTION BINOMIALE
-
-Si nous revenons maintenant à notre épreuve de Bernoulli. Plus généralement, tout N-uplet particulier
-formé de k succès et de N-k échecs aura pour probabilité (dans le cadre d'un tirage avec remise ou sans
-remise si la population est grande en première approximation...):
-P(x=k) = p^k q^{N-k} * (C^k_k)
-d'être tiré (ou d'apparaître) quel que soit l'ordre d'apparition des échecs et réussites.
-
-E(x) = np
-V(x) = p(1-p)/n
 
 ----> FONCTION BINOMIALE NÉGATIVE
 
@@ -252,19 +194,6 @@ y = ln(x)
 nous voyons que y suit une fonction de probabilité de type loi Normale de moyenne mu et de variance
 sigma^2 (moments de la loi Normale).
 
----> FONCTION UNIFORME CONTINUE
-
-Soient a < b . Nous définissons la fonction de distribution de la "fonction uniforme" (ou "loi uniforme")
-par la relation
-
-P(x) = 1/(b-a) indicatrice[a,b]
-
-E(x) : (a+b)/2
-V(x) : (b-a)^2/12
-
-Cette fonction est souvent utilisée en simulation dans les entreprises pour signaler que la
-variable aléatoire a des probabilités égales d'avoir une valeur comprise dans un certain intervalle.
-
 ---> FONCTION DE PARETO
 
 La "fonction de Pareto" (ou "loi de Pareto"), appelée aussi "loi de puissance" ou encore "loi scalante"
@@ -282,13 +211,6 @@ lambda * e^{-lambdax} * indicatrice[0,+inf]
 E(x) = 1/lambda
 V(x) = 1/lambda^2
 
----> FONCTION DE CAUCHY
-
-Soient X,Y deux variables aléatoires indépendantes suivant des lois Normales centrées réduites
-(variance unité et espérance nulle).
-
-Pas d'espérance.
-
 ---> LOI BÊTA
 ---> LOI FONCTION GAMMA
 
@@ -304,12 +226,6 @@ E(k) = 2k
 
 pour indiquer que la distribution de la variable aléatoire X est la loi du Khi-deux. Par ailleurs il est
 courant de nommer le paramètre k "degré de liberté" et de l'abréger "ddl".
-
----> FONCTION DE STUDENT T
-
-La "fonction de Student" (ou "loi de Student") de paramètre k est définie par la relation
-avec k étant le degré de liberté de la loi du Khi-deux sous-jacente à la construction de la fonction de
-Student comme nous allons le voir.
 
 ---> FONCTION DE FISHER
 

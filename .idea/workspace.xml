@@ -29,9 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/R.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats/files/fusion.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/files/fusion.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats/inutile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/inutile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/files/lois.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/files/lois.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/stats/stats.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/stats.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/stats/stats3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/stats3.txt" afterDir="false" />
     </list>
@@ -92,11 +91,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\functional\r\base" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\stats" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\functional\r\exercices" />
       <recent name="C:\Users\quent\Documents\texas-res\functional\r\exercices\intro" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\_notes\sqlnr1" />
-      <recent name="C:\Users\quent\Documents\texas-res" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -333,7 +332,7 @@
       <workItem from="1612534693801" duration="10000" />
       <workItem from="1612546751406" duration="1522000" />
       <workItem from="1612611633750" duration="22445000" />
-      <workItem from="1612689599553" duration="9611000" />
+      <workItem from="1612689599553" duration="12755000" />
     </task>
     <servers />
   </component>

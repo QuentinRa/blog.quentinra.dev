@@ -1,0 +1,41 @@
+========================================
+========================================
+==== Définitions
+========================================
+========================================
+
+-----> Fonction de répartition
+
+D2. La relation mathématique qui donne la probabilité cumulée qu'a une variable aléatoire d'être
+inférieure ou égale à une certaine valeur est nommée la "fonction de répartition" ou "fonction
+cumulée".
+
+D1. Nous disons que X est une variable continue si sa "fonction de répartition" est continue (déjà
+définie plus haut).
+
+Il est intéressant de remarquer que la définition amène à ce que la probabilité qu'une
+variable aléatoire totalement continue prenne une valeur donnée est nulle! Donc ce n'est pas parce
+qu'un événement a une probabilité nulle qu'il ne peut arriver!!!
+
+------> Densité
+
+D1. La relation mathématique qui donne la probabilité qu'a une variable aléatoire d'avoir une valeur
+donnée de la fonction de distribution est appelée "fonction de densité", "fonction de masse" ou encore
+"fonction marginale".
+
+========================================
+========================================
+==== LOI DE PROBABILITÉS
+========================================
+========================================
+
+----> FONCTION DE BERNOULLI
+Ainsi, une variable aléatoire X suit une "fonction de Bernoulli" (ou "loi de Bernoulli") si elle ne peut
+prendre que les valeurs 0 ou 1, associées aux probabilités p et q
+
+Remarquons que par extension, si nous considérons N événements où nous obtenons dans un ordre
+particulier k fois une des issues possible (réussite) et N-k l'autre (échec), alors la probabilité d'obtenir
+une telle série (de k réussites et N-k échecs ordonnés dans un ordre particulier) sera donnée par:
+P(x=k) : p^k q^{N-k}
+E(x) = p
+V(x) = p * q
