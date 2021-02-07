@@ -149,6 +149,4 @@ library(olsrr) ols_dsrvsp_plot(fit)
 L’observation 7 est aberrante (et influente).
 L’observation 2 est juste influente.
 
-https://vincentarelbundock.github.io/
-
 Stop page 302/451

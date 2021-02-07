@@ -26,30 +26,6 @@ Améliorer nos graphiques
 6. Statistique inférentielle
 ==============================
 
-QQ plot/Diagramme Quantile-Quantile
-	Si les observations et la distribution sont la même, alors les points
-	tourneront autour de la droite. Cela peut être un moyen utile de vérifier un test.
-
-	On utilisera les fonctions comme :code:`qqplot, qqline, qq, ...`. :code:`datax=TRUE` est utile
-	pour mettre en fonction de l'axe x.
-
------> DIAGRAMME QUANTILE-QUANTILE
-
-Une autre manière de juger qualitativement de l'ajustement de données expérimentales avec une loi
-théorique (quelle qu'elle soit!!!) est l'utilisation d'un "diagramme quantile-quantile".
-
-L'idée est assez simple, il s'agit de comparer les données expérimentales, aux données théoriques
-supposées suivre une loi donnée.
-
-Et bien évidemment on peut comparer les quantiles observés à toute loi théorique supposée. Plus les
-points seront alignés sur la droite, meilleur sera l'ajustement! C'est très visuel, très simple et beaucoup
-utilisé par les non spécialistes en statistiques dans les entreprises.
-
-Test paramétriques et non paramétriques (distribution free)
-	Un test paramétrique demande a ce que la distribution suive une loi normale
-	ce qui est le cas pour de nombreux tests (anova, Student T, ...). Les
-	autres, dits non paramétriques, sont moins puissants mais ne demande pas ce prérequis.
-
 Test d’indépendance
 ------------------------
 

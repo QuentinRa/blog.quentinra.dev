@@ -258,6 +258,9 @@ Il est généralement pratique de tester des variables quantitatives après
 leur avoir appliqué une variable qualitative (fait des groupes selon un critère
 comme les notes du BAC par filière) pour étudier la répartition dans un plus petit ensemble.
 
+Dans la prolongation de la recherche de caractéristiques de vraisemblance,
+le diagramme QQ-plot ou Quantile-Quantile permet de comparer notre distribution à une distribution existante.
+
 Quelques notes
 
 	* on se rappelle que pour une loi de poisson, moyenne = variance = paramètre
@@ -272,7 +275,7 @@ Cette partie contient une liste d'outils pour décrire votre échantillon.
 		Diagrammes a bandes (var qual/~quant)     <desc/barplot>
 		Boîtes à moustaches (quantiles, ...)      <desc/boxplot>
 		Tableaux croisés (plusieurs variables)    <desc/qhpvt>
-		Quantile-Quantile (QQ plot)               <desc/qhpvt>
+		Quantile-Quantile (QQ plot)               <desc/qq>
 
 7. Statistiques inférentielle
 ===============================
@@ -285,7 +288,7 @@ la distribution semble cohérent.
 On distingue deux types de test
 
 	* paramétriques : la loi doit être normale/gaussienne
-	* non-paramétriques : les autres tests
+	* non-paramétriques (distribution free) : les autres tests
 
 Je distingue les tests préliminaire (test
 de normalité, ...) qui servent à savoir si ont devra faire
@@ -302,7 +305,8 @@ ceux que j'ai appris.
 :code:`Note` : les tests sont généralement fait avec alpha=0.95 donc fiable
 à 95% mais attention à vérifier si le test est valide. Pour cela en R, regarder
 la :code:`p-value` dans le résultat, si elle est en dessous de 5% alors le test
-est rejeté sinon il a de fortes chances d'être correct.
+est rejeté sinon il a de fortes chances d'être correct (attention, on considère alpha=0.05
+mais ce n'est pas toujours le cas).
 
 .. toctree::
 	 :maxdepth: 1
@@ -357,3 +361,6 @@ et essayer de vérifier.
 	* https://openclassrooms.com/fr/courses/4525256-initiez-vous-au-langage-r-pour-analyser-vos-donnees/6250873-utilisez-les-facteurs
 	* https://fr.wikibooks.org/wiki/Programmer_en_R
 	* http://www.math-evry.cnrs.fr/_media/members/pneuvial/demstat/201411_ds1_04.testsechapp.pdf
+	* https://vincentarelbundock.github.io/
+	* https://www.lmd.polytechnique.fr/~sturquet/teaching_data/mu001/chap6.pdf
+	* https://fr.sawakinome.com/articles/education/difference-between-parametric-and-nonparametric-test.html
