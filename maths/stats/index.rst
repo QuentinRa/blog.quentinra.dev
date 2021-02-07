@@ -177,7 +177,7 @@ Gérer les valeurs NA
 
 Fonctions utiles
 		* :code:`summary()` : le nombre de NA, les moyennes, ...
-		* :code:`view()` : afficher (graphiquement)
+		* :code:`View()` : afficher (graphiquement)
 		* :code:`head()` : le début donc les premières valeurs
 		* :code:`dim()` : savoir combien de lignes=individus/colonnes=variables on manipule
 		* :code:`names()` : savoir les noms des variables manipulées
@@ -364,3 +364,8 @@ et essayer de vérifier.
 	* https://vincentarelbundock.github.io/
 	* https://www.lmd.polytechnique.fr/~sturquet/teaching_data/mu001/chap6.pdf
 	* https://fr.sawakinome.com/articles/education/difference-between-parametric-and-nonparametric-test.html
+	* http://www.dagnelie.be/
+	* https://www.math.univ-toulouse.fr/~xgendre/ens/l3sid/L3SID_SE_TP1.pdf
+	* https://odr.inra.fr/intranet/carto/cartowiki/index.php/Statistiques_descriptives_avec_R
+	* https://larmarange.github.io/analyse-R/statistique-univariee.html
+	* http://www.sthda.com/french/wiki/logiciel-r

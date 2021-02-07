@@ -2,34 +2,6 @@ R Statistical Software
 Vincent ISOZ, Daname KOLANI
 --------------------------------
 
-packages
---------------
-
-Nombre très petit R renvoi des * (cf régression linéaire univariée, ...)
-options(digits= ) : précision nombres à virgule
-options(show.signif.stars=FALSE)
-
-(.packages()) : packages actuellement utilisés par la session
-
-dataset
--------------
-
-Trouver des Dataset
-data(package = .packages(all.available = TRUE))
-
-https://www.qlik.com/us/products/qlik-sense/data-sources
-
-rdata
----------------
-
-Les fichiers *.Rdata (fichiers binaires très rapides à charger et à enregistrer) vont stocker toutes
-les variables, dates frames, listes, matrices, vecteurs, etc. que vous avez créés ou modifiés pendant
-une session de travail R.
-
-save(variable, file = "path.Rdata");
-save.image(file = "path.Rdata"); # toutes
-load(file = "path.Rdata");
-
 Fonctions maths
 -----------------
 
@@ -71,7 +43,8 @@ summary_stats( ) (descriptr)
 if faut utiliser type=2
 
 Dans R, nous aurons alors les règles suivantes:
-• Si le skewness est nul, la distribution est symétrique (cela ne signifiant pas que la symétrie
+
+Si le skewness est nul, la distribution est symétrique (cela ne signifiant pas que la symétrie
  a lieu sur un pic de la distribution car dans le cas bimodal l'axe
  de symétrie peut-être entre les deux valeurs modales symétriques).
  Si le skewness est positif, la distribution (la valeur modale/médiane)
@@ -79,7 +52,8 @@ Dans R, nous aurons alors les règles suivantes:
   Si le skewness est négatif, la distribution (la valeur modale/médiane) est penchée à gauche
    (ou il y a des valeurs extrêmes à gauche)
 
-• Si le kurtosis est nul (mesokurtique) alors l'aplatissement est similaire à celui d'une distribution
+
+Si le kurtosis est nul (mesokurtique) alors l'aplatissement est similaire à celui d'une distribution
  Normale. Si la valeur d'excès est supérieure à 0 alors la distribution d'intérêt
   (leptokurtique) est alors plus haute que celle d'une distribution Normale à moyenne égale
    (inversement - platikurtique - si l'excès de kurtosis est négatif bien évidemment)
@@ -98,3 +72,105 @@ Re(x) : partie réelle, Img(x) : partie imaginaire
 Mod, Arg, Conj
 
 Stop page 172
+
+------------------------------------------------------------
+
+crossprod() : produit scalaire
+
+setNames( ) ou unname( ) : noms de colonnes ?
+
+moyenne pondérée : weighted.mean( )
+Voyons maintenant pour la moyenne Winsorisée en utilisant la fonction winsor.mean( ) du package psych:
+
+print( ) , paste( ) , cat( ) , nchar( ) , substring( ) , strsplit( ) , toupper( ) , tolower( ) ,
+gsub("a","b", str) // remplacer "a" par "b" dans str
+
+trimws
+
+factor(..., ordered=TRUE) sinon par ordre alphabétique
+
+subset(data, condition) par exemple var (de ech$var) != valeur
+
+Enfin on a le cas classique dans le Text Mining qui consiste à supprimer les accents avec la fonction
+native iconv( ) : (..., to = "ASCII//TRANSLIT"
+
+as.Date
+
+Maintenant revenons sur des exemples simples avec les commandes Sys.Date( ) , Sys.Timezone( ) ,
+format( ) , weekdays( ) et months( ) , ISOdate( ) , as.numeric( ) , difftime( )
+
+Il y aussi la fonction week( ) et isoweek( ) du package lubridate qui retourne le numéro
+de la semaine mais avec une subtilité donc il faut se rappeler
+
+Sinon pour gérer des dates dans d'autres langues, on installera le package lubridate:
+
+Enfin dans le cours théorique dans le cas des copulas Gaussien, nous avons introduit le
+concept de décomposition de Cholesky. Vérifions que nous obtenons bien la même chose que
+dans le cours théorique avec la fonction chol( ) :
+
+Les listes, créées via la fonction list( ) , sont considérées souvent comme le type de données le plus complexe de
+R car on peut y mélanger des vecteurs, des matrices et des textes en une seule entité (très pratique plutôt que de
+renvoyer lors de scripts des variables à n'en plus finir à l'utilisateur!).
+
+array()
+
+plot/curve add=TRUE
+
+Nous allons voir par la suite comment gérer certaines fonctions de distributions classiques dans les
+ petites classes et démontrées dans le cours théorique. Cependant, avant cela, il convient d'abord de voir
+ une commande particulière que l'on écrit set.seed( ) .
+
+ set.seed(1)
+ set.seed(NULL)
+
+dist : distance
+
+Donc là évidemment on peut jouer avec énormément de combinaisons mais dans l'idée voici un exemple de base avec
+filtres multiples avec des conditions ET ainsi que OU en utilisant la commande which() :
+
+sample( replace=TRUE) : si plus petit
+
+Nous avons également du package sampling la fonction srswor( ) qui correspond
+à ce que nous avons vu dans le cours théorique: srswor(size, nrow(data))
+
+Et on peut s'amuser à faire un ranking avec la commande rank( ) et ajouter cette colonne au data frame
+
+En utilisant la commande duplicated( ) vous pouvez chercher les doublons
+se trouvant dans un data frame dans ou une ou plusieurs colonnes.
+
+na.omit(data)
+na.rm = TRUE
+
+Nous allons voir ici en quoi la package VIM peut nous aider à analyser les valeurs manquantes d'un jeu de données.
+
+missing <- aggr()
+barmiss(missing) // graphique
+
+Comme la question est fréquemment demandée dans les formations, voici – avant de passer à l'étude du package dplyr
+- un résumé concernant les différences entre ses trois fonctions que l'on retourve fréquemment (si nous omettons
+vapply(), tapply(), eapply( ), rollapply()8).
+
+base::by Apply a function to a data frame split by Factors
+
+ Permet d'appliquer une fonction R ou personnelle sur une ensemble de colonnes d'un data frame
+ par catégories d'une variable.
+
+base::apply(array/matrix, margin, fun, …) Apply Functions Over Array Margins
+
+Permet d'appliquer une fonction R ou personnelle sur une ensemble de colonnes
+d'une matrice. Comme nous l'avons montré avec les exemples aux pages 211, 1734 ou encore 1998.
+
+base::lapply(list/vector, fun, …) Apply Functions and return a list
+
+Permet d'appliquer une fonction R ou personnelle sur une liste et renvoie une liste. C'est un cas
+relativement rare mais nous le lecteur pourra en voir un exemple à la page 1903. Remarque: Passer le
+paramètre simplify=FALSE à sapply( ) donne le même résultat que lapply: sapply(x, fun, simplify=F)
+
+base::sapply(list/vector, fun, …) Apply Functions and return a vector (or optionaly a list)
+
+Permet d'appliquer une fonction R ou personnelle sur une liste vecteur et renvoie une liste ou vecteur. C'est le cas le plus utilisé dans R et lecteur pourra en voir des exemples à la page 419, 178, 1701, 1985.
+Mais pour ceux qui ne souhaiteraient pas avoir à reparcourir toutes les pages mentionnées en référence, voici un résumé francophone repris de l'excellent article de blog suivant de Neil Saunders:
+
+https://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/
+
+============================= stop page 958
