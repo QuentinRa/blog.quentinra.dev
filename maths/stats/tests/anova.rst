@@ -6,6 +6,10 @@ Anova a permet de comparer une ou plusieurs variables quantitatives
 selon une ou plusieurs variables qualitatives. On va donc faire
 des groupes de population selon un ou plusieurs critères.
 
+Plus précisément, il s'agit d'un test pour étudier la moyenne d'un échantillon. Le test
+va regarder la variance pour déterminer si l'écart sur la moyenne est due à l'échantillon
+ou au fait que les échantillons sont réellement différentes.
+
 | **Prérequis** : test normalité, égalité des variances
 
 Avant de faire une anova, vous pouvez observer l'échantillon

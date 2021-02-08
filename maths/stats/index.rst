@@ -287,7 +287,7 @@ la distribution semble cohérent.
 
 On distingue deux types de test
 
-	* paramétriques : la loi doit être normale/gaussienne
+	* paramétriques : la loi doit être normale ou prérequis d'une moyenne/variance/corrélation
 	* non-paramétriques (distribution free) : les autres tests
 
 J'ai séparés les tests en 5 catégories plutôt que deux
@@ -313,11 +313,12 @@ mais ce n'est pas toujours le cas).
 .. toctree::
 	 :maxdepth: 1
 
-		Tests préliminaires            <tests/pre>
-		Tests de vraisemblance         <tests/seams>
-		Tests appariés                 <tests/app>
-		Analyse de la variance (Anova) <tests/anova>
-		Techniques de Bootstrap        <tests/mdb>
+		Tests préliminaires                  <tests/pre>
+		Tests de vraisemblance               <tests/seams>
+		Tests appariés                       <tests/app>
+		Analyse de la variance (Anova)       <tests/anova>
+		Techniques de Bootstrap              <tests/mdb>
+		ANCOVA (variables non indépendantes) <tests/ancova>
 
 8. Incertitudes et robustesse
 ===============================

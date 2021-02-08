@@ -86,3 +86,23 @@ correction sur population finie" et il a pour effet de réduire l'erreur-standar
 grand.
 
 (multiplie par fcp)
+
+-------------->
+
+D1. "L'intervalle de tolérance" (ou "intervalle de fluctuation") est un intervalle contenant un certain
+pourcentage (souvent 68.26, 95.44 ou 99.73%) des individus d'une population de mesures.
+D2. "L'intervalle de confiance" pour un échantillon de moyenne contient l'intervalle de valeur à un
+niveau de confiance donné (souvent 90, 95 ou 99%) de l'espérance (moyenne vraie) de la
+population.
+D3. "L'intervalle de prédiction" permet de déterminer un intervalle d'un valeur individuelle basée sur la
+connaissance de la moyenne échantillonnale et de l'écart-type de la population.
+
+-------------->
+
+R1. Le terme est souvent indiqué dans l'industrie par l'abréviation SST signifiant en anglais
+"Sum of Squares Total" ou plus rarement TSS pour "Total Sum of Squares".
+R2. Le terme est souvent indiqué dans l'industrie par l'abréviation SSB signifiant en anglais
+"Sum of Squares Between (samples)" ou plus rarement SSk pour "Sum of Squares Between
+treatments".
+R3. Le terme est souvent indiqué dans l'industrie par l'abréviation SSW signifiant en anglais
+"Sum of Squares Within (samples)" ou plus rarement SSE pour "Sum of Squares due to Errors".

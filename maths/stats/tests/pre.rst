@@ -46,8 +46,11 @@ de Bartlett
 Tests d’égalité de moyennes
 -----------------------------
 
+Un test de la moyenne permet généralement de déterminer si deux échantillons sont différents
+(moyenne différente) ou sont assez semblables. On peut utiliser un test ANOVA pour approfondir la recherche.
+Généralement on regarde la médiane plutôt que la moyenne car je crois que ça marche mieux.
+
 | **Objectif** : vérifier si la moyenne (mu) est la même
-| **Utilité** : ...
 | **Prérequis** : normalité ou plus de 30 individus
 
 de Student T à moyenne fixée (vérifier si la moyenne vaut mu)
@@ -69,9 +72,14 @@ Tests d’égalité de médiane
 ----------------------------------
 
 | **Objectif** : Tester si la médiane (med) est la même
+| **Utilité** : voir explication sur la moyenne
 
 avec le test des signes
 	| **Fonction** (package BSDA) : :code:`SIGN.test(data, md = med, alternative = "two.sided", conf.level = 0.95)`)
+
+	On considère deux lois, on compare les classements et on met un + si
+	un individu monte, - s'il descends et on le retire s'il ne bouge pas. S'il y a autant de + que de - alors la
+	médiane de la distribution n'a pas changée.
 
 (SignedRank) de Wilcoxon (:code:`wilcox.test(data, mu = mu, alternative = "two.sided", conf.level = 0.95)`)
 	| **Robustesse** : population symétrique
