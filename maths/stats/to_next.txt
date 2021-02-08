@@ -26,28 +26,6 @@ Améliorer nos graphiques
 6. Statistique inférentielle
 ==============================
 
-Test d’indépendance
-------------------------
-
-:code:`Motivation` : variables qualitatives indépendantes si p-value acceptable.
-
-du Khi deux
-	| **Fonction** : :code:`chisq.test(tab,correct=FALSE)`)
-	| **Condition** : tab de 2 variables qualitatives
-	| **Robustesse** : au moins 5 individus
-
-	On peut regarder le :code:`$expected` pour vérifier ou encore les résidus
-	:code:`$residuals` (valeur ij élevé = cette valeur joue un rôle élevé dans la liaison des variables)
-	calculés selon la formule :math:`(observed - expected) / sqrt(expected)`.
-
-	Le correct corresponds à la correction de continuité (T=oui, F=non).
-
-de Fisher
-	| **Fonction** : :code:`fisher.test(tab)`
-	| **Condition** : tab de 2 variables qualitatives
-
-	Très très gourmand en ressources.
-
 Tests d’égalité de médiane
 ----------------------------------
 
@@ -84,38 +62,3 @@ Test (de nullité) du coefficient de corrélation linéaire
 	On peut utiliser :code:`corrplot(cor(data), method="circle")` ou
 	:code:`corrplot(cor(data), method="number")` du package :code:`corrplot`
 	pour avoir un aperçu graphique.
-
-ANOVA : analyse de la variance
-------------------------------------
-
-Anova a permet de comparer une ou plusieurs variables quantitatives
-selon une ou plusieurs variables qualitatives. On va donc faire
-des groupes de population selon un ou plusieurs critères.
-
-Anova à un critère (n quantitative, 1 qualitative)
-	| :code:`Prérequis` : test normalité, égalité des variances (peuvent être omis sous conditions)
-
-	.. code:: R
-
-		anova <- aov(data ~ qualif, data=data)
-		summary(anova) # si Pr(>F) < 5% alors différence significative
-
-	Le test compare les moyennes et si il est valide, alors le type (qualification)
-	a une influence sur la variable quantitative (data, un dataframe de valeurs).
-
-	Tests (des étendues) de Tukey/test DSH (:code:`TukeyHSD(anova)`)
-		Ce test permet de voir si la différence des moyennes est significative ou non.
-		On vérifie que "p adj" est supérieur à 5% sinon le test n'est pas valide.
-
-Anova à deux critères (n quantitative, 2 qualitative)
-	| :code:`Prérequis` : test normalité, égalité des variances
-	| :code:`Exemple` : (Alcool,vitesse) sur risque d’accident
-
-	.. code:: R
-
-		anova <- aov(data ~ qualif1+qualif2+qualif1:qualif2, data=data)
-		summary(anova) # si Pr(>F) < 5% alors différence significative
-
-	On fait un test anova, sauf qu'on demande de faire data par qualification1,
-	data par qualification2 puis data par qualification1 et qualification2
-	(testez `qualif1:qualif2` pour voir le vecteur utilisé).

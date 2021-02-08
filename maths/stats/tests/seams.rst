@@ -43,15 +43,16 @@ Test de comparaison/sur les proportions
 -----------------------------------------
 
 | **Objectif** : trouver la proportion d'individus suivant un certain critère
-| **Utilité** : vérifier si loi binomiale
+| **Utilité** : vérifier si loi binomiale, % d'erreurs, ...
 
-	Cas 1 proportion : on a reçu x succès sur n, p=proba et on veut vérifier si c'est vrai.
+	Cas 1 échantillon : on a reçu x succès sur n, p=proba et on veut vérifier si c'est vrai.
 		| **Fonction** : :code:`prop.test(x,n,p=proba,correct=FALSE)`
-		| **Fonction** : :code:`binom.test`
+		| **Fonction** : :code:`binom.test(x,n, p=proba)`
 
-	Cas 2 proportions : on a x succès sur N1 et y sur N2
+	Cas 2 échantillons : on a x succès sur N1 et y sur N2
 		| **Fonction** : :code:`prop.test(x=c(x,y), n=c(N1,N2),correct=FALSE)`
-
+		| **Fonction** : :code:`prop.test(as.table(cbind(c(N1,x), c(N2,y))),correct=FALSE)`
+		| **Fonction** (package exactmeta) : :code:`study.exact(x,y,N1,N2, BB.grdnum=10000)`
 
 Goodness-of-Fit Test
 ------------------------------

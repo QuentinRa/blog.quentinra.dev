@@ -165,3 +165,14 @@ toutes positives définies dans une seule colonne et utilisons la commande power
 
 Transformations de Johnson (Yeo-Johnson)
 JonhsonFit( ) du package SuppDists:
+
+-------------------- ?
+
+Intervalle de confiance de l'écart-type
+sigma2.test(ech) du package sigma2tools
+
+plot.design(comme_aov) === boxplot
+
+Nous devons donc restructurer les données pour R avec la fonction stack( )
+en gros on a des colonnes A et B est des valeurs. On
+ça va créer deux colonnes avec A = valeurs et B = nom de la colonne d'avant donc A/B.

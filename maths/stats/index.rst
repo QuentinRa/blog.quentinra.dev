@@ -315,9 +315,8 @@ mais ce n'est pas toujours le cas).
 
 		Tests préliminaires            <tests/pre>
 		Tests de vraisemblance         <tests/seams>
-		Tests paramétriques (only)     <tests/par>
-		Tests non-paramétriques (only) <tests/n_par>
 		Tests appariés                 <tests/app>
+		Analyse de la variance (Anova) <tests/anova>
 
 8. Incertitudes et robustesse
 ===============================
