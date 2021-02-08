@@ -31,40 +31,22 @@ Test d’indépendance
 
 :code:`Motivation` : variables qualitatives indépendantes si p-value acceptable.
 
-du Khi deux (:code:`chisq.test(tab,correct=FALSE)`)
-	| :code:`Prérequis` : tab de 2 variables qualitatives, au moins 5 individus
+du Khi deux
+	| **Fonction** : :code:`chisq.test(tab,correct=FALSE)`)
+	| **Condition** : tab de 2 variables qualitatives
+	| **Robustesse** : au moins 5 individus
 
 	On peut regarder le :code:`$expected` pour vérifier ou encore les résidus
-	:code:`$residuals` (valeur ij élevé = joue un rôle élevé dans la liaison des variables)
+	:code:`$residuals` (valeur ij élevé = cette valeur joue un rôle élevé dans la liaison des variables)
 	calculés selon la formule :math:`(observed - expected) / sqrt(expected)`.
 
 	Le correct corresponds à la correction de continuité (T=oui, F=non).
 
-de Fisher (:code:`fisher.test(tab)`)
-	| :code:`Prérequis` : tab de 2 variables qualitatives
+de Fisher
+	| **Fonction** : :code:`fisher.test(tab)`
+	| **Condition** : tab de 2 variables qualitatives
 
-	Très gourmand en ressources, préférez le célèbre test du Khi-Deux.
-
-Test d’adéquation du Khi deux
---------------------------------
-
-*Également appelé test de conformité*.
-
-| :code:`Motivation` : tester si une distribution inconnue est de la forme d'une loi connue.
-| :code:`chisq.test(observations , p = théorie)`
-
-L'idée est d'observer la différence entre la théorie et nos valeurs.
-
-On a généralement deux lois X (1,...,p) et Y (1, ..., q) alors on a une loi du Khi Deux
-qui suit (p-1)(q-1) degrés de liberté (ou alors k-r-1 avec k groupes/classes, r paramètres estimés).
-
-On note df le degré de liberté qu'il faut vérifier. Si R a échoué
-a trouvé le bon degré, on devra faire le calcul manuellement.
-
-.. code:: r
-
-	> temp <- sum((observed-expected)^2/expected)
-	> res <- 1-pchisq(temp, df=...vrai_df...)
+	Très très gourmand en ressources.
 
 Tests d’égalité de médiane
 ----------------------------------

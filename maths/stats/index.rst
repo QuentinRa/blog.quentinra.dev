@@ -290,9 +290,11 @@ On distingue deux types de test
 	* paramétriques : la loi doit être normale/gaussienne
 	* non-paramétriques (distribution free) : les autres tests
 
-Je distingue les tests préliminaire (test
-de normalité, ...) qui servent à savoir si ont devra faire
-un test de type paramétrique ou de type non-paramétrique.
+J'ai séparés les tests en 5 catégories plutôt que deux
+pour essayer de grouper ceux sur les données appariées, ceux
+qui permettent d'évaluer la vraisemblance, ceux qui permettent
+de tester des propriétés (vraisemblance aussi mais plus indirecte) et enfin
+ceux qui sont dans aucune des trois catégories précédentes.
 
 Dans le cas ou vous auriez des données appariés, c'est-à-dire des jeux de données
 issus d'une même population (par exemple à deux moments différents, ...) alors
@@ -311,10 +313,11 @@ mais ce n'est pas toujours le cas).
 .. toctree::
 	 :maxdepth: 1
 
-		Tests préliminaires       <tests/pre>
-		Tests paramétriques       <tests/par>
-		Tests non-paramétriques   <tests/n_par>
-		Tests appariés            <tests/app>
+		Tests préliminaires            <tests/pre>
+		Tests de vraisemblance         <tests/seams>
+		Tests paramétriques (only)     <tests/par>
+		Tests non-paramétriques (only) <tests/n_par>
+		Tests appariés                 <tests/app>
 
 8. Incertitudes et robustesse
 ===============================
@@ -369,3 +372,4 @@ et essayer de vérifier.
 	* https://odr.inra.fr/intranet/carto/cartowiki/index.php/Statistiques_descriptives_avec_R
 	* https://larmarange.github.io/analyse-R/statistique-univariee.html
 	* http://www.sthda.com/french/wiki/logiciel-r
+	* https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Test_statistique
