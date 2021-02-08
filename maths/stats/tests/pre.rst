@@ -65,11 +65,25 @@ Test Z à une moyenne, unilatéral gauche
 Test Z à deux moyennes
 	| **Fonction** (package BSDA) : :code:`z.test(ech, alternative = "two.sided", mu = mu, conf.level = 0.95)`
 
-Tests (des étendues) de Tukey/test DSH
-	| **Fonction** : :code:`TukeyHSD(anova)`
+Tests d’égalité de médiane
+----------------------------------
 
-	Ce test permet de voir si la différence des moyennes est significative ou non.
-	On vérifie que "p adj" est supérieur à 5% sinon le test n'est pas valide.
+| **Objectif** : Tester si la médiane (med) est la même
+
+avec le test des signes
+	| **Fonction** (package BSDA) : :code:`SIGN.test(data, md = med, alternative = "two.sided", conf.level = 0.95)`)
+
+(SignedRank) de Wilcoxon (:code:`wilcox.test(data, mu = mu, alternative = "two.sided", conf.level = 0.95)`)
+	| **Robustesse** : population symétrique
+
+	Test plus puissant que le celui des signes.
+
+Mann–Whitney U (comparaison de 2 médianes)
+	| **Fonction** : :code:`wilcox.test(data,alternative = "two.sided", conf.level = 0.95)`
+	| **Robustesse** : 2 échantillons n1 et n2 avec n1+n2>30, fonctions de répartition (ecdf) ne se croisent pas.
+	| **Note** : moyenne :math:`n1(n1+n2+1)/2` et variance :code:`n1n2(n1+n2+1)/12`
+
+	Aussi appelé Mann–Whitney–Wilcoxon (MWW), Wilcoxon rank-sum test, ou Wilcoxon–Mann–Whitney test.
 
 Test d’indépendance
 ------------------------

@@ -1,9 +1,0 @@
-Tests d’égalité de moyennes
----------------------------------
-
-| **Objectif** :
-| **Utilité** :
-
-
-....
-

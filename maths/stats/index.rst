@@ -2,7 +2,7 @@
 Statistiques et R
 ===================================
 
-| :math:`\color{grey}{Version \ 0.12.37}`
+| :math:`\color{grey}{Version \ 0.15.42}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 07/02/2021}`
 
 Les prérequis sont de savoir lire du R (concepts de base et un peu avancés).
@@ -317,6 +317,7 @@ mais ce n'est pas toujours le cas).
 		Tests de vraisemblance         <tests/seams>
 		Tests appariés                 <tests/app>
 		Analyse de la variance (Anova) <tests/anova>
+		Techniques de Bootstrap        <tests/mdb>
 
 8. Incertitudes et robustesse
 ===============================
@@ -343,6 +344,7 @@ et essayer de vérifier.
 	* Christophe MOUILLERON (enseignant à l'ENSIIE)
 	* "Initiation à R" de Eric Preud’homme (Université du Havre)
 	* "OperaMagistris, éléments de mathématiques appliqués" de Vincent ISOZ
+	* "R programming" de Vincent ISOZ, Daname KOLANI
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
@@ -372,3 +374,4 @@ et essayer de vérifier.
 	* https://larmarange.github.io/analyse-R/statistique-univariee.html
 	* http://www.sthda.com/french/wiki/logiciel-r
 	* https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Test_statistique
+	* https://lepcam.fr/index.php/les-etapes/test/

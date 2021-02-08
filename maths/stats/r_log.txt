@@ -80,6 +80,8 @@ ggplot(essai, aes(x = Age,fill=Recodx)) + geom_dotplot(dotsize = 3, binwidth=0.9
 
 plot legend.text
 
+On peut voir graphiquement avec :code:`plot (default), ggplot (ggplot2), ...`
+
 ===============================
 ======= Maths
 ===============================
@@ -161,7 +163,7 @@ polyval ???
 ------------------- normaliser des données
 
 Transformation de Box-Cox
-toutes positives définies dans une seule colonne et utilisons la commande powerTransform( ) du package car:
+toutes positives définies dans une seule colonne et utilisons la commande powerTransform() du package car:
 
 Transformations de Johnson (Yeo-Johnson)
 JonhsonFit( ) du package SuppDists:
@@ -176,3 +178,6 @@ plot.design(comme_aov) === boxplot
 Nous devons donc restructurer les données pour R avec la fonction stack( )
 en gros on a des colonnes A et B est des valeurs. On
 ça va créer deux colonnes avec A = valeurs et B = nom de la colonne d'avant donc A/B.
+
+interaction.plot(qual, qual, quant) : on peut inverser les qual pour voir
+plotmeans()

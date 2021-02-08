@@ -28,7 +28,7 @@ Anova à deux critères/facteurs (n quantitative, 2 qualitative)
 
 		anova <- aov(ech ~ qual1+qual2, data=ech) # ech par qual1 et ech par qual2
 		# ou
-		anova <- aov(ech ~ qual1*qual2, data=ech) # ech par (qual1 produit cartésien qual2)
+		anova <- aov(ech ~ qual1*qual2, data=ech) # équivalent de la ligne suivant (je crois)
 		# ou
 		anova <- aov(ech ~ qual1+qual2+qual1:qual2, data=ech) # voir explication après
 		# puis
@@ -37,3 +37,16 @@ Anova à deux critères/facteurs (n quantitative, 2 qualitative)
 	On test l'échantillon ech groupé selon qual1, puis groupé selon qual2 puis groupé
 	selon qual1:qual2 (qual1 et qual2) qui corresponds à la valeur i de qual2 mise à la suite de la valeur
 	i de qual1.
+
+Tests (des étendues) de Tukey/test DSH
+	| **Fonction** : :code:`TukeyHSD(anova)`
+
+	Ce test permet de voir si la différence des moyennes est significative ou non.
+	On vérifie que "p adj" est supérieur à 5% sinon le test n'est pas valide.
+
+Test de simultanéité Dunnett
+	| **Fonction** (package multicomp) : :code:`glht(anova)`
+
+	Ce test permet de voir si la différence des moyennes est significative ou non. Attention,
+	le test utilise un truc aléatoire donc il faut fixer la seed sinon les résultats sont différents
+	à chaque appel.

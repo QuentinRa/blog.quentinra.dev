@@ -67,3 +67,12 @@ Minimisation du khi-deux
 Méthode du maximum de vraisemblance
 	| **Fonction** (package vcd) : :code:`goodfit(ech, type = "...", method = "ML")`
 	| **Note** : tout pareil que pour la minimisation du khi-deux
+
+Test de distribution
+------------------------
+
+ANOVA unidirectionnelle sur les rangs (Test de Kruskal et Wallis)
+	| **Fonction** : :code:`kruskal.test(quant ~ qual, data = ech)`
+	| **Robustesse** : échantillons d'au moins 15 individus
+
+	Il s'agit de tester si des échantillons sont issus d'une même distribution.

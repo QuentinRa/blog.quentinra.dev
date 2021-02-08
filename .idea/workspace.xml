@@ -28,19 +28,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/maths/stats/tests/anova.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/stats/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/stats/r_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/r_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats/tests/par.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/stats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/stats.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/stats2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/stats2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/anova.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/anova.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/stats/tests/pre.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/pre.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/stats/tests/seams.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/seams.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats/to_next.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/to_next.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/tmp.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/to_next.txt" beforeDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
     <list id="35a1cab6-097d-4a11-944c-f8e3831e6d1c" name="cours web ajouts" comment="" />
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
+    <list id="ad5bce8d-0b21-4e2e-acc4-b41fcc8b0f63" name="merge des tests (3)" comment="" />
     <list id="91f544b9-32a5-44b3-88b5-61cf542db8de" name="merge du cours terminé" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +117,7 @@
       <changelist id="35a1cab6-097d-4a11-944c-f8e3831e6d1c" name="cours web ajouts" comment="" />
       <changelist id="91f544b9-32a5-44b3-88b5-61cf542db8de" name="merge du cours terminé" comment="" />
       <changelist id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
+      <changelist id="ad5bce8d-0b21-4e2e-acc4-b41fcc8b0f63" name="merge des tests (3)" comment="" />
       <created>1603031250187</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -342,7 +348,7 @@
       <workItem from="1612709932876" duration="13089000" />
       <workItem from="1612730205658" duration="3790000" />
       <workItem from="1612740285271" duration="22000" />
-      <workItem from="1612787829790" duration="13632000" />
+      <workItem from="1612787829790" duration="17495000" />
     </task>
     <servers />
   </component>

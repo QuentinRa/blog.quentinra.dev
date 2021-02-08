@@ -35,11 +35,11 @@ d'exercices au format spécifié dans `assets/exercice.rst`.
 
 Créé par Quentin Ramsamy--Ageorges (admin@lgs-games.com).
 
-Version build-3.34.452.
+Version build-3.40.563.
 \
 Création le 20 juillet 2020.
 \
-Dernière mise à jour le 20 janvier 2020.
+Dernière mise à jour le 08 février 2021.
 
 Merci à tout contributeur et lecteur, ainsi qu'à toutes
 personnes ayant permis et aidant dans la création de cette plateforme.
