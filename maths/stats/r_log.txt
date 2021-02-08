@@ -157,3 +157,11 @@ library(pracma)
 taylor(f, 0, 5) // en 0 d'ordre 5
 
 polyval ???
+
+------------------- normaliser des données
+
+Transformation de Box-Cox
+toutes positives définies dans une seule colonne et utilisons la commande powerTransform( ) du package car:
+
+Transformations de Johnson (Yeo-Johnson)
+JonhsonFit( ) du package SuppDists:

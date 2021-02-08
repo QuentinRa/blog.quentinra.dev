@@ -43,12 +43,32 @@ Tests d’égalité de moyennes
 -----------------------------
 
 | **Objectif** : vérifier si la moyenne (mu) est la même
-| **Utilité** : ???
+| **Utilité** : ...
 | **Prérequis** : normalité ou plus de 30 individus
 
 de Student T à moyenne fixée (vérifier si la moyenne vaut mu)
 	| **Fonction** : :code:`t.test(x=data, alternative="two.sided", mu=valeur)`
 
-de Student T a deux moyennes
+de Student T a deux moyennes (homoscédastique)
 	| **Fonction** : :code:`t.test(x=data1, y=data2, alternative="two.sided", var.equal=TRUE)`
 	| **Condition** : variance égales
+
+	Si vous donnez FALSE à var.equal alors le test de Welch serait fait à la place.
+
+Test Z à une moyenne, unilatéral gauche
+	| **Fonction** (package BSDA) : :code:`z.test(ech, alternative = "less", mu = mu, conf.level = 0.95)`
+
+Test Z à deux moyennes
+	| **Fonction** (package BSDA) : :code:`z.test(ech, alternative = "two.sided", mu = mu, conf.level = 0.95)`
+
+Test de valeurs aberrantes/outliers
+------------------------------------
+
+| **Objectif** : identifier les valeurs extrêmes
+| **Utilité** : identifier (pour supprimer) les valeurs extrêmes
+
+de Grubbs
+	| **Fonction** (package outliers) : :code:`grubbs.test(ech, two.sided = TRUE)`
+
+de Dixon
+	| **Fonction** (package outliers) : :code:`dixon.test(ech)`
