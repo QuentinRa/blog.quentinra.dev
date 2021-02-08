@@ -74,13 +74,6 @@ Tests d’égalité de médiane
 | **Objectif** : Tester si la médiane (med) est la même
 | **Utilité** : voir explication sur la moyenne
 
-avec le test des signes
-	| **Fonction** (package BSDA) : :code:`SIGN.test(data, md = med, alternative = "two.sided", conf.level = 0.95)`)
-
-	On considère deux lois, on compare les classements et on met un + si
-	un individu monte, - s'il descends et on le retire s'il ne bouge pas. S'il y a autant de + que de - alors la
-	médiane de la distribution n'a pas changée.
-
 (SignedRank) de Wilcoxon (:code:`wilcox.test(data, mu = mu, alternative = "two.sided", conf.level = 0.95)`)
 	| **Robustesse** : population symétrique
 

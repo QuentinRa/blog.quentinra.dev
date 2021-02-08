@@ -288,7 +288,7 @@ la distribution semble cohérent.
 On distingue deux types de test
 
 	* paramétriques : la loi doit être normale ou prérequis d'une moyenne/variance/corrélation
-	* non-paramétriques (distribution free) : les autres tests
+	* non-paramétriques (distribution free) : les autres tests (utilisent les statistiques de rangs)
 
 J'ai séparés les tests en 5 catégories plutôt que deux
 pour essayer de grouper ceux sur les données appariées, ceux
@@ -319,6 +319,7 @@ mais ce n'est pas toujours le cas).
 		Analyse de la variance (Anova)       <tests/anova>
 		Techniques de Bootstrap              <tests/mdb>
 		ANCOVA (variables non indépendantes) <tests/ancova>
+		Liste de tests et conditions         <tests/liste>
 
 8. Incertitudes et robustesse
 ===============================
@@ -376,3 +377,4 @@ et essayer de vérifier.
 	* http://www.sthda.com/french/wiki/logiciel-r
 	* https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Test_statistique
 	* https://lepcam.fr/index.php/les-etapes/test/
+	* http://jybaudot.fr/Inferentielle/signes.html

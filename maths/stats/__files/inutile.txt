@@ -106,3 +106,14 @@ R2. Le terme est souvent indiqué dans l'industrie par l'abréviation SSB signif
 treatments".
 R3. Le terme est souvent indiqué dans l'industrie par l'abréviation SSW signifiant en anglais
 "Sum of Squares Within (samples)" ou plus rarement SSE pour "Sum of Squares due to Errors".
+
+------------> RANG
+
+on ordonne toutes les valeurs de X et Y
+la première est R1 (rang 1), si deux valeurs == alors même i-ème de rang
+
+On fait la somme des i pour chaque X/Y : Valeurs que nous appelons "statistique de Wilcoxon".
+
+l'espérance de la loi discrète uniforme
+(n+1)/2 = mu
+n^2-1/12 = V(x)
