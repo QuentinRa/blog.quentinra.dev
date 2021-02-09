@@ -143,3 +143,4 @@ Autres
 		* https://www.apprendrelejaponais.net/au-revoir-en-japonais.html
 		* https://www.ici-japon.com/apprendre-le-japonais/la-particule-to/
 		* http://www.crapulescorp.net/japonais/cours/grammaire/construction_des_phrases_simples.php5
+		* http://japanese-lesson.com/resources/pdf/katakana_writing_practice_sheets.pdf

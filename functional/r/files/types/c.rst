@@ -52,6 +52,21 @@ sauf celles aux indices donnés sont retournées.
 	> vecteur[y] # y donc seq(1,10) donc les indexes 1 à 10
 	[1] 76 90 66 59 28 93 20 68 27 67
 
+On rappelle qu'une opération est faite sur chaque élément du vecteur, donc
+une comparaison retourne un vecteur de booléens. On peut ainsi faire
+
+.. code:: r
+
+	# génère un vecteur aléatoire de 20 éléments entre 0 et 100
+	> vect <- round(runif(10,0,100))
+	> vect
+	[1] 73  9 36 76 67 30 89 44 60 75
+	# on peut remplacer tous les éléments pairs par la moyenne
+	# %% = modulo, mean = moyenne
+	> vect[vect %% 2 == 0] <- mean(vect)
+	> round(vect) # arrondi
+	[1] 73  9 56 56 67 56 89 56 56 75
+
 **Indices nommés**
 
 Vous pouvez nommer des indices d'un vecteur avec :code:`nom = valeur`.

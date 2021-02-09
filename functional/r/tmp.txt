@@ -1,9 +1,3 @@
-3. Particularités du R
-========================
-
-		Structures de données       <files/v>
-		Notation nom1.nom           <files/dot>
-
 4. Fonctions
 =======================
 

@@ -4,11 +4,13 @@ Opérations et Conditions
 
 Les opérations sont
 
-	* les basiques : :code:`+,-,/,*`, :code:`nombre^puissance`, :code:`%%` (modulo), :code:`%/%` (division entière)
+	* les basiques : :code:`+,-,/,*`, :code:`nombre^puissance`
 	* l'assignation : :code:`variable <- valeur` (= marche mais à éviter)
-	* autre : :code:`sqrt, abs, log, xor, sum, ...`
 	* concatenation (string) : :code:`paste(string, string, ...)`
-	* vecteurs : :code:`a %in% v` (test si a dans vecteur v)
+	* in vecteurs : :code:`a %in% v` (test si a dans vecteur v)
+	* modulo : :code:`%%`
+	* division entière : :code:`%/%`
+	* autre : :code:`sqrt, abs, log, xor, sum, ...`
 
 Les comparateurs sont
 

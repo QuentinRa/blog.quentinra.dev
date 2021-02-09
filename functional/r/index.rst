@@ -94,7 +94,7 @@ pour les observations de l'ozone en été et en hiver (cela peut être sur des v
 
 		Vecteurs    <files/types/c>
 		Matrices    <files/types/matrix>
-		Tables      <files/types/matrix>
+		Tables      <files/types/table>
 		Listes      <files/types/list>
 		Facteurs    <files/types/factor>
 
@@ -115,6 +115,8 @@ matrices, tables, ...).
 	* :code:`all(v opérateur valeur)` : retourne true tous les éléments respectent la condition
 	* :code:`sort(v)` : trie les données
 	* :code:`View(v)` : voir le contenu d'un vecteur
+	* :code:`identical(v1,v2)` : savoir si deux vecteurs sont indentiques
+	* :code:`valeur %in% v` : savoir si valeur est dans v
 
 -----
 
