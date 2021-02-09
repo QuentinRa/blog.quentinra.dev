@@ -32,7 +32,7 @@ Anova à deux critères             Conditions: (normalité, variances égales)
 Tests (des étendues) de Tukey     Indique si deux moyenne d'une Anova sont presque égales.
 Test de simultanéité Dunnett      Indique si deux moyenne d'une Anova sont presque égales.
 Test de Wilcoxon                  H0: médianes égales. Conditions: population symétrique.
-Test de Mann–Whitney U            H0: médianes égales. Conditions: ecdf non croisées, taille>30
+Test de Mann–Whitney              H0: médianes égales. Conditions: ecdf non croisées, taille>30
 Test de la médiane                H0: médianes égales. Fait avec bootstrap.
 ================================= ================================================================
 
@@ -45,12 +45,13 @@ Test sur une proportions          H0: test loi binomiale.
 Test sur deux proportions         H0: test loi binomiale.
 Goodness-of-Fit Test              H0: vraisemblance avec loi connue.
 Test de distribution              H0: vraisemblance entre deux échantillons.
+Test de Mann–Whitney U            H0: vraisemblance, deux échantillons de tailles différentes
 ================================= ================================================================
 
 ================================= ================================================================
 Test sur les données appariées    Description
 ================================= ================================================================
-Test de Mann–Whitney U (2)        H0: médianes égales.
+Test de Mann–Whitney              H0: médianes égales.
 Test de Student T à moyenne fixée H0: moyennes égales.
 Test des signes                   H0: moyennes égales.
 ================================= ================================================================

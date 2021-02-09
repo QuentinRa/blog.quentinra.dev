@@ -76,3 +76,12 @@ ANOVA unidirectionnelle sur les rangs (Test de Kruskal et Wallis)
 	| **Robustesse** : échantillons d'au moins 15 individus
 
 	Il s'agit de tester si des échantillons sont issus d'une même distribution.
+
+Test de la somme des rangs
+---------------------------
+
+Test de Mann–Whitney U
+	| **Fonction** : :code:`wilcox.test(ech~quant, data=ech, paired=FALSE, exact=FALSE)`
+	| **Utilité** : marche si moins de 30 individus, et si les populations ne sont pas de la même taille
+
+	Aussi appelé Mann–Whitney–Wilcoxon (MWW) ou Wilcoxon–Mann–Whitney test.

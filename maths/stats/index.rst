@@ -367,3 +367,5 @@ et essayer de vérifier.
 	* https://lepcam.fr/index.php/les-etapes/test/
 	* http://jybaudot.fr/Inferentielle/signes.html
 	* https://www3.nd.edu/~steve/Rcourse/Lecture7v1.pdf
+	* http://www.sthda.com/english/wiki/unpaired-two-samples-wilcoxon-test-in-r
+	* http://www.sthda.com/english/wiki/unpaired-two-samples-t-test-in-r

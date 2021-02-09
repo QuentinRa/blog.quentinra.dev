@@ -2,6 +2,18 @@ R Statistical Software
 Vincent ISOZ, Daname KOLANI
 --------------------------------
 
+================================= ================================================================
+Test paramétriques                Description
+================================= ================================================================
+Test-T de Student                 sigma inconnu
+Test-T homoscédastique            égalité des variances requise
+ANOVA à un facteur                échantillons appariées + homoscédasticité
+ANOVA de Kruskal-Wallis           autre
+ANOVA de Friedman                 autre
+ANOVA à deux facteurs             Analyse de la variance (~moyenne), échantillons appariées
+Test d'égalité de 2 proportions   échantillons appariés/ou non
+================================= ================================================================
+
 Fonctions maths
 -----------------
 

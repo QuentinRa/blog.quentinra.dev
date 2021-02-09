@@ -77,14 +77,16 @@ Tests d’égalité de médiane
 (SignedRank) de Wilcoxon (:code:`wilcox.test(data, mu = mu, alternative = "two.sided", conf.level = 0.95)`)
 	| **Robustesse** : population symétrique
 
-	Test plus puissant que le celui des signes.
+	Test plus puissant que le celui des signes. L'objectif est de vérifier la symétrie de la distribution donc
+	si on a bien 50% à gauche et 50% à droite de mu. On calcule ensuite les différences entre valeur et médiane,
+	on fait somme et on regarde si la moyenne est bien égale à la médiane donc symétrique.
 
-Mann–Whitney U (comparaison de 2 médianes)
+Mann–Whitney (comparaison de 2 médianes)
 	| **Fonction** : :code:`wilcox.test(data,alternative = "two.sided", conf.level = 0.95)`
 	| **Robustesse** : 2 échantillons n1 et n2 avec n1+n2>30, fonctions de répartition (ecdf) ne se croisent pas.
 	| **Note** : moyenne :math:`n1(n1+n2+1)/2` et variance :code:`n1n2(n1+n2+1)/12`
 
-	Aussi appelé Mann–Whitney–Wilcoxon (MWW), Wilcoxon rank-sum test, ou Wilcoxon–Mann–Whitney test.
+	Aussi appelé Two-Samples Wilcoxon, Wilcoxon rank-sum test.
 
 Test d’indépendance
 ------------------------

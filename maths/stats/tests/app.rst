@@ -11,7 +11,7 @@ Tests de comparaison des médianes
 
 | **Objectif** : vérifier si les médianes sont égales sur des données appariées
 
-de Mann–Whitney U (2 médianes)
+de Mann–Whitney (2 médianes)
 	| **Fonction** : :code:`wilcox.test(data_before, data_after, paired=TRUE)`
 
 Tests d’égalité de moyennes
