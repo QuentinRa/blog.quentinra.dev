@@ -94,8 +94,27 @@ pour les observations de l'ozone en été et en hiver (cela peut être sur des v
 
 		Vecteurs    <files/types/c>
 		Matrices    <files/types/matrix>
+		Tables      <files/types/matrix>
 		Listes      <files/types/list>
 		Facteurs    <files/types/factor>
+
+Voici quelques fonctions utiles sur les vecteurs (voir sur les listes,
+matrices, tables, ...).
+
+	* :code:`head(v)` pour voir les premières valeurs d'un vecteur
+	* :code:`tail(v)` pour voir les dernières valeurs d'un vecteur
+	* :code:`length(vecteur)` : retourne la taille
+	* :code:`dim(vecteur)` : retourne la taille (plus utilise pour les matrices)
+	* :code:`which.min(v) ou which.max(v)` : retourne l'indice du min/max
+	* :code:`which(v opérateur valeur)` : retourne les indices des éléments selon la condition
+	* :code:`rev(v)` : inverse
+	* :code:`sum(v)` : somme de tous les éléments
+	* :code:`prod(v)` : produit de tous les éléments
+	* :code:`attributes(vecteur)` : voir les attributs (dim, ...)
+	* :code:`any(v opérateur valeur)` : retourne true un des éléments respectent la condition
+	* :code:`all(v opérateur valeur)` : retourne true tous les éléments respectent la condition
+	* :code:`sort(v)` : trie les données
+	* :code:`View(v)` : voir le contenu d'un vecteur
 
 -----
 

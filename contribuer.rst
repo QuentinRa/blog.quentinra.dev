@@ -4,9 +4,8 @@ Comment contribuer ?
 
 .. _editor: https://livesphinx.herokuapp.com/
 
-Désolé, mais vous allez avoir besoin d'un compte `github <https://github.com/>`_ pour contribuer...
-
-Le dépôt est ici : `https://github.com/QuentinRa/ramsamy.ws-res <https://github.com/QuentinRa/ramsamy.ws-res>`_.
+Vous allez avoir besoin d'un compte `github <https://github.com/>`_ pour contribuer...,
+le dépôt est ici : `https://github.com/lgs-games/memorize <https://github.com/lgs-games/memorize>`_.
 
 1. Rédaction des cours
 *************************
