@@ -14,9 +14,9 @@ Les différentes lois sont
 
 	* Beta : fonction :code:`beta`
 	* **Binomiale** : fonction :code:`binom`, ex: dbinom(x=3,size=5,prob=0.5) soit 3 succès sur 5 avec proba 0.5
-	* **Cauchy** : fonction :code:`cauchy`
-	* **Khi-deux** : fonction :code:`chisq`
-	* **Exponentielle** : fonction :code:`exp`
+	* **Cauchy** : fonction :code:`cauchy` (:code:`rcauchy(n,location=0,scale=1)`)
+	* **Khi-deux** : fonction :code:`chisq` (:code:`rchisq(n,df)`)
+	* **Exponentielle** : fonction :code:`exp` (Exponentielle : :code:`rexp(n,rate=1)`)
 	* F : fonction :code:`f`
 	* Gamma : fonction :code:`gamma`, :code:`gamma(n)=(n-1)!`
 	* **Géométrique** : fonction :code:`geom`
@@ -25,9 +25,9 @@ Les différentes lois sont
 	* Log Normale : fonction :code:`lnorm`
 	* **Binomiale négative** : fonction :code:`nbinom`
 	* **Normale** (Gaussienne) : fonction :code:`norm` (norm(x,mu,sigma) avec mu=moyenne, sigma=écart type donc 0,1 = centrée)
-	* **Poisson** : fonction :code:`pois`
+	* **Poisson** : fonction :code:`pois` (:code:`rpois(n,lambda)`)
 	* **Student T** : fonction :code:`t`
-	* **Uniforme** : fonction :code:`unif`
+	* **Uniforme** : fonction :code:`unif` (:code:`runif(n,min=0,max=1)` centrée réduite)
 	* **Weibull** : fonction :code:`weibull`
 
 Donc si on veut calculer :math:`P(X \le k)` on utilise une fonction de type

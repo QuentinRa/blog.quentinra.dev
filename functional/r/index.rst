@@ -79,12 +79,18 @@ de Statistiques et R.
 		Opérations et Conditions    <files/part/op>
 		Structures et apply         <files/part/struct>
 		Statistiques et R           <files/part/stats>
+		Note sur les blocs          <files/part/blocs>
 
 Petite note sur les noms. Généralement vous trouver des noms de la forme :code:`nom.nom`,
 généralement cela est uniquement sémantique (sinon je crois c'est lié à la généricité)
 mais c'est pour regrouper les variables (au sens non littéral) dans un groupe sémantique.
 Par exemple :code:`ozone` qui dérive en :code:`ozone.summer` et :code:`ozone.winter`
 pour les observations de l'ozone en été et en hiver (cela peut être sur des variables, fonctions, ...).
+
+Enfin, vous n'êtes pas toujours obligé d'écrire les noms complets des arguments passés à
+une fonction ou certains trucs évidents par exemple TRUE s'écrit aussi T ou dans
+une fonction :code:`hist(..., probability = valeur)` on peut écrire
+:code:`hist(..., prob = valeur)` par exemple donc un diminutif.
 
 4. Types complexes
 ========================
@@ -97,6 +103,7 @@ pour les observations de l'ozone en été et en hiver (cela peut être sur des v
 		Tables      <files/types/table>
 		Listes      <files/types/list>
 		Facteurs    <files/types/factor>
+		data.frame  <files/types/df>
 
 Voici quelques fonctions utiles sur les vecteurs (voir sur les listes,
 matrices, tables, ...).
@@ -117,6 +124,100 @@ matrices, tables, ...).
 	* :code:`View(v)` : voir le contenu d'un vecteur
 	* :code:`identical(v1,v2)` : savoir si deux vecteurs sont indentiques
 	* :code:`valeur %in% v` : savoir si valeur est dans v
+
+5. Fonctions
+========================
+
+Je suppose que vous avez remarqué qu'on appelle une fonction :code:`nom(arguments, ...)`
+mais vous pouvez aussi faire :code:`nom(nom_argument = valeur, ...)`. En fait dans la deuxième
+version, vous n'êtes pas obligé de donner des valeurs dans l'ordre donc c'est assez pratique.
+
+Généralement il y a beaucoup d'argument ayant une valeur par défaut donc facultatif, vous n'avez donc
+pas besoin de leur donner une valeur, vous pouvez voir la doc avec :code:`?nom_fonction` (plus d'infos en intro).
+
+On utilise :code:`function (arguments)` ou fonction :code:`fonction (nom = v_default, ....)`
+pour déclarer une fonction.
+
+.. code:: R
+
+		> modulo <- function (x, mod=2){
+		 if(mod < 2) {
+		  warning(paste(x," doit être >= à 2"));
+		  mod <- 2
+		 }
+		 # on pourrait ne pas mettre return car
+		 # x %% mod retourne déjà le résultat
+		 return(x %% mod)
+		}
+		> modulo(5)
+		[1] 1
+		> modulo(5,3)
+		[1] 2
+		> modulo(5, -1)
+		Warning in modulo(5, -1) : 5  doit être >= à 2
+		[1] 1
+		> modulo(mod = 3, 5)
+		[1] 2
+
+On se rappelle le point sur les blocs, si une fonction ne retourne rien, elle retourne la valeur
+de sa dernière expression (si celle ci retourne quelque chose ce qui n'est pas cas d'une assignation par exemple).
+Les variables, contrairement aux blocs normaux n'existent que dans le bloc mais si R
+ne trouve pas une variable, il va voir dans le bloc d'au dessus.
+
+6. Fonctions utilitaires
+===========================
+
+...
+
+7. Maths en R
+========================
+
+Bric à brac
+	* :code:`pi` : variable qui contient pi
+	* :code:`runif(n)` : génère n nombres aléatoires entre 0 et 1
+	* :code:`choose(n,k)` : choisi n éléments parmi k (vecteur)
+	* :code:`factorial(n)` : n factoriel
+	* :code:`min(v)` : valeur min
+	* :code:`max(v)` : valeur max
+	* :code:`seq(from = x, to = y, length = l)` : suite de l valeurs séquentielles de [x,y]
+	* :code:`rep(v, n)` : répète n fois v
+	* :code:`sample(v, n)` : extrait un échantillon (i.i.d)
+
+Fonctions de stats basiques
+
+	* :code:`summary(x)` : calcule la moyenne, ...
+	* :code:`mean(x)` : moyenne
+	* :code:`median(x)` : médiane
+	* :code:`var(x)` : variance
+	* :code:`cov(x)` : covariance
+	* :code:`cor(x)` : corrélation
+
+8. Fonctions graphiques
+=============================
+
+...
+
+9. RMarkdown
+===========================
+
+Le RMarkdown (fichier .Rmd) est basé sur le Markdown donc vous aurez
+plus d'infos sur le cours de Markdown. Voici un exemple
+de fichier, avec des métadonnées.
+
+.. toctree::
+    :maxdepth: 1
+
+		Synthèse Rmd                   <files/rmd/t>
+		Détails sur les blocs de code  <files/rmd/bloc>
+
+9. Exercices
+==============
+
+.. toctree::
+    :name: exercices
+    :maxdepth: 1
+
+		Introduction				<exercices/intro>
 
 -----
 

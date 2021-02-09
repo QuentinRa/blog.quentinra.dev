@@ -29,18 +29,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/files/dot.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/files/part/op.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/files/part/op.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/files/types/c.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/files/types/c.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/files/types/factor.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/files/types/factor.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/files/types/list.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/files/types/list.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/files/types/matrix.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/files/types/matrix.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/files/v.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/files/v.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functional/r/files/v.rst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/functional/r/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functional/r/tmp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/tmp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/japanese/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/lang/japanese/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/files/rfunc.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/files/rfunc.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -352,7 +344,7 @@
       <workItem from="1612787829790" duration="19023000" />
       <workItem from="1612809277221" duration="90000" />
       <workItem from="1612818174803" duration="5694000" />
-      <workItem from="1612857069678" duration="26016000" />
+      <workItem from="1612857069678" duration="31178000" />
     </task>
     <servers />
   </component>
