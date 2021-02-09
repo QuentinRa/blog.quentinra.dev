@@ -2,8 +2,8 @@
 Statistiques et R
 ===================================
 
-| :math:`\color{grey}{Version \ 0.15.42}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 07/02/2021}`
+| :math:`\color{grey}{Version \ 0.15.44}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 09/02/2021}`
 
 Les prérequis sont de savoir lire du R (concepts de base et un peu avancés).
 Ceci n'est pas un cours de maths donc ce ne sont pas des vraies statistiques
@@ -20,14 +20,14 @@ ce qui nous permettra de déduire ou émettre des hypothèses.
 
 Population
 	On considère nos données comme ceux d'une population. Il s'agit généralement
-	d'une matrice.
+	d'une matrice (d'individus i par variables j).
 
 Variables
 	Il s'agit généralement des colonnes (j) de la matrice. Elles sont (de caractère)
 	qualitatives ou quantitatives.
 
 	Variable quantitative
-		La valeur fait l'objet d'une mesure (1,4,5, ... cm) donc on associe
+		La valeur fait l'objet d'une mesure donc on associe
 		une loi qui représente les valeurs pouvant être prises.
 
 			* suivant une loi discrète : nombre de valeurs finies (dénombrable, comptage)
@@ -40,16 +40,13 @@ Variables
 		le type est :code:`factor()` en R. Ces données suivent généralement une loi Binomiale.
 
 Individu
-	Il s'agit d'une ligne (i) de la matrice. Ainsi, la valeur
-	i,j corresponds à la valeur de la variable j pour l'individu i.
-
-Valeur
+	Il s'agit d'une ligne (i) de la matrice.
 	La valeur i,j corresponds à la valeur de la variable j pour l'individu i.
 	On note NA l'absence de valeur.
 
-Échantillon (représentatif)
+Échantillon (dit représentatif)
 	Il s'agit d'une sous-partie de la population. Généralement, il faut que les variables
-	aléatoires soient indépendantes et identiquement distribuée (i.i.d) sinon cela
+	aléatoires soient indépendantes et identiquement distribuées (i.i.d) sinon cela
 	pourra fausser des test (utiliser :code:`sample()`).
 
 Modèle
@@ -62,26 +59,29 @@ Données appariés
 	propres tests car il ne respectent pas le critère d'indépendance par exemple.
 
 On rappelle la fonction :code:`data("data_set")` qui importe un dataset
-depuis un nom ou liste les dataset disponibles.
+depuis un nom ou liste les dataset disponibles (si aucun nom).
 
-Pour la suite, on considère data : notre jeu de données, ech = échantillon
-et var : une variable (qualitative/quantitative), quant : une variable
-quantitative et qual : une variable quantitative.
+Nos variables du cours
+	On considère les variables data (population), ech (échantillon),
+	var (une variable qualitative/quantitative), quant (une variable
+	quantitative) et qual (une variable quantitative). J'explicite mais data
+	n'est qu'un gros échantillon donc si on mets ech on peut généralement aussi
+	tester data et inversement.
 
 2. Fondements mathématiques
 =================================
 
-Moyenne
+Moyenne :code:`mean(ech)`
 	* arithmétique/empirique : somme des valeurs/nombre de valeurs
 	* pondérée par les effectifs (E(x)) : somme(valeur * fréquence) avec fréquence=#occurrences/#total
 
 	Dispersion des écarts absolus : somme des \|valeur-moyenne\|
 
-Médiane (moyenne milieu)
+Médiane (moyenne milieu) :code:`median(ech)`
 	Valeur qui coupe la population en deux parties égales. On peut lire la médiane sur un graphique
 	(F(x) ou :code:`ecdf(loi)` en R : la médiane se trouve au f(x)=0.5)
 
-	Dispersion des écarts absolus (:code:`mad()`) : somme des \|valeur-médiane\|
+	Dispersion des écarts absolus (:code:`mad(ech)`) : somme des \|valeur-médiane\|
 
 Médiale
 	Valeur qui divise en deux parties la somme cumulée des valeurs (permet de savoir
@@ -125,6 +125,11 @@ Moments
 
 	.. [#3] fonctions de la librairie :code:`e1071` (ou :code:`moments`).
 
+Autre
+	* Statistique univariée (le left.sided ou right.sided?) : une variable
+	* Statistique bivariée (le two.sided?) : deux variable
+	* Statistique multivariée : plusieurs variable
+
 3. Recherche d'une stratégie d'analyse
 ============================================
 
@@ -163,7 +168,7 @@ Extraire un échantillon
 	set d'observations permettant de vérifier notre modèle (validation).
 
 	Il est important que toutes les valeurs de l'échantillon soient prises au hasard (même chance d'être prises)
-	sinon l'échantillon est biaisé.
+	sinon l'échantillon est dit biaisé.
 
 Gérer les valeurs NA
 	Vous pouvez voir le nombre de valeurs NA avec :code:`sum(is.na(ech$var))` (pour chaque
@@ -178,35 +183,27 @@ Gérer les valeurs NA
 Fonctions utiles
 		* :code:`summary()` : le nombre de NA, les moyennes, ...
 		* :code:`View()` : afficher (graphiquement)
-		* :code:`head()` : le début donc les premières valeurs
-		* :code:`dim()` : savoir combien de lignes=individus/colonnes=variables on manipule
+		* :code:`head()`/:code:`tail()` : le début/fin donc les premières/dernières valeurs
+		* :code:`dim()` ou :code:`length()` : savoir combien de lignes=individus/colonnes=variables on manipule
 		* :code:`names()` : savoir les noms des variables manipulées
 		* :code:`str()` : voir les types des variables et une idée des valeurs prises
 		* :code:`complete.cases()` : le nombre de lignes sans NA donc ok
 		* :code:`range()` : retourne le min et le max
 		* D'autres fonctions : :code:`var, sd, quantile, ...`
 
-Autre
-	* Statistique univariée : une variable
-	* Statistique bivariée : deux variable
-	* Statistique multivariée : plusieurs variable
-
 5. Préparation
 ================
 
 Vous trouverez d'abord un rappel sur les lois (théorie) et leur fonctions associées en R.
 
-Il est possible (lisibilité/sémantique/...)
+Il est possible (question de lisibilité/sémantique/...)
 que vous vouliez transformer une variable quantitative en qualitative
-(ou inversement).
-
-Alternativement, vous pouvez vouloir changer le type d'une variable pour qu'il soit
-correctement utiliser par R.
+(ou inversement). Alternativement, vous pouvez vouloir changer le type d'une variable pour qu'il soit
+correctement utilisé par R (transformer date (texte) en vraie data, ...).
 
 Dans le cas où vous n'auriez pas assez d'individus pour faire certains tests (partie
 suivante) avec la contrainte de 30 individus par exemple, vous pouvez
 fusionner vos données (entre autres).
-
 La partie fusion de données traite aussi du cas ou vos avez des données ayant étés
 rentrées à la main (notamment) et qui ont étés mal écrites (faute, accent manquant, ...).
 
@@ -214,11 +211,11 @@ Il arrive généralement que l'on trie les valeurs, ceci ce fait avec :code:`sor
 
 Il est généralement avisé et recommandé de traiter les valeurs dites anormales/aberrantes/extrêmes. Il s'agit
 de valeur trop importantes/faibles qui donnent des valeurs pouvant ne pas être représentatives. On obtient
-une moyenne élaguée...
+une moyenne dite élaguée... L'analyse ANOVA permettra de vérifier si la moyenne est bien représentative.
 
 Intervalles de confiance
 	On va généralement donner un interval (moyenne, variance, ...) plutôt qu'une valeur car on travaille
-	sur une partie de la population de taille n (il faudra aussi donner la valeur de n). L'erreur suit au travai
+	sur une partie de la population (de taille n car il faudra aussi donner la valeur de n). L'erreur suit au travail
 	sur un échantillon est appelée : fluctuation d'échantillonnage.
 
 	On répète les résultats plusieurs fois sur un échantillon
@@ -226,7 +223,7 @@ Intervalles de confiance
 	donc le résultat le plus probable. En pratique, une seule mesure est faite
 	et il faut déterminer l'erreur faite en choisissant cette valeur comme moyenne.
 
-Enfin, on va pas cherche une loi exacte mais qui rende les observations le plus vraisemblable possible,
+Enfin, on va pas cherche une loi exacte mais une loi qui rende les observations le plus vraisemblable possible,
 donc qui maximise la loi : L (vraisemblance). La/Les valeurs de theta qui maximisent L(theta)
 sont appelées estimateurs du maximum de vraisemblance. Des estimateurs sont par exemple : :code:`variance, écart-type, ...`.
 
@@ -258,7 +255,7 @@ Il est généralement pratique de tester des variables quantitatives après
 leur avoir appliqué une variable qualitative (fait des groupes selon un critère
 comme les notes du BAC par filière) pour étudier la répartition dans un plus petit ensemble.
 
-Dans la prolongation de la recherche de caractéristiques de vraisemblance,
+Dans la prolongation de la recherche de caractéristiques (estimateurs) de vraisemblance,
 le diagramme QQ-plot ou Quantile-Quantile permet de comparer notre distribution à une distribution existante.
 
 Quelques notes
@@ -290,25 +287,16 @@ On distingue deux types de test
 	* paramétriques : la loi doit être normale ou prérequis d'une moyenne/variance/corrélation
 	* non-paramétriques (distribution free) : les autres tests (utilisent les statistiques de rangs)
 
-J'ai séparés les tests en 5 catégories plutôt que deux
+J'ai séparés les tests en pleins de catégories plutôt que deux
 pour essayer de grouper ceux sur les données appariées, ceux
 qui permettent d'évaluer la vraisemblance, ceux qui permettent
-de tester des propriétés (vraisemblance aussi mais plus indirecte) et enfin
-ceux qui sont dans aucune des trois catégories précédentes.
+de tester des propriétés (vraisemblance aussi mais plus indirecte) etc.
 
-Dans le cas ou vous auriez des données appariés, c'est-à-dire des jeux de données
-issus d'une même population (par exemple à deux moments différents, ...) alors
-il est extrêmement possible que les tests soient faux mais certains tests
-sont fait spécialement pour les données appariés.
-
-Je crois qu'il y a plus de 120 tests qui existent donc je vais uniquement
-ceux que j'ai appris.
-
-:code:`Note` : les tests sont généralement fait avec alpha=0.95 donc fiable
-à 95% mais attention à vérifier si le test est valide. Pour cela en R, regarder
-la :code:`p-value` dans le résultat, si elle est en dessous de 5% alors le test
-est rejeté sinon il a de fortes chances d'être correct (attention, on considère alpha=0.05
-mais ce n'est pas toujours le cas).
+:code:`Note` : les tests sont généralement fait avec alpha=0.05 donc fiable
+à 95% mais attention à vérifier si le test est valide. Pour cela en R, regardez
+la :code:`p-value` dans le résultat, si elle est en dessous de 5% alors le test (hypothèse H0)
+est rejeté sinon il a de fortes chances d'être correct (attention, alpha ne vaut pas forcément
+0.05).
 
 .. toctree::
 	 :maxdepth: 1
@@ -378,3 +366,4 @@ et essayer de vérifier.
 	* https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Test_statistique
 	* https://lepcam.fr/index.php/les-etapes/test/
 	* http://jybaudot.fr/Inferentielle/signes.html
+	* https://www3.nd.edu/~steve/Rcourse/Lecture7v1.pdf
