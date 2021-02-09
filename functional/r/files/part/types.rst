@@ -10,7 +10,15 @@ de l'un des types suivant
 	* les booléens (dits logical) : TRUE (ou T) ou FALSE (ou F)
 	* autre : la valeur NULL, la valeur NA (not available), la valeur Inf (infini)
 	* les strings (dit character) : "chaine de caractères"
-	* les vecteurs, les matrices (matrix) et les DataFrames (data.frame)
+
+Et quelques types complexes
+
+	* les vecteurs (c)
+	* les matrices (matrix)
+	* les DataFrames (data.frame)
+	* les listes (list)
+	* les tableaux (array)
+	* les facteurs (factor)
 
 Pour être exact, toutes les valeurs en R sont des vecteurs (valeur=vecteur de taille 1).
 La valeur NA est utilisée lorsqu'une donnée est manquante. Tout calcul utilisant

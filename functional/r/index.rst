@@ -4,8 +4,8 @@
 Langage R
 ================================
 
-| :math:`\color{grey}{Version \ 0.6.21}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 31/01/2021}`
+| :math:`\color{grey}{Version \ 0.3.25}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 09/02/2021}`
 
 1. Introduction
 ===================
@@ -29,7 +29,7 @@ installer un package avec :code:`install.packages("nom")`.
 Enfin pour l'utiliser dans le code, il faudra le charger (sauf s'il l'est déjà
 par défaut), ceci est fait avec :code:`library("nom");`.
 
-2. Notes
+2. Notes d'introduction
 ===================================
 
 Vous pouvez obtenir de l'aide sur une fonction avec :code:`?nom_fonction`
@@ -50,243 +50,52 @@ Vous pouvez obtenir de l'aide avec :code:`help.start()`.
 La fonction :code:`print()` permet d'afficher
 quelque chose en mode compilé.
 
+La fonction :code:`data()` permet d'afficher la liste
+de tous les jeux de données disponibles ou d'en charger un.
+
 3. Particularités du R
+========================
+
+Le R est faiblement typé, vous pouvez trouver le type d'une variable avec :code:`class(var)`
+ou déclarer une variable avec :code:`var <- valeur` (par exemple :code:`cinq <- 5` ou
+:code:`cinq <- as.numeric(5)`).
+
+La plupart des opérations et conditions (+,-,<=,>, ...) ainsi que les structures
+basiques (if, ...). Notez cependant que R fait une addition qu'il juge appropriée selon
+les types ou si des tableau/... sont de taille différente alors il les recycle.
+
+Vous n'allez probablement jamais faire de branchements car vous pouvez directement
+utiliser les indices comme :code:`tab[tab > 10] <- 0` qui mets 0 à tous les valeurs
+du tableau étant plus grandes que 10. Alternativement, les fonctions apply permettent
+d'appliquer une fonction sur tous les éléments donc sont très utilisées.
+
+Enfin, vous comprendrez mieux les notions suivantes si vous lisez le petit résumé
+de Statistiques et R.
+
+.. toctree::
+	 :maxdepth: 1
+
+		Types en R                  <files/part/types>
+		Opérations et Conditions    <files/part/op>
+		Structures et apply         <files/part/struct>
+		Statistiques et R           <files/part/stats>
+
+Petite note sur les noms. Généralement vous trouver des noms de la forme :code:`nom.nom`,
+généralement cela est uniquement sémantique (sinon je crois c'est lié à la généricité)
+mais c'est pour regrouper les variables (au sens non littéral) dans un groupe sémantique.
+Par exemple :code:`ozone` qui dérive en :code:`ozone.summer` et :code:`ozone.winter`
+pour les observations de l'ozone en été et en hiver (cela peut être sur des variables, fonctions, ...).
+
+4. Types complexes
 ========================
 
 .. toctree::
 	 :maxdepth: 1
 
-		Types en R                  <files/types>
-		Opérations et Structures    <files/op>
-		Structures de données       <files/v>
-		Notation nom1.nom           <files/dot>
-
-4. Fonctions
-=======================
-
-On déclare un bloc entre crochets :code:`{}` dans lequel
-chaque ligne est une expression. La valeur d'une variable
-contenant une fonction corresponds à la valeur de sa dernière expression.
-
-.. code:: r
-
-	# La valeur de f corresponds à la valeur de r soit 5^1 = 5
-	# x et r existent en dehors du bloc
-	> f <- {
-	 x <- 5
-	 r <- x^(mod(x,2))
-	}
-	> x
-	5
-
-Note: dans un bloc, vous pouvez utiliser des variables de l'extérieur. Si une variable
-n'est pas déclarée dans le bloc, alors le bloc parent sera regardé.
-
-Une fonction est déclarée avec le mot :code:`function` suivie
-d'un bloc. Les variables n'existent que dans la fonction. Vous pouvez
-déterminer des arguments qui ont un nom et optionnellement
-une valeur par défaut. Vous retournez le résultat
-avec :code:`return(valeur)`.
-
-.. code:: r
-
-	> fest <- function (quotient = 1) {
-	 x <- 5 * quotient
-	 r <- x^(mod(quotient,3))
-	 # # si aucun, alors la ligne précédente est retournée donc pareil
-	 return(r); # faudra faire un print() si pas de return
-	}
-	# x n'existe pas ici
-
-Pour appeler une fonction, vous mettez :code:`nom(arguments)` et
-donner les arguments dans l'ordre ou vous pouvez utiliser leurs nom
-donc :code:`nom(arg3 = valeur, arg1 = valeur, ...)` et l'ordre
-n'a pas d'importance.
-
-Alternativement, s'il n'y qu'un argument
-commençant par f par exemple, vous pouvez utiliser f comme nom
-lors de l'appel ou un diminutif du vrai nom.
-
-Notez que vous pouvez faire une fonction variadique (donc qui prends
-un nombre d'argument variable) en mettant un dernier argument :code:`...`.
-
-5. Fonctions utiles en stats
-==============================
-
-Général
-
-	* :code:`runif(n)` : génère n nombres aléatoires entre 0 et 1
-	* :code:`choose(n,k)` : choisi n éléments parmi k (vecteur)
-	* :code:`factorial(n)` : n factoriel
-	* :code:`pi` : variable qui contient pi
-	* les fonctions min/max
-	* :code:`summary(data)` : prends un vecteur/... et fait une analyse (moyenne, ...)
-	* :code:`seq(from = x, to = y, length = l)` : suite "séquentielle" de l nombres entre x et y
-	* :code:`rep(valeur, n)` : vecteur de taille n contenant n fois valeur (=vecteur, nombre, ...)
-	* :code:`sample(v, n)` : prends un échantillon de n valeur d'un vecteur v
-	* :code:`zapsmall(...)` : choisi et round automatiquement pour donner un arrondi propre.
-
-Jeux de données
-
-	* :code:`library(MASS); data(survey)` : données du style {sexe, droitier/gaucher, fumeur?, age, ...}
-	* :code:`library(ade4); data(deug)` : données du style {matière, grade, ...}
-	* :code:`LETTERS` ou :code:`letters` : vecteur qui contient l'alphabet
-
-Lois
-
-	*	Gaussienne/Normale : :code:`rnorm(n,mean=0,std=1)`
-	*	Uniforme : :code:`runif(n,min=0,max=1)`
-	*	Poisson : :code:`rpois(n,lambda)`
-	*	Exponentielle : :code:`rexp(n,rate=1)`
-	*	χ^2 : :code:`rchisq(n,df)` et :code:`chisq.test(v)$expected` pour tester la différence.
-	*	Binomiale : :code:`rbinom(n,size,prob)`
-	*	Cauchy : :code:`rcauchy(n,location=0,scale=1)`
-
-Vous remarquez que toutes les fonctions commencent par r. Il existe des variantes :
-
-	* :code:`pfunc(q,...)` : pour la probabilité cumulée jusqu'à q (vecteur de quantiles) donc proba d'être :code:`<=q`
-	* :code:`qfunc(p,...)` : pour le quantile associée à la probabilité cumulée p (vecteur de probabilités)
-	* :code:`dfunc(x,...)` : pour la densité de probabilité en x (vecteur de quantiles)
-
-Fonctions de calculs
-
-	* :code:`mean(x)` : moyenne
-	* :code:`median(x)` : médiane
-	* :code:`var(x)` : variance
-	* :code:`cov(x)` : covariance
-	* :code:`cor(x)` : corrélation
-
-6. Gérer son environnement
-============================
-
-Fonctions de déplacement
-
-	* :code:`getwd()` : retourne le répertoire courant
-	* :code:`sedwd(path)` : change le répertoire courant
-	* :code:`dir()` ou :code:`list.files()` : liste les fichiers du répertoire
-	* :code:`source(path)` : exécute un fichier R (path/url)
-	* :code:`cat(path, sep = S)` : affiche fichier R (S = \\n, ...)
-	* :code:`readLines(path)` : lis un fichier R
-
-Fonctions de manipulation
-
-	* :code:`file.path(partie, partie, ...)` : crée un path [#2]_
-	* :code:`dir.create(path)` : créer un dossier
-	* :code:`file.create(path)` : créer un fichier
-	* :code:`file.exists(path)` : TRUE si existe sinon FALSE
-	* :code:`file.info(path)` : infos sur un fichier
-	* :code:`file.copy(path,new_path)` : copie un fichier
-	* :code:`file.rename(path,new_path)` : renomme un fichier
-
-.. [#2] :code:`file.path("dossier1", "dossier2", "fichier")`. Le path marche sous tout
-	système d'exploitation (donc mettra des / sous Linux et des \\ sous Windows).
-
-Manipulation de chaine de caractères
-
-	* :code:`paste(s1, ..., collapse = C)` : fusionne les résultats en les séparant par C
-	* :code:`paste(s1, ..., sep = S)` : s1, ... sont fusionnés avec le séparateur S entre
-
-Vous pouvez générer des fichiers contenant un graphique les fonctions (:code:`pdf(path)`,
-:code:`jpeg(path),`, :code:`png(path)`, ...). Elle créent un périphérique graphique
-qui sera utilisé plutôt que celui par défaut pour dessiner le graphique. Pour fermer
-le périphérique, utilisez :code:`dev.off()`. Vous pouvez aussi faire
-une sauvegarde du device avec :code:`dev.copy(device=format,"nom")`.
-
-7. Affichage graphique
-========================
-
-Les fonctions basiques sont : :code:`plot` (graphique),
-:code:`hist` (histogramme), curve, pie, barplot, biplot, image, ...
-Elles ont toutes les mêmes arguments ou presque
-
-	* :code:`main = "titre"` : titre
-	* :code:`xlab = "titre x"` : titre de l'axe x
-	* :code:`ylab = "titre y"` : titre de l'axe y
-	* :code:`xlim = valeur` : limite supérieure x
-	* :code:`ylim = valeur` : limite supérieure y
-	* :code:`col = couleur` : couleur de qqch (ex: red(1.0), package crayon)
-	* :code:`border = couleur` : couleur de bordure (histogramme, ...)
-	* :code:`breaks = seq(...)` : augmenter le séquencement (histogramme, plus de blocs)
-	* :code:`type = "l"` : l=ligne, b=ligne avec points (plot)
-
-Il faut utiliser :code:`proba = TRUE` pour pouvoir par exemple obtenir
-la densité (:code:`density(..., adjust = valeur)`). Si valeur vaut plus petite
-que 1 alors on regarde le cas discret et si la valeur est plus grande alors on
-regarde le cas continu.
-
-Si vous avez beaucoup de points qui se superposent, vous pouvez utiliser
-:code:`jitter` ou :code:`sunflowerplot` pour identifier les endroits concernés.
-
-Certains fonctions peuvent prendre une table et donne un graphique :
-:code:`hist` (donne un diagramme batons), :code:`pie` (camembert), :code:`balloonplot`
-(tableau de contingence)....
-
-Les fonctions de dessin (appliquées sur le dernier graphique)
-
-	* :code:`points` : dessine des points
-	* :code:`line` : dessine des points
-	* :code:`legend` : ajouter une légende
-	* :code:`title` : ajouter un titre
-	* :code:`mtext` : ajouter un texte
-	* :code:`abline` : trace une droite y=bx+a (paramètres h=x ou v=y si besoin)
-	* Autres : rect, segments, polygon, box, grid, ...
-
-La fonction par permet de définir l'environnement (fond, ...) et est utilisée
-avant les dessins pour les prochains dessins (ex: :code:` par(bg="...")`).
-
-8. RMarkdown
-===========================
-
-Le RMarkdown (fichier .Rmd) est basé sur le Markdown donc vous aurez
-plus d'infos sur le cours de Markdown. Voici un exemple
-de fichier, avec des métadonnées.
-
-.. code:: md
-
-	---
-	title: "Titre du document"
-	output: html_document
-	---
-
-	# Header1
-	## Header2
-	### Header3
-	....
-
-	[texte affiché](lien)
-	![texte si image non trouvée](chemin)
-
-	*Un texte en italique*
-	**Un texte en gras**
-
-	> une citation
-
-	```{r}
-	Code en R
-	```
-
-Bloc de code
-	Vous pouvez créer un bloc de code avec CTRL+ALT+I. Vous pouvez même éditer
-	le code (completion, ...) et le compiler pour faire apparaitre le résultat
-	dans le fichier.
-
-	Vous pouvez faire
-
-		* :code:`{r  include = FALSE}` : compilé mais non affiché
-		* :code:`{r  echo = FALSE}` : compilé mais n'affiche pas le code
-		* :code:`{r  message = FALSE}` : compilé, pas de messages
-		* :code:`{r  warning = FALSE}` : compilé, pas de warnings
-
-Lien utile : https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf
-
-9. Exercices
-==============
-
-.. toctree::
-    :name: exercices
-    :maxdepth: 1
-
-		Introduction				<exercices/intro>
+		Vecteurs    <files/types/c>
+		Matrices    <files/types/matrix>
+		Listes      <files/types/list>
+		Facteurs    <files/types/factor>
 
 -----
 
