@@ -28,11 +28,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/files/v.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/tmp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/tmp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats/files/rfunc.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/files/rfunc.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functional/r/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -73,7 +72,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
-    <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="DatabaseDriversLRU" value="mariadb&#10;postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -82,7 +81,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/functional/r/files/types" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -344,7 +343,17 @@
       <workItem from="1612787829790" duration="19023000" />
       <workItem from="1612809277221" duration="90000" />
       <workItem from="1612818174803" duration="5694000" />
-      <workItem from="1612857069678" duration="31178000" />
+      <workItem from="1612857069678" duration="31373000" />
+      <workItem from="1612910862895" duration="1199000" />
+      <workItem from="1612963818097" duration="3000" />
+      <workItem from="1613052681570" duration="207000" />
+      <workItem from="1613063835251" duration="1245000" />
+      <workItem from="1613086839199" duration="600000" />
+      <workItem from="1613088967862" duration="1029000" />
+      <workItem from="1613091445512" duration="1320000" />
+      <workItem from="1613117853676" duration="3000" />
+      <workItem from="1613125925659" duration="1431000" />
+      <workItem from="1613216047825" duration="1091000" />
     </task>
     <servers />
   </component>

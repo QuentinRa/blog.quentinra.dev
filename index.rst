@@ -153,6 +153,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     ReStructured Text (rst)             <utils/rst>
     Git                                 <utils/git>
     Vim (Vi IMproved)                   <utils/vim>
+    Jetbrains                           <utils/jetbrains>
 
 -----
 
