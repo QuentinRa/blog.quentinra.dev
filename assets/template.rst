@@ -5,7 +5,7 @@ NOM
 ================================
 
 | :math:`\color{grey}{Version \ 0.0.1}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 25/01/2021}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 16/02/2021}`
 
 1. Nom de partie
 ===================================
