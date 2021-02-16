@@ -79,7 +79,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/functional/r/files/types" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -352,7 +352,8 @@
       <workItem from="1613117853676" duration="3000" />
       <workItem from="1613125925659" duration="1431000" />
       <workItem from="1613216047825" duration="1215000" />
-      <workItem from="1613490820999" duration="2454000" />
+      <workItem from="1613490820999" duration="2919000" />
+      <workItem from="1613493776449" duration="842000" />
     </task>
     <servers />
   </component>

@@ -2,7 +2,7 @@
 Jetbrains
 ==============
 
-| :math:`\color{grey}{Version \ 0.1.3}`
+| :math:`\color{grey}{Version \ 0.1.4}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 16/02/2021}`
 
 Cette page contiendra des tutoriels sur les logiciels
@@ -31,6 +31,8 @@ Vous pouvez installer la Jetbrains toolbox pour gérer tout ça facilement : htt
 Les logiciels sont payants mais vous pouvez les avoir gratuitement en étant étudiant
 (https://www.jetbrains.com/shop/eform/students).
 
+Je parlerais de jetbrains pour parler des logiciels de Jetbrains.
+
 2. Raccourcis
 ======================
 
@@ -52,18 +54,30 @@ Vous avez aussi les raccourcis basiques (autre que CTRL-F) comme CTRL-A (tout s�
 CTRL-V (coller), SHIFT-BEGIN (sélection de position jusqu'au début de la ligne), SHIFT-END (sélection de position
 jusqu'à la fin de la ligne) ou encore les SHIFT-FLECHE.
 
+Petite précision, jetbrains souligne un mot/... en
+
+	* jaune : une possible erreur ou documentation manquante
+	* rouge : une erreur
+	* vert : une erreur typographique
+	* gris (pas souligné mais il change le mot en gris) : variable/méthode/classe non utilisée
+
+Vous pouvez faire alt+entrée dessus pour obtenir des suggestions pour résoudre le problème.
+
 3. Général
 ======================
 
 On rappelle que si vous ne trouvez pas un menu, essayer de faire shift+shift puis
-:code:`Change font size` ou :code:`Mark Modified` par exemple pour les deux options expliquées
-juste après.
+:code:`Change font size` ou :code:`Mark Modified` par exemple.
 
 Vous pouvez faire en sorte que la molette puisse vous permettre de zoomer/dé-zoomer le code
 dans Settings > Editor > General puis Change font size ... (première ligne).
 
 Vous pouvez afficher une petite :code:`*` après le nom du fichier s'il a été modifié (si vous
 utilisez git c'est inutile) avec Settings > Editor > General > Editor tabs puis :code:`Mark Modified (*)`.
+
+Vous pouvez changer la langage de la correction orthographique avec Settings > Editing > Proofreading
+puis ajouter/retirer des langages mais par expérience la correction orthographique n'est pas toujours
+activée (si vous écrivez un .md vous verrez qu'elle est puissante enfin plus que dans les autres fichiers).
 
 .. toctree::
    :maxdepth: 1
@@ -72,11 +86,17 @@ utilisez git c'est inutile) avec Settings > Editor > General > Editor tabs puis 
 		Database <jetbrains/db>
 		Todo     <jetbrains/todo>
 		Terminal <jetbrains/terminal>
+		Snippets <jetbrains/snippets>
 
 4. PHPStorm
 ============================
 
 Vous pouvez sélectionner la version php en bas à droite.
+
+Parfois phpstorm ne détecte pas que vous utilisez une méthode, ... si vous
+n'avez pas explicitement écrit dans l'appel dans le code. Vous pouvez faire
+de la phpdoc avec :code:`/** @see class::method() **/` par exemple pour lui faire
+comprendre que la méthode est utilisée (et/ou la classe).
 
 .. toctree::
    :maxdepth: 1
