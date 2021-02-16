@@ -2,59 +2,86 @@
 Jetbrains
 ==============
 
-| :math:`\color{grey}{Version \ 0.0.1}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 13/02/2021}`
+| :math:`\color{grey}{Version \ 0.1.3}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 16/02/2021}`
 
 Cette page contiendra des tutoriels sur les logiciels
 jetbrains donc PHPStorm, IntelliJ Idea, CLion, WebStorm...
 
-1. PHPStorm
+1. Général
+============
+
+Jetbrains propose des logiciels appelés IDE car ils vous aident à coder en vous donnant des suggestions
+par exemple ou avec plein de fonctionnalités (intégration de base de données, correction orthographique,
+intégration git, générer des diagrammes UML...).
+
+Contrairement à un IDE comme VSCode qui est polyvalent (Jack of all trades, master of none)
+vous devez utiliser un IDE spécialité dans chaque langage. Toutes les interfaces
+se ressemblent mais c'est généralement lourd (par exemple 10Go pour 3 IDE).
+
+	* IntelliJ IDEA, dit idea : :code:`java, ocaml, R` (et gradle/maven)
+	* PHPStorm, Webstorm : :code:`php, html, js, bootstrap, css` et les framework js
+	* CLion : :code:`C, C++`
+	* PyCharm, Datalore : :code:`python` et analyse de données
+	* YouTrack : utile pour la gestion de projet
+	* CodeWithMe : plugin pour faire du pair-programming
+
+Vous pouvez installer la Jetbrains toolbox pour gérer tout ça facilement : https://www.jetbrains.com/toolbox-app/.
+
+Les logiciels sont payants mais vous pouvez les avoir gratuitement en étant étudiant
+(https://www.jetbrains.com/shop/eform/students).
+
+2. Raccourcis
+======================
+
+Voici quelques raccourcis
+
+	* :code:`shift+shift` : ouvre une fenêtre permettant de rechercher options, classes, fichiers récents, ...
+	* :code:`CTRL+F` : rechercher un mot/...
+	* :code:`CTRL+SHIFT+F` : rechercher un mot/... dans tout le projet
+	* :code:`Clic droit` (dans un fichier)
+
+		* :code:`open in` : ouvrir dans un explorateur de fichiers
+		* :code:`generate` : générer les getters/toString/... en java
+		* :code:`git` : voir les anciennes versions, ...
+		* :code:`refactor` : renommer fichier, ...
+
+	* :code:`CTRL-D` : si rien sélectionné duplique la ligne sinon duplique la sélection
+
+Vous avez aussi les raccourcis basiques (autre que CTRL-F) comme CTRL-A (tout sélectionner), CTRL-C (copier),
+CTRL-V (coller), SHIFT-BEGIN (sélection de position jusqu'au début de la ligne), SHIFT-END (sélection de position
+jusqu'à la fin de la ligne) ou encore les SHIFT-FLECHE.
+
+3. Général
+======================
+
+On rappelle que si vous ne trouvez pas un menu, essayer de faire shift+shift puis
+:code:`Change font size` ou :code:`Mark Modified` par exemple pour les deux options expliquées
+juste après.
+
+Vous pouvez faire en sorte que la molette puisse vous permettre de zoomer/dé-zoomer le code
+dans Settings > Editor > General puis Change font size ... (première ligne).
+
+Vous pouvez afficher une petite :code:`*` après le nom du fichier s'il a été modifié (si vous
+utilisez git c'est inutile) avec Settings > Editor > General > Editor tabs puis :code:`Mark Modified (*)`.
+
+.. toctree::
+   :maxdepth: 1
+
+		Git      <jetbrains/git>
+		Database <jetbrains/db>
+		Todo     <jetbrains/todo>
+		Terminal <jetbrains/terminal>
+
+4. PHPStorm
 ============================
 
-...
+Vous pouvez sélectionner la version php en bas à droite.
 
-**Configuration remote**
+.. toctree::
+   :maxdepth: 1
 
-Si vous voulez travailler sur un serveur distant, alors vous devez faire
-
-	* Nouveau projet (from existing files)
-	* Vous choisissez le serveur "Webserver is a remote host, ... ftp"
-	* Vous donnez les informations (dossier/nom) du projet localement
-	* Vous faites ajouter un remote serveur
-
-		* Nom : juste un nom pour le retrouver
-		* Type: FTP ou SFTP (si ssh)
-		* Host: le host FTP PORT 21 (ou SFTP donc pour utiliser un compte ssh, PORT 22)
-		* Username et Password : si FTP alors vos informations de connection
-		* Root path: votre domicile (faites Autodetect)
-		* WebServerUrl: l'URL http/https pour accéder au server par exemple `http://pgsql.pedago.ensiie.fr/~prenom.nom/`
-
-	*
-
-		Ensuite sélectionner (et/ou créer) le dossier dans lequel les fichiers seront mis sur
-		le serveur (typiquement dans public_html vous ajouter un dossier)
-
-	* Ensuite vous devez adapter l'URL du serveur pour qu'elle aille cherche le nouveau dossier créer
-	* Attends dans Settings > Build ..., Deployment > Deployment (cliquez sur la flèche pour déplier) > Options
-	*
-
-		Changer la ligne "Upload changed files automatically ..." et mettre "on ... save action" pour que ce soit fait à chaque CTRL-S s'il y a
-		eu des modifications.
-
-Voici un code de test sur le serveur de l'ensiie, pour se connecter à la base de données (accessible
-uniquement en intra)
-
-.. code:: php
-
-		<?php
-
-		error_reporting(E_ALL);
-		ini_set("display_errors", 1);
-
-		$c = new PDO("pgsql:dbname=tpphp;host=pgsql2;port=5432", "tpphp", "tpphp");
-
-
-
+		Configuration Remote      <jetbrains/remote>
 
 -----
 
