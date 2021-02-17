@@ -41,8 +41,6 @@
 
 ------------------ outils
 
-pandoc .\f.rst -f rst -t latex -o res.tex
-
 Général
 	* (embauche) https://www.fiverr.com/
 	* (emoji) https://emojipedia.org/smiling-face-with-halo/

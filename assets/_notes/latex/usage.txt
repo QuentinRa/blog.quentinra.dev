@@ -1,0 +1,2 @@
+pandoc ./f.rst -f rst -t latex -o res.tex
+pandoc .\f.rst -f rst -t latex -o res.tex
