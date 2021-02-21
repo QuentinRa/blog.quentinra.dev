@@ -1,0 +1,5 @@
+Dans la deuxième approche, il s'agit d'une méthodologie extrême appelée :code:`Test-driven development`
+(TDD ou développement piloté par les tests), qui sera vu en dernière partie avec le BDD.
+
+On parle de **test unitaire** lorsqu'on test une partie d'un programme/logiciel ce qui
+se rapporte souvent à une méthode.
