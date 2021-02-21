@@ -28,10 +28,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/_notes/latex/f.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/_notes/latex/template.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/save.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/template.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/ihm/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/ihm/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -78,7 +78,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/functional/r/files/types" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/conception/tests" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
@@ -86,11 +86,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\conception\tests" />
       <recent name="C:\Users\quent\Documents\texas-res\functional\r\files\types" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\math\stats\desc" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\stats\tests" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\stats\desc" />
-      <recent name="C:\Users\quent\Documents\texas-res\functional\r\exercices\intro" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\assets\_notes\latex" />
@@ -363,7 +363,15 @@
       <workItem from="1613507957732" duration="30000" />
       <workItem from="1613511898233" duration="65000" />
       <workItem from="1613555381061" duration="4000" />
-      <workItem from="1613556593507" duration="144000" />
+      <workItem from="1613556593507" duration="826000" />
+      <workItem from="1613836845352" duration="5000" />
+      <workItem from="1613859817342" duration="14000" />
+      <workItem from="1613860003402" duration="1000" />
+      <workItem from="1613862384510" duration="2000" />
+      <workItem from="1613862402798" duration="2000" />
+      <workItem from="1613862450454" duration="324000" />
+      <workItem from="1613909563342" duration="3651000" />
+      <workItem from="1613917061773" duration="3416000" />
     </task>
     <servers />
   </component>

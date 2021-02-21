@@ -1,0 +1,39 @@
+## Data analysis
+
+https://r.developpez.com/tutoriels/introduction-r/
+
+## Web
+
+https://pointybrackets.wordpress.com/2016/12/02/testing-methods-that-redirect-with-phpunit/
+https://nodejs.org/docs/latest-v13.x/api/
+https://revealjs.com/#/30
+https://freehtml5.co/
+
+## Prog
+
+### Functional
+
+https://fdopen.github.io/opam-repository-mingw/installation/
+https://reasonml-editor.github.io/reasonml-idea-plugin/docs/get-started/project-configuration/
+
+## Databases
+
+https://neo4j.com/docs/cypher-manual/current/introduction/quering-updating-administering/
+
+## business
+
+### docs
+
+https://www.legalplace.fr/guides/politique-de-confidentialite-rgpd/
+https://www.enseignementsup-recherche.gouv.fr/cid79926/statut-national-etudiant-entrepreneur.html
+
+## utils
+
+### latex
+
+https://cocalc.com/
+
+### exercices
+
+https://www.quiziniere.com/
+show result and ask how to have this
