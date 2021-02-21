@@ -1,7 +1,8 @@
-Autres
+##Autres
+
 -- wsl
 https://www.computerhope.com/issues/ch001879.htm
---- reines
+-- reines
 http://zanotti.univ-tln.fr/ALGO/I51/Reines.html
 
 ## Data analysis
@@ -37,6 +38,10 @@ https://www.digitalocean.com/community/tutorials/how-to-configure-the-apache-web
 https://www.cyberciti.biz/faq/star-stop-restart-apache2-webserver/
 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-debian-10
 https://www.alsacreations.com/tuto/lire/614-Serveur-mail-Postfix.html
+---
+https://ubuntu.com/server/docs/network-introduction
+https://www.smarthomebeginner.com/ubuntu-home-server-on-virtualbox/
+https://www.smarthomebeginner.com/install-ubuntu-server-on-virtualbox/
 
 api-rest
 https://www.taniarascia.com/the-simplest-php-router/
@@ -80,6 +85,15 @@ https://stackoverflow.com/questions/5396778/create-windows-installer-for-java-pr
 https://wixtoolset.org/
 https://stackoverflow.com/questions/1385866/java-run-as-administrator
 https://nipafx.dev/java-getting-rid-of-anonymous-classes/
+https://stackoverflow.com/questions/758083/how-do-i-put-a-java-app-in-the-system-tray
+https://stackoverflow.com/questions/5349642/how-to-set-icon-for-jframe-window-and-tray
+https://www.tutorialspoint.com/sqlite/sqlite_java.htm
+https://github.com/srikanth-lingala/zip4j
+https://stackoverflow.com/questions/13728902/powershell-script-after-install
+https://jrsoftware.org/ishelp/index.php?topic=consts&anchor=userappdata
+https://github.com/MrMarnic/JavaDownloadLibrary/blob/master/src/me/marnic/jdl/Downloader.java
+https://www.baeldung.com/java-download-file
+https://docs.spring.io/spring-security/site/docs/4.2.4.RELEASE/apidocs/org/springframework/security/crypto/password/Pbkdf2PasswordEncoder.html
 
 https://litiengine.com/docs/
 

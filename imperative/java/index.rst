@@ -26,6 +26,10 @@ Le vocabulaire est requis avant de continuer. Avoir Java d'installé, ça aide.
 		Vocabulaire      <intro/vocab>
 		Installation     <intro/install>
 
+Java implémente le paradigme de l'iceberg. Les classes sont des conteneurs
+privés dont vous ne voyez que le nom de la classe et les méthodes/attributs publics. Ainsi, le
+code des méthodes est caché et peut être changé.
+
 2. Introduction :code:`code`
 ==============================
 

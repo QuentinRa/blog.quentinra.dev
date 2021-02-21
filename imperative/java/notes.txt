@@ -1,13 +1,38 @@
 ------------------
 
+surcharge ?
+final variable;
+
+Constructeur par défaut, valué, de copie (Deep/Shallow)
+
+this()
+
+méthode/classe final
+
+passage valeur/référence.
+
 itérateur
 
-.class
-introspection
-(.getClass())
-.class
+------ introspection
+.class/getClass()
+Class.isInstance()
+Class.getSimpleName()
 
-Classes sympas
+------ Interfaces fonctionnelles
+
+Un grand nombre d’interfaces du JDK ne déclarent qu’une
+seule méthode abstraite : Single Abstract Method
+
+l’annotation @FunctionalInterface force le compilateur à vérifier
+ces conditions
+@FunctionalInterface
+
+Méthodes default ou de object ne comptent pas.
+
+Forme particulière de l’appel explicite des méthodes par défaut de l’interface mère
+ComplexFuncInterface.super.doSomeOtherWork();
+
+------ Classes sympas
 
 JOptionPane //affiche un popup de dialog
 System //retourne un saut de ligne du système, système d'exploitation actuel, ...

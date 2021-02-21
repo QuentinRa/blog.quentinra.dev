@@ -228,4 +228,12 @@ Test-driven development (TDD)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* aucune
+	* https://luc-hermitte.developpez.com/tutoriels/c++/programmation-par-contrat/partie-1-un-peu-theorie/
+	* https://julien-blanc.developpez.com/articles/cpp/Programmation_par_contrat_cplusplus/
+	* https://www.developpez.com/actu/109767/Quelques-points-cles-sur-la-programmation-defensive-destinee-a-assurer-la-fonction-continue-d-un-logiciel-dans-des-circonstances-imprevues/
+	* https://baptiste-wicht.developpez.com/tutoriels/java/tests/mocks/easymock/
+	* https://www.tutorialspoint.com/software_testing_dictionary/test_driven_development.htm
+	* https://paulund.developpez.com/tutoriels/php/developpement-pilote-tests/
+	* https://gfx.developpez.com/tutoriel/java/junit/
+	* https://openclassrooms.com/fr/courses/3504461-testez-linterface-de-votre-site/4270561-pourquoi-ecrire-des-tests
+	* https://duckduckgo.com/?q=d%C3%A9veloppement+pilot%C3%A9+par+les+tests&ia=web&atb=v230-1
