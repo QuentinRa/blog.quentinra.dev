@@ -9,6 +9,11 @@ Tests
 
 Le but premier est de vérifier si un logiciel fait bien ce qu’il doit faire.
 
+Pour lire ce cours, sachez que les première parties sont très facile à lire
+(peu complexes) mais beaucoup de blabla qui vous aidera à avoir une vision
+de ce qu'on veut faire. En théorie, vous pouvez directement sauter aux
+tests dans votre langage et revenir aux premières parties (si vous êtes perdus) plus tard.
+
 1. Introduction aux tests
 ===================================
 
@@ -115,19 +120,46 @@ et pour CORRECT (le B), on a
 	* :code:`C` : cardinalité (fait varier la taille des données, bon nombre de valeurs reçu?)
 	* :code:`T` : temps (appelé dans le bon ordre donc connexion avant fetch par exemple pour une base de données...)
 
-5.
-=====================
+5. Méthode SOLID
+====================
+
+...
+
+6. Assertions et framework de tests
+==========================================
+
+Les assertions sont un "print" qui permet d'asserter (confirmer xD) les valeurs
+d'invariants, ... Le forme généralement en JAVA par exemple est :code:`assert(condition) : "message"`.
+
+Les frameworks de test ont tous repris la même idée donc vous aurez
+un paquet de méthodes :code:`assert...` comme :code:`assertTrue()`.
+
+Un test va être un ensemble d'assertions, et il est considéré comme
+réussi si toutes ses assertions sont vraies.
+
+Dans tous les frameworks de tests vus ici, vous allez créer une classe de tests par
+exemple :code:`AllTests.java`, et coder des méthodes dont le nom doit généralement
+commencer par :code:`test` (sauf en java ce n'est pas obligé).
 
 7. Tests en JAVA avec JUnit
 ============================
 
-Programmation par contrat/défensive
-	On utilise des méthodes comme :code:`Object.requireNonNull(Object)`, ...
-	et on retourne des exceptions comme :code:`IllegalArgumentException` (argument pas bon)
-	ou :code:`IllegalStateException` (préconditions empêchent de continuer car pas bonnes).
+De façon générale
 
-	Sinon pour tester les préconditions vous ferez généralement simplement des comparaisons
-	mais parfois il existe des méthodes déjà faites comme vu plus haut.
+.. toctree::
+	 :maxdepth: 1
+
+			Programmation par contrat/défensive <java/pre>
+			Assertions en java                  <java/as>
+
+Avec JUnit (version 4 ou 5). Le cours s'oriente vers JUnit 5
+mais a été anciennement rédigé pour JUnit4.
+
+.. toctree::
+	 :maxdepth: 1
+
+			Introduction                  <java/junit/intro>
+			Démarrage rapide (IntelliJ)   <java/junit/idea>
 
 -----
 

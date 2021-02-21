@@ -256,6 +256,8 @@ aucun
 **Références**
 	* https://fr.wikipedia.org/wiki/Skeuomorphisme
 	* https://www.nngroup.com/articles/ten-usability-heuristics/
+	* https://duckduckgo.com/?q=card+sorting&ia=web&atb=v230-1
+	* https://www.optimalworkshop.com/
 
 	* logiciels/outils
 

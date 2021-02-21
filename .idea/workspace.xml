@@ -31,6 +31,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conception/ihm/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/ihm/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conception/tests/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/tests/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/tests/temp.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/jetbrains.rst" beforeDir="false" afterPath="$PROJECT_DIR$/utils/jetbrains.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/z-link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/z-link.txt" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
@@ -78,7 +80,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/conception/tests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/conception/tests/java/junit" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
@@ -86,18 +88,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\conception\tests\java\junit" />
       <recent name="C:\Users\quent\Documents\texas-res\conception\tests" />
       <recent name="C:\Users\quent\Documents\texas-res\functional\r\files\types" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\math\stats\desc" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\stats\tests" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\stats\desc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\conception\tests\junit" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\_notes\latex" />
       <recent name="C:\Users\quent\Documents\texas-res\functional\r\files\part" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\stats\__files" />
       <recent name="C:\Users\quent\Documents\texas-res\maths" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\stats" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -371,7 +373,7 @@
       <workItem from="1613862402798" duration="2000" />
       <workItem from="1613862450454" duration="324000" />
       <workItem from="1613909563342" duration="3651000" />
-      <workItem from="1613917061773" duration="9555000" />
+      <workItem from="1613917061773" duration="12444000" />
     </task>
     <servers />
   </component>
