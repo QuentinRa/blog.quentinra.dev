@@ -4,7 +4,7 @@
 Tests
 ================================
 
-| :math:`\color{grey}{Version \ 0.0.1}`
+| :math:`\color{grey}{Version \ 0.4.7}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 21/02/2021}`
 
 Le but premier est de vérifier si un logiciel fait bien ce qu’il doit faire.
@@ -160,6 +160,67 @@ mais a été anciennement rédigé pour JUnit4.
 
 			Introduction                  <java/junit/intro>
 			Démarrage rapide (IntelliJ)   <java/junit/idea>
+
+8. Tests en PHP avec PHPUnit
+==============================
+
+...
+
+9. Tests en C avec CUnit
+==============================
+
+...
+
+10. Méthodologies extrêmes
+==============================
+
+Behavior driven development (BDD)
+	Le behavior driven development (BDD) consiste à imaginer les comportements liés à la
+	fonctionnalité (méthode) avant de la coder.
+
+		* que doit faire ma méthode
+		* est-ce que ça corresponds à ce qu'on attends
+		* quels problèmes/... l'ajout de ma méthode peut poser
+
+	La syntax du BDD est :
+
+		* étant donné (Given) une action (utilisateur est/fait)
+		* Quand (When) cet action entraine...
+		* Alors (Then) je fais...
+		* Et (And) cela entraine...
+
+	On écrit les cas négatif et positifs (tous les cas).
+
+	Je n'ai pas encore trouvé d'utilité à l'utiliser mais les 4 étapes (Given, when, then, and)
+	peuvent aider à la conception de tests.
+
+Test-driven development (TDD)
+	Le développement piloté par les tests (TDD) consiste en la création de tests avant même
+	que l’application soit créé.
+
+	Le principe consiste à écrire des bouts de codes, et de ne les relier ensembles qu’à la fin.
+	Donc en gros on écrit la méthode X qui est demandée par le test Y et ce pour chaque test. Puis on fusionne
+	toutes les méthodes et on obtient un programme.
+
+	Le procédé est de la forme :
+
+		* Crée des tests
+		* Lance les tests, vérifie qu’ils échouent car pas encore codés
+		* Écrit du code pour réussir un test (et les précédents test aussi s'il y en avait)
+		* Lance les tests et on vérifie qu’il passe
+		* et on recommence
+
+	Ensuite, on factorise le code et on revérifie les tests.
+
+	Pour penser nos test, on pense à quel fonctionnalités notre programme doit avoir.
+	On pense ensuite des tests pour chacune d’entre elles. C'est généralement très dur car vous n'avez
+	rien codé donc ne connaissez ni classes ni méthodes. Il faudra les inventer en écrivant les tests.
+
+.. toctree::
+	 :maxdepth: 1
+
+			TDD en java (méthode 1)   <java/tdd>
+			TDD en java (méthode 2)   <java/tdd2>
 
 -----
 
