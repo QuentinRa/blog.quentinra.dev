@@ -49,11 +49,14 @@ Regarder le dependencies de l'installation gradle pour vous faire une idée.
 On considère que vous avez un dossier libs contenant tous vos .jar (téléchargés
 sur mvnrepository par exemple).
 
+Vous pouvez trouver de l'aide plus complète
+pour junit4 ici : https://www.tutorialspoint.com/junit/junit_environment_setup.htm.
+
 .. code:: bash
 
 	# junit4
 	$ javac -cp ".:libs/*" TestSuite.java
-	$ java -cp ".:libs/*" org.junit.runner.JUnitCore TestSuite.java
+	$ java -cp ".:libs/*" org.junit.runner.JUnitCore TestSuite
 
 	###############
 	#### junit5

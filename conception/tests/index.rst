@@ -155,12 +155,17 @@ De façon générale
 Le cours s'oriente vers JUnit 5
 mais a été anciennement rédigé pour JUnit4.
 
+Essayer de donner un nom significatif à vos fichiers comme
+TestNomClasse ou TestNomClasseMethode.
+
 .. toctree::
 	 :maxdepth: 1
 
 			Introduction                      <java/junit/intro>
 			Démarrage rapide (IntelliJ)       <java/junit/idea>
 			JUnit4, lancer une suite de tests <java/junit/suite>
+			Structure d'une classe de tests   <java/junit/class>
+			Le code d'un test                 <java/junit/test>
 
 8. Tests en PHP avec PHPUnit
 ==============================

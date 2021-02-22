@@ -31,6 +31,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conception/tests/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/tests/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conception/tests/java/junit/intro.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/tests/java/junit/intro.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/tests/java/junit/suite.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/tests/java/junit/suite.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -375,7 +376,7 @@
       <workItem from="1613942676529" duration="1887000" />
       <workItem from="1613944807556" duration="1000" />
       <workItem from="1613944873410" duration="852000" />
-      <workItem from="1613996230200" duration="5862000" />
+      <workItem from="1613996230200" duration="9722000" />
     </task>
     <servers />
   </component>
