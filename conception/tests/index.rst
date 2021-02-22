@@ -194,7 +194,8 @@ Je n'ai pas testé, mais il semble possible d'utiliser des annotations
 
 Le fonctionnement étant le même qu'en Java, je permettrais d'aller un peu vite sur la théorie.
 
-...
+sudo apt-get install libcunit1-ncurses-dev
+ls /usr/include/CUnit
 
 10. Méthodologies extrêmes
 ==============================
@@ -266,3 +267,4 @@ Test-driven development (TDD)
 	* https://stackoverflow.com/questions/52373469/how-to-launch-junit-5-platform-from-the-command-line-without-maven-gradle
 	* https://junit.org/junit5/docs/current/user-guide/#running-tests-console-launcher
 	* https://openclassrooms.com/fr/courses/6100311-testez-votre-code-java-pour-realiser-des-applications-de-qualite/6440036-tirez-un-maximum-de-ce-cours
+	* https://manpages.debian.org/unstable/libcunit1-ncurses-dev/CUnit.3.en.html

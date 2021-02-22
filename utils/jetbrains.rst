@@ -115,3 +115,4 @@ comprendre que la méthode est utilisée (et/ou la classe).
 	* https://www.jetbrains.com/help/phpstorm/creating-a-remote-server-configuration.html
 	* https://www.jetbrains.com/help/phpstorm/configuring-synchronization-with-a-remote-host.html#server-access-config
 	* https://www.jetbrains.com/help/phpstorm/uploading-and-downloading-files.html#automaticUploadOnUpdate
+	* https://www.jetbrains.com/help/clion/remote-projects-support.html#ipv6

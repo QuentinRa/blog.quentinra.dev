@@ -1,0 +1,87 @@
+=======================
+This is my recap
+=======================
+
+Nourriture
+------------
+
+Sakana = poisson
+Niku = viande
+Yasai = légumes
+
+**repas**
+
+Sashimi
+Sushi
+Tempura
+Kuudon
+Kare (cury)
+ramen
+udon
+soba
+nato
+umeboshi
+wazabi
+
+**boissons**
+
+kohi (café)
+Kocha (thé noir)
+ocha (thé)
+mizu (eau)
+juice (jus)
+kola (coca)
+biru (bière)
+osake (alcool/riz fermenté)
+
+**petit dej**
+
+gohan (riz)
+pan (pain)
+tamago (oeuf)
+yoguruto (yaourt)
+shiriaru (céréales)
+kudamono (fruit)
+safura (salade)
+soupo (soupe)
+mizushiru (?)
+guiuniu (lait)
+tomato/orange/ringo juice
+
+Table
+----------------
+
+tabemasu = manger
+	* Question : nihon no tabemono nani ga suki desu ka?
+
+nomimasu = boire
+	* Question : nani o nomimasu ka ?
+	* Rep : <truc> o nomimasu
+
+asagohan = petit déjeuner
+	* Question : asagohan o tabemasuka?
+	* Rep : hai, <truc> tabemasu
+	* Rep : iee, asagohan o tabemasen
+	* Question : asagohan itsumo nani o tabemasuka?
+	* Rep: Watashi wa <truc> o tabemasu.
+
+Général
+	* onegaishimasu : svp
+	* keeko : non merci (ketsukou)
+	* jaa : well, et bien
+
+J'aime : <truc> ga suki desu.
+Je n'aime pas : <truc> wa suki janai (j'iyanai) desu.
+Question : <truc> ga suki desu ka ?
+	* hai, suki desu
+	* {truc ha} chotto (pas trop, cha'yotsuto)
+
+itsumo : tout le temps
+yoku : souvent (positif)
+amari : rarement (négatif)
+
+Autres
+-----------
+
+izakaya = resto japonais
+kouhen = park
