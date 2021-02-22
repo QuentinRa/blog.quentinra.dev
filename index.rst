@@ -93,9 +93,9 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
 
     Interfaces Homme-Machine             <conception/ihm/index>
     Unified Modeling Language (UML)      <conception/uml/index>
-    Model-driven development (MDD)       <conception/mdd/index>
     Patrons de conception                <conception/patrons/index>
-    Tests (PHP/C/JUnit, TDD, BDD)        <conception/tests/index>
+    Tests (PHP/C/JUnit)                  <conception/tests/index>
+    Méthodologies extrêmes (MDD,TDD...)  <conception/me/index>
 
 .. toctree::
     :caption: Langages de bases de données

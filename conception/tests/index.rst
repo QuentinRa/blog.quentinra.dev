@@ -26,7 +26,7 @@ Il existe deux grandes familles de tests et une famille intermédiaire :
 Il existe deux approches pour vos tests
 
 	* faire des tests pour vérifier les comportement de votre code (Tests unitaires)
-	* faire des tests pour forcer votre code s'adapter pour valider des tests (TDD, BDD)
+	* faire des tests pour forcer votre code s'adapter pour valider des tests (TDD, BDD) vu dans les méthodologies extrêmes.
 
 Test unitaires
 	Lorsqu'on test une partie d'un programme/logiciel ce qui se rapporte souvent à une méthode
@@ -197,60 +197,11 @@ Le fonctionnement étant le même qu'en Java, je permettrais d'aller un peu vite
 sudo apt-get install libcunit1-ncurses-dev
 ls /usr/include/CUnit
 
-10. Méthodologies extrêmes
-==============================
-
-Behavior driven development (BDD)
-	Le behavior driven development (BDD) consiste à imaginer les comportements liés à la
-	fonctionnalité (méthode) avant de la coder.
-
-		* que doit faire ma méthode
-		* est-ce que ça corresponds à ce qu'on attends
-		* quels problèmes/... l'ajout de ma méthode peut poser
-
-	La syntax du BDD est :
-
-		* étant donné (Given) une action (utilisateur est/fait)
-		* Quand (When) cet action entraine...
-		* Alors (Then) je fais...
-		* Et (And) cela entraine...
-
-	On écrit les cas négatif et positifs (tous les cas).
-
-	Je n'ai pas encore trouvé d'utilité à l'utiliser mais les 4 étapes (Given, when, then, and)
-	peuvent aider à la conception de tests.
-
-Test-driven development (TDD)
-	Le développement piloté par les tests (TDD) consiste en la création de tests avant même
-	que l’application soit créé.
-
-	Le principe consiste à écrire des bouts de codes, et de ne les relier ensembles qu’à la fin.
-	Donc en gros on écrit la méthode X qui est demandée par le test Y et ce pour chaque test. Puis on fusionne
-	toutes les méthodes et on obtient un programme.
-
-	Le procédé est de la forme :
-
-		* Crée des tests
-		* Lance les tests, vérifie qu’ils échouent car pas encore codés
-		* Écrit du code pour réussir un test (et les précédents test aussi s'il y en avait)
-		* Lance les tests et on vérifie qu’il passe
-		* et on recommence
-
-	Ensuite, on factorise le code et on revérifie les tests.
-
-	Pour penser nos test, on pense à quel fonctionnalités notre programme doit avoir.
-	On pense ensuite des tests pour chacune d’entre elles. C'est généralement très dur car vous n'avez
-	rien codé donc ne connaissez ni classes ni méthodes. Il faudra les inventer en écrivant les tests.
-
-.. toctree::
-	 :maxdepth: 1
-
-			TDD en java (méthode 1)   <java/tdd>
-			TDD en java (méthode 2)   <java/tdd2>
-
 -----
 
 **Crédits**
+	* Luc DARTOIS (enseignants à l'IUT de Sénart-Fontainebleau)
+	* Florent MADELAINE (enseignants à l'IUT de Sénart-Fontainebleau)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
@@ -258,8 +209,6 @@ Test-driven development (TDD)
 	* https://julien-blanc.developpez.com/articles/cpp/Programmation_par_contrat_cplusplus/
 	* https://www.developpez.com/actu/109767/Quelques-points-cles-sur-la-programmation-defensive-destinee-a-assurer-la-fonction-continue-d-un-logiciel-dans-des-circonstances-imprevues/
 	* https://baptiste-wicht.developpez.com/tutoriels/java/tests/mocks/easymock/
-	* https://www.tutorialspoint.com/software_testing_dictionary/test_driven_development.htm
-	* https://paulund.developpez.com/tutoriels/php/developpement-pilote-tests/
 	* https://gfx.developpez.com/tutoriel/java/junit/
 	* https://openclassrooms.com/fr/courses/3504461-testez-linterface-de-votre-site/4270561-pourquoi-ecrire-des-tests
 	* https://duckduckgo.com/?q=d%C3%A9veloppement+pilot%C3%A9+par+les+tests&ia=web&atb=v230-1
