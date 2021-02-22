@@ -47,10 +47,10 @@ des méthodes, ... pour définir un environnement correct pour les prochains tes
 		 // ------------ class ---------------- //
 
 		 @BeforeAll
-		 public void classInit(){ /* set attributes */ }
+		 public static void classInit(){ /* set attributes */ }
 
 		 @AfterAll
-		 public void classFree(){ /* unset attributes */ }
+		 public static void classFree(){ /* unset attributes */ }
 
 		 // ------------ before/after each ---------------- //
 

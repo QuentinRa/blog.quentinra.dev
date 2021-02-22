@@ -25,3 +25,26 @@ le code suivant pour lancer vos tests.
 		  }
 		 }
 		}
+
+Dans le cas ou vous voudriez qu'un test en lance d'autres, alors
+en Junit4 on utilise
+
+.. code:: java
+
+		@RunWith(JUnitPlatform.class)
+		@SelectClasses({autreClasse.class})
+		// @SelectPackages("tests")
+		// @SelectPackages({"tests"})
+		public class MaClasse {
+
+		}
+
+ou alors
+
+.. code:: java
+
+		@RunWith(Suite.class) ;
+		@Suite.SuiteClasses({ ClasseTest.class, ... });
+		public class MaClasse {
+
+		}

@@ -166,14 +166,26 @@ TestNomClasse ou TestNomClasseMethode.
 			JUnit4, lancer une suite de tests <java/junit/suite>
 			Structure d'une classe de tests   <java/junit/class>
 			Le code d'un test                 <java/junit/test>
+			Tests paramétriques               <java/junit/param>
 
 8. Tests en PHP avec PHPUnit
 ==============================
 
-...
+Le fonctionnement étant le même qu'en Java, je permettrais d'aller un peu vite sur la théorie.
+
+L'installation facile se fait avec composer (:code:`composer require --dev phpunit/phpunit ^9.5`),
+lisez la doc (https://phpunit.readthedocs.io/en/9.5/installation.html#composer).
+
+.. toctree::
+	 :maxdepth: 1
+
+			Démarrage rapide (PHPStorm)       <php/phpstorm>
+			Structure d'une classe et tests   <php/class>
 
 9. Tests en C avec CUnit
 ==============================
+
+Le fonctionnement étant le même qu'en Java, je permettrais d'aller un peu vite sur la théorie.
 
 ...
 
@@ -246,3 +258,4 @@ Test-driven development (TDD)
 	* https://stackoverflow.com/questions/48823573/junit-5-console-does-not-find-tests
 	* https://stackoverflow.com/questions/52373469/how-to-launch-junit-5-platform-from-the-command-line-without-maven-gradle
 	* https://junit.org/junit5/docs/current/user-guide/#running-tests-console-launcher
+	* https://openclassrooms.com/fr/courses/6100311-testez-votre-code-java-pour-realiser-des-applications-de-qualite/6440036-tirez-un-maximum-de-ce-cours

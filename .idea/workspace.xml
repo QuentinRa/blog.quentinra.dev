@@ -30,7 +30,7 @@
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conception/tests/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/tests/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/tests/java/junit/intro.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/tests/java/junit/intro.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/tests/java/junit/class.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/tests/java/junit/class.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conception/tests/java/junit/suite.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/tests/java/junit/suite.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
@@ -376,7 +376,7 @@
       <workItem from="1613942676529" duration="1887000" />
       <workItem from="1613944807556" duration="1000" />
       <workItem from="1613944873410" duration="852000" />
-      <workItem from="1613996230200" duration="9722000" />
+      <workItem from="1613996230200" duration="11491000" />
     </task>
     <servers />
   </component>
