@@ -7,6 +7,9 @@ d'expliquer à d'autres personnes leur cours. Les cours étant
 principalement écrits par des étudiants, il serait apprécié de signaler
 toute erreur que vous liriez.
 
+**Attention** : le site est en cours de création donc il y a beaucoup d'erreurs,
+vous pouvez attendre des années que ce soit environ correct ou alors y contribuer.
+
 Les cours ont pour la majorité été pris en note dans l'un des établissements suivants
 	* département informatique de l'IUT de Sénart-Fontainebleau à Fontainebleau (Seine-et-Marne, France).
 	* l'ENSIIE, école d'ingénieur en informatique à Évry
