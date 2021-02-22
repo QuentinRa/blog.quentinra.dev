@@ -152,14 +152,15 @@ De façon générale
 			Programmation par contrat/défensive <java/pre>
 			Assertions en java                  <java/as>
 
-Avec JUnit (version 4 ou 5). Le cours s'oriente vers JUnit 5
+Le cours s'oriente vers JUnit 5
 mais a été anciennement rédigé pour JUnit4.
 
 .. toctree::
 	 :maxdepth: 1
 
-			Introduction                  <java/junit/intro>
-			Démarrage rapide (IntelliJ)   <java/junit/idea>
+			Introduction                      <java/junit/intro>
+			Démarrage rapide (IntelliJ)       <java/junit/idea>
+			JUnit4, lancer une suite de tests <java/junit/suite>
 
 8. Tests en PHP avec PHPUnit
 ==============================
@@ -237,3 +238,6 @@ Test-driven development (TDD)
 	* https://gfx.developpez.com/tutoriel/java/junit/
 	* https://openclassrooms.com/fr/courses/3504461-testez-linterface-de-votre-site/4270561-pourquoi-ecrire-des-tests
 	* https://duckduckgo.com/?q=d%C3%A9veloppement+pilot%C3%A9+par+les+tests&ia=web&atb=v230-1
+	* https://stackoverflow.com/questions/48823573/junit-5-console-does-not-find-tests
+	* https://stackoverflow.com/questions/52373469/how-to-launch-junit-5-platform-from-the-command-line-without-maven-gradle
+	* https://junit.org/junit5/docs/current/user-guide/#running-tests-console-launcher
