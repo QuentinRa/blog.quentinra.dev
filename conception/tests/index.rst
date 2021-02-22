@@ -182,6 +182,13 @@ lisez la doc (https://phpunit.readthedocs.io/en/9.5/installation.html#composer).
 			Démarrage rapide (PHPStorm)       <php/phpstorm>
 			Structure d'une classe et tests   <php/class>
 
+Si vous n'êtes pas dans PHPStorm, pas de panique, vous devriez pouvoir compiler
+vos tests avec :code:`phpunit mon_fichier_de_tests.php` en supposant que phpunit ai été installé
+comme vu plus haut.
+
+Je n'ai pas testé, mais il semble possible d'utiliser des annotations
+(https://phpunit.readthedocs.io/en/9.5/annotations.html).
+
 9. Tests en C avec CUnit
 ==============================
 
