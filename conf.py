@@ -39,7 +39,7 @@ release = 'build-3.40.563'
 # version 1.11 : conception/objets
 # version 1.12 : conception/bd
 # version 1.13 : conception/automate
-# version 1.14 : conception/mdd
+# version 1.14 : conception/mdd ===> conception/me
 # version 1.15 : conception/patrons
 # version 1.16 : db/model
 # version 1.17 : team/agile
@@ -68,6 +68,7 @@ release = 'build-3.40.563'
 # version 3.38 : web/mdb
 # version 3.39 : web/general
 # version 3.40 : web/php
+# version 3.41 : conception/tests
 
 # -- General configuration ---------------------------------------------------
 
