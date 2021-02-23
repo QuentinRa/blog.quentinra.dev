@@ -93,11 +93,11 @@ comme ce .rst).
 .. toctree::
    :maxdepth: 1
 
-		Git      <jetbrains/git>
-		Database <jetbrains/db>
-		Todo     <jetbrains/todo>
-		Terminal <jetbrains/terminal>
-		Snippets <jetbrains/snippets>
+		Git      <jetbrains/all/git>
+		Database <jetbrains/all/db>
+		Todo     <jetbrains/all/todo>
+		Terminal <jetbrains/all/terminal>
+		Snippets <jetbrains/all/snippets>
 
 4. PHPStorm
 ============================
@@ -112,7 +112,7 @@ comprendre que la méthode est utilisée (et/ou la classe).
 .. toctree::
    :maxdepth: 1
 
-		Configuration Remote      <jetbrains/remote>
+		Configuration Remote      <jetbrains/pstorm/remote>
 
 5. CLion
 =========================
@@ -152,11 +152,10 @@ par exemple comme options). Vous pouvez le mettre directement dans le CMakeLists
 .. toctree::
 	 :maxdepth: 1
 
-		Utiliser CUnit sous CLion     <clion/cunit>
-		Utiliser la librairie pthread <clion/pthread>
-		Utiliser des libraires/.h/.a  <clion/lib>
-		Changer de compilateur        <clion/comp>
-		Remote Working                <clion/remote>
+		Utiliser la librairie pthread <jetbrains/clion/pthread>
+		Utiliser des libraires/.h/.a  <jetbrains/clion/lib>
+		Changer de compilateur        <jetbrains/clion/comp>
+		Remote Working                <jetbrains/clion/remote>
 
 -----
 
@@ -169,3 +168,5 @@ par exemple comme options). Vous pouvez le mettre directement dans le CMakeLists
 	* https://www.jetbrains.com/help/phpstorm/configuring-synchronization-with-a-remote-host.html#server-access-config
 	* https://www.jetbrains.com/help/phpstorm/uploading-and-downloading-files.html#automaticUploadOnUpdate
 	* https://www.jetbrains.com/help/clion/remote-projects-support.html#ipv6
+	* https://www.jetbrains.com/help/clion/editing-individual-files-on-remote-hosts.html
+	* https://www.jetbrains.com/help/clion/remote-projects-support.html

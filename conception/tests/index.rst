@@ -192,10 +192,22 @@ Je n'ai pas testé, mais il semble possible d'utiliser des annotations
 9. Tests en C avec CUnit
 ==============================
 
-Le fonctionnement étant le même qu'en Java, je permettrais d'aller un peu vite sur la théorie.
+Le principe étant le même qu'en Java et PHP, je permettrais d'aller un peu vite sur la théorie.
 
-sudo apt-get install libcunit1-ncurses-dev
-ls /usr/include/CUnit
+.. code:: bash
+
+		# installation (ex: debian/ubuntu)
+		sudo apt-get install libcunit1-ncurses-dev
+		# vérification
+		ls /usr/include/CUnit
+
+Attention, CUnit fonctionnement un peu différemment des deux autres. Regardez
+la doc officielle ici : http://cunit.sourceforge.net/doc/introduction.html#description.
+
+.. toctree::
+	 :maxdepth: 1
+
+		Démarrage sous CLion   <c/cunit>
 
 -----
 

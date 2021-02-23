@@ -29,8 +29,14 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/tests/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/tests/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/jetbrains.rst" beforeDir="false" afterPath="$PROJECT_DIR$/utils/jetbrains.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/jetbrains/db.rst" beforeDir="false" afterPath="$PROJECT_DIR$/utils/jetbrains/all/db.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/jetbrains/git.rst" beforeDir="false" afterPath="$PROJECT_DIR$/utils/jetbrains/all/git.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/jetbrains/remote.rst" beforeDir="false" afterPath="$PROJECT_DIR$/utils/jetbrains/pstorm/remote.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/jetbrains/snippets.rst" beforeDir="false" afterPath="$PROJECT_DIR$/utils/jetbrains/all/snippets.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/jetbrains/terminal.rst" beforeDir="false" afterPath="$PROJECT_DIR$/utils/jetbrains/all/terminal.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/jetbrains/todo.rst" beforeDir="false" afterPath="$PROJECT_DIR$/utils/jetbrains/all/todo.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -92,11 +98,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\conception\tests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\conception\tests\c" />
+      <recent name="C:\Users\quent\Documents\texas-res\conception\tests" />
+      <recent name="C:\Users\quent\Documents\texas-res\utils\jetbrains\pstorm" />
+      <recent name="C:\Users\quent\Documents\texas-res\utils\jetbrains\all" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\utils\jetbrains" />
-      <recent name="C:\Users\quent\Documents\texas-res\conception\me\tdd" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\conception\tests\junit" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\_notes\latex" />
-      <recent name="C:\Users\quent\Documents\texas-res\functional\r\files\part" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -384,7 +390,8 @@
       <workItem from="1614022124440" duration="3000" />
       <workItem from="1614023762460" duration="4000" />
       <workItem from="1614025534262" duration="4529000" />
-      <workItem from="1614034256617" duration="3594000" />
+      <workItem from="1614034256617" duration="3749000" />
+      <workItem from="1614076253567" duration="3718000" />
     </task>
     <servers />
   </component>
