@@ -120,7 +120,7 @@ et pour CORRECT (le B), on a
 	* :code:`C` : cardinalité (fait varier la taille des données, bon nombre de valeurs reçu?)
 	* :code:`T` : temps (appelé dans le bon ordre donc connexion avant fetch par exemple pour une base de données...)
 
-6. Assertions et framework de tests
+5. Assertions et framework de tests
 ==========================================
 
 Les assertions sont un "print" qui permet d'asserter (confirmer xD) les valeurs
@@ -136,7 +136,7 @@ Dans tous les frameworks de tests vus ici, vous allez créer une classe de tests
 exemple :code:`AllTests.java`, et coder des méthodes dont le nom doit généralement
 commencer par :code:`test` (sauf en java ce n'est pas obligé).
 
-7. Tests en JAVA avec JUnit
+6. Tests en JAVA avec JUnit
 ============================
 
 De façon générale
@@ -163,7 +163,7 @@ TestNomClasse ou TestNomClasseMethode.
 			Le code d'un test                 <java/junit/test>
 			Tests paramétriques               <java/junit/param>
 
-8. Tests en PHP avec PHPUnit
+7. Tests en PHP avec PHPUnit
 ==============================
 
 Le fonctionnement étant le même qu'en Java, je permettrais d'aller un peu vite sur la théorie.
@@ -184,7 +184,7 @@ comme vu plus haut.
 Je n'ai pas testé, mais il semble possible d'utiliser des annotations
 (https://phpunit.readthedocs.io/en/9.5/annotations.html).
 
-9. Tests en C avec CUnit
+8. Tests en C avec CUnit
 ==============================
 
 Le principe étant le même qu'en Java et PHP, je permettrais d'aller un peu vite sur la théorie.

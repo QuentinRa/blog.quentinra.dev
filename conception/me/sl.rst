@@ -60,6 +60,23 @@ C'est un exemple pour montrer qu'il faut impérativement établir des règles de
 Déterminer la langue des commentaires, ... la langue des noms de variables, ...
 le type d'indentations etc.
 
+4. Guidelines
+======================
+
+Voici un mix dans la continuité des points vus en 3 des guidelines https://man.openbsd.org/style,
+http://doc.cat-v.org/bell_labs/pikestyle et https://www.kernel.org/doc/Documentation/process/coding-style.rst.
+
+	* ne pas donner de noms aux variables dans les prototypes
+	* règles sur les commentaires
+	* include/import suivit d'une espace avant l'argument
+	* noms de constantes (+valeurs enums) en majuscules
+	* En c, utiliser sys/queue.h plutôt que des listes faites à la main
+	* pas de nom de types finissant par _t (réserver POSIX)
+	* utiliser getopt (unistd) pour parser les arguments à la ligne de commande (en C)
+	* mets des espaces entre les || et &&, ... mais pas (,], ...
+	* aucune déclaration + initialisation
+	* utiliser des constantes (const : ready-only) ou #define
+
 -----
 
 **Crédits**
