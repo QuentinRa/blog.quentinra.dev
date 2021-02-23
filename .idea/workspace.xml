@@ -30,7 +30,6 @@
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conception/me/sl.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/me/sl.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/tests/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/tests/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -385,7 +384,7 @@
       <workItem from="1614023762460" duration="4000" />
       <workItem from="1614025534262" duration="4529000" />
       <workItem from="1614034256617" duration="3749000" />
-      <workItem from="1614076253567" duration="13140000" />
+      <workItem from="1614076253567" duration="14539000" />
     </task>
     <servers />
   </component>

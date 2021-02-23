@@ -77,6 +77,53 @@ http://doc.cat-v.org/bell_labs/pikestyle et https://www.kernel.org/doc/Documenta
 	* aucune déclaration + initialisation
 	* utiliser des constantes (const : ready-only) ou #define
 
+5. Doxygen
+=========================
+
+La documentation Doxygen est principalement utilisée en C/C++ (mais qui
+est disponible en JAVA, PHP, C#, ...) et fonctionne comme la javadoc (vous
+pouvez d'ailleurs rédiger au format Javadoc comme @see).
+
+.. code:: c
+
+	/// @brief Short description
+	/// 			 ...
+	///
+	/// More details here.
+	///
+	/// @param [in] arg1 ...
+	/// @param [out] arg2 ...
+	/// @param [in,out] arg3 ...
+	/// @return ...
+	/// @sa ... (see also)
+
+Vous pouvez utiliser in (lecture), out (écriture) ou in,out pour indiquer
+ce qu'il adviendra de l'argument.
+
+mais qui peut aussi être directement dans le code
+
+.. code:: c
+
+	int var; ///< description ...
+
+Il faut aussi commenter le fichier !
+
+.. code:: c
+
+		/**
+		* @file name.h
+		* @package ...
+		* @brief ...
+		*
+		* ...
+		*
+		*/
+
+Vous avez aussi les @pre (préconditions), @post (postconditions) et @note
+pour ajouter une note.
+
+Dans CLion, vous pouvez visualiser/pré-visualiser la documentation avec CTRL-Q.
+
 -----
 
 **Crédits**
@@ -90,3 +137,7 @@ http://doc.cat-v.org/bell_labs/pikestyle et https://www.kernel.org/doc/Documenta
 	* https://www.baeldung.com/solid-principles
 	* https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa
 	* https://suckless.org/
+	* https://www.jetbrains.com/help/clion/creating-and-viewing-doxygen-documentation.html#assistance
+	* https://www.doxygen.nl/manual/index.html
+	* https://www.doxygen.nl/manual/commands.html
+	* https://stackoverflow.com/questions/62038742/modify-doxygen-template-in-clion
