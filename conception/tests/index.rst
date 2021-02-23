@@ -206,6 +206,7 @@ la doc officielle ici : http://cunit.sourceforge.net/doc/introduction.html#descr
 		Fichier exemple de tests  <c/ex>
 		Structure d'un fichier    <c/class>
 		Structure d'un test       <c/test>
+		Cunit remastered          <c/calf>
 
 -----
 
