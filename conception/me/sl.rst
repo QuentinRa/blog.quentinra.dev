@@ -4,7 +4,7 @@
 Écrire du code meilleur
 ================================
 
-| :math:`\color{grey}{Version \ 0.0.1}`
+| :math:`\color{grey}{Version \ 0.4.2}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 23/02/2021}`
 
 1. Introduction

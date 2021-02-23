@@ -202,7 +202,10 @@ la doc officielle ici : http://cunit.sourceforge.net/doc/introduction.html#descr
 .. toctree::
 	 :maxdepth: 1
 
-		Démarrage sous CLion   <c/cunit>
+		Démarrage sous CLion      <c/cunit>
+		Fichier exemple de tests  <c/ex>
+		Structure d'un fichier    <c/class>
+		Structure d'un test       <c/test>
 
 -----
 
@@ -224,3 +227,4 @@ la doc officielle ici : http://cunit.sourceforge.net/doc/introduction.html#descr
 	* https://junit.org/junit5/docs/current/user-guide/#running-tests-console-launcher
 	* https://openclassrooms.com/fr/courses/6100311-testez-votre-code-java-pour-realiser-des-applications-de-qualite/6440036-tirez-un-maximum-de-ce-cours
 	* https://manpages.debian.org/unstable/libcunit1-ncurses-dev/CUnit.3.en.html
+	* http://cunit.sourceforge.net/
