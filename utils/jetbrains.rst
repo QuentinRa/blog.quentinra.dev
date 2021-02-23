@@ -4,8 +4,8 @@
 Jetbrains
 ==============
 
-| :math:`\color{grey}{Version \ 0.1.4}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 16/02/2021}`
+| :math:`\color{grey}{Version \ 0.3.7}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 23/02/2021}`
 
 Cette page contiendra des tutoriels sur les logiciels
 jetbrains donc PHPStorm, IntelliJ Idea, CLion, WebStorm...

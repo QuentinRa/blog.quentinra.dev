@@ -120,11 +120,6 @@ et pour CORRECT (le B), on a
 	* :code:`C` : cardinalité (fait varier la taille des données, bon nombre de valeurs reçu?)
 	* :code:`T` : temps (appelé dans le bon ordre donc connexion avant fetch par exemple pour une base de données...)
 
-5. Méthode SOLID
-====================
-
-...
-
 6. Assertions et framework de tests
 ==========================================
 

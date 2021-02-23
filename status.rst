@@ -16,7 +16,6 @@ Bric à Brac            Développements en série                \
 Théorie des graphes    Calculs de distances                   \
 Théorie des graphes    Théorie spectrale                      \
 UML                    Diagramme de déploiement               \
-Méthodologies          SOLID, https://suckless.org/           \
 CSS                    SCSS et Animations                     \
 Github                 https://jekyllrb.com/, ...             \
 ====================== ====================================== =========================
