@@ -29,8 +29,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/tests/c/test.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/tests/c/test.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/php/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/php/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -385,7 +386,11 @@
       <workItem from="1614023762460" duration="4000" />
       <workItem from="1614025534262" duration="4529000" />
       <workItem from="1614034256617" duration="3749000" />
-      <workItem from="1614076253567" duration="17369000" />
+      <workItem from="1614076253567" duration="17992000" />
+      <workItem from="1614102513190" duration="833000" />
+      <workItem from="1614113887638" duration="240000" />
+      <workItem from="1614177513039" duration="625000" />
+      <workItem from="1614328997506" duration="2240000" />
     </task>
     <servers />
   </component>

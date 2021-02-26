@@ -98,8 +98,6 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     Unified Modeling Language (UML)      <conception/uml/index>
     Patrons de conception                <conception/patrons/index>
     Tests (PHP/C/JUnit)                  <conception/tests/index>
-    Méthodologies extrêmes (MDD,TDD...)  <conception/me/index>
-    Écrire du code meilleur              <conception/me/sl>
 
 .. toctree::
     :caption: Langages de bases de données
@@ -116,9 +114,11 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :name: team
     :maxdepth: 1
 
-		Gestion de projet                   <team/gestion/index>
-		Cahier des charges                  <team/gestion/cdc>
-		Méthode Agile:Scrum                 <team/agile/scrum>
+		Gestion de projet                    <team/gestion/index>
+		Cahier des charges                   <team/gestion/cdc>
+		Méthode Agile:Scrum                  <team/agile/scrum>
+    Méthodologies extrêmes (MDD,TDD...)  <conception/me/index>
+    Écrire du code meilleur              <conception/me/sl>
 
 .. toctree::
     :caption: Entreprise

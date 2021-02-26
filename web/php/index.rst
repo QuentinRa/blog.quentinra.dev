@@ -4,8 +4,8 @@
 PHP
 ================================
 
-| :math:`\color{grey}{Version \ 0.9.13}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 07/02/2021}`
+| :math:`\color{grey}{Version \ 0.9.14}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 26/02/2021}`
 
 1. Introduction
 ===================================
@@ -13,6 +13,8 @@ PHP
 Pour rappel, le PHP est un langage qui tourne sur le serveur et vous permet d'exécuter
 du code (boucle for, remplir des données programmatiquement, etc.) avant
 d'envoyer le html.
+
+Il est maintenant souvent remplacé par Node.js pour faire cela en JS plutôt qu'en PHP.
 
 Il s'agit d'un fichier :code:`.php` dans lequel vous pouvez mettre
 une nouvelle balise php dans laquelle vous pouvez mettre du PHP. Il existe
@@ -23,12 +25,12 @@ deux versions de cette balise :
 	<p>
 	<?php
 	// ici je mets du code PHP
-	// on obtient une balis <p>Hello World, we are the <date_ici> !</p>
+	// on obtient une balise <p>Hello World, we are the <date_ici> !</p>
 	echo "Hello World, we are the ".date("Y-m-d")." !";
 	?>
 	</p>
 
-Si une balise ne contient que un echo, alors on peut utiliser la forme
+Si une balise ne contient qu'un echo de quelque chose, alors on peut utiliser la forme
 raccourcie qui fait un echo
 
 .. code:: html
@@ -50,7 +52,13 @@ qui retourne des infos sur le serveur
 	<?php
 	phpinfo();
 
-On peut activer les erreurs avec :code:`error_reporting(E_ALL);`.
+On peut activer les erreurs avec
+
+.. code:: php
+
+	ini_set('display_errors', 1);
+	ini_set('display_startup_errors', 1);
+	error_reporting(E_ALL);
 
 2. Ce qu'il faut savoir
 ===========================
@@ -63,11 +71,11 @@ On utilise :code:`echo` pour écrire du texte PHP dans de l'HTML.
 
 Vous pouvez savoir si une variable existe avec :code:`isset($variable)`.
 A l'inverse, la fonction :code:`unset($variable)` vous permet de détruire
-une variable. Vous pouvez regarder si une variable est vide avec :code:`empty($var)`.
+une variable. Vous pouvez regarder si une variable existe et est vide avec :code:`empty($var)`.
 
 Vous pouvez utiliser :code:`''` ou :code:`""` pour du texte, mais dans le premier cas
-alors les variables seront considérés comme du texte alors que dans le second
-cas les variables seront remplacées par leur valeur. Vous pouvez protéger
+les variables seront considérés comme du texte (donc :code:`'$a'` ne remplace par $a par sa valeur)
+alors que dans le second cas les variables seront remplacées par leur valeur. Vous pouvez protéger
 un caractère avec :code:`\caractère`.
 
 Généralement, on divise le code PHP en modules/fichiers. Le code (variables, ...) est indépendant
@@ -87,7 +95,7 @@ aucun truc à l'écran alors vous faites :code:`header("Location: path");exit();
 
 Si votre script ne contient que du PHP, alors vous n'avez pas à mettre le :code:`?>` à la fin.
 
-Sur le même principe que la javadoc en Java, vous pouvez écrire de la PHPDoc.
+Sur le même principe que la javadoc en Java, vous pouvez écrire de la "PHPDoc" avec Doxygen.
 
 3. Particularités du PHP
 =============================
@@ -102,6 +110,8 @@ est de la forme :code:`$nom`.
 		$nombre = 5;
 		echo $nombre; // affiche 5
 		echo {$nombre}; // affiche 5
+		echo "$nombre"; // affiche 5
+		echo "Nombre:".$nombre; // affiche Nombre:5
 		// echo ${nombre}; // affiche 5 aussi (comme en Shell)
 		// echo ${"nombre"}; // affiche 5 aussi mais le nom peut être une string
 		echo gettype($nombre); // retourne int
@@ -135,15 +145,15 @@ Vous pouvez tester plusieurs conditions avec :code:`||` (ou logique, donc au moi
 directement mais cela posera des problèmes de priorité.
 Le xor est fait avec :code:`^`. On fait une négation avec :code:`!`.
 
-Il est possible de glisser du html dans des blocs (if, for, ...) avec la syntaxe
-:code:`:` (au lieu de :code:`{`) puis un :code:`endif` (si if à la place de :code:`}`).
+Il est possible de glisser du html dans des blocs (if, foreach, ...) avec la syntaxe
+:code:`:` (au lieu de :code:`{`) puis un :code:`endif` (endforeach, ... à la place de :code:`}`).
 
 .. code:: html
 
 	<?php if(condition) : ?>
-	<p>vrai</p>
+	<p>code HTML si VRAI</p>
 	<?php else : ?>
-	<p>faux (facultatif)</p>
+	<p>code HTML (facultatif) si FAUX</p>
 	<?php endif; ?>
 
 4. Tableaux
@@ -155,7 +165,7 @@ associatifs avec des clefs (string) associées à une valeur. Les valeurs d'un t
 
 On crée un tableau avec :code:`array(valeur, ...)` ou :code:`[valeur, ...]`. Dans le cas
 d'un tableau associatif, on aura :code:`array("key" => valeur, ...)`. Vous pouvez avoir
-key qui vaut un entier si vous souhaitez placer les valeurs à un certain index. Attention,
+key qui est un entier si vous souhaitez placer les valeurs à un certain index. Attention,
 PHP ne remplit pas les trous que vous causeriez.
 
 On accède à une valeur avec :code:`tableau[index]` ou :code:`tableau["key"]`. Dans le cas
@@ -243,14 +253,18 @@ On peut également déclarer une variable static. Une telle variable conserve
 sa valeur entre deux appels de la fonction (comme en C).
 
 En php 7.3 au plus, on peut ajouter le type de retour dans la déclaration
+mais seulement si votre fonction retourne un seul type de données et éventuellement
+null
 
 .. code:: php
 
 	<?php
-	// retourne type_retour
-	function f() : type_retour { ... }
-	// peut retourner type_retour ou null
-	function f() : ?type_retour { ... }
+	// paramètre de type string
+	// retourne un entier
+	function f(string $arg) : int { ... }
+	// paramètre de type string pouvant être null
+	// peut retourner un entier ou null
+	function f(?string $arg) : ?int { ... }
 
 6. Classes et objets
 ======================
@@ -258,7 +272,8 @@ En php 7.3 au plus, on peut ajouter le type de retour dans la déclaration
 Une classe est un ensemble permettant de définir les propriétés d'un concept abstrait.
 On définit des propriétés (attributs) et des fonctions appelés méthodes qui modélisent
 son comportement. On parle d'instanciation lorsqu'on crée un objet c'est à dire une version
-de la classe dans laquelle on a donné des valeurs aux attributs.
+de la classe dans laquelle on a donné des valeurs aux attributs. On peut également
+définir des constantes
 
 Une grande partie de ce qui suit est faisable en JAVA (notamment les public/private/protected,
 le constructeur, le this, l'héritage avec extends/implements, les statics/final, toString,
@@ -268,32 +283,66 @@ donc vous devez aller voir les bases pour des uses complexes...
 .. code:: php
 
 	class MaClasse {
+	 public const $CONSTANTE = 5;
+	 private $cache; // non utilisé
 	 public $attribut;
 
-		// constructeur
-    public function __construct() {
-			setAsFive();
-    }
+	 // constructeur
+	 public function __construct() {
+	  setAsFive();
+	 }
 
 	 public function setAsFive() {
-	  $this->attribut = 5; // l'attribut contiendra 5
+	  $this->attribut = self::CONSTANTE; // l'attribut contiendra 5
 	 }
 	}
 
 	$c = new MaClasse(); // instanciation
 	$c->attribut = 7;
-	$c->setAsFive(); // vaut 5
+	$c->cache = 7; // impossible car private
+	$c->setAsFive(); // vaut 5 = CONSTANTE
 
 On utilise :code:`$instance->...` pour accéder aux propriétés de l'objet
-depuis une instance. A l'intérieur de la classe, on utilise :code:`$this->...` (ou self) pour utiliser
+depuis une instance. A l'intérieur de la classe, on utilise :code:`$this->...` pour utiliser
 un attribut/une fonction de la classe.
 
-On accède à un attribut/fonction statique avec :code:`NomClasse::$variable` (ou fonction).
+On accède à un attribut/fonction statique avec :code:`NomClasse::variable` (ou fonction)
+ou :code:`self::variable` si vous êtes DANS la classe (donc le programmeur qui la code).
 
 On utilisera :code:`parent` (au lieu de :code:`super` en JAVA) pour référencer la classe
-parent (ex: :code:`parent::__construct();` par exemple).
+parent (ex: :code:`parent::__construct();` par exemple) dans le cas d'un héritage/implémentation
+d'une interface donc :code:`public class enfant extends Parent { ... }` (ou
+:code:`public class realisation implements monInterface {}`.
 
 On peut instancier une classe depuis une String : :code:`$cours = "PHP"; new $cours();`
+ce qui est pareil que :code:`new PHP()`. Pareil avec une méthode etc.
+
+On peut faire de l'héritage multiple avec les traits. Une classe utilisant un trait
+hérite de toutes ses propriétés (public et protected).
+
+.. code:: php
+
+	<?php
+		class Enfant {
+		 use Parent1;
+		 use Parent2;
+		}
+		trait Parent1 {  }
+		trait Parent2 {  }
+
+Vous pouvez faire des packages avec namespace et use. Les classes
+dans un même package n'ont pas besoin d'être importées l'un dans l'autre.
+
+.. code:: php
+
+	<?php
+	// suffit pour mettre dans le même package
+	namespace nom_package\nom_sous_package\...;
+
+	// s'il faut importer une classe/package
+	use nom_package\nom_sous_package;
+	// ou
+	use NomClasse;
 
 7. Requêtes GET/POST
 =======================
@@ -341,8 +390,10 @@ Vous pouvez utiliser des filtres pour vérifier le contenu de vos formulaires
 	* :code:`filter_var` : filtrer une valeur
 	* :code:`filter_var_array` : filtrer un tableau de valeurs
 
-		* FILTER_SANITIZE\_ : généralement on nettoie les données avant de les lires
-		* FILTER_VALIDATE\_ : on valide les données.
+		* FILTER_SANITIZE\_... : généralement on nettoie les données avant de les lires
+		* FILTER_VALIDATE\_... : on valide les données.
+
+Par exemple :code:`filter_var("a@b.c", FILTER_VALIDATE_EMAIL)` pour vérifier un email.
 
 Bien sur, vous pouvez faire vos vérifications à la main ou ne pas en faire.
 
@@ -371,8 +422,8 @@ est connecté etc.
 
 On utilisera
 
-	* :code:`password_hash("mdp", PASSWORD_DEFAULT)` pour encrypter (hasher) un password
-	* :code:`password_verify("mdp", $ash)` pour vérifier le mot de passe
+	* :code:`$hash = password_hash("mdp", PASSWORD_DEFAULT)` pour encrypter (hasher) un password
+	* :code:`$boolean = password_verify("mdp", $hash)` pour vérifier le mot de passe
 
 9. SQL en PHP
 ===========================
@@ -429,12 +480,15 @@ Exemple avec PDO
 .. code:: php
 
 		<?php
-		$user = "... saisie ..."; $pwd = "... saisie ...";
+		$user = "user"; $pwd = "pass"; // fake des données
+		// requête préparée
 		$db = new PDO("mysql:host=nom_host;charset=UTF8;dbname=nom_base", "user","password");
 		$stmt = $db->prepare("... WHERE user = :user AND password = :password;");
-		$sth->bindValue(':user' , $user, PDO::PARAM_STR);
-		$sth->bindValue(':password', $pwd , PDO::PARAM_STR);
+		$stmt->bindValue(':user' , $user, PDO::PARAM_STR);
+		$stmt->bindValue(':password', $pwd , PDO::PARAM_STR);
 		$stmt->execute();
+		// récupérer tous les résultats
+		$all = $stmt->fetchAll();
 		// ou requête non préparée
 		$res = $pdo->query("code sql");
 		// fait un $res->fetch() pour parcourir les résultats

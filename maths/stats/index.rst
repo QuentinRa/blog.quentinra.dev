@@ -298,6 +298,8 @@ la :code:`p-value` dans le résultat, si elle est en dessous de 5% alors le test
 est rejeté sinon il a de fortes chances d'être correct (attention, alpha ne vaut pas forcément
 0.05).
 
+**Attention, je ne garantit absolument pas la véracité des propos suivants :**
+
 .. toctree::
 	 :maxdepth: 1
 
