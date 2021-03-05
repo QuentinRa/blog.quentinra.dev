@@ -8,16 +8,6 @@ Pixi, Phaser (jeux)
 
 après l'avantage du xml c'est les fichier dtd pour les vérifier DTD Tutorial (w3schools.com)
 
-console.log
-
-Dom
-
-Déclare une variable
--> var/let/const
--> ; optionnel
-
-do{}while();
-
 https://www.w3schools.com/Js/default.asp
 https://developer.mozilla.org/fr/docs/Web/API MDN
 http://www.iut-fbleau.fr/sitebp/web/wim41/biblio/jquery/jquery.pdf

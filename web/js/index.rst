@@ -47,10 +47,31 @@ Il existe quelques trucs utiles
 	* :code:`alert(v)` : afficher une variable (ou du texte) dans un popup, pratique pour debug
 	* :code:`console.log(v)` : pareil que alert mais mets le résultat dans la console
 
-3. a
-=======================
+Le :code:`;` en fin de ligne est optionnel mais je le mets presque tout le temps sauf
+quand je pense à ne pas le mettre.
 
-...
+Attention, parfois il faut recharger le cache sinon vos modification du javascript
+ne sont pas appliquées et vous pouvez vous demandez pourquoi ça BUG : :code:`CTRL-SHIFT-R`
+ou :code:`SHIFT-F5`.
+
+3. Fonctions basiques
+=========================
+
+On parle généralement de DOM en JS pour parler du Document soit votre page web.
+Elle est contenue dans une variable :code:`window.document` (ou :code:`document`)
+avec :code:`window` la frame/écran du client.
+
+On interrogera le DOM pour savoir les balises contenues, par exemple récupérer une certaine
+div, les éléments d'une classe etc.
+
+On utilisera la window principalement pour les événements au chargement de la page ou
+pour faire des cookies en javascript.
+
+.. toctree::
+	 :maxdepth: 1
+
+		Manipulation de document <files/base/dom>
+		Manipulation de window   <files/base/frame>
 
 -----
 
@@ -65,3 +86,4 @@ Il existe quelques trucs utiles
 	* https://www.javascript.com/learn/strings
 	* https://www.w3schools.com/Js/default.asp
 	* https://www.w3schools.com/Js/js_versions.asp
+	* https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage

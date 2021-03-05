@@ -29,11 +29,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/annales/i/rep/q2.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/c/annales/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/c/annales/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/japanese/recap.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lang/japanese/recap.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/net.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/net.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/files/pre/var.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/files/pre/var.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/notes.txt" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -80,7 +78,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/js/files/pre" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/js/files/base" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="ssh.settings" />
@@ -88,11 +86,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\web\js\files\base" />
       <recent name="C:\Users\quent\Documents\texas-res\web\js\files\pre" />
       <recent name="C:\Users\quent\Documents\texas-res\conception\tests\c" />
       <recent name="C:\Users\quent\Documents\texas-res\conception\me\mdd" />
       <recent name="C:\Users\quent\Documents\texas-res\conception\mdd" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\conception\tests\phpunit" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\conception\tests\c" />
@@ -402,7 +400,7 @@
       <workItem from="1614790653143" duration="2000" />
       <workItem from="1614859434755" duration="1038000" />
       <workItem from="1614875498832" duration="14000" />
-      <workItem from="1614934024359" duration="7935000" />
+      <workItem from="1614934024359" duration="10130000" />
     </task>
     <servers />
   </component>
