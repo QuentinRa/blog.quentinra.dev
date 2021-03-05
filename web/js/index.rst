@@ -125,6 +125,24 @@ pouvez exécuter une fonction js lorsqu'une action est réalisée
 	* :code:`onmouseout="fonction()"` : au survol (sortie) exécute fonction
 	* :code:`onload="fonction()"` : une fois la page chargée, exécute fonction
 
+On peut aussi sensibiliser nous même une balise (stockée dans b) après l'avoir récupérée avec
+
+	* :code:`b.addEventListener("click", fonction, false)`
+	* :code:`b.removeEventListener("click", fonction, false)`
+	* vous avez d'autres valeurs que click : mousedown, mouseup, mouseover, mouseout, mousemove, keydown, change, ...
+
+Une telle fonction d'événement est généralement de la forme suivante
+
+.. code:: js
+
+	function fonction(e){ // e = objet contenant l'événement
+	 // on indique que l'on traite l'événement
+	 // donc pas de comportement par défaut
+	 e.preventDefault();
+	 // on traite l'événément
+	 e.target // sur qui on a cliqué, ...
+	}
+
 6. Exceptions
 ========================
 
@@ -229,3 +247,7 @@ Une autre manière de déclarer une prototype est en créant un objet
 	* https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 	* https://www.javascripttutorial.net/javascript-anonymous-functions/
 	* https://developer.mozilla.org/fr/docs/Web/JavaScript
+	* http://www.iut-fbleau.fr/sitebp/web/wim41/js/dom.pdf
+	* http://www.iut-fbleau.fr/sitebp/web/wim41/js/js.pdf
+	* https://dwarves.iut-fbleau.fr/git/monnerat/wim4_2021/src/master/cours/jscomp.pdf
+	* http://pgsql.pedago.ensiie.fr/~vitera.y/cours/ipw/poly/03-applications-interactives.pdf

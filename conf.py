@@ -23,7 +23,7 @@ copyright = '2021, Quentin Ra'
 author = 'Quentin Ra'
 
 # The full version, including alpha/beta/rc tags
-release = 'build-3.40.563'
+release = 'build-3.42.600'
 # version 0 : fait en html, css, php, js
 # version 1 : refonte mais en restructured text avec sphinx
 # version 1.1 : system/docker
@@ -69,6 +69,7 @@ release = 'build-3.40.563'
 # version 3.39 : web/general
 # version 3.40 : web/php
 # version 3.41 : conception/tests
+# version 3.42 : web/js
 
 # -- General configuration ---------------------------------------------------
 
