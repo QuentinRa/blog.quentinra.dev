@@ -10,6 +10,8 @@ On a accès à toutes les opérateurs basiques
 
 On peut cumuler des expressions logiques avec :code:`&&` (et) et :code:`||` (ou).
 
+La concaténation se fait avec :code:`+` (mettre deux chaines l'une à la suite de l'autre).
+
 On a un opérateur pour les comparaisons non strictes (=== et !==)
 
 	* :code:`5 == "5"` est faux car les types sont différents

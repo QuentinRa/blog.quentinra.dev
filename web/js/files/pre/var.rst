@@ -23,10 +23,3 @@ Ceci peut poser des problèmes parce que vous auriez pu oublier de déclarer une
 pas d'erreur car vous aviez déjà utilisé le même nom ailleurs. Cela peut aussi poser problème dans
 les boucles car var = une adresse donc si la valeur est changées alors toutes les références
 vont avoir la nouvelle valeur. **Utilisez let pour éviter les problèmes**.
-
-En ce qui concerne les valeur, vous pouvez utiliser
-
-	* :code:`5` : un entier
-	* :code:`5.0` : un float
-	* :code:`'5.0'` : une string
-	* :code:`"5.0"` : une string

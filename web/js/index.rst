@@ -4,7 +4,7 @@
 Javascript (JS)
 ================================
 
-| :math:`\color{grey}{Version \ 0.0.1}`
+| :math:`\color{grey}{Version \ 0.3.4}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 05/03/2021}`
 
 Ceci est un cours de Javascript aussi connu sous le nom d'ECMAScript
@@ -40,7 +40,9 @@ utiles mais qui est presque entièrement disponible de nos jours dans le javascr
 		Javascript dans la console   <files/pre/cons>
 		Variables en JS              <files/pre/var>
 		Opération en JS              <files/pre/op>
+		Types en JS, Tableaux        <files/pre/types>
 		Boucles en JS                <files/pre/struct>
+		Fonctions en JS              <files/pre/fun>
 
 Il existe quelques trucs utiles
 
