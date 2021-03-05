@@ -113,6 +113,47 @@ pour afficher des messages d'erreur autres que ceux affichés par défaut.
 Donc il faudra afficher un div d'erreur pour écrire dedans l'erreur. On mettra
 alors novalidate comme attribut au formulaire pour éviter d'avoir les messages par défaut.
 
+5. Événements
+=========================
+
+Pas de détails pour l'instant. Vous l'avez vu avec onsubmit dans formulaire mais vous
+pouvez exécuter une fonction js lorsqu'une action est réalisée
+
+	* :code:`onsubmit="return fonction()"` : dans un formulaire, contrôler la soumission avec fonction
+	* :code:`onclick="fonction()"` : clic sur un bouton exécute fonction
+	* :code:`onmouseover="fonction()"` : au survol (entrée) exécute fonction
+	* :code:`onmouseout="fonction()"` : au survol (sortie) exécute fonction
+	* :code:`onload="fonction()"` : une fois la page chargée, exécute fonction
+
+6. Exceptions
+========================
+
+Si votre code peut lever une erreur, généralement on lève une Exception pour indiquer
+un comportement irrégulier. Généralement vous en avez déjà rencontré par exemple
+si vous avez essayé d'utiliser une variable mais ne l'avez pas déclarée.
+
+	* :code:`Error` : erreur
+	* :code:`ReferenceError` : variable non trouvée
+	* :code:`EvalError`
+	* :code:`RangeError`
+	* :code:`SyntaxError`
+	* ...
+
+Vous pouvez levez une exception avec :code:`throw new nomClasse('message')`. Si personne
+ne capture l'exception, alors elle finie dans la console. Si vous savez
+qu'une erreur peut se produire, vous pouvez la récupérer et définir du code alternatif.
+
+.. code:: js
+
+	try {
+	 // code qui peut générer un comportement irrégulier
+	} catch {
+	 // code alternatif
+	}
+
+	// ou en récupérant l'erreur dans e
+	try { ... } catch (e) { ... }
+
 -----
 
 **Crédits**

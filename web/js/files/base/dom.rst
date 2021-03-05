@@ -66,3 +66,6 @@ En ce qui concerne le style, voici quelques exemples
 	div.style.display = "none";
 
 D'autres propriétés ultra importes sont
+
+	* :code:`e.innerHTML` : code html contenu dans e
+	* :code:`e.innerText` : contenu de e sous forme de texte

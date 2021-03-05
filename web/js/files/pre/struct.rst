@@ -14,6 +14,8 @@ On connait nos boucles en C, on aura les mêmes en JAVAScript
 	* :code:`for(var i = 0; i < ...; i++) { ... }`
 	* :code:`for(i = 0; i < ...; i++) { ... }` (pareil qu'avec var)
 
+On oublie pas nos mots clef break; et continue pour quitter/passer au tour suivant d'une boucle.
+
 Mais vous avez un nouveau type de boucle pour les tableaux, le foreach
 
 .. code:: js
