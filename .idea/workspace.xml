@@ -29,10 +29,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/files/base/dom.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/files/base/dom.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/files/pre/struct.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/files/pre/struct.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/files/pre/types.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/files/pre/types.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/notes.txt" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -401,7 +401,7 @@
       <workItem from="1614790653143" duration="2000" />
       <workItem from="1614859434755" duration="1038000" />
       <workItem from="1614875498832" duration="14000" />
-      <workItem from="1614934024359" duration="18279000" />
+      <workItem from="1614934024359" duration="20199000" />
     </task>
     <servers />
   </component>

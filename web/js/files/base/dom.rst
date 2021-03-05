@@ -2,7 +2,19 @@
 Manipulation de document
 ===========================
 
-On utilise la variable :code:`document`.
+On utilise la variable :code:`document` est l'arbre
+de tous nos balises soit le DOM.
+
+On peut
+
+	* :code:`document.createElement('p')` : créer une balise p (ou autre)
+	* :code:`document.createTextNode('texte')` : on fait généralement "texte"
+	* :code:`document.children` : toutes les balises contenues
+	* :code:`document.parentNode` : parent
+	* :code:`document.getAttribute(...)`
+	* :code:`document.setAttribute(...)`
+	* :code:`document.appendChild(...)` : ajouter une balise dans une autre
+	* ...
 
 Sélection d'éléments
 **********************
@@ -69,3 +81,6 @@ D'autres propriétés ultra importes sont
 
 	* :code:`e.innerHTML` : code html contenu dans e
 	* :code:`e.innerText` : contenu de e sous forme de texte
+
+Si vous manipuler une div ou un truc qui contient d'autres balises, alors
+vous pouvez utilisez les fonctions vues pour :code:`document`.

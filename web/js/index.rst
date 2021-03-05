@@ -4,7 +4,7 @@
 Javascript (JS)
 ================================
 
-| :math:`\color{grey}{Version \ 0.5.9}`
+| :math:`\color{grey}{Version \ 0.7.11}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 05/03/2021}`
 
 Ceci est un cours de Javascript aussi connu sous le nom d'ECMAScript
@@ -154,6 +154,65 @@ qu'une erreur peut se produire, vous pouvez la récupérer et définir du code a
 	// ou en récupérant l'erreur dans e
 	try { ... } catch (e) { ... }
 
+7. Classes et Objets
+========================
+
+Vous l'aurez remarqué ou non, mais toutes les variables sont des objets. On peut
+faire :code:`let str = new String("toto")` ce qui est équivalent à faire :code:`let str = "toto"`.
+
+Javascript est un langage dit de prototypage qui, si j'ai bien compris, signifie
+que Object contient le prototype de tous les objects, et chaque classe peut redéfinir
+ce prototype (donc comme en JAVA). Sauf que pour aller plus loin, vous pouvez modifier
+le prototype lors de l'exécution donc modifier les propriétés d'un objet ou de tous
+les objets d'une classe.
+
+On obtient le prototype avec :code:`variable.__proto__`. Faites le sur une string
+et vous verrez tous les méthodes pouvant être appelées et même en ajouter/retirer/modifier !
+
+Bref, on déclare une classe/... comme en JAVA (again!) donc
+
+.. code:: java
+
+	class NomClasse {
+
+	 // pas comme en JAVA, le constructeur est une méthode
+	 constructor(arg1="valeur") {
+	  // ajoute des attributs
+		this.property = arg1;
+	 }
+
+	 // le reste (déclaration de fonction, ...) c'est pareil qu'en dehors d'une classe
+
+	}
+
+	let v1 = new NomClasse()
+	v.property // "valeur"
+	let v2 = new NomClasse("test")
+	v.property // "test"
+	// modifie prototype
+	v2.__proto__.proper = 5
+	v1.proper // 5
+	v2.proper // 5
+
+On note le this bien pratique qui existe partout, même dans des fonctions
+en dehors d'une classe et qui référence la personne qui appelle la fonction
+donc par exemple window (si "personne" appelle une fonction) sinon un formulaire
+par exemple etc.
+
+Une autre manière de déclarer une prototype est en créant un objet
+
+.. code:: js
+
+		let user = {
+		 name: "Calistro",
+		 work : function() {
+		  alert('I\'m already working :(');
+		 }
+		};
+
+		user.name // Calistro
+		user.work() // opens alert
+
 -----
 
 **Crédits**
@@ -169,3 +228,4 @@ qu'une erreur peut se produire, vous pouvez la récupérer et définir du code a
 	* https://www.w3schools.com/Js/js_versions.asp
 	* https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 	* https://www.javascripttutorial.net/javascript-anonymous-functions/
+	* https://developer.mozilla.org/fr/docs/Web/JavaScript

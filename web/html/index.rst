@@ -171,8 +171,9 @@ Balise de saisie :code:`<input type="..." >` (`input <https://www.w3schools.com/
 	L'attribut :code:`name="nom_unique"` est un chaine de caractère permettant sur le serveur de récupérer
 	une donnée d'un formulaire.
 
-	L'attribut :code:`required` (sans valeur ou alors true) indique que le champ est obligatoire. Attention,
-	n'importe qui peut éditer le html et retirer cet attribut.
+	Vous pouvez ajouter d'autres attributs pour vérifier le contenu de votre champ :
+	:code:`maxlength="x"` (nb max caractères), :code:`minlength="x"` (nb min caractères),
+	:code:`max="x"` (valeur max), :code:`min="x"` (valeur min), :code:`required` (obligatoire),
 
 	L'attribut :code:`checked` (sans valeur ou alors true) permet de cocher par défaut une checkbox/un bouton radio.
 

@@ -8,11 +8,9 @@ Pixi, Phaser (jeux)
 
 après l'avantage du xml c'est les fichier dtd pour les vérifier DTD Tutorial (w3schools.com)
 
-https://www.w3schools.com/Js/default.asp
-https://developer.mozilla.org/fr/docs/Web/API MDN
+https://www.w3schools.com/Js/js_callback.asp
 http://www.iut-fbleau.fr/sitebp/web/wim41/biblio/jquery/jquery.pdf
 https://dwarves.iut-fbleau.fr/git/monnerat/wim4_2021/src/master/cours/jscomp.pdf
 http://www.iut-fbleau.fr/sitebp/web/wim41/ajax/ajax.pdf
-http://www.iut-fbleau.fr/sitebp/web/wim41/js/dom.pdf
 http://www.iut-fbleau.fr/sitebp/web/wim41/js/js.pdf
 http://pgsql.pedago.ensiie.fr/~vitera.y/cours/ipw/poly/03-applications-interactives.pdf
