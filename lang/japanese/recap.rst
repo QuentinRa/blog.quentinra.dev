@@ -5,48 +5,48 @@ This is my recap
 Nourriture
 ------------
 
-Sakana = poisson
-Niku = viande
-Yasai = légumes
+| Sakana = poisson
+| Niku = viande
+| Yasai = légumes
 
 **repas**
 
-Sashimi
-Sushi
-Tempura
-Kuudon
-Kare (cury)
-ramen
-udon
-soba
-nato
-umeboshi
-wazabi
+| Sashimi
+| Sushi
+| Tempura
+| Kuudon
+| Kare (cury)
+| ramen
+| udon
+| soba
+| nato
+| umeboshi
+| wazabi
 
 **boissons**
 
-kohi (café)
-Kocha (thé noir)
-ocha (thé)
-mizu (eau)
-juice (jus)
-kola (coca)
-biru (bière)
-osake (alcool/riz fermenté)
+| kohi (café)
+| Kocha (thé noir)
+| ocha (thé)
+| mizu (eau)
+| juice (jus)
+| kola (coca)
+| biru (bière)
+| osake (alcool/riz fermenté)
 
 **petit dej**
 
-gohan (riz)
-pan (pain)
-tamago (oeuf)
-yoguruto (yaourt)
-shiriaru (céréales)
-kudamono (fruit)
-safura (salade)
-soupo (soupe)
-mizushiru (?)
-guiuniu (lait)
-tomato/orange/ringo juice
+| gohan (riz)
+| pan (pain)
+| tamago (oeuf)
+| yoguruto (yaourt)
+| shiriaru (céréales)
+| kudamono (fruit)
+| safura (salade)
+| soupo (soupe)
+| mizushiru (?)
+| guiuniu (lait)
+| tomato/orange/ringo juice
 
 Table
 ----------------
@@ -70,15 +70,16 @@ Général
 	* keeko : non merci (ketsukou)
 	* jaa : well, et bien
 
-J'aime : <truc> ga suki desu.
-Je n'aime pas : <truc> wa suki janai (j'iyanai) desu.
-Question : <truc> ga suki desu ka ?
+| J'aime : <truc> ga suki desu.
+| Je n'aime pas : <truc> wa suki janai (j'iyanai) desu.
+| Question : <truc> ga suki desu ka ?
+
 	* hai, suki desu
 	* {truc ha} chotto (pas trop, cha'yotsuto)
 
-itsumo : tout le temps
-yoku : souvent (positif)
-amari : rarement (négatif)
+| itsumo : tout le temps
+| yoku : souvent (positif)
+| amari : rarement (négatif)
 
 Autres
 -----------

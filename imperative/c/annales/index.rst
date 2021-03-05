@@ -15,7 +15,6 @@ Cette page contient des contrôles pour vous exercer.
 
 	Sujet du contrôle           			<i/qcm1>
 	Proposition de correction n°1			<i/rep/q1>
-	Proposition de correction n°2			<i/rep/q2>
 
 | :code:`[TAG] ENSIIE MTG CC1 2020 S1`
 
