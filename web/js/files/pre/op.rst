@@ -6,6 +6,7 @@ On a accès à toutes les opérateurs basiques
 
 	* assignation : :code:`=`
 	* opération : :code:`+, -, *, /`, :code:`==, !, !=`, :code:`>,<,<=,>=`
+	* opérations (2) : :code:`^` (modulo) et :code:`**` (puissance)
 	* opération puis assignation : :code:`+=`, :code:`var++` (+1), :code:`var--` (-1)
 
 On peut cumuler des expressions logiques avec :code:`&&` (et) et :code:`||` (ou).

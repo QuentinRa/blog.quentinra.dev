@@ -18,3 +18,6 @@ On utilise :code:`window.localStorage` avec
 	* :code:`window.localStorage.setItem('clef', valeur)` : créer une valeur
 	* :code:`window.localStorage.removeItem('clef')` : supprimer une valeur
 	* :code:`window.localStorage.clear()` : supprimer le stockage local
+
+Attention, généralement vous devrez serializer vos données pour les convertir
+en string, regarder la partie sur le JSON.

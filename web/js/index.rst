@@ -4,7 +4,7 @@
 Javascript (JS)
 ================================
 
-| :math:`\color{grey}{Version \ 0.3.4}`
+| :math:`\color{grey}{Version \ 0.5.9}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 05/03/2021}`
 
 Ceci est un cours de Javascript aussi connu sous le nom d'ECMAScript
@@ -20,7 +20,7 @@ Le javascript est exécuté dans le navigateur du client
 	* faire des animations (avec des librairies connues comme d3)
 	* remplacer le php (avec Node.js)
 	* faire des requêtes ajax (en gros parler avec un serveur mais depuis le navigateur client)
-	* afficher des messages d'erreurs si un formulaire est incorrect
+	* afficher des messages d'erreurs si un formulaire est incorrect ou vérification complexes
 
 Nous verrons ici la base (popup/hide/...), la gestion d'erreurs de formulaires. Un cours sera
 dédié aux requêtes Ajax avec les API Rest, un autre pour Node.js et éventuellement un autre
@@ -74,6 +74,44 @@ pour faire des cookies en javascript.
 
 		Manipulation de document <files/base/dom>
 		Manipulation de window   <files/base/frame>
+		Serialization : JSON     <files/base/json>
+
+4. Vérification de formulaire
+====================================
+
+La vérification de formulaire se fait presque intégralement en HTML ! Vous pouvez au moins
+
+	* vérifier la taille
+	* vérifier la valeur (avec un regex)
+	* vérifier que le champs est rempli
+
+Si vous voulez faire des vérifications plus complexes, le meilleur moyen est le suivant, donc
+d'exécuter une fonction lorsque l'utilisateur veut envoyer son formulaire qui vérifie le contenu.
+
+.. code:: none
+
+	<form ... onsubmit="return checkForm(this)"> ... </form>
+
+Puis dans le js, on vérifie le formulaire
+
+.. code:: js
+
+		function checkForm(form){
+		 // récupérer le formulaire
+		 // form.elements = tous les éléments (inputs, ...) du formulaire
+		 // on cherche le name = fname (donne un input)
+		 // sur le input on prends la valeur de value
+		 console.log(form.elements['fname']['value']);
+
+		 // true : ok on peut envoyer
+		 // sinon false
+		 return false;
+		}
+
+Si vous n'avez pas de formulaire compliqué, on utilise généralement le JS
+pour afficher des messages d'erreur autres que ceux affichés par défaut.
+Donc il faudra afficher un div d'erreur pour écrire dedans l'erreur. On mettra
+alors novalidate comme attribut au formulaire pour éviter d'avoir les messages par défaut.
 
 -----
 
@@ -89,3 +127,4 @@ pour faire des cookies en javascript.
 	* https://www.w3schools.com/Js/default.asp
 	* https://www.w3schools.com/Js/js_versions.asp
 	* https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+	* https://www.javascripttutorial.net/javascript-anonymous-functions/

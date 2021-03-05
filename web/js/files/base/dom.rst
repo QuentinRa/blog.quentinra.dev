@@ -64,3 +64,5 @@ En ce qui concerne le style, voici quelques exemples
 
 	div.style.width = "5px";
 	div.style.display = "none";
+
+D'autres propriétés ultra importes sont

@@ -11,13 +11,14 @@ Cours                  Tâches                                 Programmeur assig
 ====================== ====================================== =========================
 Analyse numérique      Ajouter les équations différentielles  \
 Analyse numérique      Ajouter l'interpolation polynomiale    \
-JAVA                   Ajouter Intellij IDEA                  \
+Jetbrains              Ajouter Intellij IDEA                  \
 Bric à Brac            Développements en série                \
 Théorie des graphes    Calculs de distances                   \
 Théorie des graphes    Théorie spectrale                      \
 UML                    Diagramme de déploiement               \
-CSS                    SCSS et Animations                     \
+CSS                    SCSS, Less et Animations               \
 Github                 https://jekyllrb.com/, ...             \
+JS                     JQuery, API Rest, ...                  \
 ====================== ====================================== =========================
 
 Ajout de cours
