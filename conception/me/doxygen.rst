@@ -65,18 +65,120 @@ générer une page web.
 Pour créer un fichier :code:`Doxyfile` vide, taper :code:`doxygen -g`. Ensuite ouvrez le,
 vous devez regarder les lignes suivantes. Vous pouvez ne rien mettre (laissez vide)
 
-	* :code:`PROJECT_NAME = "nom du projet"` : nom de votre projet
-	* :code:`PROJECT_NUMBER = "version"` (par exemple "version 0.0.5")
-	* :code:`PROJECT_BRIEF = "desc"` : description du projet
-	* :code:`PROJECT_LOGO = "path"` : chemin d'un logo si vous en avez
-	* :code:`OUTPUT_DIRECTORY = "path"` : **<!>** chemin dans lequel il va mettre les fichiers .html générés
-	* :code:`OUTPUT_LANGUAGE = "English"` : langage de votre documentation
-	* :code:`LAYOUT_FILE = "path"` : si vous voulez changer l'apparence de la documentation
-	* :code:`QUIET = YES` : **<!>** mettez YES si vous ne voulez voir que les erreurs
-	* WARN_IF_UNDOCUMENTED, WARN_IF_DOC_ERROR, ... : choisir quels warnings/erreurs afficher
-	* :code:`INPUT = path` : **<!>** ajouter un path vers le dossier contenant les fichiers documentés
-	* :code:`INPUT += path` : **<!>** si vous avez plusieurs paths
-	* :code:`RECURSIVE = YES` : **<!>** probablement que vous voulez que INPUT cherche récursivement
+	* base
+
+		* :code:`PROJECT_NAME = "nom du projet"` : nom de votre projet
+		* :code:`PROJECT_NUMBER = "version"` (par exemple "version 0.0.5")
+		* :code:`PROJECT_BRIEF = "desc"` : description du projet
+		* :code:`PROJECT_LOGO = "path"` : chemin d'un logo si vous en avez
+		* :code:`OUTPUT_DIRECTORY = "path"` : ✅ chemin dans lequel il va mettre les fichiers .html générés
+		* :code:`OUTPUT_LANGUAGE = "English"` : langage de votre documentation
+		* :code:`QUIET = YES` : ✅ mettez YES si vous ne voulez voir que les erreurs
+		* WARN_IF_UNDOCUMENTED, WARN_IF_DOC_ERROR, ... : choisir quels warnings/erreurs afficher
+		* :code:`INPUT = path` : ✅ ajouter un path vers le dossier contenant les fichiers documentés
+		* :code:`INPUT += path` : ✅ si vous avez plusieurs paths
+		* :code:`RECURSIVE = YES` : ✅ probablement que vous voulez que INPUT cherche récursivement
+		* :code:`EXCLUDE = path` : comme input mais pour les fichiers/dossiers/chemins à ne pas compiler
+		* :code:`IMAGE_PATH = path` : dossier des images (si vous utilisez \image dans le code)
+
+	* html
+
+		* :code:`LAYOUT_FILE = "path"` : si vous voulez changer l'apparence de la documentation
+		* :code:`HTML_HEADER = header.html` : si vous avez un fichier d'en tête
+		* :code:`HTML_FOOTER = footer.html` : si vous avez un fichier de bas de page
+		* :code:`HTML_EXTRA_STYLESHEET = style.css` : si vous avez un fichier de style
+		* :code:`HTML_EXTRA_FILES = file.js` : si vous avez un fichier js, d'autres fichiers, ...
+
+3. Rédiger sa documentation
+==============================
+
+Attention, doxygen est fatigant car il demande pour chaque fichier
+que vous ayant un commentaire avec :code:`\file`, ou encore avant
+chaque typedef que vous ayez un :code:`\typedef` ou avant un
+struct d'avoir un :code:`\struct` ou encore devant une fonction d'avoir
+:code:`\fn`.
+
+Vous l'aurez compris, vous allez devoir faire l'idiot et mettre un tag
+pour dire à doxygen que vous commentez un fichier/... avant votre
+documentation sinon tout le fichier ne sera pas documenté (si pas de \file), ou alors
+une structure ne sera pas documenté etc.
+
+Ah et vous pensiez que c'était tout ? Eh bien non, doxygen vous demande aussi de documenter
+chaque include, variable, ... avec un commentaire de la forme :code:`//!< ...` sur chaque
+ligne, ce qui est parfois relou.
+
+4. Documentation en C
+========================
+
+Cette partie récapitule la documentation en C, mais la logique est pareil ailleurs.
+
+.. code:: c
+
+		/*!
+		* \file file.h
+		* \author Calistro
+		* \version 0.1
+		* \date 27/02/2021
+		* \see Nom1
+		* \see Nom2
+		*
+		* A freaking .h x)
+		*
+		*/
+
+C'est assez transparent, en début de chaque fichier vous allez avoir un commentaire du genre,
+avec le nom du fichier, l'auteur, la version, la date. Vous pouvez également avec
+see indiquer qu'il sera intéressant d'aller voir un fichier/type/...
+
+Pour commenter une structure
+
+.. code:: c
+
+		/*!
+		* \typedef ma_struct
+		* \struct ma_struct_s file.h "headers/file.h"
+		* \param id: ...
+		* \param key: ...
+		*
+		* Description of this struct
+		*
+		*/
+		typedef struct ma_struct_s {
+		 int id; //!< brief description of this attribute
+		 char* key; //!< brief description of this attribute
+		} ma_struct; //!< brief description of this struct
+
+:code:`Attention` : mettre \typedef après \struct peut résulter en une erreur
+:code:`Compound ... is not documented`, de longues heures de debug juste pour ça...
+
+.. code:: c
+
+	#include "other.h" //!< ... description
+
+.. code:: c
+
+		/*!
+		* \fn int pow(const int x, const int k);
+		* \brief short description
+		*
+		* This is
+		* a long description
+		*
+		* \param[in] x ...
+		* \param[in] k ...
+		* \return ...
+		* \see ...
+		*/
+		int pow(const int x, const int k);
+
+La première ligne est inutile, je la mets pas parce que c'est con, mais il faut la mettre.
+On met ensuite une description courte, une plus longue. On décrit les paramètres avec param
+et le retour avec return. S'il faut aller voir d'autres fonctions/... on le fait encore avec see.
+
+	* :code:`\param nom` : version simple qui corresponds à in
+	* :code:`\param[in] nom` : in veut dire que vous allez seulement lire la variable (souvent const)
+	* :code:`\param[out] nom` : out veut dire que vous allez seulement écrire dans la variable
+	* :code:`\param[in,out] nom` : vous faites in et/ou out
 
 -----
 

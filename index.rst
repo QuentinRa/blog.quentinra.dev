@@ -119,6 +119,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
 		Méthode Agile:Scrum                  <team/agile/scrum>
     Méthodologies extrêmes (MDD,TDD...)  <conception/me/index>
     Écrire du code meilleur              <conception/me/sl>
+    Documentation avec Doxygen           <conception/me/doxygen>
 
 .. toctree::
     :caption: Entreprise
