@@ -137,6 +137,7 @@ et s'appeler elles-même (utiliser le mot clef rec).
 		Fonctions (explicites)   <files/fun/exp>
 		Fonctions récursives     <files/fun/rec>
 		Fonctions accumulatrices <files/fun/acc>
+		Fonctions avec match     <files/fun/match>
 
 Généralement, une fonction pouvant être stockée dans une variable, on peut
 faire des fonctions dites partielles (voilà un exemple complet, regroupant
@@ -169,7 +170,40 @@ les accumulateurs, la récursion, et les fonctions partielles car c'est importan
 		puissance 5 2;;
 		puissance 5 3;;
 
-7. Exercices
+7. Exceptions
+==================
+
+Les exceptions sont le résultat de comportements exceptionnels donc par exemple
+des erreurs comme une division par zéro. Elles sont généralement utilisées
+
+	* pour indiquer une erreur (argument invalide, ...)
+	* mettre fin à un calcul (terminé mais impossible de quitter facilement, ou si erreur)
+	* pour possiblement changer de branche d'exécution du code (voir après le try with)
+
+Pour créer une exception, vous devez utiliser :code:`exception NomException;;`.
+Pour lever une exception, vous devez utiliser :code:`raise NomException;;`.
+
+Vous pouvez également ajouter un message d'erreur (un code, ...) :
+:code:`exception NomException of string`.
+
+.. code:: ocaml
+
+	exception NomException of string;;
+	raise (NomException "erreur inconnue");;
+
+Vous pouvez capturer une exception avec un bloc try with, notez que le with
+marche comme un match !
+
+.. code:: ocaml
+
+		exception NomException of string;;
+		try
+		 raise (NomException "erreur inconnue")
+		with
+		| NomException(e) -> "Erreur : "^e
+		| _ -> failwith "Unknown"
+
+8. Exercices
 ==============
 
 .. toctree::
