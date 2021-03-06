@@ -1,9 +1,3 @@
-Les fonctions sont des citoyens de première classe.
-
-Type composite (n-uplets)
-on mets des valeurs (valeur, valeur, ...)
-le type est celui de chaque des valeurs. L'ordre compte.
-
 Type liste
 [valeur;valeur;]
 type: <type> list donc int list etc.
@@ -12,7 +6,3 @@ valuer::list : ajoute valeur au début.
 Liste : tête et le reste.
 List.hd : premier élément
 List.tl : tout sauf le premier
-
-perl ruby python
-
-0x29a = écrire un nombre en hex. conversion automatique.

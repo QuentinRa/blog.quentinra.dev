@@ -4,8 +4,8 @@
 OCaml
 ================================
 
-| :math:`\color{grey}{Version \ 0.3.5}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 26/01/2021}`
+| :math:`\color{grey}{Version \ 0.6.12}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 06/03/2021}`
 
 1. Introduction
 ===================================
@@ -41,10 +41,14 @@ veut passer en argument - (fonction) et 1 (nombre) et non -1.
 
 Les types sont
 
-	* int (entier a), float (réel, a.b)
+	* int (entier a, hexadécimal 0x29a), float (réel, a.b)
 	* bool (booléen donc true/false)
 	* char (caractère, \'A\'), string (chaine, \"Hello\")
 	* unit : type qui contient uniquement ()
+
+Vous avez aussi les types "joker" par exemple :code:`'a` pour n'importe
+quel type (vous pouvez mettre b, c, ...). Ce sera beaucoup utilisé dans
+les listes ou si vous regardez les types de certaines fonctions.
 
 On ne peut faire des opérations que entre éléments du même type.
 Alternativement, chaque type à ses propres symboles
@@ -113,7 +117,12 @@ pour donner une valeur (donc le condition?valeur1:valeur2 en c). Ici on a
 5. Types complexes et match
 ==============================
 
-...
+.. toctree::
+	 :maxdepth: 1
+
+		Couplets/Types composites <files/types/cpl>
+		Créer des types           <files/types/type>
+		Matching/Filtrage         <files/types/match>
 
 6. Coder ses fonctions
 ========================
@@ -124,11 +133,14 @@ et s'appeler elles-même (utiliser le mot clef rec).
 .. toctree::
 	 :maxdepth: 1
 
-		Fonctions               <files/fun/index>
-		Fonctions récursives    <files/fun/rec>
+		Fonctions                <files/fun/index>
+		Fonctions (explicites)   <files/fun/exp>
+		Fonctions récursives     <files/fun/rec>
+		Fonctions accumulatrices <files/fun/acc>
 
 Généralement, une fonction pouvant être stockée dans une variable, on peut
-faire des fonctions dites partielles
+faire des fonctions dites partielles (voilà un exemple complet, regroupant
+les accumulateurs, la récursion, et les fonctions partielles car c'est important)
 
 .. code:: ocaml
 
@@ -141,12 +153,13 @@ faire des fonctions dites partielles
 		- k=0, returns 125
 		*)
 		let puissance x k =
+		 (* cumul function, r = result, x = number, k = power. evaluated as r. *)
 		 let rec p_acc r x k =
 		  if( k = 0 )
 		  then r (* end, return accumulator *)
 		  (* store in r new result and decrease k *)
 		  else p_acc (r*x) x (k-1)
-		 in p_acc 1 x k
+		 in p_acc 1 x k (* first call, r = 1 and x=x and k=k *)
 		;;
 
 		(* partial function of puissance x k, when k = 2 *)
