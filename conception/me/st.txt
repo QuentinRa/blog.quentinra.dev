@@ -1,0 +1,46 @@
+5. Doxygen
+=========================
+
+La documentation Doxygen est principalement utilisée en C/C++ (mais qui
+est disponible en JAVA, PHP, C#, ...) et fonctionne comme la javadoc (vous
+pouvez d'ailleurs rédiger au format Javadoc comme @see).
+
+.. code:: c
+
+	/// @brief Short description
+	/// 			 ...
+	///
+	/// More details here.
+	///
+	/// @param [in] arg1 ...
+	/// @param [out] arg2 ...
+	/// @param [in,out] arg3 ...
+	/// @return ...
+	/// @sa ... (see also)
+
+Vous pouvez utiliser in (lecture), out (écriture) ou in,out pour indiquer
+ce qu'il adviendra de l'argument.
+
+mais qui peut aussi être directement dans le code
+
+.. code:: c
+
+	int var; ///< description ...
+
+Il faut aussi commenter le fichier !
+
+.. code:: c
+
+		/**
+		* @file name.h
+		* @package ...
+		* @brief ...
+		*
+		* ...
+		*
+		*/
+
+Vous avez aussi les @pre (préconditions), @post (postconditions) et @note
+pour ajouter une note.
+
+Dans CLion, vous pouvez visualiser/pré-visualiser la documentation avec CTRL-Q.
