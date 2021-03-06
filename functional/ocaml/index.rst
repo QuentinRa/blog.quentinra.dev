@@ -123,13 +123,14 @@ pour donner une valeur (donc le condition?valeur1:valeur2 en c). Ici on a
 		Couplets/Types composites <files/types/cpl>
 		Créer des types           <files/types/type>
 		Matching/Filtrage         <files/types/match>
+		Listes                    <files/types/list>
 
 6. Coder ses fonctions
 ========================
 
 En OCaml, on déclare des fonctions avec fun. Certaines peuvent êtres récursives
 et s'appeler elles-même (utiliser le mot clef rec).
-
+git
 .. toctree::
 	 :maxdepth: 1
 
@@ -225,6 +226,8 @@ marche comme un match !
 	* https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-2.pdf
 	* https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-3.pdf
 	* https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-4.pdf
+	* http://web4.ensiie.fr/~stefania.dumbrava/IPF2021/cours.html
+	* http://web4.ensiie.fr/~christophe.mouilleron/Teaching/IPRF/
 	* https://ocaml.org/learn/tutorials/functional_programming.fr.html#Qu-39-est-ce-que-la-programmation-fonctionnelle
 	* http://deptinfo.unice.fr/~elozes/PF/
 	* https://thealmarty.com/2018/09/25/lambda-calculus-in-ocaml-fun-and-function/
