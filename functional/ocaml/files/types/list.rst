@@ -89,3 +89,42 @@ généralement utilisée est la suivante
 		 *)
 		 | a::l' -> if a = e then true else in_liste e l'
 		;;
+
+On note que l'idée est la même si vous avez une liste de couples !
+
+.. code:: ocaml
+
+		(* true si une map (liste de couples) contient une clef *)
+		let rec has_key (c:'a) (l:('a * 'b) list) = match l with
+		 | [] -> false
+		 | (k,v)::l' -> if k = c then true else has_key c l'
+		;;
+
+		has_key 5 [(2,3); (5,1); (7,9)] ;;
+		has_key 12 [(2,3); (5,1); (7,9)] ;;
+
+Fold
+---------------------
+
+Sur le même principe que map, on va appliquer une fonction sur la liste. Cependant
+cette fois, on va appliquer une fonction avec accumulateur
+donc le résultat de tous les calculs précédents.
+
+On peut aller de
+
+	* du premier au dernier, récursion terminale
+	* :math:`f_{n}(f_{n-1}(...f_{2}(f_{1}())...))`
+	* :code:`List.fold_left` (:code:`('a -> 'b -> 'a) -> 'a -> 'b list -> 'a`)
+	* fonction f(a,b) = a, une valeur a, une liste de b et retourne une valeur a
+
+ou
+
+	* du dernier au premier, récursion non terminale
+	* :math:`f_{1}(f_{2}(...f_{n-1}(f_{n}())...))`
+	* :code:`List.fold_right` (:code:`('a -> 'b -> 'b) -> 'a list -> 'b -> 'b`).
+	* fonction f(a,b) = b, une liste de a et une valeur et retourne une valeur b
+
+Pour le dire simplement, vous allez avoir un accumulateur (a ou b selon
+left et right) et une fonction qui va prendre la valeur actuelle et l'accumulateur
+et vous demande de retourner la nouvelle valeur de l'accumulateur. Le dernier argument
+est la valeur par défaut de l'accumulateur. Enfin, l'accumulateur est retourné.

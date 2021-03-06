@@ -213,6 +213,9 @@ marche comme un match !
 		| NomException(e) -> "Erreur : "^e
 		| _ -> failwith "Unknown"
 
+On note le failwith pour quitter avec erreur. Il existe aussi une exception
+invalid_arg si un argument est invalide.
+
 8. Exercices
 ==============
 
