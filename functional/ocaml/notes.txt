@@ -4,37 +4,12 @@ Les fonctions sont des citoyens de première classe.
 
 Fonction passé en argument : tos
 
-http://adv-r.had.co.nz/Functional-programming.html
-
-Les exercices sont à faire dans la boucle d'interaction ; ils doivent également être compilés en byte code ou en code natif (dans ce cas ne pas essayer d'interagir, donner des valeurs en dur dans le code).
-
-Bytecode : ocamlc [source].ml -o [exec]
-Natif : ocamlopt [source].ml -o [exec]
-
-(* dune build main.exe *)
-(* ./_build/default/src/main.exe *)
-(* https://dune.build/ *)
-
 let () =
   print_endline "Hello, world!"
 let x = 5+3;;
 print_int x;;
 
 On remarque que l'exécution d'un objet natif n'affiche rien, il faut donc introduire quelques primitives d'affichage.
-
-https://caml.inria.fr/pub/docs/manual-ocaml/index.html#sec6
-
-idea/bin/idea.sh
--c
-idea fichier
-https://ocaml.org/docs/install.html#From-Source
-Attention, faut l'option --disable-sandboxing
-https://github.com/ocaml/opam-repository/issues/12050
-https://github.com/ocaml/ocaml
-https://reasonml-editor.github.io/reasonml-idea-plugin/docs/get-started/project-configuration
-https://ocamlverse.github.io/content/quickstart_ocaml_project_dune.html
-https://dune.readthedocs.io/en/stable/
-./_build/default/src/main.exe
 
 Type composite (n-uplets)
 on mets des valeurs (valeur, valeur, ...)

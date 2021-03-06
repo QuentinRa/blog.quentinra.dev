@@ -142,40 +142,9 @@ Fonction récursive
 
 	.. code:: ocaml
 
-		let rec fact = function n -> if n = 0 then 1 else n * fact (n - 1) ;;
+		(* fonction qui calcule la factorielle de n donc n! récursivement. *)
+		let rec fact = fun n -> if n = 0 then 1 else n * fact (n - 1) ;;
 		fact 5 ;;
-
-Boucle
-	On peut modéliser une boucle avec une fonction récursive.
-
-	.. code:: ocaml
-
-		let boucle n =
-		 (
-			let rec boucle_i =
-			 function (i) ->
-				if i = n
-				 then ()
-				else
-				begin
-				 (* du code de la boucle *)
-				 print_string(string_of_int (i)^"\n");
-				 boucle_i(i+1);
-				end
-			 in boucle_i (0)
-		 );;
-
-		boucle 5
-
-Couplets/Types composites
-	En fait lorsque vous faites (valeur1, valeur2) par exemple lors d'un appel de fonction,
-	vous créez un type de type (type valeur 1, type valeur 2). Vous pouvez ainsi créer
-	autant de types de voulu. Les valeurs n'ont pas besoin d'avoir le même type.
-
-	.. code:: ocaml
-
-		# let (a,b,c) = (5, "test", 3.0) ;;
-		int * string * float = (5, "test", 3.)
 
 7. Exercices
 ==============
@@ -202,3 +171,15 @@ Couplets/Types composites
 	* https://ocaml.org/learn/tutorials/functional_programming.fr.html#Qu-39-est-ce-que-la-programmation-fonctionnelle
 	* http://deptinfo.unice.fr/~elozes/PF/
 	* https://thealmarty.com/2018/09/25/lambda-calculus-in-ocaml-fun-and-function/
+	* https://dune.build/
+	* http://adv-r.had.co.nz/Functional-programming.html
+	* https://caml.inria.fr/pub/docs/manual-ocaml/index.html#sec6
+	* https://ocaml.org/docs/install.html#From-Source
+	* https://ocaml.org/docs/install.html#Windows
+	* https://fdopen.github.io/opam-repository-mingw/
+	* https://github.com/ocaml/opam-repository/issues/12050
+	* https://github.com/ocaml/ocaml
+	* https://reasonml-editor.github.io/reasonml-idea-plugin/docs/get-started/project-configuration
+	* https://ocamlverse.github.io/content/quickstart_ocaml_project_dune.html
+	* https://dune.readthedocs.io/en/stable/
+	* https://discuss.ocaml.org/t/ideal-ocaml-setups-with-vim-emacs-intellij-idea/4037
