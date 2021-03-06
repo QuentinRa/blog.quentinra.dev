@@ -40,3 +40,15 @@ Pour synthétiser
 	* :code:`| Constructeur (valeur)` : si un constructeur avec of
 	* :code:`| Constructeur1 | Constructeur2` : plusieurs cas, une seul cas
 	* :code:`_` : cas par défaut
+
+Une personne peut aussi faire un match comme ceci
+
+.. code:: ocaml
+
+	let rec extract_r_value color = function
+	| Rouge(r) -> r
+	(* appel récursif pour récupérer r *)
+	| RGB(r,_,_) -> extract_r_value r
+	(* plusieurs branches pareilles *)
+	| Vert(_) | Bleu(_) | None -> 0
+	;;

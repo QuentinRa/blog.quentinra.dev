@@ -29,7 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/ocaml/files/types/list.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/ocaml/files/types/list.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functional/ocaml/files/types/match.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/ocaml/files/types/match.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functional/ocaml/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/ocaml/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />

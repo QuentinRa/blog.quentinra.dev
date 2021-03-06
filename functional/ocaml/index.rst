@@ -133,7 +133,9 @@ pour donner une valeur (donc le condition?valeur1:valeur2 en c). Ici on a
 		Couplets/Types composites <files/types/cpl>
 		Créer des types           <files/types/type>
 		Matching/Filtrage         <files/types/match>
-		Listes                    <files/types/list>
+		Manipulation des Listes   <files/types/list>
+		Manipulation des Zippers  <files/types/zip>
+		Manipulation des Arbres   <files/types/tree>
 
 6. Coder ses fonctions
 ========================
