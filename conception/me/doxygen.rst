@@ -4,7 +4,7 @@
 Documentation Doxygen
 ================================
 
-| :math:`\color{grey}{Version \ 0.3.2}`
+| :math:`\color{grey}{Version \ 0.5.4}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 07/03/2021}`
 
 Ce cours est basé sur :code:`doxygen 1.9.1`.
@@ -107,10 +107,16 @@ Ah et vous pensiez que c'était tout ? Eh bien non, doxygen vous demande aussi d
 chaque include, variable, ... avec un commentaire de la forme :code:`//!< ...` sur chaque
 ligne, ce qui est parfois relou.
 
+Vous pouvez mettre :code:`\param` ou :code:`@param` c'est pareil !
+
+Vous pouvez écrire en latex dans votre documentation, attention à activer
+Mathjax dans le Doxyfile si ce n'est pas déjà fait (:code:`USE_MATHJAX = TRUE`).
+
 4. Documentation en C
 ========================
 
-Cette partie récapitule la documentation en C, mais la logique est pareil ailleurs.
+Cette partie récapitule la documentation en C, mais la logique est pareille ailleurs,
+sauf que vous n'aurez peut être pas de typedef et de struct.
 
 .. code:: c
 
@@ -179,6 +185,72 @@ et le retour avec return. S'il faut aller voir d'autres fonctions/... on le fait
 	* :code:`\param[in] nom` : in veut dire que vous allez seulement lire la variable (souvent const)
 	* :code:`\param[out] nom` : out veut dire que vous allez seulement écrire dans la variable
 	* :code:`\param[in,out] nom` : vous faites in et/ou out
+
+Vous pouvez ajouter
+
+	* :code:`\deprecated desc` si une fonction/truc ne doit plus être utilisé
+	* :code:`\bug desc` si vous avez détecté un bug
+	* :code:`\def name desc` documentation d'un define
+	* :code:`\note desc` pour ajouter une note
+	* :code:`int var; ///< description ...` documentation d'une variable
+
+En matière de tests
+
+	* :code:`\test description` : décrire un test pouvant être fait
+	* :code:`\pre description` : décrire les préconditions (conditions a respecter avant appel)
+	* :code:`\post description` : décrire les postconditions (conditions qui seront respectés après appel)
+	* :code:`\invariant description` : décrire les invariants
+
+5. Documentation en JAVA
+==========================
+
+Je vous invite à regarder la partie JAVADOC du cours de JAVA, globalement
+c'est pareil que plus haut avec quelques trucs en plus
+
+	* il y a des paquets donc on ajoutera :code:`\package name`
+	* il y a des exceptions donc on ajoutera :code:`\exception name desc` ou :code:`\throw`
+	* il y a des interfaces donc on ajoutera :code:`\interface name desc`
+	* ...
+
+6. Documentation Calistro
+============================
+
+Ancien commentateur amateur et motivé, j'ai rapidement arrêté de documenter tout mon code
+(tous les getters, setters, ...). J'essaye donc d'arrêter d'être idiot et noyer mon code
+sous de la documentation souvent inutile en ne documentant que ce qui pourrait être utile
+
+	* documenter les imports
+	* documenter les variables (et leur donner des noms pertinents)
+	*
+		faire des sections, par exemple un grand commentaire pour dire que tous les getters/setters
+		sont ici (je trouve ça plus beau pour uniformiser les fichiers et aider à
+		facilement trouver par exemple les fonctions implémentées dans une section implements)
+	*
+		éviter de mettre :code:`@return int, un entier` parce que c'est déjà écrit dans la signature
+		donc si ya rien à dire, je mets rien
+	*
+		éviter les commentaires copiés collés, @see peut parfois aider, sinon j'ai sûrement mal
+		codé quelque chose
+	*
+		une bonne description en haut de la classe c'est important pour indiquer au lecteur
+		si oui ou non il veut lire cette classe
+	*
+		ne pas mettre :code:`\date` et :code:`\version` ou ne pas leur donner des valeurs compliquées
+		parce que c'est chiant de changer tout le temps/de leur donner une valeur pertinente
+	* donner des descriptions pertinents des attributs
+
+		* donner un interval par exemple
+		* donner des valeurs particulières s'il y en a
+		* indiquer les possibles modifications faites dessus
+		* indiquer des méthodes pouvant être appelées dans la continuité
+		* indiquer le résultat retourné en cas d'erreur
+
+	* essayer de mettre un maximum de commentaires non javadoc donc des :code:`//` par exemple, 1 par ligne c'est pas mal (ça fait beau)
+	* montrer des exemples de code (utilisant notre fonction), parfois ça aide beaucoup si elle est complexe !!!
+	* faire des Readme.md (ou autre) dans chaque dossier, pour faire un sommaire de ce qu'on peut trouver dedans
+	* ...
+
+Dans CLion, vous pouvez visualiser/pré-visualiser la documentation avec CTRL-Q.
 
 -----
 
