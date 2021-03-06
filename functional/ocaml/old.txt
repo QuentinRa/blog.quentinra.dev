@@ -1,0 +1,13 @@
+
+Il est possible d'avoir plusieurs paramètres à une fonction, séparés
+par une virgule (:code:`function (x,y,...) -> code` et :code:`nom (arg1, ...)`.
+
+On peut aussi réécrire la fonction en une fonction
+de fonction de ...
+
+.. code:: ocaml
+
+	let somme_x_y = function x -> (function y -> x + y) ;;
+	somme_x_y (5) (8) ;; (* la fonction prends 2 arguments *)
+	let somme_5_y = somme_x_y (5) ;;
+	somme_5_y 8 ;; (* pareil que somme_x_y (5) (8) *)

@@ -28,27 +28,16 @@ Vous pouvez
 		Interpréteur                   <files/inter>
 
 Chaque ligne finit par :code:`;;` (optionnel dans certains cas). Un commentaire
-se fait avec :code:`(* commentaire *)`. Si un truc
-marche pas, peut être essayer de mettre des parenthèses
-(donc pour explicitement déclarer les arguments/les différentes valeur
-donc comme en maths).
+se fait avec :code:`(* commentaire *)`.
 
 Attention, tout étant nombre, faites attention aux règles
 de priorité (appel de fonction sera fait avant un un calcul, etc.).
-Mettez des parenthèses si besoin. Pareil -1 est considéré comme
-la soustraction pas le nombre négatif donc il faut mettre des parenthèses.
+Mettez des parenthèses si besoin. Par exemple, on mettra toujours généralement (-1)
+et non -1 dans un appel de fonction car ocaml croira sinon que l'on
+veut passer en argument - (fonction) et 1 (nombre) et non -1.
 
 2. Types en OCaml
 ==========================
-
-On ne peut faire des opérations que entre éléments du même type.
-Alternativement, chaque type à ses propres symboles
-
-	* entiers :code:`+, -, *, /` et :code:`mod` (modulo)
-	* flottants :code:`+., -., *., /.`
-	* string :code:`^` (concaténation)
-	* booléens : not, && (et logique), || (ou logique)
-	* tous : :code:`>, >=, <, <=, = (égal), != (différent), <> (différent)`
 
 Les types sont
 
@@ -57,15 +46,28 @@ Les types sont
 	* char (caractère, \'A\'), string (chaine, \"Hello\")
 	* unit : type qui contient uniquement ()
 
-3. Fonctions utiles
-=====================
+On ne peut faire des opérations que entre éléments du même type.
+Alternativement, chaque type à ses propres symboles
+
+	* entiers : :code:`+, -, *, /` et :code:`mod` (modulo)
+	* flottants : :code:`+., -., *., /.`
+	* string : :code:`^` (concaténation)
+	* booléens : not, && (et logique), || (ou logique)
+	* listes : :code:`@` (concaténation)
+	* tous : :code:`>, >=, <, <=, = (égal), != (différent), <> (différent)`
+
+Vous pouvez créer vos propres types et il existe d'autres types complexes
+vus plus tard.
 
 Vous pouvez convertir un nombre avec :code:`<type_to>_of_<type>`
 donc float_of_int prends un int et retourne un float.
 
-Vous pouvez trouver les valeur min/max avec :code:`max_type` (ou :code:`min_type`).
-
 Taille d'une String : :code:`String.length(string)`;
+
+3. Fonctions utiles
+=====================
+
+Vous pouvez trouver les valeur min/max avec :code:`max_type` (ou :code:`min_type`).
 
 Fonctions maths : ceil, floor, sqrt, expr, log, log10.
 
@@ -74,7 +76,7 @@ Affichage
 	* les fonctions print_type (print_int, ...)
 	* les fonctions print_endline (affiche un texte avec \n), ...
 	* Printf.printf (utiliser format comme en c)
-	* Ex: :code:`Printf.printf "float: %f\n" (5.0)`
+	* Ex: :code:`Printf.printf "float: %f\n" 5.0`
 
 4. Variables
 =======================
@@ -84,16 +86,16 @@ On utilise let pour déclarer une variable : :code:`let <nom> = <expr>`.
 Notes
 
 	* une variable peut ne pas avoir de nom, on mets alors :code:`_` comme nom
-	* vous devez donner une valeur
+	* vous devez donner une valeur a une variable
 	* si une variable n'a pas été déclarée, alors vous aurez l'erreur : Unbound value <nom>.
 	* le nom commence forcément par une minuscule (sinon erreur : Unbound constructor)
 
-Vous pouvez déclarer plusieurs variables avec and : :code:`let ...=... and ... = ...`.
+Vous pouvez déclarer plusieurs variables avec and : :code:`let ...=... and ... = ...`
+par exemple :code:`let x = 5 and y = 7;;`
 
 Jusqu'à présent, les variables étaient dites globales donc utilisables partout.
 Il est possible de déclarer une variable locale, qui n'existera
 que dans la déclaration d'une autre variable : :code:`let nom=valeur in expr`.
-
 Cette déclaration n'a d'utilité que si valeur est complexe donc
 on peut directement utiliser nom dans expression pour faire un calcul.
 
@@ -108,39 +110,27 @@ pour donner une valeur (donc le condition?valeur1:valeur2 en c). Ici on a
 :code:`if bool the valeur1 else valeur2`.
 
 	* valeur1 et valeur 2 sont du même type
-	* else obligatoire (par défaut le type est unit donc ça bloque selon 1)
+	* else obligatoire (par défaut le type est unit donc ça bloque car types différents)
 	* utilisation (ex) : :code:`let rep = (if valeur=2 then "oui" else "non")`.
 
 5. Coder ses fonctions
 ========================
 
-On utilise la forme :code:`function entrée -> code`. La fonction
+On utilise la forme :code:`fun entrée -> code`. La fonction
 devra ensuite être stockée dans une variable qui servira à l'appeler.
-On peut utiliser :code:`fun` plutôt que :code:`function`
+On peut utiliser :code:`function` plutôt que :code:`fun` mais ce n'est
+pas recommandé car cela ne fait pas la même chose (voir lambda expressions).
 
 .. code:: ocaml
 
-	(* exemple avec le calcul de diam depuis un r *)
-	let diam = function r -> r *. r ;; (* déclaration *)
-	diam 2.0 (* appel, retourne 4.0 *)
-	diam (2.0) (* pareil *)
-	(* print_float (diam 2.0) pour afficher *)
+		(* exemple avec le calcul d'un prod de r1 et r2 *)
+		let prod = fun r1 r2 -> r1 *. r2 ;; (* déclaration *)
+		prod 2.0 4.0;; (* appel, retourne 8.0 *)
+		prod 2.0 (-4.0);; (* retourne -8.0 *)
+		(* print_float (prod 2.0 4.0) pour afficher *)
 
-On peut directement écrire :code:`let var entrée = entrée * entrée`
+On peut directement écrire une fonction :code:`let prod r1 r2 = r1 *. r2;;`
 mais c'est du sucre syntaxique (donc une syntaxe réduite qui fait pareil).
-
-Il est possible d'avoir plusieurs paramètres à une fonction, séparés
-par une virgule (:code:`function (x,y,...) -> code` et :code:`nom (arg1, ...)`.
-
-On peut aussi réécrire la fonction en une fonction
-de fonction de ...
-
-.. code:: ocaml
-
-	let somme_x_y = function x -> (function y -> x + y) ;;
-	somme_x_y (5) (8) ;; (* la fonction prends 2 arguments *)
-	let somme_5_y = somme_x_y (5) ;;
-	somme_5_y 8 ;; (* pareil que somme_x_y (5) (8) *)
 
 6. Autres points
 =================
@@ -211,3 +201,4 @@ Couplets/Types composites
 	* https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-4.pdf
 	* https://ocaml.org/learn/tutorials/functional_programming.fr.html#Qu-39-est-ce-que-la-programmation-fonctionnelle
 	* http://deptinfo.unice.fr/~elozes/PF/
+	* https://thealmarty.com/2018/09/25/lambda-calculus-in-ocaml-fun-and-function/
