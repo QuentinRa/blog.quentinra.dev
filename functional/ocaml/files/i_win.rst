@@ -25,7 +25,7 @@ comme en c (-o pour renommer, ...).
 
 Source : http://web4.ensiie.fr/~christophe.mouilleron/Teaching/IPF-S2/install.html
 
-1. Télécharger l'archive ici (:download:`ocaml_4-08.zip <../../../assets/functional/ocaml_4-08.zip>`)
+1. Télécharger l'archive ici (:download:`ocaml_4-08.zip <https://chadok.info/~cmouille/ocaml_4-08.zip>`)
 2. Décompresser cette archive dans le dossier C:\\ (ou adaptez tout le reste).
 3. Vérifier que tout est bon en lançant la commande C:\ocaml\bin\ocaml (vous pouvez faire shift+clic droit et cliquer sur ouvrir un invite de commande/powershell ici)
 4. Ajouter le dossier :code:`C:\ocaml\bin` dans votre :code:`%PATH%`.

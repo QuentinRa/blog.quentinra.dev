@@ -68,7 +68,7 @@ Taille d'une String : :code:`String.length(string)`.
 3. Fonctions utiles
 =====================
 
-Vous pouvez trouver les valeur min/max avec :code:`max_type` (ou :code:`min_type`).
+Vous pouvez trouver les valeur min/max avec :code:`max` (ou :code:`min`).
 
 Fonctions maths : ceil, floor, sqrt, expr, log, log10.
 
@@ -130,15 +130,14 @@ pour donner une valeur (donc le condition?valeur1:valeur2 en c). Ici on a
 
 En OCaml, on déclare des fonctions avec fun. Certaines peuvent êtres récursives
 et s'appeler elles-même (utiliser le mot clef rec).
-git
+
 .. toctree::
 	 :maxdepth: 1
 
-		Fonctions                <files/fun/index>
-		Fonctions (explicites)   <files/fun/exp>
-		Fonctions récursives     <files/fun/rec>
-		Fonctions accumulatrices <files/fun/acc>
-		Fonctions avec match     <files/fun/match>
+			Fonctions                <files/fun/index>
+			Fonctions (explicites)   <files/fun/exp>
+			Fonctions récursives     <files/fun/rec>
+			Fonctions accumulatrices <files/fun/acc>
 
 Généralement, une fonction pouvant être stockée dans une variable, on peut
 faire des fonctions dites partielles (voilà un exemple complet, regroupant
