@@ -4,7 +4,7 @@
 OCaml
 ================================
 
-| :math:`\color{grey}{Version \ 0.6.12}`
+| :math:`\color{grey}{Version \ 0.7.12}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 06/03/2021}`
 
 1. Introduction
@@ -54,11 +54,13 @@ On ne peut faire des opérations que entre éléments du même type.
 Alternativement, chaque type à ses propres symboles
 
 	* entiers : :code:`+, -, *, /` et :code:`mod` (modulo)
-	* flottants : :code:`+., -., *., /.`
+	* flottants : :code:`+., -., *., /.` et :code:`**` (puissance)
 	* string : :code:`^` (concaténation)
 	* booléens : not, && (et logique), || (ou logique)
 	* listes : :code:`@` (concaténation)
-	* tous : :code:`>, >=, <, <=, = (égal), != (différent), <> (différent)`
+	* tous : :code:`>, >=, <, <=, = (égal), <> (différent)`
+	* on utilise :code:`not` pour inverser un booléen
+	* on utilise :code:`==` (et :code:`!=`) pour comparer des adresses
 
 Vous pouvez convertir un nombre avec :code:`<type_to>_of_<type>`
 donc float_of_int prends un int et retourne un float.
@@ -68,9 +70,11 @@ Taille d'une String : :code:`String.length(string)`.
 3. Fonctions utiles
 =====================
 
-Vous pouvez trouver les valeur min/max avec :code:`max` (ou :code:`min`).
+Fonctions maths
 
-Fonctions maths : ceil, floor, sqrt, expr, log, log10.
+	* réels : ceil, floor, sqrt, expr, log, log10.
+	* entiers : abs, succ, pred.
+	* comparaison : min, max, compare
 
 Affichage
 
@@ -78,6 +82,12 @@ Affichage
 	* les fonctions print_endline (affiche un texte avec \n), ...
 	* Printf.printf (utiliser format comme en c)
 	* Ex: :code:`Printf.printf "float: %f\n" 5.0`
+
+Lecture
+
+	* fonction read_line : récupérer une ligne de texte
+	* fonction Scanf.scanf (utiliser format comme en c)
+	* Ex : :code:`Scanf.scanf "%d" (fun x -> x)`
 
 4. Variables
 =======================
@@ -221,6 +231,7 @@ marche comme un match !
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
+	* https://try.ocamlpro.com/
 	* https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-1.pdf
 	* https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-2.pdf
 	* https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-3.pdf

@@ -4,7 +4,7 @@
 Git
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.3}`
+| :math:`\color{grey}{Version \ 1.0.4}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 16/02/2021}`
 
 Git est un gestionnaire de version de votre code. Il vous permet de créer des sauvegardes
@@ -161,10 +161,11 @@ Elles sont disponibles sur Github mais toutes ne sont pas disponibles partout.
 	 :maxdepth: 1
 
 
-		Pages Wiki & Documentation                  <git/wiki>
-		Intégration continues (actions)             <git/actions>
-		PullRequest et Issues                       <git/special>
-		Organisation                                <git/org>
+		Pages Wiki & Documentation       <git/wiki>
+		Intégration continues (actions)  <git/actions>
+		PullRequest et Issues            <git/special>
+		Organisation                     <git/org>
+		Github pages                     <git/pages>
 
 -----
 

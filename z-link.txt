@@ -66,11 +66,6 @@ https://www.google.com/webmasters/markup-helper/u/0/?hl=fr
 
 ## Prog
 
-### Functional
-
-https://fdopen.github.io/opam-repository-mingw/installation/
-https://reasonml-editor.github.io/reasonml-idea-plugin/docs/get-started/project-configuration/
-
 ### Java
 
 https://duckduckgo.com/?q=linux+create+program+installer&ia=web&atb=v230-1

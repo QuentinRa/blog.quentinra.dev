@@ -12,3 +12,8 @@ Vous pouvez briser un couple avec :code:`let (a,b,c) = (5, "test", 3.0)` et donc
 dans respectivement a,b,c chacun des valeurs.
 
 Le type d'un couple est de la forme :code:`type a * type b * type c`.
+
+Si vous avez un couple (n,k) vous pouvez utiliser
+
+	* :code:`fst (n,k)` retourne n
+	* :code:`snd (n,k)` retourne k

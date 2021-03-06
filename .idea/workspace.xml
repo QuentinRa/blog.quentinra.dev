@@ -29,10 +29,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/ocaml/files/i_win.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/ocaml/files/i_win.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/ocaml/files/types/list.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/ocaml/files/types/list.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functional/ocaml/files/types/cpl.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/ocaml/files/types/cpl.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functional/ocaml/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/ocaml/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/ocaml/notes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/git.rst" beforeDir="false" afterPath="$PROJECT_DIR$/utils/git.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z-link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/z-link.txt" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
