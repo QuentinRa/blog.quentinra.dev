@@ -23,3 +23,9 @@ Ceci peut poser des problèmes parce que vous auriez pu oublier de déclarer une
 pas d'erreur car vous aviez déjà utilisé le même nom ailleurs. Cela peut aussi poser problème dans
 les boucles car var = une adresse donc si la valeur est changées alors toutes les références
 vont avoir la nouvelle valeur. **Utilisez let pour éviter les problèmes**.
+
+Pour utiliser une variable dans une string, faites :code:`${nom_variable}`.
+
+Vous pouvez initier une variable avec une valeur par défaut par exemple
+:code:`let var  = valeur ?? valeur_default`, qui va donner valeur
+si valeur différent de null/undefined sinon donne valeur_default.

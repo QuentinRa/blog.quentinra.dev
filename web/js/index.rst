@@ -4,8 +4,8 @@
 Javascript (JS)
 ================================
 
-| :math:`\color{grey}{Version \ 0.7.11}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 05/03/2021}`
+| :math:`\color{grey}{Version \ 0.7.12}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 06/03/2021}`
 
 Ceci est un cours de Javascript aussi connu sous le nom d'ECMAScript
 dans sa version 6, nommé ES2020 (été 2020).

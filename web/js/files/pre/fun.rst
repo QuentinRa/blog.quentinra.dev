@@ -2,6 +2,9 @@
 Fonctions en JS
 ====================
 
+Fonctions
+====================
+
 Une fonction est un bloc de code, les variables n'existent que dans ce
 bloc sauf si vous utilisez var.
 
@@ -42,3 +45,38 @@ les requêtes AJAX), on fait
 
 Attention cependant, la deuxième syntaxe est floue sur le portée des variables
 donc elles sont généralement considérées comme étant globales.
+
+Closures
+====================
+
+.. code:: js
+
+		// exemple de fonction
+		function compteur(){
+		 // attributs privés
+		 let count = 0;
+		 // avec une closure
+		 return function () {
+		  return count++;
+		 };
+		}
+
+Cette notion est ultra importe car vous allez déclarer des attributs
+(et des fonctions qui sont des attributs privés) puis
+dans le return vous allez retourner l'Interface de la classe.
+
+.. code:: js
+
+	let api = function() {
+	 function _fetch(begin, end, section){
+	  // ... code ...
+	 }
+
+	 // un objet qui corresponds à la partie publique
+	 return {
+	  getAllNews:_fetch(0,10,"news"),
+	  getAllGames:_fetch(0,10,"games"),
+	 }
+
+	}
+

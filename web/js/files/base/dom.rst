@@ -58,6 +58,7 @@ ses propriétés ou le modifier. En fait c'est assez simple, on va considérer
 	* :code:`e.href` : si un lien par exemple, on se rappelle href = destination
 	* :code:`e.style` : le style d'une balise
 	* :code:`e.className` : la valeur de class, a ne pas utiliser si plusieurs classes
+	* :code:`e.className` : la valeur de class, a ne pas utiliser si plusieurs classes
 	* :code:`e.un_truc` : ...
 
 Vous avez un accès en lecture/écriture donc pouvez à tout moment changer la source
@@ -76,6 +77,8 @@ En ce qui concerne le style, voici quelques exemples
 
 	div.style.width = "5px";
 	div.style.display = "none";
+	div.style.color = "red";
+	div.style.backgroundColor = "yellow";
 
 D'autres propriétés ultra importes sont
 

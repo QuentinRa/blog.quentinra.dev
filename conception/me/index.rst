@@ -31,6 +31,8 @@ Vous pouvez également faire du pair-programming en distanciel, par exemple avec
 le plugin CodeWithMe des logiciels Jetbrains (IntelliJ Idea, PHPStorm, CLion) et il existe
 des plugins similaires dans d'autres IDE comme VSC.
 
+.. _mdd:
+
 2. Model-driven development (MDD) :code:`❤`
 ================================================
 
