@@ -1,15 +1,4 @@
-Notes sur les compilateurs
-
 Les fonctions sont des citoyens de première classe.
-
-Fonction passé en argument : tos
-
-let () =
-  print_endline "Hello, world!"
-let x = 5+3;;
-print_int x;;
-
-On remarque que l'exécution d'un objet natif n'affiche rien, il faut donc introduire quelques primitives d'affichage.
 
 Type composite (n-uplets)
 on mets des valeurs (valeur, valeur, ...)

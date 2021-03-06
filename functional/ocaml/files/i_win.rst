@@ -2,8 +2,8 @@
 Installation OCaml (Windows)
 =====================================
 
-1. Solution WSL
-************************
+1. Solution WSL (OCaml et emacs/sublime text/vim/...)
+**********************************************************
 
 Sous Windows, vous pouvez installer une WSL (windows store -> debian) puis
 
@@ -20,11 +20,30 @@ Sous Windows, vous pouvez installer une WSL (windows store -> debian) puis
 Vous avez un compilateur bytecode : :code:`ocamlc`. Pour compiler, faire
 comme en c (-o pour renommer, ...).
 
-2. Solution calistro
-************************
+2. Solution Christophe Mouilleron (OCaml 4-08 et VSC/...)
+*************************************************************
+
+Source : http://web4.ensiie.fr/~christophe.mouilleron/Teaching/IPF-S2/install.html
+
+1. Télécharger l'archive ici (:download:`ocaml_4-08.zip <../../../assets/functional/ocaml_4-08.zip>`)
+2. Décompresser cette archive dans le dossier C:\\ (ou adaptez tout le reste).
+3. Vérifier que tout est bon en lançant la commande C:\ocaml\bin\ocaml (vous pouvez faire shift+clic droit et cliquer sur ouvrir un invite de commande/powershell ici)
+4. Ajouter le dossier :code:`C:\ocaml\bin` dans votre :code:`%PATH%`.
+
+	* dans la barre de recherche en bas à gauche, tapez "var" et cliquez sur "modifier les variables ... pour votre compte"
+	* cliquez sur la ligne Path
+	* cliquez sur modifier
+	* cliquez sur nouveau
+	* écrivez :code:`C:\ocaml\bin`
+	* sauvegardez (ok) et quittez
+
+5. Testez en tapant :code:`ocaml` dans un nouveau terminal (car les anciens n'ont pas le bon PATH)
+
+3. Solution calistro (OCaml et IntelliJ)
+**********************************************
 
 Suivez ce tutoriel : https://fdopen.github.io/opam-repository-mingw/installation/
-donc téléchargez et installer via l'installer graphique 64bits Opam64. Si vous faites
+donc téléchargez et installez via l'installer graphique 64bits Opam64. Si vous faites
 l'installation manuelle, n'oubliez pas l'option :code:`--disable-sandboxing`.
 
 Ensuite, vous allez installer IntelliJ (voir cours sur jetbrains). Puis installer
@@ -60,20 +79,3 @@ ouvrez le terminal (en bas) puis allez dans le dossier de main.ml et faites
 :code:`dune build main.exe`. Personnellement, il faut ensuite faire :code:`./_build/default/src/main.exe`
 pour voir le résultat. La compilation se fait également automatiquement en sauvegardant,
 vous pouvez voir les détails en bas dans l'onglet dune.
-
-3. Solution Christophe Mouilleron
-***********************************
-
-Source : http://web4.ensiie.fr/~christophe.mouilleron/Teaching/IPF-S2/install.html*
-
-1. Télécharger l'archive ici
-Décompresser cette archive dans le dossier C:\ .
-Attention: emplacement non modifiable
-Vérifier que tout est bon en lançant la commande C:\ocaml\bin\ocaml --version dans un invité de commande (cmd), un PowerShell, ou via l'onglet Terminal de Visual Studio Code.
-Ajouter le dossier C:\ocaml\bin dans votre %PATH%.
-Pour cela, je vous recommande TRÈS vivement de passer par l'outil graphique afin d'éviter les grosses bêtises. Personnellement, sous Windows 10 (en anglais), je l'ouvre via :
-Start → Settings
-recherche du mot "environment"
-choix de "Edit environment variables for your account"
-Installer l'extention Ocaml Tuareg-master dans Visual Studio Code
-Vous devriez pouvoir exécuter un bloc de code OCaml dans Visual Studio Code en vous plaçant au début du bloc et en tapant Ctrl+Alt+: (vérifier le raccourci exact dans la description de l'extension).

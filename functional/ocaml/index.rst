@@ -56,13 +56,10 @@ Alternativement, chaque type à ses propres symboles
 	* listes : :code:`@` (concaténation)
 	* tous : :code:`>, >=, <, <=, = (égal), != (différent), <> (différent)`
 
-Vous pouvez créer vos propres types et il existe d'autres types complexes
-vus plus tard.
-
 Vous pouvez convertir un nombre avec :code:`<type_to>_of_<type>`
 donc float_of_int prends un int et retourne un float.
 
-Taille d'une String : :code:`String.length(string)`;
+Taille d'une String : :code:`String.length(string)`.
 
 3. Fonctions utiles
 =====================
@@ -85,7 +82,7 @@ On utilise let pour déclarer une variable : :code:`let <nom> = <expr>`.
 
 Notes
 
-	* une variable peut ne pas avoir de nom, on mets alors :code:`_` comme nom
+	* une variable peut ne pas avoir de nom, on mets alors :code:`_` comme nom (ex: :code:`let _ = print_endline "Hello, world!";;`)
 	* vous devez donner une valeur a une variable
 	* si une variable n'a pas été déclarée, alors vous aurez l'erreur : Unbound value <nom>.
 	* le nom commence forcément par une minuscule (sinon erreur : Unbound constructor)
@@ -113,38 +110,51 @@ pour donner une valeur (donc le condition?valeur1:valeur2 en c). Ici on a
 	* else obligatoire (par défaut le type est unit donc ça bloque car types différents)
 	* utilisation (ex) : :code:`let rep = (if valeur=2 then "oui" else "non")`.
 
-5. Coder ses fonctions
+5. Types complexes et match
+==============================
+
+...
+
+6. Coder ses fonctions
 ========================
 
-On utilise la forme :code:`fun entrée -> code`. La fonction
-devra ensuite être stockée dans une variable qui servira à l'appeler.
-On peut utiliser :code:`function` plutôt que :code:`fun` mais ce n'est
-pas recommandé car cela ne fait pas la même chose (voir lambda expressions).
+En OCaml, on déclare des fonctions avec fun. Certaines peuvent êtres récursives
+et s'appeler elles-même (utiliser le mot clef rec).
+
+.. toctree::
+	 :maxdepth: 1
+
+		Fonctions               <files/fun/index>
+		Fonctions récursives    <files/fun/rec>
+
+Généralement, une fonction pouvant être stockée dans une variable, on peut
+faire des fonctions dites partielles
 
 .. code:: ocaml
 
-		(* exemple avec le calcul d'un prod de r1 et r2 *)
-		let prod = fun r1 r2 -> r1 *. r2 ;; (* déclaration *)
-		prod 2.0 4.0;; (* appel, retourne 8.0 *)
-		prod 2.0 (-4.0);; (* retourne -8.0 *)
-		(* print_float (prod 2.0 4.0) pour afficher *)
+		(* recursive using accumulator, x = number and k = power and return x^k
+		exemple: puissance 5 3
+		- p_acc 1 5 3
+		- p_acc 1*5 5 2
+		- p_acc 5*5 5 1
+		- p_acc 25*5 5 0
+		- k=0, returns 125
+		*)
+		let puissance x k =
+		 let rec p_acc r x k =
+		  if( k = 0 )
+		  then r (* end, return accumulator *)
+		  (* store in r new result and decrease k *)
+		  else p_acc (r*x) x (k-1)
+		 in p_acc 1 x k
+		;;
 
-On peut directement écrire une fonction :code:`let prod r1 r2 = r1 *. r2;;`
-mais c'est du sucre syntaxique (donc une syntaxe réduite qui fait pareil).
+		(* partial function of puissance x k, when k = 2 *)
+		let carre x = puissance x 2;;
 
-6. Autres points
-=================
-
-Fonction récursive
-	Il suffit de déclarer la fonction (variable) avec le mot clef :code:`rec`.
-	Ensuite dans le code de la fonction, vous utilisez un if (branchement) avec un branche
-	récursive et une branche non récursive.
-
-	.. code:: ocaml
-
-		(* fonction qui calcule la factorielle de n donc n! récursivement. *)
-		let rec fact = fun n -> if n = 0 then 1 else n * fact (n - 1) ;;
-		fact 5 ;;
+		carre 5 ;; (* same as puissance 5 2 *)
+		puissance 5 2;;
+		puissance 5 3;;
 
 7. Exercices
 ==============
