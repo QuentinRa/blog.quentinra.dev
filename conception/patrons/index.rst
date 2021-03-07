@@ -28,7 +28,7 @@ copiez du code vous faites une bêtise et vous pourriez assez probablement faire
 1. Patrons de création (creational)
 ======================================
 
-	* **Factory** : délègue construction, passe par une interface (Interface i = new Object())
+	* **Factory** : délègue construction, passe par une interface (Truc t = Factory.createTruc())
 	* **AbstractFactory** : délègue construction, on cache type (Interface i = Interface.getObject())
 	* **Singleton** : une seule instance (garde instance static, getInstance)
 
