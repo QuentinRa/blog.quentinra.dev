@@ -82,7 +82,7 @@ copiez du code vous faites une bêtise et vous pourriez assez probablement faire
 		Iterator    <b/iterator>
 		Observable  <b/observable>
 		Memento     <b/memento>
-		NullObject   <b/NullObject>
+		NullObject  <b/NullObject>
 
 4. (Patrons) d’architecture
 ===================================
