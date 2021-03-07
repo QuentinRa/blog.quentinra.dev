@@ -79,10 +79,18 @@ copiez du code vous faites une bêtise et vous pourriez assez probablement faire
 .. toctree::
 	 :maxdepth: 1
 
-		Iterator    <b/iterator>
-		Observable  <b/observable>
-		Memento     <b/memento>
-		NullObject  <b/NullObject>
+		Chain of Responsibility  <b/cor>
+		Iterator                 <b/iterator>
+		Observable               <b/observable>
+		Memento                  <b/memento>
+		NullObject               <b/NullObject>
+		Commande                 <b/commande>
+		Interpreter              <b/interpreter>
+		Template Method          <b/template>
+		State                    <b/state>
+		Strategy                 <b/strategy>
+		Visitor                  <b/visitor>
+		Mediator                 <b/mediator>
 
 4. (Patrons) d’architecture
 ===================================
@@ -109,3 +117,4 @@ aucun
 	* https://www.gofpatterns.com/
 	* https://www.geeksforgeeks.org/null-object-design-pattern/
 	* https://www.tutorialspoint.com/design_pattern/null_object_pattern.htm
+	* https://www.baeldung.com/java-observer-pattern
