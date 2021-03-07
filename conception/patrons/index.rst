@@ -52,6 +52,7 @@ copiez du code vous faites une bêtise et vous pourriez assez probablement faire
 	* **Adaptor** : interface qui fait la liaison entre ce que le client veut et votre code
 	* **Façade** : réalisation d'une api simplifiée de notre code
 	* **Composite** : classe abstraite implémentée par parents et enfants
+	* **Bridge** : faire en sorte d'interagir avec des interfaces plutôt que des réalisations concrètes
 
 .. toctree::
 	 :maxdepth: 1
@@ -59,6 +60,10 @@ copiez du code vous faites une bêtise et vous pourriez assez probablement faire
 		Adaptor    <s/adaptor>
 		Façade     <s/facade>
 		Composite  <s/composite>
+		Bridge     <s/bridge>
+		Decorator  <s/decorator>
+		Flyweight  <s/flyweight>
+		Proxy      <s/proxy>
 
 3. Patrons de comportement (behaviour)
 =========================================
@@ -90,3 +95,4 @@ aucun
 **Références**
 	* https://fr.wikibooks.org/wiki/Patrons_de_conception
 	* https://www.javatpoint.com/design-patterns-in-java
+	* https://www.geeksforgeeks.org/the-decorator-pattern-set-2-introduction-and-design/
