@@ -27,30 +27,6 @@ data:,test%test
 	* https://testssl.sh/testssl.1.html
 	* https://upcloud.com/community/tutorials/secure-postfix-using-lets-encrypt/
 
-apache serv
-	* https://linuxize.com/post/apache-log-files/
-	* https://stackoverflow.com/questions/7814222/how-to-write-a-java-daemon
-	* https://stackoverflow.com/questions/44861732/write-a-daemon-in-lua
-	* https://linuxize.com/post/secure-apache-with-let-s-encrypt-on-debian-10/
-	* https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-debian-8
-	* http://www.webdeveloperjuice.com/2010/01/25/10-baby-steps-to-install-memcached-server-and-access-it-with-php/
-	* https://geekflare.com/free-ssl-certificate-apache-letsencrypt/
-	* https://www.techrepublic.com/blog/smb-technologist/secure-your-apache-server-from-ddos-slowloris-and-dns-injection-attacks/
-	* https://stackoverflow.com/questions/19118482/deny-access-to-one-specific-folder-in-htaccess
-	*	https://theitbros.com/how-to-setup-a-vps-to-host-your-website/
-	*	https://community.ovh.com/en/t/how-to-link-a-domain-name-with-a-vps/280/2
-	*	https://www.digitalocean.com/community/tutorials/initial-server-setup-with-debian-9
-	*	https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mariadb-php-lamp-stack-debian9
-	*	https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-debian-10
-	*	https://www.alsacreations.com/tuto/lire/614-Serveur-mail-Postfix.html
-	*	https://emailconfiguration.com/ovh-net
-	* https://www.peterbe.com/plog/run-forever.sh
-
-sites
-	* https://bootstrapstudio.io/
-	* https://balsamiq.com/
-	* https://gohugo.io/ ou http://antoine.chapusot.fr/
-
 Autres
 	* https://www.electronjs.org/docs/tutorial/first-app
 	* https://github.com/electron/electron-api-demos
@@ -58,4 +34,3 @@ Autres
 
 https://stripe.com/
 https://www.google.com/webmasters/markup-helper/u/0/?hl=fr
-http://www.iut-fbleau.fr/sitebp/web/wim11/apache/apache.pdf

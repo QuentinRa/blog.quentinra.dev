@@ -17,6 +17,8 @@ https://docs.github.com/en/github/working-with-github-pages/about-custom-domains
 mais bon cela suppose que vous avez acheté le nom de domaine
 (pour une dizaine d'euro/an chez OVH <3).
 
+**Sites faciles**
+
 Vous pouvez utiliser des outils comme Jekyll (https://jekyllrb.com/)
 pour coder votre site en markdown et ne pas faire de Web.
 Vous pouvez trouver la documentation ici : https://jekyllrb.com/docs/.
@@ -26,3 +28,5 @@ https://gohugo.io/ pour faire un site rapidement.
 
 Vous pouvez également utiliser des templates boostrap sur https://freehtml5.co/
 par exemple.
+
+Enfin, vous pouvez regarder du côté de https://bootstrapstudio.io/.
