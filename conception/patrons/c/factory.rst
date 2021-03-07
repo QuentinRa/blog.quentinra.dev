@@ -2,6 +2,8 @@
 Factory
 ===========
 
+Aussi appelé "Constructeur virtuel" (Virtual constructor).
+
 Il s'agit d'un patron dans lequel on utilise une interface (on va dire I)
 pour créer des objets.
 
