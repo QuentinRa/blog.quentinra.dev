@@ -159,6 +159,9 @@ par exemple comme options). Vous pouvez le mettre directement dans le CMakeLists
 		Changer de compilateur        <jetbrains/clion/comp>
 		Remote Working                <jetbrains/clion/remote>
 
+Si vous n'avez pas CMake d'installé, vous pouvez l'installer via WSL
+en suivant ce tutoriel https://www.jetbrains.com/help/clion/how-to-use-wsl-development-environment-in-product.html#wsl-tooclhain.
+
 -----
 
 **Crédits**
