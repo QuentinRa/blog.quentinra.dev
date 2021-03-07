@@ -4,8 +4,8 @@
 Jetbrains
 ==============
 
-| :math:`\color{grey}{Version \ 0.3.7}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 23/02/2021}`
+| :math:`\color{grey}{Version \ 0.3.8}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 07/03/2021}`
 
 Cette page contiendra des tutoriels sur les logiciels
 jetbrains donc PHPStorm, IntelliJ Idea, CLion, WebStorm...
@@ -55,6 +55,8 @@ Voici quelques raccourcis
 	* :code:`CTRL-D` : si rien sélectionné duplique la ligne sinon duplique la sélection
 	* sélection + :code:`CTRL-ALT-T` : vous permet de générer un trycatch, un if, ... autour de la sélection
 	* :code:`CTRL-SHIFT-T` : générer un test de la classe actuelle (donc faut être dans une classe)
+	* sélection + :code:`ALT-ENTRÉE` : si vous avez une erreur, alors vous pouvez voir les solutions
+	* sélection + :code:`CTRL-SHIFT-U` : passer minuscule à majuscule et inversement
 
 Vous avez aussi les raccourcis basiques (autre que CTRL-F) comme CTRL-A (tout sélectionner), CTRL-C (copier),
 CTRL-V (coller), SHIFT-BEGIN (sélection de position jusqu'au début de la ligne), SHIFT-END (sélection de position
