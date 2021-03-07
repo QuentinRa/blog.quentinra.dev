@@ -4,12 +4,14 @@
 Serveur apache (Linux/Windows)
 ================================
 
-| :math:`\color{grey}{Version \ 0.2.6}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 16/02/2021}`
+| :math:`\color{grey}{Version \ 0.3.13}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 07/03/2021}`
 
-Attention, je suis en train d'apprendre donc je mets des notes en
-vracs pour les parties 3 ou plus, car la version propre et correcte
-ne sera faite que dans très très longtemps.
+.. hint::
+
+		Attention, pour les parties 3 et après, ce ne sont qu'un paquet de liens
+		et des notes. Si vous le souhaitez, faites un résumé parce que comme
+		vous pourrez le voir, c'est beaucoup de recherches.
 
 1. Introduction
 ===================================
@@ -93,10 +95,16 @@ Personnellement, pour lier mon vps avec un nom de domaine, j'ai fait
 4. Introduction au serveur apache
 ====================================
 
-....
+...
 
 5. Serveur apache avancé
 ===========================
+
+**.htaccess**
+
+Mes .htaccess ne semblaient par marcher (et c'était le cas), donc j'ai suivit ces tutoriels
+
+	* `enable .htaccess <https://phoenixnap.com/kb/how-to-set-up-enable-htaccess-apache>`
 
 **SSL**
 
@@ -108,6 +116,8 @@ ou d'autres liens dans les références).
 Vous devrez le renouvellement après 3 mois, sauf si vous activer le renouvellement
 automatique. Pour avoir renouvelé manuellement, c'est vraiment très rapide.
 
+Si besoin `https://testssl.sh/testssl.1.html <https://testssl.sh/testssl.1.html>`_.
+
 **Logs**
 
 Vous pouvez trouver les logs du serveur dans
@@ -115,19 +125,57 @@ Vous pouvez trouver les logs du serveur dans
 pouvez suivre le lien suivant pour configurer vos
 dossiers/forme de vos logs `apache-log-files <https://linuxize.com/post/apache-log-files/>`_.
 
-**Mails**
+**Base de données**
+
+Voici quelques liens que j'ai consulté
+
+	* `Accès distant mysql <https://linuxize.com/post/mysql-remote-access/>`_
+	* `Accès distant db <https://dba.stackexchange.com/questions/97389/how-to-connect-to-a-database-in-my-vps-from-remote-machine>`_
+	* `Changer port mariadb <https://www.jamescoyle.net/how-to/2219-change-listening-port-of-mysql-or-mariadb-server>`_
+	* `Créer DB <https://www.pickaweb.co.uk/kb/how-do-i-create-a-mysql-database-on-a-vps/>`_
+	* `Accès distant mariadb <https://mariadb.com/kb/en/configuring-mariadb-for-remote-client-access/>`_
+	* `phpmyadmin <https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-debian-9>`_
+
+6. Configurer un serveur de mails
+===================================
 
 Pour envoyer des mails, j'ai suivit ce tutoriel
 
 	* `Postfix <https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-debian-10>`_
-	* ...
+	* `Install and Secure Postfix <https://upcloud.com/community/tutorials/secure-postfix-using-lets-encrypt/>`_
+	* `Encrypt Postfix <https://beamtic.com/lets-encrypt-postfix/>`_
+	* `TLS Postfix <http://www.postfix.org/TLS_README.html>`_
+	* `tls encryption Postfix <https://zurgl.com/how-to-configure-tls-encryption-in-postfix/>`_
+	* `Postfix tls encryption <https://kruyt.org/postfix-and-tls-encryption/>`_
 
 Notez qu'il y a plein de trucs à faire pour ne pas finir
 dans les spams, le conseil numéro 1 que j'ai a donné est que les modifications
 ne sont pas immédiates donc attendez environ 12h avant de faire un test.
 
 	* vous pouvez faire des tests avec : `mail-tester.com <https://www.mail-tester.com/>`_
+	* d'autres tests avec : `mxtoolbox.com <https://mxtoolbox.com/>`_
+	* tests dmarc : `dmarcian.com (inspector) <https://dmarcian.com/dmarc-inspector/>`_
+	* tests dmarc : `dmarcian.com (wizard) <https://dmarcian.com/dmarc-record-wizard/>`_
+	* tests dmarc : `redsift.com <https://ondmarc.redsift.com/>`_
 	* si besoin, j'aime bien ce site : https://emailconfiguration.com/ovh-net
+
+Voici les liens pour éviter de finir dans les spams que j'ai consulté
+
+	* `set spf <https://docs.ovh.com/fr/dedicated/optimiser-envoi-emails/#configurer-le-champ-spf>`_
+	* `spf record <https://docs.ovh.com/gb/en/domains/web_hosting_the_spf_record/>`_
+	* `Stay out of SPAM folder <https://drupal-admin.com/blog/setup-ptr-spf-dkim>`_
+	* `Setup Dkim <https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-dkim-with-postfix-on-debian-wheezy>`_
+	* `Land up in SPAM folders <https://serverfault.com/questions/137311/why-are-my-mails-sent-from-postfix-recognized-as-spam>`_
+	* `Emails dns records <https://www.rackaid.com/blog/email-dns-records/>`_
+	* `Emails dns <https://docs.iredmail.org/setup.dns.html>`_
+	* `Dkim setup <https://drupal-admin.com/blog/setup-ptr-spf-dkim>`_
+	* `Send some email <https://blog.codinghorror.com/so-youd-like-to-send-some-email-through-code/>`_
+	* `Emails go to spam <https://www.digitalocean.com/community/questions/emails-go-to-spam-with-postfix-and-spf>`_
+	* `Dkim tutorial <https://blog.demees.net/serveur-mail-denvoi-signature-dkim-liberte-de-choix-dadresse-de-lexpediteur/>`_
+	* `DMarc <https://www.dmarcanalyzer.com/fr/comment-creer-un-dmarc-record/>`_
+
+Pour google, le plus important est d'avoir configuré le DMARC (attention, n'oubliez pas
+d'attendre!).
 
 -----
 
@@ -135,10 +183,19 @@ ne sont pas immédiates donc attendez environ 12h avant de faire un test.
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
+	* wamp
+
+		* https://stackoverflow.com/questions/5773288/configure-wamp-server-to-send-email
+
 	* configuration apache
 
+		* https://ubuntu.com/tutorials/install-and-configure-apache#1-overview
+		* https://stackoverflow.com/questions/526742/how-can-i-make-a-public-html-folder-in-ubuntu
+		* https://www.cyberciti.biz/faq/star-stop-restart-apache2-webserver/
 		* http://www.iut-fbleau.fr/sitebp/web/wim11/apache/apache.pdf
 		* https://www.digitalocean.com/community/tutorials/initial-server-setup-with-debian-10
+		* https://ubuntu.com/tutorials/install-and-configure-apache#5-activating-virtualhost-file
+		* https://www.digitalocean.com/community/tutorials/how-to-configure-the-apache-web-server-on-an-ubuntu-or-debian-vps
 		* https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mariadb-php-lamp-stack-on-debian-10
 		* https://linuxize.com/post/apache-log-files/
 
@@ -154,7 +211,9 @@ ne sont pas immédiates donc attendez environ 12h avant de faire un test.
 
 		* Script infini : https://www.peterbe.com/plog/run-forever.sh
 		* cache : http://www.webdeveloperjuice.com/2010/01/25/10-baby-steps-to-install-memcached-server-and-access-it-with-php/
+		* :code:`data:,du texte ici` : affiche "du texte ici" dans le navigateur
 
 	* mails
 
 		* https://www.alsacreations.com/tuto/lire/614-Serveur-mail-Postfix.html
+		* plus plein d'autres liens dans la partie du cours (non remis ici)

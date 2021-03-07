@@ -29,10 +29,11 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/ihm/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/ihm/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/git/pages.rst" beforeDir="false" afterPath="$PROJECT_DIR$/utils/git/pages.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/web/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/corp/insertion.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/corp/insertion.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/notes.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/server/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/server/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z-link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/z-link.txt" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -406,7 +407,7 @@
       <workItem from="1614934024359" duration="25489000" />
       <workItem from="1614993941838" duration="1740000" />
       <workItem from="1615029186136" duration="3572000" />
-      <workItem from="1615111510938" duration="30233000" />
+      <workItem from="1615111510938" duration="32049000" />
     </task>
     <servers />
   </component>

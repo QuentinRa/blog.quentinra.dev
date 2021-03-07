@@ -198,7 +198,10 @@ les voir dans le code et modifier leur valeur.
 6. Tags meta
 ================================
 
-Voici quelques tags meta souvent utilisés.
+Voici quelques tags meta souvent utilisés. Vous pouvez
+utiliser le truc de google https://www.google.com/webmasters/markup-helper/u/0/?hl=fr
+pour expliquer à google ce qu'il y a sur votre site si c'est votre but
+(https://www.oodlesmarketing.com/blog/use-google-structured-data-markup-helper/).
 
 .. code:: html
 

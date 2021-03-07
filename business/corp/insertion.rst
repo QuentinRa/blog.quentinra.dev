@@ -84,3 +84,5 @@ Il faut au mieux se mettre à la place de votre auditoire
 **Références**
 	* https://www.digitaweb.com/blog/rgaa-criteres-accessibilite-1
 	* https://www.ionos.fr/startupguide/productivite/lettre-de-motivation/
+	* https://www.wix.com/blog/2020/05/how-to-design-a-website
+	* https://www.wix.com/blog/2016/06/how-to-create-website-step-by-step-guide/
