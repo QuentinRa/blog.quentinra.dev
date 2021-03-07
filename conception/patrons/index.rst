@@ -29,9 +29,11 @@ copiez du code vous faites une bêtise et vous pourriez assez probablement faire
 ======================================
 
 	* **Factory** : délègue construction, passe par une interface appelée factory (Truc t = Factory.createTruc())
-	* **AbstractFactory** : délègue construction, on cache type (Interface i = Interface.getObject())
+	* **AbstractFactory** : un ensemble de factory, on cache les factory utilisées, et pareil que factory, on cache les objets créés
 	* **Singleton** : une seule instance (garde instance static, getInstance)
 	* **Multiton** : uniquement n instances (garde liste d'instances static, getInstance)
+	* **Prototype** : utilisation du clonage lorsque la création est complexe
+	* **Builder** : sépare la création d'un objet en parties modulables
 
 .. toctree::
 	 :maxdepth: 1
@@ -41,6 +43,7 @@ copiez du code vous faites une bêtise et vous pourriez assez probablement faire
 		Singleton           <c/single>
 		Multiton            <c/multi>
 		Prototype           <c/prototype>
+		Builder             <c/builder>
 
 2. Patrons de structuration (structural)
 =============================================

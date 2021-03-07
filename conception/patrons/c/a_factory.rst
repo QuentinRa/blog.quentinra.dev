@@ -46,3 +46,4 @@ C'est beaucoup trop de code donc pas d'exemple, mais je résume
 		* Monstre et Humain : car ce sont les trucs créées
 
 	* et donc on ne manipulera pas Gobelin, Troll, ... Héros, PNJ car ils sont cachés !!!
+	* et donc on ne manipulera pas MonstreFactory et HumainFactory car ils sont cachés !!!

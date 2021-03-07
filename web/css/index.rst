@@ -182,7 +182,7 @@ d'au moins une certaine taille par exemple. On parle de media-queries.
 
 .. code:: none
 
-		@media min-width(750px) AND max-width(950px) {
+		@media (min-width: 750px) AND (max-width: 950px) {
 		 .telephone-div {
 		  ...
 		 }
