@@ -4,7 +4,7 @@
 Patrons de conception
 ================================
 
-| :math:`\color{grey}{Version \ 2.0.1}`
+| :math:`\color{grey}{Version \ 2.0.10}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 07/03/2020}`
 
 Les patrons de conceptions sont des méthodes que d'autres programmeurs ont pensés
@@ -53,6 +53,9 @@ copiez du code vous faites une bêtise et vous pourriez assez probablement faire
 	* **Façade** : réalisation d'une api simplifiée de notre code
 	* **Composite** : classe abstraite implémentée par parents et enfants
 	* **Bridge** : faire en sorte d'interagir avec des interfaces plutôt que des réalisations concrètes
+	* **Decorator** : modifier uniquement une méthode (pointeur sur un objet, redéfini de ses méthodes)
+	* **Flyweight** : si vous avez des programmes avec 100000 instances d'un même trucs (soldats, ...)
+	* **Proxy** : un objet qui appelle les méthodes d'un autre
 
 .. toctree::
 	 :maxdepth: 1
@@ -70,9 +73,16 @@ copiez du code vous faites une bêtise et vous pourriez assez probablement faire
 
 	* **Iterator** : Le patron Iterator (+Iterable) permet d’itérer un objet sans connaitre son contenu. (parcours de façon générique, simultanée sans duplication).
 	* **Observable** : Le patron Observable (+Observer) associe à un observer des objets observables qu’il peut actualiser s’il a changé (utile répercuter M->V).
-	* **Décorateur** : pointeur sur un objet, redéfini de ses méthodes
 	* **Memento** : charge et sauvegarde objet, ou utiliser fichiers xml, json, bd...
-	* **NullObjet** : classe dont les méthodes ne font rien
+	* **NullObject** : classe dont les méthodes ne font rien
+
+.. toctree::
+	 :maxdepth: 1
+
+		Iterator    <b/iterator>
+		Observable  <b/observable>
+		Memento     <b/memento>
+		NullObject   <b/NullObject>
 
 4. (Patrons) d’architecture
 ===================================
@@ -96,3 +106,6 @@ aucun
 	* https://fr.wikibooks.org/wiki/Patrons_de_conception
 	* https://www.javatpoint.com/design-patterns-in-java
 	* https://www.geeksforgeeks.org/the-decorator-pattern-set-2-introduction-and-design/
+	* https://www.gofpatterns.com/
+	* https://www.geeksforgeeks.org/null-object-design-pattern/
+	* https://www.tutorialspoint.com/design_pattern/null_object_pattern.htm
