@@ -34,6 +34,7 @@ copiez du code vous faites une bêtise et vous pourriez assez probablement faire
 	* **Multiton** : uniquement n instances (garde liste d'instances static, getInstance)
 	* **Prototype** : utilisation du clonage lorsque la création est complexe
 	* **Builder** : sépare la création d'un objet en parties modulables
+	* **Object Pool** : en gros, une classe génère les objets crées (ensemble fini: pool) et leur destruction.
 
 .. toctree::
 	 :maxdepth: 1
@@ -48,16 +49,23 @@ copiez du code vous faites une bêtise et vous pourriez assez probablement faire
 2. Patrons de structuration (structural)
 =============================================
 
-	* **Adaptor** : Le patron Adaptor permet de faire intéragir l’utilisateur avec une méthode, qui va exécuter d’autres méthodes en fonction d’où elle doit aller chercher l’information.
-	* **Façade** : Api simplifiée, une méthode peut avoir plusieurs comportements
+	* **Adaptor** : interface qui fait la liaison entre ce que le client veut et votre code
+	* **Façade** : réalisation d'une api simplifiée de notre code
 	* **Composite** : classe abstraite implémentée par parents et enfants
+
+.. toctree::
+	 :maxdepth: 1
+
+		Adaptor    <s/adaptor>
+		Façade     <s/facade>
+		Composite  <s/composite>
 
 3. Patrons de comportement (behaviour)
 =========================================
 
 	* **Iterator** : Le patron Iterator (+Iterable) permet d’itérer un objet sans connaitre son contenu. (parcours de façon générique, simultanée sans duplication).
 	* **Observable** : Le patron Observable (+Observer) associe à un observer des objets observables qu’il peut actualiser s’il a changé (utile répercuter M->V).
-	* **Décorateur** : pointeur sur un objet, rédéfini de ses méthodes
+	* **Décorateur** : pointeur sur un objet, redéfini de ses méthodes
 	* **Memento** : charge et sauvegarde objet, ou utiliser fichiers xml, json, bd...
 	* **NullObjet** : classe dont les méthodes ne font rien
 
