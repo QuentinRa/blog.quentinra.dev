@@ -4,42 +4,52 @@
 Patrons de conception
 ================================
 
-| :math:`\color{grey}{Version \ 1.0.0}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 14/11/2020}`
+| :math:`\color{grey}{Version \ 2.0.1}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 07/03/2020}`
 
 Les patrons de conceptions sont des méthodes que d'autres programmeurs ont pensés
 pour résoudre certains problèmes ou fournir des moyens de programmer
-certains comportements.
+certains comportements. Il s'applique généralement à tous les langages orientés-objets OO.
 
-Il existe 4 familles de patrons :
+Il existe 4 grandes familles de patrons :
 
-	* **Patrons de construction** : manières de créer des objets
+	* **Patrons de création** : manières de créer des objets
 	* **Patrons de structuration** : manières structurer le programme
 	* **Patrons de comportement** : façons d’interagir entres objets
 	* **Patrons d’architecture** : façon de programmer
 
-.. note::
+Il existe également des anti-patrons donc des patrons à ne pas utiliser mais
+que vous utilisez peut-être, donc il existe des solutions pour revenir à ces
+mauvais codes typiques.
 
-	Pour l'instant, ce cours présente explique et présente quelques patrons mais
-	une mise à jour sera faite pour ajouter plus d'explications et d'exemples
-	dans le futur. ~ Calistro
+On note maintenant mais une astuce générale est que dans 100% des cas, si vous
+copiez du code vous faites une bêtise et vous pourriez assez probablement faire autrement.
 
-1. Patrons de construction
-===================================
+1. Patrons de création (creational)
+======================================
 
 	* **Factory** : délègue construction, passe par une interface (Interface i = new Object())
 	* **AbstractFactory** : délègue construction, on cache type (Interface i = Interface.getObject())
 	* **Singleton** : une seule instance (garde instance static, getInstance)
 
-2. Patrons de structuration
-===================================
+.. toctree::
+	 :maxdepth: 1
+
+		Factory (method)         <c/factory>
+		AbstractFactory (method) <c/a_factory>
+		Singleton                <c/single>
+		Multiton                 <c/multi>
+		Prototype                <c/prototype>
+
+2. Patrons de structuration (structural)
+=============================================
 
 	* **Adaptor** : Le patron Adaptor permet de faire intéragir l’utilisateur avec une méthode, qui va exécuter d’autres méthodes en fonction d’où elle doit aller chercher l’information.
 	* **Façade** : Api simplifiée, une méthode peut avoir plusieurs comportements
 	* **Composite** : classe abstraite implémentée par parents et enfants
 
-3. Patrons de comportement
-===================================
+3. Patrons de comportement (behaviour)
+=========================================
 
 	* **Iterator** : Le patron Iterator (+Iterable) permet d’itérer un objet sans connaitre son contenu. (parcours de façon générique, simultanée sans duplication).
 	* **Observable** : Le patron Observable (+Observer) associe à un observer des objets observables qu’il peut actualiser s’il a changé (utile répercuter M->V).
@@ -47,7 +57,7 @@ Il existe 4 familles de patrons :
 	* **Memento** : charge et sauvegarde objet, ou utiliser fichiers xml, json, bd...
 	* **NullObjet** : classe dont les méthodes ne font rien
 
-4. Patrons d’architecture
+4. (Patrons) d’architecture
 ===================================
 
 	* **MVC** : Le Modèle MVC (modèle vue contrôleur)
@@ -58,13 +68,13 @@ Il existe 4 familles de patrons :
 
 aucun
 
-|
-
 -----
 
 **Crédits**
+	* David ROUSSEL (enseignant à l'ENSIIE)
 	* Florent MADELAINE (enseignant à l'IUT de Sénart-Fontainebleau)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* aucune
+	* https://fr.wikibooks.org/wiki/Patrons_de_conception
+	* https://www.javatpoint.com/design-patterns-in-java
