@@ -19,11 +19,11 @@ on_rtd = os.environ.get('READTHEDOCS') == 'True'
 # -- Project information -----------------------------------------------------
 
 project = ''
-copyright = '2021, Quentin Ra'
-author = 'Quentin Ra'
+copyright = '2021, Quentin Ra, Legendary Games Studio'
+author = 'Quentin Ra, Legendary Games Studio'
 
 # The full version, including alpha/beta/rc tags
-release = 'build-3.44.615'
+release = 'build-3.44.637'
 # version 0 : fait en html, css, php, js
 # version 1 : refonte mais en restructured text avec sphinx
 # version 1.1 : system/docker
@@ -140,8 +140,8 @@ html_theme_options = {
 
 html_context = {}
 html_context['display_github'] = True
-html_context['github_user'] = 'QuentinRa'
-html_context['github_repo'] = 'ramsamy.ws-res'
+html_context['github_user'] = 'lgs-games'
+html_context['github_repo'] = 'memorize'
 html_context['github_version'] = 'master/'
 
 # -- GraphViz configuration ----------------------------------
@@ -154,7 +154,7 @@ graphviz_output_format = 'svg'
 
 # -- PDF
 
-pdf_documents = [('index', u'memorize', u'Memorize', u'Quentin Ra')]
+pdf_documents = [('index', u'memorize', u'Memorize', u'Legendary Games Studio')]
 
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-latex-output
 # https://docs.readthedocs.io/en/stable/guides/pdf-non-ascii-languages.html

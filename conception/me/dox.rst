@@ -4,8 +4,8 @@
 Documentation Doxygen
 ================================
 
-| :math:`\color{grey}{Version \ 0.5.4}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 07/03/2021}`
+| :math:`\color{grey}{Version \ 0.5.5}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 08/03/2021}`
 
 Ce cours est basé sur :code:`doxygen 1.9.1`.
 
@@ -251,6 +251,73 @@ sous de la documentation souvent inutile en ne documentant que ce qui pourrait �
 	* ...
 
 Dans CLion, vous pouvez visualiser/pré-visualiser la documentation avec CTRL-Q.
+
+7. Doxygen (enhanced)
+==========================
+
+Honnêtement, je trouvais que j'écrivais trop de documentation, et en plus l'interface
+était moche, donc j'ai cherché à faire un truc beau, et au final j'arrive
+à avoir une donc sans warnings mais qui est belle et avec moins de documentation
+dans le code. Un exemple sont les \param devant un struct qui en fait sont facultatifs
+mais cela rendait la doc plus claire de les mettre dans la version normale.
+
+Il faudra installer doxygen, et télécharger
+
+	* sur `https://github.com/mosra/m.css <https://github.com/mosra/m.css>`_
+	* le dossier documentation/templates
+	* le fichier documentation/__init__.py
+	* le fichier documentation/_search.py
+	* le fichier documentation/doxygen.py
+	* le fichier documentation/favicon-dark.png
+	* le fichier documentation/favicon-light.png
+	* le fichier documentation/python.py
+	* le fichier documentation/search.js
+	* le contenu du dossier plugins (les 4 scripts .py) à mettre dans le dossier style (voir ci-après)
+	* le dossier css
+	* et personnellement j'ai tout mis dans le dossier style à la racine du projet
+	* donc j'ai par exemple /style/css ou /style/dot2svg.py
+
+Ensuite, voici les étapes
+
+	* :code:`pip3 install jinja2 Pygments`
+	*
+		créer un DoxyFile par exemple DoxyCSS à la racine
+
+		.. code::
+
+				# used to become a god
+				# style\doxygen.py DoxyCSS
+				# inclut le Doxyfile original
+				@INCLUDE                = Doxyfile
+				# faits des modifications (faut pas modifier ces lignes normalement)
+				GENERATE_HTML           = NO
+				GENERATE_LATEX          = NO
+				GENERATE_XML            = YES
+				XML_PROGRAMLISTING     = NO
+				XML_NS_MEMB_FILE_SCOPE = YES
+
+	* ensuite vous faites :code:`style\doxygen.py DoxyCSS` (ou / sous linux)
+	* la doc html/latex/... est au même endroit que d'habitude
+
+Les points que j'ai notés
+
+	* vous devez ajoute :code:`\dir` pour que vos fichiers soit ajoutés dans Files
+	*
+
+		vous pouvez créer des fichiers :code:`package.dox` (peu importe le nom mais package c'est bien)
+		pour décrire un dossier (faites le d'abord dans un fichier puis avant de râler parce
+		que ça copie la desc de chaque fichier dans la description du dossier, testez ça).
+		Notez qu'en C++ ou en PHP, il suffit de remplacer dir par namespace
+
+		.. code::
+
+				/** @dir headers
+
+				\authors ...
+				\date 08/03/2021
+
+				Une description du dossier
+				*/
 
 -----
 
