@@ -71,10 +71,18 @@ copiez du code vous faites une bêtise et vous pourriez assez probablement faire
 3. Patrons de comportement (behaviour)
 =========================================
 
+	* **Chain of Responsibility** : vous définissez une chaîne de personnes à qui demander un truc
 	* **Iterator** : Le patron Iterator (+Iterable) permet d’itérer un objet sans connaitre son contenu. (parcours de façon générique, simultanée sans duplication).
 	* **Observable** : Le patron Observable (+Observer) associe à un observer des objets observables qu’il peut actualiser s’il a changé (utile répercuter M->V).
 	* **Memento** : charge et sauvegarde objet, ou utiliser fichiers xml, json, bd...
 	* **NullObject** : classe dont les méthodes ne font rien
+	* **Commande** : sépare celui qui utilise l'action de celui qui la fait
+	* **Interpreter** : ...
+	* **Template Method** : ...
+	* **State** : ...
+	* **Strategy** : ...
+	* **Visitor** : ...
+	* **Mediator** : ...
 
 .. toctree::
 	 :maxdepth: 1
@@ -117,4 +125,5 @@ aucun
 	* https://www.gofpatterns.com/
 	* https://www.geeksforgeeks.org/null-object-design-pattern/
 	* https://www.tutorialspoint.com/design_pattern/null_object_pattern.htm
+	* https://www.tutorialspoint.com/design_pattern/chain_of_responsibility_pattern.htm
 	* https://www.baeldung.com/java-observer-pattern
