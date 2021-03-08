@@ -33,3 +33,13 @@ Control de Gestion     Ajout du cours                         \
 Node.js                Ajout du cours                         \
 Riot.js                Ajout du cours                         \
 ====================== ====================================== =========================
+
+Notes en vrac de trucs à faire (possibles doublons)
+
+	* Android
+	* CodeIgniter
+	* Bigdata
+	* API Rest
+	* Markdown
+	* Cryptographie
+	* Logique

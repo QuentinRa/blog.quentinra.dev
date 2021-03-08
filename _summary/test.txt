@@ -1,3 +1,0 @@
-	* Systèmes d'exploitation           (:ref:`bash` et :ref:`linux`)
-
-	* Systèmes d'exploitation              (:ref:`bash` et :ref:`linux`)

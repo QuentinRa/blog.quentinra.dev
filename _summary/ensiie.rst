@@ -61,10 +61,12 @@ Première année (initiale) - S1
 	* Soutien mathématique                 (:ref:`bric`)
 	* Probabilités                         (:ref:`proba`)
 	* Analyse numérique                    (:ref:`analyse`)
-	* Graphes                              (:ref:`graph`)
+	* Théorie des Graphes                  (:ref:`graph`)
+	* Systèmes d'exploitation              (:ref:`bash` et :ref:`linux`)
 
 Première année (initiale) - S2
 
+	* Maths, Logique
 	* Programmation fonctionnelle          (:ref:`functional_cours`)
 	* Programmation fonctionnelle en OCaml (:ref:`ocaml`)
 	* Statistiques en R                    (:ref:`r`)
@@ -73,7 +75,20 @@ Première année (initiale) - S2
 	* Test unitaires, ...                  (:ref:`tests`)
 	* Patrons de conception                (:ref:`patrons`)
 	* Documentation Doxygen                (:ref:`doxygen`)
+	* Réseau                               (:ref:`net`)
+	* Web : HTML, CSS, JS, PHP             (:ref:`html`,:ref:`css`,:ref:`js`,:ref:`php`)
+	* Gestionnaire de versions : GIT       (:ref:`git`)
 	* Méthodologies extrêmes/SOLID/...     (:ref:`me` et :ref:`sl`)
 	* Communication, anglais et japonais (voir s1)
 	* Diagrammes UML (voir s1)
+
+Autres
+
+	* Généralités sur le web           (:ref:`web_g`)
+	* Configuration serveur apache     (:ref:`apache`)
+	* Docker                           (:ref:`docker`)
+	* Logiciels jetbrains              (:ref:`jetbrains`)
+	* Vim                              (:ref:`vim`)
+	* RestructuredText                 (:ref:`rst`)
+	* Markdown
 
