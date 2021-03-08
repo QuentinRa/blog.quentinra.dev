@@ -276,6 +276,11 @@ Il faudra installer doxygen, et télécharger
 	* le dossier css
 	* et personnellement j'ai tout mis dans le dossier style à la racine du projet
 	* donc j'ai par exemple /style/css ou /style/dot2svg.py
+	*
+
+		si vous avez mis css dans style, alors il faut éditer dans doxygen.py deux lignes
+		et remplacer :code:`../css/......` par :code:`css/........`.
+
 
 Ensuite, voici les étapes
 
@@ -319,6 +324,20 @@ Les points que j'ai notés
 				Une description du dossier
 				*/
 
+Vous pouvez modifier la barre de recherche avec un conf.py ou alors
+avec les options doxyfile (notez que une_page.html est dans le nom
+du .html généré à la toute fin dans votre dossier html/)
+
+.. code::
+
+		M_LINKS_NAVBAR1 = \
+				"<a href=\"une_page.html\">User documentation</a>" \
+				"annotated"
+		M_LINKS_NAVBAR2 = \
+				"files" \
+				"<a href=\"une_page.html\">Fonctions</a>" \
+				"<a href=\"un_lien">GitHub</a>"
+
 -----
 
 **Crédits**
@@ -332,6 +351,7 @@ Les points que j'ai notés
 	* https://stackoverflow.com/questions/62038742/modify-doxygen-template-in-clion
 	* https://www.mitk.org/images/1/1c/BugSquashingSeminars$2013-07-17-DoxyReference.pdf
 	* https://franckh.developpez.com/tutoriels/outils/doxygen/
+	* https://stackoverflow.com/questions/9502426/how-to-make-an-introduction-page-with-doxygen
 
 	* themes lookup
 
@@ -342,3 +362,5 @@ Les points que j'ai notés
 		* https://github.com/Velron/doxygen-bootstrapped
 		* https://stackoverflow.com/questions/9629779/change-the-theme-of-doxygen
 		* https://blog.magnum.graphics/meta/improved-doxygen-documentation-and-search/
+		* https://mcss.mosra.cz/documentation/doxygen/#basic-usage
+		* https://github.com/mosra/m.css

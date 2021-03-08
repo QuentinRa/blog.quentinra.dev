@@ -1,0 +1,22 @@
+Première année (initiale) - S1
+
+	* Probabilités                         (:ref:`proba`)
+	* Analyse numérique (#joker)           (:ref:`analyse`)
+	* Graphes                              (:ref:`graph`)
+	* Soutien mathématique, AST uniquement (:ref:`bric`)
+	* Cours de C, prépa uniquement         (:ref:`language-c`)
+	* Bases de données                     (:ref:`sql`)
+	* Systèmes d'exploitation              (:ref:`bash` et :ref:`linux`)
+	* Gestion d'entreprise                 (:ref:`cesim` et :ref:`docs_company`)
+	* Macroéconomie                        (:ref:`macro`)
+	* Communication                        (:ref:`com` et :ref:`insertion`)
+	* Anglais                              (:ref:`english`)
+	* Japonais                             (:ref:`japonais`)
+
+Première année (initiale) - S2
+
+	* Documentation Doxygen                (:ref:`doxygen`)
+	* Méthodologies extrêmes               (:ref:`me` et :ref:`sl`)
+	* Patrons de conception                (:ref:`patrons`)
+	* Test unitaires, ...                  (:ref:`tests`)
+	* cours de com/anglais/japonais

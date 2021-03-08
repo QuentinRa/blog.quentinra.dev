@@ -25,7 +25,9 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :maxdepth: 1
 
     Comment contribuer ?                 <contribuer>
-    Status                               <status>
+    Status                               <_summary/status>
+    Cours IUTSF (sommaire)               <_summary/iutsf>
+    Cours ENSIIE (sommaire)              <_summary/ensiie>
 
 .. toctree::
     :caption: Mathématiques
