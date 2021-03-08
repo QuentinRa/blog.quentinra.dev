@@ -29,9 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/patrons/b/commande.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/patrons/b/commande.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/patrons/b/cor.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/patrons/b/cor.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conception/patrons/b/interpreter.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/patrons/b/interpreter.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/patrons/b/template.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/patrons/b/template.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conception/patrons/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/patrons/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
@@ -407,7 +406,7 @@
       <workItem from="1614993941838" duration="1740000" />
       <workItem from="1615029186136" duration="3572000" />
       <workItem from="1615111510938" duration="33218000" />
-      <workItem from="1615204009677" duration="10910000" />
+      <workItem from="1615204009677" duration="13409000" />
     </task>
     <servers />
   </component>

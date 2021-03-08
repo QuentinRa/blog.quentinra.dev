@@ -77,10 +77,10 @@ copiez du code vous faites une bêtise et vous pourriez assez probablement faire
 	* **Memento** : charge et sauvegarde objet, ou utiliser fichiers xml, json, bd...
 	* **NullObject** : classe dont les méthodes ne font rien
 	* **Commande** : sépare celui qui utilise l'action de celui qui la fait
-	* **Interpreter** : ...
-	* **Template Method** : ...
+	* **Interpreter** : parser du code d'un langage
+	* **Template** : faire des classes abstraites/interfaces
 	* **State** : ...
-	* **Strategy** : ...
+	* **Strategy** : on fait des familles de fonctionnalités
 	* **Visitor** : ...
 	* **Mediator** : ...
 
@@ -94,7 +94,7 @@ copiez du code vous faites une bêtise et vous pourriez assez probablement faire
 		NullObject               <b/null_object>
 		Commande                 <b/commande>
 		Interpreter              <b/interpreter>
-		Template Method          <b/template>
+		Template                 <b/template>
 		State                    <b/state>
 		Strategy                 <b/strategy>
 		Visitor                  <b/visitor>
@@ -127,3 +127,4 @@ aucun
 	* https://www.tutorialspoint.com/design_pattern/null_object_pattern.htm
 	* https://www.tutorialspoint.com/design_pattern/chain_of_responsibility_pattern.htm
 	* https://www.baeldung.com/java-observer-pattern
+	* https://www.geeksforgeeks.org/interpreter-design-pattern/
