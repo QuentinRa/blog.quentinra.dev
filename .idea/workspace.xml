@@ -29,9 +29,12 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/patrons/b/interpreter.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/patrons/b/interpreter.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conception/patrons/b/template.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/patrons/b/template.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/patrons/b/mediator.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/patrons/b/mediator.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/patrons/b/state.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/patrons/b/state.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/patrons/b/strategy.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/patrons/b/strategy.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/patrons/b/visitor.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/patrons/b/visitor.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conception/patrons/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/patrons/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/patrons/s/a.rst" beforeDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -407,6 +410,7 @@
       <workItem from="1615029186136" duration="3572000" />
       <workItem from="1615111510938" duration="33218000" />
       <workItem from="1615204009677" duration="13409000" />
+      <workItem from="1615217829111" duration="3656000" />
     </task>
     <servers />
   </component>

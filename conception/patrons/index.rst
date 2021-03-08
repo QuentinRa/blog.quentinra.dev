@@ -4,8 +4,8 @@
 Patrons de conception
 ================================
 
-| :math:`\color{grey}{Version \ 2.0.10}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 07/03/2020}`
+| :math:`\color{grey}{Version \ 2.2.17}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 08/03/2020}`
 
 Les patrons de conceptions sont des méthodes que d'autres programmeurs ont pensés
 pour résoudre certains problèmes ou fournir des moyens de programmer
@@ -79,10 +79,13 @@ copiez du code vous faites une bêtise et vous pourriez assez probablement faire
 	* **Commande** : sépare celui qui utilise l'action de celui qui la fait
 	* **Interpreter** : parser du code d'un langage
 	* **Template** : faire des classes abstraites/interfaces
-	* **State** : ...
-	* **Strategy** : on fait des familles de fonctionnalités
-	* **Visitor** : ...
-	* **Mediator** : ...
+	* **State** : un objet change de comportement selon son état
+	* **Strategy** : super-classe avec les fonctionnalités attendues d'une famille d'objets
+	* **Visitor** : une objet s'adapte selon l'objet qui le visite
+	* **Mediator** : fait la relation entre des classes
+
+Personnellement, je suis pas sûr d'avoir bien compris tous les patterns, mais bon
+je sais pas s'ils sont vraiment tous autant utiles.
 
 .. toctree::
 	 :maxdepth: 1
@@ -104,7 +107,15 @@ copiez du code vous faites une bêtise et vous pourriez assez probablement faire
 ===================================
 
 	* **MVC** : Le Modèle MVC (modèle vue contrôleur)
-	* **DOA** : Le DAO (data access objet).
+	* **DAO** : Le DAO (data access objet).
+
+Modèle-Vue-Controller
+	On sépare les classes entre celles qui interagissent avec les données (model),
+	celles qui font l'affichage (Vue) et les Contrôleurs (Controller) font les itéractions
+	vue et model, il sensibilisent les composants aux événements, ...
+
+	Il n'y a pas vraiment de norme, le MVC n'est pas forcément implémenté pareil dans
+	tous les langages (ex: en PHP et en JAVA c'est différent).
 
 5. Exercices
 ==============
@@ -128,3 +139,5 @@ aucun
 	* https://www.tutorialspoint.com/design_pattern/chain_of_responsibility_pattern.htm
 	* https://www.baeldung.com/java-observer-pattern
 	* https://www.geeksforgeeks.org/interpreter-design-pattern/
+	* https://www.tutorialspoint.com/design_pattern/data_access_object_pattern.htm
+	* https://www.tutorialspoint.com/design_pattern/composite_entity_pattern.htm
