@@ -23,7 +23,7 @@ Ce cours présente en grande partie des connaissances générales mais la derni�
 demande des connaissances en programmation (web: SQL, PHP, JavaScript, POST, GET, ..., linux: commandes, ...)
 car elle détaille des procédés pour réaliser et se protéger de failles connues.
 
-1. Vocabulaire
+1. Vocabulaire :code:`théorie`
 ===================================
 
 .. toctree::
@@ -33,8 +33,8 @@ car elle détaille des procédés pour réaliser et se protéger de failles conn
 			Vocabulaire courant       <voc/keyword>
 			As a service              <voc/aas>
 
-2. Grands attaques
-===============================
+2. Grands attaques :code:`théorie`
+====================================
 
 Voici une liste de quelques grandes attaques
 
@@ -46,8 +46,8 @@ Voici une liste de quelques grandes attaques
 			WannaCry                        <bestof/wanna>
 			Autres                          <bestof/all>
 
-3. Cybersécurité en ...
-==============================
+3. Cybersécurité en ... :code:`théorie`
+=========================================
 
 ... France
 
@@ -83,8 +83,8 @@ Voici une liste de quelques grandes attaques
 ... Autres
 	La quadrature du net est une association qui milite pour la liberté sur internet.
 
-4. CyberExpert
-=====================
+4. CyberExpert :code:`théorie`
+=================================
 
 Vous pouvez être un expert en cybersécurité en attaque (offense) et/ou en défense.
 
@@ -108,8 +108,8 @@ Defense
 	de l'attaque pour inciter les entreprises a parler, ce qui permet de prendre des mesures pour les autres
 	qui auraient également cette vulnérabilité.
 
-5. CyberSécurité
-==============================
+5. CyberSécurité :code:`théorie`
+==================================
 
 Les attaques
 
@@ -142,7 +142,19 @@ Les méthodes de défense
 		EDR                                     <cyber/d/err>
 		Réagir a une attaque                    <cyber/d/ra>
 
-Failles de sécurité
+6. CyberSécurité :code:`pratique`
+===================================
+
+Vous pouvez trouver ci-joint mes notes de synthèses de ce que j'ai retenu
+des enseignements du site `tryhackme <https://tryhackme.com/login>`_.
+
+Je vous recommande de faire les exercices sur leur site, vous pourrez
+vous améliorer plus facilement ce fessant. Vous avez des salles et vous pouvez les rejoindre.
+Une fois dans une salle, remplissez les champs, suivez les énoncés etc. c'est très intuitif
+et assez facile selon les salles.
+
+La majorité des notes suivantes vient de l'advent of code de décembre 2020
+qu'ils ont organisé (et dont le sujet ne sera plus disponible d'ici l'année prochaine).
 
 .. toctree::
 	 :maxdepth: 1
