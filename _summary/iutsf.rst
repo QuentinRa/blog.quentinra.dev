@@ -34,7 +34,7 @@ Tous les cours ne sont pas présents !
 Première année (initiale) - S1
 
 	* Maths, Logique
-	* Programmation impérative en C (prépa) (:ref:`language-c`)
+	* Programmation impérative en C         (:ref:`language-c`)
 	* Communication                         (:ref:`com` et :ref:`insertion`)
 	* Monde de l'entreprise                 (:ref:`company` et :ref:`docs_company`)
 	* Modélisation relationnelle            (:ref:`relation`)

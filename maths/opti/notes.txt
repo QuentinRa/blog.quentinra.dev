@@ -1,0 +1,14 @@
+https://www.fun-mooc.fr/c4x/MinesTelecom/04006/asset/T%C3%A9l%C3%A9com_FBD_S3_AnalysePartie1_V3.pdf
+http://jybaudot.fr/Optimisations/ptscritiques.html
+
+https://transp-or.epfl.ch/courses/OptSim2017/Slides/02-draws.pdf
+
+https://transp-or.epfl.ch/courses/optimization2012/slides/01-introduction.pdf
+https://transp-or.epfl.ch/courses/OptSim2012/slides/02-unconstrained.pdf
+https://transp-or.epfl.ch/optimization/slides/03-optimalite.pdf
+https://transp-or.epfl.ch/optimization/slides/07-optimisation-lineaire.pdf
+https://transp-or.epfl.ch/courses/OptSim2013/slides/08-unconstrained.pdf
+https://transp-or.epfl.ch/courses/OptSim2016/Slides/09-markov.pdf
+https://transp-or.epfl.ch/courses/optimization2012/slides/12-resume-sanscontrainte.pdf
+
+https://transp-or.epfl.ch/courses/optimization2011/slides.php
