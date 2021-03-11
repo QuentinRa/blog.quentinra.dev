@@ -29,8 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_summary/ensiie.rst" beforeDir="false" afterPath="$PROJECT_DIR$/_summary/ensiie.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/cyber/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/cyber/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conception/me/dox.rst" beforeDir="false" afterPath="$PROJECT_DIR$/conception/me/dox.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/opti/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -410,7 +410,7 @@
       <workItem from="1615233985142" duration="9000" />
       <workItem from="1615311583735" duration="1608000" />
       <workItem from="1615313304502" duration="1376000" />
-      <workItem from="1615474170445" duration="10338000" />
+      <workItem from="1615474170445" duration="14742000" />
     </task>
     <servers />
   </component>

@@ -284,6 +284,7 @@ Il faudra installer doxygen, et télécharger
 
 Ensuite, voici les étapes
 
+	* si pip n'est pas installé, sous linux :code:`sudo apt-get install python3-pip`
 	* :code:`pip3 install jinja2 Pygments`
 	*
 		créer un DoxyFile par exemple DoxyCSS à la racine
@@ -301,6 +302,7 @@ Ensuite, voici les étapes
 				XML_PROGRAMLISTING     = NO
 				XML_NS_MEMB_FILE_SCOPE = YES
 
+	* si vous êtes sous linux : :code:`chmod +x style/doxygen.py`
 	* ensuite vous faites :code:`style\doxygen.py DoxyCSS` (ou / sous linux)
 	* la doc html/latex/... est au même endroit que d'habitude
 
