@@ -107,6 +107,9 @@ Ces fonctions fonctionnent comme printf, donc vous pouvez utiliser des %d ou aut
 dedans et mettre des arguments après le texte. En fait l'argument texte devra
 s'appeler format comme dans printf mais je l'ai appelé texte.
 
+Vous pouvez aussi supprimer des caractères avec :code:`delch()`,
+:code:`mvdelch(y,x)` et :code:`mvwdelch(window, y, x)`.
+
 Plus de détails
 
 	* https://manpages.debian.org/unstable/ncurses-doc/addstr.3ncurses.en.html
@@ -127,7 +130,8 @@ Les attributs sont
 	* normal :code:`A_NORMAL`
 	* surligne, le met en avant  :code:`A_STANDOUT`
 
-Les codes de couleurs sont
+Attention, vérifiez que les couleurs peuvent être utilisées dans votre terminal
+avec un if :code:`if(has_colors() == FALSE) { ... }`. Les codes de couleurs sont
 
 	* :code:`COLOR_RED`
 	* :code:`COLOR_GREEN`
@@ -138,10 +142,10 @@ Les codes de couleurs sont
 	* :code:`COLOR_YELLOW`
 	* :code:`COLOR_MAGENTA`
 
-.. danger::
-
-	Attention, vérifiez que les couleurs peuvent être utilisées dans votre terminal
-	avec un if :code:`if(has_colors() == FALSE) { ... }`.
+Vous pouvez aussi faire vos propres combinaisons de couleurs avec
+:code:`init_pair(new_code, code_fg, code_bg);` avec
+new_code le nouveau code de couleur, code_fg le code de couleur du texte
+et code_bg le code de couleur de l'arrière plan.
 
 4. Récupérer la saisie
 =========================
@@ -188,7 +192,18 @@ avec :code:`curs_set(FALSE);` et :code:`curs_set(TRUE);`.
 5. Fenêtres et curseur
 ==========================
 
-...
+Vous pouvez créer des fenêtres avec
+:code:`Window* w = subwin(window, hauteur, largeur , y, x);`.
+
+	* :code:`window` : fenêtre parent, par exemple stdscr
+	* :code:`hauteur` : hauteur, par exemple LINES
+	* :code:`largeur` : largeur, par exemple COLS
+	* :code:`y` : à quel y est le sommet haut gauche de la fenêtre
+	* :code:`x` : à quel x est le sommet haut gauche de la fenêtre
+
+| Vous pouvez supprimer une fenêtre avec :code:`delwin(window)`.
+| Vous pouvez nettoyer une fenêtre avec :code:`wclear(window)`.
+| Vous pouvez actualiser une fenêtre avec :code:`wrefresh(window)`.
 
 -----
 
