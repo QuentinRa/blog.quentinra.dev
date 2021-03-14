@@ -9,7 +9,6 @@ Amélioration de cours
 ====================== ====================================== =========================
 Cours                  Tâches                                 Programmeur assigné
 ====================== ====================================== =========================
-Bric à Brac            Développements en série                \
 UML                    Diagramme de déploiement               \
 CSS                    SCSS, Less et Animations               \
 JS                     JQuery, API Rest, ...                  \
@@ -42,3 +41,9 @@ Notes en vrac de trucs à faire (possibles doublons)
 	* Cryptographie
 	* Logique
 	* Intellij IDEA
+	* Ensembles, noyau, ...
+
+Il reste
+
+	* matrices : quelques notes à ajouter
+	* bric à brac : les developments en série
