@@ -4,7 +4,7 @@
 Librairies en C
 ================================
 
-| :math:`\color{grey}{Version \ 0.0.1}`
+| :math:`\color{grey}{Version \ 0.3.9}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 14/03/2021}`
 
 NCurses est une librairie graphique sous Linux vous permettant de faire des interfaces
@@ -82,6 +82,9 @@ qui ont pour valeur la taille de votre terminal, sachant qu'une case corresponds
 Après avoir modifié le contenu d'une fenêtre, n'oubliez pas de refresh !
 On refresh avec :code:`refresh()` ou :code:`wrefresh(window)`.
 
+Si vous voulez vider une fenêtre, utilisez :code:`wclear(window)`
+ou :code:`clear()`.
+
 Et enfin, attention, les coordonnées sont données dans l'ordre y, x et non
 x y donc faites attention.
 
@@ -134,6 +137,58 @@ Les codes de couleurs sont
 	* :code:`COLOR_CYAN`
 	* :code:`COLOR_YELLOW`
 	* :code:`COLOR_MAGENTA`
+
+.. danger::
+
+	Attention, vérifiez que les couleurs peuvent être utilisées dans votre terminal
+	avec un if :code:`if(has_colors() == FALSE) { ... }`.
+
+4. Récupérer la saisie
+=========================
+
+Vous pouvez récupérer les clics et les touches sur pressées. Je n'ai pas encore
+touché aux clics mais voici comment faire avec les touches.
+
+Premièrement, il faut activer la gestion du clavier avec
+:code:`keypad(stdscr, TRUE);` (stdscr est le nom de la variable contenant l'écran du terminal, mais
+vous pouvez mettre une window que vous avez créé si vous voulez)
+
+Ensuite
+
+	* :code:`getch()` : mets le programme en pause, attends un caractère
+	* :code:`wgetch(window)` : pareil
+	* :code:`getstr()` : pareil mais avec une phrase
+	* ...
+
+Attention, il existe plusieurs options de saisie à définir
+
+	* :code:`echo()` ou :code:`noecho()` : les caractères saisis sont affichés à l'écran, noecho c'est l'inverse
+	* :code:`cbreak()` ou :code:`nocbreak()` : getch() ou autre n'attends pas l'appui sur entrée, nocbreak c'est l'inverse
+
+Cela peut être utilise si vous faites un jeu qui utilise les touches du clavier pour se
+déplacer, vous allez probablement faire :code:`noecho();cbreak();`.
+
+Vous pouvez devenir le caractère, soit la touche appuyée avec un switch
+par exemple la code suivant peut vous inspirer, sachant qu'il existe
+des constantes pour de nombreuses touches
+
+.. code:: c
+
+    switch (getch()) {
+     case '\n': break;
+     case KEY_RIGHT: //touche flèche droite
+      break;
+     case KEY_ENTER: //touche entrée
+      break;
+    }
+
+Vous pouvez faire apparaître/disparaître le curseur de saisie
+avec :code:`curs_set(FALSE);` et :code:`curs_set(TRUE);`.
+
+5. Fenêtres et curseur
+==========================
+
+...
 
 -----
 
