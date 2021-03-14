@@ -42,7 +42,7 @@ Première année (initiale) - S1
 	* Anglais                               (:ref:`english`)
 	* Gestionnaire de versions : GIT        (:ref:`git`)
 	* Systèmes d'exploitation               (:ref:`bash` et :ref:`linux`)
-	* Web : HTML, CSS, JS                   (:ref:`html`,:ref:`css`,:ref:`js`)
+	* Web : HTML, CSS, JS                   (:ref:`web_g`, :ref:`html`, :ref:`css`, :ref:`js`)
 	* Logique
 
 Première année (initiale) - S2
@@ -56,7 +56,7 @@ Première année (initiale) - S2
 	* Diagrammes UML                       (:ref:`uml`)
 	* Programmation Orienté-Objet en JAVA  (:ref:`java`)
 	* Réseau                               (:ref:`net`)
-	* Web : PHP, CodeIgniter               (:ref:`php`)
+	* Web : PHP, CodeIgniter               (:ref:`web_g` et :ref:`php`)
 	* Communication et anglais (voir s1)
 	* Monde de l'entreprise (voir s1)
 
@@ -71,7 +71,8 @@ Deuxième année (initiale) - S3
 	* Cahier des charges                   (:ref:`cdc`)
 	* Web : Boostrap, API Rest             (:ref:`mdb`)
 	* Big Data et Cloud
-	* C (voir s1)
+	* Projet tutoré
+	* C et communication réseau en C (voir s1)
 	* Communication et anglais (voir s1)
 	* Monde de l'entreprise (voir s1)
 	* Diagrammes UML (voir s2)
@@ -85,13 +86,14 @@ Deuxième année (initiale) - S3
 Deuxième année (initiale) - S4
 
 	* Android
+	* API Rest et JS avancé
 	* Cryptographie
 	* Cybersécurité                         (:ref:`cyber`)
+	* Projet tutoré
 	* Communication et anglais (voir s1)
 
 Autres
 
-	* Généralités sur le web           (:ref:`web_g`)
 	* Configuration serveur apache     (:ref:`apache`)
 	* Logiciels jetbrains              (:ref:`jetbrains`)
 	* Vim                              (:ref:`vim`)

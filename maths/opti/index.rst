@@ -155,3 +155,4 @@ Variable d’écart
 	* https://transp-or.epfl.ch/courses/optimization2011/slides.php
 	* https://www.ceremade.dauphine.fr/~gontier/Publications/methodesNumeriques.pdf
 	* https://perso.math.univ-toulouse.fr/lagnoux/files/2013/12/CoursOpt.pdf
+	* https://www.alloprof.qc.ca/fr/eleves/bv/mathematiques/resoudre-un-probleme-d-optimisation-m1092

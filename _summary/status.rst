@@ -41,5 +41,7 @@ Notes en vrac de trucs à faire (possibles doublons)
 	* Bigdata
 	* API Rest
 	* Markdown
+	* Big Data et Cloud
+	* API Rest et JS avancé
 	* Cryptographie
 	* Logique

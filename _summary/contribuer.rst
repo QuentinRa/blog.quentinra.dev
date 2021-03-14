@@ -2,49 +2,46 @@
 Comment contribuer ?
 ##########################################
 
-.. _editor: https://livesphinx.herokuapp.com/
+| :math:`\color{grey}{Version \ 1.0.0}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 14/03/2021}`
 
-Vous allez avoir besoin d'un compte `github <https://github.com/>`_ pour contribuer...,
-le dépôt est ici : `https://github.com/lgs-games/memorize <https://github.com/lgs-games/memorize>`_.
+.. _editor: https://livesphinx.herokuapp.com/
+.. _memorize: https://github.com/lgs-games/memorize
+
+Vous allez avoir besoin d'un compte `github <https://github.com/>`_ pour contribuer,
+le dépôt est ici : `memorize`_.
 
 1. Rédaction des cours
 *************************
 
-Vous pouvez rédiger des cours, le langage est :code:`ReStructured Text`, le format "basique" d'un cours
-est dans `assets/template.rst <_static/template.rst>`_.
+Les cours sont écris en :code:`ReStructured Text`, compilés en un site web html via
+sphinx.
 
-Vous pouvez écrire vos cours ici: `editor`_
-et ensuite copier votre code dans un fichier index.rst, que vous nous envoyez.
+Le format usuel que j'utilise pour un cours est `assets/template.rst <_static/template.rst>`_.
 
-.. note::
+Installer sphinx pour compiler peut être assez compliqué (il faut installer python
+est plein de modules) mais vous pouvez écrire des fichiers rst
+directement dans votre navigateur : `editor`_ et ensuite
+les poster sur le github.
 
-	Un tutoriel sur le :code:`Restructured text` sera fait prochainement, le fichier
-	`save.rst <_static/save.rstt>`_ contient mes notes.
-
-.. hint::
-
-	Vous pouvez regarder comment d'autres cours sont fait !
+Un cours sur le :code:`ReStructured Text` est disponible ici :ref:`rst`.
 
 1.1 Détails sur la structure
 -------------------------------
 
-Les cours sont répartis en parties (Mathématiques, Système, ...) qui correspondent aux dossiers
-à la racine du projet.
+Les cours sont regroupés par thème : Mathématiques, Système, Web, ... qui correspondent
+aux dossiers à la racine du projet (sauf exceptions).
 
-Les sous-dossier correspondent aux cours, un par cours. Le nom du fichier :code:`rst` du cours est toujours
-:code:`index.rst`.
+Un thème est généralement divisé en matières (Graphes, Probabilités, ... pour Mathématiques)
+qui sont chacun dans un dossier. Le fichier :code:`index.rst` corresponds au cours principal,
+mais il peut y avoir plusieurs cours dans un dossier.
 
-1.2 Autres détails
--------------------------------
+N'oubliez pas de donner les crédits et de citer les références de vos cours.
 
-.. warning::
-
-	N'oubliez pas de donner les crédits et de citer les références de vos cours.
-
-		* crédits : personnes qui ont majoritairement contribué au cours
-		*
-			références : liens que vous avez utilisé pour enrichir votre cours, ou qui seraient intéressant de
-			consulter
+	* crédits : personnes qui ont majoritairement contribué au cours
+	*
+		références : liens que vous avez utilisé pour enrichir votre cours, ou qui seraient intéressant de
+		consulter
 
 Sautez à la partie :ref:`push_github` pour mettre en ligne votre cours.
 
@@ -53,8 +50,9 @@ Sautez à la partie :ref:`push_github` pour mettre en ligne votre cours.
 
 La rédactions des exercices et des corrections est séparée.
 
-Chaque cours peut posséder un dossier exercice qui contient les consignes, un fichier par thème
-d'exercices. Le template du fichier des consignes est dans `assets/exercices.rst <_static/exercices.rst>`_.
+Chaque cours peut posséder un dossier :code:`exercice` qui contient les consignes.
+On fait ensuite un dossier du même nom que la suite d'exercices qui contiendra les corrections.
+Le template du fichier des consignes est dans `assets/exercices.rst <_static/exercices.rst>`_.
 
 Ensuite pour chaque exercice, on crée un dossier avec le même nom que le fichier de consignes.
 Le fichier de correction est nommée de la forme :`{d}{id}[_p]`.
@@ -103,38 +101,29 @@ On s'occupera ensuite de valider vos changement (donc ce ne sera pas fait automa
 
 .. code:: bash
 
-		git clone https://github.com/QuentinRa/ramsamy.ws-res.git
+		# clone le dépôt
+		git clone https://github.com/lgs-games/memorize
+		# on suppose que tout ce qu'il faut est installé (voir ci-après)
 		make html
+		# ouvrir dans le navigateur
 		open _build/html/index.html
 
-.. note::
-
-	Ces commandes téléchargent lé dépôt git, compilent la doc et ouvre le site généré.
-
-	Vous devez cependant installer, une et une seule fois, certaines composantes
-	sinon la compilation va échouer.
-
 Les pré-requis sont :
-	* Installer python (et ajouter au PATH+ ajouter le dossier Scripts!)
+	* Installer python (et ajouter au PATH python et python/Scripts)
 	* Installer pip :code:`python -m pip install -U pip`
 	* Installer sphinx :code:`pip install -U sphinx`
 	* Installer le thème :code:`pip install -U sphinx-rtd-theme`
 	* Installer graphviz :code:`pip install -U graphviz`
 
-		* sous windows, vous devez ajouter graphviz/dot.exe au path
+		* sous windows, vous devez ajouter graphviz/dot.exe au PATH
 		* sous windows, ouvrez un terminal et lancez :code:`dot -c` à la toute première utilisation
 		* si vous avez des problèmes, mettez dot.exe dans :code:`C:/graphviz/bin/dot.exe`
 
-.. warning::
-
-	Vous devez recompiler le site pour voir vos changements.
-
-.. note::
-
-	Créez une nouvelle branche, et travaillez dessus
+Vous devez recompiler le site pour voir vos changements, ce n'est pas fait
+automatiquement.
 
 7. Corrections vérifiées
-****************************************************
+**************************
 
 .. image:: https://img.shields.io/badge/correction-vérifiée-green.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
    :alt: correction vérifiée
@@ -143,16 +132,14 @@ Les pré-requis sont :
    :alt: correction non vérifiée
 
 Le label "correction vérifiée" est présent sur les correction proposées qui ont été vérifiées
-par une autre personne que le rédacteur.
+ou qui semblent être correcte.
 
-Le label "correction non vérifiée" est pour toutes les autres correction.
+Le label "correction non vérifiée" est pour toutes les autres corrections.
 
 D'autres labels peuvent être présents pour les cas particuliers.
 
-.. note::
-
-	Si vous avez vérifié une correction, vous n'avez qu'à modifier le fichier et ajouter l'un des labels. Leur code
-	sera trouve dans `correction.rst <_static/correction.rst>`_ et `correction2.rst <_static/correction2.rst>`_ .
+Si vous avez vérifié une correction, vous n'avez qu'à modifier le fichier et ajouter l'un des labels.
+Leur code sera trouve dans `correction.rst <_static/correction.rst>`_ et `correction2.rst <_static/correction2.rst>`_ .
 
 -----
 

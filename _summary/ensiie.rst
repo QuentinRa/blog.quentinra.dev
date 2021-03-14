@@ -87,15 +87,14 @@ Première année (initiale) - S2
 	* Patrons de conception                (:ref:`patrons`)
 	* Documentation Doxygen                (:ref:`doxygen`)
 	* Réseau                               (:ref:`net`)
-	* Web : HTML, CSS, JS, PHP             (:ref:`html`,:ref:`css`,:ref:`js`,:ref:`php`)
+	* Web : HTML, CSS, JS, PHP             (:ref:`web_g`, :ref:`html`, :ref:`css`, :ref:`js`, :ref:`php`)
 	* Gestionnaire de versions : GIT       (:ref:`git`)
-	* Méthodologies extrêmes/SOLID/...     (:ref:`me` et :ref:`sl`)
+	* Méthodologies extrêmes (Test-driven) (:ref:`me` et :ref:`sl`)
 	* Communication, anglais et japonais (voir s1)
 	* Diagrammes UML (voir s1)
 
-Autres
+Autres connaissances non enseignées directement en cours
 
-	* Généralités sur le web           (:ref:`web_g`)
 	* Configuration serveur apache     (:ref:`apache`)
 	* Docker                           (:ref:`docker`)
 	* Logiciels jetbrains              (:ref:`jetbrains`)
