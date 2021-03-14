@@ -1,6 +1,6 @@
-====================================================
-9. Plus court chemin - Algorithme de Dijkstra
-====================================================
+========================
+Algorithme de Dijkstra
+========================
 
 Soit un graphe pondéré G avec des poids ayant des valeur positives uniquement,
 alors Dijkstra donne le plus court chemin partant d'un sommet

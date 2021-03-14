@@ -1,5 +1,5 @@
 ===================================
-8. Ordonnancement - Définitions
+Ordonnancement - Définitions
 ===================================
 
 Coût optimal

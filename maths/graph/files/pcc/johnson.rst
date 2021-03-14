@@ -1,6 +1,6 @@
-====================================================
-9. Plus court chemin - Algorithme de Johnson
-====================================================
+=======================
+Algorithme de Johnson
+=======================
 
 De ce que j'ai compris, si la graphe contient un cycle négatif, on arrête, sinon
 

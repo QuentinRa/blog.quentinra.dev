@@ -1,6 +1,6 @@
-====================================================================
-1. Noyau et base de cycles - Bases de cycles/cocycles
-====================================================================
+==========================
+Bases de cycles/cocycles
+==========================
 
 Base de cycles
 	On considère l'ensemble des arrêtes V ordonné. On note chaque cycle

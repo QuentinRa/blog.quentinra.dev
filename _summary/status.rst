@@ -10,7 +10,6 @@ Amélioration de cours
 Cours                  Tâches                                 Programmeur assigné
 ====================== ====================================== =========================
 Bric à Brac            Développements en série                \
-Théorie des graphes    Calculs de distances                   \
 UML                    Diagramme de déploiement               \
 CSS                    SCSS, Less et Animations               \
 JS                     JQuery, API Rest, ...                  \
@@ -43,7 +42,3 @@ Notes en vrac de trucs à faire (possibles doublons)
 	* Cryptographie
 	* Logique
 	* Intellij IDEA
-
-Cours revus
-
-	* __summary : 4/4 ok

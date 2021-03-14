@@ -1,6 +1,6 @@
-====================================================
-9. Plus court chemin - Algorithme de Bellman-Ford
-====================================================
+===========================
+Algorithme de Bellman-Ford
+===========================
 
 Soit un graphe pondéré G avec des poids ayant une valeur positives ou négatives,
 alors Bellman-Ford donne le plus court chemin partant d'un sommet

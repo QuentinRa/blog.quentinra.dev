@@ -37,7 +37,6 @@ Voici quelques définitions avancées.
 		Fermeture transitive                               <files/fermeture>
 		Connexité et forte connexité                       <files/connexité>
 		Graphes planaires                                  <files/planaire>
-		Diamètre                                           <files/diam>
 		Autres                                             <files/autres>
 
 3. Tris et parcours
@@ -130,6 +129,7 @@ chemin dans un graphe.
 				Algorithme de Bellman-Ford     <files/pcc/bellman_ford>
 				Algorithme de Floyd-Warshall   <files/pcc/floyd_warshall>
 				Algorithme de Johnson          <files/pcc/johnson>
+				Diamètre et distance           <files/pcc/diam>
 
 10. Exercices
 =================

@@ -1,5 +1,5 @@
 ==================================
-8. Ordonnancement - Introduction
+Ordonnancement - Introduction
 ==================================
 
 On dispose de

@@ -1,6 +1,6 @@
-====================================================================
-1. Noyau et base de cycles - Noyau et stabilité
-====================================================================
+=====================
+Noyau et stabilité
+=====================
 
 Stabilité
 	Un ensemble stable S est un sous-ensemble tel que les sommets de l'ensemble ne sont jamais

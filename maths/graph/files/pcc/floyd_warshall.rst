@@ -1,6 +1,6 @@
-====================================================
-9. Plus court chemin - Algorithme de Floyd-Warshall
-====================================================
+==============================
+Algorithme de Floyd-Warshall
+==============================
 
 Soit un graphe pondéré G avec des poids ayant une valeur positives ou négatives,
 alors Floyd-Warshall donne le plus court chemin partant de n'importe

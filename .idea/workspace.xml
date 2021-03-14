@@ -28,13 +28,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/maths/graph/files/ordonnancement/intro.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maths/graph/files/types.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/math/graph/d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/math/graph/dr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maths/graph/files/pcc/diam.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_summary/ensiie.rst" beforeDir="false" afterPath="$PROJECT_DIR$/_summary/ensiie.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/cesim/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/cesim/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/graph/advanced.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_summary/status.rst" beforeDir="false" afterPath="$PROJECT_DIR$/_summary/status.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/files/diam.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/files/noyau/bases.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/files/noyau/bases.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/files/noyau/noyau.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/files/noyau/noyau.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/graph/files/ordonnancement/def.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/files/ordonnancement/def.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/graph/files/ordonnancement/intro.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/files/ordonnancement/intro.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/graph/files/ordonnancement/mpt.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/files/ordonnancement/mpt.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/graph/files/ordonnancement/pert.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/files/ordonnancement/pert.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/graph/files/pcc/bellman_ford.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/graph/files/pcc/bellman_ford.rst" afterDir="false" />
@@ -105,11 +108,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\conception\patrons\c" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph" />
       <recent name="C:\Users\quent\Documents\texas-res\_summary" />
       <recent name="C:\Users\quent\Documents\texas-res\functional\ocaml\files" />
       <recent name="C:\Users\quent\Documents\texas-res\functional" />
       <recent name="C:\Users\quent\Documents\texas-res\conception\tests\c" />
-      <recent name="C:\Users\quent\Documents\texas-res\conception\tests" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -426,7 +429,7 @@
       <workItem from="1615537508579" duration="4766000" />
       <workItem from="1615585753399" duration="4015000" />
       <workItem from="1615675276855" duration="3000" />
-      <workItem from="1615723605421" duration="7026000" />
+      <workItem from="1615723605421" duration="8447000" />
     </task>
     <servers />
   </component>
