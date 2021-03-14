@@ -15,22 +15,25 @@ de gestion d'un Hôtel fait en cours de 1A à l'ENSIIE.
 
 Vous allez avoir des tours et alterner hiver/été. Vous allez
 prendre des décisions pour la prochaine période. Vous commencez avant le premier
-hiver et donc prenez les décisions de l'hiver.
+hiver et donc prenez les décisions de l'hiver qui arrive.
 
 Allez sur Décisions > Liste des décisions.
 
-Il existe x versions de vos décisions, une par membre et
-une version qui sera celle définitive qui porte le nom de votre équipe.
+Il existe x (généralement 5 car vous êtes 4 et il y a une dernière
+colonne portant le nom de l'équipe) versions de vos décisions, une par membre et
+une version qui sera celle définitive qui porte le nom de votre équipe. Vous pouvez
+consulter les décision d'un autre avec consulter, faites "enregistrer..." pour enregistrer
+les décisions comme celles de l'équipe.
 
-Vous pouvez la modifier autant de fois que vous voulez jusqu'à la date
-limite du tour avec \"enregistrer en tant que décision d'équipe\". Vous pouvez
-\"consulter\" les décisions de chaque membre avec \"consulter\".
+Vous pouvez modifier vos décisions ("enregistrer...")
+autant de fois que vous le voulez jusqu'à la date limite.
 
 2. Présentation du site
 ===================================
 
 Planning
-	Le plus important, le planning de la session
+	Le plus important, le planning de la session donc mettez une alarme pour ne pas oublier
+	de faire vos décisions.
 
 Manuels
 	Important, guide complet de cesim et doc de passation de l'hôtel.
@@ -44,27 +47,34 @@ Décisions
 	Conditions du marché
 		Contient un texte donnant une aide sur l'état du marché et des prévisions sur la demande
 
-		Note : si votre hôtel a un bon rapport qualité/prix, alors vous aurez au moins ces chiffres
-		mais jamais beaucoup plus (généralement au max 2x plus). Donc si 2000 clients sont prévus, alors
-		votre nombre sera sûrement entre 2500 et 3200 si vous avez un hôtel bien côté sinon vous pouvez
-		avoir moins qu'estimé.
+		Note : si votre hôtel a un bon rapport qualité/prix, alors vous aurez au moins autant
+		de client qu'estimé mais jamais beaucoup plus (généralement au max 2x plus).
+		Donc si 2000 clients sont prévus, alors votre nombre sera sûrement entre 2500 et 3200
+		si vous avez un hôtel bien côté sinon vous pouvez avoir moins qu'estimé (ça arrive si les autres
+		volent tous les clients avec des prix très bas par exemple).
 
 	Ventes : ici vous prenez les décisions sur combien de chambres sont vendues
 
-		* il y a les ventes au guichet
+		* il y a les ventes au guichet  (là vous mettez le nombre selon conditions du marché)
 		* il y a les ventes aux agences (c'est souvent stratégique de tout vendre aux agences pour un revenu minimum)
 		*
 
-			il y a le marketing (généralement le marketing influence le prix de vente aux agences,
-			mais il peut aussi ne rien changer si votre place dans la marché est au top)
+			il y a le marketing (généralement, le marketing influence le prix de vente aux agences,
+			mais il peut aussi ne rien changer si votre place dans la marché est au top même si le prof dira le contraire)
 
-	Opérations : ici vous gérer votre hôtel
+	Opérations : ici vous gérez votre hôtel
 
-		* vous pouvez rénover votre hôtel (qualité)
+		* vous pouvez rénover votre hôtel (+ de qualité)
 		* vous pouvez investir dans
 
-			* des chambres
-			* réductions des coûts administratifs : vous verrez que vos coûts augmentent avec votre chiffre d'affaires et vous pouvez donc payer pour le diminuer
+			* des chambres (attention à ne pas dépasser 100% de dette, voir plus bas)
+			*
+				réductions des coûts administratifs : vous verrez que vos coûts augmentent avec votre chiffre
+				d'affaires et vous pouvez donc payer pour le diminuer.
+
+				Moi j'ai jamais vu en quoi c'était utile à part pour augmenter les dépenses. Reste que le prof
+				dit qu'il faut payer de bon comptables pour faire des économies.
+
 			* réductions des coûts directs : à priori ils influent sur la qualité
 
 		* vous employés des salariés

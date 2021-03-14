@@ -15,21 +15,17 @@ Le site Web : `http://www.iut-fbleau.fr/ <http://www.iut-fbleau.fr/>`_.
 
 D'un point de vue d'un BAC S, j'ai trouvé le DUT très bien car même sans avoir
 un bon niveau, j'ai réussi à comprendre et à apprécier l'informatique alors
-que je n'avais aucune base. Le rythme était très intéressant, les cours bien
-expliqués et les TP m'ont beaucoup aidé à assimiler les connaissances, notamment
-les TP de maths. Le seul point bémol est que tous les groupes de tp n'avaient
+que je n'avais aucune base. Le rythme était très intéressant, les cours sont bien
+expliqués et les TP m'ont beaucoup aidés à assimiler les connaissances, notamment
+les TPs de maths. Le seul bémol est que tous les groupes de TP n'avaient
 par forcément un prof pour les aider donc parfois cela demandait beaucoup
-plus d'investissement pour ne pas être derrière les autres. J'ai personnellement
-finit dans les premiers de la promo aux 4 semestres alors que j'avais environ
-11 de moyenne en terminale donc ça montre qu'avec du travail vous pouvez réussir.
+plus d'investissement pour ne pas être derrière les autres.
 
 **Les cours**
 
-Les cours suivant sont disponibles en lien avec les cours de l'IUTSF,
-que ce soit partiellement ou complète enseigné à l'IUTSF (ou alors
-indirectement appris car utilisé sur le tas).
-
-Tous les cours ne sont pas présents !
+Les cours, en lien avec les cours de l'IUTSF, disponibles
+sur ce site, qu'ils soient partiellement ou complète enseigné à l'IUTSF
+sont
 
 Première année (initiale) - S1
 

@@ -32,10 +32,7 @@
       <change beforePath="$PROJECT_DIR$/_summary/ensiie.rst" beforeDir="false" afterPath="$PROJECT_DIR$/_summary/ensiie.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_summary/iutsf.rst" beforeDir="false" afterPath="$PROJECT_DIR$/_summary/iutsf.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_summary/status.rst" beforeDir="false" afterPath="$PROJECT_DIR$/_summary/status.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/template.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contribuer.rst" beforeDir="false" afterPath="$PROJECT_DIR$/_summary/contribuer.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/opti/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/cesim/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/business/cesim/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -420,7 +417,7 @@
       <workItem from="1615537508579" duration="4766000" />
       <workItem from="1615585753399" duration="4015000" />
       <workItem from="1615675276855" duration="3000" />
-      <workItem from="1615723605421" duration="2160000" />
+      <workItem from="1615723605421" duration="3891000" />
     </task>
     <servers />
   </component>

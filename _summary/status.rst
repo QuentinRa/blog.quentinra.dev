@@ -9,9 +9,6 @@ Amélioration de cours
 ====================== ====================================== =========================
 Cours                  Tâches                                 Programmeur assigné
 ====================== ====================================== =========================
-Analyse numérique      Ajouter les équations différentielles  \
-Analyse numérique      Ajouter l'interpolation polynomiale    \
-Jetbrains              Ajouter Intellij IDEA                  \
 Bric à Brac            Développements en série                \
 Théorie des graphes    Calculs de distances                   \
 UML                    Diagramme de déploiement               \
@@ -45,3 +42,8 @@ Notes en vrac de trucs à faire (possibles doublons)
 	* API Rest et JS avancé
 	* Cryptographie
 	* Logique
+	* Intellij IDEA
+
+Cours revus
+
+	* __summary : 4/4 ok
