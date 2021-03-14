@@ -29,8 +29,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_summary/status.rst" beforeDir="false" afterPath="$PROJECT_DIR$/_summary/status.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/template.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/docker/files/start.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/docker/files/start.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/docker/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/docker/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
@@ -416,7 +415,7 @@
       <workItem from="1615537508579" duration="4766000" />
       <workItem from="1615585753399" duration="4015000" />
       <workItem from="1615675276855" duration="3000" />
-      <workItem from="1615723605421" duration="13813000" />
+      <workItem from="1615723605421" duration="14508000" />
     </task>
     <servers />
   </component>

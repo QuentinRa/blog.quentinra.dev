@@ -38,9 +38,6 @@ Voici quelques notes
 	* lien pour installer docker sous linux (debian) : https://docs.docker.com/engine/install/debian/
 	* :code:`docker -v` : tester docker installé
 	* trouver des images docker : https://hub.docker.com/
-	* :code:`docker run -it image` : lance l'image de façon interactive
-	* :code:`docker ps` : liste les conteneurs (avec leur id)
-	* :code:`docker rm id` : terminer un conteneur (l'id est obtenu plus haut/nom de la machine généré à chaque lancement)
 
 2. Dockerfile
 ================================
@@ -169,7 +166,7 @@ Kubernetes
 
 Voici un exemple tiré de hub.ducker.com
 
-.. code:: docker
+.. code:: bash
 
 		FROM gcc:4.9 # gcc version 4.9
 		COPY . /usr/src/myapp # déplace nos fichiers dans le répertoire courant
