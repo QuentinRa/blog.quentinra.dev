@@ -4,31 +4,13 @@
 Théorie des graphes
 ================================
 
-| :math:`\color{grey}{Version \ 2.4.9}`
+| :math:`\color{grey}{Version \ 3.4.9}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 07/12/2020}`
 
-Graphe
-	Un graphe (G) est un ensemble de sommets (E pour Edge)
-	reliés par des arêtes (V pour vertices).
-
-	On note alors un graphe G(E,V) avec E l'ensemble des sommets
-	et V l'ensemble des arêtes.
-
-Graphe simple et Graphe complexes
-	Un graphe simple est un graphe
-
-		* sans boucle (donc aucune arête d'un sommet à lui-même)
-		* a au plus une arrête relie deux sommets (Pour aller de A vers B, j’ai au plus un chemin (arrête) pour y aller)
-
-	Tous les autres graphes sont dits complexes.
-
-Graphe orientés (GO) et non orientés (GNO)
-	Dans un graphe non orienté, les arêtes sont des traits
-	car on considère que le sens n'importe pas. On note alors
-	une arête de a vers b : [a,b].
-
-	Dans un graphe orienté, les arêtes sont des flèches, appelés
-	**arcs** et leur sens est important. On note (a,b) un arc de a vers b.
+Un graphe (G) est un ensemble de sommets (E pour Edge)
+reliés par des arêtes (V pour vertices).
+On note alors un graphe G(E,V) avec E l'ensemble des sommets
+et V l'ensemble des arêtes.
 
 1. Définitions basiques
 ==========================
@@ -41,6 +23,7 @@ mais aussi sur les graphes bi-parti, l'étoile, sous-graphe, ...
 
 		Définitions et Notions        <files/voc>
 		Graphes particuliers          <files/graphes>
+		Les "4" types de graphes      <files/types>
 
 2. Définitions avancées
 ==========================
@@ -112,8 +95,44 @@ est un arbre
 
 		Couverture et arbre minimal              <files/special/arbre>
 
-7. Exercices
-==============
+7. Noyau et base de cycles :code:`avancé`
+===========================================
+
+.. toctree::
+			:maxdepth: 1
+
+				Noyau et stabilité             <files/noyau/noyau>
+				Base de cycles/cocycles        <files/noyau/bases>
+
+.. _ordonnancement_graph:
+
+8. Ordonnancement :code:`avancé`
+======================================
+
+.. toctree::
+			:maxdepth: 1
+
+				Introduction                   <files/ordonnancement/intro>
+				Définitions                    <files/ordonnancement/def>
+				Méthode Potentiel-tâches       <files/ordonnancement/mpt>
+				Méthode P.E.R.T.               <files/ordonnancement/pert>
+
+9. Plus court chemin  :code:`avancé`
+=========================================
+
+Voici quatre algorithmes pour trouver le plus court
+chemin dans un graphe.
+
+.. toctree::
+			:maxdepth: 1
+
+				Algorithme de Dijkstra         <files/pcc/dijkstra>
+				Algorithme de Bellman-Ford     <files/pcc/bellman_ford>
+				Algorithme de Floyd-Warshall   <files/pcc/floyd_warshall>
+				Algorithme de Johnson          <files/pcc/johnson>
+
+10. Exercices
+=================
 
 .. toctree::
     :name: exercices
@@ -129,15 +148,17 @@ est un arbre
 		Non triés                       <exercices/non_rank>
 		Annales                         <annales/index>
 
-8. Avancé
-==============
-
-Vous pouvez trouver ici un cours sur des concepts avancés de la théorie des graphes
+et les exercices du cours avancé
 
 .. toctree::
-		:maxdepth: 3
+    :name: exercices2
+    :maxdepth: 1
 
-		Cours avancé sur les graphes    <advanced>
+		Stabilité                       <exercices/stable>
+		Fonction de Grundy              <exercices/grundy>
+		Bases de cycles et cocycles     <exercices/bases>
+		Plus court chemin               <exercices/plus_court>
+		Ordonnancement                  <exercices/ordonnancement>
 
 ------
 
@@ -158,3 +179,10 @@ Vous pouvez trouver ici un cours sur des concepts avancés de la théorie des gr
 	* https://fr.wikipedia.org/wiki/Graphe_dual
 	* https://fr.wikipedia.org/wiki/Line_graph
 	* https://fr.wikipedia.org/wiki/Automorphisme_de_graphe
+	* https://fr.wikipedia.org/wiki/Lexique_de_la_th%C3%A9orie_des_graphes
+	* http://atomurl.net/math/
+	* https://fr.wikiversity.org/wiki/Th%C3%A9orie_des_graphes/Propri%C3%A9t%C3%A9s
+	* https://fr.wikipedia.org/wiki/Th%C3%A9orie_spectrale_des_graphes
+	* https://fr.wikipedia.org/wiki/Algorithme_de_Johnson#Exemple.
+	* https://en.wikipedia.org/wiki/Johnson%27s_algorithm
+	* https://www.geeksforgeeks.org/johnsons-algorithm/

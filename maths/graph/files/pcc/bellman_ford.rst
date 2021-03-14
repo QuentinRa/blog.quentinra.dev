@@ -1,5 +1,5 @@
 ====================================================
-3. Plus court chemin - Algorithme de Bellman-Ford
+9. Plus court chemin - Algorithme de Bellman-Ford
 ====================================================
 
 Soit un graphe pondéré G avec des poids ayant une valeur positives ou négatives,

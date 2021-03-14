@@ -1,5 +1,5 @@
 ================================================
-2. Ordonnancement - Méthode Potentiel-tâches
+8. Ordonnancement - Méthode Potentiel-tâches
 ================================================
 
 Dans la méthode Potentiel-tâches, on va construire un graphe

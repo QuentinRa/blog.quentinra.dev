@@ -1,7 +1,7 @@
 .. _pert:
 
 ===========================================
-2. Ordonnancement - Méthode P.E.R.T.
+8. Ordonnancement - Méthode P.E.R.T.
 ===========================================
 
 Dans la méthode PERT, nous allons construire un graphe

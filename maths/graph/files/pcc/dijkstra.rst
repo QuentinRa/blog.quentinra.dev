@@ -1,5 +1,5 @@
 ====================================================
-3. Plus court chemin - Algorithme de Dijkstra
+9. Plus court chemin - Algorithme de Dijkstra
 ====================================================
 
 Soit un graphe pondéré G avec des poids ayant des valeur positives uniquement,

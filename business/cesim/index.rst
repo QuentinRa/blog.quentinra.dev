@@ -4,7 +4,7 @@
 Simulation CESIM
 ================================
 
-| :math:`\color{grey}{Version \ 1.1.1}`
+| :math:`\color{grey}{Version \ 1.1.3}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 05/12/2020}`
 
 Ce cours n'est qu'un Guide de CESIM pour l'étude de cas
@@ -75,7 +75,10 @@ Décisions
 				Moi j'ai jamais vu en quoi c'était utile à part pour augmenter les dépenses. Reste que le prof
 				dit qu'il faut payer de bon comptables pour faire des économies.
 
-			* réductions des coûts directs : à priori ils influent sur la qualité
+			*
+
+				réductions des coûts directs : à priori (...) ils influent sur la qualité, mais on n'a
+				pas trouvé comme estimé son impact.
 
 		* vous employés des salariés
 
@@ -91,7 +94,7 @@ Décisions
 		* vous pouvez modifier les délais de paiement (il faut mieux éviter)
 
 Résultats
-	Vous allez voir les résultats d'un tour ici.
+	Vous allez voir les résultats d'un tour ici. Voir partie suivante.
 
 3. Résultats
 =================================
@@ -117,7 +120,7 @@ Sinon de façon générale
 
 	* finance
 
-		* regarder le taux d'endettement (100% ou plus = liquidation),
+		* regarder le taux d'endettement (100% ou plus = liquidation = 2 points en moins),
 		* regarder les investissements
 		* regarder les dividendes versées
 

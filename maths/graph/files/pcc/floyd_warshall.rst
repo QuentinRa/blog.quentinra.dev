@@ -1,5 +1,5 @@
 ====================================================
-3. Plus court chemin - Algorithme de Floyd-Warshall
+9. Plus court chemin - Algorithme de Floyd-Warshall
 ====================================================
 
 Soit un graphe pondéré G avec des poids ayant une valeur positives ou négatives,

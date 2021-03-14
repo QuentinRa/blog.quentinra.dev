@@ -35,8 +35,8 @@ Des points positifs à l'ENSIIE sont les parcours/matières qui sont intéressan
 les stages (réseau), les masters, la vie associative (et les projections d'ITV),
 l'implication dans la development durable et son réseau d'anciens élèves.
 Les points négatifs sont le manque de communication de l'admin avec les profs (problèmes emploi du temps,
-leur donner les mailing-lists...), le manque de profs spécialisés (ex: web, réseau avec
-un lecture des slides et peu d'apport du prof), leurs outils
+leur donner les mailing-lists...), le manque de profs (ex: web, réseau, os dans lesquels
+la présence du chargé de cours n'apporte que très peu d'aide à sa compréhension), leurs outils
 (openmeeting et ses crashs, aurionweb et ses bugs, ordinateurs trop sécurisés donc tout est bloqué, ...)
 et la disparition des grandes vacances.
 
