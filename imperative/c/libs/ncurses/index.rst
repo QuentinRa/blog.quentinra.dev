@@ -65,7 +65,75 @@ Voici un exemple
 		  return EXIT_SUCCESS;
 		}
 
+2. Démarrage
+=================
 
+Tout d'abord, il faut initialiser la librairie avec :code:`initscr()`
+et libérer ce qui a été créé à la fin avec :code:`endwin()`.
+
+Vous allez ensuite manipuler des fenêtres. Par défaut si une fonction
+ne demande pas de fenêtre, alors vous manipulez la fenêtre crée par :code:`initscr()`
+soit votre terminal.
+
+Il existe deux constantes très utiles qui sont :code:`LINES` et :code:`COLS`
+qui ont pour valeur la taille de votre terminal, sachant qu'une case corresponds
+à un caractère soit 1 pixel.
+
+Après avoir modifié le contenu d'une fenêtre, n'oubliez pas de refresh !
+On refresh avec :code:`refresh()` ou :code:`wrefresh(window)`.
+
+Et enfin, attention, les coordonnées sont données dans l'ordre y, x et non
+x y donc faites attention.
+
+3. Écrire du texte
+========================
+
+Vous avez beaucoup de fonctions pour écrire du texte, les fonctions
+pennant une window écrirons dans une autre fenêtre que directement dans le terminal
+
+	* :code:`printw(texte)` : affiche du texte (1)
+	* :code:`wprintw(texte)` : (1) mais dans window
+	* :code:`addstr(texte)` : affiche du texte, mais le curseur à la fin (2)
+	* :code:`waddstr(texte)` : (2) mais dans window
+	* :code:`mvprintw(y, x, texte)` : (1) mais à une position x,y
+	* :code:`mvwprintw(window, y, x, texte)` : (1) mais à la position x,y dans window
+	* :code:`mvaddstr(y, x, texte)` : (2) mais à une position x,y
+	* :code:`mvwaddstr(window, y, x, texte)` : (2) mais à la position x,y dans window
+
+Ces fonctions fonctionnent comme printf, donc vous pouvez utiliser des %d ou autre
+dedans et mettre des arguments après le texte. En fait l'argument texte devra
+s'appeler format comme dans printf mais je l'ai appelé texte.
+
+Plus de détails
+
+	* https://manpages.debian.org/unstable/ncurses-doc/addstr.3ncurses.en.html
+	* https://manpages.debian.org/testing/ncurses-doc/printw.3ncurses.en.html
+	* https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/printw.html
+
+Notez que vous pouvez écrire du texte en gras, en couleurs ou autre en définissant
+des attributs avant d'écrire. Il faut
+
+	* activer l'attribut avec : :code:`attron(attribut)` ou :code:`wattron(window, attribut)`
+	* le désactiver avec : :code:`attroff(attribut)` ou :code:`wattroff(window, attribut)`
+
+Les attributs sont
+
+	* une couleur :code:`COLOR_PAIR(code)`
+	* gras :code:`A_BOLD`
+	* italique :code:`A_ITALIC`
+	* normal :code:`A_NORMAL`
+	* surligne, le met en avant  :code:`A_STANDOUT`
+
+Les codes de couleurs sont
+
+	* :code:`COLOR_RED`
+	* :code:`COLOR_GREEN`
+	* :code:`COLOR_BLUE`
+	* :code:`COLOR_WHITE`
+	* :code:`COLOR_BLACK`
+	* :code:`COLOR_CYAN`
+	* :code:`COLOR_YELLOW`
+	* :code:`COLOR_MAGENTA`
 
 -----
 
