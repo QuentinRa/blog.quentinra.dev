@@ -28,21 +28,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/maths/matrix/files/gauss/index.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maths/matrix/files/gl/deter.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maths/matrix/files/gl/inv.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maths/matrix/files/mp.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maths/matrix/files/op/add.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maths/matrix/files/op/mm.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maths/matrix/files/op/mr.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maths/matrix/files/re/calc.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maths/matrix/files/re/def.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maths/matrix/files/re/obj.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maths/matrix/files/sl.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_summary/status.rst" beforeDir="false" afterPath="$PROJECT_DIR$/_summary/status.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/matrix/gauss.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/files/gauss/ex.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/matrix/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/matrix/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/template.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/docker/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/docker/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -90,7 +79,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/_summary" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/docker/files/e" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="ssh.settings" />
@@ -99,11 +88,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\system\docker\files\e" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\docker\files\a" />
+      <recent name="C:\Users\quent\Documents\texas-res\system\docker\files\i" />
       <recent name="C:\Users\quent\Documents\texas-res\_summary" />
       <recent name="C:\Users\quent\Documents\texas-res\summary" />
-      <recent name="C:\Users\quent\Documents\texas-res\conception\patrons\b" />
-      <recent name="C:\Users\quent\Documents\texas-res\conception\patrons\s" />
-      <recent name="C:\Users\quent\Documents\texas-res\conception\patrons\c" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\maths\matrix\files\gauss" />
@@ -427,7 +416,7 @@
       <workItem from="1615537508579" duration="4766000" />
       <workItem from="1615585753399" duration="4015000" />
       <workItem from="1615675276855" duration="3000" />
-      <workItem from="1615723605421" duration="9980000" />
+      <workItem from="1615723605421" duration="13813000" />
     </task>
     <servers />
   </component>

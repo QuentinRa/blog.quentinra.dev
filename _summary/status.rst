@@ -47,3 +47,8 @@ Il reste
 
 	* matrices : quelques notes à ajouter
 	* bric à brac : les developments en série
+	* analyse numérique : équations différentielles + revoir les méthodes itératives
+	* stats : revoir les tests, les incertitudes, la robustesse et la régression
+	* R : revoir les fonctions graphiques et utilitaires
+	* Optimisation : faire le cours
+	* bash/linux : cours de l'ensiie

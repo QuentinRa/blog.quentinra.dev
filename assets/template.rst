@@ -24,10 +24,10 @@ i. Exercices
 ==============
 
 .. toctree::
-    :name: exercices
-    :maxdepth: 1
+	 :name: exercices
+	 :maxdepth: 1
 
-		nom				<path>
+			nom				<path>
 
 -----
 
