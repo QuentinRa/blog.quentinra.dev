@@ -4,7 +4,7 @@
 Librairies (C, JAVA, ...)
 ================================
 
-| :math:`\color{grey}{Version \ 0.2.0}`
+| :math:`\color{grey}{Version \ 0.2.1}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 15/03/2021}`
 
 Ce cours est censé contenir des libraires utiles, graphiques
@@ -26,8 +26,8 @@ et vous pouvez trouver les cours complets (qui sont en cours de création) ici
 	 :name: exercices
 	 :maxdepth: 1
 
-			NCurses         <ncurses/index>
-			Libgdx          <libgdx/index>
+			ncurses         <ncurses/index>
+			libgdx          <libgdx/index>
 			lwjgl3          <lwjgl/index>
 
 -----

@@ -29,9 +29,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/libs/lwjgl/files/install.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/libs/lwjgl/files/init/install.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/libs/lwjgl/files/use.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/libs/lwjgl/files/init/use.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/libs/lwjgl/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/libs/lwjgl/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/java/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/java/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/libs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/libs/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/server/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/server/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -417,7 +417,7 @@
       <workItem from="1615585753399" duration="4015000" />
       <workItem from="1615675276855" duration="3000" />
       <workItem from="1615723605421" duration="23909000" />
-      <workItem from="1615801600128" duration="25478000" />
+      <workItem from="1615801600128" duration="28312000" />
     </task>
     <servers />
   </component>

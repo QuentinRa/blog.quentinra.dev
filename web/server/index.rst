@@ -183,9 +183,7 @@ d'attendre!).
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* wamp
-
-		* https://stackoverflow.com/questions/5773288/configure-wamp-server-to-send-email
+	* https://stackoverflow.com/questions/5773288/configure-wamp-server-to-send-email
 
 	* configuration apache
 
@@ -202,6 +200,7 @@ d'attendre!).
 	* mon vps
 
 		* https://www.ovhcloud.com/fr/vps/
+		* https://theitbros.com/how-to-setup-a-vps-to-host-your-website/
 		* https://linuxize.com/post/secure-apache-with-let-s-encrypt-on-debian-10/
 		* https://geekflare.com/free-ssl-certificate-apache-letsencrypt/
 		* https://community.ovh.com/en/t/how-to-link-a-domain-name-with-a-vps/280
