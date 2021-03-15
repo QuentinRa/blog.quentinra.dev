@@ -82,6 +82,21 @@ Les musiques, comme les sons, **doivent être libérés** lorsqu'ils ne sont plu
 			Sons        <audio/sound>
 			Musiques    <audio/music>
 
+5. Affichage graphique, Dessin et événements
+===================================================
+
+Cette partie vient volontairement après car elle est compliquée. On va s'intéresser
+au code de la méthode :code:`render` et en particulier à la partie :code:`draw` (qui
+dessine un stage).
+
+.. toctree::
+	 :maxdepth: 1
+
+			Nettoyer l'écran        <render/clean>
+			Introduction au batch   <render/batch>
+			Mise en page            <render/layout>
+			Affichage et Images     <render/draw>
+
 -----
 
 **Crédits**
