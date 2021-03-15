@@ -4,7 +4,7 @@
 JAVA
 ================================
 
-| :math:`\color{grey}{Version \ 0.8.15}`
+| :math:`\color{grey}{Version \ 0.8.17}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 01/02/2021}`
 
 1. Introduction  :code:`théorique`
@@ -105,6 +105,10 @@ aux fonctions tandis que les objets sont passés par référence
 7. Interfaces graphiques
 ===============================
 
+Ce cours utilise les librairies graphiques :code:`java.awt`
+et :code:`javax.swing`. Si vous voulez apprendre une autre librairie, regardez
+dans le cours sur les librairies.
+
 .. toctree::
 	 :maxdepth: 1
 
@@ -135,39 +139,11 @@ Ici, en vrac, quelques trucs que vous n'allez probablement jamais utiliser.
 Cette partie concerne ceux qui veulent faire un .exe ou un .jar
 plus ou moins sécurisé.
 
-Tout d'abord la première étape est d'empêcher une personne
-ayant votre .jar/.exe de retrouver votre code source.
+.. toctree::
+	 :maxdepth: 1
 
-	* Offusquer le code : Il s'agit d'une technique qui rends moins lisible le code (utilisant des noms bizarres etc.)
-
-		* :code:`yguard` (gratuit/open-source) : https://www.yworks.com/products/yguard
-		* :code:`proguard` (gratuit/open-source) : https://github.com/Guardsquare/proguard
-
-	* Empêcher la décompilation.
-
-		* Ceci est uniquement possible avec protector4j (payant pour plus de 7 jours)
-		* vous pouvez demander une réduction si vous êtes étudiants (par mail)
-		* https://protector4j.com/
-		* si vous testez dans votre IDE de décompiler, vous allez le voir échouer
-		* Attention, protector4j réécrit JAVA (en partie) en proposant un nouveau JRE
-
-Dans certains cas, vous pouvez vouloir inclure le JRE dans le jar/exe que vous partagez
-(mais l'utilisateur peut se retrouver avec x JRE sur sa machine, il faudra mettre vos JRE à jour, ...).
-Vous pouvez customisez votre JRE depuis Java 11, voici un site pour le faire en ligne :
-https://justinmahar.github.io/easyjre/ (`github <https://github.com/justinmahar/easyjre>`_).
-
-Pour créer un installeur, vous pouvez utiliser :code:`install4j` (https://www.ej-technologies.com/products/install4j/overview.html)
-qui est payant.
-
-Vous pouvez générer un .exe d'un .jar avec :code:`launch4j` (http://launch4j.sourceforge.net/).
-Attention si vous avez des problèmes, essayer de changer les options
-de recherche d'un JRE (mettre une version min/... ou mettre "Prefer JDK, but use JRE" par exemple).
-
-Pour créer un installeur pour votre .exe, vous pouvez utiliser :code:`innoDB`. C'est très
-facile à utiliser si vous utilisez la création assistée.
-
-Enfin il vous restera à acheter un certificat EV ou non pour déclarer votre .exe comme
-sûr (search: code signing certificate).
+		Sécuriser son jar                <prod/obs>
+		Créer un .exe et son installeur  <prod/ins>
 
 -----
 

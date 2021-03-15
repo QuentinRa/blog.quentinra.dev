@@ -1,7 +1,7 @@
 .. _ncurses:
 
 ================================
-Librairies en C
+Librairies C : ncurses
 ================================
 
 | :math:`\color{grey}{Version \ 0.3.9}`

@@ -68,9 +68,9 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     :maxdepth: 1
 
     Langage C                            <imperative/c/index>
-    Langage C (librairies: ncurses)      <imperative/c/libs/index>
     Langage Python                       <imperative/python/index>
     Langage Java                         <imperative/java/index>
+    Langage (C, JAVA, ...)               <imperative/libs/index>
 
 .. toctree::
     :caption: Programmation fonctionnelle
