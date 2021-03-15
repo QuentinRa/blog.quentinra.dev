@@ -24,6 +24,8 @@ uniquement de disponible donc ce tutoriel sera limité. Voici mon CMakelist.
 		# main est le nom de ma cible
 		target_link_libraries( main ${CURSES_LIBRARIES} )
 
+J'ai découvert ce lien qui peut aider https://github.com/tony/NCURSES-Programming-HOWTO-examples/blob/master/CMakeLists.txt.
+
 Je compile en utilisant avec comme compilateur ma WSL sous debian (voir
 cours CLion). Je lance ensuite un terminal comme vu dans la partie Remote Working
 avec CLion et je copie-colle dedans le chemin de l'exécutable. Si vous n'avez pas le chemin
@@ -147,6 +149,11 @@ Vous pouvez aussi faire vos propres combinaisons de couleurs avec
 new_code le nouveau code de couleur, code_fg le code de couleur du texte
 et code_bg le code de couleur de l'arrière plan.
 
+Après quelques recherches, j'ai découvert que depuis ncurses 6.1, ncurses supporte
+256 bits true colors. Je ne sais pas encore comment (lien init_extended_color?)
+mais en tout cas, mettre des valeurs de code_fg comme 127 ou 255 vous donnent de nouvelles
+couleurs disponibles.
+
 4. Récupérer la saisie
 =========================
 
@@ -231,3 +238,15 @@ Vous pouvez créer des fenêtres avec
 	* https://www.reddit.com/r/vim/comments/5oypb4/how_does_vim_support_truecolor_but_still_use/
 	* http://www.leonerd.org.uk/code/libtickit/
 	* https://www.etcwiki.org/wiki/Best_ncurses_linux_console_programs
+	* https://duckduckgo.com/?q=find+ncurses+version&atb=v230-1&ia=web
+	* https://cmake.org/cmake/help/latest/module/FindCurses.html
+	* https://invisible-island.net/ncurses/announce.html
+	* https://duckduckgo.com/?q=extended_slk_color&atb=v230-1&ia=web
+	* https://invisible-island.net/ncurses/ncurses-examples.html
+	* https://github.com/ThomasDickey/ncurses-snapshots/tree/master/test
+	* https://github.com/ThomasDickey/ncurses-snapshots/blob/master/test/color_content.c
+	* https://github.com/ThomasDickey/ncurses-snapshots/blob/master/test/color_name.h
+	* https://github.com/ThomasDickey/ncurses-snapshots/blob/master/test/extended_color.c
+	* https://invisible-island.net/ncurses/man/curs_terminfo.3x.html#h3-Output-Functions
+	* https://askubuntu.com/questions/1232222/how-to-get-256-colors-working-in-ncurses-program
+	* https://stackoverflow.com/questions/55972033/ncurses-init-extended-pair-cant-create-more-than-255-color-pairs
