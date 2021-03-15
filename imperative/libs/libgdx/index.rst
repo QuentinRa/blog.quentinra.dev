@@ -4,8 +4,8 @@
 Libgdx
 =========
 
-| :math:`\color{grey}{Version \ 0.0.1}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 14/03/2021}`
+| :math:`\color{grey}{Version \ 0.4.12}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 15/03/2021}`
 
 La libgdx est un framework java permettant la création de jeux vidéos, multiplateformes.
 
@@ -42,6 +42,46 @@ La différence est que la classe Game intègre les screens donc c'est facile de 
 			Classe Game/ApplicationAdapter  <app/game>
 			Stages et Actors                <app/actors>
 
+3. Fichiers
+=======================
+
+La classe `FileHandle`_ contient toutes les méthodes liés aux fichiers cependant, on ne peut pas l'instancier.
+
+La classe `Gdx`_ possède un champ static "files" qui contient une classe implémentant l'interface `Files`_ Celle-ci
+possède des méthodes permettant de lire un fichier/dossier et le retourne sous la forme d'un `FileHandle`_.
+
+.. code:: java
+
+	FileHandle Gdx.file.methodeOuverture(String chemin);
+
+Il existe 4 méthodes d'ouverture
+
+	* :code:`internal` : fichier internes (dans android/assets ou assets ou src/main/ressources ou ...).
+	* :code:`absolute` : chemin absolu
+	* :code:`classpath` : dans les dossiers sources, là ou on trouve les fichiers compilés/.jar
+	* :code:`external` : carde SD sur android, domicile (~) sur PC.
+	* :code:`local` : chemin relatif à la racine de l'application ou stockage interne (privé) sous android
+
+Vous n'allez qu'utiliser interne.
+
+4. Audio
+==========
+
+Les format de fichiers sons supportés sont mp3, ogg et wav.
+L'interface `Audio`_ gère tous ceux qui est relaté à l'audio ce qui comprends
+
+	* :code:`Sons` : généralement de moins de 10secondes, taille de 1MB généralement
+	* :code:`Musiques` : toute le reste
+
+Comme d'habitude, la classe `Gdx`_ possède un champ static qui contient une instance de `Audio`_ prête.
+Les musiques, comme les sons, **doivent être libérés** lorsqu'ils ne sont plus nécessaires (dispose())
+
+.. toctree::
+	 :maxdepth: 1
+
+			Sons        <audio/sound>
+			Musiques    <audio/music>
+
 -----
 
 **Crédits**
@@ -54,3 +94,7 @@ La différence est que la classe Game intègre les screens donc c'est facile de 
 
 .. _ApplicationAdapter: https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/ApplicationAdapter.html
 .. _Game: https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/Game.html
+.. _Gdx: https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/Gdx.html
+.. _FileHandle: https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/files/FileHandle.html
+.. _Files: https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/Files.html
+.. _Audio: https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/Audio.html

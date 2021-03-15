@@ -29,6 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/libs/libgdx/app/actors.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/libs/libgdx/app/actors.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/libs/libgdx/app/game.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/libs/libgdx/app/game.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imperative/libs/libgdx/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/libs/libgdx/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
@@ -77,7 +79,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/imperative/libs/libgdx" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/imperative/libs/libgdx/audio" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="ssh.settings" />
@@ -86,18 +88,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\libs\libgdx\audio" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\libs\libgdx" />
       <recent name="C:\Users\quent\Documents\texas-res\system\docker\files\e" />
       <recent name="C:\Users\quent\Documents\texas-res\system\docker\files\a" />
       <recent name="C:\Users\quent\Documents\texas-res\system\docker\files\i" />
-      <recent name="C:\Users\quent\Documents\texas-res\_summary" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\imperative\libs\libgdx\render" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\c" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\matrix\files\gauss" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\math\graph" />
-      <recent name="C:\Users\quent\Documents\texas-res\_summary" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -415,7 +417,7 @@
       <workItem from="1615585753399" duration="4015000" />
       <workItem from="1615675276855" duration="3000" />
       <workItem from="1615723605421" duration="23909000" />
-      <workItem from="1615801600128" duration="10084000" />
+      <workItem from="1615801600128" duration="11502000" />
     </task>
     <servers />
   </component>

@@ -6,12 +6,12 @@ Classe Game/ApplicationAdapter
 
 Les méthodes sont
 
-		:code:`create()` : initialisations, allocations
-		:code:`render()` : l'équivalent de la gameloop (n'oubliez pas de la structurer en input, update et render)
-		:code:`dispose()` : libération des ressources
-		:code:`resize(int width, int height)` : appelé à chaque re-dimensionnement
-		:code:`pause()` : sous Android, appui sur le bouton Home
-		:code:`resume()` : sous Android, retour sur l'application
+	* :code:`create()` : initialisations, allocations
+	* :code:`render()` : l'équivalent de la gameloop (n'oubliez pas de la structurer en input, update et render)
+	* :code:`dispose()` : libération des ressources
+	* :code:`resize(int width, int height)` : appelé à chaque re-dimensionnement
+	* :code:`pause()` : sous Android, appui sur le bouton Home
+	* :code:`resume()` : sous Android, retour sur l'application
 
 Attention! La libgdx ne supporte pas les initialisations en dehors d'une méthode.
 
@@ -20,14 +20,14 @@ Attention! La libgdx ne supporte pas les initialisations en dehors d'une méthod
 En gros, le lanceur va lancer la classe de jeu qui extends Game/ApplicationAdapter
 et appeler ses méthodes.
 
-	* Elle appelle create au démarrage et dispose à la fin
-	* environ 60 fois par seconde, elle appelle render pour actualiser l'affichage
-	* elle appelle resize, pause, resume en fonction des actions de l'utilisateur
+	* Elle appelle :code:`create` au démarrage et :code:`dispose` à la fin
+	* environ 60 fois par seconde, elle appelle :code:`render` pour actualiser l'affichage
+	* elle appelle :code:`resize`, :code:`pause`, :code:`resume` en fonction des actions de l'utilisateur
 
 Vous pouvez obtenir l'écart entre deux affichages avec Gdx.graphics.getDeltaTime(),
 qui est l'argument :code:`df` des fonctions qui vont suivre.
 
-**render()?**
+**render ?**
 
 La méthode render est le coeur de votre jeu : vous allez écrire le code pour dessiner
 à l'écran ce qu'il faut afficher. En pratique, on découpe render en trois méthodes

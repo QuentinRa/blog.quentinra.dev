@@ -42,3 +42,25 @@ cela nous permets de mettre des acteurs au dessus de d'autres acteurs.
 		 this.stage.dispose(); //on doit libérer le stage, qui va libérer tous ses acteurs
 		}
 
+Les avantages d'un stage sont
+
+	* un stage possède une caméra (qu'on pourra déplacer)
+	* un stage possède un gestionnaire d'événement
+
+Quelques notes
+
+	* l'interface étant fixe, on la mets généralement dans un stage à part, et on ne bougera jamais sa caméra
+	* on peut aussi faire un stage pour le fond d'écran
+	* on dessine l'interface en dernier mais c'est généralement la première à récupérer les input
+
+		.. code:: java
+
+			public void render(){
+			 // on regarde l'interface en premier pour input
+			 stageInterface.act();
+			 stageJeu.act();
+
+			 stageJeu.draw();
+			 // on dessine l'interface en dernier
+			 stageInterface.draw();
+			}
