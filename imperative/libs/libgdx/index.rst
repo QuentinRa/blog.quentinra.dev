@@ -4,7 +4,7 @@
 Libgdx
 =========
 
-| :math:`\color{grey}{Version \ 0.4.12}`
+| :math:`\color{grey}{Version \ 0.4.25}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 15/03/2021}`
 
 La libgdx est un framework java permettant la création de jeux vidéos, multiplateformes.
@@ -106,6 +106,10 @@ dessine un stage).
 			Affichage de widgets    <render/widgets>
 			Événements              <render/events>
 
+Vous pouvez également faire des choses comme déplacer la caméra etc. mais ce tutoriel étant
+un peu ancien, il est incomplet et ne sera pas complété pour le moment. Je vous invite
+à lire la documentation officielle et le compléter si vous le souhaitez.
+
 6. Actors
 ==========
 
@@ -168,10 +172,53 @@ vos réalisations futures
 			Animations      <others/anim>
 			Tiled           <others/tiled>
 
+Autres trucs utiles
+
+	* la classe :code:`Stack`, pour faire une pile d'items dans un inventaire
+	* la classe :code:`Image`, pour obtenir un Drawable d'une image (pour l'utiliser en fond, ...)
+
 8. Faire de belles applications
 =====================================
 
-...
+Il existe une surcouche nommé visuelle VisUI qui propose
+des composants Libgdx avec un style (donc pas de json etc.) et c'est beau en plus d'être pratique.
+
+	* git : https://github.com/kotcrab/vis-ui
+	* démo : https://vis.kotcrab.com/demo/ui/
+	* exemple : https://dl.kotcrab.com/github/vis/visui2.png
+	* code démo : https://github.com/kotcrab/vis-ui/tree/master/ui/src/test/java/com/kotcrab/vis/ui/test/manual
+
+Je ne ferais pas de tutoriel dessus, il faut essayer de comprendre son code puis de toute
+façon il vous aide : https://github.com/kotcrab/vis-ui#usage et https://github.com/kotcrab/vis-ui/wiki si besoin.
+
+Voici des trucs utiles
+
+.. code:: java
+
+		// first line in Game class, load VisUI
+		VisUI.load();
+
+		// creates style, then creates button
+		VisImageButton.VisImageButtonStyle style =
+		 new VisImageButton.VisImageButtonStyle(
+		  VisUI.getSkin().get(
+		   VisImageButton.VisImageButtonStyle.class
+		 )
+		);
+
+		// modify (this is an exemple, you can remove that)
+		style.up = style.down = style.over = /*...*/ ; // a drawable here
+		// create button
+		VisImageButton v = VisImageButton(style);
+
+		// VisLabel
+		// MenuBar, Menu, MenuItem, PopupMenu /*...*/
+		// Tooltip, Separator, /*...*/
+		// VisTable, CollapsibleWidget, VisTree, VisWindow /*...*/
+		// VisTextButton, VisSelectBox, VisTextField, VisValidatableTextField /*...*/
+
+		// last line
+		VisUI.dispose();
 
 -----
 

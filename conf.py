@@ -23,7 +23,7 @@ copyright = '2021, Quentin Ra, Legendary Games Studio'
 author = 'Quentin Ra, Legendary Games Studio'
 
 # The full version, including alpha/beta/rc tags
-release = 'build-3.44.637'
+release = 'build-3.46.660'
 # version 0 : fait en html, css, php, js
 # version 1 : refonte mais en restructured text avec sphinx
 # version 1.1 : system/docker
@@ -72,6 +72,8 @@ release = 'build-3.44.637'
 # version 3.42 : web/js
 # version 3.43 : functional/ocaml
 # version 3.44 : conception/me/doxygen
+# version 3.45 : imperative/libs/ncurses
+# version 3.46 : imperative/libs/libgdx
 
 # -- General configuration ---------------------------------------------------
 

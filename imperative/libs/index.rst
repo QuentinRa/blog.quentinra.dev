@@ -4,8 +4,8 @@
 Librairies (C, JAVA, ...)
 ================================
 
-| :math:`\color{grey}{Version \ 0.0.1}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 14/03/2021}`
+| :math:`\color{grey}{Version \ 0.2.0}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 15/03/2021}`
 
 Ce cours est censé contenir des libraires utiles, graphiques
 notamment.
