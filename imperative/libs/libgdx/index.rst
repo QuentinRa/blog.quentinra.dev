@@ -9,6 +9,12 @@ Libgdx
 
 La libgdx est un framework java permettant la création de jeux vidéos, multiplateformes.
 
+Honnêtement, je vous invite à bien y réfléchir à deux fois afin de faire
+un jeu en JAVA (pourquoi pas C# ou C++ ou lua ?).
+Par contre si vous voulez faire une application, peut-être que c'est
+une bonne de la faire en JAVA ou peut-être pas... Cela dépends de vos attentes
+et de vos contraintes.
+
 1. Introduction
 ===================================
 
@@ -99,6 +105,73 @@ dessine un stage).
 			Affichage d'images      <render/draw>
 			Affichage de widgets    <render/widgets>
 			Événements              <render/events>
+
+6. Actors
+==========
+
+La classe Actor représente n'importe quel élément du jeu (personnage, coffre, sort, boutons, fond d'écran...).
+
+	* coordonnées x,y (setPosition, getX, getY)
+	* taille (getWidth, getHeight)
+	* rotation (getRotation)
+	* origine/point de rotation (getOriginX, getOriginY, setOrigin)
+	* zoom (getScaleX, getScaleY)
+	* si un objet est visible (isVisible, setVisible)
+	* sa couleur (getColor)
+	* méthode de déplacement (moveby)
+	* actions (addAction, clearActions)
+	* une méthode act = leur méthode update
+	* une méthode draw = leur méthode de render
+	* le stage dans lequel il est (getStage)
+
+**Group**
+
+La classe Group (extends Actor) permet à des Acteurs d'être groupés à un Acteur, ce qui a pour effet que ces
+Acteurs seront par exemple dessinés relativement à la position du dit Acteur.
+
+.. code:: java
+
+		Group group = new Group();
+		group.addActor(Actor actor);
+		actor.setPosition(0f,0f); //coin supérieur gauche du groupe
+
+On peut par exemple placer des habits sur notre personnage, ou un statut au dessus de sa tête...
+
+Attention, l'ordre de dessin des acteurs et du groupe est déterminé dans la méthode draw de l'acteur qui extends
+Group. Vous y déciderez si l'appel à super.draw (dessine enfants) doit être avant le code qui dessine l'Acteur
+groupe.
+
+**Améliorer la classe Actor/Group**
+
+La classe actor est très générique, voici des méthodes à coder qui pourrait vous être utiles dans
+vos réalisations futures
+
+	* charger une texture
+	* centrer un élément à une position
+	* centrer un élément sur un actor
+	* changer l'opacité
+	* garder le joueur dans la map
+	* définir les limites du monde pour la caméra
+	* centre la caméra sur le joueur
+	* collision réaliste & mouvement réaliste
+	* animations (sprites)
+	* savoir deux acteurs sont proches
+
+7. Petites trucs utiles
+==========================
+
+.. toctree::
+	 :maxdepth: 1
+
+			Cinématiques    <others/cine>
+			Collision       <others/collision>
+			Animations      <others/anim>
+			Tiled           <others/tiled>
+
+8. Faire de belles applications
+=====================================
+
+...
 
 -----
 
