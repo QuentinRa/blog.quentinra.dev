@@ -85,7 +85,7 @@ Les musiques, comme les sons, **doivent être libérés** lorsqu'ils ne sont plu
 5. Affichage graphique, Dessin et événements
 ===================================================
 
-Cette partie vient volontairement après car elle est compliquée. On va s'intéresser
+Cette partie vient volontairement après car elle est plus compliquée. On va s'intéresser
 au code de la méthode :code:`render` et en particulier à la partie :code:`draw` (qui
 dessine un stage).
 
@@ -95,7 +95,8 @@ dessine un stage).
 			Nettoyer l'écran        <render/clean>
 			Introduction au batch   <render/batch>
 			Mise en page            <render/layout>
-			Affichage et Images     <render/draw>
+			Affichage d'images      <render/draw>
+			Affichage de widgets    <render/widgets>
 
 -----
 
@@ -104,6 +105,8 @@ dessine un stage).
 
 **Références**
 	* https://libgdx.com/dev/setup/
+	* https://github.com/libgdx/libgdx/wiki
+	* https://libgdx.badlogicgames.com/ci/nightlies/docs/api/
 
 .. liens
 
