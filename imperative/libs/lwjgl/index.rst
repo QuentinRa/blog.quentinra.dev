@@ -36,9 +36,20 @@ OPENCL (performances)...
 			Initialisation du moteur graphique <files/graph>
 			Création de fenêtre                <files/window>
 			Notion de CallBack                 <files/cb>
-			Squelette d'une appli              <files/use>
-			Les contextes graphiques           <files/use>
-			Dessiner                           <files/use>
+			Squelette d'une appli              <files/show>
+			Les contextes graphiques           <files/cont>
+			Dessiner                           <files/draw>
+
+4. Autres
+==============
+
+Gestion du temps
+	La méthode :code:`double glfwGetTime();` renvoi le temps écoulé (en secondes) sous la forme d'un double
+	depuis glfwInit(). La méthode :code:`double System.nanoTime();` renvoi le temps en nanosecondes.
+
+	Suite ici : https://github.com/SilverTiger/lwjgl3-tutorial/wiki/Timing
+
+
 
 -----
 
@@ -50,3 +61,4 @@ OPENCL (performances)...
 	* https://gamedevelopment.tutsplus.com/articles/how-to-build-a-jrpg-a-primer-for-game-developers--gamedev-6676
 	* https://github.com/SilverTiger/lwjgl3-tutorial/wiki/Game-loops
 	* https://alexandre-laurent.developpez.com/tutoriels/programmation-jeux/boucle-de-jeu/
+	* https://www.glfw.org/docs/latest/context_guide.html

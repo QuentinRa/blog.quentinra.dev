@@ -29,10 +29,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/libs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/libs/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/git.rst" beforeDir="false" afterPath="$PROJECT_DIR$/utils/git.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/libs/lwjgl/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/libs/lwjgl/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -418,7 +415,7 @@
       <workItem from="1615585753399" duration="4015000" />
       <workItem from="1615675276855" duration="3000" />
       <workItem from="1615723605421" duration="23909000" />
-      <workItem from="1615801600128" duration="23150000" />
+      <workItem from="1615801600128" duration="24192000" />
     </task>
     <servers />
   </component>
