@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'maven'
+}
+
+group 'nom'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.7.0'
+
+    implementation "com.badlogicgames.gdx:gdx:1.9.11"
+
+		// plugins officiels
+    implementation "com.badlogicgames.gdx:gdx-box2d:1.9.11"
+    implementation "com.badlogicgames.gdx:gdx-bullet:1.9.11"
+    implementation "com.badlogicgames.box2dlights:box2dlights:1.4"
+    implementation "com.badlogicgames.ashley:ashley:1.7.0"
+    implementation "com.badlogicgames.gdx:gdx-freetype:1.9.11"
+    implementation "com.badlogicgames.gdx:gdx-ai:1.8.0"
+    implementation "com.badlogicgames.gdx:gdx-controllers:1.9.11"
+
+		// les plugins non officiels/supplémentaires
+    implementation "com.esotericsoftware.spine:spine-libgdx:3.6.53.1"
+    implementation "com.underwaterapps.overlap2druntime:overlap2d-runtime-libgdx:0.1.0"
+    implementation "com.kotcrab.vis:vis-ui:1.4.6"
+    implementation "net.dermetfan.libgdx-utils:libgdx-utils:0.13.4"
+    implementation "net.dermetfan.libgdx-utils:libgdx-utils-box2d:0.13.4"
+    implementation "de.tomgrill.gdxdialogs:gdx-dialogs-core:1.2.5"
+
+		// les libs requises
+    implementation 'com.badlogicgames.gdx:gdx-backend-lwjgl3:1.9.11'
+    implementation "com.badlogicgames.gdx:gdx-platform:1.9.11:natives-desktop"
+    implementation "com.badlogicgames.gdx:gdx-box2d-platform:1.9.11:natives-desktop"
+    implementation "com.badlogicgames.gdx:gdx-bullet-platform:1.9.11:natives-desktop"
+    implementation "com.badlogicgames.gdx:gdx-freetype-platform:1.9.11:natives-desktop"
+    implementation "com.badlogicgames.gdx:gdx-tools:1.9.11"
+    implementation "com.badlogicgames.gdx:gdx-controllers-desktop:1.9.11"
+    implementation "com.badlogicgames.gdx:gdx-controllers-platform:1.9.11:natives-desktop"
+    implementation "de.tomgrill.gdxdialogs:gdx-dialogs-desktop:1.2.5"
+}
