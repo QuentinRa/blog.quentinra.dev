@@ -40,6 +40,7 @@ La différence est que la classe Game intègre les screens donc c'est facile de 
 
 			Manipulation de Lanceurs        <app/start>
 			Classe Game/ApplicationAdapter  <app/game>
+			Classe Screen                   <app/screen>
 			Stages et Actors                <app/actors>
 
 3. Fichiers
@@ -97,6 +98,7 @@ dessine un stage).
 			Mise en page            <render/layout>
 			Affichage d'images      <render/draw>
 			Affichage de widgets    <render/widgets>
+			Événements              <render/events>
 
 -----
 
