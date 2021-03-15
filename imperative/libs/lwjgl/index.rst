@@ -24,11 +24,11 @@ OPENCL (performances)...
 .. toctree::
 	 :maxdepth: 1
 
-			Installer lwjgl (sans IDE) <files/install>
-			Utiliser la lwjgl          <files/use>
+			Installer lwjgl (sans IDE) <files/init/install>
+			Utiliser la lwjgl          <files/init/use>
 
-2. Démarrage
-==============
+2. Affichage graphique
+=======================
 
 .. toctree::
 	 :maxdepth: 1
@@ -39,6 +39,18 @@ OPENCL (performances)...
 			Squelette d'une appli              <files/show>
 			Les contextes graphiques           <files/cont>
 			Dessiner                           <files/draw>
+			Couleurs                           <files/colors>
+			Textures                           <files/textures>
+
+3. événements
+=======================
+
+.. toctree::
+	 :maxdepth: 1
+
+			Clavier        <files/event/kb>
+			Souris         <files/event/m>
+			Fenêtre        <files/event/w>
 
 4. Autres
 ==============
@@ -48,8 +60,6 @@ Gestion du temps
 	depuis glfwInit(). La méthode :code:`double System.nanoTime();` renvoi le temps en nanosecondes.
 
 	Suite ici : https://github.com/SilverTiger/lwjgl3-tutorial/wiki/Timing
-
-
 
 -----
 
