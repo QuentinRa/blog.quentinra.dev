@@ -23,7 +23,7 @@ copyright = '2021, Quentin Ra, Legendary Games Studio'
 author = 'Quentin Ra, Legendary Games Studio'
 
 # The full version, including alpha/beta/rc tags
-release = 'build-3.46.660'
+release = 'build-3.46.667'
 # version 0 : fait en html, css, php, js
 # version 1 : refonte mais en restructured text avec sphinx
 # version 1.1 : system/docker

@@ -177,3 +177,4 @@ Elles sont disponibles sur Github mais toutes ne sont pas disponibles partout.
 	* https://docs.github.com/en/github/using-git/changing-a-remotes-url
 	* https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 	* http://adopteungit.fr/methodologie/2017/04/26/commits-atomiques-la-bonne-approche.html
+	* https://dubrayn.github.io/IPS-DEV/git.html#1
