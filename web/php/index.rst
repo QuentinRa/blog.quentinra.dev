@@ -4,7 +4,7 @@
 PHP
 ================================
 
-| :math:`\color{grey}{Version \ 0.9.14}`
+| :math:`\color{grey}{Version \ 0.9.15}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 26/02/2021}`
 
 1. Introduction
@@ -265,6 +265,19 @@ null
 	// paramètre de type string pouvant être null
 	// peut retourner un entier ou null
 	function f(?string $arg) : ?int { ... }
+
+Vous pensiez que c'était finit ? Eh bien non, en php vous pouvez faire des fonctions
+qui héritent de variables. En gros, cela vous permet d'éviter de passer en paramètre
+des variables vu qu'elles sont ajoutées au scope via héritage.
+
+.. code:: php
+
+	<?php
+	$a = 10
+	function() { echo $a; } // échoue car $a n'est pas déclarée
+	function() use ($a) { echo $a; } // maintenant ça marche
+
+Vous pouvez passer autant d'arguments à use que vous le voulez,
 
 6. Classes et objets
 ======================
@@ -551,3 +564,4 @@ PHP 5.6 vers PHP 7
 	* https://www.php.net/manual/fr/reserved.variables.session.php
 	* https://www.php.net/manual/fr/reserved.variables.cookies.php
 	* https://www.php.net/manual/fr/language.functions.php
+	* https://www.php.net/manual/en/functions.anonymous.php

@@ -4,8 +4,8 @@
 Librairies C : ncurses
 ================================
 
-| :math:`\color{grey}{Version \ 0.3.9}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 14/03/2021}`
+| :math:`\color{grey}{Version \ 0.3.10}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 16/03/2021}`
 
 NCurses est une librairie graphique sous Linux vous permettant de faire des interfaces
 graphiques en ligne de commande. Elle est par exemple utilisée pour l'interface
