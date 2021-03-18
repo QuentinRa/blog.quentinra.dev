@@ -1,0 +1,4 @@
+Mesure de position/dispersion
+= p : moyenne/médiane (ou se situe la valeur)
+= dispersion : quartiles/écart-types
+

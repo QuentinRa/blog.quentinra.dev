@@ -18,7 +18,9 @@ L'objectif des statistiques est depuis des observations (=données=Data)
 d'une population (pas forcément humaine),
 de déterminer des caractéristiques puis une loi de probabilité (~fonction de répartition)
 qui est proche des observations
-ce qui nous permettra de déduire ou émettre des hypothèses.
+ce qui nous permettra de déduire ou émettre des hypothèses. Les matheux chercheront
+à démontrer à quel point il est vraisemblable (ça semble ok) d'affirmer
+que les observations sont le résultat de cette loi.
 
 Population
 	On considère nos données comme ceux d'une population. Il s'agit généralement
@@ -300,35 +302,7 @@ la :code:`p-value` dans le résultat, si elle est en dessous de 5% alors le test
 est rejeté sinon il a de fortes chances d'être correct (attention, alpha ne vaut pas forcément
 0.05).
 
-**Attention, je ne garantit absolument pas la véracité des propos suivants :**
-
-.. toctree::
-	 :maxdepth: 1
-
-		Tests préliminaires                  <tests/pre>
-		Tests de vraisemblance               <tests/seams>
-		Tests appariés                       <tests/app>
-		Analyse de la variance (Anova)       <tests/anova>
-		Techniques de Bootstrap              <tests/mdb>
-		ANCOVA (variables non indépendantes) <tests/ancova>
-		Liste de tests et conditions         <tests/liste>
-
-8. Incertitudes et robustesse
-===============================
-
-Il existe deux types d'incertitudes de mesure qui sont les
-
-	* erreurs systématiques : toujours les mêmes (précision, ...)
-	* erreurs accidentelles : problème statistique, ...
-
-Vous aurez plus de détails en analyse numérique.
-
-Les fonctions (de test notamment) demandent des prérequis (préconditions)
-qui ne sont pas vérifiées avant un calcul mais que vous devez respecter. Vous devez
-donc vérifier les tailles, les paramètres et même si tous vos paramètres sont bons, le
-test peut quand même être faux ! Et même si le test est bon, cela ne garantie pas qu'il
-le sera sur le reste de l'échantillon donc j'appelle à la prudence ou a faire des maths
-et essayer de vérifier.
+**Les tests qui étaient ici ont étés supprimés pour le moment.**
 
 -----
 

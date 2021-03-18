@@ -1,0 +1,51 @@
+# GRAPH
+
+table
+= useNa = "always" pour voir les valeurs NA
+
+nrows = nombre de lignes
+
+barplot(table())
+= diagramme en batons/barres
+= variable qualitative
+= avec table, c'est pour savoir combien d'individus ont chacun des valeurs qualitatives
+
+pie(table())
+= camembert
+= comme barplot
+
+hist()
+= voir la distribution
+= généralement v.a. continues
+= hist(x, nclass=6, prob=TRUE) pour diviser en 6 parties
+
+boxplot()
+= boite à moustache
+= pour voir les quartiles
+= dans la boite, on a 50% des données
+= attention aux valeurs extrêmes (outliers)
+= généralement utilisé en filtrant des valeurs selon un caractère qualitatif
+
+plot()
+= jitter(x) : afficher tous les points (bouge légèrement chaque point)
+
+plotmeans(quant~qual)
+= Diagramme temporel
+= Diagramme de températures
+= library('gplots')
+= qual souvent une variable temporelle, on voit l'évolution de la moyenne au fil du temps
+
+interaction.plot(qual, quant, quant, lty=1, legend=FALSE)
+= diagramme en fagot
+= sur la même idée que plotmeans
+= affiche toutes les valeurs et pas seulement la moyenne
+
+col="grey"
+main=""
+xlab=""
+ylab=""
+
+# UTILS
+
+read.csv2("outils_hdrs.csv")
+stringsAsFactors=TRUE

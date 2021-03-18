@@ -29,13 +29,14 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_summary/status.rst" beforeDir="false" afterPath="$PROJECT_DIR$/_summary/status.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games.txt" beforeDir="false" afterPath="$PROJECT_DIR$/games.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/java/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/java/notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/japanese/recap.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lang/japanese/recap.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/docker/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/docker/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/php/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/php/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/ancova.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/ancova.rste" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/anova.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/anova.rste" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/app.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/app.rste" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/liste.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/liste.rste" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/mdb.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/mdb.rste" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/pre.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/pre.rste" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/seams.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/seams.rste" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -429,7 +430,7 @@
       <workItem from="1615985477331" duration="49000" />
       <workItem from="1615993296286" duration="2926000" />
       <workItem from="1616023149867" duration="164000" />
-      <workItem from="1616073837070" duration="361000" />
+      <workItem from="1616073837070" duration="8513000" />
     </task>
     <servers />
   </component>

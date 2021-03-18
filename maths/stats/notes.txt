@@ -1,0 +1,53 @@
+**Attention, je ne garantit absolument pas la véracité des propos suivants :**
+
+.. toctree::
+	 :maxdepth: 1
+
+		Tests préliminaires                  <tests/pre>
+		Tests de vraisemblance               <tests/seams>
+		Tests appariés                       <tests/app>
+		Analyse de la variance (Anova)       <tests/anova>
+		Techniques de Bootstrap              <tests/mdb>
+		ANCOVA (variables non indépendantes) <tests/ancova>
+		Liste de tests et conditions         <tests/liste>
+
+8. Incertitudes et robustesse
+===============================
+
+Il existe deux types d'incertitudes de mesure qui sont les
+
+	* erreurs systématiques : toujours les mêmes (précision, ...)
+	* erreurs accidentelles : problème statistique, ...
+
+Vous aurez plus de détails en analyse numérique.
+
+Les fonctions (de test notamment) demandent des prérequis (préconditions)
+qui ne sont pas vérifiées avant un calcul mais que vous devez respecter. Vous devez
+donc vérifier les tailles, les paramètres et même si tous vos paramètres sont bons, le
+test peut quand même être faux ! Et même si le test est bon, cela ne garantie pas qu'il
+le sera sur le reste de l'échantillon donc j'appelle à la prudence ou a faire des maths
+et essayer de vérifier.
+
+10. aza
+===========================
+
+library('prettyR')
+describe(ech)
+
+subset(data, qual=="valeur", c(qual)) (3e : les var à sélectionner)
+qual ou ids
+
+smp$age.cat <- cut(smp$age, breaks = c(19, 28, 37, 48, 83),include.lowest = TRUE)
+Levels: [19,28] (28,37] (37,48] (48,83]
+découpe en intervals avec
+( = ouvert et ] = fermé
+
+trouver interval de confiance
+********************************
+
+library('binom')
+binom.confint(succès, taille, method="all")
+=== recommande méthode exact
+
+cor(x,y,use="complete.obs")
+
