@@ -53,6 +53,12 @@ quelque chose en mode compilé.
 La fonction :code:`data()` permet d'afficher la liste
 de tous les jeux de données disponibles ou d'en charger un.
 
+Une dernière chose, vous allez généralement voir des fonctions et des variables
+de la forme :code:`binom.test` par exemple. C'est quelque chose que l'on fait très souvent
+pour facilement identifier les variables (donc faites le), dans le cas des fonctions par contre,
+c'est généralement lié à la généricité (non abordée, voir ?formula). Pour voir
+les spécialisations/dérivations/généralisations d'une fonction, utilisez :code:`methods("nom")`.
+
 3. Particularités du R
 ========================
 
@@ -187,6 +193,14 @@ Fonctions de déplacement
 	* :code:`sedwd(path)` : change le répertoire courant
 	* :code:`dir()` ou :code:`list.files()` : liste les fichiers du répertoire
 
+Sauvegarder sa session
+
+	* :code:`save(x, y, ..., file="x.rdata")` : sauvegarde une variable x, y, ... dans x.rdata
+	* :code:`load("x.rdata")` : charge x.rdata
+	* :code:`write.table(v,file="mot.txt")` : sauvegarder au format txt un tableau
+	* :code:`read.table("mot.txt")`
+	* :code:`cat(file="mon_fichier","x=",x,append=TRUE)` : écrire dans un fichier
+
 Fonctions de manipulation
 
 	* :code:`file.path(partie, partie, ...)` : crée un path [#2]_
@@ -221,9 +235,20 @@ Bric à brac
 	* :code:`factorial(n)` : n factoriel
 	* :code:`min(v)` : valeur min
 	* :code:`max(v)` : valeur max
+
+Fonctions divines
+
 	* :code:`seq(from = x, to = y, length = l)` : suite de l valeurs séquentielles de [x,y]
 	* :code:`rep(v, n)` : répète n fois v
 	* :code:`sample(v, n)` : extrait un échantillon (i.i.d)
+	* :code:`subset(v, cond, var)` : fait un sous-jeu de données sur une condition
+
+		* cond, condition : val == 10 **avec** val qui corresponds à v$val (du coup on le mets pas)
+		* var : vecteur des noms/indices des variables à afficher (comme les valeurs d'un SELECT en SQL)
+
+	*
+		:code:`cut(x, breaks = v,include.lowest = TRUE)` : découpe en tranche de valeurs avec v
+		les ouverts (v=c(1,3,5) donne [min,1] U ]1,3] U ]3,5] soit 3 sous ensembles).
 
 Fonctions de stats basiques
 

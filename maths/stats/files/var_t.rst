@@ -47,3 +47,5 @@ Quantitative vers Qualitative (cas discrétisation supervisée)
 		à 0.05 près) pour qu'elles soient dans le même groupe.
 
 		La fonction est :code:`chiM(ech$quant, alpha = ...)` de la librairie :code:`discretization`.
+
+	Vous avez aussi la fonction cut vue dans le cours de R.

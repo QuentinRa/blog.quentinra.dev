@@ -29,14 +29,11 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/files/part/op.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/files/part/op.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/files/types/table.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/files/types/table.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functional/r/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/tmp.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functional/r/notes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/files/var_t.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/files/var_t.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/stats/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats/mooc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/mooc.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/stats/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats/stats.txt" beforeDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -431,7 +428,7 @@
       <workItem from="1615993296286" duration="2926000" />
       <workItem from="1616023149867" duration="164000" />
       <workItem from="1616073837070" duration="11965000" />
-      <workItem from="1616092575246" duration="2736000" />
+      <workItem from="1616092575246" duration="5141000" />
     </task>
     <servers />
   </component>

@@ -4,7 +4,7 @@
 Statistiques et R
 ===================================
 
-| :math:`\color{grey}{Version \ 0.15.48}`
+| :math:`\color{grey}{Version \ 0.15.49}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 18/03/2021}`
 
 Les prérequis sont de savoir lire du R (concepts de base et un peu avancés).
@@ -116,6 +116,8 @@ Corrélation :code:`cor`
 	ou 1 (corrélation imparfaite) alors elles sont
 	fortement corrélés.
 
+	Si vous avez des NA : :code:`cor(x,y,use="complete.obs")`.
+
 Moments
 	| Moment d'ordre 1 : E(X) donc la moyenne (:code:`mean`)
 	| Moment d'ordre 2 : V(X) donc la variance (:code:`var`)
@@ -128,6 +130,11 @@ Moments
 	si Kurtosis vaut 3 alors on a une loi gaussienne.
 
 	.. [#3] fonctions de la librairie :code:`e1071` (ou :code:`moments`).
+
+Mesures de position/dispersion
+	La médiane et la moyenne nous aident à savoir la position des valeurs (mesures de position),
+	et l'écart-type est appelé mesure de dispersion. Lorsque la distribution est symétrique et
+	suit une loi normale, alors médiane=moyenne (important à retenir pour les tests).
 
 Autre
 	* Statistique univariée (le left.sided ou right.sided?) : une variable
