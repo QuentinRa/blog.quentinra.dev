@@ -4,7 +4,7 @@
 Docker
 ================================
 
-| :math:`\color{grey}{Version \ 2.0.1}`
+| :math:`\color{grey}{Version \ 2.0.3}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 23/10/2020}`
 
 1. Présentation de Docker
@@ -38,6 +38,16 @@ Voici quelques notes
 	* lien pour installer docker sous linux (debian) : https://docs.docker.com/engine/install/debian/
 	* :code:`docker -v` : tester docker installé
 	* trouver des images docker : https://hub.docker.com/
+
+Sous windows,
+
+	* installer docker desktop https://hub.docker.com/editions/community/docker-ce-desktop-windows
+	* il faudra le lancer à chaque fois pour activer docker
+	* une fois lancé, exécutez vos commandes docker
+
+		* :code:`docker pull nom_image` : télécharger une image
+		* :code:`docker build -t nom_image .` : compiler l'image (doit avoir un Dockerfile dans le dossier .)
+		* :code:`docker run -it nom_image` : lancer l'image
 
 2. Dockerfile
 ================================
@@ -183,3 +193,6 @@ Voici un exemple tiré de hub.ducker.com
 **Références**
 	* https://docs.docker.com/
 	* https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/
+	* https://github.com/docker-library/hello-world/blob/master/Dockerfile.build
+	* https://ownyourbits.com/2017/06/20/c-build-environment-in-a-docker-container/
+	* https://amytabb.com/ts/2018_07_28/

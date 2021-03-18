@@ -51,6 +51,10 @@ https://sphinx-tutorial.readthedocs.io/step-1/
 https://www.sphinx-doc.org/en/master/usage/extensions/graphviz.html
 https://graphs.grevian.org/example
 
+https://en.wikipedia.org/wiki/Fast_inverse_square_root
+https://www.youtube.com/watch?v=p8u_k2LIZyo
+https://www.construct.net/en
+
 https://mtxserv.com/fr/article/12098/creation_d_un_bot_discord_application_permissions
 
 http://atomurl.net/math/

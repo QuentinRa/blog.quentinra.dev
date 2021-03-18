@@ -52,3 +52,4 @@ Il reste
 	* R : revoir les fonctions graphiques et utilitaires
 	* Optimisation : faire le cours
 	* bash/linux : cours de l'ensiie
+	* java : JNI/Interfaces fonctionnelles, classes utiles (swing, awt, ...)

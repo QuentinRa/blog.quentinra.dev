@@ -29,7 +29,12 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imperative/libs/ncurses/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/libs/ncurses/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_summary/status.rst" beforeDir="false" afterPath="$PROJECT_DIR$/_summary/status.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games.txt" beforeDir="false" afterPath="$PROJECT_DIR$/games.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/java/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/java/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/japanese/recap.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lang/japanese/recap.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/docker/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/docker/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/php/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/web/php/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
@@ -418,7 +423,13 @@
       <workItem from="1615723605421" duration="23909000" />
       <workItem from="1615801600128" duration="31168000" />
       <workItem from="1615885084457" duration="2000" />
-      <workItem from="1615892869063" duration="320000" />
+      <workItem from="1615892869063" duration="651000" />
+      <workItem from="1615985083067" duration="12000" />
+      <workItem from="1615985246028" duration="39000" />
+      <workItem from="1615985477331" duration="49000" />
+      <workItem from="1615993296286" duration="2926000" />
+      <workItem from="1616023149867" duration="164000" />
+      <workItem from="1616073837070" duration="361000" />
     </task>
     <servers />
   </component>

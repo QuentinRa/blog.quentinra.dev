@@ -277,7 +277,7 @@ des variables vu qu'elles sont ajoutées au scope via héritage.
 	function() { echo $a; } // échoue car $a n'est pas déclarée
 	function() use ($a) { echo $a; } // maintenant ça marche
 
-Vous pouvez passer autant d'arguments à use que vous le voulez,
+Vous pouvez passer autant d'arguments à use que vous le voulez.
 
 6. Classes et objets
 ======================

@@ -1,0 +1,7 @@
+https://www.fimarkets.com/pages/options.php
+http://financedemarche.fr/definition/prix-dexercice-dune-option
+https://financedemarche.fr/finance/comment-calculer-le-prix-dune-option-a-partir-dun-arbre-binomial-simple-exemple-numerique
+https://askfrance.me/q/quelle-est-la-probabilite-de-risque-neutre-61790284845
+https://www.ceremade.dauphine.fr/~idris/Intro-fin-math.pdf
+http://www.excel-modeling.com/examples/example_007.htm
+https://www.macroption.com/binomial-option-pricing-calculator-cox-ross-rubinstein-model/

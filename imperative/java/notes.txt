@@ -1,3 +1,8 @@
+http://www.swig.org/Doc1.3/Java.html#java_basic_tour
+https://stackoverflow.com/questions/15565947/java-wrapper-for-c-code
+https://nachtimwald.com/2017/06/06/wrapping-a-c-library-in-java/
+https://stackoverflow.com/questions/5963266/call-c-function-from-java
+
 ------------------
 
 surcharge ?

@@ -86,3 +86,33 @@ Autres
 
 izakaya = resto japonais
 kouhen = park
+
+
+------------------
+
+desāto
+mayonēzu
+kechappu
+supūn
+gurasu
+chīzu
+
+toire
+barukonī
+ki!chin
+ribingu
+beranda
+
+baga
+karē
+pan
+hanbaga
+yōguruto
+furaidopoteto
+
+kōhi
+ringojūsu
+miruku
+kora
+oranjujūsu
+bīru
