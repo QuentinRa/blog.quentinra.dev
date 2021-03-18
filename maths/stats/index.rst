@@ -4,8 +4,8 @@
 Statistiques et R
 ===================================
 
-| :math:`\color{grey}{Version \ 0.15.44}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 09/02/2021}`
+| :math:`\color{grey}{Version \ 0.15.48}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 18/03/2021}`
 
 Les prérequis sont de savoir lire du R (concepts de base et un peu avancés).
 Ceci n'est pas un cours de maths donc ce ne sont pas des vraies statistiques
@@ -186,6 +186,7 @@ Gérer les valeurs NA
 
 Fonctions utiles
 		* :code:`summary()` : le nombre de NA, les moyennes, ...
+		* :code:`describe()` : comme summary mais un peu plus beau, :code:`library('prettyR')`
 		* :code:`View()` : afficher (graphiquement)
 		* :code:`head()`/:code:`tail()` : le début/fin donc les premières/dernières valeurs
 		* :code:`dim()` ou :code:`length()` : savoir combien de lignes=individus/colonnes=variables on manipule
@@ -226,6 +227,14 @@ Intervalles de confiance
 	similaire et on obtient un résultat distribué autour de la moyenne
 	donc le résultat le plus probable. En pratique, une seule mesure est faite
 	et il faut déterminer l'erreur faite en choisissant cette valeur comme moyenne.
+
+	.. code:: r
+
+		library('binom')
+		# affiche un interval de confiance de la loi binomiale
+		# on utilise method="all" pour voir toutes les méthodes
+		# vous pouvez ne regarder que la méthode "exact" par exemple
+		binom.confint(nb_success, nb_trials, method="all")
 
 Enfin, on va pas cherche une loi exacte mais une loi qui rende les observations le plus vraisemblable possible,
 donc qui maximise la loi : L (vraisemblance). La/Les valeurs de theta qui maximisent L(theta)
@@ -313,6 +322,7 @@ est rejeté sinon il a de fortes chances d'être correct (attention, alpha ne va
 	* "Initiation à R" de Eric Preud’homme (Université du Havre)
 	* "OperaMagistris, éléments de mathématiques appliqués" de Vincent ISOZ
 	* "R programming" de Vincent ISOZ, Daname KOLANI
+	* Enseignants de Paris-Saclay (Mooc https://www.fun-mooc.fr/courses/course-v1:ParisSaclay+71007+session15/about)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**

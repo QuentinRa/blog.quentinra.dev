@@ -12,6 +12,10 @@ Les opérations sont
 	* division entière : :code:`%/%`
 	* autre : :code:`sqrt, abs, log, xor, sum, ...`
 
+Si vous trouvez les opérateurs R un peu trop compliqués, vous avez le package
+:code:`magrittr` qui vous propose des alias (voir page 3 https://cran.r-project.org/web/packages/magrittr/magrittr.pdf)
+pour tous les opérateurs tordus de R (modulo, in, division entière, produit de matrices, ...).
+
 Les comparateurs sont
 
 	* les basiques : :code:`>, >=, <=, <, ==, !=`

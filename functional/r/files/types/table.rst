@@ -20,3 +20,6 @@ On peut aussi afficher le résultat avec un graphique
 avec :code:`barplot(table(vect))`. Si on mets
 une taille de 2000000 par exemple au lieu de 50, on pourra
 voir que la probabilité est bien équiprobable.
+
+Un autr truc sympa avec les tables c'est :code:`useNa = "always"`
+pour voir les valeurs NA

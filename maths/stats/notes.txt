@@ -31,9 +31,6 @@ et essayer de vérifier.
 10. aza
 ===========================
 
-library('prettyR')
-describe(ech)
-
 subset(data, qual=="valeur", c(qual)) (3e : les var à sélectionner)
 qual ou ids
 
@@ -45,9 +42,8 @@ découpe en intervals avec
 trouver interval de confiance
 ********************************
 
-library('binom')
-binom.confint(succès, taille, method="all")
-=== recommande méthode exact
-
 cor(x,y,use="complete.obs")
 
+Mesure de position/dispersion
+= p : moyenne/médiane (ou se situe la valeur)
+= dispersion : quartiles/écart-types

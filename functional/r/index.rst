@@ -125,6 +125,9 @@ matrices, tables, ...).
 	* :code:`identical(v1,v2)` : savoir si deux vecteurs sont indentiques
 	* :code:`valeur %in% v` : savoir si valeur est dans v
 
+Enfin, n'oubliez pas les fonctions :code:`length(x)`, :code:`nrows(x)`
+ou :code:`dim(x)` pour obtenir la taille de x (fonction dépends du type).
+
 5. Fonctions
 ========================
 
@@ -167,7 +170,46 @@ ne trouve pas une variable, il va voir dans le bloc d'au dessus.
 6. Fonctions utilitaires
 ===========================
 
-...
+Lire un fichier
+
+	* :code:`read.csv('path')` : lire un csv, séparé par des virgules (,)
+	* :code:`read.csv2('path')` : lire un csv, séparé par des points-virgules (;)
+	* :code:`source(path)` : exécute un fichier R (path/url)
+	* :code:`cat(path, sep = S)` : affiche fichier R (S = \\n, ...)
+	* :code:`readLines(path)` : lis un fichier R
+
+Attention, vous aurez probablement l'option :code:`stringsAsFactors=TRUE` à utiliser
+(pour forcer les chaines de caractères à être considérées comme des Factors).
+
+Fonctions de déplacement
+
+	* :code:`getwd()` : retourne le répertoire courant
+	* :code:`sedwd(path)` : change le répertoire courant
+	* :code:`dir()` ou :code:`list.files()` : liste les fichiers du répertoire
+
+Fonctions de manipulation
+
+	* :code:`file.path(partie, partie, ...)` : crée un path [#2]_
+	* :code:`dir.create(path)` : créer un dossier
+	* :code:`file.create(path)` : créer un fichier
+	* :code:`file.exists(path)` : TRUE si existe sinon FALSE
+	* :code:`file.info(path)` : infos sur un fichier
+	* :code:`file.copy(path,new_path)` : copie un fichier
+	* :code:`file.rename(path,new_path)` : renomme un fichier
+
+.. [#2] :code:`file.path("dossier1", "dossier2", "fichier")`. Le path marche sous tout
+	système d'exploitation (donc mettra des / sous Linux et des \\ sous Windows).
+
+Manipulation de chaine de caractères
+
+	* :code:`paste(s1, ..., collapse = C)` : fusionne les résultats en les séparant par C
+	* :code:`paste(s1, ..., sep = S)` : s1, ... sont fusionnés avec le séparateur S entre
+
+Vous pouvez générer des fichiers contenant un graphique les fonctions (:code:`pdf(path)`,
+:code:`jpeg(path),`, :code:`png(path)`, ...). Elle créent un périphérique graphique
+qui sera utilisé plutôt que celui par défaut pour dessiner le graphique. Pour fermer
+le périphérique, utilisez :code:`dev.off()`. Vous pouvez aussi faire
+une sauvegarde du device avec :code:`dev.copy(device=format,"nom")`.
 
 7. Maths en R
 ========================
@@ -195,7 +237,79 @@ Fonctions de stats basiques
 8. Fonctions graphiques
 =============================
 
-...
+Elles ont toutes les mêmes arguments ou presque, je vous ait tout mis, mais
+vérifiez quelles fonctions ont quels arguments
+
+	* :code:`main = "titre"` : titre
+	* :code:`xlab = "titre x"` : titre de l'axe x
+	* :code:`ylab = "titre y"` : titre de l'axe y
+	* :code:`xlim = valeur` : limite supérieure x
+	* :code:`ylim = valeur` : limite supérieure y
+	* :code:`col = 'couleur'` : couleur de qqch (ex: 'red' ou red(1.0) du package crayon)
+	* :code:`border = couleur` : couleur de bordure (histogramme, ...)
+	* :code:`breaks = seq(...)` : augmenter le séquencement (histogramme, plus de blocs)
+	* :code:`nclass = v` : découper les valeurs en v classes
+	* :code:`type = "l"` : l=ligne, b=ligne avec points (plot)
+	* :code:`prob = TRUE` : histogrammes généralement (faire avec des densité plutôt que des effectifs)
+
+Plot
+	**Fonction** : :code:`plot(x)`
+
+	Affiche un diagramme de points. On utilisera :code:`jitter(x)` (au lieu de x) si on a plusieurs points
+	au même endroit (déplace un petit peu les points pour qu'on le voit visuellement).
+
+Histogramme
+	**Fonction** : :code:`hist(x)`
+
+	Généralement pour voir la distribution d'une v.a. continue. Les arguments prob, breaks, nclass
+	vous seront probablement utiles.
+
+Diagramme en batons/barres
+	**Fonction** : :code:`barplot(table(qual))`
+
+	Généralement utilisé pour une variable qualitative/quantitative discrète, il nous permet
+	de savoir combien d'individus ont pris une valeur.
+
+Camembert
+	**Fonction** : :code:`pie(table(qual))`
+
+	Comme le diagramme en batons mais c'est une représentation sous la forme d'une tarte.
+
+Boite à moustache
+	**Fonction** : :code:`boxplot()`
+
+	Pour voir les quartiles, on a 50% dans la boite. Attentions aux valeurs extrêmes (outliers).
+	Généralement utilisé en filtrant des valeurs selon un caractère qualitatif
+
+Diagramme temporel/de températures
+	**Fonction** : :code:`plotmeans(quant~qual)` (library('gplots'))
+
+	Lorsque l'on veut voir l'évolution d'une variable quantitative selon une variable quantitative
+	(qui est souvent temporelle). La valeur utilisée à l'instant t est celle de la moyenne des valeurs
+	à cette instant t.
+
+Diagramme en fagot
+	**Fonction** : :code:`interaction.plot(qual, quant, quant, lty=1, legend=FALSE)`
+
+	Pareil que le diagramme temporel mais on fait un truc énorme cette fois qui utilise pas la moyenne
+	mais représente toutes les valeurs.
+
+Tableau de contingence
+	**Fonction** : :code:`balloonplot`
+
+Les fonctions de dessin (appliquées sur le dernier graphique dessiné, utiles si vous voulez ajouter
+des droites ou autre dessus)
+
+	* :code:`points` : dessine des points
+	* :code:`line` : dessine des points
+	* :code:`legend` : ajouter une légende
+	* :code:`title` : ajouter un titre
+	* :code:`mtext` : ajouter un texte
+	* :code:`abline` : trace une droite y=bx+a (paramètres h=x ou v=y si besoin)
+	* Autres : rect, segments, polygon, box, grid, ...
+
+La fonction par permet de définir l'environnement (fond, ...) et est utilisée
+avant les dessins pour les prochains dessins (ex: :code:` par(bg="...")`).
 
 9. RMarkdown
 ===========================
