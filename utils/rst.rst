@@ -214,6 +214,7 @@ Il existe aussi warning, danger, important, hint.
 	* https://sublime-and-sphinx-guide.readthedocs.io/en/latest/code_blocks.html
 	* https://pandoc.org/
 	* https://rst2pdf.org/
+	* https://sublime-and-sphinx-guide.readthedocs.io/en/latest/index.html
 	* Sphinx
 		* https://matplotlibguide.readthedocs.io/en/latest/Matplotlib/basic.html
 		* https://plantuml.com/
