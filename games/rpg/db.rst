@@ -122,6 +122,28 @@ On appelle généralement la race engendré demi-<race dominante> (demi-humains,
 			Jobs       <db/jobs>
 			Races      <db/races>
 
+5. Gimme examples please
+===========================
+
+Cette partie ultra longue, contient plein d'exemple sur les façon de trouver
+des titres, noms d'items ou de monstres et enfin des sorts.
+
+C'est tout en français (pour l'instant) mais bon vous serez traduire.
+
+.. toctree::
+	 :maxdepth: 1
+
+			Titles           <db/ex/titles>
+			Monster naming   <db/ex/monsters>
+			Spells naming    <db/ex/spells>
+			Items naming     <db/ex/items>
+
+Les 7 péchés capitaux (7 deadly sins) sont souvent utilisés comme
+
+	* le pouvoir d'une personne (skill gluttony qui dévore les ennemis vaincus, ...)
+	* le pouvoir d'une arme (pareil que plus haut, mais une arme qui possède le skill)
+	* un PNJ (créer 7 démons ayant les noms des deadly sins et leur donner le skill du péché par exemple)
+
 -----
 
 **Crédits**
