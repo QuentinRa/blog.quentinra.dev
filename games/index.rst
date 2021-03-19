@@ -71,6 +71,54 @@ Ceci n'est pas de la pub mais je recommande ces templates (itch.io)
 	* https://retrocademedia.itch.io/gddtemplate
 	* https://toddmitchell.itch.io/game-design-document
 
+Phase 2 : développement
+=========================
+
+Durant cette phase, le jeu va être codé. Il est important de
+
+	* Bien définir qui fait quoi, avoir un bon planning.
+	* Ne pas passer trop de temps sur des détails mineurs.
+	* Toujours avoir une version jouable (on le dira jamais assez)
+
+Voici un petit mot sur la structure d'un jeu.
+
+On peut représenter la structure d'un jeu vidéo par des couches d'étapes à faire. Les étapes inférieures,
+sont celles au plus proches du système (shaders, ...), et si on remonte dans l'architecture,
+on trouve des étapes comme gérer les quêtes...
+
+.. image:: /assets/games/architecture.png
+  :alt: https://gamedevelopment.tutsplus.com/
+
+*(source: https://gamedevelopment.tutsplus.com/)*
+
+La structure (=life cycle) d'un RPG est la même que de nombreux jeux :
+
+	*	:code:`initialisation` : crée les objects, fait les init, charge les fichiers
+	*	:code:`gameloop` : boucle de jeu, boucle qui dure pendant toute la durée du jeu comprenant
+
+			*	:code:`input` (saisie) clic souris/touche/écran, déplacement souris/joystick
+			*	:code:`update` (mise à jour) AI, positions, animations....
+			*	:code:`render` (affichage) entités, particules, sons, musiques, interface
+
+	*	:code:`dispose` : libère les ressources, sauvegarde, ...
+
+Remarque : on doit bien vérifier combien de fois par seconde la gameloop tourne (fps)!
+(pour qu'elle ne prenne pas toutes les ressources de la machine mais également que le jeu tourne à
+la même vitesse sur tous les pc.)
+
+Phase 3 : mise en production
+=============================
+
+On fait durant cette phase, les finitions et on prépare le jeu pour sa publication.
+
+On peut par exemple
+
+	* Gérer les différentes résolutions
+	* Permettre l'utilisation de manettes
+	* Ajout sur une plate-forme (steam)
+	* Crédits
+	* Betas, fixation des bugs
+
 -----
 
 **Crédits**

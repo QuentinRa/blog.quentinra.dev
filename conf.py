@@ -74,6 +74,7 @@ release = 'build-3.46.667'
 # version 3.44 : conception/me/doxygen
 # version 3.45 : imperative/libs/ncurses
 # version 3.46 : imperative/libs/libgdx
+# version 3.47 : games/c_game
 
 # -- General configuration ---------------------------------------------------
 
