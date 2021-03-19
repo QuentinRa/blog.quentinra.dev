@@ -111,15 +111,16 @@ Les classes, les professions ou encore les jobs peuvent
 Ici, on considère qu'un classe est orienté combat alors qu'une profession représente plus
 le métier exercé (=vie de tous les jours).
 
-==================== =============================================================================
-Nom                  Explication
-==================== =============================================================================
-Bandit               Classe spécialisé dans l'élimination brutale des ennemis. Peut utiliser un
-> Barbare > Pirate   arc, une masse, une hache, une dague, une épée. Peut évoluer en Barbare ou
-                     Pirate.
-==================== =============================================================================
+Un RPG introduit de nombreuses races "fantasy". Je vous en liste ici quelques unes connus.
+Il peut exister des croisement entre deux espèces.
+On appelle généralement la race engendré demi-<race dominante> (demi-humains, demi-dwarf, ...).
 
-aaa...
+.. toctree::
+	 :maxdepth: 1
+
+			Classes    <db/class>
+			Jobs       <db/jobs>
+			Races      <db/races>
 
 -----
 

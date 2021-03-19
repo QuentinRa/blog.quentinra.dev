@@ -28,11 +28,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/games/rpg/db/stats/humans.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/games/rpg/db/stats/items.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/games/rpg/db/stats/monsters.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/games/rpg/db/stats/skills.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/games/rpg/db.rst" beforeDir="false" afterPath="$PROJECT_DIR$/games/rpg/db.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
@@ -41,6 +36,9 @@
     <list id="7f5b76b1-3178-4d5c-b724-e605d23d7917" name="cypher reprise" comment="" />
     <list id="ad5bce8d-0b21-4e2e-acc4-b41fcc8b0f63" name="merge des tests (3)" comment="" />
     <list id="91f544b9-32a5-44b3-88b5-61cf542db8de" name="merge du cours terminé" comment="" />
+    <list id="938f1b41-972a-4b73-b3b8-bb08ca2a9dd8" name="rpg_database: stats (all), attributes and classes start" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,6 +115,7 @@
       <changelist id="91f544b9-32a5-44b3-88b5-61cf542db8de" name="merge du cours terminé" comment="" />
       <changelist id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
       <changelist id="ad5bce8d-0b21-4e2e-acc4-b41fcc8b0f63" name="merge des tests (3)" comment="" />
+      <changelist id="938f1b41-972a-4b73-b3b8-bb08ca2a9dd8" name="rpg_database: stats (all), attributes and classes start" comment="" />
       <created>1603031250187</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -430,7 +429,7 @@
       <workItem from="1616073837070" duration="11965000" />
       <workItem from="1616092575246" duration="6665000" />
       <workItem from="1616148302764" duration="10057000" />
-      <workItem from="1616160585516" duration="8335000" />
+      <workItem from="1616160585516" duration="10337000" />
     </task>
     <servers />
   </component>
