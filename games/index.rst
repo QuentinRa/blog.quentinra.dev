@@ -28,8 +28,8 @@ Le SUPER CONSEILS sont
 	* faire le minimum de code pour obtenir une première version qui marche
 	* ne pas hésiter à publier son jeu même s'il y a des bugs mineurs, car il y en aura presque toujours !
 
-2. Phase 1 : planning
-============================
+Phase 1 : planning
+====================
 
 Alors certains diront "blah blah blah, on va encore passer plus de temps à planifier notre truc
 qu'à le coder", en fait c'est assez vrai, mais avec de l'expérience vous pourrez optimiser tout ça. Il
@@ -77,4 +77,4 @@ Ceci n'est pas de la pub mais je recommande ces templates (itch.io)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* aucune
+	* https://gamedevelopment.tutsplus.com/
