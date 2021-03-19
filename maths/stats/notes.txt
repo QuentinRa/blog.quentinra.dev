@@ -28,9 +28,6 @@ test peut quand même être faux ! Et même si le test est bon, cela ne garantie
 le sera sur le reste de l'échantillon donc j'appelle à la prudence ou a faire des maths
 et essayer de vérifier.
 
-9. aya
-===========
-
 Analyse en Composantes Principales (ACP)
 ----------------------------------------
 

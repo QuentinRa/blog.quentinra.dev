@@ -150,4 +150,4 @@ Les 7 péchés capitaux (7 deadly sins) sont souvent utilisés comme
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* aucune
+	* mangadex.org

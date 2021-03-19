@@ -307,16 +307,11 @@ On distingue deux types de test
 	* paramétriques : la loi doit être normale ou prérequis d'une moyenne/variance/corrélation
 	* non-paramétriques (distribution free) : les autres tests (utilisent les statistiques de rangs)
 
-J'ai séparés les tests en pleins de catégories plutôt que deux
-pour essayer de grouper ceux sur les données appariées, ceux
-qui permettent d'évaluer la vraisemblance, ceux qui permettent
-de tester des propriétés (vraisemblance aussi mais plus indirecte) etc.
+:code:`Note` : Les tests sont généralement fait avec alpha=0.05 ce qui traduit
+d'un résultat fiable à 95% (1-0.95)  mais attention à vérifier si le test est valide.
 
-:code:`Note` : les tests sont généralement fait avec alpha=0.05 donc fiable
-à 95% mais attention à vérifier si le test est valide. Pour cela en R, regardez
-la :code:`p-value` dans le résultat, si elle est en dessous de 5% alors le test (hypothèse H0)
-est rejeté sinon il a de fortes chances d'être correct (attention, alpha ne vaut pas forcément
-0.05).
+Pour cela en R, regardez la :code:`p-value` dans le résultat, si elle est en dessous de 5% (p-value < 0.05=alpha)
+alors le test est rejeté sinon il a de fortes chances d'être correct.
 
 **Les tests qui étaient ici ont étés supprimés pour le moment.**
 
