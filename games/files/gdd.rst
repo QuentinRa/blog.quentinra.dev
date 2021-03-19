@@ -18,6 +18,12 @@ Astuce n°2 : Si vous manquez d'idées, regarder dans d'autres jeux, ce qui plai
 
 Voici un plan possible et les thèmes à aborder, fetched from internet and books
 
+.. hint::
+
+	Vous aurez un exemple de Game Design Document dans le cours principal, cette page est volontairement
+	très remplie pour essayer de vous faire comprendre quels sont les enjeux auxquels vous devez penser
+	avant de faire un jeu.
+
 1. Présentation du jeu
 =========================
 

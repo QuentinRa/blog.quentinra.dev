@@ -4,8 +4,8 @@
 Initiation au dev.
 ================================
 
-| :math:`\color{grey}{Version \ 0.0.1}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 14/03/2021}`
+| :math:`\color{grey}{Version \ 0.5.13}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 19/03/2021}`
 
 Ce cours est censé vous aider à planifier un jeu vidéo, sachant que
 80% des projets finissent abandonnés, c'est généralement bon à suivre.
@@ -58,11 +58,18 @@ c'est probablement le plus important, je vais parler de **Smart programming**.
 pour vous donner la forme de votre projet !
 
 .. toctree::
-	 :name: exercices
 	 :maxdepth: 1
 
 			Game design document <files/gdd>
 			Smart programming    <files/sp>
+			Ressources           <files/res>
+
+Ceci n'est pas de la pub mais je recommande ces templates (itch.io)
+
+	* https://vitalzigns.itch.io/1-page-gdd (:code:`😍`)
+	* https://vitalzigns.itch.io/gdd (:code:`😍`)
+	* https://retrocademedia.itch.io/gddtemplate
+	* https://toddmitchell.itch.io/game-design-document
 
 -----
 

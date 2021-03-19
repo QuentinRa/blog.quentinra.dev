@@ -5,7 +5,7 @@ RPG Database
 ================================
 
 | :math:`\color{grey}{Version \ 0.0.1}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 14/03/2021}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 19/03/2021}`
 
 ...
 

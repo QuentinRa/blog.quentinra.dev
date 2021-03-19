@@ -29,7 +29,13 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/template.rst" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/files/gdd.rst" beforeDir="false" afterPath="$PROJECT_DIR$/games/files/gdd.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/files/sp.rst" beforeDir="false" afterPath="$PROJECT_DIR$/games/files/sp.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/games/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/games/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/rpg/db.rst" beforeDir="false" afterPath="$PROJECT_DIR$/games/rpg/db.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/rpg/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/games/rpg/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/docker/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/docker/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -425,7 +431,7 @@
       <workItem from="1616023149867" duration="164000" />
       <workItem from="1616073837070" duration="11965000" />
       <workItem from="1616092575246" duration="6665000" />
-      <workItem from="1616148302764" duration="4789000" />
+      <workItem from="1616148302764" duration="8089000" />
     </task>
     <servers />
   </component>
