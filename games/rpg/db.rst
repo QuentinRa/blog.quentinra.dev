@@ -4,7 +4,7 @@
 RPG Database
 ================================
 
-| :math:`\color{grey}{Version \ 0.0.1}`
+| :math:`\color{grey}{Version \ 2.17.93}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 19/03/2021}`
 
 Cette page est la reconstruction de la partie Données de mon ancien site RpgDatabase.
@@ -54,54 +54,72 @@ L'ensemble des données d'une entité est généralement représenté sous la fo
 Les stats déterminent le % de chance de bloquer une attaque,
 d'esquiver, de toucher, la quantité de dommages etc...
 
-Humains
----------
+.. toctree::
+	 :maxdepth: 1
 
-============================ ==============================================================================
-Stat                         Explication
-============================ ==============================================================================
-Nom Prénom Age Genre         Le nom et le prénom, l'age et le genre (sexe) de l'entité
-Classe Job/ Profession       Le metier de l'entité Voir Classes et Professions.
+			Les stats des humains                  <db/stats/humans>
+			Les stats des items                    <db/stats/items>
+			Les stats des monstres                 <db/stats/monsters>
+			Les stats des Sorts et des compétences <db/stats/skills>
 
-Niveau (level) & Points      Le niveau du joueur. Point de compétences à distribuer
+3. Attributs
+=======================
 
-                             (monter classe, stats, job, skills, ...)
+Les attributs sont le nom que je donne au stats qui servent à représenter les compétences des entités
+(par exemple la vitesse).
 
-Titre                        Le titre principal. Voir Titres.
+Voici la liste pour les Humains, les monstres, les items et les sorts/compétences. A vous de juger
+lesquels sont intéressantes pour chaque entité.
 
-Race                         Généralement, les mondes fantaisistes implémentent de nombreuses
+==================== =============================================================================
+Attribut             Explication
+==================== =============================================================================
+Force/Attaque        Détermine les dégâts infligés au corps-à-corps.
+HP/Vitalité          Points qui représentent la vie d'une entité (hp 0=mort).
+MP/Mana/Magie        Points qui représentent la quantité de magie à disposition.
+Stamina/Endurance    Énergie de l'entité. (durée sprints/combat/sans dormir/...)
+Vitesse              Détermine qui attaque en premier.
+Agilité/esquive	     Possibilité d'éviter les attaques.
+Intelligence/Sagesse Capacité à manipuler la magie/les magies. Détermine les dégâts magiques.
+Chance               Influence la chance de tomber sur des trésors, ennemies rares, connaissances,
 
-                             "races" (voir races)
+                     coups critiques,...
 
-État                         Il s'agît de la condition de l'entité par exemple un taux de "fatigue",
+Dextérité/Précision  Augmente les chances de toucher sa "cible".
 
-                             "maladie", "faim", "maudit", "froid"...
+Growth/Croissance    Possiblement une stat caché, qui permet à certaines entités de monter de
 
-Argent                       La quantité d'agent de l'entité
+                     niveau/stats/... plus rapidement/lentement.
 
-Faction/Guilde               Le joueur peut potentiellement rejoindre une guilde (guilde d'aventurier,
+Resistances/Défenses Résistance: prends moins de dégâts. Défense: encaisse une partie (+- grande)
 
-                             mercenaires, marchands, guilde en ligne...) ou rejoindre une faction dans
+                     des dégâts sans perdre de vie. Les res/def sont : peur, paralysie, magique,
 
-                             le jeu. On peut également afficher son rang dans la guilde (SSS->G).
+                     physique, poison, douleur, mentale, pétrification, évanouissement, sommeil,
 
-Renommée/charisme            Votre notoriété. Elle peut augmenter si vous êtes le premier à tuer un boss,
+                     drogue, maladie, confusion, acide... On peut voir abrégé magic/physique
 
-                             découvrir ou conquérir un donjon/lieu, accomplissez des missions...
+                     def/res par m/p res/def.
+==================== =============================================================================
 
-                             Elle peut permettre des réductions de prix, actions ou des conversations
+4. Classes, Jobs et races
+==========================
 
-                             spéciales (choix de dialogues)...
+Les classes, les professions ou encore les jobs peuvent
+être considérés comme un seul et même stat.
 
-Attributs                    Liste des Attributs (HP, MP, ...)
-Compétences                  Liste des Compétences/Skills
-Titres                       Liste des titres. Voir Titres.
-============================ ==============================================================================
+Ici, on considère qu'un classe est orienté combat alors qu'une profession représente plus
+le métier exercé (=vie de tous les jours).
 
-Certains personnages peuvent avoir une croissance accélérée car ils sont nécessaires au déroulement du
-scénario. Ils sont appelés les "named npc". Il est possible de les mettre en avant, par exemple
-en mettant leur nom d'une autre couleur (or ?) ou tout simplement en leur donnant un nom (si vous n'en
-donniez pas autres autres genre vous mettiez forgeron par exemple).
+==================== =============================================================================
+Nom                  Explication
+==================== =============================================================================
+Bandit               Classe spécialisé dans l'élimination brutale des ennemis. Peut utiliser un
+> Barbare > Pirate   arc, une masse, une hache, une dague, une épée. Peut évoluer en Barbare ou
+                     Pirate.
+==================== =============================================================================
+
+aaa...
 
 -----
 
