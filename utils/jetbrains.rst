@@ -175,3 +175,4 @@ en suivant ce tutoriel https://www.jetbrains.com/help/clion/how-to-use-wsl-devel
 	* https://www.jetbrains.com/help/clion/remote-projects-support.html#ipv6
 	* https://www.jetbrains.com/help/clion/editing-individual-files-on-remote-hosts.html
 	* https://www.jetbrains.com/help/clion/remote-projects-support.html
+	* https://www.jetbrains.com/help/clion/gradle-support.html#gradle-config

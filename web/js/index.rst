@@ -251,3 +251,4 @@ Une autre manière de déclarer une prototype est en créant un objet
 	* http://www.iut-fbleau.fr/sitebp/web/wim41/js/js.pdf
 	* https://dwarves.iut-fbleau.fr/git/monnerat/wim4_2021/src/master/cours/jscomp.pdf
 	* http://pgsql.pedago.ensiie.fr/~vitera.y/cours/ipw/poly/03-applications-interactives.pdf
+	* https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript

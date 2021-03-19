@@ -386,3 +386,5 @@ de fichier, avec des métadonnées.
 	* https://www.reddit.com/r/datasets/comments/exnzrd/coronavirus_datasets/
 	* https://rviews.rstudio.com/2020/03/05/covid-19-epidemiology-with-r/
 	* https://www.dunod.com/sites/default/files/atoms/files/9782100712861/Feuilletage.pdf
+	* https://swirlstats.com/students.html
+	* https://github.com/swirldev/swirl_courses#swirl-courses

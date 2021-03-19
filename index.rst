@@ -70,7 +70,6 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     Langage C                            <imperative/c/index>
     Langage Python                       <imperative/python/index>
     Langage Java                         <imperative/java/index>
-    Librairies C, JAVA, ...              <imperative/libs/index>
 
 .. toctree::
     :caption: Programmation fonctionnelle
@@ -155,6 +154,16 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
 
 		Anglais                              <lang/english/index>
 		Japonais                             <lang/japanese/index>
+
+.. toctree::
+    :caption: Jeux vidéos et graphiques
+    :name: vg
+    :maxdepth: 1
+
+    Initiation au dev.               <games/index>
+    Coder un RPG                     <games/rpg/index>
+    Rpg Database                     <games/rpg/db>
+    Librairies graphiques            <imperative/libs/index>
 
 .. toctree::
     :caption: Utilitaires
