@@ -302,29 +302,49 @@ Il s'agit d'une notion, avec les estimations de Monte-Carlo que je pensais, naï
 éviter (car c'est compliqué) mais il s'agit d'une partie vraiment cruciale en statistiques
 donc je vais essayer d'expliquer ça ici.
 
-On appelle estimateur une fonction :math:`h_n(X_1,...,X_n) = \hat{\theta}` (ou :math:`T(...)`)
-qui permet d'approcher le paramètre :math:`\theta` d'une loi. Donc si j'ai bien compris,
-c'est la valeur obtenue après avoir essayé de déduire les paramètres d'une loi.
+Un estimateur sert à estimer les paramètres et caractéristiques d'une loi comme
+la moyenne ou la variance d'un échantillon. Les critères qui font un bon estimateur sont
+
+	* biais
+	* convergence
+	* efficacité
+	* robustesse
+
+Un estimateur est une fonction :math:`h_n(X_1,...,X_n) = \hat{\theta}_n` (ou :math:`T(...)` ou :math:`f(...)`)
+qui prends des v.a. i.i.d (important) et qui retourne pour chaque valeur de la loi un estimateur
+qui est une v.a. notée :math:`h_n(x_1,...,x_n) = \hat{\theta}_n`.
+
+On va chercher à réduire l'erreur que nous faisons en prenant :math:`\hat{\theta}`
+comme étant la vrai paramètre de la loi.
 
 Il y a des types de biais sur les estimateurs
 
 	* biais : :math:`B(\hat{\theta}) = E[\hat{\theta}] - \theta`
 	* sans biais : :math:`B(\hat{\theta}) = 0`
 	* asymptotiquement sans biais : :math:`\lim_{n \rightarrow +\infty} E[\hat{\theta}] = \theta`
-
-En gros, un biais c'est le fait qu'on n'a pas une valeur (ex: une moyenne) ou alors on a fait
-un sondage mais on a "choisit" à qui demander donc les valeurs sont dites biaisées.
+	* écart/erreur quadratique moyen.ne : :math:`MSE(\hat{\theta}) = E[(\hat{\theta}-\theta)^2] = Var(\hat{\theta})+B(\hat{\theta})^2`
 
 | Estimateur (sans biais) de la moyenne : :math:`\hat{\mu} = \frac{1}{n} \sum_{i=1}^{n} X_i`.
 | Estimateur (asymptotiquement sans biais) de la variance : :math:`S^2_{n} = \frac{1}{n} \sum_{i=1}^{n} (X_i-\hat{\mu})^2`.
-| Estimateur (sans biais) de la variance : :math:`S^2_{n,c} = \frac{1}{n-1} \sum_{i=1}^{n} (X_i-\hat{\mu})^2`.
+| Estimateur (sans biais) de la variance : :math:`S^2_{n} = \frac{1}{n-1} \sum_{i=1}^{n} (X_i-\hat{\mu})^2`.
 
 Lorsque l'estimateur converge vers la vraie valeur, on parle d'estimateur convergent.
 
-Une estimation du maximum de vraisemblance consiste à trouver une fonction :math:`L(\hat{\theta})`
-qui maximise :math:`\theta` donc si j'ai bien compris, cela consiste à trouver la valeur
-maximale du paramètre. En particulier, on cherche à trouver une valeur qui maximise la probabilité
-qu'avec ce paramètre on obtienne nos observations.
+Un estimateur est efficace si sa variance est faible.
+
+Un estimateur qui n'est pas trop sensibles aux outliers (valeurs extrêmes et délirantes)
+est considéré comme robuste.
+
+Une estimation du maximum de vraisemblance consiste à trouver une fonction
+:math:`L` qui maximise donc qui trouve un :math:`\hat{\theta}` qui soit
+le plus probable de correspondre à :math:`\theta`.
+
+.. math::
+
+		f(x;\theta) \begin{cases}
+		f_{\theta}(x) & \text{si X v.a. continue, f la fonction de densité} \\
+		P_{\theta}(X=x) & \text{si X v.a. discrète, f la probabilité discrète}
+		\end{cases}
 
 8. Statistiques inférentielle
 ===============================
@@ -388,3 +408,5 @@ On distingue deux types de test
 	* https://www3.nd.edu/~steve/Rcourse/Lecture7v1.pdf
 	* http://www.sthda.com/english/wiki/unpaired-two-samples-wilcoxon-test-in-r
 	* http://www.sthda.com/english/wiki/unpaired-two-samples-t-test-in-r
+	* https://fr.wikipedia.org/wiki/Maximum_de_vraisemblance
+	* https://fr.wikipedia.org/wiki/Estimateur_(statistique)
