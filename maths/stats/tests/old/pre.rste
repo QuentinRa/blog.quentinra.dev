@@ -1,45 +1,3 @@
-===========================
-Tests préliminaires
-===========================
-
-Test de normalité
----------------------
-
-| **Objectif** : tester si une distribution suit une loi normale/gaussienne.
-| **Utilité** : Vérifier la normalité modèle avant d'appliquer d'autres tests
-
-| de **Anderson-Darling** (package nortest)  : :code:`ad.test(ech)`
-| de **Anderson-Darling** (package ADGofTest)  : :code:`ad.test(ech, pnorm)`
-| de **Cramer-von Mises** (package nortest) : :code:`cvm.test(ech)`
-
-| de **Shapiro-Wilk** : :code:`shapiro.test(ech)`
-| **Robustesse** : avoir peu de valeurs identiques, plus puissant que les autres
-
-Tests d'égalités de variances
---------------------------------
-
-| **Objectif** : savoir si les variances sont égales
-| **Utilité** : test préliminaire de l'ANOVA
-| **Prérequis** : normalité, i.i.d
-
-de Fisher (2 variances)
-	| **Fonction** : :code:`var.test(x=var1,y=var2)`
-	| **Fonction** : :code:`var.test(quant~qualif, data=ech)`
-
-	On peut tester l'égalité de variance entre x,y ou entre
-	ou sur x mais groupée selon une formule (formula = critère de groupage).
-
-de Levene et de Brown-Forsythe
-	| **Fonction** (package car) : :code:`leveneTest(quant, qual)`
-	| **Fonction** (package lawstat) : :code:`levene.test(quant, qual, location = "median")`
-
-de Bartlett
-	| **Fonction** : :code:`bartlett.test(quant, qualif)`
-	| **Condition** : plus de 4 individus par échantillon
-	| **Robustesse** : #groupes ne doit pas être plus grand/proche de #echantillon
-
-	Pareil que le test de fisher à deux variances par groupes.
-
 Tests d’égalité de moyennes
 -----------------------------
 
@@ -84,9 +42,6 @@ Test d’indépendance
 
 | **Objectif** : savoir si des variables sont indépendantes
 | **Utilité** : study.test
-
-du Khi-Deux
-de Fisher
 
 Test de valeurs aberrantes/outliers
 ------------------------------------

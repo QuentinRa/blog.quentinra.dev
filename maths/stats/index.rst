@@ -363,12 +363,19 @@ On distingue deux types de test
 Un test permet de vérifier s'il est possible que la loi suive une loi normale et
 non d'affirmer que la loi suit une loi normale.
 
+**Attention** : cette partie est très technique et cela me fait beaucoup d'informations
+à rassembler, de formules à lire et comprendre donc je ne garantit rien (encore moins que d'habitude)
+de tout ce que vous pourriez lire ci-après.
+
 .. toctree::
 	 :maxdepth: 1
 
 		Comprendre les tests                     <tests/how>
+		Test de normalité                        <tests/norm>
 		Test de comparaison des proportions      <tests/pour>
 		Test de comparaison des moyennes         <tests/moy>
+		Test de comparaison des variances        <tests/var>
+		Technique du Boostrap                    <tests/mdb>
 
 -----
 
@@ -417,3 +424,4 @@ non d'affirmer que la loi suit une loi normale.
 	* https://fr.wikipedia.org/wiki/Maximum_de_vraisemblance
 	* https://fr.wikipedia.org/wiki/Estimateur_(statistique)
 	* https://fr.linkedin.com/learning/r-les-statistiques-parametriques/produire-un-test-t-de-student-homoscedastique-ou-heteroscedastique
+	* https://reference.wolfram.com/language/ref/CramerVonMisesTest.html

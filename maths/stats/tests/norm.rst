@@ -26,3 +26,30 @@ Shapiro-Wilk
 
 :code:`Fonction`
 	On utilise la fonction :code:`shapiro.test(ech)`.
+
+Anderson-Darling
+********************
+
+:code:`Conditions`
+	???
+
+:code:`Fonction`
+	| La fonction :code:`ad.test(ech)` du package :code:`nortest`.
+	| La fonction :code:`ad.test(ech, pnorm)` du package :code:`ADGofTest`.
+
+	Dans le second cas, le test est
+
+		* H0 : ech est un échantillon de la loi pnorm
+		* H1 : ech ne semble pas être un échantillon généré par pnorm
+
+	et pnorm n'est pas une fonction mais un échantillon généré avec pnorm et les paramètres
+	que vous pensez être ceux que la loi normale originale.
+
+Cramer-von Mises
+********************
+
+:code:`Conditions`
+	???
+
+:code:`Fonction`
+	La fonction :code:`cvm.test(ech)` du package :code:`nortest`.

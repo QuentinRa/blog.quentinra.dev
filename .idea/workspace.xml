@@ -30,8 +30,15 @@
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/stats/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats/tests/pour.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/pour.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats/tests/pre.rste" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/pre.rste" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/ancova.rste" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/old/ancova.rste" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/anova.rste" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/old/anova.rste" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/app.rste" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/old/app.rste" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/liste.rste" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/old/liste.rste" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/mdb.rste" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/mdb.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/norm.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/norm.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/pre.rste" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/old/pre.rste" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/seams.rste" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/old/seams.rste" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/template.rste" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/__template.txt" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -96,11 +103,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\games\rpg" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\stats\tests" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\stats\tests\old" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\games" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\game" />
       <recent name="C:\Users\quent\Documents\texas-res\imperative\libs\lwjgl\files\init" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\libs\libgdx\render" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -432,7 +439,7 @@
       <workItem from="1616148302764" duration="10057000" />
       <workItem from="1616160585516" duration="27953000" />
       <workItem from="1616198907711" duration="1961000" />
-      <workItem from="1616230876682" duration="9188000" />
+      <workItem from="1616230876682" duration="10910000" />
     </task>
     <servers />
   </component>
