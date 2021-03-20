@@ -31,6 +31,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/stats/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/stats/mooc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/mooc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/reg/glm.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/reg/glm.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/reg/lm.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/reg/lm.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/pour.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/pour.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -431,7 +434,7 @@
       <workItem from="1616148302764" duration="10057000" />
       <workItem from="1616160585516" duration="27953000" />
       <workItem from="1616198907711" duration="1961000" />
-      <workItem from="1616230876682" duration="31560000" />
+      <workItem from="1616230876682" duration="33973000" />
     </task>
     <servers />
   </component>

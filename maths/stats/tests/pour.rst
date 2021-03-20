@@ -26,7 +26,7 @@ Test d'indépendance du Khi-deux
 	la taille si vous n'avez pas assez d'individus.
 
 :code:`Fonction`
-	La fonction est :code:`chisq.test(var, var,correct=FALSE)` ou :code:`chisq.test(table(var,var),correct=FALSE)`.
+	La fonction est :code:`chisq.test(var, var, correct=FALSE)` ou :code:`chisq.test(table(var,var),correct=FALSE)`.
 
 	Le correct corresponds à la correction de continuité (T=oui, F=non). Si activé, le test
 	est plus robuste mais moins puissant.

@@ -30,7 +30,7 @@ Variables
 	Il s'agit généralement des colonnes (j) de la matrice. Elles sont (de caractère)
 	qualitatives ou quantitatives.
 
-	Variable quantitative
+	Variable quantitative (ou catégorielles)
 		La valeur fait l'objet d'une mesure donc on associe
 		une loi qui représente les valeurs pouvant être prises.
 
@@ -71,6 +71,13 @@ Nos variables du cours
 	quantitative) et qual (une variable quantitative). J'explicite mais data
 	n'est qu'un gros échantillon donc si on mets ech on peut généralement aussi
 	tester data et inversement.
+
+Une dernière chose, à propos des formules. Généralement vous n'en n'aurez pas besoin sauf
+si vous faites de la regression, vous pouvez obtenir de l'aide avec :code:`?formula`.
+
+	* :code:`X ~ qual` : fait des sous-groupes de quant selon leur valeur de qual
+	* :code:`X ~ Y + Z` : exprimer X en fonction de chacun des couples possibles de valeurs (X,Y) ???
+	* :code:`X ~ Y * Z` : exprimer Z en groupes de (Y et Z) ???
 
 2. Fondements mathématiques
 =================================

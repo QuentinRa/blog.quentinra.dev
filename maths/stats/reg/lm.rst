@@ -110,4 +110,12 @@ pour X et Z sont faux mais :code:`X*Z` est bon.
 5. Conditions
 ===============
 
-...
+Les condition de validité du model de regression sont
+
+	* normalité du bruit/des résidus
+
+		* obtenir les résidus : :code:`resid(model)` (ou :code:`residuals(model)`)
+		* regarde la normalité : hist, ...
+
+	* variance du bruit ne doit pas dépendre des expliqués/explicatives
+	* pas de structure de corrélation évidente ? (pas compris
