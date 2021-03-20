@@ -1,33 +1,3 @@
-**Attention, je ne garantit absolument pas la véracité des propos suivants :**
-
-.. toctree::
-	 :maxdepth: 1
-
-		Tests préliminaires                  <tests/pre>
-		Tests de vraisemblance               <tests/seams>
-		Tests appariés                       <tests/app>
-		Analyse de la variance (Anova)       <tests/anova>
-		Techniques de Bootstrap              <tests/mdb>
-		ANCOVA (variables non indépendantes) <tests/ancova>
-		Liste de tests et conditions         <tests/liste>
-
-8. Incertitudes et robustesse
-===============================
-
-Il existe deux types d'incertitudes de mesure qui sont les
-
-	* erreurs systématiques : toujours les mêmes (précision, ...)
-	* erreurs accidentelles : problème statistique, ...
-
-Vous aurez plus de détails en analyse numérique.
-
-Les fonctions (de test notamment) demandent des prérequis (préconditions)
-qui ne sont pas vérifiées avant un calcul mais que vous devez respecter. Vous devez
-donc vérifier les tailles, les paramètres et même si tous vos paramètres sont bons, le
-test peut quand même être faux ! Et même si le test est bon, cela ne garantie pas qu'il
-le sera sur le reste de l'échantillon donc j'appelle à la prudence ou a faire des maths
-et essayer de vérifier.
-
 Analyse en Composantes Principales (ACP)
 ----------------------------------------
 
@@ -53,44 +23,6 @@ On utilisera le paramètre scale pour forcer la réduction. Ensuite avec :code:`
 on peut observer les écarts de déviation et identifier les composantes entre lesquelles
 il y a le plus grand écart. On s'en sert en parallèle avec
 la proportion cumulée pour choisir les composantes à garder.
-
-La régression linéaire
----------------------------
-
-single stratum analysis of variance and analysis of covariance
-
-La régression linéaire est une technique statistique utilisée pour modéliser des relations entre
-un ensemble de variables prédictives (les prédicteurs) et une ou plusieurs variables “réponse”.
-Toutes les variables impliquées sont quantitatives.
-
-	* :math:`y = \mu + \alpha x_1 + \epsilon`
-	* :math:`y` : réponse (1 seule ici)
-	* :math:`\mu` : intersection entre la droite de régression et l'axe des x
-	* :math:`x_1` : prédicteur (1 seul ici)
-	* :math:`\alpha` : pente de la droite de régression
-	* :math:`\epsilon` : l'erreur résiduelle
-
-La fonction qui fait une regression en R est :code:`lm()`
-qui prends comme valeur :code:`réponse~prédicteurs` et on donne
- à :code:`data` le jeu de données.
-
-La réponse est un vecteur de nombres et prédicteurs est une série de nombres
-associées aux réponses.
-
-Il est habituel de regarder la distribution des résidus qui doivent
- être centrés autour de zéro (donc médiane proche de zéro) ce qui confirmerait l’hypothèse de normalité
-sous-jacente au modèle.
-
-Une autre fa¸con de v´erifier la normalit´e est de tracer un Q-Q plot des r´esidus. Le vecteur
-des r´esidus peut ˆetre extrait en utilisant soit $resid, soit la fonction resid(). On voit sur la
-Figure 4.7 que la lin´earit´e n’est pas parfaite. L’hypoth`ese de normalit´e pourrait donc ˆetre, dans
-ce cas, remise en question
-> qqnorm(resid(Y.lm))
-> qqline(resid(Y.lm),col="blue")
-
-Le champ Coefficients fournit l’estimation des valeurs de la pente
-α et de l’intercept µ ainsi que les statistiques qui leur sont associ´ees. Le vecteur des coefficients
-peut ˆetre extrait en utilisant $coeff.
 
 L’analyse de variance
 ------------------------
@@ -149,12 +81,5 @@ avec variance ´egale ou non (par d´efaut). Par exemple
 
 De plus la fonction p.adjust() permet d’ajuster un ensemble de p-values pour tenir compte
 d’une comparaison multiple.
-
-https://mooc-francophone.com/cours/mooc-introduction-statistique-r/
-https://www.fun-mooc.fr/
-https://samm.univ-paris1.fr/IMG/pdf/notes_statr.pdf
-https://irma.math.unistra.fr/~ricka/stat/TD1_L3.pdf
-http://math.univ-lyon1.fr/~gannaz/Cours/cours_stat.pdf
-https://www.tutorialspoint.com/r/index.htm
 
 taux 0.5 donc moyenne 2 (exp)

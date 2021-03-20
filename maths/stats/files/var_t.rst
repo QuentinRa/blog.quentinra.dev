@@ -48,4 +48,26 @@ Quantitative vers Qualitative (cas discrétisation supervisée)
 
 		La fonction est :code:`chiM(ech$quant, alpha = ...)` de la librairie :code:`discretization`.
 
-	Vous avez aussi la fonction cut vue dans le cours de R.
+	Méthode du cut
+		Vous avez aussi la fonction :code:`cut` vue dans le cours de R.
+
+	Méthode des groupes
+		Dans le package :code:`lattice` vous avez	:code:`g <- make.groups(nom=v, ...)`
+		qui prends des noms et des vecteurs et qui créé une variable qualitatives
+		avec les noms devant des des levels et chaque valeur de v étant associés à au niveau que vous
+		avez choisit.
+
+		Vous pouvez voir les niveaux avec :code:`g$which` et l'attribut :code:`g$data` contenant les valeurs
+		de vos vecteurs v, ...
+
+		.. code:: R
+
+				# version écourtée du résultat de l'exemple de ?make.groups
+				head(sim.dat)
+				              data       which
+				uniform1     0.2988667     uniform
+				uniform2     0.5579879     uniform
+				exponential1 2.1288421 exponential
+				exponential2 0.7936762 exponential
+				lognormal1   0.6568099   lognormal
+				lognormal2   1.8459960   lognormal

@@ -4,8 +4,8 @@
 Langage R
 =============
 
-| :math:`\color{grey}{Version \ 0.3.26}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 09/02/2021}`
+| :math:`\color{grey}{Version \ 0.7.31}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 20/03/2021}`
 
 1. Introduction
 ===================
@@ -126,7 +126,7 @@ matrices, tables, ...).
 	* :code:`attributes(vecteur)` : voir les attributs (dim, ...)
 	* :code:`any(v opérateur valeur)` : retourne true un des éléments respectent la condition
 	* :code:`all(v opérateur valeur)` : retourne true tous les éléments respectent la condition
-	* :code:`sort(v)` : trie les données
+	* :code:`sort(v)` ou :code:`order(v)` : trie les données
 	* :code:`View(v)` : voir le contenu d'un vecteur
 	* :code:`identical(v1,v2)` : savoir si deux vecteurs sont indentiques
 	* :code:`valeur %in% v` : savoir si valeur est dans v
@@ -244,7 +244,7 @@ Fonctions divines
 	* :code:`subset(v, cond, var)` : fait un sous-jeu de données sur une condition
 
 		* cond, condition : val == 10 **avec** val qui corresponds à v$val (du coup on le mets pas)
-		* var : vecteur des noms/indices des variables à afficher (comme les valeurs d'un SELECT en SQL)
+		* var (select=var) : vecteur des noms/indices des variables à afficher (comme les valeurs d'un SELECT en SQL)
 
 	*
 		:code:`cut(x, breaks = v,include.lowest = TRUE)` : découpe en tranche de valeurs avec v

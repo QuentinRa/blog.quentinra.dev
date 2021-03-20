@@ -31,6 +31,8 @@ tel qu'augmenter V2 de 1 augmente en moyenne V1 de :code:`b`. Dans le modèle,
 Un modèle c'est un truc très pratique qui regroupe les informations du Test T mais
 aussi la corrélation : :math:`r = b * \frac{\sigma_{X}}{\sigma_{Y}}`.
 
+lm a une option subset qui permet d'appliquer subset() ce qui peut être très pratique.
+
 2. Regression linéaire multiple
 ===================================
 
@@ -115,7 +117,39 @@ Les condition de validité du model de regression sont
 	* normalité du bruit/des résidus
 
 		* obtenir les résidus : :code:`resid(model)` (ou :code:`residuals(model)`)
-		* regarde la normalité : hist, ...
+		* regarde la normalité : hist, QQ-plot...
+		* "l’hypothèse de normalité sous-jacente au modèle"
 
 	* variance du bruit ne doit pas dépendre des expliqués/explicatives
-	* pas de structure de corrélation évidente ? (pas compris
+	* pas de structure de corrélation évidente
+
+On peut récupérer les valeurs de regression prédites avec :code:`fitted(model)`.
+
+Plus "Residual standard error" de nos modèle est petit, et plus notre modèle sera précis.
+
+La valeur "Multiple R-squared", multipliée par 100 indique le pourcentage de variance
+qui est expliqué par me modèle. Le R² ajusté utile pour comparer des modèles entre eux.
+
+6. Gérer la corrélation
+==========================
+
+Pour avoir un modèle qui se casse pas trop la figure, il faut essayer d'avoir un minimum de
+corrélation entre les variables explicatives. Calculez la corrélation ou
+la matrice de corrélations et regardez. S'il y a des corrélations évidentes,
+alors il va valoir faire des choix.
+
+La fonction :code:`regsubsets(...,nbest=n)` du package :code:`leaps`
+avec ... les arguments de votre lm. Il va nous montrer
+les meilleurs combinaisons possibles de vos variables.
+
+regsubsets va chercher les meilleurs combinaisons avec 1 variables, 2, ...
+nbest détermine le nombre de combinaisons qu'il vous montre
+
+	* nbest = 2 et on a X1 X2 X3
+	* X1 (1/2)
+	* X2 (2/2)
+	* X1 X2 (1/2)
+	* X1 X3 (2/2)
+	* ... pourrait être un résultat possible)
+
+Il faudra choisir

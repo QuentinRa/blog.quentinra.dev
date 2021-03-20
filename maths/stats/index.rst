@@ -4,7 +4,7 @@
 Statistiques et R
 ===================================
 
-| :math:`\color{grey}{Version \ 0.21.62}`
+| :math:`\color{grey}{Version \ 0.22.67}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 20/03/2021}`
 
 Les prérequis sont de savoir lire du R (concepts de base et un peu avancés).
@@ -75,7 +75,7 @@ Nos variables du cours
 Une dernière chose, à propos des formules. Généralement vous n'en n'aurez pas besoin sauf
 si vous faites de la regression, vous pouvez obtenir de l'aide avec :code:`?formula`.
 
-	* :code:`X ~ qual` : fait des sous-groupes de quant selon leur valeur de qual
+	* :code:`X ~ qual` (X expliqué par qual) : fait des sous-groupes de quant selon leur valeur de qual
 	* :code:`X ~ Y + Z` : exprimer X en fonction de chacun des couples possibles de valeurs (X,Y) ???
 	* :code:`X ~ Y * Z` : exprimer Z en groupes de (Y et Z) ???
 
@@ -124,6 +124,12 @@ Corrélation :code:`cor`
 	fortement corrélés.
 
 	Si vous avez des NA : :code:`cor(x,y,use="complete.obs")`.
+
+	Matrices de graphiques (pairs, GGally)
+		Étudier la liaison entre plusieurs variables numériques
+
+	Matrice des corrélations
+		Repérer les liens entre les variables quantitatives.
 
 Moments
 	| Moment d'ordre 1 : E(X) donc la moyenne (:code:`mean`)
@@ -402,8 +408,8 @@ et :math:`Y = a + b X` dans une regression logistique.
 
 On considère, pour une regression linéaire,
 
-	* Y : variable quantitative, nommée variable à expliquer ou réponse (rare)
-	* X : variable (peu importe sa caractéristique), nommée variable explicative ou facteur (rare)
+	* Y : variable quantitative, nommée variable à expliquer ou réponse ou cible
+	* X : variable (peu importe sa caractéristique), nommée variable explicative ou prédicteurs ou facteur (rare)
 	* a : coefficient d'interception
 	* b : coefficient de X
 	* résidu : aussi appelé bruit, je crois que c'est la mesure d'erreur
@@ -429,6 +435,11 @@ les variables sont qualitatives.
 ANOVA a un facteur c'est une généralisation du Test T de Fisher qui permet de comparer
 les variables qualitatives non binaires. En R, c'est juste une regression simple
 avec un appel à :code:`drop1`.
+
+Si la variable ç expliquer est qualitative, les outils possibles (et non vu ici!)
+
+	* l’analyse factorielle discriminante
+	* les arbres de décision (+les forêts aléatoires)
 
 -----
 
@@ -479,3 +490,7 @@ avec un appel à :code:`drop1`.
 	* https://fr.linkedin.com/learning/r-les-statistiques-parametriques/produire-un-test-t-de-student-homoscedastique-ou-heteroscedastique
 	* https://reference.wolfram.com/language/ref/CramerVonMisesTest.html
 	* http://pwer21c.github.io/
+	* https://samm.univ-paris1.fr/IMG/pdf/notes_statr.pdf
+	* https://irma.math.unistra.fr/~ricka/stat/TD1_L3.pdf
+	* http://math.univ-lyon1.fr/~gannaz/Cours/cours_stat.pdf
+	* https://www.tutorialspoint.com/r/index.htm

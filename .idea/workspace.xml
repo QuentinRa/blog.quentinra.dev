@@ -29,11 +29,13 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functional/r/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/__files/stats2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/__files/stats2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/files/var_t.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/files/var_t.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/stats/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats/mooc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/mooc.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats/reg/glm.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/reg/glm.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/mooc.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/__files/notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/stats/reg/lm.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/reg/lm.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats/tests/pour.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/pour.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -98,11 +100,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\games" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\stats\__files" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\stats\tests" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\stats\tests\old" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\games" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\game" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\libs\lwjgl\files\init" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -434,7 +436,7 @@
       <workItem from="1616148302764" duration="10057000" />
       <workItem from="1616160585516" duration="27953000" />
       <workItem from="1616198907711" duration="1961000" />
-      <workItem from="1616230876682" duration="33973000" />
+      <workItem from="1616230876682" duration="36490000" />
     </task>
     <servers />
   </component>

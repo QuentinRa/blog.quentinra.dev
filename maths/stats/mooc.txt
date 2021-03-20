@@ -1,3 +1,0 @@
-Dans une formule, a~b, on dit que a est expliqué par b.
-
-lm a une option subset qui permet d'appliquer subset()
