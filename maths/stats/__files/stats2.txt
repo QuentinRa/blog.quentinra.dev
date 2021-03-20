@@ -37,20 +37,6 @@ Ajustement linéaire
 	Matrice des corrélations
 		Repérer les liens entre les variables quantitatives.
 
-Test (de nullité) du coefficient de corrélation linéaire
-	| :code:`Prérequis` : test de normalité ou plus de 30 individus, deux variables quantitatives
-	| :code:`Résultat` : 0 = corrélation possible, ou valeur entre -1 et 1
-	| :code:`Calcul` : :code:`cor.test()` (test de corrélation)
-
-	Matrice des corrélations
-		On peut utiliser :code:`cor.mtest(data)$p` du package :code:`corrplot`
-		pour voir la matrice des corrélations, avec data une matrice ou un data.frame
-		par exemple. On peut voir les corrélations deux à deux.
-
-	On peut utiliser :code:`corrplot(cor(data), method="circle")` ou
-	:code:`corrplot(cor(data), method="number")` du package :code:`corrplot`
-	pour avoir un aperçu graphique.
-
 8. Méthodes supervisées
 =============================
 

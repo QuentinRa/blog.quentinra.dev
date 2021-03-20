@@ -40,7 +40,8 @@ de Student T à moyenne fixée
 	Distribution normale et généralement plus de 30 individus.
 
 :code:`Fonction`
-	La fonction est :code:`t.test(x=data, alternative="two.sided", mu=valeur)`.
+	| La fonction est :code:`t.test(x=ech, alternative="two.sided", mu=moyenne)`
+	| ou simplement :code:`t.test(ech, mu=moyenne)`
 
 	On a ici les hypothèses
 

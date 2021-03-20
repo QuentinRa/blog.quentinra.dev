@@ -15,6 +15,10 @@ On vérifie la possibilité que la distribution suit une loi normale donc
 	* H0 : les deux variables semblent pouvoir suivre une loi normale
 	* H1 : les deux variables ne suivent pas une loi normale
 
+Généralement, les prochains tests demanderont à ce que la loi converge vers une loi normale
+(a.k.a suive une loi normale), si ce n'est pas le cas de votre distribution, guettez
+les tests avec le mot RANG dedans car ils n'ont pas cette condition.
+
 Shapiro-Wilk
 ***************
 

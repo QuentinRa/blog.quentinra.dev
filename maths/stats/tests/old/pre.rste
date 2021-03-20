@@ -5,15 +5,6 @@ Un test de la moyenne permet généralement de déterminer si deux échantillons
 (moyenne différente) ou sont assez semblables. On peut utiliser un test ANOVA pour approfondir la recherche.
 Généralement on regarde la médiane plutôt que la moyenne car je crois que ça marche mieux.
 
-| **Objectif** : vérifier si la moyenne (mu) est la même
-| **Prérequis** : normalité ou plus de 30 individus
-
-Test Z à une moyenne, unilatéral gauche
-	| **Fonction** (package BSDA) : :code:`z.test(ech, alternative = "less", mu = mu, conf.level = 0.95)`
-
-Test Z à deux moyennes
-	| **Fonction** (package BSDA) : :code:`z.test(ech, alternative = "two.sided", mu = mu, conf.level = 0.95)`
-
 Tests d’égalité de médiane
 ----------------------------------
 

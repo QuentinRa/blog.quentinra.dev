@@ -367,6 +367,10 @@ non d'affirmer que la loi suit une loi normale.
 à rassembler, de formules à lire et comprendre donc je ne garantit rien (encore moins que d'habitude)
 de tout ce que vous pourriez lire ci-après.
 
+Les conditions des tests ne sont pas fixes, il y a généralement des cas pour lesquels
+les conditions ne sont pas respectés mais le test marche, donc j'ai fait avec
+ce que j'ai trouvé car il n'y a jamais vraiment de conditions explicitées.
+
 .. toctree::
 	 :maxdepth: 1
 
@@ -377,6 +381,7 @@ de tout ce que vous pourriez lire ci-après.
 		Test de comparaison des variances                     <tests/var>
 		Technique du Boostrap                                 <tests/mdb>
 		Test de la nullité du coefficient de corrélation      <tests/cor>
+		Test sur les données appariées                        <tests/paired>
 
 -----
 
