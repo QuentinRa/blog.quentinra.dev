@@ -7,6 +7,12 @@ Deux tests possibles
 	* **khi-deux**
 	* **fisher**
 
+De ce que j'ai compris, l'objectif est de dire à quel point deux variables sont liées
+l'un à l'autre, donc
+
+	* H0 : les deux variables sont dépendantes
+	* H1 : les deux variables sont indépendantes
+
 Test d'indépendance du Khi-deux
 ***********************************
 

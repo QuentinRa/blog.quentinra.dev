@@ -15,9 +15,6 @@ Test de normalité
 | de **Shapiro-Wilk** : :code:`shapiro.test(ech)`
 | **Robustesse** : avoir peu de valeurs identiques, plus puissant que les autres
 
-Rappel : on peut utiliser une droite de Henry comme outil complémentaire au tests
-de normalité (cf QQ-Plot).
-
 Tests d'égalités de variances
 --------------------------------
 
@@ -55,12 +52,6 @@ Généralement on regarde la médiane plutôt que la moyenne car je crois que ç
 
 de Student T à moyenne fixée (vérifier si la moyenne vaut mu)
 	| **Fonction** : :code:`t.test(x=data, alternative="two.sided", mu=valeur)`
-
-de Student T a deux moyennes (homoscédastique)
-	| **Fonction** : :code:`t.test(x=data1, y=data2, alternative="two.sided", var.equal=TRUE)`
-	| **Condition** : variance égales
-
-	Si vous donnez FALSE à var.equal alors le test de Welch serait fait à la place.
 
 Test Z à une moyenne, unilatéral gauche
 	| **Fonction** (package BSDA) : :code:`z.test(ech, alternative = "less", mu = mu, conf.level = 0.95)`

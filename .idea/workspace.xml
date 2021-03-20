@@ -29,10 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/files/types/c.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/files/types/c.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/files/types/table.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/files/types/table.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/r/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/stats/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/tests/pour.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/pour.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/stats/tests/pre.rste" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/tests/pre.rste" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
@@ -82,7 +80,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/games/rpg/db/ex" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/stats/tests" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="ssh.settings" />
@@ -91,11 +89,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\stats\tests" />
       <recent name="C:\Users\quent\Documents\texas-res\games\rpg\db\ex" />
       <recent name="C:\Users\quent\Documents\texas-res\assets" />
       <recent name="C:\Users\quent\Documents\texas-res\games" />
       <recent name="C:\Users\quent\Documents\texas-res\games\rpg" />
-      <recent name="C:\Users\quent\Documents\texas-res\imperative\libs\lwjgl\files" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\assets\games" />
@@ -434,7 +432,7 @@
       <workItem from="1616148302764" duration="10057000" />
       <workItem from="1616160585516" duration="27953000" />
       <workItem from="1616198907711" duration="1961000" />
-      <workItem from="1616230876682" duration="7313000" />
+      <workItem from="1616230876682" duration="9188000" />
     </task>
     <servers />
   </component>

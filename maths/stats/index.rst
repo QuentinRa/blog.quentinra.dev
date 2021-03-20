@@ -360,10 +360,15 @@ On distingue deux types de test
 	* paramétriques : la loi doit être normale ou prérequis d'une moyenne/variance/corrélation
 	* non-paramétriques (distribution free) : les autres tests (utilisent les statistiques de rangs)
 
+Un test permet de vérifier s'il est possible que la loi suive une loi normale et
+non d'affirmer que la loi suit une loi normale.
+
 .. toctree::
 	 :maxdepth: 1
 
-		Comprendre les tests      <tests/how>
+		Comprendre les tests                     <tests/how>
+		Test de comparaison des proportions      <tests/pour>
+		Test de comparaison des moyennes         <tests/moy>
 
 -----
 
@@ -411,3 +416,4 @@ On distingue deux types de test
 	* http://www.sthda.com/english/wiki/unpaired-two-samples-t-test-in-r
 	* https://fr.wikipedia.org/wiki/Maximum_de_vraisemblance
 	* https://fr.wikipedia.org/wiki/Estimateur_(statistique)
+	* https://fr.linkedin.com/learning/r-les-statistiques-parametriques/produire-un-test-t-de-student-homoscedastique-ou-heteroscedastique
