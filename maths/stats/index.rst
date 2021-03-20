@@ -436,7 +436,7 @@ ANOVA a un facteur c'est une généralisation du Test T de Fisher qui permet de 
 les variables qualitatives non binaires. En R, c'est juste une regression simple
 avec un appel à :code:`drop1`.
 
-Si la variable ç expliquer est qualitative, les outils possibles (et non vu ici!)
+Si la variable à expliquer est qualitative, les outils possibles (et non vu ici!)
 
 	* l’analyse factorielle discriminante
 	* les arbres de décision (+les forêts aléatoires)

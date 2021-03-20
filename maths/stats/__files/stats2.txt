@@ -5,57 +5,5 @@ Statistiques pondérées
 
 On peut également tester la fonction de répartition (:code:`ecdf(rloi(...))` en R)
 en la superposant à un graphique précédemment obtenu (on rappelle le add=TRUE).
-----> tracer médiane, ...
-
-8. Méthodes supervisées
-=============================
-
-Grâce à regsubsets de l’extension leaps nous allons rechercher un modèle plus adéquat. On privilégiera
-les modèles à faible s ou à fort r² ajusté.
-library(leaps)
-meilleur<-regsubsets(Y~X1+X2+X3+X4,data=froment,nbest=10)
-# visualisation des résultats
-summary(meilleur)
-X 3 "*"
-Ainsi, le meilleur modèle à 1 variable est X3, le meilleur à 2 variables est X1 X4 etc.
-
-cases noires le best
-plot(meilleur,scale="adjr2",main="Modèles classés en fonction de r²ajusté")
-on regarde pour r^2 ajusté (axe y)
-On afficher cela plus clairement avec : library(car) subsets(meilleur, statistic="adjr2")
-
-je crois qu'on cherche des valeurs <5%
-
-Analyse des résidus et des valeurs influentes (extension MASS)
-Calcul de la distance de Cook, du DFFITS et du résidu par validation croisée.
-
-library(MASS)
-#Nous faisons l’ajustement avec la librarie MASS
-fit <- lm(Y~X1+X4,data=froment) data.frame(froment$Y, froment$X1, froment$X4,
-cook=cooks.distance(fit),dffits=dffits(fit), std.res=stdres(fit), std.res.valX=studres(fit))
-
-Supposons que cette année X1=109 et X4=900. Je désire prévoir le rendement à l’aide du modèle précédent.
-Nous créons d’abord un mini fichier contenant les données en question :
-donneesprev<-data.frame(X1=109,X4=900)
-predict(fit,donneesprev,interval="predict",level=0.95)
-Le rendement prévu est donc compris entre 21.7 et 25.3 (à 95%).
-
-Graphiques avec l’extension olsrr (à passer en 1re lecture)
-Distance de Cook
-Elle mesure l’influence de l’observation sur les coefficients de régression.
-#Distance de Cook library(olsrr) ols_cooksd_chart(fit)
-Les observations 2 et 7 sont donc influentes. Il faut s’assurer
-que ce ne sont pas des erreurs de saisie sinon l’équation de régression serait faussée.
-DFFITS
-Il mesure l’influence sur l’équation et l’erreur. #DFFITS library(olsrr) ols_dffits_plot(fit)
-
-Résidus studentisés par validation croisée (Deleted T residual)
-J’ai repris la terminologie de mon collègue et ami le Pr. Anestis Antoniadis pour ce résidu particulier.
-Il est calculé en retirant l’observation du modèle ce qui permet d’avoir une estimation
-plus fiable de l’erreur.
-
-library(olsrr) ols_dsrvsp_plot(fit)
-L’observation 7 est aberrante (et influente).
-L’observation 2 est juste influente.
 
 Stop page 302/451

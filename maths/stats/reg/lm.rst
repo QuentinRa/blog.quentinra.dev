@@ -125,10 +125,10 @@ Les condition de validité du model de regression sont
 
 On peut récupérer les valeurs de regression prédites avec :code:`fitted(model)`.
 
-Plus "Residual standard error" de nos modèle est petit, et plus notre modèle sera précis.
+Plus le "Residual standard error", dit RSE, de notre modèle est petit, et plus notre modèle sera précis.
 
-La valeur "Multiple R-squared", multipliée par 100 indique le pourcentage de variance
-qui est expliqué par me modèle. Le R² ajusté utile pour comparer des modèles entre eux.
+La valeur "Multiple R-squared" dit :math:`R^2`, multipliée par 100 indique le pourcentage de variance
+qui est expliqué par me modèle. Le :math:`R^2` ajusté utile pour comparer des modèles entre eux.
 
 6. Gérer la corrélation
 ==========================
@@ -138,7 +138,7 @@ corrélation entre les variables explicatives. Calculez la corrélation ou
 la matrice de corrélations et regardez. S'il y a des corrélations évidentes,
 alors il va valoir faire des choix.
 
-La fonction :code:`regsubsets(...,nbest=n)` du package :code:`leaps`
+La fonction :code:`rs <- regsubsets(...,nbest=n)` du package :code:`leaps`
 avec ... les arguments de votre lm. Il va nous montrer
 les meilleurs combinaisons possibles de vos variables.
 
@@ -152,4 +152,30 @@ nbest détermine le nombre de combinaisons qu'il vous montre
 	* X1 X3 (2/2)
 	* ... pourrait être un résultat possible)
 
-Il faudra choisir
+Il faudra choisir un modèle avec une faible RSE et un fort :math:`R^2`.
+
+Vous aimez pas les étoiles ? Pas de problèmes, tracez
+votre truc :code:`plot(rs,scale="adjr2", main="Modèles classés en fonction de r² ajusté")`
+et les carrés blancs indiquent que pour obtenir un taux entre de :math:`R^2` entre
+les deux y du carrés alors vous devez prendre cette valeur X.
+
+.. image:: /assets/math/stats/subset.png
+
+Vous n'aimez toujours pas ? Dernière alternative avec la librairie :code:`car`
+et sa fonction :code:`subsets(rs, statistic="adjr2", legend = "topleft")`. On cherche
+les plus petites valeurs.
+
+7. Autres
+===========
+
+Si vous souhaitez faire des prédictions, cela se fait avec :code:`predict(model, V, interval="predict",level=0.95)`
+avec V qui est un vecteur correspondant aux valeurs que vous avez prévues pour vos
+VA. Il existe une forme sans V.
+
+Ce n'est pas abordé mais la distance de Cook mesure l’influence
+de l’observation sur les coefficients de régression avec
+
+.. code:: R
+
+		library(olsrr)
+		ols_cooksd_chart(model)
