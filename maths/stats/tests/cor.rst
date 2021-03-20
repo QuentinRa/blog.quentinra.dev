@@ -7,7 +7,7 @@ Test (de nullité) du coefficient de corrélation linéaire est de la forme
 	* H0 : il existe une corrélation entre X et Y
 	* H1 : il existe pas de corrélation entre X et Y
 
-Test classique
+Test classique de Pearson
 ****************************
 
 :code:`Conditions`

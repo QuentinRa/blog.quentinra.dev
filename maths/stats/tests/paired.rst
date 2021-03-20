@@ -11,6 +11,10 @@ Nous avons deux tests sur la moyenne
 	* **Student T à moyenne fixée**
 	* **test des signes**
 
+et un test sur les proportions
+
+	* **test de McNemar**
+
 Student T à moyenne fixée
 *************************
 
@@ -21,10 +25,10 @@ Student T à moyenne fixée
 	La fonction est :code:`t.test(data_before, data_after, paired=TRUE)`.
 
 Test des signes
-*************************
+*****************
 
 :code:`Conditions`
-	Données appariées.
+	Données appariées. Généralement notre jeu de données ne suit pas une loi normale.
 
 :code:`Description`
 	On considère l'échantillon avant/après, on compare les classements et on met un + si
@@ -34,3 +38,15 @@ Test des signes
 :code:`Fonction`
 	La fonction :code:`SIGN.test(data, md = med, alternative = "two.sided", conf.level = 0.95)`)
 	du package :code:`BSDA`.
+
+Test de McNemar
+*****************
+
+:code:`Conditions`
+	Données appariées.
+
+:code:`Fonction`
+	La fonction est :code:`mcnemar.test(data_before, data_after, correct = TRUE)`.
+
+	Le correct corresponds à la correction de continuité (T=oui, F=non). Si désactivé, le test
+	est moins robuste mais plus puissant.

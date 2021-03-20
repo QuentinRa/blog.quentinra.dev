@@ -431,3 +431,4 @@ ce que j'ai trouvé car il n'y a jamais vraiment de conditions explicitées.
 	* https://fr.wikipedia.org/wiki/Estimateur_(statistique)
 	* https://fr.linkedin.com/learning/r-les-statistiques-parametriques/produire-un-test-t-de-student-homoscedastique-ou-heteroscedastique
 	* https://reference.wolfram.com/language/ref/CramerVonMisesTest.html
+	* http://pwer21c.github.io/
