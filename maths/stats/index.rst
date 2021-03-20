@@ -370,12 +370,13 @@ de tout ce que vous pourriez lire ci-après.
 .. toctree::
 	 :maxdepth: 1
 
-		Comprendre les tests                     <tests/how>
-		Test de normalité                        <tests/norm>
-		Test de comparaison des proportions      <tests/pour>
-		Test de comparaison des moyennes         <tests/moy>
-		Test de comparaison des variances        <tests/var>
-		Technique du Boostrap                    <tests/mdb>
+		Comprendre les tests                                  <tests/how>
+		Test de normalité                                     <tests/norm>
+		Test de comparaison des proportions                   <tests/pour>
+		Test de comparaison des moyennes                      <tests/moy>
+		Test de comparaison des variances                     <tests/var>
+		Technique du Boostrap                                 <tests/mdb>
+		Test de la nullité du coefficient de corrélation      <tests/cor>
 
 -----
 

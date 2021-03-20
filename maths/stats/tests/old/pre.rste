@@ -8,9 +8,6 @@ Généralement on regarde la médiane plutôt que la moyenne car je crois que ç
 | **Objectif** : vérifier si la moyenne (mu) est la même
 | **Prérequis** : normalité ou plus de 30 individus
 
-de Student T à moyenne fixée (vérifier si la moyenne vaut mu)
-	| **Fonction** : :code:`t.test(x=data, alternative="two.sided", mu=valeur)`
-
 Test Z à une moyenne, unilatéral gauche
 	| **Fonction** (package BSDA) : :code:`z.test(ech, alternative = "less", mu = mu, conf.level = 0.95)`
 

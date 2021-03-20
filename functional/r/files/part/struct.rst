@@ -25,3 +25,7 @@ Vous avez des méthodes qui exécutent une fonction f sur tous les
 	* :code:`tapply(v, indices, f)` : indice i et associé à la valeur i du vecteur v après avoir appliqué f. Retourne un tableau.
 	* :code:`apply(v, f)` : appliquer a tous les éléments d'une matrice
 
+Et enfin, vous avez la fonction :code:`by`
+qui est de la forme :code:`by(dataX, dataY, f, na.rm=TRUE)`
+par exemple pour appliquer la fonction :code:`f` sur dataX puis dataY... et
+afficher les retours de chaque appels.
