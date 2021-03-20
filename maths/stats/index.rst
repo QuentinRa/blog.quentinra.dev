@@ -395,8 +395,8 @@ et :math:`Y = a + b X` dans une regression logistique.
 
 On considère, pour une regression linéaire,
 
-	* Y : variable quantitative, réponse, variable à expliquer
-	* X : variable quantitative, facteur, variable explicative
+	* Y : variable quantitative, nommée variable à expliquer ou réponse (rare)
+	* X : variable (peu importe sa caractéristique), nommée variable explicative ou facteur (rare)
 	* a : coefficient d'interception
 	* b : coefficient de X
 	* résidu : aussi appelé bruit, je crois que c'est la mesure d'erreur
@@ -410,7 +410,18 @@ le Y corresponds cette fois à une probabilité donc entre 0 et 1.
 Attention toutefois, calculer une regression demande à ce que des conditions soient
 respectés donc certaines étant complexes et souvent ignorées.
 
+.. toctree::
+	 :maxdepth: 1
 
+		Regression linéaire          <reg/lm>
+		Regression logistique        <reg/glm>
+
+ANalysis Of VAriance = ANOVA = regression linéaire dans laquelle toutes
+les variables sont qualitatives.
+
+ANOVA a un facteur c'est une généralisation du Test T de Fisher qui permet de comparer
+les variables qualitatives non binaires. En R, c'est juste une regression simple
+avec un appel à :code:`drop1`.
 
 -----
 

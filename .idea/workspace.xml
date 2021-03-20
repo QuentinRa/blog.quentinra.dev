@@ -79,7 +79,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/stats/tests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/stats/reg" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="ssh.settings" />
@@ -88,11 +88,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\stats\reg" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\stats\tests" />
       <recent name="C:\Users\quent\Documents\texas-res\games\rpg\db\ex" />
       <recent name="C:\Users\quent\Documents\texas-res\assets" />
       <recent name="C:\Users\quent\Documents\texas-res\games" />
-      <recent name="C:\Users\quent\Documents\texas-res\games\rpg" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\Documents\texas-res\maths\stats\tests" />
@@ -431,7 +431,7 @@
       <workItem from="1616148302764" duration="10057000" />
       <workItem from="1616160585516" duration="27953000" />
       <workItem from="1616198907711" duration="1961000" />
-      <workItem from="1616230876682" duration="28497000" />
+      <workItem from="1616230876682" duration="31560000" />
     </task>
     <servers />
   </component>
