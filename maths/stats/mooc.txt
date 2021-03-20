@@ -65,3 +65,54 @@ la fonction :code:`drop1(lm(...), .~., test="F")`
 
 On peut ajouter un Z*T pour avoir l'effet de l'interaction/synergie entre Z et T.
 C'est un "et" genre effet de Z et T.
+
+Attention cependant, ls lignes Z et T individuellement **ne sont plus interprétables**
+donc vous ne devez pas les utiliser.
+
+==========================
+
+ANalysis Of VAriance = ANOVA = regression linéaire dans laquelle toutes
+les variables sont qualitatives.
+
+variables explicatives
+variables catégorielles
+
+
+=============
+
+Anova 1 facteur
+généralisation test T
+comparer une var quant à plus de deux groupes
+
+lm(quant~qual, data=ech)
+= summary(lm(quant~qual, data=ech))
+= drop1(lm(quant~qual, data=ech), .~., test="F")
+
+================
+
+Pourcentage si plusieurs sous-groupes
+==> chisq.test(quant, qual, ...)
+
+
+===============
+
+Condition de validité du model de regression
+===> normalité du bruit/résidus ===> resid(lm(...)) ==> regarde la normalité (hist, ...)
+===> variance du bruit ne doit pas dépendre des expliqués/explicatives
+===> pas de structure de corrélation évidente ?
+
+===============
+===============
+===============
+
+Si Y est binaire, on fait de la regression logistique.
+
+Y = Log [ proba(X=n)/(1-proba(X=n)) ] = a + bX + cT
+
+et R ça donne
+
+glm(Y~X, data=ech, family="binomial")
+
+Si X binaire alors exp(b) = odds-ratio = multiplicateur
+de la probabilité de Y, seulement si Y est un événement rare. On calcul
+le odds-ration avec twoby2(1-Y, 1-X)
