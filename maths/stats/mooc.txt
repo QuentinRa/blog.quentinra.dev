@@ -1,10 +1,3 @@
-Une droite de regression est une droite
-qui essaye de passer au mieux par l'ensemble des points.
-
-En gros, il existe un distance entre chaque point et une droite (=projection).
-On va chercher une droite qui minimise l'ensemble des projections.
-"Minimiser la somme des carrés des distances verticales entre les points et cette droite"
-
 La fonction :code:`lm(formule)` permet de calculer une droite de régression,
 avec formule par exemple :code:`quant ~ qual`.
 

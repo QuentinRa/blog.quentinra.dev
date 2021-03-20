@@ -386,7 +386,31 @@ ce que j'ai trouvé car il n'y a jamais vraiment de conditions explicitées.
 9. Regression linéaire
 =======================
 
-...
+La regression linéaire est une droite qui minimise la distance entre chaque point
+et la droite. Pour être précis, on minimise la somme des carrés des distances
+verticales entre les points et notre droite de regression.
+
+La droite à une équation de la forme :math:`Y = a + b X + résidu`
+et :math:`Y = a + b X` dans une regression logistique.
+
+On considère, pour une regression linéaire,
+
+	* Y : variable quantitative, réponse, variable à expliquer
+	* X : variable quantitative, facteur, variable explicative
+	* a : coefficient d'interception
+	* b : coefficient de X
+	* résidu : aussi appelé bruit, je crois que c'est la mesure d'erreur
+
+On parle de regression linéaire multiple, si nous avons une équation
+avec plusieurs variables explicatives par exemple :code:`Y = a + b X + c Z + d T`.
+
+Pour en revenir à la regression logistique (qui peut aussi être multiple),
+le Y corresponds cette fois à une probabilité donc entre 0 et 1.
+
+Attention toutefois, calculer une regression demande à ce que des conditions soient
+respectés donc certaines étant complexes et souvent ignorées.
+
+
 
 -----
 
