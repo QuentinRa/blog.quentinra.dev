@@ -1,0 +1,67 @@
+Une droite de regression est une droite
+qui essaye de passer au mieux par l'ensemble des points.
+
+En gros, il existe un distance entre chaque point et une droite (=projection).
+On va chercher une droite qui minimise l'ensemble des projections.
+"Minimiser la somme des carrés des distances verticales entre les points et cette droite"
+
+La fonction :code:`lm(formule)` permet de calculer une droite de régression,
+avec formule par exemple :code:`quant ~ qual`.
+
+Modèle de regression linéaire c'est une droite de regression à laquelle on a ajouté
+un bruit, qui suit une loi normale.
+===> histoires de b=0
+===> tester statistiquement
+===> estimer un modèle : lm avec :code:`lm(quant ~ qual, data=ech)`.
+
+lm retourne un model de regression, dont on peut récupérer les informations avec summary.
+
+===> histoires de quant = a + b * qual + bruit
+====> a = estimate.intercept
+====> b = estimate.qual
+
+Ce qui corresponds au fait que pour chaque unité de qual, alors la valeur
+quantitative augmente en moyenne de b.
+
+	* H0 : b est égal à 0
+	* H1 : b est différent de 0
+
+Si H1 alors b augmente significativement Y.
+
+Sur la ligne de qual, on a la valeur de p (colonne Pr).
+
+Dans une formule, a~b, on dit que a est expliqué par b.
+
+l'équation d’un modèle de régression linéaire simple
+est Y = a + b X + bruit.
+
+Depuis le modèle, on peut calculer la correlation r : :math:`r = b * \frac{\sigma_{qual}}{\sigma_{quant}}`
+
+La regression linéaire multiple est comme la régression linéaire
+simple mais cette fois on va regarder plusieurs critères qualitatifs et essayer de démeller
+tous les liaisons entre ces critères.
+
+On a une équation de la forme Y = a + b X + c Z + d T + ... + bruit
+ce qui donne :code:`lm(Y ~ X + Z + T, data=ech)`. Dans ce cas là, si on refait
+le X augmente de 1... alors on va dire que c,d,... sont constants.
+
+On peut égaler dire que X augmente de 1, et on est dans le cas Z alors la valeur
+quantitative Y augmente en moyenne de b+c.
+
+==========================
+
+FORCEMENT UNE BINAIRE ou une QUANTITATIVE
+Si c'est une qualitative, alors on a réécrit
+en plusieurs variables binaires. Heureusement, R le fait automatiquement.
+
+Modalité de référence c'est par défaut la première valeur. En gros R va comparer
+les stats des autres avec celle ci pour déduire des coefficients b,c,...
+Si vous voulez changer la valeur par défaut, il faut ré-encoder les niveau
+avec :code:`qual <- rlevels(qual, ref="valeur référence")`.
+
+Pour considérer comme un tout, toutes les valeurs de la variable qualitative donc étudier
+en général l'influence de cette variable plutôt que chaque valeur, on utiliser
+la fonction :code:`drop1(lm(...), .~., test="F")`
+
+On peut ajouter un Z*T pour avoir l'effet de l'interaction/synergie entre Z et T.
+C'est un "et" genre effet de Z et T.
