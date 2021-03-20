@@ -116,3 +116,24 @@ glm(Y~X, data=ech, family="binomial")
 Si X binaire alors exp(b) = odds-ratio = multiplicateur
 de la probabilité de Y, seulement si Y est un événement rare. On calcul
 le odds-ration avec twoby2(1-Y, 1-X)
+
+on mets des + comme d'hab.
+
+On regarde d'abord les p-value, puis les signes puis les valeurs.
+
+exp(coefficients(lm(...)) pour les interpréter :
+il s'agit du multiplicateur du risque.
+
+Attention, drop1 change, maintenant on mets test="Chisq"
+
+==== Conditions de validité
++ au moins 5-10 événements par variable explicative
+	+ genre on prends l'événement de notre variable à expliquer A
+	+ |A| = a
+	+ plus large
+		+	il faut que le nombre genre |X|+|Z|+|T| * 10 <= a
+	+ plus souple
+		+	il faut que le nombre genre |X|+|Z|+|T| * 5 <= a
+	+ généralement |X|=1 sauf pour les qualitatives non binaires ou c'est |length(levels(X))-1|
+
+lm a une option subset qui permet d'appliquer subset()
