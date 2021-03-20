@@ -94,22 +94,8 @@ Test d’indépendance
 | **Objectif** : savoir si des variables sont indépendantes
 | **Utilité** : study.test
 
-du Khi deux
-	| **Fonction** : :code:`chisq.test(tab,correct=FALSE)`)
-	| **Condition** : tab de 2 variables qualitatives
-	| **Robustesse** : au moins 5 individus
-
-	On peut regarder le :code:`$expected` pour vérifier ou encore les résidus
-	:code:`$residuals` (valeur ij élevé = cette valeur joue un rôle élevé dans la liaison des variables)
-	calculés selon la formule :math:`(observed - expected) / sqrt(expected)`.
-
-	Le correct corresponds à la correction de continuité (T=oui, F=non).
-
+du Khi-Deux
 de Fisher
-	| **Fonction** : :code:`fisher.test(tab)`
-	| **Condition** : tab de 2 variables qualitatives (matrice/tableau)
-
-	Très très gourmand en ressources.
 
 Test de valeurs aberrantes/outliers
 ------------------------------------

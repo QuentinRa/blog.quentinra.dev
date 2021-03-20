@@ -1,10 +1,10 @@
 .. _r:
 
-================================
+=============
 Langage R
-================================
+=============
 
-| :math:`\color{grey}{Version \ 0.3.25}`
+| :math:`\color{grey}{Version \ 0.3.26}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 09/02/2021}`
 
 1. Introduction
@@ -388,3 +388,5 @@ de fichier, avec des métadonnées.
 	* https://www.dunod.com/sites/default/files/atoms/files/9782100712861/Feuilletage.pdf
 	* https://swirlstats.com/students.html
 	* https://github.com/swirldev/swirl_courses#swirl-courses
+	* http://rug.mnhn.fr/semin-r/PDF/INED-SFdS-MNHN_Sueur_280411.pdf
+	* https://www.math.sciences.univ-nantes.fr/~philippe/download/Anne-Philippe-cours-R.pdf

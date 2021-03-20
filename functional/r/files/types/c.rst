@@ -67,6 +67,9 @@ une comparaison retourne un vecteur de booléens. On peut ainsi faire
 	> round(vect) # arrondi
 	[1] 73  9 56 56 67 56 89 56 56 75
 
+On peut récupérer tous les indices concernées par une condition
+avec :code:`which` par exemple :code:`which(vect == 5)`.
+
 **Indices nommés**
 
 Vous pouvez nommer des indices d'un vecteur avec :code:`nom = valeur`.

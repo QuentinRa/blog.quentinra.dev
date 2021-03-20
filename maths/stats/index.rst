@@ -266,7 +266,8 @@ Occurrences et fréquence
 	Avec :code:`table(v)` vous obtenez le nombre d'occurrences de chaque valeur dans v.
 
 	Vous pouvez obtenir les probabilités (la fréquence) de chaque valeur avec :code:`prop.table`.
-	Si vous donnez 1 ou 2 alors le calcul ne sera fait que sur les lignes ou colonnes.
+	Si vous donnez 1 ou 2 alors le calcul ne sera fait que sur les lignes ou colonnes
+	ce qui donne :code:`prop.table(table(v), 1)` par exemple.
 
 Valeurs aberrantes
 	Utiliser des boîtes à moustaches (boxplot) pour voir la présence de valeurs extrêmes.
