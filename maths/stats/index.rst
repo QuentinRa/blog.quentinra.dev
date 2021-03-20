@@ -4,7 +4,7 @@
 Statistiques et R
 ===================================
 
-| :math:`\color{grey}{Version \ 0.16.51}`
+| :math:`\color{grey}{Version \ 0.21.62}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 20/03/2021}`
 
 Les prérequis sont de savoir lire du R (concepts de base et un peu avancés).
@@ -382,6 +382,11 @@ ce que j'ai trouvé car il n'y a jamais vraiment de conditions explicitées.
 		Technique du Boostrap                                 <tests/mdb>
 		Test de la nullité du coefficient de corrélation      <tests/cor>
 		Test sur les données appariées                        <tests/paired>
+
+9. Regression linéaire
+=======================
+
+...
 
 -----
 

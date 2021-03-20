@@ -14,3 +14,6 @@ Typiquement, vous pouvez afficher graphiquement une :code:`table` donc :code:`ba
 	ylab = "nombre de jours", xlab = "année")
 
 .. image:: /assets/math/stats/desc/barplot.png
+
+Un autre truc cool si vous utilisez :code:`xtabs` est :code:`barplot(xtabs(....), beside = TRUE)`
+qui affiche les graphiques côte à côte et non l'un au dessus de l'autre.

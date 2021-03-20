@@ -30,6 +30,7 @@ Test T de Student a deux moyennes
 :code:`Fonction`
 	| La fonction est :code:`t.test(x=data1, y=data2, alternative="two.sided", var.equal=TRUE)`.
 	| Ou alors :code:`t.test(quant~qual, alternative="two.sided", var.equal=TRUE)`.
+	| Ou encore :code:`t.test(quant~qual, var.equal=TRUE)`.
 
 	Si vous donnez FALSE à var.equal alors le **test de Welch** serait fait à la place.
 

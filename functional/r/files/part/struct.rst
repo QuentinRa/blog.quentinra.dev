@@ -29,3 +29,10 @@ Et enfin, vous avez la fonction :code:`by`
 qui est de la forme :code:`by(dataX, dataY, f, na.rm=TRUE)`
 par exemple pour appliquer la fonction :code:`f` sur dataX puis dataY... et
 afficher les retours de chaque appels.
+
+Enfin, vous pouvez appliquer une apply via une formule avec :code:`aggregate(quant~qual, FUN=function)`
+donc ici :code:`aggregate(age~sexe, FUN=mean)`
+
+	* fait des groupes selon le sexe
+	* fait la moyenne de chaque groupe
+	* ce qui donne la moyenne d'age en fonction du sexe (soit #sexe valeurs)
