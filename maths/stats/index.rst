@@ -4,8 +4,8 @@
 Statistiques et R
 ===================================
 
-| :math:`\color{grey}{Version \ 0.15.49}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 18/03/2021}`
+| :math:`\color{grey}{Version \ 0.16.51}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 20/03/2021}`
 
 Les prérequis sont de savoir lire du R (concepts de base et un peu avancés).
 Ceci n'est pas un cours de maths donc ce ne sont pas des vraies statistiques
@@ -287,6 +287,7 @@ Quelques notes
 Cette partie contient une liste d'outils pour décrire votre échantillon.
 
 .. toctree::
+	 :maxdepth: 1
 
 		Histogramme (var numérique)               <desc/hist>
 		Diagrammes a bandes (var qual/~quant)     <desc/barplot>
@@ -294,7 +295,38 @@ Cette partie contient une liste d'outils pour décrire votre échantillon.
 		Tableaux croisés (plusieurs variables)    <desc/qhpvt>
 		Quantile-Quantile (QQ plot)               <desc/qq>
 
-7. Statistiques inférentielle
+7. Aparté : Vraisemblance
+===============================
+
+Il s'agit d'une notion, avec les estimations de Monte-Carlo que je pensais, naïvement pouvoir
+éviter (car c'est compliqué) mais il s'agit d'une partie vraiment cruciale en statistiques
+donc je vais essayer d'expliquer ça ici.
+
+On appelle estimateur une fonction :math:`h_n(X_1,...,X_n) = \hat{\theta}` (ou :math:`T(...)`)
+qui permet d'approcher le paramètre :math:`\theta` d'une loi. Donc si j'ai bien compris,
+c'est la valeur obtenue après avoir essayé de déduire les paramètres d'une loi.
+
+Il y a des types de biais sur les estimateurs
+
+	* biais : :math:`B(\hat{\theta}) = E[\hat{\theta}] - \theta`
+	* sans biais : :math:`B(\hat{\theta}) = 0`
+	* asymptotiquement sans biais : :math:`\lim_{n \rightarrow +\infty} E[\hat{\theta}] = \theta`
+
+En gros, un biais c'est le fait qu'on n'a pas une valeur (ex: une moyenne) ou alors on a fait
+un sondage mais on a "choisit" à qui demander donc les valeurs sont dites biaisées.
+
+| Estimateur (sans biais) de la moyenne : :math:`\hat{\mu} = \frac{1}{n} \sum_{i=1}^{n} X_i`.
+| Estimateur (asymptotiquement sans biais) de la variance : :math:`S^2_{n} = \frac{1}{n} \sum_{i=1}^{n} (X_i-\hat{\mu})^2`.
+| Estimateur (sans biais) de la variance : :math:`S^2_{n,c} = \frac{1}{n-1} \sum_{i=1}^{n} (X_i-\hat{\mu})^2`.
+
+Lorsque l'estimateur converge vers la vraie valeur, on parle d'estimateur convergent.
+
+Une estimation du maximum de vraisemblance consiste à trouver une fonction :math:`L(\hat{\theta})`
+qui maximise :math:`\theta` donc si j'ai bien compris, cela consiste à trouver la valeur
+maximale du paramètre. En particulier, on cherche à trouver une valeur qui maximise la probabilité
+qu'avec ce paramètre on obtienne nos observations.
+
+8. Statistiques inférentielle
 ===============================
 
 L'objectif est de pouvoir déduire le comportement d'une population
@@ -307,13 +339,10 @@ On distingue deux types de test
 	* paramétriques : la loi doit être normale ou prérequis d'une moyenne/variance/corrélation
 	* non-paramétriques (distribution free) : les autres tests (utilisent les statistiques de rangs)
 
-:code:`Note` : Les tests sont généralement fait avec alpha=0.05 ce qui traduit
-d'un résultat fiable à 95% (1-0.95)  mais attention à vérifier si le test est valide.
+.. toctree::
+	 :maxdepth: 1
 
-Pour cela en R, regardez la :code:`p-value` dans le résultat, si elle est en dessous de 5% (p-value < 0.05=alpha)
-alors le test est rejeté sinon il a de fortes chances d'être correct.
-
-**Les tests qui étaient ici ont étés supprimés pour le moment.**
+		Comprendre les tests      <tests/how>
 
 -----
 

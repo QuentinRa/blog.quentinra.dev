@@ -11,13 +11,13 @@ On va poser une hypothèse
 
 On considère deux erreurs possibles
 
-	* alpha : on pense H1 vraie alors que H0 est vraie (proba)
-	* beta : on pense H0 vraie alors que H1 est vraie (proba)
+	* alpha : on pense H1 vraie alors que H0 est vraie
+	* beta : on pense H0 vraie alors que H1 est vraie
 
 Le lemme de Neyman–Pearson fixe un alpha (généralement 0.05 car 1-0.95=0.05 et
 0.95 pour 95% pour un intervalle de confiance à 95%) et on minimise beta.
 
-On va obtenir un :code:`p` (:code:`p-value` dans R)
+On va obtenir un :code:`p` (:code:`p-value` dans R), que vous devez interpréter comme suit
 
 	* :code:`p < \alpha` : H1 est vraie
 	* :code:`sinon` : H0 est vraie
@@ -25,12 +25,17 @@ On va obtenir un :code:`p` (:code:`p-value` dans R)
 **Fisher**
 
 Avec fisher, l'interprétation de :code:`p` change. Plus p est petit, est plus le résultat
-est probable d'être celui attendu.
+est probable d'être celui attendu. Et vice-versa.
 
 **Bilan?**
 
 On utilise généralement Fisher, mais lorsqu'on veut être sûr du résultat (parce qu'il y a une décision importante
 prise selon le résultat, on utilise les tests d'hypothèses de Neyman–Pearson).
+
+L'idée est que 0.049 est vraie avec Neyman–Pearson mais 0.05 est faux. Ceci est peut être un peu
+trop arbitraire et on peut donc éviter de renier une hypothèse est considérer que cela reste
+très probable. En revanche, si c'est un résultat important, on va éviter de prendre
+des risques et utiliser Neyman–Pearson qui est strict.
 
 **Explications**
 
