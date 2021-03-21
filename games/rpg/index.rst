@@ -1,8 +1,8 @@
 .. _rpg:
 
-================================
-Coder un RPG
-================================
+====================
+Coder un RPG (2D)
+====================
 
 | :math:`\color{grey}{Version \ 0.0.1}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 19/03/2021}`
@@ -30,7 +30,7 @@ est mon retour d'expérience.
 
 			Architecture d'un RPG                    <files/layout>
 			Conseils avant son premier RPG           <files/conseils>
-			Note sur le système de combat des JRPG   <files/conseils>
+			Note sur le système de combat des JRPG   <files/jrpg>
 
 On écrit PNJ pour personnage non joueur.
 
@@ -38,7 +38,147 @@ On écrit PNJ pour personnage non joueur.
 =====================
 
 En fait la première chose qu'on voudrait faire c'est afficher un joueur plutôt que la
-map, moi c'est ce que j'ai fait.
+map, moi c'est ce que j'ai fait (partie suivante), mais vu que le joueur est ajouté
+sur la MAP, il est normal de commencer par la MAP.
+
+Vos étapes sont
+
+	* afficher une tile, c'est à dire un pixel ou une case de la MAP
+	* déplacer le tile en haut à gauche, on n'oublie pas de centrer le tile (x+width/2, y-height/2 par exemple)
+	* afficher une map de tiles
+
+		* c'est généralement un tableau
+		*
+
+			à une dimension c'est mieux (en mémoire c'est plus rapide), mais faite une fonction qui prends i,j et retourne un indice
+
+				.. code:: java
+
+						//exemple en java
+						public int deuxDimensionsVersUneDimensions(int colonne, int ligne, int largeur){
+						 //on va calculer position, qui contient la position dans un tableau à une dimension
+						 int position;
+						 position = ligne * largeur + colonne;
+						 return position;
+						}
+
+						public Point uneDimensionsVersDeuxDimensions(int indice, int largeur){
+						 int ligne, colonne;
+						 ligne = indice/largeur;
+						 colonne = indice%largeur;
+						 return new Point(colonne, ligne);
+						}
+
+		* si vos tiles sont des images (une image/tile), essayez de faire un atlas
+		* ne dessinez que ce qui est affiché (si votre map est plus grande que l'écran)
+
+	* ajoutez une caméra
+
+		* une fonction pour déplacer la caméra
+		* une fonction pour la centrer à un point
+
+2. STEP 2 : Le héro
+=====================
+
+	* Afficher le héro
+	* Le mettre au bon niveau (si vous utilisez tiled)
+	* mettez le sur une tile, ajustez si besoin des pieds
+	* coder son déplacement
+
+		* de tile en tile ? libre ?
+		* faites en sorte que le mouvement soit "doux" (smooth movement) en utilisant delta
+
+	* centrez la caméra sur le joueur
+	* ajouter des animations
+
+		* animation par défaut
+		* comportement des animations (on fait la frame 1 2 3 puis on revient en 1 ?)
+
+	* collision avec la map
+
+		* sur tiled, on peut ajouter un niveau invisible qui contient une tile ou aucune. S'il y a une tile sur ce niveau alors on interdit l'accès.
+		* sinon il faut trouver un autre moyen de mémoriser des cases accessibles (tableau de 1 et 0 ?)
+
+	* vérifier que le joueur peut se déplacer avant d'autoriser le déplacement
+	* créer des zones d'interactions
+
+		* map de déclencheurs et d'actions (si l'utilisateur appui sur A et est devant la porte, on le téléporte sur le map B)
+		* il existe des déclencheurs
+
+			* arrivée sur une case et départ d'une case
+			* appui sur une touche, ...
+			* ...
+
+3. Personnages non joueurs PNJ
+=================================
+
+Pour gérer facilement les PNJ, on fait généralement des squelettes de chaque
+catégorie de PNJ.
+
+	* coder l'affichage de un/deux PNJ
+	* gérer leurs déplacements (ils ne marchent pas en continu, parfois font des pauses)
+	* gérer la collision avec le joueur
+
+		* on peut vérifier s'il y a collision entre le joueur et tous les PNJ
+		* on déplace le joueur/PNJ s'il y a collision
+		* attention à ne pas envoyer quelqu'un hors de la MAP
+
+	* généraliser pour tous les PNJs
+
+4. Interface
+=============
+
+	* coder vos composants si besoin (panels, boites de dialogues, toast, ...)
+	* tips: pour faire une barre de progression (HP/MP), on superpose la barre vide à la barre remplie
+	* créez vos menus
+	* codez les éventuelles transitions (écran noir/une animation)
+
+		* quitte/Entre dans une ville/donjon/...
+		* Entre/Sort d'un combat
+		* Va dans un menu
+
+5. Stats
+==========
+
+Implémentez vos stats, n'oubliez pas de converser
+
+	* min et max
+	* un moyen de calculer les effets (épée: force +5)
+	* décider de l'ordre d'application des effets (% avant les +/... ? buff avant debuff? fois avant plus?)
+
+On code la fonction de leveling
+
+	* niveau des ennemis s'adapte au joueur ?
+	*
+		Comment calculer le nombre d'expérience points (xp) qu'il faudra avoir pour passer au niveau suivant?
+		S'il beaucoup de chose à monter de niveau (plusieurs perso, équipement etc... il y a t'il beaucoup de
+		moyens de monter de niveaux ?) ?
+
+		Si oui alors il faut choisir une fonction de leveling dans laquelle on passe facilement au niveau suivant
+		sinon il faut choisir une fonction dans laquelle on prends longtemps à monter de niveau.
+
+		D&D
+			* :math:`500 * (niveau ^ 2) - (500 * niveau)`
+			* niveau 10 = 62000 xp
+			* leveling seulement hero
+
+		PokemonG1
+			* :math:`round((4 * (niveau ^ 3)) / 5)`
+			* niveau 10 = 1500xp
+			* leveling beaucoup
+
+Il faut déterminer de combien augmenter les stats.
+
+		* vous pouvez générer un nombre aléatoire dans un intervalle (Utilisez les dés)
+		* vous pouvez n'augmenter que les stats liées à la classe ou alors augmenter de façon plus importante les stats liés à la classe
+		* vous pouvez augmenter les stats de la classe d'un certain nombre puis augmenter les certains stats (aléatoires) d'un certain nombre (aléatoire, interval)
+		* vous pouvez faire une grille (force 1~8, vitesse 3~5, ...) et noter le % d'utilisation (si attaque au point, alors force ; attaque en premier alors vitesse ; etc...). Vous attribuer alors des stats en fonction du profil du player. Le % correspond à un modification sur la probabilité que ce stat soit augmenté, ou alors % de chance d'avoir une amélioration de stats supplémentaires.
+		* On peut avoir une stat de croissance qui est un modificateur sur la vitesse de leveling (gagne plus de stats si élevé).
+
+N'oublier pas de faire des tests, tester combien de HP une potion doit donner, etc...
+
+6. Inventaire
+===============
 
 
 
