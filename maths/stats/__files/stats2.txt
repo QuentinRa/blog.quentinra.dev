@@ -1,9 +1,0 @@
-Statistiques pondérées
-	Si on a des valeurs associés à une probabilités dans deux vecteurs, alors on peut soit
-	les fusionner soit travailler dessus sans les désagréger avec :code:`wtd.mean(v,p)`,
-	:code:`wtd.mean(v,p)`, ... du package :code:`questionr`.
-
-On peut également tester la fonction de répartition (:code:`ecdf(rloi(...))` en R)
-en la superposant à un graphique précédemment obtenu (on rappelle le add=TRUE).
-
-Stop page 302/451

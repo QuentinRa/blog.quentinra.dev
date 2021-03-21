@@ -121,8 +121,7 @@ matrices, tables, ...).
 	* :code:`which.min(v) ou which.max(v)` : retourne l'indice du min/max
 	* :code:`which(v opérateur valeur)` : retourne les indices des éléments selon la condition
 	* :code:`rev(v)` : inverse
-	* :code:`sum(v)` : somme de tous les éléments
-	* :code:`prod(v)` : produit de tous les éléments
+	* :code:`sum(v)`/:code:`prod(v)` : somme/produit de tous les éléments
 	* :code:`attributes(vecteur)` : voir les attributs (dim, ...)
 	* :code:`any(v opérateur valeur)` : retourne true un des éléments respectent la condition
 	* :code:`all(v opérateur valeur)` : retourne true tous les éléments respectent la condition
@@ -130,6 +129,9 @@ matrices, tables, ...).
 	* :code:`View(v)` : voir le contenu d'un vecteur
 	* :code:`identical(v1,v2)` : savoir si deux vecteurs sont indentiques
 	* :code:`valeur %in% v` : savoir si valeur est dans v
+	* :code:`intersect(x,y)`, :code:`union(x,y)` et :code:`setdiff(x,y)` : faire l'intersection/l'union/différence
+	* :code:`is.element(e,v)` : true si e est dans v
+	* :code:`mlv` (modeest) : estimer la valeur la plus fréquente
 
 Enfin, n'oubliez pas les fonctions :code:`length(x)`, :code:`nrows(x)`
 ou :code:`dim(x)` pour obtenir la taille de x (fonction dépends du type).
@@ -218,6 +220,10 @@ Manipulation de chaine de caractères
 
 	* :code:`paste(s1, ..., collapse = C)` : fusionne les résultats en les séparant par C
 	* :code:`paste(s1, ..., sep = S)` : s1, ... sont fusionnés avec le séparateur S entre
+	* :code:`print` (=print), :code:`cat` (=concatenate and print)
+	* :code:`substring` (=substr), :code:`strsplit` (=split), :code:`nchar` (=length)
+	* :code:`toupper`, :code:`tolower`
+	* :code:`gsub` (=tr), :code:`trimws` (=trim)
 
 Vous pouvez générer des fichiers contenant un graphique les fonctions (:code:`pdf(path)`,
 :code:`jpeg(path),`, :code:`png(path)`, ...). Elle créent un périphérique graphique
@@ -357,6 +363,27 @@ de fichier, avec des métadonnées.
     :maxdepth: 1
 
 		Introduction				<exercices/intro>
+
+10. 10e couche
+=================
+
+Ici, voici un paquet de trucs en vracs, que vous n'allez normalement jamais utiliser
+donc il n'ont pas étés rangés volontairement.
+
+Les fonctions de maths
+
+	* :code:`circular` : tracer un cercle trigonométrique.
+	* :code:`outer` : table de vérité
+	* :code:`iqr` : écart/étendue interquartile
+	* :code:`mad` : déviation absolue de la médiane
+	* :code:`melt` ou :code:`cast` : restructurer un data.frame
+	* :code:`Re`, :code:`Mod`, :code:`Img`, :code:`Arg`, :code:`Conj`
+	* :code:`crossprod` : produit scalaire
+	* :code:`iconv` : gérer les accents...
+	* :code:`Sys.Date`, :code:`Sys.Timezone`, :code:`format`, :code:`weekdays`, :code:`months`, :code:`difftime`
+	* :code:`chol` : décomposition de Cholesky
+	* :code:`dist` : distance
+	* :code:`circular` :
 
 -----
 

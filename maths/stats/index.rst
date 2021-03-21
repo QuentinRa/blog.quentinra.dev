@@ -101,7 +101,7 @@ Médiale
 Mode
 	Valeur qui apparait le plus de fois.
 
-Quantiles :code:`quantiles`
+Quantiles :code:`quantiles` ou :code:`fivenum`
 	Il s'agit d'un découpage de la distribution en part égales (4=quartile,10=déciles, 100=centiles...).
 
 	Le quartile 3 (ou 3ème quartile) désigne ainsi la valeur séparant 3/4 de la distribution et le
@@ -137,9 +137,11 @@ Moments
 	| Moment d'ordre 3 : Skewness (coefficient d’asymétrie), :code:`E[(X-\mu)^3]/\sigma^3` (:code:`skewness`) [#3]_
 	| Moment d'ordre 4 : Kurtosis (coefficient d’aplatissement), :code:`E[(X-\mu)^4]/\sigma^4 - 3` (:code:`kurtosis`) [#3]_
 
-	Si Skewness est proche de 0 alors la distribution est symétrique.
+	Si Skewness est proche de 0 alors la distribution est symétrique. S'il est positif
+	avec la distribution est penchée à droite et inversement.
 
-	Si Kurtosis est faible alors la répartition est équilibrée sinon il y a un pic. En particulier,
+	Si Kurtosis est faible alors la répartition est équilibrée sinon il y a un pic (haut si positif,
+	bas si négatif). En particulier,
 	si Kurtosis vaut 3 alors on a une loi gaussienne.
 
 	.. [#3] fonctions de la librairie :code:`e1071` (ou :code:`moments`).
@@ -206,7 +208,9 @@ Gérer les valeurs NA
 
 Fonctions utiles
 		* :code:`summary()` : le nombre de NA, les moyennes, ...
-		* :code:`describe()` : comme summary mais un peu plus beau, :code:`library('prettyR')`
+		* :code:`describe()` (ou :code:`brkdn`) : comme summary :code:`library('pastecs')`
+		* :code:`describeBy()` : comme summary :code:`library('psych')`
+		* :code:`stat.desc()` : comme summary :code:`library('psych')`
 		* :code:`View()` : afficher (graphiquement)
 		* :code:`head()`/:code:`tail()` : le début/fin donc les premières/dernières valeurs
 		* :code:`dim()` ou :code:`length()` : savoir combien de lignes=individus/colonnes=variables on manipule
@@ -215,6 +219,9 @@ Fonctions utiles
 		* :code:`complete.cases()` : le nombre de lignes sans NA donc ok
 		* :code:`range()` : retourne le min et le max
 		* D'autres fonctions : :code:`var, sd, quantile, ...`
+
+Les alternatives a summary proposent des résultats parfois plus beaux et avec plus ou moins
+d'informations. summary reste le plus utilisé.
 
 5. Préparation
 ================
@@ -458,6 +465,18 @@ Si la variable à expliquer est qualitative, les outils possibles (et non vu ici
 
 	* l’analyse factorielle discriminante
 	* les arbres de décision (+les forêts aléatoires)
+
+10. Trucs en vrac
+==================
+
+Statistiques pondérées
+	Si on a des valeurs associés à une probabilités dans deux vecteurs, alors on peut soit
+	les fusionner soit travailler dessus sans les désagréger avec :code:`wtd.mean(v,p)`,
+	:code:`wtd.mean(v,p)`, ... du package :code:`questionr` ou :code:`weighted.mean(v,p)`
+	du package de base.
+
+On peut tester la fonction de répartition (:code:`ecdf(rloi(...))` en R)
+en la superposant à un graphique précédemment obtenu (on rappelle le add=TRUE).
 
 -----
 
