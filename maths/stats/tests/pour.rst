@@ -49,3 +49,8 @@ Test exact de Fisher
 
 :code:`Fonction`
 	La fonction est :code:`fisher.test(var, var)` ou :code:`fisher.test(table(var,var))`.
+
+----
+
+**Références**
+	* http://www.jybaudot.fr/Inferentielle/indepkhidx.html

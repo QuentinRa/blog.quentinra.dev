@@ -1,21 +1,10 @@
-	* H0 : l'ajustement est correct
-	* H1 : l'ajustement n'est pas correct
+Courses
 
-Test d'adéquation du khi-deux
+https://openclassrooms.com/fr/courses/4525306-initiez-vous-a-la-statistique-inferentielle/5016620-decouvrez-les-tests-dadequation-le-khi-deux-et-kolmogorov-smirnov
+https://fr.linkedin.com/learning/r-les-statistiques-parametriques/tester-l-ajustement-d-une-loi-de-poisson-par-le-khi-deux
 
-On calcule la différence entre les valeurs théoriques
-et celles observées.
+Tests
 
-Pour trouver la loi théorique, il faut deviner le nombre de degrés
-de libertés qui est :code:`n - 1 - [nombre de paramètres de la loi théorique estimé]`.
-
-Au moins 5 individus.
-
-Test d'ajustement de Kolmogorov-Smirnov
-
-Généralement, en complément d'un test d'adéquation du khi-deux.
-On compare l'écart maximum entre la fonction de répartition théorie et celle observée.
-
-Si ajustement à une loi normale, on cela devient un https://fr.wikipedia.org/wiki/Test_de_Lilliefors
-
-En R : ks.test(obs, th)
+	* https://www.statology.org/kolmogorov-smirnov-test-r/
+	* https://www.geeksforgeeks.org/kolmogorov-smirnov-test-in-r-programming/
+	* https://www.duclert.org/r-tests-statistiques/test-kolmogorov-smirnov-R.php

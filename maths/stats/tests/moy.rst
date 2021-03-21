@@ -80,7 +80,7 @@ Test Z à une moyenne, unilatéral gauche
 ******************************************
 
 :code:`Conditions`
-	???
+	On suppose la loi normale ou un échantillon grand.
 
 :code:`Fonction`
 	La fonction est :code:`z.test(ech, alternative = "less", mu = mu, conf.level = 0.95)`
@@ -90,8 +90,14 @@ Test Z à deux moyennes
 ************************
 
 :code:`Conditions`
-	???
+	On suppose la loi normale ou un échantillon grand.
 
 :code:`Fonction`
 	La fonction est :code:`z.test(ech, alternative = "two.sided", mu = mu, conf.level = 0.95)`
 	du package :code:`BSDA`.
+
+----
+
+**Références**
+	* http://www.jybaudot.fr/Inferentielle/compmoyind.html
+	* http://www.jybaudot.fr/Inferentielle/testz.html

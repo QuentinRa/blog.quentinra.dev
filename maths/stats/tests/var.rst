@@ -4,16 +4,16 @@ Test de comparaison des variances
 
 N tests possibles
 
-	* **de Fisher (2 variances)**
-	* **de Levene et de Brown-Forsythe**
-	* **de Bartlett**
+	* **Test F de Fisher (2 variances)**
+	* **Test de Levene et de Brown-Forsythe**
+	* **Test de Bartlett**
 
 On considère
 
 	* H0 : les variances sont égales
 	* H1 : les variances sont différentes
 
-Test de Fisher (2 variances)
+Test F de Fisher (2 variances)
 ******************************
 
 :code:`Conditions`
@@ -49,3 +49,9 @@ Test de Levene et de Brown-Forsythe
 :code:`Fonction`
 	| La fonction :code:`leveneTest(quant, qual)` du package :code:`car`
 	| La fonction :code:`levene.test(quant, qual, location = "median")` du package :code:`lawstat`
+
+----
+
+**Références**
+	* https://www.statology.org/f-test-in-r/
+	* http://www.jybaudot.fr/Inferentielle/testf.html

@@ -472,23 +472,7 @@ Si la variable à expliquer est qualitative, les outils possibles (et non vu ici
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
-	* général
-
-		* https://rpsychologist.com/viz
-
-	* tests
-
-		* in R
-
-			* https://www.statology.org/kolmogorov-smirnov-test-r/
-			* https://www.geeksforgeeks.org/kolmogorov-smirnov-test-in-r-programming/
-			* https://www.duclert.org/r-tests-statistiques/test-kolmogorov-smirnov-R.php
-
-		* in general
-
-			* http://www.jybaudot.fr/Inferentielle/ajuskhidx.html
-			* http://www.jybaudot.fr/Inferentielle/kolmogorov.html
-
+	* https://rpsychologist.com/viz
 	* likehood (vraisemblance)
 
 		* https://towardsdatascience.com/maximum-likelihood-estimation-in-r-b21f68f1eba4
@@ -496,7 +480,6 @@ Si la variable à expliquer est qualitative, les outils possibles (et non vu ici
 
 	* autres
 
-		* http://www.jybaudot.fr/Inferentielle/ajuskhidx.html
 		* https://fr.wikipedia.org/wiki/Test_F
 		* https://en.wikipedia.org/wiki/Nonparametric_statistics
 		* http://www.unit.eu/cours/cyberrisques/etage_3_frederic/co/Module_Etage_3_22.html
