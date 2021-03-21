@@ -99,5 +99,7 @@ Test Z à deux moyennes
 ----
 
 **Références**
+	* http://www.sthda.com/english/wiki/unpaired-two-samples-wilcoxon-test-in-r
+	* http://www.sthda.com/english/wiki/unpaired-two-samples-t-test-in-r
 	* http://www.jybaudot.fr/Inferentielle/compmoyind.html
 	* http://www.jybaudot.fr/Inferentielle/testz.html

@@ -12,24 +12,6 @@ On va donc comparer un vecteur d'observations (obs) avec un vecteurs des valeurs
 théoriques (théorie) (que vous allez obtenir en utilisant la fonction R de la loi
 avec des paramètres que vous supposez être bons).
 
-Test d’adéquation/de conformité du Khi deux
----------------------------------------------
-
-| **Fonction** : :code:`chisq.test(obs , p = théorie)`
-
-On a généralement deux lois X (1,...,p) et Y (1, ..., q) alors on a une loi du Khi Deux
-qui suit (p-1)(q-1) degrés de liberté (ou alors k-r-1 avec k groupes/classes, r paramètres estimés).
-
-On note df le degré de liberté qu'il faut vérifier. Si R a échoué
-a trouvé le bon degré, on devra faire le calcul manuellement.
-
-.. code:: r
-
-	# si R s'est trompé (df invalide), exemple de calcul manuel
-	> temp <- sum((obs-théorie)^2/théorie)
-	# vous devez donner le vrai df que vous aviez calculé
-	> res <- 1-pchisq(temp, df=le_vrai_df)
-
 Test de Anderson-Darling
 -----------------------------
 

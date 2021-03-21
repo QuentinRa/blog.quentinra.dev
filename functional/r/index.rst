@@ -390,3 +390,7 @@ de fichier, avec des métadonnées.
 	* https://github.com/swirldev/swirl_courses#swirl-courses
 	* http://rug.mnhn.fr/semin-r/PDF/INED-SFdS-MNHN_Sueur_280411.pdf
 	* https://www.math.sciences.univ-nantes.fr/~philippe/download/Anne-Philippe-cours-R.pdf
+	* https://openclassrooms.com/fr/courses/4525256-initiez-vous-au-langage-r-pour-analyser-vos-donnees/6250873-utilisez-les-facteurs
+	* https://fr.wikibooks.org/wiki/Programmer_en_R
+	* https://www.math.univ-toulouse.fr/~xgendre/ens/l3sid/L3SID_SE_TP1.pdf
+	* http://pwer21c.github.io/

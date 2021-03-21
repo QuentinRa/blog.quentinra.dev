@@ -3,8 +3,19 @@ Courses
 https://openclassrooms.com/fr/courses/4525306-initiez-vous-a-la-statistique-inferentielle/5016620-decouvrez-les-tests-dadequation-le-khi-deux-et-kolmogorov-smirnov
 https://fr.linkedin.com/learning/r-les-statistiques-parametriques/tester-l-ajustement-d-une-loi-de-poisson-par-le-khi-deux
 
-Tests
+https://www.statstest.com/mann-whitney-u-test/
+ http://www.sthda.com/french/wiki/logiciel-r
 
-	* https://www.statology.org/kolmogorov-smirnov-test-r/
-	* https://www.geeksforgeeks.org/kolmogorov-smirnov-test-in-r-programming/
-	* https://www.duclert.org/r-tests-statistiques/test-kolmogorov-smirnov-R.php
+http://www.sthda.com/french/wiki/visualiser-une-matrice-de-correlation-par-un-correlogramme
+
+https://support.minitab.com/fr-fr/minitab/18/help-and-how-to/modeling-statistics/anova/supporting-topics/basics/understanding-test-for-equal-variances/
+http://foucart.thierry.free.fr/StatPC/livre/chapitre6/fisher.htm
+
+http://www.math-evry.cnrs.fr/_media/members/pneuvial/demstat/201411_ds1_04.testsechapp.pdf
+https://www.lmd.polytechnique.fr/~sturquet/teaching_data/mu001/chap6.pdf
+
+https://lepcam.fr/index.php/les-etapes/test/
+
+https://fr.linkedin.com/learning/r-les-statistiques-parametriques/produire-un-test-t-de-student-homoscedastique-ou-heteroscedastique
+
+http://math.univ-lyon1.fr/~gannaz/Cours/cours_stat.pdf

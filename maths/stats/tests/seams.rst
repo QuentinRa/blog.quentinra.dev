@@ -2,7 +2,7 @@
 Test d'adéquations
 =====================
 
-Les tests d'adéquations (ou ajustement) sont utilisés pour mesurer la possibilité
+Les tests d'adéquations (ou ajustement ou de conformité) sont utilisés pour mesurer la possibilité
 qu'un échantillon observé et été généré par une loi théorique.
 
 2 tests possibles
@@ -39,6 +39,20 @@ Test d'adéquation du khi-deux
 
 	P à la même sémantique que p mais vous donnez des valeurs entre 0 et 100.
 
+:code:`Note`
+	On a généralement deux lois X (1,...,p) et Y (1, ..., q) alors on a une loi du Khi Deux
+	qui suit (p-1)(q-1) degrés de liberté (ou alors k-r-1 avec k groupes/classes, r paramètres estimés).
+
+	On note df le degré de liberté qu'il faut vérifier. Si R a échoué
+	a trouvé le bon degré, on devra faire le calcul manuellement.
+
+	.. code:: r
+
+		# si R s'est trompé (df invalide), exemple de calcul manuel
+		> temp <- sum((obs-théorie)^2/théorie)
+		# vous devez donner le vrai df que vous aviez calculé
+		> res <- 1-pchisq(temp, df=le_vrai_df)
+
 Test d'ajustement de Kolmogorov-Smirnov
 *****************************************
 
@@ -64,3 +78,4 @@ Test d'ajustement de Kolmogorov-Smirnov
 	* http://www.jybaudot.fr/Inferentielle/kolmogorov.html
 	* https://openclassrooms.com/fr/courses/4525306-initiez-vous-a-la-statistique-inferentielle/5016620-decouvrez-les-tests-dadequation-le-khi-deux-et-kolmogorov-smirnov
 	* https://fr.linkedin.com/learning/r-les-statistiques-parametriques/tester-l-ajustement-d-une-loi-de-poisson-par-le-khi-deux
+	* http://www.unit.eu/cours/cyberrisques/etage_3_frederic/co/Module_Etage_3_22.html

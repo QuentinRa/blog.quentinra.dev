@@ -4,7 +4,7 @@ Test de comparaison des variances
 
 N tests possibles
 
-	* **Test F de Fisher (2 variances)**
+	* **Test de Fisher (2 variances)**
 	* **Test de Levene et de Brown-Forsythe**
 	* **Test de Bartlett**
 
@@ -13,7 +13,7 @@ On considère
 	* H0 : les variances sont égales
 	* H1 : les variances sont différentes
 
-Test F de Fisher (2 variances)
+Test de Fisher (2 variances)
 ******************************
 
 :code:`Conditions`
@@ -54,4 +54,7 @@ Test de Levene et de Brown-Forsythe
 
 **Références**
 	* https://www.statology.org/f-test-in-r/
+	* https://fr.wikipedia.org/wiki/Test_F
 	* http://www.jybaudot.fr/Inferentielle/testf.html
+	* https://support.minitab.com/fr-fr/minitab/18/help-and-how-to/modeling-statistics/anova/supporting-topics/basics/understanding-test-for-equal-variances/
+	* http://foucart.thierry.free.fr/StatPC/livre/chapitre6/fisher.htm

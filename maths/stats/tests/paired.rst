@@ -50,3 +50,9 @@ Test de McNemar
 
 	Le correct corresponds à la correction de continuité (T=oui, F=non). Si désactivé, le test
 	est moins robuste mais plus puissant.
+
+----
+
+**Références**
+	* http://jybaudot.fr/Inferentielle/signes.html
+	* http://www.math-evry.cnrs.fr/_media/members/pneuvial/demstat/201411_ds1_04.testsechapp.pdf
