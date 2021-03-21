@@ -30,8 +30,10 @@
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functional/r/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/functional/r/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats/__files/stats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/__files/stats.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats/__files/stats2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/opti/files.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/files.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/__files/cours_proba.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/proba/cours_proba.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/__files/r_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/stats/__files/stats.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/stats/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
@@ -97,11 +99,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\games" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\proba" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\math\stats" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\stats\__files" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\stats\tests" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\stats\tests\old" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\games" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -434,7 +436,7 @@
       <workItem from="1616160585516" duration="27953000" />
       <workItem from="1616198907711" duration="1961000" />
       <workItem from="1616230876682" duration="39603000" />
-      <workItem from="1616337769890" duration="9094000" />
+      <workItem from="1616337769890" duration="9952000" />
     </task>
     <servers />
   </component>

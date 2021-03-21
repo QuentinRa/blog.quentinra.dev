@@ -4,8 +4,8 @@
 Langage R
 =============
 
-| :math:`\color{grey}{Version \ 0.7.31}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 20/03/2021}`
+| :math:`\color{grey}{Version \ 0.9.32}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 32/03/2021}`
 
 1. Introduction
 ===================
@@ -132,6 +132,7 @@ matrices, tables, ...).
 	* :code:`intersect(x,y)`, :code:`union(x,y)` et :code:`setdiff(x,y)` : faire l'intersection/l'union/différence
 	* :code:`is.element(e,v)` : true si e est dans v
 	* :code:`mlv` (modeest) : estimer la valeur la plus fréquente
+	* :code:`duplicated(v)` : tableau de booléens avec true si valeur en double
 
 Enfin, n'oubliez pas les fonctions :code:`length(x)`, :code:`nrows(x)`
 ou :code:`dim(x)` pour obtenir la taille de x (fonction dépends du type).
@@ -174,6 +175,11 @@ On se rappelle le point sur les blocs, si une fonction ne retourne rien, elle re
 de sa dernière expression (si celle ci retourne quelque chose ce qui n'est pas cas d'une assignation par exemple).
 Les variables, contrairement aux blocs normaux n'existent que dans le bloc mais si R
 ne trouve pas une variable, il va voir dans le bloc d'au dessus.
+
+Parfois, on retrouve dans nos fonctions
+
+	* :code:`warning("")` : afficher un warning
+	* :code:`stop("")` : afficher une erreur (quitte la fonction)
 
 6. Fonctions utilitaires
 ===========================
@@ -370,8 +376,6 @@ de fichier, avec des métadonnées.
 Ici, voici un paquet de trucs en vracs, que vous n'allez normalement jamais utiliser
 donc il n'ont pas étés rangés volontairement.
 
-Les fonctions de maths
-
 	* :code:`circular` : tracer un cercle trigonométrique.
 	* :code:`outer` : table de vérité
 	* :code:`iqr` : écart/étendue interquartile
@@ -383,7 +387,10 @@ Les fonctions de maths
 	* :code:`Sys.Date`, :code:`Sys.Timezone`, :code:`format`, :code:`weekdays`, :code:`months`, :code:`difftime`
 	* :code:`chol` : décomposition de Cholesky
 	* :code:`dist` : distance
-	* :code:`circular` :
+	* :code:`polyroot` : racine d'un polynome
+	* :code:`uniroot` : permet de trouver pour une fonction, la valeur qui l'annulle (si continue, change de signe)
+	* :code:`integrate(f, lower = 0, upper = 1)` : calcule une intégrale
+	* :code:`taylor` (pracma) : dev de Taylor
 
 -----
 

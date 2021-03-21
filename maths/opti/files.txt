@@ -1,1 +1,22 @@
 https://www.ljll.math.upmc.fr/~nardoni/TDagrl3/TD4cor.pdf
+
+optimisation
+-----------------
+
+install.packages("numDeriv")
+library(numDeriv)
+
+Montrons que le point (1,1,1) est un point critique de cette fonction.
+Pour cela nous calculons le Gradient
+
+grad(func=ma_fonction,x=c(1,1,1))
+
+[1] 0 0 0
+Le gradient est nul, le point est donc critique.
+
+Pour déterminer la nature de ce point stationnaire, nous calculons la hessienne :
+hessian(func=ma_fonction,x=c(1,1,1))
+
+Il nous reste à déterminer les valeurs propres : eigen(hessian(...))
+
+Les valeurs propres sont positives et négatives, le point (1,1,1) est donc un point selle.

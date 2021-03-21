@@ -4,8 +4,8 @@
 Statistiques et R
 ===================================
 
-| :math:`\color{grey}{Version \ 0.22.67}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 20/03/2021}`
+| :math:`\color{grey}{Version \ 0.24.73}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 21/03/2021}`
 
 Les prérequis sont de savoir lire du R (concepts de base et un peu avancés).
 Ceci n'est pas un cours de maths donc ce ne sont pas des vraies statistiques
@@ -203,6 +203,7 @@ Gérer les valeurs NA
 	:code:`library(visdat);vis_miss(ech)`.
 
 		* solution 1 : supprimer les lignes (et donc perdre beaucoup d'informations)
+		* solution 1 (supprimer) : :code:`na.omit(v)` (supprime les lignes ayant une valeur manquante)
 		* solution 2 : remplacer NA par une valeur (en tenant compte des autres valeurs pour ne rien fausser)
 		* solution 2 (moyenne) : :code:`ech$quant[is.na(ech$quant)] <- mean(ech$quant, na.rm = TRUE)`
 
