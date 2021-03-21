@@ -19,3 +19,5 @@ https://lepcam.fr/index.php/les-etapes/test/
 https://fr.linkedin.com/learning/r-les-statistiques-parametriques/produire-un-test-t-de-student-homoscedastique-ou-heteroscedastique
 
 http://math.univ-lyon1.fr/~gannaz/Cours/cours_stat.pdf
+
+https://www.math.sciences.univ-nantes.fr/~philippe/new/pdf/stat/Aphilippe-MCviano-cours-stat-MIM.pdf

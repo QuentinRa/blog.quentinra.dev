@@ -418,6 +418,7 @@ ce que j'ai trouvé car il n'y a jamais vraiment de conditions explicitées.
 		Test de comparaison des proportions                   <tests/pour>
 		Test de comparaison des moyennes                      <tests/moy>
 		Test de comparaison des variances                     <tests/var>
+		Test d'adéquations                                    <tests/seams>
 		Technique du Boostrap                                 <tests/mdb>
 		Test de la nullité du coefficient de corrélation      <tests/cor>
 		Test sur les données appariées                        <tests/paired>
