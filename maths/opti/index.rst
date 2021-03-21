@@ -5,136 +5,14 @@ Optimisation
 | :math:`\color{grey}{Version \ 0.0.005}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 11/03/2021}`
 
-.. note::
-
-	Ceci n'est pas un cours de maths, en fait ce n'est même pas un cours. Il s'agit de
-	notes que j'ai essayé de faire pour comprendre l'optimisation, prenez en compte mon
-	niveau désastreux en maths SVP.
-
 L'optimisation consiste à calculer la valeurs min/max d'une fonction,
 c'est-à-dire les extremums.
-
-On l'utilise par exemple en statistiques avec la méthode des moindres
-carrés permettant de trouver un maximum de vraisemblance.
-
-On distingue généralement deux cas : avec contraintes (x appartient à un ensemble, ...)
-de l'optimisation sans contraintes.
-
-Minimisation
-====================
 
 Un problème de maximisation de de g, on peut le voir sous la forme de la minimisation
 d'une fonction f tel que :code:`f = -g`.
 
-On note généralement :math:`x^*` le (point x,y) minimum atteint lorsqu'il est unique.
-
-Il existe un minimum si
-
-	* f est continue et coercive (limite +inf : +inf) : :math:`x^*`
-	* f est bornée inférieurement
-
-Minimum local
-	Si on restreint f sur un interval autour d'un point x, alors le minimum
-	est appelé minimum local.
-
-	De ce que j'ai compris, généralement si la courbe fait des vagues (inversées fin haut-bas-haut),
-	alors on a un minimum local par vague qui corresponds donc à la valeur la plus basse.
-
-Minimum global
-	C'est la plus petite valeur, c'est aussi un minimum local. Généralement ne pas préciser le
-	type de minimum implique que c'est un minimum global.
-
-Interval de minima
-	Si vous avez votre fonction qui sur un interval reste à la valeur de votre minimum global
-	alors cet interval est appelé interval de minima.
-
-Gradient
-	Soit :math:`x^*` un minimum local, alors on le gradient de f :math:`\nabla f(x^*) = 0`
-	(condition de premier ordre? quezako?).
-	Cette condition n'est pas suffisante.
-
-	Nabla : dérivée partielle donc selon une variable, et le gradient (nabla f(x))
-	est un vecteur de toutes les dérivées partielles donc selon chaque variable.
-
-	On peut parler de dérivée directionnelle si on multiplie chaque terme par une direction.
-
-Point de selle
-	Valeur telle que :math:`\nabla f(x^*) = 0` et la courbe est de signes différents gauche/droite.
-
-Point critique/stationnaire
-	Valeur telle que :math:`\nabla f(x) = 0`.
-
-Fonction quadratique
-	Il s'agit d'une fonction de la forme :math:`f(x) = \frac{1}{2} x^{*} Qx + g^{*}x + c`
-	avec Q une matrice symétrique, ce qui donne :math:`\nabla f(x) = Qx + g` et
-	:math:`\nabla^2 f(x) = Q`.
-
-	Si Q est définie positive, :math:`x^* = -Q^{-1} g` est l'unique solution, sinon pas
-	de solutions.
-
-Optimisation sans contraintes
-=================================
-
-De ce que j'ai compris (je crois), pour
-
-trouver minimum local
-	* on a une fonction à minimiser (ou maximiser c'est presque pareil)
-	* on va chercher un minimum local
-	* on va calculer le gradient (vecteur des dérivées partielles, x1, x2, ...)
-	* on cherche un point pour lequel le gradient s'annule : minimum local
-	* on calcule le gradient au carré (matrice, Q, cette fois)
-	* on calcule Q (remplace les x1,...) avec le minimum local (vecteur de x1, ...)
-	* on vérifie que Q est définie positive, on note la valeur haut gauche de la hessienne delta1
-
-		* det > 0 et delta1 > 0  : minimum local
-		* det > 0 et delta1 < 0  : minimum local/maximum local
-		* det < 0 et delta1 < 0  : point selle
-		* det < 0 et delta1 <= 0  : point selle
-		* det < 0 et delta1 > 0  : point selle
-
-	* si oui, alors notre minimum est bien un minimum local
-
-trouver un point critique
-	* on doit résoudre gradient = 0
-	* donc n équations à n inconnues
-	*
-
-		`wolframalpha ec4 <https://www.wolframalpha.com/calculators/system-equation-calculator>`_
-		peut vous aider si besoin, mais c'est pas mal de le faire soit-même.
-
-Déterminer les minima de :math:`f(x) : 2x^2 + y^2 − 2xy + 4x`
-
-	* résous pour trouver x et y
-	* `wolframalpha ec2 <https://www.wolframalpha.com/input/?i=systems+of+equations+calculator&assumption=%7B%22F%22%2C+%22SolveSystemOf2EquationsCalculator%22%2C+%22equation1%22%7D+-%3E%224x+%E2%88%92+2y+%2B+4%22&assumption=%22FSelect%22+-%3E+%7B%7B%22SolveSystemOf2EquationsCalculator%22%7D%7D&assumption=%7B%22F%22%2C+%22SolveSystemOf2EquationsCalculator%22%2C+%22equation2%22%7D+-%3E%222y+%E2%88%92+2x%22>`_
-	* on obtient un minimum : (-2, -2)
-	*
-
-		on calcule le gradient
-		(`https://www.symbolab.com/solver/partial-derivative-calculator/ <https://www.symbolab.com/solver/partial-derivative-calculator/%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20x%7D%5Cleft(2x%5E%7B2%7D%20%2B%20y%5E%7B2%7D%20%E2%88%92%202xy%20%2B%204x%5Cright>`_)
-		donc
-
-		.. math::
-
-
-				\nabla f(x^*) = \begin{pmatrix}4x + 2y + 4 \\ 2y - 2x\end{pmatrix}
-				\\ \text{ ce qui donne, en faisant chacun des dérivée partielles} \\
-				H_f(x^*) = \begin{pmatrix}(4x+2a+4)' & (4a + 2y + 4)' \\  (2a - 2x)' & (2y - 2a)' \end{pmatrix} \\
-				\\ \text{ on calcule nos dérivées, constantes sautent} \\
-				\Longleftrightarrow \\
-				H_f(x^*) = \begin{pmatrix}4 & 2 \\  -2 & 2\end{pmatrix}
-
-	* on calcule le déterminant : 4 donc bien définie positive
-	* on note la valeur delta1 : 4
-	* on n'a aucun x a remplacer donc ok, sinon on remplace par chacun des résultats
-	* det > 0 et delta1 > 0 donc (-2,-2) minimum local
-
-Optimisation sous contraintes
-=================================
-
-Variable d’écart
-	Une variable d’écart est utilisée pour transformer une contrainte d’inégalité en une contrainte
-	d’égalité. En gros on ajoute une variable qui ne change pas l'égalité mais qui nous permet
-	d'écrire une équation égale à 0 par exemple.
+On distingue généralement deux cas : l'optimisation avec contraintes (x appartient à un ensemble, ...)
+de l'optimisation sans contraintes.
 
 ------
 

@@ -4,7 +4,7 @@
 Coder un RPG (2D)
 ====================
 
-| :math:`\color{grey}{Version \ 0.0.1}`
+| :math:`\color{grey}{Version \ 0.5.1}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 19/03/2021}`
 
 Un RPG (Role-playing game) ou jeu de rôles est un type de jeu dans lequel
@@ -34,8 +34,8 @@ est mon retour d'expérience.
 
 On écrit PNJ pour personnage non joueur.
 
-2. STEP 1 : La Map
-=====================
+STEP 1 : La Map
+================
 
 En fait la première chose qu'on voudrait faire c'est afficher un joueur plutôt que la
 map, moi c'est ce que j'ai fait (partie suivante), mais vu que le joueur est ajouté
@@ -77,8 +77,8 @@ Vos étapes sont
 		* une fonction pour déplacer la caméra
 		* une fonction pour la centrer à un point
 
-2. STEP 2 : Le héro
-=====================
+STEP 2 : Le héro
+=================
 
 	* Afficher le héro
 	* Le mettre au bon niveau (si vous utilisez tiled)
@@ -109,8 +109,8 @@ Vos étapes sont
 			* appui sur une touche, ...
 			* ...
 
-3. Personnages non joueurs PNJ
-=================================
+STEP 3 : Personnages non joueurs PNJ
+========================================
 
 Pour gérer facilement les PNJ, on fait généralement des squelettes de chaque
 catégorie de PNJ.
@@ -125,8 +125,8 @@ catégorie de PNJ.
 
 	* généraliser pour tous les PNJs
 
-4. Interface
-=============
+STEP 4 : Interface
+=======================
 
 	* coder vos composants si besoin (panels, boites de dialogues, toast, ...)
 	* tips: pour faire une barre de progression (HP/MP), on superpose la barre vide à la barre remplie
@@ -137,8 +137,8 @@ catégorie de PNJ.
 		* Entre/Sort d'un combat
 		* Va dans un menu
 
-5. Stats
-==========
+STEP 5 : Stats
+================
 
 Implémentez vos stats, n'oubliez pas de converser
 
@@ -177,10 +177,94 @@ Il faut déterminer de combien augmenter les stats.
 
 N'oublier pas de faire des tests, tester combien de HP une potion doit donner, etc...
 
-6. Inventaire
-===============
+STEP 6 : Inventaire
+====================
 
+	* ajouter des items
+	* ajouter leurs effects
+	* coder l'interface de l'inventaire
+	* gérer des trucs basiques comme
 
+		* peut-on stacker des items ?
+		* taille de l'inventaire ?
+		* utiliser/jeter des items ?
+		* voir des infos sur un item ?
+
+	* pour équiper un item, vérifiez les restrictions
+	* comment est géré le loot ?
+
+		* drop de l'argent ? (comment montant est choisi?)
+		* drop un item ?
+
+STEP 7 : Combats
+==================
+
+Il faut décider comment l'ordre d'attaque est décidé (stat ? ordre logique ? ...)
+
+Le combat est une suite d'évents. On prends les événements de tout le monde.
+On trie ensuite les événements selon l'ordre d'attaque. Si une personne meurt,
+alors il faut supprimer ses événements.
+
+Il est conseillé de commencer par une version texte puis de passer à la version graphique.
+
+Vous pouvez faire différentes couleurs pour les barres de vies.
+
+Un design commun : fond, ennemies à gauche, héro à droite. Panneau d'informations en bas.
+
+Animations de combat : esquivé, raté, critique, contre. Comment sont fixés les taux ?
+
+Comment le loot est présenté ? (corps à looter ? fin du combat ? ...)
+
+Possible de fuir ? Tout le temps disponible ?
+
+STEP 8 : Quêtes
+================
+
+Début du jeu et Mécaniques
+
+	* Début ? Suite des événements ?
+	* Que peut-on faire (vitesse, sauter, courir) ? Où peut-on aller (taille) ?
+	* Qu'est-ce qu'on trouve à chaque endroit ? (monstres, boutiques, ...)
+
+Gestion des quêtes, pour chaque quête on a
+
+	* un niveau requis
+	* un nom
+	* une description
+	* une récompense
+	* une date limite ?
+	* un lieu ?
+
+STEP 9 : Sauvegarde et chargement
+===================================
+
+Vous allez sauvegarder toutes les informations ce qui comprends
+
+	* temps de jeu ?
+	* argent ?
+	* quêtes terminés ? progression ?
+	* objets récupérés ?
+	* inventaire des marchands ?
+	* informations sur le joueur
+
+Vous pouvez utiliser un système de flags, par exemple
+
+	*	trouver l'objet x dans la cave ? non
+	*	parler avec xxx ? non
+	*	... ? non
+
+Vous sauvegardez alors les valeurs et lisez les flags pour déterminer l'état du jeu.
+
+Pour un jeu complexe, peut être utiliser un système d'id : toutes les quêtes, objets, ...
+ont un id (unique ! deux mêmes objets ont un id différent).
+
+	*	quêtes terminés ? [1,35,78,94]
+	*	objets récupérés ? [19,20,22,277]
+	*	inventaire ? [19,20,22]
+	*	niveau ? 15
+	*	map actuelle ? 1856
+	*	position ? (x=0, y=15)
+	*	stats ? {xp: 1560, ...}
 
 -----
 
