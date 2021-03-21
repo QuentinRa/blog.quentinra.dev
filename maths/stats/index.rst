@@ -360,6 +360,24 @@ le plus probable de correspondre à :math:`\theta`.
 		P_{\theta}(X=x) & \text{si X v.a. discrète, f la probabilité discrète}
 		\end{cases}
 
+Selon un article dans les références et ma compréhension de celui-ci, vous
+pouvez calculer la vraisemblance en R pour une loi de bernouilli de la façon
+suivante
+
+.. code:: R
+
+		# returns likehood
+		L_bern <- function(r,n,expected){ return(dbinom(r,n,expected)) }
+		# will be used to test the likehood for a lot of probabilities (expected)
+		generate_L_bern <- function(expected){
+		 n <- 10
+		 p <- 0.7
+		 r <- rbinom(1, n, p)
+		 return(L_bern(r, n, expected));
+		}
+		# maximum likehood
+		optimise(generate_L_bern, maximum = TRUE, interval = c(0,1))
+
 8. Statistiques inférentielle
 ===============================
 
@@ -454,43 +472,66 @@ Si la variable à expliquer est qualitative, les outils possibles (et non vu ici
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
+	* général
 
-	* http://www.jybaudot.fr/Inferentielle/ajuskhidx.html
-	* https://fr.wikipedia.org/wiki/Test_F
-	* https://en.wikipedia.org/wiki/Nonparametric_statistics
-	* http://www.unit.eu/cours/cyberrisques/etage_3_frederic/co/Module_Etage_3_22.html
-	* https://support.minitab.com/fr-fr/minitab/18/help-and-how-to/modeling-statistics/anova/supporting-topics/basics/understanding-test-for-equal-variances/
-	* http://foucart.thierry.free.fr/StatPC/livre/chapitre6/fisher.htm
-	* http://www.sthda.com/french/wiki/visualiser-une-matrice-de-correlation-par-un-correlogramme
-	* https://fr.wikipedia.org/wiki/Plan_d%27exp%C3%A9riences
-	* https://www.alloprof.qc.ca/fr/eleves/bv/mathematiques/le-coefficient-de-correlation-lineaire-m1377
-	* https://team.inria.fr/imagine/files/2015/09/tp_lissage.pdf
-	* https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_d%27%C3%A9chantillonnage
-	* http://www.fabricemonna.com/wp-content/uploads/2019/12/Poly-eudiant-Estimation-et-intervalle-de-confiance.pdf
-	* http://mapage.noos.fr/jerome.giovendo/CoursFluctuation.pdf
-	* https://openclassrooms.com/fr/courses/4525256-initiez-vous-au-langage-r-pour-analyser-vos-donnees/6250873-utilisez-les-facteurs
-	* https://fr.wikibooks.org/wiki/Programmer_en_R
-	* http://www.math-evry.cnrs.fr/_media/members/pneuvial/demstat/201411_ds1_04.testsechapp.pdf
-	* https://vincentarelbundock.github.io/
-	* https://www.lmd.polytechnique.fr/~sturquet/teaching_data/mu001/chap6.pdf
-	* https://fr.sawakinome.com/articles/education/difference-between-parametric-and-nonparametric-test.html
-	* http://www.dagnelie.be/
-	* https://www.math.univ-toulouse.fr/~xgendre/ens/l3sid/L3SID_SE_TP1.pdf
-	* https://odr.inra.fr/intranet/carto/cartowiki/index.php/Statistiques_descriptives_avec_R
-	* https://larmarange.github.io/analyse-R/statistique-univariee.html
-	* http://www.sthda.com/french/wiki/logiciel-r
-	* https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Test_statistique
-	* https://lepcam.fr/index.php/les-etapes/test/
-	* http://jybaudot.fr/Inferentielle/signes.html
-	* https://www3.nd.edu/~steve/Rcourse/Lecture7v1.pdf
-	* http://www.sthda.com/english/wiki/unpaired-two-samples-wilcoxon-test-in-r
-	* http://www.sthda.com/english/wiki/unpaired-two-samples-t-test-in-r
-	* https://fr.wikipedia.org/wiki/Maximum_de_vraisemblance
-	* https://fr.wikipedia.org/wiki/Estimateur_(statistique)
-	* https://fr.linkedin.com/learning/r-les-statistiques-parametriques/produire-un-test-t-de-student-homoscedastique-ou-heteroscedastique
-	* https://reference.wolfram.com/language/ref/CramerVonMisesTest.html
-	* http://pwer21c.github.io/
-	* https://samm.univ-paris1.fr/IMG/pdf/notes_statr.pdf
-	* https://irma.math.unistra.fr/~ricka/stat/TD1_L3.pdf
-	* http://math.univ-lyon1.fr/~gannaz/Cours/cours_stat.pdf
-	* https://www.tutorialspoint.com/r/index.htm
+		* https://rpsychologist.com/viz
+
+	* tests
+
+		* in R
+
+			* https://www.statology.org/kolmogorov-smirnov-test-r/
+			* https://www.geeksforgeeks.org/kolmogorov-smirnov-test-in-r-programming/
+			* https://www.duclert.org/r-tests-statistiques/test-kolmogorov-smirnov-R.php
+
+		* in general
+
+			* http://www.jybaudot.fr/Inferentielle/ajuskhidx.html
+			* http://www.jybaudot.fr/Inferentielle/kolmogorov.html
+
+	* likehood (vraisemblance)
+
+		* https://towardsdatascience.com/maximum-likelihood-estimation-in-r-b21f68f1eba4
+		* http://www.jybaudot.fr/Inferentielle/statsechantillon.html
+
+	* autres
+
+		* http://www.jybaudot.fr/Inferentielle/ajuskhidx.html
+		* https://fr.wikipedia.org/wiki/Test_F
+		* https://en.wikipedia.org/wiki/Nonparametric_statistics
+		* http://www.unit.eu/cours/cyberrisques/etage_3_frederic/co/Module_Etage_3_22.html
+		* https://support.minitab.com/fr-fr/minitab/18/help-and-how-to/modeling-statistics/anova/supporting-topics/basics/understanding-test-for-equal-variances/
+		* http://foucart.thierry.free.fr/StatPC/livre/chapitre6/fisher.htm
+		* http://www.sthda.com/french/wiki/visualiser-une-matrice-de-correlation-par-un-correlogramme
+		* https://fr.wikipedia.org/wiki/Plan_d%27exp%C3%A9riences
+		* https://www.alloprof.qc.ca/fr/eleves/bv/mathematiques/le-coefficient-de-correlation-lineaire-m1377
+		* https://team.inria.fr/imagine/files/2015/09/tp_lissage.pdf
+		* https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_d%27%C3%A9chantillonnage
+		* http://www.fabricemonna.com/wp-content/uploads/2019/12/Poly-eudiant-Estimation-et-intervalle-de-confiance.pdf
+		* http://mapage.noos.fr/jerome.giovendo/CoursFluctuation.pdf
+		* https://openclassrooms.com/fr/courses/4525256-initiez-vous-au-langage-r-pour-analyser-vos-donnees/6250873-utilisez-les-facteurs
+		* https://fr.wikibooks.org/wiki/Programmer_en_R
+		* http://www.math-evry.cnrs.fr/_media/members/pneuvial/demstat/201411_ds1_04.testsechapp.pdf
+		* https://vincentarelbundock.github.io/
+		* https://www.lmd.polytechnique.fr/~sturquet/teaching_data/mu001/chap6.pdf
+		* https://fr.sawakinome.com/articles/education/difference-between-parametric-and-nonparametric-test.html
+		* http://www.dagnelie.be/
+		* https://www.math.univ-toulouse.fr/~xgendre/ens/l3sid/L3SID_SE_TP1.pdf
+		* https://odr.inra.fr/intranet/carto/cartowiki/index.php/Statistiques_descriptives_avec_R
+		* https://larmarange.github.io/analyse-R/statistique-univariee.html
+		* http://www.sthda.com/french/wiki/logiciel-r
+		* https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Test_statistique
+		* https://lepcam.fr/index.php/les-etapes/test/
+		* http://jybaudot.fr/Inferentielle/signes.html
+		* https://www3.nd.edu/~steve/Rcourse/Lecture7v1.pdf
+		* http://www.sthda.com/english/wiki/unpaired-two-samples-wilcoxon-test-in-r
+		* http://www.sthda.com/english/wiki/unpaired-two-samples-t-test-in-r
+		* https://fr.wikipedia.org/wiki/Maximum_de_vraisemblance
+		* https://fr.wikipedia.org/wiki/Estimateur_(statistique)
+		* https://fr.linkedin.com/learning/r-les-statistiques-parametriques/produire-un-test-t-de-student-homoscedastique-ou-heteroscedastique
+		* https://reference.wolfram.com/language/ref/CramerVonMisesTest.html
+		* http://pwer21c.github.io/
+		* https://samm.univ-paris1.fr/IMG/pdf/notes_statr.pdf
+		* https://irma.math.unistra.fr/~ricka/stat/TD1_L3.pdf
+		* http://math.univ-lyon1.fr/~gannaz/Cours/cours_stat.pdf
+		* https://www.tutorialspoint.com/r/index.htm

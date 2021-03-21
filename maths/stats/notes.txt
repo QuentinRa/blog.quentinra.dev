@@ -1,0 +1,21 @@
+	* H0 : l'ajustement est correct
+	* H1 : l'ajustement n'est pas correct
+
+Test d'adéquation du khi-deux
+
+On calcule la différence entre les valeurs théoriques
+et celles observées.
+
+Pour trouver la loi théorique, il faut deviner le nombre de degrés
+de libertés qui est :code:`n - 1 - [nombre de paramètres de la loi théorique estimé]`.
+
+Au moins 5 individus.
+
+Test d'ajustement de Kolmogorov-Smirnov
+
+Généralement, en complément d'un test d'adéquation du khi-deux.
+On compare l'écart maximum entre la fonction de répartition théorie et celle observée.
+
+Si ajustement à une loi normale, on cela devient un https://fr.wikipedia.org/wiki/Test_de_Lilliefors
+
+En R : ks.test(obs, th)
