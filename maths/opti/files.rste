@@ -5,37 +5,6 @@ Optimisation
 Minimisation
 ====================
 
-Minimum local
-	Si on restreint f sur un interval autour d'un point x, alors le minimum
-	est appelé minimum local.
-
-	De ce que j'ai compris, généralement si la courbe fait des vagues (inversées fin haut-bas-haut),
-	alors on a un minimum local par vague qui corresponds donc à la valeur la plus basse.
-
-Minimum global
-	C'est la plus petite valeur, c'est aussi un minimum local. Généralement ne pas préciser le
-	type de minimum implique que c'est un minimum global.
-
-Interval de minima
-	Si vous avez votre fonction qui sur un interval reste à la valeur de votre minimum global
-	alors cet interval est appelé interval de minima.
-
-Gradient
-	Soit :math:`x^*` un minimum local, alors on le gradient de f :math:`\nabla f(x^*) = 0`
-	(condition de premier ordre? quezako?).
-	Cette condition n'est pas suffisante.
-
-	Nabla : dérivée partielle donc selon une variable, et le gradient (nabla f(x))
-	est un vecteur de toutes les dérivées partielles donc selon chaque variable.
-
-	On peut parler de dérivée directionnelle si on multiplie chaque terme par une direction.
-
-Point de selle
-	Valeur telle que :math:`\nabla f(x^*) = 0` et la courbe est de signes différents gauche/droite.
-
-Point critique/stationnaire
-	Valeur telle que :math:`\nabla f(x) = 0`.
-
 Fonction quadratique
 	Il s'agit d'une fonction de la forme :math:`f(x) = \frac{1}{2} x^{*} Qx + g^{*}x + c`
 	avec Q une matrice symétrique, ce qui donne :math:`\nabla f(x) = Qx + g` et

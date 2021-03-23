@@ -8,7 +8,7 @@ Optimisation
 .. note::
 
 	Ceci n'est pas un cours de maths, en fait ce n'est même pas un cours. Il s'agit d'un brouillon
-	qui est encore moins mature que celui de stats (vraiment très peu ed sources).
+	qui est encore moins mature que celui de stats (vraiment très peu de sources).
 
 1. Introduction
 =================
@@ -57,15 +57,15 @@ On va ici introduire pleins de notions, du style
 	* la forme quadratique, utilisée pour trouver un minimum
 
 Toutes ces notions reposent la notion de :math:`x*` et sur la notion
-de gradient :code:`\nable` soit le vecteur des dérivées partielles
-et :code:`Hf` la matrice hessienne des dérivées partielles.
+de gradient :math:`\nabla f(x*)` soit le vecteur des dérivées partielles
+et :math:`Hf` la matrice hessienne des dérivées partielles.
 
 .. toctree::
    :maxdepth: 1
 
-		Hessien et gradient          <files/grad>
-		Condition d'optimalité       <files/opt>
-		Forme quadratique            <files/quadra>
+		Hessien et gradient          <files/sc/grad>
+		Point particuliers           <files/sc/opt>
+		Forme quadratique            <files/sc/quadra>
 
 ------
 
