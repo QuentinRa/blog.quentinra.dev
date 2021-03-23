@@ -134,12 +134,14 @@ les raccourcis basiques, notez la syntax que je vais utiliser
 	* :code:`CTRL+A` : tout sélectionner
 	* :code:`CTRL+C` : copier
 	* :code:`CTRL+V` : coller
-	* :code:`SHIFT-[...]` : shift et une flèche/begin/end vous permet de rapidement sélectionner des trucs
-	* :code:`CTRL-D` : si rien sélectionné duplique la ligne sinon duplique la sélection
-	* :code:`CTRL-X` : si rien sélectionné supprime la ligne sinon supprime la sélection
-	* :code:`CTRL-R` : faire du remplacement facilement
-	* :code:`CTRL-G` : se déplacer à une ligne
-	* :code:`CTRL-L` : se déplacer à la prochaine occurrence de la dernière recherche (avec CTRL-F ou CTRL-R)
+	* :code:`CTRL+Z` : revenir en arrière
+	* :code:`CTRL+SHIFT+Z` : annuler un retour en arrière
+	* :code:`SHIFT+[...]` : shift et une flèche/begin/end vous permet de rapidement sélectionner des trucs
+	* :code:`CTRL+D` : si rien sélectionné duplique la ligne sinon duplique la sélection
+	* :code:`CTRL+X` : si rien sélectionné supprime la ligne sinon supprime la sélection
+	* :code:`CTRL+R` : faire du remplacement facilement
+	* :code:`CTRL+G` : se déplacer à une ligne
+	* :code:`CTRL+L` : se déplacer à la prochaine occurrence de la dernière recherche (avec CTRL-F ou CTRL-R)
 
 **pratiques**
 
@@ -149,7 +151,7 @@ les raccourcis basiques, notez la syntax que je vais utiliser
 		* de voir vos fichiers récents
 		* de faire une smart search : cherche une classe/méthode/fichier/... depuis son nom
 
-	* :code:`CTRL-E` : dieu, fichiers récents et interface avec les menus (plus beau que shift+shift mais c'est pas pareil)
+	* :code:`CTRL+E` : dieu, fichiers récents et interface avec les menus (plus beau que shift+shift mais c'est pas pareil)
 	* :code:`CTRL+ALT+F` : rechercher un mot dans tous les fichiers/un dossier/...
 	* :code:`^+CTRL+SHIFT+U` : passer la sélection minuscule à majuscule et inversement
 	* :code:`ALT+7` (7=touche è) : ouvre le menu de structure du fichier vu plus haut (11)
