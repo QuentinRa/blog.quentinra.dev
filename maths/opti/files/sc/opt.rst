@@ -29,8 +29,13 @@ Minimum local
 Si on restreint f sur un interval epsilon autour d'un point x, alors le minimum
 est appelé minimum local.
 
-De ce que j'ai compris, généralement si la courbe fait des vagues (inversées fin haut-bas-haut),
-alors on a un minimum local par vague qui corresponds donc à la valeur la plus basse.
+De ce que j'ai compris, généralement si la courbe fait des vagues (monte-descend-monte),
+alors on a un minimum local par vague qui corresponds donc à la valeur la plus basse
+de la vague.
+
+On parle de minimum (optimum) local strict s'il n'y a qu'un seul minimum local dans le voisinage epsilon
+de :math:`x*` avec
+:math:`\epsilon > 0` tel que pour tout :math:`x \in X \cap B(x*,\epsilon) f(x*) \gt f(x)`
 
 Point selle et point critique
 *********************************

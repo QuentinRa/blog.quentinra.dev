@@ -47,6 +47,17 @@ Voici quelques cas particuliers pour en démontrer l'existence.
 	* Si :math:`f` est coercive alors :math:`\min_{x \in X}f(x)` existe
 	* Si :math:`f` est bornée inférieurement
 
+Vos étapes, sont depuis le modèle (votre texte avec votre problème)
+
+	* trouver vos variables de décisions : x,y, ... (pas x1 x2 c'est pas lisible)
+	* trouver la fonction objective : :math:`f(x)`, votre fonction à optimiser, souvent de la forme :math:`f(x) = a x + b y + ...`
+	* trouver d'éventuelles contraintes (:math:`x+y \le 1`, :math:`x \in X`, ...)
+
+Une fois ceci fait, vous aurez probablement à adapter votre système, pour que votre logiciel puisse le lire
+(par exemple certains ne supporte que des contraintes :math:`\le` donc pas de :math:`=` ou :math:`\ge`...).
+Puis ce que ce n'est pas le sujet principal, l'implémentation venant en dernier, regardez
+la partie 5 si c'est votre objectif.
+
 3. Extrema d'une fonction sans contraintes
 ===============================================
 
@@ -66,6 +77,56 @@ et :math:`Hf` la matrice hessienne des dérivées partielles.
 		Hessien et gradient          <files/sc/grad>
 		Point particuliers           <files/sc/opt>
 		Forme quadratique            <files/sc/quadra>
+
+Selon le théorème Calistro
+
+	* vous avez votre fonction et vos variables à optimiser
+	* vous allez calculer le gradient, en dérivant nos fonction selon chaque variable
+	* vous allez cherche des points critiques, soit des valeurs pour lesquels f(x) s'annule
+	* ???
+	* Pour chaque point trouvé
+
+		* on calcule le hessien ?
+		* si le hessien est
+
+			* définit positif : minimum local (strict?)
+			* semi-définit positif : ne pas pas conclure
+			* indéfini : pas un extremum
+
+	* s'il n'existe qu'un seul minimum (et convexe), alors c'est le minimum global
+
+Prouver la convexité ?
+
+	* (cours) si hessien défini positif alors convexe (pas réciproque)
+
+4. Extrema d'une fonction sous contraintes
+===============================================
+
+...
+
+5. Réécrire un système
+========================
+
+Je n'ai encore jamais fait d'optimisation en pratique, mais j'ai retenu les règles
+de transformation suivantes
+
+Transformation en :math:`\ge`.
+	Ceci est utilisé si vous voulez avoir uniquement des contraintes :math:`\ge 0`
+
+		* :math:`x + a \ge 0  \Leftrightarrow  \begin{cases}\tilde{x} = x + a \\\tilde{x} \ge 0\end{cases}`
+		* :math:`x \ge a  \Leftrightarrow  \begin{cases}x = x^+ - x^- \\ x^+ \ge 0\\ x^- \ge 0\end{cases}`
+
+Transformation du :math:`=`
+	Ceci est utilisé si vous voulez avoir uniquement des contraintes :math:`\ge 0` et math:`\le 0`
+
+	* :math:`x = 0  \Leftrightarrow  \begin{cases}x \le 0 \\ x \ge 0\end{cases}`
+	* :math:`x = 0  \Leftrightarrow  \begin{cases}x \le 0 \\ -x \le 0\end{cases}`
+	* :math:`f(x) = 0  \Leftrightarrow  \begin{cases}f(x) + y = 0 \\ y \ge 0\end{cases}` (linéaire)
+	* :math:`f(x) = 0  \Leftrightarrow  f(x) + y^2 = 0` (non linéaire)
+
+Autres
+
+	* multiplier par :math:`-1` pour changer le signe
 
 ------
 
