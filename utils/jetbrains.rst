@@ -190,6 +190,7 @@ Voici les menus incontournables
 		Snippets    <jetbrains/all/snippets>
 		Refactor    <jetbrains/all/ref>
 		Analyse     <jetbrains/all/analyse>
+		UML         <jetbrains/all/uml>
 
 6. Présentation des IDE
 =========================

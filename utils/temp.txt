@@ -11,5 +11,3 @@ org.junit.jupiter:junit-jupiter-engine:5.7.0
 org.junit.platform:junit-platform-launcher:1.7.0
 org.junit.vintage:junit-vintage-engine:5.7.0
 org.junit.platform:junit-platform-runner:1.7.0
-
-générate UML
