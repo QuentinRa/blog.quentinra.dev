@@ -4,30 +4,6 @@
 
 ## Extrema d'une fonction sans contraintes
 
-### Dévelopement de Taylor
-
-Rappel:
-
-Si $$f$$ est défini sur un ouvert $$D$$ de $$\mathbb{R}$$, de classe $$\mathcal{C}^1$$
-Pour tout $$(x,x*) \in D$$, le **développement de Taylor à l'ordre 1** donne
-$$f(x)=f(x*)+f'(x*)(x-x*) + (x-x*)\epsilon(x-x*)$$
-avec $$\epsilon(h) \rightarrow 0$$ lorsque $$\|h\| \rightarrow 0$$
-
-De même, le **développement de Taylor à l'ordre 2** donne pour $$f$$ cette fois de classe $$\mathcal{C}^2$$
-Pour tout $$(x,x*) \in D$$,
-$$f(x)=f(x*)+f'(x*)(x-x*) + \frac{1}{2} f''(x*) (x-x*)^2 + (x-x*)\epsilon(x-x*)$$
-avec $$\epsilon(h) \rightarrow 0$$ lorsque $$\|h\| \rightarrow 0$$
-
----
-
-A présent, Etendons ces développements à $$\mathbb{R}^n$$:
-Pour tout $$(x,x*) \in D$$,
-**Développement de Taylor à l'ordre 1** $$f(x)=f(x*)+\nabla f(x*) \cdot (x-x*) + \|x-x*\|\epsilon(x-x*)$$
-**Développement de Taylor à l'ordre 2** $$f(x)=f(x*)+\nabla f(x*) \cdot (x-x*) + \frac{1}{2} (x-x*) \cdot Hf(x)(x-x*) + \|x-x*\|\epsilon(x-x*)$$
-
-Le développement de Taylor nous donne notamment le résultat suivant:
-$$lim_{t\rightarrow 0}\frac{f(x+td)-f(x)}{t}=\nabla f(x) \cdot d$$
-
 ### Forme quadratique
 
 Soit $$A$$ une matrice carrée d'ordre $$n$$, symétrique et $$Q_{A}(y)=y \cdot Ay$$ la forme quadratique associée.

@@ -2,8 +2,13 @@
 Optimisation
 =====================
 
-| :math:`\color{grey}{Version \ 0.0.005}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 11/03/2021}`
+| :math:`\color{grey}{Version \ 0.0.012}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 23/03/2021}`
+
+.. note::
+
+	Ceci n'est pas un cours de maths, en fait ce n'est même pas un cours. Il s'agit d'un brouillon
+	qui est encore moins mature que celui de stats (vraiment très peu ed sources).
 
 1. Introduction
 =================
@@ -18,13 +23,15 @@ On distingue généralement deux cas : l'optimisation avec contraintes (x appart
 de l'optimisation sans contraintes.
 
 On cherche à minimiser une fonction :math:`f` (à :math:`n` variables réelles sous diverses contraintes).
-Nous noterons :math:`x*` la solution du problème,
+
+Nous noterons :math:`x*` la solution du problème (le point (x,y) minimum atteint),
 ie :math:`x* \in X` vérifie :math:`f(x*)=min_{x \in X}{f(x)}`.
 
 .. toctree::
    :maxdepth: 1
 
-		Vocabulaire       <files/voc>
+		Vocabulaire                   <files/voc>
+		Développement de taylor       <files/taylor>
 
 2. Conditions d'existence
 ============================
@@ -35,49 +42,30 @@ Voici quelques cas particuliers pour en démontrer l'existence.
 	*
 
 		Si :math:`f` est continue et si :math:`X` est compact (fermé et borné dans :math:`\mathbb{R}^n`)
-		alors :math:`min {f(x), x\in X}` existe.
+		alors :math:`\min_{x \in X}f(x)` existe.
 
-	* Si f est coercive alors :math:`min {f(x), x\in X}` existe.
+	* Si :math:`f` est coercive alors :math:`\min_{x \in X}f(x)` existe
+	* Si :math:`f` est bornée inférieurement
 
 3. Extrema d'une fonction sans contraintes
 ===============================================
 
-Les fonctions que nous considérons dépendent, en général de plusieurs variables,
-d'où la nécessité de définir le gradient (:math:`\nabla` nabla)
-et le hessien (:math:`Hf(x)`) d'une fonction :math:`f`.
+On va ici introduire pleins de notions, du style
 
-.. math::
+	* il existe plein de minimums différents (local, global, point de selle)
+	* trouver des points critiques
+	* la forme quadratique, utilisée pour trouver un minimum
 
-	\nabla f(x)= \begin{pmatrix}
-  \frac{\partial f}{\partial x_{1}} \\
-  \frac{\partial f}{\partial x_{2}} \\
-  \vdots  \\
-  \frac{\partial f}{\partial x_{n}}
-	\end{pmatrix}
+Toutes ces notions reposent la notion de :math:`x*` et sur la notion
+de gradient :code:`\nable` soit le vecteur des dérivées partielles
+et :code:`Hf` la matrice hessienne des dérivées partielles.
 
-.. math::
+.. toctree::
+   :maxdepth: 1
 
-	Hf(x)= \begin{pmatrix}
-	\frac{\partial f}{\partial x_{1}\partial x_{1}} & \cdots & \frac{\partial f}{\partial x_{1}\partial x_{n}} \\
-	\frac{\partial f}{\partial x_{2}\partial x_{1}} & \cdots & \frac{\partial f}{\partial x_{2}\partial x_{n}} \\
-	\vdots & \ddots & \vdots \\
-	\frac{\partial f}{\partial x_{n}\partial x_{1}} & \cdots & \frac{\partial f}{\partial x_{n}\partial x_{n}}
-	\end{pmatrix}
-
-.. hint::
-
-	Exemple: Soit :math:`f(x)=x_{1}^2 + 4x_{2}^2 - x_{1}x_{2} + 2x_{1} - 3x_{2}`
-
-	Pour la première ligne du hessien, on dérive :math:`f` par rapport à :math:`x_{1}`.
-	Et pour la seconde, par rapport à :math:`x_{2}`.
-
-	On obtient alors :math:`\nabla f(x)= \begin{pmatrix} 2x_{1}- x_{2} + 2 \\ 8x_{2} - x_{1} - 3\end{pmatrix}`
-
-	Pour le hessien, on obtient  :math:`Hf(x)= \begin{pmatrix} 2 & -1 \\ -1 & 8 \end{pmatrix}`
-
-	Remarquez que la matrice est symétrique (Théorème de Schwarz:
-	:math:`\frac{\partial f}{\partial x\partial y}=\frac{\partial f}{\partial y\partial x}`).
-
+		Hessien et gradient          <files/grad>
+		Condition d'optimalité       <files/opt>
+		Forme quadratique            <files/quadra>
 
 ------
 

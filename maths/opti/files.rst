@@ -2,36 +2,8 @@
 Optimisation
 =====================
 
-| :math:`\color{grey}{Version \ 0.0.005}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 11/03/2021}`
-
-.. note::
-
-	Ceci n'est pas un cours de maths, en fait ce n'est même pas un cours. Il s'agit de
-	notes que j'ai essayé de faire pour comprendre l'optimisation, prenez en compte mon
-	niveau désastreux en maths SVP.
-
-L'optimisation consiste à calculer la valeurs min/max d'une fonction,
-c'est-à-dire les extremums.
-
-On l'utilise par exemple en statistiques avec la méthode des moindres
-carrés permettant de trouver un maximum de vraisemblance.
-
-On distingue généralement deux cas : avec contraintes (x appartient à un ensemble, ...)
-de l'optimisation sans contraintes.
-
 Minimisation
 ====================
-
-Un problème de maximisation de de g, on peut le voir sous la forme de la minimisation
-d'une fonction f tel que :code:`f = -g`.
-
-On note généralement :math:`x^*` le (point x,y) minimum atteint lorsqu'il est unique.
-
-Il existe un minimum si
-
-	* f est continue et coercive (limite +inf : +inf) : :math:`x^*`
-	* f est bornée inférieurement
 
 Minimum local
 	Si on restreint f sur un interval autour d'un point x, alors le minimum
