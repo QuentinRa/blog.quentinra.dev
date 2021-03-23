@@ -176,7 +176,7 @@ activée (si vous écrivez un .md vous verrez qu'elle est puissante, plus que da
 comme ce .rst).
 
 5. Menus
-==========
+=============
 
 Voici les menus incontournables
 
@@ -189,6 +189,19 @@ Voici les menus incontournables
 		Terminal    <jetbrains/all/terminal>
 		Snippets    <jetbrains/all/snippets>
 		Refactor    <jetbrains/all/ref>
+		Analyse     <jetbrains/all/analyse>
+
+6. Présentation des IDE
+=========================
+
+Enfin, vous l'attendiez, voici la présentation de chaque IDE
+
+.. toctree::
+   :maxdepth: 1
+
+		IntelliJ IDEA (java)   <jetbrains/idea>
+		PHPStorm (php)         <jetbrains/pstorm>
+		CLion (C/C++)          <jetbrains/clion>
 
 -----
 
