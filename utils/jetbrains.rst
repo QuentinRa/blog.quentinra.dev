@@ -4,8 +4,8 @@
 Jetbrains
 ==============
 
-| :math:`\color{grey}{Version \ 0.3.8}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 07/03/2021}`
+| :math:`\color{grey}{Version \ 0.5.12}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 23/03/2021}`
 
 Cette page contiendra des tutoriels sur les logiciels
 jetbrains donc PHPStorm, IntelliJ Idea, CLion, WebStorm...
@@ -99,7 +99,8 @@ Les explications sont
 	(9) terminal
 	(10) les message à la compilation
 	(11) la structure du fichier (en Java: les classes, les méthodes, ...)
-	(12) non visible sur l'image (car pas de .git) mais sur la ligne du terminal vous avez un menu git
+	(12) **project structure** : gérer par exemple le JDK (java), les librairies...
+	(13) non visible sur l'image (car pas de .git) mais sur la ligne du terminal vous avez un menu git
 
 Voilà pour la présentation rapide, quelques détails en plus
 
@@ -114,7 +115,48 @@ Voilà pour la présentation rapide, quelques détails en plus
 4. Connaitre ses raccourcis (all)
 ==================================
 
-...
+Vous connaissez :code:`alt-entrée` sur un mot souligné, pour voir des solutions, voici maintenant
+les raccourcis basiques, notez la syntax que je vais utiliser
+
+	* :code:`a+b` : appuyez sur les touches a et b (en même temps)
+	* :code:`*+b` : appuyez sur clic gauche et b (en même temps)
+	* :code:`@+b` : appuyez sur clic droit et b (en même temps)
+	* :code:`^+b` : sélectionner un truc et appuyez sur b (en même temps)
+	* :code:`CTRL+b` ou :code:`ALT+B` : appuyez sur control/alt et b (en même temps)
+
+**basiques**
+
+	* :code:`CTRL+F` : rechercher un mot dans le fichier actuel
+	* :code:`CTRL+A` : tout sélectionner
+	* :code:`CTRL+C` : copier
+	* :code:`CTRL+V` : coller
+	* :code:`SHIFT-[...]` : shift et une flèche/begin/end vous permet de rapidement sélectionner des trucs
+	* :code:`CTRL-D` : si rien sélectionné duplique la ligne sinon duplique la sélection
+	* :code:`CTRL-X` : si rien sélectionné supprime la ligne sinon supprime la sélection
+	* :code:`CTRL-R` : faire du remplacement facilement
+	* :code:`CTRL-G` : se déplacer à une ligne
+	* :code:`CTRL-L` : se déplacer à la prochaine occurrence de la dernière recherche (avec CTRL-F ou CTRL-R)
+
+**pratiques**
+
+	* :code:`SHIFT+SHIFT` : source de toute vie, vous permet
+
+		* de recherche un paramètre (donc à utiliser par la suite au lieu de file > settings > [galère])
+		* de voir vos fichiers récents
+		* de faire une smart search : cherche une classe/méthode/fichier/... depuis son nom
+
+	* :code:`CTRL-E` : dieu, fichiers récents et interface avec les menus (plus beau que shift+shift mais c'est pas pareil)
+	* :code:`CTRL+ALT+F` : rechercher un mot dans tous les fichiers/un dossier/...
+	* :code:`^+CTRL+SHIFT+U` : passer la sélection minuscule à majuscule et inversement
+	* :code:`ALT+7` (7=touche è) : ouvre le menu de structure du fichier vu plus haut (11)
+	* :code:`CTRL+SHIFT+E` : montre les 3 deniers endroits ou vous étiez
+
+**Orienté Objet (principalement)**
+
+	* :code:`ALT+INSERT` (au dessus de Suppr) : générer les getters/setters/toString/equals/...
+	* :code:`^+CTRL+ALT+T` : vous permet de générer un trycatch, un if, ... autour de la sélection
+	* :code:`CTRL+SHIFT+T` : générer un test de la classe actuelle (donc faut être dans une classe)
+	* :code:`CTRL+*` : au moment du clic sur une classe/..., vous montre les usages (appels, ...)
 
 -----
 
@@ -122,7 +164,6 @@ Voilà pour la présentation rapide, quelques détails en plus
 	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
 
 **Références**
-	* PHPSTORM
 	* https://www.jetbrains.com/help/phpstorm/creating-a-remote-server-configuration.html
 	* https://www.jetbrains.com/help/phpstorm/configuring-synchronization-with-a-remote-host.html#server-access-config
 	* https://www.jetbrains.com/help/phpstorm/uploading-and-downloading-files.html#automaticUploadOnUpdate

@@ -1,63 +1,9 @@
-.. _jetbrains:
-
-==============
-Jetbrains
-==============
-
-| :math:`\color{grey}{Version \ 0.3.8}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 07/03/2021}`
-
-Cette page contiendra des tutoriels sur les logiciels
-jetbrains donc PHPStorm, IntelliJ Idea, CLion, WebStorm...
-
-1. Général
-============
-
-Jetbrains propose des logiciels appelés IDE car ils vous aident à coder en vous donnant des suggestions
-par exemple ou avec plein de fonctionnalités (intégration de base de données, correction orthographique,
-intégration git, générer des diagrammes UML...).
-
-Contrairement à un IDE comme VSCode qui est polyvalent (Jack of all trades, master of none)
-vous devez utiliser un IDE spécialisé dans chaque langage,
-ce qui peut couter beaucoup de mémoire disque (10Go 3IDE par exemple). Les interfaces se ressemblent
-donc très facile de prendre en main les autres IDE.
-
-	* IntelliJ IDEA, dit idea : :code:`java, ocaml, R` (et gradle/maven)
-	* PHPStorm, Webstorm : :code:`php, html, js, bootstrap, css` et les framework js
-	* CLion : :code:`C, C++`
-	* PyCharm, Datalore : :code:`python` et analyse de données
-	* YouTrack : utile pour la gestion de projet
-	* CodeWithMe : plugin pour faire du pair-programming
-
-Vous pouvez installer la Jetbrains toolbox pour gérer tout
-ça facilement : https://www.jetbrains.com/toolbox-app/.
-
-Les logiciels sont payants mais vous pouvez les avoir gratuitement en étant étudiant
-(https://www.jetbrains.com/shop/eform/students).
-
-Je parlerais de jetbrains pour parler des logiciels de Jetbrains.
 
 2. Raccourcis
 ======================
 
 Voici quelques raccourcis
 
-	* :code:`shift+shift` : ouvre une fenêtre permettant de rechercher options, classes, fichiers récents, ...
-	* :code:`CTRL+F` : rechercher un mot/regex/...
-	* :code:`CTRL+SHIFT+F` : rechercher un mot/regex/... dans tout le projet
-	* :code:`Clic droit dans un fichier`
-
-		* :code:`open in` : ouvrir dans un explorateur de fichiers
-		* :code:`generate` : générer les getters/toString/... en java
-		* :code:`git` : voir les anciennes versions, ...
-		* :code:`refactor` : renommer fichier, une méthode, ... dans tout le projet (ou pas) !
-
-	* :code:`CTRL-D` : si rien sélectionné duplique la ligne sinon duplique la sélection
-	* sélection + :code:`CTRL-ALT-T` : vous permet de générer un trycatch, un if, ... autour de la sélection
-	* :code:`CTRL-SHIFT-T` : générer un test de la classe actuelle (donc faut être dans une classe)
-	* sélection + :code:`ALT-ENTRÉE` : si vous avez une erreur, alors vous pouvez voir les solutions
-	* sélection + :code:`CTRL-SHIFT-U` : passer minuscule à majuscule et inversement
-	* :code:`ALT-7` (touche 7 au dessus de Y)
 	* ...
 
 org.junit.platform:junit-platform-suite-api:1.7.01
@@ -65,10 +11,6 @@ org.junit.jupiter:junit-jupiter-engine:5.7.0
 org.junit.platform:junit-platform-launcher:1.7.0
 org.junit.vintage:junit-vintage-engine:5.7.0
 org.junit.platform:junit-platform-runner:1.7.0
-
-Vous avez aussi les raccourcis basiques (autre que CTRL-F) comme CTRL-A (tout sélectionner), CTRL-C (copier),
-CTRL-V (coller), SHIFT-BEGIN (sélection de position jusqu'au début de la ligne), SHIFT-END (sélection de position
-jusqu'à la fin de la ligne) ou encore les SHIFT-FLECHE (sélection ligne haut/bas/...).
 
 3. Général
 ======================
