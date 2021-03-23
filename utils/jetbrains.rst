@@ -41,8 +41,8 @@ Les logiciels **sont payants** mais vous pouvez les avoir **gratuitement** en é
 
 Je parlerais de jetbrains pour parler des logiciels de Jetbrains.
 
-2. Raccourcis
-======================
+2. Note de pré-introduction
+===============================
 
 Alors tout d'abord, comme tout IDE, il existe plein de raccourcis, mais
 le point fort de jetbrains c'est l'autocomplétion et les suggestions d'erreurs
@@ -59,7 +59,12 @@ pouvez aussi voir dans la barre de défilement de droite les endroits des mots s
 et tout en haut vous avez un check vert si tout ok, sinon vous pouvez cliquer et voir
 les erreurs/warnings.
 
-L'interface ressemble environ à ça (ici c'est IntelliJ pour Java)
+3. Présentation de l'interface
+=====================================
+
+Essayez de lire cette partie, même si vous n'allez pas tout retenir
+pour avoir une idée de ce qui est proposé. L'interface ressemble environ à ça (ici c'est IntelliJ pour Java)
+mais je rappelle que toutes sont similaires.
 
 .. image:: /assets/utils/jetbrains/basic.png
 
@@ -77,7 +82,7 @@ Les explications sont
 				* new : créer un nouveau fichier
 				* **analyse** > inspect : ouvre un menu avec toutes les erreurs/... d'un fichier et les solutions proposées
 				* delete, copy, ...
-				* **refractor** :
+				* **refractor** : outil pour renommer [#1]_
 				* **reformat code** : nettoyer votre code (import inutiles, formalise tout : espaces, position des { ...)
 				* **open in** : ouvrir dans un explorateur de fichiers ou dans un terminal
 				* compare with : super utile pour comparer deux fichiers avec une interface
@@ -90,7 +95,26 @@ Les explications sont
 	(5) le nombre de warnings, ... dans le fichiers (cliquer dessus pour voir le détails)
 	(6) vous pouvez voir ici vos warnings, ... par ligne
 	(7) la liste des **todos** (lorsqu'une personne mets un TODO/fixme dans un fichier, c'est dire qu'il y a un truc à faire)
+	(8) problèmes du fichier actuel
+	(9) terminal
+	(10) les message à la compilation
+	(11) la structure du fichier (en Java: les classes, les méthodes, ...)
+	(12) non visible sur l'image (car pas de .git) mais sur la ligne du terminal vous avez un menu git
 
+Voilà pour la présentation rapide, quelques détails en plus
+
+	* sous IntelliJ (premium), PHPStorm, ... dans la colonne tout à droite vous pouvez ajouter une base de données
+	*
+
+		dans la colonne tout à gauche vous avez projet et git (si vous avez un .git donc pas dans l'exemple)
+		pour ouvrir le menu de gestion de git.
+
+	* le file en haut à gauche vous permet d'ouvrir, fermer un projet et d'ouvrir les paramètres
+
+4. Connaitre ses raccourcis (all)
+==================================
+
+...
 
 -----
 
