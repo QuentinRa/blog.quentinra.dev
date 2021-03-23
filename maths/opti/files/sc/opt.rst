@@ -20,6 +20,9 @@ Interval de minima
 	Si vous avez votre fonction qui sur un interval reste à la valeur de votre minimum global
 	alors cet interval est appelé interval de minima.
 
+Et on parle de minimum (optimum) global strict s'il n'y a qu'un seul minimum global
+donc :code:`x \in X f(x*) \gt f(x)`.
+
 Minimum local
 ***************
 

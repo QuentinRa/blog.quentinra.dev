@@ -14,7 +14,7 @@ Définie positive (resp. **négative**)
 	Ssi :math:`Q_{A}(y) > 0 ` (resp. :math:`Q_{A}(y) < 0 `) pour tout :math:`y \in \mathbb{R}^n`
 
 Indéfinie
-	Ssi il :math:`y,z \in \mathbb{R}^n` tel que :math:`Q_{A}(y)>0 et Q_{A}(z)<0`
+	Ssi il :math:`y,z \in \mathbb{R}^n` tel que :math:`Q_{A}(y)>0` et :math:`Q_{A}(z)<0`
 
 Vous ne calculerez jamais ce terme. On va caractériser le signe de :math:`A` en utilisant
 son déterminant. Ce signe, lié à d'autres hypothèses, fournira plusieurs théorèmes
