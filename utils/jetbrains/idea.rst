@@ -23,6 +23,7 @@ Les points notables (non abordés avant) avec IntelliJ sont
 		Project Structure (et modules)  <idea/ps>
 		Test avec JUnit (3,4 et 5)      <idea/tests>
 		Gradle et Maven                 <idea/gl>
+		Breakpoints et debug            <idea/debug>
 
 **ENSIIE**
 

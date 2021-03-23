@@ -4,7 +4,7 @@
 Jetbrains
 ==============
 
-| :math:`\color{grey}{Version \ 0.5.12}`
+| :math:`\color{grey}{Version \ 0.6.15}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 23/03/2021}`
 
 Cette page contiendra des tutoriels sur les logiciels
@@ -174,6 +174,10 @@ Vous pouvez changer la langage de la correction orthographique avec Settings > E
 puis ajouter/retirer des langages mais par expérience la correction orthographique n'est pas toujours
 activée (si vous écrivez un .md vous verrez qu'elle est puissante, plus que dans les autres fichiers
 comme ce .rst).
+
+Une dernière, pour supprimer les warnings de variables not utilisées, souvent l'appeler
+ignore ou ignored ça résous votre problème (dans un trycatch/...) même s'il y a d'autres
+solutions.
 
 5. Menus
 =============
