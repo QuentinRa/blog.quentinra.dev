@@ -29,9 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/jetbrains.rst" beforeDir="false" afterPath="$PROJECT_DIR$/utils/jetbrains.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/jetbrains/pstorm/start.rst" beforeDir="false" afterPath="$PROJECT_DIR$/utils/jetbrains/pstorm/start.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/temp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/utils/temp.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/utils/jetbrains/open/open.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/utils/jetbrains/open/open1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/jetbrains/idea.rst" beforeDir="false" afterPath="$PROJECT_DIR$/utils/jetbrains/idea.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -80,7 +79,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/utils/jetbrains" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/utils/jetbrains/idea" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web.server" />
@@ -89,18 +88,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\utils\jetbrains\idea" />
       <recent name="C:\Users\quent\Documents\texas-res\utils\jetbrains" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\stats\reg" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\stats\tests" />
       <recent name="C:\Users\quent\Documents\texas-res\games\rpg\db\ex" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\utils\jetbrains\conf" />
+      <recent name="C:\Users\quent\Documents\texas-res\assets\utils\jetbrains\tests" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\utils\jetbrains" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\utils\jetbrains\open" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\utils\jetbrains\analyse" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\utils\jetbrains\ref" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\utils\jetbrains\db" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -436,7 +435,7 @@
       <workItem from="1616337769890" duration="15074000" />
       <workItem from="1616444857264" duration="2440000" />
       <workItem from="1616485931870" duration="2107000" />
-      <workItem from="1616488277132" duration="13613000" />
+      <workItem from="1616488277132" duration="18388000" />
     </task>
     <servers />
   </component>
