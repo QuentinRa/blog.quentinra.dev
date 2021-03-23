@@ -32,135 +32,65 @@ donc très facile de prendre en main les autres IDE.
 Vous pouvez installer la Jetbrains toolbox pour gérer tout
 ça facilement : https://www.jetbrains.com/toolbox-app/.
 
-Les logiciels sont payants mais vous pouvez les avoir gratuitement en étant étudiant
+Les logiciels **sont payants** mais vous pouvez les avoir **gratuitement** en étant étudiant
 (https://www.jetbrains.com/shop/eform/students).
+
+	* s'inscrire avec votre email étudiant
+	* attendre le mail et suivre les instructions
+	* télécharger les logiciels et se connecter au lancement
 
 Je parlerais de jetbrains pour parler des logiciels de Jetbrains.
 
 2. Raccourcis
 ======================
 
-Voici quelques raccourcis
+Alors tout d'abord, comme tout IDE, il existe plein de raccourcis, mais
+le point fort de jetbrains c'est l'autocomplétion et les suggestions d'erreurs
 
-	* :code:`shift+shift` : ouvre une fenêtre permettant de rechercher options, classes, fichiers récents, ...
-	* :code:`CTRL+F` : rechercher un mot/regex/...
-	* :code:`CTRL+SHIFT+F` : rechercher un mot/regex/... dans tout le projet
-	* :code:`Clic droit dans un fichier`
+jetbrains souligne un mot/méthode/classe/... en
 
-		* :code:`open in` : ouvrir dans un explorateur de fichiers
-		* :code:`generate` : générer les getters/toString/... en java
-		* :code:`git` : voir les anciennes versions, ...
-		* :code:`refactor` : renommer fichier, une méthode, ... dans tout le projet (ou pas) !
+	* jaune : une possible erreur ou documentation manquante (warning)
+	* rouge : une erreur (danger)
+	* vert : une erreur typographique (typo)
+	* gris (pas souligné, mot en gris) : variable/méthode/classe non utilisée
 
-	* :code:`CTRL-D` : si rien sélectionné duplique la ligne sinon duplique la sélection
-	* sélection + :code:`CTRL-ALT-T` : vous permet de générer un trycatch, un if, ... autour de la sélection
-	* :code:`CTRL-SHIFT-T` : générer un test de la classe actuelle (donc faut être dans une classe)
-	* sélection + :code:`ALT-ENTRÉE` : si vous avez une erreur, alors vous pouvez voir les solutions
-	* sélection + :code:`CTRL-SHIFT-U` : passer minuscule à majuscule et inversement
-
-Vous avez aussi les raccourcis basiques (autre que CTRL-F) comme CTRL-A (tout sélectionner), CTRL-C (copier),
-CTRL-V (coller), SHIFT-BEGIN (sélection de position jusqu'au début de la ligne), SHIFT-END (sélection de position
-jusqu'à la fin de la ligne) ou encore les SHIFT-FLECHE (sélection ligne haut/bas/...).
-
-Petite précision, jetbrains souligne un mot/méthode/classe/... en
-
-	* jaune : une possible erreur ou documentation manquante
-	* rouge : une erreur
-	* vert : une erreur typographique
-	* gris (pas souligné mais il change le mot en gris) : variable/méthode/classe non utilisée
-
-Vous pouvez faire alt+entrée dessus pour obtenir des suggestions pour résoudre le problème. Vous
+Vous pouvez faire **alt+entrée** dessus pour obtenir des suggestions pour résoudre le problème. Vous
 pouvez aussi voir dans la barre de défilement de droite les endroits des mots soulignés
 et tout en haut vous avez un check vert si tout ok, sinon vous pouvez cliquer et voir
 les erreurs/warnings.
 
-.. image:: /assets/utils/jetbrains/jb1.png
+L'interface ressemble environ à ça (ici c'est IntelliJ pour Java)
 
-3. Général
-======================
+.. image:: /assets/utils/jetbrains/basic.png
 
-On rappelle que si vous ne trouvez pas un menu, essayer de faire shift+shift.
+Les explications sont
 
-Vous pouvez faire en sorte que la molette puisse vous permettre de zoomer/dé-zoomer le code
-dans Settings > Editor > General puis Change font size ... (première ligne).
+	(1)
 
-Vous pouvez afficher une petite :code:`*` après le nom du fichier s'il a été modifié (si vous
-utilisez git c'est inutile) avec Settings > Editor > General > Editor tabs puis :code:`Mark Modified (*)`.
+			Vos fichiers, globalement ce menu sert à double-cliquer pour ouvrir un fichier.
+			Vous pouvez faire un clic droit sur un fichier
 
-Vous pouvez changer la langage de la correction orthographique avec Settings > Editing > Proofreading
-puis ajouter/retirer des langages mais par expérience la correction orthographique n'est pas toujours
-activée (si vous écrivez un .md vous verrez qu'elle est puissante, plus que dans les autres fichiers
-comme ce .rst).
+			.. image:: /assets/utils/jetbrains/create.png
 
-.. toctree::
-   :maxdepth: 1
+			Explications
 
-		Git      <jetbrains/all/git>
-		Database <jetbrains/all/db>
-		Todo     <jetbrains/all/todo>
-		Terminal <jetbrains/all/terminal>
-		Snippets <jetbrains/all/snippets>
+				* new : créer un nouveau fichier
+				* **analyse** > inspect : ouvre un menu avec toutes les erreurs/... d'un fichier et les solutions proposées
+				* delete, copy, ...
+				* **refractor** :
+				* **reformat code** : nettoyer votre code (import inutiles, formalise tout : espaces, position des { ...)
+				* **open in** : ouvrir dans un explorateur de fichiers ou dans un terminal
+				* compare with : super utile pour comparer deux fichiers avec une interface
+				* **git** : si vous avez git, vous permet de réinitialiser un fichier au dernier commit par exemple
+				* Mark directory as : exclure un fichier, ...
 
-4. PHPStorm
-============================
+	(2) compiler mais ne lance pas l'application
+	(3) décider quoi compiler (quelle cible/classe/...)
+	(4) compiler et lancer
+	(5) le nombre de warnings, ... dans le fichiers (cliquer dessus pour voir le détails)
+	(6) vous pouvez voir ici vos warnings, ... par ligne
+	(7) la liste des **todos** (lorsqu'une personne mets un TODO/fixme dans un fichier, c'est dire qu'il y a un truc à faire)
 
-Vous pouvez sélectionner la version php en bas à droite.
-
-Parfois phpstorm ne détecte pas que vous utilisez une méthode, ... si vous
-n'avez pas explicitement écrit dans l'appel dans le code. Vous pouvez faire
-de la phpdoc avec :code:`/** @see class::method() **/` par exemple pour lui faire
-comprendre que la méthode est utilisée (et/ou la classe).
-
-.. toctree::
-   :maxdepth: 1
-
-		Configuration Remote      <jetbrains/pstorm/remote>
-
-5. CLion
-=========================
-
-Mon résumé : un IDE pratique mais ultra chiant à utiliser. Il faut utiliser
-un fichier CMake pour activer l'autocompletion (et tout le reste) et c'est un
-peu chiant car la compilation n'est pas directe.
-
-Voici le contenu d'un CMakeLists.txt
-
-.. code:: cmake
-
-		cmake_minimum_required(VERSION 3.16.3) # ou 17
-		project(nom_projet C) # le nom du projet, et on indique que c'est du C
-		set(CMAKE_C_STANDARD 99) # définit le standard
-
-		# une cible est comme une cible Makefile, voir après
-		# vous pouvez avoir plein de cibles, il faut lister tous les .c et .h
-		add_executable(nom_cible main.c main.h ...)
-
-Dans ce menu, vous pouvez retrouver vos cibles (ici prim, le 2) et compilez (1)
-ou lancer (+compiler, la flèche verte 4).
-
-.. image:: /assets/utils/jetbrains/cl1.png
-
-Le 3 indique le profil utilisé pour compiler. Un profil permet par exemple d'avoir
-des options de compilation de DEBUG (development) et des options de compilation
-RELEASE (production) différentes. Vous n'en n'aurez certainement pas besoin
-mais pour créer un profil : Settings > cmake (et vous mettez -DCMAKE_CXX_FLAGS="-Wall -Wextra"
-par exemple comme options). Vous pouvez le mettre directement dans le CMakeLists.txt
-
-.. code:: cmake
-
-	# options -Wall -Wextra pour tous les profiles
-	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra")
-
-.. toctree::
-	 :maxdepth: 1
-
-		Utiliser la librairie pthread <jetbrains/clion/pthread>
-		Utiliser des libraires/.h/.a  <jetbrains/clion/lib>
-		Changer de compilateur        <jetbrains/clion/comp>
-		Remote Working                <jetbrains/clion/remote>
-
-Si vous n'avez pas CMake d'installé, vous pouvez l'installer via WSL
-en suivant ce tutoriel https://www.jetbrains.com/help/clion/how-to-use-wsl-development-environment-in-product.html#wsl-tooclhain.
 
 -----
 
