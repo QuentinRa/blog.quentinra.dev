@@ -82,7 +82,7 @@ Les explications sont
 				* new : créer un nouveau fichier
 				* **analyse** > inspect : ouvre un menu avec toutes les erreurs/... d'un fichier et les solutions proposées
 				* delete, copy, ...
-				* **refractor** : outil pour renommer [#1]_
+				* **refactor** : outil pour renommer [#1]_
 				* **reformat code** : nettoyer votre code (import inutiles, formalise tout : espaces, position des { ...)
 				* **open in** : ouvrir dans un explorateur de fichiers ou dans un terminal
 				* compare with : super utile pour comparer deux fichiers avec une interface
@@ -111,6 +111,10 @@ Voilà pour la présentation rapide, quelques détails en plus
 		pour ouvrir le menu de gestion de git.
 
 	* le file en haut à gauche vous permet d'ouvrir, fermer un projet et d'ouvrir les paramètres
+
+.. [#1] Très puissant, mais aussi risqué. Le refactor est un outil de renommage intelligent,
+	par exemple pour une fonction, il va vous proposer de renommer toutes ces utilisations, mais...
+	également les commentaires... Regarder les explications en partie 5.
 
 4. Connaitre ses raccourcis (all)
 ==================================
@@ -157,6 +161,34 @@ les raccourcis basiques, notez la syntax que je vais utiliser
 	* :code:`^+CTRL+ALT+T` : vous permet de générer un trycatch, un if, ... autour de la sélection
 	* :code:`CTRL+SHIFT+T` : générer un test de la classe actuelle (donc faut être dans une classe)
 	* :code:`CTRL+*` : au moment du clic sur une classe/..., vous montre les usages (appels, ...)
+
+**Gimme free tips**
+
+Vous pouvez faire en sorte que la molette puisse vous permettre de zoomer/dé-zoomer le code
+dans Settings > Editor > General puis Change font size ... (première ligne).
+
+Vous pouvez afficher une petite :code:`*` après le nom du fichier s'il a été modifié (si vous
+utilisez git c'est inutile) avec Settings > Editor > General > Editor tabs puis :code:`Mark Modified (*)`.
+
+Vous pouvez changer la langage de la correction orthographique avec Settings > Editing > Proofreading
+puis ajouter/retirer des langages mais par expérience la correction orthographique n'est pas toujours
+activée (si vous écrivez un .md vous verrez qu'elle est puissante, plus que dans les autres fichiers
+comme ce .rst).
+
+5. Menus
+==========
+
+Voici les menus incontournables
+
+.. toctree::
+   :maxdepth: 1
+
+		Git         <jetbrains/all/git>
+		Database    <jetbrains/all/db>
+		Todo        <jetbrains/all/todo>
+		Terminal    <jetbrains/all/terminal>
+		Snippets    <jetbrains/all/snippets>
+		Refactor    <jetbrains/all/ref>
 
 -----
 

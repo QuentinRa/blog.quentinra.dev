@@ -12,30 +12,7 @@ org.junit.platform:junit-platform-launcher:1.7.0
 org.junit.vintage:junit-vintage-engine:5.7.0
 org.junit.platform:junit-platform-runner:1.7.0
 
-3. Général
-======================
-
-On rappelle que si vous ne trouvez pas un menu, essayer de faire shift+shift.
-
-Vous pouvez faire en sorte que la molette puisse vous permettre de zoomer/dé-zoomer le code
-dans Settings > Editor > General puis Change font size ... (première ligne).
-
-Vous pouvez afficher une petite :code:`*` après le nom du fichier s'il a été modifié (si vous
-utilisez git c'est inutile) avec Settings > Editor > General > Editor tabs puis :code:`Mark Modified (*)`.
-
-Vous pouvez changer la langage de la correction orthographique avec Settings > Editing > Proofreading
-puis ajouter/retirer des langages mais par expérience la correction orthographique n'est pas toujours
-activée (si vous écrivez un .md vous verrez qu'elle est puissante, plus que dans les autres fichiers
-comme ce .rst).
-
-.. toctree::
-   :maxdepth: 1
-
-		Git      <jetbrains/all/git>
-		Database <jetbrains/all/db>
-		Todo     <jetbrains/all/todo>
-		Terminal <jetbrains/all/terminal>
-		Snippets <jetbrains/all/snippets>
+générate UML
 
 4. PHPStorm
 ============================
