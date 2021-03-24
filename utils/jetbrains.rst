@@ -10,6 +10,11 @@ Jetbrains
 Cette page contiendra des tutoriels sur les logiciels
 jetbrains donc PHPStorm, IntelliJ Idea, CLion, WebStorm...
 
+.. hint::
+
+	Voici des slides d'introduction à IntelliJ Idea
+	:download:`IntelliJ_IDEA_Guide.pdf <../assets/utils/jetbrains/IntelliJ_IDEA_Guide.pdf>`
+
 1. Général
 ============
 

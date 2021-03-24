@@ -26,7 +26,7 @@ le menu de project structure, aller dans librairie, et cliquer sur le + puis mav
 Remplissez le menu ci-dessous avec ces 5 lignes (vous pouvez changer les versions),
 si c'est pas clair, il faut cliquer 5 fois sur + et répéter cette étape 5 fois
 
-	*	:code:`org.junit.platform:junit-platform-suite-api:1.7.01`
+	*	:code:`org.junit.platform:junit-platform-suite-api:1.7.0`
 	*	:code:`org.junit.jupiter:junit-jupiter-engine:5.7.0`
 	*	:code:`org.junit.platform:junit-platform-launcher:1.7.0`
 	*	:code:`org.junit.vintage:junit-vintage-engine:5.7.0`
