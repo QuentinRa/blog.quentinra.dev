@@ -1,11 +1,11 @@
 .. _stats:
 
-===================================
+=====================
 Statistiques et R
-===================================
+=====================
 
-| :math:`\color{grey}{Version \ 0.24.73}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 21/03/2021}`
+| :math:`\color{grey}{Version \ 1.24.74}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 25/03/2021}`
 
 Les prérequis sont de savoir lire du R (concepts de base et un peu avancés).
 Ceci n'est pas un cours de maths donc ce ne sont pas des vraies statistiques
@@ -323,6 +323,14 @@ Cette partie contient une liste d'outils pour décrire votre échantillon.
 		Boîtes à moustaches (quantiles, ...)      <desc/boxplot>
 		Tableaux croisés (plusieurs variables)    <desc/qhpvt>
 		Quantile-Quantile (QQ plot)               <desc/qq>
+
+Par rapport aux lois normales, qui sont celles que nous allons principalement utiliser
+par la suite, parce que selon un théorème (loi des grand nombres?), si on a beaucoup de variables
+aléatoires alors elles tendent vers une loi normale/gaussienne
+
+	* :math:`moyenne +/- \sigma` = 2 tiers des données
+	* :math:`[m-1.96*\sigma,m+1.96*\sigma]` : interval de confiance à 95%
+	* si symétrique, alors médiane = moyenne
 
 7. Aparté : Vraisemblance
 ===============================
