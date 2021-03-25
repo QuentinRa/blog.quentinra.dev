@@ -31,6 +31,7 @@ d'une fonction :math:`f` telle que :math:`f = -g`.
    :maxdepth: 1
 
 		Vocabulaire                   <files/voc>
+		Initiation à l'optimisation   <files/start>
 
 Concrètement, l'optimisation se fait en testant le résultat d'une fonction
 pour des valeurs sur un intervalle
@@ -48,17 +49,6 @@ Voici quelques cas particuliers pour en démontrer l'existence.
 
 	* Si :math:`f` est coercive alors :math:`\min_{x \in X}f(x)` existe
 	* Si :math:`f` est bornée inférieurement
-
-Vos étapes, sont depuis le modèle (votre texte avec votre problème)
-
-	* trouver vos variables de décisions : x,y, ... (pas x1 x2 c'est pas lisible)
-	* trouver la fonction objective : :math:`f(x)`, votre fonction à optimiser, souvent de la forme :math:`f(x) = a x + b y + ...`
-	* trouver d'éventuelles contraintes (:math:`x+y \le 1`, :math:`x \in X`, ...)
-
-Une fois ceci fait, vous aurez probablement à adapter votre système, pour que votre logiciel puisse le lire
-(par exemple certains ne supporte que des contraintes :math:`\le` donc pas de :math:`=` ou :math:`\ge`...).
-Puis ce que ce n'est pas le sujet principal, l'implémentation venant en dernier, regardez
-la partie 5 si c'est votre objectif.
 
 3. Extrema d'une fonction sans contraintes
 ===============================================
@@ -91,7 +81,7 @@ Selon le théorème Calistro
 		* si le hessien est
 
 			* définit positif : minimum local (strict?)
-			* semi-définit positif : ne pas pas conclure
+			* semi-définit positif : ne peut pas conclure
 			* indéfini : pas un extremum
 
 	* s'il existe un minimum et la fonction est convexe, alors c'est le minimum global
@@ -150,3 +140,13 @@ Autres
 	* https://www.ceremade.dauphine.fr/~gontier/Publications/methodesNumeriques.pdf
 	* https://perso.math.univ-toulouse.fr/lagnoux/files/2013/12/CoursOpt.pdf
 	* https://www.alloprof.qc.ca/fr/eleves/bv/mathematiques/resoudre-un-probleme-d-optimisation-m1092
+	* https://www.geeksforgeeks.org/uni-variate-optimization-data-science/
+	* https://www.geeksforgeeks.org/uni-variate-optimization-vs-multivariate-optimization/
+	* https://andrew.gibiansky.com/blog/machine-learning/hessian-free-optimization/
+	* https://courses.cs.washington.edu/courses/csep576/18sp/lectures/4_2_optimization.pdf
+	* https://medium.com/swlh/gradient-based-optimizations-jacobians-jababians-hessians-b7cbe62d662d
+	* https://www.geeksforgeeks.org/multivariate-optimization-gradient-and-hessian/
+	* http://adl.stanford.edu/hyperdual/Fike_AIAA-2011-3807.pdf
+	* https://www.coursera.org/learn/mathematics-for-economists#syllabus
+	* https://www.coursera.org/lecture/mathematics-for-economists/2-13-hessian-matrix-77pUp
+	* http://www.cs.toronto.edu/~hinton/csc2515/notes/lec6tutorial.pdf
