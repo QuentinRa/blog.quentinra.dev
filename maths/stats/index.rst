@@ -30,18 +30,25 @@ Variables
 	Il s'agit généralement des colonnes (j) de la matrice. Elles sont (de caractère)
 	qualitatives ou quantitatives.
 
-	Variable quantitative (ou catégorielles)
+	Variable quantitative
 		La valeur fait l'objet d'une mesure donc on associe
 		une loi qui représente les valeurs pouvant être prises.
 
 			* suivant une loi discrète : nombre de valeurs finies (dénombrable, comptage)
 			* suivant une loi continue : nombre de valeurs infinies (non dénombrable, mesure)
 
-		Ces données sont généralement représentées par des histogrammes.
+		Ces données sont généralement représentées par des histogrammes. Par exemple l'âge, une taille, un score ...
+		Les variables sont quantitatives lorsqu'un peu prendre deux valeurs et en faire la différence.
 
-	Variable qualitative
+	Variable qualitative (ou catégorielles)
 		La valeur est un critère ou permet de grouper les individus (le sexe, ...). Généralement
 		le type est :code:`factor()` en R. Ces données suivent généralement une loi Binomiale.
+
+		On distingue
+
+			* les variables qualitative binaires (0 ou 1, True ou False, ...)
+			* les variables qualitative ordonnées (niveau: facile < moyen < difficile)
+			* les variables qualitative non ordonnées
 
 Individu
 	Il s'agit d'une ligne (i) de la matrice.
@@ -367,24 +374,6 @@ le plus probable de correspondre à :math:`\theta`.
 		f_{\theta}(x) & \text{si X v.a. continue, f la fonction de densité} \\
 		P_{\theta}(X=x) & \text{si X v.a. discrète, f la probabilité discrète}
 		\end{cases}
-
-Selon un article dans les références et ma compréhension de celui-ci, vous
-pouvez calculer la vraisemblance en R pour une loi de bernouilli de la façon
-suivante
-
-.. code:: R
-
-		# returns likehood
-		L_bern <- function(r,n,expected){ return(dbinom(r,n,expected)) }
-		# will be used to test the likehood for a lot of probabilities (expected)
-		generate_L_bern <- function(expected){
-		 n <- 10
-		 p <- 0.7
-		 r <- rbinom(1, n, p)
-		 return(L_bern(r, n, expected));
-		}
-		# maximum likehood
-		optimise(generate_L_bern, maximum = TRUE, interval = c(0,1))
 
 8. Statistiques inférentielle
 ===============================

@@ -5,7 +5,7 @@ Langage R
 =============
 
 | :math:`\color{grey}{Version \ 0.9.32}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 32/03/2021}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 23/03/2021}`
 
 1. Introduction
 ===================

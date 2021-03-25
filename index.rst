@@ -48,6 +48,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
 		Analyse numérique        <maths/analyse/index>
 		Statistiques en R        <maths/stats/index>
     Langage R                <functional/r/index>
+    Optimisation             <maths/opti/index>
 
 .. toctree::
     :caption: Système

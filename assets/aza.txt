@@ -1,0 +1,105 @@
+Selon un article dans les références et ma compréhension de celui-ci, vous
+pouvez calculer la vraisemblance en R pour une loi de bernouilli de la façon
+suivante
+
+.. code:: R
+
+		# returns likehood
+		L_bern <- function(r,n,expected){ return(dbinom(r,n,expected)) }
+		# will be used to test the likehood for a lot of probabilities (expected)
+		generate_L_bern <- function(expected){
+		 n <- 10
+		 p <- 0.7
+		 r <- rbinom(1, n, p)
+		 return(L_bern(r, n, expected));
+		}
+		# maximum likehood
+		optimise(generate_L_bern, maximum = TRUE, interval = c(0,1))
+
+7. Doxygen (enhanced)
+==========================
+
+Honnêtement, je trouvais que j'écrivais trop de documentation, et en plus l'interface
+était moche, donc j'ai cherché à faire un truc beau, et au final j'arrive
+à avoir une donc sans warnings mais qui est belle et avec moins de documentation
+dans le code. Un exemple sont les \param devant un struct qui en fait sont facultatifs
+mais cela rendait la doc plus claire de les mettre dans la version normale.
+
+Il faudra installer doxygen, et télécharger
+
+	* sur `https://github.com/mosra/m.css <https://github.com/mosra/m.css>`_
+	* le dossier documentation/templates
+	* le fichier documentation/__init__.py
+	* le fichier documentation/_search.py
+	* le fichier documentation/doxygen.py
+	* le fichier documentation/favicon-dark.png
+	* le fichier documentation/favicon-light.png
+	* le fichier documentation/python.py
+	* le fichier documentation/search.js
+	* le contenu du dossier plugins (les 4 scripts .py) à mettre dans le dossier style (voir ci-après)
+	* le dossier css
+	* et personnellement j'ai tout mis dans le dossier style à la racine du projet
+	* donc j'ai par exemple /style/css ou /style/dot2svg.py
+	*
+
+		si vous avez mis css dans style, alors il faut éditer dans doxygen.py deux lignes
+		et remplacer :code:`../css/......` par :code:`css/........`.
+
+
+Ensuite, voici les étapes
+
+	* si pip n'est pas installé, sous linux :code:`sudo apt-get install python3-pip`
+	* :code:`pip3 install jinja2 Pygments`
+	*
+		créer un DoxyFile par exemple DoxyCSS à la racine
+
+		.. code::
+
+				# used to become a god
+				# style\doxygen.py DoxyCSS
+				# inclut le Doxyfile original
+				@INCLUDE                = Doxyfile
+				# faits des modifications (faut pas modifier ces lignes normalement)
+				GENERATE_HTML           = NO
+				GENERATE_LATEX          = NO
+				GENERATE_XML            = YES
+				XML_PROGRAMLISTING     = NO
+				XML_NS_MEMB_FILE_SCOPE = YES
+
+	* si vous êtes sous linux : :code:`chmod +x style/doxygen.py`
+	* ensuite vous faites :code:`style\doxygen.py DoxyCSS` (ou / sous linux)
+	* la doc html/latex/... est au même endroit que d'habitude
+
+Les points que j'ai notés
+
+	* vous devez ajoute :code:`\dir` pour que vos fichiers soit ajoutés dans Files
+	*
+
+		vous pouvez créer des fichiers :code:`package.dox` (peu importe le nom mais package c'est bien)
+		pour décrire un dossier (faites le d'abord dans un fichier puis avant de râler parce
+		que ça copie la desc de chaque fichier dans la description du dossier, testez ça).
+		Notez qu'en C++ ou en PHP, il suffit de remplacer dir par namespace
+
+		.. code::
+
+				/** @dir headers
+
+				\authors ...
+				\date 08/03/2021
+
+				Une description du dossier
+				*/
+
+Vous pouvez modifier la barre de recherche avec un conf.py ou alors
+avec les options doxyfile (notez que une_page.html est dans le nom
+du .html généré à la toute fin dans votre dossier html/)
+
+.. code::
+
+		M_LINKS_NAVBAR1 = \
+				"<a href=\"une_page.html\">User documentation</a>" \
+				"annotated"
+		M_LINKS_NAVBAR2 = \
+				"files" \
+				"<a href=\"une_page.html\">Fonctions</a>" \
+				"<a href=\"un_lien">GitHub</a>"
