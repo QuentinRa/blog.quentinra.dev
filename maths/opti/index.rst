@@ -2,8 +2,8 @@
 Optimisation
 =====================
 
-| :math:`\color{grey}{Version \ 0.0.012}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 23/03/2021}`
+| :math:`\color{grey}{Version \ 0.0.015}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 25/03/2021}`
 
 .. note::
 
@@ -31,7 +31,9 @@ d'une fonction :math:`f` telle que :math:`f = -g`.
    :maxdepth: 1
 
 		Vocabulaire                   <files/voc>
-		Développement de taylor       <files/taylor>
+
+Concrètement, l'optimisation se fait en testant le résultat d'une fonction
+pour des valeurs sur un intervalle
 
 2. Conditions d'existence
 ============================
@@ -81,9 +83,8 @@ et :math:`Hf` la matrice hessienne des dérivées partielles.
 Selon le théorème Calistro
 
 	* vous avez votre fonction et vos variables à optimiser
-	* vous allez calculer le gradient, en dérivant nos fonction selon chaque variable
-	* vous allez cherche des points critiques, soit des valeurs pour lesquels f(x) s'annule
-	* ???
+	* vous allez calculer le gradient, en dérivant notre fonction selon chaque variable
+	* vous allez chercher des points critiques, soit des valeurs pour lesquels f(x) s'annule
 	* Pour chaque point trouvé
 
 		* on calcule le hessien ?
@@ -93,7 +94,7 @@ Selon le théorème Calistro
 			* semi-définit positif : ne pas pas conclure
 			* indéfini : pas un extremum
 
-	* s'il n'existe qu'un seul minimum (et convexe), alors c'est le minimum global
+	* s'il existe un minimum et la fonction est convexe, alors c'est le minimum global
 
 Prouver la convexité ?
 
@@ -114,7 +115,7 @@ Transformation en :math:`\ge`.
 	Ceci est utilisé si vous voulez avoir uniquement des contraintes :math:`\ge 0`
 
 		* :math:`x + a \ge 0  \Leftrightarrow  \begin{cases}\tilde{x} = x + a \\\tilde{x} \ge 0\end{cases}`
-		* :math:`x \ge a  \Leftrightarrow  \begin{cases}x = x^+ - x^- \\ x^+ \ge 0\\ x^- \ge 0\end{cases}`
+		* :math:`x \ge 0  \Leftrightarrow  \begin{cases}x = x^+ - x^- \\ x^+ \ge 0\\ x^- \ge 0\end{cases}`
 
 Transformation du :math:`=`
 	Ceci est utilisé si vous voulez avoir uniquement des contraintes :math:`\ge 0` et math:`\le 0`

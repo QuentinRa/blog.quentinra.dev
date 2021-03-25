@@ -18,7 +18,7 @@ Indéfinie
 
 Vous ne calculerez jamais ce terme. On va caractériser le signe de :math:`A` en utilisant
 son déterminant. Ce signe, lié à d'autres hypothèses, fournira plusieurs théorèmes
-utiles pour trouver un minimum dans le cas sans contraintes.
+utiles (cf points particuliers) pour trouver un minimum dans le cas sans contraintes.
 
 Signe d'une matrice (1)
 **************************

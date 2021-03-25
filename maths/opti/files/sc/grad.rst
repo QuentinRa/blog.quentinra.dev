@@ -2,15 +2,14 @@
 Hessien et gradient
 ====================
 
-Les fonctions que nous considérons dépendent, en général de plusieurs variables,
+Les fonctions que nous considérons dépendent en général de plusieurs variables,
 d'où la nécessité de définir le gradient (:math:`\nabla` nabla)
 et le hessien (:math:`Hf(x)`) d'une fonction :math:`f`.
 
 Gradient
-	Soit :math:`x*` un minimum local, alors on le gradient de f est un
-	vecteur des dérivées partielles.
+	Le gradient de f est un vecteur des dérivées partielles.
 
-	On peut le voir définit aussi comme :math:`\nabla f(x*) = 0` (condition de premier ordre?...)
+	On peut également le voir définit comme :math:`\nabla f(x*) = 0` (condition de premier ordre)
 	qui n'est pas une condition suffisante et qui personnellement me parait compliqué.
 
 	On peut parler de dérivée directionnelle si on multiplie chaque terme par une direction.

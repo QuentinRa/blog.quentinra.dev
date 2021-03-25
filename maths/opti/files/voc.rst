@@ -6,7 +6,7 @@ Ensembles compacts *(cf Topologie)*
 	Les ensembles compacts (=fermés et bornés) de :math:`\mathbb{R}^n` sont les segments de
 	:math:`\mathbb{R}^n`, cad les intervalles de la forme :math:`\prod_{i=1}^{n} [a_{i},b_{i}]`.
 
-	En gros ensembles fermés et bornés = intervalle.
+	En gros ensembles fermés et bornés = segment.
 
 Fonction coercive
 		:math:`f:\mathbb{R}^n \rightarrow \mathbb{R}` est coercive si

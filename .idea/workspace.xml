@@ -28,9 +28,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.github/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/opti/files/taylor.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/files/taylor.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/opti/files/sc/grad.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/files/sc/grad.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/opti/files/sc/quadra.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/files/sc/quadra.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/opti/files/voc.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/files/voc.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/opti/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
@@ -96,11 +97,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\utils\jetbrains" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\utils\jetbrains" />
       <recent name="C:\Users\quent\Documents\texas-res\assets" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\opti\files\sc" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\opti\files" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\utils\jetbrains\break" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\utils\jetbrains\tests" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -438,7 +439,7 @@
       <workItem from="1616485931870" duration="2107000" />
       <workItem from="1616488277132" duration="38450000" />
       <workItem from="1616593184290" duration="12709000" />
-      <workItem from="1616665814880" duration="4772000" />
+      <workItem from="1616665814880" duration="8818000" />
     </task>
     <servers />
   </component>
