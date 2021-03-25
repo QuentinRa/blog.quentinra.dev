@@ -16,9 +16,6 @@ Optimisation
 L'optimisation consiste à calculer la valeurs min/max d'une fonction,
 c'est-à-dire les extremums.
 
-Un problème de maximisation de de g, on peut le voir sous la forme de la minimisation
-d'une fonction f tel que :code:`f = -g`.
-
 On distingue généralement deux cas : l'optimisation avec contraintes (x appartient à un ensemble, ...)
 de l'optimisation sans contraintes.
 
@@ -26,6 +23,9 @@ On cherche à minimiser une fonction :math:`f` (à :math:`n` variables réelles 
 
 Nous noterons :math:`x*` la solution du problème (le point (x,y) minimum atteint),
 ie :math:`x* \in X` vérifie :math:`f(x*)=min_{x \in X}{f(x)}`.
+
+Un problème de maximisation d'une fonction :math:`g`, est généralement vu comme un problème de minimisation
+d'une fonction :math:`f` telle que :math:`f = -g`.
 
 .. toctree::
    :maxdepth: 1

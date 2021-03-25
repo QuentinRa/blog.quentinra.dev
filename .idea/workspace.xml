@@ -28,12 +28,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.github/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/aza.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/aza.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/stats/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/stats/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/linux/annales/p/rep/p2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/annales/p/rep/p2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/opti/files/taylor.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/files/taylor.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/opti/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -440,7 +438,7 @@
       <workItem from="1616485931870" duration="2107000" />
       <workItem from="1616488277132" duration="38450000" />
       <workItem from="1616593184290" duration="12709000" />
-      <workItem from="1616665814880" duration="2797000" />
+      <workItem from="1616665814880" duration="4772000" />
     </task>
     <servers />
   </component>

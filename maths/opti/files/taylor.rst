@@ -2,8 +2,8 @@
 Développement de taylor
 =========================
 
-Rappels
-============
+Attention, son utilité n'est pas prouvée pour le moment,
+mais je le laisse car ça a été fait.
 
 Si :math:`f` est défini sur un ouvert :math:`D`
 de :math:`\mathbb{R}`, de classe :math:`\mathcal{C}^1`
@@ -18,7 +18,6 @@ De même, le **développement de Taylor à l'ordre 2** donne pour
 
 	* :math:`f(x)=f(x*)+f'(x*)(x-x*) + \frac{1}{2} f''(x*) (x-x*)^2 + (x-x*)\epsilon(x-x*)`
 	* avec :math:`\epsilon(h) \rightarrow 0` lorsque :math:`\|h\| \rightarrow 0`
-
 
 A présent, étendons ces développements à :math:`\mathbb{R}^n`: pour tout :math:`(x,x*) \in D`,
 
