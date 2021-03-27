@@ -1,0 +1,2058 @@
+/*
+                        _______
+                       /       \
+                      .==.    .==.
+                     ((  ))==((  ))
+                    / "=="    "=="\
+                   /____|| || ||___\
+       ________     ____    ________  ___    ___
+       |  ___  \   /    \   |  ___  \ |  |  /  /
+       |  |  \  \ /  /\  \  |  |  \  \|  |_/  /
+       |  |   )  /  /__\  \ |  |__/  /|  ___  \
+       |  |__/  /  ______  \|  ____  \|  |  \  \
+_______|_______/__/ ____ \__\__|___\__\__|___\__\____
+|  ___  \ |  ____/ /    \   |  ___  \ |  ____|  ___  \
+|  |  \  \|  |___ /  /\  \  |  |  \  \|  |___|  |  \  \
+|  |__/  /|  ____/  /__\  \ |  |   )  |  ____|  |__/  /
+|  ____  \|  |__/  ______  \|  |__/  /|  |___|  ____  \
+|__|   \__\____/__/      \__\_______/ |______|__|   \__\
+                https://darkreader.org
+*/
+/* User-Agent Style */
+html {
+    background-color: #ffffff !important;
+}
+html, body, input, textarea, select, button {
+    background-color: #ffffff;
+}
+html, body, input, textarea, select, button {
+    border-color: #353e44;
+    color: #000000;
+}
+a {
+    color: #1c49d1;
+}
+table {
+    border-color: #837a6b;
+}
+::placeholder {
+    color: #b0a79b;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #ffff8f !important;
+    color: #000000 !important;
+}
+::-webkit-scrollbar {
+    background-color: #fbf8f2;
+    color: #4a565c;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #b6afa4;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #958c7d;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #4a565c;
+}
+::-webkit-scrollbar-corner {
+    background-color: #ffffff;
+}
+::selection {
+    background-color: #1d58a0 !important;
+    color: #ffffff !important;
+}
+::-moz-selection {
+    background-color: #1d58a0 !important;
+    color: #ffffff !important;
+}
+
+/* Invert Style */
+.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon {
+    filter: contrast(150%) !important;
+}
+
+/* Variables Style */
+:root {
+    --darkreader-neutral-background: #e3ddd6;
+    --darkreader-neutral-text: #000507;
+    --darkreader-selection-background: #1d58a0;
+    --darkreader-selection-text: #ffffff;
+}
+
+/* Modified CSS */
+a:active,
+a:hover {
+    outline-color: initial;
+}
+abbr[title] {
+    border-bottom-color: initial;
+}
+ins {
+    background-image: initial;
+    background-color: rgb(255, 255, 113);
+    text-decoration-color: initial;
+}
+ins,
+mark {
+    color: rgb(0, 0, 0);
+}
+mark {
+    background-image: initial;
+    background-color: rgb(209, 209, 28);
+}
+dl,
+ol,
+ul {
+    list-style-image: none;
+}
+li {
+    list-style-image: initial;
+}
+img {
+    border-color: initial;
+}
+.chromeframe {
+    background-image: initial;
+    background-color: rgb(212, 206, 197);
+    color: rgb(0, 0, 0);
+}
+.ir {
+    border-color: initial;
+    background-color: transparent;
+}
+.visuallyhidden {
+    border-color: initial;
+}
+.fa-border {
+    border-color: rgb(248, 244, 238);
+}
+.fa-inverse {
+    color: rgb(255, 255, 255);
+}
+.sr-only {
+    border-color: initial;
+}
+.fa::before,
+.icon::before,
+.rst-content .admonition-title::before,
+.rst-content .code-block-caption .headerlink::before,
+.rst-content code.download span:first-child::before,
+.rst-content dl dt .headerlink::before,
+.rst-content h1 .headerlink::before,
+.rst-content h2 .headerlink::before,
+.rst-content h3 .headerlink::before,
+.rst-content h4 .headerlink::before,
+.rst-content h5 .headerlink::before,
+.rst-content h6 .headerlink::before,
+.rst-content p.caption .headerlink::before,
+.rst-content table > caption .headerlink::before,
+.rst-content tt.download span:first-child::before,
+.wy-dropdown .caret::before,
+.wy-inline-validate.wy-inline-validate-danger .wy-input-context::before,
+.wy-inline-validate.wy-inline-validate-info .wy-input-context::before,
+.wy-inline-validate.wy-inline-validate-success .wy-input-context::before,
+.wy-inline-validate.wy-inline-validate-warning .wy-input-context::before,
+.wy-menu-vertical li.current > a span.toctree-expand::before,
+.wy-menu-vertical li.on a span.toctree-expand::before,
+.wy-menu-vertical li span.toctree-expand::before {
+    text-decoration-color: inherit;
+}
+.rst-content .code-block-caption a .headerlink,
+.rst-content a .admonition-title,
+.rst-content code.download a span:first-child,
+.rst-content dl dt a .headerlink,
+.rst-content h1 a .headerlink,
+.rst-content h2 a .headerlink,
+.rst-content h3 a .headerlink,
+.rst-content h4 a .headerlink,
+.rst-content h5 a .headerlink,
+.rst-content h6 a .headerlink,
+.rst-content p.caption a .headerlink,
+.rst-content table > caption a .headerlink,
+.rst-content tt.download a span:first-child,
+.wy-menu-vertical li.current > a span.toctree-expand,
+.wy-menu-vertical li.on a span.toctree-expand,
+.wy-menu-vertical li a span.toctree-expand,
+a .fa,
+a .icon,
+a .rst-content .admonition-title,
+a .rst-content .code-block-caption .headerlink,
+a .rst-content code.download span:first-child,
+a .rst-content dl dt .headerlink,
+a .rst-content h1 .headerlink,
+a .rst-content h2 .headerlink,
+a .rst-content h3 .headerlink,
+a .rst-content h4 .headerlink,
+a .rst-content h5 .headerlink,
+a .rst-content h6 .headerlink,
+a .rst-content p.caption .headerlink,
+a .rst-content table > caption .headerlink,
+a .rst-content tt.download span:first-child,
+a .wy-menu-vertical li span.toctree-expand {
+    text-decoration-color: inherit;
+}
+.rst-content .admonition,
+.rst-content .admonition-todo,
+.rst-content .attention,
+.rst-content .caution,
+.rst-content .danger,
+.rst-content .error,
+.rst-content .hint,
+.rst-content .important,
+.rst-content .note,
+.rst-content .seealso,
+.rst-content .tip,
+.rst-content .warning,
+.wy-alert {
+    background-image: initial;
+    background-color: rgb(251, 247, 241);
+}
+.rst-content .admonition-title,
+.wy-alert-title {
+    color: rgb(255, 255, 255);
+    background-image: initial;
+    background-color: rgb(58, 181, 255);
+}
+.rst-content .danger,
+.rst-content .error,
+.rst-content .wy-alert-danger.admonition,
+.rst-content .wy-alert-danger.admonition-todo,
+.rst-content .wy-alert-danger.attention,
+.rst-content .wy-alert-danger.caution,
+.rst-content .wy-alert-danger.hint,
+.rst-content .wy-alert-danger.important,
+.rst-content .wy-alert-danger.note,
+.rst-content .wy-alert-danger.seealso,
+.rst-content .wy-alert-danger.tip,
+.rst-content .wy-alert-danger.warning,
+.wy-alert.wy-alert-danger {
+    background-image: initial;
+    background-color: rgb(255, 203, 191);
+}
+.rst-content .danger .admonition-title,
+.rst-content .danger .wy-alert-title,
+.rst-content .error .admonition-title,
+.rst-content .error .wy-alert-title,
+.rst-content .wy-alert-danger.admonition-todo .admonition-title,
+.rst-content .wy-alert-danger.admonition-todo .wy-alert-title,
+.rst-content .wy-alert-danger.admonition .admonition-title,
+.rst-content .wy-alert-danger.admonition .wy-alert-title,
+.rst-content .wy-alert-danger.attention .admonition-title,
+.rst-content .wy-alert-danger.attention .wy-alert-title,
+.rst-content .wy-alert-danger.caution .admonition-title,
+.rst-content .wy-alert-danger.caution .wy-alert-title,
+.rst-content .wy-alert-danger.hint .admonition-title,
+.rst-content .wy-alert-danger.hint .wy-alert-title,
+.rst-content .wy-alert-danger.important .admonition-title,
+.rst-content .wy-alert-danger.important .wy-alert-title,
+.rst-content .wy-alert-danger.note .admonition-title,
+.rst-content .wy-alert-danger.note .wy-alert-title,
+.rst-content .wy-alert-danger.seealso .admonition-title,
+.rst-content .wy-alert-danger.seealso .wy-alert-title,
+.rst-content .wy-alert-danger.tip .admonition-title,
+.rst-content .wy-alert-danger.tip .wy-alert-title,
+.rst-content .wy-alert-danger.warning .admonition-title,
+.rst-content .wy-alert-danger.warning .wy-alert-title,
+.rst-content .wy-alert.wy-alert-danger .admonition-title,
+.wy-alert.wy-alert-danger .rst-content .admonition-title,
+.wy-alert.wy-alert-danger .wy-alert-title {
+    background-image: initial;
+    background-color: rgb(255, 119, 103);
+}
+.rst-content .admonition-todo,
+.rst-content .attention,
+.rst-content .caution,
+.rst-content .warning,
+.rst-content .wy-alert-warning.admonition,
+.rst-content .wy-alert-warning.danger,
+.rst-content .wy-alert-warning.error,
+.rst-content .wy-alert-warning.hint,
+.rst-content .wy-alert-warning.important,
+.rst-content .wy-alert-warning.note,
+.rst-content .wy-alert-warning.seealso,
+.rst-content .wy-alert-warning.tip,
+.wy-alert.wy-alert-warning {
+    background-image: initial;
+    background-color: rgb(255, 255, 157);
+}
+.rst-content .admonition-todo .admonition-title,
+.rst-content .admonition-todo .wy-alert-title,
+.rst-content .attention .admonition-title,
+.rst-content .attention .wy-alert-title,
+.rst-content .caution .admonition-title,
+.rst-content .caution .wy-alert-title,
+.rst-content .warning .admonition-title,
+.rst-content .warning .wy-alert-title,
+.rst-content .wy-alert-warning.admonition .admonition-title,
+.rst-content .wy-alert-warning.admonition .wy-alert-title,
+.rst-content .wy-alert-warning.danger .admonition-title,
+.rst-content .wy-alert-warning.danger .wy-alert-title,
+.rst-content .wy-alert-warning.error .admonition-title,
+.rst-content .wy-alert-warning.error .wy-alert-title,
+.rst-content .wy-alert-warning.hint .admonition-title,
+.rst-content .wy-alert-warning.hint .wy-alert-title,
+.rst-content .wy-alert-warning.important .admonition-title,
+.rst-content .wy-alert-warning.important .wy-alert-title,
+.rst-content .wy-alert-warning.note .admonition-title,
+.rst-content .wy-alert-warning.note .wy-alert-title,
+.rst-content .wy-alert-warning.seealso .admonition-title,
+.rst-content .wy-alert-warning.seealso .wy-alert-title,
+.rst-content .wy-alert-warning.tip .admonition-title,
+.rst-content .wy-alert-warning.tip .wy-alert-title,
+.rst-content .wy-alert.wy-alert-warning .admonition-title,
+.wy-alert.wy-alert-warning .rst-content .admonition-title,
+.wy-alert.wy-alert-warning .wy-alert-title {
+    background-image: initial;
+    background-color: rgb(255, 175, 82);
+}
+.rst-content .note,
+.rst-content .seealso,
+.rst-content .wy-alert-info.admonition,
+.rst-content .wy-alert-info.admonition-todo,
+.rst-content .wy-alert-info.attention,
+.rst-content .wy-alert-info.caution,
+.rst-content .wy-alert-info.danger,
+.rst-content .wy-alert-info.error,
+.rst-content .wy-alert-info.hint,
+.rst-content .wy-alert-info.important,
+.rst-content .wy-alert-info.tip,
+.rst-content .wy-alert-info.warning,
+.wy-alert.wy-alert-info {
+    background-image: initial;
+    background-color: rgb(251, 247, 241);
+}
+.rst-content .note .admonition-title,
+.rst-content .note .wy-alert-title,
+.rst-content .seealso .admonition-title,
+.rst-content .seealso .wy-alert-title,
+.rst-content .wy-alert-info.admonition-todo .admonition-title,
+.rst-content .wy-alert-info.admonition-todo .wy-alert-title,
+.rst-content .wy-alert-info.admonition .admonition-title,
+.rst-content .wy-alert-info.admonition .wy-alert-title,
+.rst-content .wy-alert-info.attention .admonition-title,
+.rst-content .wy-alert-info.attention .wy-alert-title,
+.rst-content .wy-alert-info.caution .admonition-title,
+.rst-content .wy-alert-info.caution .wy-alert-title,
+.rst-content .wy-alert-info.danger .admonition-title,
+.rst-content .wy-alert-info.danger .wy-alert-title,
+.rst-content .wy-alert-info.error .admonition-title,
+.rst-content .wy-alert-info.error .wy-alert-title,
+.rst-content .wy-alert-info.hint .admonition-title,
+.rst-content .wy-alert-info.hint .wy-alert-title,
+.rst-content .wy-alert-info.important .admonition-title,
+.rst-content .wy-alert-info.important .wy-alert-title,
+.rst-content .wy-alert-info.tip .admonition-title,
+.rst-content .wy-alert-info.tip .wy-alert-title,
+.rst-content .wy-alert-info.warning .admonition-title,
+.rst-content .wy-alert-info.warning .wy-alert-title,
+.rst-content .wy-alert.wy-alert-info .admonition-title,
+.wy-alert.wy-alert-info .rst-content .admonition-title,
+.wy-alert.wy-alert-info .wy-alert-title {
+    background-image: initial;
+    background-color: rgb(58, 181, 255);
+}
+.rst-content .hint,
+.rst-content .important,
+.rst-content .tip,
+.rst-content .wy-alert-success.admonition,
+.rst-content .wy-alert-success.admonition-todo,
+.rst-content .wy-alert-success.attention,
+.rst-content .wy-alert-success.caution,
+.rst-content .wy-alert-success.danger,
+.rst-content .wy-alert-success.error,
+.rst-content .wy-alert-success.note,
+.rst-content .wy-alert-success.seealso,
+.rst-content .wy-alert-success.warning,
+.wy-alert.wy-alert-success {
+    background-image: initial;
+    background-color: rgb(166, 255, 255);
+}
+.rst-content .hint .admonition-title,
+.rst-content .hint .wy-alert-title,
+.rst-content .important .admonition-title,
+.rst-content .important .wy-alert-title,
+.rst-content .tip .admonition-title,
+.rst-content .tip .wy-alert-title,
+.rst-content .wy-alert-success.admonition-todo .admonition-title,
+.rst-content .wy-alert-success.admonition-todo .wy-alert-title,
+.rst-content .wy-alert-success.admonition .admonition-title,
+.rst-content .wy-alert-success.admonition .wy-alert-title,
+.rst-content .wy-alert-success.attention .admonition-title,
+.rst-content .wy-alert-success.attention .wy-alert-title,
+.rst-content .wy-alert-success.caution .admonition-title,
+.rst-content .wy-alert-success.caution .wy-alert-title,
+.rst-content .wy-alert-success.danger .admonition-title,
+.rst-content .wy-alert-success.danger .wy-alert-title,
+.rst-content .wy-alert-success.error .admonition-title,
+.rst-content .wy-alert-success.error .wy-alert-title,
+.rst-content .wy-alert-success.note .admonition-title,
+.rst-content .wy-alert-success.note .wy-alert-title,
+.rst-content .wy-alert-success.seealso .admonition-title,
+.rst-content .wy-alert-success.seealso .wy-alert-title,
+.rst-content .wy-alert-success.warning .admonition-title,
+.rst-content .wy-alert-success.warning .wy-alert-title,
+.rst-content .wy-alert.wy-alert-success .admonition-title,
+.wy-alert.wy-alert-success .rst-content .admonition-title,
+.wy-alert.wy-alert-success .wy-alert-title {
+    background-image: initial;
+    background-color: rgb(29, 163, 136);
+}
+.rst-content .wy-alert-neutral.admonition,
+.rst-content .wy-alert-neutral.admonition-todo,
+.rst-content .wy-alert-neutral.attention,
+.rst-content .wy-alert-neutral.caution,
+.rst-content .wy-alert-neutral.danger,
+.rst-content .wy-alert-neutral.error,
+.rst-content .wy-alert-neutral.hint,
+.rst-content .wy-alert-neutral.important,
+.rst-content .wy-alert-neutral.note,
+.rst-content .wy-alert-neutral.seealso,
+.rst-content .wy-alert-neutral.tip,
+.rst-content .wy-alert-neutral.warning,
+.wy-alert.wy-alert-neutral {
+    background-image: initial;
+    background-color: rgb(255, 251, 247);
+}
+.rst-content .wy-alert-neutral.admonition-todo .admonition-title,
+.rst-content .wy-alert-neutral.admonition-todo .wy-alert-title,
+.rst-content .wy-alert-neutral.admonition .admonition-title,
+.rst-content .wy-alert-neutral.admonition .wy-alert-title,
+.rst-content .wy-alert-neutral.attention .admonition-title,
+.rst-content .wy-alert-neutral.attention .wy-alert-title,
+.rst-content .wy-alert-neutral.caution .admonition-title,
+.rst-content .wy-alert-neutral.caution .wy-alert-title,
+.rst-content .wy-alert-neutral.danger .admonition-title,
+.rst-content .wy-alert-neutral.danger .wy-alert-title,
+.rst-content .wy-alert-neutral.error .admonition-title,
+.rst-content .wy-alert-neutral.error .wy-alert-title,
+.rst-content .wy-alert-neutral.hint .admonition-title,
+.rst-content .wy-alert-neutral.hint .wy-alert-title,
+.rst-content .wy-alert-neutral.important .admonition-title,
+.rst-content .wy-alert-neutral.important .wy-alert-title,
+.rst-content .wy-alert-neutral.note .admonition-title,
+.rst-content .wy-alert-neutral.note .wy-alert-title,
+.rst-content .wy-alert-neutral.seealso .admonition-title,
+.rst-content .wy-alert-neutral.seealso .wy-alert-title,
+.rst-content .wy-alert-neutral.tip .admonition-title,
+.rst-content .wy-alert-neutral.tip .wy-alert-title,
+.rst-content .wy-alert-neutral.warning .admonition-title,
+.rst-content .wy-alert-neutral.warning .wy-alert-title,
+.rst-content .wy-alert.wy-alert-neutral .admonition-title,
+.wy-alert.wy-alert-neutral .rst-content .admonition-title,
+.wy-alert.wy-alert-neutral .wy-alert-title {
+    color: rgb(40, 49, 53);
+    background-image: initial;
+    background-color: rgb(236, 232, 226);
+}
+.rst-content .wy-alert-neutral.admonition-todo a,
+.rst-content .wy-alert-neutral.admonition a,
+.rst-content .wy-alert-neutral.attention a,
+.rst-content .wy-alert-neutral.caution a,
+.rst-content .wy-alert-neutral.danger a,
+.rst-content .wy-alert-neutral.error a,
+.rst-content .wy-alert-neutral.hint a,
+.rst-content .wy-alert-neutral.important a,
+.rst-content .wy-alert-neutral.note a,
+.rst-content .wy-alert-neutral.seealso a,
+.rst-content .wy-alert-neutral.tip a,
+.rst-content .wy-alert-neutral.warning a,
+.wy-alert.wy-alert-neutral a {
+    color: rgb(29, 118, 176);
+}
+.wy-tray-container li {
+    background-image: initial;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 0px;
+}
+.wy-tray-container li.wy-tray-item-success {
+    background-image: initial;
+    background-color: rgb(29, 161, 85);
+}
+.wy-tray-container li.wy-tray-item-info {
+    background-image: initial;
+    background-color: rgb(29, 118, 176);
+}
+.wy-tray-container li.wy-tray-item-warning {
+    background-image: initial;
+    background-color: rgb(221, 118, 26);
+}
+.wy-tray-container li.wy-tray-item-danger {
+    background-image: initial;
+    background-color: rgb(241, 55, 37);
+}
+.btn {
+    color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: rgb(29, 161, 85);
+    text-decoration-color: initial;
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 1px 2px -1px inset,
+    rgba(0, 0, 0, 0.1) 0px -2px 0px 0px inset;
+}
+.btn-hover {
+    background-image: initial;
+    background-color: rgb(28, 134, 206);
+    color: rgb(255, 255, 255);
+}
+.btn:hover {
+    background-image: initial;
+    background-color: rgb(28, 191, 97);
+    color: rgb(255, 255, 255);
+}
+.btn:focus {
+    background-image: initial;
+    background-color: rgb(28, 191, 97);
+    outline-color: initial;
+}
+.btn:active {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px -1px 0px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px 2px 0px 0px inset;
+}
+.btn:visited {
+    color: rgb(255, 255, 255);
+}
+.btn-disabled,
+.btn-disabled:active,
+.btn-disabled:focus,
+.btn-disabled:hover,
+.btn:disabled {
+    background-image: none;
+    box-shadow: none;
+}
+.btn-info {
+    background-color: rgb(29, 118, 176) !important;
+}
+.btn-info:hover {
+    background-color: rgb(28, 134, 206) !important;
+}
+.btn-neutral {
+    background-color: rgb(255, 251, 247) !important;
+    color: rgb(40, 49, 53) !important;
+}
+.btn-neutral:hover {
+    color: rgb(40, 49, 53);
+    background-color: rgb(242, 238, 232) !important;
+}
+.btn-neutral:visited {
+    color: rgb(40, 49, 53) !important;
+}
+.btn-success {
+    background-color: rgb(29, 161, 85) !important;
+}
+.btn-success:hover {
+    background-color: rgb(28, 133, 73) !important;
+}
+.btn-danger {
+    background-color: rgb(241, 55, 37) !important;
+}
+.btn-danger:hover {
+    background-color: rgb(255, 70, 50) !important;
+}
+.btn-warning {
+    background-color: rgb(221, 118, 26) !important;
+}
+.btn-warning:hover {
+    background-color: rgb(241, 131, 35) !important;
+}
+.btn-invert {
+    background-color: rgb(8, 14, 17);
+}
+.btn-invert:hover {
+    background-color: rgb(22, 29, 32) !important;
+}
+.btn-link {
+    color: rgb(29, 118, 176);
+    box-shadow: none;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+.btn-link:active,
+.btn-link:hover {
+    box-shadow: none;
+    background-color: transparent !important;
+    color: rgb(29, 152, 233) !important;
+}
+.btn-link:visited {
+    color: rgb(170, 26, 229);
+}
+.wy-dropdown-menu {
+    background-image: initial;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(223, 218, 209);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px 0px;
+}
+.wy-dropdown-menu > dd > a {
+    color: rgb(40, 49, 53);
+}
+.wy-dropdown-menu > dd > a:hover {
+    background-image: initial;
+    background-color: rgb(29, 118, 176);
+    color: rgb(255, 255, 255);
+}
+.wy-dropdown-menu > dd.divider {
+    border-top-color: rgb(223, 218, 209);
+}
+.wy-dropdown-menu > dd.call-to-action {
+    background-image: initial;
+    background-color: rgb(236, 232, 226);
+}
+.wy-dropdown-menu > dd.call-to-action:hover {
+    background-image: initial;
+    background-color: rgb(236, 232, 226);
+}
+.wy-dropdown-menu > dd.call-to-action .btn {
+    color: rgb(255, 255, 255);
+}
+.wy-dropdown.wy-dropdown-bubble .wy-dropdown-menu {
+    background-image: initial;
+    background-color: rgb(255, 255, 255);
+}
+.wy-dropdown.wy-dropdown-bubble .wy-dropdown-menu a:hover {
+    background-image: initial;
+    background-color: rgb(29, 118, 176);
+    color: rgb(255, 255, 255);
+}
+.wy-dropdown-arrow::before {
+    border-bottom-color: rgb(255, 253, 247);
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+fieldset,
+legend {
+    border-color: initial;
+}
+label {
+    color: rgb(26, 34, 38);
+}
+.wy-control-group.wy-control-group-required > label::after {
+    color: rgb(241, 55, 37);
+}
+.wy-form-message-inline {
+    color: rgb(80, 92, 98);
+}
+.wy-form-message {
+    color: rgb(158, 149, 136);
+}
+input[type="color"], input[type="date"], input[type="datetime-local"], input[type="datetime"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+    border-color: rgb(212, 206, 197);
+    box-shadow: rgb(230, 226, 218) 0px 1px 3px inset;
+}
+input[type="color"]:focus, input[type="date"]:focus, input[type="datetime-local"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus {
+    outline-color: initial;
+    border-color: rgb(26, 34, 38);
+}
+input.no-focus:focus {
+    border-color: rgb(212, 206, 197) !important;
+}
+input[type="checkbox"]:focus, input[type="file"]:focus, input[type="radio"]:focus {
+    outline-color: rgb(28, 145, 206);
+}
+input[type="color"][disabled], input[type="date"][disabled], input[type="datetime-local"][disabled], input[type="datetime"][disabled], input[type="email"][disabled], input[type="month"][disabled], input[type="number"][disabled], input[type="password"][disabled], input[type="search"][disabled], input[type="tel"][disabled], input[type="text"][disabled], input[type="time"][disabled], input[type="url"][disabled], input[type="week"][disabled] {
+    background-color: rgb(255, 255, 253);
+}
+input:focus:invalid,
+select:focus:invalid,
+textarea:focus:invalid {
+    color: rgb(241, 55, 37);
+    border-color: rgb(241, 55, 37);
+}
+input:focus:invalid:focus,
+select:focus:invalid:focus,
+textarea:focus:invalid:focus {
+    border-color: rgb(241, 55, 37);
+}
+input[type="checkbox"]:focus:invalid:focus, input[type="file"]:focus:invalid:focus, input[type="radio"]:focus:invalid:focus {
+    outline-color: rgb(241, 55, 37);
+}
+select,
+textarea {
+    border-color: rgb(212, 206, 197);
+    box-shadow: rgb(230, 226, 218) 0px 1px 3px inset;
+}
+select {
+    border-color: rgb(212, 206, 197);
+    background-color: rgb(255, 255, 255);
+}
+select:focus,
+textarea:focus {
+    outline-color: initial;
+}
+input[readonly],
+select[disabled],
+select[readonly],
+textarea[disabled],
+textarea[readonly] {
+    background-color: rgb(255, 255, 253);
+}
+.wy-checkbox,
+.wy-radio {
+    color: rgb(40, 49, 53);
+}
+.wy-input-prefix .wy-input-context,
+.wy-input-suffix .wy-input-context {
+    background-color: rgb(255, 251, 247);
+    border-color: rgb(212, 206, 197);
+    color: rgb(158, 149, 136);
+}
+.wy-input-suffix .wy-input-context {
+    border-left-color: initial;
+}
+.wy-input-prefix .wy-input-context {
+    border-right-color: initial;
+}
+.wy-switch::before {
+    background-image: initial;
+    background-color: rgb(212, 206, 197);
+}
+.wy-switch::after {
+    background-image: initial;
+    background-color: rgb(158, 149, 136);
+}
+.wy-switch span {
+    color: rgb(212, 206, 197);
+}
+.wy-switch.active::before {
+    background-image: initial;
+    background-color: rgb(25, 107, 59);
+}
+.wy-switch.active::after {
+    background-image: initial;
+    background-color: rgb(29, 161, 85);
+}
+.wy-control-group.wy-control-group-error .wy-form-message,
+.wy-control-group.wy-control-group-error > label {
+    color: rgb(241, 55, 37);
+}
+.wy-control-group.wy-control-group-error input[type="color"], .wy-control-group.wy-control-group-error input[type="date"], .wy-control-group.wy-control-group-error input[type="datetime-local"], .wy-control-group.wy-control-group-error input[type="datetime"], .wy-control-group.wy-control-group-error input[type="email"], .wy-control-group.wy-control-group-error input[type="month"], .wy-control-group.wy-control-group-error input[type="number"], .wy-control-group.wy-control-group-error input[type="password"], .wy-control-group.wy-control-group-error input[type="search"], .wy-control-group.wy-control-group-error input[type="tel"], .wy-control-group.wy-control-group-error input[type="text"], .wy-control-group.wy-control-group-error input[type="time"], .wy-control-group.wy-control-group-error input[type="url"], .wy-control-group.wy-control-group-error input[type="week"],
+.wy-control-group.wy-control-group-error textarea {
+    border-color: rgb(241, 55, 37);
+}
+.wy-inline-validate.wy-inline-validate-success .wy-input-context {
+    color: rgb(29, 161, 85);
+}
+.wy-inline-validate.wy-inline-validate-danger .wy-input-context {
+    color: rgb(241, 55, 37);
+}
+.wy-inline-validate.wy-inline-validate-warning .wy-input-context {
+    color: rgb(221, 118, 26);
+}
+.wy-inline-validate.wy-inline-validate-info .wy-input-context {
+    color: rgb(29, 118, 176);
+}
+.rst-content table.docutils caption,
+.rst-content table.field-list caption,
+.wy-table caption {
+    color: rgb(0, 0, 0);
+}
+.rst-content table.docutils thead,
+.rst-content table.field-list thead,
+.wy-table thead {
+    color: rgb(0, 0, 0);
+}
+.rst-content table.docutils thead th,
+.rst-content table.field-list thead th,
+.wy-table thead th {
+    border-bottom-color: rgb(236, 232, 226);
+}
+.rst-content table.docutils td,
+.rst-content table.field-list td,
+.wy-table td {
+    background-color: transparent;
+}
+.wy-table-secondary {
+    color: rgb(131, 122, 107);
+}
+.wy-table-tertiary {
+    color: rgb(131, 122, 107);
+}
+.rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td,
+.wy-table-backed,
+.wy-table-odd td,
+.wy-table-striped tr:nth-child(2n-1) td {
+    background-color: rgb(255, 251, 247);
+}
+.rst-content table.docutils,
+.wy-table-bordered-all {
+    border-color: rgb(236, 232, 226);
+}
+.rst-content table.docutils td,
+.wy-table-bordered-all td {
+    border-bottom-color: rgb(236, 232, 226);
+    border-left-color: rgb(236, 232, 226);
+}
+.wy-table-bordered {
+    border-color: rgb(236, 232, 226);
+}
+.wy-table-bordered-rows td {
+    border-bottom-color: rgb(236, 232, 226);
+}
+.wy-table-horizontal td,
+.wy-table-horizontal th {
+    border-bottom-color: rgb(236, 232, 226);
+}
+a {
+    color: rgb(29, 118, 176);
+    text-decoration-color: initial;
+}
+a:hover {
+    color: rgb(28, 139, 212);
+}
+a:visited {
+    color: rgb(170, 26, 229);
+}
+body {
+    color: rgb(40, 49, 53);
+    background-image: initial;
+    background-color: rgb(250, 245, 241);
+}
+.wy-text-strike {
+    text-decoration-color: initial;
+}
+.wy-text-warning {
+    color: rgb(221, 118, 26) !important;
+}
+a.wy-text-warning:hover {
+    color: rgb(255, 146, 50) !important;
+}
+.wy-text-info {
+    color: rgb(29, 118, 176) !important;
+}
+a.wy-text-info:hover {
+    color: rgb(29, 152, 233) !important;
+}
+.wy-text-success {
+    color: rgb(29, 161, 85) !important;
+}
+a.wy-text-success:hover {
+    color: rgb(26, 221, 109) !important;
+}
+.wy-text-danger {
+    color: rgb(241, 55, 37) !important;
+}
+a.wy-text-danger:hover {
+    color: rgb(255, 86, 67) !important;
+}
+.wy-text-neutral {
+    color: rgb(40, 49, 53) !important;
+}
+a.wy-text-neutral:hover {
+    color: rgb(67, 77, 83) !important;
+}
+hr {
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-top-color: rgb(236, 232, 226);
+}
+.rst-content code,
+.rst-content tt,
+code {
+    background-image: initial;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(236, 232, 226);
+    color: rgb(241, 55, 37);
+}
+.rst-content .section ul,
+.rst-content .toctree-wrapper ul,
+.wy-plain-list-disc,
+article ul {
+    list-style-image: initial;
+}
+.rst-content .section ul li,
+.rst-content .toctree-wrapper ul li,
+.wy-plain-list-disc li,
+article ul li {
+    list-style-image: initial;
+}
+.rst-content .section ul li li,
+.rst-content .toctree-wrapper ul li li,
+.wy-plain-list-disc li li,
+article ul li li {
+    list-style-image: initial;
+}
+.rst-content .section ul li li li,
+.rst-content .toctree-wrapper ul li li li,
+.wy-plain-list-disc li li li,
+article ul li li li {
+    list-style-image: initial;
+}
+.rst-content .section ul li ol li,
+.rst-content .toctree-wrapper ul li ol li,
+.wy-plain-list-disc li ol li,
+article ul li ol li {
+    list-style-image: initial;
+}
+.rst-content .section ol,
+.rst-content ol.arabic,
+.wy-plain-list-decimal,
+article ol {
+    list-style-image: initial;
+}
+.rst-content .section ol li,
+.rst-content ol.arabic li,
+.wy-plain-list-decimal li,
+article ol li {
+    list-style-image: initial;
+}
+.rst-content .section ol li ul li,
+.rst-content ol.arabic li ul li,
+.wy-plain-list-decimal li ul li,
+article ol li ul li {
+    list-style-image: initial;
+}
+.rst-content .wy-breadcrumbs li tt,
+.wy-breadcrumbs li .rst-content tt,
+.wy-breadcrumbs li code {
+    border-color: initial;
+    background-image: none;
+    background-color: initial;
+}
+.rst-content .wy-breadcrumbs li tt.literal,
+.wy-breadcrumbs li .rst-content tt.literal,
+.wy-breadcrumbs li code.literal {
+    color: rgb(40, 49, 53);
+}
+.wy-breadcrumbs-extra {
+    color: rgb(187, 179, 167);
+}
+.wy-menu a:hover {
+    text-decoration-color: initial;
+}
+.wy-menu-horiz li:hover {
+    background-image: initial;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.wy-menu-horiz li.divide-left {
+    border-left-color: rgb(40, 49, 53);
+}
+.wy-menu-horiz li.divide-right {
+    border-right-color: rgb(40, 49, 53);
+}
+.wy-menu-vertical header,
+.wy-menu-vertical p.caption {
+    color: rgb(43, 167, 248);
+}
+.wy-menu-vertical li.divide-top {
+    border-top-color: rgb(40, 49, 53);
+}
+.wy-menu-vertical li.divide-bottom {
+    border-bottom-color: rgb(40, 49, 53);
+}
+.wy-menu-vertical li.current {
+    background-image: initial;
+    background-color: rgb(236, 232, 226);
+}
+.wy-menu-vertical li.current a {
+    color: rgb(131, 122, 107);
+    border-right-color: rgb(209, 203, 194);
+}
+.wy-menu-vertical li.current a:hover {
+    background-image: initial;
+    background-color: rgb(223, 218, 209);
+}
+.rst-content .wy-menu-vertical li tt,
+.wy-menu-vertical li .rst-content tt,
+.wy-menu-vertical li code {
+    border-color: initial;
+    background-image: inherit;
+    background-color: inherit;
+    color: inherit;
+}
+.wy-menu-vertical li span.toctree-expand {
+    color: rgb(55, 64, 68);
+}
+.wy-menu-vertical li.current > a,
+.wy-menu-vertical li.on a {
+    color: rgb(40, 49, 53);
+    background-image: initial;
+    background-color: rgb(255, 255, 255);
+    border-color: initial;
+}
+.wy-menu-vertical li.current > a:hover,
+.wy-menu-vertical li.on a:hover {
+    background-image: initial;
+    background-color: rgb(255, 255, 255);
+}
+.wy-menu-vertical li.current > a:hover span.toctree-expand,
+.wy-menu-vertical li.on a:hover span.toctree-expand {
+    color: rgb(131, 122, 107);
+}
+.wy-menu-vertical li.current > a span.toctree-expand,
+.wy-menu-vertical li.on a span.toctree-expand {
+    color: rgb(26, 34, 38);
+}
+.wy-menu-vertical li.toctree-l1.current > a {
+    border-bottom-color: rgb(209, 203, 194);
+    border-top-color: rgb(209, 203, 194);
+}
+.wy-menu-vertical li.toctree-l2 a,
+.wy-menu-vertical li.toctree-l3 a,
+.wy-menu-vertical li.toctree-l4 a,
+.wy-menu-vertical li.toctree-l5 a,
+.wy-menu-vertical li.toctree-l6 a,
+.wy-menu-vertical li.toctree-l7 a,
+.wy-menu-vertical li.toctree-l8 a,
+.wy-menu-vertical li.toctree-l9 a,
+.wy-menu-vertical li.toctree-l10 a {
+    color: rgb(40, 49, 53);
+}
+.wy-menu-vertical li.toctree-l2 a:hover span.toctree-expand,
+.wy-menu-vertical li.toctree-l3 a:hover span.toctree-expand,
+.wy-menu-vertical li.toctree-l4 a:hover span.toctree-expand,
+.wy-menu-vertical li.toctree-l5 a:hover span.toctree-expand,
+.wy-menu-vertical li.toctree-l6 a:hover span.toctree-expand,
+.wy-menu-vertical li.toctree-l7 a:hover span.toctree-expand,
+.wy-menu-vertical li.toctree-l8 a:hover span.toctree-expand,
+.wy-menu-vertical li.toctree-l9 a:hover span.toctree-expand,
+.wy-menu-vertical li.toctree-l10 a:hover span.toctree-expand {
+    color: rgb(131, 122, 107);
+}
+.wy-menu-vertical li.toctree-l2.current > a,
+.wy-menu-vertical li.toctree-l2.current li.toctree-l3 > a {
+    background-image: initial;
+    background-color: rgb(209, 203, 194);
+}
+.wy-menu-vertical li.toctree-l2 span.toctree-expand {
+    color: rgb(169, 161, 148);
+}
+.wy-menu-vertical li.toctree-l3.current > a,
+.wy-menu-vertical li.toctree-l3.current li.toctree-l4 > a {
+    background-image: initial;
+    background-color: rgb(197, 190, 179);
+}
+.wy-menu-vertical li.toctree-l3 span.toctree-expand {
+    color: rgb(155, 146, 133);
+}
+.wy-menu-vertical li ul li a {
+    color: rgb(226, 221, 212);
+}
+.wy-menu-vertical a {
+    color: rgb(226, 221, 212);
+}
+.wy-menu-vertical a:hover {
+    background-color: rgb(53, 62, 68);
+}
+.wy-menu-vertical a:hover span.toctree-expand {
+    color: rgb(226, 221, 212);
+}
+.wy-menu-vertical a:active {
+    background-color: rgb(29, 118, 176);
+    color: rgb(255, 255, 255);
+}
+.wy-menu-vertical a:active span.toctree-expand {
+    color: rgb(255, 255, 255);
+}
+.wy-side-nav-search {
+    background-color: rgb(29, 118, 176);
+    color: rgb(255, 255, 255);
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: rgb(28, 100, 146);
+}
+.wy-side-nav-search img {
+    background-color: rgb(29, 118, 176);
+}
+.wy-side-nav-search .wy-dropdown > a,
+.wy-side-nav-search > a {
+    color: rgb(255, 255, 255);
+}
+.wy-side-nav-search .wy-dropdown > a:hover,
+.wy-side-nav-search > a:hover {
+    background-image: initial;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.wy-side-nav-search .wy-dropdown > a img.logo,
+.wy-side-nav-search > a img.logo {
+    background-image: initial;
+    background-color: transparent;
+}
+.wy-side-nav-search > div.version {
+    color: rgba(255, 255, 255, 0.3);
+}
+.wy-nav .wy-menu-vertical header {
+    color: rgb(29, 118, 176);
+}
+.wy-nav .wy-menu-vertical a {
+    color: rgb(187, 179, 167);
+}
+.wy-nav .wy-menu-vertical a:hover {
+    background-color: rgb(29, 118, 176);
+    color: rgb(255, 255, 255);
+}
+.wy-body-for-nav {
+    background-image: initial;
+    background-color: rgb(255, 255, 255);
+}
+.wy-nav-side {
+    color: rgb(161, 152, 139);
+    background-image: initial;
+    background-color: rgb(26, 34, 37);
+}
+.wy-nav-top {
+    background-image: initial;
+    background-color: rgb(29, 118, 176);
+    color: rgb(255, 255, 255);
+}
+.wy-nav-top a {
+    color: rgb(255, 255, 255);
+}
+.wy-nav-top img {
+    background-color: rgb(29, 118, 176);
+}
+.wy-nav-content-wrap {
+    background-image: initial;
+    background-color: rgb(255, 255, 255);
+}
+.wy-body-mask {
+    background-image: initial;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+footer {
+    color: rgb(131, 122, 107);
+}
+.rst-content footer span.commit tt,
+footer span.commit .rst-content tt,
+footer span.commit code {
+    background-image: none;
+    background-color: initial;
+    border-color: initial;
+    color: rgb(131, 122, 107);
+}
+#search-results .search li {
+    border-bottom-color: rgb(236, 232, 226);
+}
+#search-results .search li:first-child {
+    border-top-color: rgb(236, 232, 226);
+}
+#search-results .context {
+    color: rgb(131, 122, 107);
+}
+.wy-body-for-nav {
+    background-image: initial;
+    background-color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 1100px) {
+    .wy-nav-content-wrap {
+        background-image: initial;
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    .wy-nav-content {
+        background-image: initial;
+        background-color: rgb(255, 255, 255);
+    }
+}
+.rst-versions {
+    color: rgb(255, 255, 255);
+    background-image: initial;
+    background-color: rgb(4, 10, 13);
+}
+.rst-versions a {
+    color: rgb(29, 118, 176);
+    text-decoration-color: initial;
+}
+.rst-versions .rst-current-version {
+    background-color: rgb(13, 19, 22);
+    color: rgb(29, 161, 85);
+}
+.rst-content .code-block-caption .rst-versions .rst-current-version .headerlink,
+.rst-content .rst-versions .rst-current-version .admonition-title,
+.rst-content code.download .rst-versions .rst-current-version span:first-child,
+.rst-content dl dt .rst-versions .rst-current-version .headerlink,
+.rst-content h1 .rst-versions .rst-current-version .headerlink,
+.rst-content h2 .rst-versions .rst-current-version .headerlink,
+.rst-content h3 .rst-versions .rst-current-version .headerlink,
+.rst-content h4 .rst-versions .rst-current-version .headerlink,
+.rst-content h5 .rst-versions .rst-current-version .headerlink,
+.rst-content h6 .rst-versions .rst-current-version .headerlink,
+.rst-content p.caption .rst-versions .rst-current-version .headerlink,
+.rst-content table > caption .rst-versions .rst-current-version .headerlink,
+.rst-content tt.download .rst-versions .rst-current-version span:first-child,
+.rst-versions .rst-current-version .fa,
+.rst-versions .rst-current-version .icon,
+.rst-versions .rst-current-version .rst-content .admonition-title,
+.rst-versions .rst-current-version .rst-content .code-block-caption .headerlink,
+.rst-versions .rst-current-version .rst-content code.download span:first-child,
+.rst-versions .rst-current-version .rst-content dl dt .headerlink,
+.rst-versions .rst-current-version .rst-content h1 .headerlink,
+.rst-versions .rst-current-version .rst-content h2 .headerlink,
+.rst-versions .rst-current-version .rst-content h3 .headerlink,
+.rst-versions .rst-current-version .rst-content h4 .headerlink,
+.rst-versions .rst-current-version .rst-content h5 .headerlink,
+.rst-versions .rst-current-version .rst-content h6 .headerlink,
+.rst-versions .rst-current-version .rst-content p.caption .headerlink,
+.rst-versions .rst-current-version .rst-content table > caption .headerlink,
+.rst-versions .rst-current-version .rst-content tt.download span:first-child,
+.rst-versions .rst-current-version .wy-menu-vertical li span.toctree-expand,
+.wy-menu-vertical li .rst-versions .rst-current-version span.toctree-expand {
+    color: rgb(255, 255, 255);
+}
+.rst-versions .rst-current-version.rst-out-of-date {
+    background-color: rgb(241, 55, 37);
+    color: rgb(255, 255, 255);
+}
+.rst-versions .rst-current-version.rst-active-old-version {
+    background-color: rgb(211, 175, 28);
+    color: rgb(0, 0, 0);
+}
+.rst-versions .rst-other-versions {
+    color: rgb(131, 122, 107);
+}
+.rst-versions .rst-other-versions hr {
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-top-color: rgb(40, 47, 52);
+}
+.rst-versions .rst-other-versions dd a {
+    color: rgb(255, 255, 255);
+}
+.rst-versions.rst-badge {
+    border-color: initial;
+}
+.rst-content abbr[title] {
+    text-decoration-color: initial;
+}
+.rst-content.style-external-links a.reference.external::after {
+    color: rgb(187, 179, 167);
+}
+.rst-content div[class^="highlight"],
+.rst-content pre.literal-block {
+    border-color: rgb(236, 232, 226);
+}
+.rst-content div[class^="highlight"] div[class^="highlight"], .rst-content pre.literal-block div[class^="highlight"] {
+    border-color: initial;
+}
+.rst-content .linenodiv pre {
+    border-right-color: rgb(242, 238, 232);
+}
+.rst-content .admonition table {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.rst-content .admonition table td,
+.rst-content .admonition table th {
+    background-image: initial !important;
+    background-color: transparent !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+.rst-content .section ol.loweralpha,
+.rst-content .section ol.loweralpha > li {
+    list-style-image: initial;
+}
+.rst-content .section ol.upperalpha,
+.rst-content .section ol.upperalpha > li {
+    list-style-image: initial;
+}
+.rst-content .toc-backref {
+    color: rgb(40, 49, 53);
+}
+.rst-content .sidebar {
+    background-image: initial;
+    background-color: rgb(255, 251, 247);
+    border-color: rgb(236, 232, 226);
+}
+.rst-content .sidebar .sidebar-title {
+    background-image: initial;
+    background-color: rgb(236, 232, 226);
+}
+.rst-content .highlighted {
+    background-image: initial;
+    background-color: rgb(211, 175, 28);
+    box-shadow: rgb(211, 175, 28) 0px 0px 0px 2px;
+}
+html.writer-html4 .rst-content table.docutils.citation,
+html.writer-html4 .rst-content table.docutils.footnote {
+    background-image: none;
+    background-color: initial;
+    border-color: initial;
+}
+html.writer-html4 .rst-content table.docutils.citation td,
+html.writer-html4 .rst-content table.docutils.citation tr,
+html.writer-html4 .rst-content table.docutils.footnote td,
+html.writer-html4 .rst-content table.docutils.footnote tr {
+    border-color: initial;
+    background-color: transparent !important;
+}
+.rst-content table.docutils.footnote,
+html.writer-html4 .rst-content table.docutils.citation,
+html.writer-html5 .rst-content dl.footnote {
+    color: rgb(131, 122, 107);
+}
+.rst-content table.docutils.footnote code,
+.rst-content table.docutils.footnote tt,
+html.writer-html4 .rst-content table.docutils.citation code,
+html.writer-html4 .rst-content table.docutils.citation tt,
+html.writer-html5 .rst-content dl.footnote code,
+html.writer-html5 .rst-content dl.footnote tt {
+    color: rgb(62, 73, 79);
+}
+.rst-content table.docutils th {
+    border-color: rgb(236, 232, 226);
+}
+html.writer-html5 .rst-content table.docutils th {
+    border-color: rgb(236, 232, 226);
+}
+.rst-content table.field-list,
+.rst-content table.field-list td {
+    border-color: initial;
+}
+.rst-content code,
+.rst-content tt {
+    color: rgb(0, 0, 0);
+}
+.rst-content code.literal,
+.rst-content tt.literal {
+    color: rgb(241, 55, 37);
+}
+.rst-content code.xref,
+.rst-content tt.xref,
+a .rst-content code,
+a .rst-content tt {
+    color: rgb(40, 49, 53);
+}
+.rst-content a code,
+.rst-content a tt {
+    color: rgb(29, 118, 176);
+}
+html.writer-html4 .rst-content dl:not(.docutils) > dt,
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple) > dt {
+    background-image: initial;
+    background-color: rgb(251, 247, 241);
+    color: rgb(29, 118, 176);
+    border-top-color: rgb(58, 181, 255);
+}
+html.writer-html4 .rst-content dl:not(.docutils) > dt::before,
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple) > dt::before {
+    color: rgb(58, 181, 255);
+}
+html.writer-html4 .rst-content dl:not(.docutils) > dt .headerlink,
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple) > dt .headerlink {
+    color: rgb(40, 49, 53);
+}
+html.writer-html4 .rst-content dl:not(.docutils) dl:not(.field-list) > dt,
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple) dl:not(.field-list) > dt {
+    border-top-color: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: rgb(212, 206, 197);
+    background-image: initial;
+    background-color: rgb(250, 247, 241);
+    color: rgb(62, 73, 79);
+}
+html.writer-html4 .rst-content dl:not(.docutils) dl:not(.field-list) > dt .headerlink,
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple) dl:not(.field-list) > dt .headerlink {
+    color: rgb(40, 49, 53);
+}
+html.writer-html4 .rst-content dl:not(.docutils) code.descclassname,
+html.writer-html4 .rst-content dl:not(.docutils) code.descname,
+html.writer-html4 .rst-content dl:not(.docutils) tt.descclassname,
+html.writer-html4 .rst-content dl:not(.docutils) tt.descname,
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple) code.descclassname,
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple) code.descname,
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple) tt.descclassname,
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple) tt.descname {
+    background-color: transparent;
+    border-color: initial;
+}
+html.writer-html4 .rst-content dl:not(.docutils) .optional,
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple) .optional {
+    color: rgb(0, 0, 0);
+}
+.rst-content .viewcode-back,
+.rst-content .viewcode-link {
+    color: rgb(29, 161, 85);
+}
+.rst-content code.download,
+.rst-content tt.download {
+    background-image: inherit;
+    background-color: inherit;
+    color: inherit;
+    border-color: inherit;
+}
+.rst-content .guilabel {
+    border-color: rgb(74, 194, 255);
+    background-image: initial;
+    background-color: rgb(251, 247, 241);
+}
+span[id*="MathJax-Span"] {
+    color: rgb(40, 49, 53);
+}
+td.linenos .normal {
+    color: inherit;
+    background-color: transparent;
+}
+span.linenos {
+    color: inherit;
+    background-color: transparent;
+}
+td.linenos .special {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 146);
+}
+span.linenos.special {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 146);
+}
+.highlight .hll {
+    background-color: rgb(255, 255, 157);
+}
+.highlight {
+    background-image: initial;
+    background-color: rgb(255, 255, 250);
+}
+.highlight .c {
+    color: rgb(28, 139, 139);
+}
+.highlight .err {
+    border-color: rgb(209, 28, 28);
+}
+.highlight .k {
+    color: rgb(19, 74, 19);
+}
+.highlight .o {
+    color: rgb(80, 92, 98);
+}
+.highlight .ch {
+    color: rgb(28, 139, 139);
+}
+.highlight .cm {
+    color: rgb(28, 139, 139);
+}
+.highlight .cp {
+    color: rgb(134, 97, 28);
+}
+.highlight .cpf {
+    color: rgb(28, 139, 139);
+}
+.highlight .c1 {
+    color: rgb(28, 139, 139);
+}
+.highlight .cs {
+    color: rgb(28, 139, 139);
+}
+.highlight .gd {
+    color: rgb(106, 25, 25);
+}
+.highlight .gr {
+    color: rgb(209, 28, 28);
+}
+.highlight .gh {
+    color: rgb(19, 19, 74);
+}
+.highlight .gi {
+    color: rgb(25, 106, 25);
+}
+.highlight .go {
+    color: rgb(140, 131, 115);
+}
+.highlight .gp {
+    color: rgb(19, 19, 74);
+}
+.highlight .gu {
+    color: rgb(74, 19, 74);
+}
+.highlight .gt {
+    color: rgb(29, 73, 170);
+}
+.highlight .kc {
+    color: rgb(19, 74, 19);
+}
+.highlight .kd {
+    color: rgb(19, 74, 19);
+}
+.highlight .kn {
+    color: rgb(19, 74, 19);
+}
+.highlight .kp {
+    color: rgb(19, 74, 19);
+}
+.highlight .kr {
+    color: rgb(19, 74, 19);
+}
+.highlight .kt {
+    color: rgb(121, 26, 61);
+}
+.highlight .m {
+    color: rgb(80, 92, 98);
+}
+.highlight .s {
+    color: rgb(167, 29, 29);
+}
+.highlight .na {
+    color: rgb(112, 131, 28);
+}
+.highlight .nb {
+    color: rgb(19, 74, 19);
+}
+.highlight .nc {
+    color: rgb(28, 28, 209);
+}
+.highlight .no {
+    color: rgb(82, 20, 20);
+}
+.highlight .nd {
+    color: rgb(161, 35, 241);
+}
+.highlight .ni {
+    color: rgb(158, 149, 136);
+}
+.highlight .ne {
+    color: rgb(226, 35, 26);
+}
+.highlight .nf {
+    color: rgb(28, 28, 209);
+}
+.highlight .nl {
+    color: rgb(106, 106, 25);
+}
+.highlight .nn {
+    color: rgb(28, 28, 209);
+}
+.highlight .nt {
+    color: rgb(19, 74, 19);
+}
+.highlight .nv {
+    color: rgb(23, 23, 92);
+}
+.highlight .ow {
+    color: rgb(161, 35, 241);
+}
+.highlight .w {
+    color: rgb(194, 187, 176);
+}
+.highlight .mb {
+    color: rgb(80, 92, 98);
+}
+.highlight .mf {
+    color: rgb(80, 92, 98);
+}
+.highlight .mh {
+    color: rgb(80, 92, 98);
+}
+.highlight .mi {
+    color: rgb(80, 92, 98);
+}
+.highlight .mo {
+    color: rgb(80, 92, 98);
+}
+.highlight .sa {
+    color: rgb(167, 29, 29);
+}
+.highlight .sb {
+    color: rgb(167, 29, 29);
+}
+.highlight .sc {
+    color: rgb(167, 29, 29);
+}
+.highlight .dl {
+    color: rgb(167, 29, 29);
+}
+.highlight .sd {
+    color: rgb(167, 29, 29);
+}
+.highlight .s2 {
+    color: rgb(167, 29, 29);
+}
+.highlight .se {
+    color: rgb(170, 91, 29);
+}
+.highlight .sh {
+    color: rgb(167, 29, 29);
+}
+.highlight .si {
+    color: rgb(241, 35, 118);
+}
+.highlight .sx {
+    color: rgb(19, 74, 19);
+}
+.highlight .sr {
+    color: rgb(241, 35, 118);
+}
+.highlight .s1 {
+    color: rgb(167, 29, 29);
+}
+.highlight .ss {
+    color: rgb(23, 23, 92);
+}
+.highlight .bp {
+    color: rgb(19, 74, 19);
+}
+.highlight .fm {
+    color: rgb(28, 28, 209);
+}
+.highlight .vc {
+    color: rgb(23, 23, 92);
+}
+.highlight .vg {
+    color: rgb(23, 23, 92);
+}
+.highlight .vi {
+    color: rgb(23, 23, 92);
+}
+.highlight .vm {
+    color: rgb(23, 23, 92);
+}
+.highlight .il {
+    color: rgb(80, 92, 98);
+}
+[role="tablist"] {
+    border-bottom-color: rgb(182, 175, 163);
+}
+.sphinx-tabs-tab {
+    color: rgb(25, 76, 109);
+    background-color: rgba(255, 255, 255, 0); border-color: initial;
+}
+.sphinx-tabs-tab[aria-selected="true"] {
+    border-color: rgb(182, 175, 163) rgb(182, 175, 163) rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+}
+.sphinx-tabs-panel {
+    border-right-color: rgb(182, 175, 163);
+    border-bottom-color: rgb(182, 175, 163);
+    border-left-color: rgb(182, 175, 163);
+    border-top-color: initial;
+    background-image: initial;
+    background-color: rgb(255, 255, 255);
+}
+.hoverxref {
+    border-color: rgb(131, 122, 107);
+}
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-shadow-custom .tooltipster-content {
+    color: rgb(146, 136, 121);
+}
+.tooltipster-sidetip .tooltipster-box {
+    background-image: initial;
+    background-color: rgb(64, 74, 80);
+    border-color: rgb(0, 0, 0);
+}
+.tooltipster-sidetip .tooltipster-content {
+    color: rgb(255, 255, 255);
+}
+.tooltipster-sidetip .tooltipster-arrow-background {
+    border-color: transparent;
+}
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-background {
+    border-bottom-color: rgb(64, 74, 80);
+}
+.tooltipster-sidetip.tooltipster-left .tooltipster-arrow-background {
+    border-left-color: rgb(64, 74, 80);
+}
+.tooltipster-sidetip.tooltipster-right .tooltipster-arrow-background {
+    border-right-color: rgb(64, 74, 80);
+}
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background {
+    border-top-color: rgb(64, 74, 80);
+}
+.tooltipster-sidetip .tooltipster-arrow-border {
+    border-color: transparent;
+}
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-border {
+    border-bottom-color: rgb(0, 0, 0);
+}
+.tooltipster-sidetip.tooltipster-left .tooltipster-arrow-border {
+    border-left-color: rgb(0, 0, 0);
+}
+.tooltipster-sidetip.tooltipster-right .tooltipster-arrow-border {
+    border-right-color: rgb(0, 0, 0);
+}
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
+    border-top-color: rgb(0, 0, 0);
+}
+.tooltipster-sidetip.tooltipster-shadow .tooltipster-box {
+    border-color: initial;
+    background-image: initial;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 6px;
+}
+.tooltipster-sidetip.tooltipster-shadow .tooltipster-content {
+    color: rgb(146, 136, 121);
+}
+.tooltipster-sidetip.tooltipster-shadow .tooltipster-arrow-border {
+    border-color: transparent;
+}
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-bottom .tooltipster-arrow-border {
+    border-bottom-color: rgb(255, 255, 255);
+}
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-left .tooltipster-arrow-border {
+    border-left-color: rgb(255, 255, 255);
+}
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-right .tooltipster-arrow-border {
+    border-right-color: rgb(255, 255, 255);
+}
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-top .tooltipster-arrow-border {
+    border-top-color: rgb(255, 255, 255);
+}
+.tooltipster-sidetip.tooltipster-punk .tooltipster-box {
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    border-bottom-color: rgb(221, 26, 101);
+    background-image: initial;
+    background-color: rgb(17, 23, 26);
+}
+.tooltipster-sidetip.tooltipster-punk .tooltipster-content {
+    color: rgb(255, 255, 255);
+}
+.tooltipster-sidetip.tooltipster-punk.tooltipster-bottom .tooltipster-arrow-border {
+    border-bottom-color: rgb(17, 23, 26);
+}
+.tooltipster-sidetip.tooltipster-punk.tooltipster-left .tooltipster-arrow-border {
+    border-left-color: rgb(17, 23, 26);
+}
+.tooltipster-sidetip.tooltipster-punk.tooltipster-right .tooltipster-arrow-border {
+    border-right-color: rgb(17, 23, 26);
+}
+.tooltipster-sidetip.tooltipster-punk.tooltipster-top .tooltipster-arrow-border {
+    border-top-color: rgb(221, 26, 101);
+}
+.tooltipster-sidetip.tooltipster-noir .tooltipster-box {
+    border-color: rgb(0, 0, 0);
+    background-image: initial;
+    background-color: rgb(255, 255, 255);
+}
+.tooltipster-sidetip.tooltipster-noir .tooltipster-content {
+    color: rgb(0, 0, 0);
+}
+.tooltipster-sidetip.tooltipster-noir .tooltipster-arrow-background {
+    border-color: transparent;
+}
+.tooltipster-sidetip.tooltipster-noir.tooltipster-bottom .tooltipster-arrow-background {
+    border-bottom-color: rgb(255, 255, 255);
+}
+.tooltipster-sidetip.tooltipster-noir.tooltipster-left .tooltipster-arrow-background {
+    border-left-color: rgb(255, 255, 255);
+}
+.tooltipster-sidetip.tooltipster-noir.tooltipster-right .tooltipster-arrow-background {
+    border-right-color: rgb(255, 255, 255);
+}
+.tooltipster-sidetip.tooltipster-noir.tooltipster-top .tooltipster-arrow-background {
+    border-top-color: rgb(255, 255, 255);
+}
+.tooltipster-sidetip.tooltipster-light .tooltipster-box {
+    border-color: rgb(212, 206, 197);
+    background-image: initial;
+    background-color: rgb(247, 244, 238);
+}
+.tooltipster-sidetip.tooltipster-light .tooltipster-content {
+    color: rgb(80, 92, 98);
+}
+.tooltipster-sidetip.tooltipster-light .tooltipster-arrow-background {
+    border-color: transparent;
+}
+.tooltipster-sidetip.tooltipster-light.tooltipster-bottom .tooltipster-arrow-background {
+    border-bottom-color: rgb(247, 244, 238);
+}
+.tooltipster-sidetip.tooltipster-light.tooltipster-left .tooltipster-arrow-background {
+    border-left-color: rgb(247, 244, 238);
+}
+.tooltipster-sidetip.tooltipster-light.tooltipster-right .tooltipster-arrow-background {
+    border-right-color: rgb(247, 244, 238);
+}
+.tooltipster-sidetip.tooltipster-light.tooltipster-top .tooltipster-arrow-background {
+    border-top-color: rgb(247, 244, 238);
+}
+.tooltipster-sidetip.tooltipster-light .tooltipster-arrow-border {
+    border-color: transparent;
+}
+.tooltipster-sidetip.tooltipster-light.tooltipster-bottom .tooltipster-arrow-border {
+    border-bottom-color: rgb(212, 206, 197);
+}
+.tooltipster-sidetip.tooltipster-light.tooltipster-left .tooltipster-arrow-border {
+    border-left-color: rgb(212, 206, 197);
+}
+.tooltipster-sidetip.tooltipster-light.tooltipster-right .tooltipster-arrow-border {
+    border-right-color: rgb(212, 206, 197);
+}
+.tooltipster-sidetip.tooltipster-light.tooltipster-top .tooltipster-arrow-border {
+    border-top-color: rgb(212, 206, 197);
+}
+.tooltipster-sidetip.tooltipster-borderless .tooltipster-box {
+    border-color: initial;
+    background-image: initial;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.tooltipster-sidetip.tooltipster-borderless .tooltipster-arrow-border {
+    border-color: transparent;
+}
+.tooltipster-sidetip.tooltipster-borderless.tooltipster-bottom .tooltipster-arrow-border {
+    border-bottom-color: rgba(0, 0, 0, 0.9);
+}
+.tooltipster-sidetip.tooltipster-borderless.tooltipster-left .tooltipster-arrow-border {
+    border-left-color: rgba(0, 0, 0, 0.9);
+}
+.tooltipster-sidetip.tooltipster-borderless.tooltipster-right .tooltipster-arrow-border {
+    border-right-color: rgba(0, 0, 0, 0.9);
+}
+.tooltipster-sidetip.tooltipster-borderless.tooltipster-top .tooltipster-arrow-border {
+    border-top-color: rgba(0, 0, 0, 0.9);
+}
+.modal__overlay {
+    background-image: initial;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.modal__container {
+    background-color: rgb(255, 255, 255);
+}
+.modal__close {
+    background-image: initial;
+    background-color: transparent;
+    border-color: initial;
+}
+.modal__btn {
+    background-color: rgb(239, 235, 229);
+}
+pre.highlight {
+    border-color: rgb(236, 232, 226);
+}
+.search__backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.search__outer {
+    border-color: rgb(233, 229, 221);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.09) 1px 3px 4px;
+}
+.search__outer::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+}
+.search__outer::-webkit-scrollbar {
+    background-color: rgb(255, 255, 255);
+}
+.search__outer::-webkit-scrollbar-thumb {
+    background-color: rgb(148, 139, 124);
+}
+.search__outer__input {
+    outline-color: initial;
+    background-color: rgb(255, 255, 255);
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    border-bottom-color: rgb(97, 110, 116);
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDUxIDQ1MSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDUxIDQ1MTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZD0iTTQ0Ny4wNSw0MjhsLTEwOS42LTEwOS42YzI5LjQtMzMuOCw0Ny4yLTc3LjksNDcuMi0xMjYuMUMzODQuNjUsODYuMiwyOTguMzUsMCwxOTIuMzUsMEM4Ni4yNSwwLDAuMDUsODYuMywwLjA1LDE5Mi4zDQoJCXM4Ni4zLDE5Mi4zLDE5Mi4zLDE5Mi4zYzQ4LjIsMCw5Mi4zLTE3LjgsMTI2LjEtNDcuMkw0MjguMDUsNDQ3YzIuNiwyLjYsNi4xLDQsOS41LDRzNi45LTEuMyw5LjUtNA0KCQlDNDUyLjI1LDQ0MS44LDQ1Mi4yNSw0MzMuMiw0NDcuMDUsNDI4eiBNMjYuOTUsMTkyLjNjMC05MS4yLDc0LjItMTY1LjMsMTY1LjMtMTY1LjNjOTEuMiwwLDE2NS4zLDc0LjIsMTY1LjMsMTY1LjMNCgkJcy03NC4xLDE2NS40LTE2NS4zLDE2NS40QzEwMS4xNSwzNTcuNywyNi45NSwyODMuNSwyNi45NSwxOTIuM3oiLz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K");
+}
+.search__outer__input:focus {
+    outline-color: initial;
+}
+.search__outer .bar::after,
+.search__outer .bar::before {
+    background-image: initial;
+    background-color: rgb(28, 64, 211);
+}
+.search__result__single {
+    border-bottom-color: rgb(239, 235, 229);
+}
+.outer_div_page_results:hover,
+.search__result__box .active {
+    background-color: rgb(255, 253, 247);
+}
+.search__error__box {
+    color: rgb(0, 0, 0);
+}
+.search__result__single a {
+    text-decoration-color: initial;
+}
+.search__result__title {
+    color: rgb(68, 149, 255);
+    border-bottom-color: rgb(68, 149, 255);
+}
+.search__result__subheading {
+    color: rgb(0, 0, 0);
+}
+.search__result__content {
+    text-decoration-color: initial;
+    color: rgb(0, 0, 0);
+}
+.search__outer .search__result__title span {
+    background-color: rgb(253, 248, 244);
+    border-bottom-color: rgb(0, 0, 0);
+}
+.search__outer .search__result__content span {
+    background-color: rgb(253, 248, 244);
+    border-bottom-color: rgb(0, 0, 0);
+}
+.search__result__subheading span {
+    border-bottom-color: rgb(0, 0, 0);
+}
+.rtd_ui_search_subtitle {
+    color: inherit;
+}
+.rtd__search__credits {
+    background-image: initial;
+    background-color: rgb(248, 244, 238);
+    border-color: rgb(248, 244, 238);
+    color: rgb(0, 0, 0);
+}
+.rtd__search__credits a {
+    color: rgb(0, 0, 0);
+    text-decoration-color: initial;
+}
+.rst-other-versions a {
+    border-color: initial;
+}
+.ethical-sidebar .ethical-image-link,
+.ethical-footer .ethical-image-link {
+    border-color: initial;
+}
+.ethical-sidebar,
+.ethical-footer {
+    background-color: rgb(248, 244, 238);
+    border-color: rgb(212, 206, 197);
+    color: rgb(0, 0, 0);
+}
+.ethical-sidebar ul {
+    list-style-image: initial;
+}
+.ethical-sidebar ul li {
+    background-color: rgb(97, 214, 255);
+    color: rgb(0, 0, 0);
+}
+.ethical-sidebar a,
+.ethical-sidebar a:visited,
+.ethical-sidebar a:hover,
+.ethical-sidebar a:active,
+.ethical-footer a,
+.ethical-footer a:visited,
+.ethical-footer a:hover,
+.ethical-footer a:active {
+    color: rgb(0, 0, 0);
+    text-decoration-color: initial !important;
+    border-bottom-color: initial !important;
+}
+.ethical-callout a {
+    color: rgb(91, 104, 110) !important;
+    text-decoration-color: initial !important;
+}
+.ethical-fixedfooter {
+    background-color: rgb(248, 244, 238);
+    border-top-color: rgb(199, 191, 182);
+    color: rgb(40, 49, 53);
+}
+.ethical-fixedfooter .ethical-text::before {
+    background-color: rgb(28, 205, 35);
+    color: rgb(255, 255, 255);
+}
+.ethical-fixedfooter .ethical-callout {
+    color: rgb(158, 149, 136);
+}
+.ethical-fixedfooter a,
+.ethical-fixedfooter a:hover,
+.ethical-fixedfooter a:active,
+.ethical-fixedfooter a:visited {
+    color: rgb(40, 49, 53);
+    text-decoration-color: initial;
+}
+.ethical-rtd .ethical-sidebar {
+    color: rgb(187, 179, 167);
+}
+.ethical-alabaster a.ethical-image-link {
+    border-color: initial !important;
+}
+.ethical-dark-theme .ethical-sidebar {
+    background-color: rgb(53, 64, 68);
+    border-color: rgb(166, 157, 145);
+    color: rgb(202, 196, 185) !important;
+}
+.ethical-dark-theme a,
+.ethical-dark-theme a:visited {
+    color: rgb(239, 235, 229) !important;
+    border-bottom-color: initial !important;
+}
+.ethical-dark-theme .ethical-callout a {
+    color: rgb(187, 179, 167) !important;
+}
+.keep-us-sustainable {
+    border-color: rgb(136, 235, 31);
+}
+.keep-us-sustainable a,
+.keep-us-sustainable a:hover,
+.keep-us-sustainable a:visited {
+    text-decoration-color: initial;
+}
+.wy-nav-side .keep-us-sustainable {
+    color: rgb(187, 179, 167);
+}
+.wy-nav-side .keep-us-sustainable a {
+    color: rgb(250, 245, 239);
+}
+
+/* Override Style */
+.vimvixen-hint {
+    background-color: #ffff65 !important;
+    border-color: #e8ac00 !important;
+    color: #080000 !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+a[href="https://coinmarketcap.com/"] > svg[width="94"][height="16"] > path {
+    fill: var(--darkreader-neutral-text) !important;
+}
+
+a.icon.icon-home:before {
+    content: "memorize";
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #817e7e;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

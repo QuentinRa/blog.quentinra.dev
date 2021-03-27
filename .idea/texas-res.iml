@@ -3,11 +3,11 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.github" />
-      <excludeFolder url="file://$MODULE_DIR$/_build" />
       <excludeFolder url="file://$MODULE_DIR$/_ext" />
       <excludeFolder url="file://$MODULE_DIR$/_template" />
       <excludeFolder url="file://$MODULE_DIR$/assets/libs" />
       <excludeFolder url="file://$MODULE_DIR$/out" />
+      <excludeFolder url="file://$MODULE_DIR$/_build" />
       <excludePattern pattern="make.bat" />
       <excludePattern pattern="Makefile" />
     </content>

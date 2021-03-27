@@ -216,6 +216,7 @@ Il existe aussi warning, danger, important, hint.
 	* https://rst2pdf.org/
 	* https://sublime-and-sphinx-guide.readthedocs.io/en/latest/index.html
 	* Sphinx
+		* https://docs.readthedocs.io/en/latest/guides/adding-custom-css.html
 		* https://matplotlibguide.readthedocs.io/en/latest/Matplotlib/basic.html
 		* https://plantuml.com/
 		* https://graphs.grevian.org/example

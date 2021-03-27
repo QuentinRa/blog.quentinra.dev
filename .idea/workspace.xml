@@ -28,10 +28,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/texas-res.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/texas-res.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/opti/files.rste" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/files.rste" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/opti/files/sc/quadra.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/files/sc/quadrao.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/opti/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/light.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_style/css/dark.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_style/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/rst.rst" beforeDir="false" afterPath="$PROJECT_DIR$/utils/rst.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -80,7 +82,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/utils/jetbrains" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/_style/css" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web.server" />
@@ -89,18 +91,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\_style\css" />
+      <recent name="C:\Users\quent\Documents\texas-res\_build\html\_static\css" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\utils\jetbrains" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\opti\files" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\opti" />
-      <recent name="C:\Users\quent\Documents\texas-res\utils\jetbrains\idea" />
-      <recent name="C:\Users\quent\Documents\texas-res\utils\jetbrains" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\css\css" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\utils\jetbrains" />
       <recent name="C:\Users\quent\Documents\texas-res\assets" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\opti\files\sc" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\opti\files" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets\utils\jetbrains\break" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -438,7 +440,8 @@
       <workItem from="1616485931870" duration="2107000" />
       <workItem from="1616488277132" duration="38450000" />
       <workItem from="1616593184290" duration="12709000" />
-      <workItem from="1616665814880" duration="12548000" />
+      <workItem from="1616665814880" duration="12622000" />
+      <workItem from="1616840623072" duration="9037000" />
     </task>
     <servers />
   </component>

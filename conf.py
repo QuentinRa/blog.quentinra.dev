@@ -117,7 +117,11 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'README.md',
 ]
 
 html_css_files = [
-    'css/light.css',
+    '_style/css/dark.css',
+]
+
+html_js_files = [
+	'_style/js/switch.js'
 ]
 
 # -- Options for HTML output -------------------------------------------------
