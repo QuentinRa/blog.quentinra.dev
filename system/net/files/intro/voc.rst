@@ -39,11 +39,15 @@ Interfaces réseaux
 	Une interface particulière est celle qui gère le réseau local/virtuel de notre machine.
 	Elle est appelée lo (loopback) et est associée à l’adresse 127.0.0.1 (plage).
 
+	En gros, ce qu'il vaut retenir c'est que toutes les machines font tourner un réseau local,
+	:code:`localhost`. C'est pratique car vous pouvez l'utiliser pour communiquer des informations
+	entre plusieurs applications en utilisant les protocoles réseaux.
+
 	Quelques exemples : :code:`eth0` (Ethernet0), ...
 
 Port
-	Il s'agit de l'endroit ou le canal utilisé par un processus est ouvert. Un message sera
-	envoyé depuis de port et une machine devra répondre en utilisant ce port.
+	Il s'agit de l'endroit où le canal utilisé par un protocol est ouvert. Un message sera
+	envoyé depuis ce port et une machine devra envoyer sa réponse sur ce port.
 
 	Généralement, pour des raisons de sécurité, ces ports sont changés de leur valeurs par défaut.
 	Ils sont utilisés par les protocoles de la couche applicative.

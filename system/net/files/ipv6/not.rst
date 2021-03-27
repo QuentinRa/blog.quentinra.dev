@@ -17,7 +17,7 @@ Il existe des règles pour simplifier la notation :
 	* \
 		plusieurs groupes de zéro qui se suivent peuvent écrits :: mais seulement une seule fois
 		donc on prend le plus grand groupe
-		(ex: 416c:0000:0000:0046:0000:0000:0000:3c33 devient 416c:0:0:46::3c66)
+		(ex: 416c:0000:0000:0046:0000:0000:0000:3c33 devient 416c:0:0:46::3c33)
 
 Les types d’adresses en ipv6 sont :
 
