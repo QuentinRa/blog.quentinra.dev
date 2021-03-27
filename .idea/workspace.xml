@@ -29,9 +29,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/files/intro/voc.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/intro/voc.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/files/ipv4/count.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/ipv4/count.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/net/files/ipv6/not.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/ipv6/not.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/opti/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/linux/files/enc/int.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/linux/files/enc/int.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/net/files/ipv4/mask.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/ipv4/mask.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/net/files/ipv4/not.rst" beforeDir="false" afterPath="$PROJECT_DIR$/system/net/files/ipv4/not.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -440,7 +441,9 @@
       <workItem from="1616593184290" duration="12709000" />
       <workItem from="1616665814880" duration="12622000" />
       <workItem from="1616840623072" duration="10005000" />
-      <workItem from="1616865790579" duration="2457000" />
+      <workItem from="1616865790579" duration="2485000" />
+      <workItem from="1616876651299" duration="703000" />
+      <workItem from="1616882701207" duration="1844000" />
     </task>
     <servers />
   </component>

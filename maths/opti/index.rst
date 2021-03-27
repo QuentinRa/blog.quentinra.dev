@@ -88,7 +88,8 @@ Selon le théorème Calistro
 
 Prouver la convexité ?
 
-	* (cours) si hessien défini positif alors convexe (pas réciproque)
+	* (admis) si hessien semi-défini positif alors convexe (ce n'est pas réciproque)
+	* (admis) si hessien défini positif alors strictement convexe
 
 4. Extrema d'une fonction sous contraintes
 ===============================================
@@ -105,7 +106,7 @@ Transformation en :math:`\ge`.
 	Ceci est utilisé si vous voulez avoir uniquement des contraintes :math:`\ge 0`
 
 		* :math:`x + a \ge 0  \Leftrightarrow  \begin{cases}\tilde{x} = x + a \\\tilde{x} \ge 0\end{cases}`
-		* :math:`x \ge 0  \Leftrightarrow  \begin{cases}x = x^+ - x^- \\ x^+ \ge 0\\ x^- \ge 0\end{cases}`
+		* :math:`x ??? 0  \Leftrightarrow  \begin{cases}x = x^+ - x^- \\ x^+ \ge 0\\ x^- \ge 0\end{cases}`
 
 Transformation du :math:`=`
 	Ceci est utilisé si vous voulez avoir uniquement des contraintes :math:`\ge 0` et math:`\le 0`
