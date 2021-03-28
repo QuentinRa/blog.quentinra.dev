@@ -128,6 +128,8 @@ Prix de l'actif risqué (à l'instant i)
 -----
 
 **Crédits**
+	* Sergio PULIDO (enseignant à l'ENSIIE)
+	* Cyril BENEZET (enseignant à l'ENSIIE)
 	* Quentin RAMSAMY--AGEORGES (étudiant à l'ENSIIE)
 
 **Références**
@@ -138,3 +140,4 @@ Prix de l'actif risqué (à l'instant i)
 	* https://www.ceremade.dauphine.fr/~idris/Intro-fin-math.pdf
 	* http://www.excel-modeling.com/examples/example_007.htm
 	* https://www.macroption.com/binomial-option-pricing-calculator-cox-ross-rubinstein-model/
+	* https://www.youtube.com/watch?v=Wg9NosasB1w&ab_channel=spulidon
