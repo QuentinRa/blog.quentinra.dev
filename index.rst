@@ -41,14 +41,15 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     Probabilités                         <maths/proba/index>
 
 .. toctree::
-    :caption: Analyse de données
+    :caption: Mathématiques numériques
     :name: data
     :maxdepth: 1
 
-		Analyse numérique        <maths/analyse/index>
-		Statistiques en R        <maths/stats/index>
-    Langage R                <functional/r/index>
-    Optimisation             <maths/opti/index>
+		Analyse numérique         <maths/analyse/index>
+		Statistiques en R         <maths/stats/index>
+    Langage R                 <functional/r/index>
+    Optimisation              <maths/opti/index>
+    Mathématiques financières <maths/fin/index>
 
 .. toctree::
     :caption: Système

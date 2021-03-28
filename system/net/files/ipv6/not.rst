@@ -8,7 +8,8 @@ Une adresse ipv6 est codée sur 128bits soit 16 octets,
 séparés par groupes de 2 octets avec ':'.
 
 Ex : 416c696369612046616c636f6e234146 donne l’adresse IPV6 :
-:code:`416c : 6963 : 6961 : 2046 : 616c : 636f : 6e20 : 3c33`.
+:code:`416c : 6963 : 6961 : 2046 : 616c : 636f : 6e20 : 3c33`
+(cette adresse n'existe pas, comme vu plus tard, aucune adresse ne commence par 416c).
 
 Il existe des règles pour simplifier la notation :
 
