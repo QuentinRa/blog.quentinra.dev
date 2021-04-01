@@ -28,11 +28,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cb3c6624-4827-4984-b744-f74bd3d26571.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cb3c6624-4827-4984-b744-f74bd3d26571.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/opti/files.rste" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/files.rste" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/opti/files/sc/quadra.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/files/sc/quadra.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/opti/files/sc/quadrao.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/opti/files.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/files.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/opti/files/sc/masta.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/masta.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/opti/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
@@ -98,11 +96,11 @@
       <recent name="C:\Users\quent\Documents\texas-res\assets\utils\jetbrains" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\maths\opti" />
+      <recent name="C:\Users\quent\Documents\texas-res\maths\opti\files" />
       <recent name="C:\Users\quent\Documents\texas-res\business" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\css\css" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\utils\jetbrains" />
-      <recent name="C:\Users\quent\Documents\texas-res\assets" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\opti\files\sc" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -452,7 +450,7 @@
       <workItem from="1617197315216" duration="2690000" />
       <workItem from="1617218953834" duration="3195000" />
       <workItem from="1617225102623" duration="1302000" />
-      <workItem from="1617287798545" duration="5888000" />
+      <workItem from="1617287798545" duration="9369000" />
     </task>
     <servers />
   </component>

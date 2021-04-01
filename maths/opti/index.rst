@@ -153,3 +153,4 @@ Autres
 	* https://www.coursera.org/learn/mathematics-for-economists#syllabus
 	* https://www.coursera.org/lecture/mathematics-for-economists/2-13-hessian-matrix-77pUp
 	* http://www.cs.toronto.edu/~hinton/csc2515/notes/lec6tutorial.pdf
+	* https://www.coursera.org/learn/mathematics-for-economists
