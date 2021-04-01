@@ -69,6 +69,7 @@ et :math:`Hf` la matrice hessienne des dérivées partielles.
 		Hessien et gradient          <files/sc/grad>
 		Point particuliers           <files/sc/opt>
 		Forme quadratique            <files/sc/quadra>
+		Convexité                    <files/sc/conv>
 
 Selon le théorème Calistro
 
@@ -106,7 +107,8 @@ Transformation en :math:`\ge`.
 	Ceci est utilisé si vous voulez avoir uniquement des contraintes :math:`\ge 0`
 
 		* :math:`x + a \ge 0  \Leftrightarrow  \begin{cases}\tilde{x} = x + a \\\tilde{x} \ge 0\end{cases}`
-		* :math:`x ??? 0  \Leftrightarrow  \begin{cases}x = x^+ - x^- \\ x^+ \ge 0\\ x^- \ge 0\end{cases}`
+
+.. a * :math:`x ??? 0  \Leftrightarrow  \begin{cases}x = x^+ - x^- \\ x^+ \ge 0\\ x^- \ge 0\end{cases}`
 
 Transformation du :math:`=`
 	Ceci est utilisé si vous voulez avoir uniquement des contraintes :math:`\ge 0` et math:`\le 0`

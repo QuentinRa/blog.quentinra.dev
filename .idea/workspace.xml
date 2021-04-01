@@ -28,7 +28,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cb3c6624-4827-4984-b744-f74bd3d26571.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cb3c6624-4827-4984-b744-f74bd3d26571.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/opti/files.rste" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/files.rste" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/opti/files/sc/quadra.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/files/sc/quadra.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/opti/files/sc/quadrao.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/opti/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/index.rst" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -71,13 +76,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
-    <property name="DatabaseDriversLRU" value="postgresql&#10;mariadb" />
+    <property name="DatabaseDriversLRU" value="postgresql&#10;mariadb&#10;oracle" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/maths/fin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/_notes/sqlnr2" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web.server" />
@@ -86,18 +91,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\assets\_notes\sqlnr2" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\fin" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\_style\css" />
       <recent name="C:\Users\quent\Documents\texas-res\_build\html\_static\css" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\utils\jetbrains" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\opti\files" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quent\Documents\texas-res\business" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\css\css" />
       <recent name="C:\Users\quent\Documents\texas-res\assets\utils\jetbrains" />
       <recent name="C:\Users\quent\Documents\texas-res\assets" />
       <recent name="C:\Users\quent\Documents\texas-res\maths\opti\files\sc" />
-      <recent name="C:\Users\quent\Documents\texas-res\maths\opti\files" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -442,7 +447,12 @@
       <workItem from="1616882701207" duration="2076000" />
       <workItem from="1616939156266" duration="9018000" />
       <workItem from="1616958467527" duration="1441000" />
-      <workItem from="1617018233311" duration="4334000" />
+      <workItem from="1617018233311" duration="4367000" />
+      <workItem from="1617055139433" duration="3000" />
+      <workItem from="1617197315216" duration="2690000" />
+      <workItem from="1617218953834" duration="3195000" />
+      <workItem from="1617225102623" duration="1302000" />
+      <workItem from="1617287798545" duration="5888000" />
     </task>
     <servers />
   </component>

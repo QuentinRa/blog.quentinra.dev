@@ -1,0 +1,80 @@
+===============
+a title
+===============
+
+Formellement, si on considère un ensemble :math:`C \subset \mathbb{R}`
+alors il est convexe si
+
+	* pour tout segment, :math:`(x,y) \in \mathbb{R}^2`
+	* et tout lambda entre 0 et 1, :math:`\lambda \in [0,1]`
+	* on a :math:`(1-\lambda)x+\lambda y \in C`
+
+Deux points
+
+# Optimisation mathématique
+
+## Convexité
+
+### Généralités
+
+Soit :math:`C \subset \mathbb{R}`
+On dit que :math:`C` est convexe lorsque pour tout :math:`(x,y) \in \mathbb{R}^2`,
+pour tout :math:`\lambda \in [0,1]`, on a :math:`(1-\lambda)x+\lambda y \in C`.
+
+En gros, ça revient à dire que le segment :math:`[a,b]` est dans :math:`C`.
+Exemple: Les ensembles en rouge ce sont les :math:`C`.
+Dans la première figure, on remarque que tout segment d'éléments de :math:`C` **reste** dans :math:`C`.
+Ce n'est pas le cas de la seconde figure dans lequel :math:`C` ne contient pas entièrement le segment en bleu par exemple.
+
+Soit :math:`f: C \subseteq \mathbb{R}^n \rightarrow \mathbb{R}` avec :math:`C` convexe.
+On dit que :math:`f` est convexe lorsque pour tout :math:`(x,y) \in C`, pour tout
+:math:`\lambda \in [0,1]`, on a :math:`f((1-\lambda)x+\lambda y) \leq (1-\lambda)f(x) + \lambda f(y)` :math:`(1)`
+
+Note: La convexité est très utile pour l'optimisation sans contraintes. Elle facilite parfois la recherche de minimum globaux (cf prochaine section).
+
+(strictement si l'inégalité est stricte)
+
+Cette inégalité est facile à comprendre.
+La fonction :math:`f(x)=x^4 - x^2` est convexe sur l'intervalle :math:`[0,+\infty[` (A vous de le montrer avec les résultats qui viendront dans la prochaine section).
+On se place sur l'intervalle :math:`[a,b] \subset [0,1]`.
+:math:`x=(1-\lambda)a - \lambda b` avec :math:`\lambda \in [0,1]` est un point de [a,b].
+:math:`f(x)` est plus petit que :math:`(1-\lambda)f(a) - \lambda f(b)`.
+
+Une autre manière de voir une fonction convexe est de dire que ce sont les fonctions dont leurs tangentes à la courbe sont en dessous de la courbe.
+
+Dans les figures, nous avons en vert la courbe représentative de :math:`x^2` et en bleu des tangentes à la courbe. On voit bien que quelque soit :math:`x`, les tangentes en :math:`x` sont en dessous de la courbe! Donx l'application :math:`f:\mathbb{R} \rightarrow \mathbb{R}= x^2` est convexe !
+
+Plus formellement (à ne pas apprendre par coeur c'est juste pour comprendre)
+Soit :math:`f: C \subseteq \mathbb{R}^n \rightarrow \mathbb{R}` de classe :math:`\mathcal{C}^1` avec :math:`C` convexe et ouvert.
+:math:`f` est convexe ssi pour tout :math:`(x,y) \in C`, on a :math:`f(y) \geq f(x) + \nabla f(x)(x-y)`
+
+(strictement si l'inégalité est stricte)
+
+### Quelques propriétés utiles
+
+- La convexité est stable par combinaison linéaire:
+si :math:`f_{1}, ..., f_{k}` des fonctions (tous strictement) convexes (définis sur un même convexe) et si :math:`\alpha_{1}, ..., \alpha_{k} \geq 0`, alors :math:`\sum_{k=0}^{n} \alpha_{k}f_{k}` est aussi (strictement) convexe.
+
+- Sous **certaines**, la convexité est aussi stable par composition:
+Si :math:`f: C \subseteq \mathbb{R}^n \rightarrow \mathbb{R}` convexe (respectivement strictement convexe) et si :math:`g: f(C) \rightarrow \mathbb{R}` convexe et **croissante** (respectivement **strictement croissante**), alors :math:`fog` est convexe (repectivement strictement convexe).
+
+- :math:`f` est dite concave si :math:`-f` est convexe
+
+- On peut montrer brutalement la formule (1), mais c'est déconséillé vivement pour ce module (idem pour l'inégalité avec les tangentes). Et la plupart du temps, les exercices se font dans :math:`\mathbb{R}^2` dans cette UE, donc les stabilités seront impossible à utiliser (par contre facile dans :math:`\mathbb{R}` ! :math:`e^{x^2} -ln(x)` est convexe ? montrez-le)
+On utilise plutôt (et toujours) le résultat qui suit
+Soit :math:`f: C \subseteq \mathbb{R}^n \rightarrow \mathbb{R}` de classe :math:`\mathcal{C}^2` avec :math:`C` convexe et ouvert.
+:math:`f` est convexe ssi :math:`Hf(x)` est semi-défini positif pour tout :math:`x \in C`.
+
+### Vif du sujet
+
+Pour ce chapitre, apprennez seulement (au strict minimum) le résultat précédent (pour montrer que :math:`f` est convexe avec le hessien. Apprenez l'inégalité (1) si besoin retrouvez le avec l'exemple donnée ! Sachez ce qu'est une fonction concave quand il en sera rarement fait mention (lol).
+Et apprenez  **PAR COEUR** les deux résultats qui suivent (En vrai la première des deux est évidente, si vous la comprenez. L'autre ... **par coeur**).
+
+Soit :math:`f: C \subseteq \mathbb{R}^n \rightarrow \mathbb{R}` convexe avec :math:`C` convexe.
+Alors, tout minimum local de :math:`f` est minimum global de :math:`f` sur :math:`C`.
+D'ailleurs, s'il existe un minimum local et que :math:`f` est strictement convexe alors celui_ci est l'unique minimum global sur :math:`C`.
+
+Soit :math:`f: C \subseteq \mathbb{R}^n \rightarrow \mathbb{R}` convexe de classe :math:`\mathcal{C}^1` avec :math:`C` convexe et ouvert.
+:math:`x*` est un minimum global de f ssi :math:`x*` est un point critique.
+
+Remarquez que dans l'exemple qui suit, la recherche d'un minimum global est très rapide si la convexité est vérifiée !
