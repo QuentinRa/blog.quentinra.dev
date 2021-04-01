@@ -92,6 +92,11 @@ Prouver la convexité ?
 	* (admis) si hessien semi-défini positif alors convexe (ce n'est pas réciproque)
 	* (admis) si hessien défini positif alors strictement convexe
 
+Au niveau de la détermination du signe du hessien, une autre technique
+est de regarder la valeur haut gauche (delta1) et de calculer le déterminant (delta2)
+
+	* ...
+
 4. Extrema d'une fonction sous contraintes
 ===============================================
 
@@ -125,6 +130,8 @@ Autres
 ------
 
 **Crédits**
+	* Alain FAYE (enseignant à l'ENSIIE)
+	* Dariush GHORBANZADEH (enseignant à l'ENSIIE)
 	* ??? (étudiant à l'ENSIIE)
 	* Quentin Ramsamy--Ageorges (étudiant à l'ENSIIE)
 

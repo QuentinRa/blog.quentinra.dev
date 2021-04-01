@@ -8,12 +8,6 @@ Optimisation sans contraintes
 De ce que j'ai compris (je crois), pour
 
 trouver minimum local
-	* on a une fonction à minimiser (ou maximiser c'est presque pareil)
-	* on va chercher un minimum local
-	* on va calculer le gradient (vecteur des dérivées partielles, x1, x2, ...)
-	* on cherche un point pour lequel le gradient s'annule : minimum local
-	* on calcule le gradient au carré (matrice, Q, cette fois)
-	* on calcule Q (remplace les x1,...) avec le minimum local (vecteur de x1, ...)
 	* on vérifie que Q est définie positive, on note la valeur haut gauche de la hessienne delta1
 
 		* det > 0 et delta1 > 0  : minimum local
