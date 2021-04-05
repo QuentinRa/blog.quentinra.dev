@@ -14,6 +14,9 @@ de vim ou nano ou encore l'outil htop.
 1. Introduction
 =================
 
+Vous pouvez installer ncurses avec :code:`sudo apt-get install libncurses5-dev libncursesw5-dev`
+et voir si tout est ok avec :code:`ls -la /usr/include/ncurses.h`.
+
 Tout d'abord, je compile sous Windows avec CLion sauf que j'ai pas ncurses.h mais curses.h
 uniquement de disponible donc ce tutoriel sera limité. Voici mon CMakelist.
 

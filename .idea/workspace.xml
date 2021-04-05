@@ -29,11 +29,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71afdc5f-c39b-47b5-8450-562b663807d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/_notes/sqlnr2/rep.sql" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_notes/sqlnr2/rep.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/opti/files.rste" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/files.rste" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_summary/ensiie.rst" beforeDir="false" afterPath="$PROJECT_DIR$/_summary/ensiie.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/_style/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imperative/libs/ncurses/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/imperative/libs/ncurses/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maths/opti/files/sc/conv.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/files/sc/conv.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/opti/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maths/opti/masta.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maths/opti/masta.txt" afterDir="false" />
     </list>
     <list id="a8b1b0f1-9f30-48eb-9228-21d00ef0a3d5" name="clean de stats (6)" comment="" />
     <list id="d4a57474-184d-4e44-87b4-c5fed694ad2d" name="cours de bootstrap terminé" comment="" />
@@ -71,7 +70,6 @@
   <component name="ProjectId" id="1j3SOdW56l2HX11sGuoiPU6zFXG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -452,7 +450,11 @@
       <workItem from="1617197315216" duration="2690000" />
       <workItem from="1617218953834" duration="3195000" />
       <workItem from="1617225102623" duration="1302000" />
-      <workItem from="1617287798545" duration="16228000" />
+      <workItem from="1617287798545" duration="17784000" />
+      <workItem from="1617397965404" duration="116000" />
+      <workItem from="1617400836541" duration="2000" />
+      <workItem from="1617462446935" duration="99000" />
+      <workItem from="1617468129627" duration="3000" />
     </task>
     <servers />
   </component>

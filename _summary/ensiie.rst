@@ -22,17 +22,17 @@ ne maitrisez pas les bases car les profs ne prennent pas toujours
 la peine de toute expliquer (ce qui est normal si vous ne connaissez
 pas 90% du cours de maths par exemple, car il faut bien avancer le cours).
 Des exemples sont les premiers cours de Système d'exploitation, d'analyse numérique
-et de bases de données.
+et de bases de données (pour un DUT normalement l'info ça va mais pour un prépa c'est dûr).
 
 Notez que vous n'aurez plus de grandes vacances en initial car il vous sera demandé de faire un stage.
-Il y a des rattrapages (si note >8 et moyenne générale >10), si vous avez une note
-en dessous de 8, il est compensée (on parle de joker) avec votre meilleure note.
+Il y a des rattrapages (si note >8 et moyenne générale >10), si vous avez une seule note
+en dessous de 8, elle est compensée (on parle de joker) avec votre meilleure note.
 Vous pouvez avoir des points de vie associative (0 à 2 donnés par les associations).
 
 **Points positifs/négatifs**
 
 Des points positifs à l'ENSIIE sont les parcours/matières qui sont intéressantes,
-les stages (réseau), les masters, la vie associative (et les projections d'ITV),
+les stages (bon réseau), les masters, la vie associative (et les projections d'ITV),
 l'implication dans la development durable et son réseau d'anciens élèves.
 Les points négatifs sont le manque de communication de l'admin avec les profs (problèmes emploi du temps,
 leur donner les mailing-lists...), le manque de profs (ex: web, réseau, os dans lesquels

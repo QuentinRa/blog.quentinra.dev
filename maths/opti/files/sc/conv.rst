@@ -8,10 +8,10 @@ Motivation
 
 On peut retenir quelques propriétés
 
-	* :math:`f convexe \Leftrightarrow f' > 0`
-	* :math:`f convexe \Leftrightarrow f'' > 0`
-	* :math:`f convexe \Leftrightarrow hessien\ semi-défini\ positif`
-	* :math:`f strictement\ convexe \Leftrightarrow hessien\ défini\ positif`
+	* :math:`f\ convexe \Leftrightarrow f' > 0`
+	* :math:`f\ convexe \Leftrightarrow f'' > 0`
+	* :math:`f\ convexe \Leftrightarrow hessien\ semi-défini\ positif` (apparemment pas une équivalence?)
+	* :math:`f\ strictement\ convexe \Leftrightarrow hessien\ défini\ positif` (same)
 
 Ensemble convexe
 ******************
