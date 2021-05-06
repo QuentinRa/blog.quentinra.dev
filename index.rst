@@ -91,7 +91,7 @@ Les crédits appropriés ainsi que les sources sont en bas de page de chaque cou
     Langage JS                          <web/js/index>
     Langage PHP                         <web/php/index>
     Bootstrap (CSS)                     <web/mdb/index>
-    Node.js (Socket.io/Discord.js)      <web/node/index>
+    Node.js, TypeScript, SCSS et SASS   <web/node/index>
     Serveur apache (Linux/Windows)      <web/server/index>
 
 .. toctree::
