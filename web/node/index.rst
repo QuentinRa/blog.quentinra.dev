@@ -164,7 +164,94 @@ Quelques éléments de syntaxe en plus de celle basique du js
 	let a = /* some value */;
 	let b : number = <number>a; // means that we are asserting a is a number so b will be a number
 
-Le site officiel est une bonne référence : `https://www.typescriptlang.org/ <https://www.typescriptlang.org/>`_.
+Le site officiel est une bonne référence : `https://www.typescriptlang.org/ <https://www.typescriptlang.org/>`_
+ou encore https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html.
+
+5. electron
+=============
+
+electron est une arnarque, en fait il s'agit d'un navigateur (chromium) qui se fait passer pour une application de bureau.
+Vous coder donc de l'HTML, CSS et JS et avez la possiblité de créer un .exe, une app MacOS/Linux ou encore
+un site web (ou les 4).
+
+Avant de commencer, il faut savoir que c'est une très bonne idée de démarrer d'un template, et il y en a beaucoup
+
+	* application simple : https://github.com/electron/electron-quick-start
+	* application sécurisée : https://github.com/reZach/secure-electron-template
+
+Des exemples d'applications aussi ça aide
+
+	* https://github.com/hokein/electron-sample-apps
+	* https://github.com/akabekobeko/examples-electron
+	* fenêtre sans bords, https://github.com/binaryfunt/electron-seamless-titlebar-tutorial
+
+Enfin en dernière note, je n'ai pas chercher à faire un site pour le moment donc j'ai utilisé
+vraiment la base d'electron pour faire un petit jeu. Voici mes remarques avant de commencer
+
+	*
+		les versions d'electrons (v4, v9, v10, v12, ...) changent souvent donc souvent le code
+		des tutoriels ne marche pas dans les dernières versions **donc je vais rester très abstrait**
+
+	*
+		j'ai préféré faire au plus simple, j'utilise par exemple des location.href pour changer de page
+		et localstorage pour la sauvegarde d'informations.
+
+Pour résumer, ayant codé sous :code:`electron 12.0.4` même si je n'ai pas encore très bien
+compris toutes les directives en sécurité et utilisation des scripts,
+
+	*
+
+		dans package.json vous donnez à \"main\" le nom du js à lancer avec :code:`npm start`
+		et donc dans vous avez start dans scripts
+
+		.. code:: json
+
+				"scripts": {
+						"start": "electron ."
+				}
+
+	*
+
+		le main contient la lancement de l'application et celui de la création de la fenêtre
+
+		*
+
+			:code:`remote` (que vous verrez partout) à été désactivé au profit de :code:`ipc`
+			que je vous recommande d'utiliser (https://github.com/electron/remote pour la version non-deprecated).
+			Si vous voulez activer remote (la version deprecated), il suffit de mettre :code:`enableRemoteModule: true`
+
+			.. code:: js
+
+				mainWindow = new BrowserWindow({
+				 width: ???, height: ???, icon: ???,
+				 webPreferences: {
+				  preload: path.join(__dirname, './src/preload.js'),
+				  enableRemoteModule: true
+				 }
+				});
+
+		*
+
+				vous pouvez afficher/cacher la console avec CTRL+SHIFT+I et en bonus, vous pouvez l'ouvrir au lancement
+				ou interdire son ouverture
+
+				.. code:: js
+
+						// Open the DevTools.
+						mainWindow.webContents.openDevTools();
+
+						// Close the DevTools
+						mainWindow.webContents.on("devtools-opened", () => {
+						 mainWindow.webContents.closeDevTools();
+						});
+
+	*
+		Après dans le fichier :code:`renderer.js` (si vous l'utilisez) vous n'avez pas accès à Node seulement aux
+		variables stockées par preload dans :code:`windows`.
+
+	*
+		dans preload, vous avez accès au code de node, au document, ... donc faites le taff dedans. Moi je regarde
+		l'url et j'adapte le code dans ce fichier selon la page.
 
 -----
 
@@ -176,3 +263,40 @@ Le site officiel est une bonne référence : `https://www.typescriptlang.org/ <h
 	* https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 	* https://nodejs.dev/learn/the-package-json-guide
 	* https://nodejs.dev/learn/semantic-versioning-using-npm
+	* https://www.typescriptlang.org/
+	* https://www.typescriptlang.org/docs/handbook/modules.html
+	* https://www.codevscolor.com/typescript-class-example
+	* https://godotengine.org/
+	* electron
+
+		* https://medium.com/@johndyer24/creating-and-deploying-an-auto-updating-electron-app-for-mac-and-windows-using-electron-builder-6a3982c0cee6
+		* https://dev.to/milburngomes/getting-started-with-electronjs-ep9
+		* https://www.akshaydeo.com/blog/2019/10/28/securing-electron-app-source-code/
+		* https://sectigo.com/ssl-certificates-tls/code-signing
+		* https://interactiveknowledge.com/insights/how-code-sign-electron-app-windows
+		* https://www.electronjs.org/docs/tutorial/code-signing
+		* https://www.geeksforgeeks.org/keyboard-events-in-electronjs/
+		* https://developer.mozilla.org/fr/docs/Web/API/KeyboardEvent/key#key_values
+		* https://www.electronjs.org/docs/tutorial/keyboard-shortcuts
+		* https://github.com/jcubic/jquery.terminal
+		* https://caniuse.com/urlsearchparams
+		* https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+		* https://github.com/binaryfunt/electron-seamless-titlebar-tutorial
+		* https://github.com/hokein/electron-sample-apps
+		* https://github.com/akabekobeko/examples-electron
+		* https://github.com/DPr00f/electron-music-player-tutorial
+		* https://stackoverflow.com/questions/12543237/play-audio-with-node-js
+		* https://github.com/reZach/secure-electron-template/blob/master/app/electron/main.js
+		* https://www.i18next.com/overview/getting-started
+		* https://github.com/hokein/electron-sample-apps/tree/master/frameless-window
+		* https://buddy.works/tutorials/building-a-desktop-app-with-electron-and-angular
+		* https://stackoverflow.com/questions/57807459/how-to-use-preload-js-properly-in-electron
+		* https://stackoverflow.com/questions/37884130/electron-remote-is-undefined/63612780#63612780
+		* https://stackoverflow.com/questions/30682121/including-an-html-file-into-another-html-file-using-handlebars-js
+		* https://stackoverflow.com/questions/45310489/is-it-safe-to-build-a-game-with-javascript-electron-three-js
+		* https://github.com/nklayman/electron-multipage-example
+		* https://stackoverflow.com/questions/59498415/navigating-through-multiple-pages-in-an-electron-app
+		* https://stackoverflow.com/questions/33599908/electron-app-multiple-html-files
+		* https://dev.to/milburngomes/getting-started-with-electronjs-ep9
+		* https://stackoverflow.com/questions/63866077/electron-js-desktop-app-not-showing-even-after-calling-show-function-on-new-wi
+

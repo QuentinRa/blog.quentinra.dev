@@ -3,6 +3,20 @@
 œ
 ù
 
+---- tmp
+
+https://plugins.jetbrains.com/docs/intellij/getting-started.html#using-github-template
+https://plugins.jetbrains.com/docs/intellij/github-template.html
+https://github.com/JetBrains/intellij-platform-plugin-template
+https://plugins.jetbrains.com/docs/intellij/custom-language-support-tutorial.html
+
+https://plugins.jetbrains.com/docs/intellij/project-wizard.html#implementing-project-structure-detector
+Quentin RAMSAMY--AGEORGES — Aujourd’hui à 14:45
+https://jfxstore.com/stringer/blog/new-way-protect-your-java-code
+https://stackoverflow.com/questions/54260900/how-can-i-protect-java-javafx-code-from-being-seen-by-final-user
+https://github.com/mkowsiak/jnicookbook
+https://stackoverflow.com/questions/2965746/how-do-you-prevent-brute-force-attacks-on-restful-data-services
+
 --------------- shortcut
 
 :download:`setup.sql <../../../assets/db/bases/vins_ensiie_1a_import.sql>`
