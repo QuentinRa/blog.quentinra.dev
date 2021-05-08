@@ -127,12 +127,55 @@ On résous le système donc moi j'y vais en mode pas par pas
 
 **solution de PG**
 
-...
+.. math::
+
+	\nu(\delta)= (\frac{8}{\frac{1}{3}}) ^ {\frac{1}{3}} *
+		(\frac{1}{\frac{1}{3}}) ^ {\frac{1}{3}} * (\frac{1}{\frac{1}{3}}) ^ {\frac{1}{3}} *
+	= 24 ^ {\frac{1}{3}} *  3 ^ {\frac{1}{3}} * 3 ^ {\frac{1}{3}}
+	= 8 ^ {\frac{1}{3}} * 3 ^ {\frac{1}{3} + \frac{1}{3} + \frac{1}{3}}
+	= 8 ^ {\frac{1}{3}} * 3
+	= 2 * 3 = 6
 
 **vérification point critique**
 
-...
+* On on résous le système
+
+.. math::
+
+		\left\lbrace\begin{array}{l}
+		8x = 2 \\  \\
+		\frac{y}{x} = 2 \\  \\
+		\frac{1}{y} = 2
+		\end{array}\right.
+
+Le 2 corresponds à :math:`6 (solution PG) * 1/3 (\delta_{i})`. On résous et on obtient
+:math:`x*=2/8=1/4` et :math:`y*=1/2`.
+
+* On calcule le gradient
+
+.. math::
+
+	\nabla f(X) = \begin{pmatrix}	8 - y/x^2  \\	1/x - 1/y^2 \\\end{pmatrix}
+
+* On test le point
+
+	* :math:`8 - (1/2)/(1/4)^2 = 0`
+	* :math:`1/(1/4) - 1/(1/2)^2 = 0`
+
+Le point est un point critique.
 
 **vérification non convexité**
 
-...
+On calcule le hessien
+
+.. math::
+
+	Hf(X) = \begin{pmatrix}
+		2y/x^3 & -1/x^2 \\
+		-1/x^2 & 2/y^3 \\
+		\end{pmatrix}
+
+On test des points jusqu'à avoir un hessien indéfinie donc déterminant négatif car dimension est paire (n=2).
+On pourra alors en déduire que la fonction n'est pas convexe.
+
+Personnellement je crois avoir fait une erreur car je ne trouve pas de point.
