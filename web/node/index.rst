@@ -4,7 +4,7 @@
 Node.js, TypeScript, SCSS et SASS
 ====================================
 
-| :math:`\color{grey}{Version \ 0.0.3}`
+| :math:`\color{grey}{Version \ 0.2.5}`
 | :math:`\color{grey}{Dernière \ édition \ le \ 06/05/2021}`
 
 Ceci n’est pas vraiment un cours, seulement des notes
