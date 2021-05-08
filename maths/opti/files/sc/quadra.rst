@@ -33,5 +33,5 @@ Voici deux techniques pour caractériser le signe d'une matrice A
 .. toctree::
    :maxdepth: 1
 
-		Signe d'une matrice (1)      <signe1>
-		Signe d'une matrice (2)      <signe2>
+		Signe d'une matrice (1)      <../ssc/signe1>
+		Signe d'une matrice (2)      <../ssc/signe2>

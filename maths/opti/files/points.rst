@@ -4,11 +4,19 @@ Point particuliers
 
 Récapitulatif
 
-	* :math:`x*` minimum global si et seulement si pour tout :math:`x \in X f(x*) \geq f(x)`
-	* :math:`x*` minimum local si et seulement il existe :math:`\epsilon > 0` tel que pour tout :math:`x \in X \cap B(x*,\epsilon) f(x*) \geq f(x)`
-	* :math:`x*` est dit un point critique si :math:`\nabla f(x*)=0`
+	*
 
-Les minimums sont stricts si les inégalités sont strictes (<) dès que :math:`x \neq x*`.
+		:math:`x*` minimum global si et seulement si pour tout :math:`x \in X f(x*) \geq f(x)`
+		(=il n'y a pas de point plus petit)
+
+	*
+
+		:math:`x*` minimum local si et seulement il existe :math:`\epsilon > 0` tel que pour tout
+		:math:`x \in X \cap B(x*,\epsilon) f(x*) \geq f(x)` (=sur un interval epsilon c'est le plus petit)
+
+	* :math:`x*` est dit un point critique si :math:`\nabla f(x*)=0` (voir gradient=nabla)
+
+Les minimums sont dits stricts si les inégalités sont strictes (<) dès que :math:`x \neq x*`.
 
 Minimum global
 *****************
@@ -57,7 +65,7 @@ Point critique/stationnaire
 				Si :math:`x*` est un point critique et :math:`Hf(z)` est semi-définie positive
 				pour tout :math:`z \in X`, alors :math:`x*` est un minimum global.
 
-Point de selle
+Point selle
 	:math:`x*` est un point selle de :math:`f` ssi :math:`x*` est un point critique et
 	:math:`Hf(x*)` est indéfini.
 
