@@ -1,11 +1,11 @@
 .. _opti:
 
-=====================
-Optimisation (fast)
-=====================
+==============
+Optimisation
+==============
 
-| :math:`\color{grey}{Version \ 0.0.1}`
-| :math:`\color{grey}{Dernière \ édition \ le \ 08/05/2021}`
+| :math:`\color{grey}{Version \ 0.5.1}`
+| :math:`\color{grey}{Dernière \ édition \ le \ 09/05/2021}`
 
 1. Introduction
 =================
@@ -108,8 +108,10 @@ Voici les outils à disposition
 .. toctree::
    :maxdepth: 1
 
-		Polygone de contraintes   <files/sc/poly>
-		Algo du Simplexe          <files/sc/simplex>
+		Polygone de contraintes      <files/sc/poly>
+		Algo du Simplexe             <files/sc/simplex>
+		Algo du Simplexe (2 phases)  <files/sc/simplex2>
+		Lagrange                     <files/sc/lagrange>
 
 -----
 

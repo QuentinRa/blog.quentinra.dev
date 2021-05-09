@@ -2,8 +2,18 @@
 Algo du Simplexe
 ===================
 
-* On cherche le maximum pour une fonction :math:`f(z)`.
-* On va introduire des variables artificielles/écart pour chacun des contraintes, notée :math:`S_i` par exemple.
+	* On cherche le maximum/minimum pour une fonction :math:`f(z)`.
+	*
+
+		On va introduire des variables artificielles/écart pour chacun des contraintes, notée :math:`S_i` par exemple.
+
+			* aucun si c'est une égalité
+			*
+
+				une variable négative (donc moins devant) si c'est une contrainte de supériorité mais vous devrez utiliser
+				la méthode des deux phases
+
+			* une variable positive si c'est une contrainte d'infériorité
 
 .. hint::
 
@@ -28,15 +38,26 @@ Quelques détails
 	* les :math:`c_i` sont les coefficients devant chaque variable de la fonction objective à maximiser
 	* :math:`z` est la valeur que nous cherchons à maximiser
 
-**1. plus petit** :math:`c_i`
+**1. choix de la variable avec** :math:`c_i`
 
-On va ensuite prends la colonne qui à la plus grand :math:`c_i`, plus grand car on maximise. On va considérer
-que c'est X donc :math:`c_1` pour la suite, afin de ne pas être trop abstrait.
+On va ensuite prends la colonne qui à
+
+	*
+
+		le plus grand :math:`c_i` (maximise). Si la colonne qui contient cette valeur ne contient
+		que des valeurs négatives alors STOP car optimum non borné.
+
+	*
+
+		le plus petit :math:`c_i` (minimise). Si la colonne qui contient cette valeur ne contient
+		que des valeurs négatives alors STOP car optimum non borné.
+
+On va considérer que c'est X donc :math:`c_1` pour la suite, afin de ne pas être trop abstrait.
 
 **2. Le** :math:`S_i` **du plus petit** :math:`bi/a_{ij}` sachant :math:`c_i`
 
 L'objectif va être de trouver la valeur minimum pour :math:`bi/a_{ij}` seulement si :math:`a_{ij}` est
-positif. Ce qui donnerait par exemple pour X (si tous les termes sont positifs sinon vous retirez les négatifs)
+positif (strict). Ce qui donnerait par exemple pour X (si tous les termes sont positifs sinon vous retirez les négatifs)
 
 .. math::
 
@@ -57,8 +78,12 @@ La ligne des coefficients compte et doit être mise à 0 dans la colonne choisie
 X (ici) entre dans la base, donc dans la colonne :code:`base`, à la ligne :math:`S_i` on remplace
 et on mets X.
 
-Une fois que toutes nos variables sont dans la base, on a terminé et on a la solution optimale dans
-la colonne b.
+Une fois que toutes nos coûts réduits, soit la dernière ligne ne contient que des
+
+	* valeurs positives si minimum
+	* valeurs négatives si maximum
+
+alors on s'arrête.
 
 Le résultat corresponds à :math:`-R` (le moins je crois c'est parce qu'on cherchait le maximum
 mais la valeur R corresponds au minimum).
