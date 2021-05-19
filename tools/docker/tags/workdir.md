@@ -1,12 +1,12 @@
 # WORKDIR
 
+> Change current repository
+
 Syntax is like
 
 ```none
 WORKDIR {path}
 ```
-
-> Change current repository
 
 * ``path`` : new path
 

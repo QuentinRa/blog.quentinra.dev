@@ -1,13 +1,13 @@
 # FROM
 
+> Note that this is the first line
+> and it's required.
+
 Syntax is like
 
 ```none
 FROM {image}[:{version}] [as {name}]
 ```
-
-> Note that this is the first line
-> and it's required.
 
 * ``image`` : image tag used as a source
 * ``version`` : version of the tag, optional
