@@ -5,7 +5,7 @@
 Syntax is like
 
 ```none
-WORKDIR {path}
+WORKDIR path
 ```
 
 * ``path`` : new path

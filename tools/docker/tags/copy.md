@@ -5,9 +5,11 @@
 Syntax is like
 
 ```none
-COPY [--chown={user}:{group}] {src} ... {dest}
+COPY src1 src2 ... srcn dest
 or
-COPY [--chown={user}:{group}] ["src", ...,"dest"]
+COPY ["src", ...,"dest"]
+or
+COPY --chown={user}:{group} src1 src2 ... srcn dest
 ```
 
 * ``src`` : one or more source

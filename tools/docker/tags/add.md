@@ -5,7 +5,9 @@
 Syntax is like
 
 ```none
-ADD [--chown={user}:{group}] {src} {dest}
+ADD src dest
+or
+ADD --chown=user:group src dest
 ```
 
 * ``src`` : can be a path or an url

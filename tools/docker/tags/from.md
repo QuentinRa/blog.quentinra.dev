@@ -6,7 +6,11 @@
 Syntax is like
 
 ```none
-FROM {image}[:{version}] [as {name}]
+FROM image
+or
+FROM image:version
+or
+FROM image:version as name
 ```
 
 * ``image`` : image tag used as a source
