@@ -37,6 +37,8 @@ then I do so read it here
 * ``docker pull tag`` : download an image
 * ``docker build -t tag .`` : build an image named `tag` with
 the ``DockerFile`` in the current folder
+* ``docker build -t tag:version .`` : specify tag version
+when building
 * ``docker run -it tag`` : run `tag` image in interactive mode, for instance
 a bash were you can input commands is interactive
 * ``docker run tag`` : run `tag`
