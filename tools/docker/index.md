@@ -152,7 +152,7 @@ From hub.ducker.com
 
 ```dockerfile
 # image is gcc in an old version
-FROM gcc:4.9
+FROM gcc:8.4
 # copy your project in /usr/src/myapp
 COPY . /usr/src/myapp
 # then we move to this folder ...
