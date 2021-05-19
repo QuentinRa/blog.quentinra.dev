@@ -1,4 +1,0 @@
-syntaxe heredoc : <<<
-<<<EOD
-Ceci est une chaîne.
-EOD; // même identifiant qu’au début

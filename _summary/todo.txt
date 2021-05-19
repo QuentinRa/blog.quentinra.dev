@@ -1,2 +1,0 @@
-Analyse numérique      Ajouter les équations différentielles
-Analyse numérique      Ajouter l'interpolation polynomiale

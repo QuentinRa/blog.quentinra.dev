@@ -1,8 +1,0 @@
-$ dig +short lunix120.ensiie.fr
-ip
-
-https://www.fil.univ-lille1.fr/~noe/rsx1_portail/files/
-
-https://openclassrooms.com/fr/courses/2581701-simulez-des-architectures-reseaux-avec-gns3
-https://duckduckgo.com/?q=GNS3+download&atb=v230-1&ia=web
-https://www.gns3.com/software/download

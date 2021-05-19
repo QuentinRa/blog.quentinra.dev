@@ -1,3 +1,0 @@
-gcc -c is-in-sorted.c
-as -gstabs memb.s -o memb.o
-gcc memb.o is-in-sorted.o

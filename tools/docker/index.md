@@ -1,0 +1,187 @@
+# Introduction
+
+**Docker is an easy way to share an application**. You will pack
+your app with a configuration in a ``Dockerfile`` and it will
+create a Docker image.
+
+Then any machine that have docker can run your image, meaning your
+app can be run everywhere.
+
+## Some additional details
+
+Virtual machine allow someone to have a linux desktop on Windows for
+instance, so one can start a linux only app in Windows.
+
+But a virtual machine may be too much to install, so ``docker``
+is a mix between. It will use your current machine so your
+system file, RAM, CPU ... in order to run a container which can have
+a windows, linux, ... running in it.
+
+But a ``docker`` image don't have memory so each time you start a `container`,
+so run your app, **it will restart from scratch**.
+
+Also a downside a ``docker``, that I least stumbled upon was it was quite
+hard and impossible for me to use some system specific devices such as
+sound (<span class="text-muted small">at least in Windows but in linux or macos 
+it seems to be possible, see references</span>).
+
+## Install Docker
+
+Firstly, ready the official documentation might help better
+then I do so read it here
+[https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/).
+
+* check if installed with ``docker -v``
+* on windows
+
+    * install [Docker desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+    * you need to restart it each time your want to use ``docker`` commands
+    * when the app is started, confirmation messages should be shown 
+    then you can use ``docker`` commands
+      
+## Some commands you need to know
+
+* ``docker pull tag`` : download an image
+* ``docker build -t tag .`` : build an image named `tag` with
+the ``DockerFile`` in the current folder
+* ``docker run -it tag`` : run `tag` image in interactive mode, for instance
+a bash were you can input commands is interactive
+* ``docker run tag`` : run `tag`
+
+You can find images here [https://hub.docker.com/](https://hub.docker.com/)
+that you can use as a base for your application, for example there is
+an image called ``gcc`` if you need a system configured and with `gcc`
+available.
+
+Other commands that one might use
+
+* ``docker ps`` : list of running containers with their ID
+* ``docker rm id`` : end of running container
+* ``docker run -p ps:pm tag`` : start image and bind port
+of your container ``ps`` with one of your machine `pm`.
+  
+## Dockerfile
+
+Here an example of a ``Dockerfile``
+
+```dockerfile
+# source image
+FROM debian:10
+
+# set working directory
+WORKDIR path
+
+RUN commande # exécute une commande
+RUN commande_part_1 \
+# si the the second part of the line above
+commande_part_2
+
+# add files to container file system
+ADD path/to/source path/to/dest
+# copy file to container file system
+COPY path/to/source path/to/dest
+
+# allow use of port 80=HTTP outside
+EXPOSE 80
+
+# a command that's called when container is run
+CMD ["command", "arg"]
+```
+
+So try to make it like that
+
+* instruction in uppercase, followed by their arguments
+* you can split a long line with ``\ ``.
+* the first line is a ``FROM`` with the image we use as a source,
+that you may have to download if you don't have it (the `docker pull tag`
+done automatically if you didn't)
+
+### Most used instructions
+
+Voici un résumé de quelques instructions, vous avez tous les détails plus bas
+
+* [FROM](docker/tags/from.md) : source image
+* [WORKDIR](docker/tags/workdir.md) : change workdir
+* [ADD](docker/tags/add.md) : add files
+* [COPY](docker/tags/copy.md) : copy files
+* [RUN](docker/tags/run.md) : run a command
+* [CMD](docker/tags/cmd.md) : run a command when container is started
+* [ENV](docker/tags/env.md) : set environnement variables
+
+Less commonly used
+
+* [EXPOSE](docker/tags/expose.md) : link/expose a port
+* [USER](docker/tags/user.md) : create user
+* [LABEL](docker/tags/label.md) : image metadata
+* [VOLUME](docker/tags/volume.md)` : create a mounting point (`/mnt` such as WSL is doing)
+
+You may use
+
+* [ONBUILD](docker/tags/onbuild.md) 
+* [STOPSIGNAL](docker/tags/stopsignal.md) 
+* [ENTRYPOINT](docker/tags/entrypoint.md)
+
+And their are not ``commands`` or not really but may
+be useful
+
+* [Arguments](docker/tags/args.md)
+* [Directives](docker/tags/directives.md)
+
+## Other
+
+### Kubernetes
+
+I still haven't learned how to use it so nothing for now
+but from what I know
+you can use ``Kubernetes`` to make sure that there are
+always ``x`` instances of an image running.
+
+### .dockerignore
+
+You may have file that you don't want ``Docker`` to copy
+so you may use a ``.dockerignore`` using the `.ignore`
+syntax
+
+````gitignore
+# any file someting.exe is ignore
+*.exe
+# we don't ignore a.exe
+!a.exe
+# exclude a directory
+directory/
+````
+
+### Real docker example 
+
+From hub.ducker.com
+
+```dockerfile
+# image is gcc in an old version
+FROM gcc:4.9
+# copy your project in /usr/src/myapp
+COPY . /usr/src/myapp
+# then we move to this folder ...
+WORKDIR /usr/src/myapp
+# ... in order to compile without writing /usr/src/myapp/main.c
+# or /usr/src/myapp/myapp since the current folder is /usr/src/myapp/
+RUN gcc -o myapp main.c # génère notre exécutable
+# when started with call our program
+CMD ["./myapp"]
+```
+
+## Sources
+
+* Denis CLAVIER (ENSIIE student)
+* Quentin RAMSAMY–AGEORGES (ENSIIE student)
+
+And links used are
+
+* [docs.docker.com](https://docs.docker.com/)
+* [Kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
+* [hello-world](https://github.com/docker-library/hello-world/blob/master/Dockerfile.build)
+* [C-build](https://ownyourbits.com/2017/06/20/c-build-environment-in-a-docker-container/)
+* [C/C++ build](https://amytabb.com/ts/2018_07_28/)
+* [webapps](https://github.com/docker/labs/blob/master/beginner/chapters/webapps.md)
+* [IMUNES](https://github.com/imunes/vroot-linux)
+* [webapps](https://github.com/docker/labs/blob/master/beginner/chapters/webapps.md)
+

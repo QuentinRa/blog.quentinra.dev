@@ -1,3 +1,0 @@
-
-MERGE: Match existing or create new nodes and patterns.
-This is especially useful together with unique constraints.
