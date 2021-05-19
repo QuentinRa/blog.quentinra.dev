@@ -4,26 +4,19 @@
 your app with a configuration in a ``Dockerfile`` and it will
 create a Docker image.
 
-Then any machine that have docker can run your image, meaning your
-app can be run everywhere.
+Then any machine that has `docker` can run your image, meaning your application can be run everywhere.
 
 ## Some additional details
 
-Virtual machine allow someone to have a linux desktop on Windows for
-instance, so one can start a linux only app in Windows.
+A virtual machine allows someone to have a Linux desktop on Windows, for instance, so one can start a Linux-only application in Windows.
 
-But a virtual machine may be too much to install, so ``docker``
-is a mix between. It will use your current machine so your
-system file, RAM, CPU ... in order to run a container which can have
-a windows, linux, ... running in it.
+But a virtual machine may be too much to install, so ``docker`` is a mix between those. It will use your current machine so your system file, RAM, CPU ... to run a container that can have a Windows, Linux, ... system running in it.
 
-But a ``docker`` image don't have memory so each time you start a `container`,
-so run your app, **it will restart from scratch**.
+But a ``docker`` image doesn't have a memory so each time you start a `container`, so each time you run your application, **it will restart from scratch**.
 
 Also a downside a ``docker``, that I least stumbled upon was it was quite
-hard and impossible for me to use some system specific devices such as
-sound (<span class="text-muted small">at least in Windows but in linux or macos 
-it seems to be possible, see references</span>).
+hard and impossible for me to use some system-specific devices such as
+sound (<span class="text-muted small">at least in Windows but in Linux or macOS it seems to be possible</span>).
 
 ## Install Docker
 
@@ -36,7 +29,7 @@ then I do so read it here
 
     * install [Docker desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
     * you need to restart it each time your want to use ``docker`` commands
-    * when the app is started, confirmation messages should be shown 
+    * when the application is started, confirmation messages should be shown 
     then you can use ``docker`` commands
       
 ## Some commands you need to know
@@ -49,15 +42,15 @@ a bash were you can input commands is interactive
 * ``docker run tag`` : run `tag`
 
 You can find images here [https://hub.docker.com/](https://hub.docker.com/)
-that you can use as a base for your application, for example there is
+that you can use as a base for your application, for example, there is
 an image called ``gcc`` if you need a system configured and with `gcc`
 available.
 
 Other commands that one might use
 
-* ``docker ps`` : list of running containers with their ID
-* ``docker rm id`` : end of running container
-* ``docker run -p ps:pm tag`` : start image and bind port
+* ``docker ps``: list of running containers with their ID
+* ``docker rm id``: end of running container
+* ``docker run -p ps:pm tag``: start image and bind port
 of your container ``ps`` with one of your machine `pm`.
   
 ## Dockerfile
@@ -68,7 +61,7 @@ Here an example of a ``Dockerfile``
 # source image
 FROM debian:10
 
-# set working directory
+# set the working directory
 WORKDIR path
 
 RUN commande # exécute une commande
@@ -81,10 +74,10 @@ ADD path/to/source path/to/dest
 # copy file to container file system
 COPY path/to/source path/to/dest
 
-# allow use of port 80=HTTP outside
+# allow the use of port 80=HTTP outside
 EXPOSE 80
 
-# a command that's called when container is run
+# a command that's called when the container is run
 CMD ["command", "arg"]
 ```
 
@@ -121,7 +114,7 @@ You may use
 * [STOPSIGNAL](docker/tags/stopsignal.md) 
 * [ENTRYPOINT](docker/tags/entrypoint.md)
 
-And their are not ``commands`` or not really but may
+And these ones are not ``commands`` but may
 be useful
 
 * [Arguments](docker/tags/args.md)
@@ -138,7 +131,7 @@ always ``x`` instances of an image running.
 
 ### .dockerignore
 
-You may have file that you don't want ``Docker`` to copy
+You may have files that you don't want ``Docker`` to copy
 so you may use a ``.dockerignore`` using the `.ignore`
 syntax
 
@@ -184,4 +177,3 @@ And links used are
 * [webapps](https://github.com/docker/labs/blob/master/beginner/chapters/webapps.md)
 * [IMUNES](https://github.com/imunes/vroot-linux)
 * [webapps](https://github.com/docker/labs/blob/master/beginner/chapters/webapps.md)
-
