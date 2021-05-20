@@ -179,7 +179,7 @@ XML_NS_MEMB_FILE_SCOPE  = YES
 # check the usual output folder then link
 # 
 # M_LINKS_NAVBAR1 = \
-# "<a href=\"a_page.htmll\">User documentation</a>" \
+# "<a href=\"a_page.html\">User documentation</a>" \
 # "annotated"
 # M_LINKS_NAVBAR2 = \
 # "files" \
@@ -190,6 +190,41 @@ XML_NS_MEMB_FILE_SCOPE  = YES
 * on Linux `chmod +x style/doxygen.py`
 * then do `style\doxygen.py DoxyfileCSS` (or `/` on Linux)
 * check your usual output folder for your ``ìndex.html``
+
+## Make your documentation great
+
+I think we should think carefully about how to make
+our comments. Here are some advices, I hope
+they help you find idea about how you would think
+what make a documentation great.
+
+* comments ``imports``, one line, why are you using them
+* comment ``variables``, at their initialisation,
+why do you need it
+* group some part of your code (all ``getters``
+  , all ``setters``, all ``utilities``, all ``constructors``,
+  ...)
+  
+* do **not** write ``@return int, a number``
+or ``@param int a number`` : in most case it's useless
+  
+  * maybe tell us the range of the variable
+  * some values that may trigger a different comportement
+
+* don't copy paste, use ``@see`` or whatever but don't.
+* a "big" description at the beginning of a file,
+to tells us why you are using this file and so that
+  we know if we should read it or not.
+* don't use ``\date`` or `\version` unless you really
+intend to modify them otherwise they are not useful
+  
+In general
+
+* don't forget non javadoc comment, one per line or block
+is really helpful
+* show some examples of your function being called,
+that might help a lot
+* make some ``README.md`` to summarize some usages might be good
 
 ## Sources
 
