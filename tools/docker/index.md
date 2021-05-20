@@ -95,32 +95,32 @@ done automatically if you didn't)
 
 Voici un résumé de quelques instructions, vous avez tous les détails plus bas
 
-* [FROM](docker/tags/from.md) : source image
-* [WORKDIR](docker/tags/workdir.md) : change workdir
-* [ADD](docker/tags/add.md) : add files
-* [COPY](docker/tags/copy.md) : copy files
-* [RUN](docker/tags/run.md) : run a command
-* [CMD](docker/tags/cmd.md) : run a command when container is started
-* [ENV](docker/tags/env.md) : set environnement variables
+* [FROM](tags/from.md) : source image
+* [WORKDIR](tags/workdir.md) : change workdir
+* [ADD](tags/add.md) : add files
+* [COPY](tags/copy.md) : copy files
+* [RUN](tags/run.md) : run a command
+* [CMD](tags/cmd.md) : run a command when container is started
+* [ENV](tags/env.md) : set environnement variables
 
 Less commonly used
 
-* [EXPOSE](docker/tags/expose.md) : link/expose a port
-* [USER](docker/tags/user.md) : create user
-* [LABEL](docker/tags/label.md) : image metadata
-* [VOLUME](docker/tags/volume.md)` : create a mounting point (`/mnt` such as WSL is doing)
+* [EXPOSE](tags/expose.md) : link/expose a port
+* [USER](tags/user.md) : create user
+* [LABEL](tags/label.md) : image metadata
+* [VOLUME](tags/volume.md)` : create a mounting point (`/mnt` such as WSL is doing)
 
 You may use
 
-* [ONBUILD](docker/tags/onbuild.md) 
-* [STOPSIGNAL](docker/tags/stopsignal.md) 
-* [ENTRYPOINT](docker/tags/entrypoint.md)
+* [ONBUILD](tags/onbuild.md) 
+* [STOPSIGNAL](tags/stopsignal.md) 
+* [ENTRYPOINT](tags/entrypoint.md)
 
 And these ones are not ``commands`` but may
 be useful
 
-* [Arguments](docker/tags/args.md)
-* [Directives](docker/tags/directives.md)
+* [Arguments](tags/args.md)
+* [Directives](tags/directives.md)
 
 ## Other
 
