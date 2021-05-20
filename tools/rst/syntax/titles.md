@@ -30,3 +30,16 @@ do it like that
 * ``-``: subsection
 * ``^``: subsubsection
 * ``»``: paragraph
+
+You can reference a title, meaning say "Hey check
+this part of the documentation" using ref
+
+```rest
+.. _tag:
+
+some header
+************
+
+Hey check this part of the 
+documentation : :ref:`tag`.
+```
