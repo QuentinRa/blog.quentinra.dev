@@ -19,5 +19,8 @@ LABEL "property"="value"
 ```dockerfile
 LABEL name="image name"
 LABEL version="image version"
+LABEL maintainer="maintener"
+LABEL vendor="vendor"
+LABEL environment=dev
 LABEL description="image description"
 ```

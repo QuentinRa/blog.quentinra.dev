@@ -9,12 +9,6 @@ the first comment.
 
 **Exemples**
 
-Dockerfile syntax, exemple ``docker/dockerfile``
-
-```dockerfile
-#syntax={syntaxe}
-```
-
 Docker multiline escape code, example ``\ ``
 
 ```dockerfile
