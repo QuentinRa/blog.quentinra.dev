@@ -25,50 +25,43 @@ developing without breaking the ``main`` version
 before **merging** all your changes into your
   ``main`` version.
   
-So first of all, you need to install git
+So first of all, you need to
 
-* on Windows [git-scm](https://git-scm.com/) do it for you
-* on Linux ``sudo apt-get install git``
+* [set things up locally](local-install.md)
+* [set things up server-side](server-install.md)
 
-Then you need to set things up and you are
-ready
+## Basic usage
+
+Please take not that all ``commands`` start with
+``git`` then a space.
+
+* [Get your repository from server](commands/clone.md)
+* [Update your local version](commands/pull.md)
+* [Save your local changes](commands/commit.md)
+* [Send your changes to the server](commands/push.md)
+* [Check the git status](commands/status.md)
+
+So to summarize, a basic usage would be
 
 ```bash
-git config --global user.name "name used on commits"
-git config --global user.email "email used on commits"
+# 
+# Ony done once, download the repository locally 
+#
+git clone "https://github.com/lgs-games/memorize.git"
+
+#
+# Then inside the folder, you can do
+#
+# get the latest version on the server
+git pull
+# ... work a lot ...
+# save your changes
+git status
+git add .
+git commit -m "I worked a lot"
+# then send your changes to the server
+git push
 ```
-
-## Introduction : server side
-
-Here we will take ``Github`` for example but things
-are the same everywhere
-
-A repository is basically a project where you will
-store your code. You usually put a ``README.md`` file
-in it, written in ``Markdown`` to describe your project.
-
-Here is the official tutorial
-to 
-[create a repository](https://docs.github.com/en/github/getting-started-with-github/quickstart/create-a-repo)
-.
-
-Then, before we continue, you have 2 choices
-* each time you make a commit, you need to ``login``
-* each time you make a commit, you don't need to ``login``
-
-So if you don't want to login at each commit, set
-what we call ``ssh`` keys.
-
-Here the official github tutorial
-[generating-a-new-ssh-key](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-or you can do that
-
-* ``ssh-keygen -t rsa -b 4096 -C "email"``
-* ``cat ~/.ssh/id_rsa.pub``
-* copy the text
-* on your website, go to ``settings`` then `SSH keys`
-* add the key
-* END
 
 ## Sources
 
@@ -77,6 +70,7 @@ or you can do that
 
 References
 
+* [github git guide](https://github.com/git-guides/)
 * [changing remote](https://docs.github.com/en/github/using-git/changing-a-remotes-url)
 * [add ssh key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 * [good practices](http://adopteungit.fr/methodologie/2017/04/26/commits-atomiques-la-bonne-approche.html)
