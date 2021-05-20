@@ -89,10 +89,9 @@ Here some details about basic commands
 * [move](commands/move.md)
 * [delete](commands/delete.md)
 * [copy](commands/copy.md)
-* [useful commands](commands/save-exit.md)
 * [search](commands/search.md)
 * [replace](commands/replace.md)
-* [others](commands/others.md)
+* [others commands](commands/others.md)
 * [cgi syntax](commands/cgi.md)
 
 Here you have a summary
