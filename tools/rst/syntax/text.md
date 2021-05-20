@@ -3,6 +3,8 @@
 [Go back](..)
 
 ```rest
+.. this is a comment
+
 This is some
 paragraph.
 

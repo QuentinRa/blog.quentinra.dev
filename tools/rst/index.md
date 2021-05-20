@@ -49,7 +49,7 @@ Here a the most commons elements of syntax
 * [titles](syntax/titles.md)
 * [text](syntax/text.md)
 * [code](syntax/code.md)
-* [images and links](syntax/image.md)
+* [images and links](syntax/images-and-links.md)
 * [math (latex)](syntax/math.md)
 * [uml (plantuml)](syntax/math.md)
 * [table](syntax/table.md)
