@@ -7,4 +7,3 @@
 * `n` : next word
 * `N` : previous word
 * `%symbole` : return the matching symbol
-
