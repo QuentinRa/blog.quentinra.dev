@@ -6,4 +6,4 @@
 * how to do ``networking`` or use `threads` in `C`
 
 If you want some little knowledge about programming before
-starting, this page should help you : [First timer](c/sub/first-time.md).
+starting, this page should help you : [First timer](sub/first-time.md).
