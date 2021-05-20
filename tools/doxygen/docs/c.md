@@ -19,6 +19,7 @@ but can be used inside text such as in the middle of
 Here is some help for some tags
 
 * [A file](tags/file.md)
+* [A folder](tags/folder.md)
 * [An enum](tags/enum.md)
 * [A structure](tags/structure.md)
 * [An include](tags/include.md)
