@@ -56,6 +56,7 @@ Here a the most commons elements of syntax
 * [notes, ...](syntax/special.md)
 * [lists](syntax/lists.md)
 * [graphviz](syntax/graphviz.md)
+* [class or methods](syntax/class-or-methods.md)
 
 As a side node, space and indents are quite important
 in ``rst``, so be sure to check your indents if the compiler
