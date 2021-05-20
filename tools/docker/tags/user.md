@@ -1,5 +1,7 @@
 # USER
 
+[Go back](..)
+
 > Create an user.
 
 Syntax is like

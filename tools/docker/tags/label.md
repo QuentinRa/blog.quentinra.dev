@@ -1,5 +1,7 @@
 # LABEL
 
+[Go back](..)
+
 > Set image properties that are show
 > when using command ``docker image inspect image_name_here``
 

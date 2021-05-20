@@ -1,5 +1,7 @@
 # STOPSIGNAL
 
+[Go back](..)
+
 > When you make ``CTRL-C`` you send
 > a signal to docker to die, the code is 9.
 > 
