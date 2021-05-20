@@ -42,6 +42,7 @@ you will have to use a directive starting with
 * [Document](directives/document.md)
 * [Text](directives/text.md)
 * [Lists](directives/lists.md)
+* [Code](directives/code.md)
 
 ## Writing maths in latex
 
@@ -68,3 +69,4 @@ or use ``\quad`` (or `\,`, `\:`, ...).
 References
 * <https://www.overleaf.com/>
 * <https://www.overleaf.com/learn>
+* <https://fr.overleaf.com/learn/latex/Code_Highlighting_with_minted>
