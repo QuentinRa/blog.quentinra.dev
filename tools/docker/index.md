@@ -166,8 +166,8 @@ CMD ["./myapp"]
 
 ## Sources
 
-* Denis CLAVIER (ENSIIE student)
-* Quentin RAMSAMY–AGEORGES (ENSIIE student)
+* Denis CLAVIER
+* Quentin RAMSAMY–AGEORGES
 
 And links used are
 

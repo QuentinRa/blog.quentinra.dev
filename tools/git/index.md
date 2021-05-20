@@ -139,7 +139,7 @@ on other git-server.
 ## Sources
 
 * Anonymous
-* Quentin RAMSAMY–AGEORGES (ENSIIE student)
+* Quentin RAMSAMY–AGEORGES
 
 References
 

@@ -229,7 +229,7 @@ that might help a lot
 ## Sources
 
 * Anonymous
-* Quentin RAMSAMY–AGEORGES (ENSIIE student)
+* Quentin RAMSAMY–AGEORGES
 
 References
 
