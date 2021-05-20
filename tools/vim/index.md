@@ -49,7 +49,7 @@ Here a really short summary of vim.
 You have two mode (at least for now),
 check at the bottom left of your screen
 
-* `INSERTION` : called insert/insertion mode
+* `INSERTION` : called insert/edit mode
 * `<nothing>` : called command/normal mode
 
 More generally, the **normal mode** (or command mode)
@@ -95,10 +95,9 @@ Here some details about basic commands
 * [others](commands/others.md)
 * [cgi syntax](commands/cgi.md)
 
-# Command
-These are the command in **normal mode**.
+Here you have a summary
 
-<table>
+<table class="table table-bordered mb-3 table-striped">
 	<tr>
 		<th>Input</th>
 		<th>Action </th>
@@ -228,7 +227,7 @@ These are the command in **normal mode**.
 		<th>If the cursor is in one of these characters : {, (, [, ], ), }, show the associated one.</th>
 	</tr>
 	<tr>
-		<th>Ctrl + r</th>
+		<th>ctrl + r</th>
 		<th>Redo.</th>
 	</tr>
 	<tr>
@@ -244,24 +243,6 @@ These are the command in **normal mode**.
 		<th>Quit without saving.</th>
 	</tr>
 </table>
-
-You can use powerful commands and some regex/patterns
-using the ``cqi`` syntax.
-
-* ``c`` : a command
-* ``q`` : a quantity
-* ``i`` : an indicator
-
-in a sentence, for exemple, we could say
-``delete (=c) 10 (=q) lines (=i)``. Indicators would be
-
-* ``$`` : command from cursor until the end of the line
-* ``e`` : ???
-* ``.`` : under cursor
-* ``c`` : a line
-* ``^`` : from cursor until the start of the line
-
-You may use that in previous commands.
 
 ## Sources
 
