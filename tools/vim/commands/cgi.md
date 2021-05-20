@@ -11,7 +11,7 @@ in a sentence, for exemple, we could say
 ``delete (=c) 10 (=q) lines (=i)``. Indicators would be
 
 * ``$`` : command from cursor until the end of the line
-* ``e`` : ???
+* ``e`` : end of the word
 * ``.`` : under cursor
 * ``c`` : a line
 * ``^`` : from cursor until the start of the line

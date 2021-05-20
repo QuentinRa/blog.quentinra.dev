@@ -93,6 +93,7 @@ Here some details about basic commands
 * [replace](commands/replace.md)
 * [others commands](commands/others.md)
 * [cgi syntax](commands/cgi.md)
+* [mystic commands](commands/special.md)
 
 Here you have a summary
 
@@ -199,7 +200,7 @@ Here you have a summary
 	</tr>
 	<tr>
 		<th>~</th>
-		<th>Change MAJUSCULE to minuscule, and vice-versa.</th>
+		<th>Change UPPERCASE to lowercase, and vice-versa.</th>
 	</tr>
 	<tr>
 		<th>/[input]</th>
