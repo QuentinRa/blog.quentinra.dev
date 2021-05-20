@@ -53,8 +53,21 @@ that will allow ``doxygen`` to give some style to your
 documentation. They start either with a ``\``
 or a ``@`` like in `Java`.
 
+> Also before starting, node that you will have
+to say what you are commenting before actually
+starting to comment it. An exemple would be above,
+you must use a ``\file`` to say that
+you are commenting this file. So you would
+have to use ``\enum`` in the comment of an enum
+...
+
 * [Write documentation in C](docs/c.md)
-* [Write documentation in Java](docs/java.md)
+* [Write documentation in Object-Oriented Languages](docs/oo.md)
+
+All tags can be found in this great reference sheet
+
+  * official link : [DoxyReference.pdf](https://www.mitk.org/images/1/1c/BugSquashingSeminars$2013-07-17-DoxyReference.pdf)
+  * permanent link : [DoxyReference.pdf](download:docs/DoxyReference.pdf)
 
 ## Generate your documentation website
 
