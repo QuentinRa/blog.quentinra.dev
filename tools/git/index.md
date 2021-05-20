@@ -92,6 +92,38 @@ it into ``master`` or just destroy it.
 > an interface to do that quite easily such
 > as ``IntelliJ IDEA``.
 
+## Good practices
+
+**Atomic commits** : one commit means one change, such
+as adding a functionality. Do not make hundreds of changes
+making it hard to find when to commit, then the change,
+that ruined your  project is.
+
+**Short-Long description** : you can, and should make
+a short and a long description of your commits
+like that
+
+```bash
+git commit -m "a short inline description
+
+A long description, where I describes
+all of my changes
+"
+```
+
+**README.md** : put a README in all of your projects, that
+the start of a great adventure.
+
+**LICENSE** : you may also put a LICENSE even if you don't
+want to put restriction on your code, just in order
+to protect yourself from complains (MIT LICENSE
+is good for that)
+
+**.gitignore** : you may not want to commit some files
+like high-churn ones or big files... Create a file
+called is a good practice, youc ang generate one
+here [toptal gitignore](https://www.toptal.com/developers/gitignore).
+
 ## Sources
 
 * Anonymous
