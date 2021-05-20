@@ -1,5 +1,7 @@
 #### Some tags
 
+[Go back](../c.md)
+
 Theses can be used almost everywhere but
 you don't see them often
 

@@ -1,5 +1,7 @@
 #### Comment a file
 
+[Go back](../c.md)
+
 A comment for a file have
 
 * ``\file name`` : name of the file, **required**

@@ -1,5 +1,7 @@
 #### Comment a enum
 
+[Go back](../c.md)
+
 ```c
 /*!
  * \typedef NEW_NAME

@@ -1,5 +1,7 @@
 #### Comment a structure
 
+[Go back](../c.md)
+
 ```c
 /*!
 * \typedef NEW_NAME
