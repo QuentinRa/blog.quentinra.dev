@@ -1,6 +1,6 @@
 # RST
 
-`rst` means ``ReStructuredText``, file with
+`rst` or `reST` means ``reStructuredText``, file with
 extension ``.rst``.
 
 To put it simply, its a language that is great to make
