@@ -51,7 +51,7 @@ Here a the most commons elements of syntax
 * [code](syntax/code.md)
 * [images and links](syntax/images-and-links.md)
 * [math (latex)](syntax/math.md)
-* [uml (plantuml)](syntax/math.md)
+* [uml (plantuml)](syntax/uml.md)
 * [table](syntax/table.md)
 * [notes, ...](syntax/table.md)
 * [lists](syntax/lists.md)
