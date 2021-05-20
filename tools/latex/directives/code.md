@@ -1,6 +1,6 @@
 # Code
 
-[Go back]()
+[Go back](..)
 
 Here how you would write code in OCaml
 
@@ -22,4 +22,4 @@ or you could use this code to add a file
 ``\inputminted{ocaml}{file.ml}``.
 
 You can highlight one line with
-``\mint{html}|<h2>Something <b>here</b></h2>|``
+``\mint{ocaml}|let x = 5;;|``
