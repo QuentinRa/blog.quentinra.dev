@@ -124,6 +124,18 @@ like high-churn ones or big files... Create a file
 called is a good practice, youc ang generate one
 here [toptal gitignore](https://www.toptal.com/developers/gitignore).
 
+## Advanced github concepts
+
+Here some functionalities that you may find
+on other git-server.
+
+* [Wikis](tools/wiki.md)
+* [Actions](tools/actions.md)
+* [PullRequests](tools/pull-requests.md)
+* [Issues](tools/issues.md)
+* [Organizations](tools/organizations.md)
+* [Pages](tools/pages.md)
+
 ## Sources
 
 * Anonymous
