@@ -35,7 +35,7 @@ For python command, skip this part.
 Sphinx use a ``tree`` system, we we need to link
 the pages together. We do that with ``toctree directive``
 
-```rst
+```rest
 .. toctree::
  :maxdepth:
 
