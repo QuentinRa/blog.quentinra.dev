@@ -126,6 +126,71 @@ to generates your documentation. Check your
 you must open in your browser to look at
 your HTML documentation.
 
+## Make your documentation beautiful
+
+If you want to have a beautiful documentation
+such as this one [magnum](https://doc.magnum.graphics/magnum/)
+then here is my tutorial
+but you got the official one here
+[m.css](https://mcss.mosra.cz/documentation/doxygen/)
+that will **really** help you.
+
+* download theses files from [https://github.com/mosra/m.css](https://github.com/mosra/m.css)
+
+  * folder ``documentation/templates``
+  * files ``documentation/__init__.py``,
+    ``documentation/_search.py``,
+   ``documentation/doxygen.py``,
+    and ``documentation/python.py``
+  * file ``documentation/favicon-dark.png`` and 
+    ``documentation/favicon-light.png``
+  * file ``documentation/search.js``
+  * folder ``plugins``
+  * folder ``css``
+  
+Put everything in the folder ``style``, I have
+a folder like this one
+[style folder](https://github.com/lgs-games/prim/tree/master/version_c/style)
+or this screen [style folder](download:mcss_folder.png).
+
+Next
+
+  * if ``python`` and `pip` are not installed then install them
+  * ``pip3 install jinja2 Pygments``
+  * create ``DoxyfileCSS``
+  *
+
+```bash
+# used to become a god
+# style\doxygen.py DoxyfileCSS
+    
+# include original file
+@INCLUDE                = Doxyfile
+    
+# modify some values
+GENERATE_HTML           = NO
+GENERATE_LATEX          = NO
+GENERATE_XML            = YES
+XML_PROGRAMLISTING      = NO
+XML_NS_MEMB_FILE_SCOPE  = YES
+    
+# If you want to change the navbar
+# to find a special name such as a_page.html
+# check the usual output folder then link
+# 
+# M_LINKS_NAVBAR1 = \
+# "<a href=\"a_page.htmll\">User documentation</a>" \
+# "annotated"
+# M_LINKS_NAVBAR2 = \
+# "files" \
+# "<a href=\"a_page.html\">Fonctions</a>" \
+# "<a href=\"un_lien">GitHub</a>"
+```
+
+* on Linux `chmod +x style/doxygen.py`
+* then do `style\doxygen.py DoxyfileCSS` (or `/` on Linux)
+* check your usual output folder for your ``ìndex.html``
+
 ## Sources
 
 * Anonymous
