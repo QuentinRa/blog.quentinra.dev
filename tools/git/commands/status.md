@@ -6,4 +6,13 @@
 > of the files that aren't committed,
 > the number of local commits, ...
 
-``git status``
+```bash
+git status
+```
+
+Also the command might also help since it
+shows information about each commit
+
+```bash
+git log
+```

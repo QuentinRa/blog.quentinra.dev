@@ -63,6 +63,35 @@ git commit -m "I worked a lot"
 git push
 ```
 
+## Main concepts
+
+Here are command that you will use on project
+so most likely all the time if you are not working
+alone or for yourself.
+
+* ``git branch name`` : create a branch
+* ``git checkout name`` : move to a branch
+* ``git merge`` : merge current branch with main branch
+
+So let's now explain what's a branch. By default, you are
+coding on a branch called ``master`` (or sometimes `main`).
+
+You may want to create a copy of your project, modify it
+then merge your modification into your original code
+or just drop it since that's was a mistake for example.
+
+That's what we can do with ``branch`` and `merge`.
+Simply create a branch, move on it, code, then ``merge``
+it into ``master`` or just destroy it.
+
+> As a side node, a lot of time they are conflicts
+> with ``merging`` meaning someone modified master
+> while you where working on it. Simply check
+> all the conflicting files and choose what you
+> want to keep. Some software provides you
+> an interface to do that quite easily such
+> as ``IntelliJ IDEA``.
+
 ## Sources
 
 * Anonymous
