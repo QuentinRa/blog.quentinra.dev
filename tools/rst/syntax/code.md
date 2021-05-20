@@ -15,4 +15,10 @@
     
 And I can even write somme :code:`inline code` using
 this inline code directive.
+
+You can literally include a file
+
+.. literalinclude:: configuration.json
+    :language: JSON
+    
 ```

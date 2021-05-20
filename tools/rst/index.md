@@ -53,7 +53,7 @@ Here a the most commons elements of syntax
 * [math (latex)](syntax/math.md)
 * [uml (plantuml)](syntax/uml.md)
 * [table](syntax/table.md)
-* [notes, ...](syntax/table.md)
+* [notes, ...](syntax/special.md)
 * [lists](syntax/lists.md)
 
 As a side node, space and indents are quite important
