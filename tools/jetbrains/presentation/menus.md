@@ -1,5 +1,14 @@
-# ...
+# Menus
 
 [Go back](..)
 
-...
+Here some menus that you really want to check out
+
+* [Git](menus/git.md)
+* [Database](menus/database.md)
+* [Todo](menus/todo.md)
+* [Terminal](menus/terminal.md)
+* [Snippets](menus/snippets.md)
+* [Refactor](menus/refactor.md)
+* [Analyse](menus/analyse.md)
+* [UML](menus/uml.md)
