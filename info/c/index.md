@@ -45,6 +45,7 @@ with you. Un interaction might be ``CTRL-C`` meaning `die`. In fact here,
 for this signal : a call ``exit(some_code)``.
 
 * [Processes](proc/process.md)
+* [Processes : wait](proc/process-wait.md)
 * [Recover a process by a program](proc/exec.md)
 * [Communication : signals](proc/signals.md)
 * [Communication : tubes](proc/tubes.md)

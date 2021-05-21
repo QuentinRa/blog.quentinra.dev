@@ -13,7 +13,6 @@ You may use theses libraries
 
 ```c
 #include<sys/types.h> // ...
-#include<sys/wait.h> // wait
 #include<unistd.h> // fork
 ```
 
@@ -65,31 +64,5 @@ void exit(int code);
 
 ### Example
 
-Comments are in french but still you
-should be able to understand.
-
-```c
-#include<sys/types.h>
-#include<sys/wait.h>
-#include<unistd.h>
-
-int main(void){
- if(fork() == 0){ // on devrait vérifier le cas == -1 donc échec
-  print("1. On est dans le fils\n");
- } else {
-  wait(NULL); // on attends que le fils affiche ses messages
-  printf("2. On est dans le père\n"); // on continue le code du père
- }
- printf("mon pid est %d\n",  getpid()); // cette ligne est affichée dans le fils et le père
- return 0;
-}
-```
-
-Result
-
-```
-1. On est dans le fils <CR>
-mon pid est 27892 <CR>
-2. On est dans le père <CR>
-mon pid est 27891 <CR>
-```
+Just wait for the next section, there you will have
+a simple example.
