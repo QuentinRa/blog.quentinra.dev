@@ -166,8 +166,8 @@ CMD ["./myapp"]
 
 ## Sources
 
-* Denis CLAVIER
-* Quentin RAMSAMY–AGEORGES
+* Denis CLAVIER ([ENSIIE](https://www.ensiie.fr/) student)
+* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
 
 And links used are
 

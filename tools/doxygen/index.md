@@ -229,7 +229,7 @@ that might help a lot
 ## Sources
 
 * Anonymous
-* Quentin RAMSAMY–AGEORGES
+* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
 
 References
 

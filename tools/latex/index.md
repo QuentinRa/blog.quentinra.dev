@@ -69,7 +69,7 @@ and ask him to look for it.
 
 ## Sources
 
-* Quentin RAMSAMY--AGEORGES
+* Quentin RAMSAMY--AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
 
 References
 * <https://www.overleaf.com/>

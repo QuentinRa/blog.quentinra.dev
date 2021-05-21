@@ -286,8 +286,8 @@ Here you have a summary
 
 ## Sources
 
-* Harry UNG (ENSIIE Student)
-* Quentin RAMSAMY–AGEORGES (ENSIIE Student)
+* Harry UNG ([ENSIIE](https://www.ensiie.fr/) student)
+* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
 
 References
 * <https://en.wikipedia.org/wiki/Vim_(text_editor)>

@@ -162,7 +162,7 @@ syntax
 
 ## Sources
 
-* Quentin RAMSAMY–AGEORGES (ENSIIE student)
+* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
 
 References
 

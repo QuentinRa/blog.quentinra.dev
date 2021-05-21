@@ -68,15 +68,15 @@ efficiently.
 
 ## Sources
 
-* Denis MONNERAT
-* Luc HERNANDEZ
-* Selma NABOULSI
-* Denis MONNERAT
-* Frédéric GERVAIS
-* Pierre PETRIK
-* Luc DARTOIS
-* Pierre VALARCHER
-* Renaud RIOBOO
-* Christophe MOUILLERON
-* Julien FOREST
-* Quentin RAMSAMY–AGEORGES
+* Denis MONNERAT ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
+* Luc HERNANDEZ ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
+* Selma NABOULSI ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
+* Denis MONNERAT ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
+* Frédéric GERVAIS ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
+* Pierre PETRIK ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
+* Luc DARTOIS ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
+* Pierre VALARCHER ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
+* Renaud RIOBOO ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
+* Christophe MOUILLERON ([ENSIIE](https://www.ensiie.fr/) teacher)
+* Julien FOREST ([ENSIIE](https://www.ensiie.fr/) teacher)
+* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)

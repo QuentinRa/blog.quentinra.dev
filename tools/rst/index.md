@@ -65,7 +65,7 @@ fails on a line and you don't know where is the error.
 
 # Sources
 
-* Quentin RAMSAMY–AGEORGES (ENSIIE student)
+* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
 
 References
 * <https://docs.anaconda.com/restructuredtext/detailed/>
