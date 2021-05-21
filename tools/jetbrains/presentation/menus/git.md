@@ -1,6 +1,6 @@
 # Git
 
-[Go back](..)
+[Go back](../menus.md)
 
 If you are in a git repository, check at the bottom
 left of your screen, you should have a

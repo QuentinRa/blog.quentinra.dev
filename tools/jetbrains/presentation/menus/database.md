@@ -1,6 +1,6 @@
 # Databases
 
-[Go back](..)
+[Go back](../menus.md)
 
 In the paid version, you got access to your
 databases inside the IDE.

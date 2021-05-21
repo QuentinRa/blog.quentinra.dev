@@ -1,6 +1,6 @@
 # Terminal
 
-[Go back](..)
+[Go back](../menus.md)
 
 At the bottom of the screen you can open a terminal.
 
