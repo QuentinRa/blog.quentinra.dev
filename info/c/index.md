@@ -46,7 +46,7 @@ for this signal : a call ``exit(some_code)``.
 
 * [Processes](proc/process.md)
 * [Processes : wait](proc/process-wait.md)
-* [Recover a process by a program](proc/exec.md)
+* [Replace process code](proc/exec.md)
 * [Communication : signals](proc/signals.md)
 * [Communication : tubes](proc/tubes.md)
 * [Threads](proc/threads.md)
