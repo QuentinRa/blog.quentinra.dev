@@ -19,4 +19,4 @@ bit in 2021)
 9. terminal
 10. build messages
 11. file structure
-12. project structure (**JDK**, Modules, ... in JAVA)
+12. project structure (JDK, Modules, ... in JAVA)
