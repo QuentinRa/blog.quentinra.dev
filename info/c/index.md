@@ -18,10 +18,10 @@ starting, this page should help you : [First timer](sub/first-time.md).
 
 ## Using ncurses
 
-NCurses is a beautiful graphic terminal inside
-your terminal. I you do know the great ``VIM`` editor,
-then the interface was made with ncurses. It's simple
-and really quick to learn.
+NCurses is a graphic library to create beautiful
+interfaces in a terminal. I you do know the
+great ``VIM`` editor, then the interface was made with
+ncurses. It's simple and really easy to learn.
 
 ...
 
@@ -48,7 +48,7 @@ for this signal : a call ``exit(some_code)``.
 * [Processes : wait](proc/process-wait.md)
 * [Replace process code](proc/exec.md)
 * [Communication : signals](proc/signals.md)
-* [Communication : tubes](proc/tubes.md)
+* [Communication : pipes](proc/tubes.md)
 * [Threads](proc/threads.md)
 * [Threads : Concurrence](proc/concurrence.md)
 * [Threads : Semaphores](proc/semaphores.md)
