@@ -149,6 +149,17 @@ You may be able to use checkbox
 * [x] checked
 ```
 
+And you can do comments with one of theses
+syntax
+
+```markdown
+[comment]: <> (some comment)
+
+[//]: <> (This is also a comment.)
+
+[//]: # (This may be the most platform independent comment)
+```
+
 ## Sources
 
 * Quentin RAMSAMY–AGEORGES (ENSIIE student)
@@ -158,3 +169,4 @@ References
 * <https://www.markdownguide.org/basic-syntax/>
 * <https://www.markdowntutorial.com/>
 * <https://www.markdownguide.org/getting-started/>
+* [comments in MD](https://stackoverflow.com/questions/4823468/comments-in-markdown)
