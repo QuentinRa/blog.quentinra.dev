@@ -128,6 +128,30 @@ a lot of asserts such as ``assertTrue(a_condition_here)``.
 Check out you language course now and we may have explained
 how to do some tests in this language.
 
+## Test-driven development (TDD)
+
+You will write tests, then code and try to pass one test.
+Then pass another, ... until all of them passed.
+
+This may look like something easy, but you need 
+
+* to think about your tests
+* while not having any classes, methods, ... at hand
+
+To do some efficient TDD, you may
+
+1. write some UML, like a class diagram or use Model-driven
+   (check UML course) to write a good class diagram
+2. write your tests easily since you got the structure
+3. just repeat the usual tests
+
+    1. code a method
+    2. run tests, one less fail after each run
+    3. optimize your code
+    
+And then you will end speeding your developments
+because you suffered at the beginning doing some UML.
+
 ## Sources
 
 * Florent MADELAINE ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
