@@ -43,5 +43,51 @@ Here some good practices before starting.
 You are literally writing some code while making the contract
 with the caller that ``if the program (arguments, ...)
 is in a correct state then after running this code it will
-still be in a correct state``.
+still be in a correct state`` : that's the contact.
 
+So you might see one of theses words often
+
+* ``preconditions`` : everything is correct before the call
+  (attributes, parameters, ...)
+* ``postconditions`` : we are assert theses after the execution
+of our code
+* ``invariant`` : something that won't be changed such as
+counting elements in a list won't change the size of the list
+  
+You will have remember theses while analysis your code to find
+some tests. The robustness of a function is determined by the number
+of preconditions that you verified in order to make sure that
+in all cases your preconditions are valid.
+
+## Defensive programming
+
+As see above, we are depending on the fact that some
+``preconditions`` are set in order for your contact
+to work. As a defensive programmer, you should
+**always** test and assert that your preconditions
+are correct.
+
+* check for ``null``
+* check for range (rgb : [0,255] but that may be an int)
+* check for size, type, ...
+* check for runtime conditions (is login called
+  before logout?)
+  
+As a programmer, you should use some constants
+like ``A_CONSTANT`` or an `enum` and not write
+``"a value"`` or `5` in your code as MOST of people do.
+
+Remember the rules
+
+* do not trust other programmers
+* do not trust the rest of the code
+* do not trust data from the user
+* do not trust anyone
+
+## Find tests
+
+The parts above are useful to understand about preconditions
+and postconditions. That should help you test your code. Remember
+that you must test 
+* good scenarios
+* bad scenarios
