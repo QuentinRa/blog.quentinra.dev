@@ -100,10 +100,26 @@ for those that were uploading their files each time they changed
 on a server.
 
 * [Remote working](phpstorm/remote.md)
+* [Launch website](phpstorm/start.md)
 
 ## IDE : CLion
 
-...
+Examples of cases where you might be using it
+
+* code in ``C``
+* code in ``C++``
+
+Like PhpStorm, you can use a remote compiler to compile your code
+or use a local one.
+
+Using the basic configuration, you will have to use 
+``CMake`` to compile but `Makefile` are supported, if you
+manage to.
+
+* [Starting with CMake](clion/cmake.md)
+* [Set compiler](clion/compiler.md)
+* [Remote working](clion/remote.md)
+* [Debug](clion/debug.md)
 
 ## Sources
 
