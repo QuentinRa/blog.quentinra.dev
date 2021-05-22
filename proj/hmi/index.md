@@ -74,6 +74,88 @@ OR you can follows theses steps
     1. test and reviews by users
     2. filter changes to be made 
     3. implement one or more changes
+    
+## Jakob Nielsen
+
+Because if you need more than a bit of theory,
+Jakob Nielsen wrote the **10 principles** that
+you MUST take into account.
+
+1. keep the user updated on what's happening
+
+   > * if something is being loaded, ... tell it to the user.
+   > * the user should know the page where he is
+   > * buttons should have a change when hovered
+
+2. Do not do something complex, follow the conventions
+
+   > * close is a the top-right
+   > * Skeuomorph design : we are expecting a online book
+   > to work like a real book
+
+3. Let the user be free
+
+   > * allow the user to cancel an action
+   > * user must see they can escape
+
+4. Norms, directives, habits
+
+   > * we are expecting in a family of software
+   > to be similar
+   > * we are expecting a 🛒 shopping cart on a marketing
+   > website to see the list of our items
+
+5. Prevents errors
+
+   > * do not let the user make mistakes, you should
+   > code or use the right input fields if you expect
+   > some value.
+   > * asking the user confirmation might also
+   > be a good practice.
+   > * you should add a little of help or a message
+   > saying what you are expecting
+
+6. Users shouldn't need to learn
+
+   > A MCQ is easier that an open question... Make it
+   > so that the user can remember something instead
+   > of learning it like using some kind of style
+   > or tips.
+
+7. Flexibility
+
+   > * make it easy to learn
+   > * and easy for pros to skip some steps, for example
+   > using shortcuts.
+
+8. Aesthetic
+
+   > Do not write hundred of words, add useless images, ...
+   > to say something that
+   > would require less than five. Be clear, short and
+   > concise.
+
+9. Robustness
+
+   > Handles all cases of errors or mistakes.
+
+10. Documentation
+
+    > In last resort, adding some documentation
+    > for complex applications is the way to go.
+
+## Last tips
+
+It may be better to load everything needed at the start
+of the application rather that using `lazy` practices
+and making the user wait a lot of times.
+
+Screens will most likely be larger rather that longer
+so you should exploit the width.
+
+If you need more that 3 clicks to do one action, and
+you do this action ofter then you MUST re-think your
+interface.
 
 ## Sources
 
