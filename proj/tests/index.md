@@ -152,6 +152,25 @@ To do some efficient TDD, you may
 And then you will end speeding your developments
 because you suffered at the beginning doing some UML.
 
+## Behavior driven development (BDD)
+
+Usually done before TDD but not really a lot of people do
+know of this one. You can use this extreme-development method
+to think a bit more about your functions before coding.
+
+* ``Given`` an action done by the user
+* ``When`` I do this action
+* ``Then`` I will do this code
+* ``And`` ... will happens.
+
+You do that for all functionalities, normal and error cases
+and you might find some things that you may have missed. You need
+to think
+
+* what my function should do ?
+* do adding my function will really answer what we want ?
+* what problems adding my function might cause ?
+
 ## Sources
 
 * Florent MADELAINE ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
