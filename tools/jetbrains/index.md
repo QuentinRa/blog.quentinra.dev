@@ -81,6 +81,8 @@ One thing to note is the menu `Project structure`
 * change your module configuration (set source folder, tests folder, output folder, ...)
 * add libraries (such as JUnit4, ...)
 
+Then some tutorials
+
 * [Run](idea/run.md)
 * [Run tests](idea/tests.md)
 * [Project Structure](idea/project-structure.md)
