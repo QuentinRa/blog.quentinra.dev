@@ -91,3 +91,53 @@ and postconditions. That should help you test your code. Remember
 that you must test 
 * good scenarios
 * bad scenarios
+
+Here is the **RightBicep** help
+
+* ``Right`` : is result ok, work done ?
+* ``B`` : see **CORRECT**
+* ``I`` : if we have a reverse method then try testing
+your code with it
+* ``C`` : test using others methods
+* ``E`` : test errors
+* ``P`` : test performances
+
+And **CORRECT**
+
+* ``C`` : Conform (arguments are ok)
+* ``O`` : Order (in the right order)
+* ``R`` : Range
+* ``R`` : Reference (method reference some external code?)
+* ``E`` : Empty (null)
+* ``C`` : Cardinal (if changing size, still working?)
+* ``T`` : time (logout called before login?)
+
+Theses are the main questions/topics that you might
+want to check.
+
+## How should I code tests ?
+
+We will now introduce ce ``assertion`` concept. An assert
+is something that returns true if what we are asserting
+is true, or an error if that's not the case.
+
+Writing tests is usually writing a lot of functions,
+usually called ``test....()`` and inside called
+a lot of asserts such as ``assertTrue(a_condition_here)``.
+
+Check out you language course now and we may have explained
+how to do some tests in this language.
+
+## Sources
+
+* Florent MADELAINE ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
+* Luc HERNANDEZ ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
+* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
+
+References
+
+* <https://luc-hermitte.developpez.com/tutoriels/c++/programmation-par-contrat/partie-1-un-peu-theorie/>
+* <https://julien-blanc.developpez.com/articles/cpp/Programmation_par_contrat_cplusplus/>
+* <https://www.developpez.com/actu/109767/Quelques-points-cles-sur-la-programmation-defensive-destinee-a-assurer-la-fonction-continue-d-un-logiciel-dans-des-circonstances-imprevues/>
+* <https://openclassrooms.com/fr/courses/3504461-testez-linterface-de-votre-site/4270561-pourquoi-ecrire-des-tests>
+* <https://duckduckgo.com/?q=d%C3%A9veloppement+pilot%C3%A9+par+les+tests&ia=web&atb=v230-1>
