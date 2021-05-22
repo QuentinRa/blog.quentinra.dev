@@ -5,7 +5,7 @@
 Before everything, you need to know
 
 * that each process have a ``pid``, short for
-process ID et will be used to kill it for instance :)
+process ID and will be used to kill it for instance :)
 * when starting a program, the main is run is a process
 meaning that the number of processes is 1 by default.
   
@@ -18,8 +18,9 @@ You may use theses libraries
 
 ### Create a process
 
-Use ``fork``. For is a function that will duplicate
-the father. The code following the ``fork`` will
+Use ``fork``. It's a function that will duplicate
+the father in order to create a new process.
+So the code following the ``fork`` will
 be run in the father and in the son.
 
 ```c

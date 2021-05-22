@@ -39,7 +39,50 @@ Please take note that ``wait`` returns `-1` if there
 isn't anymore a process that we can wait for, so you can
 make a loop while `while(wait(NULL) != -1);` for instance.
 
+### Example
+
+Comments are in french but still you
+should be able to understand.
+
+```c
+#include<sys/types.h>
+#include<sys/wait.h>
+#include<unistd.h>
+
+int main(void){
+ if(fork() != 0){ // we should handle -1 case
+  print("1. We are in the son\n");
+ } else {
+  wait(NULL); // wait for the son to write then die
+  printf("2. We are in the father\n"); // then print ours
+ }
+ printf("My pid is %d\n",  getpid()); // in both father and son
+ return 0;
+}
+```
+
+Try to guess the result !
+
+<p>
+  <button class="btn btn-dark" type="button" data-bs-target="#result1" data-bs-toggle="collapse" aria-expanded="false">
+    Show result
+  </button>
+</p>
+<div class="collapse" id="result1">
+<pre>
+<code class="language-none">
+1. We are in the son &lt;CR&gt;
+My pid is 27892 &lt;CR&gt;
+2. We are in the father &lt;CR&gt;
+My pid is 27891 &lt;CR&gt;
+</code>
+</pre>
+</div>
+
 ### Exploiting status and waitpid
+
+**Note** : you may pass this section unless
+you need right now to use status.
 
 First of all, wait is an alias of ``waitpid(-1, &status, 0)``.
 We will now explain ``waitpid``.
@@ -64,47 +107,16 @@ try to guess the value inside using code like
 
 * ``if(a_is_function(status)){ a_get_function(status) }``
 * the main idea is asking first : is my value
-of this kind of value
-  
-    * ``WIFEXITED(status)`` : true if normal exit
-    * ``WIFSIGNALED(status)`` : true if killed by a signal
-    * ``WCOREDUMP(status)`` : true if killed by a core dump
-    * ``WIFSTOPPED(status)`` : true if got stopped
-    * ``WIFCONTINUED(status)`` : true if restarted
-    
+  of this kind of value
+
+  * ``WIFEXITED(status)`` : true if normal exit
+  * ``WIFSIGNALED(status)`` : true if killed by a signal
+  * ``WCOREDUMP(status)`` : true if killed by a core dump
+  * ``WIFSTOPPED(status)`` : true if got stopped
+  * ``WIFCONTINUED(status)`` : true if restarted
+
 * then you can use a getter to get the value
 
-    * ``WEXITSTATUS(status)`` : exit code
-    * ``WTERMSIG(status)`` : signal code
-    * ``WSTOPSIG(status)`` : stop signal code
-
-### Example
-
-Comments are in french but still you
-should be able to understand.
-
-```c
-#include<sys/types.h>
-#include<sys/wait.h>
-#include<unistd.h>
-
-int main(void){
- if(fork() == 0){ // on devrait vérifier le cas == -1 donc échec
-  print("1. On est dans le fils\n");
- } else {
-  wait(NULL); // on attends que le fils affiche ses messages
-  printf("2. On est dans le père\n"); // on continue le code du père
- }
- printf("mon pid est %d\n",  getpid()); // cette ligne est affichée dans le fils et le père
- return 0;
-}
-```
-
-Result
-
-```
-1. On est dans le fils <CR>
-mon pid est 27892 <CR>
-2. On est dans le père <CR>
-mon pid est 27891 <CR>
-```
+  * ``WEXITSTATUS(status)`` : exit code
+  * ``WTERMSIG(status)`` : signal code
+  * ``WSTOPSIG(status)`` : stop signal code
