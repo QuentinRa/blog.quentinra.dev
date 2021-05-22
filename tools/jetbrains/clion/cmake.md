@@ -30,3 +30,19 @@ and you can
 if you want to try to build/run using different
 configurations but that should not be the case most
 of the time).
+
+## Using pthread
+
+<https://stackoverflow.com/questions/1620918/cmake-and-libpthread>
+
+```cmake
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package(Threads REQUIRED)
+target_link_libraries(my_app PRIVATE Threads::Threads)
+```
+
+## Include a folder of *.h
+
+```cmake
+include_directories(path/to/folder)
+```
