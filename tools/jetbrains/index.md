@@ -66,7 +66,24 @@ to see a quick fix of it.
 
 ## IDE : IntelliJ IDEA
 
-...
+Examples of cases where you might be using it
+
+* code in ``Java`` (with or not with `Gradle` and `Maven`)
+* code in ``Kotlin``
+* code in ``R`` (with a plugin)
+* code in ``OCaml`` (with a plugin)
+* code in ``JavaFX`` and with Scene builder
+
+One thing to note is the menu `Project structure`
+(`CTRL+ALT+MAJ+S`). You can 
+
+* change you JDK
+* change your module configuration (set source folder, tests folder, output folder, ...)
+* add libraries (such as JUnit4, ...)
+
+* [Run](idea/run.md)
+* [Run tests](idea/tests.md)
+* [Project Structure](idea/project-structure.md)
 
 ## IDE : PHPStorm
 
