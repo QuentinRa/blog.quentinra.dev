@@ -23,3 +23,30 @@ Client requested a frame for a desktop application
 And split again, until each task can be done in some hours.
 
 You will manage all of theses task in your ``Sprint backlog``.
+
+## Evaluates the time
+
+Sometimes, we put the time needed in order to do a task on it. 
+A little game is to ask everyone to write on a paper
+how much time they thing a task will take, then the
+average value may be used as an answer. 
+
+The list of values must be set, like
+
+* 0
+* 1/2
+* 1
+* 2
+* 3
+* 5
+* 8
+* 13
+* 20
+* 40
+* 100
+* ?
+* inf.
+
+unit is up to your liking. If you have a hard time giving a value, then
+instead a using values, ask peoples to sort the tasks
+because that should be possible 2 by 2.
