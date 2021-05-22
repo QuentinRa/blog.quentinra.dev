@@ -1,4 +1,4 @@
-# Flyweight
+# Object pool
 
 [Go back](..)
 

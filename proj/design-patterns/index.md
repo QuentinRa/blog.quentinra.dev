@@ -52,7 +52,7 @@ this one.
 * [Decorator](structure/decorator.md)
   : Wrapper of a class to change a part of it,
   alternative to legacy with extends.
-* [Flyweight](structure/flyweight.md)
+* Flyweight
   : If you got a lot lot lot of objects then you can
   use the flyweight.
 * [Proxy](structure/proxy.md)
