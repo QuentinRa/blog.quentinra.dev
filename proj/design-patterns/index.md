@@ -24,63 +24,67 @@ this one.
 ## Creation
 
 * [Factory](creation/factory.md)
-  : test
+  : Delegate construction to a factory class (`Truc t = Factory.createTruc()`)
 * [AbstractFactory](creation/abstract-factory.md)
-  : test
+  : A factory of factories.
 * [Singleton](creation/singleton.md)
-  : test
+  : Only one instance of a class
 * [Multiton](creation/multiton.md)
-  : test
+  : Only n instances of a class
 * [Prototype](creation/prototype.md)
-  : test
+  : Clone instead of creating complex objects
 * [Builder](creation/builder.md)
-  : test
+  : Break object creation into modules
 * Object Pool
-  : test
+  : Create a finite pool of objects, allow others
+  classes to use them, then handles to cleaning afterwards.
 
 ## Structure
 
 * [Adaptor](structure/adaptor.md)
-  : test
+  : Interface that the client wanted with our code and the client
 * [Facade](structure/facade.md)
-  : test
+  : simplified API to use our code
 * [Composite](structure/composite.md)
-  : test
+  : Abstract class implemented by children
 * [Bridge](structure/bridge.md)
-  : test
+  : Interact with interfaces rather than concrete implementations
 * [Decorator](structure/decorator.md)
-  : test
+  : Wrapper of a class to change a part of it,
+  alternative to legacy with extends.
 * [Flyweight](structure/flyweight.md)
-  : test
+  : If you got a lot lot lot of objects then you can
+  use the flyweight.
 * [Proxy](structure/proxy.md)
-  : test
+  : call a remote object or use an attribute of
+  a subclass to prevent yourself from coding some methods.
 
 ## Behaviour
 
 * [Chain of Responsibility](behaviour/chain-of-reponsibility.md)
-  : test
+  : Lists of class me may trigger for an action
 * [Iterator](behaviour/iterator.md)
-  : test
+  : Iterates a list of Unknowns items
 * [Observable](behaviour/observable.md)
-  : test
+  : watch object changes and trigger events
 * [Memento](behaviour/memento.md)
-  : test
+  : save and load objects
 * [NullObject](behaviour/null-object.md)
-  : test
+  : an empty object
 * [Command](behaviour/command.md)
-  : test
+  : break into class the one using the command and the command
 * [Interpreter](behaviour/interpreter.md)
-  : test
+  : language parser
 * [Template](behaviour/template.md)
-  : test
+  : define classes properties
 * [State](behaviour/state.md)
-  : test
+  : change object behaviour according to state
 * [Strategy](behaviour/strategy.md)
-  : test
+  : family of objects
 * [Visitor](behaviour/visitor.md)
-  : test
+  : object change according to visitor
 * [Mediator](behaviour/mediator.md)
-  : test
+  : relation between classes
 
 ## Architectural
 
