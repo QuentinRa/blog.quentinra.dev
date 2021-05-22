@@ -34,13 +34,46 @@ or make optimal choices : [optimalworkshop](https://www.optimalworkshop.com/).
 
 ## Users
 
-...
+Before coding some application, one must think about the
+future users
+
+* lang/country
+* age
+* colour-blind, partially sighted ...
+* culture
+* devices (computer ? keyboard ? mouse ?)
+* screen orientation, size on tablet/phone
+* day/night mode
+* knowledge about computer/...
+* illiterate ?
+
+You can't make something that would be perfect and good for everyone
+but try to make some categories of users and provide them
+an application that would aim to satisfy most of their
+requests.
 
 ## Steps
 
-...
+1. create some categories of users
+2. ask some real persons matching your categories
+where they would go to find XXX in the menus, ...
+in order to test your interface.
+3. create some ``UML`` diagrams to formalize
+the interactions between the application and users
+4. make a static mockup
+5. test your mockup
+6. make a dynamic mockup (links working, some code, ...)
+7. test again
 
+OR you can follows theses steps
 
+1. categories of users / tests on some users
+2. create a dynamic mockup
+3. and repeat theses steps
+
+    1. test and reviews by users
+    2. filter changes to be made 
+    3. implement one or more changes
 
 ## Sources
 
