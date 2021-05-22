@@ -61,7 +61,7 @@ this one.
 
 ## Behaviour
 
-* [Chain of Responsibility](behaviour/chain-of-reponsibility.md)
+* [Chain of Responsibility](behaviour/chain-of-responsibility.md)
   : Lists of class me may trigger for an action
 * [Iterator](behaviour/iterator.md)
   : Iterates a list of Unknowns items
