@@ -89,7 +89,17 @@ Then some tutorials
 
 ## IDE : PHPStorm
 
-...
+Examples of cases where you might be using it
+
+* code in ``PHP``
+* code in ``HTML/CSS/JS`` or ``Boostrap`` (but WebStorm might be wiser)
+* code in ``Node.js``
+
+Please not that you can directly code on a server, that may be useful
+for those that were uploading their files each time they changed
+on a server.
+
+* [Remote working](phpstorm/remote.md)
 
 ## IDE : CLion
 
