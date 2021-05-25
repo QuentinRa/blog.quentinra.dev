@@ -41,9 +41,9 @@ was not really useful
 </p>
 
 <div class="mb-3">
-<span>\( x=10^{-6} \)</span> <br>
-<span>\( y=2*10^{-6} \)</span> <br>
-<span>\( |x-y|=10^{-6}= \text{small error but y is two times x !!!} \)</span>
+\[ \displaylines{
+x=10^{-6}\\ y=2*10^{-6} \\ 
+|x-y|=10^{-6}= \text{small error but y is two times x !!!}} \]
 </div>
 
 <p>So we are using the <code>relative value</code>
@@ -53,12 +53,36 @@ and we have
 .
 </p> 
 
-We will call theses ``norms`` using this syntax
+* [Write norms](norms/basic.md)
+* [Condition number](norms/cond.md)
 
-<ul>
-    <li>\(\mid  \cdot \mid \) : norm of a real/complex</li>
-    <li>\(\mid\mid \cdot \mid\mid\) : norm of a vector</li>
-    <li>\(\mid\mid\mid \cdot \mid\mid\mid\) : norm of a matrix</li>
-</ul>
+## Direct methods
+
+Calculations are made in one go.
+
+* [Cramer formula](direct/cramer.md)
+* [triangular system](direct/triangular.md)
+* [Cholesky factorization](direct/cholesky.md)
+* [Gauss method](direct/gauss.md)
+* [LU factorization](direct/lu.md)
+
+## Iterative methods
+
+<p>
+We will iterates some process and try to have our
+values \( x^{(k)} \)  converging to our real values.
+In most case, we stop when
+\(
+\frac{|| A x^{(k)} - b ||}{||b||} \le \epsilon
+\)
+with epsilon our error. It's a positive value, usually set
+as <b>0.001</b>.
+</p>
+
+* [Jacobi method](iterative/jacobi.md)
+* [Gauss seidel method](iterative/gauss-seidel.md)
+* [SOR method](iterative/sor.md)
+
+## Differentials methods
 
 ...
