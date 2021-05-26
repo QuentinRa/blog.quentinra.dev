@@ -51,7 +51,7 @@ this one.
   : Interact with interfaces rather than concrete implementations
 * [Decorator](structure/decorator.md)
   : Wrapper of a class to change a part of it,
-  alternative to legacy with extends.
+  alternative to inheritance.
 * Flyweight
   : If you got a lot lot lot of objects then you can
   use the flyweight.
@@ -93,6 +93,54 @@ this one.
 * DAO
   : DAO (data access objet)
   
+## Exercice
+
+1. I'm using a listener (a class listening to events like input...)
+``ListChangeListener`` with `onChanged` in Java.
+   
+<blockquote class="spoiler">
+That's the <code>Observer/Observable</code> pattern since
+we <code>watch object changes and trigger events</code>.
+</blockquote>
+
+2. A class ``Group`` extending `Figures` containing
+a lot of ``Figures``.
+
+<blockquote class="spoiler">
+That's the <code>Composite</code> pattern with
+<code>Figures</code> abstract implemented by
+<code>Group</code> and others <code>Figures</code>.
+</blockquote>
+
+3. An alternative to inheritance
+
+<blockquote class="spoiler">
+That's <code>Decorator</code> pattern.
+</blockquote>
+
+4. A concrete class calling abstract methods implemented in sub-classes
+
+<blockquote class="spoiler">
+That's <code>Template (method)</code> pattern. You will define some properties
+in an abstract class that will be used by concrete classes.
+</blockquote>
+
+5. A private attribute having the type of the class and a class method
+to get the attribute value.
+
+<blockquote class="spoiler">
+That's <code>Singleton</code> pattern.
+</blockquote>
+
+6. In ``Java``, `Collection<E>` defines a method `Iterator<E> iterator()`
+allowing to iterates concrete collections.
+
+<blockquote class="spoiler">
+That's <code>Iterator</code> pattern if we are using it otherwise it would be
+a <code>Factory</code> pattern (since we are creating concrete
+iterators that are hiding using Iterator class).
+</blockquote>
+
 ## Sources
 
 * Florent MADELAINE ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
