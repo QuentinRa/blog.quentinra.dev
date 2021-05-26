@@ -56,3 +56,82 @@ L_{33} = \begin{pmatrix}
 </div>
 
 And that's it.
+
+## Example
+
+Demonstrate that this matrix admit a LU factorization
+and give it.
+
+<p>
+\[
+A = \begin{pmatrix}
+3 & 6 & 9 \\
+-6 & -10 & -13 \\
+-9 & -22 & -36 \\
+\end{pmatrix}
+\]
+</p>
+
+**Checks**
+
+* <span>
+        \( d1 = 3 > 0 \) </span>
+* <span>
+        \( d2 = 3 * -10 - 6 * -6 = -30+36 = 6 > 0 \) </span>
+* <span class="row w-100 overflow-auto">
+        \(
+            d3 = 3 * (-10 * -36 - -13 * -22)
+            - -6 * (6 * -36 - 9 * -22) + 
+            -9 * (6 * -13 - 9 * -10)
+            = 222 - 108 - 108 = 6 > 0
+        \)</span>
+
+* and d3 != 0 so invertible
+
+**Find**
+
+Apply GAUSS find find U. Some steps here...
+
+<blockquote class="spoiler overflow-auto">
+\[
+U = \begin{pmatrix}
+3 & 6 & 9 \\
+-6 & -10 & -13 \\
+-9 & -22 & -36 \\
+\end{pmatrix}
+\Leftrightarrow
+\begin{pmatrix}
+3 & 6 & 9 \\
+0 & 2 & 5 \\
+0 & -4 & -9 \\
+\end{pmatrix}
+\Leftrightarrow
+\begin{pmatrix}
+3 & 6 & 9 \\
+0 & 2 & 5 \\
+0 & 0 & 1 \\
+\end{pmatrix}
+\]
+
+My steps were
+<ol>
+<li>Line2 + 2 * Line1 = Line2 - <b>k=-2</b> * Line1</li>
+<li>Line3 + 3 * Line1 = Line2 - <b>k=-3</b> * Line1</li>
+<li>Line3 + 2 * Line2 = Line3 - <b>k=-2</b> * Line2</li>
+</ol>
+</blockquote>
+
+So we got our L
+
+<blockquote class="spoiler overflow-auto">
+\[
+L = \begin{pmatrix}
+1 & 0 & 0 \\
+-2 & 1 & 0 \\
+-3 & -2 & 1 \\
+\end{pmatrix}
+\]
+
+using the k we used in U, at the place where we replaced
+the value by 0.
+</blockquote>

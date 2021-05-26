@@ -154,25 +154,25 @@ some steps here...
 1 & 3 & 0 & -9\\
 1 & 2 & 4 & -20\\
 \end{pmatrix}
-=
+\Leftrightarrow 
 \begin{pmatrix}
 1 & 0 & 0 & 6 \\
 0 & 3 & 0 & -15\\
 0 & 2 & 4 & -26\\
 \end{pmatrix}
-=
+\Leftrightarrow 
 \begin{pmatrix}
 1 & 0 & 0 & 6 \\
 0 & 1 & 0 & -5\\
 0 & 2 & 4 & -26\\
 \end{pmatrix}
-=
+\Leftrightarrow 
 \begin{pmatrix}
 1 & 0 & 0 & 6 \\
 0 & 1 & 0 & -5\\
 0 & 0 & 4 & -16\\
 \end{pmatrix}
-=
+\Leftrightarrow 
 \begin{pmatrix}
 1 & 0 & 0 & 6 \\
 0 & 1 & 0 & -5\\
