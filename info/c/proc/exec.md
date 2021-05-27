@@ -39,7 +39,7 @@ must be the name of your program. Check the example bellow.
 ```c
 // calls "ls -la ."
 int main(void){
-    // i didn't forget "ls"
+    // I didn't forget "ls"
     // and NULL at the end since I use a list
     execl("/bin/ls", "ls", "-la", ".", NULL);
     perror("exec failed"); // should not appends
