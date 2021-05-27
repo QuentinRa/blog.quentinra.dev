@@ -102,7 +102,8 @@ Jacobi formula is
   \[
     \displaylines{
       \begin{align}\begin{aligned}
-    x^{k+1} = D^{-1} * ( b - (L + U) * x^k) 
+    x^{k+1}
+    \Leftrightarrow D^{-1} * (L + U) * x^k + D^{-1} * b
     \end{aligned}\end{align}
     }
   \]
@@ -113,9 +114,8 @@ with
 * b, that's the b in Ax=b
 * x, the result, after k iterations
 * D, a diagonal matrix
-* L, a upper triangular matrix
-* U, a lower triangular matrix
+* L, a upper triangular matrix, multiplied by -1
+* U, a lower triangular matrix, multiplied by -1
 
-and L+U is a matrix having only 0 on the diagonal. So
-we simply break our matrix in 3 matrix and apply
-the formula.
+In other words, **A = D - L - U**. Beware of this before
+writing a formula, some are using plus instead of minus.

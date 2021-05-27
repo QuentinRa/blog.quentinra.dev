@@ -80,7 +80,7 @@ Gauss-seidel formula is
   \[
     \displaylines{
       \begin{align}\begin{aligned}
-    x^{k+1} = L^{-1} * (b - U * x^{k})
+    x^{k+1} = (D-L)^{-1} * (b + U * x^{k})
     \end{aligned}\end{align}
     }
   \]
@@ -90,4 +90,9 @@ with
 
 * b, that's the b in Ax=b
 * x, the result, after k iterations
-* L and U are the LU decomposition of A
+* D, a diagonal matrix
+* L, a upper triangular matrix, multiplied by -1
+* U, a lower triangular matrix, multiplied by -1
+
+In other words, **A = D - L - U**. Beware of this before
+writing a formula, some are using plus instead of minus.
