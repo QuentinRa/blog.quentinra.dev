@@ -87,3 +87,20 @@ as <b>0.001</b>.
 ## Differentials methods
 
 ...
+
+## Sources
+
+Credits
+* Vicent Torri ([ENSIIE](https://www.ensiie.fr/) teacher)
+* Christophe MOUILLERON ([ENSIIE](https://www.ensiie.fr/) teacher)
+* Quentin RAMSAMY--AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
+
+References
+
+* <https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Analyse_num%C3%A9rique>
+* <http://math.univ-bpclermont.fr/~cindea/blog/post/intro-ana-num-interet/>
+* <https://www.math.univ-paris13.fr/~halpern/teaching/MACS1_2010/systemes.pdf>
+* <https://www.i2m.univ-amu.fr/perso/thierry.gallouet/licence.d/anum.d/anum-tg2.pdf>
+* <https://www3.nd.edu/~zxu2/acms40390F12/Lec-7.3.pdf>
+* <https://www.dcode.fr/norme-vecteur>
+* <http://bibmath.net/dico/index.php?action=affiche&quoi=./r/relaxation.html>
