@@ -67,7 +67,7 @@ tend to converge, here (i=10) to
 * y = 0.33
 * z = -0.422
 
-We can stop.
+so we can stop.
 
 ## Code this in R
 
@@ -94,3 +94,28 @@ for (i in 0:10) {
   print(v)
 }
 ```
+
+## More theoretically
+
+Jacobi formula is
+<div>
+  \[
+    \displaylines{
+      \begin{align}\begin{aligned}
+    x^{k+1} = D^{-1} * ( b - (L + U) * x^k) 
+    \end{aligned}\end{align}
+    }
+  \]
+</div>
+
+with
+
+* b, that's the b in Ax=b
+* x, the result, after k iterations
+* D, a diagonal matrix
+* L, a upper triangular matrix
+* U, a lower triangular matrix
+
+and L+U is a matrix having only 0 on the diagonal. So
+we simply break our matrix in 3 matrix and apply
+the formula.
