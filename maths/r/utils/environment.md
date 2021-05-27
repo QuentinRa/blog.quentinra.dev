@@ -29,3 +29,20 @@ rm(list = ls())
 
 You can use that or use your IDE to check what
 variables, functions, ... got created.
+
+That should not be used since you are using an IDE
+but well just in case
+
+```r
+# print all variables values
+
+for (i in ls()) { print(paste(i,"=",eval(as.symbol(i)))) }
+# [1] "i = i"
+# [1] "x = 5"
+# [1] "y = y"
+# [1] "z = 0.53"
+
+# or
+# using R functions
+# sapply(ls(), function (i) { paste(i,"=",eval(as.symbol(i))) }  )
+```
