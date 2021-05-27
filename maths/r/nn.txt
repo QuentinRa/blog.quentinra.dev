@@ -1,0 +1,6 @@
+La fonction data() permet d’afficher la liste de tous les jeux de données disponibles ou d’en charger un.
+
+Une dernière chose, vous allez généralement voir des fonctions et des variables de la forme binom.test par
+ exemple. C’est quelque chose que l’on fait très souvent pour facilement identifier les variables (donc faites le),
+  dans le cas des fonctions par contre, c’est généralement lié à la généricité (non abordée, voir ?formula).
+  Pour voir les spécialisations/dérivations/généralisations d’une fonction, utilisez methods("nom").
