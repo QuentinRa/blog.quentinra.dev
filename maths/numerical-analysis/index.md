@@ -105,3 +105,4 @@ References
 * <https://www.dcode.fr/norme-vecteur>
 * <http://bibmath.net/dico/index.php?action=affiche&quoi=./r/relaxation.html>
 * <https://www.sciencedirect.com/topics/engineering/gauss-seidel-method>
+* <https://mathworld.wolfram.com/topics/RelaxationMethods.html>
