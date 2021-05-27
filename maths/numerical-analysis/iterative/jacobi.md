@@ -11,7 +11,7 @@ method.
     \)</span>
 * <span>
     \(
-        y_{n+1}(x, y, z) = \frac{2 + 3 * x + z}{9}
+        y_{n+1}(x, y, z) = \frac{2 + 3 * x - z}{9}
     \)</span>
 * <span>
     \(
@@ -36,29 +36,38 @@ in some cases you can start with something else.
         <tr>
             <td>x</td>
             <td>0</td>
-            <td>xn+1(0,0,0) = ???</td>
-            <td>xn+1(0,0,0) = ???</td>
-            <td>xn+1(0,0,0) = ???</td>
+            <td>xn+1(0,0,0) = -0.20</td>
+            <td>xn+1(-0.2,0.22,-0.43) = 0.15</td>
+            <td>xn+1(0.15,0.2,-0.52) = 0.19</td>
             <td>...</td>
         </tr>
         <tr>
             <td>y</td>
             <td>0</td>
-            <td>yn+1(0,0,0) = ???</td>
-            <td>yn+1(0,0,0) = ???</td>
-            <td>yn+1(0,0,0) = ???</td>
+            <td>yn+1(0,0,0) = 0.22</td>
+            <td>yn+1(-0.2,0.22,-0.43) = 0.2</td>
+            <td>yn+1(0.15,0.2,-0.52) = 0.33</td>
             <td>...</td>
         </tr>
         <tr>
             <td>z</td>
             <td>0</td>
-            <td>zn+1(0,0,0) = ???</td>
-            <td>zn+1(0,0,0) = ???</td>
-            <td>zn+1(0,0,0) = ???</td>
+            <td>zn+1(0,0,0) = -0.43</td>
+            <td>zn+1(-0.2,0.22,-0.43) = -0.52</td>
+            <td>zn+1(0.15,0.2,-0.52) = -0.42</td>
             <td>...</td>
         </tr>
     </tbody>
 </table>
+
+We can do it a lot of times but when we are seing that values
+tend to converge, here (i=10) to
+
+* x = 0.186
+* y = 0.33
+* z = -0.422
+
+We can stop.
 
 ## Code this in R
 
@@ -68,7 +77,7 @@ the convergence instead of doing ``n=10`` iterations.
 ```r
 # our functions
 xnp1 <- function (x, y, z) { (-1 + 2 * y - 3 * z) / 5  }
-ynp1 <- function (x, y, z) { (2 + 3 * x + z ) / 9 }
+ynp1 <- function (x, y, z) { (2 + 3 * x - z ) / 9 }
 znp1 <- function (x, y, z) { (3 - 2 * x + y) / -7  }
 
 # initial values
