@@ -79,6 +79,7 @@ with epsilon our error. It's a positive value, usually set
 as <b>0.001</b>.
 </p>
 
+* [How we will do](iterative/how.md)
 * [Jacobi method](iterative/jacobi.md)
 * [Gauss seidel method](iterative/gauss-seidel.md)
 * [SOR method](iterative/sor.md)
