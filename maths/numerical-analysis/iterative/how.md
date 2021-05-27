@@ -7,42 +7,14 @@ wants to explain it with maths formula, just do it with
 edit button.
 
 We will be starting from a system that will be given
-to us. We are starting here with a matrix but that's
-the same as you should know.
-
-<p>
-\[
-A = \begin{pmatrix}
-1 & 2 & 2 & 1 \\
-1 & 2 & 1 & 0 \\
-0 & 1 & 2 & 2 \\
-1 & 2 & 1 & 2 \\
-\end{pmatrix}
-\]
-</p>
-
-and
-
-<p>
-\[
-b = \begin{pmatrix}
-1 \\
-1 \\
-1 \\
-1 \\
-\end{pmatrix}
-\]
-</p>
-
-that is from this system
+to us. 
 
 <p>
 \[
 \begin{cases}
-x + 2y + 2z + t & = 1\\
-x + 2y + z + 0 & = 1\\
-0 + y + 2z + 2t & = 1 \\
-x + 2y + z + 2t & = 1 \\
+5x - 2y + 3z& = -1\\
+-3x + 9y + z& = 2\\
+2x - y - 7z& = 3\\
 \end{cases} 
 \]
 </p>
@@ -53,19 +25,15 @@ like this
 
 * <span>
     \(
-        x = 1 - 2y - 2z - t
+        x_{n+1}(x, y, z) = \frac{-1 + 2 * y - 3 * z}{5}
     \)</span>
 * <span>
     \(
-        y = \frac{1 - x - z}{2} 
+        y_{n+1}(x, y, z) = \frac{2 + 3 * x - z}{9}
     \)</span>
 * <span>
     \(
-        z = \frac{1 - y - 2t}{2}
-    \)</span>
-* <span>
-    \(
-        t = \frac{1 - x - 2y - z}{2}
+        z_{n+1}(x,y,z) = \frac{3 - 2 * x + y}{-7}
     \)</span>
   
 Just in case you didn't understand, for the first variable
