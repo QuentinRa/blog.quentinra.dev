@@ -2,7 +2,27 @@
 
 [Go back](../index.md)
 
-...
+Everything is the same as in GAUSS-seidel
+method so things won't be as explained. 
+The only difference is that in SOR,
+we are modifying our functions
+``xn+1``, ...
+
+The rest is the same as with GAUSS-seidel.
+We are setting a variable omega to 1.1. This value
+may be given but if not I read that 1.1 is a good value.
+
+So we must rewrite our functions like this
+for x1 function ``xn+1``
+
+<p>
+\[
+x_{n+1}' = w * x_{n+1} + (1 - w) * x1
+\]
+</p>
+
+So the idea is that we simply multiply by omega
+and add one minus omega multiplied by our variable value.
 
 ## More theoretically
 
