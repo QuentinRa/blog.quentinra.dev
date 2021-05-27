@@ -72,3 +72,22 @@ for (i in 0:10) {
   print(v)
 }
 ```
+
+## More theoretically
+
+Gauss-seidel formula is
+<div>
+  \[
+    \displaylines{
+      \begin{align}\begin{aligned}
+    x^{k+1} = L^{-1} * (b - U * x^{k})
+    \end{aligned}\end{align}
+    }
+  \]
+</div>
+
+with
+
+* b, that's the b in Ax=b
+* x, the result, after k iterations
+* L and U are the LU decomposition of A
