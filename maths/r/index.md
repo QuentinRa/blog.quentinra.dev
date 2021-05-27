@@ -29,15 +29,8 @@ simply do
 * install a library : ``install.packages("name")``
 * **load a library** (runtime) : ``library("nom");``
 
-## Particularities
+## Basic course
 
-* weak-typing : R is guessing the type but you got some
-explicit constructors if needed
-* no need to add an "endline" character, but it's
-``;`` if needed
-* comments are made with ``#`` (inline)
-* you can **print** using ``print(value)``
-* **see help for a function** with ``?my_function``
-    * examples with ``examples(my_function)``
-    * args with ``args(my_function)``
-    * source code with ``body(my_function)``
+You can check this fast course
+to learn the basic of R without details [Learn R
+in 5 minutes](5min.md)
