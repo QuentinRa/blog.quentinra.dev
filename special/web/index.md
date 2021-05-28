@@ -98,4 +98,4 @@ for us that's pretty useless.
 
 **Anyone can use this logo so that not something used to show that you passed
 the test, but something that can allow someone to easily check your page
-on W3Validator**. 
+on W3Validator**.
