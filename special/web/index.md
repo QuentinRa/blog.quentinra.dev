@@ -6,18 +6,19 @@ with a url like this ``http://pgsql.pedago.ensiie.fr/~prenom.nom/``.
 
 ## Enable errors
 
+If you don't see any error message, then simply write
+theses line at the beginning of your code.
+
 ```php
 <?php
 
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
-
-$c = new PDO("pgsql:dbname=tpphp;host=pgsql2;port=5432", "tpphp", "tpphp");
 ```
 
 ## Connect to database
 
-Beware that the database is only accessible from the inside.
+**The database is only accessible from the inside**.
 
 ```php
 <?php
