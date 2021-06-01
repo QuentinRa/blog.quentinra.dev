@@ -9,7 +9,7 @@ The form is a class with ``createObject() : A`` where A can be
 * a sub-class of A
 
 meaning the caller won't know exactly what we created. We can easily change
-what's created to that is really useful.
+what's created so that is really useful.
 
 * ➡️ : an exemple would be ``iterator()`` in JAVA
 * ✅ : more flexibility
@@ -17,8 +17,7 @@ what's created to that is really useful.
 
 ## Some java example
 
-Everything is in one file, ONLY because that was convenient as an
-example.
+Everything is in one file, ONLY because that was convenient...
 
 ```java
 // ------------ factory related ------------- //
@@ -44,13 +43,14 @@ public class Game implements UnitCreator {
             case HERO: return new Hero();
             // not done
             case NPC: case MONSTER: default: 
-                throw new IllegalArgumentException("not implemented yey");
+                throw new IllegalArgumentException("not implemented yet");
         }
     }
 
     // test
     public static void main(String[] args) {
         Game game = new Game();
+        // we "don't know" what unit go created
         RPGUnit hero = game.getUnit(UnitName.HERO);
         System.out.println(hero); // Hero
     }

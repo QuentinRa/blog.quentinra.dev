@@ -11,6 +11,8 @@ the number of instances created.
 
 ## Example in java
 
+lazy instantiation
+
 ```java
 public class RpgMaker {
     private static final int MAX_INSTANCE = 5;
@@ -19,7 +21,7 @@ public class RpgMaker {
     // get instance, lazy instantiation
     public static RpgMaker getInstance(int i) {
         // creates
-        if(i > MAX_INSTANCE) throw new IllegalArgumentException("not a valid key");
+        if(i > MAX_INSTANCE || i < 0) throw new IllegalArgumentException("not a valid key");
         if(instance == null){ // creates
             instance = new ArrayList<>();
             for (int j = 0; j < MAX_INSTANCE; j++) {
@@ -34,12 +36,18 @@ public class RpgMaker {
 
 }
 
+```
+
+early instantiation
+
+```java
+
 public class RpgMaker {
     private static final int MAX_INSTANCE = 5;
     // creates, early instantiation
     private static final ArrayList<RpgMaker> instance = new ArrayList<>();
 
-    static {
+    static { // static constructor
         // fill
         for (int j = 0; j < MAX_INSTANCE; j++) {
             instance.add(new RpgMaker());
@@ -49,7 +57,7 @@ public class RpgMaker {
     // get instance
     public static RpgMaker getInstance(int i) {
         // creates
-        if(i > MAX_INSTANCE) throw new IllegalArgumentException("not a valid key");
+        if(i > MAX_INSTANCE || i < 0) throw new IllegalArgumentException("not a valid key");
         return instance.get(i);
     }
 

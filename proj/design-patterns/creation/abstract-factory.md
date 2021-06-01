@@ -31,5 +31,6 @@ should returns a ``AbstractFactory`` for instance
   
 In our code, we won't know
 
-* the factories
-* the concretes units
+* the factories (``MonsterFactory`` and ``HumanFactory ``
+  since we are manipulating ``AbstractFactory``)
+* the concretes units (since we are using factories)

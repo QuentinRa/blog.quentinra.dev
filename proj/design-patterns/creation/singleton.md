@@ -22,6 +22,8 @@ We are initializing our attribute when we are declaring it.
 
 ## Example in Java
 
+lazy instantiation
+
 ```java
 public class RpgMaker {
     private static RpgMaker instance = null;
@@ -36,8 +38,10 @@ public class RpgMaker {
     // private !!!
     private RpgMaker(){}
 }
+```
+early instantiation
 
-// ou
+```java
 
 public class RpgMaker {
     // creates, early instantiation
