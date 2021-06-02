@@ -17,7 +17,7 @@ RUN ["command","arg1","arg2"]
 * ``command`` : a command, is the os-image-specific
 language
 
-**Exemples**
+**Examples**
 
 ```dockerfile
 # install a package called locales
