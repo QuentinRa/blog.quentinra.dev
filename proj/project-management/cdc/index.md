@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-I don't like writing a lot specifications, only what's
+I don't like writing a lot of specifications, only what's
 useful so try to think about those who will read it
 when writing. That's supposed to help them...
 
@@ -28,7 +28,7 @@ Write something for each screen of your application
 of time I think
 * add some constraints (ex: check with some REST
   API that the username is available / ... Pretty
-  much a follow up of the description part.
+  much a follow-up of the description part.
 )
   
 Add the end, you may add a table like this
@@ -64,15 +64,15 @@ Add the end, you may add a table like this
 </tr>
 </table>
 
-With Task1 and Task2 sub tasks of Phase1. (and
+With Task1 and Task2 sub-tasks of Phase1. (and
 d is for days and w for weeks)
 
 ## Technical specifications
 
 * language of the code, frameworks, versions
 * tools for communicating
-* database ?
-* constraints (ex: website working on IE11, Mozilla and Chrome)
+* database?
+* constraints (ex: website working on IE11, Mozilla and, Chrome)
 * services (ex: google analytics)
 * architecture (files/folders, naming, ...)
 * protocols (ex: HTTP, HTTPS, POST, GET, ...)
