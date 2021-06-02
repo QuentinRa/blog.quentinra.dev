@@ -16,11 +16,11 @@ to offer this service, please also check
 
 ## Introduction
 
-Git is a great tools that allows users to work on
+Git is a great tool that allows users to work on
 one project together, by allowing things as
 
-* **commits** : a save of your project
-* **branch** : duplicate your project to continue
+* **commits**: a save of your project
+* **branch**: duplicate your project to continue
 developing without breaking the ``main`` version
 before **merging** all your changes into your
   ``main`` version.
@@ -32,8 +32,8 @@ So first of all, you need to
 
 ## Basic usage
 
-Please take not that all ``commands`` start with
-``git`` then a space.
+Please take note that all ``commands`` start with
+``git`` then one space.
 
 * [Get your repository from server](commands/clone.md)
 * [Update your local version](commands/pull.md)
@@ -66,13 +66,13 @@ git push
 
 ## Main concepts
 
-Here are command that you will use on project
+Here are commands that you will use on a project
 so most likely all the time if you are not working
 alone or for yourself.
 
-* ``git branch name`` : create a branch
-* ``git checkout name`` : move to a branch
-* ``git merge`` : merge current branch with main branch
+* ``git branch name``: create a branch
+* ``git checkout name``: move to a branch
+* ``git merge``: merge the current branch with the main/master branch
 
 So let's now explain what's a branch. By default, you are
 coding on a branch called ``master`` (or sometimes `main`).
@@ -85,9 +85,9 @@ That's what we can do with ``branch`` and `merge`.
 Simply create a branch, move on it, code, then ``merge``
 it into ``master`` or just destroy it.
 
-> As a side node, a lot of time they are conflicts
+> As a side note, a lot of time they are conflicts
 > with ``merging`` meaning someone modified master
-> while you where working on it. Simply check
+> while you were working on it. Simply check
 > all the conflicting files and choose what you
 > want to keep. Some software provides you
 > an interface to do that quite easily such
@@ -95,37 +95,37 @@ it into ``master`` or just destroy it.
 
 ## Good practices
 
-**Atomic commits** : one commit means one change, such
-as adding a functionality. Do not make hundreds of changes
+**Atomic commits**: one commit means one change, such
+as adding one functionality. Do not make hundreds of changes
 making it hard to find when to commit, then the change,
-that ruined your  project is.
+that ruined your project is.
 
-**Short-Long description** : you can, and should make
+**Short-Long description**: you can, and should make
 a short and a long description of your commits
 like that
 
 ```bash
 git commit -m "a short inline description
 
-A long description, where I describes
+A long description, where I describe
 all of my changes
 "
 ```
 
-**README.md** : put a README in all of your projects, that
+**README.md**: put a README in all of your projects, that
 the start of a great adventure.
 
-**LICENSE** : you may also put a LICENSE even if you don't
+**LICENSE**: you may also put a LICENSE even if you don't
 want to put restriction on your code, just in order
-to protect yourself from complains (MIT LICENSE
+to protect yourself from complaints (MIT LICENSE
 is good for that)
 
-**.gitignore** : you may not want to commit some files
+**.gitignore**: you may not want to commit some files
 like high-churn ones or big files... Create a file
-called is a good practice, youc ang generate one
+called is a good practice, you can generate one
 here [toptal gitignore](https://www.toptal.com/developers/gitignore).
 
-## Advanced github concepts
+## Advanced Github concepts
 
 Here some functionalities that you may find
 on other git-server.
