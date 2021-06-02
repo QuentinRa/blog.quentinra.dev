@@ -7,8 +7,9 @@ useful way so that you will like it.
 
 * Write Specifications (CDC)
 * Project Structure
-* Manage a team
 * Reporting
+
+---
 
 ## Vocabulary (words are in french)
 
@@ -22,6 +23,8 @@ a task will require
 * ``Maitre d’ouvrage`` : interactions with the client
 * ``Maitre d’oeuvre`` : interactions with programmers/technical staff
 
+---
+
 ## Project Structure
 
 There are usually 2 teams
@@ -34,12 +37,14 @@ running, make upgrades, ...
 
 It's usually like this.
 
+---
+
 ## Specifications
 
 You will need to write a document (Cahier des charges
 in French) after thinking a lot about a lot of things.
 
-**... Specifications**
+**Functional Specifications**
 
 Make a list of all tasks. You need for each task
 
@@ -63,6 +68,50 @@ man power or costs.
 
 * methods : Agile-Scrum, Kanban, ... ?
 * tools
-    * software: ???
-    * os: ???
+    * software: mariadb ? mysql ? postgresql ? java ? C++ ? ...
+    * os: on which OS the project should be working on ?
     * version (that may be important)
+* language
+* what's used to store the data ? (database ? file ?)
+* restrictions ?
+* additional software/tools/components/... required ?
+
+> You can find the full version [here](cdc/index.md).
+
+**AND** that's something a lot of people are forgetting
+but you need a part about the [risks](cdc/risks.md) !
+
+---
+
+## Organize your project
+
+...
+
+---
+
+## Reporting
+
+There are usually
+
+* periodic meetings : with the rest of the team,
+  to summarize what's done and what's need to be done
+* steering meeting (réunion de pilotage) : with the client,
+usually each month to check what you are doing.
+  
+For a meeting, you will usually have to write or read
+a CR (Compte Rendu or report) looking like this.
+
+![cr](tools/cr.png)
+
+The "Ordre du jour" (agenda) is who will talk in the meeting,
+and we have a time for each one.
+
+## Sources
+
+* Florent MADELAINE ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
+* William GUISSEFFI  ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
+* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
+
+References
+
+* <https://www.codeur.com/blog/gestion-de-projet-diagramme-pert/>
