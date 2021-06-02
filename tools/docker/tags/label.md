@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-> Set image properties that are show
+> Set image properties that are shown
 > when using command ``docker image inspect image_name_here``
 
 Syntax is like
@@ -14,7 +14,7 @@ LABEL "property"="value"
 * ``property`` : a property, see examples
 * ``value`` : a value
 
-**Exemples**
+**Example**
 
 ```dockerfile
 LABEL name="image name"
