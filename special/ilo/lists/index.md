@@ -23,11 +23,11 @@ but please only add the folder ``tests`` after
 # Some tips
 
 It's all about iterators. You got an iterator
-of object of type ``E`` using `iterator()`
+of an object of type ``E`` using `iterator()`
 method. Then use either of ``for`` (each)
 or a ``while`` to iterate the content.
 
-**PLEASE** do not forget this : you are looping
+**PLEASE** do not forget this: you are looping
 on ``hasNext`` to check if you can call next, so
 don't forget to call ``next()`` to advance
 the cursor otherwise ``hasNext`` will return
@@ -46,7 +46,7 @@ default void clear() {
 ```
 
 ``head`` is the head. Having no head (head == null)
-means the list if empty.
+means the list is empty.
 
 We will be using genericity a lot.
 Something like that would be a constructor.
@@ -84,7 +84,7 @@ for (Integer c : numbers) {
 }
 ```
 
-About insertAt method. Please use others methods
+About insertAt method. Please use other methods
 according to the case
 
 * index < 0 : exception
@@ -112,7 +112,7 @@ In ``ListIterator`` note the attributes
 
 Then simply change our variable according to what
 value they are supposed to have. How do we know that
-the list is empty ? (answer: current is null mean empty
+the list is empty? (answer: current is null mean empty
 but do you understand one. Anyways, we will have a next
 if current **is not null**.)
 
@@ -163,10 +163,10 @@ public int hashCode() {
 }
 ```
 
-Finally, Collections is **easy**. That's a proxy for you !
+Finally, Collections is **easy**. That's a proxy for you!
 
 ```java
-// as a remember of what's liste
+// as a remember
 private ForwardList<E> liste;
 
 // add would be
@@ -180,5 +180,5 @@ public boolean add(E e) {
 }
 ```
 
-... and yeah we are literally calling list methods so
-almost nothing to write in a lot of methods !
+... and yeah we are calling list methods so
+almost nothing to write in a lot of methods!
