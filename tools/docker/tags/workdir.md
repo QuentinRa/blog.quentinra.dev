@@ -12,7 +12,7 @@ WORKDIR path
 
 * ``path`` : new path
 
-**Exemples**
+**Examples**
 
 ```dockerfile
 # cd /usr/folder on linux
