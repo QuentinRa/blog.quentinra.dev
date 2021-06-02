@@ -3,5 +3,5 @@
 [Go back](../c.md)
 
 ```c
-int var; //!< ... documentation d’une variable
+int var; //!< ... variable documentation
 ```
