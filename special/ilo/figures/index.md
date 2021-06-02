@@ -9,9 +9,9 @@ things will go way smoother.
 The main IDEA is to practice test-driven, 
 
 * you can some test classes
-* you need to code your classes in order to pass the tests
+* you need to code your classes to pass the tests
 
-That's one of a hell because there are too much comments,
+That's one hell of a job because there are too many comments,
 and sometimes you don't know exactly what you need to do
 but do it step by step and you will see that's easy
 (at least not that hard).
@@ -19,18 +19,18 @@ but do it step by step and you will see that's easy
 ## Choose your IDE
 
 It will help you understand a lot of your mistakes, 
-especially if you use ``IntelliJ`` that is really good at finding
+especially if you use ``IntelliJ`` that is good at finding
 potential mistakes and providing a patch.
 
 **VSCode**
 
-In order to do it in ``VSCode``, you should
+To do it in ``VSCode``, you should
 simply open it and that's okay.
 
 **IntelliJ**
 
 Do not use IntelliJ for this TP (IntelliJ is only good
-for project not "test-driven development" like this),
+for projects not "test-driven development" like this),
 trying VSCode for this one would be better. Then switch or
 try IntelliJ for others. 
 But just in case, [here is your tutorial](figures/idea.md).
@@ -70,10 +70,11 @@ public class Test {
 
 <blockquote class="spoiler">
 That's simply an attribute (or a method) that is owned by the class.
-The attribute have the same value of each instance (each Point for a class
+The attribute has the same value of each instance (each Point for a class
 Point for instance). <b>Some methods will be static</b> so make sure that you don't
-forget the keyword. You will know when a method is not static when you can
-only write you method while giving an instance in argument.
+forget the keyword. You will know when a method is 
+likely to be static when you are not using
+instance's attributes inside.
 </blockquote>
 
 ``equals ? hashcode ? and ==``
@@ -82,7 +83,7 @@ only write you method while giving an instance in argument.
 When using ==, you are comparing addresses. For String, ... and
 Object in general we are using equals. By default equals
 if doing a == but each class can rewrite (namely override)
-this default behaviour.
+this default behavior.
 
 ```java
 @Override
@@ -116,7 +117,7 @@ public boolean equals(Object o) {
 }
 ```
 
-As for hashcode, that's a method returning a number. If two
+As for hashcode, that's a method which is returning a number. If two
 objects are equals, **then they must have the same hashcode.**
 
 ```java
