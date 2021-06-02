@@ -16,7 +16,7 @@ Materials
   
 ## Choose your IDE
 
-I highly recommends using **IntelliJ** for this one,
+I highly recommends using **IntelliJ** (easy to learn) for this one,
 since that's may be your first time with JavaFX and
 IntelliJ have a great support for JavaFX. You can solve
 in less than 30 seconds problems like
