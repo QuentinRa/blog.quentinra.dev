@@ -1,0 +1,5 @@
+# Critical point
+
+[Go back](..)
+
+...
