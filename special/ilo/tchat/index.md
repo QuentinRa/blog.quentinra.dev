@@ -213,7 +213,8 @@ And here is some help for `initialize`
   * `#authorList` is `this.authorsObservableList`. You need to link an observable list with the view (usersListView). Then
   if the list is changed, then the view will change.
   * some methods are written in the subject !!!
-  * your class implements `implements ListChangeListener<String>` meaning you got a listener for the listview changes but you have to add it
+  * your class implements `implements ListChangeListener<String>` meaning you got a listener for the listview
+    changes but you have to add it. The teacher gave this code ``usersListView.getSelectionModel().getSelectedItems().addListener(this);``.
   * `Set #graphicsOnlyMenuItem to true` : set selected
   * `showDateOnMessagesMenuItem` : same
   * `displayLabeled` : it's a list, so you need to add to the list all buttons that may be changed if we want to show text or text+image
