@@ -33,7 +33,7 @@ Do not use IntelliJ for this TP (IntelliJ is only good
 for projects not "test-driven development" like this),
 trying VSCode for this one would be better. Then switch or
 try IntelliJ for others. 
-But just in case, [here is your tutorial](figures/idea.md).
+But just in case, [here is your tutorial](idea.md).
 
 ## Here some tips
 
