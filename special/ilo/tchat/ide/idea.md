@@ -21,12 +21,12 @@ So **do the proper one**!
 
 ## Normal yet easy installation
 
-Use the official tutorial if you are lost, the screen are pretty useful
+Use the official tutorial if you are lost, the screenshots are pretty useful
 [Tutorial](https://openjfx.io/openjfx-docs/#IDEA-IDE).
 
 * open project, cancel if asked to find JDK
 * `CTRL+MAJ+ALT+S` (Open Project Structure)
-    * in `Modules` : remove the two lines in red
+    * in `Modules`: remove the two lines in red
     * in ``Library``: click on `+` then ``From Maven``
     and 
       * write ``org.openjfx:javafx-fxml:16``
@@ -38,10 +38,10 @@ JavaFX is now installed, now let's install ``SceneBuilder``.
 * [Download here SceneBuilder](https://gluonhq.com/products/scene-builder/#download)
 * Install it, keep the path of your new program with a copy-paste
 * in IntelliJ, go to settings (`CTRL+ALT+S`)
-* type ``JavaFX`` then in ``Language and Frameworks`` put the path to
+* type ``JavaFX``, then in ``Language and Frameworks`` put the path to
 your SceneBuilder executable.
   
-You can know make the view but let's make a configuration to run our **Main**.
+You can now make the view but let's make a configuration to run our **Main**.
 
 * go in Main.java, and try to start it : you got an error
 * go to ``Edit Configurations`` ![idea](idea.png)
@@ -51,7 +51,7 @@ You can know make the view but let's make a configuration to run our **Main**.
 **ALSO while you are here**, set program 
 argument ``-name a_name_here``.
 
-## And now ?
+## And now?
 
 You need to right-click on a .fxml file, at the end of the
 context menu, you got **Open in SceneBuilder** so simply
@@ -62,8 +62,8 @@ Then after you are done, simply use the green arrow
 and paste a configuration (in the edit configuration
 menu) and change the name.
 
-If you need to run the server, I personally put
+If you need to run the server, I put
 everything in the same folder so I used IntelliJ
-import module function and that was it.
+import-module function and that was it.
 
 ![module](module.png)
