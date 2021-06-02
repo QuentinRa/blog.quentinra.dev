@@ -10,8 +10,8 @@ IntelliJ [here](../../../tools/jetbrains/index.md).
 ## easy setup
 
 Remove the class `RunAllTests.java`
-since you won't need it and it make thing hard
-but it's an useless class since we will run tests
+since you won't need it and it makes thing hard
+but it's a useless class since we will run tests
 using IDEA and not some java.
 
 ## real setup (2 minutes but tiring)
