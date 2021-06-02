@@ -45,21 +45,22 @@ So to summarize, a basic usage would be
 
 ```bash
 # 
-# Ony done once, download the repository locally 
+# Only done once, download the repository locally 
 #
 git clone "https://github.com/lgs-games/memorize.git"
 
-#
 # Then inside the folder, you can do
-#
+
 # get the latest version on the server
 git pull
 # ... work a lot ...
-# save your changes
+# check what's changed
 git status
+# save your changes
 git add .
 git commit -m "I worked a lot"
 # then send your changes to the server
+# or not and repeat add/commit
 git push
 ```
 
