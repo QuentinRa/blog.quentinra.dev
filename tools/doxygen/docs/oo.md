@@ -4,7 +4,7 @@
 
 **FIRST** you should use ``Javadoc`` in `java`
 not doxygen but I Hope that you are
-here for others Object-Oriented languages.
+here for other Object-Oriented languages.
 
 Here are some new tags for OO languages,
 you should check ``C`` page for the rest
