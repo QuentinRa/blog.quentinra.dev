@@ -6,8 +6,8 @@
 
 **Question 1**
 
-What's the design Pattern for class Group in TP Figures
-who contains a lof of Figures. Group is also a Figure.
+What's the design pattern for the class Group in TP Figures
+who contains a lot of Figures. Group is also a Figure.
 
 <blockquote class="spoiler">
 It's Composite design pattern.
@@ -18,7 +18,7 @@ It's Composite design pattern.
 **Question 2**
 
 In TP Tchat, in the method ``void updateMessages()``,
-what operations where intermediary.
+which operations were intermediary?
 
 * ``stream.forEach((Message m) -> appendMessage(m));``
 * ``stream = stream.filter(authorFilter);``
@@ -35,7 +35,7 @@ to create a new one.
 **Question 3**
 
 In TP Tchat, Controller implements ``ListChangeListener<String>``.
-What's the design pattern ?
+What's the design pattern?
 
 <blockquote class="spoiler">
 It's Observer/Observable design pattern.
@@ -56,6 +56,6 @@ are valid
 
 <blockquote class="spoiler">
 The 1st one since we have String-Color and the 4th one
-since get take a key and the key have the type String
+since <code>get</code> method take a key and the key have the type String
 since we are associating for each username a color.
 </blockquote>
