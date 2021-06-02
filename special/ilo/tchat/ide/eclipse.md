@@ -5,7 +5,7 @@
 You must follow this tutorial 
 [official tutorial](https://openjfx.io/openjfx-docs/#IDE-Eclipse).
 
-Please complete / edit this page is you want to add some notes
+Please complete/edit this page if you want to add some notes
 to help others.
 
 Some notes
