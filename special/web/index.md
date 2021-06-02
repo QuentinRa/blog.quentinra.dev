@@ -1,7 +1,7 @@
 # Web
 
 Your websites will be accessible
-with a url like this ``http://pgsql.pedago.ensiie.fr/~prenom.nom/``.
+with a URL like this ``http://pgsql.pedago.ensiie.fr/~prenom.nom/``.
 
 
 ## Enable errors
@@ -25,7 +25,7 @@ ini_set("display_errors", 1);
 $c = new PDO("pgsql:dbname=tpphp;host=pgsql2;port=5432", "tpphp", "tpphp");
 ```
 
-But you should create a new db account. You will have to login using your
+But you should create a new DB account. You will have to log in using your
 **ENSIIE** credentials to ``pgsql`` host. Simply do
 ``psql -h pgsql -U your_ensiie_login -d a_database``.
 
@@ -47,14 +47,14 @@ GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO username;
 
 ## Database errors
 
-You should enable error for developping purposes if not done.
+You should enable errors for developing purposes if not done.
 
 * <https://stackoverflow.com/questions/8992795/set-pdo-to-throw-exceptions-by-default> 
 * <https://www.php.net/manual/en/pdo.error-handling.php#odbc-statistics.example.basic>
 
 ## Artificial keys
 
-Theses are attributes for which the value is incremented each time a new row
+These are attributes for which the value is incremented each time a new row
 is added. In ``postgre`` it's called sequences.
 
 ```sql
@@ -95,7 +95,7 @@ In normal website, you can add a logo
 (Source: <https://www.w3.org/QA/Tools/Icons>, <https://validator.w3.org/docs/help.html#icon>)
 
 that will redirect to W3Validator and your page in it, but that's by URL so
-for us that's pretty useless.
+for us, that's pretty useless.
 
 **Anyone can use this logo so that not something used to show that you passed
 the test, but something that can allow someone to easily check your page
