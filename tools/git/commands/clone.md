@@ -5,20 +5,20 @@
 > You can get a project from the server
 > using this command
 
-``git clone url``
+``git clone URL``
 
-to get the ``url`` in github you can do something
+to get the ``URL`` in Github you can do something
 like this
 
 ![clone](clone.png)
 
-* clic on the arrow
+* click on the arrow
 * choose ``SSH`` (no login is you configured ssh keys)
 or ``HTTPS`` (always login)
-* then copy the link, that's your ``url``
+* then copy the link, that's your ``URL``
 
 You can change it using ``git remote``
-command it you cloned using the wrong url.
+command it you cloned using the wrong URL.
 
 # git init
 
@@ -33,12 +33,12 @@ then do as usual until your try to push and
 they ask you do use
 
 ```bash
-git remote add origin url
+git remote add origin URL
 ```
 
-with url the same as above.
+with URL the same as above.
 
-Also you can switch to another url using
+Also, you can switch to another URL using
 
 ```bash
 git remote set-url origin new_url
