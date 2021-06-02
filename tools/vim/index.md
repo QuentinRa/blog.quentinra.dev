@@ -1,22 +1,22 @@
 # vim
 
-*vim*, for *vi improved* is a text editor, at least in the basic
-version of it.
+*vim*, for *vi improved* is a text editor, at least in the 
+basic version of it.
 
 You may find extensions like
 
 * GVim
 * neovim
 
-## How to install and run vim ?
+## How to install and run vim?
 
 You can install it using ``sudo apt-get install vim``
 or whatever command you use to install packages
 such as ``sudo aptitude install vim``.
 
 Then you can run it with `vim` or `vi`, commands that could
-take a file in argument such as ``vim file``. The file is created
-if it's don't exists.
+take a file in argument such as ``vim file``. The file is
+created if it's don't exists.
 
 ### HELP, I'm can't exit vim.
 
@@ -25,8 +25,8 @@ and press `esc` (escape key), then `:q!`.
 
 * `esc` will bring (back) vim to its **normal mode** 
  (if we could call it normal...).
-* `:q!` is the command to force to quit vim, that is to say, to
-to exit vim without saving.
+* `:q!` is the command to force to quit vim, that is to say,
+  to exit vim without saving.
 
 ### Basic configuration
 
@@ -44,21 +44,20 @@ set tabstop=4 "tabulation size
 
 # Surviving in vim ...
 
-Here a really short summary of vim.
+Here a summary of vim.
 
-You have two mode (at least for now),
+You have two modes (at least for now),
 check at the bottom left of your screen
 
 * `INSERTION` : called insert/edit mode
 * `<nothing>` : called command/normal mode
 
 More generally, the **normal mode** (or command mode)
-of vim is the state where user's input served to do some
+of vim is the state where the user's input served to do some
 special action (move the cursor, copy, paste, erase...).
 
-`:` is use to run a command. E.g, `q` is the command to exit vim
-if no edit have been done , `q!` to exit without saving and
-`wq` to save and exit...
+`:` is used to run a command. E.g, `q` is the command to exit vim.
+`q!` to exit without saving and `wq` to save and exit...
 
 In normal mode, press `i` to enter in **insert mode**,
 which is the mode where you can write some text such as every
