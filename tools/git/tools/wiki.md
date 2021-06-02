@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-> A wiki is a group a pages written in Markdown
+> A wiki is a group of pages written in Markdown
 > to explain how to use your project, for instance.
 
 That's a good practice to create one if you made
