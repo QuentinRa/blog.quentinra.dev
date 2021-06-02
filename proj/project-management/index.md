@@ -2,8 +2,8 @@
 
 Honestly, this is a boring theoretical yet interesting
 course. You will learn a lot of things, but they may
-be a lot of vocabulary. I will try to make things in an
-useful way so that you will like it.
+be a lot of vocabulary. I will try to make things in a
+useful way so that you will enjoy the course.
 
 * Write Specifications (CDC)
 * Project Structure
@@ -13,15 +13,15 @@ useful way so that you will like it.
 
 ## Vocabulary (words are in french)
 
-* ``Besoin`` : what the client wants
-* ``Livrables`` : what you will give to the client
-* ``Jalons`` : important dates of your project
-* ``Périmètre`` : tasks, livrables, budget, ... everything
+* ``Besoin``: what the client wants
+* ``Livrables``: what you will give to the client
+* ``Jalons``: important dates of your project
+* ``Périmètre``: tasks, livrables, budget, ... everything
 related to the project.
-* ``HJ`` : "Homme-Jour", an indicator of how many resource
+* ``HJ``: "Homme-Jour", an indicator of how many resources
 a task will require
-* ``Maitre d’ouvrage`` : interactions with the client
-* ``Maitre d’oeuvre`` : interactions with programmers/technical staff
+* ``Maitre d’ouvrage``: interactions with the client
+* ``Maitre d’oeuvre``: interactions with programmers/technical staff
 
 ---
 
@@ -56,13 +56,13 @@ the devs know exactly what they need to do
 will involve (ex: register means sending a mail...
 but we may not see that on the mockup so write
 it). Still do not write too much, we don't like boring
-stuffs.
-* you can make a group of task to sort them
+stuff.
+* you can make a group of tasks to sort them
 * you should write the POC (proof of concept)
 meaning you should check if something can be done!
-sometimes you client will request something that can't
+sometimes your client will request something that can't
 be done either because of time, knowledge, technology,
-man power or costs.
+manpower or costs.
 
 **Technical specifications**
 
@@ -86,7 +86,7 @@ but you need a part about the [risks](cdc/risks.md) !
 ## Organize your project
 
 You would usually write a GanTT project to organize your tasks,
-even in a Agile-project (through it will have less content).
+even in a Agile-project (though it will have less content).
 
 * [Writing your Gantt for Specs](tools/gantt.md)
 
@@ -102,7 +102,7 @@ And please take not of **that**
 
 > YOU MUST ALWAYS HAVE A WORKING VERSION
 > OF YOUR SOFTWARE. At any time of the development,
-> the software can be run and the client or whoever
+> the software can be run and, the client or whoever
 > can test it.
 
 ---
@@ -111,10 +111,10 @@ And please take not of **that**
 
 There are usually
 
-* periodic meetings : with the rest of the team,
+* periodic meetings: with the rest of the team,
   to summarize what's done and what's need to be done
 * steering meeting (réunion de pilotage) : with the client,
-usually each month to check what you are doing.
+usually, each month to check what you are doing.
   
 For a meeting, you will usually have to write or read
 a CR (Compte Rendu or report) looking like this.
@@ -122,7 +122,7 @@ a CR (Compte Rendu or report) looking like this.
 ![cr](tools/cr.png)
 
 The "Ordre du jour" (agenda) is who will talk in the meeting,
-and we have a time for each one.
+and we have a time set for each one.
 
 ## Sources
 
