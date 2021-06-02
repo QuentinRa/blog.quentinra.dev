@@ -2,11 +2,11 @@
 
 [Go back](..)
 
-Actions are some code that are run each
+Actions are some code that is run each
 time you make a commit.
 
 For instance, you could create an action
-that will verify that your code compile on
+that will verify that your code compiles on
 some specific platform that you configured
 and return a ``cross`` if a test failed.
 
@@ -17,9 +17,9 @@ and [github actions tutorial](https://docs.github.com/en/actions/quickstart).
 
 ## Action : CodeQL
 
-Allow you to analyse your code, here is my file
+Allow you to analyze your code, here is my file
 for a java project that would be stored at ``.github/workflows/codeql-analysis.yml``.
-Github generates most of the file.
+Github generates most of content of the file.
 
 ```yaml
 # For most projects, this workflow file will not need changing; you simply need
