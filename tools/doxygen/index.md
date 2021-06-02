@@ -3,27 +3,27 @@
 * you will learn how to use write ``doxygen`` comments
 * how to generates documentation with `doxygen`,
   so how to write a ``Doxyfile``
-* how to generate a GREAT documentation with ``doxygen`` (
+* how to generate GREAT documentation with ``doxygen`` (
   with a beautiful theme
   )
-* some advices about comments
+* some advice about comments
 
 Based on ``doxygen`` version `1.9.1`.
 
 ## Starting with doxygen
 
-Doxygen is working like the javadoc in JAVA if you
+Doxygen is working like the Javadoc in JAVA if you
 know what I mean to
 
 * write documentation using a special syntax
 * use a command to generates a website
 * open a file called ``index.html`` in your
-browser and check it out !
+browser and check it out!
   
 Here some [installation tutorial](install.md)
 or if **needed** you can check their documentation
 here [doxygen.nl](https://www.doxygen.nl/index.html)
-but for me it's a bit **unreadable** and your
+but for me, it's a bit **unreadable** and your
 documentation should not be like that,
 hopefully.
 
@@ -53,9 +53,9 @@ that will allow ``doxygen`` to give some style to your
 documentation. They start either with a ``\``
 or a ``@`` like in `Java`.
 
-> Also before starting, node that you will have
-to say what you are commenting before actually
-starting to comment it. An exemple would be above,
+> Also before starting, note that you will have
+to say what you are commenting, before actually
+starting the comment. An example would be above,
 you must use a ``\file`` to say that
 you are commenting this file. So you would
 have to use ``\enum`` in the comment of an enum
@@ -72,12 +72,12 @@ All tags can be found in this great reference sheet
 ## Generate your documentation website
 
 You will need a file called
-``Doxyfile`` in order to compile your documentation.
+``Doxyfile`` to compile your documentation.
 
 You can create one with default values
 with ``doxygen -g``.
 
-When created, you should check theses lines
+When created, you should check these lines
 and modify them if wanted
 
 * ``PROJECT_NAME = "..."`` : project name
@@ -128,12 +128,12 @@ your HTML documentation.
 
 ## Make your documentation beautiful
 
-If you want to have a beautiful documentation
+If you want to have beautiful documentation
 such as this one [magnum](https://doc.magnum.graphics/magnum/)
 then here is my tutorial
 but you got the official one here
 [m.css](https://mcss.mosra.cz/documentation/doxygen/)
-that will **really** help you.
+that will help you (**really**).
 
 * download theses files from [https://github.com/mosra/m.css](https://github.com/mosra/m.css)
 
@@ -194,24 +194,24 @@ XML_NS_MEMB_FILE_SCOPE  = YES
 ## Make your documentation great
 
 I think we should think carefully about how to make
-our comments. Here are some advices, I hope
-they help you find idea about how you would think
-what make a documentation great.
+our comments. Here is some advice, I hope
+it helps you find ideas about what would
+make documentation great.
 
 * comments ``imports``, one line, why are you using them
-* comment ``variables``, at their initialisation,
+* comment ``variables``, at their initialization,
 why do you need it
 * group some part of your code (all ``getters``
   , all ``setters``, all ``utilities``, all ``constructors``,
   ...)
   
 * do **not** write ``@return int, a number``
-or ``@param int a number`` : in most case it's useless
+or ``@param int a number``: in most case it's useless
   
   * maybe tell us the range of the variable
-  * some values that may trigger a different comportement
+  * some values that may trigger a different behavior
 
-* don't copy paste, use ``@see`` or whatever but don't.
+* don't copy-paste, use ``@see`` or whatever but don't.
 * a "big" description at the beginning of a file,
 to tells us why you are using this file and so that
   we know if we should read it or not.
@@ -220,9 +220,9 @@ intend to modify them otherwise they are not useful
   
 In general
 
-* don't forget non javadoc comment, one per line or block
-is really helpful
-* show some examples of your function being called,
+* don't forget non-doxygen comments, one per line or block
+is helpful
+* show some examples of your function is called,
 that might help a lot
 * make some ``README.md`` to summarize some usages might be good
 
