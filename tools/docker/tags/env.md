@@ -15,7 +15,7 @@ ENV NAME=VALUE
 * ``NAME`` : a variable name
 * ``VALUE`` : the value of the variable
 
-**Exemples**
+**Example**
 
 ```dockerfile
 # declare
