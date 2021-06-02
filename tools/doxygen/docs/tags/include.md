@@ -2,5 +2,5 @@
 
 [Go back](../c.md)
 
-I still don't know of a way to document an include
-so you can't.
+I still don't know of a way to document an ``include``.
+I usually use normal comments.
