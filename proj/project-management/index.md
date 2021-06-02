@@ -85,7 +85,25 @@ but you need a part about the [risks](cdc/risks.md) !
 
 ## Organize your project
 
-...
+You would usually write a GanTT project to organize your tasks,
+even in a Agile-project (through it will have less content).
+
+* [Writing your Gantt for Specs](tools/gantt.md)
+
+Then work on the project and don't forget
+
+* update your GanTT
+* communicate with your team
+* do some meetings, properly
+* some **tests**
+* and maybe some **documentation**
+
+And please take not of **that**
+
+> YOU MUST ALWAYS HAVE A WORKING VERSION
+> OF YOUR SOFTWARE. At any time of the development,
+> the software can be run and the client or whoever
+> can test it.
 
 ---
 

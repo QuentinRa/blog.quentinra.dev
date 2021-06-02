@@ -1,5 +1,7 @@
 # Risks
 
+[Go back](..)
+
 **YOU CAN'T SKIP THIS PART**. So don't even try.
 
 > « 80% de projets, informatiques ou non, sont commencés mais ne sont jamais terminés. »
