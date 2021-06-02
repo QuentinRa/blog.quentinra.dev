@@ -116,7 +116,7 @@ You may use
 * [STOPSIGNAL](tags/stopsignal.md) 
 * [ENTRYPOINT](tags/entrypoint.md)
 
-And these ones are not ``commands`` but may
+And these are not ``commands`` but may
 be useful
 
 * [Arguments](tags/args.md)
