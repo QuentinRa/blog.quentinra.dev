@@ -10,7 +10,7 @@
 git status
 ```
 
-Also the command might also help since it
+The command might also help since it
 shows information about each commit
 
 ```bash
