@@ -9,6 +9,11 @@ will have to test with a server, run the server
   from the previous TP (nothing to do aside running)
   and that's it.
   
+Materials
+
+* [Source Part1](download:sources/TPChat.zip)
+* [Source Part2](download:sources/ChatClientJavaFX.zip)
+  
 ## Choose your IDE
 
 I highly recommends using **IntelliJ** for this one,
