@@ -2,7 +2,7 @@
 
 [Go back](../c.md)
 
-A comment for a file have
+Comment for a file should have
 
 * ``\file name`` : name of the file, **required**
 * ``\author name`` : list of authors, not required
