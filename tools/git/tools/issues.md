@@ -2,9 +2,9 @@
 
 [Go back](..)
 
-User may find a ``bug`` in your project or
-may want to ask some ``support`` or request
-a ``functionnality``. That most likely
+Users may find a ``bug`` in your project or
+may want to ask for some ``support`` or request
+a ``functionality``. That most likely
 cases when issues are used.
 
 Here some [github tutorial](https://guides.github.com/features/issues/)
