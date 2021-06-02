@@ -1,5 +1,7 @@
 # IntelliJ IDEA
 
+[Go back](../index.md)
+
 There are two ways, one in two clicks and a longer one. The two click installation
 won't install an external SceneBuilder and the problem of that is 
 

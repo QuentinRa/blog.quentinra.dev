@@ -1,5 +1,7 @@
 # VSCode
 
+[Go back](../index.md)
+
 Check [this video](https://www.youtube.com/watch?v=H67COH9F718)
 as a source of this tutorial, let's
 improve it.
