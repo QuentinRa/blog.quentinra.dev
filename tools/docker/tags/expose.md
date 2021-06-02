@@ -18,7 +18,7 @@ EXPOSE port/protocole
 * ``port`` : a port such as 80 for HTTP
 * ``protocole`` : a protocole such as tcp, udp
 
-**Exemples**
+**Example**
 
 ```dockerfile
 EXPOSE 80
