@@ -15,12 +15,12 @@ or
 FROM image:version as name
 ```
 
-* ``image`` : image tag used as a source
-* ``version`` : version of the tag, optional
-* ``name`` : you can have a lot of from and give
+* ``image``: image tag used as a source
+* ``version``: version of the tag, optional
+* ``name``: you can have a lot of from and give
 them a name, optional
   
-**Exemples**
+**Example**
 
 ```dockerfile
 # image is gcc, version is 8.4
