@@ -12,6 +12,8 @@ Knowledge of this course may (and will) be used in other
 courses such as ``Statistics``, `Matrix`, 
 ``Numerical analysis`` or `Optimization`.
 
+<div class="sl"></div>
+
 # Introduction
 
 File extension is ``.R`` but we also write
@@ -28,6 +30,8 @@ simply do
 
 * install a library : ``install.packages("name")``
 * **load a library** (runtime) : ``library("nom");``
+
+<div class="sr"></div>
 
 ## Basic course
 
@@ -46,6 +50,8 @@ Then here is the real course.
 And here you can learn how to write
 [Rmd documentation](rmd.md).
 
+<div class="sl"></div>
+
 ## Advanced notes
 
 Here you can find some course about functions
@@ -55,9 +61,13 @@ that you might use or not.
 * [Maths](utils/maths.md)
 * [Plots](utils/plot.md)
 
+<div class="sr"></div>
+
 ## Exercises
 
 ...
+
+<div class="sl"></div>
 
 ## Sources
 
