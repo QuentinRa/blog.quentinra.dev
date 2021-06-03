@@ -1,0 +1,28 @@
+{
+  "courses": [
+    {
+      "tag": "optimization",
+      "name": "Optimization",
+      "desc": "...",
+      "icon": "<i class=\"bi bi-cash-coin\"></i>"
+    },
+    {
+      "tag": "r",
+      "name": "R languages",
+      "desc": "Quite an efficient language to do statistics or calculations.",
+      "icon": "<i class=\"bi bi-terminal\"></i>"
+    },
+    {
+      "tag": "statistics",
+      "name": "Statistics",
+      "desc": "...",
+      "icon": "<i class=\"bi bi-lightbulb\"></i>"
+    },
+    {
+      "tag": "numerical-analysis",
+      "name": "Numerical analysis",
+      "desc": "Learn some tips about how you should handle calculations such as Ax=b on a computer.",
+      "icon": null
+    }
+  ]
+}
