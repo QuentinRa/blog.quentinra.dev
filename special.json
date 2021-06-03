@@ -1,0 +1,22 @@
+{
+  "courses": [
+    {
+      "tag": "ilo",
+      "name": "ILO",
+      "desc": "How to survive in ILO course at ENSIIE, using IDEs as a protection.",
+      "icon": "<i class=\"bi bi-file-earmark-text\"></i>"
+    },
+    {
+      "tag": "web",
+      "name": "Web",
+      "desc": "Some tips about the web infrastructure at ENSIIE.",
+      "icon": "<i class=\"bi bi-globe2\"></i>"
+    },
+    {
+      "tag": "cesim",
+      "name": "Cesim",
+      "desc": "Some feedback about HOTELS/CESIM course.",
+      "icon": "<i class=\"bi bi-shop\"></i>"
+    }
+  ]
+}
