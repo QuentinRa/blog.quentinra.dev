@@ -8,13 +8,19 @@
 If you want some little knowledge about programming before
 starting, this page should help you : [First timer](sub/first-time.md).
 
+<div class="sl"></div>
+
 ## Start programming in C
 
 ...
 
+<div class="sr"></div>
+
 ## Advanced programming in C
 
 ...
+
+<div class="sl"></div>
 
 ## Using ncurses
 
@@ -24,6 +30,8 @@ great ``VIM`` editor, then the interface was made with
 ncurses. It's simple and really easy to learn.
 
 ...
+
+<div class="sr"></div>
 
 ## Threads and processes
 
@@ -62,9 +70,13 @@ efficiently.
 * [Threads : Concurrence](proc/concurrence.md)
 * [Threads : Semaphores](proc/semaphores.md)
 
+<div class="sl"></div>
+
 ## Networking
 
 ...
+
+<div class="sr"></div>
 
 ## Sources
 
