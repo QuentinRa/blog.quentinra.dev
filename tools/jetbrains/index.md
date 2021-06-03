@@ -7,6 +7,8 @@
 * **PyCharm**: Write ``Python``
 * **AndroidStudio**: Write ``Kotlin``/`Java for android`
 
+<div class="sr"></div>
+
 ## Pro(s) and cons(s)
 
 Before digging into, please take note that Jetbrains
@@ -36,6 +38,8 @@ And here a some functionalities
 * connect to a database, sql integration : check
 * intelligent refactoring : check
 
+<div class="sl"></div>
+
 ## Installation
 
 I personally recommend using the
@@ -46,6 +50,8 @@ If you are a student and wants free IDEs then process
 this form
 [students](https://www.jetbrains.com/shop/eform/students)
 using your **academic** email.
+
+<div class="sr"></div>
 
 ## Interface presentation
 
@@ -63,6 +69,8 @@ to see a quick fix of it.
 * [Shortcuts](presentation/shortcuts.md)
 * [Free tips](presentation/tips.md)
 * [Menus](presentation/menus.md)
+
+<div class="sl"></div>
 
 ## IDE : IntelliJ IDEA
 
@@ -87,6 +95,8 @@ Then some tutorials
 * [Run tests](idea/tests.md)
 * [Project Structure](idea/project-structure.md)
 
+<div class="sr"></div>
+
 ## IDE : PHPStorm
 
 Examples of cases where you might be using it
@@ -101,6 +111,8 @@ on a server.
 
 * [Remote working](phpstorm/remote.md)
 * [Launch website](phpstorm/start.md)
+
+<div class="sl"></div>
 
 ## IDE : CLion
 
@@ -120,6 +132,8 @@ manage to.
 * [Set compiler](clion/compiler.md)
 * [Remote working](clion/remote.md)
 * [Debug](clion/debug.md)
+
+<div class="sr"></div>
 
 ## Sources
 
