@@ -14,6 +14,8 @@ to offer this service, please also check
 * [GitLab](https://about.gitlab.com/), alternative to Github
 * [Gogs](https://gogs.io/), open-source, self-hosted
 
+<div class="sr"></div>
+
 ## Introduction
 
 Git is a great tool that allows users to work on
@@ -29,6 +31,8 @@ So first of all, you need to
 
 * [set things up locally](local-install.md)
 * [set things up server-side](server-install.md)
+
+<div class="sl"></div>
 
 ## Basic usage
 
@@ -64,6 +68,8 @@ git commit -m "I worked a lot"
 git push
 ```
 
+<div class="sr"></div>
+
 ## Main concepts
 
 Here are commands that you will use on a project
@@ -92,6 +98,8 @@ it into ``master`` or just destroy it.
 > want to keep. Some software provides you
 > an interface to do that quite easily such
 > as ``IntelliJ IDEA``.
+
+<div class="sl"></div>
 
 ## Good practices
 
@@ -125,6 +133,8 @@ like high-churn ones or big files... Create a file
 called is a good practice, you can generate one
 here [toptal gitignore](https://www.toptal.com/developers/gitignore).
 
+<div class="sr"></div>
+
 ## Advanced Github concepts
 
 Here some functionalities that you may find
@@ -136,6 +146,8 @@ on other git-server.
 * [Issues](tools/issues.md)
 * [Organizations](tools/organizations.md)
 * [Pages](tools/pages.md)
+
+<div class="sl"></div>
 
 ## Sources
 
