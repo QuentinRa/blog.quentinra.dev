@@ -10,6 +10,8 @@ This is a really big course, covering
 But this course won't handles ``relational modeling``
 as this is considered to be in the ``UML`` course.
 
+<div class="sl"></div>
+
 ## Let's start from scratch
 
 A database is a place to store data. To store all theses data, you will need someone to manage
@@ -35,6 +37,8 @@ root and no password and there you go)
 or on a linux you can simply install ``maria`` or `postgre`
 and settings up things really quickly 
 (May [that](https://www.digitalocean.com/community/tutorials/how-to-install-mariadb-on-debian-10) help).
+
+<div class="sr"></div>
 
 ## Introduction to SQL
 
@@ -71,21 +75,19 @@ than ever.
 
 * [Views](syntax/views.md)
 
+<div class="sl"></div>
+
 ## Advanced usages
 
 ...
 
-## Start leaning PL/SQL
-
-...
+<div class="sr"></div>
 
 ## Procedural language (PL) for SQL
 
 ...
 
-## NoSQL with Cypher
-
-...
+<div class="sl"></div>
 
 ## Sources
 
