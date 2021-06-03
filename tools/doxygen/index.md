@@ -10,6 +10,8 @@
 
 Based on ``doxygen`` version `1.9.1`.
 
+<div class="sr"></div>
+
 ## Starting with doxygen
 
 Doxygen is working like the Javadoc in JAVA if you
@@ -26,6 +28,8 @@ here [doxygen.nl](https://www.doxygen.nl/index.html)
 but for me, it's a bit **unreadable** and your
 documentation should not be like that,
 hopefully.
+
+<div class="sl"></div>
 
 ## Write documentation
 
@@ -68,6 +72,8 @@ All tags can be found in this great reference sheet
 
   * official link : [DoxyReference.pdf](https://www.mitk.org/images/1/1c/BugSquashingSeminars$2013-07-17-DoxyReference.pdf)
   * permanent link : [DoxyReference.pdf](download:docs/DoxyReference.pdf)
+
+<div class="sr"></div>
 
 ## Generate your documentation website
 
@@ -125,6 +131,8 @@ to generates your documentation. Check your
 ``OUTPUT_DIRECTORY`` for the index.html that
 you must open in your browser to look at
 your HTML documentation.
+
+<div class="sl"></div>
 
 ## Make your documentation beautiful
 
@@ -191,6 +199,8 @@ XML_NS_MEMB_FILE_SCOPE  = YES
 * then do `style\doxygen.py DoxyfileCSS` (or `/` on Linux)
 * check your usual output folder for your ``ìndex.html``
 
+<div class="sr"></div>
+
 ## Make your documentation great
 
 I think we should think carefully about how to make
@@ -225,6 +235,8 @@ is helpful
 * show some examples of your function is called,
 that might help a lot
 * make some ``README.md`` to summarize some usages might be good
+
+<div class="sl"></div>
 
 ## Sources
 
