@@ -8,27 +8,32 @@ The main goal of this course is to solve
 * differentials methods
 
 You should have some knowledge about matrix such as
-inverting a matrix or finding the eigen values.
+inverting a matrix or finding the eigenvalues
+(valeur propres).
 
 Most of this course will use ``R`` language
-to provide example of how you could implements
+to provide an example of how you could implements
 theses.
+
+<div class="sl"></div>
 
 ## Introduction
 
-Calculation are made using a computer so they may be
+Calculations are made using a computer so they may be
 some mistakes. Here a some "mistakes"
 
-* ``Round-off`` : machine may round your numbers
-* ``Truncationf`` : machine may trunc your numbers
-* ``method`` : you are using the wrong method
-* ``problem`` : you are trying to solve the wrong problem
-* ``calcul`` : you are doing the wrong calcul
+* ``Round-off``: machine may round your numbers
+* ``Truncationf``: machine may truncate your numbers
+* ``method``: you are using the wrong method
+* ``problem``: you are trying to solve the wrong problem
+* ``calculation``: you are doing the wrong calculation
 
-You will absolutely need
+You will need
 
 * to estimate your errors (using **norms**)
 * estimate the complexity/order of your algorithm
+
+<div class="sr"></div>
 
 ## Norms
 
@@ -56,6 +61,8 @@ and we have
 * [Write norms](norms/basic.md)
 * [Condition number](norms/cond.md)
 
+<div class="sl"></div>
+
 ## Direct methods
 
 Calculations are made in one go.
@@ -66,10 +73,12 @@ Calculations are made in one go.
 * [Gauss method](direct/gauss.md)
 * [LU factorization](direct/lu.md)
 
+<div class="sr"></div>
+
 ## Iterative methods
 
 <p>
-We will iterates some process and try to have our
+We will iterates some processes and try to have our
 values \( x^{(k)} \)  converging to our real values.
 In most case, we stop when
 \(
@@ -84,9 +93,13 @@ as <b>0.001</b>.
 * [Gauss seidel method](iterative/gauss-seidel.md)
 * [SOR method](iterative/sor.md)
 
+<div class="sl"></div>
+
 ## Differentials methods
 
 ...
+
+<div class="sr"></div>
 
 ## Sources
 
