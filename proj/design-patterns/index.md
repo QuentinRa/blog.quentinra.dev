@@ -21,6 +21,8 @@ You may, should and must check this course
 about design patterns since the official one may help and be more accurate than
 this one.
 
+<div class="sl"></div>
+
 ## Creation
 
 * [Factory](creation/factory.md)
@@ -38,6 +40,8 @@ this one.
 * Object Pool
   : Create a finite pool of objects, allow others
   classes to use them, then handles to cleaning afterwards.
+
+<div class="sr"></div>
 
 ## Structure
 
@@ -58,6 +62,8 @@ this one.
 * [Proxy](structure/proxy.md)
   : call a remote object or use an attribute of
   a subclass to prevent yourself from coding some methods.
+
+<div class="sl"></div>
 
 ## Behaviour
 
@@ -86,14 +92,18 @@ this one.
 * [Mediator](behaviour/mediator.md)
   : relation between classes
 
+<div class="sr"></div>
+
 ## Architectural
 
 * [MVC](architectural/mvc.md)
   : Model - View - Controller
 * DAO
   : DAO (data access objet)
-  
-## Exercice
+
+<div class="sl"></div>
+
+## Exercises
 
 1. I'm using a listener (a class listening to events like input...)
 ``ListChangeListener`` with `onChanged` in Java.
@@ -140,6 +150,8 @@ That's <code>Iterator</code> pattern if we are using it otherwise it would be
 a <code>Factory</code> pattern (since we are creating concrete
 iterators that are hiding using Iterator class).
 </blockquote>
+
+<div class="sr"></div>
 
 ## Sources
 
