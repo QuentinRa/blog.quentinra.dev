@@ -8,6 +8,8 @@ You may find extensions like
 * GVim
 * neovim
 
+<div class="sl"></div>
+
 ## How to install and run vim?
 
 You can install it using ``sudo apt-get install vim``
@@ -18,7 +20,7 @@ Then you can run it with `vim` or `vi`, commands that could
 take a file in argument such as ``vim file``. The file is
 created if it's don't exists.
 
-### HELP, I'm can't exit vim.
+**HELP, I'm can't exit vim.**
 
 If you are trapped in vim, keep calm, 
 and press `esc` (escape key), then `:q!`.
@@ -28,7 +30,7 @@ and press `esc` (escape key), then `:q!`.
 * `:q!` is the command to force to quit vim, that is to say,
   to exit vim without saving.
 
-### Basic configuration
+**Basic configuration**
 
 Then you can configure your editor by creating
 a file ``~/.virmrc``, here an example of mine
@@ -41,6 +43,8 @@ filetype plugin indent on "indentations
 set cursorline "show cursor
 set tabstop=4 "tabulation size
 ```
+
+<div class="sr"></div>
 
 # Surviving in vim ...
 
@@ -73,6 +77,8 @@ that you will most likely need to know
 * ``:q`` : exit
 * ``u`` : undo
 * ``h, j, l, k`` : move cursor to left, top, right, bottom
+
+<div class="sl"></div>
 
 # ... and now mastering it
 
@@ -282,6 +288,8 @@ Here you have a summary
 		<th>Quit without saving.</th>
 	</tr>
 </table>
+
+<div class="sr"></div>
 
 ## Sources
 
