@@ -3,6 +3,7 @@
 Your websites will be accessible
 with a URL like this ``http://pgsql.pedago.ensiie.fr/~prenom.nom/``.
 
+<div class="sr"></div>
 
 ## Enable errors
 
@@ -15,6 +16,8 @@ theses line at the beginning of your code.
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 ```
+
+<div class="sl"></div>
 
 ## Connect to database
 
@@ -45,12 +48,16 @@ GRANT INSERT, SELECT, UPDATE, DELETE, TRUNCATE,
 GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO username;
 ```
 
+<div class="sr"></div>
+
 ## Database errors
 
 You should enable errors for developing purposes if not done.
 
 * <https://stackoverflow.com/questions/8992795/set-pdo-to-throw-exceptions-by-default> 
 * <https://www.php.net/manual/en/pdo.error-handling.php#odbc-statistics.example.basic>
+
+<div class="sl"></div>
 
 ## Artificial keys
 
@@ -74,6 +81,8 @@ SET DEFAULT nextval('public.sequence_name'::regclass);
 ```
 
 **Attribute type is SERIAL**.
+
+<div class="sr"></div>
 
 ## W3Validator
 
