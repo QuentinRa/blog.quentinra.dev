@@ -9,7 +9,7 @@ useful way so that you will enjoy the course.
 * Project Structure
 * Reporting
 
----
+<div class="sl"></div>
 
 ## Vocabulary (words are in french)
 
@@ -23,7 +23,7 @@ a task will require
 * ``Maitre d’ouvrage``: interactions with the client
 * ``Maitre d’oeuvre``: interactions with programmers/technical staff
 
----
+<div class="sr"></div>
 
 ## Project Structure
 
@@ -37,7 +37,7 @@ running, make upgrades, ...
 
 It's usually like this.
 
----
+<div class="sl"></div>
 
 ## Specifications
 
@@ -81,7 +81,7 @@ manpower or costs.
 **AND** that's something a lot of people are forgetting
 but you need a part about the [risks](cdc/risks.md) !
 
----
+<div class="sr"></div>
 
 ## Organize your project
 
@@ -105,7 +105,7 @@ And please take not of **that**
 > the software can be run and, the client or whoever
 > can test it.
 
----
+<div class="sl"></div>
 
 ## Reporting
 
@@ -123,6 +123,8 @@ a CR (Compte Rendu or report) looking like this.
 
 The "Ordre du jour" (agenda) is who will talk in the meeting,
 and we have a time set for each one.
+
+<div class="sr"></div>
 
 ## Sources
 
