@@ -6,6 +6,8 @@ create a Docker image.
 
 Then any machine that has `docker` can run your image, meaning your application can be run everywhere.
 
+<div class="sr"></div>
+
 ## Some additional details
 
 A virtual machine allows someone to have a Linux desktop on Windows, for instance, so one can start a Linux-only application in Windows.
@@ -17,6 +19,8 @@ But a ``docker`` image doesn't have a memory so each time you start a `container
 Also a downside a ``docker``, that I least stumbled upon was it was quite
 hard and impossible for me to use some system-specific devices such as
 sound (<span class="text-muted small">at least in Windows but in Linux or macOS it seems to be possible</span>).
+
+<div class="sl"></div>
 
 ## Install Docker
 
@@ -31,7 +35,9 @@ then I do so read it here
     * you need to restart it each time your want to use ``docker`` commands
     * when the application is started, confirmation messages should be shown 
     then you can use ``docker`` commands
-      
+
+<div class="sr"></div>
+
 ## Some commands you need to know
 
 * ``docker pull tag`` : download an image
@@ -54,7 +60,9 @@ Other commands that one might use
 * ``docker rm id``: end of running container
 * ``docker run -p ps:pm tag``: start image and bind port
 of your container ``ps`` with one of your machine `pm`.
-  
+
+<div class="sl"></div>
+
 ## Dockerfile
 
 Here an example of a ``Dockerfile``
@@ -91,6 +99,8 @@ So try to make it like that
 that you may have to download if you don't have it (the `docker pull tag`
 done automatically if you didn't)
 
+<div class="sr"></div>
+
 ### Most used instructions
 
 Voici un résumé de quelques instructions, vous avez tous les détails plus bas
@@ -122,6 +132,8 @@ be useful
 * [Arguments](tags/args.md)
 * [Directives](tags/directives.md)
 
+<div class="sl"></div>
+
 ## Other
 
 ### Kubernetes
@@ -146,6 +158,8 @@ syntax
 directory/
 ````
 
+<div class="sr"></div>
+
 ### Real docker example 
 
 From hub.ducker.com
@@ -163,6 +177,8 @@ RUN gcc -o myapp main.c # génère notre exécutable
 # when started with call our program
 CMD ["./myapp"]
 ```
+
+<div class="sl"></div>
 
 ## Sources
 
