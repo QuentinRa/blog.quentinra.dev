@@ -14,4 +14,4 @@ Course were made from teaching mostly learned at
 * l’ENSIIE, école d’ingénieur en informatique à Évry
 
 Provided by `Legendary Games Studio`,
-Courses are under the license of their respectives creators.
+Courses are under the license of their respective creators.
