@@ -13,6 +13,8 @@ So here you will have
 * optimization under constraints (constrained)
 * optimization in R
 
+<div class="sl"></div>
+
 ## the problem
 
 We got a function ``f`` and will try to minimize it. If you want to maximize
@@ -42,6 +44,8 @@ methods.
 * [Point Selle / saddle point](points/saddle.md)
 * [Critical point](points/critical.md)
 
+<div class="sr"></div>
+
 ## unconstrained optimization
 
 Here some methods used in unconstrained optimization,
@@ -54,6 +58,8 @@ or you will have to do a constrained optimization method.
 * [Least squares methods](uo/least-squares.md)
 * [Geometric programming](uo/geometric.md)
 
+<div class="sl"></div>
+
 ## constrained optimization
 
 Here some constrained optimization methods.
@@ -62,12 +68,16 @@ Here some constrained optimization methods.
 * [Simplex](co/simplex.md)
 * [Lagrange](co/lagrange.md)
 
+<div class="sr"></div>
+
 ## optimization : examples in R
 
 Here may not be the language that you would use to do
 optimization. Still here you have some examples.
 
 ...
+
+<div class="sl"></div>
 
 ## Sources
 
