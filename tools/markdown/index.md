@@ -11,6 +11,8 @@ simple. Here is a fantastic guide
 > Please do take note that this site is written
 > in Markdown so you will be able to contribute :)
 
+<div class="sl"></div>
+
 ## Titles
 
 You got 6 kind of title, created using ``#``.
@@ -26,6 +28,8 @@ The more ``#`` you add, the smaller your title becomes.
 ```
 
 **Note** : be sure to leave a space after ``#``
+
+<div class="sr"></div>
 
 ## Basic text
 
@@ -46,6 +50,8 @@ this is also in _italic_. This is in
 And this is a ~~strikethrough text~~ but not all
 editors support it.
 ```
+
+<div class="sl"></div>
 
 ## Lists
 
@@ -75,6 +81,8 @@ a mix of both like this
 **Note** : you may use ``*`` or `-` or `+` for 
 unordered lists.
 
+<div class="sr"></div>
+
 ## Code
 
 You can write some ``inline code`` using inverted quotes
@@ -98,6 +106,8 @@ int main(void){
 \ ```
 ```
 
+<div class="sl"></div>
+
 ## Links and images
 
 ```markdown
@@ -111,6 +121,8 @@ or you could create a link
 easily with <https://example.com>
 ```
 
+<div class="sr"></div>
+
 ## Table
 
 ```markdown
@@ -123,6 +135,8 @@ easily with <https://example.com>
 | tab[4][0] | tab[4][1] |
 | tab[5][0] | tab[5][1] |
 ```
+
+<div class="sl"></div>
 
 ## Others
 
@@ -159,6 +173,8 @@ syntax
 
 [//]: # (This may be the most platform independent comment)
 ```
+
+<div class="sr"></div>
 
 ## Sources
 
