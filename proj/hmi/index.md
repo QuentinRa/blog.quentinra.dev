@@ -7,6 +7,8 @@ website, ...
 You must think a lot about how you should create one,
 and that's the purpose of this course.
 
+<div class="sl"></div>
+
 ## Introduction
 
 You will need
@@ -32,6 +34,8 @@ you can draw it by yourself or use tools like
 You can use this great website to think about menus
 or make optimal choices : [optimalworkshop](https://www.optimalworkshop.com/).
 
+<div class="sr"></div>
+
 ## Users
 
 Before coding some application, one must think about the
@@ -51,6 +55,8 @@ You can't make something that would be perfect and good for everyone
 but try to make some categories of users and provide them
 an application that would aim to satisfy most of their
 requests.
+
+<div class="sl"></div>
 
 ## Steps
 
@@ -74,7 +80,9 @@ OR you can follows theses steps
     1. test and reviews by users
     2. filter changes to be made 
     3. implement one or more changes
-    
+
+<div class="sr"></div>
+
 ## Jakob Nielsen
 
 Because if you need more than a bit of theory,
@@ -144,6 +152,8 @@ you MUST take into account.
     > In last resort, adding some documentation
     > for complex applications is the way to go.
 
+<div class="sl"></div>
+
 ## Last tips
 
 It may be better to load everything needed at the start
@@ -156,6 +166,8 @@ so you should exploit the width.
 If you need more that 3 clicks to do one action, and
 you do this action ofter then you MUST re-think your
 interface.
+
+<div class="sr"></div>
 
 ## Sources
 
