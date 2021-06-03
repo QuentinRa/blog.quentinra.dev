@@ -21,6 +21,8 @@ you would do your specs, code and test it. You will do the same
 as for the project in your **sprint** and add a functionality
 then another etc. until you caught your **goal**.
 
+<div class="sl"></div>
+
 ## Requirements
 
 You would usually need
@@ -41,6 +43,8 @@ of theses steps until the end of the project
 4. [Sprint review](sprint/review.md) <span class="tms">(review, demonstration, at the end)</span>
 5. [Sprint retrospective](sprint/retrospective.md) <span class="tms">(suggestions for next print?)</span>
 
+<div class="sr"></div>
+
 ## Some advices
 
 Try to relay as much as possible information in your group. Be sure to ask others
@@ -51,6 +55,8 @@ Try to relay as much as possible information in your group. Be sure to ask other
 
 and try to give them advices, be it person-to-person or talk about it and ask
 for everyone help in the ``daily scrum``.
+
+<div class="sl"></div>
 
 ## Scrum master or ideology
 
@@ -71,6 +77,8 @@ You must do everything to
 * interact face-to-face
 * your development speed must be stable
 * always strive to do better
+
+<div class="sr"></div>
 
 ## Sources
 
