@@ -5,6 +5,8 @@ In this course you will learn
 * how to write some latex documentation
 * how to write maths in latex
 
+<div class="sr"></div>
+
 ## Introduction
 
 You may code latex (`.tex`) documents on
@@ -20,6 +22,8 @@ them before starting some document from
 scratch <https://www.overleaf.com/latex/templates>
 since there are presentation templates, cv templates,
 report templates...
+
+<div class="sl"></div>
 
 ## Writing documents
 
@@ -44,6 +48,8 @@ you will have to use a directive starting with
 * [Lists](directives/lists.md)
 * [Code](directives/code.md)
 
+<div class="sr"></div>
+
 ## Writing maths in latex
 
 First and foremost, you should check out this
@@ -66,6 +72,8 @@ or use ``\quad`` (or `\,`, `\:`, ...).
 just draw it on
 [detexify](https://detexify.kirelabs.org/classify.html) 
 and ask him to look for it.
+
+<div class="sl"></div>
 
 ## Sources
 
