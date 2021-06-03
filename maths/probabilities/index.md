@@ -30,6 +30,8 @@ will be used in other courses.
     \(Card(E) = |E| = \#E\)</span> is the cardinal of
     E, meaning the number of elements.
 
+<div class="sl"></div>
+
 ## Vocabulary and properties
 
 <p>\(\mathbb{P}(A)\) 
