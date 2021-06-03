@@ -1,0 +1,82 @@
+{
+  "courses": [
+    {
+      "tag": "c",
+      "name": "C",
+      "desc": "We start from scratch and end up to creating more complex programs like ones using threads or graphical interface in ncurses for instance.",
+      "icon": "<i class=\"bi bi-terminal-fill\"></i>"
+    },
+    {
+      "tag": "java",
+      "name": "Java",
+      "desc": "Learn java and Oriented-object programming. We also dig into JavaFX, Swing and AWT, Libgdx and lwjgl3.",
+      "icon": "<i class=\"bi bi-window\"></i>"
+    },
+    {
+      "tag": "cpp",
+      "name": "C++",
+      "desc": "???",
+      "icon": "<i class=\"bi bi-window\"></i>"
+    },
+    {
+      "tag": "python",
+      "name": "Python",
+      "desc": "???",
+      "icon": "<i class=\"bi bi-window\"></i>"
+    },
+    {
+      "tag": "linux",
+      "name": "Linux",
+      "desc": "Learn how to survive in (or mastering) a linux-based environment.",
+      "icon": "<i class=\"bi bi-terminal-fill\"></i>"
+    },
+    {
+      "tag": "networking",
+      "name": "Networking",
+      "desc": "Some basic knowledge about networking.",
+      "icon": "<i class=\"bi bi-wifi\"></i>"
+    },
+    {
+      "tag": "assembly",
+      "name": "Assembly",
+      "desc": "Introduction to assembly, ARM to be precise.",
+      "icon": "<i class=\"bi bi-sim\"></i>"
+    },
+    {
+      "tag": "cyber-security",
+      "name": "Cyber security",
+      "desc": "What we know about cyber security.",
+      "icon": "<i class=\"bi bi-shield-shaded\"></i>"
+    },
+    {
+      "tag": "sql",
+      "name": "SQL",
+      "desc": "Course about SQL, PL/SQL and PGSQL. You will also learn a bit about NoSQL Database with Cypher.",
+      "icon": "<i class=\"bi bi-server\"></i>"
+    },
+    {
+      "tag": "ocaml",
+      "name": "OCaml",
+      "desc": "Here you will learn about OCaml and functional languages.",
+      "icon": "<i class=\"bi bi-terminal-fill\"></i>"
+    },
+    {
+      "tag": "html-css",
+      "name": "HTML and CSS",
+      "desc": "Learn how to use html and css to create a simple website.",
+      "icon": "<i class=\"bi bi-globe\"></i>"
+    },
+    {
+      "tag": "js-ts-node",
+      "name": "JS, TS and Node",
+      "desc": "Learn how to use javascript or typescript. You can even learn more about Node.js and modules like electron.",
+      "icon": ""
+    },
+    {
+      "tag": "php",
+      "name": "PHP",
+      "desc": "Learn how complex, weird and vast PHP is, and a bit about framework PHP.",
+      "icon": "<i class=\"bi bi-globe\"></i>"
+    }
+  ]
+}
