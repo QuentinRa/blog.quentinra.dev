@@ -24,6 +24,8 @@ using it such as
 * <http://docs.mathjax.org/en/latest/>
 * <https://codeigniter.com/user_guide/index.html>
 
+<div class="sl"></div>
+
 # Installing sphinx
 
 Please take note that sphinx is only required
@@ -41,6 +43,8 @@ the pages together. We do that with ``toctree directive``
 
     Nom printed     <file_rst_without_extension>
 ```
+
+<div class="sr"></div>
 
 # Writing RST documents
 
@@ -62,6 +66,8 @@ Here a the most commons elements of syntax
 As a side node, space and indents are quite important
 in ``rst``, so be sure to check your indents if the compiler
 fails on a line and you don't know where is the error.
+
+<div class="sl"></div>
 
 # Sources
 
