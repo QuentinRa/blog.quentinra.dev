@@ -1,0 +1,52 @@
+{
+  "courses": [
+    {
+      "tag": "docker",
+      "name": "Docker",
+      "desc": "What's docker and why are we using it.",
+      "icon": "<i class=\"bi bi-box\"></i>"
+    },
+    {
+      "tag": "git",
+      "name": "Git",
+      "desc": "Why you MUST use git as a programmer and how to use it, with Github as example.",
+      "icon": "<i class=\"bi bi-box\"></i>"
+    },
+    {
+      "tag": "jetbrains",
+      "name": "Jetbrains",
+      "desc": "Some programming software free for students that will make your programming life easier.",
+      "icon": "<i class=\"bi bi-box\"></i>"
+    },
+    {
+      "tag": "vim",
+      "name": "VIM",
+      "desc": "The legendary, old yet powerful console terminal editor.",
+      "icon": "<i class=\"bi bi-box\"></i>"
+    },
+    {
+      "tag": "markdown",
+      "name": "Markdown",
+      "desc": "One of the most used language to write documentation outside your code, or simply information about it.",
+      "icon": "<i class=\"bi bi-box\"></i>"
+    },
+    {
+      "tag": "rst",
+      "name": "RST",
+      "desc": "A language to write documentations outside your code with a lot of powerful tools such as generating uml, graphs ... The syntax is like an upgraded Markdown.",
+      "icon": "<i class=\"bi bi-box\"></i>"
+    },
+    {
+      "tag": "latex",
+      "name": "LaTEx",
+      "desc": "The legendary language to write reports, create presentations quite easily and with great style",
+      "icon": "<i class=\"bi bi-box\"></i>"
+    },
+    {
+      "tag": "doxygen",
+      "name": "Doxygen",
+      "desc": "Write a standardised documentation in all your project, that can generates a website like a javadoc using doxygen",
+      "icon": "<i class=\"bi bi-box\"></i>"
+    }
+  ]
+}
