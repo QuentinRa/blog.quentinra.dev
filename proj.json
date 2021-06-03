@@ -1,0 +1,40 @@
+{
+  "courses": [
+    {
+      "tag": "hmi",
+      "name": "HMI",
+      "desc": "Learn the basic about how one should think an interface.",
+      "icon": "<i class=\"bi bi-window\"></i>"
+    },
+    {
+      "tag": "uml",
+      "name": "UML",
+      "desc": "Learn about a lot of kind of UML diagrams.",
+      "icon": "<i class=\"bi bi-map\"></i>"
+    },
+    {
+      "tag": "project-management",
+      "name": "Projects",
+      "desc": "What\\'s a project in real-life and how one should handle it.",
+      "icon": "<i class=\"bi bi-map\"></i>"
+    },
+    {
+      "tag": "agile-scrum",
+      "name": "Agile scrum",
+      "desc": "One of the great way to manage a project.",
+      "icon": "<i class=\"bi bi-shield-lock\"></i>"
+    },
+    {
+      "tag": "design-patterns",
+      "name": "Design patterns",
+      "desc": "Because writing code can be easier and you would rather want to learn the good practices beforehand.",
+      "icon": null
+    },
+    {
+      "tag": "tests",
+      "name": "Tests",
+      "desc": "How to write tests and for what. Cover tools like JUnit, CUnit, PHPUnit, ...",
+      "icon": "<i class=\"bi bi-cup\"></i>"
+    }
+  ]
+}
