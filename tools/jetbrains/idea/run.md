@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-In order to run some class, simply go the a ``main``
+To run some class, simply go to the ``main``
 function then you should see a ``green`` arrow. Click
 on it and that's it.
 
@@ -14,7 +14,7 @@ menu.
 
 ![conf1](run/conf1.png)
 
-then you can set your jdk, your program argument
+then you can set your JDK, your program argument
 and even set VM options.
 
 ![conf2](run/conf2.png)
@@ -22,7 +22,7 @@ and even set VM options.
 ## I don't have an arrow
 
 Check if your JDK is set. If that's okay, then
-is the directory of your files in ``blue`` ?
+is the directory of your files in ``blue``?
 
 If not then ``CTRL+ALT+MAJ+S`` then go to `modules`
 then set your source folder as ``source``.
