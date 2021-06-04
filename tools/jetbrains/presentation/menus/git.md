@@ -17,7 +17,7 @@ left of your screen, you should have a
 
 ![push-pull](git/push-pull.png)
 
-You migh use the ``blue`` arrow to pull
+You might use the ``blue`` arrow to pull
 and the ``green`` to push. Jetbrains will show
 you a great tool to merge if needed.
 
