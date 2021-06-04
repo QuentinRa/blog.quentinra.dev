@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-You interface should look a bit like this,
+Your interface should look a bit like this,
 at least based on IntelliJ2020 (changed a
 bit in 2021)
 
