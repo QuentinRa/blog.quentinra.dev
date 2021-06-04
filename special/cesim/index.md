@@ -141,4 +141,39 @@ period.
 
 ## Some help for your strategy
 
-...
+In winter, you will have less clients.  Two strategies you may use
+
+* save your money by reducing costs / report them for the next period
+* invest for the next period
+
+Things like theses can be taken into consideration
+
+* permanent staff: don't take too much of them otherwise you will
+pay a lot each winter for nothing. You may use temporary staff.
+* train staff main help to avoid hiring temporary staff
+* reduce marketing? (5k?)
+* less training cost?
+* less renovations?
+* cheap rooms?
+* sell as much as possible to agencies?
+* less dividends?
+
+The ``retour cumulté aux actionnaire`` is the sum
+of all your results. Meaning the more money to gain,
+the more this value increase. But having a positive
+result means that you will pay taxes.
+
+In summer
+
+* cheap rooms?
+* a lot of marketing?
+* full training cost? (10k?)
+* full renovations?
+* a lot of dividends
+
+You may also go abroad (international), but if you do it
+at the start (turn=1) then be carefully to not have a debt>100%.
+Going abroad will really increase what you earn since they
+are usually a lot sell to agencies and then you can
+sell a lot of room for >100$/room really easily. Still
+more rooms means more costs!
