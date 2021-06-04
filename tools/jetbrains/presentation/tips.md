@@ -20,5 +20,5 @@ your languages here.
 ### Delete unused warnings
 
 You may call a variable ``ignore``, sometimes
-(in a try catch for instance), Jetbrains understand
+(in a try-catch for instance), Jetbrains understand
 that you won't use this variable for a reason.
