@@ -20,5 +20,13 @@ minimum local
 if we have a 
 <span>\(\epsilon > 0\)</span>
 giving us
-<span>\(x \in X \cap B(x*,\epsilon) f(x*) \geq f(x)\)</span>.
+<span>
+\[
+\begin{cases}
+x \in X \cap B(x*,\epsilon) \\
+f(x*) \geq f(x)
+\end{cases}
+\]
+</span>.
 </div>
+
