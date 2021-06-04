@@ -10,5 +10,5 @@ Here some menus that you really want to check out
 * [Terminal](menus/terminal.md)
 * [Snippets](menus/snippets.md)
 * [Refactor](menus/refactor.md)
-* [Analyse](menus/analyse.md)
+* [Analyse](menus/analyze.md)
 * [UML](menus/uml.md)
