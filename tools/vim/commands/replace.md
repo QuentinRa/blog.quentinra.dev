@@ -7,13 +7,13 @@
 * `:s/old/new/gc`: same but ask confirmation before
 * `:n,ms/old/new/g`: same but only n to m lines
 
-Remplacement (ESC)
+Replacement (ESC)
 * `r` : replace character under cursor
 * `R` : replace characters while ESC not pressed
 
-Remplacement
+Replacement
 
-* `s`: delete character under cursor then switch to insert mode
+* `s`: delete the character under cursor then switch to insert mode
 * `cc`: delete line then switch to insertion mode
-* `cw`: delete from cursor until the end of the word 
+* `cw`: delete from the cursor until the end of the word 
   then switch to insertion mode
