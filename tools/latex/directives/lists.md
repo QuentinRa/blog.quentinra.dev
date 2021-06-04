@@ -12,4 +12,4 @@ Simply do that to create an unordered list
 ```
 
 and you can change ``itemize`` to `enumerate`
-in order to create an ordered list.
+to create an ordered list.
