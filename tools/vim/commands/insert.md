@@ -3,8 +3,8 @@
 [Go back](..)
 
 * `i` insert before cursor
-* `a` insert after cursor
+* `a` insert after the cursor
 * `I` insert at the beginning of the line
 * `A` insert at the end of the line
-* `o` insert at a the line under ours
-* `O` insert at a the line on top of ours
+* `o` insert at the line under ours
+* `O` insert at the line above ours
