@@ -1,8 +1,12 @@
 # TP FIGURES
 
+[Go back](..)
+
 This tutorial is about using other IDE (basically
 a software like eclipse) than eclipse, because if you do
 things will go way smoother.
+
+<div class="sr"></div>
 
 ## Introduction
 
@@ -15,6 +19,8 @@ That's one hell of a job because there are too many comments,
 and sometimes you don't know exactly what you need to do
 but do it step by step and you will see that's easy
 (at least not that hard).
+
+<div class="sl"></div>
 
 ## Choose your IDE
 
@@ -34,6 +40,8 @@ for projects not "test-driven development" like this),
 trying VSCode for this one would be better. Then switch or
 try IntelliJ for others. 
 But just in case, [here is your tutorial](idea.md).
+
+<div class="sr"></div>
 
 ## Here some tips
 

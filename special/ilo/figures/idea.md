@@ -1,5 +1,7 @@
 # IntelliJ
 
+[Go back](index.md)
+
 You can find some tutorial about
 IntelliJ [here](../../../tools/jetbrains/index.md).
 
