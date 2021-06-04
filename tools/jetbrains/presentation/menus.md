@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-Here some menus that you really want to check out
+Here some menus that you want to check out
 
 * [Git](menus/git.md)
 * [Database](menus/database.md)
