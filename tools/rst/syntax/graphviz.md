@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-You can draw some graph using ``Graphviz``.
+You can draw some graphs using ``Graphviz``.
 
 ```rest
 .. graphviz::
