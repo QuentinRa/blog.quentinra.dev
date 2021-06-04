@@ -41,8 +41,10 @@ methods.
 
 * [Minimum (local)](points/minl.md)
 * [Minimum (global)](points/ming.md)
-* [Point Selle / saddle point](points/saddle.md)
-* [Critical point](points/critical.md)
+
+[comment]: <> (* [Point Selle / saddle point]&#40;points/saddle.md&#41;)
+
+[comment]: <> (* [Critical point]&#40;points/critical.md&#41;)
 
 <div class="sr"></div>
 
