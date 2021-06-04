@@ -3,9 +3,9 @@
 [Go back](..)
 
 * New project from existing files
-* Web server is a remote host ... ftp
-* set local path for project
-* add remote server
+* Web server is a remote host ... FTP
+* set the local path for the project
+* add a remote server
 
     * name: a name for you
     * type: FTP or SFTP
@@ -15,7 +15,7 @@
     * web server url : put your server url here, not your website one
     
 * select folder project on the server
-* you may or not correct server url here
+* you may or not correct the server URL here
 * ``Settings > Build …, Deployment > Deployment > Options``
 * set ``Upload changed files automatically …``
 to ``on … save action`` or `always`.
