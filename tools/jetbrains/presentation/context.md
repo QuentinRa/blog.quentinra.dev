@@ -2,4 +2,14 @@
 
 [Go back](interface.md)
 
-...
+![context-menu](context.png)
+
+* ``new`` to create a new file, with a template
+* ``analyze`` : [see analyze menu](menus/analyze.md)
+* ``refactor``: rename, ... [see refactor](menus/refactor.md).
+* you can also delete with ``suppr``
+* ``reformat code``: cleanup code
+* ``open in``: open in terminal, explorer
+* ``git``: undo, revert, ...
+* ``local history``: undo, revert, ...
+* ``Mark directory``: mark as root, sources, tests, ... directory
