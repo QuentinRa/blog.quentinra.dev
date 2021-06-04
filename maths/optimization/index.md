@@ -40,7 +40,7 @@ methods.
 <br>
 
 * [Minimum (local)](points/minl.md)
-* [Minimum (global)](points/minl.md)
+* [Minimum (global)](points/ming.md)
 * [Point Selle / saddle point](points/saddle.md)
 * [Critical point](points/critical.md)
 
