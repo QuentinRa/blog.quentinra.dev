@@ -2,8 +2,8 @@
 
 [Go back](..)
 
-Using a date, a title and an author, you document
-source code might looks like this
+Using a date, a title, and an author, you document
+source code might look like this
 
 ```latex
 \documentclass{article}
