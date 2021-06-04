@@ -2,9 +2,9 @@
 
 [Go back](..)
 
-You can write some uml using plantuml syntax
+You can write some UML using PlantUML syntax
 but you may need to set up some configuration
-before hand.
+beforehand.
 
 ```rest
 .. uml::
@@ -21,5 +21,5 @@ before hand.
  	@enduml
 ```
 
-Please refer to uml course to learn how to write
-uml in plantuml.
+Please refer to UML course to learn how to write
+UML in PlantUML.
