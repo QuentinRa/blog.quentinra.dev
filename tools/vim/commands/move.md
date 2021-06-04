@@ -21,4 +21,4 @@ Move current screen
 * `CTRL-B` : go up one screen
 
 the unit of line skipped is the size of the line
-that can be show in the screen.
+that can be shown on the screen.
