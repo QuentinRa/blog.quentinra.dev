@@ -15,14 +15,14 @@ add_executable(name main.c main.h ...)
 ```
 
 If the name is ``prim`` then after compiling your
-CMakelist you will have it here
+CMakelist you will have here
 
 ![targets](targets.png)
 
 and you can
 
 1. compile
-2. select this target as the compiled one/runed one
+2. select this target as the compiled one/run one
 3. change the profile
 4. run this target
 
