@@ -15,5 +15,5 @@ in latex.
 
 ```
 
-Please refer to latex course to learn how to write
+Please refer to the latex course to learn how to write
 maths in latex.
