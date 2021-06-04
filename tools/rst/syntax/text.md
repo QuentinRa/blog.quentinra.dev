@@ -13,5 +13,5 @@ some **text in bold** and some
 text in *italic*.
 
 | This is text in one line
-| This is text in antoher line
+| This is text in another line
 ```
