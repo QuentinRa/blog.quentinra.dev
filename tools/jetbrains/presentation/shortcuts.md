@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-Here is my syntax for the following sortcuts
+Here is my syntax for the following shortcuts
 
 * ``a+b``: press `a` and `b` at the same time
 * ``*+b``: left click and `b` at the same time
@@ -19,13 +19,13 @@ Here is my syntax for the following sortcuts
 * ``CTRL+Z``: undo
 * ``CTRL+SHIFT+Z``: redo
 
-Also take not that you can easily select a pack of lines
+Also, take note that you can easily select a pack of lines
 by pressing ``SHIFT`` and using arrows.
 
-And the two great one are
+And the two great ones are
 
-* ``^+CTRL+/`` : do a inline comment for all lines selected.
-* ``^+CTRL+SHIFT+/`` : do a block comment for all lines selected.
+* ``^+CTRL+/``: do an inline comment for all lines selected.
+* ``^+CTRL+SHIFT+/``: do a block comment for all lines selected.
 
 ### search
 
@@ -52,18 +52,18 @@ Search for ``settings/classes/file/...``
 
 * ``ALT+INSERT`` : generates methods (such as getters/setters/constructors/implements in JAVA)
 * ``^+CTRL+ALT+T``: generate a bloc of code around selection (if, try catch, ...)
-* ``CTRL+SHIFT+T`` : generates test class
-* ``CTRL+*`` : clic on a method/class/... to view usages
+* ``CTRL+SHIFT+T``: generates test class
+* ``CTRL+*`` : click on a method/class/... to view usages
 
 ### You may use
 
-* ``^+CTRL+SHIFT+U`` : uppercase to lowercase or lowercase to uppercase
+* ``^+CTRL+SHIFT+U``: uppercase to lowercase or lowercase to uppercase
 * ``CTRL+G``: to move to a line
 * ``CTRL+R``: replace some text
-* ``ALT+7``: beware and do not use the 7 of you numpad. This open
-a structure a the file popup. In Oriented-object languages
+* ``ALT+7``: beware and do not use the 7 of your Numpad. This opens a 
+  popup with the structure of the file. In Oriented-object languages,
 you could see all the classes in a file, methods, ...
-and can easily navigates to some file member.
-* ``CTRL+ALT+MAJ+U`` : generate an UML diagram of selected files
+and can easily navigate to one.
+* ``CTRL+ALT+MAJ+U``: generate an UML diagram of selected files
 in available
-* ``CTRL+ALT+U`` : same as above but in a small popup like a preview
+* ``CTRL+ALT+U``: same as above but in a small popup like a preview
