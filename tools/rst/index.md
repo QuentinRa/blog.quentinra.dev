@@ -3,22 +3,22 @@
 `rst` or `reST` means ``reStructuredText``, file with
 extension ``.rst``.
 
-To put it simply, its a language that is great to make
+To put it simply, it's a language that is great to make
 ``documentations`` since 
 looking like this [readthedocs](https://docs.readthedocs.io/en/stable/index.html).
 
 That's a language you will find in documentations
 such as in python, but the link above ``readthedocs``
-is a continuous integration system that allow you
+is a continuous integration system that allows you
 
 * to write code (by yourself)
 * write documentation using `sphinx`, in ``rst``
 * then when changes are made in the documentation,
-automaticaly, the website will have the new docs.
+automatically, the website will have the new docs.
 * like git, you can have different branches so
 one can switch to a version of the code easily
   
-I started using it after seing a lot of programmers
+I started using it after seeing a lot of programmers
 using it such as
 
 * <http://docs.mathjax.org/en/latest/>
@@ -34,7 +34,7 @@ For python command, skip this part.
 
 ... some explanation here ...
 
-Sphinx use a ``tree`` system, we we need to link
+Sphinx use a ``tree`` system, we need to link
 the pages together. We do that with ``toctree directive``
 
 ```rest
@@ -63,7 +63,7 @@ Here a the most commons elements of syntax
 * [class or methods](syntax/class-or-methods.md)
 * [side note](syntax/side-note.md)
 
-As a side node, space and indents are quite important
+As a side note, space and indents are quite important
 in ``rst``, so be sure to check your indents if the compiler
 fails on a line and you don't know where is the error.
 
