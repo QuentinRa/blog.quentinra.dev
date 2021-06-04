@@ -3,7 +3,7 @@
 [Go back](..)
 
 ```rest
-I can load on image like this
+I can load an image like this
 
 .. image:: src
 
@@ -13,7 +13,7 @@ I can write some inline link like
 I can create a download link using
 :download:`name <relative/path/file>`.
 
-.. _name: url
+.. _name: URL
 
 Another way to use a link is this one `name`_
 when we stored the link into a variable and can
