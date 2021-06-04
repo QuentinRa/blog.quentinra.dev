@@ -57,6 +57,7 @@ and if you got more than one result, then check the conditions
 or you will have to do a constrained optimization method.
 
 * [Hessian/Gradient](uo/hessian.md)
+* [Using the hessian](uo/use-hessian.md)
 * [Least squares methods](uo/least-squares.md)
 * [Geometric programming](uo/geometric.md)
 

@@ -61,7 +61,7 @@ Then round 2, the hessian
 </ul>
 
 <p>So we have the hessian
-\[ \begin{pmatrix}4&-2\\-2&2\end{pmatrix} \]
+\[ Hf(x,y)=\begin{pmatrix}4&-2\\-2&2\end{pmatrix} \]
 I hope you took the time to do this easy one!
 </p>
 
