@@ -1,7 +1,7 @@
 # Markdown
 
 Markdown, associated with ``.md`` files,
-are commonly used in documentation, to write
+are commonly used in documentation files or to write
 simple documents...
 
 You can learn it in a couple of minutes, that's quite
@@ -15,7 +15,7 @@ simple. Here is a fantastic guide
 
 ## Titles
 
-You got 6 kind of title, created using ``#``.
+You got 6 kinds of titles, created using ``#``.
 The more ``#`` you add, the smaller your title becomes.
 
 ```markdown
@@ -27,7 +27,7 @@ The more ``#`` you add, the smaller your title becomes.
 ###### h6 - really small title
 ```
 
-**Note** : be sure to leave a space after ``#``
+**Note**: be sure to leave a space after ``#``
 
 <div class="sr"></div>
 
@@ -42,7 +42,7 @@ This is another paragraph.
 This is still the same paragraph, but you should
 not use this uncommon syntax.
 
-This is in **bold** while this in in
+This is in **bold** while this is in
 *italic* and this is also in __bold__ while
 this is also in _italic_. This is in
 ***bold and italic***.
@@ -60,25 +60,25 @@ You may use theses
 ```markdown
 * an item
 * another item
-    * an item of a sub list
+    * an item of a sub-list
     that have a long sentence
     * and again another item
 * a 3rd item
 ```
 
-or you can change and use ordered list or
+or you can change and use an ordered list or
 a mix of both like this
 
 ```markdown
 1. an item
 2. another item
-    * an item of a sub list
+    * an item of a sub-list
     that have a long sentence
     * and again another item
 3. a 3rd item
 ```
 
-**Note** : you may use ``*`` or `-` or `+` for 
+**Note**: you may use ``*`` or `-` or `+` for 
 unordered lists.
 
 <div class="sr"></div>
@@ -92,19 +92,16 @@ You can write some \`inline code\` using inverted quotes
 ```
 
 and you can write a lot of code, using this syntax
-where ``c`` is the highlight language
+where ``c`` is the highlighted language
 
-```c
-```c
+<pre class="language-c">
+<code class="language-c"
+>```c
 int main(void){
 
 }
-// remove this trailing slash,
-// that was only needed since I couldn't
-// prevent it to think that theses were
-// then end of the block
-\ ```
-```
+```</code>
+</pre>
 
 <div class="sl"></div>
 
@@ -156,14 +153,14 @@ And horizontal separators
 _________________
 ```
 
-You may be able to use checkbox
+You may be able to use a checkbox
 
 ```markdown
 * [ ] not checked
 * [x] checked
 ```
 
-And you can do comments with one of theses
+And you can do comments with one of these
 syntax
 
 ```markdown
@@ -171,7 +168,7 @@ syntax
 
 [//]: <> (This is also a comment.)
 
-[//]: # (This may be the most platform independent comment)
+[//]: # (This may be the most platform-independent comment)
 ```
 
 <div class="sr"></div>
