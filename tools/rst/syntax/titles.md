@@ -19,9 +19,9 @@ Chapter title
 ....
 ```
 
-Symbols for sections, subsections and subsubsections
-may be interchanged according to your linking.
-But according to the documentation you should rather
+Symbols for sections, subsections, and subsubsections
+maybe interchanged according to your linking.
+But according to the documentation, you should rather
 do it like that
 
 * ``#``: part
