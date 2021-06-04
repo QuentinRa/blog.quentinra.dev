@@ -11,38 +11,40 @@
 
 ## Pro(s) and cons(s)
 
-Before digging into, please take note that Jetbrains
+Before digging into it, please take note that Jetbrains
 IDE
 
 * may take a lot of memory
-* may take a lot (~3Gb per IDE) of disk space, since you will
+* may take a lot (~3Gb per IDE) of disk space since you will
   have to download many IDEs in most cases
 * in ``IDEA``, you can't compile a file but always everything at all
-* in ``CLion``, I'm not really a fan of `CMakeLists` over `Makefiles`
+* in ``CLion``, I'm not a fan of `CMakeLists` over `Makefiles`
 
 And here a some functionalities
 
 * they come ``preconfigured`` so most of the time,
   download and run and that's it.
 * the interface is the same in all of theirs IDEs
-* they allow you to code in team by joining a friend
+* they allow you to code in a team by joining a friend
   with ``CodeWithMe``
 * you can manage your projects with ``YouTrack``
-* verify your code and giving you advices/fix : check
-* generating ``UML`` from code : check
-* spelling : check
-* git integration, color for files : check
-* code directly on a server `PHP` : check
-* move easily between files, search tools : check
-* can create language plugin easily : check
-* connect to a database, sql integration : check
-* intelligent refactoring : check
+* verify your code and giving you advice/fix
+* generating ``UML`` from code
+* spelling (some rustic support)
+* git integration, color for files
+* code directly on a server `PHP` 
+* move easily between files, search tools
+* can create language plugin easily
+* connect to a database, sql integration
+* intelligent refactoring
+* can reset to the previous version of a file
+  (with or without git)
 
 <div class="sl"></div>
 
 ## Installation
 
-I personally recommend using the
+I recommend using the
 [toolbox](https://www.jetbrains.com/toolbox-app/)
 to manage your app.
 
@@ -62,7 +64,7 @@ Jetbrains underline in
 * ``green`` : typos
 * or color in ``grey`` : unused variables
 
-You may clic on a underlined word and press ``alt+enter``
+You may click on an underlined word and press ``alt+enter``
 to see a quick fix of it. 
 
 * [Interface](presentation/interface.md)
@@ -72,7 +74,7 @@ to see a quick fix of it.
 
 <div class="sl"></div>
 
-## IDE : IntelliJ IDEA
+## IDE: IntelliJ IDEA
 
 Examples of cases where you might be using it
 
@@ -85,7 +87,7 @@ Examples of cases where you might be using it
 One thing to note is the menu `Project structure`
 (`CTRL+ALT+MAJ+S`). You can 
 
-* change you JDK
+* change your JDK
 * change your module configuration (set source folder, tests folder, output folder, ...)
 * add libraries (such as JUnit4, ...)
 
@@ -97,7 +99,7 @@ Then some tutorials
 
 <div class="sr"></div>
 
-## IDE : PHPStorm
+## IDE: PHPStorm
 
 Examples of cases where you might be using it
 
@@ -105,7 +107,7 @@ Examples of cases where you might be using it
 * code in ``HTML/CSS/JS`` or ``Boostrap`` (but WebStorm might be wiser)
 * code in ``Node.js``
 
-Please not that you can directly code on a server, that may be useful
+Please note that you can directly code on a server, that may be useful
 for those that were uploading their files each time they changed
 on a server.
 
@@ -114,7 +116,7 @@ on a server.
 
 <div class="sl"></div>
 
-## IDE : CLion
+## IDE: CLion
 
 Examples of cases where you might be using it
 
@@ -125,7 +127,7 @@ Like PhpStorm, you can use a remote compiler to compile your code
 or use a local one.
 
 Using the basic configuration, you will have to use 
-``CMake`` to compile but `Makefile` are supported, if you
+``CMake`` to compile but `Makefile` are supported if you
 manage to.
 
 * [Starting with CMake](clion/cmake.md)
