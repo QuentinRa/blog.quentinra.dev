@@ -2,8 +2,7 @@
 
 [Go back](..)
 
-In the left column you can place
-breakpoints.
+In the left column, you can place breakpoints.
 
 ![break](debug/debug.png)
 
