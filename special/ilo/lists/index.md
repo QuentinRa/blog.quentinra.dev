@@ -22,6 +22,8 @@ but please only add the folder ``tests`` after
   like in the previous TP (check it out for
   the setup if you do).
   
+<div class="sr"></div>
+
 # Some tips
 
 It's all about iterators. You got an iterator
@@ -40,8 +42,9 @@ bit further the example with ``ArrayList``.
 ```java
 default void clear() {
     Iterator<E> iterator = this.iterator();
-    while (iterator.hasNext()) { // we do not use foreach
-        iterator.next(); // advance
+    while (iterator.hasNext()) { // example with while
+        iterator.next(); // advance (do not forget!!!)
+        // next return an element but we don't care
         iterator.remove(); // remove
     }
 }
@@ -91,7 +94,7 @@ according to the case
 
 * index < 0 : exception
 * index = 0 : insert
-* index = size : add (at the end)
+* index = size : add
 * otherwise find the previous element and make an insert
 
 Iterators are a way to iterate a list/set of objects.
