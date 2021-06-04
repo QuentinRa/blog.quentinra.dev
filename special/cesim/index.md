@@ -71,7 +71,38 @@ were all in the range ``7/20 up to 12/20``...
 
 ## Presentation of the website
 
-...
+**Planning**: : read it and **don't forget** the dates when turns
+are ending...
+
+**Manuals**: some documentation about the website.
+
+**Results**: turn results, check next part
+
+**Decisions**: take your decisions here
+  * **Conditions du marché** : READ THIS. You will have some information that
+  may or not have an impact. Still you can guess how many clients you will have.
+  (if you see 4000 then you can expect at least 2000 if you ratio price/quality
+    is good. You can expect a lot more if your price is low (according
+    to other like 60$-70$), even in Winter!)
+  * **Ventes**: you can sell at the ``guichet`` or to agencies (you should
+    sell as most as possible to agencies). And you can do some marketing,
+    as we noticed it will increase by a bit the agencies' price for some times
+    (the current one a lot, and a little bit less in the next periods).
+  * **Opérations**: manage your hotel
+    * repair (quality++, money--)
+    * buy rooms
+    * reduce ``coûts administratifs``: seems to take a lot of money but didn't really
+    did anything (no major changes if increased a lot like 40k with 5k...). Seems
+    related to the amount of money taken by the taxes.
+    * reduce ``coûts directs`` : tested but not found any changes (the ``coûts directs``
+      in results didn't seem to change nor impact the quality).
+    * hire staff (permanent/temporary)
+    * train staff (reduce stress, increase their skills and quality)
+
+> blue cases are the expected value of something. So you will have to guess
+> what this case will have in value in the next turn. Your estimated result
+> will use theses to show how many money you will have in the next turn. So write
+> some values carefully.
 
 <div class="sr"></div>
 
