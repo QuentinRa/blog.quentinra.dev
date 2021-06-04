@@ -1,6 +1,6 @@
 # Latex
 
-In this course you will learn
+In this course, you will learn
 
 * how to write some latex documentation
 * how to write maths in latex
@@ -12,12 +12,12 @@ In this course you will learn
 You may code latex (`.tex`) documents on
 
 * [Overleaf](https://www.overleaf.com/), simple and collaborative tool, need register
-* [CoCalc](https://cocalc.com/), ui may be a bit hard to use but no account required
+* [CoCalc](https://cocalc.com/), UI may be a bit hard to use but no account required
 
 You can also use a latex compiler on your machine
 but that's not covered for now.
 
-There are a lof of latex templates so be sure to check
+There are a lot of latex templates so be sure to check
 them before starting some document from
 scratch <https://www.overleaf.com/latex/templates>
 since there are presentation templates, cv templates,
@@ -27,7 +27,7 @@ report templates...
 
 ## Writing documents
 
-Generally, latex documents looks like
+Generally, latex documents look like
 
 ```latex
 \documentclass{article}
@@ -63,7 +63,7 @@ in a whole line.
 An alternative to ```\[latex\]``` is
 ``\begin{equation}latex\end{equation}``.
 
-Space are useless in your latex code since the math
+Spaces are useless in your latex code since the math
 parser will do what he wants, you should either
 use ``\ `` so slash followed by a space 
 or use ``\quad`` (or `\,`, `\:`, ...).
