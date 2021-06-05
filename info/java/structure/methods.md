@@ -10,17 +10,21 @@ A method can have
 * **a name**
 * some arguments
 
-Some methods are particular, they are called **getters** 
+**Getters and setters** : Some methods are particular, they are called **getters** 
 and **setters**. A getter returns a value and a setter set a value in the class.
 A getter usually starts with ``get...`` and a setter
 usually starts with ``set...``.
 
-Declaring a method ``final`` means that no one can overrides it
+**final methods**: Declaring a method ``final`` means that no one can overrides it
 (explained later).
 
-**Note**: in an instance method, you can use the keyword ``this``
+**this keyword**: in an instance method, you can use the keyword ``this``
 to call an attribute/method of the current object. The keyword
 is optional but that's a good practice to use it.
+
+**class/instance**: in a class method, you can't use instance members
+since you need an instance. But in instance methods since you got
+the class, you can call class members.
 
 > **Advanced note**: In Java, the notion of address don't exist.
 > We you are calling a method using a parameter
