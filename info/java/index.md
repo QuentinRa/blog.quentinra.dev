@@ -44,6 +44,7 @@ applied on a class.
 
 * [First java file](structure/main.md)
 * [Creating a class](structure/class.md)
+* [Visibility](structure/visiblity.md)
 * [Attributes](structure/attributes.md)
 * [Methods](structure/methods.md)
 * [Constructors](structure/constructors.md)
