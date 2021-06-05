@@ -69,11 +69,11 @@ but [here](structure/mcq.md) some MCQ**.
 Now our aim would be to write some code. But for that we
 need to take a look at all of theses
 
-* Types
-* Structures
-* Operators
-* Packages and import
-* Object class
+* [Types](beginner/types.md)
+* [Structures](beginner/structures.md)
+* [Operators](beginner/operators.md)
+* [Packages and import](beginner/packages.md)
+* [Object class](beginner/object.md)
 * Arrays
 * [Exceptions](beginner/exceptions.md)
 
@@ -83,6 +83,9 @@ Then you can read theses
 * Abstract classes
 * Interfaces
 * Javadoc
+
+And here some MCQ to test the [theory](beginner/mcq.md) but you
+must practice!
 
 <div class="sl"></div>
 
