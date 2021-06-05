@@ -18,6 +18,10 @@ We are distinguishing 3 types of constructors
 * valued constructors (have parameters)
 * constructor of copy (take an object of the class class in argument)
 
+> **Advanced Note**: a constructor can be private/package/...
+> according to your need. Trough in most case you will see public
+> constructors.
+
 ## Example
 
 ```java

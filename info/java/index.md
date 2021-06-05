@@ -50,6 +50,7 @@ applied on a class.
 * [Methods](structure/methods.md)
 * [Constructors](structure/constructors.md)
 * [Creating objects](structure/creation.md)
+* [Destroying objects](structure/destroy.md)
 
 And now you should be able
 
