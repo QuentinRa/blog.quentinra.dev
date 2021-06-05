@@ -50,3 +50,37 @@ applied on a class.
 * [Methods](structure/methods.md)
 * [Constructors](structure/constructors.md)
 * [Creating objects](structure/creation.md)
+
+And now you should be able
+
+* to create a file with a class
+* with some attributes and some methods
+* and creating some objects using constructors
+
+Still a lot to learn but that's the must you need to know in order
+to understand everything else. **You should practice by yourself
+but [here](structure/mcq.md) some MCQ**.
+
+<div class="sr"></div>
+
+## Beginner
+
+...
+
+<div class="sl"></div>
+
+## Advanced
+
+...
+
+<div class="sr"></div>
+
+## Professional
+
+...
+
+<div class="sl"></div>
+
+## Graphical interfaces
+
+...
