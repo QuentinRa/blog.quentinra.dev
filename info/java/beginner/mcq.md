@@ -7,6 +7,7 @@
 How many primitives types there are in Java?
 
 <blockquote class="spoiler">
+<b>8</b>! Don't you dare forget this :(
 </blockquote>
 
 On how many bits char primitive type is defined?
@@ -35,6 +36,23 @@ turn of a loop? (next, pass, continue, skip, do, goto)
 
 <blockquote class="spoiler">
 It's <b>continue</b> keyword!
+</blockquote>
+
+What's the difference between ``==`` and `equals`.
+
+<blockquote class="spoiler">
+None by default, they both check if two object have the same address.
+But object can override <b>equals</b> and check the value
+rather than the address. For primitives types, <b>==</b> is checking
+the value.
+</blockquote>
+
+What's this code is doing ``object.equals(null)`` ?
+
+<blockquote class="spoiler">
+This code is returning false if object is not null, but if object
+is null, we have <b>null.method(...)</b> meaning that we will
+trigger a <b>NullPointerException</b>.
 </blockquote>
 
 ...
