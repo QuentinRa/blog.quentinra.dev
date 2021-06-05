@@ -22,6 +22,10 @@ We are distinguishing 3 types of constructors
 > according to your need. Trough in most case you will see public
 > constructors.
 
+And note that you can call another constructor with ``this(
+other constructor parameters)`` but this line **must** be the
+first line of your constructor.
+
 ## Example
 
 ```java
@@ -33,8 +37,8 @@ public class Person {
 
     // no parameters
     public Person() {
-        this.name = "John doe";
-        this.age = 0;
+        // calling Person(String name, int age)
+        this("John doe", 0);
     }
 
     // valuated constructor
@@ -43,7 +47,7 @@ public class Person {
         this.age = age;
     }
 
-    // copy
+    // copy, calling Person(String name, int age)
     public Person(Person p) { this(p.name, p.age); }
 }
 ```

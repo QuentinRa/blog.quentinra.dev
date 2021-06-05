@@ -74,7 +74,7 @@ need to take a look at all of theses
 * Operators
 * Object class
 * Arrays
-* Exceptions
+* [Exceptions](beginner/exceptions.md)
 
 Then you can read theses
 
