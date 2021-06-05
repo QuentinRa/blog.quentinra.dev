@@ -18,13 +18,13 @@ We are distinguishing 3 types of constructors
 * valued constructors (have parameters)
 * constructor of copy (take an object of the class class in argument)
 
-> **Advanced Note**: a constructor can be private/package/...
-> according to your need. Trough in most case you will see public
-> constructors.
-
 And note that you can call another constructor with ``this(
 other constructor parameters)`` but this line **must** be the
 first line of your constructor.
+
+> **Advanced Note**: a constructor can be private/package/...
+> according to your need. Trough in most case you will see public
+> constructors.
 
 ## Example
 
@@ -51,3 +51,32 @@ public class Person {
     public Person(Person p) { this(p.name, p.age); }
 }
 ```
+
+<div class="sr"></div>
+
+**Static (class) constructor**
+
+You have constructor for instances, but
+you also have a class constructors! They are not taking parameters
+since they are more like static blocs but could be used to init
+static attributes (even trough we mainly use inline initialisation).
+
+Syntax is
+
+```java
+import java.util.ArrayList;
+
+public class Test {
+    private static final ArrayList<Integer> list = new ArrayList<>();
+
+    static {
+        list.add(5);
+        list.add(7);
+        list.add(3);
+    }
+}
+```
+
+According to some tests, the static constructor seems to be called
+when the class is loaded in memory, which is not necessarily 
+at the start of the program.

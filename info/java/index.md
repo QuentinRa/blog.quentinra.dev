@@ -72,6 +72,7 @@ need to take a look at all of theses
 * Types
 * Structures
 * Operators
+* Packages and import
 * Object class
 * Arrays
 * [Exceptions](beginner/exceptions.md)
@@ -82,7 +83,6 @@ Then you can read theses
 * Abstract classes
 * Interfaces
 * Javadoc
-* Packages
 
 <div class="sl"></div>
 
