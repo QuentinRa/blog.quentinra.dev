@@ -19,7 +19,7 @@ aside for volatile, you need to know
 
 ## Example
 
-```
+```java
 public class Person {
     // attributes
     public final String name;

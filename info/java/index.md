@@ -46,6 +46,7 @@ applied on a class.
 * [Creating a class](structure/class.md)
 * [Visibility](structure/visiblity.md)
 * [Attributes](structure/attributes.md)
+* [Class and instance](structure/class-instance.md)
 * [Methods](structure/methods.md)
 * [Constructors](structure/constructors.md)
 
