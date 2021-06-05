@@ -66,7 +66,23 @@ but [here](structure/mcq.md) some MCQ**.
 
 ## Beginner
 
-...
+Now our aim would be to write some code. But for that we
+need to take a look at all of theses
+
+* Types
+* Structures
+* Operators
+* Object class
+* Arrays
+* Exceptions
+
+Then you can read theses
+
+* Inheritance
+* Abstract classes
+* Interfaces
+* Javadoc
+* Packages
 
 <div class="sl"></div>
 
