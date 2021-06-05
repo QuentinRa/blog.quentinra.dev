@@ -42,6 +42,7 @@ called **attributes** like a name, a size, ... and **methods**
 like ``buy(xxxxxx)``, `remove(xxxx)` that are basically functions
 applied on a class.
 
+* [Your first Java file](structure/main.md)
 * [Declaring a class in Java](structure/classes.md)
 
 ...
