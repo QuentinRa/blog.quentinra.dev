@@ -28,7 +28,7 @@ a project so no install required. **We are currently in Java16
 or Java1.16**
 
 * [Oracle JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
-* [??? JDK (no login)](https://jdk.java.net/archive/)
+* [Oracle JDK (no login)](https://jdk.java.net/archive/)
 * [Open JDK](https://openjdk.java.net/projects/jdk/)
 * [Windows JDK8 / 11](https://github.com/ojdkbuild/ojdkbuild)
 
@@ -42,7 +42,14 @@ called **attributes** like a name, a size, ... and **methods**
 like ``buy(xxxxxx)``, `remove(xxxx)` that are basically functions
 applied on a class.
 
-* [Your first Java file](structure/main.md)
-* [Declaring a class in Java](structure/classes.md)
+* [First java file](structure/main.md)
+* [Creating a class](structure/class.md)
+* [Attributes](structure/attributes.md)
+* [Methods](structure/methods.md)
+* [Constructors](structure/constructors.md)
+
+[comment]: <> (* [Your first Java file]&#40;structure/main.md&#41;)
+
+[comment]: <> (* [Declaring a class in Java]&#40;structure/classes.md&#41;)
 
 ...
