@@ -49,9 +49,4 @@ applied on a class.
 * [Class and instance](structure/class-instance.md)
 * [Methods](structure/methods.md)
 * [Constructors](structure/constructors.md)
-
-[comment]: <> (* [Your first Java file]&#40;structure/main.md&#41;)
-
-[comment]: <> (* [Declaring a class in Java]&#40;structure/classes.md&#41;)
-
-...
+* [Creating objects](structure/creation.md)
