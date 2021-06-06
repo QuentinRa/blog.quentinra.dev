@@ -90,8 +90,8 @@ Then you can read theses
 * [Polymorphism](beginner/polymorphism.md) (Surcharge in French)
 * [Inheritance](beginner/inheritance.md)
 * [Override](beginner/override.md)
-* Abstract classes
-* Interfaces
+* [Abstract classes](beginner/abstract.md)
+* [Interfaces](beginner/interfaces.md)
 * Javadoc
 
 And here some MCQ to test the [theory](beginner/mcq.md) but you
