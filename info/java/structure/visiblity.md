@@ -24,14 +24,18 @@ this property (method/attribute).
 is the same folder=package** can see, use/call
 this property (method/attribute).
 
-### In a nutshell :
-<table>
+### In a nutshell
+
+Here a recap for each visibility, who can see elements
+declared with this visibility.
+
+<table class="table table-bordered table-striped">
 	<tr>
 		<th></th>
-		<th>class</th>
-		<th>package=folder</th>
-		<th>children</th>
-		<th>other</th>
+		<th>the class</th>
+		<th>the classes in the same package=folder</th>
+		<th>the classes inheriting this class</th>
+		<th>anyone else</th>
 	</tr>
 	<tr>
 		<th>public</th>
@@ -62,3 +66,10 @@ this property (method/attribute).
 		<td></td>
 	</tr>
 </table>
+
+For instance, something declared protected can be
+accessed by
+
+* the declaring class
+* the classes in the same folder
+* and the classes inheriting of your class
