@@ -15,8 +15,8 @@ When the garbage collector will destroy a variable
 When a variable isn't referenced anymore.
 </blockquote>
 
-An instance method can use instance/class attributes ?
-instance/class methods ?
+An instance method can use instance/class attributes?
+instance/class methods?
 
 <blockquote class="spoiler">
 Yes for all.
@@ -27,12 +27,12 @@ A class member can
 * use a class/instance member?
 
 <blockquote class="spoiler">
-Class member can be used by class/instance members. But they
+A class member can be used by class/instance members. But they
 can only use class members.
 </blockquote>
 
 What's the difference between a primitive type variable
-and a object variable ?
+and an object variable?
 
 <blockquote class="spoiler">
 primitive type variable = a value. object variable = a reference.
@@ -46,7 +46,7 @@ attribute/... Any members of this class can also access ...
 </blockquote>
 
 If I only have a valued constructor in my class,
-how many constructor do I have? And If I don't have
+how many constructors do I have? And If I don't have
 any constructors in my class?
 
 <blockquote class="spoiler">
