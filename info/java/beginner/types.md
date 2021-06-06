@@ -13,7 +13,7 @@ Java have 8 primitives types:
 * **double**: 32bits, ``5.0`` or ``5.0d``
 * **long**: 64 bits
 
-Each primitive class have a class having almost if not the same name,
+Each primitive class has a class having almost if not the same name,
 for instance ``Integer`` for int. You would have methods such as
 
 ```java
