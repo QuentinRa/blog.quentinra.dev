@@ -55,6 +55,15 @@ is null, we have <b>null.method(...)</b> meaning that we will
 trigger a <b>NullPointerException</b>.
 </blockquote>
 
+What's this statement ``public interface Human implements Living {}``
+(Living is another interface) ?
+
+<blockquote class="spoiler">
+The keyword is <b>wrong</b>, we should use <b>extends</b>. If extends
+was used, then implementing Human would requires to also implements
+Living methods.
+</blockquote>
+
 ...
 
 <blockquote class="spoiler">
