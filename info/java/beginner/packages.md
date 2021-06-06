@@ -2,18 +2,18 @@
 
 [Go back](..)
 
-When use java, you will use some classes defined by the JDK
+When using java, you will use some classes defined by the JDK
 like ``Math``, `Exception` or `Integer`, ... You don't
 have to import class like `Exception` or `Integer`  (since
 they are imported by default, being in the package `java.lang`)
-but sometimes you will have to import some classes. For that, it's
-better for you to know what's a **package**.
+but sometimes you will have to import some classes. For that, you should know
+what's a **package**.
 
 <div class="sr"></div>
 
 ## Package
 
-At first, we can say that a **package** is a folder. For instance
+At first, we can say that a **package** is a folder. For instance,
 you can put your code in a folder ``src`` and say "Hey! My code
 is in the package src".
 
@@ -49,12 +49,17 @@ class, you need to import the package having the class
 package is ``java.io;`` so you can write
 
 ```java
-// import File class onky
+// import File class only
 import java.io.File;
 
 // all classes in the package
 import java.io.*;
 ```
+
+**Note**: you should not use ``*`` (import all), unless you really
+have a lot of classes imported from this package since you are importing
+all classes and the package may have a lot of classes. Sub packages aren't
+imported.
 
 You can also import a static member, but you usually use the
 import like above then write ``File.createTempFile`` (that's an example).
