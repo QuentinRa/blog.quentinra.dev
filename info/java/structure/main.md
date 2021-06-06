@@ -19,8 +19,8 @@ public class Main {
 }
 ```
 
-Everything will be explained later. Java like in C with
-``int main(void)`` will run a method `main`. 
+Everything will be explained later. Java, like in C with
+``int main(void)``, will run a method `main`. 
 
 ```java
 public class Main {
