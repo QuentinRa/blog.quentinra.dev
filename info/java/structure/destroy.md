@@ -7,12 +7,12 @@ something called the ``garbage collector`` that will look for any
 unused variable and free them.
 
 You can try to accelerate the process by setting a variable
-to ``null``, while making **sure** that absolutely no one is still
-referencing your variable (otherwise it's pretty useless).
+to ``null``, while making **sure** that no one is still
+referencing your variable (otherwise, it's pretty useless).
 
 Take note since some are still using it, that when an object
 is destroyed (or about to be destroyed), the method
-``finalize`` will can called on it (each class have this method).
+``finalize`` will be called on it (each class have this method).
 
 ```java
 class Person {
@@ -25,7 +25,7 @@ class Person {
 }
 ```
 
-But do not use this is a deprecated (=do not use this) method
+But do not use this, it's a deprecated (=do not use this) method
 
 > The finalization mechanism is inherently problematic. Finalization 
 > can lead to performance issues, deadlocks, and hangs.
