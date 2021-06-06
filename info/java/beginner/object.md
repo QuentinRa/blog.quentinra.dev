@@ -133,7 +133,7 @@ public int hashCode() {
 }
 ```
 
-<div class="sl"></div>
+<div class="sr"></div>
 
 **clone**
 
@@ -151,5 +151,50 @@ public Object clone() {
         person = new Person(this.name);
     }
     return person;
+}
+```
+
+<div class="sl"></div>
+
+**toString**
+
+This method is used to write an object as a string. It's
+pretty useful when you are debugging
+(format is up to you).
+
+```java
+@Override
+public String toString() {
+    return "Person{" +
+        "name='" + name + '\'' +
+        '}';
+}
+```
+
+And then we do
+
+```java
+System.out.println(calistro); // auto-conversion to String
+System.out.println(calistro.toString()); // that's the same
+```
+
+<div class="sr"></div>
+
+**finalize**
+
+Here you can write some code, only if you are still using
+it (as explained is the garbage collector part before).
+
+```java
+class Person {
+    public String name;
+    
+    @SuppressWarnings("deprecation")
+    @Override
+    protected void finalize() {
+        if (this.name != null){
+            this.name = null;
+        }
+    }
 }
 ```
