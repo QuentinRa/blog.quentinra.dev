@@ -64,3 +64,16 @@ import like above then write ``File.createTempFile`` (that's an example).
 // File.createTempFile(...) and can directly write createTempFile(...)
 import static java.io.File.createTempFile;
 ```
+
+<div class="sr"></div>
+
+## package.info
+
+Usually, you write a ``package.info`` in each one of your packages.
+
+```java
+/**
+* some Javadoc here, see Javadoc page
+*/
+package com.lgs.memorize;
+```
