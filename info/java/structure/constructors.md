@@ -6,7 +6,7 @@ Now you need to create some object, meaning an instance/representation
 of your class where you gave values to the attributes.
 
 A constructor is a method, without a return type, having the
-name of the class. You can have multiple constructor with different
+name of the class. You can have multiple constructors with different
 arguments.
 
 * **by default**, all classes have a constructor taking no arguments
@@ -16,14 +16,14 @@ We are distinguishing 3 types of constructors
 
 * empty constructor
 * valued constructors (have parameters)
-* constructor of copy (take an object of the class class in argument)
+* constructor of copy (take an object of the class in argument)
 
 And note that you can call another constructor with ``this(
 other constructor parameters)`` but this line **must** be the
 first line of your constructor.
 
 > **Advanced Note**: a constructor can be private/package/...
-> according to your need. Trough in most case you will see public
+> according to your need. Though in most cases you will see public
 > constructors.
 
 ## Example
@@ -56,10 +56,10 @@ public class Person {
 
 **Static (class) constructor**
 
-You have constructor for instances, but
-you also have a class constructors! They are not taking parameters
+You have a constructor for instances, but
+you also have a class constructor! They are not taking parameters
 since they are more like static blocs but could be used to init
-static attributes (even trough we mainly use inline initialisation).
+static attributes (even though we mainly use inline initialization).
 
 Syntax is
 
