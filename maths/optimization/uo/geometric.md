@@ -36,13 +36,15 @@ is the power of the <b>j</b>-nth variable in the
 
 **System**
 
-Write a system of equals using the matrix, variables
-will be called delta-i (i=line of the matrix) and
-the vector b is a vector of 0.
+Write a system of equals using the matrix. A column of your matrix 
+is a row of the system. Each row of your matrix is a variable
+``delta_i`` where i is the row number. Each line of the system
+is equal to *0*.
+
+<p>\[\sum\limits_{i=1}^{m} \alpha_{ij}\delta_{i} = 0\]</p>
 
 Then add another equation : **the sum of all deltas is 1**.
-
-Then solve and find all deltas.
+And solve and find all deltas.
 
 <div><b>Find the solution</b> \(\nu\) (nu)</div>
 
