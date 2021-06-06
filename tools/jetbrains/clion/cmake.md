@@ -5,7 +5,7 @@
 Create a ``CmakeLists.txt`` if not already created.
 
 ```cmake
-cmake_minimum_required(VERSION 3.16.3) # or 17
+cmake_minimum_required(VERSION 3.16.3) # or 17 / your version
 project(nom_projet C) # project name
 set(CMAKE_C_STANDARD 99) # standard
 
@@ -31,7 +31,7 @@ if you want to try to build/run using different
 configurations but that should not be the case most
 of the time).
 
-## Using pthread
+## Using pthread.h
 
 <https://stackoverflow.com/questions/1620918/cmake-and-libpthread>
 
@@ -39,6 +39,12 @@ of the time).
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 find_package(Threads REQUIRED)
 target_link_libraries(my_app PRIVATE Threads::Threads)
+```
+
+## Using math.h
+
+```cmake
+target_link_libraries(my_app PRIVATE m)
 ```
 
 ## Include a folder of *.h
