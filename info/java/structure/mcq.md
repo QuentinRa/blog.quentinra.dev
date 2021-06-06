@@ -2,8 +2,6 @@
 
 [Go back](..)
 
-## Normal
-
 Protected members can be accessed
 
 <blockquote class="spoiler">
@@ -56,8 +54,6 @@ In both case you will have <b>one</b> constructor. In the first
 case that's the valued one. In the second case, that's the 
 default, empty, one.
 </blockquote>
-
-## Advanced
 
 When calling ``MyMethod(int arg)``, what's passed
 to ``MyMethod``?. Same question for ``MyMethod(Object obj)``.
