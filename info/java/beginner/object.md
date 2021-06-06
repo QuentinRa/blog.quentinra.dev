@@ -22,3 +22,89 @@ String toString();
 // called by the garbage collector before destroying an object
 void finalize();
 ```
+
+Note the new operator ``x instanceof y``, returning true
+if ``x`` is an instance a ``y`` or a subclass of ``y``. If ``x`` is null,
+then false is returned. If you need a auto-cast version
+of this operator, you can do ``x instanceof y name`` where
+`name` will be ``x`` casted in the type of `y`.
+
+```java
+// java < 14
+Object value = Integer.valueOf(5);
+if (value instanceof Integer){
+    Integer n = (Integer) value;
+    System.out.println("this is a number:"+n);
+}
+// java >= 14
+if (value instanceof Integer n){
+    System.out.println("this is a number:"+n);
+}
+```
+
+Some times, you may not want to use ``instanceof y`` since that
+would means subclasses (children of `y`) return true. Instead
+what we do is ``this.getClass() != obj.getClass()`` but check
+that ``o`` is not null beforehand!
+
+<div class="sr"></div>
+
+**equals**
+
+For the equals methods, you will usually write some code
+returning true or false if ``this`` (our object)
+is equals (up to you what equals mean) to ``obj``.
+
+```java
+public class Person {
+    public final String name;
+
+    // constructors
+    public Person(String name) { this.name = name; }
+    public Person(Person p) { this(p.name); }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null) return false; // nothing else to check
+        if (this == o) return true; // same
+        // check if we can cast
+        if (!(o instanceof Person)) return false;
+        // cast
+        Person person = (Person) o;
+        // check equals with the attributes
+        return name.equals(person.name);
+    }
+
+    @Override
+    public int hashCode() { return this.name.hashCode(); }
+}
+```
+
+People usually ``equals`` like `obj.equals(another)` or
+``Objects.equals`` (import java.util).
+
+And we can write some code
+
+```java
+Person calistro = new Person("Calistro");
+Person copy = new Person(calistro);
+Person empty = null;
+System.out.println(calistro == copy); // false
+System.out.println(calistro.equals(copy)); // false
+System.out.println(empty == calistro); // false
+System.out.println(Objects.equals(empty, calistro)); // false, but no error like bellow
+System.out.println(empty.equals(calistro)); // NullPointerException
+```
+
+<div class="sl"></div>
+
+Then for **hashcode**, you simply need to remember that **two object
+that are equals will have the same hashcode**. Then when you write
+your equals, make sur that your hashcode respect this.
+
+Here some help
+
+* calling hashCode on an object (ex: `name.hashCode()`)
+* same, but return 0 if null using Objects (ex: `Objects.hashCode(name)`)
+
+or you can explicitly write the hashcode algorithm.
