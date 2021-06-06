@@ -108,3 +108,48 @@ Here some help
 * same, but return 0 if null using Objects (ex: `Objects.hashCode(name)`)
 
 or you can explicitly write the hashcode algorithm.
+
+```java
+@Override // made by David Roussel
+public int hashCode() {
+    final int prime = 31; // int max power
+    int hash = 1; // return 1
+
+    // if attr is a boolean
+    hash = prime * hash + (attr ? 1231 : 1237);
+    // if attr is a char
+    hash = prime * hash + attr;
+    // if attr is a double
+    long doubleTLB = Double.doubleToLongBits(attr);
+    hash = prime * hash + (int) (doubleTLB ^ (doubleTLB >>> 32));
+    // if attr is a float
+    hash = prime * hash + Float.floatToIntBits(attr);
+    // if attribute is a int
+    hash = prime * hash + attr;
+    // if attribute is an object
+    hash = prime * hash + (attr == null ? 0 : attr.hashCode());
+
+    return hash;
+}
+```
+
+<div class="sl"></div>
+
+**clone**
+
+Clone is protected by default, you need to set this method
+to public.
+
+```java
+@Override
+public Object clone() {
+    Person person;
+    try {
+        person = (Person) super.clone();
+        // you can do some changes here
+    } catch (CloneNotSupportedException e) {
+        person = new Person(this.name);
+    }
+    return person;
+}
+```
