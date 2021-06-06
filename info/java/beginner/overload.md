@@ -1,10 +1,10 @@
-# Polymorphism
+# Overload
 
 [Go back](..)
 
-The polymorphism or surcharge in French is the ability for
+The overload or surcharge in French is the ability for
 us to write a lot of methods having the same name
-but different parameters.
+but different parameters (=redefinitions).
 
 The return type must be the same!
 
