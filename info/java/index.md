@@ -105,7 +105,12 @@ must practice!
 
 ## Advanced
 
-...
+Here some advanced concepts that you might use
+after mastering the beginner one. Please do try
+to make some exercises beforehand since I won't go
+a lot into details.
+
+* [Iceberg paradigm](advanced/icerberg.md)
 
 <div class="sr"></div>
 
