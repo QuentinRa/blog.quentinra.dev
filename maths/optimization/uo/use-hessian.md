@@ -67,3 +67,13 @@ Some help for matrix 2x2
     <li>\(\Delta_{1} \lt 0 \text{ and } \Delta_{2} \gt 0 \) : minimum local</li>
     <li>\(\Delta_{1} \lt 0 \text{ and } \Delta_{2} \lt 0 \) : saddle point</li>
 </ul>
+
+<div class="sl"></div>
+
+**eigenvalues**
+
+* **definite positive**: all eigen values > 0
+* **definite negative**: all eigen values < 0
+* **definite semi-positive**: almost eigen values > 0, one equal = 0
+* **definite semi-negative**: almost eigen values < 0, one equal = 0
+* **indefinite**: one > 0 and another < 0
