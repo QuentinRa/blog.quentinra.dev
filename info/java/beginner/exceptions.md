@@ -12,7 +12,7 @@ In Java, we got the
 * **runtime exceptions**: you made a mistake, you can patch it
 
 For example, opening a file is a **verified exceptions** since
-you can't patch the fact that some file can't be opened/created/...
+you can't patch the fact that a file can't be opened/created/...
 
 A **runtime exceptions** would be a NullPointerException meaning that
 you tried to use a variable having ``null`` for value. That's something
@@ -48,7 +48,7 @@ Here some "TypeException"
 
 * ``Exception``: any kind of exception
 * ``NumberFormatException``: tried to convert a string to int and that failed, ...
-* ``IllegalArgumentException``: call with wrong argument
+* ``IllegalArgumentException``: call with the wrong argument
 * ``IllegalStateException``: call with wrong preconditions (logout before login)
 * ``ArrayIndexOutOfBoundsException``: invalid index
 * ``NullPointerException``: tried to use a null variable
@@ -118,10 +118,10 @@ try {
 
 ## finally
 
-You can use a try-finally or a try-catch-finally. In any cases,
-whatever happens, the code into finally will be executed, meaning
+You can use a try-finally or a try-catch-finally. Whatever happens, 
+the code inside finally will be executed, meaning
 that even if some exception is fired, then this code will be executed
-before sending to the caller (if not catch).
+before sending the exception to the caller (if not catch).
 
 ```java
 try {
