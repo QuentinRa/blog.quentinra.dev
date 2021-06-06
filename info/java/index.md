@@ -79,7 +79,9 @@ need to take a look at all of theses
 
 Then you can read theses
 
+* [Polymorphism](beginner/polymorphism.md) (Surcharge in French)
 * Inheritance
+* [Override](beginner/override.md)
 * Abstract classes
 * Interfaces
 * Javadoc
