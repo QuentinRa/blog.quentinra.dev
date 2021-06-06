@@ -13,16 +13,16 @@ In this course, you will find
 
 ## Introduction
 
-Java is a oriented-object language, excluding 8 primitives types,
+Java is an oriented-object language, excluding 8 primitives types,
 all other types are classes and their instances are objects.
 
 Java is compiled using a JDK with the ``javac`` command and
 is run using a JDK/JRE with the ``java`` command. JAVA is run
-on a virtual machine so your code will work on any OS, trough
+on a virtual machine so your code will work on any OS, though
 there may be some changes.
 
-You got a lot of tutorials on the web as how you can install java
-but theses links to download a JDK might help. Still IDE like
+You got a lot of tutorials on the web as to how you can install java
+but these links to download a JDK might help. Still, IDEs like
 IntelliJ are downloading any version of Java you want when creating
 a project so no install required. **We are currently in Java16
 or Java1.16**
@@ -32,7 +32,7 @@ or Java1.16**
 * [Open JDK](https://openjdk.java.net/projects/jdk/)
 * [Windows JDK8 / 11](https://github.com/ojdkbuild/ojdkbuild)
 
-Then the last thing you need to know (beside looking on stackoverflow)
+Then the last thing you need to know (besides looking on StackOverflow)
 if you don't know something is to look at the documentation, 
 
 * [Java 8](https://docs.oracle.com/javase/8/docs/api/overview-summary.html)
@@ -69,16 +69,16 @@ And now you should be able
 * with some attributes and some methods
 * and creating some objects using constructors
 
-Still a lot to learn but that's the must you need to know in order
-to understand everything else. **You should practice by yourself
-but [here](structure/mcq.md) some MCQ**.
+Still, a lot to learn but that's the most you need to know to understand 
+everything else.
+**You should practice by yourself but [here](structure/mcq.md) some MCQ**.
 
 <div class="sr"></div>
 
 ## Beginner
 
-Now our aim would be to write some code. But for that we
-need to take a look at all of theses
+Now our goal would be to write some code. But for that we
+need to take a look at all of these
 
 * [Types](beginner/types.md)
 * [Structures](beginner/structures.md)
