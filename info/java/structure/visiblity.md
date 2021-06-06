@@ -23,3 +23,42 @@ this property (method/attribute).
 **package** means that **your class and the one
 is the same folder=package** can see, use/call
 this property (method/attribute).
+
+### In a nutshell :
+<table>
+	<tr>
+		<th></th>
+		<th>class</th>
+		<th>package=folder</th>
+		<th>children</th>
+		<th>other</th>
+	</tr>
+	<tr>
+		<th>public</th>
+		<td>+</td>
+		<td>+</td>
+		<td>+</td>
+		<td>+</td>
+	</tr>
+	<tr>
+		<th>protected</th>
+		<td>+</td>
+		<td>+</td>
+		<td>+</td>
+		<td></td>
+	</tr>
+	<tr>
+		<th>package</th>
+		<td>+</td>
+		<td>+</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<th>private</th>
+		<td>+</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
