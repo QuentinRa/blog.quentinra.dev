@@ -10,7 +10,7 @@ they are not true nor false.
 boolean cond = ...; // some value here
 ```
 
-Also please take note that in a loop, you can use theses two
+Also please take note that in a loop, you can use these two
 keywords
 
 * **break**: ends **one** loop
