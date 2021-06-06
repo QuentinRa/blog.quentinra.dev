@@ -50,6 +50,9 @@ called **attributes** like a name, a size, ... and **methods**
 like ``buy(xxxxxx)``, `remove(xxxx)` that are basically functions
 applied on a class.
 
+Note that in java, we print with ``System.out.println("text");``
+or with ``System.err.println("text")``.
+
 * [First java file](structure/main.md)
 * [Creating a class](structure/class.md)
 * [Visibility](structure/visiblity.md)
@@ -93,6 +96,7 @@ Then you can read theses
 * [Abstract classes](beginner/abstract.md)
 * [Interfaces](beginner/interfaces.md)
 * Javadoc
+* Modules
 
 And here some MCQ to test the [theory](beginner/mcq.md) but you
 must practice!
