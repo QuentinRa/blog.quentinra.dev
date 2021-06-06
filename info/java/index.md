@@ -32,6 +32,14 @@ or Java1.16**
 * [Open JDK](https://openjdk.java.net/projects/jdk/)
 * [Windows JDK8 / 11](https://github.com/ojdkbuild/ojdkbuild)
 
+Then the last thing you need to know (beside looking on stackoverflow)
+if you don't know something is to look at the documentation, 
+
+* [Java 8](https://docs.oracle.com/javase/8/docs/api/overview-summary.html)
+* [Java 11](https://docs.oracle.com/en/java/javase/11/docs/api/index.html)
+* [Java 14](https://docs.oracle.com/en/java/javase/14/docs/api/index.html)
+* latest as of June 2021: [Java 16](https://docs.oracle.com/en/java/javase/16/docs/api/index.html)
+
 <div class="sl"></div>
 
 ## Vocabulary
