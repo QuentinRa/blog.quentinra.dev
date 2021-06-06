@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-An attribute have
+An attribute has
 
 * **a visibility**: public, private, ...
 * **a special property**: final, static, volatile, ...
@@ -11,8 +11,8 @@ An attribute have
 * may have a **default value** (but you should
   use what we call constructors instead).
 
-You already know about visibility. For properties,
-aside for volatile, you need to know
+You already know about visibility. You need to know
+these properties
 
 * `final`: means that the attribute is a constant
 * ``static``: see next part
