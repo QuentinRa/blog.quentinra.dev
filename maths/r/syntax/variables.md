@@ -17,3 +17,11 @@ do something like this
 ```r
 r <- NULL
 ```
+
+Then print a value
+
+```r
+r # implicit
+
+print(r) # explicit
+```
