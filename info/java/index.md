@@ -98,8 +98,42 @@ Then you can read theses
 * Javadoc
 * Modules
 
-And here some MCQ to test the [theory](beginner/mcq.md) but you
-must practice!
+If we summarize abstract class and interfaces
+
+<table class="table-striped table table-bordered">
+    <tr>
+        <th></th>
+        <th>abstract</th>
+        <th>Interface</th>
+    </tr>
+    <tr>
+        <td>Constructors</td>
+        <td>Can have constructors, but you can't write 
+            <code>new AbstractClass()</code></td>
+        <td>Can't have constructors.</td>
+    </tr>
+    <tr>
+        <td>Attributes</td>
+        <td>It's like in a normal class.</td>
+        <td>only public class constants.</td>
+    </tr>
+    <tr>
+        <td>methods (instance)</td>
+        <td>It's like in a normal class but some methods
+        can be abstract.</td>
+        <td>abstract or concrete methods, public only.</td>
+    </tr>
+    <tr>
+        <td>methods (class)</td>
+        <td>concrete, all visibilities modes.</td>
+        <td>concrete, public only.</td>
+    </tr>
+</table>
+
+**Practice**
+
+* check you remember and understand the [theory](beginner/mcq.md)
+* but you must practice!
 
 <div class="sl"></div>
 
