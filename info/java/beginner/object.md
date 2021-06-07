@@ -44,7 +44,7 @@ if (value instanceof Integer n){
 Sometimes, you may not want to use ``instanceof y`` since that
 would means subclasses (children of `y`) return true. Instead
 what we do is ``this.getClass() != obj.getClass()`` but check
-that ``o`` is not null beforehand!
+that ``obj`` is not null beforehand!
 
 <div class="sr"></div>
 
@@ -79,8 +79,8 @@ public class Person {
 }
 ```
 
-People usually ``equals`` like `obj.equals(another)` or
-``Objects.equals`` (import java.util).
+People usually use ``equals`` like this `obj.equals(another)` or
+``Objects.equals(obj, another)`` (import java.util).
 
 And we can write some code
 
@@ -88,8 +88,8 @@ And we can write some code
 Person calistro = new Person("Calistro");
 Person copy = new Person(calistro);
 Person empty = null;
-System.out.println(calistro == copy); // false
-System.out.println(calistro.equals(copy)); // false
+System.out.println(calistro == copy); // false, each object in java called with new is unique
+System.out.println(calistro.equals(copy)); // true, name is equal
 System.out.println(empty == calistro); // false
 System.out.println(Objects.equals(empty, calistro)); // false, but no error like bellow
 System.out.println(empty.equals(calistro)); // NullPointerException
