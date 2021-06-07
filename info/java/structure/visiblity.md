@@ -20,7 +20,7 @@ the children of your class, and those in the same
 package=folder** can see, use/call
 this property (method/attribute).
 
-**package** means that **your class and the one
+**package** means that **your class and the ones
 is the same folder=package** can see, use/call
 this property (method/attribute).
 
