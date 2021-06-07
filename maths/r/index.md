@@ -41,7 +41,6 @@ in 5 minutes](5min.md).
 
 Then here is the real course.
 
-* [Environment](utils/environment.md)
 * [Variables](syntax/variables.md)
 * [Types](syntax/types.md)
 * [Structures](syntax/structures.md)
@@ -57,6 +56,7 @@ And here you can learn how to write
 Here you can find some course about functions
 that you might use or not.
 
+* [Environment](utils/environment.md)
 * [Files](utils/files.md)
 * [Maths](utils/maths.md)
 * [Plots](utils/plot.md)
