@@ -32,3 +32,52 @@ And some more if you want
 * [Population (paired)](voc/paired.md) : you took two times the data from the same indivuals
 
 <div class="sl"></div>
+
+## Maths recap
+
+Before the next part, you need to know of those
+
+* **mean** (empiric/arithmetic): sum values / number of values
+* **mean** (weighted=pondérée): ``E(X) = sum of value * frequency``
+* **median**: value where 50% are greater value and 50% have a lesser value.
+It's ``F(x)=0.5`` if `F` is the empirical cumulative distribution function)
+* **medial** (Médial): value that divide in two part the cumulative sum of values.
+* **mode**: most repeated value
+* **quantile**: split the distribution in X part (4 = quartile, 10 = decile, 100 = centile).
+* [covariance](maths/cov.md) : if two value are independents then ``cov=0``.
+
+<div class="sr"></div>
+
+## Learn about estimators, likehood, ...
+
+...
+
+<div class="sl"></div>
+
+## Analysis of a sample
+
+...
+
+<div class="sr"></div>
+
+## Plots
+
+...
+
+<div class="sl"></div>
+
+## Tests
+
+...
+
+<div class="sr"></div>
+
+## Linear regression
+
+...
+
+<div class="sl"></div>
+
+## Sources
+
+...
