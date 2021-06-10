@@ -64,7 +64,7 @@ Some help for matrix 2x2
 <ul>
     <li>\(\Delta_{1} \gt 0 \text{ and } \Delta_{2} \gt 0 \) : minimum local</li>
     <li>\(\Delta_{1} \gt 0 \text{ and } \Delta_{2} \lt 0 \) : saddle point</li>
-    <li>\(\Delta_{1} \lt 0 \text{ and } \Delta_{2} \gt 0 \) : minimum local</li>
+    <li>\(\Delta_{1} \lt 0 \text{ and } \Delta_{2} \gt 0 \) : maximum local</li>
     <li>\(\Delta_{1} \lt 0 \text{ and } \Delta_{2} \lt 0 \) : saddle point</li>
 </ul>
 
