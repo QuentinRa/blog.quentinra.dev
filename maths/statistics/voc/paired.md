@@ -2,7 +2,8 @@
 
 [Go back](..)
 
-What we call **paired**-data is when you have two sample
+What we call **paired**-data (Données appariés in French)
+is when you have two sample
 about the same individuals but like one in winter and another
 one in summer, ... So at 2 different times.
 
