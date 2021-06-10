@@ -19,8 +19,8 @@ They usually follow a distribution
 ex: age, size, score, ...
 ```
 
-A variable **qualitative** is the other kind of properties.
-This include
+A variable **qualitative** (or catégorielles in French) 
+is the other kind of properties. This include
 
 * binary : take values like 0 or 1, true or false
 * ordered: sorted like easy < medium < hard
