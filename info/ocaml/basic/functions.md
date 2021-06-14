@@ -64,7 +64,7 @@ do that implicit declaration.
 let simple_function x y = x
 ```
 
-<div class="sr"></div>
+<div class="sl"></div>
 
 **Explicit types**
 
@@ -82,3 +82,37 @@ let simple_function = fun (x: float) (y: float) : float -> x ;;
 You usually don't give types since the paradigm
 is asking for ``implicit types`` but that something you
 must know since you will use it.
+
+<div class="sr"></div>
+
+**partial implementation**
+
+I dunno how we call that, but let's says you make a function
+
+```ocaml
+let process (v:'a) (f:'a -> 'b) : 'b = f v ;;
+```
+
+You should know what this function do
+
+* take a value of type a
+* take a function, taking a value of type a and returning a value of type b
+* and the function simply call the function ``f`` with `b`
+* returning a value of type b
+
+So in OCaml we can create a partial implementation of
+process like ``process-add`` were the function is `add+1`.
+
+```ocaml
+let process_add (v:'a) : 'b = process v (fun x -> x+1) ;;
+```
+
+and we call
+
+```ocaml
+process_add 5
+```
+
+You will do that a lot! So do remember this when writting
+your code.
+
