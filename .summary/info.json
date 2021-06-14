@@ -17,6 +17,18 @@
       "name": "PHP",
       "desc": "Learn how complex, weird and vast PHP is, and a bit about framework PHP.",
       "icon": "<i class=\"bi bi-globe\"></i>"
+    },
+    {
+      "tag": "ocaml",
+      "name": "OCaml",
+      "desc": "Here you will learn about OCaml and functional languages.",
+      "icon": "<i class=\"bi bi-terminal-fill\"></i>"
+    },
+    {
+      "tag": "html-css",
+      "name": "HTML and CSS",
+      "desc": "Learn how to use html and css to create a simple website.",
+      "icon": "<i class=\"bi bi-globe\"></i>"
     }
   ]
 }

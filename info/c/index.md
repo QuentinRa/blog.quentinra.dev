@@ -15,7 +15,7 @@ starting, this page should help you : [First timer](sub/first-time.md).
 After writing some code in ``C``, you need something to compile it. On
 Linux systems, you can use
 
-* ``gcc`` (like `sudo apt-get install gcc`)
+* ``gcc`` (you may use something like `sudo apt-get install gcc`)
 * [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 to use ``gcc`` on Windows
 * use some IDE like CLion or VSCode (but with WSL)
