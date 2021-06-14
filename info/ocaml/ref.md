@@ -22,3 +22,12 @@
 * Install (idea and dune) <https://ocamlverse.github.io/content/quickstart_ocaml_project_dune.html>
 * Install (dune) <https://dune.readthedocs.io/en/stable/>
 * Install <https://discuss.ocaml.org/t/ideal-ocaml-setups-with-vim-emacs-intellij-idea/4037>
+
+Just some side note, since I still haven't read them but I would label this
+future reference as "god tier" since it seems the work is here is really
+good <https://ocamlverse.github.io/>. These may also be work looking
+into
+* <https://github.com/pfitaxel/learn-ocaml/tree/learn-ocaml-editor>
+* and <https://www.cs.bham.ac.uk/~axj/pub/papers/lambda-calculus.pdf>
+* and <https://dev.realworldocaml.org/index.html>
+* macos <https://ocaml-learn-code.com/>
