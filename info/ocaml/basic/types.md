@@ -19,3 +19,9 @@ along with coupling some variables.
 
 But you **need** to know that when ocaml don't know a type,
 he will use ``'a`` or `'b` or ...
+
+> **Note**: you can get the size of a string using ``String.length(string)``.
+
+> **Note**: you can convert a variable of a type to another
+> type using ``<type_to>_of_<type>`` such as
+> ``string_of_int`` to convert a int to a string.
