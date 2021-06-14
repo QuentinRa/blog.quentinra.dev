@@ -80,8 +80,8 @@ The required element in order to write some code.
 Then you need to know about all of these since 
 aside from zippers you will use them quite a lot.
 
-* [Creating types](interm/types.md)
 * [Composite types / couples](interm/couples.md)
+* [Creating types](interm/types.md)
 * [Lists](interm/lists.md)
 * [Match](interm/match.md)
 * [Zippers](interm/zippers.md)
