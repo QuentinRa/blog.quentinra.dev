@@ -75,3 +75,59 @@ like
 * ``a::[]``
 * ...
 
+<div class="sr"></div>
+
+# List methods
+
+```ocaml
+let l3 = [1;3;5]
+```
+
+* ``List.map`` : apply a function to all elements of your list
+```ocaml
+List.map ('a -> 'b) -> 'a list -> 'b list
+(* ex *)
+let l3_square = List.map (fun x -> x * x) l3
+```
+* ``List.mem``: true if element in list
+```ocaml
+List.mem 'a -> 'a list -> bool
+(* ex *)
+let is_5_in_l3 = List.mem 5 l3
+```
+* ``List.hd``: return the first element of the list
+```ocaml
+List.hd 'a -> 'a list -> bool
+(* ex *)
+let x = List.hd l3;;
+```
+* ``List.tl``: return the list without the 3rd one
+```ocaml
+List.tl 'a list -> 'a list
+(* ex *)
+let y = List.tl l3;;
+```
+* ``List.rev``: reverse a list
+```ocaml
+List.rev 'a list -> 'a list
+(* ex *)
+let l3_rev = List.rev l3;;
+(* get last *)
+let z = List.hd (List.rev l3);;
+(* add at the end *)
+let l4 = let l4 = List.rev ( 9 ::(List.rev l3) );;
+```
+* ``List.concat``: merge lists into one
+```ocaml
+List.concat 'a list list -> 'a list
+(* ex *)
+let l5 = List.concat [l3;l3];;
+```
+* ``List.length``:
+```ocaml
+List.length 'a list -> int
+(* ex *)
+List.length l3
+```
+    
+READ [HERE](https://ocaml.org/api/List.html)
