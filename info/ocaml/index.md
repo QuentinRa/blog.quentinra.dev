@@ -10,7 +10,7 @@ You should remember that the concepts are
 * variables are **immutables** (=can change the value)
 * **pure** (giving some parameters we should always
   have the same predictable result at the end, no
-  side-effects)
+  side-effects so a function must return a value)
 * **referential transparency** (if `f(x) = y` then writing
   `f(x)` or `y` is the same, and `f(x)-f(x)` is equal
   to `0`)
@@ -57,7 +57,7 @@ Comments are made using the delimiters ``(*`` and `*)`
 (* output - : string = "Hello world" *)
 
 (* in a .ml file, use Printf.printf *) 
-Printf.printf "%s" "Hello world"
+let _ = Printf.printf "%s" "Hello world"
 ```
 
 <div class="sr"></div>
