@@ -61,3 +61,17 @@ let my_list = [5;3]::my_list;;
 let my_list = (5::3::[])::my_list;;
 (* val my_list : int list list = [[5; 3]; [5; 3]; [7; 5; 3]] *)
 ```
+
+<div class="sl"></div>
+
+# Iterate a list
+
+You will use functions in order to iterate your list, but for
+that you need to read about ``match`` in the next part.
+
+Note that a list like the new types we saw, have constructors
+like
+* ``[]``
+* ``a::[]``
+* ...
+
