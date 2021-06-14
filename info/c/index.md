@@ -10,17 +10,67 @@ starting, this page should help you : [First timer](sub/first-time.md).
 
 <div class="sl"></div>
 
-## Start programming in C
+## Introduction
 
-...
+After writing some code in ``C``, you need something to compile it. On
+Linux systems, you can use
+
+* ``gcc`` (like `sudo apt-get install gcc`)
+* [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+to use ``gcc`` on Windows
+* use some IDE like CLion or VSCode (but with WSL)
+* check out docker tutorial (not really what you should try)
+
+Simply write ``gcc -v`` in a terminal to check if you have gcc.
+Then you will write ``gcc -o a.out my_file.c`` to create a
+file ``a.out`` and write `./a.out` to run your program.
+
+Here is an example file
+
+```c
+// libraries
+#include<stdio.h>
+#include<stdlib.h>
+
+// entry point, function called when program is run
+int main(int argc, char *argv[]){
+    printf("Hello World"); // print in terminal
+    return EXIT_SUCCESS; // job done
+}
+```
 
 <div class="sr"></div>
+
+## Start programming in C
+
+The basic element of syntax
+
+* [Types](start/types.md)
+* [Structures](start/structures.md)
+* [Operators](start/operators.md)
+* [Libraries and import](start/import.md)
+* [Main function](start/main.md)
+
+Then some everyday concepts
+
+* [Arrays](start/arrays.md)
+* [Functions](start/functions.md)
+* [Headers](start/headers.md)
+* [gcc](start/gcc.md)
+
+And what you might use
+
+* [Reading from command line](start/cline.md)
+* [Files](start/files.md)
+* [System calls](start/syscall.md)
+
+<div class="sl"></div>
 
 ## Advanced programming in C
 
 ...
 
-<div class="sl"></div>
+<div class="sr"></div>
 
 ## Using ncurses
 
@@ -31,7 +81,7 @@ ncurses. It's simple and really easy to learn.
 
 ...
 
-<div class="sr"></div>
+<div class="sl"></div>
 
 ## Threads and processes
 
@@ -70,13 +120,13 @@ efficiently.
 * [Threads : Concurrence](proc/concurrence.md)
 * [Threads : Semaphores](proc/semaphores.md)
 
-<div class="sl"></div>
+<div class="sr"></div>
 
 ## Networking
 
 ...
 
-<div class="sr"></div>
+<div class="sl"></div>
 
 ## Sources
 
