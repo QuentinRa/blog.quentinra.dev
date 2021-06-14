@@ -1,12 +1,31 @@
-# ...
+# Asserts
 
 [Go back](..)
 
-...
+You can use assert function to test your code.
+Assert is taking a boolean and raise AssertFailure
+exception is the boolean is false.
+
+```
+assert(false)
+(* Exception: Assert_failure ("//toplevel//", 8, 8). *)
+```
+
+So you usually write some code like this****
+
+```ocaml
+let rec pow x power = 
+  if (power = 1) then x else x * (pow x (power-1))
+
+let _ = assert(pow 5 3 = 125)
+```
 
 <div class="sl"></div>
 
-And you may use this,
+**Asserts on function raising exceptions**
+
+And you may use this if your function is raising an
+exception,
 
 ```ocaml
 let string_of_float (x: float) : string =
