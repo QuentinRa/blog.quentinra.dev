@@ -84,6 +84,7 @@ aside from zippers you will use them quite a lot.
 * [Creating types](interm/types.md)
 * [Lists](interm/lists.md)
 * [Match](interm/match.md)
+* [Folds](interm/fold.md)
 * [Zippers](interm/zippers.md)
 * [Exceptions](interm/exceptions.md)
 
