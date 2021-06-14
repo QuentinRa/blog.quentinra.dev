@@ -98,6 +98,14 @@ And you may want to do some tests using assertions
 
 None for now.
 
+* Modules
+* Read/Write
+
+You may want to look into logic course to continue learning 
+about the depth of this new paradigm. ``Lisp`` and `Haskell`
+may also be good choices if you are eager to learn other
+functional languages.
+
 <div class="sl"></div>
 
 ## Sources
