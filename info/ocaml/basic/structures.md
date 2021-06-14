@@ -30,6 +30,17 @@ Please take note
 * else is **required**
 * a_value and another_value must have the same **type**
 
+<div class="sl"></div>
+
+**Don't make a fool of yourself, do not write**
+
+```ocaml
+if (condition) then true else false
+```
+
+since condition is already a boolean and you will trigger
+most of experienced guys.
+
 <div class="sr"></div>
 
 You **mustn't use that** (not joking, it's not functional)
