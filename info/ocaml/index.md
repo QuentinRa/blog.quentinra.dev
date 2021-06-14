@@ -73,6 +73,11 @@ The required element in order to write some code.
 * [Functions](basic/functions.md)
 * [Recursion](basic/rec.md)
 
+You might challenge yourself with theses exercises
+
+* [MCQ](basic/mcq.md)
+* [Write some code](basic/exercises.md)
+
 <div class="sl"></div>
 
 ## Intermediary concepts
