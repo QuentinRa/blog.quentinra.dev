@@ -89,7 +89,7 @@ aside from zippers you will use them quite a lot.
 
 And you may want to do some tests using assertions
 
-*  [Asserts](interm/exceptions.md)
+*  [Asserts](interm/assets.md)
 
 <div class="sr"></div>
 
