@@ -129,5 +129,10 @@ List.length 'a list -> int
 (* ex *)
 List.length l3
 ```
+
+Note that ``@`` operator is the same as
+``List.concat`` so `a@b` merge list a with
+list b. But you shouldn't have to use this unless
+you are not doing things properly.
     
 READ [HERE](https://ocaml.org/api/List.html)
