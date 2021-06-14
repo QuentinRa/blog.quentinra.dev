@@ -34,3 +34,20 @@ let a_person : person = Anonymous 5
 
 You will see later how you could extract the arguments
 used in the constructor using **match**.
+
+<div class="sr"></div>
+
+Note that are removing the first ``|``
+
+```ocaml
+type person =
+  Anonymous of int
+  | Person of string * int 
+;;
+```
+
+or writing it like that
+
+```ocaml
+type person = Anonymous of int | Person of string * int;;
+```
