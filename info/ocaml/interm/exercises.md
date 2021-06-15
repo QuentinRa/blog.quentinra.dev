@@ -13,7 +13,7 @@ Original, french subject can be found
 Everything is in French for now, feel free to propose
 a translated version (function names etc.).
 
-**You may take 4-8 hours to do all of theses questions,
+**You may take 4 hours to do all of theses questions,
 but take the time! It's better than your average practical
 class**.
 
@@ -81,7 +81,7 @@ let _ = assert((contenu_gc [A;A;A;T;A]) = 0.0);;
 </code></pre>
 </blockquote>
 
-<div class="sl"></div>
+<div class="sr"></div>
 
 ## Some useless function as a warmup (2 / 2)
 
@@ -132,16 +132,85 @@ List.fold_left (fun inverted brin -> match brin with
 [] x
 )
 </code></pre>
-
 </blockquote>
 
 <div class="sl"></div>
 
+## Distance
+
+Make a function returning the distance between two brins. The distance
+is defined as the number of nucleotides that must be changed so that
+the brins becomes the same brin.
+
+You must raise an exception if the length of the two
+brins is not the same.
+
+```ocaml
+let distance (x : brin) (y : brin) : int =
+    (* your code here *)
+
+distance [G; A; G] [A; G; G]
+(* - : int = 2 *)
+```
+
 <blockquote class="spoiler">
 <pre><code class="language-ocaml"
->0
+>let distance (x : brin) (y : brin) : int =
+  let rec diff (first: brin) (second: brin) (count: int) = match first with
+    | [] -> if (second = []) then count else failwith "length not the same"
+    | e::other -> match second with
+      | [] -> failwith "length not the same"
+      | e2::other2 -> diff other other2 (if ( e2 = e ) then count else count+1)
+  in diff x y 0
+;;
+(* test normal casses *)
+let _ = assert(distance [T] [T] = 0) ;;
+let _ = assert(distance [T] [C] = 1) ;;
+let _ = assert(distance [G; A; G] [A; G; G] = 2);;
+(* test errors *)
+let _ = assert((try distance [T] [] with Failure _ -> -1) = -1) ;;
+let _ = assert((try distance [] [T] with Failure _ -> -1) = -1) ;;
 </code></pre>
 </blockquote>
 
+<div class="sr"></div>
 
+## Similarity
 
+Return the similarity between two brins. It's
+**one** minus the distance divided by the size of one
+of your two brins.
+
+You must raise an exception if the length of the two
+brins is not the same.
+
+You may use ``float_of_int`` to convert an int to a float.
+
+```ocaml
+let similarite (x : brin) (y : brin) : float =
+    (* your code here *)
+
+similarite [C;G;A;T] [T;A;G;T]
+(* - : float = 0.25 *)
+```
+
+<blockquote class="spoiler">
+Remember that distance already raise an exception, don't do
+it twice! And don't forget the conversations.
+
+<pre><code class="language-ocaml"
+>let similarite (x : brin) (y : brin) : float =
+  1.0 -. (float_of_int (distance x y) /. float_of_int (List.length x))
+;;
+let _ = assert(similarite [C;G;A;T] [T;A;G;T] = 0.25);;
+let _ = assert(similarite [A;G;C;T] [T;A;A;G] = 0.0);;
+let _ = assert(similarite [A;G;C;T] [A;G;C;T] = 1.0);;
+</code></pre>
+</blockquote>
+
+<div class="sr"></div>
+
+## Other questions
+
+Todo: complete the rest of this page.
+My work is [here](download:ipf/ipf_code_projet.ml).
