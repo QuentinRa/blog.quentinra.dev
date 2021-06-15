@@ -450,21 +450,43 @@ let _ = assert(br (Lf [A;T]) [A;A] (Lf [T;C]) = Br (Lf [A; T], [A; A], 3, Lf [T;
 
 <div class="sr"></div>
 
-## Other questions
+## min_malus
 
-...
+Make a function taking a list of trees and
+returning the one with the least malus.
 
+You simply have to check the head of the tree
+and compare the malus values.
 
 ```ocaml
-
+let min_malus (l : arbre_phylo list) : arbre_phylo = 
     (* your code here *)
-
-
-(*  *)
 ```
 
 <blockquote class="spoiler">
 <pre><code class="language-ocaml"
->
+>let min_malus (l : arbre_phylo list) : arbre_phylo = match l with
+  | [] -> failwith "Empty list"; (* list is empty, I can't use List.hd so get out *)
+  | _ ->
+      (*
+      check the min in the list.
+      Save in r the arbre_phylo and in v the min
+      value of malus that we found.
+      *)
+      let rec check_min (l: arbre_phylo list) (r: arbre_phylo) (v: int) = match l with
+        | l::other ->
+          (* get current malus *)
+            let currentMalus = get_malus l in
+            if (currentMalus < v) (* we got a malus lesser then ours *)
+            then (* replace *)
+              check_min other l currentMalus
+            else (* check next *)
+              check_min other r v
+        | [] -> r
+        (* first is the king, max_int is the value we need to beat, easy :) *)
+      in check_min l (List.hd l) max_int
+;;
+(* the first is the min_malus here *)
+let _ = assert(min_malus (gen_phylo [A;C] [C;A] [G;A]) = Br (Lf [A; C], [C; A], 3, Lf [G; A]))
 </code></pre>
 </blockquote>
