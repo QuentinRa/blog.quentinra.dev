@@ -96,6 +96,9 @@ brin_complementaire [C; T; A; A; T; G; T]
 (* - : brin = [G; A; T; T; A; C; A] *)
 ```
 
+Note that C becomes G (and G->C) and
+A becomes T (and T -> A).
+
 <blockquote class="spoiler">
 <pre><code class="language-ocaml"
 >let brin_complementaire (x : brin) : brin =
