@@ -21,7 +21,3 @@ let is_pair (number: float) : bool =
 As a side note, you already have a operator ``mod`` but it's
 not working on float.
 </blockquote>
-
-<div class="sr"></div>
-
-...
