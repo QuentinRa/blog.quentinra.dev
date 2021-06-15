@@ -210,7 +210,39 @@ let _ = assert(similarite [A;G;C;T] [A;G;C;T] = 1.0);;
 
 <div class="sr"></div>
 
-## Other questions
+## New type : tree
 
-Todo: complete the rest of this page.
-My work is [here](download:ipf/ipf_code_projet.ml).
+Create a new type, called ``arbre_phylo`` in order
+to represent a **binary** tree. Each branch
+have a ``brin`` and a malus.
+
+<img src="/courses/info/ocaml/interm/ipf/tree.png"
+alt="tree" width="500"/>
+
+<blockquote class="spoiler">
+<pre><code class="language-ocaml"
+>type arbre_phylo =
+  (* we only have a brin for a leaf *)
+  | Lf of brin
+  (* a branch have two arbre_phylo (left/right), a brin and a malus *)
+  | Br of arbre_phylo * brin * int * arbre_phylo
+</code></pre>
+</blockquote>
+
+A malus is defined by the sum of the distances
+(using the function created a while back) of a node
+with the two children nodes.
+
+<p>
+For instance ACAT = 3 is the result of
+<span>\(distance(ACAT, GCAT) + distance(ACAT, TCGT)
+= 1 + 2 = 3.
+\)</span>
+</p>
+
+<p>
+For AAAA, it would be <span>\(
+distance(AAAA, ACAT) + 3
++ distance(AAAA, AAGA) + 2 = 2 + 3 + 1 + 2 = 8.
+\)</span>
+</p>
