@@ -122,9 +122,4 @@ functional languages.
 
 ## Sources
 
-* Christophe MOUILLERON ([ENSIIE](https://www.ensiie.fr/) teacher)
-* Stefania DUMBRAVA ([ENSIIE](https://www.ensiie.fr/) teacher)
-* Julien FOREST ([ENSIIE](https://www.ensiie.fr/) teacher)
-* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
-
 [References](ref.md)

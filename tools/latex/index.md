@@ -77,9 +77,6 @@ and ask him to look for it.
 
 ## Sources
 
-* Quentin RAMSAMY--AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
-
-References
 * <https://www.overleaf.com/>
 * <https://www.overleaf.com/learn>
 * <https://fr.overleaf.com/learn/latex/Code_Highlighting_with_minted>

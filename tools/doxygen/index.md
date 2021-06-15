@@ -240,11 +240,6 @@ that might help a lot
 
 ## Sources
 
-* Anonymous
-* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
-
-References
-
 * [Jetbrains tutorial](https://www.jetbrains.com/help/clion/creating-and-viewing-doxygen-documentation.html#assistance)
 * [Official website](https://www.doxygen.nl/manual/index.html)
 * [Official website - commands](https://www.doxygen.nl/manual/commands.html)

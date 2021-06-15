@@ -175,10 +175,6 @@ syntax
 
 ## Sources
 
-* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
-
-References
-
 * <https://www.markdownguide.org/basic-syntax/>
 * <https://www.markdowntutorial.com/>
 * <https://www.markdownguide.org/getting-started/>

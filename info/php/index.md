@@ -65,11 +65,3 @@ if your IDE is doing it!
 ...
 
 <div class="sl"></div>
-
-## Sources
-
-* Denis MONNERAT ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
-* Vitera Y ([ENSIIE](https://www.ensiie.fr/) teacher)
-* Thomas LAURENT ([ENSIIE](https://www.ensiie.fr/) teacher)
-* Anne-Laure LIGOZAT ([ENSIIE](https://www.ensiie.fr/) teacher)
-* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)

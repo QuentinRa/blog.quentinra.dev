@@ -71,9 +71,6 @@ fails on a line and you don't know where is the error.
 
 # Sources
 
-* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
-
-References
 * <https://docs.anaconda.com/restructuredtext/detailed/>
 * <https://docutils.sourceforge.io/docs/user/rst/quickref.html>
 * <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/code_blocks.html>

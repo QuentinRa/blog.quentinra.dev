@@ -128,10 +128,4 @@ and we have a time set for each one.
 
 ## Sources
 
-* Florent MADELAINE ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
-* William GUISSEFFI  ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
-* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
-
-References
-
 * <https://www.codeur.com/blog/gestion-de-projet-diagramme-pert/>

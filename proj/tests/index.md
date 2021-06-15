@@ -187,12 +187,6 @@ to think
 
 ## Sources
 
-* Florent MADELAINE ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
-* Luc HERNANDEZ ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
-* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
-
-References
-
 * <https://luc-hermitte.developpez.com/tutoriels/c++/programmation-par-contrat/partie-1-un-peu-theorie/>
 * <https://julien-blanc.developpez.com/articles/cpp/Programmation_par_contrat_cplusplus/>
 * <https://www.developpez.com/actu/109767/Quelques-points-cles-sur-la-programmation-defensive-destinee-a-assurer-la-fonction-continue-d-un-logiciel-dans-des-circonstances-imprevues/>

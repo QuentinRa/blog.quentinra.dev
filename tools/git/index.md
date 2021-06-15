@@ -151,11 +151,6 @@ on other git-server.
 
 ## Sources
 
-* Anonymous
-* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
-
-References
-
 * [github git guide](https://github.com/git-guides/)
 * [changing remote](https://docs.github.com/en/github/using-git/changing-a-remotes-url)
 * [add ssh key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)

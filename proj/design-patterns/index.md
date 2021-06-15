@@ -155,11 +155,6 @@ iterators that are hiding using Iterator class).
 
 ## Sources
 
-* Florent MADELAINE ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
-* David ROUSSEL ([ENSIIE](https://www.ensiie.fr/) teacher)
-* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
-
-References
 * <https://fr.wikibooks.org/wiki/Patrons_de_conception>
 * <https://www.javatpoint.com/design-patterns-in-java>
 * <https://www.geeksforgeeks.org/the-decorator-pattern-set-2-introduction-and-design/>

@@ -171,12 +171,6 @@ interface.
 
 ## Sources
 
-* Florent MADELAINE ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
-* Luc HERNANDEZ ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
-* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
-
-References
-
 * <https://fr.wikipedia.org/wiki/Skeuomorphisme>
 * <https://www.nngroup.com/articles/ten-usability-heuristics/>
 * <https://duckduckgo.com/?q=card+sorting&ia=web&atb=v230-1>

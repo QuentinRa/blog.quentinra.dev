@@ -182,11 +182,6 @@ CMD ["./myapp"]
 
 ## Sources
 
-* Denis CLAVIER ([ENSIIE](https://www.ensiie.fr/) student)
-* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
-
-And links used are
-
 * [docs.docker.com](https://docs.docker.com/)
 * [Kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [hello-world](https://github.com/docker-library/hello-world/blob/master/Dockerfile.build)

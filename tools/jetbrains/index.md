@@ -139,11 +139,6 @@ manage to.
 
 ## Sources
 
-* Anonymous
-* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
-
-References
-
 * [PHPStorm](https://www.jetbrains.com/help/phpstorm/quick-start-guide-phpstorm.html)
 * [CLion](https://www.jetbrains.com/help/clion/installation-guide.html)
 * [IntelliJ IDEA](https://www.jetbrains.com/help/idea/discover-intellij-idea.html)

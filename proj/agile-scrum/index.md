@@ -82,9 +82,5 @@ You must do everything to
 
 ## Sources
 
-* Florent MADELAINE ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
-* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
-
-References
 * <https://agilemanifesto.org/>
 * <http://manifesteagile.fr/index.html>
