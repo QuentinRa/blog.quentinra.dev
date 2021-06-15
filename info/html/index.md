@@ -89,5 +89,43 @@ your section like some contact info at the right etc.
 
 ![html5_doc_sections](html5.png)
 
+<div class="sl"></div>
 
+## Learn the tags I
 
+Learn a lof of body tags.
+
+* [Titles](tags/h.md) with h1 to h6
+* [Paragraphs](tags/p.md) with p
+* [Link](tags/a.md) with a
+* [Images](tags/img.md) with img
+
+Some tags used for style/grouping tags later
+
+* [span](tags/span.md) (ex: color in red a word in a paragraph )
+* [div](tags/div.md) : container to move a group of components
+
+<div class="sr"></div>
+
+## Learn the tags II
+
+And some basic tags to style a bit your page
+
+* [Bold](style/b.md) with b
+* [Underline](style/u.md) with u
+* [Strikethrough](style/s.md) with s
+* [Italic](style/i.md) with i
+* [Jump a line](style/br.md) with br
+* [Horizontal separator](style/hr.md) with hr
+
+<div class="sl"></div>
+
+## Learn the tags III
+
+Then you can use some special tags like
+
+* [Ordered list](special/ol.md) with ol and li
+* [UnOrdered list](special/ul.md) with ul and li
+* [Definition](special/dl.md) with dl and dd
+* [Some code](special/code.md) with code and pre
+* [Tables](special/tables.md) using table
