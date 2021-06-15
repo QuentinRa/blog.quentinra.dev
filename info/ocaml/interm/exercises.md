@@ -293,22 +293,97 @@ let _ = assert(arbre_phylo_vers_string (Br(
 
 <div class="sr"></div>
 
-## Other questions
+## Similarity
 
-...
-
+Given a list of trees, return the most similar one. You will
+use ``similarite`` function created before. The one with
+the highest sum of ``similarite`` with
+our brin being the most similar one.
 
 ```ocaml
-
+let similaire (a : arbre_phylo) (l : arbre_phylo list) : arbre_phylo
     (* your code here *)
-
-
-(*  *)
 ```
 
 <blockquote class="spoiler">
 <pre><code class="language-ocaml"
->
+>let similaire (a : arbre_phylo) (l : arbre_phylo list) : arbre_phylo =
+  let length = List.length l in
+  (* 0 other list *)
+  if (length = 0) then failwith "Not even one"
+  (* only one other *)
+  else if (length = 1) then List.hd l
+  else (* check all*)
+    (*
+      We are putting in s the tree that is the most similar
+      and v the similar value.
+      l is our list of three.
+    *)
+    let rec acc (l : arbre_phylo list) (s:arbre_phylo) (v: float) : arbre_phylo = match l with
+      | l::other -> (* check value for the first *)
+          let rec sum_sim (s1 : arbre_phylo) (s2: arbre_phylo) : float  = match s1 with
+              (* if we got a leaf, then check both leaf *)
+            | Lf(a) -> (match s2 with
+                | Lf(b) -> similarite a b
+                | _ -> failwith "Error, not a leaf at the same place")
+            (* if we got a branch, then check each branch *)
+            | Br(left, a,_,right) -> (match s2 with
+                | Br(leftS2, aS2, _, rightS2) -> (sum_sim left leftS2) +.
+                                                 (sum_sim (Lf a) (Lf aS2)) +.
+                                                 (sum_sim right rightS2)
+                | _ -> failwith "Branch not at the same place."
+              )
+            (* save the sum in r *)
+          in let r : float = sum_sim l a
+          (* check if sum is greater *)
+          in if (r > v)
+          (* yes, replace *)
+          then acc other l r
+          (* no continue *)
+          else acc other s v
+      | [] -> s
+    in acc l (List.hd l) (-1.0)
+;;</code>
+<code class="language-ocaml">
+let tree1 = Br(
+    (Br( (Lf [G;C;A;T]), [A;C;A;T], 3, (Lf [T;C;G;T]) ) ),
+    [A;A;A;A;],8,
+    (Br((Lf [T;A;G;A]),[A;A;G;A],2,(Lf [G;A;G;A])))
+  );;
+</code>
+<code class="language-ocaml">
+(* not like tree 1 at all *)
+let tree2 = Br(
+    (Br( (Lf [G;A;A;T]), [G;G;C;T], 5, (Lf [C;A;G;T]) ) ),
+    [A;A;T;A;],12,
+    (Br((Lf [T;A;G;A]),[A;A;G;A],3,(Lf [G;T;G;A])))
+  );;
+</code>
+<code class="language-ocaml">
+(* not like tree 1 at all, like tree2 *)
+let tree3 = Br(
+    (Br( (Lf [G;A;A;T]), [G;G;C;T], 5, (Lf [C;A;G;T]) ) ),
+    [A;A;T;A;],14,
+    (Br((Lf [T;A;G;A]),[C;C;G;C],5,(Lf [G;T;G;A])))
+  );;
+</code>
+<code class="language-ocaml">
+(* almost tree1 but one change *)
+let tree4 = Br(
+    (Br( (Lf [G;C;A;T]), [A;C;A;T], 3, (Lf [T;C;G;T]) ) ),
+    [A;A;A;A;],9,
+    (Br((Lf [T;A;G;A]),[C;A;G;A],2,(Lf [G;A;G;A])))
+  );;
+</code>
+<code class="language-ocaml">
+(* test empty *)
+let _ = assert((try similaire tree1 [] with Failure _ -> tree1) = tree1);;
+(* simple test *)
+let _ = assert (similaire tree1 [tree2] = tree2);;
+(* should be tree4 since almost the same *)
+let _ = assert (similaire tree1 [tree2; tree3;tree4] = tree4);;
+(* should be tree1 since tree1 = tree1 *)
+let _ = assert (similaire tree1 [tree1; tree3;tree4] = tree1);;
 </code></pre>
 </blockquote>
 
