@@ -15,6 +15,8 @@ You should remember that the concepts are
   `f(x)` or `y` is the same, and `f(x)-f(x)` is equal
   to `0`)
 
+[Here](intro/fp.md) something more complete.
+
 <div class="sr"></div>
 
 ## Introduction
