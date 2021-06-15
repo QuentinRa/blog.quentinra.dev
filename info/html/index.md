@@ -151,3 +151,60 @@ Then you can use some special tags like
 * [Definition](special/dl.md) with dl and dd
 * [Some code](special/code.md) with code and pre
 * [Tables](special/tables.md) using table
+
+<div class="sr"></div>
+
+## Forms
+
+...
+
+<div class="sl"></div>
+
+## Using the console
+
+* press ``CTRL-SHIFT-I``
+* or right click then inspect
+* or ... > ... tools > development tools
+
+In the console, at for now we will only do that, 
+you can in ``Elements`` check out the tags used in the
+page.
+
+By pressing ``CTRL-SHIFT-C``, you can find the tag
+in the html by simply moving your mouse.
+
+<div class="sr"></div>
+
+## W3 validator
+
+Check out that the code you wrote is following the W3C
+norms [here](https://validator.w3.org/#validate_by_input)
+(https://validator.w3.org/#validate_by_input).
+
+We don't have rules to follows but it's good to hear
+how you could wrote your code in a better when following
+with developers standards.
+
+<div class="sl"></div>
+
+## Meta tags
+
+Do you remember ``head`` tag? Here some advices as to
+what you wrote here.
+
+* <https://www.google.com/webmasters/markup-helper/u/0/?hl=fr>
+* <https://www.oodlesmarketing.com/blog/use-google-structured-data-markup-helper/>
+* <https://www.seoptimer.com/meta-tag-generator>
+* this one is pretty good <https://metatags.io/>
+
+```html
+<!-- website icon -->
+<link rel="icon" href=".../icon.png">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- meta data -->
+<meta name="AUTHOR" content="...">
+<meta name="COPYRIGHT" content="...">
+<meta name="KEYWORDS" content="....">
+<meta name="DESCRIPTION" content="...">
+```
