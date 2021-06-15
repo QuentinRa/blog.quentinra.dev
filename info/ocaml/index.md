@@ -97,6 +97,11 @@ And you may want to do some tests using assertions
 
 *  [Asserts](interm/assets.md)
 
+And here some exercises
+
+* MCQ (not yet)
+* [Write some code](interm/exercises.md)
+
 <div class="sr"></div>
 
 ## Advanced concepts
