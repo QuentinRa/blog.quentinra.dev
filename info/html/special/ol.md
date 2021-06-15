@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-Use ol and **li** tags to make an ordered list.
+Use **ol** and **li** tags to make an ordered list.
 
 ```html
 <ol>

@@ -125,7 +125,7 @@ And some basic tags to style a bit your page
 Then you can use some special tags like
 
 * [Ordered list](special/ol.md) with ol and li
-* [UnOrdered list](special/ul.md) with ul and li
+* [Unordered list](special/ul.md) with ul and li
 * [Definition](special/dl.md) with dl and dd
 * [Some code](special/code.md) with code and pre
 * [Tables](special/tables.md) using table
