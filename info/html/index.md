@@ -89,6 +89,28 @@ your section like some contact info at the right etc.
 
 ![html5_doc_sections](html5.png)
 
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <title>titre du site</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+        <header>
+          ... some tags ...
+          <nav>
+            ...
+          </nav>
+        </header>
+        <section>... some tags ...</section>
+        <section>... some tags ...</section>
+        <aside>... some tags ...</aside>
+        <footer>... some tags ...</footer>
+</body>
+</html>
+```
+
 <div class="sl"></div>
 
 ## Learn the tags I
