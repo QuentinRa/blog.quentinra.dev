@@ -246,3 +246,110 @@ distance(AAAA, ACAT) + 3
 + distance(AAAA, AAGA) + 2 = 2 + 3 + 1 + 2 = 8.
 \)</span>
 </p>
+
+<div class="sl"></div>
+
+## string_of_arbre_phylo
+
+Simply write a function to print your tree.
+
+
+```ocaml
+let rec arbre_phylo_vers_string (a : arbre_phylo) : string =
+    (* your code here *)
+```
+
+<blockquote class="spoiler">
+<pre><code class="language-ocaml"
+>let rec arbre_phylo_vers_string (a : arbre_phylo) : string = match a with
+  (* convert a brin to string *)
+  | Lf(a) -> let rec brin_vers_string (b: brin) (acc: string) : string =
+               match b with
+               | A::other -> brin_vers_string other acc ^ "A"
+               | C::other -> brin_vers_string other acc ^ "C"
+               | G::other -> brin_vers_string other acc ^ "G"
+               | T::other -> brin_vers_string other acc ^ "T"
+               | [] -> acc
+               (* I reversed it here instead of changing acc ^ *)
+      in brin_vers_string (List.rev a) ""
+      (* if it's a branch then we print brin : value
+      ( left part, right part) and of course we use arbre_phylo_vers_string *)
+  | Br(left, b, v, right) -> arbre_phylo_vers_string (Lf b) ^ ":" ^
+                             string_of_int v^
+                             "=(" ^
+                             arbre_phylo_vers_string left ^
+                             "," ^
+                             arbre_phylo_vers_string right
+                             ^ ")"
+;;
+let _ = assert(arbre_phylo_vers_string (Lf [G;C;A;T]) = "GCAT")
+let _ = assert(arbre_phylo_vers_string (Br(
+    (Br( (Lf [G;C;A;T]), [A;C;A;T], 3, (Lf [T;C;G;T]) ) ),
+    [A;A;A;A;],8,
+    (Br((Lf [T;A;G;A]),[A;A;G;A],2,(Lf [G;A;G;A])))
+  )) = "AAAA:8=(ACAT:3=(GCAT,TCGT),AAGA:2=(TAGA,GAGA))")
+</code></pre>
+</blockquote>
+
+<div class="sr"></div>
+
+## Other questions
+
+...
+
+
+```ocaml
+
+    (* your code here *)
+
+
+(*  *)
+```
+
+<blockquote class="spoiler">
+<pre><code class="language-ocaml"
+>
+</code></pre>
+</blockquote>
+
+<div class="sl"></div>
+
+## Other questions
+
+...
+
+
+```ocaml
+
+    (* your code here *)
+
+
+(*  *)
+```
+
+<blockquote class="spoiler">
+<pre><code class="language-ocaml"
+>
+</code></pre>
+</blockquote>
+
+<div class="sr"></div>
+
+## Other questions
+
+...
+
+
+```ocaml
+
+    (* your code here *)
+
+
+(*  *)
+```
+
+<blockquote class="spoiler">
+<pre><code class="language-ocaml"
+>
+</code></pre>
+</blockquote>
