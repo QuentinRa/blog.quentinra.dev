@@ -156,7 +156,25 @@ Then you can use some special tags like
 
 ## Forms
 
-...
+Creating a form in html is a bit tricky, or at least more complex
+than any other tags. Also note that you can't process a form since
+you need a server to process your data.
+
+W3School [set one for you](https://www.w3schools.com/html/html_forms.asp)
+for their example so try it.
+
+```html
+<form action="script.php" method="POST">
+    <!-- some content here -->
+</form>
+```
+
+Action is pointing to the script.php handling the request.
+Methods is the method used to send your data. POST means that
+the data will be hidden, GET means that the data will be shown in the URL.
+
+* [Learning about POST and GET](forms/post-get.md)
+* [Learning about form input fields](forms/input.md)
 
 <div class="sl"></div>
 
