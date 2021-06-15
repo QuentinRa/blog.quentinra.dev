@@ -389,23 +389,63 @@ let _ = assert (similaire tree1 [tree1; tree3;tree4] = tree1);;
 
 <div class="sl"></div>
 
-## Other questions
+## Getters and constructor
 
-...
+Make a function returning the malus of the head.
+Make a function returning the brin of the head.
+Make a function creating a ``arbre_phylo``.
 
 
 ```ocaml
-
+let get_root (a : arbre_phylo) : brin =
     (* your code here *)
 
+let get_malus (a : arbre_phylo) : int =
+    (* your code here *)
 
-(*  *)
+let br (ag : arbre_phylo) (b : brin) (ad : arbre_phylo) : arbre_phylo =
+    (* your code here *)
 ```
 
 <blockquote class="spoiler">
 <pre><code class="language-ocaml"
+>let get_root (a : arbre_phylo) : brin = match a with
+  | Lf(a) -> a
+  | Br(_,b,_,_) -> b
+;;
+(* tests *)
+let _ = assert(get_root tree1 = [A;A;A;A;]);;
+let _ = assert(get_root tree2 = [A;A;T;A;]);;
+let _ = assert(get_root tree3 = [A;A;T;A;]);;
+</code>
+<code class="language-ocaml"
 >
-</code></pre>
+let get_malus (a : arbre_phylo) : int = match a with
+  | Lf(_) -> 0
+  | Br(_,_,v,_) -> v
+;;
+(* tests *)
+let _ = assert(get_malus tree1 = 8);;
+let _ = assert(get_malus tree2 = 12);;
+let _ = assert(get_malus tree3 = 14);;
+</code>
+<code class="language-ocaml"
+>let br (ag : arbre_phylo) (b : brin) (ad : arbre_phylo) : arbre_phylo =
+  let agM = get_malus ag in (* get left malus *)
+  let adM = get_malus ad in (* get right malus *)
+  let agR = get_root ag in (* get left root *)
+  let adR = get_root ad in (* get right malus *)
+  (* malus is distance with each left and right, with the malus of left and right *)
+  let malus = agM + adM + (distance b agR) + (distance b adR) in
+  (* create brin *)
+  let brin = Br(ag, b, malus, ad)
+  in brin (* we could have skipped this variable but for the sake of transparency *)
+;;
+(* some tests *)
+let _ = assert(br (Lf [C;T]) [A;A] (Lf [T;C]) = Br (Lf [C; T], [A; A], 4, Lf [T; C]))
+let _ = assert(br (Lf [A;T]) [A;A] (Lf [T;C]) = Br (Lf [A; T], [A; A], 3, Lf [T; C]))
+</code>
+</pre>
 </blockquote>
 
 <div class="sr"></div>
