@@ -141,6 +141,7 @@ div {
      lighter, ... */
     line-height: 50px;
     
+    text-align: justify; /* center, left, right, ... */
     text-decoration: underline #dd4441; /* add underline */
     text-decoration: none; /* remove underline */
     
@@ -170,11 +171,44 @@ div {
     who is on top ? the one with the highest z index */
     
     /** explained bellow */
-    margin: 15px;
+    margin: auto;
     padding: 15px; /* all */
     padding: 15px 5px; /* top=bottom=15, left=right=5 */
     padding: 15px 5px 15px 5px; /* top, right, bottom, left */
     padding-bottom: 15px; /* manually */
+    
+    /* so convenient to center a div */
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    /* or you may have to look around flex box*/
+    display: flex;
+    /* or maybe you would like */
+    float: left;
+    float: right;
+
+    /** too many thing and a little space,
+    how should we handle the overflow?
+     */
+    overflow:hidden; /* hide */
+    overflow:auto; /* show a scroll bar */
+}
+```
+
+...
+
+<div class="sr"></div>
+
+# Responsive
+
+```css
+@media screen and (max-width: 950px) {
+    /* the style declared here will only
+     be used is the width is lesser than
+     950px. */
 }
 
+@media screen and (max-width: 1100px) and (min-width: 950px) {
+    /* ... */
+}
 ```
