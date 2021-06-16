@@ -139,6 +139,38 @@ calls echo
 
 ## Migration
 
-...
+Notes from PHP5.6 to PHP 7
+
+* change ``<? ?>`` to `<?php ?>`
+* ``ereg`` deleted
+* ``mbstring`` deleted/moved
+* ``mktime`` changed
+* ``list`` replaced by `str_split` and foreach changed
+* session handling changes
+* ``mysql`` deprecated, use `mysqli`
+
+Notes in PHP7
+
+* add function returns types
+* add function arguments types
+
+Notes in PHP8
+
+* add unions return types
+* add annotations
 
 <div class="sl"></div>
+
+## Sources
+
+* <https://www.javatpoint.com/get-vs-post>
+* <https://www.php.net/manual/fr/language.operators.php>
+* <https://www.php.net/manual/fr/language.basic-syntax.php>
+* <https://www.w3schools.com/php/default.asp>
+* <https://www.php.net/manual/fr/language.constants.php>
+* <https://www.php.net/manual/fr/language.oop5.php>
+* <https://www.php.net/manual/fr/reserved.variables.server.php>
+* <https://www.php.net/manual/fr/reserved.variables.session.php>
+* <https://www.php.net/manual/fr/reserved.variables.cookies.php>
+* <https://www.php.net/manual/fr/language.functions.php>
+* <https://www.php.net/manual/en/functions.anonymous.php>
