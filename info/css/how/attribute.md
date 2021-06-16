@@ -1,5 +1,7 @@
 # Using style attribute
 
+[Go back](..)
+
 First, you can write CSS directly using ``style``
 attribute of a tag.
 

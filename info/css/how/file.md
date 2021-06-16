@@ -1,5 +1,7 @@
 # Write a CSS file
 
+[Go back](..)
+
 You will create a file, usually called ``style.css``
 and write some css inside.
 
