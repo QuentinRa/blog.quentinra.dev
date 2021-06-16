@@ -39,14 +39,56 @@ if your IDE is doing it!
 
 ## Start writing some PHP
 
-...
+Now that you got a server, you can only run some php
+if you are using an URL (no drag and drop like in html
+possible). You will write a file ending with ``.php``.
+If the file is called ``index`` then you don't
+need to write it in the url.
+
+Finally, note that you can write HTML inside
+a PHP file, but not PHP inside a HTML file.
+
+```php
+<?php // sort of ${HTML_FOLDER}/test/index.php, so I will use http://localhost/test/index.php ?>
+<!DOCTYPE html>
+<html lang="fr">
+<head><title>TODAY date</title></head>
+<body>
+    <p>
+    <?php
+        // The content is evaluated by the server
+        // before sending the resulting HTML to the client
+        // so the client will have something like this
+        // <p>Hello World, we are the xxxx-xx-xx !</p>
+        echo "Hello World, today we are the ".date("Y-m-d")." !";
+    ?>
+    </p>
+</body>
+</html>
+```
+
+So you should have a better understanding of what we will do.
+We will actually write some code and use methods
+like echo were the result will be printed in the resulting
+HTML giving us your final HTML file requested by
+the client.
 
 <div class="sr"></div>
 
+## Basic concepts
+
+* [Variables](basic/variables.md)
+* [Operators](basic/operators.md)
+* [Statements](basic/statements.md)
+* [Functions](basic/functions.md)
+* [Basic functions](basic/functions-basic.md)
+* [Include/Require](basic/include.md)
+* [Arrays](basic/arrays.md)
+
+<div class="sl"></div>
+
 ## Main concepts
 
-* [Arrays](theme/arrays.md)
-* [Functions](theme/functions.md)
 * [Classes and objects](theme/classes.md)
 * [Database and SQL](theme/sql.md)
 * [Forms](theme/forms.md)
