@@ -37,6 +37,41 @@ if your IDE is doing it!
 
 <div class="sl"></div>
 
+## Routing
+
+Here we go. Now that you are using URLs, you need
+to learn a bit about how they work.
+
+Let's says we have some website here: ``http://localhost/index.php``.
+First ``index.php`` may be omitted since it's the file
+loaded by default. Next everything after the server
+name like ``localhost`` here is called URI.
+
+Then  ``http://localhost/test/file.php`` means that
+you got a folder ``test`` and a file `file.php` inside
+your server root folder.
+
+On linux, don't forget to set **the permissions** for
+a folder on linux like
+
+* chmod ``700``: seems like the minimum for a .php
+* chmod ``744``: seems like the minimum for a .html
+* chmod ``711``: seems like the minimum for a folder
+
+If not already done, and your are using public_html
+folder
+
+* chmod ``711`` on your home folder
+* chmod ``711`` on public_html folder
+
+Note that public_html is a shortcut for your
+server root folder, but each user will have a server
+folder accessible like that
+``https://server.name.tld//~username/index.php`` and
+index.php being in ``[...]/username/public_html/index.php``.
+
+<div class="sl"></div>
+
 ## Start writing some PHP
 
 Now that you got a server, you can only run some php
