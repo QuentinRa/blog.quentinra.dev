@@ -84,6 +84,16 @@ First of all,
 * you can also make comments with ``#`` but that's
 usually used for specials comments
   
+Then note that in order to write some php, you
+need to write a PHP tag like this
+
+```php
+<?php
+// some php code here
+?>
+<!-- here it's HTML not PHP -->
+```
+
 Then here you go with the syntax
 
 * [Variables](basic/variables.md)
