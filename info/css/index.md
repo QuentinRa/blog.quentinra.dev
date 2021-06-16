@@ -20,6 +20,19 @@ them since they are quite used.
 * [style tag](how/tag.md) (`<style></<style>`, not recommended)
 * [style file](how/file.md) (`style.css`)
 
+A default css file will probably look like this
+
+```css
+@charset "UTF-8";
+
+html {
+    /* smooth scrolling, you will only
+     see the difference if you made a "back to top"
+     button through */
+    scroll-behavior:smooth;
+}
+```
+
 <div class="sl"></div>
 
 ## Selectors
