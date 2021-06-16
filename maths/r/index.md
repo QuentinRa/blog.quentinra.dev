@@ -71,15 +71,6 @@ that you might use or not.
 
 ## Sources
 
-Credits
-
-* Jean R. LOBRY lectures (Université de Lyon)
-* Brigitte SCHAEFFER lectures (INRA-Jouy)
-* Sophie SCHBATH lectures (INRA-Jouy)
-* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
-
-References
-
 * « Take only pictures, leave only footprints. »
 * Swirl, R programming
 * <https://pbil.univ-lyon1.fr/R/pdf/lang01.pdf>

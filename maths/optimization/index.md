@@ -84,11 +84,4 @@ optimization. Still here you have some examples.
 
 ## Sources
 
-Credits
-
-* Alain FAYE ([ENSIIE](https://www.ensiie.fr/) teacher)
-* Dariush GHORBANZADEH ([ENSIIE](https://www.ensiie.fr/) teacher)
-* Anonymous
-* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
-
-[List of references](ref.md)
+[References](ref.md)
