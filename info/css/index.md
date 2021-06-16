@@ -34,3 +34,15 @@ to defines this "something".
 * [joker selector](selector/joker.md) : other kind of selector
 
 At this point, you are ready to write some css.
+
+**BEWARE**: sometimes you might write CSS, refresh and no changes. That's
+sometimes because you used the wrong selector or some error on your side,
+but it may also be your browser that cached the page. Refresh
+the cache using one of theses (the one working for you)
+
+* CTRL+SHIFT+F5
+* CTRL+F5
+* CTRL+R
+* CTRL+SHIFT+R
+
+To check your selector, simply try adding a background to see what you are selecting.
