@@ -61,14 +61,14 @@ Do not forget to exit! And valid path would be like
 
 <div class="sr"></div>
 
-**isset? or not ?**
+**isset? or empty ?**
 
 You can ask PHP to check if a variable is set 
 or empty.
 
 * ``isset``: true if variable exists
 * ``unset``: destroy variable
-* ``empty``: true if variable is empty
+* ``empty``: true if variable is empty (or the variable is not set)
 
 ```php
 $a_bool = true;
@@ -81,7 +81,7 @@ unset($a_bool);
 echo isset($a_bool);
 // true
 echo empty("");
+echo empty($a_bool); // not set so it's empty
 // false
 echo empty("not empty");
 ```
-
