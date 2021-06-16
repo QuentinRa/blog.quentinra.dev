@@ -124,9 +124,12 @@ calls echo
 
 ## Main concepts
 
+After learning almost all the syntax needed, here the concept
+you will surely use in PHP.
+
 * [Classes and objects](theme/classes.md)
 * [Database and SQL](theme/sql.md)
-* [Forms](theme/forms.md)
+* [Handling Forms](theme/forms.md)
 * [Sessions](theme/sessions.md)
 
 <div class="sl"></div>
