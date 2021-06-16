@@ -195,11 +195,30 @@ div {
 }
 ```
 
-...
+So let's talk about margin and padding. Basically, **margin** is the gap with
+your tag the the others **outside**. **Padding** is the gap between
+our tag and the components **inside**. As show
+in the examples, value are
+
+* if v : applied to all
+* if v1 v2 : v1 for Y, v2 for X
+* if v1 v2 v3 v4 : top right bottom left
+
+and v can be : a value (check size), a percent or auto.
 
 <div class="sr"></div>
 
 # Responsive
+
+THIS IS A CORE CONCEPT. The main idea is adapting your
+page according to the size of the screen. Adding
+the line (viewport...) allow some basic resizing
+but you will have to do a lot of this by yourself.
+
+The main idea is that you will use media queries. Theses
+sort of functions will contains a lot of classes that
+you want to be used if the screen have a predetermined
+size.
 
 ```css
 @media screen and (max-width: 950px) {
@@ -212,3 +231,15 @@ div {
     /* ... */
 }
 ```
+
+You can use that to hide/show some buttons, change some
+component's positions, ...
+
+<div class="sl"></div>
+
+## Sources
+
+* <http://www.iut-fbleau.fr/sitebp/web/wim11/css/>
+* <https://www.w3schools.com/css/default.asp>
+* <https://validator.w3.org/#validate_by_input>
+* <https://perso.limsi.fr/annlor/enseignement/ensiie/pw/resume_html_css.pdf>
