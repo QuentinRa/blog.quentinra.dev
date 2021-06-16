@@ -21,3 +21,30 @@ and in your style.css you will use ``.class`` selector
     background: #1c2127;
 }
 ```
+
+<div class="sr"></div>
+
+**Cumulative classes selector**
+
+You can ask for a component to have more
+xxx and yyyy classes.
+
+```css
+.text-danger.bg-dark {
+    color: #dd4441;
+    background: #1c2127;
+}
+```
+
+Will match
+
+```html
+<p class="text-danger bg-dark">a text here</p>
+```
+
+and won't match
+
+```html
+<p class="text-danger">a text here</p>
+<p class="bg-dark">a text here</p>
+```
