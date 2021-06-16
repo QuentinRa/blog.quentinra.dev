@@ -29,6 +29,12 @@
       "name": "HTML",
       "desc": "Learn how to use html to create a simple website.",
       "icon": "<i class=\"bi bi-globe\"></i>"
+    },
+    {
+      "tag": "css",
+      "name": "CSS",
+      "desc": "Use css to add some style to your website.",
+      "icon": "<i class=\"bi bi-globe\"></i>"
     }
   ]
 }
