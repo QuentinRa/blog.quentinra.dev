@@ -24,3 +24,64 @@ into the HTML (used for debugging).
 $a = "15";
 var_dump($a);
 ```
+
+<div class="sr"></div>
+
+**define**
+
+Create a constant. Constants are called without
+a ``$``.
+
+```php
+define("MY_CONSTANT", 5);
+echo MY_CONSTANT; // 5
+```
+
+Note that nowadays, we are not using define anymore.
+
+```php
+const MY_CONSTANT = 5;
+echo MY_CONSTANT; // 5
+```
+
+<div class="sr"></div>
+
+**redirection**
+
+No the function redirect is not the one. You must
+use this.
+
+```php
+header("Location: path");
+exit();
+```
+
+Do not forget to exit! And valid path would be like
+``index.php`` so nothing complicated.
+
+<div class="sr"></div>
+
+**isset? or not ?**
+
+You can ask PHP to check if a variable is set 
+or empty.
+
+* ``isset``: true if variable exists
+* ``unset``: destroy variable
+* ``empty``: true if variable is empty
+
+```php
+$a_bool = true;
+
+// true
+echo isset($a_bool);
+// destroy variable
+unset($a_bool);
+// false
+echo isset($a_bool);
+// true
+echo empty("");
+// false
+echo empty("not empty");
+```
+
