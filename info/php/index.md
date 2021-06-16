@@ -133,7 +133,28 @@ calls echo
 
 ## MVC in PHP
 
-...
+The MVC is a design pattern, in which the idea 
+splitting your code into
+
+* View: what you will show to the user
+* Model: the data of your application, usually the SQL part
+* Controller: will fetch data from the model, render the view
+
+Usually, your website will have a router that will call
+a methods according to the page requested like ``home``,
+`contact`, ...
+
+Each of theses methods is in a controller, and the controller
+will fetch data from the model if needed, init some
+variable or a session, handle $_POST/$_GET if needed
+and render send everything so that the view only
+need to be rendered using the variables already created
+and properly set/formatted.
+
+Usually, a page is not **one** view but a lot of views
+like a header, a page-specific view, and the footer
+so the controller need to ask all of theses to render
+themselves.
 
 <div class="sr"></div>
 
