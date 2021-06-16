@@ -26,7 +26,7 @@ A default css file will probably look like this
 @charset "UTF-8";
 
 html {
-    /* smooth scrolling, you will only
+    /* */
      see the difference if you made a "back to top"
      button through */
     scroll-behavior:smooth;
@@ -59,6 +59,11 @@ the cache using one of theses (the one working for you)
 
 To check your selector, simply try adding a background to see what you are selecting.
 
+**And if you feel now that you got many selectors, you are wrong**,
+check out [here](https://www.w3schools.com/cssref/css_selectors.asp)
+and [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+if you want more. What you just read was only my handmade list.
+
 <div class="sr"></div>
 
 ## Sizes
@@ -86,3 +91,90 @@ You can do some calculations with ``calc(...)``
 like ``width: calc(100% - 15px);``
 
 At this point, you are ready to write some css.
+
+<div class="sl"></div>
+
+## CSS properties
+
+The format is 
+
+```css
+selector {
+    property_name: property_value;
+}
+```
+
+Notes
+
+* write one per line (or not, I won't)
+* must add a ``;`` if you add more than one property
+* specify the unit unless the value is 0
+* you may add ``!important`` to force a style
+* the style added at the end are the one applied first (unless important
+  is used)
+* you may use the value ``inherit`` to make a property
+value be inherited
+
+And here we go! The main idea is that I'm listing some
+styles you may use, then you go check on duckduckgo/google/w3school/stackoverflow
+how you could use it if you don't understand.
+
+```css
+div {
+    background: yellow; /** change background **/
+    background: rgb(255,0,0); /** change background **/
+    background: rgba(255,0,0, 0.8); /** change background with alpha=transparency **/
+    background: #dd4441; /** use a hexadecimal code **/
+    background: url("..."); /** url is a path or a real url **/
+    /* if it's an image, you can play with it */
+    background-size: 100% 100%;
+    background-size: auto;
+    background-size: cover;
+    background-repeat: repeat;
+    
+    color: red; /* working like background */
+    font-size: 15px; /* font size */
+    font-family: "Open Sans", sans-serif; /* change font-family, try using
+     "Open Sans" then ... until the last one. In case of something no-specific
+     link "sans-serif" than any font passing the requirement is used. */
+    font-weight: 400; /* font weight, you could also write bold, ligh,
+     lighter, ... */
+    line-height: 50px;
+    
+    text-decoration: underline #dd4441; /* add underline */
+    text-decoration: none; /* remove underline */
+    
+    width: 5px; /* width */
+    height: 5px; /* height */
+    
+    display: block; /* display value. You can use none to hide something */
+    
+    border: 1px solid #202735; /* add border, size=1px, type=solid and black */
+    border-radius: 4px; /* border radius, round some button for instance */
+    
+    cursor: pointer; /* change cursor to "click"=pointer cursor */
+    outline: none; /* for button, outline shown on focus */
+}
+```
+
+Adding some position-related styles
+
+```css
+div {
+    position: absolute; /* relative, fixed */
+    top: 0; /* try to set a position */ 
+    left: 0;
+    right: 0;
+    border: 0;
+    z-index: 1; /* if two div at the same pos,
+    who is on top ? the one with the highest z index */
+    
+    /** explained bellow */
+    margin: 15px;
+    padding: 15px; /* all */
+    padding: 15px 5px; /* top=bottom=15, left=right=5 */
+    padding: 15px 5px 15px 5px; /* top, right, bottom, left */
+    padding-bottom: 15px; /* manually */
+}
+
+```
