@@ -104,6 +104,22 @@ Then here you go with the syntax
 * [Include/Require](basic/include.md)
 * [Arrays](basic/arrays.md)
 
+And two tips
+
+* first you you don't have any HTML inside your
+php file, then don't add a ``?>`` a the end
+* second, if you are doing this
+```php
+<?php echo "Hello World!" ?>
+```
+
+Then you can use the reduced form that automaticaly
+calls echo
+
+```php
+<?="Hello World!"?>
+```
+
 <div class="sl"></div>
 
 ## Main concepts
