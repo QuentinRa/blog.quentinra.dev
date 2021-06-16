@@ -77,9 +77,18 @@ the client.
 
 ## Basic concepts
 
+First of all, 
+
+* you need a ``;`` at the end of each line (one exception)
+* you can make comments using ``//`` or `/* */`
+* you can also make comments with ``#`` but that's
+usually used for specials comments
+  
+Then here you go with the syntax
+
 * [Variables](basic/variables.md)
 * [Operators](basic/operators.md)
-* [Statements](basic/statements.md)
+* [Structures](basic/structures.md)
 * [Functions](basic/functions.md)
 * [Basic functions](basic/functions-basic.md)
 * [Include/Require](basic/include.md)
