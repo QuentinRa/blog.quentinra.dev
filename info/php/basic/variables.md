@@ -7,7 +7,6 @@ Types are implicit but you can write
 
 ```php
 <?php
-
 $n = 5; // int
 $n = 5.0; // float
 
@@ -21,10 +20,37 @@ $n = true; // true
 $n = false; // false
 ```
 
-You can call a variable from a string like that
+Note these two functions
+
+* ``gettype``: returns the type of a variable
+* ``is_int``: check the type of a variable
+  (here int but you got a bunch of functions like this)
+
+<div class="sr"></div>
+
+## String specific knowledge
+
+You're gonna use strings a lot, since you are gonna echo
+a lot. So remember theses tips
 
 ```php
-<?php
-// get n variable value
-$five = ${"n"};
+$number = 5; // int
+
+// "This is 5"
+// variable inside string
+echo "This is $number";
+
+// without }, the variable would be $numberb
+// "This is a5b"
+echo "This is a{$number}b"; 
+
+// concatenation
+echo "This is ".$number;
+
+// calling variable with name as a string
+echo "This is ${"number"}";
+
+// not really useful but you can do that too
+// like in Shell
+echo "This is ${number}";
 ```
