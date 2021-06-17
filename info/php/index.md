@@ -165,6 +165,7 @@ concepts that you will surely use in PHP.
 * [Database and SQL](theme/sql.md)
 * [Handling Forms](theme/forms.md)
 * [Sessions](theme/sessions.md)
+* [Login/Logout](theme/login_logout.md)
 
 One last piece of advice, about security, is
 beware of XSS injections. In a form, one
