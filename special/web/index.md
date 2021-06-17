@@ -4,7 +4,7 @@ Your websites will be accessible
 with a URL like this ``http://pgsql.pedago.ensiie.fr/~prenom.nom/``.
 
 If you didn't, create a ``public_html`` in your home
-(if you are on ENSIIE server otherwise check
+(if you are on the ENSIIE server otherwise check
 the course HTML/CSS/JS/PHP).
 Don't forget to set the permissions for 
 a folder like
