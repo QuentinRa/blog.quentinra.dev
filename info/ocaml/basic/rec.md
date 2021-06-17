@@ -15,7 +15,7 @@ pow 5 3
 (* 125 *)
 ```
 
-Notice the (power-1). ``-`` is a function . You can't
+Notice the (power-1). ``-`` is a function. You can't
 write ``string_of_int 5-1`` since for ocaml it's
 like ``(string_of_int 5) - 1``. So we would
 have here without parenthesis
@@ -33,10 +33,10 @@ You usually write a nonterminal function when you are postponing
 the calculations meaning that you are calculating the next term
 before the current term (evaluating n+1 before n).
 
-So a terminal function is when you are writing you code
-in order to evaluate n before n+1.
+So a terminal function is when you are writing your code
+to evaluate n before n+1.
 
-The function above is **nonterminal**! In order to write
+The function above is **nonterminal**! To write
 some terminal function, we will use **functions with
 accumulators**.
 
@@ -57,7 +57,7 @@ let pow x power =
     then acc
     (* recursive call *)
     else pow_acc x (power-1) (x * acc) 
-  (* we need to call the inner function in order to get a value *)
+  (* we need to call the inner function to get a value *)
   in pow_acc x power 1 (* we start at one since power=0 means one
                           and we are returning acc so one if power =0 *)
 ;;
