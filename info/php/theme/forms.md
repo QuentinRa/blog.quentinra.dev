@@ -36,7 +36,7 @@ use sessions.
 
 **Validate**
 
-You must check what the user send to you, even
+You must check what the user sends to you, even
 if you checked in HTML. The user can bypass the HTML/JS
 verifications but not the PHP one, at least no easily.
 
@@ -72,4 +72,4 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) != false){
 * ...
 
 You could also use ``ctype_digit(text)`` returning
-true if text is a int.
+true if the text is an int.
