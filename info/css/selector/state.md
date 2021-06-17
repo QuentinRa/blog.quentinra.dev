@@ -3,11 +3,11 @@
 [Go back](..)
 
 It's something you can add to one
-of the 3 previous selector introduced.
+of the 3 previous selectors introduced.
 
 The idea is when you selected something,
-you will filter the selection like you could
-have saw using attribute when tag selectors.
+you will filter the selection as you could
+have seen using attributes with tag selectors.
 Here some of them usable this time on any kind
 of selectors.
 
@@ -24,7 +24,7 @@ a:visited { /* visited link */ }
 
 ## CSS functions
 
-You got some functions that will help you selecting
+You got some functions that will help you select
 or not something
 
 ```css
