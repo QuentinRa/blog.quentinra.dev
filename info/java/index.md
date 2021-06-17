@@ -171,7 +171,20 @@ And things you might use
 
 ## Tests with JUnit
 
-...
+The test logic is presented in the project/tests course.
+You should know the logic beforehand, like what's an
+assertion.
+
+* [Defensive programming](tests/dp.md)
+* [assert in Java](tests/asserts.md)
+
+And finally, JUnit-specific knowledge. Note that
+should use JUnit5 or higher.
+
+* [Installation](tests/setup.md)
+* [Run test in JUnit4](tests/junit4.md)
+* [Write some tests](tests/code.md)
+* [Parametric tests](tests/par.md)
 
 <div class="sr"></div>
 
