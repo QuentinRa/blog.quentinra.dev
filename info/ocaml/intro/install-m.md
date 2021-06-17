@@ -11,7 +11,7 @@ but just in case, here is a copy.
 2. extract in ``C:/``
 3. open a terminal
 4. write ``C:\ocaml\bin\ocamlc.exe -v`` (should print version)
-5. write ``PATH`` in Windows search bar (bottom left)
+5. write ``PATH`` in the Windows search bar (bottom left)
 6. edit environment variables menu
 7. Environment variables button
 8. first panel, click on ``Path``
