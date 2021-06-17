@@ -74,3 +74,84 @@ You must use ``$this->....`` to access the attribute `...`.
 
 Everything is the same that for attributes.
 Note that you may only have one constructor.
+
+<div class="sr"></div>
+
+**Inheritance**
+
+Like in Java, you will use ``extends`` to
+inherit of one concrete class. You can implements
+interfaces using ``implements`` and as many interfaces
+as you want. Finally, you can make a private inheritance
+using ``trait`` classes and inherit of more than one
+class.
+
+```php
+// some interface
+interface I1 { 
+    function test1();
+}
+// because that's taking less space
+interface I2 { function test2(); }
+```
+
+```php
+// abstract class, taking less space
+abstract class A { 
+    public function __construct() {}
+    abstract function test3();
+}
+```
+
+```php
+// create class, need to write the code for ALL
+class Concrete extends A implements I1, I2 {
+
+    public function __construct() {
+        // call to parent constructor
+        // you can also call parent methods etc.
+        // using `parent`
+        parent::__construct();
+    }
+
+    public function test1() { /*  TODO: Implement test1() method. */ }
+    function test2() { /* TODO: Implement test2() method. */}
+    function test3() { /* TODO: Implement test3() method. */}
+}
+```
+
+As for the trait class
+
+```php
+trait Parent1 { }
+trait Parent2 { }
+
+class Child {
+    // can use public/protected properties
+    // of Parent1 and Parent2
+    use Parent1;
+    use Parent2;
+}
+```
+
+<div class="sr"></div>
+
+**Namespaces**
+
+You might look into that if you need some
+packages.
+
+```php
+<?php
+// like package mu.package.name; in java
+namespace my\package\name;
+
+// import package.name.ClassName;
+use package\name\ClassName;
+// or if package imported
+use ClassName;
+```
+
+Note that it seems like this only works
+if you got a package manager like with
+composer.
