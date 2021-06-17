@@ -5,7 +5,12 @@
 In most of cases, you should use PDO to handle database requests since
 that's not something dependant of your database manager (MariaDB, Postgres, ...).
 
-
+```php
+<?php
+$db = new PDO("mysql:host=nom_host;charset=UTF8;dbname=nom_base", "user","password");
+$res = $db->query("sql query");
+$result = $res->fetchAll();
+```
 
 <div class="sr"></div>
 
@@ -28,6 +33,17 @@ while($row = mysqli_fetch_assoc($res)){
 }
 // close
 mysqli_close($connexion);
+```
+
+You might use
+
+```php
+$nr = mysqli_num_rows($res);
+$id = mysqli_insert_id($connexion);
+// add \ before '
+$code_sql = addslashes($code_sql);
+// or you may use
+$code_sql = mysqli_escape_string($connexion, $code_sql);
 ```
 
 <div class="sr"></div>
@@ -68,6 +84,23 @@ you will write
 $request = "Select * FROM users Where username=? AND password=?";
 ```
 Then you will "bind"=associate a value with each ``?``.
+
+<div class="sr"></div>
+
+## Prepared statements in PDO
+
+```php
+$user = "user"; $pwd = "pass"; // fake
+$db = new PDO("mysql:host=nom_host;charset=UTF8;dbname=nom_base", "user","password");
+$res = $db->query("sql query");
+$result = $res->fetchAll();
+$stmt = $db->prepare("... WHERE user = :user AND password = :password;");
+$stmt->bindValue(':user' , $user, PDO::PARAM_STR);
+$stmt->bindValue(':password', $pwd , PDO::PARAM_STR);
+$stmt->execute();
+// results
+$all = $stmt->fetchAll();
+```
 
 <div class="sr"></div>
 
