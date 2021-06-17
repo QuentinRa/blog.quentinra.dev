@@ -15,8 +15,8 @@ so be sure to check their tutorials.
 
 ## Introduction
 
-When you write some URL in your browser, you 
-made a request like ``https://duckduckgo.com/`` to a
+When you write some URL in your browser, you
+requested ``https://duckduckgo.com/`` to a
 server. The server returns to you a make page, written
 in ``HTML``.
 
@@ -60,7 +60,7 @@ Finally, as a side note, you can
 
 * tag name can be in lowercase or in uppercase (a or A is working)
 * you can write ``attribute=value`` (without " but that
-  may not work everytime according to value)
+  may not work every time according to value)
 * you may write ``<img></img>`` or `<img>` (without the /)
 but you should write ``<tagname />`` like this for auto-closable
 tags.
@@ -73,17 +73,16 @@ The first line is always ``<!DOCTYPE html>``, then you
 will have ``<html lang="your_language_code"> ... </html>``.
 But in HTML tag, you will have
 
-* ``head``: defines here the properties of your website such
-as the title, the icon, the stylesheet, ...
-* ``body``: defines what your website is actually looking
-like.
+* ``head``: defines here the properties of your website 
+such as the title, the icon, the stylesheet, ...
+* ``body``: defines what your website is looking like.
   
-Since HTML5, body use some inner tags
+Since HTML5, the body uses some inner tags
 
 * ``header``: the top of your website, may contains the navbar
 * ``nav``: for your navbar
 * ``section``: a section of your website
-* ``aside``: some content aside your main content in
+* ``aside``: some content aside from your main content in
 your section like some contact info at the right etc.
 * ``footer``: the footer of your website
 
@@ -115,7 +114,7 @@ your section like some contact info at the right etc.
 
 ## Learn the tags I
 
-Learn a lof of body tags.
+Learn a lot of body tags.
 
 * [Titles](tags/h.md) with h1 to h6
 * [Paragraphs](tags/p.md) with p
@@ -131,7 +130,7 @@ Some tags used for style/grouping tags later
 
 ## Learn the tags II
 
-And some basic tags to style a bit your page
+And some basic tags to style a bit your HTML page
 
 * [Bold](style/b.md) with b
 * [Underline](style/u.md) with u
@@ -156,8 +155,8 @@ Then you can use some special tags like
 
 ## Forms
 
-Creating a form in html is a bit tricky, or at least more complex
-than any other tags. Also note that you can't process a form since
+Creating a form in HTML is a bit tricky, or at least more complex
+than any other tags. Also, note that you can't process a form since
 you need a server to process your data.
 
 W3School [set one for you](https://www.w3schools.com/html/html_forms.asp)
@@ -184,12 +183,11 @@ the data will be hidden, GET means that the data will be shown in the URL.
 * or right click then inspect
 * or ... > ... tools > development tools
 
-In the console, at for now we will only do that, 
-you can in ``Elements`` check out the tags used in the
-page.
+In the console, in ``Elements``, you can check out the
+tags used inside the page.
 
 By pressing ``CTRL-SHIFT-C``, you can find the tag
-in the html by simply moving your mouse.
+in the HTML by simply moving your mouse.
 
 <div class="sr"></div>
 
@@ -200,14 +198,14 @@ norms [here](https://validator.w3.org/#validate_by_input)
 (https://validator.w3.org/#validate_by_input).
 
 We don't have rules to follows but it's good to hear
-how you could wrote your code in a better when following
-with developers standards.
+how you could write your code in a better way by following
+developers standards.
 
 <div class="sl"></div>
 
 ## Meta tags
 
-Do you remember ``head`` tag? Here some advices as to
+Do you remember the ``head`` tag? Here some advice as to
 what you wrote here.
 
 * <https://www.google.com/webmasters/markup-helper/u/0/?hl=fr>
