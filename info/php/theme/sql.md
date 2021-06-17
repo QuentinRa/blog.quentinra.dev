@@ -2,8 +2,9 @@
 
 [Go back](..)
 
-In most of cases, you should use PDO to handle database requests since
-that's not something dependant of your database manager (MariaDB, Postgres, ...).
+In most cases, you should use PDO to handle database requests
+since that's not something dependant on your database manager 
+(MariaDB, Postgres, ...).
 
 ```php
 <?php
@@ -16,7 +17,7 @@ $result = $res->fetchAll();
 
 ## Mariadb / MySQL
 
-You will use function starting with ``my_sqli``.
+You will use functions starting with ``my_sqli``.
 [Read the doc](https://www.php.net/manual/en/book.mysqli.php).
 
 ```php
@@ -50,7 +51,7 @@ $code_sql = mysqli_escape_string($connexion, $code_sql);
 
 ## SQL INJECTIONS
 
-Okay, note this one : **SQL INJECTIONS**. Let's says
+Okay, **SQL INJECTIONS** is something quite important. Let's says
 some write in a field username `root' OR 0=0 -- c`
 and password ``a_fake_password``.
 
@@ -68,8 +69,8 @@ above
 Select * FROM users Where username='root' OR 0=0; -- c' AND password='$password';
 ```
 
-Are you seeing the bypass ? ``0=0`` is true and the `'` make the request end
-meaning that we added some code into the SQL request. The OR make it like
+Are you seeing the bypass? ``0=0`` is true and the `'` make the request end
+meaning that we added some code into the SQL request. The OR makes it like
 we could log in without a password since the password check is commented and
 we set ``condition OR true`` so the where is always `true`.
 
