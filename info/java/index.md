@@ -149,7 +149,7 @@ Some new syntax-related stuffs
 * Annotations
 * [Enumerations](advanced/enumerations.md)
 * Genericity
-* Variadic methods
+* [Variadic methods](advanced/variadic.md)
 
 And things you might use
 
