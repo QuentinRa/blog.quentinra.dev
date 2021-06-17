@@ -42,7 +42,7 @@ if (value instanceof Integer n){
 ```
 
 Sometimes, you may not want to use ``instanceof y`` since that
-would means subclasses (children of `y`) return true. Instead
+would mean subclasses (children of `y`) return true. Instead
 what we do is ``this.getClass() != obj.getClass()`` but check
 that ``obj`` is not null beforehand!
 
