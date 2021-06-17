@@ -2,14 +2,14 @@
 
 [Go back](..)
 
-**You should not try to do this, unless you are crazy.**
+**You should not try to do this unless you are crazy.**
 
 * Download and install OCaml using the graphical 
 installer [here](https://fdopen.github.io/opam-repository-mingw/installation/)
 * open IntelliJ and install ``ReasonML`` plugin
 * then create a new OCaml project
 * in Project structure, set the SDK as ``C:\OCaml64\home\YOUR_NAME_HERE\.opam\4.11.1+mingw64c``
-but nowadays IntelliJ seams to find it by himself.
+but nowadays IntelliJ seems to find it by himself.
 * in the same menu, in ``SDK``
   * check `use cygwin`
   * set path as `C:\OCaml64\bin\bash.exe`
@@ -30,7 +30,7 @@ And in your folder, a ``dune`` file.
 )
 ```
 
-with test, the name of your .ml file so ``test.ml`` for me.
+with `test`, the name of your .ml file so ``test.ml`` for me.
 
 Then my ``test.ml`` file (in src folder with dune file)
 
@@ -39,9 +39,9 @@ Then my ``test.ml`` file (in src folder with dune file)
 Printf.printf "%s" "Hello world"
 ```
 
-Simply write some code and save, the code is compiled each
+Simply write some code and save it, the code is compiled each
 time you save and you made some changes. Right next to ``profiler``
-tab, you can see your errors in dune tab.
+tab, you can see your errors in the dune tab.
 
 **Create a configuration**
 
@@ -54,7 +54,7 @@ with ``/`` your project root and `test` in `test.exe`
   
 **Notes**
 
-It seems that we don't have any of intellij features such
+It seems that we don't have any of IntelliJ features such
 as refactor as of now but we should have them. Seems like
 a configuration problem but I won't search.
 
