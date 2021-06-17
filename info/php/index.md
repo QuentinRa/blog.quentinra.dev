@@ -5,14 +5,14 @@ web page. You have a lot of things not available in HTML
 such as
 
 * **statements**: loops, if, ...
-* **functions**: you can create function or use them
-in order to factorize some code, change some values
-on your page (dates, translations, ...) etc.
+* **functions**: you can create a function or use them
+  to factorize some code, change some values
+  on your page (dates, translations, ...), etc.
 * **server-side code**: when submitting a form, uploading
-a file, ... you need your web server to handle it.
+  a file, ... you need your webserver to handle it.
 * **sessions**: you can store some data so that your
-website remember that you are logged in what
-we call a session.
+  website remember that you are logged in what
+  we call a session.
   
 PHP isn't the only way to do that, some developers are now using
 JS with Node.js for example to handle the server-side logic.
@@ -21,13 +21,13 @@ JS with Node.js for example to handle the server-side logic.
 
 ## Setup
 
-In order to run some php code, you first need a server. Some
-developers are directly coding a the server, or in 
-other word they are coding, sending file to the server
-then check the website. That's not a good practice...
+To run some PHP code, you first need a server. Some
+developers are directly coding on the server, or in other 
+words, they are coding then sending their files to the 
+server then check the website. That's not a good practice...
 
-* You can setup a [(virtual) local server](setup/wamp.md)
-* You can setup a [apache server on linux](setup/apache.md)
+* You can set up a [(virtual) local server](setup/wamp.md)
+* You can set up a [apache server on linux](setup/apache.md)
 * use some IDE! For instance, I know that
 [PHPStorm](../../tools/jetbrains/phpstorm/remote.md)
 allow you to create a remote project and is automatically
@@ -51,14 +51,14 @@ Then  ``http://localhost/test/file.php`` means that
 you got a folder ``test`` and a file `file.php` inside
 your server root folder.
 
-On linux, don't forget to set **the permissions** for
-a folder on linux like
+On Linux, don't forget to set **the permissions** for
+a folder like
 
 * chmod ``700``: seems like the minimum for a .php
 * chmod ``744``: seems like the minimum for a .html
 * chmod ``711``: seems like the minimum for a folder
 
-If not already done, and your are using public_html
+If not already done, and you are using public_html
 folder
 
 * chmod ``711`` on your home folder
@@ -74,14 +74,14 @@ index.php being in ``[...]/username/public_html/index.php``.
 
 ## Start writing some PHP
 
-Now that you got a server, you can only run some php
-if you are using an URL (no drag and drop like in html
+Now that you got a server, you can only run some PHP
+if you are using an URL (no drag and drop like in HTML
 possible). You will write a file ending with ``.php``.
 If the file is called ``index`` then you don't
-need to write it in the url.
+need to write it in the URL.
 
 Finally, note that you can write HTML inside
-a PHP file, but not PHP inside a HTML file.
+a PHP file, but not PHP inside an HTML file.
 
 ```php
 <?php // sort of ${HTML_FOLDER}/test/index.php, so I will use http://localhost/test/index.php ?>
@@ -103,8 +103,8 @@ a PHP file, but not PHP inside a HTML file.
 ```
 
 So you should have a better understanding of what we will do.
-We will actually write some code and use methods
-like echo were the result will be printed in the resulting
+We will write some code and use methods
+like echo where the result will be printed in the resulting
 HTML giving us your final HTML file requested by
 the client.
 
@@ -119,7 +119,7 @@ First of all,
 * you can also make comments with ``#`` but that's
 usually used for specials comments
   
-Then note that in order to write some php, you
+Then note that to write some PHP, you
 need to write a PHP tag like this
 
 ```php
@@ -141,14 +141,13 @@ Then here you go with the syntax
 
 And two tips
 
-* first you you don't have any HTML inside your
-php file, then don't add a ``?>`` a the end
+* first you don't have any HTML inside your
+PHP file, then don't add a ``?>`` a the end
 * second, if you are doing this
 ```php
 <?php echo "Hello World!" ?>
 ```
-
-Then you can use the reduced form that automaticaly
+Then you can use the reduced form that automatically
 calls echo
 
 ```php
@@ -159,8 +158,8 @@ calls echo
 
 ## Main concepts
 
-After learning almost all the syntax needed, here the concept
-you will surely use in PHP.
+After learning almost all the syntax needed, here
+concepts that you will surely use in PHP.
 
 * [Classes and objects](theme/classes.md)
 * [Database and SQL](theme/sql.md)
@@ -179,10 +178,10 @@ splitting your code into
 * Controller: will fetch data from the model, render the view
 
 Usually, your website will have a router that will call
-a methods according to the page requested like ``home``,
+a method according to the page requested like ``home``,
 `contact`, ...
 
-Each of theses methods is in a controller, and the controller
+Each of these methods is in a controller and the controller
 will fetch data from the model if needed, init some
 variable or a session, handle $_POST/$_GET if needed
 and render send everything so that the view only
@@ -191,7 +190,7 @@ and properly set/formatted.
 
 Usually, a page is not **one** view but a lot of views
 like a header, a page-specific view, and the footer
-so the controller need to ask all of theses to render
+so the controller need to ask all of these to render
 themselves.
 
 <div class="sr"></div>
