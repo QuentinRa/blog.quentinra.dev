@@ -20,8 +20,8 @@ Will apply the color ``yellow`` and the background
 **Filter selector by attribute value**
 
 You can filter selected tags by the value of an attribute.
-For instance if you want to style all input, but only
-if they are input of ``type="text"`` then you would
+For instance, if you want to style all input, but only
+if they are the input of ``type="text"`` then you would
 use
 
 ```css
