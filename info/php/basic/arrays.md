@@ -49,7 +49,7 @@ that some index exists.
 
 Some indexes of your array might have a name, all if you want.
 Note that by default, the indexes of your array
-are 0,1,... And theses will be used not already
+are 0,1,... And these will be used not already
 on unnamed indexes.
 
 ```php
