@@ -11,7 +11,7 @@ an HTML document is a tree.
         * p
             * text: Hello World
     
-For instance it could look like something like that. So
+For instance, it could look like something like that. So
 you can use ``>`` and write some path using the previous
 selectors.
 
@@ -30,7 +30,7 @@ functions to make it easier for you.
 
 ## Apply a style to multiples selectors
 
-You have apply the same style to a list
+You have to apply the same style to a list
 of selectors using ``,``.
 
 ```css
