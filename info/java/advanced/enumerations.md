@@ -27,11 +27,11 @@ trough.
 
 ## Complexes enums
 
-You can add methods and attributes, along with a constuctor
+You can add methods and attributes, along with a constructor
 in an enum.
 
 ```java
-public enum ClassesRpg {
+public enum RpgClasses {
     SORCERER(12,58), WARRIOR(58,12), ARCHER(35,35), TANK(70,0)
     
     ; // YOU MUST ADD A COMMA TO END THE LIST
@@ -53,5 +53,24 @@ public enum ClassesRpg {
 Usage would be
 
 ```java
-int sorcerer_hp = ClassesRpg.SORCERER.getHP();
+int sorcerer_hp = RpgClasses.SORCERER.getHP();
+```
+
+<div class="sr"></div>
+
+## You might like
+
+* ``ClassesRpg.values()`` : to get all the values
+of an enum.
+* ``ClassesRpg.SORCERER.name()``: returns SORCERER
+* ``ClassesRpg.SORCERER.ordinal()``: returns 0
+
+**EnumMap**
+
+It's like a Hashmap but the key are values of an
+enum.
+
+```java
+EnumMap<EnumClass, ValueClass> map;
+map = new EnumMap<>(EnumClass.class);
 ```
