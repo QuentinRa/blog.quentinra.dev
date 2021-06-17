@@ -35,7 +35,7 @@
 
 **Create if not exists**
 
-You can use ``??`` to create a variable is not set.
+You can use ``??`` to create a variable that is not set.
 
 ```php
 // if b exists, then a=b, else a=0
