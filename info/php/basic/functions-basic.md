@@ -7,7 +7,7 @@ you will use.
 
 **echo**
 
-Write the text in argument into the HTML.
+Write the text in an argument into the HTML.
 
 ```php
 echo "Hello World!";
@@ -48,7 +48,7 @@ echo MY_CONSTANT; // 5
 
 **redirection**
 
-No the function redirect is not the one. You must
+No, the function redirect is not the one. You must
 use this.
 
 ```php
