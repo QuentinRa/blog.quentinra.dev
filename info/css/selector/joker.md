@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-I'm calling our two special selector "joker" selectors.
+I'm calling our two special selectors "joker" selectors.
 
 <div class="sr"></div>
 
