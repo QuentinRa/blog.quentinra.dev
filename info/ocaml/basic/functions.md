@@ -2,9 +2,9 @@
 
 [Go back](..)
 
-You will use ``fun`` keyword. You may see `function` keyword
-but don't use it, since no one seams to be able to tell
-how ``function`` is working (but we know `fun` keyword).
+You will use the ``fun`` keyword. You may see the
+`function` keyword but don't use it, since no one seems
+to be able to tell how ``function`` is working.
 
 ```ocaml
 fun x -> x
@@ -13,8 +13,8 @@ fun x -> x
 
 We created a function taking a parameter ``x`` and returning
 a value (x so the parameter). For ocaml, ``x`` may be of any
-type and since the result is of the same type of ``x``
-then function is evaluated as
+type, and since the result is of the same type of ``x``
+then the function is evaluated as
 
 * taking an argument of type ``'a``
 * returning an argument of type ``'a``
@@ -39,7 +39,7 @@ You can add some parameters like this
 fun x y -> x
 ```
 
-Guess the type. See the answer bellow.
+Guess the type. See the answer below.
 
 <blockquote class="spoiler">
 It's <code>'a -> 'b -> 'a</code>. The function is taking
@@ -50,14 +50,14 @@ the parameters.
 </blockquote>
 
 Note that a function of two (or n) parameters is a function
-taking one parameters being a function of n-1 parameters.
+taking one parameter being a function of n-1 parameters.
 So your function is a reduced form of
 
 ```ocaml
 fun x -> fun y -> x
 ```
 
-But for the sake a writing the least code, you can even
+But for the sake of writing the least code, you can even
 do that implicit declaration.
 
 ```ocaml
@@ -93,14 +93,14 @@ I dunno how we call that, but let's says you make a function
 let process (v:'a) (f:'a -> 'b) : 'b = f v ;;
 ```
 
-You should know what this function do
+You should know what this function does
 
 * take a value of type a
 * take a function, taking a value of type a and returning a value of type b
 * and the function simply call the function ``f`` with `b`
 * returning a value of type b
 
-So in OCaml we can create a partial implementation of
+So in OCaml, we can create a partial implementation of
 process like ``process-add`` were the function is `add+1`.
 
 ```ocaml
@@ -113,6 +113,6 @@ and we call
 process_add 5
 ```
 
-You will do that a lot! So do remember this when writting
+You will do that a lot! So do remember this when writing
 your code.
 
