@@ -44,7 +44,7 @@ echo $bruno->name." is ".($bruno->isAdult()?"an adult":"a minor");
 A lot of things are like in **Java** and It would
 be too much to rewriting everything here, you should check
 the Java Course if you don't understand something.
-This apply is you don't know
+This applies if you don't know
 
 * you don't know this keyword
 * you don't know what's public/private/...
@@ -58,7 +58,7 @@ This apply is you don't know
 
 They have 
 
-* a visibility: public, private or protected
+* visibility: public, private, or protected
 * may be declared as ``const`` (public by default)
 and could be called with ``self::NAME`` (only inside
   the class) or ``Person::NAME``.
@@ -80,10 +80,10 @@ Note that you may only have one constructor.
 **Inheritance**
 
 Like in Java, you will use ``extends`` to
-inherit of one concrete class. You can implements
+inherit one concrete class. You can implements
 interfaces using ``implements`` and as many interfaces
 as you want. Finally, you can make a private inheritance
-using ``trait`` classes and inherit of more than one
+using ``trait`` classes and inherit more than one
 class.
 
 ```php
