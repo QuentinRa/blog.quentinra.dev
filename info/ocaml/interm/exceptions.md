@@ -10,7 +10,7 @@ happening in your program. This could be
 * switch to another branch of your code
 
 The latter two a something that I finding disgusting
-but functional programmers don't seems to mind doing that.
+but functional programmers don't seem to mind doing that.
 
 <div class="sl"></div>
 
@@ -29,7 +29,7 @@ exception MyException of int;;
 
 **Raise**
 
-You can raise an exception using ``raise`` keyword.
+You can raise an exception using the ``raise`` keyword.
 
 ```ocaml
 exception MyException of string;;
@@ -56,7 +56,7 @@ with (* catch *)
 
 **failwith**
 
-This is a function returning an exception and taking a message.
+This is a function raising an exception and taking a message.
 We usually use it instead of raise and so... for basic
 cases.
 
