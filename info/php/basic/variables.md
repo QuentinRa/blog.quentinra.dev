@@ -30,8 +30,8 @@ Note these two functions
 
 ## String specific knowledge
 
-You're gonna use strings a lot, since you are gonna echo
-a lot. So remember theses tips
+You're gonna use strings a lot since you are gonna echo
+a lot. So remember these tips
 
 ```php
 $number = 5; // int
@@ -50,7 +50,7 @@ echo "This is ".$number;
 // calling variable with name as a string
 echo "This is ${"number"}";
 
-// not really useful but you can do that too
-// like in Shell
+// It seems not useful but you can do that too
+// (like in Shell)
 echo "This is ${number}";
 ```
