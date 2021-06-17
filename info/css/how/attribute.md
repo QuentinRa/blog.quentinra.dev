@@ -1,8 +1,8 @@
-# Using style attribute
+# Using the style attribute
 
 [Go back](..)
 
-First, you can write CSS directly using ``style``
+First, you can write CSS directly using the ``style``
 attribute of a tag.
 
 ```html
