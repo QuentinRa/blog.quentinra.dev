@@ -34,14 +34,14 @@ Parameters are passed by value in PHP.
 
 In ``complex_function``, `&$param2` means that
 param2 is passed by address. In most
-cases you won't use that if you are doing
+cases, you won't use that if you are doing
 some client-server PHP.
 
 <div class="sr"></div>
 
 **Simple function with return**
 
-Simply use return keyword.
+Simply use the return keyword.
 
 ```php
 <?php
@@ -53,7 +53,7 @@ function my_function() { return 5; }
 
 **Adding types**
 
-If you know what are the type of an argument or
+If you know what are the types of an argument or
 the return type, then since PHP7 you can add it.
 
 ```php
@@ -82,7 +82,7 @@ function float_or_int(bool $bool) : ?int {
 
 **Using non-global variables**
 
-You can use bloc-level variables inside
+You can use block-level variables inside
 a function. You would use that If you are forced to
 write a function taking only one argument but you
 want your function to use more than one.
