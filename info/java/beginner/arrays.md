@@ -5,7 +5,7 @@
 Arrays are almost working like in C. 
 
 * Their size can't be changed
-* you can declare without a size and the values instead
+* you can declare without a size value and the values instead
 * you can declare an empty tab with a size
 * the ``[]`` are after to the **type** not the variable
 
@@ -42,6 +42,6 @@ for (Integer e: new Integer[]{5,6,7}) {
 }
 ```
 
-If you try to use an index that do not exists, you
-will got an Exception (sort of Error) 
+If you try to use an index that does not exist, you
+will get an Exception (sort of Error) 
 ``IndexOutOfBoundsException``.
