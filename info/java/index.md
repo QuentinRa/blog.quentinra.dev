@@ -184,6 +184,7 @@ should use JUnit5 or higher.
 * [Installation](tests/setup.md)
 * [Run test in JUnit4](tests/junit4.md)
 * [Write some tests](tests/code.md)
+* [Tests suite](tests/suite.md)
 * [Parametric tests](tests/par.md)
 
 <div class="sr"></div>

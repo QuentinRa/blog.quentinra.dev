@@ -80,3 +80,8 @@ then in most cases the test is considered as a Failure.
 
 Every assert method have an argument ``message`` to
 send with the Exception a pertinent error message.
+
+You can annotate a method with
+
+* ``@Disabled``: don't run this test
+* ``@DisplayName("name")``: name of the test run
