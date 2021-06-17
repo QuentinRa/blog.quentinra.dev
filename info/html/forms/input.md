@@ -15,7 +15,7 @@ Explanations
 * use a **label** for each input, the **for** value
 is matching the **id** value of the input field.
   
-By doing that, clicking on the label will focus
+By doing that, a click on the label will focus
 the input field and make it ready for input.
 
 * **name**: it's the name that will be used server-side
@@ -34,8 +34,8 @@ to be submitted.
     * **radio**
     * number
     
-You can use placeholder to define a default value deleted
-if the user type something. You can use value to set
+You can use a placeholder to define a default value deleted
+if the user types something. You can use value to set
 a value that the user may or not remove by himself.
 
 <div class="sr"></div>
@@ -74,8 +74,8 @@ Alice? <br>
 
 ## Input properties
 
-And no that was not as easy as it may look. Now you need to defines some
-constraints or properties.
+And no that was not as easy as it may look. Now you need
+to define some constraints or properties.
 
 * **required**: this field must have a value (blank character pass the test like a space)
 * **checked**: check by default a checkbox / radio button
@@ -86,7 +86,7 @@ constraints or properties.
 * **pattern**: write a regex (regular expression) that the input must match
 
 If an input field is not inside a form, you may add ``form="a_form_id"``
-but that may be too much explaining ID now so check CSS course if you
+but that may be too much explaining ID now so check the CSS course if you
 want to know.
 
 ```html
@@ -100,7 +100,7 @@ want to know.
 Some random input field with a required tag and a pattern (only lowercase characters)
 <input type="text" value="" placeholder="John DOE" required pattern="[a-z]+" />
 
-Some error will be shown when submitting if the field is not valid. Also,
+Some error message will be shown when submitting if the field is not valid. Also,
 if your mouse is hoovering the field, then you should see some message
 is something is wrong.
 
@@ -110,7 +110,7 @@ is something is wrong.
 
 Finally, you must add a submit button to send your form. You can
 use an empty action or "#" in the form action field otherwise if you
-didn't make some php it won't work.
+didn't make some PHP it won't work.
 
 Then simply create a button having the type "submit". You may also
 use reset but almost no one is still using it nowadays.
@@ -128,7 +128,7 @@ use reset but almost no one is still using it nowadays.
 ## Textarea
 
 You might use a textarea if you want a bigger input field for text.
-You can use almost every property we saw, adding row and cols for the size
+You can use almost every property we saw, adding rows and cols for the size
 of your textarea.
 
 ```html
