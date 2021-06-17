@@ -5,12 +5,12 @@ you will learn how you can write some
 basic CSS.
 
 * this course may introduce SCSS and SASS
-* Boostrap and any other CSS framework won't
+* bootstrap and any other CSS framework won't
 be introduced in this course
 
 <div class="sr"></div>
 
-## Where do you write css ?
+## Where do you write css?
 
 You should not use the first two and only
 write a ``style.css`` file but it's good to know
@@ -37,7 +37,7 @@ html {
 
 ## Selectors
 
-In order to apply some style to "something", you need
+To apply some style to "something", you need
 to defines this "something".
 
 * [tag selector](selector/tag.md) (ex: style all "p" tags)
@@ -47,10 +47,10 @@ to defines this "something".
 * [joker selector](selector/joker.md) : like ``*`` and root
 * [state selector](selector/state.md) : checked, hover, ...
 
-**BEWARE**: sometimes you might write CSS, refresh and no changes. That's
+**BEWARE**: sometimes you might write CSS, refresh, and no changes. That's
 sometimes because you used the wrong selector or some error on your side,
 but it may also be your browser that cached the page. Refresh
-the cache using one of theses (the one working for you)
+the cache using one of (the one working for you)
 
 * CTRL+SHIFT+F5
 * CTRL+F5
@@ -68,7 +68,7 @@ if you want more. What you just read was only my handmade list.
 
 ## Sizes
 
-You will be asked a lot of times to enter a value of a size.
+You will be asked a lot of times to enter a size.
 By default, values are in pixels ``px``. 
 
 * ``width: 0px;`` valid for 0 you can remove px `width:0;`
@@ -110,13 +110,14 @@ Notes
 * must add a ``;`` if you add more than one property
 * specify the unit unless the value is 0
 * you may add ``!important`` to force a style
-* the style added at the end are the one applied first (unless important
+* styles added at the end are the ones applied first (unless ``!important``
   is used)
 * you may use the value ``inherit`` to make a property
 value be inherited
 
 And here we go! The main idea is that I'm listing some
-styles you may use, then you go check on duckduckgo/google/w3school/stackoverflow
+styles you may use, then you go check on 
+duckduckgo/google/w3school/StackOverflow
 how you could use it if you don't understand.
 
 ```css
@@ -187,7 +188,7 @@ div {
     float: left;
     float: right;
 
-    /** too many thing and a little space,
+    /** content is too big and a little space,
     how should we handle the overflow?
      */
     overflow:hidden; /* hide */
@@ -195,29 +196,29 @@ div {
 }
 ```
 
-So let's talk about margin and padding. Basically, **margin** is the gap with
-your tag the the others **outside**. **Padding** is the gap between
-our tag and the components **inside**. As show
-in the examples, value are
+So let's talk about margin and padding. **margin** is the gap with
+your tag the others **outside**. **Padding** is the gap between
+our tag and the components **inside**. As shown
+in the examples, values are
 
 * if v : applied to all
 * if v1 v2 : v1 for Y, v2 for X
 * if v1 v2 v3 v4 : top right bottom left
 
-and v can be : a value (check size), a percent or auto.
+and v can be a value (check size), a percent, or auto.
 
 <div class="sr"></div>
 
 # Responsive
 
-THIS IS A CORE CONCEPT. The main idea is adapting your
+THIS IS A CORE CONCEPT. The main idea is to adapt your
 page according to the size of the screen. Adding
-the line (viewport...) allow some basic resizing
+the line (viewport...) allows some basic resizing
 but you will have to do a lot of this by yourself.
 
 The main idea is that you will use media queries. Theses
-sort of functions will contains a lot of classes that
-you want to be used if the screen have a predetermined
+sort of functions will contain a lot of classes that
+you want to be used if the screen has a predetermined
 size.
 
 ```css
