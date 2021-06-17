@@ -14,7 +14,7 @@ Well not really, at least that not how I would properly
 explain POST and GET so let's phrase it better.
 
 POST, GET, PUT, ... are HTTP methods. The usage of such
-methods of the HTTP Protocol are described in
+methods of the HTTP protocol are described in
 [rfc2616](https://datatracker.ietf.org/doc/html/rfc2616)
 but let's summarize
 
@@ -25,7 +25,7 @@ So if you are making a form, you might want to send a message
 using a contact form, login, logout, ... You are changing the state
 of the server so you **MUST** use POST.
 
-If you are making a search bar, or a profile page changing
+If you are making a search bar or a profile page changing
 according to the selected user then you should use **GET**
 since you are only changing what you get in your
 browser.
@@ -34,9 +34,9 @@ browser.
 
 Okay, let's take an example
 
-Here I made a research on duckduckgo : ``https://duckduckgo.com/?q=hello&atb=v230-1&ia=web``,
-could you notice something ?
-* you got ``q=hello``, the form got submitted as GET
-* so anyone using this url will see the same query
+Here I made a research on duckduckgo: ``https://duckduckgo.com/?q=hello&atb=v230-1&ia=web``,
+could you notice something?
+* you got ``q=hello``, the form got submitted as `GET`
+* so anyone using this URL will see the same query
 
 If you don't want something like this, then use POST.
