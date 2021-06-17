@@ -2,18 +2,18 @@
 
 [Go back](..)
 
-An **interface** is a new type a class where
+An **interface** is a new type of class where
 
-* everything is public : attributes and methods
+* everything is public: attributes and methods
 * you can only declare ``public static final`` kind
 of attributes (meaning static constants)
 * instance methods usually don't have a body (since Java8 they can using
   `default` keyword)
 * static methods must have a body
 
-We are using interfaces because a class can inherit
-of one class, but many interfaces. With that, we can use the
-**Liskov substitution principe** with each interface ``implemented``
+We are using interfaces because a class can inherit 
+one class, but many interfaces. With that, we can use the
+**Liskov substitution principle** with each interface ``implemented``
 (that the keyword for inheriting interfaces).
 
 Also, unlike with ``extends``, when inheriting an interface, you
@@ -39,7 +39,8 @@ public interface Human {
 }
 ```
 
-but we can remove a lot of keywords since they can be inferred
+but we can remove a lot of keywords since they can be
+inferred
 
 ```java
 public interface Human {
@@ -93,8 +94,8 @@ public class Person implements Human, Living {
 
 **Interface (advanced)**
 
-Methods can have a body, and they can extends **one or more
-interfaces**
+Methods can have a body, and they can extend
+**one or more interfaces**
 
 ```java
 public interface Human extends Living {
@@ -129,7 +130,7 @@ Human h = () -> "John Doe";
 Here we are writing that
 
 * the method getName (without argument so `()` is empty,
-  otherwise we would write the name without the type of the
+  otherwise, we would write the name without the type of the
   arguments)
 * is returning ``"John Doe"``
 
