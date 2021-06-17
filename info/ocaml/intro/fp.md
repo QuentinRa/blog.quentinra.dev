@@ -31,14 +31,14 @@ And with some explications
 * Following the concept above, in functional languages, everything
   is a value, a function, an assignation too! We are writing expressions
   (evaluated as a value) and not a statement (assigning a variable, ...)
-* **Implicit types** means you usually don't explicitely write
+* **Implicit types** means you usually don't explicitly write
   the type of a variable
 *  **Immutable** means that you can't change the value of
    a variable unless you create a new one.
 * **Purity** means that each statement of your code is an expression,
-  meaning that a function must returns something. Your code mustn't
-  have side-effects (such as writing in a file) like statement
-  where someone reading your code can't predict the outcome.
+  meaning that a function must return something. Your code mustn't
+  have side-effects (such as writing in a file) like a statement
+  in your code that you can't predict the outcome.
 
 You may read some articles
 
