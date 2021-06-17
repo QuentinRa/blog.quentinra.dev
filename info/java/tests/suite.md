@@ -25,7 +25,7 @@ Before each test.
 
 After each test.
 
-Simply annotates a methods with this annotation.
+Simply annotates a method with this annotation.
 
 <div class="sr"></div>
 
