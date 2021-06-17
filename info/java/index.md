@@ -95,8 +95,6 @@ Then you can read theses
 * [Override](beginner/override.md)
 * [Abstract classes](beginner/abstract.md)
 * [Interfaces](beginner/interfaces.md)
-* Javadoc
-* Modules
 
 If we summarize abstract class and interfaces
 
@@ -144,15 +142,38 @@ after mastering the beginner one. Please do try
 to make some exercises beforehand since I won't go
 a lot into details.
 
+Some new syntax-related stuffs
+
+* Javadoc
 * [Iceberg paradigm](advanced/icerberg.md)
+* Annotations
+* Enumerations
+* Genericity
+* Variadic methods
+
+And things you might use
+
+* Dynamic structures
+* Threads
+* Databases
+* Networking
+* Files
+* Recursively
+* Sorting
 
 <div class="sr"></div>
 
-## Professional
+## Expert
+
+* Modules
+
+<div class="sl"></div>
+
+## Tests with JUnit
 
 ...
 
-<div class="sl"></div>
+<div class="sr"></div>
 
 ## Graphical interfaces
 
