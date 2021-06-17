@@ -142,7 +142,7 @@ after mastering the beginner one. Please do try
 to make some exercises beforehand since I won't go
 a lot into details.
 
-Some new syntax-related stuffs
+Some new syntax-related stuff
 
 * Javadoc
 * [Iceberg paradigm](advanced/icerberg.md)
