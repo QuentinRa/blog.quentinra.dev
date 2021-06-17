@@ -7,13 +7,13 @@ then here you will be able to. This is a project
 split into question. A question will require you to do
 the previous questions.
 
-Original, french subject can be found
+The original, french subject can be found
 [here](download:IPF_projet_2021.pdf) if you want.
 
-Everything is in French for now, feel free to propose
+Everything is in French, for now, feel free to propose
 a translated version (function names etc.).
 
-**You may take 4 hours to do all of theses questions,
+**You may take around 4 hours to do all of these questions,
 but take the time! It's better than your average practical
 class**.
 
@@ -21,11 +21,11 @@ class**.
 
 ## Creating some types
 
-An DNA sequence, called "brin" here in French,
-is a sequence of nucleotides A, C, G and T.
+A DNA sequence, called "brin" here in French,
+is a sequence of nucleotides A, C, G, and T.
 
 Create a type for a ``brin`` and a type for `nucleotide`.
-Here in a example of what we would want to do
+Here is an example of what we would want to do
 
 ```ocaml
 let my_brin : brin = [A;C;G;T];;
@@ -53,7 +53,7 @@ contenu_gc [C;T;T;A]
 ```
 
 <blockquote class="spoiler">
-Please take note of two things, first we don't use a fold
+Please take note of two things, first, we don't use a fold
 since we have two parameters. And second, we have two 
 accumulators since a smart guy won't use <code>List.length</code>
 since we are already iterating the list once so the cost would
@@ -62,8 +62,8 @@ be lesser to use another accumulator for the size.
 <pre><code class="language-ocaml"
 >let contenu_gc (x : brin) : float =
   (* we increase the score by 1 each time we found
-  a C or G. Then check the reste of the brin. If there is nothing
-  more to check, then we process and evaluate the gc content. *)
+  a C or G. Then check the rest of the brin. If there is nothing
+  more to check, then we process and evaluate the score. *)
   let rec acc (b : brin) (score : float) (size: float) = match b with
     | [] -> score /. size
     | first::other ->
@@ -103,9 +103,9 @@ A becomes T (and T -> A).
 <pre><code class="language-ocaml"
 >let brin_complementaire (x : brin) : brin =
   (*
-    Invert the value of a nucleoitide and
+    Invert the value of a nucleotide and
     add the result to inverted.
-    Called until the inverted everthing.
+    Called until the inverted everything.
   *)
   let rec acc (b : brin) (inverted: brin) = match b with
     | A::other -> acc other (T::inverted)
@@ -143,10 +143,10 @@ List.fold_left (fun inverted brin -> match brin with
 
 Make a function returning the distance between two brins. The distance
 is defined as the number of nucleotides that must be changed so that
-the brins becomes the same brin.
+the brins become the same brin.
 
 You must raise an exception if the length of the two
-brins is not the same.
+brins are not the same.
 
 ```ocaml
 let distance (x : brin) (y : brin) : int =
@@ -185,9 +185,10 @@ Return the similarity between two brins. It's
 of your two brins.
 
 You must raise an exception if the length of the two
-brins is not the same.
+brins are not the same.
 
-You may use ``float_of_int`` to convert an int to a float.
+You may use ``float_of_int`` to convert an int
+variable to a float variable.
 
 ```ocaml
 let similarite (x : brin) (y : brin) : float =
@@ -198,7 +199,7 @@ similarite [C;G;A;T] [T;A;G;T]
 ```
 
 <blockquote class="spoiler">
-Remember that distance already raise an exception, don't do
+Remember that distance already raises an exception, don't do
 it twice! And don't forget the conversations.
 
 <pre><code class="language-ocaml"
@@ -213,9 +214,9 @@ let _ = assert(similarite [A;G;C;T] [A;G;C;T] = 1.0);;
 
 <div class="sr"></div>
 
-## New type : tree
+## New type: tree
 
-Create a new type, called ``arbre_phylo`` in order
+Create a new type, called ``arbre_phylo``
 to represent a **binary** tree. Each branch
 have a ``brin`` and a malus.
 
@@ -473,7 +474,7 @@ let min_malus (l : arbre_phylo list) : arbre_phylo =
   | _ ->
       (*
       check the min in the list.
-      Save in r the arbre_phylo and in v the min
+      Save in r the arbre_phylo and v the min
       value of malus that we found.
       *)
       let rec check_min (l: arbre_phylo list) (r: arbre_phylo) (v: int) = match l with
