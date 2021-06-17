@@ -48,5 +48,5 @@ f_{n}(f_{n-1}(...f_{2}(f_{1}())...))
 
 <blockquote class="spoiler">
 It's a terminal function! We are evaluating n before n+1.
-So we are note postponing quite a lot of calculations.
+So we aren't postponing quite a lot of calculations.
 </blockquote>
