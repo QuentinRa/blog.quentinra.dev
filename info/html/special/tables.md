@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-Basically, you are gonna use the **table** tag with
+You are gonna use the **table** tag with
 a subtag **thead** for the first line with the column
 names (if you want one) and **tbody** for your table content.
 
