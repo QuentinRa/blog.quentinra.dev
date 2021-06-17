@@ -12,10 +12,10 @@ operators for ``float`` variables, everything else should not be new.
 
 And for all
 
-* ``=`` : assign or test equality
-* ``>=``, ``>``, ``<=``, `<``
+* ``=``: assign or test equality
+* ``>=``, ``>``, ``<=``, ``<``
 * ``<>``: test difference
 
 > **Note**: Some folks are using `!=` to test the difference. That's working in most cases
-> but this operators is comparing the addresses and that's in most cases not what
+> but this operator is comparing the addresses and that's in most cases not what
 > you want.
