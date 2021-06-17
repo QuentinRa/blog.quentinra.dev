@@ -3,9 +3,9 @@
 [Go back](..)
 
 Do you remember recursive functions with accumulators?
-Well folds are a way to apply that on a list.
+Well, folds are a way to apply that on a list.
 
-For instance, let's says you can to know the number
+For instance, let's says you want to know the number
 of ``1`` in a list. You may use an accumulator that
 you will increase each time you find a ``1`` right?
 
