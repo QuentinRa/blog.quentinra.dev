@@ -17,7 +17,7 @@ constructors. The keyword is ``of``. The idea is
 * ``| Name`` : a constructor without any arguments
 * ``| Name of ...`` : a constructor with arguments
 
-Notice that the names MUST start by an uppercase.
+Notice that the names MUST start with an uppercase.
 
 ```ocaml
 type person =
@@ -37,7 +37,7 @@ used in the constructor using **match**.
 
 <div class="sr"></div>
 
-Note that are removing the first ``|``
+Note that some are removing the first ``|``
 
 ```ocaml
 type person =
