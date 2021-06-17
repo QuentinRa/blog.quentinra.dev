@@ -11,8 +11,8 @@
 And ``unit``. You should not see this one unless you are
 doing something wrong like using a **non-pure** method
 but you can't do otherwise if you want to print some values
-(printf don't returns something and can fails so that's
-not a functional methods and that's a unpredictable function).
+(printf don't return something and can fail so that's
+not a functional method and that's an unpredictable function).
 
 You may create new types, but that will be explained later,
 along with coupling some variables.
