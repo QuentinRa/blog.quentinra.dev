@@ -18,6 +18,6 @@ let is_pair (number: float) : bool =
   in check_number number
 ;;</code></pre>
 
-As a side note, you already have a operator ``mod`` but it's
-not working on float.
+As a side note, you already have an operator ``mod`` but it's
+not working on float variables.
 </blockquote>
