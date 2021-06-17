@@ -147,7 +147,7 @@ Some new syntax-related stuffs
 * Javadoc
 * [Iceberg paradigm](advanced/icerberg.md)
 * Annotations
-* Enumerations
+* [Enumerations](advanced/enumerations.md)
 * Genericity
 * Variadic methods
 
@@ -166,6 +166,9 @@ And things you might use
 ## Expert
 
 * Modules
+* Gradle
+* Generating a .exe or an installer
+* Protect a jar
 
 <div class="sl"></div>
 
