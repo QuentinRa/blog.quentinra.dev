@@ -4,7 +4,7 @@
 
 Each HTML tag can have a ``class`` attribute,
 but you can add a lot of classes by separating
-the values with a space.
+the values with one space.
 
 ```html
 <p class="text-danger bg-dark">a text here</p>
@@ -26,11 +26,15 @@ and in your style.css you will use ``.class`` selector
 
 **Cumulative classes selector**
 
-You can ask for a component to have more
-xxx and yyyy classes.
+You can select a tag with a suite of classes.
 
 ```css
 .text-danger.bg-dark {
+    color: #dd4441;
+    background: #1c2127;
+}
+/* or since the example will be with p */
+p.text-danger.bg-dark {
     color: #dd4441;
     background: #1c2127;
 }
