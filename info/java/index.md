@@ -85,7 +85,7 @@ need to take a look at all of these
 * [Operators](beginner/operators.md)
 * [Packages and import](beginner/packages.md)
 * [Object class](beginner/object.md)
-* Arrays
+* [Arrays](beginner/arrays.md)
 * [Exceptions](beginner/exceptions.md)
 
 Then you can read theses
