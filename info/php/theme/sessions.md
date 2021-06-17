@@ -32,3 +32,29 @@ session_destroy();
 ```
 
 <div class="sr"></div>
+
+## Session, security, ...
+
+Okay maybe you want to know more about Session? Well, sessions
+are stored on the **server**. It's a file that may be called
+like ``0za54c5az165daz0ce851s0d`` (just typing some
+random characters). This name is the ``id`` of the session
+like ``session_id()``.
+
+Why do I talk about that? Well the client have in his/her
+browser a Cookie, called ``session`` (or something
+like that) and inside this cookie, the client will
+have the ``session_id()``...
+
+When the client make a request, this session_id is send
+with the request so the server can  fill ``$_SESSION``.
+And yeah, you can change the value in your cookie
+to use someone else SESSION.
+
+So Frameworks usually add some checks like an IP check
+etc. But what you should often do is remove the sessions
+**Server-side**. Since someone that logged out can still
+log again using the same session id (without passing
+by the login form). It's sometimes
+used in hacking but for that you need to get the
+sessions id and that's hard to get.
