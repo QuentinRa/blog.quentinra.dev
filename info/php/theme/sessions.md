@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-You will use ``$_SESSION`` variable.
+You will use the ``$_SESSION`` variable.
 First start sessions handling using
 ``session_start();``.
 
@@ -35,19 +35,19 @@ session_destroy();
 
 ## Session, security, ...
 
-Okay maybe you want to know more about Session? Well, sessions
+Maybe you want to know more about sessions? Well, they
 are stored on the **server**. It's a file that may be called
-like ``0za54c5az165daz0ce851s0d`` (just typing some
-random characters). This name is the ``id`` of the session
-like ``session_id()``.
+``0za54c5az165daz0ce851s0d`` (just typing some
+random characters). This filename is the ``id`` of the session,
+you can get it with ``session_id()``.
 
-Why do I talk about that? Well the client have in his/her
+Why do I talk about that? Well the client will have in his
 browser a Cookie, called ``session`` (or something
 like that) and inside this cookie, the client will
 have the ``session_id()``...
 
-When the client make a request, this session_id is send
-with the request so the server can  fill ``$_SESSION``.
+When the client makes a request, this session_id is sent
+with the request so the server can fill ``$_SESSION``.
 And yeah, you can change the value in your cookie
 to use someone else SESSION.
 
@@ -56,5 +56,5 @@ etc. But what you should often do is remove the sessions
 **Server-side**. Since someone that logged out can still
 log again using the same session id (without passing
 by the login form). It's sometimes
-used in hacking but for that you need to get the
-sessions id and that's hard to get.
+used in hacking but for that, you need to get the
+session id and that's hard to get.
