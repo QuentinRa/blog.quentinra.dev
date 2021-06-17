@@ -57,7 +57,7 @@ public class TestSomeClass {
 }
 ```
 
-You test is passed if all you assert are true. You should
+Your test is passed if all you assert are true. You should
 ensure that the code is working when you give right
 or wrong parameters are given.
 
@@ -76,10 +76,11 @@ may raise an exception, and you are unlucky and the
 open failed (so put it in the catch).
 
 If you don't make any assertions in a @Test method,
-then in most cases the test is considered as a Failure.
+then in most cases, the test is considered a failure.
 
-Every assert method have an argument ``message`` to
-send with the Exception a pertinent error message.
+Every assert method has an argument usually called
+``message`` to send with the Exception a pertinent 
+error message.
 
 You can annotate a method with
 
