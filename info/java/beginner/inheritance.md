@@ -3,11 +3,11 @@
 [Go back](..)
 
 Unless a class is declared final ``final class Name``, you can
-inherit of a class, but **only one** class. By default, a class
+inherit a class, but **only one** class. By default, a class
 is inheriting of ``Object``. We are using the syntax
-``extends ClassName`` to inherit of a class.
+``extends ClassName`` to inherit a class.
 
-We will call the parent class : ancestor class or superclass.
+We will call the parent class: ancestor class or superclass.
 And the children classes: subclasses.
 
 Some notes
@@ -15,9 +15,9 @@ Some notes
 * subclasses inherit protected instance members
 * subclasses inherit public instance members
 * subclasses can use superclass static members (protected or public)
-but you can't write ``@Override``, then only thing you can do
-in a subclasses is writing a method with the same name.
-* if a static method in not found in a subclass, then the superclass
+but you can't write ``@Override``, the only thing you can do
+in a subclass is writing a method with the same name.
+* if a static method is not found in a subclass, then the superclass
 will be checked.
 
 <div class="sl"></div>
@@ -36,13 +36,13 @@ superclass.
 
 And finally, we have the **Liskov substitution principle**. When
 you are creating a subclass, all properties of the parent are
-inherited by the children and you may had new one. So the children
+inherited by the children and you may add new ones. So the children
 can be used in methods/... where the parent was used!
 
 * when a method returns a superclass, you can return a subclass
-* when a method take a superclass, you can give a subclass
+* when a method takes a superclass, you can give a subclass
 
-but once you tell to Java that a subclass "is" a superclass,
+but once you tell Java that a subclass "is" a superclass,
 **you can't use subclass-specific methods** until you cast it
 to your subclass.
 
@@ -67,7 +67,7 @@ public class Person {
 }
 ```
 
-And one inheritor, CEO.
+And one inheritor, the CEO class.
 
 ```java
 public class CEO extends Person {
