@@ -5,7 +5,7 @@
 A parametric test is a test repeated as long a a
 stream of data is not depleted.
 You will create one or more methods returning
-a stream of data that will be used as value for
+a stream of data that will be used as the value for
 our arguments.
 
 ```java
