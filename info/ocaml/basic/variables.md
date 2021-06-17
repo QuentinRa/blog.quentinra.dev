@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-Use ``let`` keyword to create a variable.
+Use the ``let`` keyword to create a variable.
 
 ```ocaml
 let x = 5;
@@ -14,7 +14,7 @@ Note
 * if you redeclare a variable with the same name,
 the previous one is destroyed
 * you can't change a variable value
-* the name start by a lowercase (otherwise `Unbound constructor`)
+* the name starts by a lowercase (otherwise `Unbound constructor`)
 
 **If a variable isn't declared, you will get the
 error ``Unbound value xxxxx``**.
@@ -23,8 +23,8 @@ error ``Unbound value xxxxx``**.
 
 **A lot of initializations at once**
 
-Using ``and`` keyword, you can create a bunch of variable
-in one statement.
+Using the ``and`` keyword, you can create a bunch of 
+variables in one expression.
 
 ```ocaml
 let x = 5 and y = 6;;
@@ -35,7 +35,7 @@ let x = 5 and y = 6;;
 **More complex initialization**
 
 You might want to init a variable having a complex
-value. You can do that using ``let ... in`` keyword.
+value. You can do that using the ``let ... in`` keyword.
 
 ```ocaml
 let x = 3 in x * x
@@ -53,7 +53,8 @@ accessible in the rest of the code.
 let r = let x = 3 in x * x
 ```
 
-**Here is x not defined, only r will be created**.
+**Here is x not defined, only ``r`` will be created**
+(not x).
 
 Another more meaningful example would be,
 since x is complex and we do not want to write it
@@ -83,7 +84,7 @@ let _ = Printf.printf "%s" "Hello world"
 > it?
 > 
 > First printf return a unit() kind of value. We are only
-> saving it since ocaml compiler won't execute a statement
+> saving it since the OCaml compiler won't execute a statement
 > if we are not storing the result (since every statement
 > should be pure or looks like it otherwise for ocaml
 > compiler that just some useless code).
