@@ -13,12 +13,6 @@
       "icon": "<i class=\"bi bi-window\"></i>"
     },
     {
-      "tag": "php",
-      "name": "PHP",
-      "desc": "Learn how complex, weird and vast PHP is, and a bit about framework PHP.",
-      "icon": "<i class=\"bi bi-globe\"></i>"
-    },
-    {
       "tag": "ocaml",
       "name": "OCaml",
       "desc": "Here you will learn about OCaml and functional languages.",
@@ -34,6 +28,12 @@
       "tag": "css",
       "name": "CSS",
       "desc": "Use css to add some style to your website.",
+      "icon": "<i class=\"bi bi-globe\"></i>"
+    },
+    {
+      "tag": "php",
+      "name": "PHP",
+      "desc": "Learn how complex, weird and vast PHP is, and a bit about framework PHP.",
       "icon": "<i class=\"bi bi-globe\"></i>"
     }
   ]
