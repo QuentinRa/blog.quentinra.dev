@@ -2,9 +2,9 @@
 
 [Go back](..)
 
-You can use assert function to test your code.
-Assert is taking a boolean and raise AssertFailure
-exception is the boolean is false.
+You can use the assert function to test your code.
+Assert is taking a boolean and raise the AssertFailure
+exception if the boolean is false.
 
 ```
 assert(false)
