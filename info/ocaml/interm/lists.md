@@ -2,9 +2,9 @@
 
 [Go back](..)
 
-A list is basically an array of values. The type is
+A list is an array of values. The type is
 ``'a list`` but you can make a list of float (for instance)
-and you will have ``float list``.
+and you will have a ``float list``.
 
 ```ocaml
 let sample_list = [5.0;0.2];;
@@ -33,10 +33,9 @@ let my_list = 7::my_list;;
 ```
 
 If you understood, the last argument is where we will put
-our values and the first are the type of our values.
-In other word, if ``a`` is a list then
-``list`` must be a list of lists in order to write
-``a::list``.
+our values and the first are the types of our values.
+For instance, if ``a`` is a list then
+``list`` must be a list of lists to write ``a::list``.
 
 ```ocaml
 (* here that's working since my_list was
@@ -66,11 +65,10 @@ let my_list = (5::3::[])::my_list;;
 
 # Iterate a list
 
-You will use functions in order to iterate your list, but for
+You will use functions to iterate your list, but for
 that you need to read about ``match`` in the next part.
 
-Note that a list like the new types we saw, have constructors
-like
+The list constructors are considered to be
 * ``[]``
 * ``a::[]``
 * ...
@@ -130,7 +128,7 @@ List.length 'a list -> int
 List.length l3
 ```
 
-Note that ``@`` operator is the same as
+Note that the ``@`` operator is the same as
 ``List.concat`` so `a@b` merge list a with
 list b. But you shouldn't have to use this unless
 you are not doing things properly.
