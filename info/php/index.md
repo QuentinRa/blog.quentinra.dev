@@ -167,8 +167,8 @@ concepts that you will surely use in PHP.
 * [Sessions](theme/sessions.md)
 * [Login/Logout](theme/login_logout.md)
 
-One last piece of advice, about security, is
-beware of XSS injections. In a form, one
+One last piece of advice, about security, is to be
+aware of XSS injections. In a form, one
 can write SQL but also ``HTML/JS``. Someone could
 write for instance ``<script>malicious_script();</script>``
 as username. When we go on his/her profile,
