@@ -3,7 +3,7 @@
 [Go back](..)
 
 You must have seen this annotation ``@Override`` a lot until now.
-In java, you can rewrite the code of a methods declared in a
+In java, you can rewrite the code of a method declared in a
 parent class. Each time you are replacing the code of a method 
 declared in an ancestor class, then you should (not mandatory)
 use ``@Override``.
@@ -22,7 +22,7 @@ Please take note of some constraints
 * same return type
 * same arguments
 
-but not necessary the same definition,
+but not necessarily the same definition,
 
 * you can add/remove ``throws`` (explained later)
 * you can change the visibility : from protected to public
