@@ -15,7 +15,7 @@ to 6 (almost normal).
 ```
 
 > Note that you may only have one **h1** tag per page. In old
-> days, theses headers where used by search engines to guess
+> days, these headers were used by search engines to guess
 > the content of your website.
 
 <div class="sr"></div>
