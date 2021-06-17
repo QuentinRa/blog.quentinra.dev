@@ -21,23 +21,23 @@ You should remember that the concepts are
 
 ## Introduction
 
-You can write ocaml in a ``.ml`` file, then compile
+You can write OCaml in a ``.ml`` file, then compile
 using ``ocamlc``. You can also write some code in a
 console (`ocaml`) like in python or a lot of languages.
 
 Installing ``ocaml`` may be a pain in the ass if you are
-not on linux. 
+not on Linux. 
 
 * Some are using the [online console](https://try.ocamlpro.com/)
 * [a french tutorial](https://carnot.cpge.info/index.php/2018/01/28/installer-ocaml-sur-sa-machine/)
-presenting tools for MacOS and Windows
+presenting tools for macOS and Windows
 * you can try this tutorial [OCaml with opam](https://fdopen.github.io/opam-repository-mingw/installation/)
 * you can try ``WinCaml`` but it's a virus according to Norton
   and the site is ranked as dangerous (seems like it
   happened after the website moved and the old site
   is down...)
 
-or you can follow one off theses tutorials
+or you can follow one of these tutorials
 
 * [Install OCaml + use in VSCode](intro/install-m.md)
 * [Install OCaml in WSL](intro/install-wsl.md)
@@ -49,7 +49,7 @@ or you can follow one off theses tutorials
 
 If you are using the console, then you must write
 ``;;`` at the end of each statement, otherwise you
-don't have too.
+don't have to.
 
 Comments are made using the delimiters ``(*`` and `*)`
 
@@ -66,7 +66,7 @@ let _ = Printf.printf "%s" "Hello world"
 
 ## Basic concepts
 
-The required element in order to write some code.
+The required elements to write some code are
 
 * [Types](basic/types.md)
 * [Operators](basic/operators.md)
@@ -75,7 +75,7 @@ The required element in order to write some code.
 * [Functions](basic/functions.md)
 * [Recursion](basic/rec.md)
 
-You might challenge yourself with theses exercises
+You might challenge yourself with these exercises
 
 * [MCQ](basic/mcq.md)
 * [Write some code](basic/exercises.md)
@@ -85,7 +85,7 @@ You might challenge yourself with theses exercises
 ## Intermediary concepts
 
 Then you need to know about all of these since 
-aside from zippers you will use them quite a lot.
+aside from zippers, you will use them quite a lot.
 
 * [Composite types / couples](interm/couples.md)
 * [Creating types](interm/types.md)
@@ -113,10 +113,10 @@ None for now.
 * Modules
 * Read/Write
 
-You may want to look into logic course to continue learning 
-about the depth of this new paradigm. ``Lisp`` and `Haskell`
-may also be good choices if you are eager to learn other
-functional languages.
+You may want to look into the logic course to continue
+learning about the depth of this new paradigm.
+``Lisp`` and `Haskell` may also be good choices if
+you are eager to learn other functional languages.
 
 <div class="sl"></div>
 
