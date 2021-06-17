@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-It's a summary of what's written in others pages.
+It's a summary of what's written on others pages.
 
 ```html
 <form method="post" action="login.php">
