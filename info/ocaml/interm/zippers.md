@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-Zipper are pretty convenient when you want something
+Zippers are pretty convenient when you want something
 a bit more format than a couple to handle multiples
 types in one type.
 
@@ -30,7 +30,7 @@ let right = my_zipper.right;;
 This zipper here would be used if you got one big list but
 want to place a cursor where you are. You can either go to
 left (move an element from left to right or from right to
-left) or delete an previous/next element...
+left) or delete a previous/next element...
 
 You might not use them right now but they are quite helpful
 and convenient.
