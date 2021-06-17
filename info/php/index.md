@@ -166,6 +166,19 @@ concepts that you will surely use in PHP.
 * [Handling Forms](theme/forms.md)
 * [Sessions](theme/sessions.md)
 
+One last piece of advice, about security, is
+beware of XSS injections. In a form, one
+can write SQL but also ``HTML/JS``. Someone could
+write for instance ``<script>malicious_script();</script>``
+as username. When we go on his/her profile,
+you will echo this HTML like your usual username
+so anyone reading this page
+will have the malicious script being executed (if you
+enabled scripts that is).
+
+To prevent this, simply escape tags using 
+``htmlentities`` like ``echo htmlentities($username)``.
+
 <div class="sl"></div>
 
 ## MVC in PHP
