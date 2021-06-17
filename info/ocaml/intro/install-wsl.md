@@ -15,7 +15,7 @@ sudo aptitude update && sudo aptitude install ocaml
 ```
   
 Then you can start writing some code. But now
-you may want some graphical interface don't you?
+you may want some graphical interface, don't you?
 
 (be sure in the following links to look for **public
 domain** releases)
