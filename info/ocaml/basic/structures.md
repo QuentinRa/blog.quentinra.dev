@@ -38,8 +38,8 @@ Please take note
 if (condition) then true else false
 ```
 
-since condition is already a boolean and you will trigger
-most of experienced guys.
+since the condition is already a boolean and you will trigger
+most of the experienced guys.
 
 <div class="sr"></div>
 
