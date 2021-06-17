@@ -9,7 +9,7 @@ You use the tag **p**.
 
 <p>
 Here another paragraph
-were I wrote some text.
+where I wrote some text.
 </p>
 ```
 
@@ -17,7 +17,7 @@ were I wrote some text.
 > the following content will be added in a new line (usually
 > elements are added right after another tag).
 >
-> I could also says it with an example like
+> I could also say it with an example like
 > putting a paragraph and an image
 > in the same line is impossible (without stylesheet) unless
 > you put the image since the p tag.
@@ -28,5 +28,5 @@ were I wrote some text.
 
 <p>
 Here another paragraph
-were I wrote some text.
+where I wrote some text.
 </p>
