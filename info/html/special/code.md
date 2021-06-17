@@ -5,7 +5,7 @@
 You can write some code using **code** wrapped in
 a **pre**.
 
-**pre** is a tag that will render your html code
+**pre** is a tag that will render your HTML code
 exactly like you wrote it inside your code (same spaces,
 indents, ...).
 
