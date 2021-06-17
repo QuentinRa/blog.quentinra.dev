@@ -40,6 +40,6 @@ because new types are a couple of existing types.
 You could also use that in function, giving a couple instead
 of a bunch of parameters but we usually don't do that.
 
-Also it may be convenient since using that,
+Also, it may be convenient since using that,
 you can return "more than one value" in a function,
 since you will pack into one variable being a composite type.
