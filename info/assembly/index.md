@@ -109,14 +109,16 @@ function, ...
 For instance, the system call ``write(1, "test", 4)``
 means that we want
 
-* r0: 1
-* r1: "test"
-* r2: 4
+* ``r0``: 1
+* ``r1``: "test"
+* ``r2``: 4
 
-For that, you will need function to move value into
-a register. You may also need instruction to do arithmetic
+And the result will be stored in ``r0``.
+
+We will need instructions to set a value into
+a register. You may also need instructions to do arithmetic
 operations like +, -, ...
 
 * [Move-related instructions](syntax/move.md)
 * [Arithmetic-related instructions](syntax/arithmetic.md)
-* [System call call](syntax/swi.md)
+* [Make a system call](syntax/swi.md)
