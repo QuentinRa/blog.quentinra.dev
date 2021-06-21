@@ -150,6 +150,7 @@ Some new syntax-related stuff
 * [Enumerations](advanced/enumerations.md)
 * [Genericity](advanced/genericity.md)
 * [Variadic methods](advanced/variadic.md)
+* [Iterable/Iterator](advanced/iterable.md)
 * [Dynamic structures](advanced/dynamic.md)
 
 And things you might use
@@ -158,7 +159,7 @@ And things you might use
 * [Databases](advanced/databases.md)
 * [Networking](advanced/networking.md)
 * [Files](advanced/files.md)
-* [Recursively](advanced/recursivity.md)
+* [Recursive functions](advanced/recursive.md)
 * [Sorting](advanced/sort.md)
 
 <div class="sr"></div>
