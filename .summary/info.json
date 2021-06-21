@@ -35,6 +35,12 @@
       "name": "PHP",
       "desc": "Learn how complex, weird and vast PHP is, and a bit about framework PHP.",
       "icon": "<i class=\"bi bi-globe\"></i>"
+    },
+    {
+      "tag": "assembly",
+      "name": "Assembly",
+      "desc": "Introduction to assembly, ARM to be precise.",
+      "icon": "<i class=\"bi bi-sim\"></i>"
     }
   ]
 }
