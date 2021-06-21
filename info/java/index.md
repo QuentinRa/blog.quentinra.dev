@@ -156,7 +156,6 @@ Some new syntax-related stuff
 And things you might use
 
 * [Threads](advanced/threads.md)
-* [Databases](advanced/databases.md)
 * [Networking](advanced/networking.md)
 * [Files](advanced/files.md)
 * [Recursive functions](advanced/recursive.md)
