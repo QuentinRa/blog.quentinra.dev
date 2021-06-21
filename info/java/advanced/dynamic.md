@@ -3,7 +3,11 @@
 [Go back](..)
 
 These are structures of data that you will use like
-ArrayList or HashMap.
+ArrayList or HashMap. Theses are called Collections
+since they implementing ``Collection`` and note
+that collections are ``Iterables``.
+
+HashMap is not a collection but a ``Map``.
 
 <div class="sr"></div>
 
@@ -12,6 +16,8 @@ ArrayList or HashMap.
 It's a list of values.
 
 ```java
+import java.util.ArrayList;
+
 ArrayList<Integer> list = new ArrayList<>();;
 
 // add
@@ -38,8 +44,6 @@ int size = list.size();
 ArrayList<Integer> copy = new ArrayList<>(list);
 ```
 
-**Note that ArrayList is iterable.**
-
 <div class="sl"></div>
 
 ## HashSet
@@ -48,6 +52,8 @@ Same as ArrayList but values are uniques and if the same
 value is added twice, then the previous one is removed.
 
 ```java
+import java.util.HashSet;
+
 HashSet<Integer> list = new HashSet<>();
 ```
 
@@ -60,6 +66,9 @@ element.
 ## LinkedList using Queue
 
 ```java
+import java.util.Queue;
+import java.util.LinkedList;
+
 Queue<Integer> queue = new LinkedList<>();
 
 // add
@@ -82,6 +91,8 @@ It's a dictionary. The key are uniques and each
 key is associated with a value.
 
 ```java
+import java.util.HashMap;
+
 HashMap<Integer, String> map = new HashMap<>();
 
 // add value for key or
