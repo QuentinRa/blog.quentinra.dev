@@ -13,7 +13,7 @@ learn about ARM processor assembly language. The reason
 of that choice is because the RISC family of processors
 whose ARM belong to is still quite used.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Introduction
 
@@ -35,7 +35,7 @@ code with ``C`` code and doing that helped me quite a
 lot to learn assembly, like writing the code in ``C`` then
 removing the function in C and writing it in ``ARM``.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Start writing some code
 
@@ -83,7 +83,7 @@ _start :
 You can get the assembly code of a ``C`` program
 with ``objdump -d a.out``.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Syntax
 
@@ -97,6 +97,8 @@ isn't much of syntax
 * [Constants](syntax/constants.md)
 
 Comments are made with `@` or `#` or  ``;``.
+
+<hr class="sr">
 
 ## Instructions
 
