@@ -168,3 +168,22 @@ You may be interested by these methods
 * ``allMatch(Predicate) : boolean``
 * ``noneMatch(Predicate) : boolean``
 * ``count() : long``
+
+And you may consume and read all the values using
+
+```java
+stream.forEach(new Consumer<Integer>() {
+    @Override
+    public void accept(Integer integer) {
+        System.out.println(integer);
+    }
+});
+```
+
+You could also write the code above
+
+```java
+stream.forEach(integer -> System.out.println(integer));
+// or
+stream.forEach(System.out::println);
+```
