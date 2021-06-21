@@ -31,7 +31,7 @@ not on Linux.
 * Some are using the [online console](https://try.ocamlpro.com/)
 * [a french tutorial](https://carnot.cpge.info/index.php/2018/01/28/installer-ocaml-sur-sa-machine/)
 presenting tools for macOS and Windows
-* you can try this tutorial [OCaml with opam](https://fdopen.github.io/opam-repository-mingw/installation/)
+* you can try this tutorial [OCaml with opam](https://fdopen.github.io/opam-repository-mingw/installation/) but since august 2021, this project is **discontinued** and [dune](https://dune.build/install) should be used instead
 * you can try ``WinCaml`` but it's a virus according to Norton
   and the site is ranked as dangerous (seems like it
   happened after the website moved and the old site
