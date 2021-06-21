@@ -57,7 +57,9 @@ public interface Human {
 
 <div class="sl"></div>
 
-**Interface utilisation**
+## Using an interface
+
+Example of implementing one interface.
 
 ```java
 public class Person implements Human {
@@ -69,7 +71,8 @@ public class Person implements Human {
 }
 ```
 
-Adding another interface, we could do
+Adding another interface, we could 
+implement two interfaces like this
 
 ```java
 public interface Living {
@@ -92,7 +95,7 @@ public class Person implements Human, Living {
 
 <div class="sr"></div>
 
-**Interface (advanced)**
+## Interface (extend and default)
 
 Methods can have a body, and they can extend
 **one or more interfaces**
@@ -107,7 +110,7 @@ public interface Human extends Living {
 
 <div class="sl"></div>
 
-**Functional interfaces**
+## Functional interfaces
 
 We are calling like that interface with only **one** method
 without a body.
@@ -120,7 +123,7 @@ public interface Human {
 }
 ```
 
-These are used in what we call lambda expressions. Since they
+These are used in what we call **lambda expressions**. Since they
 only have one method, then we can write
 
 ```java
