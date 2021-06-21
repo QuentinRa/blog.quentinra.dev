@@ -54,3 +54,22 @@ HashSet<Integer> list = new HashSet<>();
 Note that you don't have a ``get`` method
 so you will need to iterate the list if you want an
 element.
+
+<div class="sl"></div>
+
+## LinkedList using Queue
+
+```java
+Queue<Integer> queue = new LinkedList<>();
+
+// add
+boolean add = queue.add(element);
+boolean offer = queue.offer(element);
+// return last
+Integer element = queue.element();
+Integer peek = queue.peek();
+// return and remove last
+Integer poll = queue.poll();
+// remove last
+Integer remove = queue.remove();
+```
