@@ -4,7 +4,7 @@
 
 The syntax was
 
-```asm
+```asm6502
 label: type value
 ```
 
@@ -14,13 +14,13 @@ With type
 * ``.asciz``: same but add a `\0` at the end
 * ``.word``: a int
 
-```asm
+```asm6502
 val: .word 4
 ```
 
 or to create an array
 
-```asm
+```asm6502
 tab: .word 1,5,7,46,89
 taille: .
 ```

@@ -54,7 +54,6 @@ Here a basic file that should work
 
 ```asm6502
         .equ SYS_EXIT, 1
-        .equ SYS_READ, 3
         .equ SYS_WRITE, 4
 
         .arm
