@@ -18,29 +18,52 @@ Courses are under the license of their respective creators.
 
 ## TODO List
 
-**Create**
+Next update, 30/06/2021.
+
+**Website**
+
+* [ ] Search bar
+* [ ] Remade of home
+
+**Next content**
 
 * [ ] Complete UML course (0 / 5)
 * [ ] Complete C course
 * [ ] Complete Java course
-* [ ] Complete PHP course
 * [ ] Complete Statistics course
 * [ ] Complete Probabilities course
 * [ ] Complete R course
-* [ ] add norms and condition number in ``NUMERICAL-ANALYSIS``
-* [ ] add differentials methods in ``NUMERICAL-ANALYSIS``
-* [ ] Add examples in R in ``Optimization``
-* [ ] Add constrained optimization in ``Optimization``
-* [ ] Add Geometric programming exercise in ``Optimization``
-* [ ] Add exercises (un/constrained) in ``Optimization``
+* [ ] Complete Optimization course (0/3)
+* [ ] Complete NUMERICAL-ANALYSIS course (0/2)
+* [ ] Write better code course
+* [ ] Micro economy course
+* [ ] Web project Structure and add introduction
+* [ ] IT project review
+* [ ] Logic course
 
-**Upgrades**
+**Update content**
 
 * [ ] add anti-patterns in ``DESIGN PATTERNS`` course
 * [ ] Check out this material <https://github.com/dlu02/projet-pima-s3-nasa>
-for agile-scrum
-* [ ] Web project Structure
-* [ ] ILO add new MCQs
+  for agile-scrum
+* [ ] Java databases
+* [ ] PHP Tests
+* [ ] OCaml for Windows
+* [ ] Vim highlight
+
+**Exercises**
+
+* [ ] HTML
+* [ ] CSS
+* [ ] PHP
+* [ ] ILO MCQs
+* [ ] OCaml MCQs
+
+**Typos**
+
+* [ ] Assembly
+* [ ] C
+* [ ] Java
+* [ ] Maths/*
+* [ ] Descriptions
 * [ ] Translate ``PROJECTS`` vocabulary
-* [ ] add interface tests
-* [ ] add OCaml MCQ / new exercises ?
