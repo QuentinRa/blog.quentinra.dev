@@ -125,3 +125,50 @@ public static <T> void method(HashMap<? extends T, ?> param, Class<T> keyClass){
 // may be called like this
 method(param, Integer.class);
 ```
+
+<div class="sr"></div>
+
+## Generic classes
+
+If you are using a lot of generic methods, or you
+want all of your methods to use a generic type declared
+by the class then you can.
+
+```java
+public class MyClass<K> {
+    // ...
+}
+```
+
+You may do something like that
+
+```java
+public class GenericClass<K, V> {
+
+    private final K key;
+    private final V value;
+
+    public GenericClass(K key, V value) {
+        this.key = key;
+        this.value = value;
+    }
+
+    public K getKey() { return key; }
+    public V getValue() { return value; }
+
+    public static void main(String[] args) {
+        GenericClass<Integer, String> couple = new GenericClass<>(5, "test");
+        Integer key = couple.getKey();
+        String value = couple.getValue();
+        // ...
+    }
+}
+```
+
+Notice that we declare the type with ``ClassName<...>``
+with ``...`` the type or the types for the generic
+types we declared.
+
+When using new, we could write ``new GenericClass<>``
+since the types could be inferred but we could also
+write ``new GenericClass<Integer, String>(...)``.
