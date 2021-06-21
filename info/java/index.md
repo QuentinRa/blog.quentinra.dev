@@ -144,22 +144,22 @@ a lot into details.
 
 Some new syntax-related stuff
 
-* Javadoc
+* [Javadoc](advanced/javadoc.md)
 * [Iceberg paradigm](advanced/icerberg.md)
-* Annotations
+* [Annotations](advanced/annotations.md)
 * [Enumerations](advanced/enumerations.md)
-* Genericity
+* [Genericity](advanced/genericity.md)
 * [Variadic methods](advanced/variadic.md)
+* [Dynamic structures](advanced/dynamic.md)
 
 And things you might use
 
-* Dynamic structures
-* Threads
-* Databases
-* Networking
-* Files
-* Recursively
-* Sorting
+* [Threads](advanced/threads.md)
+* [Databases](advanced/databases.md)
+* [Networking](advanced/networking.md)
+* [Files](advanced/files.md)
+* [Recursively](advanced/recursivity.md)
+* [Sorting](advanced/sort.md)
 
 <div class="sr"></div>
 
