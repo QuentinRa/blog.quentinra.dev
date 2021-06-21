@@ -60,3 +60,68 @@ public static <T> T firstElement(T[] array){
     return array.length == 0 ? null : array[0];
 }
 ```
+
+<div class="sr"></div>
+
+## Generic methods
+
+The ``<T>`` before the return type is the declaration
+of the new type. For now it's just a type named T be
+you could write everything you want. We usually use
+a one letter name through.
+
+**Method taking a generic type**
+
+This method is taking a parameters of type T.
+
+```java
+public <T> void method(T param){
+    /* ... */
+}
+```
+
+**Constraint on T**
+
+You can ask T to be a class extending a class. Sometimes
+if you are using that, then you may be using genericity
+through you could have used Liskov principle with
+the extended class.
+
+```java
+public <T extends ...> void method(T param){
+    /* ... */
+}
+```
+
+You can use the joker type ``?`` if you don't know
+nor care about the type. HashMap is a generic
+class introduced later taking keys associated with
+a value. Here we don't know the type of the keys nor
+the type of the values.
+
+````java
+public void method(HashMap<?, ?> param){
+    /* ... */
+}
+````
+
+Still you can add an upper bound on ``?`` like the key
+must extends Integer
+
+```java
+public void method(HashMap<? extends Integer, ?> param){
+    /* ... */
+}
+```
+
+or something like that, asking the class extends
+by the keys
+
+```java
+public static <T> void method(HashMap<? extends T, ?> param, Class<T> keyClass){
+    /* ... */
+}
+
+// may be called like this
+method(param, Integer.class);
+```
