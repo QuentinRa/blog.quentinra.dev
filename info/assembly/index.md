@@ -53,34 +53,31 @@ ld -O0 file.o
 Here a basic file that should work
 
 ```asm6502
-        .equ SYS_EXIT, 1
-        .equ SYS_WRITE, 4
+.equ SYS_EXIT, 1
+.equ SYS_WRITE, 4
 
-        .arm
-        .data
+    .arm
+    .data
 
 hw: .asciz "Hello, World\n"
+hw_len: .word 13
 
-        .text
-        .globl _start
+    .text
+    .global _start
 
-_start:
-
-    @ write(1, "Hello, World\n", 13);
-
+_start :
+    @ write
     mov r0, #1
-    ldr r1, =strfin
-    mov r2, #13
+    ldr r1, =hw
+    ldr r2, =hw_len
     mov r7, #SYS_WRITE
-    swi #0x0
+    swi #0
     
-    @ exit(0)
-
-    mov r7, #SYS_EXIT
+    @ exit
     mov r0, #0
-    swi #0x0
-	
-        .end
+    mov r7, #SYS_EXIT
+    swi #0
+.end
 ```
 
 You can get the assembly code of a ``C`` program
@@ -100,3 +97,24 @@ isn't much of syntax
 * [Constants](syntax/constants.md)
 
 Comments are made with `@` or `#` or  ``;``.
+
+## Instructions
+
+The main idea is that you will move into registers
+value. The first register is the first argument of a
+function, ...
+
+For instance, the system call ``write(1, "test", 4)``
+means that we want
+
+* r0: 1
+* r1: "test"
+* r2: 4
+
+For that, you will need function to move value into
+a register. You may also need instruction to do arithmetic
+operations like +, -, ...
+
+* [Move-related instructions](syntax/move.md)
+* [Arithmetic-related instructions](syntax/arithmetic.md)
+* [System call call](syntax/swi.md)
