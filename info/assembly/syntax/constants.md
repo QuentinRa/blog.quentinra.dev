@@ -3,7 +3,7 @@
 [Go back](..)
 
 Constant are called immediate constants because they
-are not really constants. We are not talking about
+are not constants. We are not talking about
 ``.equ`` but when in the program you are writing
 ``#0`` for the value 0 (for instance).
 
@@ -26,7 +26,7 @@ must move your bits, clockwise by
 
 <hr class="sr">
 
-## Example : from constant to decimal
+## Example: from constant to decimal
 
 Taking an example, we would have
 
@@ -43,7 +43,7 @@ Taking an example, we would have
 
 <hr class="sl">
 
-## Example 2 : from decimal to constant
+## Example 2: from decimal to constant
 
 Test with ``748 326``
 
@@ -58,7 +58,7 @@ Test with ``32000``
 * value (8bits): ``01111101``
 * trying to guess the rotation
 * ``00000000 00000000 00000000 01111101``
-* I need to rotate by 24 in order to have back my 32 bit number
+* I need to rotate by 24 to have back my 32 bits number
 * but... I can't write 2^n = 24
 * fail
 
