@@ -34,3 +34,13 @@ Source: "xxxx\app\*"; DestDir: "{app}\app"; Flags: ignoreversion recursesubdirs 
 * <https://documentation.help/Inno-Setup/topic_whatisinnosetup.htm>
 * <https://jrsoftware.org/isfaq.php>
 * <https://github.com/persepolisdm/persepolis-windows-package-build/blob/master/setupX64.iss>
+
+Help
+
+* <https://stackoverflow.com/questions/12951327/inno-setup-check-if-file-exist-in-destination-or-else-if-doesnt-abort-the-ins>
+* <https://stackoverflow.com/questions/15638663/creating-an-installer-that-will-perform-an-update-if-an-older-version-is-already>
+* <https://stackoverflow.com/questions/14685149/creating-an-installer-for-java-desktop-application#14686023>
+* <http://izpack.org/>
+* <http://jrsoftware.org/ishelp/index.php?topic=consts&anchor=userappdata>
+* <http://stackoverflow.com/questions/13728902/powershell-script-after-install>
+* <http://stackoverflow.com/questions/252226/signing-a-windows-exe-file>
