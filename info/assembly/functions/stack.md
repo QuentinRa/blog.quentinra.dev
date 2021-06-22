@@ -5,8 +5,8 @@
 Do you remember that ``pc`` is the current instruction
 and ``lr`` the next one?
 
-Then if you are calling a function, at the end, the 
-function must know what will be the next instruction
+Then if you are calling a function, at the end of the
+code, the function must know what will be the next instruction
 but we only know that at the first line of our function
 like which line in the main should have been the next
 one so you need to store it.
