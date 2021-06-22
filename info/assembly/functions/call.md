@@ -2,10 +2,10 @@
 
 [Go back](..)
 
-To call your own function, you can't use
+To call your function, you can't use
 ``swi``. Just must use `bl`
 
-Let's say we want to call a function ``int max(int,int)``
+Let's say we want to call a function ``int max(int, int)``
 then we would have
 
 ```asm6502
