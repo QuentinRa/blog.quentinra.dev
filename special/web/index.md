@@ -17,7 +17,8 @@ with a URL like this ``http://pgsql.pedago.ensiie.fr/~prenom.nom/``.
 You will have to create a public_html folder and set
 some permissions.
 
-* [Set public_html](public_html.md)
+* [Set public_html](parts/public_html.md)
+* [Project Workflow](parts/workflow.md)
 
 <hr class="sl">
 
