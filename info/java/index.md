@@ -9,7 +9,7 @@ In this course, you will find
 * some secrets things about `Java`
 * how to package and create a `.exe`/`installer` for your applications
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Introduction
 
@@ -40,7 +40,7 @@ if you don't know something is to look at the documentation,
 * [Java 14](https://docs.oracle.com/en/java/javase/14/docs/api/index.html)
 * latest as of June 2021: [Java 16](https://docs.oracle.com/en/java/javase/16/docs/api/index.html)
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Vocabulary
 
@@ -73,7 +73,7 @@ Still, a lot to learn but that's the most you need to know to understand
 everything else.
 **You should practice by yourself but [here](structure/mcq.md) some MCQ**.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Beginner
 
@@ -133,7 +133,7 @@ If we summarize abstract class and interfaces
 * check you remember and understand the [theory](beginner/mcq.md)
 * but you must practice!
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Advanced
 
@@ -161,13 +161,26 @@ And things you might use
 * [Recursive functions](advanced/recursive.md)
 * [Sorting](advanced/sort.md)
 
-<div class="sr"></div>
+As a side note, you may see weird characters in Strings when
+persons are not using UTF-8 (like à or é in French) so
+you should use the [unicode](https://unicode-table.com/en/)
+character code with a ``\u`` for unicode.
+
+```java
+System.out.println("\u00E9"); // print é
+```
+
+<hr class="sr">
 
 ## Expert
 
+**Note**: note that I'm not an export so this section
+is about some notes about the things that I'm discovering
+while practicing.
+
 Nowadays, javadoc projects are what we call ``modules``.
 You will create a module file and require other modules
-that may be used for your project. It's a higher isolation
+that may be used for your project. It's a higher encapsulation
 level than before.
 
 * [Modules](expert/modules.md)
@@ -189,7 +202,7 @@ back to the Java code.
 
 * [Protect a jar](expert/jar.md)
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Tests with JUnit
 
@@ -209,8 +222,17 @@ should use JUnit5 or higher.
 * [Tests suite](tests/suite.md)
 * [Parametric tests](tests/par.md)
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Graphical interfaces
 
 ...
+
+<hr class="sl">
+
+## Sources
+
+* <http://tutorials.jenkov.com/java/modules.html>
+* <https://beginnersbook.com/2018/09/java-9-modules/>
+* <https://developer.ibm.com/languages/java/tutorials/java-modularity-2/>
+* <https://www.baeldung.com/java-9-modularity>
