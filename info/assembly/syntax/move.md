@@ -20,6 +20,8 @@ then use ``ldr``
 
 ```asm6502
 ldr Rd, =label
+; move the value at the address in Rn in Rd
+ldr Rd, [Rn]
 ```
 
 And you can move (store) a value inside a Register
@@ -27,6 +29,8 @@ Rd into an address using ``str``
 
 ```asm6502
 str Rd, =label
+; store at the address in Rn the value in Rd
+str Rd, [Rn]
 ```
 
 <hr class="sr">

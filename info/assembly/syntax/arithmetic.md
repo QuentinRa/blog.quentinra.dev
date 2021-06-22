@@ -17,6 +17,9 @@ sub Rd,Rn,Operand2
 
 ; Rd = Operand2 - Rn
 rsb Rd,Rn,Operand2
+
+; exclusive or
+eor Rd,Rn,Operand2
 ```
 
 For the multiplication instructions, you got 3

@@ -15,3 +15,5 @@ swi #0
 
 for software interaction, that will process the
 system call.
+
+> Some are using ``svc`` instead of `swi`

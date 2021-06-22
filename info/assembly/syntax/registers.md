@@ -11,6 +11,7 @@ of them are special so you must remember all of them.
 
 * ``r0`` to `r6`, `r8` to `r10` are used to store values
 * ``r7``: store system call value
+* ``r11``: store fp (Frame pointer)
 * ``r12``: store ip (Intra Procedural Call)
 * ``r13``: store sp (Stack Pointer)
 * ``r14``: store lr (Link Register)
@@ -23,3 +24,4 @@ being executed
 * ``lr`` is the address of the next instruction
 * ``sp`` is the address of the stack
 * ``ip`` is ??? (not used yet)
+* ``fp`` is ??? (not used yet)

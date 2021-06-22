@@ -81,7 +81,9 @@ _start :
 ```
 
 You can get the assembly code of a ``C`` program
-with ``objdump -d a.out``.
+with ``objdump -d a.out``. You may also check
+[disassemble](https://visualgdb.com/gdbreference/commands/disassemble)
+command.
 
 <hr class="sl">
 
@@ -218,3 +220,4 @@ without needing to do complex operations.
 * <https://en.wikipedia.org/wiki/Stack_register>
 * <https://www.elprocus.com/what-is-stack-stack-pointer-types-operations-its-application/>
 * <http://www.davespace.co.uk/arm/introduction-to-arm/>
+* <https://azeria-labs.com/writing-arm-assembly-part-1/>
