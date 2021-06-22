@@ -10,9 +10,9 @@ label: type value
 
 With type
 
-* ``.ascii``: string converted to ascii
+* ``.ascii``: string converted to ASCII
 * ``.asciz``: same but add a `\0` at the end
-* ``.word``: a int
+* ``.word``: an integer
 
 ```asm6502
 val: .word 4
