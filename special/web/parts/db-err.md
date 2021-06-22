@@ -1,5 +1,7 @@
 ## Database errors
 
+[Go back](..)
+
 You should enable errors for developing purposes if not done.
 
 * <https://stackoverflow.com/questions/8992795/set-pdo-to-throw-exceptions-by-default>

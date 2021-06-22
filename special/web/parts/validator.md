@@ -1,5 +1,7 @@
 ## W3Validator
 
+[Go back](..)
+
 W3Validator is used to verify if you are writing your code using good practices.
 At ENSIIE, to check your pages, you must copy and paste le code here :
 <https://validator.w3.org/#validate_by_input)> since URL will not work (because

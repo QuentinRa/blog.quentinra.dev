@@ -1,5 +1,7 @@
 ## Artificial keys
 
+[Go back](..)
+
 These are attributes for which the value is incremented each time a new row
 is added. In ``postgre`` it's called sequences.
 

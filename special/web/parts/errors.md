@@ -1,5 +1,7 @@
 ## Enable errors
 
+[Go back](..)
+
 Simply write these lines at the beginning of your code
 (not necessarily at the beginning but make sure that
 this is executed before the errors happen).
