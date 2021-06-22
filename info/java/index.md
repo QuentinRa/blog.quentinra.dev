@@ -165,10 +165,29 @@ And things you might use
 
 ## Expert
 
-* Modules
-* Gradle
-* Generating a .exe or an installer
-* Protect a jar
+Nowadays, javadoc projects are what we call ``modules``.
+You will create a module file and require other modules
+that may be used for your project. It's a higher isolation
+level than before.
+
+* [Modules](expert/modules.md)
+
+You may use gradle to make your project more easy
+to manage like a Makefile. You will run one command
+downloading all libraries or running the project.
+
+* [Gradle](expert/gradle.md)
+
+Learn how to use JPackage and JLink
+commands available since JDK 14.
+
+* [Generating a .exe or an installer](expert/exe.md)
+
+What's obfuscating and could we do something
+better to prevent someone to reverse your code
+back to the Java code.
+
+* [Protect a jar](expert/jar.md)
 
 <div class="sl"></div>
 
