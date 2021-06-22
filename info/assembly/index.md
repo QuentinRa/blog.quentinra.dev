@@ -122,3 +122,25 @@ operations like +, -, ...
 * [Move-related instructions](syntax/move.md)
 * [Arithmetic-related instructions](syntax/arithmetic.md)
 * [Make a system call](syntax/swi.md)
+
+<hr class="sl">
+
+## Functions
+
+You are almost ready to write functions. You know
+that function parameters must be stored in register,
+starting from r0. The result will be stored in r0.
+
+Still, you must learn
+
+* the syntax of functions
+* how to store register
+
+For the later, you should remember that you don't
+have a lot of registers. And what if a function calls
+another one? You may want to know how you should manage
+your register for that.
+
+* [Declaration](functions/syntax.md)
+* [Call](functions/call.md)
+* [Stack](functions/stack.md)
