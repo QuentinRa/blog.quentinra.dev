@@ -167,3 +167,27 @@ ne if the condition that we will learn right now.
 * [Table of conditions](cond/table.md)
 * [Tests](cond/tests.md)
 * [Examples](cond/examples.md)
+
+<hr class="sl">
+
+## Loops
+
+Also note that we have a new instruction ``b``,
+to move to a label like that
+
+```asm6502
+loop:
+    ; r0 - 0
+    ; Z = ???, N = ???, ...
+    cmp r0, #0
+    ; if Z is true, then move to exit label
+    beq exit
+
+    ; update r0, r0--
+    sub r0, r0, #1
+
+    ; loop again
+    b loop
+exit:
+    ; ...
+```
