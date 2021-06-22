@@ -155,8 +155,8 @@ These conditions are checking the 4 flags
 
 * N: is result Negative?
 * Z: is result Zero ?
-* V: is the last carry 1 ?
-* C: overflow ?
+* C: is the last carry 1 ?
+* V: overflow ?
 
 Usually the flags may only be changed after calling
 a test function but you may add a ``s`` at the end
@@ -165,5 +165,5 @@ like ``add`` can becomes `adds` or `addnes` where
 ne if the condition that we will learn right now.
 
 * [Table of conditions](cond/table.md)
-* [Tests functions](cond/tests.md)
+* [Tests](cond/tests.md)
 * [Examples](cond/examples.md)
