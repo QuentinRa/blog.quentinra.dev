@@ -26,7 +26,7 @@ The label ``_start`` is a sort of function name. It's
 referencing somewhere in the code (the `_start:`)
 where the code associated with the function is.
 
-This label is special through, it's the ``main``
+This label is special though, it's the ``main``
 function label. When running ``a.out`` that's this label
 code that will be run.
 
