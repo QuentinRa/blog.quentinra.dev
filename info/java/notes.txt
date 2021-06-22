@@ -1,0 +1,42 @@
+* 1991 - Projet OAK par la compagnie SUN - objets intelligents
+* 1995 Java 1.0
+* 1997 Sun vs Microsoft (Microsoft perds)
+* 1999 Java 1.2 (= Java 2) -> séparation de Java en éditions (SE/ME/EE)
+* 2004 Java 1.5 (=Java 5 : Généricité, …)
+* 2007 GPL (java devient open source en grande partie) Java sert de base au système Android
+* 2010 SUN revendent JAVA à Oracle (procès Google)
+* 2019 Java 10
+
+## Thread d’événements
+
+Tous les événements sont gérés dans le thread d’événement, par exemple les clics, etc… Lorsqu’une suite d’action
+correspondant à un événement est détecté, alors l’événement est généré (il y a donc un léger décalage).
+
+## Thread graphique
+
+C’est dans ce Thread que tous ce qui est relaté aux composants graphique est fait. Vous pouvez éviter les
+problèmes de « Thread-Safe » en exécutant les modifications/les méthodes liés aux éléments graphiques
+dans ce Thread.
+
+// ajoute du code à exécuter sur le thread graphique
+SwingUtilities.invokeLater(Runnable);
+
+------ introspection
+.class/getClass()
+Class.isInstance()
+Class.getSimpleName()
+
+final variable;
+
+---- jni
+
+http://www.swig.org/Doc1.3/Java.html#java_basic_tour
+https://stackoverflow.com/questions/15565947/java-wrapper-for-c-code
+https://nachtimwald.com/2017/06/06/wrapping-a-c-library-in-java/
+https://stackoverflow.com/questions/5963266/call-c-function-from-java
+
+------ Classes sympas
+
+JOptionPane //affiche un popup de dialog
+System //retourne un saut de ligne du système, système d'exploitation actuel, ...
+JFileChooser //sélectionner un fichier
