@@ -1,8 +1,8 @@
 ## Enable errors
 
-Simply write theses line at the beginning of your code
+Simply write these lines at the beginning of your code
 (not necessarily at the beginning but make sure that
-this is executed before the errors happens).
+this is executed before the errors happen).
 
 ```php
 <?php
