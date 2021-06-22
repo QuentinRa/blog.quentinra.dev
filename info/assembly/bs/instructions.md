@@ -21,7 +21,7 @@ Example: ``111111111111...`` LSR by `4` will becomes
 
 * **ASR (Arithmetic shift right)**
 
-We are writing xxx times signe bit, then Rb.
+We are writing xxx times the sign bit, then Rb.
 Not fitting bits are lost (right).
 
 Example: ``001110001000...`` ASR by `4` will becomes
@@ -30,7 +30,7 @@ was a zero).
 
 * **ROR (rotate right)**
 
-Last xxx bits of Rb register then
+The last xxx bits of Rb register then
 Rb. Not fitting bits are lost (right).
 
 Example: ``001110001000...0010`` ROR by `4` then we add
