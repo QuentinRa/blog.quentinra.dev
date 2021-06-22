@@ -232,7 +232,4 @@ should use JUnit5 or higher.
 
 ## Sources
 
-* <http://tutorials.jenkov.com/java/modules.html>
-* <https://beginnersbook.com/2018/09/java-9-modules/>
-* <https://developer.ibm.com/languages/java/tutorials/java-modularity-2/>
-* <https://www.baeldung.com/java-9-modularity>
+[References](ref.md)
