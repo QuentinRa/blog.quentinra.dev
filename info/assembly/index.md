@@ -191,3 +191,24 @@ loop:
 exit:
     ; ...
 ```
+
+<hr class="sr">
+
+## Barrel Shifter
+
+You can modify what we called ``Operand2`` easily
+using some operators like ``>>`` or `<<` in C.
+
+* [Instructions](bs/instructions.md)
+* [Usage](bs/usage.md)
+
+<hr class="sl">
+
+## Sources
+
+* <https://community.arm.com/developer/ip-products/processors/b/processors-ip-blog/posts/condition-codes-1-condition-flags-and-codes>
+* <http://www.toves.org/books/arm/#s2>
+* <https://www.tutorialspoint.com/assembly_programming/assembly_system_calls.htm>
+* <https://en.wikipedia.org/wiki/Stack_register>
+* <https://www.elprocus.com/what-is-stack-stack-pointer-types-operations-its-application/>
+* <http://www.davespace.co.uk/arm/introduction-to-arm/>
