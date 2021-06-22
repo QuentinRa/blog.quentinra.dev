@@ -24,6 +24,8 @@ Next update, 30/06/2021.
 
 * [ ] Search bar
 * [ ] Remade of home
+* [ ] add check boxes
+* [ ] add go back to #titleID
 
 **Next content**
 
@@ -58,10 +60,11 @@ Next update, 30/06/2021.
 * [ ] PHP
 * [ ] ILO MCQs
 * [ ] OCaml MCQs
+* [ ] Assembly
 
 **Typos**
 
-* [ ] Assembly
+* [x] Assembly
 * [ ] C
 * [ ] Java
 * [ ] Maths/*
