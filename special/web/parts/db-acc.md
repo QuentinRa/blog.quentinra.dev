@@ -1,4 +1,4 @@
-# 
+# Create a database account
 
 You should create a new DB account. You will have to log in
 using your **ENSIIE** credentials to ``pgsql`` host. 
