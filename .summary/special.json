@@ -8,7 +8,7 @@
     },
     {
       "tag": "web",
-      "name": "Web",
+      "name": "Web - PWR",
       "desc": "Some tips about the web infrastructure at ENSIIE.",
       "icon": "<i class=\"bi bi-globe2\"></i>"
     },
