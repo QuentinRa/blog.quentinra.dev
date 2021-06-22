@@ -107,7 +107,7 @@ Before that, I was using
 to create my jre
 * [launch4j](http://launch4j.sourceforge.net/)
 to create an exe (not an installer, from a .jar)
-* ``innoSetup`` to create an installer for my .exe,
+* [innoSetup](../../../tools/inno-setup) to create an installer for my .exe,
 this software is explained in special/innoSetup
   
 You may also check out
