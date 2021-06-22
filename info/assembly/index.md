@@ -3,24 +3,24 @@
 You will usually run some programs on your computer.
 These programs are written in the machine language,
 so many 0 and 1. The level higher than binary
-code is assembly. That's an human-readable language
+code is assembly. That's aw human-readable language
 of the machine code. You may use that a lot of you
 do what we call "reverse-engineering" like exploring
 the code of a program.
 
 You can learn about Intel assembly but here we will
 learn about ARM processor assembly language. The reason
-of that choice is because the RISC family of processors
-whose ARM belong to is still quite used.
+for that choice is because the RISC family of processors
+whose ARM belongs to is still quite used.
 
 <hr class="sl">
 
 ## Introduction
 
-First you need a RISC kind of processor. If you got
+First, you need a RISC kind of processor. If you got
 a raspberry (cost is around 30$) then you should use it.
 You can also use this 
-[great (yet not really useful here) tool](https://azm.azerialabs.com/) to write some code
+[great (yet not useful here) tool](https://azm.azerialabs.com/) to write some code
 but you won't be able to compile it.
 
 The commands that we will use are
@@ -28,12 +28,14 @@ The commands that we will use are
 * ``as``: assemble, create a `.o` file
 * ``ld``: link, create a `.out` file
 
-If you got good eyes, you should have notice that this
+If you got good eyes, you should have noticed that this
 is the same that in C, with ``gcc -c``(.o) and `gcc` (.out).
-That's really is the case, in fact you can fix assembly
-code with ``C`` code and doing that helped me quite a
-lot to learn assembly, like writing the code in ``C`` then
-removing the function in C and writing it in ``ARM``.
+You can mix assembly code with ``C`` code and 
+doing that helped me quite a lot to learn assembly, 
+like writing the code in ``C`` then
+removing a function in C and writing it in ``ARM``
+(so I didn't have to write everything is looking for
+the issue when the program was not working).
 
 <hr class="sr">
 
@@ -104,8 +106,8 @@ Comments are made with `@` or `#` or  ``;``.
 
 ## Instructions
 
-The main idea is that you will move into registers
-value. The first register is the first argument of a
+The main idea is that you will move values into the
+registers. The first register is the first argument of a
 function, ...
 
 For instance, the system call ``write(1, "test", 4)``
@@ -130,18 +132,19 @@ operations like +, -, ...
 ## Functions
 
 You are almost ready to write functions. You know
-that function parameters must be stored in register,
-starting from r0. The result will be stored in r0.
+that the function parameters must be stored in registers,
+starting from r0 and that the result will be stored in r0.
 
 Still, you must learn
 
 * the syntax of functions
-* how to store register
+* how to store registers
 
-For the later, you should remember that you don't
+For the latter, you should remember that you don't
 have a lot of registers. And what if a function calls
 another one? You may want to know how you should manage
-your register for that.
+your registers for that (like pc and lr registers
+might become messed up after a function call).
 
 * [Declaration](functions/syntax.md)
 * [Call](functions/call.md)
@@ -155,15 +158,15 @@ You can add a condition for an instruction
 to be executed only if the condition is true.
 These conditions are checking the 4 flags
 
-* N: is result Negative?
-* Z: is result Zero ?
-* C: is the last carry 1 ?
-* V: overflow ?
+* N: is the result Negative?
+* Z: is the result zero?
+* C: is the last carry value one?
+* V: do we have an overflow?
 
-Usually the flags may only be changed after calling
+Usually, the flags are only changed after calling
 a test function but you may add a ``s`` at the end
 of the previous instruction to change the flags
-like ``add`` can becomes `adds` or `addnes` where
+like ``add`` can become `adds` or `addnes` where
 ne if the condition that we will learn right now.
 
 * [Table of conditions](cond/table.md)
@@ -174,7 +177,7 @@ ne if the condition that we will learn right now.
 
 ## Loops
 
-Also note that we have a new instruction ``b``,
+Also, note that we have a new instruction ``b``,
 to move to a label like that
 
 ```asm6502
