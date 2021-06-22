@@ -1,6 +1,6 @@
 # Introduction
 
-For now this course is quite empty but some help
+For now, this course is quite empty but some help
 might be added if peoples are using more advanced
 concepts that I do.
 
