@@ -3,7 +3,7 @@
 This course is supposed to help ENSIIE student 
 to sail in the Web course. 
 
-First you need to know that in 2020-2021
+First, you need to know that in 2020-2021
 
 * we did a "mini-project" (only one grade)
 * that we could reuse or not in the Web project
@@ -24,7 +24,7 @@ some permissions.
 ## ERROR 500 (Internal server error)
 
 Sometimes you may have an **error 500** like everything
-was working an now you can't check your website. Note
+was working and now you can't check your website. Note
 that this is because you got a critical error in your code
 and the errors are disabled.
 
@@ -35,8 +35,8 @@ and the errors are disabled.
 ## Database
 
 First, the database can only be accessed from the
-inside, meaning you need to be on the server in
-order to run it. You can use a ``SSH Tunel`` like
+inside, meaning you need to be on the server to run it. 
+You can use a ``SSH Tunel`` like
 in PHPStorm but that won't be explained here.
 
 ```php
