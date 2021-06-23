@@ -1,3 +1,9 @@
+# Memorize
+
+![GitHub](https://img.shields.io/github/license/lgs-games/memorize)
+![GitHub pull requests](https://img.shields.io/github/issues-pr-closed/lgs-games/memorize?color=%23a0)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/lgs-games/memorize)
+
 ![icon](.github/icon64.png)
 
 ``Memorize`` was made for students to gather knowledge and tutorials 
@@ -86,3 +92,7 @@ Next update, 30/06/2021.
 * [ ] Maths/*
 * [ ] Descriptions
 * [ ] Translate ``PROJECTS`` vocabulary
+
+## Others
+
+![Jokes Card](https://readme-jokes.vercel.app/api)
