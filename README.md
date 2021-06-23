@@ -7,14 +7,30 @@ courses better.
 Made by french people, typos are to be expected. And since we are students,
 we can also make mistakes so be kind.
 
-Course were made from teaching mostly learned at
+Provided by `Legendary Games Studio`.
 
-* département informatique de l’IUT de Sénart-Fontainebleau à Fontainebleau
-  (Seine-et-Marne, France)
-* l’ENSIIE, école d’ingénieur en informatique à Évry
+## How to contribute
 
-Provided by `Legendary Games Studio`,
-Courses are under the license of their respective creators.
+If you want to add a new course, add an entry in
+``.summary``, in the JSON of your category.
+
+```json
+{
+  "tag": "course-name",
+  "name": "Name",
+  "desc": "...",
+  "icon": "null or a boostrap icon like <i class=\"bi bi-sim\"></i>"
+}
+```
+
+If you choose ``info``, then create in
+``/info/`` folder named `course-name`. Then create
+a file ``index.md`` that will be used as the entry
+point for your course.
+
+If you want to edit a course, simply edit the ``.md``
+file. You may check the others files if you wondering
+how you should do it.
 
 ## TODO List
 
