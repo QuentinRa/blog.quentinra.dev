@@ -100,195 +100,6 @@ Here some details about basic commands
 * [cgi syntax](commands/cgi.md)
 * [mystic commands](commands/special.md)
 
-Here you have a summary
-
-<table class="table table-bordered mb-3 table-striped">
-	<tr>
-		<th>Input</th>
-		<th>Action </th>
-	</tr>
-	<tr>
-		<th>a</th>
-		<th>Append : Move the cursor right, then enter in insert mode. </th>
-	</tr>
-	<tr>
-		<th>b</th>
-		<th>Move to the beginning of the previous word.</th>
-	</tr>
-	<tr>
-		<th>c [Space]</th>
-		<th>Delete a character and enter in edit mode.</th>
-	</tr>
-	<tr>
-		<th>ce</th>
-		<th>Delete from the cursor to the end of the word and enter in edit mode.</th>
-	</tr>
-	<tr>
-		<th>c$</th>
-		<th>Delete from the cursor to the end of the line and enter in edit mode.</th>
-	</tr>
-	<tr>
-		<th>d[Space]</th>
-		<th>Delete one character. Same as "x".</th>
-	</tr>
-	<tr>
-		<th>dd</th>
-		<th>Delete one line.</th>
-	</tr>
-	<tr>
-		<th>[number]dd</th>
-		<th>Delete [number] lines.</th>
-	</tr>
-	<tr>
-		<th>e, E</th>
-		<th>Go to the end on the next word.</th>
-	</tr>
-	<tr>
-		<th>f</th>
-		<th>???.</th>
-	</tr>
-	<tr>
-		<th>gg, G</th>
-		<th>Go to the beginning/end on the file.</th>
-	</tr>
-	<tr>
-		<th>h, j, k, l</th>
-		<th>Go Left, Down, Up, Right. </th>
-	</tr>
-	<tr>
-		<th>i</th>
-		<th>Enter in  **edit mode**.</th>
-	</tr>
-	<tr>
-		<th>m</th>
-		<th>???</th>
-	</tr>
-	<tr>
-		<th>n, N</th>
-		<th>Search the next/previous occurrence (use it with the input "/" or "?")</th>
-	</tr>
-	<tr>
-		<th>o</th>
-		<th>Add a line, and then enter in edit mode.</th>
-	</tr>
-	<tr>
-		<th>p</th>
-		<th>Paste after the cursor. Paste the last copied content or the last deleted content.</th>
-	</tr>
-	<tr>
-		<th>P</th>
-		<th>Paste before the cursor.</th>
-	</tr>
-	<tr>
-		<th>q</th>
-		<th>???</th>
-	</tr>
-	<tr>
-		<th>r[input]</th>
-		<th>Replace the current character by the new one [Input].</th>
-	</tr>
-	<tr>
-		<th>R</th>
-		<th>Enter in "replace mode".</th>
-	</tr>
-	<tr>
-		<th>s</th>
-		<th>???</th>
-	</tr>
-	<tr>
-		<th>t</th>
-		<th>???</th>
-	</tr>
-	<tr>
-		<th>u</th>
-		<th>Undo. See also : "Ctrl + r".</th>
-	</tr>
-	<tr>
-		<th>v</th>
-		<th>Visual : Create a highlight areas of text.</th>
-	</tr>
-	<tr>
-		<th>w</th>
-		<th>Go to the beginning of the next word.</th>
-	</tr>
-	<tr>
-		<th>x</th>
-		<th>Delete one character. Same as "d[Space]".</th>
-	</tr>
-	<tr>
-		<th>y</th>
-		<th>In Visual mode (see "v"), copy the highlight text.</th>
-	</tr>
-	<tr>
-		<th>yy</th>
-		<th>Copy the line.</th>
-	</tr>
-	<tr>
-		<th>z</th>
-		<th>???</th>
-	</tr>
-	<tr>
-		<th>~</th>
-		<th>Change UPPERCASE to lowercase, and vice-versa.</th>
-	</tr>
-	<tr>
-		<th>/[input]</th>
-		<th>Search the [input] (ASC).</th>
-	</tr>
-	<tr>
-		<th>?[input]</th>
-		<th>Search the [input] (DESC).</th>
-	</tr>
-	<tr>
-		<th>>></th>
-		<th>Indent.</th>
-	</tr>
-	<tr>
-		<th><<</th>
-		<th>Dedent.</th>
-	</tr>
-	<tr>
-		<th>0</th>
-		<th>Move to the beginning of the line.</th>
-	</tr>
-	<tr>
-		<th>^</th>
-		<th>Move to the first character of the line.</th>
-	</tr>
-	<tr>
-		<th>$</th>
-		<th>Move to the end of the line.</th>
-	</tr>
-	<tr>
-		<th>%</th>
-		<th>If the cursor is in one of these characters : {, (, [, ], ), }, show the associated one.</th>
-	</tr>
-	<tr>
-		<th>ctrl + r</th>
-		<th>Redo.</th>
-	</tr>
-	<tr>
-		<th>:[number], [number]G</th>
-		<th>Go to line [number].</th>
-	</tr>
-	<tr>
-		<th>:w</th>
-		<th>Save.</th>
-	</tr>
-	<tr>
-		<th>:q</th>
-		<th>Quit, if the file wasn't edited.</th>
-	</tr>
-	<tr>
-		<th>:wq</th>
-		<th>Save and quit.</th>
-	</tr>
-	<tr>
-		<th>:q!</th>
-		<th>Quit without saving.</th>
-	</tr>
-</table>
-
 <hr class="sr">
 
 ## Cheatsheet / Reference
@@ -297,14 +108,42 @@ Because now that you learned a bit about vim, you need
 a cheat to remember a lot of things you learned, check
 these
 
-* <https://www.cs.cmu.edu/~15131/f17/topics/vim/vim-cheatsheet.pdf>
-* [vim-cheatsheet.pdf](vim-cheatsheet.pdf) (same as above, locally stored)
+* [our summary](summary.md)
+* [vim-cheatsheet.pdf](https://www.cs.cmu.edu/~15131/f17/topics/vim/vim-cheatsheet.pdf)
+* [vim-cheatsheet.pdf](download:vim-cheatsheet.pdf) (same as above, locally stored)
 * <https://vim.rtorr.com/>
-* [Vim-commands-cheat-sheet-by-PhoenixNAP-1.pdf](Vim-commands-cheat-sheet-by-PhoenixNAP-1.pdf)
-* <https://www.shell-tips.com/cheat-sheets/vim-quick-references/vi_vim_cheat_sheet.pdf>
-* <http://tnerual.eriogerg.free.fr/vimqrc.pdf>
+* [Vim-commands-cheat-sheet-by-PhoenixNAP-1.pdf](download:Vim-commands-cheat-sheet-by-PhoenixNAP-1.pdf)
+* [vi_vim_cheat_sheet.pdf](https://www.shell-tips.com/cheat-sheets/vim-quick-references/vi_vim_cheat_sheet.pdf)
+* [vimqrc.pdf](http://tnerual.eriogerg.free.fr/vimqrc.pdf)
 
 <hr class="sl">
+
+## Code completion
+
+This is something that is only discovered recently,
+but vim supports code completion!
+
+These commands using 
+[ale](https://github.com/dense-analysis/ale)
+will give you hints about mistakes (like; missing)
+when going back to command mode.
+
+```bash
+mkdir -p ~/.vim/pack/git-plugins/start
+git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-plugins/start/ale
+```
+
+But since you will want more, I tested this configuration,
+and using ``CTRL-P``, VIM is showing a list of autocompletion choices
+
+* <https://github.com/viniciusgerevini/dotfiles/blob/master/vim/.vimrc>
+* ``sudo apt-get install vim-runtime``
+* ``sudo apt-get install vim-gui-common``
+
+I'm not using VIM singe ages but I stumbled upon ALE so
+I wanted to add it here.
+
+<hr class="sr">
 
 ## Sources
 
