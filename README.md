@@ -47,7 +47,7 @@ Next update, 30/06/2021.
 * [x] Search bar
 * [x] Remade of home
 * [ ] add create course
-* [ ] add check boxes
+* [x] add check boxes
 * [ ] add go back to #titleID
 
 **Next content**
