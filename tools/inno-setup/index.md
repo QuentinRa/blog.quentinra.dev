@@ -34,6 +34,7 @@ Source: "xxxx\app\*"; DestDir: "{app}\app"; Flags: ignoreversion recursesubdirs 
 * <https://documentation.help/Inno-Setup/topic_whatisinnosetup.htm>
 * <https://jrsoftware.org/isfaq.php>
 * <https://github.com/persepolisdm/persepolis-windows-package-build/blob/master/setupX64.iss>
+* <https://revolution.screenstepslive.com/s/revolution/m/10695/l/563371-signing-installers-you-create-with-inno-setup>
 
 Help
 
