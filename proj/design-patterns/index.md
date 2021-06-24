@@ -21,9 +21,15 @@ You may, should and must check this course
 about design patterns since the official one may help and be more accurate than
 this one.
 
-**edit 24/06/2021**: I recently found this website [https://java-design-patterns.com/](https://java-design-patterns.com/) and this GitHub [java-design-patterns](https://github.com/iluwatar/java-design-patterns) that are really good materials to start learning design-pattern (maybe even better than this course so check them out). Still, note that is **way too advanced and different** that what you will learn in school. You may also check this one [journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial).
+**edit 24/06/2021**: I recently found this website
+[https://java-design-patterns.com/](https://java-design-patterns.com/) and this
+GitHub [java-design-patterns](https://github.com/iluwatar/java-design-patterns) 
+that are really good materials to start learning design-pattern (maybe even better
+than this course so check them out). Still, note that is **way too advanced and 
+different** that what you will learn in school. You may also check this one
+[journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial).
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Creation
 
@@ -43,7 +49,7 @@ this one.
   : Create a finite pool of objects, allow others
   classes to use them, then handles to cleaning afterwards.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Structure
 
@@ -65,7 +71,7 @@ this one.
   : call a remote object or use an attribute of
   a subclass to prevent yourself from coding some methods.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Behaviour
 
@@ -94,7 +100,7 @@ this one.
 * [Mediator](behaviour/mediator.md)
   : relation between classes
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Architectural
 
@@ -103,7 +109,7 @@ this one.
 * DAO
   : DAO (data access objet)
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Exercises
 
@@ -153,7 +159,7 @@ a <code>Factory</code> pattern (since we are creating concrete
 iterators that are hiding using Iterator class).
 </blockquote>
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Sources
 
