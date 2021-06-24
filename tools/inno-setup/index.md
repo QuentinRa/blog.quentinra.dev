@@ -44,3 +44,5 @@ Help
 * <http://jrsoftware.org/ishelp/index.php?topic=consts&anchor=userappdata>
 * <http://stackoverflow.com/questions/13728902/powershell-script-after-install>
 * <http://stackoverflow.com/questions/252226/signing-a-windows-exe-file>
+* <https://documentation.help/Inno-Setup/topic_setupcmdline.htm>
+* <https://stackoverflow.com/questions/3767227/run-application-after-successful-install>
