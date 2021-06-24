@@ -57,12 +57,6 @@
       "icon": null
     },
     {
-      "tag": "logic",
-      "name": "First-order logic",
-      "desc": "...",
-      "icon": "<i class=\"bi bi-list-stars\"></i>"
-    },
-    {
       "tag": "matrix",
       "name": "Matrix",
       "desc": "...",
