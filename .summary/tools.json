@@ -9,7 +9,7 @@
     {
       "tag": "git",
       "name": "Git",
-      "desc": "Why you MUST use git as a programmer and how to use it, with Github as example.",
+      "desc": "Why you MUST use git as a programmer and how to use it, with Github as an example.",
       "icon": "<i class=\"bi bi-box\"></i>"
     },
     {
@@ -33,7 +33,7 @@
     {
       "tag": "rst",
       "name": "RST",
-      "desc": "A language to write documentations outside your code with a lot of powerful tools such as generating uml, graphs ... The syntax is like an upgraded Markdown.",
+      "desc": "A language to write documentations outside your code with a lot of powerful tools such as generating UML, graphs ... The syntax is like an upgraded Markdown.",
       "icon": "<i class=\"bi bi-box\"></i>"
     },
     {
@@ -45,7 +45,7 @@
     {
       "tag": "doxygen",
       "name": "Doxygen",
-      "desc": "Write a standardised documentation in all your project, that can generates a website like a javadoc using doxygen",
+      "desc": "Write a standardized documentation in all your project, that can generate a website like the Javadoc using Doxygen",
       "icon": "<i class=\"bi bi-box\"></i>"
     },
     {
