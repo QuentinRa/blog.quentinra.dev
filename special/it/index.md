@@ -111,3 +111,28 @@ quite easy to use and should improve your grade
 You can do something like that quite easily
 
 ![ncurses](ncurses.png)
+
+<hr class="sr">
+
+## Lot_c
+
+We used ``electron`` in JS/TS since using this,
+the interface is in HTML/CSS/... (you can
+even use Boostrap) so that's easy. Moving from
+``C`` to `electron` was easy but that won't always
+be the case (The more your code looks Oriented-Object,
+the easier).
+
+In ``C``, you should check
+
+* [SDL](https://wiki.libsdl.org/Installation)
+  * Links / You may check on Youtube
+  * <https://zestedesavoir.com/tutoriels/1014/utiliser-la-sdl-en-langage-c/>
+  * <https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c/17117-installation-de-la-sdl>
+  * <https://www.geeksforgeeks.org/sdl-library-in-c-c-with-examples/>
+  * <https://learncgames.com/tutorials/getting-started-with-sdl-and-c/>
+* [GTK](https://www.gtk.org/)
+  * same as SDL
+  * <https://www.gtk.org/docs/getting-started/>
+  * <https://developer.gnome.org/gtk-tutorial/stable/c39.html>
+  * <https://developer.gnome.org/gtk3/stable/gtk-getting-started.html>
