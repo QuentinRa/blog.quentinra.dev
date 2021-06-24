@@ -151,12 +151,12 @@ on other git-server.
 
 ## Fancy notes
 
-Did you heard about badges ? Theses things like that
-which you can find in a lot of repositories nowadays.
+Did you hear about badges? You can find them in the 
+README.md in a lot of repositories nowadays.
 
 ![](https://img.shields.io/github/license/lgs-games/memorize)
 
-They are loaded with the latest value like, the real license
+They are loaded with the latest value like the real license
 here so devs add them into a README to help others
 to easily a lot about their repository.
 
