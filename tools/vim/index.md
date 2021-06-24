@@ -8,7 +8,7 @@ You may find extensions like
 * GVim
 * neovim
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## How to install and run vim?
 
@@ -44,7 +44,7 @@ set cursorline "show cursor
 set tabstop=4 "tabulation size
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 # Surviving in vim ...
 
@@ -78,7 +78,7 @@ that you will most likely need to know
 * ``u`` : undo
 * ``h, j, l, k`` : move cursor to left, top, right, bottom
 
-<div class="sl"></div>
+<hr class="sl">
 
 # ... and now mastering it
 
@@ -289,9 +289,27 @@ Here you have a summary
 	</tr>
 </table>
 
-<div class="sr"></div>
+<hr class="sr">
+
+## Cheatsheet / Reference
+
+Because now that you learned a bit about vim, you need
+a cheat to remember a lot of things you learned, check
+these
+
+* <https://www.cs.cmu.edu/~15131/f17/topics/vim/vim-cheatsheet.pdf>
+* [vim-cheatsheet.pdf](vim-cheatsheet.pdf) (same as above, locally stored)
+* <https://vim.rtorr.com/>
+* [Vim-commands-cheat-sheet-by-PhoenixNAP-1.pdf](Vim-commands-cheat-sheet-by-PhoenixNAP-1.pdf)
+* <https://www.shell-tips.com/cheat-sheets/vim-quick-references/vi_vim_cheat_sheet.pdf>
+* <http://tnerual.eriogerg.free.fr/vimqrc.pdf>
+
+<hr class="sl">
 
 ## Sources
 
 * <https://en.wikipedia.org/wiki/Vim_(text_editor)>
 * <https://neovim.io/doc/>
+* <https://vimsheet.com/>
+* <https://vimsheet.com/advanced.html>
+* <https://vim.rtorr.com/>
