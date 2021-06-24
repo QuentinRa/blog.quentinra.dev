@@ -7,12 +7,11 @@
 
 ![icon](.github/icon64.png)
 
-``Memorize`` was made for students to gather knowledge and tutorials 
-in one place, with exercises, that can help to understand and memorize
-courses better.
+``Memorize`` was made for students to create courses to help 
+others sail easier in the courses they struggled with.
 
-Made by french people, typos are to be expected. And since we are students,
-we can also make mistakes so be kind.
+Since we are still learning, we could have made mistakes 
+so please kindly correct or report them. Thanks!
 
 Provided by `Legendary Games Studio`.
 
@@ -46,7 +45,7 @@ Next update, 30/06/2021.
 **Website**
 
 * [x] Search bar
-* [ ] Remade of home
+* [x] Remade of home
 * [ ] add check boxes
 * [ ] add go back to #titleID
 
