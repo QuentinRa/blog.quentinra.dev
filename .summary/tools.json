@@ -4,25 +4,25 @@
       "tag": "docker",
       "name": "Docker",
       "desc": "What's docker and why are we using it.",
-      "icon": "<i class=\"bi bi-box\"></i>"
+      "icon": "<i class=\"bi bi-box-seam\"></i>"
     },
     {
       "tag": "git",
       "name": "Git",
       "desc": "Why you MUST use git as a programmer and how to use it, with Github as an example.",
-      "icon": "<i class=\"bi bi-box\"></i>"
+      "icon": "<i class=\"bi bi-github\"></i>"
     },
     {
       "tag": "jetbrains",
       "name": "Jetbrains",
       "desc": "Some programming software free for students that will make your programming life easier.",
-      "icon": "<i class=\"bi bi-box\"></i>"
+      "icon": "<i class=\"bi bi-battery-charging\"></i>"
     },
     {
       "tag": "vim",
       "name": "VIM",
       "desc": "The legendary, old yet powerful console terminal editor.",
-      "icon": "<i class=\"bi bi-box\"></i>"
+      "icon": "<i class=\"bi bi-terminal\"></i>"
     },
     {
       "tag": "markdown",
@@ -46,7 +46,7 @@
       "tag": "doxygen",
       "name": "Doxygen",
       "desc": "Write a standardized documentation in all your project, that can generate a website like the Javadoc using Doxygen",
-      "icon": "<i class=\"bi bi-box\"></i>"
+      "icon": "<i class=\"bi bi-newspaper\"></i>"
     },
     {
       "tag": "inno-setup",
