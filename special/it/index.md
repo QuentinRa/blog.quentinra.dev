@@ -1,10 +1,10 @@
 # IT Project
 
-This is a review about ENSIIE IT Project (2nd
+This is a review of the ENSIIE IT Project (2nd
 semester) taught by Dimitri WATEL.
 
 You will have some specifications about a Game (in C) and
-will work with 3 others persons following the
+will work with 3 other persons following the
 directives.
 
 * ``lot_a``: create the `.h` files
@@ -53,7 +53,7 @@ Our notes
 * read the subject once, make some notes about the rules
 * read the subject again, try making a graphical version
   to understand better what kind of things you are
-  going to create an manipulate like the properties
+  going to create or manipulate like the properties
   of your types
 * **COMMENT YOUR CODE** (you may use
   [doxygen](../../tools/doxygen/index.md))
@@ -72,7 +72,7 @@ You should think by now about some things like
 
 * will you translate your game?
 * will you have different graphical
-  interface? (terminal one and graphical one
+  interface? (terminal one and a graphical one
   for instance)
   * if you do, try to think if you should
   add some methods like ``interface_init``
