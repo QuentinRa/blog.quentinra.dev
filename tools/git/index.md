@@ -14,7 +14,7 @@ to offer this service, please also check
 * [GitLab](https://about.gitlab.com/), alternative to Github
 * [Gogs](https://gogs.io/), open-source, self-hosted
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Introduction
 
@@ -32,7 +32,7 @@ So first of all, you need to
 * [set things up locally](local-install.md)
 * [set things up server-side](server-install.md)
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Basic usage
 
@@ -68,7 +68,7 @@ git commit -m "I worked a lot"
 git push
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Main concepts
 
@@ -99,7 +99,7 @@ it into ``master`` or just destroy it.
 > an interface to do that quite easily such
 > as ``IntelliJ IDEA``.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Good practices
 
@@ -133,7 +133,7 @@ like high-churn ones or big files... Create a file
 called is a good practice, you can generate one
 here [toptal gitignore](https://www.toptal.com/developers/gitignore).
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Advanced Github concepts
 
@@ -147,7 +147,35 @@ on other git-server.
 * [Organizations](tools/organizations.md)
 * [Pages](tools/pages.md)
 
-<div class="sl"></div>
+<hr class="sl">
+
+## Fancy notes
+
+Did you heard about badges ? Theses things like that
+which you can find in a lot of repositories nowadays.
+
+![](https://img.shields.io/github/license/lgs-games/memorize)
+
+They are loaded with the latest value like, the real license
+here so devs add them into a README to help others
+to easily a lot about their repository.
+
+* [shields.io](https://shields.io/) : a lot of badges,
+  you can even create yours
+* [badgen.net](https://badgen.net/) : follows the steps
+and get some badges
+
+You can check websites like these for reviews of your
+code
+
+* <https://www.codefactor.io/>
+* <https://www.codetriage.com/>
+* <https://about.codecov.io/>
+* <https://weblate.org/fr/> (translation)
+
+![](https://readme-jokes.vercel.app/api)
+
+<hr class="sr">
 
 ## Sources
 
