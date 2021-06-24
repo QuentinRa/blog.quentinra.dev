@@ -234,3 +234,5 @@ should use JUnit5 or higher.
 ## Sources
 
 [References](ref.md)
+
+[Share your errors](so.md)
