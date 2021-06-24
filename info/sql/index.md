@@ -91,8 +91,4 @@ than ever.
 
 ## Sources
 
-* Régine LALEAU ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
-* Didier DIAZ ([IUT-SF](http://www.iut-fbleau.fr/) teacher)
-* Marie SZAFRANSKI ([ENSIIE](https://www.ensiie.fr/) teacher)
-* Julien FOREST ([ENSIIE](https://www.ensiie.fr/) teacher)
-* Quentin RAMSAMY–AGEORGES ([ENSIIE](https://www.ensiie.fr/) student)
+...
