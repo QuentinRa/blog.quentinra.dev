@@ -136,3 +136,41 @@ In ``C``, you should check
   * <https://www.gtk.org/docs/getting-started/>
   * <https://developer.gnome.org/gtk-tutorial/stable/c39.html>
   * <https://developer.gnome.org/gtk3/stable/gtk-getting-started.html>
+
+<hr class="sl">
+
+## Notation
+
+The notation was
+
+* you didn't make 3 tasks or more : 0
+* a task if yours if you got assigned to it
+  in the GANTT and you made almost all the work
+  (if not all)
+* code not compiling / starting : 0
+
+You will have a grade
+
+* ``/12``, the mean of your three highest grades
+  of each tasks
+  * you got ``20`` for `A.x`
+  * you got ``19`` for `B.x`
+  * you got ``20`` for `B.y`
+  * you got ``20`` for `C.y`
+  * your grade is ``mean(20,20,20)=20/20`` so `12/12`
+* ``/8``
+  * ``lot_b`` on time `/1`
+  * ``lot_b`` grade `/2`
+  * ``lot_c`` on time `/2`
+  * ``lot_c`` grade `/3`
+
+But this notation was only because we were allowed a delay.
+And if was changed only if the new one gave you
+a better grade
+
+* ``/14``: same
+* ``/6``: same
+  * ``lot_b`` on time `/1`
+  * ``lot_b`` grade `/3`
+  * ``lot_c`` on time `/1`
+  * ``lot_c`` grade `/1`
