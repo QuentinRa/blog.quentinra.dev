@@ -3,6 +3,7 @@
 ![GitHub](https://img.shields.io/github/license/lgs-games/memorize)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr-closed/lgs-games/memorize?color=%23a0)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/lgs-games/memorize)
+![Website counter](https://img.shields.io/badge/dynamic/json?color=success&label=counter&query=views&url=https%3A%2F%2Fmemorize.lgs-games.com%2Fcounter)
 
 ![icon](.github/icon64.png)
 
@@ -44,7 +45,7 @@ Next update, 30/06/2021.
 
 **Website**
 
-* [ ] Search bar
+* [x] Search bar
 * [ ] Remade of home
 * [ ] add check boxes
 * [ ] add go back to #titleID
