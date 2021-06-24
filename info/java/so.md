@@ -6,13 +6,17 @@ StackOverflow or the documentation.
 
 <hr class="sr">
 
-## Handshake failure HTTP Error / JPackage
+## Handshake failure HTTP Error / JPackage / Modules
 
-I was using HTTP/HTTPS requests by I was having a SSL
-handshake error and since I was only happening with
+I was using HTTP/HTTPS requests by I was having an "SSL
+handshake failure" and since I was only happening with
 the .exe generated with JPackage it was quite hard
 to fix. The error was that an algorithm was
-missing
+missing in the module-info
+
+```java
+requires jdk.crypto.cryptoki;
+```
 
 * <https://stackoverflow.com/questions/9299133/why-doesnt-java-send-the-client-certificate-during-ssl-handshake>
 * <https://stackoverflow.com/questions/9249158/why-do-i-get-a-handshake-failure-java-ssl>
