@@ -177,7 +177,7 @@ You may also check this to create a profile card
 
 * <https://github.com/anuraghazra/github-readme-stats>
 
-![QuentinRa's GitHub stats](https://github-readme-stats.vercel.app/api?username=QuentinRa&show_icons=true&theme=radical)
+![](https://github-readme-stats.vercel.app/api?username=QuentinRa&show_icons=true&theme=radical)
 
 And you can even find things like this
 
