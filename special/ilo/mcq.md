@@ -56,6 +56,6 @@ are valid
 
 <blockquote class="spoiler">
 The 1st one since we have String-Color and the 4th one
-since <code>get</code> method take a key and the key have the type String
+since <code>get</code> method take a key and the key has the type String
 since we are associating for each username a color.
 </blockquote>
