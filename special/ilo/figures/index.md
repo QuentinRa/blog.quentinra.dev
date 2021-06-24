@@ -6,7 +6,7 @@ This tutorial is about using other IDE (basically
 a software like eclipse) than eclipse, because if you do
 things will go way smoother.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Introduction
 
@@ -20,7 +20,7 @@ and sometimes you don't know exactly what you need to do
 but do it step by step and you will see that's easy
 (at least not that hard).
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Choose your IDE
 
@@ -41,7 +41,7 @@ trying VSCode for this one would be better. Then switch or
 try IntelliJ for others. 
 But just in case, [here is your tutorial](idea.md).
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Here some tips
 
