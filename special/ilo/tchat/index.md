@@ -2,25 +2,27 @@
 
 [Go back](..)
 
-First the TP is in two parts
+First, the TP is in two parts
 
 * simply answer some question (but **don't code 
   any todo**)
-* then wait for JavaFX project, and code it. When you
-will have to test with a server, run the server
-  from the previous TP (nothing to do aside running)
+* then wait for the JavaFX project, and code it. When you
+  will have to test with a server, run the server
+  from the previous TP (nothing to do aside from running)
   and that's it.
   
 Materials
 
 * [Source Part1](download:sources/TPChat.zip)
 * [Source Part2](download:sources/ChatClientJavaFX.zip)
-  
+
+<hr class="sr">
+
 ## Choose your IDE
 
-I highly recommends using **IntelliJ** (easy to learn) for this one,
-since that's may be your first time with JavaFX and
-IntelliJ have a great support for JavaFX. You can solve
+I highly recommend using **IntelliJ** (easy to learn) for this one,
+since that's maybe your first time with JavaFX and
+IntelliJ has great support for JavaFX. You can solve
 in less than 30 seconds problems like
 ``Can't load FXML``.
 
@@ -28,13 +30,14 @@ in less than 30 seconds problems like
 * [IntelliJ IDEA Setup](ide/idea.md)
 * [VSCode Setup](ide/vsc.md)
 
+<hr class="sl">
+
 ## Before starting, Some errors
 
-``Graphic pipeline error``
+``Graphics pipeline error``
 
 <blockquote class="spoiler">
-That's simply means that the one compiling didn't found the OS
-specific files for javafx. Check that in your lib folder or JavaFX folder
+That simply means that the one compiling didn't found the OS-specific files for JavaFX. Check that in your lib folder or JavaFX folder
 that you got some jar like <code>javafx-base-16-win</code>
 on Windows.
 </blockquote>
@@ -61,9 +64,9 @@ class)
 </li>
 </ul>
 
-If you see a enormous path for your fxml, don't go check out this file, that's just
-your IDE who is creating a copy. If the path is wrong then you will got a NullPointerException
-since getResource will fail.
+If you see a long, weird, path for your fxml, don't go check out this file,
+that's just your IDE who is creating a copy. If the path is wrong then you will
+get a NullPointerException since getResource will fail.
 </blockquote>
 
 ``Controller is null``
@@ -86,10 +89,12 @@ Seems like a server or another program is already using this port. Either found 
 the program argument <code>--port a_new_port</code>. Be sure that both your server and client have the same value.
 </blockquote>
 
+<hr class="sr">
+
 ## How you should process
 
 You will use SceneBuilder to create your .fxml files. Inside simply drag components and create the interface
-that you have to. Please take note of theses steps
+that you have to. Please take note of these steps
 
 * Create ``ClientFrame.fxml``
 * launcher, test
@@ -99,21 +104,25 @@ that you have to. Please take note of theses steps
 
 ## Layout
 
-Please take note of ``BorderPane`` component. That's a component divided in north, south, east,
-west and center. You can use it to put one component at the top, one in the middle and one at the bottom. Then you have
+Use the ``BorderPane`` component! That's a component divided into north, south,
+east, west, and center. You can use it to put one component at the top, one in 
+the middle and, one at the bottom. Then you have
 some components like a vbox (one component per line), hbox (one per column), toolbar, menubar, ... You can even use a
 ``BorderPane`` inside a ``BorderPane``.
 
 ## Icons
 
-Simply drag and drop the icons from your icons folder to the application. Buttons can have a text + icon (+ tooltip =
-a component with text shown when mouse stay on this button a.k.a. hover) but by default we only want to see the icon
+Simply drag and drop the icons from your icons folder to the application. Buttons
+can have a text + icon (+ tooltip =
+a component with text shown when mouse stay on this button a.k.a. hover) but by 
+default, we only want to see the icon
 so go to ``properties`` and set `Content display` to `GRAPHIC_ONLY`.
 
 ## Spacing
 
-You need to set the label (for the server name) at the right. The teacher is recommending to create an empty
-HBox then go to the fxml and add the attribute ``HBox.hgrow="ALWAYS"``.
+You need to set the label (for the server name) at the right. The teacher is 
+recommending creating an empty
+HBox then goes to the fxml and adds the attribute ``HBox.hgrow="ALWAYS"``.
 
 ```xml
 <HBox HBox.hgrow="ALWAYS" />
@@ -121,17 +130,22 @@ HBox then go to the fxml and add the attribute ``HBox.hgrow="ALWAYS"``.
 
 ## ID and Listeners
 
-Sometimes you will give IDs to some components. That means you need it in the ``Controller.java``, check the attributes
-with ``@FXML`` to know the type / attributes requiring an ID. On IntelliJ, if a @FXML attribute is linked then you will have
-some orange visual symbol on the left column so you easily know if you did something wring.
+Sometimes you will give IDs to some components. That means you need it in
+the ``Controller.java``, check the attributes
+with ``@FXML`` to know the type/attributes requiring an ID. On IntelliJ, 
+if a @FXML attribute is linked then you will have
+some orange visual symbol on the left column so you easily know if you did 
+something wrong.
 
-To set and ID or a listener, click on the component and go to code section. Listeners are methods of the controller generally
-starting with ``on...``. You can set in the code menu what method should be called if an event appends. `onAction` mean
+To set an ID or a listener, click on the component and go to the code section. 
+Listeners are methods of the controller generally
+starting with ``on...``. You can set in the code menu what method should be
+called if an event appends. `onAction` mean
 when a button is clicked/pressed if you didn't know.
 
 ## Context Menu
 
-If a popup shown when using left click. You must add one on the list view of users. But on Windows your scene builder
+It's a popup shown when using left-click. You must add one on the list view of users. But on Windows your scene builder
 may crash so you need to create the menu somewhere else then copy and paste the code inside your context menu directly
 in the fxml.
 
@@ -175,7 +189,7 @@ Then complete these
 
 ```java
 /*
- * DONE Create runner whith "this" as the MessageHandler,
+ * DONE Create runner with "this" as the MessageHandler,
  * commonRun (which needs to be already set) and current logger
  */
 messagesRunner = new ObjectMessagesRunner(this, commonRun, logger);
@@ -212,9 +226,10 @@ Hard
 And here is some help for `initialize`
 
 * you should not code it in one go, simply write a bit of it
-  * `#authorList` is `this.authorsObservableList`. You need to link an observable list with the view (usersListView). Then
-  if the list is changed, then the view will change.
-  * some methods are written in the subject !!!
+  * `#authorList` is `this.authorsObservableList`. You need to link an 
+    observable list with the view (usersListView). If the list is changed,
+    then the view will change.
+  * some methods that you could use are written inside the subject !!!
   * your class implements `implements ListChangeListener<String>` meaning you got a listener for the listview
     changes but you have to add it. The teacher gave this code ``usersListView.getSelectionModel().getSelectedItems().addListener(this);``.
   * `Set #graphicsOnlyMenuItem to true` : set selected
@@ -226,9 +241,11 @@ And here is some help for `initialize`
 As an example for one TODO, onSendAction an easy one can be understood as
 
 ```java
-// "replace with send message contained in #messageText to server and clears #messageText"
-// ça demande deux choses, donc ce genre de découpage
-// - send message ... => find how to send a message
+// "replace with send message contained in #messageText to server and clears 
+// #messageText"
+//
+// You are tasked to do 2 things but you need to think about 4 things
+// - send a message ... => find how to send a message
 // - contained in #messageText => get text from an input field
 // - send a message, meaning the string that you got from the input
 // - clears #messageText => clean input field
