@@ -174,7 +174,7 @@ System.out.println("\u00E9"); // print é
 
 ## Expert
 
-**Note**: note that I'm not an export so this section
+**Note**: note that I'm not an expert so this section
 is about some notes about the things that I'm discovering
 while practicing.
 
