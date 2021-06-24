@@ -19,41 +19,13 @@ we got 20/20.
 
 ## Lot_a
 
-I think that you should take a bit a time thinking about
-the project before digging into the code.
+In the ``lot_a``, you need to write into headers
+files
 
-Read the subject once, then try to note what 
-your understood. Read the subject again when you got a hint
-that you may have skipped something.
-
-Read the subject again, and this time, try drawing what
-the games would look like. By know you should a at least
-a little understanding of what you need to create.
-
-Then gather your teammates and create a UML Diagram,
-or anything you want summarizing
-
-* what are the types
-* what are the functions
-
-You may use the subject to find that out but making
-a great ``lot_a`` will be asking you to simulate your
-functions like this methods is calling this one with
-these parameters... Check if the types are good, like
-
-* should you use a pointer here?
-* can this value be a constant?
-* be careful of return types, sometimes you will 
-  return a value but a value **can't be null**
-  
-Then write your function, your main, ... You may add
-some ``.h``, or request the teacher if you can use
-english names, ... COMMENT YOUR CODE (you may use
-[doxygen](../../tools/doxygen/index.md)).
-
-Do not write the content of your structure (you should
-think about it, we did, but the teacher want you to
-make a declaration like this)
+* functions
+* type declarations but not their actual
+content
+* document everything (using Doxygen if you want to be great)
 
 ```c
 // you will declare Map later, for instance in a .c
@@ -64,18 +36,46 @@ typedef struct Map_S Map;
 Map *map_create(Difficulty dif);
 ```
 
-**Recap**
+The hardest thing is planning what you will code
+like
 
-* think about types (records with their properties)
-  but you will only put the record declaration in the
-  ``.h``
-* think about methods, like their name (try making sure
+* returns value or pointer? (remember that
+  a value **can't** be NULL)
+* argument should be const? (value like int, ...
+  are already const)
+* should your argument be a pointer or not? (
+  are you going to modify the
+  address (pointer) or only the content
+  (not)?)
+
+Our notes
+
+* read the subject once, make some notes about the rules
+* read the subject again, try making a graphical version
+  to understand better what kind of things you are
+  going to create an manipulate like the properties
+  of your types
+* **COMMENT YOUR CODE** (you may use
+  [doxygen](../../tools/doxygen/index.md))
+* think about the names (try making sure
   everyone will use the same kind of names so we don't
   have a map_create and a staff_new... or that we don't
   add newStaff and create_map...)
-* think about return types (don't forget a value
-  can't be NULL)
-* comment your code, using Doxygen would be a good idea
+  * we used the ``file_name_aFunctionName``
+  kind of syntax like in ``map.h`` we would
+    have ``ErrorCode map_endTurn(Map *m);``
+  * note that we are returning Codes instead
+  of booleans so that we can log/translate
+    easily the errors
 
-Once your team knows what they need to do, everything
-will go smoother.
+You should think by now about some things like
+
+* will you translate your game?
+* will you have different graphical
+  interface? (terminal one and graphical one
+  for instance)
+  * if you do, try to think if you should
+  add some methods like ``interface_init``
+  or ``interface_close`` that may be used
+  by graphical engines to set up themselves
+* ...
