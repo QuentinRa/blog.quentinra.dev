@@ -9,7 +9,7 @@
     {
       "tag": "java",
       "name": "Java",
-      "desc": "Learn java and Oriented-object programming. We also dig into JavaFX, Swing and AWT, Libgdx and lwjgl3.",
+      "desc": "Learn java and Oriented-object programming. We also dig into JavaFX, Swing, AWT, Libgdx, and lwjgl3.",
       "icon": "<i class=\"bi bi-window\"></i>"
     },
     {
