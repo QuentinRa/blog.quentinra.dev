@@ -95,17 +95,17 @@ You should think by now about some things like
   tests of the interface
 * And note some missing types like if a are using
   an array of 4 cases a lot of times, then maybe
-  that's a type etc.
+  that's a type, etc.
   
-You may use NCurse to make your interface, it's
-quite simple to use and should improve your grade
+You may use NCurse to make your interface. It's
+quite easy to use and should improve your grade
 
 * course [here](../../info/c#using-ncurses)
 * if a teacher is complaining (that should
   not be the case since Dimitri WATEL
   allowed it)
   * ncurses is available on the ENSIIE computers
-  * he only have to ssh and compile/run your code
+  * he only has to ssh and compile/run your code
   * or he may use docker
   
 You can do something like that quite easily
