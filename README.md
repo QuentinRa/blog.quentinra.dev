@@ -13,7 +13,8 @@ others sail easier in the courses they struggled with.
 Since we are still learning, we could have made mistakes 
 so please kindly correct or report them. Thanks!
 
-Provided by `Legendary Games Studio`.
+Provided by `Legendary Games Studio`,
+[memorize@lgs-games.com](mailto:memorize@lgs-games.com).
 
 ## How to contribute
 
