@@ -23,6 +23,12 @@
       "name": "Maths for AST",
       "desc": "Some feedback about ENSIIE maths courses for DUT/BUT/...",
       "icon": "<i class=\"bi bi-umbrella\"></i>"
+    },
+    {
+      "tag": "it",
+      "name": "IT Project",
+      "desc": "Some feedback about ENSIIE it project (S2).",
+      "icon": "<i class=\"bi bi-umbrella\"></i>"
     }
   ]
 }
