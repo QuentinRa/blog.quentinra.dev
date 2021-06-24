@@ -78,4 +78,36 @@ You should think by now about some things like
   add some methods like ``interface_init``
   or ``interface_close`` that may be used
   by graphical engines to set up themselves
+* will you add some new functionalities later?
+  if yes, then make your
+  main so you won't have to
+  change it.
 * ...
+
+<hr class="sl">
+
+## Lot_b
+
+* const.h will **all constants** and **const.c**
+  will all global constants like an array of
+  xxx (staffs/machines/...).
+* don't forget to write using sentences
+  tests of the interface
+* And note some missing types like if a are using
+  an array of 4 cases a lot of times, then maybe
+  that's a type etc.
+  
+You may use NCurse to make your interface, it's
+quite simple to use and should improve your grade
+
+* course [here](../../info/c#using-ncurses)
+* if a teacher is complaining (that should
+  not be the case since Dimitri WATEL
+  allowed it)
+  * ncurses is available on the ENSIIE computers
+  * he only have to ssh and compile/run your code
+  * or he may use docker
+  
+You can do something like that quite easily
+
+![ncurses](ncurses.png)
