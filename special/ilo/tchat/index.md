@@ -102,7 +102,9 @@ that you have to. Please take note of these steps
 * Test with the server
 * Write the rest of the Controller
 
-## Layout
+<hr class="sl">
+
+### Layout
 
 Use the ``BorderPane`` component! That's a component divided into north, south,
 east, west, and center. You can use it to put one component at the top, one in 
@@ -110,7 +112,7 @@ the middle and, one at the bottom. Then you have
 some components like a vbox (one component per line), hbox (one per column), toolbar, menubar, ... You can even use a
 ``BorderPane`` inside a ``BorderPane``.
 
-## Icons
+### Icons
 
 Simply drag and drop the icons from your icons folder to the application. Buttons
 can have a text + icon (+ tooltip =
@@ -118,7 +120,7 @@ a component with text shown when mouse stay on this button a.k.a. hover) but by
 default, we only want to see the icon
 so go to ``properties`` and set `Content display` to `GRAPHIC_ONLY`.
 
-## Spacing
+### Spacing
 
 You need to set the label (for the server name) at the right. The teacher is 
 recommending creating an empty
@@ -128,7 +130,7 @@ HBox then goes to the fxml and adds the attribute ``HBox.hgrow="ALWAYS"``.
 <HBox HBox.hgrow="ALWAYS" />
 ```
 
-## ID and Listeners
+### ID and Listeners
 
 Sometimes you will give IDs to some components. That means you need it in
 the ``Controller.java``, check the attributes
@@ -143,13 +145,13 @@ starting with ``on...``. You can set in the code menu what method should be
 called if an event appends. `onAction` mean
 when a button is clicked/pressed if you didn't know.
 
-## Context Menu
+### Context Menu
 
 It's a popup shown when using left-click. You must add one on the list view of users. But on Windows your scene builder
 may crash so you need to create the menu somewhere else then copy and paste the code inside your context menu directly
 in the fxml.
 
-## Tooltip
+### Tooltip
 
 If you can't add tooltips, check it looks like that
 
@@ -164,7 +166,9 @@ If you can't add tooltips, check it looks like that
 </tooltip></Button>
 ```
 
-## Coding the main (the basic)
+<hr class="sr">
+
+## Starting
 
 In Main.java, de-comment the code and don't forget this easy todo.
 All the values are given for the setters and the getter is done for you.
@@ -194,6 +198,8 @@ Then complete these
  */
 messagesRunner = new ObjectMessagesRunner(this, commonRun, logger);
 ```
+
+<hr class="sl">
 
 ## Then what's my ranking
 
