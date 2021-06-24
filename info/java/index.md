@@ -178,10 +178,11 @@ System.out.println("\u00E9"); // print é
 is about some notes about the things that I'm discovering
 while practicing.
 
-Nowadays, javadoc projects are what we call ``modules``.
-You will create a module file and require other modules
-that may be used for your project. It's a higher encapsulation
-level than before.
+Nowadays, Java projects are encapsulated in what we
+call ``modules``.
+You will create a module-info file and require other modules
+that may be used for your project. It's a higher 
+encapsulation level than before.
 
 * [Modules](expert/modules.md)
 
