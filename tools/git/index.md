@@ -173,6 +173,14 @@ code
 * <https://about.codecov.io/>
 * <https://weblate.org/fr/> (translation)
 
+You may also check this to create a profile card
+
+* <https://github.com/anuraghazra/github-readme-stats>
+
+![QuentinRa's GitHub stats](https://github-readme-stats.vercel.app/api?username=QuentinRa&show_icons=true&theme=radical)
+
+And you can even find things like this
+
 ![](https://readme-jokes.vercel.app/api)
 
 <hr class="sr">
