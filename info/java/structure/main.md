@@ -8,9 +8,9 @@ We are going to print "Hello, World!". But first **note** this
 * the name of a file like ``Name.java`` means that the (public)
   class inside is named ``Name``.
 * you **must** use the ``CamelCase`` notation
-  (no spaces, use an upper case: Accounting table becomes
-  the class AccountingTable)
-  
+  (no spaces, use an upper case: ``Accounting table`` becomes
+  the class ``AccountingTable``)
+
 So we will create a class ``Main`` (and the file name **must**
 be according to above **Main.java**).
 
