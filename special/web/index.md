@@ -58,3 +58,32 @@ using good practices. You will be asked to check that
 your website is good for W3.
 
 * [Validator](parts/validator.md)
+
+<hr class="sr">
+
+## Tips
+
+Use an IDE to code, I recommend PHPStorm since you
+could configure easily to work directly on the server
+(you may check a video or the section PHPStorm in
+[Jetbrains](../../tools/jetbrains/index.md) course).
+
+* try making a mockup of your website, like drawing
+your website pages (you may use your hand and we don't
+  need something beautiful)
+  * using this mockup
+  * write how you move from a page to another
+    (data submitted? ...)
+  * this will help to organize your work and writing
+    your specifications
+  * you may check [HMI](../../proj/hmi/index.md) course
+
+* you should do some tests, this is quite easy to do.
+  You should use them to test your code like testing your
+  login method with all sort of input (field missing,
+  invalid input, too long/short, wrong type, ...)
+  
+* use MVC. You will learn faster if you splitting your 
+  code into section (like HTML/VIEW SQL/DB and the brain
+  interacting with the two) because your code will be more
+  readable

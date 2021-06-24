@@ -52,7 +52,7 @@ Next update, 30/06/2021.
 * [ ] add go back to #titleID
 * [ ] replace all div by hr
 * [ ] make something for maths (too tiring/hard to use)
-* [ ] remove unneeded references
+* [x] remove unneeded references
 
 **Next content**
 
@@ -66,7 +66,7 @@ Next update, 30/06/2021.
 * [ ] Complete NUMERICAL-ANALYSIS course (0/2)
 * [ ] Write better code course
 * [ ] Micro economy course
-* [ ] Web project Structure and add introduction
+* [x] Web project Structure and add introduction
 * [ ] IT project review
 * [ ] Logic course
 
@@ -77,7 +77,7 @@ Next update, 30/06/2021.
   for agile-scrum
 * [ ] Java databases
 * [ ] PHP Tests
-* [ ] OCaml for Windows
+* [x] OCaml for Windows
 * [ ] Vim highlight
 
 **Exercises**
@@ -95,7 +95,7 @@ Next update, 30/06/2021.
 * [ ] C
 * [ ] Java
 * [ ] Maths/*
-* [ ] Descriptions
+* [x] Descriptions
 * [ ] Translate ``PROJECTS`` vocabulary
 
 ## Others
