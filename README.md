@@ -49,6 +49,9 @@ Next update, 30/06/2021.
 * [ ] add create course
 * [x] add check boxes
 * [ ] add go back to #titleID
+* [ ] replace all div by hr
+* [ ] make something for maths (too tiring/hard to use)
+* [ ] remove unneeded references
 
 **Next content**
 
