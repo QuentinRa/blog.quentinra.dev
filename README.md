@@ -67,7 +67,7 @@ Next update, 30/06/2021.
 * [ ] Write better code course
 * [ ] Micro economy course
 * [x] Web project Structure and add introduction
-* [ ] IT project review
+* [x] IT project review
 * [ ] Logic course
 
 **Update content**
