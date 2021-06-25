@@ -29,6 +29,12 @@
       "name": "First-order logic",
       "desc": "Learn about first-order logic, proofs, demonstration, usages with examples using OCaml language.",
       "icon": "<i class=\"bi bi-list-stars\"></i>"
+    },
+    {
+      "tag": "macroeconomics",
+      "name": "Macroeconomics",
+      "desc": "Try to understand what's make the economy of a country (or someone operating on a wide scale).",
+      "icon": "<i class=\"bi bi-building\"></i>"
     }
   ]
 }

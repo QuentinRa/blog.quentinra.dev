@@ -27,6 +27,7 @@ Just some side note, since I still haven't read them but I would label this
 future reference as "god tier" since it seems the work is here is really
 good <https://ocamlverse.github.io/>. These may also be work looking
 into
+* <https://ocaml.org/manual/index.html#>
 * <https://github.com/pfitaxel/learn-ocaml/tree/learn-ocaml-editor>
 * and <https://www.cs.bham.ac.uk/~axj/pub/papers/lambda-calculus.pdf>
 * and <https://dev.realworldocaml.org/index.html>

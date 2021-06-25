@@ -67,6 +67,12 @@
       "name": "Probabilities",
       "desc": "...",
       "icon": "<i class=\"bi bi-award\"></i>"
+    },
+    {
+      "tag": "microeconomics",
+      "name": "Microeconomics",
+      "desc": "Try to understand what's make the economy of a person (or someone that's not operating on a wide scale).",
+      "icon": "<i class=\"bi bi-calculator\"></i>"
     }
   ]
 }
