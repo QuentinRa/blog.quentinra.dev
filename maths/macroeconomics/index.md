@@ -75,6 +75,14 @@ core concepts of the macroeconomic.
 * [Unemployment](theory/unemployment.md) (``Chômage`` in French, `u = U/L` / `L = U + N`)
 * [Inflation](theory/inflation.md) (price increase / decrease)
 
+These variables are in relation 2 by 2
+
+* **Okun's law**: GDP and Unemployment
+* **Phillips's law**: Unemployment and inflation
+* **Aggregate demand relation**: GDP and inflation
+
+Then do some exercises [here](exercises/key-variables.md).
+
 <hr class="sr">
 
 ## Sources
