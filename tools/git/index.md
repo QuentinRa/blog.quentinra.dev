@@ -168,10 +168,11 @@ and get some badges
 You can check websites like these for reviews of your
 code
 
-* <https://www.codefactor.io/>
+* <https://www.codefactor.io/> (analysis)
 * <https://www.codetriage.com/>
-* <https://about.codecov.io/>
+* <https://about.codecov.io/> (code coverage)
 * <https://weblate.org/fr/> (translation)
+* <https://snyk.io/> (vulnerabilities)
 
 You may also check this to create a profile card
 
