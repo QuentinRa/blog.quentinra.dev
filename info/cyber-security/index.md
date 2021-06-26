@@ -40,7 +40,6 @@ software to look for breaches.
     * some companies are sharing the malware used
     to attack them to help other defend themselves
 
-
 <hr class="sl">
 
 ## Where can I learn
@@ -65,3 +64,49 @@ to look a what kind of breaches got reported like
 You may check <https://nvd.nist.gov/general> 
 or [nvd search](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&search_type=all)
 if you are looking for vulnerabilities.
+
+<hr class="sr">
+
+## General vulnerabilities
+
+* Spoofing (`Fraude au président`)
+
+Someone will usurps your CEO identity and will write
+a mail asking you to secretly and urgently send him
+money. It will spy on your messages with the CEO
+and make it like it's really him behind the message
+and because it's urgent, some gave in.
+
+* Deceptive security
+
+You will use lures to bait the attacking and earn
+more time.
+
+<hr class="sl">
+
+## Web vulnerabilities
+
+Cookies mustn't be used, and you should not trust anything
+that's stored in the client browser.
+
+* [Cookies and Sessions](web/cookies.md)
+
+Beware of file upload, someone might send some script
+one your server and may be able to run it.
+
+* [FileUpload and ReverseScript](web/upload.md)
+
+<hr class="sr">
+
+## Sources
+
+* <https://tryhackme.com/>
+* <https://tryhackme.com/path/outline/beginner>
+* <https://www.cybersecurityeducation.org/careers/incident-responder/>
+* <https://www.tutorialspoint.com/splunk/index.htm>
+* <https://www.hackerone.com/>
+* <https://www.security-sleuth.com/sleuth-blog/2017/1/3/sqlmap-cheat-sheet>
+* <https://github.com/payloadbox/sql-injection-payload-list>
+* <https://www.youtube.com/watch?v=Trb1c2HqCA4&ab_channel=Capgemini>
+* <https://www.youtube.com/watch?v=ih0SC-dN6MU&ab_channel=TechBeacon>* [EDR](https://www.cisco.com/c/en/us/products/security/endpoint-security/what-is-endpoint-detection-response-edr.html)
+* [EDR](https://www.mcafee.com/enterprise/en-us/security-awareness/endpoint/what-is-endpoint-detection-and-response.html)
