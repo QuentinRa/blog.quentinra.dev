@@ -4,19 +4,13 @@ A [macroeconomist](https://en.wikipedia.org/wiki/Macroeconomics)
 is a person observing the decision-making
 of big actors like a country. As a macroeconomist,
 you will observe these economics aggregates
-
-* the PIB
-* investments
-* spending/purchases (`consommation` in French)
-* growth
-* prices
-
-We will be observing 4 
+(PIB, investments, growth, prices, ...)
+for 4 
 [rational agents](https://en.wikipedia.org/wiki/Rational_agent) 
-meaning that they are spending everything in order to 
-be happy/satisfied.
+(meaning that they are spending everything in order to 
+be happy/satisfied).
 
-* household (`méngages` in French)
+* households (`ménages` in French)
 * companies
 * state (France for us)
 * the rest of the World (not considered in this course)
@@ -38,7 +32,8 @@ the supply (``offre``) and demand.
 It's like in a marketplace, if no one is buying something
 then the price would go down (since there is more
 supply than demand) but if a lot of persons are buying
-something then the price will skyrocket.
+something then the price will skyrocket unless the supply
+increase.
 
 An agent will take decisions on
 
