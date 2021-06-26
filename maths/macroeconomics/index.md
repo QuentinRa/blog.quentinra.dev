@@ -43,6 +43,40 @@ An agent will take decisions on
 
 <hr class="sl">
 
+## How we will work
+
+We will introduce some **variables** in order to easily
+represent the economy. Most of the variables values will
+be given in the exercise data. We have
+
+* **exogenous** variables: usually given, calculated with external data
+* **endogenous** variables: calculated using exogenous variables
+  
+In French, we say `` exogènes`` and `endogènes`.
+
+We call **model** the representation of a economy
+using variables. The inconvenient of a model is that
+we won't take into account psychological problems,
+history, ...
+
+* **short term**: prices are not changing, we don't see
+  the impact of changing a variable value
+* **long term**: you need to evaluate adjustments to
+    correct the consequences of a new policy
+
+<hr class="sl">
+
+## GDP, unemployment, inflation
+
+The GDP, the unemployment and the inflation are three
+core concepts of the macroeconomic.
+
+* [GDP](theory/gdp.md) (``PIB`` in French, variable `Yt`)
+* [Unemployment](theory/unemployment.md) (``Chômage`` in French, `u = U/L` / `L = U + N`)
+* [Inflation](theory/inflation.md) (price increase / decrease)
+
+<hr class="sr">
+
 ## Sources
 
 * <https://accountlearning.com/macro-economic-aggregates-and-policies/>
