@@ -35,6 +35,12 @@
       "name": "Tests",
       "desc": "How to write tests and for what. Cover tools like JUnit, CUnit, PHPUnit, ...",
       "icon": "<i class=\"bi bi-cup\"></i>"
+    },
+    {
+      "tag": "guidelines",
+      "name": "Code guidelines",
+      "desc": "What are the best practices when writing code.",
+      "icon": "<i class=\"bi bi-award\"></i>"
     }
   ]
 }
