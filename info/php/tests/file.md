@@ -4,7 +4,7 @@ Here is an example of a test file. You don't need
 to create setup/tearDown methods if you won't use
 them.
 
-A test method must starts with ``test``.
+A test method name must starts with ``test``.
 
 ```php
 <?php declare(strict_types=1);
