@@ -39,8 +39,14 @@
     {
       "tag": "guidelines",
       "name": "Code guidelines",
-      "desc": "What are the best practices when writing code.",
+      "desc": "What are the best practices when writing code?",
       "icon": "<i class=\"bi bi-award\"></i>"
+    },
+    {
+      "tag": "extreme-Programming",
+      "name": "extreme dev.",
+      "desc": "Learn more about methods like model-driven dev...",
+      "icon": null
     }
   ]
 }
