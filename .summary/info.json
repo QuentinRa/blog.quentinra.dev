@@ -41,6 +41,12 @@
       "name": "Assembly",
       "desc": "Introduction to assembly, ARM to be precise.",
       "icon": "<i class=\"bi bi-sim\"></i>"
+    },
+    {
+      "tag": "cyber-security",
+      "name": "Cyber security",
+      "desc": "What we know about cyber security.",
+      "icon": "<i class=\"bi bi-shield-shaded\"></i>"
     }
   ]
 }

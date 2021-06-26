@@ -25,12 +25,6 @@
       "icon": "<i class=\"bi bi-wifi\"></i>"
     },
     {
-      "tag": "cyber-security",
-      "name": "Cyber security",
-      "desc": "What we know about cyber security.",
-      "icon": "<i class=\"bi bi-shield-shaded\"></i>"
-    },
-    {
       "tag": "sql",
       "name": "SQL",
       "desc": "Course about SQL, PL/SQL and PGSQL. You will also learn a bit about NoSQL Database with Cypher.",

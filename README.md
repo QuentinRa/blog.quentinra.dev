@@ -64,8 +64,11 @@ Next update, 30/06/2021.
 * [ ] Complete R course
 * [ ] Complete Optimization course (0/3)
 * [ ] Complete NUMERICAL-ANALYSIS course (0/2)
+* [ ] Graphs course
+* [ ] First-order logic course
+* [ ] Cyber security course
 * [ ] Write better code course
-* [ ] Micro economy course
+* [ ] Macroeconomic course
 * [x] Web project Structure and add introduction
 * [x] IT project review
 * [ ] Logic course
@@ -78,7 +81,7 @@ Next update, 30/06/2021.
 * [ ] Java databases
 * [ ] PHP Tests
 * [x] OCaml for Windows
-* [ ] Vim highlight
+* [x] Vim highlight
 
 **Exercises**
 
@@ -88,13 +91,21 @@ Next update, 30/06/2021.
 * [ ] ILO MCQs
 * [ ] OCaml MCQs
 * [ ] Assembly
+* [ ] Macroeconomic
 
 **Typos**
 
 * [x] Assembly
 * [ ] C
 * [ ] Java
-* [ ] Maths/*
+* [ ] Optimization
+* [ ] R
+* [ ] Statistics
+* [ ] Numerical analysis
+* [ ] First-order logic
+* [ ] Macroeconomic
+* [ ] UML
+* [ ] Cyber security
 * [x] Descriptions
 * [ ] Translate ``PROJECTS`` vocabulary
 
