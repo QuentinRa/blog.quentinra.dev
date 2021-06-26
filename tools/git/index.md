@@ -173,6 +173,8 @@ code
 * <https://about.codecov.io/> (code coverage)
 * <https://weblate.org/fr/> (translation)
 * <https://snyk.io/> (vulnerabilities)
+* <https://www.codacy.com/>
+* <https://lgtm.com/>
 
 You may also check this to create a profile card
 
