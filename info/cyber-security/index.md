@@ -96,6 +96,14 @@ one your server and may be able to run it.
 
 * [FileUpload and ReverseScript](web/upload.md)
 
+When using URLs like``profile/5``, the user will
+try to replace ``5`` by another value. You should remember
+to check that he can do that for this page. You can
+use software to automate this, but this time for forms
+like a login one.
+
+* [Login](web/login.md)
+
 <hr class="sr">
 
 ## Sources
