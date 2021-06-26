@@ -233,6 +233,32 @@ Notes in PHP8
 
 <div class="sl"></div>
 
+## Tests
+
+Following the [tests](../../proj/tests/index.md) course,
+you can write some tests in PHP using ``phpunit``.
+
+You can install it using composer 
+``composer require --dev phpunit/phpunit ^9.5``
+but you may check the 
+[documentation](https://phpunit.readthedocs.io/en/9.5/installation.html#composer)
+if you are new to that.
+
+I'm using PHPStorm to compile and run my tests, but
+maybe you could do that ``phpunit test_file.php``
+using the command-line.
+
+* [test file](tests/file.md)
+* [assertions](tests/assertions.md)
+
+You may also check
+
+* [testing-php-errors-warnings-and-notices](https://phpunit.readthedocs.io/en/9.5/writing-tests-for-phpunit.html#testing-php-errors-warnings-and-notices)
+* [assertions](https://phpunit.readthedocs.io/en/9.5/assertions.html)
+* [annotations](https://phpunit.readthedocs.io/en/9.5/annotations.html)
+
+<div class="sr"></div>
+
 ## Sources
 
 * <https://www.javatpoint.com/get-vs-post>

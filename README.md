@@ -41,8 +41,6 @@ how you should do it.
 
 ## TODO List
 
-Next update, 30/06/2021.
-
 **Website**
 
 * [x] Search bar
@@ -69,8 +67,6 @@ Next update, 30/06/2021.
 * [ ] Cyber security course
 * [ ] Write better code course
 * [ ] Macroeconomic course
-* [x] Web project Structure and add introduction
-* [x] IT project review
 * [ ] Logic course
 
 **Update content**
@@ -79,9 +75,6 @@ Next update, 30/06/2021.
 * [ ] Check out this material <https://github.com/dlu02/projet-pima-s3-nasa>
   for agile-scrum
 * [ ] Java databases
-* [ ] PHP Tests
-* [x] OCaml for Windows
-* [x] Vim highlight
 
 **Exercises**
 
