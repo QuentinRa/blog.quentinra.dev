@@ -49,10 +49,53 @@ to evaluate and compare the inflation rate.
 4. Calculate the change in GDP price deflator
 between 2000 and 2001.
 
-
 <blockquote class="spoiler">
-1. In 2000 we have <span class="maths">
-GDP(2000)=10*2000+4*1000 = 24000</span> and 
+<p><b>Question1</b></p>
+ In 2000 we have <span class="mathjax_process">
+\( GDP(2000)=10*2000+4*1000 = 24000 \)</span> and 
 in 2001
-<span class="maths">GDP(2001)=10*2000+4*1000 = 24000</span>
+<span class="mathjax_process">
+\( GDP(2001)=12*3000+6*500 = 39000 \)</span>
+<br>
+<p><b>Question2</b></p>
+<ul>
+   <li class="mathjax_process">
+   \( GDP(2000,2000)=10*2000+4*1000 = 24000 \)</li>
+   <li class="mathjax_process">
+   \( GDP(2001,2000)= 12*2000+6*1000 = 30000 \)</li>
+   <li class="mathjax_process">
+   \( GDP(2000,2001) = 10*3000+4*500 = 32000 \)</li>
+   <li class="mathjax_process">
+   \( GDP(2001,2001) = 12*3000+6*500 = 39000 \)</li>   
+</ul>
+<br>
+<p><b>Question3</b></p>
+<ul>
+   <li class="mathjax_process">
+    Growth rate (nominal)
+   \( \frac{39000-24000}{24000} = 0.625 \)</li>
+    <li class="mathjax_process">
+    Growth rate (using 2000)
+   \( \frac{30000-24000}{24000} = 0.25 \)</li>
+    <li class="mathjax_process">
+    Growth rate (using 2001)
+   \( \frac{39000-32000}{32000} = 0.21875 \)</li>
+</ul>
+<br>
+<p><b>Question3</b></p>
+<ul>
+   <li class="mathjax_process">
+    \( D(base=2000, 2000) = 1 \)</li>
+   <li class="mathjax_process">
+    \( D(base=2000, 2001) = 39000/30000 = 1.3 \)</li>
+   <li class="mathjax_process">
+    \( D(base=2001, 2000) = 24000/32000 = 0.75 \)</li>
+   <li class="mathjax_process">
+    \( D(base=2001, 2001) = 1 \)</li>
+</ul>
+As a remember, we did 
+<span class="mathjax_process">\( D(base\_year, year)= 
+\frac{PIB_{nominal}(year)}{PIB_{real}(base\_year, year)}
+\)
+</span>
 </blockquote>
