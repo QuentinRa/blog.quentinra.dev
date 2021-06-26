@@ -16,7 +16,7 @@ We will differentiate two GDP
 * Real GDP (`PIB réel/à prix constant`): price
   of a current year (fixed for all)
   multiplied by the quantity of the year
-* Real GDP (`PIB réel/à prix constant`): price
+* Nominal GDP (`PIB nominal/à prix courant`): price
   of the current year multiplied by the quantity
 
 <div>The <b>growth</b> using since "year x" (=base) n years
