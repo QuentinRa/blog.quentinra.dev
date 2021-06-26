@@ -19,7 +19,26 @@ We will differentiate two GDP
 * Nominal GDP (`PIB nominal/à prix courant`): price
   of the current year multiplied by the quantity
 
+<hr class="sl">
+
+**Growth rate**
+
 <div>The <b>growth</b> using since "year x" (=base) n years
 later would be
 <span>\[\frac{GDP_{year x+n}}{GDP_{year x}}\]</span>
+</div>
+
+<hr class="sl">
+
+**GDP price deflator**
+
+<div>
+This is a measure of the inflation (increase of
+prices).
+You can calculate the deflator using
+this formula <p class="mathjax_process">\[
+deflator(base\_year, year)=
+\frac{PIB_{nominal}(year)}{PIB_{real}(base\_year, year)}
+\]
+</p>
 </div>
