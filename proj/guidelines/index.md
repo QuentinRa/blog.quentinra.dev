@@ -70,6 +70,16 @@ your code, try explaining it to a rubber duck (
 ``canard en plastique`` in French). Sometimes, simply
 explaining your problem to "someone" helps you solving it.
 
+**Murphy's Law**: "Anything that can go wrong will go wrong.".
+Don't thing "xxx won't do that" and skip some code, because
+"xxx" will (calling a method using wrong parameters, ...).
+
+**Do The Simplest Thing That Could Possibly Work**:
+Simply write as little as
+possible or think about the easiest solution for your
+problem and code it. You may improve your code later
+through.
+
 <hr class="sl">
 
 ## SOLID
@@ -96,6 +106,7 @@ in Oriented-object. You should check [Wikipedia](https://en.wikipedia.org/wiki/S
 * <https://www.baeldung.com/solid-principles>
 * <https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa>
 * <https://suckless.org/>
+* <http://www.catb.org/~esr/writings/taoup/html/> 
 * <https://en.wikipedia.org/wiki/Rubber_duck_debugging>
 * <http://principles-wiki.net/principles:start>
 * <http://principles-wiki.net/start>
