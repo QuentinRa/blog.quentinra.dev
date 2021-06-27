@@ -2,16 +2,14 @@
 
 [Go back](..)
 
-<p>
 ...
-<code class="mathjax_process">\(X^{(n)}\)</code>,
-... 
-</p>
+
+**Steps**
 
 <p>
 The first value
 <code class="mathjax_process">\(X^{(0)}\)</code>
-most of the time but you may try with a
+is given most of the time but you may try with a
 vector of zeros if not.
 </p>
 
@@ -19,9 +17,9 @@ We will calculate the gradient, then
 
 <ul>
 <li><code class="mathjax_process">\(g^{(n)} =
-\nabla f(X^{(n)}) \)</code>
+\nabla f(X^{(n)}) \)</code></li>
 <li><code class="mathjax_process">\(d^{(0)} =
-- g^{(0)} \)</code>
+- g^{(0)} \)</code></li>
 <li><code class="mathjax_process">\(\lambda^{(n)} =
 - \frac{g^{(n)t} \, d^{(n)}}{d^{(n)t}\,A\, d^{(n)}}\)</code>.
 Note if you don't remember, that the little <code>t</code>
