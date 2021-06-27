@@ -43,14 +43,10 @@ how you should do it.
 
 **Website**
 
-* [x] Search bar
-* [x] Remade of home
-* [ ] add create course
-* [x] add check boxes
+* [ ] add create course page/button
 * [ ] add go back to #titleID
 * [ ] replace all div by hr
 * [ ] make something for maths (too tiring/hard to use)
-* [x] remove unneeded references
 
 **Next content**
 
@@ -102,7 +98,7 @@ how you should do it.
 * [ ] Macroeconomic
 * [ ] UML
 * [ ] Cyber security
-* [x] Descriptions
+* [ ] guidelines
 * [ ] Translate ``PROJECTS`` vocabulary
 
 ## Others
