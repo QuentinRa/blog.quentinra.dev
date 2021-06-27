@@ -65,7 +65,6 @@ how you should do it.
 * [ ] Graphs course
 * [ ] First-order logic course
 * [ ] Cyber security course
-* [ ] Write better code course
 * [ ] Macroeconomic course
 * [ ] extreme Programming
 * [ ] Logic course
@@ -77,6 +76,7 @@ how you should do it.
   for agile-scrum
 * [ ] Java databases
 * [ ] Optimisation, quadratic form?
+* [ ] Optimisation, <http://pgoutet.free.fr/td/maths3_optimisation_contrainte.pdf>
 * [ ] Optimisation, lagrange
 
 **Exercises**
