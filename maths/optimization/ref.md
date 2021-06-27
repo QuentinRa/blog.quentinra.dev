@@ -31,6 +31,7 @@ Courses
 In R
 
 * <https://www.is.uni-freiburg.de/resources/computational-economics/5_OptimizationR.pdf>
+* <https://www.kdnuggets.com/2018/05/optimization-using-r.html>
 
 Exercises
 
