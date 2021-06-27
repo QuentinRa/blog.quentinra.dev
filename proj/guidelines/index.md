@@ -72,6 +72,21 @@ explaining your problem to "someone" helps you solving it.
 
 <hr class="sl">
 
+## SOLID
+
+SOLID is an acronym for
+
+* **S (Single)** : Do one thing
+* **O (Open/Closed)** : use inheritance to modify a class
+* **L (Liskov substitution)**: variables of type A can be replaced by inheritors A
+* **I (Interfaces segregation)**: split big interface into a bunch of small ones
+* **D (Dependencies inversion)**: create layers using interfaces and abstract classes
+
+This is a bit more complicated and will require knowledge
+in Oriented-object. You should check [Wikipedia](https://en.wikipedia.org/wiki/SOLID).
+
+<hr class="sr">
+
 ## Sources
 
 * <https://en.wikipedia.org/wiki/SOLID>
