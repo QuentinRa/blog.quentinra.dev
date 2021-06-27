@@ -144,3 +144,16 @@ take the column with the biggest ``c``.
 **Stop**? When all the values in the last
 line (reduced costs) are **negatives**. The result
 is ``-R``.
+
+<hr class="sl">
+
+## 2-phases
+
+You will have to do 2 simplexes. You need to add
+slack variables (that I'm calling ``A`` this time)
+on each equation with a negative value. In your
+simplex table, the ``A`` variables are in the base
+and you need to remove them.
+
+Once you did remove them, then you can start using
+the table you got as the starting table.
