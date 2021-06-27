@@ -26,10 +26,14 @@ And our gradient would be
 \]
 </div>
 
+<hr class="sr">
+
 ## Hessian
 
 Following what you learned for the gradient, the **hessian** is the derivative
 of a gradient. We note it ``Hf`` if `f` is our function.
+
+<hr class="sl">
 
 ## Exercise
 
@@ -64,5 +68,4 @@ Then round 2, the hessian
 \[ Hf(x,y)=\begin{pmatrix}4&-2\\-2&2\end{pmatrix} \]
 I hope you took the time to do this easy one!
 </p>
-
 </blockquote>
