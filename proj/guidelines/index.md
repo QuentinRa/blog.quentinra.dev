@@ -30,3 +30,32 @@ Here some of my troughs before starting
     * your workload
     * the complexity of your code
     * the workload of the futures maintainers
+
+<hr class="sl">
+
+## Principles
+
+**Don’t repeat yourself (DRY)**: Do not copy-paste code,
+make a function. Otherwise you need to remember that you
+will have ``n`` places to patch if you found a bug,
+not worth. You should also use constants rather than
+writing again and again a value like ``"toto"`` (for
+instance) in the code.
+
+**you ain't gonna need it (YAGNI)**: don't write code
+unless you need it.
+
+**Keep it simple, stupid (KISS)**: simple code means
+less code, easier to debug, easier to modify so don't
+make things complicated.
+
+**Code For The Maintainer**: write your code like you
+will be the one to maintain it. It's hard to maintain
+some unreadable code, isn't it?
+
+<hr class="sr">
+
+## Sources
+
+* <http://principles-wiki.net/principles:start>
+* <http://principles-wiki.net/start>
