@@ -54,6 +54,9 @@ or you will have to do a constrained optimization method.
 
 * [Hessian/Gradient](uo/hessian.md)
 * [Using the gradient/hessian](uo/use-hessian.md)
+
+Other methods
+
 * [Least squares methods](uo/least-squares.md)
 * [Geometric programming](uo/geometric.md)
 

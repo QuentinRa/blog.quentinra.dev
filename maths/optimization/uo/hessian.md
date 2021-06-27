@@ -38,7 +38,7 @@ of a gradient. We note it ``Hf`` if `f` is our function.
 ## Exercise
 
 What's the gradient and the hessian
-of this function
+of this function?
 <p>
 \[
 f(x, y) = 2x^2 + y^2 − 2xy + 4x
