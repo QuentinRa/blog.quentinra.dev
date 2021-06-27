@@ -78,7 +78,51 @@ Here some constrained optimization methods.
 Here may not be the language that you would use to do
 optimization. Still here you have some examples.
 
-...
+```r
+function_to_optimize <- function(param) {
+  x <- param[1]
+  y <- param[2]
+  # evaluates
+  return(
+    2*x^2 + y^2 - 2 * x * y + 4 * x
+  )
+}
+
+# first value ("random")
+first <- c(0, 0)
+
+# optimize
+r <- optim(fn = function_to_optimize, par = first, hessian = TRUE)
+
+if (r$convergence > 0){
+  stop("can't optimize this function")
+} else {
+  cat("minimum:", r$value, "\n");
+  cat("hessian:", r$hessian, "\n");
+  cat("par:", r$par, "\n");
+}
+```
+
+> <pre class="mb-0">minimum: -4
+> hessian: (4, -2; -2, 2)
+> par: -2 -2</pre>
+> Note that this is the hessian we calculated a while
+> back.
+
+We can do some verifications
+
+```r
+library('numDeriv')
+# check the result, (-2,-2) is a critical point
+grad(func=function_to_optimize,x=c(-2, -2))
+# (0,0) : ok
+hessian(func=function_to_optimize,x=c(-2, -2))
+# (4, -2; -2, 2) : ok
+eigen(hessian(func=function_to_optimize,x=c(-2, -2)))$values
+# [1] 5.236068 0.763932
+# all positives so hessian definite positive
+# so the point is a minimum local (strict)
+```
 
 <div class="sl"></div>
 
