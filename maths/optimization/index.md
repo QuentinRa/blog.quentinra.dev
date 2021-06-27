@@ -13,7 +13,7 @@ So here you will have
 * optimization under constraints (constrained)
 * optimization in R
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## the problem
 
@@ -42,11 +42,7 @@ methods.
 * [Minimum (local)](points/minl.md)
 * [Minimum (global)](points/ming.md)
 
-[comment]: <> (* [Point Selle / saddle point]&#40;points/saddle.md&#41;)
-
-[comment]: <> (* [Critical point]&#40;points/critical.md&#41;)
-
-<div class="sr"></div>
+<hr class="sr">
 
 ## unconstrained optimization
 
@@ -61,7 +57,7 @@ or you will have to do a constrained optimization method.
 * [Least squares methods](uo/least-squares.md)
 * [Geometric programming](uo/geometric.md)
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## constrained optimization
 
@@ -71,7 +67,7 @@ Here some constrained optimization methods.
 * [Simplex](co/simplex.md)
 * [Lagrange](co/lagrange.md)
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## optimization : examples in R
 
@@ -124,7 +120,7 @@ eigen(hessian(func=function_to_optimize,x=c(-2, -2)))$values
 # so the point is a minimum local (strict)
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Sources
 
