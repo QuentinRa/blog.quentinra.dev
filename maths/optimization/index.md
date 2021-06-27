@@ -105,7 +105,7 @@ if (r$convergence > 0){
 > <pre class="mb-0">minimum: -4
 > hessian: (4, -2; -2, 2)
 > par: -2 -2</pre>
-> Note that this is the hessian we calculated a while
+> Note that this is the values we found a while
 > back.
 
 We can do some verifications
