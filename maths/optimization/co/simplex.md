@@ -13,7 +13,8 @@ you understand.
 You need to rewrite your constraints, you can only
 have equations (no inequalities).
 If you don't have an equation, you will have to introduce
-what we call **slack variables** (`variables artificielles/écart`
+what we call **slack variables** 
+(`variables artificielles/d'écart/de bruit`
 in French)
 
 * ``>`` (or equals): `-` slack variables
@@ -91,7 +92,7 @@ your variables in each equation.
             <td></td>
             <td></td>
             <td></td>
-            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(R=0\)</td>
         </tr>
     </tbody>
 </table>
@@ -99,3 +100,47 @@ your variables in each equation.
 The last line is the coefficient of each variable
 in the function **f**. And 0 is the result of the
 optimization since we haven't started yet.
+
+<hr class="sr">
+
+## Minimization
+
+If you are asked to minimize then
+
+<ul>
+<li> take the column with the smallest <code>c</code></li>
+<li> if this column only have negatives values
+    then ``end``</li>
+<li class="mathjax_process"> we want the row having the lowest ratio
+    \(S_i = b_i / a_{ij}\) so evaluate all the ratios
+    for your column
+    and find the row.</li>
+</ul>
+
+Now that you got your column and row, you will have to
+put ``1`` inside and 0 in all the others values of the
+diagonal. Since that's a matrix, simply use GAUSS.
+
+<div> Once you did, if set a <code>1</code> in
+<span class="mathjax_process">\(a_{11}\)</span>
+then replace
+<span class="mathjax_process">\(S_{1}\)</span>
+(i=1)
+in the <code>base</code> column
+by the variable in the first (j=1) column so X.
+</div>
+
+**Stop**? When all the values in the last
+line (reduced costs) are **positives**. The result
+is ``-R``.
+
+<hr class="sl">
+
+## Maximization
+
+Same a minimization but take the
+take the column with the biggest ``c``.
+
+**Stop**? When all the values in the last
+line (reduced costs) are **negatives**. The result
+is ``-R``.
