@@ -36,9 +36,10 @@ look like this
 
 You should remember that something like that 
 ``y <= 3/5 * x + 7`` means that
-    * you got a point at x=0, y=7
-    * if x increase by 5, then y increase by 3
-    * so you can guess the next point
+
+* you got a point at x=0, y=7
+* if x increase by 5, then y increase by 3
+* so you can guess the next point
 
 <hr class="sl">
 

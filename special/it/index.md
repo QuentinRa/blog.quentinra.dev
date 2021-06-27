@@ -11,7 +11,7 @@ directives.
 * ``lot_b``: make the game (v1)
 * ``lot_c``: improve the game (graphical interface? ...
   You can use another language.)
-  
+
 You can find our code [here](https://github.com/lgs-games/prim/tree/master/version_c),
 we got 20/20.
   
