@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-French names for sorting algorithms
+**French names** for sorting algorithms
 
 * tri par insertion
 * tri par base
@@ -14,6 +14,10 @@ French names for sorting algorithms
 
 You may check this [github](https://github.com/java2blog/Tutorials/tree/master/Algorithms/Sorting-Algorithms)
 for the english names and implementations in Java.
+
+**I think this may also help**
+: <https://java-design-patterns.com/snippets.html#quicksort>
+(you got 4 sorting implementations).
 
 <div class="sl"></div>
 
