@@ -97,6 +97,45 @@ in Oriented-object. You should check [Wikipedia](https://en.wikipedia.org/wiki/S
 
 <hr class="sr">
 
+## Guidelines
+
+I started this course because of this website
+<https://suckless.org/> , "software that sucks less". Well
+dunno for the software but the website sucks.
+Still here some of their ideas, mixed with others
+(see references)
+
+* LICENSE + README.md inside each project
+* declare all variables at the start of a bloc
+* add the ``*`` (pointer star) after the type not the name
+* line length: less than ``79`` characters
+* declare your variable then give them a value
+* use constants (const) or #define
+* use [sys/queue.h](https://stackoverflow.com/questions/7627099/how-to-use-list-from-sys-queue-h)
+  rather than your own lists
+
+```c
+// a space after include, ordered by name
+// <> before ""
+#include <stdio.h>
+
+// not a&&b but a && b
+if ( a && b ) { // on the same line, space after if
+}
+
+// for function
+void
+fonction_name(int a, ...)
+{
+    
+}
+```
+
+You should do the same before starting a project,
+set things up with yourself and your team.
+
+<hr class="sl">
+
 ## Sources
 
 * <https://en.wikipedia.org/wiki/SOLID>
@@ -111,3 +150,10 @@ in Oriented-object. You should check [Wikipedia](https://en.wikipedia.org/wiki/S
 * <http://principles-wiki.net/principles:start>
 * <http://principles-wiki.net/start>
 * <https://java-design-patterns.com/principles/#keep-things-dry>
+
+**Guidelines**
+
+* https://suckless.org/
+* https://man.openbsd.org/style
+* http://doc.cat-v.org/bell_labs/pikestyle
+* https://www.kernel.org/doc/Documentation/process/coding-style.rst
