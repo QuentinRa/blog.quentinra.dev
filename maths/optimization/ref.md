@@ -1,5 +1,7 @@
 # optimization : references
 
+Courses
+
 * <https://www.fun-mooc.fr/c4x/MinesTelecom/04006/asset/T%C3%A9l%C3%A9com_FBD_S3_AnalysePartie1_V3.pdf>
 * <http://jybaudot.fr/Optimisations/ptscritiques.html>
 * <https://transp-or.epfl.ch/courses/OptSim2017/Slides/02-draws.pdf>
@@ -25,3 +27,12 @@
 * <https://www.coursera.org/lecture/mathematics-for-economists/2-13-hessian-matrix-77pUp>
 * <http://www.cs.toronto.edu/~hinton/csc2515/notes/lec6tutorial.pdf>
 * <https://www.coursera.org/learn/mathematics-for-economists>
+  
+In R
+
+* <https://www.is.uni-freiburg.de/resources/computational-economics/5_OptimizationR.pdf>
+
+Exercises
+
+* <http://web4.ensiie.fr/~faye/mom/MOM_cours_TD/>
+* <https://www.ljll.math.upmc.fr/~nardoni/TDagrl3/TD4cor.pdf>
