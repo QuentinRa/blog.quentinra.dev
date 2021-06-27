@@ -2,18 +2,15 @@
 
 [Go back](..)
 
-...
-
-**Steps**
-
 <p>
+This is an iterative method.
 The first value
 <code class="mathjax_process">\(X^{(0)}\)</code>
 is given most of the time but you may try with a
 vector of zeros if not.
 </p>
 
-We will calculate the gradient, then
+Calculate the gradient, then
 
 <ul>
 <li><code class="mathjax_process">\(g^{(n)} =
@@ -32,6 +29,8 @@ is the transpose of a vector <span>
 </li>
 </ul>
 
+Note that the matrix ``A`` is simply a matrix of the
+coefficients before the variables in your gradient.
 Then the formula for X is
 
 <div>
@@ -214,8 +213,9 @@ We continue.
 </li>
 </ul>
 
-Then 
-
+Then since we know that g-two is a critical point,
+then we simply need to find a lambda so we have
+a gradient equals to (0,0).
 
 <div class="mathjax_process">\[g^{(2)} =
 \nabla f(X^{(2)}) = 
