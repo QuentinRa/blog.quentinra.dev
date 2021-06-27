@@ -75,8 +75,13 @@ f(x, y) = 4x^2 + 4y^2 − 2xy -5x
 \]
 </p>
 
+<div>
 Using conjugate gradient method, starting from
-(0,0), find a critical point.
+(0,0), demonstrate that
+<span class="mathjax_process">\(X^{(2)}\)
+</span>
+is a critical point.
+</div>
 
 <blockquote class="spoiler">
 <p>The gradient is
@@ -139,7 +144,7 @@ Using conjugate gradient method, starting from
 </li>
 <li class="mathjax_process">
 \(
-{X}^{(n+1)}= \begin{pmatrix}0\\0\end{pmatrix}
+{X}^{(1)}= \begin{pmatrix}0\\0\end{pmatrix}
 + \frac{1}{8} * \begin{pmatrix}5\\0\end{pmatrix}
 = \begin{pmatrix}5/8\\0\end{pmatrix}
 \)
@@ -183,6 +188,74 @@ Using conjugate gradient method, starting from
 
 We continue.
 
+<p><b>Second iteration</b></p>
+<ul>
+<li class="mathjax_process">\(d^{(1)} =
+- \begin{pmatrix}
+0\\-5/4
+\end{pmatrix}+ 1/16  *  \begin{pmatrix}
+5\\0
+\end{pmatrix}
+=
+\begin{pmatrix}
+5/16\\5/4
+\end{pmatrix}
+\)
+</li>
+<li class="mathjax_process">\(\lambda^{(1)}
+= \text{too hard}
+\)
+</li>
+<li class="mathjax_process">
+\(
+{X}^{(2)}= \begin{pmatrix}5/8 + \lambda^{(1)} * 5/16
+\\ \lambda^{(1)} * 5/4\end{pmatrix}
+\)
+</li>
+</ul>
 
+Then 
+
+
+<div class="mathjax_process">\[g^{(2)} =
+\nabla f(X^{(2)}) = 
+\begin{pmatrix}
+5 - \frac{5*\lambda^{(1)}}{2}
+- \frac{5*\lambda^{(1)}}{2} - 5\\
+10\lambda^{(1)} - \frac{10}{8}
+- \frac{10*\lambda^{(1)}}{16}
+\end{pmatrix} =
+\begin{pmatrix}0\\0\end{pmatrix} ?
+\]
+</div>
+
+In the first one we are good so let's check the
+second one.
+
+<div class="mathjax_process">
+\begin{cases}
+\frac{80\lambda^{(1)}}{8} - \frac{5*\lambda^{(1)}}{8}
+= \frac{10}{8} \\
+\frac{75\lambda^{(1)}}{8} = \frac{10}{8} \\
+75\lambda^{(1)} = 10 \\
+\lambda^{(1)} = \frac{10}{75} = \frac{2}{12} \\
+\end{cases}
+
+So we have
+
+<div class="mathjax_process">\[
+{X}^{(2)}= 
+\begin{pmatrix}(5/8) + (2/12)*(5/16)
+\\ (2/12)*(5/4)\end{pmatrix}
+=
+\begin{pmatrix}x \approx  0.67\\ y \approx 0.21\end{pmatrix}
+\]
+</div>
+
+The Second iteration is done and we are stopping
+since we got (0,0) for g. The gradient is equals
+to (0,0) so that's a critical point.
+
+</div>
 
 </blockquote>
