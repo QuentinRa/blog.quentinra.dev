@@ -55,7 +55,33 @@ some unreadable code, isn't it?
 
 <hr class="sr">
 
+## Practices
+
+**Separation of concerns (SOC)**: simply separate your
+code according to what part of the program they are
+dealing with. This may also us to reuse some parts
+in another application.
+
+**The Rule of One or Curly’s Law**: a part of your
+code must do only one thing.
+
+**Rubber duck debugging**: when you got a problem with
+your code, try explaining it to a rubber duck (
+``canard en plastique`` in French). Sometimes, simply
+explaining your problem to "someone" helps you solving it.
+
+<hr class="sl">
+
 ## Sources
 
+* <https://en.wikipedia.org/wiki/SOLID>
+* <https://en.wikipedia.org/wiki/Code_reuse>
+* <https://en.wikipedia.org/wiki/GRASP_(object-oriented_design)>
+* <https://en.wikipedia.org/wiki/KISS_principle>
+* <https://www.baeldung.com/solid-principles>
+* <https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa>
+* <https://suckless.org/>
+* <https://en.wikipedia.org/wiki/Rubber_duck_debugging>
 * <http://principles-wiki.net/principles:start>
 * <http://principles-wiki.net/start>
+* <https://java-design-patterns.com/principles/#keep-things-dry>
