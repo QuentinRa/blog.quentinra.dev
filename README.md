@@ -70,6 +70,7 @@ how you should do it.
   for agile-scrum
 * [ ] Java databases
 * [ ] Differentials methods (Numerical analysis)
+* [ ] check notes
 
 **Exercises**
 
@@ -97,6 +98,7 @@ how you should do it.
 * [ ] UML
 * [ ] Cyber security
 * [ ] guidelines
+* [ ] extreme dev.
 * [ ] Translate ``PROJECTS`` vocabulary
 
 ## Others
