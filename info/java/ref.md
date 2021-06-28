@@ -1,5 +1,10 @@
 # References
 
+Read about the new changes of Java
+
+* <https://www.journaldev.com/2389/java-8-features-with-examples>
+* <https://openjdk.java.net/projects/jdk/16/>
+
 ## Materials
 
 * <http://tutorials.jenkov.com/java/modules.html>
