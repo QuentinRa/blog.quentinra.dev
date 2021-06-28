@@ -156,6 +156,8 @@ on Windows like a ``JFrame``.
 * [ActionListener](swing/listeners/action-listener.md)
 * [MouseListener](swing/listeners/mouse-listener.md)
 * [WindowListener](swing/listeners/window-listener.md)
+* MouseMotionListener (drag and drop)
+* MouseWheelListener (scroll)
 
 Lazy (or smart?) ones are using the lambda syntax
 to declare a listener since they are functional
