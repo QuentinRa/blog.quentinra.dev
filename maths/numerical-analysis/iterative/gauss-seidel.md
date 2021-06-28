@@ -47,6 +47,8 @@ the value of the previous iteration.
     </tbody>
 </table>
 
+<hr class="sr">
+
 ## Code this in R
 
 Here how you could see this in R code. You should check
@@ -72,6 +74,8 @@ for (i in 0:10) {
   print(v)
 }
 ```
+
+<hr class="sl">
 
 ## More theoretically
 

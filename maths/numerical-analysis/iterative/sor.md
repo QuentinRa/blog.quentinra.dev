@@ -24,6 +24,8 @@ x_{n+1}' = \omega * x_{n+1} + (1 - \omega) * x1
 So the idea is that we simply multiply by omega
 and add one minus omega multiplied by our variable value.
 
+<hr class="sl">
+
 ## Code in R
 
 Here how you could see this in R code. You should check
@@ -61,6 +63,8 @@ for (i in 0:10) {
   print(v)
 }
 ```
+
+<hr class="sr">
 
 ## More theoretically
 

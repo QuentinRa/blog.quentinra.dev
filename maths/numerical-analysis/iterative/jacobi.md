@@ -69,6 +69,8 @@ tend to converge, here (i=10) to
 
 so we can stop.
 
+<hr class="sr">
+
 ## Code this in R
 
 Here how you could see this in R code. You should check
@@ -94,6 +96,8 @@ for (i in 0:10) {
   print(v)
 }
 ```
+
+<hr class="sl">
 
 ## More theoretically
 
