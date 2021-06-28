@@ -69,7 +69,7 @@ Here some constrained optimization methods.
 
 * [Constrained polygon](co/polygon.md)
 * [Simplex](co/simplex.md)
-* [Lagrange](co/lagrange.md)
+* [Primal and dual](co/lagrange.md)
 
 <hr class="sr">
 
