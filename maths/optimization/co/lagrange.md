@@ -39,6 +39,9 @@ the Lagrangian for each of your variables
 equals to 0. That's a system so you "simply"
 have to solve it.
 
+You will get your critical point ``X*`` (x*, y*, ...)
+and your unknowns (mu1, ..., lambda1, ...).
+
 <hr class="sr">
 
 ## Alternative
