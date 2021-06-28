@@ -57,7 +57,8 @@ quite a lot of job during the conception
 * [User stories](mdd/user-stories.md)
 * [Class diagram](mdd/class.md)
 * [Sequence diagram](mdd/seq.md)
-* And now code the application
+* And now code the application. Using StarUML
+  you can generate Java code from UML.
 
 Since I don't like wasting my time to fit a method pattern, I think
 you should
