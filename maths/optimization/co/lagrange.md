@@ -44,6 +44,23 @@ and your unknowns (mu1, ..., lambda1, ...).
 
 <hr class="sr">
 
+## Lagrangian / KKT Help
+
+In a lot of cases, finding the unknowns is not as
+easy as solving the system, especially if you
+have inequality constraints. Most of the times, you
+will still have lambda/mu inside X*.
+
+Lambdas/mus are positive or null so you might have
+a 
+
+* if (lambda == 0), X*=...
+* else X*=...
+* do not forgot to eliminate solution not passing
+the conditions.
+
+<hr class="sl">
+
 ## Alternative
 
 Do not use this method, it's quite simple but not
