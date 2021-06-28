@@ -127,15 +127,15 @@ Still here some of their ideas, mixed with others
 if ( a && b ) { // on the same line, space after if
 }
 
-// for function
+// for a function
 void
-fonction_name(int a, ...)
+fonction_name( int a, ... )
 {
     
 }
 ```
 
-You should do the same before starting a project,
+**You should do the same** before starting a project,
 set things up with yourself and your team.
 
 <hr class="sl">
@@ -157,7 +157,7 @@ set things up with yourself and your team.
 
 **Guidelines**
 
-* https://suckless.org/
-* https://man.openbsd.org/style
-* http://doc.cat-v.org/bell_labs/pikestyle
-* https://www.kernel.org/doc/Documentation/process/coding-style.rst
+* <https://suckless.org/>
+* <https://man.openbsd.org/style>
+* <http://doc.cat-v.org/bell_labs/pikestyle>
+* <https://www.kernel.org/doc/Documentation/process/coding-style.rst>
