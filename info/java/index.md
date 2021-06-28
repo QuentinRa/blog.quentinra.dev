@@ -165,7 +165,7 @@ And things you might use
 
 Special notes
 
-* [Special classes]()
+* [Special classes](expert/special-classes.md)
 * [UTF-8](expert/utf-8.md)
 
 <hr class="sr">
