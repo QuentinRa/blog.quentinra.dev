@@ -13,13 +13,47 @@ Java have 8 primitives types:
 * **double**: 32bits, ``5.0`` or ``5.0d``
 * **long**: 64 bits
 
+<hr class="sr">
+
+## Creating a variable
+
+```java
+int i = 5;
+```
+
+<hr class="sl">
+
+## Parsing
+
 Each primitive class has a class having almost if not the same name,
 for instance ``Integer`` for int. You would have methods such as
 
 ```java
-// conversion string to int
+// conversion from string to int
 int i = Integer.parseInt("13");
 ```
 
 Otherwise, any other type is a class such as Integer, Object,
 ArrayList, ...
+
+<hr class="sr">
+
+## About Strings
+
+You will create a String like this
+
+```java
+String s = "some text";
+
+// since JDK 13
+s  = """
+    Hello
+    World""";
+
+// same as
+s  = "Hello\nWorld";
+```
+
+Some methods you might use
+
+* ...
