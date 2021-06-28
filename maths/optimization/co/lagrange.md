@@ -98,6 +98,9 @@ If the **duality gap** (`saut de dualité`) between
 P and D is 0 (meaning the dual is equals to the primal)
 then there is no duality gap.
 
+Note that the dual problem is an unconstrained problem
+so you can solve it using what we learned before.
+
 <hr class="sl">
 
 ## Alternative
