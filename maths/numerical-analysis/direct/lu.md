@@ -57,6 +57,8 @@ L_{33} = \begin{pmatrix}
 
 And that's it.
 
+<hr class="sr">
+
 ## Example
 
 Demonstrate that this matrix admit a LU factorization
