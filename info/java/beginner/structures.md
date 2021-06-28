@@ -77,11 +77,11 @@ Here is the enhanced switch
 ```java
 switch (x){
     // a bloc
-    case value1 -> {
-        System.out.println("1");
+    case v1 -> {
+        System.out.println("1st branch");
     }
     // one line
-    case value2 -> System.out.println("2");
+     case v2, v3, v4 -> System.out.println("2nd branch");
     // default
     default -> System.out.println("other");
 }
