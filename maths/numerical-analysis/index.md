@@ -15,7 +15,7 @@ Most of this course will use ``R`` language
 to provide an example of how you could implements
 theses.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Introduction
 
@@ -33,7 +33,7 @@ You will need
 * to estimate your errors (using **norms**)
 * estimate the complexity/order of your algorithm
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Norms
 
@@ -61,7 +61,7 @@ and we have
 * [Write norms](norms/basic.md)
 * [Condition number](norms/cond.md)
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Direct methods
 
@@ -73,7 +73,7 @@ Calculations are made in one go.
 * [Gauss method](direct/gauss.md)
 * [LU factorization](direct/lu.md)
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Iterative methods
 
@@ -93,13 +93,7 @@ as <b>0.001</b>.
 * [Gauss seidel method](iterative/gauss-seidel.md)
 * [SOR method](iterative/sor.md)
 
-<div class="sl"></div>
-
-## Differentials methods
-
-...
-
-<div class="sr"></div>
+<hr class="sl">
 
 ## Sources
 

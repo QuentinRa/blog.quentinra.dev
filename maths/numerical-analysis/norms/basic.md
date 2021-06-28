@@ -27,8 +27,13 @@ Here are some properties
     \(
         N(\lambda{x}) = |\lambda| N(x)
     \)</span>
-   
-Then you must learn theses norms
+
+<hr class="sl">
+
+## Norms in 1, 2, infinity
+
+You will see a lot of norms with a small number
+in the right-corner side. This is their formulas
 
 <p>
 \[
@@ -48,15 +53,12 @@ Then you must learn theses norms
 \]
 </p>
 
-And you **must never forget this one**
+<hr class="sr">
 
-<p>
-\[
-|||A|||_2 = \max_{  y \neq 0 } \frac{||Ay||_2}{||y||_2}
-\]
-</p>
+## Some changes possibles
 
-These may help
+Just in case you want to change your expression to
+another one, then here is some help
 
 * <span>
     \(
@@ -65,7 +67,7 @@ These may help
 * <span>
     \(
         \rho(A) \le ||A||
-    \)</span>
+    \)</span> <span class="tms">(rho is the highest eigen value)</span>
 * <span>
     \(
         ||Ax|| \le |||A||| * ||x||
@@ -79,12 +81,22 @@ These may help
         ||Qx||^2_2 =||x||^2_2
     \)</span>
 
+And you **must never forget this one**
+
+<p>
+\[
+|||A|||_2 = \max_{  y \neq 0 } \frac{||Ay||_2}{||y||_2}
+\]
+</p>
+
+<hr class="sl">
+
 ## Some operations
 
 Here some questions or some operations that can be done
 with norms.
 
-<p>Demonstrate \(||Qx||^2_2 =||x||^2_2\)</p>
+<p><b>Q: Demonstrate \(||Qx||^2_2 =||x||^2_2\)</b></p>
 
 <p>
 \begin{split} ||Qx||^2_2 = (Qx)^* * Qx = \\ 
@@ -92,11 +104,17 @@ x^* * Q^* * Q * x = x^* * x= \\ ||x||^2_2
 \end{split}
 </p>
 
-Note that Q-star is the matrix transpose for matrix
+<p>
+Note that Q* is the matrix transpose for matrix
 of Reals but here we use this notation for complexes. Also
-``Q^* * Q = Id`` so we removed Q with this property.
+<span class="mathjax_process">
+\(
+Q^* * Q = Id
+\)
+</span> so we removed Q with this property.
+</p>
 
-<p>Demonstrate \(||AQ||_2 = |||A|||\)</p>
+<p><b>Q: Demonstrate \(||AQ||_2 = |||A|||\)</b></p>
 
 <p>
 \begin{split}||AQ||_2 := \max_{  x \neq 0 } \frac{||AQx||_2}{||x||_2}
