@@ -86,3 +86,18 @@ switch (x){
     default -> System.out.println("other");
 }
 ```
+
+You could also make something like that
+
+```java
+String result = switch (s) {
+    case "0", "1" -> "yes/no";
+    default -> {
+        for (int i = 2; i < 5; i++) {
+            if (s.equals(i+""))
+                yield s;
+        }
+        yield "";
+    }
+};
+```
