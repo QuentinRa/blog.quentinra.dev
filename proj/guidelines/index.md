@@ -30,6 +30,10 @@ Here some of my troughs before starting
     * your workload
     * the complexity of your code
     * the workload of the futures maintainers
+* give relevant names to your functions / variables
+  (only when that's useful like i better than
+  index if i is a simplex index) and declare
+  them at the start of a bloc.
 
 <hr class="sl">
 
