@@ -133,8 +133,49 @@ how the ``add`` method will work.
 **By default, the layout is a FlowLayout**,
 you may use null to disabled the layout.
 
-* [BorderLayout](swing/border-layout.md)
-* [FlowLayout](swing/flow-layout.md)
-* [CardLayout](swing/card-layout.md)
-* [GridLayout](swing/grid-layout.md)
-* [GridBagLayout](swing/grid-bag-layout.md)
+* [BorderLayout](swing/layout/border-layout.md)
+* [FlowLayout](swing/layout/flow-layout.md)
+* [CardLayout](swing/layout/card-layout.md)
+* [GridLayout](swing/layout/grid-layout.md)
+* [GridBagLayout](swing/layout/grid-bag-layout.md)
+
+<hr class="sr">
+
+## Events and listeners
+
+We are calling listeners, classes having a function
+(handler) called when an action (click, mouse moved, ..)
+is done. Inside the handler, you will write the code
+specific to the event.
+
+You can add listener using methods like
+``addMouseListener`` or `addActionListener` (only
+on buttons). You can use ``addWindowListener``
+on Windows like a ``JFrame``.
+
+* [ActionListener](swing/listeners/action-listener.md)
+* [MouseListener](swing/listeners/mouse-listener.md)
+* [WindowListener](swing/listeners/window-listener.md)
+
+Lazy (or smart?) ones are using the lambda syntax
+to declare a listener since they are functional
+interfaces
+
+```java
+JButton b;
+...
+b.addActionListener(e -> {
+ // code ici
+});
+
+// or
+b.addActionListener(new ActionListener(){
+ @Override
+ public void actionPerformed(ActionEvent e){
+        // code ici
+ }
+});
+```
+
+but you should create a class (be it inner or not)
+since that's way better (in most cases).
