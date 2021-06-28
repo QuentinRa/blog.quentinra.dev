@@ -2,7 +2,39 @@
 
 [Go back](..)
 
-...
+If you only have **equality constraints**, then 
+
+* write all of your constraints, called h, equals to 0
+* then write the Lagrangian L like this, with X
+a vector of your variables
+  
+<span class="mathjax_process">
+\(
+L(X, \mu) = f(X) + \sum_{i=1}^{m} \mu_i * h_i(X)
+\)
+</span>
+
+with mu the variables called Lagrange multipliers
+and the values we will look for.
+
+* Write the KKT (Karush-Kuhn-Tucker) conditions
+
+<span class="mathjax_process">
+\(
+\nabla L(X, \mu) = \nabla f(X)+ \sum_{i=1}^{m} \mu_i * \nabla h_i(X)
+= 0
+\)
+</span>
+
+You can write a system and solve it, each equation must be equals
+to 0 (and the equations ar the partial derivatives
+of the Lagrangian for each variable).
+
+* solve the system, you got x*, y*, ... = X*
+  so your critical point. You will also find the
+  lambda = Lagrange multipliers.
+
+<hr class="sr">
 
 <hr class="sr">
 
