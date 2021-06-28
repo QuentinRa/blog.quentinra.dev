@@ -57,8 +57,6 @@ how you should do it.
 * [ ] Complete Statistics course
 * [ ] Complete Probabilities course
 * [ ] Complete R course
-* [ ] Complete Optimization course (0/3)
-* [ ] Complete NUMERICAL-ANALYSIS course (0/2)
 * [ ] Graphs course
 * [ ] First-order logic course
 * [ ] Cyber security course
@@ -71,6 +69,7 @@ how you should do it.
 * [ ] Check out this material <https://github.com/dlu02/projet-pima-s3-nasa>
   for agile-scrum
 * [ ] Java databases
+* [ ] Differentials methods (Numerical analysis)
 
 **Exercises**
 
@@ -82,6 +81,7 @@ how you should do it.
 * [ ] Assembly
 * [ ] Macroeconomic
 * [ ] Optimisation (Primal and dual)
+* [ ] Numerical analysis (norms)
 
 **Typos**
 
