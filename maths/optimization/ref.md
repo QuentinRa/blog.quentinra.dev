@@ -28,7 +28,10 @@ Courses
 * <http://www.cs.toronto.edu/~hinton/csc2515/notes/lec6tutorial.pdf>
 * <https://www.coursera.org/learn/mathematics-for-economists>
 * <https://www.youtube.com/channel/UCh0P7KwJhuQ4vrzc3IRuw4Q/videos>
-
+* <https://ocw.mit.edu/courses/sloan-school-of-management/15-084j-nonlinear-programming-spring-2004/lecture-notes/lec4_quad_form.pdf>
+* <https://www.cis.upenn.edu/~cis515/cis515-12-sl14.pdf>
+* <https://www.cis.upenn.edu/~cis515/cis515-11-sl12.pdf>
+* <https://math.stackexchange.com/questions/1889165/unconstrained-quadratic-programming-problem-with-positive-semidefinite-matrix>
 In R
 
 * <https://www.is.uni-freiburg.de/resources/computational-economics/5_OptimizationR.pdf>
