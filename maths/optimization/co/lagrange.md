@@ -59,6 +59,45 @@ a
 * do not forgot to eliminate solution not passing
 the conditions.
 
+<hr class="sr">
+
+## Primal and dual
+
+Also, when you got inequality constraints, then most
+of the time you will have more to do.
+
+A primal problem **P**
+
+<p>
+\(
+\min\limits_{X} f(X)\ s.c.\ 
+\begin{cases}
+h(X) = 0\\
+g(X) \le 0
+\end{cases}
+\)
+</p>
+
+is the same as maximizing a dual problem **D**
+
+<p>
+\(
+\max\limits_{\lambda\ge0,\mu\ge0} \theta(\lambda,\mu)
+= \inf\limits_{\lambda\ge0,\mu\ge0} L(X, \mu, \lambda)
+\)
+</p>
+
+* **note**: if a g(X) is violated (>0) then the only
+way to have the maximum is for mu/lambda to be 0.
+* **note 2**: inf for min (or sup instead of max) but I think this
+doesn't really matters (to your casual student).
+* **note 3**: If the constraints are greater equals than 0, simply
+multiply by minus 1.
+
+If the **duality gap** (`saut de dualité`) between
+P and D is 0 (meaning the dual is equals to the primal)
+then there is no duality gap.
+
 <hr class="sl">
 
 ## Alternative
