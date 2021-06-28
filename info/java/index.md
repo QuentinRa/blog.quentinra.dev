@@ -227,7 +227,15 @@ should use JUnit5 or higher.
 
 ## Graphical interfaces
 
-...
+The reason why I hated Java was because making graphical
+interfaces what really boring, tiring and hard (if you
+want something that is not using the default style).
+But now with JavaFX I'm better.
+
+* [Swing and AWT](graphic/swing-awt.md)
+* [JavaFX](graphic/javafx.md)
+* [lwjgl3](graphic/lwjgl3.md)
+* [Libgdx](graphic/libgdx.md)
 
 <hr class="sl">
 
