@@ -51,6 +51,8 @@ column. Divide everything by the value on the diagonal.
 where 1,2, ... until six are the value we are looking for. We will check
 the value at 1, then at 2, ... using our formulas.
 
+<hr class="sr">
+
 # Example
 
 Find cholesky factorization of A then find solve Ax = b.
