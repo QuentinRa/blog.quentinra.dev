@@ -53,7 +53,7 @@ how you should do it.
 
 * [ ] Complete UML course (0 / 5)
 * [ ] Complete C course
-* [ ] Complete Java course
+* [ ] Complete Java course (notes, libgdx, lwjgl, javafx, exercises)
 * [ ] Complete Statistics course
 * [ ] Complete Probabilities course
 * [ ] Complete R course
@@ -66,9 +66,7 @@ how you should do it.
 **Update content**
 
 * [ ] add anti-patterns in ``DESIGN PATTERNS`` course
-* [ ] Java databases
 * [ ] Differentials methods (Numerical analysis)
-* [ ] check notes (Java)
 * [ ] check notes (Numerical analysis)
 
 **Exercises**
