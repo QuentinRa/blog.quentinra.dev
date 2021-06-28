@@ -98,6 +98,12 @@ how you should do it.
 * [ ] extreme dev.
 * [ ] Translate ``PROJECTS`` vocabulary
 
+## Notes
+
+* [ ] Java - https://web4.ensiie.fr/~bouyer/ipro.html
+* [ ] Games - https://web4.ensiie.fr/~bouyer/jin.html
+* [ ] https://padlet.com/sophie_martinez/1NSI2
+
 ## Others
 
 ![Jokes Card](https://readme-jokes.vercel.app/api)

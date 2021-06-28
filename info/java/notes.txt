@@ -153,3 +153,10 @@ try (Connection c = DriverManager.getConnection(...)) {
 } catch(SQLException e) {
  System.err.println(e);
 }
+
+------ new
+
+https://betterprogramming.pub/java-15-features-sealed-and-hidden-classes-pattern-matching-and-text-blocks-38f4efdc8adc
+https://www.journaldev.com/9879/java-repl-jshell
+https://openjdk.java.net/jeps/397
+https://openjdk.java.net/jeps/395
