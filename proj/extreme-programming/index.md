@@ -44,7 +44,36 @@ in pairs.
 
 ## Model-driven development (MDD)
 
-...
+You will create a model during the conception
+phase. Then you code will be the exact representation
+of the model (same attributes, classes, ...),
+at least the public part. If you need to add something,
+then first change the model.
+
+This method is quite powerful but will ask you to do
+quite a lot of job during the conception
+(since the development will be quite easy and fast).
+
+* [User stories](mdd/user-stories.md)
+* [Class diagram](mdd/class.md)
+* [Sequence diagram](mdd/seq.md)
+* And now code the application
+
+Since I don't like wasting my time to fit a method pattern, I think
+you should
+
+* do a mockup of your application
+  (with events... maybe in Boostrap/JS or using
+  an app)
+* then do the **MDD** method
+
+By doing so, you will most likely find more
+things that doing again and again loops using the sequence
+diagram to find missing classes/attributes/relations...
+Using Boostrap/an app make it easy to create a mockup
+at least I'm doing this for all my apps and I feel
+like it's worth it (check [HMI](../hmi/index.md)
+course to get some tips/apps).
 
 <hr class="sr">
 
@@ -73,5 +102,6 @@ because that also means here more documentation.
 
 ## Sources
 
+* <https://gist.github.com/zsup/9434452>
 * <https://medium.com/swlh/documentation-driven-development-f9a6d3258e5>
 * <https://regisfreyd.com/documentation-driven-development>
