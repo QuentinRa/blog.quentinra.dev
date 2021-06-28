@@ -26,11 +26,12 @@ And **you are losing 2 points if you end up in
 bankrupt** (debt >= 100%).
 
 The main idea is that you will be graded for your
-rank in 1 and 2. You got a grade, looking like this (may change)
+rank in 1 and 2. You got a grade, looking like this
 
 1. 19/20
 2. 17/20
-3. 14/20
+3. 15/20
+4. 13/20
 5. 11/20
 6. 9/20
 7. 8/20
