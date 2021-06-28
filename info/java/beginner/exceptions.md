@@ -146,3 +146,11 @@ try (Closable c = ...) {
     // ...
 }
 ```
+
+Since Java9, you can write
+
+```java
+try (c) {
+    // ...
+}
+```
