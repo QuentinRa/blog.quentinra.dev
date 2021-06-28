@@ -50,3 +50,23 @@ Runnable r = new Runnable(){
 
 Runnable is an interface and I created a class and
 implemented the run method "on the fly".
+
+<hr class="sr">
+
+## Multiple classes in one file
+
+You may see this a lot, but don't use it okay? You
+may use for some tests but that's it. Be great and
+use anything aside that.
+
+```
+public class Main {
+    // ...
+}
+
+class ClassA {}
+class ClassB {}
+```
+
+You can only have one public class per file, but you
+may have a lot of ``package``-level classes.
