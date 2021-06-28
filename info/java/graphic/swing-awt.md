@@ -135,8 +135,8 @@ you may use null to disabled the layout.
 
 * [BorderLayout](swing/layout/border-layout.md)
 * [FlowLayout](swing/layout/flow-layout.md)
-* [CardLayout](swing/layout/card-layout.md)
 * [GridLayout](swing/layout/grid-layout.md)
+* [CardLayout](swing/layout/card-layout.md)
 * [GridBagLayout](swing/layout/grid-bag-layout.md)
 
 <hr class="sr">
