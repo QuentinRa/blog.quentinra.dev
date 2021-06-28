@@ -119,3 +119,22 @@ aComponent.setSize(new Dimension(50,50));
 aComponent.setMinimumSize(new Dimension(50,50));
 aComponent.setMaximumSize(new Dimension(50,50));
 ```
+
+<hr class="sl">
+
+## Layout manager
+
+You may have wondered how you could set a component
+to be somewhere in the frame. All JComponents
+got a method ``setLayout(LayoutManager m)``
+taking a LayoutManager which is actually defining
+how the ``add`` method will work.
+
+**By default, the layout is a FlowLayout**,
+you may use null to disabled the layout.
+
+* [BorderLayout](swing/border-layout.md)
+* [FlowLayout](swing/flow-layout.md)
+* [CardLayout](swing/card-layout.md)
+* [GridLayout](swing/grid-layout.md)
+* [GridBagLayout](swing/grid-bag-layout.md)
