@@ -30,3 +30,23 @@ public class AClass {
 
 means that you will write ``AClass.AnotherClass``
 so something like ``AClass.AnotherClass v = new AClass.AnotherClass();``.
+
+<hr class="sl">
+
+## Anonymous class
+
+In French, it's called ``classe anonyme / locale``.
+This is a class that's not properly declared in the code
+but created when the program is executed.
+
+```java
+Runnable r = new Runnable(){
+    @Override
+    public void run() {
+        // ...
+    }
+};
+```
+
+Runnable is an interface and I created a class and
+implemented the run method "on the fly".
