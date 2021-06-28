@@ -23,6 +23,8 @@ since I'm using fxml so don't use Swing/AWT.
 
 <hr class="sl">
 
+## Components
+
 Swing and AWT have a lot of similar classes, in SWING
 the names are starting with a ``J`` then the AWT name.
 
@@ -71,4 +73,49 @@ l.setText(text);
 JPanel p = new JPanel();
 p.add(b);
 p.add(l);
+```
+
+<hr class="sr">
+
+## JComponent
+
+Before digging into listeners, drawing and layout managers, here is a list
+of what you could expect of a JComponent.
+
+```java
+JComponent aComponent = new JPanel(); // we don't care about what component
+JComponent anotherOne = new JButton(); // we don't care about what component
+
+// add
+aComponent.add(anotherOne);
+aComponent.remove(anotherOne);
+aComponent.removeAll();
+// show
+aComponent.setVisible(true);
+
+// events
+aComponent.addMouseListener(null /* listener here */);
+aComponent.removeMouseListener(null /* listener here */);
+
+// layout
+aComponent.setLayout(null /* layout manager here */);
+
+// style
+aComponent.setFont(new Font("name", Font.PLAIN, 20));
+aComponent.setOpaque(true); // have a background
+aComponent.setBackground(Color.RED); // background color if opaque
+aComponent.setForeground(Color.WHITE); // text color
+
+// redraw if modified
+aComponent.repaint();
+// force redraw, invalidate the view
+aComponent.revalidate();
+
+// DO NOT USE setSize
+// only PreferredSize is read most of the size
+aComponent.setPreferredSize(new Dimension(50,50));
+// MAY BE IGNORED by the layout
+aComponent.setSize(new Dimension(50,50));
+aComponent.setMinimumSize(new Dimension(50,50));
+aComponent.setMaximumSize(new Dimension(50,50));
 ```
