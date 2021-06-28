@@ -27,9 +27,11 @@ you can draw it by yourself or use tools like
 * [diagrams](https://app.diagrams.net/)
 * [sketch](https://www.sketch.com/) (macOS)
 * Photoshop (paid)
-* Justinmind (trial available but paid, the best of all)
-* [moqups](https://moqups.com/) (best for free, account required)
+* [Justinmind](https://www.justinmind.com/)
+  (trial available but paid, **the best of all**)
+* [moqups](https://moqups.com/) (**the best for free**, account required)
 * or simply in HTML using Boostrap, simple and efficient
+  (**my favorite alternative**)
 
 You can use this great website to think about menus
 or make optimal choices : [optimalworkshop](https://www.optimalworkshop.com/).
