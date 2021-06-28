@@ -19,7 +19,7 @@ one class, but many interfaces. With that, we can use the
 Also, unlike with ``extends``, when inheriting an interface, you
 **must** overrides all methods that don't have a body.
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Interface declaration**
 
@@ -55,7 +55,7 @@ public interface Human {
 }
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Using an interface
 
@@ -93,7 +93,7 @@ public class Person implements Human, Living {
 }
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Interface (extend and default)
 
@@ -108,7 +108,7 @@ public interface Human extends Living {
 }
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Functional interfaces
 
@@ -158,4 +158,20 @@ Human h = (u) -> {
     String r = "John Doe";
     return u ? r.toUpperCase() : r.toLowerCase();
 };
+```
+
+<hr class="sr">
+
+## This is a secret
+
+Okay, this is something that almost no one know of. Interface
+can have **private members** since Java9.
+
+```java
+public interface Test {
+    // static implicit
+    private void myPrivateMethod () {}
+    // static explicit
+    private static void myPrivateMethod2 () {}
+}
 ```
