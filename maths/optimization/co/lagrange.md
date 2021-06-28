@@ -39,6 +39,10 @@ the Lagrangian for each of your variables
 equals to 0. That's a system so you "simply"
 have to solve it.
 
+**Note**: my teachers are only calculating
+all the partial derivative of the variables
+(x,y,...), but some are also doing it for lambda.
+
 You will get your critical point ``X*`` (x*, y*, ...)
 and your unknowns (mu1, ..., lambda1, ...).
 
@@ -64,7 +68,10 @@ the conditions.
 ## Primal and dual
 
 Also, when you got inequality constraints, then most
-of the time you will have more to do.
+of the time you will have more work to do.
+It seems that before doing so, we should check
+that the points to be **regulars** (I'm sure of
+it but my teacher do seems to be doing it).
 
 A primal problem **P**
 

@@ -32,6 +32,8 @@ Courses
 * <https://www.cis.upenn.edu/~cis515/cis515-12-sl14.pdf>
 * <https://www.cis.upenn.edu/~cis515/cis515-11-sl12.pdf>
 * <https://math.stackexchange.com/questions/1889165/unconstrained-quadratic-programming-problem-with-positive-semidefinite-matrix>
+* <http://pgoutet.free.fr/td/maths3_optimisation_contrainte.pdf>
+
 In R
 
 * <https://www.is.uni-freiburg.de/resources/computational-economics/5_OptimizationR.pdf>
