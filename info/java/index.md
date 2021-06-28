@@ -39,6 +39,7 @@ if you don't know something is to look at the documentation,
 * [Java 11](https://docs.oracle.com/en/java/javase/11/docs/api/index.html)
 * [Java 14](https://docs.oracle.com/en/java/javase/14/docs/api/index.html)
 * latest as of June 2021: [Java 16](https://docs.oracle.com/en/java/javase/16/docs/api/index.html)
+* [history](beginner/history.md)
 
 <hr class="sl">
 
