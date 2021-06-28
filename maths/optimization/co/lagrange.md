@@ -2,39 +2,42 @@
 
 [Go back](..)
 
-If you only have **equality constraints**, then 
-
-* write all of your constraints, called h, equals to 0
-* then write the Lagrangian L like this, with X
-a vector of your variables
-  
-<span class="mathjax_process">
-\(
-L(X, \mu) = f(X) + \sum_{i=1}^{m} \mu_i * h_i(X)
-\)
-</span>
-
-with mu the variables called Lagrange multipliers
-and the values we will look for.
-
-* Write the KKT (Karush-Kuhn-Tucker) conditions
+You will have to write a Lagrangian like this
 
 <span class="mathjax_process">
 \(
-\nabla L(X, \mu) = \nabla f(X)+ \sum_{i=1}^{m} \mu_i * \nabla h_i(X)
-= 0
+L(X, \mu, \lambda) = f(X) + 
+\sum_{i=1}^{m} \mu_i * h_i(X) + 
+\sum_{i=1}^{p} \lambda_i * g_i(X)
 \)
 </span>
 
-You can write a system and solve it, each equation must be equals
-to 0 (and the equations ar the partial derivatives
-of the Lagrangian for each variable).
+* **X** is a vector of all your variables like (x,y, ...)
+* **mu** and **lambda** are Lagrange multipliers (unknowns=`inconnues`
+  that we will be looking for)
+* **gi** are the inequalities constraints (*)
+* **hi** are the equalities constraints (*)
 
-* solve the system, you got x*, y*, ... = X*
-  so your critical point. You will also find the
-  lambda = Lagrange multipliers.
+(*) p is the number of inequalities and m the 
+number of equalities that could be 0. Note that
+you must write the equation as ``... = 0`` and
+your function is the left-side.
 
-<hr class="sr">
+* Once you got **L**, write what we call
+the **KKT** (Karush-Kuhn-Tucker) conditions
+
+<p class="mathjax_process">
+\(
+\nabla L(X, \mu, \lambda) = 0
+\)
+</p>
+
+* and solve it
+
+You will do the partial derivative of 
+the Lagrangian for each of your variables
+equals to 0. That's a system so you "simply"
+have to solve it.
 
 <hr class="sr">
 
