@@ -2,6 +2,10 @@
 
 [Go back](..)
 
+You may use gradle to make your project more easy
+to manage like a Makefile. You will run one command
+downloading all libraries or running the project.
+
 I'm not up to date about the last practices but
 here is what I know. You should create some files
 in order for gradle to understand what it should do.

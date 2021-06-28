@@ -163,14 +163,10 @@ And things you might use
 * [Recursive functions](advanced/recursive.md)
 * [Sorting](advanced/sort.md)
 
-As a side note, you may see weird characters in Strings when
-persons are not using UTF-8 (like à or é in French) so
-you should use the [unicode](https://unicode-table.com/en/)
-character code with a ``\u`` for unicode.
+Special notes
 
-```java
-System.out.println("\u00E9"); // print é
-```
+* [Special classes]()
+* [UTF-8](expert/utf-8.md)
 
 <hr class="sr">
 
@@ -180,29 +176,9 @@ System.out.println("\u00E9"); // print é
 is about some notes about the things that I'm discovering
 while practicing.
 
-Nowadays, Java projects are encapsulated in what we
-call ``modules``.
-You will create a module-info file and require other modules
-that may be used for your project. It's a higher 
-encapsulation level than before.
-
 * [Modules](expert/modules.md)
-
-You may use gradle to make your project more easy
-to manage like a Makefile. You will run one command
-downloading all libraries or running the project.
-
 * [Gradle](expert/gradle.md)
-
-Learn how to use JPackage and JLink
-commands available since JDK 14.
-
 * [Generating a .exe or an installer](expert/exe.md)
-
-What's obfuscating and could we do something
-better to prevent someone to reverse your code
-back to the Java code.
-
 * [Protect a jar](expert/jar.md)
 
 <hr class="sl">

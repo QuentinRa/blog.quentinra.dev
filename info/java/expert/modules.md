@@ -2,6 +2,12 @@
 
 [Go back](..)
 
+Nowadays, Java projects are encapsulated in what we
+call ``modules``.
+You will create a module-info file and require other modules
+that may be used for your project. It's a higher
+encapsulation level than before.
+
 You may only have one ``module-info.java``. Usually
 a module name is like ``com.a.module.name`` or
 ``org`` instead of `com` but that's up to you!

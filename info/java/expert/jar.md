@@ -2,6 +2,10 @@
 
 [Go back](..)
 
+What's obfuscating and could we do something
+better to prevent someone to reverse your code
+back to the Java code?
+
 Well, first a ``jar`` is like an executable of your
 java code, you can run it with
 ``java -jar jar-name`` or create one with
