@@ -160,6 +160,7 @@ And things you might use
 * [Threads](advanced/threads.md)
 * [Networking](advanced/networking.md)
 * [Files](advanced/files.md)
+* [Databases / API](advanced/database.md)
 * [Recursive functions](advanced/recursive.md)
 * [Sorting](advanced/sort.md)
 
