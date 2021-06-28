@@ -52,3 +52,11 @@ You had a function ``f(x,y)=...``, and since each
 point is got ``(x,y)``, then replace each critical
 point in the function. Take the highest (maximum)
 or the lowest (minimum) value and you're done.
+
+<hr class="sr">
+
+## Translation
+
+If you don't want to test all the points, simply trace your
+function then translate your function, the last point touching
+it is the point you are looking for.
