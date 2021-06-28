@@ -152,6 +152,7 @@ Some new syntax-related stuff
 * [Variadic methods](advanced/variadic.md)
 * [Iterable/Iterator](advanced/iterable.md)
 * [Dynamic structures](advanced/dynamic.md)
+* [Streams](advanced/streams.md)
 
 And things you might use
 
