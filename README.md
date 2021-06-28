@@ -73,7 +73,6 @@ how you should do it.
 * [ ] Java databases
 * [ ] Optimisation, quadratic form?
 * [ ] Optimisation, <http://pgoutet.free.fr/td/maths3_optimisation_contrainte.pdf>
-* [ ] Optimisation, lagrange
 
 **Exercises**
 
@@ -84,6 +83,7 @@ how you should do it.
 * [ ] OCaml MCQs
 * [ ] Assembly
 * [ ] Macroeconomic
+* [ ] Optimisation (Primal and dual)
 
 **Typos**
 
