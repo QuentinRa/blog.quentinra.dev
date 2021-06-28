@@ -163,7 +163,7 @@ interfaces
 
 ```java
 JButton b;
-...
+// ...
 b.addActionListener(e -> {
  // code ici
 });
