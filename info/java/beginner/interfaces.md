@@ -169,9 +169,8 @@ can have **private members** since Java9.
 
 ```java
 public interface Test {
-    // static implicit
     private void myPrivateMethod () {}
-    // static explicit
+
     private static void myPrivateMethod2 () {}
 }
 ```
