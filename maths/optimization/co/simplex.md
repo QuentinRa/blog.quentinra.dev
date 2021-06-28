@@ -110,7 +110,7 @@ If you are asked to minimize then
 <ul>
 <li> take the column with the smallest <code>c</code></li>
 <li> if this column only have negatives values
-    then ``end``</li>
+    then <code>end</code></li>
 <li class="mathjax_process"> we want the row having the lowest ratio
     \(S_i = b_i / a_{ij}\) so evaluate all the ratios
     for your column
@@ -157,3 +157,293 @@ and you need to remove them.
 
 Once you did remove them, then you can start using
 the table you got as the starting table.
+
+<hr class="sr">
+
+## Exercise
+
+Use the simplex method to solve
+
+<p class="mathjax_process">\[
+\max z = 2x + 3y\ \ s.c. \begin{cases}
+x + y \le 1\\
+x + 4y \le 2\\
+x \ge 0\\
+y \ge 0\\
+\end{cases} 
+\]
+</p>
+
+<blockquote class="spoiler">
+We rewrite our constraints so we have using the 
+<b>standard form</b>
+<div class="mathjax_process">\[
+\begin{cases}
+x + y + e_1 = 1\\
+x + 4y + e_2 = 2\\
+x \ge 0\\
+y \ge 0\\
+\end{cases} 
+\]
+</div>
+<p>So your table is</p>
+<table class="table table-striped table-bordered border-dark">
+    <thead>
+        <tr>
+            <th>base</th>
+            <th>x</th>
+            <th>y</th>
+            <th class="mathjax_process">\(e_1\)</th>
+            <th class="mathjax_process">\(e_2\)</th>
+            <th>b</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="mathjax_process">\(e_1\)</td>
+            <td class="mathjax_process">\(1\)</td>
+            <td class="mathjax_process">\(1\)</td>
+            <td class="mathjax_process">\(1\)</td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(1\)</td>
+        </tr>
+        <tr>
+            <td class="mathjax_process">\(e_2\)</td>
+            <td class="mathjax_process">\(1\)</td>
+            <td class="mathjax_process">\(4\)</td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(1\)</td>
+            <td class="mathjax_process">\(2\)</td>
+        </tr>
+        <tr>
+            <td class="mathjax_process"></td>
+            <td class="mathjax_process">\(2\)</td>
+            <td class="mathjax_process">\(3\)</td>
+            <td></td>
+            <td></td>
+            <td class="mathjax_process">\(R=0\)</td>
+        </tr>
+    </tbody>
+</table>
+And we are starting,
+
+<ul>
+<li>The highest coefficient is 3, second column</li>
+<li>The highest row is min(1/1, 2/4)=2/4= second line</li>
+<li>we are clearing the second column</li>
+<li>and we will replace e2 in the base by y</li>
+</ul>
+<table class="table table-striped table-bordered border-dark">
+    <thead>
+        <tr>
+            <th>base</th>
+            <th>x</th>
+            <th>y</th>
+            <th class="mathjax_process">\(e_1\)</th>
+            <th class="mathjax_process">\(e_2\)</th>
+            <th>b</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="mathjax_process">\(e_1\)</td>
+            <td class="mathjax_process">\(1\)</td>
+            <td class="mathjax_process">\(1\)</td>
+            <td class="mathjax_process">\(1\)</td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(1\)</td>
+        </tr>
+        <tr>
+            <td class="mathjax_process">\(e_2\)</td>
+            <td class="mathjax_process">\(1/4\)</td>
+            <td class="mathjax_process">\(1\)</td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(1/4\)</td>
+            <td class="mathjax_process">\(2/4\)</td>
+        </tr>
+        <tr>
+            <td class="mathjax_process"></td>
+            <td class="mathjax_process">\(2\)</td>
+            <td class="mathjax_process">\(3\)</td>
+            <td></td>
+            <td></td>
+            <td class="mathjax_process">\(R=0\)</td>
+        </tr>
+    </tbody>
+</table>
+<table class="table table-striped table-bordered border-dark">
+    <thead>
+        <tr>
+            <th>base</th>
+            <th>x</th>
+            <th>y</th>
+            <th class="mathjax_process">\(e_1\)</th>
+            <th class="mathjax_process">\(e_2\)</th>
+            <th>b</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="mathjax_process">\(e_1\)</td>
+            <td class="mathjax_process">\(3/4\)</td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(1\)</td>
+            <td class="mathjax_process">\(-1/4\)</td>
+            <td class="mathjax_process">\(2/4\)</td>
+        </tr>
+        <tr>
+            <td class="mathjax_process">\(y\)</td>
+            <td class="mathjax_process">\(1/4\)</td>
+            <td class="mathjax_process">\(1\)</td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(1/4\)</td>
+            <td class="mathjax_process">\(2/4\)</td>
+        </tr>
+        <tr>
+            <td class="mathjax_process"></td>
+            <td class="mathjax_process">\(5/4\)</td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(-3/4\)</td>
+            <td class="mathjax_process">\(R=-6/4\)</td>
+        </tr>
+    </tbody>
+</table>
+Then again
+<ul>
+<li>The highest coefficient is 5/4, first column</li>
+<li>The highest row is min((2/4)/(3/4), (2/4)/(1/4))=first line</li>
+<li>we are clearing the first column</li>
+<li>and we will replace e1 in the base by x</li>
+</ul>
+<table class="table table-striped table-bordered border-dark">
+    <thead>
+        <tr>
+            <th>base</th>
+            <th>x</th>
+            <th>y</th>
+            <th class="mathjax_process">\(e_1\)</th>
+            <th class="mathjax_process">\(e_2\)</th>
+            <th>b</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="mathjax_process">\(e_1\)</td>
+            <td class="mathjax_process">\(1\)</td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(4/3\)</td>
+            <td class="mathjax_process">\(-1/3\)</td>
+            <td class="mathjax_process">\(2/3\)</td>
+        </tr>
+        <tr>
+            <td class="mathjax_process">\(y\)</td>
+            <td class="mathjax_process">\(1/4\)</td>
+            <td class="mathjax_process">\(1\)</td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(1/4\)</td>
+            <td class="mathjax_process">\(2/4\)</td>
+        </tr>
+        <tr>
+            <td class="mathjax_process"></td>
+            <td class="mathjax_process">\(5/4\)</td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(-3/4\)</td>
+            <td class="mathjax_process">\(R=-6/4\)</td>
+        </tr>
+    </tbody>
+</table>
+<table class="table table-striped table-bordered border-dark">
+    <thead>
+        <tr>
+            <th>base</th>
+            <th>x</th>
+            <th>y</th>
+            <th class="mathjax_process">\(e_1\)</th>
+            <th class="mathjax_process">\(e_2\)</th>
+            <th>b</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="mathjax_process">\(x\)</td>
+            <td class="mathjax_process">\(1\)</td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(4/3\)</td>
+            <td class="mathjax_process">\(-1/3\)</td>
+            <td class="mathjax_process">\(2/3\)</td>
+        </tr>
+        <tr>
+            <td class="mathjax_process">\(y\)</td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(1\)</td>
+            <td class="mathjax_process">\(-4/12\)</td>
+            <td class="mathjax_process">\(4/12\)</td>
+            <td class="mathjax_process">\(4/12\)</td>
+        </tr>
+        <tr>
+            <td class="mathjax_process"></td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(-20/12\)</td>
+            <td class="mathjax_process">\(-4/12\)</td>
+            <td class="mathjax_process">\(R=-28/12\)</td>
+        </tr>
+    </tbody>
+</table>
+<p>And with a bit of cleaning</p>
+<table class="table table-striped table-bordered border-dark">
+    <thead>
+        <tr>
+            <th>base</th>
+            <th>x</th>
+            <th>y</th>
+            <th class="mathjax_process">\(e_1\)</th>
+            <th class="mathjax_process">\(e_2\)</th>
+            <th>b</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="mathjax_process">\(x\)</td>
+            <td class="mathjax_process">\(1\)</td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(4/3\)</td>
+            <td class="mathjax_process">\(-1/3\)</td>
+            <td class="mathjax_process">\(2/3\)</td>
+        </tr>
+        <tr>
+            <td class="mathjax_process">\(y\)</td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(1\)</td>
+            <td class="mathjax_process">\(-1/3\)</td>
+            <td class="mathjax_process">\(1/3\)</td>
+            <td class="mathjax_process">\(1/3\)</td>
+        </tr>
+        <tr>
+            <td class="mathjax_process"></td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(0\)</td>
+            <td class="mathjax_process">\(-5/3\)</td>
+            <td class="mathjax_process">\(-1/3\)</td>
+            <td class="mathjax_process">\(R=-7/3\)</td>
+        </tr>
+    </tbody>
+</table>
+<div>
+All of our <b>slack variables</b> are positives so
+we are good. The solution is
+<span>
+\[
+\begin{cases}
+x = 2/3\\
+y = 1/3\\
+e_1 = 0\\
+e_2 = 0\\
+z = 7/3\\
+\end{cases}
+\]
+</span>
+</div>
+</blockquote>
