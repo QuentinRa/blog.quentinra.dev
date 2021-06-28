@@ -63,7 +63,6 @@ how you should do it.
 * [ ] First-order logic course
 * [ ] Cyber security course
 * [ ] Macroeconomic course
-* [ ] extreme Programming
 * [ ] Logic course
 
 **Update content**
@@ -72,8 +71,6 @@ how you should do it.
 * [ ] Check out this material <https://github.com/dlu02/projet-pima-s3-nasa>
   for agile-scrum
 * [ ] Java databases
-* [ ] Optimisation, quadratic form?
-* [ ] Optimisation, <http://pgoutet.free.fr/td/maths3_optimisation_contrainte.pdf>
 
 **Exercises**
 
