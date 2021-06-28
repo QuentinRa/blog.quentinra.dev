@@ -60,6 +60,7 @@ Other methods
 * [Least squares methods](uo/least-squares.md)
 * [Geometric programming](uo/geometric.md)
 * [Conjugate gradient method](uo/conjudate.md)
+* [Quadratic problems](uo/quadratic.md)
 
 <hr class="sl">
 
