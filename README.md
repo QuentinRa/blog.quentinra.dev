@@ -66,11 +66,10 @@ how you should do it.
 **Update content**
 
 * [ ] add anti-patterns in ``DESIGN PATTERNS`` course
-* [ ] Check out this material <https://github.com/dlu02/projet-pima-s3-nasa>
-  for agile-scrum
 * [ ] Java databases
 * [ ] Differentials methods (Numerical analysis)
-* [ ] check notes
+* [ ] check notes (Java)
+* [ ] check notes (Numerical analysis)
 
 **Exercises**
 
