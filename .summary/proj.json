@@ -43,8 +43,8 @@
       "icon": "<i class=\"bi bi-award\"></i>"
     },
     {
-      "tag": "extreme-programming",
-      "name": "extreme dev.",
+      "tag": "methods",
+      "name": "Methodologies",
       "desc": "Learn more about methods like model-driven dev...",
       "icon": "<i class=\"bi bi-emoji-dizzy\"></i>"
     }
