@@ -63,7 +63,6 @@ public ForwardList(ForwardList<E> liste) {
     else {
         // deep copy (not at all, but still better than nothing)
         for (E e : liste) this.add(e);
-
     }
 }
 ```
