@@ -69,6 +69,18 @@ that's just your IDE who is creating a copy. If the path is wrong then you will
 get a NullPointerException since getResource will fail.
 </blockquote>
 
+``Cannot invoke "javafx.scene.control.MenuBar.isUseSystemMenuBar()" because "this.menuBar" is null``
+
+<blockquote class="spoiler">
+Comment this
+<pre><code class="language-java"
+>if ((osType == OSCheck.OSType.MacOS) && !menuBar.isUseSystemMenuBar())
+{
+  menuBar.setUseSystemMenuBar(true);
+}
+</code></pre>
+</blockquote>
+
 ``Controller is null``
 
 <blockquote class="spoiler">
