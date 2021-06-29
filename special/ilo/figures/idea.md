@@ -9,12 +9,16 @@ IntelliJ [here](../../../tools/jetbrains/index.md).
 > the project is working. That not our case so you
 > will have to add the test classes one after another.
 
+<hr class="sl">
+
 ## easy setup
 
 Remove the class `RunAllTests.java`
 since you won't need it and it makes thing hard
 but it's a useless class since we will run tests
 using IDEA and not some java.
+
+<hr class="sr">
 
 ## real setup (2 minutes but tiring)
 
