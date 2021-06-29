@@ -5,10 +5,10 @@
 Before starting, please take note that in the project,
 you got 3 files
 
-* ``ListeOperations.pdf`` : visual as how you should code some
+* ``ListeOperations.pdf`` : visual as to how you should code some
 methods
-* ``src/lists/ListIteratorTest`` : **testing** your code
-before writing the rest
+* ``src/lists/ListIteratorTest`` : **test** your code
+mid-way (please use it or you are gonna regret it later)
 * ``TP Listes.pdf`` : what you need to do :)
 
 Then open the project in your favorite
