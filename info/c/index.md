@@ -79,7 +79,15 @@ interfaces in a terminal. I you do know the
 great ``VIM`` editor, then the interface was made with
 ncurses. It's simple and really easy to learn.
 
-...
+You can install ncurses using
+
+* ``sudo apt-get install libncurses5-dev libncursesw5-dev``
+* check installed with ``ls -la /usr/include/ncurses.h``
+
+You may check these resources
+
+* <https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/>
+* <https://github.com/tony/NCURSES-Programming-HOWTO-examples>
 
 <div class="sl"></div>
 
