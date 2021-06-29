@@ -213,8 +213,8 @@ But now with JavaFX I'm better.
 
 * [Swing and AWT](graphic/swing-awt.md)
 * [JavaFX](graphic/javafx.md)
-* [lwjgl3](graphic/lwjgl3.md)
-* [Libgdx](graphic/libgdx.md)
+* libgdx
+* litiengine
 
 <hr class="sl">
 
