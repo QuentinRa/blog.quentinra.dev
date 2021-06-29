@@ -10,6 +10,8 @@ won't install an external SceneBuilder and the problem of that is
 
 So **do the proper one**!
 
+<hr class="sr">
+
 ## Fast installation
 
 * open project, cancel if asked to find JDK
@@ -18,6 +20,8 @@ So **do the proper one**!
 * then click ``Install JavaFX`` red message
 * then click ``Install SceneBuilder`` red message
 * done
+
+<hr class="sl">
 
 ## Normal yet easy installation
 
@@ -50,6 +54,8 @@ You can now make the view but let's make a configuration to run our **Main**.
 
 **ALSO while you are here**, set program 
 argument ``-name a_name_here``.
+
+<hr class="sr">
 
 ## And now?
 
