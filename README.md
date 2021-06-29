@@ -53,7 +53,7 @@ how you should do it.
 
 * [ ] Complete UML course (0 / 5)
 * [ ] Complete C course
-* [ ] Complete Java course (notes, libgdx, lwjgl, javafx, exercises)
+* [ ] Complete Java course (notes, libgdx, lwjgl, javafx)
 * [ ] Complete Statistics course
 * [ ] Complete Probabilities course
 * [ ] Complete R course
@@ -68,22 +68,11 @@ how you should do it.
 * [ ] add anti-patterns in ``DESIGN PATTERNS`` course
 * [ ] Differentials methods (Numerical analysis)
 * [ ] check notes (Numerical analysis)
-
-**Exercises**
-
-* [ ] HTML
-* [ ] CSS
-* [ ] PHP
 * [ ] ILO MCQs
 * [ ] OCaml MCQs
-* [ ] Assembly
-* [ ] Macroeconomic
-* [ ] Optimisation (Primal and dual)
-* [ ] Numerical analysis (norms)
 
 **Typos**
 
-* [x] Assembly
 * [ ] C
 * [ ] Java
 * [ ] Optimization
