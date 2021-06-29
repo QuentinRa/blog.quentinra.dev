@@ -15,6 +15,9 @@ Materials
 
 * [Source Part1](download:sources/TPChat.zip)
 * [Source Part2](download:sources/ChatClientJavaFX.zip)
+* just so you know, in 2021, the ClientFrame.fxml file
+  leaked during the FIPA classes. Legends are saying
+  that you could find it, somewhere, though I don't know where?
 
 <hr class="sr">
 
