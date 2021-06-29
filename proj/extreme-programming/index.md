@@ -101,8 +101,37 @@ because that also means here more documentation.
 
 <hr class="sl">
 
+## Data-driven programming
+
+*note*: beware that data-driven is also used BigData
+but that's not the same, we even added "programming".
+
+For this one, you don't need a course, you are most likely
+using it. Simply make a program that will adapt itself
+according to the data provided.
+
+Something like making a file for the configuration
+and parsing it, making files for the view and render
+them, making files for your data like the NPC/Quests/...
+in a RPG instead of writing everything in the code.
+
+When you do that, someone can easily change the
+data without changing the code (or someone should
+be able to). If that's the case, then your program
+is "data-driven".
+
+<hr class="sr">
+
 ## Sources
+
+Documentation-driven development
 
 * <https://gist.github.com/zsup/9434452>
 * <https://medium.com/swlh/documentation-driven-development-f9a6d3258e5>
 * <https://regisfreyd.com/documentation-driven-development>
+
+Data-driven programming
+
+* <https://en.wikipedia.org/wiki/Data-driven_programming>
+* <https://cs.stanford.edu/people/eroberts/courses/cs106a/handouts/56-data-driven-programs.pdf>
+* <https://simplicable.com/new/data-driven>
