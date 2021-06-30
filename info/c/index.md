@@ -8,7 +8,7 @@
 If you want some little knowledge about programming before
 starting, this page should help you : [First timer](sub/first-time.md).
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Introduction
 
@@ -39,7 +39,7 @@ int main(int argc, char *argv[]){
 }
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Start programming in C
 
@@ -64,13 +64,13 @@ And what you might use
 * [Files](start/files.md)
 * [System calls](start/syscall.md)
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Advanced programming in C
 
 ...
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Using ncurses
 
@@ -89,7 +89,7 @@ You may check these resources
 * <https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/>
 * <https://github.com/tony/NCURSES-Programming-HOWTO-examples>
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Threads and processes
 
@@ -128,7 +128,7 @@ efficiently.
 * [Threads : Concurrence](proc/concurrence.md)
 * [Threads : Semaphores](proc/semaphores.md)
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Networking
 
