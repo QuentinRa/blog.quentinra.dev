@@ -43,6 +43,12 @@
       "icon": "<i class=\"bi bi-sim\"></i>"
     },
     {
+      "tag": "nosql",
+      "name": "NoSQL",
+      "desc": "Learn about NoSQL with MongoDB and Cypher.",
+      "icon": "<i class=\"bi bi-stack\"></i>"
+    },
+    {
       "tag": "cyber-security",
       "name": "Cyber security",
       "desc": "What we know about cyber security.",
