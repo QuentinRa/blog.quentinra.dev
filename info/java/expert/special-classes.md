@@ -59,7 +59,7 @@ You may see this a lot, but don't use it okay? You
 may use for some tests but that's it. Be great and
 use anything aside that.
 
-```
+```java
 public class Main {
     // ...
 }
