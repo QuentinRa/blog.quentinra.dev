@@ -85,8 +85,28 @@ db.getCollection("table_name").find( { name: "Calistro" } )
   only for some document
 * each document will have a unique attribute
   ``_id`` added, having the type `ObjectId`
+* from what I know, the only way to create
+  a relation between two documents and either
+    * making an embed document
+    * using the ``_id`` value in the referencing
+      document
+      
+An embed document would be something like this
 
-<hr class="sr">
+```json
+{
+  "name": "John",
+  "cars": [
+    {
+      "type": "..."
+      "price": "..."
+      "since": "..."
+    }
+  ]
+}
+```
+
+<hr class="sl">
 
 ## Types
 
