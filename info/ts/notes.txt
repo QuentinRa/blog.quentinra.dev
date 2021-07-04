@@ -1,0 +1,60 @@
+https://www.typescriptlang.org/
+
+https://www.typescriptlang.org/docs/handbook/modules.html
+
+https://www.codevscolor.com/typescript-class-example
+
+https://godotengine.org/
+
+4. TypeScript
+Typescript vous permet d’écrire du JavaScript uniformisé et d’ensuiter compiler dans n’importe quelle version de JS. En particulier, vous aurez une vérification syntaxique plus forte car le langage est beaucoup plus typé.
+
+Installer : npm install -g typescript
+
+Compiler en JS : npx tsc ou tsc parfois
+
+Compiler en JS (mode watch donc auto-compilation) : npx tsc -w ou tsc
+
+Vous allez créer des fichiers .ts qui seront compilés en .js. Personnellement j’utilise un fichier tsconfig.json (créé avec npx tsc --init) qui contient les informations sur la version de Javascript (ES2020/commonjs sont mes valeurs target/module).
+
+Quelques éléments de syntaxe en plus de celle basique du js
+
+// on précise le type des variables
+let nom_variable : type; // déclaration
+let nom_variable : type = valeur; // pareil mais avec assignation
+
+let nom_variable : any; // équivalent à ne rien mettre
+let nom_variable : undefined | null; // peut prendre l'un de ces types
+
+// supprimer un warning
+// @ts-ignore
+
+// rendre une classe/function/n'importe quoi public
+export class Nom {}
+
+// importer les éléments exportés=publics
+import { TRUC_EXPORTE , AUTRE_TRUC } from "../files/file"; // un fichier file donc file.ts et file.js
+
+// les type de retour fonctions
+static getString() : string | undefined { return ...; }
+
+// comme en JS
+let a = undefined ?? 0; // a vaut 0 car la valeur avant ?? est undefined (pareil avec null)
+
+
+class Example {
+ // un getter
+ get number() : number { return 10; };
+ // un setter
+ set number(n: number) { /* code */ };
+}
+
+// usage
+let example : Example = new Example();
+example.number; // evaluates as 10
+example.number = 5; //ok
+
+// assert that a value have this type
+let a = /* some value */;
+let b : number = <number>a; // means that we are asserting a is a number so b will be a number
+Le site officiel est une bonne référence : https://www.typescriptlang.org/ ou encore https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html.
