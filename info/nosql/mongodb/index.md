@@ -44,6 +44,46 @@ show collections
 
 You can exit using ``exit`` instruction.
 
+<hr class="sl">
+
+## Documents
+
+A document is a JSON object. It's something like this
+
+```json
+{
+  "key1": "value",
+  "key2": 5,
+  "key3": true,
+  "key4": [
+    {
+      "key": "value"
+    }
+  ]
+}
+```
+
+The keys are your attributes, the value are the value
+for these attributes for this document.
+
+```sql
+-- creating table persons
+-- insert a document { name: "Calistro" }
+db.getCollection("persons").insertOne( { name: "Calistro" } )
+-- list all
+db.getCollection("table_name").find()
+-- list all documents having name equals to "Calistro"
+db.getCollection("table_name").find( { name: "Calistro" } )
+```
+
+**Notes**
+
+* attributes are not properties of the collection
+  but the document, so you may add an attribute
+  only for some document
+* each document will have a unique attribute
+  ``_id`` added, having the type `ObjectId`
+
 <hr class="sr">
 
 ## Sources
