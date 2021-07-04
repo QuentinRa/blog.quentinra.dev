@@ -53,6 +53,12 @@
       "name": "Cyber security",
       "desc": "What we know about cyber security.",
       "icon": "<i class=\"bi bi-shield-shaded\"></i>"
+    },
+    {
+      "tag": "node",
+      "name": "Node.js",
+      "desc": "Write application in electron or simply server-side logic in JavaScript.",
+      "icon": "<i class=\"bi bi-tropical-storm\"></i>"
     }
   ]
 }
