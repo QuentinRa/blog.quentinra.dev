@@ -34,6 +34,8 @@ You can find all the content of your collection using
 
 ```sql
 db.getCollection("table_name").find()
+-- that's the same
+db.table_name.find()
 ```
 
 And you can see all of your collections using
@@ -105,8 +107,39 @@ db.getCollection("persons").find( { _id: ObjectId('60ce0899bc39bc6984e46e32') } 
 
 <hr class="sr">
 
+## Insert / Update / Delete
+
+First, check the [Quick reference](https://docs.mongodb.com/manual/reference/mongo-shell/#command-helpers)
+because it's quite useful.
+
+You may use ``db.collection.insertOne()``
+or ``db.collection.insertMany()`` to create new
+documents in a collection like we saw above.
+
+You can use ``db.collection.updateOne()``
+or ``db.collection.updateMany()`` to update documents.
+
+```sql
+db.getCollection("persons").updateOne(
+    -- a filter selecting the one to update
+    { _id: ObjectId('60ce0899bc39bc6984e46e32') },
+    -- update
+    {
+        $set: { "name": "..." }
+    }
+)
+```
+
+And you may use ``db.collection.deleteOne()``
+and ``db.collection.deleteMany()`` to delete
+documents, both taking a filter too.
+
+<hr class="sl">
+
 ## Sources
 
 * <https://docs.mongodb.com/manual/reference/mongo-shell/#command-helpers>
+* <https://docs.mongodb.com/manual/tutorial/insert-documents/>
+* <https://docs.mongodb.com/manual/tutorial/update-documents/>
 * <https://docs.mongodb.com/manual/faq/fundamentals/#how-does-mongodb-address-sql-or-query-injection>
 * <https://betterprogramming.pub/little-bobby-collections-how-to-write-a-mongodb-injection-ad58a4e2d754>
