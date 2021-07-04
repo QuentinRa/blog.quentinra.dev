@@ -86,7 +86,27 @@ db.getCollection("table_name").find( { name: "Calistro" } )
 
 <hr class="sr">
 
+## Types
+
+Because you may want to know but the types that
+you may use a lot in mongo are
+listed [here](https://docs.mongodb.com/manual/core/shell-types/).
+
+What I want to add, let's says you are look for
+a documented having the id ``60ce0899bc39bc6984e46e32``.
+You can't do
+
+```sql
+-- no result, type won't match with ObjectId
+db.getCollection("persons").find( { _id: "60ce0899bc39bc6984e46e32" } )
+-- so you must do
+db.getCollection("persons").find( { _id: ObjectId('60ce0899bc39bc6984e46e32') } )
+```
+
+<hr class="sr">
+
 ## Sources
 
+* <https://docs.mongodb.com/manual/reference/mongo-shell/#command-helpers>
 * <https://docs.mongodb.com/manual/faq/fundamentals/#how-does-mongodb-address-sql-or-query-injection>
 * <https://betterprogramming.pub/little-bobby-collections-how-to-write-a-mongodb-injection-ad58a4e2d754>
