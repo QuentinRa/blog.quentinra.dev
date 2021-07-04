@@ -8,7 +8,7 @@ here some feedback.
 * Their website is [here](https://www.cesim.com/)
 * You will login [here](https://sim.cesim.com/)
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## How grades are calculated
 
@@ -42,7 +42,7 @@ is testing your luck since no one will tell you
 what are your mistakes nor how you could improve
 (for the report you will have some feedback though).* 
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## The main idea
 
@@ -69,7 +69,7 @@ how much many you could have with this report
 and what you did wrong. The grades in our year
 were all in the range ``7/20 up to 12/20``...
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Presentation of the website
 
@@ -106,7 +106,7 @@ are ending...
 > will use these to show how much money you will have in the next turn. So write
 > some values carefully.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Reading results
 
@@ -139,7 +139,7 @@ to be stable, for instance, xxx each winter and
 yyy each summer or zzz each year or ttt each
 period.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Some help for your strategy
 
