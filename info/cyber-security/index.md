@@ -107,6 +107,16 @@ like a login one.
 
 * [Login](web/login.md)
 
+<hr class="sl">
+
+## Looking for someone
+
+Some links
+
+* [sherlock](https://sherlock-project.github.io/) and [tutorial](https://www.geeksforgeeks.org/sherlock-hunt-username-on-social-media-kali-linux-tool/)
+* [maltego](https://www.maltego.com/) and [help](https://en.kali.tools/?p=24)
+* [spiderfoot](https://www.spiderfoot.net/) and [help](https://www.hackingloops.com/spiderfoot/)
+
 <hr class="sr">
 
 ## Sources
