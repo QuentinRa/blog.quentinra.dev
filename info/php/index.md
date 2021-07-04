@@ -259,6 +259,37 @@ You may also check
 
 <hr class="sr">
 
+## Captcha
+
+In some cases, you should use a captcha (something
+checking that you're human). Someone may write a script trying
+to bruteforce your login form. You can add a captcha
+and check on your server that the captcha got submitted
+before processing the login form.
+
+The most-well know solution is ReCaptcha (v2 / v3)
+of google. Note that in v3, you won't process a captcha
+but the google analytics will watch what you are doing
+and may request you to submit a captcha if your
+human score is too low. Check their
+tutorial [here](https://developers.google.com/recaptcha/intro)
+
+* (v2) put a html tag looking like that `` <div class="g-recaptcha" data-sitekey=""></div>``
+* (v2) in your PHP
+
+```php
+$post_data = array('secret' => 'your-secret-key', 'response' => 'data-site-key');
+// send post request
+// ...
+// to https://www.google.com/recaptcha/api/siteverify
+// and check the result
+```
+
+You may try [hcaptcha](https://www.hcaptcha.com/) as
+an alternative to ReCaptcha.
+
+<hr class="sl">
+
 ## Sources
 
 * <https://www.javatpoint.com/get-vs-post>
@@ -272,3 +303,4 @@ You may also check
 * <https://www.php.net/manual/fr/reserved.variables.cookies.php>
 * <https://www.php.net/manual/fr/language.functions.php>
 * <https://www.php.net/manual/en/functions.anonymous.php>
+* <https://stackoverflow.com/questions/4094701/do-i-need-to-have-when-do-i-need-captcha>
