@@ -149,6 +149,29 @@ on other git-server.
 
 <hr class="sl">
 
+## Commits
+
+You may have seen some commits with this
+label on some (if not all) commits
+
+![gpg](gpg.png)
+
+You can sign your commits are have this too using
+[GPG keys](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/generating-a-new-gpg-key)
+(github tutorial). You will need to write
+a passphrase each time you are committing but you
+can reduce the number of times asked 
+
+* [help on stackoverflow](https://stackoverflow.com/questions/38384957/prevent-git-from-asking-for-the-gnupg-password-during-signing-a-commit)
+* [gpg-agent.conf](https://gist.github.com/tknv/43604e851a371949343b78261c48f190)
+
+Also someone can commit on the behalf
+of someone else (not related to GPG)
+
+* [authored / committed](https://stackoverflow.com/questions/25327743/what-flow-causes-github-commits-that-are-authored-by-one-user-but-committed)
+
+<hr class="sr">
+
 ## Fancy notes
 
 Did you hear about badges? You can find them in the 
@@ -186,7 +209,7 @@ And you can even find things like this
 
 ![](https://readme-jokes.vercel.app/api)
 
-<hr class="sr">
+<hr class="sl">
 
 ## Sources
 
