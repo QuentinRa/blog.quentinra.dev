@@ -77,3 +77,28 @@ public record RunRunnableOnAction(Runnable runnable) implements ActionListener
     }
 }
 ```
+
+<hr class="sl">
+
+## Read more
+
+```java
+public record MyRecord(int playerAchievements, int friendsPlaying, int timePlayed) {
+
+    // canonical constructor
+    // MyRecord(int playerAchievements, int friendsPlaying, int timePlayed)
+    public MyRecord {}
+
+    // another constructor, must call this
+    public MyRecord() { this(0,0,0); }
+
+    // you can add methods like you usually did
+    public void aMethod() {}
+    public static void aMethod2() {}
+}
+```
+
+* <https://weakreference.medium.com/java-16-records-f16c2ecb4b05>
+* <https://andrew-flower.com/blog/202011-java-records>
+* <https://www.logicbig.com/tutorials/core-java-tutorial/java-16-changes/intro-to-java-records.html>
+* <https://awesomely-java.blogspot.com/2021/02/compact-constructor-for-record-classes.html>
