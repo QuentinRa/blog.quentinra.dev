@@ -134,6 +134,17 @@ And you may use ``db.collection.deleteOne()``
 and ``db.collection.deleteMany()`` to delete
 documents, both taking a filter too.
 
+<hr class="sr">
+
+## Notes
+
+Create a new user
+
+```sql
+use database_name
+db.createUser( { user: "myuser", pwd: "password", roles: ["readWrite"] })
+```
+
 <hr class="sl">
 
 ## Sources
