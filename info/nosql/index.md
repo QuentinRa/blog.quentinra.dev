@@ -1,7 +1,7 @@
 # Introduction
 
 NoSQL stands for NotOnlySQL. It's used to describe
-Graph databases (GDB) that are not
+databases that are not
 relational databases but allows SQL and a new kind
 of query language.
 
@@ -10,14 +10,17 @@ since 1960) and it's used by
 a lot of actors like Google, Microsoft, Facebook
 or Twitter.
 
+We got 4 kinds of NoSQL databases models
+
+* Key-value: a key is associated to a value
+* Document: data stored as documents, [mongoDB](https://www.mongodb.com/)
+* Columnar: using a key-columns where column is a bunch of values
+* Graph: nodes and edges, [cypher](https://neo4j.com/developer/cypher/)
+
 Since 2019, the [GQL](https://en.wikipedia.org/wiki/Graph_Query_Language)
-(Graph Query Language) may becomes a database query language
+(Graph Query Language) may becomes a database query 
+language for Graph databases (GDB)
 like the SQL but it seems they are still working on it.
-
-There is a lot of kind of NoSQL database as of now,
-
-* [mongoDB](https://www.mongodb.com/) is a "document" kind of database
-* [cypher](https://neo4j.com/developer/cypher/) is a "nodes and edges" kind of database
 
 <hr class="sr">
 
@@ -41,3 +44,5 @@ About mongo
 * <https://www.mongodb.com/nosql-explained>
 * <https://www.ibm.com/cloud/learn/nosql-databases>
 * <https://en.wikipedia.org/wiki/Cypher_(query_language)>
+* <https://graphql.org/>
+* <https://docs.microsoft.com/en-us/azure/architecture/data-guide/big-data/non-relational-data>
