@@ -54,6 +54,13 @@ tasks.withType(JavaCompile) {
     // sourceCompatibility = 11
     // targetCompatibility = 11
 }
+// or check gradle toolchains
+// you may be able to use this
+// java {
+//    toolchain {
+//      languageVersion = JavaLanguageVersion.of(11)
+//    }
+// }
 ```
 
 <hr class="sl">

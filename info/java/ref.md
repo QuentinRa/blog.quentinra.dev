@@ -34,3 +34,4 @@ Read about the new changes of Java
 * <https://docs.spring.io/spring-security/site/docs/4.2.4.RELEASE/apidocs/org/springframework/security/crypto/password/Pbkdf2PasswordEncoder.html>
 * <https://www.devglan.com/online-tools/jasypt-online-encryption-decryption>
 * <https://softwareengineering.stackexchange.com/questions/400077/how-to-protect-software-from-being-deleted-by-antivirus>
+* <https://docs.gradle.org/current/userguide/toolchains.html>
