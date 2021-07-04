@@ -196,3 +196,7 @@ task makeJar(type: Jar) {
     with jar
 }
 ```
+
+* you can change the gradle JVM version
+  * <https://stackoverflow.com/questions/18487406/how-do-i-tell-gradle-to-use-specific-jdk-version#answer-64220088>
+  * in Intellij <https://www.jetbrains.com/help/idea/gradle-jvm-selection.html>
