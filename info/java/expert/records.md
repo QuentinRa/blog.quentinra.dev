@@ -56,3 +56,24 @@ System.out.println(r.equals(new MyRecord(1,0,5000)));
 System.out.println(r.hashCode());
 // 5961
 ```
+
+<hr class="sr">
+
+## Records for Listeners
+
+You might also use a record for a listener, at least
+a listener having one attribute (otherwise you will
+write more code)
+
+```java
+// note that this is not the best example but you
+// should understand the idea
+public record RunRunnableOnAction(Runnable runnable) implements ActionListener
+{
+    
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        this.runnable.run();
+    }
+}
+```
