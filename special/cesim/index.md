@@ -36,8 +36,8 @@ rank in 1 and 2. You got a grade, looking like this
 6. 9/20
 7. 8/20
 
-Then your file grade is the mean of your three grades.
-*Please take note that the part of this UE
+Then your final grade is the mean of your three grades.
+*Please take note that a part of this UE
 is testing your luck since no one will tell you
 what are your mistakes nor how you could improve
 (for the report you will have some feedback though).* 
