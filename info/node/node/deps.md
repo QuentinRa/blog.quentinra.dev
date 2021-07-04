@@ -15,3 +15,5 @@ About the versioning,
 * **version_from-version_to** : interval
 * **a||b** : logical or, either rule a or rule b
 * **latest** : use latest
+
+You can install a dependency using ``npm install name_of_the_require```.
