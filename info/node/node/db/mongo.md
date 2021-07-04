@@ -25,7 +25,7 @@ await mongoose.connect('url', {
 ## Creating a model
 
 ```js
-const User = new Schema({
+const Users = new Schema({
     name: {
         type: String,
         minLength: 2,
@@ -44,7 +44,7 @@ const User = new Schema({
     ]
 })
 
-const Model = mongoose.model('Users', mySchema);
+const Model = mongoose.model('Users', Users);
 ```
 
 <hr class="sl">
