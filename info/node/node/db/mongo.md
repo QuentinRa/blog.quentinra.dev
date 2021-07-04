@@ -1,13 +1,51 @@
 ## MongoDB
 
 You can use mongoDB in Node, using MongoDB or
-**mongoose** library (prefer using mongoose).
+**mongoose** library (prefer using 
+[mongoose](https://www.npmjs.com/package/mongoose)).
+
+```js
+const mongoose = require('mongoose');
+```
+
+Connecting
+
+```js
+// from the doc
+await mongoose.connect('url', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
+  useCreateIndex: true
+});
+```
 
 <hr class="sr">
 
 ## Creating a model
 
-...
+```js
+const User = new Schema({
+    name: {
+        type: String,
+        minLength: 2,
+        maxLength: 128,
+        trim: true
+        default: 'John doe'
+    },
+    // embed / sub-document
+    cars: [
+        {
+            model: {
+                type: String,
+                required: true
+            }
+        }
+    ]
+})
+
+const Model = mongoose.model('Users', mySchema);
+```
 
 <hr class="sl">
 

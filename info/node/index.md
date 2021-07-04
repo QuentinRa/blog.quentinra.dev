@@ -66,6 +66,10 @@ the script
 * [Using multiples files](node/exports.md)
 * [Promises](node/promises.md)
 
+Other notes
+
+* [Using mongoDB](node/db/mongo.md)
+
 <hr class="sl">
 
 ## Sources
