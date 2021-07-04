@@ -1,5 +1,75 @@
-# ...
+# Structures
 
 [Go back](../index.md)
 
-...
+In R, you should consider using function
+rather than these structures but the if / for
+are quite convenient.
+
+You can use
+
+* ``next``: in a loop, next iteration
+* ``break``: in a loop, exit the loop
+
+<hr class="sl">
+
+**if**
+
+```r
+if (condition) {
+  # code
+}
+
+if (condition) {} else {}
+
+# res = condition ? if_true : if_false
+res <- ifelse(condition, if_true, if_false)
+```
+
+<hr class="sr">
+
+**while**
+
+```r
+while(condition) {}
+
+# use break to exit
+repeat {}
+```
+
+<hr class="sl">
+
+**foreach / for i in**
+
+```r
+for (var in vector){
+  
+}
+```
+
+
+<hr class="sr"> 
+
+**switch**
+
+```r
+res <- switch(value, case_1, case_2, case_n)
+```
+
+<hr class="sl"> 
+
+## Apply functions
+
+* ``lapply(v, f)``
+
+apply ``f`` on each element of `v`, the result
+is an element of a list.
+
+* ``sapply(v, f)``
+
+Same but returns a vector.
+
+* ``aapply(m, f, 1)``
+
+Apply a function on each element of a matrix
+and returns the matrix.
