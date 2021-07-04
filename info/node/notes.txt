@@ -21,7 +21,6 @@ https://metamug.com/article/java/okhttp-post-request.html
 
 https://www.geeksforgeeks.org/how-to-validate-data-using-validator-module-in-node-js/
 https://nodejs.org/en/knowledge/advanced/buffers/how-to-use-buffers/
-https://nodejs.org/en/knowledge/file-system/how-to-read-files-in-nodejs/
 
 Vous pouvez aussi télécharger nodemon pour que votre script soit relancé s’il crash ou est modifié,
  très pratique pour un bot discord par exemple (npm install -g nodemon avec g pour global).

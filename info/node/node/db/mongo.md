@@ -51,7 +51,23 @@ const Model = mongoose.model('Users', mySchema);
 
 ## Making a query
 
-...
+```js
+await Model.find({});
+await Model.findOne(/* ... */);
+// replace "Calistro" by "calistro"
+await Model.updateOne({ name : "Calistro"}, { name: "calistro" });
+await Model.updateMany(/* ... */);
+// replace "Calistro" by "calistro"
+await Model.insertOne({ name : "Calistro"});
+await Model.insertMany(/* array of objects */);
+// ...
+```
+
+Note that you should provide a callback or handles
+errors with a ``try-catch``.
+
+Note that you can't use variables that are not in the
+model, even if you can see them with console.log.
 
 <hr class="sr">
 
