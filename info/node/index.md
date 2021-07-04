@@ -26,3 +26,50 @@ You must install Node and a package manager. I'm using
 
 Run ``node -v`` and `npm -v` if you want to check if
 your installation is successful.
+
+<hr class="sl">
+
+## package.json
+
+Starting a new project in Node means calling
+``npm init``. It will ask you some information to
+generate a ``package.json``. This file will be used
+to declare the library that you will use for your
+project and so on.
+
+Your file may look like this
+
+```json
+{
+  "name": "name",
+  "version": "version",
+  "description": "desc",
+  "main": "index.js",
+  "dependencies": {
+    "package.json": "^2.0.1",
+    "typescript": "^4.3.5",
+    "nodemon": "^2.0.7",
+    "npm": "^7.18.1"
+  }
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "homepage": ""
+}
+```
+
+Some notes
+
+* [Dependencies](node/deps.md)
+* [Scripts](node/scripts.md)
+
+Once you defined your package.json, you need to generate
+the ``package-lock.json`` by installing the dependencies.
+
+* ``npm install`` or ``npm i``
+* run ``npm ci`` if you already got a ``package-lock.json``,
+* ``npm update`` will update dependencies
