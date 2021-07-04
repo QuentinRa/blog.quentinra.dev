@@ -168,6 +168,7 @@ Special notes
 
 * [Special classes](expert/special-classes.md)
 * [UTF-8](expert/utf-8.md)
+* [Preferences / Properties](expert/saving-data.md)
 
 <hr class="sr">
 
