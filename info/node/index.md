@@ -73,3 +73,18 @@ the ``package-lock.json`` by installing the dependencies.
 * ``npm install`` or ``npm i``
 * run ``npm ci`` if you already got a ``package-lock.json``,
 * ``npm update`` will update dependencies
+
+<hr class="sr">
+
+## Start using Node
+
+Well to be honest, you got almost everything you needed
+to know. You will then have to write either **JavaScript**
+or **TypeScript** (a sort of improved JavaScript, creating
+a .js file when compiled).
+
+You run a script using ``node my_script.js``. Inside
+the script
+
+* [require](node/require.md) (import)
+* [Using multiples files](node/exports.md)
