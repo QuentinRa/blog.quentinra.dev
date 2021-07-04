@@ -63,7 +63,10 @@ to look a what kind of breaches got reported like
 
 You may check <https://nvd.nist.gov/general> 
 or [nvd search](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&search_type=all)
-if you are looking for vulnerabilities.
+if you are looking for vulnerabilities. I'm liking
+this page a lot [snyk.io/vuln](https://snyk.io/vuln) since
+they are sometimes giving quite good explanations and
+you examples.
 
 <hr class="sr">
 
