@@ -175,3 +175,12 @@ https://imperceptiblethoughts.com/shadow/introduction/
 https://github.com/openjfx/samples/tree/master/HelloFX
 
 https://github.com/nipafx/slides
+
+https://stackoverflow.com/questions/289434/how-to-make-a-java-thread-wait-for-another-threads-output
+
+https://nipafx.dev/java-13-guide/
+https://github.com/nipafx/demo-java-x
+https://www.azul.com/blog/81-new-features-and-apis-in-jdk-13/
+https://github.com/nipafx/nipafx.dev
+https://github.com/nipafx/slides/blob/master/java-16/_presentation.adoc
+https://github.com/nipafx/slides
