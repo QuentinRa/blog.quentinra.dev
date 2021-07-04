@@ -136,6 +136,18 @@ documents, both taking a filter too.
 
 <hr class="sr">
 
+## Filter
+
+You may add more restrictions to your filter
+using ``or`` or ``and``.
+
+```sql
+db.persons.find({ $or: [ { _id: ObjectId('60ce0899bc39bc6984e46e32') }, { _id: ObjectId('60ce0899bc39bc6984e46e33') } ] })
+db.persons.find({ $and: [ { _id: ObjectId('60ce0899bc39bc6984e46e32') }, { username: "example" } ] })
+```
+
+<hr class="sl">
+
 ## Notes
 
 Create a new user
@@ -145,7 +157,7 @@ use database_name
 db.createUser( { user: "myuser", pwd: "password", roles: ["readWrite"] })
 ```
 
-<hr class="sl">
+<hr class="sr">
 
 ## Sources
 
@@ -154,3 +166,4 @@ db.createUser( { user: "myuser", pwd: "password", roles: ["readWrite"] })
 * <https://docs.mongodb.com/manual/tutorial/update-documents/>
 * <https://docs.mongodb.com/manual/faq/fundamentals/#how-does-mongodb-address-sql-or-query-injection>
 * <https://betterprogramming.pub/little-bobby-collections-how-to-write-a-mongodb-injection-ad58a4e2d754>
+* <https://stackoverflow.com/questions/46972695/see-setup-a-user-with-mongodb-compass>
