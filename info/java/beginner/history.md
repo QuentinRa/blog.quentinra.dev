@@ -11,7 +11,7 @@
 * 2010 - SUN sold JAVA to Oracle
 * 2018 - Java 10
 * 2018 - Java 11, Java is not free anymore for commercial projects
-* 2021 - Java 17 :)
+* 2022 - Java 17 :)
 
 **Java8**
 
