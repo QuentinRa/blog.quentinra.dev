@@ -59,7 +59,9 @@ And you may check here if you got hacked
 Also, a lot of website are offering bounties for breaches
 to person like you and me. I think it's quite interesting
 to look a what kind of breaches got reported like
-[here](https://bounty.github.com/) for github.
+[here](https://bounty.github.com/) for github. I recently
+found this website [huntr.dev](https://huntr.dev/)
+which is quite good too.
 
 You may check <https://nvd.nist.gov/general> 
 or [nvd search](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&search_type=all)
