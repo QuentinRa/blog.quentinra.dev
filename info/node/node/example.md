@@ -1,5 +1,7 @@
 ## Example
 
+[Go back](..)
+
 Your file may look like this
 
 ```json

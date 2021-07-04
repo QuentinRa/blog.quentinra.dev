@@ -64,3 +64,4 @@ the script
 
 * [require](node/require.md) (import)
 * [Using multiples files](node/exports.md)
+* [Promises](node/promises.md)
