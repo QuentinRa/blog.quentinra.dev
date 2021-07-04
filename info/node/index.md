@@ -65,3 +65,10 @@ the script
 * [require](node/require.md) (import)
 * [Using multiples files](node/exports.md)
 * [Promises](node/promises.md)
+
+<hr class="sl">
+
+## Sources
+
+* <https://nodejs.dev/learn/the-package-json-guide>
+* <https://nodejs.dev/learn/semantic-versioning-using-npm>
