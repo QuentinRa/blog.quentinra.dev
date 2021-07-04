@@ -17,7 +17,7 @@ such as
 PHP isn't the only way to do that, some developers are now using
 JS with Node.js for example to handle the server-side logic.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Setup
 
@@ -35,7 +35,7 @@ uploading changes on the server (paid but free
 if you register with your student email). Check out
 if your IDE is doing it!
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Routing
 
@@ -70,7 +70,7 @@ folder accessible like that
 ``https://server.name.tld//~username/index.php`` and
 index.php being in ``[...]/username/public_html/index.php``.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Start writing some PHP
 
@@ -108,7 +108,7 @@ like echo where the result will be printed in the resulting
 HTML giving us your final HTML file requested by
 the client.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Basic concepts
 
@@ -154,7 +154,7 @@ calls echo
 <?="Hello World!"?>
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Main concepts
 
@@ -180,7 +180,7 @@ enabled scripts that is).
 To prevent this, simply escape tags using 
 ``htmlentities`` like ``echo htmlentities($username)``.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## MVC in PHP
 
@@ -207,7 +207,7 @@ like a header, a page-specific view, and the footer
 so the controller need to ask all of these to render
 themselves.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Migration
 
@@ -231,7 +231,7 @@ Notes in PHP8
 * add unions return types
 * add annotations
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Tests
 
@@ -257,7 +257,7 @@ You may also check
 * [assertions](https://phpunit.readthedocs.io/en/9.5/assertions.html)
 * [annotations](https://phpunit.readthedocs.io/en/9.5/annotations.html)
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Sources
 
