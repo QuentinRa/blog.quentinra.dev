@@ -182,6 +182,10 @@ while practicing.
 * [Generating a .exe or an installer](expert/exe.md)
 * [Protect a jar](expert/jar.md)
 
+New things added by Oracle
+
+* [Records](expert/records.md) (since Java16)
+
 <hr class="sl">
 
 ## Tests with JUnit
