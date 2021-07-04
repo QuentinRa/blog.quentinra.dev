@@ -285,7 +285,7 @@ $post_data = array('secret' => 'your-secret-key', 'response' => 'data-site-key')
 // and check the result
 ```
 
-You may try [hcaptcha](https://www.hcaptcha.com/) as
+You may consider [hcaptcha](https://www.hcaptcha.com/) as
 an alternative to ReCaptcha.
 
 <hr class="sl">
