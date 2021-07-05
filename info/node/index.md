@@ -110,6 +110,59 @@ working in the template.
 
 <hr class="sr">
 
+## API
+
+You can make an api easily, simply create an
+``express`` app and listen to the requests (get/post).
+
+Simply write 
+
+```js
+const app = require("express")();
+const API_PORT = process.env.PORT || 8080
+app.set('port', API_PORT);
+
+// and at the end
+server.listen(API_PORT, () => console.log(`Server running on port ${API_PORT}`));
+```
+
+Then the code before the listen is your API code,
+calls like these
+
+```js
+// example: code for http://localhost/
+app.get("/", (req, res) => {
+  // 200 = OK
+  let code = 2020;
+  // body
+  // a json object (for instance) or a string / xml / ...
+  let body = {}
+  res.status(code).send(body);
+});
+
+// example: code for http://localhost/endpoint?param=value
+app.get("/endpoint", async (req, res) => {
+    if ( req.query.param !== undefined ) {
+        let param = req.query.param;
+        // ... code ...
+        // sending a file
+        // 200: OK implicit
+        res.sendFile("./index.html")
+    } else {
+        // ... code ...
+      res.status(404).sendFile("./error.html")
+    }
+});
+
+// you can do post requets too
+app.post('/setting/:part1/:part2', (request, reply) => {
+  const {part1, part2} = request.params;
+  // ...
+}
+```
+
+<hr class="sl">
+
 ## Sources
 
 * <https://nodejs.org/en/download/>
