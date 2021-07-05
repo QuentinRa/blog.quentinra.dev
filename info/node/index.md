@@ -121,8 +121,6 @@ Simply write
 const app = require("express")();
 const API_PORT = process.env.PORT || 8080
 app.set('port', API_PORT);
-
-// and at the end
 server.listen(API_PORT, () => console.log(`Server running on port ${API_PORT}`));
 ```
 
@@ -162,6 +160,50 @@ app.post('/setting/:part1/:part2', (request, reply) => {
 ```
 
 <hr class="sl">
+
+## socket.io
+
+If you are planning to make a real-time application like
+a tchat, then you should use WebSockets. [socket.io](https://socket.io/)
+is a library helping you handling those. It's like Sockets
+in other application, you would rather create a connection
+and send only data rather than both sending header + data
+each time you want to send something.
+
+````js
+// in the server
+const app = require("express")();
+const port = process.env.PORT || 3000;
+// http only
+const server = require("http").createServer(app);
+const io = require('socket.io')(server);
+
+server.listen(port, () => { console.log('Server listening at port %d', port); });
+
+io.on('connect', (socket) => {
+  console.log(`new connection ${socket.id}`);
+
+  socket.on('command', (arg, cb) => {})
+  
+  // other "on" for other commands
+}
+````
+
+In the client, you are gonna create a socket with
+the server. Then each time you can to trigger a "on"
+on the server, then call ``socket.emit("event", args)``
+with args the argument. The last one is usually a function
+called ``callback`` that the server will call with the
+result.
+
+You may also add listeners ("on") in the client
+just in case the server emit something.
+
+Well the [examples](https://github.com/socketio/socket.io/tree/master/examples)
+will be more helpful and you should also
+check the [documentation](https://socket.io/get-started/).
+
+<hr class="sr">
 
 ## Sources
 
