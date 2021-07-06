@@ -71,6 +71,24 @@ Some shortcuts
 
 <hr class="sl">
 
+## Tilemap
+
+A tilemap is a map of tiles, and a tile is an image. 
+You can have a Rectangular or a Isometric tilemap. This
+is a convenient way of creating 2D maps since
+
+* you create a palette
+* you create tiles layers (ground, ...)
+* and you move your tiles (grass, ...) to your map,
+  in the right layer
+  
+Creating layer allows you to put things on top of another.
+In Unity, you will have a grid and each tilemap is a layer.
+If you want something to be bellow / on top of the player,
+then play with ``Order in Layer`` property.
+
+<hr class="sr">
+
 ## To check list
 
 Pathways
@@ -78,3 +96,16 @@ Pathways
 * <https://learn.unity.com/pathway/unity-essentials?language=en>
 * <https://learn.unity.com/pathway/junior-programmer?language=en>
 * <https://learn.unity.com/search?k=%5B%22ind%3A5816ce9a32b30600171bef5a%22%2C%22sl%3Abeginner%22%2C%22sl%3Aintermediate%22%5D&ob=starts>
+
+Youtube channels
+
+* [NoSlot](https://www.youtube.com/channel/UCgK_vbcG3YxzAMB4GOffb7w)
+
+
+<hr class="sl">
+
+## Resources visited
+
+TileMaps
+
+* [Generate 2.5d map](https://hexiledgames.itch.io/25d-tilemaps-and-voxel-terrain-generator)
