@@ -53,6 +53,12 @@
       "name": "Inno Setup",
       "desc": "A tool to create installers.",
       "icon": "<i class=\"bi bi-gear\"></i>"
+    },
+    {
+      "tag": "unity",
+      "name": "Unity",
+      "desc": "For now it's only a gathering of notes about unity.",
+      "icon": "<i class=\"bi bi-journal-richtext\"></i>"
     }
   ]
 }
