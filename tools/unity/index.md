@@ -23,6 +23,19 @@ and following tutorials like
 
 <hr class="sr">
 
+## Github in Unity
+
+Unity project are made of a lot of files, and big files
+too so you can't git them. Github allows you using LFS
+to transfer big files and you got a plugin making things
+simple in unity.
+
+* [Follow this tutorial](https://medium.com/@j0hnm4r5/git-with-unity-92ca7854ea3d) (external)
+* [Github for unity](https://unity.github.com/)
+* [Github for unity (Git)](https://github.com/github-for-unity/Unity/blob/master/docs/using/quick-guide.md)
+
+<hr class="sl">
+
 ## To check list
 
 Pathways
