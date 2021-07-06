@@ -87,6 +87,10 @@ In Unity, you will have a grid and each tilemap is a layer.
 If you want something to be bellow / on top of the player,
 then play with ``Order in Layer`` property.
 
+<hr class="sl">
+
+## To check list
+
 <hr class="sr">
 
 ## To check list
@@ -100,7 +104,12 @@ Pathways
 Youtube channels
 
 * [NoSlot](https://www.youtube.com/channel/UCgK_vbcG3YxzAMB4GOffb7w)
+* [Pandemonium games](https://www.youtube.com/channel/UCpkMj5b5kl2_YApDvgUCVQQ)
 
+Tools
+
+* [Odin](https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041)
+* [Quests / Inventory ](https://github.com/devdogio)
 
 <hr class="sl">
 
@@ -108,4 +117,12 @@ Youtube channels
 
 TileMaps
 
+* [TileMap](https://www.raywenderlich.com/23-introduction-to-the-new-unity-2d-tilemap-system#toc-anchor-006)
 * [Generate 2.5d map](https://hexiledgames.itch.io/25d-tilemaps-and-voxel-terrain-generator)
+
+Assets
+
+* [szadiart (great / paid)](https://szadiart.itch.io/)
+* [Clean GUI](https://assetstore.unity.com/packages/2d/gui/flat-clean-gui-over-200-png-files-110987)
+* [MMORPG engine (not tested)](https://assetstore.unity.com/packages/templates/systems/ummorpg-2d-remastered-mmorpg-engine-102632)
+* [Networking library](https://github.com/vis2k/Mirror)
