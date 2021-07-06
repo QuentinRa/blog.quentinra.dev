@@ -162,6 +162,12 @@ to add things like gravity and make your player fall...
 If you don't want your "player to fall" but you want a Rigid
 body, then some are setting gravity to 0.
 
+When you are moving a gameObject using your handwritten
+script, don't forget to use this 
+``pos * Time.deltaTime * speed);`` (so use the
+deltaTime). It will make things smoothies since your
+character will some consistently.
+
 <hr class="sl">
 
 ## Sprites
