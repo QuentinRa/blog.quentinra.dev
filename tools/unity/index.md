@@ -160,6 +160,25 @@ body, then some are setting gravity to 0.
 
 <hr class="sl">
 
+## Sprites
+
+A sprite is a character and a spritesheet is a big
+having having a lot of sprites. In unity, click
+on a sprite sheet then in property, set ``Sprite mode``
+to ``Multiple`` to tell unity that this image is composed
+of multiples images. Then in sprite editor, slide
+the image (either using automatic or grid) and apply
+your changes. You should now see only one frame/sprite
+when dragging your sprite inside the scene.
+
+You may (or not)
+
+* change filter mode (to point)
+* disable compression
+* change the pixel by unit
+
+<hr class="sr">
+
 ## Animations
 
 An animation seems to be made of an animator (handling
@@ -196,7 +215,7 @@ This is a summary of this
 [great video](https://www.youtube.com/watch?v=Gf8LOFNnils&ab_channel=PandemoniumGames) 
 if you can watch it that's better.
 
-<hr class="sr">
+<hr class="sl">
 
 ## To check list
 
@@ -216,7 +235,7 @@ Tools
 * [Odin](https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041)
 * [Quests / Inventory ](https://github.com/devdogio)
 
-<hr class="sl">
+<hr class="sr">
 
 ## Resources visited
 
