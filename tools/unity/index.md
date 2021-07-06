@@ -143,7 +143,7 @@ Properties
 Transform _transform = this.transform;
 // associated gameObject
 GameObject o = this.gameObject;
-String tag = this.gameObject.tag;
+string tag = this.gameObject.tag;
 ```
 
 <hr class="sr">
