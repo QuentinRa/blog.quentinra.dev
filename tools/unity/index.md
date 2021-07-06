@@ -36,6 +36,41 @@ simple in unity.
 
 <hr class="sl">
 
+## Starting in unity
+
+When you are opening a project, by default you got
+4 menus.
+
+* **hierarchy window** (left): list of all **GameObjects**
+* **scene window** (middle): a scene is like a screen of your
+game (by default you are in the sample scene)
+  * you can click on the game tab to play your game
+    (you can set the resolution here too)
+  * and go back to the scene tab to edit it
+* **inspector window** (right): you can edit the properties
+of the selected **GameObject**
+* **project window** (bottom): all of your project files
+
+The project files seems to be split by many like this
+
+* **Art**: ...
+* **Audio**: your audio files
+* **Cutscene**: ...
+* **Editor**: ...
+* **Materials**: ...
+* **Plugins**: your project plugins
+* **Prefabs**: your prefabs, they are preconfigured objects
+  like a player with a configuration
+* **Scenes**: ...
+* **Scripts**: ...
+* **Shaders**: ...
+
+Some shortcuts
+
+* ``F``: focus a GameObject
+
+<hr class="sl">
+
 ## To check list
 
 Pathways
