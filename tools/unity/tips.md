@@ -1,5 +1,7 @@
 # Tips
 
+[Go back](index.md)
+
 ## Optimization
 
 Image size power of two so we could compress it.

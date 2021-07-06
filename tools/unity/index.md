@@ -21,6 +21,8 @@ Then what I did after that was playing with the samples
 and following tutorials like 
 [RPG in 1 hour](https://learn.unity.com/project/creator-kit-rpg?uv=2020.3)
 
+Some tips I'm gathering are [here](tips.md).
+
 <hr class="sr">
 
 ## Github in Unity
@@ -53,16 +55,18 @@ of the selected **GameObject**
 
 The project files seems to be split by many like this
 
-* **Art**: ...
+* **Animations**: ...
 * **Audio**: ...
 * **Cutscene**: ...
 * **Editor**: ...
+* **Images**: store backgrounds
 * **Materials**: ...
 * **Plugins**: your project plugins
 * **Prefabs**: your prefabs, they are preconfigured objects
   like a player with a configuration
 * **Scenes**: your scenes (unity scene files)
 * **Scripts**: your C# scripts (.cs)
+* **Settings**: ...
 * **Shaders**: ...
 
 Some shortcuts
@@ -205,6 +209,11 @@ you must add transition
   anim.SetFloat("name", 0);;
   anim.SetInteger("name", 0);;
   anim.SetTrigger("name");;
+  
+  // some are also using
+  // instead of params and so on (so you are
+  // manually asking for an animation)
+  anim.Play("anim_name");
   ```
 * you may uncheck ``Has exit time`` so you don't have
   delay when changing state
