@@ -89,7 +89,57 @@ then play with ``Order in Layer`` property.
 
 <hr class="sl">
 
-## To check list
+## Code
+
+Sample empty class
+
+```cs
+using UnityEngine;
+
+public class Test : MonoBehaviour
+{
+    // Start is called before the first frame update
+    private void Start() {}
+    // Awake is called when the script instance is being loaded.
+    private void Awake() {}
+    // Update is called once per frame
+    private void Update() {}
+}
+```
+
+You can declare fields ``SerializeField`` so that you can
+modify this property inside unity
+
+```cs
+[SerializeField] private bool test;
+```
+
+Let's says you attached this csharp script to an
+entity, then you can get other properties (like
+the collider, ...) using
+
+```cs
+// example, get Rigidbody2D
+Rigidbody2D component = GetComponent<Rigidbody2D>();
+```
+
+Input
+
+```cs
+// -1 (left) 0 or 1 (right)
+// "Vertical" too
+float axis = Input.GetAxis("Horizontal");
+bool pressed = Input.GetKey(KeyCode.KeypadEnter);
+```
+
+Properties
+
+```cs
+String name = this.name;
+String tag = this.tag;
+Transform _transform = this.transform;
+GameObject o = this.gameObject;
+```
 
 <hr class="sr">
 
@@ -119,6 +169,7 @@ TileMaps
 
 * [TileMap](https://www.raywenderlich.com/23-introduction-to-the-new-unity-2d-tilemap-system#toc-anchor-006)
 * [Generate 2.5d map](https://hexiledgames.itch.io/25d-tilemaps-and-voxel-terrain-generator)
+* [3D Map editor](https://fertile-soil-productions.itch.io/mast)
 
 Assets
 
