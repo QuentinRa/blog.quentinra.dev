@@ -150,13 +150,51 @@ String tag = this.gameObject.tag;
 
 ## Properties
 
+The ``2D Collider`` is handling the collision for you
+with any other GameObjects having this component.
 
+The ``RigidComponent`` is something that you may use
+to add things like gravity and make your player fall...
+If you don't want your "player to fall" but you want a Rigid
+body, then some are setting gravity to 0.
 
 <hr class="sl">
 
 ## Animations
 
-...
+An animation seems to be made of an animator (handling
+the animations/states) and animations. An animation would
+be idle, running, jumping, ... while the animator would
+defines what make you move from idle to running.
+
+Create and add an animator controller to a GameObject.
+Then create animations (you need to select the time
+and the image loaded at this time). Then in the animator
+you must add transition 
+
+* select a parameter
+  * in animator create a parameter
+  * in the transition, add a condition on the parameter
+  * in the code, change the parameter
+  ```cs
+  // let's says that at some point you did
+  Animator anim = GetComponent<Animator>();
+  // then you can write in Update
+  // (you should not use a string but an id, stored in a static 
+  // const using Animator.StringToHash("name"))
+  anim.SetBool("name", false);;
+  anim.SetFloat("name", 0);;
+  anim.SetInteger("name", 0);;
+  anim.SetTrigger("name");;
+  ```
+* you may uncheck ``Has exit time`` so you don't have
+  delay when changing state
+* ``Any state`` means that if the condition is true, then from any state
+  you can move to another state
+
+This is a summary of this 
+[great video](https://www.youtube.com/watch?v=Gf8LOFNnils&ab_channel=PandemoniumGames) 
+if you can watch it that's better.
 
 <hr class="sr">
 
