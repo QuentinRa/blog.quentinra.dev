@@ -54,15 +54,15 @@ of the selected **GameObject**
 The project files seems to be split by many like this
 
 * **Art**: ...
-* **Audio**: your audio files
+* **Audio**: ...
 * **Cutscene**: ...
 * **Editor**: ...
 * **Materials**: ...
 * **Plugins**: your project plugins
 * **Prefabs**: your prefabs, they are preconfigured objects
   like a player with a configuration
-* **Scenes**: ...
-* **Scripts**: ...
+* **Scenes**: your scenes (unity scene files)
+* **Scripts**: your C# scripts (.cs)
 * **Shaders**: ...
 
 Some shortcuts
@@ -90,6 +90,10 @@ then play with ``Order in Layer`` property.
 <hr class="sl">
 
 ## Code
+
+I'm using Rider to edit my C# files. I'm gone to
+``edit > preferences > external tools`` and selected
+Rider as External tools editor.
 
 Sample empty class
 
@@ -135,11 +139,24 @@ bool pressed = Input.GetKey(KeyCode.KeypadEnter);
 Properties
 
 ```cs
-String name = this.name;
-String tag = this.tag;
+// set scale, ...
 Transform _transform = this.transform;
+// associated gameObject
 GameObject o = this.gameObject;
+String tag = this.gameObject.tag;
 ```
+
+<hr class="sr">
+
+## Properties
+
+
+
+<hr class="sl">
+
+## Animations
+
+...
 
 <hr class="sr">
 
