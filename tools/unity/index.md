@@ -205,22 +205,24 @@ you must add transition
   * in animator create a parameter
   * in the transition, add a condition on the parameter
   * in the code, change the parameter
-  ```cs
-  // let's says that at some point you did
-  Animator anim = GetComponent<Animator>();
-  // then you can write in Update
-  // (you should not use a string but an id, stored in a static 
-  // const using Animator.StringToHash("name"))
-  anim.SetBool("name", false);;
-  anim.SetFloat("name", 0);;
-  anim.SetInteger("name", 0);;
-  anim.SetTrigger("name");;
   
-  // some are also using
-  // instead of params and so on (so you are
-  // manually asking for an animation)
-  anim.Play("anim_name");
-  ```
+```cs
+// let's says that at some point you did
+Animator anim = GetComponent<Animator>();
+// then you can write in Update
+// (you should not use a string but an id, stored in a static 
+// const using Animator.StringToHash("name"))
+anim.SetBool("name", false);;
+anim.SetFloat("name", 0);;
+anim.SetInteger("name", 0);;
+anim.SetTrigger("name");;
+
+// some are also using
+// instead of params and so on (so you are
+// manually asking for an animation)
+anim.Play("anim_name");
+```
+
 * you may uncheck ``Has exit time`` so you don't have
   delay when changing state
 * ``Any state`` means that if the condition is true, then from any state
