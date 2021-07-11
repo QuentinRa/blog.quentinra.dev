@@ -22,7 +22,10 @@ You must install Node and a package manager. I'm using
 
 * [Node](https://nodejs.org/en/download/)
 * [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-* you may look at [nvm](https://github.com/nvm-sh/nvm) to install both
+* you may look at [nvm](https://github.com/nvm-sh/nvm)
+  to install both like
+  [nvm for windows](https://github.com/coreybutler/nvm-windows/releases)
+  but I'm personally not using nvm on Windows
 
 Run ``node -v`` and `npm -v` if you want to check if
 your installation is successful.
