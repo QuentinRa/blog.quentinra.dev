@@ -78,3 +78,10 @@ https://github.com/JasonXuDeveloper/JEngine
 https://github.com/UnityCommunity/UnityLibrary
 
 https://github.com/Kavex/GameDev-Resources#assets
+
+----
+
+https://learn.unity.com/tutorial/project-architecture-unity-project-folder-structure#5c7f8528edbc2a002053b672
+https://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control
+https://stackoverflow.com/questions/21573405/how-to-prepare-a-unity-project-for-git
+https://thoughtbot.com/blog/how-to-git-with-unity
