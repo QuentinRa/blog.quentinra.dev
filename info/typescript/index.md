@@ -85,7 +85,7 @@ class Example {
     get number() : number { return 10; };
     
     // a setter
-    set number(n: number) { /* code */ };
+    set number(n?: number) { /* code */ };
 }
 
 // usage
@@ -99,6 +99,10 @@ example.number = 5; // ok since we created a setter
 // typescript is not able to guess the type
 let c : number = <number>b; 
 ```
+
+Note that you can add a ``?`` after a variable name
+telling typescript that this parameter is optional (so
+it may be undefined).
 
 <hr class="sr">
 
