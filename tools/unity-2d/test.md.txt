@@ -53,3 +53,28 @@ https://assetstore.unity.com/packages/templates/systems/topdown-engine-89636
 
 ---- great?
 https://www.pluralsight.com/courses/unity-finite-state-machines
+
+--------- links
+
+https://github.com/topics/unity2d
+https://github.com/Michsky/lomenui
+https://github.com/ycarowr/UiCard
+https://github.com/LewisJohnson/unity-ui-examples
+https://github.com/Zesix/Impulse
+https://github.com/Fy-/FyWorld
+https://github.com/Mukarillo/UnityTetris
+
+https://github.com/cmilr/Unity2D-Components
+https://github.com/OndrejNepozitek/Edgar-Unity
+https://github.com/pixelnest/tutorial-2d-game-unity
+https://pixelnest.io/tutorials/2d-game-unity/
+
+https://github.com/XINCGer/Unity3DTraining
+https://starchart.cc/lgs-games/eden
+https://github.com/liangxiegame/QFramework
+https://github.com/OnClick9927/IFramework
+https://github.com/JasonXuDeveloper/JEngine
+
+https://github.com/UnityCommunity/UnityLibrary
+
+https://github.com/Kavex/GameDev-Resources#assets
