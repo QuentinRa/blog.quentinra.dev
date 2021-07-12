@@ -42,9 +42,9 @@ project and so on.
 
 Some notes
 
-* [Example](node/example.md)
-* [Dependencies](node/deps.md)
-* [Scripts](node/scripts.md)
+* [Example](base/example.md)
+* [Dependencies](base/deps.md)
+* [Scripts](base/scripts.md)
 
 Once you defined your package.json, you need to generate
 the ``package-lock.json`` by installing the dependencies.
@@ -65,9 +65,9 @@ a .js file when compiled).
 You run a script using ``node my_script.js``. Inside
 the script
 
-* [require](node/require.md) (import)
-* [Using multiples files](node/exports.md)
-* [Promises](node/promises.md)
+* [require](base/require.md) (import)
+* [Using multiples files](base/exports.md)
+* [Promises](base/promises.md)
 * You might check [validator](https://www.geeksforgeeks.org/how-to-validate-data-using-validator-module-in-node-js/)
   to verify the submitted data
 * check [nodemon](https://www.npmjs.com/package/nodemon),
@@ -76,7 +76,7 @@ the script
 
 Other notes
 
-* [mongoDB](node/db/mongo.md)
+* [mongoDB](base/db/mongo.md)
 
 <hr class="sl">
 
