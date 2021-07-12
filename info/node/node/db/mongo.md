@@ -57,7 +57,7 @@ await Model.findOne(/* ... */);
 // replace "Calistro" by "calistro"
 await Model.updateOne({ name : "Calistro"}, { name: "calistro" });
 await Model.updateMany(/* ... */);
-// replace "Calistro" by "calistro"
+// insert a document with the name = "Calistro"
 await Model.insertOne({ name : "Calistro"});
 await Model.insertMany(/* array of objects */);
 // ...
