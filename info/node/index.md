@@ -70,6 +70,9 @@ the script
 * [Promises](node/promises.md)
 * You might check [validator](https://www.geeksforgeeks.org/how-to-validate-data-using-validator-module-in-node-js/)
   to verify the submitted data
+* check [nodemon](https://www.npmjs.com/package/nodemon),
+  an utility restarting your program when you changed
+  the code inside or it crashed.
 
 Other notes
 
