@@ -55,8 +55,8 @@
       "icon": "<i class=\"bi bi-gear\"></i>"
     },
     {
-      "tag": "unity",
-      "name": "Unity",
+      "tag": "unity-2d",
+      "name": "Unity 2D",
       "desc": "For now it's only a gathering of notes about unity.",
       "icon": "<i class=\"bi bi-journal-richtext\"></i>"
     }
