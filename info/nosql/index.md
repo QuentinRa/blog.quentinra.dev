@@ -38,6 +38,19 @@ About mongo
 
 <hr class="sr">
 
+## RethinkDB
+
+It's a "NoSQL database that stores schemaless JSON documents".
+I haven't tried it yet but I want to keep it here 
+just in case.
+
+* [rethinkdb](https://rethinkdb.com/)
+* [Github](https://github.com/rethinkdb/rethinkdb)
+* [Store large files](https://github.com/internalfx/rethinkdb-regrid)
+* [File transfer with socket.io (node.js)](https://hassansin.github.io/socket.io-rethinkdb-file-transfer)
+
+<hr class="sl">
+
 ## Sources
 
 * <https://azure.microsoft.com/en-us/overview/nosql-database/>
