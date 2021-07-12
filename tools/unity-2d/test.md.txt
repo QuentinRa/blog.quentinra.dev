@@ -85,3 +85,33 @@ https://learn.unity.com/tutorial/project-architecture-unity-project-folder-struc
 https://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control
 https://stackoverflow.com/questions/21573405/how-to-prepare-a-unity-project-for-git
 https://thoughtbot.com/blog/how-to-git-with-unity
+
+Unity version
+https://www.youtube.com/watch?v=LLYhTWEX2Wc
+
+Git
+https://github.com/github-for-unity/Unity/blob/master/docs/using/how-to-install-and-update.md
+
+https://blog.jetbrains.com/dotnet/2017/08/30/getting-started-rider-unity/
+https://blog.jetbrains.com/dotnet/2018/10/03/integrating-rider-2018-2-unity-editor/
+
+https://blog.unity.com/technology/a-lightning-round-of-great-tips-for-2d-games
+https://blog.unity.com/technology/download-our-new-2d-sample-project-lost-crypt
+https://www.instructables.com/Make-A-2D-Infinite-Runner-with-Unity/
+https://careerkarma.com/blog/make-a-game-in-unity/
+
+https://github.com/vis2k/Mirror
+https://assetstore.unity.com/packages/templates/systems/ummorpg-2d-remastered-mmorpg-engine-102632
+https://assetstore.unity.com/packages/2d/gui/flat-clean-gui-over-200-png-files-110987
+https://assetstore.unity.com/2d?category=2d&free=true&orderBy=1&page=13
+
+----- ensiie
+
+http://web4.ensiie.fr/~guillaume.bouyer/RVIG/Unity.pdf
+http://web4.ensiie.fr/~bouyer/RVSI/Unity.pdf
+http://web4.ensiie.fr/~guillaume.bouyer/rvsi.html
+http://web4.ensiie.fr/~bouyer/RVSI/TP%20Unity.pdf
+http://web4.ensiie.fr/~guillaume.bouyer/GPFGEA/Schmup2020.pdf
+http://web4.ensiie.fr/~guillaume.bouyer/IN.pdf
+https://www.edx.org/course/cs50s-introduction-to-game-development
+https://www.udemy.com/course/unityrpg/
