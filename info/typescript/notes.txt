@@ -5,16 +5,6 @@ https://www.codevscolor.com/typescript-class-example
 https://godotengine.org/
 
 4. TypeScript
-Typescript vous permet d’écrire du JavaScript uniformisé et d’ensuiter compiler dans n’importe quelle version de JS. En particulier, vous aurez une vérification syntaxique plus forte car le langage est beaucoup plus typé.
-
-Installer : npm install -g typescript
-
-Compiler en JS : npx tsc ou tsc parfois
-
-Compiler en JS (mode watch donc auto-compilation) : npx tsc -w ou tsc
-
-Vous allez créer des fichiers .ts qui seront compilés en .js. Personnellement j’utilise un fichier tsconfig.json (créé avec npx tsc --init) qui contient les informations sur la version de Javascript (ES2020/commonjs sont mes valeurs target/module).
-
 Quelques éléments de syntaxe en plus de celle basique du js
 
 // on précise le type des variables
