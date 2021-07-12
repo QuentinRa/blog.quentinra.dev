@@ -1,5 +1,3 @@
-https://www.typescriptlang.org/
-
 https://www.typescriptlang.org/docs/handbook/modules.html
 
 https://www.codevscolor.com/typescript-class-example

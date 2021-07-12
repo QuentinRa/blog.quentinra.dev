@@ -59,6 +59,12 @@
       "name": "Node.js",
       "desc": "Write application in electron or simply server-side logic in JavaScript.",
       "icon": "<i class=\"bi bi-tropical-storm\"></i>"
+    },
+    {
+      "tag": "typescript",
+      "name": "Typescript",
+      "desc": "Write once and compile in any version of javascript.",
+      "icon": "<i class=\"bi bi-cup-straw\"></i>"
     }
   ]
 }
