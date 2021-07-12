@@ -106,6 +106,18 @@ it may be undefined).
 
 <hr class="sr">
 
+## CheatSheets
+
+To be honest, I haven't read them yet for I looked for
+some links just in case someone didn't known about this
+kind of document
+
+* <http://hoomanb.com/cs/quickref/typescript_cheatsheet.pdf>
+* <https://codingcheats.io/typescript>
+* <https://elfi-y.medium.com/a-reference-sheet-for-typescript-function-class-379578e776fb>
+
+<hr class="sl">
+
 ## Sources
 
 * <https://www.typescriptlang.org/docs/>
