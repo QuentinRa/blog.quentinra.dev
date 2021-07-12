@@ -68,10 +68,12 @@ the script
 * [require](node/require.md) (import)
 * [Using multiples files](node/exports.md)
 * [Promises](node/promises.md)
+* You might check [validator](https://www.geeksforgeeks.org/how-to-validate-data-using-validator-module-in-node-js/)
+  to verify the submitted data
 
 Other notes
 
-* [Using mongoDB](node/db/mongo.md)
+* [mongoDB](node/db/mongo.md)
 
 <hr class="sl">
 
