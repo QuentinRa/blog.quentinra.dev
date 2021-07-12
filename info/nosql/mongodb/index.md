@@ -187,3 +187,5 @@ db.createUser( { user: "myuser", pwd: "password", roles: ["readWrite"] })
 * <https://docs.mongodb.com/manual/faq/fundamentals/#how-does-mongodb-address-sql-or-query-injection>
 * <https://betterprogramming.pub/little-bobby-collections-how-to-write-a-mongodb-injection-ad58a4e2d754>
 * <https://stackoverflow.com/questions/46972695/see-setup-a-user-with-mongodb-compass>
+* <https://www.codevscolor.com/pages/mongodb-tutorials/>
+* <https://www.mongodb.com/nodejs-database>
