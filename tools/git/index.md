@@ -206,8 +206,10 @@ You may also check this to create a profile card
 ![](https://github-readme-stats.vercel.app/api?username=QuentinRa&show_icons=true&theme=radical)
 
 And you can even find things like this
+<https://readme-jokes.vercel.app/api>.
 
-![](https://readme-jokes.vercel.app/api)
+You can also **create a skyline** with your
+contributions using <https://skyline.github.com/>.
 
 <hr class="sl">
 
