@@ -64,9 +64,9 @@ let b = a ?? 0;
 // @ts-ignore
 // <the code raising a warning here>
 
-// this class is public, so it can be used in
+// this enum is public, so it can be used in
 // other files
-export class Name {
+export enum Name {
 }
 
 // import exported elements from a file.ts
