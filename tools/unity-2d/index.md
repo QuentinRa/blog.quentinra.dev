@@ -236,9 +236,13 @@ if you can watch it that's better.
 
 <hr class="sl">
 
-## UI
+## UserInterface
 
-First create a canvas (ui > canvas) for your UI. Then
+**In 2021, you might look at the UI Builder**, to
+create UserInterfaces (UI), like in this 
+[video](https://www.youtube.com/watch?v=NQYHIH0BJbs&ab_channel=CocoCode).
+
+Otherwise, first create a canvas (ui > canvas) for your UI. Then
 you can
 
 * load a background
@@ -262,6 +266,20 @@ you can
   * add a canvas scaler to your canvas
   * set scale mode to "scale with screen size"
   * and give it a size
+
+You can make your hierarchy looks better using 
+this [plugin](https://github.com/febucci/unitypackage-custom-hierarchy)
+following this [video](https://www.youtube.com/watch?v=Gma7IXPj4wI&ab_channel=CocoCode)
+
+You may create advanced buttons using this
+[video](https://www.youtube.com/watch?v=cW-E4WEogzE&ab_channel=CocoCode)
+  * create a button add a text and an image
+  * add a horizontal layout component to the button
+  * set the spacing, ...
+  * then on the image, you can add a layout element
+  to resize the image
+  * you can add a "content size fitter" to make the button
+  resize itself (set fit to preferred size)
 
 <hr class="sr">
 
