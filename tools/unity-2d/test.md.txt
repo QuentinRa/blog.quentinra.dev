@@ -40,8 +40,7 @@ https://www.youtube.com/watch?v=6Q0FnPy9Orc&ab_channel=TopsideStudios
 https://www.youtube.com/watch?v=e2PRI19Igbo
 
 --- ui
-https://www.youtube.com/watch?v=xmR07iBW7zk
-
+https://www.youtube.com/watch?v=iXWFTgFNRdM&ab_channel=GameDevGuide
 
 ----- not tutorials
 Xsolla
@@ -78,6 +77,9 @@ https://github.com/JasonXuDeveloper/JEngine
 https://github.com/UnityCommunity/UnityLibrary
 
 https://github.com/Kavex/GameDev-Resources#assets
+
+https://www.youtube.com/watch?v=v9edu2qL9Q4&ab_channel=ThomasBrush
+https://www.youtube.com/watch?v=sc3h5JXtIzw&ab_channel=RiotGames
 
 ----
 

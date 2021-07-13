@@ -10,6 +10,8 @@ You can compress sounds too (50% seems good).
 Activate / Deactivate objects is the camera
 is close / far.
 
+<hr class="sr">
+
 ## Logic
 
 Use ``Debug.log("")`` to add logs of your game.
@@ -22,6 +24,8 @@ Group objects into by groups in a gameObject.
 
 In RigidBodyComponent, use ``Interpolate`` in
 interpolate (make this smoother, ...).
+
+<hr class="sl">
 
 ## Graphics
 
