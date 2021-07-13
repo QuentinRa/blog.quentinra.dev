@@ -236,6 +236,20 @@ if you can watch it that's better.
 
 <hr class="sl">
 
+## UI
+
+First create a canvas (ui > canvas) for your UI. Then
+you can
+
+* load a background
+  * create a new ui > image
+  * anchor presets: alt + stretch x/y (bottom right corner)
+  * then drag and drop an image into the slot
+  * you may have to transform your image into a sprite
+  * video [here](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode)
+
+<hr class="sr">
+
 ## To check list
 
 Pathways
@@ -254,7 +268,7 @@ Tools
 * [Odin](https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041)
 * [Quests / Inventory ](https://github.com/devdogio)
 
-<hr class="sr">
+<hr class="sl">
 
 ## Resources visited
 
