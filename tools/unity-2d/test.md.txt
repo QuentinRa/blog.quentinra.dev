@@ -39,7 +39,6 @@ https://www.youtube.com/watch?v=6Q0FnPy9Orc&ab_channel=TopsideStudios
 https://www.youtube.com/watch?v=e2PRI19Igbo
 
 --- ui
-https://www.youtube.com/watch?v=RsgiYqLID-U
 https://www.youtube.com/watch?v=xmR07iBW7zk
 
 
@@ -115,3 +114,23 @@ http://web4.ensiie.fr/~guillaume.bouyer/GPFGEA/Schmup2020.pdf
 http://web4.ensiie.fr/~guillaume.bouyer/IN.pdf
 https://www.edx.org/course/cs50s-introduction-to-game-development
 https://www.udemy.com/course/unityrpg/
+
+<hr class="sr">
+
+## To check list
+
+Pathways
+
+* <https://learn.unity.com/pathway/unity-essentials?language=en>
+* <https://learn.unity.com/pathway/junior-programmer?language=en>
+* <https://learn.unity.com/search?k=%5B%22ind%3A5816ce9a32b30600171bef5a%22%2C%22sl%3Abeginner%22%2C%22sl%3Aintermediate%22%5D&ob=starts>
+
+Youtube channels
+
+* [NoSlot](https://www.youtube.com/channel/UCgK_vbcG3YxzAMB4GOffb7w)
+* [Pandemonium games](https://www.youtube.com/channel/UCpkMj5b5kl2_YApDvgUCVQQ)
+
+Tools
+
+* [Odin](https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041)
+* [Quests / Inventory ](https://github.com/devdogio)

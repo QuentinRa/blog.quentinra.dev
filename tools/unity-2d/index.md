@@ -247,28 +247,23 @@ you can
   * then drag and drop an image into the slot
   * you may have to transform your image into a sprite
   * video [here](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode)
+  * to make a **blur** background (like your game
+    behind the UI) it's complicated 
+* you create buttons with ui > buttons then set the text,
+  you may set an image as a background (you may
+  look into [9patch](https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/9-patch),
+  explained in the video too)
+* you create labels with ui > text then set the text
+* you can use layouts (like in Java) but using
+  anchors may be enough for a simple UI
+  ([video here](https://www.youtube.com/watch?v=HwdweCX5aMI&ab_channel=GameDevGuide))
+* if you want some resizing (and you are not using
+  anchors) then 
+  * add a canvas scaler to your canvas
+  * set scale mode to "scale with screen size"
+  * and give it a size
 
 <hr class="sr">
-
-## To check list
-
-Pathways
-
-* <https://learn.unity.com/pathway/unity-essentials?language=en>
-* <https://learn.unity.com/pathway/junior-programmer?language=en>
-* <https://learn.unity.com/search?k=%5B%22ind%3A5816ce9a32b30600171bef5a%22%2C%22sl%3Abeginner%22%2C%22sl%3Aintermediate%22%5D&ob=starts>
-
-Youtube channels
-
-* [NoSlot](https://www.youtube.com/channel/UCgK_vbcG3YxzAMB4GOffb7w)
-* [Pandemonium games](https://www.youtube.com/channel/UCpkMj5b5kl2_YApDvgUCVQQ)
-
-Tools
-
-* [Odin](https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041)
-* [Quests / Inventory ](https://github.com/devdogio)
-
-<hr class="sl">
 
 ## Resources visited
 
@@ -284,3 +279,8 @@ Assets
 * [Clean GUI](https://assetstore.unity.com/packages/2d/gui/flat-clean-gui-over-200-png-files-110987)
 * [MMORPG engine (not tested)](https://assetstore.unity.com/packages/templates/systems/ummorpg-2d-remastered-mmorpg-engine-102632)
 * [Networking library](https://github.com/vis2k/Mirror)
+
+UI
+
+* [MainMenu UI](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode)
+* [Simple UI](https://www.youtube.com/watch?v=xmR07iBW7zk&ab_channel=CocoCode)
