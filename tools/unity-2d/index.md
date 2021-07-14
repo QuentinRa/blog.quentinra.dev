@@ -179,7 +179,7 @@ When you are moving a gameObject using your handwritten
 script, don't forget to use this 
 ``pos * Time.deltaTime * speed`` (so use the
 deltaTime). It will make things smoothies since your
-character will some consistently.
+character will move at an almost constant speed.
 
 <hr class="sl">
 
