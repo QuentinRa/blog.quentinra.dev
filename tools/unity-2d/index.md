@@ -121,7 +121,16 @@ You can declare fields ``SerializeField`` so that you can
 modify this property inside unity
 
 ```cs
+// you can also make it public
 [SerializeField] private bool test;
+// make a class available in "folder/.../name" in the
+// component selector
+[AddComponentMenu("folder/class")]
+// adding tooltips
+[Tooltip("blah blah blah")]
+// The following attributes will be in this header
+[Header("a header")]
+// ...
 ```
 
 Let's says you attached this csharp script to an
