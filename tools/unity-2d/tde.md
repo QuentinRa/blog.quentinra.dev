@@ -1,4 +1,4 @@
-# TopDown Engine
+# TopDown Engine (TDE)
 
 This is an engine inside unity helping handling
 2D stuffs in TopDown games. You can purchase it
@@ -11,7 +11,7 @@ if you are feeling like this would improve your game.
 
 <hr class="sr">
 
-## Agent
+## Player (called "Agent" in TDE)
 
 An agent is a name for character (Player, NPC, ...). The
 best way to make one is
@@ -27,3 +27,31 @@ best way to make one is
 You can drag and drop it to a folder to create a prefab,
 then in level you can change the main player with this new
 prefab.
+
+<hr class="sl">
+
+## UI
+
+You will use most of the UI features of Unity, but
+you can
+
+* easily create a blur screen
+* create a custom LoadingScreen
+    * create an empty Game object (usually called LevelManager)
+    * add a LevelManager component
+    * you got what you want in SceneLoading
+
+You may create a button loading another Level by adding
+
+* a SelectionBase component
+* a LevelSelector component with your next level
+
+You may trigger your own script by
+
+* adding your script as a new component to
+  your button (or whatever)
+* adding a MMTouchButton component,
+  in binding, pressed first time, add a component
+    * runtime only
+    * drag and drop the component with your script
+    * find the component / method in the dropdown menu
