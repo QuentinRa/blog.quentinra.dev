@@ -19,3 +19,24 @@ at the [driver page](https://neo4j.com/developer/language-guides/).
 
 You may also try reading the official
 documentation [here](https://neo4j.com/developer/get-started/).
+
+If you are a **Jetbrains** user, then
+you may enjoy "Graph Database Console" plugin.
+
+<hr class="sr">
+
+## Core concept
+
+Here this is what a query result will looks like
+
+![example](example.png)
+
+You got 
+
+* **4 nodes**, each node is like a tuple in a SQL database,
+  they have properties called **attributes**
+* **3 edges**, they are the relation between the nodes,
+  you may have a lot of them between two nodes and in
+  a lot of directions
+
+That's what we call a graph.
