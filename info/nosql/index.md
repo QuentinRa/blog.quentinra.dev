@@ -22,6 +22,23 @@ Since 2019, the [GQL](https://en.wikipedia.org/wiki/Graph_Query_Language)
 language for Graph databases (GDB)
 like the SQL but it seems they are still working on it.
 
+<hr class="sl">
+
+## Cypher
+
+Cypher is [Neo4J](https://neo4j.com/) Graph Query Language.
+You can find the [tutorial here](cyhper/index.md)
+
+About Cypher
+
+* **needs register :(**
+* cloud or local databases
+* [open-source](https://github.com/neo4j)
+* the syntax looks like SQL
+* easy to learn but it's easy to make
+  a mistake in your query
+  (at least way more than in MongoDB for instance)
+
 <hr class="sr">
 
 ## MongoDB
@@ -30,6 +47,7 @@ Here is the mongoDB [tutorial](mongodb/index.md).
 
 About mongo
 
+* cloud or local databases
 * you will use JSON to defines the data manipulated
 * easy to learn, almost no syntax
 * the process of referencing another object is not convenient
