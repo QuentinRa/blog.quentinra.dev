@@ -67,3 +67,35 @@ Ex
 * ``(ref:name {attribute:value})`` store in ref a node having the name
   "name" and "value" for "attribute".
 * ``(ref {attribute: value})`` store in ref ...
+
+<hr class="sr">
+
+## Edges
+
+An **edges** defined between ``[]`` and two nodes
+giving you something like this ``node-[ommited]->node``
+where
+
+* **node** is a node (can be the same or two different ones),
+  you can omit both otherwise you must give both
+* **omitted** is also a node (so `(ref: name{})`) where
+  * **ref**: will be used to store the edge
+  * **name**: name of the edge like "player-Playing->game"
+    Playing here 
+  * **{}**: the properties of the edge, you may
+    see this as the attributes in a **association class**
+    in UML
+
+You got a lot of kind of edges
+
+* ``--`` : anonymous without direction
+* ``-->`` : anonymous with direction
+* ``-[:name]->`` : named "name" with direction
+
+Ex
+
+* ``(:Movie)<-[e]-(:ShowbizPerson)``: store
+  into e the edge(s) from a ShowbizPerson to a Movie
+* ``(:ShowbizPerson)-[e]->()``: store in r the edge(s)
+  from ShowbizPerson kind of nodes to any other kind of
+  nodes
