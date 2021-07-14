@@ -99,3 +99,21 @@ Ex
 * ``(:ShowbizPerson)-[e]->()``: store in r the edge(s)
   from ShowbizPerson kind of nodes to any other kind of
   nodes
+
+<hr class="sl">
+
+## Make a request
+
+A request will looks like this
+
+```sql
+// simple request
+MATCH (ref)
+RETURN ref;
+
+// more complex
+MATCH (ref:nœud)
+WHERE condition
+RETURN ref.attribut
+LIMIT valeur
+```
