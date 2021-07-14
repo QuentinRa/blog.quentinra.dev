@@ -23,6 +23,10 @@ documentation [here](https://neo4j.com/developer/get-started/).
 If you are a **Jetbrains** user, then
 you may enjoy "Graph Database Console" plugin.
 
+[Here](movies.cypher) is a database create by my teacher,
+[Stefania Dumbrava](http://web4.ensiie.fr/~stefania.dumbrava/)
+that I will use in this course.
+
 <hr class="sr">
 
 ## Core concept
