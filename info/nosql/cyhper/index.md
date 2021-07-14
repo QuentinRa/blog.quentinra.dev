@@ -44,3 +44,26 @@ You got
   a lot of directions
 
 That's what we call a graph.
+
+<hr class="sl">
+
+## Nodes
+
+A **node** is defined between ``()`` giving you something
+like this ``(ref:name{})`` where
+
+* **ref**, is an optional variable name,
+  that may be used for storing the node
+  for the query
+* **:name** is an optional name of the variable, it's like
+  a table name in SQL or a class in UML
+* **{}** are the attributes of the object, optional
+  too. The format for this is JSON 
+  (`{ attribute:value, ... }`)
+
+Ex
+
+* ``(:name)`` nodes without properties having the name "name"
+* ``(ref:name {attribute:value})`` store in ref a node having the name
+  "name" and "value" for "attribute".
+* ``(ref {attribute: value})`` store in ref ...
