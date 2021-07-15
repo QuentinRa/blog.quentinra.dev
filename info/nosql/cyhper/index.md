@@ -109,14 +109,14 @@ A request will looks like this
 ```sql
 // simple request
 MATCH (ref)
-// return the node(s) found
-RETURN ref;
+// returns the node(s)
+RETURN ref; // optional ;
 
 // more complex
 MATCH (ref)
-WHERE condition
-RETURN ref.attribut
-LIMIT valeur
+WHERE a_condition
+RETURN ref.attribute
+LIMIT a_value
 ```
 
 The most used clauses are
