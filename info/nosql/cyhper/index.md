@@ -109,11 +109,23 @@ A request will looks like this
 ```sql
 // simple request
 MATCH (ref)
+// return the node(s) found
 RETURN ref;
 
 // more complex
-MATCH (ref:nœud)
+MATCH (ref)
 WHERE condition
 RETURN ref.attribut
 LIMIT valeur
 ```
+
+The most used clauses are
+
+* [MATCH](clause/match.md) (SQL From)
+* [RETURN](clause/return.md) (SQL Select)
+* [WHERE](clause/where.md) (SQL Where)
+* [LIMIT AND SKIP](clause/limit.md) (SQL Limit)
+* [ORDER BY](clause/order-by.md) (SQL Order by)
+* [OPTIONAL MATCH](clause/optional-match.md) (a second From)
+
+Then you should practice [here](clause/exercise.md).
