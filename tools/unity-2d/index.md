@@ -38,6 +38,17 @@ simple in unity.
 * [Github for unity](https://unity.github.com/)
 * [Github for unity (Git)](https://github.com/github-for-unity/Unity/blob/master/docs/using/quick-guide.md)
 
+Personally, I did this
+
+* download github for unity (2nd link)
+* you got a .package
+* open your project, and drag and drop it 
+  inside **project window** (the file explorer,
+  the bottom left panel)
+* then click on "import" on the panel that opened
+* then you can show git tab using Window > Github
+* *you may have to install [github lfs](https://git-lfs.github.com/)*
+
 <hr class="sl">
 
 ## Starting in unity
@@ -57,19 +68,16 @@ of the selected **GameObject**
 
 The project files seems to be split by many like this
 
-* **Animations**: ...
-* **Audio**: ...
-* **Cutscene**: ...
-* **Editor**: ...
-* **Images**: store backgrounds
-* **Materials**: ...
-* **Plugins**: your project plugins
+* **Animations**, **Audio**, **Cutscene**
+* **Editor**, **Images**, **Materials**
+* **Plugins**
 * **Prefabs**: your prefabs, they are preconfigured objects
-  like a player with a configuration
+  like a player with a configuration. You can create
+  one by dragging and dropping a GameObject in the
+  project window
 * **Scenes**: your scenes (unity scene files)
 * **Scripts**: your C# scripts (.cs)
-* **Settings**: ...
-* **Shaders**: ...
+* **Settings**, **Shaders**: ...
 
 Some shortcuts
 
