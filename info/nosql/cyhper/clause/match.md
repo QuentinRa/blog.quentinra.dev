@@ -12,7 +12,9 @@ using the edges.
 * ``(ref)-[]->()-[]->()``: a patch of three nodes
 * ...
 
-You are writing a MATCH like this
+<hr class="sr">
+
+Examples
 
 ```sql
 // returns node(s) where table=ShowbizPerson
