@@ -2,14 +2,13 @@
 
 [Go back](..)
 
-MATCH is taking a path. In a graph, a patch is starting
-with a node and ending with a node. You will links the nodes
-using the edges.
+MATCH is taking a graph, basically one or more nodes
+linked with edges.
 
-* ``(ref)``: a patch of one node
-* ``(ref)-[]->(ref)``: a patch of two nodes with a direction
-* ``(ref)-[]->()<-[]-()``: a patch of three nodes
-* ``(ref)-[]->()-[]->()``: a patch of three nodes
+* ``(ref)``: one node
+* ``(ref)-[]->()``: a path of two nodes with a direction (A->B)
+* ``(ref)-[]->()<-[]-()``: three nodes (A->B<-C)
+* ``(ref)-[]->()-[]->()``: three nodes (A->B->C)
 * ...
 
 <hr class="sr">
