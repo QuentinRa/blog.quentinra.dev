@@ -91,6 +91,7 @@ You got a lot of kind of edges
 * ``--`` : anonymous without direction
 * ``-->`` : anonymous with direction
 * ``-[:label]->`` : edge labelled "label" with direction
+* ``-[:l1|l2]->`` : edge labelled "l1" or "l2" with direction
 
 Ex
 
