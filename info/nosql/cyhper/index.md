@@ -156,7 +156,11 @@ You might use them
 * ``relationships(path)``: returns all the edges of a path
 * ``id(node)``: id of a node
 
-List-related
+<hr class="sr">
+
+## Lists
+
+List-related functions
 
 * ``range(min,max)``: returns a list of values [min, max] ([learn more]())
 * ``tail(list)``: remove the first one
@@ -182,3 +186,13 @@ MATCH (ref:Movie)
 ; you could also put a list in a WHERE
 RETURN size([ (ref)--(p:ShowbizPerson)  WHERE ref.released=2000 | p.name  ])
 ```
+
+A list is working like an array so you can use
+indexes to get an element
+
+* range(min, max)[0] : first element, index 0
+* range(min, max)[-1] : last
+* range(min, max)[1..3] : elements after the 1st one (included)
+  and before the 3rd one (excluded)
+* range(min, max)[..3] : elements before the 3rd one (excluded)
+* range(min, max)[3..] : elements after the 3rd one (included)
