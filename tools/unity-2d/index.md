@@ -321,3 +321,7 @@ UI
 
 * [MainMenu UI](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode)
 * [Simple UI](https://www.youtube.com/watch?v=xmR07iBW7zk&ab_channel=CocoCode)
+
+Youtube channels
+
+* [GameDevGuide](https://www.youtube.com/c/GameDevGuide/videos) (great tutorials about UI and general stuffs)

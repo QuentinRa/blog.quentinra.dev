@@ -39,9 +39,6 @@ https://www.youtube.com/watch?v=6Q0FnPy9Orc&ab_channel=TopsideStudios
 --- combat
 https://www.youtube.com/watch?v=e2PRI19Igbo
 
---- ui
-https://www.youtube.com/watch?v=iXWFTgFNRdM&ab_channel=GameDevGuide
-
 ----- not tutorials
 Xsolla
 https://assetstore.unity.com/packages/templates/systems/hunger-thirst-106005
