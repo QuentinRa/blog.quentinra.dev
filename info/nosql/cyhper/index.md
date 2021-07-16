@@ -129,3 +129,15 @@ The most used clauses are
 * [OPTIONAL MATCH](clause/optional-match.md) (a second From)
 
 Then you should practice [here](clause/exercise.md).
+
+<hr class="sr">
+
+## Create-Update-Delete
+
+You can use ``CREATE`` to create new nodes / edges,
+``MATCH-SET-RETURN`` to update something and
+``MATCH-REMOVE/DELETE/DETACH`` to remove something.
+
+* [Create](ddl/create.md)
+* [Update](ddl/update.md)
+* [Delete](ddl/delete.md)
