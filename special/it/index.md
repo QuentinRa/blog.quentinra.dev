@@ -143,11 +143,11 @@ In ``C``, you should check
 
 The notation was
 
-* you didn't make 3 tasks or more : 0
-* a task if yours if you got assigned to it
+* a task is yours if you got assigned to it
   in the GANTT and you made almost all the work
   (if not all)
-* code not compiling / starting : 0
+* you didn't make 3 tasks or more : ``0``
+* the code is not compiling / starting : ``0``
 
 You will have a grade
 
@@ -165,11 +165,12 @@ You will have a grade
   * ``lot_c`` grade `/3`
 
 But this notation was only because we were allowed a delay.
-And if was changed only if the new one gave you
-a better grade
+And it was changed after some complained because they wanted
+more without having done the "lot_c" (applied 
+only if the new one gave us a better grade)
 
-* ``/14``: same
-* ``/6``: same
+* ``/14``: same logic
+* ``/6``: some changes
   * ``lot_b`` on time `/1`
   * ``lot_b`` grade `/3`
   * ``lot_c`` on time `/1`
