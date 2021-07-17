@@ -1,11 +1,11 @@
 # Design patterns
 
 Most of the time when coding, you will write some
-part of code that a lof of developers written before
-you. Design patterns are the result of their reflexion
+part of code that a lot of developers have written before
+you. Design patterns are the result of their reflection
 on how one should implement this code.
 
-There a 4 great kind of design patterns
+There a 4 great kinds of design patterns
 
 * **creation** : how to create objects
 * **structure** : how to structure your code
@@ -13,18 +13,18 @@ There a 4 great kind of design patterns
 * **architectural** : how to think your code
 * and **anti-patterns** : what you **mustn't** do
 
-Just so you know a **GREAT** tip : if you copy and paste some code then in 100%
-of cases you are doing a mistake.
+Just so you know a **GREAT** tip: if you copy and paste 
+some code then in 100% of cases, you are doing a mistake.
 
-You may, should and must check this course 
+You may, should, and must check this course 
 <https://www.gofpatterns.com/design-patterns/module1/intro-design-patterns.php>
 about design patterns since the official one may help and be more accurate than
 this one.
 
 **edit 24/06/2021**: I recently found this website
 [https://java-design-patterns.com/](https://java-design-patterns.com/) and this
-GitHub [java-design-patterns](https://github.com/iluwatar/java-design-patterns) 
-that are really good materials to start learning design-pattern (maybe even better
+GitHub [java-design-patterns](https://github.com/iluwatar/java-design-patterns)
+which are really good materials to start learning design-pattern (maybe even better
 than this course so check them out). Still, note that is **way too advanced and 
 different** that what you will learn in school. You may also check this one
 [journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial).
