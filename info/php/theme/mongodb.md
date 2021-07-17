@@ -41,3 +41,38 @@ MongoDB database in PHP.
   * tools
   * change php cli version
   * and set it to the right php version
+
+**On Linux, you should**
+
+* look [at the tutorial here](https://www.php.net/manual/en/mongodb.installation.pecl.php)
+* install pecl : `sudo apt-get update` and `sudo apt-get install php-dev php-pear`
+* run ``sudo pecl install mongodb`` (or `sudo pecl install mongodb-1.9.1` for version 1.9.1)
+* you can uninstall a version with ``sudo pecl uninstall mongodb`` if needed
+* on debian, you should **not** edit php.ini
+  * replace v.v by your version ``sudo nano /etc/php/v.v/mods-available/mongodb.ini``
+  * ``php -ini | head`` if you don't know
+  * add ``extension=mongodb.so``
+  * enable ``sudo phpenmod mongodb``
+  * restart ``sudo systemctl restart apache2``
+* otherwise edit ``php.ini`` and add ``extension=mongodb.so``
+  * ``php -ini | head`` if you don't know where your .ini is
+  * restart ``sudo systemctl restart apache2``
+
+**Final part**
+
+Then in your project, use composer
+
+```bash
+composer require mongodb/mongodb
+```
+
+Then try a script like this
+
+```php
+<?php
+require 'vendor/autoload.php';
+// use MongoDB\Client;
+
+$client = new MongoDB\Client('url');
+$db = $client->db_name;
+```
