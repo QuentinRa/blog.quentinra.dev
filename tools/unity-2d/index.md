@@ -10,7 +10,7 @@ and you should also apply to
 [github student pack](https://education.github.com/pack).
 You will then download
 
-* **unity hub**: a software to manage unity versions
+* **unity hub**: software to manage unity versions
 and projects
 * **unity**: downloaded through unity hub, usually peoples
 are using LTS (Long term support) versions of unity
@@ -29,8 +29,8 @@ TopDownEngine (paid asset).
 
 ## Github in Unity
 
-Unity project are made of a lot of files, and big files
-too so you can't git them. Github allows you using LFS
+Unity projects are made of a lot of files, and big files
+too so you can't GIT them. Github allows you to use LFS
 to transfer big files and you got a plugin making things
 simple in unity.
 
@@ -38,9 +38,9 @@ simple in unity.
 * [Github for unity](https://unity.github.com/)
 * [Github for unity (Git)](https://github.com/github-for-unity/Unity/blob/master/docs/using/quick-guide.md)
 
-Personally, I did this
+Here are my steps
 
-* download github for unity (2nd link)
+* download GitHub for unity (2nd link)
 * you got a .package
 * open your project, and drag and drop it 
   inside **project window** (the file explorer,
@@ -66,7 +66,8 @@ game (by default you are in the sample scene)
 of the selected **GameObject**
 * **project window** (bottom): all of your project files
 
-The project files seems to be split by many like this
+The project files are usually split using these folders
+names
 
 * **Animations**, **Audio**, **Cutscene**
 * **Editor**, **Images**, **Materials**
@@ -75,9 +76,10 @@ The project files seems to be split by many like this
   like a player with a configuration. You can create
   one by dragging and dropping a GameObject in the
   project window
-* **Scenes**: your scenes (unity scene files)
+* **Scenes**: your scenes (unity scene files, a screen
+  of your game)
 * **Scripts**: your C# scripts (.cs)
-* **Settings**, **Shaders**: ...
+* **Settings**, **Shaders**
 
 Some shortcuts
 
@@ -88,7 +90,7 @@ Some shortcuts
 ## Tilemap
 
 A tilemap is a map of tiles, and a tile is an image. 
-You can have a Rectangular or a Isometric tilemap. This
+You can have a Rectangular or an Isometric tilemap. This
 is a convenient way of creating 2D maps since
 
 * you create a palette
@@ -96,7 +98,7 @@ is a convenient way of creating 2D maps since
 * and you move your tiles (grass, ...) to your map,
   in the right layer
   
-Creating layer allows you to put things on top of another.
+Creating a layer allows you to put things on top of another.
 In Unity, you will have a grid and each tilemap is a layer.
 If you want something to be bellow / on top of the player,
 then play with ``Order in Layer`` property.
@@ -186,15 +188,15 @@ body, then some are setting gravity to 0.
 When you are moving a gameObject using your handwritten
 script, don't forget to use this 
 ``pos * Time.deltaTime * speed`` (so use the
-deltaTime). It will make things smoothies since your
+deltaTime). It will make things smoother since your
 character will move at an almost constant speed.
 
 <hr class="sl">
 
 ## Sprites
 
-A sprite is a character and a spritesheet is a big
-having having a lot of sprites. In unity, click
+A sprite is an image and a sprite sheet is a big
+image having a lot of sprites. In unity, click
 on a sprite sheet then in property, set ``Sprite mode``
 to ``Multiple`` to tell unity that this image is composed
 of multiples images. Then in sprite editor, slide
@@ -212,14 +214,14 @@ You may (or not)
 
 ## Animations
 
-An animation seems to be made of an animator (handling
+"Animations" are made of an animator (handling
 the animations/states) and animations. An animation would
 be idle, running, jumping, ... while the animator would
-defines what make you move from idle to running.
+define what makes you move from idle to running.
 
 Create and add an animator controller to a GameObject.
 Then create animations (you need to select the time
-and the image loaded at this time). Then in the animator
+and the image loaded at this time). Then in the animator,
 you must add transition 
 
 * select a parameter
