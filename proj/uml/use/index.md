@@ -43,3 +43,18 @@ a shop is interacting with a factory. Then if the factory
 is the system, then the shop is an actor. Using that
 you can split a big use case diagram into a bunch
 of smaller ones.
+
+<hr class="sr">
+
+## Generalisation between actors
+
+Let's says you got a regular user and a logged user
+for the system "website". A logged user may be able to
+do all of the regular user use cases and even more. You
+can factorize this with inheritance.
+
+![](images/u-HqA2v9B2efpStXukIqyibFJqzDKGWjJYsoKaWiLd1CoStC0qa4fQQNvYGMGMLiQdHruN8EgNafGEq0.png)
+
+This is called Generalisation and not inheritance (
+or ``Héritage`` in French) since inheritance isn't
+a UML concept but a implementation one.
