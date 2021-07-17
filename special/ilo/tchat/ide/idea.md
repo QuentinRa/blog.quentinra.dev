@@ -68,8 +68,7 @@ Then after you are done, simply use the green arrow
 and paste a configuration (in the edit configuration
 menu) and change the name.
 
-If you need to run the server, I put
-everything in the same folder so I used IntelliJ
-import-module function and that was it.
+If you need to run the server, I put everything in the same
+folder so I used IntelliJ import-module function and that was it.
 
 ![module](module.png)
