@@ -76,3 +76,21 @@ require 'vendor/autoload.php';
 $client = new MongoDB\Client('url');
 $db = $client->db_name;
 ```
+
+<hr class="sl">
+
+## Login
+
+You may pass your username / password (if you have one)
+inside the URL but you may also use an array
+
+```php
+<?php
+use MongoDB\Client;
+
+$client = new MongoDB\Client('url', [
+    'username' => "",
+    'password' => ""
+]);
+$db = $client->db_name;
+```
