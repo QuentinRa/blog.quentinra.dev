@@ -51,9 +51,9 @@ how you should do it.
 
 **Next content**
 
-* [ ] Complete UML course (0 / 5)
+* [ ] Complete UML course (2 / 5)
 * [ ] Complete C course
-* [ ] Complete Java course (notes, libgdx, lwjgl, javafx)
+* [ ] Complete Java course (notes, javafx)
 * [ ] Complete Statistics course
 * [ ] Complete Probabilities course
 * [ ] Complete R course
@@ -66,32 +66,8 @@ how you should do it.
 **Update content**
 
 * [ ] add anti-patterns in ``DESIGN PATTERNS`` course
-* [ ] Differentials methods (Numerical analysis)
-* [ ] check notes (Numerical analysis)
 * [ ] ILO MCQs
-* [ ] OCaml MCQs
-
-**Typos**
-
-* [ ] C
-* [ ] Java
-* [ ] Optimization
-* [ ] R
-* [ ] Statistics
-* [ ] Numerical analysis
-* [ ] First-order logic
-* [ ] Macroeconomic
-* [ ] UML
-* [ ] Cyber security
-* [ ] guidelines
-* [ ] extreme dev.
 * [ ] Translate ``PROJECTS`` vocabulary
-
-## Notes
-
-* [ ] Java - https://web4.ensiie.fr/~bouyer/ipro.html
-* [ ] Games - https://web4.ensiie.fr/~bouyer/jin.html
-* [ ] https://padlet.com/sophie_martinez/1NSI2
 
 ## Others
 
