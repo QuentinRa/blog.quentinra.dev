@@ -58,3 +58,36 @@ can factorize this with inheritance.
 This is called Generalisation and not inheritance (
 or ``Héritage`` in French) since inheritance isn't
 a UML concept but a implementation one.
+
+<hr class="sr">
+
+## Use case associations
+
+You can link use cases between themselves but DO REMEMBER
+that you are not allowed to link use cases if it's
+temporal like
+
+* if the user is connected (=login)
+* then he can see his/her profile (=seeProfile)
+
+``login`` and ``seeProfile`` won't be linked together.
+``login`` will be directly linked to an actor "RegularUser"
+and ``seeProfile`` will also be directly linked to another
+actor called "LoggedUser".
+
+Aside from that, an use case can be linked with another
+one by
+
+* **a generalisation**: if an use case generalise another
+  then that means that we could use the use case
+  OR any other generalizing this use case.
+* **inclusion**: if an use case is **always**
+  calling another one (like a method **always** calling another one)
+* **extension**: an use case may call another one
+
+![](images/NOyn3eCm34Ndz1H_X84UWA6Y1-ZKNi1AN8W82Gf655MzUqsHEZ1OilzxbcLZcaaeopo4ap61dm99oBxj.png)
+
+A custom interacting with an ATM
+
+* **may** ask for help (extension)
+* **must** input his/her code
