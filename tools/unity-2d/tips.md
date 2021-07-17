@@ -20,7 +20,8 @@ You can and should group variables. You can use
 ``[Header("name")]`` / `[Space(value)]`
 before your variables declarations.
 
-Group objects into by groups in a gameObject.
+Group objects into groups using a gameObject (you may
+use "create empty game object".
 
 In RigidBodyComponent, use ``Interpolate`` in
 interpolate (make this smoother, ...).
