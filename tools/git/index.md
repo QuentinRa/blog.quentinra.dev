@@ -124,9 +124,10 @@ all of my changes
 the start of a great adventure.
 
 **LICENSE**: you may also put a LICENSE even if you don't
-want to put restrictions on your code, just in order
-to protect yourself from complaints (MIT LICENSE
-is good for that). You should check [this link](https://choosealicense.com/).
+want to put restrictions on your code, to protect yourself
+from complaints (MIT LICENSE
+is good for that). You should check
+[this link](https://choosealicense.com/).
 
 **.gitignore**: you may not want to commit some files
 like high-churn ones or big files... Create a file
@@ -137,7 +138,7 @@ here [toptal gitignore](https://www.toptal.com/developers/gitignore).
 
 ## Advanced Github concepts
 
-Here some functionalities that you may find
+Here are some functionalities that you may find
 on other git-server.
 
 * [Wikis](tools/wiki.md)
@@ -156,16 +157,16 @@ label on some (if not all) commits
 
 ![gpg](gpg.png)
 
-You can sign your commits are have this too using
+You can sign your commits and have this too using
 [GPG keys](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/generating-a-new-gpg-key)
-(github tutorial). You will need to write
+(GitHub tutorial). You will need to write
 a passphrase each time you are committing but you
 can reduce the number of times asked 
 
 * [help on stackoverflow](https://stackoverflow.com/questions/38384957/prevent-git-from-asking-for-the-gnupg-password-during-signing-a-commit)
 * [gpg-agent.conf](https://gist.github.com/tknv/43604e851a371949343b78261c48f190)
 
-Also someone can commit on the behalf
+Also, someone can commit on the behalf
 of someone else (not related to GPG)
 
 * [authored / committed](https://stackoverflow.com/questions/25327743/what-flow-causes-github-commits-that-are-authored-by-one-user-but-committed)
