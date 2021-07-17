@@ -53,5 +53,19 @@ may add on the arrow
 
 ![](images/trans3.png)
 
+<hr class="sr">
 
+## Conditional branching
 
+This is how you can do a conditional branching.
+
+![](images/JOqn3e0W34NdSegcavfu1O9dS2GE99P8WWnGxczXSljzVVaVm3K9LVgR3S2ohRZl5kaSZ8oY594E56v2A0yNHQ2Abzhvcg8mgZHkqYVdnjEnFWRDVsU2APKxnT7kDEdq1m00.png)
+
+<hr class="sr">
+
+## Synchro bar
+
+A synchro bar may be used if you want to both run
+State1 and State2 at the same time.
+
+![](images/u-HqA2v9B2efpStXukBarD3ILD3LjLEmjRLrCWGIG24GLocu9B4aLS5G2SY7IIaWIHWfWJGxfEQb0Cq10000.png)
