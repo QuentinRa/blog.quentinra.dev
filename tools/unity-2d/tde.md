@@ -1,7 +1,7 @@
 # TopDown Engine (TDE)
 
-This is an engine inside unity helping handling
-2D stuffs in TopDown games. You can purchase it
+This is an engine inside unity helping handling 2D stuff
+in TopDown games. You can purchase it
 in the unity store. Then install it
 with [this](https://topdown-engine-docs.moremountains.com/install.html)
 tutorial.
@@ -13,8 +13,8 @@ if you are feeling like this would improve your game.
 
 ## Player (called "Agent" in TDE)
 
-An agent is a name for character (Player, NPC, ...). The
-best way to make one is
+An agent is a name for a character (Player, NPC, ...). 
+The best way to make one is
 
 * creating a model
 * maybe an animator too
@@ -24,8 +24,8 @@ best way to make one is
 * then you may add other components like
     usual
 
-You can drag and drop it to a folder to create a prefab,
-then in level you can change the main player with this new
+You can drag and drop it into a folder to create a prefab,
+then in a level manager you can change the main player with this new
 prefab.
 
 <hr class="sl">
