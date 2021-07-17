@@ -3,9 +3,12 @@
 [Go back](../index.md)
 
 Also called
-automate or ``diagramme d’activités`` or
-``diagramme d’état-transitions``, the flow chart diagram
-is representing all the states of the program and
+
+* automate
+*``diagramme d’activités`` / ``diagramme d’état-transitions``, 
+* state diagram
+
+It's representing all the states of the program and
 the condition allowing the program to move from one
 state to another.
 
@@ -34,6 +37,8 @@ Inside "State", you could add attributes like
 * ``exit/action`` where action is executed when exiting
   this state
 
+![](images/SoWkIImgAStDuUAArefLqDMrKmWkIIn9DUI2K60He0oCQwMGcbTILAcVcPTPufIVM9I2956HMQAVabfSKfHV2P7YSaZDIm6P3G00.png)
+
 <hr class="sl">
 
 ## Transitions
@@ -60,6 +65,22 @@ may add on the arrow
 This is how you can do a conditional branching.
 
 ![](images/JOqn3e0W34NdSegcavfu1O9dS2GE99P8WWnGxczXSljzVVaVm3K9LVgR3S2ohRZl5kaSZ8oY594E56v2A0yNHQ2Abzhvcg8mgZHkqYVdnjEnFWRDVsU2APKxnT7kDEdq1m00.png)
+
+Note that instead of using
+"A test" and true/false, you could use the same symbol but
+writing a condition instead of true/false. You could have
+more than 2 state branched by using that, and the automate
+will always take the most fitting condition like
+
+* x = 5
+* cond1: x < 5
+* cond2: x > 0
+* cond3: x == 5
+* then the branch we will take is the one 
+  having the condition cond3
+
+Since not anyone may follows this rule, you may add
+a note saying how your automate is choosing.
 
 <hr class="sr">
 
