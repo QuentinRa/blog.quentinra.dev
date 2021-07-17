@@ -100,7 +100,7 @@ $db = $client->db_name;
 ## Some notes
 
 You should look at the documentation 
-[here]()
+[here](https://docs.mongodb.com/php-library/current/tutorial/)
 because it readable but I gathered a lot
 of things that I used but were not easy
 to find (at least for me)
@@ -163,3 +163,10 @@ $result = $collection->updateOne(
 $r = $result->getModifiedCount();
 $r = $result->getMatchedCount();
 ```
+
+<hr class="sl">
+
+## Sources
+
+* <https://docs.mongodb.com/php-library/current/tutorial/>
+* <https://stackoverflow.com/questions/30781476/how-to-unset-a-field-from-all-documents-with-php-mongo-adapter>
