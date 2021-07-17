@@ -68,13 +68,15 @@ you should
   an app)
 * then do the **MDD** method
 
-By doing so, you will most likely find more
-things that doing again and again loops using the sequence
-diagram to find missing classes/attributes/relations...
-Using Boostrap/an app make it easy to create a mockup
-at least I'm doing this for all my apps and I feel
-like it's worth it (check [HMI](../hmi/index.md)
-course to get some tips/apps).
+By doing so, you will most likely find more 
+things than doing, again and again, loops
+using the sequence diagram to find missing
+classes/attributes/relations... 
+Using Boostrap/an app makes it easy to create
+a mockup at least I'm doing this for all my
+apps and I feel like it's worth it
+(check [HMI](../hmi/index.md) course to get 
+some tips/apps).
 
 <hr class="sr">
 
@@ -90,12 +92,12 @@ documentation and the programmer must code according
 to the documentation. If something needs to be changed,
 then changing the documentation comes first.
 
-This is a sort of "design by contact" kind of methods
-but it sure helps having a clear (and not too long)
+This is a sort of "design by contract" kind of methods
+but it sure helps to have a clear (and not too long)
 description about what one should code.
 
 **Writing documentation is tiring through** so don't 
-forget **YAGNI** : don't code things
+forget **YAGNI**: don't code things
 that are not needing right now ("I will need this later")
 because that also means here more documentation.
 
@@ -113,7 +115,7 @@ according to the data provided.
 Something like making a file for the configuration
 and parsing it, making files for the view and render
 them, making files for your data like the NPC/Quests/...
-in a RPG instead of writing everything in the code.
+in an RPG instead of writing everything in the code.
 
 When you do that, someone can easily change the
 data without changing the code (or someone should
