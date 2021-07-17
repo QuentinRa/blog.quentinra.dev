@@ -176,7 +176,7 @@ of someone else (not related to GPG)
 ## Fancy notes
 
 Did you hear about badges? You can find them in the 
-README.md in a lot of repositories nowadays.
+README.md in a lot of repositories.
 
 ![](https://img.shields.io/github/license/lgs-games/memorize)
 
