@@ -10,18 +10,18 @@ Using these, you will use the knowledge,
 experience and the code
 improved by a lot of developers before you.
 This course is a gathering of programmers principles
-that may help you writing your code.
+that may help you write your code.
 
 <hr class="sr">
 
 ## Me
 
-Here some of my troughs before starting 
+Here are some of my troughs before starting 
 
 * I think your code should be enough **documented**
-  so that the programmer don't take hours trying
+  so that the programmer doesn't take hours trying
   to understand what you tried to do, and not too much
-  otherwise they may not read it.
+  otherwise, they may not read it.
 * you shouldn't copy-paste code from another part
   of your code
 * you should use frameworks or other programmer works
@@ -30,9 +30,9 @@ Here some of my troughs before starting
     * your workload
     * the complexity of your code
     * the workload of the futures maintainers
-* give relevant names to your functions / variables
-  (only when that's useful like i better than
-  index if i is a simplex index) and declare
+* give relevant names to your functions/variables
+  (only when that's useful like ``i`` is better than
+  ``index`` if ``i`` is a simple index) and declare
   them at the start of a bloc.
 
 <hr class="sl">
@@ -40,10 +40,10 @@ Here some of my troughs before starting
 ## Principles
 
 **Don’t repeat yourself (DRY)**: Do not copy-paste code,
-make a function. Otherwise you need to remember that you
+make a function. Otherwise, you need to remember that you
 will have ``n`` places to patch if you found a bug,
-not worth. You should also use constants rather than
-writing again and again a value like ``"toto"`` (for
+not worth it. You should also use constants rather than
+writing, again and again, a value like ``"toto"`` (for
 instance) in the code.
 
 **you ain't gonna need it (YAGNI)**: don't write code
@@ -72,10 +72,11 @@ code must do only one thing.
 **Rubber duck debugging**: when you got a problem with
 your code, try explaining it to a rubber duck (
 ``canard en plastique`` in French). Sometimes, simply
-explaining your problem to "someone" helps you solving it.
+explaining your problem to "someone" helps you solving your
+problem so talk to your rubber duck :)
 
 **Murphy's Law**: "Anything that can go wrong will go wrong.".
-Don't thing "xxx won't do that" and skip some code, because
+Don't think "xxx won't do that" and skip some code, because
 "xxx" will (calling a method using wrong parameters, ...).
 
 **Do The Simplest Thing That Could Possibly Work**:
@@ -90,10 +91,10 @@ through.
 
 SOLID is an acronym for
 
-* **S (Single)** : Do one thing
-* **O (Open/Closed)** : use inheritance to modify a class
+* **S (Single)**: Do one thing
+* **O (Open/Closed)**: use inheritance to modify a class
 * **L (Liskov substitution)**: variables of type A can be replaced by inheritors A
-* **I (Interfaces segregation)**: split big interface into a bunch of small ones
+* **I (Interfaces segregation)**: split big interfaces into a bunch of small ones
 * **D (Dependencies inversion)**: create layers using interfaces and abstract classes
 
 This is a bit more complicated and will require knowledge
@@ -104,14 +105,14 @@ in Oriented-object. You should check [Wikipedia](https://en.wikipedia.org/wiki/S
 ## Guidelines
 
 I started this course because of this website
-<https://suckless.org/> , "software that sucks less". Well
-dunno for the software but the website sucks.
-Still here some of their ideas, mixed with others
+<https://suckless.org/> , "software that sucks less".
+Well, dunno about the software but the website sucks.
+Still, here are some of their ideas, mixed with others
 (see references)
 
 * LICENSE + README.md inside each project
 * declare all variables at the start of a bloc
-* add the ``*`` (pointer star) after the type not the name
+* add the ``*`` (pointer star) after the type, not the name
 * line length: less than ``79`` characters
 * declare your variable then give them a value
 * use constants (const) or #define
