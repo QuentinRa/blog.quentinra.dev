@@ -22,7 +22,7 @@ but please only add the folder ``tests`` after
   like in the previous TP (check it out for
   the setup if you do).
   
-<div class="sr"></div>
+<hr class="sr">
 
 # Some tips
 
@@ -42,9 +42,9 @@ bit further the example with ``ArrayList``.
 ```java
 default void clear() {
     Iterator<E> iterator = this.iterator();
-    while (iterator.hasNext()) { // example with while
-        iterator.next(); // advance (do not forget!!!)
-        // next return an element but we don't care
+    while (iterator.hasNext()) { // example with whil!!!)
+        // next return an element but we don't caree
+        iterator.next(); // advance (do not forget
         iterator.remove(); // remove
     }
 }
