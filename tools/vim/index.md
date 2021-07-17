@@ -88,7 +88,7 @@ However, and thankfully, you can open a terminal and write
 to use vim peacefully, in exchange of ~30 minutes of your
 life and brain attention.
 
-Here some details about basic commands
+Here are some details about basic commands
 
 * [insert](commands/insert.md)
 * [move](commands/move.md)
