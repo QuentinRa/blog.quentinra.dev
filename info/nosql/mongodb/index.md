@@ -9,6 +9,29 @@ First, let's install MongoDB.
 * On Linux, I'm using ``mongo`` command ([tutorial](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-debian/#install-mongodb-community-edition))
 * You may use the [cloud database](https://www.mongodb.com/), on your mongo account
 
+<hr class="sl">
+
+```sql
+-- store credentials in admin database
+use admin
+
+db.createUser({ 
+    user: "name", 
+    pwd:"password", 
+    roles:[
+        { role: "userAdminAnyDatabase", db: "admin"  }
+    ] 
+})
+```
+
+Then you can log in using
+
+```sql
+# --authenticationDatabase admin: since our credential
+# are stored here
+mongo -u admin --authenticationDatabase admin -p
+```
+
 <hr class="sr">
 
 ## Starting in MongoDB
@@ -189,3 +212,4 @@ db.createUser( { user: "myuser", pwd: "password", roles: ["readWrite"] })
 * <https://stackoverflow.com/questions/46972695/see-setup-a-user-with-mongodb-compass>
 * <https://www.codevscolor.com/pages/mongodb-tutorials/>
 * <https://www.mongodb.com/nodejs-database>
+* <https://scotch.io/@micwanyoike/getting-started-with-mongodb-in-linux>
