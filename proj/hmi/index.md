@@ -7,7 +7,7 @@ website, ...
 You must think a lot about how you should create one,
 and that's the purpose of this course.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Introduction
 
@@ -36,7 +36,7 @@ you can draw it by yourself or use tools like
 You can use this great website to think about menus
 or make optimal choices : [optimalworkshop](https://www.optimalworkshop.com/).
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Users
 
@@ -58,7 +58,7 @@ but try to make some categories of users and provide them
 an application that would aim to satisfy most of their
 requests.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Steps
 
@@ -83,7 +83,7 @@ OR you can follows theses steps
     2. filter changes to be made 
     3. implement one or more changes
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Jakob Nielsen
 
@@ -154,7 +154,7 @@ you MUST take into account.
     > In last resort, adding some documentation
     > for complex applications is the way to go.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Last tips
 
@@ -169,7 +169,7 @@ If you need more that 3 clicks to do one action, and
 you do this action ofter then you MUST re-think your
 interface.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Sources
 
