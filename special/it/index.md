@@ -146,8 +146,8 @@ The notation was
 * a task is yours if you got assigned to it
   in the GANTT and you made almost all the work
   (if not all)
-* you didn't make 3 tasks or more : ``0``
-* the code is not compiling / starting : ``0``
+* you didn't make 3 tasks or more: ``0``
+* the code is not compiling / starting: ``0``
 
 You will have a grade
 
