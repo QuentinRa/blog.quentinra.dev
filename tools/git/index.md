@@ -124,9 +124,9 @@ all of my changes
 the start of a great adventure.
 
 **LICENSE**: you may also put a LICENSE even if you don't
-want to put restriction on your code, just in order
+want to put restrictions on your code, just in order
 to protect yourself from complaints (MIT LICENSE
-is good for that)
+is good for that). You should check [this link](https://choosealicense.com/).
 
 **.gitignore**: you may not want to commit some files
 like high-churn ones or big files... Create a file
