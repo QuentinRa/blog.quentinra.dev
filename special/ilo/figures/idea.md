@@ -2,11 +2,11 @@
 
 [Go back](index.md)
 
-You can find some tutorial about
+You can find a tutorial about
 IntelliJ [here](../../../tools/jetbrains/index.md).
 
 > do remember that IntelliJ can only run a file if all
-> the project is working. That not our case so you
+> the project is working. That is not our case so you
 > will have to add the test classes one after another.
 
 <hr class="sl">
@@ -14,7 +14,7 @@ IntelliJ [here](../../../tools/jetbrains/index.md).
 ## easy setup
 
 Remove the class `RunAllTests.java`
-since you won't need it and it makes thing hard
+since you won't need it and it makes things hard
 but it's a useless class since we will run tests
 using IDEA and not some java.
 
