@@ -127,7 +127,7 @@ after each turn.
 And now what's more useful
 
 * count of reservations, of room
-* quality (seems useless, price matter)
+* quality (seems useless, no changes)
 * staff
 * **price**
 
