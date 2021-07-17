@@ -163,6 +163,7 @@ concepts that you will surely use in PHP.
 
 * [Classes and objects](theme/classes.md)
 * [Database and SQL](theme/sql.md)
+* [MongoDB / NoSQL](theme/mongodb.md)
 * [Handling Forms](theme/forms.md)
 * [Sessions](theme/sessions.md)
 * [Login/Logout](theme/login_logout.md)
