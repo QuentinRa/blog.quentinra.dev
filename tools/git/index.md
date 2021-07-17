@@ -191,13 +191,15 @@ and get some badges
 You can check websites like these for reviews of your
 code
 
-* <https://www.codefactor.io/> (analysis)
+* <https://sonarcloud.io/> (the BEST, quite a lot of feedback)
+* <https://www.codefactor.io/> (analysis, good)
 * <https://www.codetriage.com/>
 * <https://about.codecov.io/> (code coverage)
-* <https://weblate.org/fr/> (translation)
+* <https://weblate.org/fr/>
 * <https://snyk.io/> (vulnerabilities)
-* <https://www.codacy.com/>
-* <https://lgtm.com/>
+* <https://www.codacy.com/> (I didn't manage to install this one)
+* <https://lgtm.com/> (basic feedback)
+* <https://scrutinizer-ci.com/> (paid)
 
 You may also check this to create a profile card
 
