@@ -80,7 +80,7 @@ your website pages (you may use your hand and we don't
 
 * you should do some tests, this is quite easy to do.
   You should use them to test your code like testing your
-  login method with all sort of input (field missing,
+  login method with all sorts of input (field missing,
   invalid input, too long/short, wrong type, ...)
   
 * use MVC. You will learn faster if you splitting your 
