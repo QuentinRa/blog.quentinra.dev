@@ -43,7 +43,7 @@ But just in case, [here is your tutorial](idea.md).
 
 <hr class="sr">
 
-## Here some tips
+## Here are some tips
 
 ``Writing some constructors``
 
