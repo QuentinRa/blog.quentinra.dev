@@ -28,14 +28,14 @@ the usual workflow is
 
 I created a simple PHP template
 [here](https://github.com/memorize-code/web-project-template).
-To use it properly, check out the Jetbrains course and
+To use it efficiently, you should check out the Jetbrains course and
 PHPStorm course.
 
 **2019/2020 template**
 
 This template was used in 2019-2020 by a lot of
 students [here](https://github.com/Kirouane/ensiie-project)
-but I think it not easy to start with it.
+but I think it is not easy to start with it.
 
 **TP template**
 
