@@ -1,11 +1,12 @@
 # Agile Scrum
 
-Agile scrum is a agile method a conducting a project.
+Agile Scrum is an agile method that may be used
+for conducting a project.
 
 The client will give you some specifications,
 called **product backlog** to the one that will
 interact with him called **product owner**. Your goal
-with be to create from theses specs the minimum to
+with be to create from these specifications the minimum to
 have a project that is working.
 
 Once you have that, you will demonstrate in front of
@@ -13,13 +14,14 @@ the client, who will update the **product backlog**
 to request some changes since he may have changed his
 mind. Then you start again another cycle to implements
 some functionalities requested until the last demonstration
-where the client is satisfied. Each one of theses iterations
+where the client is satisfied. Each one of these iterations
 is called a **sprint**.
 
-A **sprint** is a treated as a project as a whole, meaning
-you would do your specs, code and test it. You will do the same
-as for the project in your **sprint** and add a functionality
-then another etc. until you caught your **goal**.
+A **sprint** is treated as a project as a whole, meaning
+you would do your specifications, code, and test them.
+You will do the same as you are doing for the project 
+and add functionalities one after another until you reached
+your **goal**.
 
 <div class="sl"></div>
 
@@ -27,15 +29,15 @@ then another etc. until you caught your **goal**.
 
 You would usually need
 
-* **Product Owner** : the only one interacting with the client
-* **Scrum master** : make sure that scrum is applied correctly
-* **Dev team** : a team of usually 3 to 9 peoples
+* **Product Owner**: the only one interacting with the client
+* **Scrum master**: make sure that scrum is applied correctly
+* **Dev team**: a team of usually 3 to 9 peoples
 * Your [scrum guide](https://agilemanifesto.org/)
 
 First, the **Product Owner** write the specifications of the client
 called [Product Backlog](product-backlog.md).
 Then you will repeat a ``Sprint`` meaning all
-of theses steps until the end of the project
+of these steps until the end of the project
 
 1. [Sprint Planning](sprint/planning.md) <span class="tms">(What we will do ? )</span>
 2. [Sprint Backlog](sprint/backlog.md) <span class="tms">(Who will do what ?)</span>
@@ -45,7 +47,7 @@ of theses steps until the end of the project
 
 <div class="sr"></div>
 
-## Some advices
+## Some advice
 
 Try to relay as much as possible information in your group. Be sure to ask others
 
@@ -53,8 +55,8 @@ Try to relay as much as possible information in your group. Be sure to ask other
 * what they will do or
 * what they want to do
 
-and try to give them advices, be it person-to-person or talk about it and ask
-for everyone help in the ``daily scrum``.
+and try to give them advice, be it person-to-person or talk about it and ask
+for everyone's help in the ``daily scrum``.
 
 <div class="sl"></div>
 
