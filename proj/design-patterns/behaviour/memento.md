@@ -3,13 +3,12 @@
 [Go back](..)
 
 You can use this to save an object. That would be used
-by undo/redo application but in fact it cost a bit
+by undo/redo application but in fact, it cost a bit
 too much so not many would use it.
 
-In most case, for an undo redo, we will save the action
-done in order to reverse them or directly the action
-needed to undo.
-
+In most cases, for an undo-redo, we will save the action
+that the user did or the action that we should do to undo
+the user action.
 * ✅ : convenient
 * 🚫 : costly
 
