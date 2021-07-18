@@ -5,8 +5,8 @@
 Let's say a client wants something. We are gonna
 ask in a list if each one can do it.
 
-* ✅ : flexibility, class less linked with each other
-* 🚫 : …
+* ✅ : flexibility, classes are less linked with each other
+* 🚫 : ...
 
-Here an example on
+Here is an example on
 [tutorialspoint](https://www.tutorialspoint.com/design_pattern/chain_of_responsibility_pattern.htm).
