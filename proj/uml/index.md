@@ -5,7 +5,7 @@ a unified way of writing diagrams. You got some
 alternatives like ``SysML`` but that won't be covered here.
 
 You got a lot of graphics [here](https://en.wikipedia.org/wiki/Modeling_language)
-but we will cover theses one here
+but we will cover these
 
 * [class diagram](class/index.md) : the basic and most used one
 * [database diagram](db/index.md) : some class diagram for databases
