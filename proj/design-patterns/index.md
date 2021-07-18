@@ -64,7 +64,7 @@ different** that what you will learn in school. You may also check this one
 * [Decorator](structure/decorator.md)
   : Wrapper of a class to change a part of it,
   alternative to inheritance.
-* Flyweight
+* [Flyweight](structure/flyweight.md)
   : If you got a lot lot lot of objects then you can
   use the flyweight.
 * [Proxy](structure/proxy.md)
