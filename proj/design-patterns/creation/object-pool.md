@@ -9,12 +9,12 @@ but here are some of my notes
   (and may also the pool to increase)
 * the size of the pool is the number of this
   kind of objects you are planning to use **at the same time**
-* instead a creating new objects, you are gonna
-  use those in the pool
+* instead of creating new objects, you are gonna
+  reuse those in the pool
 
 Note that you usually use that when creating a new
 object cost a lot.
 
-And a real-life example would be the musics in Unity,
-you may store them inside a pool a reuse the music
-GameObjects when you need to change musics.
+And a real-life example would be the music in Unity,
+you may store them inside a pool and reuse the music
+GameObjects when you need to change music.
