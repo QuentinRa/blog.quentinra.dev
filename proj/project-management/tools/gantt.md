@@ -34,7 +34,7 @@ In French that's `organigramme des taches`, the idea is
 
 ## P.E.R.T.
 
-Now we need to see if a task need another task and what these
+Now we need to see if a task need another tasks and what these
 tasks would be. This is a simplified version of PERT
 where the initial node is the project and we use a
 ``------`` to represent a task that will take a lot
