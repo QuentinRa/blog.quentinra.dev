@@ -9,7 +9,7 @@ useful way so that you will enjoy the course.
 * Project Structure
 * Reporting
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Vocabulary (words are in french)
 
@@ -23,7 +23,7 @@ a task will require
 * ``Maitre d’ouvrage``: interactions with the client
 * ``Maitre d’oeuvre``: interactions with programmers/technical staff
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Project Structure
 
@@ -37,7 +37,7 @@ running, make upgrades, ...
 
 It's usually like this.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Specifications
 
@@ -79,20 +79,20 @@ manpower or costs.
 > You can find the full version [here](cdc/index.md).
 
 **AND** that's something a lot of people are forgetting
-but you need a part about the [risks](cdc/risks.md) !
+but you need a part about the [risks](cdc/risks.md)!
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Organize your project
 
-You would usually write a GanTT project to organize your tasks,
-even in a Agile-project (though it will have less content).
+You would usually write a Gantt project to organize your tasks,
+even in an Agile-project (though it will have less content).
 
 * [Writing your Gantt for Specs](tools/gantt.md)
 
 Then work on the project and don't forget
 
-* update your GanTT
+* update your Gantt
 * communicate with your team
 * do some meetings, properly
 * some **tests**
@@ -105,7 +105,7 @@ And please take not of **that**
 > the software can be run and, the client or whoever
 > can test it.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Reporting
 
@@ -124,7 +124,7 @@ a CR (Compte Rendu or report) looking like this.
 The "Ordre du jour" (agenda) is who will talk in the meeting,
 and we have a time set for each one.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Sources
 
