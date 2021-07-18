@@ -2,8 +2,8 @@
 
 [Go back](..)
 
-Simply use abstract class or interfaces to define
-the properties of sub classes.
+Simply use abstract classes or interfaces to define
+the properties of sub-classes.
 
 * ✅ : prevent a lot of copy-paste
 * 🚫 : more work to do
