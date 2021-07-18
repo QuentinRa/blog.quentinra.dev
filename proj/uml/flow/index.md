@@ -16,13 +16,13 @@ state to another.
 
 ## States
 
-We got 3 kind of states
+We got 3 kinds of states
 
 * initial state(s)
 * intermediary state(s)
 * and final state(s)
 
-Here an example with all of them
+Here is an example with all of them
 
 ![](images/u-HqA2v9B2efpStXukBarD3ILD3LjLDG0WgMf2e1HQ0ii2XG5gJ88JKl1QWU0000.png)
 
@@ -32,9 +32,9 @@ from one state to another until one of the final states.
 
 Inside "State", you could add attributes like
 
-* ``entry/action`` where action is executed when entering
+* ``entry/action`` where ``action`` is executed when entering
   this state
-* ``exit/action`` where action is executed when exiting
+* ``exit/action`` where ``action`` is executed when exiting
   this state
 
 ![](images/SoWkIImgAStDuUAArefLqDMrKmWkIIn9DUI2K60He0oCQwMGcbTILAcVcPTPufIVM9I2956HMQAVabfSKfHV2P7YSaZDIm6P3G00.png)
@@ -46,7 +46,7 @@ Inside "State", you could add attributes like
 The transitions are the arrows linking a state to another. You
 may add on the arrow
 
-* a trigger name (like what triggered us moving from one state to another)
+* a trigger name (like what will move us from our state to another)
 
 ![](images/trans1.png)
 
@@ -62,14 +62,14 @@ may add on the arrow
 
 ## Conditional branching
 
-This is how you can do a conditional branching.
+This is how you can do conditional branching.
 
 ![](images/JOqn3e0W34NdSegcavfu1O9dS2GE99P8WWnGxczXSljzVVaVm3K9LVgR3S2ohRZl5kaSZ8oY594E56v2A0yNHQ2Abzhvcg8mgZHkqYVdnjEnFWRDVsU2APKxnT7kDEdq1m00.png)
 
 Note that instead of using
 "A test" and true/false, you could use the same symbol but
 writing a condition instead of true/false. You could have
-more than 2 state branched by using that, and the automate
+more than 2 states branched by using that, and the automate
 will always take the most fitting condition like
 
 * x = 5
@@ -79,8 +79,8 @@ will always take the most fitting condition like
 * then the branch we will take is the one 
   having the condition cond3
 
-Since not anyone may follows this rule, you may add
-a note saying how your automate is choosing.
+Since not anyone may follow this rule, you may add
+a note saying how yours is choosing.
 
 <hr class="sr">
 
