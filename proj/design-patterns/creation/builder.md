@@ -2,7 +2,8 @@
 
 [Go back](..)
 
-When you got something big to do, just split it in small tasks !
+When you got something big to do, just split it
+into small tasks!
 
 * ➡️ : in web/app you should code a method for the header, one for the main and one for the footer
 * ✅ : more readable code
