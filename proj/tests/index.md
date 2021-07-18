@@ -36,7 +36,7 @@ More than situations, you usually choose one of these
 and write tests accordingly. Most of the time, tests
 are **unit tests**: you test a part of the code.
 
-Here some good practices before starting.
+Here are some good practices before starting.
 
 <div class="sr"></div>
 
@@ -44,8 +44,8 @@ Here some good practices before starting.
 
 You are writing some code while making the contract
 with the caller that ``if the program (arguments, ...)
-is in a correct state then after running this code it will
-still be in a correct state``: that's the contact.
+is in a correct state then after running this code 
+it will still be in a correct state``: that's the contact.
 
 So you might see one of these words often
 
@@ -100,7 +100,7 @@ that you must test
 
 Here is the **RightBicep** help
 
-* ``Right``: is the result ok? the job done?
+* ``Right``: is the result ok? Is the job done?
 * ``B``: see **CORRECT**
 * ``I``: if we have a reverse method then try testing
 your code with it
