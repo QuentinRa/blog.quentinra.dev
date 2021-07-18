@@ -5,7 +5,7 @@
 We will have a private static attribute, having the type of our class.
 And we will have a method usually called ``getInstance`` returning the instance.
 
-Constructor is usually private.
+The constructor is usually private.
 
 **lazy instantiation**
 
