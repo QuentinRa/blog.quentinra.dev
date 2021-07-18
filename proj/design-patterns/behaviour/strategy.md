@@ -9,7 +9,7 @@ what I understand.
 * ✅ : easy to add some functionalities
 * 🚫 : classes are too tied
 
-Theses links may help
+These links may help
 
 * <https://www.javatpoint.com/strategy-pattern>
 * <https://www.tutorialspoint.com/design_pattern/strategy_pattern.htm>
