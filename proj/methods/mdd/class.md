@@ -12,7 +12,7 @@ of the references. If ``A`` got a reference to an instance
 of ``B`` then we have `A -> B` (and you may write the
 instance name).
 
-> **Side note**: I'm enjoying use different colors for the different
+> **Side note**: I'm enjoying using different colors for the different
 > kind of classes like the classes of the VIEW, the MODEL
 > and the CONTROLLER (and maybe one too for the events
 > if I'm in the mood).
