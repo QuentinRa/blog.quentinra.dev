@@ -2,8 +2,8 @@
 
 [Go back](..)
 
-To put is simply, a decorator is a class taking another class
-into parameter and adding some functions to it. You may not add functions
+To put it simply, a decorator is a class taking another class
+into parameters and adding some functions to it. You may not add functions
 and simply modify one, but when you see a class given in argument that may be a hint
 like some ``new HTMLConverter(new Converter())``.
 
@@ -12,7 +12,7 @@ like some ``new HTMLConverter(new Converter())``.
 
 ## Example in Java
 
-May it be usefull
+May it be useful
 
 ```java
 public class DriveFood implements Food {
