@@ -45,7 +45,7 @@ in pairs.
 ## Model-driven development (MDD)
 
 You will create a model during the conception
-phase. Then you code will be the exact representation
+phase. Then your code will be the exact representation
 of the model (same attributes, classes, ...),
 at least the public part. If you need to add something,
 then first change the model.
