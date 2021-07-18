@@ -2,8 +2,8 @@
 
 [Go back](..)
 
-This is a factory of factories where we
-we code each method creating a factory like we were doing in ``Factory``.
+This is a factory of factories where we code 
+each method creating a factory (like we were doing in ``Factory``).
 
 * ➡️ : drivers SQL manager
 * ✅ : good isolation
