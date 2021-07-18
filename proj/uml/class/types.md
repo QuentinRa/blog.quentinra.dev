@@ -1,6 +1,6 @@
 ## Types
 
-You don't have a lot of types in UML but peoples are adding
+You don't have a lot of types in UML but people are adding
 a lot of types according to what they want so here
 a list of types you may find
 

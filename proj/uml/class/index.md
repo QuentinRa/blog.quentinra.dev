@@ -39,8 +39,8 @@ Attributes got
 
 **Notes**
 
-* if an attributes have a ``/`` before the visibility, 
-  that's means it's a **derived attribute** so the value
+* if attributes have a ``/`` before the visibility, 
+  that means it's a **derived attribute** so the value
   is calculated using other attributes.
 * an attribute **underlined** is static meaning the
   value and the attribute is shared by all instances
