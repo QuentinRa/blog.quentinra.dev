@@ -2,8 +2,8 @@
 
 [Go back](..)
 
-We are gonna create a class that the client wanted then write
-some code to make use of our code.
+We are gonna create a class that the client wanted and write
+some code to link yours with it.
 
 * ➡️ : our code and a bank API (client)
 * ✅ : integrate our code with an API
@@ -11,8 +11,8 @@ some code to make use of our code.
 
 ## Example
 
-* A : interface with the methods that the client want
-* B : our concrete class
-* Wrapper : extends B implements A
+* A: interface with the methods that the client want
+* B: our concrete class
+* Wrapper: extends B implements A
 
-And wrapper would have to implements A using the methods of B.
+And wrapper would have to implement A using the methods of B.
