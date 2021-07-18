@@ -31,15 +31,15 @@ A DCU looks like this
 with
 
 * **the system**: the Restaurant
-* **an actors**: the Client here, basically those
-  that interact with the system. Note that they are
-  not persons but roles.
-* **use cases**: Order, Eat, Checkout. What your actors
-  can do in/with the system.
+* **actors**: only one here, the Client, 
+  those that interact with the system.
+  Note that they are not persons but roles.
+* **use cases**: "Order", "Eat", "Checkout". 
+  What your actors can do in/with the system.
 * **association**: link the actors with the use cases.
 
-A system can be an actor in another system. Let's says
-a shop is interacting with a factory. Then if the factory
+A system can be an actor in another system. Let's say
+a shop is interacting with a factory. If the factory
 is the system, then the shop is an actor. Using that
 you can split a big use case diagram into a bunch
 of smaller ones.
@@ -57,7 +57,7 @@ can factorize this with inheritance.
 
 This is called Generalisation and not inheritance (
 or ``Héritage`` in French) since inheritance isn't
-a UML concept but a implementation one.
+a UML concept but an implementation one.
 
 <hr class="sr">
 
@@ -75,15 +75,15 @@ temporal like
 and ``seeProfile`` will also be directly linked to another
 actor called "LoggedUser".
 
-Aside from that, an use case can be linked with another
+Aside from that, a use case can be linked with another
 one by
 
-* **a generalisation**: if an use case generalise another
+* **a generalization**: if a use case generalize another
   then that means that we could use the use case
   OR any other generalizing this use case.
 * **inclusion**: if an use case is **always**
   calling another one (like a method **always** calling another one)
-* **extension**: an use case may call another one
+* **extension**: a use case may call another one
 
 ![](images/NOyn3eCm34Ndz1H_X84UWA6Y1-ZKNi1AN8W82Gf655MzUqsHEZ1OilzxbcLZcaaeopo4ap61dm99oBxj.png)
 
