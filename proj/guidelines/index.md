@@ -117,7 +117,7 @@ Still, here are some of their ideas, mixed with others
 * declare your variable then give them a value
 * use constants (const) or #define
 * use [sys/queue.h](https://stackoverflow.com/questions/7627099/how-to-use-list-from-sys-queue-h)
-  rather than your own lists
+  rather than your handmade lists
 
 ```c
 // a space after include, ordered by name
