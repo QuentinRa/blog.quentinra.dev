@@ -6,8 +6,8 @@ A singleton but we have also another attribute to limit
 the number of instances created.
 
 * ➡️ : when you want a bit more than a singleton
-* ✅ : same as singleton
-* 🚫 : same as singleton
+* ✅ : same as for singleton
+* 🚫 : same as for singleton
 
 ## Example in java
 
