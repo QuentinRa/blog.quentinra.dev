@@ -45,7 +45,7 @@ different** that what you will learn in school. You may also check this one
   : Clone instead of creating complex objects
 * [Builder](creation/builder.md)
   : Break object creation into modules
-* Object Pool
+* [Object Pool](creation/object-pool.md)
   : Create a finite pool of objects, allow others
   classes to use them, then handles to cleaning afterwards.
 
