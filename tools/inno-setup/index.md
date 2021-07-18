@@ -1,7 +1,7 @@
 # Introduction
 
-For now, this course is quite empty but some help
-might be added if peoples are using more advanced
+For now, this course is quite empty but more help
+might be added if people are using more advanced
 concepts that I do.
 
 First download the software [here](https://jrsoftware.org/isdl.php#stable)
