@@ -4,7 +4,7 @@
 
 The model is the data of the application. The view
 is what we will show. And the controller is the brain,
-asking data from the model, formatting it and giving
+asking for data from the model, formatting it, and giving
 it to the view.
 
 They are a lot of kind of MVC, usually the most
