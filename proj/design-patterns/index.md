@@ -95,7 +95,7 @@ different** that what you will learn in school. You may also check this one
   : change object behaviour according to state
 * [Strategy](behaviour/strategy.md)
   : family of objects
-* Visitor
+* [Visitor](behaviour/visitor.md)
   : object change according to visitor
 * [Mediator](behaviour/mediator.md)
   : relation between classes
