@@ -30,3 +30,32 @@ will modelize. It's
 check the UML diagram "use case diagram" since you will
 select some use cases and show how they are called
 inside the sequence diagram.
+
+<hr class="sl">
+
+## System sequence diagram
+
+A system sequence diagram is a sequence diagram
+considered to be a black box. You don't know the
+methods called or the arguments so you won't be able
+to add them.
+
+You will write a diagram having a lot of actors
+with a timeline, and at the end of the timeline the
+actor die. An actor is an object of your program but
+it may be a person (an user) if needed.
+
+![](images/utGeBaaiAYdDpU7YL7BAJrAmKWX8BIhEprDIq8rMBafDYRLJK7BCoKnEHPAnKiX8pSd91-f0bm7gCG02DxTONQ0-LFEi5FApkJWTKlDIWBO10000.png)
+
+You read this diagram as
+
+* an object of the class Person inside a variable **Bob** 
+* an object of the class Person inside a variable **Alice**
+* bob is calling "hello" on Alice
+* Alice is returning "ok" for the call "hello"
+
+Usually be draw a little rectangle to show the duration
+of the method call, and we add a number to explicitly
+clear any doubt about the order of the program execution
+
+![](images/seq2.png)
