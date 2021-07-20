@@ -45,7 +45,10 @@ Attributes got
 * an attribute **underlined** is static meaning the
   value and the attribute is shared by all instances
   and belongs to the class
-* a constant is usually static
+* a constant is usually static, I'm doing that
+  by adding a ``{final}`` after the type in StarUML
+
+![](images/SoWkIImgAStDuUBaTCv9B2wsKiZCAr5mZ7VszmiESVGBKR1Li5IeJilCIyof1QfnICrB0Qe60000.png)
 
 <hr class="sl">
 
@@ -94,3 +97,8 @@ to remember what kind of links it is.
 * you can add a direction
 * name isn't required
 * you can have multiples associations between 2 classes
+
+And sometimes you may declare an attribute having the type
+of another class inside your diagram. Some programmers
+are adding the attribute on the association rather than
+inside the class but not everyone do this.
