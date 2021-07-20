@@ -51,7 +51,6 @@ how you should do it.
 
 **Next content**
 
-* [ ] Complete UML course (2 / 5)
 * [ ] Complete C course
 * [ ] Complete Java course (notes, javafx)
 * [ ] Complete Statistics course
