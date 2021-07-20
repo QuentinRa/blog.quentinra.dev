@@ -50,6 +50,12 @@ Attributes got
 
 ![](images/SoWkIImgAStDuUBaTCv9B2wsKiZCAr5mZ7VszmiESVGBKR1Li5IeJilCIyof1QfnICrB0Qe60000.png)
 
+* **composite attributes** are attributes made of more
+  attributes. I have only seen that used in JavaScript since
+  you can create object that do not have a class
+  
+![](images/u-HqA2v9B2efpStXukHCpaaiBbPm1f6f2jL00SxgjCpKd9HQXUJyt8ByuioIL8N4afAYpAHI8CiAMO4kMCBGIg6aiY0LKy88Ag70oLaBb7L8pKi1MWa0.png)
+
 <hr class="sl">
 
 ## Operations
