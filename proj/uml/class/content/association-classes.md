@@ -1,6 +1,6 @@
 # Association classes
 
-[Go back](..)
+[Go back](../index.md)
 
 You may want to create an association with more
 information that only a name. That called a

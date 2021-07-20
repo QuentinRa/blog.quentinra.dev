@@ -1,6 +1,6 @@
 # Compositions
 
-[Go back](..)
+[Go back](../index.md)
 
 A composition is even stronger than an aggregation. The
 composite is a class that will create, manage, and destroy

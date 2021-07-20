@@ -1,6 +1,6 @@
 # par (parallel), seq (sequence), critical
 
-[Go back](..)
+[Go back](../index.md)
 
 ``par`` executes all blocs at the same time,
 ``seq`` execute one bloc at a time and ``critical``

@@ -1,6 +1,6 @@
 # sd (sequence diagram) and ref (reference)
 
-[Go back](..)
+[Go back](../index.md)
 
 You will usually put a whole sequence diagram in
 a fragment called ``sd`` with a name. 

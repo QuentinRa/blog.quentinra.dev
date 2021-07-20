@@ -1,6 +1,6 @@
 # Aggregations
 
-[Go back](..)
+[Go back](../index.md)
 
 An aggregation between an aggregator and an aggregated is a
 relationship where the aggregator is the superior of

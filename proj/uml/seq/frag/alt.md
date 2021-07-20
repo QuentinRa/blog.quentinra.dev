@@ -1,6 +1,6 @@
 # alt (=alternatives) and opt (= optional)
 
-[Go back](..)
+[Go back](../index.md)
 
 ``alt`` is a ``if else`` and `opt` is a `if`.
 

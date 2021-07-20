@@ -1,6 +1,6 @@
 # Multiplicity
 
-[Go back](..)
+[Go back](../index.md)
 
 ![](../images/Syv9B2vsL53AKr1IqDLLKCe5qiuWCIS5Ao0pBp4tLGa0.png)
 

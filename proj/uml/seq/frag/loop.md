@@ -1,6 +1,6 @@
 # loop
 
-[Go back](..)
+[Go back](../index.md)
 
 This is a loop calling a method
 while the condition is true.

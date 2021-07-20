@@ -1,6 +1,6 @@
 # multi-classes associations
 
-[Go back](..)
+[Go back](../index.md)
 
 This a complex relationship also called the ``association n-aires``
 in French, with ``n`` the number of classes.
