@@ -91,3 +91,16 @@ code.
 
 This is a messages where the arrow is starting and
 ending in the same lifeline. Nothing special.
+
+<hr class="sr">
+
+## Sequence Fragments
+
+In French, we call those ``Cadres d’interactions``. They
+are allowing us to use loops, if, ... in our diagram.
+
+* [alt/opt](frag/alt.md)
+* [loop](frag/loop.md)
+* [sd/ref](frag/sd.md)
+* [par/seq/critical](frag/par.md)
+* [break](frag/break.md)
