@@ -4,3 +4,5 @@
 * [multiplicity](https://support.bizzdesign.com/display/knowledge/Setting+the+multiplicity+for+a+UML+attribute%2C+operation+or+association)
 * [OCL](https://www-sop.inria.fr/members/Charles.Andre/CAdoc/ESINSA/UMLOCL-memo.pdf)
 * [Constraints in UML](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/how-to-model-constraints-in-uml/)
+* [OCL](http://ima.udg.edu/Docencia/07-08/3105200728/OclFinal.pdf)
+* [OCL](https://modeling-languages.com/wp-content/uploads/2012/03/OCLChapter.pdf)

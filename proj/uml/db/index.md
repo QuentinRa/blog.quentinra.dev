@@ -84,7 +84,8 @@ on an attribute like
 * properties like unique etc.
 
 You can specify those constraints using a note OR you
-can use the [Object Constraint Language (OCL)](https://en.wikipedia.org/wiki/Object_Constraint_Language).
+can use the [Object Constraint Language (OCL)](https://en.wikipedia.org/wiki/Object_Constraint_Language)
+or this [CheatSheet](https://scribetools.readthedocs.io/en/latest/_downloads/UMLOCL-CheatSheet-18.pdf).
 
 It's quite simple, right after your attribute
 declaration, write ``{...}`` with ``...`` a condition using
