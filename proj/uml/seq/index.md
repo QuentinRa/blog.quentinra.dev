@@ -74,3 +74,20 @@ you may add arguments like "<<create("Bob")>>". A
 constructor is returning the object created. You
 may add a cross at the end of the timeline of an object
 to show that it got destroyed.
+
+<hr class="sl">
+
+## Messages
+
+* **asynchronous messages**
+
+That's a message that do not returns something (void
+is considered as something). In such case, the caller
+won't wait for the return and continue the execution
+so we will have code running in parallel of our
+code.
+
+* **self messages**
+
+This is a messages where the arrow is starting and
+ending in the same lifeline. Nothing special.
