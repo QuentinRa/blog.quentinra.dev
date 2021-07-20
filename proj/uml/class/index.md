@@ -87,7 +87,8 @@ and returning a String.
 ## Associations and multiplicity
 
 Now that you can write a class and add some
-attributes / operations, then we will look at associations.
+attributes / operations, then we will look at relationships 
+defined by what we call associations.
 An association is a representation of a link between
 two classes. We usually write a multiplicity n..m characterizing how many instances of the classes
 are linked with how many of the other classes and a name
@@ -108,6 +109,21 @@ And sometimes you may declare an attribute having the type
 of another class inside your diagram. Some programmers
 are adding the attribute on the association rather than
 inside the class but not everyone do this.
+
+<hr class="sl">
+
+## Advanced associations
+
+You are gonna use the generalization a lot to factorize
+your code logic, but aggregation/compositions are not really
+helpful.
+
+* [generalization](content/generalization.md)
+* [generalization - interfaces](content/interfaces.md)
+* [generalization - abstract classes](content/abstract-classes.md)
+* [aggregations](content/aggregations.md)
+* [compositions](content/compositions.md)
+* [multi-classes associations](content/multi-classes.md)
 
 <hr class="sr">
 
