@@ -25,9 +25,44 @@ we continue
 * everything is public so we don't care about visibility
 * you will rarely use operations, but if that's allowed
 * you may use abstract classes / interfaces / constraints etc.
-* an **underlined** attributes in a **Database diagram**
-  if not a static attribute (like in a class diagram),
-  that's a **key** (explained later)
+* an **underlined** attribute
+  **do not means static**
+  but that means that the attribute is
+  a **key** (explained later)
 * a ``#`` before an attribute **do not means protected**
   (visibility) but that means that the attribute is
-  a **key**
+  a **key** (explained later)
+
+<hr class="sl">
+
+## Keys
+
+In most cases and in all cases if you are making something
+great, a class have what we call a **key**. It's an attribute
+taking a unique value that will be used to reference
+an object.
+
+* ``Identifiant/discriminant``
+
+That's the name in UML for a Key, because Key isn't a
+conception concept but an implementation one. You will
+write ``#`` and/or underline the attribute that is
+the identifier.
+
+You may have more than one attribute, and if that's the
+case then the unique constraint is not applied to
+each attribute of the key but all of them.
+
+* ``Identifiant candidat``
+
+A candidate to be the key, this attribute will also
+have unique values but won't be used as the key or
+as a part of it. Such attribute is preceded by a star `*`.
+
+* ``Identifiant artificiel``
+
+The most used kind of key. The key is generated
+automatically when you add a new element. It's
+represented by a beautiful star inside a circle ``⊛``.
+
+![](images/SoWkIImgAStDuKhEIImkLWX8BIhEprEevb9ur3LR8JF5IY4phuHB8IynDzLA8RYaA3CldQkM2wfAoK1FJqj1IK5F3yxqoazIi58epo_Avd98pKi16Wm0.png)
