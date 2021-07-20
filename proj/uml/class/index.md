@@ -72,3 +72,25 @@ and returning a String.
   then you should add `<<constructor>>`/``<<create>>``
   and ``<<destroy>>`` after the visibility
 * an operation **underlined** is static
+
+<hr class="sr">
+
+## Associations and multiplicity
+
+Now that you can write a class and add some
+attributes / operations, then we will look at associations.
+An association is a representation of a link between
+two classes. We usually write a multiplicity n..m characterizing how many instances of the classes
+are linked with how many of the other classes and a name
+to remember what kind of links it is.
+
+![](images/Syv9B2vsL53AKr1IqDLLKCe5qiuWCIS5Ao0pBp4tLGa0.png)
+
+* [Multiplicity](content/multiplicity.md)
+* [association classes](content/association-classes.md)
+* an association from A to A is called
+  self association or ``association réflexive``
+  in French
+* you can add a direction
+* name isn't required
+* you can have multiples associations between 2 classes
