@@ -11,7 +11,7 @@ Usually, this diagram is made of
 * a synopsis
 * the diagram itself which can be either
   * SSD=System sequence diagram /``Diagramme Séquence système``
-  * ??? /``Diagramme Séquence détaillé``
+  * Sequence diagram /``Diagramme Séquence détaillé``
 
 <hr class="sr">
 
@@ -41,8 +41,8 @@ methods called or the arguments so you won't be able
 to add them.
 
 You will write a diagram having a lot of actors
-with a timeline, and at the end of the timeline the
-actor die. An actor is an object of your program but
+with a lifeline, and at the end of it the
+actor may die. An actor is an object of your program but
 it may be a person (an user) if needed.
 
 ![](images/utGeBaaiAYdDpU7YL7BAJrAmKWX8BIhEprDIq8rMBafDYRLJK7BCoKnEHPAnKiX8pSd91-f0bm7gCG02DxTONQ0-LFEi5FApkJWTKlDIWBO10000.png)
@@ -59,3 +59,18 @@ of the method call, and we add a number to explicitly
 clear any doubt about the order of the program execution
 
 ![](images/seq2.png)
+
+<hr class="sr">
+
+## Sequence diagram
+
+The idea will be the same as above but instead of simply
+writing "hello" or "ok", we are gonna use the program
+methods, the argument and the correct return type.
+
+We will also add a call when we are asking for an object
+to be created / destroyed like "<<create>>" or
+you may add arguments like "<<create("Bob")>>". A
+constructor is returning the object created. You
+may add a cross at the end of the timeline of an object
+to show that it got destroyed.
