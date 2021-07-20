@@ -2,3 +2,5 @@
 
 * [UML Sequence diagram](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-sequence-diagram/)
 * [multiplicity](https://support.bizzdesign.com/display/knowledge/Setting+the+multiplicity+for+a+UML+attribute%2C+operation+or+association)
+* [OCL](https://www-sop.inria.fr/members/Charles.Andre/CAdoc/ESINSA/UMLOCL-memo.pdf)
+* [Constraints in UML](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/how-to-model-constraints-in-uml/)
