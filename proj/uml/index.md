@@ -12,7 +12,8 @@ You got a lot of graphics [here](https://en.wikipedia.org/wiki/Modeling_language
 but we will cover these
 
 * [class diagram](class/index.md) : the basic and most used one
-* [database diagram](db/index.md) : some class diagram for databases
+* [object diagram](class/object.md) : instance of a class diagram
+* [database diagram](db/index.md) : almost like a class diagram, for databases
 * [sequence diagram](seq/index.md) : application life-time diagram
 * [use case diagram](use/index.md) : application use-cases diagram
 * [flow chart diagram](flow/index.md) : automate of an application
