@@ -127,6 +127,27 @@ helpful.
 
 <hr class="sr">
 
+## Associations constraints
+
+* **dynamic**: you write a note on the association
+  explaining the constraints (ex: you can't call buy
+  before order)
+  
+The following are constraints on multiples associations,
+represented by line ``------`` linking associations
+
+* **inclusion** ``{IN}, {SUBSET}, {I}``: if one, then all exist
+* **exclusion** ``{X}``: if one, then only one exist
+* **equality/simultaneity** ``{=}, {AND}, {S}``: all exists
+* **total/coverage/inclusive** ``{T}, {OR}``: at least 1 exist
+* **partition/exclusive** ``{XT}, {P}, {+}``: only 1 exist
+
+For inclusion, it's not a line but an arrow from the
+association X to the association Y having the meaning
+that X can only exists if Y exists.
+
+<hr class="sl">
+
 ## Packages
 
 You can group classes by packages (=folders) to make something
