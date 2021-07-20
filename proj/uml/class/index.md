@@ -108,3 +108,16 @@ And sometimes you may declare an attribute having the type
 of another class inside your diagram. Some programmers
 are adding the attribute on the association rather than
 inside the class but not everyone do this.
+
+<hr class="sr">
+
+## Packages
+
+You can group classes by packages (=folders) to make something
+cleaner. Usually a package name is a path name
+starting from the project folder package name
+using ``.`` as folder separator. You will usually
+see names like ``net.sourceforge.plantuml`` for
+``net/sourceforge/plantuml/`` folder.
+
+![](images/u-HoA2v9B2efpStXuYf8JCvEJ4zLK7BEIImkpanMSCxFoKbDBidCpojMKb1s0GE5QYu51V-aBA2uWasDhgw2Or5HOgLFPd49Lot2YBpK4htY_DAYvDIq_ABqLBs2dCGya2KOkbrIS_CDWM9WMa4B8c04CieXDIy5g0C0.png)
