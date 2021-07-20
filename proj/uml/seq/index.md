@@ -92,6 +92,16 @@ code.
 This is a messages where the arrow is starting and
 ending in the same lifeline. Nothing special.
 
+* **logic**
+
+There is no "return" if there is no "call".
+
+A can only call a function on B if the function
+exists in B.
+
+If an object A is calling a method on B then in the
+class diagram (if you got one), they MUST be linked.
+
 <hr class="sr">
 
 ## Sequence Fragments
