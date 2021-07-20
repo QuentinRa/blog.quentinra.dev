@@ -47,8 +47,9 @@ a list of types you may find
         <td>decimal like xxx.yyy with n=length and p=count(y)</td>
     </tr>
     <tr>
-        <td>date</td>
-        <td>a date</td>
+        <td>date, time, interval</td>
+        <td>a date like YYYY-MM-DD, a time since 1970
+        or a duration.</td>
     </tr>
 </tbody>
 </table>
