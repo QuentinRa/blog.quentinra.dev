@@ -13,6 +13,10 @@ a list of types you may find
 </thead>
 <tbody>
     <tr>
+        <td>void</td>
+        <td>nothing</td>
+    </tr>
+    <tr>
         <td>varchar(n)</td>
         <td>string of size n</td>
     </tr>
