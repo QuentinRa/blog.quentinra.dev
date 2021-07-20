@@ -28,7 +28,7 @@ name as the **variable name** storing this object
 Attributes got 
 
 * a visibility
-    * **public** (+, read/write for all)
+    * **public** (+, read/write for all, default)
     * **private** (-, read/write only inside the class)
     * **package** (~, read/write for all inside the folder)
     * **protected** (#, same as package, but read/write
@@ -44,4 +44,31 @@ Attributes got
   is calculated using other attributes.
 * an attribute **underlined** is static meaning the
   value and the attribute is shared by all instances
-  like the number of persons.
+  and belongs to the class
+* a constant is usually static
+
+<hr class="sl">
+
+## Operations
+
+An operation is the UML name for a method/function. You
+will have
+
+* a visibility
+* a function name (usually in lowerCamelCase)
+* some arguments
+  * separated by a comma
+  * name:type
+* a return type <span class="tms">(none isn't the same as void, like
+  for a Java constructor)</span>
+
+**Ex**: ``+ getName() : String`` is
+a public operation getName taking no arguments
+and returning a String.
+
+**Notes**
+
+* If your method is creating / destroying objects,
+  then you should add `<<constructor>>`/``<<create>>``
+  and ``<<destroy>>`` after the visibility
+* an operation **underlined** is static
