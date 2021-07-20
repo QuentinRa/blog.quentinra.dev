@@ -66,3 +66,30 @@ automatically when you add a new element. It's
 represented by a beautiful star inside a circle ``⊛``.
 
 ![](images/SoWkIImgAStDuKhEIImkLWX8BIhEprEevb9ur3LR8JF5IY4phuHB8IynDzLA8RYaA3CldQkM2wfAoK1FJqj1IK5F3yxqoazIi58epo_Avd98pKi16Wm0.png)
+
+<hr class="sl">
+
+## Constraints and OCL
+
+You can also do that in "class diagrams" but it's more
+used in database diagrams through it's almost never used.
+
+We call integrity constraints the constraints applied
+on an attribute like
+
+* the type
+* the multiplicity (if it's an array otherwise it's 1)
+* properties like an interval of values allowed=Domain,
+  a format, ...
+* properties like unique etc.
+
+You can specify those constraints using a note OR you
+can use the [Object Constraint Language (OCL)](https://en.wikipedia.org/wiki/Object_Constraint_Language).
+
+It's quite simple, right after your attribute
+declaration, write ``{...}`` with ``...`` a condition using
+OCL language like ``>=60``. If the condition
+is applied on multiple attributes then you will
+add the condition using ``{}`` on the class.
+
+You can also add conditions on associations.
