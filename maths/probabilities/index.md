@@ -20,27 +20,23 @@ will be used in other courses.
   </span>
 * $\emptyset$ (small-omega)
   means an impossible event.
-* $Card(E) = |E| = \\#E$ is the cardinal of
+* $Card(E) = |E| = E$ is the cardinal of
   E, meaning the number of elements.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Vocabulary and properties
 
-<p>\(\mathbb{P}(A)\) 
+$\mathbb{P}(A)$ 
 means the probability of A
-happening and that's a value in <span>
-\([0,1]\)</span>
-</p>
+happening and that's a value in
+$[0,1]$
 
-* <span>
-    \(\mathbb{P}(\Omega) = 1\)</span> and <span>\(\mathbb{P}(\emptyset) = 0\)</span>
-* <span>
-    \(\mathbb{P}(\overline{A}) = 1 - \mathbb{P}(A)\)</span>
-* <span>
-    \(\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cap B)\)</span>
-* <span>
-    \(A \subset B \to \mathbb{P}(A) \le \mathbb{P}(B)\)</span>
+* $\mathbb{P}(\Omega) = 1$ and $\mathbb{P}(\emptyset) = 0$
+* $\mathbb{P}(\overline{A}) = 1 - \mathbb{P}(A)$
+* $\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) -
+  \mathbb{P}(A \cap B)$
+* $A \subset B \to \mathbb{P}(A) \le \mathbb{P}(B)$
   
 We call **distribution function** an strictly positive, increasing function where the sum
 of all values is 1.
