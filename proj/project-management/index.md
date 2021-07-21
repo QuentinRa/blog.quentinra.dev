@@ -126,6 +126,24 @@ and we have a time set for each one.
 
 <hr class="sr">
 
+## Bugs
+
+If you are on a small project, you can use
+a file to store information about your bugs
+
+* give them an id
+* a description of what you did
+* a description of what you were expecting
+* a description of what you got
+* notes like the software version/tool version/...
+* a boolean with true/false if solved.
+
+but you should consider using online solutions
+using the keyword "issues" like with Github issues
+or Jetbrains space issues tracker.
+
+<hr class="sl">
+
 ## Sources
 
 * <https://www.codeur.com/blog/gestion-de-projet-diagramme-pert/>
