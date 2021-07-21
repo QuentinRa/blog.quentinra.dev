@@ -8,7 +8,8 @@ split into question. A question will require you to do
 the previous questions.
 
 The original, french subject can be found
-[here](download:IPF_projet_2021.pdf) if you want.
+[here](https://github.com/memorize-code/memorize-references/raw/main/info/ocaml/IPF_projet_2021.pdf) 
+if you want.
 
 Everything is in French, for now, feel free to propose
 a translated version (function names etc.).
