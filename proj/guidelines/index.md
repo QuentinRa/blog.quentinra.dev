@@ -141,6 +141,11 @@ set things up with yourself and your team.
 
 <hr class="sl">
 
+<img src="/courses/proj/guidelines/meme.jpg"
+alt="meme" width="500"/>
+
+<hr class="sr">
+
 ## Sources
 
 * <https://en.wikipedia.org/wiki/SOLID>
