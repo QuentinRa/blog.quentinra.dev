@@ -26,6 +26,7 @@ I will be using these to create diagrams.
 
 * [StarUML](https://staruml.io/) (software, free and open-source)
 * [PlantUML](https://plantuml.com/) (website)
+* [UML from code](https://github.com/iluwatar/uml-reverse-mapper)
 
 Others alternatives
 

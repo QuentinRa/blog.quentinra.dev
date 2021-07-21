@@ -136,6 +136,8 @@ a file to store information about your bugs
 * a description of what you were expecting
 * a description of what you got
 * notes like the software version/tool version/...
+* a priority
+* an assignee/some reviewers
 * a boolean with true/false if solved.
 
 but you should consider using online solutions
