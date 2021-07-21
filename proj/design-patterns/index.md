@@ -26,8 +26,12 @@ this one.
 GitHub [java-design-patterns](https://github.com/iluwatar/java-design-patterns)
 which are really good materials to start learning design-pattern (maybe even better
 than this course so check them out). Still, note that is **way too advanced and 
-different** that what you will learn in school. You may also check this one
-[journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial).
+different** that what you will learn in school.
+
+**edit 21/07/2021**: I found this
+great [website](https://sourcemaking.com/design_patterns)
+explaining both design patterns and anti-patterns with
+examples in a lot of languages.
 
 <hr class="sl">
 
@@ -226,6 +230,7 @@ and make things more readable.
 * <https://www.javatpoint.com/design-patterns-in-java>
 * <https://www.geeksforgeeks.org/the-decorator-pattern-set-2-introduction-and-design/>
 * <https://www.gofpatterns.com/>
+* <https://www.journaldev.com/1827/java-design-patterns-example-tutorial>
 * <https://www.geeksforgeeks.org/null-object-design-pattern/>
 * <https://www.tutorialspoint.com/design_pattern/null_object_pattern.htm>
 * <https://www.tutorialspoint.com/design_pattern/chain_of_responsibility_pattern.htm>
