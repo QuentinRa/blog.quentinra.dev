@@ -91,3 +91,21 @@ We could have used a <b>lambda expression</b> since
 <b>Runnable</b> is a functional interface. We could
 have used an anonymous class, it works no mater the class.
 </blockquote>
+
+<hr class="sr">
+
+**Question 7**
+
+In TP Figures, what's the design pattern used when we
+are calling ``equals(Figure f)`` inside ``equals(Object obj)``
+among Template Method, Equalizer, Decorator, and Adapter?
+
+<blockquote class="spoiler">
+My first trough is the <b>Template Method</b> because
+<code>equals, hashcode, ...</code> are methods defined
+in the template that is named <code>Object</code>. But since
+this is not a equals about equals but more about the same
+method but more specialized then I would pick
+<b>Decorator=Wrapper</b> because it looks like a Parser
+that becomes a XMLParser/PDFParser/... to me.
+</blockquote>
