@@ -16,13 +16,11 @@ use some values.
 The first 4 bits are the rotation. And the 8 bits
 are the value.
 
-<div>
 Place the 8bits at the end of a 32bits variable
 like you got 32 zeros but replace the 8 last ones
 with the last 8 bits of the constant. Then, you
 must move your bits, clockwise by
-<span>\(2^{rotation}\)</span>.
-</div>
+$2^{rotation}$.
 
 <hr class="sr">
 
@@ -30,46 +28,54 @@ must move your bits, clockwise by
 
 Taking an example, we would have
 
-* ``0001 00000001``
-* on 32 bits ``00000000 00000000 00000000 00000001``
+* $0001\ 00000001$
+* on 32 bits $00000000\ 00000000\ 00000000\ 00000001$
 * 0001 in base 2 = 1 in base 10
-* so the rotation is 2^1 = 2
-* 1/2
-* ``10000000 00000000 00000000 00000000``
-* 2/2
-* ``01000000 00000000 00000000 00000000``
+* so the rotation is $2^1 = 2$
+* $1/2$
+* $(10000000\ 00000000\ 00000000\ 00000000)_2$
+* $2/2$
+* $01000000\ 00000000\ 00000000\ 00000000$
 * and our number is ...
-* 1073741824 = 2^30
+* $1073741824 = 2^{30}$
 
 <hr class="sl">
 
-## Example 2: from decimal to constant
+## Example 2.1: from decimal to constant
 
-Test with ``748 326``
+**Test with 748 326**
 
-* write on 32 bits ``00000000 00001011 01101011 00100110``
+* write on 32 bits $00000000\ 00001011\ 01101011\ 00100110$
 * oh no... 19 bits can't fit a 8bits value
 * fail
 
-Test with ``32000``
+<hr class="sr">
 
-* write on 32 bits ``00000000 00000000 01111101 00000000``
+## Example 2.2: from decimal to constant
+
+**Test with 32000**
+
+* write on 32 bits $00000000\ 00000000\ 01111101\ 00000000$
 * 7 bits fit on 8 bits so we are good
-* value (8bits): ``01111101``
+* value (8bits): $01111101$
 * trying to guess the rotation
-* ``00000000 00000000 00000000 01111101``
+* $00000000\ 00000000\ 00000000\ 01111101$
 * I need to rotate by 24 to have back my 32 bits number
-* but... I can't write 2^n = 24
+* but... I can't write $2^n = 24$
 * fail
 
-Test with ``-58``
+<hr class="sl">
 
-* write on 32 bits ``10000000 00000000 00000000 00111010``
+## Example 2.3: from decimal to constant
+
+Test with $-58$
+
+* write on 32 bits $10000000\ 00000000\ 00000000\ 00111010$
 * 7 bits fit...
-* value (8bits): ``11101010``
-* we have ``00000000 00000000 00000000 11101010``
+* value (8bits): $11101010$
+* we have $00000000 00000000 00000000 11101010$
 * this time, I only need to rotate 2 times
-* so I have 2^n = 2 for n=1
-* rotation (4 bits): ``0001`` (equals to 1)
-* so I will store ``0001 11101010``
+* so I have $2^n = 2$ for $n=1$
+* rotation (4 bits): $0001$ (equals to n=1)
+* so I will store $0001\ 11101010$
 * done
