@@ -91,3 +91,31 @@ A custom interacting with an ATM
 
 * **may** ask for help (extension)
 * **must** input his/her code
+
+<hr class="sr">
+
+## Example
+
+A friend made this use case diagram for our website
+[lgs-games.com](https://lgs-games.com/).
+
+![](images/unknown.png)
+
+Just as an example but the generalization of "Edit profile"
+into
+
+* "Change avatar"
+* "Change username"
+* "Change description"
+
+means that you can do either of them like change avatar
+or change username. If you got one form changing all
+of them (or not) then you should use "extends".
+
+For "Change
+one's reputation", you could increase or decrease and
+this is missing from the diagram.
+
+The diagram is also missing a lot of information
+like what information are provided to Register etc.
+but that what make it cleaner and easier to understand.
