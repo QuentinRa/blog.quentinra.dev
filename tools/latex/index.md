@@ -73,6 +73,11 @@ just draw it on
 [detexify](https://detexify.kirelabs.org/classify.html) 
 and ask him to look for it.
 
+Related
+
+* [mathjax reference](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
+* [alternatives to atomurl](https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog)
+
 <div class="sl"></div>
 
 ## Sources
