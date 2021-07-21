@@ -13,8 +13,8 @@ First, the TP is in two parts
   
 Materials
 
-* [Source Part1](download:sources/TPChat.zip)
-* [Source Part2](download:sources/ChatClientJavaFX.zip)
+* [Source Part1](https://github.com/memorize-code/memorize-references/raw/main/special/ilo/tchat/TPChat.zip)
+* [Source Part2](https://github.com/memorize-code/memorize-references/raw/main/special/ilo/tchat/ChatClientJavaFX.zip)
 * just so you know, in 2021, the ClientFrame.fxml file
   leaked during the FIPA classes. Legends are saying
   that you could find it, somewhere, though I don't know where?
