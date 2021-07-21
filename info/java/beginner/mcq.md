@@ -18,14 +18,16 @@ On how many bits the primitive type ``char`` is defined?
 
 <blockquote class="spoiler">
 It's <b>16</b> bits and not 8 like usual,
-because Java bet on UTF-16 but no UTF-8 was enough.
+because Java bet that we will use UTF-16 but, 
+unfortunately for them, UTF-8 was the one that became
+the most used.
 </blockquote>
 
 <hr class="sl">
 
 **Question 3**
 
-Could you guess what's this code doing ?
+Could you guess what's this code doing?
 
 ```java
 class Math {
@@ -44,7 +46,7 @@ n is working properly and return n plus the value 2.
 
 **Question 4**
 
-Which instruction are we using in java to goto the next
+Which instruction are we using in java to go to the next
 turn of a loop? (next, pass, continue, skip, do, goto)
 
 <blockquote class="spoiler">
@@ -58,8 +60,8 @@ It's <b>continue</b> keyword!
 What's the difference between ``==`` and `equals`.
 
 <blockquote class="spoiler">
-None by default, they both check if two object have the same address.
-But object can override <b>equals</b> and check the value
+None by default, they both check if two objects have the same address.
+But a class can override <b>equals</b> and check the value
 rather than the address. For primitives types, <b>==</b> is checking
 the value.
 </blockquote>
@@ -68,7 +70,7 @@ the value.
 
 **Question 6**
 
-What's this code is doing ``object.equals(null)`` ?
+What's this code is doing ``object.equals(null)``?
 
 <blockquote class="spoiler">
 This code is returning false if object is not null, but if object
@@ -81,7 +83,7 @@ trigger a <b>NullPointerException</b>.
 **Question 7**
 
 What are we doing in this statement: ``public interface Human implements Living {}``
-with Living another interface ?
+with Living another interface?
 
 <blockquote class="spoiler">
 The keyword is <b>wrong</b>, we should use <b>extends</b>. If extends
@@ -93,7 +95,7 @@ Living methods.
 
 **Question 8**
 
-How many methods a ``FunctionalInterface`` can have ?
+How many methods a ``FunctionalInterface`` can have?
 
 <blockquote class="spoiler">
 One abstract method, no other restrictions. 
@@ -103,20 +105,20 @@ One abstract method, no other restrictions.
 
 **Question 9**
 
-With A a superclass, and B a subclass, using **Liskov substitution principe**
+With A a superclass, and B a subclass, using **Liskov substitution principle**
 (polymorphisme d'héritage), what statement are valid ?
 
 - ``B v1 = new A()``
 - ``A v2 = new B()``
-- subclass instance can be considered as superclass instances
-- superclass instance can be considered as subclass instances
+- subclass instances can be considered as superclass instances
+- superclass instances can be considered as subclass instances
 - call a method on of `v2` only defined in class `B`
 - call a method on of `v2` defined in class `A`
 
 <blockquote class="spoiler">
-Only the statements 2,3,6 are valid. In 5, v2 is of type A so
+Statements 2,3,6 are valid. In 5, v2 is of type A so
 you can't call B methods (even if the real instance is of type B).
-In statement 1, A don't have the new methods declared in B so that
+In statement 1, A doesn't have the new methods declared in B so that
 won't work. Same answer for statement 4.
 </blockquote>
 
