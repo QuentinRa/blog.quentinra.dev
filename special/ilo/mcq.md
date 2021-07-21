@@ -65,7 +65,7 @@ since we are associating for each username a color.
 **Question 5**
 
 In TP Tchat, the class ``ChatClient`` is handling
-the message (send/receive). It is M, V or C in MVC?
+the message (send/receive). It is M, V, or C in MVC?
 
 <blockquote class="spoiler">
 I think it's <b>M</b>, since ChatClient can be viewed
@@ -77,7 +77,7 @@ as a class interacting with a Database (the server here).
 **Question 6**
 
 In TP Tchat, we were giving ``Runnables`` to
-``Platform.runLater``. True of False?
+``Platform.runLater``. True or False?
 
 1. the runnable classes were declared as inner classes (``classes internes``)
 2. the runnable classes were declared as nested classes (``classes imbriquée``)
@@ -86,10 +86,10 @@ In TP Tchat, we were giving ``Runnables`` to
 5. we could have used anonymous classes
 
 <blockquote class="spoiler">
-The class are not static so they were declared as inner class.
+The classes are not static so they were declared as inner classes.
 We could have used a <b>lambda expression</b> since
 <b>Runnable</b> is a functional interface. We could
-have used an anonymous class, it works no mater the class.
+have used an anonymous class, it works no matter the class.
 </blockquote>
 
 <hr class="sr">
