@@ -1,7 +1,5 @@
 # First-order logic
 
-In this course, ...
-
 ...
 
 <hr class="sr">
@@ -10,32 +8,52 @@ In this course, ...
 
 ...
 
+<hr class="sr">
+
 ## Natural deduction
 
-### ??? ("séquents prouvables" in French)
+Your aim will be to demonstrate that something is
+true. You will start from the conclusion=what you
+think is true and using Sequent calculus / ``Séquents prouvables``,
+you will aim to split your conclusion into axioms / ``axiomes``
+so something that's always true.
 
-let F, G, H some propositions, \(\Gamma\) a set of propositions . 
-<p>
-	\( \frac{}{\Gamma, F \vdash F} (ax) \) <br/>
-	\( \frac{\Gamma, F \vdash F}{\Gamma, G \vdash F} (aff) \) <br/>
-	\( \frac{\Gamma, F \vdash G}{\Gamma \vdash F \Rightarrow G} (\Rightarrow_i)  \) <br/>
-	\( \frac{\Gamma \vdash F \Rightarrow G \quad \Gamma \vdash F}{\Gamma \vdash G} (\Rightarrow_e)  \) <br/>
-	\( \frac{\Gamma \vdash F \quad \Gamma \vdash G}{\Gamma \vdash F \wedge G} (\wedge_i)  \) <br/>
-	\( \frac{\Gamma \vdash F \wedge G}{\Gamma \vdash F} (\wedge_e^l)  \) <br/>
-	\( \frac{\Gamma \vdash F \wedge G}{\Gamma \vdash G} (\wedge_e^r) \) <br/>
-	\( \frac{\Gamma \vdash F}{\Gamma \vdash F \vee G} (\vee_i^l)  \) <br/>
-	\( \frac{\Gamma \vdash G}{\Gamma \vdash F \vee G} (\vee_i^r)  \) <br/>
-	\( \frac{\Gamma \vdash F \vee G \quad \Gamma, F \vdash H \quad \Gamma, G \vdash H}{\Gamma \vdash H} (\vee_e)  \) <br/>
-	\( \frac{\Gamma, F \vdash \perp}{\Gamma \vdash \neg F} (\neg_i)  \) <br/>
-	\( \frac{\Gamma \vdash \neg F \quad \Gamma \vdash F}{\Gamma \vdash \perp} (\neg_e)  \) <br/>
-	\( \frac{\Gamma, \neg F \vdash \perp}{\Gamma \vdash F} (\perp_c)  \)
-</p>
+We are defining F, G, H as propositions and $\Gamma$ 
+a set of propositions. We will use the notation
 
-#### How to read that ?
+@\frac{Assumptions}{Conclusion}@
 
-<p>
-	\( \frac{Assumptions}{Conclusion} \) <br/>
-	<!-- \( Hypothesis  \vdash ??? \) <br/> -->
-	\( _i, _e \) : Introduction, Elimination (of the symbol) <br/>
-	\( ^l, ^r \) : Left, Right <br/>
-</p>
+The properties that we will use are
+
+<table class="table">
+    <tr>
+        <td>@\frac{}{\Gamma, F \vdash F} (ax)@</td>
+        <td>@\frac{\Gamma, F \vdash F}{\Gamma, G \vdash F} (aff)@</td>
+        <td>@\frac{\Gamma, F \vdash G}{\Gamma \vdash F \Rightarrow G} (\Rightarrow_i)@</td>    </tr>
+    <tr>
+        <td>@\frac{\Gamma \vdash F \Rightarrow G \quad \Gamma \vdash F}{\Gamma \vdash G} (\Rightarrow_e)@</td>
+        <td>@\frac{\Gamma \vdash F \quad \Gamma \vdash G}{\Gamma \vdash F \wedge G} (\wedge_i)@</td>
+        <td>@\frac{\Gamma \vdash F \wedge G}{\Gamma \vdash F} (\wedge_e^l)@</td>
+    </tr>
+    <tr>
+        <td>@\frac{\Gamma \vdash F \wedge G}{\Gamma \vdash G} (\wedge_e^r)@</td>
+        <td>@\frac{\Gamma \vdash F}{\Gamma \vdash F \vee G} (\vee_i^l)@</td>
+        <td>@\frac{\Gamma \vdash G}{\Gamma \vdash F \vee G} (\vee_i^r)@</td>
+    </tr>
+    <tr>
+        <td>@\frac{\Gamma \vdash F \vee G \quad \Gamma, F \vdash H \quad \Gamma, G \vdash H}{\Gamma \vdash H} (\vee_e)@</td>
+        <td>@\frac{\Gamma, F \vdash \perp}{\Gamma \vdash \neg F} (\neg_i)@</td>
+        <td>@\frac{\Gamma \vdash \neg F \quad \Gamma \vdash F}{\Gamma \vdash \perp} (\neg_e)@</td>
+    </tr>
+    <tr>
+        <td>@\frac{\Gamma, \neg F \vdash \perp}{\Gamma \vdash F} (\perp_c@</td>
+    </tr>
+</table>
+
+The letters are written each time you are using a sequent
+calculus, where
+
+* ``i`` means introduction (of a new variable)
+* ``e`` means Elimination (of a variable)
+* ``l`` means left
+* ``r`` means right
