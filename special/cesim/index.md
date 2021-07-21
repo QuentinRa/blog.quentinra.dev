@@ -3,7 +3,7 @@
 This is a course about management using CESIM
 HOTELS game. The game is fun but since we need to learn
 a lot with our failures, and we are graded we are sharing
-here some feedback.
+here is some feedback.
 
 * Their website is [here](https://www.cesim.com/)
 * You will login [here](https://sim.cesim.com/)
@@ -14,10 +14,10 @@ here some feedback.
 
 At the end of the 8 turns, you must have
 
-1. the greatest increase of 
-``taux de retour cumulé aux actionnaires``. The ranking
-  is made with the value at ``turn=8`` minus the 
-  value at ``turn=4``.
+1. the greatest increase of
+   ``taux de retour cumulé aux actionnaires``. 
+   The ranking is made with the value at ``turn=8`` minus
+   the value at ``turn=4``.
 2. the greatest ``taux de retour cumulé aux actionnaires``
 at ``turn=8``.
 3. the report
@@ -81,21 +81,27 @@ are ending...
 **Results**: turn results, check next part
 
 **Decisions**: take your decisions here
-  * **Conditions du marché** : READ THIS. You will have some information that
-  may or not have an impact. Still, you can guess how many clients you will have.
-  (if you see 4000 then you can expect at least 2000 if you ratio price/quality
-    is good. You can expect a lot more if your price is low (according
-    to others like 60$-70$), even in Winter!)
-  * **Ventes**: you can sell at the ``guichet``/counter or to agencies (you should
-    sell as most as possible to agencies). And you can do some marketing,
-    as we noticed it will increase by a bit the agencies' price for some times
-    (the current one a lot, and a little bit less in the next periods).
+  * **Conditions du marché** : READ THIS.
+    You will have some information 
+    that may or not have an impact. 
+    Still, you can guess how many clients you will have.
+    (if you see 4000 then you can expect at least 2000 
+    if you ratio price/quality is good.
+    You can expect a lot more if your price is low
+    (according to others like 60$-70$), even in Winter!)
+  * **Ventes**: 
+    you can sell at the ``guichet``/counter 
+    or to agencies (you should sell as most as possible to agencies). 
+    And you can do some marketing, as we noticed it will
+    increase by a bit the agencies' price for some time
+    (a lot for this period, a little bit less in the next periods).
   * **Opérations**: manage your hotel
     * repair (quality++, money--)
     * buy rooms
-    * reduce ``coûts administratifs``: seems to take a lot of money but didn't do anything
-      (no major changes if increased a lot like 40k with 5k...). Seems
-    related to the amount of money taken by the taxes.
+    * reduce ``coûts administratifs``: 
+      seems to take a lot of money but didn't do anything
+      (no major changes if increased a lot like 40k with
+      5k...). Seems related to the amount of money taken by the taxes.
     * reduce ``coûts directs``: tested but not found any changes (the ``coûts directs``
       in results didn't seem to change nor impact the quality).
     * hire staff (permanent/temporary)
@@ -131,8 +137,8 @@ And now what's more useful
 * staff
 * **price**
 
-Beware of the teacher note. ``dividends`` are a part
-of your ``result`` meaning that you mustn't give
+Beware of the teacher note. ``dividends`` are
+a part of your ``result`` meaning that you mustn't give
 too many dividends (without explaining why
 in the report). Also, he wants your dividend rate
 to be stable, for instance, xxx each winter and
@@ -155,8 +161,8 @@ Things like these can be taken into consideration
   * you may use temporary staff.
   * the cost for the staff will keep increasing so
     do not wait too much
-  * we hired a permanent at the 1rst turn, you may hire
-    another one later, more may be too much.
+  * we hired a permanent at the 1rst turn,
+    you may hire another one later, more may be too much.
 * train staff main help to avoid hiring temporary staff
 * reducing marketing? (5k?)
 * less training cost?
@@ -189,7 +195,7 @@ more rooms means more costs!
 
 ## Report (feedback)
 
-Here some feedback about the report
+Here is some feedback about the report
 
 * identify your competitors
 * always compare yourself with your competitors
