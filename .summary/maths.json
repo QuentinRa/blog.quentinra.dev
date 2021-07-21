@@ -29,6 +29,12 @@
       "name": "First-order logic",
       "desc": "Learn about first-order logic, proofs, demonstration, usages with examples using OCaml language.",
       "icon": "<i class=\"bi bi-list-stars\"></i>"
+    },
+    {
+      "tag": "probabilities",
+      "name": "Probabilities",
+      "desc": "What's a probability and how we are using them to estimate events.",
+      "icon": "<i class=\"bi bi-dice-5-fill\"></i>"
     }
   ]
 }
