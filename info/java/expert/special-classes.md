@@ -7,35 +7,59 @@ declaration.
 
 <hr class="sr">
 
-## Inner and nested classes
+## Inner classes
 
-It means a class inside another class. If the class is
-
-* static: nested class /  ``classe imbriquée``
-* not static: inner class /  ``classe interne``
+It means a class inside another class,
+the class **is not static**.
 
 ```java
 // outer class
-public class AClass {
-    // nested class
-    private static class AnotherClass {}
+public class OuterClass {
     // inner class
-    private class AnotherClass2 {}
+    public class InnerClass {}
 }
 ```
 
-If a nested class is not ``private``, then you should
+And you can write
+
+```java
+OuterClass o = new OuterClass();
+OuterClass.InnerClass i = o.new InnerClass();
+```
+
+Usually the ``InnerClass`` is private so you are
+not doing that and only using it inside the OuterClass
+like you would do normally (`new InnerClass()`),
+but the inner class can access the current instance
+attribute.
+
+## Nested classes
+
+It means a class inside another class. If the class is
+the class **is static**.
+
+```java
+// outer class
+public class OuterClass {
+    // inner class
+    public static class NestedClass {}
+}
+```
+
+And you can write
+
+```java
+OuterClass.NestedClass n = new OuterClass.NestedClass();
+```
+
+If a nested class is ``public``, then you should
 really ask yourself if you shouldn't move it to
 another file.
 
-```java
-public class AClass {
-    public static class AnotherClass {}
-}
-```
-
-means that you will write ``AClass.AnotherClass``
-so something like ``AClass.AnotherClass v = new AClass.AnotherClass();``.
+This time you can use the instance attribute since
+you don't have an instance but you can use the class
+attributes inside the ``NestedClass`` since it's
+a class member.
 
 <hr class="sl">
 
