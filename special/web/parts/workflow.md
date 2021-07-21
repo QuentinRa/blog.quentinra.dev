@@ -40,5 +40,6 @@ but I think it is not easy to start with it.
 **TP template**
 
 You may also use the **tp2** as a template, that's worked
-for a lot of persons but be **great** and don't do
-that okay? [here](download:template-tp.zip) the link.
+for a lot of students but be **great** and don't do
+that okay? The template is
+[here](https://github.com/memorize-code/memorize-references/raw/main/special/web/template-tp.zip).
