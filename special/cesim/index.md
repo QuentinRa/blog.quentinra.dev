@@ -179,3 +179,18 @@ Going abroad will increase what you earn since they
 are usually a lot sell to agencies and then you can
 sell a lot of room for >100$/room easily. Still having
 more rooms means more costs!
+
+<hr class="sr">
+
+## Report (feedback)
+
+Here some feedback about the report
+
+* identify your competitors
+* always compare yourself with your competitors
+* find 6 to 10 relevant ratios
+* what's your strategy?
+* revenues (``CA``) per room?
+* Previsions vs Result
+* market share (`part de marché`)
+* profits returned to the shareholders
