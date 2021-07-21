@@ -150,8 +150,13 @@ In winter, you will have fewer clients.  Two strategies you may use
 
 Things like these can be taken into consideration
 
-* permanent staff: don't take too much of them otherwise you will
-pay a lot each winter for nothing. You may use temporary staff.
+* permanent staff
+  * don't take too much of them otherwise you will pay a lot each winter for nothing 
+  * you may use temporary staff.
+  * the cost for the staff will keep increasing so
+    do not wait too much
+  * we hired a permanent at the 1rst turn, you may hire
+    another one later, more may be too much.
 * train staff main help to avoid hiring temporary staff
 * reducing marketing? (5k?)
 * less training cost?
