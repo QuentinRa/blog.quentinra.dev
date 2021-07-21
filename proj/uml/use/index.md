@@ -117,5 +117,5 @@ one's reputation", you could increase or decrease and
 this is missing from the diagram.
 
 The diagram is also missing a lot of information
-like what information are provided to Register etc.
-but that what make it cleaner and easier to understand.
+like what data is provided to Register etc.
+but that is what makes it cleaner and easier to understand.
