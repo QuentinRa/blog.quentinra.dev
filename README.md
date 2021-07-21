@@ -61,13 +61,3 @@ how you should do it.
 * [ ] Cyber security course
 * [ ] Macroeconomic course
 * [ ] Logic course
-
-**Update content**
-
-* [ ] add anti-patterns in ``DESIGN PATTERNS`` course
-* [ ] ILO MCQs
-* [ ] Translate ``PROJECTS`` vocabulary
-
-## Others
-
-![Jokes Card](https://readme-jokes.vercel.app/api)
