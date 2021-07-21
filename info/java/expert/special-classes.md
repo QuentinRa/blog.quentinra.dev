@@ -7,18 +7,24 @@ declaration.
 
 <hr class="sr">
 
-## Inner class
+## Inner and nested classes
 
-In French, it's ``classe interne / imbriquée``. It means
-a class inside another class.
+It means a class inside another class. If the class is
+
+* static: nested class /  ``classe imbriquée``
+* not static: inner class /  ``classe interne``
 
 ```java
+// outer class
 public class AClass {
+    // nested class
     private static class AnotherClass {}
+    // inner class
+    private class AnotherClass2 {}
 }
 ```
 
-If an inner class is not ``private``, then you should
+If a nested class is not ``private``, then you should
 really ask yourself if you shouldn't move it to
 another file.
 
