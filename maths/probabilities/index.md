@@ -4,31 +4,24 @@ In this course, we will cover all the basics about
 probabilities and some advanced concepts that
 will be used in other courses.
 
-* <span>
-    \(\omega\)</span> (small-omega)
-    is a result possible 
+* $\omega$ (small-omega)
+  is a result possible 
   <span class="tms">such as 1 for a dice</span>
-* <span>
-    \(\Omega\)</span> (small-omega)
-    is a set of all possible results
+* $\Omega$ (small-omega)
+  is a set of all possible results
   <span class="tms">such as {1,2,3,4,5,6} for a dice
-  or <span>
-    {\(x \mid x \in [1,6]\)}</span></span>.
-* <span>
-    \(A\)</span> is an event included in <span>
-    \(\Omega\)</span>. <span class="tms">
-    It's almost everytime defined
-    by a sentence like "result is pair".
-  <span>
-    \(\overline{A}\)</span> means the opposite
+  or {$\ x \mid x \in [1,6]\ $}</span>.
+* $A$ is an event included in <span>
+  $\Omega$. <span class="tms">
+  It's almost everytime defined
+  by a sentence like "result is pair".
+  $\overline{A}$ means the opposite
   event of A.
   </span>
-* <span>
-    \(\emptyset\)</span> (small-omega)
-    means an impossible event.
-* <span>
-    \(Card(E) = |E| = \#E\)</span> is the cardinal of
-    E, meaning the number of elements.
+* $\emptyset$ (small-omega)
+  means an impossible event.
+* $Card(E) = |E| = \\#E$ is the cardinal of
+  E, meaning the number of elements.
 
 <div class="sl"></div>
 
