@@ -2,7 +2,7 @@
 
 [Go back](index.md)
 
-<br>
+<hr class="sr">
 
 **Question 1**
 
@@ -13,7 +13,7 @@ who contains a lot of Figures. Group is also a Figure.
 It's Composite design pattern.
 </blockquote>
 
-<br>
+<hr class="sl">
 
 **Question 2**
 
@@ -30,7 +30,7 @@ The 2nd and the 4th one since we are consuming our stream
 to create a new one.
 </blockquote>
 
-<br>
+<hr class="sr">
 
 **Question 3**
 
@@ -41,7 +41,7 @@ What's the design pattern?
 It's Observer/Observable design pattern.
 </blockquote>
 
-<br>
+<hr class="sl">
 
 **Question 4**
 
@@ -58,4 +58,16 @@ are valid
 The 1st one since we have String-Color and the 4th one
 since <code>get</code> method take a key and the key has the type String
 since we are associating for each username a color.
+</blockquote>
+
+<hr class="sr">
+
+**Question 5**
+
+In TP Tchat, the class ``ChatClient`` is handling
+the message (send/receive). It is M, V or C in MVC?
+
+<blockquote class="spoiler">
+I think it's <b>M</b>, since ChatClient can be viewed
+as a class interacting with a Database (the server here).
 </blockquote>
