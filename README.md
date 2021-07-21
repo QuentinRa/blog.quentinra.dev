@@ -46,8 +46,6 @@ how you should do it.
 * [ ] add create course page/button
 * [ ] add go back to #titleID
 * [ ] replace all div by hr
-* [ ] make something for maths (too tiring/hard to use)
-* [ ] repo of references
 
 **Next content**
 
