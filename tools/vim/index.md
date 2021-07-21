@@ -1,7 +1,7 @@
 # vim
 
-*vim*, for *vi improved* is a text editor, at least in the 
-basic version of it.
+*vim*, for *vi improved* is a text editor, 
+at least in the basic version of it.
 
 You may find extensions like
 
@@ -16,8 +16,8 @@ You can install it using ``sudo apt-get install vim``
 or whatever command you use to install packages
 such as ``sudo aptitude install vim``.
 
-Then you can run it with `vim` or `vi`, commands that could
-take a file in argument such as ``vim file``. The file is
+Then you can run it with `vim` or `vi`. You can give
+a file to open with ``vim file``. The file is
 created if it's don't exists.
 
 **HELP, I'm can't exit vim.**
@@ -33,7 +33,7 @@ and press `esc` (escape key), then `:q!`.
 **Basic configuration**
 
 Then you can configure your editor by creating
-a file ``~/.virmrc``, here an example of mine
+a file ``~/.virmrc``, here is an example of mine
 
 ```bash
 set fileencodings=UTF-8,utf-8,default,latin1 "file encoding
@@ -48,7 +48,7 @@ set tabstop=4 "tabulation size
 
 # Surviving in vim ...
 
-Here a summary of vim.
+Here is a summary of vim.
 
 You have two modes (at least for now),
 check at the bottom left of your screen
@@ -85,7 +85,7 @@ that you will most likely need to know
 The best way to learn how to use vim is... to use it.
 However, and thankfully, you can open a terminal and write
 `vimtutor`, which will teach you the basics command 
-to use vim peacefully, in exchange of ~30 minutes of your
+to use vim peacefully, in exchange for around 30 minutes of your
 life and brain attention.
 
 Here are some details about basic commands
