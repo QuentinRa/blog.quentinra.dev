@@ -1,6 +1,6 @@
 # Cesim
 
-This is a course about management using CESIM
+This course is about management using CESIM
 HOTELS game. The game is fun but since we need to learn
 a lot with our failures, and we are graded we are sharing
 here is some feedback.
@@ -25,8 +25,8 @@ at ``turn=8``.
 And **you are losing 2 points if you end up in
 bankrupt** (debt >= 100%).
 
-The main idea is that you will be graded for your
-rank in 1 and 2. You got a grade, looking like this
+The main idea is that you will have a grade for your
+rank in 1. and 2., it's looking like this
 
 1. 19/20
 2. 17/20
@@ -154,7 +154,7 @@ In winter, you will have fewer clients.  Two strategies you may use
 * save your money by reducing costs / report them for the next period
 * invest for the next period
 
-Things like these can be taken into consideration
+You can take these into consideration
 
 * permanent staff
   * don't take too much of them otherwise you will pay a lot each winter for nothing 
