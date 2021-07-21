@@ -164,7 +164,10 @@ iterators that are hiding using Iterator class).
 ## Anti-Patterns
 
 An anti-pattern is something that programmers often do
-yet they shouldn't.
+yet they shouldn't. 
+[This website](https://sourcemaking.com/antipatterns/software-development-antipatterns)
+is a great reference and will provide
+better explanations if you got the time.
 
 * Spaghetti Code
 
@@ -172,6 +175,14 @@ Little to none modularity. In Java, writing a lot
 of methods in one classes, adding on top of that
 inner/locale/nested classes, makes the code almost
 unreadable for me.
+
+* Magic Numbers and Strings
+
+One of the most used anti-pattern. Programmer write
+a lot of numbers/strings inside the code but they
+are unnamed and should be stored inside a named
+constant so we understand what this
+value is supposed to be.
 
 * Golden Hammer
 
@@ -187,7 +198,7 @@ use other language like Python for what I wanted to do.
 You coded something for later but didn't need it yet,
 **YAGNI principle**, You Ain't Gonna Need It.
 
-* God Object/Class
+* God Object/Class or "The Blob"
 
 If you are using an object too much parts of your code,
 then maybe his class is doing too much. If you got
@@ -200,6 +211,12 @@ Focusing too much on optimization without having
 a proper understanding of what you are trying
 to optimize. This may increase a lot the complexity
 of the code for almost nothing.
+
+* Cut-and-Paste Programming
+
+Do copy/paste code. Factorizing your code, using a function,
+will help patching all the bugs for this code at once,
+and make things more readable.
 
 <hr class="sl">
 
@@ -218,3 +235,5 @@ of the code for almost nothing.
 * <https://www.tutorialspoint.com/design_pattern/composite_entity_pattern.htm>
 * <https://www.freecodecamp.org/news/antipatterns-to-avoid-in-code/>
 * <https://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html>
+* <https://sourcemaking.com/antipatterns/software-development-antipatterns>
+* <https://sourcemaking.com/antipatterns/software-architecture-antipatterns>
