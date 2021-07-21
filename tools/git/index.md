@@ -26,7 +26,7 @@ one project together, by allowing things as
 developing without breaking the ``main`` version
 before **merging** all your changes into your
   ``main`` version.
-  
+
 So first of all, you need to
 
 * [set things up locally](local-install.md)
@@ -131,8 +131,10 @@ is good for that). You should check
 
 **.gitignore**: you may not want to commit some files
 like high-churn ones or big files... Create a file
-called is a good practice, you can generate one
-here [toptal gitignore](https://www.toptal.com/developers/gitignore).
+called is a good practice, you can
+
+* generate one [here](https://www.toptal.com/developers/gitignore).
+* use a template [here](https://github.com/github/gitignore)
 
 <hr class="sr">
 
