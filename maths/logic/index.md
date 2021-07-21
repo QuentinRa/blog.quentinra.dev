@@ -12,11 +12,11 @@
 
 ## Natural deduction
 
-Your aim will be to demonstrate that something is
+Your go is to demonstrate that something is
 true. You will start from the conclusion=what you
 think is true and using Sequent calculus / ``Séquents prouvables``,
 you will aim to split your conclusion into axioms / ``axiomes``
-so something that's always true.
+(=something always true).
 
 We are defining F, G, H as propositions and $\Gamma$ 
 a set of propositions. We will use the notation
