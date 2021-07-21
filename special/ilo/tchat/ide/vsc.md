@@ -16,7 +16,7 @@ improve it.
 * copy the content of the teacher ``src`` folder
 into your ``src`` folder and remove `App.java`
 * in lib folder, copy JavaFX source
-  * version 16 [here](https://lgs-games.com/assets/file/javafx-lib-v16.zip)
+  * version 16 [here](https://github.com/memorize-code/memorize-references/raw/main/special/ilo/javafx-lib-v16.zip)
   * otherwise try <https://gluonhq.com/products/javafx/>
   * otherwise you got them here 
     * [mvn rep](https://mvnrepository.com/artifact/org.openjfx)
