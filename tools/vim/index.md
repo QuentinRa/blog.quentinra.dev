@@ -110,9 +110,8 @@ these
 
 * [our summary](summary.md)
 * [vim-cheatsheet.pdf](https://www.cs.cmu.edu/~15131/f17/topics/vim/vim-cheatsheet.pdf)
-* [vim-cheatsheet.pdf](download:vim-cheatsheet.pdf) (same as above, locally stored)
 * <https://vim.rtorr.com/>
-* [Vim-commands-cheat-sheet-by-PhoenixNAP-1.pdf](download:Vim-commands-cheat-sheet-by-PhoenixNAP-1.pdf)
+* [Vim-commands-cheat-sheet-by-PhoenixNAP-1.pdf](https://github.com/memorize-code/memorize-references/raw/main/tools/vim/Vim-commands-cheat-sheet-by-PhoenixNAP-1.pdf)
 * [vi_vim_cheat_sheet.pdf](https://www.shell-tips.com/cheat-sheets/vim-quick-references/vi_vim_cheat_sheet.pdf)
 * [vimqrc.pdf](http://tnerual.eriogerg.free.fr/vimqrc.pdf)
 

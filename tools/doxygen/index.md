@@ -70,8 +70,8 @@ have to use ``\enum`` in the comment of an enum
 
 All tags can be found in this great reference sheet
 
-  * official link : [DoxyReference.pdf](https://www.mitk.org/images/1/1c/BugSquashingSeminars$2013-07-17-DoxyReference.pdf)
-  * permanent link : [DoxyReference.pdf](download:docs/DoxyReference.pdf)
+* official link : [DoxyReference.pdf](https://www.mitk.org/images/1/1c/BugSquashingSeminars$2013-07-17-DoxyReference.pdf)
+* permanent link : [DoxyReference.pdf](https://github.com/memorize-code/memorize-references/raw/main/tools/doxygen/DoxyReference.pdf)
 
 <div class="sr"></div>
 
