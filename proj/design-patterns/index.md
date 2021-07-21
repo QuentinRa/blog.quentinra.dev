@@ -161,6 +161,48 @@ iterators that are hiding using Iterator class).
 
 <hr class="sr">
 
+## Anti-Patterns
+
+An anti-pattern is something that programmers often do
+yet they shouldn't.
+
+* Spaghetti Code
+
+Little to none modularity. In Java, writing a lot
+of methods in one classes, adding on top of that
+inner/locale/nested classes, makes the code almost
+unreadable for me.
+
+* Golden Hammer
+
+You are using things you are confident in because
+that's easier even through you know that this may not
+be the right thing to do. I did that a lot, like writing
+code in Java taking hundred of lines because I know how
+to do a lot of things in Java even through I know I could
+use other language like Python for what I wanted to do.
+
+* Boat Anchor
+
+You coded something for later but didn't need it yet,
+**YAGNI principle**, You Ain't Gonna Need It.
+
+* God Object/Class
+
+If you are using an object too much parts of your code,
+then maybe his class is doing too much. If you got
+a class having a lot of dependencies then this may
+be the case.
+
+* Premature Optimization
+
+Focusing too much on optimization without having
+a proper understanding of what you are trying
+to optimize. This may increase a lot the complexity
+of the code for almost nothing.
+
+<hr class="sl">
+
 ## Sources
 
 * <https://fr.wikibooks.org/wiki/Patrons_de_conception>
@@ -174,3 +216,5 @@ iterators that are hiding using Iterator class).
 * <https://www.geeksforgeeks.org/interpreter-design-pattern/>
 * <https://www.tutorialspoint.com/design_pattern/data_access_object_pattern.htm>
 * <https://www.tutorialspoint.com/design_pattern/composite_entity_pattern.htm>
+* <https://www.freecodecamp.org/news/antipatterns-to-avoid-in-code/>
+* <https://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html>
