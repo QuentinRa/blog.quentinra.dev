@@ -86,8 +86,8 @@ implemented the run method "on the fly".
 ## Multiple classes in one file
 
 You may see this a lot, but don't use it okay? You
-may use for some tests but that's it. Be great and
-use anything aside that.
+may use it for some tests but that's it. Be great and
+use anything aside from that.
 
 ```java
 public class Main {
