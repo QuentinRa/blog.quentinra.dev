@@ -194,3 +194,12 @@ Here some feedback about the report
 * Previsions vs Result
 * market share (`part de marché`)
 * profits returned to the shareholders
+
+And what the teacher gave us
+
+* report from turns 1-4 and 4-8
+* **5 pages** + annexes (tables, graphs)
+* for the shareholders
+* strategy, future developments, goals
+* means used to reach your goals (marketing...)
+* compare the strategy expected and what happened
