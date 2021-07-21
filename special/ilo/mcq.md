@@ -109,3 +109,19 @@ method but more specialized then I would pick
 <b>Decorator=Wrapper</b> because it looks like a Parser
 that becomes a XMLParser/PDFParser/... to me.
 </blockquote>
+
+<hr class="sl">
+
+**Question 8**
+
+In TP Lists, ``CollectionList<E> extends AbstractCollection<E>``
+which is a ``Collection<E>`` wrapping a `ForwardList<E>`.
+What's the design pattern among Iterator,
+Decorator, Composite, and Adaptor?
+
+<blockquote class="spoiler">
+First, I checked that <code>ForwardList</code> wasn't
+a Collection. Hence, I would pick the pattern
+<code>Adaptor</code> because we are providing an interface
+(a Collection) for our ForwardList.
+</blockquote>
