@@ -22,7 +22,7 @@ languages courses such as ``Java``, `C`, `PHP`
 or ``JS``. If you are aiming to learn by practicing
 then language-specific courses might be more of a help.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Tests
 
@@ -38,7 +38,7 @@ are **unit tests**: you test a part of the code.
 
 Here are some good practices before starting.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Design by contract
 
@@ -61,7 +61,7 @@ some tests. The robustness of a function is determined by the number
 of preconditions that you verified to make sure that
 in all cases your preconditions are valid.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Defensive programming
 
@@ -88,7 +88,7 @@ Remember the rules
 * do not trust data from the user
 * do not trust anyone
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Find tests
 
@@ -121,7 +121,7 @@ And **CORRECT**
 These are the main questions/topics that you might
 want to check.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## How should I code tests?
 
@@ -136,7 +136,7 @@ a lot of assertions such as ``assertTrue(a_condition_here)``.
 Check out your language course now and we will explain here
 how to do some tests in this language.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Test-driven development (TDD)
 
@@ -162,7 +162,7 @@ To do some efficient TDD, you may
 And then you will end speeding your developments
 because you suffered at the beginning doing some UML.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Behavior-driven development (BDD)
 
@@ -183,7 +183,7 @@ to think
 * adding my function will do what we want?
 * what problems adding my function might cause?
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Sources
 
