@@ -59,7 +59,7 @@ the probability that a random variable
 (``variable aléatoire discrète``, v.a.d.) $X_w$ is taking the value $k$.
 
 * We could write $P(X = 1) = y$ for a dice where y is
-  the probability that we got 1.
+  the probability that we got 1 <span class="spoiler tms">it's 1 out of 6 so y=1/6</span>.
 * $w$ may be omitted if you got only one variable called $X$
 
 Let's dig more into it
