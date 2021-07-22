@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-This distribution $B(n,p)$ modelize the probability
+This distribution $B(n,p)$ represents the probability
 of success on $n$ trials with a probability of $p$.
 
 We usually write $X \sim \mathbb{B}(n, ^p)$
