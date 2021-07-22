@@ -67,3 +67,12 @@ Let's dig more into it
 * [Calculate a discrete probability](discrete/calculate.md)
 * [Counting](discrete/counting.md)
 * [Independence](discrete/independence.md)
+* [Expected value E(X)](discrete/expected-value.md)
+* [Variance V(X)](discrete/variance.md)
+
+<hr class="sr">
+
+## Sources
+
+* <https://en.wikipedia.org/wiki/Expected_value>
+* <https://en.wikipedia.org/wiki/Variance>
