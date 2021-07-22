@@ -66,3 +66,4 @@ Let's dig more into it
 
 * [Calculate a discrete probability](discrete/calculate.md)
 * [Counting](discrete/counting.md)
+* [Independence](discrete/independence.md)
