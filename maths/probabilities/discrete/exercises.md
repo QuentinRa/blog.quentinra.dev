@@ -41,7 +41,7 @@ Inside B2, we got 2 green marbles and 4 white ones.
 Inside B3, we got 5 black marbles and 2 red ones.
 
 We are picking a marble in B1, and add it into
-B2. Then, we are picking one B2 to B3. And finally
+B2. Then, we are picking one B2 to B3. And finally,
 we are picking one into B3. **What's
 the probability that the 3 marbles we picked
 have different colors**?
@@ -75,13 +75,13 @@ have different colors**?
 **Exercise 3 (Bayes' theorem)**
 
 We are using a test to check if the patient
-got the decease or not. If got the decease
+got the disease or not. If got the decease
 then the test is positive 96% of the time. 
 The test is a false-positive in 2% of the cases.
 $0.05%$ of the patients got the decease.
 
 1. What's the probability of someone having a positive test
-   to have the decease?
+   to have the disease?
 
 <blockquote class="spoiler">
 
@@ -104,7 +104,7 @@ $0.05%$ of the patients got the decease.
 </div>
 
 What we call "Law of total probability"/"``Formule des probabilités totales``"
-is a tree like considering the 2 cases (here $S$ and $\overline{S}$).
+is a tree, considering the 2 cases (here $S$ and $\overline{S}$).
 </blockquote>
 
 2. What's the probability of someone having the decease after
