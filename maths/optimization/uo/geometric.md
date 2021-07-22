@@ -2,8 +2,8 @@
 
 [Go back](..)
 
-This is some sort of constrained optimization but the only
-constraint is that all values are strictly positives.
+This is some sort of constrained optimization but
+the only constraint is that all values are strictly positives.
 
 Usually, that's some function looking like that
 
@@ -13,7 +13,7 @@ Usually, that's some function looking like that
 \]
 </div>
 
-Having **m** terms and **n** variables (here X is the set of variables).
+Having **m** terms and **n** variables (and X is the vector of variables).
 
 <hr class="sl">
 
@@ -36,14 +36,15 @@ is the power of the <b>j</b>-nth variable in the
 
 **System**
 
-Write a system of equations using the matrix. A column of your matrix 
-is a row of the system. Each row of your matrix is a variable
-``delta_i`` where i is the row number. Each line of the system
-is equal to *0*.
+Write a system of equations using the matrix. 
+A column of your matrix is a row of the system. 
+Each row of your matrix is a variable
+``delta_i`` where i is the row number.
+Each line of the system is equal to *0*.
 
 <p>\[\sum\limits_{i=1}^{m} \alpha_{ij}\delta_{i} = 0\]</p>
 
-Then add another equation : **the sum of all deltas is 1**.
+Then add another equation: **the sum of all deltas is 1**.
 And solve and find all deltas.
 
 <div><b>Find the solution</b> \(\nu\) (nu)</div>
@@ -67,8 +68,8 @@ the term equals to <span>\(\nu(\delta) * delta_i\)</span>
 </div>
 
 You solve the system, and will have ``x*``, `y*`, ...
-Then as you could guess, try to check if theses values in
-your gradient are giving a vector of zeros.
+Then as you could guess, try to check if these values in
+your gradient is giving a vector of zeros.
 
 <hr class="sr">
 
