@@ -25,8 +25,8 @@ some permissions.
 ## ERROR 500 (Internal server error)
 
 Sometimes you may have an **error 500** like everything
-was working and now you can't check your website. Note
-that this is because you got a critical error in your code
+was working and now you can't check your website. 
+This is because you got a critical error in your code
 and the errors are disabled.
 
 * [Enable errors](parts/errors.md)
@@ -36,7 +36,7 @@ and the errors are disabled.
 ## Database
 
 First, the database can only be accessed from the
-inside, meaning you need to be on the server to run it. 
+inside, meaning you need to be on the server to access it. 
 You can use a ``SSH Tunel`` like
 in PHPStorm but that won't be explained here.
 
@@ -65,18 +65,18 @@ your website is good for W3.
 
 Use an IDE to code, I recommend PHPStorm since you
 could configure easily to work directly on the server
-(you may check a video or the section PHPStorm in
+(you may look for videos on youtube
+or the section PHPStorm in
 [Jetbrains](../../tools/jetbrains/index.md) course).
 
 * try making a mockup of your website, like drawing
-your website pages (you may use your hand and we don't
-  need something beautiful)
-  * using this mockup
+your website pages 
+  * you may use a tool like in the [HMI](../../proj/hmi/index.md) course
+    (no need for something beautiful)
   * write how you move from a page to another
-    (data submitted? ...)
+    (data submitted? what kind of data? click? on what? etc.)
   * this will help to organize your work and writing
     your specifications
-  * you may check [HMI](../../proj/hmi/index.md) course
 
 * you should do some tests, this is quite easy to do.
   You should use them to test your code like testing your
