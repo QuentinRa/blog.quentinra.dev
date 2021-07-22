@@ -13,8 +13,8 @@ You must evaluate
 * $card(A)$: how many values are in A, your event
 * $card(\Omega)$: how many values are in Omega
 
-Then the probability is simply a sort a percent of success
-by the amount of tries. But that's a value in $[0,1]$ since we are
+Then the probability is a sort of "percent" of success
+by the number of tries. But that's a value in $[0,1]$ since we are
 not multiplying by 100.
 
 <hr class="sr">
