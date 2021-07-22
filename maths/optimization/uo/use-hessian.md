@@ -3,7 +3,7 @@
 [Go back](..)
 
 Now that you have the **gradient**, you need to test
-each values for your variables x,y,... where you have
+each value for your variables x,y,... where you have
 
 <p>
 \[ \nabla f(X) = \begin{pmatrix}0\\\vdots\\0\end{pmatrix} \] 
@@ -23,7 +23,7 @@ For each hessian, if it's
 * **definite semi-negative**: the point is a maximum global
 * **indefinite**: the point is a saddle point
 
-In order to know the definite/indefinite properties, you can
+To find if the hessian is definite/indefinite, you can
 
 1. evaluate each determinant, using the minor of a matrix
 2. check eigenvalues
