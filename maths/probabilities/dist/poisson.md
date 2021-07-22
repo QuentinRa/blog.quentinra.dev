@@ -6,7 +6,11 @@ It's called the ``loi des événements/phénomènes rares`` in French.
 The requirements are that the probability $p$
 is really small and $n$ is high, relatively to $p$.
 
-* We usually write $\lambda \sim \mathbb{P}(\lambda)$
+We usually write $X \sim \mathbb{P}(\lambda)$
+that you should read as
+"X follows a poisson distribution ($\lambda=value$)",
+for instance $X \sim \mathbb{P}(0.4)$.
+
 * with $\lambda = n*p$
 * The distribution function is $\mathbb{P}(X=k) = \frac{\lambda^k *  e^{-\lambda}}{k!}$
 * $E(X) = \lambda$
