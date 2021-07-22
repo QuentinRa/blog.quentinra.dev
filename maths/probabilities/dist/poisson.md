@@ -22,7 +22,7 @@ for instance $X \sim \mathbb{P}(0.4)$.
 
 You need to understand this (you may skip it
 for now) because you are gonna 
-do something like this a lot and it's easy
+do something like this a lot, and it's easy
 
 **Demonstration of $E[X]=\lambda$**
 
@@ -36,7 +36,7 @@ With the expected value formula, we have
 * $= \lambda e^{-\lambda} * \sum_{k \in \mathbb{N}} \frac{\lambda^{k-1}}{(k-1)!}$
 
 Here we are starting the magic. There are well-known
-sums that can be replaced by a function.
+series that can be replaced by a function.
 
 Check them [here](https://en.wikipedia.org/wiki/List_of_mathematical_series)
 but this is the only one that we will use:
