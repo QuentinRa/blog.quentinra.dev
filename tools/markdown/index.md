@@ -180,3 +180,4 @@ syntax
 * <https://www.markdownguide.org/getting-started/>
 * [comments in MD](https://stackoverflow.com/questions/4823468/comments-in-markdown)
 * <https://www.madoko.net/>
+* <https://guides.github.com/features/mastering-markdown/>
