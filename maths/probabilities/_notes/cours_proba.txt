@@ -1,0 +1,106 @@
+========================================
+========================================
+==== Définitions
+========================================
+========================================
+
+-----> Fonction de répartition
+
+Soit X une variable aléatoire (v.a.) numérique (quantitative). Elle est complètement décrite par la
+valeur de la probabilité (pour les variables discrètes) ou par la probabilité cumulée (pour les variables
+continues)
+Cette probabilité (cumulée) F(x) s'appelle la "fonction de répartition" de la variable X.
+P(a <= x <= b) = F(b) - F(a)
+
+D2. La relation mathématique qui donne la probabilité cumulée qu'a une variable aléatoire d'être
+inférieure ou égale à une certaine valeur est nommée la "fonction de répartition" ou "fonction
+cumulée".
+
+D1. Nous disons que X est une variable continue si sa "fonction de répartition" est continue (déjà
+définie plus haut).
+
+Il est intéressant de remarquer que la définition amène à ce que la probabilité qu'une
+variable aléatoire totalement continue prenne une valeur donnée est nulle! Donc ce n'est pas parce
+qu'un événement a une probabilité nulle qu'il ne peut arriver!!!
+
+------> Densité
+
+D1. La relation mathématique qui donne la probabilité qu'a une variable aléatoire d'avoir une valeur
+donnée de la fonction de distribution est appelée "fonction de densité", "fonction de masse" ou encore
+"fonction marginale".
+
+-------> Espérance et variance
+
+"l'espérance mathématique", appelée aussi "moment d'ordre 1", appelée aussi "règle des parties".
+
+En d'autres termes, nous savons qu'à chaque événement de l'espace des échantillons est associé une
+probabilité à laquelle nous associons également une valeur (donnée par la variable aléatoire). La
+question étant alors de savoir quelle valeur, à long terme, nous pouvons obtenir. La valeur espérée,
+(l'espérance mathématique donc...) est alors la moyenne pondérée, par la probabilité, de toutes les
+valeurs des événements de l'espace des échantillons.
+
+E(aX) = aE(X)
+E(X+Y) = E(X)+E(Y)
+E(c) = c
+
+Définition: Après avoir traduit la tendance par l'espérance il est intéressant de traduire la dispersion ou
+"déviation standard" autour de l'espérance par une valeur appelée "variance de X" ou encore "moment
+centré du deuxième ordre", notée V(X) ou sigma^2_X (lire "sigma-deux")
+
+La variance n'est cependant pas comparable directement à la moyenne, car l'unité de la variance est le
+carré de l'unité de la variable, ce qui découle directement de sa définition. Pour que l'indicateur de
+dispersion puisse être comparé aux paramètres de tendance centrale (moyenne, médiane et... mode), il
+suffit d'en prendre la racine carrée.
+L'écart-type est donc la moyenne quadratique des écarts (ou "écart moyen quadratique") entre les
+observations et leur moyenne.
+
+coefficient de variation : sigma/mu
+
+Le terme de la somme se trouvant dans l'expression de la variance (écart-type) est appelée "somme des
+carrés des écarts à la moyenne". Nous l'appelons aussi la "somme des carrés totale", ou encore la
+"variation totale" dans le cadre de l'étude de l'ANOVA (voir la fin de ce chapitre).
+
+variable centrée réduite
+Y = (X - mu)/sigma
+
+Ainsi, toute répartition statistique définie par une moyenne et un écart-type peut être transformée en
+une autre distribution statistique souvent plus simple à analyser.
+
+V(nX) = n^2V(x)
+V(X+Y) = V(X) + V(Y) + 2cov(X,Y)
+
+----> fonction caractéristique
+
+Avant de donner une démonstration à la manière de l'ingénieur du théorème central limite, introduisons
+d'abord le concept de "fonction caractéristique" qui tient une place centrale en statistiques.
+
+rond_barré_x (k) = E[e^{ikX}].
+
+rond_barré_x (k) = \sqrt{2pi} F(-k)
+raison pour laquelle la fonction caractéristique de la loi Normale centrée réduite est souvent assimilée à
+une simple transformée de Fourier.
+F(k) = 1/\sqrt{2pi} e^{-k^2/2}
+
+rond_barré_x (k) = e^{-k^2/2}
+
+----> autres
+
+"inégalité de Markov"
+"inégalité de Bienaymé-Tchebychev" (abrégée "inégalité BT")
+
+========================================
+========================================
+==== LOI DE PROBABILITÉS
+========================================
+========================================
+
+----> FONCTION DE BERNOULLI
+Ainsi, une variable aléatoire X suit une "fonction de Bernoulli" (ou "loi de Bernoulli") si elle ne peut
+prendre que les valeurs 0 ou 1, associées aux probabilités p et q
+
+Remarquons que par extension, si nous considérons N événements où nous obtenons dans un ordre
+particulier k fois une des issues possible (réussite) et N-k l'autre (échec), alors la probabilité d'obtenir
+une telle série (de k réussites et N-k échecs ordonnés dans un ordre particulier) sera donnée par:
+P(x=k) : p^k q^{N-k}
+E(x) = p
+V(x) = p * q
