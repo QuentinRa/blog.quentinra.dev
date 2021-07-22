@@ -55,8 +55,8 @@ with discrete probability. That's the case when $\Omega$
 is taking values in $\mathbb{N}$ or $\mathbb{Z}$.
 
 We are defining $\mathbb{P}_{X_w}{k} = \mathbb{P}(X_w=k)$
-the probability that a random variable $X_w$
-is taking the value $k$.
+the probability that a random variable 
+(``variable aléatoire discrète``, v.a.d.) $X_w$ is taking the value $k$.
 
 * We could write $P(X = 1) = y$ for a dice where y is
   the probability that we got 1.
@@ -70,9 +70,22 @@ Let's dig more into it
 * [Expected value E(X)](discrete/expected-value.md)
 * [Variance V(X)](discrete/variance.md)
 
+And here are some well-know distributions
+
+* [Binomial distribution](dist/binom.md)
+* [Poisson distribution](dist/poisson.md)
+* [Geometric distribution](dist/geometric.md)
+
 <hr class="sr">
 
 ## Sources
 
 * <https://en.wikipedia.org/wiki/Expected_value>
 * <https://en.wikipedia.org/wiki/Variance>
+* <https://en.wikipedia.org/wiki/Chebyshev%27s_inequality>
+
+Distributions
+
+* <https://en.wikipedia.org/wiki/Binomial_distribution>
+* <https://en.wikipedia.org/wiki/Poisson_distribution>
+* <https://en.wikipedia.org/wiki/Geometric_distribution>
