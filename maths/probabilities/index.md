@@ -38,10 +38,31 @@ $[0,1]$
   \mathbb{P}(A \cap B)$
 * $A \subset B \to \mathbb{P}(A) \le \mathbb{P}(B)$
 
-We call **distribution function**, a strictly positive,
-increasing function where the sum of all values is 1.
-It's a function associating the values of 
-what you are observing and their probability.
+We call **distribution function**, a strictly positive
+function where the sum of all values (=probabilities) is 1.
+It's a function associating each value of
+$\Omega$ to their probability.
 
 We call **support** a set where the distribution function is defined. The probability
 outside the support is 0. You can use that to make a sum on the support.
+
+<hr class="sl">
+
+## Discrete probability
+
+When $\Omega$ is a finite set then we are dealing
+with discrete probability. That's the case when $\Omega$
+is taking values in $\mathbb{N}$ or $\mathbb{Z}$.
+
+We are defining $\mathbb{P}_{X_w}{k} = \mathbb{P}(X_w=k)$
+the probability that a random variable $X_w$
+is taking the value $k$.
+
+* We could write $P(X = 1) = y$ for a dice where y is
+  the probability that we got 1.
+* $w$ may be omitted if you got only one variable called $X$
+
+Let's dig more into it
+
+* [Calculate a discrete probability](discrete/calculate.md)
+* [Counting](discrete/counting.md)
