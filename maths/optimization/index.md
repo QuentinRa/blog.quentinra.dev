@@ -1,11 +1,16 @@
 # Optimization
 
-The main idea is that we know
-in a graph (for instance like a graph a all cities) how
-to find the shortest path. Now we are not using
-graph and nodes but a **function** (ex: a pricing function)
+We know in a graph
+how
+to find the shortest path
+<span class="tms">
+(graph=circles and lines linking them for instance
+cities=circles and lines=roads)</span>.
+Now we want to do the same thing with a
+**function** (ex: a pricing function)
 and we want to know the highest (**maximum**)
-or the lowest (**minimum**) value that this function would take.
+or the lowest (**minimum**) value that *
+this function would take (they are called **extremum**).
 
 So here you will have
 
@@ -25,15 +30,15 @@ since a lot of algorithms are made for minimizing rather than maximizing.
 Before starting, you need to check that the ``function`` got a minimum!
 That's the case
 
-* if ``f`` is continue on X (a compact space)
+* if ``f`` is continuous on X (a compact space)
 * if ``f`` is a coercive function
 * if the limit in +infinite of ``f`` tends to a value, a.k.a. we got a lower bound
 
 <div>
 Since we are manipulating a function, the minimum is a "point", for a
-function with one parameter that's x,y. If we got 3 parameters that's x,y,z etc.
+function with one parameter that's x,y. If we got 3 parameters that's x,y,z, etc.
 We will note this vector of coordinates
-<span>\(x^*\)</span>. But we will find different kind of "points" using our
+<span>\(x^*\)</span>. But we will find different kinds of "points" using our
 methods.
 </div>
 
@@ -46,7 +51,7 @@ methods.
 
 ## unconstrained optimization
 
-Here some methods used in unconstrained optimization,
+Here are some methods used in unconstrained optimization,
 please **note** that some constrained optimization problems
 may be solved using unconstrained optimization methods,
 and if you got more than one result, then check the conditions
@@ -66,7 +71,7 @@ Other methods
 
 ## constrained optimization
 
-Here some constrained optimization methods.
+Here are some constrained optimization methods.
 
 * [Constrained polygon](co/polygon.md)
 * [Simplex](co/simplex.md)
@@ -74,10 +79,10 @@ Here some constrained optimization methods.
 
 <hr class="sr">
 
-## optimization : examples in R
+## optimization: examples in R
 
 Here may not be the language that you would use to do
-optimization. Still here you have some examples.
+optimization. Still, here you have some examples.
 
 ```r
 function_to_optimize <- function(param) {
