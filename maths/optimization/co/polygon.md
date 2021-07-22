@@ -16,18 +16,18 @@ y \le 3/5 * x + 7
 \]
 </p>
 
-You may use greater, greater equals or lesser/lesser
+You may use greater, greater equals, or lesser/lesser
 equals but you can't have something like ``x + y < 5``
-since we want only one variable on the left-side.
+since we want only one variable on the left side.
 
 <hr class="sr">
 
 ## constrained space
 
-On you have all of your inequalities, simple trace
-the lines corresponding to each ones like. Remember
+On you have all of your inequalities, simply trace
+the lines corresponding to each one. Remember
 to add a small arrow to visualize the constrained
-space
+space.
 
 If you have a constraint ``y < 3`` and `x > 2` it would
 look like this
@@ -39,7 +39,7 @@ You should remember that something like that
 
 * you got a point at x=0, y=7
 * if x increase by 5, then y increase by 3
-* so you can guess the next point
+* so you can guess the next point (x=5, y=10)
 
 <hr class="sl">
 
@@ -57,6 +57,6 @@ or the lowest (minimum) value and you're done.
 
 ## Translation
 
-If you don't want to test all the points, simply trace your
-function then translate your function, the last point touching
-it is the point you are looking for.
+If you don't want to test all the points, trace 
+your function then translate it, 
+the last point touching it is the point you are looking for.
