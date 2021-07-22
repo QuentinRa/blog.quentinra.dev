@@ -129,3 +129,36 @@ is a tree like considering the 2 cases (here $S$ and $\overline{S}$).
 \]
 </div>
 </blockquote>
+
+<hr class="sr">
+
+**Exercise 4 (expected value)**
+
+We got 2 white marbles and 3 black ones in a box. 4 players
+(A, B, C, and D) taking in this order a marble. The first
+one taking a white marble win $10.
+
+What's the expected gain for each person?
+
+<blockquote class="spoiler">
+
+We will introduce the random variables
+
+* $\mathbb{W}_A$ = "The player A got a white marble"
+* ...
+
+So we got
+
+* $\mathbb{P}(W_A) = 2/5$
+* $\mathbb{P}(W_B) = \mathbb{P}(W_B|\overline{W_A}) = 2/4 * 3/5 = 6/20 = 3/10$
+* $\mathbb{P}(W_C) = \mathbb{P}(W_C|\overline{W_A \cap W_B}) = 2/3 * 3/5 * 2/4 = 12/60 = 1/5$
+* $\mathbb{P}(W_D) = \mathbb{P}(W_D|\overline{W_A \cap W_B \cap W_C}) = 1 * 3/5 * 2/4 * 1/3 = 1/10$
+
+And
+
+* $\mathbb{E}[W_A] = 2/5 * 10 = 4$
+* $\mathbb{E}[W_B] = 3/10 * 10 = 3$
+* $\mathbb{E}[W_C] = 1/5 * 10 = 2$
+* $\mathbb{E}[W_D] = 1/10 * 10 = 1$
+
+</blockquote>
