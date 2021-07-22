@@ -3,7 +3,7 @@
 
 ![icon](.github/icon64.png)
 
-<h1>Memorize</h2>
+<h1>Memorize</h1>
 
 ``Memorize`` was made for students to create courses to help 
 others sail easier in the courses they struggled with.
