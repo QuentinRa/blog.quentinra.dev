@@ -43,8 +43,9 @@ PHPStorm course.
 * composer file (if needed)
 * translations
 * tests
+* framework-like <span class="tms">(simplified version inspired of CodeIgniter)</span>
 
-**2019/2020 template**
+**2018/2019 template**
 
 This template was used in 2019-2020 by a lot of
 students [here](https://github.com/Kirouane/ensiie-project).
