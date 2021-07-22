@@ -18,10 +18,10 @@ L(X, \mu, \lambda) = f(X) +
 * **gi** are the inequalities constraints (*)
 * **hi** are the equalities constraints (*)
 
-(*) p is the number of inequalities and m the 
-number of equalities that could be 0. Note that
+(*) p is the number of inequalities and m
+the number of equalities that could be 0. Note that
 you must write the equation as ``... = 0`` and
-your function is the left-side.
+your function is on the left side.
 
 * Once you got **L**, write what we call
 the **KKT** (Karush-Kuhn-Tucker) conditions
@@ -34,13 +34,13 @@ the **KKT** (Karush-Kuhn-Tucker) conditions
 
 * and solve it
 
-You will do the partial derivative of 
-the Lagrangian for each of your variables
-equals to 0. That's a system so you "simply"
+You will do the partial derivative of the Lagrangian
+for each of your variables
+equals 0. That's a system so you "simply"
 have to solve it.
 
 **Note**: my teachers are only calculating
-all the partial derivative of the variables
+all the partial derivatives of the variables
 (x,y,...), but some are also doing it for lambda.
 
 You will get your critical point ``X*`` (x*, y*, ...)
@@ -52,7 +52,7 @@ and your unknowns (mu1, ..., lambda1, ...).
 
 In a lot of cases, finding the unknowns is not as
 easy as solving the system, especially if you
-have inequality constraints. Most of the times, you
+have inequality constraints. Most of the time, you
 will still have lambda/mu inside X*.
 
 Lambdas/mus are positive or null so you might have
@@ -70,8 +70,8 @@ the conditions.
 Also, when you got inequality constraints, then most
 of the time you will have more work to do.
 It seems that before doing so, we should check
-that the points to be **regulars** (I'm sure of
-it but my teacher do seems to be doing it).
+that the points to be **regulars** (I'm sure of it,
+but my teacher does not seem to be doing it).
 
 A primal problem **P**
 
@@ -97,7 +97,7 @@ is the same as maximizing a dual problem **D**
 * **note**: if a g(X) is violated (>0) then the only
 way to have the maximum is for mu/lambda to be 0.
 * **note 2**: inf for min (or sup instead of max) but I think this
-doesn't really matters (to your casual student).
+doesn't really matter (to your casual student).
 * **note 3**: If the constraints are greater equals than 0, simply
 multiply by minus 1.
 
@@ -117,7 +117,7 @@ what we are expecting you to do, and not as powerful
 as the real one.
 
 You got a function ``f`` under constraints
-to minimize, then that's means you'll have to
+to minimize, then that means you'll have to
 maximum the dual solution.
 
 Let's say you got a vector ``b`` which are the
@@ -131,13 +131,13 @@ indices for x,y, (n variables if b length = n)...
   constraints. The first column will be the
   first constraint coefficient in ``f'``. The
   right-side is ``<= ?`` with `?` the coefficient
-  of the first variable (since first column) in ``f``
+  of the first variable (since the first column) in ``f``
 * now you got a new function, new constraints
 * then optimize the function using any method you 
   know of (simplex? polygon?...)
 * you got ``x*, y*, ...``
 * replace in each constraint, if the left-side
-  is equals to the right-side, then the constraint
+  is equals to the right side, then the constraint
   is said to be **binding** (`saturée` in French). 
   If the constraint is not bound, then that's means
   in the ``primal``, the constraint is null (=0).
