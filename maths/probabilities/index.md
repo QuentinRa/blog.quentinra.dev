@@ -76,6 +76,10 @@ And here are some well-know distributions
 * [Poisson distribution](dist/poisson.md)
 * [Geometric distribution](dist/geometric.md)
 
+And
+
+* [Exercises](discrete/exercises.md)
+
 <hr class="sr">
 
 ## Sources
