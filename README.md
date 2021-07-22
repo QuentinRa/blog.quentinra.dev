@@ -1,11 +1,9 @@
-# Memorize
-
-![GitHub](https://img.shields.io/github/license/lgs-games/memorize)
-![GitHub pull requests](https://img.shields.io/github/issues-pr-closed/lgs-games/memorize?color=%23a0)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/lgs-games/memorize)
-![Custom badge](https://img.shields.io/endpoint?label=views&logoColor=success&url=https%3A%2F%2Fmemorize.lgs-games.com%2Fen%2Fcounter)
+<div align="center">
+<br>
 
 ![icon](.github/icon64.png)
+
+<h1>Memorize</h2>
 
 ``Memorize`` was made for students to create courses to help 
 others sail easier in the courses they struggled with.
@@ -15,6 +13,15 @@ so please kindly correct or report them. Thanks!
 
 Provided by `Legendary Games Studio`,
 [memorize@lgs-games.com](mailto:memorize@lgs-games.com).
+</div>
+
+<div align="center">
+
+![GitHub](https://img.shields.io/github/license/lgs-games/memorize)
+![GitHub pull requests](https://img.shields.io/github/issues-pr-closed/lgs-games/memorize?color=%23a0)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/lgs-games/memorize)
+![Custom badge](https://img.shields.io/endpoint?label=views&logoColor=success&url=https%3A%2F%2Fmemorize.lgs-games.com%2Fen%2Fcounter)
+</div>
 
 ## How to contribute
 
