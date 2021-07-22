@@ -213,9 +213,9 @@ We continue.
 </li>
 </ul>
 
-Then since we know that g-two is a critical point,
+Then since we know that $g^{(2)}$ is a critical point,
 then we simply need to find a lambda so we have
-a gradient equals to (0,0).
+a gradient equals to $(0,0)$.
 
 <div class="mathjax_process">\[g^{(2)} =
 \nabla f(X^{(2)}) = 
@@ -253,9 +253,7 @@ So we have
 </div>
 
 The Second iteration is done and we are stopping
-since we got (0,0) for g. The gradient is equals
-to (0,0) so that's a critical point.
-
+since we got $(0,0)$ for g. And since
+the gradient is $(0,0)$ it's critical point.
 </div>
-
 </blockquote>
