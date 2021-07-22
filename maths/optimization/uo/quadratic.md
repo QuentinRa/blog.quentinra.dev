@@ -14,7 +14,7 @@ with
 * **A** the matrix in Ax=b
 * **b** the vector of results in Ax=b
 
-After a bit of calculations [hidden], you got
+After some calculations [hidden], you got
 these formulas
 
 * $\nabla f(X) = AX-b$
