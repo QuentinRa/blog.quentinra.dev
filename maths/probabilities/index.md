@@ -37,12 +37,11 @@ $[0,1]$
 * $\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) -
   \mathbb{P}(A \cap B)$
 * $A \subset B \to \mathbb{P}(A) \le \mathbb{P}(B)$
-  
-We call **distribution function** an strictly positive,
-increasing function where the sum
-of all values is 1. It's a function supposed to modelize
-the values of what you are observing and giving a probability
-to each value.
+
+We call **distribution function**, a strictly positive,
+increasing function where the sum of all values is 1.
+It's a function associating the values of 
+what you are observing and their probability.
 
 We call **support** a set where the distribution function is defined. The probability
 outside the support is 0. You can use that to make a sum on the support.
