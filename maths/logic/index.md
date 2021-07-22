@@ -23,7 +23,13 @@ a set of propositions. We will use the notation
 
 @\frac{Assumptions}{Conclusion}@
 
-The properties that we will use are
+Everything at the left of $\vdash$ is true, 
+at first, you got nothing here, and your expression
+at the right of $\vdash$
+but your goal will be to move as many propositions
+as possible inside Gamma using the sequent calculus
+then when you can, you need to try to get axioms
+(the sequent ax) for each expression with a $\vdash$.
 
 <table class="table">
     <tr>
@@ -46,12 +52,12 @@ The properties that we will use are
         <td>@\frac{\Gamma \vdash \neg F \quad \Gamma \vdash F}{\Gamma \vdash \perp} (\neg_e)@</td>
     </tr>
     <tr>
-        <td>@\frac{\Gamma, \neg F \vdash \perp}{\Gamma \vdash F} (\perp_c@</td>
+        <td>@\frac{\Gamma, \neg F \vdash \perp}{\Gamma \vdash F} (\perp_c)@</td>
     </tr>
 </table>
 
-The letters are written each time you are using a sequent
-calculus, where
+You must write the letters at the right of a sequent each time you are using it. 
+Just so you know
 
 * ``i`` means introduction (of a new variable)
 * ``e`` means Elimination (of a variable)
