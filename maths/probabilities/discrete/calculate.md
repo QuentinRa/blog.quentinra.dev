@@ -39,15 +39,19 @@ The formula is
 
 ## Conditional probability
 
-You may have to calculate a probability 
-"knowing that A happened, what's the probability of B happening"?
+You may have to calculate a probability like these
+
+* Knowing that B happened, what's the probability of A happening?
+* Given B, what's the probability of A??
+* ``Sachant B, quelle est la probabilité de A``?
+
 If that's the case, then that's a conditional probability.
 
 @
 \mathbb{P}(A|B) := \frac{\mathbb{P}(A \cap B)}{\mathbb{P}(B)}
 @
 @
-\mathbb{P}(A|B) := \mathbb{P}_B(A) := \text{"B happened, probability of A?"}
+\mathbb{P}(A|B) := \mathbb{P}_B(A) := \text{"Given B, what's the probability of A?"}
 @
 
 **Bayes formula**
@@ -64,3 +68,18 @@ And we could write
 \mathbb{P}(A|B) := \frac{\mathbb{P}(B) * \mathbb{P}(A|B)}{\mathbb{P}(B)}
 \ or \ \frac{\mathbb{P}(A) * \mathbb{P}(B|A)}{\mathbb{P}(B)}
 @
+
+**Chain rule**
+
+In French, it's called ``Formule des probabilités composées``.
+
+<div>
+\[
+\displaylines{
+\mathbb{P}(B) = \mathbb{P}( \Omega B)
+= \mathbb{P}((A_1 \cap B) \cup (A_2 \cap B) \cup \ldots) 
+\\ = \mathbb{P}(A_1 \cup B) + \mathbb{P}(A_2 \cup B) + \ldots \\
+= \mathbb{P}(A_1) * \mathbb{P}_{A_1} (B) + \mathbb{P}(A_2) * \mathbb{P}_{A_2} (B) + \ldots
+}
+\]
+</div>
