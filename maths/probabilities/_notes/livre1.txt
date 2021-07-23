@@ -73,20 +73,14 @@ Espérance mathématique
 	Nous disons que la variable aléatoire X admet une espérance mathématique
 	ou que la série des probabilités converge absolument.
 
-	Nous appelons alors espérance mathématique de X, la moyenne pondérée notée
-  E(X) et définie par ...
-
-  L_1 (Omega, F, P) désigne l'ensemble des variables aléatoires discrètes définies sur
-  Omega et admettant une espérance.
+    L_1 (Omega, F, P) désigne l'ensemble des variables aléatoires discrètes définies sur
+    Omega et admettant une espérance.
 
 Espérance d'une fonction d'une variable aléatoire
 	Lorsque g(X) admet une espérance mathématique alors
 	on a E[g(x)] soit Somme ... g(x_i) * ...
 
 	Admet un espérance si la série est est absolument convergente.
-
-	E(b) = b si b constant
-	E(aX+By) = aE(X) + bE(y)
 
 Moment simple et moment centré d'ordre r
 Soit r ∈ N^*. Sous réserve d'existence, nous appelons moment simple d'ordre r
@@ -104,16 +98,6 @@ r = 2 = variance
 Les
 caractéristiques de forme des distributions sont associées aux moments
 centrés d'ordres r = 3 et r = 4.
-
-Variance et écart-type
-σ^2 ou σ^2_X μm_2 (X)
-
-écart-type de X = sqrt(σ) donc σ ou σ_X
-
-formule de Huygens
-E(x^2) - E^2(x)
-
-Var(aX + b) = a^2Var(X)
 
 E(X) = 0, alors X est une variable aléatoire centrée
 Var(X) = 1, alors X est une variable aléatoire réduite

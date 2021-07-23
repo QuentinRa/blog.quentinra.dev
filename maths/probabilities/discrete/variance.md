@@ -11,6 +11,8 @@ expected value.
 \]
 </div>
 
+We got the second formula with [Huygens theorem](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_K%C3%B6nig-Huygens).
+
 **Properties**
 
 * $V(X) = \sigma^2$ with sigma the standard deviation

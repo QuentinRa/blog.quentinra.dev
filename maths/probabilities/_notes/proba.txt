@@ -1,15 +1,3 @@
-Tribu Borélienne
-	On appelle ouvert, un ensemble ouvert donc qui ne contient aucun point de sa frontière.
-
-	On note :math:`\mathbb{R}^d` le produit cartésien de d fois l'ensemble :math:`\mathbb{R}`.
-
-	La tribu borélienne est une tribu engendré par l'ensemble des ouverts d'Omega.
-
-		* Comme la tribu borélienne est engendrée par l'ensemble des ouverts de oméga, elle les contient tous.
-		* C'est une tribu donc elle contient les complémentaires de tous les ouverts, donc tous les fermés.
-		* C'est une tribu donc elle contient toute réunion d'ouverts et de fermés
-
-
 Loi hyper-géométrique
 	Soit N éléments au total et K le nombre d'éléments voulus. On fait n tirages sans remise.
 	La loi géométrique permet de déterminer le premier succès
