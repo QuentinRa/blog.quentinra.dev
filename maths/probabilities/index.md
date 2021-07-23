@@ -8,13 +8,15 @@ will be used in other courses.
   is a result possible 
   <span class="tms">such as 1 for a dice</span>
 * $\Omega$ (big-omega)
-  is a set of all possible results
+  is a set of all possible outcomes,
+  also called sample space
   <span class="tms">such as {1,2,3,4,5,6} for a dice
   or {$\ x \mid x \in [1,6]\ $}</span>.
 * $A$ is an event included in <span>
   $\Omega$. <span class="tms">
   It's almost everytime defined
-  by a sentence like "the result is pair".
+  by a sentence like "the result is pair"
+  giving a set like {2,4,6} for a dice.
   </span>
 * $\overline{A}$ means the opposite
   event of A.
@@ -22,6 +24,10 @@ will be used in other courses.
   means an impossible event.
 * $Card(E) = |E| = \\#E$ is the cardinal of
   a set E, meaning the number of elements.
+
+We are calling **elementary events**, events sets
+made of only one outcome (singletons) in
+the sample space.
 
 <hr class="sl">
 

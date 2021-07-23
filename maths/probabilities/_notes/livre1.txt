@@ -60,15 +60,6 @@ si la somme est sur un interval fini alors alors la somme converge absolument
 probas
 -------------
 
-F : L'ensemble des événements
-Tout singleton omega est appelé événement élémentaire.
-
-Ensemble des événements = sigma-algèbre ou une tribu
-
-	* ens vide et Omega inclus dans F
-	* chaque événements et son complémentaire dans F
-	* si on prends une suite d'événements dans F alors l'union/l'intersection est dans F
-
 Événements incompatibles
 	Impossible que A et B se réalisent simultanément
 

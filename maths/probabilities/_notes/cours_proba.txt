@@ -59,20 +59,3 @@ une simple transformée de Fourier.
 F(k) = 1/\sqrt{2pi} e^{-k^2/2}
 
 rond_barré_x (k) = e^{-k^2/2}
-
-========================================
-========================================
-==== LOI DE PROBABILITÉS
-========================================
-========================================
-
-----> FONCTION DE BERNOULLI
-Ainsi, une variable aléatoire X suit une "fonction de Bernoulli" (ou "loi de Bernoulli") si elle ne peut
-prendre que les valeurs 0 ou 1, associées aux probabilités p et q
-
-Remarquons que par extension, si nous considérons N événements où nous obtenons dans un ordre
-particulier k fois une des issues possible (réussite) et N-k l'autre (échec), alors la probabilité d'obtenir
-une telle série (de k réussites et N-k échecs ordonnés dans un ordre particulier) sera donnée par:
-P(x=k) : p^k q^{N-k}
-E(x) = p
-V(x) = p * q
