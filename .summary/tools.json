@@ -3,7 +3,7 @@
     {
       "tag": "docker",
       "name": "Docker",
-      "desc": "What's docker and how you could using it.",
+      "desc": "What's docker and how you could using it to run applications everywhere.",
       "icon": "<i class=\"bi bi-box-seam\"></i>"
     },
     {

@@ -4,7 +4,8 @@
 your app with a configuration in a ``Dockerfile`` and it will
 create a Docker image.
 
-Then any machine that has `docker` can run your image, meaning your application can be run everywhere.
+Then any machine that has `docker` can run your image, 
+meaning your application can be run everywhere.
 
 <div class="sr"></div>
 
