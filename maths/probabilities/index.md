@@ -70,7 +70,7 @@ Let's dig more into it
 * [Expected value E(X)](discrete/expected-value.md)
 * [Variance V(X)](discrete/variance.md)
 
-And here are some well-know distributions
+And here are some well-known distributions
 (also called ``Fonctions`` or ``Lois`` in French)
 
 * [Bernoulli distribution](dist/bernoulli.md)
