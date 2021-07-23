@@ -3,43 +3,43 @@
     {
       "tag": "c",
       "name": "C",
-      "desc": "We start from scratch and end up to creating more complex programs like ones using threads or graphical interface in ncurses for instance.",
+      "desc": "We start from scratch and end up creating more complex programs with threads or a graphical interface.",
       "icon": "<i class=\"bi bi-terminal-fill\"></i>"
     },
     {
       "tag": "java",
       "name": "Java",
-      "desc": "Learn java and Oriented-object programming. We also dig into JavaFX, Swing, AWT, Libgdx, and lwjgl3.",
+      "desc": "The course is explaining a lot of concepts up to Java16, including graphical libraries like SWING, AWT, or JavaFX.",
       "icon": "<i class=\"bi bi-window\"></i>"
     },
     {
       "tag": "ocaml",
       "name": "OCaml",
-      "desc": "Here you will learn about OCaml and functional languages.",
+      "desc": "This is a course for beginners in OCaml or in functional languages.",
       "icon": "<i class=\"bi bi-terminal-fill\"></i>"
     },
     {
       "tag": "html",
       "name": "HTML",
-      "desc": "Learn how to use html to create a simple website.",
+      "desc": "A big summary of what you need to know in HTML to make a website.",
       "icon": "<i class=\"bi bi-globe\"></i>"
     },
     {
       "tag": "css",
       "name": "CSS",
-      "desc": "Use css to add some style to your website.",
+      "desc": "What's CSS and how you could use it to make your website looks better.",
       "icon": "<i class=\"bi bi-globe\"></i>"
     },
     {
       "tag": "php",
       "name": "PHP",
-      "desc": "Learn how complex, weird and vast PHP is, and a bit about framework PHP.",
+      "desc": "Almost everything you will use in PHP to make your website server-side in PHP.",
       "icon": "<i class=\"bi bi-globe\"></i>"
     },
     {
       "tag": "assembly",
       "name": "Assembly",
-      "desc": "Introduction to assembly, ARM to be precise.",
+      "desc": "A short introduction to ARM assembly.",
       "icon": "<i class=\"bi bi-sim\"></i>"
     },
     {
@@ -51,19 +51,19 @@
     {
       "tag": "cyber-security",
       "name": "Cyber security",
-      "desc": "What we know about cyber security.",
+      "desc": "Everything related to the security of your accounts, applications, websites should be kept here.",
       "icon": "<i class=\"bi bi-shield-shaded\"></i>"
     },
     {
       "tag": "node",
       "name": "Node.js",
-      "desc": "Write application in electron or simply server-side logic in JavaScript.",
+      "desc": "Learn how you could use node to handle server-side logic, creating an API, or even creating an application with electron.",
       "icon": "<i class=\"bi bi-tropical-storm\"></i>"
     },
     {
       "tag": "typescript",
       "name": "Typescript",
-      "desc": "Write once and compile in any version of javascript.",
+      "desc": "Write once and compile in any version of Javascript.",
       "icon": "<i class=\"bi bi-cup-straw\"></i>"
     }
   ]
