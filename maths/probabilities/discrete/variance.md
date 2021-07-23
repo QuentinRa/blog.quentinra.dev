@@ -13,8 +13,13 @@ expected value.
 
 **Properties**
 
+* $V(X) = \sigma^2$ with sigma the standard deviation
+* $V(\lambda X^2) = \lambda^2 V(X)$
+* $V(a) = 0$
 * $V(a + \lambda X^2) = \lambda^2 V(X)$
 * $V(X + Y) = V(X) + V(Y) - 2cov(XY)$
+* $V(X)$ is also called [the second moment](https://en.wikipedia.org/wiki/Moment_(mathematics)#Variance)
+  (`moment (centré) de second ordre`)
 
 <hr class="sr">
 
