@@ -7,53 +7,26 @@
 * **PyCharm**: Write ``Python``
 * **AndroidStudio**: Write ``Kotlin``/`Java for android`
 
-<div class="sr"></div>
-
-## Pro(s) and cons(s)
-
-Before digging into it, please take note that Jetbrains
-IDE
-
-* may take a lot of memory
-* may take a lot (~3Gb per IDE) of disk space since you will
-  have to download many IDEs in most cases
-* in ``IDEA``, you can't compile a file but always everything at all
-* in ``CLion``, I'm not a fan of `CMakeLists` over `Makefiles`
-
-And here a some functionalities
-
-* they come ``preconfigured`` so most of the time,
-  download and run and that's it.
-* the interface is the same in all of theirs IDEs
-* they allow you to code in a team by joining a friend
-  with ``CodeWithMe``
-* you can manage your projects with ``YouTrack``
-* verify your code and giving you advice/fix
-* generating ``UML`` from code
-* spelling (some rustic support)
-* git integration, color for files
-* code directly on a server `PHP` 
-* move easily between files, search tools
-* can create language plugin easily
-* connect to a database, sql integration
-* intelligent refactoring
-* can reset to the previous version of a file
-  (with or without git)
-
-<div class="sl"></div>
+<hr class="sl">
 
 ## Installation
 
 I recommend using the
 [toolbox](https://www.jetbrains.com/toolbox-app/)
-to manage your app.
+to manage your app. The only IDEs available for
+free are IntelliJ (Java) and AndroidStudio.
 
-If you are a student and wants free IDEs then process
-this form
-[students](https://www.jetbrains.com/shop/eform/students)
+If you are a student and wants a full access
+to other IDEs then process
+[this form](https://www.jetbrains.com/shop/eform/students)
 using your **academic** email.
+You can also get a lot of free bonuses
+as a student like on 
+[Unity](https://store.unity.com/academic/unity-student)
+or with 
+[GitHub Student Developer Pack](https://education.github.com/pack#offers).
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Interface presentation
 
@@ -72,7 +45,7 @@ to see a quick fix of it.
 * [Free tips](presentation/tips.md)
 * [Menus](presentation/menus.md)
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## IDE: IntelliJ IDEA
 
@@ -97,7 +70,7 @@ Then some tutorials
 * [Run tests](idea/tests.md)
 * [Project Structure](idea/project-structure.md)
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## IDE: PHPStorm
 
@@ -114,7 +87,7 @@ on a server.
 * [Remote working](phpstorm/remote.md)
 * [Launch website](phpstorm/start.md)
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## IDE: CLion
 
@@ -135,7 +108,39 @@ manage to.
 * [Remote working](clion/remote.md)
 * [Debug](clion/debug.md)
 
-<div class="sr"></div>
+<hr class="sr">
+
+## Pro(s) and cons(s)
+
+Jetbrains IDE
+
+* may take a lot of memory
+* may take a lot (~3Gb per IDE) of disk space since you will
+  have to download many IDEs in most cases
+* in ``IDEA``, you can't compile a file but always everything at all
+* in ``CLion``, I'm not a fan of `CMakeLists` over `Makefiles`
+
+And here a some functionalities
+
+* they come ``preconfigured`` so most of the time,
+  download and run and that's it.
+* the interface is the same in all of theirs IDEs
+* they allow you to code in a team by joining a friend
+  with ``CodeWithMe``
+* you can manage your projects with ``YouTrack``
+* verify your code and giving you advice/fix
+* generating ``UML`` from code
+* spelling (some rustic support)
+* git integration, color for files
+* code directly on a server `PHP`
+* move easily between files, search tools
+* can create language plugins easily
+* connect to a database, sql integration
+* intelligent refactoring
+* can reset to the previous version of a file
+  (with or without git)
+
+<hr class="sl">
 
 ## Sources
 
