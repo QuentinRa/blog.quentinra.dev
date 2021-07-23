@@ -3,13 +3,13 @@
     {
       "tag": "hmi",
       "name": "HMI",
-      "desc": "Learn the basic about how one should think an interface.",
+      "desc": "Learn about what you must think before making an interface. Tools to make mockups are also listed here.",
       "icon": "<i class=\"bi bi-window\"></i>"
     },
     {
       "tag": "uml",
       "name": "UML",
-      "desc": "Learn about a lot of kind of UML diagrams.",
+      "desc": "UML is a tool used to work on the conception part of a project.",
       "icon": "<i class=\"bi bi-map\"></i>"
     },
     {
@@ -21,7 +21,7 @@
     {
       "tag": "agile-scrum",
       "name": "Agile scrum",
-      "desc": "One of the great way to manage a project.",
+      "desc": "A project methodology following the Agile guidelines.",
       "icon": "<i class=\"bi bi-shield-lock\"></i>"
     },
     {
@@ -33,19 +33,19 @@
     {
       "tag": "tests",
       "name": "Tests",
-      "desc": "How to write tests and for what. Cover tools like JUnit, CUnit, PHPUnit, ...",
+      "desc": "What are tests and assertions? What's the Test-driven development and the Behavior-driven development?",
       "icon": "<i class=\"bi bi-cup\"></i>"
     },
     {
       "tag": "guidelines",
       "name": "Code guidelines",
-      "desc": "What are the best practices when writing code?",
+      "desc": "What are the best practices when writing code? KISS, YAGNI, SOLID, DRY, and a lot more!",
       "icon": "<i class=\"bi bi-award\"></i>"
     },
     {
       "tag": "methods",
       "name": "Methodologies",
-      "desc": "Learn more about methods like model-driven dev...",
+      "desc": "Learn more about methods like model-driven dev, data-driven...",
       "icon": "<i class=\"bi bi-emoji-dizzy\"></i>"
     }
   ]
