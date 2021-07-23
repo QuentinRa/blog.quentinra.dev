@@ -15,6 +15,12 @@ is defined by
 **Note**: it's the sum for
 each value the probability of a value by the value.
 
+Notes
+
+* $\mathbb{E}(X)$ is also called the **(weighted) mean** (`moyenne (pondérée)`)
+* $\mathbb{E}(X)$ is also called [the first moment](https://en.wikipedia.org/wiki/Moment_(mathematics)#Mean)
+  (`moment d'ordre 1`)
+
 <hr class="sl">
 
 **Properties**
@@ -23,6 +29,7 @@ each value the probability of a value by the value.
 * Positive: $\mathbb{E}(X) \ge 0$ <span class="tms">(if X is a positive v.a.d.)</span>
 * Increasing: $X \ge Y$, $\mathbb{E}(X) \ge \mathbb{E}(Y)$
 * If X,Y independent: $\mathbb{E}[X * Y] = \mathbb{E}[X] * \mathbb{E}[Y]$
+* $\mathbb{E}[c] = c$
 
 Note that $[X,Y]$ means $X$ **and** $Y$.
 
