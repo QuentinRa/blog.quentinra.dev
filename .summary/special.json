@@ -29,6 +29,12 @@
       "name": "IT Project",
       "desc": "Some feedback about it project at the ENSIIE engineering school.",
       "icon": "<i class=\"bi bi-people\"></i>"
+    },
+    {
+      "tag": "business",
+      "name": "Business",
+      "desc": "",
+      "icon": "<i class=\"bi bi-currency-exchange\"></i>"
     }
   ]
 }
