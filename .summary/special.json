@@ -2,32 +2,32 @@
   "courses": [
     {
       "tag": "ilo",
-      "name": "ILO",
-      "desc": "How to survive in ILO course at ENSIIE, using IDEs as a protection.",
+      "name": "Java - ILO",
+      "desc": "We are covering practical classes of the ILO course at the ENSIIE engineering school.",
       "icon": "<i class=\"bi bi-file-earmark-text\"></i>"
     },
     {
       "tag": "web",
       "name": "Web - PWR",
-      "desc": "Some tips about the web infrastructure at ENSIIE.",
+      "desc": "Some tips about the web course at the ENSIIE engineering school.",
       "icon": "<i class=\"bi bi-globe2\"></i>"
     },
     {
       "tag": "cesim",
       "name": "Cesim",
-      "desc": "Some feedback about HOTELS/CESIM course.",
+      "desc": "Some feedback about CESIM course at the ENSIIE engineering school.",
       "icon": "<i class=\"bi bi-shop\"></i>"
     },
     {
       "tag": "maths",
       "name": "Maths for AST",
-      "desc": "Some feedback about ENSIIE maths courses for DUT/BUT/...",
+      "desc": "Some feedback about maths courses for DUT at the ENSIIE engineering school.",
       "icon": "<i class=\"bi bi-umbrella\"></i>"
     },
     {
       "tag": "it",
       "name": "IT Project",
-      "desc": "Some feedback about ENSIIE it project (S2).",
+      "desc": "Some feedback about it project at the ENSIIE engineering school.",
       "icon": "<i class=\"bi bi-people\"></i>"
     }
   ]
