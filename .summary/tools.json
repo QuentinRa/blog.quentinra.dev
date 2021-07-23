@@ -3,19 +3,19 @@
     {
       "tag": "docker",
       "name": "Docker",
-      "desc": "What's docker and why are we using it.",
+      "desc": "What's docker and how you could using it.",
       "icon": "<i class=\"bi bi-box-seam\"></i>"
     },
     {
       "tag": "git",
       "name": "Git",
-      "desc": "Why you MUST use git as a programmer and how to use it, with Github as an example.",
+      "desc": "Why you MUST use git as a programmer so learn how to use it.",
       "icon": "<i class=\"bi bi-github\"></i>"
     },
     {
       "tag": "jetbrains",
       "name": "Jetbrains",
-      "desc": "Some programming software free for students that will make your programming life easier.",
+      "desc": "Make your programming life easier by coding on powerful preconfigured IDEs.",
       "icon": "<i class=\"bi bi-battery-charging\"></i>"
     },
     {
@@ -39,7 +39,7 @@
     {
       "tag": "latex",
       "name": "LaTEx",
-      "desc": "The legendary language to write reports, create presentations quite easily and with great style",
+      "desc": "A language used to write reports, create presentations quite easily and with great style. You may also use it to write maths on website/documents.",
       "icon": "<i class=\"bi bi-box\"></i>"
     },
     {
@@ -51,13 +51,13 @@
     {
       "tag": "inno-setup",
       "name": "Inno Setup",
-      "desc": "A tool to create installers.",
+      "desc": "A tool to create Windows installers, with an uninstaller and a modern interface.",
       "icon": "<i class=\"bi bi-gear\"></i>"
     },
     {
       "tag": "unity-2d",
       "name": "Unity 2D",
-      "desc": "For now it's only a gathering of notes about unity.",
+      "desc": "A gathering of notes about unity, focused on 2D knowledge.",
       "icon": "<i class=\"bi bi-journal-richtext\"></i>"
     }
   ]
