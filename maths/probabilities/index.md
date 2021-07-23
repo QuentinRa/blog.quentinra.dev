@@ -71,7 +71,9 @@ Let's dig more into it
 * [Variance V(X)](discrete/variance.md)
 
 And here are some well-know distributions
+(also called ``Fonctions`` or ``Lois`` in French)
 
+* [Bernoulli distribution](dist/bernoulli.md)
 * [Binomial distribution](dist/binom.md)
 * [Poisson distribution](dist/poisson.md)
 * [Geometric distribution](dist/geometric.md)
@@ -90,6 +92,7 @@ And
 
 Distributions
 
+* <https://en.wikipedia.org/wiki/Bernoulli_distribution>
 * <https://en.wikipedia.org/wiki/Binomial_distribution>
 * <https://en.wikipedia.org/wiki/Poisson_distribution>
 * <https://en.wikipedia.org/wiki/Geometric_distribution>
