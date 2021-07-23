@@ -7,7 +7,7 @@
 ## Terms of use and privacy policy
 
 When creating a website, it's mandatory to provide
-these documents for your users. Europeans user
+these documents for your users. Europeans users
 should at least be able to refuse cookies and so on
 because of the GDPR policy.
 
