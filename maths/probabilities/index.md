@@ -5,11 +5,11 @@ probabilities and some advanced concepts that
 will be used in other courses.
 
 * $\omega$ (small-omega)
-  is a result possible 
+  is an outcome possible 
   <span class="tms">such as 1 for a dice</span>
 * $\Omega$ (big-omega)
   is a set of all possible outcomes,
-  also called sample space
+  also called sample/probability space
   <span class="tms">such as {1,2,3,4,5,6} for a dice
   or {$\ x \mid x \in [1,6]\ $}</span>.
 * $A$ is an event included in <span>
@@ -22,12 +22,15 @@ will be used in other courses.
   event of A.
 * $\emptyset$ (empty set)
   means an impossible event.
-* $Card(E) = |E| = \\#E$ is the cardinal of
+* $Card(E) \Leftrightarrow |E| \Leftrightarrow \\#E$ is the cardinal of
   a set E, meaning the number of elements.
 
-We are calling **elementary events**, events sets
-made of only one outcome (singletons) in
-the sample space.
+You may see/use these too
+
+* an event set of one element (singleton) is called
+  an elementary event
+* events that's can't happens simultaneously are
+  called incompatible events ([wiki](https://fr.wikipedia.org/wiki/%C3%89v%C3%A9nements_incompatibles))
 
 <hr class="sl">
 
