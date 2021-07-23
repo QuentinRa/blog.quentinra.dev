@@ -54,23 +54,6 @@ si la somme est sur un interval fini alors alors la somme converge absolument
 probas
 -------------
 
-Formule des probabilités composées
-	Si on a une suite d'événements dont l'intersection est non nulle alors
-	on peut écrire PA_1 * P(A2|A1) * ...
-
-Système complet d’événements
-	* pour tous les événements l'intersection est nulle deux à deux
-	* union des événements corresponds à omega
-
-Formule des probabilités totales
-	La somme de toutes les réalisations de notre événement.
-
-Formule de Bayes
-	P(Ai|B) = (P(Ai)P(B|Ai)) / somme(j∈I, P(Aj)P(B|Aj))
-
-Variables aléatoires réelles.
-Variables aléatoires discrètes
-
 réelles : à valeurs dans R
 
 Fonction de répartition
@@ -83,17 +66,6 @@ numérique réelle F_X définie par
 
 Elle est compris entre 0 et 1 et est croissante sur R. Sa limite en moins l'infini
 est 0 et 1 en + l'infini. FX est continue à droite et admet une limite à gauche en tout point de R
-
-Variable aléatoire discrète
-	Dans un ensemble dénombrable.
-
-Loi d’une variable aléatoire discrète
-Soit X une variable aléatoire discrète définie sur un espace probabilisé (Omega, F)
-Nous appelons loi de la variable aléatoire X tel que
-
-	* somme des probabilités = 1
-	* probabilités sont supérieures/égales à 0
-	* probabiltié <= x c'est la somme des probabilités de tant que k <= x de p(X=k)
 
 Moments et fonctions génératrices d'une v.a. discrète
 

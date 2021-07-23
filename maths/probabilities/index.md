@@ -82,6 +82,7 @@ Let's dig more into it
 And here are some well-known distributions
 (also called ``Fonctions`` or ``Lois`` in French)
 
+* [discrete distribution requirements](dist/requirements.md)
 * [Bernoulli distribution](dist/bernoulli.md)
 * [Binomial distribution](dist/binom.md)
 * [Poisson distribution](dist/poisson.md)
