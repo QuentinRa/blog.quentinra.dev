@@ -5,10 +5,42 @@ engineering school from the point of view of AST
 (=`admis sur titre` meaning those that didn't make preparatory
 classes).
 
+**This course is in French.**
+
+<hr class="sr">
+
+## General advices
+
 ...
 
 <hr class="sr">
 
-## A title
+## Probabilities (MBR)
+
+* pas besoin de vous prendre la tête sur
+  certaines notions (tribue, ...) car c'est inutile
+  pour nous.
+
+<hr class="sl">
+
+## Graphs (MTG)
+
+...
+
+<hr class="sr">
+
+## Numerical analysis (Man)
+
+...
+
+<hr class="sl">
+
+## Optimization
+
+...
+
+<hr class="sr">
+
+## Statistics (MST)
 
 ...
