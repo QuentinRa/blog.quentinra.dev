@@ -9,13 +9,13 @@ classes).
 
 <hr class="sr">
 
-## General advices
+## Conseils généraux
 
 ...
 
 <hr class="sr">
 
-## Probabilities (MBR)
+## Probabilités (MBR)
 
 * pas besoin de vous prendre la tête sur
   certaines notions (tribue, ...) car c'est inutile
@@ -23,24 +23,24 @@ classes).
 
 <hr class="sl">
 
-## Graphs (MTG)
+## Graphes (MTG)
 
 ...
 
 <hr class="sr">
 
-## Numerical analysis (Man)
+## Analyse numérique (Man)
 
 ...
 
 <hr class="sl">
 
-## Optimization
+## Optimisation
 
 ...
 
 <hr class="sr">
 
-## Statistics (MST)
+## Statistiques (MST)
 
 ...
