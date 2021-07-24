@@ -42,7 +42,7 @@ Before the next part, you need to know of those
 * **median**: value where 50% are greater value and 50% have a lesser value.
 It's ``F(x)=0.5`` if `F` is the empirical cumulative distribution function)
 * **medial** (Médial): value that divide in two part the cumulative sum of values.
-* **mode**: most repeated value
+* **mode**: most repeated value ([wiki](https://en.wikipedia.org/wiki/Mode_(statistics)))
 * **quantile**: split the distribution in X part (4 = quartile, 10 = decile, 100 = centile).
 * [covariance](maths/cov.md) : if two value are independents then ``cov=0``.
 
