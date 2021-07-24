@@ -52,16 +52,20 @@ function where the sum of all values (=probabilities) is 1.
 It's a function associating each value of
 $\Omega$ to their probability.
 
-We call **support** a set where the distribution function is defined. The probability
-outside the support is 0. You can use that to make a sum on the support.
+We call **support** $\bigtriangleup$ 
+a set where the distribution function is defined
+(=domain). The probability
+outside the support is 0. You can use that to make a sum
+on the support.
 
 <hr class="sl">
 
 ## Discrete probability
 
-When $\Omega$ is a finite set then we are dealing
-with discrete probability. That's the case when $\Omega$
-is taking values in $\mathbb{N}$ or $\mathbb{Z}$.
+When $\Omega$ is a finite set, 
+then we are using discrete probabilities.
+That means the support is
+in $\mathbb{N}$ or $\mathbb{Z}$ then
 
 We are defining $\mathbb{P}_{X_w}{k} = \mathbb{P}(X_w=k)$
 the probability that a random variable 
