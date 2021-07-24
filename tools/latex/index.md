@@ -68,6 +68,8 @@ parser will do what he wants, you should either
 use ``\ `` so slash followed by a space 
 or use ``\quad`` (or `\,`, `\:`, ...).
 
+You an make a horizontal space with ``\hspace{1cm}``.
+
 **Note**: if you don't remember the name of a symbol,
 just draw it on
 [detexify](https://detexify.kirelabs.org/classify.html) 
