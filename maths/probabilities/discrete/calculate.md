@@ -78,8 +78,8 @@ In French, it's called ``Formule des probabilités composées``.
 \displaylines{
 \mathbb{P}(B) = \mathbb{P}( \Omega B)
 = \mathbb{P}((A_1 \cap B) \cup (A_2 \cap B) \cup \ldots) 
-\\ = \mathbb{P}(A_1 \cup B) + \mathbb{P}(A_2 \cup B) + \ldots \\
-= \mathbb{P}(A_1) * \mathbb{P}_{A_1} (B) + \mathbb{P}(A_2) * \mathbb{P}_{A_2} (B) + \ldots
+\\ = \mathbb{P}(A_1 \cap B) + \mathbb{P}(A_2 \cap B) + \ldots \\
+= \mathbb{P}(A_1) * \mathbb{P}(B|A_1) + \mathbb{P}(A_2) * \mathbb{P}(B|A_2) + \ldots
 }
 \]
 </div>
