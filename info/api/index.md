@@ -140,3 +140,32 @@ the server response code. **Remember them**
 * ``405 Method Not Allowed`` - You are trying to do something you can't do this way
 * ``429 Too Many Requests`` - ...
 * ``500 Internal Server Error`` - Our server had a problem
+
+<hr class="sl">
+
+## OpenAPI
+
+Well, developers are lazy and smart. 
+On [this](https://app.swaggerhub.com/search)
+page, developers are sharing their API specifications.
+
+For instance, this [ShopRoller/ShopAPI/1.0.0](https://app.swaggerhub.com/apis/ShopRoller/ShopAPI/1.0.0)
+is a random API that I found. 
+
+You can
+
+* either download the code for the API
+  * export
+  * client SDK
+  * select your language like PHP, JS, ...
+  * **the code is generated from the specifications**
+* or download the .yaml file
+  * export
+  * download API
+  * YAML (resolved)
+  * then you can play with the code, and try learning how you could use that
+* Notes (Jetbrains/PHPStorm)
+  * create a ``file.yaml`` using New > OpenAPI Specification
+  * [tutorial](https://www.jetbrains.com/help/phpstorm/openapi.html)
+  * create a .http file ``Scratches and consoles > Scratches > generated-requests.http``
+  * you can generate inside PHPStorm in a ``/gen`` folder the API code
