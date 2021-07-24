@@ -54,7 +54,9 @@ If that's the case, then that's a conditional probability.
 \mathbb{P}(A|B) := \mathbb{P}_B(A) := \text{"Given B, what's the probability of A?"}
 @
 
-**Bayes formula**
+<hr class="sr">
+
+## Bayes formula
 
 Using the previous formula, you could deduce
 
@@ -69,17 +71,45 @@ And we could write
 \ or \ \frac{\mathbb{P}(A) * \mathbb{P}(B|A)}{\mathbb{P}(B)}
 @
 
-**Chain rule**
+<hr class="sl">
 
-In French, it's called ``Formule des probabilités composées``.
+## Law of total probability
+
+In French, it's called ``Formule des probabilités totales``.
 
 <div>
 \[
 \displaylines{
-\mathbb{P}(B) = \mathbb{P}( \Omega B)
+\mathbb{P}(B) = \mathbb{P}(B \cap \Omega)
 = \mathbb{P}((A_1 \cap B) \cup (A_2 \cap B) \cup \ldots) 
 \\ = \mathbb{P}(A_1 \cap B) + \mathbb{P}(A_2 \cap B) + \ldots \\
 = \mathbb{P}(A_1) * \mathbb{P}(B|A_1) + \mathbb{P}(A_2) * \mathbb{P}(B|A_2) + \ldots
 }
+\]
+</div>
+
+<hr class="sr">
+
+## Chain rule
+
+In French, it's called ``Formule des probabilités composées``.
+It's defined by
+
+<div>
+\[
+\prod_{i=1}^n \mathbb{P}(A_i | \bigcap_{j=1}^{i-1} A_j)
+\]
+</div>
+
+For instance if $n=4$, we got
+
+<div>
+\[
+\mathbb{P}(A_4 \cap A_3 \cap A_2 \cap A_1) 
+=
+\mathbb{P}(A_4|\ A_3 \cap A_2 \cap A_1) * 
+\mathbb{P}(A_3|\ A_2 \cap A_1) * 
+\mathbb{P}(A_2|\ A_1) * 
+\mathbb{P}(A_1)
 \]
 </div>
