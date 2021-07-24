@@ -54,3 +54,34 @@ but that's not always the case.*
 
 *Disclaimer*: I'm using Github as an example because
 I'm using Github API in this website.
+
+<hr class="sl">
+
+## Endpoint response
+
+The result/response of the request is, in most cases, in
+
+* JSON (`{ key: "value" }`)
+* or, in XML (`<?xml version="1.0" encoding="UTF-8"?>`, then some HTML kind of syntax with tags)
+
+<hr class="sr">
+
+## Reading an URL
+
+You need to be able to read
+an URL like ``https://api.github.com/search/code?q=test+in:file+language:md+repo:lgs-games/memorize``
+
+* main endpoint: ``https://api.github.com/``
+* endpoint: ``/search/code`` ("Search inside the code")
+* parameters: ``?q=test+in:file+language:md+repo:lgs-games/memorize``,
+  we only have one here: ``q`` (query).
+  They are separated by `&`
+  and the format is ``name=value``
+  The arguments are given after a `?` at
+  the end of the URL.
+
+This is a typical example of a GET request (arguments
+inside the URL) but if you want to submit data (like
+creating a Github file), then you will have to made
+of POST request (check how you can do that in your
+language).
