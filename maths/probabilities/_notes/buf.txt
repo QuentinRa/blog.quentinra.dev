@@ -21,17 +21,6 @@ On a les propriétés suivantes :
 3.1 Fonction de répartition
 ******************************
 
-La fonction :math:`F_x(x)` est définie par :math:`F_X(x) = P(X \le x)`.
-
-On a les propriétés suivantes :
-
-	* :math:`\mathbb{P}(X \le x) := \mathbb{P}(X < x)`
-	* :math:`0 \ge F_X(x) \ge 1`
-	* F est croissante et continue à droite
-	* :math:`\lim_{x \rightarrow +\infty}F(x) = 1`
-	* :math:`\lim_{x \rightarrow -\infty}F(x) = 0`
-	* Si A_n suite monotone, P(\lim_{n \rightarrow +\infty} A_n) = \lim_{n \rightarrow +\infty} A_n * P(A_n)
-
 Théorème de transfert
 	Le théorème de transfert consiste à prendre une variable aléatoire, lui
 	appliquer une fonction et obtenir une nouvelle valeur aléatoire.

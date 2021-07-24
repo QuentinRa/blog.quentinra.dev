@@ -1,0 +1,40 @@
+# Cumulative distribution function
+
+[Go back](..)
+
+The Cumulative distribution function or
+``fonction de répartition`` $F_X(k)$ 
+is the probability of $\mathbb{P}(X \le k)$.
+
+Note that the cumulative distribution function
+isn't limited to the support of $\Omega$ for instance
+
+* $\Omega$ = {1,2,3,4,5,6} for a dice
+* but $F_X(7) = \mathbb{P}(X \le 7)$ is valid (=1)
+
+**Properties**
+
+* $\mathbb{P}(X = k) := 0$
+* $\mathbb{P}(X \le k) := \mathbb{P}(X < k)$
+* $0 \ge F_X(x) \ge 1$
+* F is increasing and continue
+* $\lim_{x \rightarrow +\infty}F(x) = 1$
+* $\lim_{x \rightarrow -\infty}F(x) = 0$
+* Let $A_n$ be a monotone sequence, $\mathbb{P}(\lim_{n \rightarrow +\infty} A_n) = \lim_{n \rightarrow +\infty} A_n * \mathbb{P}(A_n)$
+* $\mathbb{P}(a \le X \le b) = F_X(b) - F_X(a)$
+
+<hr class="sl">
+
+## Inverse cumulative distribution function
+
+The Inverse cumulative distribution function
+or Quantile function
+or ``fonction de répartition inverse`` is the name
+given when we are trying the find a $k$ given
+the wanted result of the function $\alpha$.
+
+@
+\alpha = \mathbb{P}(X \le k) 
+@
+
+It's written $F_X^{-1}(\alpha)$ or $Q_\alpha$.

@@ -121,6 +121,7 @@ one value
 * <https://en.wikipedia.org/wiki/Chebyshev%27s_inequality>
 * <https://en.wikipedia.org/wiki/Probability_mass_function>
 * <https://en.wikipedia.org/wiki/Cumulative_distribution_function>
+* <https://en.wikipedia.org/wiki/Quantile_function>
 
 Distributions
 
