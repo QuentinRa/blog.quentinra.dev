@@ -33,6 +33,8 @@ Notes
 
 Note that $[X,Y]$ means $X$ **and** $Y$.
 
+If we got an uniform probability, then $\mathbb{E}(X) = \frac{n+1}{2}$.
+
 <hr class="sr">
 
 **Chebyshev's inequality**
