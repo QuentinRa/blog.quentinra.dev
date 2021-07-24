@@ -28,3 +28,29 @@ the API.
 * [Stripe](https://stripe.com/docs/api) (payments), [Paypal API](https://developer.paypal.com/docs/api/overview/) (same)
 * [Mangadex API](https://api.mangadex.org/docs.html) (manga reader)
 * ...
+
+<hr class="sr">
+
+## Presentation
+
+There are two parts when dealing with an API
+
+* creation (if you are not using an existing one)
+* utilisation (simply read the documentation and use it)
+
+An API available at an URL like [https://api.github.com/](https://api.github.com/).
+This URL is called **base endpoint** and is represented by ``/`` (root)
+in the API documentation).
+
+You can view an endpoint as a sort of seller specialised
+in one kind of requests. For instance, you may have
+an endpoint ``/users`` handling all requests related
+to the users. This endpoint can delegate some requests
+to other sellers (endpoints) like ``/user/followers``
+(get user followers) or ``/user/following`` (get user following).
+
+*An API well made will use a good endpoint structure
+but that's not always the case.*
+
+*Disclaimer*: I'm using Github as an example because
+I'm using Github API in this website.
