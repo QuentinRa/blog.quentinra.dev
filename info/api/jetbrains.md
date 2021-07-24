@@ -28,7 +28,6 @@ username=john&password=doe
 
 <hr class="sr">
 
-* More information [here](https://www.jetbrains.com/help/idea/http-client-in-product-code-editor.html)
-* [PHPStorm RestAPI](https://blog.jetbrains.com/phpstorm/2013/02/using-the-rest-client-within-phpstorm/)
-* [PHPStorm Request](https://www.jetbrains.com/help/phpstorm/exploring-http-syntax.html)
-* [PHPRest](https://developer.okta.com/blog/2019/03/08/simple-rest-api-php)
+* [IntelliJ Request](https://www.jetbrains.com/help/idea/http-client-in-product-code-editor.html)
+* [PHPStorm Request](https://www.jetbrains.com/help/phpstorm/http-client-in-product-code-editor.html)
+* [PHPStorm Request syntax](https://www.jetbrains.com/help/phpstorm/exploring-http-syntax.html)
