@@ -13,17 +13,27 @@ expected value.
 
 We got the second formula with [Huygens theorem](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_K%C3%B6nig-Huygens).
 
+<hr class="sl">
+
 **Properties**
 
 * $V(X) = \sigma^2$ with sigma the standard deviation
 * $V(\lambda X^2) = \lambda^2 V(X)$
-* $V(a) = 0$
+* $V(c) = 0$ <span class="tms">(or if $V(X)=0$ then X is a constant)</span>
 * $V(a + \lambda X^2) = \lambda^2 V(X)$
 * $V(X + Y) = V(X) + V(Y) - 2cov(XY)$
 * $V(X)$ is also called [the second moment](https://en.wikipedia.org/wiki/Moment_(mathematics)#Variance)
   (`moment (centré) de second ordre`)
 
 <hr class="sr">
+
+**Chebyshev's inequality**
+
+@
+\mathbb{P}(|X - \mathbb{E}[X]| \ge a) \le \frac{V[X]}{a^2}
+@
+
+<hr class="sl">
 
 ## Covariance/co-variance (cov)
 

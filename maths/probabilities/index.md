@@ -151,6 +151,7 @@ Let's dig more into it
 * <https://en.wikipedia.org/wiki/Indicator_function>
 * <https://towardsdatascience.com/moment-generating-function-explained-27821a739035>
 * <https://math.stackexchange.com/questions/597008/exponential-distribution-moment-generating-function-to-find-the-mean>
+* <https://en.wikipedia.org/wiki/Chebyshev%27s_inequality>
 
 Distributions
 
