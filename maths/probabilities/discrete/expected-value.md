@@ -40,7 +40,7 @@ If we got an uniform probability, then $\mathbb{E}(X) = \frac{n+1}{2}$.
 **Chebyshev's inequality**
 
 @
-\mathbb{P}( |x| \ge a) \le \frac{\mathbb{E}[X^2]}{a^2}
+\mathbb{P}( |X| \ge a) \le \frac{\mathbb{E}[X^2]}{a^2}
 @
 
 <hr class="sl">
@@ -50,8 +50,10 @@ If we got an uniform probability, then $\mathbb{E}(X) = \frac{n+1}{2}$.
 $X$ integrable and $\varphi(x)$ converge
 
 @
-\mathbb{E}[\varphi(x)] > \varphi (\mathbb{E}[X])
+\mathbb{E}[\varphi(X)] > \varphi (\mathbb{E}[X])
 @
+
+Sometimes, you may see $\mathbb{E}[g(X)] = g(\mathbb{E}[X])$.
 
 <hr class="sr">
 
@@ -66,5 +68,5 @@ $X$ integrable and $\varphi(x)$ converge
 **Markov**
 
 @
-\mathbb{P}( |x| \ge a) \le \frac{\mathbb{E}[ |X| ]}{a}
+\mathbb{P}( |X| \ge a) \le \frac{\mathbb{E}[ |X| ]}{a}
 @
