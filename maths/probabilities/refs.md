@@ -1,5 +1,11 @@
 # References
 
+MGF
+
+* <http://www.maths.qmul.ac.uk/~bb/MS_Lectures_5and6.pdf>
+* <https://web.ma.utexas.edu/users/gordanz/notes/mgf_color.pdf>
+* <https://web.stanford.edu/class/cme241/lecture_slides/MGF.pdf>
+
 Books
 
 * ``Statistique et probabilités en économie-gestion by Christophe Hurlin, Valérie Mignon``
@@ -10,3 +16,28 @@ Books
 Others
 
 * ``MOOC de Probabilités - IMT``
+
+**French, old references**
+
+* <https://www.techno-science.net/definition/6212.html>
+* <http://www.jybaudot.fr/Probas/parampoisson.html>
+* <https://www.techno-science.net/definition/5950.html>
+* <https://fr.wikipedia.org/wiki/Formulaire_de_d%C3%A9veloppements_en_s%C3%A9ries>
+* <https://fr.wikiversity.org/wiki/S%C3%A9rie_enti%C3%A8re>
+* <https://fr.wikipedia.org/wiki/Covariance>
+* <http://dictionnaire.sensagent.leparisien.fr/Variance%20(statistiques%20et%20probabilit%C3%A9s)/fr-fr/>
+
+Distributions
+
+* <http://www.math.univ-toulouse.fr/~rau/retro%20stat%20inf/c1.pdf>
+* <https://misterprepa.net/les-lois-discretes-formules-mathematiques/>
+* <http://maths.cnam.fr/Membres/ghorbanzadeh/lois.pdf>
+* <https://fr.wikipedia.org/wiki/Loi_de_probabilit%C3%A9#Lois_discr%C3%A8tes>
+* <https://fr.wikipedia.org/wiki/Loi_de_probabilit%C3%A9_marginale>
+* <https://fr.wikipedia.org/wiki/Loi_de_Bernoulli>
+* <https://fr.wikipedia.org/wiki/Liste_de_lois_de_probabilit%C3%A9>
+* <https://fr.wikipedia.org/wiki/Loi_g%C3%A9om%C3%A9trique>
+* <https://fr.wikipedia.org/wiki/Loi_normale#Loi_normale_centr%C3%A9e_r%C3%A9duite>
+* <https://fr.wikipedia.org/wiki/Fonction_gaussienne>
+* <https://fr.wikipedia.org/wiki/Loi_normale>
+* <https://fr.wikipedia.org/wiki/Loi_exponentielle>
