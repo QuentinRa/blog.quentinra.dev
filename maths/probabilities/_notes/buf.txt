@@ -9,29 +9,6 @@ Théorème de transfert
 	Le théorème de transfert consiste à prendre une variable aléatoire, lui
 	appliquer une fonction et obtenir une nouvelle valeur aléatoire.
 
-3.2 Espérance et variance
-******************************
-
-Espérance
-	Soit :math:`f_X(x)` une fonction de densité intégrable (les densités non intégrables n'ont pas d'espérance),
-	on définit
-
-	.. math::
-
-		\mathbb{E}[X] = \int_{-\infty}^{+\infty} xf(x)dx
-
-	Remarques
-
-		* E(X) = 0, alors X est centrée
-		* E(X) est finie, alors X peut être centrée
-
-Variance
-	Soit :math:`f_X(x)` une fonction de densité intégrable, on définit
-
-	.. math::
-
-		V[X] = \int_{-\infty}^{+\infty} (x-\mathbb{E}[X])^2f(x)dx
-
 3.3 Loi usuelles
 ******************************
 

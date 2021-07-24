@@ -134,6 +134,7 @@ The density function **is valid if**
 Let's dig more into it
 
 * [Cumulative distribution function](continuous/cdf.md)
+* [Expected value and variance](continuous/moments.md)
 * [Moment-generating function](continuous/mgf.md)
 
 <hr class="sr">
