@@ -10,9 +10,13 @@ of X must follow these requirements
 
 And we could also add
 
-<div>
+<div class="mb-3">
 \[
 \mathbb{P}(X \lt k) = \sum_{i=0}^{k-1} \mathbb{P}(X=i)
 \]
-</div> 
 for instance $P(X\le3) = P(X=0) + P(X=1) + P(X=2)$
+</div>
+
+We are calling **mass function** (`Fonction de masse`),
+the function giving us the value for $\mathbb{P}(X=k)$
+for a distribution.

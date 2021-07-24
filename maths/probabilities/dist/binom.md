@@ -10,6 +10,8 @@ that you should read as
 "X follows a binomial distribution (n,p)",
 for instance $X \sim \mathbb{B}(10, 0.5)$.
 
+The mass function is
+
 <div>
 \[
 \begin{split}\begin{cases}

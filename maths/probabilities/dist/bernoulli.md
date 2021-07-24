@@ -8,7 +8,7 @@ Bernoulli is used when a random variable is either 0 or 1
 This distribution $Ber(n,p)$ represents the probability
 of success on $n$ trials with a probability of $p$.
 
-* The distribution function is $\mathbb{P}(X=k) = p^k * (1-p)^{n-k}$
+* The mass function is $\mathbb{P}(X=k) = p^k * (1-p)^{n-k}$
 * $\mathbb{E}(X) = \ p$
 * $\mathbb{V}(X) = \ p * (1-p)$
 

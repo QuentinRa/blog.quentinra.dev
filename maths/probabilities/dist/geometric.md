@@ -13,7 +13,7 @@ that you should read as
 "X follows a geometric distribution (p)",
 for instance $X \sim \mathbb{G}(0.04)$.
 
-* The distribution function is $\mathbb{P}(X=k) = (1-p)^{k-1} * p$
+* The mass function is $\mathbb{P}(X=k) = (1-p)^{k-1} * p$
 * $\mathbb{E}(X) = \ \frac{1}{p}$
 * $\mathbb{V}(X) = \ \frac{1-p}{p^2}$
 

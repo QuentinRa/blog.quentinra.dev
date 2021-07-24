@@ -12,7 +12,7 @@ that you should read as
 for instance $X \sim \mathbb{P}(0.4)$.
 
 * with $\lambda = n*p$
-* The distribution function is $\mathbb{P}(X=k) = \frac{\lambda^k *  e^{-\lambda}}{k!}$
+* The mass function is $\mathbb{P}(X=k) = \frac{\lambda^k *  e^{-\lambda}}{k!}$
 * $E(X) = \lambda$
 * $V(X) = \lambda$
 
