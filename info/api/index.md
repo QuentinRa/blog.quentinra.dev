@@ -29,6 +29,9 @@ the API.
 * [Mangadex API](https://api.mangadex.org/docs.html) (manga reader)
 * ...
 
+API are used everywhere and the examples/this course
+will be focused on the Web APIs. 
+
 <hr class="sr">
 
 ## Presentation
@@ -110,3 +113,30 @@ The most famous tool is
 
 * [PostMan](https://www.postman.com/)
 * but I'm using [Jetbrains Requests tools](jetbrains.md)
+
+<hr class="sl">
+
+## HTTP headers and responses codes
+
+When making a request, sometimes you may
+have to provide headers to your request.
+
+```php
+// this is an example if YOU ARE MAKING AN API
+// of headers, but you won't use the same values
+header("Access-Control-Allow-Origin: http://localhost/");
+header("Content-Type: application/json; charset=UTF-8");
+header("Access-Control-Allow-Methods: POST");
+header("Access-Control-Max-Age: 3600");
+header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+```
+
+As a client, you should care the most about
+the server response code. **Remember them**
+
+* ``200 OK`` - Everything is fine
+* ``400 Bad Request`` - Your request don't make any sense to us
+* ``404 Not Found`` - Trying to use something that doesn't exist (file or URL)
+* ``405 Method Not Allowed`` - You are trying to do something you can't do this way
+* ``429 Too Many Requests`` - ...
+* ``500 Internal Server Error`` - Our server had a problem
