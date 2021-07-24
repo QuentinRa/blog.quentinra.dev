@@ -210,7 +210,11 @@ You may also check this to create a profile card
 
 ![](https://github-readme-stats.vercel.app/api?username=QuentinRa&show_icons=true&theme=radical)
 
-And you can even find things like this
+You can also show an achievements badge
+
+![trophies](https://github-profile-trophy.vercel.app/api?username=QuentinRa&theme=chalk&column=3&margin-w=10&margin-h=10)
+
+And you can even find things like joke cards
 <https://readme-jokes.vercel.app/api>.
 
 You can also **create a skyline** with your
