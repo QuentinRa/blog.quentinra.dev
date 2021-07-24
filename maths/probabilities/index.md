@@ -107,8 +107,31 @@ then we are using continuous probabilities.
 That means the support is
 in $\mathbb{R}$.
 
-The probability of $P(X=k)=0$ because taking
-one value
+The probability of taking a value is 0 for
+a continuous probability: $P(X=k)=0$. That's because
+theses elementary events are converging to 0
+because the sum of all elementary events is converging
+to 1.
+
+We need to introduce the **(probability) density function**
+or ``fonction de densité`` $f_X(x)$. The function is defined
+by 
+
+<div>
+\[
+\displaylines{
+\mathbb{P}(x \in X) = \int_{x \in \Delta X}^{} f_X(x)dx \\
+or\ \mathbb{P}(a \le X \le b) = \int_{a}^{b} f_X(x)dx
+}
+\]
+</div>
+
+The density function **is valid if**
+
+* $\int_{-\infty}^{+\infty} fxdx = 1$
+* values are $\ge 0$
+
+Let's dig more into it
 
 * [Cumulative distribution function](continuous/cdf.md)
 * [Moment-generating function](continuous/mgf.md)
