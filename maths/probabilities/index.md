@@ -88,11 +88,11 @@ Let's dig more into it
 And here are some well-known distributions
 (also called ``Fonctions`` or ``Lois`` in French)
 
-* [discrete distribution requirements](dist/requirements.md)
-* [Bernoulli distribution](dist/bernoulli.md)
-* [Binomial distribution](dist/binom.md)
-* [Poisson distribution](dist/poisson.md)
-* [Geometric distribution](dist/geometric.md)
+* [discrete distribution requirements](discrete/dist/requirements.md)
+* [Bernoulli distribution](discrete/dist/bernoulli.md)
+* [Binomial distribution](discrete/dist/binom.md)
+* [Poisson distribution](discrete/dist/poisson.md)
+* [Geometric distribution](discrete/dist/geometric.md)
 
 Now practice,
 
@@ -110,6 +110,8 @@ in $\mathbb{R}$.
 The probability of $P(X=k)=0$ because taking
 one value
 
+* [Cumulative distribution function](continuous/cdf.md)
+
 <hr class="sr">
 
 ## Sources
@@ -117,6 +119,8 @@ one value
 * <https://en.wikipedia.org/wiki/Expected_value>
 * <https://en.wikipedia.org/wiki/Variance>
 * <https://en.wikipedia.org/wiki/Chebyshev%27s_inequality>
+* <https://en.wikipedia.org/wiki/Probability_mass_function>
+* <https://en.wikipedia.org/wiki/Cumulative_distribution_function>
 
 Distributions
 

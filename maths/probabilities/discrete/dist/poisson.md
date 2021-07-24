@@ -1,6 +1,6 @@
 # Poisson distribution
 
-[Go back](..)
+[Go back](../..)
 
 It's called the ``loi des événements/phénomènes rares`` in French.
 The requirements are that the probability $p$

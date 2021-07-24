@@ -1,6 +1,6 @@
 # Discrete distribution requirements
 
-[Go back](..)
+[Go back](../..)
 
 Let X a random variable, the random distribution
 of X must follow these requirements
