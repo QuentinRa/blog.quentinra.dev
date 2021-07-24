@@ -45,7 +45,9 @@ $[0,1]$
 * $\mathbb{P}(\overline{A}) = 1 - \mathbb{P}(A)$
 * $\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) -
   \mathbb{P}(A \cap B)$
-* $A \subset B \to \mathbb{P}(A) \le \mathbb{P}(B)$
+* $A \subset B \to \mathbb{P}(A) \le \mathbb{P}(B)$ (A included in B)
+* $A \subset B \to \mathbb{P}(A \cap B) = \mathbb{P}(A)$
+* $A \subset B \to \mathbb{P}(A \cup B) = \mathbb{P}(B)$
 
 We call **distribution function**, a strictly positive
 function where the sum of all values (=probabilities) is 1.
@@ -65,15 +67,15 @@ on the support.
 When $\Omega$ is a finite set, 
 then we are using discrete probabilities.
 That means the support is
-in $\mathbb{N}$ or $\mathbb{Z}$ then
+in $\mathbb{N}$ or $\mathbb{Z}$.
 
-We are defining $\mathbb{P}_{X_w}{k} = \mathbb{P}(X_w=k)$
-the probability that a random variable 
-(``variable aléatoire discrète``, v.a.d.) $X_w$ is taking the value $k$.
+We are defining $\mathbb{P}(X=k)$ the probability that a random variable 
+(``variable aléatoire discrète``, v.a.d.) $X$ is taking the value $k$.
 
 * We could write $P(X = 1) = y$ for a dice where y is
-  the probability that we got 1 <span class="spoiler tms">it's 1 out of 6 so y=1/6</span>.
-* $w$ may be omitted if you got only one variable called $X$
+  the probability that we got 1 (<span class="tms">it's 1 out of 6 so y=1/6</span>).
+* we may add a number $w$: $\mathbb{P}(X_w=k)$
+  if someone is using lazy naming like $X_1$, $X_2$, ...
 
 Let's dig more into it
 
@@ -92,9 +94,21 @@ And here are some well-known distributions
 * [Poisson distribution](dist/poisson.md)
 * [Geometric distribution](dist/geometric.md)
 
-And
+Now practice,
 
 * [Exercises](discrete/exercises.md)
+
+<hr class="sr">
+
+## Continuous probability
+
+When $\Omega$ isn't finite,
+then we are using continuous probabilities.
+That means the support is
+in $\mathbb{R}$.
+
+The probability of $P(X=k)=0$ because taking
+one value
 
 <hr class="sr">
 
