@@ -1,4 +1,4 @@
-# Moment-generating function
+# Moment-generating function (MGF)
 
 [Go back](..)
 
@@ -20,6 +20,23 @@ We are defining the moment-generating function by
 <div>
 \[
 M_X(t) = \mathbb{E}(\exp(tX)) =
-\int \exp(tx) dF_X(x)
+\int \exp(tx)\ f_X(x)\ dx
+\]
+</div>
+
+<hr class="sr">
+
+## Usage
+
+Let $M_X(t)$ a moment-generating function, then
+
+<div>
+\[
+\mathbb{E}(X) = \frac{\delta M_X (t)}{\delta t}
+= M'_X(0)
+\]
+\[
+V(X) = \frac{\delta^2 M_X (t)}{\delta t^2}
+= M''_X(0)
 \]
 </div>

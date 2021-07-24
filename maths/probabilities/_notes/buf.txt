@@ -1,3 +1,7 @@
+Indicatrice
+
+$\mathbb{1}_{ B }$ est appelé l'indicatrice de B.
+
 3.1 Fonction de répartition
 ******************************
 

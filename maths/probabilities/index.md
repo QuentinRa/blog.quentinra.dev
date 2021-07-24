@@ -147,6 +147,8 @@ Let's dig more into it
 * <https://en.wikipedia.org/wiki/Cumulative_distribution_function>
 * <https://en.wikipedia.org/wiki/Quantile_function>
 * <https://en.wikipedia.org/wiki/Moment-generating_function>
+* <https://en.wikipedia.org/wiki/Indicator_function>
+* <https://towardsdatascience.com/moment-generating-function-explained-27821a739035>
 
 Distributions
 

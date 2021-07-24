@@ -16,7 +16,7 @@ isn't limited to the support of $\Omega$ for instance
 
 * $\mathbb{P}(X = k) := 0$
 * $\mathbb{P}(X \le k) := \mathbb{P}(X < k)$
-* $0 \ge F_X(x) \ge 1$
+* $0 \le F_X(x) \le 1$
 * F is increasing and continue
 * $\lim_{x \rightarrow +\infty}F(x) = 1$
 * $\lim_{x \rightarrow -\infty}F(x) = 0$
