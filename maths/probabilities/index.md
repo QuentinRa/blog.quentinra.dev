@@ -111,6 +111,7 @@ The probability of $P(X=k)=0$ because taking
 one value
 
 * [Cumulative distribution function](continuous/cdf.md)
+* [Moment-generating function](continuous/mgf.md)
 
 <hr class="sr">
 
@@ -122,6 +123,7 @@ one value
 * <https://en.wikipedia.org/wiki/Probability_mass_function>
 * <https://en.wikipedia.org/wiki/Cumulative_distribution_function>
 * <https://en.wikipedia.org/wiki/Quantile_function>
+* <https://en.wikipedia.org/wiki/Moment-generating_function>
 
 Distributions
 
