@@ -211,6 +211,8 @@ like Poisson/...).
 
 Distributions
 
+* <https://en.wikipedia.org/wiki/Marginal_distribution>
+* <https://en.wikipedia.org/wiki/Joint_probability_distribution>
 * <https://en.wikipedia.org/wiki/Bernoulli_distribution>
 * <https://en.wikipedia.org/wiki/Binomial_distribution>
 * <https://en.wikipedia.org/wiki/Poisson_distribution>
