@@ -123,4 +123,3 @@ I won't dig into the details,
 Discord API
 
 * <https://birdie0.github.io/discord-webhooks-guide/>
-* <>
