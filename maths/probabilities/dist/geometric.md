@@ -1,6 +1,6 @@
 # Geometric distribution
 
-[Go back](../..)
+[Go back](..)
 
 The geometric distribution is determining the probability
 of the first success.

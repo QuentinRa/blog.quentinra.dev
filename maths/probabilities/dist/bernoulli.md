@@ -1,6 +1,6 @@
 # Bernoulli distribution
 
-[Go back](../..)
+[Go back](..)
 
 Bernoulli is used when a random variable is either 0 or 1
 (like flipping a coin).

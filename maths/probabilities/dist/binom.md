@@ -1,6 +1,6 @@
 # Binomial distribution
 
-[Go back](../..)
+[Go back](..)
 
 This distribution $B(n,p)$ represents the probability
 of success on $n$ trials with a probability of $p$.
