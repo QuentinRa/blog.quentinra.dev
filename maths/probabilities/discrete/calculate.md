@@ -62,6 +62,7 @@ Using the previous formula, you could deduce
 
 @
 \mathbb{P}(A \cap B) = \mathbb{P}(B) * \mathbb{P}(A|B)
+= \mathbb{P}(A) * \mathbb{P}(B|A)
 @
 
 And we could write
