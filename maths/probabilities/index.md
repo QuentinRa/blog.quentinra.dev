@@ -113,8 +113,8 @@ theses elementary events are converging to 0
 because the sum of all elementary events is converging
 to 1.
 
-We need to introduce the **(probability) density function**
-or ``fonction de densité`` $f_X(x)$. The function is defined
+We need to introduce the **(probability) density function** (PDF)
+or ``fonction de densité/de masse/marginale`` $f_X(x)$. The function is defined
 by 
 
 <div>

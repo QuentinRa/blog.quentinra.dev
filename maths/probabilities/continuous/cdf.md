@@ -21,7 +21,7 @@ isn't limited to the support of $\Omega$ for instance
 * $\lim_{x \rightarrow +\infty}F(x) = 1$
 * $\lim_{x \rightarrow -\infty}F(x) = 0$
 * Let $A_n$ be a monotone sequence, $\mathbb{P}(\lim_{n \rightarrow +\infty} A_n) = \lim_{n \rightarrow +\infty} A_n * \mathbb{P}(A_n)$
-* $\mathbb{P}(a \le X \le b) = F_X(b) - F_X(a)$
+* $\mathbb{P}(a \le X \le b) = F_X(b) - F_X(a) = \int_{a}^{b} f_X(x)dx$
 
 <hr class="sl">
 
