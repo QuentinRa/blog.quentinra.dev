@@ -6,11 +6,16 @@ The Cumulative distribution function or
 ``fonction de répartition`` $F_X(k)$ 
 is the probability of $\mathbb{P}(X \le k)$.
 
+The density function is the derivative
+of the cumulative distribution function.
+The cumulative distribution function is the
+primitive of the density function.
+
 Note that the cumulative distribution function
 isn't limited to the support of $\Omega$ for instance
 
 * $\Omega$ = {1,2,3,4,5,6} for a dice
-* but $F_X(7) = \mathbb{P}(X \le 7)$ is valid (=1)
+* but $F_X(7) = \mathbb{P}(X \le 7)$ is valid (=1=100%)
 
 **Properties**
 
