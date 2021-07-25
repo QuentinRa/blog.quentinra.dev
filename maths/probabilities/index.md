@@ -202,6 +202,7 @@ Discrete distributions
 * [Binomial distribution](dist/binom.md)
 * [Poisson distribution](dist/poisson.md)
 * [Geometric distribution](dist/geometric.md)
+* [Hypergeometric distribution](dist/hyper-geometric.md)
 
 <hr class="sl">
 
@@ -229,5 +230,6 @@ Distributions
 * <https://en.wikipedia.org/wiki/Poisson_distribution>
 * <https://en.wikipedia.org/wiki/Geometric_distribution>
 * <https://en.wikipedia.org/wiki/Exponential_distribution>
+* <https://en.wikipedia.org/wiki/Hypergeometric_distribution>
 
 [other references](refs.md)

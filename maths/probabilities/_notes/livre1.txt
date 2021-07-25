@@ -1,6 +1,3 @@
-La fonction caractéristique de A, ou fonction
-indicatrice de A, est définie tel 1_A(x) = 1 si x in A sinon 0
-
 A^m_n
 est le nombre de suites distinctes à m éléments sans répétition qu’il est possible
 de former avec un ensemble de n éléments
@@ -11,20 +8,6 @@ de n objets, indépendamment de l’ordre dans lequel les éléments sont
 choisis.
 
 Formule du binôme de Newton
-
-Fonctions génératrices
-Nous appelons fonction génératrice d’une suite d’entiers naturels
-donc une f(x) qui corresponds à une somme.
-
-	* Décalage vers la droite : commence à 0
-	* Décalage vers la gauche : finit à n+1
-	* Mise à l’échelle : multiplication de tous les termes par lambda
-	* Addition : ajoute un terme lambda à tous les termes
-	* Différence : on soustrait au terme actuel le terme précédent
-	* Convolution : on multiplie chaque résultat avec le résultat au même indice d'une autre fonction génératrice
-	* Multiplication/Division par l’indice : multiplie/divise chaque terme par son indice
-
-Fonctions génératrices usuelles : consultez la fiche sur les séries entières du tome d’analyse
 
 Soit il reçoit 1 ou 2 bonbons
 x + (ou) x^2
@@ -45,33 +28,6 @@ vanille >=2 <= 8 donc va en x8
 On multiplie les coefficients et on a la réponse.
 
 https://www.wolframalpha.com/input/?i=%28x%5E2%2Bx%5E3%2Bx%5E4%2Bx%5E5%2Bx%5E6%2Bx%5E7%2Bx%5E8%2Bx%5E9%2Bx%5E10%2Bx%5E11%2Bx%5E12%29*%28x%5E2%2Bx%5E3%2Bx%5E4%2Bx%5E5%2Bx%5E6%2Bx%5E7%2Bx%5E8%2Bx%5E9%2Bx%5E10%2Bx%5E11%2Bx%5E12%29%28x%5E2%2Bx%5E3%2Bx%5E4%29
-
----------------
-
-Couples de variables aléatoires discrètes. Indépendance
-	Nous appelons loi d’un couple (X,Y) ou encore loi conjointe de X et Y
-	la probabilité P([X=xi] union [Y=yi]) avec Omega qui corresponds au produit cartésien de OmegaX OmegaY.
-
-	Si les deux Omega sont petits alors on peut faire un tableau à double entrée <3.
-
-	Conditions
-
-		* la somme i,j des probas vaut 1
-		* toutes les probas sont positives
-
-Lois marginales
-	Les v.a. X et Y sont appelées variables marginales du couple (X,Y). La loi de la
-  v.a. X, respectivement la loi de la v.a. Y du couple (X,Y) est appelée loi marginale
-  de X, respectivement loi marginale de Y.
-
-Lois conditionnelles
-	Nous appelons loi de X conditionnée par A, ou loi de X sachant A, la suite numérique
-	P_a([X = x_i])
-	Nous appelons
-  loi de X conditionnée par Y, ou sachant Y, la famille
-  P_(Y=y_j)([X = x_i]) donc si j'ai bien compris c'est les probabilités de X=x_i a travers la loi X.
-
-  	* Si X et Y sont indépendantes alors la loi de X sachant Y est égale à la loi de X
 
 ---------------------------
 Lois discrètes usuelles finies
