@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-The Cumulative distribution function or
+The Cumulative distribution function/Repartition function or
 ``fonction de répartition`` $F_X(k)$ 
 is the probability of $\mathbb{P}(X \le k)$.
 

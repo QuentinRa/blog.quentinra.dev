@@ -160,6 +160,11 @@ Let's dig more into it
 Here are some well-known distributions
 (Functions/Laws also called ``Fonctions`` or ``Lois`` in French)
 
+We usually write $X \sim L$
+that you should read as
+"X follows a L distribution" (with L a distribution
+like Poisson/...).
+
 * [Bernoulli distribution](dist/bernoulli.md)
 * [Binomial distribution](dist/binom.md)
 * [Poisson distribution](dist/poisson.md)
