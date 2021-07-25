@@ -200,7 +200,7 @@ Discrete distributions
 
 * [Bernoulli distribution](dist/bernoulli.md)
 * [Binomial distribution](dist/binom.md)
-* [Uniform distribution](dist/uniform.md)
+* [Discrete Uniform distribution](dist/uniform.md)
 * [Hypergeometric distribution](dist/hyper-geometric.md)
 
 Continuous distributions

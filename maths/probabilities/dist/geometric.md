@@ -9,7 +9,7 @@ This is answering the question "If I have a probability
 of success $p$, what's the probability of the trial $k$
 being the first success?".
 
-* The mass function is $\mathbb{P}(X=k) = (1-p)^{k-1} * p$
+* The density function is $\mathbb{P}(X=k) = (1-p)^{k-1} * p$
 * $\mathbb{E}(X) = \ \frac{1}{p}$
 * $\mathbb{V}(X) = \ \frac{1-p}{p^2}$
 
