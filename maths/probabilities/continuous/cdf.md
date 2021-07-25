@@ -43,3 +43,21 @@ the wanted result of the function $\alpha$.
 @
 
 It's written $F_X^{-1}(\alpha)$ or $Q_\alpha$.
+
+<hr class="sl">
+
+## Y from X
+
+Using the change of variables $Y=aX+b$,
+we can $F_Y(x)$ from $F_X(x)$.
+
+@
+F_Y(y) = F_X(\frac{y-b}{a})
+@
+
+With an increasing monotone function, you can do $Y = \varphi(X)$
+like $Y = \exp(X)$ and $\varphi^{-1}(y) = ln(y)$
+
+@
+F_Y(y) = F_X(\varphi^{-1}(y))
+@
