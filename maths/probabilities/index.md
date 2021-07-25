@@ -19,7 +19,8 @@ will be used in other courses.
   giving a set like {2,4,6} for a dice.
   </span>
 * $\overline{A}$ means the opposite
-  event of A.
+  event of A, called complementary event and
+  read as "not A".
 * $\emptyset$ (empty set)
   means an impossible event.
 * $Card(E) \Leftrightarrow |E| \Leftrightarrow \\#E$ is the cardinal of
@@ -30,7 +31,7 @@ You may see/use these too
 * an event set of one element (singleton) is called
   an elementary event
 * events that's can't happens simultaneously are
-  called incompatible events ([wiki](https://fr.wikipedia.org/wiki/%C3%89v%C3%A9nements_incompatibles))
+  called incompatible/disjoints events ([wiki](https://fr.wikipedia.org/wiki/%C3%89v%C3%A9nements_incompatibles))
 
 <hr class="sl">
 
