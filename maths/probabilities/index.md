@@ -128,8 +128,14 @@ or\ \mathbb{P}(a \le X \le b) = \int_{a}^{b} f_X(x)dx
 
 The density function **is valid if**
 
-* $\int_{-\infty}^{+\infty} fxdx = 1$
-* values are $\ge 0$
+* $\int_{-\infty}^{+\infty} fxdx = 1$.
+  <span class="tms">
+  Sometimes
+  you have some restrictions like $\lambda>0$ so you can
+  reduce the interval.
+  </span>
+* $\forall{x},\ f(x) \ge 0$
+* the function is continue
 
 Let's dig more into it
 
