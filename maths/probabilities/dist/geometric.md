@@ -2,16 +2,12 @@
 
 [Go back](..)
 
-The geometric distribution is determining the probability
-of the first success.
+The geometric distribution $\mathbb{G}(p)$
+is determining the probability of the first success
+given a probability $p$.
 This is answering the question "If I have a probability
 of success $p$, what's the probability of the trial $k$
 being the first success?".
-
-We usually write $X \sim \mathbb{G}(p)$
-that you should read as
-"X follows a geometric distribution (p)",
-for instance $X \sim \mathbb{G}(0.04)$.
 
 * The mass function is $\mathbb{P}(X=k) = (1-p)^{k-1} * p$
 * $\mathbb{E}(X) = \ \frac{1}{p}$
