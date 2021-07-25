@@ -157,7 +157,24 @@ Let's dig more into it
 
 ## Joint probability
 
-* [Joint probability distribution](dist/jpd.md)
+We are calling  Joint probability distribution (X,Y)
+or ``loi d’un couple/conjointe``
+
+@
+\forall{i,j}\hspace{1cm} \mathbb{P}(X = x_i \cap Y = y_j)
+@
+
+The usual distribution properties must be fulfilled
+
+* the sum of all probabilities is **1**
+* all values are in $[0,1]$
+
+Note that $\mathbb{P}(X = x_i \cap Y = y_j)$
+is also written $\mathbb{P}(x_i,\ y_j)$ or
+$\mathbb{P}(X = x_i,\ Y = y_j)$.
+
+* [Contingency table](jp/table.md)
+* [Marginal Distribution](jp/marginal.md)
 
 <hr class="sl">
 

@@ -1,17 +1,6 @@
-# Joint probability distribution
+# Contingency table
 
 [Go back](..)
-
-We are calling  Joint probability distribution (X,Y)
-or ``loi d’un couple/conjointe``
-
-@
-\forall{i,j}\hspace{1cm} \mathbb{P}(X = x_i \cap Y = y_j)
-@
-
-<hr class="sr">
-
-## Contingency table
 
 When $Card(X)$ and $Card(Y)$ are small, you may
 use a contingency table/`tableau à double entrées`.
@@ -108,3 +97,6 @@ probability is $1/36$ for (1,1).
 
 For $X=1,\ Y=2$, you can find two issues (1,2)
 and (2,1) so that's $2/36$.
+
+Finally, you should check and confirm that the sum
+of all probabilities is equals to **1**.
