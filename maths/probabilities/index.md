@@ -200,9 +200,13 @@ Discrete distributions
 
 * [Bernoulli distribution](dist/bernoulli.md)
 * [Binomial distribution](dist/binom.md)
-* [Poisson distribution](dist/poisson.md)
-* [Geometric distribution](dist/geometric.md)
+* [Uniform distribution](dist/uniform.md)
 * [Hypergeometric distribution](dist/hyper-geometric.md)
+
+Continuous distributions
+
+* [Geometric distribution](dist/geometric.md)
+* [Poisson distribution](dist/poisson.md)
 
 <hr class="sl">
 

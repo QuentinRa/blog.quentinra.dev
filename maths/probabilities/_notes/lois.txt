@@ -48,22 +48,3 @@ La loi de cauchy est définie par la densité suivante, sachant a>0
 	f(x) = \frac{a}{\pi} \frac{1}{x^2+a^2}
 
 :math:`E[X] = existe\ pas`.
-
-Loi hyper-géométrique
-	Soit N éléments au total et K le nombre d'éléments voulus. On fait n tirages sans remise.
-	La loi géométrique permet de déterminer le premier succès
-
-	Notation : X ~ H(N, K, n)
-
-	.. math::
-
-		X_i \ = \ \begin{cases}
-		1 & si & le & tirage & est & bon \\
-		0 & sinon
-		 \end{cases}
-
-	:math:`EX_i = \frac{K}{N} \ et \ V(X_i) = \frac{K}{N} * (1 - \frac{K}{N})`
-
-	:math:`EX = n * EX_i = n * \frac{K}{N}`
-
-	:math:`VX = n * \frac{K}{N} * (1 - \frac{K}{N}) * \frac{N-n}{N-1}`
