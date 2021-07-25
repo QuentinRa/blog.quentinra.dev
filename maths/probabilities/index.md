@@ -155,7 +155,7 @@ Let's dig more into it
 
 <hr class="sr">
 
-## Joint probability
+## Joint probability (NEED TO BE REMADE :3)
 
 We are calling Joint probability distribution (X,Y)
 or ``loi d’un couple/conjointe`` a distribution
@@ -235,5 +235,7 @@ Distributions
 * <https://en.wikipedia.org/wiki/Geometric_distribution>
 * <https://en.wikipedia.org/wiki/Exponential_distribution>
 * <https://en.wikipedia.org/wiki/Hypergeometric_distribution>
+* <https://en.wikipedia.org/wiki/Discrete_uniform_distribution>
+* <https://en.wikipedia.org/wiki/Continuous_uniform_distribution>
 
 [other references](refs.md)

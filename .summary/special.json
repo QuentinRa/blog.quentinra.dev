@@ -35,6 +35,12 @@
       "name": "Business",
       "desc": "",
       "icon": "<i class=\"bi bi-currency-exchange\"></i>"
+    },
+    {
+      "tag": "discord",
+      "name": "Discord",
+      "desc": "Do you know discord? (note: this was a Korean slang)",
+      "icon": "<i class=\"bi bi-discord\"></i>"
     }
   ]
 }
