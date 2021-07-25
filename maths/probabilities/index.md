@@ -82,7 +82,7 @@ We are defining $\mathbb{P}(X=k)$ the probability that a random variable
 Let's dig more into it
 
 * [Calculate a discrete probability](discrete/calculate.md)
-* [Counting](discrete/counting.md)
+* [Counting techniques](discrete/counting.md)
 * [Independence](discrete/independence.md)
 * [Expected value E(X)](discrete/expected-value.md)
 * [Variance V(X)](discrete/variance.md)

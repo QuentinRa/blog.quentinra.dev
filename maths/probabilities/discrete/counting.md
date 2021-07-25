@@ -1,4 +1,4 @@
-# Counting
+# Counting techniques / Combinatorics
 
 [Go back](..)
 
@@ -14,6 +14,12 @@ Let's says we have
 **Note**: no repetition means that's you once
 you picked a value in ``E``, you are not putting it
 back. The size of ``E`` keeps decreasing.
+
+**Ordered**: means that (0,1) and (1,0) are two
+different results while unordered means that they
+are the same issue. When writing a ordered
+set, we write {$(0,1), (1,0)$} while we would
+do { {$0,1$} } for the same set but unordered.
 
 <hr class="sr">
 
