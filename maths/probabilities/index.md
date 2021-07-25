@@ -18,7 +18,7 @@ will be used in other courses.
   by a sentence like "the result is pair"
   giving a set like {2,4,6} for a dice.
   </span>
-* $\overline{A}$ means the opposite
+* $\overline{A}$ or $A^c$ means the opposite
   event of A, called complementary event and
   read as "not A".
 * $\emptyset$ (empty set)
@@ -31,7 +31,8 @@ You may see/use these too
 * an event set of one element (singleton) is called
   an elementary event
 * events that's can't happens simultaneously are
-  called incompatible/disjoints events ([wiki](https://fr.wikipedia.org/wiki/%C3%89v%C3%A9nements_incompatibles))
+  called incompatible/disjoints/mutually exclusive events ([wiki](https://fr.wikipedia.org/wiki/%C3%89v%C3%A9nements_incompatibles))
+* an event that will certainly happens is called a certain event.
 
 <hr class="sl">
 
