@@ -155,6 +155,12 @@ Let's dig more into it
 
 <hr class="sr">
 
+## Joint probability
+
+* [Joint probability distribution](dist/jpd.md)
+
+<hr class="sl">
+
 ## Distributions
 
 Here are some well-known distributions
