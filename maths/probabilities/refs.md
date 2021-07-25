@@ -26,6 +26,7 @@ Others
 * <https://fr.wikiversity.org/wiki/S%C3%A9rie_enti%C3%A8re>
 * <https://fr.wikipedia.org/wiki/Covariance>
 * <http://dictionnaire.sensagent.leparisien.fr/Variance%20(statistiques%20et%20probabilit%C3%A9s)/fr-fr/>
+* <http://michel.quercia.free.fr/probabilit%C3%A9s/probas.pdf>
 
 Distributions
 

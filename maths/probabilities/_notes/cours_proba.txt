@@ -1,7 +1,23 @@
+Indicatrice
+
+$\mathbb{1}_{ B }$ est appelé l'indicatrice de B.
+
+3.1 Fonction de répartition
+******************************
+
+Théorème de transfert
+	Le théorème de transfert consiste à prendre une variable aléatoire, lui
+	appliquer une fonction et obtenir une nouvelle valeur aléatoire.
+
+	\mathbb{E}(g(X)) = \sum_{i} g(x_i) \mathbb{P}(X = x_i)
+
 -------> Espérance et variance
 
 variable centrée réduite
 Y = (X - mu)/sigma
+
+– Si X admet une variance non nulle, la variable X^* = (X − μX)/σ_X
+est appelée variable centrée et réduite associée à X.
 
 Ainsi, toute répartition statistique définie par une moyenne et un écart-type peut être transformée en
 une autre distribution statistique souvent plus simple à analyser.
