@@ -136,6 +136,7 @@ Let's dig more into it
 * [Cumulative distribution function](continuous/cdf.md)
 * [Expected value and variance](continuous/moments.md)
 * [Moment-generating function](continuous/mgf.md)
+* the idea behind the independence is the same
 
 <hr class="sr">
 
