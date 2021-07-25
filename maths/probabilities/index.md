@@ -122,14 +122,16 @@ by
 \[
 \displaylines{
 \mathbb{P}(x \in X) = \int_{x \in \Delta X}^{} f_X(x)dx \\
-or\ \mathbb{P}(a \le X \le b) = \int_{a}^{b} f_X(x)dx
+or\ \mathbb{P}(a \le X \le b) = \int_{a}^{b} f_X(x)dx \\
+or\ \mathbb{P}(x \le a) = \mathbb{P}(x \lt a) = \int_{a}^{+\infty} f_X(x)dx \\
+or\ \mathbb{P}(x \ge b) = \mathbb{P}(x \gt b) = \int_{-\infty}^{b} f_X(x)dx
 }
 \]
 </div>
 
 The density function **is valid if**
 
-* $\int_{-\infty}^{+\infty} fxdx = 1$.
+* $\int_{-\infty}^{+\infty} f_X(x)dx = 1$.
   <span class="tms">
   Sometimes
   you have some restrictions like $\lambda>0$ so you can
