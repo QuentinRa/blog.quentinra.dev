@@ -175,6 +175,9 @@ $\mathbb{P}(X = x_i,\ Y = y_j)$.
 
 * [Contingency table](jp/table.md)
 * [Marginal Distribution](jp/marginal.md)
+* [Conditional probability distribution](jp/cpd.md)
+* the independence between two distributions
+  is defined like the independence between two variables.
 
 <hr class="sl">
 
@@ -187,6 +190,8 @@ We usually write $X \sim L$
 that you should read as
 "X follows a L distribution" (with L a distribution
 like Poisson/...).
+
+Discrete distributions
 
 * [Bernoulli distribution](dist/bernoulli.md)
 * [Binomial distribution](dist/binom.md)
@@ -208,6 +213,7 @@ like Poisson/...).
 * <https://towardsdatascience.com/moment-generating-function-explained-27821a739035>
 * <https://math.stackexchange.com/questions/597008/exponential-distribution-moment-generating-function-to-find-the-mean>
 * <https://en.wikipedia.org/wiki/Chebyshev%27s_inequality>
+* <https://en.wikipedia.org/wiki/Conditional_expectation>
 
 Distributions
 
