@@ -79,6 +79,19 @@ We are defining $\mathbb{P}(X=k)$ the probability that a random variable
 * we may add a number $w$: $\mathbb{P}(X_w=k)$
   if someone is using lazy naming like $X_1$, $X_2$, ...
 
+We are calling **mass function** (`Fonction de masse`)
+the function giving us the value for $\mathbb{P}(X=k)$.
+A mass function is valid if
+
+* the sum of the probabilities is **1**
+* probabilities are in $[0,1]$
+
+A lot of persons are also calling this
+function the density function (implicitly
+"discrete density function") but I think
+this is confusing since the density function
+is associated with continuous variables.
+
 Let's dig more into it
 
 * [Calculate a discrete probability](discrete/calculate.md)
@@ -86,15 +99,7 @@ Let's dig more into it
 * [Independence](discrete/independence.md)
 * [Expected value E(X)](discrete/expected-value.md)
 * [Variance V(X)](discrete/variance.md)
-
-And here are some well-known distributions
-(also called ``Fonctions`` or ``Lois`` in French)
-
-* [discrete distribution requirements](discrete/dist/requirements.md)
-* [Bernoulli distribution](discrete/dist/bernoulli.md)
-* [Binomial distribution](discrete/dist/binom.md)
-* [Poisson distribution](discrete/dist/poisson.md)
-* [Geometric distribution](discrete/dist/geometric.md)
+* [Cumulative distribution function](discrete/cdf.md)
 
 Now practice,
 
@@ -149,6 +154,18 @@ Let's dig more into it
 * the idea behind the independence is the same
 
 <hr class="sr">
+
+## Distributions
+
+Here are some well-known distributions
+(Functions/Laws also called ``Fonctions`` or ``Lois`` in French)
+
+* [Bernoulli distribution](discrete/dist/bernoulli.md)
+* [Binomial distribution](discrete/dist/binom.md)
+* [Poisson distribution](discrete/dist/poisson.md)
+* [Geometric distribution](discrete/dist/geometric.md)
+
+<hr class="sl">
 
 ## Sources
 
