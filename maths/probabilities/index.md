@@ -157,14 +157,19 @@ Let's dig more into it
 
 ## Joint probability
 
-We are calling  Joint probability distribution (X,Y)
-or ``loi d’un couple/conjointe``
+We are calling Joint probability distribution (X,Y)
+or ``loi d’un couple/conjointe`` a distribution
+of two (or more) variables jointed.
+
+The joint mass function is
 
 @
 \forall{i,j}\hspace{1cm} \mathbb{P}(X = x_i \cap Y = y_j)
 @
 
-The usual distribution properties must be fulfilled
+the joint density function is a bit complicated but
+that's the same idea but using the repartition function.
+Still, the usual distribution properties must be fulfilled
 
 * the sum of all probabilities is **1**
 * all values are in $[0,1]$
