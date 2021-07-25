@@ -54,6 +54,9 @@ If that's the case, then that's a conditional probability.
 \mathbb{P}(A|B) := \mathbb{P}_B(A) := \text{"Given B, what's the probability of A?"}
 @
 
+$\mathbb{P}(A|B)$ may also be written
+$P_B(A)$ or $P(B \wedge A)$ (rarely used).
+
 <hr class="sr">
 
 ## Bayes formula
