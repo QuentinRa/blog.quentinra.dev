@@ -50,12 +50,14 @@ If that's the case, then that's a conditional probability.
 @
 \mathbb{P}(A|B) := \frac{\mathbb{P}(A \cap B)}{\mathbb{P}(B)}
 @
-@
-\mathbb{P}(A|B) := \mathbb{P}_B(A) := \text{"Given B, what's the probability of A?"}
-@
 
 $\mathbb{P}(A|B)$ may also be written
 $P_B(A)$ or $P(B \wedge A)$ (rarely used).
+
+**Properties**
+
+* $\mathbb{P}(\overline{A}|B) = 1 - \mathbb{P}(A|B)$
+* $\mathbb{P} (B \cup C|A) = \mathbb{P}(B|A) + \mathbb{P}(C|A) − \mathbb{P}(B ∩ C|A)$
 
 <hr class="sr">
 
@@ -118,9 +120,9 @@ For instance if $n=4$, we got
 \[
 \mathbb{P}(A_4 \cap A_3 \cap A_2 \cap A_1) 
 =
-\mathbb{P}(A_4|\ A_3 \cap A_2 \cap A_1) * 
-\mathbb{P}(A_3|\ A_2 \cap A_1) * 
-\mathbb{P}(A_2|\ A_1) * 
-\mathbb{P}(A_1)
+\mathbb{P}(A_1) *
+\mathbb{P}(A_2|\ A_1) *
+\mathbb{P}(A_3|\ A_2 \cap A_1) *
+\mathbb{P}(A_4|\ A_3 \cap A_2 \cap A_1)
 \]
 </div>
