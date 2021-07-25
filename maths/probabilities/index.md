@@ -160,10 +160,10 @@ Let's dig more into it
 Here are some well-known distributions
 (Functions/Laws also called ``Fonctions`` or ``Lois`` in French)
 
-* [Bernoulli distribution](discrete/dist/bernoulli.md)
-* [Binomial distribution](discrete/dist/binom.md)
-* [Poisson distribution](discrete/dist/poisson.md)
-* [Geometric distribution](discrete/dist/geometric.md)
+* [Bernoulli distribution](dist/bernoulli.md)
+* [Binomial distribution](dist/binom.md)
+* [Poisson distribution](dist/poisson.md)
+* [Geometric distribution](dist/geometric.md)
 
 <hr class="sl">
 
