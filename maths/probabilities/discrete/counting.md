@@ -11,7 +11,7 @@ Let's says we have
 * a set ``E`` having `k` elements
 * we are picking ``n`` elements in `E`
 
-**Note**: no repetition means that's you once
+**Note**: no repetition/replacement means that's you once
 you picked a value in ``E``, you are not putting it
 back. The size of ``E`` keeps decreasing.
 
@@ -29,7 +29,7 @@ We are distinguishing
 
 <hr class="sr">
 
-## Ordered distribution (no repetition)
+## Ordered distribution (no repetition/replacement)
 
 Since k is decreasing by 1, it's a factorial ($5!=5\*4\*3\*2\*1$).
 
@@ -63,7 +63,7 @@ words can we create with the letters of Mississippi?".
 
 <hr class="sl">
 
-## Ordered distribution (with repetition)
+## Ordered distribution (with repetition/replacement)
 
 @
 k^n
@@ -74,13 +74,13 @@ sure that you are not inverting $k$ and $n$.
 
 <hr class="sr">
 
-## unordered distribution (no repetition)
+## unordered distribution (no repetition/replacement)
 
 @
 \frac{k!}{(k-n)!} * n!
 @
 
-It's the same as "Ordered distribution (no repetition)"
+It's the same as "Ordered distribution (no repetition/replacement)"
 but let's say you got this $[1,2,3]$ among your
 results, then you got
 
@@ -94,7 +94,7 @@ results, then you got
 
 <hr class="sl">
 
-## unordered distribution (with repetition)
+## unordered distribution (with repetition/replacement)
 
 @
 C^{k-1}_{n+k-1} = \frac{(n+k-1)!}{(k-1)! * n!}
