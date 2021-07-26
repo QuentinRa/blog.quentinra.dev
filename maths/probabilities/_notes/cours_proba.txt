@@ -7,17 +7,7 @@ Théorème de transfert
 
 	\mathbb{E}(g(X)) = \sum_{i} g(x_i) \mathbb{P}(X = x_i)
 
-----> fonction caractéristique
-
-Indicatrice
-
-$\mathbb{1}_{ B }$ est appelé l'indicatrice de B.
-
-La fonction caractéristique de A, ou fonction
-indicatrice de A, est définie tel 1_A(x) = 1 si x in A sinon 0
-
-Avant de donner une démonstration à la manière de l'ingénieur du théorème central limite, introduisons
-d'abord le concept de "fonction caractéristique" qui tient une place centrale en statistiques.
+-------
 
 rond_barré_x (k) = E[e^{ikX}].
 
