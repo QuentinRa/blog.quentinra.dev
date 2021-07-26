@@ -184,6 +184,7 @@ Discrete distributions
 
 Continuous distributions
 
+* [Normal distribution](dist/normal.md)
 * [Continuous Uniform distribution](dist/uniform-c.md)
 * [Exponential distribution](dist/exp.md)
 
@@ -223,10 +224,11 @@ Distributions
 * <https://en.wikipedia.org/wiki/Joint_probability_distribution>
 * <https://en.wikipedia.org/wiki/Bernoulli_distribution>
 * <https://en.wikipedia.org/wiki/Binomial_distribution>
- * <https://en.wikipedia.org/wiki/Discrete_uniform_distribution>
+* <https://en.wikipedia.org/wiki/Discrete_uniform_distribution>
 * <https://en.wikipedia.org/wiki/Geometric_distribution>
 * <https://en.wikipedia.org/wiki/Hypergeometric_distribution>
 * <https://en.wikipedia.org/wiki/Poisson_distribution>
+* <https://en.wikipedia.org/wiki/Normal_distribution>
 * <https://en.wikipedia.org/wiki/Continuous_uniform_distribution>
 * <https://en.wikipedia.org/wiki/Exponential_distribution>
 
