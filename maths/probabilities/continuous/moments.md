@@ -5,7 +5,7 @@
 The expected value $\mathbb{E}(X)$ is defined by
 
 @
-\mathbb{E}[X] = \int_{-\infty}^{+\infty} xf(x)dx
+\mathbb{E}[X] = \int_{-\infty}^{+\infty} xf_X(x)dx
 @
 
 * if the density function is not integrable, then
@@ -20,5 +20,5 @@ The expected value $\mathbb{E}(X)$ is defined by
 The variance $V(X)$ is defined by
 
 @
-V[X] = \int_{-\infty}^{+\infty} (x-\mathbb{E}[X])^2f(x)dx
+V[X] = \int_{-\infty}^{+\infty} (x-\mathbb{E}[X])^2\ f_X(x)\ dx
 @
