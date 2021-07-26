@@ -22,7 +22,7 @@
             <td>$\mathbb{P}(X=k) = p^k * (1-p)^{1-k}$</td>
             <td>$p$</td>
             <td>$p * (1-p)$</td>
-            <td></td>
+            <td>$1-p$</td>
             <td>$(1-p)+p*e^t$</td>
         </tr>
         <tr>
@@ -31,7 +31,7 @@
             <td>$\mathbb{P}(X=k) =  C_n^k * p^k * (1-p)^{n-k}$</td>
             <td>$n*p$</td>
             <td>$n * p * (1-p)$</td>
-            <td></td>
+            <td>messy</td>
             <td>$((1-p)+p*e^t)^n$</td>
         </tr>
         <tr>
@@ -40,7 +40,7 @@
             <td>$\mathbb{P}(X=k) = \frac{1}{b-a+1}$</td>
             <td>$\frac{a+b}{2}$</td>
             <td>$\frac{(b-a)(b-a+2)}{12}$</td>
-            <td></td>
+            <td>$\frac{\lfloor k\rfloor-a+1}{b-a+1}$</td>
             <td>messy</td>
         </tr>
         <tr>
@@ -49,7 +49,7 @@
             <td>$\mathbb{P}(X=k) = \frac{1}{n}$</td>
             <td>$\frac{n+1}{2}$</td>
             <td>$\frac{n^2 - 1}{12}$</td>
-            <td></td>
+            <td>$\frac{\lfloor k\rfloor}{n}$</td>
             <td>messy</td>
         </tr>
         <tr>
@@ -61,7 +61,7 @@
             <td>$\mathbb{P}(X=k) = (1-p)^{k-1} * p$</td>
             <td>$\frac{1}{p}$</td>
             <td>$\frac{1-p}{p^2}$</td>
-            <td></td>
+            <td>$1-(1-p)^k$</td>
             <td>$\frac{p * e^t}{1-(1-p) * e^t}$</td>
         </tr>
         <tr>
@@ -73,7 +73,7 @@
             <td>$\mathbb{P}(X=k) = {{{K \choose k}{{N-K} \choose {n-k}}} \over {N \choose n}}$</td>
             <td>$\frac{K}{N}$</td>
             <td>$\mathbb{E}(X) * (1 - \frac{K}{N}) * \frac{N-n}{N-1}$</td>
-            <td></td>
+            <td>messy</td>
             <td>messy</td>
         </tr>
         <tr>
@@ -85,7 +85,7 @@
             <td>$\mathbb{P}(X=k) = \frac{\lambda^k *  e^{-\lambda}}{k!}$</td>
             <td>$\lambda$</td>
             <td>$\lambda$</td>
-            <td></td>
+            <td>messy</td>
             <td>$e^{\lambda * (e^{t}-1)}$</td>
         </tr>
     </tbody>
