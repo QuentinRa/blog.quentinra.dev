@@ -1,11 +1,3 @@
-Loi normale centée réduite, N(0,1) à pour densité
-
-.. math::
-
-	f(x) = \frac{1}{\sqrt{2\pi}} e^{-\frac{1}{2} x^2}
-
-On utilise généralement la forme :math:`\frac{X-m}{\sigma}` pour centrer réduire la loi.
-
 3.3.4 Loi de Cauchy
 -------------------------------------
 
