@@ -9,7 +9,7 @@ require a probability $p$
 and $n$, relatively high to $p$
 giving the parameter $\lambda = n*p$.
 
-* The density function is $\mathbb{P}(X=k) = \frac{\lambda^k *  e^{-\lambda}}{k!}$
+* The mass function is $\mathbb{P}(X=k) = \frac{\lambda^k *  e^{-\lambda}}{k!}$
 * $E(X) = \lambda$
 * $V(X) = \lambda$
 

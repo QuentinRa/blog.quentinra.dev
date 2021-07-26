@@ -177,13 +177,14 @@ Discrete distributions
 
 * [Bernoulli distribution](dist/bernoulli.md)
 * [Binomial distribution](dist/binom.md)
-* [Discrete Uniform distribution](dist/uniform.md)
+* [Discrete Uniform distribution](dist/uniform-d.md)
 * [Hypergeometric distribution](dist/hyper-geometric.md)
+* [Geometric distribution](dist/geometric.md)
+* [Poisson distribution](dist/poisson.md)
 
 Continuous distributions
 
-* [Geometric distribution](dist/geometric.md)
-* [Poisson distribution](dist/poisson.md)
+* [Continuous Uniform distribution](dist/uniform-c.md)
 
 <hr class="sr">
 
