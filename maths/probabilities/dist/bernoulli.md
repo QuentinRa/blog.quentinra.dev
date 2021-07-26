@@ -3,12 +3,12 @@
 [Go back](..)
 
 Bernoulli is used when a random variable is either 0 or 1
-(like flipping a coin).
+(like flipping a coin), also called binary variable.
 
-This distribution $Ber(n,p)$ represents the probability
-of success on $n$ trials with a probability of $p$.
+This distribution $B(p)$ represents the probability
+of $k$ successes with a probability of $p$.
 
-* The mass function is $\mathbb{P}(X=k) = p^k * (1-p)^{n-k}$
+* The mass function is $\mathbb{P}(X=k) = p^k * (1-p)^{1-k}$
 * $\mathbb{E}(X) = \ p$
 * $\mathbb{V}(X) = \ p * (1-p)$
 
