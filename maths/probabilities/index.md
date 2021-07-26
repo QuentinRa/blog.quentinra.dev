@@ -185,7 +185,11 @@ of random variables while we are calling n variables
 a vector/`vecteur` of
 random variables.
 
-* [Bi-variate distribution](jp/bi-variate.md)
+The name Bi-variate distribution is used to the
+joint distribution of two variables. The opposite
+would be Multi-variate distribution.
+
+* [Bi-variate distribution tip](jp/bi-variate.md) (if the cardinals are small)
 * [Marginal Distribution](jp/marginal.md)
 * [Conditional Distribution](jp/conditional.md)
 
