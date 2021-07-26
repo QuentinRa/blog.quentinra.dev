@@ -191,6 +191,7 @@ would be Multi-variate distribution.
 
 * [Bi-variate distribution tip](jp/bi-variate.md) (if the cardinals are small)
 * [Marginal Distribution](jp/marginal.md)
+* [Moments, Independence, ...](jp/props.md)
 * [Conditional Distribution](jp/conditional.md)
 
 <hr class="sl">
