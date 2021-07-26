@@ -7,17 +7,6 @@ Théorème de transfert
 
 	\mathbb{E}(g(X)) = \sum_{i} g(x_i) \mathbb{P}(X = x_i)
 
--------> Espérance et variance
-
-variable centrée réduite
-Y = (X - mu)/sigma
-
-– Si X admet une variance non nulle, la variable X^* = (X − μX)/σ_X
-est appelée variable centrée et réduite associée à X.
-
-Ainsi, toute répartition statistique définie par une moyenne et un écart-type peut être transformée en
-une autre distribution statistique souvent plus simple à analyser.
-
 ----> fonction caractéristique
 
 Indicatrice
