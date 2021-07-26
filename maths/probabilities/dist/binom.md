@@ -5,7 +5,7 @@
 The binomial distribution $B(n,p)$ represents the probability
 of success on $n$ trials with a probability of $p$.
 
-The mass function is
+* The mass function is
 
 <div>
 \[
@@ -16,21 +16,20 @@ The mass function is
 \]
 </div>
 
-Note that $k$ is the number of successes you are
-expecting.
+* $\mathbb{E}(X) = \ n * p$
+* $\mathbb{V}(X) = \ n * p * (1-p)$
 
-> How are you reading that?
-> 
-> Having $k$ successes on $n$ trials means that
+> The probability
+> of having $k$ successes on $n$ trials means that
 > 
 > * we got $k$ successes
-> * we got $n-k$ fails (the remaining trials)
+> * we got $n-k$ failures (the remaining trials)
 > 
-> So we have
+> So we have the probability
 > 
 > * $p^k$ because we want $k$ successes with
 > p the probability of success
-> * $(1-p)^(n-k)$ because we want $n-k$ failures
-> and (1-p) if the probability of failure.
+> * $(1-p)^{(n-k)}$ because we want $n-k$ failures
+> and $1-p$ if the probability of failure.
 > * and since we don't care about the order, we need
 > to multiply by the permutations $C_n^k$
