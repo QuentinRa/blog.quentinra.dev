@@ -178,13 +178,14 @@ Discrete distributions
 * [Bernoulli distribution](dist/bernoulli.md)
 * [Binomial distribution](dist/binom.md)
 * [Discrete Uniform distribution](dist/uniform-d.md)
-* [Hypergeometric distribution](dist/hyper-geometric.md)
 * [Geometric distribution](dist/geometric.md)
+* [Hypergeometric distribution](dist/hyper-geometric.md)
 * [Poisson distribution](dist/poisson.md)
 
 Continuous distributions
 
 * [Continuous Uniform distribution](dist/uniform-c.md)
+* [Exponential distribution](dist/exp.md)
 
 <hr class="sr">
 
@@ -222,11 +223,11 @@ Distributions
 * <https://en.wikipedia.org/wiki/Joint_probability_distribution>
 * <https://en.wikipedia.org/wiki/Bernoulli_distribution>
 * <https://en.wikipedia.org/wiki/Binomial_distribution>
-* <https://en.wikipedia.org/wiki/Poisson_distribution>
+ * <https://en.wikipedia.org/wiki/Discrete_uniform_distribution>
 * <https://en.wikipedia.org/wiki/Geometric_distribution>
-* <https://en.wikipedia.org/wiki/Exponential_distribution>
 * <https://en.wikipedia.org/wiki/Hypergeometric_distribution>
-* <https://en.wikipedia.org/wiki/Discrete_uniform_distribution>
+* <https://en.wikipedia.org/wiki/Poisson_distribution>
 * <https://en.wikipedia.org/wiki/Continuous_uniform_distribution>
+* <https://en.wikipedia.org/wiki/Exponential_distribution>
 
 [other references](refs.md)
