@@ -12,6 +12,7 @@ The expected value $\mathbb{E}(X)$ is defined by
   the expected value do not exists
 * if $\mathbb{E}(X) = 0$ then $X$ is centered 
 * if $\mathbb{E}(X)$ if finite then $X$ may be centered
+* $\mathbb{E}[X * Y] = \int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} x * y * f_{XY}(x , y)\ dx dy$
 
 <hr class="sr">
 

@@ -29,6 +29,7 @@ Notes
 * Positive: $\mathbb{E}(X) \ge 0$ <span class="tms">(if X is a positive v.a.d.)</span>
 * Increasing: $X \ge Y$, $\mathbb{E}(X) \ge \mathbb{E}(Y)$
 * If X,Y independent: $\mathbb{E}[X * Y] = \mathbb{E}[X] * \mathbb{E}[Y]$
+* else: $\mathbb{E}[X * Y] = \sum_{i,j} x_i * y_i * p_{ij}$
 * $\mathbb{E}[c] = c$
 
 Note that $[X,Y]$ means $X$ **and** $Y$.
