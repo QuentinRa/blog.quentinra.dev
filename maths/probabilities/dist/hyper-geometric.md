@@ -3,7 +3,7 @@
 [Go back](..)
 
 The HyperGeometric distribution
-$H(N, k, n)$ is taking
+$H(N, K, n)$ is taking
 
 * $n$ number of trials/draws
 * $K$ number of successes
