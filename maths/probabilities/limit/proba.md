@@ -9,7 +9,8 @@ The sequence $X_n$ converges in probability if
 \mathbb{P}(\lim_{n \to+ \infty} |X_n-x| \gt \epsilon) = 0
 @
 
-It's that's the case, the notation is
+It's that's the case then $x$ is a constant $c$
+and the notation is
 
 @
 X_n \xrightarrow{p} c

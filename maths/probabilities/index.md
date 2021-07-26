@@ -237,7 +237,7 @@ We 4 notions of convergence
 * [Almost sure convergence](limit/as.md)
 * [Convergence in probability](limit/proba.md)
 * [Convergence in distribution](limit/dist.md)
-* [Convergence in (quadratic) mean](limit/mean.md)
+* [Convergence in (quadratic/square) mean](limit/mean.md)
 
 <hr class="sl">
 
