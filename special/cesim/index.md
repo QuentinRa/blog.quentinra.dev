@@ -214,3 +214,4 @@ And what the teacher gave us
 * strategy, future developments, goals
 * means used to reach your goals (marketing...)
 * compare the strategy expected and what happened
+* <https://www.random.org/> (from $8$ to $12$, $\pm\ 2$)
