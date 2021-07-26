@@ -62,7 +62,7 @@ X. The probability
 outside the support is 0. You can use that to make a sum
 on the support.
 
-<hr class="sl">
+<hr class="sr">
 
 ## Discrete probability
 
@@ -106,7 +106,7 @@ Now practice,
 
 * [Exercises](discrete/exercises.md)
 
-<hr class="sr">
+<hr class="sl">
 
 ## Continuous probability
 
@@ -239,6 +239,11 @@ We 4 notions of convergence
 * [Convergence in distribution](limit/dist.md)
 * [Convergence in (quadratic/square) mean](limit/mean.md)
 
+And according to the 
+Central limit theorem/``Théorème de la limite centrale``,
+a sequence of random variables when $n \to +\infty$
+converges to a normal distribution.
+
 <hr class="sl">
 
 ## CheatSheet
@@ -256,6 +261,9 @@ And here is a summary of all [distributions](dist/summary.md).
 
 ## Sources
 
+This is a list of all wikipedia pages that you may
+want to check
+
 * <https://en.wikipedia.org/wiki/Expected_value>
 * <https://en.wikipedia.org/wiki/Variance>
 * <https://en.wikipedia.org/wiki/Chebyshev%27s_inequality>
@@ -264,8 +272,6 @@ And here is a summary of all [distributions](dist/summary.md).
 * <https://en.wikipedia.org/wiki/Quantile_function>
 * <https://en.wikipedia.org/wiki/Moment-generating_function>
 * <https://en.wikipedia.org/wiki/Indicator_function>
-* <https://towardsdatascience.com/moment-generating-function-explained-27821a739035>
-* <https://math.stackexchange.com/questions/597008/exponential-distribution-moment-generating-function-to-find-the-mean>
 * <https://en.wikipedia.org/wiki/Chebyshev%27s_inequality>
 * <https://en.wikipedia.org/wiki/Conditional_expectation>
 

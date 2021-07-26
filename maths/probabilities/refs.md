@@ -2,6 +2,8 @@
 
 MGF
 
+* <https://towardsdatascience.com/moment-generating-function-explained-27821a739035>
+* <https://math.stackexchange.com/questions/597008/exponential-distribution-moment-generating-function-to-find-the-mean>
 * <http://www.maths.qmul.ac.uk/~bb/MS_Lectures_5and6.pdf>
 * <https://web.ma.utexas.edu/users/gordanz/notes/mgf_color.pdf>
 * <https://web.stanford.edu/class/cme241/lecture_slides/MGF.pdf>
