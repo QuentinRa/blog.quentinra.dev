@@ -239,10 +239,6 @@ We 4 notions of convergence
 * [Convergence in distribution](limit/dist.md)
 * [Convergence in (quadratic) mean](limit/mean.md)
 
-[comment]: <> (* Law of large numbers)
-
-[comment]: <> (* Central limit theorem)
-
 <hr class="sl">
 
 ## CheatSheet
