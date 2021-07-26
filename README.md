@@ -51,7 +51,8 @@ how you should do it.
 **Website**
 
 * [ ] add create course page/button
-* [ ] add go back to #titleID
+* [ ] add go back to #titleID instead of #linkID
+* [ ] replace all goBack by goBackWithID
 * [ ] replace all div by hr
 
 **Next content**
@@ -59,7 +60,6 @@ how you should do it.
 * [ ] Complete C course
 * [ ] Complete Java course (notes, javafx)
 * [ ] Complete Statistics course
-* [ ] Complete Probabilities course
 * [ ] Complete R course
 * [ ] Graphs course
 * [ ] First-order logic course
