@@ -17,7 +17,7 @@ We got the second formula with [Huygens theorem](https://fr.wikipedia.org/wiki/T
 
 **Properties**
 
-* $V(X) = \sigma^2$ with sigma the standard deviation
+* $V(X) = \sigma^2$ with sigma the standard deviation/`écart-type`
 * $V(\lambda X^2) = \lambda^2 V(X)$
 * $V(c) = 0$ <span class="tms">(or if $V(X)=0$ then X is a constant)</span>
 * $V(a + \lambda X^2) = \lambda^2 V(X)$
