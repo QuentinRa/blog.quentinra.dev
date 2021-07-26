@@ -196,6 +196,8 @@ read them yet through.
 * [probability-and-statistics](https://github.com/shervinea/stanford-cme-106-probability-and-statistics)
 * [cheatsheet-probability](https://stanford.edu/~shervine/teaching/cme-106/cheatsheet-probability)
 
+And here is a summary of all [distributions](dist/summary.md).
+
 <hr class="sl">
 
 ## Sources
