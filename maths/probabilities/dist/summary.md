@@ -91,3 +91,42 @@
     </tbody>
 </table>
 </div>
+
+<div class="d-print-table table-responsive">
+<table class="table table-bordered table table-striped">
+    <thead>
+        <tr>
+            <th style="min-width: 50px;">Name</th>
+            <th style="min-width: 150px;">Desc</th>
+            <th>PMF/PDF</th>
+            <th>$\mathbb{E}$</th>
+            <th>$\mathbb{V}$</th>
+            <th>CDF</th>
+            <th>MGF</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Continuous uniform distribution $U([a,b])$</td>
+            <td>All outcome have the same probability.</td>
+            <td>$f_X(x) = \frac{1}{b-a}$</td>
+            <td>$\frac{a+b}{2}$</td>
+            <td>$\frac{(b-a)^2}{12}$</td>
+            <td>messy</td>
+            <td>messy</td>
+        </tr>
+        <tr>
+            <td>Standard uniform distribution $U([0,1])$</td>
+            <td>
+                Everything is the same as the uniform
+                distribution.
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+</div>
