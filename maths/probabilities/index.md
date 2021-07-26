@@ -71,7 +71,8 @@ then we are using discrete probabilities.
 That means the support is
 in $\mathbb{N}$ or $\mathbb{Z}$.
 
-We are defining $\mathbb{P}(X=k)$ the probability that a random variable 
+We are defining $\mathbb{P}(X=k)$ 
+the probability that a discrete random variable 
 (``variable aléatoire discrète``, v.a.d.) $X$ is taking the value $k$.
 
 * We could write $P(X = 1) = y$ for a dice where y is
@@ -146,7 +147,8 @@ The density function **is valid if**
 * $\forall{x},\ f(x) \ge 0$
 * the function is continue
 
-Let's dig more into it
+The random variable $X$ is called continuous
+random variable (`variable aléatoire continue/réelle`).
 
 * [Cumulative distribution function](continuous/cdf.md)
 * [Expected value and variance](continuous/moments.md)
@@ -155,34 +157,9 @@ Let's dig more into it
 
 <hr class="sr">
 
-## Joint probability (NEED TO BE REMADE :3)
+## Joint probability
 
-We are calling Joint probability distribution (X,Y)
-or ``loi d’un couple/conjointe`` a distribution
-of two (or more) variables jointed.
-
-The joint mass function is
-
-@
-\forall{i,j}\hspace{1cm} \mathbb{P}(X = x_i \cap Y = y_j)
-@
-
-the joint density function is a bit complicated but
-that's the same idea but using the repartition function.
-Still, the usual distribution properties must be fulfilled
-
-* the sum of all probabilities is **1**
-* all values are in $[0,1]$
-
-Note that $\mathbb{P}(X = x_i \cap Y = y_j)$
-is also written $\mathbb{P}(x_i,\ y_j)$ or
-$\mathbb{P}(X = x_i,\ Y = y_j)$.
-
-* [Contingency table](jp/table.md)
-* [Marginal Distribution](jp/marginal.md)
-* [Conditional probability distribution](jp/cpd.md)
-* the independence between two distributions
-  is defined like the independence between two variables.
+...
 
 <hr class="sl">
 
