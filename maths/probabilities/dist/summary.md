@@ -120,28 +120,28 @@ Continuous distributions
             <td>messy</td>
         </tr>
         <tr>
-            <td>Standard uniform distribution $U([0,1])$</td>
-            <td>
-                Everything is the same as the uniform
-                distribution.
-            </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
             <td>Exponential distribution $E(\lambda)$</td>
             <td>
-                Everything is the same as the uniform
-                distribution.
+                ???
             </td>
             <td>$f_X(x) = \lambda e^{-\lambda{x}}$</td>
             <td>$\frac{1}{\lambda}$</td>
             <td>$\frac{1}{\lambda^2}$</td>
             <td>$1-e^{-\lambda x}$</td>
             <td>$\frac{\lambda}{\lambda-t}$</td>
+        </tr>
+        <tr>
+            <td>Normal/Gaussian distribution $N(\mu, \sigma^2)$</td>
+            <td>
+                mu ($\mu$) is the mean and
+                sigma ($\sigma$) is the standard
+                deviation.
+            </td>
+            <td>$f_X(x) = {\frac {1}{\sigma {\sqrt {2\pi }}}}e^{-{\frac {1}{2}}\left({\frac {x-\mu }{\sigma }}\right)^{2}}$</td>
+            <td>$\mu$</td>
+            <td>$\sigma^2$</td>
+            <td>$messy$</td>
+            <td>$e^{\mu t+ (\sigma^{2} * t^{2})/2}$</td>
         </tr>
     </tbody>
 </table>
