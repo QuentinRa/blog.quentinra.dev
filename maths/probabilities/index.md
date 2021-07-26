@@ -160,7 +160,17 @@ random variable (`variable aléatoire continue/réelle`).
 
 ## Joint probability
 
-...
+Let X, Y be two random variables. We are defining
+the joint probability $(X,Y) \in X(\Omega) * Y(\Omega)$.
+This notion can be extended to n variables.
+In French, we are calling 2 variables a ``couple``
+of random variables while we are calling n variables 
+a vector/`vecteur` of
+random variables.
+
+* [Joint distribution](jp/joint.md)
+* [Marginal Distribution](jp/marginal.md)
+* [Conditional Distribution](jp/conditional.md)
 
 <hr class="sl">
 
