@@ -185,6 +185,17 @@ Continuous distributions
 * [Geometric distribution](dist/geometric.md)
 * [Poisson distribution](dist/poisson.md)
 
+<hr class="sr">
+
+## CheatSheet
+
+Here are some sheet that I looked up for you. I didn't
+read them yet through.
+
+* [probability_cheatsheet.pdf](https://www.sas.upenn.edu/~astocker/lab/teaching-files/PSYC739-2016/probability_cheatsheet.pdf)
+* [probability-and-statistics](https://github.com/shervinea/stanford-cme-106-probability-and-statistics)
+* [cheatsheet-probability](https://stanford.edu/~shervine/teaching/cme-106/cheatsheet-probability)
+
 <hr class="sl">
 
 ## Sources
