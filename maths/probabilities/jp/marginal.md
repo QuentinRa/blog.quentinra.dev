@@ -1,38 +1,28 @@
-## Marginal probability mass function
+# Marginal Distribution
 
-[Go back](..)
+[Go back](..#joint-probability)
 
-We are calling marginal distribution for discrete
-probabilities for X is
+<hr class="sl">
 
-@
-\mathbb{P}(X=x_i) = 
-\sum_{y_j \in \Delta_Y}
-\mathbb{P}(X=x_i \cap Y=y_j)
-@
+## Discrete Marginal Distribution
 
-and Y it is
+The marginal distribution, `loi marginale`,
+or Marginal probability mass function of X and Y are
 
 @
-\mathbb{P}(Y=y_j) =
-\sum_{x_i \in \Delta_X}
-\mathbb{P}(X=x_i \cap Y=y_j)
+\mathbb{P}(X=x) =
+\sum_{y_i \in Y(\Omega)}
+\mathbb{P}(X=x \cap Y=y_i)
 @
 
-We could describe $\mathbb{P}(X=x_i)$ as the
-joint probability of $X=x_i$ and all the outcomes
-of Y.
+@
+\mathbb{P}(Y=y) =
+\sum_{x_i \in X(\Omega)}
+\mathbb{P}(X=x_i \cap Y=y)
+@
 
 <hr class="sr">
 
-## Marginal probability density function
+## Continuous Marginal Distribution
 
-If we are dealing with continuous random variables,
-then the formula is different
-
-<div>
-\[
-\mathbb{P}((a \le X \le b) \cap (c \le Y \le d))
-= \int_{a}^{b} \int_{c}^{d} f_{XY}(x, y)\ dx\ dy
-\]
-</div>
+...
