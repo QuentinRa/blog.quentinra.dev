@@ -223,6 +223,28 @@ Continuous distributions
 
 <hr class="sr">
 
+## Convergence
+
+We are considering n random variables Y and
+X a variable giving us with a function $f$
+
+@
+X_n = f(Y_1,\ \ldots,\ Y_n)
+@
+
+We 4 notions of convergence
+
+* [Almost sure convergence](limit/as.md)
+* [Convergence in probability](limit/proba.md)
+* [Convergence in distribution](limit/dist.md)
+* [Convergence in (quadratic) mean](limit/mean.md)
+
+[comment]: <> (* Law of large numbers)
+
+[comment]: <> (* Central limit theorem)
+
+<hr class="sl">
+
 ## CheatSheet
 
 Here are some sheet that I looked up for you. I didn't
@@ -234,7 +256,7 @@ read them yet through.
 
 And here is a summary of all [distributions](dist/summary.md).
 
-<hr class="sl">
+<hr class="sr">
 
 ## Sources
 
@@ -264,5 +286,11 @@ Distributions
 * <https://en.wikipedia.org/wiki/Normal_distribution>
 * <https://en.wikipedia.org/wiki/Continuous_uniform_distribution>
 * <https://en.wikipedia.org/wiki/Exponential_distribution>
+
+Convergence
+
+* <https://en.wikipedia.org/wiki/Convergence_of_random_variables>
+* <https://en.wikipedia.org/wiki/Law_of_large_numbers>
+* <https://en.wikipedia.org/wiki/Central_limit_theorem>
 
 [other references](refs.md)
