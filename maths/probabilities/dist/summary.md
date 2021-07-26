@@ -143,6 +143,18 @@ Continuous distributions
             <td>$messy$</td>
             <td>$e^{\mu t+ (\sigma^{2} * t^{2})/2}$</td>
         </tr>
+        <tr>
+            <td>Standard Normal distribution $N(0, 1)$</td>
+            <td>
+                This is a particular case of
+                normal distribution.
+            </td>
+            <td>$f_X(x) = {\frac {1}{\sigma {\sqrt {2\pi }}}}e^{-{\frac {1}{2}}\left({\frac {x-\mu }{\sigma }}\right)^{2}}$</td>
+            <td>$0$</td>
+            <td>$1$</td>
+            <td>$messy$</td>
+            <td>$e^{\mu t+ (\sigma^{2} * t^{2})/2}$</td>
+        </tr>
     </tbody>
 </table>
 </div>
