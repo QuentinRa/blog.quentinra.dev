@@ -56,9 +56,9 @@ function where the sum of all values (=probabilities) is 1.
 It's a function associating each value of
 $\Omega$ to their probability.
 
-We call **support** $\bigtriangleup$ 
-a set where the distribution function is defined
-(=domain). The probability
+We call **support of X** $\bigtriangleup_X$
+or $X(\Omega)$ the domain of the distribution function of
+X. The probability
 outside the support is 0. You can use that to make a sum
 on the support.
 
