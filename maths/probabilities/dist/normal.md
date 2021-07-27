@@ -102,7 +102,7 @@ As for $\phi^{-1}(\alpha)$
 
 * if $\alpha \ge 0.5$, you simply need to find
   the z (sum of line+column) in the table
-  associated with the closest value of $\alpha*
+  associated with the closest value of $\alpha$
 * else $\phi(\alpha) = -\phi(1-\alpha)$
 
 For instance, if $\alpha = 0.95$, then you need
