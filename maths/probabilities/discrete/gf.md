@@ -45,6 +45,12 @@ G(x) = \prod_{j=1}^{m} \sum_{i=k_j}^{n_j} x^i
 * to $n_j$ (the maximum of times you want this value)
 * once you multiplied and factorized the result, $x^n$ if the number of distributions for $n$.
 
+You may also use the other methods
+like explained 
+
+* [here (slides)](https://math.mit.edu/research/highschool/primes/materials/2018/conf/15-1%20Manne.pdf)
+* [here (text)](http://discrete.openmathbooks.org/dmoi2/section-27.html)
+
 <hr class="sl">
 
 ## Example (1)

@@ -2,6 +2,8 @@
 
 MGF
 
+* <http://discrete.openmathbooks.org/dmoi2/section-27.html>
+* <https://math.mit.edu/research/highschool/primes/materials/2018/conf/15-1%20Manne.pdf> 
 * <https://towardsdatascience.com/moment-generating-function-explained-27821a739035>
 * <https://math.stackexchange.com/questions/597008/exponential-distribution-moment-generating-function-to-find-the-mean>
 * <http://www.maths.qmul.ac.uk/~bb/MS_Lectures_5and6.pdf>
