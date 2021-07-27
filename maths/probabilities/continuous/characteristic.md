@@ -51,16 +51,28 @@ used when the MGF (moment generating function) does
 not exists (that's the case for the Cauchy distribution
 but we didn't use it in practice).
 
-We are definining the caracteristic function by
+The characteristic function is
 
 @
 \varphi_X(t)=\mathbb{E}[e^{itX}]
 @
 
-* if $X$ and $Y$ are independent, $\varphi_{X+Y}(x) = \Phi_{X}(x) * \varphi_{Y}(x)$
-* if $X$ and $Y$ are independent, $\log(\varphi_{x+y}(x)) = \log(\varphi_{x}(x)) * \log(\varphi_{y}(x))$
-* $\varphi_X(0) = 1$
-
 Sometimes the symbol $\phi$ (phi) or $\Phi$ (Phi)
 or even $\hat{\mu}$ are used instead
 of $\varphi$ (varphi) but I will trust wikipedia.
+
+* if $X$ and $Y$ are independent, $\varphi_{X+Y}(x) = \Phi_{X}(x) * \varphi_{Y}(x)$
+* if $X$ and $Y$ are independent, $\log(\varphi_{x+y}(x)) = \log(\varphi_{x}(x)) * \log(\varphi_{y}(x))$
+* $\varphi_X(0) = 1$
+* $\varphi_X(-t) = \overline{\varphi_X(t)}$
+* $e^{it} = \cos(t) + i\sin(t)$
+* $\varphi_{aX}(t) = \varphi_{X}(a*t)$
+* $\varphi$ is continuous
+
+Then your function to generate a moment would be
+
+<div>
+\[
+\mathbb{E}(|X^k|) = i^k * \varphi_X^k(0)
+\]
+</div>

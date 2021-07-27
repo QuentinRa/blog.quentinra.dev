@@ -12,6 +12,7 @@ Characteristic function
 
 * <https://www.probabilitycourse.com/chapter6/6_1_4_characteristic_functions.php>
 * <https://encyclopediaofmath.org/index.php?title=Characteristic_function>
+* <https://math.mit.edu/~sheffield/175/Lecture15.pdf>
 
 Books
 
