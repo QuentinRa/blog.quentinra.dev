@@ -146,7 +146,7 @@ The density function **is valid if**
   reduce the interval.
   </span>
 * $\forall{x},\ f(x) \ge 0$
-* the function is continue
+* $f_X$ is continue
 
 The random variable $X$ is called continuous
 random variable (`variable aléatoire continue/réelle`).

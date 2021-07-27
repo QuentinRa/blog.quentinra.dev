@@ -167,3 +167,48 @@ And
 * $\mathbb{E}[W_D] = 1/10 * 10 = 1$
 
 </blockquote>
+
+**Exercise 5 (Distributions)**
+
+We are working with the density function
+$f(x) = \frac{e^{-1}}{x!},\hspace{0.5cm} x = 0,1, 2...$.
+
+1. $P(X=2)$
+
+<blockquote class="spoiler">
+The answer is $\mathbb{P}(X=2) = \frac{e^{-1}}{2!}$.
+</blockquote>
+
+2. $P(X < 2)$
+
+<blockquote class="spoiler">
+The answer is $\mathbb{P}(X < 2) = P(X=0) + P(X=1) = \frac{e^{-1}}{0!} + \frac{e^{-1}}{1!}
+= e^{-1} + e^{-1} = 2 e^{-1}$.
+</blockquote>
+
+3. Demonstrate that $e^{-1}$ is the constant making
+   $\frac{c}{x!}$ a mass function?
+
+<blockquote class="spoiler">
+<div>
+\[
+\begin{split}
+\text{mass function} := \sum_{k=0}^{+\infty} f(k) = 1 \\
+\Leftrightarrow
+\sum_{k=0}^{+\infty} \frac{c}{k!} = 1
+\Leftrightarrow
+c * \sum_{k=0}^{+\infty} \frac{1}{k!} = 1
+\Leftrightarrow^{because\ 1^k = 1}
+c * \sum_{k=0}^{+\infty} \frac{1^k}{k!} = 1\\
+\Leftrightarrow^\text{exponential series}
+c * e = 1 \Leftrightarrow  c = \frac{1}{e} \Leftrightarrow c = e^{-1}\end{split}
+\]
+</div>
+
+We also need to check that the values
+are $\ge 0$ so that $\frac{e^{-1}}{x!} \ge 0$.
+
+Since $x! \ge 0$ (because x \in R^*)
+and $e^{-1} \ge 0$ then the function is a mass
+function.
+</blockquote>
