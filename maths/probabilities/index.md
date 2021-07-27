@@ -28,7 +28,7 @@ will be used in other courses.
 
 You may see/use these too
 
-* an event set of one element (singleton) is called
+* an event of one element (singleton) is called
   an elementary event
 * events that's can't happens simultaneously are
   called incompatible/disjoints/mutually exclusive events ([wiki](https://fr.wikipedia.org/wiki/%C3%89v%C3%A9nements_incompatibles))
