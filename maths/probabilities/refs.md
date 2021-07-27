@@ -8,6 +8,11 @@ MGF
 * <https://web.ma.utexas.edu/users/gordanz/notes/mgf_color.pdf>
 * <https://web.stanford.edu/class/cme241/lecture_slides/MGF.pdf>
 
+Characteristic function
+
+* <https://www.probabilitycourse.com/chapter6/6_1_4_characteristic_functions.php>
+* <https://encyclopediaofmath.org/index.php?title=Characteristic_function>
+
 Books
 
 * ``Statistique et probabilités en économie-gestion by Christophe Hurlin, Valérie Mignon``
