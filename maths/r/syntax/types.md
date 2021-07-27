@@ -7,13 +7,17 @@ In R, all types are vectors.
 * **numeric**: 1, 1.3 
 * **complex**: i
 * **logical**: TRUE, FALSE, T, F
-* **???**: NULL, NA (not defined), Inf (infinite)
+* NULL, NA (not defined), Inf (infinite)
 * **character**: "a text", 'a text'
 * **vector**
 * **matrix**
 * **data.frame** (~=an excel table)
 * **list**: a vector, with named indexes and that
 can have different types
+
+<hr class="sr">
+
+## Types methods
   
 You have a lot of methods for each type, having this
 syntax
@@ -24,6 +28,10 @@ syntax
 * **identical(x,y)**: true if x equals y
 * **as.xxx(x)**: convert x to xxx class
 * **xxx(...)**: create an empty vector having the type xxx
+
+<hr class="sl">
+
+## Examples
 
 ```r
 # create an empty vector of 3 characters
