@@ -37,7 +37,7 @@ You will need
 
 ## Norms
 
-<p><b>A norm is an measure of an error.</b>
+<p><b>A norm is a measure of an error</b>.
 We usually
 used the <code>absolute value</code>
 \(|x-x_{found}|\)
