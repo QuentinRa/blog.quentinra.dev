@@ -40,3 +40,50 @@ simplify since $x \gt 0$ giving us $\int_{0}^{+\infty} f(x) dx = 1$.
 
 So $f(x)$ is a density function.
 </blockquote>
+
+<hr class="sl">
+
+**Exercise 2 (density function)**
+
+Verify that $f(x) = 1 - |x|$
+with $x \in [[-1,1]]$ is a density function.
+
+<blockquote class="spoiler">
+
+We can consider this a sum of two integrals
+from 0 to 1 because of the $|x|$ (absolute value)
+giving us $x \in [[0,1]]$.
+
+@
+2 * \int_{0}^{1} 1 - x
+@
+
+**1. $\forall{x},\ f(x) \ge 0$**
+
+Since $x \in [0,1]$ then $1-x \ge 0$.
+
+**2. $f_X$ is continue**
+
+Both $x$ and $1-x$ are continue.
+
+**3. $\int_{-\infty}^{+\infty} f_X(x)dx = 1$**
+
+<div>
+\[
+\displaylines{
+2 * \int_{0}^{1} 1 - x = 1
+\\ 
+\Leftrightarrow
+2 * [x - \frac{x^2}{2} ]_{0}^{1} = 1
+\\ 
+\Leftrightarrow
+2 * (1 - 0.5 - (0 - 0)) = 1
+\\
+\Leftrightarrow
+2 * 0.5 = 1
+}
+\]
+</div>
+
+So $f(x)$ is a density function.
+</blockquote>
