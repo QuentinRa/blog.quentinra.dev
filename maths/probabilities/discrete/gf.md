@@ -81,3 +81,37 @@ is $6$ etc.
 
 You can develop easily using websites
 like [wolframalpha](https://www.wolframalpha.com/input/?i=%28x%2Bx%5E2%2Bx%5E3%2Bx%5E4%2Bx%5E5%2Bx%5E6%29%5E2).
+
+<hr class="sr">
+
+## Example (2)
+
+You have $n=12$ cakes (chocolate, vanilla, strawberry),
+
+* each person must have at least two flavors
+* and they can't have chocolate more than 4 times
+
+Since we need "at least two", then
+$k_1=k_2=k_3=2$. Aside from $n_1$, we don't
+have restrictions on vanilla/strawberry
+so $n_2=n_3=12$. As for chocolate, $n_1=4$ (since
+"up to" 4).
+
+<div>
+\[
+\sum_{i=2}^{12} x^i *
+\sum_{i=2}^{12} x^i *
+\sum_{i=2}^{4} x^i
+\]
+</div>
+
+is [evaluated](https://www.wolframalpha.com/input/?i=%28x%5E2%2Bx%5E3%2Bx%5E4%2Bx%5E5%2Bx%5E6%2Bx%5E7%2Bx%5E8%2Bx%5E9%2Bx%5E10%2Bx%5E11%2Bx%5E12%29*%28x%5E2%2Bx%5E3%2Bx%5E4%2Bx%5E5%2Bx%5E6%2Bx%5E7%2Bx%5E8%2Bx%5E9%2Bx%5E10%2Bx%5E11%2Bx%5E12%29%28x%5E2%2Bx%5E3%2Bx%5E4%29)
+as
+
+<div class="table-responsive">
+@
+x^{28} + ... + 18 x^{12} + ... + x^6
+@
+</div>
+
+So we have 18 ways of doing your distribution.
