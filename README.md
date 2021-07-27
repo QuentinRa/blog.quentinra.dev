@@ -26,7 +26,7 @@ Provided by `Legendary Games Studio`,
 ## How to contribute
 
 If you want to add a new course, add an entry in
-``.summary``, in the JSON of your category.
+``.summary``, in the JSON of your course category.
 
 ```json
 {
@@ -38,13 +38,13 @@ If you want to add a new course, add an entry in
 ```
 
 If you choose ``info``, then create in
-``/info/`` folder named `course-name`. Then create
+``/info/`` a folder named `course-name`. Then create
 a file ``index.md`` that will be used as the entry
-point for your course.
+point for your course. You may check the others files if you wondering
+how you should write yours.
 
 If you want to edit a course, simply edit the ``.md``
-file. You may check the others files if you wondering
-how you should do it.
+file.
 
 ## TODO List
 
