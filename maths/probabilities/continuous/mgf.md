@@ -12,7 +12,7 @@ to a value, or when the expected value is too complex
 
 <div>
 \[
-\mathbb{E}(|X^k|) = \int |x^k| d F_x(x) = +\infty \hspace{1cm} \text{ :(}
+\mathbb{E}(|X^k|) = \int |x^k|\ F_x(x)\ dx = +\infty \hspace{1cm} \text{ :(}
 \]
 </div>
 
