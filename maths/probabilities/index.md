@@ -62,6 +62,9 @@ X. The probability
 outside the support is 0. You can use that to make a sum
 on the support.
 
+* [Counting techniques](discrete/counting.md)
+* [Generating Functions](discrete/gf.md)
+
 <hr class="sr">
 
 ## Discrete probability
@@ -96,7 +99,6 @@ is associated with continuous variables.
 Let's dig more into it
 
 * [Calculate a discrete probability](discrete/calculate.md)
-* [Counting techniques](discrete/counting.md)
 * [Independence](discrete/independence.md)
 * [Expected value E(X)](discrete/expected-value.md)
 * [Variance V(X)](discrete/variance.md)

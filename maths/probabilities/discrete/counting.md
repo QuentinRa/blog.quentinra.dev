@@ -2,8 +2,8 @@
 
 [Go back](..)
 
-It's ``Dénombrement`` in French. As you saw before
-we are using the cardinal a lot so we must be able
+It's ``Dénombrement`` in French. We are using the 
+cardinal a lot so we must be able
 to count of many elements we got in a set.
 
 Let's says we have
