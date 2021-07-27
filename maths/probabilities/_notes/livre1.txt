@@ -1,12 +1,3 @@
-A^m_n
-est le nombre de suites distinctes à m éléments sans répétition qu’il est possible
-de former avec un ensemble de n éléments
-
-(n p)
-est le nombre de choix possibles de p éléments différents pris dans une collection
-de n objets, indépendamment de l’ordre dans lequel les éléments sont
-choisis.
-
 Formule du binôme de Newton
 
 Soit il reçoit 1 ou 2 bonbons

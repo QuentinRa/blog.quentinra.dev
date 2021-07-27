@@ -156,6 +156,7 @@ random variable (`variable aléatoire continue/réelle`).
 * [Moment-generating function](continuous/mgf.md)
 * the idea behind the independence is the same
 * [Characteristic function](continuous/characteristic.md)
+* [Other notes](continuous/notes.md)
 
 Now practice,
 
