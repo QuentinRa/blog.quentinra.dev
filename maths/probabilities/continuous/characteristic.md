@@ -46,10 +46,10 @@ Can be replaced by
 
 ## In probability theory
 
-I do not have any memory of using that. It seems to be
-used when the MGF (moment generating function) does
+You can use that when the MGF (moment generating function) does
 not exists (that's the case for the Cauchy distribution
-but we didn't use it in practice).
+but we didn't use it in practice)
+or when you have $Y = aX$ or $Y = aX+b$.
 
 The characteristic function is
 
@@ -67,6 +67,7 @@ of $\varphi$ (varphi) but I will trust wikipedia.
 * $\varphi_X(-t) = \overline{\varphi_X(t)}$
 * $e^{it} = \cos(t) + i\sin(t)$
 * $\varphi_{aX}(t) = \varphi_{X}(a*t)$
+* $\varphi_{aX+b}(t) = e^{itb} \varphi_{X}(a*t)$
 * $\varphi$ is continuous
 
 Then your function to generate a moment would be
@@ -74,5 +75,9 @@ Then your function to generate a moment would be
 <div>
 \[
 \mathbb{E}(|X^k|) = i^k * \varphi_X^k(0)
+\hspace{1cm}
+or
+\hspace{1cm}
+\varphi_X(-it) = M_X(t) 
 \]
 </div>
