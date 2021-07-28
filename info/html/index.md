@@ -11,7 +11,7 @@ Just so you know, learning the web starts
 at [w3schools](https://www.w3schools.com/html/default.asp)
 so be sure to check their tutorials.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Introduction
 
@@ -43,7 +43,7 @@ and you got a page!
 </html>
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Tags
 
@@ -65,7 +65,7 @@ Finally, as a side note, you can
 but you should write ``<tagname />`` like this for auto-closable
 tags.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Structure in HTML5
 
@@ -110,7 +110,7 @@ your section like some contact info at the right etc.
 </html>
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Learn the tags I
 
@@ -126,7 +126,7 @@ Some tags used for style/grouping tags later
 * [span](tags/span.md) (ex: color in red a word in a paragraph )
 * [div](tags/div.md) : container to move a group of components
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Learn the tags II
 
@@ -139,7 +139,7 @@ And some basic tags to style a bit your HTML page
 * [Jump a line](style/br.md) with br
 * [Horizontal separator](style/hr.md) with hr
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Learn the tags III
 
@@ -151,7 +151,7 @@ Then you can use some special tags like
 * [Some code](special/code.md) with code and pre
 * [Tables](special/tables.md) using table
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Forms
 
@@ -175,7 +175,7 @@ the data will be hidden, GET means that the data will be shown in the URL.
 * [Learning about POST and GET](forms/post-get.md)
 * [Learning about form input fields](forms/input.md)
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Using the console
 
@@ -189,7 +189,7 @@ tags used inside the page.
 By pressing ``CTRL-SHIFT-C``, you can find the tag
 in the HTML by simply moving your mouse.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## W3 validator
 
@@ -201,7 +201,7 @@ We don't have rules to follows but it's good to hear
 how you could write your code in a better way by following
 developers standards.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Meta tags
 
