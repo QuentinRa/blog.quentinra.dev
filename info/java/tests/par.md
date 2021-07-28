@@ -23,7 +23,7 @@ private static Stream<ArgumentType> method_name1(){
 }
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Example
 
@@ -58,7 +58,7 @@ monTest(3) // from test2 (second value)
 monTest(5) // from test (first value
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 On JUnit4, here some old notes,
 

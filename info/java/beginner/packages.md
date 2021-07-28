@@ -9,7 +9,7 @@ they are imported by default, being in the package `java.lang`)
 but sometimes you will have to import some classes. For that, you should know
 what's a **package**.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Package
 
@@ -39,7 +39,7 @@ package com.lgs.memorize;
 public class Test {}
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Import
 
@@ -70,7 +70,7 @@ import like above then write ``File.createTempFile`` (that's an example).
 import static java.io.File.createTempFile;
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## package.info
 

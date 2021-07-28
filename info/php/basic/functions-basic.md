@@ -13,7 +13,7 @@ Write the text in an argument into the HTML.
 echo "Hello World!";
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 **var_dump**
 
@@ -25,7 +25,7 @@ $a = "15";
 var_dump($a);
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 **define**
 
@@ -44,7 +44,7 @@ const MY_CONSTANT = 5;
 echo MY_CONSTANT; // 5
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 **redirection**
 
@@ -59,7 +59,7 @@ exit();
 Do not forget to exit! And valid path would be like
 ``index.php`` so nothing complicated.
 
-<div class="sr"></div>
+<hr class="sr">
 
 **isset? or empty ?**
 

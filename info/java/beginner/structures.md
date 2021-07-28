@@ -17,7 +17,7 @@ keywords
 * **continue**: skip all following statements and go to the next
 loop turn.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ```java
 if(cond){}
@@ -29,25 +29,25 @@ if(cond){} else if {} else {}
 Or some inline version ``ìnt v = cond? 5 : 7;`` for instance
 where the syntax is ``cond?if_true:if_value``.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ```java
 for(int i=0; i < ... ; i++){}
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ```java
 while (cond) {}
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ```java
 do { } while(cond);
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 Here a new one, the foreach
 
@@ -58,7 +58,7 @@ for (Integer e: new Integer[]{5,6,7}) {
 }
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 Then the switch case
 

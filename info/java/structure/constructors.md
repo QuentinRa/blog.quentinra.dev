@@ -52,7 +52,7 @@ public class Person {
 }
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Static (class) constructor**
 

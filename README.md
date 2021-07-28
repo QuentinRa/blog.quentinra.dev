@@ -55,7 +55,6 @@ Last updated: 2021-07-28
 * [ ] add create course page/button
 * [ ] add go back to #titleID instead of #linkID
 * [ ] replace all goBack by goBackWithID
-* [ ] replace all div by hr
 * [ ] edit: show formulas
 * [ ] edit: open link
 

@@ -26,7 +26,7 @@ Note these two functions
 * ``is_int``: check the type of a variable
   (here int but you got a bunch of functions like this)
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## String specific knowledge
 

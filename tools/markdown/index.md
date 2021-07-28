@@ -11,7 +11,7 @@ simple. Here is a fantastic guide
 > Please do take note that this site is written
 > in Markdown so you will be able to contribute :)
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Titles
 
@@ -29,7 +29,7 @@ The more ``#`` you add, the smaller your title becomes.
 
 **Note**: be sure to leave a space after ``#``
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Basic text
 
@@ -51,7 +51,7 @@ And this is a ~~strikethrough text~~ but not all
 editors support it.
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Lists
 
@@ -81,7 +81,7 @@ a mix of both like this
 **Note**: you may use ``*`` or `-` or `+` for 
 unordered lists.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Code
 
@@ -103,7 +103,7 @@ int main(void){
 ```</code>
 </pre>
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Links and images
 
@@ -118,7 +118,7 @@ or you could create a link
 easily with <https://example.com>
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Table
 
@@ -133,7 +133,7 @@ easily with <https://example.com>
 | tab[5][0] | tab[5][1] |
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Others
 
@@ -171,7 +171,7 @@ syntax
 [//]: # (This may be the most platform-independent comment)
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Sources
 

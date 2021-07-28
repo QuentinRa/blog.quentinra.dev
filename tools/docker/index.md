@@ -7,7 +7,7 @@ create a Docker image.
 Then any machine that has `docker` can run your image, 
 meaning your application can be run everywhere.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Some additional details
 
@@ -21,7 +21,7 @@ Also a downside a ``docker``, that I least stumbled upon was it was quite
 hard and impossible for me to use some system-specific devices such as
 sound (<span class="text-muted small">at least in Windows but in Linux or macOS it seems to be possible</span>).
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Install Docker
 
@@ -37,7 +37,7 @@ then I do so read it here
     * when the application is started, confirmation messages should be shown 
     then you can use ``docker`` commands
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Some commands you need to know
 
@@ -62,7 +62,7 @@ Other commands that one might use
 * ``docker run -p ps:pm tag``: start image and bind port
 of your container ``ps`` with one of your machine `pm`.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Dockerfile
 
@@ -100,7 +100,7 @@ So try to make it like that
 that you may have to download if you don't have it (the `docker pull tag`
 done automatically if you didn't)
 
-<div class="sr"></div>
+<hr class="sr">
 
 ### Most used instructions
 
@@ -133,7 +133,7 @@ be useful
 * [Arguments](tags/args.md)
 * [Directives](tags/directives.md)
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Other
 
@@ -159,7 +159,7 @@ syntax
 directory/
 ````
 
-<div class="sr"></div>
+<hr class="sr">
 
 ### Real docker example 
 
@@ -179,7 +179,7 @@ RUN gcc -o myapp main.c # génère notre exécutable
 CMD ["./myapp"]
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Sources
 

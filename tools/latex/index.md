@@ -5,7 +5,7 @@ In this course, you will learn
 * how to write some latex documentation
 * how to write maths in latex
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Introduction
 
@@ -23,7 +23,7 @@ scratch <https://www.overleaf.com/latex/templates>
 since there are presentation templates, cv templates,
 report templates...
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Writing documents
 
@@ -48,7 +48,7 @@ you will have to use a directive starting with
 * [Lists](directives/lists.md)
 * [Code](directives/code.md)
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Writing maths in latex
 
@@ -78,7 +78,7 @@ Related
 * [mathjax reference (maths in websites)](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
 * [new lines in mathjax](https://github.com/mathjax/MathJax/issues/2312)
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Sources
 

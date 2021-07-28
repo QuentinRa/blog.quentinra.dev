@@ -23,7 +23,7 @@ You will do the same as you are doing for the project
 and add functionalities one after another until you reached
 your **goal**.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Requirements
 
@@ -45,7 +45,7 @@ of these steps until the end of the project
 4. [Sprint review](sprint/review.md) <span class="tms">(review, demonstration, at the end)</span>
 5. [Sprint retrospective](sprint/retrospective.md) <span class="tms">(suggestions for next print?)</span>
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Some advice
 
@@ -58,7 +58,7 @@ Try to relay as much as possible information in your group. Be sure to ask other
 and try to give them advice, be it person-to-person or talk about it and ask
 for everyone's help in the ``daily scrum``.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Scrum master or ideology
 
@@ -80,7 +80,7 @@ You must do everything to
 * your development speed must be stable
 * always strive to do better
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Sources
 

@@ -5,7 +5,7 @@
 Arrays are rather strange in PHP. You can have
 arrays having values of different types...
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Creation**
 
@@ -18,7 +18,7 @@ $a = array(5, "51", null, false);
 $a = [ 5, "51", null, false ];
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 **Get an element**
 
@@ -32,7 +32,7 @@ $a = array(5, "51", null, false);
 $five = $a[0]; // 5
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 **Methods**
 
@@ -43,7 +43,7 @@ You might like
 * and don't forget isset if you are not sure
 that some index exists.
 
-<div class="sl"></div>
+<hr class="sl">
 
 **Named indexes**
 
@@ -65,7 +65,7 @@ echo "Mon nom est $user[user] !";
 var_dump($user);
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 **foreach**
 

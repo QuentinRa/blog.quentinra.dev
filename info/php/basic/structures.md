@@ -23,7 +23,7 @@ endif;
 ?>
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Loops
 
@@ -47,7 +47,7 @@ do { /* code */ } while ($condition);
 ?>
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Switch
 

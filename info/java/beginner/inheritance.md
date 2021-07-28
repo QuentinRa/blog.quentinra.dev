@@ -20,7 +20,7 @@ in a subclass is writing a method with the same name.
 * if a static method is not found in a subclass, then the superclass
 will be checked.
 
-<div class="sl"></div>
+<hr class="sl">
 
 **super**
 
@@ -30,7 +30,7 @@ superclass.
 * ``super(...)`` : call superclass constructor
 * ``super.method(...)`` : call superclass method
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Liskov substitution**
 
@@ -46,7 +46,7 @@ but once you tell Java that a subclass "is" a superclass,
 **you can't use subclass-specific methods** until you cast it
 to your subclass.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Example
 

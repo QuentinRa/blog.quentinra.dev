@@ -10,7 +10,7 @@
 
 Based on ``doxygen`` version `1.9.1`.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Starting with doxygen
 
@@ -29,7 +29,7 @@ but for me, it's a bit **unreadable** and your
 documentation should not be like that,
 hopefully.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Write documentation
 
@@ -73,7 +73,7 @@ All tags can be found in this great reference sheet
 * official link : [DoxyReference.pdf](https://www.mitk.org/images/1/1c/BugSquashingSeminars$2013-07-17-DoxyReference.pdf)
 * permanent link : [DoxyReference.pdf](https://github.com/memorize-code/memorize-references/raw/main/tools/doxygen/DoxyReference.pdf)
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Generate your documentation website
 
@@ -132,7 +132,7 @@ to generates your documentation. Check your
 you must open in your browser to look at
 your HTML documentation.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Make your documentation beautiful
 
@@ -199,7 +199,7 @@ XML_NS_MEMB_FILE_SCOPE  = YES
 * then do `style\doxygen.py DoxyfileCSS` (or `/` on Linux)
 * check your usual output folder for your ``ìndex.html``
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Make your documentation great
 
@@ -236,7 +236,7 @@ is helpful
 that might help a lot
 * make some ``README.md`` to summarize some usages might be good
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Sources
 

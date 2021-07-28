@@ -10,7 +10,7 @@
 * booleans: ``&&``, `||`, `!` (not)
 * booleans: `and`, `or` (use &&/|| instead, because theses do not have the same priority)
 
-<div class="sr"></div>
+<hr class="sr">
 
 **others**
 
@@ -20,7 +20,7 @@
 * ``.`` (concatenation)
 * ``=`` (assign)
 
-<div class="sr"></div>
+<hr class="sr">
 
 **To test equality/difference**
 
@@ -31,7 +31,7 @@
 > is **TRUE** in PHP so use strict equality if you don't
 > know what to use.
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Create if not exists**
 

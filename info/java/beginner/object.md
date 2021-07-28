@@ -46,7 +46,7 @@ would mean subclasses (children of `y`) return true. Instead
 what we do is ``this.getClass() != obj.getClass()`` but check
 that ``obj`` is not null beforehand!
 
-<div class="sr"></div>
+<hr class="sr">
 
 **equals**
 
@@ -95,7 +95,7 @@ System.out.println(Objects.equals(empty, calistro)); // false, but no error like
 System.out.println(empty.equals(calistro)); // NullPointerException
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 Then for **hashcode**, you simply need to remember that **two objects
 that are equals will have the same hashcode**. Then when you write
@@ -132,7 +132,7 @@ public int hashCode() {
 }
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 **clone**
 
@@ -153,7 +153,7 @@ public Object clone() {
 }
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 **toString**
 
@@ -177,7 +177,7 @@ System.out.println(calistro); // auto-conversion to String
 System.out.println(calistro.toString()); // that's the same
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 **finalize**
 

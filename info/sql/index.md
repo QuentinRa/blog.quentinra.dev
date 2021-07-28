@@ -10,7 +10,7 @@ This is a really big course, covering
 But this course won't handles ``relational modeling``
 as this is considered to be in the ``UML`` course.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Let's start from scratch
 
@@ -38,7 +38,7 @@ or on a linux you can simply install ``maria`` or `postgre`
 and settings up things really quickly 
 (May [that](https://www.digitalocean.com/community/tutorials/how-to-install-mariadb-on-debian-10) help).
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Introduction to SQL
 
@@ -75,19 +75,19 @@ than ever.
 
 * [Views](syntax/views.md)
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Advanced usages
 
 ...
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Procedural language (PL) for SQL
 
 ...
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Sources
 

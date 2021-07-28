@@ -24,7 +24,7 @@ using it such as
 * <http://docs.mathjax.org/en/latest/>
 * <https://codeigniter.com/user_guide/index.html>
 
-<div class="sl"></div>
+<hr class="sl">
 
 # Installing sphinx
 
@@ -44,7 +44,7 @@ the pages together. We do that with ``toctree directive``
     Nom printed     <file_rst_without_extension>
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 # Writing RST documents
 
@@ -67,7 +67,7 @@ As a side note, space and indents are quite important
 in ``rst``, so be sure to check your indents if the compiler
 fails on a line and you don't know where is the error.
 
-<div class="sl"></div>
+<hr class="sl">
 
 # Sources
 

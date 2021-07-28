@@ -4,7 +4,7 @@
 
 We are using
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Operations**
 
@@ -13,7 +13,7 @@ We are using
 * ``!``: not, invert a boolean
 * ``+``: concatenation (for strings)
 
-<div class="sl"></div>
+<hr class="sl">
 
 **Comparison**
 
@@ -22,7 +22,7 @@ We are using
 * ``&&``, `||`
 * ``^`` (xor)
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Utilities**
 
@@ -32,7 +32,7 @@ We are using
 * ``a >> b`` : divide by 2 power b
 * ``a << b`` : multiply by 2 power b
 
-<div class="sl"></div>
+<hr class="sl">
 
 **Equality**
 

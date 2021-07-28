@@ -29,7 +29,7 @@ simple_function "a" ;;
 (* - : string = "a" *)
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Function with more than one parameter**
 
@@ -64,7 +64,7 @@ do that implicit declaration.
 let simple_function x y = x
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 **Explicit types**
 
@@ -83,7 +83,7 @@ You usually don't give types since the paradigm
 is asking for ``implicit types`` but that something you
 must know since you will use it.
 
-<div class="sr"></div>
+<hr class="sr">
 
 **partial implementation**
 

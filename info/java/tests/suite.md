@@ -27,7 +27,7 @@ After each test.
 
 Simply annotates a method with this annotation.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ```java
 import org.junit.jupiter.api.AfterAll;

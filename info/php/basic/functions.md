@@ -15,7 +15,7 @@ By default, variables used and not declared
 inside a function must be either a parameter or 
 global variables.
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Simple function**
 
@@ -37,7 +37,7 @@ param2 is passed by address. In most
 cases, you won't use that if you are doing
 some client-server PHP.
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Simple function with return**
 
@@ -49,7 +49,7 @@ Simply use the return keyword.
 function my_function() { return 5; }
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 **Adding types**
 
@@ -78,7 +78,7 @@ function float_or_int(bool $bool) : ?int {
 }
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Using non-global variables**
 

@@ -35,7 +35,7 @@ The file shown at ``http://localhost/`` is
 it in your browser at ``http://localhost/new_project/``
 or ``http://localhost/new_project/index.php``.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Wamp
 
@@ -45,7 +45,7 @@ internet connection icon, sound icon, ...
 
 If wamp is not present here then start it.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Change to MariaDB
 
@@ -63,21 +63,21 @@ Your database is at <http://localhost/phpmyadmin>.
 
 by default.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Change the lang
 
 Right-click on wamp in the system trail
 then in lang menu.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Change xxx version
 
 Left-click on wamp in the system trail
 You can enable and disabled PHP modules here too.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Postgre
 
