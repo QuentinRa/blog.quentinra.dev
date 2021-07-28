@@ -13,7 +13,7 @@ line like p, </span><span>the following tags
 (so this span) will be on the same line!</span>
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 <p>a paragraph <span>with some text that we
 may still later</span>.</p>

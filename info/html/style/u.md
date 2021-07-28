@@ -8,6 +8,6 @@ Some underlined text using **u**.
 <p>this is in <u>underlined</u></p>
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 <p>this is in <u>underlined</u></p>

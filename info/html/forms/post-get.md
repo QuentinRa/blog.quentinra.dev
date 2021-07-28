@@ -30,7 +30,7 @@ according to the selected user then you should use **GET**
 since you are only changing what you get in your
 browser.
 
-<div class="sr"></div>
+<hr class="sr">
 
 Okay, let's take an example
 

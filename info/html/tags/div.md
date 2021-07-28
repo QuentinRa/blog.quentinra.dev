@@ -19,7 +19,7 @@ named div so you should use these rather than a mere div.
 </div>
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 Here some example of a style applied to the div
 (you will learn that later, don't try it at home

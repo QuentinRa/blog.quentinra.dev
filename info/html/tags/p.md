@@ -22,7 +22,7 @@ where I wrote some text.
 > in the same line is impossible (without stylesheet) unless
 > you put the image since the p tag.
 
-<div class="sr"></div>
+<hr class="sr">
 
 <p> here some text</p>
 

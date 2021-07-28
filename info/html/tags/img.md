@@ -16,6 +16,6 @@ such as
 <img src="link to image" alt="alternative text" width="48" height="48"/>
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 <img src="https://memorize.lgs-games.com/assets/icon64.png" alt="an image" width="48" height="48"/>

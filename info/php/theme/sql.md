@@ -13,7 +13,7 @@ $res = $db->query("sql query");
 $result = $res->fetchAll();
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Mariadb / MySQL
 
@@ -47,7 +47,7 @@ $code_sql = addslashes($code_sql);
 $code_sql = mysqli_escape_string($connexion, $code_sql);
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## SQL INJECTIONS
 
@@ -86,7 +86,7 @@ $request = "Select * FROM users Where username=? AND password=?";
 ```
 Then you will "bind"=associate a value with each ``?``.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Prepared statements in PDO
 
@@ -103,7 +103,7 @@ $stmt->execute();
 $all = $stmt->fetchAll();
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Prepared statements in MariaDB
 

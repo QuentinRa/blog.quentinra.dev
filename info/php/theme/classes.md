@@ -52,7 +52,7 @@ This applies if you don't know
 * and you may at the end for ``interface``,
 ``abstract``, `extends`, ...
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Attribute**
 
@@ -68,14 +68,14 @@ a class attribute. (public by default)
 
 You must use ``$this->....`` to access the attribute `...`.
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Methods**
 
 Everything is the same that for attributes.
 Note that you may only have one constructor.
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Inheritance**
 
@@ -134,7 +134,7 @@ class Child {
 }
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Namespaces**
 

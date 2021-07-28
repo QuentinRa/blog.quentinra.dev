@@ -31,7 +31,7 @@ unset($_SESSION['is_logged']);
 session_destroy();
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Session, security, ...
 

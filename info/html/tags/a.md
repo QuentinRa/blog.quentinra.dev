@@ -17,7 +17,7 @@ You are gonna use the tag ``a`` (anchor) with
 <a href="..." target="_blank">Open link in a new tab</a>
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 <a href="https://duckduckgo.com/">link to duckduckgo.com</a>
 

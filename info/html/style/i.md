@@ -8,6 +8,6 @@ Some text in italic using **i**.
 <p>this is in <i>italic</i></p>
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 <p>this is in <i>italic</i></p>

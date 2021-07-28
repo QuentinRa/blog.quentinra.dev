@@ -10,7 +10,7 @@ Just a line using **br**.
 <span>and this is on another line</span>
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 <span>some text</span>
 <br/>

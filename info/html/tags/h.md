@@ -18,7 +18,7 @@ to 6 (almost normal).
 > days, these headers were used by search engines to guess
 > the content of your website.
 
-<div class="sr"></div>
+<hr class="sr">
 
 <h1>page title</h1>
 <h2>sections title</h2>

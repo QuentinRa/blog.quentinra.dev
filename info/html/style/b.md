@@ -8,6 +8,6 @@ Putting some text in bold with **b**.
 <p>this is in <b>bold</b></p>
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 <p>this is in <b>bold</b></p>

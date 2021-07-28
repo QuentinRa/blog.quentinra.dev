@@ -32,7 +32,7 @@ if (isset($_POST['username'])){
 If you want to store that the user logged in etc,
 use sessions.
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Validate**
 
