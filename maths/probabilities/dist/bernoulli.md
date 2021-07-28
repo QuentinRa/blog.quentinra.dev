@@ -3,7 +3,7 @@
 [Go back](..)
 
 Bernoulli is used when a random variable is either 0 or 1
-(like flipping a coin), also called binary variable.
+(like flipping a coin, also called a binary variable).
 
 This distribution $B(p)$ represents the probability
 of $k$ successes with a probability of $p$.
