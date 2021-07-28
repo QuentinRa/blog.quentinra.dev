@@ -57,7 +57,8 @@ like explained
 
 Let's say you are rolling two dice.
 You got $m=2$ and each experiment
-goes from $k_1=k_2=1$ to $n_1=n=2=6$.
+goes from $1$ to $6$ so you have
+$k_1=k_2=1$ (min) to $n_1=n_2=6$ (max).
 We will have 
 
 <div>
@@ -81,12 +82,20 @@ x^{12}
 \]
 </div>
 
-If you are asked the number of distributions or
-the cardinal for when the num is $7$ then the answer
-is $6$ etc.
-
 You can develop easily using websites
 like [wolframalpha](https://www.wolframalpha.com/input/?i=%28x%2Bx%5E2%2Bx%5E3%2Bx%5E4%2Bx%5E5%2Bx%5E6%29%5E2).
+
+If you are asked the number of distributions or
+the cardinal 
+
+* when the sum is $7$ then it's $6$
+* when the sum is $8$ then it's $4$
+* ...
+
+Okay, you could actually find that yourself like
+for the $sum=7$ then we have $(1,6),\ (2,5),\ (3,4)$
+so that's 6 (without the order like $1+6=6+1$) but a generating function
+is scalable and that was not that hard.
 
 <hr class="sr">
 
