@@ -4,9 +4,8 @@
 * create a file/scratch .http (ex: `test.http`)
 * then write some requests (post/get)
   (and the result you are expecting if you want to).
-  This is quite good if you are making tests
-  for your api.
-* a file is looking this this but you should use
+  This is quite good if you are making tests for your API.
+* a file is looking this but you should use
   the generation tools to add some requests (and
   you can also see some examples inside the
   editor)
