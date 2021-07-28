@@ -46,7 +46,9 @@ how you should write yours.
 If you want to edit a course, simply edit the ``.md``
 file.
 
-## TODO List
+## TODO List 
+
+Last updated: 2021-07-28
 
 **Website**
 
@@ -54,15 +56,28 @@ file.
 * [ ] add go back to #titleID instead of #linkID
 * [ ] replace all goBack by goBackWithID
 * [ ] replace all div by hr
+* [ ] edit: show formulas
+* [ ] edit: open link
 
 **Next content**
 
-* [ ] Complete C course
-* [ ] Complete Java course (notes, javafx)
-* [ ] Complete Statistics course
+* [ ] Mathematical finance course
 * [ ] Complete R course
 * [ ] Graphs course
+* [ ] Complete Statistics course
+* [ ] Matrix course
 * [ ] First-order logic course
-* [ ] Cyber security course
+* [ ] Languages theory course
+* [ ] Numerical analysis course
+* [ ] General mathematical knowledge course
+* [ ] Microeconomic course
 * [ ] Macroeconomic course
-* [ ] Logic course
+* [ ] Complete Java course (notes, javafx)
+* [ ] Cyber security course
+* [ ] Complete JS course
+* [ ] Complete Bootstrap course
+* [ ] Complete C course
+* [ ] Complete Linux course
+* [ ] Complete Network course
+* [ ] Complete Python course
+* [ ] Complete SQL course
