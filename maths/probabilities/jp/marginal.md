@@ -7,7 +7,7 @@
 ## Discrete Marginal Distribution
 
 The marginal distribution, `loi marginale`,
-or Marginal probability mass function of X and Y are
+or the marginal probability mass function of X and Y is
 
 @
 \mathbb{P}(X=x) =
@@ -26,7 +26,7 @@ or Marginal probability mass function of X and Y are
 ## Continuous Marginal Distribution
 
 The marginal distribution, `loi marginale`,
-or Marginal probability density function of X and Y are
+or the marginal probability density function of X and Y is
 
 @
 f_X(x) = \int_{-\infty}^{+\infty} f_{X,Y}(x, y)\ dy
