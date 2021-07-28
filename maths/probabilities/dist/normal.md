@@ -84,7 +84,7 @@ This image is an image from the second link
 
 ## Inverse cumulative distribution function
 
-We known that
+We know that
 
 @
 \alpha = \mathbb{P}(X \le k) = F_X^{-1}(\alpha)
