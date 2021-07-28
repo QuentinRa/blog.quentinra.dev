@@ -205,7 +205,7 @@ developers standards.
 
 ## Meta tags
 
-Do you remember the ``head`` tag? Here some advice as to
+Do you remember the ``head`` tag? Here is some advice as to
 what you wrote here.
 
 * <https://www.google.com/webmasters/markup-helper/u/0/?hl=fr>
@@ -230,7 +230,7 @@ what you wrote here.
 ## Icons
 
 Did you ever dream of having icons on your
-website like a lot of website? Well that's easy
+website like a lot of websites? Well, that's easy
 to do. The two most well-known libraries are
 
 * [Bootstrap Icons](https://icons.getbootstrap.com/)
@@ -239,14 +239,14 @@ to do. The two most well-known libraries are
   (some restriction like giving credits but (almost) no-one is doing it)
 
 The main idea (on the web, you may use them in
-a desktop application too using the svg/png files)
+a desktop application too, using the SVG/PNG files)
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 ```
 
 Then on the website, click on the icon
-and on the icon page, you got the html tag
+and on the icon page, you got the HTML tag
 to add for instance
 
 ```html
@@ -255,7 +255,7 @@ to add for instance
 ```
 
 For bootstrap icons, you may not use this and
-directly copy the svg code (for instance, if you
+directly copy the SVG code (for instance, if you
 don't want to link the library) but it's less
 readable than the previous form.
 
