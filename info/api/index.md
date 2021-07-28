@@ -169,3 +169,13 @@ You can
   * [tutorial](https://www.jetbrains.com/help/phpstorm/openapi.html)
   * create a .http file ``Scratches and consoles > Scratches > generated-requests.http``
   * you can generate inside PHPStorm in a ``/gen`` folder the API code
+
+<hr class="sl">
+
+## Documentation
+
+You may use these to document your API.
+
+* [apiary](https://apiary.io/) (reader can test your API from the documentation, can be linked with github)
+* [redoc](https://github.com/Redocly/redoc)
+* [stoplight](https://stoplight.io/)
