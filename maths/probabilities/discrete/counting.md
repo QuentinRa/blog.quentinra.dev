@@ -17,7 +17,7 @@ back. The size of ``E`` keeps decreasing.
 
 **Ordered**: means that (0,1) and (1,0) are two
 different results while unordered means that they
-are the same issue. When writing a ordered
+are the same issue. When writing an ordered
 set, we write {$(0,1), (1,0)$} while we would
 do { {$0,1$} } for the same set but unordered.
 
@@ -39,7 +39,7 @@ A^k_n = \frac{k!}{(k-n)!}
 
 When $k = n$, $A^k_n = k!$ and we are calling these permutations.
 When the ordered elements are presents multiples times
-inside the set, you can't simply use $k!$ and you
+inside the set, you can't simply use $k!$, and you
 need to divides by the number of occurrences ($o_i$)
 of each value ($i$)
 
