@@ -30,9 +30,9 @@ You may see/use these too
 
 * an event of one element (singleton) is called
   an elementary event
-* events that's can't happens simultaneously are
+* events that's can't happen simultaneously are
   called incompatible/disjoints/mutually exclusive events ([wiki](https://fr.wikipedia.org/wiki/%C3%89v%C3%A9nements_incompatibles))
-* an event that will certainly happens is called a certain event.
+* an event that will certainly happen is called a certain event.
 
 <hr class="sl">
 
@@ -193,7 +193,7 @@ of random variables while we are calling n variables
 a vector/`vecteur` of
 random variables.
 
-The name Bi-variate distribution is used to the
+The name Bi-variate distribution is used for the
 joint distribution of two variables. The opposite
 would be Multi-variate distribution.
 
@@ -256,7 +256,7 @@ converges to a normal distribution.
 
 ## CheatSheet
 
-Here are some sheet that I looked up for you. I didn't
+Here are some sheets that I looked up for you. I didn't
 read them yet through.
 
 * [probability_cheatsheet.pdf](https://www.sas.upenn.edu/~astocker/lab/teaching-files/PSYC739-2016/probability_cheatsheet.pdf)
@@ -269,7 +269,7 @@ And here is a summary of all [distributions](dist/summary.md).
 
 ## Sources
 
-This is a list of all wikipedia pages that you may
+This is a list of all Wikipedia pages that you may
 want to check
 
 * <https://en.wikipedia.org/wiki/Expected_value>
