@@ -7,7 +7,7 @@ functions (`Fonction génératrice`)
 can make your life easier!
 
 You will write a function, where
-$a_k * x^k$ means that you if you 
+$a_k * x^k$ means that if you 
 
 * if you have $n=k$
 * then the number of distributions $a_k$
@@ -55,7 +55,7 @@ like explained
 
 ## Example (1)
 
-Let's say you are rolling two dices.
+Let's say you are rolling two dice.
 You got $m=2$ and each experiment
 goes from $k_1=k_2=1$ to $n_1=n=2=6$.
 We will have 
