@@ -1,10 +1,10 @@
 # Introduction
 
 An application programming interface (API) is an interface 
-allowing an user to use someone else services without
+allowing a user to use someone else services without
 digging into the code.
 
-The most well-know usage of API are "bank API" that
+The most well-known usages of API are "bank API" that
 are allowing a website to process payments. They do
 not know how the API is internal working but they
 are calling some functions and now they can add
@@ -29,7 +29,7 @@ the API.
 * [Mangadex API](https://api.mangadex.org/docs.html) (manga reader)
 * ...
 
-API are used everywhere and the examples/this course
+APIs are used everywhere and the examples/this course
 will be focused on the Web APIs. 
 
 <hr class="sr">
@@ -39,14 +39,14 @@ will be focused on the Web APIs.
 There are two parts when dealing with an API
 
 * creation (if you are not using an existing one)
-* utilisation (simply read the documentation and use it)
+* utilization (simply read the documentation and use it)
 
-An API available at an URL like [https://api.github.com/](https://api.github.com/).
+An API is available (=served) at an URL like [https://api.github.com/](https://api.github.com/).
 This URL is called **base endpoint** and is represented by ``/`` (root)
 in the API documentation).
 
-You can view an endpoint as a sort of seller specialised
-in one kind of requests. For instance, you may have
+You can view an endpoint as a sort of seller specialized
+in one kind of request. For instance, you may have
 an endpoint ``/users`` handling all requests related
 to the users. This endpoint can delegate some requests
 to other sellers (endpoints) like ``/user/followers``
@@ -56,7 +56,7 @@ to other sellers (endpoints) like ``/user/followers``
 but that's not always the case.*
 
 *Disclaimer*: I'm using Github as an example because
-I'm using Github API in this website.
+I'm using Github API for this website.
 
 <hr class="sl">
 
@@ -84,9 +84,11 @@ an URL like ``https://api.github.com/search/code?q=test+in:file+language:md+repo
   the end of the URL.
 
 This is a typical example of a GET request (arguments
-inside the URL) but if you want to submit data (like
-creating a Github file), then you will have to made
-of POST request (check how you can do that in your
+inside the URL) and you want to get something.
+
+If you want to submit data (like
+creating a Github file), then you will have to make
+a PUT/POST request (check how you can do that in your
 language).
 
 <hr class="sl">
@@ -107,7 +109,7 @@ you should look if there are drivers available like
 a query on DuckDuckGo/Google/... "Github API PHP"
 gave my [this driver](https://github.com/KnpLabs/php-github-api).
 
-But you may also use tools, if you want to test
+But you may also use tools if you want to test
 the requests before actually starting to code.
 The most famous tool is
 
