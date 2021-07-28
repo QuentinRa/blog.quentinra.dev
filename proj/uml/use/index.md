@@ -26,7 +26,7 @@ the timeline.
 
 A DCU looks like this
 
-![](images/LOyn2iCm34LdznGYUuQcUmcOpeL23o1irJ5nxIBBK-ZTgq02pI3ulFVv86F6AiZItkbaJAANW1JW62O17vcSn9BLe9F2O5EaB80LWh8FkXa3mODqeZ6gMHIRLibX9UZkx8cxjVwqvuEn4xcvDDdaS90ttFb5-LSlGDzVjv4z3tzvxOsKlNxn0m00.png)
+![DCU example](images/LOyn2iCm34LdznGYUuQcUmcOpeL23o1irJ5nxIBBK-ZTgq02pI3ulFVv86F6AiZItkbaJAANW1JW62O17vcSn9BLe9F2O5EaB80LWh8FkXa3mODqeZ6gMHIRLibX9UZkx8cxjVwqvuEn4xcvDDdaS90ttFb5-LSlGDzVjv4z3tzvxOsKlNxn0m00.png)
 
 with
 
@@ -53,7 +53,7 @@ for the system "website". A logged user may be able to
 do all of the regular user use cases and even more. You
 can factorize this with inheritance.
 
-![](images/u-HqA2v9B2efpStXukIqyibFJqzDKGWjJYsoKaWiLd1CoStC0qa4fQQNvYGMGMLiQdHruN8EgNafGEq0.png)
+![Generalisation example](images/u-HqA2v9B2efpStXukIqyibFJqzDKGWjJYsoKaWiLd1CoStC0qa4fQQNvYGMGMLiQdHruN8EgNafGEq0.png)
 
 This is called Generalisation and not inheritance (
 or ``Héritage`` in French) since inheritance isn't
@@ -85,7 +85,7 @@ one by
   calling another one (like a method **always** calling another one)
 * **extension**: a use case may call another one
 
-![](images/NOyn3eCm34Ndz1H_X84UWA6Y1-ZKNi1AN8W82Gf655MzUqsHEZ1OilzxbcLZcaaeopo4ap61dm99oBxj.png)
+![ATM example](images/NOyn3eCm34Ndz1H_X84UWA6Y1-ZKNi1AN8W82Gf655MzUqsHEZ1OilzxbcLZcaaeopo4ap61dm99oBxj.png)
 
 A custom interacting with an ATM
 
@@ -99,7 +99,7 @@ A custom interacting with an ATM
 A friend made this use case diagram for our website
 [lgs-games.com](https://lgs-games.com/).
 
-![](images/unknown.png)
+![example](images/unknown.png)
 
 Just as an example but the generalization of "Edit profile"
 into

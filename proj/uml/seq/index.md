@@ -45,7 +45,7 @@ with a lifeline, and at the end of it the
 actor may die. An actor is an object of your program but
 it may be a person (an user) if needed.
 
-![](images/utGeBaaiAYdDpU7YL7BAJrAmKWX8BIhEprDIq8rMBafDYRLJK7BCoKnEHPAnKiX8pSd91-f0bm7gCG02DxTONQ0-LFEi5FApkJWTKlDIWBO10000.png)
+![SSD](images/utGeBaaiAYdDpU7YL7BAJrAmKWX8BIhEprDIq8rMBafDYRLJK7BCoKnEHPAnKiX8pSd91-f0bm7gCG02DxTONQ0-LFEi5FApkJWTKlDIWBO10000.png)
 
 You read this diagram as
 
@@ -58,7 +58,7 @@ Usually be draw a little rectangle to show the duration
 of the method call, and we add a number to explicitly
 clear any doubt about the order of the program execution
 
-![](images/seq2.png)
+![Call](images/seq2.png)
 
 <hr class="sr">
 

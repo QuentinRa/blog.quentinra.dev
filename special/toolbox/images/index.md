@@ -12,7 +12,7 @@ When dealing with images, you may want
 
 ## What's the sauce?
 
-![](sauce.jpg)
+![sauce](sauce.jpg)
 
 This website is supposed to help
 you find the sauce when someone is

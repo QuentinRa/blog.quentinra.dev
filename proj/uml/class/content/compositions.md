@@ -9,4 +9,4 @@ the subclasses.
 The subclasses can't exists if the composite class got
 destroyed.
 
-![](../images/SyxFBSWlpYn9LT3IrLLGKWX8B2e1KbOAoL29pFmy0000.png)
+![composite example](../images/SyxFBSWlpYn9LT3IrLLGKWX8B2e1KbOAoL29pFmy0000.png)

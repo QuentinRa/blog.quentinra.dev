@@ -32,7 +32,7 @@ space.
 If you have a constraint ``y < 3`` and `x > 2` it would
 look like this
 
-![](lines.png)
+![lines](lines.png)
 
 You should remember that something like that 
 ``y <= 3/5 * x + 7`` means that

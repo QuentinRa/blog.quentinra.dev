@@ -7,7 +7,7 @@ in French, with ``n`` the number of classes.
 
 Here we got 3 classes and an association class
 
-![](../images/multi-classes.png)
+![multi-classes](../images/multi-classes.png)
 
 You read that as
 

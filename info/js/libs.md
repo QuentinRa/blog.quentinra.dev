@@ -12,7 +12,7 @@ you do something like [this](https://codepen.io/mellis84/pen/JpVZNw)
 
 <div style="width: 500px;">
 
-![](title/handmade-title.gif)
+![title](title/handmade-title.gif)
 </div>
 
 You can use [Typed.js](https://mattboldt.com/demos/typed-js/)

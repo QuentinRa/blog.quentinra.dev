@@ -5,7 +5,7 @@
 This is the most well-know layout in Java.
 The container is divided into 5 sections
 
-![](borderLayout.png)
+![borderLayout](borderLayout.png)
 
 The 
 

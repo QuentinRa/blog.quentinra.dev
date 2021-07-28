@@ -77,7 +77,7 @@ This image is an image from the second link
 
 <div style="height: 300px;overflow: auto;">
 
-![](images/normal-table.png)
+![normal-table](images/normal-table.png)
 </div>
 
 <hr class="sl">

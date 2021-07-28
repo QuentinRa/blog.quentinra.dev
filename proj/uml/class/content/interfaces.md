@@ -54,7 +54,7 @@ the lollipop interface
 
 **common design**
 
-![](../images/SoWkIImgAStDuKhEIImkLd0CyLN8p2t8ISrDpIifLl1DJCx8p4lbukI4I3ldP0B5WLm8Gq5Fpmv9ZKDgNWhGA000.png)
+![interface](../images/SoWkIImgAStDuKhEIImkLd0CyLN8p2t8ISrDpIifLl1DJCx8p4lbukI4I3ldP0B5WLm8Gq5Fpmv9ZKDgNWhGA000.png)
 
 * ATM is implementing Machine
 * Client is using (a) Machine

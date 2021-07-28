@@ -24,7 +24,7 @@ We got 3 kinds of states
 
 Here is an example with all of them
 
-![](images/u-HqA2v9B2efpStXukBarD3ILD3LjLDG0WgMf2e1HQ0ii2XG5gJ88JKl1QWU0000.png)
+![begin-end](images/u-HqA2v9B2efpStXukBarD3ILD3LjLDG0WgMf2e1HQ0ii2XG5gJ88JKl1QWU0000.png)
 
 When the program is starting, we are moving from one of the
 initial states to another state. Then we are moving
@@ -37,7 +37,7 @@ Inside "State", you could add attributes like
 * ``exit/action`` where ``action`` is executed when exiting
   this state
 
-![](images/SoWkIImgAStDuUAArefLqDMrKmWkIIn9DUI2K60He0oCQwMGcbTILAcVcPTPufIVM9I2956HMQAVabfSKfHV2P7YSaZDIm6P3G00.png)
+![states](images/SoWkIImgAStDuUAArefLqDMrKmWkIIn9DUI2K60He0oCQwMGcbTILAcVcPTPufIVM9I2956HMQAVabfSKfHV2P7YSaZDIm6P3G00.png)
 
 <hr class="sl">
 
@@ -48,15 +48,15 @@ may add on the arrow
 
 * a trigger name (like what will move us from our state to another)
 
-![](images/trans1.png)
+![trigger](images/trans1.png)
 
 * a condition (same as a trigger but a condition)
 
-![](images/trans2.png)
+![condition](images/trans2.png)
 
 * an action (executed when moving)
 
-![](images/trans3.png)
+![action](images/trans3.png)
 
 <hr class="sr">
 
@@ -64,7 +64,7 @@ may add on the arrow
 
 This is how you can do conditional branching.
 
-![](images/JOqn3e0W34NdSegcavfu1O9dS2GE99P8WWnGxczXSljzVVaVm3K9LVgR3S2ohRZl5kaSZ8oY594E56v2A0yNHQ2Abzhvcg8mgZHkqYVdnjEnFWRDVsU2APKxnT7kDEdq1m00.png)
+![branching](images/JOqn3e0W34NdSegcavfu1O9dS2GE99P8WWnGxczXSljzVVaVm3K9LVgR3S2ohRZl5kaSZ8oY594E56v2A0yNHQ2Abzhvcg8mgZHkqYVdnjEnFWRDVsU2APKxnT7kDEdq1m00.png)
 
 Note that instead of using
 "A test" and true/false, you could use the same symbol but
@@ -89,4 +89,4 @@ a note saying how yours is choosing.
 A synchro bar may be used if you want to both run
 State1 and State2 at the same time.
 
-![](images/u-HqA2v9B2efpStXukBarD3ILD3LjLEmjRLrCWGIG24GLocu9B4aLS5G2SY7IIaWIHWfWJGxfEQb0Cq10000.png)
+![synchro bar](images/u-HqA2v9B2efpStXukBarD3ILD3LjLEmjRLrCWGIG24GLocu9B4aLS5G2SY7IIaWIHWfWJGxfEQb0Cq10000.png)

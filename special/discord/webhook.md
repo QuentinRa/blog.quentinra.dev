@@ -6,7 +6,7 @@ A webhook is something like [this](https://discohook.org/?data=eyJtZXNzYWdlcyI6W
 It's a bot taking someone else avatar/name and
 posting a message in a channel
 
-![](webhook.png)
+![webhook](webhook.png)
 
 Using [discohook](https://discohook.org), you can
 create your webhook online (or learn how a webhook

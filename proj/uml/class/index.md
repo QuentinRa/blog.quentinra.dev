@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-![](images/NS-n2i903CRn_PxYuoP572gu59NY8YxYAyGQsugNEtAfuDjRgKDrpEzF8AcoaLeV7kxCcgEWn08Dspwg76Ks7-PER1gfuNzSujPfDg709PwaTKiwhR_1nSkTQuFVzBi3XK0Ub94AvrA14abPOi0M_jI7rBxyo5yR5qRwN3BGQkrTnN8TddW3.png)
+![class](images/NS-n2i903CRn_PxYuoP572gu59NY8YxYAyGQsugNEtAfuDjRgKDrpEzF8AcoaLeV7kxCcgEWn08Dspwg76Ks7-PER1gfuNzSujPfDg709PwaTKiwhR_1nSkTQuFVzBi3XK0Ub94AvrA14abPOi0M_jI7rBxyo5yR5qRwN3BGQkrTnN8TddW3.png)
 
 A **Class** is an abstract representation of a concept,
 like a person here. We have what we call
@@ -48,13 +48,13 @@ Attributes got
 * a constant is usually static, I'm doing that
   by adding a ``{final}`` after the type in StarUML
 
-![](images/SoWkIImgAStDuUBaTCv9B2wsKiZCAr5mZ7VszmiESVGBKR1Li5IeJilCIyof1QfnICrB0Qe60000.png)
+![const](images/SoWkIImgAStDuUBaTCv9B2wsKiZCAr5mZ7VszmiESVGBKR1Li5IeJilCIyof1QfnICrB0Qe60000.png)
 
 * **composite attributes** are attributes made of more
   attributes. I have only seen that used in JavaScript since
   you can create object that do not have a class
   
-![](images/u-HqA2v9B2efpStXukHCpaaiBbPm1f6f2jL00SxgjCpKd9HQXUJyt8ByuioIL8N4afAYpAHI8CiAMO4kMCBGIg6aiY0LKy88Ag70oLaBb7L8pKi1MWa0.png)
+![composite attribute](images/u-HqA2v9B2efpStXukHCpaaiBbPm1f6f2jL00SxgjCpKd9HQXUJyt8ByuioIL8N4afAYpAHI8CiAMO4kMCBGIg6aiY0LKy88Ag70oLaBb7L8pKi1MWa0.png)
 
 <hr class="sl">
 
@@ -94,7 +94,7 @@ two classes. We usually write a multiplicity n..m characterizing how many instan
 are linked with how many of the other classes and a name
 to remember what kind of links it is.
 
-![](images/Syv9B2vsL53AKr1IqDLLKCe5qiuWCIS5Ao0pBp4tLGa0.png)
+![multiplicity](images/Syv9B2vsL53AKr1IqDLLKCe5qiuWCIS5Ao0pBp4tLGa0.png)
 
 * [Multiplicity](content/multiplicity.md)
 * [association classes](content/association-classes.md)
@@ -157,4 +157,4 @@ using ``.`` as folder separator. You will usually
 see names like ``net.sourceforge.plantuml`` for
 ``net/sourceforge/plantuml/`` folder.
 
-![](images/u-HoA2v9B2efpStXuYf8JCvEJ4zLK7BEIImkpanMSCxFoKbDBidCpojMKb1s0GE5QYu51V-aBA2uWasDhgw2Or5HOgLFPd49Lot2YBpK4htY_DAYvDIq_ABqLBs2dCGya2KOkbrIS_CDWM9WMa4B8c04CieXDIy5g0C0.png)
+![packages](images/u-HoA2v9B2efpStXuYf8JCvEJ4zLK7BEIImkpanMSCxFoKbDBidCpojMKb1s0GE5QYu51V-aBA2uWasDhgw2Or5HOgLFPd49Lot2YBpK4htY_DAYvDIq_ABqLBs2dCGya2KOkbrIS_CDWM9WMa4B8c04CieXDIy5g0C0.png)

@@ -7,7 +7,7 @@ with some minor changes. If you don't
 understand this diagram (aside
 from the underlined attribute)
 
-![](images/SoWkIImgAStDuKhEIImkLWX8BIhEprEevbAmARNBJB5IoCmhuLB8IynDjL88BYdAp4ldgkM2Ab8oqDFJKb1IqDE3CxtoanIi5ChpYxAv75BpKe3c0W00.png)
+![person-job](images/SoWkIImgAStDuKhEIImkLWX8BIhEprEevbAmARNBJB5IoCmhuLB8IynDjL88BYdAp4ldgkM2Ab8oqDFJKb1IqDE3CxtoanIi5ChpYxAv75BpKe3c0W00.png)
 
 Then read/learn about
 
@@ -65,7 +65,7 @@ The most used kind of key. The key is generated
 automatically when you add a new element. It's
 represented by a beautiful star inside a circle ``⊛``.
 
-![](images/SoWkIImgAStDuKhEIImkLWX8BIhEprEevb9ur3LR8JF5IY4phuHB8IynDzLA8RYaA3CldQkM2wfAoK1FJqj1IK5F3yxqoazIi58epo_Avd98pKi16Wm0.png)
+![artificial key](images/SoWkIImgAStDuKhEIImkLWX8BIhEprEevb9ur3LR8JF5IY4phuHB8IynDzLA8RYaA3CldQkM2wfAoK1FJqj1IK5F3yxqoazIi58epo_Avd98pKi16Wm0.png)
 
 <hr class="sl">
 
