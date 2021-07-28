@@ -124,7 +124,7 @@ because the sum of all elementary events is converging
 to 1.
 
 We need to introduce the **(probability) density function** (PDF)
-or ``fonction de densité/de masse/marginale`` $f_X(x)$
+or ``fonction de densité`` $f_X(x)$
 (or $f(x)$). The function is defined
 by 
 
