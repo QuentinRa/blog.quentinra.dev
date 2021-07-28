@@ -15,7 +15,7 @@ p {
 Will apply the color ``yellow`` and the background
 ``blue/black`` for each p tag in the HTML page.
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Filter selector by attribute value**
 

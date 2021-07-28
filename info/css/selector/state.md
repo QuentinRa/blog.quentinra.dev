@@ -20,7 +20,7 @@ button:disabled { /* ... */ }
 a:visited { /* visited link */ }
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## CSS functions
 

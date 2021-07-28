@@ -8,7 +8,7 @@ basic CSS.
 * bootstrap and any other CSS framework won't
 be introduced in this course
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Where do you write css?
 
@@ -33,7 +33,7 @@ html {
 }
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Selectors
 
@@ -64,7 +64,7 @@ check out [here](https://www.w3schools.com/cssref/css_selectors.asp)
 and [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
 if you want more. What you just read was only my handmade list.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Sizes
 
@@ -92,7 +92,7 @@ like ``width: calc(100% - 15px);``
 
 At this point, you are ready to write some css.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## CSS properties
 
@@ -207,7 +207,7 @@ in the examples, values are
 
 and v can be a value (check size), a percent, or auto.
 
-<div class="sr"></div>
+<hr class="sr">
 
 # Responsive
 
@@ -236,7 +236,7 @@ size.
 You can use that to hide/show some buttons, change some
 component's positions, ...
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Sources
 

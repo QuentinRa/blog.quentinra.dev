@@ -6,7 +6,7 @@
 <hr/>
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 Notice this almost transparent horizontal separator
 bellow.

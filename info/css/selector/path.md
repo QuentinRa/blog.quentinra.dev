@@ -26,7 +26,7 @@ write the full path starting a node that you can choose.
 You may check ``state`` selectors to find some useful
 functions to make it easier for you.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Apply a style to multiples selectors
 
@@ -40,7 +40,7 @@ html, body, p, .a_class {
 }
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## children selector
 

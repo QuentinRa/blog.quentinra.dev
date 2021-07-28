@@ -38,7 +38,7 @@ You can use a placeholder to define a default value deleted
 if the user types something. You can use value to set
 a value that the user may or not remove by himself.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Examples
 
@@ -70,7 +70,7 @@ Alice? <br>
 <label for="no">no!</label>
 <input name="alice" id="no" name="no" type="radio" />
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Input properties
 
@@ -104,7 +104,7 @@ Some error message will be shown when submitting if the field is not valid. Also
 if your mouse is hoovering the field, then you should see some message
 is something is wrong.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Submit
 
@@ -123,7 +123,7 @@ use reset but almost no one is still using it nowadays.
 <button type="submit">submit</button>
 <button type="reset">reset the form</button>
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Textarea
 

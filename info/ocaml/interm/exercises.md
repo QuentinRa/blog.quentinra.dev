@@ -18,7 +18,7 @@ a translated version (function names etc.).
 but take the time! It's better than your average practical
 class**.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Creating some types
 
@@ -39,7 +39,7 @@ type brin = nucleotide list
 </code></pre>
 </blockquote>
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Some useless function as a warmup (1 / 2)
 
@@ -82,7 +82,7 @@ let _ = assert((contenu_gc [A;A;A;T;A]) = 0.0);;
 </code></pre>
 </blockquote>
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Some useless function as a warmup (2 / 2)
 
@@ -138,7 +138,7 @@ List.fold_left (fun inverted brin -> match brin with
 </code></pre>
 </blockquote>
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Distance
 
@@ -177,7 +177,7 @@ let _ = assert((try distance [] [T] with Failure _ -> -1) = -1) ;;
 </code></pre>
 </blockquote>
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Similarity
 
@@ -213,7 +213,7 @@ let _ = assert(similarite [A;G;C;T] [A;G;C;T] = 1.0);;
 </code></pre>
 </blockquote>
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## New type: tree
 
@@ -252,7 +252,7 @@ distance(AAAA, ACAT) + 3
 \)</span>
 </p>
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## string_of_arbre_phylo
 
@@ -296,7 +296,7 @@ let _ = assert(arbre_phylo_vers_string (Br(
 </code></pre>
 </blockquote>
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Similarity
 
@@ -392,7 +392,7 @@ let _ = assert (similaire tree1 [tree1; tree3;tree4] = tree1);;
 </code></pre>
 </blockquote>
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Getters and constructor
 
@@ -453,7 +453,7 @@ let _ = assert(br (Lf [A;T]) [A;A] (Lf [T;C]) = Br (Lf [A; T], [A; A], 3, Lf [T;
 </pre>
 </blockquote>
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## min_malus
 

@@ -22,7 +22,7 @@ Use **ol** and **li** tags to make an ordered list.
 </ol>
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 <ol>
     <li>one</li>

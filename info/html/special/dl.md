@@ -12,7 +12,7 @@ dictionary-like style
 </dl>
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 According to the renderer, the definition block may
 be indented or the word may be in bold+italic.

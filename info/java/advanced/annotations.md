@@ -20,7 +20,7 @@ be used by others
 * ``@NotNull``: a parameters can't be null
 * ``@Contract``: a method is pure (no side-effect)
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## SuppressWarnings
 
@@ -38,7 +38,7 @@ you didn't call super method
 * ``@SuppressWarnings("SameParameterValue")``: non public
 method is always given the same parameters warning.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## New annotations
 

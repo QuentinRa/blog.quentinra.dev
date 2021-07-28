@@ -4,7 +4,7 @@
 
 I'm calling our two special selectors "joker" selectors.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## *
 
@@ -23,7 +23,7 @@ are issues)
 in most case, using HTML or BODY as selector is
 enough.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## :root
 

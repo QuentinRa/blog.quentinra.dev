@@ -22,7 +22,7 @@ and in your style.css you will use ``.class`` selector
 }
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Cumulative classes selector**
 

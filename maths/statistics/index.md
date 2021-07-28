@@ -12,7 +12,7 @@ This is a course where you will learn
 And everything will be coupled with examples in ``R``,
 you may add examples in other languages.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Introduction
 
@@ -31,7 +31,7 @@ And some more if you want
 
 * [Population (paired)](voc/paired.md) : you took two times the data from the same indivuals
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Maths recap
 
@@ -46,37 +46,37 @@ It's ``F(x)=0.5`` if `F` is the empirical cumulative distribution function)
 * **quantile**: split the distribution in X part (4 = quartile, 10 = decile, 100 = centile).
 * [covariance](maths/cov.md) : if two value are independents then ``cov=0``.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Learn about estimators, likehood, ...
 
 ...
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Analysis of a sample
 
 ...
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Plots
 
 ...
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Tests
 
 ...
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Linear regression
 
 ...
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Sources
 

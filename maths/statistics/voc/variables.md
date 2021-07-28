@@ -26,7 +26,7 @@ is the other kind of properties. This include
 * ordered: sorted like easy < medium < hard
 * not ordered: the others
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## in R
 

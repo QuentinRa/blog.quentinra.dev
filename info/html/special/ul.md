@@ -22,7 +22,7 @@ Use **ul** and **li** tags to make an unordered list.
 </ul>
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 <ul>
     <li>one</li>
