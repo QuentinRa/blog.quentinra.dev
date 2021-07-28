@@ -2,12 +2,12 @@
 
 [Go back](..)
 
-Some strikethrough text using **u**.
+Some strikethrough text using **s**.
 
 ```html
 <p>this is in <s>underlined</s></p>
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
-<p>this is in <s>underlined</s></p>
+<p>this text is <s>strikethrough</s>.</p>
