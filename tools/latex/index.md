@@ -52,22 +52,19 @@ you will have to use a directive starting with
 
 ## Writing maths in latex
 
-First and foremost, you should check out this
+**First and foremost**, you should check out this
 website <http://atomurl.net/math/>. 
 
 A math equation need to be put inside
 ``$latex$`` (or `\(latex\)`) (inline math so in a sentence)
 or using ``\[latex\]`` and equations will be rendered
-in a whole line.
-
-An alternative to ```\[latex\]``` is
+in a whole line. An alternative to ```\[latex\]``` is
 ``\begin{equation}latex\end{equation}``.
 
 Spaces are useless in your latex code since the math
 parser will do what he wants, you should either
 use ``\ `` so slash followed by a space 
 or use ``\quad`` (or `\,`, `\:`, ...).
-
 You an make a horizontal space with ``\hspace{1cm}``.
 
 **Note**: if you don't remember the name of a symbol,
@@ -77,8 +74,8 @@ and ask him to look for it.
 
 Related
 
-* [mathjax reference](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
 * [alternatives to atomurl](https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog)
+* [mathjax reference (maths in websites)](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
 * [new lines in mathjax](https://github.com/mathjax/MathJax/issues/2312)
 
 <div class="sl"></div>
