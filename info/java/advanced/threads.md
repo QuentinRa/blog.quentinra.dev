@@ -27,7 +27,7 @@ t.start();
 
 And that's it!
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Runnable
 
@@ -49,7 +49,7 @@ Thread t = new Thread(() -> {
 });
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Thread-safe
 
@@ -97,7 +97,7 @@ in the thread the attribute don't change then the
 value is cached and the loop will raise a infinite
 looping error.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Sleep
 
