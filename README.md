@@ -60,7 +60,6 @@ Last updated: 2021-07-28
 
 **Next content**
 
-* [ ] Mathematical finance course
 * [ ] Complete R course
 * [ ] Graphs course
 * [ ] Complete Statistics course
