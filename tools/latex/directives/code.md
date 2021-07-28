@@ -2,7 +2,8 @@
 
 [Go back](..)
 
-Here how you would write code in OCaml
+Here is how you would write code with
+OCaml highlighting
 
 ```latex
 \documentclass{article}
