@@ -3,7 +3,7 @@
 [Go back](..#joint-probability)
 
 This page may be useful if
-$Card(X)$ and $Card(Y)$ are small, since you would
+$Card(X)$ and $Card(Y)$ are small since you would
 be able to use the contingency table/`tableau à double entrées/tableau de contingence`.
 
 It's a table with the columns
@@ -122,5 +122,5 @@ are looking for the probability of
 * $|A|=1$ because we have (1,1)
 * so we have $1/36$
 
-Finally, you should check and confirm that the sum
-of all probabilities is equals to **1**.
+Finally, you should check and confirm that 
+the sum of all probabilities is **1**.
