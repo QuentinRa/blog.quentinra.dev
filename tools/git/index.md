@@ -175,6 +175,21 @@ of someone else (not related to GPG)
 
 <hr class="sr">
 
+## Heroku
+
+[Heroku](https://www.heroku.com/home) 
+is a sort of github action for automatic
+deployment. Currently there are not that many languages
+supported but still you may want to check it out.
+They have a [student](https://www.heroku.com/github-students)
+offer if needed.
+
+The short videos on their website
+like [this one for nodejs](https://www.heroku.com/nodejs)
+are showing exactly what heroku is doing.
+
+<hr class="sl">
+
 ## Fancy notes
 
 Did you hear about badges? You can find them in the 
@@ -220,7 +235,7 @@ And you can even find things like joke cards
 You can also **create a skyline** with your
 contributions using <https://skyline.github.com/>.
 
-<hr class="sl">
+<hr class="sr">
 
 ## Sources
 
