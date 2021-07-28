@@ -12,7 +12,7 @@ happening in your program. This could be
 The latter two a something that I finding disgusting
 but functional programmers don't seem to mind doing that.
 
-<div class="sl"></div>
+<hr class="sl">
 
 **Create an exception** (if needed)
 
@@ -25,7 +25,7 @@ exception MyException of int;;
 (* ... *)
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Raise**
 
@@ -36,7 +36,7 @@ exception MyException of string;;
 raise (MyException "a message here");;
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 **catch**
 
@@ -52,7 +52,7 @@ with (* catch *)
 | _ -> (* do something here *)     
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 **failwith**
 

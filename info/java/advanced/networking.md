@@ -6,7 +6,7 @@ You can only create a client-server app locally
 like your local network (you will need a real server if you
 want to do a real client-server).
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Server Socket
 
@@ -24,7 +24,7 @@ sending or receiving his/her messages using this socket.
 
 Don't forget to close the connection with ``close()``.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Client Socket
 
@@ -37,7 +37,7 @@ Socket s = new Socket(host, port);
 host will be a local IP or localhost (string)
 and port is the port of your server.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Use sockets
 

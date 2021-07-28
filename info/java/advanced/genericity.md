@@ -61,7 +61,7 @@ public static <T> T firstElement(T[] array){
 }
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Generic methods
 
@@ -126,7 +126,7 @@ public static <T> void method(HashMap<? extends T, ?> param, Class<T> keyClass){
 method(param, Integer.class);
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Generic classes
 

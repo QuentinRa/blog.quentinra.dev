@@ -7,7 +7,7 @@ rather than "how to solve".
 Some functional languages are
 `Lisp`, `meta-languages` (SML, CAML, OCAML) or `Haskell`.
 
-<div class="sr"></div>
+<hr class="sr">
 
 The main concepts are
 

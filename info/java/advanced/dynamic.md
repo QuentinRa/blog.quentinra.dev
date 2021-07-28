@@ -9,7 +9,7 @@ that collections are ``Iterables``.
 
 HashMap is not a collection but a ``Map``.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## ArrayList
 
@@ -44,7 +44,7 @@ int size = list.size();
 ArrayList<Integer> copy = new ArrayList<>(list);
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## HashSet
 
@@ -61,7 +61,7 @@ Note that you don't have a ``get`` method
 so you will need to iterate the list if you want an
 element.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## LinkedList using Queue
 
@@ -83,7 +83,7 @@ Integer poll = queue.poll();
 Integer remove = queue.remove();
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## HashMap
 

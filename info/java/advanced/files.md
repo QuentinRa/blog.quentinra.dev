@@ -15,7 +15,7 @@ Since you could use out/err to write and in to read. You
 may use them in the methods bellow if you don't want
 to read/write to a file.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Logic
 
@@ -55,7 +55,7 @@ try {
 }
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Get File as streams
 

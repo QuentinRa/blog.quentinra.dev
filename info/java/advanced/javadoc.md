@@ -19,7 +19,7 @@ A Javadoc comment is a comment looks like that
 */
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Tags
 
@@ -51,7 +51,7 @@ Note that you can add multiples of param and throws. Note
 that if the class is generic or a method is generic,
 you can comment the param using this syntax
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Example
 
@@ -90,7 +90,7 @@ public class Classe{
 }
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Generic parameters
 

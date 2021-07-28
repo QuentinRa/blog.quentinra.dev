@@ -30,7 +30,7 @@ If no one dealt with an exception, meaning that each one throw
 it to the caller, until the main that's you've called, then
 the program will crash and will show you an exception.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Syntax
 
@@ -87,7 +87,7 @@ try {
 }
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Multiples try-catch
 
@@ -114,7 +114,7 @@ try {
 }
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## finally
 
@@ -133,7 +133,7 @@ try {
 }
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## resources
 

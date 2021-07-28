@@ -30,7 +30,7 @@ Please take note
 * else is **required**
 * a_value and another_value must have the same **type**
 
-<div class="sl"></div>
+<hr class="sl">
 
 **Don't make a fool of yourself, do not write**
 
@@ -41,7 +41,7 @@ if (condition) then true else false
 since the condition is already a boolean and you will trigger
 most of the experienced guys.
 
-<div class="sr"></div>
+<hr class="sr">
 
 You **mustn't use that** (not joking, it's not functional)
 but here you go.

@@ -28,7 +28,7 @@ simply do
 * install a library : ``install.packages("name")``
 * **load a library** (runtime) : ``library("name");``
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Basic course
 
@@ -58,7 +58,7 @@ that you might use or not.
 * [Maths](utils/maths.md)
 * [Plots](utils/plot.md)
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Exercises
 

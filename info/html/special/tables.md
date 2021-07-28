@@ -33,7 +33,7 @@ A line is made using **tr** tag, and you use
 </table>
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 (I added some style)
 

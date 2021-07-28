@@ -18,7 +18,7 @@ public class MyListOfIntegers implements Iterable<Integer> {
 }
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Creating a Iterator
 
@@ -63,7 +63,7 @@ public class MyListOfIntegers implements Iterable<Integer> {
 }
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Use an iterator
 

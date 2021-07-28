@@ -35,7 +35,7 @@ let a_person : person = Anonymous 5
 You will see later how you could extract the arguments
 used in the constructor using **match**.
 
-<div class="sr"></div>
+<hr class="sr">
 
 Note that some are removing the first ``|``
 

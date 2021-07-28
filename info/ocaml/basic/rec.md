@@ -21,7 +21,7 @@ like ``(string_of_int 5) - 1``. So we would
 have here without parenthesis
 ``(pow x power) - 1`` and we would have looped forever :).
 
-<div class="sr"></div>
+<hr class="sr">
 
 **Terminal or nonterminal functions**
 
@@ -40,7 +40,7 @@ The function above is **nonterminal**! To write
 some terminal function, we will use **functions with
 accumulators**.
 
-<div class="sl"></div>
+<hr class="sl">
 
 **functions with accumulators**
 

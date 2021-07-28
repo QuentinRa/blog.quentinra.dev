@@ -30,7 +30,7 @@ val person_age : int = 5
 *)
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 **And the... use of this?**
 

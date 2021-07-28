@@ -23,7 +23,7 @@ through.
 > (switch won't work anymore, foreach might do something
 > unexpected...)
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Complexes enums
 
@@ -56,7 +56,7 @@ Usage would be
 int sorcerer_hp = RpgClasses.SORCERER.getHP();
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## You might like
 

@@ -17,7 +17,7 @@ You should remember that the concepts are
 
 [Here](intro/fp.md) something more complete.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Introduction
 
@@ -43,7 +43,7 @@ or you can follow one of these tutorials
 * [Install OCaml in WSL](intro/install-wsl.md)
 * [OCaml in Intellij](intro/install-idea.md)
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Write some code
 
@@ -62,7 +62,7 @@ Comments are made using the delimiters ``(*`` and `*)`
 let _ = Printf.printf "%s" "Hello world"
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Basic concepts
 
@@ -80,7 +80,7 @@ You might challenge yourself with these exercises
 * [MCQ](basic/mcq.md)
 * [Write some code](basic/exercises.md)
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Intermediary concepts
 
@@ -104,7 +104,7 @@ And here some exercises
 * MCQ (not yet)
 * [Write some code](interm/exercises.md)
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Advanced concepts
 
@@ -118,7 +118,7 @@ learning about the depth of this new paradigm.
 ``Lisp`` and `Haskell` may also be good choices if
 you are eager to learn other functional languages.
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Sources
 

@@ -19,7 +19,7 @@ the previous one is destroyed
 **If a variable isn't declared, you will get the
 error ``Unbound value xxxxx``**.
 
-<div class="sl"></div>
+<hr class="sl">
 
 **A lot of initializations at once**
 
@@ -30,7 +30,7 @@ variables in one expression.
 let x = 5 and y = 6;;
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 **More complex initialization**
 
@@ -64,7 +64,7 @@ since x is complex and we do not want to write it
 let x = 5.0/.15.0 in x *. x *. 5.0
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 **Unnamed variable**
 

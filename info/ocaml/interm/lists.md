@@ -14,7 +14,7 @@ let sample_list = [5.0;0.2];;
 **Notice** that the separator for values is ``;``. After
 all ``,`` is already used for composite types.
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Creating a list
 
@@ -61,7 +61,7 @@ let my_list = (5::3::[])::my_list;;
 (* val my_list : int list list = [[5; 3]; [5; 3]; [7; 5; 3]] *)
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 # Iterate a list
 
@@ -73,7 +73,7 @@ The list constructors are considered to be
 * ``a::[]``
 * ...
 
-<div class="sr"></div>
+<hr class="sr">
 
 # List methods
 

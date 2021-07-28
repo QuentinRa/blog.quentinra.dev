@@ -38,7 +38,7 @@ let age_of_person person = match person with
 ;;
 ```
 
-<div class="sr"></div>
+<hr class="sr">
 
 ## Match on a list
 
@@ -72,7 +72,7 @@ has_key 12 [(2,3); (5,1); (7,9)] ;;
 (* - : bool = false *)
 ```
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Other
 
