@@ -59,7 +59,7 @@ The characteristic function is
 
 Sometimes the symbol $\phi$ (phi) or $\Phi$ (Phi)
 or even $\hat{\mu}$ are used instead
-of $\varphi$ (varphi) but I will trust wikipedia.
+of $\varphi$ (varphi) but I will trust Wikipedia on this.
 
 * if $X$ and $Y$ are independent, $\varphi_{X+Y}(x) = \Phi_{X}(x) * \varphi_{Y}(x)$
 * if $X$ and $Y$ are independent, $\log(\varphi_{x+y}(x)) = \log(\varphi_{x}(x)) * \log(\varphi_{y}(x))$
