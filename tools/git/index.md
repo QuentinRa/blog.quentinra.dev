@@ -195,7 +195,7 @@ are showing exactly what Heroku is doing.
 Did you hear about badges? You can find them in the 
 README.md in a lot of repositories.
 
-![](https://img.shields.io/github/license/lgs-games/memorize)
+![badge](https://img.shields.io/github/license/lgs-games/memorize)
 
 They are loaded with the latest value like the real license
 here so devs add them into a README to help others
@@ -223,7 +223,7 @@ You may also check this to create a profile card
 
 * <https://github.com/anuraghazra/github-readme-stats>
 
-![](https://github-readme-stats.vercel.app/api?username=QuentinRa&show_icons=true&theme=radical)
+![profile](https://github-readme-stats.vercel.app/api?username=QuentinRa&show_icons=true&theme=radical)
 
 You can also show an achievements badge
 
