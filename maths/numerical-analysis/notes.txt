@@ -1,3 +1,6 @@
+https://andreask.cs.illinois.edu/cs357-s15/public/notes/section_m_notes/CS357Lecture3_Norms.pdf
+https://en.wikipedia.org/wiki/Condition_number
+
 		* https://www.i2m.univ-amu.fr/perso/thierry.gallouet/licence.d/anum.d/anum-tg2.pdf
 			* éléments page 68+ intéressants
 		* http://math.univ-lyon1.fr/~pujo/analyse-num-cours.pdf
