@@ -41,5 +41,5 @@ you should be able to have
 @
 
 with $h_Y(x)$ the density of $Y$. Note that
-you can do an integration by substitution
+you can do integration by substitution
 with $y = g(x)$ (=`Changement de variable`).
