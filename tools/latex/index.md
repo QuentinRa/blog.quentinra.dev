@@ -61,11 +61,11 @@ or using ``\[latex\]`` and equations will be rendered
 in a whole line. An alternative to ```\[latex\]``` is
 ``\begin{equation}latex\end{equation}``.
 
-Spaces are useless in your latex code since the math
-parser will do what he wants, you should either
+Spaces are useless in your latex code since 
+the math parser will do what he wants, you should either
 use ``\ `` so slash followed by a space 
 or use ``\quad`` (or `\,`, `\:`, ...).
-You an make a horizontal space with ``\hspace{1cm}``.
+You can make a horizontal space with ``\hspace{1cm}``.
 
 **Note**: if you don't remember the name of a symbol,
 just draw it on
