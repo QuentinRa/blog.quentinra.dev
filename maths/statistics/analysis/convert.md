@@ -7,13 +7,32 @@ Sometimes, your variables are qualitative
 but R didn't detect it as qualitative so you would have
 to convert it.
 
-<hr class="sr">
+<hr class="sl">
 
 ## Changing the type
 
 You should remember that R is proposing functions
 like ``as.type(x)`` to convert a variable $x$ to
 the type $type$ (as.integer(), as.Date() etc.).
+
+
+<hr class="sr">
+
+## Weighted data
+
+If you ever have two vectors, one for
+the values $v$ and another one for the probabilities $p$
+then you may use
+
+```r
+library('questionr')
+
+wtd.mean(v, p)
+wtd.var(v, p)
+
+# base package
+weighted.mean(v,p)
+```
 
 <hr class="sl">
 
