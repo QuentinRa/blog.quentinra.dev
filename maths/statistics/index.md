@@ -43,6 +43,10 @@ It's ``F(x)=0.5``. (if `F` is the empirical cumulative distribution function)
 * **quantile**: split the distribution in X part (4 = quartile, 10 = decile, 100 = centile).
 * [covariance](maths/cov.md) : if two value are independents then ``cov=0``.
 
+In R, you can use
+`mean(x)`, `median(x)`, `quantiles(x)=fivenum(x)`, 
+`cov(x)` or `cor(x)`.
+
 <hr class="sr">
 
 ## Analysis of a sample
