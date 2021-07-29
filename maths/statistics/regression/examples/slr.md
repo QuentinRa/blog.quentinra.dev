@@ -1,6 +1,6 @@
 ## Simple linear regression (example)
 
-[Go back](../linear.md)
+[Go back](../linear.md#simple-linear-regression)
 
 ```r
 # preparing some data
