@@ -75,9 +75,22 @@ in other sections.
 
 <hr class="sr">
 
-## Linear regression
+## Regression
 
-...
+The linear regression (`Regression linéaire`)
+is a line maximising the distance between each
+point of the distribution and the line
+<span class="tms">
+(minimizing the sum of the square vertical distances
+between our line and a point)
+</span>
+
+The linear regression equation is $Y = a + b X + residual$.
+If $Y \not\in \mathbb{R}$ but in $Y \in [0,1]$,
+then the residual is $0$ and you should look at
+logistic regression.
+
+* [What's Y, a, b, X?](regression/equation.md)
 
 <hr class="sl">
 
@@ -85,3 +98,5 @@ in other sections.
 
 * <https://en.wikipedia.org/wiki/Statistical_inference>
 * <https://en.wikipedia.org/wiki/Descriptive_statistics>
+* <https://en.wikipedia.org/wiki/Linear_regression>
+* <https://en.wikipedia.org/wiki/Linear_discriminant_analysis>
