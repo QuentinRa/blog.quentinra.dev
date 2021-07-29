@@ -20,3 +20,8 @@ summary(model)
 ```
 
 I made an [example here](examples/slr.md).
+
+**Note**: you may also give a subset
+to lm using subset parameter
+if you were planning to use
+subset function.
