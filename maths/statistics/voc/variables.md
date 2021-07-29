@@ -52,14 +52,6 @@ levels(iris$Species)
 ```
 
 Here you can read that as ``"setosa" > "versicolor" > "virginica"``
-but that doesn't make sense here trough.
-
-<div class="sl"></div>
-
-## Convert a variable in R
-
-Sometimes, your variables are qualitative (because you know it)
-but R didn't detect it as qualitative so you would have
-to convert it.
-
-...
+but that doesn't make sense here trough since
+this do not seems like an ordered qualitative
+variable.
