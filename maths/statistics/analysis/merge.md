@@ -45,5 +45,5 @@ to increase the number of data. What I do is
 
 Sometimes, instead of using $mean(x)$ (because
 you might get a value outside $x$ or because the
-mean is a big problematic as you will see later),
+mean is a bit problematic as you will see later),
 you may use the median.
