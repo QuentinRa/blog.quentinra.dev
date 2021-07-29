@@ -91,6 +91,7 @@ then the residual is $0$ and you should look at
 logistic regression.
 
 * [What's Y, a, b, X?](regression/equation.md)
+* [Regression table/model](regression/model.md)
 * [Linear regression](regression/linear.md)
 * [Logistic regression](regression/logistic.md)
 * Poisson regression
@@ -106,5 +107,6 @@ want to check
 * <https://en.wikipedia.org/wiki/Descriptive_statistics>
 * <https://en.wikipedia.org/wiki/Linear_regression>
 * <https://en.wikipedia.org/wiki/Linear_discriminant_analysis>
+* <https://en.wikipedia.org/wiki/Regression_analysis>
 
 [other references](refs.md)
