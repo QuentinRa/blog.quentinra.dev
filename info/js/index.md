@@ -20,6 +20,10 @@ or "... > additional tools > dev tools"). Move to
 "console" tab and here you got. Try tapping "5+5" for
 instance then you should see "10".
 
+When running a page with Javascript, the errors/prints/...
+will be in the console. Anyone can see, modify, or
+execute javascript.
+
 <hr class="sr">
 
 ## Notes
@@ -76,3 +80,20 @@ alert('Hello, World')
 // print in the console 'Hello, World'
 console.log('Hello, World')
 ```
+
+<hr class="sr">
+
+## Syntax
+
+...
+
+**BEWARE**: sometimes you wrote some Javascript, go back
+to your page, F5, and then you don't see any changes
+(or your script isn't working). This may happens because
+your CSS/JS got cached by your browser so try updating
+the cache with 
+
+* CTRL+SHIFT+F5
+* CTRL+F5
+* CTRL+R
+* CTRL+SHIFT+R
