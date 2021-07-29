@@ -35,3 +35,29 @@ binary variables, you will have two results
 so you can read a result as
 "for women, an increase of 1 for the age tend to increase
 the size by $b$" (resp. men).
+
+<hr class="sr">
+
+## Other qualitative variables
+
+The idea is the same. If you have a variable
+$Z \in ['worker', 'miner', 'artisan']$ then
+you will consider three results
+$Y = a + bX + W + bM + cA$ with $b,c \in [0,1]$.
+
+But you noticed right? Why
+there isn't a coefficient before the $W$?
+Well, you are comparing the results so you need a reference,
+and that's the first one by default (unless you used
+``rlevels(qual, ref="artisan")``).
+
+This means that $b$ is interpreted as
+"if the person is not a worker but a miner
+then ...".
+
+You may want to check the impact of $Z$
+on $Y$ and you can do that with
+
+```r
+drop1(model, .~., test="F")
+```
