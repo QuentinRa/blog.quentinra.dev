@@ -1,1 +1,12 @@
-https://www.statology.org/how-to-interpret-regression-coefficients/
+<hr class="sr">
+
+## First lookup
+
+* again with summary/...
+* ``range(v)``: min/max
+* `var, sd, quantile etc.`
+
+because your goal will be to find out
+if there are things that should need further
+research (like why is this value this big? is it
+a mistake?...).
