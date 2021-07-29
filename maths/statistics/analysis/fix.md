@@ -15,3 +15,7 @@ fct_collapse(data, "col" = c("Fr","FR", "France", "Frence"))
 # another less stupid example
 fct_collapse(data, "col" = c("Firefox","mozilla", "Mozilla"))
 ```
+
+This should only happens for quantitative variables
+as qualitative variables have levels so you can delete
+the wrong levels and replace them.
