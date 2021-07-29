@@ -2,11 +2,13 @@
 
 Books
 
-* ``Statistique et probabilités en économie-gestion by Christophe Hurlin, Valérie Mignon``
-* ``ElementsMathematiquesAppliqueesV3``
-* ``OperaMagistris``
-* ``Mathématiques L1 L2 Statistique et probabilités en 30 fiches by Daniel Fredon, Myriam Maumy-Bertrand, Frédéric Bertrand``
-* ``MOOC de Statistiques - University Paris-Saclay``
+* ``Statistique et probabilités en économie-gestion`` by Christophe Hurlin, Valérie Mignon
+* ``ElementsMathematiquesAppliquees``, by Vincent ISOZ
+* ``OperaMagistris``, by Vincent ISOZ
+* ``R programming``, by Vincent ISOZ, Daname KOLANI
+* ``Mathématiques L1 L2 Statistique et probabilités en 30 fiches`` by Daniel Fredon, Myriam Maumy-Bertrand, Frédéric Bertrand
+* ``MOOC de Statistiques``, Paris-Saclay University
+* ``Initiation à R``, by Eric Preud’homme
 
 Regression
 
