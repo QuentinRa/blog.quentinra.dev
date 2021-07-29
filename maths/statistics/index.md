@@ -93,6 +93,7 @@ logistic regression.
 * [What's Y, a, b, X?](regression/equation.md)
 * [Linear regression](regression/linear.md)
 * [Logistic regression](regression/logistic.md)
+* Poisson regression
 
 <hr class="sl">
 
