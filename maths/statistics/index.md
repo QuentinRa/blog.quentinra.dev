@@ -52,8 +52,8 @@ but not how you will do it, as it will be explained
 in other sections.
 
 1. [Discovery](analysis/discovery.md)
-2. [Descriptive statistics](analysis/ds.md)
-2. [Statistical inference](analysis/si.md)
+2. [Descriptive statistics](ds/index.md)
+2. [Statistical inference](si/index.md)
 
 <hr class="sl">
 

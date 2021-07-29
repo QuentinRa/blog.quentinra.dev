@@ -32,3 +32,5 @@ Once you have at least some information
 * [Dealing with NA values](na.md)
 * [Converting variables](convert.md)
 * [Extract the sample you will work with](sample.md)
+* [Merging data](merge.md)
+* [Fixing data](fix.md)
