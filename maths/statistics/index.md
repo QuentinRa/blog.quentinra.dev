@@ -92,6 +92,7 @@ logistic regression.
 
 * [What's Y, a, b, X?](regression/equation.md)
 * [Regression table/model](regression/model.md)
+* [Qualitative explanatory variables](regression/qual.md)
 * [Linear regression](regression/linear.md)
 * [Logistic regression](regression/logistic.md)
 * Poisson regression
