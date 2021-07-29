@@ -57,6 +57,7 @@ Search for ``settings/classes/file/...``
 
 ### You may use
 
+* ``CTRL+SHIFT+G``: open a sort of file view menu (inside a file)
 * ``^+CTRL+SHIFT+U``: uppercase to lowercase or lowercase to uppercase
 * ``CTRL+G``: to move to a line
 * ``CTRL+R``: replace some text
