@@ -32,5 +32,85 @@ str(v)
 # 'data.frame':	23 obs. of  3 variables:
 # ...
 # $ state: Factor w/ 2 levels "treated","untreated": 1 1 1 1 1 1 1 1 1 1 ...
-v$state_qual <- as.integer(p$state)
+v$state_quant <- as.integer(v$state)
+```
+
+<hr class="sr">
+
+## Quantitative to Qualitative (simple case)
+
+Simply use the factor function ``factor(ech$quant)``,
+with ``levels(ech$qual)``/`table(ech$qual)` to see
+the different kinds of values of a qualitative variable.
+
+```r
+# converting back v$state_quant
+v$state_qual <- factor(v$state_quant, levels = c(1,2), labels = c("treated", "untreated"))
+```
+
+<hr class="sl">
+
+## Quantitative to Qualitative (Unsupervised discretization)
+
+If you have too much levels (different values), then you may want something
+else than factor. For instance, let's say you got a variable "Age" and you
+want to make a qualitative variable like to make some age groups.
+
+```r
+library('arules')
+
+# create groups of n values
+discretize(qual, method = "frequency", breaks = n)
+
+# split in n interval having the same size
+discretize(qual, method = "interval", breaks = n)
+
+# put the values in a group with the ones near them
+discretize(qual, method = "cluster", breaks = n)
+```
+
+<hr class="sr">
+
+## Quantitative to Qualitative (Supervised discretization)
+
+This is another alternatives where we are grouping the values
+according to a qualitative criteria.
+
+* chiM
+
+```r
+library('discretization')
+# if the values are near (epsilon=0.05), then they are in the
+# same group
+chiM(ech$quant, alpha = 0.05)
+```
+
+* cut
+
+```r
+# cut, v is a vector like
+# (1,3,5) will split the distribution
+# in [min,1] U ]1,3] U ]3,5]
+cut(x, breaks = v, include.lowest = TRUE)
+```
+
+* make.groups
+
+```r
+library('lattice')
+# check the examples/documentation
+g <- make.groups(name=v, ...)
+# levels
+g$which
+# values
+g$data
+# the result is something like this
+g
+#              data       which
+# uniform1     0.2988667     uniform
+# uniform2     0.5579879     uniform
+# exponential1 2.1288421 exponential
+# exponential2 0.7936762 exponential
+# lognormal1   0.6568099   lognormal
+# lognormal2   1.8459960   lognormal
 ```
