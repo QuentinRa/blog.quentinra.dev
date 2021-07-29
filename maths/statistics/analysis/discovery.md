@@ -29,6 +29,6 @@ What are your variables? and what are their types/values?
 
 Once you have at least some information
 
-* [Get Rid of NA values](na.md)
+* [Dealing with NA values](na.md)
 * [Converting variables](convert.md)
 * [Extract the sample you will work with](sample.md)
