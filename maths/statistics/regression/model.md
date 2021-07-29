@@ -47,6 +47,11 @@ As you should have remembered
 * **p-value** : column Pr, as for the tests, it's indicating
   whether H0 or H1 may be the best fitting hypothesis.
 
+You should read interpret the result as
+"if X is increasing by 1 then in average,
+Y tend to increase by $b$". Of course, you should check
+the p-value because the variable may be not correlated.
+
 > **Note**:
 > You can easily get the correlation with
 > $r = b * \frac{\sigma_{X}}{\sigma_{Y}}$.
