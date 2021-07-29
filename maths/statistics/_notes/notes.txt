@@ -1,0 +1,85 @@
+Analyse en Composantes Principales (ACP)
+----------------------------------------
+
+On veut obtenir depuis un jeu de données un plus petit jeu de données mais qui préserve
+l'information.
+
+On a des unités observables (personnes, ...) qui sont associées à des variables
+qui les décrivent. On obtient une matrice donc le coefficient i,j
+décrit la valeur de la variable à la colonne j correspondant à l'individu i.
+
+Apparent il faut construire des axes tels que ceux avec le plus
+grand taux de variabilité précèdent ceux ayant un taux inférieur. Cela permettrait
+de réduire la variance et en réduisant les variables ont obtiendrait des valeurs
+qui ont la même influence sur l'analyse.
+
+En R, on utile scale pour réduire les données. On dispose
+deux deux fonctions :
+
+	* :code:`princomp` : calcule les valeurs propres sur la matrice de covariance ou de corrélation
+	* :code:`prcomp` : utilise la décomposition en valeurs singulières
+
+On utilisera le paramètre scale pour forcer la réduction. Ensuite avec :code:`summary`,
+on peut observer les écarts de déviation et identifier les composantes entre lesquelles
+il y a le plus grand écart. On s'en sert en parallèle avec
+la proportion cumulée pour choisir les composantes à garder.
+
+L’analyse de variance
+------------------------
+
+L’analyse de variance est une m´ethode statistique permettant de comparer des groupes.
+
+Elle peut ˆetre utilis´ee, par exemple, pour rechercher l’action d’un facteur sur une variable d’int´erˆet.
+
+ex
+
+Nous illustrerons cette m´ethode avec le jeu de donn´ees “porcelets” relatif `a l’augmentation du
+poids de i porcelets, i ∈ {1, . . . , n}, en fonction du type d’alimentation de leur m`ere.
+
+Dans cette exp´erience, trois types d’aliments sont utilis´es. Ils correspondent aux niveaux du
+facteur aliment :
+> levels(porcelets$aliment)
+[1] "al1" "al2" "T"
+
+Pour savoir s’il existe une influence de l’alimentation de la m`ere sur la croissance des porcelets,
+il faut comparer la part de variabilit´e due `a l’alimentation de la m`ere et la part de variabilit´e
+r´esiduelle (variabilit´e entre les porcelets d’un mˆeme groupe). Pour cela, on calcule la somme des
+carr´es des ´ecarts `a la moyenne intra groupes
+et la somme des
+carr´es des ´ecarts `a la moyenne inter groupes
+. La somme des
+carr´es totale est la somme des deux précédentes.
+
+La fonction aov() calcule les sommes de carr´es intra et inter groupes.
+pds.aov <- aov(pds ~ aliment, data=porcelets)
+pds.aov
+
+La fonction anova() r´ealise les tests statistiques `a partir des r´esultats de l’aov et produit un
+tableau d’analyse de variance.
+anova(pds.aov)
+
+Chaque somme de carr´es est associ´ee `a un degr´e de libert´e (df) qui est pour l’aliment, son
+nombre de niveaux - 1, et pour la r´esiduelle, le nombre total d’observations - le df de l’aliment
+-1. (voir les trucs plus haut quoi)
+
+Ce tableau d’analyse de variance montre que la probabilit´e associ´ee `a l’effet de l’alimentation
+de la m`ere sur la croissance des porcelets est significative (si on consid`ere un seuil de significativit´e
+`a 0.05). Cela veut dire qu’au moins une des diff´erences entre les 3 groupes est significative.
+On peut en conclure que, globalement, l’alimentation de la m`ere influe sur la croissance des
+porcelets.
+On peut aussi vouloir comparer les groupes 2 `a 2. Pour cela, on utilise la fonction pairwise.t.test()
+qui r´ealise des comparaisons par paires bas´ees sur des tests de Student. Une option de cette fonction permet de sp´ecifier la m´ethode d’ajustement, en cas de comparaisons multiples. Par d´efault,
+cette option est “holm”.
+> pairwise.t.test(porcelets$pds,porcelets$aliment,p.adjust.method="bonferroni")
+
+> pairwise.t.test(porcelets$pds,porcelets$aliment,p.adjust.method="fdr")
+
+Remarque : La fonction t.test() est plus g´en´erale dans le sens o`u elle permet de faire un
+test de Student pour comparer deux groupes (vecteurs) de fa¸con appari´ee ou non (par d´efaut)
+avec variance ´egale ou non (par d´efaut). Par exemple
+> t.test(porcelets$pds[porcelets$aliment=='T'],porcelets$pds[porcelets$aliment=='al2'])
+
+De plus la fonction p.adjust() permet d’ajuster un ensemble de p-values pour tenir compte
+d’une comparaison multiple.
+
+taux 0.5 donc moyenne 2 (exp)
