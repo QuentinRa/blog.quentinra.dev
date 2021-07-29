@@ -29,12 +29,6 @@
       "name": "SQL",
       "desc": "Course about SQL, PL/SQL and PGSQL. You will also learn a bit about NoSQL Database with Cypher.",
       "icon": "<i class=\"bi bi-server\"></i>"
-    },
-    {
-      "tag": "js-ts-node",
-      "name": "JS, TS and Node",
-      "desc": "Learn how to use javascript or typescript. You can even learn more about Node.js and modules like electron.",
-      "icon": null
     }
   ],
   "maths": [
@@ -55,13 +49,7 @@
       "name": "Matrix",
       "desc": "...",
       "icon": "<i class=\"bi bi-rulers\"></i>"
-    },
-    {
-      "tag": "probabilities",
-      "name": "Probabilities",
-      "desc": "...",
-      "icon": "<i class=\"bi bi-award\"></i>"
-    },
+    }
     {
       "tag": "microeconomics",
       "name": "Microeconomics",
