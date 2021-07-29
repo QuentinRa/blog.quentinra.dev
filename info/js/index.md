@@ -49,3 +49,30 @@ You may use JS to
 * make AJAX requests and use web APIs
 * show error messages, autocompletion, advanced
   form validation for HTML forms
+
+<hr class="sl">
+
+## My first script
+
+You can either write JavaScript inside the console
+or write a ``.js`` file. If you want to write
+some JavaScript for your website, then you can
+use a ``<script>`` tag.
+
+```html
+<script>
+    // some javascript
+    alert('Hello, World')
+</script>
+<!-- or if you are using a file -->
+<script src="file.js"></script>
+```
+
+with ``file.js``
+
+```js
+// show a popup with 'Hello, World'
+alert('Hello, World')
+// print in the console 'Hello, World'
+console.log('Hello, World')
+```
