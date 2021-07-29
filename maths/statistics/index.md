@@ -91,12 +91,19 @@ then the residual is $0$ and you should look at
 logistic regression.
 
 * [What's Y, a, b, X?](regression/equation.md)
+* [Linear regression](regression/linear.md)
+* [Logistic regression](regression/logistic.md)
 
 <hr class="sl">
 
 ## Sources
 
+This is a list of all Wikipedia pages that you may
+want to check
+
 * <https://en.wikipedia.org/wiki/Statistical_inference>
 * <https://en.wikipedia.org/wiki/Descriptive_statistics>
 * <https://en.wikipedia.org/wiki/Linear_regression>
 * <https://en.wikipedia.org/wiki/Linear_discriminant_analysis>
+
+[other references](refs.md)
