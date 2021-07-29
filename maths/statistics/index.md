@@ -24,11 +24,8 @@ then we can do thing like trying to guess the future.
 * [Population](voc/population.md) : data we are observing, a matrix
 * [Variables](voc/variables.md) : the columns of our matrix, can be quantitative or qualitative
 * [Individuals](voc/individuals.md) : the rows of our matrix
-* [Sample](voc/sample.md), échantillon : a part of our population
+* [Sample](voc/sample.md) (échantillon) : a part of our population
 * [Model](voc/model.md) : characterization of the dataset
-
-And some more if you want
-
 * [Population (paired)](voc/paired.md) : you took two times the data from the same indivuals
 
 <hr class="sl">
@@ -48,13 +45,19 @@ It's ``F(x)=0.5``. (if `F` is the empirical cumulative distribution function)
 
 <hr class="sr">
 
-## Learn about estimators, likehood, ...
+## Analysis of a sample
 
-...
+This section is a summary of what you will do
+but not how you will do it, as it will be explained
+in other sections.
+
+1. [Discovery](analysis/discovery.md)
+2. [Descriptive statistics](analysis/ds.md)
+2. [Statistical inference](analysis/si.md)
 
 <hr class="sl">
 
-## Analysis of a sample
+## Estimators, likehood, ...
 
 ...
 
@@ -80,4 +83,5 @@ It's ``F(x)=0.5``. (if `F` is the empirical cumulative distribution function)
 
 ## Sources
 
-...
+* <https://en.wikipedia.org/wiki/Statistical_inference>
+* <https://en.wikipedia.org/wiki/Descriptive_statistics>
