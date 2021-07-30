@@ -54,7 +54,7 @@ About mongo
 * it seems to be protected against injections
   (because we are using Object-relational mapping or ORM)
 
-<hr class="sr">
+<hr class="sl">
 
 ## RethinkDB
 
@@ -67,7 +67,7 @@ just in case.
 * [Store large files](https://github.com/internalfx/rethinkdb-regrid)
 * [File transfer with socket.io (node.js)](https://hassansin.github.io/socket.io-rethinkdb-file-transfer)
 
-<hr class="sl">
+<hr class="sr">
 
 ## Sources
 
