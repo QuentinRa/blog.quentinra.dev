@@ -20,3 +20,11 @@ posting a chapter of a manga
 
 * <https://saucenao.com/>
 
+<hr class="sl">
+
+## Gifs
+
+You can make gifs using
+
+* <https://www.pixilart.com/draw> (you can make a handmade animation easily)
+* <https://ezgif.com/> (you can do a lot of things, like compressing a gif after creating one)
