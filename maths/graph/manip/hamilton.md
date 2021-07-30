@@ -20,3 +20,19 @@ for sure if
 
 * $n \ge 3$ and all degrees are $\ge \frac{n}{2}$
 * or, $n \ge 3$ and $\forall{x,y}$ not neighbor, $d(x)+d(y) \ge n$
+
+<hr class="sr">
+
+## Example
+
+Find an hamiltonian path.
+
+![](images/hamilton.png)
+
+<blockquote class="spoiler">
+There is the path $(b,a,c,e,d,f)$.
+We have $(f,b,a,c,e,d)$ too. And we have
+$(a,c,e,d,f,b)$ too. Did you notice? That's the
+same path but we are starting at a different node
+so it seems that we only have one answer.
+</blockquote>
