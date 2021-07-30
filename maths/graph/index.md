@@ -49,6 +49,18 @@ And here are new notions for trees
 
 <hr class="sr">
 
+## Shortest path problem
+
+You have 4 algorithms explained here (out of 6)
+
+* [Dijkstra's algorithm](sp/dijkstra.md)
+* [Bellman–Ford algorithm](sp/bellman-ford.md)
+* [Floyd–Warshall algorithm](sp/floyd-warshall.md)
+* [Johnson's algorithm](sp/johnson.md)
+* [Distance and Diameter](sp/distance.md)
+
+<hr class="sl">
+
 ## Sources
 
 This is a list of all Wikipedia pages that you may
@@ -57,10 +69,23 @@ want to check
 * <https://en.wikipedia.org/wiki/Graph_theory>
 * <https://en.wikipedia.org/wiki/Multiple_edges>
 * <https://fr.wikipedia.org/wiki/Graphe_simple>
+
+Trees
+
 * <https://en.wikipedia.org/wiki/Tree_(graph_theory)>
 * <https://en.wikipedia.org/wiki/Spanning_tree>
 * <https://en.wikipedia.org/wiki/Minimum_spanning_tree>
 * <https://en.wikipedia.org/wiki/Kruskal%27s_algorithm>
 * <https://en.wikipedia.org/wiki/Prim%27s_algorithm>
+
+Shortest path problem
+
+* <https://en.wikipedia.org/wiki/Shortest_path_problem>
+* <https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm>
+* <https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm>
+* <https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm>
+* <https://en.wikipedia.org/wiki/Johnson%27s_algorithm>
+* <https://fr.wikipedia.org/wiki/Diam%C3%A8tre_(th%C3%A9orie_des_graphes)>
+* <https://en.wikipedia.org/wiki/Distance_(graph_theory)>
 
 [other references](refs.md)
