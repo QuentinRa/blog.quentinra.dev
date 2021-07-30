@@ -1,0 +1,106 @@
+<svg width="460pt" height="123pt" viewBox="0.00 0.00 460.00 122.80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="graph1" class="graph" transform="scale(1 1) rotate(0) translate(4 118.8)">
+        <title>
+            digraph {
+            size="10,8";
+            rankdir="LR";
+            A -> B [ label="10" ];
+            A -> E [ label="5" ];
+            B -> E [ label="2" ];
+            B -> C [ label="1" ];
+            C -> D [ label="4" ];
+            D -> A [ label="7" ];
+            D -> C [ label="6" ];
+            E -> D [ label="2" ];
+            E -> B [ label="3" ];
+            E -> C [ label="9" ];
+            }
+        </title>
+        <polygon fill="#d8d8d8" stroke="#d8d8d8" points="-4,5 -4,-118.8 457,-118.8 457,5 -4,5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#c6c4c2; --darkreader-inline-stroke:#c6c4c2;"></polygon>
+        <!-- A -->
+        <g id="node1" class="node"><title>A</title>
+            <ellipse fill="none" stroke="black" cx="27" cy="-31" rx="27" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="27" y="-26.8" font-family="Times,serif" font-size="14.00">A</text>
+        </g>
+        <!-- B -->
+        <g id="node3" class="node"><title>B</title>
+            <ellipse fill="none" stroke="black" cx="131" cy="-94" rx="27" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="131" y="-89.8" font-family="Times,serif" font-size="14.00">B</text>
+        </g>
+        <!-- A&#45;&gt;B -->
+        <g id="edge2" class="edge"><title>A-&gt;B</title>
+            <path fill="none" stroke="black" d="M47.6666,-43.147C63.0474,-52.647 84.6361,-65.9811 101.848,-76.612" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+            <polygon fill="black" stroke="black" points="100.047,-79.6131 110.394,-81.8903 103.725,-73.6575 100.047,-79.6131" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#161718; --darkreader-inline-stroke:#161718;"></polygon>
+            <text text-anchor="middle" x="79" y="-71.2" font-family="Times,serif" font-size="14.00">10</text>
+        </g>
+        <!-- E -->
+        <g id="node5" class="node"><title>E</title>
+            <ellipse fill="none" stroke="black" cx="229" cy="-64" rx="27" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="229" y="-59.8" font-family="Times,serif" font-size="14.00">E</text>
+        </g>
+        <!-- A&#45;&gt;E -->
+        <g id="edge4" class="edge"><title>A-&gt;E</title>
+            <path fill="none" stroke="black" d="M53.9568,-34.4599C80.2392,-38.051 122.027,-44.0014 158,-50.2 169.495,-52.1808 182.006,-54.5717 193.229,-56.803" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+            <polygon fill="black" stroke="black" points="192.614,-60.2493 203.108,-58.7909 193.995,-53.3869 192.614,-60.2493" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#161718; --darkreader-inline-stroke:#161718;"></polygon>
+            <text text-anchor="middle" x="131" y="-55.2" font-family="Times,serif" font-size="14.00">5</text>
+        </g>
+        <!-- B&#45;&gt;E -->
+        <g id="edge6" class="edge"><title>B-&gt;E</title>
+            <path fill="none" stroke="black" d="M148.421,-80.098C156.249,-74.3378 166.061,-68.2889 176,-65.2 181.045,-63.6322 186.499,-62.7183 191.913,-62.2413" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+            <polygon fill="black" stroke="black" points="192.312,-65.7275 202.154,-61.8053 192.015,-58.7339 192.312,-65.7275" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#161718; --darkreader-inline-stroke:#161718;"></polygon>
+            <text text-anchor="middle" x="180" y="-70.2" font-family="Times,serif" font-size="14.00">2</text>
+        </g>
+        <!-- C -->
+        <g id="node8" class="node"><title>C</title>
+            <ellipse fill="none" stroke="black" cx="425" cy="-65" rx="27" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="425" y="-60.8" font-family="Times,serif" font-size="14.00">C</text>
+        </g>
+        <!-- B&#45;&gt;C -->
+        <g id="edge8" class="edge"><title>B-&gt;C</title>
+            <path fill="none" stroke="black" d="M156.007,-101.13C162.442,-102.73 169.435,-104.192 176,-105 179.529,-105.434 180.451,-105.208 184,-105 259.946,-100.548 279.045,-98.0173 354,-85 366.232,-82.8757 379.383,-79.4371 390.946,-76.0055" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+            <polygon fill="black" stroke="black" points="392.108,-79.3102 400.637,-73.025 390.05,-72.6195 392.108,-79.3102" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#161718; --darkreader-inline-stroke:#161718;"></polygon>
+            <text text-anchor="middle" x="278" y="-102.2" font-family="Times,serif" font-size="14.00">1</text>
+        </g>
+        <!-- E&#45;&gt;B -->
+        <g id="edge18" class="edge"><title>E-&gt;B</title>
+            <path fill="none" stroke="black" d="M205.873,-73.8666C198.955,-76.7301 191.237,-79.7013 184,-82 178.591,-83.718 172.794,-85.3008 167.104,-86.7148" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+            <polygon fill="black" stroke="black" points="166.018,-83.3747 157.084,-89.0704 167.62,-90.1889 166.018,-83.3747" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#161718; --darkreader-inline-stroke:#161718;"></polygon>
+            <text text-anchor="middle" x="180" y="-89.2" font-family="Times,serif" font-size="14.00">3</text>
+        </g>
+        <!-- E&#45;&gt;C -->
+        <g id="edge20" class="edge"><title>E-&gt;C</title>
+            <path fill="none" stroke="black" d="M256.164,-64.1349C290.103,-64.3098 349.48,-64.6159 387.747,-64.8131" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+            <polygon fill="black" stroke="black" points="387.924,-68.314 397.942,-64.8657 387.96,-61.3141 387.924,-68.314" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#161718; --darkreader-inline-stroke:#161718;"></polygon>
+            <text text-anchor="middle" x="327" y="-69.2" font-family="Times,serif" font-size="14.00">9</text>
+        </g>
+        <!-- D -->
+        <g id="node10" class="node"><title>D</title>
+            <ellipse fill="none" stroke="black" cx="327" cy="-18" rx="27" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="327" y="-13.8" font-family="Times,serif" font-size="14.00">D</text>
+        </g>
+        <!-- E&#45;&gt;D -->
+        <g id="edge16" class="edge"><title>E-&gt;D</title>
+            <path fill="none" stroke="black" d="M251.306,-53.7911C264.265,-47.5813 281.031,-39.5475 295.395,-32.6651" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+            <polygon fill="black" stroke="black" points="296.916,-35.817 304.422,-28.3394 293.891,-29.5043 296.916,-35.817" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#161718; --darkreader-inline-stroke:#161718;"></polygon>
+            <text text-anchor="middle" x="278" y="-47.2" font-family="Times,serif" font-size="14.00">2</text>
+        </g>
+        <!-- C&#45;&gt;D -->
+        <g id="edge10" class="edge"><title>C-&gt;D</title>
+            <path fill="none" stroke="black" d="M402.754,-54.5983C389.716,-48.2149 372.807,-39.937 358.37,-32.8688" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+            <polygon fill="black" stroke="black" points="359.826,-29.6845 349.306,-28.4308 356.748,-35.9715 359.826,-29.6845" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#161718; --darkreader-inline-stroke:#161718;"></polygon>
+            <text text-anchor="middle" x="376" y="-47.2" font-family="Times,serif" font-size="14.00">4</text>
+        </g>
+        <!-- D&#45;&gt;A -->
+        <g id="edge12" class="edge"><title>D-&gt;A</title>
+            <path fill="none" stroke="black" d="M299.981,-19.135C246.798,-21.4551 125.52,-26.7458 64.4966,-29.4079" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+            <polygon fill="black" stroke="black" points="64.0223,-25.9251 54.1843,-29.8577 64.3274,-32.9185 64.0223,-25.9251" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#161718; --darkreader-inline-stroke:#161718;"></polygon>
+            <text text-anchor="middle" x="180" y="-29.2" font-family="Times,serif" font-size="14.00">7</text>
+        </g>
+        <!-- D&#45;&gt;C -->
+        <g id="edge14" class="edge"><title>D-&gt;C</title>
+            <path fill="none" stroke="black" d="M353.727,-15.3687C362.392,-15.4371 371.909,-16.6026 380,-20.2 390.161,-24.7174 399.21,-32.7471 406.42,-40.7731" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+            <polygon fill="black" stroke="black" points="403.903,-43.2202 412.99,-48.6676 409.283,-38.7423 403.903,-43.2202" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#161718; --darkreader-inline-stroke:#161718;"></polygon>
+            <text text-anchor="middle" x="376" y="-25.2" font-family="Times,serif" font-size="14.00">6</text>
+        </g>
+    </g>
+</svg>
