@@ -67,9 +67,8 @@ To install new plugins, what I do is
 * if you have a problem updating a plugin, backup
   the plugin data file and reinstall it.
 
-As a side note, I'm living this repository here
-[nitro code generator](https://github.com/logicguy1/Discord-Nitro-Generator-and-Checker)
-but I don't know if this is working.
+As a side note, If you have a "big" server then you can
+become a [discord partner](https://discord.com/partners).
 
 <hr class="sr">
 
@@ -119,7 +118,5 @@ I won't dig into the details,
 ## Sources
 
 * <https://support.discord.com/hc/en-us/articles/1500000580222-Ephemeral-Messages-FAQ>
-
-Discord API
-
 * <https://birdie0.github.io/discord-webhooks-guide/>
+* <https://github.com/logicguy1/Discord-Nitro-Generator-and-Checker>
