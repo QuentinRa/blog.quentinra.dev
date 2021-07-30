@@ -78,19 +78,12 @@ sure that you are not inverting $k$ and $n$.
 
 @
 \frac{k!}{(k-n)!} * n!
+\Leftrightarrow
+A^k_n * n!
 @
 
 It's the same as "Ordered distribution (no repetition/replacement)"
-but let's say you got this $[1,2,3]$ among your
-results, then you got
-
-* $[1,2,3]$
-* $[1,3,2]$
-* $[2,1,3]$
-* $[2,3,1]$
-* $[3,1,2]$
-* $[3,2,1]$
-* $= 6 =\ 3!$ unordered results so we need to multiply by $n!$
+but we multiply by $n!$.
 
 <hr class="sl">
 
@@ -106,4 +99,8 @@ If we have $n=2$ having $[1,5,7]$ so $k=3$ then we have
 C^{3-1}_{2+3-1} = 6
 @
 
-The 6 results are {$1,5$}, {$1,7$} and {$5,7$}.
+The 6 results are {$1,5$}, {$1,7$} and {$5,7$}
+<span class="tms">
+(remember that {$1,5$} is the same
+as {$(1,5),(5,1)$}).
+</span>
