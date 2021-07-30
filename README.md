@@ -52,9 +52,7 @@ Last updated: 2021-07-28
 
 **Website**
 
-* [ ] add create course page/button
 * [ ] add go back to #titleID instead of #linkID
-* [ ] replace all goBack by goBackWithID
 * [ ] edit: show formulas
 * [ ] edit: open link
 
@@ -79,3 +77,11 @@ Last updated: 2021-07-28
 * [ ] Complete Network course
 * [ ] Complete Python course
 * [ ] Complete SQL course
+
+## Notes
+
+The website wonderful background are made
+by [kronbits](https://kronbits.itch.io/backgrounds).
+
+References are backed in another
+repository [here](https://github.com/memorize-code/memorize-references).
