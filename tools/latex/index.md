@@ -11,7 +11,7 @@ In this course, you will learn
 
 You may code latex (`.tex`) documents on
 
-* [Overleaf](https://www.overleaf.com/), simple and collaborative tool, need register
+* [Overleaf](https://www.overleaf.com/) (previously `writelatex.com`), simple and collaborative tool, need register
 * [CoCalc](https://cocalc.com/), UI may be a bit hard to use but no account required
 
 You can also use a latex compiler on your machine
