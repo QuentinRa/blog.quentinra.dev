@@ -10,7 +10,7 @@ You will use graphs in databases in GraphDatabase,
 check the NoSQL course if that was what you are looking
 for.
 
-<hr class="sr">
+<hr class="sl">
 
 ## Vocabulary
 
@@ -27,6 +27,25 @@ A graph can be simple/multiple and directed or not.
 Then here is the vocabulary
 
 * **?** (`?`): ?
+
+<hr class="sr">
+
+## Sorting and search
+
+You can sort a graph using 
+
+* [Topological sorting](manip/ts.md)
+
+You can search a graph using
+
+* [Depth-first search](manip/dfs.md)
+* [Breadth-first search](manip/bfs.md)
+
+And you can solve the problems of passing once by
+a vertex/edge with
+
+* [Eulerian path](manip/euler.md)
+* [Hamiltonian path](manip/hamilton.md)
 
 <hr class="sl">
 
@@ -73,6 +92,12 @@ want to check
 * <https://en.wikipedia.org/wiki/Adjacency_matrix>
 * <https://en.wikipedia.org/wiki/Degree_matrix>
 * <https://en.wikipedia.org/wiki/Incidence_matrix>
+* <https://en.wikipedia.org/wiki/Depth-first_search>
+* <https://en.wikipedia.org/wiki/Breadth-first_search>
+* <https://en.wikipedia.org/wiki/Graph_traversal>
+* <https://en.wikipedia.org/wiki/Topological_sorting>
+* <https://en.wikipedia.org/wiki/Eulerian_path>
+* <https://en.wikipedia.org/wiki/Hamiltonian_path>
 
 Trees
 
