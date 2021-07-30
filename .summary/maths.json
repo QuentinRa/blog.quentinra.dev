@@ -35,6 +35,12 @@
       "name": "Probabilities",
       "desc": "An introduction to discrete and continuous probabilities.",
       "icon": "<i class=\"bi bi-dice-5-fill\"></i>"
+    },
+    {
+      "tag": "graph",
+      "name": "Graphs theory",
+      "desc": "Graph are used to solve problems (shortest path, eulerian path etc.) or in GraphDatabases (facebook, ...).",
+      "icon": "<i class=\"bi bi-bezier\"></i>"
     }
   ]
 }

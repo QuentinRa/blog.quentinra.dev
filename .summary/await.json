@@ -33,12 +33,6 @@
   ],
   "maths": [
     {
-      "tag": "graph",
-      "name": "Graph theory",
-      "desc": "...",
-      "icon": "<i class=\"bi bi-bezier2\"></i>"
-    },
-    {
       "tag": "languages",
       "name": "Languages theory",
       "desc": "...",
@@ -49,7 +43,7 @@
       "name": "Matrix",
       "desc": "...",
       "icon": "<i class=\"bi bi-rulers\"></i>"
-    }
+    },
     {
       "tag": "microeconomics",
       "name": "Microeconomics",
