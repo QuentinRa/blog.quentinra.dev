@@ -21,7 +21,7 @@ You will also consider your selected vertex done,
 meaning that the value as the shortest path value
 is the final result.
 
-At $i+1$,
+At $i+1$, (**it's a bit hard to explain, learn with the example**)
 
 * if there is an edge between the last done vertex and
   another one having the weight $w$
@@ -34,7 +34,7 @@ vertex having the least weight until all of them are done.
 
 <hr class="sr">
 
-## Exercise 1
+## Example
 
 ![](images/dijkstra.svg)
 
@@ -63,7 +63,6 @@ vertex having the least weight until all of them are done.
     </tbody>
 </table>
 
-<blockquote class="spoiler">
 $A$ is linked to $B$ by 10 and to $E$ by 5. We are replacing
 both $+\infty$ since the new weights are smaller
 ($0+10$ and $0+5$). We are
@@ -170,4 +169,19 @@ The idea is the same so we are filling our table.
     </tbody>
 </table>
 
-</blockquote>
+For the interpretation,
+the shortest path from A to ... is ...
+
+* A to B is $[A-E-B]$ (weight=8)
+* A to C is $[A-E-B-C]$ (weight=9)
+* A to D is $[A-E-D]$ (weight=7)
+* A to D is $[A-E]$ (weight=5)
+
+If you are wondering how I got these results, for
+$A to B$, the weight is the value in the column: $8$
+and for the path
+
+* B
+* go back to E (since $E(8)$)
+* go back to A (since $A(5)$)
+* giving us $[A-E-B]$
