@@ -1,6 +1,11 @@
 <svg width="202pt" height="44pt" viewBox="0.00 0.00 202.00 44.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="graph1" class="graph" transform="scale(1 1) rotate(0) translate(4 40)">
-        <title>_anonymous_0</title>
+        <title>digraph {
+            size="10,8";
+            rankdir="LR";
+            "Bourse" -> "Opéra";
+            }
+        </title>
         <polygon fill="#d8d8d8" stroke="#d8d8d8" points="-4,5 -4,-40 199,-40 199,5 -4,5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#c6c4c2; --darkreader-inline-stroke:#c6c4c2;"></polygon>
         <!-- Bourse -->
         <g id="node1" class="node"><title>Bourse</title>
