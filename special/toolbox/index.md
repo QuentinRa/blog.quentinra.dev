@@ -1,9 +1,19 @@
 # Toolbox
 
-Here is a summary
+A lot of notes about a lot of things that can't be added to 
+another course.
 
-1. [Terms of service and privacy policy](tos/index.md) (write Tos/PP and TosDr)
-1. [CodeSigning](codesigning/index.md) (Windows "Publisher: Unknown")
-1. [Images](images/index.md) (sauce, edit, ...)
-1. [Fixing typos](writting/index.md)
-1. Temporary file hoster <https://filevert.fr/>
+<hr class="sr">
+
+## Tools
+
+1. [Images](images/index.md) (sauce, gifs, edit, ...)
+2. [Fixing typos](writting/index.md)
+3. Temporary file hoster <https://filevert.fr/>
+
+<hr class="sl">
+
+## Notes
+
+1. [Terms of service and privacy policy](tos/index.md) (write Tos/PP and TosDidn'tRead)
+2. [CodeSigning](codesigning/index.md) (Windows "Publisher: Unknown")
