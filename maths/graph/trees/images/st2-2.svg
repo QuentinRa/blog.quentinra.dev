@@ -1,0 +1,100 @@
+<svg width="398pt" height="258pt" viewBox="0.00 0.00 398.00 258.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="graph1" class="graph" transform="scale(1 1) rotate(0) translate(4 254)">
+        <title>	digraph {
+            size="10,8";
+            rankdir="LR";
+            "Bourse" -> "Opéra" [ label="5" ];
+            "Opéra" -> "St-Lazare" [ label="7" ];
+            "Bourse" -> "Louvre" [ label="7" ];
+            "Bourse" -> "République" [ label="9" ];
+            "Étoile" -> "Louvre" [ label="15" ];
+            "Étoile" -> "Neuilly" [ label="20" ];
+            "Chatelet" -> "Louvre" [ label="10" ];
+            }</title>
+        <polygon fill="#d8d8d8" stroke="#d8d8d8" points="-4,5 -4,-254 395,-254 395,5 -4,5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#c6c4c2; --darkreader-inline-stroke:#c6c4c2;"></polygon>
+        <!-- Bourse -->
+        <g id="node1" class="node"><title>Bourse</title>
+            <ellipse fill="none" stroke="black" cx="43" cy="-178" rx="38.2818" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="43" y="-173.8" font-family="Times,serif" font-size="14.00">Bourse</text>
+        </g>
+        <!-- Opéra -->
+        <g id="node3" class="node"><title>Opéra</title>
+            <ellipse fill="none" stroke="black" cx="192" cy="-232" rx="35.0811" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="192" y="-227.8" font-family="Times,serif" font-size="14.00">Opéra</text>
+        </g>
+        <!-- Bourse&#45;&gt;Opéra -->
+        <g id="edge2" class="edge"><title>Bourse-&gt;Opéra</title>
+            <path fill="none" stroke="black" d="M73.7476,-188.928C96.7071,-197.362 128.622,-209.086 153.359,-218.173" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+            <polygon fill="black" stroke="black" points="152.199,-221.475 162.793,-221.638 154.613,-214.905 152.199,-221.475" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#161718; --darkreader-inline-stroke:#161718;"></polygon>
+            <text text-anchor="middle" x="111" y="-209.2" font-family="Times,serif" font-size="14.00">5</text>
+        </g>
+        <!-- Louvre -->
+        <g id="node7" class="node"><title>Louvre</title>
+            <ellipse fill="none" stroke="black" cx="192" cy="-98" rx="38.8459" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="192" y="-93.8" font-family="Times,serif" font-size="14.00">Louvre</text>
+        </g>
+        <!-- Bourse&#45;&gt;Louvre -->
+        <g id="edge6" class="edge"><title>Bourse-&gt;Louvre</title>
+            <path fill="none" stroke="black" d="M68.9365,-164.429C93.117,-151.27 129.99,-131.202 156.883,-116.567" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+            <polygon fill="black" stroke="black" points="158.831,-119.492 165.941,-111.637 155.485,-113.343 158.831,-119.492" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#161718; --darkreader-inline-stroke:#161718;"></polygon>
+            <text text-anchor="middle" x="111" y="-150.2" font-family="Times,serif" font-size="14.00">7</text>
+        </g>
+        <!-- République -->
+        <g id="node9" class="node"><title>République</title>
+            <ellipse fill="none" stroke="black" cx="192" cy="-178" rx="56.4513" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="192" y="-173.8" font-family="Times,serif" font-size="14.00">République</text>
+        </g>
+        <!-- Bourse&#45;&gt;République -->
+        <g id="edge8" class="edge"><title>Bourse-&gt;République</title>
+            <path fill="none" stroke="black" d="M81.4747,-178C94.8137,-178 110.256,-178 125.262,-178" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+            <polygon fill="black" stroke="black" points="125.549,-181.5 135.549,-178 125.549,-174.5 125.549,-181.5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#161718; --darkreader-inline-stroke:#161718;"></polygon>
+            <text text-anchor="middle" x="111" y="-182.2" font-family="Times,serif" font-size="14.00">9</text>
+        </g>
+        <!-- St&#45;Lazare -->
+        <g id="node5" class="node"><title>St-Lazare</title>
+            <ellipse fill="none" stroke="black" cx="341" cy="-232" rx="48.6288" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="341" y="-227.8" font-family="Times,serif" font-size="14.00">St-Lazare</text>
+        </g>
+        <!-- Opéra&#45;&gt;St&#45;Lazare -->
+        <g id="edge4" class="edge"><title>Opéra-&gt;St-Lazare</title>
+            <path fill="none" stroke="black" d="M227.465,-232C243.79,-232 263.735,-232 282.274,-232" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+            <polygon fill="black" stroke="black" points="282.397,-235.5 292.397,-232 282.397,-228.5 282.397,-235.5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#161718; --darkreader-inline-stroke:#161718;"></polygon>
+            <text text-anchor="middle" x="270" y="-236.2" font-family="Times,serif" font-size="14.00">7</text>
+        </g>
+        <!-- Étoile -->
+        <g id="node10" class="node"><title>Étoile</title>
+            <ellipse fill="none" stroke="black" cx="43" cy="-31" rx="33.6643" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="43" y="-26.8" font-family="Times,serif" font-size="14.00">Étoile</text>
+        </g>
+        <!-- Étoile&#45;&gt;Louvre -->
+        <g id="edge10" class="edge"><title>Étoile-&gt;Louvre</title>
+            <path fill="none" stroke="black" d="M69.2702,-42.5177C92.6655,-53.1809 127.733,-69.1641 154.229,-81.2406" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+            <polygon fill="black" stroke="black" points="153.015,-84.5334 163.566,-85.496 155.918,-78.1638 153.015,-84.5334" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#161718; --darkreader-inline-stroke:#161718;"></polygon>
+            <text text-anchor="middle" x="111" y="-69.2" font-family="Times,serif" font-size="14.00">15</text>
+        </g>
+        <!-- Neuilly -->
+        <g id="node13" class="node"><title>Neuilly</title>
+            <ellipse fill="none" stroke="black" cx="192" cy="-18" rx="40.005" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="192" y="-13.8" font-family="Times,serif" font-size="14.00">Neuilly</text>
+        </g>
+        <!-- Étoile&#45;&gt;Neuilly -->
+        <g id="edge12" class="edge"><title>Étoile-&gt;Neuilly</title>
+            <path fill="none" stroke="black" d="M74.3625,-23.9248C83.8047,-22.0229 94.2859,-20.2138 104,-19.2 116.207,-17.926 129.429,-17.3398 141.792,-17.1332" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+            <polygon fill="black" stroke="black" points="141.966,-20.6318 151.934,-17.0421 141.903,-13.6321 141.966,-20.6318" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#161718; --darkreader-inline-stroke:#161718;"></polygon>
+            <text text-anchor="middle" x="111" y="-24.2" font-family="Times,serif" font-size="14.00">20</text>
+        </g>
+        <!-- Chatelet -->
+        <g id="node14" class="node"><title>Chatelet</title>
+            <ellipse fill="none" stroke="black" cx="43" cy="-98" rx="43.4338" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="43" y="-93.8" font-family="Times,serif" font-size="14.00">Chatelet</text>
+        </g>
+        <!-- Chatelet&#45;&gt;Louvre -->
+        <g id="edge14" class="edge"><title>Chatelet-&gt;Louvre</title>
+            <path fill="none" stroke="black" d="M86.5185,-98C104.037,-98 124.43,-98 142.525,-98" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+            <polygon fill="black" stroke="black" points="142.591,-101.5 152.59,-98 142.59,-94.5001 142.591,-101.5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#161718; --darkreader-inline-stroke:#161718;"></polygon>
+            <text text-anchor="middle" x="111" y="-102.2" font-family="Times,serif" font-size="14.00">10</text>
+        </g>
+
+
+    </g>
+</svg>
