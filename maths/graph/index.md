@@ -98,6 +98,7 @@ want to check
 * <https://en.wikipedia.org/wiki/Topological_sorting>
 * <https://en.wikipedia.org/wiki/Eulerian_path>
 * <https://en.wikipedia.org/wiki/Hamiltonian_path>
+* <https://en.wikipedia.org/wiki/Sprague%E2%80%93Grundy_theorem>
 
 Trees
 
