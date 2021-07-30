@@ -67,8 +67,12 @@ This is a list of all Wikipedia pages that you may
 want to check
 
 * <https://en.wikipedia.org/wiki/Graph_theory>
+* <https://en.wikipedia.org/wiki/Glossary_of_graph_theory>
 * <https://en.wikipedia.org/wiki/Multiple_edges>
 * <https://fr.wikipedia.org/wiki/Graphe_simple>
+* <https://en.wikipedia.org/wiki/Adjacency_matrix>
+* <https://en.wikipedia.org/wiki/Degree_matrix>
+* <https://en.wikipedia.org/wiki/Incidence_matrix>
 
 Trees
 
