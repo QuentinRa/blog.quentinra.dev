@@ -2,25 +2,26 @@
 
 [Go back](..)
 
-An eulerian graph is
+A graph is eulerian if
 
-* a connected graph
-* having all degrees even (two odd allowed, see semi)
-* that have a least one eulerian graph/path
+* all vertex's degrees are even
+* it has a eulerian cycle/circuit traversing **each edge once**
 
-We are calling eulerian,
-a cycle/circuit/chain/path traversing **each edge once**.
+A graph is semi-eulerian if
 
-We are adding "semi-" before eulerian
-is the graph have exactly 2 odd degrees, because
-adding one edge will make the graph eulerian.
+* only 2 degree are odd
+* it has a eulerian chain/path traversing **each edge once**
+
+Legends say that we are adding "semi-" before eulerian because
+adding one vertex will make the graph eulerian.
 
 <hr class="sl">
 
 ## Algorithm
 
 Remember: a bridge (=`isthme`) is an edge that once removed
-will disconnect the graph.
+will disconnect the graph. You got one in semi-eulerian
+graphs.
 
 * let $S$ be the list of traversed edges
 * randomly pick a vertex (unless you got a bridge where at one
@@ -40,8 +41,10 @@ current vertex.
 
 ![](images/euler.svg)
 
-All degree are even so we may have a eulerian graph. We can only start at 5 or 7
-because we got a bridge here, let's start at 7
+All degree aside from $d(5)$ and $d(7)$
+are even so we may have a semi-eulerian graph. 
+We can only start at 5 or 7 because we got a bridge here,
+let's start at 7 and look for a eulerian chain
 
 * go to 7
 * we can traverse (7,0), (7,1), or (7,5: bridge): (7,0)
