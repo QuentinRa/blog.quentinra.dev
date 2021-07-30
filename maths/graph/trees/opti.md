@@ -17,12 +17,12 @@ by minimizing the total weight.
 
 **Prim's algorithm**
 
-1. Draw all of your vertices
-2. While you are not done
-    1. pick a vertex
-    2. draw the edges from this vertex to others
-    3. if an edge is creating a cycle, we remove the one
-       with the biggest weight
+1. Draw a starting vertex and add it links in $S$
+2. While $S$ isn't empty
+    1. pick the edge in $S$ having the least weight
+    2. if you can add it without creating a cycle, then add it
+    3. else destroy/remove the link
+    4. add the new vertex edges in $S$
 
 <hr class="sl">
 
@@ -33,18 +33,39 @@ at the line "Chatelet" and the column "N"
 is the cost for constructing a road from "N" (Neuilly)
 to "Chatelet".
 
-![](images/st2-1.png)
+![](images/mst1-1.png)
 
 <blockquote class="spoiler">
 
 We are creating 8 vertex for our 8 destinations. Then
 we are looking at least cost in the the whole table.
-It's 5 so if adding B (Bourse) - Opera is creating a cycle
+It's 5. If adding B (Bourse) - Opera is creating a cycle
 
 * then we do not add it
 * otherwise we add it
 
 And we are doing that until all the nodes are linked.
 
-![](images/st2-2.svg)
+![](images/mst1-2.svg)
+</blockquote>
+
+<hr class="sr">
+
+## Exercise 2 (Prim)
+
+Apply Prim's algorithm on this graph, **starting from a**.
+
+![](images/mst2-1.png)
+
+<blockquote class="spoiler">
+
+I colored in red the edges we make
+pick. Then among the ones in red, simply try to add the one
+with the least weight. If you can, then add the added vertex's
+edges in red and continue. If I couldn't add an edge, then
+I colored it in grey.
+
+![gif](images/mst2-2.gif) 
+
+![frames](images/mst2-3.png)
 </blockquote>
