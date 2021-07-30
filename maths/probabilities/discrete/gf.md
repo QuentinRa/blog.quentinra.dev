@@ -43,13 +43,13 @@ G(x) = \prod_{j=1}^{m} \sum_{i=k_j}^{n_j} x^i
 * we calculate a sum,
 * from $k_j$ (the minimum of times you want this value)
 * to $n_j$ (the maximum of times you want this value)
-* once you multiplied and factorized the result, $x^n$ if the number of distributions for $n$.
+* once you multiplied and factorized the result, $a$ in $a * x^i$ is the number of distributions for $n=i$.
 
 You may also use the other methods
-like explained 
+like explained on these websites 
 
-* [here (slides)](https://math.mit.edu/research/highschool/primes/materials/2018/conf/15-1%20Manne.pdf)
-* [here (text)](http://discrete.openmathbooks.org/dmoi2/section-27.html)
+* [math.mit.edu (slides)](https://math.mit.edu/research/highschool/primes/materials/2018/conf/15-1%20Manne.pdf)
+* [openmathbooks (text)](http://discrete.openmathbooks.org/dmoi2/section-27.html)
 
 <hr class="sl">
 
@@ -129,4 +129,5 @@ x^{28} + ... + 18 x^{12} + ... + x^6
 @
 </div>
 
-So we have 18 ways of doing your distribution.
+So we have 18 ways of doing your distribution
+(since $n=12$). If $n=6$ then it would be 1 etc.
