@@ -16,7 +16,7 @@ we have a tree.
 
 Given this graph $G$, give a spanning tree $T$
 
-![](st1.png)
+![](images/st1-1.png)
 
 <blockquote class="spoiler">
 
@@ -29,7 +29,7 @@ Given this graph $G$, give a spanning tree $T$
 * we are good
 * our spanning tree is
 
-![](st2.png)
+![](images/st1-2.png)
 
 Another answer: $(b,f),(e,h),(h,d),(b,g)$.
 </blockquote>

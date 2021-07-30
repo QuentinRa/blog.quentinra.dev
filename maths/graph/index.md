@@ -60,5 +60,7 @@ want to check
 * <https://en.wikipedia.org/wiki/Tree_(graph_theory)>
 * <https://en.wikipedia.org/wiki/Spanning_tree>
 * <https://en.wikipedia.org/wiki/Minimum_spanning_tree>
+* <https://en.wikipedia.org/wiki/Kruskal%27s_algorithm>
+* <https://en.wikipedia.org/wiki/Prim%27s_algorithm>
 
 [other references](refs.md)
