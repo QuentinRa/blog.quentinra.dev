@@ -1,0 +1,21 @@
+<svg width="202pt" height="44pt" viewBox="0.00 0.00 202.00 44.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="graph1" class="graph" transform="scale(1 1) rotate(0) translate(4 40)">
+        <title>_anonymous_0</title>
+        <polygon fill="#d8d8d8" stroke="#d8d8d8" points="-4,5 -4,-40 199,-40 199,5 -4,5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#c6c4c2; --darkreader-inline-stroke:#c6c4c2;"></polygon>
+        <!-- Bourse -->
+        <g id="node1" class="node"><title>Bourse</title>
+            <ellipse fill="none" stroke="black" cx="39" cy="-18" rx="38.2818" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="39" y="-13.8" font-family="Times,serif" font-size="14.00">Bourse</text>
+        </g>
+        <!-- Opéra -->
+        <g id="node3" class="node"><title>Opéra</title>
+            <ellipse fill="none" stroke="black" cx="158" cy="-18" rx="35.0811" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="158" y="-13.8" font-family="Times,serif" font-size="14.00">Opéra</text>
+        </g>
+        <!-- Bourse&#45;&gt;Opéra -->
+        <g id="edge2" class="edge"><title>Bourse-&gt;Opéra</title>
+            <path fill="none" stroke="black" d="M77.6636,-18C88.711,-18 100.899,-18 112.338,-18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+            <polygon fill="black" stroke="black" points="112.578,-21.5001 122.578,-18 112.578,-14.5001 112.578,-21.5001" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#161718; --darkreader-inline-stroke:#161718;"></polygon>
+        </g>
+    </g>
+</svg>
