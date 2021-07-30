@@ -54,7 +54,10 @@ $[0,1]$
 We call **distribution function**, a strictly positive
 function where the sum of all values (=probabilities) is 1.
 It's a function associating each value of
-$\Omega$ to their probability.
+$\Omega$ to their probability of happening
+($f(x) \to \Omega$). When $x$
+is taking finite values, we are using discrete probability
+otherwise we are using continuous probabilities.
 
 We call **support of X** $\bigtriangleup_X$
 or $X(\Omega)$ the domain of the distribution function of
@@ -62,7 +65,7 @@ X. The probability
 outside the support is 0. You can use that to make a sum
 on the support.
 
-* [Counting techniques](discrete/counting.md)
+* [Counting techniques / combinatorics](discrete/counting.md)
 * [Generating Functions](discrete/gf.md)
 
 <hr class="sr">
@@ -88,15 +91,17 @@ the function giving us the value for $\mathbb{P}(X=k)$.
 A mass function is valid if
 
 * the sum of the probabilities is **1**
-* probabilities are in $[0,1]$
+* $\forall{x},\ f(x) \ge 0$
 
-A lot of persons are also calling this
+A lot of people are also calling this
 function the density function (implicitly
-"discrete density function") but I think
-this is confusing since the density function
-is associated with continuous variables.
+"discrete density function") but 
+I think this is confusing since 
+the density function is associated with continuous variables. 
+You could also see "(continuous) mass function" used
+with continuous variables, and my opinion is the same.
 
-Let's dig more into it
+Let's dig more into it.
 
 * [Calculate a discrete probability](discrete/calculate.md)
 * [Independence](discrete/independence.md)
