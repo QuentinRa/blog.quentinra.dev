@@ -2,6 +2,13 @@
 
 [Go back](..)
 
+Tools
+
+* <http://webgraphviz.com/>
+* <http://atomurl.net/math/>
+
+French, old references
+
 * <https://fr.wikipedia.org/wiki/Lexique_de_la_th%C3%A9orie_des_graphes>
 * <http://atomurl.net/math/>
 * <https://fr.wikiversity.org/wiki/Th%C3%A9orie_des_graphes/Propri%C3%A9t%C3%A9s>

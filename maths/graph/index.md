@@ -30,6 +30,25 @@ Then here is the vocabulary
 
 <hr class="sl">
 
+## Trees
+
+A tree is a graph having one of these properties
+(they are equivalent)
+
+* connected and acyclic (=no cycles)
+* one path between two nodes
+* connected but would be disconnected if we are removing a vertex
+* acyclic but would be cyclic if we are adding one vertex
+* connected and $|E| = |V| - 1$
+* acyclic and $|E| = |V| - 1$
+
+And here are new notions for trees
+
+* [Spanning tree](trees/def.md) (`Arbre couvrant`)
+* [Minimum weight spanning tree (MST)](trees/opti.md) (`Arbre couvrant de poids minimum (ACM)`)
+
+<hr class="sr">
+
 ## Sources
 
 This is a list of all Wikipedia pages that you may
@@ -38,5 +57,8 @@ want to check
 * <https://en.wikipedia.org/wiki/Graph_theory>
 * <https://en.wikipedia.org/wiki/Multiple_edges>
 * <https://fr.wikipedia.org/wiki/Graphe_simple>
+* <https://en.wikipedia.org/wiki/Tree_(graph_theory)>
+* <https://en.wikipedia.org/wiki/Spanning_tree>
+* <https://en.wikipedia.org/wiki/Minimum_spanning_tree>
 
 [other references](refs.md)
