@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     contentScriptType="application/ecmascript" contentStyleType="text/css" height="280px" preserveAspectRatio="none"
+     style="width:252px;height:280px;background:#FFFFFF;" version="1.1" viewBox="0 0 252 280" width="252px"
+     zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f8ldvucbsbn3e" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix"
+                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g><!--MD5=[c864df5d74e85eae4d2310986f459600]
+class TaskA-->
+        <rect codeLine="1" fill="#FEFECE" filter="url(#f8ldvucbsbn3e)" height="91.1875" id="TaskA"
+              style="stroke:#A80036;stroke-width:1.5;" width="98" x="7" y="7"/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="37" x="37.5"
+              y="23.1387">TaskA
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="104" y1="30.9688" y2="30.9688"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="13"
+              y="45.1792">early_start: 0
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="69" x="13"
+              y="57.9839">last_start: 0
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="104" y1="64.5781" y2="64.5781"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="85" x="13"
+              y="78.7886">marge libre : 0
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="86" x="13"
+              y="91.5933">total_margin: 0
+        </text><!--MD5=[2d87fb35d49531e01c3237d6246ea161]
+class TaskB-->
+        <rect codeLine="7" fill="#FEFECE" filter="url(#f8ldvucbsbn3e)" height="91.1875" id="TaskB"
+              style="stroke:#A80036;stroke-width:1.5;" width="98" x="140" y="7"/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="37" x="170.5"
+              y="23.1387">TaskB
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="141" x2="237" y1="30.9688" y2="30.9688"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="146"
+              y="45.1792">early_start: 0
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="69" x="146"
+              y="57.9839">last_start: 10
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="141" x2="237" y1="64.5781" y2="64.5781"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="85" x="146"
+              y="78.7886">marge libre : 0
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="86" x="146"
+              y="91.5933">total_margin: 0
+        </text><!--MD5=[d27dbe4c19a69cc4c86671d5d620aafe]
+class TaskC-->
+        <rect codeLine="13" fill="#FEFECE" filter="url(#f8ldvucbsbn3e)" height="91.1875" id="TaskC"
+              style="stroke:#A80036;stroke-width:1.5;" width="102" x="71" y="175"/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="37" x="103.5"
+              y="191.1387">TaskC
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="72" x2="172" y1="198.9688" y2="198.9688"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="77"
+              y="213.1792">early_start: 30
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="77"
+              y="225.9839">last_start: 30
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="72" x2="172" y1="232.5781" y2="232.5781"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="88" x="77"
+              y="246.7886">free_margin : 0
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="90" x="77"
+              y="259.5933">total_margin : 0
+        </text><!--MD5=[4085e55bca94b4b74301c175fdde237a]
+link TaskA to TaskC-->
+        <path codeLine="20" d="M74.0348,98.4067 C82.7647,120.6283 93.2673,147.3623 102.2165,170.142 " fill="none"
+              id="TaskA-to-TaskC" style="stroke:#A80036;stroke-width:1.0;"/>
+        <polygon fill="#A80036"
+                 points="104.1014,174.9399,104.5336,165.1005,102.2732,170.2861,97.0875,168.0257,104.1014,174.9399"
+                 style="stroke:#A80036;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="16" x="92"
+              y="141.0669">30
+        </text><!--MD5=[8322294c7e261f7ee6c9c33a45691f9b]
+link TaskB to TaskC-->
+        <path codeLine="21" d="M170.692,98.4067 C161.8298,120.6283 151.168,147.3623 142.0833,170.142 " fill="none"
+              id="TaskB-to-TaskC" style="stroke:#A80036;stroke-width:1.0;"/>
+        <polygon fill="#A80036"
+                 points="140.1698,174.9399,147.2193,168.0621,142.0221,170.2956,139.7885,165.0984,140.1698,174.9399"
+                 style="stroke:#A80036;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="16" x="158"
+              y="141.0669">20
+        </text><!--MD5=[82454b63547e086a380cbd96fc9fdde2]
+@startuml
+class TaskA {
+        {field} early_start: 0
+        {field} last_start: 0
+        {method} marge libre : 0
+        {method} total_margin: 0
+}
+class TaskB {
+        {field} early_start: 0
+        {field} last_start: 0
+        {method} marge libre : 0
+        {method} total_margin: 0
+}
+class TaskC {
+        {field} early_start: 30
+        {field} last_start: 30
+        {method} free_margin : 0
+        {method} total_margin : 0
+}
+
+TaskA - -> TaskC : 30
+TaskB - -> TaskC : 20
+
+hide class circle
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 12:40:07 UTC 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+    </g>
+</svg>
