@@ -1,21 +1,23 @@
 # ARGUMENTS
 
-[Go back](..)
+[Go back](..#most-used-instructions)
 
-> They allow you for instance
-> to create different build according
-> to a version
+Arguments allow you, for instance,
+to create different builds according
+to a version. The syntax is
 
-Syntax is like
-
-```none
+```dockerfile
 ARG NAME=value
 ```
 
-* ``NAME`` : argument name
-* ``value`` : argument value
+with
 
-**Exemples**
+* ``NAME``: the argument name
+* ``value``: the argument value
+
+<hr class="sl">
+
+## Example
 
 ```dockerfile
 # latest is the default value
@@ -29,5 +31,4 @@ ARG CODE_VERSION
 
 FROM extras:${CODE_VERSION}
 #...
-
 ```
