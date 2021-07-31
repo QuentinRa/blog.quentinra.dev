@@ -1,15 +1,15 @@
 # ONBUILD
 
-[Go back](..)
+[Go back](..#most-used-instructions)
 
-> Called if this image is used by another
-> in a FROM
+Called if this image is used by another
+in a FROM. The syntax is
 
-Syntax is like
-
-```none
+```dockerfile
 ONBUILD INSTRUCTION ARGUMENT
 ```
 
-* ``INSTRUCTION`` : a command
-* ``ARGUMENT`` : a command argument
+with
+
+* ``INSTRUCTION``: a command
+* ``ARGUMENT``: a command argument

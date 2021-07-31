@@ -1,20 +1,23 @@
 # LABEL
 
-[Go back](..)
+[Go back](..#most-used-instructions)
 
-> Set image properties that are shown
-> when using command ``docker image inspect image_name_here``
+Set the image properties that are shown
+when using the command ``docker image inspect image_name_here``.
+The syntax is
 
-Syntax is like
-
-```none
+```dockerfile
 LABEL "property"="value"
 ```
 
-* ``property`` : a property, see examples
-* ``value`` : a value
+with
 
-**Example**
+* ``property``: a property, see examples
+* ``value``: a value
+
+<hr class="sl">
+
+## Examples
 
 ```dockerfile
 LABEL name="image name"

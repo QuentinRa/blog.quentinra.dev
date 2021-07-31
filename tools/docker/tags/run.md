@@ -1,23 +1,23 @@
 # RUN
 
-[Go back](..)
+[Go back](..#most-used-instructions)
 
-> Run a command
+Run a command
 
-Syntax is like
-
-```none
+```dockerfile
 RUN command
-or
+# or
 RUN "command1;command2;..."
-or
+# or
 RUN ["command","arg1","arg2"]
 ```
 
-* ``command`` : a command, is the os-image-specific
-language
+with ``command``, a command in the os-image-specific
+language.
 
-**Examples**
+<hr class="sl">
+
+## Example
 
 ```dockerfile
 # install a package called locales

@@ -1,17 +1,16 @@
 # FROM
 
-[Go back](..)
+[Go back](..#most-used-instructions)
 
-> Note that this is the first line
-> and it's required.
+This is the first line and it's required. You may
+have multiples of them if you are making multiples
+builds
 
-Syntax is like
-
-```none
+```dockerfile
 FROM image
-or
+# or
 FROM image:version
-or
+# or
 FROM image:version as name
 ```
 
@@ -19,13 +18,15 @@ FROM image:version as name
 * ``version``: version of the tag, optional
 * ``name``: you can have a lot of from and give
 them a name, optional
+
+<hr class="sl">
   
-**Example**
+## Example
 
 ```dockerfile
 # image is gcc, version is 8.4
 FROM gcc:8.4
 # image is gcc, version is latest
 # you should not use that
-FROM gcc:lastest
+FROM gcc:latest
 ```
