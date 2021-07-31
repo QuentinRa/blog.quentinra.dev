@@ -1,16 +1,12 @@
 # DIRECTIVES
 
-[Go back](..)
+[Go back](..#most-used-instructions)
 
-> Used to modify some elements of syntax
+Directives are used to modify some elements of syntax.
+They must be at the top of the file, the first comment.
 
-A directive must be at the top of the file,
-the first comment.
-
-**Exemples**
-
-Docker multiline escape code, example ``\ ``
+* **Docker multiline escape code**, the default value is ``\ ``
 
 ```dockerfile
-#escape={caractère}
+#escape={character}
 ```
