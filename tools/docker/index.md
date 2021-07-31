@@ -10,15 +10,16 @@ A virtual machine allows someone to have a Linux desktop
 on Windows, for instance, so one can start a Linux-only 
 application in Windows.
 But a virtual machine may be too much to install, 
-so ``docker`` is a mix between those. It will use your current
-machine so your system file, RAM, CPU ... to run a container 
-that can have a Windows, Linux, ... system running in it.
+so ``docker`` is a mix between those. 
+It will use your current machine so your system file, RAM, CPU ... 
+to run a container that can have 
+Windows, Linux, ... system running in it.
 
-But a ``docker`` image doesn't have a memory so each 
-time you start a `container` (=run your application),
+But a ``docker`` image doesn't have a memory so each time
+you start a `container` (=run your application),
 **it will restart from scratch**.
 
-Also a downside a ``docker``, that I least stumbled upon was
+Also, a downside a ``docker``, that I found was that
 it was quite hard and impossible for me to use some 
 system-specific devices such as 
 sound (<span class="text-muted small">at least in Windows
@@ -28,7 +29,7 @@ but in Linux or macOS it seems to be possible</span>).
 
 ## Install Docker
 
-Firstly, ready the official documentation, it might help more.
+Firstly, read the official documentation, it might help more.
 Here is the [install page](https://docs.docker.com/engine/install/).
 
 * check if installed with ``docker -v``
@@ -61,13 +62,13 @@ Other commands that one might use
 * ``docker ps``: list of running containers with their ID
 * ``docker rm id``: end of running container
 * ``docker run -p ps:pm tag``: start image and bind port
-of your container ``ps`` with one of your machine `pm`.
+of your container ``ps`` with one of your machine ports `pm`.
 
 <hr class="sl">
 
 ## Dockerfile
 
-Here an example of a ``Dockerfile``
+Here is an example of a ``Dockerfile``
 
 ```dockerfile
 # source image
@@ -107,20 +108,20 @@ done automatically if you didn't)
 
 This is a summary of the most used instruction.
 
-* [FROM](tags/from.md) : source image
-* [WORKDIR](tags/workdir.md) : change workdir
-* [ADD](tags/add.md) : add files
-* [COPY](tags/copy.md) : copy files
-* [RUN](tags/run.md) : run a command
-* [CMD](tags/cmd.md) : run a command when container is started
-* [ENV](tags/env.md) : set environment variables
+* [FROM](tags/from.md): source image
+* [WORKDIR](tags/workdir.md): change workdir
+* [ADD](tags/add.md): add files
+* [COPY](tags/copy.md): copy files
+* [RUN](tags/run.md): run a command
+* [CMD](tags/cmd.md): run a command when container is started
+* [ENV](tags/env.md): set environment variables
 
 Less commonly used
 
-* [EXPOSE](tags/expose.md) : link/expose a port
-* [USER](tags/user.md) : create user
-* [LABEL](tags/label.md) : image metadata
-* [VOLUME](tags/volume.md) : create a mounting point 
+* [EXPOSE](tags/expose.md): link/expose a port
+* [USER](tags/user.md): create user
+* [LABEL](tags/label.md): image metadata
+* [VOLUME](tags/volume.md): create a mounting point 
 <span class="tms">(such as `/mnt` for WSL)</span>
 
 You may use
