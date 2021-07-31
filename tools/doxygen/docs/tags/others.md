@@ -1,4 +1,4 @@
-#### Some tags
+# Other tags
 
 [Go back](../c.md)
 
@@ -9,14 +9,11 @@ you don't see them often
 * ``\bug desc``: if bug found and a description
 * ``\note desc``: if you want to write a note with a description
 
-And some test-related tags
+<hr class="sr">
 
-* ``\test description``: a test that may be done
-* ``\pre description``: preconditions
-* ``\post description``: post conditions
-* ``\invariant description``: invariant
+## Test-related tags
 
-As a remember, an invariant is something that won't
+An invariant is something that won't
 be changed from their value before the call of a
 function.
 
@@ -25,3 +22,8 @@ for true.
 
 And a postcondition is something that we ensure
 to make it true after the call of the function.
+
+* ``\test description``: a test that may be done
+* ``\pre description``: preconditions
+* ``\post description``: post conditions
+* ``\invariant description``: invariant

@@ -2,28 +2,40 @@
 
 [Go back](..)
 
-> You will use these not only in C but everywhere else
-> but I wrote ``C`` since they only got tested in C
+You will use these not only in C but everywhere else
+but I wrote ``C`` since they only got tested in C.
+This is a list of the tags you will use
 
-Most of the time you can add a
+* [For a file](tags/file.md)
+* [For a folder](tags/folder.md)
+* [For an enum](tags/enum.md)
+* [For a structure](tags/structure.md)
+* [For an include](tags/include.md)
+* [For a define](tags/define.md)
+* [For a variable](tags/variable.md)
+* [For a function](tags/function.md)
+* [Others tags](tags/others.md)
+
+<hr class="sr">
+
+## Common tags
+
+Most of the time, in the comment, you can add
 
 * ``\brief short desc``: short description
 * `...`: and/or a long description after all tags
 * ``\see ...``: reference another tag, such as a file/type/...
-  only one ``see`` per line but you can have
-  as many of these as you want.
-* ``{@link ....}``: or you can use that is like see
-but can be used inside text such as in the middle of
-  a sentence
-  
-Here is some help for some tags
+  You can only have per line but you can have as many of these as you want.
+* ``{@link ....}``: same as see but can be used inside text
+  such as in the middle of a sentence
 
-* [A file](tags/file.md)
-* [A folder](tags/folder.md)
-* [An enum](tags/enum.md)
-* [A structure](tags/structure.md)
-* [An include](tags/include.md)
-* [A define](tags/define.md)
-* [A variable](tags/variable.md)
-* [A function](tags/function.md)
-* [Others tags](tags/others.md)
+```c
+/*!
+ * \brief short description
+ * \see file.h
+ * \see file2.h
+ *
+ * a long description having a {@link file.h}
+ * and nothing more.
+*/
+```
