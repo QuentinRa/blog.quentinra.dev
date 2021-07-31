@@ -15,15 +15,18 @@ The generated file will be a ``xxx.iss`` kind of file.
 
 <hr class="sr">
 
-## Converse folder of files
+## Keep folder
 
 If you added a folder with files inside and you want
-to move re-create the same folder with the installer
+the instruction to re-create the same folder with the installer
 then replace
 
 ```bash
 Source: "xxxx\app\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-# by
+```
+
+by
+```bash
 Source: "xxxx\app\*"; DestDir: "{app}\app"; Flags: ignoreversion recursesubdirs createallsubdirs
 ```
 
