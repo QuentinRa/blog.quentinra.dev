@@ -3,39 +3,40 @@
 **Docker is an easy way to share an application**. You will pack
 your app with a configuration in a ``Dockerfile`` and it will
 create a Docker image.
-
 Then any machine that has `docker` can run your image, 
 meaning your application can be run everywhere.
 
-<hr class="sr">
+A virtual machine allows someone to have a Linux desktop
+on Windows, for instance, so one can start a Linux-only 
+application in Windows.
+But a virtual machine may be too much to install, 
+so ``docker`` is a mix between those. It will use your current
+machine so your system file, RAM, CPU ... to run a container 
+that can have a Windows, Linux, ... system running in it.
 
-## Some additional details
+But a ``docker`` image doesn't have a memory so each 
+time you start a `container` (=run your application),
+**it will restart from scratch**.
 
-A virtual machine allows someone to have a Linux desktop on Windows, for instance, so one can start a Linux-only application in Windows.
-
-But a virtual machine may be too much to install, so ``docker`` is a mix between those. It will use your current machine so your system file, RAM, CPU ... to run a container that can have a Windows, Linux, ... system running in it.
-
-But a ``docker`` image doesn't have a memory so each time you start a `container`, so each time you run your application, **it will restart from scratch**.
-
-Also a downside a ``docker``, that I least stumbled upon was it was quite
-hard and impossible for me to use some system-specific devices such as
-sound (<span class="text-muted small">at least in Windows but in Linux or macOS it seems to be possible</span>).
+Also a downside a ``docker``, that I least stumbled upon was
+it was quite hard and impossible for me to use some 
+system-specific devices such as 
+sound (<span class="text-muted small">at least in Windows
+but in Linux or macOS it seems to be possible</span>).
 
 <hr class="sl">
 
 ## Install Docker
 
-Firstly, ready the official documentation might help better
-then I do so read it here
-[https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/).
+Firstly, ready the official documentation, it might help more.
+Here is the [install page](https://docs.docker.com/engine/install/).
 
 * check if installed with ``docker -v``
 * on windows
-
-    * install [Docker desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-    * you need to restart it each time your want to use ``docker`` commands
-    * when the application is started, confirmation messages should be shown 
-    then you can use ``docker`` commands
+  * install [Docker desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+  * you need to restart it each time your want to use ``docker`` commands
+  * when the application is started, confirmation messages should be shown
+  then you can use ``docker`` commands
 
 <hr class="sr">
 
@@ -104,7 +105,7 @@ done automatically if you didn't)
 
 ### Most used instructions
 
-Voici un résumé de quelques instructions, vous avez tous les détails plus bas
+This is a summary of the most used instruction.
 
 * [FROM](tags/from.md) : source image
 * [WORKDIR](tags/workdir.md) : change workdir
@@ -112,14 +113,15 @@ Voici un résumé de quelques instructions, vous avez tous les détails plus bas
 * [COPY](tags/copy.md) : copy files
 * [RUN](tags/run.md) : run a command
 * [CMD](tags/cmd.md) : run a command when container is started
-* [ENV](tags/env.md) : set environnement variables
+* [ENV](tags/env.md) : set environment variables
 
 Less commonly used
 
 * [EXPOSE](tags/expose.md) : link/expose a port
 * [USER](tags/user.md) : create user
 * [LABEL](tags/label.md) : image metadata
-* [VOLUME](tags/volume.md)` : create a mounting point (`/mnt` such as WSL is doing)
+* [VOLUME](tags/volume.md) : create a mounting point 
+<span class="tms">(such as `/mnt` for WSL)</span>
 
 You may use
 
@@ -135,16 +137,16 @@ be useful
 
 <hr class="sl">
 
-## Other
+## Kubernetes
 
-### Kubernetes
-
-I still haven't learned how to use it so nothing for now
-but from what I know
+I still haven't learned how to use it so nothing is here
+for now but from what I know
 you can use ``Kubernetes`` to make sure that there are
 always ``x`` instances of an image running.
 
-### .dockerignore
+<hr class="sr">
+
+## .dockerignore
 
 You may have files that you don't want ``Docker`` to copy
 so you may use a ``.dockerignore`` using the `.ignore`
@@ -159,14 +161,15 @@ syntax
 directory/
 ````
 
-<hr class="sr">
+<hr class="sl">
 
-### Real docker example 
+## Real docker example 
 
-From hub.ducker.com
+From [hub.docker.com](https://hub.docker.com),
+a bit modified (version 4.9 => 8.4) and adding comments.
 
 ```dockerfile
-# image is gcc in an old version
+# image is gcc in version 8.4
 FROM gcc:8.4
 # copy your project in /usr/src/myapp
 COPY . /usr/src/myapp
@@ -174,20 +177,21 @@ COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 # ... in order to compile without writing /usr/src/myapp/main.c
 # or /usr/src/myapp/myapp since the current folder is /usr/src/myapp/
-RUN gcc -o myapp main.c # génère notre exécutable
+# generate "./myapp"
+RUN gcc -o myapp main.c
 # when started with call our program
 CMD ["./myapp"]
 ```
 
-<hr class="sl">
+<hr class="sr">
 
 ## Sources
 
-* [docs.docker.com](https://docs.docker.com/)
-* [Kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
-* [hello-world](https://github.com/docker-library/hello-world/blob/master/Dockerfile.build)
-* [C-build](https://ownyourbits.com/2017/06/20/c-build-environment-in-a-docker-container/)
-* [C/C++ build](https://amytabb.com/ts/2018_07_28/)
-* [webapps](https://github.com/docker/labs/blob/master/beginner/chapters/webapps.md)
-* [IMUNES](https://github.com/imunes/vroot-linux)
-* [webapps](https://github.com/docker/labs/blob/master/beginner/chapters/webapps.md)
+* <https://docs.docker.com/>
+* <https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/>
+* <https://github.com/docker-library/hello-world/blob/master/Dockerfile.build>
+* <https://ownyourbits.com/2017/06/20/c-build-environment-in-a-docker-container/>
+* <https://amytabb.com/ts/2018_07_28/>
+* <https://github.com/docker/labs/blob/master/beginner/chapters/webapps.md>
+* <https://github.com/imunes/vroot-linux>
+* <https://github.com/docker/labs/blob/master/beginner/chapters/webapps.md>
