@@ -1,24 +1,25 @@
 # CMD
 
-[Go back](..)
+[Go back](..#most-used-instructions)
 
-> Run a command when image is started
-> Only one per container
+Run a command when the image is started.
+**You may only have one per container**.
+The syntax is
 
-Syntax is like
-
-```none
+```dockerfile
 CMD command
-or
+# or
 CMD "command1;command2;..."
-or
+# or
 CMD ["command","arg1","arg2"]
 ```
 
-* ``command`` : a command, is the os-image-specific
-  language
+with ``command``, a command in the os-image-specific
+language. You could use it to start a program etc.
 
-**Exemples**
+<hr class="sl">
+
+## Example
 
 ```dockerfile
 # run my_prog when image is started
