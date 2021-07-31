@@ -1,18 +1,18 @@
 # ADD
 
-[Go back](..)
+[Go back](..#most-used-instructions)
 
-> Add a file from a source to a destination
+Add a file from a source to a destination
 
-Syntax is like
-
-```none
+```dockerfile
 ADD src dest
-or
+# or
 ADD --chown=user:group src dest
 ```
 
-* ``src`` : can be a path or an url
-* ``dest`` : a path
-* ``--chown={user}:{group}`` : linux-only,
+with
+
+* ``src``: can be a path or an URL
+* ``dest``: a path
+* ``--chown={user}:{group}``: Linux-only,
 set the user and the group of the ``dest`` file
