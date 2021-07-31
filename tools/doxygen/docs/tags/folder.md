@@ -1,11 +1,9 @@
-#### Folder
+# Folder
 
 [Go back](../c.md)
 
 You can use this trick to comment a folder 
-or a package.
-
-Create a file ``package.dox``
+or a package. Create a file ``package.dox``
 
 ```c
 /** @dir headers
@@ -18,4 +16,5 @@ A description of this package/folder.
 ```
 
 When folders are documented they appear
-in ``m.css doxygen`` files list.
+in ``m.css doxygen`` files list (if you are using
+m.css renderer).

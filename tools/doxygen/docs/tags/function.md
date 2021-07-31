@@ -1,4 +1,4 @@
-#### Function
+# Function
 
 [Go back](../c.md)
 
@@ -18,10 +18,10 @@
 int pow(const int x, const int k);
 ```
 
-Explications
+Explanations
 
-* ``\param name`` : a parameter in
-* ``\param[in] name`` : a parameter that is only read, may be `const`
-* ``\param[out] name`` : a parameter that will be overridden
-* ``\param[in,out] name`` : may be read or overridden or both
-* ``return ...`` : what's returned by the function
+* ``\param name``: a parameter in
+* ``\param[in] name``: a parameter that is only read, may be `const`
+* ``\param[out] name``: a parameter that will be overridden
+* ``\param[in,out] name``: may be read or overridden or both
+* ``return ...``: what's returned by the function

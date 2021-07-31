@@ -1,4 +1,4 @@
-#### Comment a structure
+# Structure
 
 [Go back](../c.md)
 
@@ -12,15 +12,17 @@
 *
 */
 typedef struct NAME {
- int id; //!< brief description of this attribute
- char* key; /*!< @brief
-    * This is a big description of this attribute
-    * that I'm writing here.
-    */
+    int id; //!< brief description of this attribute
+    char* key; /*!< @brief
+        * This is a big description of this attribute
+        * that I'm writing here.
+        */
 } NEW_NAME; //!< brief description of this struct
 ```
 
 It may be tiring but you have to make sure
-to write to tag brief and **typedef** must
+
+* to write to tag brief 
+* and **typedef** must
 be before **struct** otherwise you will have
-an error.
+an error (random).

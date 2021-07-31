@@ -1,4 +1,4 @@
-#### Comment a enum
+# Enum
 
 [Go back](../c.md)
 
@@ -15,7 +15,9 @@ typedef enum NAME {
 } NEW_NAME;
 ```
 
-* ``\typedef NEW_NAME`` : if you did an inline
+Notes
+
+* ``\typedef NEW_NAME``: if you did an inline
   declaration with a typedef then put this
   line **BEFORE** ``\enum``
-* ``\enum NAME`` : your enum name
+* ``\enum NAME``: your enum name
