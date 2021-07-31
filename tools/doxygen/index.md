@@ -12,15 +12,15 @@ Based on ``doxygen`` version `1.9.1`.
 
 <hr class="sr">
 
-## Starting with doxygen
+## Starting with Doxygen
 
 Doxygen is working like the Javadoc in JAVA if you
 know what I mean to
 
 * write documentation using a special syntax
 * use a command to generates a website
-* open a file called ``index.html`` in your
-browser and check it out!
+* open a file called ``index.html``
+in your browser and check it out!
   
 Here some [installation tutorial](install.md)
 or if **needed** you can check their documentation
@@ -62,8 +62,7 @@ to say what you are commenting, before actually
 starting the comment. An example would be above,
 you must use a ``\file`` to say that
 you are commenting this file. So you would
-have to use ``\enum`` in the comment of an enum
-...
+have to use ``\enum`` in the comment of an enum etc.
 
 * [Write documentation in C](docs/c.md)
 * [Write documentation in Object-Oriented Languages](docs/oo.md)
@@ -141,7 +140,7 @@ such as this one [magnum](https://doc.magnum.graphics/magnum/)
 then here is my tutorial
 but you got the official one here
 [m.css](https://mcss.mosra.cz/documentation/doxygen/)
-that will help you (**really**).
+that will **quite** help you.
 
 * download theses files from [https://github.com/mosra/m.css](https://github.com/mosra/m.css)
 
@@ -156,17 +155,17 @@ that will help you (**really**).
   * folder ``plugins``
   * folder ``css``
   
-Put everything in the folder ``style``, I have
-a folder like this one
+Put everything in a ``style`` folder, mine looks
+like this
 [style folder](https://github.com/lgs-games/prim/tree/master/version_c/style)
 or this screen [style folder](download:mcss_folder.png).
 
 Next
 
-  * if ``python`` and `pip` are not installed then install them
-  * ``pip3 install jinja2 Pygments``
-  * create ``DoxyfileCSS``
-  *
+* if ``python`` and `pip` are not installed then install them
+* ``pip3 install jinja2 Pygments``
+* create ``DoxyfileCSS``
+* 
 
 ```bash
 # used to become a god
@@ -214,20 +213,20 @@ why do you need it
 * group some part of your code (all ``getters``
   , all ``setters``, all ``utilities``, all ``constructors``,
   ...)
-  
+
 * do **not** write ``@return int, a number``
-or ``@param int a number``: in most case it's useless
-  
+or ``@param int a number``: in most cases it's useless
+
   * maybe tell us the range of the variable
   * some values that may trigger a different behavior
 
 * don't copy-paste, use ``@see`` or whatever but don't.
 * a "big" description at the beginning of a file,
-to tells us why you are using this file and so that
-  we know if we should read it or not.
+  to tells us why you are using this file so that we know
+  if we should read it or not.
 * don't use ``\date`` or `\version` unless you really
 intend to modify them otherwise they are not useful
-  
+
 In general
 
 * don't forget non-doxygen comments, one per line or block
