@@ -1,17 +1,15 @@
 # USER
 
-[Go back](..)
+[Go back](..#most-used-instructions)
 
-> Create a user.
+Create a user
 
-Syntax is like
-
-```none
+```dockerfile
 USER name
 ```
 
-* ``name`` : username
+with ``name`` the username.
 
-> Beware! On Windows, you must call
-> ``RUN net user /add name`` or it will
-> fails
+**Beware**: On Windows, you must call
+``RUN net user /add name`` or it will
+fails

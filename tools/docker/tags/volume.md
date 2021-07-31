@@ -1,13 +1,11 @@
 # VOLUME
 
-[Go back](..)
+[Go back](..#most-used-instructions)
 
-> Create an external mounting point.
+Create an external mounting point.
 
-Syntax is like
-
-```none
+```dockerfile
 VOLUME path
 ```
 
-* ``path`` : a path
+with ``path`` the mounting point path.

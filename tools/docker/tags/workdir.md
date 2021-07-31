@@ -1,18 +1,18 @@
 # WORKDIR
 
-[Go back](..)
+[Go back](..#most-used-instructions)
 
-> Change current repository
+WORKDIR changes the current repository
 
-Syntax is like
-
-```none
+```dockerfile
 WORKDIR path
 ```
 
-* ``path`` : new path
+with ``path`` the new repository.
 
-**Examples**
+<hr class="sl">
+
+## Example
 
 ```dockerfile
 # cd /usr/folder on linux
