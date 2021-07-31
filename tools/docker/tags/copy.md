@@ -1,25 +1,27 @@
 # COPY
 
-[Go back](..)
+[Go back](..#most-used-instructions)
 
-> Copy a file from a source to a destination
+Copy a file from a source to a destination
 
-Syntax is like
-
-```none
+```dockerfile
 COPY src1 src2 ... srcn dest
-or
+# or
 COPY ["src", ...,"dest"]
-or
+# or
 COPY --chown={user}:{group} src1 src2 ... srcn dest
 ```
 
-* ``src`` : one or more source
-* ``dest`` : a destination
-* ``--chown={user}:{group}`` : linux-only,
+with
+
+* ``src``: one or more sources
+* ``dest``: a destination (folder)
+* ``--chown={user}:{group}``: Linux-only,
   set the user and the group of the ``dest`` file
 
-**Exemples**
+<hr class="sl">
+
+## Example
 
 ```dockerfile
 # copy all files in current directory so WORKDIR
