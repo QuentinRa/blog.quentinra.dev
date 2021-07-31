@@ -1,21 +1,23 @@
 # ENV
 
-[Go back](..)
+[Go back](..#most-used-instructions)
 
-> Set environnement variable
+Set environment variable
 
-Syntax is like
-
-```none
+```dockerfile
 ENV NAME VALUE
-or
+# or
 ENV NAME=VALUE
 ```
 
-* ``NAME`` : a variable name
-* ``VALUE`` : the value of the variable
+with
 
-**Example**
+* `NAME`: a variable name
+* `VALUE`: the value of the variable
+
+<hr class="sl">
+
+## Examples
 
 ```dockerfile
 # declare
@@ -27,8 +29,8 @@ ENV MY_HOME=/home
 WORKDIR ${MY_HOME}
 # same
 WORKDIR $MY_HOME
-# if MY_HOME not set then value is default
+# if MY_HOME isn't set then the value is default
 WORKDIR ${MY_HOME:-default}
-# if MY_HOME is set then replace value with unset
+# if MY_HOME is set then replace the value with unset
 WORKDIR ${MY_HOME:+unset}
 ```
