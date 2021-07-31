@@ -1,7 +1,7 @@
 # Introduction
 
 A graph $G$, is a set of **vertices** (=nodes=`sommets/nœuds`) $V$
-linked by **edges** (=links=`arrêtes`) $E$ giving us the notation
+linked by **edges** (=links=`arêtes`) $E$ giving us the notation
 $G(V, E)$. Vertices can have a direction or not.
 
 ![example](example.svg)
@@ -12,27 +12,111 @@ for.
 
 <hr class="sl">
 
-## Vocabulary
+## Kinds of graphs
 
 A graph can be simple/multiple and directed or not.
 
 * **simple graph** (``graphe simple``): up to one edge between
-  two vertices (2 if directed graph) and no loop/self-edges.
-* **multiple edges graph** (`graphe complexes`): graphs that are not simple graphs
-* **undirected graph** (`Graphe non orientés (GNO)`): edges have a direction,
-  they are written $[a,b]$
-* **directed graph** (`Graphe orientés (GO)`): edges do not have a direction,
+  two vertex (2 if "directed graph") and no loop/self-edges.
+* **multiple graph** (`graphe complexes`): graphs that are not simple
+* **undirected graph** (`Graphe non orientés (GNO)`): edges do not have a direction,
   they are written $(a,b)$
+* **directed graph** (`Graphe orientés (GO)`): edges, called arcs, have a direction,
+  they are written $[a,b]$
 
-Then here is the vocabulary
+<table class="table table-bordered table-dark table-striped">
+    <thead>
+        <tr>
+            <th>undirected graph</th>
+            <th>directed graph</th>
+            <th>description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                edge <br>
+                <code>arête</code>
+            </td>
+            <td>
+                arc <br>
+                <code>arc</code>
+            </td>
+            <td>
+                The keyword for edges in changing
+                if the graph is directed or not.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                chain/walk <br>
+                <code>Chaine</code>
+            </td>
+            <td>
+                path/trail <br>
+                <code>chemin</code>
+            </td>
+            <td>
+                Each vertex degree is 2
+                aside from the extremities (degree=1).
+            </td>
+        </tr>
+        <tr>
+            <td>
+                cycle/tour <br>
+                <code>cycle</code>
+            </td>
+            <td>
+                circuit <br>
+                <code>circuit</code>
+            </td>
+            <td>
+                Each vertex degree is 2. This is also
+                called "closed walk/path/...".
+            </td>
+        </tr>
+        <tr>
+            <td>
+                star <br>
+                <code>étoile</code>
+            </td>
+            <td>
+                star <br>
+                <code>étoile</code>
+            </td>
+            <td>
+                One vertex degree is $|V|-1$ and
+                the others are of degree $1$. It's a vertex
+                linked to all other vertices.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                wheel <br>
+                <code>roue</code>
+            </td>
+            <td>
+                wheel <br>
+                <code>roue</code>
+            </td>
+            <td>
+                One vertex degree is $|V|-1$ and
+                the others are of degree $3$. It's a vertex
+                linked to all other vertices and each
+                vertex is linked to two aside from the center
+                of the wheel.
+            </td>
+        </tr>
+    </tbody>
+</table>
 
-* **?** (`?`): ?
+Note: the degree is the number of neighbors, see next part.
 
 <hr class="sr">
 
 ## Sorting and search
 
-You can sort a graph using 
+You can sort a graph using
 
 * [Topological sorting](manip/ts.md)
 
