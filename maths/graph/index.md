@@ -114,6 +114,12 @@ Note: the degree is the number of neighbors, see next part.
 
 <hr class="sr">
 
+## Terminology
+
+...
+
+<hr class="sl">
+
 ## Sorting and search
 
 You can sort a graph using
@@ -131,7 +137,7 @@ a edge/vertex with
 * [Eulerian graph](manip/euler.md)
 * [Hamiltonian graph](manip/hamilton.md)
 
-<hr class="sl">
+<hr class="sr">
 
 ## Trees
 
@@ -150,7 +156,7 @@ And here are new notions for trees
 * [Spanning tree](trees/def.md) (`Arbre couvrant`)
 * [Minimum weight spanning tree (MST)](trees/opti.md) (`Arbre couvrant de poids minimum (ACM)`)
 
-<hr class="sr">
+<hr class="sl">
 
 ## Shortest path problem
 
@@ -161,6 +167,28 @@ You have 4 algorithms explained here (out of 6)
 * [Floyd–Warshall algorithm](sp/floyd-warshall.md)
 * [Johnson's algorithm](sp/johnson.md)
 * [Distance and Diameter](sp/distance.md)
+
+<hr class="sr">
+
+## Scheduling problem
+
+In French it's ``Ordonnancement``. You are given
+
+* a list of tasks and their dependencies (like a task need another one to be done first)
+* a tasks duration
+
+And your job is to create the best schedule meaning that
+you must find the best way to organize the tasks making
+the project the shorter possible.
+
+It's not only used in project, but here we are considering
+that we can execute an unlimited number of tasks in parallel
+and we do not take delays in account so it's a simplified
+version of scheduling.
+
+* [Terminology](scheduling/index.md)
+* [potentiel-tâche method](scheduling/pt.md)
+* [P.E.R.T. method](scheduling/pert.md)
 
 <hr class="sl">
 
@@ -184,6 +212,8 @@ want to check
 * <https://en.wikipedia.org/wiki/Hamiltonian_path>
 * <https://en.wikipedia.org/wiki/Sprague%E2%80%93Grundy_theorem>
 * <https://en.wikipedia.org/wiki/Bridge_(graph_theory)>
+* <https://fr.wikipedia.org/wiki/M%C3%A9thode_potentiel-t%C3%A2che>
+* <https://en.wikipedia.org/wiki/Program_evaluation_and_review_technique>
 
 Trees
 
