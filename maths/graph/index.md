@@ -214,6 +214,7 @@ want to check
 * <https://en.wikipedia.org/wiki/Bridge_(graph_theory)>
 * <https://fr.wikipedia.org/wiki/M%C3%A9thode_potentiel-t%C3%A2che>
 * <https://en.wikipedia.org/wiki/Program_evaluation_and_review_technique>
+* <https://en.wikipedia.org/wiki/Critical_path_method>
 
 Trees
 
