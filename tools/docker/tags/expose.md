@@ -1,24 +1,26 @@
 # EXPOSE
 
-[Go back](..)
+[Go back](..#most-used-instructions)
 
-> Expose a port of the container
-> meaning that we will be able to bind
-> or port of our machine with one of
-> the image that will run.
+Expose a port of the container
+meaning that we will be able to bind
+or port of our machine with one of
+the images that will run. The syntax is
 
-Syntax is like
-
-```none
+```dockerfile
 EXPOSE port
-or
-EXPOSE port/protocole
+# or
+EXPOSE port/protocol
 ```
 
-* ``port`` : a port such as 80 for HTTP
-* ``protocole`` : a protocole such as tcp, udp
+with
 
-**Example**
+* ``port`` : a port such as 80 for HTTP
+* ``protocole`` : a protocol such as tcp, udp
+
+<hr class="sl">
+
+## Example
 
 ```dockerfile
 EXPOSE 80
