@@ -1,6 +1,6 @@
 # Topological sorting
 
-[Go back](..)
+[Go back](..#sorting-and-search)
 
 This is an order in which each vertex is before it successors. You will start
 with the vertex having no successors, then

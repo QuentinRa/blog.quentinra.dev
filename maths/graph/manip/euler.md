@@ -1,6 +1,6 @@
 # Eulerian graph
 
-[Go back](..)
+[Go back](..#sorting-and-search)
 
 A graph is eulerian if
 

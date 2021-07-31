@@ -1,6 +1,6 @@
 # Hamiltonian graph
 
-[Go back](..)
+[Go back](..#sorting-and-search)
 
 An hamiltonian graph is
 

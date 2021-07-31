@@ -1,6 +1,6 @@
 # Depth-first search
 
-[Go back](..)
+[Go back](..#sorting-and-search)
 
 In French it's called ``Parcours en profondeur``. To summarize,
 you will traverse a path until you can't go further, then
