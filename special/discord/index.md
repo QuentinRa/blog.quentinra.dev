@@ -7,7 +7,7 @@ is an application allowing users to create
 * guilds (=a server)
 * channels (to chat/talk)
 
-This course are a gathering on notes about
+This course is a gathering of notes about
 discord and discord API.
 
 <hr class="sr">
@@ -15,18 +15,18 @@ discord and discord API.
 ## About the application
 
 The desktop application was made using electron
-which means that discord desktop app is simply
-running in a chromium browser.
+which means that the discord desktop app is simply
+running in a chromium-browser.
 
 * you can use ``CTRL-SHIFT-I`` and open the developer tools
 * you can use ``CTRL-R`` to refresh discord (no real use for this)
 * ...
 
-Pressing shift while overing a message show a small
-popup allowing to get the message id/channel id
-and the guild id (used in the api). You can also
+Pressing shift while hovering a message show a small
+popup allowing to get the message-id/channel-id
+and the guild id (used in the API). You can also
 delete/... a message using this but most people
-are using the right click for these.
+are using their right click for these.
 
 The messages are allowing a lot of markdown syntax
 so you can use
@@ -50,7 +50,7 @@ int main(void){
 
 ## BetterDiscord
 
-Better discord is a software improving discord by allowing
+Better discord is a sort of software improving discord by allowing
 you to install plugins. You can find
 the code source/latest version [here](https://github.com/BetterDiscord/BetterDiscord/releases).
 
@@ -76,7 +76,7 @@ become a [discord partner](https://discord.com/partners).
 
 To use a discord, you need to [create](https://discord.com/developers/applications/me) a
 bot and get your bot token. That's something private
-that should not put on github.
+that should not be put on GitHub.
 
 ```js
 const Discord = require('discord.js');
