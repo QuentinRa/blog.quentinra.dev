@@ -1,6 +1,6 @@
 ## Local installation
 
-[Go back](index.md)
+[Go back](index.md#introduction)
 
 * on Windows [git-scm](https://git-scm.com/) do it for you
 * on Linux ``sudo apt-get install git``

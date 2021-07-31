@@ -1,8 +1,10 @@
 # git push
 
-[Go back](..)
+[Go back](../index.md#basic-usage)
 
-> You can use this one to send to the server
-> your local project
+You can use this one to send to the server
+your local project
 
-``git push``
+```bash
+git push
+```

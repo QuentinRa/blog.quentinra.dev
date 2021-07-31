@@ -1,10 +1,10 @@
 # git status
 
-[Go back](..)
+[Go back](../index.md#basic-usage)
 
-> Use this command to get the list
-> of the files that aren't committed,
-> the number of local commits, ...
+Use this command to get the list
+of the files that aren't committed,
+the number of local commits, ...
 
 ```bash
 git status

@@ -1,6 +1,6 @@
 # Github pages
 
-[Go back](..)
+[Go back](../index.md#advanced-github-concepts)
 
 An organization or a user
 can make on Github a "Github page" project. To summarize,

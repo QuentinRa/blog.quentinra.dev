@@ -1,9 +1,9 @@
 # Actions
 
-[Go back](..)
+[Go back](../index.md#advanced-github-concepts)
 
-Actions are some code that is run each
-time you make a commit.
+Actions are some code that is run each time
+you make a commit or make a pull request.
 
 For instance, you could create an action
 that will verify that your code compiles on
@@ -12,14 +12,16 @@ and return a ``cross`` if a test failed.
 
 I don't know much about complex actions but
 but you can check
-[github actions](https://github.com/features/actions)
-and [github actions tutorial](https://docs.github.com/en/actions/quickstart).
+[github actions](https://github.com/features/actions) page
+and the [github actions tutorial](https://docs.github.com/en/actions/quickstart).
+
+<hr class="sl">
 
 ## Action : CodeQL
 
 Allow you to analyze your code, here is my file
 for a java project that would be stored at ``.github/workflows/codeql-analysis.yml``.
-Github generates most of content of the file.
+Github generates most of the content of the file.
 
 ```yaml
 # For most projects, this workflow file will not need changing; you simply need

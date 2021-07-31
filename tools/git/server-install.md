@@ -1,6 +1,6 @@
-## Introduction: server side
+## Introduction: server-side
 
-[Go back](index.md)
+[Go back](index.md#introduction)
 
 Here we will take ``Github`` for example but things
 are the same everywhere
@@ -21,7 +21,7 @@ Then, before we continue, you have 2 choices
 So if you don't want to log in at each commit, set
 what we call ``ssh`` keys.
 
-Here the official Github tutorial
+Here is the official Github tutorial
 [generating-a-new-ssh-key](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 or you can do that
 

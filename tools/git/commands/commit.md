@@ -1,9 +1,8 @@
 # git commit
 
-[Go back](..)
+[Go back](../index.md#basic-usage)
 
-> Use this one to commit all added files
- 
+Use this one to commit all added files. 
 To add files that will be in the commit, use
 
 ```bash

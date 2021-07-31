@@ -1,11 +1,13 @@
 # git clone
 
-[Go back](..)
+[Go back](../index.md#basic-usage)
 
-> You can get a project from the server
-> using this command
+You can get a project from the server
+using this command
 
-``git clone URL``
+```bash
+git clone URL
+```
 
 to get the ``URL`` in Github you can do something
 like this
@@ -19,6 +21,8 @@ or ``HTTPS`` (always login)
 
 You can change it using ``git remote``
 command it you cloned using the wrong URL.
+
+<hr class="sl">
 
 # git init
 

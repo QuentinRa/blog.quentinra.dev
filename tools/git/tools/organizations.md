@@ -1,14 +1,14 @@
 # Organization
 
-[Go back](..)
+[Go back](../index.md#advanced-github-concepts)
 
-Here some files used in big projects
+Here are some files used in big projects
 or project that may be maintained by
 a community.
 
 **.github/CODE_OF_CONDUCT.md** :
 Well... I don't see a use for this file
-but here a template 
+but here is a template 
 [opensource-template pledge](https://github.com/EmbarkStudios/opensource-template/blob/main/CODE_OF_CONDUCT.md).
 
 **.github/CONTRIBUTING.md** :
