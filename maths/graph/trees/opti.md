@@ -59,13 +59,18 @@ Apply Prim's algorithm on this graph, **starting from a**.
 
 <blockquote class="spoiler">
 
-I colored in red the edges we make
+I colored in red the edges we may
 pick. Then among the ones in red, simply try to add the one
 with the least weight. If you can, then add the added vertex's
-edges in red and continue. If I couldn't add an edge, then
+edges in red. If I couldn't add an edge, then
 I colored it in grey.
 
 ![gif](images/mst2-2.gif) 
 
 ![frames](images/mst2-3.png)
+
+Some may pick b-c instead of a-h, since both weights
+are $8$. I picked a-h but this doesn't matter,
+the rest of the graph would be the same aside from this one
+edge.
 </blockquote>
