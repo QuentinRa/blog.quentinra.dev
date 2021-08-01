@@ -28,6 +28,11 @@ $A \to B$ (or $B \to A$) with the duration $0$. Then
 we start the edge with $C(cost)$ from $A$ (resp. $B$, up to the one
 you picked).
 
+**Note**: You may have some cases of **redundancy** like
+C is dependant on A, and D is dependant on C and A. You must
+remove $A \to D$ because we got by transitivity
+since we have $A \to C \to D$.
+
 <hr class="sl">
 
 ## Example
@@ -38,7 +43,7 @@ duration (=cost), and the dependencies.
 
 ![](images/pert.png)
 
-And here is the resulting P.E.R.T diagram
+And the resulting P.E.R.T diagram is
 
 <div class="overflow-auto" style="max-height: 500px;">
 
@@ -61,6 +66,9 @@ then we are making D dependant on state 3
 a directed dotted arrow
 * ...
 
+Note: we removed (A, F), (A, D), (C, F) because
+of redundancy.
+
 **Explanations (early/last start)**
 
 * Start early start is 0 (always)
@@ -73,7 +81,8 @@ value, starting from the End
 
 * End's last_start is early_start value (always)
 * 9's last_start is $85-6=79$ (End's last_start minus J cost)
-* 3's last_start is $min(45-7, 45-4)=38$ (4/5 last_start minus E/D cost)
+* 3's last_start is $min(45-7, 45-4)=38$ 
+(4's last_start minus E cost, and resp. 5's and D)
 * ...
 
 **Explanations (free/total margin)**
@@ -91,3 +100,7 @@ changing the next early_date
 * 10's free margin is $x + 37 + 0 \le 69 \Leftrightarrow x=32$
 * 5's free margin is $x + 42 + 0 \le 45 \Leftrightarrow x=3$
 * ...
+
+**Explanations (note)**
+
+The critical path is $(Start, A, C, E, F, G, End)$.
