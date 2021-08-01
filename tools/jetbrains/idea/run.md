@@ -19,6 +19,8 @@ and even set VM options.
 
 ![conf2](run/conf2.png)
 
+<hr class="sr">
+
 ## I don't have an arrow
 
 Check if your JDK is set. If that's okay, then
