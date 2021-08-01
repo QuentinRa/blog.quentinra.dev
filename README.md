@@ -8,8 +8,9 @@
 ``Memorize`` was made for students to create courses to help 
 others sail easier in the courses they struggled with.
 
-Since we are still learning, we could have made mistakes 
-so please kindly correct or report them. Thanks!
+Since we are still learning,
+we could have made mistakes so
+please kindly correct or report them. Thanks!
 
 Provided by `Legendary Games Studio`,
 [memorize@lgs-games.com](mailto:memorize@lgs-games.com).
@@ -37,10 +38,11 @@ If you want to add a new course, add an entry in
 }
 ```
 
-If you choose ``info``, then create in
-``/info/`` a folder named `course-name`. Then create
-a file ``index.md`` that will be used as the entry
-point for your course. You may check the others files if you wondering
+If you choose ``info``,
+then create in ``/info/`` a folder named `course-name`.
+Inside, create a file ``index.md`` that will be used as the entry
+point for your course.
+You may check others' files if you wondering
 how you should write yours.
 
 If you want to edit a course, simply edit the ``.md``
@@ -48,9 +50,9 @@ file.
 
 ## TODO List 
 
-Last updated: 2021-07-28
+Last updated: 2021-08-01
 
-**Website**
+**Website tasks**
 
 * [ ] add go back to #titleID instead of #linkID
 * [ ] edit: show formulas
@@ -80,8 +82,10 @@ Last updated: 2021-07-28
 
 ## Notes
 
-The website wonderful background are made
+The website's backgrounds were made
 by [kronbits](https://kronbits.itch.io/backgrounds).
+If you want to add/remove one, feel free to submit
+a request using issues.
 
-References are backed in another
+We backed references in another
 repository [here](https://github.com/memorize-code/memorize-references).
