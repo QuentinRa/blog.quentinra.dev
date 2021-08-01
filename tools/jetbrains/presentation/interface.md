@@ -1,10 +1,10 @@
 # Interface
 
-[Go back](..)
+[Go back](..#interface-presentation)
 
 Your interface should look a bit like this,
-at least based on IntelliJ2020 (changed a
-bit in 2021)
+at least based on IntelliJ2020 
+(it changed a bit in 2021)
 
 ![view](view.png)
 

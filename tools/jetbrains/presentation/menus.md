@@ -1,8 +1,8 @@
 # Menus
 
-[Go back](..)
+[Go back](..#interface-presentation)
 
-Here some menus that you want to check out
+Here are some menus that you want to check out
 
 * [Git](menus/git.md)
 * [Database](menus/database.md)

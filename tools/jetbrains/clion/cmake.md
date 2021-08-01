@@ -1,6 +1,6 @@
 # Cmake
 
-[Go back](..)
+[Go back](..#clion)
 
 Create a ``CmakeLists.txt`` if not already created.
 

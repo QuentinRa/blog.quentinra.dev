@@ -1,6 +1,6 @@
 # Remote
 
-[Go back](..)
+[Go back](..#clion)
 
 Check compiler to use a remote compiler.
 

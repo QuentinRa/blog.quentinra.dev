@@ -1,6 +1,6 @@
 # Debug
 
-[Go back](..)
+[Go back](..#clion)
 
 In the left column, you can place breakpoints.
 
@@ -14,7 +14,7 @@ And you will see this great tool
 
 ![break](debug/debug3.png)
 
-1. go to next breakpoint
+1. go to the next breakpoint
 2. stop
 3. breakpoint list
 4. console/terminal
