@@ -7,6 +7,8 @@ Check compiler to use a remote compiler.
 [That](https://www.jetbrains.com/help/clion/remote-projects-support.html)
 might also help.
 
+<hr class="sl">
+
 ## SSH
 
 Do ``Tools (top menu) > Start SSH Session``.
@@ -17,6 +19,8 @@ or you may try this
 * ``+``
 * name : `ssh`, description : `ssh connection`
 * program : ``/bin/bash``
+
+<hr class="sr">
 
 ## Browse remote
 

@@ -31,6 +31,8 @@ if you want to try to build/run using different
 configurations but that should not be the case most
 of the time).
 
+<hr class="sl">
+
 ## Using pthread.h
 
 <https://stackoverflow.com/questions/1620918/cmake-and-libpthread>
@@ -41,11 +43,15 @@ find_package(Threads REQUIRED)
 target_link_libraries(my_app PRIVATE Threads::Threads)
 ```
 
+<hr class="sr">
+
 ## Using math.h
 
 ```cmake
 target_link_libraries(my_app PRIVATE m)
 ```
+
+<hr class="sl">
 
 ## Include a folder of *.h
 
