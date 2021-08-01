@@ -28,6 +28,9 @@ The IDEs are free for
 You can download all their idea using the
 [toolbox](https://www.jetbrains.com/toolbox-app/).
 
+**Note**: this course was made before the major releases
+``2021.2``  so a lot of things have yet to be updated.
+
 <hr class="sl">
 
 ## What you can expect (or not) from their IDEs
@@ -98,7 +101,7 @@ to see a quick fix of it.
 
 <hr class="sl">
 
-## IDE: IntelliJ IDEA
+# IntelliJ IDEA
 
 Examples of cases where you might be using it
 
@@ -120,3 +123,20 @@ Then some tutorials
 * [Run](idea/run.md)
 * [Run tests](idea/tests.md)
 * [Project Structure](idea/project-structure.md)
+
+<hr class="sr">
+
+# PHPStorm
+
+Examples of cases where you might be using it
+
+* code in ``PHP``
+* code in ``HTML/CSS/JS`` or ``Boostrap`` (but WebStorm might be wiser)
+* code in ``Node.js``
+
+Please note that you can directly code on a server, that may be useful
+for those that were uploading their files each time they changed
+on a server.
+
+* [Remote working](phpstorm/remote.md)
+* [Launch website](phpstorm/start.md)
