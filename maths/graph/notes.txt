@@ -1,0 +1,18 @@
+connexe = connected
+acyclic = no cycles
+external or unbounded face
+
+Bridge=Isthme
+https://fr.wikipedia.org/wiki/Isthme_(th%C3%A9orie_des_graphes)
+
+Trees
+* the edges removed are making a ?
+https://en.wikipedia.org/wiki/Cycle_space
+https://en.wikipedia.org/wiki/Cycle_basis
+
+https://faculty.tru.ca/smcguinness/cyclecoversjgt.pdf
+
+Spanning trees
+http://www.cs.kent.edu/~dragan/GraphAn/CycleBasis/EriceTalks.pdf
+
+https://en.wikipedia.org/wiki/Glossary_of_graph_theory#kernel

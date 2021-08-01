@@ -318,6 +318,12 @@ There is also names for graph having some properties
 
 <hr class="sl">
 
+## Advanced Terminology
+
+...
+
+<hr class="sr">
+
 ## Sorting and search
 
 You can sort a graph using
@@ -334,6 +340,14 @@ a edge/vertex with
 
 * [Eulerian graph](manip/euler.md)
 * [Hamiltonian graph](manip/hamilton.md)
+
+<hr class="sl">
+
+## Graph coloring
+
+* Stable set
+* Vertex coloring
+* Edge coloring
 
 <hr class="sr">
 
@@ -434,6 +448,8 @@ want to check
 * <https://fr.wikipedia.org/wiki/M%C3%A9thode_potentiel-t%C3%A2che>
 * <https://en.wikipedia.org/wiki/Program_evaluation_and_review_technique>
 * <https://en.wikipedia.org/wiki/Critical_path_method>
+* <https://en.wikipedia.org/wiki/Independent_set_(graph_theory)>
+* <https://en.wikipedia.org/wiki/Graph_partition>
 
 Trees
 
