@@ -87,7 +87,7 @@ value, starting from the End
 
 **Explanations (free/total margin)**
 
-* The total margin is "last-early"
+* The total margin is $\text{last_start-early_start}$
 * 9's total margin is simply $79-69=10$
 * 10's total margin is simply $79-37=42$
 * ...

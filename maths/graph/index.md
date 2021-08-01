@@ -408,6 +408,12 @@ version of scheduling.
 * [Metra potential method](scheduling/pt.md)
 * [P.E.R.T. method](scheduling/pert.md)
 
+You should have noticed but our two methods are giving the
+same result (same critical path, same optimal duration, ...).
+This is a way of checking that you did things right. Note
+that the will be some differences on the early_start/last_start
+values.
+
 <hr class="sl">
 
 ## The random folk note
