@@ -31,6 +31,12 @@ You can download all their idea using the
 **Note**: this course was made before the major releases
 ``2021.2``  so a lot of things have yet to be updated.
 
+* <https://www.jetbrains.com/idea/whatsnew/2021-2/>
+* <https://www.jetbrains.com/webstorm/whatsnew/2021-2/>
+* <https://www.jetbrains.com/phpstorm/whatsnew/2021-2/>
+* <https://www.jetbrains.com/clion/whatsnew/2021-2/>
+* <https://www.jetbrains.com/datagrip/whatsnew/2021-2/>
+
 <hr class="sl">
 
 ## What you can expect (or not) from their IDEs
