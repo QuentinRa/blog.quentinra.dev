@@ -383,6 +383,27 @@ version of scheduling.
 
 <hr class="sl">
 
+## The random folk note
+
+I don't know how should I interpret this, but French
+and English do not seems to agree on the terminology. I'm
+a bit confused so I'm not changing the course content.
+
+They are using walk for ``chaine/chemin``, but
+
+* "A trail is a walk in which all edges are distinct" [wiki](https://en.wikipedia.org/wiki/Path_(graph_theory)#Walk,_trail,_path)
+* "A path (`Chemin`) is a trail in which all vertices are distinct" [wiki](https://en.wikipedia.org/wiki/Path_(graph_theory)#Walk,_trail,_path)
+* you add directed if needed like "directed path" [wiki](https://en.wikipedia.org/wiki/Path_(graph_theory)#Directed_walk,_trail,_path)
+* Chain (`chaine`) is a synonym for walk [wiki](https://en.wikipedia.org/wiki/Glossary_of_graph_theory#chain)
+
+They are using closed walk for ``cycle/circuit``, but
+
+* "A cycle (`cycle`) may either refer to a closed walk (also called a tour)" [wiki](https://en.wikipedia.org/wiki/Glossary_of_graph_theory#cycle)
+* "A tour may either refer to "a closed trail (also called a walk)" [wiki](https://en.wikipedia.org/wiki/Glossary_of_graph_theory#tour)
+* "A circuit (`circuit`) may refer to a closed trail" [wiki](https://en.wikipedia.org/wiki/Glossary_of_graph_theory#circuit)
+
+<hr class="sr">
+
 ## Sources
 
 This is a list of all Wikipedia pages that you may
