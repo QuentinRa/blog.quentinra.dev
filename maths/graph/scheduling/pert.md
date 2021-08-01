@@ -81,6 +81,10 @@ value, starting from the End
 * 9's total margin is simply $79-69=10$
 * 10's total margin is simply $79-37=42$
 
-As for free margin
+As for the free margin
 
-* it's 
+* we are trying to get a total margin without
+changing the next early_date
+* 9's free margin is $x + 69 + 6 \le 85 \Leftrightarrow x=10$
+* 10's free margin is $x + 37 + 0 \le 69 \Leftrightarrow x=32$
+* 5's free margin is $x + 42 + 0 \le 45 \Leftrightarrow x=3$
