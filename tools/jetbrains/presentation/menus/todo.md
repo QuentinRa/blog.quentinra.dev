@@ -2,7 +2,7 @@
 
 [Go back](../menus.md)
 
-``todo`` or `fixme` are keyword used in comments
+``todo`` or `fixme` are keywords used in comments
 by many IDE to tells other programmers or yourself 
 that you must do something here.
 

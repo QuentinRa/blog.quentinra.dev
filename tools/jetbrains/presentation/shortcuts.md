@@ -1,6 +1,6 @@
 # Shortcuts
 
-[Go back](..)
+[Go back](..#interface-presentation)
 
 Here is my syntax for the following shortcuts
 
@@ -73,6 +73,6 @@ Search for ``settings/classes/file/...``
   popup with the structure of the file. In Oriented-object languages,
 you could see all the classes in a file, methods, ...
 and can easily navigate to one.
-* ``CTRL+ALT+MAJ+U``: generate an UML diagram of selected files
+* ``CTRL+ALT+MAJ+U``: generate a UML diagram of selected files
 in available
 * ``CTRL+ALT+U``: same as above but in a small popup like a preview

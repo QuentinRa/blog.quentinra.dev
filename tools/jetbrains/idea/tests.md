@@ -1,6 +1,6 @@
 # Tests
 
-[Go back](..)
+[Go back](../index.md#intellij-idea)
 
 JUnit5 is supported by default. Just create
 a test file, or a least a normal java file then

@@ -1,6 +1,6 @@
 # Remote
 
-[Go back](..)
+[Go back](..#phpstorm)
 
 * New project from existing files
 * Web server is a remote host ... FTP
@@ -10,8 +10,8 @@
     * type: FTP or SFTP
     * host: FTP (port 21) or SFTP (port 22)
     * SFTP means using SSH but input your credentials
-    * root path : autodetect
-    * web server url : put your server url here, not your website one
+    * root path: autodetect
+    * web server URL: put your server URL here, not your website one
 * select folder project on the server
 * you may or not correct the server URL here
 

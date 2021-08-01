@@ -1,6 +1,6 @@
 # Gimme free tips
 
-[Go back](..)
+[Go back](..#interface-presentation)
 
 <hr class="sl">
 

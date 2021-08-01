@@ -1,10 +1,10 @@
 # Run
 
-[Go back](..)
+[Go back](../index.md#intellij-idea)
 
-To run some class, simply go to the ``main``
-function then you should see a ``green`` arrow. Click
-on it and that's it.
+To run a class,
+go to the ``main`` function then you should see a ``green`` arrow.
+Click on it and that's it.
 
 ![conf1](run/conf3.png)
 
