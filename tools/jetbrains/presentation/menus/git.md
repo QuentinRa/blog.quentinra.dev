@@ -13,6 +13,8 @@ left of your screen, you should have a
 * ``3``: your changes
 * ``4``: current commit description
 
+<hr class="sl">
+
 ## Pull-push or commit
 
 ![push-pull](git/push-pull.png)
@@ -20,6 +22,8 @@ left of your screen, you should have a
 You might use the ``blue`` arrow to pull
 and the ``green`` to push. Jetbrains will show
 you a great tool to merge if needed.
+
+<hr class="sr">
 
 ## Local changes
 

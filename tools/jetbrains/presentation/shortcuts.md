@@ -9,7 +9,9 @@ Here is my syntax for the following shortcuts
 * ``@+b``: right click and `b` at the same time
 * ``^+b``: select something and `b` at the same time
 
-### most used ones
+<hr class="sl">
+
+## most used ones
 
 * ``CTRL+C``: copy selection or whole line
 * ``CTRL+V``: paste
@@ -27,7 +29,9 @@ And the two great ones are
 * ``^+CTRL+/``: do an inline comment for all lines selected.
 * ``^+CTRL+SHIFT+/``: do a block comment for all lines selected.
 
-### search
+<hr class="sr">
+
+## search
 
 Search for ``text``
 
@@ -48,14 +52,18 @@ Search for ``settings/classes/file/...``
 * ``CTRL+E``: list of menus and a lot of files
 * ``CTRL+SHIFT+E``: last locations where you got
 
-### In Object-oriented IDE languages files
+<hr class="sl">
+
+## In Object-oriented IDE languages files
 
 * ``ALT+INSERT`` : generates methods (such as getters/setters/constructors/implements in JAVA)
 * ``^+CTRL+ALT+T``: generate a bloc of code around selection (if, try catch, ...)
 * ``CTRL+SHIFT+T``: generates test class
 * ``CTRL+*`` : click on a method/class/... to view usages
 
-### You may use
+<hr class="sr">
+
+## You may use
 
 * ``CTRL+SHIFT+G``: open a sort of file view menu (inside a file)
 * ``^+CTRL+SHIFT+U``: uppercase to lowercase or lowercase to uppercase
