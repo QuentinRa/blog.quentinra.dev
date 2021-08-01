@@ -59,6 +59,8 @@ A graph can be simple/multiple and directed or not.
             <td>
                 Each vertex degree is 2
                 aside from the extremities (degree=1).
+                If the graph is directed, we must be able
+                to go from one extremity to the other.
             </td>
         </tr>
         <tr>
@@ -216,12 +218,17 @@ There is also names for graph having some properties
     <tbody>
         <tr>
             <td>
-                ???* <br>
+                closed path* <br>
                 <code>cycle/chaine élémentaire</code>
             </td>
             <td>
                 A cycle/circuit in which each traversed
                 vertex is only traversed once.
+                <span class="tms">
+                If the use
+                of path is disturbing for you, then read
+                the RandomFolkNote at the end of the course.
+                </span>
             </td>
         </tr>
         <tr>
