@@ -107,6 +107,21 @@ A graph can be simple/multiple and directed or not.
                 of the wheel.
             </td>
         </tr>
+        <tr>
+            <td>
+                butterfly/hourglass <br>
+                <code>papillon</code>
+            </td>
+            <td>
+                butterfly/hourglass <br>
+                <code>papillon</code>
+            </td>
+            <td>
+                One vertex degree is $|V|-1=4$ and
+                the others are of degree $2$. The graph is
+                make of $6$ edges and $5$ vertices.
+            </td>
+        </tr>
     </tbody>
 </table>
 
@@ -116,7 +131,75 @@ Note: the degree is the number of neighbors, see next part.
 
 ## Terminology
 
-...
+<table class="table table-bordered table-dark table-striped">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                adjacent/neighbor <br>
+                <code>Adjacent/Voisins</code>
+            </td>
+            <td>
+                Two nodes are adjacent if they are linked
+                by an edge. <br><br>
+                The notation is $N(X)$ or $\Gamma(X)$ (gamma)
+                for the adjacent nodes of X. With arcs, we use
+                $N^{+}(X)$ (arc entering/arriving) and
+                $N^{-}(X)$ (arc exiting).
+            </td>
+        </tr>
+        <tr>
+            <td>
+                degree <br>
+                <code>Degré</code>
+            </td>
+            <td>
+                The number of neighbors. <br><br>
+                The notation is $d(X) = |\Gamma(X)|$. In a directed
+                graph, this is $|\Gamma^{+}(X)| + |\Gamma^{-}(X)| = d^+(X) + d^-(X)$.
+                (called <code>demi degré extérieur/prédécesseur (entrants)</code> and
+                <code>demi degré intérieur/successeur (sortants)</code>).
+            </td>
+        </tr>
+        <tr>
+            <td>
+                incidence <br>
+                <code>incidence</code>
+            </td>
+            <td>
+                A vertex is incident to an edge if they
+                are linked.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                order <br>
+                <code>ordre</code>
+            </td>
+            <td>
+                The number of vertices, $|V|$, $|V(G)|$
+                  while the cardinal $|V|$ (=the number of elements of a set V)
+                  can also be noted, $\#V$ or $Card(V)$.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                order <br>
+                <code>ordre</code>
+            </td>
+            <td>
+                The number of vertices, $|V|$, $|V(G)|$
+                  while the cardinal $|V|$ (=the number of elements of a set V)
+                  can also be noted, $\#V$ or $Card(V)$.
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 <hr class="sl">
 
