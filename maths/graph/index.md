@@ -131,6 +131,9 @@ Note: the degree is the number of neighbors, see next part.
 
 ## Terminology
 
+I marked with a little star `*`, the keywords that we are
+not using often (and that may learn later).
+
 <table class="table table-bordered table-dark table-striped">
     <thead>
         <tr>
@@ -149,8 +152,8 @@ Note: the degree is the number of neighbors, see next part.
                 by an edge. <br><br>
                 The notation is $N(X)$ or $\Gamma(X)$ (gamma)
                 for the adjacent nodes of X. With arcs, we use
-                $N^{+}(X)$ (arc entering/arriving) and
-                $N^{-}(X)$ (arc exiting).
+                $N^{+}(X)$ (arc entering/arriving, in-degree) and
+                $N^{-}(X)$ (arc exiting, out-degree).
             </td>
         </tr>
         <tr>
@@ -189,13 +192,118 @@ Note: the degree is the number of neighbors, see next part.
         </tr>
         <tr>
             <td>
-                order <br>
-                <code>ordre</code>
+                density*<br>
+                <code>Densité</code>
             </td>
             <td>
-                The number of vertices, $|V|$, $|V(G)|$
-                  while the cardinal $|V|$ (=the number of elements of a set V)
-                  can also be noted, $\#V$ or $Card(V)$.
+                This is the number of edges of our graph
+                divided by the number of edge of the complete
+                graph (see below).
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+There is also names for graph having some properties
+
+<table class="table table-bordered table-dark table-striped">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                ???* <br>
+                <code>cycle/chaine élémentaire</code>
+            </td>
+            <td>
+                A cycle/circuit in which each traversed
+                vertex is only traversed once.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                d-regular graph <br>
+                <code>Graphe k-régulier</code>
+            </td>
+            <td>
+                A regular graph or d-regular graph
+                is a graph where all degrees have the same
+                value (d, for instance 3-regular graph).
+            </td>
+        </tr>
+        <tr>
+            <td>
+                complete graph <br>
+                <code>Graphe complet</code>
+            </td>
+            <td>
+                Each and every vertex is adjacent to all
+                other vertices aside itself giving
+                $|V| = \frac{n(n-1)}{2}$.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                bipartite graph $K_{a,b}$ <br>
+                <code>Graphe bi-parti</code>
+            </td>
+            <td>
+                We can split the vertices in 2 groups:
+                the group having a degree a and the group
+                having a degree b with $b > a \ge 1$.
+                Each vertex in
+                the first group must we adjacent to $a$ vertex
+                in the second (resp. second group and $b$).
+            </td>
+        </tr>
+        <tr>
+            <td>
+                subgraph $G'$ <br>
+                <code>Sous-graphe/Graphe induit</code>
+            </td>
+            <td>
+                $G'$ is a subgraph of $G$ if we only removed
+                $G$ vertices and their incident edges (like you 
+                can't remove an edge alone). 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                clique<br>
+                <code>Clique</code>
+            </td>
+            <td>
+                A clique is a complete subgraph.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Complement/inverse*<br>
+                <code>Complémentaire</code>
+            </td>
+            <td>
+                The complement of a graph is a graph
+                in which we are creating all the edges
+                that didn't exists while removing the existing
+                ones. Like if we have $A-B-C$ then the
+                then the complementary graph 
+                would be $A-C\hspace{.5cm}B$.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                isomorphism*<br>
+                <code>Isomorphe</code>
+            </td>
+            <td>
+                Let two graph $G$ and $H$. If we can move some
+                nodes and get the same graph then
+                there is an isomorphism. More formally, that's bijection between then.
+                simply checking if there is a bijection between then.
             </td>
         </tr>
     </tbody>
