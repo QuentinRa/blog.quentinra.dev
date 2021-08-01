@@ -404,7 +404,8 @@ and we do not take delays in account so it's a simplified
 version of scheduling.
 
 * [Terminology](scheduling/index.md)
-* [potentiel-tâche method](scheduling/pt.md)
+* [Critical path analysis](scheduling/cpa.md)
+* [Metra potential method](scheduling/pt.md)
 * [P.E.R.T. method](scheduling/pert.md)
 
 <hr class="sl">
