@@ -206,6 +206,11 @@ not using often (and that may learn later).
     </tbody>
 </table>
 
+You may also note that, if we have an arc $A \to B$, then
+
+* $A$ is the predecessor of $B$ (`prédécesseur`)
+* $B$ is the successor of $A$ (`successeur`)
+
 There is also names for graph having some properties
 
 <table class="table table-bordered table-dark table-striped">
