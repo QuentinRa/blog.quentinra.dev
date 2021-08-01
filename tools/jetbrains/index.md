@@ -1,12 +1,12 @@
 # Introduction
 
-IDE are used to make your life easier. You may do well
+IDEs are used to make your life easier. You may do well
 using text editors like vim, emacs, sublime text, but
-I'm sure some would more (autocompletion, code hints,
+I'm sure some would more (auto-completion, code hints,
 auto-import, syntax errors hints without needing
 to recompile the project etc.).
 
-This course is about Jetbrains IDE, a suite a IDEs like
+This course is about Jetbrains IDE, a suite of IDEs like
 
 * **CLion**: write **C** or **C++**
 * **IntelliJ**: **Java**, R, OCaml, SQL
@@ -16,9 +16,9 @@ This course is about Jetbrains IDE, a suite a IDEs like
 * **AndroidStudio**: Write Kotlin/Java for Android
 
 It's a feature of Jetbrains: instead of providing an IDE
-that is doing half of what you want, and needing a lot
-of tuning/configuration, their IDE a pre-configured
-and quite powerful. The best alternative would be
+that is doing half of what you want, and need a lot
+of tuning/configuration, their IDEs are pre-configured
+and quite powerful. The best alternative in one would be
 VSCode.
 
 The IDEs are free for 
@@ -52,16 +52,16 @@ allow you to use a remote IDE
 <span class="tms">
 (not tested, it seems
 you need another computer "the server" running your IDE,
-while you slow computer will be "the client")
+while your slow computer will be "the client")
 </span>
 .
 
 * auto-install
 
-Installing Java, JavaFX, etc. are simplified and could
+Installing Java, JavaFX, etc. is simplified and could
 be directly done inside the IDE (in like one or two clicks).
 You can easily install and update dependencies
-(and you got a head-ups when they are not up-to-date).
+(and you got head-ups when they are not up-to-date).
 
 * consistency
 
@@ -72,17 +72,17 @@ and in all of them, you got the "CodeWithMe" feature
 to code with you).
 
 * random features
-  * the code hints/advices <span class="tms">(
+  * the code hints/advice <span class="tms">(
   that's the **only** reason
   why I would recommend their IDEs over VSCode/...
-  because their advices are quite good and better
+  because their hints are quite good and better
   than in VSCode for instance)</span>
   * git integration and colors for files
   * generating UML from your code
   * basic spelling checker
-  * remote working (for website, opening a project on a server)
+  * remote working (for a website, opening a project on a server)
   * refactoring (deep renaming)
-  * file history (you got an history of your changes even without git)
+  * file history (you got a history of your changes even without git)
   * database (you can access your database inside their IDE)
   * you can easily connect to SSH/explore a remote server (like in FileZilla or using the command line)
 
@@ -161,7 +161,12 @@ or use a local one.
 
 Using the basic configuration, you will have to use
 ``CMake`` to compile but `Makefile` are supported if you
-manage to.
+manage to 
+<span class="tms">
+(edit 2021.2: it seems not it's quite easier
+to use Makefiles)
+</span>
+.
 
 * [Starting with CMake](clion/cmake.md)
 * [Set compiler](clion/compiler.md)
