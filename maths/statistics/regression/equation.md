@@ -48,9 +48,11 @@ you will have to deal with "multiple linear/logistic regression".
 What we are trying to observe using a regression is
 the dependency between $Y$ and the predictor variables.
 
-The result is a model/table in which you will have
-the dependency between the variables and you could
-read the impact of a criteria on a variable.
+The result is a model, presented as table,
+in which you will have
+the dependency between the predictor variables and Y. You will
+be able to see the estimate impact of a variable on Y,
+for each predictor variable.
 
 You could also use your model to make
 predictions.
