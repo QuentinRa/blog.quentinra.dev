@@ -32,8 +32,9 @@ you picked).
 
 ## Example
 
-This is a french specifications table. THe layout
-is the same as your average GanTT chart.
+This is a specifications table in French. Nothing complicated,
+you got the task id (A, B, ...), the task full name, the
+duration (=cost), and the dependencies.
 
 ![](images/pert.png)
 
@@ -80,6 +81,7 @@ value, starting from the End
 * The total margin is "last-early"
 * 9's total margin is simply $79-69=10$
 * 10's total margin is simply $79-37=42$
+* ...
 
 As for the free margin
 
@@ -88,3 +90,4 @@ changing the next early_date
 * 9's free margin is $x + 69 + 6 \le 85 \Leftrightarrow x=10$
 * 10's free margin is $x + 37 + 0 \le 69 \Leftrightarrow x=32$
 * 5's free margin is $x + 42 + 0 \le 45 \Leftrightarrow x=3$
+* ...
