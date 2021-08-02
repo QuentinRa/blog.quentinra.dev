@@ -7,10 +7,10 @@ You should remember that the concepts are
 
 * everything is a **value**
 * **implicit types**
-* variables are **immutables** (=can change the value)
-* **pure** (giving some parameters we should always
-  have the same predictable result at the end, no
-  side-effects so a function must return a value)
+* variables are **immutables** (=can't change the variable value)
+* **purity** (given some parameters we should always
+  have the same predictable result at the end, 
+  there are no side-effects so a function must return a value)
 * **referential transparency** (if `f(x) = y` then writing
   `f(x)` or `y` is the same, and `f(x)-f(x)` is equal
   to `0`)
@@ -35,7 +35,7 @@ presenting tools for macOS and Windows
 * you can try ``WinCaml`` but it's a virus according to Norton
   and the site is ranked as dangerous (seems like it
   happened after the website moved and the old site
-  is down...)
+  is down, previously caml.inria.fr then jean.mouric.... then hacker)
 
 or you can follow one of these tutorials
 

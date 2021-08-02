@@ -18,8 +18,8 @@ This course is about Jetbrains IDE, a suite of IDEs like
 It's a feature of Jetbrains: instead of providing an IDE
 that is doing half of what you want, and need a lot
 of tuning/configuration, their IDEs are pre-configured
-and quite powerful. The best alternative in one would be
-VSCode.
+and quite powerful. The best alternative in one IDE would be
+VSCode (free).
 
 The IDEs are free for 
 [students](https://www.jetbrains.com/shop/eform/students)

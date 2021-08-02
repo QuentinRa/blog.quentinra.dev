@@ -2,7 +2,9 @@
 
 [Go back](..)
 
-**You should not try to do this unless you are crazy.**
+**You should not try to do this unless you are crazy
+(use VSCode or sublime text or the online version).**
+There is maybe a cleaner and easier way, check notes.
 
 * Download and install OCaml using the graphical 
 installer [here](https://fdopen.github.io/opam-repository-mingw/installation/)
@@ -43,7 +45,9 @@ Simply write some code and save it, the code is compiled each
 time you save and you made some changes. Right next to ``profiler``
 tab, you can see your errors in the dune tab.
 
-**Create a configuration**
+<hr class="sl">
+
+## Create a configuration
 
 * click on ``add configuration``
 * ``+``
@@ -51,8 +55,10 @@ tab, you can see your errors in the dune tab.
 * and set in script path ``/_build/default/src/test.exe``
 with ``/`` your project root and `test` in `test.exe`
   the name of your ``.ml``.
+
+<hr class="sr">
   
-**Notes**
+## Notes
 
 It seems that we don't have any of IntelliJ features such
 as refactor as of now but we should have them. Seems like
