@@ -29,7 +29,7 @@ your connected component.
 
 <hr class="sl">
 
-## Super connectivity
+## Super-connectivity
 
 A graph is super-connected ``Forte connexité/f-connexe``
 if from any vertex, we can go to any other vertex.
@@ -42,6 +42,8 @@ if from any vertex, we can go to any other vertex.
 * mark all vertex we can be reached from "-"
 * you got a first super-connected component (all nodes with "+" and "-")
 * if there are remaining edge, restart from one of them
+
+Note: a complete graph is super-connected.
 
 <hr class="sl">
 
@@ -96,5 +98,26 @@ Let's apply the super-connected algorithm
 ![](images/connected1-3.png)
 
 The graph is super-connected.
+
+</blockquote>
+
+<hr class="sl">
+
+## Example 2 - Transitive closure and Connectivity
+
+Is the following graph $G$ super-connected?
+Tip: use the transitive closure.
+
+![](images/connected2.png)
+
+<blockquote class="spoiler">
+
+Applying Roy-Warshall algorithm, we got
+
+![](images/connected2-1.svg)
+
+As you may notice, this is a complete graph
+$K_{6}$. Since the transitive closure is a complete
+graph, then $G$ is super-connected.
 
 </blockquote>
