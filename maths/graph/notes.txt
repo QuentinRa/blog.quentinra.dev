@@ -2,7 +2,9 @@ connexe = connected
 acyclic = no cycles
 external or unbounded face
 
-Bridge=Isthme
+Bridge=Isthme=
+
+a vertex=articulation point
 https://fr.wikipedia.org/wiki/Isthme_(th%C3%A9orie_des_graphes)
 
 Trees
@@ -16,3 +18,20 @@ Spanning trees
 http://www.cs.kent.edu/~dragan/GraphAn/CycleBasis/EriceTalks.pdf
 
 https://en.wikipedia.org/wiki/Glossary_of_graph_theory#kernel
+
+
+---
+
+Graphe partiel
+Un graphe partiel est un graphe dans quel on a retiré des arrêtes.
+
+:math:`\tau`-équivalent
+Deux graphes G et G' sont :math:`\tau`-équivalents s'ils ont la même fermeture transitive et
+que G' est un sous-graphe de G.
+
+:math:`\tau`-minimal :math:`\tau`-équivalent
+Il s'agit d'un graphe :math:`\tau`-équivalent tel que retire une arête fait qu'il n'est plus
+:math:`\tau`-équivalent.
+
+:math:`\tau`-minimum :math:`\tau`-équivalent
+Il s'agit d'un graphe :math:`\tau`-minimal :math:`\tau`-équivalent avec le minimum d'arcs

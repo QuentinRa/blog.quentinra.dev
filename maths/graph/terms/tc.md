@@ -24,7 +24,7 @@ $(a,b)-(b,c)-(c,d)-...-(y-,z)$ then we create $(a,z)$ ...
 
 Apply Roy-Warshall algorithm on
 
-![](images/tc1.png)
+![](images/tc.png)
 
 <blockquote class="spoiler">
 

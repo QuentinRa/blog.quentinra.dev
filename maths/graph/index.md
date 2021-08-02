@@ -332,7 +332,7 @@ There is also names for graph having some properties
   * [Incidence matrix](terms/inc.md)
   * [Degree matrix](terms/degree.md)
 * [Transitive closure](terms/tc.md)
-* [Partial graph](terms/partial.md)
+* [Spanning graph](terms/partial.md)
 * [Connected graphs](terms/connected.md)
 * [Planar graph](terms/planar.md)
 * [Graph matching](terms/matching.md)
