@@ -30,11 +30,6 @@ in which we can't add more vertex inside.
 A graph is super-connected ``Forte connexité/f-connexe``
 if from any vertex, we can go to any other vertex.
 
-If $C_1, C_2, C_3$ are super-connected components, then
-a graph having the nodes $C_1, C_2, C_3$
-is called ``Graphe réduit``. If $A \in C_1$ was adjacent
-to $B \in C_2$ then we have $C_1$ is adjacent to $C_2$.
-
 **Algorithm**
 
 * pick a vertex
@@ -43,3 +38,22 @@ to $B \in C_2$ then we have $C_1$ is adjacent to $C_2$.
 * mark all vertex we can be reached from "-"
 * you got a first super-connected component (all nodes with "+" and "-")
 * if there are remaining edge, restart from one of them
+
+<hr class="sl">
+
+## Terminology
+
+* ??? (``Graphe réduit``)
+
+If $C_1, C_2, C_3$ are super-connected components, then
+a graph having the nodes $C_1, C_2, C_3$
+is called ``Graphe réduit``. If $A \in C_1$ was adjacent
+to $B \in C_2$ then we have $C_1$ is adjacent to $C_2$.
+
+* Bridge (`isthme`)
+
+An edge that, once removed, will disconnect the graph.
+
+* Articulation point (`Point d'articulation`)
+
+A vertex that once removed, will disconnect the graph.

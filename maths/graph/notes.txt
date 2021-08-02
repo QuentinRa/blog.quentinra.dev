@@ -2,8 +2,6 @@ connexe = connected
 acyclic = no cycles
 external or unbounded face
 
-Bridge=Isthme=
-
 a vertex=articulation point
 https://fr.wikipedia.org/wiki/Isthme_(th%C3%A9orie_des_graphes)
 
