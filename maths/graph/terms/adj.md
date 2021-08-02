@@ -39,3 +39,31 @@ is
 }
 \]
 </div>
+
+<hr class="sr">
+
+## Example 2
+
+The adjacency matrix for
+
+![](images/adj2.svg)
+
+is
+
+<div>
+\[
+\displaylines{
+\hspace{0.7cm}\begin{array}{} a&b&c&d&h&i \end{array} \ \ \
+\\
+\begin{array}{} a\\b\\c\\d\\h\\i \end{array}
+\begin{pmatrix}
+0 & 1 & 1 & 1 & 0 & 0  \\
+1 & 0 & 0 & 1 & 1 & 0  \\
+1 & 0 & 0 & 1 & 0 & 1  \\
+1 & 1 & 1 & 0 & 1 & 0  \\
+0 & 1 & 0 & 1 & 0 & 1  \\
+0 & 0 & 1 & 0 & 1 & 0  \\
+\end{pmatrix}
+}
+\]
+</div>

@@ -1,0 +1,84 @@
+<svg width="288pt" height="77pt" viewBox="0.00 0.00 288.00 77.12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="graph1" class="graph" transform="scale(0.682464 0.682464) rotate(0) translate(4 109)">
+        <title>digraph {
+            size="4";
+            rankdir="LR";
+            a -> b [arrowhead = none];
+            a-> d [arrowhead = none];
+            b -> d [arrowhead = none];
+            b -> h [arrowhead = none];
+            c -> a [arrowhead = none];
+            c -> i [arrowhead = none];
+            d -> h [arrowhead = none];
+            d -> c [arrowhead = none];
+            h -> i [arrowhead = none];
+            }</title>
+        <polygon fill="#d8d8d8" stroke="#d8d8d8" points="-4,5 -4,-109 419,-109 419,5 -4,5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#c6c4c2; --darkreader-inline-stroke:#c6c4c2;"></polygon>
+        <!-- a -->
+        <g id="node1" class="node"><title>a</title>
+            <ellipse fill="none" stroke="black" cx="27" cy="-41" rx="27" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="27" y="-36.8" font-family="Times,serif" font-size="14.00">a</text>
+        </g>
+        <!-- b -->
+        <g id="node3" class="node"><title>b</title>
+            <ellipse fill="none" stroke="black" cx="117" cy="-87" rx="27" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="117" y="-82.8" font-family="Times,serif" font-size="14.00">b</text>
+        </g>
+        <!-- a&#45;&gt;b -->
+        <g id="edge2" class="edge"><title>a-&gt;b</title>
+            <path fill="none" stroke="black" d="M48.8548,-51.9014C62.8827,-59.2341 81.2984,-68.8605 95.2949,-76.1769" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+        </g>
+        <!-- d -->
+        <g id="node5" class="node"><title>d</title>
+            <ellipse fill="none" stroke="black" cx="207" cy="-45" rx="27" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="207" y="-40.8" font-family="Times,serif" font-size="14.00">d</text>
+        </g>
+        <!-- a&#45;&gt;d -->
+        <g id="edge4" class="edge"><title>a-&gt;d</title>
+            <path fill="none" stroke="black" d="M54.2645,-41.5902C88.0151,-42.3487 146.256,-43.6574 179.918,-44.4139" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+        </g>
+        <!-- b&#45;&gt;d -->
+        <g id="edge6" class="edge"><title>b-&gt;d</title>
+            <path fill="none" stroke="black" d="M139.302,-76.833C153.036,-70.2781 170.833,-61.7841 184.589,-55.219" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+        </g>
+        <!-- h -->
+        <g id="node8" class="node"><title>h</title>
+            <ellipse fill="none" stroke="black" cx="297" cy="-72" rx="27" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="297" y="-67.8" font-family="Times,serif" font-size="14.00">h</text>
+        </g>
+        <!-- b&#45;&gt;h -->
+        <g id="edge8" class="edge"><title>b-&gt;h</title>
+            <path fill="none" stroke="black" d="M143.883,-84.8189C177.63,-81.975 236.323,-77.029 270.086,-74.1838" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+        </g>
+        <!-- d&#45;&gt;h -->
+        <g id="edge14" class="edge"><title>d-&gt;h</title>
+            <path fill="none" stroke="black" d="M232.046,-52.3779C244.565,-56.2188 259.818,-60.8986 272.287,-64.7245" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+        </g>
+        <!-- c -->
+        <g id="node9" class="node"><title>c</title>
+            <ellipse fill="none" stroke="black" cx="297" cy="-18" rx="27" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="297" y="-13.8" font-family="Times,serif" font-size="14.00">c</text>
+        </g>
+        <!-- d&#45;&gt;c -->
+        <g id="edge16" class="edge"><title>d-&gt;c</title>
+            <path fill="none" stroke="black" d="M232.046,-37.6221C244.565,-33.7812 259.818,-29.1014 272.287,-25.2755" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+        </g>
+        <!-- i -->
+        <g id="node12" class="node"><title>i</title>
+            <ellipse fill="none" stroke="black" cx="387" cy="-45" rx="27" ry="18" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></ellipse>
+            <text text-anchor="middle" x="387" y="-40.8" font-family="Times,serif" font-size="14.00">i</text>
+        </g>
+        <!-- h&#45;&gt;i -->
+        <g id="edge18" class="edge"><title>h-&gt;i</title>
+            <path fill="none" stroke="black" d="M322.046,-64.6221C334.565,-60.7812 349.818,-56.1014 362.287,-52.2755" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+        </g>
+        <!-- c&#45;&gt;a -->
+        <g id="edge10" class="edge"><title>c-&gt;a</title>
+            <path fill="none" stroke="black" d="M269.698,-16.8774C246.159,-16.14 210.726,-15.6885 180,-18 135.022,-21.3837 83.1866,-30.3234 53.1492,-36.0088" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+        </g>
+        <!-- c&#45;&gt;i -->
+        <g id="edge12" class="edge"><title>c-&gt;i</title>
+            <path fill="none" stroke="black" d="M322.046,-25.3779C334.565,-29.2188 349.818,-33.8986 362.287,-37.7245" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#161718;"></path>
+        </g>
+    </g>
+</svg>
