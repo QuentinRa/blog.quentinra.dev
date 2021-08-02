@@ -336,7 +336,7 @@ There is also names for graph having some properties
 * [Connected graphs](terms/connected.md)
 * [Planar graph](terms/planar.md)
 * [Graph matching](terms/matching.md)
-* [stable set](terms/independence.md) (independence set)
+* [Stable set](terms/independence.md) (independence set)
 * [Cycle basis](terms/cycle_basis.md)
 
 <hr class="sr">
