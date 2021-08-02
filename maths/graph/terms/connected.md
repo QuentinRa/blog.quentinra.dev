@@ -40,7 +40,7 @@ if from any vertex, we can go to any other vertex.
 * mark it "+" and "-"
 * mark all vertex we can reach with "+"
 * mark all vertex we can be reached from "-"
-* you got a first super-connected component (all nodes with "+" and "-")
+* you got a first super-connected component (All nodes with "+" and "-")
 * if there are remaining edge, restart from one of them
 
 Note: a complete graph is super-connected.
@@ -120,4 +120,78 @@ As you may notice, this is a complete graph
 $K_{6}$. Since the transitive closure is a complete
 graph, then $G$ is super-connected.
 
+This wasn't the example goal but here is Roy-Warshall algorithm
+
+![](images/connected2-2.png)
+
+The complete algorithm (text)
+
+
+* **picking A**
+* $s=C$
+  * $p=B$, creating (B,C)? yes
+  * $p=E$, creating (E,C)? yes
+  * $p=F$, creating (F,C)? yes
+* **picking B**
+* $s=A$
+  * $p=C$, creating (C,A)? yes
+  * $p=F$, creating (F,A)? no
+  * $p=D$, creating (D,A)? yes
+* $s=C$
+  * $p=F$, creating (F,C)? no
+  * $p=D$, creating (D,A)? no
+* **picking C**
+* $s=B$
+  * $p=A$, creating (A,B)? yes
+  * $p=D$, creating (D,B)? no
+  * $p=E$, creating (E,B)? yes
+  * $p=F$, creating (F,B)? no
+* $s=E$
+  * $p=A$, creating (A,E)? yes
+  * $p=B$, creating (B,E)? yes
+  * $p=D$, creating (D,E)? yes
+  * $p=F$, creating (F,E)? yes
+* **picking D**
+* $s=A$
+  * $p=E$, creating (E,A)? no
+* $s=B$
+  * $p=E$, creating (E,B)? no
+* $s=C$
+  * $p=E$, creating (E,C)? no
+* $s=E$
+* $s=F$
+  * $p=E$, creating (E,F)? no
+* **picking E**
+* $s=A$
+* $s=A$
+  * $p=B$, creating (B,A)? no
+  * $p=C$, creating (C,A) ? yes
+  * $p=D$, creating (D,A)? no
+  * $p=F$, creating (F,A)? no
+* $s=B$
+  * $p=A$, creating (A,B)? no
+* $s=B$
+  * $p=C$, creating (C,B)? no
+  * $p=D$, creating (D,B)? no
+  * $p=F$, creating (F,B)? no
+* $s=C$
+  * $p=A$, creating (A,C)? no
+  * $p=B$, creating (B,C)? no
+* $s=C$
+  * $p=D$, creating (D,C)? no
+  * $p=F$, creating (F,C)? no
+* $s=D$
+  * $p=A$, creating (A,D)? yes
+  * $p=B$, creating (B,D)? yes
+  * $p=C$, creating (C,D)? yes
+* $s=D$
+  * $p=F$, creating (F,D)? yes
+* $s=F$
+  * $p=A$, creating (A,F)? yes
+  * $p=B$, creating (B,F)? yes
+  * $p=C$, creating (C,F)? yes
+  * $p=D$, creating (D,F)? no
+* $s=F$
+* **picking F**
+  * done
 </blockquote>
