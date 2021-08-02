@@ -41,3 +41,25 @@ then $G'$ is $\tau$-minimum $\tau$-equivalent.
 
 Note: you can replace minimum by maximum,
 minimal by maximal, and lesser by bigger.
+
+<hr class="sr">
+
+## Example 1
+
+Given the graph $G$, make it so that
+
+* $G'$: $\tau$-minimal $\tau$-equivalent
+* $G''$: $\tau$-minimum $\tau$-equivalent
+
+![](images/partial1.png)
+
+<blockquote class="spoiler">
+
+![](images/partial1-ans.png)
+
+That isn't the only answer, but you should check that
+each of your answers
+
+* is a subgraph of $G$
+* the transitive closing is equals to $G$ (since G is complete)
+</blockquote>
