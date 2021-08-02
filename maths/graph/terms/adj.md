@@ -2,8 +2,8 @@
 
 [Go back](..#advanced-terminology)
 
-This may also be called the Boolean Matrix
-or ``Matrice booléenne/Matrice d’adjacence``.
+This may also be called the boolean matrix (rarely)
+or ``Matrice d’adjacence/Matrice booléenne``.
 This is a matrix vertex by vertex, and the value are 
 0 or 1. If we are at row=A, col=B 
 
@@ -67,3 +67,6 @@ is
 }
 \]
 </div>
+
+You may have noticed but if we add the edge (d,i),
+we got a Wheel ($W_{6}$).

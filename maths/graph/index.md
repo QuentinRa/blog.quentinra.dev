@@ -49,11 +49,11 @@ A graph can be simple/multiple and directed or not.
         </tr>
         <tr>
             <td>
-                chain/walk <br>
+                chain/walk $P_n$ <br>
                 <code>Chaine</code>
             </td>
             <td>
-                path/trail <br>
+                path/trail $P_n$ <br>
                 <code>chemin</code>
             </td>
             <td>
@@ -65,11 +65,11 @@ A graph can be simple/multiple and directed or not.
         </tr>
         <tr>
             <td>
-                cycle/tour <br>
+                cycle/tour $C_n$ <br>
                 <code>cycle</code>
             </td>
             <td>
-                circuit <br>
+                circuit $C_n$ <br>
                 <code>circuit</code>
             </td>
             <td>
@@ -81,11 +81,11 @@ A graph can be simple/multiple and directed or not.
         </tr>
         <tr>
             <td>
-                star <br>
+                star $S_n$ <br>
                 <code>étoile</code>
             </td>
             <td>
-                star <br>
+                star $S_n$ <br>
                 <code>étoile</code>
             </td>
             <td>
@@ -96,11 +96,11 @@ A graph can be simple/multiple and directed or not.
         </tr>
         <tr>
             <td>
-                wheel <br>
+                wheel $W_n$ <br>
                 <code>roue</code>
             </td>
             <td>
-                wheel <br>
+                wheel $W_n$ <br>
                 <code>roue</code>
             </td>
             <td>
@@ -251,7 +251,7 @@ There is also names for graph having some properties
         </tr>
         <tr>
             <td>
-                complete graph <br>
+                complete graph $K_n$ <br>
                 <code>Graphe complet</code>
             </td>
             <td>
@@ -327,7 +327,9 @@ There is also names for graph having some properties
 
 ## Advanced Terminology
 
-* [Matrix](terms/matrix.md)
+* Matrix
+  * [Adjacency matrix](terms/adj.md)
+  * [Incidence matrix](terms/inc.md)
 * [Transitive closure](terms/tc.md)
 * [Connected graphs](terms/connected.md)
 * [Planar graph](terms/planar.md)
