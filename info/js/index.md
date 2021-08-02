@@ -114,3 +114,37 @@ the cache with
 * CTRL+F5
 * CTRL+R
 * CTRL+SHIFT+R
+
+<hr class="sl">
+
+## DOM/JS for websites
+
+...
+
+<hr class="sr">
+
+## Exceptions
+
+...
+
+<hr class="sl">
+
+## Classes and objects
+
+...
+
+<hr class="sr">
+
+## Sources
+
+* <https://www.javascript.com/learn/strings>
+* <https://www.w3schools.com/Js/default.asp>
+* <https://www.w3schools.com/Js/js_versions.asp>
+* <https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage>
+* <https://www.javascripttutorial.net/javascript-anonymous-functions/>
+* <https://developer.mozilla.org/fr/docs/Web/JavaScript>
+* <http://www.iut-fbleau.fr/sitebp/web/wim41/js/dom.pdf>
+* <http://www.iut-fbleau.fr/sitebp/web/wim41/js/js.pdf>
+* <https://dwarves.iut-fbleau.fr/git/monnerat/wim4_2021/src/master/cours/jscomp.pdf>
+* <http://pgsql.pedago.ensiie.fr/~vitera.y/cours/ipw/poly/03-applications-interactives.pdf>
+* <https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript>
