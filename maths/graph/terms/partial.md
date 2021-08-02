@@ -63,3 +63,16 @@ each of your answers
 * is a subgraph of $G$
 * the transitive closing is equals to $G$ (since G is complete)
 </blockquote>
+
+<hr class="sl">
+
+## Example 2
+
+Same for
+
+![](images/partial2.png)
+
+<blockquote class="spoiler">
+
+![](images/partial2-ans.png)
+</blockquote>
