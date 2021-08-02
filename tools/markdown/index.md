@@ -110,7 +110,7 @@ int main(void){
 ```markdown
 Here is a link [text that will be shown](https://example.com)
 and here is an
-image ![text if image not found](https://lgs-games.com/assets/icon64.png)
+image ![text if the image is not found](https://lgs-games.com/assets/icon64.png)
 
 You can add a text on hover with
 [text that will be shown](https://example.com "some text here")
