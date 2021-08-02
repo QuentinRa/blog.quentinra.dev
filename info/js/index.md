@@ -85,7 +85,24 @@ console.log('Hello, World')
 
 ## Syntax
 
-...
+* [Variables](syntax/var.md)
+* [Types](syntax/types.md)
+* [Operators](syntax/operators.md)
+* [Structures](syntax/structures.md)
+* [Functions](syntax/function.md)
+
+You should use ``console.log`` to print
+something (in the console) like this
+
+```js
+let text = "text";
+console.log(text)
+console.log("text")
+// others
+console.error("text")
+console.warn("text")
+console.info("text")
+```
 
 **BEWARE**: sometimes you wrote some Javascript, go back
 to your page, F5, and then you don't see any changes
