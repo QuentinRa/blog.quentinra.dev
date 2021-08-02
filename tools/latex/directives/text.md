@@ -1,6 +1,6 @@
 # Text
 
-[Go back](..)
+[Go back](..#writing-documents)
 
 You can write some text
 in a document without tags, that's a paragraph.

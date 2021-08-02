@@ -1,6 +1,6 @@
 # Code
 
-[Go back](..)
+[Go back](..#writing-documents)
 
 Here is how you would write code with
 OCaml highlighting

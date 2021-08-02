@@ -81,6 +81,20 @@ Related
 
 <hr class="sl">
 
+## Cheatsheet
+
+Because, I enjoy adding links to some of theses,
+here are some sheet that looks good
+
+* [symbols.pdf](https://www.caam.rice.edu/~heinken/latex/symbols.pdf)
+* [latexcheatsheet.pdf](https://users.dickinson.edu/~richesod/latex/latexcheatsheet.pdf),
+[latexcheatsheet.pdf](https://users.dickinson.edu/~richesod/latex/LatexFrench.pdf) (french),
+[video](https://divisbyzero.com/teaching/a-quick-guide-to-latex/).
+* [wikibooks - latex](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
+* [maths guide for latex](http://tug.ctan.org/info/short-math-guide/short-math-guide.pdf)
+
+<hr class="sr">
+
 ## Sources
 
 * <https://www.overleaf.com/>

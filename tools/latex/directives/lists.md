@@ -1,6 +1,6 @@
 # Lists
 
-[Go back](..)
+[Go back](..#writing-documents)
 
 Simply do that to create an unordered list
 

@@ -1,6 +1,6 @@
 # Document
 
-[Go back](..)
+[Go back](..#writing-documents)
 
 Using a date, a title, and an author, you document
 source code might look like this
