@@ -14,8 +14,12 @@ This is a matrix vertex by vertex too, and the value are
 * **1**: an arc is entering A ($B \to A$)
 * **0**: no arc ($A \to B$ or $B \to A$)
 
-Note that you should only use $-1$ instead of $0$,
+Notes
+
+* you should only use $-1$ instead of $0$,
 but that's unneeded if there is a $1$. 
+* this is what I learned in school (=French wikipedia)
+but the English wikipedia is not the same at all
 
 <hr class="sl">
 

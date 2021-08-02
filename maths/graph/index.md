@@ -330,6 +330,7 @@ There is also names for graph having some properties
 * Matrix
   * [Adjacency matrix](terms/adj.md)
   * [Incidence matrix](terms/inc.md)
+  * [Degree matrix](terms/degree.md)
 * [Transitive closure](terms/tc.md)
 * [Connected graphs](terms/connected.md)
 * [Planar graph](terms/planar.md)
@@ -444,6 +445,11 @@ They are using closed walk for ``cycle/circuit``, but
 * "A cycle (`cycle`) may either refer to a closed walk (also called a tour)" [wiki](https://en.wikipedia.org/wiki/Glossary_of_graph_theory#cycle)
 * "A tour may either refer to "a closed trail (also called a walk)" [wiki](https://en.wikipedia.org/wiki/Glossary_of_graph_theory#tour)
 * "A circuit (`circuit`) may refer to a closed trail" [wiki](https://en.wikipedia.org/wiki/Glossary_of_graph_theory#circuit)
+
+There is also a divergence on the incidence matrix
+
+* [French wikipedia](https://fr.wikipedia.org/wiki/Matrice_d'incidence) (=same as what I learned in school)
+* [English wikipedia](https://en.wikipedia.org/wiki/Incidence_matrix)
 
 <hr class="sr">
 

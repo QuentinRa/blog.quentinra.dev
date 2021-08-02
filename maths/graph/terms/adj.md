@@ -10,7 +10,11 @@ This is a matrix vertex by vertex, and the value are
 * **1**: $A \to B$ exists 
 * **0**: $A \to B$ do not exist 
 
-In a undirected graph, the matrix is symmetric.
+Notes
+
+* in a undirected graph, the matrix is symmetric.
+* if the vertex is looping, we are adding a 2 on the
+diagonal (and that's can't be called boolean matrix anymore)
 
 <hr class="sl">
 
