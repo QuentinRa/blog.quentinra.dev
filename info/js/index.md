@@ -83,7 +83,7 @@ console.log('Hello, World')
 
 <hr class="sr">
 
-## Syntax
+## Basic Syntax
 
 * [Variables](syntax/var.md)
 * [Types](syntax/types.md)
@@ -117,23 +117,22 @@ the cache with
 
 <hr class="sl">
 
-## DOM/JS for websites
+## Advanced syntax
 
-...
+You may use this, but the basic syntax is enough
+if you are starting JavaScript, you may come back
+later if you are motivated.
+
+* [Exceptions](syntax/exceptions.md)
+* [Classes and objects](syntax/classes.md)
 
 <hr class="sr">
 
-## Exceptions
+## JS for websites
 
 ...
 
 <hr class="sl">
-
-## Classes and objects
-
-...
-
-<hr class="sr">
 
 ## Sources
 
