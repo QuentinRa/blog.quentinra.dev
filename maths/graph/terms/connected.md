@@ -57,3 +57,29 @@ An edge that, once removed, will disconnect the graph.
 * Articulation point (`Point d'articulation`)
 
 A vertex that once removed, will disconnect the graph.
+
+<hr class="sr">
+
+## Example 1 - Connected graph
+
+Let G the graph
+
+![](images/connected1.svg)
+
+1. What are the connected components?
+2. Is the graph connected?
+3. Create a subgraph $G'$ with $\text{\{a,b,c,d\}}$.
+4. Is $G'$ connected? And super-connected?
+
+<blockquote>
+
+1. $C_1=\{e,f,g\}$ and $C_2=\{a,b,c,d,h,i\}$
+2. No, we got more than one connected component
+3. simply extracting the vertex and their edges
+
+![](images/connected1-2.svg)
+
+4. We got only one component so the graph is connected.
+The graph do seems to be super-connected.
+
+</blockquote>
