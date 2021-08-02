@@ -13,7 +13,30 @@ $(a,b)-(b,c)-(c,d)-...-(y-,z)$ then we create $(a,z)$ ...
 
 **Roy–Warshall algorithm** (also called Floyd–Warshall)
 
-* pick a vertex $A$
-* for each predecessor of $A$, $p$
-  * for each successor of $A$, $s$
-    * create $(p,s)$ if $(p,s)$ does not exists
+* for each vertex $V$
+  * for each predecessor of $V$, $p$
+    * for each successor of $V$, $s$
+      * create $(p,s)$ if $(p,s)$ does not exists
+
+<hr class="sl">
+
+## Example (Roy-Warshall algorithm)
+
+Apply Roy-Warshall algorithm on
+
+![](images/tc1.png)
+
+<blockquote class="spoiler">
+
+* **picking** A
+* $p=C$, $s=B$, creating (C, B)? yes 
+* **picking** B
+* $p=A$, $s=D$, creating (A, D)? yes
+* $p=A$, $s=C$, creating (A, C)? yes
+* $p=C$, $s=D$, creating (C, D)? yes
+* **picking** C
+* $p=B$, $s=A$, creating (B, A)? yes
+* $p=A$, $s=B$, creating (A, B)? no
+* **picking** D
+* done
+</blockquote>
