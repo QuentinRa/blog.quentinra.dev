@@ -23,6 +23,10 @@ in which we can't add more vertex inside.
     * else: we go to the next vertex
   * i++
 
+When iterating the vertices, you should do it by looking
+at the vertex in the edges that incident to a vertex inside
+your connected component.
+
 <hr class="sl">
 
 ## Super connectivity
@@ -71,9 +75,14 @@ Let G the graph
 3. Create a subgraph $G'$ with $\text{\{a,b,c,d\}}$.
 4. Is $G'$ connected? And super-connected?
 
-<blockquote>
+<blockquote class="spoiler">
 
-1. $C_1=\{e,f,g\}$ and $C_2=\{a,b,c,d,h,i\}$
+1. $C_1=\{e,f,g\}$ and $C_2=\{a,b,c,d,h,i\}$.
+
+Let's apply our connected algorithm
+
+![](images/connected1-1.png)
+
 2. No, we got more than one connected component
 3. simply extracting the vertex and their edges
 
@@ -81,5 +90,11 @@ Let G the graph
 
 4. We got only one component so the graph is connected.
 The graph do seems to be super-connected.
+
+Let's apply the super-connected algorithm
+
+![](images/connected1-3.png)
+
+The graph is super-connected.
 
 </blockquote>
