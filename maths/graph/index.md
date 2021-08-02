@@ -74,7 +74,9 @@ A graph can be simple/multiple and directed or not.
             </td>
             <td>
                 Each vertex degree is 2. This is also
-                called "closed walk/path/...".
+                called "closed walk/path/...". If a graph
+                does not have cycles, then the graph is
+                <u>acyclic</u>.
             </td>
         </tr>
         <tr>
@@ -134,7 +136,7 @@ Note: the degree is the number of neighbors, see next part.
 ## Terminology
 
 I marked with a little star `*`, the keywords that we are
-not using often (and that may learn later).
+not using often (and that you may learn later).
 
 <table class="table table-bordered table-dark table-striped">
     <thead>
@@ -325,7 +327,13 @@ There is also names for graph having some properties
 
 ## Advanced Terminology
 
-...
+* [Matrix](terms/matrix.md)
+* [Transitive closure](terms/tc.md)
+* [Connected graphs](terms/connected.md)
+* [Planar graph](terms/planar.md)
+* [Graph matching](terms/matching.md)
+* [stable set](terms/independence.md) (independence set)
+* [Cycle basis](terms/cycle_basis.md)
 
 <hr class="sr">
 
@@ -449,19 +457,26 @@ want to check
 * <https://en.wikipedia.org/wiki/Adjacency_matrix>
 * <https://en.wikipedia.org/wiki/Degree_matrix>
 * <https://en.wikipedia.org/wiki/Incidence_matrix>
+* <https://en.wikipedia.org/wiki/Sprague%E2%80%93Grundy_theorem>
+* <https://en.wikipedia.org/wiki/Bridge_(graph_theory)>
+* <https://en.wikipedia.org/wiki/Independent_set_(graph_theory)>
+* <https://en.wikipedia.org/wiki/Graph_partition>
+* <https://en.wikipedia.org/wiki/Transitive_closure>
+* <https://en.wikipedia.org/wiki/Connectivity_(graph_theory)>
+* <https://en.wikipedia.org/wiki/Planar_graph>
+* <https://en.wikipedia.org/wiki/Matching_(graph_theory)>
+
+Search, Scheduling methods, ...
+
 * <https://en.wikipedia.org/wiki/Depth-first_search>
 * <https://en.wikipedia.org/wiki/Breadth-first_search>
 * <https://en.wikipedia.org/wiki/Graph_traversal>
 * <https://en.wikipedia.org/wiki/Topological_sorting>
 * <https://en.wikipedia.org/wiki/Eulerian_path>
 * <https://en.wikipedia.org/wiki/Hamiltonian_path>
-* <https://en.wikipedia.org/wiki/Sprague%E2%80%93Grundy_theorem>
-* <https://en.wikipedia.org/wiki/Bridge_(graph_theory)>
 * <https://fr.wikipedia.org/wiki/M%C3%A9thode_potentiel-t%C3%A2che>
 * <https://en.wikipedia.org/wiki/Program_evaluation_and_review_technique>
 * <https://en.wikipedia.org/wiki/Critical_path_method>
-* <https://en.wikipedia.org/wiki/Independent_set_(graph_theory)>
-* <https://en.wikipedia.org/wiki/Graph_partition>
 
 Trees
 
