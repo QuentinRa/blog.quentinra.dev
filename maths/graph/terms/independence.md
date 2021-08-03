@@ -75,3 +75,64 @@ vertex is inside the Kernel.
 The grundy function result is not unique, **unless** you applied
 a topological sorting to sort
 the vertex before applying the function.
+
+<hr class="sl">
+
+## Example 1 - Independent set and grundy function
+
+Given this graph $G$
+
+![](images/independence/independence1.png)
+
+Give
+
+* a maximal independent set
+* a maximum independent set
+* a absorbing set
+* the kernel(s) using grundy function
+
+<blockquote class="spoiler">
+
+You should consider the graph as non-oriented
+for the independent sets.
+
+* a maximal independent set: $(6,3)$
+* a maximum independent set: $(1,5,3)$
+* an absorbing set: $(1,2,3,4,5,6)$ :) 
+* or $(2, 4, 5, 6)$ because
+  * 4 is absorbing (3)
+  * 5 is absorbing (2, 4)
+  * 2 is absorbing (1)
+  * 6 is absorbing (5)
+
+An using **Grundy function**
+
+* starting from 1: $g(1)=0$ (**inside kernel**)
+* $1$'s predecessor is $6$
+  * $1$'s value is 0
+  * the lowest value value we can give is $1$
+  * $g(6)=1$
+* $6$'s predecessor is $5$
+  * $6$'s value is 1
+  * the lowest value value we can give is $0$
+  * $g(5)=0$ (**inside kernel**)
+* $5$'s predecessor are $2, 4$
+  * $5$'s value is 0
+  * the lowest value value we can give is $1$
+  * $g(2)=1$
+  * $g(4)=1$
+* $2$'s predecessor is $1$
+  * $2$'s value is 1
+  * and $1's$ value is $0$
+  * their values are different so we are good
+* $4$'s predecessor is $3$
+  * $4$'s value is 1
+  * the lowest value value we can give is $0$
+  * $g(3)=0$ (**inside kernel**)
+* $3$'s predecessor is $2$
+  * since $2$ and $3$ values are different, we are good
+
+We got the kernel $(1,5,3)$. Starting from another
+vertex like $4$, we would have found the other
+kernel $(2,4,6)$.
+</blockquote>
