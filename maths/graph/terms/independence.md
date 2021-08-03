@@ -105,32 +105,24 @@ for the independent sets.
   * 2 is absorbing (1)
   * 6 is absorbing (5)
 
-An using **Grundy function**
+An using **Grundy function**, starting from $1$, we have
 
-* starting from 1: $g(1)=0$ (**inside kernel**)
-* $1$'s predecessor is $6$
-  * $1$'s value is 0
-  * the lowest value value we can give is $1$
-  * $g(6)=1$
-* $6$'s predecessor is $5$
-  * $6$'s value is 1
-  * the lowest value value we can give is $0$
-  * $g(5)=0$ (**inside kernel**)
-* $5$'s predecessor are $2, 4$
-  * $5$'s value is 0
-  * the lowest value value we can give is $1$
+![](images/independence/independence1-ans.png)
+
+* the first one is in the kernel so $g(1)=0$
+* next is the successor $2$
+  * the neighbors took the values $\text{\{0\}}$
+  * the lowest value we can give is $1$
   * $g(2)=1$
+* next are the successors $3,5$
+  * ... $\text{\{1\}}$, the lowest ... $0$
+  * $g(3)=0$ and $g(5)=0$
+* next is the successor $4$
+  * ... $\text{\{0\}}$, the lowest ... $1$
   * $g(4)=1$
-* $2$'s predecessor is $1$
-  * $2$'s value is 1
-  * and $1's$ value is $0$
-  * their values are different so we are good
-* $4$'s predecessor is $3$
-  * $4$'s value is 1
-  * the lowest value value we can give is $0$
-  * $g(3)=0$ (**inside kernel**)
-* $3$'s predecessor is $2$
-  * since $2$ and $3$ values are different, we are good
+* next is the successor $6$
+  * ... $\text{\{0\}}$, the lowest ... $1$
+  * $g(6)=1$
 
 We got the kernel $(1,5,3)$. Starting from another
 vertex like $4$, we would have found the other
