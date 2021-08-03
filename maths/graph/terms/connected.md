@@ -70,7 +70,7 @@ A vertex that once removed, will disconnect the graph.
 
 Let G the graph
 
-![](images/connected1.svg)
+![](images/connected/connected1.svg)
 
 1. What are the connected components?
 2. Is the graph connected?
@@ -83,19 +83,19 @@ Let G the graph
 
 Let's apply our connected algorithm
 
-![](images/connected1-1.png)
+![](images/connected/connected1-1.png)
 
 2. No, we got more than one connected component
 3. simply extracting the vertex and their edges
 
-![](images/connected1-2.svg)
+![](images/connected/connected1-2.svg)
 
 4. We got only one component so the graph is connected.
 The graph do seems to be super-connected.
 
 Let's apply the super-connected algorithm
 
-![](images/connected1-3.png)
+![](images/connected/connected1-3.png)
 
 The graph is super-connected.
 
@@ -108,13 +108,13 @@ The graph is super-connected.
 Is the following graph $G$ super-connected?
 Tip: use the transitive closure.
 
-![](images/connected2.png)
+![](images/connected/connected2.png)
 
 <blockquote class="spoiler">
 
 Applying Roy-Warshall algorithm, we got
 
-![](images/connected2-1.svg)
+![](images/connected/connected2-1.svg)
 
 As you may notice, this is a complete graph
 $K_{6}$. Since the transitive closure is a complete
@@ -122,7 +122,7 @@ graph, then $G$ is super-connected.
 
 This wasn't the example goal but here is Roy-Warshall algorithm
 
-![](images/connected2-2.png)
+![](images/connected/connected2-2.png)
 
 The complete algorithm (text)
 

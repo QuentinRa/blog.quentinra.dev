@@ -51,11 +51,11 @@ Given the graph $G$, make it so that
 * $G'$: $\tau$-minimal $\tau$-equivalent
 * $G''$: $\tau$-minimum $\tau$-equivalent
 
-![](images/partial1.png)
+![](images/partial/partial1.png)
 
 <blockquote class="spoiler">
 
-![](images/partial1-ans.png)
+![](images/partial/partial1-ans.png)
 
 That isn't the only answer, but you should check that
 each of your answers
@@ -70,9 +70,9 @@ each of your answers
 
 Same for
 
-![](images/partial2.png)
+![](images/partial/partial2.png)
 
 <blockquote class="spoiler">
 
-![](images/partial2-ans.png)
+![](images/partial/partial2-ans.png)
 </blockquote>
