@@ -371,6 +371,11 @@ a graph (vertex/edges) will the least colors.
 * [Vertex coloring](coloring/vertex.md)
 * [Edge coloring](coloring/edges.md)
 
+What you learned here is very similar to the notion
+of independent set. In fact, you can use Grundy to find
+a coloration. I do not know why we learned those separately.
+Look for [Grundy number or Grundy chromatic number](https://en.wikipedia.org/wiki/Grundy_number).
+
 <hr class="sr">
 
 ## Trees
