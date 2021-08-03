@@ -49,7 +49,7 @@ Note: a complete graph is super-connected.
 
 ## Terminology
 
-* ??? (``Graphe réduit``)
+* reduced graph (``Graphe réduit``)
 
 If $C_1, C_2, C_3$ are super-connected components, then
 a graph having the nodes $C_1, C_2, C_3$

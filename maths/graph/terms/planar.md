@@ -26,6 +26,15 @@ It can be either a
 * bounded face/``face finie``
 * external, outer or unbounded face/``face infinie``
 
+<hr class="sr">
+
+## Dual graph
+
+We are calling Dual graph (`Graphe dual`), the graph made
+using the faces as vertices. If we have
+two faces $F_1$ and $F_2,$ and if $A \in F_1$ was adjacent
+to $B \in F_2$ then we have $F_1$ is adjacent to $F_2$.
+
 <hr class="sl">
 
 ## Bounds
@@ -37,6 +46,16 @@ The bounds are forming a cycle basis in
 a planar representation.
 
 <hr class="sl">
+
+## Graph minor
+
+You can get the minor of a graph by
+
+* removing an edge
+* contracting an edge (the vertex and their edges are merged)
+* deleting an edge having a degree of one (isolated, $d(vertex) = 1$)
+
+<hr class="sr">
 
 ## Check if the graph is planar
 
