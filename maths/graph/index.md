@@ -338,7 +338,7 @@ There is also names for graph having some properties
 * [Connected graphs](terms/connected.md)
 * [Planar graph](terms/planar.md)
 * [Graph matching](terms/matching.md)
-* [Stable set](terms/independence.md) (independence set)
+* [Independent set](terms/independence.md)
 * [Cycle basis](terms/cycle_basis.md)
 
 <hr class="sr">
@@ -476,6 +476,9 @@ want to check
 * <https://en.wikipedia.org/wiki/Connectivity_(graph_theory)>
 * <https://en.wikipedia.org/wiki/Planar_graph>
 * <https://en.wikipedia.org/wiki/Matching_(graph_theory)>
+* <https://en.wikipedia.org/wiki/Cycle_space>
+* <https://en.wikipedia.org/wiki/Cycle_basis>
+* <https://en.wikipedia.org/wiki/Glossary_of_graph_theory#kernel>
 
 Search, Scheduling methods, ...
 
