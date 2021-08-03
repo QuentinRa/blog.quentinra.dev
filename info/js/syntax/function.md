@@ -1,4 +1,4 @@
-# Function
+# Functions
 
 [Go back](../index.md#basic-syntax)
 
