@@ -78,3 +78,37 @@ Other notes
   * $m \le 3n - 6$ (yeah it's 6 not 5)
   * $f \le 2n - 4$
   * if there are not cycles of length 3, $m \le 2n-4$
+
+<hr class="sr">
+
+## Example 1
+
+Are the following graphs planar graphs?
+
+![](images/planar.png)
+
+<blockquote>
+
+The first graph is planar because it's $K_5$.
+
+The second one is planar, because I found a planar
+representation. Notice that we have $n + m = f = 2$
+($n=5$, $m=9$, $f=6$=five+the outer face)
+
+![](images/planar1-2.png)
+
+The third graph has a subgraph $K_{3,3}$ so it's
+not planar.
+
+![](images/planar1-3.png)
+
+The fourth graph $m=12 \le 6 * 3 - 5 \le 13$ so the
+graph is planar. Simply move the vertices "4" and "5".
+
+![](images/planar1-4.png)
+
+All degrees are equals to $6$, so the graph is not
+planar. We could have used $m < 3n - 5$.
+
+As for the sixth graph, it's not planar either.
+</blockquote>
