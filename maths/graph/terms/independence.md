@@ -156,3 +156,48 @@ Then
   * $g(5)=0$ and $g(3)=1$
   * $g(3)=0$ and $g(5)=2$
 </blockquote>
+
+<hr class="sl">
+
+## Example 3 - Unique Grundy function
+
+Find a kernel for this graph using the grundy
+function, after sorting the vertices by successors.
+
+![](images/independence/independence3.png)
+
+**Tip**: this is **NOT** a normal Grundy function.
+The result is unique and immediate because you got no choice
+since we ordered the vertices.
+
+<blockquote class="spoiler">
+
+Let's sort the vertices
+
+* $3$: 0 successor
+* $5$: 1 successor
+* $7$: 1 successor
+* $8$: 1 successor
+* $1$: 2 successors
+* $2$: 2 successors
+* $4$: 2 successors
+* $6$: 4 successors
+
+And the Grundy function is
+
+![](images/independence/independence3-ans.png)
+
+with
+
+* $g(3)=0$ (no successors $\to$ should be the start, inside the kernel)
+* $5$ is not a neighbor of $3$: $g(5)=0$
+* $7$ is not a neighbor of $3,5$: $g(7)=0$
+* $8$ is a neighbor of $g(3)=0$: $g(8)=1$
+* $1$ is a neighbor of $g(3)=0, g(5)=0$: $g(1)=1$
+* $4$ is a neighbor of $g(3)=0, g(8)=1$: $g(4)=2$
+* $2$ is a neighbor of $g(5)=0, g(4)=2$: $g(2)=1$
+* $6$ is a neighbor of $g(1)=g(2)=g(8)=1, g(7)=0$: $g(6)=2$
+
+The kernel is $3,5,7$.
+
+</blockquote>
