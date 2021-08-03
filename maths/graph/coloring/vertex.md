@@ -7,7 +7,7 @@ The **rules** are
 * you must use the least colors possibles
 * two neighbors can't have the same color
 
-We are calling chromatic number (``nombre chromatique``) 
+We are calling chromatic number (``nombre chromatique``)
 $\gamma(G)$ (gamma) or $\chi(G)$ (chi) of $G$ the minimum
 number of colors that we will have to use to color the graph.
 This is a value hard to found but we know
@@ -21,17 +21,20 @@ This is a value hard to found but we know
 * minoring: $\gamma(G) \ge |\text{longest_clique_of_G}|$
 * majoring: $\gamma(G) \le d_{max}(G)+1$ <span class="tms">(max degree+1)</span>
 
+The solution is say to be optimal when we can't find
+a better one.
+
 <hr class="sr">
 
 ## Welsh-Powell greedy algorithm
 
 * order the vertex by decreasing degree
 * while all vertices are not colored
-  * pick the first not colored vertex
-  * pick an unused color
-  * while conserving the order above, color every uncolored
-  vertex, not adjacent to the ones we are coloring with
-  this color
+    * pick the first not colored vertex
+    * pick an unused color
+    * while conserving the order above, color every uncolored
+      vertex, not adjacent to the ones we are coloring with
+      this color
 
 To check if the solution is the best one, check if
 the solution is
@@ -57,14 +60,112 @@ Algorithm
 
 * until all of our subgraphs are complete
 * create 2 subgraph
-  * one contracting two vertex
-  * one linking two vertex
+    * one contracting two vertex
+    * one linking two vertex
 
 Once you are done, all the graph at the end should be
 complete graphs. The degree of the smallest clique is
 the chromatic number. Note that the vertex in the smallest
 clique that are contracted together will have the same
 color.
+
+<hr class="sr">
+
+![](images/Tensei_Shitara_dai_Nana_Ouji_dattanode,_Kimamani_Majutsu_o_Kiwamemasu.png)
+
+Source: Tensei Shitara dai Nana Ouji dattanode, Kimamani Majutsu o Kiwamemasu
+<span class="tms">
+(alias: the Trap)
+</span>.
+
 <hr class="sl">
 
-![](Tensei_Shitara_dai_Nana_Ouji_dattanode,_Kimamani_Majutsu_o_Kiwamemasu.png)
+## Exercise 1 - Greedy algorithm
+
+Use Welsh-Powell greedy algorithm and find
+the coloration for the following graph. Is it the
+optimal solution?
+
+![](images/coloring1.png)
+
+<blockquote class="spoiler">
+
+* $d(D)=7$
+* $d(F)=6$
+* $d(A)=d(C)=5$
+* $d(B)=d(G)=d(H)=4$
+* $d(E)=3$
+
+Giving us the following table
+
+* o=colored
+* x=not colored since neighbor to a colored
+* "nothing"=already colored
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Colors\Vertex</th>
+            <th>D</th>
+            <th>F</th>
+            <th>A</th>
+            <th>C</th>
+            <th>B</th>
+            <th>G</th>
+            <th>H</th>
+            <th>E</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Red</td>
+            <td>o</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+        </tr>
+        <tr>
+            <td>Yellow</td>
+            <td></td>
+            <td>o</td>
+            <td>x</td>
+            <td>o</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+        </tr>
+        <tr>
+            <td>Green</td>
+            <td></td>
+            <td></td>
+            <td>o</td>
+            <td></td>
+            <td>x</td>
+            <td>x</td>
+            <td>o</td>
+            <td>x</td>
+        </tr>
+        <tr>
+            <td>Blue</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>o</td>
+            <td>o</td>
+            <td></td>
+            <td>o</td>
+        </tr>
+    </tbody>
+</table>
+
+We are checking: the longest clique
+is $D-C-A-H$ (size=4) and size we colored the graph
+in $4$ colors, this is the optimal solution. We
+also had the clique $F-D-G-E$.
+</blockquote>
