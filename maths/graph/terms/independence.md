@@ -136,3 +136,29 @@ We got the kernel $(1,5,3)$. Starting from another
 vertex like $4$, we would have found the other
 kernel $(2,4,6)$.
 </blockquote>
+
+<hr class="sr">
+
+## Example 2 - Grundy function
+
+Find a kernel for this graph using the grundy
+function
+
+![](images/independence/independence2.png)
+
+<blockquote class="spoiler">
+You should have noticed that $1$ do not have
+any predecessors so we MUST start at $1$.
+
+![](images/independence/independence2-ans.png)
+
+Then
+
+* $g(2)=g(4)=1$ because $g(1)=0$
+* $g(2)=2$ because we have the predecessors already have 
+  * $g(1)=0$
+  * $g(4)=1$
+* then you got **a choice** (=two kernels)
+  * $g(5)=0$ and $g(3)=1$
+  * $g(3)=0$ and $g(5)=2$
+</blockquote>
