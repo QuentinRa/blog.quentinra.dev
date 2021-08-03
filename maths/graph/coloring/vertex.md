@@ -58,7 +58,7 @@ of edges missing for the graph to be complete.
 
 Algorithm
 
-* until all of our subgraphs are complete
+* until all of our subgraph are complete
 * create 2 subgraph
     * one contracting two vertex
     * one linking two vertex
@@ -168,4 +168,35 @@ We are checking: the longest clique
 is $D-C-A-H$ (size=4) and size we colored the graph
 in $4$ colors, this is the optimal solution. We
 also had the clique $F-D-G-E$.
+</blockquote>
+
+<hr class="sr">
+
+## Exercise 2 - Contraction
+
+Use the contraction algorithm and find
+the coloration for the following graph.
+
+![](images/coloring2.png)
+
+<blockquote class="spoiler">
+
+We got 4 missing edges so up to $2^4=16$ graphs we will have
+to make for $[c,b], [d,b], [e,b], [c,f]$.
+
+![](images/coloring2-1.png)
+
+And the result is
+
+![](images/coloring2-2.png)
+
+with L=Link and C=Contraction. The smallest
+clique (the checked graphs) is 
+
+* $CF-DB-E-A$: 4 colors
+* $CF-D-BE-A$: 4 colors
+
+So we can color our graph like this
+
+![](images/coloring2-3.png)
 </blockquote>
