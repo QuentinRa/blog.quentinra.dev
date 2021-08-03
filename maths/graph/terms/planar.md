@@ -62,8 +62,8 @@ You can get the minor of a graph by
 Let $m=\\#edges=|E|$, $n=\\#vertices=|V|$ and $f=\\#faces$, then
 a graph is planar if
 
-* $n-m+f=2$ (you can find $f$ with $f=m-n+2$)
-* if $m < 3n -5$ in a connected graph
+* **Euler's formula**: $n-m+f=2$ (you can find $f$ with $f=m-n+2$)
+* if $m < 3n - 5$ in a connected graph
 * **Kuratowski's theorem**
   * The graphs $K_{3,3}$ and $K_5$ are not planar
   * A subgraph of these is not planar
@@ -74,3 +74,7 @@ Other notes
 
 * if the $\forall{i \in V},\ d(i) \gt 5$, the graph is NOT planar
 * if a graph is planar, then $\exists{i \in V},\ d(i) \lt 6$
+* According to the English wikipedia, a graph is planar if
+  * $m \le 3n - 6$ (yeah it's 6 not 5)
+  * $f \le 2n - 4$
+  * if there are not cycles of length 3, $m \le 2n-4$
