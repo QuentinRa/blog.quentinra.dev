@@ -201,3 +201,46 @@ with
 The kernel is $3,5,7$.
 
 </blockquote>
+
+<hr class="sr">
+
+## Example 4 - Grundy function
+
+Given this adjacency matrix, calculate the grundy
+function. Is it unique?
+
+![](images/independence/independence4.png)
+
+<blockquote class="spoiler">
+
+Let's sort the vertices
+
+* $0$: 2 successor
+* $1$: 3 successor
+* $2$: 2 successor
+* $3$: 1 successor
+* $4$: 2 successor
+* $5$: 1 successor
+* $6$: 1 successor
+* $7$: 1 successor
+* $8$: 0 successor
+
+Giving us $8-3-5-6-7-0-2-4-1$. Since we ordered the
+vertex, the grundy function is unique :3.
+
+* $g(8)=0$ (no successors $\to$ should be the start, inside the kernel)
+* $7$ is a neighbor of $g(8)=0$: $g(7)=1$
+* $5$ is a neighbor of $g(7)=1$: $g(5)=0$
+* $3$ is a neighbor of $g(5)=0$: $g(3)=1$
+* $6$ is a neighbor of $g(7)=1$: $g(6)=0$
+* $4$ is a neighbor of $g(8)=g(6)=0$: $g(4)=1$
+* $2$ is a neighbor of $g(7)=1, g(5)=0$: $g(2)=2$
+* $1$ is a neighbor of $g(2)=2, g(3)=g(4)=1$: $g(1)=0$
+* $0$ is a neighbor of $g(1)=0, g(4)=1$: $g(0)=2$
+
+The kernel is $1,5,6,8$.
+
+**Note**: if you are wondering why after $8$, we dealt
+with $7$, this is because the dependencies. We need $g(5)$ for $g(3)$
+and $g(5)$ needs $g(7)$.
+</blockquote>
