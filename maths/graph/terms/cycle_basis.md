@@ -10,9 +10,9 @@ arbitrarily pick a direction for each each edge.
 We are writing each cycle as a vector of values
 such as $C_n = (0, ...,1,-1)$
 
-* 0: if the edge is not inside the cycle
-* 1: if the edge is inside the cycle, in the same direction
-* -1: if the edge is inside the cycle, not in the same direction
+* $0$: if the edge is not inside the cycle
+* $1$: if the edge is inside the cycle, in the same direction
+* $-1$: if the edge is inside the cycle, not in the same direction
 
 A cycle basis $B$ is a set of cycles as vectors so that the
 basis linear independent and generating (``libre et génératrice``).
@@ -29,9 +29,9 @@ the number of connected components.
 We are calling co-cycles (`cocycles`) of $A$,
 the set of arcs incident of $A$, noted $\omega{(A)}$.
 
-* 0: if the edge is not inside the co-cycle
-* 1: if the edge is inside the co-cycle, in the same direction
-* -1: if the edge is inside the co-cycle, not in the same direction
+* $1$: if an edge $(a,b)$ got $a$ inside the co-cycle, $b$ outside
+* $-1$: if an edge $(a,b)$ got $b$ inside the co-cycle, $a$ outside
+* $0$: otherwise
 
 A co-cycle basis $B$ is a set of co-cycles as vectors so that the
 basis linear independent and generating (``libre et génératrice``).
@@ -43,15 +43,15 @@ the number of connected components.
 
 <hr class="sr">
 
-# Exercise 1 - cycle basis
+## Exercise 1 - cycle basis
 
-![](images/cycle_basis1.png)
-
-The edges' set is
+The edges' set for the following graph is
 
 @
 E = \\{(a,b),(a,c),(a,d),(b,c),(b,f),(c,e),(c,f),(d,e),(e,f)\\}
 @
+
+![](images/cycle_basis1.png)
 
 1. Give the vectors for the cycles
    * $(bcfb)$
@@ -77,12 +77,53 @@ both $(bcfb)$ and $(abfeda)$.
 (0,0,0,1,-1,1,0,0,1) + (0,0,0,0,0,-1,1,0,-1) =
 (bcefb) + (ecfe)$
 @
-3. $m - n + p \Leftrightarrow 9-6+1 = 4$
+3. $\mu(G) = m - n + p \Leftrightarrow 9-6+1 = 4$
 
 4. $B = \\{(abca), (cfec), (acefba), (adeca)\\}$
 
 You must look for cycles that have an arc that is
 not in a cycle you already created so that you are sure
-that can't get it by linear combination.
+that can't get it by linear combination. Notice that
+we got $4$ cycles inside $B$, as expected.
+
+</blockquote>
+
+<hr class="sl">
+
+## Exercise 2 - co-cycle basis
+
+The edges' set for the following graph is
+
+@
+E = \\{(a,b),(a,c),(a,d),(b,c),(b,f),(c,e),(c,f),(d,e),(e,f)\\}
+@
+
+![](images/cycle_basis2.png)
+
+1. Give the vectors for the co-cycles
+    * $(abf)$
+    * $(ae)$
+2. $(ae)$ is a linear combination of 2 co-cycles. Which ones?
+3. What's $\gamma(G)$?
+4. Give a cycle basis $B$, which mustn't include
+   mustn't contains co-cycles of one vertex.
+
+<blockquote class="spoiler">
+
+1. we are simply doing what is explained above
+    * $(abf) \to (0,1,1,1,0,0,-1,0,-1)$
+      * the $2^{nd}$ value $(a,c)$, $a$ is inside, $c$ outside so $1$
+      * the $7^{th}$ value $(c,f)$, $c$ is outside, $f$ inside so $-1$
+
+    * $(ae) \to (1, 1, 1, 0, 0, -1, 0, -1, 1)$
+
+2. one answer would be $(ae) = (a) + (e)$ (because
+they are a stable set)
+3. $\gamma(G) = n - p \Leftrightarrow 6-1 = 5$
+
+4. $B' = \\{(abc), (bcf), (cfe), (aced), (abfed)\\}$
+
+Notice that
+we got $5$ co-cycles inside $B$, as expected.
 
 </blockquote>
