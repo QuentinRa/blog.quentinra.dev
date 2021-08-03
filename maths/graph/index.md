@@ -323,6 +323,8 @@ There is also names for graph having some properties
     </tbody>
 </table>
 
+**You may do these exercises**: [exercises](exercises.md).
+
 <hr class="sl">
 
 ## Advanced Terminology
