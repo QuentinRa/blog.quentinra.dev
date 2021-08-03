@@ -1,4 +1,0 @@
-Trees
-* the edges removed are making a ?
-
-https://faculty.tru.ca/smcguinness/cyclecoversjgt.pdf
