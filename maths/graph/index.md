@@ -362,11 +362,14 @@ a edge/vertex with
 
 <hr class="sl">
 
-## Graph coloring
+## Graph coloring problems
 
-* Stable set
-* Vertex coloring
-* Edge coloring
+One of the uses of the stable/independent set
+is for the graph coloring problems. You will try to color
+a graph (vertex/edges) will the least colors.
+
+* [Vertex coloring](coloring/vertex.md)
+* [Edge coloring](coloring/edges.md)
 
 <hr class="sr">
 
@@ -478,7 +481,6 @@ want to check
 * <https://en.wikipedia.org/wiki/Matching_(graph_theory)>
 * <https://en.wikipedia.org/wiki/Cycle_space>
 * <https://en.wikipedia.org/wiki/Cycle_basis>
-* <https://en.wikipedia.org/wiki/Glossary_of_graph_theory#kernel>
 
 Search, Scheduling methods, ...
 
@@ -491,6 +493,8 @@ Search, Scheduling methods, ...
 * <https://fr.wikipedia.org/wiki/M%C3%A9thode_potentiel-t%C3%A2che>
 * <https://en.wikipedia.org/wiki/Program_evaluation_and_review_technique>
 * <https://en.wikipedia.org/wiki/Critical_path_method>
+* <https://en.wikipedia.org/wiki/Graph_coloring>
+* <https://en.wikipedia.org/wiki/Edge_coloring>
 
 Trees
 
