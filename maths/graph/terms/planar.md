@@ -110,5 +110,10 @@ graph is planar. Simply move the vertices "4" and "5".
 All degrees are equals to $6$, so the graph is not
 planar. We could have used $m < 3n - 5$.
 
-As for the sixth graph, it's not planar either.
+As for the sixth graph, it's not planar either. I used
+Robertson–Seymour theorem and found that the minor of the
+graph (by only merging vertices) is $K_6$ so if I remove
+one more vertex, it's $K_5$ and $K_5$ is not a planar graph.
+
+![](images/planar1-5.png)
 </blockquote>
