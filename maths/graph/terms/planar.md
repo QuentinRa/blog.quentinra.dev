@@ -79,15 +79,15 @@ Other notes
   * $f \le 2n - 4$
   * if there are not cycles of length 3, $m \le 2n-4$
 
-<hr class="sr">
+<hr class="sl">
 
 ## Example 1
 
 Are the following graphs planar graphs?
 
-![](images/planar.png)
+![](images/planar1.png)
 
-<blockquote>
+<blockquote class="spoiler">
 
 The first graph is planar because it's $K_5$.
 
@@ -116,4 +116,24 @@ graph (by only merging vertices) is $K_6$ so if I remove
 one more vertex, it's $K_5$ and $K_5$ is not a planar graph.
 
 ![](images/planar1-5.png)
+</blockquote>
+
+<hr class="sr">
+
+## Example 2
+
+Use **Robertson–Seymour theorem** and demonstrate 
+that the Petersen graph is not planar.
+
+![](images/planar2.png)
+
+
+<blockquote class="spoiler">
+
+This answer can be found on Wikipedia 
+[source](https://en.wikipedia.org/wiki/Planar_graph).
+Here is a copy
+
+![](images/planar2-1.gif)
+
 </blockquote>
