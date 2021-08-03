@@ -65,16 +65,18 @@ vertex is inside the Kernel.
 
 * you should start with a kernel without predecessor (if you can)
 * give the first vertex value 0
-* it's predecessor will have the value 1
-* then you should move to one of the predecessor
-* if it's predecessor does not have a value
-  * then it's 0
-  * otherwise this is the least value we can give that is not
-  already used by an adjacent vertex
+* then until you gave a value to everyone,
+  * go to the successors
+  * give them the lowest value not taken by a predecessor ($\ge 0$)
+  * You can change a vertex value if the constraint
+  above is not respected <span class="tms">
+    (a vertex took the same value
+    as an adjacent vertex)
+  </span>
 
-The grundy function result is not unique, **unless** you applied
-a topological sorting to sort
-the vertex before applying the function.
+The grundy function result is not unique, **unless** you
+sorted the vertices beforehand. What you will usually
+do is sorting the vertices by the number of successors.
 
 <hr class="sl">
 

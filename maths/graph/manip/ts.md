@@ -9,6 +9,3 @@ with the vertex having no successors, then
 * new vertex without successor (or with less successor) should appear
 
 Repeat until the graph is empty.
-
-> This is usually used before a **grundy function** (explained later),
-> because once the vertices are sorted, then you grundy function result will be unique.
