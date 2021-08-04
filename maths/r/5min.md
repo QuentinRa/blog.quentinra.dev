@@ -2,11 +2,23 @@
 
 [Go back](index.md)
 
+You will learn the most basic things you need to know
+to write some code. You may need to check the files/plots
+functions later if you are planning to do some statistics.
+
+<hr class="sl">
+
+## Variables
+
 You can assign a variable ``x`` to a value `5` using `<-`.
 
 ```r
 x <- 5
 ```
+
+<hr class="sr">
+
+## Expressions
 
 You can do comments with ``#``. You may or not
 add a ``;`` at the end of a line.
@@ -23,6 +35,10 @@ x
 print("test")
 ```
 
+<hr class="sl">
+
+## Functions
+
 You can write a function using the keyword
 ``function``. Parameters can have a default value and they
 can be passed in whatever order you want if you use
@@ -37,6 +53,10 @@ my_function(5) # y = 2
 my_function(y=3, x=5) # use names
 ```
 
+<hr class="sl">
+
+## Statements
+
 Aside from ``if`` and `for i in` (explained later),
 you won't use and should not use any structure.
 
@@ -45,6 +65,10 @@ if ( condition ) {
     // ...
 }
 ```
+
+<hr class="sl">
+
+## Vectors
 
 In R, all values are a vector. In fact ``5`` is considered
 as a vector of size 1. A vector is like an array, but when
@@ -81,6 +105,3 @@ having a type.
 # create a vector of 10 numerics (=float or int) values
 numeric(10)
 ```
-
-And now you should be able to read some code in R, and
-write some basic code too!
