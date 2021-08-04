@@ -8,7 +8,7 @@ in other course such as **Statistics**, **Matrix**,
 You can use other languages such as Python, Julia,
 OCaml, according to what you want to do.
 
-<div class="sl"></div>
+<hr class="sl">
 
 # Introduction
 
@@ -46,7 +46,59 @@ Then here is the real course.
 And here you can learn how to write
 [Rmd documentation](rmd.md).
 
-<div class="sl"></div>
+<table class="table table-dark table-bordered table-striped">
+<tr><th class="text-center">Other notes about the Language</th></tr>
+<tr><td>
+The semicolon <code>;</code> at the end of a line is optional.
+You may use it if you make more than one expression
+per line.
+</td></tr>
+<tr><td> 
+Use <code>#</code> for comments
+</td></tr>
+<tr><td> 
+Use <code>print(value)</code> to print something.
+
+```r
+x <- "Hello"
+y <- "World"
+print(paste(x, y))
+# [1] "Hello World"
+cat(paste(x, y), sep = "\n")
+# Hello World
+```
+</td></tr>
+<tr><td>
+
+You will use this a lot, you can
+**see the help for a function** with ``?my_function``
+* examples with ``examples(my_function)``
+* args with ``args(my_function)``
+* source code with ``body(my_function)``
+</td></tr>
+<tr><td>
+Open either in your IDE or your browser
+the documentation with <code>help.start()</code>.
+</td></tr>
+<tr><td>
+Either look or load a dataset
+with <code>data()/data('dataset')</code>.
+</td></tr>
+<tr><td>
+Let's say you got a vector of numbers <code>data$numbers</code>,
+if you are planning to make a vector of positives numbers
+in R, then we usually name the resulting vector like this
+<code>data$numbers.a_name_here</code>. Same for a function
+generalizing another etc. (name => name.generalization)
+</td></tr>
+<tr><td>
+There are a lot of shortcuts or it seems so. For instance,
+you can use <code>T</code> for <code>TRUE</code>. For functions,
+you can use <code>prob/proba</code> for <code>probability</code> etc.
+</td></tr>
+</table>
+
+<hr class="sl">
 
 ## Advanced notes
 
@@ -64,7 +116,7 @@ that you might use or not.
 
 ...
 
-<div class="sl"></div>
+<hr class="sl">
 
 ## Sources
 
