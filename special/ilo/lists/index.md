@@ -5,11 +5,11 @@
 Before starting, please take note that in the project,
 you got 3 files
 
-* ``ListeOperations.pdf`` : visual as to how you should code some
+* ``ListeOperations.pdf``: visual as to how you should code some
 methods
-* ``src/lists/ListIteratorTest`` : **test** your code
+* ``src/lists/ListIteratorTest``: **test** your code
 mid-way (please use it or you are gonna regret it later)
-* ``TP Listes.pdf`` : what you need to do :)
+* ``TP Listes.pdf``: what you need to do :)
 
 Then open the project in your favorite
 IDE, 
@@ -96,9 +96,9 @@ for (Integer c : numbers) {
 About insertAt method. Please use other methods
 according to the case
 
-* index < 0 : exception
-* index = 0 : insert
-* index = size : add
+* $index \lt 0$: exception
+* $index = 0$: insert
+* $index = size$: add
 * otherwise find the previous element and make a manual insert
 
 Iterators are a way to iterate a list/set of objects.
@@ -122,8 +122,8 @@ In ``ListIterator`` note the attributes
 Then simply change our variable according to what
 value they are supposed to have. How do we know that
 the list is empty? (answer: <span class="spoiler">
-current is null means the list is empty. We will have a next
-element if current **is not null**.
+current is null means the list is empty. 
+We will have a next element if current **is not null**.
 </span>)
 
 As a side note, please don't forget to instantiate all
@@ -132,8 +132,8 @@ the teacher is asking you to do it.
 
 Here is my equals method. Please note that this method is "weird". You are not checking if two
 items have the same type but if they have the same content. So you
-will have to check if they are ``Iterable`` then 
-iterate your lists.
+will have to check if they are ``Iterable``
+then iterate your lists.
 
 ```java
 public boolean equals(Object o) {
@@ -180,7 +180,7 @@ public int hashCode() {
 Finally, Collections is **easy**. That's a proxy for you!
 
 ```java
-// as a remember, you have this attribute
+// as a reminder, you have this attribute
 private ForwardList<E> liste;
 
 // add would be
