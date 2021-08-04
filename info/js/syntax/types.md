@@ -8,7 +8,7 @@ in Javascript are
 
 * ``true/false``: a boolean (type boolean)
 * ``5``: an integer (type number)
-* ``5.0`` : a float (type number)
+* ``5.0``: a float (type number)
 * ``5.0``: a string (type string, class String)
 * `"5.0"`: a string (type string, class String)
 * <code>\`5.0\`</code>: a string (type string, class String)
@@ -25,3 +25,60 @@ mainly used in well-written functions
 * ``var instanceof className`` returning a boolean if
 this variable is an instance of a class 
 like `[] instanceof Array`.
+
+<hr class="sl">
+
+## Strings
+
+A string is a set of ordered characters. You can use
+variables in a string like this
+
+```js
+let variable = 5
+console.log("the variable value is "+variable)
+console.log('the variable value is '+variable)
+console.log(`the variable value is ${variable}`)
+// the variable value is 5 (x3)
+```
+
+You may use some function like (str and str2 are strings)
+
+* ``str.length``: get number of characters
+* ``str.indexOf(str2)``: first index of str2 in str
+* ``str.lastIndexOf(str2)``: last index of str2 in str
+* ``str.toLowerCase()``: str to lower case
+* ``str.toUpperCase()``: str to upper case
+* ``str.replace('a','b')``: replace "a" by "b", one time
+* ``str.replaceAll('a','b')``: replace "a" by "b"
+* ``str.trim()``: remove spaces before/after str
+*  substring, slice, substr, concat, ...
+
+You may notice that ``str[0]`` is returning the first
+character but that's useless trying to modify the values
+like this.
+
+<hr class="sl">
+
+## Array
+
+```js
+// empty
+[]
+// with values
+[5,"toto", "hello"]
+// same
+new Array(5,"toto", "hello")
+```
+
+It's working like in $C$, ``tab[0]`` returns the
+first element of ``tab``.
+
+* ``array.length``: number of elements
+* ``array.concat(array2)``: merge too arrays
+* ``array.push(e)``: add an element
+* ``array.pop()``: returns the last element
+* ``array.reverse()``: reverse the array
+* ``array.forEach(f)``: apply `f` on each element of tab
+* ``Array.isArray(array)``: true if this is an array
+* ``array.sort()``: sort array
+* ``array.sort(f)``: sort array with a sorting function ``f(a,b)`` returning ``{-1,0,1}``
