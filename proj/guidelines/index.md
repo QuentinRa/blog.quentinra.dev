@@ -146,6 +146,27 @@ alt="meme" width="500"/>
 
 <hr class="sr">
 
+## best-practices repositories
+
+This [repository](https://github.com/trekhleb/state-of-the-art-shitcode)
+is quite good for explaining what you mustn't do.
+
+* use a proper variable name
+* do not mix naming styles (camelCase, snake_case)
+* do not mix formatting 
+  * if you can use " or ', pick one.
+  * if you are adding a ; at the end of the line, do it everywhere)
+  * same indents for the whole file
+  * ...
+* split a long instruction on multiples lines
+* log errors
+* keep unused code/variables (like "for later")
+* check the argument types (if needed)
+* merge if conditions if you can
+* add a README file
+
+<hr class="sl">
+
 ## Sources
 
 * <https://en.wikipedia.org/wiki/SOLID>
