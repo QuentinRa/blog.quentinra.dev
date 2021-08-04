@@ -42,3 +42,85 @@ We are adding the argument
 ``prob = TRUE`` sometimes in statistics to make
 an histogram of the frequencies instead of the
 quantities.
+
+<hr class="sl">
+
+## Bar chart
+
+* **French**: ``Diagramme en batons/barres``
+* **Function**: ``barplot(table(qual))``
+
+Let's say you got a qualitative variable
+(a variable taking finite values like Men/Women/Other)
+then you can see using this graph how many persons
+are taking each value.
+
+<hr class="sr">
+
+## Pie chart
+
+* **French**: ``Camembert``
+* **Function**: ``pie(table(qual))``
+
+Same as for Bar chart but represented using the
+traditional pie chart.
+
+<hr class="sl">
+
+## Box plot
+
+* **French**: ``Boite à moustache``
+* **Function**: ``boxplot(???)``
+
+My favorite one. You can
+
+* see the repartition (quantiles, ...) for a variable (``boxplot(x)``)
+* ... by a criteria (`boxplot(quant ~ qual)`)
+
+```r
+data('mtcars'); cars <- mtcars
+cars$cyl.qual <- factor(cars$cyl)
+# you will see for each value
+# or cyl=the number of cylinders
+# the repartition of
+# hp=the horse power
+boxplot(cars$hp ~ cars$cyl.qual)
+```
+
+![](images/boxplot.png)
+
+The highest bar is the 3rd quantile, the lowest
+one is the first quantile and the black bar is the
+median (2nd quantile).
+
+<hr class="sr">
+
+## ???
+
+* **French**: ``Diagramme temporel/de températures``
+* **Function**: ``plotmeans(quant~qual)`` (from `gplots`)
+
+If you want to see the evolution of a quantitative
+variable with a temporal qualitative variable,
+then use this. The value at a time $t$ is the mean
+of the values observed at the time $t$.
+
+<hr class="sl">
+
+## ???
+
+* **French**: ``Diagramme en fagot``
+* **Function**: ``interaction.plot(qual, quant, quant, lty=1, legend=FALSE)``
+
+Same as the diagram above, but this time we are
+not taking the mean and representing all values.
+
+<hr class="sr">
+
+## Contingency table
+
+* **French**: ``Tableau de contingence``
+* **Function**: ``balloonplot(table(x))``
+
+Remember that table is making a contingency table. You
+can visualize a contingency table using this function.
