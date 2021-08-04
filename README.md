@@ -3,14 +3,14 @@
 
 ![icon](.github/icon64.png)
 
-<h1>Memorize</h1>
+<h1>Memorize V5</h1>
 
-``Memorize`` was made for students to create courses to help 
-others sail easier in the courses they struggled with.
+`Memorize` was made for students to create courses to help
+other students. We are gathering notes, exercises, links, etc.
+that helped us understand what we are learning in school.
 
-Since we are still learning,
-we could have made mistakes so
-please kindly correct or report them. Thanks!
+Since we are still learning, we could have made mistakes. 
+Please kindly correct or report them. Thanks!
 
 Provided by `Legendary Games Studio`,
 [memorize@lgs-games.com](mailto:memorize@lgs-games.com).
@@ -61,7 +61,6 @@ Last updated: 2021-08-01
 **Next content**
 
 * [ ] Complete R course
-* [ ] Graphs course
 * [ ] Complete Statistics course
 * [ ] Matrix course
 * [ ] First-order logic course
@@ -86,6 +85,9 @@ The website's backgrounds were made
 by [kronbits](https://kronbits.itch.io/backgrounds).
 If you want to add/remove one, feel free to submit
 a request using issues.
+
+If you are enjoying the website, please don't forget
+to star the repository on GitHub to support us.
 
 We backed references in another
 repository [here](https://github.com/memorize-code/memorize-references).
