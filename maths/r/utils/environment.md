@@ -5,6 +5,10 @@
 Before starting, you need to know that all variables,
 functions, ... are part of our environment.
 
+<hr class="sl">
+
+## List/Destroy variables
+
 You can list everything using ``ls`` and clear/destroy
 a variable using ``rm``.
 
@@ -27,7 +31,11 @@ rm(z)
 rm(list = ls())
 ```
 
-You can use that or use your IDE to check what
+<hr class="sr">
+
+## What are your variables?
+
+You can use that or **use your IDE** to check what
 variables, functions, ... got created.
 
 That should not be used since you are using an IDE
@@ -46,3 +54,15 @@ for (i in ls()) { print(paste(i,"=",eval(as.symbol(i)))) }
 # using R functions
 # sapply(ls(), function (i) { paste(i,"=",eval(as.symbol(i))) }  )
 ```
+
+<hr class="sl">
+
+## Saves
+
+You can use theses to save your variables
+
+* `save(x, y, ..., file="x.rdata")`: save x, y,... in a file x.rdata
+* `load("x.rdata")`: load variables in x.rdata into the environment
+* `write.table(v,file="file.txt")`: save a table in a file.txt
+* `read.table("file.txt")`: load a saved table
+* `cat(file="file","x=",x,append=TRUE)`: add variables values in a file
