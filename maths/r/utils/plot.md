@@ -11,6 +11,24 @@ Almost all the plots' functions have these arguments
 * ``ylim = lim``: y's values goes up to lim
 * ``col = 'color'``: set the color (ex: `'red'` or `red(1.0)` in `crayon`)
 
+<hr class="sr">
+
+## Utilities
+
+Before starting, you may use these functions
+to add some lines, ... on a graph
+
+* ``points``: draw points
+* ``line``: draw points
+* ``abline`` : draw a line $y=ax+b$ (you may use h=x ou v=y)
+* ``legend``: add a legend
+* ``title``: add a title
+* others: ``rect``, ``segments``, ``polygon``, ``box``, ``grid``
+
+You may add a background or save some settings
+before drawing using ``par`` function like
+``par(bg="...")``.
+
 <hr class="sl">
 
 ## Plot
@@ -22,6 +40,9 @@ If you have more than one point at a position, you
 won't see it using plot, so you will have
 to use ``plot(jitter(x))`` to move the points a bit
 before rendering them.
+
+You may use the argument ``type`` to change the type
+of plot like ``type = "l"`` (l=line, b=line with dots).
 
 <hr class="sr">
 
