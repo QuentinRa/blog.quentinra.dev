@@ -61,8 +61,8 @@ for (i in ls()) { print(paste(i,"=",eval(as.symbol(i)))) }
 
 You can use theses to save your variables
 
-* `save(x, y, ..., file="x.rdata")`: save x, y,... in a file x.rdata
-* `load("x.rdata")`: load variables in x.rdata into the environment
-* `write.table(v,file="file.txt")`: save a table in a file.txt
-* `read.table("file.txt")`: load a saved table
-* `cat(file="file","x=",x,append=TRUE)`: add variables values in a file
+* **save(x, y, ..., file="x.rdata")**: save x, y,... in a file x.rdata
+* **load("x.rdata")**: load variables in x.rdata into the environment
+* **write.table(v,file="file.txt")**: save a table in a file.txt
+* **read.table("file.txt")**: load a saved table
+* **cat(file="file", "x=", x, append=TRUE)**: add variables values in a file
