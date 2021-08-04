@@ -77,7 +77,8 @@ Related
 * [alternatives to atomurl](https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog)
 * [mathjax reference (maths in websites)](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
 * [new lines in mathjax](https://github.com/mathjax/MathJax/issues/2312)
-* [Strikeout](https://docs.mathjax.org/en/latest/input/tex/extensions/cancel.html)
+* [Strikeout in latex](https://docs.mathjax.org/en/latest/input/tex/extensions/cancel.html)
+* [katex](https://katex.org/)
 
 <hr class="sl">
 

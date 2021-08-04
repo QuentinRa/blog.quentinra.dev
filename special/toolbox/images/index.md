@@ -7,6 +7,7 @@ When dealing with images, you may want
 * to remove the background (<https://www.remove.bg/>)
 * to make/split/crop/... a gif/a normal image (<https://ezgif.com/>)
 * resize a lot of images (<https://picresize.com/>)
+* ??? <https://www.artbreeder.com/>
 
 <hr class="sr">
 

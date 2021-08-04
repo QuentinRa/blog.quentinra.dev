@@ -32,5 +32,6 @@ I will be using these to create diagrams.
 Others alternatives
 
 * <https://www.planttext.com/>
+* <https://mermaid-js.github.io/mermaid/#/>
 * <https://app.diagrams.net/> : the greatest for easy diagrams
 * [List of UML tools](https://en.wikipedia.org/wiki/List_of_Unified_Modeling_Language_tools)
