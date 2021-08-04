@@ -1,4 +1,4 @@
-## Fixing typos
+# Fixing typos
 
 [Go back](..)
 

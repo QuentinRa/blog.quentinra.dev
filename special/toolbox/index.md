@@ -10,10 +10,11 @@ another course.
 1. [Images](images/index.md) (sauce, gifs, edit, ...)
 2. [Fixing typos](writting/index.md)
 3. Temporary file hoster <https://filevert.fr/>
+4. [Websites checkers](website/checkers.md)
 
 <hr class="sl">
 
-## Notes
+## Legal
 
 1. [Terms of service and privacy policy](tos/index.md) (write Tos/PP and TosDidn'tRead)
 2. [CodeSigning](codesigning/index.md) (Windows "Publisher: Unknown")
