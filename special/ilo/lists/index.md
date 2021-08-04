@@ -15,12 +15,13 @@ Then open the project in your favorite
 IDE, 
 
 * VSCode 
-* IntelliJ (it might be a good one to try it out,
-but please only add the folder ``tests`` after
-  you finished coding) and remove ``RunAllTests.java``
-  unless you want to do the same 2-minutes tutorial
+* IntelliJ. It might be a good one to try it out
+  * only add the folder ``tests`` after you finished coding
+    (it won't compile otherwise)
+  * remove ``RunAllTests.java`` unless you want to do the same 2-minutes tutorial
   like in the previous TP (check it out for
-  the setup if you do).
+  the setup if you do)
+* ...
   
 <hr class="sr">
 
@@ -42,9 +43,9 @@ bit further the example with ``ArrayList``.
 ```java
 default void clear() {
     Iterator<E> iterator = this.iterator();
-    while (iterator.hasNext()) { // example with whil!!!)
-        // next return an element but we don't caree
-        iterator.next(); // advance (do not forget
+    while (iterator.hasNext()) { // example with while!
+        // next return an element but we don't care here
+        iterator.next(); // advance (do not forget!!!)
         iterator.remove(); // remove
     }
 }
@@ -53,15 +54,19 @@ default void clear() {
 ``head`` is the head. Having no head (head == null)
 means the list is empty.
 
-We will be using genericity a lot.
-Something like that would be a constructor.
+We will be using genericity a lot, the `<E>`
+after the class name and inside the for, the
+type of each element is `E`.
 
 ```java
 public ForwardList(ForwardList<E> liste) {
     // no list or nothing useful
     if (liste == null || liste.head == null) this.head = null;
     else {
-        // deep copy (not at all, but still better than nothing)
+        // we are making a deep copy of the head
+        // but a shallow copy for each element 
+        // (that's what the tests want, 
+        // this.head = liste.head won't pass the tests)
         for (E e : liste) this.add(e);
     }
 }
@@ -71,11 +76,11 @@ Note this foreach ``for (Type variable_name : iterable)``
 syntax. You will use around the same as this one (and maybe
 this one) a lot in the TP. Here ``E`` is the type since
 our iterable (a class extending Iterable like our Arrays
-or most if not all Collections) ``ForwardList<E>``
+or all Collections) ``ForwardList<E>``
 is declared as a ``ForwardList`` for elements of type
 ``E``.
 
-An example would be this one for ArrayLists.
+An example would be this one for an ArrayList.
 
 ```java
 ArrayList<Integer> numbers = new ArrayList<>();
@@ -94,7 +99,7 @@ according to the case
 * index < 0 : exception
 * index = 0 : insert
 * index = size : add
-* otherwise find the previous element and make an insert
+* otherwise find the previous element and make a manual insert
 
 Iterators are a way to iterate a list/set of objects.
 We are returning our iterator but we will have to code
@@ -108,17 +113,18 @@ public Iterator<E> iterator() { // returns a new iterator
 
 In ``ListIterator`` note the attributes 
 
-* ``penultimate`` : the previous value of last
-* ``last`` : the previous value of current
-* ``current`` : the next value we will return
-* ``element`` : the last element we returned
-* ``nextCalled`` : true if next called, set to false in `remove`
+* ``penultimate``: the previous value of last
+* ``last``: the previous value of current
+* ``current``: the next value we will return
+* ``element``: the last element we returned
+* ``nextCalled``: true if next called, set to false in `remove`
 
 Then simply change our variable according to what
 value they are supposed to have. How do we know that
-the list is empty? (answer: current is null mean empty
-but do you understand one. Anyways, we will have a next
-if current **is not null**.)
+the list is empty? (answer: <span class="spoiler">
+current is null means the list is empty. We will have a next
+element if current **is not null**.
+</span>)
 
 As a side note, please don't forget to instantiate all
 attributes in your constructors, even at null since
@@ -134,6 +140,7 @@ public boolean equals(Object o) {
     // i would rather use my IDE generated equals but no one asked for my choice
     // here what's asked
     if (o == this) return true;
+    // stupid since instanceof check for null but well...
     if (o == null) return false;
 
     // if not, then we must check the class
@@ -157,7 +164,10 @@ And some explicit hashCode
 public int hashCode() {
     // Objects.hash(...)
     // or head != null ? head.hashCode() : 0
-    // should have been enough...
+    // could have been enough in other cases but not this one
+    // since we decided in equals that two lists
+    // are equals if they have the same content
+    // (no matters the type).
     final int prime = 31; // int max power
     int hash = 1; // return 1
     for (E e : this) { // or more is we have values
@@ -170,13 +180,13 @@ public int hashCode() {
 Finally, Collections is **easy**. That's a proxy for you!
 
 ```java
-// as a remember
+// as a remember, you have this attribute
 private ForwardList<E> liste;
 
 // add would be
 public boolean add(E e) {
     try {
-        this.liste.add(e); // return void or exception
+        this.liste.add(e); // returns void or an exception
     } catch (NullPointerException ignored) {
         return false;
     }
