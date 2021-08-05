@@ -43,7 +43,7 @@ Then here is the real course.
   * [Strings](syntax/types/strings.md)
   * [Vectors](syntax/types/vectors.md)
   * [Matrix](syntax/types/matrix.md)
-  * [Contingency ables](syntax/types/table.md)
+  * [Contingency tables](syntax/types/table.md)
   * [Factors](syntax/types/factors.md)
   * [Data.frame](syntax/types/data-frame.md)
 * [Operators](syntax/operators.md)

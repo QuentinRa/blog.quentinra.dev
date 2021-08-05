@@ -33,3 +33,5 @@ df
 # 5     65 Rosé
 # 6     73 John
 ```
+
+> **Note**: A data.frame is a list so you can use ``df$column_name``.
