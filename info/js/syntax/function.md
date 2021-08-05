@@ -40,6 +40,18 @@ Note that the variables declared outside
 the function can't be used inside unless
 you used var.
 
+Note that the function above could also be written
+like this, but I think the one above is way better.
+
+```js
+function pow(x, k) {
+    k = k || 1
+    return x ** k;
+}
+
+pow(5) // pow(5, 1) = 5
+```
+
 <hr class="sr">
 
 ## Anonymous functions

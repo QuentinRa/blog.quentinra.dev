@@ -79,6 +79,10 @@ first element of ``tab``.
 * ``array.pop()``: returns the last element
 * ``array.reverse()``: reverse the array
 * ``array.forEach(f)``: apply `f` on each element of tab
-* ``Array.isArray(array)``: true if this is an array
+* ``Array.isArray(array)``: true if this is an array (**use this instead of typeof**)
 * ``array.sort()``: sort array
 * ``array.sort(f)``: sort array with a sorting function ``f(a,b)`` returning ``{-1,0,1}``
+* ``array.slice().``: create a copy of an array
+
+You can, and may use slice a lot like
+`array.slice().reverse();`.

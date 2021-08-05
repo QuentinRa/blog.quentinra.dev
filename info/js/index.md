@@ -125,6 +125,7 @@ later if you are motivated.
 
 * [Exceptions](syntax/exceptions.md)
 * [Classes and objects](syntax/classes.md)
+* [Spread syntax](syntax/spread.md)
 
 <hr class="sr">
 
