@@ -130,7 +130,16 @@ later if you are motivated.
 
 ## JS for websites
 
-...
+We are calling DOM the Document Object Model. This is your
+whole website, the tags are making a graph called a tree
+and the whole graph is called the DOM. You will use
+a variable called `document` (shortcut of ``window.document``)
+and call functions.
+
+* [document](web/document.md)
+* [window](web/window.md)
+* [forms](web/forms.md)
+* [events](web/events.md)
 
 <hr class="sl">
 

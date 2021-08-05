@@ -123,12 +123,6 @@ that you might use or not.
 
 <hr class="sr">
 
-## Exercises
-
-...
-
-<hr class="sl">
-
 ## Sources
 
 * « Take only pictures, leave only footprints. »
