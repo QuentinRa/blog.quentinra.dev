@@ -45,7 +45,8 @@ It's ``F(x)=0.5``. (if `F` is the empirical cumulative distribution function)
 
 In R, you can use
 `mean(x)`, `median(x)`, `quantiles(x)=fivenum(x)`, 
-`cov(x)` or `cor(x)`.
+`cov(x)` or `cor(x)`. In the library `modeest`, you can
+use ``mlv`` to get the mode value.
 
 <hr class="sr">
 

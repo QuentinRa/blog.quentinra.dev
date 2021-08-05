@@ -49,6 +49,7 @@ Then here is the real course.
 * [Operators](syntax/operators.md)
 * [Structures](syntax/structures.md)
 * [Functions](syntax/functions.md)
+* [Vector Functions](syntax/types/vectors-fun.md)
 
 And here you can learn how to write
 [Rmd documentation](rmd.md).

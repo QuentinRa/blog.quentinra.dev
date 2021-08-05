@@ -50,7 +50,7 @@ file.
 
 ## TODO List 
 
-Last updated: 2021-08-01
+Last updated: 2021-08-05
 
 **Website tasks**
 
@@ -60,7 +60,6 @@ Last updated: 2021-08-01
 
 **Next content**
 
-* [ ] Complete R course
 * [ ] Complete Statistics course
 * [ ] Matrix course
 * [ ] First-order logic course
