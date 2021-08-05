@@ -88,15 +88,17 @@ Open the documentation either in your IDE or your browser
 with <code>help.start()</code>.
 </td></tr>
 <tr><td>
-Either look or load a dataset
+Either look for or load a dataset
 with <code>data()/data('dataset')</code>.
 </td></tr>
 <tr><td>
-Let's say you got a vector of numbers <code>data$numbers</code>,
-if you are planning to make a vector of positives numbers
-in R, then we usually name the resulting vector like this
-<code>data$numbers.a_name_here</code>. Same for a function
-generalizing another etc. (name => name.generalization)
+In R, when you are making a generalization of something,
+you usually name it <code>name.generalization_name</code>.
+For instance, 
+if you got a vector of numbers <code>data$numbers</code>,
+then you would have <code>data$numbers.pos</code>. Same
+for functions like <code>mean</code>, <code>mean.test</code>,
+...
 </td></tr>
 <tr><td>
 There are a lot of shortened words or it seems so. For instance,
