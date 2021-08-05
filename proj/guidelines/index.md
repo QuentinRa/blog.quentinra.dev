@@ -6,7 +6,7 @@ You may have read in other courses about
 * design patterns (and anti-patterns)
 * frameworks
 
-Using these, you will use the knowledge, 
+Using these, you will use the knowledge,
 experience and the code
 improved by a lot of developers before you.
 This course is a gathering of programmers principles
@@ -16,7 +16,7 @@ that may help you write your code.
 
 ## Me
 
-Here are some of my troughs before starting 
+Here are some of my troughs before starting
 
 * I think your code should be enough **documented**
   so that the programmer doesn't take hours trying
@@ -106,7 +106,7 @@ in Oriented-object. You should check [Wikipedia](https://en.wikipedia.org/wiki/S
 
 I started this course because of this website
 <https://suckless.org/> , "software that sucks less".
-Well, dunno about the software but the website sucks.
+Well, dunno about their software but the website sucks.
 Still, here are some of their ideas, mixed with others
 (see references)
 
@@ -146,24 +146,80 @@ alt="meme" width="500"/>
 
 <hr class="sr">
 
-## best-practices repositories
+## best practices (Github lookup summary)
 
-This [repository](https://github.com/trekhleb/state-of-the-art-shitcode)
-is quite good for explaining what you mustn't do.
+After my discovery of this [repository](https://github.com/trekhleb/state-of-the-art-shitcode)
+which is quite good for explaining what you mustn't do,
+I looked on Github "best-practices repository",
+here is a summary of the repository above and many more.
 
-* use a proper variable name
-* do not mix naming styles (camelCase, snake_case)
-* do not mix formatting 
-  * if you can use " or ', pick one.
-  * if you are adding a ; at the end of the line, do it everywhere)
-  * same indents for the whole file
-  * ...
-* split a long instruction on multiples lines
-* log errors
-* keep unused code/variables (like "for later")
-* check the argument types (if needed)
-* merge if conditions if you can
-* add a README file
+<table class="table table-bordered table-striped table-dark">
+<thead>
+    <tr>
+        <th scope="col" style="min-width: 180px;">Style</th>
+        <th scope="col" style="min-width: 180px;">Logic</th>
+        <th scope="col" style="min-width: 180px;">Others</th>
+    </tr>
+</thead>
+<tbody>
+<!-- 1 -->
+<tr>
+<td>use a proper variable name</td>
+<td>log errors</td>
+<td>add a README file and
+a LICENSE file (even if it's MIT).</td>
+</tr>
+<!-- 2 -->
+<tr>
+<td>
+
+``do not mix naming styles`` (camelCase, snake_case)
+unless it's intended <span class="tms">
+(like snake_case_CamelCase, that
+may be used for function's names in C)
+</span>
+</td>
+<td>keep unused code/variables (like "for later")</td>
+<td></td>
+</tr>
+<!-- 3 -->
+<tr>
+<td> do not mix formatting
+
+* if you can use " or ', pick one
+* if you are adding a ; at the end of the line, do it everywhere)
+* same indents for the whole file
+* ...
+
+To summarize, you should `set up a style guide`
+before starting.
+</td>
+<td>
+
+If you ever created a function dealing with
+more than one thing then you should
+`split the function`.
+</td>
+<td></td>
+</tr>
+<!-- 4 -->
+<tr>
+<td>split a long line on multiples lines</td>
+<td>Do not make a if directly inside another if,
+try merging conditions.</td>
+<td></td>
+</tr>
+<!-- 5 -->
+<tr>
+<td></td>
+<td>
+check the argument types <br>
+<span class="tms">(if needed, the language matter)</span>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 <hr class="sl">
 
@@ -176,7 +232,7 @@ is quite good for explaining what you mustn't do.
 * <https://www.baeldung.com/solid-principles>
 * <https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa>
 * <https://suckless.org/>
-* <http://www.catb.org/~esr/writings/taoup/html/> 
+* <http://www.catb.org/~esr/writings/taoup/html/>
 * <https://en.wikipedia.org/wiki/Rubber_duck_debugging>
 * <http://principles-wiki.net/principles:start>
 * <http://principles-wiki.net/start>
