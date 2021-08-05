@@ -19,6 +19,12 @@
       "icon": "<i class=\"bi bi-terminal-fill\"></i>"
     },
     {
+      "tag": "web",
+      "name": "WEB",
+      "desc": "How to start, what you need to know, ... and everything that couldn't be put in a specific language course.",
+      "icon": "<i class=\"bi bi-globe\"></i>"
+    },
+    {
       "tag": "html",
       "name": "HTML",
       "desc": "A big summary of what you need to know in HTML to make a website.",

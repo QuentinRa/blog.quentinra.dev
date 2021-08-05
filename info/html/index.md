@@ -177,20 +177,6 @@ the data will be hidden, GET means that the data will be shown in the URL.
 
 <hr class="sl">
 
-## Using the console
-
-* press ``CTRL-SHIFT-I``
-* or right click then inspect
-* or ... > ... tools > development tools
-
-In the console, in ``Elements``, you can check out the
-tags used inside the page.
-
-By pressing ``CTRL-SHIFT-C``, you can find the tag
-in the HTML by simply moving your mouse.
-
-<hr class="sr">
-
 ## W3 validator
 
 Check out that the code you wrote is following the W3C
@@ -201,7 +187,7 @@ We don't have rules to follows but it's good to hear
 how you could write your code in a better way by following
 developers standards.
 
-<hr class="sl">
+<hr class="sr">
 
 ## Meta tags
 
@@ -225,7 +211,7 @@ what you wrote here.
 <meta name="DESCRIPTION" content="...">
 ```
 
-<hr class="sr">
+<hr class="sl">
 
 ## Icons
 
