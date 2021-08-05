@@ -40,6 +40,13 @@ Then here is the real course.
 
 * [Variables](syntax/variables.md)
 * [Types](syntax/types.md)
+  * [Strings](syntax/types/strings.md)
+  * [Vectors](syntax/types/vectors.md)
+  * [Matrix](syntax/types/matrix.md)
+  * [Contingency ables](syntax/types/table.md)
+  * [Factors](syntax/types/factors.md)
+  * [Data.frame](syntax/types/data-frame.md)
+* [Operators](syntax/operators.md)
 * [Structures](syntax/structures.md)
 * [Functions](syntax/functions.md)
 
@@ -77,8 +84,8 @@ You will use this a lot, you can
 * source code with ``body(my_function)``
 </td></tr>
 <tr><td>
-Open either in your IDE or your browser
-the documentation with <code>help.start()</code>.
+Open the documentation either in your IDE or your browser
+with <code>help.start()</code>.
 </td></tr>
 <tr><td>
 Either look or load a dataset
@@ -92,7 +99,7 @@ in R, then we usually name the resulting vector like this
 generalizing another etc. (name => name.generalization)
 </td></tr>
 <tr><td>
-There are a lot of shortcuts or it seems so. For instance,
+There are a lot of shortened words or it seems so. For instance,
 you can use <code>T</code> for <code>TRUE</code>. For functions,
 you can use <code>prob/proba</code> for <code>probability</code> etc.
 </td></tr>
