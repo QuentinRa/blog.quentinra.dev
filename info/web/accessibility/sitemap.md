@@ -1,6 +1,6 @@
 # Sitemap
 
-[Go back](../index.md#security)
+[Go back](../index.md#websites-improvements-summary)
 
 First and foremost, a sitemap is not needed by looking
 at the link on each page, we can make a graph of your website.

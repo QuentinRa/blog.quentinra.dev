@@ -1,5 +1,7 @@
 # Hide Apache server version
 
+[Go back](../index.md#websites-improvements-summary)
+
 I was hiding my apache version in a .htaccess
 but that's not nearly enough. On debian, I did
 

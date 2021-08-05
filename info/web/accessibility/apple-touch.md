@@ -1,6 +1,6 @@
 # Apple touch icon
 
-[Go back](../index.md#security)
+[Go back](../index.md#websites-improvements-summary)
 
 "Similar to the Favicon, the Apple touch icon or apple-touch-icon.png is a file used for a web page icon on the Apple iPhone, iPod Touch, and iPad. When someone bookmarks your web page or adds your web page to their home screen, this icon is used. If this file is not found these Apple products use the screenshot of the web page, which often looks like no more than a white square."
 

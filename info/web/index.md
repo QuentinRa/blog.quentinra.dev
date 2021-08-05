@@ -138,6 +138,10 @@ using online checkers
 * you should known about <https://validator.w3.org/>
 * but you should look at <https://webhint.io/> (better)
 
+You may look at these tools
+
+* <https://probely.com/> (free version available)
+
 **Accessibility**
 
 * [Apple touch icon](accessibility/apple-touch.md)
@@ -150,3 +154,5 @@ using online checkers
 **Security**
 
 * [Hide Apache server version](security/apache.md)
+* [add rel attribute to external links](security/links.md)
+* [Website headers](security/headers.md)
