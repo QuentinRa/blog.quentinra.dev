@@ -85,3 +85,32 @@ you have humans filling the captcha, then you should
 really consider an alternative. On top of that, bots
 can also bypass a captcha (at least it seems so but I
 didn't try).
+
+<hr class="sr">
+
+## FileTransferProtocol (FTP)
+
+You may have a remote server where your website
+is hosted and you want to upload your files on it?
+Well you may use the command ``scp`` but you may also
+use the software [FileZilla](https://filezilla-project.org/).
+
+* once started,
+* File > Site Manager
+* New site (give it a name in the left column)
+  * SFTP (use ssh credentials to login)
+  * host (ex: `pedago-etu.ensiie.fr`, server url)
+  * ask for password
+  * user (ex: `firstname.lastname`)
+  * ok and close
+* Then now that the config is saved,
+* click on the right arrow near the logo below "File"
+* click on the configuration name
+* connect, click on "yes" (if first connection)
+* then you should be able to browser, open, send/get
+files on your remote server
+
+Some IDE (integrated development environment) like
+PHPStorm (Jetbrains) or VSCode allows you to directly code on the
+server (if needed), you may have a course for them
+in "tools".

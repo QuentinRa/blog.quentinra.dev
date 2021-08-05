@@ -1,0 +1,25 @@
+Alternativement, pour simplifier le développement car beaucoup de sites se ressemblent,
+il existe des framework. Des frameworks CSS connus sont : Bootstrap, MDBoostrap, w3css et
+des frameworks PHP connus sont : Zend, Symphony, Laravel et CodeIgniter (pas trop vrai mais :p).
+
+robots.txt
+Un fichier à la racine destiné aux robots.
+
+User-agent: * # * = tous
+Disallow: / # si vous mettez rien alors il ont accès à tout
+# vous pouvez définir d'autres Disallow
+
+# vous pouvez bloquer un robot particulier
+User-agent: Bingbot # ou Googlebot, Yandex, AdsBot-Google, Twitterbot ...
+Disallow: /
+
+# optionnel, un lien vers un xml : https://www.sitemaps.org/schemas/sitemap/0.9/
+# un exemple : https://www.blackdesertonline.com/sitemap.xml <3
+Sitemap: url/fichier.xml
+
+http://robots-txt.com/
+https://httpd.apache.org/docs/current/howto/htaccess.html
+https://www.godaddy.com/garage/htaccess-tutorial-and-cheat-sheet/
+https://www.contentkingapp.com/academy/redirects/
+https://searchfacts.com/robots-txt-allow-disallow-all/
+https://www.semrush.com/blog/beginners-guide-robots-txt/
