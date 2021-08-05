@@ -114,3 +114,39 @@ Some IDE (integrated development environment) like
 PHPStorm (Jetbrains) or VSCode allows you to directly code on the
 server (if needed), you may have a course for them
 in "tools".
+
+<hr class="sl">
+
+## SECURITY
+
+Did you notice? I used UPPERCASE letters because it's important.
+In HTML/CSS/JS, you can't do much since the user can
+see and modify your code (console > sources) but well in
+PHP, you will have a part about SQL injections. 
+
+Aside from that, you will have advices in the CyberSecurity 
+course, "web" section. You may look at the next part too.
+
+<hr class="sr">
+
+## Websites' improvements summary
+
+I'm stacking here, every thing I learned as to
+improve my websites. You should inspect your website
+using online checkers
+
+* you should known about <https://validator.w3.org/>
+* but you should look at <https://webhint.io/> (better)
+
+**Accessibility**
+
+* [Apple touch icon](accessibility/apple-touch.md)
+* [Sitemap](accessibility/sitemap.md)
+
+**SEO (Search Engine Optimization)**
+
+* [Titles](seo/titles.md)
+
+**Security**
+
+* [Hide Apache server version](security/apache.md)
