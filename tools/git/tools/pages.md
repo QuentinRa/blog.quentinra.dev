@@ -16,6 +16,8 @@ that you brought beforehand for 10$ per year (for a domain.com
 for example) by following these steps
 [custom-domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages).
 
+<hr class="sl">
+
 ## Make a website as a lazy dev
 
 You may do your site in markdown or whatever
