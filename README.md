@@ -57,6 +57,8 @@ Last updated: 2021-08-05
 * [ ] add go back to #titleID instead of #linkID
 * [ ] edit: show formulas
 * [ ] edit: open link
+* [ ] set title/description from JS
+* [ ] add "create link" kind of button
 
 **Next content**
 
@@ -70,7 +72,6 @@ Last updated: 2021-08-05
 * [ ] Macroeconomic course
 * [ ] Complete Java course (notes, javafx)
 * [ ] Cyber security course
-* [ ] Complete JS course
 * [ ] Complete Bootstrap course
 * [ ] Complete C course
 * [ ] Complete Linux course

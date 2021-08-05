@@ -9,6 +9,7 @@ When dealing with images, you may want
 * resize a lot of images (<https://picresize.com/>)
 * resize one image (<https://www.resizepixel.com/>)
 * ??? <https://www.artbreeder.com/>
+* converting a lot of jpg to webp (more than 10) <https://online-converting.com/image/>
 
 <hr class="sr">
 

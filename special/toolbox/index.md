@@ -14,6 +14,7 @@ another course.
 5. [coveryourtracks](https://coveryourtracks.eff.org/) (check if you are an easy prey),
    * you should install the [privacy badger extension](https://www.eff.org/pages/privacy-badger).
    * I installed [duckduckgo extension](https://duckduckgo.com/app) too
+
 <hr class="sl">
 
 ## Legal

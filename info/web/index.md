@@ -137,6 +137,9 @@ using online checkers
 
 * you should known about <https://validator.w3.org/>
 * but you should look at <https://webhint.io/> (better)
+* you can ask google for advices about
+  * [pagespeed](https://developers.google.com/speed/pagespeed/insights/)
+  * [lighthouse](https://web.dev/measure/)
 
 **Accessibility**
 
@@ -148,6 +151,10 @@ using online checkers
 * [Titles](seo/titles.md)
 * <https://www.ionos.com/tools/website-checker>
 * Get rid of broken links: <https://www.drlinkcheck.com/>
+* You may create a robots.txt (<http://robots-txt.com/>)
+to exclude some pages in the search/disallow some bots
+but that's not because you create this file that
+robots will listen.
 
 **Security**
 
@@ -155,3 +162,8 @@ using online checkers
 * [add rel attribute to external links](security/links.md)
 * [Website headers](security/headers.md)
 * [Subresource Integrity](security/sri.md)
+
+**Others**
+
+* you may use images .webp images instead of PNG/JPG
+* you may use async/defer to delay the loading of your scripts
