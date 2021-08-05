@@ -34,7 +34,7 @@ You can download all their idea using the
 * <https://www.jetbrains.com/idea/whatsnew/2021-2/>
 * <https://www.jetbrains.com/webstorm/whatsnew/2021-2/>
 * <https://www.jetbrains.com/phpstorm/whatsnew/2021-2/>
-* <https://www.jetbrains.com/clion/whatsnew/2021-2/>
+* <https://www.jetbrains.com/clion/whatsnew/#v20212-jun-28>
 * <https://www.jetbrains.com/datagrip/whatsnew/2021-2/>
 
 <hr class="sl">

@@ -134,8 +134,7 @@ In ``C``, you should check
 * [GTK](https://www.gtk.org/)
   * same as SDL
   * <https://www.gtk.org/docs/getting-started/>
-  * <https://developer.gnome.org/gtk-tutorial/stable/c39.html>
-  * <https://developer.gnome.org/gtk3/stable/gtk-getting-started.html>
+  * <https://docs.gtk.org/gtk3/>
 
 <hr class="sl">
 
