@@ -12,6 +12,9 @@ Maybe you could...
 
 ## Merge datasets
 
+If you got two datasets, having a common column, then
+maybe you could merge them?
+
 ```r
 merge(data1, data2, by="common_column_name")
 ```
@@ -39,9 +42,10 @@ to increase the number of data. What I do is
 
 * given a sample $x$
 * pick $n$ (for instance 10000) elements from $x$
-  (sample with replacement)
-* $y = mean(x)$
+  (sample with replacement) creating a new batch $b$
+* $y = mean(b)$
 * add $y$ to $x$
+* again, $x$ got enough values
 
 Sometimes, instead of using $mean(x)$ (because
 you might get a value outside $x$ or because the

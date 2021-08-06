@@ -1,12 +1,14 @@
-<hr class="sr">
+Occurrences et fréquence
+	Avec :code:`table(v)` vous obtenez le nombre d'occurrences de chaque valeur dans v.
 
-## First lookup
+	Vous pouvez obtenir les probabilités (la fréquence) de chaque valeur avec :code:`prop.table`.
+	Si vous donnez 1 ou 2 alors le calcul ne sera fait que sur les lignes ou colonnes
+	ce qui donne :code:`prop.table(table(v), 1)` par exemple.
 
-* again with summary/...
-* ``range(v)``: min/max
-* `var, sd, quantile etc.`
+Par rapport aux lois normales, qui sont celles que nous allons principalement utiliser
+par la suite, parce que selon un théorème (loi des grand nombres?), si on a beaucoup de variables
+aléatoires alors elles tendent vers une loi normale/gaussienne
 
-because your goal will be to find out
-if there are things that should need further
-research (like why is this value this big? is it
-a mistake?...).
+	* :math:`moyenne +/- \sigma` = 2 tiers des données
+	* :math:`[m-1.96*\sigma,m+1.96*\sigma]` : interval de confiance à 95%
+	* si symétrique, alors médiane = moyenne

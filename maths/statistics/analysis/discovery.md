@@ -34,3 +34,4 @@ Once you have at least some information
 * [Extract the sample you will work with](sample.md)
 * [Merging data](merge.md)
 * [Fixing data](fix.md)
+* you can also sort some variables with ``sort``
