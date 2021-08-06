@@ -1,6 +1,6 @@
 # Other commands
 
-[Go back](..)
+[Go back](..#-and-now-mastering-it)
 
 Save
 

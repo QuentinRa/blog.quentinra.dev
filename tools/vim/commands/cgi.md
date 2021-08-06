@@ -1,5 +1,7 @@
 # CGI
 
+[Go back](..#-and-now-mastering-it)
+
 You can use powerful commands and some regex/patterns
 using the ``cqi`` syntax.
 
@@ -12,7 +14,7 @@ in a sentence, for example, we could say
 
 * ``$``: command from the cursor until the end of the line
 * ``e``: end of the word
-* ``.``: under cursor
+* ``.``: under the cursor
 * ``c``: a line
 * ``^``: from the cursor until the start of the line
 

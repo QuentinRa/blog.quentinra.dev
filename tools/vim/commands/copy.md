@@ -1,6 +1,6 @@
 # Copy/Paste
 
-[Go back](..)
+[Go back](..#-and-now-mastering-it)
 
 Copy
 

@@ -1,6 +1,6 @@
 # Delete
 
-[Go back](..)
+[Go back](..#-and-now-mastering-it)
 
 Delete characters
 

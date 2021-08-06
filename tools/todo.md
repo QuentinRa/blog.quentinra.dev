@@ -1,0 +1,21 @@
+## Todo
+
+- Docker
+    - check docker notes (sound)
+- JetBrains
+    - Jetbrains IDEs got updated to 2021.2
+- Git
+    - adding graphs (merge, ...)
+    - adding commands: log, ...
+    - work on ref
+    - work on config
+- Latex
+    - work on ref
+- Markdown
+    - work on ref
+- Unity
+    - read links
+    - watch videos
+- Vim
+  - work on ref
+  - work on config

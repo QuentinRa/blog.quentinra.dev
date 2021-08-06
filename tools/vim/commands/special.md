@@ -1,5 +1,7 @@
 # mystic commands
 
+[Go back](..#-and-now-mastering-it)
+
 You may not use them but still
 
 * `:!` : execute a command

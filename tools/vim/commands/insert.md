@@ -1,6 +1,6 @@
 # Insertion
 
-[Go back](..)
+[Go back](..#-and-now-mastering-it)
 
 * `i` insert before cursor
 * `a` insert after the cursor

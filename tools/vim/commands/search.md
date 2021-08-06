@@ -1,6 +1,6 @@
 # Recherche
 
-[Go back](..)
+[Go back](..#-and-now-mastering-it)
 
 * `/mot` : search (DESC)
 * `?mot` : search (ASC)

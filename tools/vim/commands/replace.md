@@ -1,6 +1,6 @@
 # Replace
 
-[Go back](..)
+[Go back](..#-and-now-mastering-it)
 
 * `:s/old/new`: replace `old` by `new`
 * `:s/old/new/g`: same, for all lines
