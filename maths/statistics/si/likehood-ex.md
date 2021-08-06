@@ -1,5 +1,7 @@
 # Likehood functions (examples)
 
+[Go back](../index.md#estimators-and-likehood)
+
 You can easily switch from Likehood function 
 to log-likehood so I won't show the log-likehood implementations.
 

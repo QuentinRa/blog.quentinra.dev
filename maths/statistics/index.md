@@ -98,6 +98,7 @@ next pages, but I don't know how did they learned that,
 unfortunately...
 
 * [Likehood functions (examples)](si/likehood-ex.md)
+* [Maximum Likehood estimation (examples)](si/mle-ex.md)
 
 <hr class="sr">
 
