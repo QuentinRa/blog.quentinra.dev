@@ -60,3 +60,33 @@ L_norm <- function (theta, x) {
   return(prod(dnorm(mean = theta[1], sd = theta[2], x)))
 }
 ```
+
+<hr class="sr">
+
+## Cauchy distribution
+
+```r
+L_cauchy <- function (theta, x) {
+  return(prod(dcauchy(location = theta[1], scale = theta[2], x)))
+}
+```
+
+<hr class="sr">
+
+## Gamma distribution
+
+```r
+L_gamma <- function(theta, x) {
+  return(prod(dgamma(shape = theta[1], rate = theta[2], x)))
+}
+```
+
+<hr class="sr">
+
+## Exponential distribution
+
+```r
+L_exp <- function(theta, x) {
+  return(prod(dexp(rate = theta[1], x)))
+}
+```
