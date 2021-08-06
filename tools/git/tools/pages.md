@@ -25,6 +25,10 @@ if you don't like web development, or at least
 find something interesting for you in these links
 
 * [jekyll](https://jekyllrb.com/docs/)
+* [Beautiful Jekyll](https://beautifuljekyll.com/)
 * [gohugo](https://gohugo.io/)
 * [bootstrapstudio](https://bootstrapstudio.io/)
 * [freehtml5](https://freehtml5.co/)
+
+You can use [formspree](https://formspree.io/)
+to use forms without coding.
