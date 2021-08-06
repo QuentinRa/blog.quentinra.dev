@@ -21,6 +21,16 @@ at least picked once. For instance, we picked $10$ twice.
 
 <hr class="sl">
 
+## Frequencies table
+
+You can use ``prop.table`` to get the frequency
+of each value instead of the number of occurrences.
+
+* `prop.table(table(v), 1)` (line only)
+* `prop.table(table(v), 2)` (column only)
+
+<hr class="sr">
+
 ## More complex tables
 
 If you are calling table like this, while providing

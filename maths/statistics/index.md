@@ -89,6 +89,7 @@ maximum likelihood estimation/value (`maximum de vraisemblance`).
 * [Likehood function](si/likehood.md)
 * [Maximum Likehood estimation](si/mle.md) (MLE)
 * [Log-likehood function](si/likehood-log.md)
+* [Confidence interval](si/conf-int.md)
 
 According to fitdistr function source code,
 I was able to learn more about estimators.
@@ -177,5 +178,7 @@ Estimators and likehood
 * <https://en.wikipedia.org/wiki/Bias_of_an_estimator>
 * <https://en.wikipedia.org/wiki/Efficiency_(statistics)>
 * <https://en.wikipedia.org/wiki/Likelihood_function>
+* <https://en.wikipedia.org/wiki/Tolerance_interval>
+* <https://en.wikipedia.org/wiki/Confidence_interval>
 
 [other references](refs.md)

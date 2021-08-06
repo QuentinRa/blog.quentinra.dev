@@ -17,6 +17,11 @@ Steps
 * get the first parameter
 * optimize the function, starting from the first parameter
 
+If you are on paper, you have to do the derivative
+of the likehood function and solve $\hat\theta$
+(from my understanding that is). Check the optimization
+course if needed.
+
 <hr class="sl">
 
 ## First parameter
