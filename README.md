@@ -57,7 +57,7 @@ Last updated: 2021-08-06
 * [ ] add go back to #titleID instead of #linkID
 * [ ] edit: show formulas
 * [ ] edit: open link
-* [ ] set title/description from JS
+* [ ] set title/description from JS + canonical URL
 * [ ] add "create link" kind of button
 * [ ] replacing links with [here] by something better
 

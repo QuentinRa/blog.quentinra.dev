@@ -150,6 +150,7 @@ using online checkers
 
 * [Titles](seo/titles.md)
 * <https://www.ionos.com/tools/website-checker>
+* <https://sitechecker.pro/>
 * Get rid of broken links: <https://www.drlinkcheck.com/>
 * You may create a robots.txt (<http://robots-txt.com/>)
 to exclude some pages in the search/disallow some bots

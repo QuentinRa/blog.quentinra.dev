@@ -22,7 +22,7 @@ but do not know where the exe file is,
 at each startup.
 
 Your server will be served at
-[http://localhost/](http://localhost/).
+``http://localhost/``.
 
 To write some php, go to your server folder.
 
