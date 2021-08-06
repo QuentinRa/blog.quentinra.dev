@@ -25,8 +25,8 @@ The best way to make one is
     usual
 
 You can drag and drop it into a folder to create a prefab,
-then in a level manager you can change the main player with this new
-prefab.
+then in a level manager,
+you can change the main player with this new prefab.
 
 <hr class="sl">
 
@@ -54,4 +54,4 @@ You may trigger your own script by
   in binding, pressed first time, add a component
     * runtime only
     * drag and drop the component with your script
-    * find the component / method in the dropdown menu
+    * find the component/method in the dropdown menu

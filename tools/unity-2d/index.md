@@ -145,8 +145,8 @@ modify this property inside unity
 [Space(value)]
 ```
 
-Let's says you attached this csharp script to an
-entity, then you can get other properties (like
+Let's says you attached this c# script
+to an entity, then you can get other properties (like
 the collider, ...) using
 
 ```cs
@@ -260,10 +260,10 @@ if you can watch it that's better.
 ## UserInterface
 
 **In 2021, you might look at the UI Builder**, to
-create UserInterfaces (UI), like in this 
+create user interfaces (UI), like in this 
 [video](https://www.youtube.com/watch?v=NQYHIH0BJbs&ab_channel=CocoCode).
 
-Otherwise, first create a canvas (ui > canvas) for your UI. Then
+Otherwise, first, create a canvas (ui > canvas) for your UI. Then
 you can
 
 * load a background
@@ -279,13 +279,13 @@ you can
   look into [9patch](https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/9-patch),
   explained in the video too)
 * you create labels with ui > text then set the text
-* you can use layouts (like in Java) but using
-  anchors may be enough for a simple UI
+* you can use layouts (like in Java) 
+  but using anchors may be enough for a simple UI
   ([video here](https://www.youtube.com/watch?v=HwdweCX5aMI&ab_channel=GameDevGuide))
 * if you want some resizing (and you are not using
   anchors) then 
   * add a canvas scaler to your canvas
-  * set scale mode to "scale with screen size"
+  * set scale mode to "scale with the screen size"
   * and give it a size
 
 You can make your hierarchy looks better using 

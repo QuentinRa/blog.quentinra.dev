@@ -30,4 +30,4 @@ interpolate (make this smoother, ...).
 
 ## Graphics
 
-Enable ``post processing`` in Rendering.
+Enable ``post-processing`` in Rendering.
