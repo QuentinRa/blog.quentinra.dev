@@ -1,6 +1,6 @@
 # Text
 
-[Go back](..)
+[Go back](..#writing-rst-documents)
 
 ```rest
 .. this is a comment

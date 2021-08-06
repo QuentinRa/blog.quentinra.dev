@@ -1,8 +1,8 @@
 # Classes or methods
 
-[Go back](..)
+[Go back](..#writing-rst-documents)
 
-Here some syntax if you want to document a class
+Here is some syntax if you want to document a class
 or a method with style.
 
 ```rest

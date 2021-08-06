@@ -1,13 +1,13 @@
 # Images and links
 
-[Go back](..)
+[Go back](..#writing-rst-documents)
 
 ```rest
 I can load an image like this
 
 .. image:: src
 
-I can write some inline link like
+I can write some inline links like
 `name <url>`_ .
 
 I can create a download link using

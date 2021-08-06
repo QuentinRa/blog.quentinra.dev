@@ -1,6 +1,9 @@
 # Special
 
-[Go back](..)
+[Go back](..#writing-rst-documents)
+
+These can be useful since they should make your documentation
+more readable.
 
 ```rest
 
@@ -22,7 +25,3 @@ You can write some ...
 
 	...
 ```
-
-Theses can be useful since some compiler show theses
-in various colors that should make your documentation
-more readable.

@@ -1,6 +1,6 @@
 # Titles
 
-[Go back](..)
+[Go back](..#writing-rst-documents)
 
 ```rest
 ====================
@@ -20,7 +20,7 @@ Chapter title
 ```
 
 Symbols for sections, subsections, and subsubsections
-maybe interchanged according to your linking.
+maybe interchanged according to your liking.
 But according to the documentation, you should rather
 do it like that
 

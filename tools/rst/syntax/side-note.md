@@ -1,8 +1,8 @@
 # Side note
 
-[Go back](..)
+[Go back](..#writing-rst-documents)
 
-You can add some side note using this syntax
+You can add side notes using this syntax
 
 ```rest
 The really-complicated-word [#1]_ could be seen

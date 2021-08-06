@@ -1,6 +1,6 @@
 # Maths
 
-[Go back](..)
+[Go back](..#writing-rst-documents)
 
 You can write some maths in latex using
 the math directive

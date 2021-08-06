@@ -1,6 +1,6 @@
 # Code
 
-[Go back](..)
+[Go back](..#writing-rst-documents)
 
 ```rest
 .. code-block:: language
