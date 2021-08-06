@@ -87,6 +87,7 @@ maximum likelihood estimation/value (`maximum de vraisemblance`).
 
 * [Estimators](si/estimators.md)
 * [Likehood function](si/likehood.md)
+* [fitdistr](si/fitdistr.md)
 
 <hr class="sr">
 
