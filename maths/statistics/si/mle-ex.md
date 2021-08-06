@@ -43,8 +43,7 @@ use **R** function instead of writing yours.
 ## Bernoulli distribution
 
 ```r
-# first does not matter since we added bounds
-first <- 0.0
+first <- sum(x) / length(x)
 
 r <- optim(
   fn = L_bern, par = first, x = x,

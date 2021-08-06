@@ -88,6 +88,7 @@ maximum likelihood estimation/value (`maximum de vraisemblance`).
 * [Estimators](si/estimators.md)
 * [Likehood function](si/likehood.md)
 * [Maximum Likehood estimation](si/mle.md) (MLE)
+* [Log-likehood function](si/likehood-log.md)
 
 According to fitdistr function source code,
 I was able to learn more about estimators.
