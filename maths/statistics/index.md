@@ -10,7 +10,9 @@ This is a course where you will learn
 * linear regression
 
 And everything will be coupled with examples in ``R``,
-you may add examples in other languages.
+you may add examples in other languages. To be honest, 
+I do not understand much about statistics so
+be sure to correct any mistakes, thanks!
 
 <hr class="sr">
 
@@ -62,9 +64,29 @@ in other sections.
 
 <hr class="sl">
 
-## Estimators, likehood, ...
+## Estimators and likehood
 
-...
+We are using the notation $\theta$ (theta) for the vector
+of the parameters of a distribution. For instance,
+a binomial distribution $B(n,p)$ would become
+$B(\theta)$. Because it's convenient, in statistics, we
+are always using theta while you may not see it often
+in probabilities.
+
+Your goal is to estimate the vector "theta", like
+"what parameters seem to have generated this distribution?".
+We are calling **estimator** $\hat{\theta}$ (theta-hat), the
+value that is likely the value of $\theta$.
+
+Finally, we are calling Likelihood function $L(\hat{\theta})$
+(`Fonction de vraisemblance`) the function returning a value
+as to how much it seems $\hat{\theta}$ is equals to $\theta$.
+You will have to maximize this function to find the best
+$\hat{\theta}$, and that's called
+maximum likelihood estimation/value (`maximum de vraisemblance`).
+
+* [Estimators](si/estimators.md)
+* [Likehood function](si/likehood.md)
 
 <hr class="sr">
 
