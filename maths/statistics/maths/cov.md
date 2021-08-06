@@ -1,6 +1,6 @@
 # Covariance
 
-[Go back](..)
+[Go back](../index.md#maths-recap)
 
 The covariance is a value in [0,1]. If two
 variable are independents then ``cov=0`` but `cov=0`

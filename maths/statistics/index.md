@@ -3,7 +3,7 @@
 This is a course where you will learn
 
 * (hard) about estimators, likehood (vraisemblance in French), bias, ...
-* (soft) about popuplation, variables, qualitatif, quantitatif, ...
+* (soft) about population, variables (qualitative, quantitative), ...
 * how you could conduct a analysis of a file of data
 * plots used in statistics
 * tests
@@ -40,7 +40,7 @@ Before the next part, you need to know of those
 It's ``F(x)=0.5``. (if `F` is the empirical cumulative distribution function)
 * **medial** (Médiale): value that divide in two part the cumulative sum of values.
 * **mode**: most repeated value ([wiki](https://en.wikipedia.org/wiki/Mode_(statistics)))
-* **quantile**: split the distribution in X part (4 = quartile, 10 = decile, 100 = centile).
+* [quantile](maths/quantiles.md): split the distribution in X part (4 = quartile, 10 = decile, 100 = centile).
 * [covariance](maths/cov.md) : if two value are independents then ``cov=0``.
 
 In R, you can use
@@ -70,7 +70,29 @@ in other sections.
 
 ## Plots
 
-...
+In descriptive statistics, you will have to use plots
+and try to guess the distribution. You got all of them
+introduced in **R** course.
+
+* **plot** (`plot`): simply plot your values
+* **histogram** (`hist`): used to see the proportion of the distribution
+  (=frequency, if prob=T) or the number of individuals taking a value, for each value
+* **contingency table** (`table`): make a table of the uniques values 
+  per the number of occurrences
+* **pivot table** (`qhpvt`): you can use this to observe
+  a variable with more depth, especially observing
+  the relation of your variable and others variables.
+* **Bar chart**: you can see the distribution of a quantitative
+variable split by group according to a qualitative variable
+  * for instance, you can see the number of students per year
+  * let d be a data.frame and d\\$year be the year (ex: 2020)
+  the student joined the school
+  * then the call would be ``barplot(table(d$year))``
+  * you may add beside=T for xtabs ``barplot(xtabs(....), beside = TRUE)``
+* **Box plot**: same as BarChart but you can see the quantiles, the min and the max!
+  * for instance, you can see the horsepower of a car per the number of cylinders
+  * let d be a data.frame and d\\$hp (horsepower), d\\$cyl (cylinders) our variables
+  * the call would be ``boxplot(d$hp ~ d$cyl)``
 
 <hr class="sl">
 

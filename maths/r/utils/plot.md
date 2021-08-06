@@ -163,3 +163,24 @@ not taking the mean and representing all values.
 
 Remember that table is making a contingency table. You
 can visualize a contingency table using this function.
+
+<hr class="sl">
+
+## Pivot table
+
+* **French**: ``Tableaux croisés``
+* **Function**: ``qhpvt(data, rows = ..., columns = ..., calculations = "...")``
+* **Library**: ``pivottabler``
+
+You can observe the relation of variable
+with other variables.
+
+* data: your data
+* rows: a vector of variables (i)
+* cols: a vector of variables (j)
+* calculation: the operation we will do on each (i,j)
+  * mean() (mean)
+  * n() (count)
+  * ...
+* formats: cell format (ex: `%.1f`)
+* totals: totals line (`totals='totals=NONE'`=remove totals)
