@@ -50,7 +50,7 @@ file.
 
 ## TODO List 
 
-Last updated: 2021-08-05
+Last updated: 2021-08-06
 
 **Website tasks**
 
@@ -65,18 +65,13 @@ Last updated: 2021-08-05
 * [ ] Complete Statistics course
 * [ ] Matrix course
 * [ ] First-order logic course
-* [ ] Languages theory course
-* [ ] Numerical analysis course
 * [ ] General mathematical knowledge course
-* [ ] Microeconomic course
-* [ ] Macroeconomic course
 * [ ] Complete Java course (notes, javafx)
 * [ ] Cyber security course
 * [ ] Complete Bootstrap course
 * [ ] Complete C course
 * [ ] Complete Linux course
 * [ ] Complete Network course
-* [ ] Complete Python course
 * [ ] Complete SQL course
 
 ## Notes
