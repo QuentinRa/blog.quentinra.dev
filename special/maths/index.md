@@ -5,7 +5,7 @@ engineering school from the point of view of AST
 (=`admis sur titre` meaning those that didn't make preparatory
 classes).
 
-**This course is in French.**
+**Everything after this note should be in French.**
 
 <hr class="sr">
 
@@ -18,32 +18,44 @@ classes).
 ## Probabilités (MBR)
 
 * pas besoin de vous prendre la tête sur
-  certaines notions (tribue, ...) car c'est inutile
+  certaines notions (tribue borélienne, ...) car c'est inutile
   pour nous.
 
 <hr class="sl">
 
 ## Graphes (MTG)
 
-...
+- **Suivez le cours et les TDs.**
+- Ou refaites certains partiels avant le partiel
 
 <hr class="sr">
 
-## Analyse numérique (Man)
+## Analyse numérique (MAN)
 
-...
+- le cours n'est pas aussi compliqué qu'il en à l'air
+- Regardez des vidéos sur Youtube
 
 <hr class="sl">
 
 ## Optimisation
 
-...
+- **Suivez les TDs**
+- Il y a plein de trucs faciles, notamment en optimisation
+sans contraintes
+- Regardez des vidéos sur Youtube
 
 <hr class="sr">
 
 ## Statistiques (MST)
 
-...
+- **Suivez les TDs et TPs**
+- Important : ayez un groupe motivé/compétent pour les TPs (notés)
+- Les questions sont des classiques parfois, donc à connaître
+- Il y a des questions de cours et aucun support n'est autorisé
+- Pour faire du R en commun (pour les TPs), 
+  - utilisez <https://rstudio.cloud/> 
+  - ou <https://colab.research.google.com/#create=true&language=r>
+- Pour un cours plus accessible, regardez ce site: https://www.mghassany.com/Statinf/index.html
 
 <hr class="sl">
 

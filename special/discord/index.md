@@ -26,7 +26,7 @@ Pressing shift while hovering a message show a small
 popup allowing to get the message-id/channel-id
 and the guild id (used in the API). You can also
 delete/... a message using this but most people
-are using their right click for these.
+are using their right-click for these.
 
 The messages are allowing a lot of markdown syntax
 so you can use
