@@ -159,4 +159,10 @@ want to check
 * <https://en.wikipedia.org/wiki/Linear_discriminant_analysis>
 * <https://en.wikipedia.org/wiki/Regression_analysis>
 
+Estimators and likehood
+
+* <https://en.wikipedia.org/wiki/Bias_of_an_estimator>
+* <https://en.wikipedia.org/wiki/Efficiency_(statistics)>
+* <https://en.wikipedia.org/wiki/Likelihood_function>
+
 [other references](refs.md)
