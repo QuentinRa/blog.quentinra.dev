@@ -69,7 +69,7 @@ for (i in indexes){
 plot(indexes, y)
 ```
 
-![](l_bern.png)
+![](images/l_bern.png)
 
 For this sample, it seems that the value of the parameters
 is $0.6$ or around $0.6$. The sample is small (n=10) so

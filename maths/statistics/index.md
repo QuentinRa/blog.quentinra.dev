@@ -87,7 +87,17 @@ maximum likelihood estimation/value (`maximum de vraisemblance`).
 
 * [Estimators](si/estimators.md)
 * [Likehood function](si/likehood.md)
-* [fitdistr](si/fitdistr.md)
+* [Maximum Likehood estimation](si/mle.md) (MLE)
+
+According to fitdistr function source code,
+I was able to learn more about estimators.
+You can find the source code
+[here](https://github.com/cran/MASS/blob/master/R/fitdistr.R).
+I will use my newly earned knowledge a lot in the two
+next pages, but I don't know how did they learned that,
+unfortunately...
+
+* [Likehood functions (examples)](si/likehood-ex.md)
 
 <hr class="sr">
 
