@@ -30,9 +30,11 @@ using it such as
 
 Please take note that sphinx is only required
 if you are planning to write a documentation website.
-For python command, skip this part.
+For python comments, you can skip this part.
 
-... some explanation here ...
+* ``pip install -U sphinx`` (pip should be installed)
+* ``sphinx-build --version`` (check your PATH)
+* I'm using ``make html`` to compile in HTML on Windows from the cmd
 
 Sphinx use a ``tree`` system, we need to link
 the pages together. We do that with ``toctree directive``
