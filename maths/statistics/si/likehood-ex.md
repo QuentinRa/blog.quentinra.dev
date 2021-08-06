@@ -7,7 +7,7 @@ to log-likehood so I won't show the log-likehood implementations.
 
 <hr class="sl">
 
-## Bernoulli
+## Bernoulli distribution
 
 ```r
 L_bern <- function(theta, x) {
@@ -17,7 +17,7 @@ L_bern <- function(theta, x) {
 
 <hr class="sr">
 
-## Binomial
+## Binomial distribution
 
 ```r
 L_binom <- function(theta, x) {
@@ -28,5 +28,35 @@ L_binom <- function(theta, x) {
   # --
   
   return(prod(dbinom(x = x, size = size, prob = theta[1])))
+}
+```
+
+<hr class="sl">
+
+## Weibull distribution
+
+```r
+L_weibull <- function(theta, x) {
+  return(prod(dweibull(shape = theta[1], scale = theta[2], x)))
+}
+```
+
+<hr class="sr">
+
+## Poisson distribution
+
+```r
+L_pois <- function(theta, x) {
+  return(prod(dpois(lambda = theta[1], x)))
+}
+```
+
+<hr class="sl">
+
+## Normal distribution
+
+```r
+L_norm <- function (theta, x) {
+  return(prod(dnorm(mean = theta[1], sd = theta[2], x)))
 }
 ```
