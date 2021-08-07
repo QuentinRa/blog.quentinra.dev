@@ -1,4 +1,4 @@
-## Local installation
+# Local installation
 
 [Go back](index.md#introduction)
 
