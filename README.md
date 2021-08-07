@@ -21,7 +21,7 @@ Provided by `Legendary Games Studio`,
 ![GitHub](https://img.shields.io/github/license/lgs-games/memorize)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr-closed/lgs-games/memorize?color=%23a0)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/lgs-games/memorize)
-![Custom badge](https://img.shields.io/endpoint?label=views&logoColor=success&url=https%3A%2F%2Fmemorize.lgs-games.com%2Fen%2Fcounter)
+![Custom badge](https://img.shields.io/endpoint?label=views&logoColor=success&url=https%3A%2F%2Fmemorize.lgs-games.com%2Fcounter)
 </div>
 
 ## How to contribute
