@@ -15,3 +15,8 @@ Regression
 * <https://www.statology.org/read-interpret-regression-table/>
 * <https://www.statology.org/how-to-interpret-regression-coefficients/>
 * <https://www.statology.org/poisson-regression/>
+
+Tests
+
+* <https://medium.com/@shubhamsingh_31435/challenge-the-status-quo-using-hypothesis-testing-in-statistics-part-i-2798cda37bfc>
+* <https://stanford.edu/~shervine/teaching/cme-106/cheatsheet-statistics>

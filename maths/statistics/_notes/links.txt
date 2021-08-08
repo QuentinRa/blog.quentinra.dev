@@ -77,3 +77,18 @@ https://fr.linkedin.com/learning/r-les-statistiques-parametriques/produire-un-te
 http://math.univ-lyon1.fr/~gannaz/Cours/cours_stat.pdf
 
 https://www.math.sciences.univ-nantes.fr/~philippe/new/pdf/stat/Aphilippe-MCviano-cours-stat-MIM.pdf
+
+----
+
+https://www.math.sciences.univ-nantes.fr/~philippe/pdf/stat/APhilippe-stat.pdf
+https://www.math.sciences.univ-nantes.fr/~philippe/pdf/stat/Aphilippe-MCviano-cours-stat-MIM.pdf
+https://www.toomey.org/tutor/harolds_cheat_sheets/Harolds_Stats_Hypothesis_Testing_Cheat_Sheet_2020.pdf
+https://stats.stackexchange.com/questions/27033/in-r-given-an-output-from-optim-with-a-hessian-matrix-how-to-calculate-paramet
+http://people.fas.harvard.edu/~mparzen/stat100/Stat%20100%20Final%20Cheat%20Sheets%20-%20Google%20Docs%20(2).pdf
+https://stanford.edu/~shervine/teaching/cme-106/cheatsheet-statistics
+
+We usually fix $\alpha$: 0.01 (99%), 0.05 (95%), 0.1 (90%),
+and we are trying to minimize $\beta$. We are getting
+a **p-value** and
+
+* In **Neyman–Pearson lemma**,

@@ -135,7 +135,31 @@ variable split by group according to a qualitative variable
 
 ## Tests
 
-...
+We are using tests to check if it seems likely that
+a distribution is having a property. We are considering
+two hypothesis $H_0$ and $H_1$ and we are testing which
+one is more likely.
+
+* $H_0$, null Hypothesis: we believe this is true
+* $H_1$, alternate Hypothesis: what we want to demonstrate
+
+You will usually see "=" or "is" in $H_0$ while
+you will see "!=" or "isn't" in $H_1$. We may introduce
+two errors while picking
+
+* **Type I error** (`risque de première espèce`), $\alpha$: accepted $H_1$ but $H_0$ was true
+* **Type II error** (`risque de seconde espèce`), $\beta$: accepted $H_0$ but $H_1$ was true
+
+Note that we are calling the probabilities of the errors
+above
+
+* $1-\alpha$: confidence coefficient (`Niveau de confiance`)
+* $1-\beta$: power of a test (`Puissance de test`)
+
+We are calling **region of non-rejection**, the region
+covered by the null hypothesis. The bounds separating this
+part of distribution with the regions of rejections are
+called **critical values**.
 
 <hr class="sr">
 
