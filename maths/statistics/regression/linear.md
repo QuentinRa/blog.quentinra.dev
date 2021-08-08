@@ -63,3 +63,22 @@ lm(Y ~ X + Z + X*Z)
 lm(Y ~ X + Z)
 lm(Y ~ X * Z)
 ```
+
+<hr class="sr">
+
+## Conditions
+
+* Normality of Residuals
+  * ``resid(model)`` or `residuals(model)`
+  * try using an histogram, a QQ-plot
+* Residuals' variance must not be dependant of the variables
+* No correlation
+
+The more **Residual standard error** (RSE) is small,
+and the more our model will be accurate.
+
+The **Multiple R-squared** ($R^2$) is used to compare
+models. This is the percent (if multiplied by 100)
+of the variance explained by the predictor variables. This
+is telling us how much the predictor variables are predicting
+the result of the response variable.
