@@ -1,0 +1,5 @@
+Une dernière chose, à propos des formules. Généralement vous n’en n’aurez pas besoin sauf si vous faites de la regression, vous pouvez obtenir de l’aide avec ?formula.
+
+X ~ qual (X expliqué par qual) : fait des sous-groupes de quant selon leur valeur de qual
+
+Formulas

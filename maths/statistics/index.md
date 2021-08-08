@@ -42,8 +42,9 @@ Before the next part, you need to know of those
 It's ``F(x)=0.5``. (if `F` is the empirical cumulative distribution function)
 * **medial** (Médiale): value that divide in two part the cumulative sum of values.
 * **mode**: most repeated value ([wiki](https://en.wikipedia.org/wiki/Mode_(statistics)))
-* [quantile](maths/quantiles.md): split the distribution in X part (4 = quartile, 10 = decile, 100 = centile).
-* [covariance](maths/cov.md) : if two value are independents then ``cov=0``.
+* [quantile](notions/quantiles.md): split the distribution in X part (4 = quartile, 10 = decile, 100 = centile).
+* [covariance](notions/cov.md): if two value are independents then ``cov=0``.
+* [moments](notions/moments.md): $\mathbb{E}(X)$,$V(X)$, Skewness, and Kurtosis
 
 In R, you can use
 `mean(x)`, `median(x)`, `quantiles(x)=fivenum(x)`, 
