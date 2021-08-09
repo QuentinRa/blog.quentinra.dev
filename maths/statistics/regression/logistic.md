@@ -58,3 +58,17 @@ changed a bit to
 ```r
 drop1(model, .~., test="Chisq")
 ```
+
+<hr class="sr">
+
+## Conditions
+
+If we are considering $|X|$ equals to
+
+* **1**: if the variable is a quantitative or binary variable
+* else the number of levels minus 1 ``length(levels(qual))-1``
+
+Then the condition for $Z = a + bX + cT$
+
+* $(|X|+|Z|+|T|) * 5 \le n$
+* or better $(|X|+|Z|+|T|) * 10 \le n$w
