@@ -44,6 +44,7 @@ It's ``F(x)=0.5``. (if `F` is the empirical cumulative distribution function)
 * **mode**: most repeated value ([wiki](https://en.wikipedia.org/wiki/Mode_(statistics)))
 * [quantile](notions/quantiles.md): split the distribution in X part (4 = quartile, 10 = decile, 100 = centile).
 * [covariance](notions/cov.md): if two value are independents then ``cov=0``.
+* [correlation](notions/cor.md): if two variables are correlated then when one increase, the other may variate according to the correlation
 * [moments](notions/moments.md): $\mathbb{E}(X)$,$V(X)$, Skewness, and Kurtosis
 
 In R, you can use

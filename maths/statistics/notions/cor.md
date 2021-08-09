@@ -16,3 +16,19 @@ A positive correlation means that when X increase, Y increase.
 variables are increasing/decreasing together. Otherwise,
 if one increase and the other decrease, we have
 an imperfect correlation.
+
+<hr class="sl">
+
+## In R
+
+You may use
+
+```r
+cor(x, y)
+# if you have NA's
+cor(x, y, use="complete.obs")
+```
+
+You may also use the Pairwise comparison
+(`Comparaison par paires`) with the `ggpairs`
+function in the ``GGally`` library.
