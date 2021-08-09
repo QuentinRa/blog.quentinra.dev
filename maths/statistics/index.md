@@ -66,6 +66,9 @@ in other sections.
 2. [Descriptive statistics](ds/index.md)
 3. [Statistical inference](si/index.md)
 
+Follow this link to 
+[learn about distributions in R](dist.md)
+
 <hr class="sl">
 
 ## Estimators and likehood
