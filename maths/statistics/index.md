@@ -191,7 +191,7 @@ $W$, then you don't have to look for $T$.
 
 A test is successful if the result is in $W$.
 If that's the case, then $H_0$ is rejected. Otherwise,
-we **do not** accept $H_0$ but we say that we
+we **do not accept** $H_0$ and instead we say that we
 can't reject $H_0$ at a significance level (`seuil alpha`).
 
 @

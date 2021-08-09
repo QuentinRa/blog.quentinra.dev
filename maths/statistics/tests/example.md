@@ -81,4 +81,7 @@ sum(m)
 # [1] 7
 ```
 
-Since $7 \in W$ then we accept $H_0$.
+Since $7 \in W$ then we <s>accept</s> can't reject $H_0$
+at a significance level of $\alpha=0.05$ (do not use "accept",
+we are picking an hypothesis between two, not confirming
+that something is always true).
