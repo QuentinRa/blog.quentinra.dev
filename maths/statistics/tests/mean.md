@@ -13,10 +13,14 @@ a Normal distribution $N(\mu, 1)$.
 x <- rnorm(n = 100, mean = 1.2,  sd = 1)
 ```
 
-Note that $x \sim N(\mu, \frac{\sigma^2}{\sqrt{n}})$
-giving us $x \sim N(\mu, \frac{1}{\sqrt{100}})$
+Note that $x \sim N(\mu, \frac{\sigma^2}{n})$
+giving us $x \sim N(\mu, \frac{1^2}{100})$
 here (sorry for the small $x$ but that's the variable
-name).
+name). Check multivariate normal distribution
+if you are looking for the formula. 
+A multivariate normal distribution
+is the name given for a vector of 
+normally distributed variables.
 
 <hr class="sl">
 

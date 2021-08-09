@@ -50,7 +50,7 @@ file.
 
 ## TODO List 
 
-Last updated: 2021-08-06
+Last updated: 2021-08-10
 
 **Website tasks**
 
@@ -61,7 +61,6 @@ Last updated: 2021-08-06
 
 **Next content**
 
-* [ ] Complete Statistics course
 * [ ] Matrix course
 * [ ] First-order logic course
 * [ ] General mathematical knowledge course
