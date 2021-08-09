@@ -157,8 +157,12 @@ You will usually see "=" or "is" in $H_0$ while
 you will see "!=" or "isn't" in $H_1$. We may introduce
 two errors while picking
 
-* **Type I error** (`risque de première espèce`), $\alpha$: accepted $H_1$ but $H_0$ was true
-* **Type II error** (`risque de seconde espèce`), $\beta$: accepted $H_0$ but $H_1$ was true
+* **Type I error** (`risque de première espèce/seuil`), $\alpha$
+  * accepted $H_1$ but $H_0$ was true
+  * $\mathbb{P}(reject H_0 | H_0 true)$
+* **Type II error** (`risque de seconde espèce`), $\beta$
+  * accepted $H_0$ but $H_1$ was true
+  * $\mathbb{P}(reject H_1 | H_1 true)$
 
 Note that we are calling the probabilities of the errors
 above
@@ -166,10 +170,22 @@ above
 * $1-\alpha$: confidence coefficient (`Niveau de confiance`)
 * $1-\beta$: power of a test (`Puissance de test`)
 
-We are calling **region of non-rejection**, the region
-covered by the null hypothesis. The bounds separating this
-part of distribution with the regions of rejections are
-called **critical values**.
+We are calling **critical region**
+or **region of rejection** $W$ (`zone de rejet`) the
+set of values for which the null hypothesis is
+rejected. Hence, The region covered by the
+null hypothesis is called **region of non-rejection**.
+We are calling it critical region because the bounds
+of the regions are called **critical values**.
+To find the critical region, you need to find
+a **statistical test** (`test statistique`) $T(x_1, ..., x_n)$
+which is a function taking the samples and
+returning an hypothesis.
+
+A test is successful if the result is in $W$.
+If that's the case, then $H_0$ is rejected. Otherwise,
+we **do not** accept $H_0$ but we say that we
+can't reject $H_0$ at a significance level (`seuil alpha`).
 
 <hr class="sr">
 
@@ -207,6 +223,7 @@ want to check
 * <https://en.wikipedia.org/wiki/Linear_regression>
 * <https://en.wikipedia.org/wiki/Linear_discriminant_analysis>
 * <https://en.wikipedia.org/wiki/Regression_analysis>
+* <https://en.wikipedia.org/wiki/Statistical_hypothesis_testing>
 
 Estimators and likehood
 

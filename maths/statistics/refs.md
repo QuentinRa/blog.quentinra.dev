@@ -20,3 +20,4 @@ Tests
 
 * <https://medium.com/@shubhamsingh_31435/challenge-the-status-quo-using-hypothesis-testing-in-statistics-part-i-2798cda37bfc>
 * <https://stanford.edu/~shervine/teaching/cme-106/cheatsheet-statistics>
+* <https://www.imo.universite-paris-saclay.fr/~pansu/web_ifips/Tests.pdf>
