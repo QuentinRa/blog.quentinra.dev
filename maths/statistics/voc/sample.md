@@ -12,9 +12,29 @@ But more than 80-20, we usually look for a
 be **i.i.d** (indépendantes et identiquement distribuées =
 follow the distribution and are independents).
 
+<hr class="sl">
+
+## Representative sample
+
 A Sample is **representative** (`échantillon représentatif`) when we didn't lost any
 information from the previous sample (the dataset is a
 **representative** sample).
+
+For instance, let's say you got the dataset
+$d = (0,1,0,1,0,1,1,0,1,0)$. A representative
+sample would be
+
+* $d$ (this is a stupid answer but this is a valid answer)
+* this table
+
+```r
+# 0 1 
+# 5 5 
+```
+
+You can still see that you got 5 "0" and 5 "1" so you
+didn't lost any information. This table is called
+contingency table and that's quite useful.
 
 <hr class="sr">
 
