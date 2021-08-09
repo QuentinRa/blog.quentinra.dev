@@ -74,7 +74,8 @@ of the parameters of a distribution. For instance,
 a binomial distribution $B(n,p)$ would become
 $B(\theta)$. Because it's convenient, in statistics, we
 are always using theta while you may not see it often
-in probabilities.
+in probabilities. We are calling $\Theta$ (big-theta), the space
+in which $\theta$ is defined.
 
 Your goal is to estimate the vector "theta", like
 "what parameters seem to have generated this distribution?".
