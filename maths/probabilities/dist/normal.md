@@ -103,7 +103,7 @@ As for $\phi^{-1}(\alpha)$
 * if $\alpha \ge 0.5$, you simply need to find
   the z (sum of line+column) in the table
   associated with the closest value of $\alpha$
-* else $\phi(\alpha) = -\phi(1-\alpha)$
+* else $\phi^{-1}(\alpha) = -\phi(1-\alpha)$
 
 For instance, if $\alpha = 0.95$, then you need
 to search the closest value in the table. We
@@ -111,5 +111,5 @@ got $\phi(1.64)=0.9495$ and $1.65=0.9505$ giving
 us $k \in [1.64,1.65]$.
 
 If $\alpha = 0.05$, then we have
-$\phi(0.05) = -\phi(1-0.05) = -\phi(0.95)$
+$\phi^{-1}(0.05) = -\phi(1-0.05) = -\phi(0.95)$
 so $k \in [-1.65,-1.64]$.
