@@ -94,6 +94,7 @@ maximum likelihood estimation/value (`maximum de vraisemblance`).
 * [Maximum Likehood estimation](si/mle.md) (MLE)
 * [Log-likehood function](si/likehood-log.md)
 * [Confidence interval](si/conf-int.md)
+* [Sufficient statistic](si/sufficient.md)
 
 According to fitdistr function source code,
 I was able to learn more about estimators.
@@ -105,6 +106,12 @@ unfortunately...
 
 * [Likehood functions (examples)](si/likehood-ex.md)
 * [Maximum Likehood estimation (examples)](si/mle-ex.md)
+
+Another notes
+
+* [Method of moments](si/moments.md)
+* [Delta method](si/delta.md)
+* [Exponential family](si/exponential.md)
 
 <hr class="sr">
 
