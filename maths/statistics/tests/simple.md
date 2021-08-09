@@ -15,7 +15,8 @@ m
 
 ## Hypothesis
 
-We are making the bilateral test
+We are making the bilateral test under the
+two hypothesis
 
 * $H_0: \mu = 0.7$
 * $H_1: \mu \neq 0.7$
@@ -70,7 +71,7 @@ $T$ here and that's why for me it is a simple example.
 
 ## Result
 
-If the number of successes if within 
+If the number of successes is within 
 $[5,9]$ then at a significance level of $\alpha=0.05$,
 we accept $H_0$ so the mean was $0.7$.
 

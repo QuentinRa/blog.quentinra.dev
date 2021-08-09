@@ -237,8 +237,8 @@ what you know (examples, well-known tests) or links
 to permanent resources (because a lot of url
 are down after some time).
 
-* [Simple and complete example](tests/example.md)
-* [Determining W - example](tests/region.md)
+* [Easy and complete example](tests/simple.md)
+* [Example of determining W with T (easy T)](tests/mean.md)
 
 <hr class="sr">
 
