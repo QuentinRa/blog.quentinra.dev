@@ -9,6 +9,10 @@ function is something really (yeah really) easier
 to use. Everything is working the same aside the fact
 that you are using another function.
 
+Another reason of using the log-likehood function is that,
+in average, the result is better than using any other
+likehood function.
+
 The log-likehood function is defined as the
 **sum of the log densities functions**.
 
