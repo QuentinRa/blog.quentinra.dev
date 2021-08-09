@@ -12,7 +12,8 @@ This is a course where you will learn
 And everything will be coupled with examples in ``R``,
 you may add examples in other languages. To be honest, 
 I do not understand much about statistics so
-be sure to correct any mistakes, thanks!
+be sure to correct any mistakes, thanks! Be sure
+to cross check your findings with a teacher/friend.
 
 <hr class="sr">
 
@@ -155,9 +156,9 @@ one is more likely.
 
 A test could be
 
-* bilateral test: $H_0 = \theta_0$, $H_1 \neq \theta_1$
-* unilateral test (left): $H_0 = \theta_0$, $H_1 \gt \theta_1$
-* unilateral test (right): $H_0 = \theta_0$, $H_1 \lt \theta_1$
+* two-tailed test (`test bilateral`): $H_0 = \theta_0$, $H_1 \neq \theta_1$
+* left-tailed test (``test unilateral gauche``): $H_0 = \theta_0$, $H_1 \lt \theta_1$
+* right-tailed test (``test unilateral droit``): $H_0 = \theta_0$, $H_1 \gt \theta_1$
 * fitting test (`test d'adequation`): $H_0 \sim L$, $H_1 ...$ with L a distribution
 * ...
 
@@ -210,7 +211,15 @@ with $k$ a constant giving us
 \mathbb{P}\_{H_0}(W) = \mathbb{P}_{H_0}(T(x) \gt k) = a
 @
 
-In R (or most of the time), computer are calculating a
+and $c$ a critical value. You can also see
+
+@
+W = \\{ x; |T(x)| \gt c \\}
+\quad or \quad
+W = \\{ x; c_1 \lt T(x) \lt c_2 \\}
+@
+
+In R (or most of the time), computers are calculating a
 p-value,
 
 * according to Neyman–Pearson lemma
@@ -228,7 +237,8 @@ what you know (examples, well-known tests) or links
 to permanent resources (because a lot of url
 are down after some time).
 
-* [Simple example](tests/example.md)
+* [Simple and complete example](tests/example.md)
+* [Determining W - example](tests/region.md)
 
 <hr class="sr">
 
