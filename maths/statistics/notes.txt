@@ -1,0 +1,5 @@
+Les tests paramétriques: ces tests portent sur la valeur d'un ou de plusieurs paramètres
+de la distribution dans la population d' une variable d' intérêt.
+2. Les tests non-paramétriques : ces tests portent sur la distribution, les moments
+(espérance, variance, etc.) ou certaines caractéristiques (l'indépendance par
+exemple) d' une ou de plusieurs variables aléatoires.

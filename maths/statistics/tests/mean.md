@@ -13,6 +13,11 @@ a Normal distribution $N(\mu, 1)$.
 x <- rnorm(n = 100, mean = 1.2,  sd = 1)
 ```
 
+Note that $x \sim N(\mu, \frac{\sigma^2}{\sqrt{n}})$
+giving us $x \sim N(\mu, \frac{1}{\sqrt{100}})$
+here (sorry for the small $x$ but that's the variable
+name).
+
 <hr class="sl">
 
 ## Hypothesis
@@ -37,13 +42,14 @@ for a normal distribution we have
 \alpha = \mathbb{P}(X \le c) = F_X^{-1}(\alpha)
 @
 @
-F_X^{-1}(\alpha) = \mu + \frac{\sigma}{\sqrt{n}} * \phi^{-1}(\alpha)
+F_X^{-1}(\alpha) = \mu + \sigma * \phi^{-1}(\alpha)
 @
 @
 \phi^{-1}(0.05) = -\phi(1-0.05) = -\phi(0.95) = -1.645
 @
 
-We are replacing with $\mu=1.2$ ($H_0$) and $\sigma=1$ (given at the start).
+We are replacing with $\mu=1.2$ ($H_0$) and 
+$\sigma=\frac{1}{\sqrt{100}}$ (given at the start).
 
 @
 c = 1.2 + \frac{1}{\sqrt{100}} * -1.645 = 1.0355

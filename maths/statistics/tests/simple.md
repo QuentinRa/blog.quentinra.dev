@@ -49,7 +49,9 @@ plot(0:10, v)
 
 We are picking $\alpha = 0.05$ so we must remove
 here the $k$ for which the probability
-is $\lt 0.05$.
+is $\lt 0.05$. Remember that $W$ is the
+region of rejection not the region
+of non-rejection.
 
 ```r
 v
@@ -57,32 +59,35 @@ v
 # [6] 0.1029193452 0.2001209490 0.2668279320 0.2334744405 0.1210608210
 # [11] 0.0282475249
 
-# which x are greater than 0.05?
+# which x are lesser than 0.05?
 # we started from 0 in 0:n so we remove 1
 # because R indexes starts from 1 :)
-which(v > 0.05) - 1
-# [1] 5 6 7 8 9
+which(v < 0.05) - 1
+# [1] 0  1  2  3  4 10
 ```
 
-The range the $W$ is $[5,9]$. We didn't look after
-$T$ here and that's why for me it is a simple example.
+The range the $W$ is $[0,4] \cup [10]$. We didn't look after
+$T$ here.
 
 <hr class="sl">
 
 ## Result
 
-If the number of successes is within 
-$[5,9]$ then at a significance level of $\alpha=0.05$,
-we accept $H_0$ so the mean was $0.7$.
+If the number of successes is within
+$[0,4] \cup [10]$ then at a significance level of $\alpha=0.05$,
+we are rejecting $H_0$.
 
 ```r
 # this is a trick to count the number of successes
-# since we have 1 + 0 + 1 + ...
+# since we have a vector of 0/1
+# - 1 (success)
+# - 0 (failure)
+# so we are simply doing 1+0+1+...
 sum(m)
 # [1] 7
 ```
 
-Since $7 \in W$ then we <s>accept</s> can't reject $H_0$
+Since $7 \notin W$ then **we can't reject** $H_0$
 at a significance level of $\alpha=0.05$ (do not use "accept",
 we are picking an hypothesis between two, not confirming
 that something is always true).
