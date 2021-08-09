@@ -12,11 +12,15 @@ But more than 80-20, we usually look for a
 be **i.i.d** (indépendantes et identiquement distribuées =
 follow the distribution and are independents).
 
-A Sample is **representative** when we didn't lost any
+A Sample is **representative** (`échantillon représentatif`) when we didn't lost any
 information from the previous sample (the dataset is a
 **representative** sample).
 
-In **R**, we are using ``sample`` to create an i.i.d.
+<hr class="sr">
+
+## In R
+
+We are using ``sample`` to create an i.i.d.
 sample of the dataset.
 
 ```r

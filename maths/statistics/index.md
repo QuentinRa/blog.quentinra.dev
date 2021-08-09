@@ -23,12 +23,13 @@ find how this data got generated (what distribution function?
 what were the parameters?...). Once we have our **model**,
 then we can do thing like trying to guess the future.
 
-* [Population](voc/population.md) : data we are observing, a matrix
-* [Variables](voc/variables.md) : the columns of our matrix, can be quantitative or qualitative
-* [Individuals](voc/individuals.md) : the rows of our matrix
-* [Sample](voc/sample.md) (échantillon) : a part of our population
-* [Model](voc/model.md) : characterization of the dataset
-* [Population (paired)](voc/paired.md) : you took two times the data from the same indivuals
+* [Population](voc/population.md): data we are observing, a matrix
+* [Variables](voc/variables.md): the columns of our matrix, can be quantitative or qualitative
+* [Individuals](voc/individuals.md): the rows of our matrix
+* [Sample](voc/sample.md) (échantillon): a part of our population
+* [Model](voc/model.md): characterization of the dataset
+* [Population (paired)](voc/paired.md): you took two times the data from the same indivuals
+* [Empiric](voc/empiric.md): you are calculating values using the sample
 
 <hr class="sl">
 
@@ -62,7 +63,7 @@ in other sections.
 
 1. [Discovery](analysis/discovery.md)
 2. [Descriptive statistics](ds/index.md)
-2. [Statistical inference](si/index.md)
+3. [Statistical inference](si/index.md)
 
 <hr class="sl">
 
