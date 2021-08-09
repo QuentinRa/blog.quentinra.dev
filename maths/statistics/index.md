@@ -153,39 +153,82 @@ one is more likely.
 * $H_0$, null Hypothesis: we believe this is true
 * $H_1$, alternate Hypothesis: what we want to demonstrate
 
-You will usually see "=" or "is" in $H_0$ while
-you will see "!=" or "isn't" in $H_1$. We may introduce
-two errors while picking
+A test could be
+
+* bilateral test: $H_0 = \theta_0$, $H_1 \neq \theta_1$
+* unilateral test (left): $H_0 = \theta_0$, $H_1 \gt \theta_1$
+* unilateral test (right): $H_0 = \theta_0$, $H_1 \lt \theta_1$
+* fitting test (`test d'adequation`): $H_0 \sim L$, $H_1 ...$ with L a distribution
+* ...
+
+We may introduce two errors while picking
 
 * **Type I error** (`risque de première espèce/seuil`), $\alpha$
   * accepted $H_1$ but $H_0$ was true
-  * $\mathbb{P}(reject H_0 | H_0 true)$
+  * $\mathbb{P}(reject\ H\_0 | H\_0\ true)$
 * **Type II error** (`risque de seconde espèce`), $\beta$
   * accepted $H_0$ but $H_1$ was true
-  * $\mathbb{P}(reject H_1 | H_1 true)$
+  * $\mathbb{P}(reject\ H\_1 | H\_1\ true)$
 
-Note that we are calling the probabilities of the errors
+We are calling the probabilities of the errors
 above
 
 * $1-\alpha$: confidence coefficient (`Niveau de confiance`)
-* $1-\beta$: power of a test (`Puissance de test`)
+* $1-\beta$: power of a test (`Puissance d'un test`)
 
 We are calling **critical region**
 or **region of rejection** $W$ (`zone de rejet`) the
 set of values for which the null hypothesis is
 rejected. Hence, The region covered by the
 null hypothesis is called **region of non-rejection**.
-We are calling it critical region because the bounds
+We are also calling it critical region because the bounds
 of the regions are called **critical values**.
 To find the critical region, you need to find
-a **statistical test** (`test statistique`) $T(x_1, ..., x_n)$
-which is a function taking the samples and
-returning an hypothesis.
+a **statistical test** (`test statistique`) $T(x_1, ..., x_n) = T(x)$
+which is a function taking a sample and
+returning an hypothesis. Of course, if you found
+$W$, then you don't have to look for $T$.
 
 A test is successful if the result is in $W$.
 If that's the case, then $H_0$ is rejected. Otherwise,
 we **do not** accept $H_0$ but we say that we
 can't reject $H_0$ at a significance level (`seuil alpha`).
+
+@
+R(x) = \frac{L(x|\theta_1)}{L(x|\theta_0)}
+@
+
+@
+W = \\{ x; R(x) \gt k \\}
+=^\text{some operation} 
+W = \\{ x; T(x) \gt c \\}
+@
+
+with $k$ a constant giving us
+
+@
+\mathbb{P}\_{H_0}(W) = \mathbb{P}_{H_0}(T(x) \gt k) = a
+@
+
+In R (or most of the time), computer are calculating a
+p-value,
+
+* according to Neyman–Pearson lemma
+  * if $\text{p-value} < \alpha$: reject H0
+  * else: accept 
+* according to Fisher
+  * the more $p$ is small, the more you can trust the result
+  * if $\alpha=0.05$, with Neyman–Pearson $0.049$: H0 is rejected
+  while $0.050$ is accepted so Neyman–Pearson is more
+  strict than Fisher.
+
+This is too complex for me, I made too much mistakes
+so I removed everything but you may add back
+what you know (examples, well-known tests) or links
+to permanent resources (because a lot of url
+are down after some time).
+
+* [Simple example](tests/example.md)
 
 <hr class="sr">
 
