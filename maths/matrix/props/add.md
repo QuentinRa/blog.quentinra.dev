@@ -5,7 +5,7 @@
 As long as the two matrix have the same number
 of lines and columns, you can use use add/"+".
 
-<div>
+<div class="overflow-auto">
 \[
 \begin{split}        \begin{pmatrix}
 1 & 2 & 3 \\
