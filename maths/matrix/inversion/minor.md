@@ -1,44 +1,91 @@
-# Minor of a matrix
+# Cofactor expansion
 
 [Go back](../index.md#matrix-inversion)
 
-Given a matrix $A$
+When we have a big matrix, we can split the matrix
+into smaller matrix and use the formula we know
+like $ad-bc$ for the 2x2 matrix. In French, our teacher 
+is also calling this ``Calcul par développement``.
 
-<div>
-\[
-\begin{split}A= \begin{pmatrix}
-        a_{11} & a_{12} & \cdots & a_{1n} \\
-        a_{21} & a_{22} & \cdots & a_{2n} \\
-        \vdots & \vdots & \ddots & \vdots \\
-        a_{n1} & a_{n2} & \cdots & a_{nn}
-\end{pmatrix}\end{split}
-\]
-</div>
+We are calling **minor** of a matrix $A$, the matrix $M_{i,p}$
+created by removing the row $i$ and the column $p$ of $A$.
 
-Then the minor would be  $\Delta_{i}=det(A_{i})$
-giving us something like
-
-<ul>
-<li>\(\Delta_{1}=a_{11}\)</li>
-<li>\(\Delta_{2}=det A_{2}= \begin{pmatrix}a_{11} & a_{12} \\ a_{21} & a_{22}\end{pmatrix} = a_{11} * a_{22} - a_{12} * a_{21}\)</li>
-<li>...</li>
-<li>\(\Delta_{n}=det(A)\)</li>
-</ul>
+We are calling **cofactor** $C_{i,p} = (-1)^{i+p} * det(M_{i,p})$.
 
 <hr class="sl">
 
-## Cofactor expansion
+## Formula
 
-In French, our teacher is also calling this
-``Calcul par développement``. We usually pick
-the column $p$ with the greatest coefficient, and
-remove it. We are multiplying each coefficient
-by $(-1)^{i+1}$ and $det(A')$ with $A'$ a matrix
-without the row $i$ and of course the column $p$.
-The formula would be something like this.
+We will pick a column $p$ and remove it from our matrix $A$.
+It's most of the time the column with the biggest coefficients
+or the coefficients that are hard to deal with.
+Then, all we have to do is to evaluate this formula.
 
 <div class="overflow-auto">
 \[
-\sum_{i=1}^n (-1)^{i+1} * a_{i,p} * det(A')
+det(A) = \sum_{i=1}^n a_{i,p} * C_{i,p}
+\]
+</div>
+
+*Note*: this a sum of the product of the
+coefficient of the column we removed by their cofactors.
+
+<hr class="sr">
+
+## Example
+
+<div class="overflow-auto">
+\[
+M=\begin{pmatrix}-1 & 4 & -7 \\2 & -5 & 8 \\-3 & 6 & -9\end{pmatrix}
+\]
+</div>
+
+We are picking the column $p=3 \to (-7,8,-9)$.
+The formula is
+
+<div class="overflow-auto">
+\[
+\begin{split}
+det(M) 
+= a_{1,3} * C_{1,3} + a_{2,3} * C_{2,3} + a_{3,3} * C_{3,3} \\
+= -7 * C_{1,3} + 8 * C_{2,3} + -9 * C_{3,3}
+\end{split}
+\]
+</div>
+
+* $C_{1,3} = (-1)^{4} * det(M_{1,3}) = det(M_{1,3}) = \textbf{-3}$
+
+<div class="overflow-auto">
+\[
+det(M_{1,3})=det(\begin{pmatrix}2 & -5\\-3 & 6\end{pmatrix}) = -3
+\]
+</div>
+
+* $C_{2,3} = (-1)^{5} * det(M_{2,3}) = -det(M_{2,3}) = \textbf{-6}$
+
+<div class="overflow-auto">
+\[
+det(M_{2,3})=det(\begin{pmatrix} -1 & 4 \\ -3 & 6 \end{pmatrix}) = 6
+\]
+</div>
+
+* $C_{3,3} = (-1)^{6} * det(M_{3,3}) = det(M_{3,3}) = \textbf{-3}$
+
+<div class="overflow-auto">
+\[
+det(M_{2,3})=det(\begin{pmatrix} -1 & 4 \\ 2 & -5\end{pmatrix}) = -3
+\]
+</div>
+
+Hence, the result is
+
+<div class="overflow-auto">
+\[
+\begin{split}
+det(M)
+= -7 * C_{1,3} + 8 * C_{2,3} + -9 * C_{3,3} \\
+= -7 * -3 + 8 * -6 + -9 * -3 \\
+= 0 \\
+\end{split}
 \]
 </div>
