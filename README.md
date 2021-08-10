@@ -58,6 +58,8 @@ Last updated: 2021-08-10
 * [ ] edit: show formulas
 * [ ] edit: open link
 * [ ] replacing links with [here] by something better
+* [ ] gen sitemap
+* [ ] gen broken
 
 **Next content**
 
