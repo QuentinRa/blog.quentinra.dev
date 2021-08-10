@@ -10,7 +10,7 @@ If the leading coefficients are all $1$, and on each
 coefficient's column we got only $0$, then the
 matrix is called **reduced row echelon form**
 (`matrice échelonnée réduite`). Otherwise, it's called
-**echelon form** (`matrice échelonnée`).
+**row echelon form** (`matrice échelonnée`).
 
 The operations you can make are
 
