@@ -26,9 +26,11 @@ solved everything.
 What's convenient is that you can use a matrix for
 that because the GAUSS method (and a lot of other methods
 in Numerical analysis) needs a matrix. The
-rules are
+rules are that the values in the matrix are the
+coefficient between the variables ($0$ if not found,
+$1$ if $x$ or $n$ if $n * x$). The last column is
+the vector $b$ made with the values after the equals operator.
 
-* [Rules to transform a linear system to a matrix](linear-system/rules.md)
 * [Example](linear-system/example.md)
 
 <hr class="sr">
@@ -203,7 +205,7 @@ including the diagonal.
 </tbody>
 </table>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Basic operations
 
@@ -238,7 +240,7 @@ the coefficients $p_i$. We can convert back the matrix to a system.
 * [Solving a matrix with Gauss](gauss/index.md)
 * [Example](gauss/example.md)
 
-<hr class="sr">
+<hr class="sl">
 
 ## Matrix inversion
 
