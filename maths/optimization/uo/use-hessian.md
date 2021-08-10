@@ -30,7 +30,7 @@ To find if the hessian is definite/indefinite, you can
 
 <hr class="sr">
 
-**Minor of a matrix**
+## Minor of a matrix
 
 <p>
 \begin{split}A= \begin{pmatrix}
@@ -38,28 +38,26 @@ To find if the hessian is definite/indefinite, you can
         a_{21} & a_{22} & \cdots & a_{2n} \\
         \vdots & \vdots & \ddots & \vdots \\
         a_{n1} & a_{n2} & \cdots & a_{nn}
- \end{pmatrix}\end{split}
+\end{pmatrix}\end{split}
 </p>
 
-<div>
-Then the minor would be
-<span>\(\Delta_{i}=det(A_{i})\)</span>
+Then the minor would be  $\Delta_{i}=det(A_{i})$
 giving us something like
+
 <ul>
 <li>\(\Delta_{1}=a_{11}\)</li>
 <li>\(\Delta_{2}=det A_{2}= \begin{pmatrix}a_{11} & a_{12} \\ a_{21} & a_{22}\end{pmatrix} = a_{11} * a_{22} - a_{12} * a_{21}\)</li>
 <li>...</li>
 <li>\(\Delta_{n}=det(A)\)</li>
 </ul>
-</div>
 
-Then
+Then the matrix is
 
 <ul>
-    <li><b>definite positive</b>: <span>\(\forall k, \Delta_{k}>0\)</span></li>
-    <li><b>semi-definite positive</b>: <span>\(\forall k, (-1)^k\Delta_{k}>0\)</span></li>
-    <li><b>definite negative</b>: <span>\(\forall k < n, \Delta_{k}>0 \text{. and } \Delta_{n}=0\)</span></li>
-    <li><b>semi-definite negative</b>: <span>\(\forall k < n, (-1)^k\Delta_{k}>0 \text{. and } \Delta_{n}=0\)</span></li>
+    <li><b>definite positive</b>: <span>\(\forall k,\quad \Delta_{k}>0\)</span></li>
+    <li><b>semi-definite positive</b>: <span>\(\forall k,\quad (-1)^k \Delta_{k}>0\)</span></li>
+    <li><b>definite negative</b>: <span>\(\forall k < n,\quad \Delta_{k}>0 \text{. and } \Delta_{n}=0\)</span></li>
+    <li><b>semi-definite negative</b>: <span>\(\forall k < n,\quad (-1)^k\Delta_{k}>0 \text{. and } \Delta_{n}=0\)</span></li>
     <li><b>indefinite</b>: <span>\(\Delta_{n} < 0\)</span> and the dimension n is pair</li>
 </ul>
 
@@ -74,7 +72,7 @@ Some help for matrix 2x2
 
 <hr class="sl">
 
-**eigenvalues**
+## Using eigenvalues
 
 * **definite positive**: all eigen values > 0
 * **definite negative**: all eigen values < 0
@@ -86,8 +84,10 @@ Some help for matrix 2x2
 
 ## End of the example
 
-What's the gradient and the hessian
-of this function?
+In the previous example, your
+job was to find the gradient and the hessian
+of this function.
+
 <p>
 \[
 f(x, y) = 2x^2 + y^2 − 2xy + 4x
@@ -115,9 +115,11 @@ points so the values giving you
 <blockquote class="spoiler">
 I'm not good at this so I used GAUSS
 <div class="overflow-auto mathjax_process">
+\[
 \begin{pmatrix}4x -2y + 4 = 0\\2y-2x = 0\end{pmatrix}
 \Leftrightarrow
 \begin{pmatrix}4x -2y = -4\\-2x + 2y = 0\end{pmatrix}
+\]
 I'm removing x and y
 \begin{pmatrix}
 4 & -2 & -4\\
