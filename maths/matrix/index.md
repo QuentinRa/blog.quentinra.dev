@@ -237,3 +237,22 @@ the coefficients $p_i$. We can convert back the matrix to a system.
 
 * [Solving a matrix with Gauss](gauss/index.md)
 * [Example](gauss/example.md)
+
+<hr class="sr">
+
+## Matrix inversion
+
+The determinant of $A$, $det(A)=|A|$ is a value which
+indicate if we can invert or not a matrix. A matrix
+is invertible (also written as $A \in Gl_n(\mathbb{R})$)
+if **the determinant is not null** so $det(A) \neq 0$.
+
+* Determinant properties
+  * Let $A_{1,1}=\begin{pmatrix} a \end{pmatrix}$, $det(A) = a$
+  * $det(AB) = det(A) * det(B)$
+  * $det(A^t) = det(A)$
+  * Let $A$ a diagonal matrix, $det(A)$=product of the diagonal values
+* You can calculate the determinant
+  * using the [simplified formula for 2x2 matrix](inversion/2x2.md)
+  * using the [minor of a matrix](inversion/minor.md)
+  * using GAUSS
