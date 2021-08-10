@@ -297,3 +297,13 @@ det(\lambda{I_n}-A_n) = 0
 
 * [Eigendecomposition steps](eigen/steps.md)
 * [Eigendecomposition examples](eigen/examples.md)
+
+<hr class="sl">
+
+## Sources
+
+* <https://en.wikipedia.org/wiki/Matrix_(mathematics)>
+* <https://en.wikipedia.org/wiki/List_of_named_matrices>
+* <https://en.wikipedia.org/wiki/Determinant>
+* <https://en.wikipedia.org/wiki/Eigendecomposition_of_a_matrix>
+* <https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors>
