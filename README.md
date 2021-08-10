@@ -60,10 +60,10 @@ Last updated: 2021-08-10
 * [ ] replacing links with [here] by something better
 * [ ] gen sitemap
 * [ ] gen broken
+* [ ] mathjax overflow
 
 **Next content**
 
-* [ ] Matrix course
 * [ ] First-order logic course
 * [ ] General mathematical knowledge course
 * [ ] Complete Java course (notes, javafx)

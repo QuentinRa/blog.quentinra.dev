@@ -219,7 +219,7 @@ The basic operation you can use are
 
 <hr class="sr">
 
-## GAUSS
+## Gaussian elimination
 
 We have a system. We are converting it to a matrix.
 Then using Gauss, we get a matrix with an increasing sequence of 0 before
@@ -238,7 +238,7 @@ the coefficients $p_i$. We can convert back the matrix to a system.
 </div>
 
 * [Solving a matrix with Gauss](gauss/index.md)
-* [Example](gauss/example.md)
+* [Gauss - Example](gauss/example.md)
 
 <hr class="sl">
 
@@ -254,7 +254,14 @@ if **the determinant is not null** so $det(A) \neq 0$.
   * $det(AB) = det(A) * det(B)$
   * $det(A^t) = det(A)$
   * Let $A$ a diagonal matrix, $det(A)$=product of the diagonal values
+  * The property above is working for upper/lower diagonal matrix
 * You can calculate the determinant
   * using the [simplified formula for 2x2 matrix](inversion/2x2.md)
-  * using the [minor of a matrix](inversion/minor.md)
-  * using GAUSS
+  * using the [cofactor expansion](inversion/minor.md)
+  * using [GAUSS elimination](inversion/gauss-det.md)
+
+Then, once you have checked the determinant, you
+can invert a matrix using
+
+* using [GAUSS elimination](inversion/gauss-inv.md)
+* using [the cofactor matrix "comatrix"](inversion/comatrix.md)
