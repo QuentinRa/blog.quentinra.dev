@@ -52,9 +52,9 @@ This applies if you don't know
 * and you may at the end for ``interface``,
 ``abstract``, `extends`, ...
 
-<hr class="sr">
+<hr class="sl">
 
-**Attribute**
+## Attributes
 
 They have 
 
@@ -68,23 +68,24 @@ a class attribute. (public by default)
 
 You must use ``$this->....`` to access the attribute `...`.
 
+Since PHP7.4, you can add a type giving you
+something like this ``public string $name;``.
+
 <hr class="sr">
 
-**Methods**
+## Methods
 
-Everything is the same that for attributes.
+Everything is the same as for attributes.
 Note that you may only have one constructor.
 
-<hr class="sr">
+<hr class="sl">
 
-**Inheritance**
+## Inheritance
 
 Like in Java, you will use ``extends`` to
 inherit one concrete class. You can implements
 interfaces using ``implements`` and as many interfaces
-as you want. Finally, you can make a private inheritance
-using ``trait`` classes and inherit more than one
-class.
+as you want.
 
 ```php
 // some interface
@@ -120,7 +121,13 @@ class Concrete extends A implements I1, I2 {
 }
 ```
 
-As for the trait class
+<hr class="sr">
+
+## Private inheritance
+
+You can make a private inheritance
+using ``trait`` classes and inherit more than one
+class.
 
 ```php
 trait Parent1 { }
@@ -134,9 +141,9 @@ class Child {
 }
 ```
 
-<hr class="sr">
+<hr class="sl">
 
-**Namespaces**
+## Namespaces
 
 You might look into that if you need some
 packages.
