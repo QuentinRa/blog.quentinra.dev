@@ -13,11 +13,13 @@ can't be a bad thing. You may create one using
 
 * <https://www.xml-sitemaps.com/> (max. 500 pages)
 * <https://www.sitemapgenie.com/> (no limit or it seems so)
+* you can find some tools on github
 
 Once you created your sitemap, simply send it
 to google or any search engine you want.
 
 * <https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap?hl=fr#addsitemap>
+* <https://www.websiteplanet.com/webtools/sitemap-validator/>
 
 Resources
 
