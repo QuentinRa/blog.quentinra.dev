@@ -1,12 +1,12 @@
 # Introduction
 
-We are writing $M_{n,p}$ a matrix of $n$ lines and $p$ columns.
+We are writing $A_{n,p}$ a matrix of $n$ lines and $p$ columns.
 The value at the $i$nth line and the $j$nth column is
 written $a_{ij}=a_{i,j}$. The coefficients are starting from 1.
 
-<div>
+<div class="overflow-auto">
 \[
-\begin{split}M=\ M_{n,p}=\ M_{np}=\ \begin{pmatrix}
+\begin{split}A=\ A_{n,p}=\ A_{np}=\ \begin{pmatrix}
 \ a_{1,1} & \cdots & a_{1, p-1} \\
 \vdots  & \cdots & \vdots  \\
 \ a_{n-1,1} & \cdots & a_{n-1, p-1}
@@ -41,11 +41,11 @@ The matrix you must remember is called **Identity matrix**
 a diagonal matrix having $1$ on the diagonal
 giving us $A_n * Id_n = Id_n * A_n = A_n$.
 
-<table class="table table-striped table-dark table-bordered">
+<table class="table table-striped table-dark table-bordered table-responsive">
 <thead>
 <tr>
 <th>Zero matrix $O_{np}$</th>
-<th>Square matrix $M_{n}$</th>
+<th>Square matrix $A_{n}$</th>
 <th>Diagonal matrix $D_{n}$</th>
 <th>Conjugate transpose $A^T/A^*$</th>
 </tr>
@@ -70,7 +70,7 @@ O_{1,2}=\ \begin{pmatrix}
 We must have $i=j$. <br>
 <div>
 \[
-M_{2}=\ \begin{pmatrix}
+A_{2}=\ \begin{pmatrix}
 1&2\\
 3&4\\
 \end{pmatrix}
@@ -83,7 +83,7 @@ M_{2}=\ \begin{pmatrix}
 Zero-Matrix with non-zero values on the diagonal. <br>
 <div>
 \[
-M_{2}=\ \begin{pmatrix}
+A_{2}=\ \begin{pmatrix}
 1&2\\
 3&4\\
 \end{pmatrix}
@@ -102,11 +102,11 @@ transpose.
 </tbody>
 </table>
 
-<table class="table table-striped table-dark table-bordered">
+<table class="table table-striped table-dark table-bordered table-responsive">
 <thead>
 <tr>
 <th>Transpose matrix $A^{T}$</th>
-<th>Vector $M_{1,n}/M_{n,1}$</th>
+<th>Vector $A_{1,n}/A_{n,1}$</th>
 <th>
 Hermitian matrix $A$ ($\mathbb{C}$)<br>
 Symmetric matrix $A$ ($\mathbb{R}$)
@@ -123,7 +123,7 @@ Orthogonal matrix $A$ ($\mathbb{R}$)
 
 `Matrice transposée` <br>
 Thr rows becomes the lines and inversely. <br>
-<div>
+<div class="overflow-auto">
 \[
 A=\ \begin{pmatrix}
 1&2
@@ -141,7 +141,7 @@ A^T=\ \begin{pmatrix}
 A matrix with either one line or one column. <br>
 <div>
 \[
-M_{1,2}=\ \begin{pmatrix}
+A_{1,2}=\ \begin{pmatrix}
 1&2
 \end{pmatrix}
 \]
@@ -166,7 +166,7 @@ equals to its transpose.
 </tbody>
 </table>
 
-<table class="table table-striped table-dark table-bordered">
+<table class="table table-striped table-dark table-bordered table-responsive">
 <thead>
 <tr>
 <th>Lower triangular $L$</th>
@@ -202,3 +202,38 @@ including the diagonal.
 </tr>
 </tbody>
 </table>
+
+<hr class="sr">
+
+## Basic operations
+
+The basic operation you can use are
+
+* [Add a matrix with another](props/add.md)
+* $A - B$ is not possible but you can do $A + -1 * B$
+* [Multiply a matrix by a real](props/mul-real.md)
+* [Multiply a matrix by a matrix](props/mul-matrix.md)
+* $A / B$ is not possible but you can do $A * B^{-1}$
+
+<hr class="sr">
+
+## GAUSS
+
+We have a system. We are converting it to a matrix.
+Then using Gauss, we get a matrix with an increasing sequence of 0 before
+the coefficients $p_i$. We can convert back the matrix to a system.
+
+<div class="overflow-auto">
+\[
+\begin{split}\begin{cases}ax + by + ... = s_1\\ax + by + ... = s_2\\  ...  \end{cases}
+\Leftrightarrow
+\begin{pmatrix}a & b & ... & | s_1 \\a & b & ... & | s_2 \\  \cdots \end{pmatrix}
+\Leftrightarrow^{Gauss}
+\begin{pmatrix}p_1 & v_1 & ... & | s_1 \\0 & p_2 & ... & | s_2  \\  \cdots \end{pmatrix}
+\Leftrightarrow
+\begin{cases}p_1 * x = s_1 + v_1 * s_2 + ... \\ p_2 * y = s_2 + ...  \end{cases}\end{split}
+\]
+</div>
+
+* [Solving a matrix with Gauss](gauss/index.md)
+* [Example](gauss/example.md)
