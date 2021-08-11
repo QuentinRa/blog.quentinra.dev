@@ -10,18 +10,18 @@ A virtual machine allows someone to have a Linux (or ...) desktop
 on Windows. Once installed, one can start a Linux-only 
 application on Windows.
 But a virtual machine may be too much according
-to what you want, and that's where ``docker`` come in handy. 
+to what you want, and that's where ``docker`` comes in handy. 
 It will use your current machine file system,
 your RAM, your CPU ... 
 to run a container that can have 
-Windows, Linux, or any other-system running on it.
+Windows, Linux, or any other system running on it.
 
 But a ``docker`` image doesn't have a memory so each time
 you start a `container` (=run your application),
-**it will restart from scratch** (unless you are using
-an external storage).
+**it will restart from scratch** 
+(unless you are using external storage).
 
-A downside a ``docker``, that I found was that
+A downside a ``docker``, at least one that I found, was that
 it was hard and impossible for me to use some 
 system-specific devices such as 
 sound (<span class="text-muted small">at least in Windows
@@ -29,8 +29,8 @@ but in Linux or macOS it seems to be possible</span>).
 
 > If you want to use Linux on Windows, install
 > a WSL (Windows subsystem). For instance, 
-> you can open the Windows store, 
-> enter "debian" and install it.
+> you can open the Windows Store, 
+> enter "Debian" and install it.
 
 <hr class="sl">
 
@@ -43,28 +43,28 @@ Here is the [install page](https://docs.docker.com/engine/install/).
 * on Windows
   * install [Docker desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
   * you need to restart it each time your want to use ``docker`` commands
-  * when the application is started, messages should be shown
+  * when the application is started, a message should be shown
   telling you that you can use ``docker`` commands
 
 <hr class="sr">
 
 ## Some commands you need to know
 
-* ``docker pull tag`` : download an image
-* ``docker build -t tag .`` : build an image named `tag` with
+* ``docker pull tag``: download an image
+* ``docker build -t tag .``: build an image named `tag` with
 the ``DockerFile`` in the current folder
-* ``docker build -t tag:version .`` : specify tag version
+* ``docker build -t tag:version .``: specify tag version
 when building
-* ``docker run -it tag`` : run `tag` image in interactive mode,
-for instance, a bash where you can input commands is interactive
-* ``docker run tag`` : run `tag`
+* ``docker run -it tag``: run `tag` image in interactive mode,
+for instance, a bash (where you can input commands) is interactive
+* ``docker run tag``: run `tag`
 
 You can find images here [https://hub.docker.com/](https://hub.docker.com/)
 that you can use as a base for your application.
 As an example, there is an image called ``gcc`` 
-if you need a system configured and with `gcc` available.
+if you need a system configured and with `gcc` command available.
 
-Other commands that one might use
+Other commands that you might use
 
 * ``docker ps``: list of running containers with their ID
 * ``docker rm id``: end a running container having the ID "id"
@@ -84,24 +84,25 @@ FROM debian:10
 # set the working directory
 WORKDIR path
 
-RUN commande # exécute une commande
-RUN commande_part_1 \
+# run a command
+RUN command
+RUN command_part_1 \
 # the second part of the line above
-commande_part_2
+command_part_2
 
 # add files to container file system
 ADD path/to/source path/to/dest
 # copy file to container file system
 COPY path/to/source path/to/dest
 
-# allow the use of port 80=HTTP outside
+# allow the use of port 80 (=HTTP) outside
 EXPOSE 80
 
 # a command that's called when the container is run
 CMD ["command", "arg"]
 ```
 
-So try to make it like that
+Summary
 
 * instruction in uppercase, followed by their arguments
 * you can split a long line with ``\ ``.
@@ -149,9 +150,9 @@ be useful
 ## Kubernetes
 
 I still haven't learned how to use it so nothing is here
-for now but from what I know
-you can use ``Kubernetes`` to make sure that there are
-always ``x`` instances of an image running.
+for now. 
+It seems you you can use ``Kubernetes`` to make sure that 
+there are always ``x`` instances of an image running.
 
 <hr class="sr">
 
