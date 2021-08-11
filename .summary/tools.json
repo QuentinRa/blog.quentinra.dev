@@ -9,13 +9,13 @@
     {
       "tag": "git",
       "name": "Git",
-      "desc": "Why you MUST use git as a programmer so learn how to use it.",
+      "desc": "Git is the most famous version control tool, and as a programmer, you must learn it.",
       "icon": "<i class=\"bi bi-github\"></i>"
     },
     {
       "tag": "jetbrains",
       "name": "Jetbrains",
-      "desc": "Make your programming life easier by coding on powerful preconfigured IDEs.",
+      "desc": "Make your programming life easier by coding inside powerful preconfigured IDEs.",
       "icon": "<i class=\"bi bi-battery-charging\"></i>"
     },
     {
@@ -33,7 +33,7 @@
     {
       "tag": "rst",
       "name": "RST",
-      "desc": "A language to write documentations outside your code with a lot of powerful tools such as generating UML, graphs ... The syntax is like an upgraded Markdown.",
+      "desc": "A language to write documentations outside your code with a lot of powerful tools such as generating UML, graphs ... The syntax is like an improved version of Markdown.",
       "icon": "<i class=\"bi bi-box\"></i>"
     },
     {
@@ -45,7 +45,7 @@
     {
       "tag": "doxygen",
       "name": "Doxygen",
-      "desc": "Write a standardized documentation in all your project, that can generate a website like the Javadoc using Doxygen",
+      "desc": "Write standardized documentation in all your project. You can generate a website with the Javadoc in Java.",
       "icon": "<i class=\"bi bi-newspaper\"></i>"
     },
     {
