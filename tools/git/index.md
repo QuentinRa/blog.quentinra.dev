@@ -8,11 +8,14 @@
 
 This course will strongly refer
 to [Github](https://github.com/)
-but that doesn't mean that it is the only one
-to offer this service, please also check
+but you may also check
 
-* [GitLab](https://about.gitlab.com/), alternative to Github
+* [GitLab](https://about.gitlab.com/), the most well-know alternative to Github
 * [Gogs](https://gogs.io/), open-source, self-hosted
+
+As a student, you may enjoy the benefits
+of the 
+[GitHub student pack](https://education.github.com/pack).
 
 <hr class="sr">
 
@@ -64,7 +67,7 @@ git status
 git add .
 git commit -m "I worked a lot"
 # then send your changes to the server
-# or not and repeat add/commit
+# (or not and repeat add/commit)
 git push
 ```
 
@@ -84,8 +87,8 @@ So let's now explain what's a branch. By default, you are
 coding on a branch called ``master`` (or sometimes `main`).
 
 You may want to create a copy of your project, modify it
-then merge your modification into your original code
-or just drop it since that's was a mistake for example.
+then merge your changes into your original code
+(or just drop it since you changed your mind).
 
 That's what we can do with ``branch`` and `merge`.
 Simply create a branch, move on it, code, then ``merge``
@@ -105,8 +108,7 @@ it into ``master`` or just destroy it.
 
 **Atomic commits**: one commit means one change, such
 as adding one functionality. Do not make hundreds of changes
-making it hard to find when to commit, then the change,
-that ruined your project is.
+making it hard to find what you did in a commit.
 
 **Short-Long description**: you can, and should make
 a short and a long description of your commits
@@ -125,13 +127,13 @@ the start of a great adventure.
 
 **LICENSE**: you may also put a LICENSE even if you don't
 want to put restrictions on your code, to protect yourself
-from complaints (MIT LICENSE
+from complains (MIT LICENSE
 is good for that). You should check
 [this link](https://choosealicense.com/).
 
 **.gitignore**: you may not want to commit some files
 like high-churn ones or big files... Create a file
-called is a good practice, you can
+called "gitignore" is a good practice, you can
 
 * generate one [here](https://www.toptal.com/developers/gitignore).
 * use a template [here](https://github.com/github/gitignore)
@@ -140,15 +142,15 @@ called is a good practice, you can
 
 ## Advanced Github concepts
 
-Here are some functionalities that you may find
-on other git-server.
+Here are some functionalities
+that you can find on Github (but you may find them too somewhere else).
 
-* [Wikis](tools/wiki.md)
-* [Actions](tools/actions.md)
-* [PullRequests](tools/pull-requests.md)
-* [Issues](tools/issues.md)
-* [Organizations](tools/organizations.md)
-* [Pages](tools/pages.md)
+* [Wikis](github/wiki.md)
+* [Actions](github/actions.md)
+* [PullRequests](github/pull-requests.md)
+* [Issues](github/issues.md)
+* [Organizations](github/organizations.md)
+* [Pages](github/pages.md)
 
 <hr class="sl">
 
@@ -201,9 +203,9 @@ They are loaded with the latest value like the real license
 here so devs add them into a README to help others
 to easily a lot about their repository.
 
-* [shields.io](https://shields.io/) : a lot of badges,
+* [shields.io](https://shields.io/): a lot of badges,
   you can even create yours
-* [badgen.net](https://badgen.net/) : follows the steps
+* [badgen.net](https://badgen.net/): follows the steps
 and get some badges
 
 You can check websites like these for reviews of your

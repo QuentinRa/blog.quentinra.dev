@@ -2,8 +2,8 @@
 
 [Go back](../index.md#basic-usage)
 
-You can use this one to send to the server
-your local project
+You can use this command to send to the server
+your commits
 
 ```bash
 git push

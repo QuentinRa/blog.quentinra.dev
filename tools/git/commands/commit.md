@@ -2,8 +2,9 @@
 
 [Go back](../index.md#basic-usage)
 
-Use this one to commit all added files. 
-To add files that will be in the commit, use
+To make a save (commit), you first need to add the files
+that will be included in the commit. If a file didn't change
+since the last commit, you don't have to add it again.
 
 ```bash
 # all files from the current folder
@@ -14,10 +15,9 @@ git add file
 git add folder
 ```
 
-Then, and only then you can call for commit. Commit will
-add to the save only modified files that got already
-added once or a new file that you added just now.
+Then, you can commit, with a message
+summarizing your changes.
 
 ```bash
-git commit -m "commit_message"
+git commit -m "commit message"
 ```
