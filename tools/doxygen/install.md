@@ -1,7 +1,9 @@
+## Install doxygen
+
 [Go back](index.md)
 
 Tutorial for windows but the idea
-should be the same for any OS
+should be almost the same for any OS.
 
 * download the app [here](https://sourceforge.net/projects/doxygen/files/rel-1.9.1/)
 * install it

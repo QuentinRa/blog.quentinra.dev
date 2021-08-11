@@ -1,7 +1,7 @@
 # Introduction
 
 We are writing $A_{n,p}$ a matrix of $n$ lines and $p$ columns.
-The value at the $i$nth line and the $j$nth column is
+The value at the $i$-nth line and the $j$-nth column is
 written $a_{ij}=a_{i,j}$. The coefficients are starting from 1.
 
 <div class="overflow-auto">

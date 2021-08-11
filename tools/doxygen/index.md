@@ -21,7 +21,7 @@ know what I mean to
 * use a command to generates a website
 * open a file called ``index.html``
 in your browser and check it out!
-  
+
 Here some [installation tutorial](install.md)
 or if **needed** you can check their documentation
 here [doxygen.nl](https://www.doxygen.nl/index.html)
