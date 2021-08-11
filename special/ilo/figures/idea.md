@@ -13,23 +13,25 @@ IntelliJ [here](../../../tools/jetbrains/index.md).
 
 ## easy setup
 
-Remove the class `RunAllTests.java`
-since you won't need it and it makes things hard
-but it's a useless class since we will run tests
-using IDEA and not some java.
+Remove the file `RunAllTests.java`
+since you won't need it and it makes things hard.
+It's an useless class because we will run our tests
+using Intellij and not some java class.
 
 <hr class="sr">
 
-## real setup (2 minutes but tiring)
+## real setup
 
-Or do this but that's a waste of time
+That's a waste of time but well...
 
 * open ``Project Structure`` (CTRL+ALT+MAJ+S)
-* then libraries
-* then click on add from maven
-* import all theses
+* go to libraries
+* then click on "add" or "+" then "from maven"
+* and one by one, add these
     * ``org.junit.platform:junit-platform-suite-api:1.7.0``
     * ``org.junit.jupiter:junit-jupiter-engine:5.7.0``
     * ``org.junit.platform:junit-platform-launcher:1.7.0``
     * ``org.junit.vintage:junit-vintage-engine:5.7.0``
     * ``org.junit.platform:junit-platform-runner:1.7.0``
+
+Of course, you can change the version.

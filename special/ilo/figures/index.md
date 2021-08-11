@@ -2,18 +2,20 @@
 
 [Go back](..)
 
-This tutorial is about using other IDE (basically
-a software like eclipse) than eclipse, because if you do
-things will go way smoother.
+First, and foremost: **DO NOT USE ECLIPSE**. You
+can if you want, but you may leave now. The best
+choice would be to use VSCode. Any other IDE helping
+more than eclipse vanilla is welcome.
 
 <hr class="sr">
 
 ## Introduction
 
-The main IDEA is to practice test-driven, 
-
-* you can some test classes
-* you need to code your classes to pass the tests
+This is an example of what we call "test-driven". You
+will first write some code, to test the code
+that you will write later. Fortunately, the
+tests got already written for us, so we <s>only</s>
+have to write the code passing the tests.
 
 That's one hell of a job because there are too many comments,
 and sometimes you don't know exactly what you need to do
@@ -26,7 +28,8 @@ but do it step by step and you will see that's easy
 
 It will help you understand a lot of your mistakes, 
 especially if you use ``IntelliJ`` that is good at finding
-potential mistakes and providing a patch.
+potential mistakes and providing a patch for it but
+for this TP, VSCode is better.
 
 **VSCode**
 
@@ -35,8 +38,8 @@ simply open it and that's okay.
 
 **IntelliJ**
 
-Do not use IntelliJ for this TP (IntelliJ is only good
-for projects not "test-driven development" like this),
+Do not use IntelliJ for this TP (IntelliJ is good
+for projects, not test-driven like this),
 trying VSCode for this one would be better. Then switch or
 try IntelliJ for others. 
 But just in case, [here is your tutorial](idea.md).
@@ -63,34 +66,44 @@ public class Test {
 
     public Test(String s, int n){
         // some code
-        // note that String.valueOf is useless since Java do it himself
+        // note that String.valueOf is useless
+        // to convert an int to a String
+        // since Java do it himself
         this.result = s+String.valueOf(n);
+        // same as
+        this.result = s+n;
     }
 
-    // copy
+    // "copy" constructor
     public Test(Test t){ this.result = t.result; }
-
 }
 ```
 </blockquote>
 
-``What's static``
+``What's static?``
 
 <blockquote class="spoiler">
+
 That's simply an attribute (or a method) that is owned by the class.
-The attribute has the same value of each instance (each Point for a class
-Point for instance). <b>Some methods will be static</b> so make sure that you don't
+The attribute has the same value in each instance 
+(=each Point for a class Point).
+<b>Some methods will be static</b> so make sure that you don't
 forget the keyword. You will know when a method is 
 likely to be static when you are not using
-instance's attributes inside.
+the instance's attributes inside.
+
+To call a static method, use the name of the class
+instead of this/an object. For instance, you
+can call ``Math.round(4.5)``, the static method `round`
+from the class `Math`.
 </blockquote>
 
-``equals ? hashcode ? and ==``
+``What are equals? hashcode? and "=="?``
 
 <blockquote class="spoiler">
 When using ==, you are comparing addresses. For String, ... and
 Object in general we are using equals. By default equals
-if doing a == but each class can rewrite (namely override)
+is the same as doing a == but each class can rewrite (namely override)
 this default behavior.
 
 ```java
@@ -98,9 +111,10 @@ this default behavior.
 public boolean equals(Object o) {
     if (o == null) return false;
     if (this == o) return true;
-    // is a Point2D ? note that this also return
-    // false if o == null but do like Roussel
-    // want you to do
+    // is "o" a Point2D? 
+    // note that "instanceof"
+    // returns false if o == null (so this check was useless)
+    // but do like Mr. Roussel want you to do
     if (!(o instanceof Point2D)) return false;
     // cast
     Point2D point2D = (Point2D) o;
@@ -108,9 +122,9 @@ public boolean equals(Object o) {
 }
 ```
 
-Here we are check if an object is a Point 2D. If that's
+Here we are checking if an object is a Point 2D. If that's
 the case then we are testing equality but this time
-this one ``equals(Point2D p)``.
+with ``equals(Point2D p)`` (instead of `equals(Object o)`).
 
 Note that in java >= 14 you can do that
 
@@ -119,7 +133,7 @@ Note that in java >= 14 you can do that
 public boolean equals(Object o) {
     if (o == null) return false;
     if (this == o) return true;
-    // p declare in if
+    // p declared in the if
     if (o instanceof Point2D p) return this.equals(p);
 	return false;
 }
