@@ -2,14 +2,14 @@
 
 [Go back](..#most-used-instructions)
 
-Called if this image is used by another
+Called if this image is used by another one
 in a FROM. The syntax is
 
 ```dockerfile
-ONBUILD INSTRUCTION ARGUMENT
+ONBUILD instruction arg
 ```
 
 with
 
-* ``INSTRUCTION``: a command
-* ``ARGUMENT``: a command argument
+* ``instruction``: a command
+* ``arg``: a command argument

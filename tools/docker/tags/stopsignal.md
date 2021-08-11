@@ -2,9 +2,9 @@
 
 [Go back](..#most-used-instructions)
 
-When you make ``CTRL-C`` you send
-a signal to docker to die, the code is 9. 
-You can change that here.
+When you press ``CTRL-C``, you send
+a signal "die" to docker, the signal code for ``CTRL-C`` is 9. 
+You can change the code that will trigger "die" here.
 
 ```dockerfile
 STOPSIGNAL code

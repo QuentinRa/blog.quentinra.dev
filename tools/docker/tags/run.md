@@ -23,6 +23,6 @@ language.
 # install a package called locales
 RUN apt-get clean && apt-get update && \
     apt-get install -y locales
-# run make command, if installed of course
+# run make command, if make is installed of course
 RUN make
 ```
