@@ -6,24 +6,31 @@ create a Docker image.
 Then any machine that has `docker` can run your image, 
 meaning your application can be run everywhere.
 
-A virtual machine allows someone to have a Linux desktop
-on Windows, for instance, so one can start a Linux-only 
-application in Windows.
-But a virtual machine may be too much to install, 
-so ``docker`` is a mix between those. 
-It will use your current machine so your system file, RAM, CPU ... 
+A virtual machine allows someone to have a Linux (or ...) desktop
+on Windows. Once installed, one can start a Linux-only 
+application on Windows.
+But a virtual machine may be too much according
+to what you want, and that's where ``docker`` come in handy. 
+It will use your current machine file system,
+your RAM, your CPU ... 
 to run a container that can have 
-Windows, Linux, ... system running in it.
+Windows, Linux, or any other-system running on it.
 
 But a ``docker`` image doesn't have a memory so each time
 you start a `container` (=run your application),
-**it will restart from scratch**.
+**it will restart from scratch** (unless you are using
+an external storage).
 
-Also, a downside a ``docker``, that I found was that
-it was quite hard and impossible for me to use some 
+A downside a ``docker``, that I found was that
+it was hard and impossible for me to use some 
 system-specific devices such as 
 sound (<span class="text-muted small">at least in Windows
 but in Linux or macOS it seems to be possible</span>).
+
+> If you want to use Linux on Windows, install
+> a WSL (Windows subsystem). For instance, 
+> you can open the Windows store, 
+> enter "debian" and install it.
 
 <hr class="sl">
 
@@ -33,11 +40,11 @@ Firstly, read the official documentation, it might help more.
 Here is the [install page](https://docs.docker.com/engine/install/).
 
 * check if installed with ``docker -v``
-* on windows
+* on Windows
   * install [Docker desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
   * you need to restart it each time your want to use ``docker`` commands
-  * when the application is started, confirmation messages should be shown
-  then you can use ``docker`` commands
+  * when the application is started, messages should be shown
+  telling you that you can use ``docker`` commands
 
 <hr class="sr">
 
@@ -48,21 +55,21 @@ Here is the [install page](https://docs.docker.com/engine/install/).
 the ``DockerFile`` in the current folder
 * ``docker build -t tag:version .`` : specify tag version
 when building
-* ``docker run -it tag`` : run `tag` image in interactive mode, for instance
-a bash were you can input commands is interactive
+* ``docker run -it tag`` : run `tag` image in interactive mode,
+for instance, a bash where you can input commands is interactive
 * ``docker run tag`` : run `tag`
 
 You can find images here [https://hub.docker.com/](https://hub.docker.com/)
-that you can use as a base for your application, for example, there is
-an image called ``gcc`` if you need a system configured and with `gcc`
-available.
+that you can use as a base for your application.
+As an example, there is an image called ``gcc`` 
+if you need a system configured and with `gcc` available.
 
 Other commands that one might use
 
 * ``docker ps``: list of running containers with their ID
-* ``docker rm id``: end of running container
-* ``docker run -p ps:pm tag``: start image and bind port
-of your container ``ps`` with one of your machine ports `pm`.
+* ``docker rm id``: end a running container having the ID "id"
+* ``docker run -p ps:pm tag``: start image and bind a port
+of your container ``ps`` with your machine port `pm`.
 
 <hr class="sl">
 
@@ -79,7 +86,7 @@ WORKDIR path
 
 RUN commande # exécute une commande
 RUN commande_part_1 \
-# si the the second part of the line above
+# the second part of the line above
 commande_part_2
 
 # add files to container file system
@@ -99,8 +106,9 @@ So try to make it like that
 * instruction in uppercase, followed by their arguments
 * you can split a long line with ``\ ``.
 * the first line is a ``FROM`` with the image we use as a source,
-that you may have to download if you don't have it (the `docker pull tag`
-done automatically if you didn't)
+that you may have to download if you don't have it 
+  * the `docker pull tag` command
+  * done automatically when running if you didn't
 
 <hr class="sr">
 
@@ -167,7 +175,7 @@ directory/
 ## Real docker example 
 
 From [hub.docker.com](https://hub.docker.com),
-a bit modified (version 4.9 => 8.4) and adding comments.
+a bit modified (version 4.9 => 8.4) and I added comments.
 
 ```dockerfile
 # image is gcc in version 8.4
