@@ -2,7 +2,7 @@
 
 IDEs are used to make your life easier. You may do well
 using text editors like vim, emacs, sublime text, but
-I'm sure some would more (auto-completion, code hints,
+you may want more (auto-completion, code hints,
 auto-import, syntax errors hints without needing
 to recompile the project etc.).
 
@@ -25,7 +25,7 @@ The IDEs are free for
 [students](https://www.jetbrains.com/shop/eform/students)
 (you may apply for **Github Student Pack** too
 [here](https://education.github.com/pack#offers)).
-You can download all their idea using the
+You can download all their IDEs using the
 [toolbox](https://www.jetbrains.com/toolbox-app/).
 
 **Note**: this course was made before the major releases
@@ -41,11 +41,10 @@ You can download all their idea using the
 
 ## What you can expect (or not) from their IDEs
 
-* Import size/ram consumption
+* Important size/ram consumption
 
-There are many IDE so that's a lot of space
-(3 of them size around 10Go, around 700Mo per download)
-and the RAM consumption
+You may install many IDEs, 3 of them are taking around 10Gb
+and around 700Mb per download. The RAM consumption
 is somewhat important (sometimes could take 1Go~2Go). If you do
 not have a good computer, you may use **Projector**, which
 allow you to use a remote IDE
@@ -58,24 +57,24 @@ while your slow computer will be "the client")
 
 * auto-install
 
-Installing Java, JavaFX, etc. is simplified and could
+The installation of Java, JavaFX, etc. is simplified and could
 be directly done inside the IDE (in like one or two clicks).
 You can easily install and update dependencies
 (and you got head-ups when they are not up-to-date).
 
 * consistency
 
-Their IDE are using the same interface, almost the
-same shortcuts (sometimes they are changing like in Rider),
+Their IDE are using the same interface, almost always the
+same shortcuts,
 and in all of them, you got the "CodeWithMe" feature
 (allowing you to invite a friend on your computer
 to code with you).
 
 * random features
-  * the code hints/advice <span class="tms">(
+  * **the code hints/advice** <span class="tms">(
   that's the **only** reason
-  why I would recommend their IDEs over VSCode/...
-  because their hints are quite good and better
+  why I would recommend their IDEs:
+  their hints are quite good and better
   than in VSCode for instance)</span>
   * git integration and colors for files
   * generating UML from your code
@@ -163,10 +162,8 @@ Using the basic configuration, you will have to use
 ``CMake`` to compile but `Makefile` are supported if you
 manage to 
 <span class="tms">
-(edit 2021.2: it seems not it's quite easier
-to use Makefiles)
-</span>
-.
+(edit 2021.2: it seems quite easier
+to use Makefiles now)</span>.
 
 * [Starting with CMake](clion/cmake.md)
 * [Set compiler](clion/compiler.md)
