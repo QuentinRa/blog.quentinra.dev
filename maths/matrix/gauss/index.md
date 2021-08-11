@@ -19,6 +19,12 @@ The operations you can make are
 * Adding a row, multiplied by $c$: $L_i \leftarrow L_i + cL_j$
 * Subtracting a row: $L_i \leftarrow L_i + -1 * L_j$
 * Dividing a row by $c$: $L_i \leftarrow L_i + \frac{1}{c} * L_j$
+* Multiply a row by $c$: $L_i \leftarrow c * L_i$
+
+And to summarize, you can
+
+* Swapping two rows: $L_i \iff L_j$
+* Use this formula: $L_i \leftarrow a * L_i + b * L_j$
 
 To summarize, what you will have to do is to use the operation
 above, and extract a pivot for each line, while making
