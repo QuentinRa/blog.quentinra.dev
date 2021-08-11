@@ -88,9 +88,9 @@ That's simply an attribute (or a method) that is owned by the class.
 The attribute has the same value in each instance 
 (=each Point for a class Point).
 <b>Some methods will be static</b> so make sure that you don't
-forget the keyword. You will know when a method is 
-likely to be static when you are not using
-the instance's attributes inside.
+forget the keyword.
+You will know when a method is likely to be static
+when you are not using the instance's attributes inside.
 
 To call a static method, use the name of the class
 instead of this/an object. For instance, you

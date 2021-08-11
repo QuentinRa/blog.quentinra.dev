@@ -15,7 +15,7 @@ IntelliJ [here](../../../tools/jetbrains/index.md).
 
 Remove the file `RunAllTests.java`
 since you won't need it and it makes things hard.
-It's an useless class because we will run our tests
+It's a useless class because we will run our tests
 using Intellij and not some java class.
 
 <hr class="sr">
