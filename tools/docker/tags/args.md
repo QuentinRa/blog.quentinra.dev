@@ -20,8 +20,6 @@ with
 ## Example
 
 ```dockerfile
-# latest is the default value
-# but just for the example
 ARG CODE_VERSION=latest
 FROM base:${CODE_VERSION}
 # if you want to use it inside

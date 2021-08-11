@@ -3,7 +3,7 @@
 [Go back](..#most-used-instructions)
 
 Entrypoint is an alternative to CMD
-or it seems but you can pass arguments
+or it seems. You can pass arguments
 from the command line to your docker
 image using it so you might like it.
 The syntax is

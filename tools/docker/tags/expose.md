@@ -16,7 +16,7 @@ EXPOSE port/protocol
 with
 
 * ``port`` : a port such as 80 for HTTP
-* ``protocole`` : a protocol such as tcp, udp
+* ``protocol`` : a protocol such as tcp, udp
 
 <hr class="sl">
 

@@ -2,7 +2,7 @@
 
 [Go back](..#most-used-instructions)
 
-Set environment variable
+You can use ENV to set environment variables
 
 ```dockerfile
 ENV NAME VALUE
