@@ -21,15 +21,17 @@ Here are some of my troughs before starting
 * I think your code should be enough **documented**
   so that the programmer doesn't take hours trying
   to understand what you tried to do, and not too much
-  otherwise, they may not read it.
+  otherwise, they may not read it (TL;DR focus on
+  readability and do not write useless stuff like
+  "@param i, an int" for the parameter "int i"...)
 * you shouldn't copy-paste code from another part
   of your code
 * you should use frameworks or other programmer works
-  (if they are still maintained) rather than rewriting
+  (_if they are still maintained_) rather than rewriting
   everything from scratch and increase
     * your workload
     * the complexity of your code
-    * the workload of the futures maintainers
+    * the workload of the next maintainers
 * give relevant names to your functions/variables
   (only when that's useful like ``i`` is better than
   ``index`` if ``i`` is a simple index) and declare
@@ -125,7 +127,7 @@ Still, here are some of their ideas, mixed with others
 #include <stdio.h>
 
 // not a&&b but a && b
-if ( a && b ) { // on the same line, space after if
+if ( a && b ) { // "{" on the same line, space after the "if"
 }
 
 // for a function
@@ -148,10 +150,10 @@ alt="meme" width="500"/>
 
 ## best practices (Github lookup summary)
 
-After my discovery of this [repository](https://github.com/trekhleb/state-of-the-art-shitcode)
+After discovering this [repository](https://github.com/trekhleb/state-of-the-art-shitcode)
 which is quite good for explaining what you mustn't do,
 I looked on Github "best-practices repository",
-here is a summary of the repository above and many more.
+here is a summary of the repository above and many others.
 
 <table class="table table-bordered table-striped table-dark">
 <thead>
@@ -166,8 +168,7 @@ here is a summary of the repository above and many more.
 <tr>
 <td>use a proper variable name</td>
 <td>log errors</td>
-<td>add a README file and
-a LICENSE file (even if it's MIT).</td>
+<td>add a README file</td>
 </tr>
 <!-- 2 -->
 <tr>
@@ -179,33 +180,33 @@ unless it's intended <span class="tms">
 may be used for function's names in C)
 </span>
 </td>
-<td>keep unused code/variables (like "for later")</td>
-<td></td>
+<td>remove unused code/variables (NO "for later")</td>
+<td>add a LICENSE file (even if it's MIT).</td>
 </tr>
 <!-- 3 -->
 <tr>
 <td> do not mix formatting
 
-* if you can use " or ', pick one
-* if you are adding a ; at the end of the line, do it everywhere)
+* if you can use ``"`` or ``'``: pick one!
+* if you are adding a ``;`` at the end of the line, do it everywhere
 * same indents for the whole file
 * ...
 
-To summarize, you should `set up a style guide`
+To summarize, you should `define guidelines`
 before starting.
 </td>
 <td>
 
 If you ever created a function dealing with
-more than one thing then you should
-`split the function`.
+more than one task then you should
+`split it`.
 </td>
 <td></td>
 </tr>
 <!-- 4 -->
 <tr>
 <td>split a long line on multiples lines</td>
-<td>Do not make a if directly inside another if,
+<td>Do not make a "if" directly inside another "if",
 try merging conditions.</td>
 <td></td>
 </tr>
