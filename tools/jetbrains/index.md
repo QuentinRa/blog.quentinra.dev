@@ -64,7 +64,7 @@ You can easily install and update dependencies
 
 * consistency
 
-Their IDE are using the same interface, almost always the
+Their IDEs are using the same interface, almost always the
 same shortcuts,
 and in all of them, you got the "CodeWithMe" feature
 (allowing you to invite a friend on your computer
@@ -159,7 +159,7 @@ Like PhpStorm, you can use a remote compiler to compile your code
 or use a local one.
 
 Using the basic configuration, you will have to use
-``CMake`` to compile but `Makefile` are supported if you
+``CMake`` to compile but `Makefile` is supported if you
 manage to 
 <span class="tms">
 (edit 2021.2: it seems quite easier

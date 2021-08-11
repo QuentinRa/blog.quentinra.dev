@@ -15,37 +15,41 @@ Then open the project in your favorite
 IDE, 
 
 * VSCode 
-* IntelliJ. It might be a good one to try it out
-  * only add the folder ``tests`` after you finished coding
+* IntelliJ. It might be a good idea to try it out now
+  * only add the folder ``tests`` **after** you finished coding
     (it won't compile otherwise)
   * remove ``RunAllTests.java`` unless you want to do the same 2-minutes tutorial
   like in the previous TP (check it out for
   the setup if you do)
 * ...
-  
+
 <hr class="sr">
 
 # Some tips
 
-It's all about iterators. You got an iterator
-of an object of type ``E`` using `iterator()`
-method. Then use either of ``for`` (each)
-or a ``while`` to iterate the content.
+An iterator is something that we can use to
+iterate the content of a collection of data.
+It will be explained a bit later, but basically
 
-**PLEASE** do not forget this: you are looping
-on ``hasNext`` to check if you can call next, so
+* an Iterable is a class having the method `iterator()`
+* `iterator()` is returning when iterated an element of type `E`
+* use either of ``for`` (each) or a ``while`` to iterate the content.
+* an iterator got the method ``hasNext`` and `next`
+* ``hasNext()`` returns true if we got more elements to read
+* ``next()``: return an element and avance the cursor
+
+**PLEASE** do not forget this: if you are iterating
+using while and ``hasNext``,
 don't forget to call ``next()`` to advance
 the cursor otherwise ``hasNext`` will return
-the same result until ``next`` is called. `next`
-return the current element, of type ``E``. See a
-bit further the example with ``ArrayList``.
+the same result until ``next`` is called.
 
 ```java
 default void clear() {
     Iterator<E> iterator = this.iterator();
     while (iterator.hasNext()) { // example with while!
         // next return an element but we don't care here
-        iterator.next(); // advance (do not forget!!!)
+        iterator.next(); // DO NOT forget!!!
         iterator.remove(); // remove
     }
 }
@@ -55,7 +59,7 @@ default void clear() {
 means the list is empty.
 
 We will be using genericity a lot, the `<E>`
-after the class name and inside the for, the
+after the class name, and inside the for, the
 type of each element is `E`.
 
 ```java
@@ -72,12 +76,13 @@ public ForwardList(ForwardList<E> liste) {
 }
 ```
 
-Note this foreach ``for (Type variable_name : iterable)``
-syntax. You will use around the same as this one (and maybe
-this one) a lot in the TP. Here ``E`` is the type since
-our iterable (a class extending Iterable like our Arrays
-or all Collections) ``ForwardList<E>``
-is declared as a ``ForwardList`` for elements of type
+Memorize this foreach ``for (Type variable_name : iterable)``
+syntax. You will use almost the same as this one (and maybe
+this one) a lot in the TP. Here ``E`` is the type of
+an element since
+our iterable (a class extending Iterable like an array
+or a collection) ``ForwardList<E>``
+is declared as a ``ForwardList`` using elements of type
 ``E``.
 
 An example would be this one for an ArrayList.

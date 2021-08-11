@@ -27,7 +27,7 @@ I highly recommend using **IntelliJ** (easy to learn) for this one,
 since that's maybe your first time with JavaFX and
 IntelliJ has great support for JavaFX. You can solve
 in less than 30 seconds problems like
-``Can't load FXML``.
+``Can't load FXML`` (no joke).
 
 * [Eclipse Setup](ide/eclipse.md)
 * [IntelliJ IDEA Setup](ide/idea.md)
@@ -40,7 +40,7 @@ in less than 30 seconds problems like
 ``Graphics pipeline error``
 
 <blockquote class="spoiler">
-That simply means that the one compiling didn't found the OS-specific files for JavaFX. Check that in your lib folder or JavaFX folder
+That simply means that the one compiling didn't find the OS-specific files for JavaFX. Check that in your lib folder or JavaFX folder
 that you got some jar like <code>javafx-base-16-win</code>
 on Windows.
 </blockquote>
@@ -67,8 +67,10 @@ class)
 </li>
 </ul>
 
-If you see a long, weird, path for your fxml, don't go check out this file,
-that's just your IDE who is creating a copy. If the path is wrong then you will
+If you see a long, weird, path for your fxml, 
+don't go check out this file,
+that's just your IDE which is creating a copy. 
+If the path is wrong, then you will
 get a NullPointerException since getResource will fail.
 </blockquote>
 
@@ -87,9 +89,10 @@ Comment this
 ``Controller is null``
 
 <blockquote class="spoiler">
-Hum you probably removed from your fxml your controller.
-Check out the first line of your FXML for <code>fx:controller="application.Controller"</code>.
-Should look a bit like this (this is a raw file)
+You probably removed (or missing) a line from your fxml your controller.
+Check out the first line of your FXML for 
+<code>fx:controller="application.Controller"</code>.
+It should look a bit like this (this is a raw file)
 <pre class="language-xml"><code class="language-xml"
 >&lt;BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16"
 xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller" &gt;
@@ -100,8 +103,11 @@ xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller" &gt;
 ``address/host/port already in use``
 
 <blockquote class="spoiler">
-Seems like a server or another program is already using this port. Either found the program and shut it down or pass
-the program argument <code>--port a_new_port</code>. Be sure that both your server and client have the same value.
+Seems like a server or another program
+is already using this port. 
+Either find the program and shut it down, or pass
+the program argument <code>--port a_new_port</code>. 
+Be sure that both your server and client have the same value.
 </blockquote>
 
 <hr class="sr">
@@ -129,7 +135,7 @@ some components like a vbox (one component per line), hbox (one per column), too
 
 ### Icons
 
-Simply drag and drop the icons from your icons folder to the application. Buttons
+Simply drag and drop the icons from your icons' folder to the application. Buttons
 can have a text + icon (+ tooltip =
 a component with text shown when mouse stay on this button a.k.a. hover) but by 
 default, we only want to see the icon
@@ -147,10 +153,11 @@ HBox then goes to the fxml and adds the attribute ``HBox.hgrow="ALWAYS"``.
 
 ### ID and Listeners
 
-Sometimes you will give IDs to some components. That means you need it in
+Sometimes you will give IDs to some components. 
+That means you need it in
 the ``Controller.java``, check the attributes
-with ``@FXML`` to know the type/attributes requiring an ID. On IntelliJ, 
-if a @FXML attribute is linked then you will have
+with ``@FXML`` to know the type/attributes requiring an ID. 
+On IntelliJ, if a @FXML attribute is linked then you will have
 some orange visual symbol on the left column so you easily know if you did 
 something wrong.
 
@@ -162,9 +169,12 @@ when a button is clicked/pressed if you didn't know.
 
 ### Context Menu
 
-It's a popup shown when using left-click. You must add one on the list view of users. But on Windows your scene builder
-may crash so you need to create the menu somewhere else then copy and paste the code inside your context menu directly
-in the fxml.
+It's a popup shown when using left-click. 
+You must add one on the list view of users.
+But on Windows, your scene builder may crash,
+so you need to create the menu somewhere else
+then copy and paste the code inside 
+your context menu directly in the fxml.
 
 ### Tooltip
 
@@ -185,7 +195,7 @@ If you can't add tooltips, check it looks like that
 
 ## Starting
 
-In Main.java, de-comment the code and don't forget this easy todo.
+In Main.java, uncomment the code and don't forget this easy todo.
 All the values are given for the setters and the getter is done for you.
 
 ```java
@@ -229,14 +239,14 @@ Easy
 Medium
 
 - [ ] `onClearMessagesAction` (=> ClearMessagesRunnable)
-- [ ] `onClearSelectedUsers` (need you user list to have the user view shown)
-- [ ] `onKickSelectedUsers` (need you user list to have the user view shown)
+- [ ] `onClearSelectedUsers` (need your user list to have the user view shown)
+- [ ] `onKickSelectedUsers` (need your user list to have the user view shown)
 - [ ] `onShowDateOnMessages` (if message cell is done)
 
 Medium / Hard
 
 - [ ] `onFilterMessagesAction`
-- [ ] `onUpdate` (may be tricky but read the subject, a lot is given)
+- [ ] `onUpdate` (this may be tricky but read the subject, a lot is given)
 
 Hard
 
