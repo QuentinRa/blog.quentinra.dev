@@ -69,17 +69,19 @@ or the section PHPStorm in
 
 * try making a mock-up of your website, like drawing
 your website pages
-  * you may use a tool like in the [HMI course](../../proj/hmi/index.md)
+
+  * you may use tools introduced in the [HMI course](../../proj/hmi/index.md)
     (no need for something beautiful)
 
   * write how you move from a page to another
     (data submitted? what kind of data? click? on what? etc.)
-  * this will help to organize your work and writing
-    your specifications
 
-* you should do some tests, this is quite easy to do.
+  * this will help you organize your work, and writing
+    your specifications.
+
+* you should write some tests, this is quite easy to do.
   You should use them to test your code, like testing your
-  login method with all sorts of input (field missing,
+  login method with all sorts of inputs (field missing,
   invalid input, too long/short, wrong type, ...)
 
 * use MVC. You will learn faster if you're splitting your 

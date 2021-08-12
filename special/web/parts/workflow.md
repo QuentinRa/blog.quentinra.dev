@@ -1,10 +1,10 @@
-# workflow
+# Workflow
 
 [Go back](..)
 
-## Simple HTML/CSS/JS Only project
+## Simple HTML-CSS-JS-only project
 
-If you are making a simple HTML/CSS/JS project, then
+If you are making an HTML-CSS-JS-only project, then
 the usual workflow is
 
 ```bash
@@ -34,8 +34,8 @@ simple_html_project/
 
 I created a simple PHP template
 [here](https://github.com/memorize-code/web-project-template).
-To use it efficiently, you should check out the Jetbrains course and
-PHPStorm course. 
+To use it efficiently, you should check out the JetBrains
+course and PHPStorm course. 
 
 * MVC
 * Databases (example of simple/prepared request, PDO)
@@ -43,13 +43,13 @@ PHPStorm course.
 * composer file (if needed)
 * translations
 * tests
-* framework-like <span class="tms">(simplified version inspired of CodeIgniter)</span>
+* framework-like <span class="tms">(simplified version, inspired of CodeIgniter)</span>
 
 **2018/2019 template**
 
 This template was used in 2019-2020 by a lot of
-students [here](https://github.com/Kirouane/ensiie-project).
-It's easy to use but the MVC isn't set in place and
+students. [The Kirouane template is here](https://github.com/Kirouane/ensiie-project).
+It's easy to use but, the MVC isn't set in place and
 composer/docker knowledge are required (easy to learn).
 
 * Docker
@@ -59,7 +59,7 @@ composer/docker knowledge are required (easy to learn).
 
 **TP template**
 
-You may also use the **tp2** as a template, that's worked
-for a lot of students but be **great** and don't do
-that okay? The template is
-[here](https://github.com/memorize-code/memorize-references/raw/main/special/web/template-tp.zip).
+You may also use the **tp2** as a template, that's what
+a lot of students did, but be **great and don't do
+that**. Okay? Anyway,
+[the template is here](https://github.com/memorize-code/memorize-references/raw/main/special/web/template-tp.zip).
