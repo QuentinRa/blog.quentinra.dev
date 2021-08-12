@@ -3,7 +3,7 @@
 [Go back](../index.md)
 
 There are two ways, one in two clicks and a longer one. The two click installation
-won't install an external SceneBuilder and the problem of that is 
+won't install an external SceneBuilder:
 
 * you won't be able to look for components (using a search bar)
 * there is no code menu
@@ -35,7 +35,7 @@ Use the official tutorial if you are lost, the screenshots are pretty useful
     and 
       * write ``org.openjfx:javafx-fxml:16``
       * select ``download to`` and put it in a **lib** folder at the root of the
-    project (should be the default path anyways)
+    project (it should be the default path anyway)
 
 JavaFX is now installed, now let's install ``SceneBuilder``.
 
@@ -45,11 +45,11 @@ JavaFX is now installed, now let's install ``SceneBuilder``.
 * type ``JavaFX``, then in ``Language and Frameworks`` put the path to
 your SceneBuilder executable.
   
-You can now make the view but let's make a configuration to run our **Main**.
+You can now make the view, but let's make a configuration to run our **Main**.
 
-* go in Main.java, and try to start it : you got an error
+* go to Main.java, and try to start it: you will get an error
 * go to ``Edit Configurations`` ![idea](idea.png)
-* type ``ALT-V`` to show VM options input field
+* press ``ALT-V`` to show VM options input field
 * and write ``--module-path lib --add-modules javafx.controls,javafx.fxml``
 
 **ALSO while you are here**, set program 
@@ -69,6 +69,6 @@ and paste a configuration (in the edit configuration
 menu) and change the name.
 
 If you need to run the server, I put everything in the same
-folder so I used IntelliJ import-module function and that was it.
+folder, and you may do that using IntelliJ import-module functionality.
 
 ![module](module.png)

@@ -2,9 +2,9 @@
 
 [Go back](../index.md)
 
-Check [this video](https://www.youtube.com/watch?v=H67COH9F718)
-as a source of this tutorial, let's
-improve it.
+This tutorial was made
+[from this video](https://www.youtube.com/watch?v=H67COH9F718).
+It didn't work for us, but it greatly helped.
 
 * install JavaFX plugin
 * `View > command palette`
@@ -18,7 +18,7 @@ into your ``src`` folder and remove `App.java`
 * in lib folder, copy JavaFX source
   * version 16 [here](https://github.com/memorize-code/memorize-references/raw/main/special/ilo/javafx-lib-v16.zip)
   * otherwise try <https://gluonhq.com/products/javafx/>
-  * otherwise you got them here 
+  * otherwise, you got them here 
     * [mvn rep](https://mvnrepository.com/artifact/org.openjfx)
     * click on a file you want (ex: javafx-controls)
     * click on the version (ex: 16)
@@ -58,4 +58,4 @@ different ``projectName``.
 }
 ```
 
-then start it using the green arrow / the run menu.
+Then start it using the green arrow or the run menu.
