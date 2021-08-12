@@ -35,12 +35,6 @@
       "name": "Toolbox",
       "desc": "A lot of notes about a lot of things that can't be added to another course.",
       "icon": "<i class=\"bi bi-truck\"></i>"
-    },
-    {
-      "tag": "discord",
-      "name": "Discord",
-      "desc": "Do you know discord? (note: this was a Korean slang)",
-      "icon": "<i class=\"bi bi-discord\"></i>"
     }
   ]
 }
