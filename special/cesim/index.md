@@ -1,12 +1,17 @@
 # Cesim
 
-This course is about management using CESIM
+This course is about management using the CESIM
 hotel simulation game. The game is fun, but since we need to learn
-a lot from our failures even through we are graded,
+a lot from our failures, even though we are graded,
 we are sharing some feedback here.
 
 * Their website is [here](https://www.cesim.com/)
-* You will login [here](https://sim.cesim.com/)
+* You will log in [here](https://sim.cesim.com/)
+
+The most important thing in this course is the
+return on investment (ROI, `sur cesim: taux de retour cumulé aux actionnaires`).
+This is the sum of all the money you earned and
+lost (Net income, ``Résultat``).
 
 <hr class="sl">
 
@@ -14,11 +19,10 @@ we are sharing some feedback here.
 
 At the end of the 8 turns, you must have
 
-1. the greatest increase of
-   ``taux de retour cumulé aux actionnaires``. 
+1. the greatest increase of ROI. 
    The ranking is made with the value at ``turn=8`` minus
    the value at ``turn=4``.
-2. the greatest ``taux de retour cumulé aux actionnaires``
+2. the greatest ROI
 at ``turn=8``.
 3. the report
 
@@ -34,7 +38,7 @@ is the mean of your three scores.
 6. 9/20
 7. 8/20 (Last)
 
-**You are losing 2 points on the final grade, if you end up in
+**You are losing 2 points on the final grade if you end up in
 bankrupt** (debt $\ge$ 100%).
 
 *Please take note that this course is testing your luck,
@@ -52,13 +56,13 @@ do that for **8** turns.
 
 You are usually in a team of 4 to 5 persons. Each
 one of you have a column in ``Décisions > Liste des décisions``.
-We then countdown reach 0, the decisions that will be used
-for the game are in the column having the name
+When the countdown reaches 0, the decisions that will be used
+for the game, are in the column having the name
 of your team.
 
 You will have some time (a lot, at the start,
 and only ~1 hour around the end) to make some decisions
-on your column then merge everything with
+on your column, then merge everything with
 ``Enregistrer ... d'équipe`` to save your decisions.
 
 At the end of the 4th turn, you will submit a report
@@ -74,7 +78,7 @@ were all between ``7/20 and 12/20``...
 **Planning**: read it and **don't forget** the deadlines :)
 
 **Manuals**: some documentation about the website,
-may be useful for the report or the vocabulary
+it may be useful for the report or the vocabulary
 
 **Results**: explained later, the results of each turn
 
@@ -89,10 +93,10 @@ may be useful for the report or the vocabulary
     (60\\$\70\\$ is "low" for us))
   * **Ventes**: 
     you can sell at the ``guichet``/counter 
-    or to agencies (you should sell as most as possible to agencies). 
+    or to agencies (you should sell as much as possible to agencies). 
     And you can do some marketing, as we noticed it will
     increase by a bit the agencies' price for some time
-    (a lot for this period, a little bit less in the next periods).
+    (a lot for this period, a bit less in the next periods).
   * **Opérations**: manage your hotel
     * repair (quality++, money--)
     * buy rooms
@@ -124,16 +128,16 @@ after each turn.
   * who create the most ``valeur ajouté`` (plus value)
     * action price ?
     * ``bénéfices cumulés``
-    * ``taux de retour aux actionnaires`` **!!!**
+    * **ROI !!!**
 * finance
   * debt (check that you are under 100%)
   * check investments
   * check ``dividendes``
-  
+
 And now what's more useful
 
 * number of reservations, number of rooms
-* quality (seems useless, no changes in the numbers of reservations but whatever,
+* quality (seems useless, no changes in the numbers of reservations, but whatever,
   the price is the most important factor)
 * staff
 * **price**
@@ -164,7 +168,7 @@ You can take these into consideration
     do not wait too much
   * we hired a permanent at the 1rst turn,
     you may hire another one later, more may be too much.
-* training staff may help you avoiding hiring temporary staff
+* training staff may help you avoid hiring temporary staff
 * reducing marketing? (5k?)
 * less training cost?
 * fewer renovations?
@@ -172,7 +176,7 @@ You can take these into consideration
 * sell as much as possible to agencies?
 * fewer dividends?
 
-The ``retour cumulté aux actionnaire`` is the sum
+The ROI is the sum
 of all your results. Meaning the more money to gain,
 the more this value increases. But having a positive
 result means that you will pay taxes.
@@ -209,7 +213,7 @@ Here is some feedback about the report
 
 And what the teacher gave us
 
-* report from turns 1-4 and 4-8
+* one report for the turns 1-4 and one for 4-8
 * **5 pages** + annexes (tables, graphs)
 * for the shareholders
 * strategy, future developments, goals
