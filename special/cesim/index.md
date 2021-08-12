@@ -1,9 +1,9 @@
 # Cesim
 
 This course is about management using CESIM
-HOTELS game. The game is fun but since we need to learn
-a lot with our failures, and we are graded we are sharing
-here is some feedback.
+hotel simulation game. The game is fun, but since we need to learn
+a lot from our failures even through we are graded,
+we are sharing some feedback here.
 
 * Their website is [here](https://www.cesim.com/)
 * You will login [here](https://sim.cesim.com/)
@@ -22,31 +22,29 @@ At the end of the 8 turns, you must have
 at ``turn=8``.
 3. the report
 
-And **you are losing 2 points if you end up in
-bankrupt** (debt >= 100%).
+You will get two grades according to your ranking
+for 1 and 2. The final grade
+is the mean of your three scores.
 
-The main idea is that you will have a grade for your
-rank in 1. and 2., it's looking like this
-
-1. 19/20
+1. 19/20 (First)
 2. 17/20
 3. 15/20
 4. 13/20
 5. 11/20
 6. 9/20
-7. 8/20
+7. 8/20 (Last)
 
-Then your final grade is the mean of your three grades.
-*Please take note that a part of this UE
-is testing your luck since no one will tell you
-what are your mistakes nor how you could improve
-(for the report you will have some feedback though).* 
+**You are losing 2 points on the final grade, if you end up in
+bankrupt** (debt $\ge$ 100%).
+
+*Please take note that this course is testing your luck,
+not your management skills*. 
 
 <hr class="sr">
 
 ## The main idea
 
-You got some seasons: winter and summer. You first
+You got two periods: winter and summer. You first
 start a bit before winter and will take some decisions
 for the next winter. Then the timeline will advance and
 you will make decisions for the next summer. You will
@@ -58,37 +56,37 @@ We then countdown reach 0, the decisions that will be used
 for the game are in the column having the name
 of your team.
 
-You will have some times (a lot at the beginning but
-only ~1 hour around the end) to make some decisions
+You will have some time (a lot, at the start,
+and only ~1 hour around the end) to make some decisions
 on your column then merge everything with
-``save as team decisions`` to save your decisions.
+``Enregistrer ... d'équipe`` to save your decisions.
 
 At the end of the 4th turn, you will submit a report
 and have a grade. This grade is only for you to know
-how much many you could have with this report
-and what you did wrong. The grades in our year
-were all in the range ``7/20 up to 12/20``...
+how much you could have with this report
+and what you did wrong. The grades for the report in our group
+were all between ``7/20 and 12/20``...
 
 <hr class="sl">
 
 ## Presentation of the website
 
-**Planning**: read it and **don't forget** the dates when turns
-are ending...
+**Planning**: read it and **don't forget** the deadlines :)
 
-**Manuals**: some documentation about the website.
+**Manuals**: some documentation about the website,
+may be useful for the report or the vocabulary
 
-**Results**: turn results, check next part
+**Results**: explained later, the results of each turn
 
 **Decisions**: take your decisions here
-  * **Conditions du marché** : READ THIS.
+  * **Conditions du marché** : **READ IT**.
     You will have some information 
     that may or not have an impact. 
-    Still, you can guess how many clients you will have.
-    (if you see 4000 then you can expect at least 2000 
+    Still, you can guess **how many clients** you will have.
+    (if you see 2000 then you can expect at least 2500/3000 
     if you ratio price/quality is good.
     You can expect a lot more if your price is low
-    (according to others like 60$-70$), even in Winter!)
+    (60\\$\70\\$ is "low" for us))
   * **Ventes**: 
     you can sell at the ``guichet``/counter 
     or to agencies (you should sell as most as possible to agencies). 
@@ -100,17 +98,19 @@ are ending...
     * buy rooms
     * reduce ``coûts administratifs``: 
       seems to take a lot of money but didn't do anything
-      (no major changes if increased a lot like 40k with
+      (no major changes if increased a lot like 40k from
       5k...). Seems related to the amount of money taken by the taxes.
-    * reduce ``coûts directs``: tested but not found any changes (the ``coûts directs``
-      in results didn't seem to change nor impact the quality).
+    * reduce ``coûts directs``: tested but not found any changes
+      (the ``coûts directs``'s value in 
+      results didn't seem to change nor impact the quality).
     * hire staff (permanent/temporary)
     * train staff (reduce stress, increase their skills and quality)
 
-> blue cases are the expected value of something. So you will have to guess
-> what this case will have in value in the next turn. Your estimated result
-> will use these to show how much money you will have in the next turn. So write
-> some values carefully.
+> The blue cases are the expected value of something. 
+> You will have to guess what value "something" will have
+> in the next turn. Your estimated result is calculated
+> using the blue cases values, that's why
+> you should write your values carefully.
 
 <hr class="sr">
 
@@ -132,16 +132,17 @@ after each turn.
   
 And now what's more useful
 
-* count of reservations, of room
-* quality (seems useless, no changes)
+* number of reservations, number of rooms
+* quality (seems useless, no changes in the numbers of reservations but whatever,
+  the price is the most important factor)
 * staff
 * **price**
 
-Beware of the teacher note. ``dividends`` are
+``dividends`` are
 a part of your ``result`` meaning that you mustn't give
 too many dividends (without explaining why
-in the report). Also, he wants your dividend rate
-to be stable, for instance, xxx each winter and
+in the report). Your dividend rate should be stable,
+for instance, xxx each winter and
 yyy each summer or zzz each year or ttt each
 period.
 
@@ -163,11 +164,11 @@ You can take these into consideration
     do not wait too much
   * we hired a permanent at the 1rst turn,
     you may hire another one later, more may be too much.
-* train staff main help to avoid hiring temporary staff
+* training staff may help you avoiding hiring temporary staff
 * reducing marketing? (5k?)
 * less training cost?
 * fewer renovations?
-* cheap rooms?
+* cheaper rooms?
 * sell as much as possible to agencies?
 * fewer dividends?
 
@@ -187,9 +188,9 @@ In summer
 You may also go abroad (international), but if you do it
 at the start (turn=1) then be careful to not have a debt>100%.
 Going abroad will increase what you earn since they
-are usually a lot sell to agencies and then you can
-sell a lot of room for >100$/room easily. Still having
-more rooms means more costs!
+are usually a lot to sell to agencies. 
+You can be greedy and keep some rooms for >100$/room.
+Still having more rooms means more costs!
 
 <hr class="sr">
 
