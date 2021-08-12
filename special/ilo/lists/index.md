@@ -8,7 +8,7 @@ you got 3 files
 * ``ListeOperations.pdf``: visual as to how you should code some
 methods
 * ``src/lists/ListIteratorTest``: **test** your code
-mid-way (please use it or you are gonna regret it later)
+mid-way (please use it, or you are going to regret it later)
 * ``TP Listes.pdf``: what you need to do :)
 
 Then open the project in your favorite
@@ -20,7 +20,7 @@ IDE,
     (it won't compile otherwise)
   * remove ``RunAllTests.java`` unless you want to do the same 2-minutes tutorial
   like in the previous TP (check it out for
-  the setup if you do)
+  the setup, if you do)
 * ...
 
 <hr class="sr">
@@ -29,14 +29,15 @@ IDE,
 
 An iterator is something that we can use to
 iterate the content of a collection of data.
-It will be explained a bit later, but basically
+It will be explained a bit later, but basically:
 
-* an Iterable is a class having the method `iterator()`
-* `iterator()` is returning when iterated an element of type `E`
+* an iterable is a class inheriting `Iterable` (ex: an array, a collection)
+* we can use the method `iterator()` on an iterable
+* `iterator()` is returning an Iterator to iterate the content of something
 * use either of ``for`` (each) or a ``while`` to iterate the content.
 * an iterator got the method ``hasNext`` and `next`
 * ``hasNext()`` returns true if we got more elements to read
-* ``next()``: return an element and avance the cursor
+* ``next()``: return an element and move forward the cursor
 
 **PLEASE** do not forget this: if you are iterating
 using while and ``hasNext``,
@@ -60,7 +61,10 @@ means the list is empty.
 
 We will be using genericity a lot, the `<E>`
 after the class name, and inside the for, the
-type of each element is `E`.
+type of each element is `E`. This means that
+our list can store objects having or inheriting the
+type "E" (the creator of the list will pick what's
+the type E).
 
 ```java
 public ForwardList(ForwardList<E> liste) {
@@ -76,13 +80,13 @@ public ForwardList(ForwardList<E> liste) {
 }
 ```
 
-Memorize this foreach ``for (Type variable_name : iterable)``
-syntax. You will use almost the same as this one (and maybe
+Memorize this for (each) syntax: 
+``for (ElementType variableName : iterable)``. 
+You will use almost the same as this one (and maybe
 this one) a lot in the TP. Here ``E`` is the type of
 an element since
-our iterable (a class extending Iterable like an array
-or a collection) ``ForwardList<E>``
-is declared as a ``ForwardList`` using elements of type
+our iterable  ``ForwardList<E>``
+is declared as a ``ForwardList`` storing elements of type
 ``E``.
 
 An example would be this one for an ArrayList.
@@ -99,7 +103,7 @@ for (Integer c : numbers) {
 ```
 
 About insertAt method. Please use other methods
-according to the case
+according to the case:
 
 * $index \lt 0$: exception
 * $index = 0$: insert
@@ -107,7 +111,7 @@ according to the case
 * otherwise find the previous element and make a manual insert
 
 Iterators are a way to iterate a list/set of objects.
-We are returning our iterator but we will have to code
+We are returning our iterator, but we will have to code
 it.
 
 ```java
@@ -135,8 +139,8 @@ As a side note, please don't forget to instantiate all
 attributes in your constructors, even at null since
 the teacher is asking you to do it.
 
-Here is my equals method. Please note that this method is "weird". You are not checking if two
-items have the same type but if they have the same content. So you
+Here is my equals' method. Please note that this method is “weird”. You are not checking if two
+items have the same type, but if they have the same content. So you
 will have to check if they are ``Iterable``
 then iterate your lists.
 
