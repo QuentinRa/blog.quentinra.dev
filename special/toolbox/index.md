@@ -34,9 +34,3 @@ And
 * [About discord](discord/about.md): electron, ...
 * [BetterDiscord](discord/bd.md): plugins for discord
 * [Make a discord bot](discord/bot-js.md) (JavaScript)
-
-Sources
-
-* <https://support.discord.com/hc/en-us/articles/1500000580222-Ephemeral-Messages-FAQ>
-* <https://birdie0.github.io/discord-webhooks-guide/>
-* <https://github.com/logicguy1/Discord-Nitro-Generator-and-Checker>
