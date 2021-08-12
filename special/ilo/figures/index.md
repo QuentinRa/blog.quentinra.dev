@@ -2,34 +2,36 @@
 
 [Go back](..)
 
-First, and foremost: **DO NOT USE ECLIPSE**. You
-can if you want, but you may leave now. The best
+First and foremost: **DO NOT USE ECLIPSE**. Eclipse
+is not helping a beginner. It won't make things harder,
+but they could be easier. The best
 choice would be to use VSCode. Any other IDE helping
-more than eclipse vanilla is welcome.
+more than eclipse (vanilla) is welcome.
 
 <hr class="sr">
 
 ## Introduction
 
-This is an example of what we call "test-driven". You
-will first write some code, to test the code
-that you will write later. Fortunately, the
-tests got already written for us, so we <s>only</s>
+This TP is an example of what we call "test-driven". You
+will first write tests, to test the code
+that you will write later. Then you have to write
+the code to pass the tests. Fortunately, the
+tests had already been written for us, so we <s>only</s>
 have to write the code passing the tests.
 
 That's one hell of a job because there are too many comments,
-and sometimes you don't know exactly what you need to do
-but do it step by step and you will see that's easy
-(at least not that hard).
+and sometimes you don't know exactly what you need to do. 
+Do it step by step, and you will see that's easy
+(at least not that hard, take your time).
 
 <hr class="sl">
 
 ## Choose your IDE
 
-It will help you understand a lot of your mistakes, 
+An IDE will help you understand a lot of your mistakes, 
 especially if you use ``IntelliJ`` that is good at finding
-potential mistakes and providing a patch for it but
-for this TP, VSCode is better.
+potential mistakes and providing a patch for it.
+For this TP, I recommend [VSCode](https://code.visualstudio.com/).
 
 **VSCode**
 
@@ -40,15 +42,15 @@ simply open it and that's okay.
 
 Do not use IntelliJ for this TP (IntelliJ is good
 for projects, not test-driven like this),
-trying VSCode for this one would be better. Then switch or
-try IntelliJ for others. 
+trying VSCode for this one would be better. You
+can try IntelliJ later. 
 But just in case, [here is your tutorial](idea.md).
 
 <hr class="sr">
 
-## Here are some tips
+## FAQ
 
-``Writing some constructors``
+``What's a constructor?``
 
 <blockquote class="spoiler">
 That's simply a <code>method</code> (or a function) called
@@ -57,7 +59,9 @@ in order to create an object. We will set all the attributes
 constructor. 
 
 ```java
+// classname, so we have Test.java
 public class Test {
+    // attributes
     private String result;
 
     public Test(int n){
@@ -65,10 +69,10 @@ public class Test {
     }
 
     public Test(String s, int n){
-        // some code
+        // some (stupid) code
         // note that String.valueOf is useless
         // to convert an int to a String
-        // since Java do it himself
+        // since Java do it implicitely with "+"
         this.result = s+String.valueOf(n);
         // same as
         this.result = s+n;
@@ -86,7 +90,7 @@ public class Test {
 
 That's simply an attribute (or a method) that is owned by the class.
 The attribute has the same value in each instance 
-(=each Point for a class Point).
+(=each point for a class Point).
 <b>Some methods will be static</b> so make sure that you don't
 forget the keyword.
 You will know when a method is likely to be static
@@ -98,11 +102,11 @@ can call ``Math.round(4.5)``, the static method `round`
 from the class `Math`.
 </blockquote>
 
-``What are equals? hashcode? and "=="?``
+``What are equals? hashcode? And "=="?``
 
 <blockquote class="spoiler">
 When using ==, you are comparing addresses. For String, ... and
-Object in general we are using equals. By default equals
+Object in general we are using equals. By default, equals
 is the same as doing a == but each class can rewrite (namely override)
 this default behavior.
 
@@ -155,7 +159,7 @@ that's the same.
 </blockquote>
 
 About the TP, this constructor was a bit tricky. I think
-instead of what I did you should test xMin and xMan,
+instead of what I did, you should test xMin and xMax,
 yMin and yMax but that's passing the tests so...
 
 ```java
