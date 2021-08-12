@@ -137,10 +137,6 @@ using online checkers
 
 * you should known about <https://validator.w3.org/>
 * but you should look at <https://webhint.io/> (better)
-* you can ask google for advices about
-  * [pagespeed](https://developers.google.com/speed/pagespeed/insights/)
-  * [lighthouse](https://web.dev/measure/)
-* you may find an [interesting tool here](https://www.websiteplanet.com/webtools/)
 
 **Accessibility**
 
@@ -150,13 +146,8 @@ using online checkers
 **SEO (Search Engine Optimization)**
 
 * [Titles](seo/titles.md)
-* <https://www.ionos.com/tools/website-checker>
-* <https://sitechecker.pro/>
-* Get rid of broken links: <https://www.drlinkcheck.com/>
-* You may create a robots.txt (<http://robots-txt.com/>)
-to exclude some pages in the search/disallow some bots
-but that's not because you create this file that
-robots will listen.
+* [robots.txt](seo/robots.md)
+* [Scanners and SEO's tools](seo/scanners.md)
 
 **Security**
 
