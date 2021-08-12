@@ -1,7 +1,14 @@
 # ILO
 
-ILO is not an easy course so you will need strength
-or backup to master it, or just survive in it.
+ILO "Introduction aux Langages orientés-Objets"
+is not an easy course. You will need strength
+and motivation to survive
+<span class="tms">
+(joke aside, it's not
+that hard to survive, but I mean
+"survive without cheating/submitting your friend work,
+while learning something"
+)</span>.
 
 * [Figures TP](figures/index.md)
 * [Lists TP](lists/index.md)
@@ -9,5 +16,5 @@ or backup to master it, or just survive in it.
 * [MCQ about TPs](mcq.md)
 
 And that's all I can do. As a side note, we have a **Java** course
-with a part about **JavaFX** and **Tests** with JUnit.
+with a section about **JavaFX** and **Tests** with JUnit.
 We also have a course about **Design patterns** and **C++**.
