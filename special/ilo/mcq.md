@@ -47,7 +47,7 @@ It's Observer/Observable design pattern.
 
 In TP Tchat, the teacher used ``Map<String, Color> colorMap = newTreeMap<String, Color>()``
 to store the color(Color) for each user (String). What instructions
-are valid
+are valid?
 
 * ``colorMap.put("Olias", Color.BEIGE);``
 * ``colorMap.put(Color.AQUA, "Antholien");``
@@ -86,7 +86,7 @@ In TP Tchat, we were giving ``Runnables`` to
 5. we could have used anonymous classes
 
 <blockquote class="spoiler">
-The classes are not static so they were declared as inner classes.
+The classes are not static, so they were declared as inner classes.
 We could have used a <b>lambda expression</b> since
 <b>Runnable</b> is a functional interface. We could
 have used an anonymous class, it works no matter the class.
@@ -103,9 +103,9 @@ among Template Method, Equalizer, Decorator, and Adapter?
 <blockquote class="spoiler">
 My first trough is the <b>Template Method</b> because
 <code>equals, hashcode, ...</code> are methods defined
-in the template that is named <code>Object</code>. But since
-this is not a equals about equals but more about the same
-method but more specialized then I would pick
+in the template that is named <code>Object</code>. But, since
+this is not "about equals" as it looks like this is about
+"the same method but more specialized" then I would pick
 <b>Decorator=Wrapper</b> because it looks like a Parser
 that becomes a XMLParser/PDFParser/... to me.
 </blockquote>
