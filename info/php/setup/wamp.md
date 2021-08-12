@@ -56,7 +56,7 @@ right-click on wamp in the system trail.
 * Disabled MySQL
 * Enable MariaDB
 
-Your database is at <http://localhost/phpmyadmin>.
+Your database is at `http://localhost/phpmyadmin`.
 
 * root
 * no password

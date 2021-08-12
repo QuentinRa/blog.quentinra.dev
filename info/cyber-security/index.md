@@ -52,7 +52,8 @@ You can check these websites to improve your skills
 And you may check here if you got hacked
 
 * [have i been pwned?](https://haveibeenpwned.com/)
-* [vigilante](https://vigilante.pw/)
+* [vigilante](https://vigilante.pw/) (reported down as of 08-2021)
+* [vigilante GitHub](https://github.com/wedataintelligence/Vigilante.pw/blob/master/data.csv)
 * [cybernews check](https://cybernews.com/personal-data-leak-check/)
 
 Also, a lot of organizations are offering bounties for breaches

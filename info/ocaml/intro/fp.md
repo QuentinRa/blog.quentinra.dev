@@ -44,5 +44,5 @@ You may read some articles
 
 * [Wikipedia](https://en.wikipedia.org/wiki/Functional_programming#Concepts)
 * [GeeksForGeeks](https://www.geeksforgeeks.org/functional-programming-paradigm/)
-* French: <https://leblogducodeur.fr/introduction-a-la-programmation-fonctionnelle/>
+* French: https://leblogducodeur.fr/introduction-a-la-programmation-fonctionnelle/ (reported down - 12/08/2021)
 * French: <https://ocaml.org/learn/tutorials/functional_programming.fr.html#Qu-39-est-ce-que-la-programmation-fonctionnelle>

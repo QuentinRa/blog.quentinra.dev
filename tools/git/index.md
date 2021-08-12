@@ -244,5 +244,5 @@ contributions using <https://skyline.github.com/>.
 * [github git guide](https://github.com/git-guides/)
 * [changing remote](https://docs.github.com/en/github/using-git/changing-a-remotes-url)
 * [add ssh key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-* [good practices](http://adopteungit.fr/methodologie/2017/04/26/commits-atomiques-la-bonne-approche.html)
+* http://adopteungit.fr/methodologie/2017/04/26/commits-atomiques-la-bonne-approche.html (reported down as of 08-2021)
 * [git tutorial](https://dubrayn.github.io/IPS-DEV/git.html#1)
