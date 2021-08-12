@@ -10,7 +10,7 @@ posting a message in a channel
 
 Using [discohook](https://discohook.org), you can
 create your webhook online (or learn how a webhook
-is made), then in Javascript
+is made), then in JavaScript
 
 ```js
 // fetch channel webhooks
@@ -19,22 +19,24 @@ let hook = webhooks.first();
 // check if there isn't an existing webhook
 if (hook === undefined) {
     //creates
-    await channel.createWebhook(Config.hook_name, {avatar: avatar})
+    await channel.createWebhook(
+        // avatar is the url to an avatar
+        Config.hook_name, {avatar: avatar})
         .then(webhook => { hook = webhook; })
         .catch(console.error);
 }
 
 // 
-// params if the JSON you generated with
-// discohook
+// params is the JSON you generated with discohook
 // for instance
 // let params = {username: name, avatarURL: avatar, content: message};
 //
 await hook.send(params);
 ```
 
-Here the bot will create a webhook (if not
-already one) for the channel then send a message using the webhook.
+Here the bot will create a webhook (if there isn't
+already one) for the channel,
+then it will send a message using the webhook.
 These created webhooks are in ``Integrations > [Your bot name]``
 and not in the ``Webhook`` menu.
 
