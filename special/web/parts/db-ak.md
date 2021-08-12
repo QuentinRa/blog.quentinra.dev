@@ -1,9 +1,12 @@
-## Artificial keys
+# Artificial keys
 
 [Go back](..)
 
-These are attributes for which the value is incremented each time a new row
-is added. In ``postgre`` it's called sequences.
+An artificial key is
+an attribute that is supposed to be unique and increase
+each time you add a row/record.
+In ``postgre``, it's called sequences.
+The **type of the attribute is SERIAL**.
 
 ```sql
 -- start with 1 and will increment by 1 ...
@@ -20,5 +23,3 @@ ALTER TABLE ONLY public.a_table_name ALTER COLUMN a_column_name
 -- replace sequence_name
 SET DEFAULT nextval('public.sequence_name'::regclass);
 ```
-
-**Attribute type is SERIAL**.

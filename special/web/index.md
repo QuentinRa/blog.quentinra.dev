@@ -8,7 +8,7 @@ to sail in the Web course. In 2020-2021
 
 <hr class="sl">
 
-## START
+## Starting your web project
 
 Your websites will be accessible
 with a URL like this ``http://pgsql.pedago.ensiie.fr/~prenom.nom/``.

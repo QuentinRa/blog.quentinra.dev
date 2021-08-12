@@ -5,17 +5,21 @@
 You should create a new DB account. You will have to log in
 using your **ENSIIE** credentials to ``pgsql`` host. 
 Simply do 
-``psql -h pgsql -U your_ensiie_login``.
 
-Create a database ```CREATE DATABASE a_database_name;```.
+```bash
+psql -h pgsql -U your_ensiie_login
+# create a database
+CREATE DATABASE a_database_name;
+# exit
+# ...
+# log in again
+psql -h pgsql -U your_ensiie_login -d a_database_name
+```
 
-Exit and log in again
-``psql -h pgsql -U your_ensiie_login -d a_database_name``.
-
-Copy this code, replace
+Copy this code, BUT replace
 
 * ``username`` by the new user username (0/3)
-* ``a_password`` by the user password (0/1)
+* ``a_password`` by the new user password (0/1)
 
 ```sql
 -- create

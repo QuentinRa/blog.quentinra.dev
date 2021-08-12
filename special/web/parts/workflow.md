@@ -1,6 +1,6 @@
 # Workflow
 
-[Go back](..)
+[Go back](..#starting-your-web-project)
 
 ## Simple HTML-CSS-JS-only project
 

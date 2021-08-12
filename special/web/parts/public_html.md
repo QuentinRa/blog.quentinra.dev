@@ -1,6 +1,6 @@
 # public_html
 
-[Go back](..)
+[Go back](..#starting-your-web-project)
 
 If you didn't, create a ``public_html`` in your home.
 Don't forget to set the permissions:

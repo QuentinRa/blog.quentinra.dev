@@ -1,8 +1,9 @@
-## Database errors
+# Database errors
 
 [Go back](..)
 
-You should enable errors for developing purposes if not done.
+You should enable database errors (at least during the production),
+if not done.
 
 * <https://stackoverflow.com/questions/8992795/set-pdo-to-throw-exceptions-by-default>
 * <https://www.php.net/manual/en/pdo.error-handling.php#odbc-statistics.example.basic>
