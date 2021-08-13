@@ -132,17 +132,33 @@ can make a table with this code
 | tab[5][0] | tab[5][1] |
 ```
 
+You can center the column content by adding
+``:---:`` instead of `---`. You can align the
+content to the right/left by only adding ``:``
+at the right/left of ```---```.
+
 <hr class="sl">
 
-## Others
+## emojis
 
-You can have **quotes**
+You can write ``:emoji:`` to render an emoji, with
+"emoji" the one you want. The list of values can be found
+here
+
+* [markdown-emojis](https://github.com/markdown-templates/markdown-emojis)
+* [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet) (official)
+
+<hr class="sr">
+
+## Other features
+
+You can make a **quote** with
 
 ```markdown
 > some quote
 ```
 
-And **horizontal separators**
+And you can use **horizontal separators** with
 
 ```markdown
 ***
@@ -152,8 +168,7 @@ And **horizontal separators**
 _________________
 ```
 
-You may be able to use a **checkbox** (not supported
-everywhere)
+You may be able to use a **checkbox** too with
 
 ```markdown
 * [ ] not checked
@@ -170,7 +185,17 @@ And you can write comments with this syntax
 [//]: # (This may be the most platform-independent comment)
 ```
 
-<hr class="sr">
+This is a normal code block but this is a particular case,
+it's used a lot in documentation to show
+"what you could do before" and "what you need to do now".
+
+<pre><code class="language-markdown"
+>```diff
+- removed
++ added
+```</code></pre>
+
+<hr class="sl">
 
 ## Sources
 
@@ -180,3 +205,4 @@ And you can write comments with this syntax
 * [comments in MD](https://stackoverflow.com/questions/4823468/comments-in-markdown)
 * <https://www.madoko.net/>
 * <https://guides.github.com/features/mastering-markdown/>
+* <https://sindresorhus.com/github-markdown-css/>
