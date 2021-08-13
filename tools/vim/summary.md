@@ -9,7 +9,7 @@ Here you have a summary
 	</tr>
 	<tr>
 		<th>a</th>
-		<th>Append : Move the cursor right, then enter in insert mode. </th>
+		<th>Append: Move the cursor right, then enter in insert mode. </th>
 	</tr>
 	<tr>
 		<th>b</th>
@@ -41,7 +41,7 @@ Here you have a summary
 	</tr>
 	<tr>
 		<th>e, E</th>
-		<th>Go to the end on the next word.</th>
+		<th>Go to the end of the next word.</th>
 	</tr>
 	<tr>
 		<th>f</th>
@@ -49,7 +49,7 @@ Here you have a summary
 	</tr>
 	<tr>
 		<th>gg, G</th>
-		<th>Go to the beginning/end on the file.</th>
+		<th>Go to the beginning/end of the file.</th>
 	</tr>
 	<tr>
 		<th>h, j, k, l</th>
@@ -101,11 +101,11 @@ Here you have a summary
 	</tr>
 	<tr>
 		<th>u</th>
-		<th>Undo. See also : "Ctrl + r".</th>
+		<th>Undo. See also: "Ctrl + r".</th>
 	</tr>
 	<tr>
 		<th>v</th>
-		<th>Visual : Create a highlight areas of text.</th>
+		<th>Visual: highlight areas of text.</th>
 	</tr>
 	<tr>
 		<th>w</th>
@@ -161,7 +161,7 @@ Here you have a summary
 	</tr>
 	<tr>
 		<th>%</th>
-		<th>If the cursor is in one of these characters : {, (, [, ], ), }, show the associated one.</th>
+		<th>If the cursor is in one of these characters: {, (, [, ], ), }, show the associated one.</th>
 	</tr>
 	<tr>
 		<th>ctrl + r</th>
