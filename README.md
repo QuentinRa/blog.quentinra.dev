@@ -50,7 +50,7 @@ file.
 
 ## TODO List 
 
-Last updated: 2021-08-10
+Last updated: 2021-08-13
 
 <details>
 <summary> <b>Website tasks</b></summary>
@@ -59,9 +59,11 @@ Last updated: 2021-08-10
 * [ ] edit: show formulas
 * [ ] edit: open link
 * [ ] replacing links with [here] by something better
-* [ ] gen sitemap
-* [ ] gen broken
 * [ ] mathjax overflow
+* [ ] adding ToS
+* [ ] adding Privacy Policy
+* [ ] adding How To Contribute
+* [ ] adding About
 </details>
 
 <br>
