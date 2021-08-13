@@ -19,7 +19,7 @@ OCaml highlighting
 \end{document}
 ```
 
-or you could use this code to add a file
+Or you could use this code to add a file
 ``\inputminted{ocaml}{file.ml}``.
 
 You can highlight one line with

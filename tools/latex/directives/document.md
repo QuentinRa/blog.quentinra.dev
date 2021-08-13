@@ -2,7 +2,7 @@
 
 [Go back](..#writing-documents)
 
-Using a date, a title, and an author, you document
+We usually add a date, a title, and an author, so your document
 source code might look like this
 
 ```latex

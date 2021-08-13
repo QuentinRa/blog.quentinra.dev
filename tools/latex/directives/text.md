@@ -5,12 +5,12 @@
 You can write some text
 in a document without tags, that's a paragraph.
 
-Using ``\\`` add the end of a line will move
+Using ``\\`` at the end of a line will move
 the rest of the text right under our line.
-Jumping a line do the same and ``\newline``
-too.
+To jumping a line, you may need to add `\\` two times.
+You can use ``\newline`` instead of  `\\`.
 
-You can create some space between paragraph
+You can add some space between paragraph
 using ``\vspace{NUMBERmm}``.
 
 You can center text using ``center``,
@@ -27,6 +27,6 @@ that can be used like this
 
 ```latex
 \begin{center}
-This is some text with this \textbf{word} in bold.
+This is centered text got a \textbf{word} in bold.
 \end{center}
 ```

@@ -2,8 +2,8 @@
 
 In this course, you will learn
 
-* how to write some latex documentation
-* how to write maths in latex
+* how to write a basic latex document
+* how to write math in latex
 
 <hr class="sr">
 
@@ -11,14 +11,14 @@ In this course, you will learn
 
 You may code latex (`.tex`) documents on
 
-* [Overleaf](https://www.overleaf.com/) (previously `writelatex.com`), simple and collaborative tool, need register
-* [CoCalc](https://cocalc.com/), UI may be a bit hard to use but no account required
+* [Overleaf](https://www.overleaf.com/) (previously `writelatex.com`), a simple and collaborative tool, need register
+* [CoCalc](https://cocalc.com/), the UI may be a bit hard to use but no account is required
 
 You can also use a latex compiler on your machine
 but that's not covered for now.
 
-There are a lot of latex templates so be sure to check
-them before starting some document from
+There are a lot of latex templates, so be sure to check
+them before starting a document from
 scratch <https://www.overleaf.com/latex/templates>
 since there are presentation templates, cv templates,
 report templates...
@@ -31,15 +31,15 @@ Generally, latex documents look like
 
 ```latex
 \documentclass{article}
-% some package
+% your packages
 \usepackage[utf8]{inputenc}
 
 \begin{document}
-some content here
+your content here
 \end{document}
 ```
 
-Each time you would want to use some tags, then
+Each time, you would want to use some tags for your content,
 you will have to use a directive starting with
 ``\begin{directive}`` and ending with `\end{directive}`.
 
@@ -50,20 +50,22 @@ you will have to use a directive starting with
 
 <hr class="sr">
 
-## Writing maths in latex
+## Writing math in latex
 
 **First and foremost**, you should check out this
-website <http://atomurl.net/math/>. 
+awesome website <http://atomurl.net/math/>. 
 
-A math equation need to be put inside
-``$latex$`` (or `\(latex\)`) (inline math so in a sentence)
-or using ``\[latex\]`` and equations will be rendered
-in a whole line. An alternative to ```\[latex\]``` is
+A math equation needs to be put inside
+
+* `$latex$` (or `\(latex\)`): inline math, meaning inside a sentence
+* `\[latex\]`: the formula will be rendered on a whole line.
+
+An alternative to ```\[latex\]``` is 
 ``\begin{equation}latex\end{equation}``.
 
 Spaces are useless in your latex code since 
-the math parser will do what he wants, you should either
-use ``\ `` so slash followed by a space 
+the math parser will do whatever he wants, you should either
+use ``\ `` (backslash followed by a space) 
 or use ``\quad`` (or `\,`, `\:`, ...).
 You can make a horizontal space with ``\hspace{1cm}``.
 
@@ -74,9 +76,9 @@ and ask him to look for it.
 
 Related
 
-* [alternatives to atomurl](https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog)
-* [mathjax reference (maths in websites)](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
-* [new lines in mathjax](https://github.com/mathjax/MathJax/issues/2312)
+* [Alternatives to atomurl](https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog)
+* [Mathjax reference (math renderer in JS)](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
+* [New lines in mathjax](https://github.com/mathjax/MathJax/issues/2312)
 * [Strikeout in latex](https://docs.mathjax.org/en/latest/input/tex/extensions/cancel.html)
 * [katex](https://katex.org/)
 
@@ -84,15 +86,15 @@ Related
 
 ## Cheatsheet
 
-Because, I enjoy adding links to some of theses,
-here are some sheet that looks good
+Because, I enjoy adding links to cheatsheets,
+here are some sheets that looks good
 
 * [symbols.pdf](https://www.caam.rice.edu/~heinken/latex/symbols.pdf)
 * [latexcheatsheet.pdf](https://users.dickinson.edu/~richesod/latex/latexcheatsheet.pdf),
 [latexcheatsheet.pdf](https://users.dickinson.edu/~richesod/latex/LatexFrench.pdf) (french),
 [video](https://divisbyzero.com/teaching/a-quick-guide-to-latex/).
-* [wikibooks - latex](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
-* [maths guide for latex](http://tug.ctan.org/info/short-math-guide/short-math-guide.pdf)
+* [Wikibooks - latex](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
+* [math guide for latex](http://tug.ctan.org/info/short-math-guide/short-math-guide.pdf)
 
 <hr class="sr">
 

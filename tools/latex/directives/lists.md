@@ -11,5 +11,5 @@ Simply do that to create an unordered list
 \end{itemize}
 ```
 
-and you can change ``itemize`` to `enumerate`
+And you can change ``itemize`` to `enumerate`
 to create an ordered list.
