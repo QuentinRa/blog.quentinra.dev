@@ -3,7 +3,7 @@
     {
       "tag": "docker",
       "name": "Docker",
-      "desc": "What's docker and how you could using it to run applications everywhere.",
+      "desc": "What's docker and how you could use it to run applications everywhere.",
       "icon": "<i class=\"bi bi-box-seam\"></i>"
     },
     {
@@ -14,7 +14,7 @@
     },
     {
       "tag": "jetbrains",
-      "name": "Jetbrains",
+      "name": "JetBrains",
       "desc": "Make your programming life easier by coding inside powerful preconfigured IDEs.",
       "icon": "<i class=\"bi bi-battery-charging\"></i>"
     },
@@ -27,7 +27,7 @@
     {
       "tag": "markdown",
       "name": "Markdown",
-      "desc": "One of the most used language to write documentation outside your code, or simply information about it.",
+      "desc": "The most used language to write documentation or to write beautiful documents without needing a lot of knowledge or a complicated syntax.",
       "icon": "<i class=\"bi bi-box\"></i>"
     },
     {
@@ -39,13 +39,13 @@
     {
       "tag": "latex",
       "name": "LaTEx",
-      "desc": "A language used to write reports, create presentations quite easily and with great style. You may also use it to write maths on website/documents.",
+      "desc": "A language used to write reports, create presentations quite easily and with great style. You may also use it to write math in a website/documents.",
       "icon": "<i class=\"bi bi-box\"></i>"
     },
     {
       "tag": "doxygen",
       "name": "Doxygen",
-      "desc": "Write standardized documentation in all your project. You can generate a website with the Javadoc in Java.",
+      "desc": "Write standardized documentation in your projects. You can generate a website, like with the Javadoc in Java.",
       "icon": "<i class=\"bi bi-newspaper\"></i>"
     },
     {
