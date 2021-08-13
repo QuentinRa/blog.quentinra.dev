@@ -1,15 +1,15 @@
 # Markdown
 
-Markdown, associated with ``.md`` files,
-are commonly used in documentation files or to write
+Markdown, associated with the ``.md`` extension like
+for `README.md`,
+is commonly used in documentation files or to write
 simple documents...
+You can learn it in a couple of minutes.
+Here is an [amazing markdown guide](https://www.markdownguide.org/basic-syntax/).
 
-You can learn it in a couple of minutes, that's quite
-simple. Here is a fantastic guide
-[markdownguide](https://www.markdownguide.org/basic-syntax/).
-
-> Please do take note that this site is written
-> in Markdown so you will be able to contribute :)
+> All courses of this website is written
+> in **Markdown** so you can contribute if you want
+> to 🙇. Thanks if you do.
 
 <hr class="sl">
 
@@ -42,20 +42,19 @@ This is another paragraph.
 This is still the same paragraph, but you should
 not use this uncommon syntax.
 
-This is in **bold** while this is in
-*italic* and this is also in __bold__ while
-this is also in _italic_. This is in
-***bold and italic***.
+This **text is in bold** while this *text is in italic*.
+This is also in __bold__ while this is also in _italic_.
+This is in ***bold and italic***.
 
-And this is a ~~strikethrough text~~ but not all
-editors support it.
+And this is a ~~strikethrough text~~ but it's not
+supported everywhere it (ex: this website does not).
 ```
 
 <hr class="sl">
 
 ## Lists
 
-You may use theses
+You may use ``*`` or `-` or `+`. It looks like this
 
 ```markdown
 * an item
@@ -66,8 +65,8 @@ You may use theses
 * a 3rd item
 ```
 
-or you can change and use an ordered list or
-a mix of both like this
+You can replace ``*`` by a number to make
+an ordered list. You can mix both too.
 
 ```markdown
 1. an item
@@ -78,9 +77,6 @@ a mix of both like this
 3. a 3rd item
 ```
 
-**Note**: you may use ``*`` or `-` or `+` for 
-unordered lists.
-
 <hr class="sr">
 
 ## Code
@@ -88,11 +84,12 @@ unordered lists.
 You can write some ``inline code`` using inverted quotes
 
 ```markdown
-You can write some \`inline code\` using inverted quotes 
+You can write some `inline code` using inverted quotes 
 ```
 
-and you can write a lot of code, using this syntax
-where ``c`` is the highlighted language
+and you can write a lot of code, using this syntax.
+Note that ``c`` is the language used
+for highlighting the code.
 
 <pre class="language-c">
 <code class="language-c"
@@ -108,22 +105,24 @@ int main(void){
 ## Links and images
 
 ```markdown
-Here is a link [text that will be shown](https://example.com)
-and here is an
-image ![text if the image is not found](https://lgs-games.com/assets/icon64.png)
+For **link**: [text that will be shown](https://example.com)
+For an **image**: ![text if the image is not found](https://lgs-games.com/assets/icon64.png)
 
-You can add a text on hover with
+You can create a **link with a text shown when hovered** with
 [text that will be shown](https://example.com "some text here")
-or you could create a link
-easily with <https://example.com>
+
+You could create a link easily with <https://example.com>.
 ```
 
 <hr class="sr">
 
 ## Table
 
+This is NOT supported everywhere, but you
+can make a table with this code
+
 ```markdown
-| Colonne | Colonne |
+| Column name | Column name |
 | ------ | ------ |
 | tab[0][0] | tab[0][1] |
 | tab[1][0] | tab[1][1] |
@@ -137,13 +136,13 @@ easily with <https://example.com>
 
 ## Others
 
-You can have quotes
+You can have **quotes**
 
 ```markdown
 > some quote
 ```
 
-And horizontal separators
+And **horizontal separators**
 
 ```markdown
 ***
@@ -153,18 +152,18 @@ And horizontal separators
 _________________
 ```
 
-You may be able to use a checkbox
+You may be able to use a **checkbox** (not supported
+everywhere)
 
 ```markdown
 * [ ] not checked
 * [x] checked
 ```
 
-And you can do comments with one of these
-syntax
+And you can write comments with this syntax
 
 ```markdown
-[comment]: <> (some comment)
+[comment]: <> (a comment)
 
 [//]: <> (This is also a comment.)
 
