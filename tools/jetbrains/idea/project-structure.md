@@ -2,7 +2,7 @@
 
 [Go back](../index#intellij-idea)
 
-* **Project** : Setup your JDK
+* **Project** : set up your JDK
 * **Modules**
 * **Sources** 
   * **Source** : set directory as sources

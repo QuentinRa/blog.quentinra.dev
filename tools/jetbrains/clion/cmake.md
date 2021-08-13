@@ -1,4 +1,4 @@
-# Cmake
+# CMake
 
 [Go back](..#clion)
 

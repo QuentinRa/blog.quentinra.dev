@@ -7,5 +7,5 @@ a test file, or a least a normal java file then
 add a method with ``@Test``. IntelliJ will understand
 and add a right arrow to start your test.
 
-You may find [that](https://www.jetbrains.com/help/idea/junit.html)
+You may find [the official tutorial](https://www.jetbrains.com/help/idea/junit.html)
 useful.

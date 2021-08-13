@@ -4,15 +4,15 @@
 
 In the left column, you can place breakpoints.
 
-![break](debug/debug.png)
+![breakpoint-example](debug/debug.png)
 
 Then run your program in debug mode.
 
-![break](debug/debug2.png)
+![clion-run-debug](debug/debug2.png)
 
 And you will see this great tool
 
-![break](debug/debug3.png)
+![clion-debug-tool](debug/debug3.png)
 
 1. go to the next breakpoint
 2. stop
