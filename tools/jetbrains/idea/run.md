@@ -3,21 +3,21 @@
 [Go back](../index.md#intellij-idea)
 
 To run a class,
-go to the ``main`` function then you should see a ``green`` arrow.
+go to the ``main`` function, then you should see a ``green`` arrow.
 Click on it and that's it.
 
-![conf1](run/conf3.png)
+![run-idea](run/conf3.png)
 
 If you don't see such a thing or may want to tune a bit
 the launch of your main, then open ``edit configurations``
 menu.
 
-![conf1](run/conf1.png)
+![configurations-idea](run/conf1.png)
 
 then you can set your JDK, your program argument
 and even set VM options.
 
-![conf2](run/conf2.png)
+![edit-configurations-idea](run/conf2.png)
 
 <hr class="sr">
 
@@ -26,7 +26,7 @@ and even set VM options.
 Check if your JDK is set. If that's okay, then
 is the directory of your files in ``blue``?
 
-If not then ``CTRL+ALT+MAJ+S`` then go to `modules`
-then set your source folder as ``source``.
+If not, press ``CTRL+ALT+MAJ+S``, go to `modules`
+and set your source folder as ``source``.
 
-![conf2](run/conf4.png)
+![project-configuration-idea](run/conf4.png)
