@@ -1,4 +1,4 @@
-# CGI
+# CQI syntax
 
 [Go back](..#-and-now-mastering-it)
 

@@ -95,7 +95,7 @@ Here are some details about basic commands
 * [search](commands/search.md)
 * [replace](commands/replace.md)
 * [others commands](commands/others.md)
-* [cgi syntax](commands/cgi.md)
+* [cqi syntax](commands/cqi.md)
 * [mystic commands](commands/special.md)
 
 <hr class="sr">

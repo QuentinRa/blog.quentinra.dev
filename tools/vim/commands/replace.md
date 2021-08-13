@@ -8,12 +8,12 @@
 * `:n,ms/old/new/g`: same but only n to m lines
 
 Replacement (ESC)
-* `r` : replace character under cursor
+* `r` : replace character under the cursor
 * `R` : replace characters while ESC not pressed
 
 Replacement
 
-* `s`: delete the character under cursor then switch to insert mode
-* `cc`: delete line then switch to insertion mode
-* `cw`: delete from the cursor until the end of the word 
-  then switch to insertion mode
+* `s`: delete the character under the cursor, then switch to the insert mode
+* `cc`: delete the current line then switch to the insertion mode
+* `cw`: delete characters starting from the cursor position
+  until the end of the word. Then, switch to insertion mode.
