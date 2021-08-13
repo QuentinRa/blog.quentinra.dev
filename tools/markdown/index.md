@@ -197,6 +197,71 @@ it's used a lot in documentation to show
 
 <hr class="sl">
 
+## HTML in Markdown
+
+You can use HTML in markdown. But beware, you can't
+use markdown **inside** HTML tags unless you make
+a blank line this this
+
+```markdown
+<div>
+
+This is a link: <https://example.com/>.
+</div>
+```
+
+Here are some things you can do using HTML
+
+* [centering something](features/centering.md)
+* [dropdown](features/dropdown.md)
+
+And here are some HTML tags you may use
+
+<table class="table table-bordered table-striped">
+<tbody>
+<tr>
+<td><b>kdb</b></td>
+<td><kbd>CTRL+X</kbd></td>
+</tr>
+<tr>
+<td><b>sup</b> (used in footnotes)</td>
+<td>
+
+<sup>[1]: From XXX</sup>  
+<sup>[2]: Notation used in XXX</sup>
+</td>
+</tr>
+<tr>
+<td><b>dl</b>, <b>dt</b> (keyword), and <b>dd</b> (definition).<br>
+(the definition is usually indented, so it looks better)</td>
+<td>
+<dl>
+<dt>Keyword</dt>
+<dd>definition</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td><b>abbr</b> (show a note on hover)</td>
+<td><abbr title="Shown when hovered">some text</abbr></td>
+</tr>
+<tr>
+<td><b>mark</b></td>
+<td>This <mark>word</mark> has a yellow background.</td>
+</tr>
+<tr>
+<td><b>ruby</b> and <b>rt</b> (put some text above another one)</td>
+<td><ruby>Memorize<rt>version 5.0</rt></ruby></td>
+</tr>
+<tr>
+<td><b>progress</b></td>
+<td><progress value="50" max="100"></progress> 50%</td>
+</tr>
+</tbody>
+</table>
+
+<hr class="sr">
+
 ## Sources
 
 * <https://www.markdownguide.org/basic-syntax/>
