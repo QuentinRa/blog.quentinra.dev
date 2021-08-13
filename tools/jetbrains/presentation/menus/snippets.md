@@ -3,8 +3,8 @@
 [Go back](../menus.md)
 
 You can create customs snippets meaning when you
-type ``for``, Jetbrains will show you some pre-written
-code and that's a snippet.
+type ``for``, JetBrains will show you some pre-written
+code: that's a snippet.
 
 * Open ``Settings > Editor > Live template``.
 * Create a new ``live template``.

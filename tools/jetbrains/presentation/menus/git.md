@@ -6,7 +6,7 @@ If you are in a git repository, check at the bottom
 left of your screen, you should have a
 ``GIT`` menu.
 
-![git](git/menu.png)
+![git-tool-jetbrains](git/menu.png)
 
 * ``1``: your branches
 * ``2``: your commits
@@ -17,17 +17,17 @@ left of your screen, you should have a
 
 ## Pull-push or commit
 
-![push-pull](git/push-pull.png)
+![push-pull-jetbrains](git/push-pull.png)
 
 You might use the ``blue`` arrow to pull
-and the ``green`` to push. Jetbrains will show
+and the ``green`` to push. JetBrains will provide
 you a great tool to merge if needed.
 
 <hr class="sr">
 
 ## Local changes
 
-![current](git/current.png)
+![commit-tool-jetbrains](git/current.png)
 
 You can commit or view local changes using the left
 menu.
