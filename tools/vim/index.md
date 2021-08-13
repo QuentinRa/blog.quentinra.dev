@@ -1,39 +1,37 @@
-# vim
+# Introduction
 
-*vim*, for *vi improved* is a text editor, 
+*vim*, for *vi improved* is a 
+console text editor, 
 at least in the basic version of it.
+This tutorial won't cover the two famous
+extension of vim
 
-You may find extensions like
-
-* GVim
 * neovim
+* gVim Portable
 
 <hr class="sl">
 
-## How to install and run vim?
+# How to install and run vim?
 
 You can install it using ``sudo apt-get install vim``
-or whatever command you use to install packages
+or whatever command you are using to install packages
 such as ``sudo aptitude install vim``.
 
-Then you can run it with `vim` or `vi`. You can give
-a file to open with ``vim file``. The file is
-created if it's don't exists.
+* ``vim``: open vim
+* ``vim file``: open a file in vim (and create it, if it didn't exist)
 
-**HELP, I'm can't exit vim.**
+**HELP, I can't exit vim.**
 
 If you are trapped in vim, keep calm, 
 and press `esc` (escape key), then `:q!`.
 
-* `esc` will bring (back) vim to its **normal mode** 
- (if we could call it normal...).
-* `:q!` is the command to force to quit vim, that is to say,
-  to exit vim without saving.
+* `esc` will bring back vim to its **normal mode**
+* `:q!` is the command to exit vim without saving.
 
 **Basic configuration**
 
-Then you can configure your editor by creating
-a file ``~/.virmrc``, here is an example of mine
+You can configure your editor by creating
+a file ``~/.virmrc``, here is an example of a basic configuration
 
 ```bash
 set fileencodings=UTF-8,utf-8,default,latin1 "file encoding
@@ -44,11 +42,12 @@ set cursorline "show cursor
 set tabstop=4 "tabulation size
 ```
 
+You should look on GitHub or on the web for "dotfiles vim"
+if you want to find an advanced configuration.
+
 <hr class="sr">
 
 # Surviving in vim ...
-
-Here is a summary of vim.
 
 You have two modes (at least for now),
 check at the bottom left of your screen
@@ -56,9 +55,8 @@ check at the bottom left of your screen
 * `INSERTION` : called insert/edit mode
 * `<nothing>` : called command/normal mode
 
-More generally, the **normal mode** (or command mode)
-of vim is the state where the user's input served to do some
-special action (move the cursor, copy, paste, erase...).
+More generally, the **normal mode**
+is used to do special actions (move the cursor, copy, paste, erase...).
 
 `:` is used to run a command. E.g, `q` is the command to exit vim.
 `q!` to exit without saving and `wq` to save and exit...
@@ -68,7 +66,7 @@ which is the mode where you can write some text such as every
 other text editor. Press `esc` to exit this mode and return to
 the normal one.
 
-Here are a summary commands (so in **command mode**)
+Here is a short summary of the commands (so in **normal mode**)
 that you will most likely need to know
 
 * ``i`` (or `a`): switch to `INSERTION`, you can now modify the file
@@ -84,9 +82,9 @@ that you will most likely need to know
 
 The best way to learn how to use vim is... to use it.
 However, and thankfully, you can open a terminal and write
-`vimtutor`, which will teach you the basics command 
-to use vim peacefully, in exchange for around 30 minutes of your
-life and brain attention.
+`vimtutor`, which will teach you the basic commands
+to use vim peacefully (in exchange for around 30 minutes of your
+life and brain attention).
 
 Here are some details about basic commands
 
@@ -102,10 +100,10 @@ Here are some details about basic commands
 
 <hr class="sr">
 
-## Cheatsheet / Reference
+## Cheatsheet
 
-Because now that you learned a bit about vim, you need
-a cheat to remember a lot of things you learned, check
+Because now that you learned a lot about vim, you may need
+a cheatsheet to remember these or to learn more. Check
 these
 
 * [our summary](summary.md)
@@ -119,12 +117,11 @@ these
 
 ## Code completion
 
-This is something that is only discovered recently,
+This is something that I only discovered recently,
 but vim supports code completion!
-
-These commands using 
-[ale](https://github.com/dense-analysis/ale)
-will give you hints about mistakes (like; missing)
+This is available using
+[ale](https://github.com/dense-analysis/ale) which
+will give you hints about mistakes (like ';' missing)
 when going back to command mode.
 
 ```bash
@@ -139,7 +136,7 @@ and using ``CTRL-P``, VIM is showing a list of autocompletion choices
 * ``sudo apt-get install vim-runtime``
 * ``sudo apt-get install vim-gui-common``
 
-I'm not using VIM singe ages but I stumbled upon ALE so
+I'm not using VIM singe ages, but I stumbled upon ALE so
 I wanted to add it here.
 
 <hr class="sr">
