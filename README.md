@@ -52,7 +52,8 @@ file.
 
 Last updated: 2021-08-10
 
-**Website tasks**
+<details>
+<summary> <b>Website tasks</b></summary>
 
 * [ ] add go back to #titleID instead of #linkID
 * [ ] edit: show formulas
@@ -61,8 +62,12 @@ Last updated: 2021-08-10
 * [ ] gen sitemap
 * [ ] gen broken
 * [ ] mathjax overflow
+</details>
 
-**Next content**
+<br>
+
+<details>
+<summary> <b>Next content</b></summary>
 
 * [ ] First-order logic course
 * [ ] General mathematical knowledge course
@@ -73,6 +78,7 @@ Last updated: 2021-08-10
 * [ ] Complete Linux course
 * [ ] Complete Network course
 * [ ] Complete SQL course
+</details>
 
 ## Notes
 
