@@ -5,8 +5,7 @@ might be added if people are using more advanced
 concepts that I do.
 
 First download the software [here](https://jrsoftware.org/isdl.php#stable)
-and you might check the [github](https://github.com/jrsoftware/issrc).
-
+and you might check the [GitHub](https://github.com/jrsoftware/issrc).
 Simply install and run the software. When starting, choose
 ``Create a new file using the Script wizard`` and
 follows the steps. That's quite easy.
@@ -15,10 +14,10 @@ The generated file will be a ``xxx.iss`` kind of file.
 
 <hr class="sr">
 
-## Keep folder
+## Keep folders
 
-If you added a folder with files inside and you want
-the instruction to re-create the same folder with the installer
+If you added a folder because you need the same folder
+with the same files inside
 then replace
 
 ```bash
@@ -26,6 +25,7 @@ Source: "xxxx\app\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs crea
 ```
 
 by
+
 ```bash
 Source: "xxxx\app\*"; DestDir: "{app}\app"; Flags: ignoreversion recursesubdirs createallsubdirs
 ```
