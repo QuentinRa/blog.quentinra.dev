@@ -6,7 +6,7 @@
 /*!
 * \typedef NEW_NAME
 * \struct NAME
-* \brief brief description of this struct
+* \brief a brief description of this struct
 *
 * ...
 *
@@ -14,7 +14,7 @@
 typedef struct NAME {
     int id; //!< brief description of this attribute
     char* key; /*!< @brief
-        * This is a big description of this attribute
+        * This is a long description of this attribute
         * that I'm writing here.
         */
 } NEW_NAME; //!< brief description of this struct

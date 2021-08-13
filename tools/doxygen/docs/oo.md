@@ -2,8 +2,8 @@
 
 [Go back](..#write-documentation)
 
-**FIRST** you should use the Javadoc in Java
-not Doxygen but I Hope that you are
+**FIRST**, you should use the Javadoc in Java
+not Doxygen, but I Hope that you are
 here for other Object-Oriented languages.
 Here are some new tags for OO languages,
 you should check the ``c`` page for the rest of them

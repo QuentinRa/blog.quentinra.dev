@@ -15,6 +15,6 @@ A description of this package/folder.
 */
 ```
 
-When folders are documented they appear
+When folders are documented, they appear
 in ``m.css doxygen`` files list (if you are using
 m.css renderer).

@@ -1,7 +1,7 @@
 # In this course
 
 * you will learn how to use write ``doxygen`` comments
-* how to generates documentation with `doxygen`,
+* how to generate documentation with `doxygen`,
   so how to write a ``Doxyfile``
 * how to generate GREAT documentation with ``doxygen`` (
   with a beautiful theme
@@ -15,7 +15,7 @@ Based on ``doxygen`` version `1.9.1`.
 ## Starting with Doxygen
 
 Doxygen is working like the Javadoc in JAVA if you
-know what I mean to
+know what I mean.
 
 * write documentation using a special syntax
 * use a command to generates a website
@@ -40,15 +40,16 @@ in a ``.h``
 /*!
  * \file my_file.h
  * \author your name(s) here
- * \version 0.0.0 for instance
- * \date a date
- * \see a type/a class/a file we might need to check
+ * \version 0.0.0
+ * \date a date (the format is up to you)
+ * \see a type/a class/a file we might need to check along this one
+ * \see ...
  * \brief some brief description
  *
  * This is a long and fully explained description
- * of this file that can include html
- * such a <ul> or <li> for
- * lists.... 
+ * of this file that can include HTML
+ * such as the "ul" or the "ol" tags for
+ * lists....
  */
 ```
 
@@ -62,15 +63,13 @@ to say what you are commenting, before actually
 starting the comment. An example would be above,
 you must use a ``\file`` to say that
 you are commenting this file. So you would
-have to use ``\enum`` in the comment of an enum etc.
+have to use ``\enum`` before commenting an enum etc.
 
 * [Write documentation in C](docs/c.md)
 * [Write documentation in Object-Oriented Languages](docs/oo.md)
 
 All tags can be found in this great reference sheet
-
-* official link : [DoxyReference.pdf](https://www.mitk.org/images/1/1c/BugSquashingSeminars$2013-07-17-DoxyReference.pdf)
-* permanent link : [DoxyReference.pdf](https://github.com/memorize-code/memorize-references/raw/main/tools/doxygen/DoxyReference.pdf)
+[great reference sheet (PDF)](https://www.mitk.org/images/1/1c/BugSquashingSeminars$2013-07-17-DoxyReference.pdf).
 
 <hr class="sr">
 
@@ -92,24 +91,24 @@ and modify them if wanted
 * ``OUTPUT_DIRECTORY = "path"`` : where the **generated website**
   is stored.
 * ``OUTPUT_LANGUAGE = "English"`` : documentation language
-* ``QUIET = YES`` : **do not show hundred of messages**
+* ``QUIET = YES`` : **do not show hundreds of messages**
 * ``WARN_IF_UNDOCUMENTED`` : show warning of not
 * ``WARN_IF_DOC_ERROR`` : show warning of not
-* ``INPUT = path`` : **add a file/folder** only theses may 
+* ``INPUT = path`` : **add a file/folder**. Only these may 
   have a documentation generated unless the file
   extension is excluded.
-* ``INPUT += path`` : **add more files/folder**,
-  each time add this line, since only one path per line.
+* ``INPUT += path`` : **add more files/folders**.
+  Each time you want to add one, add this line.
 * ``RECURSIVE = YES`` : **recursive search** of INPUT
   folders
 * ``EXCLUDE = path`` : exclude some path
 * ``IMAGE_PATH = path`` : if you do have a folder
 of images that you use in your documentation.
   
-and some ``HTML`` specifics options
+And here we go for the ``HTML`` specifics options
 
 * ``LAYOUT_FILE = "path"`` : a layout to change documentation layout
-* ``HTML_HEADER = ./header.html`` : add an header, `header.html`
+* ``HTML_HEADER = ./header.html`` : add a header, `header.html`
   is a file that you created
 * ``HTML_FOOTER = ./footer.html`` : add a footer, `footer.html`
   is a file that you created
@@ -142,7 +141,7 @@ but you got the official one here
 [m.css](https://mcss.mosra.cz/documentation/doxygen/)
 that will **quite** help you.
 
-* download theses files from [https://github.com/mosra/m.css](https://github.com/mosra/m.css)
+* download these files from [https://github.com/mosra/m.css](https://github.com/mosra/m.css)
 
   * folder ``documentation/templates``
   * files ``documentation/__init__.py``,
@@ -220,14 +219,14 @@ or ``@param int a number``: in most cases it's useless
   * maybe tell us the range of the variable
   * some values that may trigger a different behavior
 
-* don't copy-paste, use ``@see`` or whatever but don't.
+* don't copy-paste, use ``@see`` or whatever, but don't copy-paste.
 * a "big" description at the beginning of a file,
   to tells us why you are using this file so that we know
   if we should read it or not.
 * don't use ``\date`` or `\version` unless you really
-intend to modify them otherwise they are not useful
+  intend to modify them, otherwise they are not useful
 
-In general
+In general,
 
 * don't forget non-doxygen comments, one per line or block
 is helpful
