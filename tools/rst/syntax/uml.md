@@ -10,13 +10,13 @@ beforehand.
 .. uml::
 
 	@startuml
-	class Personne {
-		{field} <u>n_personnes
-		{field} nom
-		{field} prénom
-		{field} adresse
+	class User {
+		{field} <u>ID
+		{field} name
+		{field} first_name
+		{field} address
 		{field} ∗ email
-		{field} téléphone
+		{field} cellphone
  	}
  	@enduml
 ```

@@ -1,8 +1,8 @@
-# Maths
+# Math
 
 [Go back](..#writing-rst-documents)
 
-You can write some maths in latex using
+You can write math in latex using
 the math directive
 
 ```rest
@@ -16,4 +16,4 @@ in latex.
 ```
 
 Please refer to the latex course to learn how to write
-maths in latex.
+math in latex.

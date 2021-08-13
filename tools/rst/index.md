@@ -1,22 +1,20 @@
 # RST
 
 `rst` or `reST` means ``reStructuredText``, file with
-extension ``.rst``.
-
-To put it simply, it's a language that is great to make
-``documentations`` since 
-looking like this [readthedocs](https://docs.readthedocs.io/en/stable/index.html).
+extension ``.rst``. It's a language that is great to make
+technical documentations or your code documentation
+as you may have see the usual [sphinx+readthedocs template](https://docs.readthedocs.io/en/stable/index.html).
 
 That's a language you will find in documentations
-such as in python, but the link above ``readthedocs``
+such as in python. readthedocs
 is a continuous integration system that allows you
 
-* to write code (by yourself)
-* write documentation using `sphinx`, in ``rst``
+* to write code (you write .rst files by yourself)
+* you link the git where the documentation is hosted with readthedocs
 * then when changes are made in the documentation,
 automatically, the website will have the new docs.
 * like git, you can have different branches so
-one can switch to a version of the code easily
+one can switch to a version of the documentation easily
   
 I started using it after seeing a lot of programmers
 using it such as
@@ -28,8 +26,8 @@ using it such as
 
 # Installing sphinx
 
-Please take note that sphinx is only required
-if you are planning to write a documentation website.
+Sphinx is used to create a website from your
+documentation. This is what readthedocs will use.
 For python comments, you can skip this part.
 
 * ``pip install -U sphinx`` (pip should be installed)
@@ -50,14 +48,14 @@ the pages together. We do that with ``toctree directive``
 
 # Writing RST documents
 
-Here a the most commons elements of syntax
+Here is a list of the most commons directives
 
 * [titles](syntax/titles.md)
 * [text](syntax/text.md)
 * [code](syntax/code.md)
 * [images and links](syntax/images-and-links.md)
-* [math (latex)](syntax/math.md)
-* [uml (plantuml)](syntax/uml.md)
+* [math](syntax/math.md) (latex)
+* [UML](syntax/uml.md) (plantuml)
 * [table](syntax/table.md)
 * [notes, ...](syntax/special.md)
 * [lists](syntax/lists.md)
@@ -67,7 +65,7 @@ Here a the most commons elements of syntax
 
 As a side note, space and indents are quite important
 in ``rst``, so be sure to check your indents if the compiler
-fails on a line and you don't know where is the error.
+fails somewhere, and you don't know what's the error.
 
 <hr class="sl">
 

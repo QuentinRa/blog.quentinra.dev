@@ -3,7 +3,8 @@
 [Go back](..#writing-rst-documents)
 
 Here is the basic syntax of a table,
-but there is another one [add it please].
+but there is another one more user-friendly, yet
+less convenient.
 
 ```rest
 =====  =====  =======

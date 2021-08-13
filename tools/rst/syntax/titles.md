@@ -31,8 +31,8 @@ do it like that
 * ``^``: subsubsection
 * ``»``: paragraph
 
-You can reference a title, meaning say "Hey check
-this part of the documentation" using ref
+You can reference a title, which it is like saying "Hey check
+this part of the documentation too", using ref
 
 ```rest
 .. _tag:
@@ -40,6 +40,5 @@ this part of the documentation" using ref
 some header
 ************
 
-Hey check this part of the 
-documentation : :ref:`tag`.
+Hey check this part of the documentation too: :ref:`tag`.
 ```
