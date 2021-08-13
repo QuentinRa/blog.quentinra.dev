@@ -2,11 +2,10 @@
 
 This is an engine inside unity helping handling 2D stuff
 in TopDown games. You can purchase it
-in the unity store. Then install it
-with [this](https://topdown-engine-docs.moremountains.com/install.html)
-tutorial.
-
-You can also buy [Feel](https://feel-docs.moremountains.com/index.html)
+in the unity store. Then install by
+[following their official tutorial](https://topdown-engine-docs.moremountains.com/install.html).
+You can also buy
+[Feel](https://feel-docs.moremountains.com/index.html),
 if you are feeling like this would improve your game.
 
 <hr class="sr">
@@ -19,10 +18,12 @@ The best way to make one is
 * creating a model
 * maybe an animator too
 * then create an empty game object
-* add a player controller, put inside the model
-  and link everything
+* add a player controller
+  * put inside the model
+  * put inside the animator (if you created one)
+  * then generate everything
 * then you may add other components like
-    usual
+  usual
 
 You can drag and drop it into a folder to create a prefab,
 then in a level manager,
@@ -37,9 +38,9 @@ you can
 
 * easily create a blur screen
 * create a custom LoadingScreen
-    * create an empty Game object (usually called LevelManager)
-    * add a LevelManager component
-    * you got what you want in SceneLoading
+  * create an empty Game object (usually called LevelManager)
+  * add a LevelManager component
+  * you got what you want in SceneLoading
 
 You may create a button loading another Level by adding
 
