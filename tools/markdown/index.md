@@ -7,7 +7,7 @@ simple documents...
 You can learn it in a couple of minutes.
 Here is an [amazing markdown guide](https://www.markdownguide.org/basic-syntax/).
 
-> All courses of this website is written
+> All courses of this website are written
 > in **Markdown** so you can contribute if you want
 > to 🙇. Thanks if you do.
 
@@ -19,12 +19,12 @@ You got 6 kinds of titles, created using ``#``.
 The more ``#`` you add, the smaller your title becomes.
 
 ```markdown
-# h1 - really big title
+# h1 - huge title
 ## h2
 ### h3
 #### h4
 ##### h5
-###### h6 - really small title
+###### h6 - tiny title
 ```
 
 **Note**: be sure to leave a space after ``#``
@@ -42,12 +42,13 @@ This is another paragraph.
 This is still the same paragraph, but you should
 not use this uncommon syntax.
 
-This **text is in bold** while this *text is in italic*.
-This is also in __bold__ while this is also in _italic_.
-This is in ***bold and italic***.
+This **text is in bold**, while this *text is in italic*.
+This is also in __bold__, while this is also in _italic_.
+And, this is in ***bold and italic***.
 
-And this is a ~~strikethrough text~~ but it's not
-supported everywhere it (ex: this website does not).
+And this is a ~~crossed text~~ (strike-through) but it's not
+supported everywhere it (ex: this website does not so you
+need to use the HTML tag "s").
 ```
 
 <hr class="sl">
@@ -65,7 +66,7 @@ You may use ``*`` or `-` or `+`. It looks like this
 * a 3rd item
 ```
 
-You can replace ``*`` by a number to make
+You can replace ``*`` with a number to make
 an ordered list. You can mix both too.
 
 ```markdown
@@ -139,7 +140,7 @@ at the right/left of ```---```.
 
 <hr class="sl">
 
-## emojis
+## Emojis
 
 You can write ``:emoji:`` to render an emoji, with
 "emoji" the one you want. The list of values can be found
@@ -185,7 +186,7 @@ And you can write comments with this syntax
 [//]: # (This may be the most platform-independent comment)
 ```
 
-This is a normal code block but this is a particular case,
+This is a normal code block, but this is a particular case,
 it's used a lot in documentation to show
 "what you could do before" and "what you need to do now".
 
@@ -199,9 +200,9 @@ it's used a lot in documentation to show
 
 ## HTML in Markdown
 
-You can use HTML in markdown. But beware, you can't
-use markdown **inside** HTML tags unless you make
-a blank line this this
+You can use HTML in Markdown. But beware, you can't
+use Markdown **inside** HTML tags unless you make
+a blank line like this
 
 ```markdown
 <div>
