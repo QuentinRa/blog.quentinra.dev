@@ -1,60 +1,60 @@
 # Introduction
 
 This is not a course, simply a gathering of
-notes about unity be someone still learning it.
+notes about unity by someone still learning it.
 
 Unity is a game engine that you can download
 [here](https://store.unity.com/fr#plans-individual),
 you may use the student plan (if you are a student)
-and you should also apply to
-[github student pack](https://education.github.com/pack).
+and you may also apply to
+[GitHub student pack](https://education.github.com/pack).
 You will then download
 
 * **unity hub**: software to manage unity versions
 and projects
 * **unity**: downloaded through unity hub, usually peoples
-are using LTS (Long term support) versions of unity
-  because unity will still be maintained (bugs only)
+  are using LTS (Long-term support) versions of unity
+  because they will still be maintained (bugs only)
   for 2 years.
   
 Then what I did after that was playing with the samples
 and following tutorials like 
 [RPG in 1 hour](https://learn.unity.com/project/creator-kit-rpg?uv=2020.3)
 
-Some tips I'm gathering are [here](tips.md)
-and [here](tde.md) are my notes about the
-TopDownEngine (paid asset).
+Some tips I'm gathering [tips about unity here](tips.md)
+and [here are my notes about the
+TopDownEngine](tde.md) (a paid asset).
 
 <hr class="sr">
 
-## Github in Unity
+## GitHub in Unity
 
-Unity projects are made of a lot of files, and big files
-too so you can't GIT them. Github allows you to use LFS
+Unity projects are made of a lot of files, including big files
+too, so you can't commit them. GitHub allows you to use LFS
 to transfer big files and you got a plugin making things
 simple in unity.
 
 * [Follow this tutorial](https://medium.com/@j0hnm4r5/git-with-unity-92ca7854ea3d) (external)
-* [Github for unity](https://unity.github.com/)
-* [Github for unity (Git)](https://github.com/github-for-unity/Unity/blob/master/docs/using/quick-guide.md)
+* [GitHub for unity](https://unity.github.com/)
+* [GitHub for unity (Git)](https://github.com/github-for-unity/Unity/blob/master/docs/using/quick-guide.md)
 
 Here are my steps
 
 * download GitHub for unity (2nd link)
-* you got a .package
+* you got a ".package"
 * open your project, and drag and drop it 
   inside **project window** (the file explorer,
   the bottom left panel)
 * then click on "import" on the panel that opened
-* then you can show git tab using Window > Github
-* *you may have to install [github lfs](https://git-lfs.github.com/)*
+* then you can show git tab using Window > GitHub
+* *you may have to install [GitHub LFS](https://git-lfs.github.com/)*
 
 <hr class="sl">
 
 ## Starting in unity
 
 When you are opening a project, by default you got
-4 menus.
+4 windows.
 
 * **hierarchy window** (left): list of all **GameObjects**
 * **scene window** (middle): a scene is like a screen of your
@@ -66,7 +66,7 @@ game (by default you are in the sample scene)
 of the selected **GameObject**
 * **project window** (bottom): all of your project files
 
-The project files are usually split using these folders
+The project files are usually split into folders, using these folders
 names
 
 * **Animations**, **Audio**, **Cutscene**
@@ -84,6 +84,7 @@ names
 Some shortcuts
 
 * ``F``: focus a GameObject
+* ...
 
 <hr class="sl">
 
@@ -100,7 +101,7 @@ is a convenient way of creating 2D maps since
   
 Creating a layer allows you to put things on top of another.
 In Unity, you will have a grid and each tilemap is a layer.
-If you want something to be bellow / on top of the player,
+If you want something to be above or below the player,
 then play with ``Order in Layer`` property.
 
 <hr class="sl">
@@ -109,7 +110,7 @@ then play with ``Order in Layer`` property.
 
 I'm using Rider to edit my C# files. I'm gone to
 ``edit > preferences > external tools`` and selected
-Rider as External tools editor.
+Rider as External tools' editor.
 
 Sample empty class
 
@@ -131,22 +132,23 @@ You can declare fields ``SerializeField`` so that you can
 modify this property inside unity
 
 ```cs
-// you can also make it public
+// same as public
 [SerializeField] private bool test;
 // make a class available in "folder/.../name" in the
 // component selector
 [AddComponentMenu("folder/class")]
 // adding tooltips
 [Tooltip("blah blah blah")]
-// The following attributes will be in this header
+// The following attributes will be inside this header
 [Header("a header")]
 // ...
 // Spacing
 [Space(value)]
 ```
 
-Let's says you attached this c# script
-to an entity, then you can get other properties (like
+Let's say you attached a C# script
+(add script, mono behavior, on a GameObject)
+to a GameObject, then you can get other properties (like
 the collider, ...) using
 
 ```cs
@@ -185,9 +187,9 @@ to add things like gravity and make your player fall...
 If you don't want your "player to fall" but you want a Rigid
 body, then some are setting gravity to 0.
 
-When you are moving a gameObject using your handwritten
+When you are moving a GameObject using your handwritten
 script, don't forget to use this 
-``pos * Time.deltaTime * speed`` (so use the
+``pos * Time.deltaTime * speed`` (=use the
 deltaTime). It will make things smoother since your
 character will move at an almost constant speed.
 
@@ -222,26 +224,26 @@ define what makes you move from idle to running.
 Create and add an animator controller to a GameObject.
 Then create animations (you need to select the time
 and the image loaded at this time). Then in the animator,
-you must add transition 
+you must add the transitions.
 
 * select a parameter
-  * in animator create a parameter
+  * in animator, create a parameter
   * in the transition, add a condition on the parameter
   * in the code, change the parameter
   
 ```cs
-// let's says that at some point you did
+// let's say that at some point you did
 Animator anim = GetComponent<Animator>();
 // then you can write in Update
-// (you should not use a string but an id, stored in a static 
+// (you should not use a string but an ID, stored in a static 
 // const using Animator.StringToHash("name"))
 anim.SetBool("name", false);;
 anim.SetFloat("name", 0);;
 anim.SetInteger("name", 0);;
 anim.SetTrigger("name");;
 
-// some are also using
-// instead of params and so on (so you are
+// some are also using this
+// instead of parameters and so on (so you are
 // manually asking for an animation)
 anim.Play("anim_name");
 ```
@@ -253,7 +255,7 @@ anim.Play("anim_name");
 
 This is a summary of this 
 [great video](https://www.youtube.com/watch?v=Gf8LOFNnils&ab_channel=PandemoniumGames) 
-if you can watch it that's better.
+if you can watch it, that's better.
 
 <hr class="sl">
 
@@ -271,20 +273,20 @@ you can
   * anchor presets: alt + stretch x/y (bottom right corner)
   * then drag and drop an image into the slot
   * you may have to transform your image into a sprite
-  * video [here](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode)
+  * [video here](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode)
   * to make a **blur** background (like your game
     behind the UI) it's complicated 
-* you create buttons with ui > buttons then set the text,
+* you create buttons with ui > buttons, then set the text,
   you may set an image as a background (you may
   look into [9patch](https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/9-patch),
   explained in the video too)
-* you create labels with ui > text then set the text
+* you create labels with ui > text, then set the text
 * you can use layouts (like in Java) 
   but using anchors may be enough for a simple UI
   ([video here](https://www.youtube.com/watch?v=HwdweCX5aMI&ab_channel=GameDevGuide))
 * if you want some resizing (and you are not using
   anchors) then 
-  * add a canvas scaler to your canvas
+  * add a "canvas scaler" to your canvas
   * set scale mode to "scale with the screen size"
   * and give it a size
 
@@ -292,7 +294,7 @@ You can make your hierarchy looks better using
 this [plugin](https://github.com/febucci/unitypackage-custom-hierarchy)
 following this [video](https://www.youtube.com/watch?v=Gma7IXPj4wI&ab_channel=CocoCode)
 
-You may create advanced buttons using this
+You may create advanced buttons like in this
 [video](https://www.youtube.com/watch?v=cW-E4WEogzE&ab_channel=CocoCode)
   * create a button add a text and an image
   * add a horizontal layout component to the button
