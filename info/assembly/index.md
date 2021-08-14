@@ -218,7 +218,7 @@ without needing to do complex operations.
 ## Sources
 
 * <https://community.arm.com/developer/ip-products/processors/b/processors-ip-blog/posts/condition-codes-1-condition-flags-and-codes>
-* <http://www.toves.org/books/arm/#s2>
+* <http://www.cburch.com/books/arm/index.html>
 * <https://www.tutorialspoint.com/assembly_programming/assembly_system_calls.htm>
 * <https://en.wikipedia.org/wiki/Stack_register>
 * <https://www.elprocus.com/what-is-stack-stack-pointer-types-operations-its-application/>
