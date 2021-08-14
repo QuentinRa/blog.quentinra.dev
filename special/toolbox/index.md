@@ -9,9 +9,9 @@ another course.
 
 1. [Images](images/index.md) (sauce, GIFs, edit, ...)
 2. [Fixing typos](writting/index.md)
-3. Temporary file hosting <https://filevert.fr/> (greenIT)
+3. Temporary file hosting <https://filevert.fr/> (green IT)
 4. [Safe browsing](website/checkers.md)
-5. [Saving, converting and/or Archiving](website/archive.md)
+5. [Saving, converting, and/or Archiving](website/archive.md)
 
 <hr class="sl">
 
