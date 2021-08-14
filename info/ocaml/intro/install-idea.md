@@ -68,6 +68,6 @@ a configuration problem but I won't search.
 * <https://github.com/idkjs/coding-ocaml-js-node>
 * <https://plugins.jetbrains.com/plugin/9440-reasonml>
 * <https://github.com/giraud/reasonml-idea-plugin>
-* <https://reasonml-editor.github.io/reasonml-idea-plugin/> (broken as of 06/14)
+* <https://giraud.github.io/reasonml-idea-plugin/>
 
 That may or not help. Seems like we could also use Node.

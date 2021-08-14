@@ -7,7 +7,7 @@ but just in case, here is a copy.
 
 **OCaml version that will be installed is 4.08**.
 
-1. Download ocaml 4.08 [here](https://lgs-games.com/assets/file/ocaml_4-08.zip)
+1. Download ocaml 4.08 [here](https://chadok.info/~cmouille/ocaml_4-08.zip)
 2. extract in ``C:/``
 3. open a terminal
 4. write ``C:\ocaml\bin\ocamlc.exe -v`` (should print version)
