@@ -35,6 +35,11 @@ So first of all, you need to
 * [set things up locally](local-install.md)
 * [set things up server-side](server-install.md)
 
+As a side note before starting, you can create
+aliases for a command like ``git name``
+with the command `git config --global alias.name 'a command'`
+where a command could be ``add .`` or `commit`...
+
 <hr class="sl">
 
 ## Basic usage
@@ -238,6 +243,18 @@ You can also **create a skyline** with your
 contributions using <https://skyline.github.com/>.
 
 <hr class="sr">
+
+## Cheatsheet
+
+You may look at these cheat sheets
+
+* [GitLab Cheatsheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
+* [GitHub Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
+* [GitHub Cheatsheet (2)](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
+* [cheat-sheets.org](http://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf)
+* [Atlassian Cheatsheet](https://www.atlassian.com/dam/jcr:e7e22f25-bba2-4ef1-a197-53f46b6df4a5/SWTM-2088_Atlassian-Git-Cheatsheet.pdf)
+
+<hr class="sl">
 
 ## Sources
 
