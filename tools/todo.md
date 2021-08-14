@@ -12,6 +12,7 @@
     - CTest
 - Git
     - adding merge graph example
+    - copilot: https://www.sitepoint.com/github-copilot-ai-pair-programming/
 - Latex
     - work on ref
 - Markdown
