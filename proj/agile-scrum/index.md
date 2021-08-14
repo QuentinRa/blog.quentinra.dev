@@ -9,15 +9,16 @@ interact with him called **product owner**. Your goal
 with be to create from these specifications the minimum to
 have a project that is working.
 
-Once you have that, you will demonstrate in front of
-the client, who will update the **product backlog**
+Once you have that, you will demonstrate your product
+in front of the client, 
+who will update the **product backlog**
 to request some changes since he may have changed his
 mind. Then you start again another cycle to implements
-some functionalities requested until the last demonstration
+some of the requested functionalities until the last demonstration
 where the client is satisfied. Each one of these iterations
 is called a **sprint**.
 
-A **sprint** is treated as a project as a whole, meaning
+A **sprint** is considered like a project as a whole, meaning
 you would do your specifications, code, and test them.
 You will do the same as you are doing for the project 
 and add functionalities one after another until you reached
@@ -29,8 +30,8 @@ your **goal**.
 
 You would usually need
 
-* **Product Owner**: the only one interacting with the client
-* **Scrum master**: make sure that scrum is applied correctly
+* **Product Owner**: interact with the client
+* **Scrum master**: overview that Scrum is correctly used/applied
 * **Dev team**: a team of usually 3 to 9 peoples
 * Your [scrum guide](https://agilemanifesto.org/)
 
@@ -64,21 +65,21 @@ for everyone's help in the ``daily scrum``.
 
 Agile-Scrum is based on 5 values
 
-* **Courage** : face your problems and do what must be done
-* **Focus** : concentrate on the sprint goal
-* **Commitment** : be committed to your work
-* **Respect** : be respectful to others
-* **Openness** : be open to changes or evolutions
+* **Courage**: face your problems, and do what must be done
+* **Focus**: concentrate on the sprint goal
+* **Commitment**: be committed to your work
+* **Respect**: be respectful to others
+* **Openness**: be open to changes or evolutions
 
-You must do everything to
+You must
 
-* make your client happy
-* allow changing the specifications
-* frequently deliver a working software
-* users and devs are working together
-* interact face-to-face
-* your development speed must be stable
-* always strive to do better
+* do everything to make your client happy 😊
+* allow changing the specifications  ✍️
+* frequently deliver a working software 💻
+* make sure that users and devs are working together 😏
+* interact face-to-face 🗣️
+* have a stable development speed 🧐
+* always strive to do better 👌
 
 <hr class="sr">
 
