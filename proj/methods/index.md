@@ -40,6 +40,10 @@ work on your friend's computer and code with him. This
 may help for debugging the code too, aside from remotely working
 in pairs.
 
+An extension of this method, where instead of 2,
+the whole team (😰) is working on one computer,
+is called [Mob programming (Wikipedia)](https://en.wikipedia.org/wiki/Mob_programming).
+
 <hr class="sl">
 
 ## Model-driven development (MDD)
