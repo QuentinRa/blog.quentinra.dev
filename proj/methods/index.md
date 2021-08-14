@@ -14,12 +14,12 @@ that we couldn't introduce somewhere else.
 
 ## Pair-programming
 
-Quite a simple method. It's usually used in
-agile-projects, one of the extreme programming
+This is quite easy. It's usually used in
+agile-projects, since it's one of the extreme programming
 methods. 
 
-> Two persons and one computer, one code, while the
-> other
+> You got **two persons** and **one computer**, 
+> one code, while the other
 > 
 > * gives advice (help, improvements)
 > * ask for explications about what's this part
@@ -28,12 +28,12 @@ methods.
 >   argument or an invalid usage)
 
 The two should switch roles at least once in a while. This
-will help writing better code, maybe faster since "4
-eyes are better than two". It's quite useful to train
+will help writing a more maintainable code, maybe faster 
+since <q>Four eyes are better than two</q>. It's quite useful to train
 a new developer so I'm practicing that a lot when
 starting a project with a less experienced developer
 to make sure that they don't waste time on useless
-stuff and increase their skills faster.
+stuff and improve their skills faster.
 
 You got tools like VSC / IntelliJ allowing you to
 work on your friend's computer and code with him. This
@@ -47,20 +47,21 @@ in pairs.
 You will create a model during the conception
 phase. Then your code will be the exact representation
 of the model (same attributes, classes, ...),
-at least the public part. If you need to add something,
+at least the "public" part of your code. If you need to add something,
 then first change the model.
 
 This method is quite powerful but will ask you to do
 quite a lot of job during the conception
-(since the development will be quite easy and fast).
+(since the development will be quite easy and fast,
+or a least very straightforward).
 
 * [User stories](mdd/user-stories.md)
 * [Class diagram](mdd/class.md)
 * [Sequence diagram](mdd/seq.md)
 * And now code the application. Using StarUML
-  you can generate Java code from UML.
+  you can generate Java code from your UML diagrams.
 
-Since I don't like wasting my time to fit a method pattern, I think
+Since I don't like wasting my time, I think
 you should
 
 * do a mockup of your application
@@ -69,14 +70,15 @@ you should
 * then do the **MDD** method
 
 By doing so, you will most likely find more 
-things than doing, again and again, loops
-using the sequence diagram to find missing
-classes/attributes/relations... 
-Using Boostrap/an app makes it easy to create
-a mockup at least I'm doing this for all my
-apps and I feel like it's worth it
-(check [HMI](../hmi/index.md) course to get 
-some tips/apps).
+things than doing, again and again, loops,
+using the sequence diagram to find the missing
+classes/attributes/relationships... Or coding then going
+back to update the model... 
+I'm using boostrap and it makes' it easy to create
+a mockup (at least I'm doing this for all my
+apps and I feel like it's worth it).
+Check the [HMI](../hmi/index.md) course to get 
+some help.
 
 <hr class="sr">
 
@@ -85,31 +87,34 @@ some tips/apps).
 That's something I came up with... or
 [not](https://gist.github.com/zsup/9434452).
 
-I trough according to the agile method, that It's
+I trough, according to the agile method, that it's
 better when a programmer know what we are asking him
-to code. So using this method, you should write the 
-documentation and the programmer must code according
-to the documentation. If something needs to be changed,
+to code before starting to code. 
+The idea is that you should write the 
+documentation first, and the programmer must code exactly
+what's written in the documentation.
+If something needs to be changed,
 then changing the documentation comes first.
 
-This is a sort of "design by contract" kind of methods
+This is a sort of "design by contract" kind of method,
 but it sure helps to have a clear (and not too long)
 description about what one should code.
 
 **Writing documentation is tiring through** so don't 
 forget **YAGNI**: don't code things
-that are not needing right now ("I will need this later")
-because that also means here more documentation.
+that you aren't needing right now ("I will need this later"),
+since, here, that also means more documentation.
 
 <hr class="sl">
 
 ## Data-driven programming
 
-*note*: beware that data-driven is also used BigData
+*note*: beware that "data-driven" is also a term used BigData
 but that's not the same, we even added "programming".
 
-For this one, you don't need a course, you are most likely
-using it. Simply make a program that will adapt itself
+For this one, you don't need a course, you are most
+likely already using it. 
+Simply make a program that will adapt itself
 according to the data provided.
 
 Something like making a file for the configuration
