@@ -1,40 +1,47 @@
 # Introduction
 
-You may have read in other courses about
+You may have learned in other courses that
+we have
 
-* test-driven, model-driven, ...
+* methods: test-driven, model-driven, ...
 * design patterns (and anti-patterns)
 * frameworks
 
-Using these, you will use the knowledge,
+Using these, you will be backed by the knowledge,
 experience and the code
 improved by a lot of developers before you.
-This course is a gathering of programmers principles
+But you will still have to write some code by yourself,
+and this course is a gathering of programmers principles
 that may help you write your code.
 
 <hr class="sr">
 
 ## Me
 
-Here are some of my troughs before starting
+Here are some of my troughs before starting.
 
-* I think your code should be enough **documented**
-  so that the programmer doesn't take hours trying
-  to understand what you tried to do, and not too much
-  otherwise, they may not read it (TL;DR focus on
-  readability and do not write useless stuff like
-  "@param i, an int" for the parameter "int i"...)
+I think, we should really consider using framework
+and tools created by other developers rather than
+writing everything from scratch. This should
+
+```diff
+- make the "setup" longer (installing a framework might not go smoothly)
+- force you to learn a new framework/... 
++ broaden your horizons (since you will learn how someone else tackled your need)
++ reduce the maintainer workload
++ it should reduce your workload too
++ reduce the complexity of your code (if not, pick another or publish your own)
+```
+
+Aside from that
+
+* I think you should properly **document** your code
+  (no too much documentation, consider the maintainer when coding)
 * you shouldn't copy-paste code from another part
-  of your code
-* you should use frameworks or other programmer works
-  (_if they are still maintained_) rather than rewriting
-  everything from scratch and increase
-    * your workload
-    * the complexity of your code
-    * the workload of the next maintainers
-* give relevant names to your functions/variables
-  (only when that's useful like ``i`` is better than
-  ``index`` if ``i`` is a simple index) and declare
+  of your code (anyone will tell you this one)
+* give relevant names to your functions/variables,
+  **but** only when that's useful like ``i`` is better than
+  ``index`` if ``i`` is a simple index. Declare
   them at the start of a bloc.
 
 <hr class="sl">
@@ -44,15 +51,14 @@ Here are some of my troughs before starting
 **Don’t repeat yourself (DRY)**: Do not copy-paste code,
 make a function. Otherwise, you need to remember that you
 will have ``n`` places to patch if you found a bug,
-not worth it. You should also use constants rather than
-writing, again and again, a value like ``"toto"`` (for
-instance) in the code.
+and that's not worth it. You should also use constants rather than
+writing, again and again, a value like ``"toto"`` in your code.
 
 **you ain't gonna need it (YAGNI)**: don't write code
 unless you need it.
 
 **Keep it simple, stupid (KISS)**: simple code means
-less code, easier to debug, easier to modify so don't
+less code. It's easier to debug and to modify, so don't
 make things complicated.
 
 **Code For The Maintainer**: write your code like you
@@ -79,7 +85,7 @@ problem so talk to your rubber duck :)
 
 **Murphy's Law**: "Anything that can go wrong will go wrong.".
 Don't think "xxx won't do that" and skip some code, because
-"xxx" will (calling a method using wrong parameters, ...).
+"xxx" will (calling a method using the wrongs parameters, ...).
 
 **Do The Simplest Thing That Could Possibly Work**:
 Simply write as little as
@@ -94,13 +100,16 @@ through.
 SOLID is an acronym for
 
 * **S (Single)**: Do one thing
-* **O (Open/Closed)**: use inheritance to modify a class
-* **L (Liskov substitution)**: variables of type A can be replaced by inheritors A
+* **O (Open/Closed)**: use inheritance to modify a class like
+  * if you want to modify, you can
+  * but if you want to add a public member, then inherit the class
+  * "Open for extension, closed for modification"
+* **L (Liskov substitution)**: variables having the type A can store inheritors of A
 * **I (Interfaces segregation)**: split big interfaces into a bunch of small ones
 * **D (Dependencies inversion)**: create layers using interfaces and abstract classes
 
 This is a bit more complicated and will require knowledge
-in Oriented-object. You should check [Wikipedia](https://en.wikipedia.org/wiki/SOLID).
+in Oriented-object. You should check [SOLID principles on Wikipedia](https://en.wikipedia.org/wiki/SOLID).
 
 <hr class="sr">
 
@@ -152,8 +161,8 @@ alt="meme" width="500"/>
 
 After discovering this [repository](https://github.com/trekhleb/state-of-the-art-shitcode)
 which is quite good for explaining what you mustn't do,
-I looked on Github "best-practices repository",
-here is a summary of the repository above and many others.
+I looked on Github "best-practices repository".
+Here is a summary of the repository above and many others.
 
 <table class="table table-bordered table-striped table-dark">
 <thead>
