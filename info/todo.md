@@ -34,3 +34,4 @@
 - <https://unclebigbay.com/>
 - <https://www.freecodecamp.org/news/>
 - <https://github.com/NARKOZ/guides>
+- <https://buddy.works/tutorials>
