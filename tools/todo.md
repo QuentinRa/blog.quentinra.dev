@@ -3,12 +3,15 @@
 - Docker
     - check docker notes (sound)
 - JetBrains
-    - Jetbrains IDEs got updated to 2021.2
+    - CLion test Makefile
+    - new JavaFX wizard
+    - JLink artifacts
+    - "documentation" support
+    - add a project icon
+    - preview in the editor
+    - CTest
 - Git
-    - adding graphs (merge, ...)
-    - adding commands: log, ...
-    - work on ref
-    - work on config
+    - adding merge graph example
 - Latex
     - work on ref
 - Markdown
