@@ -1,8 +1,9 @@
 # HMI
 
-Human-machines interfaces are the interfaces
-that the final user will use to use a program,
-website, ...
+Human-machines interfaces (`IHM = Ìnterfaces Homme-machine`)
+are interfaces connecting the interactions between humans
+and a machine. For instance, this could be a program
+or a website.
 
 You must think a lot about how you should create one,
 and that's the purpose of this course.
@@ -15,18 +16,17 @@ You will need
 
 * to think about where you put the elements
 of your interfaces, by creating ``wireframes``
-* you would need to think about what elements
-do you need in your interfaces
-* you must think about how to sort things like
+* you will need to think about what elements you need in your interfaces
+* you must think about how you will sort things like your
 menus to make them simple and intuitive
   
 A wireframe is literally a frame of your application,
 you can draw it by yourself or use tools like
 
-* powerpoint
+* powerpoint (no don't)
 * [diagrams](https://app.diagrams.net/)
 * [sketch](https://www.sketch.com/) (macOS)
-* Photoshop (paid)
+* Photoshop (paid, for professionals)
 * [Justinmind](https://www.justinmind.com/)
   (trial available but paid, **the best of all**)
 * [moqups](https://moqups.com/) (**the best for free**, account required)
@@ -40,45 +40,49 @@ or make optimal choices : [optimalworkshop](https://www.optimalworkshop.com/).
 
 ## Users
 
-Before coding some application, one must think about the
-future users
+Before coding some application, you must think about what
+kinds of persons will use it
 
-* lang/country
+* language/country
 * age
 * colour-blind, partially sighted ...
 * culture
-* devices (computer ? keyboard ? mouse ?)
+* devices (computer? keyboard? mouse?)
 * screen orientation, size on tablet/phone
 * day/night mode
 * knowledge about computer/...
-* illiterate ?
+* illiterate?
 
 You can't make something that would be perfect and good for everyone
 but try to make some categories of users and provide them
 an application that would aim to satisfy most of their
-requests.
+requests. For instance, you can 
+
+* make a website/app per country,
+* add a settings tab to enable the day/night mode,
+* think about the color-blind users when designing,
+* make your website/app responsive
+* ...
 
 <hr class="sl">
 
 ## Steps
 
 1. create some categories of users
-2. ask some real persons matching your categories
+2. ask persons matching your categories
 where they would go to find XXX in the menus, ...
 in order to test your interface.
-3. create some ``UML`` diagrams to formalize
+3. create **UML**'s diagrams to formalize
 the interactions between the application and users
 4. make a static mockup
 5. test your mockup
 6. make a dynamic mockup (links working, some code, ...)
 7. test again
 
-OR you can follows theses steps
+OR you can follow my steps
 
-1. categories of users / tests on some users
-2. create a dynamic mockup
-3. and repeat theses steps
-
+1. create a dynamic mockup
+2. and repeat theses steps
     1. test and reviews by users
     2. filter changes to be made 
     3. implement one or more changes
@@ -87,30 +91,29 @@ OR you can follows theses steps
 
 ## Jakob Nielsen
 
-Because if you need more than a bit of theory,
 Jakob Nielsen wrote the **10 principles** that
 you MUST take into account.
 
 1. keep the user updated on what's happening
 
    > * if something is being loaded, ... tell it to the user.
-   > * the user should know the page where he is
-   > * buttons should have a change when hovered
+   > * the user should know where he is (ex: which page?)
+   > * buttons should have a change when they are hovered/pressed/...
 
 2. Do not do something complex, follow the conventions
 
-   > * close is a the top-right
-   > * Skeuomorph design : we are expecting a online book
+   > * ex: the close button is at the top-right of the screen
+   > * Skeuomorph design: we are expecting a online book
    > to work like a real book
 
 3. Let the user be free
 
    > * allow the user to cancel an action
-   > * user must see they can escape
+   > * user must see they can "escape"
 
 4. Norms, directives, habits
 
-   > * we are expecting in a family of software
+   > * ex: we are expecting a software of the same family
    > to be similar
    > * we are expecting a 🛒 shopping cart on a marketing
    > website to see the list of our items
@@ -118,19 +121,18 @@ you MUST take into account.
 5. Prevents errors
 
    > * do not let the user make mistakes, you should
-   > code or use the right input fields if you expect
-   > some value.
+   > code or use the right kind of input field if you expect
+   > a specific kind of value.
    > * asking the user confirmation might also
    > be a good practice.
-   > * you should add a little of help or a message
+   > * you may add a small help, an example, or a message
    > saying what you are expecting
 
 6. Users shouldn't need to learn
 
    > A MCQ is easier that an open question... Make it
-   > so that the user can remember something instead
-   > of learning it like using some kind of style
-   > or tips.
+   > so that the user will recognize instead of remembering.
+   > You may use a particular kind of style or add tips.
 
 7. Flexibility
 
@@ -140,19 +142,19 @@ you MUST take into account.
 
 8. Aesthetic
 
-   > Do not write hundred of words, add useless images, ...
+   > Do not write hundreds of words, add useless images, ...
    > to say something that
-   > would require less than five. Be clear, short and
-   > concise.
+   > would fit in less than 10 words.
+   > **Be clear, short and concise**.
 
 9. Robustness
 
-   > Handles all cases of errors or mistakes.
+   > You should handle any kind of error or mistake.
 
 10. Documentation
 
-    > In last resort, adding some documentation
-    > for complex applications is the way to go.
+    > As a last resort, you may add a documentation
+    > for complex's applications.
 
 <hr class="sl">
 
@@ -162,7 +164,8 @@ It may be better to load everything needed at the start
 of the application rather that using `lazy` practices
 and making the user wait a lot of times.
 
-Screens will most likely be larger rather that longer
+A screen will most likely have more width
+than height
 so you should exploit the width.
 
 If you need more that 3 clicks to do one action, and
