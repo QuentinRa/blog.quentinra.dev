@@ -3,14 +3,14 @@
 [Go back](..)
 
 Create a **class diagram** of your application. You
-may only write the classes names first, maybe some
+may only write the classes' names first, maybe with some
 attributes/methods and come back after creating some
 **sequences diagrams**.
 
 The relations between classes are the representation
-of the references. If ``A`` got a reference to an instance
+of the references. If ``A`` got a reference which is an instance
 of ``B`` then we have `A -> B` (and you may write the
-instance name).
+instance's/variable's name).
 
 > **Side note**: I'm enjoying using different colors for the different
 > kind of classes like the classes of the VIEW, the MODEL

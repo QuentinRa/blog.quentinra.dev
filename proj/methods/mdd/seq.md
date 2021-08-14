@@ -10,13 +10,13 @@ Execute your program.
 * What are the values of their arguments?
 
 A sequence diagram
-is in a way an algorithm of one instance of your program,
+is in a way an algorithm of **one instance of your program**,
 calling the classes and methods that you will define in
 the **class diagram**.
 
 <hr class="sl">
 
-**StarUML specific**
+**StarUML-specific note**
 
 You should not create new objects/... What I mean
 is that you defined the classes in the **class diagram**
