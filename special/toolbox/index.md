@@ -11,6 +11,7 @@ another course.
 2. [Fixing typos](writting/index.md)
 3. Temporary file hosting <https://filevert.fr/> (greenIT)
 4. [Safe browsing](website/checkers.md)
+5. [Saving, converting and/or Archiving](website/archive.md)
 
 <hr class="sl">
 
