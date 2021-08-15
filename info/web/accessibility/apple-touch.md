@@ -13,6 +13,8 @@ This is because of [this article](https://webhint.io/docs/user-guide/hints/hint-
 
 ## Solution
 
+```html
 <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
 
 <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+```
