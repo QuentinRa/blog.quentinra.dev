@@ -188,7 +188,7 @@ of someone else (not related to GPG)
 is a sort of GitHub action for automatic
 deployment. Currently, there are not that many languages
 supported but still you may want to check it out.
-They have a [student](https://www.heroku.com/github-students)
+They have a [student](https://www.heroku.com/students)
 offer if needed.
 
 The short videos on their website

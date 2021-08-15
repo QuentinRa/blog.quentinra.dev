@@ -1,6 +1,6 @@
 # Remote
 
-[Go back](..#clion)
+[Go back](../index.md#clion)
 
 Check the compiler section to use a remote compiler.
 [The official tutorial](https://www.jetbrains.com/help/clion/remote-projects-support.html)

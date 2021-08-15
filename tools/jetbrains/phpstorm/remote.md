@@ -1,6 +1,6 @@
 # Remote
 
-[Go back](..#phpstorm)
+[Go back](../index.md#phpstorm)
 
 * New project from existing files
 * Web server is a remote host ... FTP

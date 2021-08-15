@@ -1,6 +1,6 @@
 # Debug
 
-[Go back](..#clion)
+[Go back](../index.md#clion)
 
 In the left column, you can place breakpoints.
 

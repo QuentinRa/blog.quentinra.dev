@@ -1,6 +1,6 @@
 # Project Structure
 
-[Go back](../index#intellij-idea)
+[Go back](../index.md#intellij-idea)
 
 * **Project** : set up your JDK
 * **Modules**

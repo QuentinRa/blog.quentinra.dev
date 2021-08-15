@@ -1,6 +1,6 @@
 # Compiler
 
-[Go back](..#clion)
+[Go back](../index.md#clion)
 
 * ``Settings > Build, ... > Toolchains``
 * ``+``

@@ -1,6 +1,6 @@
 # Launch website
 
-[Go back](..#phpstorm)
+[Go back](../index.md#phpstorm)
 
 Open an ``HTML`` or `PHP` file. Then you should
 see those
