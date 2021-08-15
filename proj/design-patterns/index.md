@@ -1,126 +1,119 @@
 # Design patterns
 
-Most of the time when coding, you will write some
-part of code that a lot of developers have written before
+Most of the time when coding, you will some code
+code that a lot of developers have written before
 you. Design patterns are the result of their reflection
-on how one should implement this code.
+on how you write this code.
 
-There a 4 great kinds of design patterns
+There are 4 great categories of design patterns
 
-* **creation** : how to create objects
-* **structure** : how to structure your code
-* **behaviour** : how to make the interactions between objects
-* **architectural** : how to think your code
-* and **anti-patterns** : what you **mustn't** do
+* **creation**: how to create objects
+* **structure**: how to structure your code
+* **behavior**: how to make the interactions between objects
+* **architectural**: how to think your code
+* and **anti-patterns**: what you **mustn't** do
 
-Just so you know a **GREAT** tip: if you copy and paste 
-some code then in 100% of cases, you are doing a mistake.
+Notes
 
-You may, should, and must check this course 
-<https://www.gofpatterns.com/design-patterns/module1/intro-design-patterns.php>
-about design patterns since the official one may help and be more accurate than
-this one.
-
-**edit 24/06/2021**: I recently found this website
-[https://java-design-patterns.com/](https://java-design-patterns.com/) and this
-GitHub [java-design-patterns](https://github.com/iluwatar/java-design-patterns)
-which are really good materials to start learning design-pattern 
-(maybe even better than this course so check them out). 
-Still, note that is **way too advanced and 
-different** than what you will learn in school.
-
-**edit 21/07/2021**: I found this
-great [website](https://sourcemaking.com/design_patterns)
-explaining both design patterns and anti-patterns with
-examples in a lot of languages.
+* the authors of this initiative, the Gang of four,
+  made a [tutorial here](https://www.gofpatterns.com/design-patterns/module1/intro-design-patterns.php).
+* **edit 24/06/2021**: I recently found this website
+  [this website](https://java-design-patterns.com/)
+  and [this GitHub](https://github.com/iluwatar/java-design-patterns)
+  which are really good materials to start learning design-pattern.
+  They are **different** from what I learned in school but
+  I may improve this course later using them.
+* **edit 21/07/2021**: Again, I found this
+  [great website](https://sourcemaking.com/design_patterns)
+  explaining both design patterns and anti-patterns with
+  examples in a lot of languages.
 
 <hr class="sl">
 
 ## Creation
 
-* [Factory](creation/factory.md)
-  : Delegate construction to a factory class (`Truc t = Factory.createTruc()`)
-* [AbstractFactory](creation/abstract-factory.md)
-  : A factory of factories.
-* [Singleton](creation/singleton.md)
-  : Only one instance of a class
-* [Multiton](creation/multiton.md)
-  : Only n instances of a class
-* [Prototype](creation/prototype.md)
-  : Clone instead of creating complex objects
-* [Builder](creation/builder.md)
-  : Break object creation into modules
-* [Object Pool](creation/object-pool.md)
-  : Create a finite pool of objects, allow others
-  classes to use them, then handles to cleaning afterwards.
+* [Factory](creation/factory.md):
+  delegate construction to a factory class (`Something s = Factory.createSomething()`)
+* [AbstractFactory](creation/abstract-factory.md):
+  a factory of factories
+* [Singleton](creation/singleton.md):
+  only one instance of a class
+* [Multiton](creation/multiton.md):
+  only n instances of a class
+* [Prototype](creation/prototype.md):
+  use cloning instead of creating (again) complex objects
+* [Builder](creation/builder.md):
+  break object creation into modules
+* [Object Pool](creation/object-pool.md):
+  create a finite pool of objects, allow others
+  classes to use them, then handles the cleaning afterwards.
 
 <hr class="sr">
 
 ## Structure
 
-* [Adaptor](structure/adaptor.md)
-  : Interface that the client wanted with our code and the client
-* [Facade](structure/facade.md)
-  : simplified API to use our code
-* [Composite](structure/composite.md)
-  : Abstract class implemented by children
-* [Bridge](structure/bridge.md)
-  : Interact with interfaces rather than concrete implementations
-* [Decorator](structure/decorator.md)
-  : Wrapper of a class to change a part of it,
+* [Adaptor](structure/adaptor.md):
+  interface linking what the client wanted with our code
+* [Facade](structure/facade.md):
+  simplified API to use our code
+* [Composite](structure/composite.md):
+  abstract class implemented by children
+* [Bridge](structure/bridge.md):
+  interact with interfaces rather than concrete implementations
+* [Decorator](structure/decorator.md):
+  wrapper of a class to change a part of it,
   alternative to inheritance.
-* [Flyweight](structure/flyweight.md)
-  : If you got a lot lot lot of objects then you can
-  use the flyweight.
-* [Proxy](structure/proxy.md)
-  : call a remote object or use an attribute of
+* [Flyweight](structure/flyweight.md):
+  if you got a lot of objects (like bullets in a game)
+  then you may use the flyweight.
+* [Proxy](structure/proxy.md):
+  call a remote object or use an attribute of
   a subclass to prevent yourself from coding some methods.
 
 <hr class="sl">
 
-## Behaviour
+## Behavior
 
-* [Chain of Responsibility](behaviour/chain-of-responsibility.md)
-  : Lists of class me may trigger for an action
-* [Iterator](behaviour/iterator.md)
-  : Iterates a list of Unknowns items
-* [Observable](behaviour/observable.md)
-  : watch object changes and trigger events
-* [Memento](behaviour/memento.md)
-  : save and load objects
-* [NullObject](behaviour/null-object.md)
-  : an empty object
-* [Command](behaviour/command.md)
-  : break into class the one using the command and the command
-* [Interpreter](behaviour/interpreter.md)
-  : language parser
-* [Template](behaviour/template.md)
-  : define classes properties
-* [State](behaviour/state.md)
-  : change object behaviour according to state
-* [Strategy](behaviour/strategy.md)
-  : family of objects
-* [Visitor](behaviour/visitor.md)
-  : object change according to visitor
-* [Mediator](behaviour/mediator.md)
-  : relation between classes
+* [Chain of Responsibility](behaviour/chain-of-responsibility.md):
+  ask a list of classes if they will deal with a task
+* [Iterator](behaviour/iterator.md):
+  iterates a list of Unknowns items
+* [Observable](behaviour/observable.md):
+  watch objects' changes and trigger events
+* [Memento](behaviour/memento.md):
+  save and load objects
+* [NullObject](behaviour/null-object.md):
+  use an empty object instead of null
+* [Command](behaviour/command.md):
+  break into classes the one using the command and the command itself
+* [Interpreter](behaviour/interpreter.md):
+  simple language parser
+* [Template](behaviour/template.md):
+  define classes properties
+* [State](behaviour/state.md):
+  change objects' behavior according to their state
+* [Strategy](behaviour/strategy.md):
+  family of objects
+* [Visitor](behaviour/visitor.md):
+  an object is changing according who visit it
+* [Mediator](behaviour/mediator.md):
+  handles the relations between classes
 
 <hr class="sr">
 
 ## Architectural
 
-* [MVC](architectural/mvc.md)
-  : Model - View - Controller
+* [MVC](architectural/mvc.md):
+  Model - View - Controller
 * DAO
-  : DAO (data access objet)
 
 <hr class="sl">
 
-## Exercises
+## What's the design pattern?
 
 1. I'm using a listener (a class listening to events like input...)
 ``ListChangeListener`` with `onChanged` in Java.
-   
+
 <blockquote class="spoiler">
 That's the <code>Observer/Observable</code> pattern since
 we <code>watch object changes and trigger events</code>.
@@ -169,27 +162,31 @@ iterators that are hiding using Iterator class).
 ## Anti-Patterns
 
 An anti-pattern is something that programmers often do
-yet they shouldn't. 
+**yet they shouldn't**. 
 [This website](https://sourcemaking.com/antipatterns/software-development-antipatterns)
-is a great reference and will provide
-better explanations if you got the time.
+is a great reference and they are providing
+better explanations (if you got the time to read
+them).
 
-* Spaghetti Code
+* Spaghetti Code 🍝
 
 Little to no modularity. In Java, writing a lot
 of methods in one class, adding on top of that
 inner/locale/nested classes make the code almost
-unreadable for me.
+unreadable for me. Same for people who are putting
+everything in one python script.
 
-* Magic Numbers and Strings
+* Magic Numbers and Strings ✨
 
 One of the most used anti-pattern. Programmers tend to write
 a lot of numbers/strings inside the code but they
 are unnamed and should be stored inside a named
 constant so we understand what this
-value is supposed to be.
+value is supposed to be. In some languages, you may
+be able to use named parameters which are convenient
+when you are only using a value once.
 
-* Golden Hammer
+* Golden Hammer 🔨
 
 You are using things you are confident in because
 that's easier even though you know that this may not
@@ -198,28 +195,30 @@ code in Java taking hundred of lines because I know
 how to do a lot of things in Java even though I know I could
 use other languages like Python for what I wanted to do.
 
-* Boat Anchor
+* Boat Anchor ⚓
 
 You coded something for later but didn't need it yet,
 **YAGNI principle**, You Ain't Gonna Need It.
 
-* God Object/Class or "The Blob"
+* God Object/Class or "The Blob" ⛪
 
 If you are using an object in too many parts of your code,
 then maybe his class is doing too much. If you got
-a class having a lot of dependencies then this may
+a class having a lot of dependencies then that may
 be the case.
 
-* Premature Optimization
+* Premature Optimization 🐣
 
 Focusing too much on optimization without having
 a proper understanding of what you are trying
 to optimize. This may increase a lot the complexity
 of the code for almost nothing.
 
-* Cut-and-Paste Programming
+* Cut-and-Paste Programming 📝
 
-Do copy/paste code. Factorizing your code, using a function,
+**Do not copy/paste code** from one part of your
+code to another part.
+Factorizing your code, using a function,
 will help to patch all the bugs for this code at once,
 and make things more readable.
 
