@@ -1,30 +1,41 @@
 # Tests
 
-You must do some tests to check if your code or a project is working correctly.
+You must do some tests to check if your code 
+or your project is working correctly.
 In futures versions, they might help you find some bugs.
 
-But to write tests, you need to find the
-part of your code needs some tests, which ones and
-that can be hard.
+To write tests, you need to find 
+the parts of your code that needs to be tested,
+and that can be hard. 
+You may also have to think about what you
+are going to test given a function/bloc of code.
 
 So in this course, you will see
 
 * the theory behind tests
 * contact-programming methodology
 * defensive-programming
-* test-driven and behavior-driven development
+* **test-driven** and behavior-driven development
 * how to find tests
-* What are assertions
+* what are **assertions**
 
-After learning theses, you should try writing some
-tests by checking the ``tests`` part in others
-languages courses such as ``Java``, `C`, `PHP`
-or ``JS``. If you are aiming to learn by practicing
-then language-specific courses might be more of a help.
+This course will focus on the theory, but you
+should be able to find in the **Java** course,
+the **PHP** course, etc. a section about tests.
+
+**edit 15/07/2021**: I recently learned the
+notion of **coverage**. A lot of tools, introduced
+in the Git course, inside the fancy notes section,
+are scanning your code and telling you which **paths**
+of your code are covered by tests. Now, I think that
+programmers should have a clear idea of what
+they have to tests to it makes things easier, 
+as *all they have to do* 
+is to write the most meaningful tests 😎.
 
 <hr class="sl">
 
-## Tests
+## Testing
 
 You can be in one of those situations
 
