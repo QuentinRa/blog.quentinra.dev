@@ -1,13 +1,18 @@
 # Scanners
 
-I have still looking for them, but here the
-website scanners that I found
+Here is a list of tools you may want to try
 
 * <https://www.ionos.com/tools/website-checker>
 * <https://sitechecker.pro/>
 * you can ask google for advices about
   * [pagespeed](https://developers.google.com/speed/pagespeed/insights/)
   * [lighthouse](https://web.dev/measure/)
+* <https://biq.cloud/rank-intelligence/> (create an account)
+* <https://www.siteliner.com/>
+
+<hr class="sl">
+
+## Tools
 
 And here some seo tools
 
