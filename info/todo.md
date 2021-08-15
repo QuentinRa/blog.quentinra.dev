@@ -26,6 +26,9 @@
     - https://www.bing.com/webmasters/help/url-submission-62f2860b
     - https://websiteseochecker.com/bulk-check-google-indexed-pages/
   - https://github.com/futurice/backend-best-practices
+- sql
+  - https://sql.sh/
+  - https://fxjollois.github.io/cours-sql/
 
 <hr>
 
