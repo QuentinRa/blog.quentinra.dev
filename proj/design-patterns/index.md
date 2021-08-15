@@ -74,29 +74,29 @@ Notes
 
 ## Behavior
 
-* [Chain of Responsibility](behaviour/chain-of-responsibility.md):
+* [Chain of Responsibility](behavior/chain-of-responsibility.md):
   ask a list of classes if they will deal with a task
-* [Iterator](behaviour/iterator.md):
+* [Iterator](behavior/iterator.md):
   iterates a list of Unknowns items
-* [Observable](behaviour/observable.md):
+* [Observable](behavior/observable.md):
   watch objects' changes and dispatch events
-* [Memento](behaviour/memento.md):
+* [Memento](behavior/memento.md):
   save and load objects
-* [NullObject](behaviour/null-object.md):
+* [NullObject](behavior/null-object.md):
   use an empty object instead of null
-* [Command](behaviour/command.md):
+* [Command](behavior/command.md):
   break into classes the one using the command and the command itself
-* [Interpreter](behaviour/interpreter.md):
+* [Interpreter](behavior/interpreter.md):
   simple language parser
-* [Template method](behaviour/template.md):
+* [Template method](behavior/template.md):
   define classes properties
-* [State](behaviour/state.md):
+* [State](behavior/state.md):
   change objects' behavior according to their state
-* [Strategy](behaviour/strategy.md):
+* [Strategy](behavior/strategy.md):
   family of objects
-* [Visitor](behaviour/visitor.md):
+* [Visitor](behavior/visitor.md):
   an object is changing according who visit it
-* [Mediator](behaviour/mediator.md):
+* [Mediator](behavior/mediator.md):
   handles the relations between classes
 
 <hr class="sr">
