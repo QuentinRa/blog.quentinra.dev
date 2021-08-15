@@ -10,7 +10,7 @@ default behavior
 * return 0, ...
 * returns another NullObject
 
-They are used to let the programmer choose when or how
+They are used to let the programmer choose **when** or **how**
 he will handle the NullPointerException, because
 in some cases, he might not want to handle it
 at all and use the default value.

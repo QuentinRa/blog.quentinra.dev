@@ -2,17 +2,19 @@
 
 [Go back](..)
 
-For instance, you could make a list of observer components
-and when an action is triggered (ex: undo) then tell
-every observer that action XXX happened.
+An observer is someone who want to be notified when
+an event occurred on an observable. This could be
+the UndoRedo class which want to be notified when
+we clicked (event=click) on undo or redo.
 
 * ✅ : simple communication
 * 🚫 : ...
 
+<hr class="sl">
+
 ## Example on Java
 
-In java < 9, when Observable/Observer
-where not deprecated.
+In Java < 9, when Observable/Observer where not deprecated.
 
 ```java
 import java.util.Observable;

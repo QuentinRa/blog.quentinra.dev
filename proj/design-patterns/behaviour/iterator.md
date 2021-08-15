@@ -2,13 +2,15 @@
 
 [Go back](..)
 
-The idea is to iterates an unknown group of objects
+The main idea is to iterate an unknown group of objects
 all having the same type. We could relate that to
 ``composite`` but that's not it since the type
 may be concrete or they may all have the same type.
 
 * ✅ : easy iteration
 * 🚫 : usually you can't modify the data of the iterator
+
+<hr class="sl">
 
 ## Example in java
 

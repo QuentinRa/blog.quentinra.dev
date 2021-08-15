@@ -2,15 +2,16 @@
 
 [Go back](..)
 
-You can use this to save an object. That would be used
+You can use this to save an object. That may be used
 by undo/redo application but in fact, it cost a bit
-too much so not many would use it.
-
+too much so not many seems to use it.
 In most cases, for an undo-redo, we will save the action
-that the user did or the action that we should do to undo
-the user action.
+that the user did or the action that we should do to undo it.
+
 * ✅ : convenient
 * 🚫 : costly
+
+<hr class="sl">
 
 ## Example
 
@@ -20,7 +21,7 @@ the user action.
 * we create a class ``Caretaker`` for all your mementos
 
     * ``add(Memento)``
-    * ``get(int)``
+    * ``get(int)`` (which of the stored memento you want?)
 
 Then on our object, we would add a method
 
