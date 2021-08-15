@@ -3,7 +3,7 @@
 You may already have ready about
 
 * SOLID, KISS, DRY, ... are in [Code guidelines](../guidelines/index.md)
-* Test-driven, Behaviour-driven are in [Tests](../tests/index.md)
+* Test-driven, Behavior-driven are in [Tests](../tests/index.md)
 * Design patterns are in [Design patterns](../design-patterns/index.md)
 
 and in this course, we will introduce other methods
@@ -14,9 +14,8 @@ that we couldn't introduce somewhere else.
 
 ## Pair-programming
 
-This is quite easy. It's usually used in
-agile-projects, since it's one of the extreme programming
-methods. 
+This is quite easy. It's usually used in agile projects,
+since it's one of the extreme programming methods.
 
 > You got **two persons** and **one computer**, 
 > one code, while the other
@@ -29,9 +28,10 @@ methods.
 
 The two should switch roles at least once in a while. This
 will help writing a more maintainable code, maybe faster 
-since <q>Four eyes are better than two</q>. It's quite useful to train
-a new developer so I'm practicing that a lot when
-starting a project with a less experienced developer
+since <q>Four eyes are better than two</q>. 
+It's quite useful to train a new developer,
+so I'm practicing that a lot when I'm starting a project 
+with a less experienced developer
 to make sure that they don't waste time on useless
 stuff and improve their skills faster.
 
@@ -55,9 +55,9 @@ at least the "public" part of your code. If you need to add something,
 then first change the model.
 
 This method is quite powerful but will ask you to do
-quite a lot of job during the conception
+quite a lot of work during the conception
 (since the development will be quite easy and fast,
-or a least very straightforward).
+or at least very straightforward).
 
 * [User stories](mdd/user-stories.md)
 * [Class diagram](mdd/class.md)
@@ -68,19 +68,19 @@ or a least very straightforward).
 Since I don't like wasting my time, I think
 you should
 
-* do a mockup of your application
-  (with events... maybe in Boostrap/JS or using
+* do a mock-up of your application
+  (with events... maybe in Bootstrap/JS or using
   an app)
 * then do the **MDD** method
 
 By doing so, you will most likely find more 
 things than doing, again and again, loops,
 using the sequence diagram to find the missing
-classes/attributes/relationships... Or coding then going
-back to update the model... 
-I'm using boostrap and it makes' it easy to create
-a mockup (at least I'm doing this for all my
-apps and I feel like it's worth it).
+classes/attributes/relationships...
+Or coding, then going back to update the model...
+I'm using Bootstrap, and it makes' it easy to create
+a mock-up (at least I'm doing this for all my apps,
+and I feel like it's worth it).
 Check the [HMI](../hmi/index.md) course to get 
 some help.
 
@@ -91,14 +91,11 @@ some help.
 That's something I came up with... or
 [not](https://gist.github.com/zsup/9434452).
 
-I trough, according to the agile method, that it's
-better when a programmer know what we are asking him
-to code before starting to code. 
-The idea is that you should write the 
-documentation first, and the programmer must code exactly
-what's written in the documentation.
-If something needs to be changed,
-then changing the documentation comes first.
+I thought, that it's better when a programmer knows 
+what we are asking him to code before starting to code.
+The idea is that you should write the documentation first,
+and the programmer must code exactly what's written in the documentation.
+If something needs to be changed, then changing the documentation comes first.
 
 This is a sort of "design by contract" kind of method,
 but it sure helps to have a clear (and not too long)
