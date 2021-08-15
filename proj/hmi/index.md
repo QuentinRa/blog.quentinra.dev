@@ -2,7 +2,7 @@
 
 Human-machines interfaces (`IHM = Ìnterfaces Homme-machine`)
 are interfaces connecting the interactions between humans
-and a machine. For instance, this could be a program
+and machines. For instance, this could be a program
 or a website.
 
 You must think a lot about how you should create one,
@@ -23,14 +23,14 @@ menus to make them simple and intuitive
 A wireframe is literally a frame of your application,
 you can draw it by yourself or use tools like
 
-* powerpoint (no don't)
+* PowerPoint (no, don't)
 * [diagrams](https://app.diagrams.net/)
 * [sketch](https://www.sketch.com/) (macOS)
 * Photoshop (paid, for professionals)
 * [Justinmind](https://www.justinmind.com/)
   (trial available but paid, **the best of all**)
 * [moqups](https://moqups.com/) (**the best for free**, account required)
-* or simply in HTML using Boostrap, simple and efficient
+* or simply in HTML using Bootstrap, simple and efficient
   (**my favorite alternative**)
 
 You can use this great website to think about menus
@@ -45,15 +45,15 @@ kinds of persons will use it
 
 * language/country
 * age
-* colour-blind, partially sighted ...
+* color-blind, partially sighted ...
 * culture
 * devices (computer? keyboard? mouse?)
-* screen orientation, size on tablet/phone
+* screen orientation, the size on tablet/phone
 * day/night mode
 * knowledge about computer/...
 * illiterate?
 
-You can't make something that would be perfect and good for everyone
+You can't make something that would be perfect for everyone
 but try to make some categories of users and provide them
 an application that would aim to satisfy most of their
 requests. For instance, you can 
@@ -70,19 +70,19 @@ requests. For instance, you can
 
 1. create some categories of users
 2. ask persons matching your categories
-where they would go to find XXX in the menus, ...
-in order to test your interface.
+   where they would go to find XXX in the menus, ...
+   to test your interface.
 3. create **UML**'s diagrams to formalize
 the interactions between the application and users
-4. make a static mockup
-5. test your mockup
-6. make a dynamic mockup (links working, some code, ...)
+4. make a static mock-up
+5. test your mock-up
+6. make a dynamic mock-up (links working, some code, ...)
 7. test again
 
 OR you can follow my steps
 
-1. create a dynamic mockup
-2. and repeat theses steps
+1. create a dynamic mock-up
+2. and repeat these steps
     1. test and reviews by users
     2. filter changes to be made 
     3. implement one or more changes
@@ -92,19 +92,19 @@ OR you can follow my steps
 ## Jakob Nielsen
 
 Jakob Nielsen wrote the **10 principles** that
-you MUST take into account.
+you should <s>MUST 😠</s> take into account.
 
 1. keep the user updated on what's happening
 
    > * if something is being loaded, ... tell it to the user.
    > * the user should know where he is (ex: which page?)
-   > * buttons should have a change when they are hovered/pressed/...
+   > * buttons should have a visual change when they are hovered/pressed/...
 
 2. Do not do something complex, follow the conventions
 
    > * ex: the close button is at the top-right of the screen
-   > * Skeuomorph design: we are expecting a online book
-   > to work like a real book
+   > * Skeuomorph design: we are expecting an online book
+   > to work the same as a real one
 
 3. Let the user be free
 
@@ -130,7 +130,7 @@ you MUST take into account.
 
 6. Users shouldn't need to learn
 
-   > A MCQ is easier that an open question... Make it
+   > A MCQ is easier than an open question... Make it
    > so that the user will recognize instead of remembering.
    > You may use a particular kind of style or add tips.
 
@@ -145,7 +145,7 @@ you MUST take into account.
    > Do not write hundreds of words, add useless images, ...
    > to say something that
    > would fit in less than 10 words.
-   > **Be clear, short and concise**.
+   > **Be clear and concise**.
 
 9. Robustness
 
@@ -161,15 +161,15 @@ you MUST take into account.
 ## Last tips
 
 It may be better to load everything needed at the start
-of the application rather that using `lazy` practices
+of the application rather than using `lazy` practices
 and making the user wait a lot of times.
 
 A screen will most likely have more width
 than height
 so you should exploit the width.
 
-If you need more that 3 clicks to do one action, and
-you do this action ofter then you MUST re-think your
+If you need more than 3 clicks to do one action, and
+you do this action often, then you MUST re-think your
 interface.
 
 <hr class="sr">
