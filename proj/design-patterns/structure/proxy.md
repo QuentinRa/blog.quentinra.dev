@@ -6,9 +6,11 @@ A class having an attribute being another class
 and using this other class to implements some methods.
 
 * ✅ : easy implementation, no extends
-* 🚫 : if too many methods to proxy
+* 🚫 : if you have too many methods to "proxy"
 
-## Example in java
+<hr class="sl">
+
+## Example in Java
 
 ```java
 import java.util.ArrayList;

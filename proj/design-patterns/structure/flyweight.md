@@ -2,5 +2,5 @@
 
 [Go back](..)
 
-Again, I advise reading the explanations
-[here](https://java-design-patterns.com/patterns/flyweight/).
+I advise that you read the explanations
+[about the Flyweight here](https://java-design-patterns.com/patterns/flyweight/).

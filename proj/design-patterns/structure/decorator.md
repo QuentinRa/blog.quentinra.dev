@@ -3,12 +3,15 @@
 [Go back](..)
 
 To put it simply, a decorator is a class taking another class
-into parameters and adding some functions to it. You may not add functions
-and simply modify one, but when you see a class given in argument that may be a hint
+as a parameter and adding some functions to it.
+You may not add functions and simply modify one, 
+but when you see a class given in argument that may be a hint
 like some ``new HTMLConverter(new Converter())``.
 
-* ✅ : save your ``extends`` slot
+* ✅ : keep your ``extends`` slot (you got only one in Java)
 * 🚫 : ???
+
+<hr class="sl">
 
 ## Example in Java
 

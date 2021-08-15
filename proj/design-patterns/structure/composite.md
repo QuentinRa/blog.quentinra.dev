@@ -5,20 +5,24 @@
 This pattern is exploiting ``Liskov substitution principle`` meaning a child-class
 can be viewed as a parent class.
 
-We will create a class ``parent`` with a method such as
-``get...``. Then we will have `children` extending our `parent` class
-and implementing this or these methods. Usually, of child do some recursive
-work meaning that he got an attribute with the type of the parent class. And
-the other one simply returns a value.
+We will create a class ``parent`` with a method such as ``get...``. 
+Then we will have `children` extending our `parent` class
+and implementing this or these methods. 
+Usually, one child do some recursive work because
+he got an attribute having the type of the parent class
+and he calls the method on it. 
+And the other one simply returns a value.
 
 * ✅ : generic, easy to ask for an information
 * 🚫 : ???
 
-## Example in java
+<hr class="sl">
 
-We got some components that can be either a file or a folder (meaning
-we can have others folders or files inside). We want to count the number
-of files.
+## Example in Java
+
+We got some components that can be either a file or a folder 
+(we can have others folders or files inside). 
+We want to count the number of files.
 
 ```java
 public interface Component {
@@ -27,7 +31,7 @@ public interface Component {
 }
 
 public class File implements Component {
-    // file count for one file
+    // a file count for one file
     @Override
     public int getFileCount() { return 1; }
 }
@@ -47,13 +51,13 @@ public class Folder implements Component {
         int count = 0;
         // ask for each component, getFileCount
         for (Component c:this.content) {
-         count += c.getFileCount();
+            count += c.getFileCount();
         }
         return count;
     }
 }
 
-public class Test {
+public class Main {
     public static void main(String[] args) {
         int c = new Folder(
                 new File(),
