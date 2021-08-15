@@ -1,4 +1,4 @@
-# Scanners
+# SEO tools
 
 Here is a list of tools you may want to try
 
@@ -12,16 +12,17 @@ Here is a list of tools you may want to try
 
 <hr class="sl">
 
-## Tools
+## Other bunch
 
-And here some seo tools
+These tools are not a "all in one" solution,
+but they might help you for one thing
 
 * Get rid of broken links
   * <https://www.drlinkcheck.com/>
   * you may also use <https://httpstatus.io/> to check if,
-    in a batch of up to one hundred links, there are dead
-    links (but you have to fetch the links first using another tool
-    or a script)
+    in a batch of up to one hundred links, are dead.
+    You have to fetch the links first using another tool
+    or a script.
 * [pack of SEO tools](https://www.websiteplanet.com/webtools/)
 * [another pack of seo tools](https://www.sanderheilbron.nl/)
-* [domain name generator/search](https://instantdomainsearch.com)
+* [domain name generator+search](https://instantdomainsearch.com)
