@@ -13,40 +13,52 @@
 * 2018 - Java 11, Java is not free anymore for commercial projects
 * 2022 - Java 17 :)
 
-**Java8**
+<hr class="sl">
 
-* [streams](../advanced/streams.md)
-* [lambda expressions](../beginner/interfaces.md#Functional interfaces)
+## Java 8
+
+* [Streams](../advanced/streams.md)
+* [Lambda expressions](../beginner/interfaces.md) (check Functional interfaces section)
 * moving JavaFX outside the JDK
 * interface default method
 * method references (you can use Caller::method instead
   of a lambda of one line calling a method)
 * forEach on iterables
 
-**Java9**
+<hr class="sr">
+
+## Java 9
 
 * [Modules](../expert/modules.md)
 * new try with resource
 * private members in interfaces
 
-**Java11**
+<hr class="sl">
+
+## Java 11
 
 * **Oracle JDK** IS NO LONGER free for commercial use
 * java implicitly compiles
 * String: ``isBlank()`` method
 
-**Java13**
+<hr class="sr">
+
+## Java 13
 
 * Blocks of text using ``"""``
 
-**Java14**
+<hr class="sl">
+
+## Java 14
 
 * [JPackage / JLink](../expert/exe.md)
 * new switch
 * new instanceof
 * JShell
 
-**Java16**
+<hr class="sr">
+
+## Java 16
 
 * Records
 * Sealed classes
