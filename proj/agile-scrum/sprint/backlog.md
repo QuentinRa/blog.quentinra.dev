@@ -2,17 +2,23 @@
 
 [Go back](..)
 
-It's usually a board with post-its. We now do it
-online mainly using one of these (all free)
+It's usually a board with post-its. 
+You may do it online, and if you do, we are mainly using 
+one of these tools (all free)
 
 * [Trello](https://trello.com/)
-* [Github](https://github.com/features/project-management)
-* [YouTrack (jetbrains)](https://www.jetbrains.com/youtrack/)
+* [GitHub](https://github.com/features/project-management)
+* [YouTrack (JetBrains)](https://www.jetbrains.com/youtrack/)
+
+<hr class="sl">
+<br>
 
 We will have three columns
 
-* ``Todo`` : what must to be done
-* ``In-progress`` : working on it
-* ``Done`` : done
+* **Todo**: what have to be done
+* **In-progress**: working on it
+* **Done**: done
 
-You will aim to move all of your cards in ``Done``.
+You will aim to move all of your cards in **Done**.
+
+![Source: scrum.org](SprintBacklog.png)

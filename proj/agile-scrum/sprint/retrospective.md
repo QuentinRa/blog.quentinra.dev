@@ -7,10 +7,13 @@ Use this time to think about
 * what didn't work well
 * what worked well
 
-so that you may start in better conditions your
-next `sprint`.
+so that you may improve your working conditions, for your
+next **sprint**.
 
-Think about
+<hr class="sl">
+<br>
+
+You may think about
 
 * tools
 * peoples
