@@ -20,16 +20,17 @@ that may help you write your code.
 
 Here are some of my troughs before starting.
 
-I think, we should really consider using framework
-and tools created by other developers rather than
-writing everything from scratch. This should
+I think you should really consider using frameworks
+and tools created by other developers (If they are still
+maintained) rather than writing everything from scratch.
+This should
 
 ```diff
 - make the "setup" longer (installing a framework might not go smoothly)
 - force you to learn a new framework/... 
 + broaden your horizons (since you will learn how someone else tackled your need)
-+ reduce the maintainer workload
-+ it should reduce your workload too
++ reduce the maintainer workload (since another maintainer would deal with the framework)
++ it should reduce your workload too (since you should have less code to write)
 + reduce the complexity of your code (if not, pick another or publish your own)
 ```
 
@@ -40,9 +41,9 @@ Aside from that
 * you shouldn't copy-paste code from another part
   of your code (anyone will tell you this one)
 * give relevant names to your functions/variables,
-  **but** only when that's useful like ``i`` is better than
-  ``index`` if ``i`` is a simple index. Declare
-  them at the start of a bloc.
+  **but** only when that's useful, like ``i`` is better than
+  ``index`` if ``i`` is a simple index.
+  Declare them at the start of a bloc.
 
 <hr class="sl">
 
@@ -54,11 +55,11 @@ will have ``n`` places to patch if you found a bug,
 and that's not worth it. You should also use constants rather than
 writing, again and again, a value like ``"toto"`` in your code.
 
-**you ain't gonna need it (YAGNI)**: don't write code
+**You ain't gonna need it (YAGNI)**: don't write code
 unless you need it.
 
 **Keep it simple, stupid (KISS)**: simple code means
-less code. It's easier to debug and to modify, so don't
+less code. It's easier to debug and modify, so don't
 make things complicated.
 
 **Code For The Maintainer**: write your code like you
@@ -79,9 +80,9 @@ code must do only one thing.
 
 **Rubber duck debugging**: when you got a problem with
 your code, try explaining it to a rubber duck (
-``canard en plastique`` in French). Sometimes, simply
-explaining your problem to "someone" helps you solving your
-problem so talk to your rubber duck :)
+``canard en plastique`` in French). Sometimes, 
+simply explaining your problem to "someone",
+helps in solving it. Talk to your rubber duck :)
 
 **Murphy's Law**: "Anything that can go wrong will go wrong.".
 Don't think "xxx won't do that" and skip some code, because
@@ -117,7 +118,7 @@ in Oriented-object. You should check [SOLID principles on Wikipedia](https://en.
 
 I started this course because of this website
 <https://suckless.org/> , "software that sucks less".
-Well, dunno about their software but the website sucks.
+Well, dunno about their software, but the website sucks 🙄.
 Still, here are some of their ideas, mixed with others
 (see references)
 
@@ -157,11 +158,11 @@ alt="meme" width="500"/>
 
 <hr class="sr">
 
-## best practices (Github lookup summary)
+## best practices (GitHub lookup summary)
 
 After discovering this [repository](https://github.com/trekhleb/state-of-the-art-shitcode)
 which is quite good for explaining what you mustn't do,
-I looked on Github "best-practices repository".
+I looked on GitHub's "best-practices repository".
 Here is a summary of the repository above and many others.
 
 <table class="table table-bordered table-striped table-dark">
@@ -215,8 +216,8 @@ more than one task then you should
 <!-- 4 -->
 <tr>
 <td>split a long line on multiples lines</td>
-<td>Do not make a "if" directly inside another "if",
-try merging conditions.</td>
+<td>Do not make an "if" statement directly inside one,
+try merging their conditions.</td>
 <td></td>
 </tr>
 <!-- 5 -->
