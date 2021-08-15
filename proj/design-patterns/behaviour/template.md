@@ -1,12 +1,12 @@
-# Template
+# Template method
 
 [Go back](..)
 
 Simply use abstract classes or interfaces to define
-the properties of sub-classes.
+the properties of subclasses.
 
 * ✅ : prevent a lot of copy-paste
 * 🚫 : more work to do
 
-May this [example](https://www.tutorialspoint.com/design_pattern/template_pattern.htm)
+May this [example on tutorialspoint](https://www.tutorialspoint.com/design_pattern/template_pattern.htm)
 helps.

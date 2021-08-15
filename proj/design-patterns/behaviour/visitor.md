@@ -16,9 +16,8 @@ From what I understood
   the abstract class that may do something different
   according to the visitor
 
-I have seen it used in Parser like the Jetbrains
-R language parser [here](https://github.com/JetBrains/Rplugin/blob/master/gen/org/jetbrains/r/psi/api/RVisitor.java)
-.
+I have seen it used in parsers like in Jetbrains's
+[R language parser](https://github.com/JetBrains/Rplugin/blob/master/gen/org/jetbrains/r/psi/api/RVisitor.java).
 
-There are examples and 
-explanations [here](https://java-design-patterns.com/patterns/visitor/).
+There are 
+[examples and explanations here](https://java-design-patterns.com/patterns/visitor/).

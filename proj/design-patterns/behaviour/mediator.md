@@ -9,7 +9,8 @@ instead of asking each class.
 * 🚫 : hard to maintain the mediator since that's the core
 of all communications
 
+<hr class="sl">
+
 ## Example
 
-I like this example
-<https://www.geeksforgeeks.org/mediator-design-pattern/>
+I like this [example on geeksforgeeks](https://www.geeksforgeeks.org/mediator-design-pattern/).

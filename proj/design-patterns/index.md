@@ -79,7 +79,7 @@ Notes
 * [Iterator](behaviour/iterator.md):
   iterates a list of Unknowns items
 * [Observable](behaviour/observable.md):
-  watch objects' changes and trigger events
+  watch objects' changes and dispatch events
 * [Memento](behaviour/memento.md):
   save and load objects
 * [NullObject](behaviour/null-object.md):
@@ -88,7 +88,7 @@ Notes
   break into classes the one using the command and the command itself
 * [Interpreter](behaviour/interpreter.md):
   simple language parser
-* [Template](behaviour/template.md):
+* [Template method](behaviour/template.md):
   define classes properties
 * [State](behaviour/state.md):
   change objects' behavior according to their state
@@ -116,16 +116,14 @@ Notes
 
 <blockquote class="spoiler">
 That's the <code>Observer/Observable</code> pattern since
-we <code>watch object changes and trigger events</code>.
+we <code>watch objects' changes and dispatch events</code>.
 </blockquote>
 
 2. A class ``Group`` extending `Figures` containing
 a lot of ``Figures``.
 
 <blockquote class="spoiler">
-That's the <code>Composite</code> pattern with
-<code>Figures</code> abstract implemented by
-<code>Group</code> and others <code>Figures</code>.
+That's the <code>Composite</code> pattern.
 </blockquote>
 
 3. An alternative to inheritance
@@ -152,9 +150,13 @@ That's <code>Singleton</code> pattern.
 allowing to iterates concrete collections.
 
 <blockquote class="spoiler">
-That's <code>Iterator</code> pattern if we are using it otherwise it would be
-a <code>Factory</code> pattern (since we are creating concrete
-iterators that are hiding using Iterator class).
+That's the <code>Iterator</code> pattern.
+But I have some doubts, because for me, it's also the
+
+* <code>Factory</code> pattern
+(since we are creating concrete iterators that are 
+hidden using Iterator class).
+* <code>Template method</code> pattern (Collection is an interface)
 </blockquote>
 
 <hr class="sr">
