@@ -2,22 +2,23 @@
 
 [Go back](..)
 
-The form is a class with ``createObject() : A`` where A can be 
+This is a class with methods like this
+``createObject() : A`` in which A can be 
 
-* abstract (so may be an interface)
-* a class of type A
+* abstract (an interface, an abstract class, ...)
+* the class A
 * a sub-class of A
 
-meaning the caller won't know exactly what we created. We can easily change
-what's created so that is really useful.
+meaning the caller won't know exactly what we created. 
+We can easily change what's created so that is really useful.
 
-* ➡️ : an exemple would be ``iterator()`` in JAVA
+* ➡️ : an example would be ``iterator()`` in JAVA
 * ✅ : more flexibility
 * 🚫 : may create a lot of class
 
-## Some java example
+<hr class="sl">
 
-Everything is in one file, ONLY because that was convenient...
+## Example in Java
 
 ```java
 // ------------ factory related ------------- //

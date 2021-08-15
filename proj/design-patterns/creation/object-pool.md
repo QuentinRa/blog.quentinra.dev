@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-You got something good [here](https://java-design-patterns.com/patterns/object-pool/)
+You got a good [tutorial here](https://java-design-patterns.com/patterns/object-pool/)
 but here are some of my notes
 
 * you usually create a pool of a size
@@ -13,8 +13,8 @@ but here are some of my notes
   reuse those in the pool
 
 Note that you usually use that when creating a new
-object cost a lot.
+object costs a lot.
 
-And a real-life example would be the music in Unity,
-you may store them inside a pool and reuse the music
-GameObjects when you need to change music.
+A real-life example would be the music in Unity.
+You may store the musics' GameObjects inside a pool 
+and reuse them.

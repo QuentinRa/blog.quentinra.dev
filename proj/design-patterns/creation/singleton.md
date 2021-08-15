@@ -20,6 +20,8 @@ We are initializing our attribute when we are declaring it.
 * ✅ : memory consumption should decrease
 * 🚫 : instance is shared/global
 
+<hr class="sl">
+
 ## Example in Java
 
 lazy instantiation

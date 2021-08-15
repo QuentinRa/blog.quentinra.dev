@@ -2,12 +2,14 @@
 
 [Go back](..)
 
-A singleton but we have also another attribute to limit
+This is the same as for Singleton but we have also another attribute to limit
 the number of instances created.
 
 * ➡️ : when you want a bit more than a singleton
-* ✅ : same as for singleton
-* 🚫 : same as for singleton
+* ✅ : memory consumption should decrease
+* 🚫 : instance are shared/global
+
+<hr class="sl">
 
 ## Example in java
 

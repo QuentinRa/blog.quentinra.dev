@@ -9,17 +9,19 @@ into small tasks!
 * ✅ : more readable code
 * 🚫 : ???
 
+<hr class="sl">
+
 ## Example in java
 
 ```java
 import javax.swing.*;
 
 public interface FrameBuilder {
-    // generates header : menus, title, logo, ...
+    // generates header: menus, title, logo, ...
     JPanel generatesHeader();
-    // generates page view
+    // generates the main
     JPanel generatesContent();
-    // generates footer : logo?, tos, legal terms, ...
+    // generates footer: logo?, tos, legal terms, ...
     JPanel generatesFooter();
 }
 ```
@@ -31,21 +33,21 @@ be can create a class ``AbstractPage``.
 // a page of our website
 public abstract class AbstractPage implements FrameBuilder {
     @Override
-    public JPanel generatesHeader() { /* code ici */ }
+    public JPanel generatesHeader() { /* code */ }
 
     @Override
-    public JPanel generatesFooter() { /* code ici */ }
+    public JPanel generatesFooter() { /* code */ }
 }
 
-// on surcharge la partie qui change
+// we are overriding generatesContent since this part is different in each page
 public class HomePage extends AbstractPage {
     @Override
-    public JPanel generatesContent() { /* code ici */ }
+    public JPanel generatesContent() { /* code */ }
 }
 
-// on surcharge la partie qui change
+// we are overriding generatesContent since this part is different in each page
 public class ContactPage extends AbstractPage {
     @Override
-    public JPanel generatesContent() { /* code ici */ }
+    public JPanel generatesContent() { /* code */ }
 }
 ```
