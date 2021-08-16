@@ -1,27 +1,29 @@
 # What's in this course
 
-Honestly, this is a boring theoretical yet interesting
-course. You will learn a lot of things, but they may
-be a lot of vocabulary. I will try to make things in a
+Honestly, this is a boring yet interesting theoretical
+course. You will learn a lot of things, but there is
+a lot of vocabulary. I will try to present it to you in a
 useful way so that you will enjoy the course.
+You will learn
 
-* Write Specifications (CDC)
-* Project Structure
-* Reporting
+* Projects' vocabulary and structure
+* How you can write Specifications (``CDC``)
+* How reporting works
+* How you can deal with bugs/issues
 
 <hr class="sl">
 
-## Vocabulary (words are in french)
+## Vocabulary
 
-* ``Besoin``: what the client wants
-* ``Livrables``: what you will give to the client
-* ``Jalons``: important dates of your project
-* ``Périmètre``: tasks, livrables, budget, ... everything
-related to the project.
-* ``HJ``: "Homme-Jour", an indicator of how many resources
-a task will require
-* ``Maitre d’ouvrage``: interactions with the client
-* ``Maitre d’oeuvre``: interactions with programmers/technical staff
+* **Nature of the project**/**Need** (``Besoin``): what the client wants
+* **Deliverables** (``Livrables``): what you will give to the client
+* **Milestones** (``Jalons``): important dates of your project
+* **Scope** (``Périmètre``): tasks, deliverables, budget, ... everything
+  related to the project.
+* **Man-days** (`Homme-Jour HJ`): an indicator of how many resources
+  a task will require
+* **Engineer**/**Architect** (``Maitre d’ouvrage``): interactions with the client, planned the project
+* **General contractor** (``Maitre d’oeuvre``): interactions with programmers/technical staff, work on the project
 
 <hr class="sr">
 
@@ -149,3 +151,4 @@ or Jetbrains space issues tracker.
 ## Sources
 
 * <https://www.codeur.com/blog/gestion-de-projet-diagramme-pert/>
+* <https://en.wikipedia.org/wiki/Project_management>
