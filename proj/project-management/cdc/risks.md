@@ -3,41 +3,69 @@
 [Go back](..)
 
 **YOU CAN'T SKIP THIS PART**. So don't even try.
+A lot of people are forgetting about it, but that's
+the most important one.
 
-> « 80% de projets, informatiques ou non, sont commencés mais ne sont jamais terminés. »
+> <q>80% de projets, informatiques ou non, sont commencés mais ne sont jamais terminés.</q>
+> \- my teacher
 
-The idea would be to think about risks. When you are doing some small
-project: that's hard...
+<hr class="sl">
 
-* a student isn't working
-* a student can't work
-* a student computer is dead
-* git isn't working anymore / the source code online got deleted
-* Trello (if you are using it) is unavailable
-* a tool doesn't seem to work or making the project with it is too hard
-* a student don't listen to the group
-* some part of our architecture needs to be changed, breaking all the project
-* you want/need to add a breaking functionality
-* there is a minor/major bug in a software that you are using
-* you are needing some graphics but you don't have them, or they got delayed
-* something is missing
-* something to delayed/postponed
-* something got canceled because someone has other plans / don't want to do it
-* someone has problems (personal/...) and can't work anymore
-* some security problem
-* ...
+## Some ideas
 
-Then when you got them, sort them!
+As a student, I through about these risks
 
-cause (% of possibility) triggers a consequence/effect (% degree of severity).
+* **team**
+  * a student isn't working
+    * not motivated
+    * nothing he/she can do
+      * lack of knowledge?
+      * lack of tasks?
+  * a student can't work
+    * technical problems
+    * personal problems
+  * a student's computer is dead
+  * a student don't listen to the group
+* **tools**
+  * git isn't working anymore
+  * the source code online got deleted
+  * Trello (if you are using it) is unavailable
+  * a tool doesn't seem to work
+  * a tool is too hard to use
+  * there is a minor/major bug in a software that we are using
+* **code**
+  * a part of our architecture needs to be changed, breaking all the project
+  * we want/need to add a breaking functionality
+* **resources**
+  * we are needing unexpected assets (sounds, ...)
+  * the creation of your assets (sounds, images, ...) got delayed
+  * something is missing
+* **general**
+  * something to delayed/postponed
+  * security problems
 
-Generally, we are theses values for % : 0, 25, 50, 75, 100. Then
-simply evaluate **(% of possibility) * (% degree of severity)** to sort
-your risks.
+<hr class="sr">
 
-**Using a matrix**
+## Ranking the risks (equation)
 
-Sort your risks with 1 2 3 4 notation (not MoSCoW).
+You may use the following function $r$ to quantify
+a risk given a cause $c$
+
+@
+r(c) = P(X = c) * severity(c)
+@
+
+This is the probability of the cause happening
+by the severity of the cause.
+Generally, we are giving an arbitrarily value:
+$0,\ 0.25,\ 0.50,\ 0.75,\ 1.0$ for both $P(X = c)$
+and $severity(c)$.
+
+<hr class="sl">
+
+## Ranking the risks (matrix)
+
+Sort your risks with the "1 2 3 4 notation" (not MoSCoW).
 
 * `4`: critical
 * `3`: important
@@ -46,6 +74,12 @@ Sort your risks with 1 2 3 4 notation (not MoSCoW).
 
 ![risks](risques.png)
 
-You will get something like this and put your risks in the 
-right box. Deal with the risks in red first, then the orange
+You will get something like this and you have
+to put your risks in a box.
+Deal with the risks in red first, then the orange
 one and then the green ones.
+
+**Note 16/08/2021**: I looking for "risk matrix"
+on [Wikipedia](https://en.wikipedia.org/wiki/Risk_matrix)
+and found a matrix that looks ways better than what
+I learned.

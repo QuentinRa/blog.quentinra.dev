@@ -62,6 +62,7 @@ Then, start digging into the real stuff
 
 * [Functional specifications](cdc/fs.md)
 * [Technical specifications](cdc/ts.md)
+* [Risks](cdc/risks.md)
 
 <hr class="sr">
 
