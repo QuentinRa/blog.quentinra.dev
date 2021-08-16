@@ -164,48 +164,51 @@ how to write these assertions.
 
 ## Test-driven development (TDD)
 
-You will write tests, then code and try to pass one test.
-Then pass another, ... until all of them passed.
+This is quite a famous methodology. You will
+
+* write your tests, before coding
+* then you will write some code to pass **1** test
+* then you try to pass **2** etc. until all of them passed
 
 This may look like something easy, but you need 
-
-* to think about your tests
-* while not having any classes, methods, ... at hand
-
-To do some efficient TDD, you may
+to think about your tests 
+while not having any classes, methods, ... at hand
+(because they does not exist yet).
+To do an efficient TDD, you may
 
 1. write some UML, like a class diagram, or use Model-driven
    (check UML course) to write a good class diagram
-2. write your tests easily since you got the structure
-3. just repeat the usual tests
-
+2. write your tests more easily since you got the structure
+3. just repeat the usual steps
     1. code a method
     2. run tests, one less fail after each run
-    3. optimize your code
+    3. optimize your code (beware of premature optimization)
     
-And then you will end speeding your developments
-because you suffered at the beginning doing some UML.
+And then you will end speeding the development
+trough you suffered at the beginning doing some UML.
 
 <hr class="sl">
 
 ## Behavior-driven development (BDD)
 
-Usually done before TDD but not a lot of people do
-know of this one. You can use this extreme-development method
+Usually, before a TDD, we do this. Not a lot of people do
+know of this one trough, and no many are using it.
+You can use this extreme-development method
 to think a bit more about your functions before coding.
+Try explaining each functionality like this
 
-* ``Given`` an action done by the user
-* ``When`` I do this action
-* ``Then`` I will do this code
-* ``And`` ... will happen.
+* <kbd>Given</kbd> an action done by the user
+* <kbd>When</kbd> I did this action
+* <kbd>Then</kbd> I will run this code
+* <kbd>And</kbd> [...] will happen.
 
-You do that for all functionalities, normal and error cases
-and you might find some things that you may have missed. You need
-to think
+You will do that for all of your functionalities,
+and as always, do not forget to include the error cases.
+You need to think
 
-* what my function should do?
-* adding my function will do what we want?
-* what problems adding my function might cause?
+* What my function is supposed to do?
+* Will adding my function, do what we want?
+* What problems adding my function might cause?
 
 <hr class="sr">
 
