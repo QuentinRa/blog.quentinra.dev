@@ -1,7 +1,7 @@
 # Design patterns
 
 Most of the time when coding, you will some code
-code that a lot of developers have written before
+that a lot of developers have written before
 you. Design patterns are the result of their reflection
 on how you write this code.
 
@@ -20,7 +20,7 @@ Notes
 * **edit 24/06/2021**: I recently found this website
   [this website](https://java-design-patterns.com/)
   and [this GitHub](https://github.com/iluwatar/java-design-patterns)
-  which are really good materials to start learning design-pattern.
+  which are wonderful materials to start learning design-pattern.
   They are **different** from what I learned in school but
   I may improve this course later using them.
 * **edit 21/07/2021**: Again, I found this
@@ -61,8 +61,7 @@ Notes
 * [Bridge](structure/bridge.md):
   interact with interfaces rather than concrete implementations
 * [Decorator](structure/decorator.md):
-  wrapper of a class to change a part of it,
-  alternative to inheritance.
+  wrap a class, alternative to inheritance.
 * [Flyweight](structure/flyweight.md):
   if you got a lot of objects (like bullets in a game)
   then you may use the flyweight.
@@ -85,7 +84,7 @@ Notes
 * [NullObject](behavior/null-object.md):
   use an empty object instead of null
 * [Command](behavior/command.md):
-  break into classes the one using the command and the command itself
+  separate the one using the command and the command itself
 * [Interpreter](behavior/interpreter.md):
   simple language parser
 * [Template method](behavior/template.md):
@@ -95,7 +94,7 @@ Notes
 * [Strategy](behavior/strategy.md):
   family of objects
 * [Visitor](behavior/visitor.md):
-  an object is changing according who visit it
+  an object is changing according to who visit it
 * [Mediator](behavior/mediator.md):
   handles the relations between classes
 
@@ -147,11 +146,11 @@ That's <code>Singleton</code> pattern.
 </blockquote>
 
 6. In ``Java``, `Collection<E>` defines a method `Iterator<E> iterator()`
-allowing to iterates concrete collections.
+allowing to iterate concrete collections.
 
 <blockquote class="spoiler">
 That's the <code>Iterator</code> pattern.
-But I have some doubts, because for me, it's also the
+But I have some doubts because, for me, this may also be the
 
 * <code>Factory</code> pattern
 (since we are creating concrete iterators that are 
@@ -181,17 +180,17 @@ everything in one python script.
 * Magic Numbers and Strings ✨
 
 One of the most used anti-pattern. Programmers tend to write
-a lot of numbers/strings inside the code but they
+a lot of numbers/strings inside the code, but they
 are unnamed and should be stored inside a named
 constant so we understand what this
 value is supposed to be. In some languages, you may
-be able to use named parameters which are convenient
+be able to use named parameters that are convenient
 when you are only using a value once.
 
 * Golden Hammer 🔨
 
 You are using things you are confident in because
-that's easier even though you know that this may not
+that's easier, even though you know that this may not
 be the right thing to do. I did that a lot, like writing
 code in Java taking hundred of lines because I know
 how to do a lot of things in Java even though I know I could
@@ -206,7 +205,7 @@ You coded something for later but didn't need it yet,
 
 If you are using an object in too many parts of your code,
 then maybe his class is doing too much. If you got
-a class having a lot of dependencies then that may
+a class having a lot of dependencies, then that may
 be the case.
 
 * Premature Optimization 🐣
