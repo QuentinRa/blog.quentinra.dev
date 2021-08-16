@@ -9,8 +9,8 @@ This is a class with methods like this
 * the class A
 * a sub-class of A
 
-meaning the caller won't know exactly what we created. 
-We can easily change what's created so that is really useful.
+meaning that the caller won't know exactly what we created. 
+We can easily change it too, and that's why it's quite handy.
 
 * ➡️ : an example would be ``iterator()`` in JAVA
 * ✅ : more flexibility

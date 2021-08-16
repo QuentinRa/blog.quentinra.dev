@@ -5,7 +5,7 @@
 This is a factory of factories where we code 
 each method creating a factory (like we were doing in ``Factory``).
 
-* ✅ : good isolation
+* ✅ : good separation, great isolation
 * 🚫 : too much code and maybe too complex
 
 <hr class="sl">
@@ -23,7 +23,7 @@ This is the idea
     * ``MonsterFactory``: we "only" code ``monster(...) : Monster`` 
     * ``HumanFactory ``: we "only" code ``human(...) : Human``
 * then create a concrete class ``UnitCreator`` 
-  * each method should returns a ``AbstractFactory`` 
+  * each method should return a ``AbstractFactory`` 
   * for instance, ``getHumanFactory() : AbstractFactory``
   
 In our code, we won't know

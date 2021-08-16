@@ -18,7 +18,7 @@ We are initializing our attribute when we are declaring it.
 
 * ➡️ : utilities classes
 * ✅ : memory consumption should decrease
-* 🚫 : instance is shared/global
+* 🚫 : instances is shared/global
 
 <hr class="sl">
 

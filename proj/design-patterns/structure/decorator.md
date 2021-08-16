@@ -5,8 +5,8 @@
 To put it simply, a decorator is a class taking another class
 as a parameter and adding some functions to it.
 You may not add functions and simply modify one, 
-but when you see a class given in argument that may be a hint
-like some ``new HTMLConverter(new Converter())``.
+but when you see a class given in argument, then
+that may be a hint like ``new HTMLConverter(new Converter())``.
 
 * ✅ : keep your ``extends`` slot (you got only one in Java)
 * 🚫 : ???
