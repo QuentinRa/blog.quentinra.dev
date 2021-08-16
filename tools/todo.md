@@ -13,6 +13,9 @@
 - Git
     - adding merge graph example
     - copilot: https://www.sitepoint.com/github-copilot-ai-pair-programming/
+    - reference issue/pull request
+    - fork
+    - collaborators
 - Latex
     - work on ref
 - Markdown

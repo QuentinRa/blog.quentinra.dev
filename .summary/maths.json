@@ -26,7 +26,7 @@
     },
     {
       "tag": "logic",
-      "name": "First-order logic",
+      "name": "Logic",
       "desc": "Learn about first-order logic, proofs,  and demonstrations with examples using OCaml language.",
       "icon": "<i class=\"bi bi-list-stars\"></i>"
     },
