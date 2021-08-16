@@ -8,7 +8,7 @@ To write tests, you need to find
 the parts of your code that needs to be tested,
 and that can be hard. 
 You may also have to think about what you
-are going to test given a function/bloc of code.
+are going to test given a function/block of code.
 
 So in this course, you will see
 
@@ -24,12 +24,12 @@ should be able to find a section about tests,
 in the **Java** course, the **PHP** course, etc.
 
 **edit 15/07/2021**: I recently learned the
-notion of **coverage**. A lot of tools, introduced
+notion of **coverage**. A lot of tools introduced
 in the Git course, inside the fancy notes section,
 are scanning your code and telling you which **paths**
 of your code are covered by tests. Now, I think that
 programmers should have a clear idea of what
-they have to tests, and it makes things easier, 
+they have to test, and it makes things easier, 
 as *all they have to do* now
 is to write the most meaningful tests 😎.
 
@@ -77,14 +77,14 @@ You will have to remember these while analyzing your code to find
 some tests. The robustness of a function is determined by the number
 of preconditions that you verified to make sure that,
 in all cases, your preconditions are valid
-so your code did it's job.
+so your code did its job.
 
 <hr class="sl">
 
 ## Defensive programming
 
-As seen above, we are depending on the fact that some
-**preconditions** are set for your contract
+As you have read above, we are relying on the fact that the
+**preconditions** are valid for your **postconditions**
 to be valid. As a defensive programmer, you should
 **always** test and assert that your preconditions
 are correct.
@@ -96,10 +96,10 @@ are correct.
   before logout?)
   
 As a programmer, you should use some constants
-or enums instead of writing magik constants
-like ``"a value"`` or `5` in your code as MOST peoples do.
-You can also used named argument if your language
-allows you to.
+or enum instead of writing magic constants
+like ``"a value"`` or `5` in your code, as MOST peoples do.
+You can also use named argument, 
+if your language allows you to.
 
 Remember the rules
 
@@ -119,7 +119,7 @@ Remember that you must test
 * good scenarios (code working)
 * bad scenarios (code returning the right error code, ...)
 
-The mnemonic **RightBicep** is summarize what you need
+The mnemonic **RightBicep** is summarizing what you need
 to check
 
 * <kbd>Right</kbd>: is the result what we expected? Is the job done?
@@ -147,18 +147,18 @@ want to check.
 
 ## How should I code tests?
 
-We will now introduce the concept of **assertions**. 
-An assert is something that returns true
-if what we are asserting is true. 
-Otherwise, it's raising an error.
+We will now introduce the concept of **assertions**.
+An assertion (assert) is something that returns true
+if what we are asserting is true,
+otherwise, it's raising an exception/failing.
 
 You will usually write a lot of classes/files, having
 methods/functions usually called **testWhatIamTesting**
 and inside, you are writing some code using assertions
 <span class="tms">(such as ``assertTrue(a_condition_here)``)</span>.
 
-Check out your language course now, and it will be explain here
-how to write these assertions.
+Check out your language course now, and it will be explained
+inside how to write these assertions.
 
 <hr class="sr">
 
@@ -173,7 +173,7 @@ This is quite a famous methodology. You will
 This may look like something easy, but you need 
 to think about your tests 
 while not having any classes, methods, ... at hand
-(because they does not exist yet).
+(because they do not exist yet).
 To do an efficient TDD, you may
 
 1. write some UML, like a class diagram, or use Model-driven
