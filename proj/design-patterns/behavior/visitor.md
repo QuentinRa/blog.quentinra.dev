@@ -16,7 +16,7 @@ From what I understood
   the abstract class that may do something different
   according to the visitor
 
-I have seen it used in parsers like in Jetbrains's
+I have seen it used in parsers like in JetBrains's
 [R language parser](https://github.com/JetBrains/Rplugin/blob/master/gen/org/jetbrains/r/psi/api/RVisitor.java).
 
 There are 

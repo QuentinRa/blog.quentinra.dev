@@ -3,10 +3,10 @@
 [Go back](..)
 
 You can use this to save an object. That may be used
-by undo/redo application but in fact, it cost a bit
-too much so not many seems to use it.
+by undo/redo in an application but in fact, it cost a bit
+too much, hence not many seem to use it.
 In most cases, for an undo-redo, we will save the action
-that the user did or the action that we should do to undo it.
+that the user did, or the action that we should do to undo it.
 
 * ✅ : convenient
 * 🚫 : costly

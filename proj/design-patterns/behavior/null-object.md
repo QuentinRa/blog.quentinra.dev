@@ -13,7 +13,7 @@ default behavior
 They are used to let the programmer choose **when** or **how**
 he will handle the NullPointerException, because
 in some cases, he might not want to handle it
-at all and use the default value.
+at all, and use the default value.
 
 * ✅ : some flexibility
 * 🚫 : one more class to maintain

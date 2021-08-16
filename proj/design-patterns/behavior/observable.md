@@ -2,10 +2,10 @@
 
 [Go back](..)
 
-An observer is someone who want to be notified when
+An observer is someone who wants to be notified when
 an event occurred on an observable. This could be
-the UndoRedo class which want to be notified when
-we clicked (event=click) on undo or redo.
+the Undo class, which wants to be notified when
+we clicked (event=click) on the undo button.
 
 * ✅ : simple communication
 * 🚫 : ...
@@ -14,7 +14,7 @@ we clicked (event=click) on undo or redo.
 
 ## Example on Java
 
-In Java < 9, when Observable/Observer where not deprecated.
+In Java < 9, when Observable and Observer were not deprecated.
 
 ```java
 import java.util.Observable;
@@ -27,8 +27,8 @@ public class GameManager implements Observer {
 
     @Override
     public void update(Observable o, Object arg) {
-        System.out.println("GameManager, message reçu");
-        //call on each component of the game
+        System.out.println("GameManager, message received");
+        // call on each component of the game
         this.map.update(o, arg);
         // ...
     }
@@ -45,7 +45,7 @@ public class GameManager implements Observer {
 
 class GameMap implements Observer {
     @Override // print some random text
-    public void update(Observable o, Object arg) { System.out.println("GameMap, message reçu");}
+    public void update(Observable o, Object arg) { System.out.println("GameMap, message received");}
 }
 
 class Player extends Observable {
@@ -68,7 +68,7 @@ public class GameManager implements PropertyChangeListener {
 
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
-        System.out.println("GameManager, message reçu");
+        System.out.println("GameManager, message received");
         // call on each component of the game
         this.map.propertyChange(evt);
         // ...
@@ -87,7 +87,7 @@ public class GameManager implements PropertyChangeListener {
 class GameMap implements PropertyChangeListener {
     @Override // print some random text
     public void propertyChange(PropertyChangeEvent evt) {
-        System.out.println("GameMap, message reçu : "+evt.getNewValue());
+        System.out.println("GameMap, message received : "+evt.getNewValue());
     }
 }
 

@@ -3,7 +3,7 @@
 [Go back](..)
 
 Let's say a client wants something. We are gonna
-ask each element in list of classes that we defined,
+ask each element in a list of classes that we defined,
 if they can do it.
 
 * ✅ : flexibility, classes are less linked with each other

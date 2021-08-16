@@ -13,11 +13,11 @@ Literally a way to write a simple parser.
 ## Another point of view
 
 The main idea is that each element of the syntax is a class or
-a value but an expression will most likely be evaluated
+a value, but an expression will most likely be evaluated
 as
 
 ```
-(evaluate left-value) operator (evaluate right-value)
+(evaluate left) operator (evaluate right)
 ```
 
 for a binary operator and you

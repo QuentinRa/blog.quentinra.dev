@@ -73,7 +73,8 @@ some unreadable code, isn't it?
 **Separation of concerns (SOC)**: simply separate your
 code according to what part of the program they are
 dealing with. This may also us to reuse some parts
-in another application.
+in another application. For instance, you should
+not have a class called "UndoAndRedo" or "UndoRedo".
 
 **The Rule of One or Curly’s Law**: a part of your
 code must do only one thing.
