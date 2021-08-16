@@ -39,9 +39,9 @@ It's usually looks like this.
 
 ![lifecycle](lifecycle.svg)
 
-Personal, I saw often the usage of the word
-"maintainer" to talk about the ones that keep
-maintaining the project, at least in IT projects.
+Personal, I barely never saw
+the use of run/exploitation-team, but I'm seing quite
+a lot "maintainer", at least in IT projects.
 
 <hr class="sl">
 
@@ -69,24 +69,31 @@ Then, start digging into the real stuff
 ## Organize your project
 
 You would usually write a Gantt project to organize your tasks,
-even in an Agile-project (though it will have less content).
+even in an Agile-project (though it may have less content).
 
-* [Writing your Gantt for Specs](tools/gantt.md)
+You need to create a Gantt with your tasks, their time, 
+their cost, who will do it, ... 
+So we need to do some diagrams beforehand.
+
+* [Work breakdown structure](tools/wbs.md) (WBS)
+* [P.E.R.T.](tools/pert.md)
+* [GanTT](tools/gantt.md)
 
 Then work on the project and don't forget
 
-* update your Gantt
-* communicate with your team
-* do some meetings, properly
-* some **tests**
-* and maybe some **documentation**
+* to update your Gantt
+* to communicate with your team
+* to (properly) organize some meetings
+* to do some **tests**
+* to write some **documentation**
 
-And please take not of **that**
+And please take note that
 
-> YOU MUST ALWAYS HAVE A WORKING VERSION
-> OF YOUR SOFTWARE. At any time of the development,
+> **YOU MUST ALWAYS HAVE A WORKING VERSION
+> OF YOUR SOFTWARE**. At any time of the development,
 > the software can be run and, the client or whoever
-> can test it.
+> can test it. That's the key to the success
+> so don't forget that 🧐.
 
 <hr class="sl">
 
@@ -104,9 +111,9 @@ For a meeting, you will usually have to write (or read)
 a minutes (``Compte Rendu``) which may looks like this
 in French
 
-![cr](tools/cr.png)
+![cr](tools/images/cr.png)
 
-The daily order/schedule (``Ordre du jour/agenda``) 
+The daily order/schedule (``ordre du jour/agenda``) 
 is listing who will talk in the meeting,
 along with how much time and the subject.
 We have a time set for each participant.

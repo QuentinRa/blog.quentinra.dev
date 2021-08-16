@@ -1,6 +1,6 @@
 # Risks
 
-[Go back](..)
+[Go back](../index.md#specifications)
 
 **YOU CAN'T SKIP THIS PART**. So don't even try.
 A lot of people are forgetting about it, but that's
