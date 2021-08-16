@@ -1,18 +1,107 @@
-# First-order logic
+# Logic
 
-...
+Mathematical logic is useful in many ways. First of all, it led to globalize theory: in several disciplines linked to mathematics or IT, if you want to prove an hypothesis or develop it, you (have to) use logic.
 
-<hr class="sr">
+In our case, it enables to verify properties ?? or algorithms.
+By the way, logic is well-known through automated theorem proving, expert system or proof assistant. For instance, the four color theorem (cf graph) which states that only four colors are needed to color the regions of any map so that no two adjacent (nearby) regions have the same color was proved by a computer.
+
+<hr class="sl">
 
 ## Introduction
 
-...
+You will start with basic knowledge as Structural induction (``induction``), Semantics of logic (Boolean algebra, Truth table, ...) and a simple version of natural deduction. Then, you'll head for the centrepiece: First-order logic.
+
+<hr class="sr">
+
+## Structural induction
+
+$\mathcal{B}$ is a set of constant symbols (``ensemble de bases``) ??
+$\mathcal{K}$ is a set of function symbols (``ensemble d'opérations``)
+
+So <$\mathcal{B},\mathcal{K}$> is a set created by induction, the smallest set E satisfying the following criteria:
+* $\mathcal{B} \subset E$
+* $f$ an $n_{f}$-ary function symbol and $x_{1}, \cdots, x_{n_{f}} \in E$, then $f(x_{1}, \cdots, x_{n_{f}}) \in E$ too
+
+**Proove by induction**: Let's consider an hypothesis $P$. To demonstrate that all the elements of <$\mathcal{B},\mathcal{K}$> satisfy $P$, you have just to verify that:
+* $\forall x \in \mathcal{B}$, $P(x)$ is satisfied
+* $\forall f \in \mathcal{K}$ with arity $n_{f}$ and $\forall x_{1}, \cdots, x_{n_{f}} \in E$ so that $P(x_{1}), \cdots, P(x_{n_{f}})$ are satisfied, $P(x_{1}, \cdots, x_{n_{f}})$ is also satisfied.
+
+A simple example of structural induction is mathematical induction (``raisonnement par récurrence``). 
+Indeed, if you take $\mathcal{B}=\{0\}$ and $\mathcal{K}=\{succ\}$ such as $\forall n \in \mathbb{N}$, $succ(n)=n+1$, then $\mathbb{N}=$<$\mathcal{B},\mathcal{K}$>.
+So, mathematical induction is just a proof by induction in $\mathbb{N}$=<$\{0\},\{succ\}$>. 
+
+<hr class="sl">
+
+## Semantics of logic
+
+### Boolean algebra
+
+Here is given the truth table of basic operations :
+* $\wedge$ stands for **AND** (=conjunction)
+* $\vee$ for **OR** (=disjunction)
+* $\Rightarrow$ for **IMPLIES** (=implication)
+* $\neg$ for **NOT** (=negation)
+
+$x$ and $y$ are propositional variable of whom you give values $\in \{0,1\}$. Improperly, $0$ stands for **FALSE** and $1$ for **TRUE**. So, as you can see, the truth table indicates the value of each basic operations according to the values of $x$ and $y$.
+
+<table class="table">
+    <tr><td>@x@</td>
+        <td>@y@</td>
+        <td>@x \vee y@</td>
+		<td>@x \wedge y@</td>
+		<td>@x \Rightarrow y@</td>
+		<td>@\neg y@</td></tr>
+	<tr><td>@0@</td>
+        <td>@0@</td>
+        <td>@0@</td>
+		<td>@0@</td>
+		<td>@1@</td>
+		<td>@1@</td></tr>
+	<tr><td>@0@</td>
+        <td>@1@</td>
+        <td>@1@</td>
+		<td>@0@</td>
+		<td>@1@</td>
+		<td>@0@</td></tr>
+	<tr><td>@1@</td>
+        <td>@0@</td>
+        <td>@1@</td>
+		<td>@0@</td>
+		<td>@0@</td></tr>
+	<tr><td>@1@</td>
+        <td>@1@</td>
+        <td>@1@</td>
+		<td>@1@</td>
+		<td>@1@</td></tr>
+</table>
+
+### Propositional calculus
+
+$X=\{x_1, \cdots, x_n\}$ is an infinite set of propositional variable.
+The set of formulas $\mathcal{F}$ is inductively defined:
+* Any propositional variable is a formula
+* $\perp$ is a formula
+* If $F$ is a formula, then $\neg F$ too
+* If $F$ and $G$ are formulas, then $F \wedge G$, $F \vee G$ and $F \Rightarrow G$ are also formulas
+
+Remark: Notice that $F \Leftrightarrow G$ has the same signification that ($F \Rightarrow G$) $\wedge$ ($G \Rightarrow F$).
+
+Abusively, an interpretation $I$ is a function which gives the value of a formula.
+Furthermore, interpretations have some interesting properties ??:
+* $I(\perp)=0$
+* If $F$ is a formula, then $I(\neg F)=\neg F$
+* If $F$ and $G$ are formulas, then $I(F \wedge G)=I(F) \wedge I(G)$
+* If $F$ and $G$ are formulas, then $I(F \vee G)=I(F) \vee I(G)$
+* If $F$ and $G$ are formulas, then $I(F \Rightarrow G)=I(F) \Rightarrow I(G)$
+
+
+... (FNC, Resolution) later
 
 <hr class="sr">
 
 ## Natural deduction
 
-Your go is to demonstrate that something is
+Your goal is to demonstrate that something is
 true. You will start from the conclusion=what you
 think is true and using Sequent calculus / ``Séquents prouvables``,
 you will aim to split your conclusion into axioms / ``axiomes``
@@ -63,3 +152,27 @@ Just so you know
 * ``e`` means Elimination (of a variable)
 * ``l`` means left
 * ``r`` means right
+
+<hr class="sl">
+
+## First-order logic
+
+...
+
+<hr class="sr">
+
+
+## Sources
+
+This is a list of all Wikipedia pages that you may
+want to check
+* https://en.wikipedia.org/wiki/Mathematical_logic
+* https://en.wikipedia.org/wiki/Structural_induction
+* https://en.wikipedia.org/wiki/Mathematical_induction
+* https://en.wikipedia.org/wiki/Truth_table
+* https://en.wikipedia.org/wiki/Semantics_of_logic
+* https://en.wikipedia.org/wiki/Well-formed_formula
+* https://en.wikipedia.org/wiki/Interpretation_(logic)
+
+Other stuff
+* https://en.wikipedia.org/wiki/Four_color_theorem
