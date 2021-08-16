@@ -20,8 +20,8 @@ So in this course, you will see
 * what are **assertions**
 
 This course will focus on the theory, but you
-should be able to find in the **Java** course,
-the **PHP** course, etc. a section about tests.
+should be able to find a section about tests,
+in the **Java** course, the **PHP** course, etc.
 
 **edit 15/07/2021**: I recently learned the
 notion of **coverage**. A lot of tools, introduced
@@ -29,24 +29,24 @@ in the Git course, inside the fancy notes section,
 are scanning your code and telling you which **paths**
 of your code are covered by tests. Now, I think that
 programmers should have a clear idea of what
-they have to tests to it makes things easier, 
-as *all they have to do* 
+they have to tests, and it makes things easier, 
+as *all they have to do* now
 is to write the most meaningful tests 😎.
 
 <hr class="sl">
 
 ## Testing
 
-You can be in one of those situations
+You can be in one of those cases
 
 * White-box testing: you know about the underlying code
-* Black-box testing: you only know about things code from the documentation, meaning in and out
+* Black-box testing: you only know about things code 
+  from the documentation, meaning the inputs and the outputs
 * Grey-box testing: we got a mix of both
 
-More than situations, you usually choose one of these
-and write tests accordingly. Most of the time, tests
-are **unit tests**: you test a part of the code.
-
+You will usually pick one and write your tests accordingly.
+Most of the time, tests are **unit tests**: 
+you test a part of the code.
 Here are some good practices before starting.
 
 <hr class="sr">
@@ -54,43 +54,52 @@ Here are some good practices before starting.
 ## Design by contract
 
 You are writing some code while making the contract
-with the caller that ``if the program (arguments, ...)
-is in a correct state then after running this code 
-it will still be in a correct state``: that's the contact.
+with the caller that 
+
+* if the program (arguments, ...)
+* is in a correct state 
+* then after running this code 
+* it will still be in a correct state``
 
 So you might see one of these words often
 
-* ``preconditions``: everything is correct before the call
-  (attributes, parameters, ...)
-* ``postconditions``: we are asserting theses after the execution
-of our code
-* ``invariant``: something that won't be changed such as
-counting elements in a list won't change the size of the list
-  
+* **preconditions**: the conditions that must
+  be valid before the call (attributes, parameters, ...)
+* **postconditions**: the conditions that will
+  be valid after the execution of our code
+* **invariant**: something that won't be changed
+<span class="tms">
+(ex: when counting elements in a list, the size of the list before
+and after the call must be the same).
+<span>  
+
 You will have to remember these while analyzing your code to find
 some tests. The robustness of a function is determined by the number
-of preconditions that you verified to make sure that
-in all cases your preconditions are valid.
+of preconditions that you verified to make sure that,
+in all cases, your preconditions are valid
+so your code did it's job.
 
 <hr class="sl">
 
 ## Defensive programming
 
 As seen above, we are depending on the fact that some
-``preconditions`` are set for your contact
-to work. As a defensive programmer, you should
+**preconditions** are set for your contract
+to be valid. As a defensive programmer, you should
 **always** test and assert that your preconditions
 are correct.
 
-* check for ``null``
-* check for range (RGB : [0,255] but that may be an int)
-* check for size, type, ...
-* check for runtime conditions (is login called
+* check if objects/addresses are null/undefined/...
+* check the range (RGB : [0,255] but that may be an int)
+* check the size, the type, ...
+* check runtime conditions (is login called
   before logout?)
   
 As a programmer, you should use some constants
-like ``A_CONSTANT`` or an `enum` and not write
-``"a value"`` or `5` in your code as MOST peoples do.
+or enums instead of writing magik constants
+like ``"a value"`` or `5` in your code as MOST peoples do.
+You can also used named argument if your language
+allows you to.
 
 Remember the rules
 
@@ -104,30 +113,32 @@ Remember the rules
 ## Find tests
 
 The parts above are useful to understand preconditions
-and postconditions. That should help you test your code. Remember
-that you must test 
-* good scenarios
-* bad scenarios
+and postconditions. That should help you test your code.
+Remember that you must test 
 
-Here is the **RightBicep** help
+* good scenarios (code working)
+* bad scenarios (code returning the right error code, ...)
 
-* ``Right``: is the result ok? Is the job done?
-* ``B``: see **CORRECT**
-* ``I``: if we have a reverse method then try testing
-your code with it
-* ``C``: a test using other methods
-* ``E``: test errors
-* ``P``: test performances
+The mnemonic **RightBicep** is summarize what you need
+to check
+
+* <kbd>Right</kbd>: is the result what we expected? Is the job done?
+* <kbd>B</kbd>: see **CORRECT**
+* <kbd>I</kbd> (inverse): if we have a method which
+is the inverse of yours, then try testing your code with it
+* <kbd>C</kbd> (cross-check): a test using other methods
+* <kbd>E</kbd> (errors): test errors
+* <kbd>P</kbd> (performance): test performances
 
 And **CORRECT**
 
-* ``C``: Conform (arguments are ok)
-* ``O``: Order (in the right order)
-* ``R``: Range
-* ``R``: Reference (method reference some external code?)
-* ``E``: Empty (null)
-* ``C``: Cardinal (if changing size, still working?)
-* ``T``: time (logout called before login?)
+* <kbd>C</kbd>: Conform (are arguments ok?)
+* <kbd>O</kbd>: Order (in the right order?)
+* <kbd>R</kbd>: Range
+* <kbd>R</kbd>: Reference (is the method referencing external code?)
+* <kbd>E</kbd>: Empty (is null?)
+* <kbd>C</kbd>: Cardinal (if we are changing size, is the method still working?)
+* <kbd>T</kbd>: time (is logout called before login?)
 
 These are the main questions/topics that you might
 want to check.
@@ -136,16 +147,18 @@ want to check.
 
 ## How should I code tests?
 
-We will now introduce the ``assertion`` concept. An assert
-is something that returns true if what we are asserting
-is true, or an error if that's not the case.
+We will now introduce the concept of **assertions**. 
+An assert is something that returns true
+if what we are asserting is true. 
+Otherwise, it's raising an error.
 
-Writing tests is usually writing a lot of functions,
-usually called ``test....()`` and inside called
-a lot of assertions such as ``assertTrue(a_condition_here)``.
+You will usually write a lot of classes/files, having
+methods/functions usually called **testWhatIamTesting**
+and inside, you are writing some code using assertions
+<span class="tms">(such as ``assertTrue(a_condition_here)``)</span>.
 
-Check out your language course now and we will explain here
-how to do some tests in this language.
+Check out your language course now, and it will be explain here
+how to write these assertions.
 
 <hr class="sr">
 
