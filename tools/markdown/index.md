@@ -221,7 +221,7 @@ And here are some HTML tags you may use
 <table class="table table-bordered table-striped">
 <tbody>
 <tr>
-<td><b>kdb</b></td>
+<td><b>kbd</b></td>
 <td><kbd>CTRL+X</kbd></td>
 </tr>
 <tr>
