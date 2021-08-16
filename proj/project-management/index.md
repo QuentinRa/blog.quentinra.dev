@@ -7,7 +7,7 @@ useful way so that you will enjoy the course.
 You will learn
 
 * Projects' vocabulary and structure
-* How you can write Specifications (``CDC``)
+* How you can write specifications (``CDC``)
 * How reporting works
 * How you can deal with bugs/issues
 
@@ -29,22 +29,27 @@ You will learn
 
 ## Project Structure
 
-There are usually 2 teams
+Usually,
 
-* ``build-team`` or `project-team` : create the first version
-* ``run-team`` or `exploitation-team` : keep the project
-running, make upgrades, ...
-  
-![lifecycle](lifecycle.png)
+* a **build-team**/**project-team** is formed to create a version (ex: 1.0)
+* then a **run-team**/**exploitation-team** will keep the project
+  running, make updates, fix bugs ...
 
-It's usually like this.
+It's usually looks like this.
+
+![lifecycle](lifecycle.svg)
+
+Personal, I saw often the usage of the word
+"maintainer" to talk about the ones that keep
+maintaining the project, at least in IT projects.
 
 <hr class="sl">
 
 ## Specifications
 
-You will need to write a document (Cahier des charges
-in French) after thinking a lot about a lot of things.
+You will need to write a document 
+(``Cahier des charges CDC``),
+summarizing everything that you have to do.
 
 **Functional Specifications**
 
@@ -131,20 +136,26 @@ and we have a time set for each one.
 ## Bugs
 
 If you are on a small project, you can use
-a file to store information about your bugs
+a file to store information about your bugs.
+You can make an excel table with 1 ligne per bug.
 
-* give them an id
-* a description of what you did
-* a description of what you were expecting
+* give each bug an ID
+* a description of how we can reproduce the bug
+* a description of what was expected
 * a description of what you got
 * notes like the software version/tool version/...
 * a priority
 * an assignee/some reviewers
-* a boolean with true/false if solved.
+* a boolean with true/false if solved
 
-but you should consider using online solutions
-using the keyword "issues" like with Github issues
-or Jetbrains space issues tracker.
+But, a lot of tools/websites exists so you
+might as well use them. Enter "issues tacker"
+on a search engine and you might find what you
+want. 
+
+* ex: GitHub issues (for IT projects with version control)
+* ex: [YouTrack](https://www.jetbrains.com/youtrack/) (issues tracker made by Jetbrains)
+* ex: Jira (Atlassian)
 
 <hr class="sl">
 
