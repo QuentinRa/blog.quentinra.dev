@@ -4,9 +4,9 @@
 
 The name is giving you a hint, these specifications
 are focused on the functionalities of the project.
-Basically, you need to explain everything the
-project team will have to deal with, and do that
-for each task/functionality.
+You need to explain inside everything that the
+project team will have to deal with,
+functionality by functionality.
 
 <hr class="sl">
 
@@ -15,7 +15,7 @@ for each task/functionality.
 Usually, you start by making a summary of
 all your tasks, with some information
 
-* amount of time (HJ) and money
+* amount of time (Man-days) and money
 * a priority, see [MoSCoW](../tools/moscow.md)
 * you can make a group of tasks to sort them
 
@@ -72,8 +72,8 @@ Then, you will have to further explain each task.
   will involve
   * ex: once registered, send a mail to activate your account.
   * add everything we can't guess by simply looking at the mock-up
-* you should write the POC (proof of concept)
-  meaning you should check if something can be done!
+* you should write the POC (proof of concept),
+  meaning that you should check if something can be done!
   Sometimes your client will request something that can't
   be done either because of time, knowledge, technology,
   manpower or costs.

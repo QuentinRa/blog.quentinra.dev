@@ -35,12 +35,12 @@ Usually,
 * then a **run-team**/**exploitation-team** will keep the project
   running, make updates, fix bugs ...
 
-It's usually looks like this.
+It's usually looking like this.
 
-![lifecycle](lifecycle.svg)
+![project lifetime](lifecycle.svg)
 
-Personal, I barely never saw
-the use of run/exploitation-team, but I'm seing quite
+Personal, I barely ever saw
+the use of run/exploitation-team, but I'm seeing quite
 a lot "maintainer", at least in IT projects.
 
 <hr class="sl">
@@ -53,7 +53,7 @@ summarizing everything that you have to do.
 
 * **present the company**  : name, logo?, background
 * **present the project** : client, what we want, ...
-* **present the public** : who wil use the product (lang, age, IT
+* **present the public** : who will use the product (language, age, IT
   knowledge, ...)
 * **the team** : organization, roles, ...
 * **graphic chard** : if you have one
@@ -108,10 +108,10 @@ There are usually two kinds of meetings
   usually, each month to check what you are doing.
   
 For a meeting, you will usually have to write (or read)
-a minutes (``Compte Rendu``) which may looks like this
+a minutes of meeting (``Compte Rendu``) which may look like this
 in French
 
-![cr](tools/images/cr.png)
+![minutes of meeting in French](tools/images/cr.png)
 
 The daily order/schedule (``ordre du jour/agenda``) 
 is listing who will talk in the meeting,
@@ -124,7 +124,7 @@ We have a time set for each participant.
 
 If you are on a small project, you can use
 a file to store information about your bugs.
-You can make an excel table with 1 ligne per bug.
+You can make an Excel table with 1 line per bug.
 
 * give each bug an ID
 * a description of how we can reproduce the bug
@@ -135,13 +135,14 @@ You can make an excel table with 1 ligne per bug.
 * an assignee/some reviewers
 * a boolean with true/false if solved
 
-But, a lot of tools/websites exists so you
+But, a lot of tools/websites exist so you
 might as well use them. Enter "issues tacker"
 on a search engine and you might find what you
 want. 
 
 * ex: GitHub issues (for IT projects with version control)
-* ex: [YouTrack](https://www.jetbrains.com/youtrack/) (issues tracker made by Jetbrains)
+* ex: [YouTrack](https://www.jetbrains.com/youtrack/) 
+(an issues' tracker made by Jetbrains)
 * ex: Jira (Atlassian)
 
 <hr class="sl">

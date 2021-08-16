@@ -13,7 +13,7 @@ is a tree made of your tasks
     * the result expected (optional)
     * the resources needed (optional)
 
-A basic version may looks like this
+A basic version may look like this
 
 <pre class="d-none" style="display: none;">
 @startwbs
@@ -29,4 +29,4 @@ A basic version may looks like this
 @endwbs
 </pre>
 
-![plantuml code above](images/SoWkIImgAKygvj9I22ZApqfDBj5JSCulBb6mLJ0sC53mTT7Zqj9I24aipbPmXCiOcPj2PRGKzFIGQOXA9xXAT7KGUMU4II0hCCnnICrB0Re90000.png)
+![PlantUML code above](images/SoWkIImgAKygvj9I22ZApqfDBj5JSCulBb6mLJ0sC53mTT7Zqj9I24aipbPmXCiOcPj2PRGKzFIGQOXA9xXAT7KGUMU4II0hCCnnICrB0Re90000.png)
