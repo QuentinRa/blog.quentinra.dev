@@ -36,3 +36,4 @@
 - <https://www.freecodecamp.org/news/>
 - <https://github.com/NARKOZ/guides>
 - <https://buddy.works/tutorials>
+- <https://www.guru99.com/>

@@ -218,50 +218,37 @@ Here are some things you can do using HTML
 
 And here are some HTML tags you may use
 
-<table class="table table-bordered table-striped">
-<tbody>
-<tr>
-<td><b>kbd</b></td>
-<td><kbd>CTRL+X</kbd></td>
-</tr>
-<tr>
-<td><b>sup</b> (used in footnotes)</td>
-<td>
-
-<sup>[1]: From XXX</sup>  
-<sup>[2]: Notation used in XXX</sup>
-</td>
-</tr>
-<tr>
-<td><b>dl</b>, <b>dt</b> (keyword), and <b>dd</b> (definition).<br>
-(the definition is usually indented, so it looks better)</td>
-<td>
-<dl>
-<dt>Keyword</dt>
-<dd>definition</dd>
-</dl>
-</td>
-</tr>
-<tr>
-<td><b>abbr</b> (show a note on hover)</td>
-<td><abbr title="Shown when hovered">some text</abbr></td>
-</tr>
-<tr>
-<td><b>mark</b></td>
-<td>This <mark>word</mark> has a yellow background.</td>
-</tr>
-<tr>
-<td><b>ruby</b> and <b>rt</b> (put some text above another one)</td>
-<td><ruby>Memorize<rt>version 5.0</rt></ruby></td>
-</tr>
-<tr>
-<td><b>progress</b></td>
-<td><progress value="50" max="100"></progress> 50%</td>
-</tr>
-</tbody>
-</table>
+| Tag | Preview |
+| ------ | ------ |
+| <b>s</b> (strike-through) | <s>word</s> |
+| <b>u</b> (underline) | <u>word</u> |
+| <b>kbd</b> | <kbd>CTRL+X</kbd> |
+| <b>sup</b> (used in footnotes) | <sup>[1]: From XXX</sup><br><sup>[2]: Notation used in XXX</sup> |
+| <b>dl</b>, <b>dt</b> (keyword), and <b>dd</b> (definition). <br> (the definition is usually indented, so it looks better) | <dl><dt>Keyword</dt><dd>definition</dd></dl> |
+| <b>abbr</b> (show a note on hover) | <abbr title="Shown when hovered">some text</abbr> |
+| <b>mark</b> | This <mark>word</mark> has a yellow background. |
+| <b>ruby</b> and <b>rt</b> (put some text above another one) | <ruby>Memorize<rt>version 5.0</rt></ruby> |
+| <b>progress</b> | <progress value="50" max="100"></progress> 50% |
 
 <hr class="sr">
+
+## Summary
+
+| Markdown | HTML |
+| ------ | ------ |
+| \#\# Title | &lt;h2&gt;title&lt;/h2&gt; |
+| \*\*bold\*\* | &lt;b&gt;bold&lt;/b&gt;|
+| \*italic\* | &lt;i&gt;bold&lt;/i&gt;|
+| \~\~crossed text\~\~ | &lt;s&gt;strike-through&lt;/s&gt;|
+| a list | &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; |
+| \`code\` | &lt;code&gt;code&lt;/code&gt; |
+| code-block | &lt;pre&gt;&lt;code&gt;code&lt;/code&gt;&lt;/pre&gt; |
+| \[link](url)|&lt;a href="url"&gt;link&lt;/a&gt;|
+| \!\[alt](url)|&lt;img src="url" alt="alt"&gt;|
+| \> text | &lt;blockquote&gt;text&lt;/blockquote&gt; |
+| \--- | &lt;hr&gt; |
+
+<hr class="sl">
 
 ## Sources
 
