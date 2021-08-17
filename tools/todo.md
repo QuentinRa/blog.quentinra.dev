@@ -31,3 +31,7 @@
 - Vim
   - work on ref
   - work on config
+- Doxygen
+  - https://stackoverflow.com/questions/4755913/how-to-use-doxygen-to-create-uml-class-diagrams-from-c-source
+  - https://medium.com/@TSwarper/generate-uml-with-doxygen-b58eaa149d
+  - https://stackoverflow.com/questions/27013252/create-one-big-uml-diagram-from-source-with-doxygen
