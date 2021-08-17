@@ -23,7 +23,7 @@ is symmetric. If the value is $\gt 0$
 then the distribution is inclined to the right
 (resp. to the left).
 
-* Kurtosis (``coefficient d’aplatissement``): $\frac{E[(X-\mu)^4]}{\sigma^4}$
+* Kurtosis (``coefficient d’aplatissement``): $\frac{E[(X-E[X])^4]}{\sigma^4}$
 
 If Skewness' value is small, then the distribution is
 equilibrate. If the value is 3, then we have the normal
