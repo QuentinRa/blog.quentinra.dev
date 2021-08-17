@@ -16,7 +16,7 @@ is a diagram representing the interactions between
 **Note** that this diagram is not taking into
 account the timeline, like you **can't** represent
 the fact that an action will be done after another one.
-If you think you can then you are doing it wrong. Check
+If you think you can, then you are doing it wrong. Check
 the sequence diagram if you want to take into account
 the timeline.
 
@@ -32,15 +32,15 @@ with
 
 * **the system**: the Restaurant
 * **actors**: only one here, the Client.
-  This is those that interact with the system.
-  Note that they are not persons but roles.
+  These are those that are interacting with the system.
+  Note that they are not persons, but roles.
 * **use cases**: "Order", "Eat", "Checkout". 
   What your actors can do in/with the system.
 * an **association**: a link between actors and use cases.
 
 Let's say a shop is interacting with a factory. 
 If the factory is the system, then the shop is an actor.
-Using that you can split a big use case diagram into a bunch
+Using that, you can split a big use case diagram into a bunch
 of smaller ones. You will make a diagram in which
 the system is the shop, and the factory an actor
 and vice versa.
@@ -49,24 +49,24 @@ and vice versa.
 
 ## Generalization between actors
 
-Let's says you got a regular user and a logged user
-for the system "website". If a logged user is able to
+Let's say you got a regular user and a logged user
+for the system "website". If a logged user can
 do everything that the regular can do and even more. You
-can factorize this with inheritance.
+can factorize this with a generalization.
 
-![Generalisation example](images/u-HqA2v9B2efpStXukIqyibFJqzDKGWjJYsoKaWiLd1CoStC0qa4fQQNvYGMGMLiQdHruN8EgNafGEq0.png)
+![Generalization example](images/u-HqA2v9B2efpStXukIqyibFJqzDKGWjJYsoKaWiLd1CoStC0qa4fQQNvYGMGMLiQdHruN8EgNafGEq0.png)
 
 This is called Generalization and not inheritance (
 ``Héritage``) since inheritance isn't
 a UML concept but an implementation one.
 Here, a Logged User got every use case available
-for the Regular User on top of his own use cases.
+for the Regular User, on top of his own use cases.
 
 <hr class="sr">
 
 ## Use case associations
 
-You can link use cases between themselves but DO REMEMBER
+You can link use cases between themselves, but DO REMEMBER
 that you are not allowed to link use cases
 if it's a temporal relationship like
 
@@ -84,7 +84,7 @@ one by
 * **a generalization**: if a use case generalize another
   then that means that we could use the use case
   OR any other generalizing this use case.
-* **inclusion**: if an use case is **always**
+* **inclusion**: if a use case is **always**
   calling another one (=a method **always** calling another one)
 * **extension**: a use case **may** call another one
   (=a method that **may** call another one)
@@ -105,14 +105,14 @@ A friend made this use case diagram for our website
 
 ![example](images/unknown.png)
 
-Just as an example but the generalization of "Edit profile"
-into
+To point out a example of generalization, the
+generalization of "Edit profile" into
 
 * "Change avatar"
 * "Change username"
 * "Change description"
 
-means that you can do either of them like change avatar
+means that you can do either of them, like change avatar
 or change username. If you got one form changing all
 of them (or not) then you should use "extends".
 
@@ -122,5 +122,5 @@ this is missing from the diagram (but this would
 be a generalization)
 
 The diagram is also missing a lot of information
-like what data is provided to Register etc.
+like what data is provided to register etc.
 but that is what makes it cleaner and easier to understand.
