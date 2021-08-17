@@ -20,7 +20,7 @@
 - node
   - yarn
   - https://pnpm.io/
-  - Mocha
+  - Mocha / https://www.cypress.io/how-it-works
   - https://github.com/goldbergyoni/nodebestpractices
 - web
   - seo
@@ -28,6 +28,7 @@
     - https://www.bing.com/webmasters/help/sitemaps-3b5cf6ed
     - https://www.bing.com/webmasters/help/url-submission-62f2860b
   - https://github.com/futurice/backend-best-practices
+  - https://www.zaproxy.org/
 - sql
   - https://sql.sh/
   - https://fxjollois.github.io/cours-sql/
@@ -47,6 +48,10 @@
   - https://github.com/OWASP/CheatSheetSeries
   - https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
   - https://github.com/OWASP/wstg
+  - M-I-T-M
+    - https://us.norton.com/internetsecurity-wifi-what-is-a-man-in-the-middle-attack.html
+    - https://snyk.io/learn/man-in-the-middle-attack/
+  - https://www.rapid7.com/fundamentals/man-in-the-middle-attacks/
 - C/C++
   - https://github.com/Akagi201/learning-cmake
   - https://github.com/lefticus/cppbestpractices
@@ -61,3 +66,4 @@
 - <https://github.com/NARKOZ/guides>
 - <https://buddy.works/tutorials>
 - <https://www.guru99.com/>
+- <https://github.com/palash25/best-practices-checklist>
