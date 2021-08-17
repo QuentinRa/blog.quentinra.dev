@@ -17,6 +17,10 @@
     - fork
     - collaborators
     - https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue
+    - https://github.com/thiagodp/commitment/blob/master/rules-en.md
+    - https://github.com/Nexmo/repo-standards
+    - https://github.com/controlook-zz/standards/blob/master/general/version_control.md
+    - https://github.com/controlook-zz/standards/blob/master/general/git_commands.md
 - Latex
     - work on ref
 - Markdown

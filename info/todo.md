@@ -3,8 +3,10 @@
 - Java
   - sealed classes
   - http://www.cburch.com/books/java/index.html
+  - https://github.com/in28minutes/java-best-practices
 - Bootstrap
   - https://tailwindcss.com/
+  - https://primer.style/css/getting-started
 - PHP 8
   - enums (enum Name {case;} or case=[...]. Name::from([...]))
   - add the ? condition (truc ? blah blah : null) with ?->
@@ -14,10 +16,12 @@
   - https://www.php.net/releases/8.0/en.php
   - https://www.jetbrains.com/phpstorm/whatsnew/2020-3/
   - http://www.cburch.com/books/php/index.html
+  - https://github.com/controlook-zz/standards/blob/master/backend/php.md
 - node
   - yarn
   - https://pnpm.io/
   - Mocha
+  - https://github.com/goldbergyoni/nodebestpractices
 - web
   - seo
     - https://www.gositestat.com/
@@ -27,6 +31,26 @@
 - sql
   - https://sql.sh/
   - https://fxjollois.github.io/cours-sql/
+  - https://github.com/RootSoft/Database-Naming-Convention
+- css
+  - https://github.com/topcoat/topcoat/wiki/Coding-Guidelines
+  - https://cssguidelin.es/
+  - https://codeguide.co/
+- html
+  - https://codeguide.co/
+- js
+  - https://github.com/elsewhencode/project-guidelines
+  - https://github.com/ryanmcdermott/clean-code-javascript
+  - https://github.com/braziljs/js-the-right-way
+  - https://github.com/labs42io/clean-code-typescript
+- cyber-security
+  - https://github.com/OWASP/CheatSheetSeries
+  - https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
+  - https://github.com/OWASP/wstg
+- C/C++
+  - https://github.com/Akagi201/learning-cmake
+  - https://github.com/lefticus/cppbestpractices
+  - https://github.com/JadeMatrix/Cpp-Learning-Materials/blob/master/C%2B%2B%20Learning%20Materials.md
 
 <hr>
 
