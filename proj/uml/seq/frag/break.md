@@ -2,6 +2,8 @@
 
 [Go back](../index.md)
 
-This fragment is taking a guard (like for alt/opt)
-and if the condition inside the guard is true then
-the method and the bloc are interrupted.
+This fragment 
+
+* is taking a guard (like for alt/opt)
+* and if the condition inside the guard is true 
+* then the method, and the block are interrupted.

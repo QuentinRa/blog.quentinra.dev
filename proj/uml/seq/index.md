@@ -4,7 +4,7 @@
 
 This diagram is a representation of an execution of the
 program. You will have the timelines of your objects
-and add the methods called and the arguments.
+and add the methods called and their arguments.
 
 Usually, this diagram is made of
 
@@ -43,20 +43,22 @@ to add them.
 You will write a diagram having a lot of actors
 with a lifeline, and at the end of it the
 actor may die. An actor is an object of your program but
-it may be a person (an user) if needed.
+it may be a person (an user) if needed. For instance,
+you can add an actor "Mickael" calling the
+"main" method to start the program.
 
 ![SSD](images/utGeBaaiAYdDpU7YL7BAJrAmKWX8BIhEprDIq8rMBafDYRLJK7BCoKnEHPAnKiX8pSd91-f0bm7gCG02DxTONQ0-LFEi5FApkJWTKlDIWBO10000.png)
 
 You read this diagram as
 
-* an object of the class Person inside a variable **Bob** 
-* an object of the class Person inside a variable **Alice**
-* bob is calling "hello" on Alice
-* Alice is returning "ok" for the call "hello"
+* an object of the class Person is stored inside a variable **Bob** 
+* an object of the class Person is stored inside a variable **Alice**
+* bob is calling the method "hello" on Alice
+* the method is returning "ok"
 
-Usually be draw a little rectangle to show the duration
-of the method call, and we add a number to explicitly
-clear any doubt about the order of the program execution
+Usually, we are drawing a little rectangle to show the duration
+of the method call, and we add a number 
+representing the order of the program execution
 
 ![Call](images/seq2.png)
 
@@ -68,9 +70,14 @@ The idea will be the same as above but instead of simply
 writing "hello" or "ok", we are gonna use the program
 methods, the argument and the correct return type.
 
+For instance, if the method hello is taking
+an argument "from" which is the one greeting,
+we would write ``hello(Bob)`` instead
+of ``hello``.
+
 We will also add a call when we are asking for an object
-to be created / destroyed like "<<create>>" or
-you may add arguments like "<<create("Bob")>>". A
+to be created / destroyed like "&lt;&lt;create&gt;&gt;" or
+you may add arguments like "&lt;&lt;create("Bob")&gt;&gt;". A
 constructor is returning the object created. You
 may add a cross at the end of the timeline of an object
 to show that it got destroyed.
@@ -92,15 +99,15 @@ code.
 This is a messages where the arrow is starting and
 ending in the same lifeline. Nothing special.
 
-* **logic**
+* **notes**
 
 There is no "return" if there is no "call".
 
-A can only call a function on B if the function
-exists in B.
+"A" can only call a function on "B" if the function
+exists in "B".
 
-If an object A is calling a method on B then in the
-class diagram (if you got one), they MUST be linked.
+If an object "a" is calling a method on "b" then in the
+class diagram (if you got one), their classes MUST be linked.
 
 <hr class="sr">
 
