@@ -22,14 +22,14 @@ Then you will have to learn about these before starting
 There are some things you should note before
 we continue
 
-* everything is public so we don't care about visibility
+* everything is public, so we don't care about visibility
 * you will rarely use operations, even if they are allowed
 * you may use abstract classes / interfaces / constraints etc.
 * an **underlined** attribute
-  **do not means static**
+  **do not mean static**
   but that means that the attribute is
   a **key** (explained later)
-* a ``#`` before an attribute **do not means protected**
+* a ``#`` before an attribute **do not mean protected**
   (visibility) but that means that the attribute is
   a **key** (explained later)
 
@@ -47,8 +47,8 @@ an object.
 You will write **#** and/or **underline** 
 the attribute that is the key.
 You may have more than one attribute, and if that's the
-case then the unique constraint is not applied to
-each attribute of the key but all of them.
+case, then the unique constraint is not applied to
+each attribute of the key, but to the key as a whole.
 
 Usually, we are not using key (`clef`)
 but identifier (``identifiant``),
@@ -57,7 +57,7 @@ because a key is the implementation of an identifier.
 * **Candidate key** (``Identifiant candidat``)
 
 A candidate to be the key, this attribute will also
-have unique values but won't be used as the key or
+have unique values, but won't be used as the key or
 as a part of it. A candidate key is preceded by a star `*`.
 
 * **Artificial key** (`Identifiant artificiel`)
@@ -73,13 +73,13 @@ represented by a star inside a circle ``⊛``.
 ## Constraints and OCL
 
 You can also do that in "class diagrams" but it's more
-used in database diagrams through it's almost never used.
+used in database diagrams, through it's almost never used.
 
 We call integrity constraints the constraints applied
 on an attribute like
 
 * the type
-* the multiplicity (if it's an array otherwise it's 1)
+* the cardinality (if it's an array, you may add the size)
 * properties like an interval of values allowed=Domain,
   a format, ...
 * properties like unique etc.
