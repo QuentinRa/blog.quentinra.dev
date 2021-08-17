@@ -7,10 +7,10 @@
 * some advanced concepts
 
 This course will strongly refer
-to [Github](https://github.com/)
+to [GitHub](https://github.com/)
 but you may also check
 
-* [GitLab](https://about.gitlab.com/), the most well-know alternative to Github
+* [GitLab](https://about.gitlab.com/), the most well-know alternative to GitHub
 * [Gogs](https://gogs.io/), open-source, self-hosted
 
 As a student, you may enjoy the benefits
@@ -30,7 +30,7 @@ developing without breaking the ``main`` version
 before **merging** all your changes into your
   ``main`` version.
 
-So first of all, you need to
+First, you need to
 
 * [set things up locally](local-install.md)
 * [set things up server-side](server-install.md)
@@ -66,13 +66,15 @@ git clone "https://github.com/lgs-games/memorize.git"
 # get the latest version on the server
 git pull
 # ... work a lot ...
-# check what's changed
+# check what changed
 git status
-# save your changes
+# notify git that these files should be added
+# to the save
 git add .
+# create a save named "I worked a lot"
 git commit -m "I worked a lot"
-# then send your changes to the server
-# (or not and repeat add/commit)
+# then send your saves=commits to the server
+# (or you can repeat work->add->commit)
 git push
 ```
 
@@ -80,32 +82,43 @@ git push
 
 ## Main concepts
 
-Here are commands that you will use on a project
-so most likely all the time if you are not working
-alone or for yourself.
+Here are commands that you will use on a project,
+if you are not working alone (you may also use it
+when working alone, if you're consistent).
 
-* ``git branch name``: create a branch
-* ``git checkout name``: move to a branch
-* ``git merge``: merge the current branch with the main/master branch
+* ``git branch name``: create a branch "name"
+* ``git checkout name``: move to the branch "name"
+* ``git checkout -b name``: create and move
+* ``git merge name``: merge the current branch with the branch "name"
+* ``git branch -d name``: delete a branch
 
-So let's now explain what's a branch. By default, you are
-coding on a branch called ``master`` (or sometimes `main`).
+By default, you are coding on a branch called ``master`` (or `main`).
+Let's explain what's a branch.
+If you're smart, you will want to always have a working version
+of your project ("main" here).
+In that case, 
+if you want to add  a functionality (let's call it "f1"), 
 
-You may want to create a copy of your project, modify it
-then merge your changes into your original code
-(or just drop it since you changed your mind).
+* you will copy your project in "f1":  ``git branch f1``
+* you will move to the copy: ``git checkout f1``
+* [...] *work on the copy* (you can use add, commit, push, ...) [...]
+* you can go back to "main": ``git checkout main``
+  * delete the new copy ``git branch -d f1``
+  * or accept your changes ``git merge f1``
+    * if "main" didn't change, no problems, the copy replace "main"
+    * but if "main" changed, then you may have to manually
+      pick which parts of the two copies you want in the new
+      "main" (=resolving conflicts).
 
-That's what we can do with ``branch`` and `merge`.
-Simply create a branch, move on it, code, then ``merge``
-it into ``master`` or just destroy it.
-
-> As a side note, a lot of time they are conflicts
-> with ``merging`` meaning someone modified master
-> while you were working on it. Simply check
-> all the conflicting files and choose what you
-> want to keep. Some software provides you
+> As a side note, when you have
+> to resolve conflicts, the merge command's output will list
+> what files need to be reviewed. In each file,
+> you have the two different versions and need
+> to delete the code you don't want to keep.
+> Some software provides you
 > an interface to do that quite easily such
-> as ``IntelliJ IDEA``.
+> as [PHPStorm](https://www.jetbrains.com/help/phpstorm/resolving-conflicts.html#distributed-version-control-systems),
+> or any software made by [JetBrains](../jetbrains/index.md).
 
 <hr class="sl">
 
@@ -113,17 +126,17 @@ it into ``master`` or just destroy it.
 
 **Atomic commits**: one commit means one change, such
 as adding one functionality. Do not make hundreds of changes
-making it hard to find what you did in a commit.
+in one commit, making it hard to find what you did.
 
-**Short-Long description**: you can, and should make
+**Short-Long description**: you should make
 a short and a long description of your commits
 like that
 
 ```bash
 git commit -m "a short inline description
 
-A long description, where I describe
-all of my changes
+A long description, where I further describe
+what I did
 "
 ```
 
@@ -132,23 +145,23 @@ the start of a great adventure.
 
 **LICENSE**: you may also put a LICENSE even if you don't
 want to put restrictions on your code, to protect yourself
-from complains (MIT LICENSE
-is good for that). You should check
-[this link](https://choosealicense.com/).
+from complaints (MIT LICENSE
+is good for that, or The Unlicense). You should
+[pick your license here](https://choosealicense.com/).
 
 **.gitignore**: you may not want to commit some files
 like high-churn ones or big files... Create a file
 called "gitignore" is a good practice, you can
 
-* generate one [here](https://www.toptal.com/developers/gitignore).
-* use a template [here](https://github.com/github/gitignore)
+* [generate a gitignore here](https://www.toptal.com/developers/gitignore).
+* [use a template here](https://github.com/github/gitignore)
 
 <hr class="sr">
 
-## Advanced Github concepts
+## Advanced GitHub concepts
 
 Here are some functionalities
-that you can find on Github (but you may find them too somewhere else).
+that you can find on GitHub (but you may find them too somewhere else).
 
 * [Wikis](github/wiki.md)
 * [Actions](github/actions.md)
@@ -169,8 +182,8 @@ this label on some (if not all) commits
 You can sign your commits and have this too using
 [GPG keys](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/generating-a-new-gpg-key)
 (GitHub tutorial). You will need to write
-a passphrase each time you are committing but you
-can reduce the number of times asked 
+a passphrase each time you are committing, but you
+can reduce the number of times you're asked
 
 * [help on stackoverflow](https://stackoverflow.com/questions/38384957/prevent-git-from-asking-for-the-gnupg-password-during-signing-a-commit)
 * [gpg-agent.conf](https://gist.github.com/tknv/43604e851a371949343b78261c48f190)
@@ -258,7 +271,7 @@ You may look at these cheat sheets
 
 ## Sources
 
-* [github git guide](https://github.com/git-guides/)
+* [GitHub git guide](https://github.com/git-guides/)
 * [changing remote](https://docs.github.com/en/github/using-git/changing-a-remotes-url)
 * [add ssh key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 * http://adopteungit.fr/methodologie/2017/04/26/commits-atomiques-la-bonne-approche.html (reported down as of 08-2021)
