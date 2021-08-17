@@ -2,14 +2,14 @@
 
 [Go back](../index.md)
 
-This diagram is a representation of an execution of the
-program. You will have the timelines of your objects
+This diagram is a representation of the program's
+lifetime. You will have the timelines of your objects
 and add the methods called and their arguments.
 
 Usually, this diagram is made of
 
 * a synopsis
-* the diagram itself which can be either
+* the diagram itself, which can be either
   * SSD=System sequence diagram /``Diagramme Séquence système``
   * Sequence diagram /``Diagramme Séquence détaillé``
 
@@ -18,7 +18,7 @@ Usually, this diagram is made of
 ## Synopsis
 
 This is a short story about what the diagram
-will modelize. It's
+will represent. It's
 
 * **short**: 3 to 5 sentences
 * **instanced**: do not write "An User ..." but "Mickael ..."
@@ -37,15 +37,16 @@ inside the sequence diagram.
 
 A system sequence diagram is a sequence diagram
 considered to be a black box. You don't know the
-methods called or the arguments so you won't be able
+methods called or the arguments, so you won't be able
 to add them.
 
 You will write a diagram having a lot of actors
-with a lifeline, and at the end of it the
-actor may die. An actor is an object of your program but
-it may be a person (an user) if needed. For instance,
+with a lifeline, and at the end of it, the
+actor may die. An actor is an object of your program,
+but it may be a person if needed. For instance,
 you can add an actor "Mickael" calling the
-"main" method to start the program.
+"main" method to start the program. Anyway,
+it looks like this
 
 ![SSD](images/utGeBaaiAYdDpU7YL7BAJrAmKWX8BIhEprDIq8rMBafDYRLJK7BCoKnEHPAnKiX8pSd91-f0bm7gCG02DxTONQ0-LFEi5FApkJWTKlDIWBO10000.png)
 
@@ -67,8 +68,8 @@ representing the order of the program execution
 ## Sequence diagram
 
 The idea will be the same as above but instead of simply
-writing "hello" or "ok", we are gonna use the program
-methods, the argument and the correct return type.
+writing "hello" or "ok", we are going to use the program
+methods, the argument, and the correct return type.
 
 For instance, if the method hello is taking
 an argument "from" which is the one greeting,
@@ -88,15 +89,15 @@ to show that it got destroyed.
 
 * **asynchronous messages**
 
-That's a message that do not returns something (void
-is considered as something). In such case, the caller
+That's a message that does not return something (void
+is considered as something). In such a case, the caller
 won't wait for the return and continue the execution
 so we will have code running in parallel of our
 code.
 
 * **self messages**
 
-This is a messages where the arrow is starting and
+This is a message where the arrow is starting and
 ending in the same lifeline. Nothing special.
 
 * **notes**
