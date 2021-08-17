@@ -12,15 +12,15 @@ like a person here. We have what we call
 
 When we are giving values to our attributes,
 we are creating an **instance** of the class called
-an **object**.
+an **object** (Gamma here).
 
 Notes
 
-* Classes start with an uppercase, using CamelCase
+* The class' name must starts with an uppercase, using CamelCase
   syntax <span class="tms">(upperCamelCase)</span>
-* Object name is <u>underlined</u>, you can think of this
+* The object's name is <u>underlined</u>, you can think of this
 name as the **variable name** storing this object
-  
+
 <hr class="sr">
 
 ## Attributes
