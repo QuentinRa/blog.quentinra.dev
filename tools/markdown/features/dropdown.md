@@ -54,7 +54,7 @@ which I modified at bit.
 <h6>Could you guess what's this code doing?</h6>
 
 ```java
-class Math {
+public class Math {
     private static final float value = 2.0;
     public static float increaseN(float n){ return n + value; }
 }
@@ -79,7 +79,7 @@ The corresponding code is
 &lt;h6&gt;Could you guess what's this code doing?&lt;/h6&gt;
 
 ```java
-class Math {
+public class Math {
     private static final float value = 2.0;
     public static float increaseN(float n){ return n + value; }
 }

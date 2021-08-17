@@ -21,7 +21,7 @@ We will use the keyword ``static`` to create a member, owned
 by the class.
 
 ```java
-class Math {
+public class Math {
     public static final float PI = 3.14f;
 }
 ```

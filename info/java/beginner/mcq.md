@@ -30,7 +30,7 @@ the most used.
 Could you guess what's this code doing?
 
 ```java
-class Math {
+public class Math {
     private static final float value = 2.0;
 
     public static float increaseN(float n){ return n + value; }
