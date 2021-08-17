@@ -4,12 +4,17 @@
 
 When dealing with images, you may want
 
-* to remove the background (<https://www.remove.bg/>)
-* to make/split/crop/... a GIF/a normal image (<https://ezgif.com/>)
-* resize a lot of images (<https://picresize.com/>)
-* resize one image (<https://www.resizepixel.com/>)
-* <https://www.artbreeder.com/>
-* converting a lot of JPGs to WebP (more than 10) <https://online-converting.com/image/>
+* **create/edit**
+  * to remove the background (<https://www.remove.bg/>)
+  * to make/split/crop/... a GIF/a normal image (<https://ezgif.com/>)
+  * <https://www.artbreeder.com/>
+* **resize**
+  * resize a lot of images (<https://picresize.com/>)
+  * resize one image (<https://www.resizepixel.com/>)
+* **convert**
+  * a lot of JPGs to WebP (more than 10) <https://online-converting.com/image/>
+  * a PNG to a SVG <https://png-svg.com/>
+  * otherwise, enter "xxx to yyy" to look for a converter from xxx to yyy
 
 <hr class="sr">
 

@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-If you need to store a small file, you may use
+If you need to store a small/medium-sized file, you may use
 
 * <https://filevert.fr/> (green IT 🌳)
 
