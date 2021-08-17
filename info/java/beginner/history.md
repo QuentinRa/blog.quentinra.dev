@@ -18,7 +18,7 @@
 ## Java 8
 
 * [Streams](../advanced/streams.md)
-* [Lambda expressions](../beginner/interfaces.md) (check Functional interfaces section)
+* [Lambda expressions](../beginner/interfaces.md#functional-interfaces)
 * moving JavaFX outside the JDK
 * interface default method
 * method references (you can use Caller::method instead

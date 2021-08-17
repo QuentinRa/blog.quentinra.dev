@@ -16,6 +16,7 @@
     - reference issue/pull request
     - fork
     - collaborators
+    - https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue
 - Latex
     - work on ref
 - Markdown

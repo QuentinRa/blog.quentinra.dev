@@ -234,7 +234,7 @@ Notes in PHP8
 
 <hr class="sl">
 
-## Tests
+## Tests with PHPUnit
 
 Following the [tests](../../proj/tests/index.md) course,
 you can write some tests in PHP using ``phpunit``.

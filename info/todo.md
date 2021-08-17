@@ -17,6 +17,7 @@
 - node
   - yarn
   - https://pnpm.io/
+  - Mocha
 - web
   - seo
     - https://www.gositestat.com/

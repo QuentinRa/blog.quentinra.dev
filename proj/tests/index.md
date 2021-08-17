@@ -96,9 +96,9 @@ are correct.
   before logout?)
   
 As a programmer, you should use some constants
-or enum instead of writing magic constants
+or create an enum instead of writing magic constants
 like ``"a value"`` or `5` in your code, as MOST peoples do.
-You can also use named argument, 
+You can also use named arguments instead of constants, 
 if your language allows you to.
 
 Remember the rules
@@ -150,15 +150,15 @@ want to check.
 We will now introduce the concept of **assertions**.
 An assertion (assert) is something that returns true
 if what we are asserting is true,
-otherwise, it's raising an exception/failing.
+and raising an exception/failing otherwise.
 
 You will usually write a lot of classes/files, having
 methods/functions usually called **testWhatIamTesting**
 and inside, you are writing some code using assertions
 <span class="tms">(such as ``assertTrue(a_condition_here)``)</span>.
 
-Check out your language course now, and it will be explained
-inside how to write these assertions.
+You can now check out your language course,
+as it should be explained how to write these assertions.
 
 <hr class="sr">
 
@@ -173,8 +173,8 @@ This is quite a famous methodology. You will
 This may look like something easy, but you need 
 to think about your tests 
 while not having any classes, methods, ... at hand
-(because they do not exist yet).
-To do an efficient TDD, you may
+(since they do not exist yet).
+To increase your efficiency, you may follow these steps
 
 1. write some UML, like a class diagram, or use Model-driven
    (check UML course) to write a good class diagram
@@ -186,6 +186,10 @@ To do an efficient TDD, you may
     
 And then you will end speeding the development
 trough you suffered at the beginning doing some UML.
+
+* [JUnit in Java](../../info/java/index.md#tests-with-junit)
+* [PHPUnit in PHP](../../info/php/index.md#tests-with-phpunit)
+* ...
 
 <hr class="sl">
 
