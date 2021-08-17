@@ -9,10 +9,11 @@ another course.
 
 1. [Images](images/index.md) (sauce, GIFs, edit, ...)
 2. [Fixing typos](writting/index.md)
-3. Temporary file hosting <https://filevert.fr/> (green IT 🌳)
-4. Emojis (copy-paste): [emojifaces](https://emojifaces.org/) or [emojipedia](https://emojipedia.org/)
+3. [Temporary file hosting](website/hosting.md)
+4. [Emojis](desktop/emojis.md)
 5. [Safe browsing](website/checkers.md)
 6. [Saving, converting, and/or Archiving](website/archive.md)
+7. [Screen recorders](desktop/record.md)
 
 <hr class="sl">
 
