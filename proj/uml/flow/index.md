@@ -43,11 +43,11 @@ Inside "State", you could add attributes like
 Transitions are the arrows linking a state with another. You
 may add on the arrow,
 
-* a trigger name (like what will move us from our state to another)
+* a trigger name (=event)
 
 ![trigger](images/trans1.png)
 
-* a condition (same as a trigger but a condition)
+* a condition
 
 ![condition](images/trans2.png)
 
