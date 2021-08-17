@@ -2,14 +2,13 @@
 
 [Go back](../index.md)
 
-Also called
+We are also calling it
 
-* automate
-*``diagramme d’activités`` / ``diagramme d’état-transitions``, 
-* state diagram
+* automate (``diagramme d’activités``)
+* state diagram (``diagramme d’état-transitions``)
 
 It's representing all the states of the program and
-the condition allowing the program to move from one
+the conditions/triggers allowing the program to move from one
 state to another.
 
 <hr class="sr">
@@ -18,17 +17,15 @@ state to another.
 
 We got 3 kinds of states
 
-* initial state(s)
-* intermediary state(s)
-* and final state(s)
-
-Here is an example with all of them
-
-![begin-end](images/u-HqA2v9B2efpStXukBarD3ILD3LjLDG0WgMf2e1HQ0ii2XG5gJ88JKl1QWU0000.png)
+* the initial state(s)
+* the intermediary state(s)
+* and the final state(s)
 
 When the program is starting, we are moving from one of the
 initial states to another state. Then we are moving
 from one state to another until one of the final states.
+
+![begin-end](images/u-HqA2v9B2efpStXukBarD3ILD3LjLDG0WgMf2e1HQ0ii2XG5gJ88JKl1QWU0000.png)
 
 Inside "State", you could add attributes like
 
@@ -43,8 +40,8 @@ Inside "State", you could add attributes like
 
 ## Transitions
 
-The transitions are the arrows linking a state to another. You
-may add on the arrow
+Transitions are the arrows linking a state with another. You
+may add on the arrow,
 
 * a trigger name (like what will move us from our state to another)
 
@@ -66,13 +63,11 @@ This is how you can do conditional branching.
 
 ![branching](images/JOqn3e0W34NdSegcavfu1O9dS2GE99P8WWnGxczXSljzVVaVm3K9LVgR3S2ohRZl5kaSZ8oY594E56v2A0yNHQ2Abzhvcg8mgZHkqYVdnjEnFWRDVsU2APKxnT7kDEdq1m00.png)
 
-Note that instead of using
-"A test" and true/false, you could use the same symbol but
-writing a condition instead of true/false. You could have
-more than 2 states branched by using that, and the automate
-will always take the most fitting condition like
+You could write a condition instead of true/false. 
+And, you can have more than 2 states branched by using that.
+The automate will always take the most fitting condition like
 
-* x = 5
+* let x = 5
 * cond1: x < 5
 * cond2: x > 0
 * cond3: x == 5
@@ -80,7 +75,7 @@ will always take the most fitting condition like
   having the condition cond3
 
 Since not anyone may follow this rule, you may add
-a note saying how yours is choosing.
+a note saying how your automate is picking a branch.
 
 <hr class="sr">
 

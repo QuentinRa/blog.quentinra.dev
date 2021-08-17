@@ -1,14 +1,15 @@
 # UML
 
-UML stands for ``Unified Modeling Language`` and that's
-a unified way of writing diagrams. You got some
-alternatives like ``SysML`` but that won't be covered here.
+UML stands for **Unified Modeling Language**.
+This is a standardized way of writing diagrams,
+because a sentence may often lead to a lot of interpretations.
 
 <hr class="sr">
 
 ## Content
 
-You got a lot of graphics [here](https://en.wikipedia.org/wiki/Modeling_language)
+You got a lot of diagrams 
+[listed on Wikipedia](https://en.wikipedia.org/wiki/Modeling_language#Graphical_types),
 but we will cover these
 
 * [class diagram](class/index.md) : the basic and most used one
