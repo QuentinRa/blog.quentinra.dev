@@ -4,9 +4,7 @@
 
 * <kbd>par</kbd> executes all blocs at the same time,
 * <kbd>seq</kbd> execute one block at a time,
-* and <kbd>critical</kbd> is used to wrap blocs of code that must be run
-without errors, otherwise the program can't continue
-running.
+* and <kbd>critical</kbd> is used to wrap blocs of code that must be run without errors, otherwise the program can't continue running.
 
 Here is an example
 
