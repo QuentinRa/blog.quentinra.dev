@@ -48,8 +48,8 @@ Last updated: 2021-08-18
 * [ ] edit: show formulas
 * [ ] edit: open link / show image
 * [ ] replacing links like [here] by something better
-* [ ] adding How To Contribute
 * [ ] increase courses title length (ex: add programming)
+* [ ] responsive (check)
 * [ ] review all pages for SEO
 * [ ] replace HTML tables by Markdown tables
 * [ ] Soft wraps for everyone
