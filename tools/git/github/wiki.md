@@ -2,18 +2,13 @@
 
 [Go back](../index.md#advanced-github-concepts)
 
-> A wiki is a group of pages written in Markdown
-> to explain how to use your project, for instance.
+> A wiki is a group of pages written in Markdown to explain how to use your project, for instance.
 
-That's a good practice to create one if you made
-a big project.
+That's a good practice to create one if you made a big project.
 
 Here is a [tutorial](https://guides.github.com/features/wikis/).
 
-You can add images using to ways
+You can add images using one of those two ways
 
-* drag and drop an image into a temporary issue, then copy
-the generated link (easy, test, working)
-* copy an image into your project then use
-a path starting with a ``/`` or not (need to be tested,
-  please edit this if not working or working)
+* drag and drop an image into a temporary issue, then copy the generated link (easy, test, working)
+* copy an image into your project then use a path starting with a ``/`` or not (need to be tested, please edit this if not working or working)
