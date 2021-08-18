@@ -6,24 +6,20 @@
 
 Note that here
 
-* ``m`` is a value representing the number of instances of the class **A**
-  interacting with object of the class **B**
-* ``n`` is a value representing the number of instances of the class **B**
-  interacting with object of the class **A**
+* <kbd>m</kbd> is a value representing the number of instances of the class **A** interacting with an object of the class **B**
+* <kbd>n</kbd> is a value representing the number of instances of the class **B** interacting with an object of the class **A**
 
-**Notice that the value is at the opposite side**. 
-The values that we can use are
+<hr class="sl">
 
-* `n`: only ``n``, a number like 0,1,4,...
-* ``*``: 0 or more
-* ``0..1``: 0 or 1
-* ``0..*``: same as `*`
-* ``1..*``: 1 or more
-* ``n..*``: ``n`` or more
-* ``n..m``: at least ``n`` and up to ``m``
-* `n..n`: same as ``n``
+**Notice that the value is at the opposite side**. The values that we can use are
 
-So we could replace our `n` by ``0..1`` (0 or 1)
-and our ``m`` by `*` (0 or more).
+* <kbd>n</kbd>: exactly <kbd>n</kbd>, this is a number like 0,1,2,...
+* <kbd>*</kbd>: 0 or more
+* <kbd>0..1</kbd>: 0 or 1
+* <kbd>0..*</kbd>: same as <kbd>\*</kbd>
+* <kbd>1..*</kbd>: 1 or more
+* <kbd>n..*</kbd>: <kbd>n</kbd> or more
+* <kbd>n..m</kbd>: at least <kbd>n</kbd>, and up to <kbd>m</kbd>
+* <kbd>n..n</kbd>: same as <kbd>n</kbd>
 
-
+For instance, in the example above with <kbd>n..m</kbd>, we could replace our <kbd>n</kbd> by <kbd>0..1</kbd> (0 or 1) and our <kbd>m</kbd> by <kbd>*</kbd> (0 or more).
