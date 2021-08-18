@@ -14,6 +14,5 @@ Replacement (ESC)
 Replacement
 
 * `s`: delete the character under the cursor, then switch to the insert mode
-* `cc`: delete the current line then switch to the insertion mode
-* `cw`: delete characters starting from the cursor position
-  until the end of the word. Then, switch to insertion mode.
+* `cc`: delete the current line, then switch to the insertion mode
+* `cw`: delete characters starting from the cursor position until the end of the word. Then, switch to insertion mode.

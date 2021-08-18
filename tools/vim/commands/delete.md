@@ -8,8 +8,7 @@ Delete characters
 * `X`: delete characters before the cursor
 * `nx` or `nX`: same as before but for `n` characters
 * `d^`: delete all characters of the line until the cursor
-* `D` or `d$`: delete all characters of the line from the
-  cursor until the end
+* `D` or `d$`: delete all characters of the line from the cursor until the end
 
 Delete lines
 
