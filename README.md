@@ -53,6 +53,10 @@ Last updated: 2021-08-18
 * [ ] review all pages for SEO
 * [ ] replace HTML tables by Markdown tables
 * [ ] Soft wraps for everyone
+* [ ] Cache-control header
+* [ ] Index Google/Bing
+* [ ] add commit authors
+* [ ] Typos for HTC + New pages
 </details>
 
 <br>
