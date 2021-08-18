@@ -2,11 +2,10 @@
 
 [Go back](index.md#introduction)
 
-* on Windows [git-scm](https://git-scm.com/) do it for you
-* on Linux ``sudo apt-get install git``
+* on Windows, installing [git-scm](https://git-scm.com/) will do
+* on Linux, ``sudo apt-get install git``
 
-Then you need to set things up and you are
-ready
+Then you need to set your configuration, and you are ready
 
 ```bash
 git config --global user.name "name used on commits"
