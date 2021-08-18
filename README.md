@@ -50,7 +50,6 @@ Last updated: 2021-08-18
 * [ ] replacing links like [here] by something better
 * [ ] mathjax overflow
 * [ ] adding ToS
-* [ ] adding Privacy Policy
 * [ ] adding How To Contribute
 * [ ] increase courses title length (ex: add programming)
 * [ ] review all pages for SEO
