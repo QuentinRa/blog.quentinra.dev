@@ -64,6 +64,10 @@ Last updated: 2021-08-13
 * [ ] adding Privacy Policy
 * [ ] adding How To Contribute
 * [ ] adding About
+* [ ] increase courses title length (ex: add programming)
+* [ ] review all pages for SEO
+* [ ] replace HTML tables by Markdown tables
+* [ ] Soft wraps for everyone
 </details>
 
 <br>

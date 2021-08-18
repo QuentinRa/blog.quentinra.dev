@@ -10,6 +10,7 @@
     - add a project icon
     - preview in the editor
     - CTest
+    - soft wraps
 - Git
     - adding merge graph example
     - copilot: https://www.sitepoint.com/github-copilot-ai-pair-programming/
