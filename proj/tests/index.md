@@ -1,14 +1,8 @@
 # Tests
 
-You must do some tests to check if your code 
-or your project is working correctly.
-In futures versions, they might help you find some bugs.
+You must do some tests to check if your code or your project is working correctly. In futures versions, they might help you find some bugs.
 
-To write tests, you need to find 
-the parts of your code that needs to be tested,
-and that can be hard. 
-You may also have to think about what you
-are going to test given a function/block of code.
+To write tests, you need to find the parts of your code that needs to be tested, and that can be hard. You may also have to think about what you are going to test given a function/block of code.
 
 So in this course, you will see
 
@@ -19,19 +13,9 @@ So in this course, you will see
 * how to find tests
 * what are **assertions**
 
-This course will focus on the theory, but you
-should be able to find a section about tests,
-in the **Java** course, the **PHP** course, etc.
+This course will focus on the theory, but you should be able to find a section about tests, in the **Java** course, the **PHP** course, etc.
 
-**edit 15/07/2021**: I recently learned the
-notion of **coverage**. A lot of tools introduced
-in the Git course, inside the fancy notes section,
-are scanning your code and telling you which **paths**
-of your code are covered by tests. Now, I think that
-programmers should have a clear idea of what
-they have to test, and it makes things easier, 
-as *all they have to do* now
-is to write the most meaningful tests 😎.
+**Edit 15/07/2021**: I recently learned the notion of **coverage**. A lot of tools introduced in the Git course, inside the fancy notes section, are scanning your code and telling you which **paths** of your code are covered by tests. Now, I think that programmers should have a clear idea of what they have to test, and it makes things easier, as *all they have to do* now is to write the most meaningful tests 😎.
 
 <hr class="sl">
 
@@ -40,21 +24,16 @@ is to write the most meaningful tests 😎.
 You can be in one of those cases
 
 * White-box testing: you know about the underlying code
-* Black-box testing: you only know about things code 
-  from the documentation, meaning the inputs and the outputs
+* Black-box testing: you only know about things code from the documentation, meaning the inputs and the outputs
 * Grey-box testing: we got a mix of both
 
-You will usually pick one and write your tests accordingly.
-Most of the time, tests are **unit tests**: 
-you test a part of the code.
-Here are some good practices before starting.
+You will usually pick one and write your tests accordingly. Most of the time, tests are **unit tests**: you test a part of the code. Here are some good practices before starting.
 
 <hr class="sr">
 
 ## Design by contract
 
-You are writing some code while making the contract
-with the caller that 
+You are writing some code while making the contract with the caller that 
 
 * if the program (arguments, ...)
 * is in a correct state 
@@ -63,31 +42,17 @@ with the caller that
 
 So you might see one of these words often
 
-* **preconditions**: the conditions that must
-  be valid before the call (attributes, parameters, ...)
-* **postconditions**: the conditions that will
-  be valid after the execution of our code
-* **invariant**: something that won't be changed
-<span class="tms">
-(ex: when counting elements in a list, the size of the list before
-and after the call must be the same).
-<span>  
+* **preconditions**: the conditions that must be valid before the call (attributes, parameters, ...)
+* **postconditions**: the conditions that will be valid after the execution of our code
+* **invariant**: something that won't be changed <span class="tms"> (ex: when counting elements in a list, the size of the list before and after the call must be the same).<span>  
 
-You will have to remember these while analyzing your code to find
-some tests. The robustness of a function is determined by the number
-of preconditions that you verified to make sure that,
-in all cases, your preconditions are valid
-so your code did its job.
+You will have to remember these while analyzing your code to find some tests. The robustness of a function is determined by the number of preconditions that you verified to make sure that, in all cases, your preconditions are valid, so your code did its job.
 
 <hr class="sl">
 
 ## Defensive programming
 
-As you have read above, we are relying on the fact that the
-**preconditions** are valid for your **postconditions**
-to be valid. As a defensive programmer, you should
-**always** test and assert that your preconditions
-are correct.
+As you have read above, we are relying on the fact that the **preconditions** are valid for your **postconditions** to be valid. As a defensive programmer, you should **always** test and assert that your preconditions are correct.
 
 * check if objects/addresses are null/undefined/...
 * check the range (RGB : [0,255] but that may be an int)
@@ -95,11 +60,7 @@ are correct.
 * check runtime conditions (is login called
   before logout?)
   
-As a programmer, you should use some constants
-or create an enum instead of writing magic constants
-like ``"a value"`` or `5` in your code, as MOST peoples do.
-You can also use named arguments instead of constants, 
-if your language allows you to.
+As a programmer, you should use some constants or create an enum instead of writing magic constants like ``"a value"`` or `5` in your code, as MOST peoples do. You can also use named arguments instead of constants, if your language allows you to.
 
 Remember the rules
 
@@ -112,20 +73,16 @@ Remember the rules
 
 ## Find tests
 
-The parts above are useful to understand preconditions
-and postconditions. That should help you test your code.
-Remember that you must test 
+The parts above are useful to understand preconditions and postconditions. That should help you test your code. Remember that you must test 
 
 * good scenarios (code working)
 * bad scenarios (code returning the right error code, ...)
 
-The mnemonic **RightBicep** is summarizing what you need
-to check
+The mnemonic **RightBicep** is summarizing what you need to check
 
 * <kbd>Right</kbd>: is the result what we expected? Is the job done?
 * <kbd>B</kbd>: see **CORRECT**
-* <kbd>I</kbd> (inverse): if we have a method which
-is the inverse of yours, then try testing your code with it
+* <kbd>I</kbd> (inverse): if we have a method which is the inverse of yours, then try testing your code with it
 * <kbd>C</kbd> (cross-check): a test using other methods
 * <kbd>E</kbd> (errors): test errors
 * <kbd>P</kbd> (performance): test performances
@@ -140,27 +97,44 @@ And **CORRECT**
 * <kbd>C</kbd>: Cardinal (if we are changing size, is the method still working?)
 * <kbd>T</kbd>: time (is logout called before login?)
 
-These are the main questions/topics that you might
-want to check.
+These are the main questions/topics that you might want to check.
 
 <hr class="sl">
 
 ## How should I code tests?
 
-We will now introduce the concept of **assertions**.
-An assertion (assert) is something that returns true
-if what we are asserting is true,
-and raising an exception/failing otherwise.
+We will now introduce the concept of **assertions**. An assertion (assert) is something that returns true if what we are asserting is true, and raising an exception/failing otherwise.
 
-You will usually write a lot of classes/files, having
-methods/functions usually called **testWhatIamTesting**
-and inside, you are writing some code using assertions
-<span class="tms">(such as ``assertTrue(a_condition_here)``)</span>.
+You will usually write a lot of classes/files, having methods/functions usually called **testWhatIamTesting** and inside, you are writing some code using assertions <span class="tms">(such as ``assertTrue(a_condition_here))</span>.
 
-You can now check out your language course,
-as it should be explained how to write these assertions.
+You can now check out your language course, as it should be explained how to write these assertions.
 
 <hr class="sr">
+
+## UI testing
+
+This is something that I wasn't aware of, as it seems developers' often forgot, but we should write the tests of our interface. 
+
+You can write in a text file, a story of you using your app ("user story") which is a test. Write as many as needed. The tools checking the coverage of your code won't help us here. If you need to check everything, it might be long. 
+
+* ask yourself what your users will do (or ask them)
+* try testing your app ...
+  * in the browsers you picked, if this is a website
+  * on the platforms you picked, if this is an application
+  * **but**, I think you should make sure your app is working perfectly inside ONE browser or inside ONE platform before targeting many of them
+* for a website, you might check
+  * if it's responsive
+  * the language (if you have more than one)
+    * did a button becomes "weird", because you put too much text in it?
+    * ...
+  * test printing a page, is this what you expected?
+  * tests if your forms are working
+  * tests for injections/if some fields are removed/...
+  * ...
+
+You might as well use logs and check if the logs are what you expected according to the user story.
+
+<hr class="sl">
 
 ## Test-driven development (TDD)
 
@@ -170,51 +144,39 @@ This is quite a famous methodology. You will
 * then you will write some code to pass **1** test
 * then you try to pass **2** etc. until all of them passed
 
-This may look like something easy, but you need 
-to think about your tests 
-while not having any classes, methods, ... at hand
-(since they do not exist yet).
-To increase your efficiency, you may follow these steps
+This may look like something easy, but you need to think about your tests while not having any classes, methods, ... at hand (since they do not exist yet). To increase your efficiency, you may follow these steps
 
-1. write some UML, like a class diagram, or use Model-driven
-   (check UML course) to write a good class diagram
+1. create UML diagrams, like a class diagram, or use Model-driven (check UML course) to write a good class diagram
 2. write your tests more easily since you got the structure
 3. just repeat the usual steps
     1. code a method
     2. run tests, one less fail after each run
     3. optimize your code (beware of premature optimization)
     
-And then you will end speeding the development
-trough you suffered at the beginning doing some UML.
+And then you will end speeding the development through you suffered at the beginning doing some UML.
 
 * [JUnit in Java](../../info/java/index.md#tests-with-junit)
 * [PHPUnit in PHP](../../info/php/index.md#tests-with-phpunit)
 * ...
 
-<hr class="sl">
+<hr class="sr">
 
 ## Behavior-driven development (BDD)
 
-Usually, before a TDD, we do this. Not a lot of people do
-know of this one trough, and no many are using it.
-You can use this extreme-development method
-to think a bit more about your functions before coding.
-Try explaining each functionality like this
+Usually, before a TDD, we do this. Not a lot of people do know of this one trough, and no many are using it. You can use this extreme-development method to think a bit more about your functions before coding. Try explaining each functionality like this
 
 * <kbd>Given</kbd> an action done by the user
 * <kbd>When</kbd> I did this action
 * <kbd>Then</kbd> I will run this code
 * <kbd>And</kbd> [...] will happen.
 
-You will do that for all of your functionalities,
-and as always, do not forget to include the error cases.
-You need to think
+You will do that for all of your functionalities, and as always, do not forget to include the error cases. You need to think
 
 * What my function is supposed to do?
 * Will adding my function, do what we want?
 * What problems adding my function might cause?
 
-<hr class="sr">
+<hr class="sl">
 
 ## Sources
 
