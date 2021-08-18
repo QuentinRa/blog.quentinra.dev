@@ -39,7 +39,7 @@ If you want to edit a course, simply edit the ``.md`` file.
 
 ## TODO List 
 
-Last updated: 2021-08-13
+Last updated: 2021-08-18
 
 <details>
 <summary> <b>Website tasks</b></summary>
@@ -47,13 +47,11 @@ Last updated: 2021-08-13
 * [ ] add go back to #titleID instead of #linkID
 * [ ] edit: show formulas
 * [ ] edit: open link / show image
-* [ ] edit: keystrokes?
 * [ ] replacing links like [here] by something better
 * [ ] mathjax overflow
 * [ ] adding ToS
 * [ ] adding Privacy Policy
 * [ ] adding How To Contribute
-* [ ] adding About
 * [ ] increase courses title length (ex: add programming)
 * [ ] review all pages for SEO
 * [ ] replace HTML tables by Markdown tables
