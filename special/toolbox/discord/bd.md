@@ -13,6 +13,7 @@ you to install plugins. You can find
 To install new plugins, what I do is
 
 * settings > plugin > open the plugin folder
+* (`C:\Users\USERNAME\AppData\Roaming\BetterDiscord\plugins`)
 * copy and paste a plugin inside the folder
 * [the plugin can be found here](https://betterdiscord.app/plugins)
 * go back to discord and don't forget to enable the plugin
