@@ -240,3 +240,4 @@ And here are some HTML tags you may use
 * <https://www.madoko.net/>
 * <https://guides.github.com/features/mastering-markdown/>
 * <https://sindresorhus.com/github-markdown-css/>
+* <https://www.jetbrains.com/help/hub/Markdown-Syntax.html>
