@@ -4,16 +4,16 @@
 
 You can make a dropdown like this
 
-<details class="pb-3">
-<summary>Title</summary>
+<details class="p-3 mb-3 border border-dark">
+<summary>Click here</summary>
 Content
 </details>
 
-with
+with this code (I added the border)
 
 ```html
 <details>
-<summary>Title</summary>
+<summary>Click here</summary>
 Content
 </details>
 ```
@@ -24,16 +24,16 @@ Content
 
 You can make it open by default
 
-<details open class="pb-3">
-<summary>Title</summary>
+<details open class="p-3 mb-3 border border-dark">
+<summary>Click here</summary>
 Content
 </details>
 
-with
+with this code (I added the border)
 
 ```html
 <details>
-<summary>Title</summary>
+<summary>Click here</summary>
 Content
 </details>
 ```
@@ -42,9 +42,8 @@ Content
 
 ## Example
 
-You can look at this amazing example
-that [I found here](https://gist.github.com/ImminentFate/931bd780de7fb2aecc376e7af446c5df),
-which I modified at bit.
+You can look at this amazing example that [I found here](https://gist.github.com/ImminentFate/931bd780de7fb2aecc376e7af446c5df),
+which I modified a bit.
 
 <blockquote>
 <table><tbody><tr></tr><tr><td>

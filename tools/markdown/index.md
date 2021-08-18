@@ -1,22 +1,14 @@
 # Markdown
 
-Markdown, associated with the ``.md`` extension like
-for `README.md`,
-is commonly used in documentation files or to write
-simple documents...
-You can learn it in a couple of minutes.
-Here is an [amazing markdown guide](https://www.markdownguide.org/basic-syntax/).
+Markdown, associated with the ``.md`` extension (like for the famous `README.md`), is commonly used in documentation files or to write simple documents... You can learn it in a couple of minutes. Here is an [amazing markdown guide](https://www.markdownguide.org/basic-syntax/).
 
-> All courses of this website are written
-> in **Markdown** so you can contribute if you want
-> to 🙇. Thanks if you do.
+> All courses on this website are written in **Markdown** so you can contribute if you want to 🙇. Thanks if you do.
 
 <hr class="sl">
 
 ## Titles
 
-You got 6 kinds of titles, created using ``#``.
-The more ``#`` you add, the smaller your title becomes.
+You got 6 kinds of titles, created using ``#``. The more ``#`` you add, the smaller your title becomes.
 
 ```markdown
 # h1 - huge title
@@ -27,7 +19,7 @@ The more ``#`` you add, the smaller your title becomes.
 ###### h6 - tiny title
 ```
 
-**Note**: be sure to leave a space after ``#``
+**Note**: be sure to leave a space after ``#``.
 
 <hr class="sr">
 
@@ -61,20 +53,19 @@ You may use ``*`` or `-` or `+`. It looks like this
 * an item
 * another item
     * an item of a sub-list
-    that have a long sentence
-    * and again another item
+      having a long description
+    * and yet another item
 * a 3rd item
 ```
 
-You can replace ``*`` with a number to make
-an ordered list. You can mix both too.
+You can replace ``*`` with a number to make an ordered list. You can mix both too.
 
 ```markdown
 1. an item
 2. another item
-    * an item of a sub-list
-    that have a long sentence
-    * and again another item
+    * an item of a nested list
+      having a long description
+    * and yet another item
 3. a 3rd item
 ```
 
@@ -82,20 +73,18 @@ an ordered list. You can mix both too.
 
 ## Code
 
-You can write some ``inline code`` using inverted quotes
+You can write ``inline code`` using inverted quotes
 
 ```markdown
-You can write some `inline code` using inverted quotes 
+You can write `inline code` using inverted quotes 
 ```
 
-and you can write a lot of code, using this syntax.
-Note that ``c`` is the language used
-for highlighting the code.
+and you can write a lot of code, using this syntax. Note that ``c`` is the language used for highlighting the code.
 
 <pre class="language-c">
 <code class="language-c"
 >```c
-int main(void){
+int main(void) {
 
 }
 ```</code>
@@ -119,8 +108,7 @@ You could create a link easily with <https://example.com>.
 
 ## Table
 
-This is NOT supported everywhere, but you
-can make a table with this code
+This is NOT supported everywhere, but you can make a table with this code
 
 ```markdown
 | Column name | Column name |
@@ -133,18 +121,13 @@ can make a table with this code
 | tab[5][0] | tab[5][1] |
 ```
 
-You can center the column content by adding
-``:---:`` instead of `---`. You can align the
-content to the right/left by only adding ``:``
-at the right/left of ```---```.
+You can center the column content by adding ``:---:`` instead of `---`. You can align the content to the right/left by only adding ``:`` at the right/left of ```---```.
 
 <hr class="sl">
 
 ## Emojis
 
-You can write ``:emoji:`` to render an emoji, with
-"emoji" the one you want. The list of values can be found
-here
+You can write ``:emoji:`` to render an emoji, with "emoji" the one you want. The list of values can be found here
 
 * [markdown-emojis](https://github.com/markdown-templates/markdown-emojis)
 * [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet) (official)
@@ -186,9 +169,7 @@ And you can write comments with this syntax
 [//]: # (This may be the most platform-independent comment)
 ```
 
-This is a normal code block, but this is a particular case,
-it's used a lot in documentation to show
-"what you could do before" and "what you need to do now".
+This is a normal code block, but this is a particular case, it's used a lot in documentation to show "what you could do before" and "what you need to do now".
 
 <pre><code class="language-markdown"
 >```diff
@@ -200,14 +181,13 @@ it's used a lot in documentation to show
 
 ## HTML in Markdown
 
-You can use HTML in Markdown. But beware, you can't
-use Markdown **inside** HTML tags unless you make
-a blank line like this
+You can use HTML in Markdown. But beware, you can't use Markdown **inside** HTML tags unless you add a blank line
 
 ```markdown
 <div>
 
-This is a link: <https://example.com/>.
+I can write markdown here like <https://example.com/>,
+because I added a blank line.
 </div>
 ```
 
@@ -247,6 +227,7 @@ And here are some HTML tags you may use
 | \!\[alt](url)|&lt;img src="url" alt="alt"&gt;|
 | \> text | &lt;blockquote&gt;text&lt;/blockquote&gt; |
 | \--- | &lt;hr&gt; |
+| new line | &lt;br&gt; |
 
 <hr class="sl">
 
