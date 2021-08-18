@@ -48,6 +48,8 @@
   - https://codeguide.co/
 - html
   - https://codeguide.co/
+  - mailto
+  - main
 - js
   - https://github.com/elsewhencode/project-guidelines
   - https://github.com/ryanmcdermott/clean-code-javascript
