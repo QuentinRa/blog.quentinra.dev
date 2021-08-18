@@ -46,8 +46,9 @@ Last updated: 2021-08-13
 
 * [ ] add go back to #titleID instead of #linkID
 * [ ] edit: show formulas
-* [ ] edit: open link
-* [ ] replacing links with [here] by something better
+* [ ] edit: open link / show image
+* [ ] edit: keystrokes?
+* [ ] replacing links like [here] by something better
 * [ ] mathjax overflow
 * [ ] adding ToS
 * [ ] adding Privacy Policy
