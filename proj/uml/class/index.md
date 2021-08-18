@@ -26,8 +26,7 @@ Attributes got
     * **public** (+, read/write for all classes, default mode)
     * **private** (-, read/write only for the class's methods)
     * **package** (~, read/write for all classes inside the class's folder)
-    * **protected** (#, same as package, but read/write
-      for all classes inheriting our class)
+    * **protected** (#, same as package, but read/write for all classes inheriting our class)
 * a name
 * a [type](types.md)
 * a default value (optional)
@@ -48,8 +47,7 @@ Attributes got
 
 ## Operations
 
-An operation is the UML name for a method/function. You
-will have
+An operation is the UML name for a method/function. You will have
 
 * a visibility
 * a function name (usually in lowerCamelCase)
@@ -63,18 +61,14 @@ a public ("+") operation named "getName" taking no arguments ("()") and returnin
 
 **Notes**
 
-* If your method is creating/destroying objects,
-  then you should add `<<constructor>>`/``<<create>>``
-  and ``<<destroy>>`` after the visibility
-* an operation **underlined** is static (ex: you don't
-new an object to call an operation, you can call it on the class, like Math.round)
+* If your method is creating/destroying objects, then you should add `<<constructor>>`/``<<create>>``, and ``<<destroy>>`` after the visibility
+* an operation **underlined** is static (ex: you don't new an object to call an operation, you can call it on the class, like Math.round)
 
 <hr class="sr">
 
 ## Associations and multiplicity
 
-Now that you can write a class, we will look at
-the relationships between classes, represented by what we call associations/relationships. An association is a representation of a link between two classes. We usually write a multiplicity "n..m" characterizing how many instances of the classes are linked with how many of the other classes. We are also adding a name to remember what kind of link it is.
+Now that you can write a class, we will look at the relationships between classes, represented by what we call associations/relationships. An association is a representation of a link between two classes. We usually write a multiplicity "n..m" characterizing how many instances of the classes are linked with how many of the other classes. We are also adding a name to remember what kind of link it is.
 
 ![multiplicity](images/Syv9B2vsL53AKr1IqDLLKCe5qiuWCIS5Ao0pBp4tLGa0.png)
 
@@ -104,7 +98,7 @@ You are going to use the generalization a lot to factorize your code logic, aggr
 
 ## Associations constraints
 
-* **dynamic**: you write a note on the association explaining the constraints (ex: you can't call buy before order)
+* **dynamic**: you write a note on the association, explaining the constraints (ex: you can't call buy before order)
   
 The following constraints, are applied on every association **linked to a line ``------``**. We are adding the constraint on top of the line, which could be a constraint of
 
