@@ -56,7 +56,6 @@ Last updated: 2021-08-18
 * [ ] Cache-control header
 * [ ] Index Google/Bing
 * [ ] add commit authors
-* [ ] Typos for HTC + New pages
 </details>
 
 <br>
