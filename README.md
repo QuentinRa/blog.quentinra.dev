@@ -45,7 +45,6 @@ Last updated: 2021-08-18
 <summary> <b>Website tasks</b></summary>
 
 * [ ] add go back to #titleID instead of #linkID
-* [ ] edit: open link / show image
 * [ ] replacing links like [here] by something better
 * [ ] increase courses title length (ex: add programming)
 * [ ] responsive (check)
