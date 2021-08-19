@@ -92,12 +92,12 @@ In French, it's called ``Formule des probabilités totales``.
 
 <div>
 \[
-\displaylines{
+\begin{split}
 \mathbb{P}(B) = \mathbb{P}(B \cap \Omega)
 = \mathbb{P}((A_1 \cap B) \cup (A_2 \cap B) \cup \ldots) 
 \\ = \mathbb{P}(A_1 \cap B) + \mathbb{P}(A_2 \cap B) + \ldots \\
 = \mathbb{P}(A_1) * \mathbb{P}(B|A_1) + \mathbb{P}(A_2) * \mathbb{P}(B|A_2) + \ldots
-}
+\end{split}
 \]
 </div>
 

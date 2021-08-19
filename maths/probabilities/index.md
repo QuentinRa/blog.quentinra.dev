@@ -135,12 +135,12 @@ by
 
 <div>
 \[
-\displaylines{
+\begin{split}
 \mathbb{P}(x \in X) = \int_{x \in \Delta X}^{} f_X(x)dx \\
 or\ \mathbb{P}(a \le X \le b) = \int_{a}^{b} f_X(x)dx \\
 or\ \mathbb{P}(x \le a) = \mathbb{P}(x \lt a) = \int_{a}^{+\infty} f_X(x)dx \\
 or\ \mathbb{P}(x \ge b) = \mathbb{P}(x \gt b) = \int_{-\infty}^{b} f_X(x)dx
-}
+\end{split}
 \]
 </div>
 
@@ -152,7 +152,7 @@ The density function **is valid if**
   you have some restrictions like $\lambda>0$ so you can
   reduce the interval.
   </span>
-* $\forall{x},\ f(x) \ge 0$
+* $\forall{x},\ f_X(x) \ge 0$
 * $f_X$ is continue
 
 The random variable $X$ is called continuous

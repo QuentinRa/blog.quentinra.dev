@@ -90,7 +90,7 @@ it may be useful for the report or the vocabulary
     (if you see 2000 then you can expect at least 2500/3000 
     if you ratio price/quality is good.
     You can expect a lot more if your price is low
-    (60\\$\70\\$ is "low" for us))
+    (60-70$ is "low" for us))
   * **Ventes**: 
     you can sell at the ``guichet``/counter 
     or to agencies (you should sell as much as possible to agencies). 

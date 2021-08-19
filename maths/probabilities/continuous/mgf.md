@@ -58,7 +58,7 @@ so we have
 
 <div>
 \[
-\displaylines{
+\begin{split}
 M_X(t) = \int_{0} \exp^{tx} * \lambda * \exp^{-\lambda x}\ dx\\
 = \lambda * \int_{0} \exp^{tx} * \exp^{-\lambda x}\ dx \\
 = \lambda * \int_{0} \exp^{(t -\lambda) x}\ dx \\
@@ -66,7 +66,7 @@ M_X(t) = \int_{0} \exp^{tx} * \lambda * \exp^{-\lambda x}\ dx\\
 = \lambda * (0 - \frac{1}{t -\lambda}) \\
 = - \frac{\lambda}{t -\lambda} \\
 = \frac{\lambda}{\lambda - t}
-}
+\end{split}
 \]
 </div>
 

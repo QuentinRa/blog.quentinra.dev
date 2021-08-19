@@ -26,7 +26,7 @@ simplify since $x \gt 0$ giving us $\int_{0}^{+\infty} f(x) dx = 1$.
 
 <div>
 \[
-\displaylines{
+\begin{split}
 \int_{0}^{+\infty} x * e^{\frac{-x^2}{2}} dx = 1
 \\ 
 \Leftrightarrow
@@ -34,7 +34,7 @@ simplify since $x \gt 0$ giving us $\int_{0}^{+\infty} f(x) dx = 1$.
 \\ 
 \Leftrightarrow
 -0 - -1 = 1
-}
+\end{split}
 \]
 </div>
 
@@ -70,7 +70,7 @@ Both $x$ and $1-x$ are continue.
 
 <div>
 \[
-\displaylines{
+\begin{split}
 2 * \int_{0}^{1} 1 - x = 1
 \\ 
 \Leftrightarrow
@@ -81,7 +81,7 @@ Both $x$ and $1-x$ are continue.
 \\
 \Leftrightarrow
 2 * 0.5 = 1
-}
+\end{split}
 \]
 </div>
 
