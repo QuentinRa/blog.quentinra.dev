@@ -53,6 +53,10 @@ Last updated: 2021-08-18
 * [ ] Soft wraps for everyone
 * [ ] Index Google/Bing
 * [ ] add commit authors
+* [ ] edit: fix preview or disable it
+* [ ] edit: add enable/disable side-by-side
+* [ ] edit: maybe change ReCaptcha to hCaptcha or ReCaptcha v3?
+* [ ] edit: replace icons by Bootstrap icons?
 </details>
 
 <br>
