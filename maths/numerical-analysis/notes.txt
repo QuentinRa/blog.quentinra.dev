@@ -1,5 +1,7 @@
 https://andreask.cs.illinois.edu/cs357-s15/public/notes/section_m_notes/CS357Lecture3_Norms.pdf
 https://en.wikipedia.org/wiki/Condition_number
+https://www.wolframalpha.com/input/?i=%28n*%28n+%E2%88%921%29%2F2%29%5E2+*+n
+https://math.ryerson.ca/~danziger/professor/MTH108/Handouts/gauss-complexity.pdf
 
 		* https://www.i2m.univ-amu.fr/perso/thierry.gallouet/licence.d/anum.d/anum-tg2.pdf
 			* éléments page 68+ intéressants
