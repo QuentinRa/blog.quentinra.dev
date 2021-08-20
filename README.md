@@ -60,6 +60,7 @@ Last updated: 2021-08-18
 * [ ] add issue template
 * [ ] add pull request template
 * [ ] add changelog
+* [ ] day-night mode
 </details>
 
 <br>
