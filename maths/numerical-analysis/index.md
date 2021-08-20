@@ -8,13 +8,53 @@ The main goal of this course is to solve **AX=b** (find the vector $X$, given a 
 
 You should have some knowledge about matrices, such as inverting a matrix or finding the eigenvalues (``valeurs propres``). There is a [course on this website](../matrix/index.md), you may find more information there.
 
-Most of this course will use **R language** to provide an example of how you could implement what you learned.
+Most of this course will use **R language** to provide an example of how you could implement what you learned. 
+
+<hr class="sr">
+
+## Note before starting
+
+A lot of times, we are using $x$ like $Ax=b$, but $x$ is a vector so it's quite disturbing when you are later introducing a variable $x$. I tried replacing $X$ by $x$, when it makes things more readable.
+
+<div>
+\[
+\begin{split}
+\begin{cases}
+4x + 2y + 2z = 12 \\
+2x + 10y + 7z = -9 \\
+2x + 7y + 21z = -20 \\
+\end{cases}
+\Leftrightarrow \\\\
+A = \begin{pmatrix}
+4 & 2 & 2 \\
+2 & 10 & 7 \\
+2 & 7 & 21 \\
+\end{pmatrix}
+\quad
+b = \begin{pmatrix}
+12 \\
+-9 \\
+-20 \\
+\end{pmatrix}
+\quad
+X = \begin{pmatrix}
+x \\
+y \\
+z \\
+\end{pmatrix}
+\end{split}
+\]
+</div>
+
+And the solution is $X = (4,-1,-1)$. If you're checking, $A * X$ should be equals to $b$. You can also replace $x$ (4), $y$ (-1), and $z$ (-1) in the equations, and check if the system is consistent.
+
+*We will we use this system as a reference in every exercise from now on*.
 
 <hr class="sl">
 
 ## Introduction
 
-Calculations are made using a computer, so they may be some mistakes. Here a some "mistakes"
+Calculations are made using a computer, so they may be some mistakes. Here a some examples
 
 * Round-off (`arrondi`): the machine may round your numbers
 * Truncation (`troncature`): the machine may truncate your numbers
@@ -22,9 +62,9 @@ Calculations are made using a computer, so they may be some mistakes. Here a som
 * Problem (`problème`): you are trying to solve the wrong problem
 * Calculation (`calcul`): you are doing the wrong calculation
 
-You will need
+Hence, we will need before starting,
 
-* to estimate your errors (using **norms**)
+* to estimate our errors (using **norms**)
 * estimate the complexity/order of your algorithm
 
 <hr class="sr">
