@@ -29,7 +29,7 @@ Our goal is to convert our matrix to a **lower triangular matrix** like this one
 
 <p>
 \[
-\begin{pmatrix}
+L^t = \begin{pmatrix}
 l_{11} & 0 & 0 \\
 l_{21} & l_{22} & 0 \\
 l_{31} & l_{32} & l_{33} \\
@@ -39,7 +39,7 @@ l_{31} & l_{32} & l_{33} \\
 
 You only have to use the following formulas, and replace the values in the lower triangular matrix. Note that we are starting from the top-left corner.
 
-**FIRST FORMULA**
+* **FIRST FORMULA**
 
 <p>
 \[
@@ -49,7 +49,7 @@ l_{ii} = \sqrt{a_{ii} - \sum_{k=1}^{i-1} l^2_{ik}}
 
 This is the square of the **value on the diagonal** minus all the **values** on the **same line**, but **before** ours.
 
-**SECOND FORMULA**
+* **SECOND FORMULA**
 
 <p>
 \[
@@ -64,6 +64,13 @@ This is the **our value** minus, the sum of the products of
 * (until we don't have a previous column)
 
 Then, we are dividing the result by the value on the diagonal.
+
+* **THEN THE GOAL Ax=b**
+
+Your first goal will be to get the matrix $L^t$, using the formulas. Once you do, transpose it and you will have $L$. Now, you got two jobs
+
+* solve $y$ in $L^t * y = b$
+* then $x$ is the result of solving $L * x = y$
 
 <hr class="sl">
 
@@ -113,15 +120,21 @@ Giving us the matrix
 
 <p>
 \[
-\begin{pmatrix}
+L^t = \begin{pmatrix}
 2 & 0 & 0 \\
 1 & 3 & 0 \\
 1 & 2 & 4 \\
 \end{pmatrix}
+\quad
+L = \begin{pmatrix}
+2 & 1 & 1 \\
+0 & 3 & 2 \\
+0 & 0 & 4 \\
+\end{pmatrix}
 \]
 </p>
 
-Now we will use **triangular factorization** with b and solve x.
+Now we will use **triangular factorization** with $L^t y = b$ and **solve y**.
 
 <p>
 \[
@@ -133,8 +146,60 @@ Now we will use **triangular factorization** with b and solve x.
 \]
 </p>
 
-Giving us
+Giving us $y = (6, -5, -4)$
 
 * $x = 6$
 * $y = \frac{-9 -6}{3} = \frac{-15}{3} = -5$
-* $z = \frac{-20 -6-10}{4} = \frac{-36}{4} = -9$
+* $z = \frac{-20 -6 + 10}{4} = \frac{-16}{4} = -4$
+
+Now we are are solving $x$
+
+<p>
+\[
+\begin{pmatrix}
+2 & 1 & 1 & 6 \\
+0 & 3 & 2 & -5\\
+0 & 0 & 4 & -4\\
+\end{pmatrix}
+\]
+</p>
+
+Giving us $x = (4,-1,-1)$
+
+* $z = -4/4 = -1$
+* $y = \frac{-5--2}{3} = \frac{-3}{3} = -1$
+* $x = \frac{6 +1 +1}{2} = \frac{8}{2} = 4$
+
+We got the **same result** that we got when we used Cramer's rule, so we are good.
+
+<hr class="sl">
+
+## Cholesky in R
+
+Here the code in R
+
+```r
+A <- matrix(c(4,2,2,2,10,7,2,7,21), nrow = 3, ncol = 3, byrow = TRUE)
+b <- c(12,-9,-20)
+
+# Cholesky
+A.chol <- chol(A)
+# [,1] [,2] [,3]
+# [1,]    2    1    1
+# [2,]    0    3    2
+# [3,]    0    0    4
+A.chol.t <- t(A.chol)
+# [,1] [,2] [,3]
+# [1,]    2    0    0
+# [2,]    1    3    0
+# [3,]    1    2    4
+
+# check
+identical(t(A.chol) %*% A.chol, A)
+
+# solve Ay = b
+y <- forwardsolve(A.chol.t, b)
+# [1]  6 -5 -4
+x <- backsolve(A.chol, y)
+# 4 -1 -1
+```

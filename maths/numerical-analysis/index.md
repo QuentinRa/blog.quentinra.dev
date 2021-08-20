@@ -87,3 +87,5 @@ The algorithms you may use are
 * <http://bibmath.net/dico/index.php?action=affiche&quoi=./r/relaxation.html>
 * <https://www.sciencedirect.com/topics/engineering/gauss-seidel-method>
 * <https://mathworld.wolfram.com/topics/RelaxationMethods.html>
+* <https://www.mathportal.org/calculators/matrices-calculators/matrix-decomposition-calculator.php>
+* <https://aaronschlegel.me/cholesky-decomposition-r-example.html>
