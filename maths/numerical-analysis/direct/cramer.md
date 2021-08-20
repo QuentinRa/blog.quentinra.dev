@@ -14,7 +14,7 @@ The matrix must be invertible, for instance, if $A$ is a matrix of reals, we wou
 
 * **Complexity**
 
-This is **the worst of the worst** (maybe not but...), the complexity for a matrix $n$ is $n$ times greater than the complexity of the GAUSS method, since we are evaluating $n+1$ determinants. Additionally, we have to calculate $n$ divisions.
+This is **the worst of the worst** (maybe not, but...). For a matrix $A_n$, we are making $n$ times more operations than in the GAUSS method, since we are evaluating $n+1$ determinants. Additionally, we have to calculate $n$ divisions.
 
 <hr class="sr">
 

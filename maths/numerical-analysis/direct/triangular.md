@@ -12,16 +12,13 @@ The matrix must be triangular.
 
 * **Complexity**
 
-This is a GAUSS elimination, starting in the row-echelon form,
-so we still have a complexity of $n^3$ operations
-(it's $\frac{n^3 (n - 1)^2}{4})$.
+This is a GAUSS elimination, starting in the row-echelon form, so we have a complexity lesser than $O(n^3)$. In fact, we have $O(\frac{n^3}{4})$.
 
 <hr class="sr">
 
 ## Process
 
-It's quite easy to solve. The first line or the last line is
-like $x = 5$ (lower triangular) or $t = 7$ (upper triangular). All you have to do is to go up or down and replace the variables by their values. You only have one variable in each equation, and this is why I told you that it was easy.
+It's quite easy to solve. The first line or the last line is like $x = 5$ (lower triangular) or $t = 7$ (upper triangular). All you have to do is to go up or down and replace the variables with their values. You only have one variable in each equation, and this is why I told you that it was easy.
 
 <hr class="sl">
 
@@ -57,7 +54,7 @@ S = \begin{pmatrix}
 \]
 </p>
 
-We are considering the variables x, y, z, respectively the 1rst, 2nd and 3rd column.
+We are considering the variables x, y, z, respectively the 1rst, 2nd and 3rd columns.
 
 * $6z = 6$ so $z = 1$
 * $4 y + 5 z = 3 \Leftrightarrow y = (3 - 5*1) / 4$ so $y  = -0.5$
