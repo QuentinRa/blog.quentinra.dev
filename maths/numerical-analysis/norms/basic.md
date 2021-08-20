@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-We will call theses ``norms`` using this syntax
+We got 3 different notations for **norms** according to what is inside the $||$
 
 <ul>
     <li>\(\mid  \cdot \mid \) : norm of a real/complex</li>
@@ -10,7 +10,7 @@ We will call theses ``norms`` using this syntax
     <li>\(\mid\mid\mid \cdot \mid\mid\mid\) : norm of a matrix</li>
 </ul>
 
-Here are some properties
+The rules/properties of a norm are
 
 * <span>
     \( N(x) \ge 0
@@ -32,8 +32,7 @@ Here are some properties
 
 ## Norms in 1, 2, infinity
 
-You will see a lot of norms with a small number
-in the right-corner side. This is their formulas
+You will see a lot of norms with a small index. These are their formulas
 
 <p>
 \[
@@ -91,27 +90,27 @@ And you **must never forget this one**
 
 <hr class="sl">
 
-## Some operations
-
-Here some questions or some operations that can be done
-with norms.
+## Examples
 
 <p><b>Q: Demonstrate \(||Qx||^2_2 =||x||^2_2\)</b></p>
 
 <p>
-\begin{split} ||Qx||^2_2 = (Qx)^* * Qx = \\ 
-x^* * Q^* * Q * x = x^* * x= \\ ||x||^2_2
+\begin{split}
+||Qx||^2_2 \Leftrightarrow
+(Qx)^* * Qx \Leftrightarrow \\ 
+x^t * Q^t * Q * x \Leftrightarrow
+x^t * x \Leftrightarrow \\
+||x||^2_2
 \end{split}
 </p>
 
 <p>
-Note that Q* is the matrix transpose for matrix
-of Reals but here we use this notation for complexes. Also
+Note that Q^t is the matrix transpose of a matrix $Q \in \mathbb{R}^{n}$. We would replace this by $Q^*$ with $Q \in \mathbb{C}^{n}$. Also
 <span class="mathjax_process">
 \(
-Q^* * Q = Id
+Q^t * Q = Id
 \)
-</span> so we removed Q with this property.
+</span> so I removed $Q$ by using this property.
 </p>
 
 <p><b>Q: Demonstrate \(||AQ||_2 = |||A|||\)</b></p>
@@ -120,5 +119,5 @@ Q^* * Q = Id
 \begin{split}||AQ||_2 := \max_{  x \neq 0 } \frac{||AQx||_2}{||x||_2}
 \\
 with \ y = Qx \\
-= \max_{  x \neq 0 } \frac{||Ay||_2}{||y||_2} := |||A|||\end{split}
+\Leftrightarrow \max_{  x \neq 0 } \frac{||Ay||_2}{||y||_2} := |||A|||\end{split}
 </p>

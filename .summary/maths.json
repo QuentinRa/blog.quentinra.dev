@@ -44,8 +44,8 @@
     },
     {
       "tag": "matrix",
-      "name": "Matrix",
-      "desc": "You will use matrix a lot (graphs, analysis, statistics, ...) so it would be good to know more about them.",
+      "name": "Matrices",
+      "desc": "You will use matrices a lot (graphs, numerical analysis, statistics, ...) so it would be good to know more about them.",
       "icon": "<i class=\"bi bi-rulers\"></i>"
     }
   ]
