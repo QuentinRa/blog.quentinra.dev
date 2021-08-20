@@ -7,18 +7,16 @@ An organization or a user can make on GitHub a "GitHub page" project. To summari
 Check the [tutorial](https://pages.github.com/).
 
 Your website URL will be like ``https://username.github.io/``. You can change that with a custom name, that you brought beforehand for 10$ per year (for a domain.com
-for example) by following these steps, [custom-domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages).
+for example) by following these steps for [custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages).
 
 <hr class="sl">
 
-## Make a website as a lazy dev
+## Website in Markdown
 
-You may do your site in Markdown or whatever if you don't like web development, or at least find something interesting for you in these links
+You may write your website in Markdown. I didn't try, but here are the links that I would check out
 
-* [Jekyll](https://jekyllrb.com/docs/)
+* [Jekyll](https://jekyllrb.com/docs/) ([Deployment](https://jekyllrb.com/docs/deployment/automated/))
 * [Beautiful Jekyll](https://beautifuljekyll.com/)
-* [GoHugo](https://gohugo.io/)
-* [Bootstrap studio](https://bootstrapstudio.io/)
-* [freehtml5](https://freehtml5.co/)
+* [GoHugo](https://gohugo.io/) ([Hosting on GitHub](https://gohugo.io/hosting-and-deployment/hosting-on-github/))
 
 You can use [form spree](https://formspree.io/) to use forms without coding.

@@ -37,6 +37,14 @@
   - https://www.zaproxy.org/
   - https://en.wikipedia.org/wiki/Wikipedia:Username_policy
   - https://forums.cpanel.net/threads/forbidden-usernames-on-whm.22154/
+  - html5.1/PHP8.0/HTTP2.0
+  - https://caniuse.com/http2
+  - https://w3c.github.io/test-results/html51/implementation-report.html
+  - https://html5test.com/
+  - https://www.w3docs.com/
+  - https://php.watch/versions/8.1
+  - [Bootstrap studio](https://bootstrapstudio.io/)
+  - [freehtml5](https://freehtml5.co/)
 - sql
   - https://sql.sh/
   - https://fxjollois.github.io/cours-sql/
