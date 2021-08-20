@@ -26,7 +26,7 @@ If you forgot, $A \in Gl_n(\mathbb{R})$ means that a matrix of reals $\mathbb{R}
 \[
 \begin{split}
 cond_2(A) = \sqrt{\frac{\sigma_n}{\sigma_1}} \\
-or \ if \ A \ is \ definite \ positive \\
+or \ if \ A \ is \ positive \ definite \\
 cond_2(A) = \sqrt{\frac{\lambda_n}{\lambda_1}} \\\end{split}
 \]
 </div>

@@ -17,10 +17,10 @@ inside your hessian.
 
 For each hessian, if it's
 
-* **definite positive**: the point is a minimum local (strict)
-* **definite negative**: the point is a maximum local (strict)
-* **definite semi-positive**: the point is a minimum global
-* **definite semi-negative**: the point is a maximum global
+* **positive definite**: the point is a minimum local (strict)
+* **negative definite**: the point is a maximum local (strict)
+* **positive semi-definite**: the point is a minimum global
+* **negative semi-definite**: the point is a maximum global
 * **indefinite**: the point is a saddle point
 
 To find if the hessian is definite/indefinite, you can
@@ -54,10 +54,10 @@ giving us something like
 Then the matrix is
 
 <ul>
-    <li><b>definite positive</b>: <span>\(\forall k,\quad \Delta_{k}>0\)</span></li>
-    <li><b>semi-definite positive</b>: <span>\(\forall k,\quad (-1)^k \Delta_{k}>0\)</span></li>
-    <li><b>definite negative</b>: <span>\(\forall k < n,\quad \Delta_{k}>0 \text{. and } \Delta_{n}=0\)</span></li>
-    <li><b>semi-definite negative</b>: <span>\(\forall k < n,\quad (-1)^k\Delta_{k}>0 \text{. and } \Delta_{n}=0\)</span></li>
+    <li><b>positive definite</b>: <span>\(\forall k,\quad \Delta_{k}>0\)</span></li>
+    <li><b>positive semi-definite</b>: <span>\(\forall k,\quad (-1)^k \Delta_{k}>0\)</span></li>
+    <li><b>negative definite</b>: <span>\(\forall k < n,\quad \Delta_{k}>0 \text{. and } \Delta_{n}=0\)</span></li>
+    <li><b>negative semi-definite</b>: <span>\(\forall k < n,\quad (-1)^k\Delta_{k}>0 \text{. and } \Delta_{n}=0\)</span></li>
     <li><b>indefinite</b>: <span>\(\Delta_{n} < 0\)</span> and the dimension n is pair</li>
 </ul>
 
@@ -74,10 +74,10 @@ Some help for matrix 2x2
 
 ## Using eigenvalues
 
-* **definite positive**: all eigen values > 0
-* **definite negative**: all eigen values < 0
-* **definite semi-positive**: almost eigen values > 0, one equal = 0
-* **definite semi-negative**: almost eigen values < 0, one equal = 0
+* **positive definite**: all eigen values > 0
+* **negative definite**: all eigen values < 0
+* **positive semi-definite**: almost eigen values > 0, one equal = 0
+* **negative semi-definite**: almost eigen values < 0, one equal = 0
 * **indefinite**: one > 0 and another < 0
 
 <hr class="sr">

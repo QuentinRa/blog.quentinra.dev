@@ -126,7 +126,7 @@ hessian(func=function_to_optimize,x=c(-2, -2))
 # (4, -2; -2, 2) : ok
 eigen(hessian(func=function_to_optimize,x=c(-2, -2)))$values
 # [1] 5.236068 0.763932
-# all positives so hessian definite positive
+# all positives so hessian positive definite
 # so the point is a minimum local (strict)
 ```
 
