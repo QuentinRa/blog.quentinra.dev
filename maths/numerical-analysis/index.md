@@ -1,6 +1,6 @@
 # Numerical analysis
 
-The main goal of this course is to solve **Ax=b** (find the vector $x$, given a matrix $A$ and a resulting vector $b$) on a computer. You will learn
+The main goal of this course is to solve **AX=b** (find the vector $X$, given a matrix $A$ and a resulting vector $b$) on a computer. You will learn
 
 * how to solve it using the **direct methods**
 * how to solve it using the **iterative methods**

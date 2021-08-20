@@ -69,12 +69,12 @@ Then, we are dividing the result by the value on the diagonal.
 
 Your first goal will be to get the matrix $L^t$, using the formulas. Once you do, transpose it and you will have $L$. Now, you got two jobs
 
-* solve $y$ in $L^t * y = b$
-* then $x$ is the result of solving $L * x = y$
+* solve $Y$ in $L^t * Y = b$
+* then $X$ is the result of solving $L * X = Y$
 
 <hr class="sl">
 
-# Example
+## Example
 
 Find cholesky factorization of A then find solve Ax = b.
 
@@ -96,8 +96,8 @@ b = \begin{pmatrix}
 
 We are **checking** that A is
 
-* symmetric: ok (transpose it if you're not seeing it)
-* definiteness
+* **symmetric**: ok (transpose it if you're not seeing it)
+* **definiteness**
   * $det(\Delta_1) = 4 \gt 0$
   * $det(\Delta_2) = 4 * 10 - 2 * 2 = 36 \gt 0$
   * $det(\Delta_3)$
@@ -105,7 +105,7 @@ We are **checking** that A is
     * $= 4 * 161 - 68 = 3 * 161 + 93$
     * $= (3*16)*10 + 100 - 7 + 3 = 576 \gt 0$
   * so the matrix is positive definite
-* invertible:  ok, $$det(A) = $det(\Delta_3) \neq 0$
+* **invertible**:  ok, $det(A) = det(\Delta_3) \neq 0$
 
 Then we are **starting** your job
 
@@ -169,6 +169,7 @@ Giving us $x = (4,-1,-1)$
 * $z = -4/4 = -1$
 * $y = \frac{-5--2}{3} = \frac{-3}{3} = -1$
 * $x = \frac{6 +1 +1}{2} = \frac{8}{2} = 4$
+* So we have: $X = (4,-1,-1)$
 
 We got the **same result** that we got when we used Cramer's rule, so we are good.
 

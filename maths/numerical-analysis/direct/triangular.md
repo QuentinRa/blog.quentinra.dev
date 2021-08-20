@@ -59,6 +59,7 @@ We are considering the variables x, y, z, respectively the 1rst, 2nd and 3rd col
 * $6z = 6$ so $z = 1$
 * $4 y + 5 z = 3 \Leftrightarrow y = (3 - 5*1) / 4$ so $y  = -0.5$
 * $x + 2 y + 3z = 12 \Leftrightarrow x = 12 - 2 * -0.5 - 3 * 1$ so $x  = 10$
+* So we have $X = (10, -0.5, 1)$
 
 <hr class="sr">
 
@@ -88,8 +89,10 @@ We are calling our functions
 ```r
 backsolve(UpperA, b)
 # [1] 10.0 -0.5  1.0
-# so x=10.0 u=-0.5 z=1.0
+# we are good: x=10.0 y=-0.5 z=1.0
+# X = (10, -0.5, 1)
 
+# exercise: try to check this one too
 forwardsolve(LowerA, b)
 # [1]  2.00 -1.75  3.50
 ```
