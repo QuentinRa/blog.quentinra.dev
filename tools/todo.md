@@ -21,6 +21,7 @@
     - https://github.com/Nexmo/repo-standards
     - https://github.com/controlook-zz/standards/blob/master/general/version_control.md
     - https://github.com/controlook-zz/standards/blob/master/general/git_commands.md
+    - https://docs.github.com/en/github/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors
 - Latex
     - work on ref
 - Markdown

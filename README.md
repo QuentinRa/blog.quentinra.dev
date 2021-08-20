@@ -62,6 +62,8 @@ Last updated: 2021-08-18
 * [ ] add changelog
 * [ ] day-night mode
 * [ ] advanced search? (inside a course/category)
+* [ ] actions? typos
+* [ ] date in sitemap.xml => full + UTC
 </details>
 
 <br>
