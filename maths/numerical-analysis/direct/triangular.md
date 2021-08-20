@@ -60,7 +60,7 @@ We are considering the variables x, y, z, respectively the 1rst, 2nd and 3rd col
 * $4 y + 5 z = 3 \Leftrightarrow y = (3 - 5*1) / 4$ so $y  = -0.5$
 * $x + 2 y + 3z = 12 \Leftrightarrow x = 12 - 2 * -0.5 - 3 * 1$ so $x  = 10$
 
-<hr class="sl">
+<hr class="sr">
 
 ## Solving a triangular system in R
 

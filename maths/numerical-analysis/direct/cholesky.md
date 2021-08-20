@@ -2,18 +2,44 @@
 
 [Go back](../index.md)
 
-``Requirement`` : invertible, symmetric and all eigen values must be strictly positives
+<hr class="sl">
 
-``Process`` :
+## About
 
-* check requirements
-    * invertible means det(A) not 0
-    * symmetric means A = transpose of A
-    * check eigen values
+* **Requirements**
 
-* Then we will use theses formula
+The matrix must be **invertible**, **symmetric** and **positive definite**.
 
-For a value on the diagonal
+> As a side note, a matrix is **positive definite** if all of its **eigenvalues are positive**. It's may be hard, so another method is to check that every **minors** of A is $\gt 0$ (check the definite matrix section in the matrix course).
+
+* **Complexity**
+
+The complexity is $O(n^3)$.
+
+<hr class="sr">
+
+## Process
+
+* check the requirements
+  * invertible means $det(A) \neq 0$
+  * symmetric means $A = A^t$
+  * check the definiteness of $A$
+
+Our goal is to convert our matrix to a **lower triangular matrix** like this one (example for 3x3)
+
+<p>
+\[
+\begin{pmatrix}
+l_{11} & 0 & 0 \\
+l_{21} & l_{22} & 0 \\
+l_{31} & l_{32} & l_{33} \\
+\end{pmatrix}
+\]
+</p>
+
+You only have to use the following formulas, and replace the values in the lower triangular matrix. Note that we are starting from the top-left corner.
+
+**FIRST FORMULA**
 
 <p>
 \[
@@ -21,9 +47,9 @@ l_{ii} = \sqrt{a_{ii} - \sum_{k=1}^{i-1} l^2_{ik}}
 \]
 </p>
 
-meaning in words that will have the value on the diagonal minus
-all the values of the same line before ours. And we will use
-this one for other coefficients
+This is the square of the **value on the diagonal** minus all the **values** on the **same line**, but **before** ours.
+
+**SECOND FORMULA**
 
 <p>
 \[
@@ -31,27 +57,15 @@ l_{ij} = \frac{a_{ij} - \sum_{k=1}^{j-1} l_{ik} * l_{jk} }{a_{ii}}
 \]
 </p>
 
-meaning in words that we will have your value minus
-all the values of the previous column same line multiplied
-by the previous column of the previous line until we don't have a previous
-column. Divide everything by the value on the diagonal.
+This is the **our value** minus, the sum of the products of
 
-* our aim is to have a matrix like this one (example for 3x3)
+* the value of the **previous column same line**
+* by **the previous column of the previous line**
+* (until we don't have a previous column)
 
-<p>
-\[
-\begin{pmatrix}
-1 & 0 & 0 \\
-2 & 3 & 0 \\
-4 & 5 & 6 \\
-\end{pmatrix}
-\]
-</p>
+Then, we are dividing the result by the value on the diagonal.
 
-where 1,2, ... until six are the value we are looking for. We will check
-the value at 1, then at 2, ... using our formulas.
-
-<hr class="sr">
+<hr class="sl">
 
 # Example
 
@@ -64,13 +78,7 @@ A = \begin{pmatrix}
 2 & 10 & 7 \\
 2 & 7 & 21 \\
 \end{pmatrix}
-\]
-</p>
-
-and
-
-<p>
-\[
+\quad
 b = \begin{pmatrix}
 12 \\
 -9 \\
@@ -79,51 +87,29 @@ b = \begin{pmatrix}
 \]
 </p>
 
+We are **checking** that A is
 
-We are checking that A is
+* symmetric: ok (transpose it if you're not seeing it)
+* definiteness
+  * $det(\Delta_1) = 4 \gt 0$
+  * $det(\Delta_2) = 4 * 10 - 2 * 2 = 36 \gt 0$
+  * $det(\Delta_3)$
+    * $= 4 * (10 * 21 - 7 * 7) - 2 * (2* 21 -2 * 7) + 2 * ( 2 * 7 - 2 * 10)$
+    * $= 4 * 161 - 68 = 3 * 161 + 93$
+    * $= (3*16)*10 + 100 - 7 + 3 = 576 \gt 0$
+  * so the matrix is positive definite
+* invertible:  ok, $$det(A) = $det(\Delta_3) \neq 0$
 
-* symmetric : done, just give it a look or transpose it
-* eigen values, I'm using minor of matrix A
+Then we are **starting** your job
 
-    * <span>
-        \( d1 = 4 > 0 \) </span>
-    * <span>
-        \( d2 = 4 * 10 - 2 * 2 = 36 > 0 \) </span>
-    * <span class="row w-100 overflow-auto">
-        \(
-            d3 = 4 * (10 * 21 - 7 * 7) - 2 * (2* 21 -2 * 7) + 2 * ( 2 * 7 - 2 * 10)
-            = 4 * 161 - 68 = 3 * 161 + 93 > 0
-        \)</span>
-    * so that's okay
-* and det(A) is not 0 (see d3) so everything is fine
+* $l_{11} = \sqrt{4} = 2$
+* $l_{21} = 2 / l_{11} = 1$
+* $l_{22} = \sqrt{10 - 1^2} = 3$
+* $l_{31} = 2 / l_{11} = 1$
+* $l_{32} = \frac{7 - (1 * 1)}{3} = 2$
+* $l_{33} = \sqrt{21 - 2^2 - 1^1} = 4$
 
-then we start your job
-
-* <span class="row w-100 overflow-auto">
-    \(
-    l_{11} = \sqrt{4} = 2
-    \)</span>
-* <span class="row w-100 overflow-auto">
-    \(
-    l_{21} = 2 / l_{11} = 1
-    \)</span>
-* <span class="row w-100 overflow-auto">
-    \(
-    l_{22} = \sqrt{10 - 1^2} = 3
-    \)</span>
-* <span class="row w-100 overflow-auto">
-    \(
-    l_{31} = 2 / l_{11} = 1
-    \)</span>
-* <span class="row w-100 overflow-auto">
-    \(
-    l_{32} = \frac{7 - (1 * 1)}{3} = 2
-    \)</span>
-* <span class="row w-100 overflow-auto">
-    \(
-    l_{33} = \sqrt{21 - 2^2 - 1^1} = 4
-    \)</span>
-
+Giving us the matrix
 
 <p>
 \[
@@ -135,7 +121,7 @@ then we start your job
 \]
 </p>
 
-Now we will use GAUSS with b and solve x.
+Now we will use **triangular factorization** with b and solve x.
 
 <p>
 \[
@@ -147,53 +133,8 @@ Now we will use GAUSS with b and solve x.
 \]
 </p>
 
-some steps here...
+Giving us
 
-<blockquote class="spoiler overflow-auto">
-\[
-\begin{pmatrix}
-1 & 0 & 0 & 6 \\
-1 & 3 & 0 & -9\\
-1 & 2 & 4 & -20\\
-\end{pmatrix}
-\Leftrightarrow 
-\begin{pmatrix}
-1 & 0 & 0 & 6 \\
-0 & 3 & 0 & -15\\
-0 & 2 & 4 & -26\\
-\end{pmatrix}
-\Leftrightarrow 
-\begin{pmatrix}
-1 & 0 & 0 & 6 \\
-0 & 1 & 0 & -5\\
-0 & 2 & 4 & -26\\
-\end{pmatrix}
-\Leftrightarrow 
-\begin{pmatrix}
-1 & 0 & 0 & 6 \\
-0 & 1 & 0 & -5\\
-0 & 0 & 4 & -16\\
-\end{pmatrix}
-\Leftrightarrow 
-\begin{pmatrix}
-1 & 0 & 0 & 6 \\
-0 & 1 & 0 & -5\\
-0 & 0 & 1 & -4\\
-\end{pmatrix}
-\]
-
-My steps were
-<ol>
-<li>Line1 * 1/2</li>
-<li>Line2 - Line1, Line3 - Line1</li>
-<li>Line2 * 1/3</li>
-<li>Line3 - 2 * Line2</li>
-<li>Line3 * 1/4</li>
-</ol>
-</blockquote>
-
-and we got
-
-* x = 6
-* y = -5
-* z = -4
+* $x = 6$
+* $y = \frac{-9 -6}{3} = \frac{-15}{3} = -5$
+* $z = \frac{-20 -6-10}{4} = \frac{-36}{4} = -9$

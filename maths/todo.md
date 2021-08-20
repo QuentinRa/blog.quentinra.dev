@@ -1,5 +1,7 @@
 # Todo
 
+definiteness of a matrix
+https://en.wikipedia.org/wiki/Definite_matrix
 MOVE MINORS/... TO MATRIX COURSE
 (maths/optimization/uo/use-hessian.md).
 
