@@ -1,0 +1,29 @@
+<div id="git-graph"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@gitgraph/js"></script>
+
+        <script>
+            const graphContainer = document.getElementById("git-graph");
+
+            // Instantiate the graph.
+            const gitGraph = GitgraphJS.createGitgraph(graphContainer, {
+                orientation: 'vertical-reverse',
+                template: GitgraphJS.templateExtend('blackarrow', {
+                    arrow: {
+                        color: "#FFCC33"
+                    },
+                }),
+                author: 'Memorize <email>',
+            });
+
+            // starting
+            const main = gitGraph.branch("main")
+            main.commit('Initial commit');
+            // working on f1
+            const f1 = main.branch("f1");
+            f1.commit("Working on f1");
+            f1.commit("...");
+            f1.commit("f1 - done");
+            // merge
+            main.merge(f1);
+        </script>

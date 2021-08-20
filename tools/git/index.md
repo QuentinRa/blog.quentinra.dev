@@ -91,6 +91,8 @@ By default, you are coding on a branch called ``master`` (or `main`). Let's expl
 
 > As a side note, when you have to resolve conflicts, the merge command's output will list what files need to be reviewed. In each file, you have the two different versions and need to delete the code you don't want to keep. Some software provides you an interface to do that quite easily such as [PHPStorm](https://www.jetbrains.com/help/phpstorm/resolving-conflicts.html#distributed-version-control-systems), or any software made by [JetBrains](../jetbrains/index.md).
 
+![Merge image - GitGraph.js](images/merge.png)
+
 <hr class="sl">
 
 ## Good practices
@@ -135,7 +137,7 @@ Here are some functionalities that you can find on GitHub (but you may find them
 
 You may have seen some commits with this label on some (if not all) commits
 
-![gpg](gpg.png)
+![gpg](images/gpg.png)
 
 You can sign your commits and have this too using [GPG keys](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/generating-a-new-gpg-key) (GitHub tutorial). It means that you will need to write a passphrase each time you are committing, but you can reduce the number of times you're asked
 
@@ -214,3 +216,4 @@ You may look at these cheat sheets
 * [add ssh key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 * http://adopteungit.fr/methodologie/2017/04/26/commits-atomiques-la-bonne-approche.html (reported down as of 08-2021)
 * [git tutorial](https://dubrayn.github.io/IPS-DEV/git.html#1)
+* <https://github.com/nicoespeon/gitgraph.js/>
