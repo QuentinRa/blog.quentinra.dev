@@ -14,15 +14,15 @@ The matrix must be invertible, for instance, if $A$ is a matrix of reals, we wou
 
 * **Complexity**
 
-This is **the worst of the worst** (maybe not but...), the complexity for a matrix $n$ is $n$ times greater than the complexity of GAUSS method, since we are evaluating $n+1$ determinants.
+This is **the worst of the worst** (maybe not but...), the complexity for a matrix $n$ is $n$ times greater than the complexity of the GAUSS method, since we are evaluating $n+1$ determinants.
 
 <hr class="sr">
 
 ## Process
 
 * calculate the determinant $d$ of $A$
-  * for a 1x1 matrix it's $a$
-  * for a 2x2 matrix it's $ac-bd$
+  * for a 1x1 matrix, it's $a$
+  * for a 2x2 matrix, it's $ac-bd$
   * you may refer to matrix course if you don't remember
 * then for each column of your matrix $A$
   * replace a column with the vector $b$
@@ -63,3 +63,40 @@ Hence, we have
 * $x = \frac{2304}{576} = 4$
 * $y = \frac{-576}{576} = -1$
 * $z = \frac{-576}{576} = -1$
+
+<hr class="sr">
+
+## Cramer's rule in R
+
+I made this function
+
+```r
+A <- matrix(c(4,2,2,2,10,7,2,7,21), nrow = 3, ncol = 3, byrow = TRUE)
+b <- c(12,-9,-20)
+
+cramer.solve <- function (A, b) {
+	# checks
+	if (dim(A)[1] != dim(A)[2]) stop("A must be a square matrix")
+	if (length(b) != dim(A)[1]) stop("b's length must be equals to the A's length")
+
+	n <- dim(A)[1]
+	# exit if n is invalid
+	if (n == 0) return(NULL)
+
+	# starting
+	x <- NULL
+	d <- det(A)
+
+	for (i in 1:n) {
+		# making a copy to make things easier
+		copy <- A
+		# replace the column
+		copy[,i] <- b
+		# add the result to our vector
+		x <- c(x, det(copy) / d)
+	}
+	return(x)
+}
+
+cramer.solve(A, b)
+```
