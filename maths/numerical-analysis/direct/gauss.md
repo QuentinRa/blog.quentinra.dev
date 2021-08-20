@@ -118,3 +118,13 @@ b <- c(12,-9,-20)
 solve(A, b)
 # [1]  4 -1 -1
 ```
+
+You can find something better in the ``matlib`` library
+
+```r
+library('matlib')
+
+gaussianElimination(A, b)
+# steps
+gaussianElimination(A, b, verbose = T)
+```

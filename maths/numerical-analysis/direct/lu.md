@@ -2,22 +2,34 @@
 
 [Go back](../index.md)
 
-``Requirement`` : invertible and all eigen values must be strictly positives
+This is also called LU decomposition or LowerUpper decomposition.
 
-``Process`` :
+<hr class="sl">
 
-We want to split our matrix A in two matrix
+## About
 
-* L : lower strict diagonal matrix
-* U : upper diagonal matrix
+* **Requirements**
 
-It's quite easy. You will
-do GAUSS elimination, but only using this
-rule
+The matrix must be invertible, and every leading **minor** must be not null.
+
+* **Complexity**
+
+The complexity is $O(\frac{2n^3}{3})$.
+
+<hr class="sr">
+
+## Process
+
+You goal is to write $A = L * U$ with
+
+* $L$: a lower strict diagonal matrix
+* $U$: a upper diagonal matrix
+
+It's quite easy. You will use the GAUSS elimination, but limited to this only one rule
 
 <p>
 \[
-L_i <- L_i - k * L_j
+L_i \leftarrow L_i - k * L_j
 \]
 </p>
 
@@ -29,7 +41,7 @@ U matrix should look like this one
 
 <div>
 \[
-U_{33} = \begin{pmatrix}
+U_{3} = \begin{pmatrix}
 * & * & * \\
 0 & * & * \\
 0 & 0 & * \\
@@ -37,17 +49,11 @@ U_{33} = \begin{pmatrix}
 \]
 </div>
 
-<p>
-If you remoted
-the number at <span>\(a_{ij}\)</span>
-using k=7 then in L matrix, value at
-<span>\(a_{ij}\)</span> is 7.
-L matrix should look like this one
-</p>
+If you remoted the number at $a_{ij}$, using $k=7$ then in the L matrix, the value at $a_{ij}$ is 7. The L matrix should look like this one
 
 <div>
 \[
-L_{33} = \begin{pmatrix}
+L_{3} = \begin{pmatrix}
 1 & 0 & 0 \\
 * & 1 & 0 \\
 * & * & 1 \\
@@ -55,85 +61,126 @@ L_{33} = \begin{pmatrix}
 \]
 </div>
 
-And that's it.
+Once you have these, to get $AX = b$, you need to ...
 
 <hr class="sr">
 
 ## Example
 
-Demonstrate that this matrix admit a LU factorization
-and give it.
+Find the LU factorization of A and solve $AX = b$.
 
 <p>
 \[
 A = \begin{pmatrix}
-3 & 6 & 9 \\
--6 & -10 & -13 \\
--9 & -22 & -36 \\
+4 & 2 & 2 \\
+2 & 10 & 7 \\
+2 & 7 & 21 \\
+\end{pmatrix}
+\quad
+b = \begin{pmatrix}
+12 \\
+-9 \\
+-20 \\
 \end{pmatrix}
 \]
 </p>
 
-**Checks**
+We are **checking** that A is
 
-* <span>
-        \( d1 = 3 > 0 \) </span>
-* <span>
-        \( d2 = 3 * -10 - 6 * -6 = -30+36 = 6 > 0 \) </span>
-* <span class="row w-100 overflow-auto">
-        \(
-            d3 = 3 * (-10 * -36 - -13 * -22)
-            - -6 * (6 * -36 - 9 * -22) + 
-            -9 * (6 * -13 - 9 * -10)
-            = 222 - 108 - 108 = 6 > 0
-        \)</span>
+* **positive definite**, ok
+  * $det(\Delta_1) = 4 \gt 0$
+  * $det(\Delta_2) = 36 \gt 0$
+  * $det(\Delta_3) = 576 \gt 0$
+  * The steps are on the Cholesky factorization page
+* **invertible**:  ok, $det(A) = det(\Delta_3) \neq 0$
 
-* and d3 != 0 so invertible
+So we're starting, my steps were
 
-**Find**
+* $L_2 \leftarrow L_2 - {\color{blue}1/2} L_1$
+* $L_3 \leftarrow L_3 - {\color{blue}1/2} L_1$
 
-Apply GAUSS find find U. Some steps here...
-
-<blockquote class="spoiler overflow-auto">
+<p>
 \[
-U = \begin{pmatrix}
-3 & 6 & 9 \\
--6 & -10 & -13 \\
--9 & -22 & -36 \\
-\end{pmatrix}
-\Leftrightarrow
 \begin{pmatrix}
-3 & 6 & 9 \\
-0 & 2 & 5 \\
-0 & -4 & -9 \\
-\end{pmatrix}
-\Leftrightarrow
-\begin{pmatrix}
-3 & 6 & 9 \\
-0 & 2 & 5 \\
-0 & 0 & 1 \\
+4 & 2 & 2 \\
+0 & 9 & 6 \\
+0 & 6 & 20 \\
 \end{pmatrix}
 \]
+</p>
 
-My steps were
-<ol>
-<li>Line2 + 2 * Line1 = Line2 - <b>k=-2</b> * Line1</li>
-<li>Line3 + 3 * Line1 = Line2 - <b>k=-3</b> * Line1</li>
-<li>Line3 + 2 * Line2 = Line3 - <b>k=-2</b> * Line2</li>
-</ol>
-</blockquote>
+* $L_3 \leftarrow L_3 - {\color{blue}2/3} L_1 $
 
-So we got our L
+<p>
+\[
+U = \begin{pmatrix}
+4 & 2 & 2 \\
+0 & 9 & 6 \\
+0 & 0 & 16 \\
+\end{pmatrix}
+\]
+</p>
 
-<blockquote class="spoiler overflow-auto">
+Using the $k$ we removed, I have
+
+<p>
 \[
 L = \begin{pmatrix}
 1 & 0 & 0 \\
--2 & 1 & 0 \\
--3 & -2 & 1 \\
+1/2 & 1 & 0 \\
+1/2 & 2/3 & 1 \\
 \end{pmatrix}
 \]
+</p>
 
-using the k we used in U, at the place where we replaced
-the value by 0.
-</blockquote>
+As we did for Cholesky, we are solving $LY=b$
+
+* $x = 12$
+* $y = -9 - \frac{12}{2} = -15$
+* $z = -20 - \frac{12}{2} + \frac{2*15}{3} = -16$
+
+So we have $Y = (12,-15,-16). And $UX=y$
+
+* $z = \frac{16}{-16} = -1$
+* $y = \frac{-15 +6}{9} = -1$
+* $x = \frac{12 + 2 + 2}{4} = 4$
+
+Giving us $X = (4,-1,-1)$, as we expected.
+
+<hr class="sl">
+
+## LU factorization in R
+
+Here the code in R
+
+```r
+A <- matrix(c(4,2,2,2,10,7,2,7,21), nrow = 3, ncol = 3, byrow = TRUE)
+b <- c(12,-9,-20)
+
+res <- lu(A)
+L <- res$L
+U <- res$U
+# L
+#      [,1]      [,2] [,3]
+# [1,]  1.0 0.0000000    0
+# [2,]  0.5 1.0000000    0
+# [3,]  0.5 0.6666667    1
+# 
+# U
+#      [,1] [,2] [,3]
+# [1,]    4    2    2
+# [2,]    0    9    6
+# [3,]    0    0   16
+
+# check
+identical(L %*% U, A)
+# [1] TRUE
+
+# LY = b
+y <- forwardsolve(L, b)
+# [1]  12 -15 -16
+# UX = y
+x <- backsolve(U, y)
+x
+# [1]  4 -1 -1
+```

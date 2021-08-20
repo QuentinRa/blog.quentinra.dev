@@ -10,7 +10,7 @@ Also called Cramer's formula.
 
 * **Requirements**
 
-The matrix must be invertible, for instance, if $A$ is a matrix of reals, we would want that $A \in Gl_n(\mathbb{R})$.
+The matrix must be invertible ($det(A) \neq 0$).
 
 * **Complexity**
 

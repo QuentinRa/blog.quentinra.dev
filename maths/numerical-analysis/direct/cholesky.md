@@ -2,15 +2,21 @@
 
 [Go back](../index.md)
 
+This is also called Cholesky decomposition.
+
 <hr class="sl">
 
 ## About
 
 * **Requirements**
 
-The matrix must be **invertible**, **symmetric** and **positive definite**.
+The matrix must be 
 
-> As a side note, a matrix is **positive definite** if all of its **eigenvalues are positive**. It's may be hard, so another method is to check that every **minors** of A is $\gt 0$ (check the definite matrix section in the matrix course).
+* **invertible** ($det(A) \neq 0$),
+* **symmetric** ($A = A^t$),
+* and **positive definite**.
+
+> As a side note, a matrix is **positive definite** if all of its **eigenvalues are positive**. It's may be hard, so another method is to check that every **minors** of A is greater than 0 (check the definite matrix section in the matrix course).
 
 * **Complexity**
 
@@ -19,11 +25,6 @@ The complexity is $O(n^3)$.
 <hr class="sr">
 
 ## Process
-
-* check the requirements
-  * invertible means $det(A) \neq 0$
-  * symmetric means $A = A^t$
-  * check the definiteness of $A$
 
 Our goal is to convert our matrix to a **lower triangular matrix** like this one (example for 3x3)
 
@@ -76,7 +77,7 @@ Your first goal will be to get the matrix $L^t$, using the formulas. Once you do
 
 ## Example
 
-Find cholesky factorization of A then find solve Ax = b.
+Find the Cholesky factorization of A and solve $AX = b$.
 
 <p>
 \[
@@ -97,7 +98,7 @@ b = \begin{pmatrix}
 We are **checking** that A is
 
 * **symmetric**: ok (transpose it if you're not seeing it)
-* **definiteness**
+* **positive definite**
   * $det(\Delta_1) = 4 \gt 0$
   * $det(\Delta_2) = 4 * 10 - 2 * 2 = 36 \gt 0$
   * $det(\Delta_3)$
@@ -175,7 +176,7 @@ We got the **same result** that we got when we used Cramer's rule, so we are goo
 
 <hr class="sl">
 
-## Cholesky in R
+## Cholesky factorization in R
 
 Here the code in R
 
