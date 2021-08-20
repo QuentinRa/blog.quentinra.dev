@@ -61,6 +61,7 @@ Last updated: 2021-08-18
 * [ ] add pull request template
 * [ ] add changelog
 * [ ] day-night mode
+* [ ] advanced search? (inside a course/category)
 </details>
 
 <br>
