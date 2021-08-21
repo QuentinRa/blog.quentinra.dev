@@ -3,7 +3,7 @@
     {
       "tag": "hmi",
       "name": "HMI",
-      "desc": "Learn about what you must think before making an interface. Tools to make mockups are also listed here.",
+      "desc": "Learn about what you must think before making an interface. Tools to make mock-ups are also listed here.",
       "icon": "<i class=\"bi bi-window\"></i>"
     },
     {
@@ -27,7 +27,7 @@
     {
       "tag": "design-patterns",
       "name": "Design patterns",
-      "desc": "Because writing code can be easier and you would rather want to learn the good practices beforehand.",
+      "desc": "Because writing code can be easier, and you would rather want to learn the good practices beforehand.",
       "icon": null
     },
     {

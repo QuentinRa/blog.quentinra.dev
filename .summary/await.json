@@ -3,7 +3,7 @@
     {
       "tag": "linux",
       "name": "Linux",
-      "desc": "Learn how to survive in (or mastering) a linux-based environment.",
+      "desc": "Learn how to survive in (or mastering) a Linux-based environment.",
       "icon": "<i class=\"bi bi-terminal-fill\"></i>"
     },
     {
@@ -15,7 +15,7 @@
     {
       "tag": "sql",
       "name": "SQL",
-      "desc": "Course about SQL, PL/SQL and PGSQL. You will also learn a bit about NoSQL Database with Cypher.",
+      "desc": "Course about SQL, PL/SQL, and PGSQL. You will also learn a bit about NoSQL Database with Cypher.",
       "icon": "<i class=\"bi bi-server\"></i>"
     }
   ],

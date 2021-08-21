@@ -20,8 +20,8 @@
     },
     {
       "tag": "maths",
-      "name": "Maths for AST",
-      "desc": "Some feedback about maths courses for AST at the ENSIIE engineering school.",
+      "name": "Math for AST",
+      "desc": "Some feedback about math courses for AST at the ENSIIE engineering school.",
       "icon": "<i class=\"bi bi-umbrella\"></i>"
     },
     {

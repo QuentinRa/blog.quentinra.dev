@@ -27,7 +27,7 @@
     {
       "tag": "html",
       "name": "HTML",
-      "desc": "A big summary of what you need to know in HTML to make a website.",
+      "desc": "A complete summary of what you need to know in HTML to make a website.",
       "icon": "<i class=\"bi bi-globe\"></i>"
     },
     {
@@ -62,7 +62,7 @@
     },
     {
       "tag": "cyber-security",
-      "name": "Cyber security",
+      "name": "Cybersecurity",
       "desc": "Everything related to the security of your accounts, applications, websites should be kept here.",
       "icon": "<i class=\"bi bi-shield-shaded\"></i>"
     },
@@ -75,7 +75,7 @@
     {
       "tag": "typescript",
       "name": "Typescript",
-      "desc": "Write once and compile in any version of Javascript.",
+      "desc": "Write once and compile in any version of JavaScript.",
       "icon": "<i class=\"bi bi-cup-straw\"></i>"
     },
     {

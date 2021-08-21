@@ -15,7 +15,7 @@
     {
       "tag": "statistics",
       "name": "Statistics",
-      "desc": "Learn about statistics, be it descriptive or inferential statistics with examples using R language.",
+      "desc": "Learn about statistics, be it descriptive or inferential statistics, with examples using R language.",
       "icon": "<i class=\"bi bi-lightbulb\"></i>"
     },
     {
@@ -39,7 +39,7 @@
     {
       "tag": "graph",
       "name": "Graphs theory",
-      "desc": "Graph are used to solve problems (shortest path, eulerian path etc.) or in GraphDatabases (facebook, ...).",
+      "desc": "Graph are used to solve problems (find the shortest path, an Eulerian path, etc.) or in GraphDatabases (Facebook, ...).",
       "icon": "<i class=\"bi bi-bezier\"></i>"
     },
     {
