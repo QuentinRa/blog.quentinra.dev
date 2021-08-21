@@ -6,3 +6,8 @@
 - open-source
   - https://crowdin.com/
   - https://opencollective.com/
+- tests / IHM / Project
+  - https://www.chromatic.com/
+- project-it/Git/RST
+  - https://gist.github.com/javiertejero/4585196
+  - https://github.com/alex/what-happens-when/blob/master/README.rst

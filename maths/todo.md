@@ -14,6 +14,7 @@ leading/principal minor https://en.wikipedia.org/wiki/Minor_(linear_algebra).
   - https://fxjollois.github.io/cours-2016-2017/complements-r.html
   - https://swirlstats.com/students.html
   - https://www.geeksforgeeks.org/conditional-inference-trees-in-r-programming/
+  - https://bootstrappers.umassmed.edu/bootstrappers-courses/courses/rCourse/Additional_Resources/Updating_R.html
 - stats
   - https://support.minitab.com/fr-fr/minitab/18/help-and-how-to/modeling-statistics/anova/supporting-topics/basics/what-is-anova/
   - http://www.sthda.com/english/wiki/unpaired-two-samples-wilcoxon-test-in-r
@@ -22,3 +23,6 @@ leading/principal minor https://en.wikipedia.org/wiki/Minor_(linear_algebra).
   - http://statwww.epfl.ch/davison/teaching/ProbStatSC/20032004/Chapitre8.pdf
   - monte carlo (https://en.wikipedia.org/wiki/Monte_Carlo_method)
   - asymptotic
+- complexity
+  - course?
+  - note ANM

@@ -38,6 +38,11 @@
     - https://www.gositestat.com/
     - https://www.bing.com/webmasters/help/sitemaps-3b5cf6ed
       - https://www.bing.com/webmasters/help/url-submission-62f2860b
+    - Site links
+      - https://duckduckgo.com/?q=Sitelinks++search+result&atb=v230-1&ia=web
+      - https://www.reliablesoft.net/sitelinks/
+      - https://developers.google.com/search/docs/advanced/appearance/sitelinks
+      - https://www.searchenginewatch.com/2015/10/15/how-do-i-get-sitelinks-to-appear-in-my-sites-search-results/
   - https://github.com/futurice/backend-best-practices
   - https://www.zaproxy.org/
   - https://en.wikipedia.org/wiki/Wikipedia:Username_policy
@@ -68,6 +73,7 @@
   - https://github.com/ryanmcdermott/clean-code-javascript
   - https://github.com/braziljs/js-the-right-way
   - https://github.com/labs42io/clean-code-typescript
+  - https://jsdoc.app/
 - cyber-security
   - https://github.com/OWASP/CheatSheetSeries
   - https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
@@ -83,6 +89,10 @@
   - https://gist.github.com/alan-mushi/c8a6f34d1df18574f643
   - https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/forms.html
   - https://stackoverflow.com/questions/14492637/warn-when-using-parameter-marked-as-unused
+  - https://stackoverflow.com/questions/14850187/is-it-correct-to-use-alt-tag-for-an-anchor-link
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element
+  - https://html.spec.whatwg.org/multipage/dom.html#global-attributes
+  - https://www.w3.org/TR/html51/
 - ocaml
   - https://ocaml.org/api/List.html
   - esy
