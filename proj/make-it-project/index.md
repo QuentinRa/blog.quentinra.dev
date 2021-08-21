@@ -32,20 +32,20 @@ And finally, you should look for the **project management course**, as it explai
 
 This is a file you must already know. We are putting a README.md in **Markdown** (or README.rst, if you enjoy ReStructuredText) to explain
 
-* what's the project's **name**
-* what's the project's **goal**/ **description** of the project
-* how we can **install the project**? run?
-* where is the **documentation**? (you got one right? right? 🧐)
-  * you can make **some sample of code**
-  * generate the code's documentation
-  * write runtimes usages (global variables, session usage for a website, ...)
-* some **badges** (see fancy notes in the GitHub courses)
-* you may add **pictures/a gif** showing an **example** of what's the project doing
+* What's the project's **name**
+* What's the project's **goal**/ **description** of the project
+* How we can **install the project**? run?
+* Where is the **documentation**? (you got one right? right? 🧐)
+  * You can make **some sample of code**
+  * Generate the code's documentation
+  * Write runtimes usages (global variables, session usage for a website, ...)
+* Some **badges** (see fancy notes in the GitHub courses)
+* You may add **pictures/a gif** showing an **example** of what's the project doing
 
 You may also
 
-* add the contributors (some are doing it)
-* add a link to other files (such as the LICENSE)
+* Add the contributors (some are doing it)
+* Add a link to other files (such as the LICENSE)
 
 <hr class="sl">
 
@@ -57,7 +57,11 @@ You may also
 
 ## CONTRIBUTING.md
 
-...
+Tell others, how they can contribute to your project
+
+* How issues are handled?
+* How pull requests are handled?
+* What guidelines are you following?
 
 <hr class="sl">
 
@@ -69,7 +73,15 @@ You may also
 
 ## CODE_OF_CONDUCT.md
 
-...
+What behavior is tolerated? What's behavior isn't tolerated? You should explain this in the Code Of Conduct.
+
+The most used template is the [Contributor Covenant (Markdown - 2.1)](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md), you can [find the latest version here](https://www.contributor-covenant.org/).
+
+You can add this badge too, if you're proud of it ![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
+
+```markdown
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+```
 
 <hr class="sl">
 
