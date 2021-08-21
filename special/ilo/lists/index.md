@@ -2,34 +2,25 @@
 
 [Go back](..)
 
-Before starting, please take note that in the project,
-you got 3 files
+Before starting, please take note that in the project, you got 3 files
 
-* ``ListeOperations.pdf``: visual as to how you should code some
-methods
-* ``src/lists/ListIteratorTest``: **test** your code
-mid-way (please use it, or you are going to regret it later)
+* ``ListeOperations.pdf``: visual as to how you should code some methods
+* ``src/lists/ListIteratorTest``: **test** your code mid-way (please use it, or you are going to regret it later)
 * ``TP Listes.pdf``: what you need to do :)
 
-Then open the project in your favorite
-IDE, 
+Then open the project in your favorite IDE, 
 
 * VSCode 
 * IntelliJ. It might be a good idea to try it out now
-  * only add the folder ``tests`` **after** you finished coding
-    (it won't compile otherwise)
-  * remove ``RunAllTests.java`` unless you want to do the same 2-minutes tutorial
-  like in the previous TP (check it out for
-  the setup, if you do)
+  * only add the folder ``tests`` **after** you finished coding (it won't compile otherwise)
+  * remove ``RunAllTests.java`` unless you want to do the same 2-minutes tutorial like in the previous TP (check it out for the setup, if you do)
 * ...
 
 <hr class="sr">
 
 # Some tips
 
-An iterator is something that we can use to
-iterate the content of a collection of data.
-It will be explained a bit later, but basically:
+An iterator is something that we can use to iterate the content of a collection of data. It will be explained a bit later, but basically:
 
 * an iterable is a class inheriting `Iterable` (ex: an array, a collection)
 * we can use the method `iterator()` on an iterable
@@ -39,11 +30,7 @@ It will be explained a bit later, but basically:
 * ``hasNext()`` returns true if we got more elements to read
 * ``next()``: return an element and move forward the cursor
 
-**PLEASE** do not forget this: if you are iterating
-using while and ``hasNext``,
-don't forget to call ``next()`` to advance
-the cursor otherwise ``hasNext`` will return
-the same result until ``next`` is called.
+**PLEASE** do not forget this: if you are iterating using while and ``hasNext``, don't forget to call ``next()`` to advance the cursor, otherwise ``hasNext`` will return the same result until ``next`` is called.
 
 ```java
 default void clear() {
@@ -56,15 +43,9 @@ default void clear() {
 }
 ```
 
-``head`` is the head. Having no head (head == null)
-means the list is empty.
+``head`` is the head. Having no head (head == null) means the list is empty.
 
-We will be using genericity a lot, the `<E>`
-after the class name, and inside the for, the
-type of each element is `E`. This means that
-our list can store objects having or inheriting the
-type "E" (the creator of the list will pick what's
-the type E).
+We will be using genericity a lot, the `<E>` after the class name, and inside the for, the type of each element is `E`. This means that our list can store objects having or inheriting the type "E" (the creator of the list will pick what's the type E).
 
 ```java
 public ForwardList(ForwardList<E> liste) {
@@ -80,14 +61,7 @@ public ForwardList(ForwardList<E> liste) {
 }
 ```
 
-Memorize this for (each) syntax: 
-``for (ElementType variableName : iterable)``. 
-You will use almost the same as this one (and maybe
-this one) a lot in the TP. Here ``E`` is the type of
-an element since
-our iterable  ``ForwardList<E>``
-is declared as a ``ForwardList`` storing elements of type
-``E``.
+Memorize this for (each) syntax: ``for (ElementType variableName : iterable)``. You will use almost the same as this one (and maybe this one) a lot in the TP. Here ``E`` is the type of one element, since our iterable  ``ForwardList<E>`` is declared as a ``ForwardList`` storing elements of type ``E``.
 
 An example would be this one for an ArrayList.
 
@@ -102,17 +76,14 @@ for (Integer c : numbers) {
 }
 ```
 
-About insertAt method. Please use other methods
-according to the case:
+About insertAt method. Please use other methods according to the case:
 
 * $index \lt 0$: exception
 * $index = 0$: insert
 * $index = size$: add
 * otherwise find the previous element and make a manual insert
 
-Iterators are a way to iterate a list/set of objects.
-We are returning our iterator, but we will have to code
-it.
+Iterators are a way to iterate a list/set of objects. We are returning our iterator, but we will have to code it.
 
 ```java
 public Iterator<E> iterator() { // returns a new iterator
@@ -128,21 +99,11 @@ In ``ListIterator`` note the attributes
 * ``element``: the last element we returned
 * ``nextCalled``: true if next called, set to false in `remove`
 
-Then simply change our variable according to what
-value they are supposed to have. How do we know that
-the list is empty? (answer: <span class="spoiler">
-current is null means the list is empty. 
-We will have a next element if current **is not null**.
-</span>)
+Then simply change our variable according to what value they are supposed to have. How do we know that the list is empty? (answer: <span class="spoiler"> current is null means the list is empty. We will have another next element if current **is not null**.</span>)
 
-As a side note, please don't forget to instantiate all
-attributes in your constructors, even at null since
-the teacher is asking you to do it.
+As a side note, please don't forget to instantiate all attributes in your constructors, **even at null**, since the teacher is asking you to do it.
 
-Here is my equals' method. Please note that this method is “weird”. You are not checking if two
-items have the same type, but if they have the same content. So you
-will have to check if they are ``Iterable``
-then iterate your lists.
+Here is my equals' method. Please note that this method is “weird”. You are not checking if two items have the same type, but if they have the same content. So you will have to check if they are ``Iterable`` then iterate your lists.
 
 ```java
 public boolean equals(Object o) {
@@ -203,5 +164,4 @@ public boolean add(E e) {
 }
 ```
 
-... and yeah we are calling list methods so
-almost nothing to write in a lot of methods!
+... and yeah we are calling list methods so almost nothing to write in a lot of methods!
