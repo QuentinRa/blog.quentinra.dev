@@ -1,4 +1,6 @@
 {
+  "title": "Tools-related courses - GIT, Markdown, Vim, Latex, Jetbrains...",
+  "description": "A lot of tools that you might use such as GIT, Markdown, Latex, Unity...",
   "courses": [
     {
       "tag": "docker",

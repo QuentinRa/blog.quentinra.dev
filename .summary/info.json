@@ -1,4 +1,6 @@
 {
+  "title": "Programming courses - Java, C, OCaml, HTMl, JS, Node, NoSQL...",
+  "description": "Learn about Java, C, OCaml, Web-related languages, Assembly, Cybersecurity and even about API.",
   "courses": [
     {
       "tag": "c",

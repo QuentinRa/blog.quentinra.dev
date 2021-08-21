@@ -1,4 +1,6 @@
 {
+  "title": "Special courses - ENSIIE-related courses",
+  "description": "A lot of ENSIIE-related courses (CESIM, PWR, ILO, IT PROJECT, ...)",
   "courses": [
     {
       "tag": "ilo",
