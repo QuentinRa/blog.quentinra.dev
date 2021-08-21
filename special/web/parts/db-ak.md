@@ -2,11 +2,7 @@
 
 [Go back](..)
 
-An artificial key is
-an attribute that is supposed to be unique and increase
-each time you add a row/record.
-In ``postgre``, it's called sequences.
-The **type of the attribute is SERIAL**.
+An artificial key is an attribute that is supposed to be unique and increase each time you add a row/record. In Postgres, it's called sequences. The **type of the attribute is SERIAL**.
 
 ```sql
 -- start with 1 and will increment by 1 ...
