@@ -1,9 +1,6 @@
-# Maths for AST
+# Math for AST
 
-This is a review of Mathematical classes at the ENSIIE
-engineering school from the point of view of AST 
-(=`admis sur titre` meaning those that didn't make preparatory
-classes).
+This is a review of Mathematical classes at the ENSIIE engineering school from the point of view of AST (=`admis sur titre` meaning those that didn't make preparatory classes).
 
 **Everything after this note should be in French.**
 
@@ -17,9 +14,7 @@ classes).
 
 ## Probabilités (MBR)
 
-* pas besoin de vous prendre la tête sur
-  certaines notions (tribu borélienne, ...) car c'est inutile
-  pour nous.
+* pas besoin de vous prendre la tête sur certaines notions (tribu borélienne, ...) car c'est inutile pour nous.
 
 <hr class="sl">
 
@@ -40,8 +35,7 @@ classes).
 ## Optimisation
 
 - **Suivez les TD**
-- Il y a plein de trucs faciles, notamment en optimisation
-sans contraintes
+- Il y a plein de trucs faciles, notamment en optimisation sans contraintes
 - Regardez des vidéos sur YouTube
 
 <hr class="sr">
@@ -60,8 +54,7 @@ sans contraintes
 
 ## Dépôts
 
-Ces dépôts ont étés trouvés sur le web et peuvent
-peut-être aider.
+Ces dépôts ont étés trouvés sur le web et peuvent peut-être aider.
 
 * <https://github.com/johnsudaar/ENSIIE/tree/master/MAN>
 * <https://github.com/qbarrand/ENSIIE-ISEX-exercices>
