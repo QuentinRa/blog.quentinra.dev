@@ -2,8 +2,7 @@
 
 [Go back](..)
 
-This is the same as for Singleton, but we have also another attribute to limit
-the number of instances created.
+This is the same as for Singleton, but we have also another attribute to limit the number of instances created.
 
 * ➡️ : when you want a bit more than a singleton
 * ✅ : memory consumption should decrease

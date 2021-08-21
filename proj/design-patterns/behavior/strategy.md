@@ -2,8 +2,7 @@
 
 [Go back](..)
 
-Creates a family of classes sharing some properties from
-what I understand.
+Creates a family of classes sharing some properties from what I understand.
 
 * ➡️: Border class in java divided with CompoundBorder, EmptyBorder, ...
 * ✅ : easy to add some functionalities

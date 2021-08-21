@@ -2,17 +2,15 @@
 
 [Go back](..)
 
-We will have a private static attribute, having the type of our class.
-And we will have a method usually called ``getInstance`` returning the instance.
+We will have a private static attribute, having the type of our class. And we will have a method usually called ``getInstance`` returning the instance.
 
 The constructor is usually private.
 
-**lazy instantiation**
+**Lazy instantiation**
 
-We are initializing our attribute in ``getInstance``, only if our attribute
-is null.
+We are initializing our attribute in ``getInstance``, only if our attribute is null.
 
-**early instantiation**
+**Early instantiation**
 
 We are initializing our attribute when we are declaring it.
 
@@ -24,7 +22,7 @@ We are initializing our attribute when we are declaring it.
 
 ## Example in Java
 
-lazy instantiation
+Lazy instantiation
 
 ```java
 public class RpgMaker {
@@ -41,7 +39,8 @@ public class RpgMaker {
     private RpgMaker(){}
 }
 ```
-early instantiation
+
+Early instantiation
 
 ```java
 

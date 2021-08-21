@@ -2,8 +2,7 @@
 
 [Go back](..)
 
-When you got something big to do, just split it
-into small tasks!
+When you got something big to do, just split it into small tasks!
 
 * ➡️ : in web/app you should code a method for the header, one for the main and one for the footer
 * ✅ : more readable code
@@ -26,8 +25,7 @@ public interface FrameBuilder {
 }
 ```
 
-A page of our website will most likely have the same footer/header so
-be can create a class ``AbstractPage``.
+A page of our website will most likely have the same footer/header, so we can create a class ``AbstractPage``.
 
 ```java
 // a page of our website

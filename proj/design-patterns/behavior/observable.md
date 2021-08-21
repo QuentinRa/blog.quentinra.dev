@@ -2,10 +2,7 @@
 
 [Go back](..)
 
-An observer is someone who wants to be notified when
-an event occurred on an observable. This could be
-the Undo class, which wants to be notified when
-we clicked (event=click) on the undo button.
+An observer is someone who wants to be notified when an event occurred on an observable. This could be the Undo class, which wants to be notified when we clicked (event=click) on the undo button.
 
 * ✅ : simple communication
 * 🚫 : ...

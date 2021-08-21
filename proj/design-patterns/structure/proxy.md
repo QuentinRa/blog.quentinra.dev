@@ -2,11 +2,10 @@
 
 [Go back](..)
 
-A class having an attribute being another class
-and using this other class to implements some methods.
+A class having an attribute being another class and using this other class to implements some methods.
 
 * ✅ : easy implementation, no extends
-* 🚫 : if you have too many methods to "proxy"
+  * 🚫 : if you have too many methods to "proxy"
 
 <hr class="sl">
 

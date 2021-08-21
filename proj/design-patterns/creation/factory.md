@@ -2,15 +2,13 @@
 
 [Go back](..)
 
-This is a class with methods like this
-``createObject() : A`` in which A can be 
+This is a class with methods like this `createObject() : A` in which A can be 
 
 * abstract (an interface, an abstract class, ...)
 * the class A
 * a sub-class of A
 
-meaning that the caller won't know exactly what we created. 
-We can easily change it too, and that's why it's quite handy.
+meaning that the caller won't know exactly what we created. We can easily change it too, and that's why it's quite handy.
 
 * ➡️ : an example would be ``iterator()`` in JAVA
 * ✅ : more flexibility
@@ -23,7 +21,7 @@ We can easily change it too, and that's why it's quite handy.
 ```java
 // ------------ factory related ------------- //
 
-// should manage creation of RPG Units, UnitCreator.java
+// should manage the creation of RPG Units, UnitCreator.java
 public interface UnitCreator {
 
     // kind of units

@@ -2,16 +2,9 @@
 
 [Go back](..)
 
-This pattern is exploiting ``Liskov substitution principle`` meaning a child-class
-can be viewed as a parent class.
+This pattern is exploiting `Liskov substitution principle` meaning a child-class can be viewed as a parent class.
 
-We will create a class ``parent`` with a method such as ``get...``. 
-Then we will have `children` extending our `parent` class
-and implementing this or these methods. 
-Usually, one child do some recursive work because
-he got an attribute having the type of the parent class
-and he calls the method on it. 
-And the other one simply returns a value.
+We will create a class ``parent`` with a method such as ``get...``.  Then we will have `children` extending our `parent` class and implementing this or these methods. Usually, one child does some recursive work because he got an attribute having the type of the parent class, and he calls the method on it. And the other one simply returns a value.
 
 * ✅ : generic, easy to ask for an information
 * 🚫 : ???
@@ -20,9 +13,7 @@ And the other one simply returns a value.
 
 ## Example in Java
 
-We got some components that can be either a file or a folder 
-(we can have others folders or files inside). 
-We want to count the number of files.
+We got some components that can be either a file or a folder (we can have others folders or files inside). We want to count the number of files.
 
 ```java
 public interface Component {

@@ -2,9 +2,7 @@
 
 [Go back](..)
 
-If creating an object is costly, then clone it
-and modify the cloned one.
-Be careful about the depth of the copy.
+If creating an object is costly, then clone it and modify the cloned one. Be careful about the depth of the copy.
 
 * ➡️ : no example
 * ✅ : easy creation
@@ -14,8 +12,7 @@ Be careful about the depth of the copy.
 
 ## Example in Java
 
-May this code help, that's an example of using the 
-clone method in Java
+May this code help, that's an example of using the clone method in Java
 
 ```java
 public class CompteBancaire {
