@@ -1,6 +1,6 @@
 # Tests
 
-You must do some tests to check if your code or your project is working correctly. In futures versions, they might help you find some bugs.
+You must do some tests to check if your code or your project is working correctly. In futures versions, they might help you find some bugs. This is also a way to prove that your tool is working.
 
 To write tests, you need to find the parts of your code that needs to be tested, and that can be hard. You may also have to think about what you are going to test given a function/block of code.
 

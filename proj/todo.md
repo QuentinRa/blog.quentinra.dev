@@ -12,3 +12,7 @@
 - project-it/Git/RST
   - https://gist.github.com/javiertejero/4585196
   - https://github.com/alex/what-happens-when/blob/master/README.rst
+- it
+  - https://mozillascience.github.io/working-open-workshop/
+  - https://mozillascience.github.io/working-open-workshop/contributing/
+  - https://www.conventionalcommits.org/en/v1.0.0/#specification

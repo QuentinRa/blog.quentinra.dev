@@ -14,7 +14,7 @@ This is focused on providing help for open-source projects, but I'm sure that yo
 
 If you are planning to make a project, you should consider a version-control tool. The most-used one is **GIT**.
 
-If you are planning to make a project with a team, you should also look at **AGILE-SCRUM** methodology (or Agile methodologies), to replace this old V-Model.
+If you are planning to make a project with a team, you should also look at **AGILE-SCRUM** methodology (or Agile methodologies), to replace the traditional V-Model.
 
 If you are planning to make something clean, and well-made, then you should look at 
 
@@ -23,6 +23,7 @@ If you are planning to make something clean, and well-made, then you should look
 * **Code guidelines**: make your code consistent (how parameters are declared? Language? Indents? ...)
 * **Tests**: automated tests to test that your software is working as intended, even after some updates
 * **HMI**: carefully think about your interface
+* **Frameworks**: frameworks that are **actively maintained** might help you save time, while making your code more maintainable and secure
 
 And finally, you should look for the **project management course**, as it explains things like "how to write specifications".
 
@@ -34,15 +35,15 @@ This is a file you must already know. We are putting a README.md in **Markdown**
 
 * What's the project's **name**
 * What's the project's **goal**/ **description** of the project
-* How we can **install the project**? Run it?
+* How we can **install the project**? Run it? Test it?
 * Where is the **documentation**? (you got one, right? Right? 🧐)
-  * You can make **some sample of code**
-  * Generate the code's documentation
-  * Write runtimes usages (global variables, session usage for a website, ...)
-* Some **badges** (see fancy notes in the GitHub courses)
+  * You should add **some samples of code**
+  * Of course, you should generate the code's documentation (like the Javadoc, the JSDoc, ...)
+  * Write runtimes usages (global variables, the usage of a session for a website, ...)
+* Some **badges** (see fancy notes in the course about GIT)
 * You may add **pictures/a GIF** showing an **example** of what's the project doing
-* A link to a demo (usually in the browser for a web app)?
-* Credits/Authors and core maintainers
+* A link to a demo
+* Credits/Authors and core maintainers (with a way to contact them)
 
 You may also
 
@@ -55,8 +56,10 @@ You may also
 
 You **must** add a LICENSE, the most used ones being
 
-* MIT
-* Apache2.0
+* the MIT license
+* the Apache license, version 2.0
+* the [creative common kinds of licenses](https://creativecommons.org/)
+* Copyright (default - no license)
 
 Pick the one that is corresponding to what you want [on choosealicense.com](https://choosealicense.com/).
 
