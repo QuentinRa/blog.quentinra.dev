@@ -64,6 +64,7 @@ Last updated: 2021-08-18
 * [ ] advanced search? (inside a course/category)
 * [ ] actions? typos
 * [ ] date in sitemap.xml => full + UTC
+* [ ] replace <code>````</code> by <code>``</code>
 </details>
 
 <br>
