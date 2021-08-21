@@ -2,16 +2,12 @@
 
 [Go back](..)
 
-Make a story about a usage of your application like
+Make stories about usages of your application like
 
-> John doe started the app, then [...].
-> After that, he closed the application.
+> John doe started the app, then [...]. After that, he closed the application.
 
-You can make a lot of user stories.
-Once you have a lot of them or at least you think you have
-enough stories, then create a **use case diagram**.
+Once you have a lot of them or at least you think you have enough stories, then create a **use case diagram**.
 
 * "John Doe" is the actor
-* starting the app, closing the app, ...
-  are the actions that the user could do
+* starting the app, closing the app, ... are the actions that the user could do
 * the "application" is the system
