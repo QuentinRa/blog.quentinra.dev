@@ -1,12 +1,8 @@
 # HMI
 
-Human-machines interfaces (`IHM = Ìnterfaces Homme-machine`)
-are interfaces connecting the interactions between humans
-and machines. For instance, this could be a program
-or a website.
+Human-machine interfaces (`IHM = Ìnterfaces Homme-machine`) are interfaces connecting the interactions between humans and machines. For instance, this could be a program or a website.
 
-You must think a lot about how you should create one,
-and that's the purpose of this course.
+You must think a lot about how you should create one, and that's the purpose of this course.
 
 <hr class="sl">
 
@@ -14,34 +10,26 @@ and that's the purpose of this course.
 
 You will need
 
-* to think about where you put the elements
-of your interfaces, by creating ``wireframes``
-* you will need to think about what elements you need in your interfaces
-* you must think about how you will sort things like your
-menus to make them simple and intuitive
+* to think about where you put the elements of your interfaces, by creating `wireframes` * you will need to think about what elements you need in your interfaces
+* you must think about how you will sort things like your menus to make them simple and intuitive
   
-A wireframe is literally a frame of your application,
-you can draw it by yourself or use tools like
+A wireframe is literally a frame of your application, you can draw it by yourself or use tools like
 
 * PowerPoint (no, don't)
 * [diagrams](https://app.diagrams.net/)
 * [sketch](https://www.sketch.com/) (macOS)
 * Photoshop (paid, for professionals)
-* [Justinmind](https://www.justinmind.com/)
-  (trial available but paid, **the best of all**)
+* [Justinmind](https://www.justinmind.com/) (trial available but paid, **the best of all**)
 * [moqups](https://moqups.com/) (**the best for free**, account required)
-* or simply in HTML using Bootstrap, simple and efficient
-  (**my favorite alternative**)
+* or simply in HTML using Bootstrap, simple and efficient (**my favorite alternative**)
 
-You can use this great website to think about menus
-or make optimal choices : [optimalworkshop](https://www.optimalworkshop.com/).
+You can use this great website to think about menus or make optimal choices : [optimalworkshop](https://www.optimalworkshop.com/).
 
 <hr class="sr">
 
 ## Users
 
-Before coding some application, you must think about what
-kinds of persons will use it
+Before coding some application, you must think about what kinds of persons will use it
 
 * language/country
 * age
@@ -53,10 +41,7 @@ kinds of persons will use it
 * knowledge about computer/...
 * illiterate?
 
-You can't make something that would be perfect for everyone
-but try to make some categories of users and provide them
-an application that would aim to satisfy most of their
-requests. For instance, you can 
+You can't make something that would be perfect for everyone, but try to make some categories of users and provide them an application, that would aim to satisfy most of their requests. For instance, you can 
 
 * make a website/app per country,
 * add a settings tab to enable the day/night mode,
@@ -69,11 +54,8 @@ requests. For instance, you can
 ## Steps
 
 1. create some categories of users
-2. ask persons matching your categories
-   where they would go to find XXX in the menus, ...
-   to test your interface.
-3. create **UML**'s diagrams to formalize
-the interactions between the application and users
+2. ask persons matching your categories where they would go to find XXX in the menus, ... to test your interface.
+3. create **UML**'s diagrams to formalize the interactions between the application and users
 4. make a static mock-up
 5. test your mock-up
 6. make a dynamic mock-up (links working, some code, ...)
@@ -91,8 +73,7 @@ OR you can follow my steps
 
 ## Jakob Nielsen
 
-Jakob Nielsen wrote the **10 principles** that
-you should <s>MUST 😠</s> take into account.
+Jakob Nielsen wrote the **10 principles** that you should <s>MUST 😠</s> take into account.
 
 1. keep the user updated on what's happening
 
@@ -103,8 +84,7 @@ you should <s>MUST 😠</s> take into account.
 2. Do not do something complex, follow the conventions
 
    > * ex: the close button is at the top-right of the screen
-   > * Skeuomorph design: we are expecting an online book
-   > to work the same as a real one
+   > * Skeuomorph design: we are expecting an online book to work the same as a real one
 
 3. Let the user be free
 
@@ -113,39 +93,27 @@ you should <s>MUST 😠</s> take into account.
 
 4. Norms, directives, habits
 
-   > * ex: we are expecting a software of the same family
-   > to be similar
-   > * we are expecting a 🛒 shopping cart on a marketing
-   > website to see the list of our items
+   > * ex: we are expecting a software of the same family to be similar
+   > * we are expecting a 🛒 shopping cart on a marketing website to see the list of our items
 
 5. Prevents errors
 
-   > * do not let the user make mistakes, you should
-   > code or use the right kind of input field if you expect
-   > a specific kind of value.
-   > * asking the user confirmation might also
-   > be a good practice.
-   > * you may add a small help, an example, or a message
-   > saying what you are expecting
+   > * do not let the user make mistakes, you should code or use the right kind of input field if you expect a specific kind of value.
+   > * asking the user confirmation might also be a good practice.
+   > * you may add a small help, an example, or a message saying what you are expecting
 
 6. Users shouldn't need to learn
 
-   > A MCQ is easier than an open question... Make it
-   > so that the user will recognize instead of remembering.
-   > You may use a particular kind of style or add tips.
+   > A MCQ is easier than an open question... Make it so that the user will recognize instead of remembering. You may use a particular kind of style or you may add tips.
 
 7. Flexibility
 
    > * make it easy to learn
-   > * and easy for pros to skip some steps, for example
-   > using shortcuts.
+   > * and easy for pros to skip some steps, for example using shortcuts.
 
 8. Aesthetic
 
-   > Do not write hundreds of words, add useless images, ...
-   > to say something that
-   > would fit in less than 10 words.
-   > **Be clear and concise**.
+   > Do not write hundreds of words, add useless images, ... to say something that would fit in less than 10 words. **Be clear and concise**.
 
 9. Robustness
 
@@ -153,24 +121,17 @@ you should <s>MUST 😠</s> take into account.
 
 10. Documentation
 
-    > As a last resort, you may add a documentation
-    > for complex's applications.
+    > As a last resort, you may add documentation for complex applications.
 
 <hr class="sl">
 
 ## Last tips
 
-It may be better to load everything needed at the start
-of the application rather than using `lazy` practices
-and making the user wait a lot of times.
+It may be better to load everything needed at the start of the application rather than using `lazy` practices and making the user wait a lot of times.
 
-A screen will most likely have more width
-than height
-so you should exploit the width.
+A screen will most likely have more width than height, so you should exploit the width.
 
-If you need more than 3 clicks to do one action, and
-you do this action often, then you MUST re-think your
-interface.
+If you need more than 3 clicks to do one action, and you do this action often, then you MUST re-think your interface.
 
 <hr class="sr">
 
