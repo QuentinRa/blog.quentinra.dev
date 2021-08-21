@@ -41,6 +41,8 @@ This is a file you must already know. We are putting a README.md in **Markdown**
   * Write runtimes usages (global variables, session usage for a website, ...)
 * Some **badges** (see fancy notes in the GitHub courses)
 * You may add **pictures/a gif** showing an **example** of what's the project doing
+* A link to a demo (usually in the browser for a web app)?
+* Credits/Authors
 
 You may also
 
@@ -72,7 +74,20 @@ Tell others, how they can contribute to your project
 
 ## CHANGELOG.md
 
-...
+This is useful to help the developers know what you did, or everything major that happened. The [keep a changelog website](https://keepachangelog.com/en/1.0.0/#how) is giving you a lot of advices.
+
+* latest to oldest
+* for each version
+  * give the release date (YYYY-mm-dd)
+  * tell us what you added/changed
+  * tell us what you deprecated/removed/fixed
+  * you may link issues, pull requests, and commits
+
+On GitHub, the **releases** could be an alternatives of the CHANGELOG.md, or you can use both.
+
+You got tools that may help you generating a Changelog, but I didn't test them
+
+* [conventional-changelog](https://github.com/conventional-changelog)
 
 <hr class="sr">
 
