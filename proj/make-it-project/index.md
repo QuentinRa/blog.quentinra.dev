@@ -42,7 +42,7 @@ This is a file you must already know. We are putting a README.md in **Markdown**
 * Some **badges** (see fancy notes in the GitHub courses)
 * You may add **pictures/a gif** showing an **example** of what's the project doing
 * A link to a demo (usually in the browser for a web app)?
-* Credits/Authors
+* Credits/Authors and core maintainers
 
 You may also
 
@@ -115,6 +115,8 @@ You should give a way for users to report you any security-related issues. You m
 
 Sometimes, even if you moved to another major version (like from v1 to v2), you will still provides security updates for the previous versions. We usually call these versions "Long Term Support" (LTS). For instance, Java LTS version are released every 5 years, we got Java11 and soon Java17.
 
+If you're tenacious and motivated, you might read [about security pratices here](https://github.com/coreinfrastructure/best-practices-badge/blob/main/doc/security.md). I didn't last long enough to make a summary.
+
 <hr class="sr">
 
 ## Templates
@@ -138,7 +140,14 @@ I don't know if you can do that everywhere, but on GitHub, you can define templa
 
 ## Workflows
 
-...
+Usually, developers are configuring automatic testing or actions that are executed each time they're making a commit/pull request. An action could
+
+* check that the code is compiling on some OS
+* check that the code is covered by the tests
+* check that you didn't introduced a security breach
+* ...
+
+On GitHub, the workflow are associated with the [notion of actions](https://fr.github.com/features/actions). You got a lot of fancy tools/actions introduced in the fancy notes in the Git course.
 
 <hr class="sr">
 

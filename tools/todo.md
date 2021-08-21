@@ -18,6 +18,7 @@
   - https://francoisbrucker.github.io/cours_informatique/cours/dfs/git_commits_atomiques.html
   - adopteungit (git)
   - http://inch-ci.org/
+  - https://deps.rs/
     You may also add one of those files
 
 **pom.xml**: a `maven`/`gradle` dependency file. It's a file only used in  ``maven`` projects, but you can generate with ``gradle``. Once you have it, you will receive security alerts for your dependencies.
