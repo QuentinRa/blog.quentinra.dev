@@ -25,9 +25,9 @@
       "icon": "<i class=\"bi bi-umbrella\"></i>"
     },
     {
-      "tag": "it",
-      "name": "IT Project",
-      "desc": "Some feedback about it project at the ENSIIE engineering school.",
+      "tag": "it-project",
+      "name": "IT Project (S2) ",
+      "desc": "Some feedback about the IT project at the ENSIIE engineering school.",
       "icon": "<i class=\"bi bi-people\"></i>"
     },
     {

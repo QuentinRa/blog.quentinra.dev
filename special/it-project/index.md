@@ -1,6 +1,6 @@
-# IT Project
+# IT Project - ENSIIE
 
-This is a review of the ENSIIE IT Project (2nd semester) taught by Dimitri WATEL.
+This is a review of the **IT Project** that we are making during the **second semester** at the **ENSIIE engineering school**.
 
 You will have to follow a lot of directives to make a Game in C, in a group of 4.
 
