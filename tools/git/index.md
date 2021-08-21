@@ -128,7 +128,6 @@ Here are some functionalities that you can find on GitHub (but you may find them
 * [Actions](github/actions.md)
 * [PullRequests](github/pull-requests.md)
 * [Issues](github/issues.md)
-* [Organizations](github/organizations.md)
 * [Pages](github/pages.md)
 
 <hr class="sl">

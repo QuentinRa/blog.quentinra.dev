@@ -12,6 +12,13 @@
     - CTest
     - soft wraps
 - Git
+  You may also add one of those files
+
+**pom.xml**: a `maven`/`gradle` dependency file. It's a file only used in  ``maven`` projects, but you can generate with ``gradle``. Once you have it, you will receive security alerts for your dependencies.
+
+**requirements.txt**: same as ``pom.xml`` but for python.
+
+And enable dependabot alerts, to receive pull requests when newer versions of your dependencies are released.
     - copilot: https://www.sitepoint.com/github-copilot-ai-pair-programming/
     - reference issue/pull request
     - fork
