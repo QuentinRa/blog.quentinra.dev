@@ -1,7 +1,5 @@
 # todo
 
-- guidelines
-  - GRASP (object-oriented_desig)
 - design patterns
   - https://sourcemaking.com/antipatterns/software-development-antipatterns
   - https://java-design-patterns.com/

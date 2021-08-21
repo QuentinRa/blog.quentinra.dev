@@ -144,6 +144,27 @@ Focusing too much on optimization without having a proper understanding of what 
 
 <hr class="sl">
 
+## GRASP
+
+GRASP is an acronym for the General Responsibility Assignment Software Patterns.
+
+* **Polymorphism**: if you're checking the type of a class before calling a method, then you should check if this method should not be in an abstract class/interface that you should extend.
+* **Creator**: you should look for who should create an object.
+  * if there is no Wheel without Car, then Car is creating Wheel
+* **Information expert**: which class should we ask if we want to know something about an object?
+  * if you have a list of something in the class A, then A should be the class you'll ask if you want information about elements of the list
+* **Pure Fabrication**: Sometimes, you don't know where to put a functionality. Simply create a new class+interface.
+* **Controller**: deal with the UI and delegates the request to other classes.
+* **Low Coupling**: Your classes are isolated. 
+  * The coupling is low when you can change a class without impacting other classes.
+* **High Cohesion**: how much related are our classes?
+  * if they have the same goal/logic/inheriting/extending the same classes, then there is high cohesion
+  * if they are related, then you should handle them together (use interfaces, abstract classes, ...)
+* **Indirection**: use a mediator, an intermediary class, to decrease the coupling between classes
+* **Protected Variations**: you should look for potentials changes and make things easier if this change were to happen.
+
+<hr class="sr">
+
 ## Sources
 
 * <https://fr.wikibooks.org/wiki/Patrons_de_conception>
@@ -162,3 +183,10 @@ Focusing too much on optimization without having a proper understanding of what 
 * <https://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html>
 * <https://sourcemaking.com/antipatterns/software-development-antipatterns>
 * <https://sourcemaking.com/antipatterns/software-architecture-antipatterns>
+
+GRASP
+
+* <https://home.cs.colorado.edu/~kena/classes/5448/f12/presentation-materials/rao.pdf>
+* <http://www.kamilgrzybek.com/design/grasp-explained/>
+* <https://www.codeproject.com/Articles/1166136/S-O-L-I-D-GRASP-And-Other-Basic-Principles-of-Obje#pure-fabrication>
+* <https://www.fluentcpp.com/2021/06/23/grasp-9-must-know-design-principles-for-code/>
