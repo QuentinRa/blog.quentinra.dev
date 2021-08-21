@@ -2,9 +2,7 @@
 
 [Go back](..)
 
-It's usually a board with post-its. 
-You may do it online, and if you do, we are mainly using 
-one of these tools (all free)
+It's usually a board with post-its. You may do it online, and if you do, we are mainly using one of these tools (all free)
 
 * [Trello](https://trello.com/)
 * [GitHub](https://github.com/features/project-management)

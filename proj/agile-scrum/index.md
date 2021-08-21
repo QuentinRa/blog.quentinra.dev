@@ -1,28 +1,12 @@
 # Agile Scrum
 
-Agile Scrum is an agile method that may be used
-for conducting a project.
+Agile Scrum is an agile method that may be used for conducting a project.
 
-The client will give you some specifications,
-called **product backlog**, to the one that will
-interact with him, called **product owner**. Your goal
-with be to create from these specifications the minimum to
-have a project that is working.
+The client will give you some specifications, called **product backlog**, to the one that will interact with him, called **product owner**. Your goal will be to create from these specifications the minimum to have a project that is working.
 
-Once you have that, you will demonstrate your product
-in front of the client, 
-who will update the **product backlog**
-to request some changes since he may have changed his
-mind. Then you start again another cycle to implements
-some requested functionalities until the last demonstration
-where the client is satisfied. Each one of these iterations
-is called a **sprint**.
+Once you have that, you will demonstrate your product in front of the client, who will update the **product backlog** to request some changes since he may have changed his mind. Then you start again another cycle to implements some requested functionalities until the last demonstration where the client is satisfied. Each one of these iterations is called a **sprint**.
 
-A **sprint** is considered as a project as a whole, meaning
-you would do your specifications, code, and test them.
-You will do the same as you are doing for the project 
-and add functionalities one after another until you reach
-your **goal**.
+A **sprint** is considered as a project as a whole, meaning you would do your specifications, code, and test them. You will do the same as you are doing for the project and add functionalities one after another until you reach your **goal**.
 
 <hr class="sl">
 
@@ -35,10 +19,7 @@ You would usually need
 * **Dev team**: a team of usually 3 to 9 peoples
 * Your [scrum guide](https://agilemanifesto.org/)
 
-First, the **Product Owner** write the specifications of the client
-called [Product Backlog](product-backlog.md).
-Then you will repeat a ``Sprint`` meaning all
-of these steps until the end of the project
+First, the **Product Owner** write the specifications of the client called [Product Backlog](product-backlog.md). Then you will repeat a ``Sprint`` meaning all of these steps until the end of the project
 
 1. [Sprint Planning](sprint/planning.md) <span class="tms">(What we will do ? )</span>
 2. [Sprint Backlog](sprint/backlog.md) <span class="tms">(Who will do what ?)</span>
@@ -78,28 +59,15 @@ Try to relay as much as possible information in your group. Be sure to ask other
 * what they will do or
 * what they want to do
 
-and try to give them advice, be it person-to-person 
-or talk about it, and ask for everyone's help in the **daily scrum**.
+and try to give them advice, be it person-to-person or talk about it, and ask for everyone's help in the **daily scrum**.
 
 **Why?**
 
-By asking them what they are doing,
-even if they are doing fine,
-you may help them get new ideas and improve their skills.
-It will broaden their horizons, and yours too,
-since you both see how the other one would tackle a problem.
+By asking them what they are doing, even if they are doing fine, you may help them get new ideas and improve their skills. It will broaden their horizons, and yours too, since you both see how the other one would tackle a problem.
 
-By asking them what they will do, you will check
-with them that you have the same understanding of
-what they need to do and how they could tackle this.
-You can give them tips/advice or help them
-sail easier in their task.
+By asking them what they will do, you will check with them that you have the same understanding of what they need to do and how they could tackle this. You can give them tips/advice or help them sail easier in their task.
 
-Finally, you should ask each person what they want to do,
-because when someone isn't motivated, then you have to
-redo their work, they may create bugs and slow down
-everything. You must give them tasks that they will
-enjoy and do their best to make.
+Finally, you should ask each person what they want to do, because when someone isn't motivated, then you have to redo their work, they may create bugs and slow down everything. You must give them tasks that they will enjoy and do their best to make.
 
 <hr class="sr">
 
