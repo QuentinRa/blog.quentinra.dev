@@ -32,10 +32,12 @@
   - https://pnpm.io/
   - Mocha / https://www.cypress.io/how-it-works
   - https://github.com/goldbergyoni/nodebestpractices
+  - npm update npm install --save npm i -S
 - web
   - seo
     - https://www.webpagetest.org/
     - https://www.gositestat.com/
+    - https://ahrefs.com/blog/submit-website-to-search-engines/
     - https://www.bing.com/webmasters/help/sitemaps-3b5cf6ed
       - https://www.bing.com/webmasters/help/url-submission-62f2860b
     - Site links
@@ -55,6 +57,15 @@
   - https://php.watch/versions/8.1
   - [Bootstrap studio](https://bootstrapstudio.io/)
   - [freehtml5](https://freehtml5.co/)
+  - https://blog.stackpath.com/http-request-tools/
+https://imagekit.io/blog/ultimate-guide-to-http-caching-for-static-assets/
+https://web.dev/http-cache/
+https://goaccess.io/get-started
+https://www.keycdn.com/blog/log-analysis-tools
+    https://http2.co/how-to-fix-ah10034-the-mpm-module-prefork-c-is-not-supported-by-mod_http2/
+https://www.digitalocean.com/community/tutorials/http-1-1-vs-http-2-what-s-the-difference
+https://http2.co/how-to-fix-ah10034-the-mpm-module-prefork-c-is-not-supported-by-mod_http2/
+see headers: curl -I https://memorize.be/
 - sql
   - https://sql.sh/
   - https://fxjollois.github.io/cours-sql/
@@ -99,6 +110,12 @@
 - nosql
   - http://www.apcjones.com/arrows/#
   - http://web4.ensiie.fr/~stefania.dumbrava/coursIBDPG.pdf
+- python
+  - https://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html
+
+CSS/JS minifier + HTML/CSS validator
+* https://sparksuite.github.io/w3c-css-validator/
+* minifier css/minify css
 
 <hr>
 
@@ -113,3 +130,4 @@
 - http://web4.ensiie.fr/~guillaume.burel/blocks_cours.html.en
 - https://www.pluralsight.com/
 - https://github.com/jfarmer
+- https://sahandsaba.com/

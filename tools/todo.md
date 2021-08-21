@@ -39,7 +39,7 @@ And enable dependabot alerts, to receive pull requests when newer versions of yo
 - Latex
     - work on ref
 - Markdown
-    - work on ref
+    - https://www.markdownguide.org/tools/
 - Unity
     - read links
     - watch videos
@@ -50,3 +50,9 @@ And enable dependabot alerts, to receive pull requests when newer versions of yo
   - https://stackoverflow.com/questions/4755913/how-to-use-doxygen-to-create-uml-class-diagrams-from-c-source
   - https://medium.com/@TSwarper/generate-uml-with-doxygen-b58eaa149d
   - https://stackoverflow.com/questions/27013252/create-one-big-uml-diagram-from-source-with-doxygen
+
+## Why not?
+
+https://codemirror.net/6/
+https://www.youtube.com/watch?v=GG0GVLYzkus
+Are Game Templates Useful Or Not | Corgi Engine | How To Become Bes...
