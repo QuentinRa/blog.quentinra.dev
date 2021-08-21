@@ -130,7 +130,17 @@ Sometimes, even if you moved to another major version (like from v1 to v2), you 
 
 ## Versioning
 
-...
+It seems that a lof of persons are using
+
+* The [Semantic Versioning 2.0.0](https://semver.org/)
+  * FORMAT: **MAJOR.MINOR.PATCH**
+    * MAJOR: breaking change (of the API)
+    * MINOR: non-breaking change, backward compatible
+    * PATCH: internal change
+  * **0.y.z**: in development
+  * **1.y.z**: stable
+  * you may add a tag like **1.0.0-alpha**
+* You may also check [Calver](https://calver.org/)
 
 <hr class="sl">
 
