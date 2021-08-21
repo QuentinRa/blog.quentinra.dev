@@ -11,8 +11,7 @@ Here are some tools you might use
 
 ## My steps
 
-But still here are some steps when you are in
-GanTTProject
+But still, here are some steps when you are in GanTTProject
 
 1. list all steps
 2. sort and indent child tasks

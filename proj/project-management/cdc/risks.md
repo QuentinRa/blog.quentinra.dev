@@ -2,12 +2,9 @@
 
 [Go back](../index.md#specifications)
 
-**YOU CAN'T SKIP THIS PART**. So don't even try.
-A lot of people are forgetting about it, but that's
-the most important one.
+**YOU CAN'T SKIP THIS PART**. So don't even try. A lot of people are forgetting about it, but that's the most important one.
 
-> <q>80% de projets, informatiques ou non, sont commencés mais ne sont jamais terminés.</q>
-> \- my teacher
+> <q>80% de projets, informatiques ou non, sont commencés mais ne sont jamais terminés.</q> \- my teacher
 
 <hr class="sl">
 
@@ -48,18 +45,13 @@ As a student, I thought about these risks
 
 ## Ranking the risks (equation)
 
-You may use the following function $r$ to quantify
-a risk given a cause $c$
+You may use the following function $r$ to quantify a risk given a cause $c$
 
 @
 r(c) = P(X = c) * severity(c)
 @
 
-This is the probability of the cause happening
-by the severity of the cause.
-Generally, we are giving an arbitrary value:
-$0,\ 0.25,\ 0.50,\ 0.75,\ 1.0$ for both $P(X = c)$
-and $severity(c)$.
+This is the probability of the cause happening by the severity of the cause. Generally, we are giving an arbitrary value: $0,\ 0.25,\ 0.50,\ 0.75,\ 1.0$ for both $P(X = c)$ and $severity(c)$.
 
 <hr class="sl">
 
@@ -74,12 +66,6 @@ Sort your risks with the "1 2 3 4 notation" (not MoSCoW).
 
 ![risks](risques.png)
 
-You will get something like this and you have
-to put your risks in a box.
-Deal with the risks in red first, then the orange
-one and then the green ones.
+You will get something like this, and you have to put your risks in a box. Deal with the risks in red first, then the orange ones, and then the green ones.
 
-**Note 16/08/2021**: I was looking for "risk matrix"
-on [Wikipedia](https://en.wikipedia.org/wiki/Risk_matrix)
-and found a matrix that looks ways better than what
-I learned.
+**Note 16/08/2021**: I was looking for "risk matrix" on [Wikipedia](https://en.wikipedia.org/wiki/Risk_matrix) and found a matrix that looks ways better than what I learned.

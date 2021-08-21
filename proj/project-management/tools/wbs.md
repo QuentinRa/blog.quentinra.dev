@@ -2,8 +2,7 @@
 
 [Go back](../index.md#organize-your-project)
 
-The Work breakdown structure (`organigramme des taches`)
-is a tree made of your tasks
+The Work breakdown structure (`organigramme des taches`) is a tree made of your tasks
 
 * the project is the root
 * then the branches are the direct task needed to do the node above
