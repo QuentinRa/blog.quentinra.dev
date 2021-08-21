@@ -87,6 +87,7 @@ On GitHub, the **releases** could be an alternatives of the CHANGELOG.md, or you
 
 You got tools that may help you generating a Changelog, but I didn't test them
 
+* [github-changelog-generator](https://github.com/github-changelog-generator/github-changelog-generator)
 * [conventional-changelog](https://github.com/conventional-changelog)
 
 <hr class="sr">
@@ -118,7 +119,20 @@ Sometimes, even if you moved to another major version (like from v1 to v2), you 
 
 ## Templates
 
-...
+I calling two things "templates".
+
+* **Repository templates**
+
+Maybe someone already configured a repository for you. On Github, you can find "template" repositories which are expressly made to be used as a template. 
+
+* [git-repository-template](https://github.com/misitebao/template-git-repository),
+* [opensource-template](https://github.com/EmbarkStudios/opensource-template)
+
+Note that you may find node-project templates too, etc.
+
+* **Issues and pull requests templates**
+
+I don't know if you can do that everywhere, but on GitHub, you can define templates for your issues and your pull requests. Everything is explained in the Git course.
 
 <hr class="sl">
 
@@ -152,6 +166,7 @@ In an open-source project,
 * check the license of the libraries you're using
 * give your roadmap (what you're planning to do, what you did, ...)
 * try to answer any issues/pull requests within 48 hours, give feedback and gratitude to your contributors
+* **CODEOWNERS**: at least on GitHub, you can create a file called [CODEOWNERS](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners). You can use regex to tell GitHub who wrote this files. When someone is submitting a pull request/issue changing the file assigned to an author, GitHub will automatically ask for their review.
 
 <hr class="sr">
 
