@@ -7,6 +7,10 @@
 - Bootstrap
   - https://tailwindcss.com/
   - https://primer.style/css/getting-started
+  - Java16+17
+  - https://mkyong.com/java/what-is-new-in-java-15/
+  - https://en.wikipedia.org/wiki/Java_version_history
+  - LTS?
 - PHP 8
   - enums (enum Name {case;} or case=[...]. Name::from([...]))
   - add the ? condition (truc ? blah blah : null) with ?->

@@ -51,7 +51,12 @@ You may also
 
 ## LICENSE/LICENSE.txt
 
-...
+You **must** add a LICENSE, the most used ones being
+
+* MIT
+* Apache2.0
+
+Pick the one that is corresponding to what you want [on choosealicense.com](https://choosealicense.com/).
 
 <hr class="sr">
 
@@ -80,14 +85,19 @@ The most used template is the [Contributor Covenant (Markdown - 2.1)](https://ww
 You can add this badge too, if you're proud of it ![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
 
 ```markdown
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 ```
 
 <hr class="sl">
 
 ## SECURITY.md
 
-...
+You should give a way for users to report you any security-related issues. You may also write in this file, 
+
+* which versions of your software will have security updates, 
+* or for how many time you're planning to provide security updates, for each version
+
+Sometimes, even if you moved to another major version (like from v1 to v2), you will still provides security updates for the previous versions. We usually call these versions "Long Term Support" (LTS). For instance, Java LTS version are released every 5 years, we got Java11 and soon Java17.
 
 <hr class="sr">
 
@@ -111,4 +121,4 @@ You can add this badge too, if you're proud of it ![Contributor Covenant](https:
 
 ## Sources
 
-...
+* [opensource.guide](https://opensource.guide/)
