@@ -13,10 +13,16 @@
       "icon": "<i class=\"bi bi-map\"></i>"
     },
     {
-      "tag": "project-management",
-      "name": "Start a project",
+      "tag": "make-a-project",
+      "name": "Make a project",
       "desc": "What's a project in real-life and how one should handle it.",
-      "icon": "<i class=\"bi bi-map\"></i>"
+      "icon": "<i class=\"bi bi-archive\"></i>"
+    },
+    {
+      "tag": "make-it-project",
+      "name": "Make IT Project",
+      "desc": "A gathering of everything related to IT projects and their management.",
+      "icon": "<i class=\"bi bi-archive\"></i>"
     },
     {
       "tag": "agile-scrum",

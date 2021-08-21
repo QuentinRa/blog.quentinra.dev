@@ -1,4 +1,4 @@
-# What's in this course
+# Make a project
 
 Honestly, this is a boring yet interesting theoretical course. You will learn a lot of things, but there is a lot of vocabulary. I will try to present it to you in a useful way so that you will enjoy the course. You will learn
 
