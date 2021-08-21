@@ -4,30 +4,20 @@
 
 First, the TP is in two parts
 
-* simply answer the questions (but **don't code 
-  any todo**)
-* then wait for the JavaFX project, and code it. When you
-  will have to test with a server, run the server
-  from the previous TP (nothing to do aside from running)
-  and that's it.
+* simply answer the questions (but **don't code any todo**)
+* then wait for the JavaFX project, and code it. When you will have to test with a server, run the server from the previous TP (nothing to do aside from running) and that's it.
 
 Materials
 
 * [Source Part1](https://github.com/memorize-code/memorize-references/raw/main/special/ilo/tchat/TPChat.zip)
 * [Source Part2](https://github.com/memorize-code/memorize-references/raw/main/special/ilo/tchat/ChatClientJavaFX.zip)
-* just so you know, in 2021, the ClientFrame.fxml file
-  leaked during the FIPA classes. Legends are saying
-  that you could find it, somewhere, though I don't know where?
+* just so you know, in 2021, the ClientFrame.fxml file leaked during the FIPA classes. Legends are saying that you could find it, somewhere, though I don't know where?
 
 <hr class="sr">
 
 ## Pick your IDE
 
-I highly recommend using **IntelliJ** (easy to learn) for this one,
-since that's maybe your first time with JavaFX and
-IntelliJ has great support for JavaFX. You can solve
-in less than 30 seconds, problems like
-``Can't load FXML`` (no joke).
+I highly recommend using **IntelliJ** (easy to learn) for this one, since that's maybe your first time with JavaFX and IntelliJ has great support for JavaFX. You can solve problems like `Can't load FXML` in less than 30 seconds.
 
 * [Eclipse Setup](ide/eclipse.md)
 * [IntelliJ IDEA Setup](ide/idea.md)
@@ -40,20 +30,13 @@ in less than 30 seconds, problems like
 ``Graphics pipeline error``
 
 <blockquote class="spoiler">
-That simply means that the one compiling didn't find the OS-specific files for JavaFX. Check that in your lib folder or JavaFX folder
-that you got some jar like <code>javafx-base-16-win</code>
-on Windows.
+That simply means that the one compiling didn't find the OS-specific files for JavaFX. Check that in your lib folder or JavaFX folder that you got some jar like <code>javafx-base-16-win</code> on Windows.
 </blockquote>
 
 ``JavaFX runtime component missing``
 
 <blockquote class="spoiler">
-Oh! You got this one! Welcome to JavaFX! In order to run a JavaFX you need to give some
-VM options, namely
-<code>--module-path lib --add-modules javafx.controls,javafx.fxml</code>
-(if lib is the folder with JavaFX .jar libraries).
-Check out the tutorial for your IDE
-and try to set up things properly.
+Oh! You got this one! Welcome to JavaFX! In order to run a JavaFX you need to give some VM options, namely <code>--module-path lib --add-modules javafx.controls,javafx.fxml</code> (if lib is the folder with JavaFX .jar libraries). Check out the tutorial for your IDE and try to set up things properly.
 </blockquote>
 
 ``Can't load FXML error``
@@ -62,17 +45,11 @@ and try to set up things properly.
 The problem may be
 <ul>
 <li>you used two times one ID</li>
-<li>you used an ID on the wrong component (Image instead of Button,
-Button instead of ToogleButton, ... you can check the types in the Controller
-class)
+<li>you used an ID on the wrong component (Image instead of Button, Button instead of ToogleButton, ... you can check the types in the Controller class)
 </li>
 </ul>
 
-If you see a long, weird, path for your fxml, 
-don't go check out this file,
-that's just your IDE that is creating a copy. 
-If the path is wrong, then you will
-get a NullPointerException since getResource will fail.
+If you see a long, weird, path for your fxml, don't go check out this file, that's just your IDE that is creating a copy. If the path is wrong, then you will get a NullPointerException since getResource will fail.
 </blockquote>
 
 ``Cannot invoke "javafx.scene.control.MenuBar.isUseSystemMenuBar()" because "this.menuBar" is null``
@@ -90,11 +67,7 @@ Comment this code
 ``Controller is null``
 
 <blockquote class="spoiler">
-You probably removed (or missing) a line from your fxml 
-your controller.
-Check out the first line of your FXML for 
-<code>fx:controller="application.Controller"</code>.
-It should look a bit like this
+You probably removed (or missing) a line from your fxml your controller. Check out the first line of your FXML for <code>fx:controller="application.Controller"</code>. It should look a bit like this 
 <pre class="language-xml"><code class="language-xml"
 >&lt;BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16"
 xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller" &gt;
@@ -106,20 +79,14 @@ xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller" &gt;
 ``address/host/port already in use``
 
 <blockquote class="spoiler">
-Seems like a server or another program
-is already using this port. 
-Either find the program and shut it down, or pass
-the program argument <code>--port a_new_port</code>. 
-Be sure that both your server and client have the same value.
+Seems like a server or another program is already using this port. Either find the program and shut it down, or pass the program argument <code>--port a_new_port</code>. Be sure that both your server and client have the same value.
 </blockquote>
 
 <hr class="sr">
 
 ## How you should process
 
-You will use SceneBuilder to create your .fxml files.
-Inside, simply drag components and create the interface
-that you have to. You may follow these steps
+You will use SceneBuilder to create your .fxml files. Inside, simply drag components and create the interface that you have to. You may follow these steps
 
 * Create ``ClientFrame.fxml``
 * launch it (either using preview or the main)
@@ -134,27 +101,15 @@ that you have to. You may follow these steps
 
 ### Layout
 
-Use the ``BorderPane`` component! That's a component divided into north, south,
-east, west, and center. You can use it to put one component at the top, one in 
-the middle and, one at the bottom. Then you have
-some components like a Vbox (one component per line), Hbox (one per column), toolbar, menubar, ... You can even use a
-``BorderPane`` inside a ``BorderPane``.
+Use the ``BorderPane`` component! That's a component divided into north, south, east, west, and center. You can use it to put one component at the top, one in the middle and, one at the bottom. Then you have some components like a VBox (one component per line), HBox (one per column), toolbar, menubar, ... You can even use a ``BorderPane`` inside a ``BorderPane``.
 
 ### Icons
 
-Simply drag and drop the icons from your icons' folder to the application. Buttons
-can have a text + icon (+ tooltip =
-a component with text shown when mouse stay on this button a.k.a. hover) but by 
-default, we only want to see the icon
-so go to ``properties`` and set `Content display` to `GRAPHIC_ONLY`.
+Simply drag and drop the icons from your icons' folder to the application. Buttons can have a text + icon (+ tooltip = a component with text shown when mouse stay on this button a.k.a. hover) but by default, we only want to see the icon, so go to ``properties`` and set `Content display` to `GRAPHIC_ONLY`.
 
 ### Spacing
 
-You need to set the label (for the server name) close
-to the right border.
-The teacher is recommending: creating an empty
-HBox, and editing the fxml to add
-the attribute ``HBox.hgrow="ALWAYS"``.
+You need to set the label (for the server name) close to the right border. The teacher is recommending: creating an empty HBox, and editing the fxml to add the attribute ``HBox.hgrow="ALWAYS"``.
 
 ```xml
 <HBox HBox.hgrow="ALWAYS" />
@@ -162,28 +117,13 @@ the attribute ``HBox.hgrow="ALWAYS"``.
 
 ### ID and Listeners
 
-Sometimes you will give IDs to your components. 
-It means that you need it in
-the ``Controller.java``, check the attributes
-with ``@FXML`` to know the type/attributes needing an ID. 
-On IntelliJ, if a @FXML attribute is properly "linked", 
-you will have an orange symbol on the left column,
-so you easily know if you did something wrong.
+Sometimes you will give IDs to your components. It means that you need it in the ``Controller.java``, check the attributes with ``@FXML`` to know the type/attributes needing an ID. On IntelliJ, if a @FXML attribute is properly "linked", you will have an orange symbol on the left column, so you easily know if you did something wrong.
 
-To set an ID or a listener, click on the component and go to the code section. 
-Listeners are methods of the controller generally
-starting with ``on...``. You can set in the code menu what method should be
-called if an event happens. `onAction` is the name
-of the event when a button is clicked/pressed.
+To set an ID or a listener, click on the component and go to the code section. Listeners are methods of the controller, generally starting with ``on...``. You can set in the code menu what method should be called if an event happens. `onAction` is the name of the event when a button is clicked/pressed.
 
 ### Context Menu
 
-It's a popup shown when using left-click. 
-You must add one on the list view of users.
-But on Windows, your scene builder may crash,
-so you need to create the menu somewhere else
-then copy and paste the code inside 
-your context menu directly in the fxml.
+It's a popup shown when using left-click. You must add one on the list view of users. But on Windows, your scene builder may crash, so you need to create the menu somewhere else then copy and paste the code inside your context menu directly in the fxml.
 
 ### Tooltip
 
@@ -204,8 +144,7 @@ If you can't add tooltips, add them directly in the fxml
 
 ## Starting
 
-In Main.java, uncomment the code and don't forget this todo.
-All the values are given for the setters and the getter is done for you.
+In Main.java, uncomment the code and don't forget this todo. All the values are given for the setters and the getter is done for you.
 
 ```java
 // --------------------------------------------------------------------
@@ -223,8 +162,7 @@ Then complete these
 
 * `Controller()`
 * `setServer(String serverName)`
-* `AbstractMessagesRunner getRunner()`, 
-the teacher corrected this one if needed
+* `AbstractMessagesRunner getRunner()`, the teacher corrected this one if needed
 
 <blockquote class="spoiler">
 
@@ -251,7 +189,7 @@ Easy
 
 Medium
 
-- [ ] `onClearMessagesAction` (=> ClearMessagesRunnable)
+- [ ] `onClearMessagesAction` (check ClearMessagesRunnable)
 - [ ] `onClearSelectedUsers` (you need your user list done and users in it)
 - [ ] `onKickSelectedUsers` (you need your user list done and users in it)
 - [ ] `onShowDateOnMessages` (if message cell is done)
@@ -274,16 +212,12 @@ Hard
 And here is some help for `initialize`
 
 * you should not code it in one go, simply write a bit of it
-  * `#authorList` is `this.authorsObservableList`. You need to link an 
-    observable list with the view (usersListView). If the list is changed,
-    then the view will change.
+  * `#authorList` is `this.authorsObservableList`. You need to link an observable list with the view (usersListView). If the list is changed, then the view will change.
   * some methods that you could use are written inside the subject !!!
-  * your class implements `implements ListChangeListener<String>` meaning you got a listener for the listview
-    changes but you have to add it. The teacher gave this code ``usersListView.getSelectionModel().getSelectedItems().addListener(this);``.
+  * your class implements `implements ListChangeListener<String>` meaning you got a listener for the listview changes, but you have to add it. The teacher gave this code ``usersListView.getSelectionModel().getSelectedItems().addListener(this);``.
   * `Set #graphicsOnlyMenuItem to true` : set selected
   * `showDateOnMessagesMenuItem` : same
-  * `displayLabeled` : it's a list, so you need to add to the list all buttons that may be changed if we want to show text or text+image
-  in our buttons instead of text only.
+  * `displayLabeled` : it's a list, so you need to add to the list all buttons that may be changed if we want to show text or text+image in our buttons instead of text only.
 * otherwise, you need to create `MessageCell` (that's a copy of UserCell with some changes)
 
 <hr class="sl">
@@ -303,5 +237,4 @@ As an example for one TODO, onSendAction an easy one can be understood as
 // - clears #messageText => clean input field
 ```
 
-And, in order to send a message, `messagesRunner` have a method `sendMessage(string)`
-so you can do `this.messagesRunner.sendMessage("a message here");`.
+And, in order to send a message, `messagesRunner` have a method `sendMessage(string)` so you can do `this.messagesRunner.sendMessage("a message here");`.

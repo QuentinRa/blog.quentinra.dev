@@ -2,9 +2,7 @@
 
 [Go back](../index.md)
 
-This tutorial was made
-[from this video](https://www.youtube.com/watch?v=H67COH9F718).
-It didn't work for us, but it greatly helped.
+This tutorial was made [from this video](https://www.youtube.com/watch?v=H67COH9F718). It didn't work for us, but it greatly helped.
 
 * install JavaFX plugin
 * `View > command palette`
@@ -13,8 +11,7 @@ It didn't work for us, but it greatly helped.
     * select folder
     * give it a name
 * *project is opening*
-* copy the content of the teacher ``src`` folder
-into your ``src`` folder and remove `App.java`
+* copy the content of the teacher ``src`` folder into your ``src`` folder and remove `App.java`
 * in lib folder, copy JavaFX source
   * version 16 [here](https://github.com/memorize-code/memorize-references/raw/main/special/ilo/javafx-lib-v16.zip)
   * otherwise try <https://gluonhq.com/products/javafx/>
@@ -32,8 +29,7 @@ into your ``src`` folder and remove `App.java`
 "args": "--name NAME"
 ```
 
-so you will have something like that with a
-different ``projectName``.
+You will have something like that with a different `projectName`.
 
 ```json
 {
