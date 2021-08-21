@@ -92,7 +92,13 @@ see headers: curl -I https://memorize.be/
   - M-I-T-M
     - https://us.norton.com/internetsecurity-wifi-what-is-a-man-in-the-middle-attack.html
     - https://snyk.io/learn/man-in-the-middle-attack/
-  - https://www.rapid7.com/fundamentals/man-in-the-middle-attacks/
+    - https://www.rapid7.com/fundamentals/man-in-the-middle-attacks/
+    - https://stackoverflow.com/questions/14850187/is-it-correct-to-use-alt-tag-for-an-anchor-link
+    - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element
+    - https://html.spec.whatwg.org/multipage/dom.html#global-attributes
+    - https://www.w3.org/TR/html51/
+    - try to think "components" like this button
+      is the lgs-button.
 - C/C++
   - https://github.com/Akagi201/learning-cmake
   - https://github.com/lefticus/cppbestpractices
@@ -100,10 +106,7 @@ see headers: curl -I https://memorize.be/
   - https://gist.github.com/alan-mushi/c8a6f34d1df18574f643
   - https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/forms.html
   - https://stackoverflow.com/questions/14492637/warn-when-using-parameter-marked-as-unused
-  - https://stackoverflow.com/questions/14850187/is-it-correct-to-use-alt-tag-for-an-anchor-link
-  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element
-  - https://html.spec.whatwg.org/multipage/dom.html#global-attributes
-  - https://www.w3.org/TR/html51/
+  - flags
 - ocaml
   - https://ocaml.org/api/List.html
   - esy
