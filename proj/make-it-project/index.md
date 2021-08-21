@@ -119,6 +119,20 @@ Sometimes, even if you moved to another major version (like from v1 to v2), you 
 
 <hr class="sl">
 
+## Bunch of notes
+
+In an open-source project,
+
+* make every discussion public
+* check the license of the libraries you're using
+* give your roadmap (what you're planning to do, what you did, ...)
+* try to answer any issues/pull requests within 48 hours, give feedback and gratitude to your contributors
+
+<hr class="sr">
+
 ## Sources
 
 * [opensource.guide](https://opensource.guide/)
+* [best practices CII/FLOSS](https://bestpractices.coreinfrastructure.org/fr)
+* [best practices CII/FLOSS - GitHub](https://github.com/coreinfrastructure/best-practices-badge)
+* [Government best practices](https://government.github.io/best-practices/)
