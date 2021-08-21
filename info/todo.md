@@ -34,9 +34,10 @@
   - https://github.com/goldbergyoni/nodebestpractices
 - web
   - seo
+    - https://www.webpagetest.org/
     - https://www.gositestat.com/
     - https://www.bing.com/webmasters/help/sitemaps-3b5cf6ed
-    - https://www.bing.com/webmasters/help/url-submission-62f2860b
+      - https://www.bing.com/webmasters/help/url-submission-62f2860b
   - https://github.com/futurice/backend-best-practices
   - https://www.zaproxy.org/
   - https://en.wikipedia.org/wiki/Wikipedia:Username_policy

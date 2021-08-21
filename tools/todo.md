@@ -12,7 +12,8 @@
     - CTest
     - soft wraps
 - Git
-  You may also add one of those files
+  - https://github.com/nicoespeon/gitgraph.js, https://www.nicoespeon.com/en/2013/11/gitgraphjs/
+    You may also add one of those files
 
 **pom.xml**: a `maven`/`gradle` dependency file. It's a file only used in  ``maven`` projects, but you can generate with ``gradle``. Once you have it, you will receive security alerts for your dependencies.
 
