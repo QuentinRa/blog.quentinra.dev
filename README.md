@@ -53,7 +53,7 @@ Last updated: 2021-08-18
 * [ ] replace HTML tables by Markdown tables
 * [ ] Soft wraps for everyone
 * [ ] Index Google/Bing
-* [ ] add commit authors
+* [ ] add commit authors (optional)
 * [ ] edit: fix preview or disable it
 * [ ] edit: add enable/disable side-by-side
 * [ ] edit: maybe change ReCaptcha to hCaptcha or ReCaptcha v3?
@@ -66,6 +66,7 @@ Last updated: 2021-08-18
 * [ ] actions? typos
 * [ ] date in sitemap.xml => full + UTC
 * [ ] replace <code>````</code> by <code>``</code>
+* [ ] adding file history
 </details>
 
 <br>
@@ -91,3 +92,11 @@ The website's backgrounds were made by [kronbits](https://kronbits.itch.io/backg
 If you are enjoying the website, please don't forget to star the repository on GitHub to support us.
 
 We backed references in another repository [here](https://github.com/memorize-code/memorize-references).
+
+The usual files are here
+
+* [LICENSE](LICENSE)
+* [CONTRIBUTING.md](CONTRIBUTING.md)
+* [CHANGELOG.md](.github/CHANGELOG.md)
+* [CODE_OF_CONDUCT.md](.github/CODE_OF_CONDUCT.md)
+* [SECURITY.md](.github/SECURITY.md)
