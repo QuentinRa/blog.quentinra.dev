@@ -30,7 +30,22 @@ And finally, you should look for the **project management course**, as it explai
 
 ## README.md/README.rst
 
-...
+This is a file you must already know. We are putting a README.md in **Markdown** (or README.rst, if you enjoy ReStructuredText) to explain
+
+* what's the project's **name**
+* what's the project's **goal**/ **description** of the project
+* how we can **install the project**? run?
+* where is the **documentation**? (you got one right? right? 🧐)
+  * you can make **some sample of code**
+  * generate the code's documentation
+  * write runtimes usages (global variables, session usage for a website, ...)
+* some **badges** (see fancy notes in the GitHub courses)
+* you may add **pictures/a gif** showing an **example** of what's the project doing
+
+You may also
+
+* add the contributors (some are doing it)
+* add a link to other files (such as the LICENSE)
 
 <hr class="sl">
 
