@@ -1,9 +1,8 @@
 # Screen recorders
 
-[Go back]()
+[Go back](..)
 
-If you have Nvidia GeForce, then you may try to get
-<kbd>ALT+Z</kbd> working.
+If you have Nvidia GeForce, then you may try to get <kbd>ALT+Z</kbd> working.
 
 Otherwise, I'm using
 

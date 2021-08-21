@@ -2,19 +2,13 @@
 
 [Go back](..#discord)
 
-The desktop application was made using electron
-which means that the discord desktop app is simply
-running in a chromium-browser.
+The desktop application was made using electron, which means that the discord desktop app is simply running in a chromium browser.
 
 * you can use ``CTRL-SHIFT-I`` and open the developer tools
 * you can use ``CTRL-R`` to refresh discord
 * ...
 
-Pressing shift while hovering a message, will show a small
-popup allowing you to get the message-id/channel-id
-and the guild-id (used in the API). You can also
-delete/... a message using this, but most people
-are using their right-click for these.
+Pressing shift while hovering a message, will show a small popup allowing you to get the message-id/channel-id and the guild-id (used in the API). You can also delete/... a message using this, but most people are using their right-click for these.
 
 <hr class="sl">
 

@@ -2,9 +2,7 @@
 
 [Go back](..#discord)
 
-To use a discord, you need to [create](https://discord.com/developers/applications/me) a
-bot and get your bot token. That's something private
-that should not be put on GitHub.
+To use a discord, you need to [create](https://discord.com/developers/applications/me) a bot and get your bot token. That's something private that should not be put on GitHub.
 
 ```js
 const Discord = require('discord.js');
@@ -35,7 +33,5 @@ I won't dig more into the details,
 
 * this [guide is quite good](https://discordjs.guide/#before-you-begin)
 * this [documentation is good too](https://discord.js.org/#/docs/main/stable/general/welcome)
-* if you are planning to [make a pagination](https://github.com/gazmull/discord-paginationembed#readme)
-  (the one with the emotes to move pages)
-* if you are planning to [make a webhook](webhook.md)
-  (a bot taking another username/avatar)
+* if you are planning to [make a pagination](https://github.com/gazmull/discord-paginationembed#readme) (the one with the emotes to move pages)
+* if you are planning to [make a webhook](webhook.md) (a bot taking another username/avatar)

@@ -1,7 +1,6 @@
 # Toolbox
 
-A lot of notes about a lot of things that can't be added to 
-another course.
+A lot of notes about a lot of things that can't be added to another course.
 
 <hr class="sr">
 
@@ -26,8 +25,7 @@ another course.
 
 ## Discord
 
-This course is a gathering of notes about
-discord and discord API. Please note the vocabulary
+This course is a gathering of notes about discord and discord API. Please note the vocabulary
 
 * guilds (=a server)
 * channels (to chat/talk)

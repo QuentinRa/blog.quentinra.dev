@@ -22,10 +22,7 @@ When dealing with images, you may want
 
 ![sauce](sauce.jpg)
 
-This website is supposed to help
-you find the sauce when someone is
-posting a chapter of a manga. It didn't work
-for me, but who knows, maybe for you, it will?
+This website is supposed to help you find the sauce when someone is posting a chapter of a manga. It didn't work for me, but who knows, maybe for you, it will?
 
 * <https://saucenao.com/>
 
