@@ -66,7 +66,6 @@ Last updated: 2021-08-18
 * [ ] replace <code>````</code> by <code>``</code>
 * [ ] adding file history
 * [ ] review .summary
-* [ ] edit/search title
 * [ ] check the description for sub pages
 </details>
 
