@@ -13,7 +13,7 @@ This course will strongly refer to [GitHub](https://github.com/), but you may al
 
 As a student, you may enjoy the benefits of the [GitHub student pack](https://education.github.com/pack).
 
-> **edit 21/08/2021**: A lot of content that was in this course (README, LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, ...) that were in this course were moved to "[Make IT project](../../proj/make-it-project/index.md)". This is because I wanted to separate a bit more the implementation (a version-control: GIT) and the "theory", even trough I will only refer to GIT 🙇.
+> **edit 21/08/2021**: A lot of content that was in this course (README, LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, ...) that were in this course were moved to "[Make IT project](../../proj/make-it-project/index.md)". This is because I wanted to separate a bit more the implementation (a version-control: GIT) and the "theory", even though I will only refer to GIT 🙇.
 
 <hr class="sr">
 

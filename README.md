@@ -67,6 +67,7 @@ Last updated: 2021-08-18
 * [ ] date in sitemap.xml => full + UTC
 * [ ] replace <code>````</code> by <code>``</code>
 * [ ] adding file history
+* [ ] review .summary
 </details>
 
 <br>
