@@ -1,6 +1,6 @@
 {
-  "title": "Mathematical courses - Probabilities, Statistics, Optimization, R, ...",
-  "description": "Learn about probabilities, statistics, optimization, Logic and so on, with examples in R.",
+  "title": "Mathematical courses - Probabilities, Statistics, Optimization, R",
+  "description": "Learn about probabilities, statistics, optimization, Logic with examples in R. We are also providing courses about Numerical analysis, matrices, and graphs.",
   "courses": [
     {
       "tag": "optimization",
