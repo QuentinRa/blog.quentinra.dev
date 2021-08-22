@@ -24,7 +24,7 @@
       "icon": "<i class=\"bi bi-shop\"></i>"
     },
     {
-      "tag": "maths",
+      "tag": "math",
       "name": "Math for AST",
       "title": "Math for AST, ENSIIE",
       "desc": "Some feedback about math courses for AST at the ENSIIE engineering school.",
