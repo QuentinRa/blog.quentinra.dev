@@ -68,6 +68,7 @@ Last updated: 2021-08-18
 * [ ] review .summary
 * [ ] check the description for sub pages
 * [ ] check the titles for sub pages
+* [ ] Nested courses files should have the title of the nested course and not the nesting course (ex: UML)
 </details>
 
 <br>
