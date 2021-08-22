@@ -1,18 +1,14 @@
 # Web - PWR
 
-This course is supposed to help ENSIIE students to sail in the Web course. In 2020-2021
-
-* we did a "mini-project" (the only grade, no MCQ)
-* and we could reuse the code or not in the Web project
-
-<hr class="sl">
-
-## Starting your web project
-
-Your websites will be accessible with a URL like this ``http://pgsql.pedago.ensiie.fr/~prenom.nom/``. You will have to create a public_html folder and set some permissions.
+This course is supposed to help ENSIIE students to sail in the Web course. Your websites will be accessible with a URL like this `http://pgsql.pedago.ensiie.fr/~prenom.nom/`. You will have to create a public_html folder and set some permissions.
 
 * [Set public_html](parts/public_html.md)
 * [Project Workflow](parts/workflow.md)
+
+In 2020-2021,
+
+* we did a "mini-project" (the only grade, no MCQ)
+* and we could reuse the code or not in the Web project
 
 <hr class="sl">
 
@@ -22,7 +18,7 @@ Sometimes you may have an **error 500** like everything was working, and now you
 
 * [Enable errors](parts/errors.md)
 
-<hr class="sl">
+<hr class="sr">
 
 ## Database
 

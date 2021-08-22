@@ -1,12 +1,8 @@
 # R
 
-R is a language that may be helpful to
-do so mathematics. We will use it
-in other course such as **Statistics**, **Matrix**, 
-**Numerical analysis** or **Optimization**.
+R is a language that may be helpful to do so mathematics. We will use it in other course such as **Statistics**, **Matrices**,  **Numerical analysis** or **Optimization**.
 
-You can use other languages such as Python, Julia,
-OCaml, according to what you want to do.
+You can use other languages such as Python, Julia, OCaml, according to what you want to do.
 
 <hr class="sl">
 
