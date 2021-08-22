@@ -2,6 +2,8 @@
 
 [Go back](..)
 
+This is the last job you will have to make. You will have to answer questions, then wait. When JavaFX is introduced, you'll get the second part which is including coding an interface (FXML) and write Controller.java. If you have some knowledge about Java, you might make it in 8 to 12 hours.
+
 First, the TP is in two parts
 
 * simply answer the questions (but **don't code any todo**)
@@ -69,10 +71,10 @@ Comment this code
 <blockquote class="spoiler">
 You probably removed (or missing) a line from your fxml your controller. Check out the first line of your FXML for <code>fx:controller="application.Controller"</code>. It should look a bit like this 
 <pre class="language-xml"><code class="language-xml"
->&lt;BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16"
-xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller" &gt;
-&lt;!-- omitted --&gt;
-&lt;/BorderPane&gt;</code>
+><BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16"
+xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller" >
+<!-- omitted -->
+</BorderPane></code>
 </pre>
 </blockquote>
 

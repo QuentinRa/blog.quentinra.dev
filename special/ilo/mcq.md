@@ -2,6 +2,8 @@
 
 [Go back](index.md)
 
+A lot of questions that the teacher is usually asking us. They are all about the practical classes, while Java-related questions are in the Java course.
+
 <hr class="sr">
 
 **Question 1**

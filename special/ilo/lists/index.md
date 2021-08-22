@@ -2,6 +2,8 @@
 
 [Go back](..)
 
+This is the second practical class you will have. We usually have a week to submit our work. You have to code a List, while discovering the notion of Iterable. As always, you got tests to check what you did.
+
 Before starting, please take note that in the project, you got 3 files
 
 * ``ListeOperations.pdf``: visual as to how you should code some methods

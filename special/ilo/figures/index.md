@@ -2,6 +2,8 @@
 
 [Go back](..)
 
+This is the first practical class that you should have. You're supposed to implement in Java, a lot of figures such as Point2D, Point3D, ... Some code is given to you, with the tests to check that your code is working.
+
 First and foremost: **DO NOT USE ECLIPSE**. Eclipse is not helping a beginner. It won't make things harder, but they could be easier. The best choice would be to use VSCode. Any other IDE helping more than eclipse (vanilla) is welcome.
 
 <hr class="sr">

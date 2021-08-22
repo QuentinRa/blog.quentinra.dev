@@ -1,6 +1,6 @@
 # ILO
 
-ILO "Introduction aux Langages orientés-Objets" is not an easy course. You will need strength and motivation to survive <span class="tms">(joke aside, it's not that hard to survive, but I mean "survive without cheating/submitting your friend work, while learning something")</span>.
+ILO "Introduction aux Langages orientés-Objets" is not an easy course. You will need strength and motivation to survive 👀. <span class="tms">Joke aside, it's not that hard to survive, but I mean "survive without cheating/submitting your friend work, while learning something", as a lot of persons are giving up</span>.
 
 * [Figures TP](figures/index.md)
 * [Lists TP](lists/index.md)
