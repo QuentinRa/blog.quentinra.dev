@@ -1,4 +1,4 @@
-# About the application
+# Discord: About the application
 
 [Go back](..#discord)
 
@@ -19,8 +19,8 @@ You can use Markdown in your messages,
 * ``**bold**``, ``*italic*``, ``~~strikethrough~~``
 * writing <code>\`\`some inline code\`\`</code> or some code block
 
-<pre class="language-ld">
-<code class="language-ld"
+<pre class="language-md">
+<code class="language-md"
 >```c
 int main(void){
 

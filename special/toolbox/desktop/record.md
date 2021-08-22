@@ -2,7 +2,9 @@
 
 [Go back](..)
 
-If you have Nvidia GeForce, then you may try to get <kbd>ALT+Z</kbd> working.
+Some links and tools to help you record your screen, or a part of it.
+
+If you have Nvidia GeForce, then you may try to get <kbd>ALT+Z</kbd> working. I didn't manage too since a menu was missing for me, but on my old computer, I could.
 
 Otherwise, I'm using
 

@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-For Windows Users, you may want your application to be verified instead of the "Publisher: Unknown" warning. What you need for this is to buy a "Code signing certificate". You can buy the EV certificate if you want to earn a lot of trust, or you can buy a normal certificate.
+For Windows Users, you may want your application to be verified instead of the "Publisher: Unknown" warning. What you need for this is to buy a "Code signing certificate". You can buy a EV certificate if you want to earn a lot of trust, or you can buy a normal certificate.
 
 <hr class="sl">
 

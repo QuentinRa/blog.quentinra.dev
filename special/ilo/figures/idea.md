@@ -1,8 +1,8 @@
-# IntelliJ
+# IntelliJ - Setup TP FIGURES
 
 [Go back](index.md)
 
-You can find a tutorial about IntelliJ [here](../../../tools/jetbrains/index.md).
+This tutorial should help if you are having trouble, with the test classes (they are in red, you can't run nor compile the project). You can find a [tutorial about IntelliJ  here](../../../tools/jetbrains/index.md).
 
 > do remember that IntelliJ can only run a file if all the project is working. That is not our case so you will have to add the test classes one after another.
 

@@ -1,11 +1,11 @@
-# IntelliJ IDEA
+# JavaFX in IntelliJ IDEA
 
 [Go back](../index.md)
 
-There are two ways, one in two clicks and a longer one. The two click installation won't install an external SceneBuilder:
+There are two way to install JavaFX and SceneBuilder in IntelliJ. One in two clicks and a longer one. The two click installation won't install an external SceneBuilder, so 
 
-* you won't be able to look for components (using a search bar)
-* there is no code menu
+* you won't be able to look for components using a search bar
+* there menu "code" isn't present
 
 So **do the proper one**!
 

@@ -2,6 +2,8 @@
 
 [Go back](..)
 
+We are introducing here, some help about, how to save a page as PDF, converting a file, or achiving a website (either online, locally, or as a single HTML file).
+
 <hr class="sl">
 
 ## Save a page as a PDF
