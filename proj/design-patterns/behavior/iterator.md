@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-The main idea is to iterate an unknown group of objects, all having the same type. We could relate that to ``composite`` but that's not it since the type may be concrete, or they may all have the same type.
+The main idea is to iterate an unknown group of objects, all having the same type.
 
 * ✅ : easy iteration
 * 🚫 : usually you can't modify the data of the iterator

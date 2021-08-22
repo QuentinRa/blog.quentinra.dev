@@ -2,6 +2,8 @@
 
 [Go back](..)
 
+When using a factory, you're adding a layer of abstraction and hiding, using another class, the real object (and its class) that you created.
+
 This is a class with methods like this `createObject() : A` in which A can be 
 
 * abstract (an interface, an abstract class, ...)

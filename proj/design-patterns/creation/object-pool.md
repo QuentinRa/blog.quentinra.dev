@@ -2,11 +2,11 @@
 
 [Go back](..)
 
-You got a good [tutorial here](https://java-design-patterns.com/patterns/object-pool/) but here are some of my notes
+The idea is a bit like the singleton, but this time you're creating a pool of objects, which may have a fixed size or not. You got a good [tutorial here](https://java-design-patterns.com/patterns/object-pool/), but here are some of my notes
 
-* you usually create a pool of a size (and may also the pool to increase)
+* you usually create a pool of a size (you may also allow it to increase)
 * the size of the pool is the number of this kind of objects you are planning to use **at the same time**
-* instead of creating new objects, you are gonna reuse those in the pool
+* instead of creating new objects, you are going to reuse those in the pool
 
 Note that you usually use that when creating a new object costs a lot.
 

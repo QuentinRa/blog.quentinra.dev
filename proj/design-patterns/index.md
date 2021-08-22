@@ -1,6 +1,6 @@
 # Design patterns
 
-Most of the time when coding, you will some code that a lot of developers have written before you. Design patterns are the result of their reflection on how you write this code.
+Most of the time when coding, you will some code that a lot of developers have written before you. Design patterns are the result of their reflection. We will talk about both GOF and GRASP patterns, along with anti-patterns.
 
 There are 4 great categories of design patterns
 
@@ -12,7 +12,7 @@ There are 4 great categories of design patterns
 
 Notes
 
-* the authors of this initiative, the Gang of four, made a [tutorial here](https://www.gofpatterns.com/design-patterns/module1/intro-design-patterns.php).
+* the authors of this initiative, the Gang Of Four (GOF), made a [tutorial here](https://www.gofpatterns.com/design-patterns/module1/intro-design-patterns.php).
 * **edit 24/06/2021**: I recently found [this website](https://java-design-patterns.com/) and [this GitHub](https://github.com/iluwatar/java-design-patterns),  which are wonderful materials to start learning design-pattern. They are **different** from what I learned in school, but I may improve this course later using them.
 * **edit 21/07/2021**: Again, I found this [great website](https://sourcemaking.com/design_patterns) explaining both design patterns and anti-patterns with examples in a lot of languages.
 

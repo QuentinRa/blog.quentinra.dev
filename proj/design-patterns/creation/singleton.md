@@ -2,9 +2,9 @@
 
 [Go back](..)
 
-We will have a private static attribute, having the type of our class. And we will have a method usually called ``getInstance`` returning the instance.
+We want only one instance of a class.
 
-The constructor is usually private.
+We will have a private static attribute, having the type of our class. And we will have a method usually called ``getInstance`` returning the instance. The constructor is usually private.
 
 **Lazy instantiation**
 
