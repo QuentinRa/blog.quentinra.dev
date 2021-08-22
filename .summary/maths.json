@@ -5,48 +5,56 @@
     {
       "tag": "optimization",
       "name": "Optimization",
+      "title": "Learn Optimization, with examples in R",
       "desc": "A short introduction to optimization with examples in R.",
       "icon": "<i class=\"bi bi-cash-coin\"></i>"
     },
     {
       "tag": "r",
       "name": "R language",
+      "title": "Learn R programming",
       "desc": "The language used in most of the mathematics courses. You may use python instead.",
       "icon": "<i class=\"bi bi-terminal\"></i>"
     },
     {
       "tag": "statistics",
       "name": "Statistics",
+      "title": "Learn Statistics, with examples in R",
       "desc": "Learn about statistics, be it descriptive or inferential statistics, with examples using R language.",
       "icon": "<i class=\"bi bi-lightbulb\"></i>"
     },
     {
       "tag": "numerical-analysis",
       "name": "Numerical analysis",
+      "title": "Learn Numerical analysis, with examples in R",
       "desc": "Learn some tips about how you should handle calculations such as Ax=b on a computer.",
       "icon": null
     },
     {
       "tag": "logic",
       "name": "Logic",
-      "desc": "Learn about first-order logic, proofs,  and demonstrations with examples using OCaml language.",
+      "title": "Learn Logic, and first-order Logic",
+      "desc": "Learn about first-order logic, proofs, and demonstrations with examples using OCaml language.",
       "icon": "<i class=\"bi bi-list-stars\"></i>"
     },
     {
       "tag": "probabilities",
       "name": "Probabilities",
+      "title": "Learn Probabilities",
       "desc": "An introduction to discrete and continuous probabilities.",
       "icon": "<i class=\"bi bi-dice-5-fill\"></i>"
     },
     {
       "tag": "graph",
-      "name": "Graphs theory",
+      "name": "Graph theory",
+      "title": "Learn Graph theory",
       "desc": "Graph are used to solve problems (find the shortest path, an Eulerian path, etc.) or in GraphDatabases (Facebook, ...).",
       "icon": "<i class=\"bi bi-bezier\"></i>"
     },
     {
       "tag": "matrix",
       "name": "Matrices",
+      "title": "Learn Matrices Algebra",
       "desc": "You will use matrices a lot (graphs, numerical analysis, statistics, ...) so it would be good to know more about them.",
       "icon": "<i class=\"bi bi-rulers\"></i>"
     }

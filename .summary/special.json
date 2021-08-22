@@ -5,36 +5,42 @@
     {
       "tag": "ilo",
       "name": "Java - ILO",
+      "title": "Object-oriented languages, ENSIIE",
       "desc": "We are covering practical classes of the ILO course at the ENSIIE engineering school.",
       "icon": "<i class=\"bi bi-file-earmark-text\"></i>"
     },
     {
       "tag": "web",
       "name": "Web - PWR",
+      "title": "WEB programming, ENSIIE",
       "desc": "Some tips about the web course at the ENSIIE engineering school.",
       "icon": "<i class=\"bi bi-globe2\"></i>"
     },
     {
       "tag": "cesim",
       "name": "Cesim",
+      "title": "Cesim simulation, ENSIIE",
       "desc": "Some feedback about CESIM course at the ENSIIE engineering school.",
       "icon": "<i class=\"bi bi-shop\"></i>"
     },
     {
       "tag": "maths",
       "name": "Math for AST",
+      "title": "Math for AST, ENSIIE",
       "desc": "Some feedback about math courses for AST at the ENSIIE engineering school.",
       "icon": "<i class=\"bi bi-umbrella\"></i>"
     },
     {
       "tag": "it-project",
       "name": "IT Project (S2) ",
+      "title": "IT Project (S2), ENSIIE ",
       "desc": "Some feedback about the IT project at the ENSIIE engineering school.",
       "icon": "<i class=\"bi bi-people\"></i>"
     },
     {
       "tag": "toolbox",
       "name": "Toolbox",
+      "title": "Tools such as Safe browsing, File hosting, Website archiving",
       "desc": "A lot of notes about a lot of things that can't be added to another course.",
       "icon": "<i class=\"bi bi-truck\"></i>"
     }

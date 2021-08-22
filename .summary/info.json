@@ -5,84 +5,98 @@
     {
       "tag": "c",
       "name": "C",
+      "title": "Learn C programming",
       "desc": "We start from scratch and end up creating more complex programs with threads or a graphical interface.",
       "icon": "<i class=\"bi bi-terminal-fill\"></i>"
     },
     {
       "tag": "java",
       "name": "Java",
+      "title": "Learn JAVA programming",
       "desc": "The course is explaining a lot of concepts up to Java16, including graphical libraries like SWING, AWT, or JavaFX.",
       "icon": "<i class=\"bi bi-window\"></i>"
     },
     {
       "tag": "ocaml",
       "name": "OCaml",
+      "title": "Learn OCAML programming",
       "desc": "This is a course for beginners in OCaml or in functional languages.",
       "icon": "<i class=\"bi bi-terminal-fill\"></i>"
     },
     {
       "tag": "web",
       "name": "WEB",
+      "title": "Learn WEB-related knowledge",
       "desc": "How to start, what you need to know, ... and everything that couldn't be put in a specific language course.",
       "icon": "<i class=\"bi bi-globe\"></i>"
     },
     {
       "tag": "html",
       "name": "HTML",
+      "title": "Learn HTML programming",
       "desc": "A complete summary of what you need to know in HTML to make a website.",
       "icon": "<i class=\"bi bi-globe\"></i>"
     },
     {
       "tag": "css",
       "name": "CSS",
+      "title": "Learn CSS programming",
       "desc": "What's CSS and how you could use it to make your website looks better.",
       "icon": "<i class=\"bi bi-globe\"></i>"
     },
     {
       "tag": "js",
       "name": "JavaScript",
+      "title": "Learn JavaScript programming",
       "desc": "A short introduction to JavaScript used to make interactive websites or required for Node.js/Typescript courses.",
       "icon": "<i class=\"bi bi-globe\"></i>"
     },
     {
       "tag": "php",
       "name": "PHP",
+      "title": "Learn PHP programming",
       "desc": "Almost everything you will use in PHP to make your website server-side in PHP.",
       "icon": "<i class=\"bi bi-globe\"></i>"
     },
     {
       "tag": "nosql",
       "name": "NoSQL",
+      "title": "Learn NoSQL languages",
       "desc": "Learn about NoSQL with MongoDB and Cypher.",
       "icon": "<i class=\"bi bi-stack\"></i>"
     },
     {
       "tag": "assembly",
       "name": "Assembly",
+      "title": "Learn ARM Assembly programming",
       "desc": "A short introduction to ARM assembly.",
       "icon": "<i class=\"bi bi-sim\"></i>"
     },
     {
       "tag": "cyber-security",
       "name": "Cybersecurity",
+      "title": "Learn cybersecurity",
       "desc": "Everything related to the security of your accounts, applications, websites should be kept here.",
       "icon": "<i class=\"bi bi-shield-shaded\"></i>"
     },
     {
       "tag": "node",
       "name": "Node.js",
+      "title": "Learn Node.js",
       "desc": "Learn how you could use node to handle server-side logic, creating an API, or even creating an application with electron.",
       "icon": "<i class=\"bi bi-tropical-storm\"></i>"
     },
     {
       "tag": "typescript",
       "name": "Typescript",
+      "title": "Learn Typescript programming",
       "desc": "Write once and compile in any version of JavaScript.",
       "icon": "<i class=\"bi bi-cup-straw\"></i>"
     },
     {
       "tag": "api",
       "name": "API",
+      "title": "Learn API-related knowledge",
       "desc": "An application programming interface (API) is an interface allowing a user to use someone else services without digging into the code.",
       "icon": "<i class=\"bi bi-key\"></i>"
     }

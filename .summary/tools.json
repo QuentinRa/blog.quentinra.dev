@@ -5,60 +5,70 @@
     {
       "tag": "docker",
       "name": "Docker",
+      "title": "Learn Docker containers",
       "desc": "What's docker and how you could use it to run applications everywhere.",
       "icon": "<i class=\"bi bi-box-seam\"></i>"
     },
     {
       "tag": "git",
       "name": "Git",
+      "title": "Learn version-control with GIT",
       "desc": "Git is the most famous version control tool, and as a programmer, you must learn it.",
       "icon": "<i class=\"bi bi-github\"></i>"
     },
     {
       "tag": "jetbrains",
       "name": "JetBrains",
+      "title": "Learn JetBrains IDEs such as Intellij, PHPStorm, and CLion",
       "desc": "Make your programming life easier by coding inside powerful preconfigured IDEs.",
       "icon": "<i class=\"bi bi-battery-charging\"></i>"
     },
     {
       "tag": "vim",
       "name": "VIM",
+      "title": "Learn how to use VIM editor",
       "desc": "The legendary, old yet powerful console terminal editor.",
       "icon": "<i class=\"bi bi-terminal\"></i>"
     },
     {
       "tag": "markdown",
       "name": "Markdown",
+      "title": "Learn Markdown, including the extended syntax",
       "desc": "The most used language to write documentation or to write beautiful documents without needing a lot of knowledge or a complicated syntax.",
       "icon": "<i class=\"bi bi-box\"></i>"
     },
     {
       "tag": "rst",
       "name": "RST",
+      "title": "Learn ReStructuredText, and Sphinx",
       "desc": "A language to write documentations outside your code with a lot of powerful tools such as generating UML, graphs ... The syntax is like an improved version of Markdown.",
       "icon": "<i class=\"bi bi-box\"></i>"
     },
     {
       "tag": "latex",
       "name": "LaTEx",
+      "title": "Learn how to write LaTeX",
       "desc": "A language used to write reports, create presentations quite easily and with great style. You may also use it to write math in a website/documents.",
       "icon": "<i class=\"bi bi-box\"></i>"
     },
     {
       "tag": "doxygen",
       "name": "Doxygen",
+      "title": "Learn using Doxygen to generate documentation",
       "desc": "Write standardized documentation in your projects. You can generate a website, like with the Javadoc in Java.",
       "icon": "<i class=\"bi bi-newspaper\"></i>"
     },
     {
       "tag": "inno-setup",
       "name": "Inno Setup",
+      "title": "Generate modern installers with InnoSetup",
       "desc": "A tool to create Windows installers, with an uninstaller and a modern interface.",
       "icon": "<i class=\"bi bi-gear\"></i>"
     },
     {
       "tag": "unity-2d",
       "name": "Unity 2D",
+      "title": "Notes and tips about Unity for 2D games",
       "desc": "A gathering of notes about unity, focused on 2D knowledge.",
       "icon": "<i class=\"bi bi-journal-richtext\"></i>"
     }
