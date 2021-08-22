@@ -1,18 +1,18 @@
-# Make IT project
+# Make Git project
 
-This is not a course that is explaining to you "how to make an IT project", since even I don't fully understand that. But, this is a gathering of
+This course is a follow-up of [make a project](../make-a-project/index.md). We will talk about a lot of files used in GIT repositories, and introduce other courses such as HMI, Design Patterns, Code guidelines, Tests, etc.
+
+This is not only a course that is explaining to you "how to make a Git project", since I wanted to add knowledge for IT project too. This is a gathering of
 
 * explanations about the most used files in GIT
 * explanations about courses that you might want to look at
-* a lot of tips about IT projects (versioning, ...)
+* a lot of tips about IT (and Git) projects (versioning, ...)
 
 This is focused on providing help for open-source projects, but I'm sure that you'll be able to tell what you can do (or not) according to what kind of project you're doing.
 
 <hr class="sl">
 
 ## About other courses
-
-If you are planning to make a project, you should consider a version-control tool. The most-used one is **GIT**.
 
 If you are planning to make a project with a team, you should also look at **AGILE-SCRUM** methodology (or Agile methodologies), to replace the traditional V-Model.
 
@@ -25,7 +25,7 @@ If you are planning to make something clean, and well-made, then you should look
 * **HMI**: carefully think about your interface
 * **Frameworks**: frameworks that are **actively maintained** might help you save time, while making your code more maintainable and secure
 
-And finally, you should look for the **project management course**, as it explains things like "how to write specifications".
+And finally, you should look at the **project management course** (namely "Make a project"), as it explains things like "how to write specifications", or how you can organize your project.
 
 <hr class="sr">
 

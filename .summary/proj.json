@@ -24,10 +24,10 @@
       "icon": "<i class=\"bi bi-archive\"></i>"
     },
     {
-      "tag": "make-it-project",
-      "name": "Make IT project",
-      "title": "How to make an IT project",
-      "desc": "A gathering of everything related to IT projects and their management.",
+      "tag": "make-git-project",
+      "name": "Make Git project",
+      "title": "How to make a Git project",
+      "desc": "A gathering of everything related to Git projects and their management.",
       "icon": "<i class=\"bi bi-archive\"></i>"
     },
     {
