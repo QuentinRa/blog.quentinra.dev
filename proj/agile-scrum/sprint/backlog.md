@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-It's usually a board with post-its. You may do it online, and if you do, we are mainly using one of these tools (all free)
+It's usually a board with post-its. We have 3 columns (todo, in-progress, and done), and we are moving the post-its/cards from one column to another. You may do it online, and if you do, we are mainly using one of these tools (all free)
 
 * [Trello](https://trello.com/)
 * [GitHub](https://github.com/features/project-management)

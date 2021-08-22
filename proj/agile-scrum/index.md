@@ -1,6 +1,6 @@
 # Agile Scrum
 
-Agile Scrum is an agile method that may be used for conducting a project.
+Agile Scrum is an agile method that may be used for conducting a project. This is one of the most well-known alternatives to the traditional V-Model.
 
 The client will give you some specifications, called **product backlog**, to the one that will interact with him, called **product owner**. Your goal will be to create from these specifications the minimum to have a project that is working.
 
