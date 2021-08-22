@@ -1,13 +1,29 @@
 # Change Log
 
-## v5.5.0 (2021-08-21)
+## v5.6.0 (2021-08-22)
+
+**Changed**
+
+* `seo`: replacing h4 by h2 for courses in the list of courses
+* `seo`: the titles and the descriptions of the pages displaying a list of courses, are now inside the JSON
+* `seo`: the description of each file of a course, including the main page, is now generated from the first line of the course. The default value is the course description.
+
+**Fixed**
+
+* `seo`: fixing headers missing for the associated meta tag
+  * Canonical link
+  * X-Robots-Tag
+* `internal`: after successfully editing a course, you were sent to the wrong page
+* `rendering`: I corrected the message shown if you tried to bypass the captcha, in the JavaScript (the server will kick you without a message)
+
+## v5.5.0 (2021-08-20)
 
 The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 
 **Added**
 
 * `feature`: replacing style.css by style.css.min
-* `feature`: adding more backup in references
+* `feature`: backing new websites in references
 * `feature`: you can now use Markdown Tables
 * `feature`: adding the pages about, privacy policy, and terms of services
 * `features`: you can preview the latex inside the web editor
@@ -17,7 +33,7 @@ The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 
 **Changed**
 
-* `seo`: cleaning and remove useless css
+* `seo`: cleaning and remove useless CSS
 * `seo`: improving caching
 * `seo`: moving to HTTP2.0
 * `feature`: we are now using both Grammarly and LanguageTool to check for typos
@@ -31,14 +47,14 @@ The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 
 **Added**
 
-* `feature`: some website are now backed in memorize-references
+* `feature`: backing new websites in memorize-references
 * `seo`: make titles longer, adding an invisible h1 if a page didn't have one (:D)
 
 **Fixed**
 
-* `internal`: fixing the broken page (500) when an almost-valid url was submitted
+* `internal`: fixing the broken page (500) when an almost-valid URL was submitted
 * `seo`: do not index refs.md
-* `seo`: some page were having the wrong description
+* `seo`: some pages were having the wrong description
 
 ## v5.4.1 (2021-08-10)
 
@@ -46,8 +62,8 @@ The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 
 * `rendering`: we are showing a small icon right after each header to get a permalink to it
 * `seo`: almost all pages have a proper title
-* `seo`: almost all pages have a canonical url
-* `seo`: we added a cache control header
+* `seo`: almost all pages have a canonical URL
+* `seo`: we added a cache-control header
 * `seo`: adding a sitemap
 
 **Changed**
@@ -57,8 +73,8 @@ The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 
 **Fixed**
 
-* `rendering`: remade of the 404 page
-* `internal`: the 404 page is now returning 404 (not found) instead of 200 (ok) as it was supposed to be
+* `rendering`: remade of the page "404 - not found"
+* `internal`: the page "404 - not found" is now returning 404 (not found) instead of 200 (ok) as it was supposed to be
 * `seo`: removing broken links
 
 ## v5.4.0 (2021-08-05)
@@ -88,7 +104,7 @@ The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 
 * `rendering`: we are randomly picking an image as the background
 * `rendering`: the code inside a dark table is now properly rendered
-* `seo`: adding apple touch icon
+* `seo`: adding apple-touch icons
 
 ## v5.3.1 (2021-07-29)
 
@@ -117,7 +133,7 @@ The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 
 **Added**
 
-* `feature`: adding a Search bar.
+* `feature`: adding a search bar.
 * `rendering`: enabling task list in Markdown.
 
 **Change**
@@ -134,7 +150,7 @@ The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 
 **Fixed**
 
-* `rendering`: a link inside a blockquote is not anymore almost transparent.
+* `rendering`: the links inside a blockquote were almost transparent, they are more visible now.
 
 ## v5.0.1 (2021-05-22)
 
@@ -148,7 +164,7 @@ The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 
 ## v5.0.0 (2021-05-19)
 
-I moved from ReadTheDocs, and the domains learngo/memorize. The courses aren't in RST, and I'm planning to make things easier for anyone who want to contribute.
+I moved from ReadTheDocs, and the domains learngo/memorize. The courses aren't in RST, and I'm planning to make things easier for anyone who wants to contribute.
 
 - The website is now in `Markdown`,
 - The domain is now `memorize.lgs-games.com`,
@@ -156,6 +172,6 @@ I moved from ReadTheDocs, and the domains learngo/memorize. The courses aren't i
   - We can edit a course from the website.
   - Only the courses are hosted on GitHub.
   - I'm using GitHub API to get a course.
-  - I'm using League/CommonMark to parse a course .
+  - I'm using League/CommonMark to parse a course.
 - I'm using Grammarly to check the courses.
 - The courses are in English.
