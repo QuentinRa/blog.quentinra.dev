@@ -67,6 +67,7 @@ Last updated: 2021-08-18
 * [ ] adding file history
 * [ ] review .summary
 * [ ] check the description for sub pages
+* [ ] check the titles for sub pages
 </details>
 
 <br>
