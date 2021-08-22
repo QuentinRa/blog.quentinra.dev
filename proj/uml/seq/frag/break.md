@@ -1,6 +1,8 @@
-# break
+# break fragment
 
 [Go back](../index.md)
+
+You can use the fragment "break", to interrupt the execution of the block, or the program if this is the last block.
 
 This fragment 
 

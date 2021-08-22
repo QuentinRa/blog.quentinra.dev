@@ -1,8 +1,8 @@
-# alt (=alternatives) and opt (= optional)
+# alt and opt fragments
 
 [Go back](../index.md)
 
-<kbd>alt</kbd> allows us to use a **if else**, and <kbd>opt</kbd> a **if**.
+The fragment <kbd>alt</kbd> (=alternatives) allows us to use a **if else**, and <kbd>opt</kbd> (= optional) is allowing you to use a **if** in a sequence diagram.
 
 ![alt](../images/u-HqA2v9B2efpStXukHqpCbCJbNGjLDmoa-oKd0iBSb8pIl9J4uioSpFKmXABInDBIxX0gfBp2b1b_Nt1abmSW9rWWm0cuHXX6DoScf1IMeAI6bgJd4g4Lg2KjDAYw4wybA0f0EG0heM0000.png)
 

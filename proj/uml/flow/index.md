@@ -2,13 +2,13 @@
 
 [Go back](../index.md)
 
+This is a diagram representing all the states of the program and the conditions/triggers allowing the program to move from one state to another.
+
 We are also calling it
 
 * Automaton (``automate``)
 * Activity diagram (``diagramme d’activités``)
 * state diagram (``diagramme d’état-transitions``)
-
-It's representing all the states of the program and the conditions/triggers allowing the program to move from one state to another.
 
 <hr class="sr">
 

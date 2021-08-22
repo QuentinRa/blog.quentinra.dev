@@ -1,10 +1,12 @@
-# par (parallel), seq (sequence), critical
+# par, seq, and critical fragments
 
 [Go back](../index.md)
 
-* <kbd>par</kbd> executes all blocs at the same time,
+You can use the fragments par, seq, and critical to create block of code that are working differently than the usual methods calls.
+
+* <kbd>par</kbd> (parallel) executes all blocs at the same time,
 * <kbd>seq</kbd> execute one block at a time,
-* and <kbd>critical</kbd> is used to wrap blocs of code that must be run without errors, otherwise the program can't continue running.
+* and <kbd>critical</kbd> (sequence) is used to wrap blocs of code that must be run without errors, otherwise the program can't continue running.
 
 Here is an example
 
