@@ -19,7 +19,7 @@ When dealing with images, you may want
   * resize one image (<https://www.resizepixel.com/>)
 * **convert**
   * a lot of JPGs to WebP (more than 10) <https://online-converting.com/image/>
-  * a PNG to a SVG <https://png-svg.com/>
+  * a PNG to an SVG <https://png-svg.com/>
   * otherwise, enter "xxx to yyy" to look for a converter from xxx to yyy
 
 <hr class="sr">

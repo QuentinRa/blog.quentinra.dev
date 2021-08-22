@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-If you're looking for extension to become more anonymous or simply extensions that telling you if a website is dangerous, then you're in the right place.
+If you're looking for an extension to become more anonymous or simply extensions that telling you if a website is dangerous, then you're in the right place.
 
 Here are some extensions you can use to check if a website seems legit (based on the users' feedback)
 

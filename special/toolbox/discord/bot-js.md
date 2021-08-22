@@ -2,11 +2,12 @@
 
 [Go back](..#discord)
 
-We are storring here tips and links to resources that will help you creating a Discord bot in JavaScript. 
+We are storing here tips and links to resources that will help you when making a Discord bot in JavaScript. 
 
 To use a Discord bot, you need to [create a bot](https://discord.com/developers/applications/me) and get your bot token. That's something private that should not be put on GitHub.
 
 ```js
+// based on v12
 const Discord = require('discord.js');
 const client = new Discord.Client();
 

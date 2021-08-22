@@ -1,8 +1,8 @@
-# Saving, converting, and/or Archiving
+# Saving, converting, and archiving files/websites
 
 [Go back](..)
 
-We are introducing here, some help about, how to save a page as PDF, converting a file, or achiving a website (either online, locally, or as a single HTML file).
+How to easily save a page as PDF, converting a file, or archiving a website (either online, locally, or saving each page as a single HTML file).
 
 <hr class="sl">
 
@@ -71,6 +71,7 @@ You can run the web server with ``archivebox server 0.0.0.0:8000`` and open ``ht
 
 * **me**
 
-After trying to use archive.org (but it's slow, and I'm looking for a file rather than this). I tried to use "ArchiveBox", but this was not too (taking too long to archive, too tiring to use). So now, I'm using [the SingleFile plugin](https://github.com/gildas-lormeau/SingleFile#install).
+After trying to use archive.org (but it's slow, and I'm looking for a file rather than this). I tried to use "ArchiveBox", but this was still not what I wanted (taking too long to archive, too tiring to use). 
 
-It's saving your website as one HTML file (like you should with CTRL-S) but you only have 1 file. And the result is better, like saving a website using CTRL-S makes the JavaScript executed each time you open the page, while this plugin is creating a fixed copy of what you saw when you asked for one.
+
+I'm  using [the SingleFile plugin](https://github.com/gildas-lormeau/SingleFile#install). It's saving a page as one HTML file (like you should with CTRL-S) but you only have 1 file. And the result is better, like saving a website using CTRL-S makes the JavaScript executed each time you open the page (and sometimes the pages are not properly rendered), while this plugin is creating a fixed copy of what you saw when you asked for one.
