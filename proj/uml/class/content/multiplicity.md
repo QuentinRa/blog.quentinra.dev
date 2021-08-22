@@ -2,12 +2,16 @@
 
 [Go back](../index.md)
 
+Since the relationship between two classes is defined by an association, we are simply adding the multiplicity's value to it.
+
 ![Multiplicity](../images/Syv9B2vsL53AKr1IqDLLKCe5qiuWCIS5Ao0pBp4tLGa0.png)
 
-Note that here
+You should read here that
 
 * <kbd>m</kbd> is a value representing the number of instances of the class **A** interacting with an object of the class **B**
 * <kbd>n</kbd> is a value representing the number of instances of the class **B** interacting with an object of the class **A**
+
+And, yeah, the number is on the opposite side.
 
 <hr class="sl">
 

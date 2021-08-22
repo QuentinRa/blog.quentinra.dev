@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-As you memorized, you can't generalize more than one class. If you want to make sure a class has some operations, then you should use interfaces, because **a class can implement many interfaces**. <span class="tms">(A class $C$ implementing an interface $I$ means that $C$ is inheriting $I$)</span>
+As you memorized, you can't generalize more than one class. If you want to make sure a class has some operations, then you should use interfaces, because **a class can implement many interfaces** <span class="tms">(a class $C$ implementing an interface $I$ means that $C$ is inheriting $I$)</span>.
 
 An interface can only have
 

@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-You can use the fragments par, seq, and critical to create block of code that are working differently than the usual methods calls.
+You can use the fragments par, seq, and critical to indicate blocks of code that are working differently than usual.
 
 * <kbd>par</kbd> (parallel) executes all blocs at the same time,
 * <kbd>seq</kbd> execute one block at a time,

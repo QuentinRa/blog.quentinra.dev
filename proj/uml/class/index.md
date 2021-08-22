@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-A class diagram is used to represents classes and objects, in object-oriented languages. The database diagram is also quite similar to the class diagram so you will see this one a lot.
+A class diagram is used to represent classes and objects, in object-oriented languages. The database diagram is also quite similar to the class diagram, so you will see this one a lot.
 
 ![class](images/NS-n2i903CRn_PxYuoP572gu59NY8YxYAyGQsugNEtAfuDjRgKDrpEzF8AcoaLeV7kxCcgEWn08Dspwg76Ks7-PER1gfuNzSujPfDg709PwaTKiwhR_1nSkTQuFVzBi3XK0Ub94AvrA14abPOi0M_jI7rBxyo5yR5qRwN3BGQkrTnN8TddW3.png)
 

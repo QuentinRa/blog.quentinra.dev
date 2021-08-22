@@ -2,7 +2,7 @@
 
 [Go back](index.md)
 
-You don't have a lot of types in UML, but people are adding a lot of types according to what they want, so here is a list of types you may find
+Natively, you don't have a lot of types in UML, but people are adding a lot of types according to what they want, so here is a list of types you may find
 
 | Type | Description |
 | ------ | ------ |

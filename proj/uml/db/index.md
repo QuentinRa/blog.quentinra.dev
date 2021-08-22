@@ -2,7 +2,9 @@
 
 [Go back](../index.md)
 
-A database diagram is a simplified **class diagram** with some minor changes. If you don't understand this diagram (aside from the underlined attribute)
+A database diagram is a simplified **class diagram** with some minor changes. If you are looking for a way to create a SQL database or a NoSQL database from the diagram, please refer to the SQL (resp. NoSQL) course.
+
+If you don't understand this diagram (aside from the underlined attribute)
 
 ![person-job](images/SoWkIImgAStDuKhEIImkLWX8BIhEprEevbAmARNBJB5IoCmhuLB8IynDjL88BYdAp4ldgkM2Ab8oqDFJKb1IqDE3CxtoanIi5ChpYxAv75BpKe3c0W00.png)
 
