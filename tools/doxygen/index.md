@@ -1,5 +1,7 @@
 # In this course
 
+Doxygen is working like the Javadoc, the JSDoc, or a lot of tools allowing you to write documentation and generate a website from it. Doxygen is covering a lot of languages such as C, C++, C#, Java, PHP, and Python.
+
 * you will learn how to use write ``doxygen`` comments
 * how to generate documentation with `doxygen`,
   so how to write a ``Doxyfile``

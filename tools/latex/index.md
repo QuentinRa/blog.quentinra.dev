@@ -1,4 +1,6 @@
-# Latex
+# LaTeX
+
+You can use LaTeX to easily write documents such as reports, presentations or even resumes. This is also quite convenient to write math inside a document or a website.
 
 In this course, you will learn
 

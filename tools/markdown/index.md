@@ -171,7 +171,7 @@ And you can write comments with this syntax
 [//]: # (This may be the most platform-independent comment)
 ```
 
-This is a normal code block, but this is a particular case, it's used a lot in documentation to show "what you could do before" and "what you need to do now".
+This is a normal code block, but this is a particular case, **it's used a lot in documentation** to show "what you could do before" and "what you need to do now".
 
 <pre><code class="language-markdown"
 >```diff
@@ -218,18 +218,18 @@ And here are some HTML tags you may use
 
 | Markdown | HTML |
 | ------ | ------ |
-| \#\# Title | &lt;h2&gt;title&lt;/h2&gt; |
-| \*\*bold\*\* | &lt;b&gt;bold&lt;/b&gt;|
-| \*italic\* | &lt;i&gt;bold&lt;/i&gt;|
-| \~\~crossed text\~\~ | &lt;s&gt;strike-through&lt;/s&gt;|
-| a list | &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; |
-| \`code\` | &lt;code&gt;code&lt;/code&gt; |
-| code-block | &lt;pre&gt;&lt;code&gt;code&lt;/code&gt;&lt;/pre&gt; |
-| \[link](url)|&lt;a href="url"&gt;link&lt;/a&gt;|
-| \!\[alt](url)|&lt;img src="url" alt="alt"&gt;|
-| \> text | &lt;blockquote&gt;text&lt;/blockquote&gt; |
-| \--- | &lt;hr&gt; |
-| new line | &lt;br&gt; |
+| \#\# Title | <h2>title</h2> |
+| \*\*bold\*\* | <b>bold</b>|
+| \*italic\* | <i>bold</i>|
+| \~\~crossed text\~\~ | <s>strike-through</s>|
+| a list | <ul>, <ol>, and <li> |
+| \`code\` | <code>code</code> |
+| code-block | <pre><code>code</code></pre> |
+| \[link](url)|<a href="url">link</a>|
+| \!\[alt](url)|<img src="url" alt="alt">|
+| \> text | <blockquote>text</blockquote> |
+| \--- | <hr> |
+| new line | <br> |
 
 <hr class="sl">
 

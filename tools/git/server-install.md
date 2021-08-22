@@ -1,13 +1,10 @@
-# Introduction: server-side
+# Server-side setup
 
 [Go back](index.md#introduction)
 
-We will strongly refer to ``GitHub`` but these things are the same everywhere
-
 A repository is a project (literally, this is a directory) where you will store your code. You usually put a ``README.md`` file in it, written in ``Markdown`` to describe your project.
 
-Here is the official tutorial to [create a repository](https://docs.github.com/en/github/getting-started-with-github/quickstart/create-a-repo)
-.
+We will strongly refer to ``GitHub`` but these things are the same everywhere. Here is their official tutorial to [create a repository](https://docs.github.com/en/github/getting-started-with-github/quickstart/create-a-repo).
 
 Then, before we continue, you have 2 choices
 
