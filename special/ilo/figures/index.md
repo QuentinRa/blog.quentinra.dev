@@ -14,6 +14,8 @@ This TP is an example of what we call "test-driven". You will first write tests,
 
 That's one hell of a job because there are too many comments, and sometimes you don't know exactly what you need to do. Do it step by step, and you will see that's easy (at least not that hard, take your time).
 
+The subject [is hosted here](https://github.com/memorize-code/memorize-references/raw/main/special/ilo/TP-Figures.zip).
+
 <hr class="sl">
 
 ## Choose your IDE

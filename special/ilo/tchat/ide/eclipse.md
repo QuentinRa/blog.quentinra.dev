@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-This page is supposed to help you if you're having issues while installing JavaFX and SceneBuilder in Eclipse. If you don't know were to start, you must follow the [official tutorial](https://openjfx.io/openjfx-docs/#IDE-Eclipse). 
+This page is supposed to help you if you're having issues while installing JavaFX and SceneBuilder in Eclipse. If you don't know where to start, you must follow the [official tutorial](https://openjfx.io/openjfx-docs/#IDE-Eclipse). 
 
 You may add notes below if needed,
 

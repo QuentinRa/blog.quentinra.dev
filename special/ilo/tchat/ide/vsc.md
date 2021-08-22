@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-This is a tutorial helping installing JavaFX in VSCode. You're supposed to install SceneBuilder by yourself as we we use them separatly. This tutorial was made [from this video](https://www.youtube.com/watch?v=H67COH9F718). It didn't work for us, but it greatly helped.
+This is a tutorial helping you in setting up JavaFX in VSCode. You're supposed to install SceneBuilder by yourself, as we are using them separately. This tutorial was made [from this video](https://www.youtube.com/watch?v=H67COH9F718). It didn't work for us, but it greatly helped.
 
 * install JavaFX plugin
 * `View > command palette`

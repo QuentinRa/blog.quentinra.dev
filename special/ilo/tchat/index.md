@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-This is the last job you will have to make. You will have to answer questions, then wait. When JavaFX is introduced, you'll get the second part which is including coding an interface (FXML) and write Controller.java. If you have some knowledge about Java, you might make it in 8 to 12 hours.
+This is the last job you will have to make. You will have to answer questions, then wait. When JavaFX is introduced, you'll get the second part, which is mainly made of coding an interface (FXML) and writing Controller.java. If you have some knowledge about Java, you might make it in 8 to 12 hours.
 
 First, the TP is in two parts
 
