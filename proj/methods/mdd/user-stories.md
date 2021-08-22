@@ -1,6 +1,10 @@
-# User stories
+# User stories - Model-driven
 
 [Go back](..)
+
+We will make a lot of small stories about our application, to extract every functionality that we will have to code.
+
+<hr class="sl">
 
 Make stories about usages of your application like
 

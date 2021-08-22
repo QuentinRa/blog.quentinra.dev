@@ -1,5 +1,7 @@
 # Code guidelines
 
+Guidelines are used to make your code more maintainable. They are including naming conventions, styling conventions, or everything related to the project. You will learn about famous mnemonics such as SOLID, DRY, YAGNI, and KISS.
+
 You may have learned in other courses that we have
 
 * methods: test-driven, model-driven, ...
@@ -22,7 +24,7 @@ I think you should really consider using frameworks and tools created by other d
 + broaden your horizons (since you will learn how someone else tackled your need)
 + reduce the maintainer workload (since another maintainer would deal with the framework)
 + it should reduce your workload too (since you should have less code to write)
-+ reduce the complexity of your code (if not, pick another or publish your own)
++ reduce the complexity of your code (if not, pick another or publish your own framework)
 ```
 
 Aside from that
