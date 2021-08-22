@@ -58,8 +58,7 @@ Last updated: 2021-08-18
 * [ ] edit: add enable/disable side-by-side
 * [ ] edit: maybe change ReCaptcha to hCaptcha or ReCaptcha v3?
 * [ ] edit: replace icons by Bootstrap icons?
-* [ ] add pull request template
-* [ ] day-night mode
+* [ ] add a pull request template
 * [ ] advanced search? (inside a course/category)
 * [ ] actions? typos
 * [ ] date in sitemap.xml => full + UTC

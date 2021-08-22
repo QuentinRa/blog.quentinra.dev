@@ -2,6 +2,10 @@
 
 ## v5.6.0 (2021-08-22)
 
+**Added**
+
+* `feature`: dark mode with Dark reader 🐱‍👤
+
 **Changed**
 
 * `seo`: replacing h4 by h2 for courses in the list of courses
@@ -14,7 +18,7 @@
   * Canonical link
   * X-Robots-Tag
 * `internal`: after successfully editing a course, you were sent to the wrong page
-* `rendering`: I corrected the message shown if you tried to bypass the captcha, in the JavaScript (the server will kick you without a message)
+* `rendering`: I corrected the message shown if you forgot the captcha
 
 ## v5.5.0 (2021-08-20)
 
