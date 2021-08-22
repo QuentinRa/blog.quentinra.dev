@@ -7,7 +7,7 @@ To write tests, you need to find the parts of your code that needs to be tested,
 So in this course, you will see
 
 * the theory behind tests
-* contact-programming methodology
+* design by contract (Contract programming)
 * defensive-programming
 * **test-driven** and behavior-driven development
 * how to find tests
@@ -42,9 +42,9 @@ You are writing some code while making the contract with the caller that
 
 So you might see one of these words often
 
-* **preconditions**: the conditions that must be valid before the call (attributes, parameters, ...)
-* **postconditions**: the conditions that will be valid after the execution of our code
-* **invariant**: something that won't be changed <span class="tms"> (ex: when counting elements in a list, the size of the list before and after the call must be the same).<span>  
+* **Preconditions**: the conditions that must be valid before the call (attributes, parameters, ...)
+* **Postconditions**: the conditions that will be valid after the execution of our code
+* **Invariant**: something that won't be changed <span class="tms"> (ex: when counting elements in a list, the size of the list before and after the call must be the same).<span>  
 
 You will have to remember these while analyzing your code to find some tests. The robustness of a function is determined by the number of preconditions that you verified to make sure that, in all cases, your preconditions are valid, so your code did its job.
 

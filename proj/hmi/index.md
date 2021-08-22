@@ -1,4 +1,4 @@
-# HMI
+# Human-machine interfaces
 
 Human-machine interfaces (`IHM = Ìnterfaces Homme-machine`) are interfaces connecting the interactions between humans and machines. For instance, this could be a program or a website.
 
@@ -10,18 +10,19 @@ You must think a lot about how you should create one, and that's the purpose of 
 
 You will need
 
-* to think about where you put the elements of your interfaces, by creating `wireframes` * you will need to think about what elements you need in your interfaces
+* to think about where you put the elements of your interfaces, by creating `wireframes` 
+* you will need to think about what elements you need in your interfaces
 * you must think about how you will sort things like your menus to make them simple and intuitive
   
 A wireframe is literally a frame of your application, you can draw it by yourself or use tools like
 
 * PowerPoint (no, don't)
-* [diagrams](https://app.diagrams.net/)
-* [sketch](https://www.sketch.com/) (macOS)
+* [Diagrams](https://app.diagrams.net/)
+* [Sketch](https://www.sketch.com/) (macOS)
 * Photoshop (paid, for professionals)
 * [Justinmind](https://www.justinmind.com/) (trial available but paid, **the best of all**)
-* [moqups](https://moqups.com/) (**the best for free**, account required)
-* or simply in HTML using Bootstrap, simple and efficient (**my favorite alternative**)
+* [Moqups](https://moqups.com/) (**the best for free**, account required)
+* Or simply in HTML using Bootstrap, simple and efficient (**my favorite alternative**)
 
 You can use this great website to think about menus or make optimal choices : [optimalworkshop](https://www.optimalworkshop.com/).
 
@@ -31,43 +32,43 @@ You can use this great website to think about menus or make optimal choices : [o
 
 Before coding some application, you must think about what kinds of persons will use it
 
-* language/country
-* age
-* color-blind, partially sighted ...
-* culture
-* devices (computer? keyboard? mouse?)
-* screen orientation, the size on tablet/phone
-* day/night mode
-* knowledge about computer/...
-* illiterate?
+* Language/country
+* Age
+* Color-blind, partially sighted ...
+* Culture
+* Devices (computer? Keyboard? Mouse?)
+* Screen orientation, the size on tablet/phone
+* Day/Night mode
+* Knowledge about computers/...
+* Illiterate?
 
 You can't make something that would be perfect for everyone, but try to make some categories of users and provide them an application, that would aim to satisfy most of their requests. For instance, you can 
 
-* make a website/app per country,
-* add a settings tab to enable the day/night mode,
-* think about the color-blind users when designing,
-* make your website/app responsive
+* Make a website/app per country,
+* Add a settings tab to enable the day/night mode,
+* Think about the color-blind users when designing,
+* Make your website/app responsive
 * ...
 
 <hr class="sl">
 
 ## Steps
 
-1. create some categories of users
-2. ask persons matching your categories where they would go to find XXX in the menus, ... to test your interface.
-3. create **UML**'s diagrams to formalize the interactions between the application and users
-4. make a static mock-up
-5. test your mock-up
-6. make a dynamic mock-up (links working, some code, ...)
-7. test again
+1. Create some categories of users
+2. Ask persons matching your categories where they would go to find XXX in the menus, ... to test your interface.
+3. Create **UML**'s diagrams to formalize the interactions between the application and users
+4. Make a static mock-up
+5. Test your mock-up
+6. Make a dynamic mock-up (links working, some code, ...)
+7. Test again
 
 OR you can follow my steps
 
-1. create a dynamic mock-up
-2. and repeat these steps
-    1. test and reviews by users
-    2. filter changes to be made 
-    3. implement one or more changes
+1. Create a dynamic mock-up
+2. And repeat these steps
+    1. Test and reviews by users
+    2. Filter changes to be made 
+    3. Implement one or more changes
 
 <hr class="sr">
 
@@ -75,7 +76,7 @@ OR you can follow my steps
 
 Jakob Nielsen wrote the **10 principles** that you should <s>MUST 😠</s> take into account.
 
-1. keep the user updated on what's happening
+1. Keep the user updated on what's happening
 
    > * if something is being loaded, ... tell it to the user.
    > * the user should know where he is (ex: which page?)
@@ -127,7 +128,7 @@ Jakob Nielsen wrote the **10 principles** that you should <s>MUST 😠</s> take 
 
 ## Last tips
 
-It may be better to load everything needed at the start of the application rather than using `lazy` practices and making the user wait a lot of times.
+It may be better to load everything needed at the start of the application, rather than using lazy practices and making the user wait a lot of times.
 
 A screen will most likely have more width than height, so you should exploit the width.
 
