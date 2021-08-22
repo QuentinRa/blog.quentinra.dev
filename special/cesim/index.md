@@ -49,9 +49,9 @@ At the end of the 4th turn, you will submit a report and have a grade. This grad
 
 **Planning**: read it and **don't forget** the deadlines :)
 
-**Manuals**: some documentation about the website, it may be useful for the report or the vocabulary
+**Manuals**: some documentation about the website. It may be useful when redacting the report or the vocabulary.
 
-**Results**: explained later, the results of each turn
+**Results**: explained later, the results of each turn.
 
 **Decisions**: take your decisions here
   * **Conditions du marché** : **READ IT**. You will have some information that may or not have an impact. Still, you can guess **how many clients** you will have. (if you see 2000 then you can expect at least 2500/3000 if you ratio price/quality is good. You can expect a lot more if your price is low (60-70$ is "low" for us))

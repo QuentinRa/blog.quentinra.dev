@@ -2,6 +2,10 @@
 
 [Go back](..#starting-your-web-project)
 
+You got some templates you may use later, in the web project. Aside from that, we are showing you the usual workflow for an HTML/CSS/JS project, but I doubt you will need that.
+
+<hr class="sl">
+
 ## Simple HTML-CSS-JS-only project
 
 If you are making an HTML-CSS-JS-only project, then the usual workflow is
