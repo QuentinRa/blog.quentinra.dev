@@ -1,6 +1,6 @@
 # Toolbox
 
-A lot of notes about a lot of things that can't be added to another course.
+A lot of notes about a lot of things that can't be added to another course. This include things link image editors/tools, converters, screen recorders, web hosting, discord-related stuff etc.
 
 <hr class="sr">
 

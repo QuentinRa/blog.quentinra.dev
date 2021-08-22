@@ -2,6 +2,12 @@
 
 [Go back](..)
 
+A bunch of tools, to create/edit images, to resize and convert them. There are also tools to find the "sauce" of a manga or handling GIFs.
+
+<hr class="sl">
+
+## Tools
+
 When dealing with images, you may want
 
 * **create/edit**

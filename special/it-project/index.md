@@ -1,8 +1,6 @@
 # IT Project - ENSIIE
 
-This is a review of the **IT Project** that we are making during the **second semester** at the **ENSIIE engineering school**.
-
-You will have to follow a lot of directives to make a Game in C, in a group of 4.
+This is a review of the **IT Project** that we are making during the **second semester** at the **ENSIIE engineering school**. You will have to follow a lot of directives to make a Game in C, in a group of 4.
 
 * ``lot_a``: create the `.h` files
 * ``lot_b``: make the game (v1)
