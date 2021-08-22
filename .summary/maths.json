@@ -1,6 +1,6 @@
 {
   "title": "Mathematical courses - Probabilities, Statistics, Optimization, R",
-  "description": "Learn about probabilities, statistics, optimization, Logic with examples in R. We are also providing courses about Numerical analysis, matrices, and graphs.",
+  "description": "Learn about probabilities, statistics, optimization, logic with examples in R. We are also providing courses about Numerical analysis, matrices, and graphs.",
   "courses": [
     {
       "tag": "optimization",
@@ -48,7 +48,7 @@
       "tag": "graph",
       "name": "Graph theory",
       "title": "Learn Graph theory",
-      "desc": "Graph are used to solve problems (find the shortest path, an Eulerian path, etc.) or in GraphDatabases (Facebook, ...).",
+      "desc": "Graph are used to solve problems (find the shortest path, an Eulerian path, etc.) or in graph databases (Facebook, ...).",
       "icon": "<i class=\"bi bi-bezier\"></i>"
     },
     {

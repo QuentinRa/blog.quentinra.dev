@@ -1,6 +1,6 @@
 {
   "title": "Project-related courses - UML, HMI, Tests, Guidelines",
-  "description": "Anything you might need to make a project, especially an IT project. You course got about interfaces (HMI), diagrams (UML), methodologies, guidelines, design patterns, and tests.",
+  "description": "Anything you might need to make a project, especially an IT project. You got courses about interfaces (HMI), diagrams (UML), methodologies, guidelines, design patterns, and tests.",
   "courses": [
     {
       "tag": "hmi",

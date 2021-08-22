@@ -1,6 +1,6 @@
 {
   "title": "Special courses - ENSIIE-related courses",
-  "description": "A lot of ENSIIE-related courses such as CESIM, PWR, ILO, IT PROJECT, ... We are also providing a lot of tools and links in the Toolbox (Safe browsing, Emojis, Typos, ...).",
+  "description": "A lot of ENSIIE-related courses such as CESIM, PWR, ILO, IT PROJECT, ... We are also providing a lot of tools and links in the Toolbox (Safe Browsing, Emojis, Typos, ...).",
   "courses": [
     {
       "tag": "ilo",
@@ -40,7 +40,7 @@
     {
       "tag": "toolbox",
       "name": "Toolbox",
-      "title": "Tools such as Safe browsing, File hosting, Website archiving",
+      "title": "Tools such as Safe Browsing, File hosting, Website archiving",
       "desc": "A lot of notes about a lot of things that can't be added to another course.",
       "icon": "<i class=\"bi bi-truck\"></i>"
     }

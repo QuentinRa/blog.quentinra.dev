@@ -19,7 +19,7 @@
     {
       "tag": "jetbrains",
       "name": "JetBrains",
-      "title": "Learn JetBrains IDEs such as Intellij, PHPStorm, and CLion",
+      "title": "Learn JetBrains IDEs such as IntelliJ, PHPStorm, and CLion",
       "desc": "Make your programming life easier by coding inside powerful preconfigured IDEs.",
       "icon": "<i class=\"bi bi-battery-charging\"></i>"
     },
@@ -46,7 +46,7 @@
     },
     {
       "tag": "latex",
-      "name": "LaTEx",
+      "name": "LaTeX",
       "title": "Learn how to write LaTeX",
       "desc": "A language used to write reports, create presentations quite easily and with great style. You may also use it to write math in a website/documents.",
       "icon": "<i class=\"bi bi-box\"></i>"
@@ -54,14 +54,14 @@
     {
       "tag": "doxygen",
       "name": "Doxygen",
-      "title": "Learn using Doxygen to generate documentation",
+      "title": "Learn Doxygen to generate documentation",
       "desc": "Write standardized documentation in your projects. You can generate a website, like with the Javadoc in Java.",
       "icon": "<i class=\"bi bi-newspaper\"></i>"
     },
     {
       "tag": "inno-setup",
       "name": "Inno Setup",
-      "title": "Generate modern installers with InnoSetup",
+      "title": "Generate modern installers with Inno Setup",
       "desc": "A tool to create Windows installers, with an uninstaller and a modern interface.",
       "icon": "<i class=\"bi bi-gear\"></i>"
     },
