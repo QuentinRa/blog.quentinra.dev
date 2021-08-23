@@ -62,6 +62,7 @@ Last updated: 2021-08-23
 * [ ] actions? typos
 * [ ] adding file history
 * [ ] adding submit issue
+* [ ] adding "back" on edit page
 * **Content**
 * [ ] Index Google/Bing
 * [ ] add a pull request template
