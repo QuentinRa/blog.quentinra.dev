@@ -2,9 +2,11 @@
 
 [Go back](..)
 
-Simply a line of your matrix.
+Individuals are the lines of your matrix.
 
-In **R** you can
+<hr class="sr">
+
+## Individuals in R
 
 ```r
 # get the first individual

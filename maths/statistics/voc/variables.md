@@ -2,13 +2,9 @@
 
 [Go back](..)
 
-Columns of our matrix, basically the properties of the
-individuals we are observing. They
-can be **quantitative** ou **qualitative**.
+Variables are the columns of our matrix, basically the properties of the individuals we are observing. They can be **quantitative** or **qualitative**.
 
-A variable **quantitative** is a measurement, for instance
-if we took two values, we can subtract them (in order to compare
-them).
+A **quantitative** variable is a measurement, for instance, if we took two values, we can subtract them (to compare them).
 
 They usually follow a distribution
 
@@ -19,18 +15,17 @@ They usually follow a distribution
 ex: age, size, score, ...
 ```
 
-A variable **qualitative** (or catégorielles in French) 
-is the other kind of properties. This include
+A **qualitative** variable (``catégorielles``) is either
 
-* binary : take values like 0 or 1, true or false
-* ordered: sorted like easy < medium < hard
-* not ordered: the others
+* binary: taking values like 0 or 1, true or false
+* ordered: the values are sorted like easy < medium < hard
+* not ordered: the rest
 
 <hr class="sr">
 
-## in R
+## Variables in R
 
-In R, ``qualitative`` variables usually have the `factor` type.
+Qualitative variables are usually from the **factor** class.
 
 ```r
 # get information about the variable types
@@ -43,15 +38,11 @@ str(iris)
 #  $ Species     : Factor w/ 3 levels "setosa","versicolor",..: 1 1 1 1 1 1 1 1 1 1 ...
 ```
 
-A factor is basically a variable that got levels (the values),
-and you can order the levels.
+A factor is a variable that got levels (the unique values), and you can order the levels.
 
 ```r
 levels(iris$Species)
-# [1] "setosa"     "versicolor" "virginica" 
+# [1] "setosa" "versicolor" "virginica" 
 ```
 
-Here you can read that as ``"setosa" > "versicolor" > "virginica"``
-but that doesn't make sense here trough since
-this do not seems like an ordered qualitative
-variable.
+Here you can read that as ``"setosa" > "versicolor" > "virginica"``, but that doesn't make sense here, since this does not seem like an ordered qualitative variable.

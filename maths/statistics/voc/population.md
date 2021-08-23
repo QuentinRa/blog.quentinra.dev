@@ -2,15 +2,13 @@
 
 [Go back](..)
 
-That's most likely a ``matrix`` of individuals (i = rows)
-and variables (j = columns).
+That's most likely a ``matrix`` of individuals (i = rows), and variables (j = columns). For instance, we could have humans as individuals, and their size, age, ... as variables.
 
-For instance we could have humans (as individuals)
-and their size, age, ... as variables.
+<hr class="sl">
 
-In **R**, you can use the function ``data()``
-to look for a dataset and you could use ``data(name)``
-to load a dataset.
+## Dataset in R
+
+You can use the function ``data()`` to look for a dataset, and you could use ``data(name)`` to load a dataset.
 
 ```r
 # see all dataset
