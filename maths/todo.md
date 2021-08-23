@@ -27,6 +27,7 @@ leading/principal minor https://en.wikipedia.org/wiki/Minor_(linear_algebra).
   - https://garrettgman.github.io/
   - https://medium.com/@marin892/test-statistic-cheat-sheet-z-t-f-and-chi-squared-58f4d9db5b99
   - links and notes
+  - chi2
 - complexity
   - course?
   - note ANM

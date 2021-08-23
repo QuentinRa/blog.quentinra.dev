@@ -2,7 +2,9 @@
 
 [Go back](index.md#analysis-of-a-sample)
 
-In R, you can (replace [dist] by the distribution name in R)
+This is a summary of the functions used to generate distributions in R. The functions are starting with r/p/q/d followed by the name of the distribution in R.
+
+The values for [dist] will be given in the next section.
 
 * `r[dist]`: generate a distribution
 * `p[dist]`: $P(X \le k)$
@@ -13,8 +15,7 @@ In R, you can (replace [dist] by the distribution name in R)
 
 ## Well-known distributions
 
-The value for dist that we will use a lot are
-(note that n=number of observations)
+The values for [dist] that we will use a lot are
 
 * Bernoulli ($B(p0.5)$): ``rbinom(n=10,size=1,prob=0.5)`` (size is always 1 otherwise it's a binomial distribution)
 * Binomial ($B(n=5,p=0.5)$): ``rbinom(n=10,size=5,prob=0.5)``
@@ -28,8 +29,11 @@ The value for dist that we will use a lot are
 * Poisson: `rpois(n = 10, lambda = 0.05)`
 * Weibull: `rweibull(n = 10, shape = 2, scale = 2)`
 
-**NOTE**: specifing the parameters names IN NOT MANDATORY
-like ``rbinom(10, 1, 0.5)`` is working. This is up to you.
+<hr class="sr">
+
+## Notes
+
+**NOTE**: specifying the names of the parameters IS NOT MANDATORY like ``rbinom(10, 1, 0.5)`` is working. This is up to you.
 
 **NOTE (2)**: The call ``rbinom(n=10,size=1,prob=0.5)`` could be described as
 
@@ -48,6 +52,4 @@ s # <=> print(s)
 # [1] 1 0 0 1 1 0 1 1 1 1
 ```
 
-In the resulting vector, we can read that in the first experience,
-we got a success. In the second a failure, etc. A Bernoulli distribution
-is like flipping a coin if p=0.5 but if $p$ then the coin is a rigged coin.
+In the resulting vector, we can read that in the first experience, we got one success. In the second, we had a failure, etc. Bernoulli's distribution is like flipping a coin if p=0.5, and if $p \neq 0.5$ then the coin is a rigged coin.
