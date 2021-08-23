@@ -25,10 +25,10 @@ We are using a vector a zeros as the default value but I think in some cases you
 
 <hr class="sr">
 
-## Code this in R
+## Jacobi in R
 
-Here how you could see this in R code. You should check
-the convergence instead of doing ``n=10`` iterations.
+Here how you could see this in R code. We are checking
+the convergence with $\epsilon = 0.001$.
 
 ```r
 xnp1 <- function (x, y, z) { (12 - 2 * y - 2 * z) / 4  }
@@ -59,7 +59,7 @@ repeat {
 	if (sum(r < e) == 3) {
 		cat("End: k=", k, "\n");
 		cat("The result is\n")
-		cat(Xk)
+		cat(Xk, "\n")
 		break;
 	}
 	k <- k +1
@@ -83,8 +83,8 @@ Jacobi formula is
   \[
     \displaylines{
       \begin{align}\begin{aligned}
-    x^{k+1}
-    \Leftrightarrow D^{-1} * (L + U) * x^k + D^{-1} * b
+    x^{(k+1)}
+    \Leftrightarrow D^{-1} * (L + U) * x^{(k)} + D^{-1} * b
     \end{aligned}\end{align}
     }
   \]
@@ -98,5 +98,4 @@ with
 * L, a upper triangular matrix, multiplied by -1
 * U, a lower triangular matrix, multiplied by -1
 
-In other words, **A = D - L - U**. Beware of this before
-writing a formula, some are using plus instead of minus, but we multiplied L and U by $-1$.
+And, we must have **A = D - L - U** <span class="tms">(you may see **A = D + L + U** too, but the formula for $x^{(k)}$ is is different)</span>.

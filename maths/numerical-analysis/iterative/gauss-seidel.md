@@ -2,77 +2,76 @@
 
 [Go back](../index.md)
 
-Everything is the same as in Jacobi method so things won't
-be as explained. The only difference is that in Jacobi,
+The Gauss-Seidel method is very similar to the Jacobi method, but you don't way the end of the iteration to update, and use the new $X$.
 
-* when evaluating x,y,z,... at iteration ``i``
-* we used x,y,z,... values from the previous iteration
-* but **now** we are using the last recent value
-of our variable, meaning that If we just calculated x
-then we will use this value otherwise we are using
-the value of the previous iteration.
+<hr class="sl">
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>var</th>
-            <th>i = 0</th>
-            <th>i = 1</th>
-            <th>i = 2</th>
-            <th>...</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>x</td>
-            <td>0</td>
-            <td>xn+1(0,0,0) = -0.20</td>
-            <td>xn+1(-0.20,0.15,-0.50) = 0.17</td>
-            <td>...</td>
-        </tr>
-        <tr>
-            <td>y</td>
-            <td>0</td>
-            <td>yn+1(-0.20,0,0) = 0.15</td>
-            <td>...</td>
-            <td>...</td>
-        </tr>
-        <tr>
-            <td>z</td>
-            <td>0</td>
-            <td>zn+1(-0.20,0.15,0) = -0.50</td>
-            <td>...</td>
-            <td>...</td>
-        </tr>
-    </tbody>
-</table>
+## Using a table
+
+We are again solving this system, using **Gauss-seidel**
+method this time, starting with $X = (0,0,0)$.
+
+* $x_{n+1}(x, y, z) = \frac{12 - 2 * y - 2 * z}{4}$
+* $y_{n+1}(x, y, z) = \frac{-9 - 2 * x - 7 * z}{10}$
+* $z_{n+1}(x,y,z) = \frac{-20 - 2 * x - 7 * y}{21}$
+
+| var | i=0 | i=1 | i=2 | ... | $i\ge10$ |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| x | $x^{(0)} = 0$ | $X = (0,0,0)$ <br> $x^{(1)} = 3$ | $X = (3, -1.5, -0.738)$ <br> $x^{(2)} = 4.119$ | ... | $X = (?,?,?)$ <br> $x^{(10)} = 4$ |
+| y | $y^{(0)} = 0$ | $X = (3,0,0)$ <br> $y^{(1)} = -1.5$ | $X = (4.119, -1.5, -0.738)$ <br> $y^{(2)} = -1.207$ | ... | $X = (?,?,?)$ <br> $x^{(10)} = -1$ |
+| z | $z^{(0)} = 0$ | $X = (3,-1.5, 0)$ <br> $z^{(1)} = -0.738$ | $X = (4.119, -1.207, -0.738)$ <br> $z^{(2)} = -0.9428$ | ... | $X = (?,?,?)$ <br> $x^{(10)} = -1$ |
 
 <hr class="sr">
 
-## Code this in R
+## Gauss-seidel in R
 
-Here how you could see this in R code. You should check
-the convergence instead of doing ``n=10`` iterations.
+Here how you could see this in R code. We are checking
+the convergence with $\epsilon = 0.001$.
 
 ```r
 # our functions
-xnp1 <- function (y, z) { (-1 + 2 * y - 3 * z) / 5  }
-ynp1 <- function (x, z) { (2 + 3 * x - z ) / 9 }
-znp1 <- function (x, y) { (3 - 2 * x + y) / -7  }
+xnp1 <- function (x, y, z) { (12 - 2 * y - 2 * z) / 4  }
+ynp1 <- function (x, y, z) { (-9 - 2 * x - 7 * z) / 10 }
+znp1 <- function (x, y, z) { (-20 - 2 * x - 7 * y) / 21  }
 
 # initial values
-v <- c(0, 0, 0)
+n <- 3 # 3x3
+A <- matrix(c(4,2,2,2,10,7,2,7,21), nrow = n, ncol = n, byrow = TRUE)
+b <- c(12,-9,-20)
 
-# iterates
-for (i in 0:10) {
-  # use previous y and z
-  v[1] <- xnp1(y = v[2], z = v[3])
-  # use changed x and last z
-  v[2] <- ynp1(x = v[1], z = v[3])
-  # use changed x,y
-  v[3] <- znp1(x = v[1], y = v[2])
-  print(v)
+# vector of 0
+k <- 0
+Xk <- rep(0, each = n)
+# vector of 0.001
+e <- matrix(rep(0.001, each = n))
+
+repeat {
+	# update our vector of values
+	# use previous y and z
+	Xk[1] <- xnp1(y = Xk[2], z = Xk[3])
+	# use changed x and last z
+	Xk[2] <- ynp1(x = Xk[1], z = Xk[3])
+	# use changed x,y
+	Xk[3] <- znp1(x = Xk[1], y = Xk[2])
+
+	r <- abs((A %*% Xk) - b)
+	# each absolute value of R is lesser than 0.001
+	if (sum(r < e) == 3) {
+		cat("End: k=", k, "\n");
+		cat("The result is\n")
+		cat(Xk, "\n")
+		break;
+	}
+	k <- k +1
 }
+```
+
+The result is almost the exact value of $X = (4,-1,-1)$. The more we decrease epsilon, the more the result is converging.
+
+```r
+# End: k= 6
+# The result is
+# 4.000196 -1.000071 -0.9999951
 ```
 
 <hr class="sl">
@@ -84,7 +83,7 @@ Gauss-seidel formula is
   \[
     \displaylines{
       \begin{align}\begin{aligned}
-    x^{k+1} = (D-L)^{-1} * (b + U * x^{k})
+    x^{(k+1)} = (D-L)^{-1} * (b + U * x^{(k)})
     \end{aligned}\end{align}
     }
   \]
@@ -98,5 +97,4 @@ with
 * L, a upper triangular matrix, multiplied by -1
 * U, a lower triangular matrix, multiplied by -1
 
-In other words, **A = D - L - U**. Beware of this before
-writing a formula, some are using plus instead of minus.
+And, we must have **A = D - L - U** <span class="tms">(you may see **A = D + L + U** too, but the formula for $x^{(k+1)}$ is is different)</span>.
