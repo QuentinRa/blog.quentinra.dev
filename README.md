@@ -57,13 +57,13 @@ Last updated: 2021-08-18
 * [ ] edit: fix preview or disable it
 * [ ] edit: add enable/disable side-by-side
 * [ ] edit: maybe change ReCaptcha to hCaptcha or ReCaptcha v3?
-* [ ] edit: replace icons by Bootstrap icons?
 * [ ] add a pull request template
 * [ ] advanced search? (inside a course/category)
 * [ ] actions? typos
 * [ ] date in sitemap.xml => full + UTC
 * [ ] replace <code>````</code> by <code>``</code>
 * [ ] adding file history
+* [ ] adding submit issue
 * [ ] review .summary
 * [ ] check the description for sub pages
 * [ ] check the titles for sub pages
