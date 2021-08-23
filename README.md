@@ -40,7 +40,7 @@ If you want to edit a course, simply edit the ``.md`` file.
 
 ## TODO List 
 
-Last updated: 2021-08-18
+Last updated: 2021-08-23
 
 <details>
 <summary> <b>Website tasks</b></summary>
@@ -58,7 +58,6 @@ Last updated: 2021-08-18
 * [ ] Nested courses files should have the title of the nested course and not the nesting course (ex: UML)
 * **Features**
 * [ ] add commit authors (optional)
-* [ ] edit: maybe change ReCaptcha to hCaptcha or ReCaptcha v3?
 * [ ] advanced search? (inside a course/category)
 * [ ] actions? typos
 * [ ] adding file history
@@ -66,7 +65,6 @@ Last updated: 2021-08-18
 * **Content**
 * [ ] Index Google/Bing
 * [ ] add a pull request template
-* [ ] Check what's website structure
 * [ ] review .summary
 </details>
 
