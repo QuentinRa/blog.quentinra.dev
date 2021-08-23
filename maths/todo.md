@@ -26,6 +26,7 @@ leading/principal minor https://en.wikipedia.org/wiki/Minor_(linear_algebra).
   - https://www.math.sciences.univ-nantes.fr/~philippe/download/Aphilippe-MCviano-cours-stat-MIM.pdf
   - https://garrettgman.github.io/
   - https://medium.com/@marin892/test-statistic-cheat-sheet-z-t-f-and-chi-squared-58f4d9db5b99
+  - links and notes
 - complexity
   - course?
   - note ANM

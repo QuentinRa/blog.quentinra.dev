@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-This is the same as the GAUSS-seidel method, but you will change it a bit the equations. We are introducing a variable $\omega$ which is usually $1.1$.
+This is the same as the Gauss-Seidel method, but you will change it a bit the equations. We are introducing a variable $\omega$ which is usually $1.1$.
 
 Then, the formula to create the new functions is looking like this for $x_{n+1}$.
 
