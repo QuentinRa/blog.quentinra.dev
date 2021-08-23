@@ -22,11 +22,11 @@ This is **the worst of the worst** (maybe not, but...). For a matrix $A_n$, we a
 
 * calculate the determinant $d$ of $A$
   * for a 1x1 matrix, it's $a$
-  * for a 2x2 matrix, it's $ac-bd$
+  * for a 2x2 matrix, it's $ad-bc$
   * you may refer to matrix course if you don't remember
 * then for each column of your matrix $A$
   * replace a column with the vector $b$
-  * evaluates determinant, $d_x$ for the column of the variable $x$
+  * evaluates determinant, $d_x$ if you replaced the column of the variable $x$
   * then $x$ value would be $\frac{d_x}{d}$
 
 <hr class="sl">
@@ -85,7 +85,7 @@ cramer.solve <- function (A, b) {
 	if (n == 0) return(NULL)
 
 	# starting
-	x <- NULL
+	X <- NULL
 	d <- det(A)
 
 	for (i in 1:n) {
@@ -94,7 +94,7 @@ cramer.solve <- function (A, b) {
 		# replace the column
 		copy[,i] <- b
 		# add the result to our vector
-		x <- c(x, det(copy) / d)
+		X <- c(X, det(copy) / d)
 	}
 	return(x)
 }

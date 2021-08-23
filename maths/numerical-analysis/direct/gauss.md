@@ -2,6 +2,8 @@
 
 [Go back](../index.md)
 
+We are simply using GAUSS, as you did in the matrix course. We are stopping when the matrix is triangular, and switching to the method for triangular system (we could continue with GAUSS).
+
 <hr class="sl">
 
 ## About
@@ -109,7 +111,7 @@ As always, we got the same result: $X = (4,-1,-1)$.
 
 ## Gauss elimination in R
 
-This is not a function for GAUSS, but you got the same result as you would using GAUSS.
+This is not a function solving a matrix using GAUSS, but I didn't want to code it (you may add it).
 
 ```r
 A <- matrix(c(4,2,2,2,10,7,2,7,21), nrow = 3, ncol = 3, byrow = TRUE)
@@ -119,7 +121,7 @@ solve(A, b)
 # [1]  4 -1 -1
 ```
 
-You can find something better in the ``matlib`` library
+If you can install a library, then you got what you want in the ``matlib`` library.
 
 ```r
 library('matlib')

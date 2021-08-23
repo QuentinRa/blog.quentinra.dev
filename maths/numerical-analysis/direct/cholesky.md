@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-This is also called Cholesky decomposition.
+This is also called Cholesky decomposition. We are transforming our matrix A into two triangular matrices, L and L transpose. We are using them instead of solving the system with A.
 
 <hr class="sl">
 
@@ -16,7 +16,7 @@ The matrix must be
 * **symmetric** ($A = A^t$),
 * and **positive definite**.
 
-> As a side note, a matrix is **positive definite** if all of its **eigenvalues are positive**. It's may be hard, so another method is to check that every **minors** of A is greater than 0 (check the definite matrix section in the matrix course).
+> As a side note, a matrix is **positive definite** if all of its **eigenvalues are positive**. It may be hard, so another method is to check that every leading **minor** of A is greater than 0 (check the definite matrix section in the matrix course).
 
 * **Complexity**
 
@@ -58,7 +58,7 @@ l_{ij} = \frac{a_{ij} - \sum_{k=1}^{j-1} l_{ik} * l_{jk} }{a_{ii}}
 \]
 </p>
 
-This is the **our value** minus, the sum of the products of
+This is **our value** minus, the sum of the products of
 
 * the value of the **previous column same line**
 * by **the previous column of the previous line**
@@ -68,8 +68,9 @@ Then, we are dividing the result by the value on the diagonal.
 
 * **THEN THE GOAL Ax=b**
 
-Your first goal will be to get the matrix $L^t$, using the formulas. Once you do, transpose it and you will have $L$. Now, you got two jobs
+Your first goal will be to get the matrix $L^t$, using the formulas. Once you do, transpose it, and you will have $L$. Now, you got two jobs
 
+* we should have $A = L^t * L$
 * solve $Y$ in $L^t * Y = b$
 * then $X$ is the result of solving $L * X = Y$
 
@@ -135,7 +136,7 @@ L = \begin{pmatrix}
 \]
 </p>
 
-Now we will use **triangular factorization** with $L^t y = b$ and **solve y**.
+Now we will use **triangular factorization** with $L^t Y = b$ and **solve y**.
 
 <p>
 \[
@@ -147,13 +148,13 @@ Now we will use **triangular factorization** with $L^t y = b$ and **solve y**.
 \]
 </p>
 
-Giving us $y = (6, -5, -4)$
+Giving us $Y = (6, -5, -4)$
 
 * $x = 6$
 * $y = \frac{-9 -6}{3} = \frac{-15}{3} = -5$
 * $z = \frac{-20 -6 + 10}{4} = \frac{-16}{4} = -4$
 
-Now we are are solving $x$
+Now we are solving $X$
 
 <p>
 \[
@@ -165,7 +166,7 @@ Now we are are solving $x$
 \]
 </p>
 
-Giving us $x = (4,-1,-1)$
+Giving us $X = (4,-1,-1)$
 
 * $z = -4/4 = -1$
 * $y = \frac{-5--2}{3} = \frac{-3}{3} = -1$
@@ -178,7 +179,7 @@ We got the **same result** that we got when we used Cramer's rule, so we are goo
 
 ## Cholesky factorization in R
 
-Here the code in R
+Here is the code in R
 
 ```r
 A <- matrix(c(4,2,2,2,10,7,2,7,21), nrow = 3, ncol = 3, byrow = TRUE)

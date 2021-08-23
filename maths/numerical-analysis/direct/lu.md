@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-This is also called LU decomposition or LowerUpper decomposition.
+This is also called LU decomposition or LowerUpper decomposition. We are transforming our matrix A into two matrices L and U, which are both diagonal matrices. Then, we are solving the equation with LU instead of A.
 
 <hr class="sl">
 
@@ -20,10 +20,10 @@ The complexity is $O(\frac{2n^3}{3})$.
 
 ## Process
 
-You goal is to write $A = L * U$ with
+Your goal is to write $A = L * U$ with
 
 * $L$: a lower strict diagonal matrix
-* $U$: a upper diagonal matrix
+* $U$: an upper diagonal matrix
 
 It's quite easy. You will use the GAUSS elimination, but limited to this only one rule
 
@@ -34,9 +34,9 @@ L_i \leftarrow L_i - k * L_j
 </p>
 
 meaning you can only subtract a line by another line
-that will multiplied by k. Please **take note
-of all k values that you used**. You main job is starting
-from **U** and remove all values below the diagonal.
+that will be multiplied by k. Please, **note
+of all k values that you used**. Your main job is starting
+from **U**, and remove all values below the diagonal.
 U matrix should look like this one
 
 <div>
@@ -61,7 +61,10 @@ L_{3} = \begin{pmatrix}
 \]
 </div>
 
-Once you have these, to get $AX = b$, you need to ...
+Once you have these, to get $AX = b$, you need to
+
+* solve $Y$ in $LY = b$
+* then, you got $X$ by solving $UX = Y$
 
 <hr class="sr">
 
@@ -139,7 +142,7 @@ As we did for Cholesky, we are solving $LY=b$
 * $y = -9 - \frac{12}{2} = -15$
 * $z = -20 - \frac{12}{2} + \frac{2*15}{3} = -16$
 
-So we have $Y = (12,-15,-16). And $UX=y$
+So we have $Y = (12,-15,-16)$. And now, we are solving $UX=Y$
 
 * $z = \frac{16}{-16} = -1$
 * $y = \frac{-15 +6}{9} = -1$
@@ -151,7 +154,7 @@ Giving us $X = (4,-1,-1)$, as we expected.
 
 ## LU factorization in R
 
-Here the code in R
+Here is the code in R
 
 ```r
 A <- matrix(c(4,2,2,2,10,7,2,7,21), nrow = 3, ncol = 3, byrow = TRUE)

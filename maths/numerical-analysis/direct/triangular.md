@@ -1,6 +1,8 @@
-# Triangular system
+# Triangular systems
 
 [Go back](../index.md)
+
+This method is quite easy, and probably one of the most useful, as the other methods are splitting the matrix A into two triangular matrices since this is more efficient.
 
 <hr class="sl">
 
@@ -54,7 +56,7 @@ S = \begin{pmatrix}
 \]
 </p>
 
-We are considering the variables x, y, z, respectively the 1rst, 2nd and 3rd columns.
+We are considering the variables x, y, z, respectively the 1rst, 2nd, and 3rd columns.
 
 * $6z = 6$ so $z = 1$
 * $4 y + 5 z = 3 \Leftrightarrow y = (3 - 5*1) / 4$ so $y  = -0.5$
