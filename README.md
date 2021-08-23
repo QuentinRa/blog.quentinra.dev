@@ -58,7 +58,6 @@ Last updated: 2021-08-18
 * [ ] add a pull request template
 * [ ] advanced search? (inside a course/category)
 * [ ] actions? typos
-* [ ] date in sitemap.xml => full + UTC
 * [ ] replace <code>````</code> by <code>``</code>
 * [ ] adding file history
 * [ ] adding submit issue
