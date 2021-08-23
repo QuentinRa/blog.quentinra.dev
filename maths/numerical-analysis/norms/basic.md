@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-We got 3 different notations for **norms** according to what is inside the $||$
+A norm is a measure of an error. We got 3 different notations for **norms** according to what is inside the vertical bars.
 
 <ul>
     <li>\(\mid  \cdot \mid \) : norm of a real/complex</li>
@@ -66,7 +66,7 @@ another one, then here is some help
 * <span>
     \(
         \rho(A) \le ||A||
-    \)</span> <span class="tms">(rho is the highest eigen value)</span>
+    \)</span> <span class="tms">(rho is the highest eigenvalue)</span>
 * <span>
     \(
         ||Ax|| \le |||A||| * ||x||

@@ -1,4 +1,5 @@
 # Numerical analysis
+The goal of this course is to solve a system on a computer. We will use matrices, and try to solve AX=b. We will have a lot of methods, and we will see their requirements, their implementation in R, and their complexity.
 
 The main goal of this course is to solve **AX=b** (find the vector $X$, given a matrix $A$ and a resulting vector $b$) on a computer. You will learn
 
@@ -14,7 +15,7 @@ Most of this course will use **R language** to provide an example of how you cou
 
 ## Note before starting
 
-A lot of times, we are using $x$ like $Ax=b$, but $x$ is a vector so it's quite disturbing when you are later introducing a variable $x$. I tried replacing $X$ by $x$, when it makes things more readable.
+A lot of times, we are writing $Ax=b$, but $x$ is a vector, so it's quite disturbing when you are later introducing a variable $x$. I tried replacing $X$ with $x$, when it makes things more readable.
 
 <div>
 \[
@@ -46,9 +47,9 @@ z \\
 \]
 </div>
 
-And the solution is $X = (4,-1,-1)$. If you're checking, $A * X$ should be equals to $b$. You can also replace $x$ (4), $y$ (-1), and $z$ (-1) in the equations, and check if the system is consistent.
+And **the solution is** $X = (4,-1,-1)$. If you're checking, $A * X$ should be equals to $b$. You can also replace $x$ (4), $y$ (-1), and $z$ (-1) in the equations, and check if the system is consistent.
 
-*We will we use this system as a reference in every exercise from now on*.
+*We will use this system as a reference in every exercise from now on*.
 
 <hr class="sl">
 

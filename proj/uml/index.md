@@ -1,4 +1,4 @@
-# UML
+# Unified Modeling Language
 
 UML stands for **Unified Modeling Language**. This is a standardized way of writing diagrams, because a sentence may often lead to a lot of interpretations.
 

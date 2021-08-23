@@ -29,3 +29,5 @@ leading/principal minor https://en.wikipedia.org/wiki/Minor_(linear_algebra).
 - complexity
   - course?
   - note ANM
+
+Adding examples in R.

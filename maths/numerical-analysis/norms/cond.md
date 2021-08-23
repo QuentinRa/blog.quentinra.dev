@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-The condition number (`Conditionnement`) is a measure of the dependence between the vector of parameters $x$ and the solution $b$.
+The condition number (`Conditionnement`) is a measure of the dependence between the vector of parameters $X$ and the solution $b$.
 
 <p class="mathjax_process">
 \[
