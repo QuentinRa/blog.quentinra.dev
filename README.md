@@ -54,8 +54,6 @@ Last updated: 2021-08-18
 * [ ] Soft wraps for everyone
 * [ ] Index Google/Bing
 * [ ] add commit authors (optional)
-* [ ] edit: fix preview or disable it
-* [ ] edit: add enable/disable side-by-side
 * [ ] edit: maybe change ReCaptcha to hCaptcha or ReCaptcha v3?
 * [ ] add a pull request template
 * [ ] advanced search? (inside a course/category)
@@ -68,6 +66,7 @@ Last updated: 2021-08-18
 * [ ] check the description for sub pages
 * [ ] check the titles for sub pages
 * [ ] Nested courses files should have the title of the nested course and not the nesting course (ex: UML)
+* [ ] Check what's website structure
 </details>
 
 <br>

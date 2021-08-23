@@ -11,6 +11,7 @@
 * `seo`: replacing h4 by h2 for courses in the list of courses
 * `seo`: the titles and the descriptions of the pages displaying a list of courses, are now inside the JSON
 * `seo`: the description and the title of each file of a course, including the main page, is now generated from the first line of the course and the first header h1.
+* `internal`: preview was replaced by side-by-side, inside the editor
 
 **Fixed**
 
