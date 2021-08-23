@@ -2,7 +2,7 @@
 
 [Go back](../index.md#estimators-and-likelihood)
 
-A statistic is sufficient (`exhaustive`) is we can make a function $T$ that is not dependant on $\theta$. If we can write $f$ as
+A statistic is sufficient (`exhaustive`) is we can make a function $T$ that is not dependent on $\theta$. If we can write $f$ as
 
 @
 f(x, \theta) = g(T(x), \theta) * h(x)
