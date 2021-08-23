@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-This is the same as the GAUSS-seidel method, but you will change a bit the equations. We are introducing a variable $\omega$ which is usually $1.1$.
+This is the same as the GAUSS-seidel method, but you will change it a bit the equations. We are introducing a variable $\omega$ which is usually $1.1$.
 
 Then, the formula to create the new functions is looking like this for $x_{n+1}$.
 
@@ -38,8 +38,7 @@ but now we have
 
 ## Code in R
 
-Here how you could see this in R code. You should check
-the convergence instead of doing ``n=10`` iterations.
+Here is how you could see this in R code. We are checking the convergence with $\epsilon = 0.001$.
 
 ```r
 # our functions
@@ -62,7 +61,7 @@ xnp1W <- function (x, y, z) { wrapper(xnp1, y, z, x) }
 ynp1W <- function (x, y, z) { wrapper(ynp1, x, z, y) }
 znp1W <- function (x, y, z) { wrapper(znp1, x, y, z) }
 
-# THIS IS A COPY OF GAUSS-SEIDEL CODE, I ONLY MODIFIED
+# THIS IS A COPY OF THE GAUSS-SEIDEL CODE, I ONLY MODIFIED
 # THE FUNCTION CALLED
 n <- 3
 A <- matrix(c(4,2,2,2,10,7,2,7,21), nrow = n, ncol = n, byrow = TRUE)
@@ -116,12 +115,12 @@ with
 
 * b, that's the b in Ax=b
 * omega is a number usually
-  * omega > 0 and < 1 : jacobi
-  * omega = 1 : gauss-seidel
-  * omega > 1 : SOR
+  * omega > 0 and < 1: Jacobi
+  * omega = 1: Gauss-Seidel
+  * omega > 1: SOR
 * x, the result, after k iterations
 * D, a diagonal matrix
-* L, a upper triangular matrix, multiplied by -1
+* L, an upper triangular matrix, multiplied by -1
 * U, a lower triangular matrix, multiplied by -1
 
 And, we must have **A = D - L - U** <span class="tms">(you may see **A = D + L + U** too, but the formula for $x^{(k+1)}$ is is different)</span>.

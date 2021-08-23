@@ -8,8 +8,7 @@ The Gauss-Seidel method is very similar to the Jacobi method, but you don't way 
 
 ## Using a table
 
-We are again solving this system, using **Gauss-seidel**
-method this time, starting with $X = (0,0,0)$.
+We are again solving this system, using **Gauss-seidel** method this time, starting with $X = (0,0,0)$.
 
 * $x_{n+1}(x, y, z) = \frac{12 - 2 * y - 2 * z}{4}$
 * $y_{n+1}(x, y, z) = \frac{-9 - 2 * x - 7 * z}{10}$
@@ -25,8 +24,7 @@ method this time, starting with $X = (0,0,0)$.
 
 ## Gauss-seidel in R
 
-Here how you could see this in R code. We are checking
-the convergence with $\epsilon = 0.001$.
+Here is how you could see this in R code. We are checking the convergence with $\epsilon = 0.001$.
 
 ```r
 # our functions
@@ -94,7 +92,7 @@ with
 * b, that's the b in Ax=b
 * x, the result, after k iterations
 * D, a diagonal matrix
-* L, a upper triangular matrix, multiplied by -1
+* L, an upper triangular matrix, multiplied by -1
 * U, a lower triangular matrix, multiplied by -1
 
 And, we must have **A = D - L - U** <span class="tms">(you may see **A = D + L + U** too, but the formula for $x^{(k+1)}$ is is different)</span>.

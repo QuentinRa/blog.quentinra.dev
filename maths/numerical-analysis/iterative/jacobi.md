@@ -8,14 +8,13 @@ In the Jacobi method, given a starting point $X^{(0)}$ (usually a vector of zero
 
 ## Using a table
 
-We are solving the system saw previously using **Jacobi**
-method.
+We are solving the system saw previously using the **Jacobi** method.
 
 * $x_{n+1}(x, y, z) = \frac{12 - 2 * y - 2 * z}{4}$
 * $y_{n+1}(x, y, z) = \frac{-9 - 2 * x - 7 * z}{10}$
 * $z_{n+1}(x,y,z) = \frac{-20 - 2 * x - 7 * y}{21}$
 
-We are using a vector a zeros as the default value but I think in some cases you can start with something else. As we got 3 variables, our starting point is $X = (0,0,0)$.
+We are using a vector of zeros as the default value, but I think in some cases you can start with something else. As we got 3 variables, our starting point is $X = (0,0,0)$.
 
 | var | i=0 | i=1 | i=2 | ... | $i\ge41$ |
 | ------ | ------ | ------ | ------ | ------ | ------ |
@@ -27,8 +26,7 @@ We are using a vector a zeros as the default value but I think in some cases you
 
 ## Jacobi in R
 
-Here how you could see this in R code. We are checking
-the convergence with $\epsilon = 0.001$.
+Here is how you could see this in R code. We are checking the convergence with $\epsilon = 0.001$.
 
 ```r
 xnp1 <- function (x, y, z) { (12 - 2 * y - 2 * z) / 4  }
@@ -95,7 +93,7 @@ with
 * b, that's the b in Ax=b
 * x, the result, after k iterations
 * D, a diagonal matrix
-* L, a upper triangular matrix, multiplied by -1
+* L, an upper triangular matrix, multiplied by -1
 * U, a lower triangular matrix, multiplied by -1
 
-And, we must have **A = D - L - U** <span class="tms">(you may see **A = D + L + U** too, but the formula for $x^{(k)}$ is is different)</span>.
+And, we must have **A = D - L - U** <span class="tms">(you may see **A = D + L + U** too, but the formula for $x^{(k)}$ is different)</span>.
