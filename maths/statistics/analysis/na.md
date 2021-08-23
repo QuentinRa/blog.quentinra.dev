@@ -2,14 +2,7 @@
 
 [Go back](discovery.md)
 
-<hr class="sl">
-
-## What's NA
-
-Sometimes, values are missing from our data and the
-empty value is ``NA``. The problem of NA values is that
-they are messing with the results because $0+1+NA=NA$ (for any kind
-of operation (NA is a sort of absorbing element).
+Sometimes, values are missing from our data and the empty value is **NA**. The problem of NA values is that they are messing with the results because $0+1+NA=NA$ (for any kind of operation (NA is a sort of absorbing element).
 
 * You can use `summary(d)` then check `NA's:<number>` values
 * You can check how many NA you have with ``sum(is.na(d$var))`` (with var the variable checked)
@@ -32,7 +25,4 @@ Then you have to make a choice
 ech$quant[is.na(ech$quant)] <- mean(ech$quant, na.rm = TRUE)
 ```
 
-* notice the ``na.rm = TRUE`` above, that's also a way
-  of dealing with NA because some methods are taking
-  a parameter as to how they should deal with NA value
-  (here it's deleting)
+* notice the ``na.rm = TRUE`` above, that's also a way of dealing with NA because some methods are taking a parameter as to how they should deal with NA value (here it's deleting)

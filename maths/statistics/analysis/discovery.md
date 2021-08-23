@@ -2,21 +2,18 @@
 
 [Go back](..)
 
-let's says `d = our data`. You could put any kind
-of data in `d` and I'm only using it for the sake
-of clarity since these function are not only working
-with our data.
+Let's say `d = our data`. You could put any kind of data in `d` and I'm only using it for the sake of clarity, since these functions are not only working with our data.
 
 <hr class="sr">
 
 ## 1. Check what you are manipulating
 
-What are your variables? and what are their types/values?
+What are your variables? And what are their types/values?
 
 * `str(d)`: variables types and first 10 values
 * `summary(d)`: summary for each variable
-* `describe(d)/brkdn(d)` from `library('pastecs')`: summary
-* `describeBy(d)/stat.desc(d)` from `library('psych')`: summary
+* `describe(d)/brkdn(d)` from `library('pastecs')`: alternative to summary
+* `describeBy(d)/stat.desc(d)` from `library('psych')`: alternative to summary
 * `head(d)/tail(d)`: first/last 10 values
 * `View(d)`: open in the graphical view
 * `names(d)`: get variables names

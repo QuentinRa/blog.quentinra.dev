@@ -1,28 +1,21 @@
-# Convert a variable in R
+# Converting a variable in R
 
 [Go back](discovery.md)
 
-Sometimes, your variables are qualitative
-(because you know it)
-but R didn't detect it as qualitative so you would have
-to convert it.
+Sometimes, your variables are qualitative (because you know it), but R didn't detect it as qualitative, so you would have to convert it.
 
 <hr class="sl">
 
 ## Changing the type
 
-You should remember that R is proposing functions
-like ``as.type(x)`` to convert a variable $x$ to
-the type $type$ (as.integer(), as.Date() etc.).
+You should remember that R is proposing functions like ``as.type(x)`` to convert a variable $x$ to the type $type$ (as.integer(), as.Date() etc.).
 
 
 <hr class="sr">
 
 ## Weighted data
 
-If you ever have two vectors, one for
-the values $v$ and another one for the probabilities $p$
-then you may use
+If you ever have two vectors, one for the values $v$ and another one for the probabilities $p$ then you may use
 
 ```r
 library('questionr')
@@ -38,11 +31,7 @@ weighted.mean(v,p)
 
 ## Qualitative to Quantitative
 
-Let's say "qual" is a qualitative variable
-of $v$, then $as.integer(v$qual)$
-created a quantitative variable (but
-$qual is unchanged, we are usually keeping
-the old variable and create a new one).
+Let's say "qual" is a qualitative variable of $v$, then $as.integer(v$qual)$ created a quantitative variable (but $qual is unchanged, we are usually keeping the old variable and create a new one).
 
 ```r
 data(Puromycin)
@@ -58,9 +47,7 @@ v$state_quant <- as.integer(v$state)
 
 ## Quantitative to Qualitative (simple case)
 
-Simply use the factor function ``factor(ech$quant)``,
-with ``levels(ech$qual)``/`table(ech$qual)` to see
-the different kinds of values of a qualitative variable.
+Simply use the factor function ``factor(ech$quant)``, with ``levels(ech$qual)``/`table(ech$qual)` to see the different kinds of values of a qualitative variable.
 
 ```r
 # converting back v$state_quant
@@ -71,9 +58,7 @@ v$state_qual <- factor(v$state_quant, levels = c(1,2), labels = c("treated", "un
 
 ## Quantitative to Qualitative (Unsupervised discretization)
 
-If you have too much levels (different values), then you may want something
-else than factor. For instance, let's say you got a variable "Age" and you
-want to make a qualitative variable like to make some age groups.
+If you have too many levels (different values), then you may want something else than the simple factor. For instance, let's say you got a variable "Age" and you want to make a qualitative variable to make some groups by age.
 
 ```r
 library('arules')
@@ -92,8 +77,7 @@ discretize(qual, method = "cluster", breaks = n)
 
 ## Quantitative to Qualitative (Supervised discretization)
 
-This is another alternatives where we are grouping the values
-according to a qualitative criteria.
+This is another alternative in which we are grouping the values according to a qualitative criterion.
 
 * chiM
 
