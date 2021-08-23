@@ -1,26 +1,16 @@
-# Maximum Likehood estimation (MLE)
+# Maximum Likelihood estimation (MLE)
 
 [Go back](..)
 
-In the likehood function example, we had $\theta= (p=0.7)$.
-We tested all the values of $p$ from 0 to 1, and
-we are able to see clearly a maximum for $p=0.6$
-giving us $\hat{\theta}= (p=0.6)$.
-
-Will call this value, the maximum Likehood
-estimation. This is a mix of statistics and optimization,
-because we have to maximize the likehood function.
+In the likelihood function example, we had $\theta= (p=0.7)$ (we are usually writing $\theta(0.7)$, but I added p for you). We tested all the values of $p$ from 0 to 1, and we are able to see clearly a maximum for $p=0.6$ giving us $\hat{\theta}= (p=0.6)$. We call this value, the maximum likelihood estimation (MLE). This is a mix of statistics and optimization, because we have to maximize the likelihood function.
 
 Steps
 
-* write your likehood function
-* pick a first parameter
+* write your likelihood function
+* pick your first parameters
 * optimize the function, starting from the first parameter
 
-If you are on paper, you have to do the derivative
-of the likehood function and solve $\hat\theta$
-(from my understanding that is). Check the optimization
-course if needed.
+If you are on paper, you have to do the derivative of the likelihood function, and solve $\hat\theta$ (from my understanding, that is). Check the optimization course if needed.
 
 <hr class="sl">
 
@@ -31,11 +21,7 @@ In my school, we are
 * generating a sample $Bern(0.7)$
 * then the first parameter used in the optimization is $p=0.7$
 
-That's cheating... You are not supposed to know the
-real parameters otherwise you would not have to look for them,
-but well... If you don't want to do that, I managed to found
-some parameters values in the example section. For instance,
-the first parameter for a Bernoulli distribution could be
+That's cheating... You are not supposed to know the real parameters otherwise you would not have to look for them, but well... If you don't want to do that, I managed to found some parameters values in the example section. For instance, the first parameter for a Bernoulli distribution could be
 
 * the number of successes in the sample
 * divided by the size of the sample
@@ -46,10 +32,7 @@ And now you got your first value without cheating.
 
 ## Bernoulli MLE (1)
 
-We found in the previous example
-that for $(1,0,1,1,0)$, the likehood function
-was $L(x,p)=p^3 * (1-p)^2$.
-Since $p \in [0,1]$, we can write
+We found in the previous example that for $(1,0,1,1,0)$, the likelihood function was $L(x,p)=p^3 * (1-p)^2$. Since $p \in [0,1]$, we can write
 
 ```r
 # test with values from 0 to 1 (0.1, 0.2, ...)
@@ -68,25 +51,15 @@ for(p in seq(from = 0, to = 1, length = 11))
 # [1] "L(x, 1 )= 0"
 ```
 
-It seems that the maximum likehood estimation
-is around $p=0.6$. The real value was $p=0.5$ so
-it's not that bad. The sample is small (n=$5$)
-so an error (be it small like here or not) was
-to be expected.
+It seems that the maximum likelihood estimation is around $p=0.6$. The real value was $p=0.5$, so it's not that bad. The sample is small (n=$5$), so an error (be it small like here or not) was to be expected.
 
-Of course, this is not very accurate since we are
-only testing $10$ values, so we should do something
-like accurate like you will see below
-or in the optimization course.
+Of course, this is not very accurate since we are only testing $10$ values, so we should do something accurate like you will see below or in the optimization course.
 
 <hr class="sl">
 
 ## Bernoulli MLE (2)
 
-In R, you may use ``optim`` or `optimize`. I enjoying
-``optim``. For the `L_bern` function we created,
-the maximum likehood estimation would be evaluated
-like this
+In R, you may use ``optim`` or `optimize`. I'm enjoying ``optim``. For the `L_bern` function we created, the maximum likelihood estimation would be evaluated like this
 
 ```r
 # first value of theta-hat
@@ -114,7 +87,4 @@ r <- optim(
 r$par
 ```
 
-The result is changing a lot, sometimes you
-got a value close to $0.7$ and sometimes not.
-If you are increasing $n$ like $n=25$, $n=100$ then
-you will see that the value will converge to $0.7$.
+The result is changing a lot, sometimes you got a value close to $0.7$ and sometimes not. If you are increasing $n$ like $n=25$, $n=100$ then you will see that the value will converge to $0.7$.

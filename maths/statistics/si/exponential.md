@@ -1,6 +1,6 @@
 # Exponential family
 
-[Go back](../index.md#estimators-and-likehood)
+[Go back](../index.md#estimators-and-likelihood)
 
 A lot of distributions are having a likehood similar
 

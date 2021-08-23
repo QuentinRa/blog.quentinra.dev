@@ -1,21 +1,16 @@
-# Maximum Likehood estimation (examples)
+# Maximum Likelihood estimation (examples)
 
-[Go back](../index.md#estimators-and-likehood)
+[Go back](../index.md#estimators-and-likelihood)
 
-You may replace any usage of the Likehood function
-by the Log-Likehood function.
+You may replace any usage of the Likelihood function with the Log-Likelihood function.
 
-Also, if you are a student at the ENSIIE engineering
-school, do not use ``fitdistr`` values as the first
-parameter and use the values you used to generate
-the distribution.
+Also, if you are a student at the ENSIIE engineering school, do not use ``fitdistr`` values as the first parameter and use the values you used to generate the distribution.
 
 <hr class="sr">
 
 ## How to read that?
 
-If you are wondering if the code is working, for
-Bernoulli for instance, generate a sample
+If you are wondering if the code is working, for Bernoulli for instance, generate a sample
 
 ```r
 # n must be at great like 100/something not small
@@ -32,11 +27,7 @@ r$par
 # here par should converge to proba=0.5
 ```
 
-Sometimes, you may have an error/warning according
-to the parameters of your distribution. Try again!
-The way to fix these errors would be to play will
-the parameters but I do not know much, and you should
-use **R** function instead of writing yours.
+Sometimes, you may have an error/warning according to the parameters of your distribution. Try again! The way to fix these errors would be to play will the parameters, but I do not know much, and you should use **R** function instead of writing yours.
 
 <hr class="sl">
 
@@ -124,8 +115,7 @@ r <- optim(
 
 ## Poison distribution
 
-Do you remember that $\mathbb{E} = \lambda$?
-Then you do not need to optimize,
+Do you remember that $\mathbb{E} = \lambda$? Then you do not need to optimize,
 
 ```r
 # the mean will converge to lambda,
@@ -149,8 +139,7 @@ r <- optim(
 
 ## Exponential distribution
 
-Do you remember that $\mathbb{E} = \frac{1}{\lambda}$?
-Then you do not need to optimize,
+Do you remember that $\mathbb{E} = \frac{1}{\lambda}$? Then you do not need to optimize,
 
 ```r
 # the mean will converge to lambda,

@@ -1,9 +1,8 @@
-# Likehood functions (examples)
+# Likelihood functions (examples)
 
-[Go back](../index.md#estimators-and-likehood)
+[Go back](../index.md#estimators-and-likelihood)
 
-You can easily switch from Likehood function 
-to log-likehood so I won't show the log-likehood implementations.
+You can easily switch from the Likelihood function to log-likelihood, so I won't show the log-likelihood implementations.
 
 <hr class="sl">
 

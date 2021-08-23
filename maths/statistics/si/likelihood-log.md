@@ -1,20 +1,12 @@
-# Log-Likehood function
+# Log-Likelihood function
 
-[Go back](../index.md#estimators-and-likehood)
+[Go back](../index.md#estimators-and-likelihood)
 
-Sometimes, the log-likehood function is hard to use
-(mainly when you are not using a computer with the
-functions already coded for you). The log-likehood
-function is something really (yeah really) easier
-to use. Everything is working the same aside the fact
-that you are using another function.
+Sometimes, the log-likelihood function is hard to use (mainly when you are not using a computer with the functions already coded for you). The log-likelihood function is something really (yeah, really) easier to use. Everything is working the same, aside from the fact that you are using another function.
 
-Another reason of using the log-likehood function is that,
-in average, the result is better than using any other
-likehood function.
+Another reason for using the log-likelihood function is that, on average, the result is better than using any other likelihood function.
 
-The log-likehood function is defined as the
-**sum of the log densities functions**.
+The log-likelihood function is defined as the **sum of the log densities functions**.
 
 @
 LL(x, \hat{\theta}) = \sum log(f_{\hat{\theta}}(x))
@@ -24,10 +16,7 @@ LL(x, \hat{\theta}) = \sum log(f_{\hat{\theta}}(x))
 
 ## In practice
 
-You will replace ``prod`` by `sum` and add `log = TRUE`
-in the density function. You will also need to add
-a minus before in the return. Aside from that, you don't have
-anything else to change.
+You will replace ``prod`` with `sum` and add `log = TRUE` in the density function. You will also need to add a minus before the return. Aside from that, you don't have anything else to change.
 
 ```r
 # we are chaning the L_bern function
@@ -38,7 +27,7 @@ L_bern <- function(theta, x) {
 # this code does not change, working for both
 # generating a sample
 x <- rbinom(250, 1, prob = 0.8)
-# maximum likehood estimation
+# maximum likelihood estimation
 first <- sum(x) / length(x)
 r <- optim(
   fn = L_bern, par = first, x = x,
@@ -48,17 +37,13 @@ r <- optim(
 r$par
 ```
 
-Note: sometimes you may have to replace ``'L-BFGS-B'``
-by ``'Brent'``. This is because sometimes the formula
-for ``par`` gives you an invalid value (test with par=0),
-and Brent seems to be more flexible.
+Note: sometimes you may have to replace `'L-BFGS-B'` with ``'Brent'``. This is because sometimes the formula for ``par`` gives you an invalid value (test with par=0), and Brent seems to be more flexible.
 
 <hr class="sr">
 
 ## In theory
 
-Let's say you got this table with the probabilities
-and the values in our sample.
+Let's say you got this table with the probabilities, and the values in our sample.
 
 <table class="table table-bordered table-striped">
 <tr>
@@ -84,9 +69,7 @@ and the values in our sample.
 </tr>
 </table>
 
-We are looking for the maximum likehood estimation.
-We are calculating the likehood function (product
-of the densities).
+We are looking for the maximum likelihood estimation. We are calculating the likelihood function (product of the densities).
 
 <div>
 \[
@@ -97,8 +80,7 @@ L(x, \theta)
 \]
 </div>
 
-Since the likehood function is a bit too complex,
-we are using the log-likehood function.
+Since the likelihood function is a bit too complex, we are using the log-likelihood function.
 
 <div>
 \[
@@ -108,8 +90,7 @@ LL(x, \theta)
 \]
 </div>
 
-Then we are deriving $LL(x, \theta)$ instead of
-$L(x, \theta)$ and that's much easier
+Then we are deriving $LL(x, \theta)$ instead of $L(x, \theta)$ and that's much easier
 
 <div>
 \[
