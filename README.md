@@ -45,27 +45,29 @@ Last updated: 2021-08-18
 <details>
 <summary> <b>Website tasks</b></summary>
 
+* **Guidelines**
 * [ ] add go back to #titleID instead of #linkID
 * [ ] replacing links like [here] by something better
 * [ ] increase courses title length (ex: add programming)
-* [ ] responsive (check)
 * [ ] review all pages for SEO
 * [ ] replace HTML tables by Markdown tables
 * [ ] Soft wraps for everyone
-* [ ] Index Google/Bing
-* [ ] add commit authors (optional)
-* [ ] edit: maybe change ReCaptcha to hCaptcha or ReCaptcha v3?
-* [ ] add a pull request template
-* [ ] advanced search? (inside a course/category)
-* [ ] actions? typos
 * [ ] replace <code>````</code> by <code>``</code>
-* [ ] adding file history
-* [ ] adding submit issue
-* [ ] review .summary
 * [ ] check the description for sub pages
 * [ ] check the titles for sub pages
 * [ ] Nested courses files should have the title of the nested course and not the nesting course (ex: UML)
+* **Features**
+* [ ] add commit authors (optional)
+* [ ] edit: maybe change ReCaptcha to hCaptcha or ReCaptcha v3?
+* [ ] advanced search? (inside a course/category)
+* [ ] actions? typos
+* [ ] adding file history
+* [ ] adding submit issue
+* **Content**
+* [ ] Index Google/Bing
+* [ ] add a pull request template
 * [ ] Check what's website structure
+* [ ] review .summary
 </details>
 
 <br>
