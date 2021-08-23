@@ -2,72 +2,26 @@
 
 [Go back](../index.md)
 
-We are solving the system saw previously using ``Jacobi``
+In the Jacobi method, given a starting point $X^{(0)}$ (usually a vector of zeros), you will solve each equation with this point. You will get a new point, and start again.
+
+<hr class="sl">
+
+## Using a table
+
+We are solving the system saw previously using **Jacobi**
 method.
 
-* <span>
-    \(
-        x_{n+1}(x, y, z) = \frac{-1 + 2 * y - 3 * z}{5}
-    \)</span>
-* <span>
-    \(
-        y_{n+1}(x, y, z) = \frac{2 + 3 * x - z}{9}
-    \)</span>
-* <span>
-    \(
-        z_{n+1}(x,y,z) = \frac{3 - 2 * x + y}{-7}
-    \)</span>
+* $x_{n+1}(x, y, z) = \frac{12 - 2 * y - 2 * z}{4}$
+* $y_{n+1}(x, y, z) = \frac{-9 - 2 * x - 7 * z}{10}$
+* $z_{n+1}(x,y,z) = \frac{-20 - 2 * x - 7 * y}{21}$
 
-We are using a vector a zeros as default value but I think
-in some cases you can start with something else.
+We are using a vector a zeros as the default value but I think in some cases you can start with something else. As we got 3 variables, our starting point is $X = (0,0,0)$.
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>var</th>
-            <th>i = 0</th>
-            <th>i = 1</th>
-            <th>i = 2</th>
-            <th>i = 3</th>
-            <th>...</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>x</td>
-            <td>0</td>
-            <td>xn+1(0,0,0) = -0.20</td>
-            <td>xn+1(-0.2,0.22,-0.43) = 0.15</td>
-            <td>xn+1(0.15,0.2,-0.52) = 0.19</td>
-            <td>...</td>
-        </tr>
-        <tr>
-            <td>y</td>
-            <td>0</td>
-            <td>yn+1(0,0,0) = 0.22</td>
-            <td>yn+1(-0.2,0.22,-0.43) = 0.2</td>
-            <td>yn+1(0.15,0.2,-0.52) = 0.33</td>
-            <td>...</td>
-        </tr>
-        <tr>
-            <td>z</td>
-            <td>0</td>
-            <td>zn+1(0,0,0) = -0.43</td>
-            <td>zn+1(-0.2,0.22,-0.43) = -0.52</td>
-            <td>zn+1(0.15,0.2,-0.52) = -0.42</td>
-            <td>...</td>
-        </tr>
-    </tbody>
-</table>
-
-We can do it a lot of times but when we are seing that values
-tend to converge, here (i=10) to
-
-* x = 0.186
-* y = 0.33
-* z = -0.422
-
-so we can stop.
+| var | i=0 | i=1 | i=2 | ... | $i\ge40$ |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| x | $x^{(0)} = 0$ | $X = (0,0,0)$ <br> $x^{(1)} = 3$ | $X = (3,-0.9,-0.95)$ <br> $x^{(2)} = 3.925$ | ... | $X = (?,?,?)$ <br> $x^{(40)} = 4$ |
+| y | $y^{(0)} = 0$ | $X = (0,0,0)$ <br> $y^{(1)} = -0.9$ | $X = (3,-0.9,-0.95)$ <br> $y^{(2)} = -0.835$ | ... | $X = (?,?,?)$ <br> $x^{(0)} = -1$ |
+| z | $z^{(0)} = 0$ | $X = (0,0,0)$ <br> $z^{(1)} = -0.95$ | $X = (3,-0.9,-0.95)$ <br> $z^{(2)} = -0.938$ | ... | $X = (?,?,?)$ <br> $x^{(40)} = -1$ |
 
 <hr class="sr">
 
@@ -78,22 +32,23 @@ the convergence instead of doing ``n=10`` iterations.
 
 ```r
 # our functions
-xnp1 <- function (x, y, z) { (-1 + 2 * y - 3 * z) / 5  }
-ynp1 <- function (x, y, z) { (2 + 3 * x - z ) / 9 }
-znp1 <- function (x, y, z) { (3 - 2 * x + y) / -7  }
+xnp1 <- function (x, y, z) { (12 - 2 * y - 2 * z) / 4  }
+ynp1 <- function (x, y, z) { (-9 - 2 * x - 7 * z) / 10 }
+znp1 <- function (x, y, z) { (-20 - 2 * x - 7 * y) / 21  }
 
 # initial values
-v <- c(0, 0, 0)
+Xk <- c(0, 0, 0)
 
 # iterates for i in [0, 10]
-for (i in 0:10) {
-  # update our vector of values
-  v <- c(
-    xnp1(v[1], v[2], v[3]),
-    ynp1(v[1], v[2], v[3]),
-    znp1(v[1], v[2], v[3])
-  )
-  print(v)
+for (k in 0:100) {
+	# update our vector of values
+	Xk <- c(
+		xnp1(Xk[1], Xk[2], Xk[3]),
+		ynp1(Xk[1], Xk[2], Xk[3]),
+		znp1(Xk[1], Xk[2], Xk[3])
+	)
+	print(k)
+	print(Xk)
 }
 ```
 
