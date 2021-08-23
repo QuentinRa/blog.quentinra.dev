@@ -1,19 +1,13 @@
 # Regression table/model
 
-[Go back](..)
+[Go back](../index.md#regression)
 
-The regression model is defined by our
-equation $Y = a + b X + residual$. We are introducing,
-like in the tests, two hypothesis
+The regression model is defined by our equation $Y = a + b X + residual$. We are introducing, like in the tests, two hypotheses
 
-* $H0$: b is equals to 0
-* $H1$: b isn't equals to 0, meaning that
-  b is significantly increasing Y
+* $H0: b = 0$
+* $H1: b \neq 0$, meaning that b is significantly increasing Y
 
-We are looking for $b$. Once you did evaluate
-your regression model (explained
-later), you will print it using ``summary``
-giving you something like this
+We are looking for $b$. Once you did evaluate your regression model (explained later), you will print it using `summary` giving you something like this
 
 ```r
 # simple linear regression - example - result
@@ -40,18 +34,10 @@ F-statistic: 67.71 on 1 and 30 DF,  p-value: 3.478e-09
 
 As you should have remembered
 
-* **a**: intercept coefficient and $a$ value
-  is at the line "(Intercept)", column "Estimate".
-* **b**: our variable X is cyl so $b$ value is
-  at the line "(cyl)", column "Estimate".
-* **p-value** : column Pr, as for the tests, it's indicating
-  whether H0 or H1 may be the best fitting hypothesis.
+* **a**: intercept coefficient and $a$ value is at the line "(Intercept)", column "Estimate".
+* **b**: our variable X is cyl so $b$ value is at the line "(cyl)", column "Estimate".
+* **p-value** : column Pr, as for the tests, it's indicating whether H0 or H1 may be the best fitting hypothesis.
 
-You should read interpret the result as
-"if X is increasing by 1 then in average,
-Y tend to increase by $b$". Of course, you should check
-the p-value because the variable may be not correlated.
+You should read interpret the result as "if X is increasing by 1 then in average, Y tend to increase by $b$". Of course, you should check the p-value because the variable may not be correlated.
 
-> **Note**:
-> You can easily get the correlation with
-> $r = b * \frac{\sigma_{X}}{\sigma_{Y}}$.
+> **Note**: You can easily get the correlation with $r = b * \frac{\sigma_{X}}{\sigma_{Y}}$.

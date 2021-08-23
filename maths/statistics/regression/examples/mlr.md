@@ -1,6 +1,8 @@
-## Multiple linear regression (example)
+# Multiple linear regression (example)
 
 [Go back](../linear.md#multiple-linear-regression)
+
+This is an example of multiple linear regression.
 
 ```r
 # preparing some data

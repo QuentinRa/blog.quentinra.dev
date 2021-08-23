@@ -1,6 +1,8 @@
-## Simple linear regression (example)
+# Simple linear regression (example)
 
 [Go back](../linear.md#simple-linear-regression)
+
+This is an example of simple linear regression.
 
 ```r
 # preparing some data

@@ -1,22 +1,20 @@
 # Logistic regression
 
-[Go back](..)
+[Go back](../index.md#regression)
 
-If $Y \in [0,1]$, then you may use the Logistic
-regression. The left of the formula is changing
-a bit, while the right-side will not.
+If $Y \in [0,1]$, then you may use the Logistic regression. The left of the formula is changing a bit, while the right-side will not.
 
 @
 \log(\frac{P(X=n)}{1-P(X=n)}) = a + b X + c Z
 @
 
-You may notice that there is not residuals anymore.
+You may notice that there are no residuals anymore.
 
 <hr class="sl">
 
 ## Simple logistic regression
 
-You will use the function ``lm``.
+You will use the function ``glm``.
 
 ```r
 # regression Y = a + b * X
@@ -31,7 +29,7 @@ summary(model)
 
 <hr class="sl">
 
-## Simple logistic regression
+## Multiple logistic regression
 
 ```r
 # regression Y = a + b * X + c Z
@@ -42,9 +40,7 @@ model <- glm(Y ~ X + Z, data=ech, family="binomial")
 
 ## Results
 
-You will need to evaluate ``exp(b)`` if you want to
-get ``b'`` value. Then `b'` is the same as the `b`
-you know in linear regression.
+You will need to evaluate ``exp(b)`` if you want to get ``b'`` value. Then `b'` is the same as the `b` you know in linear regression.
 
 If you want all of them, then use
 
@@ -52,8 +48,7 @@ If you want all of them, then use
 exp(coefficients(model))
 ```
 
-If you are using ``drop1``, then the syntax
-changed a bit to
+If you are using ``drop1``, then the syntax changed a bit to
 
 ```r
 drop1(model, .~., test="Chisq")
