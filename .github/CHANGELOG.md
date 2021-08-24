@@ -24,6 +24,10 @@
 * `internal`: after successfully editing a course, you were sent to the wrong page
 * `rendering`: I corrected the message shown if you forgot the captcha
 
+**Removed**
+
+* `feature`: removing `href="download:url"`
+
 ## v5.5.0 (2021-08-20)
 
 The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
