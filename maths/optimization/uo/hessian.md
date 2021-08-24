@@ -2,6 +2,10 @@
 
 [Go back](..)
 
+The gradient (first derivative) and the hessian (second derivative), will be used quite a lot in unconstrained optimization.
+
+<hr class="sl">
+
 ## Gradient
 
 We are calling **gradient**, noted nabla, the "derivative"

@@ -2,10 +2,7 @@
 
 [Go back](..)
 
-This is some sort of constrained optimization but
-the only constraint is that all values are strictly positives.
-
-Usually, that's some function looking like that
+This is some sort of constrained optimization, but the only constraint is that all values are strictly positives. Usually, that's some function looking like that
 
 <div>
 \[

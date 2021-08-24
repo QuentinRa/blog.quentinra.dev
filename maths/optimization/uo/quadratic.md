@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-A quadratic problem is something like
+A quadratic problem is something like this:
 
 @
 \min f(x) = \frac{1}{2} X^t * A * X + b^T X

@@ -2,6 +2,10 @@
 
 [Go back](..)
 
+This is a method allowing us to transform a constrained problem (primal), to an unconstrained problem (dual).
+
+<hr class="sl">
+
 You will have to write a Lagrangian like this
 
 <span class="mathjax_process">
@@ -76,22 +80,22 @@ but my teacher does not seem to be doing it).
 A primal problem **P**
 
 <p>
-\(
+\[
 \min\limits_{X} f(X)\ s.c.\ 
 \begin{cases}
 h(X) = 0\\
 g(X) \le 0
 \end{cases}
-\)
+\]
 </p>
 
 is the same as maximizing a dual problem **D**
 
 <p>
-\(
+\[
 \max\limits_{\lambda\ge0,\mu\ge0} \theta(\lambda,\mu)
 = \inf\limits_{\lambda\ge0,\mu\ge0} L(X, \mu, \lambda)
-\)
+\]
 </p>
 
 * **note**: if a g(X) is violated (>0) then the only

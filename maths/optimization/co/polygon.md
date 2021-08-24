@@ -2,17 +2,15 @@
 
 [Go back](..)
 
-It's most likely the easiest method, but it won't
-works if you got more than 2 parameters.
-
-Rewrite all of your constraints to you
-have constraints like this
+It's most likely the easiest method, but it won't works if you got more than 2 parameters. Rewrite all of your constraints to you have constraints like this
 
 <p>
 \[
-x \le 10
-y \le 15
-y \le 3/5 * x + 7
+\begin{split}
+x \le 10\\
+y \le 15\\
+y \le 3/5 * x + 7\\
+\end{split}
 \]
 </p>
 

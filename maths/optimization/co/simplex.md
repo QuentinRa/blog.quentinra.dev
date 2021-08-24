@@ -2,9 +2,7 @@
 
 [Go back](..)
 
-This method is quite well-known so you may look
-for some videos on the net since that might help
-you understand.
+This method is quite well-known so you may look for some videos on the net since that might help you understand. We are making a table, and updating it until we have our solution.
 
 <hr class="sr">
 
