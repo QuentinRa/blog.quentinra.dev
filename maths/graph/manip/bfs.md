@@ -2,9 +2,7 @@
 
 [Go back](..#sorting-and-search)
 
-In French it's called ``Parcours en largeur``.
-You will pick a vertex, mark it's neighbor until
-each vertex neighbor are marked.
+In French it's called ``Parcours en largeur``. You will pick a vertex, mark it's neighbor until each vertex neighbor are marked.
 
 **Algorithm**
 

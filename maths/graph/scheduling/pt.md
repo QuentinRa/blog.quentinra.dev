@@ -2,13 +2,10 @@
 
 [Go back](..#scheduling-problem)
 
-The Metra potential method (`méthode potentiel-tâche`)
-is what I think is the English name
-of the `méthode potentiel-tâche`.
+The Metra potential method (`méthode potentiel-tâche`) is what I think is the English name of the `méthode potentiel-tâche`.
 
 * first create a graph of all of your tasks
-* the tasks are linked with edges having a weight which
-is the duration of the task
+* the tasks are linked with edges having a weight which is the duration of the task
 * We are usually starting at a node called START, ending at node called END
 
 The task (nodes) will have properties
@@ -18,18 +15,13 @@ The task (nodes) will have properties
 * free margin (optional)
 * total margin (optional)
 
-**Note**: You may have some cases of **redundancy** like
-C is dependant on A, and D is dependant on C and A. You must
-remove $A \to D$ because we got by transitivity
-since we have $A \to C \to D$.
+**Note**: You may have some cases of **redundancy** like C is dependant on A, and D is dependant on C and A. You must remove $A \to D$ because we got by transitivity since we have $A \to C \to D$.
 
 <hr class="sl">
 
 ## Example
 
-This is a specifications table in French. Nothing complicated,
-you got the task id (A, B, ...), the task full name, the
-duration (=cost), and the dependencies.
+This is a specifications table in French. Nothing complicated, you got the task id (A, B, ...), the task full name, the duration (=cost), and the dependencies.
 
 ![](images/pt.png)
 
@@ -57,8 +49,7 @@ And the resulting Metra potential diagram is
 * D early start is C early start + C cost: $30+8=38$
 * ...
 
-As for the last start, once we did all the early_start
-value, starting from the End
+As for the last start, once we did all the early_start value, starting from the End
 
 * End's last_start is early_start value (always)
 * J's last_start is $85-6=79$ (End's last_start minus J cost)
@@ -74,8 +65,7 @@ value, starting from the End
 
 As for the free margin
 
-* we are trying to get a total margin without
-  changing the next early_date
+* we are trying to get a total margin without changing the next early_date
 * J's free margin is $x + 69 + 6 \le 85 \Leftrightarrow x=10$
 * H's free margin is $x + 55 + 14 \le 69 \Leftrightarrow x=0$
 * I's free margin is $x + 30 + 7 \le 69 \Leftrightarrow x=32$

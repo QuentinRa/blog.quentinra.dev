@@ -2,14 +2,9 @@
 
 [Go back](..#advanced-terminology)
 
-A graph is connected (`connexe`) if we only have
-one connected component (`composante connexe`). Otherwise,
-we are calling the graph disconnected (`non connexe`).
+A graph is connected (`connexe`) if we only have one connected component (`composante connexe`). Otherwise, we are calling the graph disconnected (`non connexe`).
 
-A connected component is subgraph of $G$ while all
-vertex inside are connected. A strong component
-(`composante connexe maximale`) is a connected component
-in which we can't add more vertex inside.
+A connected component is subgraph of $G$ while all vertex inside are connected. A strong component (`composante connexe maximale`) is a connected component in which we can't add more vertex inside.
 
 **Algorithm**
 
@@ -17,22 +12,18 @@ in which we can't add more vertex inside.
 * start with the first connected component $C_i$, $i=0$
 * while there are vertex remaining
   * for each vertex
-    * if $C_i$ is empty or this vertex is adjacent to a vertex
-      inside $C_i$
+    * if $C_i$ is empty or this vertex is adjacent to a vertex inside $C_i$
     * then: we add it
     * else: we go to the next vertex
   * i++
 
-When iterating the vertices, you should do it by looking
-at the vertex in the edges that incident to a vertex inside
-your connected component.
+When iterating the vertices, you should do it by looking at the vertex in the edges that incident to a vertex inside your connected component.
 
 <hr class="sl">
 
 ## Super-connectivity
 
-A graph is super-connected ``Forte connexité/f-connexe``
-if from any vertex, we can go to any other vertex.
+A graph is super-connected `Forte connexité/f-connexe` if from any vertex, we can go to any other vertex.
 
 **Algorithm**
 
@@ -51,10 +42,7 @@ Note: a complete graph is super-connected.
 
 * reduced graph (``Graphe réduit``)
 
-If $C_1, C_2, C_3$ are super-connected components, then
-a graph having the nodes $C_1, C_2, C_3$
-is called ``Graphe réduit``. If $A \in C_1$ was adjacent
-to $B \in C_2$ then we have $C_1$ is adjacent to $C_2$.
+If $C_1, C_2, C_3$ are super-connected components, then a graph having the nodes $C_1, C_2, C_3$ is called ``Graphe réduit``. If $A \in C_1$ was adjacent to $B \in C_2$ then we have $C_1$ is adjacent to $C_2$.
 
 * Bridge (`isthme`)
 
@@ -90,8 +78,7 @@ Let's apply our connected algorithm
 
 ![](images/connected/connected1-2.svg)
 
-4. We got only one component so the graph is connected.
-The graph do seems to be super-connected.
+4. We got only one component so the graph is connected. The graph do seems to be super-connected.
 
 Let's apply the super-connected algorithm
 
@@ -105,8 +92,7 @@ The graph is super-connected.
 
 ## Example 2 - Transitive closure and Connectivity
 
-Is the following graph $G$ super-connected?
-Tip: use the transitive closure.
+Is the following graph $G$ super-connected? Tip: use the transitive closure.
 
 ![](images/connected/connected2.png)
 
@@ -116,9 +102,7 @@ Applying Roy-Warshall algorithm, we got
 
 ![](images/connected/connected2-1.svg)
 
-As you may notice, this is a complete graph
-$K_{6}$. Since the transitive closure is a complete
-graph, then $G$ is super-connected.
+As you may notice, this is a complete graph $K_{6}$. Since the transitive closure is a complete graph, then $G$ is super-connected.
 
 This wasn't the example goal but here is Roy-Warshall algorithm
 

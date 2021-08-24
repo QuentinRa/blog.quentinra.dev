@@ -2,10 +2,7 @@
 
 [Go back](..#sorting-and-search)
 
-In French it's called ``Parcours en profondeur``. To summarize,
-you will traverse a path until you can't go further, then
-come back at a previous branching and do it again until
-you traversed every branch.
+In French it's called ``Parcours en profondeur``. To summarize, you will traverse a path until you can't go further, then come back at a previous branching and do it again until you traversed every branch.
 
 **Algorithm**
 
@@ -31,9 +28,7 @@ Use the Depth-first search on this graph.
 
 ![](images/dfs.svg)
 
-We are starting at **h** because that's my choice.
-I will use the syntax $\text{a, b, c} \to \text{a}$ to say that among the
-available neighbor vertex, I picked $a$. 
+We are starting at **h** because that's my choice. I will use the syntax $\text{a, b, c} \to \text{a}$ to say that among the available neighbor vertex, I picked $a$. 
 
 * a vertex is available if it's not in done
 * when picking a vertex, it's random among the vertex that are not in Marked
@@ -193,6 +188,4 @@ I used a table to make things easier to look at.
     </tbody>
 </table>
 
-"Marked" is the algorithm results since you can see
-exactly what path we took. But if you want all the
-vertex we found, then that's in "done".
+"Marked" is the algorithm results since you can see exactly what path we took. But if you want all the vertex we found, then that's in "done".

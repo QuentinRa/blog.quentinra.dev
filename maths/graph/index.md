@@ -12,13 +12,11 @@ You will use graphs in databases in GraphDatabase, check the NoSQL course if tha
 
 A graph can be simple/multiple and directed or not.
 
-* **simple graph** (``graphe simple``): up to one edge between
-  two vertex (2 if "directed graph") and no loop/self-edges.
+* **simple graph** (``graphe simple``): up to one edge between two vertex (2 if "directed graph") and no loop/self-edges.
 * **multiple graph** (`graphe complexes`): graphs that are not simple
 * **undirected graph** (`Graphe non orientés (GNO)`): edges do not have a direction,
   they are written $(a,b)$
-* **directed graph** (`Graphe orientés (GO)`): edges, called arcs, have a direction,
-  they are written $[a,b]$
+* **directed graph** (`Graphe orientés (GO)`): edges, called arcs, have a direction, they are written $[a,b]$
 
 <table class="table table-bordered table-dark table-striped">
     <thead>
@@ -39,8 +37,7 @@ A graph can be simple/multiple and directed or not.
                 <code>arc</code>
             </td>
             <td>
-                The keyword for edges in changing
-                if the graph is directed or not.
+                The keyword for edges in changing if the graph is directed or not.
             </td>
         </tr>
         <tr>
@@ -53,10 +50,7 @@ A graph can be simple/multiple and directed or not.
                 <code>chemin</code>
             </td>
             <td>
-                Each vertex degree is 2
-                aside from the extremities (degree=1).
-                If the graph is directed, we must be able
-                to go from one extremity to the other.
+                Each vertex degree is 2 aside from the extremities (degree=1). If the graph is directed, we must be able to go from one extremity to the other.
             </td>
         </tr>
         <tr>
@@ -69,10 +63,7 @@ A graph can be simple/multiple and directed or not.
                 <code>circuit</code>
             </td>
             <td>
-                Each vertex degree is 2. This is also
-                called "closed walk/path/...". If a graph
-                does not have cycles, then the graph is
-                <u>acyclic</u>.
+                Each vertex degree is 2. This is also called "closed walk/path/...". If a graph does not have cycles, then the graph is <u>acyclic</u>.
             </td>
         </tr>
         <tr>
@@ -85,9 +76,7 @@ A graph can be simple/multiple and directed or not.
                 <code>étoile</code>
             </td>
             <td>
-                One vertex degree is $|V|-1$ and
-                the others are of degree $1$. It's a vertex
-                linked to all other vertices.
+                One vertex degree is $|V|-1$ and the others are of degree $1$. It's a vertex  linked to all other vertices.
             </td>
         </tr>
         <tr>
@@ -100,11 +89,7 @@ A graph can be simple/multiple and directed or not.
                 <code>roue</code>
             </td>
             <td>
-                One vertex degree is $|V|-1$ and
-                the others are of degree $3$. It's a vertex
-                linked to all other vertices and each
-                vertex is linked to two aside from the center
-                of the wheel.
+                One vertex degree is $|V|-1$ and the others are of degree $3$. It's a vertex linked to all other vertices and each vertex is linked to two aside from the center of the wheel.
             </td>
         </tr>
         <tr>
@@ -117,9 +102,7 @@ A graph can be simple/multiple and directed or not.
                 <code>papillon</code>
             </td>
             <td>
-                One vertex degree is $|V|-1=4$ and
-                the others are of degree $2$. The graph is
-                make of $6$ edges and $5$ vertices.
+                One vertex degree is $|V|-1=4$ and the others are of degree $2$. The graph is make of $6$ edges and $5$ vertices.
             </td>
         </tr>
     </tbody>
@@ -131,8 +114,7 @@ Note: the degree is the number of neighbors, see next part.
 
 ## Terminology
 
-I marked with a little star `*`, the keywords that we are
-not using often (and that you may learn later).
+I marked with a little star `*`, the keywords that we are not using often (and that you may learn later).
 
 <table class="table table-bordered table-dark table-striped">
     <thead>
@@ -148,12 +130,7 @@ not using often (and that you may learn later).
                 <code>Adjacent/Voisins</code>
             </td>
             <td>
-                Two nodes are adjacent if they are linked
-                by an edge. <br><br>
-                The notation is $N(X)$ or $\Gamma(X)$ (gamma)
-                for the adjacent nodes of X. With arcs, we use
-                $N^{+}(X)$ (arc entering/arriving, in-degree) and
-                $N^{-}(X)$ (arc exiting, out-degree).
+                Two nodes are adjacent if they are linked by an edge. <br><br>  The notation is $N(X)$ or $\Gamma(X)$ (gamma) for the adjacent nodes of X. With arcs, we use$N^{+}(X)$ (arc entering/arriving, in-degree) and $N^{-}(X)$ (arc exiting, out-degree).
             </td>
         </tr>
         <tr>
@@ -163,10 +140,7 @@ not using often (and that you may learn later).
             </td>
             <td>
                 The number of neighbors. <br><br>
-                The notation is $d(X) = |\Gamma(X)|$. In a directed
-                graph, this is $|\Gamma^{+}(X)| + |\Gamma^{-}(X)| = d^+(X) + d^-(X)$.
-                (called <code>demi degré extérieur/prédécesseur (entrants)</code> and
-                <code>demi degré intérieur/successeur (sortants)</code>).
+                The notation is $d(X) = |\Gamma(X)|$. In a directed graph, this is $|\Gamma^{+}(X)| + |\Gamma^{-}(X)| = d^+(X) + d^-(X)$. (called <code>demi degré extérieur/prédécesseur (entrants)</code> and <code>demi degré intérieur/successeur (sortants)</code>).
             </td>
         </tr>
         <tr>
@@ -175,8 +149,7 @@ not using often (and that you may learn later).
                 <code>incidence</code>
             </td>
             <td>
-                A vertex is incident to an edge if they
-                are linked.
+                A vertex is incident to an edge if they are linked.
             </td>
         </tr>
         <tr>
@@ -185,9 +158,7 @@ not using often (and that you may learn later).
                 <code>ordre</code>
             </td>
             <td>
-                The number of vertices, $|V|$, $|V(G)|$
-                  while the cardinal $|V|$ (=the number of elements of a set V)
-                  can also be noted, $\#V$ or $Card(V)$.
+                The number of vertices, $|V|$, $|V(G)|$ while the cardinal $|V|$ (=the number of elements of a set V) can also be noted, $\#V$ or $Card(V)$.
             </td>
         </tr>
         <tr>
@@ -196,9 +167,7 @@ not using often (and that you may learn later).
                 <code>Densité</code>
             </td>
             <td>
-                This is the number of edges of our graph
-                divided by the number of edge of the complete
-                graph (see below).
+                This is the number of edges of our graph divided by the number of edge of the complete graph (see below).
             </td>
         </tr>
     </tbody>
@@ -225,13 +194,7 @@ There is also names for graph having some properties
                 <code>cycle/chaine élémentaire</code>
             </td>
             <td>
-                A cycle/circuit in which each traversed
-                vertex is only traversed once.
-                <span class="tms">
-                If the use
-                of path is disturbing for you, then read
-                the RandomFolkNote at the end of the course.
-                </span>
+                A cycle/circuit in which each traversed vertex is only traversed once. <span class="tms">If the use of path is disturbing for you, then read the RandomFolkNote at the end of the course.</span>
             </td>
         </tr>
         <tr>
@@ -240,9 +203,7 @@ There is also names for graph having some properties
                 <code>Graphe k-régulier</code>
             </td>
             <td>
-                A regular graph or d-regular graph
-                is a graph where all degrees have the same
-                value (d, for instance 3-regular graph).
+A regular graph or d-regular graph is a graph where all degrees have the same value (d, for instance 3-regular graph).
             </td>
         </tr>
         <tr>
@@ -251,9 +212,7 @@ There is also names for graph having some properties
                 <code>Graphe complet</code>
             </td>
             <td>
-                Each and every vertex is adjacent to all
-                other vertices aside itself giving
-                $|V| = \frac{n(n-1)}{2}$.
+Each and every vertex is adjacent to all other vertices aside itself giving $|V| = \frac{n(n-1)}{2}$.
             </td>
         </tr>
         <tr>
@@ -262,12 +221,7 @@ There is also names for graph having some properties
                 <code>Graphe bi-parti</code>
             </td>
             <td>
-                We can split the vertices in 2 groups:
-                the group having a degree a and the group
-                having a degree b with $b > a \ge 1$.
-                Each vertex in
-                the first group must we adjacent to $a$ vertex
-                in the second (resp. second group and $b$).
+We can split the vertices in 2 groups: the group having a degree a and the group having a degree b with $b > a \ge 1$. Each vertex in the first group must we adjacent to $a$ vertex in the second (resp. second group and $b$).
             </td>
         </tr>
         <tr>
@@ -276,9 +230,7 @@ There is also names for graph having some properties
                 <code>Sous-graphe/Graphe induit</code>
             </td>
             <td>
-                $G'$ is a subgraph of $G$ if we only removed
-                $G$ vertices and their incident edges (like you 
-                can't remove an edge alone). 
+$G'$ is a subgraph of $G$ if we only removed $G$ vertices and their incident edges (like you can't remove an edge alone). 
             </td>
         </tr>
         <tr>
@@ -296,12 +248,7 @@ There is also names for graph having some properties
                 <code>Complémentaire</code>
             </td>
             <td>
-                The complement of a graph is a graph
-                in which we are creating all the edges
-                that didn't exists while removing the existing
-                ones. Like if we have $A-B-C$ then the
-                then the complementary graph 
-                would be $A-C\hspace{.5cm}B$.
+The complement of a graph is a graph in which we are creating all the edges that didn't exists while removing the existing ones. Like if we have $A-B-C$ then the then the complementary graph would be $A-C\hspace{.5cm}B$.
             </td>
         </tr>
         <tr>
@@ -310,10 +257,7 @@ There is also names for graph having some properties
                 <code>Isomorphe</code>
             </td>
             <td>
-                Let two graph $G$ and $H$. If we can move some
-                nodes and get the same graph then
-                there is an isomorphism. More formally, that's bijection between then.
-                simply checking if there is a bijection between then.
+Let two graph $G$ and $H$. If we can move some nodes and get the same graph then there is an isomorphism. More formally, that's bijection between then. simply checking if there is a bijection between then.
             </td>
         </tr>
     </tbody>
@@ -350,8 +294,7 @@ You can search a graph using
 * [Depth-first search](manip/dfs.md)
 * [Breadth-first search](manip/bfs.md)
 
-And you can solve the problems of passing once by
-a edge/vertex with
+And you can solve the problems of passing once by a edge/vertex with
 
 * [Eulerian graph](manip/euler.md)
 * [Hamiltonian graph](manip/hamilton.md)
@@ -360,34 +303,20 @@ a edge/vertex with
 
 ## Graph coloring problems
 
-One of the uses of the stable/independent set
-is for the graph coloring problems. You will try to color
-a graph (vertex/edges) will the least colors.
+One of the uses of the stable/independent set is for the graph coloring problems. You will try to color a graph (vertex/edges) will the least colors.
 
 * [Vertex coloring](coloring/vertex.md)
 * [Edge coloring](coloring/edges.md)
 
-What you learned here is very similar to the notion
-of independent set. In fact, you can use Grundy to find
-a coloration. I do not know why we learned those separately.
-Look for [Grundy number or Grundy chromatic number](https://en.wikipedia.org/wiki/Grundy_number).
+What you learned here is very similar to the notion of independent set. In fact, you can use Grundy to find a coloration. I do not know why we learned those separately. Look for [Grundy number or Grundy chromatic number](https://en.wikipedia.org/wiki/Grundy_number).
 
-A graph coloring problem could be something like
-"A, B, C, D, E" must pass some tests but they can't be in
-the same room for the same test. We are giving you a table
-of which tests they are passing and your goal is to
-find the minimum of rooms needed. You can also have
-a similar problem like "A, B, C, D, E" can't be in
-the same room (you got a table of which one can't be with which one)
-and you have to find at least how many rooms are needed
-(make a graph of which can't be with which and solve it).
+A graph coloring problem could be something like "A, B, C, D, E" must pass some tests but they can't be in the same room for the same test. We are giving you a table of which tests they are passing and your goal is to find the minimum of rooms needed. You can also have a similar problem like "A, B, C, D, E" can't be in the same room (you got a table of which one can't be with which one) and you have to find at least how many rooms are needed (make a graph of which can't be with which and solve it).
 
 <hr class="sr">
 
 ## Trees
 
-A tree is a graph having one of these properties
-(they are equivalent)
+A tree is a graph having one of these properties (they are equivalent)
 
 * connected and acyclic (=no cycles)
 * one path between two nodes
@@ -422,33 +351,22 @@ In French it's ``Ordonnancement``. You are given
 * a list of tasks and their dependencies (like a task need another one to be done first)
 * a tasks duration
 
-And your job is to create the best schedule meaning that
-you must find the best way to organize the tasks making
-the project the shorter possible.
+And your job is to create the best schedule meaning that you must find the best way to organize the tasks making the project the shorter possible.
 
-It's not only used in project, but here we are considering
-that we can execute an unlimited number of tasks in parallel
-and we do not take delays in account so it's a simplified
-version of scheduling.
+It's not only used in project, but here we are considering that we can execute an unlimited number of tasks in parallel and we do not take delays in account so it's a simplified version of scheduling.
 
 * [Terminology](scheduling/index.md)
 * [Critical path analysis](scheduling/cpa.md)
 * [Metra potential method](scheduling/pt.md)
 * [P.E.R.T. method](scheduling/pert.md)
 
-You should have noticed but our two methods are giving the
-same result (same critical path, same optimal duration, ...).
-This is a way of checking that you did things right. Note
-that the will be some differences on the early_start/last_start
-values.
+You should have noticed but our two methods are giving the same result (same critical path, same optimal duration, ...). This is a way of checking that you did things right. Note that the will be some differences on the early_start/last_start values.
 
 <hr class="sl">
 
 ## The random folk note
 
-I don't know how should I interpret this, but French
-and English do not seems to agree on the terminology. I'm
-a bit confused so I'm not changing the course content.
+I don't know how should I interpret this, but French and English do not seems to agree on the terminology. I'm a bit confused so I'm not changing the course content.
 
 They are using walk for ``chaine/chemin``, but
 
@@ -472,8 +390,7 @@ There is also a divergence on the incidence matrix
 
 ## Sources
 
-This is a list of all Wikipedia pages that you may
-want to check
+This is a list of all Wikipedia pages that you may want to check
 
 * <https://en.wikipedia.org/wiki/Graph_theory>
 * <https://en.wikipedia.org/wiki/Glossary_of_graph_theory>

@@ -2,9 +2,7 @@
 
 [Go back](..)
 
-The weight can be either positive or negative
-(complexity $O(m^2)$). This algorithm is giving the
-shortest path starting from any vertex to any vertex.
+The weight can be either positive or negative (complexity $O(m^2)$). This algorithm is giving the shortest path starting from any vertex to any vertex.
 
 * create the incidence matrix
   * put the weight if you have one

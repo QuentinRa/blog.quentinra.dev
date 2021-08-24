@@ -4,10 +4,7 @@
 
 You must use the **least colors**, taking into account that **neighbors can't have the same color**, while coloring the Graph.
 
-We are calling chromatic number (``nombre chromatique``)
-$\gamma(G)$ (gamma) or $\chi(G)$ (chi) of $G$ the minimum
-number of colors that we will have to use to color the graph.
-This is a value hard to found but we know
+We are calling chromatic number (``nombre chromatique``) $\gamma(G)$ (gamma) or $\chi(G)$ (chi) of $G$ the minimum number of colors that we will have to use to color the graph. This is a value hard to found but we know
 
 * $1 \le \gamma(G) \le n$
 * if a graph is not planar: $\gamma(G)=|V|$
@@ -18,8 +15,7 @@ This is a value hard to found but we know
 * minoring: $\gamma(G) \ge |\text{longest_clique_of_G}|$
 * majoring: $\gamma(G) \le d_{max}(G)+1$ <span class="tms">(max degree+1)</span>
 
-The solution is say to be optimal when we can't find
-a better one.
+The solution is say to be optimal when we can't find a better one.
 
 <hr class="sr">
 
@@ -29,12 +25,9 @@ a better one.
 * while all vertices are not colored
     * pick the first not colored vertex
     * pick an unused color
-    * while conserving the order above, color every uncolored
-      vertex, not adjacent to the ones we are coloring with
-      this color
+    * while conserving the order above, color every uncolored vertex, not adjacent to the ones we are coloring with this color
 
-To check if the solution is the best one, check if
-the solution is
+To check if the solution is the best one, check if the solution is
 
 * greater than the minoring: not the best one
 * equals than the minoring: good
@@ -43,15 +36,12 @@ the solution is
 
 ## Contraction
 
-In French it's called ``Algorithme Reliement-contraction``.
-We are either
+In French it's called ``Algorithme Reliement-contraction``. We are either
 
 * contracting two vertex
 * linking two vertex with an edge
 
-Your goal is to get a clique. This algorithm is
-evaluated as $2^z$ graph to make, with $z$ the number
-of edges missing for the graph to be complete.
+Your goal is to get a clique. This algorithm is evaluated as $2^z$ graph to make, with $z$ the number of edges missing for the graph to be complete.
 
 Algorithm
 
@@ -60,28 +50,19 @@ Algorithm
     * one contracting two vertex
     * one linking two vertex
 
-Once you are done, all the graph at the end should be
-complete graphs. The degree of the smallest clique is
-the chromatic number. Note that the vertex in the smallest
-clique that are contracted together will have the same
-color.
+Once you are done, all the graph at the end should be complete graphs. The degree of the smallest clique is the chromatic number. Note that the vertex in the smallest clique that are contracted together will have the same color.
 
 <hr class="sr">
 
 ![](images/Tensei_Shitara_dai_Nana_Ouji_dattanode,_Kimamani_Majutsu_o_Kiwamemasu.png)
 
-Source: Tensei Shitara dai Nana Ouji dattanode, Kimamani Majutsu o Kiwamemasu
-<span class="tms">
-(alias: the Trap)
-</span>.
+Source: Tensei Shitara dai Nana Ouji dattanode, Kimamani Majutsu o Kiwamemasu <span class="tms">(alias: the Trap)</span>.
 
 <hr class="sl">
 
 ## Exercise 1 - Greedy algorithm
 
-Use Welsh-Powell greedy algorithm and find
-the coloration for the following graph. Is it the
-optimal solution?
+Use Welsh-Powell greedy algorithm and find the coloration for the following graph. Is it the optimal solution?
 
 ![](images/coloring1.png)
 
@@ -99,87 +80,27 @@ Giving us the following table
 * x=not colored since neighbor to a colored
 * "nothing"=already colored
 
-<table class="table table-striped table-bordered">
-    <thead>
-        <tr>
-            <th>Colors\Vertex</th>
-            <th>D</th>
-            <th>F</th>
-            <th>A</th>
-            <th>C</th>
-            <th>B</th>
-            <th>G</th>
-            <th>H</th>
-            <th>E</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Red</td>
-            <td>o</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-        </tr>
-        <tr>
-            <td>Yellow</td>
-            <td></td>
-            <td>o</td>
-            <td>x</td>
-            <td>o</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-        </tr>
-        <tr>
-            <td>Green</td>
-            <td></td>
-            <td></td>
-            <td>o</td>
-            <td></td>
-            <td>x</td>
-            <td>x</td>
-            <td>o</td>
-            <td>x</td>
-        </tr>
-        <tr>
-            <td>Blue</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>o</td>
-            <td>o</td>
-            <td></td>
-            <td>o</td>
-        </tr>
-    </tbody>
-</table>
+| Colors\Vertex | D | F | A | C | B | G | H | E |
+|---------------|---|---|---|---|---|---|---|---|
+| Red           | o | x | x | x | x | x | x | x |
+| Yellow        |   | o | x | o | x | x | x | x |
+| Green         |   |   | o |   | x | x | o | x |
+| Blue          |   |   |   |   | o | o |   | o |
 
-We are checking: the longest clique
-is $D-C-A-H$ (size=4) and size we colored the graph
-in $4$ colors, this is the optimal solution. We
-also had the clique $F-D-G-E$.
+We are checking: the longest clique is $D-C-A-H$ (size=4) and size we colored the graph in $4$ colors, this is the optimal solution. We had the clique $F-D-G-E$ too.
 </blockquote>
 
 <hr class="sr">
 
 ## Exercise 2 - Contraction
 
-Use the contraction algorithm and find
-the coloration for the following graph.
+Use the contraction algorithm and find the coloration for the following graph.
 
 ![](images/coloring2.png)
 
 <blockquote class="spoiler">
 
-We got 4 missing edges so up to $2^4=16$ graphs we will have
-to make for $[c,b], [d,b], [e,b], [c,f]$.
+We got 4 missing edges so up to $2^4=16$ graphs we will have to make for $[c,b], [d,b], [e,b], [c,f]$.
 
 ![](images/coloring2-1.png)
 
@@ -187,8 +108,7 @@ And the result is
 
 ![](images/coloring2-2.png)
 
-with L=Link and C=Contraction. The smallest
-clique (the checked graphs) is 
+with L=Link and C=Contraction. The smallest clique (we are among the graphs with the symbol ✔️) is 
 
 * $CF-DB-E-A$: 4 colors
 * $CF-D-BE-A$: 4 colors
