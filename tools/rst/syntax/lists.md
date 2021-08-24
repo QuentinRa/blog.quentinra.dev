@@ -2,6 +2,8 @@
 
 [Go back](..#writing-rst-documents)
 
+This is the same as in Markdown.
+
 ```rest
 * unordered list
 * unordered list

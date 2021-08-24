@@ -2,8 +2,7 @@
 
 [Go back](..#writing-documents)
 
-Here is how you would write code with
-OCaml highlighting
+Here is an example of highlighting code in OCaml, using the package `minted`.
 
 ```latex
 \documentclass{article}

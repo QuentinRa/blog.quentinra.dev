@@ -2,6 +2,8 @@
 
 [Go back](..#writing-rst-documents)
 
+You could use `code-block` directive, but `code` is still used quite a lot. You can include a whole file with `literalinclude`, or simply use some inline code with `:code:`.
+
 ```rest
 .. code-block:: language
 

@@ -2,8 +2,7 @@
 
 [Go back](..#writing-rst-documents)
 
-These can be useful since they should make your documentation
-more readable.
+Directives like `note`, `warning`, `important`, are useful because they should make your documentation more readable.
 
 ```rest
 
