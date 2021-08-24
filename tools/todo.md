@@ -1,5 +1,7 @@
 ## Todo
 
+- InnoSetup
+  - add flags used in Eden
 - Docker
     - check docker notes (sound)
 - JetBrains

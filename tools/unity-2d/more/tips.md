@@ -1,6 +1,10 @@
 # Tips
 
-[Go back](index.md)
+[Go back](../index.md)
+
+A bunch of tips about Unity, this is a summary of every tips I was given.
+
+<hr class="sl">
 
 ## Optimization
 

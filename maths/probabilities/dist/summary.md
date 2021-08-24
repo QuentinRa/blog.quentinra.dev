@@ -2,10 +2,10 @@
 
 [Go back](..#cheatsheet)
 
-Discrete distributions
+A summary of the discrete distributions
 
 <div class="d-print-table table-responsive">
-<table class="table table-bordered table table-striped">
+<table class="table table-striped">
     <thead>
         <tr>
             <th style="min-width: 50px;">Name</th>
@@ -94,10 +94,10 @@ Discrete distributions
 </table>
 </div>
 
-Continuous distributions
+and the continuous distributions
 
 <div class="d-print-table table-responsive">
-<table class="table table-bordered table table-striped">
+<table class="table table-striped">
     <thead>
         <tr>
             <th style="min-width: 50px;">Name</th>

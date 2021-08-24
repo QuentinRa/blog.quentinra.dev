@@ -21,9 +21,7 @@ Then what I did after that was playing with the samples
 and following tutorials like 
 [RPG in 1 hour](https://learn.unity.com/project/creator-kit-rpg?uv=2020.3)
 
-Some tips I'm gathering [tips about unity here](tips.md)
-and [here are my notes about the
-TopDownEngine](tde.md) (a paid asset).
+Some tips I'm gathering [tips about unity here](more/tips.md), and [here are my notes about the TopDownEngine](more/tde.md) (a paid asset).
 
 <hr class="sr">
 
