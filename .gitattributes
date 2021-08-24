@@ -1,0 +1,6 @@
+info/*.md linguist-documentation=false linguist-detectable=true
+maths/*.md linguist-documentation=false linguist-detectable=true
+proj/*.md linguist-documentation=false linguist-detectable=true
+special/*.md linguist-documentation=false linguist-detectable=true
+tools/*.md linguist-documentation=false linguist-detectable=true
+.summary/*.json linguist-detectable=true
