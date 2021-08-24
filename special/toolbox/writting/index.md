@@ -2,11 +2,11 @@
 
 [Go back](..)
 
-I'm quite usefull having tools that are reading and telling you what mistake you made (vocabulary, grammar, tone, punctuation, etc.). 
+I think, it's quite useful to have tools that are reading and telling you what mistakes made (vocabulary, grammar, tone, punctuation, etc.). 
 
-In English, the best tool so far is [Grammarly](https://grammarly.com) for me.
+In English, the best tool for me so far  is [Grammarly](https://grammarly.com).
 
-* it's free as long as you create an account
+* it's free as long as you create an account (🙁)
 * it's fixing a lot of mistakes, including the problems like a word making no sense in a context, etc.
 
-I do enjoy using <https://languagetool.org/> (with an account too), but there are a lot more false positives hints.
+I do enjoy using <https://languagetool.org/> (with an account too), but there is a lot more of false positives.
