@@ -19,9 +19,9 @@ This page is a **summary of the syntax that we are using** in Markdown, and how 
 
 Notes
 
-* a permalink icon is added to each header (#content-{title}).
 * you can use headers h3 to h6, but they will be rendered as if they were h2. You should split a big page, so that such a situation does not happen. An alternative would be to use bold.
-* if you add more than one header h1, they will be rendered using the style shown above, but their html tag will be h2
+* **version 1.2.0**: a permalink icon is added to each header (#content-{title}).
+* **version 1.2.0**: if you add more than one header h1, they will be rendered using the style shown above, but their html tag will be h2
 
 <hr class="sep-both">
 
@@ -49,34 +49,76 @@ Notes
 
 <hr class="sep-both">
 
-## 1.4 Links, images, and files
+## 1.4 Links and images
 
 | Markdown | Description | HTML | Preview |
 |----------|----------|----------|----------|
-| `[a link](URL)` | a link | &lt;a href="URL" target="_blank" rel="noopener noreferrer"&gt;a link&lt;/a&gt; | 	<a href="https://github.com/lgs-games/memorize" target="_blank" rel="noopener noreferrer">a link</a> |
+| `[a link](URL)` | a link | &lt;a href="https://github.com/lgs-games/memorize" target="_blank" rel="noopener noreferrer"&gt;a link&lt;/a&gt; | 	<a href="https://github.com/lgs-games/memorize" target="_blank" rel="noopener noreferrer">a link</a> |
 | `<URL>` | same as `[URL](URL)` | ... | ... |
+| `[a link](download:URL/a_file.pdf)`| download link | &lt;a href="URL" download &gt;a link&lt;/a&gt; | **removed** since v1.3.0 |
+| `![alt](URL)` | an image | &lt;img src="URL" alt="alt" title="alt" class="mw-100" &gt; | <img src="http://memorize.lgs-games.etu/assets/icon64.png" class="mw-100" alt="icon" title="icon" > |
 
 <hr class="sep-both">
 
-## 1.5 Special
+## 1.5 Lists
+
+| Markdown | Description | HTML | Preview |
+|----------|----------|----------|----------|
+| <code>- item<br>- item</code> | unordered list | &lt;ul&gt;&lt;li&gt;item&lt;/li&gt;&lt;li&gt;item&lt;/li&gt;&lt;/ul&gt; | <ul><li>item</li><li>item</li></ul> |
+| <code>1. item<br>2. item</code> | ordered list | &lt;ol&gt;&lt;li&gt;item&lt;/li&gt;&lt;li&gt;item&lt;/li&gt;&lt;/ol&gt; | <ol><li>item</li><li>item</li></ol> |
+
+You can nest a list inside another list.
+
+<hr class="sep-both">
+
+## 1.6 Table
+
+Since **version 1.3.0**, you can use a **table**. The syntax is the same as in the [Markdown course](../tools/markdown/index.md#content-table). The HTML code is
+
+```html
+<table class="table table-bordered table-striped border-dark"><thead><tr>
+<!-- column names -->
+<th>Markdown</th><th>Description</th><th>HTML</th><th>Preview</th>
+</tr></thead><tbody>
+<!-- first row -->
+<tr><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<!-- ... -->
+</tbody></table>
+```
+
+And the result is 
+
+<table class="table table-bordered table-striped border-dark"><thead><tr>
+<!-- column names -->
+<th>Markdown</th><th>Description</th><th>HTML</th><th>Preview</th>
+</tr></thead><tbody>
+<!-- first row -->
+<tr><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<!-- ... -->
+</tbody></table>
+
+* if you need a dark table, use the HTML, and replace "border-dark" with "table-dark"
+
+<hr class="sep-both">
+
+## 1.7 Special
 
 | Markdown | Description | HTML | Preview |
 |----------|----------|----------|----------|
 | ❌ | quote | &lt;q&gt;text&lt;/q&gt; | <q>text</q> |
 | `> text` | blockquote |  &lt;blockquote&gt;text&lt;/blockquote&gt; | <blockquote>text</blockquote> |
-
-Since **version 1.3.0**, you can use a table. The syntax and the preview are the same as in the [Markdown course](../tools/markdown/index.md#table).
+| `- [ ] task` | checkbox (checked) | &lt;input disabled="" type="checkbox" checked&gt; | <input disabled="" type="checkbox"> (since v1.1.0) |
+| `- [x] task` | checkbox (checked) | &lt;input disabled="" type="checkbox"&gt; | <input disabled="" type="checkbox" checked> (since v1.1.0) |
+| [comment]: <> (...) | a comment | &lt;!-- ... --&gt; | 🤐 |
 
 <hr class="sep-both">
 
-## 1.6 Math
+## 1.8 Math
 
 | Markdown | Description | HTML | Preview |
 |----------|----------|----------|----------|
-| `text $latex$ text` | inline math | &lt;p&gt;Text \($5 \neq 3 + 1\) text.&lt;/p&gt; | Text $5 \neq 3 + 1$ text. |
-| `text @latex@ text` | math block |  &lt;div&gt;<br>Text \[$5 \neq 3 + 1\] text.<br>&lt;/div&gt; | Text @5 \neq 3 + 1@ text. |
-| ❌ | inline math | ❌ omitted ❌ | Text $5 \neq 3 + 1$ text. |
-| `text @latex@ text` | math block | ❌ omitted ❌ | Text @5 \neq 3 + 1@ text. |
+| `text $latex$ text` | inline math | &lt;p&gt;Text \\\\($5 \neq 3 + 1\\\\) text.&lt;/p&gt; | Text $5 \neq 3 + 1$ text. |
+| `text @latex@ text` | math block |  &lt;div&gt;<br>Text \\\\[$5 \neq 3 + 1\\\\] text.<br>&lt;/div&gt; | <div>Text \\[$5 \neq 3 + 1\\] text.</div> |
 
 As you could guess
 
@@ -90,7 +132,7 @@ But, you should note
 
 <hr class="sep-both">
 
-## 1.6 Usage
+## 1.9 Usage
 
 * You should **split a page in sections** using a separator, the code is
 
@@ -99,6 +141,12 @@ But, you should note
 <hr class="sl">
 <!-- right-tailed -->
 <hr class="sr">
+<!-- both (since v1.3.0) -->
+<hr class="sep-both">
 ```
+
+* you **can use HTML**
+
+We are allowing HTML, but note using style is not recommended, while scripts aren't allowed. <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank" rel="noopener noreferrer">Bootstrap</a> classes are allowed.
 
 </div>
