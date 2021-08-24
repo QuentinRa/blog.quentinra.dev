@@ -2,6 +2,8 @@
 
 [Go back](../c.md)
 
+This is how you are documenting an enum. You need to add documentation for the enum as a whole, and for each value.
+
 ```c
 /*!
  * \typedef NEW_NAME

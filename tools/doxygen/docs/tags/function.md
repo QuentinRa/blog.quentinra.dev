@@ -2,6 +2,8 @@
 
 [Go back](../c.md)
 
+You may want to add the function declaration in the description, with `\fun`, but I'm not doing it, and it's optional.
+
 ```c
 /*!
 * \brief short description

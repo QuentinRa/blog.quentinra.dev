@@ -2,6 +2,8 @@
 
 [Go back](../c.md)
 
+This is how you are commenting a structure. You need to add documentation for the structure as a whole, and for each field.
+
 ```c
 /*!
 * \typedef NEW_NAME

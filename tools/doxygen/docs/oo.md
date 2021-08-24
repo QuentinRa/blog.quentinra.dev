@@ -1,4 +1,4 @@
-## Doxygen in Object-Oriented Languages
+# Doxygen in Object-Oriented Languages
 
 [Go back](..#write-documentation)
 

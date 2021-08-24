@@ -1,10 +1,8 @@
-## Doxygen in C
+# Doxygen in C
 
 [Go back](..)
 
-You will use these not only in C but everywhere else
-but I wrote ``C`` since they only got tested in C.
-This is a list of the tags you will use
+You will use these not only in C but everywhere else but I wrote ``C`` since they only got tested in C. This is a list of the tags you will use
 
 * [For a file](tags/file.md)
 * [For a folder](tags/folder.md)
