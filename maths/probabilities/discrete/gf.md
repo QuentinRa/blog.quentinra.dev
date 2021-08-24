@@ -2,18 +2,15 @@
 
 [Go back](..)
 
-When dealing with combinatorics, generating
-functions (`Fonction génératrice`)
+When dealing with combinatorics, generating functions (`Fonction génératrice`)
 can make your life easier!
 
-You will write a function, where
-$a_k * x^k$ means that if you 
+You will write a function, where $a_k * x^k$ means that
 
-* if you have $n=k$
-* then the number of distributions $a_k$
+* for $n=k$
+* the number of distributions is $a_k$
 
-For instance, let's say your result is
-$5 x^2 + 4 x^3 + ...$ then that's means that
+For instance, let's say your result is $5 x^2 + 4 x^3 + ...$ then that's means that
 if $n=2$ then the number of distributions is $5$...
 
 It's usually defined like this

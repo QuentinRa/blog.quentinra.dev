@@ -2,14 +2,7 @@
 
 [Go back](..#distributions)
 
-The distribution is the most important one, also called
-
-* Normal distribution/``Loi normale``
-* Gaussian distribution/``Loi gaussienne``
-* Laplace–Gauss distribution/``Loi de Laplace-Gauss``
-
-And the short name is $N(\mu, \sigma)$ or
-$N(\mu, \sigma^2)$.
+The distribution is the most important one, also called **Normal** distribution/``Loi normale``, **Gaussian** distribution/``Loi gaussienne`` and Laplace–Gauss distribution/``Loi de Laplace-Gauss``. The short name is $N(\mu, \sigma^2)$.
 
 * $\mu$ (mu) is the mean ($\mathbb{E}(X)$)
 * $\sigma$ (sigma) is the deviation around the mean,

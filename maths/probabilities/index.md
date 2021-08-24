@@ -1,46 +1,27 @@
 # Probabilities
+Probabilities are a way to evaluate how much likely something is true, or likely to happens. For instance, if you're playing dice, you may want to know how much likely it is that you got 3 times "6" in a row.
 
-In this course, we will cover all the basics about
-probabilities and some advanced concepts that
-will be used in other courses.
+In this course, we will cover all the basics about probabilities and some advanced concepts that will be used in other courses.
 
-* $\omega$ (small-omega)
-  is an outcome possible 
-  <span class="tms">such as 1 for a dice</span>
-* $\Omega$ (big-omega)
-  is a set of all possible outcomes,
-  also called sample/probability space
-  <span class="tms">such as {1,2,3,4,5,6} for a dice
+* $\omega$ (small-omega) is an outcome possible <span class="tms">such as 1 for a dice</span>
+* $\Omega$ (big-omega) is a set of all possible outcomes, also called sample/probability space <span class="tms">such as {1,2,3,4,5,6} for a dice
   or {$\ x \mid x \in [1,6]\ $}</span>.
-* $A$ is an event included in <span>
-  $\Omega$. <span class="tms">
-  It's almost everytime defined
-  by a sentence like "the result is pair"
-  giving a set like {2,4,6} for a dice.
-  </span>
-* $\overline{A}$ or $A^c$ means the opposite
-  event of A, called complementary event and
-  read as "not A".
-* $\emptyset$ (empty set)
-  means an impossible event.
-* $Card(E) \Leftrightarrow |E| \Leftrightarrow \\#E$ is the cardinal of
-  a set E, meaning the number of elements.
+ * $A$ is an event included in <span>$\Omega$. <span class="tms">It's almost everytime defined by a sentence like "the result is pair" giving a set like {2,4,6} for a dice.</span>
+* $\overline{A}$ or $A^c$ means the opposite event of A, called complementary event and read as "not A".
+* $\emptyset$ (empty set) means an impossible event.
+* $Card(E) \Leftrightarrow |E| \Leftrightarrow \\#E$ is the cardinal of a set E, meaning the number of elements.
 
 You may see/use these too
 
-* an event of one element (singleton) is called
-  an elementary event
-* events that's can't happen simultaneously are
-  called incompatible/disjoints/mutually exclusive events ([wiki](https://fr.wikipedia.org/wiki/%C3%89v%C3%A9nements_incompatibles))
+* an event of one element (singleton) is called an elementary event
+* events that's can't happen simultaneously are called incompatible/disjoints/mutually exclusive events ([wiki](https://fr.wikipedia.org/wiki/%C3%89v%C3%A9nements_incompatibles))
 * an event that will certainly happen is called a certain event.
 
 <hr class="sl">
 
 ## Vocabulary and properties
 
-$\mathbb{P}(A)$ 
-means the probability of A
-happening and that's a value in
+$\mathbb{P}(A)$ means the probability of A happening and that's a value in
 $[0,1]$
 
 * $\mathbb{P}(\Omega) = 1$ and $\mathbb{P}(\emptyset) = 0$
@@ -51,13 +32,7 @@ $[0,1]$
 * $A \subset B \to \mathbb{P}(A \cap B) = \mathbb{P}(A)$
 * $A \subset B \to \mathbb{P}(A \cup B) = \mathbb{P}(B)$
 
-We call **distribution function**, a strictly positive
-function where the sum of all values (=probabilities) is 1.
-It's a function associating each value of
-$\Omega$ to their probability of happening
-($f(x) \to \Omega$). When $x$
-is taking finite values, we are using discrete probability
-otherwise we are using continuous probabilities.
+We call **distribution function**, a strictly positive function where the sum of all values (=probabilities) is 1. It's a function associating each value of $\Omega$ to their probability of happening ($f(x) \to \Omega$). When $x$ is taking finite values, we are using discrete probability otherwise we are using continuous probabilities.
 
 We call **support of X** $\bigtriangleup_X$
 or $X(\Omega)$ the domain of the distribution function of

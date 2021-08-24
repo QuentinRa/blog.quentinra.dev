@@ -2,6 +2,10 @@
 
 [Go back](..)
 
+This is a batch of exercises on discrete probabilities (probabilities, counting, conditional probability, Bayes's formula, expected value, variance).
+
+<hr class="sl">
+
 **Exercise 1 (Counting / Conditional probability)**
 
 Two players X and Y are drawing five cards

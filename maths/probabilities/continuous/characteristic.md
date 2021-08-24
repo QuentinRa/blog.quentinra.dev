@@ -2,11 +2,7 @@
 
 [Go back](..)
 
-In French, it's called
-``fonction caractéristique``.
-
-This name is used for a lot
-of [things](https://en.wikipedia.org/wiki/Characteristic_function).
+In French, it's called ``fonction caractéristique``. This name is used for [a lot of things](https://en.wikipedia.org/wiki/Characteristic_function).
 
 <hr class="sr">
 

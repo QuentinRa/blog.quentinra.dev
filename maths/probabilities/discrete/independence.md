@@ -2,10 +2,7 @@
 
 [Go back](..)
 
-Random variables are said to be independent
-($\perp$ perp) if the product of the probabilities
-if equals to the probability of the events 
-$X_1, ..., X_n$.
+Random variables are said to be independent ($\perp$ perp) if the product of the probabilities if equals to the probability of the events  $X_1, ..., X_n$.
 
 <div>
 \[
@@ -13,8 +10,7 @@ $X_1, ..., X_n$.
 \]
 </div>
 
-Remember that the ``;`` is read as `and` so you
-could also write
+Remember that the `,` is read as `and`, so you could also write
 
 <div>
 \[

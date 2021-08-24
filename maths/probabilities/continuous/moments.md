@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-The expected value $\mathbb{E}(X)$ is defined by
+The expected value $\mathbb{E}(X)$ is defined by:
 
 @
 \mathbb{E}[X] = \int_{-\infty}^{+\infty} xf_X(x)dx

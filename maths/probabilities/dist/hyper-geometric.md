@@ -2,12 +2,11 @@
 
 [Go back](..)
 
-The HyperGeometric distribution
-$H(N, K, n)$ is taking
+The HyperGeometric distribution $H(N, K, n)$ is representing the probability of having a number of successes $K$ in a finite set of size $N$, given that we made $n$ trials without replacement.
 
-* $n$ number of trials/draws
-* $K$ number of successes
-* $N$ total number of elements
+* $n$ is the number of trials/draws
+* $K$ is the number of successes
+* $N$ is the total number of elements
 * without replacement
 
 So we have

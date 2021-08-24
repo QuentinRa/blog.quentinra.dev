@@ -2,6 +2,8 @@
 
 [Go back](..#joint-probability)
 
+This page is about the discrete marginal distribution and the continuous marginal distribution.
+
 <hr class="sl">
 
 ## Discrete Marginal Distribution

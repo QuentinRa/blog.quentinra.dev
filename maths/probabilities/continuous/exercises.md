@@ -2,6 +2,8 @@
 
 [Go back](..)
 
+This is a batch of exercises on continuous probabilities (density function, expected value, variance, moment generating function, characteristic function).
+
 <hr class="sr">
 
 **Exercise 1 (density function)**

@@ -16,6 +16,6 @@ The independence between two distributions
 is defined the same as the independence between two variables.
 For instance for discrete variables, we have
 
-* \mathbb{P}(X=x,\ Y=y) = \mathbb{P}(X=x) * \mathbb{P}(Y=y)
-* \mathbb{P}(X=x|Y=y) = \mathbb{P}(X=x)
-* \mathbb{P}(Y=y|X=x) = \mathbb{P}(Y=y)
+* $\mathbb{P}(X=x,\ Y=y) = \mathbb{P}(X=x) * \mathbb{P}(Y=y)$
+* $\mathbb{P}(X=x|Y=y) = \mathbb{P}(X=x)$
+* $\mathbb{P}(Y=y|X=x) = \mathbb{P}(Y=y)$

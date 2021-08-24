@@ -2,12 +2,7 @@
 
 [Go back](..)
 
-It's called the ``loi des événements/phénomènes rares``
-in French.
-The poisson distribution $\mathbb{P}(\lambda)$
-require a probability $p$ 
-and $n$, relatively high to $p$
-giving the parameter $\lambda = n*p$.
+It's called the ``loi des événements/phénomènes rares`` in French. The poisson distribution $\mathbb{P}(\lambda)$ require that the probability $p$ is relatively smaller than $n$, while the parameter $\lambda$ is equals to $n*p$.
 
 * The mass function is $\mathbb{P}(X=k) = \frac{\lambda^k *  e^{-\lambda}}{k!}$
 * $E(X) = \lambda$

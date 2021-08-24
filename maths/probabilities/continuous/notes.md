@@ -2,6 +2,8 @@
 
 [Go back](..)
 
+These are notes about the Théorème de transfert and the Fonction muette, that are used by French.
+
 <hr class="sr">
 
 ## Théorème de transfert/transport
