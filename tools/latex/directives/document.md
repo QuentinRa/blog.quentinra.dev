@@ -2,8 +2,7 @@
 
 [Go back](..#writing-documents)
 
-We usually add a date, a title, and an author, so your document
-source code might look like this
+We usually add a date, a title, and an author, so your document source code might look like this
 
 ```latex
 \documentclass{article}

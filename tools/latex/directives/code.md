@@ -18,8 +18,6 @@ Here is an example of highlighting code in OCaml, using the package `minted`.
 \end{document}
 ```
 
-Or you could use this code to add a file
-``\inputminted{ocaml}{file.ml}``.
+Or you could use this code to add a file `\inputminted{ocaml}{file.ml}`.
 
-You can highlight one line with
-``\mint{ocaml}|let x = 5;;|``
+You can highlight one line with `\mint{ocaml}|let x = 5;;|`.

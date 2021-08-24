@@ -16,14 +16,9 @@ You may code latex (`.tex`) documents on
 * [Overleaf](https://www.overleaf.com/) (previously `writelatex.com`), a simple and collaborative tool, need register
 * [CoCalc](https://cocalc.com/), the UI may be a bit hard to use but no account is required
 
-You can also use a latex compiler on your machine
-but that's not covered for now.
+You can also use a latex compiler on your machine but that's not covered for now.
 
-There are a lot of latex templates, so be sure to check
-them before starting a document from
-scratch <https://www.overleaf.com/latex/templates>
-since there are presentation templates, cv templates,
-report templates...
+There are a lot of latex templates, so be sure to check them before starting a document from scratch <https://www.overleaf.com/latex/templates> since there are presentation templates, cv templates, report templates...
 
 <hr class="sl">
 
@@ -41,9 +36,7 @@ your content here
 \end{document}
 ```
 
-Each time, you would want to use some tags for your content,
-you will have to use a directive starting with
-``\begin{directive}`` and ending with `\end{directive}`.
+Each time, you would want to use some tags for your content, you will have to use a directive starting with `\begin{directive}` and ending with `\end{directive}`.
 
 * [Document](directives/document.md)
 * [Text](directives/text.md)
@@ -54,27 +47,18 @@ you will have to use a directive starting with
 
 ## Writing math in latex
 
-**First and foremost**, you should check out this
-awesome website <http://atomurl.net/math/>. 
+**First and foremost**, you should check out this awesome website <http://atomurl.net/math/>. 
 
 A math equation needs to be put inside
 
 * `$latex$` (or `\(latex\)`): inline math, meaning inside a sentence
 * `\[latex\]`: the formula will be rendered on a whole line.
 
-An alternative to ```\[latex\]``` is 
-``\begin{equation}latex\end{equation}``.
+An alternative to `\[latex\]` is `\begin{equation}latex\end{equation}`.
 
-Spaces are useless in your latex code since 
-the math parser will do whatever he wants, you should either
-use ``\ `` (backslash followed by a space) 
-or use ``\quad`` (or `\,`, `\:`, ...).
-You can make a horizontal space with ``\hspace{1cm}``.
+Spaces are useless in your latex code since the math parser will do whatever he wants, you should either use `\ ` (backslash followed by a space) or use `\quad` (or `\,`, `\:`, ...). You can make a horizontal space with `\hspace{1cm}`.
 
-**Note**: if you don't remember the name of a symbol,
-just draw it on
-[detexify](https://detexify.kirelabs.org/classify.html) 
-and ask him to look for it.
+**Note**: if you don't remember the name of a symbol, just draw it on [detexify](https://detexify.kirelabs.org/classify.html) and ask him to look for it.
 
 Related
 
@@ -88,8 +72,7 @@ Related
 
 ## Cheatsheet
 
-Because, I enjoy adding links to cheatsheets,
-here are some sheets that looks good
+Because, I enjoy adding links to cheatsheets, here are some sheets that looks good
 
 * [symbols.pdf](https://www.caam.rice.edu/~heinken/latex/symbols.pdf)
 * [latexcheatsheet.pdf](https://users.dickinson.edu/~richesod/latex/latexcheatsheet.pdf),

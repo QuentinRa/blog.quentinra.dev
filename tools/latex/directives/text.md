@@ -2,19 +2,13 @@
 
 [Go back](..#writing-documents)
 
-You can write some text
-in a document without tags, that's a paragraph.
+You can write some text in a document without tags, that's a paragraph.
 
-Using ``\\`` at the end of a line will move
-the rest of the text right under our line.
-To jumping a line, you may need to add `\\` two times.
-You can use ``\newline`` instead of  `\\`.
+Using ``\\`` at the end of a line will move the rest of the text right under our line. To jumping a line, you may need to add `\\` two times. You can use ``\newline`` instead of  `\\`.
 
-You can add some space between paragraph
-using ``\vspace{NUMBERmm}``.
+You can add some space between paragraph using ``\vspace{NUMBERmm}``.
 
-You can center text using ``center``,
-the text being ``justified`` by default.
+You can center text using ``center``, the text being ``justified`` by default.
 
 Some text inline directives
 
