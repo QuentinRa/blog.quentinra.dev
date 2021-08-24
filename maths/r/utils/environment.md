@@ -2,8 +2,7 @@
 
 [Go back](../index.md)
 
-Before starting, you need to know that all variables,
-functions, ... are part of our environment.
+All variables, functions, ... are part of our environment. This is not really useful, as you usually have a graphical interface, in which you can see your environment.
 
 <hr class="sl">
 

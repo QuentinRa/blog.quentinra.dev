@@ -2,9 +2,8 @@
 
 [Go back](../index.md)
 
-In R, you should consider using function
-rather than these structures but the if / for
-are quite convenient.
+In R, you should consider using function rather than these structures, but the if / for
+statements are quite convenient.
 
 You can use
 

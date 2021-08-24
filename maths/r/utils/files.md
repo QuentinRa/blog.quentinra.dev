@@ -2,8 +2,11 @@
 
 [Go back](../index.md)
 
-You may use them to move from a directory
-to another (`cd`/`ls`)
+This is a list of all file-related functions. They are supposed to work the same on any OS, like Java was supposed to be.
+
+<hr class="sl">
+
+You may use them to move from a directory to another (`cd`/`ls`)
 
 * ``getwd()``: equivalent of Linux command `pwd`, returns current directory
 * ``sedwd(path)``: equivalent of Linux command `cd path`, change the current directory

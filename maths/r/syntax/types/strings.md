@@ -2,14 +2,13 @@
 
 [Go back](../../index.md)
 
-There is no concatenation operator in R, use
-the paste function.
+There is no concatenation operator in R, use the paste function.
 
 ```r
 paste("Hello", "World");
-# merge strings with the separator "\n"
+# merge a vector of strings with the separator "\n"
 paste(s1, ..., collapse = "\n")
-# merge terms with the separator "\n"
+# merge strings with the separator "\n"
 paste(s1, ..., sep = "\n")
 ```
 

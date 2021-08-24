@@ -2,11 +2,7 @@
 
 [Go back](../../index.md)
 
-A contingency table (`tableau de contingenc/à double entrées`)
-is a table of
-
-* the uniques values of a vector
-* by the number of times this values is present
+A contingency table (`tableau de contingenc/à double entrées`) is a table of **the uniques values of a vector** by **the number of times this values is present**.
 
 ```r
 # picking 50 values within [0,10]

@@ -2,17 +2,15 @@
 
 [Go back](../index.md)
 
+You got almost all usuals operators. If an operator does not exists, then you will have to use a function, or you might have a shortcut with "%operator%".
+
 * The 4 basics: <b>+, -, /, \*</b>
 * Exponentiation: **number^k**
 * Assignation: **var <- value** or **var = value** (overuse of =)
 * Specials: **%%** (mod), **%/%** (Integer division)
 * Others: **sqrt, abs, log, xor, sum, ...**
 
-In R, there are a lot of weirds shortcuts operators
-like **%in%** or **%/%**. They may be hard to remember
-so you can use the library **magrittr** 
-([doc](https://cran.r-project.org/web/packages/magrittr/magrittr.pdf))
-to use a function instead.
+In R, there are a lot of weirds shortcuts operators like **%in%** or **%/%**. They may be hard to remember so you can use the library **magrittr** ([doc](https://cran.r-project.org/web/packages/magrittr/magrittr.pdf)) to use a function instead.
 
 <hr class="sl">
 

@@ -2,6 +2,8 @@
 
 [Go back](../index.md)
 
+A function is named by the variable storing it. This is working like in JS or PHP, as you can use default values or named arguments. A function must return something.
+
 <hr class="sl">
 
 ## Function declaration
@@ -37,9 +39,7 @@ modulo(5, mod=3)
 
 ## Return
 
-A function in R must returns something. In fact,
-you do not need to use ``return`` since by default
-in R
+A function in R must returns something. In fact, you do not need to use ``return`` since by default in R
 
 > A bloc is evaluated as the evaluation of the last expression
 
@@ -51,8 +51,7 @@ modulo <- function (x, mod){
 }
 ```
 
-And the returned value is the evaluation of the
-last expression ``x %% mod``.
+And the returned value is the evaluation of the last expression ``x %% mod``.
 
 <hr class="sl">
 

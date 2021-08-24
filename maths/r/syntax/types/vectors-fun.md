@@ -2,15 +2,17 @@
 
 [Go back](../../index.md)
 
-Here is a summary of all functions you can use
-on vector (any most likely anything else
-like a data.frame, ...)
+Here is a summary of all functions you can use on vector (they should work for most likely anything else too like a data.frame, ...)
+
+<hr class="sl">
 
 * ``head(v)``: first values
 * ``tail(v)``: last values
 * ``View(v)``: visual of the vector content
 * ``length(v)``: size
 * ``attributes(v)``: get attributes (dim, ...)
+
+<hr class="sr">
 
 **Utilities**
 
@@ -22,6 +24,8 @@ like a data.frame, ...)
 * ``any(v opérateur valeur)``: true if at least one value make the condition true
 * ``all(v opérateur valeur)``: true if all values make the condition true
 * ``duplicated(v)``: true if a value is duplicated, for each value
+
+<hr class="sl">
 
 **Maths**
 

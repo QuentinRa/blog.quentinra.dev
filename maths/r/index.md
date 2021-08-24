@@ -1,4 +1,4 @@
-# R
+# R programming
 
 R is a language that may be helpful to do so mathematics. We will use it in other course such as **Statistics**, **Matrices**,  **Numerical analysis** or **Optimization**.
 
@@ -8,18 +8,13 @@ You can use other languages such as Python, Julia, OCaml, according to what you 
 
 # Introduction
 
-File extension is ``.R`` but we also write
-``.Rmd`` files that are file with documentation
-and runnable R code. You may also directly run some
-code in the console.
+File extension is ``.R`` but we also write ``.Rmd`` files that are file with documentation
+and runnable R code. You may also directly run some code in the console.
 
-Most people code in R using [R Studio](https://www.rstudio.com/)
-but I will use [R plugin for IntelliJ](https://plugins.jetbrains.com/plugin/6632-r-language-for-intellij)
-that working exactly the same as R Studio (same
-interface elements, console, etc.) but in IntelliJ.
+Most people code in R using [R Studio](https://www.rstudio.com/), but I will use [R plugin for IntelliJ](https://plugins.jetbrains.com/plugin/6632-r-language-for-intellij)
+that working exactly the same as R Studio (same interface elements, console, etc.) but in IntelliJ.
 
-You may have to install package or libraries in the future,
-simply do
+You may have to install package or libraries in the future, simply do
 
 * install a library : ``install.packages("name")``
 * **load a library** (runtime) : ``library("name");``
@@ -28,8 +23,7 @@ simply do
 
 ## Basic course
 
-You can check this fast course
-to learn the basic of R without details [Learn R
+You can check this fast course to learn the basic of R without details [Learn R
 in 5 minutes](5min.md).
 
 Then here is the real course.
@@ -48,15 +42,12 @@ Then here is the real course.
 * [Functions](syntax/functions.md)
 * [Vector Functions](syntax/types/vectors-fun.md)
 
-And here you can learn how to write
-[Rmd documentation](rmd.md).
+And here you can learn how to write [Rmd documentation](rmd.md).
 
 <table class="table table-dark table-bordered table-striped">
 <tr><th class="text-center">Other notes about the Language</th></tr>
 <tr><td>
-The semicolon <code>;</code> at the end of a line is optional.
-You may use it if you make more than one expression
-per line.
+The semicolon <code>;</code> at the end of a line is optional. You may use it if you make more than one expression per line.
 </td></tr>
 <tr><td> 
 Use <code>#</code> for comments
@@ -75,33 +66,24 @@ cat(paste(x, y), sep = "\n")
 </td></tr>
 <tr><td>
 
-You will use this a lot, you can
-**see the help for a function** with ``?my_function``
+You will use this a lot, you can **see the help for a function** with ``?my_function``
 * examples with ``examples(my_function)``
 * args with ``args(my_function)``
 * source code with ``body(my_function)``
 </td></tr>
 <tr><td>
-Open the documentation either in your IDE or your browser
-with <code>help.start()</code>.
+Open the documentation either in your IDE or your browser with <code>help.start()</code>.
 </td></tr>
 <tr><td>
 Either look for or load a dataset
 with <code>data()/data('dataset')</code>.
 </td></tr>
 <tr><td>
-In R, when you are making a generalization of something,
-you usually name it <code>name.generalization_name</code>.
-For instance, 
-if you got a vector of numbers <code>data$numbers</code>,
-then you would have <code>data$numbers.pos</code>. Same
-for functions like <code>mean</code>, <code>mean.test</code>,
+In R, when you are making a generalization of something, you usually name it <code>name.generalization_name</code>. For instance, if you got a vector of numbers <code>data$numbers</code>, then you would have <code>data$numbers.pos</code>. Same for functions like <code>mean</code>, <code>mean.test</code>,
 ...
 </td></tr>
 <tr><td>
-There are a lot of shortened words or it seems so. For instance,
-you can use <code>T</code> for <code>TRUE</code>. For functions,
-you can use <code>prob/proba</code> for <code>probability</code> etc.
+There are a lot of shortened words or it seems so. For instance, you can use <code>T</code> for <code>TRUE</code>. For functions, you can use <code>prob/proba</code> for <code>probability</code> etc.
 </td></tr>
 </table>
 
@@ -109,8 +91,7 @@ you can use <code>prob/proba</code> for <code>probability</code> etc.
 
 ## Advanced notes
 
-Here you can find some course about functions
-that you might use or not.
+Here you can find some course about functions that you might use or not.
 
 * [Environment](utils/environment.md)
 * [Files](utils/files.md)

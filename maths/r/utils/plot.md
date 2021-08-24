@@ -2,6 +2,10 @@
 
 [Go back](../index.md)
 
+Learn about devices, and the most well-known plots such as histograms, bar chart, pie chart, and box plot.
+
+<hr class="sl">
+
 Almost all the plots' functions have these arguments
 
 * ``main = "title"``: plot title

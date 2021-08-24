@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-In R, all types are vectors.
+In R, all types are vectors. For instance, `5` (number) is a vector of size 1.
 
 * **numeric**: 1, 1.3 
 * **complex**: i
