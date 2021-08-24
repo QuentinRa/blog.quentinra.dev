@@ -6,7 +6,7 @@
 
 This page is a **summary of the syntax that we are using** in Markdown, and how it is rendered **on this website**.
 
-**Version**: 1.0.0
+**Version**: 1.3.0
 
 <hr class="sep-both">
 
@@ -21,6 +21,7 @@ Notes
 
 * a permalink icon is added to each header (#content-{title}).
 * you can use headers h3 to h6, but they will be rendered as if they were h2. You should split a big page, so that such a situation does not happen. An alternative would be to use bold.
+* if you add more than one header h1, they will be rendered using the style shown above, but their html tag will be h2
 
 <hr class="sep-both">
 
@@ -48,11 +49,56 @@ Notes
 
 <hr class="sep-both">
 
-## 1.4 Special
+## 1.4 Links, images, and files
+
+| Markdown | Description | HTML | Preview |
+|----------|----------|----------|----------|
+| `[a link](URL)` | a link | &lt;a href="URL" target="_blank" rel="noopener noreferrer"&gt;a link&lt;/a&gt; | 	<a href="https://github.com/lgs-games/memorize" target="_blank" rel="noopener noreferrer">a link</a> |
+| `<URL>` | same as `[URL](URL)` | ... | ... |
+
+<hr class="sep-both">
+
+## 1.5 Special
 
 | Markdown | Description | HTML | Preview |
 |----------|----------|----------|----------|
 | ❌ | quote | &lt;q&gt;text&lt;/q&gt; | <q>text</q> |
 | `> text` | blockquote |  &lt;blockquote&gt;text&lt;/blockquote&gt; | <blockquote>text</blockquote> |
+
+Since **version 1.3.0**, you can use a table. The syntax and the preview are the same as in the [Markdown course](../tools/markdown/index.md#table).
+
+<hr class="sep-both">
+
+## 1.6 Math
+
+| Markdown | Description | HTML | Preview |
+|----------|----------|----------|----------|
+| `text $latex$ text` | inline math | &lt;p&gt;Text \($5 \neq 3 + 1\) text.&lt;/p&gt; | Text $5 \neq 3 + 1$ text. |
+| `text @latex@ text` | math block |  &lt;div&gt;<br>Text \[$5 \neq 3 + 1\] text.<br>&lt;/div&gt; | Text @5 \neq 3 + 1@ text. |
+| ❌ | inline math | ❌ omitted ❌ | Text $5 \neq 3 + 1$ text. |
+| `text @latex@ text` | math block | ❌ omitted ❌ | Text @5 \neq 3 + 1@ text. |
+
+As you could guess
+
+* adding Text before/after is optional
+* you can replace "p" or "div" by another tag (span, p, div)
+
+But, you should note
+
+* it's recommended to use `$latex$` for inline latex
+* it's recommended to use `<div>\[latex\]</div>` for a block (as `@latex@` is not escaping every formula properly, and hence not always rendering what you wrote)
+
+<hr class="sep-both">
+
+## 1.6 Usage
+
+* You should **split a page in sections** using a separator, the code is
+
+```html
+<!-- left-tailed -->
+<hr class="sl">
+<!-- right-tailed -->
+<hr class="sr">
+```
 
 </div>
