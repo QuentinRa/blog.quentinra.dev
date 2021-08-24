@@ -2,14 +2,14 @@
 
 [Go back](..#html-in-markdown)
 
-You can make a dropdown like this
+You can make a dropdown like this in HTML (I added the border)
 
 <details class="p-3 mb-3 border border-dark">
 <summary>Click here</summary>
 Content
 </details>
 
-with this code (I added the border)
+with this code
 
 ```html
 <details>

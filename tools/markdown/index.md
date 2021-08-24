@@ -218,18 +218,18 @@ And here are some HTML tags you may use
 
 | Markdown | HTML |
 | ------ | ------ |
-| \#\# Title | <h2>title</h2> |
-| \*\*bold\*\* | <b>bold</b>|
-| \*italic\* | <i>bold</i>|
-| \~\~crossed text\~\~ | <s>strike-through</s>|
-| a list | <ul>, <ol>, and <li> |
-| \`code\` | <code>code</code> |
-| code-block | <pre><code>code</code></pre> |
-| \[link](url)|<a href="url">link</a>|
-| \!\[alt](url)|<img src="url" alt="alt">|
-| \> text | <blockquote>text</blockquote> |
-| \--- | <hr> |
-| new line | <br> |
+| \#\# Title | &lt;h2&gt;title&lt;/h2&gt; |
+| \*\*bold\*\* | &lt;b&gt;bold&lt;/b&gt;|
+| \*italic\* | &lt;i&gt;bold&lt;/i&gt;|
+| \~\~crossed text\~\~ | &lt;s&gt;strike-through&lt;/s&gt;|
+| a list | &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; |
+| \`code\` | &lt;code&gt;code&lt;/code&gt; |
+| code-block | &lt;pre&gt;&lt;code&gt;code&lt;/code&gt;&lt;/pre&gt; |
+| \[link](url)|&lt;a href="url"&gt;link&lt;/a&gt;|
+| \!\[alt](url)|&lt;img src="url" alt="alt"&gt;|
+| \> text | &lt;blockquote&gt;text&lt;/blockquote&gt; |
+| \--- | &lt;hr&gt; |
+| new line | &lt;br&gt; |
 
 <hr class="sl">
 
