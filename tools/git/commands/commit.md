@@ -2,7 +2,7 @@
 
 [Go back](../index.md#basic-usage)
 
-To make a save (commit), you first need to add the files that will be included in the commit. If a file didn't change since the last commit, you don't have to add it again.
+To make a save (commit), you need to add the files that will be included in the commit. If a file didn't change since the last commit, you don't have to add it again.
 
 ```bash
 # all files from the current folder
@@ -17,4 +17,14 @@ Then, you can commit, with a message summarizing your changes.
 
 ```bash
 git commit -m "commit message"
+# or
+git commit -m "This is a long commit message.
+Press SHIFT+ENTER to add another line.
+"
+```
+
+You can also remove the option "m". The vim editor will be opened, allowing you to enter your message (`:q!` exit without saving, `:wq` save and exit).
+
+```bash
+git commit
 ```

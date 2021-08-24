@@ -2,6 +2,8 @@
 
 [Go back](index.md#introduction)
 
+You will install Git on your computer, which is installed if you can use `git --version`.
+
 * on Windows, installing [git-scm](https://git-scm.com/) will do
 * on Linux, ``sudo apt-get install git``
 
