@@ -113,7 +113,7 @@ If you want to have beautiful documentation such as this one [magnum](https://do
   * folder `plugins`
   * folder `css`
   
-Put everything in a `style` folder, mine looks like this [style folder](https://github.com/lgs-games/prim/tree/master/version_c/style) or this screen [style folder](download:mcss_folder.png).
+Put everything in a `style` folder, mine looks like this [style folder](https://github.com/lgs-games/prim/tree/master/version_c/style) or this screen <a target="_blank" href="/courses/tools/doxygen/mcss_folder.png">style folder</a>.
 
 Next
 
