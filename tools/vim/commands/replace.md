@@ -2,6 +2,10 @@
 
 [Go back](..#-and-now-mastering-it)
 
+This is a list of the commands you will use to replace something.
+
+<hr class="sl">
+
 * `:s/old/new`: replace `old` by `new`
 * `:s/old/new/g`: same, for all lines
 * `:s/old/new/gc`: same but ask confirmation before

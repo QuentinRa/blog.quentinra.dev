@@ -2,6 +2,8 @@
 
 [Go back](..#-and-now-mastering-it)
 
+To insert something, you may use
+
 * `i` insert before cursor
 * `a` insert after the cursor
 * `I` insert at the beginning of the line

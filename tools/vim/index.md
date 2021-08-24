@@ -78,7 +78,6 @@ Here are some details about basic commands
 * [replace](commands/replace.md)
 * [others commands](commands/others.md)
 * [cqi syntax](commands/cqi.md)
-* [mystic commands](commands/special.md)
 
 <hr class="sr">
 

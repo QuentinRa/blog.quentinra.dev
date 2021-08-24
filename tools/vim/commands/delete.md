@@ -2,7 +2,11 @@
 
 [Go back](..#-and-now-mastering-it)
 
-Delete characters
+This is a list of the commands you will use to delete characters or lines.
+
+<hr class="sl">
+
+## Delete characters
 
 * `x`: delete characters under cursor
 * `X`: delete characters before the cursor
@@ -10,7 +14,9 @@ Delete characters
 * `d^`: delete all characters of the line until the cursor
 * `D` or `d$`: delete all characters of the line from the cursor until the end
 
-Delete lines
+<hr class="sr">
+
+## Delete lines
 
 * `dd`: delete current line
 * `ndd`: delete n lines since current

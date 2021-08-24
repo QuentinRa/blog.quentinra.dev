@@ -2,7 +2,11 @@
 
 [Go back](..#-and-now-mastering-it)
 
-Cursor
+This is a list of the commands you will use to move your cursor/the screen.
+
+<hr class="sl">
+
+## Cursor
 
 * `0` : move the beginning of the line
 * `CTRL-^` : same as `0`
@@ -15,7 +19,9 @@ Cursor
 * `h` : move left
 * `l` : move right
 
-Move current screen
+<hr class="sl">
+
+## Move the current screen
 
 * `CTRL-F` : go down one screen
 * `CTRL-B` : go up one screen
