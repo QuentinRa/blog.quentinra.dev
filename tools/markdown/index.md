@@ -202,7 +202,7 @@ And here are some HTML tags you may use
 
 | Tag | Preview |
 | ------ | ------ |
-| <b>s</b> (strike-through) | <s>word</s> |
+| <b>s</b> (strikethrough) | <s>word</s> |
 | <b>u</b> (underline) | <u>word</u> |
 | <b>kbd</b> | <kbd>CTRL+X</kbd> |
 | <b>sup</b> (used in footnotes) | <sup>[1]: From XXX</sup><br><sup>[2]: Notation used in XXX</sup> |
@@ -221,7 +221,7 @@ And here are some HTML tags you may use
 | \#\# Title | &lt;h2&gt;title&lt;/h2&gt; |
 | \*\*bold\*\* | &lt;b&gt;bold&lt;/b&gt;|
 | \*italic\* | &lt;i&gt;bold&lt;/i&gt;|
-| \~\~crossed text\~\~ | &lt;s&gt;strike-through&lt;/s&gt;|
+| \~\~crossed text\~\~ | &lt;s&gt;strikethrough&lt;/s&gt;|
 | a list | &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; |
 | \`code\` | &lt;code&gt;code&lt;/code&gt; |
 | code-block | &lt;pre&gt;&lt;code&gt;code&lt;/code&gt;&lt;/pre&gt; |

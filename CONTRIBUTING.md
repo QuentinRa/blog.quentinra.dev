@@ -11,7 +11,7 @@ The syntax is Markdown, but we are allowing some extensions
 * you may use **quotes**
 * you may use **checkbox**
 * you may use **comments**
-* you may **not** use **strike-through** (use the HTML tag "s" instead)
+* you may **not** use **strikethrough** (use the HTML tag "s" instead)
 * you may use Markdown **tables** (as of August 2021)
 * you may use **HTML** in Markdown, but
   * do not use the style attribute
