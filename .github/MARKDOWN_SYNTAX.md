@@ -6,11 +6,26 @@
 
 This page is a **summary of the syntax that we are using** in Markdown, and how it is rendered **on this website**.
 
-**Version**: 1.3.0
+**Version**: <a href="https://github.com/lgs-games/memorize/tree/master/.github/MARKDOWN_SYNTAX.md" target="_blank" rel="noopener noreferrer">1.3.0</a>
+
+<div class="table-of-contents w-25 mx-auto">
+
+<h2>Table of contents</h2>
+
+1. [Titles](#content-1-titles)
+2. [Text](#content-2-text)
+3. [Code](#content-3-code)
+4. [Links and images](#content-4-links-and-images)
+5. [Lists](#content-5-lists)
+6. [Table](#content-6-table)
+7. [Special](#content-7-special)
+8. [Math](#content-8-math)
+9. [Usage](#content-9-usage)
+</div>
 
 <hr class="sep-both">
 
-## 1.1 Titles
+## 1. Titles
 
 | Markdown | Description | HTML | Preview |
 |----------|----------|----------|----------|
@@ -25,7 +40,7 @@ Notes
 
 <hr class="sep-both">
 
-## 1.2 Text
+## 2. Text
 
 | Markdown | Description | HTML | Preview |
 |----------|----------|----------|----------|
@@ -38,7 +53,7 @@ Notes
 
 <hr class="sep-both">
 
-## 1.3 Code
+## 3. Code
 
 | Markdown | Description | HTML | Preview |
 |----------|----------|----------|----------|
@@ -49,7 +64,7 @@ Notes
 
 <hr class="sep-both">
 
-## 1.4 Links and images
+## 4. Links and images
 
 | Markdown | Description | HTML | Preview |
 |----------|----------|----------|----------|
@@ -60,7 +75,7 @@ Notes
 
 <hr class="sep-both">
 
-## 1.5 Lists
+## 5. Lists
 
 | Markdown | Description | HTML | Preview |
 |----------|----------|----------|----------|
@@ -71,7 +86,7 @@ You can nest a list inside another list.
 
 <hr class="sep-both">
 
-## 1.6 Table
+## 6. Table
 
 Since **version 1.3.0**, you can use a **table**. The syntax is the same as in the [Markdown course](../tools/markdown/index.md#content-table). The HTML code is
 
@@ -101,7 +116,7 @@ And the result is
 
 <hr class="sep-both">
 
-## 1.7 Special
+## 7. Special
 
 | Markdown | Description | HTML | Preview |
 |----------|----------|----------|----------|
@@ -109,11 +124,13 @@ And the result is
 | `> text` | blockquote |  &lt;blockquote&gt;text&lt;/blockquote&gt; | <blockquote>text</blockquote> |
 | `- [ ] task` | checkbox (checked) | &lt;input disabled="" type="checkbox" checked&gt; | <input disabled="" type="checkbox"> (since v1.1.0) |
 | `- [x] task` | checkbox (checked) | &lt;input disabled="" type="checkbox"&gt; | <input disabled="" type="checkbox" checked> (since v1.1.0) |
-| [comment]: <> (...) | a comment | &lt;!-- ... --&gt; | 🤐 |
+| [comment]: <> (...) | a comment | &lt;!-- ... --&gt; | ❌ |
+| ❌ | a note | &lt;span class="tms"&gt;a note&lt;/span&gt; | 	<span class="tms">a note</span> |
+| `---` | horizontal separator | &lt;hr&gt;| ❌ |
 
 <hr class="sep-both">
 
-## 1.8 Math
+## 8. Math
 
 | Markdown | Description | HTML | Preview |
 |----------|----------|----------|----------|
@@ -132,7 +149,7 @@ But, you should note
 
 <hr class="sep-both">
 
-## 1.9 Usage
+## 9. Usage
 
 * You should **split a page in sections** using a separator, the code is
 
@@ -149,4 +166,11 @@ But, you should note
 
 We are allowing HTML, but note using style is not recommended, while scripts aren't allowed. <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank" rel="noopener noreferrer">Bootstrap</a> classes are allowed.
 
+* **add references**
+
+References, are not only the links that you used, but those that we may check it we want to improve the course. You should add a lot of them, and sort them if needed.
+
+* **typos**
+
+You can use the Grammarly or LanguageTool to check if they got [advices for you](../special/toolbox/writting/index.md).
 </div>

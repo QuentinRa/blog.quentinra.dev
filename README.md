@@ -69,7 +69,6 @@ Last updated: 2021-08-24
 * [ ] add a pull request template
 * [ ] review .summary
 * [ ] add style.css here
-* [ ] add /edit/rules
 </details>
 
 <br>

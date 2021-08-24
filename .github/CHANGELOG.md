@@ -7,6 +7,7 @@
 * `feature`: dark mode with Dark reader 🐱‍👤
 * `feature`: the language of the repository is Markdown (none previously)
 * `feature`: adding [CODEOWNERS](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners) file
+* `feature`: adding the [Markdown syntax reference](https://memorize.be/syntax)
 
 **Changed**
 
