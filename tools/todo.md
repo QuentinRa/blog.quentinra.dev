@@ -1,5 +1,6 @@
 ## Todo
 
+- Json and JSON5, yaml
 - InnoSetup
   - add flags used in Eden
 - Docker
@@ -17,7 +18,9 @@
     - shortcuts: replace "*", "@", "^" by "{L}", "{R}", and "{S}"
 - Git
   - https://github.com/nicoespeon/gitgraph.js, https://www.nicoespeon.com/en/2013/11/gitgraphjs/
+  - https://github.com/github/linguist and https://github.com/TomasHubelbauer/github-linguist, .giattributes
   - http://jekyllthemes.org/
+  - https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories
   - https://github.com/nicoespeon/gitgraph.js/blob/master/packages/gitgraph-js/MIGRATE_FROM_GITGRAPH.JS.md
   - https://francoisbrucker.github.io/cours_informatique/cours/dfs/git_commits_atomiques.html
   - adopteungit (git)
