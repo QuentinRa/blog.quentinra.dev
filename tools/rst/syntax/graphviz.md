@@ -16,8 +16,7 @@ You can draw some graphs using ``Graphviz``.
 	}
 ```
 
-You will have to install it (<https://graphviz.org/>),
-then on Windows be sure to
+You will have to install it (<https://graphviz.org/>), then on Windows be sure to
 
 * add it to the path
 * run only one time ``dot.exe -c`` or `dot -c` to configure it
