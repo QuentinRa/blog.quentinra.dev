@@ -3,11 +3,8 @@
 Doxygen is working like the Javadoc, the JSDoc, or a lot of tools allowing you to write documentation and generate a website from it. Doxygen is covering a lot of languages such as C, C++, C#, Java, PHP, and Python.
 
 * you will learn how to use write ``doxygen`` comments
-* how to generate documentation with `doxygen`,
-  so how to write a ``Doxyfile``
-* how to generate GREAT documentation with ``doxygen`` (
-  with a beautiful theme
-  )
+* how to generate documentation with `doxygen`, so how to write a ``Doxyfile``
+* how to generate GREAT documentation with ``doxygen`` (with a beautiful theme)
 * some advice about comments
 
 Based on ``doxygen`` version `1.9.1`.
@@ -16,27 +13,19 @@ Based on ``doxygen`` version `1.9.1`.
 
 ## Starting with Doxygen
 
-Doxygen is working like the Javadoc in JAVA if you
-know what I mean.
+Doxygen is working like the Javadoc in JAVA if you know what I mean.
 
 * write documentation using a special syntax
 * use a command to generates a website
-* open a file called ``index.html``
-in your browser and check it out!
+* open a file called ``index.html`` in your browser and check it out!
 
-Here some [installation tutorial](install.md)
-or if **needed** you can check their documentation
-here [doxygen.nl](https://www.doxygen.nl/index.html)
-but for me, it's a bit **unreadable** and your
-documentation should not be like that,
-hopefully.
+Here some [installation tutorial](install.md) or if **needed** you can check their documentation here [doxygen.nl](https://www.doxygen.nl/index.html) but for me, it's a bit **unreadable** and your documentation should not be like that, hopefully.
 
 <hr class="sl">
 
 ## Write documentation
 
-The main idea is writing comments like this one
-in a ``.h``
+The main idea is writing comments like this one in a ``.h``
 
 ```c
 /*!
@@ -55,65 +44,45 @@ in a ``.h``
  */
 ```
 
-Note that ``\file``, `\author`, ... are a list of `keywords`
-that will allow ``doxygen`` to give some style to your
-documentation. They start either with a ``\``
-or a ``@`` like in `Java`.
+Note that ``\file``, `\author`, ... are a list of `keywords` that will allow ``doxygen`` to give some style to your documentation. They start either with a `\` or a ``@`` like in `Java`.
 
-> Also before starting, note that you will have
-to say what you are commenting, before actually
-starting the comment. An example would be above,
-you must use a ``\file`` to say that
-you are commenting this file. So you would
-have to use ``\enum`` before commenting an enum etc.
+> Also before starting, note that you will have to say what you are commenting, before actually starting the comment. An example would be above, you must use a ``\file`` to say that you are commenting this file. So you would have to use ``\enum`` before commenting an enum etc.
 
 * [Write documentation in C](docs/c.md)
 * [Write documentation in Object-Oriented Languages](docs/oo.md)
 
-All tags can be found in this great reference sheet
-[great reference sheet (PDF)](https://www.mitk.org/images/1/1c/BugSquashingSeminars$2013-07-17-DoxyReference.pdf).
+All tags can be found in this great reference sheet [great reference sheet (PDF)](https://www.mitk.org/images/1/1c/BugSquashingSeminars$2013-07-17-DoxyReference.pdf).
 
 <hr class="sr">
 
 ## Generate your documentation website
 
-You will need a file called
-``Doxyfile`` to compile your documentation.
+You will need a file called `Doxyfile` to compile your documentation.
 
-You can create one with default values
-with ``doxygen -g``.
+You can create one with default values with `doxygen -g`.
 
-When created, you should check these lines
-and modify them if wanted
+When created, you should check these lines and modify them if wanted
 
 * ``PROJECT_NAME = "..."`` : project name
 * ``PROJECT_NUMBER = "..."`` : a version such as `0.0.5`
 * ``PROJECT_BRIEF = "desc"`` : project description
 * ``PROJECT_LOGO = "path"`` : project logo
-* ``OUTPUT_DIRECTORY = "path"`` : where the **generated website**
-  is stored.
+* ``OUTPUT_DIRECTORY = "path"`` : where the **generated website** is stored.
 * ``OUTPUT_LANGUAGE = "English"`` : documentation language
 * ``QUIET = YES`` : **do not show hundreds of messages**
 * ``WARN_IF_UNDOCUMENTED`` : show warning of not
 * ``WARN_IF_DOC_ERROR`` : show warning of not
-* ``INPUT = path`` : **add a file/folder**. Only these may 
-  have a documentation generated unless the file
-  extension is excluded.
-* ``INPUT += path`` : **add more files/folders**.
-  Each time you want to add one, add this line.
-* ``RECURSIVE = YES`` : **recursive search** of INPUT
-  folders
+* ``INPUT = path`` : **add a file/folder**. Only these may  have a documentation generated unless the file extension is excluded.
+* ``INPUT += path`` : **add more files/folders**. Each time you want to add one, add this line.
+* ``RECURSIVE = YES`` : **recursive search** of INPUT folders
 * ``EXCLUDE = path`` : exclude some path
-* ``IMAGE_PATH = path`` : if you do have a folder
-of images that you use in your documentation.
+* ``IMAGE_PATH = path`` : if you do have a folder of images that you use in your documentation.
   
 And here we go for the ``HTML`` specifics options
 
 * ``LAYOUT_FILE = "path"`` : a layout to change documentation layout
-* ``HTML_HEADER = ./header.html`` : add a header, `header.html`
-  is a file that you created
-* ``HTML_FOOTER = ./footer.html`` : add a footer, `footer.html`
-  is a file that you created
+* ``HTML_HEADER = ./header.html`` : add a header, `header.html` is a file that you created
+* ``HTML_FOOTER = ./footer.html`` : add a footer, `footer.html` is a file that you created
 * ``HTML_EXTRA_STYLESHEET = style.css`` : add a CSS file
 * ``HTML_EXTRA_FILES = file.js`` : add a JS file
 
@@ -127,45 +96,30 @@ then you have to use
 doxygen Doxyfile
 ```
 
-to generates your documentation. Check your
-``OUTPUT_DIRECTORY`` for the index.html that
-you must open in your browser to look at
-your HTML documentation.
+to generates your documentation. Check your ``OUTPUT_DIRECTORY`` for the index.html that you must open in your browser to look at your HTML documentation.
 
 <hr class="sl">
 
 ## Make your documentation beautiful
 
-If you want to have beautiful documentation
-such as this one [magnum](https://doc.magnum.graphics/magnum/)
-then here is my tutorial
-but you got the official one here
-[m.css](https://mcss.mosra.cz/documentation/doxygen/)
-that will **quite** help you.
+If you want to have beautiful documentation such as this one [magnum](https://doc.magnum.graphics/magnum/) then here is my tutorial but you got the official one here [m.css](https://mcss.mosra.cz/documentation/doxygen/) that will **quite** help you.
 
 * download these files from [https://github.com/mosra/m.css](https://github.com/mosra/m.css)
 
-  * folder ``documentation/templates``
-  * files ``documentation/__init__.py``,
-    ``documentation/_search.py``,
-   ``documentation/doxygen.py``,
-    and ``documentation/python.py``
-  * file ``documentation/favicon-dark.png`` and 
-    ``documentation/favicon-light.png``
-  * file ``documentation/search.js``
-  * folder ``plugins``
-  * folder ``css``
+  * folder `documentation/templates`
+  * files `documentation/__init__.py`, `documentation/_search.py`, `documentation/doxygen.py`, and `documentation/python.py`
+  * file `documentation/favicon-dark.png` and `documentation/favicon-light.png`
+  * file `documentation/search.js`
+  * folder `plugins`
+  * folder `css`
   
-Put everything in a ``style`` folder, mine looks
-like this
-[style folder](https://github.com/lgs-games/prim/tree/master/version_c/style)
-or this screen [style folder](download:mcss_folder.png).
+Put everything in a `style` folder, mine looks like this [style folder](https://github.com/lgs-games/prim/tree/master/version_c/style) or this screen [style folder](download:mcss_folder.png).
 
 Next
 
-* if ``python`` and `pip` are not installed then install them
-* ``pip3 install jinja2 Pygments``
-* create ``DoxyfileCSS``
+* if `python` and `pip` are not installed then install them
+* `pip3 install jinja2 Pygments`
+* create `DoxyfileCSS`
 * 
 
 ```bash
@@ -203,37 +157,25 @@ XML_NS_MEMB_FILE_SCOPE  = YES
 
 ## Make your documentation great
 
-I think we should think carefully about how to make
-our comments. Here is some advice, I hope
-it helps you find ideas about what would
-make documentation great.
+I think we should think carefully about how to make our comments. Here is some advice, I hope it helps you find ideas about what would make documentation great.
 
 * comments ``imports``, one line, why are you using them
-* comment ``variables``, at their initialization,
-why do you need it
-* group some part of your code (all ``getters``
-  , all ``setters``, all ``utilities``, all ``constructors``,
-  ...)
+* comment ``variables``, at their initialization, why do you need it
+* group some part of your code (all ``getters``, all ``setters``, all ``utilities``, all ``constructors``, ...)
 
-* do **not** write ``@return int, a number``
-or ``@param int a number``: in most cases it's useless
+* do **not** write ``@return int, a number`` or ``@param int a number``: in most cases it's useless
 
   * maybe tell us the range of the variable
   * some values that may trigger a different behavior
 
 * don't copy-paste, use ``@see`` or whatever, but don't copy-paste.
-* a "big" description at the beginning of a file,
-  to tells us why you are using this file so that we know
-  if we should read it or not.
-* don't use ``\date`` or `\version` unless you really
-  intend to modify them, otherwise they are not useful
+* a "big" description at the beginning of a file, to tells us why you are using this file so that we know if we should read it or not.
+* don't use ``\date`` or `\version` unless you really intend to modify them, otherwise they are not useful
 
 In general,
 
-* don't forget non-doxygen comments, one per line or block
-is helpful
-* show some examples of your function is called,
-that might help a lot
+* don't forget non-doxygen comments, one per line or block is helpful
+* show some examples of your function is called, that might help a lot
 * make some ``README.md`` to summarize some usages might be good
 
 <hr class="sl">

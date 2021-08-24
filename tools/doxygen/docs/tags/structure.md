@@ -25,6 +25,4 @@ typedef struct NAME {
 It may be tiring but you have to make sure
 
 * to write to tag brief 
-* and **typedef** must
-be before **struct** otherwise you will have
-an error (random).
+* and **typedef** must be before **struct** otherwise you will have an error (random).

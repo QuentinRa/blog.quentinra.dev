@@ -19,7 +19,5 @@ typedef enum NAME {
 
 Notes
 
-* ``\typedef NEW_NAME``: if you did an inline
-  declaration with a typedef then put this
-  line **BEFORE** ``\enum``
+* ``\typedef NEW_NAME``: if you did an inline declaration with a typedef then put this line **BEFORE** ``\enum``
 * ``\enum NAME``: your enum name

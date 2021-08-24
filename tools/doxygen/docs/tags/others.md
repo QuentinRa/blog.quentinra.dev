@@ -2,8 +2,7 @@
 
 [Go back](../c.md)
 
-These can be used almost everywhere but
-you don't see them often
+These can be used almost everywhere but you don't see them often
 
 * ``\deprecated why``: if deprecated and why
 * ``\bug desc``: if bug found and a description
@@ -13,15 +12,11 @@ you don't see them often
 
 ## Test-related tags
 
-An invariant is something that won't
-be changed from their value before the call of a
-function.
+An invariant is something that won't be changed from their value before the call of a function.
 
-A precondition is something that we are taking
-for true.
+A precondition is something that we are taking for true.
 
-And a postcondition is something that we ensure
-to make it true after the call of the function.
+And a postcondition is something that we ensure to make it true after the call of the function.
 
 * ``\test description``: a test that may be done
 * ``\pre description``: preconditions
