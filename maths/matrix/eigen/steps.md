@@ -2,7 +2,7 @@
 
 [Go back](../index.md#eigendecomposition-of-a-matrix)
 
-The steps are
+The steps for the eigendecomposition are
 
 * calculate $\lambda{I_n}-A_n$
 * solve the lambdas (eigenvalues) in $det(\lambda{I_n}-A_n) = 0$

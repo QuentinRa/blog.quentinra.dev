@@ -2,9 +2,7 @@
 
 [Go back](../index.md#matrix-inversion)
 
-When we have a big matrix, we can split the matrix
-into smaller matrix and use the formula we know
-like $ad-bc$ for the 2x2 matrix. In French, our teacher 
+When we have a big matrix, we can split the matrix into smaller matrices, and use the formula we know like $ad-bc$ for the 2x2 matrix. In French, our teacher 
 is also calling this ``Calcul par développement``.
 
 We are calling **minor** of a matrix $A$, the matrix $M_{i,p}$
