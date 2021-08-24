@@ -19,6 +19,5 @@ You can import or create a remote project, with the following steps.
 
 Now you should enable the automatic upload
 
-* ``Settings > Build …, Deployment > Deployment > Options``
-* set ``Upload changed files automatically …``
-to ``on … save action`` or `always`.
+* `Settings > Build …, Deployment > Deployment > Options`
+* set `Upload changed files automatically ...` to `on … save action` or `always`.

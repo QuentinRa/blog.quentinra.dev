@@ -1,10 +1,8 @@
 # Introduction
 
-InnoSetup is allowing you to create modern Windows installers. For now, this course is quite empty, but more help might be added if people are using more advanced
-concepts that I do.
+InnoSetup is allowing you to create modern Windows installers. For now, this course is quite empty, but more help might be added if people are using more advanced concepts that I do.
 
-First download the software [here](https://jrsoftware.org/isdl.php#stable), and you might check the [GitHub](https://github.com/jrsoftware/issrc). Simply install and run the software. When starting, choose ``Create a new file using the Script wizard`` and
-follows the steps. That's quite easy.
+First download the software [here](https://jrsoftware.org/isdl.php#stable), and you might check the [GitHub](https://github.com/jrsoftware/issrc). Simply install and run the software. When starting, choose ``Create a new file using the Script wizard`` and follows the steps. That's quite easy.
 
 The generated file will be a ``xxx.iss`` kind of file.
 
@@ -12,9 +10,7 @@ The generated file will be a ``xxx.iss`` kind of file.
 
 ## Keep folders
 
-If you added a folder because you need the same folder
-with the same files inside
-then replace
+If you added a folder because you need the same folder with the same files inside then replace
 
 ```bash
 Source: "xxxx\app\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs

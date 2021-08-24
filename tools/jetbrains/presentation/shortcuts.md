@@ -21,8 +21,7 @@ I will list almost all shortcuts that you may use there. But, if a shortcut is o
 * <kbd>CTRL+Z</kbd>: undo
 * <kbd>CTRL+SHIFT+Z</kbd>: redo 🙄
 
-Also, take note that you can easily select a pack of lines
-by pressing <kbd>SHIFT</kbd> and using arrows.
+Also, take note that you can easily select a pack of lines by pressing <kbd>SHIFT</kbd> and using arrows.
 
 And the two great ones are
 
@@ -60,10 +59,6 @@ And the two great ones are
 * <kbd>^+CTRL+SHIFT+U</kbd>: uppercase to lowercase or lowercase to uppercase
 * <kbd>CTRL+G</kbd>: to move to a line
 * <kbd>CTRL+R</kbd>: replace some text
-* <kbd>ALT+7</kbd>: beware and do not use the 7 of your numpad. This opens a 
-  popup with the structure of the file. In Oriented-object languages,
-  you could see all the classes in a file, methods, ...
-  and can easily navigate to one.
-* <kbd>CTRL+ALT+MAJ+U</kbd>: generate a UML diagram of selected files
-in available
+* <kbd>ALT+7</kbd>: beware and do not use the 7 of your numpad. This opens a popup with the structure of the file. In Oriented-object languages, you could see all the classes in a file, methods, ... and can easily navigate to one.
+* <kbd>CTRL+ALT+MAJ+U</kbd>: generate a UML diagram of selected files in available
 * <kbd>CTRL+ALT+U</kbd>: same as above, but in a small popup like a preview

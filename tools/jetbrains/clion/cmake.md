@@ -14,8 +14,7 @@ set(CMAKE_C_STANDARD 99) # standard
 add_executable(name main.c main.h ...)
 ```
 
-If the name is ``prim`` then after compiling your
-CMakelist you will have here
+If the name is ``prim`` then after compiling your CMakelist you will have here
 
 ![targets](targets.png)
 
@@ -26,10 +25,7 @@ and you can
 3. change the profile
 4. run this target
 
-(A profile is a configuration. You may use theses
-if you want to try to build/run using different
-configurations but that should not be the case most
-of the time).
+(A profile is a configuration. You may use theses if you want to try to build/run using different configurations but that should not be the case most of the time).
 
 <hr class="sl">
 

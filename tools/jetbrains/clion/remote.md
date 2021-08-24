@@ -2,16 +2,13 @@
 
 [Go back](../index.md#clion)
 
-Check the compiler section to use a remote compiler.
-[The official tutorial](https://www.jetbrains.com/help/clion/remote-projects-support.html)
-might also help.
+Check the compiler section to use a remote compiler. [The official tutorial](https://www.jetbrains.com/help/clion/remote-projects-support.html) might also help.
 
 <hr class="sl">
 
 ## SSH
 
-It should be easy, simply go to ``Tools (top menu) > Start SSH Session``.
-Or you may try this
+It should be easy, simply go to ``Tools (top menu) > Start SSH Session``. Or you may try this
 
 * Settings > Tools > Remote SSH External tools
 * ``+``
