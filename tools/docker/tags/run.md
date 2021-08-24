@@ -2,7 +2,8 @@
 
 [Go back](..#most-used-instructions)
 
-Run a command
+Run a command with ``command``, a command in the os-image-specific
+language.
 
 ```dockerfile
 RUN command
@@ -11,9 +12,6 @@ RUN "command1;command2;..."
 # or
 RUN ["command","arg1","arg2"]
 ```
-
-with ``command``, a command in the os-image-specific
-language.
 
 <hr class="sl">
 

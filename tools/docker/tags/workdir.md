@@ -2,13 +2,11 @@
 
 [Go back](..#most-used-instructions)
 
-WORKDIR changes the current repository
+WORKDIR changes the current repository with ``path`` the new repository.
 
 ```dockerfile
 WORKDIR path
 ```
-
-with ``path`` the new repository.
 
 <hr class="sl">
 

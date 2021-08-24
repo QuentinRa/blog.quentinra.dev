@@ -2,18 +2,13 @@
 
 [Go back](..#most-used-instructions)
 
-You can use ENV to set environment variables
+You can use ENV to set environment variables with `NAME`: a variable name, and `VALUE`: the value of the variable.
 
 ```dockerfile
 ENV NAME VALUE
 # or
 ENV NAME=VALUE
 ```
-
-with
-
-* `NAME`: a variable name
-* `VALUE`: the value of the variable
 
 <hr class="sl">
 

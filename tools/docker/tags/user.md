@@ -2,13 +2,11 @@
 
 [Go back](..#most-used-instructions)
 
-Create a user
+Create a user with ``name`` the username.
 
 ```dockerfile
 USER name
 ```
-
-with ``name`` the username.
 
 **Beware**: On Windows, you must call
 ``RUN net user /add name`` or it will
