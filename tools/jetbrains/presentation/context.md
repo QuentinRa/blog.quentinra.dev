@@ -2,6 +2,8 @@
 
 [Go back](interface.md)
 
+This was the menu we add in 2020.3, [need update].
+
 ![context-menu](context.png)
 
 * ``new`` to create a new file, with a template

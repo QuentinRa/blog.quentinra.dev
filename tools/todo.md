@@ -13,6 +13,8 @@
     - preview in the editor
     - CTest
     - soft wraps
+    - update screens
+    - shortcuts: replace "*", "@", "^" by "{L}", "{R}", and "{S}"
 - Git
   - https://github.com/nicoespeon/gitgraph.js, https://www.nicoespeon.com/en/2013/11/gitgraphjs/
   - http://jekyllthemes.org/

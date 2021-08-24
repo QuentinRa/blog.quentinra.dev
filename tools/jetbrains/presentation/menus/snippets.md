@@ -2,9 +2,7 @@
 
 [Go back](../menus.md)
 
-You can create customs snippets meaning when you
-type ``for``, JetBrains will show you some pre-written
-code: that's a snippet.
+You can create customs snippets. For instance, we you're typing ``for``, JetBrains is showing you some pre-written code: that's a snippet.
 
 * Open ``Settings > Editor > Live template``.
 * Create a new ``live template``.
@@ -12,6 +10,5 @@ code: that's a snippet.
 * write a description, shown when suggesting snippets
 * write some code if this snippet is selected
 
-You can create variables using ``$name$``
-then go to ``edit variables`` and tunes how 
+You can create variables using ``$name$`` then go to ``edit variables`` and tunes how
 this variable should act.

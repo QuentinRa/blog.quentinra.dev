@@ -2,7 +2,7 @@
 
 [Go back](../index.md#clion)
 
-Create a ``CmakeLists.txt`` if not already created.
+Create a ``CmakeLists.txt`` if not already created. This is a bit harder to use than a Makefile, but most of time, you won't have to do something complicated. A cmake file is generating an unreadable Makefile inside the build folder.
 
 ```cmake
 cmake_minimum_required(VERSION 3.16.3) # or 17 / your version

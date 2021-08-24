@@ -2,7 +2,7 @@
 
 [Go back](../menus.md)
 
-Remember these shortcuts
+You can generate an UML diagram from the selected classes, using the following shortcuts
 
 * ``CTRL+ALT+MAJ+U``
 * ``CTRL+ALT+U``

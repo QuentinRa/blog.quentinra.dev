@@ -2,6 +2,8 @@
 
 [Go back](../index.md#intellij-idea)
 
+This menu will help you managing your project.
+
 * **Project** : set up your JDK
 * **Modules**
 * **Sources** 

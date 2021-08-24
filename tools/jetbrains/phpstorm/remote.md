@@ -2,6 +2,8 @@
 
 [Go back](../index.md#phpstorm)
 
+You can import or create a remote project, with the following steps.
+
 * New project from existing files
 * Web server is a remote host ... FTP
 * set the local path for the project

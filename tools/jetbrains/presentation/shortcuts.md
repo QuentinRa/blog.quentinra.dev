@@ -2,7 +2,7 @@
 
 [Go back](..#interface-presentation)
 
-Here is my syntax for the following shortcuts
+I will list almost all shortcuts that you may use there. But, if a shortcut is only available in one IDE, it won't be listed here. Here is my syntax for the following shortcuts
 
 * <kbd>a+b</kbd>: press `a` and `b` at the same time
 * <kbd>*+b</kbd>: left click and `b` at the same time
@@ -19,7 +19,7 @@ Here is my syntax for the following shortcuts
 * <kbd>CTRL+A</kbd>: select all
 * <kbd>CTRL+D</kbd>: duplicate line or selection
 * <kbd>CTRL+Z</kbd>: undo
-* <kbd>CTRL+SHIFT+Z</kbd>: redo
+* <kbd>CTRL+SHIFT+Z</kbd>: redo 🙄
 
 Also, take note that you can easily select a pack of lines
 by pressing <kbd>SHIFT</kbd> and using arrows.
