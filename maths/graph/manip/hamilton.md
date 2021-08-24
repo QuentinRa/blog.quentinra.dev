@@ -2,10 +2,7 @@
 
 [Go back](..#sorting-and-search)
 
-An hamiltonian graph is
-
-* a connected graph
-* that have a cycle/circuit traversing **each vertex once**.
+An hamiltonian graph is a **connected graph**, that have a cycle/circuit traversing **each vertex once**.
 
 We are adding "semi-" before hamiltonian
 if the graph have a chain/path traversing **each vertex once**

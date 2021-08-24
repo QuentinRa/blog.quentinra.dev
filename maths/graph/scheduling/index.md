@@ -2,6 +2,10 @@
 
 [Go back](..#scheduling-problem)
 
+Learn about the terminology for scheduling problems (optimal cost, early/last start time, and total/free/certain margin).
+
+<hr class="sl">
+
 <table class="table table-bordered table-striped table-dark">
 <tr><th>optimal cost/duration</th></tr>
 <tr><td>

@@ -2,10 +2,7 @@
 
 [Go back](..#graph-coloring-problems)
 
-The **rules** are
-
-* you must use the least colors possibles
-* two neighbors can't have the same color
+You must use the **least colors**, taking into account that **neighbors can't have the same color**, while coloring the Graph.
 
 We are calling chromatic number (``nombre chromatique``)
 $\gamma(G)$ (gamma) or $\chi(G)$ (chi) of $G$ the minimum

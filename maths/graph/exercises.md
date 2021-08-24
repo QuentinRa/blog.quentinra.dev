@@ -2,7 +2,7 @@
 
 [Go back](index.md#terminology)
 
-Given this graph $G(V, E)$
+These are easy question, to make sure that you understood and remembered the vocabulary. We will use this graph $G(V, E)$ for the following questions
 
 ![](terms/images/terms.svg)
 

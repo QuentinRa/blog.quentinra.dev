@@ -2,17 +2,14 @@
 
 [Go back](..#sorting-and-search)
 
-A graph is eulerian if
-
-* all vertex's degrees are even
-* it has a eulerian cycle/circuit traversing **each edge once**
+A graph is eulerian if **all vertex's degrees are even**, and it has a **eulerian cycle/circuit** traversing **each edge once**
 
 A graph is semi-eulerian if
 
 * only 2 degree are odd
 * it has a eulerian chain/path traversing **each edge once**
 
-Legends say that we are adding "semi-" before eulerian because
+Legends are saying that we are adding "semi-" before eulerian because
 adding one vertex will make the graph eulerian.
 
 <hr class="sl">

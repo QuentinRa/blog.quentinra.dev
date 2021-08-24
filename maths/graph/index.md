@@ -1,14 +1,10 @@
 # Introduction
 
-A graph $G$, is a set of **vertices** (=nodes=`sommets/nœuds`) $V$
-linked by **edges** (=links=`arêtes`) $E$ giving us the notation
-$G(V, E)$. Vertices can have a direction or not.
+A graph $G$, is a set of **vertices** (=nodes=`sommets/nœuds`) $V$ linked by **edges** (=links=`arêtes`) $E$ giving us the notation $G(V, E)$. Vertices can have a direction or not.
 
 ![example](example.svg)
 
-You will use graphs in databases in GraphDatabase,
-check the NoSQL course if that was what you are looking
-for.
+You will use graphs in databases in GraphDatabase, check the NoSQL course if that was what you are looking for. You may also use it to solve scheduling problem using P.E.R.T. in the project-management course.
 
 <hr class="sl">
 

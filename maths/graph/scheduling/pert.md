@@ -2,7 +2,7 @@
 
 [Go back](..#scheduling-problem)
 
-In a pert diagram,
+In the P.E.R.T. method, the vertices aren't the tasks anymore, they are the states of our project. When you're doing a task, you putting your project in another state. A task that need other tasks, will now be depending on a state of the project where the do tasks got tackled.
 
 * we got nodes like 1, 2, 3, ... that are the states of our project (1 may not be before 2)
 * they have properties
@@ -13,25 +13,14 @@ In a pert diagram,
 * we have a node START
 * we have a node END
 
-From one state of your project (START), you may do some tasks 
-like A and B. In P.E.R.T., this is 2 states (2 and 3) and 
-the edges (from $START \to 2$ and $START \to 3$)
-will be associated
+From one state of your project (START), you may do some tasks like A and B. In P.E.R.T., this is 2 states (1 and 2), and on each edge ($START \to 1$, and $START \to 2$), we will put
 
 * the name of the task
 * the cost of the task
 
-But, if a task C is dependant on A and B, this
-is like being dependant of state 2 and state 3. What we
-do is adding a directed dotted arrow
-$A \to B$ (or $B \to A$) with the duration $0$. Then
-we start the edge with $C(cost)$ from $A$ (resp. $B$, up to the one
-you picked).
+But, if a task C is dependant on A and B, this is the same as being dependent of state 1 and state 2. What we do is adding a directed dotted arrow $1 \to 2$ (or $2 \to 1$) with the duration $0$. Then we start the edge with $C(cost)$ from $1$ (resp. $2$, up to the one you picked) giving us $2 \to 3$ (resp. $1 \to 3$).
 
-**Note**: You may have some cases of **redundancy** like
-C is dependant on A, and D is dependant on C and A. You must
-remove $A \to D$ because we got by transitivity
-since we have $A \to C \to D$.
+**Note**: You may have some cases of **redundancy** like C is dependant on A, and D is dependant on C and A. You must remove $A \to D$ because we got it by transitivity since we have $A \to C \to D$.
 
 <hr class="sl">
 

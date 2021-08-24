@@ -2,11 +2,11 @@
 
 [Go back](..)
 
-This is really complex without a computer.
+This is really complex without a computer, as you will make a new graph using Bellman-Ford, then use the Dijkstra algorithm to get the shortest path.
 
 * we are adding a vertex ($q$) to our graph
 * we are linking this vertex to all vertices (weight=0)
-* we are evaluating bellman-ford (starting from $q$)
+* we are evaluating Bellman-Ford (starting from $q$)
 * we got $n$ distances, stored in an array $h$
 
 The shortest distance from $q$ to $X$ is in $h[X]$.
