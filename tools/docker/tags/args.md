@@ -2,9 +2,7 @@
 
 [Go back](..#most-used-instructions)
 
-Arguments allow you, for instance,
-to create different builds according
-to a version. The syntax is
+Arguments allow you, for instance, to create different builds according to a version. The syntax is
 
 ```dockerfile
 ARG NAME=value

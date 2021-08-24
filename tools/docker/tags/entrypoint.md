@@ -2,11 +2,7 @@
 
 [Go back](..#most-used-instructions)
 
-Entrypoint is an alternative to CMD
-or it seems. You can pass arguments
-from the command line to your docker
-image using it so you might like it.
-The syntax is
+Entrypoint is an alternative to CMD or it seems. You can pass arguments from the command line to your docker image using it so you might like it. The syntax is
 
 ```dockerfile
 ENTRYPOINT command
@@ -14,8 +10,7 @@ ENTRYPOINT command
 ENTRYPOINT ["command","arg1","arg2"]
 ```
 
-with ``command``, a command in the os-image-specific
-language.
+with ``command``, a command in the os-image-specific language.
 
 <hr class="sl">
 

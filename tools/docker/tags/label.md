@@ -2,9 +2,7 @@
 
 [Go back](..#most-used-instructions)
 
-Set the image properties that are shown
-when using the command ``docker image inspect image_name_here``.
-The syntax is
+Set the image properties that are shown when using the command ``docker image inspect image_name_here``. The syntax is
 
 ```dockerfile
 LABEL "property"="value"

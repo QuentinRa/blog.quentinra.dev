@@ -2,9 +2,7 @@
 
 [Go back](..#most-used-instructions)
 
-This is the first line of your Dockerfile and it's required. You may
-have multiples of them if you are making multiples
-builds
+This is the first line of your Dockerfile and it's required. You may have multiples of them if you are making multiples builds
 
 ```dockerfile
 FROM image
@@ -16,8 +14,7 @@ FROM image:version as name
 
 * ``image``: image tag used as a source
 * ``version``: version of the tag, optional
-* ``name``: you can have a lot of from and give
-them a name, optional
+* ``name``: you can have a lot of from and give them a name, optional
 
 <hr class="sl">
   

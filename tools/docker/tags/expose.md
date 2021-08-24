@@ -2,10 +2,7 @@
 
 [Go back](..#most-used-instructions)
 
-Expose a port of the container
-meaning that we will be able to bind
-or port of our machine with one of
-the images that will run. The syntax is
+Expose a port of the container meaning that we will be able to bind or port of our machine with one of the images that will run. The syntax is
 
 ```dockerfile
 EXPOSE port
