@@ -1,25 +1,13 @@
 # Introduction
 
-This is not a course, simply a gathering of
-notes about unity by someone still learning it.
+This is not a course, simply a gathering of notes about unity by someone still learning it.
 
-Unity is a game engine that you can download
-[here](https://store.unity.com/fr#plans-individual),
-you may use the student plan (if you are a student)
-and you may also apply to
-[GitHub student pack](https://education.github.com/pack).
-You will then download
+Unity is a game engine that you can [download here](https://store.unity.com/fr#plans-individual), you may use the student plan (if you are a student) and you may also apply to [GitHub student pack](https://education.github.com/pack). You will then download
 
-* **unity hub**: software to manage unity versions
-and projects
-* **unity**: downloaded through unity hub, usually peoples
-  are using LTS (Long-term support) versions of unity
-  because they will still be maintained (bugs only)
-  for 2 years.
+* **unity hub**: software to manage unity versions and projects
+* **unity**: downloaded through unity hub, usually peoples  are using LTS (Long-term support) versions of unity because they will still be maintained (bugs only) for 2 years.
   
-Then what I did after that was playing with the samples
-and following tutorials like 
-[RPG in 1 hour](https://learn.unity.com/project/creator-kit-rpg?uv=2020.3)
+Then what I did after that was playing with the samples and following tutorials like [RPG in 1 hour](https://learn.unity.com/project/creator-kit-rpg?uv=2020.3)
 
 Some tips I'm gathering [tips about unity here](more/tips.md), and [here are my notes about the TopDownEngine](more/tde.md) (a paid asset).
 
@@ -27,10 +15,7 @@ Some tips I'm gathering [tips about unity here](more/tips.md), and [here are my 
 
 ## GitHub in Unity
 
-Unity projects are made of a lot of files, including big files
-too, so you can't commit them. GitHub allows you to use LFS
-to transfer big files and you got a plugin making things
-simple in unity.
+Unity projects are made of a lot of files, including big files too, so you can't commit them. GitHub allows you to use LFS to transfer big files and you got a plugin making things simple in unity.
 
 * [Follow this tutorial](https://medium.com/@j0hnm4r5/git-with-unity-92ca7854ea3d) (external)
 * [GitHub for unity](https://unity.github.com/)
@@ -40,9 +25,7 @@ Here are my steps
 
 * download GitHub for unity (2nd link)
 * you got a ".package"
-* open your project, and drag and drop it 
-  inside **project window** (the file explorer,
-  the bottom left panel)
+* open your project, and drag and drop it inside **project window** (the file explorer, the bottom left panel)
 * then click on "import" on the panel that opened
 * then you can show git tab using Window > GitHub
 * *you may have to install [GitHub LFS](https://git-lfs.github.com/)*
@@ -51,64 +34,47 @@ Here are my steps
 
 ## Starting in unity
 
-When you are opening a project, by default you got
-4 windows.
+When you are opening a project, by default you got 4 windows.
 
 * **hierarchy window** (left): list of all **GameObjects**
-* **scene window** (middle): a scene is like a screen of your
-game (by default you are in the sample scene)
-  * you can click on the game tab to play your game
-    (you can set the resolution here too)
+* **scene window** (middle): a scene is like a screen of your game (by default you are in the sample scene)
+  * you can click on the game tab to play your game (you can set the resolution here too)
   * and go back to the scene tab to edit it
-* **inspector window** (right): you can edit the properties
-of the selected **GameObject**
+* **inspector window** (right): you can edit the properties of the selected **GameObject**
 * **project window** (bottom): all of your project files
 
-The project files are usually split into folders, using these folders
-names
+The project files are usually split into folders, using these folders names
 
 * **Animations**, **Audio**, **Cutscene**
 * **Editor**, **Images**, **Materials**
 * **Plugins**
-* **Prefabs**: your prefabs, they are preconfigured objects
-  like a player with a configuration. You can create
-  one by dragging and dropping a GameObject in the
-  project window
-* **Scenes**: your scenes (unity scene files, a screen
-  of your game)
+* **Prefabs**: your prefabs, they are preconfigured objects like a player with a configuration. You can create one by dragging and dropping a GameObject in the project window
+* **Scenes**: your scenes (unity scene files, a screen of your game)
 * **Scripts**: your C# scripts (.cs)
 * **Settings**, **Shaders**
 
 Some shortcuts
 
-* ``F``: focus a GameObject
+* `F`: focus a GameObject
 * ...
 
 <hr class="sl">
 
 ## Tilemap
 
-A tilemap is a map of tiles, and a tile is an image. 
-You can have a Rectangular or an Isometric tilemap. This
-is a convenient way of creating 2D maps since
+A tilemap is a map of tiles, and a tile is an image. You can have a Rectangular or an Isometric tilemap. This is a convenient way of creating 2D maps since
 
 * you create a palette
 * you create tiles layers (ground, ...)
-* and you move your tiles (grass, ...) to your map,
-  in the right layer
+* and you move your tiles (grass, ...) to your map, in the right layer
   
-Creating a layer allows you to put things on top of another.
-In Unity, you will have a grid and each tilemap is a layer.
-If you want something to be above or below the player,
-then play with ``Order in Layer`` property.
+Creating a layer allows you to put things on top of another. In Unity, you will have a grid and each tilemap is a layer. If you want something to be above or below the player, then play with `Order in Layer` property.
 
 <hr class="sl">
 
 ## Code
 
-I'm using Rider to edit my C# files. I'm gone to
-``edit > preferences > external tools`` and selected
-Rider as External tools' editor.
+I'm using Rider to edit my C# files. I'm gone to `edit > preferences > external tools` and selected Rider as External tools' editor.
 
 Sample empty class
 
@@ -126,8 +92,7 @@ public class Test : MonoBehaviour
 }
 ```
 
-You can declare fields ``SerializeField`` so that you can
-modify this property inside unity
+You can declare fields `SerializeField` so that you can modify this property inside unity
 
 ```cs
 // same as public
@@ -144,10 +109,7 @@ modify this property inside unity
 [Space(value)]
 ```
 
-Let's say you attached a C# script
-(add script, mono behavior, on a GameObject)
-to a GameObject, then you can get other properties (like
-the collider, ...) using
+Let's say you attached a C# script (add script, mono behavior, on a GameObject) to a GameObject, then you can get other properties (like the collider, ...) using
 
 ```cs
 // example, get Rigidbody2D
@@ -177,32 +139,17 @@ string tag = this.gameObject.tag;
 
 ## Properties
 
-The ``2D Collider`` is handling the collision for you
-with any other GameObjects having this component.
+The ``2D Collider`` is handling the collision for you with any other GameObjects having this component.
 
-The ``RigidComponent`` is something that you may use
-to add things like gravity and make your player fall...
-If you don't want your "player to fall" but you want a Rigid
-body, then some are setting gravity to 0.
+The ``RigidComponent`` is something that you may use to add things like gravity and make your player fall... If you don't want your "player to fall" but you want a Rigid body, then some are setting gravity to 0.
 
-When you are moving a GameObject using your handwritten
-script, don't forget to use this 
-``pos * Time.deltaTime * speed`` (=use the
-deltaTime). It will make things smoother since your
-character will move at an almost constant speed.
+When you are moving a GameObject using your handwritten script, don't forget to use this `pos * Time.deltaTime * speed` (=use the deltaTime). It will make things smoother since your character will move at an almost constant speed.
 
 <hr class="sl">
 
 ## Sprites
 
-A sprite is an image and a sprite sheet is a big
-image having a lot of sprites. In unity, click
-on a sprite sheet then in property, set ``Sprite mode``
-to ``Multiple`` to tell unity that this image is composed
-of multiples images. Then in sprite editor, slide
-the image (either using automatic or grid) and apply
-your changes. You should now see only one frame/sprite
-when dragging your sprite inside the scene.
+A sprite is an image and a sprite sheet is a big image having a lot of sprites. In unity, click on a sprite sheet then in property, set `Sprite mode` to `Multiple` to tell unity that this image is composed of multiples images. Then in sprite editor, slide the image (either using automatic or grid) and apply your changes. You should now see only one frame/sprite when dragging your sprite inside the scene.
 
 You may (or not)
 
@@ -214,15 +161,9 @@ You may (or not)
 
 ## Animations
 
-"Animations" are made of an animator (handling
-the animations/states) and animations. An animation would
-be idle, running, jumping, ... while the animator would
-define what makes you move from idle to running.
+"Animations" are made of an animator (handling the animations/states) and animations. An animation would be idle, running, jumping, ... while the animator would define what makes you move from idle to running.
 
-Create and add an animator controller to a GameObject.
-Then create animations (you need to select the time
-and the image loaded at this time). Then in the animator,
-you must add the transitions.
+Create and add an animator controller to a GameObject. Then create animations (you need to select the time and the image loaded at this time). Then in the animator, you must add the transitions.
 
 * select a parameter
   * in animator, create a parameter
@@ -246,25 +187,18 @@ anim.SetTrigger("name");;
 anim.Play("anim_name");
 ```
 
-* you may uncheck ``Has exit time`` so you don't have
-  delay when changing state
-* ``Any state`` means that if the condition is true, then from any state
-  you can move to another state
+* you may uncheck ``Has exit time`` so you don't have delay when changing state
+* ``Any state`` means that if the condition is true, then from any state you can move to another state
 
-This is a summary of this 
-[great video](https://www.youtube.com/watch?v=Gf8LOFNnils&ab_channel=PandemoniumGames) 
-if you can watch it, that's better.
+This is a summary of this [great video](https://www.youtube.com/watch?v=Gf8LOFNnils&ab_channel=PandemoniumGames) if you can watch it, that's better.
 
 <hr class="sl">
 
 ## UserInterface
 
-**In 2021, you might look at the UI Builder**, to
-create user interfaces (UI), like in this 
-[video](https://www.youtube.com/watch?v=NQYHIH0BJbs&ab_channel=CocoCode).
+**In 2021, you might look at the UI Builder**, to create user interfaces (UI), like in [this video](https://www.youtube.com/watch?v=NQYHIH0BJbs&ab_channel=CocoCode).
 
-Otherwise, first, create a canvas (ui > canvas) for your UI. Then
-you can
+Otherwise, first, create a canvas (ui > canvas) for your UI. Then you can
 
 * load a background
   * create a new ui > image
@@ -272,35 +206,23 @@ you can
   * then drag and drop an image into the slot
   * you may have to transform your image into a sprite
   * [video here](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode)
-  * to make a **blur** background (like your game
-    behind the UI) it's complicated 
-* you create buttons with ui > buttons, then set the text,
-  you may set an image as a background (you may
-  look into [9patch](https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/9-patch),
-  explained in the video too)
+  * to make a **blur** background (like your game behind the UI) it's complicated 
+* you create buttons with ui > buttons, then set the text, you may set an image as a background (you may look into [9patch](https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/9-patch), explained in the video too)
 * you create labels with ui > text, then set the text
-* you can use layouts (like in Java) 
-  but using anchors may be enough for a simple UI
-  ([video here](https://www.youtube.com/watch?v=HwdweCX5aMI&ab_channel=GameDevGuide))
-* if you want some resizing (and you are not using
-  anchors) then 
+* you can use layouts (like in Java) but using anchors may be enough for a simple UI ([video here](https://www.youtube.com/watch?v=HwdweCX5aMI&ab_channel=GameDevGuide))
+* if you want some resizing (and you are not using anchors) then 
   * add a "canvas scaler" to your canvas
   * set scale mode to "scale with the screen size"
   * and give it a size
 
-You can make your hierarchy looks better using 
-this [plugin](https://github.com/febucci/unitypackage-custom-hierarchy)
-following this [video](https://www.youtube.com/watch?v=Gma7IXPj4wI&ab_channel=CocoCode)
+You can make your hierarchy looks better using this [plugin](https://github.com/febucci/unitypackage-custom-hierarchy) following this [video](https://www.youtube.com/watch?v=Gma7IXPj4wI&ab_channel=CocoCode)
 
-You may create advanced buttons like in this
-[video](https://www.youtube.com/watch?v=cW-E4WEogzE&ab_channel=CocoCode)
+You may create advanced buttons like in this [video](https://www.youtube.com/watch?v=cW-E4WEogzE&ab_channel=CocoCode)
   * create a button add a text and an image
   * add a horizontal layout component to the button
   * set the spacing, ...
-  * then on the image, you can add a layout element
-  to resize the image
-  * you can add a "content size fitter" to make the button
-  resize itself (set fit to preferred size)
+  * then on the image, you can add a layout element to resize the image
+  * you can add a "content size fitter" to make the button resize itself (set fit to preferred size)
 
 <hr class="sr">
 
