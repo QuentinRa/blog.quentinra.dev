@@ -10,7 +10,7 @@ When we are drawing a planar graph, we will have
 
 ## Face
 
-You know the bucket tool in image editor software? A face is something colored by the bucked tool in one go. You got at least one unbounded face, which is the one not colored after coloring all of your faces.
+Do you know the bucket tool in image editors? A face is something colored by the bucked tool in one go. You got at least one unbounded face, which is the one not colored after coloring all of your faces.
 
 A face is a surface of the graph delimited by edges. It can be either a
 
@@ -27,7 +27,7 @@ We are calling Dual graph (`Graphe dual`), the graph made using the faces as ver
 
 ## Bounds
 
-Note that you can only use a vertex once inside the bounds (`Frontière/contour`) of a face. The bounds is a list of edges you used to delimit a face. The bounds are forming a cycle basis in a planar representation.
+Note that you can only use a vertex once inside the bounds (`Frontière/contour`) of a face. The bounds are a list of edges you used to delimit a face. The bounds are forming a cycle basis in a planar representation.
 
 <hr class="sl">
 
@@ -60,13 +60,13 @@ Other notes
 * According to the English wikipedia, a graph is planar if
   * $m \le 3n - 6$ (yeah it's 6 not 5)
   * $f \le 2n - 4$
-  * if there are not cycles of length 3, $m \le 2n-4$
+  * if there are no cycles of length 3, $m \le 2n-4$
 
 <hr class="sl">
 
 ## Example 1
 
-Are the following graphs planar graphs?
+Are the following graphs planar?
 
 ![](images/planar/planar1.png)
 

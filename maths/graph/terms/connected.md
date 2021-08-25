@@ -4,7 +4,7 @@
 
 A graph is connected (`connexe`) if we only have one connected component (`composante connexe`). Otherwise, we are calling the graph disconnected (`non connexe`).
 
-A connected component is subgraph of $G$ while all vertex inside are connected. A strong component (`composante connexe maximale`) is a connected component in which we can't add more vertex inside.
+A connected component $C$, is a subgraph of $G$ in which every vertex inside is connected to at least one other vertex inside $C$. A strong component (`composante connexe maximale`) is a connected component in which we can't add more vertex inside.
 
 **Algorithm**
 
@@ -23,7 +23,7 @@ When iterating the vertices, you should do it by looking at the vertex in the ed
 
 ## Super-connectivity
 
-A graph is super-connected `Forte connexité/f-connexe` if from any vertex, we can go to any other vertex.
+A graph is super-connected `Forte connexité/f-connexe`, if, from any vertex, we can go to any other vertex.
 
 **Algorithm**
 
@@ -32,7 +32,7 @@ A graph is super-connected `Forte connexité/f-connexe` if from any vertex, we c
 * mark all vertex we can reach with "+"
 * mark all vertex we can be reached from "-"
 * you got a first super-connected component (All nodes with "+" and "-")
-* if there are remaining edge, restart from one of them
+* if there are remaining edges, restart from one of them
 
 Note: a complete graph is super-connected.
 
@@ -50,13 +50,13 @@ An edge that, once removed, will disconnect the graph.
 
 * Articulation point (`Point d'articulation`)
 
-A vertex that once removed, will disconnect the graph.
+A vertex that, once removed, will disconnect the graph.
 
 <hr class="sr">
 
 ## Example 1 - Connected graph
 
-Let G the graph
+Let $G$, the following graph
 
 ![](images/connected/connected1.svg)
 
@@ -71,18 +71,18 @@ Let G the graph
 
 Let's apply our connected algorithm
 
-![](images/connected/connected1-1.png)
+![Example 1 - connected algorithm](images/connected/connected1-1.png)
 
 2. No, we got more than one connected component
 3. simply extracting the vertex and their edges
 
-![](images/connected/connected1-2.svg)
+![Example 1 - subgraph](images/connected/connected1-2.svg)
 
-4. We got only one component so the graph is connected. The graph do seems to be super-connected.
+4. We got only one component, so the graph is connected. The graph does seem to be super-connected.
 
 Let's apply the super-connected algorithm
 
-![](images/connected/connected1-3.png)
+![Example 1 - super-connected algorithm](images/connected/connected1-3.png)
 
 The graph is super-connected.
 
@@ -94,19 +94,19 @@ The graph is super-connected.
 
 Is the following graph $G$ super-connected? Tip: use the transitive closure.
 
-![](images/connected/connected2.png)
+![Example 2 - Graph](images/connected/connected2.png)
 
 <blockquote class="spoiler">
 
-Applying Roy-Warshall algorithm, we got
+Using Roy-Warshall's algorithm, we got
 
-![](images/connected/connected2-1.svg)
+![Example 2 - Roy-Warshall's algorithm - result](images/connected/connected2-1.svg)
 
 As you may notice, this is a complete graph $K_{6}$. Since the transitive closure is a complete graph, then $G$ is super-connected.
 
-This wasn't the example goal but here is Roy-Warshall algorithm
+This wasn't the goal of this example, but here is Roy-Warshall's algorithm
 
-![](images/connected/connected2-2.png)
+![Example 2 - Roy-Warshall's algorithm - process](images/connected/connected2-2.png)
 
 The complete algorithm (text)
 

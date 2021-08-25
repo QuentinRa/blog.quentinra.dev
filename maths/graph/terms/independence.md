@@ -2,7 +2,7 @@
 
 [Go back](..#advanced-terminology)
 
-In French, we are mainly using the keywords ``Stable`` and `Stabilité`. The independence set, also called stable set/`ensemble stable` is a set $S$ in which we can't find two vertex that are adjacent.
+In French, we are mainly using the keywords `Stable` and `Stabilité`. The independence set, also called stable set/`ensemble stable` is a set $S$ in which we can't find two adjacent vertices.
 
 * **maximal independent set**: not stable anymore if we add a vertex
 * **maximum independent set**:
@@ -18,19 +18,19 @@ In French, we are mainly using the keywords ``Stable`` and `Stabilité`. The ind
 
 ## Partitioning
 
-A partition of $G$ is a set made by taking vertex (and their edges) from $G. Each subgraph created must be complete (=a clique). All vertex can only be used in one clique.
+A graph partition of $G$ is a set made by taking vertex (and their edges) from $G. Each subgraph created must be complete (=a clique). Each vertex can only be used in one clique.
 
 As always
 
-* **maximal partition**: we can't add one more vertex otherwise this is not a partition anymore
-* **maximum partition**: we can't find a greater clique
-* **minimum partition**: we can't find a lesser clique
-* **minimal partition**: we can't remove one more vertex otherwise this is not a partition anymore
+* **maximal graph partition**: we can't add one more vertex, otherwise, this is not a graph partition anymore
+* **maximum graph partition**: we can't find a greater clique
+* **minimum graph partition**: we can't find a lesser clique
+* **minimal graph partition**: we can't remove one more vertex, otherwise, this is not a graph partition anymore
 
 And node
 
 * $|S| \le |P|$
-* $|S| = |P|$ (if $S$ is a maximum stable set and $P$ a minimum partition)
+* $|S| = |P|$ (if $S$ is a maximum stable set and $P$ a minimum graph partition)
 
 <hr class="sr">
 
@@ -45,35 +45,35 @@ An Absorbing set (`Ensemble absorbant`) is a set where
 
 ## Kernel
 
-A kernel is a set both stable and absorbing. A graph can have $0$, $1$ or more kernels.
+A kernel is a set both stable and absorbing. A graph can have $0$, $1$, or more kernels.
 
 **Sprague–Grundy function** (`Fonction de Grundy`)
 
 The function is returning the least value we can give to a vertex. If this is $0$, then the vertex is inside the Kernel.
 
-* you should start with a kernel without predecessor (if you can)
+* you should start with a vertex without predecessors (if you can)
 * give the first vertex value 0
 * then until you gave a value to everyone,
   * go to the successors
   * give them the lowest value not taken by a predecessor ($\ge 0$)
   * You can change a vertex value if the constraint above is not respected <span class="tms"> (a vertex took the same value as an adjacent vertex)</span>
 
-The grundy function result is not unique, **unless** you sorted the vertices beforehand. What you will usually do is sorting the vertices by the number of successors.
+The Grundy function result is not unique, **unless** you sorted the vertices beforehand. What you will usually do is sorting the vertices by the number of successors.
 
 <hr class="sl">
 
-## Example 1 - Independent set and grundy function
+## Example 1 - Independent set and Grundy function
 
-Given this graph $G$
+Given this graph $G$,
 
-![](images/independence/independence1.png)
+![Example 1 - graph](images/independence/independence1.png)
 
 Give
 
 * a maximal independent set
 * a maximum independent set
-* a absorbing set
-* the kernel(s) using grundy function
+* an absorbing set
+* the kernel(s) using Grundy function
 
 <blockquote class="spoiler">
 
@@ -88,11 +88,11 @@ You should consider the graph as non-oriented for the independent sets.
   * 2 is absorbing (1)
   * 6 is absorbing (5)
 
-An using **Grundy function**, starting from $1$, we have
+Using **Grundy function**, starting from $1$, we have
 
-![](images/independence/independence1-ans.png)
+![Example 1 - answer](images/independence/independence1-ans.png)
 
-* the first one is in the kernel so $g(1)=0$
+* the first one is in the kernel, so $g(1)=0$
 * next is the successor $2$
   * the neighbors took the values $\text{\{0\}}$
   * the lowest value we can give is $1$
@@ -116,12 +116,12 @@ We got the kernel $(1,5,3)$. Starting from another vertex like $4$, we would hav
 
 Find a kernel for this graph using the grundy function
 
-![](images/independence/independence2.png)
+![Example 2 - graph](images/independence/independence2.png)
 
 <blockquote class="spoiler">
-You should have noticed that $1$ do not have any predecessors so we MUST start at $1$.
+You should have noticed that $1$ does not have any predecessors, so we MUST start at $1$.
 
-![](images/independence/independence2-ans.png)
+![Example 2 - solution](images/independence/independence2-ans.png)
 
 Then
 
@@ -138,9 +138,9 @@ Then
 
 ## Example 3 - Unique Grundy function
 
-Find a kernel for this graph using the grundy function, after sorting the vertices by successors.
+Find a kernel for this graph using the Grundy function, after sorting the vertices by successors.
 
-![](images/independence/independence3.png)
+![Example 3 - graph](images/independence/independence3.png)
 
 **Tip**: this is **NOT** a normal Grundy function. The result is unique and immediate because you got no choice since we ordered the vertices.
 
@@ -159,7 +159,7 @@ Let's sort the vertices
 
 And the Grundy function is
 
-![](images/independence/independence3-ans.png)
+![Example 3 - solution](images/independence/independence3-ans.png)
 
 with
 
@@ -180,9 +180,9 @@ The kernel is $3,5,7$.
 
 ## Example 4 - Grundy function
 
-Given this adjacency matrix, calculate the grundy function. Is it unique?
+Given this adjacency matrix, calculate the Grundy function. Is it unique?
 
-![](images/independence/independence4.png)
+![Example 4 - graph](images/independence/independence4.png)
 
 <blockquote class="spoiler">
 
@@ -212,5 +212,5 @@ Giving us $8-3-5-6-7-0-2-4-1$. Since we ordered the vertex, the grundy function 
 
 The kernel is $1,5,6,8$.
 
-**Note**: if you are wondering why after $8$, we dealt with $7$, this is because the dependencies. We need $g(5)$ for $g(3)$ and $g(5)$ needs $g(7)$.
+**Note**: if you are wondering why after $8$, we dealt with $7$, this is because of the dependencies. We need $g(5)$ for $g(3)$ and $g(5)$ needs $g(7)$.
 </blockquote>

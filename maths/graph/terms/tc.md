@@ -4,7 +4,7 @@
 
 The transitive closure or `Fermeture transitive` noted $\tau$ (tau) is made by adding all the edges that can be deduced by transitivity.
 
-For instance, if we have $(a,b)$ and $(b,c)$, then we will create $(a,c)$ if $(a,c)$ does not exists. This is a simple example but sometimes it could be like $(a,b)-(b,c)-(c,d)-...-(y-,z)$ then we create $(a,z)$ ...
+For instance, if we have $(a,b)$ and $(b,c)$, then we will create $(a,c)$ if $(a,c)$ does not exist. This is a simple example, but sometimes it could be like $(a,b)-(b,c)-(c,d)-...-(y-,z)$ then we create $(a,z)$ ...
 
 **Roy–Warshall algorithm** (also called Floyd–Warshall)
 
@@ -12,7 +12,7 @@ For instance, if we have $(a,b)$ and $(b,c)$, then we will create $(a,c)$ if $(a
   * for each predecessor of $V$, $p$
     * for each successor of $V$, $s$
       * if $p \neq s$ 
-      * create $(p,s)$ if $(p,s)$ does not exists
+      * create $(p,s)$ if $(p,s)$ does not exist
 
 Complexity; $O(n * n * n)$
 
@@ -60,7 +60,7 @@ We are considering the vertices $A, B, C, D$.
 
 <blockquote class="spoiler">
 
-Drawing the graph would be the easier way but let's give a try
+Drawing the graph would be the easier way, but let's give it a try
 
 I'm picking $A$ successor reading the column vertex name where there are ones on $A$ line. I'm picking $A$ predecessor reading the column $A$, the vertex's names on the lines having a $1$.
 
@@ -127,5 +127,5 @@ I'm picking $A$ successor reading the column vertex name where there are ones on
 \]
 </div>
 
-You should notice that the graph is a complete graph.
+You should notice that the graph is complete.
 </blockquote>

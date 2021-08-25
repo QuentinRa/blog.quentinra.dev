@@ -11,7 +11,7 @@ A spanning subgraph or `Graphe partiel/Sous-graphe couvrant` $G'$ of a graph $G$
 
 ## $\tau$-equivalent
 
-$G$ and $G'$ are say to be $\tau$-equivalent (read as tau-equivalent) if
+$G$ and $G'$ are said to be $\tau$-equivalent (read as tau-equivalent) if
 
 * they have the same transitive closure
 * $G'$ is a subgraph of $G$
@@ -41,11 +41,11 @@ Given the graph $G$, make it so that
 * $G'$: $\tau$-minimal $\tau$-equivalent
 * $G''$: $\tau$-minimum $\tau$-equivalent
 
-![](images/partial/partial1.png)
+![Example 1 - graphs](images/partial/partial1.png)
 
 <blockquote class="spoiler">
 
-![](images/partial/partial1-ans.png)
+![Example 1 - answer](images/partial/partial1-ans.png)
 
 That isn't the only answer, but you should check that each of your answers
 
@@ -59,9 +59,9 @@ That isn't the only answer, but you should check that each of your answers
 
 Same for
 
-![](images/partial/partial2.png)
+![Example 2 - graphs](images/partial/partial2.png)
 
 <blockquote class="spoiler">
 
-![](images/partial/partial2-ans.png)
+![Example 2 - answer](images/partial/partial2-ans.png)
 </blockquote>

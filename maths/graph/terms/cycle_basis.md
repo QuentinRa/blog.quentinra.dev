@@ -2,7 +2,7 @@
 
 [Go back](..#advanced-terminology)
 
-Let $E$ the set of edges, **ordered**. If you are not given a order for the edges, create one. If the graph is not directed, arbitrarily pick a direction for each each edge.
+Let $E$ the set of edges, **ordered**. If you are not given an order for the edges, create one. If the graph is not directed, arbitrarily pick a direction for each edge.
 
 We are writing each cycle as a vector of values such as $C_n = (0, ...,1,-1)$
 
@@ -10,7 +10,7 @@ We are writing each cycle as a vector of values such as $C_n = (0, ...,1,-1)$
 * $1$: if the edge is inside the cycle, in the same direction
 * $-1$: if the edge is inside the cycle, not in the same direction
 
-A cycle basis $B$ is a set of cycles as vectors so that the basis linear independent and generating (``libre et génératrice``). Something like $B=\\{C_1,C_2\\}$.
+A cycle basis $B$ is a set of cycles as vectors, so that the basis is linearly independent and generating (``libre et génératrice``). Something like $B=\\{C_1,C_2\\}$.
 
 We are written $\mu(G)$ (mu) the number of elements of a cycle basis, with $\mu(G) = m − n + p$ and $p$ the number of connected components.
 
@@ -24,7 +24,7 @@ We are calling co-cycles (`cocycles`) of $A$, the set of arcs incident of $A$, n
 * $-1$: if an edge $(a,b)$ got $b$ inside the co-cycle, $a$ outside
 * $0$: otherwise
 
-A co-cycle basis $B$ is a set of co-cycles as vectors so that the basis linear independent and generating (``libre et génératrice``). Something like $B=\\{C_1,C_2\\}$.
+A co-cycle basis $B$ is a set of co-cycles as vectors so that the basis is linearly independent and generating (``libre et génératrice``). Something like $B=\\{C_1,C_2\\}$.
 
 We are written $\gamma(G)$ (gamma) the number of elements of a cycle basis, with $\gamma(G) = n - p$ and $p$ the number of connected components.
 
@@ -38,7 +38,7 @@ The edges' set for the following graph is
 E = \\{(a,b),(a,c),(a,d),(b,c),(b,f),(c,e),(c,f),(d,e),(e,f)\\}
 @
 
-![](images/cycle_basis1.png)
+![Exercise 1 - graph](images/cycle_basis1.png)
 
 1. Give the vectors for the cycles
    * $(bcfb)$
@@ -80,14 +80,14 @@ The edges' set for the following graph is
 E = \\{(a,b),(a,c),(a,d),(b,c),(b,f),(c,e),(c,f),(d,e),(e,f)\\}
 @
 
-![](images/cycle_basis2.png)
+![Exercise 2 - graph](images/cycle_basis2.png)
 
 1. Give the vectors for the co-cycles
     * $(abf)$
     * $(ae)$
 2. $(ae)$ is a linear combination of 2 co-cycles. Which ones?
 3. What's $\gamma(G)$?
-4. Give a cycle basis $B$, which mustn't contains co-cycles of one vertex.
+4. Give a cycle basis $B$, which mustn't contain co-cycles of one vertex.
 
 <blockquote class="spoiler">
 
