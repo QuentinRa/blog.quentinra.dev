@@ -141,7 +141,7 @@ Here are some functionalities that you can find on GitHub (but you may find them
 
 You may have seen some commits with this label on some (if not all) commits
 
-![gpg](images/gpg.png)
+![GPG key - verified](images/gpg.png)
 
 You can sign your commits and have this too using [GPG keys](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/generating-a-new-gpg-key) (GitHub tutorial). It means that you will need to write a passphrase each time you are committing, but you can reduce the number of times you're asked
 
