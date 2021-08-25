@@ -36,7 +36,7 @@ Notes
 
 * you can use headers h3 to h6, but they will be rendered as if they were h2. You should split a big page, so that such a situation does not happen. An alternative would be to use bold.
 * **version 1.2.0**: a permalink icon is added to each header (#content-{title}).
-* **version 1.2.0**: if you add more than one header h1, they will be rendered using the style shown above, but their html tag will be h2
+* **version 1.2.0**: if you add more than one header h1, they will be rendered using the style shown above, but their HTML tag will be h2
 
 <hr class="sep-both">
 
@@ -140,7 +140,7 @@ And the result is
 As you could guess
 
 * adding Text before/after is optional
-* you can replace "p" or "div" by another tag (span, p, div)
+* you can replace "p" or "div" with another tag (span, p, div)
 
 But, you should note
 
@@ -151,7 +151,7 @@ But, you should note
 
 ## 9. Usage
 
-* You should **split a page in sections** using a separator, the code is
+* You should **split a page into sections** using a separator, the code is
 
 ```html
 <!-- left-tailed -->
@@ -168,9 +168,14 @@ We are allowing HTML, but note using style is not recommended, while scripts are
 
 * **add references**
 
-References, are not only the links that you used, but those that we may check it we want to improve the course. You should add a lot of them, and sort them if needed.
+References, are not only the links that you used, but those that we may check if we want to improve the course. You should add a lot of them, and sort them if needed.
 
 * **typos**
 
-You can use the Grammarly or LanguageTool to check if they got [advices for you](../special/toolbox/writting/index.md).
+You can use Grammarly or LanguageTool to check if they got [advices for you](../special/toolbox/writting/index.md).
+
+* since v1.3.0, the **title** and the **description** are generated
+
+Please, try to make it so that the title of a page is good, as it's the one shown by the search engines. The first paragraph should be long (at least 50 characters) and a description of the page, as it will be used for the description of the page, shown by the search engines.
+
 </div>
