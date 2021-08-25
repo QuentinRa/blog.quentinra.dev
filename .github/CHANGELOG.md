@@ -1,6 +1,8 @@
 # Change Log
 
-## v5.6.0 (2021-08-25)
+## v5.6.0 (2021-08-26)
+
+I have temporarily disabled some courses, as I have yet to move them to v5.6.0.
 
 **Added**
 
