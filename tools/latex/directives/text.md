@@ -4,18 +4,18 @@
 
 You can write some text in a document without tags, that's a paragraph.
 
-Using ``\\`` at the end of a line will move the rest of the text right under our line. To jumping a line, you may need to add `\\` two times. You can use ``\newline`` instead of  `\\`.
+Using `\\` at the end of a line will move the rest of the text right under our line. To jumping a line, you may need to add `\\` two times. You can use `\newline` instead of  `\\`.
 
-You can add some space between paragraph using ``\vspace{NUMBERmm}``.
+You can add some space between paragraphs using `\vspace{NUMBERmm}`.
 
-You can center text using ``center``, the text being ``justified`` by default.
+Furthermore, you can center text using `center`, the text being `justified` by default.
 
 Some text inline directives
 
-* ``\textbf{word}``: bold
-* ``\underline{word}``: underlined
-* ``\textit{word}``: italic
-* ``\emph{word}``: emphasis, almost like italic
+* `\textbf{word}`: bold
+* `\underline{word}`: underlined
+* `\textit{word}`: italic
+* `\emph{word}`: emphasis, almost like italic
 
 that can be used like this
 

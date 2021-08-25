@@ -1,6 +1,6 @@
 # LaTeX
 
-You can use LaTeX to easily write documents such as reports, presentations or even resumes. This is also quite convenient to write math inside a document or a website.
+You can use LaTeX to easily write documents such as reports, presentations, or even resumes. This is also quite convenient to write math inside a document or a website.
 
 In this course, you will learn
 
@@ -13,12 +13,12 @@ In this course, you will learn
 
 You may code latex (`.tex`) documents on
 
-* [Overleaf](https://www.overleaf.com/) (previously `writelatex.com`), a simple and collaborative tool, need register
+* [Overleaf](https://www.overleaf.com/) (previously `writelatex.com`), a simple and collaborative tool, you need to register
 * [CoCalc](https://cocalc.com/), the UI may be a bit hard to use but no account is required
 
-You can also use a latex compiler on your machine but that's not covered for now.
+You can also use a latex compiler on your machine, but that's not covered for now.
 
-There are a lot of latex templates, so be sure to check them before starting a document from scratch <https://www.overleaf.com/latex/templates> since there are presentation templates, cv templates, report templates...
+There are a lot of latex templates, so be sure to check them before starting a document from scratch <https://www.overleaf.com/latex/templates> since there are presentation templates, CV/resumes templates, report templates...
 
 <hr class="sl">
 
@@ -72,7 +72,7 @@ Related
 
 ## Cheatsheet
 
-Because, I enjoy adding links to cheatsheets, here are some sheets that looks good
+Because I'm enjoying adding links to cheat sheets, here are some sheets that look good
 
 * [symbols.pdf](https://www.caam.rice.edu/~heinken/latex/symbols.pdf)
 * [latexcheatsheet.pdf](https://users.dickinson.edu/~richesod/latex/latexcheatsheet.pdf),
