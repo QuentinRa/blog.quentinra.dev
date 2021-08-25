@@ -18,4 +18,4 @@ We will replace each weight by $w(X,Y) = w(X,Y) + h[X] - h[Y]$. For instance,
 * $h[B]=2$
 * then the new edge value is $(A,B) = 5 + 3 - 2 = 6$
 
-Like this, you created a new graph (the same one but with different weights). Once you did, simply use Dijkstra algorithm.
+Like this, you created a new graph (the same one but with different weights). Once you did, simply use Dijkstra's algorithm.

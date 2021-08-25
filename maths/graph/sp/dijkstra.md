@@ -2,13 +2,13 @@
 
 [Go back](..)
 
-If $G$ is a weighted graph with **only positives weights** then you can use dijkstra's algorithm (complexity $O(n^2)$).
+If $G$ is a weighted graph with **only positives weights**, then you can use Dijkstra's algorithm (complexity $O(n^2)$).
 
 Dijkstra will give you the shortest path starting from a vertex (`A` for instance) to any other vertices (B, ...).
 
-The easiest way to modelize the dijkstra's algorithm is a table of the steps (i=0 to n) by the vertices (A, B, ...). A case like (0,A) is representing the shortest path value after 0 iterations.
+The easiest way to use Dijkstra's algorithm is a table of the steps (i=0 to n) by the vertices (A, B, ...). A case like (0,A) is representing the shortest path value after 0 iterations.
 
-At $i=0$, the shortest path value is $0$ for your starting vertex and $+\infty$ for all other vertex. You will also consider your selected vertex done, meaning that the value as the shortest path value is the final result.
+At $i=0$, the shortest path value is $0$ for your starting vertex and $+\infty$ for all other vertices. You will also consider your selected vertex done, meaning that the value as the shortest path value is the final result.
 
 At $i+1$, (**it's a bit hard to explain, learn with the example**)
 
@@ -23,7 +23,7 @@ Then, once you did all that, you will set as done the vertex having the least we
 
 ## Example
 
-![](images/dijkstra.svg)
+![Dijkstra's algorithm](images/dijkstra.svg)
 
 | Step |   A  |   B  |   C  |   D  |   E  | Done |
 |------|------|------|------|------|------|------|
@@ -36,7 +36,7 @@ $A$ is linked to $B$ by 10 and to $E$ by 5. We are replacing both $+\infty$ sinc
 | $0$  | $0$  | $+\infty$ | $+\infty$ | $+\infty$ | $+\infty$ | $A$ |
 | $1$  | $0$  |$A(10)$|$+\infty$|$+\infty$|$A(5)$|$E$|
 
-For the third line, $E(8)$ in $B$ column means that we added the value of $E=5$ plus the weight for $weight(E \to B)=3$. The idea is the same so we are filling our table.
+For the third line, $E(8)$ in $B$ column means that we added the value of $E=5$ plus the weight for $weight(E \to B)=3$. The idea is the same, so we are filling our table.
 
 | Step |   A  |   B  |   C  |   D  |   E  | Done |
 |------|------|------|------|------|------|------|
