@@ -10,5 +10,5 @@ ONBUILD instruction arg
 
 with
 
-* ``instruction``: a command
-* ``arg``: a command argument
+* `instruction`: a command
+* `arg`: a command argument

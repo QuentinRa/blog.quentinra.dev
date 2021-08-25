@@ -4,7 +4,7 @@
 
 Directives are used to modify some elements of syntax. They must be at the top of the file, the first comment.
 
-* **Docker multiline escape code**, the default value is ``\ ``
+* **Docker multiline escape code**, the default value is `\ `
 
 ```dockerfile
 #escape={character}

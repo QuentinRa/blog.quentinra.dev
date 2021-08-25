@@ -12,7 +12,7 @@ CMD "command1;command2;..."
 CMD ["command","arg1","arg2"]
 ```
 
-with ``command``, a command in the os-image-specific language. You could use it to start a program etc.
+With `command`, a command in the image's language. You could use it to start a program etc.
 
 <hr class="sl">
 

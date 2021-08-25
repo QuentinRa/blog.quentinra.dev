@@ -2,7 +2,7 @@
 
 [Go back](..#most-used-instructions)
 
-WORKDIR changes the current repository with ``path`` the new repository.
+WORKDIR changes the current directory, with `path` the new directory.
 
 ```dockerfile
 WORKDIR path

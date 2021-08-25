@@ -2,7 +2,7 @@
 
 [Go back](..#most-used-instructions)
 
-Run a command with ``command``, a command in the os-image-specific language.
+Run a command with `command`, a command in the image's language.
 
 ```dockerfile
 RUN command

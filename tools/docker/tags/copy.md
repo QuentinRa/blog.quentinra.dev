@@ -4,9 +4,9 @@
 
 Copy a file from a source to a destination with
 
-* ``src``: one or more sources
-* ``dest``: a destination (folder)
-* ``--chown={user}:{group}``: Linux-only, set the user and the group of the ``dest`` file
+* `src`: one or more sources
+* `dest`: a destination (folder)
+* `--chown={user}:{group}`: Linux-only, set the user and the group of the `dest` file
 
 ```dockerfile
 COPY src1 src2 ... srcn dest

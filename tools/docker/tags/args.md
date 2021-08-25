@@ -10,8 +10,8 @@ ARG NAME=value
 
 with
 
-* ``NAME``: the argument name
-* ``value``: the argument value
+* `NAME`: the argument name
+* `value`: the argument value
 
 <hr class="sl">
 
