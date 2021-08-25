@@ -2,7 +2,7 @@
 
 [Go back](../c.md)
 
-This is how you are commenting a structure. You need to add documentation for the structure as a whole, and for each field.
+This is how you are documenting a structure. You need to add documentation for the structure as a whole, and for each field.
 
 ```c
 /*!
@@ -25,4 +25,4 @@ typedef struct NAME {
 It may be tiring but you have to make sure
 
 * to write to tag brief 
-* and **typedef** must be before **struct** otherwise you will have an error (random).
+* and **typedef** must be before **struct**, otherwise you will have an error (random).

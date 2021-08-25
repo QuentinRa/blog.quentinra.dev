@@ -20,4 +20,4 @@ This is a tutorial for Windows. I don't think a tutorial is needed for Linux, af
 
 ## GUI
 
-There is a graphical version of Doxygen allowing you to use a menu to create your Doxygen file. It won't be covered here, as I want to change the renderer (to make my documentation beautiful).
+There is a graphical version of Doxygen, allowing you to use a menu to create your Doxygen file. It won't be covered here, as I want to change the renderer (to make my documentation beautiful).
