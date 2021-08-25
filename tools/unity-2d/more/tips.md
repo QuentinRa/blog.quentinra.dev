@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-A bunch of tips about Unity, this is a summary of every tips I was given.
+A bunch of tips about Unity, this is a summary of every tip I was given.
 
 <hr class="sl">
 
@@ -22,8 +22,7 @@ You can and should group variables. You can use `[Header("name")]` / `[Space(val
 
 Group objects into groups using a GameObject (you may use "create empty game object").
 
-In RigidBodyComponent, use `Interpolate` in interpolate (make it smoother, ...).
-
+In RigidBodyComponent, in `Interpolate`, enable interpolation for the main character, as the [documentation is suggesting](https://docs.unity3d.com/ScriptReference/Rigidbody-interpolation.html). 
 <hr class="sl">
 
 ## Graphics

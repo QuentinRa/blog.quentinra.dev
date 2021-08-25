@@ -134,3 +134,5 @@ Tools
 
 * [Odin](https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041)
 * [Quests / Inventory ](https://github.com/devdogio)
+
+https://danielilett.com/2019-09-08-unity-tips-3-interpolation/

@@ -5,7 +5,7 @@ This is not a course, simply a gathering of notes about unity by someone still l
 Unity is a game engine that you can [download here](https://store.unity.com/fr#plans-individual), you may use the student plan (if you are a student) and you may also apply to [GitHub student pack](https://education.github.com/pack). You will then download
 
 * **unity hub**: software to manage unity versions and projects
-* **unity**: downloaded through unity hub, usually peoples  are using LTS (Long-term support) versions of unity because they will still be maintained (bugs only) for 2 years.
+* **unity**: downloaded through unity hub, usually peoples are using LTS (Long-term support) versions of unity because they will still be maintained (bugs only) for 2 years.
   
 Then what I did after that was playing with the samples and following tutorials like [RPG in 1 hour](https://learn.unity.com/project/creator-kit-rpg?uv=2020.3)
 
@@ -15,7 +15,7 @@ Some tips I'm gathering [tips about unity here](more/tips.md), and [here are my 
 
 ## GitHub in Unity
 
-Unity projects are made of a lot of files, including big files too, so you can't commit them. GitHub allows you to use LFS to transfer big files and you got a plugin making things simple in unity.
+Unity projects are made of a lot of files, including big files too, so you can't commit them. GitHub allows you to use LFS to transfer big files, and you got a plugin making things simple in unity.
 
 * [Follow this tutorial](https://medium.com/@j0hnm4r5/git-with-unity-92ca7854ea3d) (external)
 * [GitHub for unity](https://unity.github.com/)
@@ -68,7 +68,7 @@ A tilemap is a map of tiles, and a tile is an image. You can have a Rectangular 
 * you create tiles layers (ground, ...)
 * and you move your tiles (grass, ...) to your map, in the right layer
   
-Creating a layer allows you to put things on top of another. In Unity, you will have a grid and each tilemap is a layer. If you want something to be above or below the player, then play with `Order in Layer` property.
+Creating a layer allows you to put things on top of another. In Unity, you will have a grid and each tilemap is a layer. If you want something to be above or below the player, then play with the property `Order in Layer`.
 
 <hr class="sl">
 
@@ -92,7 +92,7 @@ public class Test : MonoBehaviour
 }
 ```
 
-You can declare fields `SerializeField` so that you can modify this property inside unity
+You can declare fields `SerializeField` so that you can modify this property inside Unity
 
 ```cs
 // same as public
@@ -139,7 +139,7 @@ string tag = this.gameObject.tag;
 
 ## Properties
 
-The ``2D Collider`` is handling the collision for you with any other GameObjects having this component.
+The ``2D Collider`` is handling the collision for you, with any other GameObjects having this component.
 
 The ``RigidComponent`` is something that you may use to add things like gravity and make your player fall... If you don't want your "player to fall" but you want a Rigid body, then some are setting gravity to 0.
 
@@ -149,7 +149,7 @@ When you are moving a GameObject using your handwritten script, don't forget to 
 
 ## Sprites
 
-A sprite is an image and a sprite sheet is a big image having a lot of sprites. In unity, click on a sprite sheet then in property, set `Sprite mode` to `Multiple` to tell unity that this image is composed of multiples images. Then in sprite editor, slide the image (either using automatic or grid) and apply your changes. You should now see only one frame/sprite when dragging your sprite inside the scene.
+A sprite is an image, and a sprite sheet is a big image having a lot of sprites. In unity, click on a sprite sheet then in property, set `Sprite mode` to `Multiple` to tell unity that this image is composed of multiples images. Then in sprite editor, slide the image (either using automatic or grid) and apply your changes. You should now see only one frame/sprite when dragging your sprite inside the scene.
 
 You may (or not)
 
@@ -187,7 +187,7 @@ anim.SetTrigger("name");;
 anim.Play("anim_name");
 ```
 
-* you may uncheck ``Has exit time`` so you don't have delay when changing state
+* you may uncheck ``Has exit time`` so you don't have a delay when changing state
 * ``Any state`` means that if the condition is true, then from any state you can move to another state
 
 This is a summary of this [great video](https://www.youtube.com/watch?v=Gf8LOFNnils&ab_channel=PandemoniumGames) if you can watch it, that's better.
