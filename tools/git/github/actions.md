@@ -6,7 +6,7 @@ Actions are some code that is run each time you make a commit or a pull request.
 
 For instance, you could create an action that will verify that your code compiles on some specific platform that you configured and return a ``cross`` if a test failed.
 
-I don't know much about complex actions, but you can check [GitHub actions](https://github.com/features/actions) page and the [GitHub actions tutorial](https://docs.github.com/en/actions/quickstart).
+I don't know much about complex actions, but you can check [GitHub's actions](https://github.com/features/actions) page and the [GitHub actions tutorial](https://docs.github.com/en/actions/quickstart).
 
 <hr class="sl">
 

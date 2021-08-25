@@ -6,7 +6,7 @@ An organization or a user can make on GitHub a "GitHub page" project. To summari
 
 Check the [tutorial](https://pages.github.com/).
 
-Your website URL will be like ``https://username.github.io/``. You can change that with a custom name, that you brought beforehand for 10$ per year (for a domain.com
+Your website URL will be like `https://username.github.io/`. You can change that with a custom name, that you brought beforehand for 10$ per year (for a domain.com
 for example) by following these steps for [custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages).
 
 <hr class="sl">

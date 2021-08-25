@@ -8,13 +8,13 @@ You can get a project from the server using this command `git clone`.
 git clone URL
 ```
 
-To get the ``URL``, you can do something like this on the page of your repository
+To get the `URL`, you can do something like this on the page of your repository
 
 ![clone](clone.png)
 
 * click on the arrow
-* choose ``SSH`` (no login, if you configured ssh keys) or ``HTTPS`` (always login)
-* then copy the link, that's your ``URL``
+* choose `SSH` (no login, if you configured ssh keys) or `HTTPS` (always login)
+* then copy the link, that's your `URL`
 
 <hr class="sl">
 

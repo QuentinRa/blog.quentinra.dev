@@ -2,9 +2,9 @@
 
 [Go back](../index.md#advanced-github-concepts)
 
-Users may find a ``bug`` in your project or may want to ask for some ``support`` or request a ``functionality``. That is the most likely case when issues are used. Here is the official [GitHub tutorial](https://guides.github.com/features/issues/).
+Users may find a `bug` in your project or may want to ask for some `support` or request a `functionality`. That is the most likely case when issues are used. Here is the official [GitHub tutorial](https://guides.github.com/features/issues/).
 
-You can define **issues templates** using a file that needs to be created in ``.github/ISSUE_TEMPLATE/config.yml``.
+You can define **issues templates** using a file that needs to be created in `.github/ISSUE_TEMPLATE/config.yml`.
 
 An example would be
 

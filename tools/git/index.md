@@ -32,13 +32,13 @@ First, you need to
 * [set things up locally](local-install.md)
 * [set things up server-side](server-install.md)
 
-As a side note before starting, you can create aliases for a command like ``git name`` with the command `git config --global alias.name 'a command'` where a command could be ``add .`` or `commit`...
+As a side note before starting, you can create aliases for a command like `git name` with the command `git config --global alias.name 'a command'` where a command could be `add .` or `commit`...
 
 <hr class="sl">
 
 ## Basic usage
 
-Please take note that all ``commands`` start with ``git`` then one space.
+Please take note that all `commands` start with `git` then one space.
 
 * [Get your repository from server](commands/clone.md)
 * [Update your local version](commands/pull.md)
@@ -77,20 +77,20 @@ git push
 
 Here are commands that you will use on a project, if you are not working alone (you may also use it when working alone, if you're consistent).
 
-* ``git branch name``: create a branch "name"
-* ``git checkout name``: move to the branch "name"
-* ``git checkout -b name``: create and move
-* ``git merge name``: merge the current branch with the branch "name"
-* ``git branch -d name``: delete a branch
+* `git branch name`: create a branch "name"
+* `git checkout name`: move to the branch "name"
+* `git checkout -b name`: create and move
+* `git merge name`: merge the current branch with the branch "name"
+* `git branch -d name`: delete a branch
 
-By default, you are coding on a branch called ``master`` (or `main`). Let's explain what's a branch. If you're smart, you will want to always have a working version of your project ("main" here). In that case, if you want to add  a functionality (let's call it "f1"), 
+By default, you are coding on a branch called `master` (or `main`). Let's explain what's a branch. If you're smart, you will want to always have a working version of your project ("main" here). In that case, if you want to add one functionality (let's call it "f1"), 
 
-* you will copy your project in "f1":  ``git branch f1``
-* you will move to the copy: ``git checkout f1``
+* you will copy your project in "f1":  `git branch f1`
+* you will move to the copy: `git checkout f1`
 * [...] *work on the copy* (you can use add, commit, push, ...) [...]
-* you can go back to "main": ``git checkout main``
-  * delete the new copy ``git branch -d f1``
-  * or accept your changes ``git merge f1``
+* you can go back to "main": `git checkout main`
+  * delete the new copy `git branch -d f1`
+  * or accept your changes `git merge f1`
     * if "main" didn't change, no problems, the copy replace "main"
     * but if "main" changed, then you may have to manually pick which parts of the two copies you want in the new "main" (=resolving conflicts).
 
@@ -114,7 +114,7 @@ what I did
 "
 ```
 
-**README.md**: put a README in all of your projects, that the start of a great adventure.
+**README.md**: put a README in all of your projects, that is the start of a great adventure.
 
 **LICENSE**: you may also put a LICENSE even if you don't want to put restrictions on your code, to protect yourself from complaints (MIT LICENSE is good for that, or The Unlicense). You should [pick your license here](https://choosealicense.com/).
 
@@ -131,7 +131,7 @@ Here are some functionalities that you can find on GitHub (but you may find them
 
 * [Wikis](github/wiki.md)
 * [Actions](github/actions.md)
-* [PullRequests](github/pull-requests.md)
+* [Pull requests](github/pull-requests.md)
 * [Issues](github/issues.md)
 * [Pages](github/pages.md)
 
