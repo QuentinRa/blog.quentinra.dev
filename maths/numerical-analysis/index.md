@@ -1,7 +1,14 @@
 # Numerical analysis
-The goal of this course is to solve a system on a computer. We will use matrices, and try to solve AX=b. We will have a lot of methods, and we will see their requirements, their implementation in R, and their complexity.
 
-The main goal of this course is to solve **AX=b** (find the vector $X$, given a matrix $A$ and a resulting vector $b$) on a computer. You will learn
+The goal of this course is to learn how to obtain a numerical approximation of a solution to a mathematical problem, using a computer and algorithms.
+
+<hr class="sl">
+
+# Matrix
+
+The goal of this section is to solve a system on a computer. We will use matrices, and try to solve AX=b. We will have a lot of methods, and we will see their requirements, their implementation in R, and their complexity.
+
+The main goal of this section is to solve **AX=b** (find the vector $X$, given a matrix $A$ and a resulting vector $b$) on a computer. You will learn
 
 * how to solve it using the **direct methods**
 * how to solve it using the **iterative methods**
@@ -117,9 +124,52 @@ The algorithms you may use are
 
 <hr class="sl">
 
+# Ordinary differential equation (ODE)
+
+An **differential equation**  is an equation that relates one or more derivatives of an unknown functions. If every derivative of the unknown functions are of one independent variable, the differential equation is called an **Ordinary differential equation**, in contrast of a **partial differential equation**. The order of an ODE is the highest derivative.
+
+### Example
+
+$y\prime (x) = y(x)$ is a first-order ordinary differential equation, while $\frac{\partial y}{\partial t} + \frac{\partial y}{\partial x} = 0$ is not.
+
+<hr class="sr">
+
+## Linear differential equation
+
+A **linear differential equation** is a differential equation of the form 
+<div>
+\[ a_0(x) y + ... + a_n(x) y^{(n)} = b(x) \]
+</div>
+
+where $a_0, ..., a_n, b$ are diffentiable equations.
+
+### First-order linear differential equation
+
+A **first-order linear differential equation** is a linear differential equation of the form 
+<div>
+\[  y\prime +a(x) y = b(x) \quad\quad (E)\]
+</div>
+that we know how to solve, and that you should know how to too.
+
+There is two cases :
+
+* If $b(x) = 0$, the solutions of $(E)$ are $y =\lambda e^{-A(x)}$ where $A$ is a primitive of $a$ and $\lambda \in \mathbb K$.
+* Else, the solution of $(E)$ are $y =\lambda e^{-A(x)} + y_0$ where $y_0$ is a solution of $(E)$, that could be easily finded (or with a method).
+
+### Examples
+
+* A solution of $y\prime = y$, which is equivalent to $y\prime - y = 0$, is $y = \exp$.
+* Let $a > 0, b\in\mathbb R$ and $(E) : y\prime =- ay + b$, which is equivalent to $y\prime + ay = b$
+	* The solutions of $y\prime + ay = 0$ are $\lbrace \lambda e^{-ax}| \lambda\in\mathbb R \rbrace$.
+	* A solution of $(E)$ is $y_0 = \frac ba$.
+	* So we could conclude that the solutions of $(E)$ are of the form $y_0 + \lambda e^{-ax}$, where $\lambda\in\mathbb R$ .
+
+<hr class="sl">
+
 ## Sources
 
 * <https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Analyse_num%C3%A9rique>
+* <https://en.wikipedia.org/wiki/Ordinary_differential_equation>
 * <http://math.univ-bpclermont.fr/~cindea/blog/post/intro-ana-num-interet/>
 * <https://www.math.univ-paris13.fr/~halpern/teaching/MACS1_2010/systemes.pdf>
 * <https://www.i2m.univ-amu.fr/perso/thierry.gallouet/licence.d/anum.d/anum-tg2.pdf>
