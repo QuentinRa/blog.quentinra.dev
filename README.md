@@ -55,6 +55,7 @@ Last updated: 2021-08-24
 * [ ] replace <code>````</code> by <code>``</code>
 * [ ] check the description for sub pages
 * [ ] check the titles for sub pages
+* [ ] empty alt in the Markdown should be checked/removed
 * [ ] Nested courses files should have the title of the nested course and not the nesting course (ex: UML)
 * **Features**
 * [ ] add commit authors (optional)
