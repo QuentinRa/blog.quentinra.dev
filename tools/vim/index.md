@@ -9,10 +9,10 @@
 
 # How to install and run vim?
 
-You can install it using ``sudo apt-get install vim`` or whatever command you are using to install packages, such as ``sudo aptitude install vim``.
+You can install it using `sudo apt-get install vim` or whatever command you are using to install packages, such as `sudo aptitude install vim`.
 
-* ``vim``: open vim
-* ``vim file``: open a file in vim (and create it, if it didn't exist)
+* `vim`: open vim
+* `vim file`: open a file in vim (and create it, if it didn't exist)
 
 **HELP, I can't exit vim.**
 
@@ -23,7 +23,7 @@ If you are trapped in vim, keep calm, and press `esc` (escape key), then `:q!`.
 
 **Basic configuration**
 
-You can configure your editor by creating a file ``~/.virmrc``, here is an example of a basic configuration
+You can configure your editor by creating a file `~/.virmrc`, here is an example of a basic configuration
 
 ```bash
 set fileencodings=UTF-8,utf-8,default,latin1 "file encoding
@@ -54,12 +54,12 @@ In normal mode, press `i` to enter in **insert mode**, which is the mode where y
 
 Here is a short summary of the commands (so in **normal mode**) that you will most likely need to know
 
-* ``i`` (or `a`): switch to `INSERTION`, you can now modify the file
-* ``:wq`` : save and exit
-* ``:q!`` : exit without saving
-* ``:q`` : exit
-* ``u`` : undo
-* ``h, j, l, k`` : move cursor to left, top, right, bottom
+* `i` (or `a`): switch to `INSERTION`, you can now modify the file
+* `:wq` : save and exit
+* `:q!` : exit without saving
+* `:q` : exit
+* `u` : undo
+* `h, j, l, k` : move cursor to left, top, right, bottom
 
 <hr class="sl">
 
@@ -102,11 +102,11 @@ mkdir -p ~/.vim/pack/git-plugins/start
 git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-plugins/start/ale
 ```
 
-But since you will want more, I tested this configuration, and using ``CTRL-P``, VIM is showing a list of autocompletion choices
+But since you will want more, I tested this configuration, and using `CTRL-P`, VIM is showing a list of autocompletion choices
 
 * <https://github.com/viniciusgerevini/dotfiles/blob/master/vim/.vimrc>
-* ``sudo apt-get install vim-runtime``
-* ``sudo apt-get install vim-gui-common``
+* `sudo apt-get install vim-runtime`
+* `sudo apt-get install vim-gui-common`
 
 I'm not using VIM singe ages, but I stumbled upon ALE, and I wanted to add it here.
 

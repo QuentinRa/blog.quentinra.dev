@@ -2,7 +2,7 @@
 
 [Go back](..#writing-rst-documents)
 
-This is an extended version of what you can do in markdown, because you have a new operator "|", along with ".." for a comment.
+This is an extended version of what you can do in Markdown, because you have a new operator "|", along with ".." for a comment.
 
 ```rest
 .. this is a comment

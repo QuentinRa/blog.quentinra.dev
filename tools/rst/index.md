@@ -1,15 +1,15 @@
 # RST
 
-`rst` or `reST` means ``reStructuredText``, file with extension ``.rst``. It's a language that is great to make technical documentations or your code documentation as you may have see the usual [sphinx+readthedocs template](https://docs.readthedocs.io/en/stable/index.html).
+`rst` or `reST` means ``reStructuredText``, file with extension `.rst`. It's a language that is great to write technical documentation for your code, as you may have seen the usual [Sphinx+Readthedocs template](https://docs.readthedocs.io/en/stable/index.html).
 
-That's a language you will find in documentations such as in python. readthedocs is a continuous integration system that allows you
+You could have seen it in Python too, or on GitHub (ex: README.rst). We will focus on Readthedocs, a continuous integration system that allows you
 
 * to write code (you write .rst files by yourself)
-* you link the git where the documentation is hosted with readthedocs
+* you link the git where the documentation is hosted with Readthedocs
 * then when changes are made in the documentation, automatically, the website will have the new docs.
-* like git, you can have different branches so one can switch to a version of the documentation easily
+* like git, you can have different branches, so one can switch to a version of the documentation easily
   
-I started using it after seeing a lot of programmers using it such as
+I started using it after seeing a lot of programmers using it, such as
 
 * <http://docs.mathjax.org/en/latest/>
 * <https://codeigniter.com/user_guide/index.html>
@@ -18,13 +18,13 @@ I started using it after seeing a lot of programmers using it such as
 
 # Installing sphinx
 
-Sphinx is used to create a website from your documentation. This is what readthedocs will use. For python comments, you can skip this part.
+Sphinx is creating a website from your documentation. This is what Readthedocs will use. For python comments, you can skip this part.
 
-* ``pip install -U sphinx`` (pip should be installed)
-* ``sphinx-build --version`` (check your PATH)
-* I'm using ``make html`` to compile in HTML on Windows from the cmd
+* `pip install -U sphinx` (pip should be installed)
+* `sphinx-build --version` (check your PATH)
+* I'm using `make html` to compile in HTML on Windows from the cmd
 
-Sphinx use a ``tree`` system, we need to link the pages together. We do that with ``toctree directive``
+Sphinx uses a tree-like system, we need to link the pages together. We do that with `toctree directive`
 
 ```rest
 .. toctree::

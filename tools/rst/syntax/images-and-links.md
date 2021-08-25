@@ -2,7 +2,7 @@
 
 [Go back](..#writing-rst-documents)
 
-This is quite more wordy that in Markdown, but you can do more things, such as given a width/height to an image, storing a link in a variable, or create a download link.
+This is quite more wordy than in Markdown, but you can do more things, such as given a width/height to an image, storing a link in a variable, or create a download link.
 
 ```rest
 I can load an image like this
@@ -19,8 +19,8 @@ I can create a download link using
 .. _a name here: URL
 
 As you saw above, we could make `name <url>`_. 
-But, if you declared name like we did with "a name here", 
-then you could omit the url, giving us `a name here`_.
+But, if you declared name as we did with "a name here", 
+then you could omit the URL, giving us `a name here`_.
 
 The declaration can be either before or after your first usage
 of your variable.

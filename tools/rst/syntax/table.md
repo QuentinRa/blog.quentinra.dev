@@ -15,7 +15,7 @@ True   True   True
 =====  =====  =======
 ```
 
-Please take note that you may have to increase to number of ``=`` since the content of a column can't be larger than the number of ``=`` of this column.
+Please take note that you may have to increase the number of ``=`` since the content of a column can't be larger than the number of ``=`` of this column.
 
 You may use ``\ `` to set a column as empty.
 

@@ -2,7 +2,7 @@
 
 [Go back](..#writing-rst-documents)
 
-Directives like `note`, `warning`, `important`, are useful because they should make your documentation more readable.
+Directives like `note`, `warning`, or `important`, are useful because they should make your documentation more readable.
 
 ```rest
 

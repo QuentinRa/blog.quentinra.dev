@@ -2,7 +2,7 @@
 
 [Go back](..#writing-rst-documents)
 
-You can write some UML using PlantUML syntax but you may need to set up some configuration beforehand.
+You can write some UML using PlantUML syntax, but you may need to set up some configuration beforehand.
 
 ```rest
 .. uml::

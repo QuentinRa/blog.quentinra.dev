@@ -19,7 +19,7 @@ Chapter title
 ....
 ```
 
-Symbols for sections, subsections, and subsubsections maybe interchanged according to your liking. But according to the documentation, you should rather do it like that
+Symbols for sections, subsections, and subsubsections may be interchanged according to your liking. But according to the documentation, you should rather do it like that
 
 * ``#``: part
 * ``*``: chapters
@@ -28,7 +28,11 @@ Symbols for sections, subsections, and subsubsections maybe interchanged accordi
 * ``^``: subsubsection
 * ``»``: paragraph
 
-You can reference a title, which it is like saying "Hey check this part of the documentation too", using ref
+<hr class="sl">
+
+## Reference
+
+You can reference a title, which is like saying "Hey, check this part of the documentation too", using ref
 
 ```rest
 .. _tag:
@@ -36,5 +40,5 @@ You can reference a title, which it is like saying "Hey check this part of the d
 some header
 ************
 
-Hey check this part of the documentation too: :ref:`tag`.
+Hey, check this part of the documentation too: :ref:`tag`.
 ```
