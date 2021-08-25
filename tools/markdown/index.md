@@ -1,6 +1,6 @@
 # Markdown
 
-Markdown, associated with the ``.md`` extension (like for the famous `README.md`), is commonly used in documentation files or to write simple documents... You can learn it in a couple of minutes. Here is an [amazing markdown guide](https://www.markdownguide.org/basic-syntax/).
+Markdown, associated with the `.md` extension (like for the famous `README.md`), is commonly used in documentation files or to write simple documents... You can learn it in a couple of minutes. Here is an [amazing markdown guide](https://www.markdownguide.org/basic-syntax/).
 
 You could also write your website in Markdown, using Jekyll or whatever, as you could have read in the [GitHub Pages section](../git/github/pages.md).
 
@@ -10,7 +10,7 @@ You could also write your website in Markdown, using Jekyll or whatever, as you 
 
 ## Titles
 
-You got 6 kinds of titles, created using ``#``. The more ``#`` you add, the smaller your title becomes.
+You got 6 kinds of titles, created using `#`. The more `#` you add, the smaller your title becomes.
 
 ```markdown
 # h1 - huge title
@@ -21,7 +21,7 @@ You got 6 kinds of titles, created using ``#``. The more ``#`` you add, the smal
 ###### h6 - tiny title
 ```
 
-**Note**: be sure to leave a space after ``#``.
+**Note**: be sure to leave a space after `#`.
 
 <hr class="sr">
 
@@ -49,7 +49,7 @@ need to use the HTML tag "s").
 
 ## Lists
 
-You may use ``*`` or `-` or `+`. It looks like this
+You may use `*` or `-` or `+`. It looks like this
 
 ```markdown
 * an item
@@ -60,7 +60,7 @@ You may use ``*`` or `-` or `+`. It looks like this
 * a 3rd item
 ```
 
-You can replace ``*`` with a number to make an ordered list. You can mix both too.
+You can replace `*` with a number to make an ordered list. You can mix both too.
 
 ```markdown
 1. an item
@@ -75,13 +75,13 @@ You can replace ``*`` with a number to make an ordered list. You can mix both to
 
 ## Code
 
-You can write ``inline code`` using inverted quotes
+You can write `inline code` using inverted quotes
 
 ```markdown
 You can write `inline code` using inverted quotes 
 ```
 
-and you can write a lot of code, using this syntax. Note that ``c`` is the language used for highlighting the code.
+and you can write a lot of code, using this syntax. Note that `c` is the language used for highlighting the code.
 
 <pre class="language-c">
 <code class="language-c"
@@ -123,13 +123,13 @@ This is NOT supported everywhere, but you can make a table with this code
 | tab[5][0] | tab[5][1] |
 ```
 
-You can center the column content by adding ``:---:`` instead of `---`. You can align the content to the right/left by only adding ``:`` at the right/left of ```---```.
+You can center the column content by adding `:---:` instead of `---`. You can align the content to the right/left by only adding `:` at the right/left of `---`.
 
 <hr class="sl">
 
 ## Emojis
 
-You can write ``:emoji:`` to render an emoji, with "emoji" the one you want. The list of values can be found here
+You can write `:emoji:` to render an emoji, with "emoji" the one you want. The list of values can be found here
 
 * [markdown-emojis](https://github.com/markdown-templates/markdown-emojis)
 * [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet) (official)
