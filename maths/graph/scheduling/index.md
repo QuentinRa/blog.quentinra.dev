@@ -10,7 +10,7 @@ Learn about the terminology for scheduling problems (optimal cost, early/last st
 <tr><th>optimal cost/duration</th></tr>
 <tr><td>
 
-Also called ``durée optimale``/`coût optimal`, this is a least number of day the project will last. This is the last task (usually called END) early start time.
+Also called `durée optimale`/`coût optimal`, this is the least number of days the project will last. This is the last task (usually called END) early start time.
 </td></tr></table>
 
 Note: we are using the notation $A(10)$, for the task $A$ having a duration/cost of $10$.
@@ -18,9 +18,9 @@ Note: we are using the notation $A(10)$, for the task $A$ having a duration/cost
 <table class="table table-bordered table-striped table-dark">
 <tr><td style="min-width: 150px;">early start time</td><td>
 
-In French it's called ``date au plus tôt``. It's the number of days/... you will have to wait before doing this task.
+In French, it's called `date au plus tôt`. It's the number of days/... you will have to wait before doing this task.
 
-* for the first one it's 0
+* for the first one, it's 0
 * for the next ones, it's the maximum result of the sum of
   * the previous early start time
   * and the task duration/cost
@@ -29,16 +29,16 @@ Ex: If a task $C$ need the task $A(10)$ and $B(20)$, and they are both starting 
 </td></tr>
 <tr><td>last start time</td><td>
 
-In French it's called ``date au plus tard``. This is the last date for a task and if we pass this date then the optimal duration of the project will increase.
+In French, it's called `date au plus tard`. This is the last date for a task and if we pass this date then the optimal duration of the project will increase.
 
 You will start from the end.
 
-* for the last one it's "early start time" value
+* for the last one, it's "early start time" value
 * for the previous ones, it's the minimum result of the subtraction of
   * the predecessor last start time
   * their duration
 
-Ex: If a task $C(last=???)$ got two predecessors $D(cost=4, last=45)$ and $E(cost=7, last=45)$ then the $\min(45-4,45-7)=38$ so we have $C(last=38)$.
+Ex: If a task $C(last=???)$ got two predecessors $D(cost=4, last=45)$ and $E(cost=7, last=45)$ then the $\min(45-4,45-7)=38$, so we have $C(last=38)$.
 </td></tr>
 </table>
 
@@ -46,7 +46,7 @@ Ex: If a task $C(last=???)$ got two predecessors $D(cost=4, last=45)$ and $E(cos
 <tr><th colspan="2">margin</th></tr>
 <tr><td>total</td><td>
 
-Also called ``marge totale``. This is the maximum delay that we can take for a task without affecting the optimal cost.
+Also called `marge totale`. This is the maximum delay that we can take for a task without affecting the optimal cost.
 
 **Operation**: early - last
 
@@ -54,7 +54,7 @@ Ex: If $D(early=42, last=45)$ then the total margin is $45-42=3$.
 </td></tr>
 <tr><td>free</td><td>
 
-Also called ``marge libre``. Same as the total margin but without changing the next task starting date.
+Also called `marge libre`. Same as the total margin, but without changing the next task starting date.
 
 **Operation**: solve $x$
 @
@@ -65,7 +65,7 @@ Ex: the free margin for $I(cost=7, early=30)$ having one successor $J(early=69)$
 </td></tr>
 <tr><td>certain</td><td>
 
-Also called ``marge certaine``. Same as the free margin but considering that every tasks started with the maximum delay.
+Also called `marge certaine`. Same as the free margin, but considering that every task started with the maximum delay.
 
 **Operation**: $a$ is the certain margin value of the task $A$ if for all predecessors $p$ of $A$, $\text{last_start}\_p - (\text{last_start}\_A + cost(A \to p)) \ge a \ge 0$.
 
@@ -100,7 +100,7 @@ The **early start time** for C is
 \]
 </div>
 
-If you got a task C that can only be done after the task A and the tasks B, then simply check what's the task that you will have to wait for (=maximum), and the "wait value" is the "cost=duration + the start".
+If you got a task C that can only be done after the task "A" and the task "B", then simply check what's the task that you will have to wait for (=maximum), and the "wait" value is the "cost=duration + the start".
 
 The **last start time** for C, it's the same as the early start time because C seems to be the last task.
 

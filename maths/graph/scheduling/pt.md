@@ -4,9 +4,9 @@
 
 The Metra potential method (`méthode potentiel-tâche`) is what I think is the English name of the `méthode potentiel-tâche`.
 
-* first create a graph of all of your tasks
+* first, create a graph of all of your tasks
 * the tasks are linked with edges having a weight which is the duration of the task
-* We are usually starting at a node called START, ending at node called END
+* We are usually starting at a node called START, and ending at a node called END
 
 The task (nodes) will have properties
 
@@ -15,13 +15,13 @@ The task (nodes) will have properties
 * free margin (optional)
 * total margin (optional)
 
-**Note**: You may have some cases of **redundancy** like C is dependant on A, and D is dependant on C and A. You must remove $A \to D$ because we got by transitivity since we have $A \to C \to D$.
+**Note**: You may have some cases of **redundancy** like C is dependent on A, and D is dependent on C and A. You must remove $A \to D$ because we got by transitivity since we have $A \to C \to D$.
 
 <hr class="sl">
 
 ## Example
 
-This is a specifications table in French. Nothing complicated, you got the task id (A, B, ...), the task full name, the duration (=cost), and the dependencies.
+This is a specifications' table, but the words are in French. Nothing complicated, you got the task id (A, B, ...), the task full name, the duration (=cost), and the dependencies.
 
 ![](images/pt.png)
 
@@ -38,9 +38,9 @@ And the resulting Metra potential diagram is
 
 * this is straightforward
 * C need A so $A \to C$ and A duration is 30 so the weight is 30
-* D need C and A but C need A so D only needs C (**redundancy**)
-* F need A, B, C, D, and E but B need A so F only needs B, C, D, E (**redundancy**)
-* F need A, B, C, D, and E but E need C so F only needs B, D, E (**redundancy**)
+* D need C and A, but C needs A, so D only needs C (**redundancy**)
+* F need A, B, C, D, and E, but B needs A, so F only needs B, C, D, E (**redundancy**)
+* F need A, B, C, D, and E, but E needs C, so F only needs B, D, E (**redundancy**)
 * ...
 
 **Explanations (early/last start)**
