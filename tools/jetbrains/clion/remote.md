@@ -8,12 +8,12 @@ Check the compiler section to use a remote compiler. [The official tutorial](htt
 
 ## SSH
 
-It should be easy, simply go to ``Tools (top menu) > Start SSH Session``. Or you may try this
+It should be easy, simply go to `Tools (top menu) > Start SSH Session`. Or you may try this
 
 * Settings > Tools > Remote SSH External tools
-* ``+``
+* `+`
 * name : `ssh`, description : `ssh connection`
-* program : ``/bin/bash``
+* program : `/bin/bash`
 
 <hr class="sr">
 

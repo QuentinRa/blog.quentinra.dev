@@ -10,4 +10,4 @@ You can create customs snippets. For instance, when you're typing `for`, JetBrai
 * write a description, shown when suggesting snippets
 * write some code if this snippet is selected
 
-You can create variables using `$name$` then go to `edit variables` and tunes how this variable should act.
+You can create variables using `$name$` then go to `edit variables` and tune how this variable should act.

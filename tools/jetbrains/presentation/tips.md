@@ -1,8 +1,8 @@
-# Gimme free tips
+# Give me free tips
 
 [Go back](..#interface-presentation)
 
-You may add here tips that a lot of peoples may look, especially when this is a tip about the configuration of the IDE.
+You may add here tips that many people may look for, especially when this is a tip about the configuration of the IDE.
 
 <hr class="sl">
 
@@ -26,6 +26,6 @@ You may add here tips that a lot of peoples may look, especially when this is a 
 
 ### Delete unused warnings
 
-You may call a variable ``ignore``, sometimes (in a try-catch for instance), Jetbrains understand that you won't use this variable for a reason.
+You may call a variable ``ignore``, sometimes (in a try-catch, for instance), JetBrains understand that you won't use this variable for a reason.
 
 Otherwise, when you're using <kbd>alt+enter</kbd>, on each patch suggested you got a small arrow, and you may suppress the warning inside.

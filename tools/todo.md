@@ -18,6 +18,7 @@
     - shortcuts: replace "*", "@", "^" by "{L}", "{R}", and "{S}"
 - Git
   - https://github.com/nicoespeon/gitgraph.js, https://www.nicoespeon.com/en/2013/11/gitgraphjs/
+  - rebase and summary
   - https://github.com/github/linguist and https://github.com/TomasHubelbauer/github-linguist, .giattributes
   - http://jekyllthemes.org/
   - https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories

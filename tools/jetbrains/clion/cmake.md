@@ -2,7 +2,7 @@
 
 [Go back](../index.md#clion)
 
-Create a ``CmakeLists.txt`` if not already created. This is a bit harder to use than a Makefile, but most of time, you won't have to do something complicated. A cmake file is generating an unreadable Makefile inside the build folder.
+Create a `CmakeLists.txt` if not already created. This is a bit harder to use than a Makefile, but most of the time, you won't have to do something complicated. A CMake file is generating an unreadable Makefile inside the build folder.
 
 ```cmake
 cmake_minimum_required(VERSION 3.16.3) # or 17 / your version
@@ -14,7 +14,7 @@ set(CMAKE_C_STANDARD 99) # standard
 add_executable(name main.c main.h ...)
 ```
 
-If the name is ``prim`` then after compiling your CMakelist you will have here
+If the name is `prim` then after compiling your CMakelist you will have here
 
 ![targets](targets.png)
 
@@ -25,7 +25,7 @@ and you can
 3. change the profile
 4. run this target
 
-(A profile is a configuration. You may use theses if you want to try to build/run using different configurations but that should not be the case most of the time).
+(A profile is a configuration. You may use these if you want to try to build/run using different configurations, but that should not be the case most of the time).
 
 <hr class="sl">
 

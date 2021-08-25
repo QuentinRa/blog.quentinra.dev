@@ -6,11 +6,11 @@ To run a class, go to the `main` function, then you should see a `green` arrow. 
 
 ![run-idea](run/conf3.png)
 
-If you don't see such a thing or may want to tune a bit the launch of your main, then open `edit configurations` menu.
+If you don't see such a thing or may want to tune a bit the launch of your main, then open the `edit configurations` menu.
 
 ![configurations-idea](run/conf1.png)
 
-then you can set your JDK, your program argument and even set VM options.
+then you can set your JDK, your program argument, and even set VM options.
 
 ![edit-configurations-idea](run/conf2.png)
 

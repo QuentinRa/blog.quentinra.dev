@@ -1,19 +1,19 @@
 # Introduction
 
-IDEs are used to make your life easier. You may do well using text editors like vim, emacs, sublime text, but you may want more (auto-completion, code hints, auto-import, syntax errors hints without needing to recompile the project etc.).
+IDEs are used to make your life easier. You may do well, using text editors like vim, emacs, or sublime text, but you may want more (auto-completion, code hints, auto-import, syntax errors hints without needing to recompile the project, etc.), without too much configuration.
 
-This course is about Jetbrains IDE, a suite of IDEs like
+This course is about JetBrains's IDEs,
 
 * **CLion**: write **C** or **C++**
 * **IntelliJ**: **Java**, R, OCaml, SQL
 * **PHPStorm**: Write **PHP**, **HTML/CSS/JS**, **Node/Typescript**, SQL
 * **WebStorm**: same as PHPStorm without PHP and SQL support
 * **PyCharm**: **Python**
-* **AndroidStudio**: Write Kotlin/Java for Android
+* **AndroidStudio**: Write Kotlin/Java for Android, by Google and JetBrains
 
-It's a feature of Jetbrains: instead of providing an IDE that is doing half of what you want, and need a lot of tuning/configuration, their IDEs are pre-configured and quite powerful. The best alternative in one IDE would be VSCode (free).
+It's a feature of JetBrains: instead of providing an IDE that is only doing its job, their IDEs are providing advanced help, and language-specific features, without too much configuration. The best alternative in one IDE would be VSCode (free), you should try it too.
 
-The IDEs are free for [students](https://www.jetbrains.com/shop/eform/students) (you may apply for **Github Student Pack** too [here](https://education.github.com/pack#offers)). You can **download** all their IDEs using the [toolbox](https://www.jetbrains.com/toolbox-app/).
+The IDEs are free for [students](https://www.jetbrains.com/shop/eform/students) (you may apply for **GitHub Student Pack** too [here](https://education.github.com/pack#offers)). You can **download** all their IDEs using the [toolbox](https://www.jetbrains.com/toolbox-app/).
 
 **Note**: this course was made before the major releases `2021.2`  so a lot of things have yet to be updated.
 
@@ -48,7 +48,7 @@ Their IDEs are using the same interface, almost always the same shortcuts, and i
 
 ## Interface presentation
 
-Jetbrains underline in
+JetBrains's IDEs are underlining in
 
 * <span class="text-danger">red</span>: errors
 * <span class="text-my-orange">yellow</span>: warnings
@@ -96,7 +96,7 @@ Examples of cases where you might be using it
 * code in `HTML/CSS/JS` or `Boostrap` (but WebStorm might be wiser)
 * code in `Node.js`
 
-Please note that you can directly code on a server, that may be useful for those that were uploading their files each time they changed on a server.
+Please note that you can directly code on a server, which may be useful for those that were uploading their files each time they changed on a server.
 
 * [Remote working](phpstorm/remote.md)
 * [Launch website](phpstorm/start.md)
@@ -110,9 +110,9 @@ Examples of cases where you might be using it
 * code in `C`
 * code in `C++`
 
-Like PhpStorm, you can use a remote compiler to compile your code or use a local one.
+Like PHPStorm, you can use a remote compiler to compile your code or use a local one.
 
-Using the basic configuration, you will have to use `CMake` to compile but `Makefile` is supported if you manage to <span class="tms">(edit 2021.2: it seems quite easier to use Makefiles now)</span>.
+Using the basic configuration, you will have to use `CMake` to compile, but `Makefile` is supported if you manage to <span class="tms">(edit 2021.2: it seems quite easier to use Makefiles now)</span>.
 
 * [Starting with CMake](clion/cmake.md)
 * [Set compiler](clion/compiler.md)

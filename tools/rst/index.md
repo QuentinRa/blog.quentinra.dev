@@ -1,6 +1,6 @@
 # RST
 
-`rst` or `reST` means ``reStructuredText``, file with extension `.rst`. It's a language that is great to write technical documentation for your code, as you may have seen the usual [Sphinx+Readthedocs template](https://docs.readthedocs.io/en/stable/index.html).
+`rst` or `reST` means `reStructuredText`, file with extension `.rst`. It's a language that is great to write technical documentation for your code, as you may have seen the usual [Sphinx+Readthedocs template](https://docs.readthedocs.io/en/stable/index.html).
 
 You could have seen it in Python too, or on GitHub (ex: README.rst). We will focus on Readthedocs, a continuous integration system that allows you
 
@@ -52,7 +52,7 @@ Here is a list of the most commons directives
 * [class or methods](syntax/class-or-methods.md)
 * [side note](syntax/side-note.md)
 
-As a side note, space and indents are quite important in ``rst``, so be sure to check your indents if the compiler fails somewhere, and you don't know what's the error.
+As a side note, space and indents are quite important in `rst`, so be sure to check your indents if the compiler fails somewhere, and you don't know what's the error.
 
 <hr class="sl">
 

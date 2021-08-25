@@ -12,7 +12,7 @@ you can add a database
 
 ![menu](database/add.png)
 
-settings your parameters. Please take note that in ``3`` you can create an `SSH` tunnel to connect to a server, then to a database if your database is not accessible from the outside.
+settings your parameters. Please take note that in `3` you can create an `SSH` tunnel to connect to a server, then to a database if your database is not accessible from the outside.
 
 ![menu](database/add2.png)
 
