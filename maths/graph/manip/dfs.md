@@ -2,21 +2,21 @@
 
 [Go back](..#sorting-and-search)
 
-In French it's called ``Parcours en profondeur``. To summarize, you will traverse a path until you can't go further, then come back at a previous branching and do it again until you traversed every branch.
+In French it's called `Parcours en profondeur`. To summarize, you will traverse a path until you can't go further, then come back to a previous branching and do it again until you traversed every branch.
 
 **Algorithm**
 
 * randomly pick a starting vertex
 * make it as traversed
 * then
-    * randomly pick of a neighbor not traversed and not done
+    * randomly pick of a neighbor not traversed and not "done"
     * if you can
         * then mark the vertex as traversed
         * repeat
     * else
-        * then mark this vertex as done
-        * go back to a traversed vertex
-        * if there is no traversed vertex remaining then you are done
+        * then mark this vertex as "done"
+        * go back to the previously traversed vertex
+        * if there is no traversed vertex remaining, then you are done
 
 Complexity: $O(|V|+|E|)$.
 
@@ -26,12 +26,12 @@ Complexity: $O(|V|+|E|)$.
 
 Use the Depth-first search on this graph.
 
-![](images/dfs.svg)
+![Depth-first search](images/dfs.svg)
 
 We are starting at **h** because that's my choice. I will use the syntax $\text{a, b, c} \to \text{a}$ to say that among the available neighbor vertex, I picked $a$. 
 
-* a vertex is available if it's not in done
-* when picking a vertex, it's random among the vertex that are not in Marked
+* a vertex is available if it's not inside "done"
+* when picking a vertex, it's random among the vertices that are not in Marked
 
 I used a table to make things easier to look at.
 
@@ -108,8 +108,8 @@ I used a table to make things easier to look at.
         <tr>
             <td colspan="4">
                 Notice that $\text{d}$, the only neighbor
-                of $c$ is inside
-                "Marked" meaning that $c$ is a <b>dead end</b>.
+                of $c$, is inside
+                "Marked", meaning that $c$ is a <b>dead end</b>.
                 We mark $c$ as "done" and go back to $d$.
             </td>
         </tr>
@@ -188,4 +188,4 @@ I used a table to make things easier to look at.
     </tbody>
 </table>
 
-"Marked" is the algorithm results since you can see exactly what path we took. But if you want all the vertex we found, then that's in "done".
+"Marked" is the algorithm result, as you can see exactly what path we took. But if you want all the vertex we found, then that's the value of "done".

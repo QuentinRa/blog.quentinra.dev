@@ -2,16 +2,17 @@
 
 [Go back](..#sorting-and-search)
 
-In French it's called ``Parcours en largeur``. You will pick a vertex, mark it's neighbor until each vertex neighbor are marked.
+In French it's called `Parcours en largeur`. You will pick a vertex, mark its neighbors until each vertex's neighbors are marked.
 
 **Algorithm**
 
 * randomly pick a starting vertex
-* init a list of the next vertex to check
-* mark it
-* then until you have vertex in the list
-  * pick one
-  * add the vertex neighbors, if they are not marked or in the list
+* add your vertex's neighbors in a list $S$
+* mark your vertex
+* then until you have a vertex in the list $S$
+  * pick the first vertex
+  * mark it, and remove it from $S$
+  * add its neighbors in $S$, if they aren't already inside, or already marked
 
 Complexity: $O(|V|+|E|)$.
 

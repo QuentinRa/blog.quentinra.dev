@@ -4,7 +4,7 @@
 
 You must use the **least colors**, taking into account that **neighbors can't have the same color**, while coloring the Graph.
 
-We are calling chromatic number (``nombre chromatique``) $\gamma(G)$ (gamma) or $\chi(G)$ (chi) of $G$ the minimum number of colors that we will have to use to color the graph. This is a value hard to found but we know
+We are calling chromatic number (`nombre chromatique`) $\gamma(G)$ (gamma) or $\chi(G)$ (chi) of $G$ the minimum number of colors that we will have to use to color the graph. This is a value hard to found but we know
 
 * $1 \le \gamma(G) \le n$
 * if a graph is not planar: $\gamma(G)=|V|$
@@ -15,13 +15,13 @@ We are calling chromatic number (``nombre chromatique``) $\gamma(G)$ (gamma) or 
 * minoring: $\gamma(G) \ge |\text{longest_clique_of_G}|$
 * majoring: $\gamma(G) \le d_{max}(G)+1$ <span class="tms">(max degree+1)</span>
 
-The solution is say to be optimal when we can't find a better one.
+The solution is said to be optimal when we can't find a better one.
 
 <hr class="sr">
 
 ## Welsh-Powell greedy algorithm
 
-* order the vertex by decreasing degree
+* order the vertices by decreasing degree
 * while all vertices are not colored
     * pick the first not colored vertex
     * pick an unused color
@@ -36,21 +36,21 @@ To check if the solution is the best one, check if the solution is
 
 ## Contraction
 
-In French it's called ``Algorithme Reliement-contraction``. We are either
+In French, it's called `Algorithme Reliement-contraction`. We are either
 
-* contracting two vertex
-* linking two vertex with an edge
+* contracting two vertices
+* linking two vertices with an edge
 
 Your goal is to get a clique. This algorithm is evaluated as $2^z$ graph to make, with $z$ the number of edges missing for the graph to be complete.
 
 Algorithm
 
-* until all of our subgraph are complete
-* create 2 subgraph
-    * one contracting two vertex
-    * one linking two vertex
+* until every subgraph is complete
+* create 2 subgraphs
+    * one contracting two vertices
+    * one linking two vertices
 
-Once you are done, all the graph at the end should be complete graphs. The degree of the smallest clique is the chromatic number. Note that the vertex in the smallest clique that are contracted together will have the same color.
+Once you are done, the degree of the smallest clique is the chromatic number. Note that the vertex in the smallest clique that are contracted together will have the same color.
 
 <hr class="sr">
 
@@ -87,7 +87,7 @@ Giving us the following table
 | Green         |   |   | o |   | x | x | o | x |
 | Blue          |   |   |   |   | o | o |   | o |
 
-We are checking: the longest clique is $D-C-A-H$ (size=4) and size we colored the graph in $4$ colors, this is the optimal solution. We had the clique $F-D-G-E$ too.
+We are checking: the longest clique is $D-C-A-H$ (size=4) and we colored the graph in $4$ colors, this is the optimal solution. We had the clique $F-D-G-E$ too.
 </blockquote>
 
 <hr class="sr">
@@ -108,7 +108,7 @@ And the result is
 
 ![](images/coloring2-2.png)
 
-with L=Link and C=Contraction. The smallest clique (we are among the graphs with the symbol ✔️) is 
+With L=Link and C=Contraction. The smallest clique (we are among the graphs with the symbol ✔️) is 
 
 * $CF-DB-E-A$: 4 colors
 * $CF-D-BE-A$: 4 colors
