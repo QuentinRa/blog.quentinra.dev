@@ -33,7 +33,7 @@ Here you have a summary of the commands you can use in VIM.
 | v | Visual: highlight areas of text. |
 | w | Go to the beginning of the next word. |
 | x | Delete one character. Same as "d[Space]". |
-| y | In Visual mode (see "v"), copy the highlight text. |
+| y | In Visual mode (see "v"), copy the highlighted text. |
 | yy | Copy the line. |
 | z | ??? |
 | ~ | Change UPPERCASE to lowercase, and vice-versa. |

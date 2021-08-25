@@ -1,6 +1,6 @@
 # Introduction
 
-*vim*, for *vi improved*, is a console text editor, at least in the basic version of it. This tutorial won't cover the two famous extension of vim
+*vim*, for *vi improved*, is a console text editor, at least in the basic version of it. This tutorial won't cover the two famous extensions of vim
 
 * neovim
 * gVim Portable
@@ -34,7 +34,7 @@ set cursorline "show cursor
 set tabstop=4 "tabulation size
 ```
 
-You should look on GitHub or on the web for "dotfiles vim" if you want to find an advanced configuration.
+You should look on GitHub or the web for "dotfiles vim" if you want to find an advanced configuration.
 
 <hr class="sr">
 
@@ -65,8 +65,7 @@ Here is a short summary of the commands (so in **normal mode**) that you will mo
 
 # ... and now mastering it
 
-The best way to learn how to use vim is... to use it. However, and thankfully, you can open a terminal and write
-`vimtutor`, which will teach you the basic commands to use vim peacefully (in exchange for around 30 minutes of your life and brain attention).
+The best way to learn how to use vim is... to use it. However, and thankfully, you can open a terminal and write `vimtutor`, which will teach you the basic commands to use vim peacefully (in exchange for around 30 minutes of your life and brain attention).
 
 Here are some details about basic commands
 
@@ -83,7 +82,7 @@ Here are some details about basic commands
 
 ## Cheatsheet
 
-Because now that you learned a lot about vim, you may need a cheatsheet to remember these or to learn more. Check these
+Because now that you learned a lot about vim, you may need a cheat sheet to remember these or to learn more. Check these
 
 * [our summary](summary.md)
 * [vim-cheatsheet.pdf](https://www.cs.cmu.edu/~15131/f17/topics/vim/vim-cheatsheet.pdf)
