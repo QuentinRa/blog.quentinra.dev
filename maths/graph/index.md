@@ -2,9 +2,9 @@
 
 A graph $G$, is a set of **vertices** (=nodes=`sommets/nœuds`) $V$ linked by **edges** (=links=`arêtes`) $E$ giving us the notation $G(V, E)$. Vertices can have a direction or not.
 
-![example](example.svg)
+![Graph - example](example.svg)
 
-You will use graphs in databases in GraphDatabase, check the NoSQL course if that was what you are looking for. You may also use it to solve scheduling problem using P.E.R.T. in the project-management course.
+You will use graphs in databases in GraphDatabase, check the NoSQL course if that was what you are looking for. You may also use it to solve scheduling problems using P.E.R.T. in the project management course.
 
 <hr class="sl">
 
@@ -12,7 +12,7 @@ You will use graphs in databases in GraphDatabase, check the NoSQL course if tha
 
 A graph can be simple/multiple and directed or not.
 
-* **simple graph** (``graphe simple``): up to one edge between two vertex (2 if "directed graph") and no loop/self-edges.
+* **simple graph** (`graphe simple`): up to one edge between two vertex (2 if "directed graph") and no loop/self-edges.
 * **multiple graph** (`graphe complexes`): graphs that are not simple
 * **undirected graph** (`Graphe non orientés (GNO)`): edges do not have a direction,
   they are written $(a,b)$
@@ -76,7 +76,7 @@ A graph can be simple/multiple and directed or not.
                 <code>étoile</code>
             </td>
             <td>
-                One vertex degree is $|V|-1$ and the others are of degree $1$. It's a vertex  linked to all other vertices.
+                One vertex degree is $|V|-1$ and the others are of degree $1$. We got a vertex linked to every other vertex.
             </td>
         </tr>
         <tr>
@@ -178,7 +178,7 @@ You may also note that, if we have an arc $A \to B$, then
 * $A$ is the predecessor of $B$ (`prédécesseur`)
 * $B$ is the successor of $A$ (`successeur`)
 
-There is also names for graph having some properties
+There are names for graphs having some properties
 
 <table class="table table-bordered table-dark table-striped">
     <thead>
@@ -203,7 +203,7 @@ There is also names for graph having some properties
                 <code>Graphe k-régulier</code>
             </td>
             <td>
-A regular graph or d-regular graph is a graph where all degrees have the same value (d, for instance 3-regular graph).
+A regular graph or d-regular graph is a graph where all degrees have the same value (d, for instance, 3-regular graph).
             </td>
         </tr>
         <tr>
@@ -212,7 +212,7 @@ A regular graph or d-regular graph is a graph where all degrees have the same va
                 <code>Graphe complet</code>
             </td>
             <td>
-Each and every vertex is adjacent to all other vertices aside itself giving $|V| = \frac{n(n-1)}{2}$.
+Each and every vertex is adjacent to all other vertices aside itself, giving us $|V| = \frac{n(n-1)}{2}$.
             </td>
         </tr>
         <tr>
@@ -221,7 +221,7 @@ Each and every vertex is adjacent to all other vertices aside itself giving $|V|
                 <code>Graphe bi-parti</code>
             </td>
             <td>
-We can split the vertices in 2 groups: the group having a degree a and the group having a degree b with $b > a \ge 1$. Each vertex in the first group must we adjacent to $a$ vertex in the second (resp. second group and $b$).
+We can split the vertices into 2 groups: the group having a degree a and the group having a degree b with $b > a \ge 1$. Each vertex in the first group must be adjacent to $a$ vertex in the second (resp. second group and $b$).
             </td>
         </tr>
         <tr>
@@ -248,7 +248,7 @@ $G'$ is a subgraph of $G$ if we only removed $G$ vertices and their incident edg
                 <code>Complémentaire</code>
             </td>
             <td>
-The complement of a graph is a graph in which we are creating all the edges that didn't exists while removing the existing ones. Like if we have $A-B-C$ then the then the complementary graph would be $A-C\hspace{.5cm}B$.
+The complement of a graph is a graph in which we are creating all the edges that didn't exist while removing the existing ones. Like if we have $A-B-C$ then the complementary graph would be $A-C\hspace{.5cm}B$.
             </td>
         </tr>
         <tr>
@@ -257,7 +257,7 @@ The complement of a graph is a graph in which we are creating all the edges that
                 <code>Isomorphe</code>
             </td>
             <td>
-Let two graph $G$ and $H$. If we can move some nodes and get the same graph then there is an isomorphism. More formally, that's bijection between then. simply checking if there is a bijection between then.
+Let two graphs $G$ and $H$. If we can move some nodes and get the same graph, then there is an isomorphism. More formally, if there is a bijection between them, then there is an isomorphism.
             </td>
         </tr>
     </tbody>
@@ -294,7 +294,7 @@ You can search a graph using
 * [Depth-first search](manip/dfs.md)
 * [Breadth-first search](manip/bfs.md)
 
-And you can solve the problems of passing once by a edge/vertex with
+And you can solve the problems of passing once by an edge/a vertex with
 
 * [Eulerian graph](manip/euler.md)
 * [Hamiltonian graph](manip/hamilton.md)
@@ -303,14 +303,14 @@ And you can solve the problems of passing once by a edge/vertex with
 
 ## Graph coloring problems
 
-One of the uses of the stable/independent set is for the graph coloring problems. You will try to color a graph (vertex/edges) will the least colors.
+You will try to color a graph (vertex/edges) will the least colors.
 
 * [Vertex coloring](coloring/vertex.md)
 * [Edge coloring](coloring/edges.md)
 
-What you learned here is very similar to the notion of independent set. In fact, you can use Grundy to find a coloration. I do not know why we learned those separately. Look for [Grundy number or Grundy chromatic number](https://en.wikipedia.org/wiki/Grundy_number).
+What you learned here is very similar to the notion of an independent set. In fact, you can use Grundy to find a coloration. I do not know why we learned those separately. Look for [Grundy number or Grundy chromatic number](https://en.wikipedia.org/wiki/Grundy_number).
 
-A graph coloring problem could be something like "A, B, C, D, E" must pass some tests but they can't be in the same room for the same test. We are giving you a table of which tests they are passing and your goal is to find the minimum of rooms needed. You can also have a similar problem like "A, B, C, D, E" can't be in the same room (you got a table of which one can't be with which one) and you have to find at least how many rooms are needed (make a graph of which can't be with which and solve it).
+A graph coloring problem could be something like "A, B, C, D, E" must pass some tests, but they can't be in the same room for the same test. We are giving you a table of which tests they are passing, and your goal is to find the minimum of rooms needed. You can also have a similar problem like "A, B, C, D, E" can't be in the same room (you got a table of which one can't be with which one) and you have to find at least how many rooms are needed (make a graph of which can't be with which and solve it).
 
 <hr class="sr">
 
@@ -332,7 +332,7 @@ And here are new notions for trees
 
 <hr class="sl">
 
-## Shortest path problem
+## The shortest path problem
 
 You have 4 algorithms explained here (out of 6)
 
@@ -346,45 +346,40 @@ You have 4 algorithms explained here (out of 6)
 
 ## Scheduling problem
 
-In French it's ``Ordonnancement``. You are given
+In French, it's called `Ordonnancement`. You are given
 
 * a list of tasks and their dependencies (like a task need another one to be done first)
-* a tasks duration
+* the duration of each task
 
-And your job is to create the best schedule meaning that you must find the best way to organize the tasks making the project the shorter possible.
+And your job is to create the best schedule, meaning that you must find the best way to organize the tasks making the project the shorter possible (it's not only used in projects).
 
-It's not only used in project, but here we are considering that we can execute an unlimited number of tasks in parallel and we do not take delays in account so it's a simplified version of scheduling.
+Here, we are considering that we can execute an unlimited number of tasks in parallel, and we do not take delays into account, so it's a simplified version of scheduling's problems.
 
 * [Terminology](scheduling/index.md)
 * [Critical path analysis](scheduling/cpa.md)
 * [Metra potential method](scheduling/pt.md)
 * [P.E.R.T. method](scheduling/pert.md)
 
-You should have noticed but our two methods are giving the same result (same critical path, same optimal duration, ...). This is a way of checking that you did things right. Note that the will be some differences on the early_start/last_start values.
+You should have noticed, but our two methods are giving the same result (same critical path, same optimal duration, ...). This is a way of checking that you did things right. Note that there will be some differences with the early_start/last_start values.
 
 <hr class="sl">
 
 ## The random folk note
 
-I don't know how should I interpret this, but French and English do not seems to agree on the terminology. I'm a bit confused so I'm not changing the course content.
+I don't know how should I interpret this, but French and English do not seem to agree on the terminology. I'm a bit confused, but I'm not changing the course content.
 
-They are using walk for ``chaine/chemin``, but
+They are using walk for `chaine/chemin`, but
 
 * "A trail is a walk in which all edges are distinct" [wiki](https://en.wikipedia.org/wiki/Path_(graph_theory)#Walk,_trail,_path)
 * "A path (`Chemin`) is a trail in which all vertices are distinct" [wiki](https://en.wikipedia.org/wiki/Path_(graph_theory)#Walk,_trail,_path)
 * you add directed if needed like "directed path" [wiki](https://en.wikipedia.org/wiki/Path_(graph_theory)#Directed_walk,_trail,_path)
-* Chain (`chaine`) is a synonym for walk [wiki](https://en.wikipedia.org/wiki/Glossary_of_graph_theory#chain)
+* Chain (`chaine`) is a synonym for a walk [wiki](https://en.wikipedia.org/wiki/Glossary_of_graph_theory#chain)
 
-They are using closed walk for ``cycle/circuit``, but
+They are using closed walk for `cycle/circuit`, but
 
 * "A cycle (`cycle`) may either refer to a closed walk (also called a tour)" [wiki](https://en.wikipedia.org/wiki/Glossary_of_graph_theory#cycle)
 * "A tour may either refer to "a closed trail (also called a walk)" [wiki](https://en.wikipedia.org/wiki/Glossary_of_graph_theory#tour)
 * "A circuit (`circuit`) may refer to a closed trail" [wiki](https://en.wikipedia.org/wiki/Glossary_of_graph_theory#circuit)
-
-There is also a divergence on the incidence matrix
-
-* [French wikipedia](https://fr.wikipedia.org/wiki/Matrice_d'incidence) (=same as what I learned in school)
-* [English wikipedia](https://en.wikipedia.org/wiki/Incidence_matrix)
 
 <hr class="sr">
 
