@@ -14,11 +14,9 @@ with
 * **A** the matrix in Ax=b
 * **b** the vector of results in Ax=b
 
-After some calculations [hidden], you got
-these formulas
+After some calculations [hidden], you got these formulas
 
 * $\nabla f(X) = AX-b$
 * $H_{f}(X) = A$
 
-I have seen it use quite a lot in **constrained optimization**
-(on the web) but we didn't work on this enough so I don't know much.
+I have seen it use quite a lot in **constrained optimization** (on the web) but we didn't work on this enough so I don't know much.

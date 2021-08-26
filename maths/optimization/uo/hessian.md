@@ -8,19 +8,14 @@ The gradient (first derivative) and the hessian (second derivative), will be use
 
 ## Gradient
 
-We are calling **gradient**, noted nabla, the "derivative"
-of `f`. 
+We are calling **gradient**, noted nabla, the "derivative" of `f`. 
 
-That's not a simple derivative in most cases since
-`f` usually have a multiples parameters. We will calculate
-partial derivatives. Let's go for use an example:
+That's not a simple derivative in most cases since `f` usually have a multiples parameters. We will calculate partial derivatives. Let's go for use an example:
 
-<ul>
-    <li>\(f(x,y)\)</li>
-    <li>we got two variables</li>
-    <li>derivative of x, y is a constant: \(\frac{\partial f}{\partial x}\)</li>
-    <li>derivative of y, x is a constant: \(\frac{\partial f}{\partial y}\)</li>
-</ul>
+* $f(x,y)$
+* we got two variables
+* derivative of x, y is a constant: $\frac{\partial f}{\partial x}$
+* derivative of y, x is a constant: $\frac{\partial f}{\partial y}$
 
 And our gradient would be 
 
@@ -34,15 +29,13 @@ And our gradient would be
 
 ## Hessian
 
-Following what you learned for the gradient, the **hessian** is the derivative
-of a gradient. We note it ``Hf`` if `f` is our function.
+Following what you learned for the gradient, the **hessian** is the derivative of a gradient. We note it ``Hf`` if `f` is our function.
 
 <hr class="sl">
 
 ## Exercise
 
-What's the gradient and the hessian
-of this function?
+What's the gradient and the hessian of this function?
 <p>
 \[
 f(x, y) = 2x^2 + y^2 − 2xy + 4x
@@ -68,8 +61,6 @@ Then round 2, the hessian
 <li>1,0 in y: \(2*1-0  = 2\)</li>
 </ul>
 
-<p>So we have the hessian
-\[ Hf(x,y)=\begin{pmatrix}4&-2\\-2&2\end{pmatrix} \]
-I hope you took the time to do this easy one!
+<p>So we have the hessian \[ Hf(x,y)=\begin{pmatrix}4&-2\\-2&2\end{pmatrix} \] I hope you took the time to do this easy one!
 </p>
 </blockquote>

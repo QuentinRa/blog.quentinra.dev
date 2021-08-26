@@ -2,36 +2,19 @@
 
 [Go back](..)
 
-<p>
-This is an iterative method.
-The first value
-<code class="mathjax_process">\(X^{(0)}\)</code>
-is given most of the time but you may try with a
-vector of zeros if not.
-</p>
+This is an iterative method. The first value $X^{(0)}$ is given most of the time but you may try with a vector of zeros if not.
 
 Calculate the gradient, then
 
-<ul>
-<li><code class="mathjax_process">\(g^{(n)} =
-\nabla f(X^{(n)}) \)</code></li>
-<li><code class="mathjax_process">\(d^{(0)} =
-- g^{(0)} \)</code></li>
-<li><code class="mathjax_process">\(\lambda^{(n)} =
-- \frac{g^{(n)t} \, d^{(n)}}{d^{(n)t}\,A\, d^{(n)}}\)</code>.
-Note if you don't remember, that the little <code>t</code>
-is the transpose of a vector <span>
-\(
-\begin{pmatrix}0\\1\end{pmatrix}^t =
-\begin{pmatrix}0&1\end{pmatrix}
-\)
-</span>
-</li>
-</ul>
+* $g^{(n)} = \nabla f(X^{(n)}) \)$
+* $d^{(0)} = - g^{(0)}$
+* as for $\lambda^{(n)}$ (with $A^t$ the transpose of $A$ )
 
-Note that the matrix ``A`` is simply a matrix of the
-coefficients before the variables in your gradient.
-Then the formula for X is
+@
+\lambda^{(n)} =- \frac{g^{(n)t} * d^{(n)}}{d^{(n)t} * A * d^{(n)}}\)
+@
+
+Note that the matrix $A$ is the matrix of the coefficients before the variables in your gradient. Then the formula for X is
 
 <div>
 \[
@@ -74,13 +57,7 @@ f(x, y) = 4x^2 + 4y^2 − 2xy -5x
 \]
 </p>
 
-<div>
-Using conjugate gradient method, starting from
-(0,0), demonstrate that
-<span class="mathjax_process">\(X^{(2)}\)
-</span>
-is a critical point.
-</div>
+Using conjugate gradient method, starting from (0,0), demonstrate that $X^{(2)}$ is a critical point.
 
 <blockquote class="spoiler">
 <p>The gradient is
@@ -213,9 +190,7 @@ We continue.
 </li>
 </ul>
 
-Then since we know that $g^{(2)}$ is a critical point,
-then we simply need to find a lambda so we have
-a gradient equals to $(0,0)$.
+Then since we know that $g^{(2)}$ is a critical point, then we simply need to find a lambda so we have a gradient equals to $(0,0)$.
 
 <div class="mathjax_process">\[g^{(2)} =
 \nabla f(X^{(2)}) = 
@@ -229,8 +204,7 @@ a gradient equals to $(0,0)$.
 \]
 </div>
 
-In the first one we are good so let's check the
-second one.
+In the first one we are good so let's check the second one.
 
 <div class="mathjax_process">
 \begin{cases}
@@ -252,8 +226,6 @@ So we have
 \]
 </div>
 
-The Second iteration is done and we are stopping
-since we got $(0,0)$ for g. And since
-the gradient is $(0,0)$ it's critical point.
+The Second iteration is done and we are stopping since we got $(0,0)$ for g. And since the gradient is $(0,0)$ it's critical point.
 </div>
 </blockquote>

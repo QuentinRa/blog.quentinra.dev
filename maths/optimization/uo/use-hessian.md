@@ -2,8 +2,7 @@
 
 [Go back](..)
 
-Now that you have the **gradient**, you need to test
-each value for your variables x,y,... where you have
+Now that you have the **gradient**, you need to test each value for your variables x,y,... where you have
 
 <p>
 \[ \nabla f(X) = \begin{pmatrix}0\\\vdots\\0\end{pmatrix} \] 
@@ -12,8 +11,7 @@ each value for your variables x,y,... where you have
 When you got your points, called **critical points**
 
 * if you got one then that's the minimum (global)
-* else you need to replace for each point x,y,z,...
-inside your hessian. 
+* else you need to replace for each point x,y,z,... inside your hessian. 
 
 For each hessian, if it's
 
@@ -41,8 +39,7 @@ To find if the hessian is definite/indefinite, you can
 \end{pmatrix}\end{split}
 </p>
 
-Then the minor would be  $\Delta_{i}=det(A_{i})$
-giving us something like
+Then the minor would be  $\Delta_{i}=det(A_{i})$ giving us something like
 
 <ul>
 <li>\(\Delta_{1}=a_{11}\)</li>
@@ -84,9 +81,7 @@ Some help for matrix 2x2
 
 ## End of the example
 
-In the previous example, your
-job was to find the gradient and the hessian
-of this function.
+In the previous example, your job was to find the gradient and the hessian of this function.
 
 <p>
 \[
@@ -105,8 +100,7 @@ The result was
 </p>
 </blockquote>
 
-Now as explained, you should find all the critical
-points so the values giving you 
+Now as explained, you should find all the critical points so the values giving you 
 
 <p>
 \[ \nabla f(x,y) = \begin{pmatrix}0\\0\end{pmatrix} \] 
@@ -142,9 +136,7 @@ Eliminate the second column
 \end{pmatrix}
 </div>
 
-So we only have one critical point and that's
-(x=-2, y=-2). Since we only have one point, that's
-the minimum.
+So we only have one critical point and that's (x=-2, y=-2). Since we only have one point, that's the minimum.
 
 <p>
 \[
