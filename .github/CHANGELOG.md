@@ -1,8 +1,8 @@
 # Change Log
 
-## v5.6.0 (2021-08-27 - upcoming)
+## v5.0.0 (2021-08-27 - upcoming)
 
-**Note**: I have temporarily disabled some courses, as I have yet to move them to v5.6.0.
+**Note**: I have temporarily disabled some courses, as I have yet to move them to v5.0.0.
 
 **Added**
 
@@ -26,12 +26,14 @@
   * X-Robots-Tag
 * `internal`: after successfully editing a course, you were sent to the wrong page
 * `rendering`: I corrected the message shown if you forgot the captcha
+* `internal`: the footer was outside the body tag, and the  HTML ending tag was missing
+* `internal`: edit button "type" was missing
 
 **Removed**
 
 * `feature`: removing `href="download:url"`
 
-## v5.5.0 (2021-08-20)
+## v4.5.0 (2021-08-20)
 
 The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 
@@ -58,7 +60,7 @@ The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 * `rendering`: some pages were too large on mobile
 * `rendering`: dark reader wasn't properly rendering the website
 
-## v5.4.2 (2021-08-10)
+## v4.4.2 (2021-08-10)
 
 **Added**
 
@@ -71,7 +73,7 @@ The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 * `seo`: do not index refs.md
 * `seo`: some pages were having the wrong description
 
-## v5.4.1 (2021-08-10)
+## v4.4.1 (2021-08-10)
 
 **Added**
 
@@ -92,7 +94,7 @@ The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 * `internal`: the page "404 - not found" is now returning 404 (not found) instead of 200 (ok) as it was supposed to be
 * `seo`: removing broken links
 
-## v5.4.0 (2021-08-05)
+## v4.4.0 (2021-08-05)
 
 **Added**
 
@@ -113,7 +115,7 @@ The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 * `internal`: I rewrote the README.md
 * `internal`: I move to CommonMarkV2
 
-## v5.3.2 (2021-07-31)
+## v4.3.2 (2021-07-31)
 
 **Added**
 
@@ -121,7 +123,7 @@ The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 * `rendering`: the code inside a dark table is now properly rendered
 * `seo`: adding apple-touch icons
 
-## v5.3.1 (2021-07-29)
+## v4.3.1 (2021-07-29)
 
 **Change**
 
@@ -131,7 +133,7 @@ The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 
 * `rendering`: some images were not having a value for "alt"
 
-## v5.3.0 (2021-07-28)
+## v4.3.0 (2021-07-28)
 
 **Added**
 
@@ -144,7 +146,7 @@ The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 * `feature`: moving every resource or backup to memorize-references.
 * `feature`: enabling latex equations inside `$$` and `@@`
 
-## v5.2.0 (2021-06-23)
+## v4.2.0 (2021-06-23)
 
 **Added**
 
@@ -155,7 +157,7 @@ The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 
 * `rendering`: the footer is now "Provided by Legendary games studio / {repository_link}".
 
-## v5.1.0 (2021-06-03)
+## v4.1.0 (2021-06-03)
 
 **Added**
 
@@ -167,7 +169,7 @@ The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 
 * `rendering`: the links inside a blockquote were almost transparent, they are more visible now.
 
-## v5.0.1 (2021-05-22)
+## v4.0.1 (2021-05-22)
 
 **Added**
 
@@ -177,7 +179,7 @@ The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
 
 * `rendering`: images are now taking up to 100% of the width (previously, they were taking their preferred size).
 
-## v5.0.0 (2021-05-19)
+## v4.0.0 (2021-05-19)
 
 I moved from ReadTheDocs, and the domains learngo/memorize. The courses aren't in RST, and I'm planning to make things easier for anyone who wants to contribute.
 
@@ -190,3 +192,15 @@ I moved from ReadTheDocs, and the domains learngo/memorize. The courses aren't i
   - I'm using League/CommonMark to parse a course.
 - I'm using Grammarly to check the courses.
 - The courses are in English.
+
+## v3.0.0
+
+*Omitted*, Courses were in ReStructuredText, hosted on ReadTheDocs.
+
+## v2.0.0
+
+*Omitted*, Courses were HTML/PHP, hosted on my personal website.
+
+## v1.0.0
+
+*Omitted*, Courses were in HTML/PHP, the website was called RpgDatabase, and was only about RPG-related stuff.
