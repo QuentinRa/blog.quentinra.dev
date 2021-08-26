@@ -8,33 +8,24 @@ This is a batch of exercises on discrete probabilities (probabilities, counting,
 
 **Exercise 1 (Counting / Conditional probability)**
 
-Two players X and Y are drawing five cards
-in a 32 cards deck.
+Two players X and Y are drawing five cards in a 32 cards deck.
 
 What's the probability of X having at least one ace?
 
 <blockquote class="spoiler">
 
-We are introducing A = "at least one ace"
-but we would have a hard time evaluating
-this so we will use
-$\mathbb{P}(A) = 1 - \overline{A}$
-(with $\overline{A}$=0 ace) and
+We are introducing A = "at least one ace" but we would have a hard time evaluating this so we will use $\mathbb{P}(A) = 1 - \overline{A}$ (with $\overline{A}$=0 ace) and
 @
 \mathbb{P}(\overline{A}) := \frac{|\overline{A}|}{|\Omega|} = \frac{C_{28}^5}{C_{32}^5}
 @
-We could explain that by the fact that $|\overline{A}|$
-is the same as picking 5 cards in a deck after we removed the 4 aces
-(32-4=28).
+We could explain that by the fact that $|\overline{A}|$ is the same as picking 5 cards in a deck after we removed the 4 aces (32-4=28).
 </blockquote>
 
-Now Y got one ace. What's the probability
-of X having at least one?
+Now Y got one ace. What's the probability of X having at least one?
 
 <blockquote class="spoiler">
 
-Now since Y took 5 cards including 1 ace, we are simply
-removing them from our deck and doing the same thing.
+Now since Y took 5 cards including 1 ace, we are simply removing them from our deck and doing the same thing.
 @
 \mathbb{P}(\overline{A}) = \frac{C_{25}^5}{C_{28}^5}
 @
@@ -44,16 +35,9 @@ removing them from our deck and doing the same thing.
 
 **Exercise 2 (Conditional probability)**
 
-We got 3 bags, B1, B2, and B3. We got two
-white marbles (=``billes``) and 3 red ones.
-Inside B2, we got 2 green marbles and 4 white ones.
-Inside B3, we got 5 black marbles and 2 red ones.
+We got 3 bags, B1, B2, and B3. We got two white marbles (=`billes`) and 3 red ones. Inside B2, we got 2 green marbles and 4 white ones. Inside B3, we got 5 black marbles and 2 red ones.
 
-We are picking a marble in B1, and add it into
-B2. Then, we are picking one B2 to B3. And finally,
-we are picking one into B3. **What's
-the probability that the 3 marbles we picked
-have different colors**?
+We are picking a marble in B1, and add it into B2. Then, we are picking one B2 to B3. And finally, we are picking one into B3. **What's the probability that the 3 marbles we picked have different colors**?
 
 <blockquote class="spoiler">
 
@@ -83,11 +67,7 @@ have different colors**?
 
 **Exercise 3 (Bayes' theorem)**
 
-We are using a test to check if the patient
-got the disease or not. If got the decease
-then the test is positive 96% of the time. 
-The test is a false-positive in 2% of the cases.
-$0.05%$ of the patients got the decease.
+We are using a test to check if the patient got the disease or not. If got the decease then the test is positive 96% of the time. The test is a false-positive in 2% of the cases. $0.05%$ of the patients got the decease.
 
 1. What's the probability of someone having a positive test
    to have the disease?
@@ -112,12 +92,10 @@ $0.05%$ of the patients got the decease.
 \]
 </div>
 
-What we call "Law of total probability"/"``Formule des probabilités totales``"
-is a tree, considering the 2 cases (here $S$ and $\overline{S}$).
+What we call "Law of total probability"/"`Formule des probabilités totales`" is a tree, considering the 2 cases (here $S$ and $\overline{S}$).
 </blockquote>
 
-2. What's the probability of someone having the decease after
-   two positives tests?
+2. What's the probability of someone having the decease after two positives tests?
 
 <blockquote class="spoiler">
 
@@ -143,9 +121,7 @@ is a tree, considering the 2 cases (here $S$ and $\overline{S}$).
 
 **Exercise 4 (expected value)**
 
-We got 2 white marbles and 3 black ones in a box. 4 players
-(A, B, C, and D) taking in this order a marble. The first
-one taking a white marble win $10.
+We got 2 white marbles and 3 black ones in a box. 4 players (A, B, C, and D) taking in this order a marble. The first one taking a white marble win $10.
 
 What's the expected gain for each person?
 
@@ -174,8 +150,7 @@ And
 
 **Exercise 5 (Distributions)**
 
-We are working with the density function
-$f(x) = \frac{e^{-1}}{x!},\hspace{0.5cm} x = 0,1, 2...$.
+We are working with the density function $f(x) = \frac{e^{-1}}{x!},\hspace{0.5cm} x = 0,1, 2...$.
 
 1. $P(X=2)$
 
@@ -186,12 +161,10 @@ The answer is $\mathbb{P}(X=2) = \frac{e^{-1}}{2!}$.
 2. $P(X < 2)$
 
 <blockquote class="spoiler">
-The answer is $\mathbb{P}(X < 2) = P(X=0) + P(X=1) = \frac{e^{-1}}{0!} + \frac{e^{-1}}{1!}
-= e^{-1} + e^{-1} = 2 e^{-1}$.
+The answer is $\mathbb{P}(X < 2) = P(X=0) + P(X=1) = \frac{e^{-1}}{0!} + \frac{e^{-1}}{1!} = e^{-1} + e^{-1} = 2 e^{-1}$.
 </blockquote>
 
-3. Demonstrate that $e^{-1}$ is the constant making
-   $\frac{c}{x!}$ a mass function?
+3. Demonstrate that $e^{-1}$ is the constant making $\frac{c}{x!}$ a mass function?
 
 <blockquote class="spoiler">
 <div>
@@ -209,10 +182,7 @@ c * e = 1 \Leftrightarrow  c = \frac{1}{e} \Leftrightarrow c = e^{-1}\end{split}
 \]
 </div>
 
-We also need to check that the values
-are $\ge 0$ so that $\frac{e^{-1}}{x!} \ge 0$.
+We also need to check that the values are $\ge 0$ so that $\frac{e^{-1}}{x!} \ge 0$.
 
-Since $x! \ge 0$ (because x \in R^*)
-and $e^{-1} \ge 0$ then the function is a mass
-function.
+Since $x! \ge 0$ (because x \in R^*) and $e^{-1} \ge 0$ then the function is a mass function.
 </blockquote>

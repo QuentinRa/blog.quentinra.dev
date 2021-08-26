@@ -2,24 +2,20 @@
 
 [Go back](..)
 
-In French, it's called ``fonction caractéristique``. This name is used for [a lot of things](https://en.wikipedia.org/wiki/Characteristic_function).
+In French, it's called `fonction caractéristique`. This name is used for [a lot of things](https://en.wikipedia.org/wiki/Characteristic_function).
 
 <hr class="sr">
 
 ## Indicator Function
 
-The characteristic function,
-called, in this case, most of the time,
-indicator function/`fonction indicatrice`
-of a set B is $\mathbb{1}_{ B }(x)$.
+The characteristic function, called, in this case, most of the time, indicator function/`fonction indicatrice` of a set B is $\mathbb{1}_{ B }(x)$.
 
 The function is evaluated as
 
 * $1$ if $x \in B$
 * $0$ else
 
-It's used a lot of times because it's shortening
-the syntax like
+It's used a lot of times because it's shortening the syntax like
 
 <div>
 \[
@@ -42,10 +38,7 @@ Can be replaced by
 
 ## In probability theory
 
-You can use that when the MGF (moment generating function) does
-not exists (that's the case for the Cauchy distribution
-but we didn't use it in practice)
-or when you have $Y = aX$ or $Y = aX+b$.
+You can use that when the MGF (moment generating function) does not exists (that's the case for the Cauchy distribution but we didn't use it in practice) or when you have $Y = aX$ or $Y = aX+b$.
 
 The characteristic function is
 
@@ -53,9 +46,7 @@ The characteristic function is
 \varphi_X(t)=\mathbb{E}[e^{itX}]
 @
 
-Sometimes the symbol $\phi$ (phi) or $\Phi$ (Phi)
-or even $\hat{\mu}$ are used instead
-of $\varphi$ (varphi) but I will trust Wikipedia on this.
+Sometimes the symbol $\phi$ (phi) or $\Phi$ (Phi) or even $\hat{\mu}$ are used instead of $\varphi$ (varphi) but I will trust Wikipedia on this.
 
 * if $X$ and $Y$ are independent, $\varphi_{X+Y}(x) = \Phi_{X}(x) * \varphi_{Y}(x)$
 * if $X$ and $Y$ are independent, $\log(\varphi_{x+y}(x)) = \log(\varphi_{x}(x)) * \log(\varphi_{y}(x))$

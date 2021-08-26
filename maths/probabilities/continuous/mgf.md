@@ -2,13 +2,9 @@
 
 [Go back](..)
 
-The Moment-generating function
-or ``Fonction génératrice des moments`` is a function
-allowing us to find the moments (the expected value $\mathbb(X)$,
-the variance $V(X)$) when we are not able to.
+The Moment-generating function or `Fonction génératrice des moments` is a function allowing us to find the moments (the expected value $\mathbb(X)$, the variance $V(X)$) when we are not able to.
 
-That's the case when the expected value not converging
-to a value, or when the expected value is too complex
+That's the case when the expected value not converging to a value, or when the expected value is too complex
 
 <div>
 \[
@@ -42,19 +38,13 @@ V(X) = \frac{\delta^2 M_X (t)}{\delta t^2} - \mathbb{E}(X)^2
 \]
 </div>
 
-If you are wondering how did we get these formulas,
-look on the web and you may add it here,
-because that didn't pick my interest hence I didn't.
+If you are wondering how did we get these formulas, look on the web and you may add it here, because that didn't pick my interest hence I didn't.
 
 <hr class="sl">
 
 ## Example
 
-According to [wikipedia](https://en.wikipedia.org/wiki/Exponential_distribution),
-the density function of an exponential distribution is
-$f_X(x) = \lambda \exp^{-\lambda x}$ (with $lambda \ge 0$)
-and we know that $M_X(t) = \int \exp(tx)\ f_X(x)\ dx$
-so we have
+According to [wikipedia](https://en.wikipedia.org/wiki/Exponential_distribution), the density function of an exponential distribution is $f_X(x) = \lambda \exp^{-\lambda x}$ (with $lambda \ge 0$) and we know that $M_X(t) = \int \exp(tx)\ f_X(x)\ dx$ so we have
 
 <div>
 \[
@@ -88,11 +78,7 @@ V(X) = M''_X(0) - \mathbb{E}(X)^2 \\
 \]
 </div>
 
-You should try too. Look for a distribution on
-wikipedia (Poisson, Bernoulli, Weibull, ...)
-and try it. Usually the expected value/variance/density
-function and even the moment-generating function are
-given so you only need to do the calculations.
+You should try too. Look for a distribution on wikipedia (Poisson, Bernoulli, Weibull, ...) and try it. Usually the expected value/variance/density function and even the moment-generating function are given so you only need to do the calculations.
 
 * **PDF**: the density function
 * **Mean**: the expected value

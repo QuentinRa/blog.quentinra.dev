@@ -2,8 +2,7 @@
 
 [Go back](..)
 
-The variance is the square deviation around the
-expected value.
+The variance is the square deviation around the expected value.
 
 <div>
 \[

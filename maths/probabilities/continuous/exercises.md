@@ -8,8 +8,7 @@ This is a batch of exercises on continuous probabilities (density function, expe
 
 **Exercise 1 (density function)**
 
-Verify that $f(x) = x * e^{\frac{-x^2}{2}}$
-with $x \gt 0$ is a density function.
+Verify that $f(x) = x * e^{\frac{-x^2}{2}}$ with $x \gt 0$ is a density function.
 
 <blockquote class="spoiler">
 
@@ -22,9 +21,7 @@ so $f(x) \ge 0$.
 
 Both $x$ and $e^t$ are continue.
 
-**3. $\int_{-\infty}^{+\infty} f_X(x)dx = 1$**
-that we can
-simplify since $x \gt 0$ giving us $\int_{0}^{+\infty} f(x) dx = 1$.
+**3. $\int_{-\infty}^{+\infty} f_X(x)dx = 1$** that we can simplify since $x \gt 0$ giving us $\int_{0}^{+\infty} f(x) dx = 1$.
 
 <div>
 \[
@@ -47,14 +44,11 @@ So $f(x)$ is a density function.
 
 **Exercise 2 (density function)**
 
-Verify that $f(x) = 1 - |x|$
-with $x \in [[-1,1]]$ is a density function.
+Verify that $f(x) = 1 - |x|$ with $x \in [[-1,1]]$ is a density function.
 
 <blockquote class="spoiler">
 
-We can consider this a sum of two integrals
-from 0 to 1 because of the $|x|$ (absolute value)
-giving us $x \in [[0,1]]$.
+We can consider this a sum of two integrals from 0 to 1 because of the $|x|$ (absolute value) giving us $x \in [[0,1]]$.
 
 @
 2 * \int_{0}^{1} 1 - x

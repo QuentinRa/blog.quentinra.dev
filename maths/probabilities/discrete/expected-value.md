@@ -2,9 +2,7 @@
 
 [Go back](..)
 
-The expected value / ``Espérance`` noted
-$\mathbb{E}(X)$, $\mathbb{E}X$, or $\mathbb{E}[X]$
-is defined by
+The expected value / `Espérance` noted $\mathbb{E}(X)$, $\mathbb{E}X$, or $\mathbb{E}[X]$ is defined by
 
 <div>
 \[
@@ -12,14 +10,12 @@ is defined by
 \]
 </div>
 
-**Note**: it's the sum for
-each value the probability of a value by the value.
+**Note**: it's the sum for each value the probability of a value by the value.
 
 Notes
 
 * $\mathbb{E}(X)$ is also called the **(weighted) mean** (`moyenne (pondérée)`)
-* $\mathbb{E}(X)$ is also called [the first moment](https://en.wikipedia.org/wiki/Moment_(mathematics)#Mean)
-  (`moment d'ordre 1`)
+* $\mathbb{E}(X)$ is also called [the first moment](https://en.wikipedia.org/wiki/Moment_(mathematics)#Mean)  (`moment d'ordre 1`)
 
 <hr class="sl">
 

@@ -19,13 +19,9 @@ Then the probability is a sort of "percent" of success by the number of tries. B
 
 ## Uniform probability
 
-Sometimes, the probability is called uniform probability
-because each event has the **same** probability of happening.
+Sometimes, the probability is called uniform probability because each event has the **same** probability of happening.
 
-That's the case for a normal dice, you got the same
-probability of having one of the 6 values: $\frac{1}{6}$.
-That's also the case in a card game, like $\frac{1}{52}$
-if you got 52 cards.
+That's the case for a normal dice, you got the same probability of having one of the 6 values: $\frac{1}{6}$. That's also the case in a card game, like $\frac{1}{52}$ if you got 52 cards.
 
 The formula is
 
@@ -41,7 +37,7 @@ You may have to calculate a probability like these
 
 * Knowing that B happened, what's the probability of A happening?
 * Given B, what's the probability of A??
-* ``Sachant B, quelle est la probabilité de A``?
+* `Sachant B, quelle est la probabilité de A`?
 
 If that's the case, then that's a conditional probability.
 
@@ -49,8 +45,7 @@ If that's the case, then that's a conditional probability.
 \mathbb{P}(A|B) := \frac{\mathbb{P}(A \cap B)}{\mathbb{P}(B)}
 @
 
-$\mathbb{P}(A|B)$ may also be written
-$P_B(A)$ or $P(B \wedge A)$ (rarely used).
+$\mathbb{P}(A|B)$ may also be written $P_B(A)$ or $P(B \wedge A)$ (rarely used).
 
 **Properties**
 
@@ -61,8 +56,7 @@ $P_B(A)$ or $P(B \wedge A)$ (rarely used).
 
 ## Bayes formula
 
-Also called ``probabilité des causes``,
-using the previous formula, you could deduce
+Also called `probabilité des causes`, using the previous formula, you could deduce
 
 @
 \mathbb{P}(A \cap B) = \mathbb{P}(B) * \mathbb{P}(A|B)
@@ -76,17 +70,13 @@ And we could write
 \ or \ \frac{\mathbb{P}(A) * \mathbb{P}(B|A)}{\mathbb{P}(B)}
 @
 
-This kind of probability is called
-Posterior probability
-(a posteriori, [wiki](https://en.wikipedia.org/wiki/Posterior_probability)) 
-as the opposite
-of A priori probability (a priori, [wiki](https://en.wikipedia.org/wiki/A_priori_probability)).
+This kind of probability is called Posterior probability (a posteriori, [wiki](https://en.wikipedia.org/wiki/Posterior_probability)) as the opposite of A priori probability (a priori, [wiki](https://en.wikipedia.org/wiki/A_priori_probability)).
 
 <hr class="sl">
 
 ## Law of total probability
 
-In French, it's called ``Formule des probabilités totales``.
+In French, it's called `Formule des probabilités totales`.
 
 <div>
 \[
@@ -103,8 +93,7 @@ In French, it's called ``Formule des probabilités totales``.
 
 ## Chain rule
 
-In French, it's called ``Formule des probabilités composées``.
-It's defined by
+In French, it's called `Formule des probabilités composées`. It's defined by
 
 <div>
 \[
