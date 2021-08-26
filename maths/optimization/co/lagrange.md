@@ -17,18 +17,13 @@ L(X, \mu, \lambda) = f(X) +
 </span>
 
 * **X** is a vector of all your variables like (x,y, ...)
-* **mu** and **lambda** are Lagrange multipliers (unknowns=`inconnues`
-  that we will be looking for)
+* **mu** and **lambda** are Lagrange multipliers (unknowns=`inconnues` that we will be looking for)
 * **gi** are the inequalities constraints (*)
 * **hi** are the equalities constraints (*)
 
-(*) p is the number of inequalities and m
-the number of equalities that could be 0. Note that
-you must write the equation as ``... = 0`` and
-your function is on the left side.
+(*) p is the number of inequalities and m the number of equalities that could be 0. Note that you must write the equation as `... = 0` and your function is on the left side.
 
-* Once you got **L**, write what we call
-the **KKT** (Karush-Kuhn-Tucker) conditions
+* Once you got **L**, write what we call the **KKT** (Karush-Kuhn-Tucker) conditions
 
 <p class="mathjax_process">
 \(
@@ -38,44 +33,29 @@ the **KKT** (Karush-Kuhn-Tucker) conditions
 
 * and solve it
 
-You will do the partial derivative of the Lagrangian
-for each of your variables
-equals 0. That's a system so you "simply"
-have to solve it.
+You will do the partial derivative of the Lagrangian for each of your variables equals 0. That's a system so you "simply" have to solve it.
 
-**Note**: my teachers are only calculating
-all the partial derivatives of the variables
-(x,y,...), but some are also doing it for lambda.
+**Note**: my teachers are only calculating all the partial derivatives of the variables (x,y,...), but some are also doing it for lambda.
 
-You will get your critical point ``X*`` (x*, y*, ...)
-and your unknowns (mu1, ..., lambda1, ...).
+You will get your critical point `X*` (x*, y*, ...) and your unknowns (mu1, ..., lambda1, ...).
 
 <hr class="sr">
 
 ## Lagrangian / KKT Help
 
-In a lot of cases, finding the unknowns is not as
-easy as solving the system, especially if you
-have inequality constraints. Most of the time, you
-will still have lambda/mu inside X*.
+In a lot of cases, finding the unknowns is not as easy as solving the system, especially if you have inequality constraints. Most of the time, you will still have lambda/mu inside X*.
 
-Lambdas/mus are positive or null so you might have
-a 
+Lambdas/mus are positive or null so you might have a 
 
 * if (lambda == 0), X*=...
 * else X*=...
-* do not forgot to eliminate solution not passing
-the conditions.
+* do not forgot to eliminate solution not passing the conditions.
 
 <hr class="sr">
 
 ## Primal and dual
 
-Also, when you got inequality constraints, then most
-of the time you will have more work to do.
-It seems that before doing so, we should check
-that the points to be **regulars** (I'm sure of it,
-but my teacher does not seem to be doing it).
+Also, when you got inequality constraints, then most of the time you will have more work to do. It seems that before doing so, we should check that the points to be **regulars** (I'm sure of it, but my teacher does not seem to be doing it).
 
 A primal problem **P**
 
@@ -98,51 +78,28 @@ is the same as maximizing a dual problem **D**
 \]
 </p>
 
-* **note**: if a g(X) is violated (>0) then the only
-way to have the maximum is for mu/lambda to be 0.
-* **note 2**: inf for min (or sup instead of max) but I think this
-doesn't really matter (to your casual student).
-* **note 3**: If the constraints are greater equals than 0, simply
-multiply by minus 1.
+* **note**: if a g(X) is violated (>0) then the only way to have the maximum is for mu/lambda to be 0.
+* **note 2**: inf for min (or sup instead of max) but I think this doesn't really matter (to your casual student).
+* **note 3**: If the constraints are greater equals than 0, simply multiply by minus 1.
 
-If the **duality gap** (`saut de dualité`) between
-P and D is 0 (meaning the dual is equals to the primal)
-then there is no duality gap.
+If the **duality gap** (`saut de dualité`) between P and D is 0 (meaning the dual is equals to the primal) then there is no duality gap.
 
-Note that the dual problem is an unconstrained problem
-so you can solve it using what we learned before.
+Note that the dual problem is an unconstrained problem so you can solve it using what we learned before.
 
 <hr class="sl">
 
 ## Alternative
 
-Do not use this method, it's quite simple but not
-what we are expecting you to do, and not as powerful
-as the real one.
+Do not use this method, it's quite simple but that's not what we are expecting you to do, and not as powerful as the real one.
 
-You got a function ``f`` under constraints
-to minimize, then that means you'll have to
-maximum the dual solution.
+You got a function `f` under constraints to minimize, then that means you'll have to maximum the dual solution.
 
-Let's say you got a vector ``b`` which are the
-right-site of your inequalities, then the function
-to maximize in the dual will have the b values as
-indices for x,y, (n variables if b length = n)...
+Let's say you got a vector `b` which are the right-site of your inequalities, then the function to maximize in the dual will have the b values as indices for x,y, (n variables if b length = n)...
 
-* write your new function ``f'`` using ``b``,
-  b is a vector of values
-* write a matrix of the coefficients of your 
-  constraints. The first column will be the
-  first constraint coefficient in ``f'``. The
-  right-side is ``<= ?`` with `?` the coefficient
-  of the first variable (since the first column) in ``f``
+* write your new function `f'` using `b`, b is a vector of values
+* write a matrix of the coefficients of your constraints. The first column will be the first constraint coefficient in `f'`. The right-side is `<= ?` with `?` the coefficient of the first variable (since the first column) in `f`
 * now you got a new function, new constraints
-* then optimize the function using any method you 
-  know of (simplex? polygon?...)
-* you got ``x*, y*, ...``
-* replace in each constraint, if the left-side
-  is equals to the right side, then the constraint
-  is said to be **binding** (`saturée` in French). 
-  If the constraint is not bound, then that's means
-  in the ``primal``, the constraint is null (=0).
+* then optimize the function using any method you know of (simplex? polygon?...)
+* you got `x*, y*, ...`
+* replace in each constraint, if the left-side is equals to the right side, then the constraint is said to be **binding** (`saturée` in French). If the constraint is not bound, then that's means in the `primal`, the constraint is null (=0).
 * now, maybe you got rid of one or more variables
