@@ -10,6 +10,7 @@
 * `feature`: the language of the repository is Markdown (none previously)
 * `feature`: adding [CODEOWNERS](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners) file
 * `feature`: adding the [Markdown syntax reference](https://memorize.be/syntax)
+* `feature`: loading images and files from GitHub
 
 **Changed**
 
@@ -35,7 +36,7 @@
 
 ## v4.5.0 (2021-08-20)
 
-The website moved from `memorize.lgs-games.com` to memorize.be 🎉.
+The website moved from `memorize.lgs-games.com` to `memorize.be` 🎉.
 
 **Added**
 

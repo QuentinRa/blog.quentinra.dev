@@ -63,7 +63,6 @@ Last updated: 2021-08-24
 * [ ] actions? typos
 * [ ] adding file history
 * [ ] adding submit issue
-* [ ] use GitHub for images
 * **SEO**: test that the structural data is working (maybe add the two last attributes)
 * **Content**
 * [ ] Index Google/Bing
