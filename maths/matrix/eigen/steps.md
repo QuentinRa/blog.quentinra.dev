@@ -8,10 +8,10 @@ The steps for the eigendecomposition are
 * solve the lambdas (eigenvalues) in $det(\lambda{I_n}-A_n) = 0$
   * you should have $n$ eigenvalues $\lambda_n$
   * the order does not matter
-* Now you got $D$, the eigen values are on the diagonal
-* **for each eigen value**
+* Now you got $D$, the eigenvalues are on the diagonal
+* **for each eigenvalue**
   * solve $A = \lambda x$
-  * you can write write it as a system
+  * you can write it as a system
 
 <div>
 \[
@@ -24,7 +24,7 @@ ax + by + ... = \lambda * x \\
 \]
 </div>
 
-* each result (the vector (x,y, ...)) is a eigenvector
+* each result (the vector (x,y, ...)) is an eigenvector
 * by concatenating all of your eigenvectors, you get $P$
 * solve $P^{-1}$
 * check $P*D^1*P^{-1}=A$

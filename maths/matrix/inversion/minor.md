@@ -2,7 +2,7 @@
 
 [Go back](../index.md#matrix-inversion)
 
-When we have a big matrix, we can split the matrix into smaller matrices, and use the formula we know like $ad-bc$ for the 2x2 matrix. In French, our teacher  is also calling this `Calcul par développement`.
+When we have a big matrix, we can split the matrix into smaller matrices, and use the formula we know like $ad-bc$ for the 2x2 matrix. In French, our teacher is also calling this `Calcul par développement`.
 
 We are calling **minor** of a matrix $A$, the matrix $M_{i,p}$ created by removing the row $i$ and the column $p$ of $A$.
 
@@ -20,7 +20,7 @@ det(A) = \sum_{i=1}^n a_{i,p} * C_{i,p}
 \]
 </div>
 
-*Note*: this a sum of the product of the coefficient of the column we removed by their cofactors.
+*Note*: this is a sum of the product of the coefficient of the column we removed by their cofactors.
 
 <hr class="sr">
 

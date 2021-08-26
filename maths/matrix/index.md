@@ -18,9 +18,9 @@ We are writing $A_{n,p}$ a matrix of $n$ lines and $p$ columns. The value at the
 
 ## Linear System
 
-A linear system is a set of equations that can solved together. Solving one, will give you a variable value that you can use to solve another one until you solved everything.
+A linear system is a set of equations that can be solved together. Solving one will give you the value of one variable, that you can use to solve another one until you solved everything.
 
-What's convenient is that you can use a matrix for that because the GAUSS method (and a lot of other methods in Numerical analysis) needs a matrix. The rules are that the values in the matrix are the coefficient between the variables ($0$ if not found, $1$ if $x$ or $n$ if $n * x$). The last column is the vector $b$ made with the values after the equals operator.
+What's convenient is that you can use a matrix for that because the GAUSS method (and a lot of other methods in Numerical analysis) needs a matrix. The rules are that the values in the matrix are the coefficient between the variables ($0$ if not found, $1$ if $x$ or $n$ if $n * x$). The last column is the vector $b$ made with the values after the equals (`second membre`).
 
 * [Example](linear-system/example.md)
 
@@ -28,7 +28,7 @@ What's convenient is that you can use a matrix for that because the GAUSS method
 
 ## Named matrices
 
-In French, we will call theses `Matrices remarquables`. The matrix you must remember is called **Identity matrix** (`Matrice identité`) $Id_n$ or $I_n$. This is a diagonal matrix having $1$ on the diagonal giving us $A_n * Id_n = Id_n * A_n = A_n$.
+In French, we will call theses `Matrices remarquables`. The matrix you must remember is called **Identity matrix** (`Matrice identité`) $Id_n$ or $I_n$. This is a diagonal matrix having $1$ on the diagonal, giving us $A_n * Id_n = Id_n * A_n = A_n$.
 
 <table class="table table-striped table-dark table-bordered table-responsive">
 <thead>
@@ -111,7 +111,7 @@ Orthogonal matrix $A$ ($\mathbb{R}$)
 <td>
 
 `Matrice transposée` <br>
-Thr rows becomes the lines and inversely. <br>
+Rows become columns. <br>
 <div class="overflow-auto">
 \[
 A=\ \begin{pmatrix}
@@ -199,16 +199,16 @@ including the diagonal.
 The basic operation you can use are
 
 * [Add a matrix with another](props/add.md)
-* $A - B$ is not possible but you can do $A + -1 * B$
+* $A - B$ is not possible, but you can do $A + -1 * B$
 * [Multiply a matrix by a real](props/mul-real.md)
 * [Multiply a matrix by a matrix](props/mul-matrix.md)
-* $A / B$ is not possible but you can do $A * B^{-1}$
+* $A / B$ is not possible, but you can do $A * B^{-1}$
 
 <hr class="sr">
 
 ## Gaussian elimination
 
-We have a system. We are converting it to a matrix. Then using Gauss, we get a matrix with an increasing sequence of 0 before the coefficients $p_i$. We can convert back the matrix to a system.
+We have a system. We are converting it to a matrix. Then, using Gauss, we get a matrix with an increasing sequence of 0 before the coefficients $p_i$. We can convert back the matrix to a system.
 
 <div class="overflow-auto">
 \[
@@ -229,14 +229,14 @@ We have a system. We are converting it to a matrix. Then using Gauss, we get a m
 
 ## Matrix inversion
 
-The determinant of $A$, $det(A)=|A|$ is a value which indicate if we can invert or not a matrix. A matrix is invertible (also written as $A \in Gl_n(\mathbb{R})$) if **the determinant is not null** so $det(A) \neq 0$.
+The determinant of $A$, $det(A)=|A|$ is a value that is indicating if we can invert or not a matrix. A matrix is invertible (also written as $A \in Gl_n(\mathbb{R})$) if **the determinant is not null**, so $det(A) \neq 0$.
 
 * Determinant properties
   * Let $A_{1,1}=\begin{pmatrix} a \end{pmatrix}$, then we have $det(A) = a$
   * $det(AB) = det(A) * det(B)$
   * $det(A^t) = det(A)$
-  * Let $A$ a diagonal matrix, $det(A)$=product of the diagonal values
-  * The property above is working for upper/lower diagonal matrix
+  * Let $A$, a diagonal matrix, $det(A)$=product of the values on the diagonal
+  * The property above is working for upper/lower diagonal matrices
 * You can calculate the determinant
   * using the [simplified formula for 2x2 matrix](inversion/2x2.md)
   * using the [cofactor expansion](inversion/minor.md)
@@ -253,7 +253,7 @@ Then, once you have checked the determinant, you can invert a matrix using
 
 This is called `Réduction d’endomorphisme` in French. The goal is to calculate $A^n$ or $exp(A)$. Our goal is to calculate some matrix so that we have $A^n = P * D^n * P^{-1}$
 
-* $D$: diagonal matrix, the eigen values of $A$ are on the diagonal
+* $D$: diagonal matrix, the eigenvalues of $A$ are on the diagonal
 * $P$: an invertible matrix so that we have our formula
 
 Some vocabulary
@@ -261,10 +261,10 @@ Some vocabulary
 * Eigendecomposition: $A x = \lambda x$
 * an **eigenvector** (`Vecteur propre`): $x$
 * an **eigenvalue** (`Valeur propre`): $\lambda$
-* **Spectrum** of a matrix $\sigma(A)$: set of all eigen values
-* Rho, $\rho$ : the highest eigen value
+* **Spectrum** of a matrix $\sigma(A)$: set of all eigenvalues
+* Rho, $\rho$ : the highest eigenvalue
 
-You get the eigen values (according to Cayley–Hamilton theorem) by solving the following **characteristic polynomial** (`Polynôme caractéristique`). The polynomial's **degree** (`degré`) is $n$.
+You get the eigenvalues (according to Cayley–Hamilton theorem) by solving the following **characteristic polynomial** (`Polynôme caractéristique`). The polynomial's **degree** (`degré`) is $n$.
 
 @
 det(\lambda{I_n}-A_n) = 0

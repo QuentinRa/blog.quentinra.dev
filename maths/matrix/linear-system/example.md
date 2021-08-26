@@ -30,7 +30,7 @@ The matrix is
 
 <hr class="sr">
 
-Using GAUSS method (omitted for now), we got the matrix
+Using the GAUSS method (omitted for now), we got the matrix
 
 <div>
 \[

@@ -2,9 +2,9 @@
 
 [Go back](../index.md#matrix-inversion)
 
-To find the determinant, you need to make the matrix a upper diagonal matrix then use the property "$det(A)$=product of the diagonal values".
+To find the determinant, you need to make reduce a matrix to an upper diagonal matrix, then use the property "$det(A)$=product of the values on the diagonal".
 
-If you swapped line, then multiply the result by
+If you swapped lines, then multiply the result by
 
 * $det(A) = det(A) * (-1)^s$
 * with $s$ the number of swaps

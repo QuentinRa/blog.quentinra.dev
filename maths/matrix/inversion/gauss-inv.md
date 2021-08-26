@@ -2,10 +2,7 @@
 
 [Go back](../index.md#matrix-inversion)
 
-You will use GAUSS like you always did and your goal is to get the identity matrix. To get the inverted matrix 
-
-* start with the identity matrix
-* do every operation you made on the identity matrix
+You will use GAUSS like you always did, but you will work on two matrices. Given your matrix $A_n$, you will have to reduce it so that it becomes $I_n$. While, in the same time, repeating every step you did on $A$, on a matrix $I_n$, which will results in $A^{-1}$. 
 
 <hr class="sl">
 

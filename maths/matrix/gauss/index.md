@@ -20,4 +20,4 @@ And to summarize, you can
 * Swapping two rows: $L_i \iff L_j$
 * Use this formula: $L_i \leftarrow a * L_i + b * L_j$
 
-To summarize, what you will have to do is to use the operation above, and extract a pivot for each line, while making sure that this column do not have a pivot yet. Then, you may sort the lines if needed to make a strictly increasing sequence of non-leading zero.
+To summarize, what you will have to do is to use the operation above, and extract a pivot for each line, while making sure that this column does not have a pivot yet. Then, you may sort the lines if needed to make a strictly increasing sequence of non-leading zero.

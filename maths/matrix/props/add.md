@@ -2,7 +2,7 @@
 
 [Go back](../index.md#basic-operations)
 
-As long as the two matrix have the same number of lines and columns, you can use use add two matrices.
+As long as the two matrices have the same number of lines and columns (=dimension), you can make the sum, which is the addition of their values, coefficient by coefficient.
 
 <div class="overflow-auto">
 \[
