@@ -10,7 +10,7 @@ Now that you have the **gradient**, you need to test each value for your variabl
 
 When you got your points, called **critical points**
 
-* if you got one then that's the minimum (global)
+* if you got one, then that's the minimum (global)
 * else you need to replace for each point x,y,z,... inside your hessian. 
 
 For each hessian, if it's
@@ -54,7 +54,7 @@ Then the matrix is
 * **positive semi-definite**: $\forall k,\quad (-1)^k \Delta_{k}>0$
 * **negative definite**: $\forall k < n,\quad \Delta_{k}>0 \text{. and } \Delta_{n}=0$
 * **negative semi-definite**: $\forall k < n,\quad (-1)^k\Delta_{k}>0 \text{. and } \Delta_{n}=0$
-* **indefinite**: $\Delta_{n} < 0$ and the dimension n is pair
+* **indefinite**: $\Delta_{n} < 0$ and the dimension n is pairwise
 
 Some help for matrix 2x2
 
@@ -67,10 +67,10 @@ Some help for matrix 2x2
 
 ## Using eigenvalues
 
-* **positive definite**: all eigen values > 0
-* **negative definite**: all eigen values < 0
-* **positive semi-definite**: almost eigen values > 0, one equal = 0
-* **negative semi-definite**: almost eigen values < 0, one equal = 0
+* **positive definite**: all eigenvalues > 0
+* **negative definite**: all eigenvalues < 0
+* **positive semi-definite**: almost eigenvalues > 0, one equal = 0
+* **negative semi-definite**: almost eigenvalues < 0, one equal = 0
 * **indefinite**: one > 0 and another < 0
 
 <hr class="sr">
@@ -103,7 +103,7 @@ Now as explained, you should find all the critical points so the values giving y
 </p>
 
 <blockquote class="spoiler">
-I'm not good at this so I used GAUSS
+I'm not good at this, so I used GAUSS
 <div class="overflow-auto mathjax_process">
 \[
 \begin{pmatrix}4x -2y + 4 = 0\\2y-2x = 0\end{pmatrix}
@@ -132,7 +132,7 @@ Eliminate the second column
 \end{pmatrix}
 </div>
 
-So we only have one critical point and that's (x=-2, y=-2). Since we only have one point, that's the minimum.
+So we only have one critical point, and that's (x=-2, y=-2). Since we only have one point, that's the minimum.
 
 <p>
 \[

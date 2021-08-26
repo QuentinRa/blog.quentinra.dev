@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-This is a method allowing us to transform a constrained problem (primal), to an unconstrained problem (dual).
+This is a method allowing us to transform a constrained problem (primal), into an unconstrained problem (dual).
 
 <hr class="sl">
 
@@ -33,7 +33,7 @@ L(X, \mu, \lambda) = f(X) +
 
 * and solve it
 
-You will do the partial derivative of the Lagrangian for each of your variables equals 0. That's a system so you "simply" have to solve it.
+You will do the partial derivative of the Lagrangian for each of your variables equals 0. That's a system, so you "simply" have to solve it.
 
 **Note**: my teachers are only calculating all the partial derivatives of the variables (x,y,...), but some are also doing it for lambda.
 
@@ -45,11 +45,11 @@ You will get your critical point `X*` (x*, y*, ...) and your unknowns (mu1, ...,
 
 In a lot of cases, finding the unknowns is not as easy as solving the system, especially if you have inequality constraints. Most of the time, you will still have lambda/mu inside X*.
 
-Lambdas/mus are positive or null so you might have a 
+Lambdas/mus are positive or null, so you might have a 
 
 * if (lambda == 0), X*=...
 * else X*=...
-* do not forgot to eliminate solution not passing the conditions.
+* do not forget to eliminate solution not passing the conditions.
 
 <hr class="sr">
 
@@ -84,22 +84,22 @@ is the same as maximizing a dual problem **D**
 
 If the **duality gap** (`saut de dualité`) between P and D is 0 (meaning the dual is equals to the primal) then there is no duality gap.
 
-Note that the dual problem is an unconstrained problem so you can solve it using what we learned before.
+Note that the dual problem is an unconstrained problem, so you can solve it using what we learned before.
 
 <hr class="sl">
 
 ## Alternative
 
-Do not use this method, it's quite simple but that's not what we are expecting you to do, and not as powerful as the real one.
+Do not use this method, it's quite simple, but that's not what we are expecting you to do, and not as powerful as the real one.
 
 You got a function `f` under constraints to minimize, then that means you'll have to maximum the dual solution.
 
-Let's say you got a vector `b` which are the right-site of your inequalities, then the function to maximize in the dual will have the b values as indices for x,y, (n variables if b length = n)...
+Let's say you got a vector `b` which is the right-side of your inequalities, then the function to maximize in the dual will have the b values as indices for x,y, (n variables if b length = n)...
 
 * write your new function `f'` using `b`, b is a vector of values
 * write a matrix of the coefficients of your constraints. The first column will be the first constraint coefficient in `f'`. The right-side is `<= ?` with `?` the coefficient of the first variable (since the first column) in `f`
 * now you got a new function, new constraints
 * then optimize the function using any method you know of (simplex? polygon?...)
 * you got `x*, y*, ...`
-* replace in each constraint, if the left-side is equals to the right side, then the constraint is said to be **binding** (`saturée` in French). If the constraint is not bound, then that's means in the `primal`, the constraint is null (=0).
+* replace in each constraint, if the left-side is equal to the right side, then the constraint is said to be **binding** (`saturée` in French). If the constraint is not bound, then that's means in the `primal`, the constraint is null (=0).
 * now, maybe you got rid of one or more variables

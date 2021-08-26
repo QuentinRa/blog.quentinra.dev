@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-This is an iterative method. The first value $X^{(0)}$ is given most of the time but you may try with a vector of zeros if not.
+This is an iterative method. The first value $X^{(0)}$ is given most of the time, but you may try with a vector of zeros if not.
 
 Calculate the gradient, then
 
@@ -57,7 +57,7 @@ f(x, y) = 4x^2 + 4y^2 − 2xy -5x
 \]
 </p>
 
-Using conjugate gradient method, starting from (0,0), demonstrate that $X^{(2)}$ is a critical point.
+Using the conjugate gradient method, starting from (0,0), demonstrate that $X^{(2)}$ is a critical point.
 
 <blockquote class="spoiler">
 <p>The gradient is
@@ -190,7 +190,7 @@ We continue.
 </li>
 </ul>
 
-Then since we know that $g^{(2)}$ is a critical point, then we simply need to find a lambda so we have a gradient equals to $(0,0)$.
+Then since we know that $g^{(2)}$ is a critical point, then we simply need to find a lambda, so we have a gradient equals to $(0,0)$.
 
 <div class="mathjax_process">\[g^{(2)} =
 \nabla f(X^{(2)}) = 
@@ -204,7 +204,7 @@ Then since we know that $g^{(2)}$ is a critical point, then we simply need to fi
 \]
 </div>
 
-In the first one we are good so let's check the second one.
+In the first one we are good, so let's check the second one.
 
 <div class="mathjax_process">
 \begin{cases}
@@ -226,6 +226,6 @@ So we have
 \]
 </div>
 
-The Second iteration is done and we are stopping since we got $(0,0)$ for g. And since the gradient is $(0,0)$ it's critical point.
+The Second iteration is done, and we are stopping since we got $(0,0)$ for g. And since the gradient is $(0,0)$ it's a critical point.
 </div>
 </blockquote>

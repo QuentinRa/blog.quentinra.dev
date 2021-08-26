@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-It's most likely the easiest method, but it won't works if you got more than 2 parameters. Rewrite all of your constraints to you have constraints like this
+It's most likely the easiest method, but it won't work if you got more than 2 parameters. Rewrite all of your constraints to have constraints like these
 
 <p>
 \[
@@ -14,7 +14,7 @@ y \le 3/5 * x + 7\\
 \]
 </p>
 
-You may use greater, greater equals, or lesser/lesser equals but you can't have something like `x + y < 5` since we want only one variable on the left side.
+You may use greater, greater equals, or lesser/lesser equals, but you can't have something like `x + y < 5` since we want only one variable on the left side.
 
 <hr class="sr">
 
@@ -38,7 +38,7 @@ You should remember that something like that `y <= 3/5 * x + 7` means that
 
 The critical points are the edges of our `constrained space` like `C` in the screenshot.
 
-You had a function `f(x,y)=...`, and since each point is got `(x,y)`, then replace each critical point in the function. Take the highest (maximum) or the lowest (minimum) value and you're done.
+You had a function `f(x,y)=...`, and since each point is got `(x,y)`, then replace each critical point in the function. Take the highest (maximum) or the lowest (minimum) value, and you're done.
 
 <hr class="sr">
 

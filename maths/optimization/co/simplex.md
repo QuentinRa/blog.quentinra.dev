@@ -52,7 +52,7 @@ Once you did, if set a `1` in $a_{11}$ then replace $S_{1}$ (i=1) in the `base` 
 
 ## Maximization
 
-Same a minimization but take the take the column with the biggest `c`.
+Same a minimization, but take the column with the biggest `c`.
 
 **Stop**? When all the values in the last line (reduced costs) are **negatives**. The result is `-R`.
 
@@ -82,7 +82,7 @@ y \ge 0\\
 
 <blockquote class="spoiler">
 
-We rewrite our constraints so we have using the **standard form**
+We rewrite our constraints, so we have the following **standard form**
 
 <div>
 \[
@@ -105,8 +105,8 @@ So your table is
 
 And we are starting,
 
-* The highest coefficient is 3, second column
-* The highest row is min(1/1, 2/4)=2/4= second line
+* The highest coefficient is 3 (second column)
+* The highest row is $min(1/1, 2/4)=2/4$ (second line)
 * we are clearing the second column
 * and we will replace e2 in the base by y
 
@@ -124,8 +124,8 @@ And we are starting,
 
 Then again
 
-* The highest coefficient is 5/4, first column
-* The highest row is min((2/4)/(3/4), (2/4)/(1/4))=first line
+* The highest coefficient is 5/4 (first column)
+* The highest row is $min((2/4)/(3/4), (2/4)/(1/4))=(2/4)/(3/4)$ (first line)
 * we are clearing the first column
 * and we will replace e1 in the base by x
 

@@ -35,7 +35,7 @@ Then add another equation: **the sum of all deltas is 1**. And solve and find al
 
 <div><b>Find the solution</b> \(\nu\) (nu)</div>
 
-Simply evaluate this equation with the values that you found. Note that $c_i$ stands for the coefficient of i-nth term.
+Simply evaluate this equation with the values that you found. Note that $c_i$ stands for the coefficient of the i-nth term.
 
 <div>
 \[
@@ -45,9 +45,9 @@ Simply evaluate this equation with the values that you found. Note that $c_i$ st
 
 **Check it's a critical point**
 
-System of equations, for each terms m, you write the term equals to $\nu(\delta) * delta_i$
+System of equations, for each term m, you write the term equals to $\nu(\delta) * delta_i$
 
-You solve the system, and will have `x*`, `y*`, ... Then as you could guess, try to check if these values in your gradient is giving a vector of zeros.
+You solve the system, and will have `x*`, `y*`, ... Then as you could guess, try to check if these values in your gradient are giving you a vector of zeros.
 
 <hr class="sr">
 
@@ -121,7 +121,7 @@ so & \delta_{1} = \delta_{2} = \delta_{3} = 1/3 \\
 \]
 </p>
 
-**critical point?**
+**Critical point?**
 
 <p>
 \begin{split}\left\lbrace\begin{array}{l}
@@ -161,7 +161,7 @@ The gradient is
 
 So that's a critical point!
 
-**not convex?**
+**Not convex?**
 
 <p>
 \[
@@ -172,4 +172,4 @@ So that's a critical point!
 \]
 </p>
 
-Complete here... You must find a point giving us an indefinite hessian.
+Complete here... You must find a point, giving us an indefinite hessian.

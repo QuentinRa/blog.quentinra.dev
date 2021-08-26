@@ -2,15 +2,15 @@
 
 [Go back](..)
 
-The gradient (first derivative) and the hessian (second derivative), will be used quite a lot in unconstrained optimization.
+The gradient (first derivative) and the Hessian (second derivative), will be used quite a lot in unconstrained optimization.
 
 <hr class="sl">
 
 ## Gradient
 
-We are calling **gradient**, noted nabla, the "derivative" of `f`. 
+We are calling **gradient**, noted nabla ($\nabla$), the "derivative" of $f$. 
 
-That's not a simple derivative in most cases since `f` usually have a multiples parameters. We will calculate partial derivatives. Let's go for use an example:
+That's not a simple derivative, as, in most cases, $f$ usually has multiples parameters. We will calculate partial derivatives. Example:
 
 * $f(x,y)$
 * we got two variables
@@ -29,7 +29,7 @@ And our gradient would be
 
 ## Hessian
 
-Following what you learned for the gradient, the **hessian** is the derivative of a gradient. We note it ``Hf`` if `f` is our function.
+Following what you learned for the gradient, the **hessian** is the derivative of a gradient. We note it $Hf$ if $f$ is our function.
 
 <hr class="sl">
 
