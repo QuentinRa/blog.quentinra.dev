@@ -2,16 +2,10 @@
 
 [Go back](../../index.md)
 
-A data.frame is a type used to store a sort of excel
-table. You got columns, rows and values so that's exactly
-the same. This is the type you will get after reading
-a CSV file, if not, a lot of datasets are Data.frames
-so it's used quite a lot.
+A data.frame is a type used to store a sort of Excel table. You got columns, rows, and values, so that's exactly the same. This is the type you will get after reading a CSV file, if not, a lot of datasets are Data.frames, so it's used quite a lot.
 
-The format is
-``data.frame(column_name = values, ... )``. If the
-values for a column are not enough to fill the longest
-column, then the values are recycled.
+The format is `data.frame(column_name = values, ... )`. If the
+values for a column are not enough to fill the longest column, then the values are recycled.
 
 ```r
 df <- data.frame(number = sample(1:100, 6), name = "Rosé")
@@ -34,4 +28,4 @@ df
 # 6     73 John
 ```
 
-> **Note**: A data.frame is a list so you can use ``df$column_name``.
+> **Note**: A data.frame is a list so you can use `df$column_name`.

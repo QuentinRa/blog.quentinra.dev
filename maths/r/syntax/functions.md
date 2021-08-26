@@ -39,7 +39,7 @@ modulo(5, mod=3)
 
 ## Return
 
-A function in R must returns something. In fact, you do not need to use `return` since by default in R
+A function in R must return something. In fact, you do not need to use `return` since by default in R
 
 > A bloc is evaluated as the evaluation of the last expression
 
@@ -57,7 +57,7 @@ And the returned value is the evaluation of the last expression `x %% mod`.
 
 ## Default values
 
-A lot of the times in R you got functions with a lot of arguments (like 7). We are using default values for our arguments using `= value`.
+A lot of times in R, you got functions with a lot of arguments (like 7). We are using default values for our arguments using `= value`.
 
 ```r
 modulo <- function (x, mod=2) {

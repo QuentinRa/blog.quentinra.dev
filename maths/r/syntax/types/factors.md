@@ -2,12 +2,7 @@
 
 [Go back](../../index.md)
 
-Factors are used for qualitative variables. It's a
-variable taking a finite number of values like
-an answer: $Yes$ or $No$. The factor function will
-create a vector with levels. You will be able to use
-this later, for instance for grouping those that
-answered $Yes$ and those who answered $No$.
+Factors are used for qualitative variables. It's a variable taking a finite number of values like an answer: $Yes$ or $No$. The factor function will create a vector with levels. You will be able to use this later, for instance for grouping those that answered $Yes$ and those who answered $No$.
 
 ```r
 # format: factor(v, levels = levels)
@@ -27,14 +22,14 @@ f
 
 ## Levels
 
-You can get a variable levels with ``levels``.
+You can get the levels with `levels` (😄).
 
 ```r
 levels(f)
 # [1] "yes" "no"  "idk"
 ```
 
-You can get a variable drop a level with ``droplevels``.
+You can get a variable drop a level with `droplevels`.
 
 ```r
 droplevels(f, "idk")

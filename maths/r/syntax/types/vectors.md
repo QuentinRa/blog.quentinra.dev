@@ -2,9 +2,7 @@
 
 [Go back](../../index.md)
 
-A vector is a set of values, like an array in C or lists in python. This is also
-literally a vector in maths. You can use ``c`` (concatenate function) to merge
-values and create a vector. They **must have the same type**.
+A vector is a set of values, like an array in C or lists in python. This is also literally a vector in math. You can use `c` (concatenate function) to merge values and create a vector. They **must have the same type**.
 
 ```r
 c(1,2,3,4,5)
@@ -19,7 +17,7 @@ sapply(v, function (unused){ return(sample(1:5, 1)) })
 # [1] 2 5 2 3 4
 ```
 
-You can also easily create a sequential vector with ``n:m``
+You can also easily create a sequential vector with `n:m`
 
 ```r
 1:5
@@ -30,9 +28,7 @@ You can also easily create a sequential vector with ``n:m``
 
 ## Operations
 
-You can add two vectors, BUT if one is smaller than the second one, then the
-values are recycled. You will get a warning if the size of one isn't a multiple
-of other's size.
+You can add two vectors, BUT if one is smaller than the second one, then the values are recycled. You will get a warning if the size of one isn't a multiple of the other's size.
 
 ```r
 c(1, 2, 3, 4) + c(0,10)
@@ -45,8 +41,7 @@ c(1, 2, 3, 4) + c(0,10)
 
 ## Indexes (unnamed)
 
-You can use ``vector[index]`` or `vector[indexes]` but note that
-the **INDEXES START AT 1** (not 0).
+You can use `vector[index]` or `vector[indexes]` but note that the **INDEXES START AT 1** (not 0).
 
 * you can give one index
 
@@ -71,7 +66,7 @@ vector[seq(1,10)]
 # seq <=> 1:10, the first 10th values
 ```
 
-* you can give negative indexes (will return every other index aside these)
+* you can give negative indexes (will return every other index aside from these)
 
 ```r
 vector[-c(1,2)]
@@ -84,7 +79,7 @@ vector[c(-1,-2)]
 
 ## Indexes (named)
 
-You can use the ``=`` operator and give a label/name to a value.
+You can use the `=` operator and give a label/name to a value.
 
 ```r
 r <- c(yes = 1, no = 0)
@@ -129,13 +124,9 @@ vect[vect %% 2 == 0]
 # vect[vect > 50] for values greater than 50
 ```
 
-The idea is simple, since ``vect %% 2 == 0`` is returning
-a vector, then you can pass it to ``vect[]`` since the
-``[]`` operator is taking a vector of indexes.
+The idea is simple, since `vect %% 2 == 0` is returning a vector, then you can pass it to `vect[]` since the `[]` operator is taking a vector of indexes.
 
-Something weird in R is that you can replace any
-values, so if you want to replace the even
-values by the mean, you could do
+Something weird in R is that you can replace any values, so if you want to replace the even values by the mean, you could do
 
 ```r
 vect[vect %% 2 == 0] <- mean(vect)
@@ -144,8 +135,7 @@ vect
 # 73  9 56 56 67 56 89 56 56 75
 ```
 
-You can also use ``which`` to get the indexes matching
-a criteria
+You can also use `which` to get the indexes matching a criterion
 
 ```r
 which(vect < 30)
