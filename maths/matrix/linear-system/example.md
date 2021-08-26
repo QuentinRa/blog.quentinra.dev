@@ -30,8 +30,7 @@ The matrix is
 
 <hr class="sr">
 
-Using GAUSS method (omitted for now), we got
-the matrix
+Using GAUSS method (omitted for now), we got the matrix
 
 <div>
 \[
@@ -49,6 +48,4 @@ That we convert back to a system
 * $x_1 = 6 - \frac{4}{3} x_3$
 * $x_2 = 3 + \frac{2}{3} x_3$
 
-To make it more explicit, I converted back
-the first line to $x_1 + 0x_2 + \frac{4}{3} x_3 = 6$
-which means that $x_1 = 6 - \frac{4}{3} x_3$.
+To make it more explicit, I converted back the first line to $x_1 + 0x_2 + \frac{4}{3} x_3 = 6$ which means that $x_1 = 6 - \frac{4}{3} x_3$.

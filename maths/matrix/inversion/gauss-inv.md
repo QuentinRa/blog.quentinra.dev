@@ -2,9 +2,7 @@
 
 [Go back](../index.md#matrix-inversion)
 
-You will use GAUSS like you always did and
-your goal is to get the identity matrix. To get the inverted
-matrix 
+You will use GAUSS like you always did and your goal is to get the identity matrix. To get the inverted matrix 
 
 * start with the identity matrix
 * do every operation you made on the identity matrix

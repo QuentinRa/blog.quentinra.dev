@@ -2,10 +2,7 @@
 
 [Go back](../index.md#basic-operations)
 
-If the number of columns of a matrix $M1_{n1, \ {\color{red}c}}$
-is the same as the number of lines of a matrix
-$M2_{\ {\color{red}c}, p2}$ then 
-you can multiply $M1$ by $M2$
+If the number of columns of a matrix $M1_{n1, \ {\color{red}c}}$ is the same as the number of lines of a matrix $M2_{\ {\color{red}c}, p2}$ then you can multiply $M1$ by $M2$
 
 * the result is a matrix $M$: $M1_{n1,c} * M2_{c, p2} = M_{n1,p2}$.
 * $M1 * M2$ **DOES NOT mean** that we can do $M2 * M1$.

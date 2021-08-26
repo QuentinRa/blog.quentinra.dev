@@ -2,11 +2,9 @@
 
 [Go back](../index.md#matrix-inversion)
 
-When we have a big matrix, we can split the matrix into smaller matrices, and use the formula we know like $ad-bc$ for the 2x2 matrix. In French, our teacher 
-is also calling this ``Calcul par développement``.
+When we have a big matrix, we can split the matrix into smaller matrices, and use the formula we know like $ad-bc$ for the 2x2 matrix. In French, our teacher  is also calling this `Calcul par développement`.
 
-We are calling **minor** of a matrix $A$, the matrix $M_{i,p}$
-created by removing the row $i$ and the column $p$ of $A$.
+We are calling **minor** of a matrix $A$, the matrix $M_{i,p}$ created by removing the row $i$ and the column $p$ of $A$.
 
 We are calling **cofactor** $C_{i,p} = (-1)^{i+p} * det(M_{i,p})$.
 
@@ -14,10 +12,7 @@ We are calling **cofactor** $C_{i,p} = (-1)^{i+p} * det(M_{i,p})$.
 
 ## Formula
 
-We will pick a column $p$ and remove it from our matrix $A$.
-It's most of the time the column with the biggest coefficients
-or the coefficients that are hard to deal with.
-Then, all we have to do is to evaluate this formula.
+We will pick a column $p$ and remove it from our matrix $A$. It's most of the time the column with the biggest coefficients or the coefficients that are hard to deal with. Then, all we have to do is to evaluate this formula.
 
 <div class="overflow-auto">
 \[
@@ -25,8 +20,7 @@ det(A) = \sum_{i=1}^n a_{i,p} * C_{i,p}
 \]
 </div>
 
-*Note*: this a sum of the product of the
-coefficient of the column we removed by their cofactors.
+*Note*: this a sum of the product of the coefficient of the column we removed by their cofactors.
 
 <hr class="sr">
 
@@ -38,8 +32,7 @@ M=\begin{pmatrix}-1 & 4 & -7 \\2 & -5 & 8 \\-3 & 6 & -9\end{pmatrix}
 \]
 </div>
 
-We are picking the column $p=3 \to (-7,8,-9)$.
-The formula is
+We are picking the column $p=3 \to (-7,8,-9)$. The formula is
 
 <div class="overflow-auto">
 \[

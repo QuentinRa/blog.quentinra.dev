@@ -37,9 +37,7 @@ X = \begin{split}\begin{pmatrix}\lambda & 0 \\0 & \lambda \end{pmatrix}
 
 ## Step 2
 
-Solve $det(\lambda{I_n}-A_n) = 0$.
-We know that $det(A_2) = ad-bc$ is
-so we have
+Solve $det(\lambda{I_n}-A_n) = 0$. We know that $det(A_2) = ad-bc$ is so we have
 
 <div class="overflow-auto">
 \[
@@ -86,8 +84,7 @@ The first eigenvector is
 \]
 </div>
 
-If $y$ increase by $1$, then $x$ increase by $-2$.
-If $y$ increase by $\alpha$, then $x$ increase by $-2\alpha$.
+If $y$ increase by $1$, then $x$ increase by $-2$. If $y$ increase by $\alpha$, then $x$ increase by $-2\alpha$.
 
 <hr class="sr">
 
@@ -123,8 +120,7 @@ The second eigenvector is
 \]
 </div>
 
-If $x$ increase by $1$, then $y$ increase by $2$.
-If $x$ increase by $\alpha$, then $y$ increase by $2\alpha$.
+If $x$ increase by $1$, then $y$ increase by $2$. If $x$ increase by $\alpha$, then $y$ increase by $2\alpha$.
 
 <hr class="sl">
 

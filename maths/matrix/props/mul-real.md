@@ -2,8 +2,7 @@
 
 [Go back](../index.md#basic-operations)
 
-This is as simple as you could guess. Simply multiply
-each coefficient by the real.
+This is as simple as you could guess. Simply multiply each coefficient by the real.
 
 <div class="overflow-auto">
 \[

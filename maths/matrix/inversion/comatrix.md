@@ -2,8 +2,7 @@
 
 [Go back](../index.md#matrix-inversion)
 
-The cofactor matrix of $A$, called ``co-matrice``/``Com(A)`` in French,
-is the matrix of the cofactors.
+The cofactor matrix of $A$, called `co-matrice`/`Com(A)` in French, is the matrix of the cofactors.
 
 <div class="overflow-auto">
 \[
@@ -17,8 +16,7 @@ C_{n1}&C_{n2}&\cdots &C_{nn}
 \]
 </div>
 
-Once you created this matrix, the inverted matrix
-formula is
+Once you created this matrix, the inverted matrix formula is
 
 <div>
 \[
@@ -31,8 +29,7 @@ A^{-1} =
 
 ## Example
 
-Given the following invertible matrix $A$ since
-$det(A)=66$. Using the cofactor matrix, solve $A^{-1}$.
+Given the following invertible matrix $A$ since $det(A)=66$. Using the cofactor matrix, solve $A^{-1}$.
 
 <div class="overflow-auto">
 \[

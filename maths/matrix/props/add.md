@@ -2,8 +2,7 @@
 
 [Go back](../index.md#basic-operations)
 
-As long as the two matrix have the same number
-of lines and columns, you can use use add two matrices.
+As long as the two matrix have the same number of lines and columns, you can use use add two matrices.
 
 <div class="overflow-auto">
 \[

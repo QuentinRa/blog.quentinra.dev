@@ -78,8 +78,7 @@ Operation: $L_3 = L_3 + L_2$
 \]
 </blockquote>
 
-At this point, the matrix is in the **row echelon form**.
-We could write back the system
+At this point, the matrix is in the **row echelon form**. We could write back the system
 
 <blockquote class="overflow-auto spoiler">
 \[

@@ -20,8 +20,7 @@ We are writing $A_{n,p}$ a matrix of $n$ lines and $p$ columns. The value at the
 
 A linear system is a set of equations that can solved together. Solving one, will give you a variable value that you can use to solve another one until you solved everything.
 
-What's convenient is that you can use a matrix for that because the GAUSS method (and a lot of other methods in Numerical analysis) needs a matrix. The rules are that the values in the matrix are the coefficient between the variables ($0$ if not found,
-$1$ if $x$ or $n$ if $n * x$). The last column is the vector $b$ made with the values after the equals operator.
+What's convenient is that you can use a matrix for that because the GAUSS method (and a lot of other methods in Numerical analysis) needs a matrix. The rules are that the values in the matrix are the coefficient between the variables ($0$ if not found, $1$ if $x$ or $n$ if $n * x$). The last column is the vector $b$ made with the values after the equals operator.
 
 * [Example](linear-system/example.md)
 
@@ -29,8 +28,7 @@ $1$ if $x$ or $n$ if $n * x$). The last column is the vector $b$ made with the v
 
 ## Named matrices
 
-In French, we will call theses ``Matrices remarquables``. The matrix you must remember is called **Identity matrix** (``Matrice identité``) $Id_n$ or $I_n$. This is
-a diagonal matrix having $1$ on the diagonal giving us $A_n * Id_n = Id_n * A_n = A_n$.
+In French, we will call theses `Matrices remarquables`. The matrix you must remember is called **Identity matrix** (`Matrice identité`) $Id_n$ or $I_n$. This is a diagonal matrix having $1$ on the diagonal giving us $A_n * Id_n = Id_n * A_n = A_n$.
 
 <table class="table table-striped table-dark table-bordered table-responsive">
 <thead>
@@ -244,8 +242,7 @@ The determinant of $A$, $det(A)=|A|$ is a value which indicate if we can invert 
   * using the [cofactor expansion](inversion/minor.md)
   * using [GAUSS elimination](inversion/gauss-det.md)
 
-Then, once you have checked the determinant, you
-can invert a matrix using
+Then, once you have checked the determinant, you can invert a matrix using
 
 * using [GAUSS elimination](inversion/gauss-inv.md)
 * using [the cofactor matrix "comatrix"](inversion/comatrix.md)
