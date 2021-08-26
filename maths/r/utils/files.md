@@ -18,13 +18,13 @@ You may use them to move from a directory to another (`cd`/`ls`)
 
 * `read.csv('path')`: read a csv, separated by commas (,)
 * `read.csv2('path')`: read a csv, separated by semicolons (;)
-* `source(path)`: run a R file (path can be an URL)
+* `source(path)`: run an R file (path can be a URL)
 * `cat(path, sep = '\n')`: print a file
 * `readLines(path)`: read a file
 
-If you are doing this in statistics, then beware. By default, a string is considered as quantitative variable even if it's "yes"/"no" so you may have to add the parameter "stringsAsFactors=TRUE" or manually convert the variables.
+If you are doing this in statistics, then beware. By default, a string is considered as a quantitative variable even if it's "yes"/"no" so you may have to add the parameter "stringsAsFactors=TRUE" or manually convert the variables.
 
-Note that you can replace "read" in all functions above by "write" and get the write function (aside from cat where you have to add the argument "file").
+Note that you can replace "read" in all functions above by "write" and get the write function (aside from cat, where you have to add the argument "file").
 
 <hr class="sr">
 

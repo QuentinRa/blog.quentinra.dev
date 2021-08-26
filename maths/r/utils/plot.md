@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-Learn about devices, and the most well-known plots such as histograms, bar chart, pie chart, and box plot.
+Learn about devices, and the most well-known plots such as histograms, bar charts, pie charts, and box plots.
 
 <hr class="sl">
 
@@ -19,11 +19,11 @@ Almost all the plots' functions have these arguments
 
 ## Utilities
 
-Before starting, you may use these functions to add some lines, ... on a graph
+Before starting, you may use these functions to add some lines, ... to a plot
 
 * `points`: draw points
 * `line`: draw points
-* `abline` : draw a line $y=ax+b$ (you may use h=x ou v=y)
+* `abline` : draw a line $y=ax+b$ (you may use h=x or v=y)
 * `legend`: add a legend
 * `title`: add a title
 * others: `rect`, `segments`, `polygon`, `box`, `grid`
@@ -51,7 +51,7 @@ Then you should get a number, keep it in mind. Every plot will be rendered in th
 
 If you have more than one point at a position, you won't see it using plot, so you will have to use `plot(jitter(x))` to move the points a bit before rendering them.
 
-You may use the argument `type` to change the type of plot like `type = "l"` (l=line, b=line with dots).
+You may use the argument `type` to change the type of plot, like `type = "l"` (l=line, b=line with dots).
 
 <hr class="sr">
 
@@ -68,7 +68,7 @@ New arguments
 
 Notes
 
-We are adding the argument `prob = TRUE` sometimes in statistics to make an histogram of the frequencies instead of the quantities.
+We are adding the argument `prob = TRUE` sometimes in statistics to make a histogram of the frequencies instead of the quantities.
 
 <hr class="sl">
 
@@ -86,7 +86,7 @@ Let's say you got a qualitative variable (a variable taking finite values like M
 * **French**: `Camembert`
 * **Function**: `pie(table(qual))`
 
-Same as for Bar chart but represented using the traditional pie chart.
+Same as Bar chart, but represented using the traditional pie chart.
 
 <hr class="sl">
 
@@ -97,8 +97,8 @@ Same as for Bar chart but represented using the traditional pie chart.
 
 My favorite one. You can
 
-* see the repartition (quantiles, ...) for a variable (`boxplot(x)`)
-* ... by a criteria (`boxplot(quant ~ qual)`)
+* see the distribution (quantiles, ...) of a variable (`boxplot(x)`)
+* ... by a criterion (`boxplot(quant ~ qual)`)
 
 ```r
 data('mtcars'); cars <- mtcars
@@ -139,7 +139,7 @@ Same as the diagram above, but this time we are not taking the mean and represen
 * **French**: `Tableau de contingence`
 * **Function**: `balloonplot(table(x))`
 
-Remember that table is making a contingency table. You can visualize a contingency table using this function.
+Remember, that table is making a contingency table. You can visualize a contingency table using `balloonplot`.
 
 <hr class="sl">
 
@@ -149,7 +149,7 @@ Remember that table is making a contingency table. You can visualize a contingen
 * **Function**: `qhpvt(data, rows = ..., columns = ..., calculations = "...")`
 * **Library**: `pivottabler`
 
-You can observe the relation of variable with other variables.
+You can observe the relation of a variable with other variables.
 
 * data: your data
 * rows: a vector of variables (i)

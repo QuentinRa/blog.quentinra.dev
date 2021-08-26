@@ -60,7 +60,7 @@ if ( condition ) {
 
 ## Vectors
 
-In R, all values are a vector. In fact `5` is considered as a vector of size 1. A vector is like an array, but when you do something like `vector * 2` or `function(vector)` then the operation is applied <span class="tms">(or most likely will, in case of functions, since that's up to the one coding)</span> to all element of a vector.
+In R, all values are a vector. In fact `5` is considered as a vector of size 1. A vector is like an array, but when you do something like `vector * 2` or `function(vector)` then the operation is applied <span class="tms">(or most likely will, in case of functions, since that's up to the one coding)</span> to every element of a vector.
 
 ```R
 # shortcut to create a vector from [[1,10]]
@@ -78,7 +78,7 @@ for (i in one_to_ten) { print(i) }
 sapply(one_to_ten, function (i) { print(i) } )
 ```
 
-R is guessing the type of a variable but you can use constructor to explicitly create a variable having a type. 
+R is guessing the type of a variable but you can use a constructor to explicitly create a variable having a type. 
 
 ```r
 # create a vector of 10 numerics (=float or int) values

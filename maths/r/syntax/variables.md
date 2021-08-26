@@ -21,9 +21,9 @@ a <- 7
 
 ## Using "="
 
-You can also use `=` but you should not since that overusing an operator supposed to do something else.
+You can also use `=`, but **you should not**, as this is overusing an operator that is supposed to do something else.
 
-The official [note](https://developer.r-project.org/equalAssign.html).
+You can read [the official note here](https://developer.r-project.org/equalAssign.html).
 
 <hr class="sr">
 
@@ -47,7 +47,7 @@ r <- c(r, 3)
 
 ## Print a variable
 
-In R, every line is an expression. And if the result of the expression is a value, then it's printed, otherwise you need to explicitly call print (or any printing function like cat).
+In R, every line is an expression. And if the result of the expression is a value, then it's printed, otherwise, you need to explicitly call print (or any printing function like cat).
 
 ```r
 r # implicit

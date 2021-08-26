@@ -2,11 +2,11 @@
 
 [Go back](../index.md)
 
-In R, you should consider using function rather than these structures, but the if / for statements are quite convenient.
+In R, you should consider using function rather than these structures, but the if/for statements are quite convenient.
 
 You can use
 
-* `next`: in a loop, next iteration
+* `next`: in a loop, go to the next iteration
 * `break`: in a loop, exit the loop
 
 <hr class="sl">
@@ -60,11 +60,11 @@ res <- switch(value, case_1, case_2, case_n)
 
 * `lapply(v, f)`
 
-apply `f` on each element of `v`, the result is an element of a list.
+Apply `f` on each element of `v`, the result is an element of a list.
 
 * `sapply(v, f)`
 
-Same but returns a vector.
+Same, but returns a vector.
 
 * `aapply(m, f, 1)`
 
@@ -80,4 +80,4 @@ A wrapper for `tapply`. You got the result of each call.
 
 * `aggregate(quant~qual, FUN=function)`
 
-Group the quantitative values by the qualitative factor (stats). The value associated at each value of the qualitative variable is the `mean` of the quantitative values of each group. 
+Group the quantitative values by the qualitative factor (stats). The value associated with each value of the qualitative variable is the `mean` of the quantitative values of each group. 

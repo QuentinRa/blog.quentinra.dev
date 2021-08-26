@@ -11,7 +11,7 @@ In R, all types are vectors. For instance, `5` (number) is a vector of size 1.
 * **character**: "a text", 'a text'
 * **vector**
 * **matrix**
-* **data.frame** (~=an excel table)
+* **data.frame** (~=an Excel table)
 * **list**: a vector, with named indexes and that can have different types
 
 <hr class="sr">
@@ -23,7 +23,7 @@ You have a lot of methods for each type, having this syntax
 * **is.xxx(x)**: return true if x is from the class xxx
 * **class(x)**: return x class
 * **mode(x)**: return x mode
-* **identical(x,y)**: true if x equals y
+* **identical(x, y)**: true if x equals y
 * **as.xxx(x)**: convert x to xxx class
 * **xxx(...)**: create an empty vector having the type xxx
 

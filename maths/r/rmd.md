@@ -2,7 +2,7 @@
 
 [Go back](index.md)
 
-Instead of sharing a `.R` file, you may share in mix of markdown and ``R`` called RMarkdown. It's quite simply, you got each and every feature of Markdown but when you write some code in a bloc like this
+Instead of sharing a `.R` file, you may share a mix of markdown and `R` called RMarkdown. It's quite simple, you got every feature of Markdown, but you can write LaTeX, and code in a bloc like this
 
 <pre><code class="language-r"
 >```r
@@ -10,7 +10,7 @@ Instead of sharing a `.R` file, you may share in mix of markdown and ``R`` calle
 "Hello, World!"
 ```</code></pre>
 
-Then you will be able to run your code like in a ``.R`` file. The best way to learn RMarkdown (aside from looking at other Rmd files) is to read [this sheet](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf).
+You will be able to run it, like you would in a `.R` file. The best way to learn RMarkdown (aside from looking at other Rmd files) is to [read this sheet](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf).
 
 <hr class="sl">
 
@@ -19,15 +19,14 @@ Then you will be able to run your code like in a ``.R`` file. The best way to le
 You can also use latex
 
 ```md
-This is a sentence with some maths $a+b = 2$ in latex.
-You can also directly write latex like
+This is a sentence with some math in LaTeX: $a+b = 2$.
 
-This equation in this sentence will be centered $$a+b = 2$$ and take a whole line.
+The equation in this sentence will be centered $$a+b = 2$$ and take a whole line.
 ```
 
 **Result**
 
-This is a sentence with some maths $a+b = 2$ in latex. You can also directly write latex like
+This is a sentence with some math in LaTeX: $a+b = 2$.
 
 This equation in this sentence will be centered @a+b = 2@ and take a whole line.
 
@@ -35,7 +34,7 @@ This equation in this sentence will be centered @a+b = 2@ and take a whole line.
 
 ## Rmd file
 
-A `.Rmd` file may looks like this.
+A `.Rmd` file may look like this, while I included some syntax you may use.
 
 <pre><code class="language-md"
 >---
@@ -52,17 +51,16 @@ output: html_document
 
 ![alternative text](/path/to/image)
 
-This is a sentence with some maths $a+b = 2$ in latex.
-You can also directly write latex like
+This is a sentence with some math in LaTeX: $a+b = 2$.
 
-This equation in this sentence will be centered $$a+b = 2$$ and take a whole line.
+The equation in this sentence will be centered $$a+b = 2$$ and take a whole line.
 
 You can also use *italic* and **bold**.
 
 > a quote
 
 ```{r}
-Code en R
+Code in R
 ```</code></pre>
 
 <hr class="sl">

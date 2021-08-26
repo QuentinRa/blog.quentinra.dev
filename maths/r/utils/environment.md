@@ -55,7 +55,7 @@ for (i in ls()) { print(paste(i,"=",eval(as.symbol(i)))) }
 
 ## Saves
 
-You can use theses to save your variables
+You can use these to save your variables
 
 * **save(x, y, ..., file="x.rdata")**: save x, y,... in a file x.rdata
 * **load("x.rdata")**: load variables in x.rdata into the environment

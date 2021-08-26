@@ -1,6 +1,6 @@
 # R programming
 
-R is a language that may be helpful to do so mathematics. We will use it in other course such as **Statistics**, **Matrices**,  **Numerical analysis** or **Optimization**.
+R is a language that may be helpful to do mathematics. We will use it in other course such as **Statistics**, **Matrices**,  **Numerical analysis** or **Optimization**.
 
 You can use other languages such as Python, Julia, OCaml, according to what you want to do.
 
@@ -8,20 +8,20 @@ You can use other languages such as Python, Julia, OCaml, according to what you 
 
 # Introduction
 
-File extension is ``.R`` but we also write ``.Rmd`` files that are file with documentation and runnable R code. You may also directly run some code in the console.
+The file extension is `.R` but we also write `.Rmd` files that are files with documentation and runnable R code. You may also directly run some code in the console.
 
 Most people code in R using [R Studio](https://www.rstudio.com/), but I will use [R plugin for IntelliJ](https://plugins.jetbrains.com/plugin/6632-r-language-for-intellij) that working exactly the same as R Studio (same interface elements, console, etc.) but in IntelliJ.
 
-You may have to install package or libraries in the future, simply do
+You may have to install packages or libraries in the future, simply do
 
-* install a library : ``install.packages("name")``
-* **load a library** (runtime) : ``library("name");``
+* install a library : `install.packages("name")`
+* **load a library** (runtime) : `library("name");`
 
 <hr class="sr">
 
 ## Basic course
 
-You can check this fast course to learn the basic of R without details [Learn R in 5 minutes](5min.md).
+You can check this fast course to learn the basics of R without details [Learn R in 5 minutes](5min.md).
 
 Then here is the real course.
 
@@ -87,11 +87,11 @@ There are a lot of shortened words or it seems so. For instance, you can use <co
 
 ## Advanced notes
 
-Here you can find some course about functions that you might use or not.
+Here you can find some notes about functions that you might use (mainly in statistics).
 
 * [Environment](utils/environment.md)
 * [Files](utils/files.md)
-* [Maths](utils/maths.md)
+* [Maths](utils/math.md)
 * [Plots](utils/plot.md)
 
 <hr class="sr">

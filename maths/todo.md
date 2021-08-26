@@ -9,6 +9,7 @@ leading/principal minor https://en.wikipedia.org/wiki/Minor_(linear_algebra).
 - r
   - https://adv-r.hadley.nz/
   - http://pwer21c.github.io/
+  - formulas
   - https://fxjollois.github.io/cours-2016-2017/complements-r-tp1.html
   - https://fxjollois.github.io/cours-2016-2017/complements-r-tp2.html
   - https://fxjollois.github.io/cours-2016-2017/complements-r.html

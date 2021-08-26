@@ -1,8 +1,8 @@
-# Maths
+# Math
 
 [Go back](../index.md)
 
-This page list functions that you may use when doing some maths. Each course using R will give you more function.
+This page list functions that you may use when doing some math. Each course using R will give you more functions/explanations.
 
 <hr class="sl">
 
