@@ -2,7 +2,7 @@
 
 [Go back](..#distributions)
 
-The distribution is the most important one, also called **Normal** distribution/``Loi normale``, **Gaussian** distribution/``Loi gaussienne`` and Laplace–Gauss distribution/``Loi de Laplace-Gauss``. The short name is $N(\mu, \sigma^2)$.
+The distribution is the most important one, also called **Normal** distribution/`Loi normale`, **Gaussian** distribution/`Loi gaussienne` and Laplace–Gauss distribution/`Loi de Laplace-Gauss`. The short name is $N(\mu, \sigma^2)$.
 
 * $\mu$ (mu) is the mean ($\mathbb{E}(X)$)
 * $\sigma$ (sigma) is the deviation around the mean,
@@ -19,12 +19,9 @@ So we have
 
 ## Standard normal distribution
 
-The standard normal distribution/`loi normale centrée réduite`
-is a normal distribution with $\mu=0$ and $\sigma=1$
-giving us $N(0,\ 1)$.
+The standard normal distribution/`loi normale centrée réduite` is a normal distribution with $\mu=0$ and $\sigma=1$ giving us $N(0,\ 1)$.
 
-We can create a new variable $Y \sim N(0,\ 1)$
-from X with the following formula ()
+We can create a new variable $Y \sim N(0,\ 1)$ from X with the following formula ()
 
 @
 Y \sim \frac{X-\mu}{\sigma}
@@ -53,15 +50,9 @@ You already know some of them but here is a recap
 * $\mathbb{P}(X \ge c) \Leftrightarrow \mathbb{P}(X \gt c)$
 * $\mathbb{P}(X \ge c) = 1 - \mathbb{P}(X \le c)$
 * $\phi(0.5) = 0$
-* $\phi(-x) = 1 - \phi(x)$ (**note that even if you can find 
-  is a table for $x \lt 0$, you are only given the table with $x \ge 0$**
-  so use this)
+* $\phi(-x) = 1 - \phi(x)$ (**note that even if you can find is a table for $x \lt 0$, you are only given the table with $x \ge 0$** so use this)
 
-And now, you need to use this table to calculate
-$\phi(x)$.
-Note that the value at the first line (ex: 0.0)
-and the first column (ex: 0.00) is
-the result for $\phi(0.0 + 0.00)$.
+And now, you need to use this table to calculate $\phi(x)$. Note that the value at the first line (ex: 0.0) and the first column (ex: 0.00) is the result for $\phi(0.0 + 0.00)$.
 
 * [wikipedia](https://en.wikipedia.org/wiki/Standard_normal_table)
 * [another one as pdf here](https://www.math.arizona.edu/~jwatkins/normal-table.pdf)
@@ -83,9 +74,7 @@ We know that
 \alpha = \mathbb{P}(X \le k) = F_X^{-1}(\alpha)
 @
 
-so given an alpha, we need to evaluate
-$F_X^{-1}(\alpha)$ to find the k giving this alpha.
-For a normal distribution, it's easier since we have
+so given an alpha, we need to evaluate $F_X^{-1}(\alpha)$ to find the k giving this alpha. For a normal distribution, it's easier since we have
 
 @
 F_X^{-1}(\alpha) = \mu + \sigma * \phi^{-1}(\alpha)
@@ -93,16 +82,9 @@ F_X^{-1}(\alpha) = \mu + \sigma * \phi^{-1}(\alpha)
 
 As for $\phi^{-1}(\alpha)$
 
-* if $\alpha \ge 0.5$, you simply need to find
-  the z (sum of line+column) in the table
-  associated with the closest value of $\alpha$
+* if $\alpha \ge 0.5$, you simply need to find the z (sum of line+column) in the table associated with the closest value of $\alpha$
 * else $\phi^{-1}(\alpha) = -\phi(1-\alpha)$
 
-For instance, if $\alpha = 0.95$, then you need
-to search the closest value in the table. We
-got $\phi(1.64)=0.9495$ and $1.65=0.9505$ giving
-us $k \in [1.64,1.65]$.
+For instance, if $\alpha = 0.95$, then you need to search the closest value in the table. We got $\phi(1.64)=0.9495$ and $1.65=0.9505$ giving us $k \in [1.64,1.65]$.
 
-If $\alpha = 0.05$, then we have
-$\phi^{-1}(0.05) = -\phi(1-0.05) = -\phi(0.95)$
-so $k \in [-1.65,-1.64]$.
+If $\alpha = 0.05$, then we have $\phi^{-1}(0.05) = -\phi(1-0.05) = -\phi(0.95)$ so $k \in [-1.65,-1.64]$.

@@ -2,9 +2,7 @@
 
 [Go back](..#convergence)
 
-In French, it's `Convergence en loi`.
-The sequence $X_n$ converges in distribution to
-a random variable X
+In French, it's `Convergence en loi`. The sequence $X_n$ converges in distribution to a random variable X
 
 @
 \forall{x} \in X(\Omega),\ \lim_{n \to+ \infty} F_n(x) = F(x)

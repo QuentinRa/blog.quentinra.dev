@@ -2,7 +2,7 @@
 
 [Go back](..#joint-probability)
 
-In French it's called ``Loi de probabilité conditionnelle``, ``distribution conditionnelle`` or `Loi conditionnelle`. This is the probability of a variable taking a value, given that another variable took a value.
+In French it's called `Loi de probabilité conditionnelle`, `distribution conditionnelle` or `Loi conditionnelle`. This is the probability of a variable taking a value, given that another variable took a value.
 
 <hr class="sl">
 

@@ -41,7 +41,7 @@ We call **support of X** $\bigtriangleup_X$ or $X(\Omega)$ the domain of the dis
 
 When $\Omega$ is a finite set, then we are using discrete probabilities. That means the support is in $\mathbb{N}$ or $\mathbb{Z}$.
 
-We are defining $\mathbb{P}(X=k)$ the probability that a discrete random variable (``variable aléatoire discrète``, v.a.d.) $X$ is taking the value $k$.
+We are defining $\mathbb{P}(X=k)$ the probability that a discrete random variable (`variable aléatoire discrète`, v.a.d.) $X$ is taking the value $k$.
 
 * We could write $P(X = 1) = y$ for a dice where y is the probability that we got 1 (<span class="tms">it's 1 out of 6 so y=1/6</span>).
 * we may add a number $w$: $\mathbb{P}(X_w=k)$ if someone is using lazy naming like $X_1$, $X_2$, ...
@@ -73,7 +73,7 @@ When $\Omega$ isn't finite, then we are using continuous probabilities. That mea
 
 The probability of taking a value is 0 for a continuous probability: $P(X=k)=0$. That's because theses elementary events are converging to 0 because the sum of all elementary events is converging to 1.
 
-We need to introduce the **(probability) density function** (PDF) or ``fonction de densité`` $f_X(x)$ (or $f(x)$). The function is defined by
+We need to introduce the **(probability) density function** (PDF) or `fonction de densité` $f_X(x)$ (or $f(x)$). The function is defined by
 
 <div>
 \[
@@ -126,7 +126,7 @@ and for continuous variables, by
 = \int_{a}^{b} \int_{c}^{d} f_{X,Y}(x, y)\ dx\ dy
 @
 
-This notion can be extended to n variables. In French, we are calling 2 variables a ``couple`` of random variables while we are calling n variables a vector/`vecteur` of random variables.
+This notion can be extended to n variables. In French, we are calling 2 variables a `couple` of random variables while we are calling n variables a vector/`vecteur` of random variables.
 
 The name Bi-variate distribution is used for the joint distribution of two variables. The opposite would be Multi-variate distribution.
 
@@ -139,7 +139,7 @@ The name Bi-variate distribution is used for the joint distribution of two varia
 
 ## Distributions
 
-Here are some well-known distributions (Functions/Laws also called ``Fonctions`` or ``Lois`` in French)
+Here are some well-known distributions (Functions/Laws also called `Fonctions` or `Lois` in French)
 
 We usually write $X \sim L$ that you should read as "X follows a L distribution" (with L a distribution like Poisson/...).
 
@@ -175,7 +175,7 @@ We 4 notions of convergence
 * [Convergence in distribution](limit/dist.md)
 * [Convergence in (quadratic/square) mean](limit/mean.md)
 
-And according to the Central limit theorem/``Théorème de la limite centrale``, a sequence of random variables when $n \to +\infty$ converges to a normal distribution.
+And according to the Central limit theorem/`Théorème de la limite centrale`, a sequence of random variables when $n \to +\infty$ converges to a normal distribution.
 
 <hr class="sl">
 
