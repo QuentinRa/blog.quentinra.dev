@@ -50,22 +50,18 @@ Then the minor would be  $\Delta_{i}=det(A_{i})$ giving us something like
 
 Then the matrix is
 
-<ul>
-    <li><b>positive definite</b>: <span>\(\forall k,\quad \Delta_{k}>0\)</span></li>
-    <li><b>positive semi-definite</b>: <span>\(\forall k,\quad (-1)^k \Delta_{k}>0\)</span></li>
-    <li><b>negative definite</b>: <span>\(\forall k < n,\quad \Delta_{k}>0 \text{. and } \Delta_{n}=0\)</span></li>
-    <li><b>negative semi-definite</b>: <span>\(\forall k < n,\quad (-1)^k\Delta_{k}>0 \text{. and } \Delta_{n}=0\)</span></li>
-    <li><b>indefinite</b>: <span>\(\Delta_{n} < 0\)</span> and the dimension n is pair</li>
-</ul>
+* **positive definite**: $\forall k,\quad \Delta_{k}>0$
+* **positive semi-definite**: $\forall k,\quad (-1)^k \Delta_{k}>0$
+* **negative definite**: $\forall k < n,\quad \Delta_{k}>0 \text{. and } \Delta_{n}=0$
+* **negative semi-definite**: $\forall k < n,\quad (-1)^k\Delta_{k}>0 \text{. and } \Delta_{n}=0$
+* **indefinite**: $\Delta_{n} < 0$ and the dimension n is pair
 
 Some help for matrix 2x2
 
-<ul>
-    <li>\(\Delta_{1} \gt 0 \text{ and } \Delta_{2} \gt 0 \) : minimum local</li>
-    <li>\(\Delta_{1} \gt 0 \text{ and } \Delta_{2} \lt 0 \) : saddle point</li>
-    <li>\(\Delta_{1} \lt 0 \text{ and } \Delta_{2} \gt 0 \) : maximum local</li>
-    <li>\(\Delta_{1} \lt 0 \text{ and } \Delta_{2} \lt 0 \) : saddle point</li>
-</ul>
+* $\Delta_{1} \gt 0 \text{ and } \Delta_{2} \gt 0$: minimum local
+* $\Delta_{1} \gt 0 \text{ and } \Delta_{2} \lt 0$: saddle point
+* $\Delta_{1} \lt 0 \text{ and } \Delta_{2} \gt 0$: maximum local
+* $\Delta_{1} \lt 0 \text{ and } \Delta_{2} \lt 0$: saddle point
 
 <hr class="sl">
 

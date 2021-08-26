@@ -43,24 +43,33 @@ f(x, y) = 2x^2 + y^2 − 2xy + 4x
 </p>
 
 <blockquote class="spoiler">
-<p>Let's calculate our gradient</p>
+
+Let's calculate our gradient
+
 <ul>
     <li class="pb-3">\(\frac{\partial f}{\partial x} = 4x + 0 + - 2 * 1 * y + 4 = 4x -2y + 4\)</li>
     <li>\(\frac{\partial f}{\partial y} = 2 * 0 + 2y + - 2 * x * 1 + 0 = 2y-2x\)</li>
 </ul>
 
-<p>So we have the gradient
-\[ \nabla f(x,y) = \begin{pmatrix}4x -2y + 4\\2y-2x\end{pmatrix} \] </p>
+<p>
+So we have the gradient
+\[
+\nabla f(x,y) = \begin{pmatrix}4x -2y + 4\\2y-2x\end{pmatrix}
+\] 
+</p>
 
 Then round 2, the hessian
 
-<ul>
-<li>0,0 in x: \(4−0+0  = 4\)</li>
-<li>0,0 in y: \(0−2∗1 = -2\)</li>
-<li>1,0 in x: \(0 -2 * 1 + 0 = -2\)</li>
-<li>1,0 in y: \(2*1-0  = 2\)</li>
-</ul>
+* 0,0 in x: $4−0+0  = 4$
+* 0,0 in y: $0−2∗1 = -2$
+* 1,0 in x: $0 -2 * 1 + 0 = -2$
+* 1,0 in y: $2*1-0  = 2$
 
-<p>So we have the hessian \[ Hf(x,y)=\begin{pmatrix}4&-2\\-2&2\end{pmatrix} \] I hope you took the time to do this easy one!
+<p>
+So we have the hessian
+\[
+Hf(x,y)=\begin{pmatrix}4&-2\\-2&2\end{pmatrix}
+\]
+I hope you took the time to do this easy one!
 </p>
 </blockquote>

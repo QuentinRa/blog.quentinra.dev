@@ -12,25 +12,15 @@ So here you will have
 
 ## the problem
 
-We got a function ``f`` and will try to minimize it. If you want to maximize
-a function ``g`` then that's the same as minimizing `f = -g` (trace some function
-then reverse it with - and you will see it). We will minimize instead of maximizing
-since a lot of algorithms are made for minimizing rather than maximizing.
+We got a function `f` and will try to minimize it. If you want to maximize a function `g` then that's the same as minimizing `f = -g` (trace some function then reverse it with - and you will see it). We will minimize instead of maximizing since a lot of algorithms are made for minimizing rather than maximizing.
 
-Before starting, you need to check that the ``function`` got a minimum!
-That's the case
+Before starting, you need to check that the `function` got a minimum! That's the case
 
-* if ``f`` is continuous on X (a compact space)
-* if ``f`` is a coercive function
-* if the limit in +infinite of ``f`` tends to a value, a.k.a. we got a lower bound
+* if `f` is continuous on X (a compact space)
+* if `f` is a coercive function
+* if the limit in +infinite of `f` tends to a value, a.k.a. we got a lower bound
 
-<div>
-Since we are manipulating a function, the minimum is a "point", for a
-function with one parameter that's x,y. If we got 3 parameters that's x,y,z, etc.
-We will note this vector of coordinates
-<span>\(x^*\)</span>. But we will find different kinds of "points" using our
-methods.
-</div>
+Since we are manipulating a function, the minimum is a "point", for a function with one parameter that's x,y. If we got 3 parameters that's x,y,z, etc. We will note this vector of coordinates $x^*$. But we will find different kinds of "points" using our methods.
 
 <br>
 
@@ -41,11 +31,7 @@ methods.
 
 ## unconstrained optimization
 
-Here are some methods used in unconstrained optimization,
-please **note** that some constrained optimization problems
-may be solved using unconstrained optimization methods,
-and if you got more than one result, then check the conditions
-or you will have to do a constrained optimization method.
+Here are some methods used in unconstrained optimization, please **note** that some constrained optimization problems may be solved using unconstrained optimization methods, and if you got more than one result, then check the conditions or you will have to do a constrained optimization method.
 
 * [Hessian/Gradient](uo/hessian.md)
 * [Using the gradient/hessian](uo/use-hessian.md)
@@ -71,8 +57,7 @@ Here are some constrained optimization methods.
 
 ## optimization: examples in R
 
-Here may not be the language that you would use to do
-optimization. Still, here you have some examples.
+Here may not be the language that you would use to do optimization. Still, here you have some examples.
 
 ```r
 function_to_optimize <- function(param) {
@@ -102,8 +87,7 @@ if (r$convergence > 0){
 > <pre class="mb-0">minimum: -4
 > hessian: (4, -2; -2, 2)
 > par: -2 -2</pre>
-> Note that this is the values we found a while
-> back.
+> Note that this is the values we found a while back.
 
 We can do some verifications
 
