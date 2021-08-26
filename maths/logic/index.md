@@ -1,14 +1,14 @@
 # Logic
 
-Mathematical logic is useful in many ways. First of all, it led to globalize theory: in several disciplines linked to mathematics or IT, if you want to prove an hypothesis or develop it, you (have to) use logic.
+Mathematical logic is useful in many ways. First, it led to globalize theory: in several disciplines linked to mathematics or IT, if you want to prove a hypothesis or develop it, you (have to) use logic.
 
-In our case, it enables to verify properties ?? or algorithms. By the way, logic is well-known through automated theorem proving, expert system or proof assistant. For instance, the four color theorem (cf graph) which states that only four colors are needed to color the regions of any map so that no two adjacent (nearby) regions have the same color was proved by a computer.
+In our case, it enables us to verify properties or algorithms. By the way, logic is well-known through automated theorem proving, expert systems, or proof assistants. For instance, the four-color theorem (cf graph) which states that only four colors are needed to color the regions of any map so that no two adjacent (nearby) regions have the same color was proved by a computer using logic.
 
 <hr class="sl">
 
 ## Introduction
 
-You will start with basic knowledge as Structural induction (`induction`), Semantics of logic (Boolean algebra, Truth table, ...) and a simple version of natural deduction. Then, you'll head for the centrepiece: First-order logic.
+You will start with basic knowledge such as Structural induction (`induction`), Semantics of logic (Boolean algebra, Truth table, ...), and a simple version of natural deduction. Then, you'll head for the centerpiece: First-order logic.
 
 <hr class="sr">
 
@@ -21,7 +21,7 @@ So <$\mathcal{B},\mathcal{K}$> is a set created by induction, the smallest set E
 * $\mathcal{B} \subset E$
 * $f$ an $n_{f}$-ary function symbol and $x_{1}, \cdots, x_{n_{f}} \in E$, then $f(x_{1}, \cdots, x_{n_{f}}) \in E$ too
 
-**Proof by induction**: Let's consider an hypothesis $P$. To demonstrate that all the elements of <$\mathcal{B},\mathcal{K}$> satisfy $P$, you have just to verify that:
+**Proof by induction**: Let's consider a hypothesis $P$. To demonstrate that all the elements of <$\mathcal{B},\mathcal{K}$> satisfy $P$, you have just to verify that:
 
 * $\forall x \in \mathcal{B}$, $P(x)$ is satisfied
 * $\forall f \in \mathcal{K}$ with arity $n_{f}$ and $\forall x_{1}, \cdots, x_{n_{f}} \in E$ so that $P(x_{1}), \cdots, P(x_{n_{f}})$ are satisfied, $P(x_{1}, \cdots, x_{n_{f}})$ is also satisfied.
@@ -41,7 +41,7 @@ Here is given the truth table of basic operations:
 * $\Rightarrow$ for **IMPLIES** (=implication)
 * $\neg$ for **NOT** (=negation)
 
-$x$ and $y$ are propositional variable of whom you give values $\in \{0,1\}$. Improperly, $0$ stands for **FALSE** and $1$ for **TRUE**. So, as you can see, the truth table indicates the value of each basic operations according to the values of $x$ and $y$.
+$x$ and $y$ are propositional variables of whom you give values $\in \{0,1\}$. $0$ stands for **FALSE** and $1$ for **TRUE**. So, as you can see, the truth table indicates the value of each basic operation according to the values of $x$ and $y$.
 
 | $x$ | $y$ | $x \vee y$ | $x \wedge y$ | $x \Rightarrow y$ | $\neg x$ |
 |---|---|---|---|---|---|
@@ -52,15 +52,15 @@ $x$ and $y$ are propositional variable of whom you give values $\in \{0,1\}$. Im
 
 ### Propositional calculus
 
-$X=\{x_1, \cdots, x_n\}$ is an infinite set of propositional variable. The set of formulas $\mathcal{F}$ is inductively defined: * Any propositional variable is a formula
+$X=\{x_1, \cdots, x_n\}$ is an infinite set of propositional variables. The set of formulas $\mathcal{F}$ is inductively defined: * Any propositional variable is a formula
 
 * $\perp$ is a formula
 * If $F$ is a formula, then $\neg F$ too
-* If $F$ and $G$ are formulas, then $F \wedge G$, $F \vee G$ and $F \Rightarrow G$ are also formulas
+* If $F$ and $G$ are formulas, then $F \wedge G$, $F \vee G$, and $F \Rightarrow G$ are also formulas
 
 Remark: Notice that $F \Leftrightarrow G$ has the same signification that ($F \Rightarrow G$) $\wedge$ ($G \Rightarrow F$).
 
-Abusively, an interpretation $I$ is a function which gives the value of a formula. Furthermore, interpretations have some interesting properties ??:
+Abusively, an interpretation $I$ is a function that gives the value of a formula. Furthermore, interpretations have some interesting properties ??:
 
 * $I(\perp)=0$
 * If $F$ is a formula, then $I(\neg F)=\neg F$
@@ -74,13 +74,13 @@ Abusively, an interpretation $I$ is a function which gives the value of a formul
 
 ## Natural deduction
 
-Your goal is to demonstrate that something is true. You will start from the conclusion=what you think is true and using Sequent calculus / `Séquents prouvables`, you will aim to split your conclusion into axioms / `axiomes` (=something always true).
+Your goal is to demonstrate that something is true. You will start from the conclusion=what you think is true and, using Sequent calculus / `Séquents prouvables`, you will aim to split your conclusion into axioms / `axiomes` (=something always true).
 
 We are defining F, G, H as propositions and $\Gamma$ a set of propositions. We will use the notation
 
 @\frac{Assumptions}{Conclusion}@
 
-Everything at the left of $\vdash$ is true, at first, you got nothing here, and your expression at the right of $\vdash$ but your goal will be to move as many propositions as possible inside Gamma using the sequent calculus then when you can, you need to try to get axioms (the sequent ax) for each expression with a $\vdash$.
+Everything at the left of $\vdash$ is true, at first, you got nothing here, and your expression at the right of $\vdash$, but your goal will be to move as many propositions as possible inside Gamma using the sequent calculus then when you can, you need to try to get axioms (the sequent ax) for each expression with a $\vdash$.
 
 <table class="table table-striped table-bordered table-dark">
     <tr>
