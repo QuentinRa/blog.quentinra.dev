@@ -2,9 +2,7 @@
 
 [Go back](../index.md)
 
-This page list functions that you may use
-when doing some maths. Each course using R will give
-you more function.
+This page list functions that you may use when doing some maths. Each course using R will give you more function.
 
 <hr class="sl">
 
@@ -30,8 +28,7 @@ And you may use
 
 * **seq(from = x, to = y, length = n)**
 
-Create $n$ values inside $[x,y]$. It's something like
-$step=\frac{y-x}{n-1}$ then you got 
+Create $n$ values inside $[x,y]$. It's something like $step=\frac{y-x}{n-1}$ then you got 
 
 <div>
 \[
@@ -47,9 +44,7 @@ $step=\frac{y-x}{n-1}$ then you got
     * **subset(d, var > 10, var)**
 * **cut(x, breaks = v,include.lowest = TRUE)**
 
-Cut a vector in intervals. Like 
-$v=c(1,3,5)$ will be
-$[min,1] \cup ]1,3] \cup ]3,5]$.
+Cut a vector in intervals. Like  $v=c(1,3,5)$ will be $[min,1] \cup ]1,3] \cup ]3,5]$.
 
 <hr class="sl">
 

@@ -30,8 +30,7 @@ But there is a small difference for booleans's operators
 * **&&**: same as **&** but on a vector, the result is a value and not a vector
 * **||**: same as **|** but on a vector, the result is a value and not a vector
 
-**&&** et **||** are doing a AND only on the first element
-of a vector.
+**&&** et **||** are doing a AND only on the first element of a vector.
 
 ```r
 # generating random values

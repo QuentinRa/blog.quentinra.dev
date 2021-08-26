@@ -8,11 +8,9 @@ You can use other languages such as Python, Julia, OCaml, according to what you 
 
 # Introduction
 
-File extension is ``.R`` but we also write ``.Rmd`` files that are file with documentation
-and runnable R code. You may also directly run some code in the console.
+File extension is ``.R`` but we also write ``.Rmd`` files that are file with documentation and runnable R code. You may also directly run some code in the console.
 
-Most people code in R using [R Studio](https://www.rstudio.com/), but I will use [R plugin for IntelliJ](https://plugins.jetbrains.com/plugin/6632-r-language-for-intellij)
-that working exactly the same as R Studio (same interface elements, console, etc.) but in IntelliJ.
+Most people code in R using [R Studio](https://www.rstudio.com/), but I will use [R plugin for IntelliJ](https://plugins.jetbrains.com/plugin/6632-r-language-for-intellij) that working exactly the same as R Studio (same interface elements, console, etc.) but in IntelliJ.
 
 You may have to install package or libraries in the future, simply do
 
@@ -23,8 +21,7 @@ You may have to install package or libraries in the future, simply do
 
 ## Basic course
 
-You can check this fast course to learn the basic of R without details [Learn R
-in 5 minutes](5min.md).
+You can check this fast course to learn the basic of R without details [Learn R in 5 minutes](5min.md).
 
 Then here is the real course.
 
@@ -66,17 +63,16 @@ cat(paste(x, y), sep = "\n")
 </td></tr>
 <tr><td>
 
-You will use this a lot, you can **see the help for a function** with ``?my_function``
-* examples with ``examples(my_function)``
-* args with ``args(my_function)``
-* source code with ``body(my_function)``
+You will use this a lot, you can **see the help for a function** with `?my_function`
+* examples with `examples(my_function)`
+* args with `args(my_function)`
+* source code with `body(my_function)`
 </td></tr>
 <tr><td>
 Open the documentation either in your IDE or your browser with <code>help.start()</code>.
 </td></tr>
 <tr><td>
-Either look for or load a dataset
-with <code>data()/data('dataset')</code>.
+Either look for or load a dataset with <code>data()/data('dataset')</code>.
 </td></tr>
 <tr><td>
 In R, when you are making a generalization of something, you usually name it <code>name.generalization_name</code>. For instance, if you got a vector of numbers <code>data$numbers</code>, then you would have <code>data$numbers.pos</code>. Same for functions like <code>mean</code>, <code>mean.test</code>,

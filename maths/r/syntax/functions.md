@@ -21,7 +21,7 @@ Where
 * modulo: is the function name
 * x: is a parameter
 * mod: is another parameter
-* and ``return(x %% mod)`` is the result of the function
+* and `return(x %% mod)` is the result of the function
 
 You can call the function like this
 
@@ -39,7 +39,7 @@ modulo(5, mod=3)
 
 ## Return
 
-A function in R must returns something. In fact, you do not need to use ``return`` since by default in R
+A function in R must returns something. In fact, you do not need to use `return` since by default in R
 
 > A bloc is evaluated as the evaluation of the last expression
 
@@ -51,15 +51,13 @@ modulo <- function (x, mod){
 }
 ```
 
-And the returned value is the evaluation of the last expression ``x %% mod``.
+And the returned value is the evaluation of the last expression `x %% mod`.
 
 <hr class="sl">
 
 ## Default values
 
-A lot of the times in R you got functions
-with a lot of arguments (like 7). We are using default
-values for our arguments using ``= value``.
+A lot of the times in R you got functions with a lot of arguments (like 7). We are using default values for our arguments using `= value`.
 
 ```r
 modulo <- function (x, mod=2) {
@@ -79,9 +77,7 @@ modulo(5)
 
 ## Warnings, errors
 
-And finally, you may want to raise an
-error message/warning message. You can do this
-using ``warning/stop``.
+And finally, you may want to raise an error message/warning message. You can do this using `warning/stop`.
 
 ```r
 modulo <- function (x, mod=2){
@@ -89,8 +85,9 @@ modulo <- function (x, mod=2){
     warning(paste(mod, "must be >= 2"));
     mod <- 2
   }
-  # on pourrait ne pas mettre return car
-  # x %% mod retourne déjà le résultat
+  # we could omit return
+  # as the block would be 
+  # as x %% mod
   return(x %% mod)
 }
 ```

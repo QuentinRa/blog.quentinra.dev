@@ -8,8 +8,7 @@ All variables, functions, ... are part of our environment. This is not really us
 
 ## List/Destroy variables
 
-You can list everything using ``ls`` and clear/destroy
-a variable using ``rm``.
+You can list everything using `ls` and clear/destroy a variable using `rm`.
 
 **Example**
 
@@ -34,11 +33,9 @@ rm(list = ls())
 
 ## What are your variables?
 
-You can use that or **use your IDE** to check what
-variables, functions, ... got created.
+You can use that or **use your IDE** to check what variables, functions, ... got created.
 
-That should not be used since you are using an IDE
-but well just in case
+That should not be used since you are using an IDE but well just in case
 
 ```r
 # print all variables values
