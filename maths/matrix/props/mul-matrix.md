@@ -50,3 +50,20 @@ As for an explanation
 \sum_{i=1}^n a_{{\color{red}1},i} * b_{i, \color{blue}{1}}
 \]
 </div>
+
+<hr class="sl">
+
+## Code in R
+
+```r
+# matrix 3x3, with (1,2,3\\4,5,6\\7,8,9)
+A <- matrix(1:9, 3, 3, byrow = TRUE)
+# matrix of 1
+B <- matrix(rep(1, length = 9), 3, 3, byrow = TRUE)
+
+A %*% B
+#       [,1] [,2] [,3]
+# [1,]    6    6    6
+# [2,]   15   15   15
+# [3,]   24   24   24
+```

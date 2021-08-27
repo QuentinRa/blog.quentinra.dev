@@ -20,3 +20,20 @@ As long as the two matrices have the same number of lines and columns (=dimensio
  \end{pmatrix}\end{split}
 \]
 </div>
+
+<hr class="sl">
+
+## Code in R
+
+```r
+# matrix 3x3, with (1,2,3\\4,5,6\\7,8,9)
+A <- matrix(1:9, 3, 3, byrow = TRUE)
+# matrix of 1
+B <- matrix(rep(1, length = 9), 3, 3, byrow = TRUE)
+
+A+B
+# 		[,1] [,2] [,3]
+# [1,]    2    3    4
+# [2,]    5    6    7
+# [3,]    8    9   10
+```

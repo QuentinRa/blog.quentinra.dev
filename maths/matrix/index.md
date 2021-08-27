@@ -144,6 +144,9 @@ A^T=\ \begin{pmatrix}
 \end{pmatrix}
 \]
 </div>
+
+Let $A$ a matrix, in **R** you can transpose $A$ with
+<code>t(A)</code>.
 </td>
 <td>
 
@@ -162,15 +165,14 @@ A_{1,2}=\ \begin{pmatrix}
 `Matrice symétrique` ($\mathbb{R}$) <br>
 `Matrice hermitienne` ($\mathbb{C}$) <br>
 
-A matrix equals to its transpose.
+This is a matrix equals to its transpose.
 </td>
 <td>
 
 `Matrice orthogonale` ($\mathbb{R}$) <br>
 `Matrice unitaire` ($\mathbb{C}$) <br>
 
-A matrix whose inverse is
-equals to its transpose.
+This is a matrix whose inverse is equals to its transpose.
 </td>
 </tr>
 </tbody>
@@ -262,6 +264,7 @@ The determinant of $A$, $det(A)=|A|$ is a value that is indicating if we can inv
   * using the [simplified formula for 2x2 matrix](inversion/2x2.md)
   * using the [cofactor expansion](inversion/minor.md)
   * using [GAUSS elimination](inversion/gauss-det.md)
+  * in **R**, use the function `det` as follow `det(A)`
 
 Then, once you have checked the determinant, you can invert a matrix using
 
