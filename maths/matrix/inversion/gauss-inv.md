@@ -56,4 +56,21 @@ A=\begin{pmatrix} 3 & -2 & 4 \\ 2 & -4 & 5 \\1 & 8 & 2\end{pmatrix}
 \]
 </div>
 
-The left matrix is $A^{-1}$.
+The second matrix is $A^{-1}$.
+
+<hr class="sl">
+
+## Code in R
+
+```r
+library('MASS') # fractions
+
+A <- matrix(c(3,2,1,-2,-4,8,4,5,2), nrow = 3, ncol = 3)
+
+# solve and convert to fractions
+fractions(solve(A))
+#     [,1]   [,2]   [,3]  
+# [1,]   8/11  -6/11  -1/11
+# [2,]  -1/66  -1/33   7/66
+# [3,] -10/33  13/33   4/33
+```
