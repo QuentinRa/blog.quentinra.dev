@@ -6,7 +6,7 @@
 
 This page is a **summary of the syntax that we are using** in Markdown, and how it is rendered **on this website**.
 
-**Version**: <a href="https://github.com/lgs-games/memorize/tree/master/.github/MARKDOWN_SYNTAX.md" target="_blank" rel="noopener noreferrer">1.3.0</a>
+**Version**: <a href="https://github.com/lgs-games/memorize/tree/master/.github/SATIC_PAGES/MARKDOWN_SYNTAX.md" target="_blank" rel="noopener noreferrer">1.3.0</a>
 
 <div class="table-of-contents w-25 mx-auto">
 
