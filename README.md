@@ -46,15 +46,6 @@ Last updated: 2021-08-27
 <summary> <b>Website tasks</b></summary>
 
 * **Guidelines**
-* [ ] add go back to #titleID instead of #linkID
-* [ ] replacing links like [here] by something better
-* [ ] increase courses title length (ex: add programming)
-* [ ] review all pages for SEO
-* [ ] replace HTML tables by Markdown tables
-* [ ] Soft wraps for everyone
-* [ ] replace <code>````</code> by <code>``</code>
-* [ ] check the description for sub pages
-* [ ] check the titles for sub pages
 * [ ] empty alt in the Markdown should be checked/removed
 * [ ] Nested courses files should have the title of the nested course and not the nesting course (ex: UML)
 * **Features**
