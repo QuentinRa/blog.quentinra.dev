@@ -1,6 +1,6 @@
 # Change Log
 
-## v5.0.0 (2021-08-27 - upcoming)
+## v5.0.0 (2021-08-27)
 
 **Note**: I have temporarily disabled some courses, as I have yet to move them to v5.0.0.
 
@@ -11,6 +11,7 @@
 * `feature`: adding [CODEOWNERS](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners) file
 * `feature`: adding the [Markdown syntax reference](https://memorize.be/syntax)
 * `feature`: loading images and files from GitHub
+* `feature`: button to add "co-author"
 
 **Changed**
 
@@ -18,6 +19,7 @@
 * `seo`: the titles and the descriptions of the pages displaying a list of courses, are now inside the JSON
 * `seo`: the description and the title of each file of a course, including the main page, is now generated from the first line of the course and the first header h1.
 * `internal`: preview was replaced by side-by-side, inside the editor
+* `internal`: static pages are now hosted in this repository
 * `rendering`: Markdown tables border is now dark
 
 **Fixed**
