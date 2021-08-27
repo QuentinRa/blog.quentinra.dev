@@ -38,7 +38,7 @@ A summary of the discrete distributions
         </tr>
         <tr>
             <td>Discrete uniform distribution $U([a,b])$</td>
-            <td>All outcome have the same probability.</td>
+            <td>Every outcome has the same probability.</td>
             <td>$\frac{1}{b-a+1}$</td>
             <td>$\frac{a+b}{2}$</td>
             <td>$\frac{(b-a)(b-a+2)}{12}$</td>
@@ -47,7 +47,7 @@ A summary of the discrete distributions
         </tr>
         <tr>
             <td>Discrete uniform distribution $U([1,n])$</td>
-            <td>All outcome have the same probability.</td>
+            <td>Every outcome has the same probability.</td>
             <td>$\frac{1}{n}$</td>
             <td>$\frac{n+1}{2}$</td>
             <td>$\frac{n^2 - 1}{12}$</td>
@@ -112,7 +112,7 @@ and the continuous distributions
     <tbody>
         <tr>
             <td>Continuous uniform distribution $U([a,b])$</td>
-            <td>All outcome have the same probability.</td>
+            <td>Every outcome has the same probability.</td>
             <td>$f_X(x) = \frac{1}{b-a}$</td>
             <td>$\frac{a+b}{2}$</td>
             <td>$\frac{(b-a)^2}{12}$</td>

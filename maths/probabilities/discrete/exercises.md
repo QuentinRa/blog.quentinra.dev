@@ -95,7 +95,7 @@ We are using a test to check if the patient got the disease or not. If got the d
 What we call "Law of total probability"/"`Formule des probabilités totales`" is a tree, considering the 2 cases (here $S$ and $\overline{S}$).
 </blockquote>
 
-2. What's the probability of someone having the decease after two positives tests?
+2. What's the probability of someone having the disease after two positives tests?
 
 <blockquote class="spoiler">
 

@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-A distribution, on an interval $[a,b]$, in which each value have the same probability is an uniform distribution $U([a,b])$.
+A distribution, on an interval $[a,b]$, in which each value has the same probability, is a uniform distribution $U([a,b])$.
 
 * The mass function is $\mathbb{P}(X=k) = \frac{1}{b-a+1}$
 * $\mathbb{E}(X) = \ \frac{a+b}{2}$

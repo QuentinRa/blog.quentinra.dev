@@ -17,9 +17,9 @@ Verify that $f(x) = x * e^{\frac{-x^2}{2}}$ with $x \gt 0$ is a density function
 $x \gt 0$ and $e^t \ge 0$
 so $f(x) \ge 0$.
 
-**2. $f_X$ is continue**
+**2. $f_X$ is continuous**
 
-Both $x$ and $e^t$ are continue.
+Both $x$ and $e^t$ are continuous.
 
 **3. $\int_{-\infty}^{+\infty} f_X(x)dx = 1$** that we can simplify since $x \gt 0$ giving us $\int_{0}^{+\infty} f(x) dx = 1$.
 
@@ -58,9 +58,9 @@ We can consider this a sum of two integrals from 0 to 1 because of the $|x|$ (ab
 
 Since $x \in [0,1]$ then $1-x \ge 0$.
 
-**2. $f_X$ is continue**
+**2. $f_X$ is continuous**
 
-Both $x$ and $1-x$ are continue.
+Both $x$ and $1-x$ are continuous.
 
 **3. $\int_{-\infty}^{+\infty} f_X(x)dx = 1$**
 

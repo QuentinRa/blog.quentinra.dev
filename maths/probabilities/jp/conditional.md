@@ -35,7 +35,7 @@ V(X|Y=y)= \sum_{i=1}^{n} (x_i-\mathbb{E}(X))^2 * \mathbb{P}(X = x_i\ |\ Y = y)
 
 <hr class="sr">
 
-## Conditional Conditional Distribution
+## Continuous Conditional Distribution
 
 The formula changes a bit for continuous variables
 

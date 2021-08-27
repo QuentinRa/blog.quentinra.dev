@@ -8,7 +8,7 @@ The geometric distribution $\mathbb{G}(p)$ is determining the probability of the
 * $\mathbb{E}(X) = \ \frac{1}{p}$
 * $\mathbb{V}(X) = \ \frac{1-p}{p^2}$
 
-> If you didn't understood the distribution function, that was quite easy. If the trial $k$ is the first success, that means that the $k-1$ first trials were failure while the trial $k$ is a success.
+> If you didn't understand the distribution function, that was quite easy. If the trial $k$ is the first success, that means that the $k-1$ first trials were failure while the trial $k$ is a success.
 > 
 > * $(1-p)^{k-1}$: $k-1$ failures
 > * $p$: the success

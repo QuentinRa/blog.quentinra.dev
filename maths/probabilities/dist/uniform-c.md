@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-A distribution, on an interval $[a,b]$, in which each value have the same probability is an uniform distribution $U([a,b])$.
+A distribution, on an interval $[a,b]$, in which each value has the same probability, is a uniform distribution $U([a,b])$.
 
 * The density function is $f_X(x) = \frac{1}{b-a}$
 * $\mathbb{E}(X) = \ \frac{a+b}{2}$
@@ -19,7 +19,7 @@ We are calling standard uniform distribution/`loi uniforme standard` a uniform d
 
 For more information, here is the [wiki](https://en.wikipedia.org/wiki/Continuous_uniform_distribution#Standard_uniform).
 
-Let $F_Y(y)$ be the repartition function of the continuous random variable Y. Then $X = F_Y(y)$ can follow a standard uniform distribution
+Let $F_Y(y)$ be the cumulative distribution function of the continuous random variable Y. Then $X = F_Y(y)$ can follow a standard uniform distribution
 
 @
 X = F_Y(Y) \sim U([0,1])

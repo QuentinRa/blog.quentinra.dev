@@ -8,7 +8,7 @@ In French, it's `Convergence en loi`. The sequence $X_n$ converges in distributi
 \forall{x} \in X(\Omega),\ \lim_{n \to+ \infty} F_n(x) = F(x)
 @
 
-It's that's the case the notation is
+It's that's the case, the notation is
 
 @
 X_n \xrightarrow{d} X

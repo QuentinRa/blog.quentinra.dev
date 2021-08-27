@@ -26,7 +26,7 @@ Note that the cumulative distribution function isn't limited to the support of $
 
 ## Inverse cumulative distribution function
 
-The Inverse cumulative distribution function or Quantile function or `fonction de répartition inverse` is the name given when we are trying the find a $k$ given the wanted result of the function $\alpha$.
+The Inverse cumulative distribution function or Quantile function or `fonction de répartition inverse` is the name given when we are trying to find a $k$ given the wanted result of the function $\alpha$.
 
 @
 \alpha = \mathbb{P}(X \le k) 

@@ -2,9 +2,9 @@
 
 [Go back](..)
 
-It's `Dénombrement` in French. We are using the cardinal a lot so we must be able to count of many elements we got in a set.
+It's `Dénombrement` in French. We are using the cardinal a lot, so we must be able to count of many elements we got in a set.
 
-Let's says we have
+Let's say we have
 
 * a set `E` having `k` elements
 * we are picking `n` elements in `E`

@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-Random variables are said to be independent ($\perp$ perp) if the product of the probabilities if equals to the probability of the events  $X_1, ..., X_n$.
+Random variables are said to be independent ($\perp$ perp) if the product of the probabilities is equals to the probability of the events  $X_1, ..., X_n$.
 
 <div>
 \[

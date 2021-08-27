@@ -38,7 +38,7 @@ G(x) = \prod_{j=1}^{m} \sum_{i=k_j}^{n_j} x^i
 * to $n_j$ (the maximum of times you want this value)
 * once you multiplied and factorized the result, $a$ in $a * x^i$ is the number of distributions for $n=i$.
 
-You may also use the other methods like explained on these websites 
+You may also use the other methods as explained on these websites 
 
 * [math.mit.edu (slides)](https://math.mit.edu/research/highschool/primes/materials/2018/conf/15-1%20Manne.pdf)
 * [openmathbooks (text)](http://discrete.openmathbooks.org/dmoi2/section-27.html)
@@ -47,7 +47,7 @@ You may also use the other methods like explained on these websites
 
 ## Example (1)
 
-Let's say you are rolling two dice. You got $m=2$ and each experiment goes from $1$ to $6$ so you have $k_1=k_2=1$ (min) to $n_1=n_2=6$ (max). We will have 
+Let's say you are rolling two dice. You got $m=2$ and each experiment goes from $1$ to $6$, so you have $k_1=k_2=1$ (min) to $n_1=n_2=6$ (max). We will have 
 
 <div>
 \[
@@ -89,7 +89,7 @@ You have $n=12$ cakes (chocolate, vanilla, strawberry),
 * each person must have at least two flavors
 * and they can't have chocolate more than 4 times
 
-Since we need "at least two", then $k_1=k_2=k_3=2$. Aside from $n_1$, we don't have restrictions on vanilla/strawberry so $n_2=n_3=12$. As for chocolate, $n_1=4$ (since "up to" 4).
+Since we need "at least two", then $k_1=k_2=k_3=2$. Aside from $n_1$, we don't have restrictions on vanilla/strawberry, so $n_2=n_3=12$. As for chocolate, $n_1=4$ (since "up to" 4).
 
 <div>
 \[

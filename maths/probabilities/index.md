@@ -2,8 +2,8 @@
 
 Probabilities are a way to evaluate how much likely something is true, or likely to happens. For instance, if you're playing dice, you may want to know how much likely it is that you got 3 times "6" in a row.
 
-* $\omega$ (small-omega) is an outcome possible <span class="tms">such as 1 for a dice</span>
-* $\Omega$ (big-omega) is a set of all possible outcomes, also called sample/probability space <span class="tms">such as {1,2,3,4,5,6} for a dice or {$\ x \mid x \in [1,6]\ $}</span>.
+* $\omega$ (small-omega) is an outcome possible <span class="tms">(such as 1 for a dice)</span>
+* $\Omega$ (big-omega) is a set of all possible outcomes, also called sample/probability space <span class="tms">(such as {1,2,3,4,5,6} for a dice or {$\ x \mid x \in [1,6]\ $})</span>.
 * $A$ is an event included in <span>$\Omega$. <span class="tms">It's almost everytime defined by a sentence like "the result is pair" giving a set like {2,4,6} for a dice.</span>
 * $\overline{A}$ or $A^c$ means the opposite event of A, called complementary event and read as "not A".
 * $\emptyset$ (empty set) means an impossible event.
@@ -28,7 +28,7 @@ $\mathbb{P}(A)$ means the probability of A happening and that's a value in $[0,1
 * $A \subset B \to \mathbb{P}(A \cap B) = \mathbb{P}(A)$
 * $A \subset B \to \mathbb{P}(A \cup B) = \mathbb{P}(B)$
 
-We call **distribution function**, a strictly positive function where the sum of all values (=probabilities) is 1. It's a function associating each value of $\Omega$ to their probability of happening ($f(x) \to \Omega$). When $x$ is taking finite values, we are using discrete probability otherwise we are using continuous probabilities.
+We call **distribution function**, a strictly positive function where the sum of all values (=probabilities) is 1. It's a function associating each value of $\Omega$ to their probability of happening ($f(x) \to \Omega$). When $x$ is taking finite values, we are using discrete probability otherwise, we are using continuous probabilities.
 
 We call **support of X** $\bigtriangleup_X$ or $X(\Omega)$ the domain of the distribution function of X. The probability outside the support is 0. You can use that to make a sum on the support.
 
@@ -71,7 +71,7 @@ Now practice,
 
 When $\Omega$ isn't finite, then we are using continuous probabilities. That means the support is in $\mathbb{R}$.
 
-The probability of taking a value is 0 for a continuous probability: $P(X=k)=0$. That's because theses elementary events are converging to 0 because the sum of all elementary events is converging to 1.
+The probability of taking a value is 0 for a continuous probability: $P(X=k)=0$. That's because the probability of each elementary event is converging to 0. And, the sum of every elementary event is converging to 1.
 
 We need to introduce the **(probability) density function** (PDF) or `fonction de densité` $f_X(x)$ (or $f(x)$). The function is defined by
 
@@ -88,9 +88,9 @@ or\ \mathbb{P}(x \ge b) = \mathbb{P}(x \gt b) = \int_{-\infty}^{b} f_X(x)dx
 
 The density function **is valid if**
 
-* $\int_{-\infty}^{+\infty} f_X(x)dx = 1$. <span class="tms">Sometimes you have some restrictions like $\lambda>0$ so you can reduce the interval.</span>
+* $\int_{-\infty}^{+\infty} f_X(x)dx = 1$. <span class="tms">Sometimes you have some restrictions like $\lambda>0$, so you can reduce the interval.</span>
 * $\forall{x},\ f_X(x) \ge 0$
-* $f_X$ is continue
+* $f_X$ is continuous
 
 The random variable $X$ is called continuous random variable (`variable aléatoire continue/réelle`).
 
@@ -126,7 +126,7 @@ and for continuous variables, by
 = \int_{a}^{b} \int_{c}^{d} f_{X,Y}(x, y)\ dx\ dy
 @
 
-This notion can be extended to n variables. In French, we are calling 2 variables a `couple` of random variables while we are calling n variables a vector/`vecteur` of random variables.
+This notion can be extended to n variables. In French, we are calling 2 variables a `couple` of random variables, while we are calling n variables a vector/`vecteur` of random variables.
 
 The name Bi-variate distribution is used for the joint distribution of two variables. The opposite would be Multi-variate distribution.
 
@@ -181,7 +181,7 @@ And according to the Central limit theorem/`Théorème de la limite centrale`, a
 
 ## CheatSheet
 
-Here are some sheets that I looked up for you. I didn't read them yet through.
+Here are some sheets that I looked up for you. I didn't read them yet.
 
 * [probability_cheatsheet.pdf](https://www.sas.upenn.edu/~astocker/lab/teaching-files/PSYC739-2016/probability_cheatsheet.pdf)
 * [probability-and-statistics](https://github.com/shervinea/stanford-cme-106-probability-and-statistics)

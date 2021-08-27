@@ -10,4 +10,4 @@ This distribution $B(p)$ represents the probability of $k$ successes with a prob
 * $\mathbb{E}(X) = \ p$
 * $\mathbb{V}(X) = \ p * (1-p)$
 
-A binomial distribution is a repetition of Bernoulli distributions so you should check binomial distribution to understand Bernoulli better.
+A binomial distribution is a repetition of Bernoulli distributions, so you should check binomial distribution to understand Bernoulli better.

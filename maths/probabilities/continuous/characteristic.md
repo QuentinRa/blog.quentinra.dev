@@ -38,7 +38,7 @@ Can be replaced by
 
 ## In probability theory
 
-You can use that when the MGF (moment generating function) does not exists (that's the case for the Cauchy distribution but we didn't use it in practice) or when you have $Y = aX$ or $Y = aX+b$.
+You can use that when the MGF (moment generating function) does not exist (that's the case for the Cauchy distribution, but we didn't use it in practice) or when you have $Y = aX$ or $Y = aX+b$.
 
 The characteristic function is
 

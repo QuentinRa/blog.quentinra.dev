@@ -10,7 +10,7 @@ The expected value / `Espérance` noted $\mathbb{E}(X)$, $\mathbb{E}X$, or $\mat
 \]
 </div>
 
-**Note**: it's the sum for each value the probability of a value by the value.
+**Note**: it's the sum of each value by its probability.
 
 Notes
 

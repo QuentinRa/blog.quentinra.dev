@@ -28,7 +28,7 @@ Y \sim \frac{X-\mu}{\sigma}
 @
 
 * the density function is noted $\phi_X(x)$ (phi) instead of $f_X(x)$
-* the repartition function is noted $\Phi_X(x)$ (Phi) instead of $F_X(x)$
+* the cumulative distribution function is noted $\Phi_X(x)$ (Phi) instead of $F_X(x)$
 
 <hr class="sl">
 
@@ -44,7 +44,7 @@ F_X(c) = \mathbb{P}(X \le c)
 \]
 </div>
 
-You already know some of them but here is a recap
+You already know some of them, but here is a recap
 
 * $\mathbb{P}(X \le c) \Leftrightarrow \mathbb{P}(X \lt c)$
 * $\mathbb{P}(X \ge c) \Leftrightarrow \mathbb{P}(X \gt c)$
@@ -54,8 +54,8 @@ You already know some of them but here is a recap
 
 And now, you need to use this table to calculate $\phi(x)$. Note that the value at the first line (ex: 0.0) and the first column (ex: 0.00) is the result for $\phi(0.0 + 0.00)$.
 
-* [wikipedia](https://en.wikipedia.org/wiki/Standard_normal_table)
-* [another one as pdf here](https://www.math.arizona.edu/~jwatkins/normal-table.pdf)
+* [Wikipedia](https://en.wikipedia.org/wiki/Standard_normal_table)
+* [another one as PDF here](https://www.math.arizona.edu/~jwatkins/normal-table.pdf)
 
 This image is an image from the second link
 
