@@ -1,11 +1,5 @@
 # Todo
 
-definiteness of a matrix
-https://en.wikipedia.org/wiki/Definite_matrix
-MOVE MINORS/... TO MATRIX COURSE
-(maths/optimization/uo/use-hessian.md).
-leading/principal minor https://en.wikipedia.org/wiki/Minor_(linear_algebra).
-
 - r
   - https://adv-r.hadley.nz/
   - http://pwer21c.github.io/

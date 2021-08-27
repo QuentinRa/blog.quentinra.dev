@@ -10,14 +10,15 @@ The steps for the eigendecomposition are
   * the order does not matter
 * Now you got $D$, the eigenvalues are on the diagonal
 * **for each eigenvalue**
-  * solve $A = \lambda x$
+  * you can solve $A - \lambda_n * Id_n = 0$
   * you can write it as a system
 
 <div>
 \[
 \begin{split}\left \{
 \begin{array}{r c l}
-ax + by + ... = \lambda * x \\
+(a_1 - \lambda_n) x + b_1 y + ... = 0 \\
+a_2 x + (b_2 - \lambda_n) y + ... = 0 \\
 ...
 \end{array}
 \right .\end{split}
@@ -27,4 +28,4 @@ ax + by + ... = \lambda * x \\
 * each result (the vector (x,y, ...)) is an eigenvector
 * by concatenating all of your eigenvectors, you get $P$
 * solve $P^{-1}$
-* check $P*D^1*P^{-1}=A$
+* check $P\*D^1\*P^{-1}=A$

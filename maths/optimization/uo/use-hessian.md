@@ -21,57 +21,12 @@ For each hessian, if it's
 * **negative semi-definite**: the point is a maximum global
 * **indefinite**: the point is a saddle point
 
-To find if the hessian is definite/indefinite, you can
-
-1. evaluate each determinant, using the minor of a matrix
-2. check eigenvalues
-
-<hr class="sr">
-
-## Minor of a matrix
-
-<p>
-\begin{split}A= \begin{pmatrix}
-        a_{11} & a_{12} & \cdots & a_{1n} \\
-        a_{21} & a_{22} & \cdots & a_{2n} \\
-        \vdots & \vdots & \ddots & \vdots \\
-        a_{n1} & a_{n2} & \cdots & a_{nn}
-\end{pmatrix}\end{split}
-</p>
-
-Then the minor would be  $\Delta_{i}=det(A_{i})$ giving us something like
-
-<ul>
-<li>\(\Delta_{1}=a_{11}\)</li>
-<li>\(\Delta_{2}=det A_{2}= \begin{pmatrix}a_{11} & a_{12} \\ a_{21} & a_{22}\end{pmatrix} = a_{11} * a_{22} - a_{12} * a_{21}\)</li>
-<li>...</li>
-<li>\(\Delta_{n}=det(A)\)</li>
-</ul>
-
-Then the matrix is
-
-* **positive definite**: $\forall k,\quad \Delta_{k}>0$
-* **positive semi-definite**: $\forall k,\quad (-1)^k \Delta_{k}>0$
-* **negative definite**: $\forall k < n,\quad \Delta_{k}>0 \text{. and } \Delta_{n}=0$
-* **negative semi-definite**: $\forall k < n,\quad (-1)^k\Delta_{k}>0 \text{. and } \Delta_{n}=0$
-* **indefinite**: $\Delta_{n} < 0$ and the dimension n is pairwise
-
-Some help for matrix 2x2
+To find if the hessian the definiteness of a matrix, please check the matrix course. For a matrix 2x2, I noticed that
 
 * $\Delta_{1} \gt 0 \text{ and } \Delta_{2} \gt 0$: minimum local
 * $\Delta_{1} \gt 0 \text{ and } \Delta_{2} \lt 0$: saddle point
 * $\Delta_{1} \lt 0 \text{ and } \Delta_{2} \gt 0$: maximum local
 * $\Delta_{1} \lt 0 \text{ and } \Delta_{2} \lt 0$: saddle point
-
-<hr class="sl">
-
-## Using eigenvalues
-
-* **positive definite**: all eigenvalues > 0
-* **negative definite**: all eigenvalues < 0
-* **positive semi-definite**: almost eigenvalues > 0, one equal = 0
-* **negative semi-definite**: almost eigenvalues < 0, one equal = 0
-* **indefinite**: one > 0 and another < 0
 
 <hr class="sr">
 

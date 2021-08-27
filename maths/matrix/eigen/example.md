@@ -217,6 +217,8 @@ We can create $A^n$
 ```r
 D <- matrix(c(0,0,0,5), 2)
 
+identical(A, P %*% D^1 %*% P.inv)
+# [1] TRUE
 identical(A %*% A, P %*% D^2 %*% P.inv)
 # [1] TRUE
 identical(A %*% A %*% A, P %*% D^3 %*% P.inv)

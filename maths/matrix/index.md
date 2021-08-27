@@ -49,7 +49,9 @@ What's convenient is that you can use a matrix for that because the GAUSS method
 
 ## Named matrices
 
-In French, we will call theses `Matrices remarquables`. The matrix you must remember is called **Identity matrix** (`Matrice identité`) $Id_n$ or $I_n$. This is a diagonal matrix having $1$ on the diagonal, giving us $A_n * Id_n = Id_n * A_n = A_n$.
+In French, we will call theses `Matrices remarquables`.
+
+The matrix **you must remember** is called **Identity matrix** (`Matrice identité`) $Id_n$ or $I_n$. This is a diagonal matrix having $1$ on the diagonal, which mean we have $A_n * Id_n = Id_n * A_n = A_n$. In **R**, you can create it with `diag(n)`.
 
 <table class="table table-striped table-dark table-bordered table-responsive">
 <thead>
@@ -93,12 +95,14 @@ A_{2}=\ \begin{pmatrix}
 Zero-Matrix with non-zero values on the diagonal. <br>
 <div>
 \[
-A_{2}=\ \begin{pmatrix}
-1&2\\
-3&4\\
+D_{2}=\ \begin{pmatrix}
+1&0\\
+0&4\\
 \end{pmatrix}
 \]
 </div>
+
+In **R**, call `diag(c(1,4))`.
 </td>
 <td>
 
@@ -273,6 +277,23 @@ Then, once you have checked the determinant, you can invert a matrix using
 
 <hr class="sr">
 
+## Definiteness of a matrix
+
+You may be asked a lot of times, to check the definiteness of a matrix. You can either find the eigenvalues ($\lambda$, as you can learn in the next section), or check the leading minors ($\Delta$, that you will learn in this section).
+
+|          Name              | **eigenvalues** | **minors** |
+|----------------------------|-----------------|-----------------|
+| **positive definite** <br> `définie positive`| $\forall k,\quad \lambda_k \gt 0$ | $\forall k,\quad \Delta_k  \gt 0$ |
+| **positive semi-definite**<br>`semi-définie positive`| $\forall \text{k aside $k=e$},\quad \lambda_k \gt 0,\quad \lambda_{e} = 0$ | $\forall k < n,\quad \Delta_{k}>0 \text{. and } \Delta_{n}=0$ |
+| **negative definite** <br> `définie négative` | $\forall k,\quad \lambda_k \lt 0$ | $\forall k,\quad (-1)^k \Delta_k \gt 0$ |
+| **negative semi-definite** <br>`semi-définie négative` | $\forall \text{k aside $k=e$},\quad \lambda_k \lt 0,\quad \lambda_{e} = 0$ | $\forall k < n,\quad (-1)^k\Delta_{k}>0 \text{. and } \Delta_{n}=0$ |
+| **indefinite** <br> `indéfinie`| $\exists k\exists n,\quad \lambda_k \gt 0,\quad \lambda_n \lt 0$ | $\Delta_{n} < 0$, and the dimension n is pairwise |
+
+* [Leading minors of a matrix](inversion/minor-lead.md)
+* [Leading minors of a matrix - example](inversion/minor-ex.md)
+
+<hr class="sl">
+
 ## Eigendecomposition of a matrix
 
 This is called `Réduction d’endomorphisme` in French. The goal is to calculate $A^n$ or $exp(A)$. Our goal is to calculate some matrix so that we have $A^n = P * D^n * P^{-1}$
@@ -294,8 +315,8 @@ You get the eigenvalues (according to Cayley–Hamilton theorem) by solving the 
 det(\lambda{I_n}-A_n) = 0
 @
 
-* [Eigendecomposition steps](eigen/steps.md)
-* [Eigendecomposition examples](eigen/examples.md)
+* [Eigendecomposition - steps](eigen/steps.md)
+* [Eigendecomposition - example](eigen/example.md)
 
 <hr class="sl">
 
@@ -306,3 +327,5 @@ det(\lambda{I_n}-A_n) = 0
 * <https://en.wikipedia.org/wiki/Determinant>
 * <https://en.wikipedia.org/wiki/Eigendecomposition_of_a_matrix>
 * <https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors>
+* <https://en.wikipedia.org/wiki/Definite_matrix>
+* <https://en.wikipedia.org/wiki/Minor_(linear_algebra)>
