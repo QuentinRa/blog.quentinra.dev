@@ -7,7 +7,17 @@ This is quite more wordy than in Markdown, but you can do more things, such as g
 ```rest
 I can load an image like this
 
-.. image:: src
+.. image:: example.png
+    :alt: alt message
+
+.. image:: example.png
+   :align: center
+
+.. image:: example.png
+   :width: 100%
+   
+.. image:: example.png
+    :target: URL
 
 I can write some inline links
 like this `name <URL>`_  with will be rendered as

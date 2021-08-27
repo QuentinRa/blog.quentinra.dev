@@ -1,8 +1,8 @@
 # RST
 
-`rst` or `reST` means `reStructuredText`, file with extension `.rst`. It's a language that is great to write technical documentation for your code, as you may have seen the usual [Sphinx+Readthedocs template](https://docs.readthedocs.io/en/stable/index.html).
+`rst` or `reST` means `reStructuredText`, file with extension `.rst`. It's a language that is great to write technical documentation for your code, as you may have seen the usual [Sphinx+Readthedocs template](https://docs.readthedocs.io/en/stable/index.html). You could have seen it in Python too, or on GitHub (ex: README.rst). 
 
-You could have seen it in Python too, or on GitHub (ex: README.rst). We will focus on Readthedocs, a continuous integration system that allows you
+We will focus on Readthedocs, a continuous integration system that allows you
 
 * to write code (you write .rst files by yourself)
 * you link the git where the documentation is hosted with Readthedocs
@@ -16,9 +16,9 @@ I started using it after seeing a lot of programmers using it, such as
 
 <hr class="sl">
 
-# Installing sphinx
+## Installing sphinx
 
-Sphinx is creating a website from your documentation. This is what Readthedocs will use. For python comments, you can skip this part.
+Sphinx is creating a website from your documentation. This is what Readthedocs will use. For python comments, you can skip this section.
 
 * `pip install -U sphinx` (pip should be installed)
 * `sphinx-build --version` (check your PATH)
@@ -30,12 +30,12 @@ Sphinx uses a tree-like system, we need to link the pages together. We do that w
 .. toctree::
  :maxdepth:
 
-    Nom printed     <file_rst_without_extension>
+    Name printed     <file_rst_without_extension>
 ```
 
 <hr class="sr">
 
-# Writing RST documents
+## Writing RST documents
 
 Here is a list of the most commons directives
 
@@ -56,7 +56,7 @@ As a side note, space and indents are quite important in `rst`, so be sure to ch
 
 <hr class="sl">
 
-# Sources
+## Sources
 
 * <https://docs.anaconda.com/restructuredtext/detailed/>
 * <https://docutils.sourceforge.io/docs/user/rst/quickref.html>
@@ -64,6 +64,7 @@ As a side note, space and indents are quite important in `rst`, so be sure to ch
 * <https://pandoc.org/>
 * <https://rst2pdf.org/>
 * <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/index.html>
+* <https://gist.github.com/dupuy/1855764>
 * Sphinx
     * <https://docs.readthedocs.io/en/latest/guides/adding-custom-css.html>
     * <https://matplotlibguide.readthedocs.io/en/latest/Matplotlib/basic.html>
