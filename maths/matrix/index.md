@@ -14,6 +14,26 @@ We are writing $A_{n,p}$ a matrix of $n$ lines and $p$ columns. The value at the
 \]
 </div>
 
+<details>
+<summary>In <b>R</b>, you can create a matrix like this</summary>
+
+```r
+n <- 3
+p <- 3
+A <- matrix(c(c(1,0,0), c(0,1,0), c(0,0,1)), nrow = n, ncol = p, byrow = TRUE)
+# same as
+A <- matrix(c(1,0,0,0,1,0,0,0,1), nrow = n, ncol = p, byrow = TRUE)
+# result
+#       [,1] [,2] [,3]
+# [1,]    1    0    0
+# [2,]    0    1    0
+# [3,]    0    0    1
+# a (i=1, j=1)
+A[1,1]
+# 1
+```
+</details>
+
 <hr class="sl">
 
 ## Linear System
@@ -22,7 +42,8 @@ A linear system is a set of equations that can be solved together. Solving one w
 
 What's convenient is that you can use a matrix for that because the GAUSS method (and a lot of other methods in Numerical analysis) needs a matrix. The rules are that the values in the matrix are the coefficient between the variables ($0$ if not found, $1$ if $x$ or $n$ if $n * x$). The last column is the vector $b$ made with the values after the equals (`second membre`).
 
-* [Example](linear-system/example.md)
+* [Example (by yourself)](linear-system/example.md)
+* [Example (in R)](linear-system/example-r.md)
 
 <hr class="sr">
 
@@ -36,7 +57,7 @@ In French, we will call theses `Matrices remarquables`. The matrix you must reme
 <th>Zero matrix $O_{np}$</th>
 <th>Square matrix $A_{n}$</th>
 <th>Diagonal matrix $D_{n}$</th>
-<th>Conjugate transpose $A^T/A^*$</th>
+<th>Conjugate transpose $A^*$</th>
 </tr>
 </thead>
 <tbody>
