@@ -55,6 +55,34 @@ You may also
 
 <hr class="sl">
 
+## Commits
+
+In CONTRIBUTING.md, as you will see later, you have to define guideline/style for things such as commits. For instance, some are adding smileys and so [as you can see here](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages).
+
+According to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), the structure should be
+
+```bash
+<type>[(optional scope)]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+with
+
+* **type** (you may add a `!` before `:` for MAJOR changes)
+  * build, docs, **feat** (=MINOR), **fix** (=PATCH), style, test
+  * chore, ci, perf, refactor, revert, security
+  * upgrading/downgrading dependencies
+* **description**: short description, you may reference issues/pull requests
+* **body**: a list of every change, one per line, or a complete description of your change
+* **footer**: you may add "BREAKING CHANGE" (=MAJOR), Co-authored-by, Reviewed-by, Refs etc.
+
+You may check that your message [is valid using commitlint](https://github.com/conventional-changelog/commitlint). If you don't understand **MAJOR.MINOR.PATCH**, check the section about versioning (a bit further).
+
+<hr class="sr">
+
 ## LICENSE/LICENSE.txt
 
 You **must** add a LICENSE, the most used ones being
@@ -69,7 +97,7 @@ Pick the one that is corresponding to what you want
 * [choosealicense.com](https://choosealicense.com/)
 * [Creative Commons](https://creativecommons.org/choose/)
 
-<hr class="sr">
+<hr class="sl">
 
 ## CONTRIBUTING.md
 
@@ -86,7 +114,7 @@ Tell others, how they can contribute to your project.
 * Is there a place to **discuss** about something?
 * Example: [atom - CONTRIBUTING.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
 
-<hr class="sl">
+<hr class="sr">
 
 ## CHANGELOG.md
 
@@ -106,7 +134,7 @@ You got tools that may help you generate a changelog, but I didn't test them
 * [github-changelog-generator](https://github.com/github-changelog-generator/github-changelog-generator)
 * [conventional-changelog](https://github.com/conventional-changelog)
 
-<hr class="sr">
+<hr class="sl">
 
 ## CODE_OF_CONDUCT.md
 
@@ -120,7 +148,7 @@ You can add this badge too, if you're proud of it ![Contributor Covenant](https:
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 ```
 
-<hr class="sl">
+<hr class="sr">
 
 ## SECURITY.md
 
@@ -133,7 +161,7 @@ Sometimes, even if you moved to another major version (like from v1 to v2), you 
 
 If you're tenacious and motivated, you might read [about security practices here](https://github.com/coreinfrastructure/best-practices-badge/blob/main/doc/security.md). I haven't read enough to make you a summary.
 
-<hr class="sr">
+<hr class="sl">
 
 ## Templates
 
@@ -152,7 +180,7 @@ Note that you may find node-project templates too, etc.
 
 I don't know if you can do that everywhere, but on GitHub, you can define templates for your issues and your pull requests. Everything is explained in the Git course.
 
-<hr class="sl">
+<hr class="sr">
 
 ## Workflows
 
@@ -165,7 +193,7 @@ Usually, developers are configuring automatic testing or actions that are execut
 
 On GitHub, the concept of workflow is associated with the [notion of actions](https://fr.github.com/features/actions). You got a lot of fancy tools/actions introduced in the fancy notes in the Git course.
 
-<hr class="sr">
+<hr class="sl">
 
 ## Versioning
 
@@ -181,7 +209,7 @@ It seems that a lot of persons are using
   * you may add a tag like **1.0.0-alpha**
 * You may also check [Calver](https://calver.org/)
 
-<hr class="sl">
+<hr class="sr">
 
 ## ROADMAP.md
 
@@ -197,7 +225,7 @@ Sometimes, we are adding a ROADMAP, to help others get a hand of what we made, w
   * what are you planning to do?
   * You should talk about Short/Medium/Long terms
 
-<hr class="sr">
+<hr class="sl">
 
 ## Bunch of notes
 
@@ -208,7 +236,7 @@ In an open-source project,
 * try to answer any issues/pull requests within 48 hours, give feedback and gratitude to your contributors
 * **CODEOWNERS**: at least on GitHub, you can create a file called [CODEOWNERS](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners). You can use regex to tell GitHub who wrote these files. When someone is submitting a pull request/issue changing the file assigned to an author, GitHub will automatically ask for their review.
 
-<hr class="sl">
+<hr class="sr">
 
 ## Sources
 
