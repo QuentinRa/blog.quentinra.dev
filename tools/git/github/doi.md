@@ -1,6 +1,6 @@
 # Digital Object Identifiers (DOI)
 
-[Go back](..)
+[Go back](../index.md#advanced-concepts)
 
 > This tutorial is aimed at researchers who want to cite GitHub repositories in academic literature. - GitHub
 

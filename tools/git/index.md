@@ -141,6 +141,8 @@ Here are some functionalities that you can find on GitHub, but you may find thin
   * [Verified commits](notes/verified.md): add "verified" to your commits
   * [Multiples authors](notes/multiples.md): add multiples authors to a commit
 
+Note: I'm putting a lot of files in a folder `.github`, because it makes my root folder cleaner, but you can put the files directly in your root folder (😐). You can also replace UPPER_CASE names by lowercase names.
+
 This page [Working Open Workshop](https://mozillascience.github.io/working-open-workshop/github_for_collaboration/) is summarizing with a lot of pictures (issues, forking a repository, pull requests, etc.).
 
 <hr class="sl">
