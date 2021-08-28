@@ -12,3 +12,4 @@ Otherwise, I'm using
 * [ScreenToGif](https://www.screentogif.com/)
   * [Official GitHub repository](https://github.com/NickeManarin/ScreenToGif)
   * "ScreenToGif" on the Windows store
+* [TTYGIF](https://github.com/icholy/ttygif) (record a terminal)
