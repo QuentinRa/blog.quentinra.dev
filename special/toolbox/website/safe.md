@@ -15,3 +15,12 @@ And you may install,
 
 * [privacy badger extension](https://www.eff.org/pages/privacy-badger).
 * and/or the [DuckDuckGo extension](https://duckduckgo.com/app)
+
+<hr class="sl">
+
+## DAA Self-Regulatory Principles
+
+It seems to be something, that based on your browser configuration, will consider you as opting-out (resp. opting-in) from the usual GDPR opt-in/opt-out window.
+
+* if found it here <https://optout.aboutads.info/?c=2&lang=EN>
+* while like website <https://www.youronlinechoices.com/uk/> may be worth investigating (I didn't yet 🙇‍♂️)

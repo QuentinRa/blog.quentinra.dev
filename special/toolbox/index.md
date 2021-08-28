@@ -10,7 +10,7 @@ A lot of notes about a lot of things that can't be added to another course. This
 2. [Fixing typos](writting/index.md)
 3. [Temporary file hosting](website/hosting.md)
 4. [Emojis](desktop/emojis.md)
-5. [Safe browsing](website/checkers.md)
+5. [Safe browsing](website/safe.md)
 6. [Saving, converting, and/or Archiving](website/archive.md)
 7. [Screen recorders](desktop/record.md)
 

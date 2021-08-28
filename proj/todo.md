@@ -1,4 +1,0 @@
-# todo
-
-- uml
-  - deployment diagram

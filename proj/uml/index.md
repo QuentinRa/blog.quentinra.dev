@@ -14,6 +14,7 @@ You got a lot of diagrams [listed on Wikipedia](https://en.wikipedia.org/wiki/Mo
 * [sequence diagram](seq/index.md): application life-time diagram
 * [use case diagram](use/index.md): application use-cases diagram
 * [flow chart diagram](flow/index.md): automate of an application
+* deployment diagram
 
 <hr class="sl">
 
