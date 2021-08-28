@@ -140,6 +140,7 @@ Here are some functionalities that you can find on GitHub, but you may find thin
 * Commits
   * [Verified commits](notes/verified.md): add "verified" to your commits
   * [Multiples authors](notes/multiples.md): add multiples authors to a commit
+  * [Referencing ...](notes/reference.md): reference a user, an issue, or a pull request
 
 Note: I'm putting a lot of files in a folder `.github`, because it makes my root folder cleaner, but you can put the files directly in your root folder (😐). You can also replace UPPER_CASE names by lowercase names.
 
