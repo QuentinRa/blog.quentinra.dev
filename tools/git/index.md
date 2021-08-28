@@ -167,6 +167,8 @@ This page [Working Open Workshop](https://mozillascience.github.io/working-open-
 
 * You can bring [Microsoft IA - GitHub Copilot](https://copilot.github.com/) inside VSCode ([I enjoyed this feedback](https://www.sitepoint.com/github-copilot-ai-pair-programming/)).
 
+* As you could see with [Memorize](https://github.com/lgs-games/memorize), the repository's language is Markdown, which is unusual as Markdown isn't considered to be a programming language. You do that tweaking the file [.gitattributes](https://github.com/lgs-games/memorize/blob/master/.gitattributes) while following [linguist documentation](https://github.com/github/linguist/tree/master/docs).
+
 * You can make a [card for a repository](https://github.com/anuraghazra/github-readme-stats#repo-card-exclusive-options)
 
 [![Memorize - card](https://github-readme-stats.vercel.app/api/pin?username=lgs-games&repo=memorize&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)](https://github.com/lgs-games/memorize)

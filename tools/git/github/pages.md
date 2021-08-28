@@ -17,6 +17,7 @@ You may write your website in Markdown. I didn't try, but here are the links tha
 
 * [Jekyll](https://jekyllrb.com/docs/) ([Deployment](https://jekyllrb.com/docs/deployment/automated/))
 * [Beautiful Jekyll](https://beautifuljekyll.com/)
+* [Jekyll Themes](http://jekyllthemes.org/)
 * [GoHugo](https://gohugo.io/) ([Hosting on GitHub](https://gohugo.io/hosting-and-deployment/hosting-on-github/))
 
 You can use [form spree](https://formspree.io/) to use forms without coding.
