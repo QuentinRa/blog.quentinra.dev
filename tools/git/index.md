@@ -154,28 +154,19 @@ This page [Working Open Workshop](https://mozillascience.github.io/working-open-
 
 ## Fancy notes
 
-Did you hear about badges? You can find them in the README.md in a lot of repositories.
+* You can make a [Profile card](https://github.com/anuraghazra/github-readme-stats)
 
-![badge](https://img.shields.io/github/license/lgs-games/memorize)
+* You can also show an [achievements badge](https://github.com/ryo-ma/github-profile-trophy)
 
-They are loaded with the latest value like the real license here, so devs add them into a README to help others to easily a lot about their repository.
+* You can look at your [most used languages](https://github.com/anuraghazra/github-readme-stats#top-languages-card)
 
-* [shields.io](https://shields.io/): a lot of badges, you can even create yours
-* [badgen.net](https://badgen.net/): follows the steps and get some badges
+* And you can even find things like [joke cards](https://readme-jokes.vercel.app/api)
 
-You may also check this to create a profile card
+* You can also **create a skyline** [with your contributions](https://skyline.github.com/).
 
-* <https://github.com/anuraghazra/github-readme-stats>
+* You can make a [card for a repository](https://github.com/anuraghazra/github-readme-stats#repo-card-exclusive-options)
 
-![profile](https://github-readme-stats.vercel.app/api?username=QuentinRa&show_icons=true&theme=radical)
-
-You can also show an achievements badge
-
-![trophies](https://github-profile-trophy.vercel.app/api?username=QuentinRa&theme=chalk&column=3&margin-w=10&margin-h=10)
-
-And you can even find things like joke cards <https://readme-jokes.vercel.app/api>.
-
-You can also **create a skyline** with your contributions using <https://skyline.github.com/>.
+[![Memorize - card](https://github-readme-stats.vercel.app/api/pin?username=lgs-games&repo=memorize&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)](https://github.com/lgs-games/memorize)
 
 <hr class="sr">
 
