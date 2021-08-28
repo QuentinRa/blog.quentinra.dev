@@ -42,7 +42,7 @@ This is a file you must already know. We are putting a README.md in **Markdown**
   * Of course, you should generate the code's documentation (like the Javadoc, the JSDoc, ...)
   * Write runtimes usages (global variables, the usage of a session for a website, ...)
   * ex: `Daux.io`, `Read the Docs`, `Doxygen`, ... 
-* Some **badges** (see fancy notes in the course about GIT)
+* Some **badges** such as this one ![badge](https://img.shields.io/github/license/lgs-games/memorize) ([more explanations here](readme/badges.md))
 * You may add **pictures/a GIF** showing an **example** of what's the project doing
 * A link to a demo (if you have one)
 * Credits/Authors and core maintainers (with a way to contact them)
