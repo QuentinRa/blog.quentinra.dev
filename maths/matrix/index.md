@@ -122,12 +122,12 @@ transpose.
 <th>Transpose matrix $A^{T}$</th>
 <th>Vector $A_{1,n}/A_{n,1}$</th>
 <th>
-Hermitian matrix $A$ ($\mathbb{C}$)<br>
-Symmetric matrix $A$ ($\mathbb{R}$)
+Hermitian matrix ($\mathbb{C}$)<br>
+Symmetric matrix ($\mathbb{R}$)
 </th>
 <th>
-Unitary matrix $A$ ($\mathbb{C}$)<br>
-Orthogonal matrix $A$ ($\mathbb{R}$)
+Unitary matrix ($\mathbb{C}$)<br>
+Orthogonal matrix ($\mathbb{R}$)
 </th>
 </tr>
 </thead>
