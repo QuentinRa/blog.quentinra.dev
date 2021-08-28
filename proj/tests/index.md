@@ -117,22 +117,38 @@ This is something that I wasn't aware of, as it seems developers' often forgot, 
 
 You can write in a text file, a story of you using your app ("user story") which is a test. Write as many as needed. The tools checking the coverage of your code won't help us here. If you need to check everything, it might be long. 
 
-* ask yourself what your users will do (or ask them)
-* try testing your app ...
-  * in the browsers you picked, if this is a website
-  * on the platforms you picked, if this is an application
-  * **but**, I think you should make sure your app is working perfectly inside ONE browser or inside ONE platform before targeting many of them
-* for a website, you might check
-  * if it's responsive
-  * the language (if you have more than one)
-    * did a button becomes "weird", because you put too much text in it?
-    * ...
+This is a compilation of notes, mainly for testing a website, but you should be able to use them everywhere.
+
+* check for consistency
+  * same menus and at the same place
+  * same colors for buttons
+  * same format for TITLES
+* check your spelling/typos (🙄)
+  * check every language, if every text is translated
+  * check if the UI is still good, in every language
+* check that the components are working
+  * test your forms (good/bad uses)
+    * required?
+    * limits on size/...?
+  * test for injections
+  * test if some fields are removed/... is it robust?
+  * test if your website is **usable** 
+    * not tiring to use
+    * you may check the [HMI course](../hmi/index.md)
+  * test that the animations are working (hover, click, ...)
+* check for adaptivity (mobile, tablet, other resolutions)
+  * configured to work on mobiles (the viewport line)
+  * if a text is too long, is the UI going wild?
+  * is a feature disabled/not available on a browser?
+  * is a feature required by a browser? ([polyfill](https://polyfill.io/v3/) might help)
+  * **I think** you should make sure your app is working perfectly inside ONE browser or inside ONE platform before targeting many of them
+* other checks
   * test printing a page, is this what you expected?
-  * tests if your forms are working
-  * tests for injections/if some fields are removed/...
-  * ...
+  * don't forget to test error messages
 
 You might as well use logs and check if the logs are what you expected according to the user story.
+
+**edit 28/08/2021**: I found the website [Chromatic](https://www.chromatic.com/) which seems to provide free tool to test your UI. I haven't tested yet. Same for [katalon](https://www.katalon.com/).
 
 <hr class="sl">
 

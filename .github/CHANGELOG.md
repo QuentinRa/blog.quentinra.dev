@@ -12,6 +12,7 @@
 * `feature`: adding the [Markdown syntax reference](https://memorize.be/syntax)
 * `feature`: loading images and files from GitHub
 * `feature`: button to add "co-author"
+* `feature`: human.txt added
 
 **Changed**
 

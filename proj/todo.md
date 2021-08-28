@@ -7,9 +7,5 @@
 - open-source
   - https://crowdin.com/
   - https://opencollective.com/
-- tests / IHM / Project
-  - https://www.chromatic.com/
-- project-git
-  - https://www.conventionalcommits.org/en/v1.0.0/#specification
 - uml
   - deployment diagram
