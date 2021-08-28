@@ -13,10 +13,11 @@ This is my list of websites that I heard of, and used for most of them. You can 
 * [codacy](https://www.codacy.com/) (I didn't manage to install this one)
 * [lgtm](https://lgtm.com/) (basic feedback)
 * [scrutinizer-ci](https://scrutinizer-ci.com/) (paid only, not tested)
+* [deps.rs](https://deps.rs/) (Rust dependencies alerts)
 
 > **BUT** it's tiring to check each website if they got news? or How is it automated?
 
-Well, you will usually put a badge in your README (as explained in [Make Git project](../../../proj/make-git-project/index.md)), and the badge will be updated each time you make a commit so you will see inside if you have to go check the website or not.
+Well, you will usually put a badge in your README (as explained in [Make Git project](../../../proj/make-git-project/index.md)), and the badge will be updated each time someone goes to the page (=each time the badge is rendered), so you will see inside if you have to go check the website or not.
 
 ![Github external tools badges](../images/badges.png)
 

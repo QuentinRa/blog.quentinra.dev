@@ -134,6 +134,7 @@ Here are some functionalities that you can find on GitHub, but you may find thin
   * [Actions](github/actions.md): continuous integration (**ci**)
     * [Heroku](notes/heroku.md): preconfigured continuous integration and deployment
     * [External websites for reviews](notes/tools.md): a bunch of tools such as tools to get automated feedback on your code
+    * [Dependabot](github/dependabot.md): get pull requests to update your dependencies when new versions are available
   * [Pull requests (PR)](github/pull-requests.md): ask before merging
   * [Issues](github/issues.md): got a question? report a bug?
   * [Pages](github/pages.md): host your website on GitHub
@@ -163,6 +164,8 @@ This page [Working Open Workshop](https://mozillascience.github.io/working-open-
 * And you can even find things like [joke cards](https://readme-jokes.vercel.app/api)
 
 * You can also **create a skyline** [with your contributions](https://skyline.github.com/).
+
+* You can bring [Microsoft IA - GitHub Copilot](https://copilot.github.com/) inside VSCode ([I enjoyed this feedback](https://www.sitepoint.com/github-copilot-ai-pair-programming/)).
 
 * You can make a [card for a repository](https://github.com/anuraghazra/github-readme-stats#repo-card-exclusive-options)
 
