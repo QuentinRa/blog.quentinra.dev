@@ -15,7 +15,7 @@ So in this course, you will see
 
 This course will focus on the theory, but you should be able to find a section about tests, in the **Java** course, the **PHP** course, etc.
 
-**Edit 15/07/2021**: I recently learned the notion of **coverage**. A lot of tools introduced in the Git course, inside the fancy notes section, are scanning your code and telling you which **paths** of your code are covered by tests. Now, I think that programmers should have a clear idea of what they have to test, and it makes things easier, as *all they have to do* now is to write the most meaningful tests 😎.
+**Edit 15/07/2021**: I recently learned the notion of **coverage**. A lot of tools introduced in the Git course, inside the section about advanced concepts, are scanning your code and telling you which **paths** of your code are covered by tests. Now, I think that programmers should have a clear idea of what they have to test, and it makes things easier, as *all they have to do* now is to write the most meaningful tests 😎.
 
 <hr class="sl">
 

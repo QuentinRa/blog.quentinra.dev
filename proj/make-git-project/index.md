@@ -191,7 +191,7 @@ Usually, developers are configuring automatic testing or actions that are execut
 * check that you didn't have introduced a security breach
 * ...
 
-On GitHub, the concept of workflow is associated with the [notion of actions](https://fr.github.com/features/actions). You got a lot of fancy tools/actions introduced in the fancy notes in the Git course.
+On GitHub, the concept of workflow is associated with the [notion of actions](https://fr.github.com/features/actions). You got a lot of tools/some help in the section about advanced concepts in the Git course.
 
 <hr class="sl">
 

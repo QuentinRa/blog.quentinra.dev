@@ -131,7 +131,9 @@ Here are some functionalities that you can find on GitHub, but you may find thin
 
 * General
   * [Wikis](github/wiki.md): write documentation
-  * [Actions](github/actions.md): continuous integration
+  * [Actions](github/actions.md): continuous integration (**ci**)
+    * [Heroku](notes/heroku.md): preconfigured continuous integration and deployment
+    * [External websites for reviews](notes/tools.md): a bunch of tools such as tools to get automated feedback on your code
   * [Pull requests (PR)](github/pull-requests.md): ask before merging
   * [Issues](github/issues.md): got a question? report a bug?
   * [Pages](github/pages.md): host your website on GitHub
@@ -150,14 +152,6 @@ This page [Working Open Workshop](https://mozillascience.github.io/working-open-
 
 <hr class="sl">
 
-## Heroku
-
-[Heroku](https://www.heroku.com/home) is a sort of GitHub action for automatic deployment. Currently, there are not that many languages supported, but still you may want to check it out. They have a [student](https://www.heroku.com/students) offer if needed.
-
-The short videos on their website like [this one for nodejs](https://www.heroku.com/nodejs) are showing exactly what Heroku is doing.
-
-<hr class="sr">
-
 ## Fancy notes
 
 Did you hear about badges? You can find them in the README.md in a lot of repositories.
@@ -168,18 +162,6 @@ They are loaded with the latest value like the real license here, so devs add th
 
 * [shields.io](https://shields.io/): a lot of badges, you can even create yours
 * [badgen.net](https://badgen.net/): follows the steps and get some badges
-
-You can check websites like these for reviews of your code
-
-* <https://sonarcloud.io/> (the BEST, quite a lot of feedback)
-* <https://www.codefactor.io/> (analysis, good)
-* <https://www.codetriage.com/>
-* <https://about.codecov.io/> (code coverage)
-* <https://weblate.org/fr/>
-* <https://snyk.io/> (vulnerabilities)
-* <https://www.codacy.com/> (I didn't manage to install this one)
-* <https://lgtm.com/> (basic feedback)
-* <https://scrutinizer-ci.com/> (paid)
 
 You may also check this to create a profile card
 
@@ -195,7 +177,7 @@ And you can even find things like joke cards <https://readme-jokes.vercel.app/ap
 
 You can also **create a skyline** with your contributions using <https://skyline.github.com/>.
 
-<hr class="sl">
+<hr class="sr">
 
 ## Cheatsheet
 
@@ -207,7 +189,7 @@ You may look at these cheat sheets
 * [cheat-sheets.org](http://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf)
 * [Atlassian Cheatsheet](https://www.atlassian.com/dam/jcr:e7e22f25-bba2-4ef1-a197-53f46b6df4a5/SWTM-2088_Atlassian-Git-Cheatsheet.pdf)
 
-<hr class="sr">
+<hr class="sl">
 
 ## Sources
 
