@@ -21,6 +21,9 @@ When dealing with images, you may want
   * a lot of JPGs to WebP (more than 10) <https://online-converting.com/image/>
   * a PNG to an SVG <https://png-svg.com/>
   * otherwise, enter "xxx to yyy" to look for a converter from xxx to yyy
+* **reverse search**
+  * [tineye](https://tineye.com/)
+  * Google's search by image
 
 <hr class="sr">
 
