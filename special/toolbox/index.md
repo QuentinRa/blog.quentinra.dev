@@ -13,6 +13,7 @@ A lot of notes about a lot of things that can't be added to another course. This
 5. [Safe browsing](website/safe.md)
 6. [Saving, converting, and/or Archiving](website/archive.md)
 7. [Screen recorders](desktop/record.md)
+8. [Shorten URL](website/short-url.md)
 
 <hr class="sl">
 
