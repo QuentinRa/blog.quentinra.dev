@@ -1,86 +1,36 @@
 # Actions
 
-[Go back](../index.md#advanced-github-concepts)
+[Go back](../index.md#advanced-concepts)
 
-Actions are some code that is run each time you make a commit or a pull request.
+Actions are some code that is run each time you make a commit or a pull request. For instance, you could create an action that will verify that your code compiles on some specific platform that you configured.
 
-For instance, you could create an action that will verify that your code compiles on some specific platform that you configured and return a ``cross`` if a test failed.
+* ![GitHub passed ci](images/passed.png): all checks passed
+* ![GitHub failed ci](images/failed.png): at least a check failed
 
-I don't know much about complex actions, but you can check [GitHub's actions](https://github.com/features/actions) page and the [GitHub actions tutorial](https://docs.github.com/en/actions/quickstart).
+You can check [GitHub's actions](https://github.com/features/actions) page and the [GitHub actions tutorial](https://docs.github.com/en/actions/quickstart). On GitHub (and maybe ...), the files for an action are generated, so most of the time, you're able to configure one easily. 
 
 <hr class="sl">
 
-## Action: CodeQL
+## Note: Action for multiples repositories
 
-CodeQL allows you to analyze your code, here is my file for a (complex) java project that would be stored at ``.github/workflows/codeql-analysis.yml``. GitHub generates most of the content of the file. Your file will be way better than this one, but it may help to see this one.
+I had a project (which I deleted), that was having other repositories inside. When you `git clone` the repository, you also need to clone the nested repositories.
 
 ```yaml
-# For most projects, this workflow file will not need changing; you simply need
-# to commit it to your repository.
-#
-# You may wish to alter this file to override the set of languages analyzed,
-# or to provide custom queries or build logic.
-name: "CodeQL"
+    # filling the folder other-repository-folder-name
+    # with the content from URL/repository.git
+    - run: git clone URL/repository.git other-repository-folder-name
+```
 
-on:
-  push:
-    branches: [master]
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [master]
-  schedule:
-    - cron: '0 4 * * 5'
+<hr class="sr">
 
-jobs:
-  analyze:
-    name: Analyze
-    runs-on: ubuntu-latest
+## Note: Action for Java
 
-    strategy:
-      fail-fast: false
-      matrix:
-        # compile in java
-        language: ['java']
-        # version 11
-        java: [11]
-    steps:
-    
-    # get our repository
-    - name: Checkout repository
-      uses: actions/checkout@v2
-      with:
-        fetch-depth: 2
+If you're making a project in Java, you need to install Java on the machine on which the code will be run (😎). You can do it using [actions/setup-java](https://github.com/actions/setup-java).
 
-    # If this run was triggered by a pull request event, then checkout
-    # the head of the pull request instead of the merge commit.
-    - run: git checkout HEAD^2
-      if: ${{ github.event_name == 'pull_request' }}
-
-    # run a command, here we move to test and make a git clone
-    - run: cd other-repository && git clone ANOTHER_URL_HERE/repository.git
-    # copy all files into other-repository, even hidden one then rm repository
-    # and go back to root folder
-    && cd repository/ && mv * .. && mv .git .gitignore .gradle/ .idea/ .. 
-    && cd .. && rm -rf repository && cd ..
-
-    # setup jdk since i must do it myself
-    - name: Setup Java JDK
-      uses: actions/setup-java@v1.4.3
-      with:
-        java-version: 11
-        # The package type (jre, jdk, jdk+fx)
-        java-package: jdk   
-
-    # Initializes the CodeQL tools for scanning.
-    - name: Initialize CodeQL
-      uses: github/codeql-action/init@v1
-      with:
-        languages: ${{ matrix.language }}
-
-    # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v1
-
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v1
+```yaml
+    - name: Set up JDK 16
+        uses: actions/setup-java@v2
+        with:
+          java-version: '16'
+          distribution: 'adopt'
 ```
