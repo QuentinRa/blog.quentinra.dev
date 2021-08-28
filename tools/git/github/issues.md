@@ -4,6 +4,10 @@
 
 Users may find a `bug` (🐛) in your project or may want to ask for some `support` or request a `functionality`. They will most likely use issues to report/ask something. Here is the official [GitHub tutorial](https://guides.github.com/features/issues/).
 
+<hr class="sl">
+
+## Templates
+
 You can define **issues templates** using a file that needs to be created in `.github/ISSUE_TEMPLATE/config.yml`. This got quite simplified now
 
 * go to your repository's settings
@@ -19,3 +23,9 @@ contact_links:
     url: https://lgs-games.com/
     about: you can also ask support on our website
 ```
+
+<hr class="sr">
+
+## Create issue from code
+
+If you read a block of code that seems to be the cause of an issue, then you can open one with it [by following this tutorial](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-code).

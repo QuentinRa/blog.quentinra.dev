@@ -132,11 +132,13 @@ Here are some functionalities that you can find on GitHub, but you may find thin
 * General
   * [Wikis](github/wiki.md): write documentation
   * [Actions](github/actions.md): continuous integration
-  * [Pull requests](github/pull-requests.md): ask before merging
+  * [Pull requests (PR)](github/pull-requests.md): ask before merging
   * [Issues](github/issues.md): got a question? report a bug?
   * [Pages](github/pages.md): host your website on GitHub
+  * [Project](github/project.md): you can have your scrum board directly on Github
 * Special
   * [Digital Object Identifiers](github/doi.md): researchers' stuff
+  * [Referencing code in PR/issues](github/ref-code.md): reference a line or a block of code in a PR or an issue
 * Commits
   * [Verified commits](notes/verified.md): add "verified" to your commits
   * [Multiples authors](notes/multiples.md): add multiples authors to a commit
