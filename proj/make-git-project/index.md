@@ -35,20 +35,23 @@ This is a file you must already know. We are putting a README.md in **Markdown**
 
 * What's the project's **name**
 * What's the project's **goal**/ **description** of the project
-* How we can **install the project**? Run it? Test it?
+* **Why** did you made this project? Who is your **audience**?
+* How we can **install the project**? **Run** it? Test it?
 * Where is the **documentation**? (you got one, right? Right? 🧐)
   * You should add **some samples of code**
   * Of course, you should generate the code's documentation (like the Javadoc, the JSDoc, ...)
   * Write runtimes usages (global variables, the usage of a session for a website, ...)
+  * ex: `Daux.io`, `Read the Docs`, `Doxygen`, ... 
 * Some **badges** (see fancy notes in the course about GIT)
 * You may add **pictures/a GIF** showing an **example** of what's the project doing
-* A link to a demo
+* A link to a demo (if you have one)
 * Credits/Authors and core maintainers (with a way to contact them)
 
 You may also
 
 * Add the contributors (some are doing it)
-* Add a link to other files (such as the LICENSE)
+* Add a link to other files (such as the LICENSE, or CONTRIBUTING)
+* [Read this website](https://www.makeareadme.com/)
 
 <hr class="sl">
 
@@ -61,17 +64,27 @@ You **must** add a LICENSE, the most used ones being
 * the [creative common kinds of licenses](https://creativecommons.org/)
 * Copyright (default - no license)
 
-Pick the one that is corresponding to what you want [on choosealicense.com](https://choosealicense.com/).
+Pick the one that is corresponding to what you want 
+
+* [choosealicense.com](https://choosealicense.com/)
+* [Creative Commons](https://creativecommons.org/choose/)
 
 <hr class="sr">
 
 ## CONTRIBUTING.md
 
-Tell others, how they can contribute to your project
+Tell others, how they can contribute to your project.
 
-* How issues are handled?
-* How pull requests are handled?
-* What guidelines are you following?
+* Maybe add a description/table of contents
+* How **issues** are handled?
+* How **pull requests** are handled?
+* What **guidelines**/**style** are you following?
+  * commits
+  * code
+  * documentation
+* Where and How can we **ask a question**?
+* Is there a place to **discuss** about something?
+* Example: [atom - CONTRIBUTING.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
 
 <hr class="sl">
 
@@ -170,17 +183,32 @@ It seems that a lot of persons are using
 
 <hr class="sl">
 
+## ROADMAP.md
+
+Sometimes, we are adding a ROADMAP, to help others get a hand of what we made, why, what are we doing now, and what are we planning to do in the future.
+
+* welcome contributors
+  * give a good first impression
+  * project summary
+  * how can we get involved?
+* timeline
+  * what you did?
+  * what are you doing?
+  * what are you planning to do?
+  * You should talk about Short/Medium/Long terms
+
+<hr class="sr">
+
 ## Bunch of notes
 
 In an open-source project,
 
 * make every discussion public
 * check the license of the libraries you're using
-* give your roadmap (what you're planning to do, what you did, ...)
 * try to answer any issues/pull requests within 48 hours, give feedback and gratitude to your contributors
 * **CODEOWNERS**: at least on GitHub, you can create a file called [CODEOWNERS](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners). You can use regex to tell GitHub who wrote these files. When someone is submitting a pull request/issue changing the file assigned to an author, GitHub will automatically ask for their review.
 
-<hr class="sr">
+<hr class="sl">
 
 ## Sources
 
@@ -188,3 +216,4 @@ In an open-source project,
 * [best practices CII/FLOSS](https://bestpractices.coreinfrastructure.org/fr)
 * [best practices CII/FLOSS - GitHub](https://github.com/coreinfrastructure/best-practices-badge)
 * [Government best practices](https://government.github.io/best-practices/)
+* [Working Open Workshop](https://mozillascience.github.io/working-open-workshop/)

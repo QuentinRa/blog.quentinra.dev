@@ -10,9 +10,6 @@
 - tests / IHM / Project
   - https://www.chromatic.com/
 - project-git
-  - https://www.makeareadme.com/
-  - https://mozillascience.github.io/working-open-workshop/
-  - https://mozillascience.github.io/working-open-workshop/contributing/
   - https://www.conventionalcommits.org/en/v1.0.0/#specification
 - uml
   - deployment diagram

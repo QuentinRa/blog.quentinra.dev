@@ -135,6 +135,8 @@ Here are some functionalities that you can find on GitHub (but you may find them
 * [Issues](github/issues.md)
 * [Pages](github/pages.md)
 
+This page [Working Open Workshop](https://mozillascience.github.io/working-open-workshop/github_for_collaboration/) is summarizing with a lot of pictures (issues, forking a repository, pull requests, etc.).
+
 <hr class="sl">
 
 ## Commits
