@@ -1,0 +1,13 @@
+name: spellchecker
+
+# Controls when the workflow will run
+on: [pull_request, issues, workflow_dispatch]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: typos-action
+        uses: crate-ci/typos@v1.0.4
