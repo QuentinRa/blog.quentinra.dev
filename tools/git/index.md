@@ -134,6 +134,7 @@ Here are some functionalities that you can find on GitHub (but you may find them
 * [Pull requests](github/pull-requests.md)
 * [Issues](github/issues.md)
 * [Pages](github/pages.md)
+* [DOI](github/doi.md)
 
 This page [Working Open Workshop](https://mozillascience.github.io/working-open-workshop/github_for_collaboration/) is summarizing with a lot of pictures (issues, forking a repository, pull requests, etc.).
 
