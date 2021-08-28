@@ -53,6 +53,8 @@ r(c) = P(X = c) * severity(c)
 
 This is the probability of the cause happening by the severity of the cause. Generally, we are giving an arbitrary value: $0,\ 0.25,\ 0.50,\ 0.75,\ 1.0$ for both $P(X = c)$ and $severity(c)$.
 
+**edit 28/08/2021**: it seems to be have a name: [Probabilistic risk assessment](https://en.wikipedia.org/wiki/Probabilistic_risk_assessment).
+
 <hr class="sl">
 
 ## Ranking the risks (matrix)
@@ -68,4 +70,4 @@ Sort your risks with the "1 2 3 4 notation" (not MoSCoW).
 
 You will get something like this, and you have to put your risks in a box. Deal with the risks in red first, then the orange ones, and then the green ones.
 
-**Note 16/08/2021**: I was looking for "risk matrix" on [Wikipedia](https://en.wikipedia.org/wiki/Risk_matrix) and found a matrix that looks ways better than what I learned.
+**edit 16/08/2021**: I was looking for "**risk matrix**" on [Wikipedia](https://en.wikipedia.org/wiki/Risk_matrix) and found a matrix that looks ways better than what I learned.

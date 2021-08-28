@@ -236,6 +236,11 @@ In an open-source project,
 * try to answer any issues/pull requests within 48 hours, give feedback and gratitude to your contributors
 * **CODEOWNERS**: at least on GitHub, you can create a file called [CODEOWNERS](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners). You can use regex to tell GitHub who wrote these files. When someone is submitting a pull request/issue changing the file assigned to an author, GitHub will automatically ask for their review.
 
+For open-source projects
+
+* [opencollective](https://opencollective.com/) (money-related)
+* [crowdin](https://crowdin.com/) (localization, paid)
+
 <hr class="sr">
 
 ## Sources
