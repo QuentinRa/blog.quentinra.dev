@@ -147,6 +147,7 @@ using online checkers
 
 * [Titles](seo/titles.md)
 * [robots.txt](seo/robots.md)
+* [human.txt](seo/human.txt.md)
 * [Scanners and SEO's tools](seo/tools.md)
 
 **Security**
