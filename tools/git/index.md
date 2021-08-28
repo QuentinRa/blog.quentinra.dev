@@ -13,7 +13,7 @@ This course will strongly refer to [GitHub](https://github.com/), but you may al
 
 As a student, you may enjoy the benefits of the [GitHub student pack](https://education.github.com/pack).
 
-> **edit 21/08/2021**: A lot of content that was in this course (README, LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, ...) that were in this course were moved to "[Make Git project](../../proj/make-git-project/index.md)". This is because I wanted to separate a bit more the commands and the concepts 🙇.
+> **edit 21/08/2021**: A lot of content that was in this course (README, LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, ...), was moved to "[Make Git project](../../proj/make-git-project/index.md)". This is because I wanted to separate a bit more the commands and the concepts 🙇. Still, I kept a short description here, for those that are not interested in the advanced or the proper way to use of these files.
 
 <hr class="sr">
 
@@ -125,37 +125,25 @@ what I did
 
 <hr class="sr">
 
-## Advanced GitHub concepts
+## Advanced concepts
 
-Here are some functionalities that you can find on GitHub (but you may find them too somewhere else).
+Here are some functionalities that you can find on GitHub, but you may find things similar (if not exactly the same) on GitLab or Gogs.
 
-* [Wikis](github/wiki.md)
-* [Actions](github/actions.md)
-* [Pull requests](github/pull-requests.md)
-* [Issues](github/issues.md)
-* [Pages](github/pages.md)
-* [DOI](github/doi.md)
+* General
+  * [Wikis](github/wiki.md): write documentation
+  * [Actions](github/actions.md): continuous integration
+  * [Pull requests](github/pull-requests.md): ask before merging
+  * [Issues](github/issues.md): got a question? report a bug?
+  * [Pages](github/pages.md): host your website on GitHub
+* Special
+  * [Digital Object Identifiers](github/doi.md): researchers' stuff
+* Commits
+  * [Verified commits](notes/verified.md): add "verified" to your commits
+  * [Multiples authors](notes/multiples.md): add multiples authors to a commit
 
 This page [Working Open Workshop](https://mozillascience.github.io/working-open-workshop/github_for_collaboration/) is summarizing with a lot of pictures (issues, forking a repository, pull requests, etc.).
 
 <hr class="sl">
-
-## Commits
-
-You may have seen some commits with this label on some (if not all) commits
-
-![gpg](images/gpg.png)
-
-You can sign your commits and have this too using [GPG keys](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/generating-a-new-gpg-key) (GitHub tutorial). It means that you will need to write a passphrase each time you are committing, but you can reduce the number of times you're asked
-
-* [help on Stack Overflow](https://stackoverflow.com/questions/38384957/prevent-git-from-asking-for-the-gnupg-password-during-signing-a-commit)
-* [gpg-agent.conf](https://gist.github.com/tknv/43604e851a371949343b78261c48f190)
-
-Also, someone can commit on the behalf of someone else (not related to GPG)
-
-* [authored / committed](https://stackoverflow.com/questions/25327743/what-flow-causes-github-commits-that-are-authored-by-one-user-but-committed)
-
-<hr class="sr">
 
 ## Heroku
 
@@ -163,7 +151,7 @@ Also, someone can commit on the behalf of someone else (not related to GPG)
 
 The short videos on their website like [this one for nodejs](https://www.heroku.com/nodejs) are showing exactly what Heroku is doing.
 
-<hr class="sl">
+<hr class="sr">
 
 ## Fancy notes
 
@@ -202,7 +190,7 @@ And you can even find things like joke cards <https://readme-jokes.vercel.app/ap
 
 You can also **create a skyline** with your contributions using <https://skyline.github.com/>.
 
-<hr class="sr">
+<hr class="sl">
 
 ## Cheatsheet
 
@@ -214,7 +202,7 @@ You may look at these cheat sheets
 * [cheat-sheets.org](http://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf)
 * [Atlassian Cheatsheet](https://www.atlassian.com/dam/jcr:e7e22f25-bba2-4ef1-a197-53f46b6df4a5/SWTM-2088_Atlassian-Git-Cheatsheet.pdf)
 
-<hr class="sl">
+<hr class="sr">
 
 ## Sources
 
