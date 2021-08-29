@@ -16,6 +16,8 @@ For users without an interface, `git log` might also help, as it displays inform
 
 ```bash
 git log
+# pretty cool, you can replace 7 by another number
+git log -7 --oneline
 # prettier log
 git log --pretty=fuller
 # see one commit (replace HEAD by an ID or something)

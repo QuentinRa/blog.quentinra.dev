@@ -18,6 +18,22 @@ To get the `URL`, you can do something like this on the page of your repository
 
 <hr class="sl">
 
+## git clone (other uses)
+
+You can also add a folder, to put the content directly inside a folder.
+
+```bash
+git clone URL folder
+```
+
+You can also pick a branch (explained later), using
+
+```bash
+git clone URL --branch name
+```
+
+<hr class="sr">
+
 ## git init
 
 You can create a repository from existing files using `git init`, with URL the same as above.
@@ -27,7 +43,7 @@ git init
 git remote add origin URL
 ```
 
-<hr class="sr">
+<hr class="sl">
 
 ## git remote
 

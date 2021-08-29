@@ -169,9 +169,11 @@ This page [Working Open Workshop](https://mozillascience.github.io/working-open-
 
 You may, like me, hear about these commands so I'm adding them here, but unfortunately I didn't use even one of them yet 🙄
 
-* **searching a bug** with [git bisect](master/bisect.md) 🐛
+* **Searching a bug** with [git bisect](master/bisect.md) 🐛
 
 * **Make an empty commit** with [--allow-empty](master/empty.md) 🗑️
+
+* **Get information about the remote repository** with [git ls-remote](master/ls-remote.md)
 
 Instead of providing a SHA1, you may use one of these shortcuts
 

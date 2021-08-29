@@ -17,7 +17,7 @@ You should check this guide about the [syntax you may use in our files](https://
 * do not make many changes per commits
 * emoji is one of these
   * 😎: added a section/content to a course
-  * 🧐: rewording/fixing typos
+  * 🧐: improving content/rewording/fixing typos
   * 😱: fixing dead links
   * 🤓: fixing mistakes
   * 😏: improving the code (replace HTML by Markdown, or Markdown by HTML, adding/removing spaces, splitting files, etc.)
