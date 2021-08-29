@@ -28,4 +28,8 @@
   - course?
   - note ANM
 
+http://discrete.openmathbooks.org/dmoi2/section-27.html
+
+https://www.wzchen.com/data-science-books
+
 Adding examples in R.

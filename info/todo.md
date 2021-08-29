@@ -11,6 +11,7 @@
   - https://mkyong.com/java/what-is-new-in-java-15/
   - https://en.wikipedia.org/wiki/Java_version_history
   - LTS?
+  - https://edencoding.com/resources/css_properties/fx-background-image/
 - PHP 8
   - enums (enum Name {case;} or case=[...]. Name::from([...]))
   - add the ? condition (truc ? blah blah : null) with ?->
@@ -35,11 +36,14 @@
   - Mocha / https://www.cypress.io/how-it-works
   - https://github.com/goldbergyoni/nodebestpractices
   - npm update npm install --save npm i -S
+  - https://github.com/neutralinojs/neutralinojs
 - web
   - https://codesandbox.io/
   - https://vercel.com/
   - seo
     - https://www.webpagetest.org/
+    - https://www.uptrends.com/tools
+    - https://imagekit.io/
     - https://www.gositestat.com/
     - https://ahrefs.com/blog/structured-data/
       https://ahrefs.com/blog/google-knowledge-graph/
@@ -82,24 +86,34 @@ see headers: curl -I https://memorize.be/
   - https://fxjollois.github.io/cours-sql/
   - https://github.com/RootSoft/Database-Naming-Convention
   - course normalization
+  - https://github.com/omundy/learn-mysql-examples
 - css
   - https://github.com/topcoat/topcoat/wiki/Coding-Guidelines
   - https://cssguidelin.es/
   - https://codeguide.co/
+  - https://css-tricks.com/
 - html
   - https://codeguide.co/
+  - https://html5boilerplate.com/
   - mailto
   - main
+  - https://htmlreference.io/
 - js
+  - https://jasmine.github.io/
   - https://github.com/elsewhencode/project-guidelines
   - https://github.com/ryanmcdermott/clean-code-javascript
   - https://github.com/braziljs/js-the-right-way
   - https://github.com/labs42io/clean-code-typescript
   - https://jsdoc.app/
+  - https://github.com/jfarmer
+  - https://godotengine.org/
 - cyber-security
   - https://github.com/OWASP/CheatSheetSeries
   - https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
   - https://github.com/OWASP/wstg
+  - https://www.guru99.com/what-is-hacking-an-introduction.html
+  - https://www.guru99.com/potential-security-threats-to-your-computer-systems.html
+  - https://www.guru99.com/skills-required-become-ethical-hacker.html
   - M-I-T-M
     - https://us.norton.com/internetsecurity-wifi-what-is-a-man-in-the-middle-attack.html
     - https://snyk.io/learn/man-in-the-middle-attack/
@@ -108,8 +122,20 @@ see headers: curl -I https://memorize.be/
     - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element
     - https://html.spec.whatwg.org/multipage/dom.html#global-attributes
     - https://www.w3.org/TR/html51/
+    - http://ptgmedia.pearsoncmg.com/images/9780321784421/samplepages/0321784421.pdf
+    - https://www.webpresencesolutions.net/metadata-meta-tags-web-page-titles-page-descriptions-explained/
+    - https://aviddemand.com/google-title-tag-serp-preview-tool
+    - ttps://blog.ezmarketing.com/write-good-title-tags-and-meta-descriptions
+    - https://bloggerspassion.com/seo-friendly-titles/#2_Length_of_your_titles_matters
+    - https://www.instafollowers.co/blog/how-to-optimize-title-description-and-url-for-seo
+    - https://chrome.google.com/webstore/detail/seo-peek/lkkpfhgjmocgneajknedjhodkjkkclod/related
+    - https://microsoftedge.microsoft.com/addons/detail/seoinfo/lmpbhhpcahclepjgbfanililjnghjeah
     - try to think "components" like this button
       is the lgs-button.
+    - https://stackoverflow.com/questions/30864573/what-is-a-blob-url-and-why-it-is-used
+    - https://stackoverflow.com/questions/14952052/convert-blob-url-to-normal-url
+    - https://javascript.info/blob
+    - https://developer.mozilla.org/fr/docs/Web/API/Blob
 - C/C++
   - https://github.com/Akagi201/learning-cmake
   - https://github.com/lefticus/cppbestpractices
@@ -128,6 +154,10 @@ see headers: curl -I https://memorize.be/
   - https://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html
 - API
   - https://github.com/controlook-zz/standards/blob/master/backend/rest-api-guidelines.md
+- linux
+  - https://www.geeksforgeeks.org/apropos-command-in-linux-with-examples/
+  - nmap google.fr -p 0-65535 -O -A (port fait quoi)
+  - Zmap
 
 CSS/JS minifier + HTML/CSS validator
 * https://sparksuite.github.io/w3c-css-validator/
@@ -148,3 +178,26 @@ CSS/JS minifier + HTML/CSS validator
 - https://github.com/jfarmer
 - https://sahandsaba.com/
 - https://francoisbrucker.github.io/cours_informatique/index.html
+- https://www.browserstack.com/guide
+- https://codingthesmartway.com/
+- https://codinginfinite.com/
+- https://github.com/sindresorhus/awesome
+- https://codingcheats.io/
+- https://www.youtube.com/watch?v=QaI7abh4n-8&ab_channel=WebDevJourney
+
+---
+
+* <https://padlet.com/sophie_martinez/1NSI2>
+* <https://github.com/omundy/learn-computing>
+* <https://github.com/omundy/dig250-game-art-dev>
+* <https://github.com/omundy/dig245-critical-web-design>
+* <https://github.com/omundy>
+* <https://jgthms.com/>
+
+---
+
+Opencv
+Gnuplot
+Coucera
+Netify
+Tensorflow

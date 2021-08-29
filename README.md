@@ -64,6 +64,7 @@ Last updated: 2021-08-27
 <details>
 <summary> <b>Next content</b></summary>
 
+* [ ] JSON/JSON5/YAML
 * [ ] First-order logic course
 * [ ] General mathematical knowledge course
 * [ ] Complete Java course (notes, javafx)

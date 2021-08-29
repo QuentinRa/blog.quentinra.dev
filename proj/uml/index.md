@@ -23,7 +23,7 @@ You got a lot of diagrams [listed on Wikipedia](https://en.wikipedia.org/wiki/Mo
 I will be using these to create diagrams.
 
 * [StarUML](https://staruml.io/) (software, free and open-source)
-* [PlantUML](https://plantuml.com/) (website)
+* [PlantUML](https://plantuml.com/) (website) or [online editor](https://plantuml-editor.kkeisuke.com/)
 * [UML from code](https://github.com/iluwatar/uml-reverse-mapper)
 * [yuml](https://yuml.me/) (website, render on the fly)
 
