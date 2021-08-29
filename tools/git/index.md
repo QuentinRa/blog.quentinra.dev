@@ -1,6 +1,6 @@
 # Version-control using Git
 
-Git is a tool allowing you to easily work on a project. You will be able to go back to a previous version, and since the code will be hosted on a server, you will reduce the probability of loosing all your work. You will also make team projects easiers, are they are many features such as branches, issues, pull requests, which are quite convenient for programmers.
+Git is a tool allowing you to easily work on a project. You will be able to go back to a previous version, and since the code will be hosted on a server, you will reduce the probability of loosing all your work. You will also make team projects easier, are they are many features such as branches, issues, pull requests, which are quite convenient for programmers.
 
 * you will learn what's Git
 * the basic usage of Git
@@ -73,6 +73,15 @@ git commit -m "I worked a lot"
 git push
 ```
 
+As a side note
+
+```bash
+git add .
+git commit -m "I worked a lot"
+# is the same as
+git commit -am "I worked a lot"
+```
+
 <hr class="sr">
 
 ## Main concepts
@@ -141,6 +150,7 @@ Here are some functionalities that you can find on GitHub, but you may find thin
   * [Issues](github/issues.md): got a question? report a bug?
   * [Pages](github/pages.md): host your website on GitHub
   * [Project board](github/project.md): you can have your scrum board directly on Github
+  * [Discussions](https://docs.github.com/en/discussions): you can allow discussions on GitHub
 * Special
   * [Digital Object Identifiers](github/doi.md): researchers' stuff
   * [Referencing code in PR/issues](github/ref-code.md): reference a line or a block of code in a PR or an issue
@@ -152,6 +162,16 @@ Here are some functionalities that you can find on GitHub, but you may find thin
 Note: I'm putting a lot of files in a folder `.github`, because it makes my root folder cleaner, but you can put the files directly in your root folder (😐). You can also replace UPPER_CASE names by lowercase names.
 
 This page [Working Open Workshop](https://mozillascience.github.io/working-open-workshop/github_for_collaboration/) is summarizing with a lot of pictures (issues, forking a repository, pull requests, etc.).
+
+<hr class="sl">
+
+## Git master
+
+You may, like me, hear about these commands so I'm adding them here, but unfortunately I didn't use even one of them yet 🙄
+
+* **searching a bug** with [git bisect](master/bisect.md) 🐛
+
+* **Make an empty commit** with [--allow-empty](master/empty.md) 🗑️
 
 <hr class="sl">
 
