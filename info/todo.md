@@ -22,6 +22,8 @@
   - http://www.cburch.com/books/php/index.html
   - https://github.com/controlook-zz/standards/blob/master/backend/php.md
   - https://scotch.io/tutorials/a-beginners-guide-to-composer
+  - https://www.php-fig.org/psr/psr-1/
+  - https://www.php-fig.org/psr/psr-2/ => https://www.php-fig.org/psr/psr-12/
   - mails
     - https://roundcube.net/
     - https://stackoverflow.com/questions/1092723/how-do-you-build-a-web-based-email-client-using-php
@@ -124,6 +126,8 @@ see headers: curl -I https://memorize.be/
   - http://web4.ensiie.fr/~stefania.dumbrava/coursIBDPG.pdf
 - python
   - https://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html
+- API
+  - https://github.com/controlook-zz/standards/blob/master/backend/rest-api-guidelines.md
 
 CSS/JS minifier + HTML/CSS validator
 * https://sparksuite.github.io/w3c-css-validator/

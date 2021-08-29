@@ -107,7 +107,7 @@ Tell others, how they can contribute to your project.
 * How **issues** are handled?
 * How **pull requests** are handled?
 * What **guidelines**/**style** are you following?
-  * commits
+  * commits ([example](https://github.com/thiagodp/commitment/blob/master/rules-en.md))
   * code
   * documentation
 * Where and How can we **ask a question**?

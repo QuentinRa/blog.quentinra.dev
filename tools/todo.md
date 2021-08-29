@@ -16,13 +16,17 @@
     - soft wraps
     - update screens
     - shortcuts: replace "*", "@", "^" by "{L}", "{R}", and "{S}"
-- Latex
-    - work on ref
+- Git
+  - Fork
+  - git diff --check
+  - git tag
+  - git reset
+  - git filter-branch
 - Markdown
     - https://www.markdownguide.org/tools/
 - Unity
-    - read links
-    - watch videos
+  - read links
+  - watch videos
 - Vim
   - work on ref
   - work on config

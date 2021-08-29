@@ -21,4 +21,4 @@ You should check this guide about the [syntax you may use in our files](https://
   * 😱: fixing dead links
   * 🤓: fixing mistakes
   * 😏: improving the code (replace HTML by Markdown, or Markdown by HTML, adding/removing spaces, splitting files, etc.)
-  * 😊: adding/proposing feature(s)
+  * 😊: adding/proposing feature(s) or content (todo)
