@@ -16,10 +16,3 @@ git bisect skip
 # you can exit anytime with
 git bisect reset
 ```
-
-You can give a range of dates with
-
-```bash
-git bisect start HEAD HEAD@{two month ago}
-git bisect start HEAD HEAD@{2021-05-05}
-```

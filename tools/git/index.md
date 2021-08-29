@@ -78,7 +78,7 @@ As a side note
 ```bash
 git add .
 git commit -m "I worked a lot"
-# is the same as
+# is almost the same as (new files aren't added)
 git commit -am "I worked a lot"
 ```
 
@@ -173,6 +173,18 @@ You may, like me, hear about these commands so I'm adding them here, but unfortu
 
 * **Make an empty commit** with [--allow-empty](master/empty.md) 🗑️
 
+Instead of providing a SHA1, you may use one of these shortcuts
+
+* **HEAD**: the last commit
+* **@**: the last commit
+* **HEAD^**: the commit before HEAD <span class="tms">(not working well on Windows)</span>
+* **HEAD^n**: the n-th commit before HEAD <span class="tms">(not working well on Windows)</span>
+* **HEAD~n**: the n-th commit before HEAD (same as ^)
+* **SHA1**: either the sort SHA1 such as `54b01d4a` or the whole SHA1
+* **HEAD@{two month ago}**: the closed commit that we made after a date
+* **HEAD@{2021-05-05}**: the closest commit after a date (YYYY-MM-DD)
+* **origin/master@{two month ago}**: same as before, but we can add a branch
+
 <hr class="sl">
 
 ## Fancy notes
@@ -214,6 +226,6 @@ You may look at these cheat sheets
 * [GitHub git guide](https://github.com/git-guides/)
 * [changing remote](https://docs.github.com/en/github/using-git/changing-a-remotes-url)
 * [add ssh key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-* http://adopteungit.fr/methodologie/2017/04/26/commits-atomiques-la-bonne-approche.html (reported down as of 08-2021)
+* http://adopteungit.fr/ (reported down as of 08-2021, [Github](https://github.com/lgiraudel/adopteungit))
 * [git tutorial](https://dubrayn.github.io/IPS-DEV/git.html#1)
 * <https://github.com/nicoespeon/gitgraph.js/>
