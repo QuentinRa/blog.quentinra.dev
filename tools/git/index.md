@@ -173,7 +173,11 @@ You may, like me, hear about these commands so I'm adding them here, but unfortu
 
 * **Make an empty commit** with [--allow-empty](master/empty.md) 🗑️
 
-* **Get information about the remote repository** with [git ls-remote](master/ls-remote.md)
+* **Get information about the remote repository** with [git ls-remote](master/ls-remote.md) 🧐
+
+* **Editing your commit history** with [git rebase](master/rebase.md) 😎
+
+* **Pick up commits with** [git cherry-pick](master/cherry-pick.md) 🍒
 
 Instead of providing a SHA1, you may use one of these shortcuts
 
