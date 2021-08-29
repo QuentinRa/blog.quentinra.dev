@@ -143,3 +143,4 @@ CSS/JS minifier + HTML/CSS validator
 - https://www.pluralsight.com/
 - https://github.com/jfarmer
 - https://sahandsaba.com/
+- https://francoisbrucker.github.io/cours_informatique/index.html

@@ -113,7 +113,7 @@ By default, you are coding on a branch called `master` (or `main`). Let's explai
 
 ## Good practices
 
-**Atomic commits**: one commit means one change, such as adding one functionality. Do not make hundreds of changes in one commit, making it hard to find what you did.
+**Atomic commits**: one commit means one change, such as adding one functionality. Do not make hundreds of changes in one commit, making it hard to find what you did. You can select the lines of a file you want to commit using `git add -p file`.
 
 **Short-Long description**: you should make a short and a long description of your commits, like that
 
@@ -159,7 +159,7 @@ Here are some functionalities that you can find on GitHub, but you may find thin
   * [Multiples authors](notes/multiples.md): add multiples authors to a commit
   * [Referencing ...](notes/reference.md): reference a user, an issue, or a pull request
 
-Note: I'm putting a lot of files in a folder `.github`, because it makes my root folder cleaner, but you can put the files directly in your root folder (😐). You can also replace UPPER_CASE names by lowercase names.
+Note: I'm putting a lot of files in a folder `.github`, because it makes my root folder cleaner, but you can put the files directly in your root folder (😐). You can also replace UPPER_CASE names by lowercase names. You can use `docs` instead of `.github`.
 
 This page [Working Open Workshop](https://mozillascience.github.io/working-open-workshop/github_for_collaboration/) is summarizing with a lot of pictures (issues, forking a repository, pull requests, etc.).
 
@@ -233,5 +233,6 @@ You may look at these cheat sheets
 * [changing remote](https://docs.github.com/en/github/using-git/changing-a-remotes-url)
 * [add ssh key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 * http://adopteungit.fr/ (reported down as of 08-2021, [Github](https://github.com/lgiraudel/adopteungit))
+* [git_commits_atomiques](https://francoisbrucker.github.io/cours_informatique/cours/dfs/git_commits_atomiques.html)
 * [git tutorial](https://dubrayn.github.io/IPS-DEV/git.html#1)
 * <https://github.com/nicoespeon/gitgraph.js/>
