@@ -131,12 +131,10 @@ course, "web" section. You may look at the next part too.
 
 ## Websites' improvements summary
 
-I'm stacking here, every thing I learned as to
-improve my websites. You should inspect your website
-using online checkers
+I'm stacking here, everything that I learned to improve my websites. You should inspect first your website using online checkers
 
 * you should known about <https://validator.w3.org/>
-* but you should look at <https://webhint.io/> (better)
+* but, you should look at <https://webhint.io/> too
 
 **Accessibility**
 
