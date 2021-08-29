@@ -47,17 +47,16 @@ Last updated: 2021-08-27
 
 * **Guidelines**
 * [ ] empty alt in the Markdown should be checked/removed
+* [ ] add a width/height to images?
 * [ ] Nested courses files should have the title of the nested course and not the nesting course (ex: UML)
 * **Features**
 * [ ] advanced search? (inside a course/category)
-* [ ] actions? typos
 * [ ] adding file history
 * [ ] adding submit issue
 * **Content**
 * [ ] Index Google/Bing
 * [ ] add a pull request template
 * [ ] review .summary
-* [ ] add style.css here
 </details>
 
 <br>

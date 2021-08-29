@@ -1,6 +1,6 @@
 # Change Log
 
-## v5.0.0 (upcoming)
+## v5.0.0 (not fully available)
 
 **Note**: I have temporarily disabled some courses, as I have yet to move them to v5.0.0.
 
@@ -14,6 +14,7 @@
 * `feature`: button to add "co-author"
 * `feature`: human.txt added
 * `feature`: using CDN for images/files outside references
+: `seo`: Mathjax is dynamically disabled for the pages that does not have LaTeX yet (reduce loading time by around 0.5s)
 
 **Changed**
 
