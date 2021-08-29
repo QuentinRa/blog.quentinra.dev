@@ -14,10 +14,10 @@ Provided by `Legendary Games Studio`, [memorize@lgs-games.com](mailto:memorize@l
 
 <div align="center">
 
-![GitHub](https://img.shields.io/github/license/lgs-games/memorize)
-![GitHub pull requests](https://img.shields.io/github/issues-pr-closed/lgs-games/memorize?color=%23a0)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/lgs-games/memorize)
-![Custom badge](https://img.shields.io/endpoint?label=views&logoColor=success&url=https%3A%2F%2Fmemorize.be%2Fcounter)
+[![GitHub](https://img.shields.io/github/license/lgs-games/memorize)](LICENSE)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr-closed/lgs-games/memorize?color=%23a0)](https://github.com/lgs-games/memorize/pulls)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/lgs-games/memorize)](https://github.com/lgs-games/memorize)
+[![Custom badge](https://img.shields.io/endpoint?label=views&logoColor=success&url=https%3A%2F%2Fmemorize.be%2Fcounter)](https://github.com/lgs-games/memorize)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](.github/CODE_OF_CONDUCT.md)
 </div>
 
