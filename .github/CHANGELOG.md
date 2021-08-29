@@ -1,6 +1,6 @@
 # Change Log
 
-## v5.0.0 (2021-08-27)
+## v5.0.0 (upcoming)
 
 **Note**: I have temporarily disabled some courses, as I have yet to move them to v5.0.0.
 
@@ -13,6 +13,7 @@
 * `feature`: loading images and files from GitHub
 * `feature`: button to add "co-author"
 * `feature`: human.txt added
+* `feature`: using CDN for images/files outside references
 
 **Changed**
 
@@ -35,7 +36,7 @@
 
 **Removed**
 
-* `feature`: removing `href="download:url"`
+* `feature`: removing `href="download:url"`, you should use the [memorize-references](https://github.com/memorize-code/memorize-references).
 
 ## v4.5.0 (2021-08-20)
 
