@@ -146,6 +146,8 @@ using online checkers
 **SEO (Search Engine Optimization)**
 
 * [Titles](seo/titles.md)
+* [Descriptions](seo/descriptions.md)
+* [OG/twitter meta](seo/og-twitter.md)
 * [robots.txt](seo/robots.md)
 * [human.txt](seo/human.txt.md)
 * [Structured Data](seo/structured.md)
