@@ -34,6 +34,8 @@
   - https://github.com/goldbergyoni/nodebestpractices
   - npm update npm install --save npm i -S
 - web
+  - https://codesandbox.io/
+  - https://vercel.com/
   - seo
     - https://www.webpagetest.org/
     - https://www.gositestat.com/

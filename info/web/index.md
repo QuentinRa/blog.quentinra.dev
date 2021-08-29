@@ -163,4 +163,5 @@ using online checkers
 **Others**
 
 * you may use images .webp images instead of PNG/JPG
+* you may use [CDN](seo/cdn.md)
 * you may use async/defer to delay the loading of your scripts
