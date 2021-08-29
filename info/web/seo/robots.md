@@ -1,6 +1,6 @@
 # robots.txt
 
-[Go back](../index.md#security)
+[Go back](../index.md#websites-improvements-summary)
 
 This is one of the files that robots are checking
 when they visit your website.

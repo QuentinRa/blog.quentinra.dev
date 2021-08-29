@@ -122,7 +122,7 @@ in "tools".
 Did you notice? I used UPPERCASE letters because it's important.
 In HTML/CSS/JS, you can't do much since the user can
 see and modify your code (console > sources) but well in
-PHP, you will have a part about SQL injections. 
+PHP, you will have to handle SQL injections (and many more). 
 
 Aside from that, you will have advices in the CyberSecurity 
 course, "web" section. You may look at the next part too.
@@ -148,6 +148,7 @@ using online checkers
 * [Titles](seo/titles.md)
 * [robots.txt](seo/robots.md)
 * [human.txt](seo/human.txt.md)
+* [Structured Data](seo/structured.md)
 * [Scanners and SEO's tools](seo/tools.md)
 
 **Security**

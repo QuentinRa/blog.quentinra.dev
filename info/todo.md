@@ -37,6 +37,13 @@
   - seo
     - https://www.webpagetest.org/
     - https://www.gositestat.com/
+    - https://ahrefs.com/blog/structured-data/
+      https://ahrefs.com/blog/google-knowledge-graph/
+      https://ahrefs.com/blog/semantic-search/
+      https://ahrefs.com/blog/eat-seo/
+    - https://github.com/garmeeh/next-seo
+    - https://thriveagency.com/news/how-to-check-if-google-is-caching-your-website-correctly/
+      https://ahrefs.com/blog/how-to-increase-website-authority/
     - https://ahrefs.com/blog/submit-website-to-search-engines/
     - https://www.bing.com/webmasters/help/sitemaps-3b5cf6ed
       - https://www.bing.com/webmasters/help/url-submission-62f2860b
