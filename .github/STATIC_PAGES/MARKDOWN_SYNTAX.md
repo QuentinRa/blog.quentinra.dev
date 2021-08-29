@@ -71,7 +71,7 @@ Notes
 | `[a link](URL)` | a link | &lt;a href="https://github.com/lgs-games/memorize" target="_blank" rel="noopener noreferrer"&gt;a link&lt;/a&gt; | 	<a href="https://github.com/lgs-games/memorize" target="_blank" rel="noopener noreferrer">a link</a> |
 | `<URL>` | same as `[URL](URL)` | ... | ... |
 | `[a link](download:URL/a_file.pdf)`| download link | &lt;a href="URL" download &gt;a link&lt;/a&gt; | **removed** since v1.3.0 |
-| `![alt](URL)` | an image | &lt;img src="URL" alt="alt" title="alt" class="mw-100" &gt; | <img src="http://memorize.lgs-games.etu/assets/icon64.png" class="mw-100" alt="icon" title="icon" > |
+| `![alt](URL)` | an image | &lt;img src="URL" alt="alt" title="alt" class="mw-100" &gt; | <img src="https://cdn.jsdelivr.net/gh/memorize-code/memorize-references/.assets/icons/icon64.png" class="mw-100" alt="icon" title="icon" > |
 
 <hr class="sep-both">
 
