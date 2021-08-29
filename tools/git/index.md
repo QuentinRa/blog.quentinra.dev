@@ -1,7 +1,9 @@
-# About this course
+# Version-control using Git
 
-* you will learn what's git
-* the basic usage of git
+Git is a tool allowing you to easily work on a project. You will be able to go back to a previous version, and since the code will be hosted on a server, you will reduce the probability of loosing all your work. You will also make team projects easiers, are they are many features such as branches, issues, pull requests, which are quite convenient for programmers.
+
+* you will learn what's Git
+* the basic usage of Git
 * the main concepts
 * good practices
 * some advanced concepts
