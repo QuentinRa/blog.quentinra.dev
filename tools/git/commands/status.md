@@ -70,3 +70,15 @@ You can also use `git show`, which is showing your changes, and may show the sam
 git show
 git show -s --pretty=fuller HEAD
 ```
+
+<hr class="sl">
+
+## git diff
+
+You can use `git diff` to see the differences between your last commit, and another commit.
+
+```bash
+git diff SHA1
+# show same mistakes (markers or whitespace errors)
+git diff --check HEAD~10
+```

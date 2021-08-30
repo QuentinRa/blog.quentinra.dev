@@ -10,7 +10,6 @@
     - update screens
 - Git
   - Fork
-  - git diff --check
   - git tag
   - git reset
   - git filter-branch
