@@ -2,25 +2,25 @@
 
 [Go back](../index.md)
 
-In the Jacobi method, given a starting point $X^{(0)}$ (usually a vector of zeros), you will solve each equation with this point. You will get a new point, and start again.
+In the Jacobi method, you will be given a starting point $X^{(0)}$ which is usually a vector of zeros. You will solve each equation with this point, and get a new point $X^{(1)}$. Then you will iterate again and again, until you got a "good enough" result.
 
 <hr class="sl">
 
 ## Using a table
 
-We are solving the system saw previously using the **Jacobi** method.
+We are using a vector of zeros for our starting point is $X^{(0)} = (0,0,0)$. As a remember, we had
 
-* $x_{n+1}(x, y, z) = \frac{12 - 2 * y - 2 * z}{4}$
-* $y_{n+1}(x, y, z) = \frac{-9 - 2 * x - 7 * z}{10}$
-* $z_{n+1}(x,y,z) = \frac{-20 - 2 * x - 7 * y}{21}$
-
-We are using a vector of zeros as the default value, but I think in some cases you can start with something else. As we got 3 variables, our starting point is $X = (0,0,0)$.
+* $x^{(k)} = \frac{12 - 2 * y - 2 * z}{4}$
+* $y^{(k)} = \frac{-9 - 2 * x - 7 * z}{10}$
+* $z^{(k)} = \frac{-20 - 2 * x - 7 * y}{21}$
 
 | var | i=0 | i=1 | i=2 | ... | $i\ge41$ |
 | ------ | ------ | ------ | ------ | ------ | ------ |
-| x | $x^{(0)} = 0$ | $X = (0,0,0)$ <br> $x^{(1)} = 3$ | $X = (3,-0.9,-0.95)$ <br> $x^{(2)} = 3.925$ | ... | $X = (?,?,?)$ <br> $x^{(41)} = 4$ |
-| y | $y^{(0)} = 0$ | $X = (0,0,0)$ <br> $y^{(1)} = -0.9$ | $X = (3,-0.9,-0.95)$ <br> $y^{(2)} = -0.835$ | ... | $X = (?,?,?)$ <br> $x^{(41)} = -1$ |
-| z | $z^{(0)} = 0$ | $X = (0,0,0)$ <br> $z^{(1)} = -0.95$ | $X = (3,-0.9,-0.95)$ <br> $z^{(2)} = -0.938$ | ... | $X = (?,?,?)$ <br> $x^{(41)} = -1$ |
+| x | $x^{(0)} = 0$ | $X^{(0)} = (0,0,0)$ <br> $x^{(1)} = 3$ | $X^{(1)} = (3,-0.9,-0.95)$ <br> $x^{(2)} = 3.925$ | ... | $X^{(40)} = (?,?,?)$ <br> $x^{(41)} = 4$ |
+| y | $y^{(0)} = 0$ | $X^{(0)} = (0,0,0)$ <br> $y^{(1)} = -0.9$ | $X^{(1)} = (3,-0.9,-0.95)$ <br> $y^{(2)} = -0.835$ | ... | $X^{(40)} = (?,?,?)$ <br> $x^{(41)} = -1$ |
+| z | $z^{(0)} = 0$ | $X^{(0)}  = (0,0,0)$ <br> $z^{(1)} = -0.95$ | $X^{(1)} = (3,-0.9,-0.95)$ <br> $z^{(2)} = -0.938$ | ... | $X^{(40)} = (?,?,?)$ <br> $x^{(41)} = -1$ |
+
+We got $X^{(41)} = (4, -1, -1)$ which is the solution we wanted.
 
 <hr class="sr">
 
@@ -29,9 +29,9 @@ We are using a vector of zeros as the default value, but I think in some cases y
 Here is how you could see this in R code. We are checking the convergence with $\epsilon = 0.001$.
 
 ```r
-xnp1 <- function (x, y, z) { (12 - 2 * y - 2 * z) / 4  }
-ynp1 <- function (x, y, z) { (-9 - 2 * x - 7 * z) / 10 }
-znp1 <- function (x, y, z) { (-20 - 2 * x - 7 * y) / 21  }
+xk <- function (y, z) { (12 - 2 * y - 2 * z) / 4  }
+yk <- function (x, z) { (-9 - 2 * x - 7 * z) / 10 }
+zk <- function (x, y) { (-20 - 2 * x - 7 * y) / 21  }
 
 # initial values
 n <- 3 # 3x3
@@ -47,9 +47,9 @@ e <- matrix(rep(0.001, each = n))
 repeat {
 	# update our vector of values
 	Xk <- c(
-		xnp1(Xk[1], Xk[2], Xk[3]),
-		ynp1(Xk[1], Xk[2], Xk[3]),
-		znp1(Xk[1], Xk[2], Xk[3])
+		xk(y = Xk[2], z = Xk[3]),
+		yk(x = Xk[1], z = Xk[3]),
+		zk(x = Xk[1], y = Xk[2])
 	)
 
 	r <- abs((A %*% Xk) - b)
