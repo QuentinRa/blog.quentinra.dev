@@ -1,6 +1,6 @@
 # Version-control using Git
 
-Git is a tool allowing you to easily work on a project. You will be able to go back to a previous version, and since the code will be hosted on a server, you will reduce the probability of loosing all your work. You will also make team projects easier, are they are many features such as branches, issues, pull requests, which are quite convenient for programmers.
+Git is a tool allowing you to easily work on a project. You will be able to go back to a previous version, and since the code will be hosted on a server, you will reduce the probability of losing all your work. You will also make team projects easier, are they are many features such as branches, issues, pull requests, which are quite convenient for programmers.
 
 * you will learn what's Git
 * the basic usage of Git
@@ -15,7 +15,7 @@ This course will strongly refer to [GitHub](https://github.com/), but you may al
 
 As a student, you may enjoy the benefits of the [GitHub student pack](https://education.github.com/pack).
 
-> **edit 21/08/2021**: A lot of content that was in this course (README, LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, ...), was moved to "[Make Git project](../../proj/make-git-project/index.md)". This is because I wanted to separate a bit more the commands and the concepts 🙇. Still, I kept a short description here, for those that are not interested in the advanced or the proper way to use of these files.
+> **edit 21/08/2021**: A lot of content that was in this course (README, LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, ...), was moved to "[Make Git project](../../proj/make-git-project/index.md)". This is because I wanted to separate a bit more the commands and the concepts 🙇. Still, I kept a short description here, for those that are not interested in the advanced or the proper way to use these files.
 
 <hr class="sr">
 
@@ -147,9 +147,9 @@ Here are some functionalities that you can find on GitHub, but you may find thin
     * [External websites for reviews](notes/tools.md): a bunch of tools such as tools to get automated feedback on your code
     * [Dependabot](github/dependabot.md): get pull requests to update your dependencies when new versions are available
   * [Pull requests (PR)](github/pull-requests.md): ask before merging
-  * [Issues](github/issues.md): got a question? report a bug?
+  * [Issues](github/issues.md): got a question? Report a bug?
   * [Pages](github/pages.md): host your website on GitHub
-  * [Project board](github/project.md): you can have your scrum board directly on Github
+  * [Project board](github/project.md): you can have your scrum board directly on GitHub
   * [Discussions](https://docs.github.com/en/discussions): you can allow discussions on GitHub
 * Special
   * [Digital Object Identifiers](github/doi.md): researchers' stuff
@@ -159,7 +159,7 @@ Here are some functionalities that you can find on GitHub, but you may find thin
   * [Multiples authors](notes/multiples.md): add multiples authors to a commit
   * [Referencing ...](notes/reference.md): reference a user, an issue, or a pull request
 
-Note: I'm putting a lot of files in a folder `.github`, because it makes my root folder cleaner, but you can put the files directly in your root folder (😐). You can also replace UPPER_CASE names by lowercase names. You can use `docs` instead of `.github`.
+Note: I'm putting a lot of files in a folder `.github`, because it makes my root folder cleaner, but you can put the files directly in your root folder (😐). You can also replace UPPER_CASE names with lowercase names. You can use `docs` instead of `.github`.
 
 This page [Working Open Workshop](https://mozillascience.github.io/working-open-workshop/github_for_collaboration/) is summarizing with a lot of pictures (issues, forking a repository, pull requests, etc.).
 
@@ -167,7 +167,7 @@ This page [Working Open Workshop](https://mozillascience.github.io/working-open-
 
 ## Git master
 
-You may, like me, hear about these commands so I'm adding them here, but unfortunately I didn't use even one of them yet 🙄
+You may, like me, hear about these commands, so I'm adding them here, but unfortunately, I didn't use even one of them yet 🙄
 
 * **Searching a bug** with [git bisect](master/bisect.md) 🐛
 
@@ -207,7 +207,7 @@ Instead of providing a SHA1, you may use one of these shortcuts
 
 * You can bring [Microsoft IA - GitHub Copilot](https://copilot.github.com/) inside VSCode ([I enjoyed this feedback](https://www.sitepoint.com/github-copilot-ai-pair-programming/)).
 
-* As you could see with [Memorize](https://github.com/lgs-games/memorize), the repository's language is Markdown, which is unusual as Markdown isn't considered to be a programming language. You do that tweaking the file [.gitattributes](https://github.com/lgs-games/memorize/blob/master/.gitattributes) while following [linguist documentation](https://github.com/github/linguist/tree/master/docs).
+* As you could see with [Memorize](https://github.com/lgs-games/memorize), the repository's language is Markdown, which is unusual as Markdown isn't considered to be a programming language. You do that by tweaking the file [.gitattributes](https://github.com/lgs-games/memorize/blob/master/.gitattributes) while following [linguist documentation](https://github.com/github/linguist/tree/master/docs).
 
 * You can make a [card for a repository](https://github.com/anuraghazra/github-readme-stats#repo-card-exclusive-options)
 
@@ -232,7 +232,7 @@ You may look at these cheat sheets
 * [GitHub git guide](https://github.com/git-guides/)
 * [changing remote](https://docs.github.com/en/github/using-git/changing-a-remotes-url)
 * [add ssh key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-* http://adopteungit.fr/ (reported down as of 08-2021, [Github](https://github.com/lgiraudel/adopteungit))
+* http://adopteungit.fr/ (reported down as of 08-2021, [GitHub](https://github.com/lgiraudel/adopteungit))
 * [git_commits_atomiques](https://francoisbrucker.github.io/cours_informatique/cours/dfs/git_commits_atomiques.html)
 * [git tutorial](https://dubrayn.github.io/IPS-DEV/git.html#1)
 * <https://github.com/nicoespeon/gitgraph.js/>

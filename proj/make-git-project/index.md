@@ -57,7 +57,7 @@ You may also
 
 ## Commits
 
-In CONTRIBUTING.md, as you will see later, you have to define guideline/style for things such as commits. For instance, some are adding smileys and so [as you can see here](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages).
+In CONTRIBUTING.md, as you will see later, you have to define guidelines/a style for things such as commits. For instance, some are adding smileys and so [as you can see here](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages).
 
 According to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), the structure should be
 
@@ -110,8 +110,8 @@ Tell others, how they can contribute to your project.
   * commits ([example](https://github.com/thiagodp/commitment/blob/master/rules-en.md))
   * code
   * documentation
-* Where and How can we **ask a question**?
-* Is there a place to **discuss** about something?
+* Where, and How, can we **ask a question**?
+* Is there a place to **discuss**/**chat**?
 * Example: [atom - CONTRIBUTING.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
 
 <hr class="sr">
@@ -235,7 +235,7 @@ In an open-source project,
 * check the license of the libraries you're using
 * try to answer any issues/pull requests within 48 hours, give feedback and gratitude to your contributors
 * **CODEOWNERS**: at least on GitHub, you can create a file called [CODEOWNERS](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners). You can use regex to tell GitHub who wrote these files. When someone is submitting a pull request/issue changing the file assigned to an author, GitHub will automatically ask for their review.
-* You may add [CITATION.cff](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-citation-files) to tell other how to cite your project.
+* You may add [CITATION.cff](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-citation-files) to tell others how to cite your project.
 
 For open-source projects
 

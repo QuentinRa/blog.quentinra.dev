@@ -64,7 +64,7 @@ git reflog --date=iso
 
 ## git show
 
-You can also use `git show`, which is showing your changes, and may show the same output as git log (according to the parameters).
+You can also use `git show`, which is showing your changes, and may show the same output as `git log` (according to the parameters).
 
 ```bash
 git show

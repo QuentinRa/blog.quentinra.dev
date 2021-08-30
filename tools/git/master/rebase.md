@@ -2,7 +2,7 @@
 
 [Go back](../index.md#git-master)
 
-You can edit your commit history using `git rebase`, to merge commits, edit a message, remove a commit etc.
+You can edit your commit history using `git rebase`, to merge commits, edit a message, remove a commit, etc.
 
 ```bash
 git rebase -i
@@ -29,7 +29,7 @@ First, using `-i`, you are using the interactive mode. This is opening an editor
 * drop = remove commit
 * ...
 
-You may have to press "i" to enable input, and CTRL-C, then `:wq` to save and exit (or `q!` to exit without saving). If you squashed commits, the editor will opens itself again, and allow you to merge the commits messages.
+You may have to press "i" to enable input, and CTRL-C, then `:wq` to save and exit (or `q!` to exit without saving). If you squashed commits, the editor will open itself again, and allow you to merge the commits messages.
 
 ```bash
 # since the editor didn't open itself for me, I did

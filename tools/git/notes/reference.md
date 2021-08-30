@@ -4,7 +4,7 @@
 
 As the title implies, you can reference a user, an issue, or a pull request inside a commit. We are usually doing this, because GitHub will add inside the issue/pull request a link to the commit. 
 
-I took some screen for one of my old repositories
+I took some screens of one of my repositories
 
 ![Referencing issue - GitHub](images/ref-commit.png)
 

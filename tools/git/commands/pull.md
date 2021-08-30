@@ -8,7 +8,7 @@ You can use this one to download locally the latest version on the server
 git pull
 ```
 
-**If you don't want to change your local version**, but you want to fetch the latest changes (to know what changed etc.), then you may use
+**If you don't want to change your local version**, but you want to fetch the latest changes (to know what changed, etc.), then you may use
 
 ```bash
 git fetch

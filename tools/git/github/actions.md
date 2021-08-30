@@ -7,7 +7,7 @@ Actions are some code that is run each time you make a commit or a pull request.
 * ![GitHub passed ci](images/passed.png): all checks passed
 * ![GitHub failed ci](images/failed.png): at least a check failed
 
-You can check [GitHub's actions](https://github.com/features/actions) page and the [GitHub actions tutorial](https://docs.github.com/en/actions/quickstart). On GitHub (and maybe ...), the files for an action are generated, so most of the time, you're able to configure one easily.
+You can check [GitHub's actions](https://github.com/features/actions) page and the [GitHub actions tutorial](https://docs.github.com/en/actions/quickstart). On GitHub (and maybe ...),. The files are **generated**, so most of the time, you're able to configure one easily.
 
 <hr class="sl">
 

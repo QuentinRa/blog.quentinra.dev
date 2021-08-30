@@ -2,7 +2,7 @@
 
 [Go back](../index.md#advanced-concepts)
 
-This is my list of websites that I heard of, and used for most of them. You can login using your GitHub account, and make them review your code (usually, it's free for open-source project, paid for others).
+This is my list of websites that I heard of and used for most of them. You can log in using your GitHub account, and make them review your code (usually, it's free for an open-source project, paid for others).
 
 * [sonarcloud](https://sonarcloud.io) (the **BEST**, quite a lot of feedback)
 * [codefactor](https://www.codefactor.io/) (analysis, good)
@@ -19,8 +19,8 @@ This is my list of websites that I heard of, and used for most of them. You can 
 
 Well, you will usually put a badge in your README (as explained in [Make Git project](../../../proj/make-git-project/index.md)), and the badge will be updated each time someone goes to the page (=each time the badge is rendered), so you will see inside if you have to go check the website or not.
 
-![Github external tools badges](../images/badges.png)
+![GitHub external tools badges](../images/badges.png)
 
-Some websites can also **make comments in your Pull requests**, if you enabled it, or sometimes, if you have the paid version (sonarcloud, lgtm, and snyk did it for free for me).
+Some websites can also **make comments in your Pull requests**, if you enabled it, or sometimes if you have the paid version (Sonar cloud, LGTM, and Snyk did it for free for me).
 
-![Github external tools comment](../images/comment.png)
+![GitHub external tools comment](../images/comment.png)

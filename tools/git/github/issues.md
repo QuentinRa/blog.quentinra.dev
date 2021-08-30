@@ -26,6 +26,6 @@ contact_links:
 
 <hr class="sr">
 
-## Create issue from code
+## Create an issue from your code
 
 If you read a block of code that seems to be the cause of an issue, then you can open one with it [by following this tutorial](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-code).
