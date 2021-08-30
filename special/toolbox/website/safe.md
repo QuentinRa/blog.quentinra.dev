@@ -24,3 +24,5 @@ It seems to be something, that based on your browser configuration, will conside
 
 * if found it here <https://optout.aboutads.info/?c=2&lang=EN>
 * while like website <https://www.youronlinechoices.com/uk/> may be worth investigating (I didn't yet 🙇‍♂️)
+
+You may **play** a bit [on cookie consent speed run](https://cookieconsentspeed.run/) 🤩😂.

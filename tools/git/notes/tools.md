@@ -8,6 +8,7 @@ This is my list of websites that I heard of and used for most of them. You can l
 * [codefactor](https://www.codefactor.io/) (analysis, good)
 * [deepsource](https://deepsource.io/) (seems good, but no issues were found in my project 😐)
 * [codetriage](https://www.codetriage.com/) (get issues in your inbox)
+* [IssueHunt](https://issuehunt.io/) (tackle issues, not really related to this page 🙄)
 * [codecov](https://about.codecov.io/) (code coverage)
 * [weblate](https://weblate.org/fr/) (not used)
 * [snyk](https://snyk.io/) (vulnerabilities, **good**)
