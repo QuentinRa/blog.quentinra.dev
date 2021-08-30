@@ -6,7 +6,6 @@
     - new JavaFX wizard
     - JLink artifacts
     - "documentation" support
-    - add a project icon
     - CTest
     - update screens
 - Git

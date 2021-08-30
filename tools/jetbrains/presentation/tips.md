@@ -45,3 +45,9 @@ If you want something permanent,
 * "soft wrap"
 * "soft wrap these files"
 * and add your file extension
+
+<hr class="sr">
+
+### Icon for your project
+
+You can add an icon for your project! Simply close your project, right click on it, and "change project icon".
