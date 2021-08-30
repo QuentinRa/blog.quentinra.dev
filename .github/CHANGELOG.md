@@ -14,7 +14,7 @@
 * `feature`: button to add "co-author"
 * `feature`: human.txt added
 * `feature`: using CDN for images/files outside references
-: `seo`: Mathjax is dynamically disabled for the pages that does not have LaTeX yet (reduce loading time by around 0.5s)
+: `seo`: Mathjax is dynamically disabled for the pages that do not use LaTeX yet (it reduces the loading time by around 0.5s)
 
 **Changed**
 

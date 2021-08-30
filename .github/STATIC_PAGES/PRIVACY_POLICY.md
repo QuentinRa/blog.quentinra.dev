@@ -13,9 +13,10 @@ This Privacy Policy is governed by our [Terms of Services](https://memorize.be/t
 For any questions regarding this Policy or any requests regarding the processing of personal data, please contact us at [memorize@lgs-games.com](mailto:memorize@lgs-games.com).
 
 <hr class="sep-both">
+
 ## 1. INFORMATION WE COLLECT AUTOMATICALLY
 
-When you use our Site or contact us directly, we may collect information, including your personal information, about the way you act in our Site, the services You use and how You use them.
+When you use our Site or contact us directly, we may collect information, including your personal information, about the way you act on our Site, the services You use and how You use them.
 
 This information is necessary for the adequate performance of the contract between You and us, to enable us to comply with legal obligations and given our legitimate interest in being able to provide and improve the functionalities of the Site.
 
@@ -48,7 +49,7 @@ We do not use cookies or other tracking technologies.
 
 ## 4. SENSITIVE INFORMATION
 
-We do not collect sensitive information such as political opinions, religious or philosophical beliefs, racial or ethnic origin, genetic data, biometric data, health data or data related  to a sexual orientation.
+We do not collect sensitive information such as political opinions, religious or philosophical beliefs, racial or ethnic origin, genetic data, biometric data, health data or data related to a sexual orientation.
 
 Please do not send, upload, or provide us any sensitive data and contact us using the contact details below if you believe that we might have such information. We have a right to delete any information we believe it might contain sensitive data.
 
@@ -114,4 +115,4 @@ We assume that all Users of this Site have carefully read this document and agre
 
 If you have any further questions regarding the data we collect, or how we use it, then please feel free to contact us at the details as indicated above.
 
-Users from EU and EEA can easily contact our European representative: Quentin Ra [admin@lgs-games.com](mailto:admin@lgs-games.com).
+Users from the EU and EEA can easily contact our European representative: Quentin Ra [admin@lgs-games.com](mailto:admin@lgs-games.com).

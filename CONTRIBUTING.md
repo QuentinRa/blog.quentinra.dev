@@ -13,8 +13,8 @@ You should check this guide about the [syntax you may use in our files](https://
 **edit 29/08/2021**: As I have yet to follow this, this isn't mandatory yet, but you should name your commits as follows
 `emoji: description`
 
-* keep the description short (you may add a log description after two new lines)
-* do not make many changes per commits
+* keep the description short (you may add a log description after two newlines)
+* do not make a lot of changes per commit
 * emoji is one of these
   * 😎: added a section/content to a course
   * 🧐: improving content/rewording/fixing typos
