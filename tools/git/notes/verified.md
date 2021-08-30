@@ -10,3 +10,12 @@ The [official tutorial about GPG keys](https://docs.github.com/en/github/authent
 
 * [help on Stack Overflow](https://stackoverflow.com/questions/38384957/prevent-git-from-asking-for-the-gnupg-password-during-signing-a-commit)
 * [gpg-agent.conf](https://gist.github.com/tknv/43604e851a371949343b78261c48f190)
+
+My steps
+
+* see config `gpg-agent --gpgconf-list | head -n1`
+* edit the file shown / create it if needed (`~/.gnupg/gpg-agent.conf`)
+	* `max-cache-ttl 28800` (=8 hours)
+	* `default-cache-ttl 28800` (=8 hours)
+* save, and exit
+* reload: `gpg-connect-agent reloadagent /bye`

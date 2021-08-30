@@ -187,8 +187,8 @@ Instead of providing a SHA1, you may use one of these shortcuts
 * **HEAD^n**: the n-th commit before HEAD <span class="tms">(not working well on Windows)</span>
 * **HEAD~n**: the n-th commit before HEAD (same as ^)
 * **SHA1**: either the sort SHA1 such as `54b01d4a` or the whole SHA1
-* **HEAD@{two month ago}**: the closed commit that we made after a date
-* **HEAD@{2021-05-05}**: the closest commit after a date (YYYY-MM-DD)
+* **HEAD@{two month ago}**: the closed commit that we made after a date <span class="tms">(you may add "" on Windows)</span>
+* **HEAD@{2021-05-05}**: the closest commit after a date (YYYY-MM-DD) <span class="tms">(you may add "" on Windows)</span>
 * **origin/master@{two month ago}**: same as before, but we can add a branch
 
 <hr class="sl">
