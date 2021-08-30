@@ -109,6 +109,8 @@ By default, you are coding on a branch called `master` (or `main`). Let's explai
 
 ![Merge image - GitGraph.js](images/merge.png)
 
+> **Note**: if you think main is better than "master" then don't forget to add that to your config `git config --global init.defaultBranch main`.
+
 <hr class="sl">
 
 ## Good practices
@@ -151,6 +153,7 @@ Here are some functionalities that you can find on GitHub, but you may find thin
   * [Pages](github/pages.md): host your website on GitHub
   * [Project board](github/project.md): you can have your scrum board directly on GitHub
   * [Discussions](https://docs.github.com/en/discussions): you can allow discussions on GitHub
+  * [Fork](github/fork.md): you want to submit a pull request on a repository, but you can't create a branch (nor commit)
 * Special
   * [Digital Object Identifiers](github/doi.md): researchers' stuff
   * [Referencing code in PR/issues](github/ref-code.md): reference a line or a block of code in a PR or an issue
@@ -236,3 +239,5 @@ You may look at these cheat sheets
 * [git_commits_atomiques](https://francoisbrucker.github.io/cours_informatique/cours/dfs/git_commits_atomiques.html)
 * [git tutorial](https://dubrayn.github.io/IPS-DEV/git.html#1)
 * <https://github.com/nicoespeon/gitgraph.js/>
+* [Git & GitHub Desktop](https://docs.google.com/presentation/d/1vtK6LoqwF4rQQZZy-ovuEgsYUwwMRXsqDVMOjAPSBt0/edit#slide=id.gad119073e1_0_6)
+* [learn-git-milestones](https://github.com/omundy/learn-git-milestones)
