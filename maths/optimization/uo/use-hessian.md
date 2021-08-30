@@ -21,7 +21,7 @@ For each hessian, if it's
 * **negative semi-definite**: the point is a maximum global
 * **indefinite**: the point is a saddle point
 
-To find if the hessian the definiteness of a matrix, please check the matrix course. For a matrix 2x2, I noticed that
+To find if the definiteness of the hessian, please check the matrix course. For a matrix 2x2,
 
 * $\Delta_{1} \gt 0 \text{ and } \Delta_{2} \gt 0$: minimum local
 * $\Delta_{1} \gt 0 \text{ and } \Delta_{2} \lt 0$: saddle point
