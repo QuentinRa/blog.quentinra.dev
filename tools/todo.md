@@ -12,17 +12,11 @@
   - git tag
   - git reset
   - git filter-branch
-- Markdown
-    - https://www.markdownguide.org/tools/
-    - https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
-    - https://sitebulb.com/hints/indexability/canonical-tag-in-html-and-http-header/
-    - https://www.sanderheilbron.nl/seo-peek/instructions
 - Unity
   - read links
   - watch videos
   - https://gitlab.com/Nightmare_82/charactercreator
   - https://learn.unity.com/tutorial/unity-tips
-  - https://github.com/HotpotDesign/Game-Assets-And-Resources
   - https://web4.ensiie.fr/~bouyer/ipro.html
   - https://web4.ensiie.fr/~bouyer/jin.html
 - Vim
@@ -39,6 +33,5 @@
 
 ## Why not?
 
-https://codemirror.net/6/
-https://www.youtube.com/watch?v=GG0GVLYzkus
-Are Game Templates Useful Or Not | Corgi Engine | How To Become Bes...
+* https://codemirror.net/6/
+* https://www.youtube.com/watch?v=GG0GVLYzkus (Are Game Templates Useful Or Not | Corgi Engine | How To Become Bes...)

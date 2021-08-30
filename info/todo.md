@@ -50,6 +50,8 @@
       https://ahrefs.com/blog/semantic-search/
       https://ahrefs.com/blog/eat-seo/
     - https://github.com/garmeeh/next-seo
+    - https://www.sanderheilbron.nl/seo-peek/instructions
+    - https://sitebulb.com/hints/indexability/canonical-tag-in-html-and-http-header/
     - https://thriveagency.com/news/how-to-check-if-google-is-caching-your-website-correctly/
       https://ahrefs.com/blog/how-to-increase-website-authority/
     - https://ahrefs.com/blog/submit-website-to-search-engines/

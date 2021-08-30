@@ -35,6 +35,8 @@ This section was supposed to be in the VideoGames section (which does not exist 
   * [pixabay](https://pixabay.com/)
   * [Wallpaper Abyss](https://wall.alphacoders.com/) (according to the FAQ, you can't use the images for non-personal use unless the author agreed 😑)
 
+You got a quite long list of [websites here](https://hotpot.ai/free-game-assets) ([GitHub](https://github.com/HotpotDesign/Game-Assets-And-Resources)).
+
 <hr class="sr">
 
 ## Legal

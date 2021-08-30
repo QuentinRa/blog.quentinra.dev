@@ -243,3 +243,4 @@ And here are some HTML tags you may use
 * <https://guides.github.com/features/mastering-markdown/>
 * <https://sindresorhus.com/github-markdown-css/>
 * <https://www.jetbrains.com/help/hub/Markdown-Syntax.html>
+* <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>
