@@ -115,7 +115,7 @@ You can now check out your language course, as it should be explained how to wri
 
 This is something that I wasn't aware of, as it seems developers' often forgot, but we should write the tests of our interface. 
 
-You can write in a text file, a story of you using your app ("user story") which is a test. Write as many as needed. The tools checking the coverage of your code won't help us here. If you need to check everything, it might be long. 
+You can write in a text file, a story of you using your app ("user story") which is a test. Write as many as needed. The tools checking the coverage of your code won't help us here. If you need to check everything, it might take a while. 
 
 This is a compilation of notes, mainly for testing a website, but you should be able to use them everywhere.
 
@@ -131,7 +131,7 @@ This is a compilation of notes, mainly for testing a website, but you should be 
     * required?
     * limits on size/...?
   * test for injections
-  * test if some fields are removed/... is it robust?
+  * test removing fields, is it robust?
   * test if your website is **usable** 
     * not tiring to use
     * you may check the [HMI course](../hmi/index.md)
@@ -141,14 +141,14 @@ This is a compilation of notes, mainly for testing a website, but you should be 
   * if a text is too long, is the UI going wild?
   * is a feature disabled/not available on a browser?
   * is a feature required by a browser? ([polyfill](https://polyfill.io/v3/) might help)
-  * **I think** you should make sure your app is working perfectly inside ONE browser or inside ONE platform before targeting many of them
+  * **I think** you should make sure your app is working perfectly inside ONE browser or ONE platform before targeting many of them
 * other checks
   * test printing a page, is this what you expected?
   * don't forget to test error messages
 
 You might as well use logs and check if the logs are what you expected according to the user story.
 
-**edit 28/08/2021**: I found the website [Chromatic](https://www.chromatic.com/) which seems to provide free tool to test your UI. I haven't tested yet. Same for [katalon](https://www.katalon.com/).
+**edit 28/08/2021**: I found the website [Chromatic](https://www.chromatic.com/) which seems to provide a free tool to test your UI. I haven't tested yet. Same for [katalon](https://www.katalon.com/).
 
 <hr class="sl">
 

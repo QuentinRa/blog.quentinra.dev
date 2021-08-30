@@ -19,7 +19,7 @@ A lot of notes about a lot of things that can't be added to another course. This
 
 ## Assets
 
-This section was supposed to be in the VideoGames section (which does not exist yet), while mixing place in which you can find **images, musics, backgrounds, sfx, text, tools**, that you may use in a Game, Website, ...
+This section was supposed to be in the VideoGames section (which does not exist yet), while mixing place in which you can find **images, music, backgrounds, sfx, text, tools**, that you may use in a Game, Website, ...
 
 * **My favorite is**: [itch.io](https://itch.io/)
   * [wenrexa](https://wenrexa.itch.io/wenrexa-game-assets-1) (the **best** for UI-related stuff 😍, around $\\$40$)

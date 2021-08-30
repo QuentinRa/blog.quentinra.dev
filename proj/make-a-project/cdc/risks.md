@@ -53,7 +53,7 @@ r(c) = P(X = c) * severity(c)
 
 This is the probability of the cause happening by the severity of the cause. Generally, we are giving an arbitrary value: $0,\ 0.25,\ 0.50,\ 0.75,\ 1.0$ for both $P(X = c)$ and $severity(c)$.
 
-**edit 28/08/2021**: it seems to be have a name: [Probabilistic risk assessment](https://en.wikipedia.org/wiki/Probabilistic_risk_assessment).
+**edit 28/08/2021**: it seems to have a name: [Probabilistic risk assessment](https://en.wikipedia.org/wiki/Probabilistic_risk_assessment).
 
 <hr class="sl">
 
