@@ -34,15 +34,14 @@ yk <- function (x, z) { (-9 - 2 * x - 7 * z) / 10 }
 zk <- function (x, y) { (-20 - 2 * x - 7 * y) / 21  }
 
 # initial values
-n <- 3 # 3x3
-A <- matrix(c(4,2,2,2,10,7,2,7,21), nrow = n, ncol = n, byrow = TRUE)
+A <- matrix(c(4,2,2,2,10,7,2,7,21), 3, 3, byrow = TRUE)
 b <- c(12,-9,-20)
 
 # vector of 0
 k <- 0
-Xk <- rep(0, each = n)
+Xk <- rep(0, each = 3)
 # vector of 0.001
-e <- matrix(rep(0.001, each = n))
+e <- matrix(rep(0.001, each = 3))
 
 repeat {
 	# update our vector of values
@@ -81,8 +80,8 @@ Jacobi formula is
   \[
     \displaylines{
       \begin{align}\begin{aligned}
-    x^{(k+1)}
-    \Leftrightarrow D^{-1} * (L + U) * x^{(k)} + D^{-1} * b
+    X^{(k+1)}
+    \Leftrightarrow D^{-1} * (L + U) * X^{(k)} + D^{-1} * b
     \end{aligned}\end{align}
     }
   \]
@@ -90,10 +89,68 @@ Jacobi formula is
 
 with
 
-* b, that's the b in Ax=b
-* x, the result, after k iterations
-* D, a diagonal matrix
-* L, an upper triangular matrix, multiplied by -1
-* U, a lower triangular matrix, multiplied by -1
+* b: that's the vector b in AX=b
+* $X^{(k)}$: the result, after k iterations
+* D: a diagonal matrix
+* L: an upper triangular matrix, multiplied by -1
+* U: a lower triangular matrix, multiplied by -1
 
-And, we must have **A = D - L - U** <span class="tms">(you may see **A = D + L + U** too, but the formula for $x^{(k)}$ is different)</span>.
+And, we must have **A = D - L - U** <span class="tms">(you may see **A = D + L + U** too, but the formula for $X^{(k)}$ is different)</span>.
+
+<hr class="sr">
+
+## Example using the theory
+
+Since we have
+
+<div>
+\[
+A = \begin{pmatrix}4&2&2\\2&10&7\\2&7&21\\\end{pmatrix}
+\quad
+b = \begin{pmatrix}12\\-9\\-20\\\end{pmatrix}
+\]
+</div>
+
+We got
+
+<div>
+\[
+D = \begin{pmatrix}4&0&0\\0&10&0\\0&0&2\\\end{pmatrix}
+\quad
+L = \begin{pmatrix}0&0&0\\-2&0&0\\-2&-7&0\\\end{pmatrix}
+\quad
+U = \begin{pmatrix}0&-2&-2\\0&0&-7\\0&0&0\\\end{pmatrix}
+\]
+</div>
+
+```r
+A <- matrix(c(4,2,2,2,10,7,2,7,21), nrow = 3, ncol = 3)
+D <- diag(c(4,10,21))
+D.inv <- solve(D)
+U <- matrix(-c(0,0,0,2,0,0,2,7,0), 3, 3)
+L <- matrix(-c(0,2,2,0,0,7,0,0,0), 3, 3)
+Xk <- c(0,0,0)
+b <- c(12,-9,-20)
+
+# epsilon
+e <- matrix(rep(0.001, each = 3))
+
+identical(A, D - L - U) # ok?
+# [1] TRUE
+
+k <- 0
+repeat {
+	# update our vector of values
+	Xk <- D.inv %*% (L + U) %*% Xk + D.inv %*% b
+
+	r <- abs((A %*% Xk) - b)
+	# each absolute value of R is lesser than 0.001
+	if (sum(r < e) == 3) {
+		cat("End: k=", k, "\n");
+		cat("The result is\n")
+		cat(Xk, "\n")
+		break;
+	}
+	k <- k +1
+}
+```
