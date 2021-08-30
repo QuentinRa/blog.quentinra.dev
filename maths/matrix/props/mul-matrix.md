@@ -41,7 +41,7 @@ As for an explanation
 
 * we usually put your matrix in a reverse L
   * on top, the first matrix
-  * at the left side, the second matrix
+  * on the left side, the second matrix
   * and in the corner, the resulting matrix
 * for the value $a_{\color{red}{1}\color{blue}{1}}$ of the resulting matrix, we are doing
 

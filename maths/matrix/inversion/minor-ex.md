@@ -2,7 +2,7 @@
 
 [Go back](../index.md#definiteness-of-a-matrix)
 
-This is an example of evaluating the leading minor of matrix, as we explained in the previous page. Given the following matrix $A$,
+This is an example of evaluating the leading minor of a matrix, as we explained on the previous page. Given the following matrix $A$,
 
 <p>
 \[

@@ -41,7 +41,7 @@ X = \begin{split}\begin{pmatrix}\lambda & 0 \\0 & \lambda \end{pmatrix}
 
 ## Step 2
 
-Solve $det(\lambda{I_n}-A_n) = 0$. We know that $det(A_2) = ad-bc$ is so we have
+Solve $det(\lambda{I_n}-A_n) = 0$. We know that $det(A_2) = ad-bc$, so we have
 
 <div class="overflow-auto">
 \[

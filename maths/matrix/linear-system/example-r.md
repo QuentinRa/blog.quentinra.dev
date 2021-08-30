@@ -20,7 +20,7 @@ b = \begin{pmatrix}3 \\ 0\end{pmatrix}
 
 ## Solving using GAUSS
 
-We used the GAUSS method (you got more methods in the numerical analysis course), which could be coded as follow in **R**
+We used the GAUSS method (you got more methods in the numerical analysis course), which could be coded as follows in **R**
 
 ```r
 library('matlib')

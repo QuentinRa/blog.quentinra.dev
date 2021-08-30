@@ -49,7 +49,7 @@ What's convenient is that you can use a matrix for that because the GAUSS method
 
 ## Named matrices
 
-In French, we will call theses `Matrices remarquables`.
+In French, we will call these `Matrices remarquables`.
 
 The matrix **you must remember** is called **Identity matrix** (`Matrice identité`) $Id_n$ or $I_n$. This is a diagonal matrix having $1$ on the diagonal, which mean we have $A_n * Id_n = Id_n * A_n = A_n$. In **R**, you can create it with `diag(n)`.
 
@@ -268,7 +268,7 @@ The determinant of $A$, $det(A)=|A|$ is a value that is indicating if we can inv
   * using the [simplified formula for 2x2 matrix](inversion/2x2.md)
   * using the [cofactor expansion](inversion/minor.md)
   * using [GAUSS elimination](inversion/gauss-det.md)
-  * in **R**, use the function `det` as follow `det(A)`
+  * in **R**, use the function `det` as follows `det(A)`
 
 Then, once you have checked the determinant, you can invert a matrix using
 
@@ -279,7 +279,7 @@ Then, once you have checked the determinant, you can invert a matrix using
 
 ## Definiteness of a matrix
 
-You may be asked a lot of times, to check the definiteness of a matrix. You can either find the eigenvalues ($\lambda$, as you can learn in the next section), or check the leading minors ($\Delta$, that you will learn in this section).
+Many times, you will be asked to check the definiteness of a matrix. You can either find the eigenvalues ($\lambda$, as you can learn in the next section), or check the leading minors ($\Delta$, that you will learn in this section).
 
 |          Name              | **eigenvalues** | **minors** |
 |----------------------------|-----------------|-----------------|

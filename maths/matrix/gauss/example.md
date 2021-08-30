@@ -2,7 +2,7 @@
 
 [Go back](../index.md#gaussian-elimination)
 
-We will solve by ourself the following system, using GAUSS method. If you're wondering how you can do that in **R**, this was [explained in this page](../linear-system/example-r.md).
+We will solve by ourselves the following system, using the GAUSS method. If you're wondering how you can do that in **R**, this was [explained on this page](../linear-system/example-r.md).
 
 <div class="overflow-auto">
 \[

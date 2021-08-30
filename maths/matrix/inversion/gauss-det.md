@@ -2,7 +2,7 @@
 
 [Go back](../index.md#matrix-inversion)
 
-To find the determinant, you need to make reduce a matrix to an upper diagonal matrix, then use the property "$det(A)$=product of the values on the diagonal".
+To find the determinant, you need to reduce a matrix to an upper diagonal matrix, then use the property "$det(A)$=product of the values on the diagonal" to find the determinant.
 
 If you swapped lines, then multiply the result by
 

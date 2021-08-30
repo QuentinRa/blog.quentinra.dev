@@ -2,7 +2,7 @@
 
 [Go back](../index.md#linear-system)
 
-We are considering the following the system, which we will rewrite into a matrix $A$, and a vector $b$.
+We are considering the following system, which we will rewrite into a matrix $A$, and a vector $b$.
 
 <div>
 \[

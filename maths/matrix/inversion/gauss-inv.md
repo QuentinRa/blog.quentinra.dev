@@ -2,7 +2,7 @@
 
 [Go back](../index.md#matrix-inversion)
 
-You will use GAUSS like you always did, but you will work on two matrices. Given your matrix $A_n$, you will have to reduce it so that it becomes $I_n$. While, in the same time, repeating every step you did on $A$, on a matrix $I_n$, which will results in $A^{-1}$. 
+You will use GAUSS like you always did, but you will work on two matrices. Given your matrix $A_n$, you will have to reduce it so that it becomes $I_n$. While, at the same time, repeating every step you did on $A$, on a matrix $I_n$, which will result in $A^{-1}$.
 
 <hr class="sl">
 
