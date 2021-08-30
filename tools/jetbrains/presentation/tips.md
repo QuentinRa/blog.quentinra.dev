@@ -29,3 +29,19 @@ You may add here tips that many people may look for, especially when this is a t
 You may call a variable ``ignore``, sometimes (in a try-catch, for instance), JetBrains understand that you won't use this variable for a reason.
 
 Otherwise, when you're using <kbd>alt+enter</kbd>, on each patch suggested you got a small arrow, and you may suppress the warning inside.
+
+<hr class="sr">
+
+### Soft wraps
+
+If a line is too long for being completely displayed in your screen, as it may happens in JSON files (since you can't make multilines Strings), you can enable auto-wrapping
+
+* right after the line number,
+* right-click and enable soft-wrap
+
+If you want something permanent, 
+
+* <kbd>Shift-Shift</kbd>
+* "soft wrap"
+* "soft wrap these files"
+* and add your file extension

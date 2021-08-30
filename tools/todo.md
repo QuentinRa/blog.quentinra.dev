@@ -7,9 +7,7 @@
     - JLink artifacts
     - "documentation" support
     - add a project icon
-    - preview in the editor
     - CTest
-    - soft wraps
     - update screens
     - shortcuts: replace "*", "@", "^" by "{L}", "{R}", and "{S}"
 - Git
