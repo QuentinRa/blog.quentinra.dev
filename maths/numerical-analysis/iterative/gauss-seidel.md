@@ -97,7 +97,7 @@ with
 * L, an upper triangular matrix, multiplied by -1
 * U, a lower triangular matrix, multiplied by -1
 
-And, we must have **A = D - L - U** <span class="tms">(you may see **A = D + L + U** too, but the formula for $x^{(k+1)}$ is is different)</span>.
+And, we must have **A = D - L - U** <span class="tms">(you may see **A = D + L + U** too, but the formula for $X^{(k+1)}$ is is different)</span>.
 
 <hr class="sr">
 
@@ -107,13 +107,13 @@ Using the code we wrote for the Jacobi method,
 
 
 ```r
-# ...
+# ... cf Jacobi ...
+# evaluated once
 DL.inv <- solve(D - L)
-# ...
 
 repeat {
     # we are only changing this line
 	Xk <- DL.inv %*% (b + U %*% Xk)
-    # ...
+	# ... cf Jacobi ...
 }
 ```

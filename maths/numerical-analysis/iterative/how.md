@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-First, I had a hard time with the formula, so I'm going to explain everything with a table. If you know a way of explaining things smoothly, then you can add it. I will let the formula for each method at the end of each page, but without any examples.
+First, I had a hard time with the formulas, so I'm going to introduce everything with a table first, then the code in R (which looks bad), then I will introduce the formulas, and finally the code in R using the formulas (which is better).
 
 We will be starting from a system that will be given to us. 
 
@@ -24,4 +24,4 @@ Once you do have this, your first job will be to write each line like this
 
 For the first variable, I used the first line and put ``x = the rest``. The same for the second variable and second line, etc.
 
-**Each algorithm will be explained starting from this**. The idea will be almost the same, but in the end, you are going to do some iterations using a table (instead of the formula, as I told you above), and get your $X^{(k)}$.
+**Each algorithm will be explained starting from this**. The idea will be almost the same, but in the end, you are going to do some iterations using a table (or the formula), and get your $X^{(k)}$.

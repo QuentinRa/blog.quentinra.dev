@@ -105,8 +105,8 @@ SOR formula is
   \[
     \displaylines{
       \begin{align}\begin{aligned}
-    x^{k+1} = (\frac{1}{\omega} D - L)^{-1}
-    * (b + [((\frac{1}{\omega} - 1) * D + U) * x^k])
+    X^{k+1} = (\frac{1}{\omega} D - L)^{-1}
+    * (b + [((\frac{1}{\omega} - 1) * D + U) * X^{(k)}])
     \end{aligned}\end{align}
     }
   \]
@@ -119,9 +119,29 @@ with
   * omega > 0 and < 1: Jacobi
   * omega = 1: Gauss-Seidel
   * omega > 1: SOR
-* x, the result, after k iterations
+* $X^{(k)}$: the result, after k iterations
 * D, a diagonal matrix
 * L, an upper triangular matrix, multiplied by -1
 * U, a lower triangular matrix, multiplied by -1
 
-And, we must have **A = D - L - U** <span class="tms">(you may see **A = D + L + U** too, but the formula for $x^{(k+1)}$ is is different)</span>.
+And, we must have **A = D - L - U** <span class="tms">(you may see **A = D + L + U** too, but the formula for $X^{(k+1)}$ is is different)</span>.
+
+<hr class="sr">
+
+## Example using the theory
+
+Using the code we wrote for the Jacobi method,
+
+```r
+# ... cf Jacobi ...
+omega <- 1.1
+# evaluated once
+PART1 <- solve(((1/omega) * D) - L)
+PART2 <- (1/omega - 1) * D + U
+
+repeat {
+    # we are only changing this line
+	Xk <- PART1 %*% (b + PART2 %*% Xk)
+    # ... cf Jacobi ...
+}
+```

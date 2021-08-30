@@ -126,22 +126,20 @@ U = \begin{pmatrix}0&-2&-2\\0&0&-7\\0&0&0\\\end{pmatrix}
 ```r
 A <- matrix(c(4,2,2,2,10,7,2,7,21), nrow = 3, ncol = 3)
 D <- diag(c(4,10,21))
-D.inv <- solve(D)
 U <- matrix(-c(0,0,0,2,0,0,2,7,0), 3, 3)
 L <- matrix(-c(0,2,2,0,0,7,0,0,0), 3, 3)
 Xk <- c(0,0,0)
 b <- c(12,-9,-20)
-
-# epsilon
 e <- matrix(rep(0.001, each = 3))
-
-identical(A, D - L - U) # ok?
-# [1] TRUE
-
 k <- 0
+# evaluated once
+D.inv <- solve(D)
+PART1 <- D.inv %*% (L + U)
+PART2 <- D.inv %*% b 
+
 repeat {
 	# update our vector of values
-	Xk <- D.inv %*% (L + U) %*% Xk + D.inv %*% b
+	Xk <- PART1 %*% (b + PART2 %*% Xk)
 
 	r <- abs((A %*% Xk) - b)
 	# each absolute value of R is lesser than 0.001
