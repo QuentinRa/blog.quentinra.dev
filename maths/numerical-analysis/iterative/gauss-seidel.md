@@ -83,7 +83,7 @@ Gauss-seidel formula is
   \[
     \displaylines{
       \begin{align}\begin{aligned}
-    x^{(k+1)} = (D-L)^{-1} * (b + U * x^{(k)})
+    X^{(k+1)} = (D-L)^{-1} * (b + U * X^{(k)})
     \end{aligned}\end{align}
     }
   \]
@@ -92,9 +92,28 @@ Gauss-seidel formula is
 with
 
 * b, that's the b in Ax=b
-* x, the result, after k iterations
+* $X^{(k)}$: the result, after k iterations
 * D, a diagonal matrix
 * L, an upper triangular matrix, multiplied by -1
 * U, a lower triangular matrix, multiplied by -1
 
 And, we must have **A = D - L - U** <span class="tms">(you may see **A = D + L + U** too, but the formula for $x^{(k+1)}$ is is different)</span>.
+
+<hr class="sr">
+
+## Example using the theory
+
+Using the code we wrote for the Jacobi method,
+
+
+```r
+# ...
+DL.inv <- solve(D - L)
+# ...
+
+repeat {
+    # we are only changing this line
+	Xk <- DL.inv %*% (b + U %*% Xk)
+    # ...
+}
+```
