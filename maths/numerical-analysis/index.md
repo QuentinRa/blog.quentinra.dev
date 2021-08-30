@@ -109,11 +109,11 @@ Calculations are made in one go.
 
 ## Iterative methods
 
-An iterative method is a method approaching $x$. We are calling $x^{(k)}$, the result after $k$ iterations. We are usually stopping when the estimated error is lesser than $\epsilon$, the greatest error we are allowing.
+An iterative method is a method approaching $X$. We are calling $X^{(k)}$, the result after $k$ iterations. We are usually stopping when the estimated error is lesser than $\epsilon$, the greatest error we are allowing.
 
-* estimated error: $\frac{|| A x^{(k)} - b ||}{||b||}$
+* estimated error: $\frac{|| A X^{(k)} - b ||}{||b||}$
 * epsilon is a positive value, usually we are using **0.001**
-* stop when $\frac{|| A x^{(k)} - b ||}{||b||} \le \epsilon$
+* stop when $\frac{|| A X^{(k)} - b ||}{||b||} \le \epsilon$
 
 The algorithms you may use are
 

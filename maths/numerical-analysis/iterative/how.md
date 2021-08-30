@@ -16,12 +16,12 @@ We will be starting from a system that will be given to us.
 \]
 </p>
 
-Once you do have this, your first job will be to write each [ variable = an expression ] like this
+Once you do have this, your first job will be to write each line like this
 
-* $x_{n+1}(x, y, z) = \frac{12 - 2 * y - 2 * z}{4}$
-* $y_{n+1}(x, y, z) = \frac{-9 - 2 * x - 7 * z}{10}$
-* $z_{n+1}(x,y,z) = \frac{-20 - 2 * x - 7 * y}{21}$
+* $x^{(k)} = \frac{12 - 2 * y - 2 * z}{4}$
+* $y^{(k)} = \frac{-9 - 2 * x - 7 * z}{10}$
+* $z^{(k)} = \frac{-20 - 2 * x - 7 * y}{21}$
 
 For the first variable, I used the first line and put ``x = the rest``. The same for the second variable and second line, etc.
 
-**Each algorithm will be explained starting from this**. The idea will be almost the same, but in the end, you are going to do some iterations using a table (instead of the formula, as I told you above).
+**Each algorithm will be explained starting from this**. The idea will be almost the same, but in the end, you are going to do some iterations using a table (instead of the formula, as I told you above), and get your $X^{(k)}$.
