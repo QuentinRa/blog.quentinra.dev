@@ -18,9 +18,9 @@ We will be starting from a system that will be given to us.
 
 Once you do have this, your first job will be to write each line like this
 
-* $x^{(k)} = \frac{12 - 2 * y - 2 * z}{4}$
-* $y^{(k)} = \frac{-9 - 2 * x - 7 * z}{10}$
-* $z^{(k)} = \frac{-20 - 2 * x - 7 * y}{21}$
+* $x^{(k+1)} = \frac{12 - 2 * y - 2 * z}{4}$
+* $y^{(k+1)} = \frac{-9 - 2 * x - 7 * z}{10}$
+* $z^{(k+1)} = \frac{-20 - 2 * x - 7 * y}{21}$
 
 For the first variable, I used the first line and put ``x = the rest``. The same for the second variable and second line, etc.
 

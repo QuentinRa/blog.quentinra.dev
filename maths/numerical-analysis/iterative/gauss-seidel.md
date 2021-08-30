@@ -10,9 +10,9 @@ The Gauss-Seidel method is very similar to the Jacobi method, but you don't way 
 
 We are using a vector of zeros for our starting point is $X^{(0)} = (0,0,0)$. As a remember, we had
 
-* $x^{(k)} = \frac{12 - 2 * y - 2 * z}{4}$
-* $y^{(k)} = \frac{-9 - 2 * x - 7 * z}{10}$
-* $z^{(k)} = \frac{-20 - 2 * x - 7 * y}{21}$
+* $x^{(k+1)} = \frac{12 - 2 * y - 2 * z}{4}$
+* $y^{(k+1)} = \frac{-9 - 2 * x - 7 * z}{10}$
+* $z^{(k+1)} = \frac{-20 - 2 * x - 7 * y}{21}$
 
 | var | i=0 | i=1 | i=2 | ... | $i\ge10$ |
 | ------ | ------ | ------ | ------ | ------ | ------ |
