@@ -24,6 +24,22 @@ Source: "a\path\to\app\*"; DestDir: "{app}\app"; Flags: ignoreversion recursesub
 
 <hr class="sl">
 
+## Run from the command line
+
+You can run your setup from the command line, it can be useful if you want to run an installer from another program.
+
+```bash
+# only show the progress bar
+> file.exe /SILENT
+# no installer
+> file.exe /VERYSILENT
+# no installer, check the task "desktopicon" and "postinstall"
+# (if you got these tasks)
+> file.exe /VERYSILENT /MERGETASKS="desktopicon,postinstall"
+```
+
+<hr class="sl">
+
 ## Sources
 
 * <https://documentation.help/Inno-Setup/topic_whatisinnosetup.htm>

@@ -1,10 +1,6 @@
 ## Todo
 
 - Json and JSON5, yaml
-- InnoSetup
-  - add flags used in Eden
-- Docker
-    - check docker notes (sound)
 - JetBrains
     - CLion test Makefile
     - new JavaFX wizard
