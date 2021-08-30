@@ -9,7 +9,6 @@
     - add a project icon
     - CTest
     - update screens
-    - shortcuts: replace "*", "@", "^" by "{L}", "{R}", and "{S}"
 - Git
   - Fork
   - git diff --check

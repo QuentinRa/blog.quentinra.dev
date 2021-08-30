@@ -5,9 +5,9 @@
 I will list almost all shortcuts that you may use there. But, if a shortcut is only available in one IDE, it won't be listed here. Here is my syntax for the following shortcuts
 
 * <kbd>a+b</kbd>: press `a` and `b` at the same time
-* <kbd>*+b</kbd>: left click and `b` at the same time
-* <kbd>@+b</kbd>: right click and `b` at the same time
-* <kbd>^+b</kbd>: select something and `b` at the same time
+* <kbd>{L}+b</kbd>: left click and `b` at the same time
+* <kbd>{R}+b</kbd>: right click and `b` at the same time
+* <kbd>{S}+b</kbd>: select something and `b` at the same time
 
 <hr class="sl">
 
@@ -25,8 +25,8 @@ Also, take note that you can easily select a pack of lines by pressing <kbd>SHIF
 
 And the two great ones are
 
-* <kbd>^+CTRL+/</kbd>: do an inline comment for all lines selected.
-* <kbd>^+CTRL+SHIFT+/</kbd>: do a block comment for all lines selected.
+* <kbd>{S}+CTRL+/</kbd>: do an inline comment for all lines selected.
+* <kbd>{S}+CTRL+SHIFT+/</kbd>: do a block comment for all lines selected.
 
 <hr class="sr">
 
@@ -47,16 +47,16 @@ And the two great ones are
 ## In Object-oriented IDE languages files
 
 * <kbd>ALT+INSERT</kbd>: generates methods (such as getters/setters/constructors/implements in JAVA)
-* <kbd>^+CTRL+ALT+T</kbd>: generate a block of code around selection (if, try catch, ...)
+* <kbd>{S}+CTRL+ALT+T</kbd>: generate a block of code around selection (if, try catch, ...)
 * <kbd>CTRL+SHIFT+T</kbd>: generates test class
-* <kbd>CTRL+*</kbd>: click on a method/class/... to view usages
+* <kbd>CTRL+{L}</kbd>: click on a method/class/... to view usages
 
 <hr class="sr">
 
 ## You may use
 
 * <kbd>CTRL+SHIFT+G</kbd>: open a sort of file view menu (inside a file)
-* <kbd>^+CTRL+SHIFT+U</kbd>: uppercase to lowercase or lowercase to uppercase
+* <kbd>{S}+CTRL+SHIFT+U</kbd>: uppercase to lowercase or lowercase to uppercase
 * <kbd>CTRL+G</kbd>: to move to a line
 * <kbd>CTRL+R</kbd>: replace some text
 * <kbd>ALT+7</kbd>: beware and do not use the 7 of your numpad. This opens a popup with the structure of the file. In Oriented-object languages, you could see all the classes in a file, methods, ... and can easily navigate to one.
