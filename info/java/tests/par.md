@@ -1,12 +1,8 @@
 # Parametric tests
 
-[Go back](..)
+[Go back](../index.md#tests-with-junit)
 
-A parametric test is a test repeated as long a a
-stream of data is not depleted.
-You will create one or more methods returning
-a stream of data that will be used as the value for
-our arguments.
+A parametric test is a test repeated as long a a stream of data is not depleted. You will create one or more methods returning a stream of data that will be used as the value for our arguments.
 
 ```java
 // we are in a test class
@@ -62,9 +58,6 @@ monTest(5) // from test (first value
 
 On JUnit4, here some old notes,
 
-* annotate class ``@RunWith(Parameterized.class)``
-* the Parameterized class must have a constructor
-having the method parameters
-* a ``static`` method annotated `@Parameterized.Parameters`
-returning a Collection (Arrays.asList()) of each object
-  we want to test in the test method
+* annotate class `@RunWith(Parameterized.class)`
+* the Parameterized class must have a constructor having the method parameters
+* a `static` method annotated `@Parameterized.Parameters` returning a Collection (Arrays.asList()) of each object we want to test in the test method

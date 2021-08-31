@@ -1,27 +1,24 @@
 # Writing a test suite
 
-[Go back](..)
+[Go back](../index.md#tests-with-junit)
 
-You may have to do some tests that require
-the same variables but are checking different
-things or like the same thing to be done before
-each test or after each test.
+You may have to do some tests that require the same variables but are checking different things or like the same thing to be done before each test or after each test.
 
 You can do that using
 
-* ``@BeforeAll - Junit5`` / `@BeforeClass - Junit4`
+* `@BeforeAll - Junit5` / `@BeforeClass - Junit4`
   
 Before all tests.
 
-* ``@AfterAll - Junit5`` / `@BeforeClass - Junit4`
+* `@AfterAll - Junit5` / `@BeforeClass - Junit4`
 
 After all tests.
 
-* ``@BeforeEach - Junit5`` / `@Before - Junit4`
+* `@BeforeEach - Junit5` / `@Before - Junit4`
   
 Before each test.
 
-* ``@AfterEach - Junit5`` / `@After - Junit4`
+* `@AfterEach - Junit5` / `@After - Junit4`
 
 After each test.
 

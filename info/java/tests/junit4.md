@@ -1,9 +1,8 @@
 # JUnit4
 
-[Go back](..)
+[Go back](../index.md#tests-with-junit)
 
-This is a save of some code from JUnit4, go look
-for JUnit5!
+This is a save of some code from JUnit4, go look for JUnit5!
 
 ```java
 import org.junit.runner.JUnitCore;
