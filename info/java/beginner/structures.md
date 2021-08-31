@@ -2,7 +2,9 @@
 
 [Go back](../index.md#beginner)
 
-Please take note that in Java, a condition must be either true or false. Values such as 1 or 0 are not working since they are not true nor false.
+As usual, you will find most of the statement you could expect (if, for i, while, do while), and some new statements (or not) such as for each, switch (and ehanched switch) etc.
+
+Please take note that in Java, a condition must be either true or false. Values such as 1 or 0 are not working (they would in C).
 
 ```java
 boolean cond = ...; // some value here
@@ -15,16 +17,23 @@ Also please take note that in a loop, you can use these two keywords
 
 <hr class="sr">
 
+## if statement
+
 ```java
 if(cond){}
 if(cond){} else {}
 if(cond){} else if {}
 if(cond){} else if {} else {}
+
+// inline
+// cond?if_true:if_value
+// example
+ìnt v = cond? 5 : 7;
 ```
 
-Or some inline version ``ìnt v = cond? 5 : 7;`` for instance where the syntax is ``cond?if_true:if_value``.
-
 <hr class="sl">
+
+## for i
 
 ```java
 for(int i=0; i < ... ; i++){}
@@ -32,17 +41,23 @@ for(int i=0; i < ... ; i++){}
 
 <hr class="sr">
 
+## while
+
 ```java
 while (cond) {}
 ```
 
 <hr class="sl">
 
+## do while
+
 ```java
 do { } while(cond);
 ```
 
 <hr class="sr">
+
+## for each
 
 Here a new one, the foreach
 
@@ -54,6 +69,8 @@ for (Integer e: new Integer[]{5,6,7}) {
 ```
 
 <hr class="sl">
+
+## switch
 
 Then the switch case
 
@@ -82,17 +99,14 @@ switch (x){
 }
 ```
 
-You could also make something like that
+You could also make something like that (a stupid example, but you can see the word yield to return the value)
 
 ```java
 String result = switch (s) {
-    case "0", "1" -> "yes/no";
-    default -> {
-        for (int i = 2; i < 5; i++) {
-            if (s.equals(i+""))
-                yield s;
-        }
-        yield "";
-    }
+	case "John", "Jane" -> "yes";
+	default -> {
+		int length = s.length();
+		yield length % 2 == 0 ? "yes" : "no";
+	}
 };
 ```

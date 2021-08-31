@@ -6,7 +6,7 @@ We got every usual operator, which mean most of the ones you got in `C`, but we 
 
 <hr class="sr">
 
-**Operations**
+## Operations
 
 * `=`: assignation
 * `+`, `-`, `*`, `/`
@@ -15,7 +15,7 @@ We got every usual operator, which mean most of the ones you got in `C`, but we 
 
 <hr class="sl">
 
-**Comparison**
+## Comparison
 
 * `>`, `>=`, `<`, `<=`
 * `!=`: different
@@ -24,7 +24,7 @@ We got every usual operator, which mean most of the ones you got in `C`, but we 
 
 <hr class="sr">
 
-**Utilities**
+## Utilities
 
 * `+=`, `-=`, `*=`, `/=`
 * `var++`: we are increase the value after doing any operation
@@ -34,7 +34,7 @@ We got every usual operator, which mean most of the ones you got in `C`, but we 
 
 <hr class="sl">
 
-**Equality**
+## Equality
 
 We are using `==` to compare if two primitives types
 have the same value. Also if an object is null, we are

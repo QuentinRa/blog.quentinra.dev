@@ -8,9 +8,9 @@ Java have 8 primitives types, and aside from these, every variable is an object 
 * **byte**: 8 bits
 * **short**: 16 bits
 * **char**: **16 bits**, a character such as ``'5'``
-* **int**: 32bits, ``5``
-* **float**: 32 bits, value such as ``5.0f``
-* **double**: 32bits, ``5.0`` or ``5.0d``
+* **int**: 32bits, a value such as `5`
+* **float**: 32 bits, a value such as ``5.0f``
+* **double**: 32bits, a value could be either `5.0` or `5.0d`
 * **long**: 64 bits
 
 <hr class="sr">

@@ -12,9 +12,9 @@ At first, we can say that a **package** is a folder. For instance, you can put y
 
 But there are some rules
 
-* you must replace `path_separators`(/, \, ...) by a `.` (dot)
+* you must replace **path separators** (/, \\) with `.` (dot)
 * usually, the root package is a TLD (com, org, fr, net, ...)
-* you must **only** use lowercase characters, no _ or A-Z, ...
+* you must **only use lowercase characters**, no _ or A-Z, ...
 
 So a package name usually looks like this `package com.lgs.memorize;`. That's mean that we will have a folder `com`, and a folder `lgs` inside, and a folder `memorize`. 
 
@@ -30,7 +30,7 @@ public class Test {}
 
 ## Import
 
-When you need classes from another package, such as `File` class, you need to import the package having the class `File`. Check the documentation then you found that the package is `java.io;` so you can write
+When you need classes from another package, such as `File` class, you need to import the package having the class `File`. Check the documentation, and once you found that the package is `java.io;` so you can write
 
 ```java
 // import File class only
@@ -58,7 +58,7 @@ Usually, you write a ``package.info`` in each one of your packages.
 
 ```java
 /**
-* some Javadoc here, see Javadoc page
+* some Javadoc here, see the Javadoc section
 */
 package com.lgs.memorize;
 ```

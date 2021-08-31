@@ -1,4 +1,4 @@
-# MCQ about Introduction section
+# MCQ about the Introduction section
 
 [Go back](../index.md#vocabulary)
 
