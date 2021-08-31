@@ -2,7 +2,11 @@
 
 [Go back](../index.md#beginner)
 
-**Question 1**
+I do admit that some questions are too complex for a beginner, but they aren't that hard, and some of them are fun (are least to me), so I hope you will learn a lot 😄.
+
+<hr class="sl">
+
+## Question 1
 
 How many primitives types there are in Java?
 
@@ -12,7 +16,7 @@ How many primitives types there are in Java?
 
 <hr class="sr">
 
-**Question 2**
+## Question 2
 
 On how many bits the primitive type ``char`` is defined?
 
@@ -22,7 +26,7 @@ It's <b>16</b> bits and not 8 like usual, because Java bet that we will use UTF-
 
 <hr class="sl">
 
-**Question 3**
+## Question 3
 
 Could you guess what's this code doing?
 
@@ -40,17 +44,17 @@ It's not working! <b>2.0</b> is a double not a float! But increase n is working 
 
 <hr class="sr">
 
-**Question 4**
+## Question 4
 
-Which instruction are we using in java to go to the next turn of a loop? (next, pass, continue, skip, do, goto)
+Which instruction are we using in Java to go to the next turn of a loop? (next, pass, continue, skip, do, goto)
 
 <blockquote class="spoiler">
-It's <b>continue</b> keyword!
+It's the keyword <b>continue</b>!
 </blockquote>
 
 <hr class="sl">
 
-**Question 5**
+## Question 5
 
 What's the difference between ``==`` and `equals`.
 
@@ -60,7 +64,7 @@ None by default, they both check if two objects have the same address. But a cla
 
 <hr class="sr">
 
-**Question 6**
+## Question 6
 
 What's this code is doing ``object.equals(null)``?
 
@@ -70,7 +74,7 @@ This code is returning false if object is not null, but if object is null, we ha
 
 <hr class="sl">
 
-**Question 7**
+## Question 7
 
 What are we doing in this statement: ``public interface Human implements Living {}`` with Living another interface?
 
@@ -80,7 +84,7 @@ The keyword is <b>wrong</b>, we should use <b>extends</b>. If extends was used, 
 
 <hr class="sr">
 
-**Question 8**
+## Question 8
 
 How many methods a ``FunctionalInterface`` can have?
 
@@ -90,7 +94,7 @@ One abstract method, no other restrictions.
 
 <hr class="sl">
 
-**Question 9**
+## Question 9
 
 With A a superclass, and B a subclass, using **Liskov substitution principle** (`polymorphisme d'héritage`), what statement are valid?
 
@@ -107,7 +111,7 @@ Statements 2,3,6 are valid. In 5, v2 is of type A so you can't call B methods (e
 
 <hr class="sr">
 
-**Question 10**
+## Question 10
 
 In java >= 8, an interface can have
 
@@ -125,7 +129,7 @@ Concrete (since java>=8) or abstract methods. constant class attributes and clas
 
 <hr class="sl">
 
-**Question 11**
+## Question 11
 
 How do we call what we are doing when we are declaring a lot of methods with the same name in a class?
 

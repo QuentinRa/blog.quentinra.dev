@@ -15,7 +15,7 @@ Some notes
 
 <hr class="sl">
 
-**super**
+## super
 
 In an instance, you could use `this` to refer to the current instance. Here we have a new keyword `super` referring to the superclass.
 
@@ -24,7 +24,7 @@ In an instance, you could use `this` to refer to the current instance. Here we h
 
 <hr class="sr">
 
-**Liskov substitution**
+## Liskov substitution
 
 And finally, we have the **Liskov substitution principle**. When you are creating a subclass, all properties of the parent are inherited by the children and you may add new ones. So the children can be used in methods/... where the parent was used!
 

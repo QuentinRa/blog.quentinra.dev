@@ -12,6 +12,12 @@ Inheritors would have to write the code of all abstract methods or become abstra
 
 **Note**: a method can't be **static** and **abstract**.
 
+<hr class="sl">
+
+## Example
+
+I'm showing the syntax, but the example isn't that good 😣.
+
 ```java
 public abstract class Animal {
     private final String specie;
@@ -33,6 +39,6 @@ public class Wolf extends Animal {
     }
     
     @Override
-    public int getSize() { return 0; }
+    public int getSize() { return 0 /* do something */; }
 }
 ```

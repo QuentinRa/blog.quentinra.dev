@@ -21,7 +21,11 @@ String toString();
 void finalize();
 ```
 
-Note the new operator `x instanceof y`, returning true if `x` is an instance a `y` or a subclass of `y`. If `x` is null, then false is returned. If you need an auto-cast version of this operator, you can do `x instanceof y name` where `name` will be `x` cast in the type of `y`.
+<hr class="sl">
+
+## Instanceof
+
+Note the new operator **x instanceof y**, returning true if x is an instance a y or a subclass of y. If x is null, then false is returned. If you need an auto-cast version of this operator, you can do, since Java 14, **x instanceof y name** with `name` a variable containing x casted in the type of y.
 
 ```java
 // java < 14
@@ -40,7 +44,7 @@ Sometimes, you may not want to use `instanceof y` since that would mean subclass
 
 <hr class="sr">
 
-**equals**
+## equals
 
 For the equals methods, you will usually write some code returning true or false if `this` (our object) is equals (up to you what equals mean) to `obj`.
 
@@ -86,14 +90,16 @@ System.out.println(empty.equals(calistro)); // NullPointerException
 
 <hr class="sl">
 
-Then for **hashcode**, you simply need to remember that **two objects that are equals will have the same hashcode**. Then when you write your equals, make sure that your hashcode respects this.
+## hashCode
+
+Then for **hashCode**, you simply need to remember that **two objects that are equals will have the same hashCode**. When you write your equals, make sure that your hashCode is following this property (two objects having the same hashCode may not be equals).
 
 Here some help
 
-* calling hashCode on an object (ex: `name.hashCode()`)
-* same, but return 0 if null using Objects (ex: `Objects.hashCode(name)`)
+* you can call hashCode on an object (ex: `name.hashCode()`)
+* same, but returns 0 if "name" is null (ex: `Objects.hashCode(name)`)
 
-or you can explicitly write the hashcode algorithm.
+or you can explicitly write the hashCode algorithm.
 
 ```java
 @Override // made by David Roussel
@@ -121,7 +127,7 @@ public int hashCode() {
 
 <hr class="sr">
 
-**clone**
+## clone
 
 Clone is protected by default, you need to set this method to public.
 
@@ -141,7 +147,7 @@ public Object clone() {
 
 <hr class="sl">
 
-**toString**
+## toString
 
 This method is used to write an object as a string. It's pretty useful when you are debugging (format is up to you).
 
@@ -163,7 +169,7 @@ System.out.println(calistro.toString()); // that's the same
 
 <hr class="sr">
 
-**finalize**
+## Finalize
 
 Here you can write some code, only if you are still using it (as explained is the garbage collector part before).
 

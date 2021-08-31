@@ -2,7 +2,7 @@
 
 [Go back](../index.md#beginner)
 
-An **interface** is a new type of class where
+An **interface** is a new type of class, mainly used to ensure that a class will have some methods (as we did using abstract classes, but this time you can "implement" many interfaces)
 
 * everything is public: attributes and methods
 * you can only declare `public static final` kind of attributes (meaning static constants)
@@ -11,11 +11,9 @@ An **interface** is a new type of class where
 
 We are using interfaces because a class can inherit one class, but many interfaces. With that, we can use the **Liskov substitution principle** with each interface `implemented` (that the keyword for inheriting interfaces).
 
-Also, unlike with `extends`, when inheriting an interface, you **must** overrides all methods that don't have a body.
-
 <hr class="sr">
 
-**Interface declaration**
+## Interface declaration
 
 ```java
 public interface Human {
@@ -27,8 +25,8 @@ public interface Human {
     public abstract int getAge();
 
     // a static method
-    public static boolean areBothAdults(Human h1, Human h2){
-        return m.getAge() >= MAJORITY && f.getAge() >= MAJORITY;
+    public static boolean areBothAdults(Human h1, Human h2) {
+        return h1.getAge() >= MAJORITY && h2.getAge() >= MAJORITY;
     }
 }
 ```
@@ -87,9 +85,23 @@ public class Person implements Human, Living {
 
 <hr class="sr">
 
-## Interface (extend and default)
+## Interface: default
 
-Methods can have a body, and they can extend **one or more interfaces**
+Since **Java 8**, methods can have a body
+
+```java
+public interface Human {
+    default String getName() {
+        return "John doe";
+    }
+}
+```
+
+<hr class="sl">
+
+## Interface: extends
+
+An interface can extends another interface
 
 ```java
 public interface Human extends Living {
@@ -99,11 +111,11 @@ public interface Human extends Living {
 }
 ```
 
-<hr class="sl">
+<hr class="sr">
 
 ## Functional interfaces
 
-We are calling like that interface with only **one** method without a body.
+We are calling like that interface with only **one method without a body** (=one abstract method).
 
 ```java
 @FunctionalInterface
@@ -121,10 +133,10 @@ Human h = () -> "John Doe";
 
 Here we are writing that
 
-* the method getName (without argument so `()` is empty, otherwise, we would write the name without the type of the arguments)
+* the method getName (without argument so `()` is empty, otherwise, we would write the name without the type of the argument)
 * is returning `"John Doe"`
 
-A lot of people are using that for ``events``-related classes, in graphical interfaces.
+A lot of people are using that for events-related classes, in graphical interfaces.
 
 Here another example
 
@@ -138,19 +150,21 @@ interface Human {
 and 
 
 ```java
-// no type, and even the name can be changed
+// no type before u, and even the name can be changed
 // like u, everything will be inferred
 Human h = (u) -> {
     String r = "John Doe";
     return u ? r.toUpperCase() : r.toLowerCase();
 };
+// ok: JOHN DOE
+h.getName(true);
 ```
 
-<hr class="sr">
+<hr class="sl">
 
 ## This is a secret
 
-Okay, this is something that almost no one know of. Interface can have **private members** since Java9.
+Okay, this is something that almost no one know of. Interface can have **private methods** since Java 9.
 
 ```java
 public interface Test {
