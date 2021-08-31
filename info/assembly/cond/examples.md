@@ -1,8 +1,8 @@
 # Examples
 
-[Go back](..)
+[Go back](../index.md#conditions)
 
-Basic example
+This example is showing the use of compare to set the value of a variable.
 
 ```asm6502
 mov r0, #6 @mets 6 dans r0
@@ -19,7 +19,7 @@ addeq r0, #6
 addne r0, #4
 ```
 
-s flag example
+This is another example, using the flag "s" to change the flags.
 
 ```asm6502
 mov r0, #2

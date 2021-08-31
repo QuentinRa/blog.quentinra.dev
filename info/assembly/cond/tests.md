@@ -1,6 +1,8 @@
 # Tests
 
-[Go back](../index.md#Conditions)
+[Go back](../index.md#conditions)
+
+Tests are used to set the flags NZCV. For instance, **cpm** (compare) is making the operation **Rn - Operand2**, meaning that the result of this operation will be used to set NZCV.
 
 ```asm6502
 ; Comparison : Rn - Operand2
@@ -9,12 +11,10 @@ cmp Rn, Operand2
 ; Comparison : Rn + Operand2
 cmn Rn, Operand2
 
-; bit-by-bit logic and, this is a & in C (not &&)
+; Bitwise and, this is "&" in C, not "&&"
 tst Rn, Operand2
 
-; bit-by-bit logic exclusif or
+; Bitwise exclusive OR
 teq Rn, Operand2
 ```
-
-The result of a test is changing the NZCV flags like `cmp Rn, Operand2` is evaluating `Rn - Operand2` and if the result is negative then `N` flag will be true etc.
 
