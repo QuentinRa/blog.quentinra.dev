@@ -23,7 +23,7 @@ Press SHIFT+ENTER to add another line.
 "
 ```
 
-You can also remove the option "m". The vim editor will be opened, allowing you to enter your message (`:q!` exit without saving, `:wq` save and exit).
+You can also remove the option "m". The vim editor will be opened, allowing you to enter your message (CTRL-C then enter `:q!` to exit without saving or `:wq` to save and exit).
 
 ```bash
 git commit

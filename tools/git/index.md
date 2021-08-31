@@ -1,6 +1,6 @@
 # Version-control using Git
 
-Git is a tool allowing you to easily work on a project. You will be able to go back to a previous version, and since the code will be hosted on a server, you will reduce the probability of losing all your work. You will also make team projects easier, are they are many features such as branches, issues, pull requests, which are quite convenient for programmers.
+Git is a tool allowing you to easily work on a project. You will be able to go back to a previous version, and since the code will be hosted on a server, you will reduce the probability of losing all your work. You will also make projects in a team go smoother, are they are many features such as branches, issues, pull requests, which are quite convenient for programmers.
 
 * you will learn what's Git
 * the basic usage of Git
@@ -40,7 +40,7 @@ As a side note before starting, you can create aliases for a command like `git n
 
 ## Basic usage
 
-Please take note that all `commands` start with `git` then one space.
+Please take note that every command is starting with git followed by one space.
 
 * [Get your repository from server](commands/clone.md)
 * [Update your local version](commands/pull.md)
