@@ -1,9 +1,8 @@
 # Files
 
-[Go back](..)
+[Go back](../index.md#advanced)
 
-Like in C, you will use Streams of data. You may
-know of
+Like in C, you will use Streams of data. You may know of
 
 ```java
 System.in
@@ -11,20 +10,15 @@ System.out
 System.err
 ```
 
-Since you could use out/err to write and in to read. You
-may use them in the methods bellow if you don't want
-to read/write to a file.
+Since you could use out/err to write and in to read. You may use them in the methods bellow if you don't want to read/write to a file.
 
 <hr class="sr">
 
 ## Logic
 
-You will have classes starting with ``Input`` (read)
-and classes starting with ``Output`` (write).
+You will have classes starting with `Input` (read) and classes starting with `Output` (write).
 
-Exception will be thrown will extends ``IOException``,
-you must explicitly handles them since they are verified
-exception (in function declaration or with a catch).
+Exception will be thrown will extends `IOException`, you must explicitly handles them since they are verified exception (in function declaration or with a catch).
 
 ```java
 try {
@@ -38,8 +32,7 @@ try {
 }
 ```
 
-But this is not really good, you would want to read/write
-lines so we usually wrap the stream in a buffer
+But this is not really good, you would want to read/write lines so we usually wrap the stream in a buffer
 
 ```java
 try {
@@ -59,11 +52,9 @@ try {
 
 ## Get File as streams
 
-> Do not forget to close the reader / writer since this
-> is a file by calling close.
+> Do not forget to close the reader / writer since this is a file by calling close.
 > 
-> Some are using the try with resources to automatically
-> close a stream, check the try-catch page.
+> Some are using the try with resources to automatically close a stream, check the try-catch page.
 
 **Bytes**
 
@@ -72,8 +63,7 @@ BufferedInputStream reader = new BufferedInputStream(new FileInputStream(file));
 BufferedOutputStream writer = new BufferedOutputStream(new FileOutputStream(file));
 ```
 
-You may directly use FileInputStream / FileOutputStream
-since you are gonna read int anyways.
+You may directly use FileInputStream / FileOutputStream since you are gonna read int anyways.
 
 **Text**
 

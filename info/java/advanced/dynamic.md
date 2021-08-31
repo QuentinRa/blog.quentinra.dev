@@ -1,13 +1,10 @@
 # Dynamic structures
 
-[Go back](..)
+[Go back](../index.md#advanced)
 
-These are structures of data that you will use like
-ArrayList or HashMap. Theses are called Collections
-since they implementing ``Collection`` and note
-that collections are ``Iterables``.
+These are structures of data that you will use like ArrayList or HashMap. Theses are called Collections since they implementing `Collection` and note that collections are `Iterables`.
 
-HashMap is not a collection but a ``Map``.
+HashMap is not a collection but a `Map`.
 
 <hr class="sr">
 
@@ -48,8 +45,7 @@ ArrayList<Integer> copy = new ArrayList<>(list);
 
 ## HashSet
 
-Same as ArrayList but values are uniques and if the same
-value is added twice, then the previous one is removed.
+Same as ArrayList but values are uniques and if the same value is added twice, then the previous one is removed.
 
 ```java
 import java.util.HashSet;
@@ -57,9 +53,7 @@ import java.util.HashSet;
 HashSet<Integer> list = new HashSet<>();
 ```
 
-Note that you don't have a ``get`` method
-so you will need to iterate the list if you want an
-element.
+Note that you don't have a `get` method so you will need to iterate the list if you want an element.
 
 <hr class="sr">
 
@@ -87,8 +81,7 @@ Integer remove = queue.remove();
 
 ## HashMap
 
-It's a dictionary. The key are uniques and each
-key is associated with a value.
+It's a dictionary. The key are uniques and each key is associated with a value.
 
 ```java
 import java.util.HashMap;

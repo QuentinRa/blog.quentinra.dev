@@ -1,6 +1,6 @@
 # Enumerations
 
-[Go back](..)
+[Go back](../index.md#advanced)
 
 It's a class of static instances.
 
@@ -10,25 +10,15 @@ public enum RpgClasses {
 }
 ```
 
-You can write ``RpgClasses.SORCERER`` to use
-an object of the class ``RpgClasses``. `enum`
-can't extend another class, since it's already extending
-``java.lang.Enum`` (implicitly). You can implements interfaces
-through.
+You can write `RpgClasses.SORCERER` to use an object of the class `RpgClasses`. `enum` can't extend another class, since it's already extending `java.lang.Enum` (implicitly). You can implements interfaces through.
 
-> You should use Enumerations when you have a finite
-> number of values. It's not a good thing to use it
-> for something where you may add values (like
-> here with RpgClasses) since you might break others' code.
-> (switch won't work anymore, foreach might do something
-> unexpected...)
+> You should use Enumerations when you have a finite number of values. It's not a good thing to use it for something where you may add values (like here with RpgClasses) since you might break others' code  (switch won't work anymore, foreach might do something unexpected...).
 
 <hr class="sr">
 
 ## Complexes enums
 
-You can add methods and attributes, along with a constructor
-in an enum.
+You can add methods and attributes, along with a constructor in an enum.
 
 ```java
 public enum RpgClasses {
@@ -60,15 +50,13 @@ int sorcerer_hp = RpgClasses.SORCERER.getHP();
 
 ## You might like
 
-* ``ClassesRpg.values()`` : to get all the values
-of an enum.
-* ``ClassesRpg.SORCERER.name()``: returns SORCERER
-* ``ClassesRpg.SORCERER.ordinal()``: returns 0
+* `ClassesRpg.values()` : to get all the values of an enum.
+* `ClassesRpg.SORCERER.name()`: returns SORCERER
+* `ClassesRpg.SORCERER.ordinal()`: returns 0
 
 **EnumMap**
 
-It's like a Hashmap but the key are values of an
-enum.
+It's like a Hashmap but the key are values of an enum.
 
 ```java
 EnumMap<EnumClass, ValueClass> map;
