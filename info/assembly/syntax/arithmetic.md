@@ -1,12 +1,12 @@
 # Arithmetic instructions
 
-[Go back](..)
+[Go back](../index.md#instructions)
 
 Note that 
 
-* ``Rd`` : destination register, for instance ``r0``
-* ``Rn`` : from register, for instance ``r0``
-* ``Operand2`` : a value like `#0` for 0
+* `Rd` : destination register, for instance `r0`
+* `Rn` : from register, for instance `r0`
+* `Operand2` : a value like `#0` for 0
 
 ```asm6502
 ; Rd = Rn + Operand2
@@ -38,5 +38,4 @@ smull RdLo, RdHi, Rn, Rm
 umull RdLo, RdHi, Rn, Rm
 ```
 
-RdLo are the 32 bits with the lesser weight and
-RdHi are the 32bits with the higher weight.
+RdLo are the 32 bits with the lesser weight and RdHi are the 32bits with the higher weight.

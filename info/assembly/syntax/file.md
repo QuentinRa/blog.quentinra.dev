@@ -1,6 +1,6 @@
 # File Structure
 
-[Go back](..)
+[Go back](../index.md#syntax)
 
 ```asm6502
 @ constantes called with #constante
@@ -22,15 +22,8 @@ _start:
 .end
 ```
 
-The label ``_start`` is a sort of function name. It's
-referencing somewhere in the code (the `_start:`)
-where the code associated with the function is.
+The label `_start` is a sort of function name. It's referencing somewhere in the code (the `_start:`) where the code associated with the function is.
 
-This label is special though, it's the ``main``
-function label. When running ``a.out`` that's this label
-code that will be run.
+This label is special though, it's the `main` function label. When running `a.out` that's this label code that will be run.
 
-**Note**: when calling a ``main`` in C, you may or 
-not add a ``return`` at the end. In assembly, you
-must call exit instructions at the end otherwise
-your program will crash.
+**Note**: when calling a `main` in C, you may or not add a `return` at the end. In assembly, you must call exit instructions at the end otherwise your program will crash.

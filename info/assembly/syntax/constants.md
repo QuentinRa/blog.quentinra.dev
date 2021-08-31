@@ -1,26 +1,16 @@
 # Constants
 
-[Go back](..)
+[Go back](../index.md#syntax)
 
-Constant are called immediate constants because they
-are not constants. We are not talking about
-``.equ`` but when in the program you are writing
-``#0`` for the value 0 (for instance).
+Constant are called immediate constants because they are not constants. We are not talking about `.equ` but when in the program you are writing `#0` for the value 0 (for instance).
 
-In the rest of the course, ``Operand2`` may be a constant.
+In the rest of the course, `Operand2` may be a constant.
 
-The problem is that this immediate constant is not a 32 bits
-number (int) but a **12 bits** variable so you can't
-use some values.
+The problem is that this immediate constant is not a 32 bits number (int) but a **12 bits** variable so you can't use some values.
 
-The first 4 bits are the rotation. And the 8 bits
-are the value.
+The first 4 bits are the rotation. And the 8 bits are the value.
 
-Place the 8bits at the end of a 32bits variable
-like you got 32 zeros but replace the 8 last ones
-with the last 8 bits of the constant. Then, you
-must move your bits, clockwise by
-$2^{rotation}$.
+Place the 8bits at the end of a 32bits variable like you got 32 zeros but replace the 8 last ones with the last 8 bits of the constant. Then, you must move your bits, clockwise by $2^{rotation}$.
 
 <hr class="sr">
 
