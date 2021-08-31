@@ -1,13 +1,8 @@
 # Javadoc
 
-[Go back](..)
+[Go back](../index.md#advanced)
 
-The idea is the same as for doxygen (tools/doxygen
-course) but only for Java. Using ``javadoc`` command,
-you will generates a website like
-this one [javadoc index](https://docs.oracle.com/javase/8/docs/api/overview-summary.html)
-And something like that for a class 
-[javadoc Boolean](https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html).
+The idea is the same as for doxygen (tools/doxygen course) but only for Java. Using `javadoc` command, you will generates a website like this one [javadoc index](https://docs.oracle.com/javase/8/docs/api/overview-summary.html) And something like that for a class [javadoc Boolean](https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html).
 
 A Javadoc comment is a comment looks like that
 
@@ -25,31 +20,26 @@ A Javadoc comment is a comment looks like that
 
 The class only tags are 
 
-* ``@author author``: can have multiple authors tags
-  or a list of authors
-* ``@version version date``: something like `1.0.0.0 xxxx-xx-xx`
+* `@author author`: can have multiple authors tags or a list of authors
+* `@version version date`: something like `1.0.0.0 xxxx-xx-xx`
 
 Tags you may use everywhere
 
-* ``@since version``: since which version you added this class/method/...
-* ``@see xxxx``: a class or a method the reader should check
-    * ``@see class``
-    * ``@see class#method``
+* `@since version`: since which version you added this class/method/...
+* `@see xxxx`: a class or a method the reader should check
+    * `@see class`
+    * `@see class#method`
     * can have multiples see
-* ``@deprecated why``: why we should not use this class/method
-and since when. You may add a link to the new method.
-* ``{@link xxxx}``: inside a param, returns, or some text, you can use
-this to create a link to a class/method.
+* `@deprecated why`: why we should not use this class/method and since when. You may add a link to the new method.
+* `{@link xxxx}`: inside a param, returns, or some text, you can use this to create a link to a class/method.
     
 And for a method you might use
 
-* ``@param name desc``: describe a param
-* ``@return desc``: describe what's the method returns
-* ``@throws exception_class desc``: if an exception is thrown
+* `@param name desc`: describe a param
+* `@return desc`: describe what's the method returns
+* `@throws exception_class desc`: if an exception is thrown
 
-Note that you can add multiples of param and throws. Note
-that if the class is generic or a method is generic,
-you can comment the param using this syntax
+Note that you can add multiples of param and throws. Note that if the class is generic or a method is generic, you can comment the param using this syntax
 
 <hr class="sl">
 

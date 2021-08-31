@@ -1,10 +1,8 @@
 # Iterable
 
-[Go back](..)
+[Go back](../index.md#advanced)
 
-Something is iterable meaning that we can use
-the method ``iterator()`` to get something called
-an Iterator to read the values of our iterable.
+Something is iterable meaning that we can use the method `iterator()` to get something called an Iterator to read the values of our iterable.
 
 ```java
 public class MyListOfIntegers implements Iterable<Integer> {
@@ -22,10 +20,7 @@ public class MyListOfIntegers implements Iterable<Integer> {
 
 ## Creating a Iterator
 
-Instead of returning null, you need to create something
-to iterates your data. We will write some stupid class
-using Arrays but you will mainly use that for Collection
-that will be introduced later
+Instead of returning null, you need to create something to iterates your data. We will write some stupid class using Arrays but you will mainly use that for Collection that will be introduced later
 
 ```java
 public class MyListOfIntegers implements Iterable<Integer> {
@@ -67,8 +62,7 @@ public class MyListOfIntegers implements Iterable<Integer> {
 
 ## Use an iterator
 
-Now that you made an iterator, you need to know how you
-will use it.
+Now that you made an iterator, you need to know how you will use it.
 
 ```java
 MyListOfIntegers list = new MyListOfIntegers();
