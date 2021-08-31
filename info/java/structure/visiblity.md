@@ -1,75 +1,32 @@
 # Visibility
 
-[Go back](..)
+[Go back](../index.md#vocabulary)
 
-In java, you got 4 mode
+In java, you got 4 modifiers: `public`, `protected`, `private` and `<none>`. None, which is called the package modifier, is the default modifier. These are basically used to tell Java which classes can use an attribute or a method.
 
-* ``public``
-* ``protected``
-* ``private``
-* ``<none>`` (called package and default visibility mode) 
+* **public** means that **everyone** can see, use/call this property (method/attribute).
 
-**public** means that **everyone** can see, use/call
-this property (method/attribute).
+* **private** means that **only your class** can see, use/call this property (method/attribute).
 
-**private** means that **only your class** can see, use/call
-this property (method/attribute).
+* **protected** means that **only your class, only the children of your class, and those in the same package=folder** can see, use/call this property (method/attribute).
 
-**protected** means that **only your class, only
-the children of your class, and those in the same
-package=folder** can see, use/call
-this property (method/attribute).
+* **package** means that **your class and the ones is the same folder=package** can see, use/call this property (method/attribute).
 
-**package** means that **your class and the ones
-is the same folder=package** can see, use/call
-this property (method/attribute).
+<hr class="sl">
 
 ### In a nutshell
 
-Here a recap for each visibility, who can see elements
-declared with this visibility.
+Here a recap for each visibility, who can see elements declared with this visibility.
 
-<table class="table table-bordered table-striped">
-	<tr>
-		<th></th>
-		<th>the class</th>
-		<th>the classes in the same package=folder</th>
-		<th>the classes inheriting this class</th>
-		<th>anyone else</th>
-	</tr>
-	<tr>
-		<th>public</th>
-		<td>+</td>
-		<td>+</td>
-		<td>+</td>
-		<td>+</td>
-	</tr>
-	<tr>
-		<th>protected</th>
-		<td>+</td>
-		<td>+</td>
-		<td>+</td>
-		<td></td>
-	</tr>
-	<tr>
-		<th>package</th>
-		<td>+</td>
-		<td>+</td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<th>private</th>
-		<td>+</td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-</table>
+| modifier | your class | same package=folder | inheritors | anyone else |
+|-----------|-----|-----|-----|-----|
+| public    |  +  |  +  |  +  |  +  |
+| protected |  +  |  +  |  +  |     |
+| package   |  +  |  +  |     |     |
+| private   |  +  |     |     |     |
 
-For instance, something declared protected can be
-accessed by
+For instance, something declared protected can be accessed by
 
-* the declaring class
-* the classes in the same folder
-* and the classes inheriting of your class
+* your class, the one declaring a property protected
+* the classes in the same folder (=package)
+* and the classes inheriting your class (=inheritors)
