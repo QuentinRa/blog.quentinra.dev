@@ -2,9 +2,7 @@
 
 [Go back](..)
 
-The overload or surcharge in French is the ability for
-us to write a lot of methods having the same name
-but different parameters (=redefinitions).
+The overload or surcharge in French is the ability for us to write a lot of methods having the same name but different parameters (=redefinitions).
 
 The return type must be the same!
 
@@ -17,9 +15,7 @@ class PersonFactory {
 }
 ```
 
-Note that the name of the variable
-are not read when the compiler is checking if you declared two
-times the same function, **so you can't write**
+Note that the name of the variable are not read when the compiler is checking if you declared two times the same function, **so you can't write**
 
 ```java
 public Person createPerson(int a, String b){ return null; }

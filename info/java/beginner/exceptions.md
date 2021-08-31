@@ -1,6 +1,6 @@
 # Exceptions
 
-[Go back](..)
+[Go back](../index.md#beginner)
 
 An exception is a way of saying that something unexpected happened. In a lot of cases, that's an error but in other languages, that can be used for other purposes.
 

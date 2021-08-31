@@ -1,6 +1,6 @@
 # MCQ about Beginner part
 
-[Go back](..)
+[Go back](../index.md#beginner)
 
 **Question 1**
 
@@ -17,10 +17,7 @@ How many primitives types there are in Java?
 On how many bits the primitive type ``char`` is defined?
 
 <blockquote class="spoiler">
-It's <b>16</b> bits and not 8 like usual,
-because Java bet that we will use UTF-16 but, 
-unfortunately for them, UTF-8 was the one that became
-the most used.
+It's <b>16</b> bits and not 8 like usual, because Java bet that we will use UTF-16 but, unfortunately for them, UTF-8 was the one that became the most used.
 </blockquote>
 
 <hr class="sl">
@@ -38,16 +35,14 @@ public class Math {
 ```
 
 <blockquote class="spoiler">
-It's not working! <b>2.0</b> is a double not a float! But increase
-n is working properly and return n plus the value 2.
+It's not working! <b>2.0</b> is a double not a float! But increase n is working properly and return n plus the value 2.
 </blockquote>
 
 <hr class="sr">
 
 **Question 4**
 
-Which instruction are we using in java to go to the next
-turn of a loop? (next, pass, continue, skip, do, goto)
+Which instruction are we using in java to go to the next turn of a loop? (next, pass, continue, skip, do, goto)
 
 <blockquote class="spoiler">
 It's <b>continue</b> keyword!
@@ -60,10 +55,7 @@ It's <b>continue</b> keyword!
 What's the difference between ``==`` and `equals`.
 
 <blockquote class="spoiler">
-None by default, they both check if two objects have the same address.
-But a class can override <b>equals</b> and check the value
-rather than the address. For primitives types, <b>==</b> is checking
-the value.
+None by default, they both check if two objects have the same address. But a class can override <b>equals</b> and check the value rather than the address. For primitives types, <b>==</b> is checking the value.
 </blockquote>
 
 <hr class="sr">
@@ -73,22 +65,17 @@ the value.
 What's this code is doing ``object.equals(null)``?
 
 <blockquote class="spoiler">
-This code is returning false if object is not null, but if object
-is null, we have <b>null.method(...)</b> meaning that we will
-trigger a <b>NullPointerException</b>.
+This code is returning false if object is not null, but if object is null, we have <b>null.method(...)</b> meaning that we will trigger a <b>NullPointerException</b>.
 </blockquote>
 
 <hr class="sl">
 
 **Question 7**
 
-What are we doing in this statement: ``public interface Human implements Living {}``
-with Living another interface?
+What are we doing in this statement: ``public interface Human implements Living {}`` with Living another interface?
 
 <blockquote class="spoiler">
-The keyword is <b>wrong</b>, we should use <b>extends</b>. If extends
-was used, then implementing Human would requires to also implements
-Living methods.
+The keyword is <b>wrong</b>, we should use <b>extends</b>. If extends was used, then implementing Human would requires to also implements Living methods.
 </blockquote>
 
 <hr class="sr">
@@ -105,8 +92,7 @@ One abstract method, no other restrictions.
 
 **Question 9**
 
-With A a superclass, and B a subclass, using **Liskov substitution principle**
-(polymorphisme d'héritage), what statement are valid ?
+With A a superclass, and B a subclass, using **Liskov substitution principle** (`polymorphisme d'héritage`), what statement are valid?
 
 - ``B v1 = new A()``
 - ``A v2 = new B()``
@@ -116,10 +102,7 @@ With A a superclass, and B a subclass, using **Liskov substitution principle**
 - call a method on of `v2` defined in class `A`
 
 <blockquote class="spoiler">
-Statements 2,3,6 are valid. In 5, v2 is of type A so
-you can't call B methods (even if the real instance is of type B).
-In statement 1, A doesn't have the new methods declared in B so that
-won't work. Same answer for statement 4.
+Statements 2,3,6 are valid. In 5, v2 is of type A so you can't call B methods (even if the real instance is of type B). In statement 1, A doesn't have the new methods declared in B so that won't work. Same answer for statement 4.
 </blockquote>
 
 <hr class="sr">
@@ -137,16 +120,14 @@ In java >= 8, an interface can have
 * class methods ?
 
 <blockquote class="spoiler">
-Concrete (since java>=8) or abstract methods. constant class attributes
-and class methods.
+Concrete (since java>=8) or abstract methods. constant class attributes and class methods.
 </blockquote>
 
 <hr class="sl">
 
 **Question 11**
 
-How do we call what we are doing when we are declaring a lot
-of methods with the same name in a class?
+How do we call what we are doing when we are declaring a lot of methods with the same name in a class?
 
 <blockquote class="spoiler">
 It's called <b>Overloading</b> (=overload=surcharge in French) a method.

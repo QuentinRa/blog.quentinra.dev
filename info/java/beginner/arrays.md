@@ -1,6 +1,6 @@
 # Arrays
 
-[Go back](..)
+[Go back](../index.md#beginner)
 
 Arrays are working almost like in C. 
 

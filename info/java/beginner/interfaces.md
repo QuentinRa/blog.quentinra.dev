@@ -1,23 +1,17 @@
 # Interfaces
 
-[Go back](..)
+[Go back](../index.md#beginner)
 
 An **interface** is a new type of class where
 
 * everything is public: attributes and methods
-* you can only declare ``public static final`` kind
-of attributes (meaning static constants)
-* instance methods usually don't have a body (since Java8 they can using
-  `default` keyword)
+* you can only declare `public static final` kind of attributes (meaning static constants)
+* instance methods usually don't have a body (since Java8 they can using `default` keyword)
 * static methods must have a body
 
-We are using interfaces because a class can inherit 
-one class, but many interfaces. With that, we can use the
-**Liskov substitution principle** with each interface ``implemented``
-(that the keyword for inheriting interfaces).
+We are using interfaces because a class can inherit one class, but many interfaces. With that, we can use the **Liskov substitution principle** with each interface `implemented` (that the keyword for inheriting interfaces).
 
-Also, unlike with ``extends``, when inheriting an interface, you
-**must** overrides all methods that don't have a body.
+Also, unlike with `extends`, when inheriting an interface, you **must** overrides all methods that don't have a body.
 
 <hr class="sr">
 
@@ -39,8 +33,7 @@ public interface Human {
 }
 ```
 
-but we can remove a lot of keywords since they can be
-inferred
+but we can remove a lot of keywords since they can be inferred
 
 ```java
 public interface Human {
@@ -71,8 +64,7 @@ public class Person implements Human {
 }
 ```
 
-Adding another interface, we could 
-implement two interfaces like this
+Adding another interface, we could implement two interfaces like this
 
 ```java
 public interface Living {
@@ -97,8 +89,7 @@ public class Person implements Human, Living {
 
 ## Interface (extend and default)
 
-Methods can have a body, and they can extend
-**one or more interfaces**
+Methods can have a body, and they can extend **one or more interfaces**
 
 ```java
 public interface Human extends Living {
@@ -112,8 +103,7 @@ public interface Human extends Living {
 
 ## Functional interfaces
 
-We are calling like that interface with only **one** method
-without a body.
+We are calling like that interface with only **one** method without a body.
 
 ```java
 @FunctionalInterface
@@ -123,8 +113,7 @@ public interface Human {
 }
 ```
 
-These are used in what we call **lambda expressions**. Since they
-only have one method, then we can write
+These are used in what we call **lambda expressions**. Since they only have one method, then we can write
 
 ```java
 Human h = () -> "John Doe";
@@ -132,13 +121,10 @@ Human h = () -> "John Doe";
 
 Here we are writing that
 
-* the method getName (without argument so `()` is empty,
-  otherwise, we would write the name without the type of the
-  arguments)
-* is returning ``"John Doe"``
+* the method getName (without argument so `()` is empty, otherwise, we would write the name without the type of the arguments)
+* is returning `"John Doe"`
 
-A lot of people are using that for ``events``-related classes,
-in graphical interfaces.
+A lot of people are using that for ``events``-related classes, in graphical interfaces.
 
 Here another example
 
@@ -164,8 +150,7 @@ Human h = (u) -> {
 
 ## This is a secret
 
-Okay, this is something that almost no one know of. Interface
-can have **private members** since Java9.
+Okay, this is something that almost no one know of. Interface can have **private members** since Java9.
 
 ```java
 public interface Test {

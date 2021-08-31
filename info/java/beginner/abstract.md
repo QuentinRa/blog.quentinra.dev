@@ -1,6 +1,6 @@
 # Abstract classes
 
-[Go back](..)
+[Go back](../index.md#beginner)
 
 An abstract class is a new kind of class where you can write normal code like you used to, be also write some methods `abstract` meaning without a body. 
 

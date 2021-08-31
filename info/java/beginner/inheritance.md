@@ -1,6 +1,6 @@
 # Inheritance
 
-[Go back](..)
+[Go back](../index.md#beginner)
 
 Unless a class is declared final `final class Name`, you can inherit a class, but **only one** class. By default, a class is inheriting of `Object`. We are using the syntax `extends ClassName` to inherit a class.
 

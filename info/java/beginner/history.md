@@ -1,6 +1,6 @@
 # History
 
-[Go back](..)
+[Go back](../index.md#beginner)
 
 * 1991 - OAK Project by SUN
 * 1995 - Java 1.0
