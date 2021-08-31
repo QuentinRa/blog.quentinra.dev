@@ -1,16 +1,15 @@
 # Records
 
-Records are a way to reduce the code used to
-create a class to store data. For instance, let's says
-you want to store a JSON into a class. You need 
+[Go back](../index.md#expert)
+
+Records are a way to reduce the code used to create a class to store data. For instance, let's says you want to store a JSON into a class. You need 
 
 * a constructor
 * getters (and rarely setters)
 * maybe a method equals (and hashcode since they are linked)
 * a method toString
 
-Well, records are giving you all of this. To create a record,
-simply write
+Well, records are giving you all of this. To create a record, simply write
 
 ```java
 public record MyRecord(int playerAchievements, int friendsPlaying, int timePlayed) {}
@@ -61,9 +60,7 @@ System.out.println(r.hashCode());
 
 ## Records for Listeners
 
-You might also use a record for a listener, at least
-a listener having one attribute (otherwise you will
-write more code)
+You might also use a record for a listener, at least a listener having one attribute (otherwise you will write more code)
 
 ```java
 // note that this is not the best example but you

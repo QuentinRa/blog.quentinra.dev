@@ -1,26 +1,20 @@
 # Gradle
 
-[Go back](..)
+[Go back](../index.md#expert)
 
-You may use gradle to make your project more easy
-to manage like a Makefile. You will run one command
-downloading all libraries or running the project.
+You may use gradle to make your project more easy to manage like a Makefile. You will run one command downloading all libraries or running the project.
 
-I'm not up to date about the last practices but
-here is what I know. You should create some files
-in order for gradle to understand what it should do.
+I'm not up-to-date about the last practices but here is what I know. You should create some files in order for gradle to understand what it should do.
 
-You may check the documentation [here](https://docs.gradle.org/current/userguide/installation.html#installing_manually),
-since I'm using IntelliJ, I won't dig into command
-line or other IDEs stuffs.
+You may check the documentation [here](https://docs.gradle.org/current/userguide/installation.html#installing_manually), since I'm using IntelliJ, I won't dig into command line or other IDEs stuffs.
 
-* ``settings.gradle``
+* `settings.gradle`
 
 ```groovy
 rootProject.name = 'project-name'
 ```
 
-* ``build.gradle``
+* `build.gradle`
 
 ```groovy
 plugins {
@@ -67,8 +61,7 @@ tasks.withType(JavaCompile) {
 
 ## Plugins
 
-I'm only importing here the line requested when
-I need something like
+I'm only importing here the line requested when I need something like
 
 ```groovy
 plugins {
@@ -84,16 +77,11 @@ plugins {
 
 ## Dependencies
 
-You will add here the maven links format (since we are using
-maven) for your libraries.
+You will add here the maven links format (since we are using maven) for your libraries.
 
-You will find the line you have to add at
-[https://mvnrepository.com/](https://mvnrepository.com/).
+You will find the line you have to add at [https://mvnrepository.com/](https://mvnrepository.com/).
 
-In most cases you will use ``implementation ...``
-since that something you need when coding (source)
-but you may use ``testImplementation`` is you need a
-library only for tests (and you have also Runtime,...).
+In most cases you will use `implementation ...` since that something you need when coding (source) but you may use `testImplementation` is you need a library only for tests (and you have also Runtime,...).
 
 **Using another project**
 
@@ -103,7 +91,7 @@ dependencies {
 }
 ```
 
-And in ``settings.gradle``
+And in `settings.gradle`
 
 ```groovy
 include 'another'
@@ -130,7 +118,7 @@ dependencies {
 
 ## Project Structure
 
-You will have a folder ``src`` with
+You will have a folder `src` with
 
 * main
   * java
@@ -139,14 +127,9 @@ You will have a folder ``src`` with
   * java
   * resources
   
-The unusual thing is that you will have to put all
-your files in ``resources`` and use some weirds
-methods to get a stream, but the code will works
-when packed in .jar file so you will be able to share
-it without path problems.
+The unusual thing is that you will have to put all your files in `resources` and use some weirds methods to get a stream, but the code will works when packed in .jar file so you will be able to share it without path problems.
 
-Note that the path starts with a ``/`` pointing to
-the ``resources`` folder.
+Note that the path starts with a `/` pointing to the `resources` folder.
 
 ```java
 InputStream s = this.getClass().getResourceAsStream("/path");
@@ -161,10 +144,7 @@ File f = new File(url.toURI());
 
 ## Notes
 
-* you may use ``gradle wrapper`` (or
-  `./gradlew wrapper`) to create the gradle jar,
-  check out ``/gradle/wrapper/gradle-wrapper.properties``
-  (project root)
+* you may use `gradle wrapper` (or `./gradlew wrapper`) to create the gradle jar, check out `/gradle/wrapper/gradle-wrapper.properties` (project root)
   
 ```properties
 distributionBase=GRADLE_USER_HOME
@@ -174,10 +154,9 @@ zipStoreBase=GRADLE_USER_HOME
 zipStorePath=wrapper/dists
 ```
 
-* you should call ``gradle run`` to start your application
-or ``gradle build`` to build it.
+* you should call `gradle run` to start your application or `gradle build` to build it.
 
-* I'm using this to create a .jar with ``gradle jar``
+* I'm using this to create a .jar with `gradle jar`
 
 ```groovy
 task makeJar(type: Jar) {

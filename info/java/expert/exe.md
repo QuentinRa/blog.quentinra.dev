@@ -1,19 +1,14 @@
 # Generating a .exe or an installer
 
-[Go back](..)
+[Go back](../index.md#expert)
 
-Since JDK 14, you can use JPackage to create an
-installer for a .jar and JLink to create a jre for
-you .jar.
+Since JDK 14, you can use JPackage to create an installer for a .jar and JLink to create a jre for you .jar.
 
 You should [read this](https://openjdk.java.net/jeps/343).
 
-I'm using gradle but you may find some help in reading
-the code below.
+I'm using gradle but you may find some help in reading the code below.
 
-In gradle, I'm using for the project [eden](https://github.com/lgs-games/eden)
-(note the name, it's important that the folder
-for the jre have the name of your "project")
+In gradle, I'm using for the project [eden](https://github.com/lgs-games/eden) (note the name, it's important that the folder for the jre have the name of your "project")
 
 ```groovy
 plugins {
@@ -49,14 +44,12 @@ jlink {
 
 Then
 
-* ``gradle jlink`` (create eden/myjre)
-* ``gradle jar`` (create eden/eden-1.0.0.0-jar)
-but you should rename it to ``eden.jar``
+* `gradle jlink` (create eden/myjre)
+* `gradle jar` (create eden/eden-1.0.0.0-jar) but you should rename it to `eden.jar`
   
-Then run ``jpackage command``.
+Then run `jpackage command`.
 
-For jpackage, I have a line like this (don't use
-``\ `` and put everything in one line)
+For jpackage, I have a line like this (don't use `\ ` and put everything in one line)
 
 ```bash
 jpackage --name eden \
@@ -86,16 +79,14 @@ jpackage --name eden \
   --win-menu
 ```
 
-I'm running this command at my project root with my
-files in eden folder
+I'm running this command at my project root with my files in eden folder
 
 * /
-    * eden
-        * eden.jar
-        * myjre/...
+  * eden
+    * eden.jar
+    * myjre/...
     
-And the result would be an installer in
-``/eden/dist/``
+And the result would be an installer in `/eden/dist/`
 
 <hr class="sl">
 
@@ -103,16 +94,11 @@ And the result would be an installer in
 
 Before that, I was using
 
-* [easy jre](https://justinmahar.github.io/easyjre/)
-to create my jre
-* [launch4j](http://launch4j.sourceforge.net/)
-to create an exe (not an installer, from a .jar)
-* [innoSetup](../../../tools/inno-setup) to create an installer for my .exe,
-this software is explained in special/innoSetup
+* [easy jre](https://justinmahar.github.io/easyjre/) to create my jre
+* [launch4j](http://launch4j.sourceforge.net/) to create an exe (not an installer, from a .jar)
+* [innoSetup](../../../tools/inno-setup) to create an installer for my .exe, this software is explained in special/innoSetup
   
 You may also check out
 
-* code signing certificate (to create a verified
-  application, paid)
-* [install4j](https://www.ej-technologies.com/products/install4j/overview.html)
-to create installer (paid)
+* code signing certificate (to create a verified application, paid)
+* [install4j](https://www.ej-technologies.com/products/install4j/overview.html) to create installer (paid)
