@@ -1,14 +1,10 @@
 ## Streams
 
-You can use a method ``stream()`` on a collection
-creating a easily to handle, one time use, reader
-for the data inside the collection.
+[Go back](../index.md#advanced)
 
-By "one time use", I mean that each methods
-(called **intermediary methods**)
-are returning a new stream since the previous
-one will be empty. Methods that are not returning
-a stream also empty the stream.
+You can use a method `stream()` on a collection creating a easily to handle, one time use, reader for the data inside the collection.
+
+By "one time use", I mean that each methods (called **intermediary methods**) are returning a new stream since the previous one will be empty. Methods that are not returning a stream also empty the stream.
 
 ```java
 ArrayList<Integer> objects = new ArrayList<>();
@@ -22,14 +18,13 @@ Stream<Integer> stream = objects.stream();
 
 **filter**
 
-You can filter you steam, like removing non-positives
-values
+You can filter you steam, like removing non-positives values
 
 ```java
 stream = stream.filter((i) -> i > 0);
 ```
 
-That's the sort syntax of ``test`` using lambdas
+That's the sort syntax of `test` using lambdas
 
 ```java
 stream = stream.filter(new Predicate<Integer>() {
@@ -42,8 +37,7 @@ stream = stream.filter(new Predicate<Integer>() {
 
 **map**
 
-You can apply a function on each element of a stream
-to create a new one
+You can apply a function on each element of a stream to create a new one
 
 ```java
 stream = stream.map(integer -> integer + 1);
@@ -59,8 +53,7 @@ stream = stream.map(new Function<Integer, Integer>() {
 
 **sort**
 
-You can use ``stream = stream.sorted();`` is the element are Comparable.
-otherwise you should do like we did above.
+You can use `stream = stream.sorted();` is the element are Comparable. otherwise you should do like we did above.
 
 ```java
 stream = stream.sorted(Integer::compareTo);

@@ -1,9 +1,8 @@
 # Recursive functions
 
-[Go back](..)
+[Go back](../index.md#advanced)
 
-It's simply a function calling herself again. You must
-have a if somewhere with a branch without recursion.
+It's simply a function calling herself again. You must have a if somewhere with a branch without recursion.
 
 ```java
 public static int recursive(int param){
@@ -16,8 +15,7 @@ public static int recursive(int param){
 }
 ```
 
-This function called like ``recursive(10)``
-will do
+This function called like `recursive(10)` will do
 
 ```java
 int result = recursive(7);
@@ -28,19 +26,11 @@ result = 7 + 7;
 result = 14;
 ```
 
-Note that this function is not terminal. A function
-is terminal when we are evaluating n before n+1. Here
-we are evaluating the next value before the current one.
-Try to write this function as a terminal function.
+Note that this function is not terminal. A function is terminal when we are evaluating n before n+1. Here we are evaluating the next value before the current one. Try to write this function as a terminal function.
 
-First, we mustn't change
-``public static int recursive(int param)`` definition but
-we will create a private function actually doing the
-real job. We will store in a variable ``acc`` the result.
+First, we mustn't change `public static int recursive(int param)` definition but we will create a private function actually doing the real job. We will store in a variable ``acc`` the result.
 
-Since our function return ``1`` when the recursion
-stops, then the default value for the accumulator
-is ``1``.
+Since our function return ``1`` when the recursion stops, then the default value for the accumulator is `1`.
 
 ```java
 public static int recursive(int param){

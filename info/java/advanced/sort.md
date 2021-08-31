@@ -1,6 +1,6 @@
 # Sorting
 
-[Go back](..)
+[Go back](../index.md#advanced)
 
 **French names** for sorting algorithms
 
@@ -12,19 +12,15 @@
 * tri fusion
 * tri rapide
 
-You may check this [github](https://github.com/java2blog/Tutorials/tree/master/Algorithms/Sorting-Algorithms)
-for the english names and implementations in Java.
+You may check this [github](https://github.com/java2blog/Tutorials/tree/master/Algorithms/Sorting-Algorithms) for the english names and implementations in Java.
 
-**I think this may also help**
-: <https://java-design-patterns.com/snippets.html#quicksort>
-(you got 4 sorting implementations).
+**I think this may also help**: <https://java-design-patterns.com/snippets.html#quicksort> (you got 4 sorting implementations).
 
 <hr class="sl">
 
 ## Comparator
 
-You might want to sort a list or an Array. You need
-for that to provide a ``Comparator`` class.
+You might want to sort a list or an Array. You need for that to provide a `Comparator` class.
 
 ```java
 class MyComparator implements Comparator<Object> {
@@ -35,19 +31,16 @@ class MyComparator implements Comparator<Object> {
 }
 ```
 
-Here the comparator is for Object but if you got a list
-of String, use String etc. You will return
+Here the comparator is for Object but if you got a list of String, use String etc. You will return
 
-* ``0``: o1 and o2 are the same
-* ``1``: o1 is after o2
-* ``-1``: o1 is before o2
+* `0`: o1 and o2 are the same
+* `1`: o1 is after o2
+* `-1`: o1 is before o2
 
-> Remember in maths, when x is higher than y, then
-> x minus y is 
-> 
+> Remember in maths, when x is higher than y, then x minus y is
 > * positive (here 1) if x is greater then y
 > * negative (here -1) if y is greater then x
-> * null (here 0) if x equals y
+> * null (here 0) if x equals y 
 > 
 > And that's how you can remember this.
 
@@ -87,8 +80,7 @@ And since we are using Integer, you could do that
 objects.sort((o1, o2) -> o1.compareTo(o2));
 ```
 
-But this statement can be inferred so you can
-write
+But this statement can be inferred so you can write
 
 ```java
 objects.sort(Integer::compareTo);

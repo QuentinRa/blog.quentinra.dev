@@ -1,9 +1,8 @@
 # Variadic methods
 
-[Go back](..)
+[Go back](../index.md#advanced)
 
-That's a method taking a variable number of arguments, greater
-or equals than 0.
+That's a method taking a variable number of arguments, greater or equals than 0.
 
 ```java
 public void myMethod(Integer ... numbers){
@@ -14,5 +13,4 @@ public void myMethod(Integer ... numbers){
 }
 ```
 
-``numbers`` here is an array so you can use anything
-you would use on an Array. The type is ``Integer[]``.
+`numbers` here is an array so you can use anything you would use on an Array. The type is `Integer[]`.
