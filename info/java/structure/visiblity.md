@@ -22,7 +22,7 @@ Here a recap for each visibility, who can see elements declared with this visibi
 |-----------|-----|-----|-----|-----|
 | public    |  +  |  +  |  +  |  +  |
 | protected |  +  |  +  |  +  |     |
-| package   |  +  |  +  |     |     |
+| package (default)   |  +  |  +  |     |     |
 | private   |  +  |     |     |     |
 
 For instance, something declared protected can be accessed by

@@ -45,23 +45,23 @@ p.resetName();
 
 ## Terminology
 
-* **Getters and setters**
+* **Getters and setters** 🤲
 
-Some methods are particular, they are called **getters** and **setters**. A getter returns a value and a setter sets a value in the class. A getter usually starts with `get...` and a setter usually starts with `set...`.
+Some methods are particular, they are called **getters** and **setters**. A getter returns a value and a setter sets a value in the class. A getter usually starts with **get...** and a setter usually starts with **set...**.
 
-* **final method**
+* **final method** 🔒
 
-Declaring a method `final` means that no one can override it (explained later).
+Declaring a method **final** means that no one can override it (explained later).
 
-* **this keyword**
+* **this keyword** 👈
 
-You can use the keyword `this` to call an attribute/method of the current object. The keyword is **optional** but that's a good practice to use it.
+You can use the keyword **this** to call an attribute/method of/on the current object. The keyword is **optional** but that's a good practice to use it.
 
-* **class/instance**
+* **class/instance** 📦
 
-In a class method, you can't use instance members since you need an instance. But in instance methods, since you got the class, you can call class members.
+In a class method, you can't use instance attributes/methods since you need an instance. But in instance methods, since you got the class, you can call class attributes/methods.
 
-* **Address**
+* **Address** 📬
 
 In Java, the notion of address doesn't exist. You are calling a method using a parameter
 
