@@ -4,8 +4,7 @@
 
 **Pre-indexed**
 
-You can make a shift before loading in Rd
-a value at an address
+You can make a shift before loading in Rd a value at an address
 
 ```asm6502
 ldr r3, [r2, #-8]
@@ -19,7 +18,7 @@ ldr r3, [r2, r1, lsl#16] @ r3 = r2 + r1 * 2^16
 ; 1 | r2 | r3 | shift amount : 16 | type de shift : 00 = lsl | r1
 ```
 
-You can add a ``!`` to change the shifted register.
+You can add a `!` to change the shifted register.
 
 ```asm6502
 ldr r3, [r2, #-8]!
@@ -27,8 +26,7 @@ ldr r3, [r2, #-8]!
 
 **Post-indexed**
 
-You can make a shift after loading in Rd
-a value at an address
+You can make a shift after loading in Rd a value at an address
 
 ```asm6502
 ldr r3, [r2], r1

@@ -1,12 +1,10 @@
 # Call
 
-[Go back](..)
+[Go back](../index.md#functions)
 
-To call your function, you can't use
-``swi``. Just must use `bl`
+To call your function, you can't use `swi`. Just must use `bl`
 
-Let's say we want to call a function ``int max(int, int)``
-then we would have
+Let's say we want to call a function `int max(int, int)` then we would have
 
 ```asm6502
 mov r0, #5

@@ -8,17 +8,16 @@ The form is like
 {op}{cond}{S} Rd,Rn,Rb, shift_type shift_amount
 ```
 
-* ``op`` is ``add``, ``mov``, ...
-* ``cond`` is ``ne``, ``eq``, ...
-* ``s`` is the save flag
+* `op` is `add`, `mov`, ...
+* `cond` is `ne`, `eq`, ...
+* `s` is the save flag
 * then you have your registers (Rd, Rn)
 
-and now instead of ``Operand2``, you could write
+and now instead of `Operand2`, you could write
 
-* ``Rb``, a register that will be used for the
-shift, but whose value won't be changed
-* ``shift_type``: ASR, LSL, ...
-* ``shift_amount``: xxx value
+* `Rb`, a register that will be used for the shift, but whose value won't be changed
+* `shift_type`: ASR, LSL, ...
+* `shift_amount`: xxx value
 
 Giving us something like this
 

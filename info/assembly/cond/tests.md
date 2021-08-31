@@ -1,6 +1,6 @@
 # Tests
 
-[Go back](..)
+[Go back](../index.md#Conditions)
 
 ```asm6502
 ; Comparison : Rn - Operand2
@@ -16,8 +16,5 @@ tst Rn, Operand2
 teq Rn, Operand2
 ```
 
-The result of a test is changing the NZCV flags
-like ``cmp Rn, Operand2`` is evaluating `Rn - Operand2`
-and if the result is negative then ``N`` flag will be true
-etc.
+The result of a test is changing the NZCV flags like `cmp Rn, Operand2` is evaluating `Rn - Operand2` and if the result is negative then `N` flag will be true etc.
 
