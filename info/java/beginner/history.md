@@ -21,8 +21,7 @@
 * [Lambda expressions](../beginner/interfaces.md#functional-interfaces)
 * moving JavaFX outside the JDK
 * interface default method
-* method references (you can use Caller::method instead
-  of a lambda of one line calling a method)
+* method references (you can use Caller::method instead of a lambda of one line calling a method)
 * forEach on iterables
 
 <hr class="sr">
