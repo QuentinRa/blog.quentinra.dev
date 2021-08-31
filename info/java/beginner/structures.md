@@ -1,21 +1,17 @@
 # Structures
 
-[Go back](..)
+[Go back](../index.md#beginner)
 
-Please take note that in Java, a condition must be either
-true or false. Values such as 1 or 0 are not working since
-they are not true nor false.
+Please take note that in Java, a condition must be either true or false. Values such as 1 or 0 are not working since they are not true nor false.
 
 ```java
 boolean cond = ...; // some value here
 ```
 
-Also please take note that in a loop, you can use these two
-keywords
+Also please take note that in a loop, you can use these two keywords
 
 * **break**: ends **one** loop
-* **continue**: skip all following statements and go to the next
-loop turn.
+* **continue**: skip all following statements and go to the next loop turn.
 
 <hr class="sr">
 
@@ -26,8 +22,7 @@ if(cond){} else if {}
 if(cond){} else if {} else {}
 ```
 
-Or some inline version ``ìnt v = cond? 5 : 7;`` for instance
-where the syntax is ``cond?if_true:if_value``.
+Or some inline version ``ìnt v = cond? 5 : 7;`` for instance where the syntax is ``cond?if_true:if_value``.
 
 <hr class="sl">
 

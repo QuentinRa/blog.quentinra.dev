@@ -1,8 +1,8 @@
 # Types
 
-[Go back](..)
+[Go back](../index.md#beginner)
 
-Java have 8 primitives types:
+Java have 8 primitives types, and aside from these, every variable is an object of a class.
 
 * **boolean**: true/false
 * **byte**: 8 bits
@@ -25,16 +25,21 @@ int i = 5;
 
 ## Parsing
 
-Each primitive class has a class having almost if not the same name,
-for instance ``Integer`` for int. You would have methods such as
+Each primitive type has a class having almost if not the same name, for instance `Integer` for int. You would have methods such as
 
 ```java
-// conversion from string to int
+// convert string "13" to int 13
 int i = Integer.parseInt("13");
 ```
 
-Otherwise, any other type is a class such as Integer, Object,
-ArrayList, ...
+You may note that these expression are equals
+
+```java
+Integer a = Integer.valueOf(5);
+int b = Integer.valueOf(5);
+int c = 5;
+Integer d = 5;
+```
 
 <hr class="sr">
 
@@ -63,6 +68,7 @@ boolean empty = s.isEmpty();
 boolean blank = s.isBlank(); // since jdk 11
 boolean equals = s.equals(s2); // same as ==
 
+// print using a format
 String format = "%s: %d";
 System.out.println(format.formatted("string", 0));
 // Output: string: 0
