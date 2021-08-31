@@ -1,29 +1,21 @@
 # Typescript
 
-Typescript is a wonderful upgrade of Javascript, allowing
-to write a ``.ts`` file an compile it in any version
-of javascript creating a ``.js``. The advantages are
+Typescript is a wonderful upgrade of Javascript, allowing to write a `.ts` file an compile it in any version of javascript creating a `.js`. The advantages are
 
-* more elements of syntax like enums or
-  an advanced syntax
-* you can add types to methods, attributes, ...
-  to enable the syntax checker and using most
-  of your IDE features
+* more elements of syntax like enums or an advanced syntax
+* you can add types to methods, attributes, ... to enable the syntax checker and using most of your IDE features
   
-The official site is here
-[typescriptlang](https://www.typescriptlang.org/)
-if you want to check.
+The official site is here [typescriptlang](https://www.typescriptlang.org/) if you want to check.
 
 <hr class="sr">
 
 ## Starting
 
-* install using ``npm install -g typescript``
-* compile ``npx tsc``
-* watch-mode (auto compile) ``npx tsc -w``
+* install using `npm install -g typescript`
+* compile `npx tsc`
+* watch-mode (auto compile) `npx tsc -w`
 
-You may have to create a config file using ``npx tsc --init``
-to define the Javascript version etc.
+You may have to create a config file using `npx tsc --init` to define the Javascript version etc.
 
 ```json
 {
@@ -34,16 +26,13 @@ to define the Javascript version etc.
 }
 ```
 
-You may read the official tutorial and start
-learning from [here](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html).
+You may read the official tutorial and start learning from [here](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html).
 
 <hr class="sl">
 
 ## My notes
 
-This is a summary of things I used in TypeScript. Most
-of the things you will use are JavaScript features
-so I won't point them out.
+This is a summary of things I used in TypeScript. Most of the things you will use are JavaScript features so I won't point them out.
 
 ```ts
 // this variable may only take numbers
@@ -100,17 +89,13 @@ example.number = 5; // ok since we created a setter
 let c : number = <number>b; 
 ```
 
-Note that you can add a ``?`` after a variable name
-telling typescript that this parameter is optional (so
-it may be undefined).
+Note that you can add a `?` after a variable name telling typescript that this parameter is optional (so it may be undefined).
 
 <hr class="sr">
 
 ## CheatSheets
 
-To be honest, I haven't read them yet for I looked for
-some links just in case someone didn't known about this
-kind of document
+To be honest, I haven't read them yet for I looked for some links just in case someone didn't known about this kind of document
 
 * <http://hoomanb.com/cs/quickref/typescript_cheatsheet.pdf>
 * <https://codingcheats.io/typescript>
