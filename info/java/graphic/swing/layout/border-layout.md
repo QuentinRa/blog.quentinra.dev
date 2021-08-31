@@ -2,8 +2,7 @@
 
 [Go back](..#layout-manager)
 
-This is the most well-know layout in Java.
-The container is divided into 5 sections
+This is the most well-know layout in Java. The container is divided into 5 sections
 
 ![borderLayout](borderLayout.png)
 

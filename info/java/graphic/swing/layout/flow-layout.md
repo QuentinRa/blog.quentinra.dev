@@ -2,8 +2,7 @@
 
 [Go back](..#layout-manager)
 
-Add the components one after another and gives
-them their **preferredSize**. Layout by default.
+Add the components one after another and gives them their **preferredSize**. Layout by default.
 
 ```java
 // flow-pane right-aligned

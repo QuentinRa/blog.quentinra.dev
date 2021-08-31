@@ -2,8 +2,7 @@
 
 [Go back](..#layout-manager)
 
-A great layout (yet a pain in the ass to use), allowing
-you to do what was hard to do using other layouts.
+A great layout (yet a pain in the ass to use), allowing you to do what was hard to do using other layouts.
 
 ```java
 jcomponent.setLayout(new GridBagLayout());

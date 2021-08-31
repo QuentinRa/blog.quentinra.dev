@@ -2,6 +2,8 @@
 
 [Go back](..#events-and-listeners)
 
+This is an example of what you can do in the method `actionPerformed` of `ActionListener`.
+
 ```java
 public class MyActionListener implements ActionListener {
     @Override
@@ -12,7 +14,7 @@ public class MyActionListener implements ActionListener {
         Object source = e.getSource();
         JButton button = (JButton) source;
 
-        // get the button text (if needed)
+        // get the text of the button (if needed)
         String text = e.getActionCommand();
         
         // ...
@@ -20,7 +22,7 @@ public class MyActionListener implements ActionListener {
 }
 ```
 
-And
+And you can add the listener like this
 
 ```java
 JButton b;

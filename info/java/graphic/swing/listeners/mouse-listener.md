@@ -2,6 +2,8 @@
 
 [Go back](..#events-and-listeners)
 
+You can also use `MouseAdapter` (abstract class) implementing MouseListener, MouseWheelListener, and MouseMotionListener.
+
 ```java
 public class MyMouseListener implements MouseListener {
 
@@ -22,6 +24,3 @@ public class MyMouseListener implements MouseListener {
 
 }
 ```
-
-You can also use ``MouseAdapter`` (abstract class)
-implementing MouseListener, MouseWheelListener, and MouseMotionListener.

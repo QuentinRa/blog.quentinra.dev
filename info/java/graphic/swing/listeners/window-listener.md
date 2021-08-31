@@ -2,6 +2,8 @@
 
 [Go back](..#events-and-listeners)
 
+You can also use `MouseAdapter` (abstract class) implementing WindowListener, WindowStateListener, and WindowFocusListener
+
 ```java
 public class MyWindowListener implements WindowListener {
 
@@ -28,6 +30,3 @@ public class MyWindowListener implements WindowListener {
 
 }
 ```
-
-You can also use ``MouseAdapter`` (abstract class)
-implementing WindowListener, WindowStateListener, and WindowFocusListener

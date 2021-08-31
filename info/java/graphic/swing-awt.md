@@ -2,10 +2,7 @@
 
 [Go back](..#graphical-interfaces)
 
-Swing and AWT are the native way of creating 
-graphical interfaces. AWT was the first library
-but was quite slow so Swing got introduced. Now,
-both are the same.
+Swing and AWT are the native way of creating graphical interfaces. AWT was the first library but was quite slow so Swing got introduced. Now, both are the same.
 
 ```java
 // awt
@@ -14,22 +11,15 @@ import java.awt.*;
 import javax.swing.*;
 ```
 
-Why I hating Swing/AWT? A lot of graphical bugs. Using
-some repaint and co. on components without a background
-may also draw remnant of the previous draw... I created
-the same app in Swing and Javafx and in JavaFX the app
-is faster, with less code and easier to change
-since I'm using fxml so don't use Swing/AWT.
+Why I hating Swing/AWT? A lot of graphical bugs. Using some repaint and co. on components without a background may also draw remnant of the previous draw... I created the same app in Swing and Javafx and in JavaFX the app is faster, with less code and easier to change since I'm using fxml so don't use Swing/AWT.
 
 <hr class="sl">
 
 ## Components
 
-Swing and AWT have a lot of similar classes, in SWING
-the names are starting with a ``J`` then the AWT name.
+Swing and AWT have a lot of similar classes, in SWING the names are starting with a `J then the AWT name.
 
-All swing components extends ``JComponent`` while
-AWT components are extending ``Component``.
+All swing components extends `JComponent` while AWT components are extending `Component`.
 
 ```java
 JFrame f = new JFrame("title");
@@ -79,8 +69,7 @@ p.add(l);
 
 ## JComponent
 
-Before digging into listeners, drawing and layout managers, here is a list
-of what you could expect of a JComponent.
+Before digging into listeners, drawing and layout managers, here is a list of what you could expect of a JComponent.
 
 ```java
 JComponent aComponent = new JPanel(); // we don't care about what component
@@ -124,14 +113,9 @@ aComponent.setMaximumSize(new Dimension(50,50));
 
 ## Layout manager
 
-You may have wondered how you could set a component
-to be somewhere in the frame. All JComponents
-got a method ``setLayout(LayoutManager m)``
-taking a LayoutManager which is actually defining
-how the ``add`` method will work.
+You may have wondered how you could set a component to be somewhere in the frame. All JComponents got a method `setLayout(LayoutManager m)` taking a LayoutManager which is actually defining how the `add` method will work.
 
-**By default, the layout is a FlowLayout**,
-you may use null to disabled the layout.
+**By default, the layout is a FlowLayout**, you may use null to disabled the layout.
 
 * [BorderLayout](swing/layout/border-layout.md)
 * [FlowLayout](swing/layout/flow-layout.md)
@@ -143,15 +127,9 @@ you may use null to disabled the layout.
 
 ## Events and listeners
 
-We are calling listeners, classes having a function
-(handler) called when an action (click, mouse moved, ..)
-is done. Inside the handler, you will write the code
-specific to the event.
+We are calling listeners, classes having a function (handler) called when an action (click, mouse moved, ..) is done. Inside the handler, you will write the code specific to the event.
 
-You can add listener using methods like
-``addMouseListener`` or `addActionListener` (only
-on buttons). You can use ``addWindowListener``
-on Windows like a ``JFrame``.
+You can add listener using methods like `addMouseListener` or `addActionListener` (only on buttons). You can use `addWindowListener` on Windows like a `JFrame`.
 
 * [ActionListener](swing/listeners/action-listener.md)
 * [MouseListener](swing/listeners/mouse-listener.md)
@@ -159,9 +137,7 @@ on Windows like a ``JFrame``.
 * MouseMotionListener (drag and drop)
 * MouseWheelListener (scroll)
 
-Lazy (or smart?) ones are using the lambda syntax
-to declare a listener since they are functional
-interfaces
+Lazy (or smart?) ones are using the lambda syntax to declare a listener since they are functional interfaces
 
 ```java
 JButton b;
@@ -179,15 +155,13 @@ b.addActionListener(new ActionListener(){
 });
 ```
 
-but you should create a class (be it inner or not)
-since that's way better (in most cases).
+but you should create a class (be it inner or not) since that's way better (in most cases).
 
 <hr class="sl">
 
 ## Drawing
 
-Extends JComponent and override ``paintComponent``
-method. Do anything you want inside.
+Extends JComponent and override `paintComponent` method. Do anything you want inside.
 
 ```java
 import javax.swing.JComponent;

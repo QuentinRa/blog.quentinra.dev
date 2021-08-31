@@ -2,53 +2,36 @@
 
 [Go back](..#graphical-interfaces)
 
-JavaFx is a graphic library in Java. This is way better
-than SWING because you can use ``.fxml`` files to
-create the view and that makes your code way cleaner.
+JavaFx is a graphic library in Java. This is way better than SWING because you can use `.fxml` files to create the view and that makes your code way cleaner.
 
-I started learning JavaFX with a 
-[school project](../../../special/ilo/tchat/index.md).
-After that, I practiced a lot on a 
-[game launcher eden](https://github.com/lgs-games/eden).
-Here is the 
-[official tutorial to install JavaFX](https://openjfx.io/openjfx-docs/)
-but you may check my school project if you have a problem.
+I started learning JavaFX with a [school project](../../../special/ilo/tchat/index.md). After that, I practiced a lot on a [game launcher eden](https://github.com/lgs-games/eden).
+Here is the [official tutorial to install JavaFX](https://openjfx.io/openjfx-docs/) but you may check my school project if you have a problem.
 
 <hr class="sl">
 
 ## .fxml
 
-The best way to make interfaces would be to use
-.fxml files. 
-Install
-[Scene builder](https://gluonhq.com/products/scene-builder/),
-a software with a graphical interface to create your fxml.
+The best way to make interfaces would be to use .fxml files. 
+Install [Scene builder](https://gluonhq.com/products/scene-builder/), a software with a graphical interface to create your fxml.
 
 Like in swing, you will have **layout managers** to group components
 
-* ``BorderPane``: screen split in NORTH, SOUTH, EAST, WEST, CENTER
-* ``FlowPane``: each component takes its preferred size
-* ``HBox``: add components horizontally
-* ``VBox``: add components vertically
-* ``GridPane``: a table (with cells, rows, and columns)
+* `BorderPane`: screen split in NORTH, SOUTH, EAST, WEST, CENTER
+* `FlowPane`: each component takes its preferred size
+* `HBox`: add components horizontally
+* `VBox`: add components vertically
+* `GridPane`: a table (with cells, rows, and columns)
 * ...
 
-Simply drag and drop them, either in the 
-**hierarchy** or in the **preview** tab. Then
-you can look and add components inside.
+Simply drag and drop them, either in the **hierarchy** or in the **preview** tab. Then you can look and add components inside.
 
-You may directly edit the properties of a components
-by clicking on it then inspecting them in the
-**inspector tab**.
+You may directly edit the properties of a components by clicking on it then inspecting them in the **inspector tab**.
 
 * Properties
-  * Disable: to disable a component
-    <span class="tms">(like a button)</span>
+  * Disable: to disable a component <span class="tms">(like a button)</span>
   * Node orientation: you may do some tricks here if align does not work
-  * Cursor: change the cursor on a button
-    <span class="tms">(for instance)</span>
-  * Style: add some css
-    <span class="tms">(explained later)</span>
+  * Cursor: change the cursor on a button <span class="tms">(for instance)</span>
+  * Style: add some css <span class="tms">(explained later)</span>
 * Layout
   * margin: spacing between your component and the outside
   * padding: make as margin but with the component border
@@ -61,19 +44,13 @@ by clicking on it then inspecting them in the
 
 ## Labels
 
-You will use labels to display text. You may group
-labels using a **TextFlow** (if you want to put a word
-in red in a sentence etc.).
+You will use labels to display text. You may group labels using a **TextFlow** (if you want to put a word in red in a sentence etc.).
 
-Right after the input field "Text" in properties,
-on a same line, you can make a little cogs appear.
-This cogs allow you to make localized strings, that you
-will use later to make your application in many
-languages.
+Right after the input field "Text" in properties, on a same line, you can make a little cogs appear. This cogs allow you to make localized strings, that you will use later to make your application in many languages.
 
-* ``%key`` (enter a key)
-* create a file ``i18n_en.properties``
-* add ``key=the translation here for key``
+* `%key` (enter a key)
+* create a file `i18n_en.properties`
+* add `key=the translation here for key`
 * you may create as many files as you want
 * in your code, you will have to add this line (see next part)
 
@@ -97,11 +74,7 @@ If you put an image and a text inside a label, you can
 
 ## Creating a Controller
 
-Each fxml file can have one controller. This is a class
-that will store the variable declared with an ID and
-the event listener functions that will be called when
-an event is fired if you need ones. For instance, an event
-would be click somewhere in the view.
+Each fxml file can have one controller. This is a class that will store the variable declared with an ID and the event listener functions that will be called when an event is fired if you need ones. For instance, an event would be click somewhere in the view.
 
 First, create a Java class
 
@@ -111,8 +84,7 @@ package com.lgs.eden.application;
 public class WindowController {}
 ```
 
-Then, in SceneBuilder, in the bottom-left corner,
-click on controller and add it
+Then, in SceneBuilder, in the bottom-left corner, click on controller and add it
 
 ```none
 com.lgs.eden.application.WindowController
@@ -142,26 +114,19 @@ public class WindowController {
     private void onEventName(ActionEvent actionEvent) {}
 ```
 
-* for the attribute topPane, it means that I put
-in my fxml an id "topPane" to a BorderPane.
-* I can use the function "onEventName" (change the name
-according to what the function do) in my fxml
+* for the attribute topPane, it means that I put in my fxml an id "topPane" to a BorderPane.
+* I can use the function "onEventName" (change the name according to what the function do) in my fxml
 
-Example: on a button, in code section. To add a function executed
-when the button is clicked, I would write ``onEventName``
-in ``onAction``.
+Example: on a button, in code section. To add a function executed when the button is clicked, I would write `onEventName` in `onAction`.
 
-* Note: We are adding ``@FXML`` because the attribute/method
-is private. If that's not the case, then you don't need it.
-* Note: You may remove the event method argument if you are not
-planning to use it.
+* Note: We are adding `@FXML` because the attribute/method is private. If that's not the case, then you don't need it. 
+* Note: You may remove the event method argument if you are not planning to use it.
 
 <hr class="sr">
 
 ## Starting coding
 
-You main class must extends Application
-and call ``launch``. Your code will be in `start`.
+You main class must extends Application and call `launch`. Your code will be in `start`.
 
 ```java
 public class Main extends Application {
