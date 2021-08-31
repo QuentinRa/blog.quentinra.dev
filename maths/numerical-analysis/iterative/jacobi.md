@@ -2,153 +2,42 @@
 
 [Go back](../index.md)
 
-In the Jacobi method, you will be given a starting point $X^{(0)}$ which is usually a vector of zeros. You will solve each equation with this point, and get a new point $X^{(1)}$. Then you will iterate again and again, until you got a "good enough" result.
-
-<hr class="sl">
-
-## Using a table
-
-We are using a vector of zeros for our starting point is $X^{(0)} = (0,0,0)$. As a remember, we had
-
-* $x^{(k+1)} = \frac{12 - 2 * y - 2 * z}{4}$
-* $y^{(k+1)} = \frac{-9 - 2 * x - 7 * z}{10}$
-* $z^{(k+1)} = \frac{-20 - 2 * x - 7 * y}{21}$
-
-| var | i=0 | i=1 | i=2 | ... | $i\ge41$ |
-| ------ | ------ | ------ | ------ | ------ | ------ |
-| x | $x^{(0)} = 0$ | $X^{(0)} = (0,0,0)$ <br> $x^{(1)} = 3$ | $X^{(1)} = (3,-0.9,-0.95)$ <br> $x^{(2)} = 3.925$ | ... | $X^{(40)} = (?,?,?)$ <br> $x^{(41)} = 4$ |
-| y | $y^{(0)} = 0$ | $X^{(0)} = (0,0,0)$ <br> $y^{(1)} = -0.9$ | $X^{(1)} = (3,-0.9,-0.95)$ <br> $y^{(2)} = -0.835$ | ... | $X^{(40)} = (?,?,?)$ <br> $x^{(41)} = -1$ |
-| z | $z^{(0)} = 0$ | $X^{(0)}  = (0,0,0)$ <br> $z^{(1)} = -0.95$ | $X^{(1)} = (3,-0.9,-0.95)$ <br> $z^{(2)} = -0.938$ | ... | $X^{(40)} = (?,?,?)$ <br> $x^{(41)} = -1$ |
-
-We got $X^{(41)} = (4, -1, -1)$ which is the solution we wanted.
-
-<hr class="sr">
-
-## Jacobi in R
-
-Here is how you could see this in R code. We are checking the convergence with $\epsilon = 0.001$.
-
-```r
-xk <- function (y, z) { (12 - 2 * y - 2 * z) / 4  }
-yk <- function (x, z) { (-9 - 2 * x - 7 * z) / 10 }
-zk <- function (x, y) { (-20 - 2 * x - 7 * y) / 21  }
-
-# initial values
-A <- matrix(c(4,2,2,2,10,7,2,7,21), 3, 3, byrow = TRUE)
-b <- c(12,-9,-20)
-
-# vector of 0
-k <- 0
-Xk <- rep(0, each = 3)
-# vector of 0.001
-e <- matrix(rep(0.001, each = 3))
-
-repeat {
-	# update our vector of values
-	Xk <- c(
-		xk(y = Xk[2], z = Xk[3]),
-		yk(x = Xk[1], z = Xk[3]),
-		zk(x = Xk[1], y = Xk[2])
-	)
-
-	r <- abs((A %*% Xk) - b)
-	# each absolute value of R is lesser than 0.001
-	if (sum(r < e) == 3) {
-		cat("End: k=", k, "\n");
-		cat("The result is\n")
-		cat(Xk, "\n")
-		break;
-	}
-	k <- k +1
-}
-```
-
-The result is almost the exact value of $X = (4,-1,-1)$. The more we decrease epsilon, the more the result is converging. 
-
-```r
-# End: k= 22
-# The result is
-# 3.999955 -1.000037 -1.000024
-```
-
-<hr class="sl">
-
-## More theoretically
-
-Jacobi formula is
-<div>
-  \[
-    \displaylines{
-      \begin{align}\begin{aligned}
-    X^{(k+1)}
-    \Leftrightarrow D^{-1} * (L + U) * X^{(k)} + D^{-1} * b
-    \end{aligned}\end{align}
-    }
-  \]
-</div>
-
-with
-
-* b: that's the vector b in AX=b
-* $X^{(k)}$: the result, after k iterations
-* D: a diagonal matrix
-* L: an upper triangular matrix, multiplied by -1
-* U: a lower triangular matrix, multiplied by -1
-
-And, we must have **A = D - L - U** <span class="tms">(you may see **A = D + L + U** too, but the formula for $X^{(k)}$ is different)</span>.
-
-<hr class="sr">
-
-## Example using the theory
-
-Since we have
+In the Jacobi method, the formula is based on two parts that you can evaluate first, and then at each iteration, you have to multiply your $X$ by the first part, and add the second part.
 
 <div>
 \[
-A = \begin{pmatrix}4&2&2\\2&10&7\\2&7&21\\\end{pmatrix}
-\quad
-b = \begin{pmatrix}12\\-9\\-20\\\end{pmatrix}
+X^{(k+1)}
+\Leftrightarrow D^{-1} * (L + U) * X^{(k)} + D^{-1} * b
 \]
 </div>
 
 We got
 
-<div>
-\[
-D = \begin{pmatrix}4&0&0\\0&10&0\\0&0&2\\\end{pmatrix}
-\quad
-L = \begin{pmatrix}0&0&0\\-2&0&0\\-2&-7&0\\\end{pmatrix}
-\quad
-U = \begin{pmatrix}0&-2&-2\\0&0&-7\\0&0&0\\\end{pmatrix}
-\]
-</div>
+* **PART1**: $D^{-1} * (L + U)$
+* **PART2**: $D^{-1} * b$
+
+<hr class="sr">
+
+## Jacobi in R
 
 ```r
-A <- matrix(c(4,2,2,2,10,7,2,7,21), nrow = 3, ncol = 3)
-D <- diag(c(4,10,21))
-U <- matrix(-c(0,0,0,2,0,0,2,7,0), 3, 3)
-L <- matrix(-c(0,2,2,0,0,7,0,0,0), 3, 3)
-Xk <- c(0,0,0)
-b <- c(12,-9,-20)
-e <- matrix(rep(0.001, each = 3))
-k <- 0
-# evaluated once
+# ...
+##################################
+# Complete here: add new variables
+##################################
 D.inv <- solve(D)
 PART1 <- D.inv %*% (L + U)
 PART2 <- D.inv %*% b 
 
 repeat {
 	# update our vector of values
-	Xk <- PART1 %*% (b + PART2 %*% Xk)
-
-	r <- abs((A %*% Xk) - b)
-	# each absolute value of R is lesser than 0.001
-	if (sum(r < e) == 3) {
-		cat("End: k=", k, "\n");
-		cat("The result is\n")
-		cat(Xk, "\n")
-		break;
-	}
-	k <- k +1
+	Xk <- PART1 %*% Xk + PART2
+    # ...
 }
+```
+
+```r
+# End: k= 22 
+# The result is
+# 3.999955 -1.000037 -1.000024
 ```

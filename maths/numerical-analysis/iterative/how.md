@@ -2,26 +2,83 @@
 
 [Go back](../index.md)
 
-First, I had a hard time with the formulas, so I'm going to introduce everything with a table first, then the code in R (which looks bad), then I will introduce the formulas, and finally the code in R using the formulas (which is better).
+Jacobi, Gauss-Seidel and SOR, are almost the same. We will have to rewrite your matrix $A$ in 3 matrices, that are either diagonal matrices or triangular matrices.
 
-We will be starting from a system that will be given to us. 
+* $A = D - L - U$
+* $A$ is our matrix
+* $D$ is a diagonal matrix with the coefficients on the diagonal of $A$
+* $L$ is a lower triangular matrix, with the coefficient below the diagonal of $A$, **multiplied by -1**
+* $U$ is a upper triangular matrix, with the coefficient above the diagonal of $A$, **multiplied by -1**
 
-<p>
+This is as easy as you could guess, we had
+
+<div>
 \[
-\begin{cases}
-4x + 2y + 2z = 12 \\
-2x + 10y + 7z = -9 \\
-2x + 7y + 21z = -20 \\
-\end{cases} 
+A = \begin{pmatrix}4&2&2\\2&10&7\\2&7&21\\\end{pmatrix}
+\quad
+b = \begin{pmatrix}12\\-9\\-20\\\end{pmatrix}
 \]
-</p>
+</div>
 
-Once you do have this, your first job will be to write each line like this
+So we have
 
-* $x^{(k+1)} = \frac{12 - 2 * y - 2 * z}{4}$
-* $y^{(k+1)} = \frac{-9 - 2 * x - 7 * z}{10}$
-* $z^{(k+1)} = \frac{-20 - 2 * x - 7 * y}{21}$
+<div>
+\[
+D = \begin{pmatrix}4&0&0\\0&10&0\\0&0&2\\\end{pmatrix}
+\quad
+L = \begin{pmatrix}0&0&0\\-2&0&0\\-2&-7&0\\\end{pmatrix}
+\quad
+U = \begin{pmatrix}0&-2&-2\\0&0&-7\\0&0&0\\\end{pmatrix}
+\]
+</div>
 
-For the first variable, I used the first line and put ``x = the rest``. The same for the second variable and second line, etc.
+We will always be starting with $X^{(0)} = (0,0,0)$, since we weren't given a starting value, and we will try to get $X^{(k)} \approx^{\epsilon=0.001} (4,-1,-1)$.
 
-**Each algorithm will be explained starting from this**. The idea will be almost the same, but in the end, you are going to do some iterations using a table (or the formula), and get your $X^{(k)}$.
+<hr class="sl">
+
+## Code in R
+
+As the code is quite similar, every method will be completing this sample of code
+
+```r
+# initialization of our variables
+# our matrix
+A <- matrix(c(4,2,2,2,10,7,2,7,21), nrow = 3, ncol = 3)
+# DLU
+D <- diag(c(4,10,21))
+U <- matrix(-c(0,0,0,2,0,0,2,7,0), 3, 3)
+L <- matrix(-c(0,2,2,0,0,7,0,0,0), 3, 3)
+# X^{(0)}
+Xk <- c(0,0,0)
+# b
+b <- c(12,-9,-20)
+# AX-b should be lesser than a vector a epsilon 0.001
+e <- matrix(rep(0.001, each = 3))
+k <- 0
+##################################
+# Complete here: add new variables
+##################################
+
+repeat {
+	# update our vector of values with the formula
+	Xk <- ###### COMPLETE HERE ########### 
+
+    # checking if the result is near enough of the real result
+	r <- abs((A %*% Xk) - b)
+	# each absolute value of R is lesser than 0.001
+	if (sum(r < e) == 3) {
+		# print
+		cat("End: k=", k, "\n");
+		cat("The result is\n")
+		cat(Xk, "\n")
+		break;
+	}
+	k <- k +1
+}
+```
+
+<hr class="sr">
+
+## Side note
+
+Some of you may have seen $A = D + L + U$ instead of $A = D - L - U$, this isn't wrong, but every formula will be different from the one here. I will use minus as it's the one my teacher is using.
