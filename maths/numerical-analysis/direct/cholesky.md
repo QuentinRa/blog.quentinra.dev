@@ -48,7 +48,7 @@ l_{ii} = \sqrt{a_{ii} - \sum_{k=1}^{i-1} l^2_{ik}}
 \]
 </p>
 
-This is the square of the **value on the diagonal** minus all the **values** on the **same line**, but **before** ours.
+This is the square of the **value on the diagonal** minus all the **values** (to square) on the **same line**, but **before** ours.
 
 * **SECOND FORMULA**
 
@@ -61,7 +61,7 @@ l_{ij} = \frac{a_{ij} - \sum_{k=1}^{j-1} l_{ik} * l_{jk} }{a_{ii}}
 This is **our value** minus, the sum of the products of
 
 * the value of the **previous column same line**
-* by **the previous column of the previous line**
+* by the value of **the previous column of the previous line**
 * (until we don't have a previous column)
 
 Then, we are dividing the result by the value on the diagonal.
@@ -201,8 +201,8 @@ A.chol.t <- t(A.chol)
 identical(t(A.chol) %*% A.chol, A)
 
 # solve Ay = b
-y <- forwardsolve(A.chol.t, b)
+Y <- forwardsolve(A.chol.t, b)
 # [1]  6 -5 -4
-x <- backsolve(A.chol, y)
+X <- backsolve(A.chol, Y)
 # 4 -1 -1
 ```
