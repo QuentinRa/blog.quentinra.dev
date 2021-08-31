@@ -1,47 +1,27 @@
 # Assembly (ARM)
 
-You will usually run some programs on your computer.
-These programs are written in the machine language,
-so many 0 and 1. The level higher than binary
-code is assembly. That's aw human-readable language
-of the machine code. You may use that a lot of you
-do what we call "reverse-engineering" like exploring
-the code of a program.
+You will usually run a program on your computer. This is a binary, meaning a file written in the machine language, and made only of 0 and 1. It's quite unreadable for us, so we introduced a language on level above: assembly. You may see it a lot of you do what we call "reverse-engineering" meaning exploring the code of a compiled program.
 
-You can learn about Intel assembly but here we will
-learn about ARM processor assembly language. The reason
-for that choice is because the RISC family of processors
-whose ARM belongs to is still quite used.
+In this course, we will learn about ARM assembly (you may also want to look at Intel Assembly). The reason for that choice is because the RISC family of processors whose ARM belongs to is still quite used.
 
 <hr class="sl">
 
 ## Introduction
 
-First, you need a RISC kind of processor. If you got
-a raspberry (cost is around 30$) then you should use it.
-You can also use this 
-[great (yet not useful here) tool](https://azm.azerialabs.com/) to write some code
-but you won't be able to compile it.
+First, you need a RISC kind of processor. If you got a raspberry (cost is around 30$) then you should use it. You can also use this [great (yet not useful here) tool](https://azm.azerialabs.com/) to write some code, but you won't be able to compile it.
 
 The commands that we will use are
 
-* ``as``: assemble, create a `.o` file
-* ``ld``: link, create a `.out` file
+* `as`: assemble, create a `.o` file
+* `ld`: link, create a `.out` file
 
-If you got good eyes, you should have noticed that this
-is the same that in C, with ``gcc -c``(.o) and `gcc` (.out).
-You can mix assembly code with ``C`` code and 
-doing that helped me quite a lot to learn assembly, 
-like writing the code in ``C`` then
-removing a function in C and writing it in ``ARM``
-(so I didn't have to write everything is looking for
-the issue when the program was not working).
+If you got good eyes, you should have noticed that this is the same that in C, with `gcc -c`(.o) and `gcc` (.out). You can mix assembly code with `C` code and doing that helped me quite a lot to learn assembly, like writing the code in `C` then removing a function in C and writing it in `ARM` (so I didn't have to write everything is looking for the issue when the program was not working).
 
 <hr class="sr">
 
 ## Start writing some code
 
-You will write a file ``.s`` then you can do
+You will write a file `.s` then you can do
 
 ```bash
 # file.o
@@ -82,17 +62,13 @@ _start :
 .end
 ```
 
-You can get the assembly code of a ``C`` program
-with ``objdump -d a.out``. You may also check
-[disassemble](https://visualgdb.com/gdbreference/commands/disassemble)
-command.
+You can get the assembly code of a `C` program with `objdump -d a.out`. You may also check [disassemble](https://visualgdb.com/gdbreference/commands/disassemble) command.
 
 <hr class="sl">
 
 ## Syntax
 
-The language is quite easy to learn, since there
-isn't much of syntax
+The language is quite easy to learn, since there isn't much of syntax
   
 * [File Structure](syntax/file.md)
 * [Registers](syntax/registers.md)
@@ -100,28 +76,23 @@ isn't much of syntax
 * [System calls](syntax/sys.md)
 * [Constants](syntax/constants.md)
 
-Comments are made with `@` or `#` or  ``;``.
+Comments are made with `@` or `#` or  `;`.
 
 <hr class="sr">
 
 ## Instructions
 
-The main idea is that you will move values into the
-registers. The first register is the first argument of a
-function, ...
+The main idea is that you will move values into the registers. The first register is the first argument of a function, ...
 
-For instance, the system call ``write(1, "test", 4)``
-means that we want
+For instance, the system call `write(1, "test", 4)` means that we want
 
-* ``r0``: 1
-* ``r1``: "test"
-* ``r2``: 4
+* `r0`: 1
+* `r1`: "test"
+* `r2`: 4
 
-And the result will be stored in ``r0``.
+And the result will be stored in `r0`.
 
-We will need instructions to set a value into
-a register. You may also need instructions to do arithmetic
-operations like +, -, ...
+We will need instructions to set a value into a register. You may also need instructions to do arithmetic operations like +, -, ...
 
 * [Move-related instructions](syntax/move.md)
 * [Arithmetic-related instructions](syntax/arithmetic.md)
@@ -131,20 +102,14 @@ operations like +, -, ...
 
 ## Functions
 
-You are almost ready to write functions. You know
-that the function parameters must be stored in registers,
-starting from r0 and that the result will be stored in r0.
+You are almost ready to write functions. You know that the function parameters must be stored in registers, starting from r0 and that the result will be stored in r0.
 
 Still, you must learn
 
 * the syntax of functions
 * how to store registers
 
-For the latter, you should remember that you don't
-have a lot of registers. And what if a function calls
-another one? You may want to know how you should manage
-your registers for that (like pc and lr registers
-might become messed up after a function call).
+For the latter, you should remember that you don't have a lot of registers. And what if a function calls another one? You may want to know how you should manage your registers for that (like pc and lr registers might become messed up after a function call).
 
 * [Declaration](functions/syntax.md)
 * [Call](functions/call.md)
@@ -154,20 +119,14 @@ might become messed up after a function call).
 
 ## Conditions
 
-You can add a condition for an instruction
-to be executed only if the condition is true.
-These conditions are checking the 4 flags
+You can add a condition for an instruction to be executed only if the condition is true. These conditions are checking the 4 flags
 
 * N: is the result Negative?
 * Z: is the result zero?
 * C: is the last carry value one?
 * V: do we have an overflow?
 
-Usually, the flags are only changed after calling
-a test function but you may add a ``s`` at the end
-of the previous instruction to change the flags
-like ``add`` can become `adds` or `addnes` where
-ne if the condition that we will learn right now.
+Usually, the flags are only changed after calling a test function but you may add a `s` at the end of the previous instruction to change the flags like `add` can become `adds` or `addnes` where ne if the condition that we will learn right now.
 
 * [Table of conditions](cond/table.md)
 * [Tests](cond/tests.md)
@@ -177,8 +136,7 @@ ne if the condition that we will learn right now.
 
 ## Loops
 
-Also, note that we have a new instruction ``b``,
-to move to a label like that
+Also, note that we have a new instruction `b`, to move to a label like that
 
 ```asm6502
 loop:
@@ -201,15 +159,12 @@ exit:
 
 ## Barrel Shifter
 
-You can modify what we called ``Operand2`` easily
-using some operators like ``>>`` or `<<` in C.
+You can modify what we called `Operand2` easily using some operators like `>>` or `<<` in C.
 
 * [Instructions](bs/instructions.md)
 * [Usage](bs/usage.md)
 
-You will use a lot the Barrel Shifter when manipulating
-arrays since you need to move from an index to another
-without needing to do complex operations.
+You will use a lot the Barrel Shifter when manipulating arrays since you need to move from an index to another without needing to do complex operations.
 
 * [Complex shifts](bs/indexed.md)
 
