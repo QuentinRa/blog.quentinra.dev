@@ -110,11 +110,10 @@ Examples of cases where you might be using it
 * code in `C`
 * code in `C++`
 
-Like PHPStorm, you can use a remote compiler to compile your code or use a local one.
-
-Using the basic configuration, you will have to use `CMake` to compile, but `Makefile` is supported if you manage to <span class="tms">(edit 2021.2: it seems quite easier to use Makefiles now)</span>.
+CLion was using **CMake** to compile your project, but since 2021.2, it's now really easy to use a **Makefile**. Still, since CMake was not that hard, I'm letting it here.
 
 * [Starting with CMake](clion/cmake.md)
+* [Makefile project](clion/makefile.md)
 * [Set compiler](clion/compiler.md)
 * [Remote working](clion/remote.md)
 * [Debug](clion/debug.md)

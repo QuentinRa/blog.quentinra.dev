@@ -2,12 +2,11 @@
 
 - Json and JSON5, yaml
 - JetBrains
-    - CLion test Makefile
-    - new JavaFX wizard
-    - JLink artifacts
-    - "documentation" support
-    - CTest
-    - update screens
+  - new JavaFX wizard
+  - JLink artifacts
+  - "documentation" support
+  - CTest
+  - update screens
 - Git
   - git tag
   - git reset
