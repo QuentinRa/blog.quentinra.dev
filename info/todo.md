@@ -2,16 +2,16 @@
 
 - Java
   - sealed classes
+  - -var
   - http://www.cburch.com/books/java/index.html
   - https://github.com/in28minutes/java-best-practices
-- Bootstrap
-  - https://tailwindcss.com/
-  - https://primer.style/css/getting-started
   - Java16+17
   - https://mkyong.com/java/what-is-new-in-java-15/
   - https://en.wikipedia.org/wiki/Java_version_history
-  - LTS?
   - https://edencoding.com/resources/css_properties/fx-background-image/
+- Bootstrap
+  - https://tailwindcss.com/
+  - https://primer.style/css/getting-started
 - PHP 8
   - enums (enum Name {case;} or case=[...]. Name::from([...]))
   - add the ? condition (truc ? blah blah : null) with ?->

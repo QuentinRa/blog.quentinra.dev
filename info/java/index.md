@@ -1,45 +1,40 @@
-# Presentation of the course
+# Java programming
 
-In this course, you will find
+Java is an oriented-object language, maintained and owned by Oracle. We are currently in Java 17. Java programs are running on a virtual machine, which is supposedly allowing us to run any runnable on any machine. This is a good language to learn more about design patterns, acronyms such as SOLID or GRASP, and to learn more about oriented-object programming. As of Java 15, we are now how to write Java in a Shell, like we could in Python.
 
-* an introduction to `JAVA`
-* a presentation of advanced concepts such as `Networking`, `Threads` or `Databases`.
-* graphical interfaces with `AWT` or `Swing`
-* modern interfaces with `JavaFX`
-* some secrets things about `Java`
-* how to package and create a `.exe`/`installer` for your applications
+* An introduction to Java programing language
+* Advanced concepts such as **Networking** and **Threads**
+* Graphical interfaces with **AWT** and **Swing**
+* Modern interfaces with **JavaFX**
+* Some **secrets** about Java (ex: private members in interfaces since Java9)
+* How to package and create a **.exe**/**installer** for your applications
+* How to write tests using **Junit5** (with notes about Junit4)
+
+Note: I know the JDK17 will be released in two weeks, but since we know what's inside, I'm adapting the course earlier (as I have time now).
 
 <hr class="sr">
 
 ## Introduction
 
-Java is an oriented-object language, excluding 8 primitives types,
-all other types are classes and their instances are objects.
+Java is an oriented-object language, excluding 8 primitives types, all other types are classes and their instances are objects.
 
-Java is compiled using a JDK with the ``javac`` command and
-is run using a JDK/JRE with the ``java`` command. JAVA is run
-on a virtual machine so your code will work on any OS, though
-there may be some changes.
+* **JDK** (Java development kit): used to compile java, include the JRE, create a `.class` from a `.java` with the command `javac File.java`
+* **JRE** (Java runtime environment): used to run `.class`, with the command `java File` (for File.class)
 
-You got a lot of tutorials on the web as to how you can install java
-but these links to download a JDK might help. Still, IDEs like
-IntelliJ are downloading any version of Java you want when creating
-a project so no install required. **We are currently in Java16
-or Java1.16**
+You got a lot of tutorials on the web as to how you can install Java. Still, IDEs like IntelliJ are downloading any version of Java you want when creating a project, so no install required.
 
 * [Oracle JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
-* [Oracle JDK (no login)](https://jdk.java.net/archive/)
-* [Open JDK](https://openjdk.java.net/projects/jdk/)
-* [Windows JDK8 / 11](https://github.com/ojdkbuild/ojdkbuild)
+* [OpenJDK](https://jdk.java.net/archive/) / [Notes about each OpenJDK](https://openjdk.java.net/projects/jdk/)
+* [Windows JDK8 / 11](https://github.com/ojdkbuild/ojdkbuild) (note: switch to Java17, the new LTS)
+* [AdoptOpenJdk](https://adoptopenjdk.net/) (this is mine 😁)
 
-Then the last thing you need to know (besides looking on StackOverflow)
-if you don't know something is to look at the documentation, 
+Then the last thing you need to know (besides looking on StackOverflow) if you don't know something is to look at the documentation (namely **Javadoc**) 
 
-* [Java 8](https://docs.oracle.com/javase/8/docs/api/overview-summary.html)
-* [Java 11](https://docs.oracle.com/en/java/javase/11/docs/api/index.html)
-* [Java 14](https://docs.oracle.com/en/java/javase/14/docs/api/index.html)
-* latest as of June 2021: [Java 16](https://docs.oracle.com/en/java/javase/16/docs/api/index.html)
+* [Java 8](https://docs.oracle.com/javase/8/docs/api/overview-summary.html) / [Java 11](https://docs.oracle.com/en/java/javase/11/docs/api/index.html)
+* [Java 17](https://docs.oracle.com/en/java/javase/17/docs/api/index.html) (not available yet - [current link](https://download.java.net/java/early_access/jdk17/docs/api/))
 * [history](beginner/history.md)
+
+> A JDK labeled as LTS for "Long-term support" means that it will continue to receive security updates for **5 years** after the release (**8 years** for ETS=extended). Java 8, 11 and Java 17 are [LTS releases](https://www.oracle.com/java/technologies/java-se-support-roadmap.html).
 
 <hr class="sl">
 

@@ -11,7 +11,7 @@
 * 2010 - SUN sold JAVA to Oracle
 * 2018 - Java 10
 * 2018 - Java 11, Java is not free anymore for commercial projects
-* 2022 - Java 17 :)
+* 2021 - Java 17
 
 <hr class="sl">
 
@@ -38,8 +38,8 @@
 ## Java 11
 
 * **Oracle JDK** IS NO LONGER free for commercial use
-* java implicitly compiles
-* String: ``isBlank()`` method
+* Java implicit compilation
+* adding the ``isBlank()`` method in String
 
 <hr class="sr">
 
@@ -52,8 +52,8 @@
 ## Java 14
 
 * [JPackage / JLink](../expert/exe.md)
-* new switch
-* new instanceof
+* enhanced switch
+* additional syntax for instanceof
 * JShell
 
 <hr class="sr">
