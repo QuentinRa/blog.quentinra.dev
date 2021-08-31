@@ -90,7 +90,7 @@ b = \begin{pmatrix}
 
 We are **checking** that A is
 
-* **positive definite**, ok
+* **leading minors not null**, ok
   * $det(\Delta_1) = 4 \gt 0$
   * $det(\Delta_2) = 36 \gt 0$
   * $det(\Delta_3) = 576 \gt 0$
@@ -180,10 +180,9 @@ identical(L %*% U, A)
 # [1] TRUE
 
 # LY = b
-y <- forwardsolve(L, b)
+Y <- forwardsolve(L, b)
 # [1]  12 -15 -16
-# UX = y
-x <- backsolve(U, y)
-x
+# UX = Y
+X <- backsolve(U, Y)
 # [1]  4 -1 -1
 ```
