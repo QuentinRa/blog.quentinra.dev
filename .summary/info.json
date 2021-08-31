@@ -3,13 +3,6 @@
   "description": "Learn about Java, C, OCaml, Web-related languages (HTML, CSS, JS, PHP, Node) and databases-related languages (SQL, NoSQL). We also have courses about Assembly, TypeScript, Cybersecurity, and API.",
   "courses": [
     {
-      "tag": "c",
-      "name": "C",
-      "title": "Learn C programming",
-      "desc": "We start from scratch and end up creating more complex programs with threads or a graphical interface.",
-      "icon": "<i class=\"bi bi-terminal-fill\"></i>"
-    },
-    {
       "tag": "java",
       "name": "Java",
       "title": "Learn JAVA programming",
@@ -71,13 +64,6 @@
       "title": "Learn ARM Assembly programming",
       "desc": "A short introduction to ARM assembly.",
       "icon": "<i class=\"bi bi-sim\"></i>"
-    },
-    {
-      "tag": "cyber-security",
-      "name": "Cybersecurity",
-      "title": "Learn cybersecurity",
-      "desc": "Everything related to the security of your accounts, applications, websites should be kept here.",
-      "icon": "<i class=\"bi bi-shield-shaded\"></i>"
     },
     {
       "tag": "node",
