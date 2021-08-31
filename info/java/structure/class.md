@@ -1,6 +1,6 @@
 # Creating a class
 
-[Go back](..)
+[Go back](../index.md#vocabulary)
 
 We used this syntax to create a class.
 
@@ -16,9 +16,7 @@ The form is
 * **name**: Main
 * and maybe other arguments that are not present here
 
-> **Advanced note**: a class may be declared final, meaning that
-> this class can't have children.
->
+> **Advanced note**: a class may be declared final, meaning that this class can't have children.
 > ```java
 > public final class Main { }
 > ```

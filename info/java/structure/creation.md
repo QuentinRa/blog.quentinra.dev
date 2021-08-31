@@ -1,10 +1,8 @@
 # Creating objects
 
-[Go back](..)
+[Go back](../index.md#vocabulary)
 
-We will use the ``new`` keyword to create objects.
-Simply write ``new ClassName(constructor argument, ...)``
-to create an object.
+We will use the `new` keyword to create objects. Simply write `new ClassName(constructor argument, ...)` to create an object.
 
 ## Example
 
