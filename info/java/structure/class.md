@@ -15,8 +15,3 @@ The form is
 * **type of class**: class (=normal class)
 * **name**: Main
 * and maybe other arguments that are not present here
-
-> **Advanced note**: a class may be declared final, meaning that this class can't have children.
-> ```java
-> public final class Main { }
-> ```

@@ -2,7 +2,7 @@
 
 [Go back](../index.md#vocabulary)
 
-In java, you got 4 modifiers: `public`, `protected`, `private` and `<none>`. None, which is called the package modifier, is the default modifier. These are basically used to tell Java which classes can use an attribute or a method.
+In java, you got 4 modifiers: `public`, `protected`, `private` and `<none>`. None, which is called **package**, is the default modifier. These are basically used to tell Java which classes can use an attribute or a method.
 
 * **public** means that **everyone** can see, use/call this property (method/attribute).
 
