@@ -50,16 +50,20 @@ Note that in java, we print with ``System.out.println("text");`` or with ``Syste
 * [Creating a class](structure/class.md)
 * [Visibility](structure/visiblity.md)
 * [Attributes](structure/attributes.md)
-* [Class and instance](structure/class-instance.md)
 * [Methods](structure/methods.md)
 * [Constructors](structure/constructors.md)
 * [Creating objects](structure/creation.md)
 * [Destroying objects](structure/destroy.md)
 
+Note that we are calling
+
+* **instance members** (`membres d'instance`): methods/attributes for instances (=non static)
+* **class members** (`membres de classe)`: methods/attributes of the class (=static)
+
 **Practice**
 
 * check you remember and understand the [theory](structure/mcq.md)
-* but you must practice!
+* but you must write some code!
 
 <hr class="sr">
 
@@ -95,7 +99,7 @@ If we summarize abstract class and interfaces
 **Practice**
 
 * check you remember and understand the [theory](beginner/mcq.md)
-* but you must practice! (again 🙄)
+* but you must write some code! (again 🙄)
 
 <hr class="sl">
 

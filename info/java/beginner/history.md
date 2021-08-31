@@ -2,6 +2,8 @@
 
 [Go back](../index.md#beginner)
 
+I will summarize here the history of Java, and some new features that got introduced in the newest versions, or some features that got removed.
+
 * 1991 - OAK Project by SUN
 * 1995 - Java 1.0
 * 1997 - Sun vs Microsoft (loss of Microsoft)
@@ -19,18 +21,18 @@
 
 * [Streams](../advanced/streams.md)
 * [Lambda expressions](../beginner/interfaces.md#functional-interfaces)
-* moving JavaFX outside the JDK
-* interface default method
-* method references (you can use Caller::method instead of a lambda of one line calling a method)
-* forEach on iterables
+* JavaFX is not bundled anymore with the JDK
+* Interface can have default method (method with a default behavior/code)
+* You can use method references (you can use Caller::method instead of a lambda of one line calling a method)
+* You can use for (each) on Iterables
 
 <hr class="sr">
 
 ## Java 9
 
 * [Modules](../expert/modules.md)
-* new try with resource
-* private members in interfaces
+* You can use a "try with resource"
+* You can have private members in interfaces
 
 <hr class="sl">
 
@@ -38,7 +40,7 @@
 
 * **Oracle JDK** IS NO LONGER free for commercial use
 * Java implicit compilation
-* adding the ``isBlank()`` method in String
+* adding the method `isBlank()`  in the class String
 
 <hr class="sr">
 
@@ -51,8 +53,8 @@
 ## Java 14
 
 * [JPackage / JLink](../expert/exe.md)
-* enhanced switch
-* additional syntax for instanceof
+* Adding the enhanced switch
+* Adding an additional syntax for instanceof
 * JShell
 
 <hr class="sr">
@@ -61,4 +63,4 @@
 
 * Records
 * Sealed classes
-* hidden classes
+* Hidden classes

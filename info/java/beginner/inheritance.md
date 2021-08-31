@@ -79,3 +79,13 @@ Person person = new CEO("name", "company");
 ```
 
 but you can only call `Person` methods and not `CEO` methods since you got a person, not a `CEO` for Java. You can try to cast `person` to CEO if you want to use `CEO` methods.
+
+<hr class="sl">
+
+## final
+
+A class may be declared final, meaning that this class can't be inherited.
+
+```java
+public final class Main { }
+```
