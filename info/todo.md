@@ -69,8 +69,6 @@
   - PHP8.0/HTTP2.0
   - https://caniuse.com/http2
   - https://php.watch/versions/8.1
-  - [Bootstrap studio](https://bootstrapstudio.io/)
-  - [freehtml5](https://freehtml5.co/)
   - https://blog.stackpath.com/http-request-tools/
 https://imagekit.io/blog/ultimate-guide-to-http-caching-for-static-assets/
 https://web.dev/http-cache/
@@ -91,14 +89,6 @@ see headers: curl -I https://memorize.be/
   - https://cssguidelin.es/
   - https://codeguide.co/
   - https://css-tricks.com/
-- html
-  - https://w3c.github.io/test-results/html51/implementation-report.html
-  - https://html5test.com/
-  - https://www.w3docs.com/
-  - https://www.telerik.com/blogs/welcome-to-html-5-2
-  - https://css-tricks.com/html-5-2-done-html-5-3-coming/
-  - https://www.browserstack.com/
-  - https://www.w3.org/WAI/tutorials/
 - js
   - https://jasmine.github.io/
   - https://github.com/elsewhencode/project-guidelines
@@ -120,9 +110,6 @@ see headers: curl -I https://memorize.be/
     - https://snyk.io/learn/man-in-the-middle-attack/
     - https://www.rapid7.com/fundamentals/man-in-the-middle-attacks/
     - https://stackoverflow.com/questions/14850187/is-it-correct-to-use-alt-tag-for-an-anchor-link
-    - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element
-    - https://html.spec.whatwg.org/multipage/dom.html#global-attributes
-    - https://www.w3.org/TR/html51/
     - http://ptgmedia.pearsoncmg.com/images/9780321784421/samplepages/0321784421.pdf
     - https://www.webpresencesolutions.net/metadata-meta-tags-web-page-titles-page-descriptions-explained/
     - https://aviddemand.com/google-title-tag-serp-preview-tool
@@ -195,6 +182,8 @@ CSS/JS minifier + HTML/CSS validator
 * <https://github.com/omundy>
 * <https://jgthms.com/>
 * <https://www.admecindia.co.in/courses/web-design-courses-delhi/>
+* <https://www.w3docs.com/>
+* <https://www.rankred.com/>
 
 ---
 
