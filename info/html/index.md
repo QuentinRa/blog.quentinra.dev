@@ -1,4 +1,4 @@
-# HTML
+# Learn HTML5
 
 As you could read in the Web course, HTML is the language used to write a web page. To be exact, the final result is in HTML, but you could have used other languages to generate the HTML page (such as PHP or Node.js), as their is no way to factorize code in pure HTML.
 
@@ -134,7 +134,7 @@ As you may guess, adding head is good, but we didn't split enough the body. Sinc
 
 ## Learn the tags
 
-This is the tags that I'm using the most, and the tags that you must know.
+This is the tags that I'm using the most, and the tags that you must know, with their attributes.
 
 <!--
 I can't use Markdown tables because the content is too complex 😭, it may the code more unreadable.
@@ -159,7 +159,7 @@ I can't use Markdown tables because the content is too complex 😭, it may the 
 <!-- h1 -->
 <tr>
 <td><kbd>h1</kbd></td>
-<td>page title, <br> one per page</td>
+<td>title of your page, <br> one per page</td>
 <td></td>
 <td><code>&lt;h1>title&lt;/h1></code></td>
 <td><h6 class="h1">title</h6></td>
@@ -178,7 +178,7 @@ I can't use Markdown tables because the content is too complex 😭, it may the 
 <tr>
 <td><kbd>h3</kbd> to <kbd>h5</kbd></td>
 <td>...</td>
-<td>...</td>
+<td></td>
 <td>...</td>
 <td>...</td>
 </tr>
@@ -289,16 +289,82 @@ Note that a div is "invisible", meaning that the user won't see any changes if y
 ```
 <hr class="sl">
 
-## Learn the tags II
+## Learn the tags: style
 
-And some basic tags to style a bit your HTML page
+You may want to style your website, and you can using HTML tag (lets leave the CSS for later).
 
-* [Bold](style/b.md) with b
-* [Underline](style/u.md) with u
-* [Strikethrough](style/s.md) with s
-* [Italic](style/i.md) with i
-* [Jump a line](style/br.md) with br
-* [Horizontal separator](style/hr.md) with hr
+<!--
+I can't use Markdown tables because the content is too complex 😭, it may the code more unreadable.
+-->
+
+<table class="table table-dark table-striped border-dark table-bordered">
+<thead>
+<tr>
+<th>Tag</th>
+<th>For what?</th>
+<th>Attributes</th>
+<th>Code</th>
+<th>Preview</th>
+</tr>
+</thead>
+<tbody>
+
+<!-- b -->
+<tr>
+<td><kbd>b</kbd></td>
+<td>bold</td>
+<td></td>
+<td><code>&lt;p>This &lt;b>is in bold&lt;/b>&lt;/p></code></td>
+<td>This <b>is in bold</b>.</td>
+</tr>
+
+<!-- u -->
+<tr>
+<td><kbd>u</kbd></td>
+<td>Underline</td>
+<td></td>
+<td><code>&lt;p>This &lt;u>is underlined&lt;/u>&lt;/p></code></td>
+<td>This <u>is underlined</u>.</td>
+</tr>
+
+<!-- s -->
+<tr>
+<td><kbd>s</kbd></td>
+<td>Strikethrough</td>
+<td></td>
+<td><code>&lt;p>This &lt;s>is crossed out&lt;/s>&lt;/p></code></td>
+<td>This <s>is crossed out</s></td>
+</tr>
+
+<!-- i -->
+<tr>
+<td><kbd>i</kbd></td>
+<td>Italic</td>
+<td></td>
+<td><code>&lt;p>This &lt;i>is in italic&lt;/i>&lt;/p></code></td>
+<td>This <i>is in italic</i></td>
+</tr>
+
+<!-- br -->
+<tr>
+<td><kbd>br</kbd></td>
+<td>Force a newline</td>
+<td></td>
+<td><code>&lt;span>This is&lt;/span>&lt;br>&lt;span>on 2 lines&lt;/span></code></td>
+<td><span>This is</span><br><span>on 2 lines</span></td>
+</tr>
+
+<!-- sr -->
+<tr>
+<td><kbd>sr</kbd></td>
+<td>Horizontal separator</td>
+<td></td>
+<td><code>&lt;hr></code></td>
+<td><hr></td>
+</tr>
+
+</tbody>
+</table>
 
 <hr class="sr">
 
