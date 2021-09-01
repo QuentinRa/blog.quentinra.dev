@@ -381,6 +381,10 @@ You will use these tags a lot too, but they are a little more complex than the p
 * [Code](special/code.md) with code and pre
 * [Tables](special/tables.md) using table
 
+And, you may want to learn about
+
+* [Meta tags](special/meta.md)
+
 <hr class="sl">
 
 ## Forms
@@ -404,30 +408,6 @@ the data will be hidden, GET means that the data will be shown in the URL.
 
 * [Learning about POST and GET](forms/post-get.md)
 * [Learning about form input fields](forms/input.md)
-
-<hr class="sr">
-
-## Meta tags
-
-Do you remember the ``head`` tag? Here is some advice as to
-what you wrote here.
-
-* <https://www.google.com/webmasters/markup-helper/u/0/?hl=fr>
-* <https://www.oodlesmarketing.com/blog/use-google-structured-data-markup-helper/>
-* <https://www.seoptimer.com/meta-tag-generator>
-* this one is pretty good <https://metatags.io/>
-
-```html
-<!-- website icon -->
-<link rel="icon" href=".../icon.png">
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- meta data -->
-<meta name="AUTHOR" content="...">
-<meta name="COPYRIGHT" content="...">
-<meta name="KEYWORDS" content="....">
-<meta name="DESCRIPTION" content="...">
-```
 
 <hr class="sr">
 
