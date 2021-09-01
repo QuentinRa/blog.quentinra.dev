@@ -411,7 +411,7 @@ Rarely used tags
 <!-- mark -->
 <tr>
 <td><kbd>mark</kbd></td>
-<td>marked text<br>(yellow background)</td>
+<td>marked text<br>(=yellow background)</td>
 <td></td>
 <td><code>This is  &lt;mark>marked&lt;/mark></code></td>
 <td>This is <mark>marked</mark></td>
@@ -424,6 +424,51 @@ Rarely used tags
 <td></td>
 <td><code>This is a &lt;kbd>key&lt;/kbd></code></td>
 <td>This is a <kbd class="bg-gradient">key</kbd></td>
+</tr>
+
+<!-- sup -->
+<tr>
+<td><kbd>sup</kbd></td>
+<td>superscript</td>
+<td></td>
+<td><code>This is a &lt;sup>superscript&lt;/sup></code></td>
+<td>This is a <sup>superscript</sup></td>
+</tr>
+
+<!-- sub -->
+<tr>
+<td><kbd>sub</kbd></td>
+<td>subscript</td>
+<td></td>
+<td><code>This is a &lt;sub>subscript&lt;/sub></code></td>
+<td>This is a <sub>subscript</sub></td>
+</tr>
+
+<!-- var -->
+<tr>
+<td><kbd>var</kbd></td>
+<td>for a variable</td>
+<td></td>
+<td><code>This is a &lt;var>variable&lt;/var></code></td>
+<td>This is a <var>variable</var></td>
+</tr>
+
+<!-- samp -->
+<tr>
+<td><kbd>samp</kbd></td>
+<td>for the output of a program</td>
+<td></td>
+<td><code>This is a &lt;samp>sample output&lt;/samp></code></td>
+<td>This is a <samp>sample output</samp></td>
+</tr>
+
+<!-- abbr -->
+<tr>
+<td><kbd>abbr</kbd></td>
+<td>show title when hovered</td>
+<td></td>
+<td><code>&lt;abbr title="some text here">word&lt;/abbr></code></td>
+<td><abbr title="some text here">word</abbr></td>
 </tr>
 
 </tbody>
@@ -582,7 +627,7 @@ See [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Elemen
  Force a space, or write a character using UTF8 codes
  Note that you will rarely (never?) need that
  -->
-&nbsp; (space) &#244; (ô) &#224; (à)
+&nbsp; (space) &#244; (ô) &#224; (à) &lt; (<) &gt; (>)
 
 <!-- refresh in 5 seconds -->
 <meta http-equiv="refresh" content="5">

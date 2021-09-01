@@ -14,6 +14,8 @@ You can add constraints to your fields, such as required to force the user to co
 ```
 
 * **required**: this field must have a value (blank character pass the test like a space)
+* **disabled**: the user can't modify/click on a button/field
+* **hidden**: hide a field
 * **checked**: check by default a checkbox / radio button
 * **minlength**: min length (characters)
 * **maxlength**: max length (characters)
