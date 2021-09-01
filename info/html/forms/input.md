@@ -1,145 +1,120 @@
 # Learning about form input fields
 
-[Go back](..)
+[Go back](../index.md#forms)
 
-You will add a lot of input fields in your form,
-giving you something like this for each field
+This is most likely, the kind of field you will use the most as it can transformed according to the value inside type (checkbox, radio, ...).
 
-```html
-<label for="nameField">Your name</label>
-<input id="nameField" name="name" type="text" value="" placeholder="John DOE" />
-```
-
-Explanations
-
-* use a **label** for each input, the **for** value
-is matching the **id** value of the input field.
-  
-By doing that, a click on the label will focus
-the input field and make it ready for input.
-
-* **name**: it's the name that will be used server-side
-to get the value of a field
-  
-Don't add one if you don't want a field data
-to be submitted.
-
+* **name**: it's the name that will be used server-side to get the value of a field. Don't add one if you don't want a field data to be submitted.
 * **type**: that's the type of your field like
-    * text: some text
+    * **text**
     * date
-    * password
+    * **password**
     * tel
     * range
     * **checkbox**
     * **radio**
     * number
-    
-You can use a placeholder to define a default value deleted
-if the user types something. You can use value to set
-a value that the user may or not remove by himself.
+* **placeholder**: put a default value that will be removed when the user write something
+* **value**: you can set a value
 
 <hr class="sr">
 
 ## Examples
 
-* text
+<table class="table table-dark table-striped">
+<thead>
+<tr>
+<th>Description</th>
+<th>Code</th>
+<th>Preview</th>
+</tr>
+</thead>
+<tbody>
 
-<label for="nameField">Your name</label>
-<input id="nameField" name="name" type="text" value="" placeholder="John DOE" />
+<!-- Text -->
+<tr>
+<td>Text</td>
+<td>
+&lt;input name="name" type="text" value="" placeholder="John DOE" />
+</td>
+<td>
+<input name="name" type="text" value="" placeholder="John DOE" />
+</td>
+</tr>
 
-* password
+<!-- Password -->
+<tr>
+<td>Password<br>Show dots instead of the real value.</td>
+<td>
+&lt;input name="password" type="password" value="John DOE" />
+</td>
+<td>
+<input name="password" type="password" value="John DOE" placeholder="" />
+</td>
+</tr>
 
-<label for="pass">Your password</label>
-<input id="pass" name="pass" type="password" />
+<!-- Email -->
+<tr>
+<td>Email<br>Check that we have at least "a@b.c".</td>
+<td>
+&lt;input name="password" type="email" value="" placeholder="john@doe.tld" />
+</td>
+<td>
+<input name="password" type="email" value="" placeholder="john@doe.tld" />
+</td>
+</tr>
 
-* date
+<!-- Date -->
+<tr>
+<td>Date</td>
+<td>
+&lt;input name="date" type="date" />
+</td>
+<td>
+<input name="date" type="date" />
+</td>
+</tr>
 
-<label for="date">When?</label>
-<input id="date" name="date" type="date" />
+<!-- Range -->
+<tr>
+<td>Range</td>
+<td>
+&lt;input name="range" type="range" />
+</td>
+<td>
+<input name="range" type="range" />
+</td>
+</tr>
 
-* checkbox
+<!-- Checkbox -->
+<tr>
+<td>Checkbox</td>
+<td>
+&lt;input name="pp" type="checkbox" checked />
+</td>
+<td>
+<input name="pp" type="checkbox" checked />
+</td>
+</tr>
 
-<label for="date">Check?</label>
-<input id="date" name="date" type="checkbox" />
-
-* radio
-
+<!-- Radio -->
+<tr>
+<td>Radio</td>
+<td>
+Alice? &lt;br><br>
+&lt;label for="yes">yes?&lt;/label><br>
+&lt;input name="alice" id="yes" name="yes" type="radio" /><br>
+&lt;label for="no">no!&lt;/label><br>
+&lt;input name="alice" id="no" name="no" type="radio" />
+</td>
+<td>
 Alice? <br>
 <label for="yes">yes?</label>
 <input name="alice" id="yes" name="yes" type="radio" />
 <label for="no">no!</label>
 <input name="alice" id="no" name="no" type="radio" />
+</td>
+</tr>
 
-<hr class="sl">
-
-## Input properties
-
-And no that was not as easy as it may look. Now you need
-to define some constraints or properties.
-
-* **required**: this field must have a value (blank character pass the test like a space)
-* **checked**: check by default a checkbox / radio button
-* **minlength**: min length (characters)
-* **maxlength**: max length (characters)
-* **min**: max value (int)
-* **max**: max value (int)
-* **pattern**: write a regex (regular expression) that the input must match
-
-If an input field is not inside a form, you may add ``form="a_form_id"``
-but that may be too much explaining ID now so check the CSS course if you
-want to know.
-
-```html
-<input type="text" value="" placeholder="John DOE" required pattern="[a-z]+" />
-
-<input type="checkbox" checked />
-
-<input min="x" max="y" minlength="z" maxlength="t">
-```
-
-Some random input field with a required tag and a pattern (only lowercase characters)
-<input type="text" value="" placeholder="John DOE" required pattern="[a-z]+" />
-
-Some error message will be shown when submitting if the field is not valid. Also,
-if your mouse is hoovering the field, then you should see some message
-is something is wrong.
-
-<hr class="sr">
-
-## Submit
-
-Finally, you must add a submit button to send your form. You can
-use an empty action or "#" in the form action field otherwise if you
-didn't make some PHP it won't work.
-
-Then simply create a button having the type "submit". You may also
-use reset but almost no one is still using it nowadays.
-
-```html
-<button type="submit">submit</button>
-<button type="reset">reset the form</button>
-```
-
-<button type="submit">submit</button>
-<button type="reset">reset the form</button>
-
-<hr class="sl">
-
-## Textarea
-
-You might use a textarea if you want a bigger input field for text.
-You can use almost every property we saw, adding rows and cols for the size
-of your textarea.
-
-```html
-<textarea
->some default text</textarea>
-
-<label for="...">...</label>
-<textarea name="a_name" minlength="..." maxlength="..." required id="..."
-          rows="..." cols="..." placeholder="some default text"
->some text</textarea>
-```
-
-<label for="tare">Some label</label>
-<textarea id="tare" rows="..." cols="..." placeholder="some default text">some text</textarea>
+</tbody>
+</table>
