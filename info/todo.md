@@ -101,6 +101,9 @@ see headers: curl -I https://memorize.be/
   - https://w3c.github.io/test-results/html51/implementation-report.html
   - https://html5test.com/
   - https://www.w3docs.com/
+  - https://www.telerik.com/blogs/welcome-to-html-5-2
+  - https://css-tricks.com/html-5-2-done-html-5-3-coming/
+  - https://www.browserstack.com/
 - js
   - https://jasmine.github.io/
   - https://github.com/elsewhencode/project-guidelines

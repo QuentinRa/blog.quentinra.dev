@@ -1,15 +1,10 @@
 # HTML
 
-Here you will learn how you can create a basic website,
-in HTML. You may check
-PHP course to handle the server logic (explained later)
-or JS (can also handle server logic, mainly used to run
-some code in the client browser) or CSS
-to add some style to your website.
+As you could read in the Web course, HTML is the language used to write a web page. To be exact, the final result is in HTML, but you could have used other languages to generate the HTML page (such as PHP or Node.js), as their is no way to factorize code in pure HTML.
 
-Just so you know, learning the web starts 
-at [w3schools](https://www.w3schools.com/html/default.asp)
-so be sure to check their tutorials.
+The current version that you should use is **HTML5**, but even if many browser have yet to support it, and not many people are aware of it, we are in **HTML5.2** (HTML 5 2nd minor version, December 2017). You can check the [coverage of HTML by your browser here](https://html5test.com/) or on [can i use](https://caniuse.com/) (for instance, try "summary", a new tag in HTML51).
+
+The usual place, and the best one, to learn HTML/CSS/JS is [W3Schools](https://www.w3schools.com/html/default.asp).
 
 <hr class="sr">
 
