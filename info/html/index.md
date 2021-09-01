@@ -368,14 +368,13 @@ I can't use Markdown tables because the content is too complex 😭, it may the 
 
 <hr class="sr">
 
-## Learn the tags III
+## Learn the tags: advanced
 
-Then you can use some special tags like
+You will use these tags a lot too, but they are a little more complex than the previous ones.
 
-* [Ordered list](special/ol.md) with ol and li
-* [Unordered list](special/ul.md) with ul and li
+* [Lists](special/lists.md): with ol/ul and li
 * [Definition](special/dl.md) with dl and dd
-* [Some code](special/code.md) with code and pre
+* [Code](special/code.md) with code and pre
 * [Tables](special/tables.md) using table
 
 <hr class="sl">
