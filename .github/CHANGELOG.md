@@ -24,6 +24,7 @@
 * `internal`: preview was replaced by side-by-side, inside the editor
 * `internal`: static pages are now hosted in this repository
 * `rendering`: Markdown tables border is now dark
+* `rendering`: code is now blue (was pink/red)
 
 **Fixed**
 
