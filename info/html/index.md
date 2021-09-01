@@ -442,6 +442,12 @@ Then, at the end, you add either a button submit (to send the form) and/or a but
 </details>
 
 * [Notes about label](forms/label.md)
+* [Notes about input](forms/input.md)
+* [Notes about constraints](forms/constraints.md)
+* [Notes about forms](forms/forms.md)
+* [Notes about submit/reset](forms/buttons.md)
+* [Notes about textarea](forms/textarea.md)
+* Check [w3schools](https://www.w3schools.com/tags/tag_select.asp) or [mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) to learn more about the select tag.
 
 <hr class="sr">
 

@@ -104,6 +104,7 @@ see headers: curl -I https://memorize.be/
   - https://www.telerik.com/blogs/welcome-to-html-5-2
   - https://css-tricks.com/html-5-2-done-html-5-3-coming/
   - https://www.browserstack.com/
+  - https://www.w3.org/WAI/tutorials/
 - js
   - https://jasmine.github.io/
   - https://github.com/elsewhencode/project-guidelines
