@@ -83,23 +83,38 @@ You may also note that tags such as **p** are called blocking tags, because unle
 
 ## HTML5
 
-One of the things that came with HTML5, is a new way to structure your website. Usually 
+<details class="pb-3">
+<summary>The usual way to structure a website is the following [...]</summary>
 
-* The first line is `<!doctype html>`,
-* Then, the code is inside a tag called html `<html lang="en"> ... </html>`
-* **But**, to make things cleaner, we are splitting the HTML into two tags
-* `head`: we are defining here the properties of your website 
-such as the title, the icon, linking the CSS, etc.
-* `body`: this is the code of your website
+The first line is `<!doctype html>` (or DOCTYPE), and the code is inside a tag called html `<html lang="en"> ... </html>`.  To make things cleaner, we are splitting the HTML the content into
 
-As you may guess, adding head is good, but we didn't split enough the body. Since HTML5, you can use
+* `head` (metadata): we are defining here the properties of your website such as the title, the icon, linking the CSS, etc.
+* `body` (content): this is the real content of your website
+</details>
 
-* `main`: the main content of your page <span class="tms">(one per page)</span>
-* `header`: the top of your website, may contains the navbar, you can put one in each aside/section <span class="tms">(since HTML51/52)</span>
+<details class="pb-3">
+<summary>We need to improve the structure of the body. Since HTML5, you can use [...]</summary>
+
+* `header`: the top of your website, it may contains the navbar, you can put one in each aside/section
 * `nav`: for your navbar
 * `section`: a section of your website <span class="tms">(you can have many of them)</span>
 * `aside`: some content aside from your main content in your section <span class="tms">(ex: your contact information etc.)</span>
 * `footer`: the footer of your website
+</details>
+
+<details class="pb-3">
+<summary>These two are less well-know, but you should learn them too [...]</summary>
+
+* `main`: the main content of your page <span class="tms">(one per page)</span>
+* `article`: a part of the website that may be extracted from the website <span class="tms">(you may split a page into multiples articles with a header, a footer, and some sections)</span>
+</details>
+
+> I used dropdowns to make this section more readable. To summarize
+> * the first line is `doctype`, followed by a `html`
+> * split the html into `head`/`body`
+> * split the body into `section`(s)/`aside`(s)/`header`/`nav`/`footer`
+> * wrap sub-sections into `section`, articles into `article`, the main content into `main`
+> * you may add header/footer to sections/articles/main
 
 <details>
 <summary>Example (image)</summary>
@@ -117,22 +132,20 @@ As you may guess, adding head is good, but we didn't split enough the body. Sinc
     <title>title of your website</title>
     <!-- UTF-8 -->
     <meta charset="utf-8">
-    <!-- RESPONSIVE (responsive CSS) -->
+    <!-- RESPONSIVE (CSS) -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <header>
-        ... some tags ...
-        <nav>... some tags ...</nav>
-    </header>
-    <section>... some tags ...</section>
     <main>
-      <header>...</header>
-      <section>...</section>
+        <header>
+          Some title
+            <nav>... some tags ...</nav>
+        </header>
+        <section>... some tags ...</section>
+        <section>... some tags ...</section>
+        <aside>... some tags ...</aside>
+        <footer>... some tags ...</footer>
     </main>
-    <section>... some tags ...</section>
-    <aside>... some tags ...</aside>
-    <footer>... some tags ...</footer>
 </body>
 </html>
 ```
