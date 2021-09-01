@@ -31,8 +31,9 @@
   * Canonical link
   * X-Robots-Tag
 * `internal`: after successfully editing a course, you were sent to the wrong page
-* `rendering`: I corrected the message shown if you forgot the captcha
 * `internal`: the footer was outside the body tag, and the  HTML ending tag was missing
+* `rendering`: I corrected the message shown if you forgot the captcha
+* `rendering`: links inside a dark table are now more visible
 * `internal`: edit button "type" was missing
 
 **Removed**
