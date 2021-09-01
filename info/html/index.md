@@ -132,21 +132,162 @@ As you may guess, adding head is good, but we didn't split enough the body. Sinc
 
 <hr class="sl">
 
-## Learn the tags I
+## Learn the tags
 
-Learn a lot of body tags.
+This is the tags that I'm using the most, and the tags that you must know.
 
-* [Titles](tags/h.md) with h1 to h6
-* [Paragraphs](tags/p.md) with p
-* [Link](tags/a.md) with a
-* [Images](tags/img.md) with img
+<!--
+I can't use Markdown tables because the content is too complex 😭, it may the code more unreadable.
+-->
 
-Some tags used for style/grouping tags later
+<table class="table table-dark table-striped border-dark table-bordered">
+<thead>
+<tr>
+<th>Tag</th>
+<th>For what?</th>
+<th>Attributes</th>
+<th>Code</th>
+<th>Preview</th>
+</tr>
+</thead>
+<tbody>
 
-* [span](tags/span.md) (ex: color in red a word in a paragraph )
-* [div](tags/div.md) : container to move a group of components
+<tr class="text-center">
+<td colspan="5" class="text-my-yellow">TITLES</td>
+</tr>
+
+<!-- h1 -->
+<tr>
+<td><kbd>h1</kbd></td>
+<td>page title, <br> one per page</td>
+<td></td>
+<td><code>&lt;h1>title&lt;/h1></code></td>
+<td><h6 class="h1">title</h6></td>
+</tr>
+
+<!-- h2 -->
+<tr>
+<td><kbd>h2</kbd></td>
+<td>big title</td>
+<td></td>
+<td><code>&lt;h2>title&lt;/h2></code></td>
+<td><h6 class="h2">title</h6></td>
+</tr>
+
+<!-- h3-h5 -->
+<tr>
+<td><kbd>h3</kbd> to <kbd>h5</kbd></td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+
+<!-- h6 -->
+<tr>
+<td><kbd>h6</kbd></td>
+<td>small title</td>
+<td></td>
+<td><code>&lt;h6>title&lt;/h6></code></td>
+<td><h6 class="h6">title</h6></td>
+</tr>
+
+<tr class="text-center">
+<td colspan="5" class="text-my-yellow">TEXT</td>
+</tr>
+
+<!-- p -->
+<tr>
+<td><kbd>p</kbd></td>
+<td>a paragraph</td>
+<td></td>
+<td><code>&lt;p>some text&lt;/p></code></td>
+<td><p>some text</p></td>
+</tr>
+
+<!-- span -->
+<tr>
+<td><kbd>span</kbd></td>
+<td>break a paragraph into parts (for styling)<br>non-blocking p</td>
+<td></td>
+<td><code>&lt;span>some text&lt;/span></code></td>
+<td><span>some text</span></td>
+</tr>
+
+<tr class="text-center">
+<td colspan="5" class="text-my-yellow">IMAGES AND LINKS</td>
+</tr>
+
+<!-- a -->
+<tr>
+<td><kbd>a</kbd></td>
+<td>a link</td>
+<td>
+<ul>
+  <li> <b>href</b> (required): page opened by the link,
+    <ul>
+    <li>you may use relative path (such as file.html)</li>
+    <li>you may use "#" (go to top)</li>
+    <li>you may use "#id" (go to id="id"</li>
+  </ul>
+  </li>
+  <li><b>target="_blank"</b>: open in a new tab</li>
+  <li>
+
+**rel="noopener"**: prevent a [security breach](https://mathiasbynens.github.io/rel-noopener/) with target blank
+</li>
+</ul>
+</td>
+<td><code>&lt;a href="URL">some link&lt;/a></code><br>
+<br>
+<code>&lt;a href="URL" target="_blank" <br> rel="noopener">some link&lt;/a></code>
+</td>
+<td><a href="https://memorize.be/">some link</a>
+<br><br>
+<a href="https://memorize.be/" target="_blank" rel="noopener">some link</a></td>
+</tr>
+
+<!-- img -->
+<tr>
+<td><kbd>img</kbd></td>
+<td>an image</td>
+<td>
+
+* **src** (required): link (URL/path) to the image
+* **alt** (required): alternative text if the image is not found
+* title: text shown when hovering
+* width, height (recommended)
+</td>
+<td><code>&lt;img src="URL" alt="alternative text" title="some title"></code><br><br><code>&lt;img src="URL" alt="alternative text"<br> width="48" height="48"></code></td>
+<td>
+
+<img src="https://cdn.jsdelivr.net/gh/memorize-code/memorize-references/.assets/icons/icon64.png" alt="alternative text" title="some title">
+<br><br>
+<img src="https://cdn.jsdelivr.net/gh/memorize-code/memorize-references/.assets/icons/icon64.png" alt="alternative text" width="48" height="48">
+</td>
+</tr>
+
+</tbody>
+</table>
 
 <hr class="sr">
+
+## Learn the tag: div
+
+The tags main, header, footer, section, etc. introduced in HTML5 are simply named div. A div is a container, allowing you to group tags. This makes the code more readable, and later, it may help if you want to apply a style to a group of components.
+
+Note that a div is "invisible", meaning that the user won't see any changes if you used a div or not.
+
+```html
+<div>
+    <h3>a title here</h3>
+    <p>
+      We got a paragraph that is a bit longer than usual (🤨)
+      with one <span>span</span> inside.
+    </p>
+</div>
+```
+<hr class="sl">
 
 ## Learn the tags II
 
@@ -159,7 +300,7 @@ And some basic tags to style a bit your HTML page
 * [Jump a line](style/br.md) with br
 * [Horizontal separator](style/hr.md) with hr
 
-<hr class="sl">
+<hr class="sr">
 
 ## Learn the tags III
 
@@ -171,7 +312,7 @@ Then you can use some special tags like
 * [Some code](special/code.md) with code and pre
 * [Tables](special/tables.md) using table
 
-<hr class="sr">
+<hr class="sl">
 
 ## Forms
 
@@ -195,7 +336,7 @@ the data will be hidden, GET means that the data will be shown in the URL.
 * [Learning about POST and GET](forms/post-get.md)
 * [Learning about form input fields](forms/input.md)
 
-<hr class="sl">
+<hr class="sr">
 
 ## W3 validator
 
@@ -207,7 +348,7 @@ We don't have rules to follows but it's good to hear
 how you could write your code in a better way by following
 developers standards.
 
-<hr class="sr">
+<hr class="sl">
 
 ## Meta tags
 
@@ -231,7 +372,7 @@ what you wrote here.
 <meta name="DESCRIPTION" content="...">
 ```
 
-<hr class="sl">
+<hr class="sr">
 
 ## Icons
 
