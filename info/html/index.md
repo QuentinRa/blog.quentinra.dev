@@ -28,20 +28,20 @@ To summarize what was written in the WEB course,
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <title>website title</title>
-  <!-- UTF-8 -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <!-- RESPONSIVE (responsive CSS) -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>title of your website</title>
+    <!-- UTF-8 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- RESPONSIVE (responsive CSS) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <!-- your code below -->
     <h1>A big title here</h1>
     <p>Some text here</p>
     <!-- image -->
-    <img src="https://memorize.lgs-games.com/assets/icon64.png" alt="an image">
+    <img src="https://cdn.jsdelivr.net/gh/memorize-code/memorize-references/.assets/icons/icon64.png" alt="an image">
     <!-- link -->
-    <a href="https://duckduckgo.com/">Link to duckduckgo.com</a>
+    <a href="https://memorize.be/" target="_blank" rel="noopener">Link to memorize.be</a>
 </body>
 </html>
 ```
@@ -59,58 +59,76 @@ Create a file `index.html` (ex: with this content above), drag and drop it insid
 
 The main idea when writing HTML is that you are gonna write some tags such as **p** for a paragraph or **a** for a link. Then you can add some attributes, such as ``href`` for a link that is the URL the link will be pointing to.
 
-You will have to types of tags, tags like `<img ...>` called auto-closing tags because you don't write `<img></img>`, while others are like `<a ...>this is a link</a>`.
+You will have to types of tags, tags like `<img ...>` called **auto-closing tags** because you don't write `<img></img>`, as you would with others such as `<a ...>this is a link</a>`.
+
+You may also note that tags such as **p** are called blocking tags, because unless you use CSS, the tags after **p** will be rendered starting from a newline.
 
 **Notes**
 
-* the name of a tag can be in lowercase or in uppercase (ex: "a" or "A" are working)
-* you can write `attribute=value` (without " but that may not work every time according to the value)
+* the name of a tag can be in lowercase or in uppercase (ex: "a" or "A" are working), use lowercase 😎
+* you can write `attribute=value` (without " but that may not work every time according to the value, **do not use this 😟**)
 * you may write `<img ...></img>` or `<img ... />` (without the /), but we are usually writing `<img ...>` like this for auto-closable tags.
+* you do not need to indent your code, but it makes things cleaner (🙂)
+* you do not to put one tag per line, but it makes things cleaner (🙂)
 
 <hr class="sr">
 
-## Structure in HTML5
+## HTML5
 
-The first line is always ``<!DOCTYPE html>``, then you
-will have ``<html lang="your_language_code"> ... </html>``.
-But in HTML tag, you will have
+One of the things that came with HTML5, is a new way to structure your website. Usually 
 
-* ``head``: defines here the properties of your website 
-such as the title, the icon, the stylesheet, ...
-* ``body``: defines what your website is looking like.
-  
-Since HTML5, the body uses some inner tags
+* The first line is `<!DOCTYPE html>`,
+* Then, the code is inside a tag called html `<html lang="en"> ... </html>`
+* **But**, to make things cleaner, we are splitting the HTML into two tags
+* `head`: we are defining here the properties of your website 
+such as the title, the icon, linking the CSS, etc.
+* `body`: this is the code of your website
 
-* ``header``: the top of your website, may contains the navbar
-* ``nav``: for your navbar
-* ``section``: a section of your website
-* ``aside``: some content aside from your main content in
-your section like some contact info at the right etc.
-* ``footer``: the footer of your website
+As you may guess, adding head is good, but we didn't split enough the body. Since HTML5, you can use
+
+* `main`: the main content of your page <span class="tms">(one per page)</span>
+* `header`: the top of your website, may contains the navbar, you can put one in each aside/section <span class="tms">(since HTML51/52)</span>
+* `nav`: for your navbar
+* `section`: a section of your website <span class="tms">(you can have many of them)</span>
+* `aside`: some content aside from your main content in your section <span class="tms">(ex: your contact information etc.)</span>
+* `footer`: the footer of your website
+
+<details>
+<summary>Example (image)</summary>
 
 ![html5_doc_sections](html5.png)
+</details>
+
+<details>
+<summary>Example (code)</summary>
 
 ```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-        <title>titre du site</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>title of your website</title>
+    <!-- UTF-8 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- RESPONSIVE (responsive CSS) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-        <header>
-          ... some tags ...
-          <nav>
-            ...
-          </nav>
-        </header>
-        <section>... some tags ...</section>
-        <section>... some tags ...</section>
-        <aside>... some tags ...</aside>
-        <footer>... some tags ...</footer>
+    <header>
+        ... some tags ...
+        <nav>... some tags ...</nav>
+    </header>
+    <section>... some tags ...</section>
+    <main>
+      <header>...</header>
+      <section>...</section>
+    </main>
+    <section>... some tags ...</section>
+    <aside>... some tags ...</aside>
+    <footer>... some tags ...</footer>
 </body>
 </html>
 ```
+</details>
 
 <hr class="sl">
 
