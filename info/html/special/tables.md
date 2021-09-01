@@ -88,3 +88,80 @@ The table **raw** is a bit unreadable/messy after all
 <tr><td>line-2 col-1</td><td>line-2 col-2</td></tr>
 </tbody>
 </table>
+
+<hr class="sl">
+
+## Improving your tables
+
+<br>
+
+<details class="details-border">
+<summary>You can add a caption, a small title above your table</summary>
+<br>
+<table class="caption-top  table-bordered table border-dark">
+<caption class="text-center">Some caption</caption>
+<thead>
+<tr><th>column1 title</th><th>column2 title</th></tr>
+</thead><tbody><tr><td>line-1 col-1</td><td>line-1 col-2</td></tr></tbody>
+</table>
+
+The code is
+
+```html
+<table>
+    <caption>Some caption</caption>
+    <!-- ... -->
+</table>
+```
+</details>
+
+<details class="details-border">
+<summary>If you have a footer, you may use tfoot</summary>
+<br>
+<table class="table-bordered table border-dark">
+<thead>
+<tr><th>column1 title</th><th>column2 title</th></tr>
+</thead><tbody><tr><td>line-1 col-1</td><td>line-1 col-2</td></tr></tbody><tfoot><tr><td>Footer</td><td>Footer</td></tr></tfoot>
+</table>
+
+The code is
+
+```html
+<table>
+    <!-- ... -->
+    <tfoot>
+        <tr>
+            <td>Footer</td>
+            <td>Footer</td>
+        </tr>
+    </tfoot>
+</table>
+```
+</details>
+
+<details class="details-border">
+<summary>You can add colspan/rowspan to a cell (td/th), to make it take multiples columns/lines.</summary>
+<br>
+<table class="table-bordered table border-dark">
+<thead>
+<tr><th>column1 title</th><th>column2 title</th></tr>
+</thead><tbody>
+<tr><td colspan="2">line-1 col</tr>
+<tr><td>line-2 col-1</td><td>line-2 col-2</td></tr>
+</tbody>
+</table>
+
+The code is
+
+```html
+<table>
+    <!-- ... -->
+    <tfoot>
+        <tr>
+            <td>Footer</td>
+            <td>Footer</td>
+        </tr>
+    </tfoot>
+</table>
+```
+</details>

@@ -566,7 +566,7 @@ Some content
 See [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time). 
 </td>
 <td>
-<time datetime="2020-12-06">December 6</time>
+<time datetime="2020-12-06">December 6</time><br>
 <time datetime="2020-12-06T00:00:00">December 6</time>
 </td>
 </tr>
@@ -600,7 +600,7 @@ Guidelines
 
 CheatSheet
 
-* none
+* [htmlreference](https://htmlreference.io/) 😍
 
 Templates
 
