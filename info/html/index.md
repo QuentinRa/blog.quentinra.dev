@@ -2,7 +2,7 @@
 
 As you could read in the Web course, HTML is the language used to write a web page. To be exact, the final result is in HTML, but you could have used other languages to generate the HTML page (such as PHP or Node.js), as their is no way to factorize code in pure HTML.
 
-The current version that you should use is **HTML5**, but even if many browser have yet to support it, and not many people are aware of it, we are in **HTML5.2** (HTML 5 2nd minor version, December 2017). You can check the [coverage of HTML5 by your browser here](ttps://caniuse.com/) (for instance, try "summary", a new tag in HTML51, or simply enter "HTML5").
+The current version that you should use is **HTML5**, but even if many browser have yet to support it, and not many people are aware of it, we are in **HTML5.2** (HTML 5 2nd minor version, December 2017). You can check the [coverage of HTML5 by your browser here](https://caniuse.com/) (for instance, try "summary", a new tag in HTML51, or simply enter "HTML5").
 
 The usual place, and the best one, to learn HTML/CSS/JS is [W3Schools](https://www.w3schools.com/html/default.asp).
 
@@ -390,22 +390,61 @@ And, you may want to learn about
 
 ## Forms
 
-Creating a form in HTML is a bit tricky, or at least more complex
-than any other tags. Also, note that you can't process a form since
-you need a server to process your data.
+Forms aren't something that you can use without a server, but at least since they are rendered using HTML, then you can show one in your website. I haven't tested, but you may be able to use [formspree](https://formspree.io/) to handle your forms (without PHP).
 
-W3School [set one for you](https://www.w3schools.com/html/html_forms.asp)
-for their example so try it.
+Basically, you will enter data into fields (such as a name in a textField). You will give a name to each field, so that when the form is submitted, the server know what this value is supposed to be. You will add a label to each field, so that the user know what value the field is supposed to take.
+
+<details class="border-dark border px-3 py-2">
+<summary>Example (code)</summary>
 
 ```html
-<form action="script.php" method="POST">
-    <!-- some content here -->
+<form method="POST">
+    <!-- input name -->
+    <div>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="John Doe" value="">
+    </div>
+    <!-- submit -->
+    <button type="submit">submit</button>
 </form>
 ```
+</details>
+<details class="border-dark border px-3 py-2">
+<summary>Example (preview)</summary>
 
-Action is pointing to the script.php handling the request.
-Methods is the method used to send your data. POST means that
-the data will be hidden, GET means that the data will be shown in the URL.
+<form method="POST" class="pt-3">
+    <!-- input name -->
+    <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="John Doe" value="">
+    </div>
+    <!-- submit -->
+    <button type="button" class="mt-2" onclick="alert('Nice try 😂, but this form isn\'t working')">submit</button>
+</form>
+</details>
+<details class="mb-3 border-dark border px-3 py-2">
+<summary>Example (explanation)</summary>
+<br>
 
-* [Learning about POST and GET](forms/post-get.md)
-* [Learning about form input fields](forms/input.md)
+**First**, if you don't know what is POST (or GET), then you MUST read the section about the HTTP protocol in the Web course.
+
+Then, we are usually making **one div per field**. Each div is made of 
+
+* a **label**, with an attribute "for" referring to the ID of a field
+  * clicking on the label, will focus the field
+  * the message inside the label is something describing the field
+* a **field**, it can be an input, a text area, a select etc.
+  * the ID must match the one in the label
+  * you must add a name for the server to know what's this value
+  * the value is what will be sent to the server
+
+Then, at the end, you add either a button submit (to send the form) and/or a button reset to reset the form.
+</details>
+
+* [Notes about label](forms/label.md)
+
+<hr class="sr">
+
+## Sources
+
+...
