@@ -52,7 +52,9 @@ To summarize what was written in the WEB course,
 <details class="pb-3">
 <summary><b>How do I "run" HTML code?</b></summary>
 
-Create a file `index.html` (ex: with this content above), drag and drop it inside a browser, and you should see your page. You don't need a server as your code is fully in HTML (no PHP). You can change the name of the file, but the main file of your website must be called `index`. Your browser isn't "executing" code, it's simply rendering the code it received <span class="tms">(the URL is a sort of `file:///path/to/a/file.html`, and as we learned before, if there is no file in the URL, and you got a index.html, then it's loaded instead)</span>.
+Create a file `index.html` (ex: with the content above), drag and drop it inside a browser, and you should see your page. You don't need a server as your code is fully in HTML (no PHP). You can change the name of the file, but the main file of your website must be called `index`. Your browser isn't "executing" code, it's simply rendering the code it received <span class="tms">(the URL is a sort of `file://path/to/a/file.html`, and as we learned before, if there is no file in the URL, and you got a index.html, then it's loaded instead)</span>.
+
+You can also try [an online editor such as this one](https://dev.codehs.com/editor/new/html). If you want something cleaner (using a server, http/https instead of file), then refer to the PHP course (this isn't complicated).
 </details>
 
 <hr class="sl">
