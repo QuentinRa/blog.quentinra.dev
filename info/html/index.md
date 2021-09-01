@@ -10,24 +10,32 @@ The usual place, and the best one, to learn HTML/CSS/JS is [W3Schools](https://w
 
 ## Introduction
 
-When you write some URL in your browser, you
-requested ``https://duckduckgo.com/`` to a
-server. The server returns to you a make page, written
-in ``HTML``.
+To summarize what was written in the WEB course, 
 
-You can write some ``index.html`` file with this
-inside, then drag and drop it into your browser
-and you got a page!
+* a browser and a server are communicating using the protocol HTTP (or HTTPS=HTTP Secure)
+* when you are visiting a page (ex: https://duckduckgo.com)
+* you are asking the server to return the HTML for this page
+* **usually**, no HTML file in the URL means
+  * that the server is using a router
+  * or, that the file `index.html` (or `index.php`...) is loaded
+  * ex: for DuckDuckGo, `https://duckduckgo.com` is the same as `https://duckduckgo.com/index.html`.
+
+<details class="pb-3">
+<summary>A HTML file is made a <b>tags</b> (ex: title, meta, ...) that have <b>attributes</b> (properties such as <code>lang="fr"</code> etc.).
+</summary>
 
 ```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-        <title>website title</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>website title</title>
+  <!-- UTF-8 -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- RESPONSIVE (responsive CSS) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <!-- code -->
+    <!-- your code below -->
     <h1>A big title here</h1>
     <p>Some text here</p>
     <!-- image -->
@@ -37,28 +45,27 @@ and you got a page!
 </body>
 </html>
 ```
+</details>
+
+<details class="pb-3">
+<summary><b>How do I "run" HTML code?</b></summary>
+
+Create a file `index.html` (ex: with this content above), drag and drop it inside a browser, and you should see your page. You don't need a server as your code is fully in HTML (no PHP). You can change the name of the file, but the main file of your website must be called `index`. Your browser isn't "executing" code, it's simply rendering the code it received <span class="tms">(the URL is a sort of `file:///path/to/a/file.html`, and as we learned before, if there is no file in the URL, and you got a index.html, then it's loaded instead)</span>.
+</details>
 
 <hr class="sl">
 
 ## Tags
 
-The main idea when writing HTML is that you are gonna write
-some tags like ``p`` for a paragraph or `a` for a link.
-Then you can add some attributes, link ``href`` for a link
-witch is the URL the link will be pointing to.
+The main idea when writing HTML is that you are gonna write some tags such as **p** for a paragraph or **a** for a link. Then you can add some attributes, such as ``href`` for a link that is the URL the link will be pointing to.
 
-You will have to types of tags, tags like ``<img ... />``
-called auto-closing tags because you don't write
-``<img></img>`` and the others kind like `<a ...>...</a>`.
+You will have to types of tags, tags like `<img ...>` called auto-closing tags because you don't write `<img></img>`, while others are like `<a ...>this is a link</a>`.
 
-Finally, as a side note, you can
+**Notes**
 
-* tag name can be in lowercase or in uppercase (a or A is working)
-* you can write ``attribute=value`` (without " but that
-  may not work every time according to value)
-* you may write ``<img></img>`` or `<img>` (without the /)
-but you should write ``<tagname />`` like this for auto-closable
-tags.
+* the name of a tag can be in lowercase or in uppercase (ex: "a" or "A" are working)
+* you can write `attribute=value` (without " but that may not work every time according to the value)
+* you may write `<img ...></img>` or `<img ... />` (without the /), but we are usually writing `<img ...>` like this for auto-closable tags.
 
 <hr class="sr">
 
