@@ -2,7 +2,7 @@
 
 [Go back](../index.md#forms)
 
-It's better to add a label for each input field, but this isn't mandatory. You can also do this.
+It's better to add a label for each input field, but this isn't mandatory 😒. Some developers are using this different syntax
 
 ```html
 <label>

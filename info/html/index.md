@@ -2,9 +2,9 @@
 
 As you could read in the Web course, HTML is the language used to write a web page. To be exact, the final result is in HTML, but you could have used other languages to generate the HTML page (such as PHP or Node.js), as their is no way to factorize code in pure HTML.
 
-The current version that you should use is **HTML5**, but even if many browser have yet to support it, and not many people are aware of it, we are in **HTML5.2** (HTML 5 2nd minor version, December 2017). You can check the [coverage of HTML5 by your browser here](https://caniuse.com/) (for instance, try "summary", a new tag in HTML51, or simply enter "HTML5").
+The current version that you should use is **HTML5**, but even if many browser have yet to support it, and not many people are aware of it, we are in **HTML5.2** (HTML 5 2nd minor version, December 2017). You can check the [coverage of HTML5 by your browser here](https://caniuse.com/) (for instance, try "summary", a new tag introduced in HTML51, or simply enter "HTML5").
 
-The usual place, and the best one, to learn HTML/CSS/JS is [W3Schools](https://www.w3schools.com/html/default.asp).
+The usual place to learn HTML/CSS/JS is [W3Schools](https://www.w3schools.com/html/default.asp). Personally, I'm enjoying [MDN/Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML).
 
 > **Note**: as a good developer 😎, you should follow the standards when writing code. You can test your code [using the W3C validator](https://validator.w3.org/#validate_by_input). You can also add a badge that will redirect to the validator with your page inside [as explained here](../../special/web/parts/validator.md).
 
@@ -61,7 +61,7 @@ You can also try [an online editor such as this one](https://dev.codehs.com/edit
 
 ## Tags
 
-The main idea when writing HTML is that you are gonna write some tags such as **p** for a paragraph or **a** for a link. Then you can add some attributes, such as ``href`` for a link that is the URL the link will be pointing to.
+The main idea when writing HTML is that you are gonna write some tags such as **p** for a paragraph or **a** for a link. Then you can add some attributes, such as `href` for a link that is the URL the link will be pointing to.
 
 You will have to types of tags, tags like `<img ...>` called **auto-closing tags** because you don't write `<img></img>`, as you would with others such as `<a ...>this is a link</a>`.
 
@@ -218,6 +218,15 @@ I can't use Markdown tables because the content is too complex 😭, it may the 
 <td><span>some text</span></td>
 </tr>
 
+<!-- comment -->
+<tr>
+<td></td>
+<td>a comment</td>
+<td></td>
+<td><code>&lt;!-- your comment here --></code></td>
+<td>you can't see it 😅</td>
+</tr>
+
 <tr class="text-center">
 <td colspan="5" class="text-my-yellow">IMAGES AND LINKS</td>
 </tr>
@@ -278,7 +287,7 @@ I can't use Markdown tables because the content is too complex 😭, it may the 
 
 ## Learn the tag: div
 
-The tags main, header, footer, section, etc. introduced in HTML5 are simply named div. A div is a container, allowing you to group tags. This makes the code more readable, and later, it may help if you want to apply a style to a group of components.
+The tags main, header, footer, section, etc. introduced in HTML5 are simply named divs. A div is a container, allowing you to group tags. This makes the code more readable, and later, it may help if you want to apply a style to a group of components.
 
 Note that a div is "invisible", meaning that the user won't see any changes if you used a div or not.
 
@@ -378,7 +387,7 @@ You will use these tags a lot too, but they are a little more complex than the p
 
 * [Lists](special/lists.md): with ol/ul and li
 * [Definition](special/dl.md) with dl and dd
-* [Code](special/code.md) with code and pre
+* [Code block and inline code](special/code.md) with code and pre
 * [Tables](special/tables.md) using table
 
 And, you may want to learn about
@@ -453,4 +462,5 @@ Then, at the end, you add either a button submit (to send the form) and/or a but
 
 ## Sources
 
-...
+* <https://www.w3schools.com/html/default.asp>
+* <https://developer.mozilla.org/en-US/docs/Web/HTML>

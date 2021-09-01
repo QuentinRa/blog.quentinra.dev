@@ -1,4 +1,4 @@
-# Code
+# Code block and inline code
 
 [Go back](../index.md#learn-the-tags-advanced)
 
