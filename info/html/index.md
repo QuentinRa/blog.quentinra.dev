@@ -237,17 +237,18 @@ I can't use Markdown tables because the content is too complex 😭, it may the 
 <td>a link</td>
 <td>
 <ul>
-  <li> <b>href</b> (required): page opened by the link,
+  <li> <code>href</code> (required): page opened by the link,
     <ul>
     <li>you may use relative path (such as file.html)</li>
     <li>you may use "#" (go to top)</li>
-    <li>you may use "#id" (go to id="id"</li>
+    <li>you may use "#id" (go to id="id")</li>
+    <li>you may use "mailto:email" for an email</li>
   </ul>
   </li>
-  <li><b>target="_blank"</b>: open in a new tab</li>
+  <li><code>target="_blank"</code>: open in a new tab</li>
   <li>
 
-**rel="noopener"**: prevent a [security breach](https://mathiasbynens.github.io/rel-noopener/) with target blank
+<code>rel="noopener"</code>: prevent a [security breach](https://mathiasbynens.github.io/rel-noopener/) with target blank
 </li>
 </ul>
 </td>
@@ -266,10 +267,10 @@ I can't use Markdown tables because the content is too complex 😭, it may the 
 <td>an image</td>
 <td>
 
-* **src** (required): link (URL/path) to the image
-* **alt** (required): alternative text if the image is not found
-* title: text shown when hovering
-* width, height (recommended)
+* `src` (required): link (URL/path) to the image
+* `alt` (required): alternative text if the image is not found
+* `title`: text shown when hovering
+* `width`, `height` (recommended)
 </td>
 <td><code>&lt;img src="URL" alt="alternative text" title="some title"></code><br><br><code>&lt;img src="URL" alt="alternative text"<br> width="48" height="48"></code></td>
 <td>
