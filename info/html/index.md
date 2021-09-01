@@ -377,6 +377,15 @@ I can't use Markdown tables because the content is too complex 😭, it may the 
 <td>This <i>is in italic</i></td>
 </tr>
 
+<!-- em -->
+<tr>
+<td><kbd>em</kbd></td>
+<td>Emphasis</td>
+<td></td>
+<td><code>&lt;p>This text has &lt;em>emphasis&lt;/em>&lt;/p></code></td>
+<td>This text has <em>emphasis</em></td>
+</tr>
+
 <!-- br -->
 <tr>
 <td><kbd>br</kbd></td>
@@ -471,8 +480,28 @@ Rarely used tags
 <td><abbr title="some text here">word</abbr></td>
 </tr>
 
+<!-- cite -->
+<tr>
+<td><kbd>cite</kbd></td>
+<td>referencing a work</td>
+<td></td>
+<td><code>This is a &lt;cite>reference&lt;/cite></code></td>
+<td>This is a <cite>reference</cite></td>
+</tr>
+
+<!-- quote -->
+<tr>
+<td><kbd>blockquote</kbd></td>
+<td>Quoting something</td>
+<td>You may add <kbd>cite="URL/to/source"</kbd>.</td>
+<td><code>&lt;blockquote>quote&lt;/blockquote></code></td>
+<td><blockquote class="text-white">quote</blockquote></td>
+</tr>
+
 </tbody>
 </table>
+
+You got even more tags that I never used such as strong (rendered as bold), del (rendered like s), q (short quote) etc. You can learn more about them (and add them here if you want) in the HTML reference.
 
 <hr class="sr">
 
@@ -613,6 +642,27 @@ See [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Elemen
 <td>
 <time datetime="2020-12-06">December 6</time><br>
 <time datetime="2020-12-06T00:00:00">December 6</time>
+</td>
+</tr>
+
+<!-- audio -->
+<tr>
+<td>Audio</td>
+<td><code>&lt;audio src="URL" controls>&lt;/audio></code></td>
+<td>
+<audio src="URL" controls></audio>
+</td>
+</tr>
+
+<!-- video -->
+<tr>
+<td>Video</td>
+<td><code>&lt;video src="URL" controls>&lt;/video></code><br>
+You can add inside video, the tag track to add subtitles.<br>
+If you got multiples sources/format, then you may use the tag source instead of "src".
+</td>
+<td>
+<video src="URL" controls></video>
 </td>
 </tr>
 </tbody>
