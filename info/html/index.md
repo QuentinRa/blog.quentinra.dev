@@ -107,6 +107,7 @@ The first line is `<!doctype html>` (or DOCTYPE), and the code is inside a tag c
 
 * `main`: the main content of your page <span class="tms">(one per page)</span>
 * `article`: a part of the website that may be extracted from the website <span class="tms">(you may split a page into multiples articles with a header, a footer, and some sections)</span>
+* `address`: to wrap your contact information
 </details>
 
 > I used dropdowns to make this section more readable. To summarize
@@ -141,11 +142,11 @@ The first line is `<!doctype html>` (or DOCTYPE), and the code is inside a tag c
           Some title
             <nav>... some tags ...</nav>
         </header>
-        <section>... some tags ...</section>
-        <section>... some tags ...</section>
-        <aside>... some tags ...</aside>
+        <section><h2>Some title</h2>... some tags ...</section>
+        <section><h2>Some title</h2>... some tags ...</section>
         <footer>... some tags ...</footer>
     </main>
+    <aside>... some tags ...</aside>
 </body>
 </html>
 ```
@@ -511,13 +512,78 @@ Then, at the end, you add either a button submit (to send the form) and/or a but
 
 ## Features of HTML5, 5.1, and HTML5.2
 
-...
+Notes and tags introduced in HTML 5 (and 5.1/5.2), that I haven't added before, as I didn't use them.
+
+<table class="table table-dark table-striped border-dark table-bordered">
+<thead>
+<tr>
+<th>Description</th>
+<th>Code</th>
+<th>Preview</th>
+</tr>
+</thead>
+<tbody>
+
+<!-- figure -->
+<tr>
+<td>Adding a caption to an image.</td>
+<td><code>&lt;figure><br>
+  &lt;img src="URL" alt="Memorize logo" title="Memorize logo" <br> width="64" height="64"><br>
+  &lt;figcaption>Memorize logo&lt;/figcaption><br>
+&lt;/figure></code>
+</td>
+<td><figure>
+  <img src="https://cdn.jsdelivr.net/gh/memorize-code/memorize-references/.assets/icons/icon64.png" alt="Memorize logo" title="Memorize logo" width="64" height="64">
+  <figcaption>Memorize logo</figcaption>
+</figure>
+</td>
+</tr>
+
+<!-- dropdown -->
+<tr>
+<td>Adding a dropdown.</td>
+<td><code>&lt;details><br>
+  &lt;summary>Some summary&lt;/summary><br>
+  Some content<br>
+&lt;/details></code>
+</td>
+<td>
+<details>
+<summary>Some summary</summary>
+Some content
+</details>
+</td>
+</tr>
+
+<!-- time -->
+<tr>
+<td>Wrap a date/moment inside time.</td>
+<td><code>&lt;time datetime="FOR_A_COMPUTER">FOR_YOUR_USER&lt;/time></code>
+<br>
+<code>&lt;time datetime="2020-12-06">December 6&lt;/time></code><br>
+<code>&lt;time datetime="2020-12-06T00:00:00">December 6&lt;/time></code>
+
+See [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time). 
+</td>
+<td>
+<time datetime="2020-12-06">December 6</time>
+<time datetime="2020-12-06T00:00:00">December 6</time>
+</td>
+</tr>
+</tbody>
+</table>
 
 <hr class="sl">
 
 ## Notes
 
 ```html
+<!-- 
+ Force a space, or write a character using UTF8 codes
+ Note that you will rarely (never?) need that
+ -->
+&nbsp; (space) &#244; (ô) &#224; (à)
+
 <!-- refresh in 5 seconds -->
 <meta http-equiv="refresh" content="5">
 <!-- HTML redirect -->
