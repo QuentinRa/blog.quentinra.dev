@@ -705,10 +705,17 @@ Support of [HTML 5.2](https://w3c.github.io/test-results/html52/implementation-r
 Guidelines
 
 * [codeguide.co](https://codeguide.co/#html-syntax)
+* [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+* [W3 Guidelines](https://www.w3schools.com/htmL/html5_syntax.asp)
 
 CheatSheet
 
 * [htmlreference](https://htmlreference.io/) 😍
+* [MDN reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) 😍
+* [htmlcheatsheet](https://htmlcheatsheet.com/) 😯
+* [htmlcheatsheet (PDF)](https://htmlcheatsheet.com/HTML-Cheat-Sheet.pdf), but it got cut quite a bit 😂
+* [Pravin Pawar's CheatSheet](https://ppawar.github.io/Spring2020/CSE102-S20/cheatsheets/CSE102-CheatSheetHTML.pdf)
+* [Jamie Spencer's CheatSheet](https://makeawebsitehub.com/wp-content/uploads/2015/06/HTML5-Mega-Cheat-Sheet-A4-Print-ready.pdf)
 
 <hr class="sr">
 
