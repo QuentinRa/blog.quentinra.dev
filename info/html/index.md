@@ -668,6 +668,19 @@ If you got multiples sources/format, then you may use the tag source instead of 
 </tbody>
 </table>
 
+My notes
+
+* **HTML5.1**: you can add option inside the browser content-menu (`menu type="context"`)
+* **HTML5.1**: `srcset` for images allows us to give a batch of images for some resolutions. `sizes` allows us to resize the image according to the size of the screen.
+* **HTML5.1**: new tag `picture`, to show different pictures according to the resolution
+* **HTML5.1**: the rev attribute for links. You can give it "prev" or "next" if there is a relation previous page/next page with the current page
+* **HTML5.2**: new tag `dialog`, not supported everywhere,
+see [MDN doc](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog) and [can i use](https://caniuse.com/mdn-html_elements_dialog).
+* **HTML5.2**: multiples main are allowed, but only when can be visible (use hidden)
+
+Support of [HTML 5.1](https://w3c.github.io/test-results/html51/implementation-report).
+Support of [HTML 5.2](https://w3c.github.io/test-results/html52/implementation-report). As for [HTML 5.3](https://w3c.github.io/test-results/html53/implementation-report) (in progress).
+
 <hr class="sl">
 
 ## Notes
@@ -709,3 +722,5 @@ Templates
 * [HTML - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [HTML Guidelines](https://codeguide.co/#html-syntax)
 * [HTML - reference](https://htmlreference.io/)
+* [HTML.com](https://html.com/)
+* [HTML - specification](https://html.spec.whatwg.org/multipage/semantics.html)

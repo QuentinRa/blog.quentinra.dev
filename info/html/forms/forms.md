@@ -32,3 +32,18 @@ Every working form has an attribute "action", telling us where is the script han
 <form action="file.php"></form>
 <form action="URL"></form>
 ```
+
+<hr class="sl">
+
+## fieldset
+
+You can wrap a form/some fields inside a fieldset
+
+```html
+<form>
+    <fieldset>
+        <legend>Some title</legend>
+        <!-- some fields -->
+    </fieldset>
+</form>
+```

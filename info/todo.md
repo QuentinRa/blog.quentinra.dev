@@ -194,6 +194,7 @@ CSS/JS minifier + HTML/CSS validator
 * <https://github.com/omundy/dig245-critical-web-design>
 * <https://github.com/omundy>
 * <https://jgthms.com/>
+* <https://www.admecindia.co.in/courses/web-design-courses-delhi/>
 
 ---
 
