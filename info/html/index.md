@@ -381,6 +381,37 @@ I can't use Markdown tables because the content is too complex 😭, it may the 
 <td><hr></td>
 </tr>
 
+<tr><td colspan="5" class="text-center">
+Rarely used tags
+</td></tr>
+
+<!-- small -->
+<tr>
+<td><kbd>small</kbd></td>
+<td>smaller text</td>
+<td></td>
+<td><code>This is  &lt;small>small&lt;/small></code></td>
+<td>This is <small>small</small></td>
+</tr>
+
+<!-- mark -->
+<tr>
+<td><kbd>mark</kbd></td>
+<td>marked text<br>(yellow background)</td>
+<td></td>
+<td><code>This is  &lt;mark>marked&lt;/mark></code></td>
+<td>This is <mark>marked</mark></td>
+</tr>
+
+<!-- kbd -->
+<tr>
+<td><kbd>kbd</kbd></td>
+<td>keyboard keys</td>
+<td></td>
+<td><code>This is a &lt;kbd>key&lt;/kbd></code></td>
+<td>This is a <kbd class="bg-gradient">key</kbd></td>
+</tr>
+
 </tbody>
 </table>
 
@@ -465,6 +496,23 @@ Then, at the end, you add either a button submit (to send the form) and/or a but
 
 <hr class="sr">
 
+## Features of HTML5, 5.1, and HTML5.2
+
+...
+
+<hr class="sl">
+
+## Notes
+
+```html
+<!-- refresh in 5 seconds -->
+<meta http-equiv="refresh" content="5">
+<!-- HTML redirect -->
+<meta http-equiv="refresh" content="0; url=URL">
+```
+
+<hr class="sr">
+
 ## External resources
 
 Guidelines
@@ -486,3 +534,4 @@ Templates
 * [HTML - W3Schools](https://www.w3schools.com/html/default.asp)
 * [HTML - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [HTML Guidelines](https://codeguide.co/#html-syntax)
+* [HTML - reference](https://htmlreference.io/)
