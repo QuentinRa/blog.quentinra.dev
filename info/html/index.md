@@ -27,12 +27,12 @@ To summarize what was written in the WEB course,
 </summary>
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
     <title>title of your website</title>
     <!-- UTF-8 -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
     <!-- RESPONSIVE (responsive CSS) -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -70,10 +70,14 @@ You may also note that tags such as **p** are called blocking tags, because unle
 **Notes**
 
 * the name of a tag can be in lowercase or in uppercase (ex: "a" or "A" are working), use lowercase 😎
-* you can write `attribute=value` (without " but that may not work every time according to the value, **do not use this 😟**)
-* you may write `<img ...></img>` or `<img ... />` (without the /), but we are usually writing `<img ...>` like this for auto-closable tags.
-* you do not need to indent your code, but it makes things cleaner (🙂)
-* you do not to put one tag per line, but it makes things cleaner (🙂)
+* you can write `attribute=value` (without ", but that may not work every time according to the value, **do not use this 😟**)
+* you can write `attribute='value'` (instead of ", **do not use this 😟**)
+* you may write `<img ...></img>` or `<img ... />` (without the /), but we are usually writing `<img ...>` for auto-closable tags.
+* you do not need to indent your code, but it makes things cleaner 🙂
+* you do not to put one tag per line, but it makes things cleaner 🙂
+* so tags are optional (such as </li> or </body>, but you shouldn't omit/forget them)
+
+> When I'm saying "do not use/do this", I mean that developers are usually not using this, and if you do, then you should make sure **to not mix things** (do not mix ' and ") as this is what bad developers do. Pick one, and be consistent until the end.
 
 <hr class="sr">
 
@@ -81,7 +85,7 @@ You may also note that tags such as **p** are called blocking tags, because unle
 
 One of the things that came with HTML5, is a new way to structure your website. Usually 
 
-* The first line is `<!DOCTYPE html>`,
+* The first line is `<!doctype html>`,
 * Then, the code is inside a tag called html `<html lang="en"> ... </html>`
 * **But**, to make things cleaner, we are splitting the HTML into two tags
 * `head`: we are defining here the properties of your website 
@@ -107,12 +111,12 @@ As you may guess, adding head is good, but we didn't split enough the body. Sinc
 <summary>Example (code)</summary>
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
     <title>title of your website</title>
     <!-- UTF-8 -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
     <!-- RESPONSIVE (responsive CSS) -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -461,7 +465,24 @@ Then, at the end, you add either a button submit (to send the form) and/or a but
 
 <hr class="sr">
 
+## External resources
+
+Guidelines
+
+* [codeguide.co](https://codeguide.co/#html-syntax)
+
+CheatSheet
+
+* none
+
+Templates
+
+* [boilerplate](https://html5boilerplate.com/)
+
+<hr class="sr">
+
 ## Sources
 
-* <https://www.w3schools.com/html/default.asp>
-* <https://developer.mozilla.org/en-US/docs/Web/HTML>
+* [HTML - W3Schools](https://www.w3schools.com/html/default.asp)
+* [HTML - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [HTML Guidelines](https://codeguide.co/#html-syntax)
