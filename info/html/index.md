@@ -6,6 +6,8 @@ The current version that you should use is **HTML5**, but even if many browser h
 
 The usual place, and the best one, to learn HTML/CSS/JS is [W3Schools](https://www.w3schools.com/html/default.asp).
 
+> **Note**: as a good developer 😎, you should follow the standards when writing code. You can test your code [using the W3C validator](https://validator.w3.org/#validate_by_input). You can also add a badge that will redirect to the validator with your page inside [as explained here](../../special/web/parts/validator.md).
+
 <hr class="sr">
 
 ## Introduction
@@ -402,18 +404,6 @@ the data will be hidden, GET means that the data will be shown in the URL.
 * [Learning about form input fields](forms/input.md)
 
 <hr class="sr">
-
-## W3 validator
-
-Check out that the code you wrote is following the W3C
-norms [here](https://validator.w3.org/#validate_by_input)
-(https://validator.w3.org/#validate_by_input).
-
-We don't have rules to follows but it's good to hear
-how you could write your code in a better way by following
-developers standards.
-
-<hr class="sl">
 
 ## Meta tags
 
