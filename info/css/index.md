@@ -1,6 +1,6 @@
 # Cascading Style Sheets
 
-Cascading Style Sheets (CSS) are mainly used to style websites, and add some animations. I'm not an expert nor fond of CSS because CSS frameworks such as Bootstrap are providing most of the CSS that I need.
+Cascading Style Sheets (CSS) are mainly used to style websites, and add some animations. I'm not an expert nor fond of CSS because CSS frameworks such as Bootstrap are providing most of the CSS that I need. We are currently using **CSS3**, but maybe [someday we will see CSS4](https://css4-selectors.com/status-for-css4/) introducing [new selectors](https://css4-selectors.com/selectors/) (a lot of them are already available).
 
 * How to write CSS
 * What are selectors?
@@ -311,16 +311,15 @@ You can use
 
 You may create variables (to store a color, a value etc.).
 
-```css
-/* declare */
+<pre><code class="language-css"
+>/* declare */
 :root { 
   --name: value;
 }
 /* use */
 p { 
   color: var(--name);
-}
-```
+}</code></pre>
 </details>
 
 <hr class="sl">
@@ -329,11 +328,10 @@ p {
 
 The format is 
 
-```css
-selectors {
+<pre><code class="language-css"
+>selectors {
     property_name: property_value;
-}
-```
+}</code></pre>
 
 Notes
 
