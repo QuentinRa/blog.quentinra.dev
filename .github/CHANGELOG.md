@@ -10,10 +10,9 @@
 * `feature`: the language of the repository is Markdown (none previously)
 * `feature`: adding [CODEOWNERS](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners) file
 * `feature`: adding the [Markdown syntax reference](https://memorize.be/syntax)
-* `feature`: loading images and files from GitHub
+* `feature`: loading images and files from a CDN
 * `feature`: button to add "co-author"
 * `feature`: human.txt added
-* `feature`: using CDN for images/files outside references
 : `seo`: Mathjax is dynamically disabled for the pages that do not use LaTeX yet (it reduces the loading time by around 0.5s)
 
 **Changed**
@@ -21,25 +20,24 @@
 * `seo`: replacing h4 by h2 for courses in the list of courses
 * `seo`: the titles and the descriptions of the pages displaying a list of courses, are now inside the JSON
 * `seo`: the description and the title of each file of a course, including the main page, is now generated from the first line of the course and the first header h1.
-* `internal`: preview was replaced by side-by-side, inside the editor
+* `internal`: preview was replaced by side-by-side (inside the editor)
 * `internal`: static pages are now hosted in this repository
 * `rendering`: Markdown tables border is now dark
-* `rendering`: code is now blue (was pink/red)
+* `rendering`: inline code is now blue (was pink/red)
 
 **Fixed**
 
 * `seo`: fixing headers missing for the associated meta tag
   * Canonical link
   * X-Robots-Tag
-* `internal`: after successfully editing a course, you were sent to the wrong page
-* `internal`: the footer was outside the body tag, and the  HTML ending tag was missing
+* `internal`: after successfully editing a course, you were sent to the wrong page (😖)
 * `rendering`: I corrected the message shown if you forgot the captcha
 * `rendering`: links inside a dark table are now more visible
-* `internal`: edit button "type" was missing
+* `internal`: go back is now dynamically replace with the URL you were on
 
 **Removed**
 
-* `feature`: removing `href="download:url"`, you should use the [memorize-references](https://github.com/memorize-code/memorize-references).
+* `feature`: removing `href="download:url"`, you should use the following repository [memorize-references](https://github.com/memorize-code/memorize-references).
 
 ## v4.5.0 (2021-08-20)
 

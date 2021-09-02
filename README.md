@@ -53,7 +53,6 @@ Last updated: 2021-08-27
 * [ ] advanced search? (inside a course/category)
 * [ ] adding file history
 * [ ] adding submit issue
-* [ ] Go back "referrer"
 * **Content**
 * [ ] Index Google/Bing
 * [ ] add a pull request template
