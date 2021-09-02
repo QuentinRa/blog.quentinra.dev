@@ -7,7 +7,7 @@ Cascading Style Sheets (CSS) are mainly used to style websites, and add some ani
 * List of CSS properties that I'm using the most
 * What's responsive design?
 
-> **Note**: as for HTML, as a good developer 😎, you should follow the standards when writing code. You can test your code [using the W3C CSS validator](https://jigsaw.w3.org/css-validator/#validate_by_input). You may also want to minimize your CSS (to make your page faster, as the size will be lesser), you can do that with [CSS minifier](https://css-minifier.com/). If you want to use a CDN, please refer to the WEB course.
+> **Note**: as you are doing in HTML, good developer that you are 😎, you should test that your code is following the W3C standard [using this validator](https://jigsaw.w3.org/css-validator/#validate_by_input). You may also want to minimize your CSS (to make your page faster, as the size of the CSS will be reduced), you can do that with a [CSS minifier](https://css-minifier.com/). If you want to use a CDN, please refer to the WEB course.
 >
 > I did use it yet (please add explanations if you did here), but you can use SASS to generate CSS, which is working like TypeScript for JavaScript, or PHP to factorize HTML code. It seems useful to make themes (dark, light).
 
@@ -59,7 +59,10 @@ This is the best way, as developers won't have to look every file for CSS. You w
 </tbody>
 </table>
 
-Usually, when using an external CSS, we are calling it `style.css`, you can make one for when we want to print the page `print.css`, and/or you can have one CSS file per page.
+<details>
+<summary>
+Usually, when using an external CSS, we are calling it <code>style.css</code>, you can make one for when we want to print the page <code>print.css</code>, and/or you can have one CSS file per page.
+</summary>
 
 ```css
 @charset "utf-8"; /* optional */
@@ -70,6 +73,18 @@ p {
   background: yellow;
 }
 ```
+</details>
+
+<details class="pt-3">
+<summary><b>HELP!</b> I wrote some CSS, but I don't see any changes!?</summary>
+
+They may be three problems **1**: you didn't use the good selector, **2**: another style is overriding yours, or **3**: your page is rendering using the cached CSS. The tips we are given are
+
+* for **1**: try using background="red" or something like that, to check that the selector is good
+* for **2**: try using `!important` or check the CSS used in the developers' tools
+* for **3**: <kbd>CTRL+R</kbd> or <kbd>CTRL+SHIFT+R</kbd> or <kbd>SHIFT+F5</kbd> or <kbd>CTRL+F5</kbd>.
+
+</details>
 
 <hr class="sl">
 
