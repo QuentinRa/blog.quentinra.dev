@@ -140,7 +140,7 @@ You can match a selector having every specified classes too.<br>You can also add
 <tr>
 <td>
 
-<b>Joker selector</b><br>
+<b>Joker selector</b> 🃏<br>
 I may be the one one calling it like that.<br>
 You can use `*` to select everything <br> 
 (🤮 you should use body/html instead of `*`)
@@ -156,43 +156,31 @@ You can use `*` to select everything <br>
 </td>
 </tr>
 
-<!-- State selector -->
+<!-- Pseudo-classes -->
 <tr>
-<td><b>State selector</b><br>
+<td><b>Pseudo-classes selector</b><br>
+
 You can apply a style to something, but only the element is in a predefined state.
+
+You got `:active`, `:checked`, `:focus`, `:disabled`, `:visited` and many more. You also got `:first-child`, `last-child`, or `:nth-child(1)` to select a children.
+
 </td>
 <td>
-
-<details>
-<summary>Show</summary>
 
 ```css
-button:hover { 
-  /* mouse on top of it */
-}
-input:checked { 
-  /* selected/checked */
-}
-a:active { 
-  /* active link */
-}
-input:focus { 
-  /* typing ~= focused input */
-}
-button:disabled { /* ... */ }
-a:visited {
-  /* visited link */
-}
+button:hover { /* mouse over */ }
+:not(p) { /* ... */ }
+*:not(p) { /* same */ }
 ```
-</details>
 </td>
 <td>
-<pre><code class="language-html">&lt;input type="radio" checked></code></pre>
+...
 </td>
+</tr>
 
-<!-- Property selector -->
+<!-- Property/Attribute selector -->
 <tr>
-<td><b>Property selector</b><br>
+<td><b>Property selector</b> (or attribute selector)<br>
 You can select something according to the values of its attributes.
 
 You got <code>=</code> (equals), <code>*=</code> (contains) etc.
@@ -205,24 +193,7 @@ You got <code>=</code> (equals), <code>*=</code> (contains) etc.
 <td>
 <pre><code class="language-html">&lt;p class="name">...&lt;/p></code></pre>
 </td>
-
-<!-- CSS functions -->
-<tr>
-<td><b>CSS functions</b><br>
-
-You can use functions such as `:not(selector)`, to select every aside this selector.<br>
-As you could guess, they are `State selectors`, so you can add a tag before not <span class="tms">(`a:not(.name)`: every link not having the class name)</span>.
-</td>
-<td>
-<pre><code class="language-css">:not(p) { /* ... */ }
-p:first-child { }
-p:last-child { }
-p:nth-child(1) { }
-</code></pre>
-</td>
-<td>
-<pre><code class="language-html">&lt;div>...&lt;/div></code></pre>
-</td>
+</tr>
 
 </tbody>
 </table>
@@ -263,6 +234,17 @@ You can apply a selector to elements filtered by another.<br> This is the same a
 </td>
 <td>
 <pre><code class="language-css">p a { /* ... */ }</code></pre>
+</td>
+</tr>
+
+<!-- + -->
+<tr>
+<td><b>Plus</b><br>
+
+The style is applied on the first child of the selector (ex: first link inside a paragraph).
+</td>
+<td>
+<pre><code class="language-css">p + a { /* ... */ }</code></pre>
 </td>
 </tr>
 
