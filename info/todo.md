@@ -85,10 +85,7 @@ see headers: curl -I https://memorize.be/
   - course normalization
   - https://github.com/omundy/learn-mysql-examples
 - css
-  - https://github.com/topcoat/topcoat/wiki/Coding-Guidelines
-  - https://cssguidelin.es/
-  - https://codeguide.co/
-  - https://css-tricks.com/
+  - https://markdotto.com/2015/07/20/css-nesting/
 - js
   - https://jasmine.github.io/
   - https://github.com/elsewhencode/project-guidelines

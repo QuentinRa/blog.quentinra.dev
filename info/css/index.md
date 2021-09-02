@@ -488,6 +488,8 @@ Then, we will write **media queries**. These are blocks in which you will declar
 
 You can use that to hide/show some buttons, change some component's positions, ...
 
+> **edit 02/09/2021**: media queries are more complex than what I learned, you can [read more here](https://www.bitdegree.org/learn/media-css#media-types), as I saw a lot of times `@media (min-width: 950px) {}` instead of the code above with `screen and`.
+
 <hr class="sr">
 
 ## Animations
@@ -498,6 +500,21 @@ I never used CSS animations (hence you may complete this part), but here are som
 * [CSS-tricks - Animation Libraries](https://css-tricks.com/css-animation-libraries/)
 
 <hr class="sl">
+
+## External resources
+
+Guidelines
+
+* [List of guides](https://css-tricks.com/css-style-guides/)
+* [css guidelines](https://cssguidelin.es/#css-selectors)
+* [codeguide](https://codeguide.co/#css-syntax) (quite good, almost a summary of the two previous ones)
+
+CheatSheets
+
+* [Simple cheatsheet](https://devhints.io/css) (😍, not too much content, well made)
+* [CSS - Reference](https://cssreference.io/) (quite good to get explanations about something)
+
+<hr class="sr">
 
 ## Sources
 
