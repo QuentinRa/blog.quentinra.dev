@@ -277,10 +277,9 @@ Of course, you got more of them, as you can [read here (W3Schools)](https://www.
 
 Before digging in the properties, you must learn more about the values you can give them.
 
-<table class="table table-bordered border-dark">
-<tbody>
-<tr>
-<td><b>Size</b>
+<details class="details-border">
+<summary>Size</summary>
+<br>
 
 * a value (`0` is the only one that should not have an unit)
 * a value with an unit (`1px`, ...). The most used unit is **px** (default, pixels), but you may check **rem**, **pc**, or **vh**.
@@ -292,11 +291,11 @@ A lot of properties will usually take 4 values `t r b l` (respectively top-right
 * `padding: ALL;` (t=r=b=l=ALL)
 * `padding: Y X;` (t=b=Y, r=l=X)
 * `padding: U V W;` (t=l=U, r=V, b=W)
-</td>
-</tr>
+</details>
 
-<tr>
-<td><b>Color</b>
+<details class="details-border">
+<summary>Color</summary>
+<br>
 
 You can use
 
@@ -304,25 +303,25 @@ You can use
 * the RGB function (ex: `rgb(r, g, b)` such as `rgb(255, 0, 0)` for red)
 * the RGBA function (ex: `rgba(r, g, b, a)`, with alpha the transparency)
 * the HEX code (ex: `#dd4411` or `#d41`)
-</td>
-</tr>
+</details>
 
-<tr>
-<td><b>Variables</b>
+<details class="details-border">
+<summary>Variables</summary>
+<br>
 
 You may create variables (to store a color, a value etc.).
 
 ```css
 /* declare */
-:root { --name: value; }
+:root { 
+  --name: value;
+}
 /* use */
-p { color: var(--name); }
+p { 
+  color: var(--name);
+}
 ```
-
-</tr>
-
-</tbody>
-</table>
+</details>
 
 <hr class="sl">
 
