@@ -164,7 +164,7 @@ This is the tags that I'm using the most, and the tags that you must know, with 
 I can't use Markdown tables because the content is too complex 😭, it may the code more unreadable.
 -->
 
-<table class="table table-dark table-striped border-dark table-bordered">
+<table class="table border-dark table-striped table-bordered">
 <thead>
 <tr>
 <th>Tag</th>
@@ -177,7 +177,7 @@ I can't use Markdown tables because the content is too complex 😭, it may the 
 <tbody>
 
 <tr class="text-center">
-<td colspan="5" class="text-my-yellow">TITLES</td>
+<td colspan="5">TITLES</td>
 </tr>
 
 <!-- h1 -->
@@ -217,7 +217,7 @@ I can't use Markdown tables because the content is too complex 😭, it may the 
 </tr>
 
 <tr class="text-center">
-<td colspan="5" class="text-my-yellow">TEXT</td>
+<td colspan="5">TEXT</td>
 </tr>
 
 <!-- p -->
@@ -248,7 +248,7 @@ I can't use Markdown tables because the content is too complex 😭, it may the 
 </tr>
 
 <tr class="text-center">
-<td colspan="5" class="text-my-yellow">IMAGES AND LINKS</td>
+<td colspan="5">IMAGES AND LINKS</td>
 </tr>
 
 <!-- a -->
@@ -331,7 +331,7 @@ You may want to style your website, and you can using HTML tag (lets leave the C
 I can't use Markdown tables because the content is too complex 😭, it may the code more unreadable.
 -->
 
-<table class="table table-dark table-striped border-dark table-bordered">
+<table class="table table-striped border-dark table-bordered">
 <thead>
 <tr>
 <th>Tag</th>
@@ -434,7 +434,7 @@ Rarely used tags
 <td>keyboard keys</td>
 <td></td>
 <td><code>This is a &lt;kbd>key&lt;/kbd></code></td>
-<td>This is a <kbd class="bg-gradient">key</kbd></td>
+<td>This is a <kbd>key</kbd></td>
 </tr>
 
 <!-- sup -->
@@ -495,9 +495,9 @@ Rarely used tags
 <tr>
 <td><kbd>blockquote</kbd></td>
 <td>Quoting something</td>
-<td>You may add <kbd>cite="URL/to/source"</kbd>.</td>
+<td>You may add <code>cite="URL/to/source"</code>.</td>
 <td><code>&lt;blockquote>quote&lt;/blockquote></code></td>
-<td><blockquote class="text-white">quote</blockquote></td>
+<td><blockquote>quote</blockquote></td>
 </tr>
 
 </tbody>
@@ -590,7 +590,7 @@ Then, at the end, you add either a button submit (to send the form) and/or a but
 
 Notes and tags introduced in HTML 5 (and 5.1/5.2), that I haven't added before, as I didn't use them.
 
-<table class="table table-dark table-striped border-dark table-bordered">
+<table class="table table-striped border-dark table-bordered">
 <thead>
 <tr>
 <th>Description</th>

@@ -99,6 +99,7 @@ see headers: curl -I https://memorize.be/
   - https://github.com/jfarmer
   - https://godotengine.org/
   - https://polyfill.io/v3/
+  - js minifier/cdn
 - cyber-security
   - https://github.com/OWASP/CheatSheetSeries
   - https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
@@ -147,10 +148,6 @@ see headers: curl -I https://memorize.be/
   - https://www.geeksforgeeks.org/apropos-command-in-linux-with-examples/
   - nmap google.fr -p 0-65535 -O -A (port fait quoi)
   - Zmap
-
-CSS/JS minifier + HTML/CSS validator
-* https://sparksuite.github.io/w3c-css-validator/
-* minifier css/minify css
 
 <hr>
 
