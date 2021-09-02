@@ -269,33 +269,60 @@ You can apply a selector to elements filtered by another.<br> This is the same a
 </tbody>
 </table>
 
+Of course, you got more of them, as you can [read here (W3Schools)](https://www.w3schools.com/CSSref/css_selectors.asp).
+
 <hr class="sr">
 
-## Sizes
+## Values
 
-You will be asked a lot of times to enter a size.
-By default, values are in pixels ``px``. 
+Before digging in the properties, you must learn more about the values you can give them.
 
-* ``width: 0px;`` valid for 0 you can remove px `width:0;`
-* ``width: 15px;``
+<table class="table table-bordered border-dark">
+<tbody>
+<tr>
+<td><b>Size</b>
 
-Aside from px, developers are choosing one of theses and
-work with it
+* a value (`0` is the only one that should not have an unit)
+* a value with an unit (`1px`, ...). The most used unit is **px** (default, pixels), but you may check **rem**, **pc**, or **vh**.
+* a percent such as `100%`
+* an expression resulting in a value `calc(100% - 15px)`
 
-* ``rem`` (seems linked to font-size, used by boostrap)
-* ``pc``
-* ``mm`` (millimeters) and `cm` (centimeters)
-* ``ch``: width of 0
-* ``ex``: height of the font used
-* ``vh``/`vw`: viewport height/width
+A lot of properties will usually take 4 values `t r b l` (respectively top-right-bottom-left). You can either use `property-top: value` (to only set top) or a shortcut
 
-You could and should use **percents** when you
-can like ``100%``.
+* `padding: ALL;` (t=r=b=l=ALL)
+* `padding: Y X;` (t=b=Y, r=l=X)
+* `padding: U V W;` (t=l=U, r=V, b=W)
+</td>
+</tr>
 
-You can do some calculations with ``calc(...)``
-like ``width: calc(100% - 15px);``
+<tr>
+<td><b>Color</b>
 
-At this point, you are ready to write some css.
+You can use
+
+* a name (`red`, `yellow`, etc.)
+* the RGB function (ex: `rgb(r, g, b)` such as `rgb(255, 0, 0)` for red)
+* the RGBA function (ex: `rgba(r, g, b, a)`, with alpha the transparency)
+* the HEX code (ex: `#dd4411` or `#d41`)
+</td>
+</tr>
+
+<tr>
+<td><b>Variables</b>
+
+You may create variables (to store a color, a value etc.).
+
+```css
+/* declare */
+:root { --name: value; }
+/* use */
+p { color: var(--name); }
+```
+
+</tr>
+
+</tbody>
+</table>
 
 <hr class="sl">
 
