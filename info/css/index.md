@@ -13,26 +13,61 @@ Cascading Style Sheets (CSS) are mainly used to style websites, and add some ani
 
 <hr class="sr">
 
-## Where do you write css?
+## Introduction
 
-You should not use the first two and only
-write a ``style.css`` file but it's good to know
-them since they are quite used.
+A CSS is a list of **rules** that are made of **selectors+properties**. For instance, you can say that every text in a paragraph (selector "p") will be red (property color=red): this is a rule. They are three ways to write CSS.
 
-* [style attribute](how/attribute.md) (`style='...'`, not recommended)
-* [style tag](how/tag.md) (`<style></<style>`, not recommended)
-* [style file](how/file.md) (`style.css`)
+<table class="table border-dark table-striped table-bordered">
+<thead><tr><th>Inline CSS 🤮</th><th>CSS tag 🤢</th><th>External CSS 😍</th></tr></thead>
+<tbody>
+<tr>
+<td>
 
-A default css file will probably look like this
+Every tag in HTML got an attribute called **style**. Simply write the CSS inside.
+```HTML
+<p style="color:red;background: yellow;">
+  ...
+</p>
+```
+</td>
+<td>
+
+You can use one (or more) tag &lt;style&gt;, and put the CSS inside.
+
+```HTML
+<style>
+p {
+  color:red;
+  background: yellow;
+}
+</style>
+```
+</td>
+<td>
+
+You can put the CSS in another file, write the CSS as we did in style, and link it to the HTML with
+
+```html
+<link rel="stylesheet" 
+      href="/path/to/style.css">
+```
+
+This is the best way, as developers won't have to look every file for CSS. You will also be able to use CDN to speed up your website.
+
+</td>
+</tr>
+</tbody>
+</table>
+
+Usually, when using an external CSS, we are calling it `style.css`, you can make one for when we want to print the page `print.css`, and/or you can have one CSS file per page.
 
 ```css
-@charset "UTF-8";
+@charset "utf-8"; /* optional */
 
-html {
-    /* */
-     see the difference if you made a "back to top"
-     button through */
-    scroll-behavior:smooth;
+/* a comment */
+p {
+  color:red;
+  background: yellow;
 }
 ```
 
