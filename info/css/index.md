@@ -112,8 +112,7 @@ Simply write the tag, you want to select.
 <!-- ID selector -->
 <tr>
 <td><b>ID selector</b><br>
-Each tag can have one ID. <br>
-Each ID is unique, per page.
+Each tag can have one ID, each ID is unique within a page.
 </td>
 <td>
 <pre><code class="language-css">#my-id { /* ... */ }</code></pre>
@@ -125,13 +124,16 @@ Each ID is unique, per page.
 <!-- Class selector -->
 <tr>
 <td><b>Class selector</b><br>
-Each tag can have one or more classes, separated by a space.
+Each tag can have one or more classes, separated by a space.<br><br>
+You can match a selector having every specified classes too.<br>You can also add a tag before a class.
 </td>
 <td>
 <pre><code class="language-css">.name { /* ... */ }</code></pre>
+<pre><code class="language-css">p.one.two { /* ... */ }</code></pre>
 </td>
 <td>
 <pre><code class="language-html">&lt;p class="name">...&lt;/p></code></pre>
+<pre><code class="language-html">&lt;p class="one two">...&lt;/p></code></pre>
 </td>
 
 <!-- Joker selector -->
@@ -203,6 +205,66 @@ You got <code>=</code> (equals), <code>*=</code> (contains) etc.
 <td>
 <pre><code class="language-html">&lt;p class="name">...&lt;/p></code></pre>
 </td>
+
+<!-- CSS functions -->
+<tr>
+<td><b>CSS functions</b><br>
+
+You can use functions such as `:not(selector)`, to select every aside this selector.<br>
+As you could guess, they are `State selectors`, so you can add a tag before not <span class="tms">(`a:not(.name)`: every link not having the class name)</span>.
+</td>
+<td>
+<pre><code class="language-css">:not(p) { /* ... */ }
+p:first-child { }
+p:last-child { }
+p:nth-child(1) { }
+</code></pre>
+</td>
+<td>
+<pre><code class="language-html">&lt;div>...&lt;/div></code></pre>
+</td>
+
+</tbody>
+</table>
+
+And there are three things that aren't selector, but you can use to factorize rules
+
+<table class="table table-bordered table-striped border-dark">
+<thead><tr><th>Description</th><th>CSS</th></tr></thead>
+<tbody>
+
+<!-- , -->
+<tr>
+<td><b>Comma</b><br>
+
+You can apply the same rules to a bunch of selectors by separating them with a `,` (comma).
+</td>
+<td>
+<pre><code class="language-css">p, a { /* ... */ }</code></pre>
+</td>
+</tr>
+
+<!-- > -->
+<tr>
+<td><b>Path</b><br>
+
+You can make a path by separating selectors with `>` (greater than). <br>Note that `a > b` means that b is a **direct child** of a.
+</td>
+<td>
+<pre><code class="language-css">p > a { /* ... */ }</code></pre>
+</td>
+</tr>
+
+<!-- space -->
+<tr>
+<td><b>Space</b><br>
+
+You can apply a selector to elements filtered by another.<br> This is the same as **path** without the constraint of being a direct child.
+</td>
+<td>
+<pre><code class="language-css">p a { /* ... */ }</code></pre>
+</td>
+</tr>
 
 </tbody>
 </table>
