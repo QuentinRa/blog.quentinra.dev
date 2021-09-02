@@ -2,11 +2,13 @@
 
 As you could read in the Web course, HTML is the language used to write a web page. To be exact, the final result is in HTML, but you could have used other languages to generate the HTML page (such as PHP or Node.js), as their is no way to factorize code in pure HTML.
 
-The current version that you should use is **HTML5**, but even if many browser have yet to support it, and not many people are aware of it, we are in **HTML5.2** (HTML 5 2nd minor version, December 2017). You can check the [coverage of HTML5 by your browser here](https://caniuse.com/) (for instance, try "summary", a new tag introduced in HTML51, or simply enter "HTML5").
+The current version that you should use is **HTML5**, but even if many browser have yet to support it, and not many people are aware of it, we are in **HTML5.2** (HTML 5 2nd minor version, December 2017). You can check the [coverage of HTML5 by your browser here](https://caniuse.com/) (for instance, try "summary", a new tag introduced in HTML5.1, or simply enter "HTML5").
 
 The usual place to learn HTML/CSS/JS is [W3Schools](https://www.w3schools.com/html/default.asp). Personally, I'm enjoying [MDN/Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML).
 
 > **Note**: as a good developer 😎, you should follow the standards when writing code. You can test your code [using the W3C validator](https://validator.w3.org/#validate_by_input). You can also add a badge that will redirect to the validator with your page inside [as explained here](../../special/web/parts/validator.md).
+> 
+> Recently, I discovered that you could check your website with [webhint.io](https://webhint.io/scanner/), which is also embed in edge developer tools, and providing quite good advices. You also got other tools, such as lighthouse to check the performances, etc. (check WEB course)
 
 <hr class="sr">
 
@@ -584,7 +586,7 @@ Then, at the end, you add either a button submit (to send the form) and/or a but
 
 <hr class="sr">
 
-## Features of HTML5, 5.1, and HTML5.2
+## Features of HTML5, 5.1, and 5.2
 
 Notes and tags introduced in HTML 5 (and 5.1/5.2), that I haven't added before, as I didn't use them.
 
