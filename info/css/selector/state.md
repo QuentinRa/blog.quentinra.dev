@@ -1,27 +1,3 @@
-# state selector
-
-[Go back](..)
-
-It's something you can add to one
-of the 3 previous selectors introduced.
-
-The idea is when you selected something,
-you will filter the selection as you could
-have seen using attributes with tag selectors.
-Here some of them usable this time on any kind
-of selectors.
-
-```css
-button:hover { /* mouse on top of it */ }
-input:checked { /* checked input */ }
-a:active { /* active link */ }
-input:focus { /* typing ~= focused input */ }
-button:disabled { /* ... */ }
-a:visited { /* visited link */ }
-```
-
-<hr class="sr">
-
 ## CSS functions
 
 You got some functions that will help you select

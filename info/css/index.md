@@ -90,32 +90,122 @@ They may be three problems **1**: you didn't use the good selector, **2**: anoth
 
 ## Selectors
 
-To apply some style to "something", you need
-to defines this "something".
+This is a list of the selectors I know of
 
-* [tag selector](selector/tag.md) (ex: style all "p" tags)
-* [id selector](selector/id.md) (ex: style a tag with an ID)
-* [class selector](selector/class.md) (ex: style a tag having this class)
-* [path selector](selector/path.md) : use the three above
-* [joker selector](selector/joker.md) : like ``*`` and root
-* [state selector](selector/state.md) : checked, hover, ...
+<table class="table table-bordered table-striped border-dark">
+<thead><tr><th>Description</th><th>CSS</th><th>HTML matched</th></tr></thead>
+<tbody>
 
-**BEWARE**: sometimes you might write CSS, refresh, and no changes. That's
-sometimes because you used the wrong selector or some error on your side,
-but it may also be your browser that cached the page. Refresh
-the cache using one of (the one working for you)
+<!-- Tag selector -->
+<tr>
+<td><b>Tag selector</b><br>
+Simply write the tag, you want to select.
+</td>
+<td>
+<pre><code class="language-css">p { /* ... */ }</code></pre>
+</td>
+<td>
+<pre><code class="language-html">&lt;p>Some text&lt;/p></code></pre>
+</td>
+</tr>
 
-* CTRL+SHIFT+F5
-* CTRL+F5
-* CTRL+R
-* CTRL+SHIFT+R
+<!-- ID selector -->
+<tr>
+<td><b>ID selector</b><br>
+Each tag can have one ID. <br>
+Each ID is unique, per page.
+</td>
+<td>
+<pre><code class="language-css">#my-id { /* ... */ }</code></pre>
+</td>
+<td>
+<pre><code class="language-html">&lt;p id="my-id">...&lt;/p></code></pre>
+</td>
 
-To check your selector, simply try adding a background to see what you are selecting.
+<!-- Class selector -->
+<tr>
+<td><b>Class selector</b><br>
+Each tag can have one or more classes, separated by a space.
+</td>
+<td>
+<pre><code class="language-css">.name { /* ... */ }</code></pre>
+</td>
+<td>
+<pre><code class="language-html">&lt;p class="name">...&lt;/p></code></pre>
+</td>
 
-**And if you feel now that you got many selectors, you are wrong**,
-check out [here](https://www.w3schools.com/cssref/css_selectors.asp)
-and [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
-if you want more. What you just read was only my handmade list.
+<!-- Joker selector -->
+<tr>
+<td>
+
+<b>Joker selector</b><br>
+I may be the one one calling it like that.<br>
+You can use `*` to select everything <br> 
+(🤮 you should use body/html instead of `*`)
+</td>
+<td>
+<pre><code class="language-css">* { /* ... */ }</code></pre>
+</td>
+<td>
+<pre><code class="language-html">&lt;p>...&lt;/p>
+&lt;div>...&lt;/div>
+&lt;!-- .... --&gt;
+</code></pre>
+</td>
+</tr>
+
+<!-- State selector -->
+<tr>
+<td><b>State selector</b><br>
+You can apply a style to something, but only the element is in a predefined state.
+</td>
+<td>
+
+<details>
+<summary>Show</summary>
+
+```css
+button:hover { 
+  /* mouse on top of it */
+}
+input:checked { 
+  /* selected/checked */
+}
+a:active { 
+  /* active link */
+}
+input:focus { 
+  /* typing ~= focused input */
+}
+button:disabled { /* ... */ }
+a:visited {
+  /* visited link */
+}
+```
+</details>
+</td>
+<td>
+<pre><code class="language-html">&lt;input type="radio" checked></code></pre>
+</td>
+
+<!-- Property selector -->
+<tr>
+<td><b>Property selector</b><br>
+You can select something according to the values of its attributes.
+
+You got <code>=</code> (equals), <code>*=</code> (contains) etc.
+</td>
+<td>
+<pre><code class="language-css">input[type="radio"] {
+  /* ... */
+}</code></pre>
+</td>
+<td>
+<pre><code class="language-html">&lt;p class="name">...&lt;/p></code></pre>
+</td>
+
+</tbody>
+</table>
 
 <hr class="sr">
 
