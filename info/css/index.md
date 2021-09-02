@@ -1,12 +1,15 @@
-# Introduction
+# Cascading Style Sheets
 
-CSS is mainly used to style websites. Here
-you will learn how you can write some
-basic CSS.
+Cascading Style Sheets (CSS) are mainly used to style websites, and add some animations. I'm not an expert nor fond of CSS because CSS frameworks such as Bootstrap are providing most of the CSS that I need.
 
-* this course may introduce SCSS and SASS
-* bootstrap and any other CSS framework won't
-be introduced in this course
+* How to write CSS
+* What are selectors?
+* List of CSS properties that I'm using the most
+* What's responsive design?
+
+> **Note**: as for HTML, as a good developer 😎, you should follow the standards when writing code. You can test your code [using the W3C CSS validator](https://jigsaw.w3.org/css-validator/#validate_by_input). You may also want to minimize your CSS (to make your page faster, as the size will be lesser), you can do that with [CSS minifier](https://css-minifier.com/). If you want to use a CDN, please refer to the WEB course.
+>
+> I did use it yet (please add explanations if you did here), but you can use SASS to generate CSS, which is working like TypeScript for JavaScript, or PHP to factorize HTML code. It seems useful to make themes (dark, light).
 
 <hr class="sr">
 
@@ -209,7 +212,7 @@ and v can be a value (check size), a percent, or auto.
 
 <hr class="sr">
 
-# Responsive
+## Responsive
 
 THIS IS A CORE CONCEPT. The main idea is to adapt your
 page according to the size of the screen. Adding

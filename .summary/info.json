@@ -10,17 +10,17 @@
       "icon": "<i class=\"bi bi-window\"></i>"
     },
     {
-      "tag": "ocaml",
-      "name": "OCaml",
-      "title": "Learn OCAML programming",
-      "desc": "This is a course for beginners in OCaml or in functional languages.",
-      "icon": "<i class=\"bi bi-terminal-fill\"></i>"
-    },
-    {
       "tag": "html",
       "name": "HTML",
       "title": "Learn HTML programming",
       "desc": "A complete summary of what you need to know in HTML to make a website.",
+      "icon": "<i class=\"bi bi-globe\"></i>"
+    },
+    {
+      "tag": "css",
+      "name": "CSS",
+      "title": "Learn CSS programming",
+      "desc": "What's CSS and how you could use it to make your website looks better.",
       "icon": "<i class=\"bi bi-globe\"></i>"
     }
   ]
