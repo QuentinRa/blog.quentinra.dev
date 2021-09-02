@@ -462,19 +462,19 @@ This is almost everything I used, and I'm considering myself to be a beginner. Y
 |padding|gap between a component and it's border| 
 |margin|gap between a component and the "outside"|
 
-<hr class="sr">
+<hr class="sl">
 
-## Responsive
+## Responsive design
 
-THIS IS A CORE CONCEPT. The main idea is to adapt your
-page according to the size of the screen. Adding
-the line (viewport...) allows some basic resizing
-but you will have to do a lot of this by yourself.
+This is most likely what will take the most of time, and why I switched to Bootstrap. Your user will use different resolution when visiting your website, different browsers, and different platforms (mobile, tablet, computer, etc.). This is your job, that the website is properly rendered on each platform, and that's a practice called **responsive design**.
 
-The main idea is that you will use media queries. Theses
-sort of functions will contain a lot of classes that
-you want to be used if the screen has a predetermined
-size.
+The first thing to do, is to add this line in your HTML, so that the website will try to adapt itself according to the size of the screen
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+Then, we will write **media queries**. These are blocks in which you will declare the rules that should be used if the screen is lesser than "Xpx" or greater than "Ypx" or within "Xpx" and "Ypx".
 
 ```css
 @media screen and (max-width: 950px) {
@@ -488,10 +488,9 @@ size.
 }
 ```
 
-You can use that to hide/show some buttons, change some
-component's positions, ...
+You can use that to hide/show some buttons, change some component's positions, ...
 
-<hr class="sl">
+<hr class="sr">
 
 ## Sources
 
