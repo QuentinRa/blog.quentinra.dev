@@ -67,7 +67,7 @@ The main idea when writing HTML is that you are gonna write some tags such as **
 
 You will have to types of tags, tags like `<img ...>` called **auto-closing tags** because you don't write `<img></img>`, as you would with others such as `<a ...>this is a link</a>`.
 
-You may also note that tags such as **p** are called blocking tags, because unless you use CSS, the tags after **p** will be rendered starting from a newline.
+You may also note that tags such as **p** are called blocking tags, because unless you use CSS, the tags after **p** will be rendered starting from a newline. To be accurate, "p", "div", etc. are **block-level elements** while "a", "span", etc. are called **inline elements**. A block element is usually storing a bunch of inline elements. I'm usually calling those "containers".
 
 **Notes**
 
@@ -243,7 +243,7 @@ I can't use Markdown tables because the content is too complex 😭, it may the 
 <td></td>
 <td>a comment</td>
 <td></td>
-<td><code>&lt;!-- your comment here --></code></td>
+<td><code>&lt;!-- a comment here --></code></td>
 <td>you can't see it 😅</td>
 </tr>
 
