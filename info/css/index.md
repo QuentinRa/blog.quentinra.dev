@@ -330,29 +330,30 @@ p {
 The format is 
 
 ```css
-selector {
+selectors {
     property_name: property_value;
 }
 ```
 
 Notes
 
-* write one per line (or not, I won't)
-* must add a ``;`` if you add more than one property
-* specify the unit unless the value is 0
-* you may add ``!important`` to force a style
-* styles added at the end are the ones applied first (unless ``!important``
-  is used)
-* you may use the value ``inherit`` to make a property
-value be inherited
+* write one per line 👍
+* the `;` (semicolon) is optional, but add it 👍
+* you may add `!important` to force a style 🤔
+* the last style is applied ("*cascade*" 👈), or the last with important
+* you may use the value `inherit` to inherit the value of the parent
 
-And here we go! The main idea is that I'm listing some
-styles you may use, then you go check on 
-duckduckgo/google/w3school/StackOverflow
-how you could use it if you don't understand.
+Usually, when you are learning CSS, you will go to other website that you like, and learn by reading how they do something. You can also ask something on Stack Overflow, or you check websites such as W3Schools/Youtube (**don't copy-paste code, usually websites are under copyright**). I think that the best way to learn CSS, is to learn the syntax, then look on the WEB each time you need something new, and learn bit by bit, as there are **too much properties**.
 
-```css
-div {
+<hr class="sr">
+
+## My List of properties
+
+<details>
+<summary>Background</summary>
+
+<pre><code class="language-css"
+>div {
     background: yellow; /** change background **/
     background: rgb(255,0,0); /** change background **/
     background: rgba(255,0,0, 0.8); /** change background with alpha=transparency **/
@@ -363,7 +364,15 @@ div {
     background-size: auto;
     background-size: cover;
     background-repeat: repeat;
-    
+}</code>
+</pre>
+</details>
+
+<details>
+<summary>Text</summary>
+
+<pre><code class="language-css"
+>div {
     color: red; /* working like background */
     font-size: 15px; /* font size */
     font-family: "Open Sans", sans-serif; /* change font-family, try using
@@ -372,28 +381,24 @@ div {
     font-weight: 400; /* font weight, you could also write bold, ligh,
      lighter, ... */
     line-height: 50px;
-    
+
     text-align: justify; /* center, left, right, ... */
     text-decoration: underline #dd4441; /* add underline */
     text-decoration: none; /* remove underline */
-    
+}</code>
+</pre>
+</details>
+
+<details>
+<summary>Size and position</summary>
+
+<pre><code class="language-css"
+>div {
     width: 5px; /* width */
     height: 5px; /* height */
-    
+
     display: block; /* display value. You can use none to hide something */
-    
-    border: 1px solid #202735; /* add border, size=1px, type=solid and black */
-    border-radius: 4px; /* border radius, round some button for instance */
-    
-    cursor: pointer; /* change cursor to "click"=pointer cursor */
-    outline: none; /* for button, outline shown on focus */
-}
-```
 
-Adding some position-related styles
-
-```css
-div {
     position: absolute; /* relative, fixed */
     top: 0; /* try to set a position */ 
     left: 0;
@@ -401,14 +406,13 @@ div {
     border: 0;
     z-index: 1; /* if two div at the same pos,
     who is on top ? the one with the highest z index */
-    
-    /** explained bellow */
+
     margin: auto;
     padding: 15px; /* all */
     padding: 15px 5px; /* top=bottom=15, left=right=5 */
     padding: 15px 5px 15px 5px; /* top, right, bottom, left */
     padding-bottom: 15px; /* manually */
-    
+
     /* so convenient to center a div */
     justify-content: center;
     align-self: center;
@@ -418,25 +422,45 @@ div {
     /* or maybe you would like */
     float: left;
     float: right;
+}</code>
+</pre>
+</details>
+
+<details>
+<summary>Others</summary>
+
+<pre><code class="language-css"
+>div {
+    border: 1px solid #202735; /* add border, size=1px, type=solid and black */
+    border-radius: 4px; /* border radius, round some button for instance */
+    
+    cursor: pointer; /* change cursor to "click"=pointer cursor */
+    outline: none; /* for button, outline shown on focus */
 
     /** content is too big and a little space,
     how should we handle the overflow?
      */
     overflow:hidden; /* hide */
     overflow:auto; /* show a scroll bar */
-}
-```
 
-So let's talk about margin and padding. **margin** is the gap with
-your tag the others **outside**. **Padding** is the gap between
-our tag and the components **inside**. As shown
-in the examples, values are
+    list-style-type: none; /* change list style 😅 */
+}</code>
+</pre>
+</details>
+<br>
 
-* if v : applied to all
-* if v1 v2 : v1 for Y, v2 for X
-* if v1 v2 v3 v4 : top right bottom left
+This is almost everything I used, and I'm considering myself to be a beginner. You should **at least know these ones**
 
-and v can be a value (check size), a percent, or auto.
+|Property|Effect|
+|----|----|
+|background| set the background (image/color/...)|
+|color| set the color of the text|
+|text-decoration: none;|remove the underline under a link|
+|display: none;| same as the attribute hidden in HTML|
+|display: flex;| Read [about flex](https://www.w3schools.com/csS/css3_flexbox.asp), it's wonderful 😍 |
+|border: size solid color;| add a border |
+|padding|gap between a component and it's border| 
+|margin|gap between a component and the "outside"|
 
 <hr class="sr">
 
