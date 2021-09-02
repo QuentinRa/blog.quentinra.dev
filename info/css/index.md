@@ -490,6 +490,15 @@ You can use that to hide/show some buttons, change some component's positions, .
 
 <hr class="sr">
 
+## Animations
+
+I never used CSS animations (hence you may complete this part), but here are some links. It looks fun, and I hope someone will scout this for us
+
+* [MDN - CSS animations](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
+* [CSS-tricks - Animation Libraries](https://css-tricks.com/css-animation-libraries/)
+
+<hr class="sl">
+
 ## Sources
 
 * <http://www.iut-fbleau.fr/sitebp/web/wim11/css/>
