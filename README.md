@@ -49,10 +49,13 @@ Last updated: 2021-08-27
 * [ ] empty alt in the Markdown should be checked/removed
 * [ ] add a width/height to images?
 * [ ] Nested courses files should have the title of the nested course and not the nesting course (ex: UML)
+* [ ] replace `span class="tms"` with "small"
 * **Features**
 * [ ] advanced search? (inside a course/category)
 * [ ] adding file history
 * [ ] adding submit issue
+* [ ] make CSS using SASS
+* [ ] make dark mode without dark-reader
 * **Content**
 * [ ] Index Google/Bing
 * [ ] add a pull request template
