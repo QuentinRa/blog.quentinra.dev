@@ -15,29 +15,55 @@ As always, you may learn JavaScript on [W3School](https://www.w3schools.com/Js/d
 
 <hr class="sl">
 
-## My first script
+## Introduction
 
-You can either write JavaScript inside the console
-or write a ``.js`` file. If you want to write
-some JavaScript for your website, then you can
-use a ``<script>`` tag.
+<table class="table border-dark table-striped table-bordered">
+<thead><tr><th>Inline JS 🤮</th><th>SCRIPT tag 🤢</th><th>External JS 😍</th></tr></thead>
+<tbody>
+<tr>
+<td>
+
+You can write JavaScript directly inside a component using attributes such as `onmouseover`, `onclick`, `onsubmit` etc.
+```HTML
+<p onmouseover="console.log('some code')">
+    ...
+</p>
+```
+</td>
+<td>
+
+You can use one (or more) tag &lt;script&gt;, and put the JS inside.
+
+```HTML
+<script>
+console.log('some code')
+</script>
+```
+</td>
+<td>
+
+You can write JS in an external write, and link it to the HTML with
 
 ```html
-<script>
-    // some javascript
-    alert('Hello, World')
-</script>
-<!-- or if you are using a file -->
-<script src="file.js"></script>
+<script src="/path/to/file.js"></script>
 ```
 
-with ``file.js``
+Same as I told you for CSS, this is the proper way to do (allows the use of CDN, JS in one place, etc.).
+
+</td>
+</tr>
+</tbody>
+</table>
+
+As you should have learned by now, you can see the JavaScript inside the console (Web course). You can either log using the console (👍) or using popups (👎)
 
 ```js
-// show a popup with 'Hello, World'
-alert('Hello, World')
-// print in the console 'Hello, World'
-console.log('Hello, World')
+console.log("message")
+console.error("error message")
+console.warn("warning message")
+console.info("message")
+// or you can use a popup (as we did a long time ago)
+alert('message')
 ```
 
 <hr class="sr">
