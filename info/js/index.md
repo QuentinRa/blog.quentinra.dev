@@ -206,6 +206,18 @@ You can use [Turn.js](http://turnjs.com/) to make a book with flippable pages bu
 
 <hr class="sl">
 
+## External resources
+
+**Guidelines**
+
+* [W3Schools - Guidelines](https://www.w3schools.com/js/js_conventions.asp) with [their best practices](https://www.w3schools.com/js/js_best_practices.asp) and the [common mistakes](https://www.w3schools.com/js/js_mistakes.asp)
+
+**CheatSheets**
+
+* none
+
+<hr class="sr">
+
 ## Sources
 
 * <https://www.javascript.com/learn/strings>
