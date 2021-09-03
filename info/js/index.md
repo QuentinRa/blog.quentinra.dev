@@ -48,7 +48,7 @@ You can write JS in an external write, and link it to the HTML with
 <script src="/path/to/file.js"></script>
 ```
 
-Same as I told you for CSS, this is the proper way to do (allows the use of CDN, JS in one place, etc.).
+Same as I told you for CSS, this is the proper way to do (allows the use of CDN, JS in one place, CSP etc.).
 
 </td>
 </tr>
@@ -62,9 +62,19 @@ console.log("message")
 console.error("error message")
 console.warn("warning message")
 console.info("message")
-// or you can use a popup (as we did a long time ago)
+// or you can use a popup
 alert('message')
 ```
+
+<details class="pt-3">
+<summary><b>HELP!</b> I wrote some JavaScript, but I don't see any changes!?</summary>
+
+They may be two problems **1**: your code isn't working, or **2**: your page is rendering using the cached JavaScript.
+
+* for **1**: check for errors in the console, try testing selectors in the console too
+* for **2**: <kbd>CTRL+R</kbd> or <kbd>CTRL+SHIFT+R</kbd> or <kbd>SHIFT+F5</kbd> or <kbd>CTRL+F5</kbd>.
+
+</details>
 
 <hr class="sr">
 
@@ -75,30 +85,6 @@ alert('message')
 * [Operators](syntax/operators.md)
 * [Structures](syntax/structures.md)
 * [Functions](syntax/function.md)
-
-You should use ``console.log`` to print
-something (in the console) like this
-
-```js
-let text = "text";
-console.log(text)
-console.log("text")
-// others
-console.error("text")
-console.warn("text")
-console.info("text")
-```
-
-**BEWARE**: sometimes you wrote some Javascript, go back
-to your page, F5, and then you don't see any changes
-(or your script isn't working). This may happens because
-your CSS/JS got cached by your browser so try updating
-the cache with 
-
-* CTRL+SHIFT+F5
-* CTRL+F5
-* CTRL+R
-* CTRL+SHIFT+R
 
 <hr class="sl">
 

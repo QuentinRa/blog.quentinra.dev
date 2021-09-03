@@ -2,7 +2,7 @@
 
 [Go back](../index.md#basic-syntax)
 
-As you could find in many other languages
+As you could find in many other languages, we got "if", "for", "switch", "do while", but we also have a "new" one, the for each (for i in).
 
 ```js
 // if condition is true, else/else if ...
@@ -44,10 +44,10 @@ for(var i = 0; /* ... */; i++) { /* ... */ }
 for(i = 0, j=0; i < ...; i++, j++) { /* ... */ }
 ```
 
-Also, remember that you can use
+Also, you should remember that you can use
 
-* ``break``: exit a loop
-* ``continue``: skip the code and loop again
+* `break`: exit a loop
+* `continue`: skip the code and loop again
 
 <hr class="sl">
 

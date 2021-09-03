@@ -2,7 +2,7 @@
 
 [Go back](../index.md#basic-syntax)
 
-You can use 
+You can use either let, var, or const to declare variables in JavaScript.
 
 ```js
 // a variable
@@ -31,12 +31,7 @@ for(var j=0; j<5; j++) console.log('test')
 j // ok, j=5
 ```
 
-Problems using var (at least as often as you will see
-it on the outdated examples in the web)
+The problems using var (at least as often as you will see it on the outdated examples in the web)
 
-* you forgot to declare a variable but since
-if was declared in the bloc xxx 3000 before, then
-you won't get an error
-* in a loop, var=address so if you are passing j to a
-function, you may or not encounter problems like $j$
-having the wrong value (if you were planning to reference $j$)
+* you forgot to declare a variable, but since if was declared in the bloc xxx, 3000 lines before, then you won't get an error
+* in a loop, var=address so if you are passing j to a function, you may have a problem with $j$ having the wrong value (if you were planning to reference $j$)

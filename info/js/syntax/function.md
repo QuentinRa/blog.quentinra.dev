@@ -2,8 +2,7 @@
 
 [Go back](../index.md#basic-syntax)
 
-A function is a bloc of code that you grouped
-and that you can call whenever you feel like it.
+A function is a bloc of code that you grouped and that you can call whenever you feel like it.
 
 ```js
 function pow(x) {
@@ -16,15 +15,13 @@ let result = pow(2);
 
 Notes
 
-* $x$ is the argument of the function (variable value given
-when the function is called)
-* $pow$ is the function name
-* $return$ is the keyword for your function
-to return a value (not required)
+* `x` is the argument of the function (variable value given when the function is called)
+* `pow` is the function name
+* `return` is the keyword for your function to return a value (not required)
 
 <hr class="sl">
 
-## Default argument value
+## Default value for parameters
 
 ```js
 function pow(x, k = 1) {
@@ -36,30 +33,22 @@ pow(5) // pow(5, 1) = 5
 pow(5, 2) // 5^2 = 25
 ```
 
-Note that the variables declared outside
-the function can't be used inside unless
-you used var.
+Note that the variables declared outside the function can't be used inside unless you used var.
 
-Note that the function above could also be written
-like this, but I think the one above is way better.
+Note that the function above could also be written like this, but I think the one above is way more readable.
 
 ```js
 function pow(x, k) {
     k = k || 1
     return x ** k;
 }
-
-pow(5) // pow(5, 1) = 5
 ```
 
 <hr class="sr">
 
 ## Anonymous functions
 
-Usually function are declared for the whole
-script, but you can declare a local function
-like this (for storing a function inside a variable,
-for passing a function as argument of function etc.)
+Usually function are declared for the whole script, but you can declare a local function like this (ex: to store a function inside a variable, and pass it as an argument later).
 
 ```js
 let pow = (x, k = 1) => {
@@ -72,16 +61,28 @@ let pow = (x, k = 1) => {
 ## Other stuff
 
 ```js
-let api = function() {
+let API = function() {
     // private nested function
     function _fetch(begin, end, section){
-        // ...
+        console.log("some code (1)")
     }
     
     // public
     return {
-        getAllNews:_fetch(0,10,"news"), 
-        getAllGames:_fetch(0,10,"games"),
+        getAllNews: function () {
+            return _fetch(0,10,"news")
+        }, 
+        getAllGames: function () {
+            console.log("some code (2)")
+            return _fetch(0, 10, "games");
+        },
+        API_KEY: "000000"
     }
 }
+API().API_KEY
+API().getAllNews()
+// some code (1)
+API().getAllGames()
+// some code (2)
+// some code (1)
 ```
