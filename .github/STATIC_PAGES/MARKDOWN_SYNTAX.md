@@ -88,7 +88,7 @@ You can nest a list inside another list.
 
 ## 6. Table
 
-Since **version 1.3.0**, you can use a **table**. The syntax is the same as in the [Markdown course](../tools/markdown/index.md#content-table). The HTML code is
+Since **version 1.3.0**, you can use a **table**. The syntax is the same as in the [Markdown course](../../tools/markdown/index.md#content-table). The HTML code is
 
 ```html
 <table class="table table-bordered table-striped border-dark"><thead><tr>
@@ -169,7 +169,7 @@ References, are not only the links that you used, but those that we may check if
 
 * **typos**
 
-You can use Grammarly or LanguageTool to check if they got [hints for you](../special/toolbox/writting/index.md).
+You can use Grammarly or LanguageTool to check if they got [hints for you](../../special/toolbox/writting/index.md).
 
 * **version 1.3.0**: the **title and the description are generated**
 
