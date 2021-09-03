@@ -103,16 +103,11 @@ Since **version 1.3.0**, you can use a **table**. The syntax is the same as in t
 
 And the result is 
 
-<table class="table table-bordered table-striped border-dark"><thead><tr>
-<!-- column names -->
-<th>Markdown</th><th>Description</th><th>HTML</th><th>Preview</th>
-</tr></thead><tbody>
-<!-- first row -->
-<tr><td>...</td><td>...</td><td>...</td><td>...</td></tr>
-<!-- ... -->
-</tbody></table>
+| Markdown | Description | HTML | Preview |
+|----------|----------|----------|----------|
+| ... | ... | ... | ... |
 
-* if you need a dark table, use the HTML, and replace "border-dark" with "table-dark"
+* **version 1.4**: dark tables removed in the light version
 
 <hr class="sep-both">
 
@@ -121,7 +116,7 @@ And the result is
 | Markdown | Description | HTML | Preview |
 |----------|----------|----------|----------|
 | ❌ | quote | &lt;q&gt;text&lt;/q&gt; | <q>text</q> |
-| `> text` | blockquote |  &lt;blockquote&gt;text&lt;/blockquote&gt; | <blockquote class="text-white">text</blockquote> |
+| `> text` | blockquote |  &lt;blockquote&gt;text&lt;/blockquote&gt; | <blockquote>text</blockquote> |
 | `- [ ] task` | checkbox (checked) | &lt;input disabled="" type="checkbox" checked&gt; | <input disabled="" type="checkbox"> (since v1.1.0) |
 | `- [x] task` | checkbox (checked) | &lt;input disabled="" type="checkbox"&gt; | <input disabled="" type="checkbox" checked> (since v1.1.0) |
 | [comment]: <> (...) | a comment | &lt;!-- ... --&gt; | ❌ |
@@ -166,7 +161,7 @@ But, you should note
 
 * you **can use HTML**
 
-We are allowing HTML, but note using style is not recommended, while scripts aren't allowed. <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank" rel="noopener noreferrer">Bootstrap</a> classes are allowed.
+We are allowing HTML, but note that using style is not recommended (as it may be disabled later), while scripts aren't allowed 🙄. <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank" rel="noopener noreferrer">Bootstrap 5</a> classes are allowed, and you may use [our css rules](https://github.com/memorize-code/memorize-references/tree/main/.assets/css).
 
 * **add references**
 
@@ -174,10 +169,14 @@ References, are not only the links that you used, but those that we may check if
 
 * **typos**
 
-You can use Grammarly or LanguageTool to check if they got [advices for you](../special/toolbox/writting/index.md).
+You can use Grammarly or LanguageTool to check if they got [hints for you](../special/toolbox/writting/index.md).
 
-* since v1.3.0, the **title** and the **description** are generated
+* **version 1.3.0**: the **title and the description are generated**
 
 Please, try to make it so that the title of a page is good, as it's the one shown by the search engines. The first paragraph should be long (at least 50 characters) and a description of the page, as it will be used for the description of the page, shown by the search engines.
+
+* **version 1.3.0**: using **emojis** is a good practice
+
+You may [learn more here](../../special/toolbox/desktop/emojis.md). You should use them to make the content less monotone, and help the reader focusing on what he needs to remember. 
 
 </div>

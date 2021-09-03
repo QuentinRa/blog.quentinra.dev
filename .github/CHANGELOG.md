@@ -24,6 +24,7 @@
 * `internal`: static pages are now hosted in this repository
 * `rendering`: Markdown tables border is now dark
 * `rendering`: inline code is now blue (was pink/red)
+* `rendering`: removing dark tables in the light version
 
 **Fixed**
 
