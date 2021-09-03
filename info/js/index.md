@@ -242,10 +242,12 @@ You can use [Turn.js](http://turnjs.com/) to make a book with flippable pages bu
 **Guidelines**
 
 * [W3Schools - Guidelines](https://www.w3schools.com/js/js_conventions.asp) with [their best practices](https://www.w3schools.com/js/js_best_practices.asp) and the [common mistakes](https://www.w3schools.com/js/js_mistakes.asp)
+* [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+* [clean-code-javascript](https://github.com/elsewhencode/project-guidelines) (😍, I didn't read everything, but I took note of a lot of things for later)
 
 **CheatSheets**
 
-* none
+Any cheatsheet is longer and more complete than this course 😭. Still, this one [javascript-cheatsheet](https://raw.githubusercontent.com/iLoveCodingOrg/javascript-cheatsheet/master/js-cheatsheet.pdf) ([source](https://github.com/iLoveCodingOrg/javascript-cheatsheet)) is quite good and the most readable of them. This [one is quite good too (codewithharry)](https://www.codewithharry.com/blogpost/javascript-cheatsheet), and this [one is good (pythoncheatsheet)](https://javascript.pythoncheatsheet.org/).
 
 <hr class="sr">
 
@@ -263,3 +265,7 @@ You can use [Turn.js](http://turnjs.com/) to make a book with flippable pages bu
 * <http://pgsql.pedago.ensiie.fr/~vitera.y/cours/ipw/poly/03-applications-interactives.pdf>
 * <https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript>
 * <https://attacomsian.com/blog/xhr-post-request>
+* <https://javascript.pythoncheatsheet.org/>
+* <https://mbeaudru.github.io/modern-js-cheatsheet/>
+
+If would really want to read everything [jframer](https://github.com/jfarmer) made, but it didn't even start yet (🙃). Maybe you will?
