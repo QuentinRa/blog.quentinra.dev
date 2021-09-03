@@ -24,7 +24,7 @@ ajax.onreadystatechange = () => {
         }
     }
 }
-ajax.open("GET", URL, true);
+ajax.open("GET", "https://some.url/", true);
 ajax.send();
 ```
 
@@ -35,7 +35,7 @@ ajax.send();
 ```js
 const ajax = new XMLHttpRequest();
 ajax.onreadystatechange = /* .... */;
-ajax.open("POST", URL, true);
+ajax.open("POST", "https://some.url/", true);
 // if data = JSON.stringify(data)
 // ajax.setRequestHeader("Content-type", "application/json");
 // anyways, data must be a string
@@ -56,7 +56,7 @@ xhttp.send("name=value&name2=value2");
 ```js
 const ajax = new XMLHttpRequest();
 ajax.onreadystatechange = /* .... */;
-ajax.open("PUT", URL, true);
+ajax.open("PUT", "https://some.url/", true);
 // same note as above
 ajax.send(data);
 ```
@@ -68,6 +68,6 @@ ajax.send(data);
 ```js
 const ajax = new XMLHttpRequest();
 ajax.onreadystatechange = /* .... */;
-ajax.open("DELETE", URL, true);
+ajax.open("DELETE", "https://some.url/", true);
 ajax.send();
 ```
