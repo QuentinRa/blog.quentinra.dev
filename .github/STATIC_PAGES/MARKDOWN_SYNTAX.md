@@ -6,7 +6,7 @@
 
 This page is a **summary of the syntax that we are using** in Markdown, and how it is rendered **on this website**.
 
-**Version**: <a href="https://github.com/lgs-games/memorize/tree/master/.github/SATIC_PAGES/MARKDOWN_SYNTAX.md" target="_blank" rel="noopener noreferrer">1.3.0</a>
+**Version**: <a href="https://github.com/lgs-games/memorize/tree/master/.github/SATIC_PAGES/MARKDOWN_SYNTAX.md" target="_blank" rel="noopener noreferrer">1.4.0</a> (2021-09-03)
 
 <div class="table-of-contents w-25 mx-auto">
 
@@ -121,12 +121,14 @@ And the result is
 | Markdown | Description | HTML | Preview |
 |----------|----------|----------|----------|
 | ❌ | quote | &lt;q&gt;text&lt;/q&gt; | <q>text</q> |
-| `> text` | blockquote |  &lt;blockquote&gt;text&lt;/blockquote&gt; | <blockquote>text</blockquote> |
+| `> text` | blockquote |  &lt;blockquote&gt;text&lt;/blockquote&gt; | <blockquote class="text-white">text</blockquote> |
 | `- [ ] task` | checkbox (checked) | &lt;input disabled="" type="checkbox" checked&gt; | <input disabled="" type="checkbox"> (since v1.1.0) |
 | `- [x] task` | checkbox (checked) | &lt;input disabled="" type="checkbox"&gt; | <input disabled="" type="checkbox" checked> (since v1.1.0) |
 | [comment]: <> (...) | a comment | &lt;!-- ... --&gt; | ❌ |
-| ❌ | a note | &lt;span class="tms"&gt;a note&lt;/span&gt; | 	<span class="tms">a note</span> |
+| ❌ | a note | &lt;small&gt;a note&lt;/small&gt; | 	<small>a note</small> |
 | `---` | horizontal separator | &lt;hr&gt;| ❌ |
+
+* **version 1.4.0**: `<span class="tms">a note</span>` was replaced with `<small>a note</small>`
 
 <hr class="sep-both">
 
