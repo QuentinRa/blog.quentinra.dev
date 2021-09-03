@@ -15,7 +15,7 @@ As always, you may learn JavaScript on [W3School](https://www.w3schools.com/Js/d
 > 
 > Some browsers <s>may</s> do not support some features (ex: [fetch](https://caniuse.com/fetch)), and you may like [polyfill](https://polyfill.io/v3/) that try to recreate the missing features. You can pick [which ones here](https://polyfill.io/v3/url-builder/).
 > 
-> You may use [JSDoc](https://jsdoc.app/) for your documentation (not tested).
+> You may use [JSDoc](https://jsdoc.app/) for your **documentation** (not tested). You may use [mocha](https://mochajs.org/) or [jasmine](https://jasmine.github.io/) to write **tests**. I enjoyed mocha (use Assert), but jasmine (does not use Assert) looks promising <small>(install npm+the library globally (-g), then simply enter the command as Node users do)</small>.
 
 <hr class="sl">
 

@@ -134,6 +134,8 @@ see headers: curl -I https://memorize.be/
   - https://www.geeksforgeeks.org/apropos-command-in-linux-with-examples/
   - nmap google.fr -p 0-65535 -O -A (port fait quoi)
   - Zmap
+- typescript
+  - https://github.com/labs42io/clean-code-typescript
 
 <hr>
 
