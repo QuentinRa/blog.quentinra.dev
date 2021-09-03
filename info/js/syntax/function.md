@@ -54,9 +54,24 @@ let pow = (x, k = 1) => {
 }
 ```
 
+I will use this syntax a lot!
+
+```js
+// both are the same
+let example = () => 5;
+let example = () => { return 5 };
+// both are the same
+let example = v => 5;
+let example = (v) => 5;
+```
+
 <hr class="sl">
 
-## Other stuff
+## Other stuffs
+
+You should look at **Closures** that are are a well explained [on W3School](https://www.w3schools.com/js/js_function_closures.asp).
+
+You should also look at **nested functions**, as explained [on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#nested_functions_and_closures).
 
 ```js
 let API = function() {
