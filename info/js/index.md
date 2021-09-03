@@ -94,22 +94,49 @@ You may use this too, but for some, the syntax above will be enough
 <table class="table border-dark table-bordered table-striped">
 <tr><th class="text-center">Other notes about the Language</th></tr>
 <tr><td>
-The semicolon <code>;</code> at the end of a line is optional. You may use it if you make more than one expression per line.
+
+The <b>semicolon</b> <code>;</code> at the end of a line is optional. You may use it if you make more than one expression per line.
 </td></tr>
 <tr>
 <td>
-You can make comments using <code>/* a comment */</code> or <code>// a comment</code> as you would in Java/C.
+You can make <b>comments</b> using <code>/* a comment */</code> or <code>// a comment</code> as you would in Java/C.
 </td>
 </tr>
 <tr>
 <td>
-Some parts in JavaScript are following the properties of functional languages.
+Some parts in JavaScript are following the properties of <b>functional languages</b>.
 
 * if a function does not return something, then it returns `undefined` (=a function must return a value)
 * everything is a value
 * a function can take a function, returns a function (functions are first-class citizen)
 * [read more here](https://opensource.com/article/17/6/functional-javascript)
 
+</td>
+</tr>
+<tr>
+<td>If you are <b>tired of concatenating variables</b> like this <code>"a="+a</code>, then you can use <code>`a=${a}`</code>. Everything inside the <code>{}</code> will be evaluated when making the string, as long as you used <code>`</code> (inverted quote).</td>
+</tr>
+<tr>
+<td>You can replace a <b>check for undefined/null</b>, with the following code, but <b>the variable must have been declared</b>
+
+```js
+let request = undefined; // or null
+// Nullish coalescing operator
+// is request null/undefined, evaluated as 200
+let status = request ?? 200
+// same as
+// status = request || 200
+
+// Optional chaining
+// if error is undefined, error?.code = undefined
+status = request?.code ?? 200
+```
+</td>
+</tr>
+<tr>
+<td>
+
+You can add ["use strict"](https://www.w3schools.com/js/js_strict.asp) inside a file/function to disallow the use of non-declared variables, and throw errors instead of ignoring "bad syntax".
 </td>
 </tr>
 </table>
