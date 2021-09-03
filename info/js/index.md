@@ -86,16 +86,17 @@ They may be two problems **1**: your code isn't working, or **2**: your page is 
 * [Structures](syntax/structures.md)
 * [Functions](syntax/function.md)
 
+You may use this too, but for some, the syntax above will be enough
+
+* [Exceptions](syntax/exceptions.md)
+* [Classes and objects](syntax/classes.md)
+
 <hr class="sl">
 
 ## Advanced syntax
 
-You may use this, but the basic syntax is enough
-if you are starting JavaScript, you may come back
-later if you are motivated.
+Advanced do not mean more complex, it mean that you may not use this right now.
 
-* [Exceptions](syntax/exceptions.md)
-* [Classes and objects](syntax/classes.md)
 * [Spread syntax](syntax/spread.md)
 
 <hr class="sr">

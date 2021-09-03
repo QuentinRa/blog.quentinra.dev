@@ -1,10 +1,8 @@
 # Exceptions
 
-[Go back](..#advanced-syntax)
+[Go back](../index.md#basic-syntax)
 
-If your code may produce and error, you will most likely
-have to handle exceptions. An exception is raised ("thrown")
-went something unexpected is happening, and most likely an error.
+If your code may produce and error, you will most likely have to handle exceptions. An exception is raised ("thrown") went something unexpected is happening, and that's most likely an error.
 
 * Error
 * ReferenceError
@@ -13,9 +11,7 @@ went something unexpected is happening, and most likely an error.
 * SyntaxError
 * ....
 
-You can raise one using **throw** and catch one using
-**catch** meaning that you will handle the unexpected behavior
-(ex: conversion failed, ...)
+You can raise one using **throw** and catch one using **catch** meaning that you will handle the unexpected behavior (ex: conversion failed, ...)
 
 ```js
 try {
