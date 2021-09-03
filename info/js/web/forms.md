@@ -30,6 +30,19 @@ function checkForm(form){
 }
 ```
 
+Some are using FormData to handle the form, at least when handling API requests (I'm using the syntax above)
+
+```js
+let formData  = new FormData(form);
+// add a value
+formData.append('key', 'value')
+formData.get('key') // get a value by name="key"
+// iterate
+for(let [key, value] of formData) {}
+// to array
+const formDataArray = [...formData.entries()];
+```
+
 <hr class="sr">
 
 ## Custom errors
@@ -60,5 +73,3 @@ function checkForm(form){
     return false;
 }
 ```
-
-
