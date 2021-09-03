@@ -1,6 +1,6 @@
 # JavaScript
 
-JavaScript (JS) base is made of the scripting language ECMAScript. We are currently in **ECMAScript2021** (v12). The most used version of JavaScript is **ECMAScript6** (2015). In the ancient times, JQuery was a popular library adding a lot of useful stuffs in Javascript, but now quite a lot of these are directly served in Javascript, so modern developers aren't using as often as before <span class="tms">(because removing it makes the website faster, increasing both performances and SEO)</span>. For instance, Boostrap (the famous CSS framework) removed the jQuery dependency in version 5 <span class="tms">(dropping Internet explorer support in the meantime)</span>.
+JavaScript (JS) base is made of the scripting language ECMAScript. We are currently in **ECMAScript2021** (v12). The most used version of JavaScript is **ECMAScript6** (2015). In the ancient times, JQuery was a popular library adding a lot of useful stuffs in Javascript, but now quite a lot of these are directly served in Javascript, so modern developers aren't using as often as before <small>(because removing it makes the website faster, increasing both performances and SEO)</small>. For instance, Boostrap (the famous CSS framework) removed the jQuery dependency in version 5 <small>(dropping Internet explorer support in the meantime)</small>.
 
 * Learn the syntax
 * How to validate a form (errors, autocompletion, ...)
@@ -90,6 +90,29 @@ You may use this too, but for some, the syntax above will be enough
 
 * [Exceptions](syntax/exceptions.md)
 * [Classes and objects](syntax/classes.md)
+
+<table class="table border-dark table-bordered table-striped">
+<tr><th class="text-center">Other notes about the Language</th></tr>
+<tr><td>
+The semicolon <code>;</code> at the end of a line is optional. You may use it if you make more than one expression per line.
+</td></tr>
+<tr>
+<td>
+You can make comments using <code>/* a comment */</code> or <code>// a comment</code> as you would in Java/C.
+</td>
+</tr>
+<tr>
+<td>
+Some parts in JavaScript are following the properties of functional languages.
+
+* if a function does not return something, then it returns `undefined` (=a function must return a value)
+* everything is a value
+* a function can take a function, returns a function (functions are first-class citizen)
+* [read more here](https://opensource.com/article/17/6/functional-javascript)
+
+</td>
+</tr>
+</table>
 
 <hr class="sl">
 
