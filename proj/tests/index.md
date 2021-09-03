@@ -44,7 +44,7 @@ So you might see one of these words often
 
 * **Preconditions**: the conditions that must be valid before the call (attributes, parameters, ...)
 * **Postconditions**: the conditions that will be valid after the execution of our code
-* **Invariant**: something that won't be changed <span class="tms"> (ex: when counting elements in a list, the size of the list before and after the call must be the same).<span>  
+* **Invariant**: something that won't be changed <small> (ex: when counting elements in a list, the size of the list before and after the call must be the same).</small>  
 
 You will have to remember these while analyzing your code to find some tests. The robustness of a function is determined by the number of preconditions that you verified to make sure that, in all cases, your preconditions are valid, so your code did its job.
 
@@ -105,7 +105,7 @@ These are the main questions/topics that you might want to check.
 
 We will now introduce the concept of **assertions**. An assertion (assert) is something that returns true if what we are asserting is true, and raising an exception/failing otherwise.
 
-You will usually write a lot of classes/files, having methods/functions usually called **testWhatIamTesting** and inside, you are writing some code using assertions <span class="tms">(such as ``assertTrue(a_condition_here))</span>.
+You will usually write a lot of classes/files, having methods/functions usually called **testWhatIamTesting** and inside, you are writing some code using assertions <small>(such as ``assertTrue(a_condition_here))</small>.
 
 You can now check out your language course, as it should be explained how to write these assertions.
 

@@ -54,7 +54,7 @@ To summarize what was written in the WEB course,
 <details class="pb-3">
 <summary><b>How do I "run" HTML code?</b></summary>
 
-Create a file `index.html` (ex: with the content above), drag and drop it inside a browser, and you should see your page. You don't need a server as your code is fully in HTML (no PHP). You can change the name of the file, but the main file of your website must be called `index`. Your browser isn't "executing" code, it's simply rendering the code it received <span class="tms">(the URL is a sort of `file://path/to/a/file.html`, and as we learned before, if there is no file in the URL, and you got a index.html, then it's loaded instead)</span>.
+Create a file `index.html` (ex: with the content above), drag and drop it inside a browser, and you should see your page. You don't need a server as your code is fully in HTML (no PHP). You can change the name of the file, but the main file of your website must be called `index`. Your browser isn't "executing" code, it's simply rendering the code it received <small>(the URL is a sort of `file://path/to/a/file.html`, and as we learned before, if there is no file in the URL, and you got a index.html, then it's loaded instead)</small>.
 
 You can also try [an online editor such as this one](https://dev.codehs.com/editor/new/html). If you want something cleaner (using a server, http/https instead of file), then refer to the PHP course (this isn't complicated).
 </details>
@@ -99,16 +99,16 @@ The first line is `<!doctype html>` (or DOCTYPE), and the code is inside a tag c
 
 * `header`: the top of your website, it may contains the navbar, you can put one in each aside/section
 * `nav`: for your navbar
-* `section`: a section of your website <span class="tms">(you can have many of them)</span>
-* `aside`: some content aside from your main content in your section <span class="tms">(ex: your contact information etc.)</span>
+* `section`: a section of your website <small>(you can have many of them)</small>
+* `aside`: some content aside from your main content in your section <small>(ex: your contact information etc.)</small>
 * `footer`: the footer of your website
 </details>
 
 <details class="pb-3">
 <summary>These two are less well-know, but you should learn them too [...]</summary>
 
-* `main`: the main content of your page <span class="tms">(one per page)</span>
-* `article`: a part of the website that may be extracted from the website <span class="tms">(you may split a page into multiples articles with a header, a footer, and some sections)</span>
+* `main`: the main content of your page <small>(one per page)</small>
+* `article`: a part of the website that may be extracted from the website <small>(you may split a page into multiples articles with a header, a footer, and some sections)</small>
 * `address`: to wrap your contact information
 </details>
 

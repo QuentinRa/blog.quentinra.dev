@@ -23,7 +23,7 @@ The IDEs are free for [students](https://www.jetbrains.com/shop/eform/students) 
 
 * Important size/ram consumption
 
-You may install many IDEs, 3 of them are taking around 10Gb and around 700Mb per download. The RAM consumption is somewhat important (sometimes could take 1Go~2Go). If you do not have a good computer, you may use **Projector**, which allow you to use a remote IDE <span class="tms">(not tested, it seems you need another computer "the server" running your IDE, while your slow computer will be "the client")</span>.
+You may install many IDEs, 3 of them are taking around 10Gb and around 700Mb per download. The RAM consumption is somewhat important (sometimes could take 1Go~2Go). If you do not have a good computer, you may use **Projector**, which allow you to use a remote IDE <small>(not tested, it seems you need another computer "the server" running your IDE, while your slow computer will be "the client")</small>.
 
 * auto-install
 
@@ -34,7 +34,7 @@ The installation of Java, JavaFX, etc. is simplified and could be directly done 
 Their IDEs are using the same interface, almost always the same shortcuts, and in all of them, you got the "CodeWithMe" feature (allowing you to invite a friend on your computer to code with you).
 
 * random features
-  * **the code hints/advice** <span class="tms">(that's the **only** reason why I would recommend their IDEs: their hints are quite good and better than in VSCode for instance)</span>
+  * **the code hints/advice** <small>(that's the **only** reason why I would recommend their IDEs: their hints are quite good and better than in VSCode for instance)</small>
   * git integration and colors for files
   * generating UML from your code
   * basic spelling checker

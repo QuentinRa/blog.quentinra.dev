@@ -43,7 +43,7 @@ I created a simple PHP template [here](https://github.com/memorize-code/web-proj
 * composer file (if needed)
 * translations
 * tests
-* framework-like <span class="tms">(simplified version, inspired of CodeIgniter)</span>
+* framework-like <small>(simplified version, inspired of CodeIgniter)</small>
 
 **2018/2019 template**
 

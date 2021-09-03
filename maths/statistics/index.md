@@ -183,7 +183,7 @@ This is too complex for me, I made too many mistakes, so I removed everything. Y
 
 ## Regression
 
-The linear regression (`Regression linéaire`) is a line maximizing the distance between each point of the distribution and the line <span class="tms">(minimizing the sum of the square vertical distances between our line and a point)</span>
+The linear regression (`Regression linéaire`) is a line maximizing the distance between each point of the distribution and the line <small>(minimizing the sum of the square vertical distances between our line and a point)</small>
 
 The linear regression equation is $Y = a + b X + residual$. If $Y \not\in \mathbb{R}$ but in $Y \in [0,1]$, then the residual is $0$, and you should look at logistic regression.
 

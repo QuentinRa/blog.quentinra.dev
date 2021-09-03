@@ -1,6 +1,6 @@
 # Optimization
 
-We know in a graph how to find the shortest path <span class="tms">(graph=circles and lines linking them, for instance cities=circles and lines=roads)</span>. Now we want to do the same thing with a **function** (ex: a pricing function), and we want to know the highest (**maximum**) or the lowest (**minimum**) value that this function would take (they are called **extremum**).
+We know in a graph how to find the shortest path <small>(graph=circles and lines linking them, for instance cities=circles and lines=roads)</small>. Now we want to do the same thing with a **function** (ex: a pricing function), and we want to know the highest (**maximum**) or the lowest (**minimum**) value that this function would take (they are called **extremum**).
 
 So here you will have
 

@@ -66,7 +66,7 @@ another one, then here is some help
 * <span>
     \(
         \rho(A) \le ||A||
-    \)</span> <span class="tms">(rho is the highest eigenvalue)</span>
+    \)</span> <small>(rho is the highest eigenvalue)</small>
 * <span>
     \(
         ||Ax|| \le |||A||| * ||x||

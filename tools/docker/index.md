@@ -110,7 +110,7 @@ Less commonly used
 * [USER](tags/user.md): create user
 * [LABEL](tags/label.md): image metadata
 * [VOLUME](tags/volume.md): create a mounting point 
-<span class="tms">(such as `/mnt` for WSL)</span>
+<small>(such as `/mnt` for WSL)</small>
 
 You may use
 

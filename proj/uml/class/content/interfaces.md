@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-As you memorized, you can't generalize more than one class. If you want to make sure a class has some operations, then you should use interfaces, because **a class can implement many interfaces** <span class="tms">(a class $C$ implementing an interface $I$ means that $C$ is inheriting $I$)</span>.
+As you memorized, you can't generalize more than one class. If you want to make sure a class has some operations, then you should use interfaces, because **a class can implement many interfaces** <small>(a class $C$ implementing an interface $I$ means that $C$ is inheriting $I$)</small>.
 
 An interface can only have
 
@@ -10,7 +10,7 @@ An interface can only have
 * **public methods** (instance methods)
 * **public static methods** (class methods)
 * constructors not allowed
-* <span class="tms">(in fact, an interface can have default methods and private methods too)</span>
+* <small>(in fact, an interface can have default methods and private methods too)</small>
 
 <hr class="sl">
 

@@ -194,7 +194,7 @@ There are names for graphs having some properties
                 <code>cycle/chaine élémentaire</code>
             </td>
             <td>
-                A cycle/circuit in which each traversed vertex is only traversed once. <span class="tms">If the use of path is disturbing for you, then read the RandomFolkNote at the end of the course.</span>
+                A cycle/circuit in which each traversed vertex is only traversed once. <small>If the use of path is disturbing for you, then read the RandomFolkNote at the end of the course.</small>
             </td>
         </tr>
         <tr>

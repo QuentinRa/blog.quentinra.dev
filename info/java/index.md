@@ -93,8 +93,8 @@ If we summarize abstract class and interfaces
 | --- | --- | --- |
 | Constructors | Can have constructors, but you can't write `new AbstractClass()` | Can't have constructors. |
 | Attributes | It's like in a normal class. | Only public class constants. |
-| methods (instance) | It's like in a normal class, but some methods can be abstract. | abstract or concrete (JDK8) methods, public only <span class="tms">(private allowed since JDK9)</span>. |
-| methods (class) | concrete, all visibilities modifiers. | concrete, public only <span class="tms">(private allowed since JDK9)</span>. |
+| methods (instance) | It's like in a normal class, but some methods can be abstract. | abstract or concrete (JDK8) methods, public only <small>(private allowed since JDK9)</small>. |
+| methods (class) | concrete, all visibilities modifiers. | concrete, public only <small>(private allowed since JDK9)</small>. |
 
 **Practice**
 

@@ -56,7 +56,7 @@ The function is returning the least value we can give to a vertex. If this is $0
 * then until you gave a value to everyone,
   * go to the successors
   * give them the lowest value not taken by a predecessor ($\ge 0$)
-  * You can change a vertex value if the constraint above is not respected <span class="tms"> (a vertex took the same value as an adjacent vertex)</span>
+  * You can change a vertex value if the constraint above is not respected <small> (a vertex took the same value as an adjacent vertex)</small>
 
 The Grundy function result is not unique, **unless** you sorted the vertices beforehand. What you will usually do is sorting the vertices by the number of successors.
 

@@ -13,7 +13,7 @@ We are calling chromatic number (`nombre chromatique`) $\gamma(G)$ (gamma) or $\
 * if a graph is bipartite: $\gamma(G)=2$
 * if a graph is complete: $\gamma(G)=|V|$
 * minoring: $\gamma(G) \ge |\text{longest_clique_of_G}|$
-* majoring: $\gamma(G) \le d_{max}(G)+1$ <span class="tms">(max degree+1)</span>
+* majoring: $\gamma(G) \le d_{max}(G)+1$ <small>(max degree+1)</small>
 
 The solution is said to be optimal when we can't find a better one.
 
@@ -56,7 +56,7 @@ Once you are done, the degree of the smallest clique is the chromatic number. No
 
 ![](images/Tensei_Shitara_dai_Nana_Ouji_dattanode,_Kimamani_Majutsu_o_Kiwamemasu.png)
 
-Source: Tensei Shitara dai Nana Ouji dattanode, Kimamani Majutsu o Kiwamemasu <span class="tms">(alias: the Trap)</span>.
+Source: Tensei Shitara dai Nana Ouji dattanode, Kimamani Majutsu o Kiwamemasu <small>(alias: the Trap)</small>.
 
 <hr class="sl">
 

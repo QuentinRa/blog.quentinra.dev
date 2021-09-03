@@ -18,7 +18,7 @@ We got the second formula with [Huygens theorem](https://fr.wikipedia.org/wiki/T
 
 * $V(X) = \sigma^2$ with sigma the standard deviation/`écart-type`
 * $V(\lambda X^2) = \lambda^2 V(X)$
-* $V(c) = 0$ <span class="tms">(or if $V(X)=0$ then X is a constant)</span>
+* $V(c) = 0$ <small>(or if $V(X)=0$ then X is a constant)</small>
 * $V(a + \lambda X^2) = \lambda^2 V(X)$
 * $V(X + Y) = V(X) + V(Y) - 2cov(XY)$
 * $V(X)$ is also called [the second central moment](https://en.wikipedia.org/wiki/Moment_(mathematics)#Variance)

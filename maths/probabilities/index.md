@@ -2,9 +2,9 @@
 
 Probabilities are a way to evaluate how much likely something is true, or likely to happens. For instance, if you're playing dice, you may want to know how much likely it is that you got 3 times "6" in a row.
 
-* $\omega$ (small-omega) is an outcome possible <span class="tms">(such as 1 for a dice)</span>
-* $\Omega$ (big-omega) is a set of all possible outcomes, also called sample/probability space <span class="tms">(such as {1,2,3,4,5,6} for a dice or {$\ x \mid x \in [1,6]\ $})</span>.
-* $A$ is an event included in <span>$\Omega$. <span class="tms">It's almost everytime defined by a sentence like "the result is pair" giving a set like {2,4,6} for a dice.</span>
+* $\omega$ (small-omega) is an outcome possible <small>(such as 1 for a dice)</small>
+* $\Omega$ (big-omega) is a set of all possible outcomes, also called sample/probability space <small>(such as {1,2,3,4,5,6} for a dice or {$\ x \mid x \in [1,6]\ $})</small>.
+* $A$ is an event included in <span>$\Omega$. <small>It's almost everytime defined by a sentence like "the result is pair" giving a set like {2,4,6} for a dice.</small>
 * $\overline{A}$ or $A^c$ means the opposite event of A, called complementary event and read as "not A".
 * $\emptyset$ (empty set) means an impossible event.
 * $Card(E) \Leftrightarrow |E| \Leftrightarrow \\#E$ is the cardinal of a set E, meaning the number of elements.
@@ -43,7 +43,7 @@ When $\Omega$ is a finite set, then we are using discrete probabilities. That me
 
 We are defining $\mathbb{P}(X=k)$ the probability that a discrete random variable (`variable aléatoire discrète`, v.a.d.) $X$ is taking the value $k$.
 
-* We could write $P(X = 1) = y$ for a dice where y is the probability that we got 1 (<span class="tms">it's 1 out of 6 so y=1/6</span>).
+* We could write $P(X = 1) = y$ for a dice where y is the probability that we got 1 (<small>it's 1 out of 6 so y=1/6</small>).
 * we may add a number $w$: $\mathbb{P}(X_w=k)$ if someone is using lazy naming like $X_1$, $X_2$, ...
 
 We are calling **mass function** (`Fonction de masse`) the function giving us the value for $\mathbb{P}(X=k)$. A mass function is valid if
@@ -88,7 +88,7 @@ or\ \mathbb{P}(x \ge b) = \mathbb{P}(x \gt b) = \int_{-\infty}^{b} f_X(x)dx
 
 The density function **is valid if**
 
-* $\int_{-\infty}^{+\infty} f_X(x)dx = 1$. <span class="tms">Sometimes you have some restrictions like $\lambda>0$, so you can reduce the interval.</span>
+* $\int_{-\infty}^{+\infty} f_X(x)dx = 1$. <small>Sometimes you have some restrictions like $\lambda>0$, so you can reduce the interval.</small>
 * $\forall{x},\ f_X(x) \ge 0$
 * $f_X$ is continuous
 

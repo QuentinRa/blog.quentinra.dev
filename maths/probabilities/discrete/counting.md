@@ -84,4 +84,4 @@ If we have $n=2$ having $[1,5,7]$ so $k=3$ then we have
 C^{3-1}_{2+3-1} = 6
 @
 
-The 6 results are {$1,5$}, {$1,7$} and {$5,7$} <span class="tms">(remember that {$1,5$} is the same as {$(1,5),(5,1)$}).</span>
+The 6 results are {$1,5$}, {$1,7$} and {$5,7$} <small>(remember that {$1,5$} is the same as {$(1,5),(5,1)$}).</small>

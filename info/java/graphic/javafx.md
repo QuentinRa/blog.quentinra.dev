@@ -28,10 +28,10 @@ Simply drag and drop them, either in the **hierarchy** or in the **preview** tab
 You may directly edit the properties of a components by clicking on it then inspecting them in the **inspector tab**.
 
 * Properties
-  * Disable: to disable a component <span class="tms">(like a button)</span>
+  * Disable: to disable a component <small>(like a button)</small>
   * Node orientation: you may do some tricks here if align does not work
-  * Cursor: change the cursor on a button <span class="tms">(for instance)</span>
-  * Style: add some css <span class="tms">(explained later)</span>
+  * Cursor: change the cursor on a button <small>(for instance)</small>
+  * Style: add some css <small>(explained later)</small>
 * Layout
   * margin: spacing between your component and the outside
   * padding: make as margin but with the component border

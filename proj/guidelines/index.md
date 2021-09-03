@@ -139,11 +139,7 @@ After discovering this [repository](https://github.com/trekhleb/state-of-the-art
 <tr>
 <td>
 
-`do not mix naming styles` (camelCase, snake_case)
-unless it's intended <span class="tms">
-(like snake_case_CamelCase, that
-may be used for function's names in C)
-</span>
+`do not mix naming styles` (camelCase, snake_case) unless it's intended <small>(like snake_case_CamelCase, that may be used for function's names in C)</small>
 </td>
 <td>remove unused code/variables (NO "for later")</td>
 <td>add a LICENSE file (even if it's MIT).</td>
@@ -180,7 +176,7 @@ try merging their conditions.</td>
 <td></td>
 <td>
 check the argument types <br>
-<span class="tms">(if needed, the language matter)</span>
+<small>(if needed, the language matter)</small>
 </td>
 <td></td>
 </tr>

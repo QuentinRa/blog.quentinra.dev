@@ -5,7 +5,7 @@
 Moments are the expected values, the variance, Skewness, and Kurtosis. As you should have seen in the probability course,
 
 * $\mathbb{E}(X) = \mathbb{E}[X^1]$ is the first moment
-* $V(X) = \mathbb{E}[X^2] - \mathbb{E}[X]^2$ is the second centered moment <span class="tms">(centered because it's the second moment minus the expected value)</span>
+* $V(X) = \mathbb{E}[X^2] - \mathbb{E}[X]^2$ is the second centered moment <small>(centered because it's the second moment minus the expected value)</small>
 
 <hr class="sl">
 

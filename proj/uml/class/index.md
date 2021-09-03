@@ -15,7 +15,7 @@ When we are giving values to our attributes, we are creating an **instance** of 
 
 Notes
 
-* The class' name must starts with an uppercase, using CamelCase syntax <span class="tms">(upperCamelCase)</span>
+* The class' name must starts with an uppercase, using CamelCase syntax <small>(upperCamelCase)</small>
 * The object's name is <u>underlined</u>, you can think of this name as the **variable name** storing this object
 
 <hr class="sr">
@@ -56,7 +56,7 @@ An operation is the UML name for a method/function. You will have
 * some arguments
   * separated by a comma
   * name:type
-* a return type <span class="tms">(none isn't the same as void, like a Java constructor isn't returning void but "nothing")</span>
+* a return type <small>(none isn't the same as void, like a Java constructor isn't returning void but "nothing")</small>
 
 **Ex**: ``+ getName() : String`` is
 a public ("+") operation named "getName" taking no arguments ("()") and returning a String (": String").
