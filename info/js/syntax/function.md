@@ -33,8 +33,6 @@ pow(5) // pow(5, 1) = 5
 pow(5, 2) // 5^2 = 25
 ```
 
-Note that the variables declared outside the function can't be used inside unless you used var.
-
 Note that the function above could also be written like this, but I think the one above is way more readable.
 
 ```js
@@ -46,7 +44,7 @@ function pow(x, k) {
 
 <hr class="sr">
 
-## Anonymous functions
+## Anonymous/Arrow functions
 
 Usually function are declared for the whole script, but you can declare a local function like this (ex: to store a function inside a variable, and pass it as an argument later).
 
