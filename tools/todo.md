@@ -11,6 +11,7 @@
   - git tag
   - git reset
   - git filter-branch
+  - https://chris.beams.io/posts/git-commit/#seven-rules
 - Unity
   - read links
   - watch videos

@@ -7,3 +7,4 @@
   * GitBook
   * Slack
   * zettlr
+  * https://editorconfig.org/
