@@ -11,7 +11,11 @@ JavaScript (JS) base is made of the scripting language ECMAScript. We are curren
 
 As always, you may learn JavaScript on [W3School](https://www.w3schools.com/Js/default.asp) or [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction). But, maybe those two may be worth a go [javascript.com](https://www.javascript.com/learn/strings) and [javascript tutorial](https://www.javascripttutorial.net/).
 
-> **Note**: As you may have seen in the CSS course, instead of writing JavaScript, you can write **TypeScript** (sort of enhanced JavaScript) and **compile it in any version of JavaScript**.
+> **Note**: As you may have seen in the CSS course, instead of writing JavaScript, you can write **TypeScript** (sort of enhanced JavaScript) and **compile it in any version of JavaScript**. You can use [JS minifier](https://javascriptminifier.com/) to reduce the size of your JavaScript (decrease the loading time), and a CDN (see the WEB course).
+> 
+> Some browsers <s>may</s> do not support some features (ex: [fetch](https://caniuse.com/fetch)), and you may like [polyfill](https://polyfill.io/v3/) that try to recreate the missing features. You can pick [which ones here](https://polyfill.io/v3/url-builder/).
+> 
+> You may use [JSDoc](https://jsdoc.app/) for your documentation (not tested).
 
 <hr class="sl">
 
