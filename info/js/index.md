@@ -124,13 +124,9 @@ Advanced do not mean more complex, it mean that you may not use this right now.
 
 <hr class="sr">
 
-## JS for websites
+## JavaScript for websites
 
-We are calling DOM the Document Object Model. This is your
-whole website, the tags are making a graph called a tree
-and the whole graph is called the DOM. You will use
-a variable called `document` (shortcut of ``window.document``)
-and call functions.
+We are calling DOM the Document Object Model. The tags of your page are a tree, you got html, then head/body, etc. This is what the DOM is. You got a variable called `document` (shortcut of `window.document`), and you may ask it about node inside the tree.
 
 * [document](web/document.md)
 * [window](web/window.md)

@@ -2,22 +2,19 @@
 
 [Go back](..#js-for-websites)
 
-Most of the verifications are in HTML but If you can't
-check everything in HTML or you want to display a custom
-message, then here you go.
+Most of the verifications are in HTML, but If you **can't check something in HTML** (ex: the password and the password confirmation have the same value) or you want to **display a custom error message**, then here you go.
 
 <hr class="sl">
 
 ## onsubmit
 
-You can listen to the event "onsubmit" and return
-true (send form) or false (do not send form).
+You can listen to the event "onsubmit" and return **true** if the form is valid or **false** if the user need to correct something (=cancel submit).
 
 ```html
 <form onsubmit="return checkForm(this)"></form>
 ```
 
-Here some "template" for "checkForm"
+Here is some "template" for "checkForm" <small>(you may change the name of the function, you may not do it like this)</small>
 
 ```js
 function checkForm(form){
@@ -37,8 +34,7 @@ function checkForm(form){
 
 ## Custom errors
 
-If you want to use your own custom messages, then first
-disable the default messages
+If you want to use your own custom messages, then first disable the default messages
 
 ```html
 <form onsubmit="return checkForm(this)" novalidate></form>
@@ -52,13 +48,13 @@ function checkForm(form){
         // your code to print the error
     }
     if (login_register.validity.tooShort) {
-        // your code to print the error
+        // ...
     }
     if (email_register.validity.typeMismatch) {
-        // your code to print the error
+        // ...
     }
     if (login_register.validity.valueMissing) {
-        // your code to print the error
+        // ...
     }
     // ...
     return false;

@@ -2,9 +2,11 @@
 
 [Go back](..#js-for-websites)
 
+Everyone know about `getElementById`, `getElementsByClassName`, and maybe `getElementsByTagName` too. These are shortcuts of `querySelector` that is working like the operator `$` in JQuery. I listed every function you may use too.
+
 <hr class="sl">
 
-## Get tags (common way)
+## Get elements (common way)
 
 ```js
 // get the element having id="id"
@@ -17,7 +19,7 @@ let tab_links = document.getElementsByTagName('a');
 
 <hr class="sl">
 
-## Get a tag
+## Get elements using selectors
 
 You can also use selectors (like in CSS or in JQuery)
 
@@ -30,19 +32,18 @@ document.querySelector("#id")
 document.querySelector("a")
 
 // and you can do things like in CSS
-// for instance
-document.querySelector("div > a.a_class")
+// for instance 
+// (check the section about selectors in the CSS course)
+document.querySelector("div .container + p")
 ```
 
 <hr class="sl">
 
 ## Using elements
 
-Once you got an element (either by iterating an array
-or using a selector returning an element), you can
-call the properties like this
+Once you got an element (either by iterating an array or using a selector returning an element), you can call the properties like this
 
-* ``e.href`` (a), `e.src` (img), ...
+* `e.href` (tag a), `e.src` (tag img), ...
 * you can add new ones (if you want)
 * you can check if an element got a property
 
@@ -50,6 +51,9 @@ call the properties like this
 if (e.hasOwnProperty('href')) {
     e.href // not undefined
 }
+// or
+// either null or a value
+let href = e.hasOwnProperty('href')
 ```
 
 * add or remove classes
@@ -59,8 +63,7 @@ e.classList.add('test')
 e.classList.remove('test')
 ```
 
-* change the style (please use classes and not inline style, unless
-you are practicing)
+* change the style (please use classes and not inline style, unless you are practicing)
 
 ```js
 e.style.width = "5px";
@@ -73,8 +76,8 @@ e.style.backgroundColor = "yellow";
 * change the tag content
 
 ```js
-e.innerHTML = "<b>test</b>"; // test in bold
-e.innerText = "<b>test</b>"; // <b>test</b>
+e.innerHTML = "<b>test</b>"; // "test" (in bold)
+e.innerText = "<b>test</b>"; // "<b>test</b>" (plain text)
 ```
 
 <hr class="sl">
@@ -83,8 +86,8 @@ e.innerText = "<b>test</b>"; // <b>test</b>
 
 * ``document.createElement('p')``: create a tag (ex: p)
 * ``document.createTextNode('texte')``: same as "text"
-* ``e.children``: all nested tags (a.k.a. children nodes)
-* ``e.parentNode``: ancestor node (a.k.a. parent node)
+* ``e.children``: all nested tags (a.k.a. children nodes 🙄)
+* ``e.parentNode``: ancestor node (a.k.a. parent node 🙄)
 * ``e.getAttribute(...)``: get an attribute value (like href, ...)
 * ``e.setAttribute(...)``: set an attribute value (like href, ...)
 * ``e.appendChild(...)``: add a child to e

@@ -2,6 +2,8 @@
 
 [Go back](..#js-for-websites)
 
+I only used the localStorage, but feel free to add more content here.
+
 <hr class="sl">
 
 ## Storage

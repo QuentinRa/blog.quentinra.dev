@@ -10,11 +10,12 @@ when an event is fired.
 
 ## Linking events (HTML)
 
-You can add 
+You can add them directly inside the HTML <small>(not a good practice, but that's easy to do 😐)</small>, we are calling that inline-scripting
 
 ```html
-<button onclick="f()" onmouseover="f()" onmouseout="f()" onload="f()"></button>
-<form onsubmit="return f();"></form>
+<button onclick="inline_event(this)" onmouseover="inline_event(this)" 
+        onmouseout="inline_event(this)" onload="inline_event(this)"></button>
+<form onsubmit="return inline_event(this);"></form>
 <!-- ... -->
 ``` 
 
@@ -35,8 +36,8 @@ You can also add events manually, in a javascript file
 
 ```js
 // ...
-b.addEventListener("click", f, false)
-b.removeEventListener("click", f, false)
+b.addEventListener("click", js_event, false)
+b.removeEventListener("click", js_event, false)
 // events names are: mousedown, mouseup, mouseover, mouseout, mousemove, keydown, change
 ```
 
@@ -46,16 +47,21 @@ b.removeEventListener("click", f, false)
 
 It's a normal function but the function
 
-* is taking ``e`` (the event that triggered the function)
-* usually calling ``e.preventDefault();`` to tells others
-that your function is handling the event (and to not do
-the default behavior)
+* is taking `e` (the event that triggered the function)
+* usually calling `e.preventDefault();` to tells others that your function is handling the event (and to not do the default behavior)
 
 ```js
-function fonction(e){
+// function for js events
+function js_event(e) {
     e.preventDefault();
     // ... your code ...
     // you may use
     e.target // get the component we clicked on
+}
+// function for inline events
+// you can remove "this" (when calling) if you don't need "target"
+function inline_event(target) {
+    // the component
+    console.log(target)
 }
 ```
