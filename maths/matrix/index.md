@@ -53,7 +53,7 @@ In French, we will call these `Matrices remarquables`.
 
 The matrix **you must remember** is called **Identity matrix** (`Matrice identité`) $Id_n$ or $I_n$. This is a diagonal matrix having $1$ on the diagonal, which mean we have $A_n * Id_n = Id_n * A_n = A_n$. In **R**, you can create it with `diag(n)`.
 
-<table class="table table-striped table-dark table-bordered table-responsive">
+<table class="table table-striped border-dark table-bordered table-responsive">
 <thead>
 <tr>
 <th>Zero matrix $O_{np}$</th>
@@ -116,7 +116,7 @@ transpose.
 </tbody>
 </table>
 
-<table class="table table-striped table-dark table-bordered table-responsive">
+<table class="table table-striped border-dark table-bordered table-responsive">
 <thead>
 <tr>
 <th>Transpose matrix $A^{T}$</th>
@@ -182,7 +182,7 @@ This is a matrix whose inverse is equals to its transpose.
 </tbody>
 </table>
 
-<table class="table table-striped table-dark table-bordered table-responsive">
+<table class="table table-striped border-dark table-bordered table-responsive">
 <thead>
 <tr>
 <th>Lower triangular $L$</th>

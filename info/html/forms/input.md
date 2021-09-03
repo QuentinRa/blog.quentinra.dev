@@ -21,7 +21,7 @@ This is most likely, the kind of field you will use the most as it can transform
 
 ## Examples
 
-<table class="table table-dark table-striped">
+<table class="table border-dark table-bordered table-striped">
 <thead>
 <tr>
 <th>Description</th>

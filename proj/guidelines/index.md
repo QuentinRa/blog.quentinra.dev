@@ -120,7 +120,7 @@ alt="meme" width="500"/>
 
 After discovering this [repository](https://github.com/trekhleb/state-of-the-art-shitcode), which is quite good for explaining what you mustn't do, I looked on GitHub's "best-practices repository". Here is a summary of the repository above and many others.
 
-<table class="table table-bordered table-striped table-dark">
+<table class="table table-bordered table-striped border-dark">
 <thead>
     <tr>
         <th scope="col" style="min-width: 180px;">Style</th>

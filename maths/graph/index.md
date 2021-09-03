@@ -18,7 +18,7 @@ A graph can be simple/multiple and directed or not.
   they are written $(a,b)$
 * **directed graph** (`Graphe orientés (GO)`): edges, called arcs, have a direction, they are written $[a,b]$
 
-<table class="table table-bordered table-dark table-striped">
+<table class="table table-bordered border-dark table-striped">
     <thead>
         <tr>
             <th>undirected graph</th>
@@ -116,7 +116,7 @@ Note: the degree is the number of neighbors, see next part.
 
 I marked with a little star `*`, the keywords that we are not using often (and that you may learn later).
 
-<table class="table table-bordered table-dark table-striped">
+<table class="table table-bordered border-dark table-striped">
     <thead>
         <tr>
             <th>name</th>
@@ -180,7 +180,7 @@ You may also note that, if we have an arc $A \to B$, then
 
 There are names for graphs having some properties
 
-<table class="table table-bordered table-dark table-striped">
+<table class="table table-bordered border-dark table-striped">
     <thead>
         <tr>
             <th>name</th>

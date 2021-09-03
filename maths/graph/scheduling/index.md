@@ -6,7 +6,7 @@ Learn about the terminology for scheduling problems (optimal cost, early/last st
 
 <hr class="sl">
 
-<table class="table table-bordered table-striped table-dark">
+<table class="table table-bordered table-striped border-dark">
 <tr><th>optimal cost/duration</th></tr>
 <tr><td>
 
@@ -15,7 +15,7 @@ Also called `durée optimale`/`coût optimal`, this is the least number of days 
 
 Note: we are using the notation $A(10)$, for the task $A$ having a duration/cost of $10$.
 
-<table class="table table-bordered table-striped table-dark">
+<table class="table table-bordered table-striped border-dark">
 <tr><td style="min-width: 150px;">early start time</td><td>
 
 In French, it's called `date au plus tôt`. It's the number of days/... you will have to wait before doing this task.
@@ -42,7 +42,7 @@ Ex: If a task $C(last=???)$ got two predecessors $D(cost=4, last=45)$ and $E(cos
 </td></tr>
 </table>
 
-<table class="table table-bordered table-striped table-dark">
+<table class="table table-bordered table-striped border-dark">
 <tr><th colspan="2">margin</th></tr>
 <tr><td>total</td><td>
 

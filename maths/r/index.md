@@ -41,7 +41,7 @@ Then here is the real course.
 
 And here you can learn how to write [Rmd documentation](rmd.md).
 
-<table class="table table-dark table-bordered table-striped">
+<table class="table border-dark table-bordered table-striped">
 <tr><th class="text-center">Other notes about the Language</th></tr>
 <tr><td>
 The semicolon <code>;</code> at the end of a line is optional. You may use it if you make more than one expression per line.
