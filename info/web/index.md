@@ -46,6 +46,17 @@ Why did we learn this? Well, you will use this a lot (HTML forms, WEB APIs, etc.
 
 Usually, in APIs, you got a route such as `/user/{id}` such (ex:`/user/5`) and according to if you are using the method GET/PUT/DELETE/..., the server will expect data (or not) and do something different.
 
+<hr class="sr">
+
+## WebServer
+
+As you will read in the HTMl course, you don't need a server an use the file protocol (same for CSS/JS), but for PHP, you will need a server. You may also use it in HTML, as this may be easy to set up.
+
+* You can set up a [(virtual) local server](setup/wamp.md)
+* You can set up a [apache server on linux](setup/apache.md)
+
+Sometimes some students don't want to set up a server and directly work on the remote server. You will need to upload using the FTP protocol (or scp) your files **everytime** you changed something. Some IDEs such as [PHPStorm](../../tools/jetbrains/index.md#phpstorm) or [VSCode](https://code.visualstudio.com/docs/remote/ssh) that are **automatically updating the files on a remote server** when you changed something. Anyways, I think **you should work in local, for security-related purposes**.
+
 <hr class="sl">
 
 ## Using the console
