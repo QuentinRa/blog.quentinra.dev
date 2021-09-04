@@ -65,7 +65,7 @@ Left-click on wamp in the system trail. You can enable and disabled PHP modules 
 <summary>Use PostgreSQL</summary>
 <br>
 
-* <https://www.enterprisedb.com/downloads/postgres-postgresql-downloads>
+You can [download PostgreSQL here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Beware that version 12+ needs PHP 7.4.0+.
 
 Don't forget to restart!
 

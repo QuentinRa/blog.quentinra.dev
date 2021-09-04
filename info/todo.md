@@ -131,6 +131,8 @@ see headers: curl -I https://memorize.be/
   - nmap google.fr -p 0-65535 -O -A (port fait quoi)
   - Zmap
   - netstat -tulpn
+  - sudo update-alternatives --config php
+  - apt install zip unzip php7.1-zip php7.1-mbstring php7.1-curl php7.1-dom
 - typescript
   - https://github.com/labs42io/clean-code-typescript
 
