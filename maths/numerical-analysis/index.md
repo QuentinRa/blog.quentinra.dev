@@ -126,22 +126,26 @@ The algorithms you may use are
 
 # Ordinary differential equation (ODE)
 
-An **differential equation**  is an equation that relates one or more derivatives of an unknown functions. If every derivative of the unknown functions are of one independent variable, the differential equation is called an **Ordinary differential equation**, in contrast of a **partial differential equation**. The order of an ODE is the highest derivative.
+An **differential equation**  is an equation that relates one or more derivatives of an unknown functions.
+
+If every derivative of the unknown functions are of one independent variable, the differential equation is called an **Ordinary differential equation**, in contrast of a **partial differential equation**. The order of an ODE is the highest derivative.
 
 ### Example
 
-$y\prime (x) = y(x)$ is a first-order ordinary differential equation, while $\frac{\partial y}{\partial t} + \frac{\partial y}{\partial x} = 0$ is not.
+$y\prime (x) = y(x)$ is a ordinary differential equation, while $\frac{\partial y}{\partial t} + \frac{\partial y}{\partial x} = 0$ is not.
+
+More specifically, $y\prime (x) = y(x)$, that we generally write $y\prime - y = 0$, is a first-order linear differential equation.
 
 <hr class="sr">
 
 ## Linear differential equation
 
-A **linear differential equation** is a differential equation of the form 
+A **linear differential equation** is a (ordinary) differential equation of the form 
 <div>
 \[ a_0(x) y + ... + a_n(x) y^{(n)} = b(x) \]
 </div>
 
-where $a_0, ..., a_n, b$ are diffentiable equations.
+where $a_0, ..., a_n, b$ are differentiable functions.
 
 ### First-order linear differential equation
 
@@ -163,6 +167,79 @@ There is two cases :
 	* The solutions of $y\prime + ay = 0$ are $\lbrace \lambda e^{-ax}| \lambda\in\mathbb R \rbrace$.
 	* A solution of $(E)$ is $y_0 = \frac ba$.
 	* So we could conclude that the solutions of $(E)$ are of the form $y_0 + \lambda e^{-ax}$, where $\lambda\in\mathbb R$ .
+
+<hr class="sr">
+
+## 
+### Why we use computer ?
+
+If we can solve an ODE and find the solutions, why does we need to use a computer ? Because in fact, we couldn't solve all the ODE, the example of the first-order linear differential equation given in the previous section are exceptions. That is why we use a computer, which with we can approximate the solution.
+
+However, if you were attentive, you could notice in the previous examples that their solutions are not unique. In fact, there are infinite solutions to an ODE, which is a problem when we want to approximate something.
+
+### Cauchy, or it's better when it's unique
+
+To have a problem with an unique solution, we add a constraint by fixing a value to a certain point.
+
+For example, $y\prime = y$ has $x\mapsto 0,\quad x\mapsto \exp (x),\quad x\mapsto 42\times \exp (x) $ as solutions, but $\exp$ is the unique solution to the problem
+<div>
+	\[ \left\lbrace \begin{array}{l}
+		y\prime = y \\
+		y(0) = 1
+	\end{array} \right .\]
+</div>
+
+These problems, when we have a differential equation and initials values, are called **Cauchy problems**. 
+
+Under certain conditions, the <a href=https://en.wikipedia.org/wiki/Picard%E2%80%93Lindel%C3%B6f_theorem>Cauchy–Lipschitz theorem</a> ensures that the solution exists and is unique.
+<hr class="sr">
+
+## Euler
+
+Let a Cauchy problem :
+<div>
+	\[ (E) : \left\lbrace \begin{array}{l}
+		y\prime = f(t, y(t)) \\
+		y(0) = y_0
+	\end{array} \right .\]
+</div>
+
+that we want to approximate on the interval $[a, b]$.
+
+We discretize $[a, b]$ in $N\in\mathbb N^*$ values : $t_0 = a < t_1 < ... < t_{N-1} < t_N = b$ .
+
+### Forward
+
+One of the method to approximate the solution of a Cauchy problem is the **forward Euler method** (*Euler explicite* in French).
+
+It is based on the <a href=https://en.wikipedia.org/wiki/Taylor%27s_theorem>Taylor's theorem</a> :
+<div>
+	\[ y(x + h) \approx y(x) + h\times y\prime (x) \]
+</div>
+
+We approximate the solution with the sequence defined by :
+<div>
+	\[ \left\lbrace \begin{array}{l}
+		z_0 = y_0 \\
+		z_{k+1} = z_k + (t_{k+1} - t_k) \times f(t_k, z_k)\quad \forall k < N
+	\end{array} \right . \]
+</div>
+	
+It is called forward because the expression of $z_{k+1}$ only depends of known values.
+	
+This method is the simplest, but has the default to easily have big errors.
+
+### Backward
+	
+It's quite the same than the forward Euler method, with a little difference :
+<div>
+	\[ \left\lbrace \begin{array}{l}
+		z_0 = y_0 \\
+		z_{k+1} = z_k + (t_{k+1} - t_k) \times f(t_{k+1}, z_{k+1})\quad \forall k < N
+	\end{array} \right . \]
+</div>
+	
+It is called backward because the expression of $z_{k+1}$ depends of itself; the unknown value depend of itself, which is unknown. 
 
 <hr class="sl">
 
