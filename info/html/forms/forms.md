@@ -8,7 +8,7 @@ Some notes about forms such as fields outside a form, or notes about the attribu
 
 ## external fields
 
-I wanted to add something that I did often, if an input field is not inside a form, you may add `id="a_form_id"` to your form, then you simply have to add inside the field `form="a_form_id"`.
+If an input field is not inside a form, you may add `id="a_form_id"` to your form, then you simply have to add inside the field `form="a_form_id"`.
 
 ```html
 <form id="example"></form>

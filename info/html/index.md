@@ -1,14 +1,14 @@
 # Learn HTML5
 
-As you could read in the Web course, HTML is the language used to write a web page. To be exact, the final result is in HTML, but you could have used other languages to generate the HTML page (such as PHP or Node.js), as their is no way to factorize code in pure HTML.
+As you could read in the Web course, HTML is the language used to write a web page. To be exact, the final result is in HTML, but you could have used other languages to generate the HTML page (such as PHP or Node.js), as there is no way to factorize code in pure HTML.
 
-The current version that you should use is **HTML5**, but even if many browser have yet to support it, and not many people are aware of it, we are in **HTML5.2** (HTML 5 2nd minor version, December 2017). You can check the [coverage of HTML5 by your browser here](https://caniuse.com/) (for instance, try "summary", a new tag introduced in HTML5.1, or simply enter "HTML5").
+The current version that you should use is **HTML5**, but even if many browsers have yet to support it, and not many people are aware of it, we are in **HTML5.2** (HTML 5 2nd minor version, December 2017). You can check the [coverage of HTML5 by your browser here](https://caniuse.com/) (for instance, try "summary", a new tag introduced in HTML5.1, or simply enter "HTML5").
 
 The usual place to learn HTML/CSS/JS is [W3Schools](https://www.w3schools.com/html/default.asp). Personally, I'm enjoying [MDN/Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML).
 
 > **Note**: as a good developer 😎, you should follow the standards when writing code. You can test your code [using the W3C validator](https://validator.w3.org/#validate_by_input). You can also add a badge that will redirect to the validator with your page inside [as explained here](../../special/web/parts/validator.md).
 > 
-> Recently, I discovered that you could check your website with [webhint.io](https://webhint.io/scanner/), which is also embed in edge developer tools, and providing quite good advices. You also got other tools, such as lighthouse to check the performances, etc. (check WEB course)
+> Recently, I discovered that you could check your website with [webhint.io](https://webhint.io/scanner/), which is also embedded in edge developer tools, and providing quite good feedback. You also got other tools, such as Lighthouse to check the performances, etc. (check WEB course)
 
 <hr class="sr">
 
@@ -25,7 +25,7 @@ To summarize what was written in the WEB course,
   * ex: for DuckDuckGo, `https://duckduckgo.com` is the same as `https://duckduckgo.com/index.html`.
 
 <details class="pb-3">
-<summary>A HTML file is made a <b>tags</b> (ex: title, meta, ...) that have <b>attributes</b> (properties such as <code>lang="fr"</code> etc.).
+<summary>An HTML file is made a <b>tags</b> (ex: title, meta, ...) that have <b>attributes</b> (properties such as <code>lang="fr"</code> etc.).
 </summary>
 
 ```html
@@ -54,7 +54,7 @@ To summarize what was written in the WEB course,
 <details class="pb-3">
 <summary><b>How do I "run" HTML code?</b></summary>
 
-Create a file `index.html` (ex: with the content above), drag and drop it inside a browser, and you should see your page. You don't need a server as your code is fully in HTML (no PHP). You can change the name of the file, but the main file of your website must be called `index`. Your browser isn't "executing" code, it's simply rendering the code it received <small>(the URL is a sort of `file://path/to/a/file.html`, and as we learned before, if there is no file in the URL, and you got a index.html, then it's loaded instead)</small>.
+Create a file `index.html` (ex: with the content above), drag and drop it inside a browser, and you should see your page. You don't need a server as your code is fully in HTML (no PHP). You can change the name of the file, but the main file of your website must be called `index`. Your browser isn't "executing" code, it's simply rendering the code it received <small>(the URL is a sort of `file://path/to/a/file.html`, and as we learned before, if there is no file in the URL, and you got an index.html, then it's loaded instead)</small>.
 
 You can also try [an online editor such as this one](https://dev.codehs.com/editor/new/html). If you want something cleaner (using a server, http/https instead of file), then refer to the PHP course (this isn't complicated).
 </details>
@@ -63,9 +63,9 @@ You can also try [an online editor such as this one](https://dev.codehs.com/edit
 
 ## Tags
 
-The main idea when writing HTML is that you are gonna write some tags such as **p** for a paragraph or **a** for a link. Then you can add some attributes, such as `href` for a link that is the URL the link will be pointing to.
+The main idea when writing HTML is that you are going to write some tags, such as **p** for a paragraph or **a** for a link. Then you can add some attributes, such as `href` for a link that is the URL the link will be pointing to.
 
-You will have to types of tags, tags like `<img ...>` called **auto-closing tags** because you don't write `<img></img>`, as you would with others such as `<a ...>this is a link</a>`.
+You will have two types of tags, tags like `<img ...>` called **auto-closing tags** because you don't write `<img></img>`, as you would with **others** such as `<a ...>this is a link</a>`.
 
 You may also note that tags such as **p** are called blocking tags, because unless you use CSS, the tags after **p** will be rendered starting from a newline. To be accurate, "p", "div", etc. are **block-level elements** while "a", "span", etc. are called **inline elements**. A block element is usually storing a bunch of inline elements. I'm usually calling those "containers".
 
@@ -76,7 +76,7 @@ You may also note that tags such as **p** are called blocking tags, because unle
 * you can write `attribute='value'` (instead of ", **do not use this 😟**)
 * you may write `<img ...></img>` or `<img ... />` (without the /), but we are usually writing `<img ...>` for auto-closable tags.
 * you do not need to indent your code, but it makes things cleaner 🙂
-* you do not to put one tag per line, but it makes things cleaner 🙂
+* you do not need to put one tag per line, but it makes things cleaner 🙂
 * so tags are optional (such as </li> or </body>, but you shouldn't omit/forget them)
 
 > When I'm saying "do not use/do this", I mean that developers are usually not using this, and if you do, then you should make sure **to not mix things** (do not mix ' and ") as this is what bad developers do. Pick one, and be consistent until the end.
@@ -88,7 +88,7 @@ You may also note that tags such as **p** are called blocking tags, because unle
 <details class="pb-3">
 <summary>The usual way to structure a website is the following [...]</summary>
 
-The first line is `<!doctype html>` (or DOCTYPE), and the code is inside a tag called html `<html lang="en"> ... </html>`.  To make things cleaner, we are splitting the HTML the content into
+The first line is `<!doctype html>` (or DOCTYPE), and the code is inside a tag called html `<html lang="en"> ... </html>`.  To make things cleaner, we are splitting the content of "html" into
 
 * `head` (metadata): we are defining here the properties of your website such as the title, the icon, linking the CSS, etc.
 * `body` (content): this is the real content of your website
@@ -97,7 +97,7 @@ The first line is `<!doctype html>` (or DOCTYPE), and the code is inside a tag c
 <details class="pb-3">
 <summary>We need to improve the structure of the body. Since HTML5, you can use [...]</summary>
 
-* `header`: the top of your website, it may contains the navbar, you can put one in each aside/section
+* `header`: the top of your website, it may contain the navbar, you can put one in each aside/section
 * `nav`: for your navbar
 * `section`: a section of your website <small>(you can have many of them)</small>
 * `aside`: some content aside from your main content in your section <small>(ex: your contact information etc.)</small>
@@ -158,7 +158,7 @@ The first line is `<!doctype html>` (or DOCTYPE), and the code is inside a tag c
 
 ## Learn the tags
 
-This is the tags that I'm using the most, and the tags that you must know, with their attributes.
+These are the tags that I'm using the most, and the tags that you must know, with their attributes.
 
 <!--
 I can't use Markdown tables because the content is too complex 😭, it may the code more unreadable.
@@ -326,7 +326,7 @@ Note that a div is "invisible", meaning that the user won't see any difference b
 
 ## Learn the tags: style
 
-You may want to style your website, and you can using HTML tag (lets leave the CSS for later).
+You may want to style your website, but you don't want/know CSS. This is a list of HTML tags that you may use.
 
 <!--
 I can't use Markdown tables because the content is too complex 😭, it may the code more unreadable.
@@ -504,7 +504,7 @@ Rarely used tags
 </tbody>
 </table>
 
-You got even more tags that I never used such as strong (rendered as bold), del (rendered like s), q (short quote) etc. You can learn more about them (and add them here if you want) in the HTML reference.
+You got even more tags that I never used such as strong (rendered as bold), del (rendered like s), q (short quote), etc. You can learn more about them (and add them here if you want) in the HTML reference.
 
 <hr class="sr">
 
@@ -526,9 +526,9 @@ And, you may want to learn about
 
 ## Forms
 
-Forms aren't something that you can use without a server, but at least since they are rendered using HTML, then you can show one in your website. I haven't tested, but you may be able to use [formspree](https://formspree.io/) to handle your forms (without PHP).
+Forms aren't something that you can use without a server, but at least since they are rendered using HTML, then you can show one on your website. I haven't tested, but you may be able to use [formspree](https://formspree.io/) to handle your forms (without PHP).
 
-Basically, you will enter data into fields (such as a name in a textField). You will give a name to each field, so that when the form is submitted, the server know what this value is supposed to be. You will add a label to each field, so that the user know what value the field is supposed to take.
+Basically, you will enter data into fields (such as a name in a textField). You will give a name to each field, so that when the form is submitted, the server knows what this value is supposed to be. You will add a label to each field, so that the user knows what value the field is supposed to take.
 
 <details class="border-dark border px-3 py-2">
 <summary>Example (code)</summary>
@@ -567,14 +567,14 @@ Basically, you will enter data into fields (such as a name in a textField). You 
 Then, we are usually making **one div per field**. Each div is made of 
 
 * a **label**, with an attribute "for" referring to the ID of a field
-  * clicking on the label, will focus the field
+  * clicking on the label will focus the field
   * the message inside the label is something describing the field
-* a **field**, it can be an input, a text area, a select etc.
-  * the ID must match the one in the label
+* a **field**, it can be an input, a textarea, a select, etc.
+  * the ID must match the one on the label
   * you must add a name for the server to know what's this value
   * the value is what will be sent to the server
 
-Then, at the end, you add either a button submit (to send the form) and/or a button reset to reset the form.
+Finally, you add either a button submit (to send the form) and/or a button reset to reset the form.
 </details>
 
 * [Notes about label](forms/label.md)

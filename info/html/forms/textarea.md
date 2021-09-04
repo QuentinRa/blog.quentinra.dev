@@ -2,7 +2,7 @@
 
 [Go back](../index.md#forms)
 
-You might use a textarea if you want a bigger input field for a text. You can use almost every property we saw, on top of rows and cols for the size of your textarea.
+You might use a textarea if you want a bigger input field for a text. You can use almost every property we saw, on top of rows and cols, for the size of your textarea.
 
 ```html
 <textarea>default text area</textarea>

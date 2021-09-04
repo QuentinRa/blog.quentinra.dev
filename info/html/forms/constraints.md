@@ -2,7 +2,7 @@
 
 [Go back](../index.md#forms)
 
-You can add constraints to your fields, such as required to force the user to complete this field. You can also set a range of values, or a pattern for the values that are allowed. This is what we call HTML constraints.
+You can add constraints to your fields, such as required, to force the user to complete this field. You can also set a range of values, or a pattern for the values that are allowed. This is what we call HTML constraints.
 
 ```html
 <!-- at least one letter, lowercase only -->
@@ -23,4 +23,4 @@ You can add constraints to your fields, such as required to force the user to co
 * **max**: max value (int)
 * **pattern**: write a regex (regular expression) that the input must match
 
-If the user is submitting an invalid value, or forget to fill a field, then the browser will show him/her a message. You can also see the message when hovering the field. In JavaScript, you will be able to customize the messages shown.
+If the user is submitting an invalid value, or forgets to fill a field, then the browser will show him/her a message. You can also see the message when hovering the field. In JavaScript, you will be able to customize the messages shown.

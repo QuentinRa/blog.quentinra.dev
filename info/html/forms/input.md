@@ -2,9 +2,9 @@
 
 [Go back](../index.md#forms)
 
-This is most likely, the kind of field you will use the most as it can transformed according to the value inside type (checkbox, radio, ...).
+This is most likely the kind of field you will use the most, as it can be transformed according to the value inside "type" (checkbox, radio, ...).
 
-* **name**: it's the name that will be used server-side to get the value of a field. Don't add one if you don't want a field data to be submitted.
+* **name**: it's the name that will be used server-side to get the value of a field. Don't add one if you don't want the data of a field to be submitted.
 * **type**: that's the type of your field like
     * **text**
     * date
@@ -14,7 +14,7 @@ This is most likely, the kind of field you will use the most as it can transform
     * **checkbox**
     * **radio**
     * number
-* **placeholder**: put a default value that will be removed when the user write something
+* **placeholder**: put a default value that will be removed when the user writes something
 * **value**: you can set a value
 
 <hr class="sr">
@@ -35,10 +35,10 @@ This is most likely, the kind of field you will use the most as it can transform
 <tr>
 <td>Text</td>
 <td>
-&lt;input name="name" type="text" value="" placeholder="John DOE" />
+&lt;input name="name" type="text" value="" placeholder="John Doe" />
 </td>
 <td>
-<input name="name" type="text" value="" placeholder="John DOE" />
+<input name="name" type="text" value="" placeholder="John Doe" />
 </td>
 </tr>
 
@@ -46,10 +46,10 @@ This is most likely, the kind of field you will use the most as it can transform
 <tr>
 <td>Password<br>Show dots instead of the real value.</td>
 <td>
-&lt;input name="password" type="password" value="John DOE" />
+&lt;input name="password" type="password" value="John Doe" />
 </td>
 <td>
-<input name="password" type="password" value="John DOE" placeholder="" />
+<input name="password" type="password" value="John Doe" placeholder="" />
 </td>
 </tr>
 
