@@ -59,7 +59,7 @@ Same as I told you for CSS, this is the proper way to do (allows the use of CDN,
 </tbody>
 </table>
 
-As you should have learned by now, you can see the JavaScript inside the console (Web course). You can either log using the console (👍) or using popups (👎)
+As you should have learned by now, you can see the JavaScript inside the console (Web course). You can either log/print something using the console (👍) or using popups (👎)
 
 ```js
 console.log("message")
@@ -118,15 +118,15 @@ Some parts in JavaScript are following the properties of <b>functional languages
 </td>
 </tr>
 <tr>
-<td>If you are <b>tired of concatenating variables</b> like this <code>"a="+a</code>, then you can use <code>`a=${a}`</code>. Everything inside the <code>{}</code> will be evaluated when making the string, as long as you used <code>`</code> (inverted quote).</td>
+<td>If you are <b>tired of concatenating variables</b> like this <code>"a="+a</code>, then you can use <code>`a=${a}`</code>. Everything inside the <code>${}</code> will be evaluated when making the string, as long as you used <code>`</code> (inverted quote).</td>
 </tr>
 <tr>
-<td>You can replace a <b>check for undefined/null</b>, with the following code, but <b>the variable must have been declared</b>
+<td>You can improve a code <b>checking for undefined/null</b>, with some new operators, but in every case, <b>the variable must have been declared</b>
 
 ```js
 let request = undefined; // or null
 // Nullish coalescing operator
-// is request null/undefined, evaluated as 200
+// if request is null/undefined, status=200 else status=request
 let status = request ?? 200
 // same as
 // status = request || 200
