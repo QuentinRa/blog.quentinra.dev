@@ -55,6 +55,7 @@ Last updated: 2021-08-27
 * [ ] adding submit issue
 * [ ] make CSS using SASS
 * [ ] make dark mode without dark-reader
+* [ ] add "Thanks"+Gift? on edit successful
 * **Content**
 * [ ] Index Google/Bing
 * [ ] add a pull request template
