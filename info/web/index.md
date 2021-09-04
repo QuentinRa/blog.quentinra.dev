@@ -18,7 +18,7 @@ There are a lot of knowledge and things that would not be relevant if they were 
 
 ## The HTTP protocol
 
-You are using the HTTP protocol, when your browser is requesting something from a server. For instance, when you request `https://duckduckgo.com/`, you are asking the server to GET the page for this URL. We are currently in **HTTP2.0**, but a lot of persons are still using **HTTP1.1** (and some HTTP1.0).
+You are using the HTTP protocol, when your browser is requesting something from a server. For instance, when you request `https://duckduckgo.com/`, you are asking the server to GET the page for this URL. We are currently in **HTTP2.0** ([caniuse](https://caniuse.com/http2), [article](https://www.digitalocean.com/community/tutorials/http-1-1-vs-http-2-what-s-the-difference)), but a lot of persons are still using **HTTP1.1** (and some HTTP1.0).
 
 <details class="details-border">
 <summary>Webserver root and root URL</summary>

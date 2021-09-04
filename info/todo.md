@@ -66,17 +66,13 @@
   - https://www.zaproxy.org/
   - https://en.wikipedia.org/wiki/Wikipedia:Username_policy
   - https://forums.cpanel.net/threads/forbidden-usernames-on-whm.22154/
-  - PHP8.0/HTTP2.0
-  - https://caniuse.com/http2
+  - PHP8.0
   - https://php.watch/versions/8.1
   - https://blog.stackpath.com/http-request-tools/
 https://imagekit.io/blog/ultimate-guide-to-http-caching-for-static-assets/
 https://web.dev/http-cache/
 https://goaccess.io/get-started
 https://www.keycdn.com/blog/log-analysis-tools
-    https://http2.co/how-to-fix-ah10034-the-mpm-module-prefork-c-is-not-supported-by-mod_http2/
-https://www.digitalocean.com/community/tutorials/http-1-1-vs-http-2-what-s-the-difference
-https://http2.co/how-to-fix-ah10034-the-mpm-module-prefork-c-is-not-supported-by-mod_http2/
 see headers: curl -I https://memorize.be/
 - sql
   - https://sql.sh/
@@ -134,6 +130,7 @@ see headers: curl -I https://memorize.be/
   - https://www.geeksforgeeks.org/apropos-command-in-linux-with-examples/
   - nmap google.fr -p 0-65535 -O -A (port fait quoi)
   - Zmap
+  - netstat -tulpn
 - typescript
   - https://github.com/labs42io/clean-code-typescript
 

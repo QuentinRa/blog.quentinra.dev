@@ -27,6 +27,7 @@
   - https://www.dataschool.io/15-hours-of-expert-machine-learning-videos/
   - https://www.statlearning.com/resources-first-edition
   - https://www.sfds.asso.fr/fr/enseignement_de_la_statistique/ressources/enseignement_superieur/597-par_thematiques
+  - m.ghassany[dot]gmail.com
 - complexity
   - course?
   - note ANM
