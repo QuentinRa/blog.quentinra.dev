@@ -16,10 +16,35 @@ There are a lot of knowledge and things that would not be relevant if they were 
 
 <hr class="sl">
 
-When you write some URL in your browser, 
-you requested a page to a server. 
-The server returns to you a make page, written in **HTML**.
-When making a website, you got two sides to handle
+## The HTTP protocol
+
+You are using the HTTP protocol, when your browser is requesting something from a server. For instance, when you request `https://duckduckgo.com/`, you are asking the server to GET the page for this URL. We are currently in **HTTP2.0**, but a lot of persons are still using **HTTP1.1** (and some HTTP1.0).
+
+<details class="details-border">
+<summary>Webserver root and root URL</summary>
+
+* when settings up a server, you will make a folder available at an URL. Let's say you made it like this
+  * **webserver root**: `/path/to/www/`
+  * **base/root url**: `https://myurl.com/`
+* As you could guess, this is working like a path, so you could write `https://myurl.com/folder/my_file.html` for `/path/to/www/folder/my_file.html`
+  * A lot of programmers are using routers, so this won't always be the case <small>(ex: this website)</small>
+  * By default, if you don't write a file in the URL, then `index.html` <small>(or php, or index.extension, according to your configuration)</small> will be loaded <small>(if you got one)</small>
+</details>
+
+<details class="details-border" open>
+<summary>The HTTP protocol (or HTTPS for HTTP secure) API is allowing us to use</summary>
+<br>
+
+* `GET URL`: get a resource from the SERVER
+* `POST URL`: create a resource on the server <small>(ex: create an account)</small>
+* `PUT URL`: modify a resource on the server <small>(ex: update an user's email, or add it if it didn't have one)</small>
+* `PATCH`: same as PUT, but can't create a new resource
+* `DELETE URL`: delete a resource on the server <small>(ex: delete account)</small>
+</details>
+
+Why did we learn this? Well, you will use this a lot (HTML forms, WEB APIs, etc.). In HTML, you will make forms (search, create users, etc.). You **need to know whether they are GET** (search, ...) **or POST** (create user). For Web APIs, this is usually written in the documentation, but you should be able to guess too.
+
+Usually, in APIs, you got a route such as `/user/{id}` such (ex:`/user/5`) and according to if you are using the method GET/PUT/DELETE/..., the server will expect data (or not) and do something different.
 
 <hr class="sl">
 
