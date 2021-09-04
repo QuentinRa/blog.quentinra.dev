@@ -524,6 +524,21 @@ And, you may want to learn about
 
 <hr class="sl">
 
+## Global attributes
+
+This may be something that you won't need to know, at least until you aren't writing CSS/JavaScript. You can use these attributes on **any tag**
+
+* `id="value"`: give an ID to a tag, the value mustn't be used twice on a page
+* `class="a"` or `class="a b c ..."`: give classes to a tag
+* `hidden`: hide a component
+* `style="some CSS"`: inline style
+* you got inline css too (onclick, onload, ...)
+* `contenteditable="true" spellcheck="true"`: you can click and edit some HTML, as long as the HTML got these attributes
+
+You got [the list of Global Attributes on W3Schools](https://www.w3schools.com/TAGs/ref_standardattributes.asp) with some examples.
+
+<hr class="sr">
+
 ## Forms
 
 Forms aren't something that you can use without a server, but at least since they are rendered using HTML, then you can show one on your website. I haven't tested, but you may be able to use [formspree](https://formspree.io/) to handle your forms (without PHP).
@@ -585,7 +600,7 @@ Finally, you add either a button submit (to send the form) and/or a button reset
 * [Notes about textarea](forms/textarea.md)
 * Check [w3schools](https://www.w3schools.com/tags/tag_select.asp) or [mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) to learn more about the select tag.
 
-<hr class="sr">
+<hr class="sl">
 
 ## Features of HTML5, 5.1, and 5.2
 
@@ -684,7 +699,7 @@ see [MDN doc](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog) 
 Support of [HTML 5.1](https://w3c.github.io/test-results/html51/implementation-report).
 Support of [HTML 5.2](https://w3c.github.io/test-results/html52/implementation-report). As for [HTML 5.3](https://w3c.github.io/test-results/html53/implementation-report) (in progress).
 
-<hr class="sl">
+<hr class="sr">
 
 ## Notes
 
@@ -701,7 +716,7 @@ Support of [HTML 5.2](https://w3c.github.io/test-results/html52/implementation-r
 <meta http-equiv="refresh" content="0; url=URL">
 ```
 
-<hr class="sr">
+<hr class="sl">
 
 ## External resources
 
