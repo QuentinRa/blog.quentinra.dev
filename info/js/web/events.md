@@ -26,7 +26,7 @@ with
 * ``onmouseover``: trigger function on mouse entering
 * ``onmouseout``: trigger function on mouse exiting
 * ``onload``: trigger function once loaded
-* ...
+* The [list is here (W3Schools)](https://www.w3schools.com/TAGs/ref_eventattributes.asp).
 
 <hr class="sr">
 

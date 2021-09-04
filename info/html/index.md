@@ -532,7 +532,7 @@ This may be something that you won't need to know, at least until you aren't wri
 * `class="a"` or `class="a b c ..."`: give classes to a tag
 * `hidden`: hide a component
 * `style="some CSS"`: inline style
-* you got inline css too (onclick, onload, ...)
+* you got inline JavaScript too (onclick, onload, ...)
 * `contenteditable="true" spellcheck="true"`: you can click and edit some HTML, as long as the HTML got these attributes
 
 You got [the list of Global Attributes on W3Schools](https://www.w3schools.com/TAGs/ref_standardattributes.asp) with some examples.

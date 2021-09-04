@@ -27,7 +27,7 @@ As always, you may learn JavaScript on [W3School](https://www.w3schools.com/Js/d
 <tr>
 <td>
 
-You can write JavaScript directly inside a component using attributes such as `onmouseover`, `onclick`, `onsubmit` etc.
+You can write JavaScript directly inside a component using attributes such as `onmouseover`, `onclick`, `onsubmit` etc. The [list is here (W3Schools)](https://www.w3schools.com/TAGs/ref_eventattributes.asp).
 ```HTML
 <p onmouseover="console.log('some code')">
     ...
