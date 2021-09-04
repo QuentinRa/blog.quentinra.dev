@@ -4,7 +4,7 @@
 
 In JavaScript, classes are defining the default properties of an object, but you can dynamically add properties (either for one object, or every object of the class). This can make debugging complex, so be careful (ex: use inheritance instead of dynamic properties 😉).
 
-Lets say you got an instance (=object of a class) of a HTMLImageElement (`<img src="a_source">`) in the variable `img`, you can
+Let's say you got an instance (=object of a class) of a HTMLImageElement (`<img src="a_source">`) in the variable `img`, you can
 
 * set/get the properties like "alt, src, ..." with `img.alt`
 * use methods (like `img.getAttribute('src')` that is the same as `img.src`)
@@ -18,7 +18,7 @@ You can get the variable class and prototype with
 
 ## Creating a class
 
-Everything is quite familiar with what you are doing in Java/PHP, aside that you can only have one constructor.
+Everything is quite familiar with what you are doing in Java/PHP, but you can only have one constructor (same as PHP).
 
 ```js
 class Person {

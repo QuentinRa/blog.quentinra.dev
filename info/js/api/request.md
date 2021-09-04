@@ -2,7 +2,7 @@
 
 [Go back](../index.md#rest-api)
 
-You will use **XMLHttpRequest** to make a request. As you should know by now, you can make requests such as "GET", "POST", "PUT", "DELETE", etc. The code is pretty straightforward, aside the fact that the code is **asynchronous**.
+You will use **XMLHttpRequest** to make a request. As you should know by now, you can make requests such as "GET", "POST", "PUT", "DELETE", etc. The code is pretty straightforward, aside from the fact that the code is **asynchronous**.
 
 <hr class="sl">
 

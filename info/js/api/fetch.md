@@ -2,7 +2,7 @@
 
 [Go back](../index.md#rest-api)
 
-`fetch` is the same as wrapping a XMLHTTPRequest inside a Promise. We are making the request with almost no syntax, and fetch is returning a promise. This is a new function available in 2015 (fully available in 2017).
+`fetch` is the same as wrapping an XMLHTTPRequest inside a Promise. We are making a request with almost no syntax, and fetch is returning a promise. This is a new function available in 2015 (fully available in 2017).
 
 ```js
 // GET URL

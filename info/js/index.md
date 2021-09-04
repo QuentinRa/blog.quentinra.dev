@@ -1,15 +1,15 @@
 # JavaScript
 
-JavaScript (JS) base is made of the scripting language ECMAScript. We are currently in **ECMAScript2021** (v12). The most used version of JavaScript is **ECMAScript6** (2015). In the ancient times, JQuery was a popular library adding a lot of useful stuffs in Javascript, but now quite a lot of these are directly served in Javascript, so modern developers aren't using as often as before <small>(because removing it makes the website faster, increasing both performances and SEO)</small>. For instance, Boostrap (the famous CSS framework) removed the jQuery dependency in version 5 <small>(dropping Internet explorer support in the meantime)</small>.
+JavaScript (JS) base is made of the scripting language ECMAScript. We are currently in **ECMAScript2021** (v12). The most used version of JavaScript is **ECMAScript6** (2015). In the ancient times, jQuery was a popular library adding a lot of useful stuff in JavaScript, but now quite a lot of these are directly served in JavaScript, so modern developers aren't using it as often as before <small>(because removing it makes the website faster, increasing both performances and SEO)</small>. For instance, Bootstrap (the famous CSS framework) removed the jQuery dependency in version 5 <small>(dropping Internet Explorer support in the meantime)</small>.
 
 * Learn the syntax
 * How to validate a form (errors, autocompletion, ...)
 * Handling events (clicks, show/hide something, ...)
 * [Riot.js](https://riot.js.org/) (not available)
 * How to use Web APIs (Rest, Ajax, promises, ...)
-* My list of Javascript libraries
+* My list of JavaScript libraries
 
-As always, you may learn JavaScript on [W3School](https://www.w3schools.com/Js/default.asp) or [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction). But, maybe those two may be worth a go [javascript.com](https://www.javascript.com/learn/strings) and [javascript tutorial](https://www.javascripttutorial.net/).
+As always, you may learn JavaScript on [W3School](https://www.w3schools.com/Js/default.asp) or [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction). But, maybe those two may be worth a go [javascript.com](https://www.javascript.com/learn/strings) and [JavaScript tutorial](https://www.javascripttutorial.net/).
 
 > **Note**: As you may have seen in the CSS course, instead of writing JavaScript, you can write **TypeScript** (sort of enhanced JavaScript) and **compile it in any version of JavaScript**. You can use [JS minifier](https://javascriptminifier.com/) to reduce the size of your JavaScript (decrease the loading time), and a CDN (see the WEB course).
 > 
@@ -52,7 +52,7 @@ You can write JS in an external write, and link it to the HTML with
 <script src="/path/to/file.js"></script>
 ```
 
-Same as I told you for CSS, this is the proper way to do (allows the use of CDN, JS in one place, CSP etc.).
+Same as for CSS, this is the proper way to do it (allows the use of CDN, JS in one place, CSP, etc.).
 
 </td>
 </tr>
@@ -73,7 +73,7 @@ alert('message')
 <details class="pt-3">
 <summary><b>HELP!</b> I wrote some JavaScript, but I don't see any changes!?</summary>
 
-They may be two problems **1**: your code isn't working, or **2**: your page is rendering using the cached JavaScript.
+They may be two problems, **1**: your code isn't working, or **2**: your page is rendering using the cached JavaScript.
 
 * for **1**: check for errors in the console, try testing selectors in the console too
 * for **2**: <kbd>CTRL+R</kbd> or <kbd>CTRL+SHIFT+R</kbd> or <kbd>SHIFT+F5</kbd> or <kbd>CTRL+F5</kbd>.
@@ -149,7 +149,7 @@ You can add ["use strict"](https://www.w3schools.com/js/js_strict.asp) inside a 
 
 ## Advanced syntax
 
-Advanced do not mean more complex, it mean that you may not use this right now.
+Advanced does not mean more complex, it means that you may not use this right now.
 
 * [Spread syntax](syntax/spread.md)
 
@@ -157,7 +157,7 @@ Advanced do not mean more complex, it mean that you may not use this right now.
 
 ## JavaScript for websites
 
-We are calling DOM the Document Object Model. The tags of your page are a tree, you got html, then head/body, etc. This is what the DOM is. You got a variable called `document` (shortcut of `window.document`), and you may ask it about node inside the tree.
+We are calling DOM the Document Object Model. The tags of your page are a tree, you got html, then head/body, etc. This is what the DOM is. You got a variable called `document` (shortcut of `window.document`), and you may ask it about some nodes inside the tree.
 
 * [document](web/document.md)
 * [window](web/window.md)
@@ -168,13 +168,13 @@ We are calling DOM the Document Object Model. The tags of your page are a tree, 
 
 ## REST API
 
-You got another course "API", explaining what's an API and a lot of related stuff. Lets take the [Musicbrainz API](https://musicbrainz.org/doc/MusicBrainz_API) for example,
+You got another course "API", explaining what's an API and a lot of related stuff. Let's take the [Musicbrainz API](https://musicbrainz.org/doc/MusicBrainz_API) for example,
 
 * [this URL](https://musicbrainz.org//ws/2/release?artist=65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab&status=bootleg&type=live&limit=1&fmt=json) is returning **one album** made by [Autechre](https://en.wikipedia.org/wiki/Autechre).
-* Here, we are considering that, like the URL above, you got an URL allowing you to fetch a result from your API
+* Here, we are considering that, like the URL above, you got a URL allowing you to fetch a result from your API
 * I'm going to explain how from this URL, you can get the result and use it in your code
 
-When you are calling an API, you are requesting something from another website, this is not immediate. If you are waiting for the result, you won't be able to use JavaScript until the call is done (😨). We are making **asynchronous calls** (=in parallel of your code) to prevent this. I was taught XMLHTTPRequest, which need to be wrapped inside a **Promise** (asynchronous code) but **fetch** <small>(native function)</small> is already doing this making the code cleaner than ever.
+When you are calling an API, you are requesting something from another website, this is not immediate. If you are waiting for the result, you won't be able to use JavaScript until the call is done (😨). We are making **asynchronous calls** (=in parallel to your code) to prevent this. I was taught XMLHTTPRequest, which need to be wrapped inside a **Promise** (asynchronous code) but **fetch** <small>(native function)</small> is already doing this making the code cleaner than ever.
 
 * [XMLHttpRequest](api/request.md)
 * [Promises](api/promises.md)
@@ -186,13 +186,13 @@ When you are calling an API, you are requesting something from another website, 
 
 ## My list of JavaScript libraries
 
-This is more like a list of libraries to make some animations that a list of libraries 😋.
+This is more like a list of libraries to make some animations than a list of libraries 😋.
 
 <details class="details-border">
 <summary>Title</summary>
 <br>
 
-With [anime.js](https://animejs.com/) you do something like [this hand written animation](https://codepen.io/mellis84/pen/JpVZNw)
+With [anime.js](https://animejs.com/) you do something like [this handwritten animation](https://codepen.io/mellis84/pen/JpVZNw)
 
 <div style="width: 500px;">
 
@@ -225,14 +225,14 @@ You can create a sort of image flipper with [preloadjs](https://www.createjs.com
 
 You can make a lot of funny animations with [anime.js](https://codepen.io/collection/XLebem/?grid_type).
 
-You can use [Turn.js](http://turnjs.com/) to make a book with flippable pages but I didn't like it. [StPageFlip](https://nodlik.github.io/StPageFlip/) seems better. [PDF.js](http://www.page-flip.info/newspaper_wp/pdf-flipbook/#book_pdf/13) is beautiful too.
+You can use [Turn.js](http://turnjs.com/) to make a book with flippable pages, but I didn't like it. [StPageFlip](https://nodlik.github.io/StPageFlip/) seems better. [PDF.js](http://www.page-flip.info/newspaper_wp/pdf-flipbook/#book_pdf/13) is beautiful too.
 </details>
 
 <details class="details-border">
 <summary>Plots</summary>
 <br>
 
-[d3.js](https://www.d3-graph-gallery.com/index.html) is the most well-know library.
+[d3.js](https://www.d3-graph-gallery.com/index.html) is the most well-known library.
 </details>
 
 <hr class="sl">
@@ -268,4 +268,4 @@ Any cheatsheet is longer and more complete than this course 😭. Still, this on
 * <https://javascript.pythoncheatsheet.org/>
 * <https://mbeaudru.github.io/modern-js-cheatsheet/>
 
-If would really want to read everything [jframer](https://github.com/jfarmer) made, but it didn't even start yet (🙃). Maybe you will?
+I would really want to read everything [jframer](https://github.com/jfarmer) made, but it didn't even start yet (🙃). Maybe you will?

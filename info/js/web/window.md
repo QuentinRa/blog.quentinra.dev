@@ -8,8 +8,7 @@ I only used the localStorage, but feel free to add more content here.
 
 ## Storage
 
-You may use the ``localStorage`` to store data
-in Javascript, that you can use on another page.
+You may use the ``localStorage`` to store data in JavaScript, which you can use on another page.
 
 ```js
 // get the value for it's key, null if not found 
@@ -25,8 +24,7 @@ localStorage.removeItem('key')
 localStorage.clear()
 ```
 
-Most of the times, you will have to use JSON to serialize
-data.
+Most of the time, you will have to use JSON to serialize data.
 
 * ``JSON.stringify(v)``: convert v to a string
 * ``JSON.parse(string)``: parse back a string to a value

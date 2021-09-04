@@ -2,7 +2,7 @@
 
 [Go back](../index.md#basic-syntax)
 
-A function is a bloc of code that you grouped and that you can call whenever you feel like it.
+A function is a block of code that you grouped and that you can call whenever you feel like it.
 
 ```js
 function pow(x) {
@@ -46,7 +46,7 @@ function pow(x, k) {
 
 ## Anonymous/Arrow functions
 
-Usually function are declared for the whole script, but you can declare a local function like this (ex: to store a function inside a variable, and pass it as an argument later).
+Usually, functions are declared for the whole script, but you can declare a local function like this (ex: to store a function inside a variable, and pass it as an argument later).
 
 ```js
 let pow = (x, k = 1) => {
@@ -67,9 +67,9 @@ let example = (v) => 5;
 
 <hr class="sl">
 
-## Other stuffs
+## Other stuff
 
-You should look at **Closures** that are are a well explained [on W3School](https://www.w3schools.com/js/js_function_closures.asp).
+You should look at **Closures** that are well explained [on W3School](https://www.w3schools.com/js/js_function_closures.asp).
 
 You should also look at **nested functions**, as explained [on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#nested_functions_and_closures).
 

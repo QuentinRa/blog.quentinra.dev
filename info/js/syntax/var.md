@@ -31,7 +31,7 @@ for(var j=0; j<5; j++) console.log('test')
 j // ok, j=5
 ```
 
-The problems using var (at least as often as you will see it on the outdated examples in the web)
+The problems using var (at least as often as you will see it on the outdated examples on the web)
 
-* you forgot to declare a variable, but since if was declared in the bloc xxx, 3000 lines before, then you won't get an error
+* you forgot to declare a variable, but since it was declared in the bloc xxx, 3000 lines before, then you won't get an error
 * in a loop, var=address so if you are passing j to a function, you may have a problem with $j$ having the wrong value (if you were planning to reference $j$)

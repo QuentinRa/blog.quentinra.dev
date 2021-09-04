@@ -2,7 +2,7 @@
 
 [Go back](../index.md#basic-syntax)
 
-Every usual operator is available, but you should be careful when checking the equality as we got two operators which are working differently (strict/non strict comparison).
+Every usual operator is available, but you should be careful when checking the equality as we got two operators which are working differently (strict/non-strict comparison).
 
 * `=` (assignation)
 * `+`, `-`, `*`, `/` 
@@ -15,7 +15,7 @@ Every usual operator is available, but you should be careful when checking the e
 
 As for testing the equality
 
-* `5 == "5"`: **true**, non strict comparison (value is the same)
+* `5 == "5"`: **true**, non-strict comparison (value is the same)
 * `5 === "5"`: **false**, strict comparison (type+value must be the same)
-* `5 != "5"`: **false**, non strict comparison (value is different)
+* `5 != "5"`: **false**, non-strict comparison (value is different)
 * `5 !== "5"`: **true**, strict comparison (type or value are different)

@@ -8,7 +8,7 @@ Most of the verifications are in HTML, but If you **can't check something in HTM
 
 ## onsubmit
 
-You can listen to the event "onsubmit" and return **true** if the form is valid or **false** if the user need to correct something (=cancel submit).
+You can listen to the event "onsubmit" and return **true** if the form is valid, or **false** if the user needs to correct something (=cancel submit).
 
 ```html
 <form onsubmit="return checkForm(this)"></form>

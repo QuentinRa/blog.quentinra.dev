@@ -32,7 +32,7 @@ with
 
 ## Linking events (JS)
 
-You can also add events manually, in a javascript file
+You can also add events manually, in a JavaScript file
 
 ```js
 // ...
@@ -45,9 +45,9 @@ b.removeEventListener("click", js_event, false)
 
 ## Event function
 
-It's a normal function but the function
+It's a normal function,
 
-* is taking `e` (the event that triggered the function)
+* taking `e` (the event that triggered the function)
 * usually calling `e.preventDefault();` to tells others that your function is handling the event (and to not do the default behavior)
 
 ```js

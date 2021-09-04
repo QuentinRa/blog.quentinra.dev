@@ -2,7 +2,7 @@
 
 [Go back](..#js-for-websites)
 
-Everyone know about `getElementById`, `getElementsByClassName`, and maybe `getElementsByTagName` too. These are shortcuts of `querySelector` that is working like the operator `$` in JQuery. I listed every function you may use too.
+Everyone knows about `getElementById`, `getElementsByClassName`, and maybe `getElementsByTagName` too. These are shortcuts of `querySelector` that is working like the operator `$` in JQuery. I listed every function you may use too.
 
 <hr class="sl">
 

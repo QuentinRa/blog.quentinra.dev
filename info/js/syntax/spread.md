@@ -2,7 +2,7 @@
 
 [Go back](..#advanced-syntax)
 
-The spread syntax `...` allow us to expand an array. For instance, let's say you got an array with $[1,2,3,4]$, you could create a new one with the same values like this
+The spread syntax `...` allows us to expand an array. For instance, let's say you got an array with $[1,2,3,4]$, you could create a new one with the same values, like this
 
 ```js
 let array = [1,2,3,4];
@@ -19,7 +19,7 @@ What we did was make convert back an array to a sequence of values and the array
 let copy = [1, 2, 3, 4] // good copy
 ```
 
-You can also used it to clone an object with `{...obj}`.
+You can also use it to clone an object with `{...obj}`.
 
 <hr class="sl">
 

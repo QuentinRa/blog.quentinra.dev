@@ -29,7 +29,7 @@ doAsynchronousJob()
 
 ## With XMLHTTPRequest?
 
-We simply need to call resolve/reject instead of handling the result/failure inside "myFunction". This is allowing us to factorize/clean the code (a least it will be a bit cleaner 🙄).
+We simply need to call resolve/reject instead of handling the result/failure inside "myFunction". This is allowing us to factorize/clean the code (at least it will be a bit cleaner 🙄).
 
 ```js
 function myFunction() {

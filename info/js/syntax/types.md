@@ -18,7 +18,7 @@ As you saw, we don't specify the variable type when creating a variable. The typ
 
 You can use 
 
-* `typeof variable`: return the type of a variable,
+* `typeof variable`: return the type of variable,
 mainly used in well-written functions
 * `var instanceof className` returning a boolean if
 this variable is an instance of a class 
@@ -40,7 +40,7 @@ console.log(`the variable value is ${variable}`)
 
 You may use some function like (str and str2 are strings)
 
-* `str.length`: get number of characters
+* `str.length`: get the number of characters
 * `str.indexOf(str2)`: first index of str2 in str
 * `str.lastIndexOf(str2)`: last index of str2 in str
 * `str.toLowerCase()`: str to lower case
@@ -50,7 +50,7 @@ You may use some function like (str and str2 are strings)
 * `str.trim()`: remove spaces before/after str
 *  substring, slice, substr, concat, ...
 
-You may notice that `str[0]` is returning the first character but that's useless trying to modify the values like this.
+You may notice that `str[0]` is returning the first character, but that's useless trying to modify the values like this.
 
 <hr class="sl">
 
@@ -67,8 +67,8 @@ new Array(5,"toto", "hello")
 
 It's working like in C/Java or many languages, `tab[0]` returns the first element of `tab`.
 
-* `array.length`: number of elements
-* `array.concat(array2)`: merge too arrays
+* `array.length`: the number of elements
+* `array.concat(array2)`: merge two arrays
 * `array.push(e)`: add an element
 * `array.pop()`: returns the last element
 * `array.reverse()`: reverse the array
@@ -78,4 +78,4 @@ It's working like in C/Java or many languages, `tab[0]` returns the first elemen
 * `array.sort(f)`: sort array with a sorting function `f(a,b)` returning `{-1,0,1}`
 * `array.slice().`: create a copy of an array
 
-You can, and may use slice a lot like `array.slice().reverse();`.
+You can, and may use, slice a lot like `array.slice().reverse();`.
