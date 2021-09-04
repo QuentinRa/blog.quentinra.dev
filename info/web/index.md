@@ -80,23 +80,20 @@ Then every time you want to upload files
 
 <hr class="sr">
 
-## Using the console
+## Developers' tools (or Devs Tools) 😍
 
-* press ``CTRL-SHIFT-I``
-* or right click then inspect
-* or ... > ... tools > development tools
+This is most likely the most important thing. Either by pressing **F12** (sometimes), **{Left-click} > Inspect**, or **Settings > ... tools > development tools**, or one of the shortcuts below, you can open it.
 
-In the console,
+* **Tools > elements** or **CTRL+SHIFT+I**: see the **HTML** code of the page, you can edit it, and you can see the **CSS**
+* **Tools > <i class="bi bi-box-arrow-in-up-left"></i>** or **CTRL+SHIFT+C**: easily find the code of something, by clicking on it after the mode was triggered
+* **Tools > <i class="bi bi-window"></i>** or **CTRL+SHIFT+M**: you can preview the appearance of your website on a phone/tablet/... (**responsive design in CSS**)
+* **Tools > Console**: you can execute some **JavaScript**, try `5+5`.
+* **Tools > Sources**: see the code source of the page
+* **Tools > Application**: see the localStorage (JS), the cookies (PHP), etc.
+* **Tools > Problems**: you can see problems using webhint
+* **Tools > LightHouse**: you can see the evaluation of a page by LightHouse (Google)
 
-* in ``elements``, you can check out the
-tags used inside the page.
-* in ``console``, you can look for the javascript logs
-and errors.
-* in ``problems`` (+ > problems), you can look for ways
-to improve your website
-
-By pressing ``CTRL-SHIFT-C``, you can find the tag
-in the HTML by simply moving your mouse.
+> **Note**: you may not have every menu that I listed here. Some are available after you enabled them (the + in edge, the "... > more tools" in chrome etc.).
 
 <hr class="sr">
 
@@ -141,35 +138,6 @@ you have humans filling the captcha, then you should
 really consider an alternative. On top of that, bots
 can also bypass a captcha (at least it seems so but I
 didn't try).
-
-<hr class="sr">
-
-## FileTransferProtocol (FTP)
-
-You may have a remote server where your website
-is hosted and you want to upload your files on it?
-Well you may use the command ``scp`` but you may also
-use the software [FileZilla](https://filezilla-project.org/).
-
-* once started,
-* File > Site Manager
-* New site (give it a name in the left column)
-  * SFTP (use ssh credentials to login)
-  * host (ex: `pedago-etu.ensiie.fr`, server url)
-  * ask for password
-  * user (ex: `firstname.lastname`)
-  * ok and close
-* Then now that the config is saved,
-* click on the right arrow near the logo below "File"
-* click on the configuration name
-* connect, click on "yes" (if first connection)
-* then you should be able to browser, open, send/get
-files on your remote server
-
-Some IDE (integrated development environment) like
-PHPStorm (Jetbrains) or VSCode allows you to directly code on the
-server (if needed), you may have a course for them
-in "tools".
 
 <hr class="sl">
 
