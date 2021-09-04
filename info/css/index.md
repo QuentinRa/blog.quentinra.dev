@@ -7,7 +7,7 @@ Cascading Style Sheets (CSS) are mainly used to style websites, and add some ani
 * List of CSS properties that I'm using the most
 * What's responsive design?
 
-> **Note**: as you are doing in HTML, good developer that you are 😎, you should test that your code is following the W3C standard [using this validator](https://jigsaw.w3.org/css-validator/#validate_by_input). You may also want to minimize your CSS (to make your page faster, as the size of the CSS will be reduced), you can do that with a [CSS minifier](https://css-minifier.com/). If you want to use a CDN, please refer to the WEB course.
+> **Note**: as you are doing in HTML, the good developer that you are 😎, you should test that your code is following the W3C standard [using this validator](https://jigsaw.w3.org/css-validator/#validate_by_input). You may also want to minimize your CSS (to make your page faster, as the size of the CSS will be reduced), you can do that with a [CSS minifier](https://css-minifier.com/). If you want to use a CDN, please refer to the WEB course.
 >
 > I did use it yet (please add explanations if you did here), but you can use SASS to generate CSS, which is working like TypeScript for JavaScript, or PHP to factorize HTML code. It seems useful to make themes (dark, light).
 
@@ -52,7 +52,7 @@ You can put the CSS in another file, write the CSS as we did in style, and link 
       href="/path/to/style.css">
 ```
 
-This is the best way, as developers won't have to look every file for CSS. You will also be able to use CDN to speed up your website.
+This is the best way, as developers won't have to look at every file for CSS. You will also be able to use CDN to speed up your website.
 
 </td>
 </tr>
@@ -141,7 +141,7 @@ You can match a selector having every specified classes too.<br>You can also add
 <td>
 
 <b>Joker selector</b> 🃏<br>
-I may be the one one calling it like that.<br>
+I'm the only one calling it like that 😶.<br>
 You can use `*` to select everything <br> 
 (🤮 you should use body/html instead of `*`)
 </td>
@@ -162,7 +162,7 @@ You can use `*` to select everything <br>
 
 You can apply a style to something, but only the element is in a predefined state.
 
-You got `:active`, `:checked`, `:focus`, `:disabled`, `:visited` and many more. You also got `:first-child`, `last-child`, or `:nth-child(1)` to select a children.
+You got `:active`, `:checked`, `:focus`, `:disabled`, `:visited` and many more. You also got `:first-child`, `last-child`, or `:nth-child(1)` to select a child.
 
 </td>
 <td>
@@ -198,7 +198,7 @@ You got <code>=</code> (equals), <code>*=</code> (contains) etc.
 </tbody>
 </table>
 
-And there are three things that aren't selector, but you can use to factorize rules
+And these four aren't selector, but you can use to factorize rules
 
 <table class="table table-bordered table-striped border-dark">
 <thead><tr><th>Description</th><th>CSS</th></tr></thead>
@@ -257,18 +257,18 @@ Of course, you got more of them, as you can [read here (W3Schools)](https://www.
 
 ## Values
 
-Before digging in the properties, you must learn more about the values you can give them.
+Before digging into the properties, you must learn more about the values you can give them.
 
 <details class="details-border">
 <summary>Size</summary>
 <br>
 
-* a value (`0` is the only one that should not have an unit)
-* a value with an unit (`1px`, ...). The most used unit is **px** (default, pixels), but you may check **rem**, **pc**, or **vh**.
+* a value (`0` is the only one that should not have a unit)
+* a value with a unit (`1px`, ...). The most used unit is **px** (default, pixels), but you may check **rem**, **pc**, or **vh**.
 * a percent such as `100%`
 * an expression resulting in a value `calc(100% - 15px)`
 
-A lot of properties will usually take 4 values `t r b l` (respectively top-right-bottom-left). You can either use `property-top: value` (to only set top) or a shortcut
+A lot of properties will usually take 4 values `t r b l` (respectively top-right-bottom-left). You can either use `property-top: value` (to only set the top) or a shortcut
 
 * `padding: ALL;` (t=r=b=l=ALL)
 * `padding: Y X;` (t=b=Y, r=l=X)
@@ -291,7 +291,7 @@ You can use
 <summary>Variables</summary>
 <br>
 
-You may create variables (to store a color, a value etc.).
+You may create variables (to store a color, a value, etc.).
 
 <pre><code class="language-css"
 >/* declare */
@@ -323,7 +323,7 @@ Notes
 * the last style is applied ("*cascade*" 👈), or the last with important
 * you may use the value `inherit` to inherit the value of the parent
 
-Usually, when you are learning CSS, you will go to other website that you like, and learn by reading how they do something. You can also ask something on Stack Overflow, or you check websites such as W3Schools/Youtube (**don't copy-paste code, usually websites are under copyright**). I think that the best way to learn CSS, is to learn the syntax, then look on the WEB each time you need something new, and learn bit by bit, as there are **too much properties**.
+Usually, when you are learning CSS, you will go to other websites that you like, and learn by reading how they do something. You can also ask something on Stack Overflow, or you check websites such as W3Schools/YouTube (**don't copy-paste code, usually websites are under copyright**). I think that the best way to learn CSS, is to learn the syntax, then look on the WEB each time you need something new, and learn bit by bit, as there are **too many properties**.
 
 <hr class="sr">
 
@@ -417,7 +417,7 @@ Usually, when you are learning CSS, you will go to other website that you like, 
     cursor: pointer; /* change cursor to "click"=pointer cursor */
     outline: none; /* for button, outline shown on focus */
 
-    /** content is too big and a little space,
+    /** content is too big and the size is not enough,
     how should we handle the overflow?
      */
     overflow:hidden; /* hide */
@@ -439,16 +439,16 @@ This is almost everything I used, and I'm considering myself to be a beginner. Y
 |display: none;| same as the attribute hidden in HTML|
 |display: flex;| Read [about flex](https://www.w3schools.com/csS/css3_flexbox.asp), it's wonderful 😍 |
 |border: size solid color;| add a border |
-|padding|gap between a component and it's border| 
-|margin|gap between a component and the "outside"|
+|padding|gap between a component, and it's border| 
+|margin|gap between a component, and the "outside"|
 
 <hr class="sl">
 
 ## Responsive design
 
-This is most likely what will take the most of time, and why I switched to Bootstrap. Your user will use different resolution when visiting your website, different browsers, and different platforms (mobile, tablet, computer, etc.). This is your job, that the website is properly rendered on each platform, and that's a practice called **responsive design**.
+This is most likely what will take most of your time, and why I switched to Bootstrap. Your user will use different resolutions when visiting your website, different browsers, and different platforms (mobile, tablet, computer, etc.). This is your job, that the website is properly rendered on each platform, and that's a practice called **responsive design**.
 
-The first thing to do, is to add this line in your HTML, so that the website will try to adapt itself according to the size of the screen
+The first thing to do is to add this line in your HTML, so that the website will try to adapt itself according to the size of the screen
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -488,12 +488,12 @@ I never used CSS animations (hence you may complete this part), but here are som
 Guidelines
 
 * [List of guides](https://css-tricks.com/css-style-guides/)
-* [css guidelines](https://cssguidelin.es/#css-selectors)
+* [CSS guidelines](https://cssguidelin.es/#css-selectors)
 * [codeguide](https://codeguide.co/#css-syntax) (quite good, almost a summary of the two previous ones)
 
 CheatSheets
 
-* [Simple cheatsheet](https://devhints.io/css) (😍, not too much content, well made)
+* [Simple cheatsheet](https://devhints.io/css) (😍, not too much content, well-made)
 * [CSS - Reference](https://cssreference.io/) (quite good to get explanations about something)
 
 <hr class="sr">
