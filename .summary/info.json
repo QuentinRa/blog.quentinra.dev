@@ -10,6 +10,13 @@
       "icon": "<i class=\"bi bi-window\"></i>"
     },
     {
+      "tag": "web",
+      "name": "WEB",
+      "title": "Learn WEB-related knowledge",
+      "desc": "How to start, what you need to know, ... and everything that couldn't be put in a specific language course.",
+      "icon": "<i class=\"bi bi-globe\"></i>"
+    },
+    {
       "tag": "html",
       "name": "HTML",
       "title": "Learn HTML programming",

@@ -1,26 +1,25 @@
-# Introduction
+# Web programming
+
+There are a lot of knowledge and things that would not be relevant if they were added in a language-specific (security, adaptability, tools, seo, the HTTP protocol, the developers' tools, the FTP protocol, setting up a server, etc). Web programming is including a lot
+
+* the client-side, **Front-End**: interface between the back-end and the client
+  * **HTML**: the code of the page
+  * **CSS**: the design/style, you may use CSS frameworks (ex: Bootstrap)
+  * **JS**: adding scripts
+* the server-side, **Back-End**: how the request of the client is handled
+  * **PHP**: the code generating the HTML? Provide an API to your services? You may look for PHP Frameworks <small>(Symfony, Laravel, etc.)</small>
+  * **SQL**: or NoSQL/..., the data of your application
+  * **Node.js**: an alternative to PHP
+* **Full-Stack**: handling both Front and Back-End
+  * React native (mobile)
+  * Electron (desktop)
+
+<hr class="sl">
 
 When you write some URL in your browser, 
 you requested a page to a server. 
 The server returns to you a make page, written in **HTML**.
 When making a website, you got two sides to handle
-
-* the client-side, Front-End: what's the client will see
-* the server-side, Back-End: how you will handle the client request
-
-The languages used in Web are
-
-* **HTML**: making a page
-* **CSS**: adding CSS animations, style, ...
-* **JS**: adding JS animations, scripts, ...
-* **PHP** (+SQL): the server-side logic
-* **Node.js**: an alternative to PHP
-* **TypeScript**: "JavaScript with a compiler"
-
-The most well-known website to learn web development
-is [W3School](https://www.w3schools.com/) but most of the
-developers learn the basics the look at
-stack overflow issues when they got a problem.
 
 <hr class="sl">
 
