@@ -99,7 +99,10 @@ This is most likely the most important thing. Either by pressing **F12** (someti
 
 ## Security
 
-...
+I'm still learning, but here is my list
+
+* [Captcha](security/captcha.md): if you want to make sure that your users are real humans (ReCaptcha/hCaptcha)
+* [Front-End code exposed](security/code.md): your code is running in someone else browser, so they can do what they want with it
 
 <hr class="sl">
 
