@@ -1,89 +1,83 @@
-# wamp
+# Virtual local server
 
-AMP (Apache MySQL PHP) is a software installing the tools
-you will need. You can download a version, usually,
-we choose our OS Version like W=Windows, L=Linux
-and M=MacOS.
+[Go back](../index.md#webserver)
+
+We are usually using **AMP** (Apache MySQL PHP), a software installing the **3** tools you will need. You got 3 version, according to your OS: W=Windows, L=Linux and M=MacOS giving us **WAMP** on Windows.
 
 * [Wamp](https://www.wampserver.com/) or here [Wamp](https://ampps.com/wamp)
 * [Lamp](https://ampps.com/lamp)
 * [Mamp](https://www.mamp.info/en/mamp/windows/)
 
-When installing, if you need to add a browser
-but do not know where the exe file is,
-
-* right-click on the shortcut
-* open ... folder
-* right-click on the shortcut in the folder
-* open ... folder
-* done
-
-**Note**: you may need to restart the software
-at each startup.
-
-Your server will be served at
-``http://localhost/``.
-
-To write some php, go to your server folder.
-
-* Windows: ``C:\wamp64\www\index.php``
-* Linux: ``/var/www/html/index.php``
-
-The file shown at ``http://localhost/`` is
-``index.php``. You can create a new folder like
-``new_project\index.php`` and see open
-it in your browser at ``http://localhost/new_project/``
-or ``http://localhost/new_project/index.php``.
+> Note: when installing, you will be prompted to pick a browser. If yours is not in the list,
+> * write "Firefox" (example) in the search bar
+> * right-click -> open file location
+> * **again**, inside the folder, right-click -> open file location
+> * you should have your PATH now
 
 <hr class="sl">
 
-## Wamp
+## How do it works?
 
-Note that wamp on Windows will be available
-in the system trail like where you have your
-internet connection icon, sound icon, ...
+Once installed, you need to run it each time you start your computer (sometimes you don't have to). Check the trails icons (the icons next to your sound/battery/...). If AMP is started, you should see this
 
-If wamp is not present here then start it.
+![wamp icon](images/wamp.png)
+
+The location of your
+
+* **webserver root**: `C:\wamp64\www\` (`/var/www/html/` on Linux)
+  * for your path (if needed)
+  * left-click on the icon
+  * click on "www folder"
+* **base/root url**: `http://localhost/`
 
 <hr class="sr">
 
-## Change to MariaDB
+## Notes
 
-If you, like me, will use ``MariaDB`` then
-right-click on wamp in the system trail.
+<details class="details-border">
+<summary>Change to MariaDB</summary>
+<br>
+
+If you, like me, will use `MariaDB` then right-click on wamp in the system trail.
 
 * Settings
 * Disabled MySQL
 * Enable MariaDB
 
-Your database is at `http://localhost/phpmyadmin`.
+Your database is at `http://localhost/phpmyadmin`, with the credentials `root` and no password by default.
+</details>
 
-* root
-* no password
+<details class="details-border">
+<summary>Change the Lang</summary>
+<br>
 
-by default.
+Right-click on wamp in the system trail then in lang menu.
+</details>
 
-<hr class="sl">
+<details class="details-border">
+<summary>Change PHP/... version</summary>
+<br>
 
-## Change the lang
+Left-click on wamp in the system trail. You can enable and disabled PHP modules here too.
+</details>
 
-Right-click on wamp in the system trail
-then in lang menu.
-
-<hr class="sr">
-
-## Change xxx version
-
-Left-click on wamp in the system trail
-You can enable and disabled PHP modules here too.
-
-<hr class="sl">
-
-## Postgre
+<details class="details-border">
+<summary>Use PostgreSQL</summary>
+<br>
 
 * <https://www.enterprisedb.com/downloads/postgres-postgresql-downloads>
 
 Don't forget to restart!
 
-* ``psql -U user``
-* ``pgadmin``
+* `psql -U user`
+* `pgadmin`
+</details>
+
+<details class="details-border">
+<summary>Use <b>Virtual Hosts</b></summary>
+<br>
+
+Sometimes, you don't want to have the URL `http://localhost/.../`, but maybe, the real URL of your website?
+
+Left-click on wamp in the system trail. Click on virtual hosts, and you will be able to add one easily.
+</details>
