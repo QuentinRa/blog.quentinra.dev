@@ -40,6 +40,7 @@
 - web
   - https://codesandbox.io/
   - https://vercel.com/
+  - https://raymii.org/s/tutorials/Strong_SSL_Security_On_Apache2.html
   - seo
     - https://www.webpagetest.org/
     - https://www.uptrends.com/tools

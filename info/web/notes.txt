@@ -17,11 +17,7 @@
 
 * [add rel attribute to external links](security/links.md)
 * [Website headers](security/headers.md)
-* [Subresource Integrity](security/sri.md)
 
 **Others**
-
-* you may use images .webp images instead of PNG/JPG
-* you may use async/defer to delay the loading of your scripts
 
 https://testssl.sh/

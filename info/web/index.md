@@ -104,6 +104,7 @@ I'm still learning, but here is my list
 * [Captcha](security/captcha.md): if you want to make sure that your users are real humans (ReCaptcha/hCaptcha)
 * [Front-End code exposed](security/code.md): your code is running in someone else browser, so they can do what they want with it
 * [Secure Apache server](security/apache.md)
+* [Subresource Integrity (SRI)](security/sri.md): it's good to use CDN, but did you know that there are risks?
 
 <hr class="sl">
 
@@ -118,6 +119,7 @@ I'm still learning, but here is my list
 ## Performance and best practices
 
 * [Content delivery network (CDN)](performance/cdn.md): they are making your website faster (because they are faster than loading local resources)
+* you may use images .webp images instead of PNG/JPG
 
 <hr class="sl">
 
