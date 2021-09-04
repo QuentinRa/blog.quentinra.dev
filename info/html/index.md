@@ -310,7 +310,7 @@ I can't use Markdown tables because the content is too complex 😭, it may the 
 
 The tags main, header, footer, section, etc. introduced in HTML5 are simply named divs. A div is a container, allowing you to group tags. This makes the code more readable, and later, it may help if you want to apply a style to a group of components.
 
-Note that a div is "invisible", meaning that the user won't see any changes if you used a div or not.
+Note that a div is "invisible", meaning that the user won't see any difference between the code with or without a div.
 
 ```html
 <div>
@@ -321,6 +321,7 @@ Note that a div is "invisible", meaning that the user won't see any changes if y
     </p>
 </div>
 ```
+
 <hr class="sl">
 
 ## Learn the tags: style
