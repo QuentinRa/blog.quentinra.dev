@@ -116,7 +116,7 @@ I'm still learning, but here is my list
 
 ## Performance and best practices
 
-...
+* [Content delivery network (CDN)](performance/cdn.md): they are making your website faster (because they are faster than loading local resources)
 
 <hr class="sl">
 

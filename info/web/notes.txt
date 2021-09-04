@@ -3,7 +3,6 @@
 
 **Accessibility**
 
-* [Apple touch icon](accessibility/apple-touch.md)
 * [Sitemap](accessibility/sitemap.md)
 
 **SEO (Search Engine Optimization)**
@@ -11,8 +10,6 @@
 * [Titles](seo/titles.md)
 * [Descriptions](seo/descriptions.md)
 * [OG/twitter meta](seo/og-twitter.md)
-* [robots.txt](seo/robots.md)
-* [human.txt](seo/human.txt.md)
 * [Structured Data](seo/structured.md)
 * [Scanners and SEO's tools](seo/tools.md)
 
@@ -26,7 +23,6 @@
 **Others**
 
 * you may use images .webp images instead of PNG/JPG
-* you may use [CDN](seo/cdn.md)
 * you may use async/defer to delay the loading of your scripts
 
 https://testssl.sh/
