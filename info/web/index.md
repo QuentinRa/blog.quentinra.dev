@@ -106,9 +106,11 @@ I'm still learning, but here is my list
 
 <hr class="sl">
 
-## Adaptability
+## Accessibility
 
-...
+* [Apple touch icon](accessibility/apple-touch.md): something for Apple's users
+* [robots.txt](accessibility/robots.md): for robots
+* [humans.txt](accessibility/humans.md): for humans
 
 <hr class="sr">
 
