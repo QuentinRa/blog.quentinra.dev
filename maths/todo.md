@@ -24,6 +24,9 @@
   - https://medium.com/@marin892/test-statistic-cheat-sheet-z-t-f-and-chi-squared-58f4d9db5b99
   - links and notes
   - chi2
+  - https://www.dataschool.io/15-hours-of-expert-machine-learning-videos/
+  - https://www.statlearning.com/resources-first-edition
+  - https://www.sfds.asso.fr/fr/enseignement_de_la_statistique/ressources/enseignement_superieur/597-par_thematiques
 - complexity
   - course?
   - note ANM

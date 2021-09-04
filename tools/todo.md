@@ -12,6 +12,8 @@
   - git reset
   - git filter-branch
   - https://chris.beams.io/posts/git-commit/#seven-rules
+  - https://github.com/KnpLabs/php-github-api
+  - https://docs.github.com/en/graphql/overview/explorer
 - Unity
   - read links
   - watch videos
