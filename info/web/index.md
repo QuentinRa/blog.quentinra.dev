@@ -38,7 +38,7 @@ You are using the HTTP protocol, when your browser is requesting something from 
 * `GET URL`: get a resource from the SERVER
 * `POST URL`: create a resource on the server <small>(ex: create an account)</small>
 * `PUT URL`: modify a resource on the server <small>(ex: update an user's email, or add it if it didn't have one)</small>
-* `PATCH`: same as PUT, but can't create a new resource
+* `PATCH URL`: same as PUT, but can't create a new resource
 * `DELETE URL`: delete a resource on the server <small>(ex: delete account)</small>
 </details>
 
@@ -97,93 +97,30 @@ This is most likely the most important thing. Either by pressing **F12** (someti
 
 <hr class="sr">
 
-## Captcha
+## Security
 
-In some cases, you should use a captcha ("I'm not a robot").
-Someone may write a script trying
-to bruteforce your login form. You can add a captcha
-and check on your server that the captcha got submitted
-before processing the login form.
-
-The most-well know solution is ReCaptcha (v2 / v3)
-of google. In v3, you won't have to process a captcha
-but google will watch what you are doing (mouse, ...)
-and may request you to submit a captcha if your
-(human) score is too low. Check their
-tutorial [here](https://developers.google.com/recaptcha/intro)
-
-* (v2) put a html tag looking like that `` <div class="g-recaptcha" data-sitekey=""></div>``
-* (v2) in your PHP
-
-```php
-$post_data = array('secret' => 'your-secret-key', 'response' => 'data-site-key');
-// send post request
-// ...
-// to https://www.google.com/recaptcha/api/siteverify
-// and check the result
-```
-
-You may consider [hcaptcha](https://www.hcaptcha.com/) as
-an alternative to ReCaptcha.
-
-Adding a captcha should not be an easy choice. It may
-not be a good idea.
-
-* You can start first by limiting the number the number of request per ip and hour/...
-* You can add a captcha if an user failed to login once
-* or you can use something like ReCaptchaV3
-
-What you need to remember is that, if most of the times
-you have humans filling the captcha, then you should
-really consider an alternative. On top of that, bots
-can also bypass a captcha (at least it seems so but I
-didn't try).
+...
 
 <hr class="sl">
 
-## SECURITY
+## Adaptability
 
-Did you notice? I used UPPERCASE letters because it's important.
-In HTML/CSS/JS, you can't do much since the user can
-see and modify your code (console > sources) but well in
-PHP, you will have to handle SQL injections (and many more). 
-
-Aside from that, you will have advices in the CyberSecurity 
-course, "web" section. You may look at the next part too.
+...
 
 <hr class="sr">
 
-## Websites' improvements summary
+## Performance and best practices
 
-I'm stacking here, everything that I learned to improve my websites. You should inspect first your website using online checkers
+...
 
-* you should known about <https://validator.w3.org/>
-* but, you should look at <https://webhint.io/> too
+<hr class="sl">
 
-**Accessibility**
+## Search Engine Optimization (SEO)
 
-* [Apple touch icon](accessibility/apple-touch.md)
-* [Sitemap](accessibility/sitemap.md)
+...
 
-**SEO (Search Engine Optimization)**
+<hr class="sr">
 
-* [Titles](seo/titles.md)
-* [Descriptions](seo/descriptions.md)
-* [OG/twitter meta](seo/og-twitter.md)
-* [robots.txt](seo/robots.md)
-* [human.txt](seo/human.txt.md)
-* [Structured Data](seo/structured.md)
-* [Scanners and SEO's tools](seo/tools.md)
+## Sources
 
-**Security**
-
-* [Hide Apache server version](security/apache.md)
-* [add rel attribute to external links](security/links.md)
-* [Website headers](security/headers.md)
-* [Subresource Integrity](security/sri.md)
-
-**Others**
-
-* you may use images .webp images instead of PNG/JPG
-* you may use [CDN](seo/cdn.md)
-* you may use async/defer to delay the loading of your scripts
+...
