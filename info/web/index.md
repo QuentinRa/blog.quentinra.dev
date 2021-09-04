@@ -57,7 +57,28 @@ As you will read in the HTMl course, you don't need a server an use the file pro
 
 Sometimes some students don't want to set up a server and directly work on the remote server. You will need to upload using the FTP protocol (or scp) your files **everytime** you changed something. Some IDEs such as [PHPStorm](../../tools/jetbrains/index.md#phpstorm) or [VSCode](https://code.visualstudio.com/docs/remote/ssh) that are **automatically updating the files on a remote server** when you changed something. Anyways, I think **you should work in local, for security-related purposes**.
 
-<hr class="sl">
+<details>
+<summary>You will use the <b>FTP protocol</b> (or the command <code>scp</code>) to send files on a remote server. I'm using a software on Windows, called <a href="https://filezilla-project.org/" target="_blank" rel="noopener noreferrer">FileZilla</a>.</summary>
+<br>
+
+* once started, go to File > Site Manager
+* New site (give it a name in the left column)
+  * SFTP (use ssh credentials to login)
+  * host (ex: `pedago-etu.ensiie.fr`, server url)
+  * check ask for password
+  * user (ex: `firstname.lastname`)
+  * ok and close
+* Then now that the config is saved,
+
+Then every time you want to upload files
+
+* click on the right arrow near the logo below "File"
+* click on the configuration name
+* connect, click on "yes" (if this is the first connection)
+* then you should be able to browser, open, send/get files on your remote server
+</details>
+
+<hr class="sr">
 
 ## Using the console
 
