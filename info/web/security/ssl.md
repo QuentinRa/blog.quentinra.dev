@@ -64,7 +64,7 @@ SSLHonorCipherOrder off
 
 ## OCSP Stapling
 
-> As this [page is explaining](https://cwiki.apache.org/confluence/display/httpd/OCSPStapling), this allows your clients to <q>efficiently check that your server certificate has not been revoked</q>.
+> As this [page is explaining](https://cwiki.apache.org/confluence/display/httpd/OCSPStapling), this allows your clients to <q>efficiently check that your server certificate has not been revoked</q>. [Another good article](https://raymii.org/s/tutorials/OCSP_Stapling_on_Apache2.html).
 
 <details class="details-e">
 <summary>Some code</summary>
