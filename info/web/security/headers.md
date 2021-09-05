@@ -146,7 +146,7 @@ What values should I give to my headers?
 * either check [the headers of the top websites](https://owasp.org/www-project-secure-headers/#div-top) (enter the command on your PC, the result changed)
 * or read [OWASP proposal](https://owasp.org/www-project-secure-headers/#div-bestpractices) (the page seems a bit old)
 
-**And**, you can read [OWASP guide](https://owasp.org/www-project-secure-headers/) about secure headers, as I did to make this page <small>(through, I discovered their guide after doing my headers 😭)</small>.
+**And**, you can read [OWASP guide](https://owasp.org/www-project-secure-headers/) about secure headers, as I did to make this page <small>(through, I discovered their guide after doing my headers 😭)</small>. You got a [quick reference here too](https://web.dev/security-headers/) by **Google**.
 
 <hr class="sr">
 
