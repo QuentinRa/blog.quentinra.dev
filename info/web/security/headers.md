@@ -139,6 +139,7 @@ You can test your headers
 * [gf.dev](https://gf.dev/secure-headers-test)
 * [Venom](https://github.com/ovh/venom) (test internal website, read [this gist](https://gist.github.com/righettod/f63548ebd96bed82269dcc3dfea27056#gistcomment-3630811))
 * [Postman](https://www.postman.com/) (software)
+* `curl -I https://memorize.be/` (😎, but no advice like others have 😶)
 
 What values should I give to my headers?
 

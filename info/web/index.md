@@ -116,6 +116,7 @@ I'm still learning, but here is my list
 * [SSL practices](security/ssl.md): some notes about SSL (SSL+TLS, secure protocols for HTTPS)
 * [Headers](security/headers.md): often overlooked, but the headers send with your page will increase the security, and prevent some well-known attacks
 * [add rel attribute to external links](security/links.md): it seems unneeded as of 2021
+* [forbidden usernames](security/usernames.md): do not let users take "root", "admin", ... as their username
 
 <hr class="sl">
 
@@ -133,6 +134,7 @@ I'm still learning, but here is my list
 * [Content delivery network (CDN)](performance/cdn.md): they are making your website faster (because they are faster than loading local resources)
 * you may use images .webp images instead of PNG/JPG
 * [imagekit.io](https://imagekit.io/): proposing services to handle your images (optimization, etc.) for free up to 20Gb of bandwidth/month (not tested 😶)
+* I'm not too familiar with this, but this article about [HTTP Cache](https://web.dev/http-cache/) is good
 
 <hr class="sl">
 

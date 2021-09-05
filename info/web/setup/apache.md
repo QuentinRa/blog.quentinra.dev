@@ -52,7 +52,7 @@ apachectl start
 
 <hr class="sr">
 
-## Awstats
+## Reports/Website stats
 
 <details>
 <summary>You generate reports from your apache logs using <b>awstats</b>. It was used by OVH but they moved to their own-made tool in the late 2020. I used it with the command line, like this</summary>
@@ -85,3 +85,5 @@ sudo perl /usr/local/awstats/tools/awstats_buildstaticpages.pl -config=website_u
 ls -la /tmp/folder/awstats.website_url_or_name.pdf
 ```
 </details>
+
+You can also check [goaccess](https://goaccess.io/).

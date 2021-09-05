@@ -25,6 +25,8 @@
   - https://scotch.io/tutorials/a-beginners-guide-to-composer
   - https://www.php-fig.org/psr/psr-1/
   - https://www.php-fig.org/psr/psr-2/ => https://www.php-fig.org/psr/psr-12/
+  - PHP8.0
+  - https://php.watch/versions/8.1
   - mails
     - https://roundcube.net/
     - https://stackoverflow.com/questions/1092723/how-do-you-build-a-web-based-email-client-using-php
@@ -40,19 +42,7 @@
 - web
   - https://codesandbox.io/
   - https://vercel.com/
-  - https://raymii.org/s/tutorials/Strong_SSL_Security_On_Apache2.html
   - https://github.com/futurice/backend-best-practices
-  - https://www.zaproxy.org/
-  - https://en.wikipedia.org/wiki/Wikipedia:Username_policy
-  - https://forums.cpanel.net/threads/forbidden-usernames-on-whm.22154/
-  - PHP8.0
-  - https://php.watch/versions/8.1
-  - https://blog.stackpath.com/http-request-tools/
-https://imagekit.io/blog/ultimate-guide-to-http-caching-for-static-assets/
-https://web.dev/http-cache/
-https://goaccess.io/get-started
-https://www.keycdn.com/blog/log-analysis-tools
-see headers: curl -I https://memorize.be/
 - sql
   - https://sql.sh/
   - https://fxjollois.github.io/cours-sql/
@@ -63,6 +53,7 @@ see headers: curl -I https://memorize.be/
   - https://markdotto.com/2015/07/20/css-nesting/
 - cyber-security
   - https://github.com/OWASP/CheatSheetSeries
+  - https://www.zaproxy.org/
   - https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
   - https://github.com/OWASP/wstg
   - https://www.guru99.com/what-is-hacking-an-introduction.html
