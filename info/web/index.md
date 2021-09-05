@@ -115,6 +115,7 @@ I'm still learning, but here is my list
 * [Subresource Integrity (SRI)](security/sri.md): it's good to use CDN, but did you know that there are risks?
 * [SSL practices](security/ssl.md): some notes about SSL (SSL+TLS, secure protocols for HTTPS)
 * [Headers](security/headers.md): often overlooked, but the headers send with your page will increase the security, and prevent some well-known attacks
+* [add rel attribute to external links](security/links.md): it seems unneeded as of 2021
 
 <hr class="sl">
 
@@ -123,6 +124,7 @@ I'm still learning, but here is my list
 * [Apple touch icon](accessibility/apple-touch.md): something for Apple's users
 * [robots.txt](accessibility/robots.md): for robots
 * [humans.txt](accessibility/humans.md): for humans
+* [OG/twitter meta](seo/og-twitter.md): improve the short card shown for your website on Facebook, Twitter, and many applications using OpenGraph such as Discord
 
 <hr class="sr">
 
@@ -135,9 +137,28 @@ I'm still learning, but here is my list
 
 ## Search Engine Optimization (SEO)
 
-...
+* [Titles](seo/titles.md)
+* [Descriptions](seo/descriptions.md)
+* Do not use META KEYWORDS
+* [Sitemap](seo/sitemap.md): give the page search engines may index
+* [Structured Data](seo/structured.md): give information about the content of your website
 
 <hr class="sr">
+
+## Bunch of tools
+
+It's better when everything is automated, right? Here is my list of links that may provide tools (mostly free 🤑, <s>as you are the product</s>)
+
+**Check your code**
+
+* [W3C validator (HTML)](https://validator.w3.org/) (HTML)
+* [W3C Validator](https://jigsaw.w3.org/css-validator/) (CSS)
+
+**Check everything on a page/the whole website**
+
+* [WebHint](https://webhint.io/scanner/) (security, accessibility, compatibility, performance)
+
+<hr class="sl">
 
 ## Sources
 

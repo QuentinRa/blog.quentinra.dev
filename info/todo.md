@@ -125,6 +125,8 @@ see headers: curl -I https://memorize.be/
   - http://web4.ensiie.fr/~stefania.dumbrava/coursIBDPG.pdf
 - python
   - https://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html
+  - http://forhan.maths.free.fr/SNT-accueil.php
+  - https://programmingwithmosh.com/wp-content/uploads/2019/02/Python-Cheat-Sheet.pdf
 - API
   - https://github.com/controlook-zz/standards/blob/master/backend/rest-api-guidelines.md
 - linux
