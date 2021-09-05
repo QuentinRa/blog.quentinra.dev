@@ -16,26 +16,28 @@ You should **disable** any version of **TLS lesser than 2**, and **any version o
 
 Some are enabling everything, and disabling the bad protocols, but I unsure if this is really secure 🙄 (note: this for older versions of apache/openssl, so no).
 
+```apacheconf
+# edit /etc/apache2/sites-available/some_config.conf
+# Protocols: TLS 1.2, TLS 1.3
+SSLProtocol -all +TLSv1.3 +TLSv1.2
+# restart: sudo service apache2 restart
+```
+
 <hr class="sr">
 
 ## Disable bad encryption algorithms
 
 Disabling algorithm (=removing them from the CipherList), can make your website unavailable for the old versions of some browsers, but you can see that with ssllabs tool, and you got [Mozilla recommendation for Intermediate compatibility (recommended)](https://wiki.mozilla.org/Security/Server_Side_TLS) to help you.
 
-<hr class="sl">
-
-## On Apache
+<details class="details-e">
+<summary>Some examples</summary>
 
 ```apacheconf
 # edit /etc/apache2/sites-available/some_config.conf
-# Protocols: TLS 1.2, TLS 1.3
-SSLProtocol -all +TLSv1.3 +TLSv1.2
+# add, at the end, either 1) 2), 3) or sometime else
+# don't forget to restart when you're done
 # sudo service apache2 restart
-```
 
-Some examples of CipherSuites.
-
-```apacheconf
 #
 # Proposition 1)
 #
@@ -56,8 +58,38 @@ SSLCipherSuite ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-E
 # hard algorithms, so we let the client pick
 SSLHonorCipherOrder off
 ```
+</details>
 
-Notes
+<hr class="sr">
+
+## OCSP Stapling
+
+> As this [page is explaining](https://cwiki.apache.org/confluence/display/httpd/OCSPStapling), this allows your clients to <q>efficiently check that your server certificate has not been revoked</q>.
+
+<details class="details-e">
+<summary>Some code</summary>
+
+```apacheconf
+# use either 1) or 2), don't forget to restart
+# restart: sudo service apache2 restart
+
+# Proposition 1)
+# edit /etc/apache2/sites-available/some_config.conf
+# near the end
+SSLUseStapling On
+SSLStaplingCache "shmcb:logs/ssl_stapling(32768)"
+
+# Proposition 2)
+# in /etc/apache2/mods-available/ssl.conf
+# near the end
+SSLUseStapling On
+SSLStaplingCache shmcb:${APACHE_RUN_DIR}/ssl_stapling(32768)
+```
+</details>
+
+<hr class="sl">
+
+## Other notes for Apache
 
 * [SSLCompression](https://httpd.apache.org/docs/trunk/mod/mod_ssl.html#sslcompression) disabled by default, should stay disabled to prevent attacks such as [CRIME](https://en.wikipedia.org/wiki/CRIME).
 
