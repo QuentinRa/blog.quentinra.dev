@@ -10,7 +10,7 @@ The format is a XML file, you can these to generate one
 * <https://www.sitemapgenie.com/> (no limit or it seems so)
 * You can find some tools on github
 
-Once you created a sitemap, you have to send it to Google/Bing using their platform. 
+Once you created a sitemap, you have to send it to Google/Bing using their platform, as explained in this article about how [to submit your website to a search engine](https://ahrefs.com/blog/submit-website-to-search-engines/).
 
 <hr class="sl">
 

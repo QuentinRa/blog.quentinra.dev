@@ -132,6 +132,7 @@ I'm still learning, but here is my list
 
 * [Content delivery network (CDN)](performance/cdn.md): they are making your website faster (because they are faster than loading local resources)
 * you may use images .webp images instead of PNG/JPG
+* [imagekit.io](https://imagekit.io/): proposing services to handle your images (optimization, etc.) for free up to 20Gb of bandwidth/month (not tested 😶)
 
 <hr class="sl">
 
