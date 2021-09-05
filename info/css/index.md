@@ -171,6 +171,9 @@ You got `:active`, `:checked`, `:focus`, `:disabled`, `:visited` and many more. 
 button:hover { /* mouse over */ }
 :not(p) { /* ... */ }
 *:not(p) { /* same */ }
+:is(h1, h2) { /* either h1 or h2 */ }
+:where(...) { /* same, but
+ the specificity=0 */ }
 ```
 </td>
 <td>
@@ -321,6 +324,7 @@ Notes
 * the `;` (semicolon) is optional, but add it 👍
 * you may add `!important` to force a style 🤔
 * the last style is applied ("*cascade*" 👈), or the last with important
+  * to be accurate, each selector have a **specificity**, which is used to determine what property is the most relevant ([source](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity))
 * you may use the value `inherit` to inherit the value of the parent
 
 Usually, when you are learning CSS, you will go to other websites that you like, and learn by reading how they do something. You can also ask something on Stack Overflow, or you check websites such as W3Schools/YouTube (**don't copy-paste code, usually websites are under copyright**). I think that the best way to learn CSS, is to learn the syntax, then look on the WEB each time you need something new, and learn bit by bit, as there are **too many properties**.
