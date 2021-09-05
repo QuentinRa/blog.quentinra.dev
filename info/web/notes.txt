@@ -1,23 +1,10 @@
 * you should known about <https://validator.w3.org/>
 * but, you should look at <https://webhint.io/> too
-
-**Accessibility**
-
 * [Sitemap](accessibility/sitemap.md)
-
-**SEO (Search Engine Optimization)**
-
 * [Titles](seo/titles.md)
 * [Descriptions](seo/descriptions.md)
 * [OG/twitter meta](seo/og-twitter.md)
 * [Structured Data](seo/structured.md)
 * [Scanners and SEO's tools](seo/tools.md)
-
-**Security**
-
 * [add rel attribute to external links](security/links.md)
 * [Website headers](security/headers.md)
-
-**Others**
-
-https://testssl.sh/

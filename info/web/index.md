@@ -114,6 +114,7 @@ I'm still learning, but here is my list
 * [Secure Apache server](security/apache.md)
 * [Subresource Integrity (SRI)](security/sri.md): it's good to use CDN, but did you know that there are risks?
 * [SSL practices](security/ssl.md): some notes about SSL (SSL+TLS, secure protocols for HTTPS)
+* [Headers](security/headers.md): often overlooked, but the headers send with your page will increase the security, and prevent some well-known attacks
 
 <hr class="sl">
 
@@ -140,4 +141,4 @@ I'm still learning, but here is my list
 
 ## Sources
 
-...
+* <https://github.com/RaymiiOrg/raymiiorg.github.io>
