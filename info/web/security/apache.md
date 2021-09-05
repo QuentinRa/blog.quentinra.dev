@@ -2,7 +2,7 @@
 
 [Go back](../index.md#websites-improvements-summary)
 
-I'm not an expert in Security, but this is what I took note of. I learned a lot from [this article about apache-security-tips by tecmint](https://www.tecmint.com/apache-security-tips/).
+I'm not an expert in Security, but this is what I took note of. I learned a lot from [this article about apache-security-tips by tecmint](https://www.tecmint.com/apache-security-tips/). Note that you can "generate" your configurations [using the Mozilla Generator](https://ssl-config.mozilla.org/#server=apache).
 
 <hr class="sl">
 
@@ -17,7 +17,7 @@ sudo nano /etc/apache2/conf-enabled/security.conf
 sudo service apache2 restart
 ```
 
-<hr class="sl">
+<hr class="sr">
 
 ## Use .htaccess
 
@@ -52,4 +52,18 @@ RewriteRule /?(README.*|.ht*)$ - [F]
 
 # limit size for uploads
 LimitRequestBody 512000
+```
+
+<hr class="sl">
+
+## SSL CipherSuite
+
+It would be pretty useless to use HTTP, if someone can decrypt your communications, right? As this [website is explaining](https://bobcares.com/blog/apache-sslciphersuite-recommended/), you should define a SSLCipherSuite, and only [enable TLS >= v1.2](https://tecadmin.net/enable-tls-in-modssl-and-apache/). You can read this too, [Mozilla recommendation for Intermediate compatibility (recommended)](https://wiki.mozilla.org/Security/Server_Side_TLS).
+
+```apacheconf
+# /etc/apache2/sites-available/some_config.conf
+# sudo service apache2 restart
+
+# Protocols: TLS 1.2, TLS 1.3
+SSLProtocol -all +TLSv1.3 +TLSv1.2
 ```
