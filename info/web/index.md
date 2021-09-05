@@ -142,6 +142,7 @@ I'm still learning, but here is my list
 * Do not use META KEYWORDS
 * [Sitemap](seo/sitemap.md): give the page search engines may index
 * [Structured Data](seo/structured.md): give information about the content of your website
+* [Canonical URL](seo/canonical.md): as `/` and `/index.html` are the same page, what URL should I pick?
 
 <hr class="sr">
 
@@ -162,12 +163,19 @@ It's better when everything is automated, right? Here is my list of links that m
 * [Google's pagespeed](https://developers.google.com/speed/pagespeed/insights/) (performance)
 * [Google's Lighthouse](https://web.dev/measure/) (performance, accessibility, seo, best practices, **do not forget to click on view report**)
 * [SEO site checkup](https://seositecheckup.com/analysis) (seo, security), you can [test every tool individually](https://seositecheckup.com/tools) (limited to 1/day)
+* [webpagetest](https://www.webpagetest.org/) (😍 the best, seo, performance, security)
 
 **SEO-only**
 
 * [biq.cloud](https://biq.cloud/rank-intelligence/) (see your website ranking for a keyword, **need register**)
 * [siteliner](https://www.siteliner.com/) (**whole site, up to 250 pages**, seo)
-* [seo tools](https://www.sanderheilbron.nl/) (seo peek is the best 😍)
+* [seo tools](https://www.sanderheilbron.nl/) (seo peek is quite handy 😍)
+* [stats about a domain](https://www.gositestat.com/)
+* [seo tools: speed, cdn, headers](https://www.uptrends.com/tools)
+
+**Security-only**
+
+* [Snyk](https://snyk.io/website-scanner/) (my buddy 😏)
 
 **Others**
 

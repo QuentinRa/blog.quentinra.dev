@@ -42,17 +42,6 @@
   - https://vercel.com/
   - https://raymii.org/s/tutorials/Strong_SSL_Security_On_Apache2.html
   - seo
-    - https://www.webpagetest.org/
-    - https://www.uptrends.com/tools
-    - https://imagekit.io/
-    - https://www.gositestat.com/
-    - https://ahrefs.com/blog/structured-data/
-      https://ahrefs.com/blog/google-knowledge-graph/
-      https://ahrefs.com/blog/semantic-search/
-      https://ahrefs.com/blog/eat-seo/
-    - https://github.com/garmeeh/next-seo
-    - https://www.sanderheilbron.nl/seo-peek/instructions
-    - https://sitebulb.com/hints/indexability/canonical-tag-in-html-and-http-header/
     - https://thriveagency.com/news/how-to-check-if-google-is-caching-your-website-correctly/
       https://ahrefs.com/blog/how-to-increase-website-authority/
     - https://ahrefs.com/blog/submit-website-to-search-engines/
@@ -181,3 +170,9 @@ Gnuplot
 Coucera
 Netify
 Tensorflow
+
+---
+
+next.js
+https://github.com/garmeeh/next-seo
+react
