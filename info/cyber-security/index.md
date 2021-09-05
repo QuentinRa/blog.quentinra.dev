@@ -100,18 +100,6 @@ one your server and may be able to run it.
 
 * [FileUpload and ReverseScript](web/upload.md)
 
-[comment]: <> (When using URLs like``profile/5``, the user will)
-
-[comment]: <> (try to replace ``5`` by another value. You should remember)
-
-[comment]: <> (to check that he can do that for this page. You can)
-
-[comment]: <> (use software to automate this, but this time for forms)
-
-[comment]: <> (like a login one.)
-
-[comment]: <> (* [Login]&#40;web/login.md&#41;)
-
 <hr class="sl">
 
 ## Looking for someone

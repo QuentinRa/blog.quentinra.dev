@@ -118,6 +118,9 @@ I'm still learning, but here is my list
 * [Headers](security/headers.md): often overlooked, but the headers send with your page will increase the security, and prevent some well-known attacks
 * [add rel attribute to external links](security/links.md): it seems unneeded as of 2021
 * [forbidden usernames](security/usernames.md): do not let users take "root", "admin", ... as their username
+* [FORM (GET, POST) and URLs](security/url.md): for beginners, some note about "/user/{id}"
+
+You will get more notes in the Cybersecurity course.
 
 <hr class="sl">
 
