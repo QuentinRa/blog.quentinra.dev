@@ -108,7 +108,8 @@ The simple version would be `accelerometer=(), camera=(), geolocation=(), gyrosc
 </tbody>
 </table>
 
-**Some code**
+<details class="details-e">
+<summary>Some code</summary>
 
 ```apacheconf
 <VirtualHost *:443>
@@ -118,15 +119,48 @@ The simple version would be `accelerometer=(), camera=(), geolocation=(), gyrosc
     Header always set X-Frame-Options "deny"
     # set to 0
     # Header always set X-XSS-Protection "1; mode=block"
-    Header always X-XSS-Protection 0
+    Header always set X-XSS-Protection "0"
     Header always set X-Content-Type-Options "nosniff"
 
     # DO NOT FORGET TO SET Content-Security-Policy (CSP)
     # you must adapt this (add the host that your website can use)
-    Header always Content-Security-Policy "default-src 'none';script-src 'self';style-src 'self';img-src 'self';"
+    Header always set Content-Security-Policy "default-src 'none';script-src 'self';style-src 'self';img-src 'self';"
 
-    Header always Referrer-Policy "strict-origin-when-cross-origin"
-    Header always Cross-Origin-Resource-Policy "same-siteé"
-    Header always Permissions-Policy: accelerometer=(),autoplay=(),camera=(),display-capture=(),document-domain=(),encrypted-media=(),fullscreen=(),geolocation=(),gyroscope=(),magnetometer=(),microphone=(),midi=(),payment=(),picture-in-picture=(),publickey-credentials-get=(),screen-wake-lock=(),sync-xhr=(self),usb=(),web-share=(),xr-spatial-tracking=()
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Cross-Origin-Resource-Policy "same-site"
+    Header always set Permissions-Policy "accelerometer=(),autoplay=(),camera=(),display-capture=(),document-domain=(),encrypted-media=(),fullscreen=(),geolocation=(),gyroscope=(),magnetometer=(),microphone=(),midi=(),payment=(),picture-in-picture=(),publickey-credentials-get=(),screen-wake-lock=(),sync-xhr=(self),usb=(),web-share=(),xr-spatial-tracking=()"
 </VirtualHost>
+```
+</details>
+
+<hr class="sl">
+
+## Best security practices
+
+You can test your headers
+
+* [Mozilla Observatory](https://observatory.mozilla.org/)
+* [Security Headers](https://securityheaders.com/)
+* [gf.dev](https://gf.dev/secure-headers-test)
+* [Venom](https://github.com/ovh/venom) (test internal website, read [this gist](https://gist.github.com/righettod/f63548ebd96bed82269dcc3dfea27056#gistcomment-3630811))
+* [Postman](https://www.postman.com/) (software)
+
+What values should I give to my headers?
+
+* either check [the headers of the top websites](https://owasp.org/www-project-secure-headers/#div-top) (enter the command on your PC, the result changed)
+* or read [OWASP proposal](https://owasp.org/www-project-secure-headers/#div-bestpractices) (the page seems a bit old)
+
+**And**, you can read [OWASP guide](https://owasp.org/www-project-secure-headers/) about secure headers, as I did to make this page <small>(through, I discovered their guide after doing my headers 😭)</small>.
+
+<hr class="sr">
+
+## Headers in PHP
+
+You can set your headers in PHP
+
+```php
+header("Cross-Origin-Resource-Policy: same-site");
+header("Referrer-Policy: strict-origin-when-cross-origin");
+header("X-XSS-Protection: 1; mode=block");
+header("Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()");
 ```
