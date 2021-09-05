@@ -72,13 +72,7 @@ The best practice would be to disable inline CSS and JavaScript, aside from that
 
 This is a short examples of allowing inline CSS/JavaScript (🤮, bad, 'unsafe-inline') and allowing some URLs. You will see errors in the console, letting you pick which domains/URLs you want to add or not (self=your website, none=none 😆). **There are no newlines** in the real file.
 
-```none
-default-src 'none';
-script-src 'self' 'unsafe-inline' cdnjs.cloudflare.com/ajax/libs/mathjax/; 
-style-src 'self' 'report-sample' 'unsafe-inline' cdnjs.cloudflare.com/ajax/libs/highlight.js/; 
-img-src 'self' data: raw.githubusercontent.com/lgs-games/memorize/;
-font-src 'self' cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/;
-```
+You can [learn more here](https://infosec.mozilla.org/guidelines/web_security#content-security-policy), [examine yours here](https://csp-evaluator.withgoogle.com/?csp=https://duckduckgo.com), and [generate one here](https://addons.mozilla.org/en-US/firefox/addon/laboratory-by-mozilla/).
 
 </td>
 </tr>
@@ -124,7 +118,8 @@ The simple version would be `accelerometer=(), camera=(), geolocation=(), gyrosc
 
     # DO NOT FORGET TO SET Content-Security-Policy (CSP)
     # you must adapt this (add the host that your website can use)
-    Header always set Content-Security-Policy "default-src 'none';script-src 'self';style-src 'self';img-src 'self';"
+    # here is some code, but don't use this code, make yours
+    Header always set Content-Security-Policy "default-src 'none';script-src 'self';style-src 'self';img-src 'self' some_domain_here;"
 
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
     Header always set Cross-Origin-Resource-Policy "same-site"
