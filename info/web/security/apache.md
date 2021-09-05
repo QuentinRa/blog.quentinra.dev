@@ -2,7 +2,7 @@
 
 [Go back](../index.md#websites-improvements-summary)
 
-I'm not an expert in Security, but this is what I took note of. I learned a lot from [this article about apache-security-tips by tecmint](https://www.tecmint.com/apache-security-tips/). Note that you can "generate" your configurations [using the Mozilla Generator](https://ssl-config.mozilla.org/#server=apache).
+I'm not an expert in Security, but this is what I took note of. I learned a lot from [this article about apache-security-tips by tecmint](https://www.tecmint.com/apache-security-tips/). Note that you can "generate" your configurations [using the Mozilla Generator](https://ssl-config.mozilla.org/#server=apache) or you got [some configurations here](https://syslink.pl/cipherlist/).
 
 <hr class="sl">
 
@@ -56,14 +56,21 @@ LimitRequestBody 512000
 
 <hr class="sl">
 
-## SSL CipherSuite
+## SSL practices on Apache
 
-It would be pretty useless to use HTTP, if someone can decrypt your communications, right? As this [website is explaining](https://bobcares.com/blog/apache-sslciphersuite-recommended/), you should define a SSLCipherSuite, and only [enable TLS >= v1.2](https://tecadmin.net/enable-tls-in-modssl-and-apache/). You can read this too, [Mozilla recommendation for Intermediate compatibility (recommended)](https://wiki.mozilla.org/Security/Server_Side_TLS).
+This is some code for what is explained on the page about [SSL practices](ssl.md).
 
 ```apacheconf
-# /etc/apache2/sites-available/some_config.conf
-# sudo service apache2 restart
-
+# edit /etc/apache2/sites-available/some_config.conf
 # Protocols: TLS 1.2, TLS 1.3
 SSLProtocol -all +TLSv1.3 +TLSv1.2
+# sudo service apache2 restart
+```
+
+Some examples of CipherSuites.
+
+```apacheconf
+# Server's preference instead of client's preference
+SSLHonorCipherOrder on
+SSLCipherSuite EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:ECDHE-RSA-AES128-SHA:DHE-RSA-AES128-GCM-SHA256:AES256+EDH:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES128-SHA256:DHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4
 ```
