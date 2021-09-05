@@ -28,23 +28,31 @@ You are using the HTTP protocol, when your browser is requesting something from 
   * **base/root url**: `https://myurl.com/`
 * As you could guess, this is working like a path, so you could write `https://myurl.com/folder/my_file.html` for `/path/to/www/folder/my_file.html`
   * A lot of programmers are using routers, so this won't always be the case <small>(ex: this website)</small>
-  * By default, if you don't write a file in the URL, then `index.html` <small>(or php, or index.extension, according to your configuration)</small> will be loaded <small>(if you got one)</small>
+  * By default, if you don't write a file in the URL, then `index.html` <small>(or php, or index.extension, according to the list in your configuration)</small> will be loaded <small>(if you got one in the folder associated with the current URL)</small>
+
+For instance, `https://duckduckgo.com/` is the same as `https://duckduckgo.com/index.html`.
 </details>
 
 <details class="details-border" open>
 <summary>The HTTP protocol (or HTTPS for HTTP secure) API is allowing us to use</summary>
 <br>
 
-* `GET URL`: get a resource from the SERVER
+* `GET URL`: get a resource from the SERVER  <small>(ex: see a page, make a search)</small>
 * `POST URL`: create a resource on the server <small>(ex: create an account)</small>
-* `PUT URL`: modify a resource on the server <small>(ex: update an user's email, or add it if it didn't have one)</small>
-* `PATCH URL`: same as PUT, but can't create a new resource
+* `PUT URL`: modify a resource on the server <small>(ex: update user's data, or add it, if it didn't have it)</small>
+* `PATCH URL`: same as PUT, but can't create a new resource, up to 1 field
 * `DELETE URL`: delete a resource on the server <small>(ex: delete account)</small>
 </details>
 
-Why did we learn this? Well, you will use this a lot (HTML forms, WEB APIs, etc.). In HTML, you will make forms (search, create users, etc.). You **need to know whether they are GET** (search, ...) **or POST** (create user). For Web APIs, this is usually written in the documentation, but you should be able to guess too.
+Why did we learn this? Well, you will use this a lot (HTML forms, WEB APIs, etc.). In HTML, you will make **forms** (search, create users, etc.). You **need to know whether they are GET** (search, ...) **or POST** (create user, update user 🙄, delete user 🙄, etc.).
 
-Usually, in APIs, you got a route such as `/user/{id}` such (ex:`/user/5`) and according to if you are using the method GET/PUT/DELETE/..., the server will expect data (or not) and do something different.
+For Web APIs, this is usually written in the documentation, but you should be able to guess too. For instance, you got a route `/user/{id}` (ex:`/user/5`) and according to if you are using the method GET/PUT/DELETE/..., the server will expect data (or not) and do something different.
+
+<details class="details-e">
+<summary>Note about GET</summary>
+
+When requesting a webpage, you are calling `GET URL`. But you can add parameters. Let's say you are making a search, you can tell us when requesting the page, what's the user is searching using this syntax `?name=value&another=value&...` such as `GET URL?q=hello%20World` (encoded version of "Hello{space}World"). Anyone can share this URL, and it will open the same page, because the query is inside the URL.
+</details>
 
 <hr class="sr">
 
