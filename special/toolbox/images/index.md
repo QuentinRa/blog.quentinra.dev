@@ -18,6 +18,7 @@ When dealing with images, you may want
   * resize a lot of images (<https://picresize.com/>)
   * resize one image (<https://www.resizepixel.com/>)
 * **convert**
+  * [avif](https://avif.io/) (need tool to convert and compress images, **no upload**)
   * a lot of JPGs to WebP (more than 10) <https://online-converting.com/image/>
   * a PNG to an SVG <https://png-svg.com/>
   * otherwise, enter "xxx to yyy" to look for a converter from xxx to yyy
