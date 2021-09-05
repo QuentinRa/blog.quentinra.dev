@@ -149,14 +149,31 @@ I'm still learning, but here is my list
 
 It's better when everything is automated, right? Here is my list of links that may provide tools (mostly free 🤑, <s>as you are the product</s>)
 
-**Check your code**
+**Check your code-only**
 
 * [W3C validator (HTML)](https://validator.w3.org/) (HTML)
 * [W3C Validator](https://jigsaw.w3.org/css-validator/) (CSS)
 
-**Check everything on a page/the whole website**
+**Check more than one kind of checks on a page/the whole website**
 
 * [WebHint](https://webhint.io/scanner/) (security, accessibility, compatibility, performance)
+* [ionos](https://www.ionos.com/tools/website-checker) (general, seo, performance, secure)
+* [sitechecker](https://sitechecker.pro/) (**whole site, up to 150 pages**, general, seo, HTML, but you **can't see where** without starting a trial)
+* [Google's pagespeed](https://developers.google.com/speed/pagespeed/insights/) (performance)
+* [Google's Lighthouse](https://web.dev/measure/) (performance, accessibility, seo, best practices, **do not forget to click on view report**)
+* [SEO site checkup](https://seositecheckup.com/analysis) (seo, security), you can [test every tool individually](https://seositecheckup.com/tools) (limited to 1/day)
+
+**SEO-only**
+
+* [biq.cloud](https://biq.cloud/rank-intelligence/) (see your website ranking for a keyword, **need register**)
+* [siteliner](https://www.siteliner.com/) (**whole site, up to 250 pages**, seo)
+* [seo tools](https://www.sanderheilbron.nl/) (seo peek is the best 😍)
+
+**Others**
+
+* [Find broken links](https://www.drlinkcheck.com/) or write some code to crawl the links on your website and use [httpstatus](https://httpstatus.io/)
+* [Check robots.txt, sitemap, compress images, etc.](https://www.websiteplanet.com/webtools/)
+* [search/generate domain name](https://instantdomainsearch.com)
 
 <hr class="sl">
 
