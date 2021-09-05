@@ -62,6 +62,7 @@ As you will read in the HTMl course, you don't need a server an use the file pro
 
 * You can set up a [(virtual) local server](setup/wamp.md)
 * You can set up a [apache server on linux](setup/apache.md)
+* as you could read, you will have your server on `http://localhost`, but in some rare cases, you may want to use HTTPS (in development, HTTP is enough, [tutorial for https://localhost here](https://web.dev/how-to-use-local-https/))
 
 Sometimes some students don't want to set up a server and directly work on the remote server. You will need to upload using the FTP protocol (or scp) your files **everytime** you changed something. Some IDEs such as [PHPStorm](../../tools/jetbrains/index.md#phpstorm) or [VSCode](https://code.visualstudio.com/docs/remote/ssh) that are **automatically updating the files on a remote server** when you changed something. Anyways, I think **you should work in local, for security-related purposes**.
 
@@ -191,3 +192,4 @@ It's better when everything is automated, right? Here is my list of links that m
 ## Sources
 
 * <https://github.com/RaymiiOrg/raymiiorg.github.io>
+* [web.dev](https://web.dev/blog/): Google 😬, but there are quite a lot of good articles
