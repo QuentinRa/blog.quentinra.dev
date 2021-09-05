@@ -113,6 +113,7 @@ I'm still learning, but here is my list
 * [Front-End code exposed](security/code.md): your code is running in someone else browser, so they can do what they want with it
 * [Secure Apache server](security/apache.md)
 * [Subresource Integrity (SRI)](security/sri.md): it's good to use CDN, but did you know that there are risks?
+* [SSL practices](security/ssl.md): some notes about SSL (SSL+TLS, secure protocols for HTTPS)
 
 <hr class="sl">
 
