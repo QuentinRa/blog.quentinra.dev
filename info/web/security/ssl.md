@@ -21,3 +21,48 @@ Some are enabling everything, and disabling the bad protocols, but I unsure if t
 ## Disable bad encryption algorithms
 
 Disabling algorithm (=removing them from the CipherList), can make your website unavailable for the old versions of some browsers, but you can see that with ssllabs tool, and you got [Mozilla recommendation for Intermediate compatibility (recommended)](https://wiki.mozilla.org/Security/Server_Side_TLS) to help you.
+
+<hr class="sl">
+
+## On Apache
+
+```apacheconf
+# edit /etc/apache2/sites-available/some_config.conf
+# Protocols: TLS 1.2, TLS 1.3
+SSLProtocol -all +TLSv1.3 +TLSv1.2
+# sudo service apache2 restart
+```
+
+Some examples of CipherSuites.
+
+```apacheconf
+#
+# Proposition 1)
+#
+SSLHonorCipherOrder on
+SSLCipherSuite EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:ECDHE-RSA-AES128-SHA:DHE-RSA-AES128-GCM-SHA256:AES256+EDH:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES128-SHA256:DHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4
+
+#
+# Proposition 2)
+#
+SSLCipherSuite ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
+SSLHonorCipherOrder on
+
+#
+# Proposition 3)
+# Mozilla intermediate
+#
+SSLCipherSuite ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384
+# hard algorithms, so we let the client pick
+SSLHonorCipherOrder off
+```
+
+Notes
+
+* [SSLCompression](https://httpd.apache.org/docs/trunk/mod/mod_ssl.html#sslcompression) disabled by default, should stay disabled to prevent attacks such as [CRIME](https://en.wikipedia.org/wiki/CRIME).
+
+* [SSLSessionTickets](https://httpd.apache.org/docs/trunk/mod/mod_ssl.html#sslsessiontickets): **MUST BE DISABLED** (enabled by default) if you are not restarting your server periodically
+
+```apacheconf
+SSLSessionTickets off
+```
