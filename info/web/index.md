@@ -20,7 +20,7 @@ There are a lot of knowledge and things that would not be relevant if they were 
 
 You are using the HTTP protocol, when your browser is requesting something from a server. For instance, when you request `https://duckduckgo.com/`, you are asking the server to GET the page for this URL. We are currently in **HTTP2.0** ([caniuse](https://caniuse.com/http2), [article](https://www.digitalocean.com/community/tutorials/http-1-1-vs-http-2-what-s-the-difference)), but a lot of persons are still using **HTTP1.1** (and some HTTP1.0).
 
-<details class="details-border">
+<details class="details-e">
 <summary>Webserver root and root URL</summary>
 
 * when settings up a server, you will make a folder available at an URL. Let's say you made it like this
@@ -33,9 +33,8 @@ You are using the HTTP protocol, when your browser is requesting something from 
 For instance, `https://duckduckgo.com/` is the same as `https://duckduckgo.com/index.html`.
 </details>
 
-<details class="details-border" open>
+<details class="details-e" open>
 <summary>The HTTP protocol (or HTTPS for HTTP secure) API is allowing us to use</summary>
-<br>
 
 * `GET URL`: get a resource from the SERVER  <small>(ex: see a page, make a search)</small>
 * `POST URL`: create a resource on the server <small>(ex: create an account)</small>
@@ -63,12 +62,12 @@ As you will read in the HTMl course, you don't need a server an use the file pro
 * You can set up a [(virtual) local server](setup/wamp.md)
 * You can set up a [apache server on linux](setup/apache.md)
 * as you could read, you will have your server on `http://localhost`, but in some rare cases, you may want to use HTTPS (in development, HTTP is enough, [tutorial for https://localhost here](https://web.dev/how-to-use-local-https/))
+* Notes about [public_html and permissions for Linux users](setup/perms.md)
 
 Sometimes some students don't want to set up a server and directly work on the remote server. You will need to upload using the FTP protocol (or scp) your files **everytime** you changed something. Some IDEs such as [PHPStorm](../../tools/jetbrains/index.md#phpstorm) or [VSCode](https://code.visualstudio.com/docs/remote/ssh) that are **automatically updating the files on a remote server** when you changed something. Anyways, I think **you should work in local, for security-related purposes**.
 
-<details>
+<details class="details-e">
 <summary>You will use the <b>FTP protocol</b> (or the command <code>scp</code>) to send files on a remote server. I'm using a software on Windows, called <a href="https://filezilla-project.org/" target="_blank" rel="noopener noreferrer">FileZilla</a>.</summary>
-<br>
 
 * once started, go to File > Site Manager
 * New site (give it a name in the left column)
