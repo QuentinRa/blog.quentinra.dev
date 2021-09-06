@@ -18,18 +18,23 @@ We are writing $A_{n,p}$ a matrix of $n$ lines and $p$ columns. The value at the
 <summary>In <b>R</b>, you can create a matrix like this</summary>
 
 ```r
-n <- 3
-p <- 3
-A <- matrix(c(c(1,0,0), c(0,1,0), c(0,0,1)), nrow = n, ncol = p, byrow = TRUE)
-# same as
-A <- matrix(c(1,0,0,0,1,0,0,0,1), nrow = n, ncol = p, byrow = TRUE)
-# result
+# THE GOAL
 #       [,1] [,2] [,3]
 # [1,]    1    0    0
 # [2,]    0    1    0
 # [3,]    0    0    1
-# a (i=1, j=1)
-A[1,1]
+
+# special method since the matrix is special
+diag(3)
+# more generaly (since n=p, ommit p)
+matrix(c(1,0,0,0,1,0,0,0,1), 3)
+# same as (set p, useless here)
+matrix(c(1,0,0,0,1,0,0,0,1), n = 3, p = 3)
+# same as (byrow instead of bycolumn)
+matrix(c(1,0,0,0,1,0,0,0,1), 3, 3, byrow = T)
+
+# a (i=2, j=2)
+A[2, 2]
 # 1
 ```
 </details>
