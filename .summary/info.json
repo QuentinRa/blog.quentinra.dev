@@ -2,15 +2,6 @@
   "title": "Programming courses - Java, C, OCaml, HTML, JS, Node, NoSQL",
   "description": "Learn about Java, C, OCaml, Web-related languages (HTML, CSS, JS, PHP, Node) and databases-related languages (SQL, NoSQL). We also have courses about Assembly, TypeScript, Cybersecurity, and API.",
   "courses": {
-    "e1": [
-      {
-        "tag": "java",
-        "name": "Java",
-        "title": "Learn JAVA programming",
-        "desc": "The course is explaining a lot of concepts up to Java16, including graphical libraries like SWING, AWT, or JavaFX.",
-        "icon": "<i class=\"bi bi-window\"></i>"
-      }
-    ],
     "e2": [
       {
         "tag": "web",
@@ -38,13 +29,6 @@
         "name": "JavaScript",
         "title": "Learn JavaScript programming",
         "desc": "A short introduction to JavaScript used to make interactive websites or required for Node.js/Typescript courses.",
-        "icon": "<i class=\"bi bi-globe\"></i>"
-      },
-      {
-        "tag": "php",
-        "name": "PHP",
-        "title": "Learn PHP programming",
-        "desc": "Almost everything you will use in PHP to make your website server-side in PHP.",
         "icon": "<i class=\"bi bi-globe\"></i>"
       }
     ]

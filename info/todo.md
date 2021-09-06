@@ -43,6 +43,11 @@
   - https://codesandbox.io/
   - https://vercel.com/
   - https://github.com/futurice/backend-best-practices
+  - [ ] FORM: action
+  - [ ] JS: data
+  - [ ] https://babeljs.io/
+  - tests: my steps to use it (js)
+  - https://eslint.org/
 - sql
   - https://sql.sh/
   - https://fxjollois.github.io/cours-sql/
