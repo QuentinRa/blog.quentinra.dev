@@ -17,59 +17,6 @@ such as
 PHP isn't the only way to do that, some developers are now using
 JS with Node.js for example to handle the server-side logic.
 
-<hr class="sr">
-
-## Setup
-
-To run some PHP code, you first need a server. Some
-developers are directly coding on the server, or in other 
-words, they are coding then sending their files to the 
-server then check the website. That's not a good practice...
-
-* You can set up a [(virtual) local server](setup/wamp.md)
-* You can set up a [apache server on linux](setup/apache.md)
-* use some IDE! For instance, I know that
-[PHPStorm](../../tools/jetbrains/phpstorm/remote.md)
-allow you to create a remote project and is automatically
-uploading changes on the server (paid but free
-if you register with your student email). Check out
-if your IDE is doing it!
-
-<hr class="sl">
-
-## Routing
-
-Here we go. Now that you are using URLs, you need
-to learn a bit about how they work.
-
-Let's says we have some website here: ``http://localhost/index.php``.
-First ``index.php`` may be omitted since it's the file
-loaded by default. Next everything after the server
-name like ``localhost`` here is called URI.
-
-Then  ``http://localhost/test/file.php`` means that
-you got a folder ``test`` and a file `file.php` inside
-your server root folder.
-
-On Linux, don't forget to set **the permissions** for
-a folder like
-
-* chmod ``700``: seems like the minimum for a .php
-* chmod ``744``: seems like the minimum for a .html
-* chmod ``711``: seems like the minimum for a folder
-
-If not already done, and you are using public_html
-folder
-
-* chmod ``711`` on your home folder
-* chmod ``711`` on public_html folder
-
-Note that public_html is a shortcut for your
-server root folder, but each user will have a server
-folder accessible like that
-``https://server.name.tld//~username/index.php`` and
-index.php being in ``[...]/username/public_html/index.php``.
-
 <hr class="sl">
 
 ## Start writing some PHP

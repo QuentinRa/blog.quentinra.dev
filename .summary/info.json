@@ -39,6 +39,13 @@
         "title": "Learn JavaScript programming",
         "desc": "A short introduction to JavaScript used to make interactive websites or required for Node.js/Typescript courses.",
         "icon": "<i class=\"bi bi-globe\"></i>"
+      },
+      {
+        "tag": "php",
+        "name": "PHP",
+        "title": "Learn PHP programming",
+        "desc": "Almost everything you will use in PHP to make your website server-side in PHP.",
+        "icon": "<i class=\"bi bi-globe\"></i>"
       }
     ]
   }

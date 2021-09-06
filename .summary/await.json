@@ -40,13 +40,6 @@
       "icon": "<i class=\"bi bi-server\"></i>"
     },
     {
-      "tag": "php",
-      "name": "PHP",
-      "title": "Learn PHP programming",
-      "desc": "Almost everything you will use in PHP to make your website server-side in PHP.",
-      "icon": "<i class=\"bi bi-globe\"></i>"
-    },
-    {
       "tag": "nosql",
       "name": "NoSQL",
       "title": "Learn NoSQL languages",
