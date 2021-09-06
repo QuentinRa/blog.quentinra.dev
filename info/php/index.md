@@ -105,78 +105,52 @@ After learning almost all the syntax needed, here some concepts that you will su
 
 ## MVC in PHP
 
-The MVC is a design pattern, in which the idea 
-splitting your code into
+The MVC is an architectural pattern, in which you are splitting your code into
 
-* View: what you will show to the user
-* Model: the data of your application, usually the SQL part
-* Controller: will fetch data from the model, render the view
+* **View**: what you will show to the user
+* **Model**: the data of your application, usually the SQL-related classes/files
+* **Controller**: classes that will fetch some data from the model and render the view
 
-Usually, your website will have a router that will call
-a method according to the page requested like ``home``,
-`contact`, ...
-
-Each of these methods is in a controller and the controller
-will fetch data from the model if needed, init some
-variable or a session, handle $_POST/$_GET if needed
-and render send everything so that the view only
-need to be rendered using the variables already created
-and properly set/formatted.
-
-Usually, a page is not **one** view but a lot of views
-like a header, a page-specific view, and the footer
-so the controller need to ask all of these to render
-themselves.
+For instance, you could have a view for the head, one for the footer, and one view for the main content of each page. When you want to GET a page, the controller will write the head, get some data from the database (if needed), pass it to the view for the main content, and then write the footer.
 
 <hr class="sr">
 
 ## Migration
 
-Notes from PHP5.6 to PHP 7
+<details class="details-e">
+<summary>Notes from PHP5.6 to PHP 7</summary>
 
-* change ``<? ?>`` to `<?php ?>`
-* ``ereg`` deleted
-* ``mbstring`` deleted/moved
-* ``mktime`` changed
-* ``list`` replaced by `str_split` and foreach changed
-* session handling changes
-* ``mysql`` deprecated, use `mysqli`
+* change `<? ?>` to `<?php ?>`
+* `ereg` deleted, `mbstring` deleted/moved, `mktime` changed
+* `list` replaced by `str_split`, and foreach changed
+* sessions changed
+* `mysql` deprecated, use `mysqli`
+</details>
 
-Notes in PHP7
+<details class="details-e">
+<summary>Notes in PHP7</summary>
 
 * add function returns types
 * add function arguments types
+</details>
 
-Notes in PHP8
+<details class="details-e">
+<summary>Notes in PHP8</summary>
 
 * add unions return types
 * add annotations
+</details>
 
 <hr class="sl">
 
 ## Tests with PHPUnit
 
-Following the [tests](../../proj/tests/index.md) course,
-you can write some tests in PHP using ``phpunit``.
+You can write some tests in PHP using `phpunit`. You may read the [course about Tests](../../proj/tests/index.md) beforehand.
 
-You can install it using composer 
-``composer require --dev phpunit/phpunit ^9.5``
-but you may check the 
-[documentation](https://phpunit.readthedocs.io/en/9.5/installation.html#composer)
-if you are new to that.
+You can install PHPUnit using composer like this `composer require --dev phpunit/phpunit^9.5`, but you should read the [documentation](https://phpunit.readthedocs.io/en/9.5/installation.html#composer). I'm using PHPStorm to compile and run my tests, but maybe you could do that with `phpunit test_file.php` using the command-line (not tested).
 
-I'm using PHPStorm to compile and run my tests, but
-maybe you could do that ``phpunit test_file.php``
-using the command-line.
-
-* [test file](tests/file.md)
-* [assertions](tests/assertions.md)
-
-You may also check
-
-* [testing-php-errors-warnings-and-notices](https://phpunit.readthedocs.io/en/9.5/writing-tests-for-phpunit.html#testing-php-errors-warnings-and-notices)
-* [assertions](https://phpunit.readthedocs.io/en/9.5/assertions.html)
-* [annotations](https://phpunit.readthedocs.io/en/9.5/annotations.html)
+* [TestSuite](tests/file.md)
+* [Assertions](tests/assertions.md)
 
 <hr class="sr">
 

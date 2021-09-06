@@ -1,4 +1,4 @@
-## Assertions
+# Assertions
 
 You will use these methods in your test class,
 inside a test method, to assert that the code
