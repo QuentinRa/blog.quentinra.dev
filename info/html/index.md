@@ -1,6 +1,6 @@
 # Learn HTML5
 
-As you could read in the Web course, HTML is the language used to write a web page. To be exact, the final result is in HTML, but you could have used other languages to generate the HTML page (such as PHP or Node.js), as there is no way to factorize code in pure HTML.
+As explained in the Web course, HTML is the language used to write a web page. To be exact, the final result is in HTML, but you could have used other languages to generate the HTML page (such as PHP or Node.js), as there is no way to factorize code in pure HTML.
 
 The current version that you should use is **HTML5**, but even if many browsers have yet to support it, and not many people are aware of it, we are in **HTML5.2** (HTML 5 2nd minor version, December 2017). You can check the [coverage of HTML5 by your browser here](https://caniuse.com/) (for instance, try "summary", a new tag introduced in HTML5.1, or simply enter "HTML5").
 
