@@ -11,11 +11,3 @@ If you got a better solution, or you want to share your feedback, feel free to o
 <p class="text-end pt-3">
 I hope you'll have fun - Quentin RA "Calistro"
 </p>
-
-<details class="details-e">
-<summary>My troughs</summary>
-
-* I could use a cookie (=session), but I want to avoid that 🐱‍👤
-* I could use JavaScript and switch between the two CSS according to your value in localStorage
-* I could make one **big** CSS having rules such as `.dark-theme a` and `.light-theme a`, and switch using JavaScript the class `.dark-theme`/`.light-theme`
-</details>
