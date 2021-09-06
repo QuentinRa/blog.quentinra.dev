@@ -6,7 +6,7 @@
 
 **Added**
 
-* `feature`: dark mode with Dark reader 🐱‍👤
+* `feature`: dark mode 🐱‍👤
 * `feature`: the language of the repository is Markdown (none previously)
 * `feature`: adding [CODEOWNERS](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners) file
 * `feature`: adding the [Markdown syntax reference](https://memorize.be/syntax)
@@ -22,6 +22,8 @@
 * `seo`: the description and the title of each file of a course, including the main page, is now generated from the first line of the course and the first header h1.
 * `internal`: preview was replaced by side-by-side (inside the editor)
 * `internal`: static pages are now hosted in this repository
+* `internal`: cleaning HTML files (removing tags, CSS classes)
+* `internal`: moving CSS to SCSS
 * `rendering`: Markdown tables border is now dark
 * `rendering`: inline code is now blue (was pink/red)
 * `rendering`: removing dark tables in the light version

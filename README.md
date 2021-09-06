@@ -54,7 +54,6 @@ Last updated: 2021-08-27
 * [ ] adding file history
 * [ ] adding submit issue
 * [ ] make CSS using SASS
-* [ ] make dark mode without dark-reader
 * [ ] add "Thanks"+Gift? on edit successful
 * [ ] breadcrumb?
 * **Content**
