@@ -24,41 +24,51 @@ And you have to write `require_once __DIR__ . '/vendor/autoload.php';` at the be
 
 <hr class="sr">
 
-## Start writing some PHP
+## Writing PHP
 
-Now that you got a server, you can only run some PHP
-if you are using an URL (no drag and drop like in HTML
-possible). You will write a file ending with ``.php``.
-If the file is called ``index`` then you don't
-need to write it in the URL.
+You can only write **PHP** in a **.php**, but you can also write **HTML** inside. Everything is the same as for a HTML file, aside the fact that you can use the **PHP tag**, and write some PHP along the HTML.
 
-Finally, note that you can write HTML inside
-a PHP file, but not PHP inside an HTML file.
+<details class="details-e">
+<summary>PHP code</summary>
 
 ```php
-<?php // sort of ${HTML_FOLDER}/test/index.php, so I will use http://localhost/test/index.php ?>
+<?php // ex: index.php ?>
 <!DOCTYPE html>
 <html lang="fr">
-<head><title>TODAY date</title></head>
+<head><title>Hello world!</title></head>
 <body>
-    <p>
-    <?php
-        // The content is evaluated by the server
-        // before sending the resulting HTML to the client
-        // so the client will have something like this
-        // <p>Hello World, we are the xxxx-xx-xx !</p>
-        echo "Hello World, today we are the ".date("Y-m-d")." !";
-    ?>
-    </p>
+<p><?php echo "Hello world"; ?></p>
+<?php /* <?php echo "" ?> is the same as <?=""?> */ ?>
+<p><?= "Date: ".date("Y-m-d")?></p>
 </body>
 </html>
 ```
+</details>
 
-So you should have a better understanding of what we will do.
-We will write some code and use methods
-like echo where the result will be printed in the resulting
-HTML giving us your final HTML file requested by
-the client.
+**What the logic?**: you can **write** (echo) some code inside the HTML tags, which are evaluated before sending the HTML to the client. For instance, we wrote "Hello world" inside the first `p`, and we evaluated the second string with the date, and wrote it inside the second `p`. This is what resulting HTML code may looks like
+
+```html
+<!-- ... -->
+<p>Hello world</p>
+<p>Date: 2021-09-06</p>
+```
+
+<details class="details-border">
+<summary>You will use <code>echo</code> a lot, but you got <code>var_dump</code> to debug/print an array, and <code>print_r</code> to print an array.</summary>
+<br>
+
+```php
+<?php
+echo "some text"; // some text
+var_dump("some text"); // string(9) "some text"
+print_r("some text") // some text
+// pretty print array
+echo "<pre>".print_r(array(5,6))."</pre>"
+// pretty print debug
+echo "<pre>".var_dump($exception)."</pre>"
+```
+
+</details>
 
 <hr class="sr">
 
