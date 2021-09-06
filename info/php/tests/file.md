@@ -1,10 +1,8 @@
-# test file
+# TestSuite
 
-Here is an example of a test file. You don't need
-to create setup/tearDown methods if you won't use
-them.
+[Go back](../index.md#tests-with-phpunit)
 
-A test method name must starts with ``test``.
+Here is an example of a test file/suite of tests. You don't need to create the `setup`/`tearDown` methods if you won't use them. A test method name must starts with `test`.
 
 ```php
 <?php declare(strict_types=1);

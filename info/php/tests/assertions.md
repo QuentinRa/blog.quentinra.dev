@@ -1,8 +1,8 @@
 # Assertions
 
-You will use these methods in your test class,
-inside a test method, to assert that the code
-is doing what you expected him to do.
+[Go back](../index.md#tests-with-phpunit)
+
+You will use these methods in your test classes, inside your test methods, to assert that the code is doing what you expected it to do.
 
 ```php
 // some values

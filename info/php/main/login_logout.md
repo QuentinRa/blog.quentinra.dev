@@ -1,10 +1,15 @@
 # Login/Logout
 
-[Go back](..)
+[Go back](../index.md#main-concepts)
 
-It's a summary of what's written on others pages.
+This is how you could handle, without a framework/library, a simple login form in PHP.
+
+* The HTML form
+
+There are two things you should notice: <b>1</b> the name "login" for the login field, and the name "password" for the password, and <b>2</b>: the method is POST and the action is <b>login.php</b>.
 
 ```html
+<!-- form.html -->
 <form method="post" action="login.php">
     <div>
         <label for="login">Login</label>
@@ -20,31 +25,35 @@ It's a summary of what's written on others pages.
 </form>
 ```
 
-And a ``login.php``
+* now we need to code **login.php**
 
 ```php
 <?php
-// used to return to form
-function to_form() { header("Location: form.html");exit(); };
+// a method the redirect to the
+// used to return to form.html is the form is invalid
+function to_form() { header("Location: form.html"); exit(); };
 
-// check field got send
-if (empty($_POST['login']) || empty($_POST['password'])){
+// fields are missing
+if (empty($_POST['login']) || empty($_POST['password'])) {
     to_form();
 }
 
-// save into variables
+// save into variables, remove the trailing spaces
 $login = trim($_POST['login']);
 $password = trim($_POST['password']);
 
-// check if already in db or size
+// check if the username is not already used
 // ... omitted ...
+
+// you may check the size (if this is a form to create an account)
 if (strlen($login) < 4 || strlen($password) < 6){
-    // save error
+    // example of saving error
     $_SESSION['login_message'] = 'Error: login / password too short';
     to_form();
 }
 
 // try login
+// $hash = password_hash("toto", PASSWORD_DEFAULT);
 // ...
 $success = password_verify($password, "... some hash ...");
 
@@ -52,15 +61,15 @@ $success = password_verify($password, "... some hash ...");
 if ($success){
     $_SESSION['logged_user'] = $login;
     $_SESSION['login_message'] = "Message: logged.";
-    to_form();
+    var_dump("ok");
+    // ...
 } else {
     $_SESSION['login_message'] = "Error: login failed !";
+    to_form();
 }
-to_form();
 ```
 
-Note that you must encrypt your password in order
-to store it in a database properly.
+Note that you must encrypt your password in order to store it in a database properly.
 
 ```php
 // save the hash in the database

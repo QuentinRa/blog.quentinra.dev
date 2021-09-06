@@ -94,12 +94,12 @@ echo "<pre>".var_dump($exception)."</pre>"
 
 After learning almost all the syntax needed, here some concepts that you will surely use in PHP.
 
-* [Classes and objects](theme/classes.md)
-* [Database and SQL](theme/sql.md)
-* [MongoDB / NoSQL](theme/mongodb.md)
-* [Handling Forms](theme/forms.md)
-* [Sessions](theme/sessions.md)
-* [Login/Logout](theme/login_logout.md)
+* [Classes and objects](main/classes.md)
+* [Database and SQL](main/sql.md)
+* [MongoDB / NoSQL](main/mongodb.md)
+* [Handling Forms](main/forms.md)
+* [Sessions](main/sessions.md)
+* [Login/Logout](main/login_logout.md)
 
 <hr class="sl">
 
