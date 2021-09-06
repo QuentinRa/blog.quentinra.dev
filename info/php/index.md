@@ -1,23 +1,28 @@
-# PHP
+# PHP Hypertext Preprocessor (PHP)
 
-PHP is a language to run some code before sending a
-web page. You have a lot of things not available in HTML
-such as
+You can use **PHP** to dynamically generate some part of your HTML. You will be able to use **statements**, **functions**, **loops**, **databases**, and many more things to make your code cleaner and more maintainable. We will soon be in **PHP8.1** (11-2021), but many are still in **PHP7/PHP7.4**, and some developers are still using the outdated **PHP5.6**.
 
-* **statements**: loops, if, ...
-* **functions**: you can create a function or use them
-  to factorize some code, change some values
-  on your page (dates, translations, ...), etc.
-* **server-side code**: when submitting a form, uploading
-  a file, ... you need your webserver to handle it.
-* **sessions**: you can store some data so that your
-  website remember that you are logged in what
-  we call a session.
-  
-PHP isn't the only way to do that, some developers are now using
-JS with Node.js for example to handle the server-side logic.
+There are alternatives to PHP, such as **Node.js**. You may [learn PHP on W3Schools](https://www.w3schools.com/PhP/default.asp), or maybe by reading the official documentation [reading the official reference](https://www.php.net/manual/en/langref.php) <small>(my recommendation, I would really want to read it completely)</small>.
+
+> You need to set up a server to be able to run some PHP, and you need to be familiar with HTML. It's strongly advised to read the [Web course](../web/index.md) and the [HTML course](../html/index.md) **beforehand**.
 
 <hr class="sl">
+
+## Composer
+
+Before digging into PHP, you may want to install some libraries/frameworks (later). This is something that can be done quite easily (even on Windows), by installing [composer](https://getcomposer.org/).
+
+```bash
+# follows the steps, generate your config
+$ composer init
+$ composer install something
+# $ composer install vendor/package:version (version optional)
+$ composer update
+```
+
+And you have to write `require_once __DIR__ . '/vendor/autoload.php';` at the beginning of your file. The versioning is working the same [as for package.json in Node.js](https://nodejs.dev/learn/semantic-versioning-using-npm).
+
+<hr class="sr">
 
 ## Start writing some PHP
 
