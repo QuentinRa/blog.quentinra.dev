@@ -7,9 +7,9 @@ Cascading Style Sheets (CSS) are mainly used to style websites, and add some ani
 * List of CSS properties that I'm using the most
 * What's responsive design?
 
-> **Note**: as you are doing in HTML, the good developer that you are 😎, you should test that your code is following the W3C standard [using this validator](https://jigsaw.w3.org/css-validator/#validate_by_input). You may also want to minimize your CSS (to make your page faster, as the size of the CSS will be reduced), you can do that with a [CSS minifier](https://css-minifier.com/). If you want to use a CDN, please refer to the WEB course.
+> **Note**: as you are doing in HTML, the good developer that you are 😎, you should test that your code is following the W3C standard [using this validator](https://jigsaw.w3.org/css-validator/#validate_by_input). You may also want to minimize your CSS (to make your page faster, as the size of the CSS will be reduced), you can do that with a [CSS minifier](https://css-minifier.com/) <small>(note that in PHPStorm, you can [configure a watcher to auto-compile css to min.css](https://www.jetbrains.com/help/phpstorm/compressing-css.html))</small>. If you want to use a CDN, please refer to the WEB course.
 >
-> I did use it yet (please add explanations if you did here), but you can use SASS to generate CSS, which is working like TypeScript for JavaScript, or PHP to factorize HTML code. It seems useful to make themes (dark, light).
+> You can use SASS/Less to generate CSS, which are working like TypeScript for JavaScript, or PHP to factorize HTML code.
 
 <hr class="sr">
 
@@ -499,6 +499,126 @@ CheatSheets
 
 * [Simple cheatsheet](https://devhints.io/css) (😍, not too much content, well-made)
 * [CSS - Reference](https://cssreference.io/) (quite good to get explanations about something)
+
+<hr class="sl">
+
+## SCSS, SASS, and Less
+
+You can use Less, SASS, or SCSS to write a sort of enhanced CSS. Both are similar, but the syntax is a bit different. You may read [JetBrains tutorial to configure watchers too (in PHPStorm)](https://www.jetbrains.com/help/phpstorm/transpiling-sass-less-and-scss-to-css.html#ws_sass_less_scss_syntax_highlighting) (you can enable/disable watchers).
+
+```bash
+npm install sass -g 
+# watcher
+sass --watch input.scss output.css
+# or compile when you want
+sass input.scss output.css
+```
+
+As always [W3Schools got a tutorial about SASS](https://www.w3schools.com/sass/default.php). [SASS oficial documentation](https://sass-lang.com/guide) is quite good too.
+
+<details class="details-border">
+<summary>My notes about the syntax</summary>
+<br>
+
+<table class="table table-bordered table-striped border-dark">
+<tr>
+<td><b>Variables</b></td>
+<td>
+
+```scss
+$name: #d41;
+p { color: $name; }
+```
+</td>
+</tr>
+
+<tr>
+<td><b>Inheritance</b></td>
+<td>
+
+```scss
+p { }
+p.red { @extend p; }
+```
+</td>
+</tr>
+
+<tr>
+<td><b>Nested tags</b></td>
+<td>
+
+```scss
+p { 
+  color: #d41;
+  span { color: #fc3; }
+  &:hover { color: #0a53be; }
+  :hover { color: #0a53be; }
+}
+```
+</td>
+</tr>
+
+<tr>
+<td><b>Mixin</b> (functions)</td>
+<td>
+
+```scss
+@mixin some-mixin {}
+.button { @include some-mixin; }
+
+@mixin padding-x ($value) { padding-left: $value; padding-right: $value; }
+.button { @include padding-x(1rem); }
+
+// you can also declare rules inside a mixing
+// or variables, or give default value to arguments
+@mixin some-mixin2 ($val: 0px) {}
+
+// you can call it anywhere
+@include theme("dark", ...);
+```
+</td>
+</tr>
+<tr>
+<td><b>Statements</b></td>
+<td>
+
+```scss
+@if $value == something {} @else if /* ... */ {} @else {}
+//ternary: if($value == something, 'if_true', 'if_false')
+@each $i in value1, value1  { .#{i} {} }
+// 12 included (=>through)
+@for $i from 0 through 12 {}
+@while $i <= 12 { $i: $i + 1; }
+```
+</td>
+</tr>
+
+<tr>
+<td><b>Functions</b></td>
+<td>
+
+```scss
+// mix 50% of color 1 and 100-50% of color2
+mix(color1, color2, 50%)
+lighten(color, 50%)
+darken(color, 50%)
+opacity(color, 0.5)
+```
+</td>
+</tr>
+<tr>
+<td><b>Breaking into files</b></td>
+<td>You can split a scss into files, starting with a <code>_module.scss</code>. Then, in the main file, use
+
+<pre class="language-scss"><code>@import 'module'</code></pre> (or @use)
+</td>
+</tr>
+
+</table>
+</details>
+
+* [StyleGuide](https://www.toptal.com/css/sass-mixins-keep-your-stylesheets-dry)
+* [Another style guide](https://www.toptal.com/front-end/sass-style-guide-a-sass-tutorial-on-how-to-write-better-css-code)
 
 <hr class="sr">
 
