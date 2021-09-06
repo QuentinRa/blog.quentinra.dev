@@ -119,6 +119,11 @@ I'm still learning, but here is my list
 * [forbidden usernames](security/usernames.md): do not let users take "root", "admin", ... as their username
 * [FORM (GET, POST) and URLs](security/url.md): for beginners, some note about "/user/{id}"
 
+**Injections**
+
+* [XSS injections](security/injections/xss.md)
+* [PHP injections](security/injections/php.md)
+
 You will get more notes in the Cybersecurity course.
 
 <hr class="sl">
