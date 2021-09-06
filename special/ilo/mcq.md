@@ -6,7 +6,7 @@ A lot of questions that the teacher is usually asking us. They are all about the
 
 <hr class="sr">
 
-**Question 1**
+## Question 1
 
 What's the design pattern for the class Group in TP Figures, which contains a lot of Figures. Note that Group is also a Figure.
 
@@ -16,7 +16,7 @@ It's the <b>Composite design pattern</b>.
 
 <hr class="sl">
 
-**Question 2**
+## Question 2
 
 In TP Tchat, in the method ``void updateMessages()``, which operations were intermediary?
 
@@ -31,7 +31,7 @@ The 2nd and the 4th ones, since in both we are consuming our stream to create a 
 
 <hr class="sr">
 
-**Question 3**
+## Question 3
 
 In TP Tchat, Controller implements ``ListChangeListener<String>``. What's the design pattern?
 
@@ -41,7 +41,7 @@ It's Observer/Observable design pattern.
 
 <hr class="sl">
 
-**Question 4**
+## Question 4
 
 In TP Tchat, the teacher used ``Map<String, Color> colorMap = newTreeMap<String, Color>()`` to store the color(Color) for each user (String). What instructions are valid?
 
@@ -56,7 +56,7 @@ The 1st one since we have String-Color and the 4th one since <code>get</code> me
 
 <hr class="sr">
 
-**Question 5**
+## Question 5
 
 In TP Tchat, the class ``ChatClient`` is handling the message (send/receive). It is M, V, or C in MVC?
 
@@ -66,7 +66,7 @@ I think it's <b>M</b>, since ChatClient can be viewed as a class interacting wit
 
 <hr class="sl">
 
-**Question 6**
+## Question 6
 
 In TP Tchat, we were giving ``Runnables`` to ``Platform.runLater``. True or False?
 
@@ -82,7 +82,7 @@ The classes are not static, so they were declared as inner classes. We could hav
 
 <hr class="sr">
 
-**Question 7**
+## Question 7
 
 In TP Figures, what's the design pattern used when we are calling ``equals(Figure f)`` inside ``equals(Object obj)`` among Template Method, Equalizer, Decorator, and Adapter?
 
@@ -92,7 +92,7 @@ My first trough is the <b>Template Method</b> because <code>equals, hashcode, ..
 
 <hr class="sl">
 
-**Question 8**
+## Question 8
 
 In TP Lists, ``CollectionList<E> extends AbstractCollection<E>`` which is a ``Collection<E>`` wrapping a `ForwardList<E>`. What's the design pattern among Iterator, Decorator, Composite, and Adaptor?
 
