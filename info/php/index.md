@@ -74,25 +74,6 @@ echo "<pre>".var_dump($exception)."</pre>"
 
 ## Basic concepts
 
-First of all, 
-
-* you need a ``;`` at the end of each line (one exception)
-* you can make comments using ``//`` or `/* */`
-* you can also make comments with ``#`` but that's
-usually used for specials comments
-  
-Then note that to write some PHP, you
-need to write a PHP tag like this
-
-```php
-<?php
-// some php code here
-?>
-<!-- here it's HTML not PHP -->
-```
-
-Then here you go with the syntax
-
 * [Variables](basic/variables.md)
 * [Operators](basic/operators.md)
 * [Structures](basic/structures.md)
@@ -101,27 +82,17 @@ Then here you go with the syntax
 * [Include/Require](basic/include.md)
 * [Arrays](basic/arrays.md)
 
-And two tips
-
-* first you don't have any HTML inside your
-PHP file, then don't add a ``?>`` a the end
-* second, if you are doing this
-```php
-<?php echo "Hello World!" ?>
-```
-Then you can use the reduced form that automatically
-calls echo
-
-```php
-<?="Hello World!"?>
-```
+<table class="table border-dark table-bordered table-striped">
+<tr><th class="text-center">Other notes about the Language</th></tr>
+<tr><td>If there is no HTML after a PHP bloc, you can omit <code>?&gt;</code></td></tr>
+<tr><td>You can write comments with <code>//</code>, <code>/**/</code>, or <code>#</code>.</td></tr>
+</table>
 
 <hr class="sl">
 
 ## Main concepts
 
-After learning almost all the syntax needed, here
-concepts that you will surely use in PHP.
+After learning almost all the syntax needed, here some concepts that you will surely use in PHP.
 
 * [Classes and objects](theme/classes.md)
 * [Database and SQL](theme/sql.md)
@@ -129,19 +100,6 @@ concepts that you will surely use in PHP.
 * [Handling Forms](theme/forms.md)
 * [Sessions](theme/sessions.md)
 * [Login/Logout](theme/login_logout.md)
-
-One last piece of advice, about security, is to be
-aware of XSS injections. In a form, one
-can write SQL but also ``HTML/JS``. Someone could
-write for instance ``<script>malicious_script();</script>``
-as username. When we go on his/her profile,
-you will echo this HTML like your usual username
-so anyone reading this page
-will have the malicious script being executed (if you
-enabled scripts that is).
-
-To prevent this, simply escape tags using 
-``htmlentities`` like ``echo htmlentities($username)``.
 
 <hr class="sl">
 
