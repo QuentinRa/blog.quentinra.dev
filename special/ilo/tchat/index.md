@@ -71,10 +71,10 @@ Comment this code
 <blockquote class="spoiler">
 You probably removed (or missing) a line from your fxml your controller. Check out the first line of your FXML for <code>fx:controller="application.Controller"</code>. It should look a bit like this 
 <pre class="language-xml"><code class="language-xml"
-><BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16"
+>&lt;BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16"
 xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller" >
-<!-- omitted -->
-</BorderPane></code>
+&lt;!-- omitted -->
+&lt;/BorderPane></code>
 </pre>
 </blockquote>
 
