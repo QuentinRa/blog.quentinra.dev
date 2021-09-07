@@ -158,13 +158,13 @@ that we know how to solve, and that you should know how to too.
 There are two cases:
 
 * If $b(x) = 0$, the solutions of $(E)$ are $y =\lambda e^{-A(x)}$ where $A$ is a primitive of $a$ and $\lambda \in \mathbb K$.
-* Else, the solution of $(E)$ are $y =\lambda e^{-A(x)} + y_0$ where $y_0$ is a solution of $(E)$, that could be easily "guessed" (or with a method).
+* Else, the solution of $(E)$ are $y =\lambda e^{-A(x)} + y_0$ where $y_0$ is a solution of $(E)$, that could generally easily be "guessed" ~~depending on the kindness of your teacher (more seriously, a method exists to find it if it is not the case)~~.
 
 ### Examples
 
 * A solution of $y\prime = y$, which is equivalent to $y\prime - y = 0$, is $y = \exp$.
 * Let $a > 0, b\in\mathbb R$ and $(E) : y\prime =- ay + b$, which is equivalent to $y\prime + ay = b$
-	* The solutions of $y\prime + ay = 0$ are $\lbrace \lambda e^{-ax}| \lambda\in\mathbb R \rbrace$.
+	* The solutions of $y\prime + ay = 0$ are $\lbrace \lambda e^{-ax}| \lambda\in\mathbb R \rbrace$.
 	* A solution of $(E)$ is $y_0 = \frac ba$.
 	* So we could conclude that the solutions of $(E)$ are of the form $y_0 + \lambda e^{-ax}$, where $\lambda\in\mathbb R$ .
 
@@ -178,7 +178,7 @@ However, if you were attentive, you could notice in the previous examples that t
 
 ### Cauchy, or it's better when it's unique
 
-To have a problem with a unique solution, we add a constraint by fixing a value to a certain point.
+To have a problem with a unique solution, we add constraints by fixing values to a certain point (there are the same number of constraints that the order of the ODE).
 
 For example, $y\prime = y$ has $x\mapsto 0,\quad x\mapsto \exp (x),\quad x\mapsto 42\times \exp (x) $ as solutions, but $\exp$ is the unique solution to the problem
 <div>
@@ -208,15 +208,31 @@ that we want to approximate on the interval $[a, b]$.
 
 We discretize $[a, b]$ in $N\in\mathbb N^*$ values : $t_0 = a < t_1 < ... < t_{N-1} < t_N = b$ .
 
+Our goal is to approximate the solution with a sequence <br/>
+$z_0 = y(t_0), z_1 \approx y(t_1), \dots, z_k \approx y(t_k), \dots , z_{N-1} \approx y (t_{N-1}$) .
+
+### Taylor : Origin
+
+It is based on the [Taylor's theorem](https://en.wikipedia.org/wiki/Taylor%27s_theorem) :
+
+<div>
+	\[ y(x_0 + h) \approx y(x_0) + h\times y\prime (x_0) \]
+</div>
+
+That we could rewrite 
+<div>
+	\[ y(x_0) \approx y(x_0) + (x - x_0) \times y\prime (x_0) \]
+</div>
+
+with $h = x_0  - a$.
+
+The approximation is pretty good when $h$ is really small ( $|h| << 1$ ).
+
+For example, $\sqrt{1,44} = \sqrt{1 + 0,44} \approx \sqrt 1 + \frac{1}{2\sqrt 1} \times 0,44 \approx 1,22$ which is an approximation of $\sqrt{1,44} = 1,2$ .
+
 ### Forward
 
 One of the methods to approximate the solution of a Cauchy problem is the **forward Euler method** (`Euler explicite`).
-
-It is based on the [Taylor's theorem](https://en.wikipedia.org/wiki/Taylor%27s_theorem):
-
-<div>
-	\[ y(x + h) \approx y(x) + h\times y\prime (x) \]
-</div>
 
 We approximate the solution with the sequence defined by:
 
@@ -226,11 +242,52 @@ We approximate the solution with the sequence defined by:
 		z_{k+1} = z_k + (t_{k+1} - t_k) \times f(t_k, z_k)\quad \forall k < N
 	\end{array} \right . \]
 </div>
+
+The expression of $z_{k+1}$ is based on the Taylor's formula, using $y\prime = f(t, y)$ to approximate the first derivative value. Try to notice how similar they are !
 	
-It is called forward because the expression of $z_{k+1}$ only depends on known values.
+The method is called forward because the expression of $z_{k+1}$ only depends on known values.
 	
 This method is the simplest, but has the default to easily have big errors.
 
+#### Example
+	
+<div>
+	\[ \left\lbrace \begin{array}{l}
+		y\prime = y \\
+		y(0) = 1
+	\end{array} \right . \]
+</div>
+
+on $[0; 1]$ .
+	
+The solution is, of course, exponential, but let see how we could implement it :
+```r
+#Constant
+N <- 100
+a <- 0
+b <- 1
+y0 <- 1
+	 
+#How we pose the problem.
+f <- function (t, y) { return (y) }
+#We use a constant step.
+h <- (b-a) / (N-1)
+t <- seq(a, b, h) 
+	 
+#Initialization of the sequence.
+z <- 1:N
+z[1] <- y0
+	
+#Recurrence
+for (k in 2:N)
+{
+	z[k] <- z[k-1] + h * f(t, z[k-1])
+}
+	
+#Our magnificent approximation of exp([0; 1]) .
+plot(t, z)
+```
+	
 ### Backward
 	
 It's quite the same as the forward Euler method, with a little difference:
@@ -242,9 +299,77 @@ It's quite the same as the forward Euler method, with a little difference:
 	\end{array} \right . \]
 </div>
 	
-It is called backward because the expression of $z_{k+1}$ depends on itself; the unknown value depends on itself, which is unknown. 
+It is called backward because the expression of $z_{k+1}$ depends on itself; the unknown value depends on itself, which made the calculations less easier. 
 
+### Matrix : Reloaded
+	
+What if we've got an ODE with an order $n\in\mathbb N, n \geq 2$, like this :
+
+<div>
+	\[ \left\lbrace \begin{array}{l}
+		y^{(n)} = f(t, y(t), y\prime (t), \dots, y^{(n-1)} (t)) \\
+		y(a) = y_0 \\
+		y\prime (a) = y_1 \\
+		\vdots  \\
+		y^{(n-1)} (a) = y_0
+	\end{array} \right .\]
+</div>
+?
+	
+We set
+<div>
+	\[ Y = \left ( \begin{array}{c}
+		y^{(n - 1)} \\
+		y^{(n - 2)} \\
+		\vdots  \\
+		y\prime \\
+		y
+	\end{array} \right ) \]
+</div>
+	
+so we have 
+<div>
+	\[ Y' = \left ( \begin{array}{c}
+		y^{(n)} \\
+		y^{(n - 1)} \\
+		\vdots  \\
+		y\prime\prime \\
+		y\prime
+	\end{array} \right )
+	= \left ( \begin{array}{c}
+		F(t, Y) \\
+		y^{(n - 1)} \\
+		\vdots  \\
+		y\prime\prime \\
+		y\prime
+	\end{array} \right )
+	\quad and \quad
+	Y_0 =  \left ( \begin{array}{c}
+		y_{n-1} \\
+		y_{n-2} \\
+		\vdots  \\
+		y_1 \\
+		y_0
+	\end{array} \right )
+	\]
+</div>
+
+Thus we could use the methods above, using matrix.
+
+<hr class="sr">
+	
+## Runge-Kutta
+	
+Instead of calculate the $z_{k+1}$ directly, we calculate some intermediate values before.
+
+The forward Euler methode is a Runge-Kutta method (RK1), while the most used is RK4.
+	
+Ressources :
+* <https://fr.wikipedia.org/wiki/M%C3%A9thodes_de_Runge-Kutta>
+* <https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods](numerical-analysis/)>
+	
 <hr class="sl">
+
 
 ## Sources
 
