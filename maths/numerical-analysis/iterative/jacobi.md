@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-In the Jacobi method, the formula is based on two parts that you can evaluate first, and then at each iteration, you have to multiply your $X$ by the first part, and add the second part.
+In the Jacobi method, the formula is based on two parts that you can evaluate first, and then at each iteration, you have to multiply your $X$ by the first part and add the second part.
 
 <div>
 \[

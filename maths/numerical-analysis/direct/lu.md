@@ -33,11 +33,7 @@ L_i \leftarrow L_i - k * L_j
 \]
 </p>
 
-meaning you can only subtract a line by another line
-that will be multiplied by k. Please, **note
-of all k values that you used**. Your main job is starting
-from **U**, and remove all values below the diagonal.
-U matrix should look like this one
+meaning you can only subtract a line by another line that will be multiplied by k. Please, **note all k values that you used**. Your main job is starting from **U**, and remove all values below the diagonal. U matrix should look like this one
 
 <div>
 \[

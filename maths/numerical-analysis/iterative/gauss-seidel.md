@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-The Gauss-Seidel method is a particular case of SOR, where omega is 1. This time, you can only evaluate a part once, but we got the result faster. The Gauss-seidel formula is
+The Gauss-Seidel method is a particular case of SOR, where omega is 1. This time, you can only evaluate one part before starting, but we got the result is fewer steps. The Gauss-Seidel formula is
 
 <div>
 \[

@@ -2,13 +2,13 @@
 
 [Go back](../index.md)
 
-Jacobi, Gauss-Seidel and SOR, are almost the same. We will have to rewrite your matrix $A$ in 3 matrices, that are either diagonal matrices or triangular matrices.
+Jacobi, Gauss-Seidel, and SOR are almost the same. We will have to rewrite your matrix $A$ in 3 matrices, which are either diagonal matrices or triangular matrices.
 
 * $A = D - L - U$
 * $A$ is our matrix
 * $D$ is a diagonal matrix with the coefficients on the diagonal of $A$
 * $L$ is a lower triangular matrix, with the coefficient below the diagonal of $A$, **multiplied by -1**
-* $U$ is a upper triangular matrix, with the coefficient above the diagonal of $A$, **multiplied by -1**
+* $U$ is an upper triangular matrix, with the coefficient above the diagonal of $A$, **multiplied by -1**
 
 This is as easy as you could guess, we had
 
