@@ -40,7 +40,7 @@ If you want to edit a course, simply edit the ``.md`` file.
 
 ## TODO List 
 
-Last updated: 2021-08-27
+Last updated: 2021-09-07
 
 <details>
 <summary> <b>Website tasks</b></summary>
@@ -53,9 +53,9 @@ Last updated: 2021-08-27
 * [ ] advanced search? (inside a course/category)
 * [ ] adding file history
 * [ ] adding submit issue
-* [ ] make CSS using SASS
 * [ ] add "Thanks"+Gift? on edit successful
 * [ ] breadcrumb?
+* [ ] improve edit page
 * **Content**
 * [ ] Index Google/Bing
 * [ ] add a pull request template
