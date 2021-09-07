@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-In the likelihood function example, we had $\theta= (p=0.7)$ (we are usually writing $\theta(0.7)$, but I added p for you). We tested all the values of $p$ from 0 to 1, and we are able to see clearly a maximum for $p=0.6$ giving us $\hat{\theta}= (p=0.6)$. We call this value, the maximum likelihood estimation (MLE). This is a mix of statistics and optimization, because we have to maximize the likelihood function.
+In the likelihood function example, we had $\theta=(p=0.7)$ (we are usually writing $\theta = (0.7)$, but I added p for you). We tested all the values of $p$ from 0 to 1, and we are able to see clearly a maximum for $p=0.6$ giving us $\hat{\theta} = (0.6)$. We call this value, the maximum likelihood estimation (MLE). This is a mix of statistics and optimization, because we have to maximize the likelihood function.
 
 Steps
 
