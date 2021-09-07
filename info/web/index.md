@@ -1,6 +1,6 @@
 # Web programming
 
-There are a lot of knowledge and things that would not be relevant if they were added in a language-specific (security, adaptability, tools, seo, the HTTP protocol, the developers' tools, the FTP protocol, setting up a server, etc). Web programming is including a lot
+There is a lot of knowledge and things that would not be relevant if they were added in a language-specific (security, adaptability, tools, SEO, the HTTP protocol, the developers' tools, the FTP protocol, setting up a server, etc.). Web programming can be viewed from 3 perspectives
 
 * the client-side, **Front-End**: interface between the back-end and the client
   * **HTML**: the code of the page
@@ -11,7 +11,7 @@ There are a lot of knowledge and things that would not be relevant if they were 
   * **SQL**: or NoSQL/..., the data of your application
   * **Node.js**: an alternative to PHP
 * **Full-Stack**: handling both Front and Back-End
-  * React native (mobile)
+  * React Native (mobile)
   * Electron (desktop)
 
 <hr class="sl">
@@ -23,9 +23,9 @@ You are using the HTTP protocol, when your browser is requesting something from 
 <details class="details-e">
 <summary>Webserver root and root URL</summary>
 
-* when settings up a server, you will make a folder available at an URL. Let's say you made it like this
+* when settings up a server, you will make a folder available at a URL. Let's say you made it like this
   * **webserver root**: `/path/to/www/`
-  * **base/root url**: `https://myurl.com/`
+  * **base/root URL**: `https://myurl.com/`
 * As you could guess, this is working like a path, so you could write `https://myurl.com/folder/my_file.html` for `/path/to/www/folder/my_file.html`
   * A lot of programmers are using routers, so this won't always be the case <small>(ex: this website)</small>
   * By default, if you don't write a file in the URL, then `index.html` <small>(or php, or index.extension, according to the list in your configuration)</small> will be loaded <small>(if you got one in the folder associated with the current URL)</small>
@@ -50,30 +50,30 @@ For Web APIs, this is usually written in the documentation, but you should be ab
 <details class="details-e">
 <summary>Note about GET</summary>
 
-When requesting a webpage, you are calling `GET URL`. But you can add parameters. Let's say you are making a search, you can tell us when requesting the page, what's the user is searching using this syntax `?name=value&another=value&...` such as `GET URL?q=hello%20World` (encoded version of "Hello{space}World"). Anyone can share this URL, and it will open the same page, because the query is inside the URL.
+When requesting a webpage, you are calling `GET URL`. But you can add parameters. Let's say you are searching something, you can tell us when requesting the page, what's the user is searching for using this syntax `?name=value&another=value&...` such as `GET URL?q=hello%20World` (encoded version of "Hello{space}World"). Anyone can share this URL, and it will open the same page, because the query is inside the URL.
 </details>
 
 <hr class="sr">
 
 ## WebServer
 
-As you will read in the HTMl course, you don't need a server an use the file protocol (same for CSS/JS), but for PHP, you will need a server. You may also use it in HTML, as this may be easy to set up.
+As you will read in the HTML course, you don't need a server, and you may use the file protocol (same for CSS/JS), but for PHP, you **will need** a server. You may also use it in HTML, as this may be easy to set up.
 
 * You can set up a [(virtual) local server](setup/wamp.md)
-* You can set up a [apache server on linux](setup/apache.md)
+* You can set up an [Apache server on Linux](setup/apache.md)
 * Your root URL is `http://localhost`, but in some rare cases <small>(HTTP is enough in development)</small>, you may  [want to have https://localhost](https://web.dev/how-to-use-local-https/) (HTTPS)
 * For Linux users, read this section about [public_html and permissions](setup/perms.md)
 
-Sometimes some students don't want to set up a server and directly work on the remote server. You will need to upload using the FTP protocol (or scp) your files **everytime** you changed something. Some IDEs such as [PHPStorm](../../tools/jetbrains/index.md#phpstorm) or [VSCode](https://code.visualstudio.com/docs/remote/ssh) that are **automatically updating the files on a remote server** when you changed something. Anyways, I think **you should work in local, for security-related purposes**.
+Sometimes some students don't want to set up a server and directly work on the remote server. You will need to upload using the FTP protocol (or SCP) your files **every time** you changed something. Some IDEs such as [PHPStorm](../../tools/jetbrains/index.md#phpstorm) or [VSCode](https://code.visualstudio.com/docs/remote/ssh) that are **automatically updating the files on a remote server** when you changed something. Anyway, I think **you should work on local, for security-related purposes**.
 
 <details class="details-e">
-<summary>You will use the <b>FTP protocol</b> (or the command <code>scp</code>) to send files on a remote server. I'm using a software on Windows, called <a href="https://filezilla-project.org/" target="_blank" rel="noopener noreferrer">FileZilla</a>.</summary>
+<summary>You will use the <b>FTP protocol</b> (or the command <code>SCP</code>) to send files to a remote server. I'm using a software on Windows, called <a href="https://filezilla-project.org/" target="_blank" rel="noopener noreferrer">FileZilla</a>.</summary>
 
 * once started, go to File > Site Manager
 * New site (give it a name in the left column)
   * SFTP (use ssh credentials to login)
-  * host (ex: `pedago-etu.ensiie.fr`, server url)
-  * check ask for password
+  * host (ex: `pedago-etu.ensiie.fr`, the server's URL)
+  * check "ask for password"
   * user (ex: `firstname.lastname`)
   * ok and close
 * Then now that the config is saved,
@@ -101,7 +101,7 @@ This is most likely the most important thing. Either by pressing **F12** (someti
 * **Tools > Problems**: you can see problems using webhint
 * **Tools > LightHouse**: you can see the evaluation of a page by LightHouse (Google)
 
-> **Note**: you may not have every menu that I listed here. Some are available after you enabled them (the + in edge, the "... > more tools" in chrome etc.).
+> **Note**: you may not have every menu that I listed here. Some are available after you enabled them (the + in edge, the "... > more tools" in chrome, etc.).
 
 <hr class="sr">
 
@@ -161,28 +161,28 @@ You will get more notes in the Cybersecurity course.
 
 It's better when everything is automated, right? Here is my list of links that may provide tools (mostly free 🤑, <s>as you are the product</s>)
 
-**Check your code-only**
+**Code-only**
 
 * [W3C validator (HTML)](https://validator.w3.org/) (HTML)
 * [W3C Validator](https://jigsaw.w3.org/css-validator/) (CSS)
 
-**Check more than one kind of checks on a page/the whole website**
+**Make more than one kind of check on a page/the whole website**
 
 * [WebHint](https://webhint.io/scanner/) (security, accessibility, compatibility, performance)
-* [ionos](https://www.ionos.com/tools/website-checker) (general, seo, performance, secure)
-* [sitechecker](https://sitechecker.pro/) (**whole site, up to 150 pages**, general, seo, HTML, but you **can't see where** without starting a trial)
+* [ionos](https://www.ionos.com/tools/website-checker) (general, SEO, performance, secure)
+* [sitechecker](https://sitechecker.pro/) (**whole site, up to 150 pages**, general, SEO, HTML, but you **can't see where** without starting a trial)
 * [Google's pagespeed](https://developers.google.com/speed/pagespeed/insights/) (performance)
-* [Google's Lighthouse](https://web.dev/measure/) (performance, accessibility, seo, best practices, **do not forget to click on view report**)
-* [SEO site checkup](https://seositecheckup.com/analysis) (seo, security), you can [test every tool individually](https://seositecheckup.com/tools) (limited to 1/day)
-* [webpagetest](https://www.webpagetest.org/) (😍 the best, seo, performance, security)
+* [Google's Lighthouse](https://web.dev/measure/) (performance, accessibility, SEO, best practices, **do not forget to click on view report**)
+* [SEO site checkup](https://seositecheckup.com/analysis) (SEO, security), you can [test every tool individually](https://seositecheckup.com/tools) (limited to 1/day)
+* [webpagetest](https://www.webpagetest.org/) (😍 the best, SEO, performance, security)
 
 **SEO-only**
 
-* [biq.cloud](https://biq.cloud/rank-intelligence/) (see your website ranking for a keyword, **need register**)
-* [siteliner](https://www.siteliner.com/) (**whole site, up to 250 pages**, seo)
-* [seo tools](https://www.sanderheilbron.nl/) (seo peek is quite handy 😍)
+* [biq.cloud](https://biq.cloud/rank-intelligence/) (see your website ranking for a keyword, **need to register**)
+* [siteliner](https://www.siteliner.com/) (**whole site, up to 250 pages**, SEO)
+* [SEO tools](https://www.sanderheilbron.nl/) (SEO peek is quite handy 😍)
 * [stats about a domain](https://www.gositestat.com/)
-* [seo tools: speed, cdn, headers](https://www.uptrends.com/tools)
+* [SEO tools: speed, CDN, headers](https://www.uptrends.com/tools)
 
 **Security-only**
 
