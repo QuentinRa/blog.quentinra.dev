@@ -2,13 +2,13 @@
 
 [Go back](../index.md#webserver)
 
-We are usually using **AMP** (Apache MySQL PHP), a software installing the **3** tools you will need. You got 3 version, according to your OS: W=Windows, L=Linux and M=MacOS giving us **WAMP** on Windows.
+We are usually using **AMP** (Apache MySQL PHP), a software installing the **3** tools you will need. You got 3 versions, according to your OS: W=Windows, L=Linux and M=macOS, giving us **WAMP** on Windows.
 
 * [Wamp](https://www.wampserver.com/) or here [Wamp](https://ampps.com/wamp)
 * [Lamp](https://ampps.com/lamp)
 * [Mamp](https://www.mamp.info/en/mamp/windows/)
 
-> Note: when installing, you will be prompted to pick a browser. If yours is not in the list,
+> Note: when installing, you will be prompted to pick a browser. If yours is not included in the list,
 > * write "Firefox" (example) in the search bar
 > * right-click -> open file location
 > * **again**, inside the folder, right-click -> open file location
@@ -16,7 +16,7 @@ We are usually using **AMP** (Apache MySQL PHP), a software installing the **3**
 
 <hr class="sl">
 
-## How do it works?
+## How does it work?
 
 Once installed, you need to run it each time you start your computer (sometimes you don't have to). Check the trails icons (the icons next to your sound/battery/...). If AMP is started, you should see this
 
@@ -28,7 +28,7 @@ The location of your
   * for your path (if needed)
   * left-click on the icon
   * click on "www folder"
-* **base/root url**: `http://localhost/`
+* **base/root URL**: `http://localhost/`
 
 <hr class="sr">
 
@@ -51,7 +51,7 @@ Your database is at `http://localhost/phpmyadmin`, with the credentials `root` a
 <summary>Change the Lang</summary>
 <br>
 
-Right-click on wamp in the system trail then in lang menu.
+Right-click on wamp in the system trail, then in the lang menu.
 </details>
 
 <details class="details-border">

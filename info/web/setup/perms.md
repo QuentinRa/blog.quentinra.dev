@@ -2,7 +2,7 @@
 
 [Go back](../index.md#webserver)
 
-Sometimes, you will work on Linux, and maybe on a shared server. It means that instead of having one "www" (root folder), and one root url, each user will have their one in the home (**called public_html**), and their will have a URL looking like this `https://myorg.tld/~username`.
+Sometimes, you will work on Linux, and maybe on a shared server. It means that instead of having one "www" (root folder), and one root URL, each user will have their one in the home (**called public_html**), and they will have a URL looking like this `https://myorg.tld/~username`.
 
 * create public_html
 

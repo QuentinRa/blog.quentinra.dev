@@ -2,14 +2,14 @@
 
 [Go back](../index.md#webserver)
 
-I'm not an expert in setting up an Apache Server. I'm quite fond of [Digital ocean tutorials](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-debian-10) (or [this one for mariadb+php](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mariadb-php-lamp-stack-on-debian-10)).
+I'm not an expert in setting up an Apache Server. I'm quite fond of [Digital ocean tutorials](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-debian-10) (or [this one for MariaDB+PHP](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mariadb-php-lamp-stack-on-debian-10)).
 
 My notes
 
 * You may enable .htaccess with `AllowOverride All`.
 * You can add SSL certificates with [Let's encrypt](https://certbot.eff.org/lets-encrypt/debianbuster-apache)
 * The logs are inside `/var/log/apache2` (default)
-* You can configure [Postfix](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-debian-10) to send mails. This is complex and I read a lot of tutorials (DMarc, SPF, DKim, etc.). You may use [mail-tester.com](https://www.mail-tester.com/) to test your server (don't forget to wait 12h before checking again).
+* You can configure [Postfix](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-debian-10) to send mails. This is complex, and I read a lot of tutorials (DMarc, SPF, DKim, etc.). You may use [mail-tester.com](https://www.mail-tester.com/) to test your server (don't forget to wait for around 12h before checking again).
 
 Some commands you may use
 
@@ -31,7 +31,7 @@ sudo systemctl reload apache2
 
 ## HTTP2.0
 
-You should a line like this in your conf: `Protocols h2 http/1.1`. If not, then add it. It means that if h2 is available, then it will be used, otherwise, http/1.1 will be used. Then, server-side, you should use these commands to enable HTT2 (short version of this [complete guide](https://http2.pro/doc/Apache)).
+You should have a line like this in your conf: `Protocols h2 http/1.1` (if not, add it, in VirtualHost). If not, then add it. It means that if h2 is available, then it will be used, otherwise, http/1.1 will be used. Then, server-side, you should use these commands to enable HTT2 (short version of this [complete guide](https://http2.pro/doc/Apache)).
 
 ```bash
 # you will have to add sudo/use root
@@ -55,7 +55,7 @@ apachectl start
 ## Reports/Website stats
 
 <details>
-<summary>You generate reports from your apache logs using <b>awstats</b>. It was used by OVH but they moved to their own-made tool in the late 2020. I used it with the command line, like this</summary>
+<summary>You generate reports from your Apache logs using <b>awstats</b>. It was used by OVH, but they moved to their own-made tool in late 2020. I used it with the command line, like this</summary>
 
 ```bash
 sudo apt-get install htmldoc
