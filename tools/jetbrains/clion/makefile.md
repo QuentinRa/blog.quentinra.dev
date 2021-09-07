@@ -20,6 +20,6 @@ I was originally able to use Makefile without a prior setup, but it suddenly was
     * "C:\cygwin64\bin\make.exe"
     * and check "use Cygwin"
 
-Then, to run your program in the IDE, create a target "run", with the command to run your program. Try to start it in the list of configuration, it fails but add your program in executable and you're done.
+Then, to run your program in the IDE, create a target "run", with the command to run your program. Try to start it in the list of configurations, it fails, but you simply add your program in "executable" and you're done.
 
-Unfortunately, this is still not good enough, like I can't use the debugger which mean it's pretty useless (at least in my eyes).
+Unfortunately, this is still not good enough, like I can't use the debugger which means it's pretty useless (at least in my eyes).

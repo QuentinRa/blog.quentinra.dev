@@ -34,10 +34,10 @@ Otherwise, when you're using <kbd>alt+enter</kbd>, on each patch suggested you g
 
 ### Soft wraps
 
-If a line is too long for being completely displayed in your screen, as it may happens in JSON files (since you can't make multilines Strings), you can enable auto-wrapping
+If a line is too long for being completely displayed on your screen, as it may happen in JSON files (since you can't make multiline), you can enable auto-wrapping
 
-* right after the line number,
-* right-click and enable soft-wrap
+* right-click right after the line number,
+* and enable soft-wrap
 
 If you want something permanent, 
 
@@ -50,4 +50,4 @@ If you want something permanent,
 
 ### Icon for your project
 
-You can add an icon for your project! Simply close your project, right click on it, and "change project icon".
+You can add an icon for your project! Simply close your project, right-click on it, and "change project icon".
