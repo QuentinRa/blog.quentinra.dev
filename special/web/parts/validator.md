@@ -25,7 +25,7 @@ Source: <https://www.w3.org/QA/Tools/Icons>, <https://validator.w3.org/docs/help
 
 **Anyone can use this logo so that not something used to show that you passed the test, but something that can allow someone to easily check your page on W3Validator**.
 
-Note: some may notice the "referer". When you're opening a link, the new page know what was the previous page we were on. Personally, I don't like that, so you can do
+Note: some may notice the "referer" (not my typo 😬). When you're opening a link, the new page knows what was the previous page we were on. Personally, I don't like that, so you can do
 
 ```html
 <p>

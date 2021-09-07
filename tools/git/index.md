@@ -40,7 +40,7 @@ As a side note before starting, you can create aliases for a command like `git n
 
 ## Basic usage
 
-Please take note that every command is starting with git followed by one space.
+Please take note that every command is starting with "git", followed by one space.
 
 * [Get your repository from server](commands/clone.md)
 * [Update your local version](commands/pull.md)

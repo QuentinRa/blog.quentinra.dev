@@ -126,13 +126,13 @@ The algorithms you may use are
 
 # Ordinary differential equation (ODE)
 
-An **differential equation**  is an equation that relates one or more derivatives of an unknown functions.
+A **differential equation**  is an equation that relates one or more derivatives of unknown functions.
 
-If every derivative of the unknown functions are of one independent variable, the differential equation is called an **Ordinary differential equation**, in contrast of a **partial differential equation**. The order of an ODE is the highest derivative.
+If every derivative of the unknown functions is of one, independent variable, the differential equation is called an **Ordinary differential equation**, in contrast to a **partial differential equation**. The order of an ODE is the highest derivative.
 
 ### Example
 
-$y\prime (x) = y(x)$ is a ordinary differential equation, while $\frac{\partial y}{\partial t} + \frac{\partial y}{\partial x} = 0$ is not.
+$y\prime (x) = y(x)$ is an ordinary differential equation, while $\frac{\partial y}{\partial t} + \frac{\partial y}{\partial x} = 0$ is not.
 
 More specifically, $y\prime (x) = y(x)$, that we generally write $y\prime - y = 0$, is a first-order linear differential equation.
 
@@ -155,10 +155,10 @@ A **first-order linear differential equation** is a linear differential equation
 </div>
 that we know how to solve, and that you should know how to too.
 
-There is two cases :
+There are two cases:
 
 * If $b(x) = 0$, the solutions of $(E)$ are $y =\lambda e^{-A(x)}$ where $A$ is a primitive of $a$ and $\lambda \in \mathbb K$.
-* Else, the solution of $(E)$ are $y =\lambda e^{-A(x)} + y_0$ where $y_0$ is a solution of $(E)$, that could be easily finded (or with a method).
+* Else, the solution of $(E)$ are $y =\lambda e^{-A(x)} + y_0$ where $y_0$ is a solution of $(E)$, that could be easily "guessed" (or with a method).
 
 ### Examples
 
@@ -170,16 +170,15 @@ There is two cases :
 
 <hr class="sr">
 
-## 
-### Why we use computer ?
+### Why do we use a computer?
 
-If we can solve an ODE and find the solutions, why does we need to use a computer ? Because in fact, we couldn't solve all the ODE, the example of the first-order linear differential equation given in the previous section are exceptions. That is why we use a computer, which with we can approximate the solution.
+If we can solve an ODE and find the solutions, why do we need to use a computer? Because, in fact, we couldn't solve every ODE, the example of the first-order linear differential equation given in the previous section is an exception. That is why we use a computer, with which we can approximate the solution.
 
 However, if you were attentive, you could notice in the previous examples that their solutions are not unique. In fact, there are infinite solutions to an ODE, which is a problem when we want to approximate something.
 
 ### Cauchy, or it's better when it's unique
 
-To have a problem with an unique solution, we add a constraint by fixing a value to a certain point.
+To have a problem with a unique solution, we add a constraint by fixing a value to a certain point.
 
 For example, $y\prime = y$ has $x\mapsto 0,\quad x\mapsto \exp (x),\quad x\mapsto 42\times \exp (x) $ as solutions, but $\exp$ is the unique solution to the problem
 <div>
@@ -191,7 +190,8 @@ For example, $y\prime = y$ has $x\mapsto 0,\quad x\mapsto \exp (x),\quad x\mapst
 
 These problems, when we have a differential equation and initials values, are called **Cauchy problems**. 
 
-Under certain conditions, the <a href=https://en.wikipedia.org/wiki/Picard%E2%80%93Lindel%C3%B6f_theorem>Cauchy–Lipschitz theorem</a> ensures that the solution exists and is unique.
+Under certain conditions, the [Cauchy–Lipschitz theorem](https://en.wikipedia.org/wiki/Picard%E2%80%93Lindel%C3%B6f_theorem) ensures that the solution exists and is unique.
+
 <hr class="sr">
 
 ## Euler
@@ -210,14 +210,16 @@ We discretize $[a, b]$ in $N\in\mathbb N^*$ values : $t_0 = a < t_1 < ... < t_{N
 
 ### Forward
 
-One of the method to approximate the solution of a Cauchy problem is the **forward Euler method** (*Euler explicite* in French).
+One of the methods to approximate the solution of a Cauchy problem is the **forward Euler method** (`Euler explicite`).
 
-It is based on the <a href=https://en.wikipedia.org/wiki/Taylor%27s_theorem>Taylor's theorem</a> :
+It is based on the [Taylor's theorem](https://en.wikipedia.org/wiki/Taylor%27s_theorem):
+
 <div>
 	\[ y(x + h) \approx y(x) + h\times y\prime (x) \]
 </div>
 
-We approximate the solution with the sequence defined by :
+We approximate the solution with the sequence defined by:
+
 <div>
 	\[ \left\lbrace \begin{array}{l}
 		z_0 = y_0 \\
@@ -225,13 +227,14 @@ We approximate the solution with the sequence defined by :
 	\end{array} \right . \]
 </div>
 	
-It is called forward because the expression of $z_{k+1}$ only depends of known values.
+It is called forward because the expression of $z_{k+1}$ only depends on known values.
 	
 This method is the simplest, but has the default to easily have big errors.
 
 ### Backward
 	
-It's quite the same than the forward Euler method, with a little difference :
+It's quite the same as the forward Euler method, with a little difference:
+
 <div>
 	\[ \left\lbrace \begin{array}{l}
 		z_0 = y_0 \\
@@ -239,7 +242,7 @@ It's quite the same than the forward Euler method, with a little difference :
 	\end{array} \right . \]
 </div>
 	
-It is called backward because the expression of $z_{k+1}$ depends of itself; the unknown value depend of itself, which is unknown. 
+It is called backward because the expression of $z_{k+1}$ depends on itself; the unknown value depends on itself, which is unknown. 
 
 <hr class="sl">
 
