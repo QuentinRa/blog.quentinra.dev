@@ -4,11 +4,11 @@
 
 A sitemap may not be needed for a crawler to index your website, but this is a good practice as you are telling robots what page they should index, or to provide information about the images/video/... (=resources) of your website.
 
-The format is a XML file, you can these to generate one
+The format is an XML file, you can these to generate one
 
 * <https://www.xml-sitemaps.com/> (max. 500 pages)
-* <https://www.sitemapgenie.com/> (no limit or it seems so)
-* You can find some tools on github
+* <https://www.sitemapgenie.com/> (no limit, or it seems so)
+* You can find some tools on GitHub
 
 Once you created a sitemap, you have to send it to Google/Bing using their platform, as explained in this article about how [to submit your website to a search engine](https://ahrefs.com/blog/submit-website-to-search-engines/).
 
@@ -34,6 +34,6 @@ The file is looking like this
 
 **Notes**
 
-* you are adding as much URLs as you want
+* you are adding as many URLs as you want
 * the priority is optional
-* the field "lastmod" is optional
+* the field "lastmod" is optional (last time the file was modified, either "YYYY-MM-DD" or the one above)

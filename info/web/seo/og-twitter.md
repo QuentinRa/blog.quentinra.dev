@@ -1,4 +1,4 @@
-# OG/twitter meta
+# OG/Twitter meta
 
 [Go back](../index.md#accessibility)
 

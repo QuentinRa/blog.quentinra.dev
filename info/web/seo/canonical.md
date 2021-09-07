@@ -2,7 +2,7 @@
 
 [Go back](../index.md#search-engine-optimization-seo)
 
-You will most likely have some links are pointing to the same page, but the URL may be a different. You need to tell the search engine **which one is the real one**: that's the canonical URL.
+You will most likely have some links are pointing to the same page, but the URL may be different. You need to tell the search engine **which one is the real one**: that's the canonical URL.
 
 For instance, you may have
 

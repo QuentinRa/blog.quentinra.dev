@@ -2,7 +2,7 @@
 
 [Go back](../index.md#search-engine-optimization-seo)
 
-**Structural Data** are providing more information about your website, and it allows Google to display **rich results**. You should are already your search engine being smart like "5+65" is being evaluated as "70" or "John Doe" will show up the Wikipedia page on the right.
+**Structural Data** are providing more information about your website, and it allows Google to display **rich results**. You should are already aware of some search engines being smart, like "5+65" is being evaluated as "70" or "John Doe" will show the Wikipedia page on the right.
 
 You will **most likely not achieve that**, but search engines **will be able to display more information** about your website in their result <small>(they may not do it even if they are able to)</small>.
 
@@ -29,7 +29,7 @@ Please note, that you need to escape the "\\", for instance, the one for this pa
         "@id": "https:\/\/memorize.be\/info\/web\/seo\/structured.md"
     },
     "headline": "Structured Data - WEB | Memorize",
-    "description": "Structural Data are providing more information about your website, and it allows Google to display rich results. You should are already your search engine being smart like "5+65" is being evaluated as "70" or "John Doe" will show up the Wikipedia page on the right.",
+    "description": "Structural Data are providing more information about your website, and it allows Google to display rich results. You should are already aware of some search engines being smart like \"5+65\" is being evaluated as \"70\" or \"John Doe\" will show the Wikipedia page on the right.",
     "author": {
         "@type": "Organization",
         "name": "Memorize",
