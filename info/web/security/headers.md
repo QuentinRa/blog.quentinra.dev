@@ -26,9 +26,9 @@ sudo service apache2 restart
 <tbody>
 <tr>
 <th scope="row">X-Frame-Options header</th>
-<td>Prevent anyone to open your website inside a iframe, to avoid the Clickjacking attack.
+<td>Prevent anyone to open your website inside an iframe, to avoid the Clickjacking attack.
 
-**Value**: `deny`, `sameorigin`, or/and you may allows only some domains with `allow-from: DOMAIN`.
+**Value**: `deny`, `sameorigin`, or/and you may allow only some domains with `allow-from: DOMAIN`.
 </td>
 </tr>
 <tr>
@@ -52,7 +52,7 @@ sudo service apache2 restart
 <th scope="row">X-XSS-Protection</th>
 <td>
 
-Prevent the page from loading, if a XSS attack was detected (**deprecated and removed**, use CSP, you may [read MDN notes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection).
+Prevent the page from loading, if an XSS attack was detected (**deprecated and removed**, use CSP, you may [read MDN notes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection).
 
 **Value**: `"1; mode=block"`. **Now**, we are settings this to "0".
 </td>
@@ -68,9 +68,9 @@ Prevent the page from loading, if a XSS attack was detected (**deprecated and re
 <th scope="row">Content-Security-Policy (CSP)</th>
 <td>Tell, which domain can load CSS, JavaScript, Images, Medias, Fonts, etc.
 
-The best practice would be to disable inline CSS and JavaScript, aside from that, everything is good as long as you are aware of who you gave access to.
+The best practice would be to disable inline CSS and JavaScript, aside from that, everything is good as long as you are aware of whom you gave access to.
 
-This is a short examples of allowing inline CSS/JavaScript (🤮, bad, 'unsafe-inline') and allowing some URLs. You will see errors in the console, letting you pick which domains/URLs you want to add or not (self=your website, none=none 😆). **There are no newlines** in the real file.
+You may check this website header for a short example of allowing inline CSS/JavaScript (🤮, bad, 'unsafe-inline') and allowing some URLs. If you start using this header with your values, you will see errors in the console, letting you know which domains/URLs you will have to add or remove.
 
 You can [learn more here](https://infosec.mozilla.org/guidelines/web_security#content-security-policy), [examine yours here](https://csp-evaluator.withgoogle.com/?csp=https://duckduckgo.com), and [generate one here](https://addons.mozilla.org/en-US/firefox/addon/laboratory-by-mozilla/).
 
@@ -94,7 +94,7 @@ You should read [this page by MDN](https://developer.mozilla.org/en-US/docs/Web/
 <th scope="row">Permissions-Policy</th>
 <td>
 
-You can enable or disable features that you website might use (accelerometer, camera, ...). The usual behavior is to disable everything.
+You can enable or disable features that your website might use (accelerometer, camera, ...). The usual behavior is to disable everything.
 
 The simple version would be `accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()`. You can check on the Web if you need explanations about [each option](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy#directives).
 </td>

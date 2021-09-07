@@ -17,7 +17,7 @@ Ex: you stored the ID of my account in the form to edit my profile, what if I pu
 <details class="details-e">
 <summary>Required fields</summary>
 
-If a field is **required** or you added a script in **JS** to check the form,  the user can **remove** or bypass anything. You **have to** test everything **again** in PHP. You will do it once in HTML/CSS for the normal users, and another one for the "hackers".
+If a field is **required**, or you added a script in **JS** to check the form,  the user can **remove** or bypass anything. You **have to** test everything **again** in PHP. You will do it once in HTML/CSS for the normal users, and another one for the "hackers".
 </details>
 
 <details class="details-e">
