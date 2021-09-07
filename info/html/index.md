@@ -668,7 +668,7 @@ See [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Elemen
 <td>Audio</td>
 <td><code>&lt;audio src="URL" controls>&lt;/audio></code></td>
 <td>
-<audio src="URL" controls></audio>
+<audio src="" controls></audio>
 </td>
 </tr>
 
@@ -680,7 +680,7 @@ You can add inside video, the tag track to add subtitles.<br>
 If you got multiples sources/format, then you may use the tag source instead of "src".
 </td>
 <td>
-<video src="URL" controls></video>
+<video src="" controls></video>
 </td>
 </tr>
 </tbody>
