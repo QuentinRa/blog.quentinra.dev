@@ -514,7 +514,7 @@ sass --watch input.scss output.css
 sass input.scss output.css
 ```
 
-As always [W3Schools got a tutorial about SASS](https://www.w3schools.com/sass/default.php). [SASS oficial documentation](https://sass-lang.com/guide) is quite good too.
+As always, [W3Schools got a tutorial about SASS](https://www.w3schools.com/sass/default.php). [SASS official documentation](https://sass-lang.com/guide) is quite good too.
 
 <details class="details-border">
 <summary>My notes about the syntax</summary>
@@ -608,7 +608,7 @@ opacity(color, 0.5)
 </tr>
 <tr>
 <td><b>Breaking into files</b></td>
-<td>You can split a scss into files, starting with a <code>_module.scss</code>. Then, in the main file, use
+<td>You can split a SCSS into files=modules, the modules are starting with a <code>_module.scss</code>. Then, in the main file, use
 
 <pre class="language-scss"><code>@import 'module'</code></pre> (or @use)
 </td>
