@@ -161,7 +161,7 @@ But, you should note
 
 * you **can use HTML**
 
-We are allowing HTML, but note that using style is not recommended (as it may be disabled later), while scripts aren't allowed 🙄. <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank" rel="noopener noreferrer">Bootstrap 5</a> classes are allowed, and you may use [our css rules](https://github.com/memorize-code/memorize-references/tree/main/.assets/css).
+We are allowing HTML, but note that using style is not recommended (as it may be disabled later), while scripts aren't allowed 🙄. <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank" rel="noopener noreferrer">Bootstrap 5</a> classes are allowed, and you may use [our CSS rules](https://github.com/memorize-code/memorize-references/tree/main/.assets/css).
 
 * **add references**
 

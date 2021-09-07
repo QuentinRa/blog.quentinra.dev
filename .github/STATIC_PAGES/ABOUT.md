@@ -6,10 +6,10 @@ I first made a website called RpgDatabase, because my friends and I wanted to ma
 
 Later, I thought that it would be convenient if I made a website with everything that I learned, so that
 
-* I would not have to re-open my old sheets to look for something
+* I would not have to re-open my old books to look for something
 * I can read my courses everywhere
 
-Then since November 2020, I thought of helping my classmates too, and created "Memorize".
+Then since November 2020, I thought of helping my classmates too, and created "Memorize". You can find [the changelog here](https://github.com/lgs-games/memorize/blob/master/.github/CHANGELOG.md).
 
 <p class="text-end pt-3">
  I hope you'll find it to your liking - Quentin RA "Calistro"
