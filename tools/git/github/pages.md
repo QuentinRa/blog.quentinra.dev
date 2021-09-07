@@ -20,6 +20,6 @@ You may write your website in Markdown. I didn't try, but here are the links tha
 * [Jekyll Themes](http://jekyllthemes.org/)
 * [GoHugo](https://gohugo.io/) ([Hosting on GitHub](https://gohugo.io/hosting-and-deployment/hosting-on-github/))
 
-You may look for "static site generators", quite a lot of them  [are listed here](https://jamstack.org/generators/) along with this [Github repository](https://github.com/myles/awesome-static-generators).
+You may look for "static site generators", quite a lot of them  [are listed here](https://jamstack.org/generators/) along with this [GitHub repository](https://github.com/myles/awesome-static-generators).
 
 You can use [form spree](https://formspree.io/) to use forms without coding.
