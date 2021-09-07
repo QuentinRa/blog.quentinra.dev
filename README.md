@@ -53,7 +53,6 @@ Last updated: 2021-09-07
 * [ ] advanced search? (inside a course/category)
 * [ ] adding file history
 * [ ] adding submit issue
-* [ ] add "Thanks"+Gift? on edit successful
 * [ ] breadcrumb?
 * [ ] improve edit page
 * **Content**
