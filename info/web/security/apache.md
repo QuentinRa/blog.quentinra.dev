@@ -2,7 +2,7 @@
 
 [Go back](../index.md#security)
 
-This page purpose is to list notes that can't be put into a topic-specific page such as SSL, or headers. I learned a lot from [this article about apache-security-tips by tecmint](https://www.tecmint.com/apache-security-tips/). Note that you can "generate" a secure configuration [using the Mozilla Generator](https://ssl-config.mozilla.org/#server=apache) and you may check [these configurations](https://syslink.pl/cipherlist/).
+This page's purpose is to list notes that can't be put into a topic-specific page such as SSL, or headers. I learned a lot from [this article about apache-security-tips by tecmint](https://www.tecmint.com/apache-security-tips/). Note that you can "generate" a secure configuration [using the Mozilla Generator](https://ssl-config.mozilla.org/#server=apache) and you may check [these configurations](https://syslink.pl/cipherlist/).
 
 <hr class="sl">
 
@@ -23,7 +23,7 @@ Options All -Indexes
 </IfModule>
 
 # deny access to every file (be it direct or not)
-# you may allows localhost
+# you may allow localhost
 order deny,allow
 deny from all
 # allow localhost
@@ -39,4 +39,13 @@ RewriteRule /?(README.*|.ht*)$ - [F]
 
 # limit size for uploads
 LimitRequestBody 512000
+```
+
+Here is an example: **you want to deny everyone** to your folder **uploads**, aside from your website, and add a limit size for the file uploaded of 100ko. We are putting in `upload`, the `.htaccess`
+
+```apacheconf
+order deny,allow
+deny from all
+allow from 127.0.0.1
+LimitRequestBody 102400
 ```

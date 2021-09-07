@@ -4,7 +4,7 @@
 
 You can learn [here, what's a Content delivery network (CDN)](https://www.keycdn.com/what-is-a-cdn). They will make your website faster. **As a programmer**, you can even use one for **free**, as I'm doing with this website.
 
-**CDNs** are (usually) faster than hosting locally the files. You can also set up your local server to reduce the GAP with CDN (by using the good headers for images etc.). You got a lot of notes about this on the WEB.
+**CDNs** are (usually) faster than hosting locally the files. You can also set up your local server to reduce the GAP with CDN (by using good headers for images etc.). You got a lot of notes about this on the WEB.
 
 <hr class="sl">
 
@@ -17,7 +17,7 @@ For instance, for [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 ```
 
-That's it. It usually quite easy.
+That's it. It is usually quite easy.
 
 <hr class="sr">
 

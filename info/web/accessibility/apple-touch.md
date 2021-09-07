@@ -2,12 +2,11 @@
 
 [Go back](../index.md#websites-improvements-summary)
 
-"Similar to the Favicon, the Apple touch icon or apple-touch-icon.png is a file used for a web page icon on the Apple iPhone, iPod Touch, and iPad. When someone bookmarks your web page or adds your web page to their home screen, this icon is used. If this file is not found these Apple products use the screenshot of the web page, which often looks like no more than a white square."
+> "Similar to the Favicon, the Apple touch icon or apple-touch-icon.png is a file used for a web page icon on the Apple iPhone, iPod Touch, and iPad. When someone bookmarks your web page or adds your web page to their home screen, this icon is used. If this file is not found these Apple products use the screenshot of the web page, which often looks like no more than a white square."
+> 
+> [According to this article](https://www.computerhope.com/jargon/a/appletou.htm).
 
-This is from <https://www.computerhope.com/jargon/a/appletou.htm>,
-I copy-pasted since the explication were good, but I'm not using
-their solution since I got a warning for 120 and 152.
-This is because of [this article](https://webhint.io/docs/user-guide/hints/hint-apple-touch-icons/).
+The explication was good, but I'm not using their solution as [as we have to pick multiples resolutions](https://webhint.io/docs/user-guide/hints/hint-apple-touch-icons/).
 
 <hr class="sl">
 
