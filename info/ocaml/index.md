@@ -1,47 +1,22 @@
 # OCaml
 
-This is a meta-language (.ml), that will be used
-to demonstrate the ``functional programming`` paradigm.
+OCaml is a functional language, from the family of Meta Languages (".ml", along with SML or CAML). Unfortunately, OCaml is **impure**, as it allows side-effects. It's strongly advised to read the course about **Functional programming** before starting so you know about immutable, purity, and things like this. We are currently in [OCaml 4.12](https://github.com/ocaml/ocaml).
 
-You should remember that the concepts are
+* [The official manual](https://ocaml.org/manual/index.html)
+* [The official tutorials](https://ocaml.org/learn/tutorials/)
 
-* everything is a **value**
-* **implicit types**
-* variables are **immutables** (=can't change the variable value)
-* **purity** (given some parameters we should always
-  have the same predictable result at the end, 
-  there are no side-effects so a function must return a value)
-* **referential transparency** (if `f(x) = y` then writing
-  `f(x)` or `y` is the same, and `f(x)-f(x)` is equal
-  to `0`)
-
-[Here](intro/fp.md) something more complete.
+> We are using a lot OCaml as students, because a lot of students learned this one before, but I would be better to look as Haskell 🙄, as there are no side-effects.
 
 <hr class="sr">
 
 ## Introduction
 
-You can write OCaml in a ``.ml`` file, then compile
-using ``ocamlc``. You can also write some code in a
-console (`ocaml`) like in python or a lot of languages.
+As a lot of languages such as Python or Java, you are able to write OCaml in a console. Otherwise, you can also write a `file.ml` and compile it like you would in C. You can use
 
-Installing ``ocaml`` may be a pain in the ass if you are
-not on Linux. 
+* `ocaml`: to open OCaml console
+* `ocamlc file.ml`: to compile a OCaml file and create a `a.out` <small>(this is working like `gcc` in C)</small>.
 
-* Some are using the [online console](https://try.ocamlpro.com/)
-* [a french tutorial](https://carnot.cpge.info/index.php/2018/01/28/installer-ocaml-sur-sa-machine/)
-presenting tools for macOS and Windows
-* you can try this tutorial [OCaml with opam](https://fdopen.github.io/opam-repository-mingw/installation/) but since august 2021, this project is **discontinued** and [dune](https://dune.build/install) should be used instead
-* you can try ``WinCaml`` but it's a virus according to Norton
-  and the site is ranked as dangerous (seems like it
-  happened after the website moved and the old site
-  is down, previously caml.inria.fr then jean.mouric.... then hacker)
-
-or you can follow one of these tutorials
-
-* [Install OCaml + use in VSCode](intro/install-m.md)
-* [Install OCaml in WSL](intro/install-wsl.md)
-* [OCaml in Intellij](intro/install-idea.md)
+As the installation is hard on Windows, I made a tutorial here to [install OCaml on Windows](intro/install-win.md). On Linux you should not have a problem. You can also use OCaml in your browser with [TryOCamlPro](https://try.ocamlpro.com/) (this may be enough/the best solution for a lot of you).
 
 <hr class="sl">
 
