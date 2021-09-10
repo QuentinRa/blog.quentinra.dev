@@ -22,13 +22,6 @@
       "icon": "<i class=\"bi bi-terminal-fill\"></i>"
     },
     {
-      "tag": "ocaml",
-      "name": "OCaml",
-      "title": "Learn OCAML programming",
-      "desc": "This is a course for beginners in OCaml or in functional languages.",
-      "icon": "<i class=\"bi bi-terminal-fill\"></i>"
-    },
-    {
       "tag": "cyber-security",
       "name": "Cybersecurity",
       "title": "Learn cybersecurity",
