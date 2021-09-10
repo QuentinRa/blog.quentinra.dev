@@ -15,6 +15,7 @@ And you may install,
 
 * [privacy badger extension](https://www.eff.org/pages/privacy-badger).
 * and/or the [DuckDuckGo extension](https://duckduckgo.com/app)
+* [adblock](https://adblockplus.org/) and/or [ublock origin](https://ublockorigin.com/) to block most ads (if not all), and disable some trackers.
 
 <hr class="sl">
 
