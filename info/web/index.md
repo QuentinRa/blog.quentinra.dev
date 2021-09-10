@@ -96,7 +96,7 @@ This is most likely the most important thing. Either by pressing **F12** (someti
 * **Tools > <i class="bi bi-box-arrow-in-up-left"></i>** or **CTRL+SHIFT+C**: easily find the code of something, by clicking on it after the mode was triggered
 * **Tools > <i class="bi bi-window"></i>** or **CTRL+SHIFT+M**: you can preview the appearance of your website on a phone/tablet/... (**responsive design in CSS**)
 * **Tools > Console**: you can execute some **JavaScript**, try `5+5`.
-* **Tools > Sources**: see the code source of the page
+* **Tools > Sources**: see the code source of the page (and at  the bottom of **Tools > Application**)
 * **Tools > Application**: see the localStorage (JS), the cookies (PHP), etc.
 * **Tools > Problems**: you can see problems using webhint
 * **Tools > LightHouse**: you can see the evaluation of a page by LightHouse (Google)
