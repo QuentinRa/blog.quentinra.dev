@@ -2,7 +2,7 @@
 
 [Go back](../index.md#rest-api)
 
-You will use **XMLHttpRequest** to make a request. As you should know by now, you can make requests such as "GET", "POST", "PUT", "DELETE", etc. The code is pretty straightforward, aside from the fact that the code is **asynchronous**.
+You will use **XMLHttpRequest** to make a request. As you should know by now, you can make requests such as "GET", "POST", "PUT", "DELETE", etc. The code is pretty straightforward: you are setting the URL, the method etc. and sending the request. Then, in the function given to "onreadystatechange", you are writing the code that will be called when we got the result.
 
 <hr class="sl">
 
