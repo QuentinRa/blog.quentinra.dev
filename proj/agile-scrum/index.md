@@ -13,7 +13,7 @@ As this is an incremental method, you will add functionalities incrementally. Wh
 
 > Everyone is teaching you these, because being Agile is a **mindset** (`état d'esprit`) 🤓, more than a methodology/model 🛠. And that's why I haven't removed this kind of content.
 
-Agile-Scrum is based on 5 **values**
+Agile-Scrum is based on **3 pillars** (transparency, inspection, adaptation), and **5 values**
 
 * **Courage**: face your problems, and do what must be done, **don't hide bugs under the carpet** (`pas de 🐛 sous le tapis`)
 * **Focus**: concentrate on the sprint goal
@@ -30,6 +30,20 @@ Agile methodologies are based on **12 principles** and **4 values** ([principles
 * interact face-to-face 🗣️
 * have a stable development speed 🧐
 * always strive to do better 👌
+
+<hr class="sr">
+
+## What's scrum
+
+The client with interact with the **Product owner**, who will write the specifications of the product in the **product backlog**. You will have to take some of the functionalities and try to make a sample of the project. Then, you will demonstrate what you made to the client, and improve the **product backlog** until the client is satisfied.
+
+The cycle of taking functionalities, coding, demonstrating, and updating the product backlog is called a **sprint**.
+
+The team is made of 
+
+* **Product Owner**: [interact with the client, redact the product backlog](roles/po.md)
+* **Scrum master**: [overview that Scrum is correctly used/applied](roles/sm.md)
+* **Dev team**: a team of usually 3 to 9 peoples
 
 <hr class="sr">
 

@@ -12,36 +12,7 @@ A **sprint** is considered as a project as a whole, meaning you would do your sp
 
 ## Requirements
 
-You would usually need
-
-* **Product Owner**: interact with the client
-* **Scrum master**: overview that Scrum is correctly used/applied
-* **Dev team**: a team of usually 3 to 9 peoples
-* Your [scrum guide](https://agilemanifesto.org/)
-
-First, the **Product Owner** write the specifications of the client called [Product Backlog](product-backlog.md). Then you will repeat a ``Sprint`` meaning all of these steps until the end of the project
-
 1. [Sprint Planning](sprint/planning.md) <small>(What we will do ? )</small>
 2. [Daily Scrum](sprint/daily.md) <small>(daily meeting)</small>
 3. [Sprint review](sprint/review.md) <small>(review, demonstration, at the end)</small>
 4. [Sprint retrospective](sprint/retrospective.md) <small>(suggestions for next print?)</small>
-
-<hr class="sl">
-
-## Some advice
-
-Try to relay as much as possible information in your group. Be sure to ask others
-
-* what they are doing or
-* what they will do or
-* what they want to do
-
-and try to give them advice, be it person-to-person or talk about it, and ask for everyone's help in the **daily scrum**.
-
-**Why?**
-
-By asking them what they are doing, even if they are doing fine, you may help them get new ideas and improve their skills. It will broaden their horizons, and yours too, since you both see how the other one would tackle a problem.
-
-By asking them what they will do, you will check with them that you have the same understanding of what they need to do and how they could tackle this. You can give them tips/advice or help them sail easier in their task.
-
-Finally, you should ask each person what they want to do, because when someone isn't motivated, then you have to redo their work, they may create bugs and slow down everything. You must give them tasks that they will enjoy and do their best to make.
