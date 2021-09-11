@@ -10,7 +10,7 @@ What if we've got an ODE with an order $n\in\mathbb N, n \geq 2$, like this?
 		y(a) = y_0 \\
 		y\prime (a) = y_1 \\
 		\vdots  \\
-		y^{(n-1)} (a) = y_0
+		y^{(n-1)} (a) = y_{n-1}
 	\end{array} \right .\]
 </div>
 
@@ -120,3 +120,5 @@ for (k in 2:N)
 plot(t, z[2,])
 #plot(t, cos(t) + sin(t))
 ```
+
+Note : The solution of the example is $\cos + \sin$.
