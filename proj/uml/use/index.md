@@ -31,7 +31,7 @@ Let's say you got a regular user and a logged user for the system "website". If 
 
 ![Generalization example](images/u-HqA2v9B2efpStXukIqyibFJqzDKGWjJYsoKaWiLd1CoStC0qa4fQQNvYGMGMLiQdHruN8EgNafGEq0.png)
 
-This is called Generalization and not inheritance (``Héritage``) since inheritance isn't a UML concept but an implementation one. Here, a Logged User got every use case available for the Regular User, on top of his own use cases.
+This is called Generalization and not inheritance (`Héritage`) since inheritance isn't a UML concept but an implementation one. Here, a Logged User got every use case available for the Regular User, on top of his own use cases.
 
 <hr class="sr">
 
@@ -42,7 +42,7 @@ You can link use cases between themselves, but DO REMEMBER that you are not allo
 * if the user is connected (=login)
 * then he can see his/her profile (=seeProfile)
 
-``login`` and ``seeProfile`` won't be linked together. ``login`` will be directly linked to an actor "RegularUser" and ``seeProfile`` will also be directly linked to another actor called "LoggedUser".
+`login` and `seeProfile` won't be linked together. `login` will be directly linked to an actor "RegularUser" and `seeProfile` will also be directly linked to another actor called "LoggedUser".
 
 Aside from that, a use case can be linked with another one by
 
