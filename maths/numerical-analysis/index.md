@@ -158,15 +158,15 @@ that we know how to solve, and that you should know how to too.
 There are two cases:
 
 * If $b(x) = 0$, the solutions of $(E)$ are $y =\lambda e^{-A(x)}$ where $A$ is a primitive of $a$ and $\lambda \in \mathbb K$.
-* Else, the solution of $(E)$ are $y =\lambda e^{-A(x)} + y_0$ where $y_0$ is a solution of $(E)$, that could generally easily be "guessed" ~~depending on the kindness of your teacher (more seriously, a method exists to find it if it is not the case)~~.
+* Else, the solution of $(E)$ are $y =\lambda e^{-A(x)} + \tilde y$ where $\tilde y$ is a solution of $(E)$, that could generally easily be "guessed" ~~depending on the kindness of your teacher (more seriously, a method exists to find it if it is not the case)~~.
 
 ### Examples
 
 * A solution of $y\prime = y$, which is equivalent to $y\prime - y = 0$, is $y = \exp$.
 * Let $a > 0, b\in\mathbb R$ and $(E) : y\prime =- ay + b$, which is equivalent to $y\prime + ay = b$
 	* The solutions of $y\prime + ay = 0$ are $\lbrace \lambda e^{-ax}| \lambda\in\mathbb R \rbrace$.
-	* A solution of $(E)$ is $y_0 = \frac ba$.
-	* So we could conclude that the solutions of $(E)$ are of the form $y_0 + \lambda e^{-ax}$, where $\lambda\in\mathbb R$ .
+	* A solution of $(E)$ is $\tilde y = \frac ba$.
+	* So we could conclude that the solutions of $(E)$ are of the form $\frac ba + \lambda e^{-ax}$, where $\lambda\in\mathbb R$ .
 
 <hr class="sr">
 
@@ -220,15 +220,82 @@ $z_0 = y(t_0), z_1 \approx y(t_1), \dots, z_k \approx y(t_k), \dots , z_{N-1} \a
 	
 ## Runge-Kutta
 	
-Instead of calculating the $z_{k+1}$ directly, we calculate some intermediate values before.
+Instead of calculating the $z_{k+1}$ directly, we calculate some intermediate values $k_i$ before.
 
 The forward Euler method is a Runge-Kutta method (RK1), while the most used is RK4.
+
+### The fundamental
+
+The Runge-Kutta methods are based on the **fundamental theorem of calculus** :
+<div>
+	\[
+	y(t + h) = y(t) + \int_t^{t+h} y\prime (x)dx
+	\]
+</div>
+
+Applied to the ODE, we've got :
+<div>
+	\[
+	y(t_{n+1}) = y(t_n) + \int_{t_n}^{t_{n+1}} f(x, y(x)) dx
+	\]
+</div>
+
+What we do in the RK method is to approximate the integral with a quadrature rule.
+
+### RK4
 	
-Resources:
+This method is more effective and easy to implement.
+
+The sequence is defined like this : $z_0 = y_0$ and for all $0 < n < N$ :
+<div>
+	\[
+	\left \lbrace
+	\begin{array}{l}
+		k_1 = f( t_n, z_n) \\
+		\displaystyle k_2 = f \left ( t_n + \frac 12 h_n,  z_n + h_n\times \frac 12 k_1 \right ) \\
+		\displaystyle k_3 = f \left ( t_n + \frac 12 h_n,  z_n + h_n\times \frac 12 k_2 \right ) \\
+		\displaystyle k_4 = f \left ( t_n +  h_n,  z_n + h_n\times k_3 \right ) \\
+		\displaystyle z_{n+1} = z_n + h_n \times \frac 16 \left ( k_1 + 2 k_2 + 2k_3 + k_4 \right )\\
+	\end{array}
+	\right .
+	\]
+</div>
+
+with $h_n = t_{n+1} - t_n$ .
+
+The coefficient could be summarize in the Butcher tableau :
+
+<div>
+	\[
+	\begin{array}{r|llll}
+		h_n & k_1 & k_2 & k_3 & k_4\\\\
+		0 & {\color{blue} 0}  & 0 & 0 & 0\\\\
+		\displaystyle \frac 12 & \displaystyle \frac 12 & {\color{blue} 0} & 0 & 0 \\\\
+		\displaystyle \frac 12 & 0 & \displaystyle \frac 12 & {\color{blue} 0} & 0 \\\\
+		1 & 0 & 0 & 1 & {\color{blue} 0} \\
+		\hline \\
+		&  \displaystyle \frac 16 & \displaystyle \frac 26  & \displaystyle \frac 26 & \displaystyle \frac 16
+	\end{array}
+	\]
+</div>
+
+We could easily see that it is an explicit method  because there is only zero in the <span style="color:blue;">blue diagonal</span> (each intermediate value don't depend of itself).
+
+### Reference
 
 * <https://fr.wikipedia.org/wiki/M%C3%A9thodes_de_Runge-Kutta>
-* <https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods>
-	
+* <https://en.wikipedia.org/wiki/Runge–Kutta_methods>
+
+<hr class="sr">
+
+## :-)
+
+If you can understand French, here is a small video to show you a fun example of this course :
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8SU_HBvmZS0?start=683" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Link of the video : <https://youtu.be/8SU_HBvmZS0?t=683>
+
 <hr class="sl">
 
 ## Sources
