@@ -45,6 +45,13 @@ The team is made of
 * **Scrum master**: [overview that Scrum is correctly used/applied](roles/sm.md)
 * **Dev team**: a team of usually 3 to 9 peoples
 
+A **sprint** is considered as a project as a whole, meaning that you have to write specifications in the **sprint backlog**, code them, and test them. You will do the same as you are doing for the project and add functionalities one after another until you reach your goal, called **sprint goal**. A sprint is made of **ceremonies** (`rituels`)
+
+1. [Sprint Planning](sprint/planning.md) <small>(What we will do?)</small>
+2. [Daily Scrum](sprint/daily.md) <small>(Daily meeting)</small>
+3. [Sprint review](sprint/review.md) <small>(review, demonstration, at the end)</small>
+4. [Sprint retrospective](sprint/retrospective.md) <small>(suggestions for next print?)</small>
+
 <hr class="sr">
 
 ## Sources

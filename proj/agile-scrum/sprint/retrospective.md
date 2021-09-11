@@ -1,11 +1,12 @@
 # Sprint retrospective
 
-[Go back](..)
+[Go back](../index.md#whats-scrum)
 
 Use this time to think about **what didn't work well** and of course **what worked well**, so that you may improve your working conditions, for your next **sprint**.
 
 <hr class="sl">
-<br>
+
+## My notes
 
 You may think about
 

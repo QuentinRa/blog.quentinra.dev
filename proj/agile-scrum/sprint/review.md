@@ -1,6 +1,6 @@
 # Sprint review
 
-[Go back](..)
+[Go back](../index.md#whats-scrum)
 
 Usually, it lasts **4 hours** for a sprint of **4 weeks**.
 
