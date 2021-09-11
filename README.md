@@ -55,6 +55,7 @@ Last updated: 2021-09-07
 * [ ] adding submit issue
 * [ ] breadcrumb?
 * [ ] improve edit page
+* [ ] local save (edit)?
 * **Content**
 * [ ] Index Google/Bing
 * [ ] add a pull request template
