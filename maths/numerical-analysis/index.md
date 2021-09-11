@@ -286,7 +286,7 @@ We could easily see that it is an explicit method  because there is only zero in
 * <https://fr.wikipedia.org/wiki/M%C3%A9thodes_de_Runge-Kutta>
 * <https://en.wikipedia.org/wiki/Runge–Kutta_methods>
 
-If you can understand French, [here is a small video](https://youtu.be/8SU_HBvmZS0?t=683) to show you a fun example of this course.
+If you can understand French, [here is a short video](https://youtu.be/8SU_HBvmZS0?t=683) to show you a fun example of this course.
 
 <hr class="sl">
 
