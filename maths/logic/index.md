@@ -14,7 +14,7 @@ You will start with basic knowledge such as Structural induction (`induction`), 
 
 ## Structural induction
 
-$\mathcal{B}$ is a set of constant symbols (`ensemble de bases`) ?? $\mathcal{K}$ is a set of function symbols (`ensemble d'opérations`)
+$\mathcal{B}$ is a set of constant symbols (`ensemble de bases`) $\mathcal{K}$ is a set of function symbols (`ensemble d'opérations`)
 
 So <$\mathcal{B},\mathcal{K}$> is a set created by induction, the smallest set E satisfying the following criteria:
 
@@ -60,7 +60,7 @@ $X=\{x_1, \cdots, x_n\}$ is an infinite set of propositional variables. The set 
 
 Remark: Notice that $F \Leftrightarrow G$ has the same signification that ($F \Rightarrow G$) $\wedge$ ($G \Rightarrow F$).
 
-Abusively, an interpretation $I$ is a function that gives the value of a formula. Furthermore, interpretations have some interesting properties ??:
+Abusively, an interpretation $I$ is a function that gives the value of a formula. Furthermore, interpretations have some interesting rules:
 
 * $I(\perp)=0$
 * If $F$ is a formula, then $I(\neg F)=\neg F$
@@ -68,7 +68,20 @@ Abusively, an interpretation $I$ is a function that gives the value of a formula
 * If $F$ and $G$ are formulas, then $I(F \vee G)=I(F) \vee I(G)$
 * If $F$ and $G$ are formulas, then $I(F \Rightarrow G)=I(F) \Rightarrow I(G)$
 
-... (FNC, Resolution) later
+> To be precise, the objective of interpretation is to give meaning to the formal language we've previously defined (the propositional variable and the basic operations also named logical connective). 
+
+Here are some vocabulary or other rules :
+
+* If $I(F)=1$ then $F$ is satisfied by $I$ (``I satisfait F``), represented by $I \models F$
+* $\Sigma$ a set a formulas, if $\forall F \in \Sigma$, $I(F)=1$ then $\Sigma$ is satisfied by $I$, represented by $I \models \Sigma$
+* If $\forall$ interpretation $I$, $I(F)=1$ then $F$ is a tautology (``F est une tautologie``)
+* Likewise, if $\forall$ interpretation $I$, $I(F)=0$ then $F$ is a contradiction (``F est une contradiction``)
+* $\Sigma$ semantically satisfies $F$ (``Sigma déduit sémantiquement F``), if $\forall$ interpretation $I$ satisfying $\Sigma$, $I$ also satisfies $F$
+* $F$ and $G$ are semantically equivalent (``F et G sont semantiquement équivalents``), represented by $F \equiv G$, if $\{F\} \models G$ and $\{G\} \models F$
+* $\Sigma \models F \Rightarrow G$ if and only if $\Sigma,F \models G$
+* $\Sigma \models F$ if and only if $\Sigma, \neg F$ is a contradiction
+
+[Exercise: semantic proof](exercise_semantic.md)
 
 <hr class="sr">
 
