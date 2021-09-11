@@ -34,7 +34,8 @@ If you got outliers (`valeurs abérantes`) such as (almost) everyone gave "10", 
 
 Usually, the list of values is fixed, and it looks like this: `0, 1/2, 1, 2, 3, 5, 8, 13, 20, 40, 100, ?, inf.`. You may also use the previous sprint as a reference.
 
-> You should use this
+> You should use this to calculate the **velocity**
+> 
 > * to know how much your team can do (=sum of the complexity of each task)
 > * to know how much a person can do (=sum of the complexity of someone's tasks)
 </details>
@@ -69,3 +70,4 @@ A **release plan** is summarizing a lot of information about a sprint, so you ma
 * deadlines
 * budget
 * sprint goal
+* what's the definition of done (tests? doc? etc.)

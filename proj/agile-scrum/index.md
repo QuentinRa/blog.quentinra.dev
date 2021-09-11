@@ -52,6 +52,8 @@ A **sprint** is considered as a project as a whole, meaning that you have to wri
 3. [Sprint review](sprint/review.md) <small>(review, demonstration, at the end)</small>
 4. [Sprint retrospective](sprint/retrospective.md) <small>(suggestions for next print?)</small>
 
+> Don't forget to write **tests**, and your **documentation**, either during or at the end of the sprint.
+
 <hr class="sr">
 
 ## Sources
