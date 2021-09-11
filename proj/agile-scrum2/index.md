@@ -26,28 +26,6 @@ First, the **Product Owner** write the specifications of the client called [Prod
 3. [Sprint review](sprint/review.md) <small>(review, demonstration, at the end)</small>
 4. [Sprint retrospective](sprint/retrospective.md) <small>(suggestions for next print?)</small>
 
-<hr class="sr">
-
-## Scrum master or ideology
-
-Agile-Scrum is based on 5 values
-
-* **Courage**: face your problems, and do what must be done
-* **Focus**: concentrate on the sprint goal
-* **Commitment**: be committed to your work
-* **Respect**: be respectful to others
-* **Openness**: be open to changes or evolutions
-
-You must
-
-* do everything to make your client happy 😊
-* allow changing the specifications  ✍️
-* frequently deliver a working software 💻
-* make sure that users and devs are working together 😏
-* interact face-to-face 🗣️
-* have a stable development speed 🧐
-* always strive to do better 👌
-
 <hr class="sl">
 
 ## Some advice
@@ -67,11 +45,3 @@ By asking them what they are doing, even if they are doing fine, you may help th
 By asking them what they will do, you will check with them that you have the same understanding of what they need to do and how they could tackle this. You can give them tips/advice or help them sail easier in their task.
 
 Finally, you should ask each person what they want to do, because when someone isn't motivated, then you have to redo their work, they may create bugs and slow down everything. You must give them tasks that they will enjoy and do their best to make.
-
-<hr class="sr">
-
-## Sources
-
-* <https://agilemanifesto.org/>
-* <http://manifesteagile.fr/index.html>
-* <https://github.com/dlu02/projet-pima-s3-nasa>

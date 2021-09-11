@@ -9,7 +9,32 @@ As this is an incremental method, you will add functionalities incrementally. Wh
 
 <hr class="sl">
 
+## Value and principles
+
+> Everyone is teaching you these, because being Agile is a **mindset** (`état d'esprit`) 🤓, more than a methodology/model 🛠. And that's why I haven't removed this kind of content.
+
+Agile-Scrum is based on 5 **values**
+
+* **Courage**: face your problems, and do what must be done, **don't hide bugs under the carpet** (`pas de 🐛 sous le tapis`)
+* **Focus**: concentrate on the sprint goal
+* **Commitment**: be committed to your work
+* **Respect**: be respectful to others
+* **Openness**: be open to changes or evolutions
+
+Agile methodologies are based on **12 principles** and **4 values** ([principles and values (fr)](https://manifesteagile.fr/index.html), [principles (en)](https://agilemanifesto.org/principles.html) and [values (en)](https://agilemanifesto.org/)). My summary is
+
+* to do everything to make your client happy 😊
+* allow changing the specifications  ✍️
+* frequently deliver a working software 💻
+* make sure that users and devs are working together 😏
+* interact face-to-face 🗣️
+* have a stable development speed 🧐
+* always strive to do better 👌
+
+<hr class="sr">
+
 ## Sources
 
 * [Agile Manifesto](https://agilemanifesto.org/)
+* [Agile Manifesto (fr)](https://manifesteagile.fr/index.html)
 * [Agile model](http://tryqa.com/what-is-agile-model-advantages-disadvantages-and-when-to-use-it/)
