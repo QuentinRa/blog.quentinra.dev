@@ -2,7 +2,7 @@
 
 [Go back](../index.md#whats-scrum)
 
-This is a **15 minutes** meeting/reunion, no more. You may skip these meetings in small teams, or not do them daily but weekly.
+The **daily scrum**, **stand-up**, or `mêlée quotidienne`, is a **15 minutes** meeting/reunion, no more. You may skip these meetings in small teams, or not do them daily but weekly.
 
 If you are **seriously trying to do it**, **then do it really**: you must prepare something like the **daily order** (`ordre du jour`), or ask each person about what they will do today. Try to do it in a way that will help, and not just because you are practicing **Scrum**.
 
