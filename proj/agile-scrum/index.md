@@ -22,10 +22,9 @@ You would usually need
 First, the **Product Owner** write the specifications of the client called [Product Backlog](product-backlog.md). Then you will repeat a ``Sprint`` meaning all of these steps until the end of the project
 
 1. [Sprint Planning](sprint/planning.md) <small>(What we will do ? )</small>
-2. [Sprint Backlog](sprint/backlog.md) <small>(Who will do what ?)</small>
-3. [Daily Scrum](sprint/daily.md) <small>(daily meeting)</small>
-4. [Sprint review](sprint/review.md) <small>(review, demonstration, at the end)</small>
-5. [Sprint retrospective](sprint/retrospective.md) <small>(suggestions for next print?)</small>
+2. [Daily Scrum](sprint/daily.md) <small>(daily meeting)</small>
+3. [Sprint review](sprint/review.md) <small>(review, demonstration, at the end)</small>
+4. [Sprint retrospective](sprint/retrospective.md) <small>(suggestions for next print?)</small>
 
 <hr class="sr">
 
