@@ -10,6 +10,8 @@ The **Product backlog**, is a sort of project specification (`cahier des charges
 
 Sometimes, the backlog may become too big, so you may remove the less important tasks, and label them as **"out of scope"** (such as the Could/Would, or tasks that do not impact the sprint goal if they are removed).
 
+> The entries of the product backlog are also called **items**.
+
 <hr class="sl">
 
 ## Product roadmap (optional)
@@ -35,3 +37,22 @@ They were used a lot in the Waterfall model, but now they are starting to be use
 * behavior (user design, interactions, )
 
 You will find a lot of **templates** and the Web. We usually have **the name of every person involved**, the **goals**, **why you added this requirement**, the **mockups** (`maquettes`), **the topics the team must thing about** (Question/Outcome), and **what they shouldn't work on**.
+
+<hr class="sl">
+
+## User Stories and Epics
+
+An **Epic** is a group of **(user) stories** that are "similar" <small>(ex: all stories related to the user management)</small>. A User story is text describing a task (~= requirement) from the point of view of a user. You got stories about
+
+* **features** (functional)
+* **bugs** (technical)
+* **tests** (technical)
+* **technical debt** (technical): this is what you have to do before starting to improve the code (refactor/create constants/normalize things/...)
+* **actions** (technical): changing your way of doing things (=from a retrospective)
+
+A user story is supposed to provide content about the task, so that you are "working with" the one that actually need it. We must know the **reason**, the **goal**, the **value**, and an **estimation** of the cost/value for the person needing this task to be done.
+
+The usual template is `"As a <type of user>, I <want to do something/goal>, so that <a reason/benefit>."`.
+
+> **TIP**: give colors according to the kind of stories. Or, you may give colors to epics and symbols to stories. <br>
+> **Note**: You can see an epic as the result of a succession of stories, and a bunch of epics are making an initiative (omitted).
