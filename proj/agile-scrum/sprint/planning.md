@@ -51,10 +51,6 @@ You got **technical user stories** too, such as writing tests. **Be careful**, t
 
 <hr class="sl">
 
-## Sprint backlog
-
-You had a lot of functionalities in the **Product backlog**, and in the **Sprint backlog**, you must pick the functionalities that you will do in this sprint, according to your sprint goal. The **product owner** will propose some tasks. Then, you need to **split each functionality in a list of small tasks** (taking a few hours, up to one day).
-
 <details class="details-e">
 <summary>Splitting a task</summary>
 
@@ -82,26 +78,6 @@ Usually, the list of values is fixed, and it looks like this: `0, 1/2, 1, 2, 3, 
 > * to know how much your team can do (=sum of the complexity of each task)
 > * to know how much a person can do (=sum of the complexity of someone's tasks)
 </details>
-
-<details class="details-e">
-<summary>This is usually a board like this:</summary>
-
-![Source: scrum.org](SprintBacklog.png)
-
-We will have three columns
-
-* **Todo**: what have to be done
-* **In-progress**: working on it
-* **Done**: done
-
-Your goal is to move all of your cards in **Done**. You should add on each card the person that will do each task. 
-</details>
-
-**You may do it online**, and if you do, we are mainly using one of these tools (all free)
-
-* [Trello](https://trello.com/)
-* [GitHub](https://github.com/features/project-management)
-* [YouTrack (JetBrains)](https://www.jetbrains.com/youtrack/)
 
 <hr class="sl">
 
