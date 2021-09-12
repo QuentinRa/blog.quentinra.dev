@@ -37,23 +37,29 @@ Agile methodologies are based on **12 principles** and **4 values** ([principles
 
 Scrum is involving **3 roles** in a team
 
-### Product Owner
+### Product Owner (PO)
 
-...
+The client with interact with the **Product owner**. He must understand the business/market requirement, and organize the tasks so that the client get what he/she wanted.
 
-### Scrum master
+He will redact (and update) the **product backlog**, which is almost like a specification (`cahier des charges`). He may not be the only one creating entries in the backlog, but others should ask him/her before, as he/she should know everything inside the backlog.
 
-The **Scrum master** is **making sure that the developers** <small>(the product owner, and the company)</small> **are only focusing on the their job**, and not on applying Scrum. He should **organize and help in meetings**, **support the team**, **manage the tools**, do **reporting**, **deal with blockers**, and **"timeboxing"** <small>(a meeting shouldn't not last more that it was supposed to)</small>  so that the project is going smoothly.
+<hr>
+
+### Scrum master (SM)
+
+The **Scrum master** is **making sure that the developers** <small>(the product owner, and the company)</small> **are only focusing on the their job**, and not on applying Scrum. He should **organize (or sometimes facilitate) meetings**, **support the team**, **manage the tools**, do **reporting**, **deal with blockers**, and **"timeboxing"** <small>(a meeting shouldn't not last more that it was supposed to)</small>  so that the project is going smoothly.
 
 The Scrum master is an expert of scrum, and he/she must **ensure that Scrum is used properly**, but if the team agree on changing something, he/she must be **open for changes** (as he/she follows the principles and values of Scrum).
 
-> (1) Do not ask the intern to grab some cakes, or some coffee, that's the Scrum master's job 🤩 (joke, but he/she can). <br>
+> (1) Do not ask the intern to grab some cakes, or some coffee, that's the Scrum master's job 🤩 (joke, but he/she may). <br>
 > (2) The Scrum master may be a member of the dev team, and it may rotates through the team. <br>
 > (3) The Scrum master is not a project manager (`chef de projet`). The project manager is overseeing/controlling the project, while the Scrum master is actively working on improving the workflow of the project, as someone of the team.
 
-### Dev team
+<hr>
 
-...
+### Development team (Dev. team)
+
+They are the people doing the work. This is usually a team of 3 to 9 persons, but some are adapting Scrum for more. **Notice** that is is **Development**, not **Developers**. You can have **graphics/UX designers**, **sound engineers**, **artists**, or **testers**, along with the developers. We are considering all of them **developers**.
 
 <hr class="sl">
 
@@ -61,12 +67,14 @@ The Scrum master is an expert of scrum, and he/she must **ensure that Scrum is u
 
 The development is made of iterations, a repetition of cycles, called **sprints** (=**iteration**). The result of your sprint is usually called **increment**. A sprint is made of **4 ceremonies** (`rituels`).
 
-1. **Sprint Planning**: when starting
+1. **Sprint Planning**: when starting a sprint
 2. **Daily Scrum**: meeting everyday
 3. **Sprint review**: at the end, demonstration to the client
 4. **Sprint retrospective**: usually at the end, look for improvements
 
 Usually, a sprint lasts **2 to 4 weeks**. Once you picked a duration, you shouldn't change it (unless you got a good reason).
+
+A sprint is considered as a project as a whole, so you have to write tests and the documentation during the sprint. You will do the same as you are doing for the project and add functionalities one after another until you reach your goal.
 
 <hr class="sr">
 
@@ -74,12 +82,12 @@ Usually, a sprint lasts **2 to 4 weeks**. Once you picked a duration, you should
 
 The main goal of the **Sprint Planning** is to decide your **Sprint goal**. Your **Sprint goal** is what you want to make at the end of the sprint.
 
-* **Involves**: PO, SM, Devs
+* **Involves**: PO, SM, Dev. team
 * **Duration**: up to 4 hours/4 weeks
 
 The Product Owner is **proposing a goal**, and the **items** of the **product backlog** that you may do.  The dev team is picking items (=>value for the client, effort), explicitly defining when they are considered to be "done" (doc? tests?), in the **sprint backlog**. You need to have a clear idea of **what makes the sprint successful**, and how you will achieve the **sprint goal**.
 
-Your **two artifacts**
+You will make **two of Scrum's artifacts**
 
 * [Product backlog](artifacts/product-backlog.md)
 * [Sprint backlog](artifacts/sprint-backlog.md)
@@ -88,7 +96,7 @@ Your **two artifacts**
 
 ## 2. Daily Scrum or standup/stand-up
 
-* **Involves**: PO, SM, Devs
+* **Involves**: SM, Dev. team, PO?
 * **Duration**: up to **15 minutes**
 
 Check the **progress**. What each one did **yesterday**, what are they planning to do **today**. Identify **blockers** and **challenges**. The purpose is **informative**, a sort of coffee break 🍵 (`pause café`). If you don't drink coffee, maybe chatting while playing a game might be a new way of approaching this (ball ⚾, cards 🃏, etc.). Everyone is supposed to standup (`rester debout`) 👍.
@@ -99,7 +107,7 @@ Check the **progress**. What each one did **yesterday**, what are they planning 
 
 ### 3. Sprint review
 
-* **Involves**: PO, SM, Devs, the client/users
+* **Involves**: PO, SM, Dev. team, the client/users
 * **Duration**: up to 4 hours/4 weeks
 
 At the end, you must **demonstrate** to the client (and your team sometimes) **what you did**, the items you completed (also talk about what you planed, but didn't made). Take note of what the client wants to **review** in **the product backlog**.
@@ -112,7 +120,7 @@ Each developer may **demonstrate** what they did (and why?), but do not make it 
 
 ### 4. Sprint retrospective
 
-* **Involves**: PO, SM, Devs
+* **Involves**: PO, SM, Dev. team
 * **Duration**: up to 3 hours/4 weeks
 
 At the end, identify the areas of improvement. Find **what didn't work well** and of course **what worked well**.
