@@ -14,7 +14,7 @@ In java, you got 4 modifiers: `public`, `protected`, `private` and `<none>`. Non
 
 <hr class="sl">
 
-### In a nutshell
+## In a nutshell
 
 Here a recap for each visibility, who can see elements declared with this visibility.
 

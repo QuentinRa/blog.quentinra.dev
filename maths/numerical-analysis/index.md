@@ -170,13 +170,13 @@ There are two cases:
 
 <hr class="sr">
 
-### Why do we use a computer?
+## Why do we use a computer?
 
 If we can solve an ODE and find the solutions, why do we need to use a computer? Because, in fact, we couldn't solve every ODE, the example of the first-order linear differential equation given in the previous section is an exception. That is why we use a computer, with which we can approximate the solution.
 
 However, if you were attentive, you could notice in the previous examples that their solutions are not unique. In fact, there are infinite solutions to an ODE, which is a problem when we want to approximate something.
 
-### Cauchy, or it's better when it's unique
+## Cauchy, or it's better when it's unique
 
 To have a problem with a unique solution, we add constraints by fixing values to a certain point (there is the same number of constraints that the order of the ODE).
 

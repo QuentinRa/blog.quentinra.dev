@@ -6,7 +6,7 @@
 
 This page is a **summary of the syntax that we are using** in Markdown, and how it is rendered **on this website**.
 
-**Version**: <a href="https://github.com/lgs-games/memorize/tree/master/.github/SATIC_PAGES/MARKDOWN_SYNTAX.md" target="_blank" rel="noopener noreferrer">1.4.0</a> (2021-09-03)
+**Version**: <a href="https://github.com/lgs-games/memorize/tree/master/.github/SATIC_PAGES/MARKDOWN_SYNTAX.md" target="_blank" rel="noopener noreferrer">1.4.1</a> (2021-09-12)
 
 <div class="table-of-contents w-25 mx-auto">
 
@@ -31,12 +31,14 @@ This page is a **summary of the syntax that we are using** in Markdown, and how 
 |----------|----------|----------|----------|
 | `# title` | h1 (big header) | &lt;h1&gt;title&lt;/h1&gt; | <h2 class="display-6 fw-bold">title</h2> |
 | `## title` | h2 (normal header) | &lt;h2&gt;title&lt;/h2&gt; | <h2 class="h2">title</h2> |
+| `### title` | h3 (subsection header) | &lt;h3&gt;title&lt;/h3&gt; | <h2 class="h3">title</h2> |
 
 Notes
 
 * you can use headers h3 to h6, but they will be rendered as if they were h2. You should split a big page, so that such a situation does not happen. An alternative would be to use bold.
 * **version 1.2.0**: a permalink icon is added to each header (#content-{title}).
 * **version 1.2.0**: if you add more than one header h1, they will be rendered using the style shown above, but their HTML tag will be h2
+* **version 1.4.1**: allowing **h3**
 
 <hr class="sep-both">
 
