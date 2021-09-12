@@ -5,13 +5,13 @@ Agile **Scrum** (`Mêlée au rugby`) is one of the most used **Agile methodologi
 As this is an incremental method, you will add functionalities incrementally. When your iteration ended, the client will check what you did, give you feedback, so that you know what to do in the next iteration.
 
 > **Other Agile methodologies**: XP (Extreme programming), Kanban. <br>
-> **The manifesto, defining the rules for Agile project, signed in 2001**: [Agile Manifesto](https://agilemanifesto.org/) (`Manifeste Agile`)
+> **The Agile manifesto (`Manifeste Agile`), signed in 2001, is defining the guidelines for Agile project**: [Agile Manifesto](https://agilemanifesto.org/)
 
 <hr class="sl">
 
 ## Values and principles
 
-> Everyone is teaching you these, because being Agile is a **mindset** (`état d'esprit`) 🤓, more than a methodology/model 🛠. And that's why I haven't removed this kind of content.
+> Everyone is teaching you these, because being **Agile** is a **mindset** (`état d'esprit`) 🤓, and **Scrum** a framework (`cadre de travail`~=methodology) 🛠. You need to learn both 🚀.
 
 Agile-Scrum is based on **3 pillars** (transparency, inspection, adaptation), and **5 values**
 
@@ -33,31 +33,95 @@ Agile methodologies are based on **12 principles** and **4 values** ([principles
 
 <hr class="sr">
 
-## What's scrum
+## Roles
 
-The client with interact with the **Product owner**, who will write the specifications of the product in the **product backlog**. You will have to take some of the functionalities and try to make a sample of the project. Then, you will demonstrate what you made to the client, and improve the **product backlog** until the client is satisfied.
+Scrum is involving **3 roles** in a team
 
-The cycle of taking functionalities, coding, demonstrating, and updating the product backlog is called a **sprint**.
+### Product Owner
 
-The team is made of 
+...
 
-* **Product Owner**: [interact with the client, redact the product backlog](roles/po.md)
-* **Scrum master**: [overview that Scrum is correctly used/applied](roles/sm.md)
-* **Dev team**: a team of usually 3 to 9 peoples
+### Scrum master
 
-A **sprint** is considered as a project as a whole, meaning that you have to write specifications in the **sprint backlog**, code them, and test them. You will do the same as you are doing for the project and add functionalities one after another until you reach your goal, called **sprint goal**. A sprint is made of **ceremonies** (`rituels`)
+* **"timeboxing"**: overview that a meeting to **not** last more that it was supposed to
 
-1. [Sprint Planning](sprint/planning.md) <small>(What we will do?)</small>
-2. [Daily Scrum](sprint/daily.md) <small>(Daily meeting)</small>
-3. [Sprint review](sprint/review.md) <small>(review, demonstration, at the end)</small>
-4. [Sprint retrospective](sprint/retrospective.md) <small>(suggestions for next print?)</small>
+### Dev team
 
-> Don't forget to write **tests**, and your **documentation**, either during or at the end of the sprint.
+...
+
+<hr class="sl">
+
+## Scrum
+
+The development is made of iterations, a repetition of cycles, called **sprints** (=**iteration**). The result of your sprint is usually called **increment**. A sprint is made of **4 ceremonies** (`rituels`).
+
+1. **Sprint Planning**: when starting
+2. **Daily Scrum**: meeting everyday
+3. **Sprint review**: at the end, demonstration to the client
+4. **Sprint retrospective**: usually at the end, look for improvements
+
+Usually, a sprint lasts **2 to 4 weeks**. Once you picked a duration, you shouldn't change it (unless you got a good reason).
 
 <hr class="sr">
+
+## 1. Sprint Planning
+
+The main goal of the **Sprint Planning** is to decide your **Sprint goal**. Your **Sprint goal** is what you want to make at the end of the sprint.
+
+* **Involves**: PO, SM, Devs
+* **Duration**: up to 4 hours/4 weeks
+
+The Product Owner is **proposing a goal**, and the **items** of the **product backlog** that you may do.  The dev team is picking items (=>value for the client, effort), explicitly defining when they are considered to be "done" (doc? tests?), in the **sprint backlog**. You need to have a clear idea of **what makes the sprint successful**, and how you will achieve the **sprint goal**.
+
+Your **two artifacts**
+
+* [Product backlog](artifacts/product-backlog.md)
+* [Sprint backlog](artifacts/sprint-backlog.md)
+
+<hr class="sl">
+
+## 2. Daily Scrum or standup/stand-up
+
+* **Involves**: PO, SM, Devs
+* **Duration**: up to **15 minutes**
+
+Check the progress. What each one did yesterday, what are they planning to do today. Identify blockers and challenges. The purpose is **informative**, a sort of coffee break 🍵 (`pause café`). If you don't drink coffee, maybe chatting while playing a game might be a new way of approaching this (ball ⚾, cards 🃏, etc.)
+
+> **As a Scrum master**: Try to relay as much as possible information in your group. It may be a good idea to have one-to-one talk with everyone, once a day. This may help them think of new way of doing something, help them writing documentation/thinking a new tests, and broaden their horizons (and yours too).
+
+<hr class="sr">
+
+### 3. Sprint review
+
+* **Involves**: PO, SM, Devs, the client/users
+* **Duration**: up to 4 hours/4 weeks
+
+At the end, you must **demonstrate** to the client (and your team sometimes) what you did, the items you completed. Take note of what the client wants to change in the **product backlog**.
+
+<hr class="sl">
+
+### 4. Sprint retrospective
+
+* **Involves**: PO, SM, Devs
+* **Duration**: up to 3 hours/4 weeks
+
+At the end, identify the areas of improvement. Find **what didn't work well** and of course **what worked well**.
+
+* tools (`outils/logiciels`)
+* peoples
+* directives (`règles: écriture du code, comportement, etc.`)
+* processes (`organisation`)
+* ...
+
+At the end, you must select **one thing** and focus on it. Focusing on one is making sure that I least one thing will improve per sprint. You might write an **action plan** of what to do.
+
+**Note**: You can do this retrospective in the middle of a sprint.
+
+<hr class="sl">
 
 ## Sources
 
 * [Agile Manifesto](https://agilemanifesto.org/)
 * [Agile Manifesto (fr)](https://manifesteagile.fr/index.html)
 * [Agile model](http://tryqa.com/what-is-agile-model-advantages-disadvantages-and-when-to-use-it/)
+* [Agile Scrum - Atlassian](https://www.atlassian.com/agile/scrum/)
