@@ -143,3 +143,4 @@ At the end, you must select **one thing** and focus on it. Focusing on one is ma
 * [Agile Manifesto (fr)](https://manifesteagile.fr/index.html)
 * [Agile model](http://tryqa.com/what-is-agile-model-advantages-disadvantages-and-when-to-use-it/)
 * [Agile Scrum - Atlassian](https://www.atlassian.com/agile/scrum/)
+* [Agile roadmap - French](https://blog.trello.com/fr/roadmap-agile)
