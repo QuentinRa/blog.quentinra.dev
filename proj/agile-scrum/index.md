@@ -47,7 +47,7 @@ He will redact (and update) the **Product backlog**. He may not be the only one 
 
 ### Scrum master (SM)
 
-The **Scrum master** is **making sure that the developers** <small>(the product owner, and the company)</small> **are only focusing on the their job**, and not on applying Scrum. He should **organize (or sometimes facilitate) meetings**, **support the team**, **manage the tools**, do **reporting**, **deal with blockers**, and **"timeboxing"** <small>(a meeting shouldn't not last more that it was supposed to)</small>  so that the project is going smoothly.
+The **Scrum master** is **making sure that the developers** <small>(the product owner, and the company too)</small> **are only focusing on the their job**, and not on applying Scrum. He should **organize (or sometimes facilitate) meetings**, **support the team**, **manage the tools**, do **reporting**, **deal with blockers**, and **"timeboxing"** <small>(a meeting shouldn't not last more that it was supposed to)</small>  so that the project is going smoothly.
 
 The Scrum master is an expert of scrum, and he/she must **ensure that Scrum is used properly**, but if the team agree on changing something, he/she must be **open for changes** (as he/she follows the principles and values of Scrum).
 

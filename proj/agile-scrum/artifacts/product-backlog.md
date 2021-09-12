@@ -23,3 +23,15 @@ This is a long-term vision of the product. The product owner is giving the goals
 Each of them are a list, ordered by decreasing priority.
 
 Even in Agile projects, **having a long-term vision is very important**, and **this is a myth that you should only have a near-term vision**. This will help to make near-term decision that do not go against the overall vision of the project.
+
+<hr class="sr">
+
+## Product requirements documents - PRD (optional)
+
+They were used a lot in the Waterfall model, but now they are starting to be used in Agile projects. These are requirements that the Product Owner write with the team, and that the client agreed upon. This is mainly used as a strong confirmation of what you have to do
+
+* goals, objectives, strategy
+* features (user stories)
+* behavior (user design, interactions, )
+
+You will find a lot of **templates** and the Web. We usually have **the name of every person involved**, the **goals**, **why you added this requirement**, the **mockups** (`maquettes`), **the topics the team must thing about** (Question/Outcome), and **what they shouldn't work on**.
