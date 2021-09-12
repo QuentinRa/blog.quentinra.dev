@@ -43,7 +43,13 @@ Scrum is involving **3 roles** in a team
 
 ### Scrum master
 
-* **"timeboxing"**: overview that a meeting to **not** last more that it was supposed to
+The **Scrum master** is **making sure that the developers** <small>(the product owner, and the company)</small> **are only focusing on the their job**, and not on applying Scrum. He should **organize and help in meetings**, **support the team**, **manage the tools**, do **reporting**, **deal with blockers**, and **"timeboxing"** <small>(a meeting shouldn't not last more that it was supposed to)</small>  so that the project is going smoothly.
+
+The Scrum master is an expert of scrum, and he/she must **ensure that Scrum is used properly**, but if the team agree on changing something, he/she must be **open for changes** (as he/she follows the principles and values of Scrum).
+
+> (1) Do not ask the intern to grab some cakes, or some coffee, that's the Scrum master's job 🤩 (joke, but he/she can). <br>
+> (2) The Scrum master may be a member of the dev team, and it may rotates through the team. <br>
+> (3) The Scrum master is not a project manager (`chef de projet`). The project manager is overseeing/controlling the project, while the Scrum master is actively working on improving the workflow of the project, as someone of the team.
 
 ### Dev team
 
@@ -85,7 +91,7 @@ Your **two artifacts**
 * **Involves**: PO, SM, Devs
 * **Duration**: up to **15 minutes**
 
-Check the progress. What each one did yesterday, what are they planning to do today. Identify blockers and challenges. The purpose is **informative**, a sort of coffee break 🍵 (`pause café`). If you don't drink coffee, maybe chatting while playing a game might be a new way of approaching this (ball ⚾, cards 🃏, etc.)
+Check the **progress**. What each one did **yesterday**, what are they planning to do **today**. Identify **blockers** and **challenges**. The purpose is **informative**, a sort of coffee break 🍵 (`pause café`). If you don't drink coffee, maybe chatting while playing a game might be a new way of approaching this (ball ⚾, cards 🃏, etc.). Everyone is supposed to standup (`rester debout`) 👍.
 
 > **As a Scrum master**: Try to relay as much as possible information in your group. It may be a good idea to have one-to-one talk with everyone, once a day. This may help them think of new way of doing something, help them writing documentation/thinking a new tests, and broaden their horizons (and yours too).
 
@@ -96,7 +102,11 @@ Check the progress. What each one did yesterday, what are they planning to do to
 * **Involves**: PO, SM, Devs, the client/users
 * **Duration**: up to 4 hours/4 weeks
 
-At the end, you must **demonstrate** to the client (and your team sometimes) what you did, the items you completed. Take note of what the client wants to change in the **product backlog**.
+At the end, you must **demonstrate** to the client (and your team sometimes) **what you did**, the items you completed (also talk about what you planed, but didn't made). Take note of what the client wants to **review** in **the product backlog**.
+
+Each developer may **demonstrate** what they did (and why?), but do not make it too long, like 5 minutes per person. Do not forget to talk about **key metrics**: you are making a software/website/... for customers, check that it is usable/...
+
+> Some organizations are making weekly demo with the team, so that everyone know what the others are doing, understand a bit more what they need to do, and keep track of what the client wants.
 
 <hr class="sl">
 
