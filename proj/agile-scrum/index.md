@@ -101,7 +101,11 @@ You will make **two of Scrum's artifacts**
 
 Check the **progress**. What each one did **yesterday**, what are they planning to do **today**. Identify **blockers** and **challenges**. The purpose is **informative**, a sort of coffee break 🍵 (`pause café`). If you don't drink coffee, maybe chatting while playing a game might be a new way of approaching this (ball ⚾, cards 🃏, etc.). Everyone is supposed to standup (`rester debout`) 👍.
 
-> **As a Scrum master**: Try to relay as much as possible information in your group. It may be a good idea to have one-to-one talk with everyone, once a day. This may help them think of new way of doing something, help them writing documentation/thinking a new tests, and broaden their horizons (and yours too).
+* You can use **Round Robin**: everyone is answering three questions (yesterday? today? blockers?)
+* You can use the **Board-based** method (**walking the board**): simply ask easy one about their task, starting from the **right** to the left
+* Some are using a token to the one talking (ex: ball ⚾), the person talking will throw the ball to the next person (not a neighbor)
+
+> **As a Scrum master**: Try to relay as much as possible information in your group. It may be a good idea to have **one-to-one talk** with each member, once a day. This may help them think of new way of doing something, help them writing documentation/thinking a new tests, and broaden their horizons (and yours too).
 
 <hr class="sr">
 
