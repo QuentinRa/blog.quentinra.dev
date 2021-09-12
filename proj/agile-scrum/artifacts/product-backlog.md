@@ -2,15 +2,17 @@
 
 [Go back](../index.md#1-sprint-planning)
 
-The **Product backlog**, is a sort of project specification (`cahier des charges`). This is a list of tasks. You must add the features that the client requested.
+The **Product backlog**, is a sort of project specification (`cahier des charges`). This is a list of tasks. You must add the features (~=**user stories**) that the client requested.
 
 * Usually, they are **prioritized** (MoSCoW)
 * Usually, they are sorted by **importance** (most important to less important)
 * Usually, you must add the dependencies between tasks
 
-Sometimes, the backlog may become too big, so you may remove the less important tasks, and label them as **"out of scope"** (such as the Could/Would, or tasks that do not impact the sprint goal if they are removed).
+⚠️this page is long and complex. You may skip the two optional parts.
 
-> The entries of the product backlog are also called **items**.
+> **Note**: The entries of the product backlog are also called **items**.<br>
+> **Note**: Sometimes, the backlog may become too big, so you may remove the less important tasks, and label them as **"out of scope"** (such as the Could/Would, or tasks that do not impact the sprint goal if they are removed).
+
 
 <hr class="sl">
 
@@ -56,3 +58,38 @@ The usual template is `"As a <type of user>, I <want to do something/goal>, so t
 
 > **TIP**: give colors according to the kind of stories. Or, you may give colors to epics and symbols to stories. <br>
 > **Note**: You can see an epic as the result of a succession of stories, and a bunch of epics are making an initiative (omitted).
+
+<hr class="sr">
+
+## Priority
+
+You must filter the tasks by priorities, most likely using the **MoSCoW** notation.
+
+* **M**: Must have this
+* **S**: Should have this
+* **C**: Could have this
+* **W**: Would have this
+
+You may ask the client about the priority and/or deduct it by yourself, since some tasks that the client wants may be too hard/useless if done in the first increment. You must take into account **the value for the client**.
+
+<hr class="sl">
+
+## Estimation
+
+...
+
+<hr class="sr">
+
+## The backlog itself
+
+You may create a table, in which each row is a story. You may group them by epics if you want. As for the columns, here are some ideas
+
+* \# or ID: ID of the story
+* Title or Title+Description: the story
+* The priority
+* The importance, estimated with
+  * An estimation of the complexity
+  * An estimation of the value for the client
+* Some notes
+* The Sprint: when did you completed this story (empty if you didn't)
+* The Epic: if this story belong to an epic
