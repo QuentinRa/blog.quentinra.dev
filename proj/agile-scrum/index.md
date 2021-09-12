@@ -1,15 +1,15 @@
 # Agile Scrum
 
-Agile **Scrum** (`Mêlée au rugby`) is one of the most used **Agile methodologies** (`méthodes agiles`). This is a kind of incremental method ([wiki](https://en.wikipedia.org/wiki/Incremental_build_model)) that is repeating small cycles (**iterations**). A long time ago, the **V-Model** (`Cycle en V`) model <small>(an extension of the Waterfall model)</small> was the most used methodology. But, it **wasn't flexible**, the client often had to **wait a long time**, and the product **may not have been what he wanted**, so a lot of companies are moving to agile methodologies.
+Agile **Scrum** (`Mêlée au rugby`) is one of the most used **Agile methodologies** (`méthodes agiles`). This is a kind of incremental method ([wiki](https://en.wikipedia.org/wiki/Incremental_build_model)) that is repeating small cycles (**iterations**). A long time ago, the **V-Model** (`Cycle en V`) model <small>(an extension of the Waterfall model)</small> was the most used methodology. But, it **wasn't flexible**, the client often had to **wait a long time**, and the product **may not have been what he wanted**, so a lot of companies are moving to Agile methodologies.
 
-As this is an incremental method, you will add functionalities incrementally. When your iteration ended, the client check what you did, and give you feedback, so that you know what to do in the next iteration.
+As this is an incremental method, you will add functionalities incrementally. When your iteration ended, the client will check what you did, give you feedback, so that you know what to do in the next iteration.
 
-> **Other agile methodologies**: XP (Extreme programming), Kanban. <br>
+> **Other Agile methodologies**: XP (Extreme programming), Kanban. <br>
 > **The manifesto, defining the rules for Agile project, signed in 2001**: [Agile Manifesto](https://agilemanifesto.org/) (`Manifeste Agile`)
 
 <hr class="sl">
 
-## Value and principles
+## Values and principles
 
 > Everyone is teaching you these, because being Agile is a **mindset** (`état d'esprit`) 🤓, more than a methodology/model 🛠. And that's why I haven't removed this kind of content.
 
