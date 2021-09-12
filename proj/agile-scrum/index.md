@@ -41,7 +41,7 @@ Scrum is involving **3 roles** in a team
 
 The client with interact with the **Product owner**. He must understand the business/market requirement, and organize the tasks so that the client get what he/she wanted.
 
-He will redact (and update) the **product backlog**, which is almost like a specification (`cahier des charges`). He may not be the only one creating entries in the backlog, but others should ask him/her before, as he/she should know everything inside the backlog.
+He will redact (and update) the **Product backlog**. He may not be the only one creating entries in the backlog, but others should ask him/her before, as he/she should know everything inside the backlog.
 
 <hr>
 

@@ -1,6 +1,6 @@
 ## Product Backlog
 
-This is a list of what the client wants. Some are representing it as a list, but a table is the best way.
+Some are representing it as a list, but a table is the best way.
 
 <table class="table table-striped table-bordered border-dark">
 <thead>
@@ -50,19 +50,6 @@ Some are using user stories to describe functionalities/tasks. This is something
 You got **technical user stories** too, such as writing tests. **Be careful**, the user story should always explain **why** we did an action (benefit). For instance, "log in" isn't a user story, but "log in to access his profile (=goal) because he want to see his profile page (benefit)" is a user story.
 
 <hr class="sl">
-
-<details class="details-e">
-<summary>Splitting a task</summary>
-
-The functionality is to show the main page of a desktop application
-
-* make the frame without any content (close, minimize, etc.)
-* make the toolbar
-* write the code to display the content of the main page
-* deal with the translations
-* make the app responsive (your app is adapting itself to the size of the screen)
-* ...
-</details>
 
 <details class="details-e">
 <summary>You need to evaluate how much time they will take, this is called <b>grooming</b>.</summary>
