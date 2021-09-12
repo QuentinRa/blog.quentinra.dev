@@ -141,6 +141,18 @@ At the end, you must select **one thing** and focus on it. Focusing on one is ma
 
 <hr class="sl">
 
+## Metrics
+
+They are the way of checking what your progress, or the key indicators of your project.
+
+* **velocity**
+
+This is the sum of the estimation of the stories that you took for a sprint. **An indicator of how much you can do**, your capacity. You should use it to not take too much of stories (both per person and per group). This value will converge after some iterations. You should take the meetings, the technical debt/the quality, into account. You should usually keep a 10% margin.
+
+You may use a **Burndown chart** to represent this graphically.
+
+<hr class="sr">
+
 ## Sources
 
 * [Agile Manifesto](https://agilemanifesto.org/)
