@@ -11,8 +11,8 @@ The **Product backlog**, is a sort of project specification (`cahier des charges
 ⚠️this page is long and complex. You may skip the two optional parts.
 
 > **Note**: The entries of the product backlog are also called **items**.<br>
-> **Note**: Sometimes, the backlog may become too big, so you may remove the less important tasks, and label them as **"out of scope"** (such as the Could/Would, or tasks that do not impact the sprint goal if they are removed).
-
+> **Note**: Sometimes, the backlog may become too big, so you may remove the less important tasks, and label them as **"out of scope"** (such as the Could/Would, or tasks that do not impact the sprint goal if they are removed).<br>
+> **Note**: reviewing the backlog is sometimes called backlog **grooming** (or refinement)
 
 <hr class="sl">
 
@@ -76,7 +76,16 @@ You may ask the client about the priority and/or deduct it by yourself, since so
 
 ## Estimation
 
-...
+You need to evaluate how much **complex** a task his (or how much **efforts** it will require). We are not evaluating the duration like in non-agile projects. 
+
+* You may **compare the task** and sort them by difficulty.
+* You can give a value among a fixed list (`0, 1/2, 1, 2, 3, 5, 8, 13, 20, 40, 100, ?, inf.`) to each task. The average/median value may be used as an answer.
+
+If you got outliers (`valeurs abérantes`) such as (almost) everyone gave "10", one gave "5", and one gave "20", then it would be a good idea to ask them **why** they gave this value (maybe they got trough of someone other didn't).
+
+* The [T-Shirt Size Estimation](https://explainagile.com/blog/t-shirt-size-estimation/)
+
+> You should learn from your previous estimates. You may pick a previous task and use it as a reference.
 
 <hr class="sr">
 
@@ -93,3 +102,4 @@ You may create a table, in which each row is a story. You may group them by epic
 * Some notes
 * The Sprint: when did you completed this story (empty if you didn't)
 * The Epic: if this story belong to an epic
+* The dependencies
