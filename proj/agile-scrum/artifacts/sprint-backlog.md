@@ -6,6 +6,8 @@ The **Sprint backlog** is a list of tasks that the **dev team** took for the pro
 
 The developers are taking tasks according to their **capacity**. This is the sum of the **evaluation/score** of each task you picked in the last sprint.
 
+> **Note**: do not take too much "unknown-risk" stories. You should also take the previous sum of your estimations when picking tasks.
+
 <hr class="sl my-4">
 
 We are using the famous **white board**, with the following columns
@@ -30,7 +32,7 @@ Your goal is to move all of your cards in **Done**. You should add on each card 
 * [GitHub](https://github.com/features/project-management) (Microsoft)
 * [YouTrack](https://www.jetbrains.com/youtrack/) (JetBrains)
 
-<hr class="sr my-4">
+<hr class="sr">
 
 ## Splitting a task (Example)
 
@@ -42,3 +44,18 @@ The functionality is to show the main page of a desktop application
 * deal with the translations
 * make the app responsive (your app is adapting itself to the size of the screen)
 * ...
+* 
+<hr class="sl">
+
+## Scrum release planning
+
+A **release plan** is summarizing a lot of information about a sprint, so you may use one too. This is also providing information for every sprint, the **roadmap** of your project.
+
+* duration of a sprint
+* deadlines
+* budget
+* sprint goal
+* **Acceptance criteria**: What's the definition of done 
+  * tests? (coverage? deployment to a production environment?)
+  * doc?
+* Guidelines/Guidance to write better code/improve quality
