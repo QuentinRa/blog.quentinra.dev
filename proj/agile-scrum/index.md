@@ -27,9 +27,9 @@ Agile methodologies are based on **12 principles** and **4 values** ([principles
 * allow changing the specifications  ✍️
 * frequently deliver a working software 💻
 * make sure that users and devs are working together 😏
+* always strive to do better 🧐
+* have a stable development speed 👌
 * interact face-to-face 🗣️
-* have a stable development speed 🧐
-* always strive to do better 👌
 
 <hr class="sr">
 
@@ -59,7 +59,7 @@ The Scrum master is an expert of scrum, and he/she must **ensure that Scrum is u
 
 ### Development team (Dev. team)
 
-They are the people doing the work. This is usually a team of 3 to 9 persons, but some are adapting Scrum for more. **Notice** that is is **Development**, not **Developers**. You can have **graphics/UX designers**, **sound engineers**, **artists**, or **testers**, along with the developers. We are considering all of them **developers**.
+They are the people doing the work. This is usually a team of 3 to 9 persons, but some are adapting Scrum for bigger teams. **Notice** that is is **Development**, **not Developers**. You can have **graphics/UX designers**, **sound engineers**, **artists**, or **testers**, along with the developers. Anyway, we are considering all of them as **developers** some that's the same at the end.
 
 <hr class="sl">
 

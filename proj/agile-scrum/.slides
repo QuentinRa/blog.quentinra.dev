@@ -1,0 +1,41 @@
+of:
+  i: index.md
+  pb: artifacts/product-backlog.md
+  sp: artifacts/sprint-backlog.md
+slide1:
+  card1:
+    title: What's Agile Scrum?
+    number: 1
+    width: 47.3
+    entries:
+      - i: [3, 6]
+      - >
+        **Other Agile methodologies**: XP (Extreme programming), Kanban. <br>
+        **The Agile manifesto (`Manifeste Agile`), signed in 2001, is defining the guidelines for Agile project**: [Agile Manifesto](https://agilemanifesto.org/)
+  card2:
+    title: Values and principles
+    number: 2
+    width: 52.3
+    entries:
+      - >
+        **Agile** is a **mindset** (`état d'esprit`) 🤓, **Scrum** a framework 🛠.
+        Scrum is based on **3 pillars** (transparency, inspection, adaptation), and **5 values**
+      - [18, 30]
+slide2:
+  card1:
+    title: Scrum is involving <b>3 roles</b> in a team
+    number: 3
+    width: 100
+    cards:
+      -
+        title: Product Owner 🤓
+        width: 28.3
+        entries: [[42, 44]]
+      -
+        title: Scrum master 📚
+        entries: [[50, 52]]
+        width: 41
+      -
+        title: Development team 🐱‍🏍
+        entries: [[62]]
+        width: 28.3
