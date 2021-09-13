@@ -1,7 +1,7 @@
 of:
   i: index.md
   pb: artifacts/product-backlog.md
-  sp: artifacts/sprint-backlog.md
+  sb: artifacts/sprint-backlog.md
 slide1:
   card1:
     title: What's Agile Scrum?
@@ -23,7 +23,7 @@ slide1:
       - [18, 30]
 slide2:
   card1:
-    title: Scrum is involving <b>3 roles</b> in a team
+    title: Scrum is involving <b>3 roles</b> ...
     number: 3
     width: 100
     cards:
@@ -39,3 +39,110 @@ slide2:
         title: Development team 🐱‍🏍
         entries: [[62]]
         width: 28.3
+slide3:
+  card1:
+    title: ... and <b>4 ceremonies</b>.
+    number: 4
+    width: 100
+    entries: [[68, 77]]
+slide4:
+  card1:
+    title: Sprint Planning
+    number: 4.1
+    width: 100
+    entries:
+      - [83, 91]
+      - "* Product backlog\n
+      * Sprint backlog"
+slide5:
+  card1:
+    title: Product backlog
+    number: 4.1.1
+    width: 100
+    entries:
+      - pb: [ 5, 9 ]
+      - pb: [ 15 ]
+slide6:
+  card1:
+    title: User Stories and Epics
+    number: 4.1.1.1
+    width: 100
+    entries:
+      - pb: [ 47, 60 ]
+slide7:
+  card1:
+    title: Priority
+    number: 4.1.1.2
+    width: 50
+    entries:
+      - pb: [ 66, 73 ]
+  card2:
+    title: Estimation
+    number: 4.1.1.3
+    width: 50
+    entries:
+      - pb: [ 79, 88 ]
+slide8:
+  card1:
+    title: The backlog itself
+    number: 4.1.1.4
+    width: 100
+    entries:
+      - pb: [ 94, 105 ]
+slide9:
+  card1:
+    title: Sprint backlog (1/2)
+    number: 4.1.2
+    width: 100
+    entries:
+      - sb: [ 5, 9 ]
+      - sb: [ 13, 22 ]
+      - sb: [ 25 ]
+slide10:
+  card1:
+    title: Sprint backlog (2/2)
+    number: 4.1.2
+    width: 49.3
+    entries:
+      - sb: [ 23 ]
+      - "We are usually using online tools such as"
+      - sb: [ 30, 33 ]
+  card2:
+    title: Scrum release planning
+    number: 4.1.2
+    width: 49.3
+    entries:
+      - sb: [ 52, 61 ]
+slide11:
+  card1:
+    title: Daily Scrum or standup/stand-up
+    number: 4.2
+    width: 50
+    entries:
+      - [99, 106]
+  card2:
+    title: My Advice
+    number:
+    width: 50
+    entries:
+      - [108]
+slide12:
+  card1:
+    title: Sprint review
+    number: 4.3
+    width: 50
+    entries:
+      - [114, 121]
+  card2:
+    title: Sprint review
+    number: 4.4
+    width: 50
+    entries:
+      - [127, 140]
+slide13:
+  card1:
+    title: Sources
+    number: 5
+    width: 50
+    entries:
+      - [ 158, 162 ]
