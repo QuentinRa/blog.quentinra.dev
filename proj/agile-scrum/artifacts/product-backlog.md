@@ -12,7 +12,8 @@ The **Product backlog**, is a sort of project specification (`cahier des charges
 
 > **Note**: The entries of the product backlog are also called **items**.<br>
 > **Note**: Sometimes, the backlog may become too big, so you may remove the less important tasks, and label them as **"out of scope"** (such as the Could/Would, or tasks that do not impact the sprint goal if they are removed).<br>
-> **Note**: reviewing the backlog is sometimes called backlog **grooming** (or refinement)
+> **Note**: reviewing the backlog is sometimes called backlog **grooming** (or refinement) <br>
+> **Note**: Usually, the Product Owner and the Scrum Master are preparing the Product backlog **before** the meeting.
 
 <hr class="sl">
 

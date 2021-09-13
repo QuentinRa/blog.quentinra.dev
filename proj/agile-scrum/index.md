@@ -39,7 +39,7 @@ Scrum is involving **3 roles** in a team
 
 ### Product Owner (PO)
 
-The client interacts with the **Product owner**. He must understand the business/market requirement, and organize the tasks so that the client gets what he/she wanted.
+The client interacts with the **Product owner**. He must understand the business/market requirements, and organize the tasks so that the client gets what he/she wanted.
 
 He will redact (and update) the **Product backlog**. He may not be the only one creating entries in the backlog, but others should ask him/her before, as he/she should know everything inside the backlog.
 
