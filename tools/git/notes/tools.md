@@ -10,12 +10,21 @@ This is my list of websites that I heard of and used for most of them. You can l
 * [codetriage](https://www.codetriage.com/) (get issues in your inbox)
 * [IssueHunt](https://issuehunt.io/) (tackle issues, not really related to this page 🙄)
 * [codecov](https://about.codecov.io/) (code coverage)
-* [weblate](https://weblate.org/fr/) (not used)
+* [weblate](https://weblate.org/) (not used, translations)
 * [snyk](https://snyk.io/) (vulnerabilities, **good**)
 * [codacy](https://www.codacy.com/) (I didn't manage to install this one)
 * [lgtm](https://lgtm.com/) (basic feedback)
 * [scrutinizer-ci](https://scrutinizer-ci.com/) (paid only, not tested)
+* [CircleCI](https://circleci.com/) (not tested, ci)
+
+Language-specific
+
+* [StyleCI](https://styleci.io/) (style for PHP/CSS/JS)
+* [packagist](https://packagist.org/) (PHP packages)
 * [deps.rs](https://deps.rs/) (Rust dependencies alerts)
+* [DavidDM](https://david-dm.org/) (Node.js dependencies)
+
+<hr class="sl my-4">
 
 > **BUT** it's tiring to check each website if they got news? or How is it automated?
 
@@ -23,6 +32,6 @@ Well, you will usually put a badge in your README (as explained in [Make Git pro
 
 ![GitHub external tools badges](../images/badges.png)
 
-Some websites can also **make comments in your Pull requests**, if you enabled it, or sometimes if you have the paid version (Sonar cloud, LGTM, and Snyk did it for free for me).
+Some websites can also **make comments in your Pull requests** (ex: Sonar cloud, LGTM, and Snyk).
 
 ![GitHub external tools comment](../images/comment.png)
