@@ -21,7 +21,7 @@ Agile-Scrum is based on **3 pillars** (transparency, inspection, adaptation), an
 * **Respect**: be respectful to others
 * **Openness**: be open to changes or evolutions
 
-Agile methodologies are based on **12 principles** and **4 values** ([principles and values (fr)](https://manifesteagile.fr/index.html), [principles (en)](https://agilemanifesto.org/principles.html) and [values (en)](https://agilemanifesto.org/)). My summary is
+Agile methodologies are based on **12 principles** and **4 values** ([principles and values (FR)](https://manifesteagile.fr/index.html), [principles (EN)](https://agilemanifesto.org/principles.html) and [values (EN)](https://agilemanifesto.org/)). My summary is
 
 * to do everything to make your client happy 😊
 * allow changing the specifications  ✍️
@@ -39,7 +39,7 @@ Scrum is involving **3 roles** in a team
 
 ### Product Owner (PO)
 
-The client with interact with the **Product owner**. He must understand the business/market requirement, and organize the tasks so that the client get what he/she wanted.
+The client interacts with the **Product owner**. He must understand the business/market requirement, and organize the tasks so that the client gets what he/she wanted.
 
 He will redact (and update) the **Product backlog**. He may not be the only one creating entries in the backlog, but others should ask him/her before, as he/she should know everything inside the backlog.
 
@@ -47,19 +47,19 @@ He will redact (and update) the **Product backlog**. He may not be the only one 
 
 ### Scrum master (SM)
 
-The **Scrum master** is **making sure that the developers** <small>(the product owner, and the company too)</small> **are only focusing on the their job**, and not on applying Scrum. He should **organize (or sometimes facilitate) meetings**, **support the team**, **manage the tools**, do **reporting**, **deal with blockers**, and **"timeboxing"** <small>(a meeting shouldn't not last more that it was supposed to)</small>  so that the project is going smoothly.
+The **Scrum master** is **making sure that the developers** <small>(the product owner, and the company too)</small> **are only focusing on their job**, and not on applying Scrum. He should **organize (or sometimes facilitate) meetings**, **support the team**, **manage the tools**, do **reporting**, **deal with blockers**, and **"timeboxing"** <small>(a meeting shouldn't last more than it was supposed to)</small>  so that the project is going smoothly.
 
-The Scrum master is an expert of scrum, and he/she must **ensure that Scrum is used properly**, but if the team agree on changing something, he/she must be **open for changes** (as he/she follows the principles and values of Scrum).
+The Scrum Master is an expert of Scrum, and he/she must **ensure that Scrum is used properly**, but if the team agree on changing something, he/she must be **open for changes** (as he/she follows the principles and values of Scrum).
 
 > (1) Do not ask the intern to grab some cakes, or some coffee, that's the Scrum master's job 🤩 (joke, but he/she may). <br>
-> (2) The Scrum master may be a member of the dev team, and it may rotates through the team. <br>
+> (2) The Scrum master may be a member of the dev team, and it may rotate through the team. <br>
 > (3) The Scrum master is not a project manager (`chef de projet`). The project manager is overseeing/controlling the project, while the Scrum master is actively working on improving the workflow of the project, as someone of the team.
 
 <hr>
 
 ### Development team (Dev. team)
 
-They are the people doing the work. This is usually a team of 3 to 9 persons, but some are adapting Scrum for bigger teams. **Notice** that is is **Development**, **not Developers**. You can have **graphics/UX designers**, **sound engineers**, **artists**, or **testers**, along with the developers. Anyway, we are considering all of them as **developers** some that's the same at the end.
+They are the people doing the work. This is usually a team of 3 to 9 persons, but some are adapting Scrum for bigger teams. **Notice** that is **Development**, **not Developers**. You can have **graphics/UX designers**, **sound engineers**, **artists**, or **testers**, along with the developers. Anyway, we are considering all of them as **developers** in the end, so you can use both.
 
 <hr class="sl">
 
@@ -68,7 +68,7 @@ They are the people doing the work. This is usually a team of 3 to 9 persons, bu
 The development is made of iterations, a repetition of cycles, called **sprints** (=**iteration**). The result of your sprint is usually called **increment**. A sprint is made of **4 ceremonies** (`rituels`).
 
 1. **Sprint Planning**: when starting a sprint
-2. **Daily Scrum**: meeting everyday
+2. **Daily Scrum**: daily meeting
 3. **Sprint review**: at the end, demonstration to the client
 4. **Sprint retrospective**: usually at the end, look for improvements
 
@@ -99,13 +99,13 @@ You will make **two of Scrum's artifacts**
 * **Involves**: SM, Dev. team, PO?
 * **Duration**: up to **15 minutes**
 
-Check the **progress**. What each one did **yesterday**, what are they planning to do **today**. Identify **blockers** and **challenges**. The purpose is **informative**, a sort of coffee break 🍵 (`pause café`). If you don't drink coffee, maybe chatting while playing a game might be a new way of approaching this (ball ⚾, cards 🃏, etc.). Everyone is supposed to standup (`rester debout`) 👍.
+Check the **progress**. What each one did **yesterday**, what are they planning to do **today**. Identify **blockers** and **challenges**. The purpose is **informative**, a sort of coffee break 🍵 (`pause café`). If you don't drink coffee, maybe chatting while playing a game might be a new way of approaching this (ball ⚾, cards 🃏, etc.). Everyone is supposed to stand up (`rester debout`) 👍.
 
 * You can use **Round Robin**: everyone is answering three questions (yesterday? today? blockers?)
 * You can use the **Board-based** method (**walking the board**): simply ask easy one about their task, starting from the **right** to the left
 * Some are using a token to the one talking (ex: ball ⚾), the person talking will throw the ball to the next person (not a neighbor)
 
-> **As a Scrum master**: Try to relay as much as possible information in your group. It may be a good idea to have **one-to-one talk** with each member, once a day. This may help them think of new way of doing something, help them writing documentation/thinking a new tests, and broaden their horizons (and yours too).
+> **As a Scrum master**: Try to relay as much as possible information in your group. It may be a good idea to have a **one-to-one talk** with each member, once a day. This may help them think of new ways of doing something, help them writing documentation/thinking of new tests, and broaden their horizons (and yours too).
 
 <hr class="sr">
 
@@ -114,11 +114,11 @@ Check the **progress**. What each one did **yesterday**, what are they planning 
 * **Involves**: PO, SM, Dev. team, the client/users
 * **Duration**: up to 4 hours/4 weeks
 
-At the end, you must **demonstrate** to the client (and your team sometimes) **what you did**, the items you completed (also talk about what you planed, but didn't made). Take note of what the client wants to **review** in **the product backlog**.
+At the end, you must **demonstrate** to the client (and your team sometimes) **what you did**, the items you completed (also talk about what you planned, but didn't made). Take note of what the client wants to **review** in **the product backlog**.
 
 Each developer may **demonstrate** what they did (and why?), but do not make it too long, like 5 minutes per person. Do not forget to talk about **key metrics**: you are making a software/website/... for customers, check that it is usable/...
 
-> Some organizations are making weekly demo with the team, so that everyone know what the others are doing, understand a bit more what they need to do, and keep track of what the client wants.
+> Some organizations are making weekly demo with the team, so that everyone knows what the others are doing, understand a bit more what they need to do, and keep track of what the client wants.
 
 <hr class="sl">
 
@@ -143,11 +143,11 @@ At the end, you must select **one thing** and focus on it. Focusing on one is ma
 
 ## Metrics
 
-They are the way of checking what your progress, or the key indicators of your project.
+They are the way of checking what progress, or the key indicators of your project.
 
 * **velocity**
 
-This is the sum of the estimation of the stories that you took for a sprint. **An indicator of how much you can do**, your capacity. You should use it to not take too much of stories (both per person and per group). This value will converge after some iterations. You should take the meetings, the technical debt/the quality, into account. You should usually keep a 10% margin.
+This is the sum of the estimation of the stories that you took for a sprint. **An indicator of how much you can do**, your capacity. You should use it to not take too many stories (both per person and per group). This value will converge after some iterations. You should take the meetings, the technical debt/the quality, into account. You should usually keep a 10% margin.
 
 You may use a **Burndown chart** to represent this graphically.
 
@@ -156,7 +156,7 @@ You may use a **Burndown chart** to represent this graphically.
 ## Sources
 
 * [Agile Manifesto](https://agilemanifesto.org/)
-* [Agile Manifesto (fr)](https://manifesteagile.fr/index.html)
+* [Agile Manifesto (FR)](https://manifesteagile.fr/index.html)
 * [Agile model](http://tryqa.com/what-is-agile-model-advantages-disadvantages-and-when-to-use-it/)
 * [Agile Scrum - Atlassian](https://www.atlassian.com/agile/scrum/)
 * [Agile roadmap - French](https://blog.trello.com/fr/roadmap-agile)

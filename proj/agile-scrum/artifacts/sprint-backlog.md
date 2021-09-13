@@ -6,13 +6,13 @@ The **Sprint backlog** is a list of tasks that the **dev team** took for the pro
 
 The developers are taking tasks according to their **capacity**. This is the sum of the **evaluation/score** of each task you picked in the last sprint.
 
-> **Note**: do not take too much "unknown-risk" stories. You should also take the previous sum of your estimations when picking tasks.
+> **Note**: do not take too many "unknown-risk" stories. You should also take the previous sum of your estimations when picking tasks.
 
 <hr class="sl my-4">
 
-We are using the famous **white board**, with the following columns
+We are using the famous **whiteboard**, with the following columns
 
-* **Todo** (`À faire`): what have to be done
+* **Todo** (`À faire`): what has to be done
 * **In-progress** (`En cours`): working on it
 * **Review** (`revue/relecture`): optional, someone else is checking what you did
 * **Tests** (`Tests`): optional, testing the product

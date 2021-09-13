@@ -18,33 +18,33 @@ The **Product backlog**, is a sort of project specification (`cahier des charges
 
 ## Product roadmap (optional)
 
-This is a long-term vision of the product. The product owner is giving the goals and the results we are expecting, rather than the the timeline/functionalities. This is something explaining **what** you are planning to do.
+This is a long-term vision of the product. The product owner is giving the goals and the results we are expecting, rather than the timeline/functionalities. This is something explaining **what** you are planning to do.
 
 * you might set the current goals
 * you might set the near-term goals
 * you might set the long-term goals
 
-Each of them are a list, ordered by decreasing priority.
+Each of them is a list, ordered by decreasing priority.
 
-Even in Agile projects, **having a long-term vision is very important**, and **this is a myth that you should only have a near-term vision**. This will help to make near-term decision that do not go against the overall vision of the project.
+Even in Agile projects, **having a long-term vision is very important**, and **this is a myth that you should only have a near-term vision**. This will help to make near-term decisions that do not go against the overall vision of the project.
 
 <hr class="sr">
 
 ## Product requirements documents - PRD (optional)
 
-They were used a lot in the Waterfall model, but now they are starting to be used in Agile projects. These are requirements that the Product Owner write with the team, and that the client agreed upon. This is mainly used as a strong confirmation of what you have to do
+They were used a lot in the Waterfall model, but now they are starting to be used in Agile projects. These are requirements that the Product Owner writes with the team, and that the client agreed upon. This is mainly used as a strong confirmation of what you have to do
 
 * goals, objectives, strategy
 * features (user stories)
 * behavior (user design, interactions, )
 
-You will find a lot of **templates** and the Web. We usually have **the name of every person involved**, the **goals**, **why you added this requirement**, the **mockups** (`maquettes`), **the topics the team must thing about** (Question/Outcome), and **what they shouldn't work on**.
+You will find a lot of **templates** and the Web. We usually have **the name of every person involved**, the **goals**, **why you added this requirement**, the **mock-ups** (`maquettes`), **the topics the team must think about** (Question/Outcome), and **what they shouldn't work on**.
 
 <hr class="sl">
 
 ## User Stories and Epics
 
-An **Epic** is a group of **(user) stories** that are "similar" <small>(ex: all stories related to the user management)</small>. A User story is text describing a task (~= requirement) from the point of view of a user. You got stories about
+An **Epic** is a group of **(user) stories** that are "similar" <small>(ex: all stories related to the user management)</small>. A User Story is a text describing a task (~= requirement) from the point of view of a user. You got stories about
 
 * **features** (functional)
 * **bugs** (technical)
@@ -52,12 +52,12 @@ An **Epic** is a group of **(user) stories** that are "similar" <small>(ex: all 
 * **technical debt** (technical): this is what you have to do before starting to improve the code (refactor/create constants/normalize things/...)
 * **actions** (technical): changing your way of doing things (=from a retrospective)
 
-A user story is supposed to provide content about the task, so that you are "working with" the one that actually need it. We must know the **reason**, the **goal**, the **value**, and an **estimation** of the cost/value for the person needing this task to be done.
+A user story is supposed to provide content about the task, so that you are "working with" the one that actually needs it. We must know the **reason**, the **goal**, the **value**, and an **estimation** of the cost/value for the person needing this task to be done.
 
 The usual template is `"As a <type of user>, I <want to do something/goal>, so that <a reason/benefit>."`.
 
 > **TIP**: give colors according to the kind of stories. Or, you may give colors to epics and symbols to stories. <br>
-> **Note**: You can see an epic as the result of a succession of stories, and a bunch of epics are making an initiative (omitted).
+> **Note**: You can see an epic as the result of a succession of stories, and a group of epics is making an initiative (omitted).
 
 <hr class="sr">
 
@@ -76,12 +76,12 @@ You may ask the client about the priority and/or deduct it by yourself, since so
 
 ## Estimation
 
-You need to evaluate how much **complex** a task his (or how much **efforts** it will require). We are not evaluating the duration like in non-agile projects. 
+You need to evaluate how much **complex** a task is (or how much **effort** it will require). We are not evaluating the duration like in non-agile projects. 
 
-* You may **compare the task** and sort them by difficulty.
+* You may **compare tasks** and sort them by difficulty.
 * You can give a value among a fixed list (`0, 1/2, 1, 2, 3, 5, 8, 13, 20, 40, 100, ?, inf.`) to each task. The average/median value may be used as an answer.
 
-If you got outliers (`valeurs abérantes`) such as (almost) everyone gave "10", one gave "5", and one gave "20", then it would be a good idea to ask them **why** they gave this value (maybe they got trough of someone other didn't).
+If you got outliers (`valeurs abérantes`) such as (almost) everyone gave "10", one gave "5", and one gave "20", then it would be a good idea to ask them **why** they gave this value (maybe they through of something others didn't).
 
 * The [T-Shirt Size Estimation](https://explainagile.com/blog/t-shirt-size-estimation/)
 
@@ -100,6 +100,6 @@ You may create a table, in which each row is a story. You may group them by epic
   * An estimation of the complexity
   * An estimation of the value for the client
 * Some notes
-* The Sprint: when did you completed this story (empty if you didn't)
-* The Epic: if this story belong to an epic
+* The Sprint: the one in which you completed this story (empty if you didn't)
+* The Epic: if this story belongs to an epic
 * The dependencies
