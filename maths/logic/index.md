@@ -14,19 +14,29 @@ You will start with basic knowledge such as Structural induction (`induction`), 
 
 ## Structural induction
 
-$\mathcal{B}$ is a set of constant symbols (`ensemble de bases`) $\mathcal{K}$ is a set of function symbols (`ensemble d'opérations`)
+$\mathcal{B}$ is a set of constant symbols (`ensemble de bases`) 
+</br>
+$\mathcal{K}$ is a set of function symbols (`ensemble d'opérations`)
 
 So <$\mathcal{B},\mathcal{K}$> is a set created by induction, the smallest set E satisfying the following criteria:
 
 * $\mathcal{B} \subset E$
 * $f$ an $n_{f}$-ary function symbol and $x_{1}, \cdots, x_{n_{f}} \in E$, then $f(x_{1}, \cdots, x_{n_{f}}) \in E$ too
 
-**Proof by induction**: Let's consider a hypothesis $P$. To demonstrate that all the elements of <$\mathcal{B},\mathcal{K}$> satisfy $P$, you have just to verify that:
+**Proof by induction**: Let's consider a hypothesis $P$. 
+</br>
+To demonstrate that all the elements of <$\mathcal{B},\mathcal{K}$> satisfy $P$, you have just to verify that:
 
 * $\forall x \in \mathcal{B}$, $P(x)$ is satisfied
 * $\forall f \in \mathcal{K}$ with arity $n_{f}$ and $\forall x_{1}, \cdots, x_{n_{f}} \in E$ so that $P(x_{1}), \cdots, P(x_{n_{f}})$ are satisfied, $P(x_{1}, \cdots, x_{n_{f}})$ is also satisfied.
 
-A simple example of structural induction is mathematical induction (`raisonnement par récurrence`). Indeed, if you take $\mathcal{B}=\{0\}$ and $\mathcal{K}=\{succ\}$ such as $\forall n \in \mathbb{N}$, $succ(n)=n+1$, then $\mathbb{N}=$<$\mathcal{B},\mathcal{K}$>. So, mathematical induction is just a proof by induction in $\mathbb{N}$=<$\{0\},\{succ\}$>. 
+A simple example of structural induction is mathematical induction (`raisonnement par récurrence`).
+</br>
+Indeed, if you take $\mathcal{B}=\left\{0\right\}$ and $\mathcal{K}=\left\{succ\right\}$ such as $\forall n \in \mathbb{N}$, $succ(n)=n+1$, then $\mathbb{N}=$<$\mathcal{B},\mathcal{K}$>. 
+</br>
+So, mathematical induction is just a proof by induction in $\mathbb{N}$=<$\{0\},\{succ\}$>. 
+
+[Exercise: structural induction](exercise_induction.md)
 
 <hr class="sl">
 
@@ -41,7 +51,7 @@ Here is given the truth table of basic operations:
 * $\Rightarrow$ for **IMPLIES** (=implication)
 * $\neg$ for **NOT** (=negation)
 
-$x$ and $y$ are propositional variables of whom you give values $\in \{0,1\}$. $0$ stands for **FALSE** and $1$ for **TRUE**. So, as you can see, the truth table indicates the value of each basic operation according to the values of $x$ and $y$.
+$x$ and $y$ are propositional variables of whom you give values $\in \left\{0,1\right\}$. $0$ stands for **FALSE** and $1$ for **TRUE**. So, as you can see, the truth table indicates the value of each basic operation according to the values of $x$ and $y$.
 
 | $x$ | $y$ | $x \vee y$ | $x \wedge y$ | $x \Rightarrow y$ | $\neg x$ |
 |---|---|---|---|---|---|
@@ -52,8 +62,11 @@ $x$ and $y$ are propositional variables of whom you give values $\in \{0,1\}$. $
 
 ### Propositional calculus
 
-$X=\{x_1, \cdots, x_n\}$ is an infinite set of propositional variables. The set of formulas $\mathcal{F}$ is inductively defined: * Any propositional variable is a formula
+$X=\left\{x_1, \cdots, x_n\right\}$ is an infinite set of propositional variables. 
+</br>
+The set of formulas $\mathcal{F}$ is inductively defined: 
 
+* Any propositional variable is a formula
 * $\perp$ is a formula
 * If $F$ is a formula, then $\neg F$ too
 * If $F$ and $G$ are formulas, then $F \wedge G$, $F \vee G$, and $F \Rightarrow G$ are also formulas
@@ -83,6 +96,9 @@ Here are some vocabulary or other rules :
 
 [Exercise: semantic proof](exercise_semantic.md)
 
+Further knowledge :
+* [Replacement & Equivalences](replacement-equivalences.md)
+* [Conjunctive normal form](cnf.md)
 <hr class="sr">
 
 ## Natural deduction
@@ -147,7 +163,13 @@ This is a list of all Wikipedia pages that you may want to check
 * <https://en.wikipedia.org/wiki/Semantics_of_logic>
 * <https://en.wikipedia.org/wiki/Well-formed_formula>
 * <https://en.wikipedia.org/wiki/Interpretation_(logic)>
+* <https://en.wikipedia.org/wiki/Satisfiability>
+* <https://en.wikipedia.org/wiki/Logical_equivalence>
+* <https://en.wikipedia.org/wiki/Literal_(mathematical_logic)>
+* <https://en.wikipedia.org/wiki/Conjunctive_normal_form>
 
 Other stuff
 
 * <https://en.wikipedia.org/wiki/Four_color_theorem>
+* <https://en.wikipedia.org/wiki/Concatenation>
+
