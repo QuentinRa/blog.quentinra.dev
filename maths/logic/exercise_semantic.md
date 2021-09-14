@@ -31,9 +31,9 @@ So the clauses are represented by the following formulas :
 	</ul>
 </p>
 	
-So we want to prove that $\{(1),(2),(3),(4)\} \models d$
+So we want to prove that $\\{(1),(2),(3),(4)\\} \models d$
 </br>
-We call $I$ an interpretation satisfying $\{(1),(2),(3),(4)\}$
+We call $I$ an interpretation satisfying $\\{(1),(2),(3),(4)\\}$
 
 **First case : If $I \models i$**
 
