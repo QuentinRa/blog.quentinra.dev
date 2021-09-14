@@ -6,7 +6,7 @@
 
 This page is a **summary of the syntax that we are using** in Markdown, and how it is rendered **on this website**.
 
-**Version**: <a href="https://github.com/lgs-games/memorize/blob/master/.github/STATIC_PAGES/MARKDOWN_SYNTAX.md" target="_blank" rel="noopener noreferrer">1.4.1</a> (2021-09-12)
+**Version**: <a href="https://github.com/lgs-games/memorize/blob/master/.github/STATIC_PAGES/MARKDOWN_SYNTAX.md" target="_blank" rel="noopener noreferrer">1.4.3</a> (2021-09-14)
 
 <div class="table-of-contents w-25 mx-auto">
 
@@ -145,6 +145,7 @@ But, you should note
 
 * it's recommended to use `$latex$` for inline latex
 * it's recommended to use `<div>\[latex\]</div>` for a block (as `@latex@` is not escaping every formula properly, and hence not always rendering what you wrote)
+* **Note**: you need to write **two slashes** if you want to escape a character such as `\\{`
 
 <hr class="sep-both">
 
