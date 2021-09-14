@@ -32,7 +32,7 @@ To demonstrate that all the elements of <$\mathcal{B},\mathcal{K}$> satisfy $P$,
 
 A simple example of structural induction is mathematical induction (`raisonnement par récurrence`).
 </br>
-Indeed, if you take $\mathcal{B}=\left\\{0\right\\}$ and $\mathcal{K}=\left\\{succ\right\\}$ such as $\forall n \in \mathbb{N}$, $succ(n)=n+1$, then $\mathbb{N}=$<$\mathcal{B},\mathcal{K}$>. 
+Indeed, if you take $\mathcal{B}=\\{0\\}$ and $\mathcal{K}=\\{succ\\}$ such as $\forall n \in \mathbb{N}$, $succ(n)=n+1$, then $\mathbb{N}=$<$\mathcal{B},\mathcal{K}$>. 
 </br>
 So, mathematical induction is just a proof by induction in $\mathbb{N}$=<$\{0\},\{succ\}$>. 
 
@@ -51,7 +51,7 @@ Here is given the truth table of basic operations:
 * $\Rightarrow$ for **IMPLIES** (=implication)
 * $\neg$ for **NOT** (=negation)
 
-$x$ and $y$ are propositional variables of whom you give values $\in \left\\{0,1\right\\}$. $0$ stands for **FALSE** and $1$ for **TRUE**. So, as you can see, the truth table indicates the value of each basic operation according to the values of $x$ and $y$.
+$x$ and $y$ are propositional variables of whom you give values $\in \\{0,1\\}$. $0$ stands for **FALSE** and $1$ for **TRUE**. So, as you can see, the truth table indicates the value of each basic operation according to the values of $x$ and $y$.
 
 | $x$ | $y$ | $x \vee y$ | $x \wedge y$ | $x \Rightarrow y$ | $\neg x$ |
 |---|---|---|---|---|---|
@@ -62,7 +62,7 @@ $x$ and $y$ are propositional variables of whom you give values $\in \left\\{0,1
 
 ### Propositional calculus
 
-$X=\left\\{x_1, \cdots, x_n\right\\}$ is an infinite set of propositional variables. 
+$X=\\{x_1, \cdots, x_n\\}$ is an infinite set of propositional variables. 
 </br>
 The set of formulas $\mathcal{F}$ is inductively defined: 
 
