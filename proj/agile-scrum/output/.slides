@@ -8,7 +8,7 @@ slide1:
     number: 1
     width: 47.3
     entries:
-      - i: [3, 6]
+      - [5, 8]
       - >
         **Other Agile methodologies**: XP (Extreme programming), Kanban. <br>
         **The Agile manifesto (`Manifeste Agile`), signed in 2001, is defining the guidelines for Agile project**: [Agile Manifesto](https://agilemanifesto.org/)
@@ -20,7 +20,7 @@ slide1:
       - >
         **Agile** is a **mindset** (`état d'esprit`) 🤓, **Scrum** a framework 🛠.
         Scrum is based on **3 pillars** (transparency, inspection, adaptation), and **5 values**
-      - [18, 30]
+      - [20, 32]
 slide2:
   card1:
     title: Scrum is involving <b>3 roles</b> ...
@@ -30,28 +30,28 @@ slide2:
       -
         title: Product Owner 🤓
         width: 28.3
-        entries: [[42, 44]]
+        entries: [[44, 46]]
       -
         title: Scrum master 📚
-        entries: [[50, 52]]
+        entries: [[52, 54]]
         width: 41
       -
         title: Development team 🐱‍🏍
-        entries: [[62]]
+        entries: [[64]]
         width: 28.3
 slide3:
   card1:
     title: ... and <b>4 ceremonies</b>.
     number: 4
     width: 100
-    entries: [[68, 77]]
+    entries: [[70, 79]]
 slide4:
   card1:
     title: Sprint Planning
     number: 4.1
     width: 100
     entries:
-      - [83, 91]
+      - [85, 93]
       - "* Product backlog\n
       * Sprint backlog"
 slide5:
@@ -119,30 +119,30 @@ slide11:
     number: 4.2
     width: 50
     entries:
-      - [99, 106]
+      - [101, 108]
   card2:
     title: My Advice
     number:
     width: 50
     entries:
-      - [108]
+      - [110]
 slide12:
   card1:
     title: Sprint review
     number: 4.3
     width: 50
     entries:
-      - [114, 121]
+      - [116, 123]
   card2:
     title: Sprint retrospective
     number: 4.4
     width: 50
     entries:
-      - [127, 140]
+      - [129, 142]
 slide13:
   card1:
     title: Sources
     number: 5
     width: 50
     entries:
-      - [ 158, 162 ]
+      - [ 160, 164 ]
