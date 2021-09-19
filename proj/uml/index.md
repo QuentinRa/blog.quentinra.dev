@@ -1,6 +1,8 @@
 # Unified Modeling Language
 
-UML stands for **Unified Modeling Language**. This is a standardized way of writing diagrams, because a sentence may often lead to a lot of interpretations.
+UML stands for **Unified Modeling Language**. This is a standardized way of writing diagrams, because a sentence may often lead to a lot of interpretations. The current standard is **UML 2.5.1** and **OCL 2.4**.
+
+> OCL = Object Constraint Language. This is introduced in database diagrams, and this is used to add constraints (ex: age > 0) to something. You can use it in class diagrams too.
 
 <hr class="sr">
 
@@ -22,10 +24,11 @@ You got a lot of diagrams [listed on Wikipedia](https://en.wikipedia.org/wiki/Mo
 
 I will be using these to create diagrams.
 
-* [StarUML](https://staruml.io/) (software, free and open-source)
+* [StarUML](https://staruml.io/) (software, free)
 * [PlantUML](https://plantuml.com/) (website) or [online editor](https://plantuml-editor.kkeisuke.com/)
 * [UML from code](https://github.com/iluwatar/uml-reverse-mapper)
 * [yuml](https://yuml.me/) (website, render on the fly)
+* [Papyrus](papyrus/index.md) (software, open-source, eclipse)
 
 Others alternatives
 

@@ -52,7 +52,7 @@ The most used kind of key. The key is generated automatically when you add a new
 
 ## Constraints and OCL
 
-You can also do that in "class diagrams" but it's more used in database diagrams, though it's rarely used.
+You can also do that in "class diagrams", but it's more used in database diagrams, though it's rarely used.
 
 We call integrity constraints, the constraints applied on an attribute like
 
