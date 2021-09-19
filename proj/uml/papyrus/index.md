@@ -20,7 +20,7 @@ First, there is a lot of perspectives <small>(way to see your project? such as J
 ![Papyrus perspective](images/perp1.png) and select ![Papyrus select perspective](images/perp2.png)
 </div>
 
-If you used a perpective a least once, a shortcut will be available right next to the open perspective menu. You can also use "Window > Perspective".
+If you used a perspective at least once, a shortcut will be available right next to the open perspective menu. You can also use "Window > Perspective".
 
 <hr class="sr">
 
@@ -32,10 +32,10 @@ If you used a perpective a least once, a shortcut will be available right next t
 </div>
 
 1. **Project explorer**: Double click on a model to open it
-   * export your diagrams (right click on model -> export)
-   * open your project in the file explorer (right click on the folder "example" and "show in")
+   * export your diagrams (right-click on model -> export)
+   * open your project in the file explorer (right-click on the folder "example" and "show in")
 2. **Model explorer**: Once you opened a model, you can add diagrams inside it using the Model explorer: right-click on "example" > "New diagram"
-3. **Model editor**: edit you diagram here: move things from the palette to here
+3. **Model editor**: edit your diagram here: move things from the palette to here
 4. **Palette**: Everything that you can put in this kind of diagram
 5. **Property view**: Edit the properties of something
    * ex: give another name to a class
@@ -52,7 +52,7 @@ If you used a perpective a least once, a shortcut will be available right next t
 
 * **Don't scroll** (when editing something)
 
-You can scroll to change the values of a field (such as checked -> uncheck, or the type of an attribute) when you are in the **Property view**. Too bad, you can't control it and might change something/cancel everything you did.
+You can scroll to change the values of a field (such as checked -> uncheck, or the type of your attribute, etc.) when you are in the **Property view**. Too bad 😂, you can't control it and might change something/cancel everything you did.
 
 * **Use icons**
 
@@ -74,11 +74,11 @@ This is really easy to notice, but you got a little start (as usual) to indicate
 
 * **View and model**
 
-Beware! The Model explorer is the only thing you can trust. If the view changed, but the model didn't, then this is a "bug". If this happened to you, check that you are doing what you wanted as Papyrus is expecting you to do it (ex: renaming etc.). You can hide things from the view too, but they will still be in the model.
+Beware! The Model explorer is the only thing you can trust. If the view changed, but the model didn't, then this is a "bug". If this happened to you, check that you are doing what you wanted as Papyrus is expecting you to do it (ex: renaming, etc.). You can hide things from the view too, but they will still be in the model.
 
 * **Click-click** 🚬
 
-If you want to create a bunch of things. Instead of dragging and dropping them inside the Model editor. Simply double click on it! Each time you do so, a new element is created.
+If you want to create a bunch of things. Instead of dragging and dropping them inside the Model editor. Simply double-click on it! Each time you do so, a new element is created.
 
 * **Align**
 
@@ -104,7 +104,7 @@ When selecting an association, the directed one is shown by default, but after c
 
 * **Special associations**
 
-If you want to make a class that is implementation an interface (=**realizing** an interface), then the head of the arrow is on the interface.
+If you want to make a class that is implementing an interface (=**realizing** an interface), then the head of the arrow is on the interface.
 
 Same for a class extending another class (=**generalization**), the head of the arrow is on the class we are extending.
 
@@ -124,13 +124,13 @@ Ex: For an attribute, you got a field "Type" inside the UML tab, when you clicke
 > **Note**: You could drag and drop a class inside the field, instead of picking a primitive type.<br>
 > **Note**: if you need to create a new type, use either `DataType` (cannot be instanced) or `Primitive type` or a class if none are what you want.
 
-* **Right click**
+* **Right-click**
 
-If you right click on a class/anything, you got a menu. Check **Format** if you want to reformat what you selected, and check **Filter** to show/hide operations/methods/...
+If you right-click on a class/anything, you got a menu. Check **Format** if you want to reformat what you selected, and check **Filter** to show/hide operations/methods/...
 
 * **Colors**
 
-Put colors to your classes! We are usually using a color for the classes of the model, another for the classes of the view, another for the controllers, maybe one for the listeners too.
+Add a color to your classes! We are usually using a color for the classes of the model, another for the classes of the view, another for the controllers, maybe one for the listeners too.
 
 <hr class="sr">
 
