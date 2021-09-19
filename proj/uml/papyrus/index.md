@@ -9,6 +9,8 @@ You can [download it here](https://www.eclipse.org/papyrus/download.html). Note 
 
 Once the software is started, create a **new papyrus model**. A model is made of 3 files (.di/.notation/.uml), don't share only one of them, it won't work. Also, just in case, **save your model often 😖**.
 
+> Papyrus is a tool, hence knowledge related to diagrams is not explained here.
+
 <hr class="sl">
 
 ## Perspectives
@@ -56,41 +58,41 @@ You can scroll to change the values of a field (such as checked -> uncheck, or t
 
 * **Use icons**
 
-If you are like me, and you find it tiring to scroll in the Palette from class to property and back to class... You can change the layout of the Palette.
+If you are like me, and you find it tiring to scroll in the Palette from class to property and back to class... You can change the layout of the Palette. Right-click on the Palette, and pick a layout
 
 <div class="text-center">
 
-![palette use icons](images/icons.png) and if you forgot, you can switch back or hover the icon ![hover palette](images/icons_hover.png)
+![palette use icons](images/icons.png) and if you forgot, you can switch back or stay a bit on top of an icon ![hover palette](images/icons_hover.png)
 
 </div>
 
 * **Window > Preferences**
 
-If you were looking for the settings (dark mode? but it sucks), or you might change the CSS theme used in the Model editor in "Papyrus > CSS Theme".
+If you were looking for the settings' menu (dark mode?).
 
 * **State**
 
 This is really easy to notice, but you got a little start (as usual) to indicate if you saved or not ![Papyrus saved](images/saved.png).
 
-* **View and model**
-
-Beware! The Model explorer is the only thing you can trust. If the view changed, but the model didn't, then this is a "bug". If this happened to you, check that you are doing what you wanted as Papyrus is expecting you to do it (ex: renaming, etc.). You can hide things from the view too, but they will still be in the model.
-
 * **Click-click** 🚬
 
 If you want to create a bunch of things. Instead of dragging and dropping them inside the Model editor. Simply double-click on it! Each time you do so, a new element is created.
 
-* **Align**
+* **Align** (useless % style)
 
 Either by using this icon ![Align classes](images/align.png) or <kbd>CTRL+{some arrow}</kbd>, **after selecting elements**, you can align every class based on the position of the last selected classes. This is a bit hard to use from my point of view. You can use "distribute" too.
 
 <hr class="sr">
 
-## Knowledge-related stuff
+## Model-related stuff
 
 * **Model** 👧👦
 
 The model is something shared between every diagram. You can move something from the model to another diagram. If you change the model, it will be changed everywhere. 
+
+* **View and model**
+
+Beware! The Model explorer is the only thing you can trust. If the view changed, but the model didn't, then this is a "bug". If this happened to you, check that you are doing what you wanted as Papyrus is expecting you to do it (ex: renaming, etc.). You can hide things from the view too, but they will still be in the model.
 
 <hr class="sl">
 
@@ -101,6 +103,8 @@ The model is something shared between every diagram. You can move something from
 When selecting an association, the directed one is shown by default, but after clicking on the undirected one, it will switch
 
 ![associations](images/associations.png)
+
+After creating an association, in the **Property view** you can add a direction, set the multiplicity, transform it to a composition/aggregation/... etc. rather easily.
 
 * **Special associations**
 
