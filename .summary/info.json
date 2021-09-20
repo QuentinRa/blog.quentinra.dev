@@ -40,6 +40,15 @@
         "desc": "A short introduction to JavaScript used to make interactive websites or required for Node.js/Typescript courses.",
         "icon": "<i class=\"bi bi-globe\"></i>"
       }
+    ],
+    "e3": [
+      {
+        "tag": "cryptography",
+        "name": "Cryptography",
+        "title": "Learn Cryptography",
+        "desc": "An introduction to cryptography (Modular arithmetic, encryption and decryption of messages, RSA)",
+        "icon": "<i class=\"bi bi-shield-lock\"></i>"
+      }
     ]
   }
 }
