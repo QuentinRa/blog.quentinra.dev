@@ -19,7 +19,6 @@ We are saying that $b$ is a **divisor** of $a$ if $r = 0$, written $a\ |\ b$. It
 
 > * $25/5$: $25 = 5 * 5 + 0$ so $5|25$
 > * $25/4$: $25 = 4 * 6 + 1$
-
 </details>
 
 <details class="details-e" open>
@@ -34,8 +33,8 @@ $D(a,b)$ is the set of the common divisors between $a$ and $b$. We are calling *
 > \end{split}
 > </p>
 > 
-> **Formula**: $a \wedge b = (a - b * q) \wedge b$
-
+> **Formula**: $a \wedge b = (a - b * q) \wedge b$<br>
+> **Pro tip**: $a \wedge b = c \wedge (\frac{b}{c} \wedge \frac{a}{c})$, so $27 \wedge 15 = 3 \wedge (5 \wedge 9) = 3 \wedge 0 = 3 $.
 </details>
 
 <hr class="sl">
@@ -62,3 +61,50 @@ Example: $a=98$ and $b=77$.
 | 3 | 0  | ❌ | $-3 - 2 * 4 = -11$ | $4 - 2 * -5=14$ | $0 = 98 * -11 + 77 * 14$ |
 
 Of course, we are doing this because **this one was hard**, but if you got $5 * a + 7 * b = 5 \wedge 7 = 1$ then you could find almost immediately that you can use $a=3$ and $b=-5$.
+
+> **Note**: Bézout's identity is a Diophantine equation (`Équation diophantienne`, [wiki](https://en.wikipedia.org/wiki/Diophantine_equation)).
+
+<hr class="sl">
+
+## Prime numbers (`Nombres premiers`)
+
+<details class="details-e">
+<summary>📚 Definition 📚</summary>
+
+A prime number is a number **greater or equals than 2**, which is **only divisible by 1 and itself**.
+
+* ✅: 2, 3, 5, 7, 11, 13, etc.
+* ❌: 4 (→2), 6 (→2, →3), 9 (→3), 10 (→2, →5), etc.
+
+**Note**: If $p$ and $q$ are prime numbers, and $p \neq q$, then $p \wedge q = 1$.
+</details>
+
+<details class="details-e">
+<summary>🧺 Prime Factorization 🧺</summary>
+
+* **French**: `Décomposition en produit de facteurs premiers`
+* **Definition**: Every number ($\ge 2$) can be expressed in a product of prime numbers
+* Examples
+    * $27 = 3 * 9 = 3^3$
+    * $60 = 6 * 10 = 2 * 3 * 5 * 2 = 2^2 * 3 * 5$
+
+We are calling $\xi_p(n)$, the exponent of $p$ in the factorization of a number $n$ with prime numbers (`puissance de p dans n`, ex: $\xi_3(27) = 3$ or $\xi_5(60)=1$).
+</details>
+
+<details class="details-e" open>
+<summary> 🚀 GCP with prime numbers 🚀</summary>
+
+You can calculate the **GCD easily**. Simply express each number with prime numbers. Then, take each **unique** number if both of the factorizations, they will be in the **GCD**. Their exponent is the greatest exponent that we have for each number, in one of the two factorizations.
+
+<p>
+\begin{split}
+GCP(a, b) = \prod_{i\ \in\ unique\ prime\ numbers} i^{\min(\xi_i(a),\ \xi_i(b))} \\
+98 = 2 * 49 = 2 * 7^2 \\
+77 = 7 * 11 \\
+GCP(98, 77) = 2^{min(1, 0)} * 7^{min(2, 1)} * 11^{min(0, 1)}
+= 1 * 7 * 1 = 7\\
+\end{split}
+</p>
+
+> **Note**: if you replace **min** with **max**, you will have the **least common multiple** (`Plus petit commun multiple/PPCM`).
+</details>
