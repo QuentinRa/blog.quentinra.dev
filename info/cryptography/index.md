@@ -62,7 +62,7 @@ Example: $a=98$ and $b=77$.
 
 Of course, we are doing this because **this one was hard**, but if you got $5 * a + 7 * b = 5 \wedge 7 = 1$ then you could find almost immediately that you can use $a=3$ and $b=-5$.
 
-> **Note**: Bézout's identity is a Diophantine equation (`Équation diophantienne`, [wiki](https://en.wikipedia.org/wiki/Diophantine_equation)).
+> **Note**: Bézout's identity is a diophantine equation (`Équation diophantienne`, [wiki](https://en.wikipedia.org/wiki/Diophantine_equation)).
 
 <hr class="sl">
 
@@ -94,7 +94,7 @@ We are calling $\xi_p(n)$, the exponent of $p$ in the factorization of a number 
 <details class="details-e" open>
 <summary> 🚀 GCP with prime numbers 🚀</summary>
 
-You can calculate the **GCD easily**. Simply express each number with prime numbers. Then, take each **unique** number if both of the factorizations, they will be in the **GCD**. Their exponent is the greatest exponent that we have for each number, in one of the two factorizations.
+You can calculate the **GCD easily**. Simply express each number with prime numbers. Then, take each **unique** number in both factorizations, they will be in the **GCD**. Their exponent is the lowest exponent that we have for each number in the two factorizations.
 
 <p>
 \begin{split}
