@@ -2,7 +2,7 @@
 
 ![note: draft](https://img.shields.io/badge/note-draft-orange) <small>(upcoming)</small>
 
-Cryptography is the knowledge related to the **encryption** and **decryption** of messages. This course is more a mathematical course than a programming course, at least for now 😖.
+Cryptography is the knowledge related to the **encryption** and **decryption** of messages. This course is more a mathematical course than a programming course, at least for now (sorry 😖).
 
 <hr class="sl">
 
@@ -24,7 +24,7 @@ We are saying that $b$ is a **divisor** of $a$ if $r = 0$, written $a\ |\ b$. It
 <details class="details-e" open>
 <summary>Greatest common divisor (<code>Plus grand diviseur commun</code>)</summary>
 
-$D(a,b)$ is the set of the common divisors between $a$ and $b$. We are calling **greatest common divisor** (GCD or `PGCD`) the greatest value of $D(a,b)$, written $GCD(a,b)$ or $a \wedge b$.
+$D(a,b)$ is the set of the common divisors between $a$ and $b$. We are calling **greatest common divisor** (GCD or `PGCD`), the greatest value of $D(a,b)$, written $GCD(a,b)$ or $a \wedge b$.
 
 > Example: what's the GCD of $(27, 15)$
 > <p>
@@ -71,7 +71,7 @@ Of course, we are doing this because **this one was hard**, but if you got $5 * 
 <details class="details-e">
 <summary>📚 Definition 📚</summary>
 
-A prime number is a number **greater or equals than 2**, which is **only divisible by 1 and itself**.
+A prime number is a number **greater or equals to 2**, which is **only divisible by 1 and itself**.
 
 * ✅: 2, 3, 5, 7, 11, 13, etc.
 * ❌: 4 (→2), 6 (→2, →3), 9 (→3), 10 (→2, →5), etc.
@@ -83,7 +83,7 @@ A prime number is a number **greater or equals than 2**, which is **only divisib
 <summary>🧺 Prime Factorization 🧺</summary>
 
 * **French**: `Décomposition en produit de facteurs premiers`
-* **Definition**: Every number ($\ge 2$) can be expressed in a product of prime numbers
+* **Definition**: Every number ($\ge 2$) can be expressed as a product of prime numbers
 * Examples
     * $27 = 3 * 9 = 3^3$
     * $60 = 6 * 10 = 2 * 3 * 5 * 2 = 2^2 * 3 * 5$

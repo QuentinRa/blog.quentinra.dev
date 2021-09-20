@@ -1,5 +1,7 @@
 # OCaml
 
+![note: remade in progress](https://img.shields.io/badge/note-remade%20in%20progress-red) <small>(upcoming)</small>
+
 OCaml is a functional language, from the family of Meta Languages (".ml", along with SML or CAML). Unfortunately, OCaml is **impure**, as it allows side-effects. It's strongly advised to read the course about **Functional programming** before starting so you know about immutable, purity, and things like this. We are currently in [OCaml 4.12](https://github.com/ocaml/ocaml).
 
 * [The official manual](https://ocaml.org/manual/index.html)
