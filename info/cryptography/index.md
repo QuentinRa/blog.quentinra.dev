@@ -24,17 +24,17 @@ We are saying that $b$ is a **divisor** of $a$ if $r = 0$, written $a\ |\ b$. It
 <details class="details-e" open>
 <summary>Greatest common divisor (<code>Plus grand diviseur commun</code>)</summary>
 
-$D(a,b)$ is the set of the common divisors between $a$ and $b$. We are calling **greatest common divisor** (GCD or `PGCD`), the greatest value of $D(a,b)$, written $GCD(a,b)$ or $a \wedge b$.
+$D(a,b)$ is the set of the common divisors between $a$ and $b$. We are calling **greatest common divisor** (**GCD** or `PGCD`), the greatest value of $D(a,b)$, written $GCD(a,b)$ or $a \wedge b$.
 
 > Example: what's the GCD of $(27, 15)$
 > <p>
 > \begin{split}
-> D(27, 15) = D(27-15{\color{grey}*1}, 15)\\ = D(12, 15) = D(12, 15-12{\color{grey}*1})\\ = D(12, 3) = D(12-3*4, 3)\\ = D(0, 3) = 3 = 27 \wedge 15
+> D(27, 15) = D(27-15{\color{grey}*1}, 15)\\ = D(12, 15) = D(12, 15-12{\color{grey}*1})\\ = D(12, 3) = D(12-3{\color{grey}*4}, 3)\\ = D(0, 3) = 3 = 27 \wedge 15
 > \end{split}
 > </p>
 > 
 > **Formula**: $a \wedge b = (a - b * q) \wedge b$<br>
-> **Pro tip**: $a \wedge b = c \wedge (\frac{b}{c} \wedge \frac{a}{c})$, so $27 \wedge 15 = 3 \wedge (5 \wedge 9) = 3 \wedge 0 = 3 $.
+> **Pro tip**: $a \wedge b = c \wedge (\frac{b}{c} \wedge \frac{a}{c})$, so $27 \wedge 15 = 3 \wedge (9 \wedge 5) = 3 \wedge 0 = 3 $.
 </details>
 
 <hr class="sl">
@@ -60,7 +60,7 @@ Example: $a=98$ and $b=77$.
 | 3 | 7  | 2 | $1 - 1 * -3 = 4$ | $-1 - 1 * 4=-5$ | $7 = 98 * 4 + 77 * -5$ (**solution ✅**) |
 | 3 | 0  | ❌ | $-3 - 2 * 4 = -11$ | $4 - 2 * -5=14$ | $0 = 98 * -11 + 77 * 14$ |
 
-Of course, we are doing this because **this one was hard**, but if you got $5 * a + 7 * b = 5 \wedge 7 = 1$ then you could find almost immediately that you can use $a=3$ and $b=-5$.
+Of course, we are doing this because **this one was hard**, but if you got $5 * a + 7 * b = 5 \wedge 7 = 1$ then you could find almost immediately that you can use $a=3$ and $b=-2$ giving us $15 - 14 = 1$ (you got 10 and -9 too, etc.).
 
 > **Note**: Bézout's identity is a diophantine equation (`Équation diophantienne`, [wiki](https://en.wikipedia.org/wiki/Diophantine_equation)).
 
