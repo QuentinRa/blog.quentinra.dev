@@ -37,17 +37,17 @@ $D(a,b)$ is the set of the common divisors between $a$ and $b$. We are calling *
 > **Pro tip**: $a \wedge b = c \wedge (\frac{b}{c} \wedge \frac{a}{c})$, so $27 \wedge 15 = 3 \wedge (9 \wedge 5) = 3 \wedge 0 = 3 $.
 </details>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Bézout's identity (`Thèorème de Bezout`) 
 
-The formula is $a \wedge b = a * x + b * u$. **Bézout coefficients** $x$ and $y$ are not unique. Sometimes, this is easy to find the coefficients, but **if this isn't**, use a table (tip: read the example first)
+The formula is $a \wedge b = a * u + b * v$. **Bézout coefficients** $u$ and $v$ are **not unique**. Sometimes, this is easy to find the coefficients, but **if this isn't**, use a table (tip: read the example first)
 
-| k | $r_k$ | $q_k$ | $x_k$ | $y_k$ | Bézout |
+| k | $r_k$ | $q_k$ | $u_k$ | $v_k$ | Bézout |
 |---|---|---|---|---|---|
 | 0 | a | ❌ | 1 | 0 | |
 | 1 | b | the q in a/b | 0 | 1 | |
-|...|the r in a/b|...|$x_{k-2}-q_{k-1}*x_{k-1}$|$y_{k-2}-q_{k-1}*y_{k-1}$|$r_k=a*x_k+b\*y_k$|
+|...|the r in a/b|...|$u_{k-2}-q_{k-1}*u_{k-1}$|$v_{k-2}-q_{k-1}*v_{k-1}$|$r_k=a*u_k+b\*v_k$|
 
 Example: $a=98$ and $b=77$.
 
@@ -60,7 +60,7 @@ Example: $a=98$ and $b=77$.
 | 3 | 7  | 2 | $1 - 1 * -3 = 4$ | $-1 - 1 * 4=-5$ | $7 = 98 * 4 + 77 * -5$ (**solution ✅**) |
 | 3 | 0  | ❌ | $-3 - 2 * 4 = -11$ | $4 - 2 * -5=14$ | $0 = 98 * -11 + 77 * 14$ |
 
-Of course, we are doing this because **this one was hard**, but if you got $5 * a + 7 * b = 5 \wedge 7 = 1$ then you could find almost immediately that you can use $a=3$ and $b=-2$ giving us $15 - 14 = 1$ (you got 10 and -9 too, etc.).
+Of course, we are doing this because **this one was hard**, but if you got $5 * a + 7 * b = 5 \wedge 7 = 1$, then you could find almost immediately that you can use $a=3$ and $b=-2$ giving us $15 - 14 = 1$ (you got 10 and -9 too, etc.).
 
 > **Note**: Bézout's identity is a diophantine equation (`Équation diophantienne`, [wiki](https://en.wikipedia.org/wiki/Diophantine_equation)).
 
@@ -109,7 +109,7 @@ GCP(98, 77) = 2^{min(1, 0)} * 7^{min(2, 1)} * 11^{min(0, 1)}
 > **Note**: if you replace **min** with **max**, you will have the **least common multiple** (`Plus petit commun multiple/PPCM`).
 </details>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Congruence
 
@@ -119,7 +119,7 @@ Let a and b two numbers. We are saying that $a$ is **congruent** (`congru`, $\eq
 a = b + m * q
 @
 
-You can note this using one of thse
+We are using one of the notation below
 
 <div>
 \[
@@ -141,12 +141,12 @@ a \equiv [b]\\
 If you need to evaluate the value $r$ given modulus $m$ **of a complex value** $a$, then simply split rewrite your value $a$ as a product of factors, and evaluate the modulus on each one.
 
 * Ex: $256\ \text{mod}\ 7 = 2^8 = 2^3 * 2^3 * 2^2$
-  * $2^3 = 8 \equiv 1\ \text{mod}\ 7$
-  * $2^2 = 4 \equiv 4\ \text{mod}\ 7$
-  * Giving us $256 \equiv 1 * 4 \equiv 4 \ \text{mod}\ 7$
+  * $2^3 = 8 \equiv 1\ (\text{mod}\ 7)$
+  * $2^2 = 4 \equiv 4\ (\text{mod}\ 7)$
+  * Giving us $256 \equiv 1 * 4 \equiv 4 \ (\text{mod}\ 7)$
 * Ex: $2021\ \text{mod}\ 3 = 2 * 10^3 + 2 * 10^2 + 1$
   * $10 \equiv 1\ \text{mod}\ 3$
-  * $10^2 = 10 * 10 \equiv 1 \ \text{mod}\ 3$
-  * $10^3 = 10 * 10 * 10 \equiv 1 \ \text{mod}\ 3$
-  * $2021= 2 * 1 + 2 * 1 + 1 = 5 \equiv 2 \ \text{mod}\ 3$
+  * $10^2 = 10 * 10 \equiv 1 \ (\text{mod}\ 3)$
+  * $10^3 = 10 * 10 * 10 \equiv 1 \ (\text{mod}\ 3)$
+  * $2021= 2 * 1 + 2 * 1 + 1 = 5 \equiv 2 \ (\text{mod}\ 3)$
 </details>
