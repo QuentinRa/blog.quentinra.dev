@@ -149,4 +149,22 @@ If you need to evaluate the value $r$ given modulus $m$ **of a complex value** $
   * $10^2 = 10 * 10 \equiv 1 \ (\text{mod}\ 3)$
   * $10^3 = 10 * 10 * 10 \equiv 1 \ (\text{mod}\ 3)$
   * $2021= 2 * 1 + 2 * 1 + 1 = 5 \equiv 2 \ (\text{mod}\ 3)$
+
+This is called **Euler theorem** ([wiki](https://en.wikipedia.org/wiki/Euler%27s_theorem)).
+</details>
+
+<details class="details-e" open>
+<summary>🧐 Invertible numbers 🧐</summary>
+
+A number $a$ is invertible modulus $m$ if, $\exists a^{-1}$ giving us $a * a^{-1} \equiv 1\ (mod\ m)$. To find $a^{-1}$, you can use Bézout: $a u + m v = 1 \Leftrightarrow a u = 1\ (mod\ m) \Leftrightarrow a^{-1} \equiv u\ (mod\ m)$ with $u \gt 0$.
+
+* **Condition**: $a \wedge m\ |\ 1$
+* **Ex**: in Bézout example, we had $98 * 4 + 77 * 5 = 7$
+  * ❌: not invertible
+* **Ex**: we found that $5 * 3 + 7 * -2 = 1$
+  * $m = 7$, and $a = 5$
+  * $5^{-1} = 3\ (\text{mod}\ 7)$
+  * **check**: $5 * 3 = 15 = 1\ (\text{mod}\ 7)$
+  * $7^{-1} = -2 = 3\ (\text{mod}\ 5)$
+  * **check**: $3 * 7 = 21 = 1\ (\text{mod}\ 5)$
 </details>
