@@ -31,7 +31,7 @@ The usual template is `"As a <type of user>, I <want to do something/goal>, so t
 
 > **Note**: to add a technical story, you need to explain and persuade the product owner that this will help<br>
 > **Note**: you will usually deliver the stories when the epic is done.<br>
-> **Tip**: give colors to your stories according their kind (ie: feature, bugs, etc.). <br>
+> **Tip**: give colors to your stories according to their kind (ie: feature, bugs, etc.). <br>
 > **Note**: You can see an epic as the result of a succession of stories, and a group of epics is making an initiative (omitted).
 
 <hr class="sr">
@@ -56,7 +56,7 @@ You need to evaluate how much **complex** a task is (or how much **effort** it w
 * You may **compare tasks** and sort them by difficulty.
 * You can give a value among a fixed list (`0, 1/2, 1, 2, 3, 5, 8, 13, 20, 40, 100, ?, inf.`) to each task. The average/median value may be used as an answer.
 
-If you got outliers (`valeurs abérantes`) such as (almost) everyone gave "10", one gave "5", and one gave "20", then it would be a good idea to ask them **why** they gave this value (maybe they through of something others didn't).
+If you got outliers (`valeurs abérantes`) such as (almost) everyone gave "10", one gave "5", and one gave "20", then it would be a good idea to ask them **why** they gave this value (maybe they thought of something others didn't).
 
 * The [T-Shirt Size Estimation](https://explainagile.com/blog/t-shirt-size-estimation/)
 
@@ -78,4 +78,4 @@ You may create a table, in which each row is a story. You may group them by epic
 * **The Sprint**: the one in which you completed this story (empty if you didn't)
 * **The Epic**: if this story belongs to an epic
 * The dependencies
-* How could the Product Owner/... will test that the feature is working (**acceptance tests**)
+* How will the Product Owner (or ...) test that the feature is working (**acceptance tests**)

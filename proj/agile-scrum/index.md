@@ -168,7 +168,7 @@ Ask your team, how much a meeting was useful (`5`: excellent, `4`: above average
 
 * **Velocity**
 
-The velocity is the capacity of your team. This is not a value comparable with other teams/projects. This is the **sum of the complexity of the tasks your team took**. You should use it to not take too many stories <small>(both per person and per group)</small>. This value will converge after some iterations. You should usually keep a 10% margin (meetings,technical debt, quality, etc.).
+The velocity is the capacity of your team. This is not a value comparable with other teams/projects. This is the **sum of the complexity of the tasks your team took**. You should use it to not take too many stories <small>(both per person and per group)</small>. This value will converge after some iterations. You should usually keep a 10% margin (meetings, technical debt, quality, etc.).
 
 You may use a **Burndown chart** (or the **Burnup chart**) to represent this graphically.
 
