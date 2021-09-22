@@ -178,8 +178,43 @@ You will **encrypt** your **message** with a **key** using an **algorithm**, gen
 * **Note**: $k_1$ should be different from $k_2$ <small>(otherwise, it will be broken)</small>
 * **Note**: The algorithm is well-known <small>(ex: AES, DES, RSA, SSL, ...)</small>
 
+We will use the terms
+
+* **public key**: a key used to encrypt a message that is shared to everyone. Only the one generating the key is supposed to be able to decrypt a message.
+* **private key**: a key associated with the public key, not shared, used to decrypt messages encrypted with the public key
+
 <hr class="sr">
 
 ## Some algorithms
 
-...
+Most of them aren't used, either because they are inefficient or because they were broken.
+
+<details class="details-e">
+<summary>Knapsack problem (<code>sac-à-dos</code>) of Merkle-Hellman</summary>
+
+You a got a "bag/Knapsack" of numbers (ex: 23, 5, 11, 2, 55). Your message is made of `0` and `1`, and using this method `1` means you picked something from the bag, `0` means you didn't. Then, make the sum of the numbers you picked in the bag to create the **cipher**. Note that you **will have to split the message in group** having the size of the knapsack.
+
+* **Knapsack** (private key): $2, 5, 11, 23, 55$ (up to you, size=6)
+* **Message**: $1100111001 = 11001\ 10001$ (group of 6)
+* **Cipher**
+  * $2 + 5 + 0 + 0 + 55 = 62$ (first group)
+  * $2 + 0 + 0 + 0 + 55 = 57$ (second group)
+* **Cipher text**: $62, 57$
+
+But, this is too easy to find what generated this cipher. So we are using the **super-increasing knapsack problem** to **generate a public key**, and **this easy key as the private key**. We will pick a value $N$ greater than the sum of the values in the Knapsack, and a number $W$, so that $N \wedge W|1$ (=no common divisor aside 1).
+
+* We are picking $N=113$, $W=27$
+* We got $W^{-1} = 67\ (\text{mod}\ 113)$
+* **Knapsack** (public key)
+  * We are multiplying the private key by $W$, modulus $N$
+  * $54, 22, 71, 56, 16$ (ex: $27 * 2 = 54\ (\text{mod}\ 113)$)
+* **private cipher**
+  * $54 + 22 + 0 + 0 + 16 = 92$ (first group)
+  * $54 + 0 + 0 + 0 + 16 = 70$ (second group)
+* **Cipher text**: $92, 70$
+* **decrypt** (given N and W)
+  * We are multiplying the public key by $W$, modulus $N$
+  * we get back the private key: $2, 5, 11, 23, 55$
+  * we can easily find that: $2 + 5 + 0 + 0 + 55 = 62$ and ...
+  * so the message was: $1100110001$
+</details>
