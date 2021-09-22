@@ -143,6 +143,21 @@ At the end, you must select **one thing** and focus on it. Focusing on one is ma
 
 <hr class="sl">
 
+## Sprint 0
+
+This is the first sprint, but it's labeled as **Sprint 0**, because this is not a real sprint and this is before the first sprint. You will set up everything during this sprint, and create the workflow of the application. It means, you **have to**
+
+* create the folders <small>(ex: src, headers, etc.)</small>
+* create files such as README.md, LICENSE, CONTRIBUTING.md, etc.
+* write your guidelines/style guide/... <small>(if you got one)</small>
+* pick your tools <small>(ex: git, trello, ...)</small>, set them up <small>(ex: create repository, master/main?)</small>
+* set up the rules <small>(ex: when are branches created? main => version1.0 => feature xxx)</small>
+* ...
+
+And **write some code**, but only **the bare minimum** so that everyone can start their task without meddling with/stopping everyone else (ex: create the Main file, maybe create the data-related files, so that all of you know what data is manipulated, etc.).
+
+<hr class="sr">
+
 ## Metrics
 
 They are the way of checking what progress, or the key indicators of your project.
