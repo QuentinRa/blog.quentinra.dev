@@ -8,38 +8,10 @@ The **Product backlog**, is a sort of project specification (`cahier des charges
 * Usually, they are sorted by **importance** (most important to less important)
 * Usually, you must add the dependencies between tasks
 
-⚠️this page is long and complex. You may skip the two optional parts.
-
 > **Note**: The entries of the product backlog are also called **items**.<br>
 > **Note**: Sometimes, the backlog may become too big, so you may remove the less important tasks, and label them as **"out of scope"** (such as the Could/Would, or tasks that do not impact the sprint goal if they are removed).<br>
 > **Note**: reviewing the backlog is sometimes called backlog **grooming** (or refinement) <br>
 > **Note**: Usually, the Product Owner and the Scrum Master are preparing the Product backlog **before** the meeting.
-
-<hr class="sl">
-
-## Product roadmap (optional)
-
-This is a long-term vision of the product. The product owner is giving the goals and the results we are expecting, rather than the timeline/functionalities. This is something explaining **what** you are planning to do.
-
-* you might set the current goals
-* you might set the near-term goals
-* you might set the long-term goals
-
-Each of them is a list, ordered by decreasing priority.
-
-Even in Agile projects, **having a long-term vision is very important**, and **this is a myth that you should only have a near-term vision**. This will help to make near-term decisions that do not go against the overall vision of the project.
-
-<hr class="sr">
-
-## Product requirements documents - PRD (optional)
-
-They were used a lot in the Waterfall model, but now they are starting to be used in Agile projects. These are requirements that the Product Owner writes with the team, and that the client agreed upon. This is mainly used as a strong confirmation of what you have to do
-
-* goals, objectives, strategy
-* features (user stories)
-* behavior (user design, interactions, )
-
-You will find a lot of **templates** and the Web. We usually have **the name of every person involved**, the **goals**, **why you added this requirement**, the **mock-ups** (`maquettes`), **the topics the team must think about** (Question/Outcome), and **what they shouldn't work on**.
 
 <hr class="sl">
 

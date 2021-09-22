@@ -61,34 +61,34 @@ slide5:
     width: 100
     entries:
       - pb: [ 5, 9 ]
-      - pb: [ 15, 16 ]
+      - pb: [ 13, 14 ]
 slide6:
   card1:
     title: User Stories and Epics
     number: 4.1.1.1
     width: 100
     entries:
-      - pb: [ 48, 61 ]
+      - pb: [ 20, 30 ]
 slide7:
   card1:
     title: Priority
     number: 4.1.1.2
     width: 50
     entries:
-      - pb: [ 67, 74 ]
+      - pb: [ 39, 46 ]
   card2:
     title: Estimation
     number: 4.1.1.3
     width: 50
     entries:
-      - pb: [ 80, 89 ]
+      - pb: [ 50, 61 ]
 slide8:
   card1:
     title: The backlog itself
     number: 4.1.1.4
     width: 100
     entries:
-      - pb: [ 95, 106 ]
+      - pb: [ 67, 78 ]
 slide9:
   card1:
     title: Sprint backlog (1/2)

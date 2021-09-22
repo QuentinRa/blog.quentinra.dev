@@ -33,3 +33,31 @@ https://management30.com/
 https://www.nononsenseagile.com/
 https://treehozz.com/who-creates-backlog
 https://plan.io/blog/what-is-agile-project-management/
+
+
+--------------------------
+
+
+## Product roadmap (optional)
+
+This is a long-term vision of the product. The product owner is giving the goals and the results we are expecting, rather than the timeline/functionalities. This is something explaining **what** you are planning to do.
+
+* you might set the current goals
+* you might set the near-term goals
+* you might set the long-term goals
+
+Each of them is a list, ordered by decreasing priority.
+
+Even in Agile projects, **having a long-term vision is very important**, and **this is a myth that you should only have a near-term vision**. This will help to make near-term decisions that do not go against the overall vision of the project.
+
+<hr class="sr">
+
+## Product requirements documents - PRD (optional)
+
+They were used a lot in the Waterfall model, but now they are starting to be used in Agile projects. These are requirements that the Product Owner writes with the team, and that the client agreed upon. This is mainly used as a strong confirmation of what you have to do
+
+* goals, objectives, strategy
+* features (user stories)
+* behavior (user design, interactions, )
+
+You will find a lot of **templates** and the Web. We usually have **the name of every person involved**, the **goals**, **why you added this requirement**, the **mock-ups** (`maquettes`), **the topics the team must think about** (Question/Outcome), and **what they shouldn't work on**.
