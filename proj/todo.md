@@ -8,3 +8,5 @@
   * Slack
   * zettlr
   * https://editorconfig.org/
+* tests
+  * https://en.wikipedia.org/wiki/A/B_testing

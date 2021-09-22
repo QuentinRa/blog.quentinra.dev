@@ -126,7 +126,7 @@ Each developer may **demonstrate** what they did (and why?), but do not make it 
 
 ### 4. Sprint retrospective
 
-* **Involves**: PO, SM, Dev. team
+* **Involves**: PO <small>(may not be here)</small>, SM, Dev. team
 * **Duration**: up to 3 hours/4 weeks
 
 At the end, identify the areas of improvement. Find **what didn't work well** and of course **what worked well**.
@@ -162,11 +162,15 @@ And **write some code**, but only **the bare minimum** so that everyone can star
 
 They are the way of checking what progress, or the key indicators of your project.
 
-* **velocity**
+* **R.O.T.I** (Return of time invested)
 
-This is the sum of the estimation of the stories that you took for a sprint. **An indicator of how much you can do**, your capacity. You should use it to not take too many stories (both per person and per group). This value will converge after some iterations. You should take the meetings, the technical debt/the quality, into account. You should usually keep a 10% margin.
+Ask your team, how much a meeting was useful (`5`: excellent, `4`: above average/good, `3`: average/ok, `2`: useful, `1`: useless)
 
-You may use a **Burndown chart** to represent this graphically.
+* **Velocity**
+
+The velocity is the capacity of your team. This is not a value comparable with other teams/projects. This is the **sum of the complexity of the tasks your team took**. You should use it to not take too many stories <small>(both per person and per group)</small>. This value will converge after some iterations. You should usually keep a 10% margin (meetings,technical debt, quality, etc.).
+
+You may use a **Burndown chart** (or the **Burnup chart**) to represent this graphically.
 
 <hr class="sr">
 

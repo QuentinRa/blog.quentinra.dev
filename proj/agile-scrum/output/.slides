@@ -68,27 +68,27 @@ slide6:
     number: 4.1.1.1
     width: 100
     entries:
-      - pb: [ 20, 30 ]
+      - pb: [ 20, 34 ]
 slide7:
   card1:
     title: Priority
     number: 4.1.1.2
     width: 50
     entries:
-      - pb: [ 39, 46 ]
+      - pb: [ 41, 48 ]
   card2:
     title: Estimation
     number: 4.1.1.3
     width: 50
     entries:
-      - pb: [ 50, 61 ]
+      - pb: [ 54, 63 ]
 slide8:
   card1:
     title: The backlog itself
     number: 4.1.1.4
     width: 100
     entries:
-      - pb: [ 67, 78 ]
+      - pb: [ 70, 82 ]
 slide9:
   card1:
     title: Sprint backlog (1/2)
@@ -141,8 +141,14 @@ slide12:
       - [129, 142]
 slide13:
   card1:
-    title: Sources
+    title: Scrum Metrics
     number: 5
     width: 50
     entries:
-      - [ 160, 164 ]
+      - [ 163, 173 ]
+  card2:
+    title: Sources
+    number: 6
+    width: 50
+    entries:
+      - [ 181, 185 ]

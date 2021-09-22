@@ -17,7 +17,7 @@ The **Product backlog**, is a sort of project specification (`cahier des charges
 
 ## User Stories and Epics
 
-An **Epic** is a group of **(user) stories** that are "similar" <small>(ex: all stories related to the user management)</small>. A User Story is a text describing a task (~= requirement) from the point of view of a user. You got stories about
+An **Epic** is a group of **(user) stories** that are "similar" <small>(ex: all stories related to the user management)</small>. A User Story is a text describing a task from the point of view of a user. You got stories about
 
 * **features** (functional)
 * **bugs** (technical)
@@ -29,7 +29,9 @@ A user story is supposed to provide content about the task, so that you are "wor
 
 The usual template is `"As a <type of user>, I <want to do something/goal>, so that <a reason/benefit>."`.
 
-> **TIP**: give colors according to the kind of stories. Or, you may give colors to epics and symbols to stories. <br>
+> **Note**: to add a technical story, you need to explain and persuade the product owner that this will help<br>
+> **Note**: you will usually deliver the stories when the epic is done.<br>
+> **Tip**: give colors to your stories according their kind (ie: feature, bugs, etc.). <br>
 > **Note**: You can see an epic as the result of a succession of stories, and a group of epics is making an initiative (omitted).
 
 <hr class="sr">
@@ -66,13 +68,14 @@ If you got outliers (`valeurs abérantes`) such as (almost) everyone gave "10", 
 
 You may create a table, in which each row is a story. You may group them by epics if you want. As for the columns, here are some ideas
 
-* \# or ID: ID of the story
-* Title or Title+Description: the story
-* The priority
-* The importance, estimated with
-  * An estimation of the complexity
-  * An estimation of the value for the client
-* Some notes
-* The Sprint: the one in which you completed this story (empty if you didn't)
-* The Epic: if this story belongs to an epic
+* \# or **ID**: ID of the story
+* **Title** or Title+**Description**: the story
+* The **priority**
+* The **importance**, estimated with
+  * An estimation of the **complexity**
+  * An estimation of the **value for the client**
+* Some **notes**
+* **The Sprint**: the one in which you completed this story (empty if you didn't)
+* **The Epic**: if this story belongs to an epic
 * The dependencies
+* How could the Product Owner/... will test that the feature is working (**acceptance tests**)
