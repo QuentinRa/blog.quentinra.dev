@@ -119,7 +119,7 @@ Let a and b two numbers. We are saying that $a$ is **congruent** (`congru`, $\eq
 a = b + m * q
 @
 
-We are using one of the notation below
+We are using one of the notations below
 
 <div>
 \[
@@ -168,3 +168,18 @@ A number $a$ is invertible modulus $m$ if, $\exists a^{-1}$ giving us $a * a^{-1
   * $7^{-1} = -2 = 3\ (\text{mod}\ 5)$
   * **check**: $3 * 7 = 21 = 1\ (\text{mod}\ 5)$
 </details>
+
+<hr class="sl">
+
+## Main idea
+
+You will **encrypt** your **message** with a **key** using an **algorithm**, generating a **cipher** (`message encrypté`): $E(\text{key}_1, \text{message})=^{algo}c$. The receiver will receive your **cipher**, decrypt it using a **key** and **an algorithm**: $D(\text{key}_2, c)=^{algo}\text{message}$.
+
+* **Note**: $k_1$ should be different from $k_2$ <small>(otherwise, it will be broken)</small>
+* **Note**: The algorithm is well-known <small>(ex: AES, DES, RSA, SSL, ...)</small>
+
+<hr class="sr">
+
+## Some algorithms
+
+...
