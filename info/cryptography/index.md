@@ -249,3 +249,11 @@ But, this is too easy to find what generated this cipher. So we are using the **
   * we can easily find that: $2 + 5 + 0 + 0 + 55 = 62$ and ...
   * so the message was: $1100110001$
 </details>
+
+<details class="details-e" open>
+<summary>Diffie–Hellman key exchange</summary>
+
+A is sending a message to B. Both are agreeing on two numbers $p$ and $g$ with $(p-1) \wedge g\ |\ 1$ (=the only divisor is 1), and they are picking a private number (resp. $a$ and $b$, lesser than $p$).
+
+A is sending $g^a\ (mod\ p)$ to B (resp. b for B to A). The common key for A is $(g^a)^b\ (mod\ p)$ and for B, it is $(g^b)^a\ (mod\ p)$. They **both** have the same number, but they do not know about the exponent of the other.
+</details>
