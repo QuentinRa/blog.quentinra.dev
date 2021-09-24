@@ -178,14 +178,14 @@ You will **encrypt** your **message** with a **key** using an **algorithm**, gen
 
 We will use the terms
 
-* **public key**: a key used to encrypt a message that is shared to everyone. Only the one generating the key is supposed to be able to decrypt a message.
+* **public key**: a key used to encrypt a message that is shared with everyone. Only the one generating the key is supposed to be able to decrypt a message.
 * **private key**: a key associated with the public key, not shared, used to decrypt messages encrypted with the public key
 
 <hr class="sr">
 
 ## Playing with binaries 0️⃣1️⃣
 
-A binary is a number in base 2, so we are using only 0 and 1. You will need to do a lot of operation on binaries. 
+A binary is a number in base 2, so we are using only 0 and 1. You will need to do a lot of operations on binaries. 
 
 * **Addition**: note that $1+0=1$, $0+0=0$, and $1+1=0$
   * Generalization: $1+1+1=3=1\ \(mod\ 2)$
@@ -217,7 +217,7 @@ Unfortunately, we can try to replace the most common letters in the cipher text,
 <details class="details-e">
 <summary>One-time pad</summary>
 
-This algorithm is creating a **key as long or longer than the message**, so even trough it is secure, we can't use it. For each message, both user are agreeing on a key (ex: $01010$), and the Algorithm is **XOR** (`ou exclusif`, $0+0=1+1=0$ and $1+0=0+1=1$).
+This algorithm is creating a **key as long or longer than the message**, so even though it is secure, we can't use it. For each message, both user are agreeing on a key (ex: $01010$), and the Algorithm is **XOR** (`ou exclusif`, $0+0=1+1=0$ and $1+0=0+1=1$).
 
 * **Message**: $10011$
 * **Key** (encrypt): $01010$
@@ -229,7 +229,7 @@ This algorithm is creating a **key as long or longer than the message**, so even
 <details class="details-e">
 <summary>Knapsack problem (<code>sac-à-dos</code>) of Merkle-Hellman</summary>
 
-You a got a "bag/Knapsack" of numbers (ex: 23, 5, 11, 2, 55). Your message is made of `0` and `1`, and using this method `1` means you picked something from the bag, `0` means you didn't. Then, make the sum of the numbers you picked in the bag to create the **cipher**. Note that you **will have to split the message in group** having the size of the knapsack.
+You a got a "bag/Knapsack" of numbers (ex: 23, 5, 11, 2, 55). Your message is made of `0` and `1`, and using this method `1` means you picked something from the bag, `0` means you didn't. Then, make the sum of the numbers you picked in the bag to create the **cipher**. Note that you **will have to split the message into groups** having the size of the knapsack.
 
 * **Knapsack** (private key): $2, 5, 11, 23, 55$ (up to you, size=6)
 * **Message**: $1100111001 = 11001\ 10001$ (group of 6)
@@ -283,5 +283,5 @@ To decrypt a message $S$, simply do $T = S^d\ (mod\ n)$.
 
 ## Sources
 
-* Oleg L. (My teacher, IUT Sénart-Fontainebleau) 🚀
+* Oleg L. (My teacher when I was in the IUT of Sénart-Fontainebleau) 🚀
 * [Online Cryptography Course](https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/)
