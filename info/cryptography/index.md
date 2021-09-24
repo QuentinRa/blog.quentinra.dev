@@ -187,7 +187,19 @@ We will use the terms
 
 ## Some algorithms
 
-Most of them aren't used, either because they are inefficient or because they were broken.
+Most of them aren't used, either because they are inefficient or because they were broken. You can move to the next section if you are not interested 🧐.
+
+<details class="details-e">
+<summary>One-time pad</summary>
+
+This algorithm is creating a **key as long or longer than the message**, so even trough it is secure, we can't use it. For each message, both user are agreeing on a key (ex: $01010$), and the Algorithm is **XOR** (`ou exclusif`, $0+0=1+1=0$ and $1+0=0+1=1$).
+
+* **Message**: $10011$
+* **Key** (encrypt): $01010$
+* **Cipher text**: $11001$
+* **Key** (decrypt): $01010$
+* **Message**: $10011$
+</details>
 
 <details class="details-e">
 <summary>Knapsack problem (<code>sac-à-dos</code>) of Merkle-Hellman</summary>
