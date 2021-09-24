@@ -257,3 +257,25 @@ A is sending a message to B. Both are agreeing on two numbers $p$ and $g$ with $
 
 A is sending $g^a\ (mod\ p)$ to B (resp. b for B to A). The common key for A is $(g^a)^b\ (mod\ p)$ and for B, it is $(g^b)^a\ (mod\ p)$. They **both** have the same number, but they do not know about the exponent of the other.
 </details>
+
+<hr class="sr">
+
+## Rivest–Shamir–Adleman (RSA)
+
+We are picking two **prime numbers** $p$ and $q$, and deducting both $n = p * q$ and $\phi(n) = (p-1) * (q-1)$. The, use **Bézout** to find the coefficients that we will call $d$ and $e$.
+
+* **Public key**: $(n, e)$ (used by others to encrypt)
+* **Private key**: $(n, d)$ (used by only me, to decrypt)
+
+To encrypt a message $T$, simply do $S = T^e\ (mod\ n)$, while the message is supposed to be a number $\lt n$.
+
+To decrypt a message $S$, simply do $T = S^d\ (mod\ n)$.
+
+> This is working, because an attacker would have a lot of prime numbers to test ($10^{497}$ for $n \approx 10^{1000}$) to find back $\phi(n) = (p-1) * (q-1)$ from $n$.
+
+<hr class="sl">
+
+## Sources
+
+* Oleg L. (My teacher, IUT Sénart-Fontainebleau) 🚀
+* [Online Cryptography Course](https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/)
