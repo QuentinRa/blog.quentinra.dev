@@ -185,6 +185,25 @@ We will use the terms
 
 <hr class="sr">
 
+## Playing with binaries 0️⃣1️⃣
+
+A binary is a number in base 2, so we are using only 0 and 1. You will need to do a lot of operation on binaries. 
+
+* **Addition**: note that $1+0=1$, $0+0=0$, and $1+1=0$
+  * Generalization: $1+1+1=3=1\ \(mod\ 2)$
+  * Ex: $(1+0+1+0+1)_2 + (1+1+0+0+0)_2 = (0+1+1+0+1)_2$
+* **Conversion**: convert a number from base 10 to base 2
+  * We know that $2^0=1, 2^1=2, 2^2=4, 2^3=8, ...$
+  * Ex: $56 = 32 + 16 + 8$
+  * Ex: $56 = 2^5 + 2^4 + 2^3 + = {\color{grey} 0 * 2^0 + 0 * 2^1 + 0 * 2^2} + {\color{grey} 1*} 2^3 + {\color{grey} 1*} 2^4 + {\color{grey} 1*} 2^5  $
+  * Ex: $(56)_{10} = (000111)_2$
+* **Conversion**: from base 2 to base 10
+  * Ex: $(000111)_2$
+  * $(000111)_2 = {\color{grey} 0 * 2^0 + 0 * 2^1 + 0 * 2^2} + {\color{grey} 1*} 2^3 + {\color{grey} 1*} 2^4 + {\color{grey} 1*} 2^5$
+  * $(000111)_2 = (56)\_{10}$
+
+<hr class="sl">
+
 ## Some algorithms
 
 Most of them aren't used, either because they are inefficient or because they were broken. You can move to the next section if you are not interested 🧐.
