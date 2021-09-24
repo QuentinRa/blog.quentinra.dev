@@ -112,6 +112,9 @@
   - apt install zip unzip php7.1-zip php7.1-mbstring php7.1-curl php7.1-dom
 - typescript
   - https://github.com/labs42io/clean-code-typescript
+- cryptography
+  - Solve modular equations
+  - Solve modular systems
 
 <hr>
 

@@ -285,3 +285,7 @@ To decrypt a message $S$, simply do $T = S^d\ (mod\ n)$.
 
 * Oleg L. (My teacher when I was in the IUT of Sénart-Fontainebleau) 🚀
 * [Online Cryptography Course](https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/)
+* <https://en.wikipedia.org/wiki/Table_of_divisors>
+* <https://en.wikipedia.org/wiki/Prime_number>
+* <https://en.wikipedia.org/wiki/Modular_arithmetic>
+* <https://en.wikipedia.org/wiki/Euler%27s_theorem>
