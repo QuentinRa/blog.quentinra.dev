@@ -1,7 +1,5 @@
 # Cryptography
 
-![note: draft](https://img.shields.io/badge/note-draft-orange) <small>(upcoming)</small>
-
 Cryptography is the knowledge related to the **encryption** and **decryption** of messages. This course is more a mathematical course than a programming course, at least for now (sorry 😖).
 
 <hr class="sl">
@@ -209,6 +207,14 @@ A binary is a number in base 2, so we are using only 0 and 1. You will need to d
 Most of them aren't used, either because they are inefficient or because they were broken. You can move to the next section if you are not interested 🧐.
 
 <details class="details-e">
+<summary>Caesar cipher (<code>Code de César</code>)</summary>
+
+Caesar was replacing letters like this $a \to c,\ b \to d,\ etc.$. On the same idea, the **substitution cipher** is replacing each letter by another like $a \to w,\ b \to e,\ etc.$.
+
+Unfortunately, we can try to replace the most common letters in the cipher text, or the most commons groups of letters, with the most common letters (or group of letters) in a Language. And break the cipher.
+</details>
+
+<details class="details-e">
 <summary>One-time pad</summary>
 
 This algorithm is creating a **key as long or longer than the message**, so even trough it is secure, we can't use it. For each message, both user are agreeing on a key (ex: $01010$), and the Algorithm is **XOR** (`ou exclusif`, $0+0=1+1=0$ and $1+0=0+1=1$).
@@ -250,7 +256,7 @@ But, this is too easy to find what generated this cipher. So we are using the **
   * so the message was: $1100110001$
 </details>
 
-<details class="details-e" open>
+<details class="details-e">
 <summary>Diffie–Hellman key exchange</summary>
 
 A is sending a message to B. Both are agreeing on two numbers $p$ and $g$ with $(p-1) \wedge g\ |\ 1$ (=the only divisor is 1), and they are picking a private number (resp. $a$ and $b$, lesser than $p$).
