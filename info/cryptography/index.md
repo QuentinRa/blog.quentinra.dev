@@ -74,7 +74,8 @@ A prime number is a number **greater or equals to 2**, which is **only divisible
 * ✅: 2, 3, 5, 7, 11, 13, etc.
 * ❌: 4 (→2), 6 (→2, →3), 9 (→3), 10 (→2, →5), etc.
 
-**Note**: If $p$ and $q$ are prime numbers, and $p \neq q$, then $p \wedge q = 1$.
+**Note**: If $p$ and $q$ are prime numbers, and $p \neq q$, then $p \wedge q = 1$.<br>
+**Note**: $\phi(n)$ is called Euler's totient function (`indicatrice d'Euler`) and is the number of prime numbers with $n$.
 </details>
 
 <details class="details-e">
@@ -212,6 +213,26 @@ Most of them aren't used, either because they are inefficient or because they we
 Caesar was replacing letters like this $a \to c,\ b \to d,\ etc.$. On the same idea, the **substitution cipher** is replacing each letter by another like $a \to w,\ b \to e,\ etc.$.
 
 Unfortunately, we can try to replace the most common letters in the cipher text, or the most commons groups of letters, with the most common letters (or group of letters) in a Language. And break the cipher.
+</details>
+
+<details class="details-e">
+<summary>Vigenère cipher (<code>Cryptage en bloc de Vigenère</code>)</summary>
+
+This is the same as the Caesar cipher/Substitution cipher. We are working on letters. But, this time we are splitting letters in groups. The problem is that is we got the key, we can easily get back the message.
+
+* **message**: `memorize`
+* **key**: `vgn`
+* **cipher text**: `memorize+vgn=memorize+vgnvgnv=hkzjxvuk`
+  * $M=12$, $V=21$, $12+21=33\equiv 7\ (mod\ 26)=H$
+  * $E=4$, $G=6$, $4+6=10\equiv 10\ (mod\ 26)=K$
+  * $M=12$, $N=13$, $12+13=25\equiv 25\ (mod\ 26)=Z$
+  * ...
+* **decrypt**: `hkzjxvuk+vgnvgnv=memorize`
+  * $H=7$, $V=21$, $7 - 21 + 26 \equiv 12\ (mod\ 26)=M$
+  * $K=10$, $G=6$, $10 - 6 + 26 \equiv 4\ (mod\ 26)=E$
+  * $Z=25$, $N=13$, $25 - 13 + 26 \equiv 12\ (mod\ 26)=M$
+  * $J=9$, $V=21$, $9 - 21 + 26 \equiv 14\ (mod\ 26)=O$
+  * ...
 </details>
 
 <details class="details-e">
