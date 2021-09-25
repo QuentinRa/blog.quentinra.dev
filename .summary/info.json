@@ -2,15 +2,6 @@
   "title": "Programming courses - Java, C, OCaml, HTML, JS, Node, NoSQL",
   "description": "Learn about Java, C, OCaml, Web-related languages (HTML, CSS, JS, PHP, Node) and databases-related languages (SQL, NoSQL). We also have courses about Assembly, TypeScript, Cybersecurity, and API.",
   "courses": {
-    "e1": [
-      {
-        "tag": "ocaml",
-        "name": "OCaml",
-        "title": "Learn OCAML programming",
-        "desc": "OCaml may be used when you need to write a safe programs (as it is a functional language). It's quite easy to learn, almost no syntax.",
-        "icon": "<i class=\"bi bi-terminal-fill\"></i>"
-      }
-    ],
     "e2": [
       {
         "tag": "web",

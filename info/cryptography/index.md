@@ -187,18 +187,18 @@ We will use the terms
 
 A binary is a number in base 2, so we are using only 0 and 1. You will need to do a lot of operations on binaries. 
 
-* **Addition**: note that $1+0=1$, $0+0=0$, and $1+1=0$
-  * Generalization: $1+1+1=3=1\ \(mod\ 2)$
-  * Ex: $(1+0+1+0+1)_2 + (1+1+0+0+0)_2 = (0+1+1+0+1)_2$
+* **Addition**: note that $1+0=1$, while $0+0=0$, and $1+1=0$
+  * Generalization: $1+1+1=3\equiv1\ \(mod\ 2)$
+  * Ex: $(10101)_2 + (11000)_2 = (01101)_2$
 * **Conversion**: convert a number from base 10 to base 2
-  * We know that $2^0=1, 2^1=2, 2^2=4, 2^3=8, ...$
+  * We know that $2^0={\color{blue}1},\ 2^1={\color{blue}2},\ 2^2={\color{blue}4},\ 2^3={\color{blue}8}, ...$ (16, 32, 64, 128, 256, 512, etc.)
   * Ex: $56 = 32 + 16 + 8$
-  * Ex: $56 = 2^5 + 2^4 + 2^3 + = {\color{grey} 0 * 2^0 + 0 * 2^1 + 0 * 2^2} + {\color{grey} 1*} 2^3 + {\color{grey} 1*} 2^4 + {\color{grey} 1*} 2^5  $
+  * Ex: $56 = 2^5 + 2^4 + 2^3 = {\color{grey} 0\*2^0 + 0\*2^1 + 0\*2^2} + {\color{grey} 1*} 2^3 + {\color{grey} 1*} 2^4 + {\color{grey} 1*} 2^5  $
   * Ex: $(56)_{10} = (000111)_2$
 * **Conversion**: from base 2 to base 10
   * Ex: $(000111)_2$
   * $(000111)_2 = {\color{grey} 0 * 2^0 + 0 * 2^1 + 0 * 2^2} + {\color{grey} 1*} 2^3 + {\color{grey} 1*} 2^4 + {\color{grey} 1*} 2^5$
-  * $(000111)_2 = (56)\_{10}$
+  * $(000111)_2 = (8+16+32)\_{10} = (56)\_{10}$
 
 <hr class="sl">
 
