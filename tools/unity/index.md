@@ -249,3 +249,50 @@ GameObject obj = GameObject.FindGameObjectWithTag("TagName");
 
 </div>
 </details>
+
+<hr class="sl">
+
+## Lifecycle, gameloop and Input
+
+Usually, in any game, you got a the following lifecycle (`structure/cycle de vie`). First, the game is **initialized**, then the core of the game in run, called **game loop**
+
+* **input**: check what button/keys were pressed 
+* **update**: update the game, according to the state and the input
+* **render**: redraw the screen
+
+And when the user closes the game, we are **disposing** of everything.
+
+> The value called **Frames Per Second** (FPS, `images par second`) is **the number of times in one second the gameloop is looping**. Unfortunately, we are not calling the gameloop with a constant time (ex: not every 1ms, etc.). This may be because the update was slow, the render was slow, or the they were too fast 😎. The side-effect is that you may see something teleport, or not moving smoothly. To prevent that from happening, you need to use the **delta time** (=time since when the last call) everytime you are moving something.
+> 
+> In Unity, everywhere you were using speed to move something, simply multiplying by `Time.deltaTime` will make the speed constant (=a real speed per second) 
+> `pos.x * Time.deltaTime * speed`
+
+Anyway, you can see if a key is pressed/mouse button pressed with 
+
+```cs
+// -1 (left) 0 or 1 (right)
+// tryied to move to the left/right
+float axisX = Input.GetAxis("Horizontal");
+// -1 (down) 0 or 1 (up)
+// tryied to move up/down
+float axisY = Input.GetAxis("Vertical");
+// true if enter pressed
+bool pressed = Input.GetKey(KeyCode.KeypadEnter);
+```
+
+> **Beware!** As a script can be added to multiple GameObject, if you are handling events using this (in Update), you will update every GameObject. You have functions for mouse related stuffs in MonoBehaviour that you can override such as
+> ```cs
+>  private void OnMouseUp() {}
+>  private void OnMouseDown() {}
+>  private void OnMouseOver() {}
+>  private void OnMouseEnter() {}
+>  private void OnMouseExit() {}
+> ```
+
+<hr class="sr">
+
+## Sources
+
+* [Game Development](https://gamedevelopment.tutsplus.com/) for everything related to the Game engine infrastructure and the Game Loop
+* Tutorials about the LibGDX and the lwjgl3 libraries, such as [LWJGL3 - Timing](https://github.com/SilverTiger/lwjgl3-tutorial/wiki/Timing) to understand the underlay of a Game
+* Teachings at the [ENSIIE](https://www.ensiie.fr/)

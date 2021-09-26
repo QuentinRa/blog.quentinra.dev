@@ -22,27 +22,6 @@ The ``2D Collider`` is handling the collision for you, with any other GameObject
 
 The ``RigidComponent`` is something that you may use to add things like gravity and make your player fall... If you don't want your "player to fall" but you want a Rigid body, then some are setting gravity to 0.
 
-When you are moving a GameObject using your handwritten script, don't forget to use this `pos * Time.deltaTime * speed` (=use the deltaTime). It will make things smoother since your character will move at an almost constant speed.
-
-<hr class="sl">
-
-## Gameloop and input
-
-...
-
-Finally, you can handle the input with
-
-Input
-
-```cs
-// -1 (left) 0 or 1 (right)
-// "Vertical" too
-float axis = Input.GetAxis("Horizontal");
-bool pressed = Input.GetKey(KeyCode.KeypadEnter);
-```
-
-<hr class="sl">
-
 ## Sprites
 
 A sprite is an image, and a sprite sheet is a big image having a lot of sprites. In unity, click on a sprite sheet then in property, set `Sprite mode` to `Multiple` to tell unity that this image is composed of multiples images. Then in sprite editor, slide the image (either using automatic or grid) and apply your changes. You should now see only one frame/sprite when dragging your sprite inside the scene.
