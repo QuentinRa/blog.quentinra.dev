@@ -6,28 +6,24 @@
       {
         "tag": "web",
         "name": "WEB",
-        "title": "Learn WEB-related knowledge",
         "desc": "How to start, what you need to know, ... and everything that couldn't be put in a specific language course.",
         "icon": "<i class=\"bi bi-globe\"></i>"
       },
       {
         "tag": "html",
         "name": "HTML",
-        "title": "Learn HTML programming",
         "desc": "A complete summary of what you need to know in HTML to make a website.",
         "icon": "<i class=\"bi bi-globe\"></i>"
       },
       {
         "tag": "css",
         "name": "CSS",
-        "title": "Learn CSS programming",
         "desc": "What's CSS and how you could use it to make your website looks better.",
         "icon": "<i class=\"bi bi-globe\"></i>"
       },
       {
         "tag": "js",
         "name": "JavaScript",
-        "title": "Learn JavaScript programming",
         "desc": "A short introduction to JavaScript used to make interactive websites or required for Node.js/Typescript courses.",
         "icon": "<i class=\"bi bi-globe\"></i>"
       }
@@ -36,7 +32,6 @@
       {
         "tag": "cryptography",
         "name": "Cryptography",
-        "title": "Learn Cryptography",
         "desc": "An introduction to cryptography (Modular arithmetic, encryption and decryption of messages, RSA)",
         "icon": "<i class=\"bi bi-shield-lock\"></i>"
       }

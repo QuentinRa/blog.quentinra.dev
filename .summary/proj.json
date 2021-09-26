@@ -5,63 +5,54 @@
     {
       "tag": "hmi",
       "name": "HMI",
-      "title": "How to make Human-machine interfaces (HMI)",
       "desc": "Learn about what you must think before making an interface. Tools to make mock-ups are also listed here.",
       "icon": "<i class=\"bi bi-window\"></i>"
     },
     {
       "tag": "uml",
       "name": "UML",
-      "title": "Learn UML diagrams",
       "desc": "UML is a tool used to work on the conception part of a project.",
       "icon": "<i class=\"bi bi-map\"></i>"
     },
     {
       "tag": "make-a-project",
       "name": "Make a project",
-      "title": "How to make a project (theory)",
       "desc": "What's a project in real-life and how one should handle it.",
       "icon": "<i class=\"bi bi-archive\"></i>"
     },
     {
       "tag": "make-git-project",
       "name": "Make Git project",
-      "title": "How to make a Git project",
       "desc": "A gathering of everything related to Git projects and their management.",
       "icon": "<i class=\"bi bi-archive\"></i>"
     },
     {
       "tag": "agile-scrum",
       "name": "Agile scrum",
-      "title": "Learn Agile Scrum Methodology",
       "desc": "A project framework/methodology following the Agile mindset.",
       "icon": "<i class=\"bi bi-shield-lock\"></i>"
     },
     {
       "tag": "design-patterns",
       "name": "Design patterns",
-      "title": "Learn Design-patterns (GOF/GRASP), and Anti-patterns",
       "desc": "Because writing code can be easier, and you would rather want to learn the good practices beforehand.",
       "icon": null
     },
     {
       "tag": "tests",
       "name": "Tests",
-      "title": "Learn Tests, and Test-driven development",
       "desc": "What are tests and assertions? What's the Test-driven development and the Behavior-driven development?",
       "icon": "<i class=\"bi bi-cup\"></i>"
     },
     {
       "tag": "guidelines",
       "name": "Code guidelines",
-      "title": "Learn about code guidelines",
       "desc": "What are the best practices when writing code? KISS, YAGNI, SOLID, DRY, and a lot more!",
       "icon": "<i class=\"bi bi-award\"></i>"
     },
     {
       "tag": "methods",
       "name": "Methodologies",
-      "title": "Learn programming methodologies",
       "desc": "Learn more about methods like model-driven dev, data-driven...",
       "icon": "<i class=\"bi bi-emoji-dizzy\"></i>"
     }
