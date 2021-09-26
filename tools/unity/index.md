@@ -147,6 +147,8 @@ Note that you can use the 3 vertical dot to remove a component, or easily open a
 </div>
 </div>
 
+> In a Script, you can use `Debug.Log(something)` to print something in the editor, inside the console ![Unity console](images/console.png).
+
 <hr class="sl">
 
 ## User-friendly scripts
@@ -184,3 +186,27 @@ public int number = 0;
 [Space(value)]
 ```
 </details>
+
+<hr class="sr">
+
+## Game Objects in Scripts
+
+After you attached a script to an entity, you can get other components in a script with `GetComponent<TypeOfComponent>`
+
+![Inspector: Box colider](images/get_component.png)
+
+```cs
+// In Example.cs, I can get the BoxCollider with
+BoxCollider collider = GetComponent<BoxCollider>();
+```
+
+You can also access some objects such as Transform or the tag with attributes ("this" is unneeded, check the documentation to learn more)
+
+```cs
+// set scale, ...
+Transform _transform = this.transform;
+// associated gameObject
+GameObject o = this.gameObject;
+// it's tag
+string tag = this.gameObject.tag;
+```

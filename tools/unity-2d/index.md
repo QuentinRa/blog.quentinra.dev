@@ -14,32 +14,6 @@ Creating a layer allows you to put things on top of another. In Unity, you will 
 
 I'm using Rider to edit my C# files. I'm gone to `edit > preferences > external tools` and selected Rider as External tools' editor.
 
-Let's say you attached a C# script (add script, mono behavior, on a GameObject) to a GameObject, then you can get other properties (like the collider, ...) using
-
-```cs
-// example, get Rigidbody2D
-Rigidbody2D component = GetComponent<Rigidbody2D>();
-```
-
-Input
-
-```cs
-// -1 (left) 0 or 1 (right)
-// "Vertical" too
-float axis = Input.GetAxis("Horizontal");
-bool pressed = Input.GetKey(KeyCode.KeypadEnter);
-```
-
-Properties
-
-```cs
-// set scale, ...
-Transform _transform = this.transform;
-// associated gameObject
-GameObject o = this.gameObject;
-string tag = this.gameObject.tag;
-```
-
 <hr class="sr">
 
 ## Properties
@@ -49,6 +23,23 @@ The ``2D Collider`` is handling the collision for you, with any other GameObject
 The ``RigidComponent`` is something that you may use to add things like gravity and make your player fall... If you don't want your "player to fall" but you want a Rigid body, then some are setting gravity to 0.
 
 When you are moving a GameObject using your handwritten script, don't forget to use this `pos * Time.deltaTime * speed` (=use the deltaTime). It will make things smoother since your character will move at an almost constant speed.
+
+<hr class="sl">
+
+## Gameloop and input
+
+...
+
+Finally, you can handle the input with
+
+Input
+
+```cs
+// -1 (left) 0 or 1 (right)
+// "Vertical" too
+float axis = Input.GetAxis("Horizontal");
+bool pressed = Input.GetKey(KeyCode.KeypadEnter);
+```
 
 <hr class="sl">
 
