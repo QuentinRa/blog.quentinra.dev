@@ -1,31 +1,4 @@
-# Introduction
-
-This is not a course, simply a gathering of notes about unity by someone still learning it.
-
-Then what I did after that was playing with the samples and following tutorials like [RPG in 1 hour](https://learn.unity.com/project/creator-kit-rpg?uv=2020.3)
-
-Some tips I'm gathering [tips about unity here](more/tips.md), and [here are my notes about the TopDownEngine](more/tde.md) (a paid asset).
-
 <hr class="sr">
-
-## GitHub in Unity
-
-Unity projects are made of a lot of files, including big files too, so you can't commit them. GitHub allows you to use LFS to transfer big files, and you got a plugin making things simple in unity.
-
-* [Follow this tutorial](https://medium.com/@j0hnm4r5/git-with-unity-92ca7854ea3d) (external)
-* [GitHub for unity](https://unity.github.com/)
-* [GitHub for unity (Git)](https://github.com/github-for-unity/Unity/blob/master/docs/using/quick-guide.md)
-
-Here are my steps
-
-* download GitHub for unity (2nd link)
-* you got a ".package"
-* open your project, and drag and drop it inside **project window** (the file explorer, the bottom left panel)
-* then click on "import" on the panel that opened
-* then you can show git tab using Window > GitHub
-* *you may have to install [GitHub LFS](https://git-lfs.github.com/)*
-
-<hr class="sl">
 
 ## Starting in unity
 
