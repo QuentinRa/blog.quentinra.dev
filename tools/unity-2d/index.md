@@ -1,33 +1,3 @@
-<hr class="sr">
-
-## Starting in unity
-
-When you are opening a project, by default you got 4 windows.
-
-* **hierarchy window** (left): list of all **GameObjects**
-* **scene window** (middle): a scene is like a screen of your game (by default you are in the sample scene)
-  * you can click on the game tab to play your game (you can set the resolution here too)
-  * and go back to the scene tab to edit it
-* **inspector window** (right): you can edit the properties of the selected **GameObject**
-* **project window** (bottom): all of your project files
-
-The project files are usually split into folders, using these folders names
-
-* **Animations**, **Audio**, **Cutscene**
-* **Editor**, **Images**, **Materials**
-* **Plugins**
-* **Prefabs**: your prefabs, they are preconfigured objects like a player with a configuration. You can create one by dragging and dropping a GameObject in the project window
-* **Scenes**: your scenes (unity scene files, a screen of your game)
-* **Scripts**: your C# scripts (.cs)
-* **Settings**, **Shaders**
-
-Some shortcuts
-
-* `F`: focus a GameObject
-* ...
-
-<hr class="sl">
-
 ## Tilemap
 
 A tilemap is a map of tiles, and a tile is an image. You can have a Rectangular or an Isometric tilemap. This is a convenient way of creating 2D maps since

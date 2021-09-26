@@ -37,6 +37,8 @@ Unity is providing generic support for your games, sometimes you may want more. 
 </div>
 </div>
 
+In **Unity** everything, I mean everything (entities, light, images, etc.) is a **Game object**. I think that this is their own way of implementing  **architectural pattern** called **Entity-component-system** (ECS), but I'm unsure of it.
+
 <hr class="sl">
 
 ## Version-control in Unity
@@ -59,3 +61,35 @@ Unity projects are **made of a lot of files**, including **big files too**, so y
 * *you may have to install [GitHub LFS](https://git-lfs.github.com/)*
 * *you may have to install [Git](https://git-scm.com/downloads)* (👀)
 </details>
+
+<hr class="sr">
+
+## Interface
+
+When you are opening a project, by default you got 4 windows.
+
+* **hierarchy window** (left): list of all **GameObjects**
+* **scene window** (middle): a scene is like a screen of your game (by default you are in the sample scene)
+    * **Press run, to run your game**, you can make changes while the game is running, but they will be lost when the game is closed
+    * you can click on the "game tab" to see your game running <small>(you can set the resolution here too)</small>
+    * and go back to the "scene tab" to edit it (**don't forget to stop it**)
+* **inspector window** (right): you can edit the properties of the selected **GameObject**
+* **project window** (bottom): all of your project files
+
+> Some shortcuts
+> 
+> * <kbd>F</kbd> in the hierarchy window, to focus a GameObject in the scene window
+
+<hr class="sl">
+
+## Be good, use folders!
+
+The project files are usually split into folders, using these folders names
+
+* **Animations**, **Audio**, **Cutscene**
+* **Editor**, **Images**, **Materials**
+* **Plugins**
+* **Prefabs**: your prefabs, they are preconfigured objects like a player with a configuration. You can create one by dragging and dropping a GameObject in the project window
+* **Scenes**: your scenes (unity scene files, a screen of your game)
+* **Scripts**: your C# scripts (.cs)
+* **Settings**, **Shaders**
