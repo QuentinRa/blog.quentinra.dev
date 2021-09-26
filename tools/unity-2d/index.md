@@ -2,11 +2,6 @@
 
 This is not a course, simply a gathering of notes about unity by someone still learning it.
 
-Unity is a game engine that you can [download here](https://store.unity.com/fr#plans-individual), you may use the student plan (if you are a student) and you may also apply to [GitHub student pack](https://education.github.com/pack). You will then download
-
-* **unity hub**: software to manage unity versions and projects
-* **unity**: downloaded through unity hub, usually peoples are using LTS (Long-term support) versions of unity because they will still be maintained (bugs only) for 2 years.
-  
 Then what I did after that was playing with the samples and following tutorials like [RPG in 1 hour](https://learn.unity.com/project/creator-kit-rpg?uv=2020.3)
 
 Some tips I'm gathering [tips about unity here](more/tips.md), and [here are my notes about the TopDownEngine](more/tde.md) (a paid asset).

@@ -57,9 +57,9 @@
       "icon": "<i class=\"bi bi-gear\"></i>"
     },
     {
-      "tag": "unity-2d",
-      "name": "Unity 2D",
-      "desc": "A gathering of notes about unity, focused on 2D knowledge.",
+      "tag": "unity",
+      "name": "Unity",
+      "desc": "Beginners' notes of Unity.",
       "icon": "<i class=\"bi bi-journal-richtext\"></i>"
     }
   ]
