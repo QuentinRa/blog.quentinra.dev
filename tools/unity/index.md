@@ -146,3 +146,41 @@ Note that you can use the 3 vertical dot to remove a component, or easily open a
 > If you are unsure about what's a method/class/attribute, you may read the Java course or watch some videos, as this would be a good practice to write better code 🚀.
 </div>
 </div>
+
+<hr class="sl">
+
+## User-friendly scripts
+
+If you want, you may **add fields in the inspector** like you have for other sections, like "Number" here.
+
+![Create field inspector unity](images/fields.png)
+
+Either make the attribute **public** or add **[SerializeField]** before the attribute (recommended).
+
+```cs
+// Note: can be on two lines, or one
+[SerializeField] private int number = 0;
+// same as above :(, but this is "a side effect"
+public int number = 0;
+```
+
+<details class="details-border">
+<summary>Of course, you can make something look better by using ToolTips, Menus, Headers, Spaces, etc.</summary>
+
+```cs
+// you renamed something
+[SerializeField]
+[FormerlySerializedAs("OldName")] private int number = 0;
+
+// make a class available in "folder/.../name" in the
+// component selector
+[AddComponentMenu("folder/class")]
+// adding tooltips
+[Tooltip("blah blah blah")]
+// The following attributes will be inside this header
+[Header("a header")]
+// ...
+// Spacing
+[Space(value)]
+```
+</details>

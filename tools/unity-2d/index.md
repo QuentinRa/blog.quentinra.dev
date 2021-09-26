@@ -14,23 +14,6 @@ Creating a layer allows you to put things on top of another. In Unity, you will 
 
 I'm using Rider to edit my C# files. I'm gone to `edit > preferences > external tools` and selected Rider as External tools' editor.
 
-You can declare fields `SerializeField` so that you can modify this property inside Unity
-
-```cs
-// same as public
-[SerializeField] private bool test;
-// make a class available in "folder/.../name" in the
-// component selector
-[AddComponentMenu("folder/class")]
-// adding tooltips
-[Tooltip("blah blah blah")]
-// The following attributes will be inside this header
-[Header("a header")]
-// ...
-// Spacing
-[Space(value)]
-```
-
 Let's say you attached a C# script (add script, mono behavior, on a GameObject) to a GameObject, then you can get other properties (like the collider, ...) using
 
 ```cs
