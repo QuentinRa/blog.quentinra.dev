@@ -147,7 +147,8 @@ Note that you can use the 3 vertical dot to remove a component, or easily open a
 </div>
 </div>
 
-> In a Script, you can use `Debug.Log(something)` to print something in the editor, inside the console ![Unity console](images/console.png).
+> **Note**: In a Script, you can use `Debug.Log(something)` to print something in the editor, inside the console ![Unity console](images/console.png).<br>
+> **Note**: In C#, you can use `var` instead of the type of a variable when creating a variable with a value, to ask the compiler to infer a type. This is a kind of lazy-practice 🙄.
 
 <hr class="sl">
 
@@ -187,7 +188,7 @@ public int number = 0;
 ```
 </details>
 
-<details class="details-border" open>
+<details class="details-border">
 <summary>Note that you can easily link components using this</summary>
 <br>
 
@@ -224,6 +225,27 @@ You can also access some objects such as Transform or the tag with attributes ("
 Transform _transform = this.transform;
 // associated gameObject
 GameObject o = this.gameObject;
-// it's tag
+// it's tag (<=> this.tag or tag)
 string tag = this.gameObject.tag;
 ```
+
+<details class="details-e">
+<summary>Tags</summary>
+
+<div class="row">
+<div class="col-md-4">
+
+![Unity tags](images/tags.png)
+</div>
+<div class="col-md-8">
+
+You can give tags to components in the editor. This is useful to get a component, or a bunch of components.
+
+```cs
+GameObject[] objects = GameObject.FindGameObjectsWithTag("TagName");
+GameObject obj = GameObject.FindGameObjectWithTag("TagName");
+```
+</div>
+
+</div>
+</details>
