@@ -1,0 +1,63 @@
+prefabs
+=> use
+=> how
+=> ...
+=> double click to edit => all affected => blue => icon
+
+Material
+=> explorer
+=> create => material
+
+Game object => 3D => cube
+=> drop material
+
+--------------------------
+
+if (something) {
+	// ...
+}
+=>
+if (!something) return;
+
+---------------
+
+attributes/variables: ... _name, name
+methods: ... Name
+namespace: ...
+
+-------------------
+
+Use the position to set objects/camera, not your intuitive guess
+
+transform.Rotate(_rotatingAxis, Time.deltaTime * angle, Space.World);
+=> global y axis
+Rotate takes a Vector3 argument as an Euler angle. The second argument is the rotation axes, which can be set to local axis (Space.Self) or global axis (Space.World). The rotation is by the Euler amount.
+=> https://docs.unity3d.com/ScriptReference/Transform.Rotate.html
+
+=> light with the sun transparent (mesh)
+=> Destroy
+
+var position = transform.position;
+position = Vector3.MoveTowards(position, position-_step*Time.deltaTime, float.MaxValue);
+transform.position = position;
+
+GetComponent<Renderer>().enabled = true;
+
+StartCoroutine(WaitForSecondsAndShow());
+private IEnumerator WaitForSecondsAndShow()
+{
+	yield return new WaitForSeconds(timeBeforeAppearing);
+	GetComponent<Renderer>().enabled = true;
+	_stopMoving = false;
+}
+
+// Check collision
+if (!_targetBounds.Intersects(_myRenderer.bounds)) return;
+// near
+if (Vector3.Distance(_targetBounds.center,_myRenderer.bounds.center) <= 0.001f)
+// call method
+SendMessageUpwards("StopMoving");
+
+-----------
+
+https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types
