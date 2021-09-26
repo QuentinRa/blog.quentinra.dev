@@ -39,13 +39,13 @@ Unity is providing generic support for your games, sometimes you may want more. 
 </div>
 </div>
 
-In **Unity** everything, I mean everything (entities, light, images, etc.) is a **Game object**. I think that this is their own way of implementing  **architectural pattern** called **Entity-component-system** (ECS), but I'm unsure of it <small>(I'm still learning 😖)</small>.
+In **Unity** everything, I mean everything (entities, light, images, etc.) is a **Game object**. I think that this is their own way of implementing an **architectural pattern** called **Entity-component-system** (ECS), but I'm unsure of it <small>(I'm still learning 😖)</small>.
 
 <hr class="sl">
 
 ## Version-control in Unity
 
-If you are **unfamiliar** with Github/Git, you may read the [GIT course](../git/index.md). Unfortunately, for a non-programmer, this may be complex, my advice is to [create a repository](https://docs.github.com/en/get-started/quickstart/create-a-repo) (ex: on GitHub) and skip everything else.
+If you are **unfamiliar** with GitHub/Git, you may read the [GIT course](../git/index.md). Unfortunately, for a non-programmer, this may be complex, my advice is to [create a repository](https://docs.github.com/en/get-started/quickstart/create-a-repo) (ex: on GitHub) and continue reading while relying on Stack Overflow/...
 
 Unity projects are **made of a lot of files**, including **big files too**, so you can't commit (~=save) them. Fortunately, you to use Git LFS to transfer big files, and you got a plugin making things easy in unity.
 
@@ -103,7 +103,7 @@ The project files are usually split into folders, using these folders names
 
 ## Scripts
 
-Scripts are in **C#**, an old version of C#. From [this page about the C# compiler](https://docs.unity3d.com/2020.3/Documentation/Manual/CSharpCompiler.html), Unity 2020.3 (LTS) is using **C# 8.0**. In **2021.2+**, they are using **C# 9.0**, but of course we are not using a non-LTS version. You should also note that even if they are using the version 8.0/9.0, **every feature of C# is not available** (check on page above, for "Unsupported features").
+Scripts are in **C#**, an old version of C#. From [this page about the C# compiler](https://docs.unity3d.com/2020.3/Documentation/Manual/CSharpCompiler.html), Unity 2020.3 (LTS) is using **C# 8.0**. In **2021.2+**, they are using **C# 9.0**, but of course we are not using a non-LTS version. You should also note that even if they are using the version 8.0/9.0, **every feature of C# is not available** (check on the page above, for "Unsupported features").
 
 Right-click inside the **project window**, create a new Folder "Scripts" and a new script (ex: "Example.cs").
 
@@ -137,24 +137,24 @@ public class Example : MonoBehaviour
 
 After removing unused imports, I added the Awake function. This is a sample of the 3 functions you will use.
 
-These scripts can be added to components, by **clicking on a component**, then using **"add component"** in the inspector window. Search your scripts by the name (ex: "Example") and add it.
+These scripts can be added to components, by **clicking on a component**, then using **"add component"** in the inspector window. Search your scripts by the name (ex: "Example") and add them.
 
 ![add component](images/script2.png)
 
-Note that you can use the 3 vertical dot to remove a component, or easily open a script.
+Note that you can use the 3 vertical dots to remove a component, or easily open a script.
 
 > If you are unsure about what's a method/class/attribute, you may read the Java course or watch some videos, as this would be a good practice to write better code 🚀.
 </div>
 </div>
 
 > **Note**: In a Script, you can use `Debug.Log(something)` to print something in the editor, inside the console ![Unity console](images/console.png).<br>
-> **Note**: In C#, you can use `var` instead of the type of a variable when creating a variable with a value, to ask the compiler to infer a type. This is a kind of lazy-practice 🙄.
+> **Note**: In C#, you can use `var` instead of the type of a variable when creating a variable with a value, to ask the compiler to infer a type. This is a kind of lazy practice 🙄.
 
 <hr class="sl">
 
 ## User-friendly scripts
 
-If you want, you may **add fields in the inspector** like you have for other sections, like "Number" here.
+If you want, you may **add fields in the inspector** as you have for other sections, like "Number" here.
 
 ![Create field inspector unity](images/fields.png)
 
@@ -211,7 +211,7 @@ Note: you can use the small dot too ![Submit player serializable - dot](images/f
 
 After you attached a script to an entity, you can get other components in a script with `GetComponent<TypeOfComponent>`
 
-![Inspector: Box colider](images/get_component.png)
+![Inspector: Box collider](images/get_component.png)
 
 ```cs
 // In Example.cs, I can get the BoxCollider with
@@ -252,9 +252,9 @@ GameObject obj = GameObject.FindGameObjectWithTag("TagName");
 
 <hr class="sl">
 
-## Lifecycle, gameloop and Input
+## Lifecycle, game loop, and Input
 
-Usually, in any game, you got a the following lifecycle (`structure/cycle de vie`). First, the game is **initialized**, then the core of the game in run, called **game loop**
+Usually, in any game, you got the following lifecycle (`structure/cycle de vie`). First, the game is **initialized**, then the core of the game is run, called **game loop**
 
 * **input**: check what button/keys were pressed 
 * **update**: update the game, according to the state and the input
@@ -262,7 +262,7 @@ Usually, in any game, you got a the following lifecycle (`structure/cycle de vie
 
 And when the user closes the game, we are **disposing** of everything.
 
-> The value called **Frames Per Second** (FPS, `images par second`) is **the number of times in one second the gameloop is looping**. Unfortunately, we are not calling the gameloop with a constant time (ex: not every 1ms, etc.). This may be because the update was slow, the render was slow, or the they were too fast 😎. The side-effect is that you may see something teleport, or not moving smoothly. To prevent that from happening, you need to use the **delta time** (=time since when the last call) everytime you are moving something.
+> The value called **Frames Per Second** (FPS, `images par second`) is **the number of times in one second the game loop is looping**. Unfortunately, we are not calling the game loop with a constant time (ex: not every 1ms, etc.). This may be because the update was slow, the render was slow, or they were too fast 😎. The side effect is that you may see something teleport, or not moving smoothly. To prevent that from happening, you need to use the **delta time** (=time since when the last call) every time you are moving something.
 > 
 > In Unity, everywhere you were using speed to move something, simply multiplying by `Time.deltaTime` will make the speed constant (=a real speed per second) 
 > `pos.x * Time.deltaTime * speed`
@@ -294,5 +294,5 @@ bool pressed = Input.GetKey(KeyCode.KeypadEnter);
 ## Sources
 
 * [Game Development](https://gamedevelopment.tutsplus.com/) for everything related to the Game engine infrastructure and the Game Loop
-* Tutorials about the LibGDX and the lwjgl3 libraries, such as [LWJGL3 - Timing](https://github.com/SilverTiger/lwjgl3-tutorial/wiki/Timing) to understand the underlay of a Game
+* Tutorials about the libGDX and the lwjgl3 libraries, such as [LWJGL3 - Timing](https://github.com/SilverTiger/lwjgl3-tutorial/wiki/Timing) to understand the underlay of a Game
 * Teachings at the [ENSIIE](https://www.ensiie.fr/)
