@@ -14,22 +14,6 @@ Creating a layer allows you to put things on top of another. In Unity, you will 
 
 I'm using Rider to edit my C# files. I'm gone to `edit > preferences > external tools` and selected Rider as External tools' editor.
 
-Sample empty class
-
-```cs
-using UnityEngine;
-
-public class Test : MonoBehaviour
-{
-    // Start is called before the first frame update
-    private void Start() {}
-    // Awake is called when the script instance is being loaded.
-    private void Awake() {}
-    // Update is called once per frame
-    private void Update() {}
-}
-```
-
 You can declare fields `SerializeField` so that you can modify this property inside Unity
 
 ```cs

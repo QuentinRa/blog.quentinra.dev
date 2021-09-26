@@ -16,6 +16,8 @@
 * Done, wait a bit, you should receive a mail telling you **welcome** and **how to get started**
 </details>
 
+> ⚠️ A wise man/woman would regularly save his/her work ⚠️
+
 <hr class="sl">
 
 ## What's a Game engine?
@@ -37,7 +39,7 @@ Unity is providing generic support for your games, sometimes you may want more. 
 </div>
 </div>
 
-In **Unity** everything, I mean everything (entities, light, images, etc.) is a **Game object**. I think that this is their own way of implementing  **architectural pattern** called **Entity-component-system** (ECS), but I'm unsure of it.
+In **Unity** everything, I mean everything (entities, light, images, etc.) is a **Game object**. I think that this is their own way of implementing  **architectural pattern** called **Entity-component-system** (ECS), but I'm unsure of it <small>(I'm still learning 😖)</small>.
 
 <hr class="sl">
 
@@ -74,6 +76,9 @@ When you are opening a project, by default you got 4 windows.
     * you can click on the "game tab" to see your game running <small>(you can set the resolution here too)</small>
     * and go back to the "scene tab" to edit it (**don't forget to stop it**)
 * **inspector window** (right): you can edit the properties of the selected **GameObject**
+  * ex: click on a GameObject and change the position (Transform > Position)
+  * ex: click on a GameObject and change the size (Transform > Scale)
+  * ...
 * **project window** (bottom): all of your project files
 
 > Some shortcuts
@@ -93,3 +98,51 @@ The project files are usually split into folders, using these folders names
 * **Scenes**: your scenes (unity scene files, a screen of your game)
 * **Scripts**: your C# scripts (.cs)
 * **Settings**, **Shaders**
+
+<hr class="sr">
+
+## Scripts
+
+Scripts are in **C#**, an old version of C#. From [this page about the C# compiler](https://docs.unity3d.com/2020.3/Documentation/Manual/CSharpCompiler.html), Unity 2020.3 (LTS) is using **C# 8.0**. In **2021.2+**, they are using **C# 9.0**, but of course we are not using a non-LTS version. You should also note that even if they are using the version 8.0/9.0, **every feature of C# is not available** (check on page above, for "Unsupported features").
+
+Right-click inside the **project window**, create a new Folder "Scripts" and a new script (ex: "Example.cs").
+
+<div class="text-center">
+
+![Unity create script](images/script.png)
+</div>
+
+<div class="row">
+<div class="col-md-6">
+
+```cs
+using UnityEngine;
+
+public class Example : MonoBehaviour
+{
+    // Awake is called when the script instance is being loaded
+    private void Awake() { }
+
+    // Start is called before the first frame update
+    private void Start() { }
+
+    // Update is called once per frame
+    private void Update() { }
+}
+```
+</div>
+<div class="col-md-6">
+
+### Explanations
+
+After removing unused imports, I added the Awake function. This is a sample of the 3 functions you will use.
+
+These scripts can be added to components, by **clicking on a component**, then using **"add component"** in the inspector window. Search your scripts by the name (ex: "Example") and add it.
+
+![add component](images/script2.png)
+
+Note that you can use the 3 vertical dot to remove a component, or easily open a script.
+
+> If you are unsure about what's a method/class/attribute, you may read the Java course or watch some videos, as this would be a good practice to write better code 🚀.
+</div>
+</div>
