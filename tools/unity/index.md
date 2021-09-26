@@ -187,6 +187,23 @@ public int number = 0;
 ```
 </details>
 
+<details class="details-border" open>
+<summary>Note that you can easily link components using this</summary>
+<br>
+
+```cs
+[SerializeField] private GameObject player;
+```
+
+Giving you
+
+![Submit player serializable](images/player_s.png)
+
+And you simply have to drag-and-drop a game object (ex: a player) from the **Hierarchy window** to this field. This is useful when you don't want to do tiring things (ex: using tags/...) to get another GameObject.
+
+Note: you can use the small dot too ![Submit player serializable - dot](images/field_dot.png), to see a list of GameComponent this field can take.
+</details>
+
 <hr class="sr">
 
 ## Game Objects in Scripts
