@@ -39,7 +39,7 @@ The number of neighbors of
 
 * a is $\Gamma(a) = \Gamma(a)^+ + \Gamma(a)^- = 2 + 2 = 4$	
 * b is $\Gamma(b) = \Gamma(b)^+ + \Gamma(b)^- = 1 + 3 = 4$
-* c is $\Gamma(c) = \Gamma(c)^+ + \Gamma(c)^- = 1 + 1 = 3$
+* c is $\Gamma(c) = \Gamma(c)^+ + \Gamma(c)^- = 2 + 1 = 3$
 </blockquote>
 
 <hr class="sr">
