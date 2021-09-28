@@ -1,13 +1,13 @@
 # Web programming
 
-There is a lot of knowledge and things that would not be relevant if they were added in a language-specific (security, adaptability, tools, SEO, the HTTP protocol, the developers' tools, the FTP protocol, setting up a server, etc.). Web programming can be viewed from 3 perspectives
+There is a lot of knowledge and things that would not be relevant if they were added in a language-specific (security, adaptability, tools, SEO, the HTTP protocol, the developers' tools, the FTP protocol, setting up a server, etc.), hence they will be explained here. Web programming can be viewed from 3 perspectives
 
 * the client-side, **Front-End**: interface between the back-end and the client
   * **HTML**: the code of the page
   * **CSS**: the design/style, you may use CSS frameworks (ex: Bootstrap)
   * **JS**: adding scripts
 * the server-side, **Back-End**: how the request of the client is handled
-  * **PHP**: the code generating the HTML? Provide an API to your services? You may look for PHP Frameworks <small>(Symfony, Laravel, etc.)</small>
+  * **PHP**: the code generating the HTML or provide an API to your services? You may look for PHP Frameworks <small>(Symfony, Laravel, etc.)</small>
   * **SQL**: or NoSQL/..., the data of your application
   * **Node.js**: an alternative to PHP
 * **Full-Stack**: handling both Front and Back-End
@@ -34,7 +34,7 @@ For instance, `https://duckduckgo.com/` is the same as `https://duckduckgo.com/i
 </details>
 
 <details class="details-e" open>
-<summary>The HTTP protocol (or HTTPS for HTTP secure) API is allowing us to use</summary>
+<summary>The HTTP protocol (or HTTPS for HTTP Secure) API is allowing us to use</summary>
 
 * `GET URL`: get a resource from the SERVER  <small>(ex: see a page, make a search)</small>
 * `POST URL`: create a resource on the server <small>(ex: create an account)</small>
@@ -45,7 +45,7 @@ For instance, `https://duckduckgo.com/` is the same as `https://duckduckgo.com/i
 
 Why did we learn this? Well, you will use this a lot (HTML forms, WEB APIs, etc.). In HTML, you will make **forms** (search, create users, etc.). You **need to know whether they are GET** (search, ...) **or POST** (create user, update user 🙄, delete user 🙄, etc.).
 
-For Web APIs, this is usually written in the documentation, but you should be able to guess too. For instance, you got a route `/user/{id}` (ex:`/user/5`) and according to if you are using the method GET/PUT/DELETE/..., the server will expect data (or not) and do something different.
+For Web APIs, this is usually written in the documentation, but you should be able to guess too. For instance, you got a route `/user/{id}` (ex:`/user/5`), according to if you are using the method GET/PUT/DELETE/..., the server will expect data (or not) and do something different.
 
 <details class="details-e">
 <summary>Note about GET</summary>
