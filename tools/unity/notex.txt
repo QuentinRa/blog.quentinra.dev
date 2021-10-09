@@ -11,20 +11,6 @@ Material
 Game object => 3D => cube
 => drop material
 
---------------------------
-
-if (something) {
-	// ...
-}
-=>
-if (!something) return;
-
----------------
-
-attributes/variables: ... _name, name
-methods: ... Name
-namespace: ...
-
 -------------------
 
 Use the position to set objects/camera, not your intuitive guess

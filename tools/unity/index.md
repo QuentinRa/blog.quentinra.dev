@@ -291,6 +291,54 @@ bool pressed = Input.GetKey(KeyCode.KeypadEnter);
 
 <hr class="sr">
 
+## Ways to improve
+
+<details class="details-border">
+<summary>Use "if return"</summary>
+<br>
+
+```cs
+private void MyMethod()
+{
+	// [some code before] (optionnal)
+	if (something) {
+		// ...
+	}
+	// ...
+}
+// replace with
+private void MyMethod()
+{
+  if (!something) return;
+}
+```
+</details>
+
+<details class="details-border">
+<summary>Style</summary>
+<br>
+
+```cs
+// add a _ before the name (if private)
+private int _number;
+// otherwise
+[SerializeField] private int number;
+
+// notice, the name is starting by a Uppercase
+// => do not forget to add "private"
+private void MyMethod()
+{
+	// if there is an attribute with the name "name",
+	// add a _ before the variable name
+	var _name = 0;
+	// otherwise
+	var myVariable = 0;
+}
+```
+</details>
+
+<hr class="sl">
+
 ## Sources
 
 * [Game Development](https://gamedevelopment.tutsplus.com/) for everything related to the Game engine infrastructure and the Game Loop
