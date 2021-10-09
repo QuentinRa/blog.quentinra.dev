@@ -24,6 +24,7 @@ As the installation is hard on Windows, I gathered tutorials here to [install OC
 
 * [Interfaces](advanced/interfaces.md)
 * [Modules](advanced/modules.md)
+* [Functors](advanced/functors.md)
 
 <hr class="sl">
 
