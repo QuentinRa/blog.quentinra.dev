@@ -11,7 +11,8 @@ Git is a tool allowing you to easily work on a project. You will be able to go b
 This course will strongly refer to [GitHub](https://github.com/), but you may also check
 
 * [GitLab](https://about.gitlab.com/), the most well-know alternative to GitHub
-* [Gogs](https://gogs.io/), open-source, self-hosted
+* [Gogs](https://gogs.io/), open-source, self-hosted (or [Gitea](https://gitea.com/))
+* Bitbucket, etc.
 
 As a student, you may enjoy the benefits of the [GitHub student pack](https://education.github.com/pack).
 
