@@ -1,13 +1,5 @@
 {
   "info": [
-    "e1": [
-      {
-        "tag": "ocaml",
-        "name": "OCaml",
-        "desc": "OCaml may be used when you need to write a safe programs (as it is a functional language). It's quite easy to learn, almost no syntax.",
-        "icon": "<i class=\"bi bi-terminal-fill\"></i>"
-      }
-    ],
     {
       "tag": "php",
       "name": "PHP",
