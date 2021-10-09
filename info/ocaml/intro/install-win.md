@@ -2,7 +2,7 @@
 
 [Go back](..)
 
-This page is quite long, as I had a hard time, and as they were a lot of tutorials that finally worked for me, yet none of them were enough so that I could fully enjoy OCaml in my editor.
+This page is quite long, as I had a hard time, and as they were a lot of tutorials that finally worked for me, **yet none of them were enough so that I could fully enjoy OCaml in my editor** (so I'm making my own plugin for IntelliJ 🚀).
 
 <details class="details-e">
 <summary>You can use a WSL<br>👍: easy, you got a graphical version for emacs, sublime text, IntelliJ, etc.<br> 👎: not beautiful, a bit blurry</summary>
@@ -32,7 +32,7 @@ But this won't work. You need to install [XMing](http://www.straightrunning.com/
 
 The original tutorial is [made by my teacher is here](http://web4.ensiie.fr/~christophe.mouilleron/Teaching/IPF-S2/install.html), but just in case, here is a copy.
 
-1. Download [the zip ffor ocaml 4.08](https://chadok.info/~cmouille/ocaml_4-08.zip)
+1. Download [the zip for ocaml 4.08](https://chadok.info/~cmouille/ocaml_4-08.zip)
 2. extract in `C:/`,
 3. open a terminal
 4. write `C:\ocaml\bin\ocamlc.exe -v` (expected: ocaml version)
@@ -47,19 +47,72 @@ Then you can use it in any terminal, like in VSCode, using the tuareg mode plugi
 </details>
 
 <details class="details-e">
-<summary>OCaml in IntelliJ<br>
-👍: easy setup, basic autocompletion, some hints<br> 👎: a cheat 😶😬, npm required</summary>
+<summary>OCaml in IntelliJ (WSL)<br>👍: easy setup<br> 👎: no tuareg mode, the plugin do not have many features.</summary>
 
-Before explaining, this is a **cheat**, and if my teacher heard of this, I could bet that he would say that is an **aberration**. Basically, we are converting OCaml to JavaScript, and we are running the JavaScript.
+You can install [OCaml plugin on IntelliJ](https://github.com/giraud/reasonml-idea-plugin), and compile using a WSL.
 
-Everything is **hidden for you** 😶, so you will simply have to press run and see the result <small>(or you can show the new result each time you are changing a file if you want)</small>. This is a cheat because we are not even installing OCaml, but we are using some tool that do not seems to be related to OCaml (🙄 what?!).
+<details class="details-border">
+<summary>Install a WSL</summary>
 
-Well, my school project from last year is compiling without errors nor warnings, as it did when I used `ocamlc` to compile it, so it seems fine.
-
-I this wasn't enough to make you run away 👀, then the [tutorial for OCaml in IntelliJ/PHPStorm/... is here](https://github.com/memorize-code/jetbrains-ocaml-template).
+This is the official tutorial to [install a WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10), but if this looks complicated to you, here is what I did
+* open the Windows Store
+* enter "Debian" (or "Ubuntu")
+* install it
+* start it, once the initialization is done, you are good
 </details>
 
-> To best honest, you the online editor is enough for what we did during my first year. You can use the first and the second solution to make a proper install of OCaml, they are both good. As for the last solution, this is literally not a solution, but this is working an my school project is running as expected with it, so I'm planning to use it.
+To compile, simply click on "Terminal" (the Bar at the bottom, with Git/TODO/...). Click on the small caret-down icon and select Debian. Then, simply write your commands 🚀.
+
+```bash
+# install OCaml, once
+$ sudo apt-get install ocaml
+# check installed
+$ ocaml --version
+# compile
+$ ocamlc src/hello_word.ml 
+# run
+$ ./a.out
+Hello, World!
+```
+
+</details>
+
+<details class="details-e">
+<summary>OCaml in IntelliJ (Cygwin)<br>
+👍: easy setup, Makefile<br> 👎: same as WSL</summary>
+
+Download [Cygwin](https://cygwin.com/install.html).
+
+* Next
+* Install from internet, Next
+* Next, Next, Next
+* Pick a link in the list, Next
+* In view, select full
+
+Now, you have to pick the **commands** you want, which means replacing "Skip" (in the column "New") by a version of the command. You should use the search bar.
+I picked **make**, **ocaml**, opam (not required), **vim** (just in case), **wget** and **curl**. If you are planning to use opam, add `libclang` and `mingw[...]clang`. 
+
+* Then process with the installation
+
+Now, you should open a new terminal on Windows (ex: Powershell, cmd, ...) and write a command 
+
+```bash
+$ make -v
+# GNU Make 4.3
+# ...
+```
+
+You may have to restart your IDE (if you are using one), or you computer. If this is still not working, check that `C:/cygwin64/bin` is in the PATH.
+
+> Now you can write a Makefile in IntelliJ, and compile using Make.
+</details>
+
+<details class="details-e">
+<summary>OCaml in IntelliJ (tricks, node.js)<br>
+👍 and 👎: see the README.md</summary>
+
+The [tutorial for OCaml in IntelliJ/PHPStorm/... is here](https://github.com/memorize-code/jetbrains-ocaml-template).
+</details>
 
 <hr class="sl">
 
