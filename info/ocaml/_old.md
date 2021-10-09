@@ -58,23 +58,3 @@ And here some exercises
 
 * MCQ (not yet)
 * [Write some code](interm/exercises.md)
-
-<hr class="sr">
-
-## Advanced concepts
-
-None for now.
-
-* Modules
-* Read/Write
-
-You may want to look into the logic course to continue
-learning about the depth of this new paradigm.
-``Lisp`` and `Haskell` may also be good choices if
-you are eager to learn other functional languages.
-
-<hr class="sl">
-
-## Sources
-
-[References](ref.md)
