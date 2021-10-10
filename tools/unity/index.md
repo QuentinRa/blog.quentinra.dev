@@ -291,10 +291,50 @@ bool pressed = Input.GetKey(KeyCode.KeypadEnter);
 
 <hr class="sr">
 
+## UserInterface (UI)
+
+<details class="details-e">
+<summary>UI Builder (2020.3+, upcoming)</summary>
+
+**In 2021, you might look at the UI Builder**, to create user interfaces (UI), like in [this video](https://www.youtube.com/watch?v=NQYHIH0BJbs&ab_channel=CocoCode).
+</details>
+
+<details class="details-e">
+<summary>Canvas</summary>
+
+Create a **canvas** (UI > Canvas), this is a component used to store every UI components. You may switch to 2D to make your life easier.
+
+* load a background
+  * create a new ui > image
+  * anchor presets: alt + stretch x/y (bottom right corner)
+  * then drag and drop an image into the slot
+  * you may have to transform your image into a sprite
+  * [video here](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode)
+  * to make a **blur** background (like your game behind the UI) it's complicated
+* you create buttons with ui > buttons, then set the text, you may set an image as a background (you may look into [9patch](https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/9-patch), explained in the video too)
+* you create labels with ui > text, then set the text
+* you can use layouts (like in Java) but using anchors may be enough for a simple UI ([video here](https://www.youtube.com/watch?v=HwdweCX5aMI&ab_channel=GameDevGuide))
+* if you want some resizing (and you are not using anchors) then
+  * add a "canvas scaler" to your canvas
+  * set scale mode to "scale with the screen size"
+  * and give it a size
+
+You can make your hierarchy looks better using this [plugin](https://github.com/febucci/unitypackage-custom-hierarchy) following this [video](https://www.youtube.com/watch?v=Gma7IXPj4wI&ab_channel=CocoCode)
+
+You may create advanced buttons like in this [video](https://www.youtube.com/watch?v=cW-E4WEogzE&ab_channel=CocoCode)
+* create a button add a text and an image
+* add a horizontal layout component to the button
+* set the spacing, ...
+* then on the image, you can add a layout element to resize the image
+* you can add a "content size fitter" to make the button resize itself (set fit to preferred size)
+</details>
+
+<hr class="sl">
+
 ## Ways to improve
 
 <details class="details-border">
-<summary>Use "if return"</summary>
+<summary>Use if not then return</summary>
 <br>
 
 ```cs
@@ -304,22 +344,23 @@ private void MyMethod()
 	if (something) {
 		// ...
 	}
-	// ...
 }
 // replace with
 private void MyMethod()
 {
+  // [some code before] (optionnal)
   if (!something) return;
+  // ...
 }
 ```
 </details>
 
 <details class="details-border">
-<summary>Style</summary>
+<summary>Coding conventions</summary>
 <br>
 
 ```cs
-// add a _ before the name (if private)
+// add a _ before the name if private
 private int _number;
 // otherwise
 [SerializeField] private int number;
@@ -328,16 +369,13 @@ private int _number;
 // => do not forget to add "private"
 private void MyMethod()
 {
-	// if there is an attribute with the name "name",
-	// add a _ before the variable name
-	var _name = 0;
-	// otherwise
+	// local variable
 	var myVariable = 0;
 }
 ```
 </details>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Sources
 

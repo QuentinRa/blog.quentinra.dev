@@ -67,38 +67,6 @@ anim.Play("anim_name");
 
 This is a summary of this [great video](https://www.youtube.com/watch?v=Gf8LOFNnils&ab_channel=PandemoniumGames) if you can watch it, that's better.
 
-<hr class="sl">
-
-## UserInterface
-
-**In 2021, you might look at the UI Builder**, to create user interfaces (UI), like in [this video](https://www.youtube.com/watch?v=NQYHIH0BJbs&ab_channel=CocoCode).
-
-Otherwise, first, create a canvas (ui > canvas) for your UI. Then you can
-
-* load a background
-  * create a new ui > image
-  * anchor presets: alt + stretch x/y (bottom right corner)
-  * then drag and drop an image into the slot
-  * you may have to transform your image into a sprite
-  * [video here](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode)
-  * to make a **blur** background (like your game behind the UI) it's complicated 
-* you create buttons with ui > buttons, then set the text, you may set an image as a background (you may look into [9patch](https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/9-patch), explained in the video too)
-* you create labels with ui > text, then set the text
-* you can use layouts (like in Java) but using anchors may be enough for a simple UI ([video here](https://www.youtube.com/watch?v=HwdweCX5aMI&ab_channel=GameDevGuide))
-* if you want some resizing (and you are not using anchors) then 
-  * add a "canvas scaler" to your canvas
-  * set scale mode to "scale with the screen size"
-  * and give it a size
-
-You can make your hierarchy looks better using this [plugin](https://github.com/febucci/unitypackage-custom-hierarchy) following this [video](https://www.youtube.com/watch?v=Gma7IXPj4wI&ab_channel=CocoCode)
-
-You may create advanced buttons like in this [video](https://www.youtube.com/watch?v=cW-E4WEogzE&ab_channel=CocoCode)
-  * create a button add a text and an image
-  * add a horizontal layout component to the button
-  * set the spacing, ...
-  * then on the image, you can add a layout element to resize the image
-  * you can add a "content size fitter" to make the button resize itself (set fit to preferred size)
-
 <hr class="sr">
 
 ## Resources visited
