@@ -2,7 +2,7 @@
 
 [Go back](../index.md#advanced-concepts)
 
-You can give parameters to modules using functors. For instance, you could make a module implementing methods for a set, while not knowing if you are elements are int, strings, etc.
+You can give modules as parameters to other modules. These modules are called **functors**. For instance, you could make a module implementing methods for a set, while not knowing if you are elements are int, strings, etc. This module ("set") will take in argument another module ("element type") describing the type of an element, which you will use when coding your module.
 
 <ul class="nav nav-tabs">
     <li class="nav-item">
@@ -27,6 +27,7 @@ module type SetElementType = sig
 	type t
 end
 
+(* declaring a module describing a set *)
 module type AbstractSet = sig
 	(* types *)
 	type elt
@@ -38,10 +39,9 @@ module type AbstractSet = sig
 end
 
 (*
-As always, the set "GenericSet" will have to implements "AbstractSet" types
-and methods.
+As always, the set "GenericSet" will have to implements "AbstractSet" types and methods.
 
-We are adding an argument that will have to provided when creating the generic set: S.
+We are adding an argument that will have to be provided when creating the generic set: S.
 And we are saying that the type of elt (=type of an element) will be equals to the type
 stored in the type t of S.
 *)
@@ -51,7 +51,7 @@ module GenericSet (S: SetElementType) : AbstractSet with type elt = S.t
 <div class="tab-pane fade" id="ml">
 
 ```ocaml
-(* copy paste of the public parts aside the functions *)
+(* copy-paste of the public parts aside from the functions and the modules that are implemented *)
 module type SetElementType = sig
 	type t
 end
@@ -67,17 +67,18 @@ module type AbstractSet = sig
 end
 
 (*
-	You do not know the type of the elt, aside the fact
+	You do not know the type of the elt, aside from the fact
 	that the function s will give you the type.
 
-	Note: I commented out some part of the definition, because you can remove it inside the .ml
+	You could use this complete definition, but I'm opting for the shorter one
+	module GenericSet (S: SetElementType) : AbstractSet with type elt = S.t = struct
  *)
-module GenericSet (S: SetElementType) (*: AbstractSet with type elt = S.t*) = struct
-	(* the type elt is equals to the type in t *)
+module GenericSet (S: SetElementType) = struct
+	(* the type elt is equals to the type inside t *)
 	type elt = S.t
 
-	(* implement it like you want *)
-	type set = S.t list
+	(* implement it hovewer you want *)
+	type set = elt list
 	let add set e = e::set
 	let empty = []
     let first = List.hd
@@ -94,6 +95,7 @@ module Int_type = struct
 end
 
 module Int_Set = GenericSet(Int_type)
+(* you could do that too, no need for a ; if you have multiple fields *)
 module String_Set = GenericSet(struct type t = string end)
 
 (* list with five *)

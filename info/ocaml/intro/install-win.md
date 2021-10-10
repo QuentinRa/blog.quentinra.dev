@@ -23,7 +23,7 @@ emacs -c
 ./idea.sh -c
 ```
 
-But this won't work. You need to install [XMing](http://www.straightrunning.com/XmingNotes/), and [XMing fonts](http://www.straightrunning.com/XmingNotes/) first (links in "public domain"). Then, everytime you need to use `-c` (graphical version), start XMing.
+But this won't work. You need to install [XMing](http://www.straightrunning.com/XmingNotes/), and [XMing fonts](http://www.straightrunning.com/XmingNotes/) first (links in "public domain"). Then, every time you need to use `-c` (graphical version), start XMing.
 </details>
 
 <details class="details-e">
@@ -38,7 +38,7 @@ The original tutorial is [made by my teacher is here](http://web4.ensiie.fr/~chr
 4. write `C:\ocaml\bin\ocamlc.exe -v` (expected: ocaml version)
 5. write `PATH` in the Windows search bar (bottom left)
 6. "edit environment variables" then  "Environment variables" button
-8. In the first panel, click on `Path` then modify (right bellow)
+8. In the first panel, click on `Path` then modify (right below)
 10. add this entry: `C:\ocaml\bin\`
 11. open a **new** terminal and write `ocamlc -v`
 12. same output as `4.`
@@ -84,12 +84,12 @@ Hello, World!
 Download [Cygwin](https://cygwin.com/install.html).
 
 * Next
-* Install from internet, Next
+* Install from the internet, Next
 * Next, Next, Next
 * Pick a link in the list, Next
 * In view, select full
 
-Now, you have to pick the **commands** you want, which means replacing "Skip" (in the column "New") by a version of the command. You should use the search bar.
+Now, you have to pick the **commands** you want, which means replacing "Skip" (in the column "New") with a version of the command. You should use the search bar.
 I picked **make**, **ocaml**, opam (not required), **vim** (just in case), **wget** and **curl**. If you are planning to use opam, add `libclang` and `mingw[...]clang`. 
 
 * Then process with the installation
@@ -102,7 +102,7 @@ $ make -v
 # ...
 ```
 
-You may have to restart your IDE (if you are using one), or you computer. If this is still not working, check that `C:/cygwin64/bin` is in the PATH.
+You may have to restart your IDE (if you are using one), or your computer. If this is still not working, check that `C:/cygwin64/bin` is in the PATH.
 
 > Now you can write a Makefile in IntelliJ, and compile using Make.
 </details>

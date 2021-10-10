@@ -2,9 +2,9 @@
 
 [Go back](../index.md#advanced-concepts)
 
-We can group declarations of functions and new types in a container, called a **module**. This is a sort of class, if you are familiar with this notion. The declarations of functions/types inside the modules are described in **a module type**, and you module will take the type of a **module type**.
+We can group declarations of functions and new types in a container, called a **module**. This is a sort of class, if you are familiar with this notion. The declarations of functions/types inside the modules are described in **a module type**, and your module will take the type of a **module type**.
 
-If you are familiar with Java, a **module type** is an interface, and a **module** is a class implementing the interface. You can have many **modules** implementing one interface, but every module can only **implements one module type**.
+If you are familiar with Java, a **module type** is an interface, and a **module** is a class implementing the interface. You can have many **modules** implementing one interface, but every module can only **implement one module type**.
 
 <ul class="nav nav-tabs">
     <li class="nav-item">
@@ -33,7 +33,7 @@ module type IntSetListType = sig
     (* a set is a list of ints *)
 
     val add : set -> int -> set
-    (** [add s e]: take a set, a int, and return the set with the new element inside. *)
+    (** [add s e]: take a set, an int, and return the set with the new element inside. *)
 end
 
 (* The set is an implementation of IntSetListType with ordered and unique values *)
@@ -43,7 +43,7 @@ module OrderedUniqueIntSetList : IntSetListType
 <div class="tab-pane fade" id="ml">
 
 ```ocaml
-(* copy paste of the public parts aside the functions *)
+(* copy paste of the public parts aside the functions and the modules that are implemented *)
 module type IntSetListType = sig
     type set = int list
 
@@ -99,7 +99,7 @@ $ ./example_test
 </div>
 </div>
 
-**Unfortunately**, this code is not very good. The one using my interface know that I'm using lists, so I would not be able to change it. Here is a more generic version.
+**Unfortunately**, this code is not very good. The one using my interface knows that I'm using lists, so I would not be able to change it. Here is a more generic version.
 
 <ul class="nav nav-tabs">
     <li class="nav-item">
@@ -142,7 +142,7 @@ module IntSet : AbstractIntSet
 <div class="tab-pane fade" id="ml2">
 
 ```ocaml
-(* copy paste of the public parts aside the functions *)
+(* copy paste of the public parts aside the functions and the modules that are implemented *)
 module type AbstractIntSet = sig
 	type elt = int
     type set
@@ -152,7 +152,7 @@ module type AbstractIntSet = sig
 end
 
 (* in my implementation, called IntSet, I'm using a list,
- with ordered and unique value. Aside the one reading this code, no one else know.
+ with ordered and unique values. Aside from the one reading this code, no one else knows.
  *)
 module IntSet : AbstractIntSet = struct
 	type elt = int

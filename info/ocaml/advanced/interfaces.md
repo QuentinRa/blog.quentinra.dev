@@ -2,7 +2,7 @@
 
 [Go back](../index.md#advanced-concepts)
 
-OCaml is allowing programmers to define what parts of their code is available in others `.ml` files. **A file is made of two files**: `.ml` (private) and the `.mli` (public). If there is no `.mli`, then the content of the `.ml` is copied in the `.mli` **making everything public**.
+OCaml is allowing programmers to define what parts of their code are available in others `.ml` files. **A file is made of two files**: `.ml` (private) and the `.mli` (public). If there are no `.mli`, then the content of the `.ml` is copied in the `.mli` **making everything public**.
 
 If you don't want to make everything public, you need to **copy and paste** code from the `.ml` to the `.mli`. I know this is triggering that you need to copy and paste code, but my teacher told me that there is no other way. **Note that for functions, you are putting the declaration in the mli, not the whole function**.
 
@@ -30,14 +30,14 @@ type set = int list
 (* a set is a list of ints *)
 
 val add : set -> int -> set
-(** [add s e]: take a set, a int, and return the set with the new element inside.
+(** [add s e]: take a set, an int, and return the set with the new element inside.
  The set is ordered and the values are uniques. *)
 ```
 </div>
 <div class="tab-pane fade" id="ml">
 
 ```ocaml
-(* copy paste of the public parts aside the functions *)
+(* copy-paste of the public parts aside from the functions *)
 type set = int list
 
 (* this is private *)
@@ -94,12 +94,14 @@ $ ./example_test
 ## What is important to remember
 
 * **in the .mli** (public)
-  * declare type
+  * declare types
   * declare functions
+  * declare modules (next section)
 * **in the .ml** (private)
-  * redeclare type
-  * write the code for each function declared in the interface
-  * you can declare new types/functions
+  * declare types (again)
+  * implement every declared function
+  * implement every declared module (next section)
+  * you can declare private functions/types
 * **in another file**
   * Use `open File_name` to import `file_name.ml`
 * **compilation**
