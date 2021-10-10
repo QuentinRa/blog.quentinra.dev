@@ -103,7 +103,7 @@ The project files are usually split into folders, using these folders names
 
 ## Scripts
 
-Scripts are in **C#**, an old version of C#. From [this page about the C# compiler](https://docs.unity3d.com/2020.3/Documentation/Manual/CSharpCompiler.html), Unity 2020.3 (LTS) is using **C# 8.0**. In **2021.2+**, they are using **C# 9.0**, but of course we are not using a non-LTS version. You should also note that even if they are using the version 8.0/9.0, **every feature of C# is not available** (check on the page above, for "Unsupported features").
+Scripts are in **C#**, an old version of C#. From [this page about the C# compiler](https://docs.unity3d.com/2020.3/Documentation/Manual/CSharpCompiler.html), Unity 2020.3 (LTS) is using **C# 8.0**. In **2021.2+**, they are using **C# 9.0**, but of course, we are not using a non-LTS version. You should also note that even if they are using versions 8.0 or 9.0, **every feature of C# is not available** (check on the page above, for "Unsupported features").
 
 Right-click inside the **project window**, create a new Folder "Scripts" and a new script (ex: "Example.cs").
 
@@ -302,7 +302,7 @@ bool pressed = Input.GetKey(KeyCode.KeypadEnter);
 <details class="details-e">
 <summary>Canvas</summary>
 
-Create a **canvas** (UI > Canvas), this is a component used to store every UI components. You may switch to 2D to make your life easier.
+Create a **canvas** (UI > Canvas), this is a component used to store every UI components. You may switch to 2D, as it will make your life easier.
 
 * load a background
   * create a new ui > image
