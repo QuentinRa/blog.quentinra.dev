@@ -69,13 +69,13 @@ with In -> set
 
 <div class="mt-3">
 
-![BST add](images/bst/remove.png)
+![BST remove](images/bst/remove.png)
 </div>
 
 * We are removing **3**: we are taking as the new head **4** (the min in the right)
 * We are removing **4**: we are taking as the new head **5** (the min in the right)
-* We are removing **6**: we are taking "Empty" as the new head instead of 6 (as 6 does not have children)
-* We are removing **5**: we don't have elements in our right, the new tree is made of the left
+* We are removing **6**: we are replacing **6** with **"Empty"** as **6** does not have children
+* We are removing **5**: we don't have elements in our right, the new tree is made of the previous left
 
 **Same as add. Use an exception to exit faster, if the element is not inside** (and return the unchanged set).
 ```ocaml
@@ -93,4 +93,20 @@ with Not_found -> set
   * As **2** greater than **1**, we are checking **2**.
   * Result: IN. 
 
-![BST mem](images/bst/mem1.png)
+![BST mem](images/bst/mem.png)
+
+An element is **not in** if we can't check the next location we were supposed to check.
+
+<hr class="sr">
+
+## Minimum or Maximum?
+
+* The minimum is the bottom left value, the value
+that was lesser than every other value
+
+![BST Minimum](images/bst/min.png)
+
+* The minimum is the bottom right value, the value
+  that was greater than every other value
+
+![BST Maximum](images/bst/max.png)
