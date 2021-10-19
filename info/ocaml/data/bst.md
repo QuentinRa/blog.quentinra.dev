@@ -10,7 +10,7 @@ Binary search trees (`ABR, Arbre binaire de Recherche`) are tree with each node 
 * ❌: AVL trees are better
 * ❌: Unless storing the cardinal, calculating it takes too much time
 
-*The time was tested with a list of around 5 000 000 randomly generated values in [0;10000]*.
+*The time was tested with a sample of around 5 000 000 randomly generated values in [0;10000]*.
 
 ```none
 >>>>>>>>>> TIME FOR LISTS <<<<<<<<<<
@@ -18,7 +18,7 @@ Average time of add:                     0.000046
 Average time of remove:                  0.000047
 Average time for mem:                    0.002340
 Average time for get_min:                0.001870
-Average time for cardinal:               0.353290
+Average time for cardinal:               0.353290 (long)
 >>>>>>>>>> TIME FOR BST <<<<<<<<<<
 Average time of add:                     0.000002
 Average time of remove:                  0.000002
@@ -59,6 +59,27 @@ Simply apply this rule recursively until you can add your node.
 **You mustn't add an element already in the tree**. Use an exception to exit faster your add, and returning the set (unchanged).
 ```ocaml
 let add e set = try
-		real_add_function set
-	with In -> set
+	real_add_function set
+with In -> set
+```
+
+<hr class="sr">
+
+## Remove an element in a BST
+
+<div class="mt-3">
+
+![BST add](images/bst/remove.png)
+</div>
+
+* We are removing **3**: we are taking as the new head **4** (the min in the right)
+* We are removing **4**: we are taking as the new head **5** (the min in the right)
+* We are removing **6**: we are taking "Empty" as the new head instead of 6 (as 6 does not have children)
+* We are removing **5**: we don't have elements in our right, the new tree is made of the left
+
+**Same as add. Use an exception to exit faster, if the element is not inside** (and return the unchanged set).
+```ocaml
+let remove e set = try
+	real_remove_function e set
+with Not_found -> set
 ```
