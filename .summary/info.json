@@ -12,6 +12,14 @@
     ],
     "e2": [
       {
+        "tag": "sql",
+        "name": "SQL",
+        "desc": "Relational databases are using SQL (89 or 92) as their query language. Since 2011, many database are NoSQL databases.",
+        "icon": "<i class=\"bi bi-server\"></i>"
+      }
+    ],
+    "e3": [
+      {
         "tag": "web",
         "name": "WEB",
         "desc": "How to start, what you need to know, ... and everything that couldn't be put in a specific language course.",
@@ -36,7 +44,7 @@
         "icon": "<i class=\"bi bi-globe\"></i>"
       }
     ],
-    "e3": [
+    "e4": [
       {
         "tag": "cryptography",
         "name": "Cryptography",
