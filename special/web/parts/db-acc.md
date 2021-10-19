@@ -1,14 +1,8 @@
-# Create a user (ENSIIE, SQL)
+# Create a database account (ENSIIE/PostgreSQL)
 
 [Go back](..)
 
-> **Goals**
-> * create a database
-> * create a new user
-> * grant him permissions
-> * use this user to access the database, instead of your ENSIIE credentials
-> 
-> You could use the user "tpphp" (password tpphp) instead of doing this, but don't 🙄.
+The goal is to **create a database**, **a new user**, and **grant him permissions**, so that you use this user to access the database, instead of your ENSIIE credentials <small>(You could use the user "tpphp" (password tpphp) instead of doing this, but don't 🙄)</small>.
 
 Connect using SSH to the ENSIIE server. Write the first command to connect using your ENSIIE credentials.
 
