@@ -1,46 +1,11 @@
-# SQL
-
-This is a really big course, covering
-
-* an introduction to SQL, SQL89 and SQL92
-* some advanced concepts such as optimization, indexes, locks, ...
-* PGSQL or PLPGSQL
-* NoSQL or NotOnlySQL database with Cypher
-
 But this course won't handles ``relational modeling``
 as this is considered to be in the ``UML`` course.
-
-<hr class="sl">
-
-## Let's start from scratch
-
-You will need to install one of those in order to continue.
-If you want to do some tests, use <https://sqliteonline.com/>
-and connect either to ``maria`` or `postgre`. After 15 minutes
-of inactivity you will be disconnected so prefer
-installing something.
-
-I am personally using ``Wamp`` on `Windows`
-(once installed and started,
-open in a browser `http://localhost/phpmyadmin`,
-root and no password and there you go)
-or on a linux you can simply install ``maria`` or `postgre`
-and settings up things really quickly 
-(May [that](https://www.digitalocean.com/community/tutorials/how-to-install-mariadb-on-debian-10) help).
 
 <hr class="sr">
 
 ## Introduction to SQL
 
 The main concept of SQL is that we have
-
-* ``table`` : realisation of a class
-* ``tuples``  : realisation of an object
-* ``attributes``, `keys`, ...
-
-If you don't know theses terms, you might need to start with
-the course about ``relational modeling`` in the `UML` course but if you don't want
-to then [here](recap.md) is a recap.
 
 * [First query](syntax/first-query.md)
 * [Types in SQL](syntax/types.md)
