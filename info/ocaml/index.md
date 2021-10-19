@@ -28,6 +28,15 @@ As the installation is hard on Windows, I gathered tutorials here to [install OC
 
 <hr class="sl">
 
+## Data structures
+
+We are testing different ways of storing of big amount of data, along with the efficiency.
+
+* [Binary Search Trees](data/bst.md) (`ABR`)
+* [AVL trees](data/avl.md)
+
+<hr class="sr">
+
 ## Sources
 
 [References](ref.md)
