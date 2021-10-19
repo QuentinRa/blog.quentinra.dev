@@ -1,8 +1,16 @@
-# Create a user (ENSIIE, PGSQL)
+# Create a user (ENSIIE, SQL)
 
 [Go back](..)
 
-You will be creating a database, a new user, and granting him the permissions on the database. You should create a new database account, instead of tpphp our ENSIIE account. First, log in using your **ENSIIE** credentials to the ``pgsql`` host.  The command is
+> **Goals**
+> * create a database
+> * create a new user
+> * grant him permissions
+> * use this user to access the database, instead of your ENSIIE credentials
+> 
+> You could use the user "tpphp" (password tpphp) instead of doing this, but don't 🙄.
+
+Connect using SSH to the ENSIIE server. Write the first command to connect using your ENSIIE credentials.
 
 ```bash
 # your_login_ensiie = name if your email is name@ensiie.fr
@@ -19,6 +27,8 @@ Copy this code, BUT replace
 
 * ``username`` by the new user username (0/3)
 * ``a_password`` by the new user password (0/1)
+
+This will create a new user with a password, and grant him/her permissions on the database you created.
 
 ```sql
 -- create
