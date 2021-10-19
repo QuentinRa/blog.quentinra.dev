@@ -83,3 +83,14 @@ let remove e set = try
 	real_remove_function e set
 with Not_found -> set
 ```
+
+<hr class="sl">
+
+## Check if an element is in a BST
+
+* Is **2** inside? 
+  * As **2** is lesser than **3**, we are checking **1**. 
+  * As **2** greater than **1**, we are checking **2**.
+  * Result: IN. 
+
+![BST mem](images/bst/mem1.png)
