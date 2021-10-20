@@ -150,7 +150,7 @@ We can see it in our code by checking what we call the **Balance factor** (bf). 
 
 [comment]: <> (["4" ["2" ["1" ["0"] [Empty]] ["3"]] ["5"]])
 
-![AVL example 1 - Rotate right](images/avl/example/ex2_1.png)
+![AVL example 2 - Rotate right](images/avl/example/ex2_1.png)
 </div><div class="col-6">
 
 * $bf(tree) = depth(left) - depth(right) = 2 - 0 = 2$
@@ -163,6 +163,35 @@ We can see it in our code by checking what we call the **Balance factor** (bf). 
 [comment]: <> (["lh=2" ["ll=1" ["0"] ["Empty"]] ["h=4" ["lr=3"] ["r=5"]]])
 [comment]: <> (["2" ["1" ["0"] ["Empty"]] ["4" ["3"] ["5"]]])
 
-![AVL example 1 - Rotate right - init](images/avl/example/ex2_2.png)
-![AVL example 1 - Rotate right - do](images/avl/example/ex2_3.png)
-![AVL example 1 - Rotate right - clean](images/avl/example/ex2_4.png)
+![AVL example 2 - Rotate right - init](images/avl/example/ex2_2.png)
+![AVL example 2 - Rotate right - do](images/avl/example/ex2_3.png)
+![AVL example 2 - Rotate right - clean](images/avl/example/ex2_4.png)
+
+### Example 3 - Rotate Left Right
+
+<div class="row justify-content-center mx-0"><div class="col-4">
+
+[comment]: <> (["4" ["1" ["0"] ["3" ["2"] ["Empty"]]] ["5"]])
+
+![AVL example 3 - Rotate Left Right](images/avl/example/ex3_1.png)
+</div><div class="col-6">
+
+* $bf(tree) = depth(left) - depth(right) = 2 - 0 = 2$
+* The tree is **Left balanced**
+* $bf(right) = depth(r\\_left) - depth(r\\_right) = 0 - 1 = -1$
+* **Rotate Left Right**
+  * We will Rotate Left the left
+  * We will Rotate Right the tree
+</div></div>
+
+[comment]: <> (["h=4" ["lh=1" ["ll=0"] ["lrh=3" ["lrl=2"] ["lrr=Empty"]]] ["r=5"]])
+[comment]: <> (["h=4" ["lrh=3" ["lh=1" ["ll=0"] ["lrl=2"]] ["lrr=Empty"]] ["r=5"]])
+[comment]: <> (["lrh=3" ["lh=1" ["ll=0"] ["lrl=2"]] ["h=4" ["lrr=Empty"] ["r=5"]]])
+[comment]: <> (["3" ["1" ["0"] ["2"]] ["4" ["Empty"] ["5"]]])
+
+![AVL example 3 - Rotate Left Right - Begin](images/avl/example/ex3_2.png)
+**Left Rotation**
+![AVL example 3 - Rotate Left Right - Left Rotation](images/avl/example/ex3_3.png)
+**Right Rotation**
+![AVL example 3 - Rotate Left Right - Right Rotation](images/avl/example/ex3_4.png)
+![AVL example 3 - Rotate Left Right - Done](images/avl/example/ex3_5.png)
