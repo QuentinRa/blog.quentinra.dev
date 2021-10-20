@@ -48,6 +48,7 @@
   - [ ] https://babeljs.io/
   - tests: my steps to use it (js)
   - https://eslint.org/
+  - https://haml.info/
 - sql
   - https://sql.sh/
   - https://fxjollois.github.io/cours-sql/
@@ -59,6 +60,7 @@
 - cyber-security
   - https://github.com/OWASP/CheatSheetSeries
   - https://www.zaproxy.org/
+  - https://cyberwtf.com/
   - https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
   - https://github.com/OWASP/wstg
   - https://www.guru99.com/what-is-hacking-an-introduction.html
@@ -108,6 +110,10 @@
   - https://www.geeksforgeeks.org/apropos-command-in-linux-with-examples/
   - nmap google.fr -p 0-65535 -O -A (port fait quoi)
   - Zmap
+  - https://explainshell.com/
+  - https://github.com/hakluke/how-to-exit-vim
+  - https://github.com/caseykneale/VIMKiller
+  - https://mobaxterm.mobatek.net/
   - netstat -tulpn
   - sudo update-alternatives --config php
   - apt install zip unzip php7.1-zip php7.1-mbstring php7.1-curl php7.1-dom
@@ -116,6 +122,8 @@
 - cryptography
   - Solve modular equations
   - Solve modular systems
+  - https://fr.wikipedia.org/wiki/Portail:Cryptologie
+  - https://qvault.io/
 
 <hr>
 

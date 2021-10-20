@@ -14,6 +14,7 @@
   - https://chris.beams.io/posts/git-commit/#seven-rules
   - https://github.com/KnpLabs/php-github-api
   - https://docs.github.com/en/graphql/overview/explorer
+  - https://github.blog/changelog/2021-09-14-readmes-for-organization-profiles/
 - Unity
   - read links
   - watch videos
@@ -21,6 +22,8 @@
   - https://learn.unity.com/tutorial/unity-tips
   - https://web4.ensiie.fr/~bouyer/ipro.html
   - https://web4.ensiie.fr/~bouyer/jin.html
+  - https://assetstore.unity.com/browse/student-plan-pack
+  - https://led.itch.io/tilesetter
 - Vim
   - work on ref
   - work on config
