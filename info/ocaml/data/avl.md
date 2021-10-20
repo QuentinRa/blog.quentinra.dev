@@ -116,3 +116,34 @@ We can see it in our code by checking what we call the **Balance factor** (bf). 
   * **bf(left) = 1**: **Rotate Right** on left
   * **bf(left) = 0**: ❌ (not possible)
   * **bf(left) = -1**: **Rotate Left Right** on left
+
+<hr class="sr">
+
+## Examples
+
+### Example 1 - Rotate Left
+
+<div class="row justify-content-center mx-0"><div class="col-4">
+
+[comment]: <> (["1" ["0"] ["2" [Empty] ["3" [Empty] ["4"]]]])
+
+![AVL example 1](images/avl/example/ex1_1.png)
+</div><div class="col-6">
+
+* $bf(tree) = depth(left) - depth(right) = 0 - 2 = -2$
+* The tree is **Right balanced**
+* $bf(right) = depth(r_left) - depth(r_right) = 0 - 1 = -1$
+* **Rotate Left** on right
+</div></div>
+
+[comment]: <> (["1" ["0"] ["h=2" [l=Empty] ["rh=3" [rl=Empty] ["rr=4"]]]])
+[comment]: <> (["1" ["0"] ["rh=3" [h=2 [l=Empty] [rl=Empty]] ["rr=4"]]])
+[comment]: <> (["1" ["0"] ["3" ["2"] ["4"]]])
+
+![AVL example 1 - 2](images/avl/example/ex1_2.png)
+![AVL example 1 - 3](images/avl/example/ex1_3.png)
+![AVL example 1 - 4](images/avl/example/ex1_4.png)
+
+### Example 2 - ...
+
+[comment]: <> (["1" ["0"] ["3" ["2"] ["4" [Empty] ["5"]]]])
