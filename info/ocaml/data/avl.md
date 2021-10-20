@@ -130,6 +130,7 @@ We can see it in our code by checking what we call the **Balance factor** (bf). 
 ![AVL example 1 - Rotate left](images/avl/example/ex1_1.png)
 </div><div class="col-6">
 
+* Adding 5
 * $bf(tree) = depth(left) - depth(right) = 0 - 2 = -2$
 * The tree is **Right balanced**
 * $bf(right) = depth(r\\_left) - depth(r\\_right) = 0 - 1 = -1$
@@ -153,9 +154,10 @@ We can see it in our code by checking what we call the **Balance factor** (bf). 
 ![AVL example 2 - Rotate right](images/avl/example/ex2_1.png)
 </div><div class="col-6">
 
+* Adding 0
 * $bf(tree) = depth(left) - depth(right) = 2 - 0 = 2$
 * The tree is **Left balanced**
-* $bf(right) = depth(r\\_left) - depth(r\\_right) = 1 - 0 = 1$
+* $bf(left) = depth(l\\_left) - depth(l\\_right) = 1 - 0 = 1$
 * **Rotate Right**
 </div></div>
 
@@ -176,9 +178,10 @@ We can see it in our code by checking what we call the **Balance factor** (bf). 
 ![AVL example 3 - Rotate Left Right](images/avl/example/ex3_1.png)
 </div><div class="col-6">
 
+* Adding 2
 * $bf(tree) = depth(left) - depth(right) = 2 - 0 = 2$
 * The tree is **Left balanced**
-* $bf(right) = depth(r\\_left) - depth(r\\_right) = 0 - 1 = -1$
+* $bf(left) = depth(l\\_left) - depth(l\\_right) = 0 - 1 = -1$
 * **Rotate Left Right**
   * We will Rotate Left the left
   * We will Rotate Right the tree
@@ -195,3 +198,33 @@ We can see it in our code by checking what we call the **Balance factor** (bf). 
 **Right Rotation**
 ![AVL example 3 - Rotate Left Right - Right Rotation](images/avl/example/ex3_4.png)
 ![AVL example 3 - Rotate Left Right - Done](images/avl/example/ex3_5.png)
+
+### Example 4 - Rotate Right Left
+
+<div class="row justify-content-center mx-0"><div class="col-4">
+
+[comment]: <> (["1" ["0"] ["4" ["3" ["2"] ["Empty"]] ["5"] ]])
+
+![AVL example 4 - Rotate Right Left](images/avl/example/ex4_1.png)
+</div><div class="col-6">
+
+* Adding 2
+* $bf(tree) = depth(left) - depth(right) = 0 - 2 = -2$
+* The tree is **Right balanced**
+* $bf(right) = depth(r\\_left) - depth(r\\_right) = 1 - 0 = 1$
+* **Rotate Right Left**
+  * We will Rotate Right the right
+  * We will Rotate Left the tree
+</div></div>
+
+[comment]: <> (["h=1" ["l=0"] ["rh=4" ["rlh=3" ["rll=2"] ["rlr=Empty"]] ["rr=5"] ]])
+[comment]: <> (["h=1" ["l=0"] ["rlh=3" ["rll=2"] ["rh=4" ["rlr=Empty"] ["rr=5"]]]])
+[comment]: <> (["rlh=3" ["h=1" ["l=0"] ["rll=2"]] ["rh=4"["rlr=Empty"] ["rr=5"]]])
+[comment]: <> (["3" ["1" ["0"] ["2"]] ["4"["Empty"] ["5"]]])
+
+![AVL example 4 - Rotate Right Left - Begin](images/avl/example/ex4_2.png)
+**Right Rotation**
+![AVL example 4 - Rotate Right Left - Right Rotation](images/avl/example/ex4_4.png)
+**Left Rotation**
+![AVL example 4 - Rotate Right Left - Left Rotation](images/avl/example/ex4_3.png)
+![AVL example 4 - Rotate Right Left - Done](images/avl/example/ex4_5.png)
