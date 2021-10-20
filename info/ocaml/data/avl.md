@@ -66,7 +66,7 @@ Inserting in lr
 **Right Rotation**
 ![AVL Rotate Left-Right - End](images/avl/rotate_lr_3.png)
 
-**(3/4) Left-Right Rotation**: If we are adding a child in **lr**.
+**(3/4) Left-Right Rotation**: If we are adding a child in **lr** <small>(=lrh if lr is empty, otherwise either lrl or lrr)</small>.
 </div>
 
 <div class="p-3 border border-dark mt-3">
@@ -83,5 +83,36 @@ Inserting in rl
 **Left Rotation**
 ![AVL Rotate Right-Left - End](images/avl/rotate_rl_3.png)
 
-**(4/4) Right-Left Rotation**: If we are adding a child in **rl**.
+**(4/4) Right-Left Rotation**: If we are adding a child in **rl**
+<small>(=rlh if lr is empty, otherwise either rll or rlr)</small>.
 </div>
+
+<hr class="sl">
+
+## Balance your tree
+
+You know about the depth/height. Each node got this information.
+
+![Depth AVL](images/avl/rotate_depth_2.png)
+The tree was almost balanced, but not anymore after adding **4**
+![Depth AVL](images/avl/rotate_depth.png)
+
+Notes
+
+* We are allowing a difference of depth of $\pm 1$
+* The difference is now 2
+
+We can see it in our code by checking what we call the **Balance factor** (bf). This is the difference of depth between two branches (left minus right).
+
+* check in which side the tree in unbalanced
+  * **bf(tree) = 2**: then left balanced
+  * **bf(tree) = -2**: then right balanced
+  * **else** <small>(if 0, 1, or -1)</small>: then almost balanced or balanced (do nothing)
+* if right balanced, check the balance factor of the right
+  * **bf(right) = 1**: **Rotate Right Left** on right
+  * **bf(right) = 0**: ❌ (not possible)
+  * **bf(right) = -1**: **Rotate Left** on right
+* if left balanced, check the balance factor of the left
+  * **bf(left) = 1**: **Rotate Right** on left
+  * **bf(left) = 0**: ❌ (not possible)
+  * **bf(left) = -1**: **Rotate Left Right** on left
