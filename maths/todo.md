@@ -2,6 +2,7 @@
 
 - r
   - https://adv-r.hadley.nz/
+  - https://bootstrappers.umassmed.edu/bootstrappers-courses/index.html
   - http://pwer21c.github.io/
   - https://www.burns-stat.com/pages/Tutor/R_inferno.pdf
   - formulas

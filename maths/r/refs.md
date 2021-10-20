@@ -25,3 +25,4 @@
 * <https://fr.wikibooks.org/wiki/Programmer_en_R>
 * <https://www.math.univ-toulouse.fr/~xgendre/ens/l3sid/L3SID_SE_TP1.pdf>
 * <http://pwer21c.github.io/>
+* <https://bootstrappers.umassmed.edu/bootstrappers-courses/courses/rCourse/Additional_Resources/Updating_R.html>

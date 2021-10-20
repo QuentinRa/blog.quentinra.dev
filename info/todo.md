@@ -99,6 +99,7 @@
   - http://web4.ensiie.fr/~stefania.dumbrava/coursIBDPG.pdf
 - python
   - https://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html
+  - https://bootstrappers.umassmed.edu/bootstrappers-courses/index.html
   - http://forhan.maths.free.fr/SNT-accueil.php
   - https://programmingwithmosh.com/wp-content/uploads/2019/02/Python-Cheat-Sheet.pdf
 - API

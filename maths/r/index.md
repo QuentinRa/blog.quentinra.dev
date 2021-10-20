@@ -96,6 +96,27 @@ Here you can find some notes about functions that you might use (mainly in stati
 
 <hr class="sr">
 
+## Updating R
+
+* Windows
+
+```r
+if(!require(installr)) {
+  install.packages("installr"); 
+  require(installr)
+}
+updateR()
+```
+
+* Linux/MacOs
+
+```r
+list <- as.data.frame(installed.packages(.libPaths()[1]), stringsAsFactors = F)
+install.packages(list$Package)
+```
+
+<hr class="sl">
+
 ## Sources
 
 * « Take only pictures, leave only footprints. »
