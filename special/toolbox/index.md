@@ -14,6 +14,7 @@ A lot of notes about a lot of things that can't be added to another course. This
 6. [Saving, converting, and/or Archiving](website/archive.md)
 7. [Screen recorders](desktop/record.md)
 8. [Shorten URL](website/short-url.md)
+9. Password Manager: [BitWarden](https://bitwarden.com/) (Open Source Password Manager)
 
 <hr class="sl">
 
@@ -33,6 +34,7 @@ This section was supposed to be in the VideoGames section (which does not exist 
   * [flaticon](https://www.flaticon.com/)
 * wallpapers
   * [pixabay](https://pixabay.com/)
+  * [unsplash](https://unsplash.com/)
   * [Wallpaper Abyss](https://wall.alphacoders.com/) (according to the FAQ, you can't use the images for non-personal use unless the author agreed 😑)
 
 You got quite a long [list of websites here](https://hotpot.ai/free-game-assets) ([GitHub](https://github.com/HotpotDesign/Game-Assets-And-Resources)).
@@ -58,3 +60,13 @@ And
 * [About discord](discord/about.md): electron, ...
 * [BetterDiscord](discord/bd.md): plugins for discord
 * [Make a discord bot](discord/bot-js.md) (JavaScript)
+
+If you ever wanted a custom invitation to your discord for free, you may check out [dsc.gg](https://dsc.gg/).
+
+### Sentences
+
+* [Positive Thoughts Quotes](https://www.positivethoughtsquote.com/) (someone posted a link to [this page](https://www.positivethoughtsquote.com/2020/05/niggalations-best-quotes.html))
+
+### Other Tools
+
+* [Making trees](https://ironcreek.net/syntaxtree/)
