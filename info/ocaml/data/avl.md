@@ -143,3 +143,26 @@ We can see it in our code by checking what we call the **Balance factor** (bf). 
 ![AVL example 1 - Rotate left - init](images/avl/example/ex1_2.png)
 ![AVL example 1 - Rotate left - do](images/avl/example/ex1_3.png)
 ![AVL example 1 - Rotate left - clean](images/avl/example/ex1_4.png)
+
+### Example 2 - Rotate Right
+
+<div class="row justify-content-center mx-0"><div class="col-4">
+
+[comment]: <> (["4" ["2" ["1" ["0"] [Empty]] ["3"]] ["5"]])
+
+![AVL example 1 - Rotate right](images/avl/example/ex2_1.png)
+</div><div class="col-6">
+
+* $bf(tree) = depth(left) - depth(right) = 2 - 0 = 2$
+* The tree is **Left balanced**
+* $bf(right) = depth(r\\_left) - depth(r\\_right) = 1 - 0 = 1$
+* **Rotate Right**
+</div></div>
+
+[comment]: <> (["h=4" ["lh=2" ["ll=1" ["0"] [Empty]] ["lr=3"]] ["r=5"]])
+[comment]: <> (["lh=2" ["ll=1" ["0"] ["Empty"]] ["h=4" ["lr=3"] ["r=5"]]])
+[comment]: <> (["2" ["1" ["0"] ["Empty"]] ["4" ["3"] ["5"]]])
+
+![AVL example 1 - Rotate right - init](images/avl/example/ex2_2.png)
+![AVL example 1 - Rotate right - do](images/avl/example/ex2_3.png)
+![AVL example 1 - Rotate right - clean](images/avl/example/ex2_4.png)
