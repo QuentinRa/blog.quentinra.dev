@@ -109,13 +109,13 @@ We can see it in our code by checking what we call the **Balance factor** (bf). 
   * **bf(tree) = -2**: then right balanced
   * **else** <small>(if 0, 1, or -1)</small>: then almost balanced or balanced (do nothing)
 * if right balanced, check the balance factor of the right
-  * **bf(right) = 1**: **Rotate Right Left** on right
+  * **bf(right) = 1**: **Rotate Right Left**
   * **bf(right) = 0**: ❌ (not possible)
-  * **bf(right) = -1**: **Rotate Left** on right
+  * **bf(right) = -1**: **Rotate Left**
 * if left balanced, check the balance factor of the left
-  * **bf(left) = 1**: **Rotate Right** on left
+  * **bf(left) = 1**: **Rotate Right**
   * **bf(left) = 0**: ❌ (not possible)
-  * **bf(left) = -1**: **Rotate Left Right** on left
+  * **bf(left) = -1**: **Rotate Left Right**
 
 <hr class="sr">
 
@@ -125,25 +125,21 @@ We can see it in our code by checking what we call the **Balance factor** (bf). 
 
 <div class="row justify-content-center mx-0"><div class="col-4">
 
-[comment]: <> (["1" ["0"] ["2" [Empty] ["3" [Empty] ["4"]]]])
+[comment]: <> (["1" ["0"] ["3" ["2"] ["4" [Empty] ["5"]]]])
 
-![AVL example 1](images/avl/example/ex1_1.png)
+![AVL example 1 - Rotate left](images/avl/example/ex1_1.png)
 </div><div class="col-6">
 
 * $bf(tree) = depth(left) - depth(right) = 0 - 2 = -2$
 * The tree is **Right balanced**
-* $bf(right) = depth(r_left) - depth(r_right) = 0 - 1 = -1$
-* **Rotate Left** on right
+* $bf(right) = depth(r\\_left) - depth(r\\_right) = 0 - 1 = -1$
+* **Rotate Left**
 </div></div>
 
-[comment]: <> (["1" ["0"] ["h=2" [l=Empty] ["rh=3" [rl=Empty] ["rr=4"]]]])
-[comment]: <> (["1" ["0"] ["rh=3" [h=2 [l=Empty] [rl=Empty]] ["rr=4"]]])
-[comment]: <> (["1" ["0"] ["3" ["2"] ["4"]]])
+[comment]: <> (["h=1" ["l=0"] ["rh=3" ["rl=2"] ["rr=4" [Empty] ["5"]]]])
+[comment]: <> (["rh=3" ["h=1" ["l=0"] ["rl=2"]] ["rr=4" [Empty] ["5"]]])
+[comment]: <> (["3" ["1" ["0"] ["2"]] ["4" [Empty] ["5"]]])
 
-![AVL example 1 - 2](images/avl/example/ex1_2.png)
-![AVL example 1 - 3](images/avl/example/ex1_3.png)
-![AVL example 1 - 4](images/avl/example/ex1_4.png)
-
-### Example 2 - ...
-
-[comment]: <> (["1" ["0"] ["3" ["2"] ["4" [Empty] ["5"]]]])
+![AVL example 1 - Rotate left - init](images/avl/example/ex1_2.png)
+![AVL example 1 - Rotate left - do](images/avl/example/ex1_3.png)
+![AVL example 1 - Rotate left - clean](images/avl/example/ex1_4.png)
