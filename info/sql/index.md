@@ -33,12 +33,12 @@ In the second screen, you can see the usual representation of your data in a dat
 
 ✨ **Some vocabulary** ✨
  
-| Element | Name (UML) | Name (SQL) | Note |
+| Element | Name (UML) | Name (DBMS) | Note |
 |---------|---------|---------|---------|
 | Customer | **Class** | **Table** |  |
 | id, name, age, gender | **Attributes** | **Attributes** | <small>(=columns)</small> |
 | `(1, "Luna", 18, "Woman")`, ... | **Objects** | **Tuples**/Records | <small>(=rows)</small>. We are saying "tuples" in French too. |
-| id | **Identifiers** | **Keys** | An attribute taking **unique** and **non-nulls** values.<br>This is used to reference a tuple in another table.<br>Usually, we are using an attribute "autoincrement", <br>which is incrementing each time we are adding a row. <br> An autoincrement key is called **artificial key**. |
+| id | **Identifiers** <br> <small>(Keys, but this is a mistake)</small> | **Keys** | An attribute taking **unique** and **non-nulls** values.<br>This is used to reference a tuple in another table.<br>Usually, we are using an "autoincrement" key, <br>which is incrementing (+=1) each time we are adding a row. <br> An autoincrement key is called **artificial key**. |
 
 <hr class="sl">
 
