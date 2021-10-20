@@ -517,12 +517,14 @@ You will use these tags a lot too, but they are a little more complex than the p
 * [Code block and inline code](special/code.md) with code and pre
 * [Tables](special/tables.md) using table
 
-And, you may want to learn about
+<hr class="sl">
+
+## Special
 
 * [Meta tags](special/meta.md)
-* [Icons](special/icons.md)
+* [Icons](special/icons.md) 🚀
 
-<hr class="sl">
+<hr class="sr">
 
 ## Global attributes
 
@@ -537,7 +539,7 @@ This may be something that you won't need to know, at least until you aren't wri
 
 You got [the list of Global Attributes on W3Schools](https://www.w3schools.com/TAGs/ref_standardattributes.asp) with some examples.
 
-<hr class="sr">
+<hr class="sl">
 
 ## Forms
 
@@ -600,7 +602,7 @@ Finally, you add either a button submit (to send the form) and/or a button reset
 * [Notes about textarea](forms/textarea.md)
 * Check [w3schools](https://www.w3schools.com/tags/tag_select.asp) or [mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) to learn more about the select tag.
 
-<hr class="sl">
+<hr class="sr">
 
 ## Features of HTML5, 5.1, and 5.2
 
@@ -699,7 +701,7 @@ see [MDN doc](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog) 
 Support of [HTML 5.1](https://w3c.github.io/test-results/html51/implementation-report).
 Support of [HTML 5.2](https://w3c.github.io/test-results/html52/implementation-report). As for [HTML 5.3](https://w3c.github.io/test-results/html53/implementation-report) (in progress).
 
-<hr class="sr">
+<hr class="sl">
 
 ## Notes
 
@@ -716,7 +718,7 @@ Support of [HTML 5.2](https://w3c.github.io/test-results/html52/implementation-r
 <meta http-equiv="refresh" content="0; url=URL">
 ```
 
-<hr class="sl">
+<hr class="sr">
 
 ## External resources
 
@@ -735,7 +737,7 @@ CheatSheet
 * [Pravin Pawar's CheatSheet](https://ppawar.github.io/Spring2020/CSE102-S20/cheatsheets/CSE102-CheatSheetHTML.pdf)
 * [Jamie Spencer's CheatSheet](https://makeawebsitehub.com/wp-content/uploads/2015/06/HTML5-Mega-Cheat-Sheet-A4-Print-ready.pdf)
 
-<hr class="sr">
+<hr class="sl">
 
 ## Sources
 

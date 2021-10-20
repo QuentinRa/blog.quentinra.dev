@@ -1,13 +1,14 @@
 # Icons
 
-[Go back](../index.md#learn-the-tags-advanced)
+[Go back](../index.md#special)
 
 Did you ever dream of having icons on your website like a lot of websites do? Well, that's easy. The two most well-known libraries are **FontAwesome** and **Bootstrap**.
 
 * [Bootstrap Icons](https://icons.getbootstrap.com/)
   (open-source)
 * [fontawesome](https://fontawesome.com/v6.0/icons)
-  (open-source, some restriction like giving credits but (almost) no-one is doing it 🙄, even trough that was what the creator told me in an email)
+  (open-source, some restriction like giving credits but (almost) no-one is doing it 🙄, even trough the creator told me in an email that we had to)
+* [fontastic](https://fontastic.me/) (create your font)
 
 <hr class="sl">
 

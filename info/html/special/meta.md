@@ -1,6 +1,6 @@
 # Meta tags
 
-[Go back](../index.md#learn-the-tags-advanced)
+[Go back](../index.md#special)
 
 In the head, you can define the metadata of your website using the tag `meta`. A long time ago, this was used by search engines, but some of them aren't used anymore.
 
