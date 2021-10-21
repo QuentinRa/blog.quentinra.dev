@@ -40,7 +40,7 @@ In the second screen, you can see the usual representation of your data in a dat
 | Customer | **Class** | **Table** |  |
 | id, name, age, gender | **Attributes** | **Attributes** | <small>(=columns)</small> |
 | `(1, "Luna", 18, "Woman")`, ... | **Objects** | **Tuples**/Records | <small>(=rows)</small>. We are saying "tuples" in French too. |
-| id | **Identifiers** <br> <small>(Keys, but this is a mistake)</small> | **Keys** | An attribute taking **unique** and **non-nulls** values.<br>This is used to reference a tuple in another table.<br>Usually, we are using an "autoincrement" key, <br>which is incrementing (+=1) each time we are adding a row. <br> An autoincrement key is called **artificial key**. |
+| id | **Identifiers** <br> <small>(Keys, but this is a mistake)</small> | **Keys** | A **primary key** is a set of **one or more attributes**.<br>We can find a row in a table, given its values in the primary key.<br> The primary key as a whole is **unique** and **not-null**. <br>This is used to reference a tuple in another table (**Foreign key**).<br>Usually, we are using an **artificial key** <br>which is incrementing (+=1) each time we are adding a row.<br><small>Here, given "id=1", we know we are talking of "(1, Luna, ...)".</small> |
 
 > Note: I know that "customer" **should starts with an uppercase**, as every class should do. I should also **add something before id** <small>(as many class may have an attribute id, so I won't have to prefix it)</small>, and I should **add something before name** <small>(as name is a **reserved keyword** otherwise, I will have to escape it later)</small> (ex: c_id, c_name).
 
@@ -74,6 +74,12 @@ In the second screen, you can see the usual representation of your data in a dat
 > * DML (Data Manipulation): Select, Insert, Update, Delete
 > * DDL (Data Definition): Create, Alter, Drop
 > * DCL (Data control): Grant, Revoke
+
+> ☑✅ **Primary and Foreign keys** ☑✅
+> 
+> **YOU MUST KNOW THIS**. The primary key is explained in the previous section. This is usually one attribute called "id" which is an artificial key. A **Foreign key** is a set of attributes (=keys) which are taking values from another key.
+> 
+> For instance, a customer(c_id, c_name, ...) will make purchases(p_id, date, description, ...). You will add in the table purchases an attribute "c_id" (the name does not matters) taking values from the table "customer". You should see this as referencing a customer inside another table.
 
 <hr class="sr">
 
