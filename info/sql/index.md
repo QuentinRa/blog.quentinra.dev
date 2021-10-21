@@ -109,7 +109,7 @@ More specifically
 | Comments | `-- comment` (no inline comment) |
 | a % b | `MOD(a,b)` |
 | Reserved words | `Select date [...]` ❌ (date, name, ... are reserved)<br><code>Select \`date\` [...]</code> ✅ |
-| DAY/... from date | `EXTRACT(element from some_date)` <br>With element YEAR, MONTH, DAY, HOUR, ... |
+| convert/cast | <ul><li>Simple CAST<br>`CAST(value as new_type)`</li><li>Extract something from a date<br>`EXTRACT(element from some_date)` <br>With element YEAR, MONTH, DAY, HOUR, ...</li></ul> |
 
 | Notion (Strings) | In SQL |
 | ------ | ------- |
@@ -119,7 +119,8 @@ More specifically
 | Extract chars | Left(string, count) or RIGHT(string, count) |
 
 > **Note**: More functions at [W3Schools - SQL Server Functions](https://www.w3schools.com/SQL/sql_ref_sqlserver.asp).<br>
-> **Test a function?**: `SELECT EXTRACT(DAY from '2020-03-25')`
+> **Test a function?**: `SELECT EXTRACT(DAY from '2020-03-25')`<br>
+> **Test a function?**: `SELECT CAST(15 AS VARCHAR(11))`
 
 <details class="details-e">
 <summary>Types</summary>
@@ -162,6 +163,10 @@ SELECT DISTINCT name, gender FROM customer;
 SELECT name as 'Customer name', id FROM customer;
 -- escape name
 SELECT `name`, id FROM customer;
+
+-- a request that is returning one row+one column
+-- ALMOST NEVER USED
+SELECT (SELECT name FROM customer where id='1') FROM customer;
 ```
 </div><div>
 
@@ -263,9 +268,50 @@ A summary is needed 🧐, here you go ✨🚀.
 | --- | --- | --- | 
 | one attribute | one table | >, >=, <, <=, =, !=, <> |
 | multiples attributes (,) | multiples tables = **cartesian product**| IN, NOT IN a set |
-| all (*) | prefix a column | IS/IS NOT (NULL/...) |
-| no duplicates (DISTINCT) | | BETWEEN min and max |
+| all (*) | multiples tables = see JOINT (later) | IS/IS NOT (NULL/...) |
+| no duplicates (DISTINCT) | prefix a column | BETWEEN min and max |
 | rename (... as ...) | | LIKE 'pattern' | 
 | a value | | EXISTS/NOT EXISTS request |
 | a function | | IN/NOT IN request |
-| a function | | ALL/ANY |
+| another request | | ALL/ANY |
+
+<hr class="sl">
+
+## DML (Data Manipulation) - Utilities
+
+### LIMIT
+
+You will use LIMIT a lot, to skip the first **n** results, and optionally define the max number of results **k**. 
+
+```sql
+LIMIT n;
+LIMIT n, k;
+LIMIT 0, 1; -- up to one row
+LIMIT 1, 1; -- up to one row, skip the first one
+```
+
+### ORDER BY
+
+YOu can sort your results with ORDER BY, with ASC (**default**=optional, A -> Z) and DESC (Z -> A)
+
+```sql
+SELECT name from customer c ORDER BY name; -- (ASC) Henry, Luna
+SELECT name from customer c ORDER BY name ASC; -- Henry, Luna
+SELECT name from customer c ORDER BY name DESC; -- Luna, Henry
+SELECT name from customer c ORDER BY id DESC; -- Henry (2), Luna (1)
+```
+
+### UNION/INTERSECT/EXCEPT
+
+You can make the union, the intersection, or the difference of two requests' results, **but they must have the same number of attributes** in SELECT. We usually use `SELECT NULL` to fill missing arguments <small>(you could have used a number such as 20, if you wanted to fill the missing data of the second request with 20 instead of NULL)</small>.
+
+```sql
+SELECT name, age from customer c
+UNION -- you could use INTERSECT or EXCEPT 
+SELECT name, NULL from customer c
+-- 4 rows
+-- Luna (18), Henry (24)
+-- Luna (null), Henry (null)
+```
+
+> **Note**: ORDER, or LIMIT may only be applied on the whole request.
