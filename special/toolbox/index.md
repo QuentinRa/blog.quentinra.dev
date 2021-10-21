@@ -63,9 +63,13 @@ And
 
 If you ever wanted a custom invitation to your discord for free, you may check out [dsc.gg](https://dsc.gg/).
 
+<hr class="sr">
+
 ### Sentences
 
 * [Positive Thoughts Quotes](https://www.positivethoughtsquote.com/) (someone posted a link to [this page](https://www.positivethoughtsquote.com/2020/05/niggalations-best-quotes.html))
+
+<hr class="sl">
 
 ### Other Tools
 

@@ -10,7 +10,7 @@ Binary search trees (`ABR, Arbre binaire de Recherche`) are tree with each node 
 * ❌: AVL trees are better
 * ❌: Unless storing the cardinal, calculating it takes too much time
 
-*The time was tested with a sample of around 5 000 000 randomly generated values in [0;10000]*.
+*The time was tested with a sample of around 500 000 randomly generated values in [0;10000]*.
 
 ```none
 >>>>>>>>>> TIME FOR LISTS <<<<<<<<<<
