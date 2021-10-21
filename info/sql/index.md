@@ -256,3 +256,16 @@ SELECT name FROM customer c WHERE name >= ALL (SELECT NULL, NULL);
 SELECT name FROM customer c WHERE name >= ANY (SELECT NULL)
 ```
 </details>
+
+A summary is needed 🧐, here you go ✨🚀.
+
+| Select | From | Where |
+| --- | --- | --- | 
+| one attribute | one table | >, >=, <, <=, =, !=, <> |
+| multiples attributes (,) | multiples tables = **cartesian product**| IN, NOT IN a set |
+| all (*) | prefix a column | IS/IS NOT (NULL/...) |
+| no duplicates (DISTINCT) | | BETWEEN min and max |
+| rename (... as ...) | | LIKE 'pattern' | 
+| a value | | EXISTS/NOT EXISTS request |
+| a function | | IN/NOT IN request |
+| a function | | ALL/ANY |
