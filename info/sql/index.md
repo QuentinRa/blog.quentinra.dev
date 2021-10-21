@@ -42,6 +42,8 @@ In the second screen, you can see the usual representation of your data in a dat
 | `(1, "Luna", 18, "Woman")`, ... | **Objects** | **Tuples**/Records | <small>(=rows)</small>. We are saying "tuples" in French too. |
 | id | **Identifiers** <br> <small>(Keys, but this is a mistake)</small> | **Keys** | An attribute taking **unique** and **non-nulls** values.<br>This is used to reference a tuple in another table.<br>Usually, we are using an "autoincrement" key, <br>which is incrementing (+=1) each time we are adding a row. <br> An autoincrement key is called **artificial key**. |
 
+> Note: I know that "customer" **should starts with an uppercase**, as every class should do. I should also **add something before id** <small>(as many class may have an attribute id, so I won't have to prefix it)</small>, and I should **add something before name** <small>(as name is a **reserved keyword** otherwise, I will have to escape it later)</small> (ex: c_id, c_name).
+
 <hr class="sl">
 
 ## Zest of knowledge
@@ -112,3 +114,19 @@ More specifically
 
 > **Note**: More functions at [W3Schools - SQL Server Functions](https://www.w3schools.com/SQL/sql_ref_sqlserver.asp).<br>
 > **Test a function?**: `SELECT EXTRACT(DAY from '2020-03-25')`
+
+<details class="details-e">
+<summary>Types</summary>
+<br>
+
+| Notion | Type in SQL | Description |
+| ------ | ------- | ------- |
+| Char  | `varchar(1)` | A string of one character |
+| String  | `varchar(n)`<br>`varchar2(n)` (Oracle) | A string of n character |
+| String  | `text` | A string taking a non-determined number of characters |
+| Integer  | `int`, `int(n)`, `number` | An Integer. `int` is the same as `int(11)`. |
+| Boolean  | `int(1)` | An int, but taking only 0 or 1 |
+| Real  | `float` or `real` | To represents a price, you may use `decimal(n,p)`  |
+| date  | `date` | To represents a date |
+| Enumeration  | `enum('v1', 'v2', ...)` | An attribute/value that can take a fixed number of values. |
+</details>
