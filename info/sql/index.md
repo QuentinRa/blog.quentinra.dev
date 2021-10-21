@@ -136,3 +136,123 @@ More specifically
 | date  | `date` | To represents a date |
 | Enumeration  | `enum('v1', 'v2', ...)` | An attribute/value that can take a fixed number of values. |
 </details>
+
+<hr class="sl">
+
+## DML (Data Manipulation)
+
+You can see a DML request, as a request returning a table. You will define in **SELECT** the attributes of your table, in **FROM** where the tuples are selected, and in **WHERE** some restrictions on the tuples selected.
+
+<details class="details-e">
+<summary>Select</summary>
+
+<div class="row mx-0 row-cols-md-2"><div>
+
+If I'm using `Select name FROM customer`, I will get a table with **a column "name"** and the tuples will be the values for "name" in customer <small>(I should escape name, otherwise this may not work in every DBMS)</small>.
+
+```sql
+-- Select every attribute of a table
+SELECT * FROM customer;
+SELECT id, name, age, gender FROM customer;
+
+-- no duplicate results (each line once)
+SELECT DISTINCT name, gender FROM customer;
+
+-- name is renamed as 'Customer name'
+SELECT name as 'Customer name', id FROM customer;
+-- escape name
+SELECT `name`, id FROM customer;
+```
+</div><div>
+
+```sql
+SELECT id as 'c_id', `name`, age FROM customer;
+```
+
+Output: ![Select SQL output](images/dml/select.png)
+
+```sql
+SELECT DISTINCT 5 as 'GroupID', -- every row will have 5 
+                LEFT(name, 1) as 'Letter' -- first letter only
+FROM customer;
+```
+
+Output: ![Select SQL output](images/dml/select2.png)
+
+</div></div></details>
+
+<details class="details-e">
+<summary>From</summary>
+
+You are using columns in select. But they are coming from somewhere... That's where the `FROM` come in handy. Pick the table <small>(for more than one, see JOINT clauses)</small> you want to select columns (and their values) from.
+
+```sql
+-- the basic 🤓
+SELECT * FROM customer;
+-- prefix (used later WHEN NEEDED, not always)
+SELECT customer.* FROM customer;
+SELECT c.* FROM customer c;
+SELECT c.name FROM customer c;
+
+-- this is the cartesian product, you will get
+-- count_lines(c1) * count_lines(c2) records
+-- LEARN ABOUT JOINTURES LATER
+SELECT * FROM customer c1, customer c2;
+```
+</details>
+
+<details class="details-e">
+<summary>Where</summary>
+
+Most likely the most complex one. You can filter your result using this clause.
+
+```sql
+-- you can use > >= = <> (same as !=) < <=
+SELECT name FROM customer WHERE name <> 'Luna'; -- Henry
+SELECT name FROM customer WHERE name = 'Luna'; -- Luna
+
+-- && and || are working too, but we are using AND and OR
+Select name FROM customer WHERE name = 'Luna' OR gender <> 'Woman'; -- Both
+Select name FROM customer WHERE name = 'Luna' AND gender <> 'Woman'; -- None
+
+SELECT name FROM customer WHERE name IN ('Luna'); -- Luna
+SELECT name FROM customer WHERE name IN ('Luna', 'Henry'); -- Both
+SELECT name FROM customer WHERE name NOT IN ('Luna');
+
+SELECT name FROM customer WHERE name IS NULL; -- none
+SELECT name FROM customer WHERE name IS NOT NULL; -- Both
+
+-- age in [18,24], same as age >= 18 AND age <= 24
+SELECT name FROM customer WHERE age BETWEEN 18 AND 24;
+```
+
+You can use **Patterns** too, with `_` a unknown character, and `%` a string of unknown characters that may be empty.
+
+```sql
+-- any character followed by una
+SELECT name FROM customer WHERE name LIKE '_una';
+-- Ending with una
+SELECT name FROM customer WHERE name LIKE '%una';
+-- Starting with Lun
+SELECT name FROM customer WHERE name LIKE 'Lun%';
+```
+
+And you can used a nested request
+
+```sql
+-- you will use the variable c in the nested request.
+-- if the request return one row, then EXISTS is true
+SELECT name FROM customer c WHERE EXISTS (SELECT NULL);
+SELECT name FROM customer c WHERE NOT EXISTS (SELECT NULL);
+
+-- same as previously, but the set is generated with a request
+SELECT name FROM customer WHERE name IN (SELECT NULL)
+SELECT name FROM customer WHERE name NOT IN (SELECT NULL)
+
+-- the attribute is greater than every value returned in the nested request
+-- the nested request must return exactly one attribute
+SELECT name FROM customer c WHERE name >= ALL (SELECT NULL, NULL);
+-- at least one
+SELECT name FROM customer c WHERE name >= ANY (SELECT NULL)
+```
+</details>
