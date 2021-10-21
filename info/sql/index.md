@@ -72,3 +72,43 @@ In the second screen, you can see the usual representation of your data in a dat
 > * DML (Data Manipulation): Select, Insert, Update, Delete
 > * DDL (Data Definition): Create, Alter, Drop
 > * DCL (Data control): Grant, Revoke
+
+<hr class="sr">
+
+## SQL Syntax
+
+Before digging into the clauses, here is a list of everything that you will be supposed to known in the next sections.
+
+<div class="row mx-0"><div class="col-6">
+
+```sql
+SELECT * 
+FROM information_schema.TABLES T
+WHERE T.TABLE_SCHEMA = 'information_schema';
+```
+</div><div class="col-6 align-self-center">
+
+* **Clauses name are not case sensitive** <small>(uppercase, lowercase, mix of both)</small>
+* **Requests end with a ;** <small>(unless they are simples)</small>
+* You can put everything on the same line
+</div></div>
+
+More specifically
+
+| Notion (General) | In SQL |
+| ------ | ------- |
+| Assignment <small>(PL/SQL only)</small> | `a = 5`, or `à := 5` |
+| Comments | `-- comment` (no inline comment) |
+| a % b | `MOD(a,b)` |
+| Reserved words | `Select date [...]` ❌ (date, name, ... are reserved)<br><code>Select \`date\` [...]</code> ✅ |
+| DAY/... from date | `EXTRACT(element from some_date)` <br>With element YEAR, MONTH, DAY, HOUR, ... |
+
+| Notion (Strings) | In SQL |
+| ------ | ------- |
+| String | `'a'` or `"a"` (the latter may not work) |
+| String (escape) | ex: use a quote in a quote `'\''` |
+| Concatenate | <code>'a' \|\| 'b'</code> |
+| Extract chars | Left(string, count) or RIGHT(string, count) |
+
+> **Note**: More functions at [W3Schools - SQL Server Functions](https://www.w3schools.com/SQL/sql_ref_sqlserver.asp).<br>
+> **Test a function?**: `SELECT EXTRACT(DAY from '2020-03-25')`
