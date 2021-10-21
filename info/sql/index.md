@@ -15,6 +15,8 @@ Relational databases are provided by a **DataBase management system DBMS** (`Sys
 > 
 > **ENSIIE students** got a some notes [in the WEB section](../../special/web/parts/db-acc.md) to use our school database.
 
+> **SQL 89/92**: Both **SQL-89** and **SQL-92** are quite used. There is one major difference: what we call "JOIN clauses" are **not available in SQL-89**.
+
 <hr class="sl">
 
 ## Relational model
@@ -42,16 +44,31 @@ In the second screen, you can see the usual representation of your data in a dat
 
 <hr class="sl">
 
-## SQL queries
+## Zest of knowledge
 
-An SQL query looks like this
+> **Clause**
+> 
+> This is the keywords SELECT, FROM, ... that are making a SQL request.
 
-```sql
--- this is a comment
-SELECT * FROM a_table WHERE an_attribute = a_value;
-```
+> **Request**
+> 
+> This is a statement in which you are using clauses to do something on the database. **A request must ends with a `;`** <small>(unless this is a simple request)</small>.
 
-* **SELECT, FROM, WHERE** are called **clauses**/**instructions**. They are the instruction of your request.
-* **\*, a_table, ...** are called **arguments** or maybe options
+> **Schema**
+> 
+> To make it simple, this is a table storing data. Some are saying this is a library of databases. To call a table in a schema, do `schema.table`.
+> 
+> * For an user, this is the list of its tables, views, constraints
+> * For a database, this is the table **INFORMATION_SCHEMA** (TABLES, USERS, COLUMNS/DOMAINS, CHECK_CONSTRAINTS)
+> 
+> This word is also used for requests 🧐: this is the selected tables, and the attributes.
+> 
+> As the ENSIIE, we got one schema per user (ex: `prenom.nom`) in which we got another schema called `public`. You will store your databases in it.
 
-The whole request is, most of the time <small>(mandatory unless the request is simple)</small>, closed by a semi-colon `;`.
+> **DML, DDL, DCL**
+> 
+> We are using DML/DDL/DCL, to talk about a category of clauses. This is something quite used by pros 😎.
+> 
+> * DML (Data Manipulation): Select, Insert, Update, Delete
+> * DDL (Data Definition): Create, Alter, Drop
+> * DCL (Data control): Grant, Revoke
