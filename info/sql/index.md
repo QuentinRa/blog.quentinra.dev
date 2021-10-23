@@ -113,7 +113,7 @@ More specifically
 | Notion (General) | In SQL |
 | ------ | ------- |
 | Assignment <small>(PL/SQL only)</small> | `a = 5`, or `à := 5` |
-| Comments | `-- comment` (no inline comment) |
+| Comments | `-- comment` or `/* comment */` |
 | a % b | `MOD(a,b)` |
 | Reserved words | `Select date [...]` ❌ (date, name, ... are reserved)<br><code>Select \`date\` [...]</code> ✅ |
 | convert/cast | <ul><li>Simple CAST<br>`CAST(value as new_type)`</li><li>Extract something from a date<br>`EXTRACT(element from some_date)` <br>With element YEAR, MONTH, DAY, HOUR, ...</li></ul> |
@@ -179,24 +179,23 @@ SELECT age + 1 FROM customer; -- simple calculation
 </div><div>
 
 ```sql
+-- a bit complex as we are using both renaming
+-- and escape (name)
 SELECT id as 'c_id', `name`, age FROM customer;
 ```
 
 Output: ![Select SQL output](images/dml/select.png)
 
 ```sql
-SELECT DISTINCT 5 as 'GroupID', -- every row will have 5 
-                LEFT(name, 1) as 'Letter' -- first letter only
+-- a stupid request with
+-- 5 in the first column
+-- and the first letter of the name in the 2nd column
+SELECT DISTINCT 5 as 'GroupID',
+                LEFT(name, 1) as 'Letter'
 FROM customer;
 ```
 
 Output: ![Select SQL output](images/dml/select2.png)
-
-```sql
--- a request that is returning one row+one column
--- ALMOST NEVER USED
-SELECT (SELECT name FROM customer where id='1') FROM customer;
-```
 
 </div></div></details>
 
@@ -287,7 +286,13 @@ A summary is needed 🧐, here you go ✨🚀.
 | rename (... as ...) | | LIKE 'pattern' | 
 | a value | | EXISTS/NOT EXISTS <small>(request)</small> |
 | a function | | IN/NOT IN <small>(request)</small> |
-| another request | | ALL/ANY |
+| | | ALL/ANY |
+
+> SQL is pretty flexible (in a way). Every value can be replaced with a request returning one column and one row. A table, can be replaced with a request too. This example is simply showing that you can use requests almost everywhere 😎✨.
+> ```sql
+> -- dumb example
+> SELECT (SELECT 5) as 'five' FROM (SELECT 5) s WHERE 5 = (SELECT 5) 
+> ```
 
 <hr class="sl">
 
@@ -368,6 +373,38 @@ GROUP BY gender -- Woman(18), Not specified (24)
 -- same but we are ONLY KEEPING GROUPS for which the SUM is greater (or equals) than 20
 SELECT gender, SUM(age) FROM customer 
 GROUP BY gender HAVING SUM(age) >= 20 -- Not specified (24)
+
+-- better (' and ` are not needed if there is no spaces)
+SELECT gender, SUM(age) as 'Sum of age' FROM customer 
+GROUP BY gender HAVING `Sum of age` >= 20
+```
+</details>
+
+<details class="details-e">
+<summary>Conditional select</summary>
+
+```sql
+SELECT
+	-- concatenate Ms/Mr/none and the name
+    CONCAT((CASE gender
+                WHEN 'Woman' THEN 'Ms. '
+                WHEN 'Man' THEN 'Mr. '
+                ELSE '' -- default
+        END), name) as 'Name'
+FROM customer
+-- Ms. Luna
+-- Henry
+```
+
+Alternate form, useless here, but you can change the "=" with something else...
+
+```sql
+SELECT
+    CONCAT((CASE WHEN gender = 'Woman' THEN 'Ms. '
+                WHEN gender = 'Man' THEN 'Mr. '
+                ELSE '' -- default
+        END), name) as 'Name'
+FROM customer
 ```
 </details>
 
@@ -445,6 +482,14 @@ SELECT * FROM customer2 c FULL OUTER JOIN purchase p
 ```
 </details>
 
+> You may note that you can chain jointures, for instance
+> 
+> ```sql
+>  /* ... */ FROM A NATURAL JOIN B NATURAL JOIN B /* ... */
+> -- not tested recently 😖
+> FROM (TABLE_A NATURAL JOIN TABLE_B) b JOIN TABLE_C ON /* ... */
+> ```
+
 <hr class="sl">
 
 ## DDL (Data Definition)
@@ -466,4 +511,4 @@ SELECT * FROM customer2 c FULL OUTER JOIN purchase p
 French
 
 * <https://sql.sh/>
-* <https://fxjollois.github.io/cours-sql/>
+* <https://fxjollois.github.io/cours-sql/> (quite good 🤓🚀)
