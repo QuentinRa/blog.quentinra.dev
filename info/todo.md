@@ -50,8 +50,6 @@
   - https://eslint.org/
   - https://haml.info/
 - sql
-  - https://sql.sh/
-  - https://fxjollois.github.io/cours-sql/
   - https://github.com/RootSoft/Database-Naming-Convention
   - course normalization
   - https://github.com/omundy/learn-mysql-examples

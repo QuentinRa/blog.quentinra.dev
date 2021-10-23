@@ -48,13 +48,16 @@ In the second screen, you can see the usual representation of your data in a dat
 
 ## Zest of knowledge
 
+> **Request**
+>
+> This is a statement in which you are using clauses to do something on the database. **A request must ends with a `;`** <small>(unless this is a simple request)</small>.
+
 > **Clause**
 > 
-> This is the keywords SELECT, FROM, ... that are making a SQL request.
-
-> **Request**
+> This is the keywords SELECT, FROM, ... that are making a SQL request. Clauses are optional aside SELECT <small>(even FROM is optional, when selecting a value/function)</small>. The clauses 
 > 
-> This is a statement in which you are using clauses to do something on the database. **A request must ends with a `;`** <small>(unless this is a simple request)</small>.
+> * are declared in THIS order: `SELECT` > `FROM` > `WHERE` > `GROUP BY` > `HAVING` > `ORDER BY` > `LIMIT`
+> * executed in THIS order: `FROM` > `WHERE` > `GROUP BY` > `HAVING` > `SELECT` > `ORDER BY` > `LIMIT`
 
 > **Schema**
 > 
@@ -120,7 +123,8 @@ More specifically
 | String | `'a'` or `"a"` (the latter may not work) |
 | String (escape) | ex: use a quote in a quote `'\''` |
 | Concatenate | <code>'a' \|\| 'b'</code> |
-| Extract chars | Left(string, count) or RIGHT(string, count) |
+| Extract chars | `LEFT(string, count)` or `RIGHT(string, count)` |
+| Others | `STRCMP(str1, str2)`, `LENGTH('str')`, `LOWER('str')`, `UPPER('str')` |
 
 > **Note**: More functions at [W3Schools - SQL Server Functions](https://www.w3schools.com/SQL/sql_ref_sqlserver.asp).<br>
 > **Test a function?**: `SELECT EXTRACT(DAY from '2020-03-25')`<br>
@@ -149,7 +153,7 @@ More specifically
 You can see a DML request, as a request returning a table. You will define in **SELECT** the attributes of your table, in **FROM** where the tuples are selected, and in **WHERE** some restrictions on the tuples selected.
 
 <details class="details-e">
-<summary>Select</summary>
+<summary>Select (<code>Projection</code>)</summary>
 
 <div class="row mx-0 row-cols-md-2"><div>
 
@@ -168,9 +172,9 @@ SELECT name as 'Customer name', id FROM customer;
 -- escape name
 SELECT `name`, id FROM customer;
 
--- a request that is returning one row+one column
--- ALMOST NEVER USED
-SELECT (SELECT name FROM customer where id='1') FROM customer;
+SELECT 5 FROM customer; -- 5 in every row
+SELECT 5, name FROM customer; -- (5, name) in every row
+SELECT age + 1 FROM customer; -- simple calculation
 ```
 </div><div>
 
@@ -187,6 +191,12 @@ FROM customer;
 ```
 
 Output: ![Select SQL output](images/dml/select2.png)
+
+```sql
+-- a request that is returning one row+one column
+-- ALMOST NEVER USED
+SELECT (SELECT name FROM customer where id='1') FROM customer;
+```
 
 </div></div></details>
 
@@ -211,7 +221,7 @@ SELECT * FROM customer c1, customer c2;
 </details>
 
 <details class="details-e">
-<summary>Where</summary>
+<summary>Where (<code>Restriction</code>)</summary>
 
 Most likely the most complex one. You can filter your result using this clause.
 
@@ -235,7 +245,7 @@ SELECT name FROM customer WHERE name IS NOT NULL; -- Both
 SELECT name FROM customer WHERE age BETWEEN 18 AND 24;
 ```
 
-You can use **Patterns** too, with `_` a unknown character, and `%` a string of unknown characters that may be empty.
+You can use **Patterns** too, with `_` a unknown character, and `%` a string of unknown characters that may be empty. **BEWARE, patterns aren't case sensitive** (I is the same as i).
 
 ```sql
 -- any character followed by una
@@ -306,6 +316,9 @@ SELECT name FROM customer c ORDER BY name; -- (ASC) Henry, Luna
 SELECT name FROM customer c ORDER BY name ASC; -- Henry, Luna
 SELECT name FROM customer c ORDER BY name DESC; -- Luna, Henry
 SELECT name FROM customer c ORDER BY id DESC; -- Henry (2), Luna (1)
+-- THIS IS QUITE USEFUL when you selected a function (ex: AVG)
+-- and you want to order your results using this function results
+SELECT name FROM customer c ORDER BY 1 DESC; -- 1 = name = 1 rst param
 ```
 </details>
 
@@ -449,3 +462,8 @@ SELECT * FROM customer2 c FULL OUTER JOIN purchase p
 ## Sources
 
 * <https://en.wikipedia.org/wiki/Join_(SQL)>
+
+French
+
+* <https://sql.sh/>
+* <https://fxjollois.github.io/cours-sql/>
