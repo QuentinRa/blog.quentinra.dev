@@ -277,22 +277,25 @@ A summary is needed 🧐, here you go ✨🚀.
 
 <hr class="sl">
 
-## DML (Data Manipulation) - Utilities
+## DML (Data Manipulation) - Useful stuff
 
-### LIMIT
+<details class="details-e">
+<summary>LIMIT <i class="small">(Skip results, number of results)</i></summary>
 
-You will use LIMIT a lot, to skip the first **n** results, and optionally define the max number of results **k**. 
+You will use LIMIT a lot, to skip the first **n** results, and optionally define the max number of results **k**.
 
 ```sql
-LIMIT n;
-LIMIT n, k;
+LIMIT n; -- skip n results
+LIMIT n, k; -- skip n results, returns up to k rows
 LIMIT 0, 1; -- up to one row
 LIMIT 1, 1; -- up to one row, skip the first one
 ```
+</details>
 
-### ORDER BY
+<details class="details-e">
+<summary>ORDER BY <i class="small">(sort results)</i></summary>
 
-YOu can sort your results with ORDER BY, with ASC (**default**=optional, A -> Z) and DESC (Z -> A)
+You can sort your results with ORDER BY, with ASC (**default**=optional, A -> Z) and DESC (Z -> A)
 
 ```sql
 SELECT name from customer c ORDER BY name; -- (ASC) Henry, Luna
@@ -300,8 +303,10 @@ SELECT name from customer c ORDER BY name ASC; -- Henry, Luna
 SELECT name from customer c ORDER BY name DESC; -- Luna, Henry
 SELECT name from customer c ORDER BY id DESC; -- Henry (2), Luna (1)
 ```
+</details>
 
-### UNION/INTERSECT/EXCEPT
+<details class="details-e">
+<summary>UNION/INTERSECT/EXCEPT <i class="small">on two sets of results</i></summary>
 
 You can make the union, the intersection, or the difference of two requests' results, **but they must have the same number of attributes** in SELECT. We usually use `SELECT NULL` to fill missing arguments <small>(you could have used a number such as 20, if you wanted to fill the missing data of the second request with 20 instead of NULL)</small>.
 
@@ -315,3 +320,4 @@ SELECT name, NULL from customer c
 ```
 
 > **Note**: ORDER, or LIMIT may only be applied on the whole request.
+</details>
