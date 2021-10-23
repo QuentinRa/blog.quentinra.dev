@@ -364,7 +364,7 @@ The last time we tried to use two table, we got the cartesian product, **which i
 ![Table B](images/jointB.png)
 
 <details class="details-e">
-<summary>A NATURAL JOIN B <small>(>=SQL-92)</small></summary>
+<summary>NATURAL JOIN (<code>Jointure Naturelle</code>, <small>>=SQL-92</small>)</summary>
 
 Cartesian product based on the columns having the **same name**.
 
@@ -374,13 +374,13 @@ SELECT * FROM customer2 NATURAL JOIN purchase
 -- result: [(1, 'Luna', ..., '1', '2021-10-23'), (1, 'Luna', ..., '2', '2021-10-23')]
 ```
 
-> Beware of Natural Join! You may have missed the fact that you got the column 'name' (example) in both table making your request something different than what you were expecting.
+> **Beware of Natural Join!!!** You may have missed the fact that you got the column 'name' (example) in both tables making your result different from what you were expecting (it happens, really...).
 </details>
 
 <details class="details-e">
 <summary>NATURAL JOIN before? <small>(<=SQL-89)</small></summary>
 
-We can't use NATURAL JOIN, so we need to put the jointure in the where.
+We were making a cartesian product, before filtering the results in the where.
 
 ```sql
 SELECT * FROM customer2 c, purchase p
@@ -389,25 +389,30 @@ WHERE c.c_id = p.c_id
 </details>
 
 <details class="details-e">
-<summary>A JOIN B USING/ON</summary>
+<summary>JOIN on an attribute (<code>Jointure sur un attribut</code>)</summary>
 
-Cartesian product based on the columns that you will pick in ON/USING.
+This is called **Equi-join**. This idea is the same as for NATURAL JOIN, but you are picking the columns this time.
+
+* **Equi-join (attributes)**, <small>>=SQL-92</small>
 
 ```sql
 SELECT * FROM customer2 JOIN purchase USING (c_id)
 -- merge the column c_id available in both table
 -- sort of better NATURAL JOIN as you are picking columns
-
-SELECT c.*, p_id, `date` FROM customer2 c JOIN purchase p oN c.c_id = p.c_id
--- same result, we should use using in this case so this is more wordy than usual
+-- you may use ',' to add conditions in 'USING'
 ```
 
-* you may use `,` to add conditions in `USING`
-* you may use `AND` to add conditions in `JOIN ON`
+* **Equi-join (criteria)**
+
+```sql
+SELECT c.*, p_id, `date` FROM customer2 c JOIN purchase p ON c.c_id = p.c_id
+-- same result, we should use using in this case so this is more wordy than usual
+-- you may use 'AND' to add conditions in 'JOIN ON'
+```
 </details>
 
 <details class="details-e">
-<summary>OUTER JOIN</summary>
+<summary>OUTER JOIN (<code>Jointure externe</code>)</summary>
 
 Until now, the rows "(2, Henry, ...)" was never shown, because there was no "c_id=2" in purchases. You can make still show such records such OUTER JOIN.
 
@@ -422,3 +427,9 @@ SELECT * FROM customer2 c FULL OUTER JOIN purchase p
 	ON c.c_id = p.c_id -- either c.c_id or p.c_id can be null 
 ```
 </details>
+
+<hr class="sl">
+
+## Sources
+
+* <https://en.wikipedia.org/wiki/Join_(SQL)>

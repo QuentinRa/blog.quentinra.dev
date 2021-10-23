@@ -6,7 +6,7 @@ You can use other languages such as Python, Julia, OCaml, according to what you 
 
 <hr class="sl">
 
-# Introduction
+## Introduction
 
 The file extension is `.R` but we also write `.Rmd` files that are files with documentation and runnable R code. You may also directly run some code in the console.
 
