@@ -194,7 +194,7 @@ You are using columns in select. But they are coming from somewhere... That's wh
 ```sql
 -- the basic 🤓
 SELECT * FROM customer;
--- prefix (used later WHEN NEEDED, not always)
+-- prefix (used later, ONLY WHEN NEEDED)
 SELECT customer.* FROM customer;
 SELECT c.* FROM customer c;
 SELECT c.name FROM customer c;
@@ -267,12 +267,12 @@ A summary is needed 🧐, here you go ✨🚀.
 | Select | From | Where |
 | --- | --- | --- | 
 | one attribute | one table | >, >=, <, <=, =, !=, <> |
-| multiples attributes (,) | multiples tables = **cartesian product**| IN, NOT IN a set |
-| all (*) | multiples tables = see JOINT (later) | IS/IS NOT (NULL/...) |
+| multiples attributes (,) | multiples tables = **cartesian product**| IN, NOT IN <small>(set)</small> |
+| all (*) | multiples tables = see JOINT (later) | IS/IS NOT <small>(NULL/...)</small> |
 | no duplicates (DISTINCT) | prefix a column | BETWEEN min and max |
 | rename (... as ...) | | LIKE 'pattern' | 
-| a value | | EXISTS/NOT EXISTS request |
-| a function | | IN/NOT IN request |
+| a value | | EXISTS/NOT EXISTS <small>(request)</small> |
+| a function | | IN/NOT IN <small>(request)</small> |
 | another request | | ALL/ANY |
 
 <hr class="sl">
@@ -280,7 +280,7 @@ A summary is needed 🧐, here you go ✨🚀.
 ## DML (Data Manipulation) - Useful stuff
 
 <details class="details-e">
-<summary>LIMIT <i class="small">(Skip results, number of results)</i></summary>
+<summary>LIMIT <i class="small">(Skip results, limit the number of results)</i></summary>
 
 You will use LIMIT a lot, to skip the first **n** results, and optionally define the max number of results **k**.
 
@@ -298,10 +298,10 @@ LIMIT 1, 1; -- up to one row, skip the first one
 You can sort your results with ORDER BY, with ASC (**default**=optional, A -> Z) and DESC (Z -> A)
 
 ```sql
-SELECT name from customer c ORDER BY name; -- (ASC) Henry, Luna
-SELECT name from customer c ORDER BY name ASC; -- Henry, Luna
-SELECT name from customer c ORDER BY name DESC; -- Luna, Henry
-SELECT name from customer c ORDER BY id DESC; -- Henry (2), Luna (1)
+SELECT name FROM customer c ORDER BY name; -- (ASC) Henry, Luna
+SELECT name FROM customer c ORDER BY name ASC; -- Henry, Luna
+SELECT name FROM customer c ORDER BY name DESC; -- Luna, Henry
+SELECT name FROM customer c ORDER BY id DESC; -- Henry (2), Luna (1)
 ```
 </details>
 
@@ -311,9 +311,9 @@ SELECT name from customer c ORDER BY id DESC; -- Henry (2), Luna (1)
 You can make the union, the intersection, or the difference of two requests' results, **but they must have the same number of attributes** in SELECT. We usually use `SELECT NULL` to fill missing arguments <small>(you could have used a number such as 20, if you wanted to fill the missing data of the second request with 20 instead of NULL)</small>.
 
 ```sql
-SELECT name, age from customer c
+SELECT name, age FROM customer c
 UNION -- you could use INTERSECT or EXCEPT 
-SELECT name, NULL from customer c
+SELECT name, NULL FROM customer c;
 -- 4 rows
 -- Luna (18), Henry (24)
 -- Luna (null), Henry (null)
@@ -421,5 +421,4 @@ SELECT * FROM customer2 c RIGHT OUTER JOIN purchase p
 SELECT * FROM customer2 c FULL OUTER JOIN purchase p
 	ON c.c_id = p.c_id -- either c.c_id or p.c_id can be null 
 ```
-
 </details>
