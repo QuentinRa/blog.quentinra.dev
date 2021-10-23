@@ -321,3 +321,35 @@ SELECT name, NULL from customer c
 
 > **Note**: ORDER, or LIMIT may only be applied on the whole request.
 </details>
+
+<details class="details-e">
+<summary>Calculations <i class="small">(on all tuples, on groups of tuples)</i></summary>
+
+You can **only** make calculations in **SELECT** and in a new clause **HAVING** <small>(NOT in WHERE, you may use a nested request)</small>.
+
+```sql
+-- the most used ones
+SELECT SUM(age) FROM customer; -- 18+24
+SELECT AVG(age) FROM customer; -- (18+24)/2
+SELECT MIN(age) FROM customer; -- 18
+SELECT MAX(age) FROM customer; -- 24
+SELECT COUNT(*) FROM customer; -- 2 = number of tuples
+-- you may add DISTINCT (no duplicates)
+-- or ALL (default, allow duplicates)
+SELECT COUNT(DISTINCT age) FROM customer; -- 2 (no duplicates ages)
+SELECT SUM(DISTINCT age) FROM customer; -- 18 + 24
+SELECT SUM(ALL age) FROM customer; -- same as SUM(age)
+```
+
+The clause **HAVING** is only working on groups <small>(ex: group by name, and check the average age per records having this name)</small>. You may create groups of one elements by making groups on the primary key as the primary key is unique.
+
+```sql
+-- this request is returning the sum of age PER GENDER
+SELECT gender, SUM(age) FROM customer 
+GROUP BY gender -- Woman(18), Not specified (24)
+
+-- same but we are ONLY KEEPING GROUPS for which the SUM is greater (or equals) than 20
+SELECT gender, SUM(age) FROM customer 
+GROUP BY gender HAVING SUM(age) >= 20 -- Not specified (24)
+```
+</details>
