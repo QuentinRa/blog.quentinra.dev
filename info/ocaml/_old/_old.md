@@ -1,12 +1,11 @@
 # Basics concepts
 
-* you can write comments with `(* comment *)`
+```ocaml
+if (condition) then true else false
+for i = startval to endval do (* code *) done
+while condition do (* code *) done
+```
 
-The required elements to write some code are
-
-* [Types](basic/types.md)
-* [Operators](basic/operators.md)
-* [Structures](basic/structures.md)
 * [Variables](basic/variables.md)
 * [Functions](basic/functions.md)
 * [Recursion](basic/rec.md)
