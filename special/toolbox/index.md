@@ -67,7 +67,7 @@ If you ever wanted a custom invitation to your discord for free, you may check o
 
 ### Sentences
 
-* [Positive Thoughts Quotes](https://www.positivethoughtsquote.com/) (someone posted a link to [this page](https://www.positivethoughtsquote.com/2020/05/niggalations-best-quotes.html))
+* [Positive Thoughts Quotes](https://www.positivethoughtsquote.com/)
 
 <hr class="sl">
 

@@ -20,6 +20,53 @@ As the installation is hard on Windows, I gathered tutorials here to [install OC
 
 <hr class="sr">
 
+## Functional languages
+
+You must declare a variable with `let`. **You can't modify a variable, you will have to create a new one** (=**immutable** ✨).
+
+```ocaml
+let x = 5
+x = 6 (* NOT POSSIBLE *)
+let x = 6 (* delete the old x, create a new one *)
+```
+
+In functional language, there should be no side effect. Hence, **if you are not storing something in a variable**, **the compiler won't evaluate this line**, as you are not using the result of the function (=**purity** ✨). The variable starting by a `_` are not stored by the compiler, so you can print a value like this
+printing
+
+```ocaml
+Printf.printf "%s\n" "Hello, World" (* SKIPPED !!! *)
+
+(* all of them are equivalent *)
+let _ = Printf.printf "%s\n" "Hello, World"
+let _ = Format.printf "%s\n" "Hello, World"
+let _ = Format.printf "%s@." "Hello, World" (* my teacher and mine *)
+
+(* in OCaml, 1+2 = 3 parameters '1' '+' '2', so add parenthesis *)
+let _ = Format.printf "%d@." (1+2)
+(* same *)
+let _ = Format.printf "%d@." (-1)
+```
+
+To be accurate, in OCaml **everything is a value**, so you can give `-` (minus) to a function, as for OCaml `-` is a function taking two integers and returning one integer. A function taking another function is argument is called **higher-order function** ✨ (`fonction d'ordre supérieur`).
+
+> **CONSOLE ONLY**
+> * you need to add `;;` at the end of every expression
+> * you do not need to use printf/store expressions in variables
+
+<hr class="sl">
+
+## Basic concepts
+
+...
+
+<hr class="sr">
+
+## Intermediary concepts
+
+...
+
+<hr class="sl">
+
 ## Advanced concepts
 
 * [Interfaces](advanced/interfaces.md)
