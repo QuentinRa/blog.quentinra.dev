@@ -16,7 +16,7 @@
 * Done, wait a bit, you should receive a mail telling you **welcome** and **how to get started**
 </details>
 
-> ⚠️ A wise man/woman would regularly save his/her work ⚠️
+> ⚠️ A wise one would regularly save its work ⚠️
 
 <hr class="sl">
 

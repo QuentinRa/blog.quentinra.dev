@@ -38,7 +38,7 @@ In the second screen, you can see the usual representation of your data in a dat
 | Element | Name (UML) | Name (DBMS) | Note |
 |---------|---------|---------|---------|
 | Customer | **Class** | **Table** |  |
-| id, name, age, gender | **Attributes** | **Attributes** | <small>(=columns)</small> |
+| id, name, age, gender | **Attributes** | **Attributes**/<small>Variables</small> | <small>(=columns)</small> |
 | `(1, "Luna", 18, "Woman")`, ... | **Objects** | **Tuples**/Records | <small>(=rows)</small>. We are saying "tuples" in French too. |
 | id | **Identifiers** <br> <small>(Keys, but this is a mistake)</small> | **Keys** | A **primary key** is a set of **one or more attributes**.<br>We can find a row in a table, given its values in the primary key.<br> The primary key as a whole is **unique** and **not-null**. <br>This is used to reference a tuple in another table (**Foreign key**).<br>Usually, we are using an **artificial key** <br>which is incrementing (+=1) each time we are adding a row.<br><small>Here, given "id=1", we know we are talking of "(1, Luna, ...)".</small> |
 
@@ -79,7 +79,11 @@ In the second screen, you can see the usual representation of your data in a dat
 > 
 > **YOU MUST KNOW THIS**. The primary key is explained in the previous section. This is usually one attribute called "id" which is an artificial key. A **Foreign key** is a set of attributes (=keys) which are taking values from another key.
 > 
-> For instance, a customer(c_id, c_name, ...) will make purchases(p_id, date, description, ...). You will add in the table purchases an attribute "c_id" (the name does not matters) taking values from the table "customer". You should see this as referencing a customer inside another table.
+> For instance, a `customer(c_id, c_name, ...)` will `purchase(p_id, date, description, ...)` things. You will add in the table purchases an attribute `c_id` <small>(the name can be different)</small> taking values from the table "customer". You should see this as referencing a customer inside another table.
+
+> **Domain**
+> 
+> Well, for an attribute, this is the "range" of the values that your attribute can take. It's made of the **type**, but sometimes you will add **constraints**, and all of this is what we call domain.
 
 <hr class="sr">
 
@@ -282,13 +286,13 @@ A summary is needed 🧐, here you go ✨🚀.
 <details class="details-e">
 <summary>LIMIT <i class="small">(Skip results, limit the number of results)</i></summary>
 
-You will use LIMIT a lot, to skip the first **n** results, and optionally define the max number of results **k**.
+You will use LIMIT a lot, to skip the first **k** results (optionally), and define the max number of results **n**.
 
 ```sql
-LIMIT n; -- skip n results
-LIMIT n, k; -- skip n results, returns up to k rows
-LIMIT 0, 1; -- up to one row
-LIMIT 1, 1; -- up to one row, skip the first one
+LIMIT n; -- return up to n records
+LIMIT k, n; -- skip k records, returns up to n records
+LIMIT 0, 1; -- up to one record
+LIMIT 1, 1; -- up to one record, skip the first record
 ```
 </details>
 
@@ -427,6 +431,18 @@ SELECT * FROM customer2 c FULL OUTER JOIN purchase p
 	ON c.c_id = p.c_id -- either c.c_id or p.c_id can be null 
 ```
 </details>
+
+<hr class="sl">
+
+## DDL (Data Definition)
+
+...
+
+<hr class="sr">
+
+## DCL (Data control)
+
+...
 
 <hr class="sl">
 
