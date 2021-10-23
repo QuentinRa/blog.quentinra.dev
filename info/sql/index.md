@@ -353,3 +353,73 @@ SELECT gender, SUM(age) FROM customer
 GROUP BY gender HAVING SUM(age) >= 20 -- Not specified (24)
 ```
 </details>
+
+<hr class="sr">
+
+## DML (Data Manipulation) - Joint clause
+
+The last time we tried to use two table, we got the cartesian product, **which is what you will get if the joint clause fails**. This clause will try to merge the tables in the FROM. Given the two following tables Customer2 ("A") and Purchase ("B")
+
+![Table A](images/jointA.png)
+![Table B](images/jointB.png)
+
+<details class="details-e">
+<summary>A NATURAL JOIN B <small>(>=SQL-92)</small></summary>
+
+Cartesian product based on the columns having the **same name**.
+
+```sql
+-- name of every customer that made of purchase
+SELECT * FROM customer2 NATURAL JOIN purchase
+-- result: [(1, 'Luna', ..., '1', '2021-10-23'), (1, 'Luna', ..., '2', '2021-10-23')]
+```
+
+> Beware of Natural Join! You may have missed the fact that you got the column 'name' (example) in both table making your request something different than what you were expecting.
+</details>
+
+<details class="details-e">
+<summary>NATURAL JOIN before? <small>(<=SQL-89)</small></summary>
+
+We can't use NATURAL JOIN, so we need to put the jointure in the where.
+
+```sql
+SELECT * FROM customer2 c, purchase p
+WHERE c.c_id = p.c_id
+```
+</details>
+
+<details class="details-e">
+<summary>A JOIN B USING/ON</summary>
+
+Cartesian product based on the columns that you will pick in ON/USING.
+
+```sql
+SELECT * FROM customer2 JOIN purchase USING (c_id)
+-- merge the column c_id available in both table
+-- sort of better NATURAL JOIN as you are picking columns
+
+SELECT c.*, p_id, `date` FROM customer2 c JOIN purchase p oN c.c_id = p.c_id
+-- same result, we should use using in this case so this is more wordy than usual
+```
+
+* you may use `,` to add conditions in `USING`
+* you may use `AND` to add conditions in `JOIN ON`
+</details>
+
+<details class="details-e">
+<summary>OUTER JOIN</summary>
+
+Until now, the rows "(2, Henry, ...)" was never shown, because there was no "c_id=2" in purchases. You can make still show such records such OUTER JOIN.
+
+* **LEFT OUTER JOIN**
+
+```sql
+SELECT * FROM customer2 c LEFT OUTER JOIN purchase p
+	ON c.c_id = p.c_id -- p.c_id can be null 
+SELECT * FROM customer2 c RIGHT OUTER JOIN purchase p
+	ON c.c_id = p.c_id -- c.c_id can be null 
+SELECT * FROM customer2 c FULL OUTER JOIN purchase p
+	ON c.c_id = p.c_id -- either c.c_id or p.c_id can be null 
+```
+
+</details>
