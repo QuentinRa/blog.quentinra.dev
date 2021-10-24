@@ -1,3 +1,10 @@
+  - https://gitlab.com/Nightmare_82/charactercreator
+  - https://learn.unity.com/tutorial/unity-tips
+  - https://web4.ensiie.fr/~bouyer/ipro.html
+  - https://web4.ensiie.fr/~bouyer/jin.html
+  - https://assetstore.unity.com/browse/student-plan-pack
+  - https://led.itch.io/tilesetter
+
 ----- big one
 https://www.youtube.com/watch?v=pwZpJzpE2lQ
 https://www.youtube.com/watch?v=b8YUfee_pzc&ab_channel=Epitome

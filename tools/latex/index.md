@@ -58,6 +58,8 @@ An alternative to `\[latex\]` is `\begin{equation}latex\end{equation}`.
 
 Spaces are useless in your latex code since the math parser will do whatever he wants, you should either use `\ ` (backslash followed by a space) or use `\quad` (or `\,`, `\:`, ...). You can make a horizontal space with `\hspace{1cm}`.
 
+You may use `\mathcal{H}` to write name of functions, etc.
+
 **Note**: if you don't remember the name of a symbol, just draw it on [detexify](https://detexify.kirelabs.org/classify.html) and ask him to look for it.
 
 Related

@@ -9,6 +9,7 @@ This course is about JetBrains's IDEs,
 * **PHPStorm**: Write **PHP**, **HTML/CSS/JS**, **Node/Typescript**, SQL
 * **WebStorm**: same as PHPStorm without PHP and SQL support
 * **PyCharm**: **Python**
+* **DataSpell**: **Python** for DataScience
 * **AndroidStudio**: Write Kotlin/Java for Android, by Google and JetBrains
 
 It's a feature of JetBrains: instead of providing an IDE that is only doing its job, their IDEs are providing advanced help, and language-specific features, without too much configuration. The best alternative in one IDE would be VSCode (free), you should try it too.

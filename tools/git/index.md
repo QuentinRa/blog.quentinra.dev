@@ -167,6 +167,11 @@ Note: I'm putting a lot of files in a folder `.github`, because it makes my root
 
 This page [Working Open Workshop](https://mozillascience.github.io/working-open-workshop/github_for_collaboration/) is summarizing with a lot of pictures (issues, forking a repository, pull requests, etc.).
 
+> Note: On Github, you can add a description
+> 
+> * [on your profile page](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)
+> * [on your organization page](https://github.blog/changelog/2021-09-14-readmes-for-organization-profiles/)
+
 <hr class="sl">
 
 ## Git master
