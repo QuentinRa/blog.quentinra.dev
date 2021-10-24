@@ -13,36 +13,27 @@ This course is about JetBrains's IDEs,
 
 It's a feature of JetBrains: instead of providing an IDE that is only doing its job, their IDEs are providing advanced help, and language-specific features, without too much configuration. The best alternative in one IDE would be VSCode (free), you should try it too.
 
-The IDEs are free for [students](https://www.jetbrains.com/shop/eform/students) (you may apply for **GitHub Student Pack** too [here](https://education.github.com/pack#offers)). You can **download** all their IDEs using the [toolbox](https://www.jetbrains.com/toolbox-app/).
-
-**Note**: this course was made before the major releases `2021.2`  so a lot of things have yet to be updated.
+> **Note**: The IDEs are free for [students](https://www.jetbrains.com/shop/eform/students) (you may apply for **GitHub Student Pack** too [here](https://education.github.com/pack#offers)). You can **download** all their IDEs using the [toolbox](https://www.jetbrains.com/toolbox-app/).
+> 
+> **Note**: this course was made before `2021.2`, so a lot of things have yet to be updated.
 
 <hr class="sl">
 
 ## What you can expect (or not) from their IDEs
 
-* Important size/ram consumption
-
-You may install many IDEs, 3 of them are taking around 10Gb and around 700Mb per download. The RAM consumption is somewhat important (sometimes could take 1Go~2Go). If you do not have a good computer, you may use **Projector**, which allow you to use a remote IDE <small>(not tested, it seems you need another computer "the server" running your IDE, while your slow computer will be "the client")</small>.
-
-* auto-install
-
-The installation of Java, JavaFX, etc. is simplified and could be directly done inside the IDE (in like one or two clicks). You can easily install and update dependencies (and you got head-ups when they are not up-to-date).
-
-* consistency
-
-Their IDEs are using the same interface, almost always the same shortcuts, and in all of them, you got the "CodeWithMe" feature (allowing you to invite a friend on your computer to code with you).
-
-* random features
-  * **the code hints/advice** <small>(that's the **only** reason why I would recommend their IDEs: their hints are quite good and better than in VSCode for instance)</small>
-  * git integration and colors for files
-  * generating UML from your code
-  * basic spelling checker
-  * remote working (for a website, opening a project on a server)
-  * refactoring (deep renaming)
-  * file history (you got a history of your changes even without git)
-  * database (you can access your database inside their IDE)
-  * you can easily connect to SSH/explore a remote server (like in FileZilla or using the command line)
+* some important RAM consumption
+* Good to go. <small>(no need for plugins, a lot of tuning, etc.)</small>. You got a lot of predefined features that may not be available by default in others editors.
+  * **Database** (either local, remote, or remote using a SSH Tunnel)
+  * Open a remote project locally
+  * Invite your friends/team on your IDE (**CodeWithMe**)
+  * **Git integration** (easy merge, easily track changes)
+  * **Generate UML from your code** (Java, JS, PHP)
+  * Basic **spellchecker**
+  * Deep refactoring <small>(ex: renaming a variable and its usages, renaming a database column and its usages, etc.)</small>
+  * **File history** <small>(even without GIT, rollback to a previous version of your file)</small>
+* auto-install <small>(easy install of JavaFX, Java, ...)</small>
+* They got many IDE, but they are consistent <small>(same interface, same shortcuts, etc.)</small>
+* **the code hints/advice**
 
 <hr class="sr">
 
