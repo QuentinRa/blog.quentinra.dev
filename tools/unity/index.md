@@ -138,17 +138,18 @@ public class Example : MonoBehaviour
 
 After removing unused imports, I added the Awake function. This is a sample of the 3 functions you will use.
 
-These scripts can be added to components, by **clicking on a component**, then using **"add component"** in the inspector window. Search your scripts by the name (ex: "Example") and add them.
+These scripts can be added to components, by **clicking on a component**, then using **"add component"** in the inspector window. Search your scripts (ex: "Example") and add them.
 
 ![add component](images/script2.png)
 
 Note that you can use the 3 vertical dots to remove a component, or easily open a script.
 
-> If you are unsure about what's a method/class/attribute, you may read the Java course or watch some videos, as this would be a good practice to write better code 🚀.
+> If you are unsure about what's a method/class/attribute, you may read the Java course or watch some videos 🚀.
 </div>
 </div>
 
-> **Note**: In a Script, you can use `Debug.Log(something)` to print something in the editor, inside the console ![Unity console](images/console.png).<br>
+> **Note**: In a Script, you can use `Debug.Log(something)` to print something in the editor, inside the console ![Unity console](images/console.png). You got variants such as `Debug.LogWarning` or `Debug.LogError` if needed.
+> 
 > **Note**: In C#, you can use `var` instead of the type of a variable when creating a variable with a value, to ask the compiler to infer a type. This is a kind of lazy practice 🙄.
 
 <hr class="sl">
@@ -219,15 +220,15 @@ After you attached a script to an entity, you can get other components in a scri
 BoxCollider collider = GetComponent<BoxCollider>();
 ```
 
-You can also access some objects such as Transform or the tag with attributes ("this" is unneeded, check the documentation to learn more)
+You can also access some objects such as Transform or the tag with attributes
 
 ```cs
 // set scale, ...
-Transform _transform = this.transform;
+Transform transform1 = transform; // <=> this.transform
 // associated gameObject
-GameObject o = this.gameObject;
-// it's tag (<=> this.tag or tag)
-string tag = this.gameObject.tag;
+GameObject o = gameObject; // <=> this.gameObject
+// it's tag
+string tag1 = tag; // <=> this.tag or this.gameObject.tag
 ```
 
 <details class="details-e">
@@ -279,7 +280,27 @@ float axisX = Input.GetAxis("Horizontal");
 float axisY = Input.GetAxis("Vertical");
 // true if enter pressed
 bool pressed = Input.GetKey(KeyCode.KeypadEnter);
+// or you can change the state using down/up
+bool down = Input.GetKeyDown(KeyCode.KeypadEnter);
+bool up = Input.GetKeyUp(KeyCode.KeypadEnter);
 ```
+
+<details class="details-e">
+<summary>Pro tip 🚀</summary>
+
+A lot of developers are not GetAxis but GetAxisRaw, as they want to get rid of the smoothing.
+
+```cs
+float axisX = Input.GetAxisRaw("Horizontal");
+```
+
+It's not a good practice to use keys such as "KeyCode.KeypadEnter". In Edit > Project Settings > Input Manager > Axes, you got names such as "Jump" with keys (such as Space). In your code, you should use theses
+
+```cs
+bool pressed = Input.GetButton("Jump");
+bool pressed = Input.GetButtonDown("Jump");
+```
+</details>
 
 > **Beware!** As a script can be added to multiple GameObject, if you are handling events using this (in Update), you will update every GameObject. You have functions for mouse related stuffs in MonoBehaviour that you can override such as
 > ```cs
@@ -294,41 +315,7 @@ bool pressed = Input.GetKey(KeyCode.KeypadEnter);
 
 ## UserInterface (UI)
 
-<details class="details-e">
-<summary>UI Builder (2020.3+, upcoming)</summary>
-
-**In 2021, you might look at the UI Builder**, to create user interfaces (UI), like in [this video](https://www.youtube.com/watch?v=NQYHIH0BJbs&ab_channel=CocoCode).
-</details>
-
-<details class="details-e">
-<summary>Canvas</summary>
-
-Create a **canvas** (UI > Canvas), this is a component used to store every UI components. You may switch to 2D, as it will make your life easier.
-
-* load a background
-  * create a new ui > image
-  * anchor presets: alt + stretch x/y (bottom right corner)
-  * then drag and drop an image into the slot
-  * you may have to transform your image into a sprite
-  * [video here](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode)
-  * to make a **blur** background (like your game behind the UI) it's complicated
-* you create buttons with ui > buttons, then set the text, you may set an image as a background (you may look into [9patch](https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/9-patch), explained in the video too)
-* you create labels with ui > text, then set the text
-* you can use layouts (like in Java) but using anchors may be enough for a simple UI ([video here](https://www.youtube.com/watch?v=HwdweCX5aMI&ab_channel=GameDevGuide))
-* if you want some resizing (and you are not using anchors) then
-  * add a "canvas scaler" to your canvas
-  * set scale mode to "scale with the screen size"
-  * and give it a size
-
-You can make your hierarchy looks better using this [plugin](https://github.com/febucci/unitypackage-custom-hierarchy) following this [video](https://www.youtube.com/watch?v=Gma7IXPj4wI&ab_channel=CocoCode)
-
-You may create advanced buttons like in this [video](https://www.youtube.com/watch?v=cW-E4WEogzE&ab_channel=CocoCode)
-* create a button add a text and an image
-* add a horizontal layout component to the button
-* set the spacing, ...
-* then on the image, you can add a layout element to resize the image
-* you can add a "content size fitter" to make the button resize itself (set fit to preferred size)
-</details>
+...
 
 <hr class="sl">
 
