@@ -1,4 +1,4 @@
-# C++
+# C++ (cplusplus)
 
 ...
 
@@ -19,7 +19,8 @@ C++ is an extension of the C language. Everything that you could do in C, is sti
 You will write your code, meaning the **implementation** of what you declared in your headers.
 
 ```cpp
-#include "main.h"
+// main.cpp
+#include "main.hpp"
 
 int main(void)
 {
@@ -32,6 +33,7 @@ int main(void)
 You will write declarations, meaning the signatures of things <small>(functions, classes, structures, ...)</small>. You may write some code too. It seems to be a good idea to use `.hpp` instead of `.h`, [to differentiate C++ headers with C headers](https://stackoverflow.com/questions/152555/h-or-hpp-for-your-class-definitions).
 
 ```cpp
+// main.hpp
 #ifndef MAIN_H
 #define MAIN_H
 
