@@ -8,6 +8,18 @@
         "name": "OCaml",
         "desc": "OCaml may be used when you need to write a safe programs (as it is a functional language). It's quite easy to learn, almost no syntax.",
         "icon": "<i class=\"bi bi-terminal-fill\"></i>"
+      },
+      {
+        "tag": "cpp",
+        "name": "C++",
+        "desc": "An incomplete (in-progress) course about C++.",
+        "icon": "<i class=\"bi bi-terminal-fill\"></i>"
+      },
+      {
+        "tag": "python",
+        "name": "Python",
+        "desc": "An incomplete (in-progress) course about Python.",
+        "icon": "<i class=\"bi bi-terminal-fill\"></i>"
       }
     ],
     "e2": [
@@ -16,6 +28,18 @@
         "name": "SQL",
         "desc": "Relational databases are using SQL (89 or 92) as their query language. Since 2011, many database are NoSQL databases.",
         "icon": "<i class=\"bi bi-server\"></i>"
+      },
+      {
+        "tag": "plsql",
+        "name": "PL/SQL",
+        "desc": "If you want to add functions in SQL, you need to learn the Procedural Language (PL) for SQL. In PostgreSQL, this is called PL/pgSQL.",
+        "icon": "<i class=\"bi bi-server\"></i>"
+      },
+      {
+        "tag": "nosql",
+        "name": "NoSQL",
+        "desc": "Learn about NoSQL 'NotOnlySQL', 4 new kinds of databases which are more flexible than relational databases (such as MongoDB or Cypher).",
+        "icon": "<i class=\"bi bi-stack\"></i>"
       }
     ],
     "e3": [

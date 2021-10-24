@@ -37,18 +37,6 @@
       "icon": "<i class=\"bi bi-wifi\"></i>"
     },
     {
-      "tag": "sql",
-      "name": "SQL",
-      "desc": "Course about SQL, PL/SQL, and PGSQL. You will also learn a bit about NoSQL Database with Cypher.",
-      "icon": "<i class=\"bi bi-server\"></i>"
-    },
-    {
-      "tag": "nosql",
-      "name": "NoSQL",
-      "desc": "Learn about NoSQL with MongoDB and Cypher.",
-      "icon": "<i class=\"bi bi-stack\"></i>"
-    },
-    {
       "tag": "assembly",
       "name": "Assembly",
       "desc": "A short introduction to ARM assembly.",
