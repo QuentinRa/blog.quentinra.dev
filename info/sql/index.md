@@ -42,7 +42,7 @@ In the second screen, you can see the usual representation of your data in a dat
 | `(1, "Luna", 18, "Woman")`, ... | **Objects** | **Tuples**/Records | <small>(=rows)</small>. We are saying "tuples" in French too. |
 | id | **Identifiers** <br> <small>(Keys, but this is a mistake)</small> | **Keys** | A **primary key** is a set of **one or more attributes**.<br>We can find a row in a table, given its values in the primary key.<br> The primary key as a whole is **unique** and **not-null**. <br>This is used to reference a tuple in another table (**Foreign key**).<br>Usually, we are using an **artificial key** <br>which is incrementing (+=1) each time we are adding a row.<br><small>Here, given "id=1", we know we are talking of "(1, Luna, ...)".</small> |
 
-> Note: I know that "customer" **should starts with an uppercase**, as every class should do. I should also **add something before id** <small>(as many class may have an attribute id, so I won't have to prefix it)</small>, and I should **add something before name** <small>(as name is a **reserved keyword** otherwise, I will have to escape it later)</small> (ex: c_id, c_name).
+> Note: I know that the class's name "customer" **should starts with an uppercase**, as every class should. I should also **add something before/after id** <small>(as many class may have an attribute id, so I won't have to prefix it)</small>, and I should **add something before/after name** <small>(as name is a **reserved keyword** otherwise, I may have to escape it later)</small>, for instance: c_id and c_name.
 
 <hr class="sl">
 
@@ -504,9 +504,30 @@ SELECT * FROM customer2 c FULL OUTER JOIN purchase p
 
 <hr class="sl">
 
+## Advanced concepts
+
+...
+
+<hr class="sr">
+
+## CheatSheet and conventions
+
+...
+
+* **Conventions**
+
+**Avoid** using **reserved keywords**, and **spaces**, **use lowercase** and **snake case**, when **naming** something. Naming is quite important is an DBMS, more than ever, as names will last long.
+
+Do not prefix/postfix attributes such as "id", prefix it in complex requests. Prefix foreign key with the whole name of the referenced table.
+
+As always, give relevant names to indexes, views, and constraints.
+
+<hr class="sl">
+
 ## Sources
 
 * <https://en.wikipedia.org/wiki/Join_(SQL)>
+* [Naming conventions](https://launchbylunch.com/posts/2014/Feb/16/sql-naming-conventions/)
 
 French
 

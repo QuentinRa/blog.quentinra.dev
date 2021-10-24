@@ -50,9 +50,7 @@
   - https://eslint.org/
   - https://haml.info/
 - sql
-  - https://github.com/RootSoft/Database-Naming-Convention
   - course normalization
-  - https://github.com/omundy/learn-mysql-examples
 - css
   - https://markdotto.com/2015/07/20/css-nesting/
 - cyber-security
