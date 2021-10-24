@@ -34,22 +34,15 @@ You may create advanced buttons like in this [video](https://www.youtube.com/wat
 * you can add a "content size fitter" to make the button resize itself (set fit to preferred size)
 </details>
 
+PauseMenu
+GameOverMenu
+...
 
+---------------------
 
-----
-
-prefabs
-=> use
-=> how
-=> ...
-=> double click to edit => all affected => blue => icon
-
-Material
-=> explorer
-=> create => material
-
-Game object => 3D => cube
-=> drop material
+Object inside another
+Create new one
+Add components?
 
 -------------------
 

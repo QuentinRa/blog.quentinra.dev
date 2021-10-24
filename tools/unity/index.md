@@ -42,7 +42,7 @@ Unity is providing generic support for your games, sometimes you may want more. 
 
 In **Unity** everything, I mean everything (entities, light, images, etc.) is a **Game object**. I think that this is their own way of implementing an **architectural pattern** called **Entity-component-system** (ECS), but I'm unsure of it <small>(I'm still learning 😖)</small>.
 
-<hr class="sl">
+<hr class="sr">
 
 ## Version-control in Unity
 
@@ -65,7 +65,7 @@ Unity projects are **made of a lot of files**, including **big files too**, so y
 * *you may have to install [Git](https://git-scm.com/downloads)* (👀)
 </details>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Interface
 
@@ -86,7 +86,7 @@ When you are opening a project, by default you got 4 windows.
 > 
 > * <kbd>F</kbd> in the hierarchy window, to focus a GameObject in the scene window
 
-<hr class="sl">
+<hr class="sr">
 
 ## Be good, use folders!
 
@@ -95,10 +95,18 @@ The project files are usually split into folders, using these folders names
 * **Animations**, **Audio**, **Cutscene**
 * **Editor**, **Images**, **Materials**
 * **Plugins**
-* **Prefabs**: your prefabs, they are preconfigured objects like a player with a configuration. You can create one by dragging and dropping a GameObject in the project window
+* **Prefabs**: your prefabs
 * **Scenes**: your scenes (unity scene files, a screen of your game)
 * **Scripts**: your C# scripts (.cs)
 * **Settings**, **Shaders**
+
+> **Prefabs**: if you are planning to duplicate a GameObject, you should create a Prefabs. Simply drag and drop a GameObject in the Project Window. This created a file. Double-click on the file to edit the prefab, and this will edit the properties of every instance of this Prefab. You can create a new instance by drag and dropping the prefabs in the hierarchy window. On each instance, in the property window, you may see a small blue line on a property, meaning that the prefabs and this instance got a different value for this property.
+
+<hr class="sl">
+
+## Creating Game Objects
+
+...
 
 <hr class="sr">
 
@@ -312,6 +320,55 @@ bool pressed = Input.GetButtonDown("Jump");
 > ```
 
 <hr class="sr">
+
+## Materials and Sprites
+
+<details class="details-e">
+<summary>Materials</summary>
+
+This is a sort of skin, for 3D models.
+
+* In the Project window
+* **[Optional]** In a folder Materials
+* Right-click > Create > Material
+* **[Optional]** you may set the material as Transparent, if you are intending so make it a light source (trick)
+* **[Up to you]** you can change the **color** on the line "Albedo"
+* **[Up to you]** you can set an **image** (=texture) by clicking on the little circle with a dot inside, right before "Albedo"
+* **[Up to you]** you can enable emission and set a color, if you want this color to be emitted from your material (trick)
+
+To apply one,
+
+* Click on a Game object
+* Mesh Renderer > Materials
+* Drag and drop your Material from the Project window to the input field
+
+</details>
+
+<hr class="sl">
+
+## Light
+
+...
+
+<hr class="sr">
+
+## Animations
+
+...
+
+<hr class="sl">
+
+## Useful methods
+
+...
+
+<hr class="sr">
+
+## Random bunch of notes
+
+...
+
+<hr class="sl">
 
 ## UserInterface (UI)
 
