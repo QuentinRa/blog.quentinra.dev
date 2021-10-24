@@ -14,8 +14,7 @@ https://www.youtube.com/channel/UCFEbYRZrkvEfCAecEf0SPXg
 
 https://www.youtube.com/c/ChargerGames/videos
 
---- c#
-https://www.youtube.com/watch?v=aB9LJ9oHGOs&ab_channel=Blackthornprod
+https://www.youtube.com/watch?v=cKZqISww5Do&ab_channel=AllenDevs
 
 --- series
 top down - https://www.youtube.com/playlist?list=PLl3caEhMYxQGFQ8LA5doTSkWhP2Mx84Gx
@@ -28,13 +27,6 @@ https://www.youtube.com/watch?v=nmPukdOsYQA
 https://www.youtube.com/watch?v=93SkbMpWCGo
 https://www.youtube.com/watch?v=Nt9QfRrm30c&ab_channel=Blackthornprod
 https://www.youtube.com/watch?v=DQWYMfZyMNU&ab_channel=CocoCode
-
---- movement
-https://www.youtube.com/watch?v=Uv5tfMSKlnU
-
---- light
-https://www.youtube.com/watch?v=flu2PNRUAso
-https://www.youtube.com/watch?v=6Q0FnPy9Orc&ab_channel=TopsideStudios
 
 --- combat
 https://www.youtube.com/watch?v=e2PRI19Igbo
@@ -84,12 +76,6 @@ https://learn.unity.com/tutorial/project-architecture-unity-project-folder-struc
 https://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control
 https://stackoverflow.com/questions/21573405/how-to-prepare-a-unity-project-for-git
 https://thoughtbot.com/blog/how-to-git-with-unity
-
-Unity version
-https://www.youtube.com/watch?v=LLYhTWEX2Wc
-
-Git
-https://github.com/github-for-unity/Unity/blob/master/docs/using/how-to-install-and-update.md
 
 https://blog.jetbrains.com/dotnet/2017/08/30/getting-started-rider-unity/
 https://blog.jetbrains.com/dotnet/2018/10/03/integrating-rider-2018-2-unity-editor/

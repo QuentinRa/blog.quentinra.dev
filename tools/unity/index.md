@@ -14,6 +14,7 @@
 * Fill the form, powered by SheerID
 * Send a pic of your student ID
 * Done, wait a bit, you should receive a mail telling you **welcome** and **how to get started**
+* [**Claim your rewards**](https://assetstore.unity.com/browse/student-plan-pack) **for 1$** with the code sent by mail
 </details>
 
 > ⚠️ A wise one would regularly save its work ⚠️
@@ -50,7 +51,7 @@ If you are **unfamiliar** with GitHub/Git, you may read the [GIT course](../git/
 Unity projects are **made of a lot of files**, including **big files too**, so you can't commit (~=save) them. Fortunately, you to use Git LFS to transfer big files, and you got a plugin making things easy in unity.
 
 * [GitHub for unity (tool/download)](https://unity.github.com/)
-* [GitHub for unity (quick-guide)](https://github.com/github-for-unity/Unity/blob/master/docs/using/quick-guide.md)
+* [GitHub for unity (quick-guide)](https://github.com/github-for-unity/Unity/blob/master/docs/using/quick-guide.md) (or [this one](https://github.com/github-for-unity/Unity/blob/master/docs/using/how-to-install-and-update.md))
 
 <details class="details-e">
 <summary>My tutorial</summary>
@@ -382,3 +383,5 @@ private void MyMethod()
 * [Game Development](https://gamedevelopment.tutsplus.com/) for everything related to the Game engine infrastructure and the Game Loop
 * Tutorials about the libGDX and the lwjgl3 libraries, such as [LWJGL3 - Timing](https://github.com/SilverTiger/lwjgl3-tutorial/wiki/Timing) to understand the underlay of a Game
 * Teachings at the [ENSIIE](https://www.ensiie.fr/)
+
+[The WHOLE LIST OF References](refs.md)

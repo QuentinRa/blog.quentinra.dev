@@ -59,7 +59,7 @@
     {
       "tag": "unity",
       "name": "Unity",
-      "desc": "Beginners' notes of Unity.",
+      "desc": "An incomplete (in-progress) course about Unity game-engine, starting from scratch, and covering both 2D and 3D.",
       "icon": "<i class=\"bi bi-journal-richtext\"></i>"
     }
   ]

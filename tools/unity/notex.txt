@@ -47,3 +47,64 @@ SendMessageUpwards("StopMoving");
 -----------
 
 https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types
+
+--------------
+
+SceneLoader.LoadScene("name") => set the scene in the loadable scenes
+
+---------------
+
+Instantiate(obj, pos, rot)
+Destroy(obj, time_before_death)
+
+Input.getAxisRaw()
+=> instant get that the axis changed
+
+new Vector3().normalized (do not move faster diagonally if used set position)
+
+Vector2.MoveTowards(start, target, speed) => easy for follow something
+
+-----------------
+
+OnTriggerEnter2D => run when our object collides with another
+=> give both a collider set to trigger
+=> one of them must have a rigid body
+
+RigidBody => kinematic : no gravity
+
+USE TAGS in collider easy to guess with who collided
+
+------------------------
+
+- Use things in the InputManager, no hardcoded values.
+- GetButtonDown("Jump")
+
+-------------------
+
+In 2D: freeze rotation (good for platformers)
+=> camera INSIDE the player => follow
+
+-------------------------
+
+Light => shader => copy
+=> https://github.com/TwoTailsGames/Unity-Built-in-Shaders
+=> https://github.com/adrian-miasik/unity-shaders
+
+
+-------------------------
+
+Click on the "..." and debug to enable debug mode
+=> ex: shadow casting on
+=> do it from the code
+
+--------------------
+
+Directional light => rotate => black :(
+=> Lightning => Environment => source: color
+
+cast shadow (mesh rendered) off for walls
+=> wall is not casting shadows on the player
+
+Torch
+=> point light orange
+=> shadow type: hard => projected on the wall
