@@ -22,7 +22,7 @@ You will write your code, meaning the **implementation** of what you declared in
 // main.cpp
 #include "main.hpp"
 
-int main(void)
+int main()
 {
 	// ...
 }

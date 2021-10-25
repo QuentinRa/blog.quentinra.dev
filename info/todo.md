@@ -83,9 +83,7 @@
     - https://developer.mozilla.org/fr/docs/Web/API/Blob
 - C/C++
   - https://github.com/Akagi201/learning-cmake
-  - https://github.com/lefticus/cppbestpractices
-  - https://github.com/JadeMatrix/Cpp-Learning-Materials/blob/master/C%2B%2B%20Learning%20Materials.md
-  - https://gist.github.com/alan-mushi/c8a6f34d1df18574f643
+  - ncurses: https://gist.github.com/alan-mushi/c8a6f34d1df18574f643
   - https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/forms.html
   - https://stackoverflow.com/questions/14492637/warn-when-using-parameter-marked-as-unused
   - flags
@@ -141,6 +139,7 @@
 - https://www.youtube.com/watch?v=QaI7abh4n-8&ab_channel=WebDevJourney
 - https://ilovecoding.org/
 - https://exercism.org/
+- http://learn.onlinegdb.com/
 
 ---
 
