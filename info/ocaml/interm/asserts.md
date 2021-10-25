@@ -9,6 +9,8 @@ assert false
 (* Exception: Assert_failure ... *)
 ```
 
+> **Note**: "assert false" is useful, for instance in a match on a list, which you know that in this case the list isn't empty.
+
 <hr class="sl">
 
 ## Simple assert
