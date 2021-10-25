@@ -16,11 +16,11 @@ You will need
   
 A wireframe is literally a frame of your application, you can draw it by yourself or use tools like
 
-* PowerPoint (no, don't)
-* [Diagrams](https://app.diagrams.net/)
+* PowerPoint (no, don't 🙄)
+* [Diagrams](https://app.diagrams.net/) (fast, but quite poor quality)
 * [Sketch](https://www.sketch.com/) (macOS)
 * Photoshop (paid, for professionals)
-* [Justinmind](https://www.justinmind.com/) (trial available but paid, **the best of all**)
+* [Justinmind](https://www.justinmind.com/) (trial available but paid, **the best of all** 🚀)
 * [Moqups](https://moqups.com/) (**the best for free**, account required)
 * Or simply in HTML using Bootstrap, simple and efficient (**my favorite alternative**)
 
@@ -128,11 +128,11 @@ Jakob Nielsen wrote the **10 principles** that you should <s>MUST 😠</s> take 
 
 ## Last tips
 
-It may be better to load everything needed at the start of the application, rather than using lazy practices and making the user wait a lot of times.
+1. It may be better to load everything needed at the start of the application, rather than using lazy practices and making the user wait a lot of times.
 
-A screen will most likely have more width than height, so you should exploit the width.
+2. A screen will most likely have more width than height, so you should exploit the width.
 
-If you need more than 3 clicks to do one action, and you do this action often, then you MUST re-think your interface.
+3. If you need more than 3 clicks to do one action, and you do this action often, then you MUST re-think your interface.
 
 <hr class="sr">
 

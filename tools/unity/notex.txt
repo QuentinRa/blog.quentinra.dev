@@ -1,3 +1,103 @@
+-----------------------------------------------------------------
+------------------------- Game Objects
+-----------------------------------------------------------------
+
+Object inside another
+Create new one
+
+transform.position
+transform.Rotate(_rotatingAxis, Time.deltaTime * angle, Space.World);
+=> local axis (Space.Self) or global axis (Space.World)
+
+-----------------------------------------------------------------
+------------------------- Scenes
+-----------------------------------------------------------------
+
+SceneLoader.LoadScene("name") => set the scene in the loadable scenes
+
+-----------------------------------------------------------------
+------------------------- Camera
+-----------------------------------------------------------------
+
+Use the position to set objects/camera, not your intuitive guess
+
+-----------------------------------------------------------------
+------------------------- Components
+-----------------------------------------------------------------
+
+Add components?
+
+OnTriggerEnter2D => run when our object collides with another
+=> give both a collider set to trigger
+=> one of them must have a rigid body
+
+RigidBody => kinematic : no gravity
+
+USE TAGS in collider easy to guess with who collided
+
+GetComponent<Renderer>().enabled = true;
+
+-----------------------------------------------------------------
+------------------------- LIGHT and SHADOWS
+-----------------------------------------------------------------
+
+Light => shader => copy
+=> https://github.com/TwoTailsGames/Unity-Built-in-Shaders
+=> https://github.com/adrian-miasik/unity-shaders
+
+Directional light => rotate => black :(
+=> Lightning => Environment => source: color
+
+cast shadow (mesh rendered) off for walls
+=> wall is not casting shadows on the player
+
+Torch
+=> point light orange
+=> shadow type: hard => projected on the wall
+
+=> light with the sun transparent (mesh)
+
+-----------------------------------------------------------------
+------------------------- Useful methods
+-----------------------------------------------------------------
+
+------ general
+
+Instantiate(obj, pos, rot)
+Destroy(obj)
+Destroy(obj, time_before_death)
+SendMessageUpwards("StopMoving");
+
+----- vector
+
+new Vector3().normalized (do not move faster diagonally if used set position)
+Vector2.MoveTowards(start, target, speed) => easy for follow something
+_targetBounds.Intersects(_myRenderer.bounds) // Check collision
+if (Vector3.Distance(_targetBounds.center,_myRenderer.bounds.center) <= 0.001f) // near
+
+------ coroutine
+
+StartCoroutine(WaitForSecondsAndShow());
+private IEnumerator WaitForSecondsAndShow()
+{
+	yield return new WaitForSeconds(2f);
+}
+
+-----------------------------------------------------------------
+------------------------- Random bunch of notes
+-----------------------------------------------------------------
+
+Click on the "..." and debug to enable debug mode
+=> ex: shadow casting on
+=> do it from the code
+
+In 2D: freeze rotation (good for platformers)
+=> camera INSIDE the player => follow
+
+-----------------------------------------------------------------
+------------------------- UserInterface (UI)
+-----------------------------------------------------------------
+
 <details class="details-e">
 <summary>UI Builder (2020.3+, upcoming)</summary>
 
@@ -37,99 +137,3 @@ You may create advanced buttons like in this [video](https://www.youtube.com/wat
 PauseMenu
 GameOverMenu
 ...
-
----------------------
-
-Object inside another
-Create new one
-Add components?
-
--------------------
-
-Use the position to set objects/camera, not your intuitive guess
-
-transform.Rotate(_rotatingAxis, Time.deltaTime * angle, Space.World);
-=> global y axis
-Rotate takes a Vector3 argument as an Euler angle. The second argument is the rotation axes, which can be set to local axis (Space.Self) or global axis (Space.World). The rotation is by the Euler amount.
-=> https://docs.unity3d.com/ScriptReference/Transform.Rotate.html
-
-=> light with the sun transparent (mesh)
-=> Destroy
-
-var position = transform.position;
-position = Vector3.MoveTowards(position, position-_step*Time.deltaTime, float.MaxValue);
-transform.position = position;
-
-GetComponent<Renderer>().enabled = true;
-
-StartCoroutine(WaitForSecondsAndShow());
-private IEnumerator WaitForSecondsAndShow()
-{
-	yield return new WaitForSeconds(timeBeforeAppearing);
-	GetComponent<Renderer>().enabled = true;
-	_stopMoving = false;
-}
-
-// Check collision
-if (!_targetBounds.Intersects(_myRenderer.bounds)) return;
-// near
-if (Vector3.Distance(_targetBounds.center,_myRenderer.bounds.center) <= 0.001f)
-// call method
-SendMessageUpwards("StopMoving");
-
------------
-
-https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types
-
---------------
-
-SceneLoader.LoadScene("name") => set the scene in the loadable scenes
-
----------------
-
-Instantiate(obj, pos, rot)
-Destroy(obj, time_before_death)
-
-new Vector3().normalized (do not move faster diagonally if used set position)
-
-Vector2.MoveTowards(start, target, speed) => easy for follow something
-
------------------
-
-OnTriggerEnter2D => run when our object collides with another
-=> give both a collider set to trigger
-=> one of them must have a rigid body
-
-RigidBody => kinematic : no gravity
-
-USE TAGS in collider easy to guess with who collided
-
--------------------
-
-In 2D: freeze rotation (good for platformers)
-=> camera INSIDE the player => follow
-
--------------------------
-
-Light => shader => copy
-=> https://github.com/TwoTailsGames/Unity-Built-in-Shaders
-=> https://github.com/adrian-miasik/unity-shaders
-
-
--------------------------
-
-Click on the "..." and debug to enable debug mode
-=> ex: shadow casting on
-=> do it from the code
-
---------------------
-
-Directional light => rotate => black :(
-=> Lightning => Environment => source: color
-
-cast shadow (mesh rendered) off for walls
-=> wall is not casting shadows on the player
-
-Torch
-=> point light orange
-=> shadow type: hard => projected on the wall
