@@ -98,3 +98,7 @@ And here some exercises
 
 * MCQ (not yet)
 * [Write some code](interm/exercises.md)
+
+--------
+
+[References](ref.md)
