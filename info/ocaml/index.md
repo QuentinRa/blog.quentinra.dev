@@ -16,7 +16,7 @@ Like a lot of languages such as Python or Java (👀), you are able to write OCa
 * `ocaml`: to open OCaml console
 * `ocamlc file.ml`: to compile a OCaml file and create a `a.out` <small>(this is working like `gcc` in C)</small>.
 
-As the installation is hard on Windows, I gathered tutorials here to [install OCaml on Windows](intro/install-win.md). On Linux, you should not have a problem. You can also use OCaml in your browser with [TryOCamlPro](https://try.ocamlpro.com/) (this may be enough/the best solution for a lot of you).
+As the installation is hard on Windows, I gathered tutorials here to [install OCaml on Windows](intro/install-win.md). On Linux, you should not have a problem. You can also use OCaml in your browser with [TryOCamlPro](https://try.ocamlpro.com/) <small>(**I trough this was a good solution, but it made me write poor code** because I was adding `;;` or parenthesis in a lot of unneeded places)</small>.
 
 <hr class="sr">
 
@@ -57,7 +57,10 @@ To be accurate, in OCaml **everything is a value**, so you can give `-` (minus) 
 
 ## Basic concepts
 
-...
+* [Types, operators and structures](basic/syntax.md)
+* [Declaring a variable](basic/variables.md)
+* [Functions](basic/functions.md)
+* [Recursive functions](basic/rec.md)
 
 <hr class="sr">
 
@@ -86,4 +89,4 @@ We are testing different ways of storing of big amount of data, along with the e
 
 ## Sources
 
-[References](ref.md)
+...

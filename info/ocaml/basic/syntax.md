@@ -1,5 +1,7 @@
 # Syntax
 
+[Go back](../index.md#basic-concepts)
+
 In OCaml, types are inferred as it should be for functional languages. We are not talking about statements but expressions too.
 
 <hr class="sl">

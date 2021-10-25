@@ -1,5 +1,7 @@
 # Functions
 
+[Go back](../index.md#basic-concepts)
+
 You got a lot of ways to declare a function such as using `fun` or `function`, but as I do, you may not use any.
 
 <hr class="sl">
