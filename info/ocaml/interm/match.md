@@ -1,5 +1,7 @@
 # Pattern Matching
 
+[Go back](../index.md#intermediary-concepts)
+
 If you are given an int, you know that you can use some ifelse to find what value was given. But what if you are given a list? or a new type that we created? That's when Pattern Matching come in handy, as they are breaking a value in constructors.
 
 <hr class="sl">

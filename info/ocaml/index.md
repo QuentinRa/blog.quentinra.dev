@@ -71,7 +71,17 @@ You might challenge yourself with these exercises
 
 ## Intermediary concepts
 
-...
+* [Composite types](interm/tuples.md)
+* [Creating new types](interm/types.md)
+* [Lists](interm/lists.md)
+* [Pattern Matching](interm/match.md) 🚀
+* [Exceptions](interm/exceptions.md)
+* [Asserts](interm/asserts.md)
+
+And here some exercises
+
+* MCQ (not yet)
+* [Write some code](interm/exercises.md)
 
 <hr class="sl">
 
@@ -89,6 +99,7 @@ We are testing different ways of storing of big amount of data, along with the e
 
 * [Binary Search Trees](data/bst.md) (`ABR`)
 * [AVL trees](data/avl.md)
+* [Zippers](data/zippers.md)
 
 <hr class="sr">
 

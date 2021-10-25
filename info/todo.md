@@ -89,9 +89,6 @@
   - https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/forms.html
   - https://stackoverflow.com/questions/14492637/warn-when-using-parameter-marked-as-unused
   - flags
-- ocaml
-  - https://ocaml.org/api/List.html
-  - esy
 - nosql
   - http://www.apcjones.com/arrows/#
   - http://web4.ensiie.fr/~stefania.dumbrava/coursIBDPG.pdf
@@ -143,6 +140,7 @@
 - https://codingcheats.io/
 - https://www.youtube.com/watch?v=QaI7abh4n-8&ab_channel=WebDevJourney
 - https://ilovecoding.org/
+- https://exercism.org/
 
 ---
 
