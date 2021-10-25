@@ -1,6 +1,6 @@
-# New types
+# Creating new types
 
-[Go back](..)
+[Go back](../index.md#intermediary-concepts)
 
 You can create new types using ``type``
 keyword.

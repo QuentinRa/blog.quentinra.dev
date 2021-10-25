@@ -1,9 +1,5 @@
 # Intermediary concepts
 
-Then you need to know about all of these since
-aside from zippers, you will use them quite a lot.
-
-* [Composite types / couples](interm/couples.md)
 * [Creating types](interm/types.md)
 * [Lists](interm/lists.md)
 * [Match](interm/match.md)
