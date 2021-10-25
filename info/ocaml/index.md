@@ -62,6 +62,11 @@ To be accurate, in OCaml **everything is a value**, so you can give `-` (minus) 
 * [Functions](basic/functions.md)
 * [Recursive functions](basic/rec.md)
 
+You might challenge yourself with these exercises
+
+* [MCQ](basic/mcq.md)
+* [Write some code](basic/exercises.md)
+
 <hr class="sr">
 
 ## Intermediary concepts

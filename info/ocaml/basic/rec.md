@@ -6,7 +6,7 @@ A recursive function is a function calling itself. In OCaml, you **have to add r
 
 ```ocaml
 let pow x power = 
-	if (power = 1)
+	if power = 1
 	then x
 	else x * (pow x (power-1))
 
@@ -36,7 +36,7 @@ The main idea is that you will store in a variable the result, update the parame
 ```ocaml
 let pow x power =
 	let rec pow_acc power acc = 
-		0
+		(* some code *)
 	in pow_acc power 1 (* x^0 = 1 *)
 ```
 
@@ -45,7 +45,7 @@ Before completing this function, notice that we are using "let ... in", so the r
 ```ocaml
 let pow x power =
 	let rec pow_acc power acc = 
-		if (power <= 0)
+		if power <= 0
 		then acc (* done, return result *)
 		else let new_acc = x * acc
 			 in let new_power = power - 1

@@ -1,11 +1,4 @@
-You might challenge yourself with these exercises
-
-* [MCQ](basic/mcq.md)
-* [Write some code](basic/exercises.md)
-
-<hr class="sl">
-
-## Intermediary concepts
+# Intermediary concepts
 
 Then you need to know about all of these since
 aside from zippers, you will use them quite a lot.

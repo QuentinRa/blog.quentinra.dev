@@ -29,7 +29,7 @@ let _ = main (-1) "test" (* parenthesis required for -1 *)
 | | int | float | bool | char | string | unit | list |
 |-----|-----|-----|-----|-----|-----|-----|-----|
 | values | `5`, `0x29a` | `5.0` | `true` | `'5'` | `"5"` | `()` | `[]` |
-| operators | `+` `-` `*` `/` | `+.` `-.` `*.` `/.` | `not` `&&` <code>\|\|</code> | | `^` (concat) | | `@` `::` |
+| operators | `+` `-` `*` `/`<br> `mod` | `+.` `-.` `*.` `/.` <br>`**` (pow) | `not` `&&` <code>\|\|</code> | | `^` (concat) | | `@` `::` |
 | example | `5 + 0` | `5.0 /. 1.0` | `not true` | | `"ab" ^ "c"` | | `5::[]` |
 
 * **Note**: You can convert a variable with functions such as `string_of_int` (int -> string).
