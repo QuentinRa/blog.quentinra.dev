@@ -105,4 +105,11 @@ We are testing different ways of storing of big amount of data, along with the e
 
 ## Sources
 
-...
+**French course**
+
+* ENSIIE teaching (1rst year and 2nd year)
+* [Univ. Lille1 - Licence info 3ème année](https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-1.pdf) (course 1 to 4, change the number in the URL)
+
+**Exercises**
+
+* [LearnOcaml (GitHub)](https://github.com/ocaml-sf/learn-ocaml) and [Online demo](https://ocaml-sf.org/learn-ocaml-public/)

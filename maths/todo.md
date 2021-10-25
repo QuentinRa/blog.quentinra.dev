@@ -6,6 +6,7 @@
   - http://pwer21c.github.io/
   - https://www.burns-stat.com/pages/Tutor/R_inferno.pdf
   - formulas
+  - http://adv-r.had.co.nz/
   - https://fxjollois.github.io/cours-2016-2017/complements-r-tp1.html
   - https://fxjollois.github.io/cours-2016-2017/complements-r-tp2.html
   - https://fxjollois.github.io/cours-2016-2017/complements-r.html
