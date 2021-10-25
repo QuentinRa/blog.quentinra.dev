@@ -11,10 +11,6 @@ aside from zippers, you will use them quite a lot.
 * [Zippers](interm/zippers.md)
 * [Exceptions](interm/exceptions.md)
 
-And you may want to do some tests using assertions
-
-*  [Asserts](interm/assets.md)
-
 And here some exercises
 
 * MCQ (not yet)
