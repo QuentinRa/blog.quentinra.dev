@@ -29,6 +29,10 @@ You got 6 types in JSON: **number** (integer/float), **objects**, **arrays**, **
 ]
 ```
 
+> **JSON5** is usually what most people use, but you may try [JSON5](https://json5.org/) at your own "risks" 😎🚀.<br>
+> **Note**: There is no comments in JSON, but you can use comments in **JSON5**<br>
+> **Note**: There is no multiline string, so you must bear with it, unless you are using **JSON5**.
+
 <hr class="sr">
 
 ## YAML
@@ -71,3 +75,23 @@ long_text: This is a really really really
 ```
 
 > You got way more things you can do, this is only a short preview 😱.
+
+<hr class="sl">
+
+## INI
+
+INI is a language that was previously only used on Windows for initialization/**configuration files**. This is a plain text file with **key -> value**. You can add sections if you want.
+
+```ini
+; a comment
+key=value
+
+[section1]
+key2=value
+key3=value
+
+[section2]
+key2=value
+```
+
+> You may use `_`, spaces, uppercase letters in the names. At least, if your parser is allowing them.

@@ -40,7 +40,7 @@ If you want to edit a course, simply edit the ``.md`` file.
 
 ## TODO List 
 
-Last updated: 2021-09-07
+Last updated: 2021-10-25
 
 <details>
 <summary> <b>Website tasks</b></summary>
@@ -67,16 +67,18 @@ Last updated: 2021-09-07
 <details>
 <summary> <b>Next content</b></summary>
 
-* [ ] JSON/JSON5/YAML
-* [ ] First-order logic course
-* [ ] General mathematical knowledge course
-* [ ] Complete Java course (notes, javafx)
-* [ ] Cybersecurity course
+* [ ] Complete Java course
+* [ ] Complete Cybersecurity course
 * [ ] Complete Bootstrap course
 * [ ] Complete C course
+* [ ] Complete C++ course
+* [ ] Complete Python course
 * [ ] Complete Linux course
 * [ ] Complete Network course
 * [ ] Complete SQL course
+* [ ] Complete PL/SQL course
+* [ ] Complete NoSQL course
+* [ ] Complete Cryptography course
 </details>
 
 ## Notes
