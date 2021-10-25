@@ -1,35 +1,23 @@
 # Exercises
 
-[Go back](..)
+[Go back](../index.md#intermediary-concepts)
 
-If you are eager to do a bunch of exercises
-then here you will be able to. This is a project
-split into question. A question will require you to do
-the previous questions.
+If you are eager to do a bunch of exercises, then here you will be able to. This is a project split into questions. Most of them are dependant on the previous ones.
 
-The original, french subject can be found
-[here](https://github.com/memorize-code/memorize-references/raw/main/info/ocaml/IPF_projet_2021.pdf) 
-if you want.
+The original subject, in french, [can be found here](https://github.com/memorize-code/memorize-references/raw/main/info/ocaml/IPF_projet_2021.pdf).
 
-Everything is in French, for now, feel free to propose
-a translated version (function names etc.).
-
-**You may take around 4 hours to do all of these questions,
-but take the time! It's better than your average practical
-class**.
+**It may take around 4 hours to do all of these questions**.
 
 <hr class="sr">
 
 ## Creating some types
 
-A DNA sequence, called "brin" here in French,
-is a sequence of nucleotides A, C, G, and T.
+A DNA sequence, called `brin` here in French, is a sequence of nucleotides A, C, G, and T.
 
-Create a type for a ``brin`` and a type for `nucleotide`.
-Here is an example of what we would want to do
+Create a type for a `brin` and a type for `nucleotide`. Here is an example of a variable having the type `brin`.
 
 ```ocaml
-let my_brin : brin = [A;C;G;T];;
+let my_brin : brin = [A;C;G;T]
 ```
 
 <blockquote class="spoiler">
@@ -54,11 +42,7 @@ contenu_gc [C;T;T;A]
 ```
 
 <blockquote class="spoiler">
-Please take note of two things, first, we don't use a fold
-since we have two parameters. And second, we have two 
-accumulators since a smart guy won't use <code>List.length</code>
-since we are already iterating the list once so the cost would
-be lesser to use another accumulator for the size.
+Please take note of two things, first, we don't use a fold since we have two parameters. And second, we have two accumulators since a smart guy won't use <code>List.length</code> since we are already iterating the list once so the cost would be lesser to use another accumulator for the size.
 
 <pre><code class="language-ocaml"
 >let contenu_gc (x : brin) : float =
@@ -86,8 +70,7 @@ let _ = assert((contenu_gc [A;A;A;T;A]) = 0.0);;
 
 ## Some useless function as a warmup (2 / 2)
 
-Make a function returning the complementary of a brin. You may use
-``List.rev`` or `List.fold_left` (or `List.fold_right`).
+Make a function returning the complementary of a brin. You may use `List.rev` or `List.fold_left` (or `List.fold_right`).
 
 ```ocaml
 let brin_complementaire (x : brin) : brin =
@@ -97,8 +80,7 @@ brin_complementaire [C; T; A; A; T; G; T]
 (* - : brin = [G; A; T; T; A; C; A] *)
 ```
 
-Note that C becomes G (and G->C) and
-A becomes T (and T -> A).
+Note that C becomes G (and G->C) and A becomes T (and T -> A).
 
 <blockquote class="spoiler">
 <pre><code class="language-ocaml"
@@ -127,14 +109,14 @@ You may use a fold
 >let brin_complementaire (x : brin) : brin =
 (* it's better to reverse rather than fold_right because
 fold_right is not terminal*)
-List.rev (
-List.fold_left (fun inverted brin -> match brin with
-| A -> T::inverted
-| C -> G::inverted
-| G -> C::inverted
-| T -> A::inverted )
-[] x
-)
+	List.rev (
+		List.fold_left (fun inverted brin -> match brin with
+		| A -> T::inverted
+		| C -> G::inverted
+		| G -> C::inverted
+		| T -> A::inverted )
+		[] x
+	)
 </code></pre>
 </blockquote>
 
@@ -142,12 +124,9 @@ List.fold_left (fun inverted brin -> match brin with
 
 ## Distance
 
-Make a function returning the distance between two brins. The distance
-is defined as the number of nucleotides that must be changed so that
-the brins become the same brin.
+Make a function returning the distance between two brins. The distance is defined as the number of nucleotides that must be changed so that the brins become the same brin.
 
-You must raise an exception if the length of the two
-brins are not the same.
+You must raise an exception if the length of the two brins are not the same.
 
 ```ocaml
 let distance (x : brin) (y : brin) : int =
@@ -181,15 +160,9 @@ let _ = assert((try distance [] [T] with Failure _ -> -1) = -1) ;;
 
 ## Similarity
 
-Return the similarity between two brins. It's
-**one** minus the distance divided by the size of one
-of your two brins.
+Return the similarity between two brins. It's **one minus the distance**, then **divide** everything **by the length** <small>(of one of your two brins, as they got the same length)</small>. **You must raise an exception if the length of the two brins are not the same.**
 
-You must raise an exception if the length of the two
-brins are not the same.
-
-You may use ``float_of_int`` to convert an int
-variable to a float variable.
+You may use `float_of_int` to convert an integer to a float number.
 
 ```ocaml
 let similarite (x : brin) (y : brin) : float =
@@ -200,8 +173,7 @@ similarite [C;G;A;T] [T;A;G;T]
 ```
 
 <blockquote class="spoiler">
-Remember that distance already raises an exception, don't do
-it twice! And don't forget the conversations.
+Remember that distance already raises an exception, don't do it twice! And don't forget the conversations.
 
 <pre><code class="language-ocaml"
 >let similarite (x : brin) (y : brin) : float =
@@ -217,9 +189,7 @@ let _ = assert(similarite [A;G;C;T] [A;G;C;T] = 1.0);;
 
 ## New type: tree
 
-Create a new type, called ``arbre_phylo``
-to represent a **binary** tree. Each branch
-have a ``brin`` and a malus.
+Create a new type, called `arbre_phylo` to represent a **binary** tree. Each branch have a `brin` and a malus.
 
 <img src="/courses/info/ocaml/interm/ipf/tree.png"
 alt="tree" width="500"/>
@@ -234,23 +204,11 @@ alt="tree" width="500"/>
 </code></pre>
 </blockquote>
 
-A malus is defined by the sum of the distances
-(using the function created a while back) of a node
-with the two children nodes.
+A malus is defined by the sum of the distances (using the function created a while back) of a node with the two children nodes.
 
-<p>
-For instance ACAT = 3 is the result of
-<span>\(distance(ACAT, GCAT) + distance(ACAT, TCGT)
-= 1 + 2 = 3.
-\)</span>
-</p>
+For instance ACAT = 3 is the result of $distance(ACAT, GCAT) + distance(ACAT, TCGT) = 1 + 2 = 3.$
 
-<p>
-For AAAA, it would be <span>\(
-distance(AAAA, ACAT) + 3
-+ distance(AAAA, AAGA) + 2 = 2 + 3 + 1 + 2 = 8.
-\)</span>
-</p>
+For AAAA, it would be $distance(AAAA, ACAT) + 3 + distance(AAAA, AAGA) + 2 = 2 + 3 + 1 + 2 = 8.$
 
 <hr class="sl">
 
@@ -300,10 +258,7 @@ let _ = assert(arbre_phylo_vers_string (Br(
 
 ## Similarity
 
-Given a list of trees, return the most similar one. You will
-use ``similarite`` function created before. The one with
-the highest sum of ``similarite`` with
-our brin being the most similar one.
+Given a list of trees, return the most similar one. You will use `similarite` function created before. The one with the highest sum of `similarite` with our brin being the most similar one.
 
 ```ocaml
 let similaire (a : arbre_phylo) (l : arbre_phylo list) : arbre_phylo
@@ -396,10 +351,7 @@ let _ = assert (similaire tree1 [tree1; tree3;tree4] = tree1);;
 
 ## Getters and constructor
 
-Make a function returning the malus of the head.
-Make a function returning the brin of the head.
-Make a function creating a ``arbre_phylo``.
-
+Make a function returning the malus of the head. Make a function returning the brin of the head. Make a function creating an `arbre_phylo`.
 
 ```ocaml
 let get_root (a : arbre_phylo) : brin =
@@ -457,11 +409,9 @@ let _ = assert(br (Lf [A;T]) [A;A] (Lf [T;C]) = Br (Lf [A; T], [A; A], 3, Lf [T;
 
 ## min_malus
 
-Make a function taking a list of trees and
-returning the one with the least malus.
+Make a function taking a list of trees and returning the one with the least malus.
 
-You simply have to check the head of the tree
-and compare the malus values.
+You simply have to check the head of the tree and compare the malus values.
 
 ```ocaml
 let min_malus (l : arbre_phylo list) : arbre_phylo = 
