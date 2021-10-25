@@ -2,52 +2,64 @@
 
 [Go back](../index.md#intermediary-concepts)
 
-You can create new types using ``type``
-keyword.
+You can create new types, or create another name for existing types using the keyword `type`.
+
+<hr class="sl">
+
+## Another name for existing type
 
 ```ocaml
-type anime = string ;;
-let a: anime = "One piece" ;;
-(* val a : anime = "One piece" *)
+type person = string * int
 ```
-
-But you can create more complex types using
-constructors. The keyword is ``of``. The idea is
-
-* ``| Name`` : a constructor without any arguments
-* ``| Name of ...`` : a constructor with arguments
-
-Notice that the names MUST start with an uppercase.
 
 ```ocaml
-type person =
-  | Anonymous of int
-  | Person of string * int 
-;;
+let create_person (name: string) (age: int) : person =
+    (name, age)
 
-(* creating a Person *)
-let a_person : person = Person ("t", 5)
-
-(* creating a Anonymous *)
-let a_person : person = Anonymous 5
+let _ = create_person "Henry" 42 
+(* person = ("Henry", 42) *)
 ```
-
-You will see later how you could extract the arguments
-used in the constructor using **match**.
 
 <hr class="sr">
 
-Note that some are removing the first ``|``
+## One Constructor
+
+You can define constructors to create your new values.
 
 ```ocaml
-type person =
-  Anonymous of int
-  | Person of string * int 
-;;
+type person = Person of string * int
 ```
-
-or writing it like that
 
 ```ocaml
-type person = Anonymous of int | Person of string * int;;
+let _ = Person ("Henry", 42)
+(* person = ("Henry", 42) *)
 ```
+
+> **Note**: the name of the constructor must start by an uppercase.
+
+<hr class="sl">
+
+## Multiples constructors
+
+```ocaml
+type tree = Empty | Node of tree * int * tree
+type tree = | Empty | Node of tree * int * tree
+type tree =
+    | Empty
+    | Node of tree * int * tree
+```
+
+All of these expressions are creating a new type `tree`. We can create
+
+* an empty tree with `Empty`
+* a node, with a value (int), and two sub-trees (left and right)
+    * as the left/right are tree, they can be empty
+    * or they can have a value, and ...
+
+```ocaml
+let empty_tree = Empty
+let node_1 = Node (Empty, 1, Empty)
+let node_1_1_1 = Node (node_1, 1, node_1)
+```
+
+> **Note**: if you want to extract a value from the tree (ex: you want the value, the left, the right), then check out `match`.

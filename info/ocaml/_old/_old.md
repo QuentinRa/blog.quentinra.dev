@@ -1,6 +1,5 @@
 # Intermediary concepts
 
-* [Creating types](interm/types.md)
 * [Lists](interm/lists.md)
 * [Match](interm/match.md)
 * [Folds](interm/fold.md)
