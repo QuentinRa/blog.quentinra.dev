@@ -74,8 +74,8 @@ When you are opening a project, by default you got 4 windows.
 * **hierarchy window** (left): list of all **GameObjects**
 * **scene window** (middle): a scene is like a screen of your game (by default you are in the sample scene)
     * **Press run, to run your game**, you can make changes while the game is running, but they will be lost when the game is closed
-    * you can click on the "game tab" to see your game running <small>(you can set the resolution here too)</small>
-    * and go back to the "scene tab" to edit it (**don't forget to stop it**)
+    * you can click on the **game tab** to see your game running <small>(you can set the resolution here too)</small>
+    * and go back to the **scene tab** to edit it (**don't forget to stop it**)
 * **inspector window** (right): you can edit the properties of the selected **GameObject**
   * ex: click on a GameObject and change the position (Transform > Position)
   * ex: click on a GameObject and change the size (Transform > Scale)
