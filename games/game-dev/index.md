@@ -16,6 +16,59 @@ As many project are **canceled**, it's quite important for neophytes (and others
 
 <hr class="sl">
 
+## 1. Planning
+
+If you don't actually know what kind of game you will make, or at least you got some ideas, the planning is supposed to define all that. **Usually**, you may use what we call a **Game design document**, which is a document telling everything about the game. This is a sort of Scrum board, for Agile developers.
+
+> **Tip**: don't put things under the carpet, "that will be easy" or "...", because most, if not all the time, things aren't easy. That's also why you should start with nearly any content, and add things little by little.
+
+<details class="details-e">
+<summary>Metadata</summary>
+
+**Metadata - basic**
+
+* **Name**, **Genre** (RPG 🚀, FPS, ...)
+* **Short description**
+* **End users** (`Audience`): age, country, language, new players/experienced, platforms
+
+**Metadata - advanced**
+
+* What's the goal? What's the **plus-value** of your game?
+* Why should we play your game?
+  * Is it the Hero? It is the story?
+  * What feelings are you expecting the player to feel?
+* What's making the game fun to play?
+
+> In one sentence, we could resume that: YOU ARE NOT THE PLAYER. You got your tastes, and other do too. For instance, you may like bashing/farming a lot of mob, while others may enjoy an easy game while only focusing on the story. **Ask feedback and dig into this a lot before actually making something**.
+</details>
+
+<details class="details-e">
+<summary>The game overall</summary>
+
+* What's the world of your game? (open-world?)
+* What's the story?
+* What kind of graphics are you planning to use? Something realist, or more something fantasist?
+
+You should try to find what your game got, that other games didn't.
+</details>
+
+<details class="details-e">
+<summary>C</summary>
+
+</details>
+
+<details class="details-e">
+<summary>D</summary>
+
+</details>
+
+<details class="details-e">
+<summary>E</summary>
+
+</details>
+
+<hr class="sr">
+
 ## 2. Development
 
 ### 2.1. Tools for your game
@@ -35,3 +88,13 @@ You could use **VSCode**, or Jetbrains IDEs <small>(**CLion** for C++, **Rider**
 
 * Always define who should do what (good planning)
 * Do not stay too much time on details/not quite relevant things (on small games)
+
+<hr class="sl">
+
+## 3. Production/Release
+
+Make the game ready to be released.
+
+* Steam? ...
+* Credits
+* Beta/Way of reporting bugs (and patch them?)
