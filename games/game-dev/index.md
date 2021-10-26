@@ -14,6 +14,8 @@ As many project are **canceled**, it's quite important for neophytes (and others
 * **Do the minimum for your game to be playable**: No need to make your goal "The Witcher3", and in the end, cancel everything. Start with a map, then add a player, etc. Add things little by little. And keep your big goals under the carpet, while slowly coming near them.
 * **Release!**: even if the game has yet to be the game of the year 😂, and you got some minor bugs, users feedback may influence a lot your planning
 
+> **Making a game is a long and harsh road** 😖. Good luck 🚀.
+
 <hr class="sl">
 
 ## 1. Planning
@@ -69,6 +71,7 @@ These are the rules of your game. Basically, what the player can do, and what th
 * What are the items? (perks, loot, usage)
 * Is there a looting system? How do it works?
 * How are money, player life, time, etc. handled?
+* Is the user influencing the world? (ex: `The Witcher 3`, ...)
 * What are the places of your game? Give pics/a list of places such as
   * Shops
   * Houses
@@ -94,10 +97,6 @@ Things about this carefully, for instance, if you are making a zombie game, you 
   * Is there an icon for the settings? the sound?
   * Is there icons for other players?
   * Is there a tchat?
-* How is the user interacting with the game
-  * F12: Full Screen?
-  * Escape: Settings? Pause?
-  * ...
 * What are the screens of your game? <small>(you may make a mockups of each screen)</small>
   * Inventory?
   * Play/Pause/Game Over/...
@@ -105,8 +104,21 @@ Things about this carefully, for instance, if you are making a zombie game, you 
 </details>
 
 <details class="details-e">
-<summary>E</summary>
+<summary>Technical specifications</summary>
 
+* How is the user interacting with the game
+  * F12: Full Screen?
+  * Escape: Settings? Pause?
+  * Z: forward, ...
+  * ...
+* Do the user need a keyboard? a mouse?
+* Is a joystick supported?
+* How can the user become strong? (combos/...)
+* What kind of play-style should be encouraged? discouraged? (ex: bashing/farming?)
+  * are the mobs/monsters respawning? (if not, you could prevent the user from farming)
+  * you can prevent the user from accessing some quests/areas
+
+In most games, we are not telling every combo at the start, because it would be too much. As the user is progressing, he/she is learning more combos/things.
 </details>
 
 <hr class="sr">
