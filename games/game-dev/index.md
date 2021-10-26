@@ -85,8 +85,23 @@ Things about this carefully, for instance, if you are making a zombie game, you 
 </details>
 
 <details class="details-e">
-<summary>D</summary>
+<summary>Game design</summary>
 
+* What's shown in the screen?
+  * Is there a mini-map?
+  * Is there some skills shortcuts?
+  * Is there a life/mana/stamina bar?
+  * Is there an icon for the settings? the sound?
+  * Is there icons for other players?
+  * Is there a tchat?
+* How is the user interacting with the game
+  * F12: Full Screen?
+  * Escape: Settings? Pause?
+  * ...
+* What are the screens of your game? <small>(you may make a mockups of each screen)</small>
+  * Inventory?
+  * Play/Pause/Game Over/...
+* Is there an animation when switching screens? Describe...
 </details>
 
 <details class="details-e">
