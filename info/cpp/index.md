@@ -34,12 +34,12 @@ You will write declarations, meaning the signatures of things <small>(functions,
 
 ```cpp
 // main.hpp
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef MAIN_HPP
+#define MAIN_HPP
 
 // ...
 
-#endif //MAIN_H
+#endif //MAIN_HPP
 ```
 </td>
 </tr>
@@ -47,3 +47,64 @@ You will write declarations, meaning the signatures of things <small>(functions,
 </table>
 
 > To compile your files, you may use `g++` to compile your files, which is working like `gcc` in C.
+
+<hr class="sl">
+
+## Structure
+
+...
+
+<hr class="sr">
+
+## Classes
+
+A class is used like a structure, but its members are **private by default**. In the **header**, you will **declare** a lot of things, and you **may implement inline methods**, while in the **source** file, you will **code everything that was not implemented**.
+
+<table class="table border-dark table-striped table-bordered">
+<thead><tr><th><b>Source</b><br> Implementation 🚀</th><th><b>Headers</b><br>Declaration ✨</th></tr></thead>
+<tbody>
+<tr>
+<td>
+
+```cpp
+// usually xxx.cpp
+#include "xxx.hpp"
+
+// implements constructor(s)
+
+// implements methods
+
+// implements internal operators
+
+// implements external operators
+```
+</td>
+<td>
+
+```cpp
+#ifndef XXX_HPP
+#define XXX_HPP
+
+class Class_name {
+private:
+	// attributes
+public:
+	// constructors, methods
+	// internals operators
+	// another batch of methods
+};
+
+// externals operators
+
+#endif //XXX_HPP
+```
+</td>
+</tr>
+</tbody>
+</table>
+
+* [Visibility](class/visibility.md)
+* [Attributes](class/attributes.md)
+* [Methods](class/methods.md)
+* [Constructors](class/constructors.md)
+* [Operators](class/operators.md)
