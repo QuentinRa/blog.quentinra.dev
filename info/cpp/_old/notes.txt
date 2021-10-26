@@ -1,0 +1,73 @@
+------------------------------------------------
+---------------- NOTES
+------------------------------------------------
+
+constructor(value) to cast something
+type bool
+inline comment
+for(int d) = declare in for
+
+refs : reference another variable, if the referenced is changed, then our too
+const int& r = 3 (const since value not variable)
+- size = 32 or 64 (always the same), so better than 128/64+
+
+---- functions
+
+int f(int &r) => f(variable) // const???
+
+int& f(int &r) => do not return a local reference
+
+default value (int main(int argc = 1, )) => every next value will have
+a default value
+
+surchage/overload => different nb of args / same but different types
+=> no care for return type
+=> different nb of arg, beware of default values
+
+---- utils
+
+rand()
+
+std::cout (c out)
+std::endl (end l)
+
+<< = concatenation
+
+---- namespace (`espaces de nom`): add a prefix to variables/classes/...
+
+namespace ns {} // ns::something or ns::something::s2
+using ns
+using ns::
+
+:: = scope operator `opérateur de résolution de portée`
+
+
+---- exceptions
+
+signal -> stop unless catchedf
+
+throw obj (type, variable, "message")
+
+try {} catch(T n) {} catch(...) {}
+
+---- struct
+
+struct name_s { type foo(); }
+=> `membre de données=attributs`, `fonction membre=méthode`
+
+struct name_s { type foo() const; }
+=> don't modify this
+=> a const reference will automatically call const methods
+
+---- class
+
+x = new x() : instanciation
+
+every member is available inside function
+=> *this
+
+---- better
+
+declare + init
+
+no "using std"
