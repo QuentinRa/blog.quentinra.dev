@@ -121,6 +121,13 @@ Things about this carefully, for instance, if you are making a zombie game, you 
 In most games, we are not telling every combo at the start, because it would be too much. As the user is progressing, he/she is learning more combos/things.
 </details>
 
+> **Pro tip**: check out what others did, what's worked, what did work, what you enjoyed, what you didn't enjoy, etc., when you lack ideas.
+> 
+> * [1-Page Game Design Document](https://vitalzigns.itch.io/1-page-gdd)
+> * [Game Design Document (GDD) Template](https://vitalzigns.itch.io/gdd)
+> * [Game Design Document Template](https://retrocademedia.itch.io/gddtemplate)
+> * [Game Design Document Template](https://toddmitchell.itch.io/game-design-document)
+
 <hr class="sr">
 
 ## 2. Development
@@ -152,3 +159,5 @@ Make the game ready to be released.
 * Steam? ...
 * Credits
 * Beta/Way of reporting bugs (and patch them?)
+
+You should also test your game, while telling the testers what kind of feedback you are interested in.

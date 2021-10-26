@@ -6,14 +6,20 @@
       {
         "tag": "game-engines",
         "name": "Game engines",
-        "desc": "General knowledge about game engines, or games such as the lifecycle, the delta time, etc.",
+        "desc": "General knowledge about game engines.",
         "icon": "<i class=\"bi bi-joystick\"></i>"
       },
       {
         "tag": "game-dev",
         "name": "Game Development",
-        "desc": "Learn advice about game development and links to find your assets (images, sounds, sfx, ...).",
+        "desc": "General knowledge about game development.",
         "icon": null
+      },
+      {
+        "tag": "assets",
+        "name": "Game Assets",
+        "desc": "Links to find your assets (backgrounds, sprites, musics, sounds, sfx, ...)",
+        "icon": "<i class=\"bi bi-box-seam\"></i>"
       }
     ],
     "e2": [
