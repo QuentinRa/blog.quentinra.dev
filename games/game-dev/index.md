@@ -47,14 +47,41 @@ If you don't actually know what kind of game you will make, or at least you got 
 
 * What's the world of your game? (open-world?)
 * What's the story?
+* What's the goal of your Hero?
+  * Short-term
+  * Mid-term
+  * Long-term
+* What are the obstacles in the goal?
+  * Traps
+  * Enemies
+* Can the player die? How would he got a "Game over"? Is there "save points"?
 * What kind of graphics are you planning to use? Something realist, or more something fantasist?
 
 You should try to find what your game got, that other games didn't.
 </details>
 
 <details class="details-e">
-<summary>C</summary>
+<summary>Game Mechanics</summary>
 
+These are the rules of your game. Basically, what the player can do, and what the player can't do.
+
+* Can the Hero, Jump? Walk? Run? Open a door/chest/...?
+* What are the items? (perks, loot, usage)
+* Is there a looting system? How do it works?
+* How are money, player life, time, etc. handled?
+* What are the places of your game? Give pics/a list of places such as
+  * Shops
+  * Houses
+  * Cities
+  * ...
+
+You would also have to define the stats of the player
+
+* is there HP, MP, ATK, ...?
+* is there stamina?
+* is there an inventory? what's its size? etc.
+
+Things about this carefully, for instance, if you are making a zombie game, you may add a stat "infected" turning the player in a zombie if the stat reached 100 (`game over?`).
 </details>
 
 <details class="details-e">
