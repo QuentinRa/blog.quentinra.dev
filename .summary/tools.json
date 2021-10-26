@@ -57,12 +57,6 @@
       "icon": "<i class=\"bi bi-gear\"></i>"
     },
     {
-      "tag": "unity",
-      "name": "Unity",
-      "desc": "An incomplete (in-progress) course about Unity game-engine, starting from scratch, and covering both 2D and 3D.",
-      "icon": "<i class=\"bi bi-journal-richtext\"></i>"
-    },
-    {
       "tag": "utils",
       "name": "Data languages",
       "desc": "A gathering of notes about easy to learn, and easy to master, data languages, such as JSON (and JSON5), or YAML.",
