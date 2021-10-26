@@ -13,6 +13,10 @@ Project Windows => warehouse
 
 Console tab
 
+Rider? Export game?
+=> preferences
+=> splash
+
 ----- shortcuts
 
 Rotate: alt + left mouse

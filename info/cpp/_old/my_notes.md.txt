@@ -71,3 +71,18 @@ every member is available inside function
 declare + init
 
 no "using std"
+
+-----
+
+int numerator_ , denominator_;
+
+> If a reference is a constant reference of a structure/class (explained later), then you can **only call const methods on it**.
+
+#include <ostream>
+#include <oistream>
+
+std::cout
+std::endl (\n)
+<< truc << text << ...
+
+------------ STOP Page 16
