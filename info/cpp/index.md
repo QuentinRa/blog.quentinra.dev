@@ -48,63 +48,99 @@ You will write declarations, meaning the signatures of things <small>(functions,
 
 > To compile your files, you may use `g++` to compile your files, which is working like `gcc` in C.
 
-<hr class="sl">
+<hr class="sr">
 
-## Structure
+## Summary of C language
 
 ...
 
+<hr class="sl">
+
+## What's new in C++
+
+* Comments with `//` (added in C99+ later)
+* Cast with `type(value)` (ex: `int(5.0)`)
+* Type `bool`
+* `for(int i = ...; ... ; ...)` (added in C99+ later)
+
 <hr class="sr">
 
-## Classes
+## References
 
-A class is used like a structure, but its members are **private by default**. In the **header**, you will **declare** a lot of things, and you **may implement inline methods**, while in the **source** file, you will **code everything that was not implemented**.
-
-<table class="table border-dark table-striped table-bordered">
-<thead><tr><th><b>Source</b><br> Implementation 🚀</th><th><b>Headers</b><br>Declaration ✨</th></tr></thead>
-<tbody>
-<tr>
-<td>
+A reference is a sort of pointer to a variable. You can modify the reference, which will modify the reference variable, but deleting a reference (ex: `ref = null`) won't destroy the referenced variable. **References** are better than pointer because their size is **constant** (either 32 or 64 bits), so you can actually save memory 🚀.
 
 ```cpp
-// usually xxx.cpp
-#include "xxx.hpp"
-
-// implements constructor(s)
-
-// implements methods
-
-// implements internal operators
-
-// implements external operators
+float my_float = 5.0f;
+float& ref_my_float = my_float;
+ref_my_float = 6.0;
+// both are 6.0
 ```
-</td>
-<td>
+
+If needed, you can declare constant reference, which means you do not need another variable that you will reference
 
 ```cpp
-#ifndef XXX_HPP
-#define XXX_HPP
-
-class Class_name {
-private:
-	// attributes
-public:
-	// constructors, methods
-	// internals operators
-	// another batch of methods
-};
-
-// externals operators
-
-#endif //XXX_HPP
+const float& ref_my_float = 5.0f;
 ```
-</td>
-</tr>
-</tbody>
-</table>
 
-* [Visibility](class/visibility.md)
-* [Attributes](class/attributes.md)
-* [Methods](class/methods.md)
-* [Constructors](class/constructors.md)
-* [Operators](class/operators.md)
+A reference can be converted to const, and both can dereferenced.
+
+```cpp
+int x = 5;
+int& y = x; // value to reference
+const int& z = y; // ref to const ref
+int a = y; // ref to int
+int b = z; // const ref to int
+y++; // x=y=6 and a=b=5
+```
+
+<hr class="sl">
+
+## Functions
+
+A function is a bloc of code.
+
+<details class="details-e">
+<summary>Default values</summary>
+
+We can give **default values** to parameters. If a parameter got a default value, then every following parameter must have a default value
+
+```cpp
+void abc(int a, int b=1, float c=2.0f) { /* ... */ }
+```
+
+> **Default values** are only given in the declaration (header), and **not** in the implementation (source). This is do not take into account functions that are not in a header.
+
+</details>
+
+<details class="details-e">
+<summary>Overload</summary>
+
+We can **overload** (`surcharger`) a function, meaning that we can write functions with the same name but ...
+
+```cpp
+// return type do not matter
+// parameters names do not matter
+void f(int a, int b) { /* ... */ }
+// we can have more/fewer arguments : no problems
+void f(int a, int b, int c) { /* ... */ }
+// if we got the same number of arguments
+// types must be different
+void f(int a, float b) { /* ... */ }
+// ok but we can't call f(int,int,int) because
+// we don't know which function it is
+void f(int a, int b, int c, int d = 0) { /* ... */ }
+```
+</details>
+
+<details class="details-e">
+<summary>References</summary>
+
+```cpp
+void f(int& f) {}
+void f(const int& f) {}
+int& f(int& f) {}
+const int& f(int& f) {}
+const int& f(const int& f) {}
+```
+
+</details>
