@@ -48,6 +48,22 @@ public:
 };
 ```
 
+And we could also do
+
+```cpp
+struct my_structure {
+private:
+    float my_float_;
+public:
+    my_structure(float f);
+};
+
+
+my_structure::my_structure(float f) : my_float_(f) {
+	// if needed
+}
+```
+
 <hr class="sr">
 
 ## Copy constructor

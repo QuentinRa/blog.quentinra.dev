@@ -51,6 +51,27 @@ Notes
 
 <hr class="sr">
 
+## Inheritance : Constructors & Destructors
+
+* Constructor are called **from parent to children**
+
+```cpp
+struct Parent {
+public:
+    Parent() {};
+    // ~same as Parent() = default;
+};
+struct Child : public Parent {
+public:
+    // simply call the parent constructor Parent()
+    Child() : Parent() {};
+};
+```
+
+* Destructors are called **from children to parent** 🔄
+
+<hr class="sl">
+
 ## Inheritance in C++ - Liskov principle
 
 In C++, if C is inheriting from A and B, then in memory
