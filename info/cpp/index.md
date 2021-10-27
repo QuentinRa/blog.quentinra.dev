@@ -118,6 +118,7 @@ We can **overload** (`surcharger`) a function, meaning that we can write functio
 * **You can create functions with the same name**
   * with more/fewer arguments
   * with arguments having different types
+  * const or not const (see structures and classes)
 
 ```cpp
 void f(int a, int b) { /* ... */ }
@@ -231,7 +232,8 @@ object.my_method();
 * Members
   * [Attributes](class/attributes.md)
   * [Methods](class/methods.md)
-* [Constructors](class/constructors.md)
+* 6 methods available in every structure/class
+  * [Constructors](class/constructors.md)
 * [Operators](class/operators.md)
 
 > **A class is a structure, but its members are private by default**. **Simply replace struct with class**. There is no other difference, so you may use whichever you want. I will follow what some folks are doing. If my structure is complex, then I will use a class, otherwise if it's like a record in Java, something with some methods, but mainly used to store data, then I will use a structure. **Structure are mainly here for backward compatibility with C** after all.
