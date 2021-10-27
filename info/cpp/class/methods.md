@@ -4,7 +4,7 @@
 
 A method is something that may use the attributes, and do something on the current object.
 
-<hr class="sr">
+<hr class="sl">
 
 ## Inline methods
 
@@ -19,13 +19,13 @@ public:
 };
 ```
 
-> **This is increasing the size of your structure, so this may not be a good idea**. You may declare methods like below, using the keyword `inline` to let the compiler pick whether or not this method should be inline. **Note that the syntax above is an implicit `inline`, so we are "fine"**.
+> **This is increasing the size of your structure, so this may not be a good idea**. You may declare methods like below (outside the class), using the keyword `inline` to let the compiler pick whether or not this method should be inline. **Note that the syntax above is an implicit `inline`, so we are "fine"**.
 
 <hr class="sr">
 
 ## Other methods
 
-Most of the time, we will only declare the method in the **header**
+Most of the time, we will only declare methods in the **header**
 
 ```cpp
 struct my_structure {

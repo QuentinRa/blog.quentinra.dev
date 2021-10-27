@@ -7,6 +7,12 @@
       "icon": "<i class=\"bi bi-globe\"></i>"
     },
     {
+      "tag": "python",
+      "name": "Python",
+      "desc": "An incomplete (in-progress) course about Python.",
+      "icon": "<i class=\"bi bi-terminal-fill\"></i>"
+    },
+    {
       "tag": "java",
       "name": "Java",
       "desc": "The course is explaining a lot of concepts up to Java16, including graphical libraries like SWING, AWT, or JavaFX.",
