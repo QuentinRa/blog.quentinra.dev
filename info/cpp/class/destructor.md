@@ -2,9 +2,9 @@
 
 [Go back](../index.md#structures-and-classes)
 
-A destructor is automatically called when the object is destroyed. A destructor has **the same name as the class, prefixed by a tilde (`~`)**. It takes **no arguments**, and as the constructor, it d**oes not have a return type**.
+A destructor is automatically called when the object is destroyed. A destructor has **the same name as the class, prefixed by a tilde (`~`)**. It takes **no arguments**, and as the constructor, it **does not have a return type**, it's public and do nothing by default.
 
-> **Usage?**: free resources, update static attributes (explained later).
+> **Usage?**: free resources, close resources, update static attributes (explained later).
 
 <hr class="sl">
 
@@ -16,5 +16,19 @@ public:
     ~my_structure() {
         // some code
     }
+};
+```
+
+<hr class="sr">
+
+## Default Destructor
+
+You may declare a default destructor with
+
+```cpp
+struct my_structure {
+public:
+	// sort of {}
+    ~my_structure() = default;
 };
 ```

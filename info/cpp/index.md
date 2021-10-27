@@ -233,7 +233,7 @@ object.my_method();
   * [Attributes](class/attributes.md)
   * [Methods](class/methods.md)
 * 6 methods available in every structure/class
-  * [Constructors](class/constructors.md)
+  * [Constructors](class/constructors.md): Constructor, Copy Constructor, and Move Constructors
   * [Destructor](class/destructor.md)
 * [Operators](class/operators.md)
 
