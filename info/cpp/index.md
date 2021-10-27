@@ -214,7 +214,7 @@ catch(...) {} // fallback
 
 ## Structures and Classes
 
-Now, we can declare both fields (**attributes**) and functions (**methods**) in a **structure**. When we are creating a new instance, we are creating what we call an **object**.
+Now, we can declare both fields (**attributes**) and functions (**methods**) in a **structure**. When we are creating a new instance, we are creating what we call an **object** or **instance**.
 
 ```cpp
 struct my_structure {
@@ -232,6 +232,7 @@ object.my_method();
 * Members
   * [Attributes](class/attributes.md)
   * [Methods](class/methods.md)
+* [Static](class/static.md)
 * 6 methods available in every structure/class
   * [Constructors](class/constructors.md): Constructor, Copy Constructor, and Move Constructors
   * [Destructor](class/destructor.md)
