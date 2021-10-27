@@ -50,3 +50,44 @@ void my_structure::set_my_float( float my_float )
     my_float_ = my_float;
 }
 ```
+
+<hr class="sl">
+
+## Getters and Setters
+
+* Getters (`accesseurs`) are a method returning something. They are usually starting with `get` or `is`. They are usually **not** changing the object.
+
+* Setters (`mutateurs`) are a method setting something. They are usually starting with `set`. They are usually changing attributes of the object.
+
+<hr class="sr">
+
+## this
+
+As you could see in the function we declared, we could use the attributes of our functions inside `get_my_float` and `set_my_float`. This is because, **in every method of our class** (and only these), we got a pointer `this` on which we can
+
+* call methods of our class
+* call attributes of our class
+
+To make things easier for us, it can be omitted, and that's why it was not present until now. With this, your code would looks like this
+
+```cpp
+float my_structure::get_my_float() const
+{
+    return this->my_float_;
+}
+
+void my_structure::set_my_float( float my_float )
+{
+    this->my_float_ = my_float;
+}
+```
+
+> This pointer "this" is simply a reference to the current object, allowing us to check its values for our attributes.
+
+<hr class="sl">
+
+## const
+
+As you could see, a getter was `const`. **We are adding this keyword right after the right parenthesis of the arguments**. We learnt before that we could have **const references**. Such a reference can't be modified, so you can only call `const` methods on it. **This is only working for methods inside a structure/class**.
+
+> To be accurate, it means that "this" is a const reference, so we can't modify "this", that's why we are only allowed to call "const" methods.
