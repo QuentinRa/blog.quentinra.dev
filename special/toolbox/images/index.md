@@ -13,7 +13,6 @@ When dealing with images, you may want
 * **create/edit**
   * to remove the background (<https://www.remove.bg/>)
   * to make/split/crop/... a GIF/a normal image (<https://ezgif.com/>)
-  * <https://www.artbreeder.com/>
 * **resize**
   * resize a lot of images (<https://picresize.com/>)
   * resize one image (<https://www.resizepixel.com/>)
