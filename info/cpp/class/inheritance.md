@@ -96,3 +96,95 @@ This is useful, because a function working for **A**, will also work for **C**.
 
 > CPP Core guidelines are advising us [to not slice](https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines-slicing.html).
 
+<hr class="sr">
+
+## Redefinitions / override
+
+As this examples is showing, we can call the parent method in the child class, either internally of externally (if public inheritance).
+
+```cpp
+struct A { void f() {} };
+// we can call super.f() with A::f()
+struct B : public A { void f() overrides { A::f(); } };
+
+// we can call f
+B b;
+b.f();
+b.A::f(); // super.f
+```
+
+<hr>
+
+### Problem 1
+
+If we are **calling a method of A on B**, and **this method is not present in B**, then **B is** implicitly **casted to A**, and the method is called on A. **If this method is calling another method of A**, **even if you redefined this method in B**, **this is the method in A that will be called**.
+
+```cpp
+struct A {
+	void f() { g(); }; // calling g
+	void g() { std::cout << "A"; }
+};
+struct B : public A {
+	// override g
+	void g() { std::cout << "B"; }
+};
+
+B b;
+b.f(); // "A" 😱
+```
+
+To prevent this behavior, you must **declare your methods in the parent class "virtual"** and **override them** in the child class.
+
+```cpp
+struct A {
+	void f() { g(); }; // calling g
+	// now g is virtual
+	virtual void g() { std::cout << "A"; }
+};
+struct B : public A {
+	// override g, we added "override"
+	void g() override { std::cout << "B"; }
+};
+
+B b;
+b.f(); // "B" 😎
+```
+
+<hr>
+
+### Problem 2
+
+If a class D is **inheriting from two classes** B and C, **and both inheriting a class A**, then we will get some **duplicates**. To prevent this, we need to add **virtual before the modifier**, when we are inheriting such a class.
+
+```cpp
+struct A { };
+// do not duplicate A
+struct B : virtual public A { };
+struct C : virtual public A { };
+// everything is fine, no need to prefix with B:: or C::
+struct D : public B, public C { };
+```
+
+<hr>
+
+### Problem 3
+
+```cpp
+struct A { virtual void print() { std::cout << "A"; } };
+struct B : public A { void print() override { std::cout << "B"; } };
+
+A a = B();
+a.print(); // "A" 😱
+```
+
+While this is working 🙄, so you must use pointer for generics stuff
+
+```cpp
+A* p_a = new B;
+p_a->print(); // "B" 😎
+delete p_a;
+
+// if there is no virtual destructor in A
+// we should do
+// delete (B*) p_a;
+```

@@ -152,6 +152,7 @@
 * <https://www.admecindia.co.in/courses/web-design-courses-delhi/>
 * <https://www.w3docs.com/>
 * <https://www.rankred.com/>
+* <https://www.programiz.com/>
 
 ---
 
