@@ -25,8 +25,14 @@
     "e2": [
       {
         "tag": "unity",
-        "name": "Unity",
-        "desc": "A course covering general knowledge about unity. This course is further developed in Unity 2D or Unity 3D.",
+        "name": "Unity - General",
+        "desc": "A course covering general knowledge about unity. This course is further developed in Unity Editor.",
+        "icon": "<i class=\"bi bi-journal-bookmark\"></i>"
+      },
+      {
+        "tag": "unity-editor",
+        "name": "Unity - Editor",
+        "desc": "A course covering everything I know about unity editor. This course is further developed in Unity 2D or Unity 3D.",
         "icon": "<i class=\"bi bi-layers\"></i>"
       },
       {
