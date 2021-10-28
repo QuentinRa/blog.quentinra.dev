@@ -52,19 +52,6 @@ Note that you can use the 3 vertical dots to remove a component, or easily open 
 
 ## User-friendly scripts
 
-If you want, you may **add fields in the inspector** as you have for other sections, like "Number" here.
-
-![Create field inspector unity](images/fields.png)
-
-Either make the attribute **public** or add **[SerializeField]** before the attribute (recommended).
-
-```cs
-// Note: can be on two lines, or one
-[SerializeField] private int number = 0;
-// same as above :(, but this is "a side effect"
-public int number = 0;
-```
-
 <details class="details-border">
 <summary>Of course, you can make something look better by using ToolTips, Menus, Headers, Spaces, etc.</summary>
 
@@ -210,12 +197,6 @@ A tilemap is a map of tiles, and a tile is an image. You can have a Rectangular 
 * and you move your tiles (grass, ...) to your map, in the right layer
 
 Creating a layer allows you to put things on top of another. In Unity, you will have a grid and each tilemap is a layer. If you want something to be above or below the player, then play with the property `Order in Layer`.
-
-<hr class="sl">
-
-## Code
-
-I'm using Rider to edit my C# files. I'm gone to `edit > preferences > external tools` and selected Rider as External tools' editor.
 
 <hr class="sr">
 

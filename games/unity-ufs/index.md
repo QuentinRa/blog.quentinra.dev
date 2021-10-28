@@ -80,3 +80,26 @@ This course is a gathering of notes and tips to make your scripts cleaner, and m
 + }
 ```
 </details>
+
+<hr class="sl">
+
+## Serialize Field
+
+When creating a Script, it's shown in the inspector. You can add fields inside the inspector too, to allow someone (or yourself) to easily change some values/parameters.
+
+The **bad way** to do this, is to set an **attribute public**. Indeed, as a "side effect", it will be shown inside the editor, but it also means that any other class know this attribute, and this may lead to problems later.
+
+The **right way** to do this, is to declare a serialized field.
+
+```cs
+[SerializeField] private int number = 0;
+// or on two lines 😶
+[SerializeField]
+private int number = 0;
+// or 🙄 (bad 👎)
+public int number = 0;
+```
+
+Resulting in
+
+![Create field inspector unity](images/fields.png)
