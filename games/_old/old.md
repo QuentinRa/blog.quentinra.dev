@@ -57,14 +57,10 @@ Note that you can use the 3 vertical dots to remove a component, or easily open 
 
 ```cs
 // you renamed something
-[SerializeField]
-[FormerlySerializedAs("OldName")] private int number = 0;
 
 // make a class available in "folder/.../name" in the
 // component selector
 [AddComponentMenu("folder/class")]
-// adding tooltips
-[Tooltip("blah blah blah")]
 // The following attributes will be inside this header
 [Header("a header")]
 // ...

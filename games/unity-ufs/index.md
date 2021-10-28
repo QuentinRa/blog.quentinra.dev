@@ -103,3 +103,27 @@ public int number = 0;
 Resulting in
 
 ![Create field inspector unity](images/fields.png)
+
+<details class="details-e">
+<summary>Rename a Serialize Field</summary>
+
+```cs
+[SerializeField]
+[FormerlySerializedAs("oldName")] private int number = 0;
+```
+</details>
+
+<details class="details-e">
+<summary>Tooltips</summary>
+
+Maybe, the name of your attribute isn't providing enough information for the user to know what should be in this field. You should always add a **Tooltips**, shown when the user is hovering (=mouse stay over) the field.
+
+```cs
+[Tooltip("Some description blah blah blah")]
+[SerializeField] private int number = 0;
+```
+
+![Unity Serialize Field - tooltip](images/tooltip.png) (mouse hovering "key")
+
+> **Pro tip**: this is not an excuse to give bad names to your fields (as I did with "number" or "key").
+</details>
