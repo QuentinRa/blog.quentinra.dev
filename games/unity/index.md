@@ -53,3 +53,21 @@ Unity projects are **made of a lot of files**, including **big files too**, so y
 </details>
 
 Once the installation is complete, you need to add+commit your files (=save). You can push your saves on the server (=push), or pull the saves on the server (=pull). Check the GIT course if needed.
+
+<hr class="sr">
+
+## Pick your IDE
+
+By default, the IDE used by Unity when editing scripts is **VSCode**. But, you may change this by going in
+
+* edit > preferences > external tools
+* pick your IDE / Browse it
+
+Personally, I'm using [**Rider**](https://www.jetbrains.com/rider/) ([features](https://www.jetbrains.com/rider/features/) 🚀, paid, free for students). If Rider is not detected
+
+* Search Rider in Windows Search bar
+* Right-click > Shown in explorer
+* Right-click again > Shown in explorer
+* Double-click on the path > copy the path
+* Then in Unity, select browser, and paste the path
+* Then select "rider64" and you are good to go
