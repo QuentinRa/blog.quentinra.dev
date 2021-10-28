@@ -5,6 +5,7 @@
 Export game?
 => preferences
 => splash
+=> build optimisation
 
 -----------------------------------------------------------------
 ------------------------- Game Objects
@@ -114,6 +115,14 @@ Click on the "..." and debug to enable debug mode
 
 In 2D: freeze rotation (good for platformers)
 => camera INSIDE the player => follow
+
+The image size must be a power of two, so you can compress it. You can compress sounds too (50% seems good).
+
+You can and should group variables. You can use `[Header("name")]` / `[Space(value)]` before your variables declarations.
+
+In RigidBodyComponent, in `Interpolate`, enable interpolation for the main character, as the [documentation is suggesting](https://docs.unity3d.com/ScriptReference/Rigidbody-interpolation.html).
+
+Enable `post-processing` in rendering.
 
 -----------------------------------------------------------------
 ------------------------- UserInterface (UI)

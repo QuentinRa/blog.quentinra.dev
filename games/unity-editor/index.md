@@ -251,3 +251,35 @@ Debug.LogWarning("warning");
 Debug.LogError("error");
 ```
 </details>
+
+<hr class="sr">
+
+## Components
+
+...
+
+<hr class="sl">
+
+## Scripts
+
+...
+
+<hr class="sr">
+
+## Input
+
+...
+
+<hr class="sl">
+
+## User Interface (UI)
+
+...
+
+<hr class="sr">
+
+## Digging into topics
+
+* Camera
+* Maps
+* Light
