@@ -105,7 +105,7 @@ Resulting in
 ![Create field inspector unity](images/fields.png)
 
 <details class="details-e">
-<summary>Rename a Serialize Field</summary>
+<summary>Rename a Serialize Field 👍</summary>
 
 ```cs
 [SerializeField]
@@ -114,7 +114,7 @@ Resulting in
 </details>
 
 <details class="details-e">
-<summary>Tooltips</summary>
+<summary>Tooltips 😎</summary>
 
 Maybe, the name of your attribute isn't providing enough information for the user to know what should be in this field. You should always add a **Tooltips**, shown when the user is hovering (=mouse stay over) the field.
 
@@ -129,7 +129,7 @@ Maybe, the name of your attribute isn't providing enough information for the use
 </details>
 
 <details class="details-e">
-<summary>Headers</summary>
+<summary>Headers ✨</summary>
 
 You can make categories with Headers. This is a great way of sorting your serialize field, if you got a lot of them.
 
@@ -144,7 +144,7 @@ You can make categories with Headers. This is a great way of sorting your serial
 </details>
 
 <details class="details-e">
-<summary>Spaces</summary>
+<summary>Spaces ✨✨</summary>
 
 If headers aren't enough, you can add some spacing too.
 
@@ -157,4 +157,19 @@ If headers aren't enough, you can add some spacing too.
 ```
 
 ![Unity Serialize Field - spacing](images/spacing.png)
+</details>
+
+<details class="details-e">
+<summary>New Menu 🚀</summary>
+
+When click on "adding component", you got a list of menus such as "Audio", ... You can add a new menu here 🚀!
+
+```cs
+// this is a path, you can subfolders (=nested menus) with /
+[AddComponentMenu("CubeMaster/Movement")]
+public class MovementManager : MonoBehaviour {}
+```
+
+![Unity Serialize Field - New Menu1](images/new_menu_1.png)
+![Unity Serialize Field - New Menu2](images/new_menu_2.png)
 </details>

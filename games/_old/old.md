@@ -34,27 +34,12 @@ public class Example : MonoBehaviour
 
 After removing unused imports, I added the Awake function. This is a sample of the 3 functions you will use.
 
-These scripts can be added to components, by **clicking on a component**, then using **"add component"** in the inspector window. Search your scripts (ex: "Example") and add them.
-
-![add component](images/script2.png)
-
-Note that you can use the 3 vertical dots to remove a component, or easily open a script.
-
-> If you are unsure about what's a method/class/attribute, you may read the Java course or watch some videos 🚀.
 </div>
 </div>
 
-> **Note**: In a Script, you can use `Debug.Log(something)` to print something in the editor, inside the console ![Unity console](images/console.png). You got variants such as `Debug.LogWarning` or `Debug.LogError` if needed.
->
 > **Note**: In C#, you can use `var` instead of the type of a variable when creating a variable with a value, to ask the compiler to infer a type. This is a kind of lazy practice 🙄.
 
 <hr class="sl">
-
-```cs
-// make a class available in "folder/.../name" in the
-// component selector
-[AddComponentMenu("folder/class")]
-```
 
 <details class="details-border">
 <summary>Note that you can easily link components using this</summary>
