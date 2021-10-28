@@ -6,7 +6,7 @@
 
 This page is a **summary of the syntax that we are using** in Markdown, and how it is rendered **on this website**.
 
-**Version**: <a href="https://github.com/lgs-games/memorize/blob/master/.github/STATIC_PAGES/MARKDOWN_SYNTAX.md" target="_blank" rel="noopener noreferrer">1.4.3</a> (2021-09-14)
+**Version**: <a href="https://github.com/lgs-games/memorize/blob/master/.github/STATIC_PAGES/MARKDOWN_SYNTAX.md" target="_blank" rel="noopener noreferrer">1.5.0</a> (2021-10-28)
 
 <div class="table-of-contents w-25 mx-auto">
 
@@ -20,7 +20,8 @@ This page is a **summary of the syntax that we are using** in Markdown, and how 
 6. [Table](#content-6-table)
 7. [Special](#content-7-special)
 8. [Math](#content-8-math)
-9. [Usage](#content-9-usage)
+9. [Details](#content-9-details)
+10. [Usage](#content-10-usage)
 </div>
 
 <hr class="sep-both">
@@ -149,7 +150,41 @@ But, you should note
 
 <hr class="sep-both">
 
-## 9. Usage
+## 9. Details
+
+Since **version 1.5.0**, it's a good practice to use details to hide some content, or to let the user hide something.
+
+```html
+<details><summary>Title</summary>
+
+Some content, Markdown is allowed.
+</details>
+```
+
+The result is different according to the classes you gave to **details**.
+
+<table class="table table-striped table-bordered border-dark"><tr>
+
+<th>(none)</th>
+<th>details</th>
+<th>details-e</th>
+<th>details-border</th>
+<th>details-s</th>
+
+</tr><tr>
+
+<td><details><summary>Title</summary>Some content</details></td>
+<td><details class="details"><summary>Title</summary>Some content</details></td>
+<td><details class="details-e"><summary>Title</summary>Some content</details></td>
+<td><details class="details-border"><summary>Title</summary>Some content</details></td>
+<td><details class="details-s"><summary>Title</summary>Some content</details></td>
+
+</tr></table>
+
+
+<hr class="sep-both">
+
+## 10. Usage
 
 * You should **split a page into sections** using a separator, the code is
 
