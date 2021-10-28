@@ -1,10 +1,4 @@
-# Be good, use folders!
-
-> **Prefabs**: if you are planning to duplicate a GameObject, you should create a Prefabs. Simply drag and drop a GameObject in the Project Window. This created a file. Double-click on the file to edit the prefab, and this will edit the properties of every instance of this Prefab. You can create a new instance by drag and dropping the prefabs in the hierarchy window. On each instance, in the property window, you may see a small blue line on a property, meaning that the prefabs and this instance got a different value for this property.
-
-<hr class="sl">
-
-## Scripts
+# Scripts
 
 Scripts are in **C#**, an old version of C#. From [this page about the C# compiler](https://docs.unity3d.com/2020.3/Documentation/Manual/CSharpCompiler.html), Unity 2020.3 (LTS) is using **C# 8.0**. In **2021.2+**, they are using **C# 9.0**, but of course, we are not using a non-LTS version. You should also note that even if they are using versions 8.0 or 9.0, **every feature of C# is not available** (check on the page above, for "Unsupported features").
 
@@ -281,6 +275,99 @@ private void MyMethod()
 
 <hr class="sr">
 
-## Sources
+Unity is providing generic support for your games, sometimes you may want more. You can add **plugins** for that. For instance, the [TopDownEngine](https://assetstore.unity.com/packages/templates/systems/topdown-engine-89636) (a **paid** asset) is providing a lot of help to create 2D/3D TopDownGames <small>(check "templates" on the unity store to see what you could expect from game templates, as you may save a lot of time with them)</small>.
 
-[The WHOLE LIST OF References](refs.md)
+## Tilemap
+
+A tilemap is a map of tiles, and a tile is an image. You can have a Rectangular or an Isometric tilemap. This is a convenient way of creating 2D maps since
+
+* you create a palette
+* you create tiles layers (ground, ...)
+* and you move your tiles (grass, ...) to your map, in the right layer
+
+Creating a layer allows you to put things on top of another. In Unity, you will have a grid and each tilemap is a layer. If you want something to be above or below the player, then play with the property `Order in Layer`.
+
+<hr class="sl">
+
+## Code
+
+I'm using Rider to edit my C# files. I'm gone to `edit > preferences > external tools` and selected Rider as External tools' editor.
+
+<hr class="sr">
+
+## Properties
+
+The ``2D Collider`` is handling the collision for you, with any other GameObjects having this component.
+
+The ``RigidComponent`` is something that you may use to add things like gravity and make your player fall... If you don't want your "player to fall" but you want a Rigid body, then some are setting gravity to 0.
+
+## Sprites
+
+A sprite is an image, and a sprite sheet is a big image having a lot of sprites. In unity, click on a sprite sheet then in property, set `Sprite mode` to `Multiple` to tell unity that this image is composed of multiples images. Then in sprite editor, slide the image (either using automatic or grid) and apply your changes. You should now see only one frame/sprite when dragging your sprite inside the scene.
+
+You may (or not)
+
+* change filter mode (to point)
+* disable compression
+* change the pixel by unit
+
+<hr class="sr">
+
+## Animations
+
+"Animations" are made of an animator (handling the animations/states) and animations. An animation would be idle, running, jumping, ... while the animator would define what makes you move from idle to running.
+
+Create and add an animator controller to a GameObject. Then create animations (you need to select the time and the image loaded at this time). Then in the animator, you must add the transitions.
+
+* select a parameter
+	* in animator, create a parameter
+	* in the transition, add a condition on the parameter
+	* in the code, change the parameter
+
+```cs
+// let's say that at some point you did
+Animator anim = GetComponent<Animator>();
+// then you can write in Update
+// (you should not use a string but an ID, stored in a static 
+// const using Animator.StringToHash("name"))
+anim.SetBool("name", false);;
+anim.SetFloat("name", 0);;
+anim.SetInteger("name", 0);;
+anim.SetTrigger("name");;
+
+// some are also using this
+// instead of parameters and so on (so you are
+// manually asking for an animation)
+anim.Play("anim_name");
+```
+
+* you may uncheck ``Has exit time`` so you don't have a delay when changing state
+* ``Any state`` means that if the condition is true, then from any state you can move to another state
+
+This is a summary of this [great video](https://www.youtube.com/watch?v=Gf8LOFNnils&ab_channel=PandemoniumGames) if you can watch it, that's better.
+
+<hr class="sr">
+
+## Resources visited
+
+TileMaps
+
+* [TileMap](https://www.raywenderlich.com/23-introduction-to-the-new-unity-2d-tilemap-system#toc-anchor-006)
+* [Generate 2.5d map](https://hexiledgames.itch.io/25d-tilemaps-and-voxel-terrain-generator)
+* [3D Map editor](https://fertile-soil-productions.itch.io/mast)
+
+Assets
+
+* [szadiart (great / paid)](https://szadiart.itch.io/)
+* [Clean GUI](https://assetstore.unity.com/packages/2d/gui/flat-clean-gui-over-200-png-files-110987)
+* [MMORPG engine (not tested)](https://assetstore.unity.com/packages/templates/systems/ummorpg-2d-remastered-mmorpg-engine-102632)
+* [Networking library](https://github.com/vis2k/Mirror)
+
+UI
+
+* [MainMenu UI](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode)
+* [Simple UI](https://www.youtube.com/watch?v=xmR07iBW7zk&ab_channel=CocoCode)
+
+Youtube channels
+
+* [GameDevGuide](https://www.youtube.com/c/GameDevGuide/videos) (great tutorials about UI and general stuffs)

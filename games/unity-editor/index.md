@@ -196,3 +196,33 @@ You can create a folder with <code>Right-click > Create > Folder</code>. Once yo
 * Create a **new scene** with <code>Right-click > Create > Scene</code>
 * Create a **new material** with <code>Right-click > Create > Material</code>
 </details>
+
+<details class="details-e">
+<summary>Create Prefabs 📚✨</summary>
+
+You may want to create a "**template**" for your Game Objects. For instance, every bullet is the same. You could duplicate the Game Object. But what is you want to change something? Will you manually edit everything? No way! You should create a **Prefab** (Prefabricated game object).
+
+**Create a prefab**
+
+* Simply **drag and drop** an existing game object, **from** the **hierarchy** window, **to** the **project window**, inside a folder "Prefabs"
+
+**Instances of a prefab**
+
+* **Drag and drop a prefab**, either **inside the scene**, or inside the **hierarchy**
+* Every instance of this Prefab is now blue inside the hierarchy window
+
+**Edit the prefab**
+
+* Simply **double-click** on the **prefab** inside the **project window**
+* It will open a prefab inside the scene window, with its hierarchy window
+* **It will update the values for every instance** (aside from transform, or properties modified by the instance)
+
+**Edit one instance**
+
+* You can edit prefabs instances as you always did, it won't change the prefab
+* **If the prefab and the instance got different values in a field**, then
+  * the **line** with a different value will have a **blue left border**
+  * the different **value** will be in **bold**
+* You can **revert/update the prefab** a value with a **right-click on the name of the field**
+* **You can see every overridden property by click on "override"**, right below "layer" in the inspector.
+</details>

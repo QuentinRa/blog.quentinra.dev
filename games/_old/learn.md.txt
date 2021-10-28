@@ -2,8 +2,6 @@
 ------------------------- Unity
 -----------------------------------------------------------------
 
-Project Windows => warehouse
-=> keep things tidy
 => Console tab
 
 Export game?
