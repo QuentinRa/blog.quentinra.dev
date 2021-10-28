@@ -1,15 +1,5 @@
 # Be good, use folders!
 
-The project files are usually split into folders, using these folders names
-
-* **Animations**, **Audio**, **Cutscene**
-* **Editor**, **Images**, **Materials**
-* **Plugins**
-* **Prefabs**: your prefabs
-* **Scenes**: your scenes (unity scene files, a screen of your game)
-* **Scripts**: your C# scripts (.cs)
-* **Settings**, **Shaders**
-
 > **Prefabs**: if you are planning to duplicate a GameObject, you should create a Prefabs. Simply drag and drop a GameObject in the Project Window. This created a file. Double-click on the file to edit the prefab, and this will edit the properties of every instance of this Prefab. You can create a new instance by drag and dropping the prefabs in the hierarchy window. On each instance, in the property window, you may see a small blue line on a property, meaning that the prefabs and this instance got a different value for this property.
 
 <hr class="sl">

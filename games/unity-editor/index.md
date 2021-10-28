@@ -141,7 +141,7 @@ Select in this list of icons (or using their shortcut) a tool. You can move, rot
 > * <kbd>Left-Click/Middle-click</kbd> to move your point of view (not the camera)
 > * <kbd>CTRL</kbd> when moving something, while make the position change by 0.25.
 
-<hr class="sl">
+<hr class="sr">
 
 ## Inspector window
 
@@ -173,3 +173,26 @@ You may also use "Copy component" and "Paste component as new" or "Paste compone
 </div></div>
 
 > **Pro tip**: in the container in which you got "inspector", on the same line, you got three small dots too. You can switch from "normal" to "debug" mode here, which will show you way more fields in the inspector.
+
+<hr class="sl">
+
+## Project window
+
+The project window is, as a wise man said, a warehouse. This is a file explorer allowing you to explore your scenes, your assets <small>(images, textures, materials, sounds, etc.)</small> and work on them. **The project files should be split into folders**, such as
+
+* **Animations**, **Audio**, **Cutscene**
+* **Images**, **Materials**
+* **Plugins**, **Prefabs**, **Scenes**
+* **Scripts**: your C# scripts (.cs)
+* **Settings**, **Shaders**
+
+That's not the only thing you can do here! This is not a simple explorer.
+
+<details class="details-e">
+<summary>Create new scenes/materials/... 🚀</summary>
+
+You can create a folder with <code>Right-click > Create > Folder</code>. Once you did, double-click to move inside your new folder, and you can
+
+* Create a **new scene** with <code>Right-click > Create > Scene</code>
+* Create a **new material** with <code>Right-click > Create > Material</code>
+</details>
