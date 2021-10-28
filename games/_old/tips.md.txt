@@ -20,8 +20,6 @@ Use `Debug.log("")` to add logs of your game.
 
 You can and should group variables. You can use `[Header("name")]` / `[Space(value)]` before your variables declarations.
 
-Group objects into groups using a GameObject (you may use "create empty game object").
-
 In RigidBodyComponent, in `Interpolate`, enable interpolation for the main character, as the [documentation is suggesting](https://docs.unity3d.com/ScriptReference/Rigidbody-interpolation.html). 
 <hr class="sl">
 

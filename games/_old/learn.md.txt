@@ -2,18 +2,12 @@
 ------------------------- Unity
 -----------------------------------------------------------------
 
-Hierarchy important in 2D => Render order
-=> last => last rendered
-
-Can modify even when the game is running
-=> lost
-
 Project Windows => warehouse
 => keep things tidy
 
 Console tab
 
-Rider? Export game?
+Export game?
 => preferences
 => splash
 
@@ -22,34 +16,13 @@ Rider? Export game?
 Rotate: alt + left mouse
 pan around: Shift + middle mouse
 F : focus in the hierarchy
-CTRL-D : duplicate
 Wheel: scroll
 CTRL-Z : rollback
-F2: rename
 CTRL and move to move something nicely
-
-Alt expand/collapse: expand/collpase all
 
 -----------------------------------------------------------------
 ------------------------- Game Objects
 -----------------------------------------------------------------
-
-Create new one
-=> Object inside another
-=> Group
-=> child are following its parent => position relative to parent
-
-transform.position
-transform.Rotate(_rotatingAxis, Time.deltaTime * angle, Space.World);
-=> local axis (Space.Self) or global axis (Space.World)
-
-Z-fighting
-=> two items at the same location, overlapping
-=> bug when rendering
-=> trick: increase the z-values by 0.01
-
-Avoid changing the scale => performance issues
-=> pain in the ass
 
 Prefabs = Prefabricated game objects
 => double click: prefabs editing mode (hierarchy prefabs, ...)

@@ -26,9 +26,8 @@ string myName = name; // or this.name or this.gameObject.name
 ```cs
 string myTag = tag; // or this.tag or this.gameObject.tag
 GameObject g = GameObject.FindWithTag("tag"); // null if not found
-// same as FindWithTag
-GameObject obj = GameObject.FindGameObjectWithTag("TagName");
-GameObject[] objects = GameObject.FindGameObjectsWithTag("TagName");
+GameObject obj = GameObject.FindGameObjectWithTag("tag"); // FindWithTag is an alias of this one
+GameObject[] objects = GameObject.FindGameObjectsWithTag("tag");
 ```
 </details>
 
@@ -38,6 +37,8 @@ GameObject[] objects = GameObject.FindGameObjectsWithTag("TagName");
 ```cs
 bool isEnabled = enabled;
 ```
+
+> **Pros**: they are disabling game objects that are far from the camera, and enabling game objects near the camera. Some game objects may be visible even if the camera is far, you may handle that too.
 </details>
 
 <details class="details-s">
@@ -51,6 +52,6 @@ myTransform.Rotate(axis, Time.deltaTime * angle, Space.World); // or Space.Self
 ```
 </details>
 
-> **Pro tip**: avoid changing the scale, it can cause performances issues, and this will be tiring to manager later.<br>
+> **Pro tip**: avoid changing the scale, it can cause performances issues, and this will be tiring to manage later.<br>
 > **Note**: you will learn more about "**components**" in another section.<br>
 > **Note**: you will learn about methods available for game objects in another section.
