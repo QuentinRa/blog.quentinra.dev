@@ -40,6 +40,12 @@
         "name": "Unity 3D",
         "desc": "An incomplete (in-progress) course about Unity 3D.",
         "icon": "<i class=\"bi bi-layers-fill\"></i>"
+      },
+      {
+        "tag": "unity-ref",
+        "name": "Unity References",
+        "desc": "I'm starting to stack my references/sources for Unity here. This is almost only a list of YouTube videos.",
+        "icon": "<i class=\"bi bi-journal-bookmark\"></i>"
       }
     ]
   }
