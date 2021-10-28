@@ -93,3 +93,36 @@ When **running** your game, you can go edit things <small>(either by going back 
 
 * **inspector window** ⚙ (right): you can edit the properties of the selected **GameObject**
 * **project window** 🗄 (bottom): all of your project files
+
+<hr class="sr">
+
+## Hierarchy window
+
+**This is the list of the game objects that are populating your scene**. The order do not really matter in 3D, but in 2D, this is important.
+
+<details class="details-e">
+<summary>Create game objects</summary>
+
+Simply right-click in the hierarchy window, and select what you want to create.
+
+![Hierarchy - Create game objects](images/create.png)
+</details>
+
+<details class="details-e">
+<summary>Group game objects</summary>
+
+**You can group game objects**, which is making nested game object rendered at a position relative to their parent. This is useful when you want to make sure that a gun is always rendered at a fixed position to a player <small>(or generally, when you want something to be rendered relatively to something else)</small>.
+
+To create a group, create a new game object inside another one (right-click on the parent > create). You can also drag and drop an existing object inside another game object.
+
+![Hierarchy - groups](images/groups.png)
+
+> **Tip 1**: Sometimes, we are using an "Empty game object" as the parent to sort things.<br>
+> **Tip 2**: If you are hiding the parent, its children are also hidden. This is useful, but if this is not what you want, you can simply prevent the parent from being rendered by disabling its rendered rather than disabling the parent itself.
+</details>
+
+> **Pro tips**
+> * <kbd>Double-click</kbd> on a item in the hierarchy to focus it in the scene view
+> * <kbd>F2</kbd> to rename the selected item
+> * <kbd>CTRL+D</kbd> to duplicate the selected item
+> * <kbd>ALT+expand or hide</kbd> to expand/hide all children of a group
