@@ -56,3 +56,27 @@ This course is a gathering of notes and tips to make your scripts cleaner, and m
 + [SerializeField] private int myAttribute;
 ```
 </details>
+
+<hr class="sr">
+
+## Performances
+
+<details class="details-s">
+<summary>If must not be the last instruction</summary>
+
+```diff
+- private void MyMethod()
+- {
+- 	// some code here (optionnal)
+- 	if (something) {
+- 		// some code here
+- 	}
+- }
++ private void MyMethod()
++ {
++ 	// some code here (optionnal)
++ 	if (!something) return;
++ 	// some code here
++ }
+```
+</details>
