@@ -32,9 +32,6 @@ Empty Game object "level"
 -----------------------------------------------------------------
 ------------------------- Input
 -----------------------------------------------------------------
-
-...
-
 -----------------------------------------------------------------
 ------------------------- Camera
 -----------------------------------------------------------------
@@ -46,10 +43,6 @@ remove background => set color => dark
 -----------------------------------------------------------------
 ------------------------- Components
 -----------------------------------------------------------------
-
-Add components?
-=> remove useless components like colliders (added by default) on child+parent => merge
-=> right-click : remove
 
 OnTriggerEnter2D => run when our object collides with another
 => give both a collider set to trigger

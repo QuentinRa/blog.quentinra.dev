@@ -131,7 +131,7 @@ To create a group, create a new game object inside another one (right-click on t
 
 ## Scene window
 
-Select in this list of icons (or using their shortcut) a tool. You can move, rotate, and scale game objects in the scene. You will be able to do that using the **property window** too <small>(ex: with the move tool, two arrows will be available on the selected game object, click on one, and try moving it)</small>.
+Select in this list of icons (or using their shortcut) a tool. You can move, rotate, and scale game objects in the scene. You will be able to do that using the **inspector window** too <small>(ex: with the move tool, two arrows will be available on the selected game object, click on one, and try moving it)</small>.
 
 ![Scene window - icons](images/scene_icons.png)
 
@@ -140,3 +140,36 @@ Select in this list of icons (or using their shortcut) a tool. You can move, rot
 > * <kbd>Mouse Wheel</kbd> to zoom/de-zoom
 > * <kbd>Left-Click/Middle-click</kbd> to move your point of view (not the camera)
 > * <kbd>CTRL</kbd> when moving something, while make the position change by 0.25.
+
+<hr class="sl">
+
+## Inspector window
+
+In the inspector, **you can edit the properties of the selected game object**, even if this game object isn't inside the hierarchy window <small>(ex: files in the project window)</small>.
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+![Unity inspector](images/inspector.png)
+</div><div class="align-self-center">
+
+1. Enable/Disable
+2. Name
+3. Tag
+4. Transform (set the position, rotation, scale)
+5. Add new components (explained later)
+</div></div>
+
+<div class="row mx-0"><div class="col-md-4">
+
+![Unity inspector - remove component](images/inspector_remove.png)
+</div><div class="align-self-center col-md-8">
+
+Later, you may have to remove a component. You can do it by clicking on the 3 smalls dots, then "remove components".
+
+You may also use "Copy component" and "Paste component as new" or "Paste component values".
+
+> **Pro tip**: you need to reduce the number of components as you as possible<br>
+> **Pro tip**: as per the previous statement, in a group of game objects, try to merge some components (ex: the colliders, etc.)
+</div></div>
+
+> **Pro tip**: in the container in which you got "inspector", on the same line, you got three small dots too. You can switch from "normal" to "debug" mode here, which will show you way more fields in the inspector.
