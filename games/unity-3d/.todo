@@ -1,0 +1,8 @@
+-----------------------------------------------------------------
+------------------------- Game Objects
+-----------------------------------------------------------------
+
+Z-fighting
+=> two items at the same location, overlapping
+=> bug when rendering
+=> trick: increase the z-values by 0.01
