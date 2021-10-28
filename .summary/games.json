@@ -48,6 +48,12 @@
         "icon": "<i class=\"bi bi-layers-fill\"></i>"
       },
       {
+        "tag": "unity-ufs",
+        "name": "Unity Script++",
+        "desc": "Notes and tips to make your scripts cleaner, and more user-friendly.",
+        "icon": "<i class=\"bi bi-pen\"></i>"
+      },
+      {
         "tag": "unity-ref",
         "name": "Unity References",
         "desc": "I'm starting to stack my references/sources for Unity here. This is almost only a list of YouTube videos.",
