@@ -12,10 +12,44 @@ As there is a lot of content about Unity, this course will only provide knowledg
 
 Everything in Unity is a **game object**. **Players**, **enemies**, **items**, **camera**, **sounds**, **UI elements**, **lights**, and so on, are **game objects**. it means that they got the following properties
 
-* A **name** ✨: for you to know what's this game object
-* A **tag** 🏷: Quite useful. You can add a tag "enemy" <small>(you can create tags)</small> and check the tag of a game object to know if this is an "enemy". You can also find game objects by tag name.
-* A state "**enabled**" 🤚. You can enabled/disable your game object. If a game object is disabled, it won't be updated anymore.
-* **Transform** ⚙: a **component** handling the position, rotation, and scale of a Game object.
+<details class="details-s">
+<summary>A <b>name</b> ✨: for you to know what's this game object</summary>
+
+```cs
+string myName = name; // or this.name or this.gameObject.name
+```
+</details>
+
+<details class="details-s">
+<summary>A <b>tag</b> 🏷: Quite useful. You can add a tag "enemy" <small>(you can create tags)</small> and check the tag of a game object to know if this is an "enemy". You can also find game objects by tag name.</summary>
+
+```cs
+string myTag = tag; // or this.tag or this.gameObject.tag
+GameObject g = GameObject.FindWithTag("tag"); // null if not found
+// same as FindWithTag
+GameObject obj = GameObject.FindGameObjectWithTag("TagName");
+GameObject[] objects = GameObject.FindGameObjectsWithTag("TagName");
+```
+</details>
+
+<details class="details-s">
+<summary>A state "<b>enabled</b>" 🤚. You can enabled/disable your game object. If a game object is disabled, it won't be updated anymore.</summary>
+
+```cs
+bool isEnabled = enabled;
+```
+</details>
+
+<details class="details-s">
+<summary><b>Transform</b> ⚙: a <b>component</b> handling the position, rotation, and scale of a Game object.</summary>
+
+```cs
+Transform myTransform = transform; // transform.position, ...
+myTransform.LookAt(target);
+myTransform.Rotate(axis, angle);
+myTransform.Rotate(axis, Time.deltaTime * angle, Space.World); // or Space.Self
+```
+</details>
 
 > **Pro tip**: avoid changing the scale, it can cause performances issues, and this will be tiring to manager later.<br>
 > **Note**: you will learn more about "**components**" in another section.<br>

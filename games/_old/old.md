@@ -1,25 +1,23 @@
+<hr class="sl">
+
 ## Interface
 
 When you are opening a project, by default you got 4 windows.
 
-* **hierarchy window** (left): list of all **GameObjects**
-* **scene window** (middle): a scene is like a screen of your game (by default you are in the sample scene)
-	* **Press run, to run your game**, you can make changes while the game is running, but they will be lost when the game is closed
-	* you can click on the **game tab** to see your game running <small>(you can set the resolution here too)</small>
-	* and go back to the **scene tab** to edit it (**don't forget to stop it**)
-* **inspector window** (right): you can edit the properties of the selected **GameObject**
-	* ex: click on a GameObject and change the position (Transform > Position)
-	* ex: click on a GameObject and change the size (Transform > Scale)
-	* ...
-* **project window** (bottom): all of your project files
+* **hierarchy window** 📚 (left): list of all **GameObjects** of your scene
+* **scene window** 🛠 (middle)
+	* **scene tab**: edit your scene
+	* **game tab**: run your scene
+		* press play to run
+		* press play again to stop
+		* press pause to pause the simulation
 
-> Some shortcuts
->
-> * <kbd>F</kbd> in the hierarchy window, to focus a GameObject in the scene window
+When **running** your game, you can go edit things <small>(either by going back to scene, or by clicking on a game object in the game/hierarchy)</small>, to test things. **Note that everything will be reverted once you stopped playing**.
 
-<hr class="sr">
+* **inspector window** ⚙ (right): you can edit the properties of the selected **GameObject**
+* **project window** 🗄 (bottom): all of your project files
 
-## Be good, use folders!
+# Be good, use folders!
 
 The project files are usually split into folders, using these folders names
 
@@ -162,34 +160,9 @@ BoxCollider collider = GetComponent<BoxCollider>();
 You can also access some objects such as Transform or the tag with attributes
 
 ```cs
-// set scale, ...
-Transform transform1 = transform; // <=> this.transform
 // associated gameObject
 GameObject o = gameObject; // <=> this.gameObject
-// it's tag
-string tag1 = tag; // <=> this.tag or this.gameObject.tag
 ```
-
-<details class="details-e">
-<summary>Tags</summary>
-
-<div class="row">
-<div class="col-md-4">
-
-![Unity tags](images/tags.png)
-</div>
-<div class="col-md-8">
-
-You can give tags to components in the editor. This is useful to get a component, or a bunch of components.
-
-```cs
-GameObject[] objects = GameObject.FindGameObjectsWithTag("TagName");
-GameObject obj = GameObject.FindGameObjectWithTag("TagName");
-```
-</div>
-
-</div>
-</details>
 
 <hr class="sl">
 
