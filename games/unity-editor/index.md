@@ -126,3 +126,17 @@ To create a group, create a new game object inside another one (right-click on t
 > * <kbd>F2</kbd> to rename the selected item
 > * <kbd>CTRL+D</kbd> to duplicate the selected item
 > * <kbd>ALT+expand or hide</kbd> to expand/hide all children of a group
+
+<hr class="sl">
+
+## Scene window
+
+Select in this list of icons (or using their shortcut) a tool. You can move, rotate, and scale game objects in the scene. You will be able to do that using the **property window** too <small>(ex: with the move tool, two arrows will be available on the selected game object, click on one, and try moving it)</small>.
+
+![Scene window - icons](images/scene_icons.png)
+
+> **Pro tips**
+> * <kbd>F</kbd> to focus a game object
+> * <kbd>Mouse Wheel</kbd> to zoom/de-zoom
+> * <kbd>Left-Click/Middle-click</kbd> to move your point of view (not the camera)
+> * <kbd>CTRL</kbd> when moving something, while make the position change by 0.25.

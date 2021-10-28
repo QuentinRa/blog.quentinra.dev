@@ -4,21 +4,11 @@
 
 Project Windows => warehouse
 => keep things tidy
-
-Console tab
+=> Console tab
 
 Export game?
 => preferences
 => splash
-
------ shortcuts
-
-Rotate: alt + left mouse
-pan around: Shift + middle mouse
-F : focus in the hierarchy
-Wheel: scroll
-CTRL-Z : rollback
-CTRL and move to move something nicely
 
 -----------------------------------------------------------------
 ------------------------- Game Objects

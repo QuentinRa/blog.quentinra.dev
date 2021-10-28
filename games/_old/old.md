@@ -14,12 +14,6 @@ The project files are usually split into folders, using these folders names
 
 <hr class="sl">
 
-## Creating Game Objects
-
-...
-
-<hr class="sr">
-
 ## Scripts
 
 Scripts are in **C#**, an old version of C#. From [this page about the C# compiler](https://docs.unity3d.com/2020.3/Documentation/Manual/CSharpCompiler.html), Unity 2020.3 (LTS) is using **C# 8.0**. In **2021.2+**, they are using **C# 9.0**, but of course, we are not using a non-LTS version. You should also note that even if they are using versions 8.0 or 9.0, **every feature of C# is not available** (check on the page above, for "Unsupported features").
