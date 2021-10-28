@@ -55,3 +55,22 @@ myTransform.Rotate(axis, Time.deltaTime * angle, Space.World); // or Space.Self
 > **Pro tip**: avoid changing the scale, it can cause performances issues, and this will be tiring to manage later.<br>
 > **Note**: you will learn more about "**components**" in another section.<br>
 > **Note**: you will learn about methods available for game objects in another section.
+
+<hr class="sr">
+
+## Scenes
+
+**Scenes are screens of your games**. For instance, you may have StartMenuScene, LoadingScene, GameScene, GameOverScene, InventoryScene, etc. Of course, you are free, you may split our GameScene in more scenes <small>(ex: one per level?)</small>, or you may merge scenes <small>(ex: GameScene with InventoryScene)</small>. By default, Unity is opening a new project in the "SampleScene".
+
+In Unity, creating a scene will not be enough to make it a part of your game. You need to
+
+* Open the new scene
+* File > Build Settings
+* Click on "add opened scenes in build" <small>(you may take note of the build index)</small>
+
+Now, you will be able later to switch scenes using this sample of code
+
+```cs
+SceneManager.LoadScene(buildIndex);
+SceneManager.LoadScene("SceneName");
+```
