@@ -74,3 +74,22 @@ Now, you will be able later to switch scenes using this sample of code
 SceneManager.LoadScene(buildIndex);
 SceneManager.LoadScene("SceneName");
 ```
+
+<hr class="sl">
+
+## Interface
+
+When you are opening a project, by default you got 4 windows.
+
+* **hierarchy window** 📚 (left): list of all **GameObjects** of your scene
+* **scene window** 🛠 (middle)
+	* **scene tab**: edit your scene
+	* **game tab**: run your scene
+		* press play to run
+		* press play again to stop
+		* press pause to pause the simulation
+
+When **running** your game, you can go edit things <small>(either by going back to scene, or by clicking on a game object in the game/hierarchy)</small>, to test things. **Note that everything will be reverted back once you stopped playing**.
+
+* **inspector window** ⚙ (right): you can edit the properties of the selected **GameObject**
+* **project window** 🗄 (bottom): all of your project files
