@@ -80,3 +80,28 @@ Go to **Edit Then Preferences**.
 
 * **General > Disable editor analytics**: up to you, [more info here](https://docs.unity3d.com/Manual/EditorAnalytics.html)
 * **General > Editor Theme**: Light/Dark
+
+<hr class="sr">
+
+## Build game
+
+It's release time 🚀? When you picked your unity version, you picked the platforms that you can target. If you didn't, you can go inside unity hub, then installs, right-click on your unity, and add modules.
+
+Inside Unity, before building something, let's first configure our game. Go to `Edit > Project Settings > Player`.
+
+* [**Should**] Set the company name, the product name, the version
+* [**Could**] You may set the icon 🚀 (and multiples icons for each resolution)
+* [**Could**] You can define the initial configuration
+* [**Should**] In Splash image
+  * you may remove unity logo (up to you, or you can move it)
+  * add a splash screen with your own logo
+    * first, exit and add your logo in the project files
+    * click on your logo, in **texture type**, set **sprite 2D**, and apply your changes
+    * go back to splash screen
+    * click on "+" and drag and drop your logo inside the field
+    * you may set the duration
+* [**Should**] you may set the background too
+
+> **Pro tip**: it's sometimes advised to check `Edit > Project Settings > Quality`, because you may be able to reduce your build size quite a lot, mostly by decreasing the number of levels.
+
+Then, you simply have to go to `File > Build` or `File > Build and Run`.
