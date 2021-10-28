@@ -189,12 +189,13 @@ The project window is, as a wise man said, a warehouse. This is a file explorer 
 That's not the only thing you can do here! This is not a simple explorer.
 
 <details class="details-e">
-<summary>Create new scenes/materials/... 🚀</summary>
+<summary>Create new scenes/materials/script/... 🚀</summary>
 
 You can create a folder with <code>Right-click > Create > Folder</code>. Once you did, double-click to move inside your new folder, and you can
 
 * Create a **new scene** with <code>Right-click > Create > Scene</code>
 * Create a **new material** with <code>Right-click > Create > Material</code>
+* Create a **new script** with <code>Right-click > Create > C# Script</code>
 </details>
 
 <details class="details-e">
@@ -225,4 +226,28 @@ You may want to create a "**template**" for your Game Objects. For instance, eve
   * the different **value** will be in **bold**
 * You can **revert/update the prefab** a value with a **right-click on the name of the field**
 * **You can see every overridden property by click on "override"**, right below "layer" in the inspector.
+</details>
+
+<details class="details-e">
+<summary>Console 📺</summary>
+
+The console is a tab of the **Project window**. You can clear the console with "clear". In the console, you got different kind of logs such as
+
+* Normal Logs (Debug)
+
+```cs
+Debug.Log("message");
+```
+
+* Warnings
+
+```cs
+Debug.LogWarning("warning");
+```
+
+* Errors
+
+```cs
+Debug.LogError("error");
+```
 </details>
