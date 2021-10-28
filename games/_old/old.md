@@ -50,24 +50,11 @@ Note that you can use the 3 vertical dots to remove a component, or easily open 
 
 <hr class="sl">
 
-## User-friendly scripts
-
-<details class="details-border">
-<summary>Of course, you can make something look better by using ToolTips, Menus, Headers, Spaces, etc.</summary>
-
 ```cs
-// you renamed something
-
 // make a class available in "folder/.../name" in the
 // component selector
 [AddComponentMenu("folder/class")]
-// The following attributes will be inside this header
-[Header("a header")]
-// ...
-// Spacing
-[Space(value)]
 ```
-</details>
 
 <details class="details-border">
 <summary>Note that you can easily link components using this</summary>

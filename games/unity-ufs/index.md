@@ -127,3 +127,34 @@ Maybe, the name of your attribute isn't providing enough information for the use
 
 > **Pro tip**: this is not an excuse to give bad names to your fields (as I did with "number" or "key").
 </details>
+
+<details class="details-e">
+<summary>Headers</summary>
+
+You can make categories with Headers. This is a great way of sorting your serialize field, if you got a lot of them.
+
+```cs
+[Header("Some header")]
+[SerializeField] private int a;
+[SerializeField] private float b;
+[SerializeField] private bool c;
+```
+
+![Unity Serialize Field - header](images/header.png)
+</details>
+
+<details class="details-e">
+<summary>Spaces</summary>
+
+If headers aren't enough, you can add some spacing too.
+
+```cs
+[Header("Some header")]
+[SerializeField] private int a;
+[Space(2)]
+[Header("Some header")]
+[SerializeField] private int b;
+```
+
+![Unity Serialize Field - spacing](images/spacing.png)
+</details>
