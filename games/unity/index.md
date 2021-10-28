@@ -71,3 +71,12 @@ Personally, I'm using [**Rider**](https://www.jetbrains.com/rider/) ([features](
 * Double-click on the path > copy the path
 * Then in Unity, select browser, and paste the path
 * Then select "rider64" and you are good to go
+
+<hr class="sl">
+
+## Unity Settings
+
+Go to **Edit Then Preferences**.
+
+* **General > Disable editor analytics**: up to you, [more info here](https://docs.unity3d.com/Manual/EditorAnalytics.html)
+* **General > Editor Theme**: Light/Dark
