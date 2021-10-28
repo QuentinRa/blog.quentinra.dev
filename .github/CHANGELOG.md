@@ -1,6 +1,25 @@
 # Change Log
 
-## v5.0.0 (not fully available)
+## v5.0.0 (2021-11-1)
+
+**Added**
+
+* `feature`: new category "games"
+* `feature`: adding slides (Agile-Scrum only)
+* `course`: Adding course "Cryptography"
+* `course`: Adding course "C++"
+* `course`: Adding course "Data languages"
+* `course`: Adding courses "Unity", "Unity 2D", "Unity 3D" (and many sub-courses)
+
+**Changed**
+
+* `course`: Remade of OCaml
+* `course`: Remade of Agile-Scrum
+* `course`: Remade of SQL (separating PL/SQL)
+* `internal`: updating dependencies
+* `rendering`: Markdown syntax reference 1.5
+
+## v5.0.0-ea (2021-09-07)
 
 **Note**: I have temporarily disabled some courses, as I have yet to move them to v5.0.0.
 
