@@ -335,6 +335,7 @@ If the value is lower than min, then value = min.
 <tr><td>
 
 ```cs
+// or [TextArea( minLines, maxLines )]
 [TextArea] public string textarea = "";
 ```
 </td><td><br>
@@ -344,3 +345,11 @@ If the value is lower than min, then value = min.
 
 </table>
 </details>
+
+You got way more attributes, you can
+
+* use [SelectionBase](https://docs.unity3d.com/ScriptReference/SelectionBaseAttribute.html) to a class (even if you are not showing it in the editor), to pick whether this class should be selected (no attribute, default), or the base (this attribute)
+* add an **entry** in the **preferences** with [SettingsProvider](https://docs.unity3d.com/ScriptReference/SettingsProvider.html) (new version of [PreferenceItem](https://docs.unity3d.com/ScriptReference/PreferenceItem.html))
+* add an **entry** in the **tool bar** with [MenuItem](https://docs.unity3d.com/ScriptReference/MenuItem.html)
+* make this component show up when **selecting multiples game objects** with [CanEditMultipleObjects](https://docs.unity3d.com/ScriptReference/CanEditMultipleObjects.html)
+* This [extension adding new attributes](https://github.com/gasgiant/Markup-Attributes) may be helpful 🚀
