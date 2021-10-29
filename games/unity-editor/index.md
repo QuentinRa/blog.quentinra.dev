@@ -298,11 +298,11 @@ if (Input.GetButton("Jump")) // if "Jump" triggered
 ```cs
 if (Input.GetButtonDown("Jump"))
 {
-    _is_jump_pressed = true; // change the state
+    _isJumpPressed = true; // change the state
 }
 if (Input.GetButtonUp("Jump"))
 {
-    _is_jump_pressed = true; // revert the state
+    _isJumpPressed = false; // revert the state
 }
 ```
 </div></div>
@@ -337,6 +337,33 @@ When you are using the method not raw, you will see that the player will still m
 
 ```cs
 float axisX = Input.GetAxisRaw("Horizontal");
+```
+</details>
+
+<details class="details-e">
+<summary>Mouse</summary>
+
+* **Input Mouse**
+
+**Note that you don't need this if you are using the input manager** (simply use the name of the input as always).
+
+```cs
+// b is 0 = Left-Click, 1 = Right-Click, 2 = Middle-Click
+Input.GetMouseButton(b);
+Input.GetMouseButtonDown(b);
+Input.GetMouseButtonUp(b);
+```
+
+* **Mouse events**
+
+You can react to even such as "Mouse is over this game object", ... which the following functions available in every Game Object.
+
+```cs
+private void OnMouseUp() {}
+private void OnMouseDown() {}
+private void OnMouseOver() {}
+private void OnMouseEnter() {}
+private void OnMouseExit() {}
 ```
 </details>
 
