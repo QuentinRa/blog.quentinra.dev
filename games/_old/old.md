@@ -80,36 +80,6 @@ GameObject o = gameObject; // <=> this.gameObject
 
 <hr class="sl">
 
-## Lifecycle, game loop, and Input
-
-> In Unity, everywhere you were using speed to move something, simply multiplying by `Time.deltaTime` will make the speed constant (=a real speed per second)
-> `pos.x * Time.deltaTime * speed`
-
-```cs
-// true if enter pressed
-bool pressed = Input.GetKey(KeyCode.KeypadEnter);
-// or you can change the state using down/up
-bool down = Input.GetKeyDown(KeyCode.KeypadEnter);
-bool up = Input.GetKeyUp(KeyCode.KeypadEnter);
-```
-
-<details class="details-e">
-<summary>Pro tip 🚀</summary>
-
-A lot of developers are not GetAxis but GetAxisRaw, as they want to get rid of the smoothing.
-
-```cs
-float axisX = Input.GetAxisRaw("Horizontal");
-```
-
-It's not a good practice to use keys such as "KeyCode.KeypadEnter". In Edit > Project Settings > Input Manager > Axes, you got names such as "Jump" with keys (such as Space). In your code, you should use theses
-
-```cs
-bool pressed = Input.GetButton("Jump");
-bool pressed = Input.GetButtonDown("Jump");
-```
-</details>
-
 > **Beware!** As a script can be added to multiple GameObject, if you are handling events using this (in Update), you will update every GameObject. You have functions for mouse related stuffs in MonoBehaviour that you can override such as
 > ```cs
 >  private void OnMouseUp() {}

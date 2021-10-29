@@ -281,9 +281,9 @@ Increase the size to add more 🚀. Once you are good, in a script, you can do t
 **Discontinuous input**
 
 ```cs
-// -1 (left) or 0 (none) or 1 (right)
+// <0 (left) or 0 (none) or 0> (right)
 float axisX = Input.GetAxis("Horizontal");
-// -1 (down) or 0 (none) or 1 (up)
+// <0 (down) or 0 (none) or 0> (up)
 float axisY = Input.GetAxis("Vertical");
 
 if (Input.GetButton("Jump")) // if "Jump" triggered
@@ -316,6 +316,27 @@ if (Input.GetButtonUp("Jump"))
 bool pressed = Input.GetKey(KeyCode.Space);
 bool down = Input.GetKeyDown(KeyCode.Space);
 bool up = Input.GetKeyUp(KeyCode.Space);
+```
+</details>
+
+<details class="details-e">
+<summary>Delta time</summary>
+
+As explained in the game engine course, the delta time is important. If you are planning to update the position by 10m/s, then having variations such as 6m/s one time then 11m/s another time are not good right 😬?
+
+```cs
+// you should (MUST) store 10 in an attribute
+var speed = 10 * Time.deltaTime;
+```
+</details>
+
+<details class="details-e">
+<summary>Raw</summary>
+
+When you are using the method not raw, you will see that the player will still move a bit after you stopped pressing a key. This is great, but if this is not what you want, you can use
+
+```cs
+float axisX = Input.GetAxisRaw("Horizontal");
 ```
 </details>
 
