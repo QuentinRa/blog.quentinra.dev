@@ -21,6 +21,8 @@ PRAGMA exception_init(exception_name, code);
 raise_application_error(code, "message");
 ```
 
+You need to add a `/` after `END` to compile your code.
+
 <details>
 <summary>Procedures 🙄</summary>
 
@@ -40,3 +42,38 @@ execute procedure_name(args);
 call procedure_name(args);
 ```
 </details>
+
+<hr class="sr">
+
+## PL/pgSQL (PostgreSQL) - particularities
+
+```sql
+-- print something
+RAISE NOTICE 'something';
+```
+
+<hr class="sl">
+
+## Block of code
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+```sql
+DECLARE
+-- declare variables
+BEGIN
+-- instructions
+-- COMMIT or ROLLBACK
+EXCEPTION
+-- handle exceptions
+END;
+```
+</div><div class="align-self-center">
+
+* **DECLARE** is optional. If you got variables, it's one per line, with a semi-colon at end end of each line.
+* **BEGIN** is the code itself
+
+**Take note🤚!** If you are doing a DML statement (INSERT, UPDATE, ...), then you must **COMMIT** (=save) or **ROLLBACK** (=cancel).
+
+* **EXCEPTION** is optional. You will handle exceptional behaviors (ex: errors) here.
+</div></div>

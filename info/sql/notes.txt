@@ -2,3 +2,5 @@ SELECT now();
 SELECT DATE('2020-12-03');
 
 SELECT @@global.time_zone;
+
+COMMIT -> DBMS not saving automatically. COMMIT or ROLLBACK.
