@@ -196,7 +196,42 @@ FOR i IN REVERSE min AND max LOOP some_code END LOOP;
 
 ## Exceptions
 
-...
+An exception is a signal. Most of the time, it's raised because an error happened. You can handle it in the bloc exception, but if you didn't, then the signal will be send upward (=to the caller). If we are back on the request, then the request is crashing with an error.
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+**You can raise an exception** with `RAISE`
+
+```sql
+RAISE 'same as raise notice format' [, values]
+RAISE '...' USING ERRCODE = 'error_code'
+RAISE SOME_EXCEPTION
+RAISE SOME_EXCEPTION USING MESSAGE = 'additional message'
+```
+
+Some examples
+
+```sql
+RAISE 'Error: no records matching id=%', id
+RAISE ZERO_DIVIDE
+```
+</div><div class="align-center">
+
+**You can catch an exception**, in `EXCEPTION` with `WHEN`. You can make multiples WHEN in EXCEPTION.
+
+```sql
+WHEN NO_DATA_FOUND THEN some_code END
+WHEN ZERO_DIVIDE THEN some_code END
+-- you tried a select into, with a request
+-- returning more than one row.
+WHEN TOO_MANY_ROWS THEN some_code END
+-- every exception, fallback
+WHEN OTHERS THEN some_code END
+```
+> **Note**: you can use `;` instead of `END`.
+</div></div>
+
+You got a lot of predefined exceptions, check your database documentation.
 
 <hr class="sr">
 
