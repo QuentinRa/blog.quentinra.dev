@@ -212,23 +212,23 @@ RAISE SOME_EXCEPTION USING MESSAGE = 'additional message'
 Some examples
 
 ```sql
-RAISE 'Error: no records matching id=%', id
-RAISE ZERO_DIVIDE
+RAISE 'Error: no records matching id=%', id;
+RAISE DIVISION_BY_ZERO;
 ```
 </div><div>
 
 **You can catch an exception**, in `EXCEPTION` with `WHEN`. You can make multiples WHEN in EXCEPTION.
 
 ```sql
-WHEN NO_DATA_FOUND THEN some_code END
-WHEN ZERO_DIVIDE THEN some_code END
+WHEN NO_DATA_FOUND THEN some_code;
+WHEN DIVISION_BY_ZERO THEN some_code; -- ZERO_DIVIDE in Oracle
+WHEN UNIQUE_VIOLATION THEN some_code;
 -- you tried a select into, with a request
 -- returning more than one row.
-WHEN TOO_MANY_ROWS THEN some_code END
+WHEN TOO_MANY_ROWS THEN some_code;
 -- every exception, fallback
-WHEN OTHERS THEN some_code END
+WHEN OTHERS THEN some_code;
 ```
-> **Note**: you can use `;` instead of `END`.
 </div></div>
 
 You got a lot of predefined exceptions, check your database documentation.
@@ -292,7 +292,13 @@ Add **OR REPLACE** if you are updating an existing trigger.
 > **Pro tip**: you can make a trigger for multiples events, with `OR` such as `INSERT OR UPDATE`.<br>
 </div></div>
 
-Vocabulary 😎
+A function called by a trigger isn't a normal function. Aside from the two variables **NEW** and **OLD**, **you will have to return** (type = TRIGGER)
+
+* `NULL`: cancel insert/update/delete
+* `NEW`/`OLD`/...: the new record
+* If you omit RETURN, then its the same as `RETURN NEW`
+
+**Vocabulary** 😎
 
 * **Trigger DML**: executed on every record that triggered the event
 * **Trigger DML line**: executed once per event
@@ -314,7 +320,76 @@ REFERENCING OLD :old NEW :new
 ```
 </details>
 
+<details class="details-e">
+<summary>Delete a trigger</summary>
+
+```sql
+DROP TRIGGER trigger_name ON some_table;
+DROP TRIGGER IF EXISTS trigger_name ON some_table;
+```
+</details>
+
 <hr class="sr">
+
+## Some templates
+
+<details class="details-e">
+<summary>Function</summary>
+
+```sql
+CREATE OR REPLACE FUNCTION some_function(param1 INTEGER, param2 INTEGER) RETURNS VOID AS $$
+BEGIN
+    RAISE EXCEPTION 'param1 is %. param2 is %.', param1, param2;
+END; $$ LANGUAGE plpgsql;
+```
+
+Then test
+
+```sql
+SELECT some_function(5,10);
+-- [...] param1 is 5. param2 is 10.
+```
+</details>
+
+<details class="details-e">
+<summary>Catch an exception</summary>
+
+```sql
+CREATE OR REPLACE FUNCTION some_function() RETURNS VOID AS $$
+BEGIN
+    Select 1/0;
+EXCEPTION
+    WHEN division_by_zero then RAISE EXCEPTION 'catch';
+END; $$ LANGUAGE plpgsql;
+```
+
+Then test
+
+```sql
+SELECT some_function(5,10);
+-- param1 is 5. param2 is 10.
+```
+</details>
+
+<details class="details-e">
+<summary>Triggers</summary>
+
+```sql
+CREATE OR REPLACE FUNCTION some_function() RETURNS TRIGGER AS $$
+BEGIN
+    RETURN NEW; -- 
+END; $$ LANGUAGE plpgsql;
+```
+
+You should check if "BEFORE INSERT" is what you want, and if you should remove "FOR EACH ROW"...
+
+```sql
+CREATE TRIGGER some_trigger BEFORE INSERT ON some_table FOR EACH ROW
+EXECUTE PROCEDURE some_function();
+```
+</details>
+
+<hr class="sl">
 
 ## Sources
 
