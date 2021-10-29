@@ -215,7 +215,7 @@ Some examples
 RAISE 'Error: no records matching id=%', id
 RAISE ZERO_DIVIDE
 ```
-</div><div class="align-center">
+</div><div>
 
 **You can catch an exception**, in `EXCEPTION` with `WHEN`. You can make multiples WHEN in EXCEPTION.
 
@@ -237,7 +237,30 @@ You got a lot of predefined exceptions, check your database documentation.
 
 ## Functions
 
-...
+A function is a bloc of code, that may take parameters, and return something.
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+```sql
+CREATE OR REPLACE FUNCTION name(args) 
+RETURNS r_type AS $$
+-- declare ...
+BEGIN
+    -- code ...
+    [RETURN result;]
+END; $$ LANGUAGE plpgsql;
+```
+</div><div class="align-self-center">
+
+* **name** is obviously the name of our function
+* **args** are the argument, with `name type` for each argument.
+* **r_type** is the return type, such as `VOID`, `INT`, etc.
+* You can call DECLARE, then write your code inside BEGIN-END
+* **RETURN** is returning the result of your function (if the return type isn't void).
+</div></div>
+
+> **Note**: if you add something inside `$$`, make sure the content is matching the second delimiter `$$`.<br>
+> **Pro tip**: you can use `$1`, ... instead of the name of the arguments.
 
 <hr class="sl">
 
