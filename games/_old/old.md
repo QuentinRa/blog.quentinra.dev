@@ -78,42 +78,6 @@ You can also access some objects such as Transform or the tag with attributes
 GameObject o = gameObject; // <=> this.gameObject
 ```
 
-<hr class="sl">
-
-> **Beware!** As a script can be added to multiple GameObject, if you are handling events using this (in Update), you will update every GameObject. You have functions for mouse related stuffs in MonoBehaviour that you can override such as
-> ```cs
->  private void OnMouseUp() {}
->  private void OnMouseDown() {}
->  private void OnMouseOver() {}
->  private void OnMouseEnter() {}
->  private void OnMouseExit() {}
-> ```
-
-<hr class="sr">
-
-## Materials and Sprites
-
-<details class="details-e">
-<summary>Materials</summary>
-
-This is a sort of skin, for 3D models.
-
-* In the Project window
-* **[Optional]** In a folder Materials
-* Right-click > Create > Material
-* **[Optional]** you may set the material as Transparent, if you are intending so make it a light source (trick)
-* **[Up to you]** you can change the **color** on the line "Albedo"
-* **[Up to you]** you can set an **image** (=texture) by clicking on the little circle with a dot inside, right before "Albedo"
-* **[Up to you]** you can enable emission and set a color, if you want this color to be emitted from your material (trick)
-
-To apply one,
-
-* Click on a Game object
-* Mesh Renderer > Materials
-* Drag and drop your Material from the Project window to the input field
-
-</details>
-
 <hr class="sr">
 
 Unity is providing generic support for your games, sometimes you may want more. You can add **plugins** for that. For instance, the [TopDownEngine](https://assetstore.unity.com/packages/templates/systems/topdown-engine-89636) (a **paid** asset) is providing a lot of help to create 2D/3D TopDownGames <small>(check "templates" on the unity store to see what you could expect from game templates, as you may save a lot of time with them)</small>.

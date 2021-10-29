@@ -49,10 +49,6 @@ Mesh filter => tell the graphic card which mesh should be rendered (ex: cube, ca
 
 Mesh renderer => tells GC how to render a mesh
 
-Material
-=> smoothness 0 : not shinning
-=> drag and drop it directly on a game object (either in hierarchy/scene)
-
 -----------------------------------------------------------------
 ------------------------- LIGHT and SHADOWS
 -----------------------------------------------------------------
