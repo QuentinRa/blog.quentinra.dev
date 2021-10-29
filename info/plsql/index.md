@@ -266,7 +266,53 @@ END; $$ LANGUAGE plpgsql;
 
 ## Triggers
 
-...
+<div class="row row-cols-md-2 mx-0"><div>
+
+A trigger (`déclencheur`) is a function that will be triggered on an event, such as inserting, updating or deleting an element. You could use it to calculate derived fields, or to archive deleted records.
+
+```sql
+CREATE [OR REPLACE] TRIGGER trigger_name
+BEFORE /* or AFTER */ some_event ON some_table
+[FOR EACH ROW]
+[WHEN some_condition]
+-- some code (ex: BEGIN ... END)
+-- or
+-- EXECUTE PROCEDURE function(args);
+```
+</div><div class="align-self-center">
+
+A trigger is executed either **BEFORE** or **AFTER** an event, such as **INSERT, UPDATE, DELETE, ...**. You may set a trigger only on **one column** using `UPDATE(column)` or `UPDATE OF column`.
+
+Add **OR REPLACE** if you are updating an existing trigger.
+
+* **FOR EACH ROW**: If you are planning to update every row, then add it. This may be the case, if the grade of each person is based on the median. If a grade change, we need to update every grade.
+
+* **WHEN**: You may add a when clause. If the condition is false, then the trigger is not triggered for this record.
+
+> **Pro tip**: you can make a trigger for multiples events, with `OR` such as `INSERT OR UPDATE`.<br>
+</div></div>
+
+Vocabulary 😎
+
+* **Trigger DML**: executed on every record that triggered the event
+* **Trigger DML line**: executed once per event
+* **Trigger DDL** (`Trigger base/schéma`): executed once
+
+> **Pro tip**: no COMMIT/ROLLBACK in a trigger, as the request will already do once.
+
+<details class="details-e">
+<summary>OLD and NEW ✨</summary>
+
+When updating a line, you got the old record in `OLD`, the one after updating in `NEW`. For an insert, you got only `NEW` (OLD is null). For a delete, you got only `OLD` (NEW is null).
+
+You will most likely use them inside your trigger ✨. They are called **correlation variables**. They are records, such use `.` to get an attribute.
+
+Sometimes, we are renaming them. Right before the `FOR EACH ROW` (even if you don't have one), you could do this, to use `:old` and `:new`.
+
+```sql
+REFERENCING OLD :old NEW :new
+```
+</details>
 
 <hr class="sr">
 
