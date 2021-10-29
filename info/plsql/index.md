@@ -129,7 +129,7 @@ v_name_copy v_name%type; -- type of the variable v_name
 If you got such a request, returning only one record. Then we got a type for this
 
 ```sql
-Select * from table LIMIT 0, 1
+Select * from some_table LIMIT 0, 1
 ```
 
 In PL/SQL, you can do this. Note that you can access an attribute of a record with `.` (dot).
@@ -139,3 +139,80 @@ v_record record; -- record/tuple
 v_record table%ROWTYPE; -- store a record/tuple of a table "table"
 ```
 </details>
+
+<hr class="sl">
+
+## Statements
+
+<details class="details-e">
+<summary>IF and CASE (switch)</summary>
+
+```sql
+IF something THEN [ELSIF condition THEN]
+	[ELSE condition THEN]
+END IF;
+
+-- if(){} else if(){} ...
+CASE variable
+	WHEN valeur THEN instruction
+	WHEN valeur THEN instruction
+	ELSE instruction
+END CASE;
+```
+</details>
+
+<details class="details-e">
+<summary>Loop (do while) and while</summary>
+
+```sql
+-- do ... while
+LOOP something
+	EXIT WHEN condition
+END LOOP;
+
+-- while
+WHILE something LOOP some_code END LOOP;
+```
+</details>
+
+<details class="details-e">
+<summary>For statement</summary>
+
+```sql
+-- for i in seq / for (i=min; i<max; i++){}
+FOR i IN min AND max LOOP some_code END LOOP;
+-- reverse loop
+FOR i IN REVERSE min AND max LOOP some_code END LOOP;
+```
+</details>
+
+<hr class="sr">
+
+## Select into and Cursors
+
+...
+
+<hr class="sl">
+
+## Exceptions
+
+...
+
+<hr class="sr">
+
+## Functions
+
+...
+
+<hr class="sl">
+
+## Triggers
+
+...
+
+<hr class="sr">
+
+## Sources
+
+* [IUT-SF Teaching](http://www.iut-fbleau.fr/)
+* [ENSIIE Teaching](https://www.ensiie.fr/)
