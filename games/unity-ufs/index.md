@@ -351,5 +351,11 @@ You got way more attributes, you can
 * use [SelectionBase](https://docs.unity3d.com/ScriptReference/SelectionBaseAttribute.html) to a class (even if you are not showing it in the editor), to pick whether this class should be selected (no attribute, default), or the base (this attribute)
 * add an **entry** in the **preferences** with [SettingsProvider](https://docs.unity3d.com/ScriptReference/SettingsProvider.html) (new version of [PreferenceItem](https://docs.unity3d.com/ScriptReference/PreferenceItem.html))
 * add an **entry** in the **tool bar** with [MenuItem](https://docs.unity3d.com/ScriptReference/MenuItem.html)
+* add an **entry** in the **assets list** with [CreateAssetMenu](https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html) (attached to a class extending ScriptableObject)
 * make this component show up when **selecting multiples game objects** with [CanEditMultipleObjects](https://docs.unity3d.com/ScriptReference/CanEditMultipleObjects.html)
-* This [extension adding new attributes](https://github.com/gasgiant/Markup-Attributes) may be helpful 🚀
+
+More?
+
+* This [extension adding new attributes](https://github.com/dbrizov/NaughtyAttributes) may be helpful 🚀
+* This [extension is adding new attributes too](https://github.com/gasgiant/Markup-Attributes) ✨
+* This [repository is providing examples for every attribute](https://github.com/LastAssertor/Unity-Attributes-Example) 🤓
