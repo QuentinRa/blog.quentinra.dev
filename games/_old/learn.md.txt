@@ -21,6 +21,8 @@ Empty Game object "level"
 ------------------------- Camera
 -----------------------------------------------------------------
 
+Click on camera.
+
 Use the position to set objects/camera, not your intuitive guess
 
 remove background => set color => dark
@@ -43,12 +45,6 @@ GetComponent<Renderer>().enabled = true;
 -----------------------------------------------------------------
 ------------------------- Materials
 -----------------------------------------------------------------
-
-Mesh filter => tell the graphic card which mesh should be rendered (ex: cube, capsule, ...) (click circle dot to check)
-=> later: important 3D from blender => you will see them here
-
-Mesh renderer => tells GC how to render a mesh
-
 -----------------------------------------------------------------
 ------------------------- LIGHT and SHADOWS
 -----------------------------------------------------------------
