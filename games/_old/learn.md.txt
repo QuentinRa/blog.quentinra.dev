@@ -122,6 +122,8 @@ Enable `post-processing` in rendering.
 ------------------------- UserInterface (UI)
 -----------------------------------------------------------------
 
+Go back to 2D
+
 <details class="details-e">
 <summary>UI Builder (2020.3+, upcoming)</summary>
 

@@ -268,7 +268,56 @@ Debug.LogError("error");
 
 ## Input
 
-...
+In Unity, go to **Edit > Project Settings > Input Manager**. Expand Axes. In this menu, you may check, change, add new entries for input.
+
+* **Horizontal**: you can see **left**/**right** to move, while **A** and **D** are working
+* **Vertical**: you can see **down**/**up** to move, while **S** and **W** are working
+* **Jump**: you can see **space**
+
+Increase the size to add more 🚀. Once you are good, in a script, you can do that.
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+**Discontinuous input**
+
+```cs
+// -1 (left) or 0 (none) or 1 (right)
+float axisX = Input.GetAxis("Horizontal");
+// -1 (down) or 0 (none) or 1 (up)
+float axisY = Input.GetAxis("Vertical");
+
+if (Input.GetButton("Jump")) // if "Jump" triggered
+{
+    // do action
+}
+```
+</div><div>
+
+**Continuous input**
+
+```cs
+if (Input.GetButtonDown("Jump"))
+{
+    _is_jump_pressed = true; // change the state
+}
+if (Input.GetButtonUp("Jump"))
+{
+    _is_jump_pressed = true; // revert the state
+}
+```
+</div></div>
+
+<details class="details-e">
+<summary>Not using the Input Manager</summary>
+
+**For testing purposes**, you may also directly use the key. Once you did check, be a good fellow, and use the input manager 🤓.
+
+```cs
+bool pressed = Input.GetKey(KeyCode.Space);
+bool down = Input.GetKeyDown(KeyCode.Space);
+bool up = Input.GetKeyUp(KeyCode.Space);
+```
+</details>
 
 <hr class="sl">
 

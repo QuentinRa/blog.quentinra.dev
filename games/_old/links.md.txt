@@ -135,3 +135,16 @@ Tools
 * [Quests / Inventory ](https://github.com/devdogio)
 
 https://danielilett.com/2019-09-08-unity-tips-3-interpolation/
+
+-----------------------
+
+* [TileMap](https://www.raywenderlich.com/23-introduction-to-the-new-unity-2d-tilemap-system#toc-anchor-006)
+* [Generate 2.5d map](https://hexiledgames.itch.io/25d-tilemaps-and-voxel-terrain-generator)
+* [3D Map editor](https://fertile-soil-productions.itch.io/mast)
+* [szadiart (great / paid)](https://szadiart.itch.io/)
+* [Clean GUI](https://assetstore.unity.com/packages/2d/gui/flat-clean-gui-over-200-png-files-110987)
+* [MMORPG engine (not tested)](https://assetstore.unity.com/packages/templates/systems/ummorpg-2d-remastered-mmorpg-engine-102632)
+* [Networking library](https://github.com/vis2k/Mirror)
+* [MainMenu UI](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode)
+* [Simple UI](https://www.youtube.com/watch?v=xmR07iBW7zk&ab_channel=CocoCode)
+* [GameDevGuide](https://www.youtube.com/c/GameDevGuide/videos)

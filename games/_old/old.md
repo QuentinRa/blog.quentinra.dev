@@ -85,15 +85,7 @@ GameObject o = gameObject; // <=> this.gameObject
 > In Unity, everywhere you were using speed to move something, simply multiplying by `Time.deltaTime` will make the speed constant (=a real speed per second)
 > `pos.x * Time.deltaTime * speed`
 
-Anyway, you can see if a key is pressed/mouse button pressed with
-
 ```cs
-// -1 (left) 0 or 1 (right)
-// tryied to move to the left/right
-float axisX = Input.GetAxis("Horizontal");
-// -1 (down) 0 or 1 (up)
-// tryied to move up/down
-float axisY = Input.GetAxis("Vertical");
 // true if enter pressed
 bool pressed = Input.GetKey(KeyCode.KeypadEnter);
 // or you can change the state using down/up
@@ -218,29 +210,3 @@ anim.Play("anim_name");
 * ``Any state`` means that if the condition is true, then from any state you can move to another state
 
 This is a summary of this [great video](https://www.youtube.com/watch?v=Gf8LOFNnils&ab_channel=PandemoniumGames) if you can watch it, that's better.
-
-<hr class="sr">
-
-## Resources visited
-
-TileMaps
-
-* [TileMap](https://www.raywenderlich.com/23-introduction-to-the-new-unity-2d-tilemap-system#toc-anchor-006)
-* [Generate 2.5d map](https://hexiledgames.itch.io/25d-tilemaps-and-voxel-terrain-generator)
-* [3D Map editor](https://fertile-soil-productions.itch.io/mast)
-
-Assets
-
-* [szadiart (great / paid)](https://szadiart.itch.io/)
-* [Clean GUI](https://assetstore.unity.com/packages/2d/gui/flat-clean-gui-over-200-png-files-110987)
-* [MMORPG engine (not tested)](https://assetstore.unity.com/packages/templates/systems/ummorpg-2d-remastered-mmorpg-engine-102632)
-* [Networking library](https://github.com/vis2k/Mirror)
-
-UI
-
-* [MainMenu UI](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode)
-* [Simple UI](https://www.youtube.com/watch?v=xmR07iBW7zk&ab_channel=CocoCode)
-
-Youtube channels
-
-* [GameDevGuide](https://www.youtube.com/c/GameDevGuide/videos) (great tutorials about UI and general stuffs)
