@@ -362,12 +362,49 @@ EXCEPTION
     WHEN division_by_zero then RAISE EXCEPTION 'catch';
 END; $$ LANGUAGE plpgsql;
 ```
+</details>
+
+<details class="details-e">
+<summary>Select into</summary>
+
+```sql
+CREATE OR REPLACE FUNCTION some_function() RETURNS RECORD AS $$
+DECLARE
+    v_record RECORD;
+BEGIN
+    Select 1, 'Luna', 18, 'Woman' INTO v_record;
+    RETURN v_record;
+END; $$ LANGUAGE plpgsql;
+```
 
 Then test
 
 ```sql
-SELECT some_function(5,10);
--- param1 is 5. param2 is 10.
+SELECT some_function()
+-- (1,Luna,18,Woman)
+```
+</details>
+
+<details class="details-e">
+<summary>Using a cursor</summary>
+
+```sql
+CREATE OR REPLACE FUNCTION some_function() RETURNS void AS $$
+DECLARE
+v_cursor CURSOR IS SELECT 'Luna' as NAME; -- some real request 🙄
+v_entry RECORD;
+BEGIN
+    FOR v_entry IN v_cursor LOOP
+        -- do something
+        -- raise exception :)
+        RAISE '%', v_entry.name;
+	END LOOP;
+END; $$ LANGUAGE plpgsql;
+```
+
+```sql
+SELECT some_function();
+-- [...] Luna
 ```
 </details>
 
