@@ -84,21 +84,58 @@ END;
 
 ## Declare variables
 
-```sql
--- Syntax: v_name [CONSTANT] type [NOT NULL] [ := expression ]
-v_five CONSTANT integer := 5; -- constant
-v_real real NOT NULL := 3.0; -- store a result
-v_record record; -- record/tuple. You can do v_record.attribute
+<div class="row row-cols-md-2 mx-0"><div>
+
+We need variables, either **to store the result of a SQL request**, or because we are a good fellow, and **declare constants** instead of using hard coded values 🤮.
+
+The syntax is the following <small>([a] means that "a" is optional)</small>
+
+```none
+v_name [CONSTANT] type [NOT NULL] [ := expression ]
 ```
 
-> **Pro type**: you can create types with `CREATE TYPE`.
+> **Pro tip 🚀**: we are adding a `v_` to make it explicit in the name, that this is a variable. It could be a parameter too (if we are inside a function/...).<br>
+> **Pro tip**: you can create types with `CREATE TYPE`.
+</div><div class="align-center">
 
-Variables will be used to store SQL results, among other things, so you may want your variable to not take an hardcoded type, but a type from an attribute
+**Examples**
+
+```sql
+-- constant
+v_five CONSTANT integer := 5;
+-- not null
+v_real real NOT NULL := 3.0;
+-- simple variable
+v_date date;
+-- array
+v_array int array[3] := '{0,1,2}';
+```
+</div></div>
+
+<details class="details-e">
+<summary>Inter types 😎</summary>
+
+You may want your variable to not take an hardcoded type, but a type from an attribute
 
 ```sql
 v_name table.attr%type; -- type of the attribute "attr" in "table"
 v_name_copy v_name%type; -- type of the variable v_name
-v_record table%ROWTYPE; -- store a record/tuple of a table "table"
+```
+</details>
+
+<details class="details-e">
+<summary>Records/Tuples 👌</summary>
+
+If you got such a request, returning only one record. Then we got a type for this
+
+```sql
+Select * from table LIMIT 0, 1
 ```
 
-> **Pro tip 🚀**: we are adding a `v_` to make it explicit in the name, that this is a variable. It could be a parameter too (if we are inside a function/...).
+In PL/SQL, you can do this. Note that you can access an attribute of a record with `.` (dot).
+
+```sql
+v_record record; -- record/tuple
+v_record table%ROWTYPE; -- store a record/tuple of a table "table"
+```
+</details>
