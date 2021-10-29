@@ -173,3 +173,126 @@ public class MovementManager : MonoBehaviour {}
 ![Unity Serialize Field - New Menu1](images/new_menu_1.png)
 ![Unity Serialize Field - New Menu2](images/new_menu_2.png)
 </details>
+
+<hr class="sr">
+
+## Serialize Field : more
+
+<details class="details-e">
+<summary>General 🛠</summary>
+<br>
+<table class="table table-striped table-bordered border-dark">
+<tr><th>Code</th><th>Editor/Description</th></tr>
+
+<tr><td>
+
+```cs
+[HideInInspector] public float hide;
+```
+</td><td><br>
+
+No field "hide".
+</td></tr>
+
+<tr><td>
+
+```cs
+[RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(Collider), typeof(RigidBody))]
+public class SomeClass : MonoBehaviour {}
+```
+</td><td><br>
+
+You can't add this class as a component of a game object, if this class do not have a collider.
+</td></tr>
+
+<tr><td>
+
+```cs
+[DisallowMultipleComponent]
+public class SomeClass : MonoBehaviour {}
+```
+</td><td><br>
+
+You can't have more than one instance of this component per game object.
+</td></tr>
+
+<tr><td>
+
+```cs
+private enum Axis
+{
+	[InspectorName("X-axis")] X, 
+	[InspectorName("Y-axis")] Y
+}
+[SerializeField] private Axis axis = Axis.X;
+```
+</td><td><br>
+
+You can use this to rename the values of your enum in the inspector. It does not work for attributes 😭.
+
+![Attributes Unity - InspectorName](attributes/InspectorName.png)
+
+</td></tr>
+</table>
+</details>
+
+<details class="details-e">
+<summary>Numbers 🔢</summary>
+<br>
+<table class="table table-striped table-bordered border-dark">
+<tr><th>Code</th><th>Editor/Description</th></tr>
+
+<tr><td>
+
+```cs
+[Min(10)] public int speed = 15;
+```
+</td><td>
+
+![Attributes Unity - min](attributes/min.png)
+
+If the value is lower than min, then value = min.
+</td></tr>
+
+<tr><td>
+
+```cs
+[Range(0, 1)] public float volume;
+```
+</td><td><br>
+
+![Attributes Unity - range](attributes/range.png)
+</td></tr>
+
+</table>
+</details>
+
+<details class="details-e">
+<summary>Strings 📚</summary>
+<br>
+<table class="table table-striped table-bordered border-dark">
+<tr><th>Code</th><th>Editor/Description</th></tr>
+
+<tr><td>
+
+```cs
+[Multiline(2)] public string text = "";
+```
+</td><td><br>
+
+![Attributes Unity - multiline](attributes/multiline.png)
+</td></tr>
+
+<tr><td>
+
+```cs
+[TextArea] public string textarea = "";
+```
+</td><td><br>
+
+![Attributes Unity - textarea](attributes/textarea.png)
+</td></tr>
+
+</table>
+</details>
