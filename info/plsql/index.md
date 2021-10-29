@@ -50,6 +50,8 @@ call procedure_name(args);
 ```sql
 -- print something
 RAISE NOTICE 'something';
+RAISE NOTICE 'Some message with a parameter: %', 5;
+RAISE NOTICE '... % ... % ...', 5, 7;
 ```
 
 <hr class="sl">
@@ -77,3 +79,26 @@ END;
 
 * **EXCEPTION** is optional. You will handle exceptional behaviors (ex: errors) here.
 </div></div>
+
+<hr class="sr">
+
+## Declare variables
+
+```sql
+-- Syntax: v_name [CONSTANT] type [NOT NULL] [ := expression ]
+v_five CONSTANT integer := 5; -- constant
+v_real real NOT NULL := 3.0; -- store a result
+v_record record; -- record/tuple. You can do v_record.attribute
+```
+
+> **Pro type**: you can create types with `CREATE TYPE`.
+
+Variables will be used to store SQL results, among other things, so you may want your variable to not take an hardcoded type, but a type from an attribute
+
+```sql
+v_name table.attr%type; -- type of the attribute "attr" in "table"
+v_name_copy v_name%type; -- type of the variable v_name
+v_record table%ROWTYPE; -- store a record/tuple of a table "table"
+```
+
+> **Pro tip 🚀**: we are adding a `v_` to make it explicit in the name, that this is a variable. It could be a parameter too (if we are inside a function/...).
