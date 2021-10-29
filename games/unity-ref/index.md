@@ -36,6 +36,10 @@ I'm starting to stack my references/sources for Unity here. This is almost only 
 * [Pick Unity version - LTS](https://www.youtube.com/watch?v=LLYhTWEX2Wc) (🚀)
 * [Are Game Templates Useful Or Not](https://www.youtube.com/watch?v=GG0GVLYzkus) (📚)
 
+GitHub
+
+* [Editor Attributes](https://github.com/teebarjunk/Unity-Built-In-Attributes/) (🚀)
+
 <hr class="sr">
 
 ## Playlists

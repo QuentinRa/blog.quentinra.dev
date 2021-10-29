@@ -174,6 +174,8 @@ public class MovementManager : MonoBehaviour {}
 ![Unity Serialize Field - New Menu2](images/new_menu_2.png)
 </details>
 
+> **Pro tip**: `[Space(2)][Header("name")]` is the same as `[Space(2), Header("name")]`
+
 <hr class="sr">
 
 ## Serialize Field : more
@@ -198,7 +200,7 @@ No field "hide".
 
 ```cs
 [RequireComponent(typeof(Collider))]
-[RequireComponent(typeof(Collider), typeof(RigidBody))]
+// [RequireComponent(typeof(Collider), typeof(Rigidbody))]
 public class SomeClass : MonoBehaviour {}
 ```
 </td><td><br>
@@ -215,6 +217,52 @@ public class SomeClass : MonoBehaviour {}
 </td><td><br>
 
 You can't have more than one instance of this component per game object.
+</td></tr>
+
+<tr><td>
+
+```cs
+[HelpURL("https://memorize.be/games")]
+public class SomeClass : MonoBehaviour {}
+```
+</td><td><br>
+
+You can set the link opened when clicking on the "?" mark, next to the 3 dots to remove a component.
+</td></tr>
+
+<tr><td>
+
+```cs
+[ContextMenuItem("reset", "ResetIntWithMenuItem")] 
+public int intWithMenuItem;
+private void ResetIntWithMenuItem()
+{
+	intWithMenuItem = 12;
+}
+```
+</td><td><br>
+
+When using your left-click on a field, you can add fields in the context menu. If you want to add something for the class, check [ContextMenu](https://docs.unity3d.com/ScriptReference/ContextMenu.html).
+
+![Attributes Unity - Context](attributes/context.png)
+</td></tr>
+
+<tr><td>
+
+```cs
+// using System; // for Serializable
+[Serializable]
+public class NestedClass // <=> struct
+{
+	public int nestedAttribute; 
+}
+[SerializeField] private NestedClass nestedClass;
+```
+</td><td><br>
+
+You can make a dropdown nested inside your component, as other native components do. The class must be Serializable, then simply give the Serializable class as the type of the field.
+
+![Attributes Unity - Nested](attributes/nested.png)
 </td></tr>
 
 <tr><td>
