@@ -9,13 +9,14 @@
 * `course`: Adding course "Cryptography"
 * `course`: Adding course "C++"
 * `course`: Adding course "Data languages"
-* `course`: Adding courses "Unity", "Unity 2D", "Unity 3D" (and many sub-courses)
+* `course`: Adding courses "Unity", "Unity 2D", "Unity 3D" (and many related courses)
 
 **Changed**
 
 * `course`: Remade of OCaml
 * `course`: Remade of Agile-Scrum
 * `course`: Remade of SQL (separating PL/SQL)
+* `course`: Remade of PL/SQL
 * `internal`: updating dependencies
 * `rendering`: Markdown syntax reference 1.5
 
