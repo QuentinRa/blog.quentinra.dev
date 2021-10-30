@@ -6,7 +6,7 @@
 
 This page is a **summary of the syntax that we are using** in Markdown, and how it is rendered **on this website**.
 
-**Version**: <a href="https://github.com/lgs-games/memorize/blob/master/.github/STATIC_PAGES/MARKDOWN_SYNTAX.md" target="_blank" rel="noopener noreferrer">1.5.0</a> (2021-10-28)
+**Version**: <a href="https://github.com/lgs-games/memorize/blob/master/.github/STATIC_PAGES/MARKDOWN_SYNTAX.md" target="_blank" rel="noopener noreferrer">1.6.0</a> (2021-10-30)
 
 <div class="table-of-contents w-25 mx-auto">
 
@@ -21,7 +21,8 @@ This page is a **summary of the syntax that we are using** in Markdown, and how 
 7. [Special](#content-7-special)
 8. [Math](#content-8-math)
 9. [Details](#content-9-details)
-10. [Usage](#content-10-usage)
+10. [Columns](#content-10-columns)
+11. [Usage](#content-11-usage)
 </div>
 
 <hr class="sep-both">
@@ -181,10 +182,40 @@ The result is different according to the classes you gave to **details**.
 
 </tr></table>
 
+<hr class="sep-both">
+
+## 10. Columns
+
+**Since version 1.6.0**.
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+```html
+<div class="row row-cols-md-2 mx-0"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+```
+</div><div class="align-self-center">
+<div class="row row-cols-md-2 mx-0"><div>
+
+**Some content** 🚀<br>
+... (ex: an image) ...
+</div><div>
+
+**Some content** 📚<br>
+... (ex: describe the image)...
+</div></div><br><br>
+
+* You may add the class "align-self-center" to a div to center its content vertically
+</div></div>
 
 <hr class="sep-both">
 
-## 10. Usage
+## 11. Usage
 
 * You should **split a page into sections** using a separator, the code is
 

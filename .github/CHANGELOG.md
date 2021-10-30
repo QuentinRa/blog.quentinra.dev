@@ -18,7 +18,7 @@
 * `course`: Remade of SQL (separating PL/SQL)
 * `course`: Remade of PL/SQL
 * `internal`: updating dependencies
-* `rendering`: Markdown syntax reference 1.5
+* `rendering`: Markdown syntax reference 1.5 and 1.6
 
 ## v5.0.0-ea (2021-09-07)
 
