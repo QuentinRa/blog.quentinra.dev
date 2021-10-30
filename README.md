@@ -76,7 +76,6 @@ Last updated: 2021-10-25
 * [ ] Complete Linux course
 * [ ] Complete Network course
 * [ ] Complete SQL course
-* [ ] Complete NoSQL course
 * [ ] Complete Cryptography course
 </details>
 

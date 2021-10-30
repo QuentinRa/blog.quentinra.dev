@@ -9,6 +9,9 @@
 * [Linux](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-debian/#install-mongodb-community-edition)
 * [Cloud database](https://www.mongodb.com/) (account required)
 
+> **Quick official reference** 📚: [mongo Shell Quick Reference](https://docs.mongodb.com/manual/reference/mongo-shell/#command-helpers)<br>
+> **Official documentation** 🤓: [MongoDB documentation](https://docs.mongodb.com/guides/)
+
 <hr class="sl">
 
 ## Console
@@ -187,6 +190,29 @@ db.persons.find( { _id: ObjectId('617d8282a6e50c611c8e3c16') } )
 ```
 
 <hr class="sr">
+
+## Update and Delete
+
+* use UpdateOne(JSON, JSON) or UpdateMany(JSONArray, JSON)
+
+```mongodb
+db.persons.updateOne(
+    // select
+    { _id: ObjectId('617d8282a6e50c611c8e3c16') },
+    // set selected
+    {
+        $set: { "name": "Mr. Calistro" }
+    }
+)
+```
+
+* use DeleteOne(JSON) or DeleteMany(JSON)
+
+```mongodb
+db.persons.deleteOne({ _id: ObjectId('617d8282a6e50c611c8e3c16') })
+```
+
+<hr class="sl">
 
 ## Sources
 
