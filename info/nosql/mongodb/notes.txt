@@ -1,27 +1,4 @@
-```sql
-db.getCollection("table_name").insertOne(a_document_here)
-```
-
-<hr class="sl">
-
-```sql
--- list all
-db.getCollection("table_name").find()
--- list all documents having name equals to "Calistro"
-db.getCollection("table_name").find( { name: "Calistro" } )
-```
-
-```sql
-db.getCollection("persons").find( { _id: "60ce0899bc39bc6984e46e32" } )
-db.getCollection("persons").find( { _id: ObjectId('60ce0899bc39bc6984e46e32') } )
-```
-
-<hr class="sr">
-
-## Insert / Update / Delete
-
 First, check the [Quick reference](https://docs.mongodb.com/manual/reference/mongo-shell/#command-helpers)
-because it's quite useful.
 
 You can use ``db.collection.updateOne()``
 or ``db.collection.updateMany()`` to update documents.
@@ -40,29 +17,3 @@ db.getCollection("persons").updateOne(
 And you may use ``db.collection.deleteOne()``
 and ``db.collection.deleteMany()`` to delete
 documents, both taking a filter too.
-
-<hr class="sr">
-
-## Filter
-
-You may add more restrictions to your filter
-using ``or`` or ``and``.
-
-```sql
-db.persons.find({ $or: [ { _id: ObjectId('60ce0899bc39bc6984e46e32') }, { _id: ObjectId('60ce0899bc39bc6984e46e33') } ] })
-db.persons.find({ $and: [ { _id: ObjectId('60ce0899bc39bc6984e46e32') }, { username: "example" } ] })
-```
-
-<hr class="sr">
-
-## Sources
-
-* <https://docs.mongodb.com/manual/reference/mongo-shell/#command-helpers>
-* <https://docs.mongodb.com/manual/tutorial/insert-documents/>
-* <https://docs.mongodb.com/manual/tutorial/update-documents/>
-* <https://docs.mongodb.com/manual/faq/fundamentals/#how-does-mongodb-address-sql-or-query-injection>
-* <https://betterprogramming.pub/little-bobby-collections-how-to-write-a-mongodb-injection-ad58a4e2d754>
-* <https://stackoverflow.com/questions/46972695/see-setup-a-user-with-mongodb-compass>
-* <https://www.codevscolor.com/pages/mongodb-tutorials/>
-* <https://www.mongodb.com/nodejs-database>
-* <https://scotch.io/@micwanyoike/getting-started-with-mongodb-in-linux>

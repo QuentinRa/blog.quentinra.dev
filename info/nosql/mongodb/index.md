@@ -110,9 +110,83 @@ db.persons.insertMany( [ {name: "Suwan", not_used: true }, {name: "Mynasitra"} ]
 // two new documents
 ```
 
+<hr class="sl">
+
+## Find documents
+
+<table class="table table-bordered table-striped border-dark">
+<tr><th>SQL</th><th>MongoDB</th></tr>
+
+<tr><td><pre class="language-sql"><code>SELECT name FROM persons</code></pre>
+</td><td>
+
+```mongodb
+db.persons.find({}, { name: true })
+db.persons.find({}, { name: 1 }) // same
+```
+</td></tr>
+
+<tr><td><pre class="language-sql"><code>SELECT * FROM persons</code></pre>
+</td><td>
+
+```mongodb
+db.persons.find()
+```
+</td></tr>
+
+<tr><td><pre class="language-sql"><code>SELECT name FROM persons WHERE name = "Calistro"</code></pre>
+</td><td>
+
+```mongodb
+db.persons.find({ name: "Calistro" }, { name: true })
+```
+</td></tr>
+
+<tr><td><pre class="language-sql"><code>SELECT * FROM persons WHERE name = "Calistro"</code></pre>
+</td><td>
+
+```mongodb
+db.persons.find( { name: "Calistro" } )
+```
+</td></tr>
+
+<tr><td><pre class="language-sql"><code
+>SELECT * FROM persons WHERE name = "Calistro" OR
+                            name = "Luna"</code></pre>
+</td><td>
+
+```mongodb
+db.persons.find({ $or: [ 
+  { name: 'Calistro' },
+  { name: 'Luna' }
+] })
+```
+</td></tr>
+
+<tr><td><pre class="language-sql"><code
+>SELECT * FROM persons WHERE name = "Calistro" AND
+                            _id = "xxx"</code></pre>
+</td><td>
+
+```mongodb
+db.persons.find({ $and: [
+  { name: 'Calistro' },
+  { _id: ObjectId('617d8282a6e50c611c8e3c16') }
+]})
+```
+</td></tr>
+</table>
+
 > ⚠️ **Pro tip** ⚠️: even if you may think that the field `_id` is a string, it's an **ObjectID**. Use `ObjectId(string)` to cast a string to an ObjectId.
 
-<hr class="sl">
+```mongodb
+// no matches
+db.persons.find( { _id: "617d8282a6e50c611c8e3c16" } )
+// 1 matches, same id ✨, "same" request ✨
+db.persons.find( { _id: ObjectId('617d8282a6e50c611c8e3c16') } )
+```
+
+<hr class="sr">
 
 ## Sources
 
