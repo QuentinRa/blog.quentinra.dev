@@ -1,14 +1,5 @@
 ## Installing MongoDB
 
-First, let's install MongoDB.
-
-* On Windows, I used [MongoDBCompass](https://www.mongodb.com/products/compass)
-    * run <code class="bg-transparent text-dark">MongoDBCompass</code>
-    * the local URL is <code class="bg-transparent text-dark">mongodb://localhost:27017/</code>
-    * or you may use <code class="bg-transparent text-dark">mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&ssl=false</code>
-* On Linux, I'm using ``mongo`` command ([tutorial](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-debian/#install-mongodb-community-edition))
-* You may use the [cloud database](https://www.mongodb.com/), on your mongo account
-
 <hr class="sl">
 
 ```sql
