@@ -1,27 +1,5 @@
 ## Make a request
 
-A request will looks like this
-
-```sql
-// simple request
-MATCH (ref)
-// returns the node(s)
-RETURN ref; // optional ;
-
-// more complex
-MATCH (ref)
-WHERE a_condition
-RETURN ref.attribute
-LIMIT a_value
-```
-
-The most used clauses are
-
-* [MATCH](clause/match.md) (SQL From)
-* [RETURN](clause/return.md) (SQL Select)
-* [WHERE](clause/where.md) (SQL Where)
-* [LIMIT AND SKIP](clause/limit.md) (SQL Limit)
-* [ORDER BY](clause/order-by.md) (SQL Order by)
 * [OPTIONAL MATCH](clause/optional-match.md) (a second From)
 * [MATCH WITH](clause/with.md) (nested request)
 

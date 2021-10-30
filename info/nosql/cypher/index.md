@@ -147,6 +147,26 @@ RETURN something
 
 <hr class="sl">
 
+## Cypher  clauses
+
+The order of the clauses in a request is `MATCH > WHERE > RETURN > ORDER > SKIP > LIMIT`.
+
+<details class="details-e">
+<summary>MATCH (<code>SQL FROM/WHERE</code>)</summary>
+
+As we saw, you call `MATCH` with a graph.
+
+```cypher
+MATCH (m:Movie) RETURN m
+MATCH m = (:Movie) RETURN m
+MATCH g = (:Movie)-[]-() RETURN g
+// as a where, but you can only use EQUALS (only released in 2008)
+MATCH (m:Movie{released: 2008}) RETURN m
+```
+</details>
+
+<hr class="sr">
+
 ## Source
 
 * <https://en.wikipedia.org/wiki/Cypher_(query_language)>
