@@ -1,11 +1,3 @@
-## Make a request
-
-* [OPTIONAL MATCH](clause/optional-match.md) (a second From)
-
-Then you should practice [here](clause/exercise.md).
-
-<hr class="sr">
-
 ## Create-Update-Delete
 
 You can use ``CREATE`` to create new nodes / edges,

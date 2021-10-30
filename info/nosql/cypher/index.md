@@ -256,6 +256,20 @@ RETURN m
 ```
 </details>
 
+<details class="details-e">
+<summary>OPTIONAL MATCH (<code>No equivalent in SQL</code>)</summary>
+
+This clause is after the MATCH, before the WHERE. You can try to match something, but if there is not match, then the variable will be null.
+
+```cypher
+// for each film, we want to know who acted_in, if someone
+// acted in (otherwise, it will be null)
+MATCH (a:Movie)
+OPTIONAL MATCH (a)<-[r:ACTED_IN]-()
+RETURN a.title, r
+```
+</details>
+
 <hr class="sl">
 
 ## Source
