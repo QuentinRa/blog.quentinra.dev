@@ -56,14 +56,16 @@ The whole result is what we call a **graph**.
 <summary>Examples</summary>
 
 * `()`: every node
-* `(m)`: every node, store each node in m
+* `(m)`: store every node in m
 * `(:Movie)`: every node having the label "Movie"
-* `(m:Movie)`: store each node having the label "Movie" inside m
-* `(m:Movie{released:2008})`: store each movies released in 2008 in m
+* `(m:Movie)`: store nodes having the label "Movie" inside m
+* `(m:Movie{released:2008})`: store movies released in 2008 in m
 * `(:Movie{released:2008})`: only movies released in 2008
 * `(:{released:2008})`: nodes having released = 2008
-* `(m:{released:2008})`: store nodes having released = 2008
+* `(r:{released:2008})`: store nodes having released = 2008 in r
 </details>
+
+> **Pro tip**: you can use `.` to get an attribute from a node.
 
 <hr class="sl">
 
@@ -99,8 +101,8 @@ You will replace node following the format in the previous section, and `edge` w
 
 * `()--()`: every two nodes linked together
 * `()-->()`: every two nodes, with one having an arrow going to the other
-* `(:Movie)--(p)`: store in p, a node linked with a node "Movie"
-* `(:Movie)<-[:ACTED_IN]-(p)`: store in p, a node that "ACTED_IN" a Movie
+* `(:Movie)--(p)`: store in p, nodes linked with nodes "Movie"
+* `(:Movie)<-[:ACTED_IN]-(p)`: store in p, nodes that "ACTED_IN" a Movie
 * `(p)-[:ACTED_IN]->(:Movie)`: same
 * `()-[a:ACTED_IN]-()`: store in a, every edge labeled "ACTED_IN"
 </details>
