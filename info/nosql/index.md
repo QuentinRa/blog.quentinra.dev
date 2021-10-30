@@ -1,15 +1,15 @@
 # Introduction
 
-**NoSQL** stands for **NotOnlySQL** (or non-SQL). It's used to describe databases that are **not relational databases**, but **allows SQL** and **a new kind of query language**. It's became quite popular around **2010** <small>(while it's existing since **1960**)</small>, and it's used by a lot of actors like Google, Microsoft, Facebook, or Twitter.
+**NoSQL** stands for **NotOnlySQL** (or non-SQL). They are not "forbidding" you to use relational database, but they are saying that **relational databases aren't the only kind of databases**. NoSQL databases became quite popular around **2010** <small>(while they exists since **1960**)</small>, and they are used by a lot of actors like Google, Microsoft, Facebook, or Twitter.
 
-NoSQL databases are great when there is a need to a great amount of unstructured (or semi-structured) data. It means that you can add/remove fields, so you can have two "users" having different fields. This is allowing you to add fields when they are needed, and increase performances.
+NoSQL databases are great when there is a great amount of **unstructured** (or **semi-structured**) **data**. It means that you can add/remove fields, so you can have two "users" having different fields. This is allowing you to add fields when they are needed, and increase performances.
 
-We got **4 kinds of NoSQL databases models/stores**
+We got **4 majors kinds of NoSQL databases models/stores**
 
 * **Key-value**: a key is associated to a value
-* **Document**: data stored as documents, [MongoDB](https://www.mongodb.com/)
+* **Document**: data stored as documents
 * **Columnar**: using a key-columns where column is a bunch of values
-* **Graph**: nodes and edges, [Cypher](https://neo4j.com/developer/cypher/)
+* **Graph**: nodes and edges
 
 > **Note**: Since 2019, the [GQL](https://en.wikipedia.org/wiki/Graph_Query_Language) (Graph Query Language) may becomes a database query language for Graph databases (GDB) like the SQL for relational databases, but it seems they are still working on it.
 
@@ -20,7 +20,7 @@ We got **4 kinds of NoSQL databases models/stores**
 <div class="row row-cols-md-2 mx-0"><div class="align-self-center">
 
 * **Description**: Cypher is Neo4J Graph Query Language
-* **Category**: Graph<br>
+* **Category**: Graph
 * **My tutorial** 📚: [Learn Cypher - Memorize](cypher/index.md)
 * **Official tutorial**: [Neo4J - Cypher Query Language](https://neo4j.com/developer/cypher/)
 </div><div>
@@ -34,6 +34,26 @@ We got **4 kinds of NoSQL databases models/stores**
 </div></div>
 
 <hr class="sr">
+
+## MongoDB
+
+<div class="row row-cols-md-2 mx-0"><div class="align-self-center">
+
+* **Description**: NoSQL with JSON-based documents
+* **Category**: Document
+* **My tutorial** 📚: [Learn MongoDB - Memorize](mongodb/index.md)
+* **Official tutorial**: [MongoDB documentation](https://docs.mongodb.com/guides/)
+</div><div>
+
+> * **No register** 🚀
+> * **Cloud** (free version available) or **local** database
+> * [**Open-source**](https://github.com/mongodb) ✨
+> * **JSON** 👍
+> * **Almost no syntax** 📚
+> * **Hard to reference something** 🙄 (No relationships/edges/...)
+</div></div>
+
+<hr class="sl">
 
 ## Sources
 
