@@ -17,3 +17,26 @@
 * On **Linux**, I used `mongod`, so I was only in **command-line**.
 
 This course will mostly cover Mongo from the point of view of a command-line user, as it's easy to execute something using the interface on Windows, given a command, and driver usually provide something similar to the commands used in `mongod`.
+
+<hr class="sl">
+
+## Create an user (optional)
+
+```sql
+-- store credentials in admin database
+use admin
+
+db.createUser({
+    user: "username",
+    pwd:"password",
+    roles:[
+        { role: "userAdminAnyDatabase", db: "admin"  }
+    ]
+})
+```
+
+Then, you can log in with
+
+```bash
+mongo -u username --authenticationDatabase admin -p
+```
