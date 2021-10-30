@@ -270,6 +270,36 @@ RETURN a.title, r
 ```
 </details>
 
+<hr class="sr">
+
+## Create-Update-Delete
+
+<details class="details-e">
+<summary>CREATE (<code>SQL INSERT</code>)</summary>
+
+Simply give the graph you want to create.
+
+```cypher
+CREATE (:Movie{title: "My movie", released: 2021})
+// create from something existing
+MATCH (m:Movie{title: "My movie"}) CREATE (m)<-[:ACTED_IN]-(:ShowbizPerson{name: "me"})
+```
+</details>
+
+<details class="details-e">
+<summary>UPDATE (<code>SQL UPDATE</code>)</summary>
+
+As we did in SQL, simply "`SELECT`" and update your selection with `SET`.
+
+```cypher
+MATCH (p:ShowbizPerson{name: "me"})
+SET p.name = "My name", p.born = 2021
+// same as
+MATCH (p:ShowbizPerson{name: "me"})
+SET p.name = "My name" SET p.born = 2021
+```
+</details>
+
 <hr class="sl">
 
 ## Source
