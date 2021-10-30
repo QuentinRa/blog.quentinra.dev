@@ -24,8 +24,8 @@ This course will mostly cover Mongo from the point of view of a command-line use
 
 ```sql
 -- store credentials in admin database
+-- "root" user
 use admin
-
 db.createUser({
     user: "username",
     pwd:"password",
@@ -33,6 +33,10 @@ db.createUser({
         { role: "userAdminAnyDatabase", db: "admin"  }
     ]
 })
+
+-- (later) to create a regular user
+use database_name
+db.createUser( { user: "myuser", pwd: "password", roles: ["readWrite"] })
 ```
 
 Then, you can log in with
@@ -93,3 +97,28 @@ The keys are your attributes, the value are the value for these attributes for t
 </div></div>
 
 > **Note**: [Types that you may use are listed here](https://docs.mongodb.com/manual/core/shell-types/) (new types are Date, ObjectId, ...)
+
+<hr class="sr">
+
+## Insert documents
+
+* **Function**: insertOne(JSON)
+* **Note**: create the collection if it does no exists
+* **Example**
+
+```mongodb
+// insert a document { name: "Calistro" }
+db.persons.insertOne( { name: "Calistro" } )
+// {"_id": "617d8282a6e50c611c8e3c16", "name": "Calistro"}
+```
+
+* **Function**: insertMany(JSONArray)
+* **Note**: create the collection if it does no exists
+* **Example**
+
+```mongodb
+db.persons.insertMany( [ {name: "Suwan", not_used: true }, {name: "Mynasitra"} ] )
+// two new documents
+```
+
+> ⚠️ **Pro tip** ⚠️: even if you may think that the field `_id` is a string, it's an **ObjectID**. Use `ObjectId(string)` to cast a string to an ObjectId.

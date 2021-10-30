@@ -5,33 +5,14 @@ db.getCollection("table_name").insertOne(a_document_here)
 <hr class="sl">
 
 ```sql
--- creating table persons
--- insert a document { name: "Calistro" }
-db.getCollection("persons").insertOne( { name: "Calistro" } )
 -- list all
 db.getCollection("table_name").find()
 -- list all documents having name equals to "Calistro"
 db.getCollection("table_name").find( { name: "Calistro" } )
 ```
 
-<hr class="sl">
-
-## Types
-
-Because you may want to know but the types that
-> **Pro tip** 😬😬😬: even if you may think that the field `_id` is a string, it's an **ObjectID**. Use `ObjectId(string)` to cast a string to an ObjectId.
-
-you may use a lot in mongo are
-listed [here](https://docs.mongodb.com/manual/core/shell-types/).
-
-What I want to add, let's says you are look for
-a documented having the id ``60ce0899bc39bc6984e46e32``.
-You can't do
-
 ```sql
--- no result, type won't match with ObjectId
 db.getCollection("persons").find( { _id: "60ce0899bc39bc6984e46e32" } )
--- so you must do
 db.getCollection("persons").find( { _id: ObjectId('60ce0899bc39bc6984e46e32') } )
 ```
 
@@ -41,10 +22,6 @@ db.getCollection("persons").find( { _id: ObjectId('60ce0899bc39bc6984e46e32') } 
 
 First, check the [Quick reference](https://docs.mongodb.com/manual/reference/mongo-shell/#command-helpers)
 because it's quite useful.
-
-You may use ``db.collection.insertOne()``
-or ``db.collection.insertMany()`` to create new
-documents in a collection like we saw above.
 
 You can use ``db.collection.updateOne()``
 or ``db.collection.updateMany()`` to update documents.
@@ -74,17 +51,6 @@ using ``or`` or ``and``.
 ```sql
 db.persons.find({ $or: [ { _id: ObjectId('60ce0899bc39bc6984e46e32') }, { _id: ObjectId('60ce0899bc39bc6984e46e33') } ] })
 db.persons.find({ $and: [ { _id: ObjectId('60ce0899bc39bc6984e46e32') }, { username: "example" } ] })
-```
-
-<hr class="sl">
-
-## Notes
-
-Create a new user
-
-```sql
-use database_name
-db.createUser( { user: "myuser", pwd: "password", roles: ["readWrite"] })
 ```
 
 <hr class="sr">
