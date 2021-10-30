@@ -148,7 +148,7 @@ RETURN something
 
 <hr class="sl">
 
-## Cypher  clauses
+## Cypher basic clauses
 
 The order of the clauses in a request is `MATCH > WHERE > RETURN > ORDER BY > SKIP > LIMIT`.
 
@@ -217,6 +217,19 @@ MATCH (m:Movie) RETURN m.title AS title, m.released AS year // rename
 MATCH (m:Movie) RETURN m.title ORDER BY m.title // ASC
 MATCH (m:Movie) RETURN m.title ORDER BY m.title ASC
 MATCH (m:Movie) RETURN m.title ORDER BY m.title DESC
+```
+</details>
+
+<details class="details-e">
+<summary>LIMIT AND SKIP (<code>SQL LIMIT</code>)</summary>
+
+`SKIP` is used to skip results, while `LIMIT` is used to limit the number of results.
+
+```cypher
+// return the oldest movies
+MATCH (m:Movie) RETURN m ORDER BY m.released 
+SKIP 10 // skip the first 10 results
+LIMIT 3 // return only 3 results
 ```
 </details>
 
