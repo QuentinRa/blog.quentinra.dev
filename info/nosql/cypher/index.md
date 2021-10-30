@@ -166,6 +166,8 @@ MATCH (m:Movie{released: 2008}) RETURN m
 // catesian product
 MATCH (m), (p) RETURN m, p
 ```
+
+> **Pro tip**: You can chain matches if needed.
 </details>
 
 <details class="details-e">
@@ -234,6 +236,27 @@ LIMIT 3 // return only 3 results
 </details>
 
 <hr class="sr">
+
+## Cypher advanced clauses
+
+<details class="details-e">
+<summary>WITH (<code>No equivalent in SQL</code>)</summary>
+
+`WITH` is allowing you to update what you matched, and prepare things for next matches. You can use WHERE, ORDER BY, LIMIT, etc. inside a WITH!
+
+```cypher
+// what's the average released year for the movies in the database?
+MATCH (m:Movie) RETURN ROUND(AVG(m.released))
+// using a WITH
+MATCH (m:Movie) WITH ROUND(AVG(m.released)) as avg RETURN avg
+// and now, let's say we want the movies released in avg (=1998)
+MATCH (m:Movie) WITH ROUND(AVG(m.released)) as avg 
+MATCH (m{released: avg})
+RETURN m
+```
+</details>
+
+<hr class="sl">
 
 ## Source
 

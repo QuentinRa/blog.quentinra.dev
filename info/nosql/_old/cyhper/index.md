@@ -1,7 +1,6 @@
 ## Make a request
 
 * [OPTIONAL MATCH](clause/optional-match.md) (a second From)
-* [MATCH WITH](clause/with.md) (nested request)
 
 Then you should practice [here](clause/exercise.md).
 
