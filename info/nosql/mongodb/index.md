@@ -48,13 +48,48 @@ mongo -u username --authenticationDatabase admin -p
 First, **you should now that if something do not have values**, like a database not having "tables", a table not having "values" or an attribute not having a value, **then you won't see it**.
 
 * list all databases `show dbs`
-* move to database `use a_name` ("created" if not exists)
+* move to database `use database_name` ("created" if not exists)
 
 Inside a database, you can create collections of documents. A collection could be seen as table in SQL, and documents could be seen as records/tuples.
 
-* `show collections` (remember 🙄, empty = not listed)
+* `show collections` <small>(remember 🙄, empty = not listed)</small>
 * every document in your collection
   * `db.getCollection("name").find()`
   * `db.name.find()`
 
-> **Pro tip**: You can exit with `exit` 😱.
+> **Note**: You can exit with `exit` 😱.
+
+<hr class="sl">
+
+## Documents
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+A document is a JSON object. It's something like this
+
+```json
+{
+  "key1": "value",
+  "key2": 5,
+  "key3": true,
+  "key4": [
+    {
+      "key": "value"
+    }
+  ]
+}
+```
+</div><div>
+
+The keys are your attributes, the value are the value for these attributes for this document.
+
+**Notes**
+
+* Attributes are not properties of the document itself, so documents in a collection may have different attributes
+* Each document will have a unique attribute `_id` added, having the type `ObjectId`
+* The only way to create a relationship between two documents and either
+  * Making an embed document (ex: `key4`)
+  * Referencing the `_id` value of another document
+</div></div>
+
+> **Note**: [Types that you may use are listed here](https://docs.mongodb.com/manual/core/shell-types/) (new types are Date, ObjectId, ...)

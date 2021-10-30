@@ -4,26 +4,6 @@ db.getCollection("table_name").insertOne(a_document_here)
 
 <hr class="sl">
 
-## Documents
-
-A document is a JSON object. It's something like this
-
-```json
-{
-  "key1": "value",
-  "key2": 5,
-  "key3": true,
-  "key4": [
-    {
-      "key": "value"
-    }
-  ]
-}
-```
-
-The keys are your attributes, the value are the value
-for these attributes for this document.
-
 ```sql
 -- creating table persons
 -- insert a document { name: "Calistro" }
@@ -34,39 +14,13 @@ db.getCollection("table_name").find()
 db.getCollection("table_name").find( { name: "Calistro" } )
 ```
 
-**Notes**
-
-* attributes are not properties of the collection
-  but the document, so you may add an attribute
-  only for some document
-* each document will have a unique attribute
-  ``_id`` added, having the type `ObjectId`
-* from what I know, the only way to create
-  a relation between two documents and either
-    * making an embed document
-    * using the ``_id`` value in the referencing
-      document
-
-An embed document would be something like this
-
-```json
-{
-  "name": "John",
-  "cars": [
-    {
-      "type": "..."
-      "price": "..."
-      "since": "..."
-    }
-  ]
-}
-```
-
 <hr class="sl">
 
 ## Types
 
 Because you may want to know but the types that
+> **Pro tip** 😬😬😬: even if you may think that the field `_id` is a string, it's an **ObjectID**. Use `ObjectId(string)` to cast a string to an ObjectId.
+
 you may use a lot in mongo are
 listed [here](https://docs.mongodb.com/manual/core/shell-types/).
 
