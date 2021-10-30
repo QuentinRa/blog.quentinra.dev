@@ -319,6 +319,24 @@ MATCH (p:ShowbizPerson{name: "My name"}) DETACH DELETE (p)
 
 <hr class="sl">
 
+## Functions
+
+We already saw some functions such as `type`, or `ROUND/AVG`, you got the complete list in the [documentation](https://neo4j.com/docs/cypher-manual/current/functions/), but it's good to know these
+
+* `keys(node)`: names of the attributes of a node
+* `properties(node)`: attributes and values of a node
+* `labels(node)`: returns the labels of a node
+* `nodes(graph)`: returns the nodes in a graph
+* `relationships(graph)`: returns all the edges of a graph
+* `id(node)`: id of a node
+
+And some useful aggregates functions
+
+* `COUNT(something)`: number of results
+* `MIN(something)`, `MAX(something)`, `SUM(something)`, `AVG(something)`: like in SQL
+
+<hr class="sr">
+
 ## Source
 
 * <https://en.wikipedia.org/wiki/Cypher_(query_language)>

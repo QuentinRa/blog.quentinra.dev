@@ -1,16 +1,3 @@
-## Functions
-
-You might use them
-
-* ``keys(node)``: returns the attributes names of a node
-* ``properties(node)``: node attributes + values
-* ``labels(node)``: returns the labels of a node
-* ``nodes(path)``: returns the nodes in a path
-* ``relationships(path)``: returns all the edges of a path
-* ``id(node)``: id of a node
-
-<hr class="sr">
-
 ## Lists
 
 List-related functions
