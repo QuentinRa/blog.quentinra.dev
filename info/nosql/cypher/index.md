@@ -109,6 +109,44 @@ You will replace node following the format in the previous section, and `edge` w
 
 <hr class="sr">
 
+## Simple request
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+```cypher
+MATCH graph
+RETURN something
+```
+
+* A **graph** is nodes and edges, use the syntax of the previous sections
+* Something may be 
+  * a value, a reference, or a graph
+  * some JSON
+</div><div class="align-self-center">
+
+<div>
+
+* **Clauses name are not case sensitive** (uppercase, lowercase, mix of both)
+* You can put everything on the same line
+</div>
+
+* Comments are made with `//` or `/* ... */`
+* Concatenate strings with `+`
+</div></div>
+
+<details class="details-e">
+<summary>Examples</summary>
+
+* `MATCH (n) RETURN n`: return every node
+* `MATCH (m:Movie) RETURN m`: return every node labeled "Movie"
+* `MATCH (m:Movie) RETURN m.title`: return the title every node labeled "Movie"
+* `MATCH (m:Movie) RETURN {title:m.title, desc: m.tagline}`: ... as JSON
+* `MATCH (m:Movie) RETURN m.title, m.tagline`: ... as a Table
+* `MATCH (:Movie)<-[:ACTED_IN]-(p) RETURN p`: nodes that acted in a movie
+</details>
+
+<hr class="sl">
+
 ## Source
 
 * <https://en.wikipedia.org/wiki/Cypher_(query_language)>
