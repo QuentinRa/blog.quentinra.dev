@@ -150,7 +150,7 @@ RETURN something
 
 ## Cypher  clauses
 
-The order of the clauses in a request is `MATCH > WHERE > RETURN > ORDER > SKIP > LIMIT`.
+The order of the clauses in a request is `MATCH > WHERE > RETURN > ORDER BY > SKIP > LIMIT`.
 
 <details class="details-e">
 <summary>MATCH (<code>SQL FROM/WHERE</code>)</summary>
@@ -207,6 +207,16 @@ MATCH (m:Movie) RETURN DISTINCT m // no duplicates results
 MATCH (m:Movie) RETURN m.title, m.released // table with title+released
 MATCH (m:Movie) RETURN {title: m.title, year: m.released} // JSON
 MATCH (m:Movie) RETURN m.title AS title, m.released AS year // rename
+```
+</details>
+
+<details class="details-e">
+<summary>ORDER BY (<code>SQL ORDER BY</code>)</summary>
+
+```cypher
+MATCH (m:Movie) RETURN m.title ORDER BY m.title // ASC
+MATCH (m:Movie) RETURN m.title ORDER BY m.title ASC
+MATCH (m:Movie) RETURN m.title ORDER BY m.title DESC
 ```
 </details>
 
