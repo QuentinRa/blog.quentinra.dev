@@ -128,6 +128,7 @@ RETURN something
 
 * **Clauses name are not case sensitive** (uppercase, lowercase, mix of both)
 * You can put everything on the same line
+* You can make multiples requests in one call, by separating requests with a `;` <small>(=no `;` for the last one)</small>
 </div>
 
 * Comments are made with `//` or `/* ... */`
@@ -162,6 +163,8 @@ MATCH m = (:Movie) RETURN m
 MATCH g = (:Movie)-[]-() RETURN g
 // as a where, but you can only use EQUALS (only released in 2008)
 MATCH (m:Movie{released: 2008}) RETURN m
+// catesian product
+MATCH (m), (p) RETURN m, p
 ```
 </details>
 
@@ -191,7 +194,19 @@ MATCH (m:Movie) WHERE exists(m.released) AND m.released > 2000 RETURN m
 // match every node that PRODUCED a movie, and the movie
 MATCH (p)-[:PRODUCED]->(m:Movie) RETURN p, m
 // version using where
-MATCH (p), (m) WHERE (p)-[:PRODUCED]->(m:Movie) RETURN p, m
+MATCH (p)--(m) WHERE (p)-[:PRODUCED]->(m:Movie) RETURN p, m
+```
+</details>
+
+<details class="details-e">
+<summary>RETURN (<code>SQL SELECT</code>)</summary>
+
+```cypher
+MATCH (m:Movie) RETURN m // node
+MATCH (m:Movie) RETURN DISTINCT m // no duplicates results
+MATCH (m:Movie) RETURN m.title, m.released // table with title+released
+MATCH (m:Movie) RETURN {title: m.title, year: m.released} // JSON
+MATCH (m:Movie) RETURN m.title AS title, m.released AS year // rename
 ```
 </details>
 
