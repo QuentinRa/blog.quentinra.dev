@@ -39,7 +39,7 @@ We got **4 majors kinds of NoSQL databases models/stores**
 
 <div class="row row-cols-md-2 mx-0"><div class="align-self-center">
 
-* **Description**: NoSQL with JSON documents
+* **Description**: NoSQL with JSON-based (BSON) documents
 * **Category**: Document
 * **My tutorial** 📚: [Learn MongoDB - Memorize](mongodb/index.md)
 * **Official tutorial**: [MongoDB documentation](https://docs.mongodb.com/guides/)

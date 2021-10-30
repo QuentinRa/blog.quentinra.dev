@@ -1,6 +1,6 @@
 # MongoDB
 
-**MongoDB** is a database storing data using **JSON documents**. You will use JSON everywhere, and there is **almost no syntax**. This come at the cost: **it's tricky to reference something**. You will have to use the ID of a document, or nest a document inside another 😬.
+**MongoDB** is a database storing data using **JSON-based (BSON) documents**. You will use JSON everywhere, and there is **almost no syntax**. This come at the cost: **it's tricky to reference something**. You will have to use the ID of a document, or nest a document inside another 😬.
 
 * Windows
   * Install [MongoDBCompass](https://www.mongodb.com/products/compass)
@@ -40,3 +40,21 @@ Then, you can log in with
 ```bash
 mongo -u username --authenticationDatabase admin -p
 ```
+
+<hr class="sr">
+
+## MongoDB way of doing things
+
+First, **you should now that if something do not have values**, like a database not having "tables", a table not having "values" or an attribute not having a value, **then you won't see it**.
+
+* list all databases `show dbs`
+* move to database `use a_name` ("created" if not exists)
+
+Inside a database, you can create collections of documents. A collection could be seen as table in SQL, and documents could be seen as records/tuples.
+
+* `show collections` (remember 🙄, empty = not listed)
+* every document in your collection
+  * `db.getCollection("name").find()`
+  * `db.name.find()`
+
+> **Pro tip**: You can exit with `exit` 😱.
