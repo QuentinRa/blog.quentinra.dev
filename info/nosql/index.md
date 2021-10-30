@@ -15,9 +15,23 @@ We got **4 kinds of NoSQL databases models/stores**
 
 <hr class="sl">
 
-## ...
+## Cypher
 
-...
+<div class="row row-cols-md-2 mx-0"><div class="align-self-center">
+
+* **Description**: Cypher is Neo4J Graph Query Language
+* **Category**: Graph<br>
+* **My tutorial** 📚: [Learn Cypher - Memorize](cypher/index.md)
+* **Official tutorial**: [Neo4J - Cypher Query Language](https://neo4j.com/developer/cypher/)
+</div><div>
+
+> * **Needs register** 🙄
+> * **Cloud** (free version available) or **local** database
+> * [**Open-source**](https://github.com/neo4j) ✨
+> * The syntax **looks like SQL**
+> * **easy to learn**
+> * **easy to make a "mistake"**, I mean a working query that is in fact not doing what you want 🙄🤚
+</div></div>
 
 <hr class="sr">
 
