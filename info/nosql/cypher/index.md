@@ -300,6 +300,23 @@ SET p.name = "My name" SET p.born = 2021
 ```
 </details>
 
+<details class="details-e">
+<summary>REMOVE/DELETE (<code>SQL DELETE/ALTER/DROP</code>)</summary>
+
+```cypher
+// REMOVE an attribute
+MATCH (p:ShowbizPerson{name: "My name"}) REMOVE p.born RETURN p
+
+// DELETE an edge
+MATCH (:ShowbizPerson{name: "My name"})-[r]-() DELETE r
+
+// DETACH DELETE a node
+// DETACH = delete incident edges, optional if they were already deleted
+// DELETE = delete the node
+MATCH (p:ShowbizPerson{name: "My name"}) DETACH DELETE (p)
+```
+</details>
+
 <hr class="sl">
 
 ## Source

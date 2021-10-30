@@ -1,13 +1,3 @@
-## Create-Update-Delete
-
-``MATCH-SET-RETURN`` to update something and
-``MATCH-REMOVE/DELETE/DETACH`` to remove something.
-
-* [Update](ddl/update.md)
-* [Delete](ddl/delete.md)
-
-<hr class="sl">
-
 ## Functions
 
 You might use them
