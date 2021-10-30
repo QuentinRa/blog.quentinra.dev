@@ -1,22 +1,4 @@
-## Core concept
-
-Here this is what a query result will looks like
-
-![example](example.png)
-
-You got
-
-* **4 nodes**, each node is like a tuple in a SQL database,
-  they have properties called **attributes**
-* **3 edges**, they are the relation between the nodes,
-  you may have a lot of them between two nodes and in
-  a lot of directions
-
-That's what we call a graph.
-
-<hr class="sl">
-
-## Nodes
+# Nodes
 
 A **node** is defined between ``()`` giving you something
 like this ``(ref:label{})`` where

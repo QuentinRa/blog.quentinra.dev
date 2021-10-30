@@ -16,6 +16,23 @@ In this course, I will use [this database](https://github.com/memorize-code/memo
 
 <hr class="sl">
 
+## Core concept
+
+<div class="row mt-3 mx-0"><div class="col-md-4">
+
+![Cypher Graph Example](images/example.png)
+</div><div class="align-self-center col-md-8">
+
+This is what a query result will looks like. You got
+
+* **4 nodes**, each node is like a tuple in a SQL database, they have properties called **attributes**
+* **3 edges**, they are the relation between the nodes, you may have a lot of them between two nodes and in a lot of directions
+
+The whole result is what we call a **graph**.
+</div></div>
+
+<hr class="sr">
+
 ## Source
 
 * <https://en.wikipedia.org/wiki/Cypher_(query_language)>
