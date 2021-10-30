@@ -67,6 +67,46 @@ The whole result is what we call a **graph**.
 
 <hr class="sl">
 
+## Edges
+
+<div class="row row-cols-md-2 mx-0"><div class="align-self-center">
+
+**Edges** are represented with something inside two brackets. It's made of 3 elements, and all three are optional. The syntax is
+
+```none
+[ref:label{}]
+```
+
+* **ref**: same as for node
+* **label**: same as for node, you may add multiples labels by separating them with `|`
+* **{}**: same as for node
+</div><div>
+
+But, aside from representing the edge, we also need to be able to represent the link between nodes using this edge.
+
+* `node--node` : anonymous edge without direction
+* `node-->node` : anonymous edge with direction
+* `node<--node` : anonymous edge with direction
+* `node-edge-node` : edge without direction
+* `node-edge->node` : edge with direction
+* `node<-edge-node` : edge with direction
+
+You will replace node following the format in the previous section, and `edge` with the format in this section. A edge is "anonymous", because we are not adding "edge" (`[ref:label{}]`) in the pattern.
+</div></div>
+
+<details class="details-e">
+<summary>Examples</summary>
+
+* `()--()`: every two nodes linked together
+* `()-->()`: every two nodes, with one having an arrow going to the other
+* `(:Movie)--(p)`: store in p, a node linked with a node "Movie"
+* `(:Movie)<-[:ACTED_IN]-(p)`: store in p, a node that "ACTED_IN" a Movie
+* `(p)-[:ACTED_IN]->(:Movie)`: same
+* `()-[a:ACTED_IN]-()`: store in a, every edge labeled "ACTED_IN"
+</details>
+
+<hr class="sr">
+
 ## Source
 
 * <https://en.wikipedia.org/wiki/Cypher_(query_language)>
