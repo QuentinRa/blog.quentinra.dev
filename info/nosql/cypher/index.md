@@ -270,7 +270,7 @@ RETURN a.title, r
 ```
 </details>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Create-Update-Delete
 
@@ -317,7 +317,7 @@ MATCH (p:ShowbizPerson{name: "My name"}) DETACH DELETE (p)
 ```
 </details>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Functions
 
@@ -335,7 +335,7 @@ And some useful aggregates functions
 * `COUNT(something)`: number of results
 * `MIN(something)`, `MAX(something)`, `SUM(something)`, `AVG(something)`: like in SQL
 
-<hr class="sr">
+<hr class="sl">
 
 ## Lists
 
@@ -375,6 +375,122 @@ Example
 MATCH (a:ShowbizPerson {name: 'Keanu Reeves'})
 RETURN [(a)-->(b) WHERE b:Movie | b.released] AS years
 ````
+
+<hr class="sr">
+
+## Exercises
+
+<details class="details-s">
+<summary>Which movies Meg Ryan acted in?</summary>
+
+```cypher
+MATCH (:ShowbizPerson{name: "Meg Ryan"})-[:ACTED_IN]->(m:Movie)
+RETURN DISTINCT m.title
+```
+</details>
+
+<details class="details-s">
+<summary>Who directed the movie The Matrix?</summary>
+
+```cypher
+MATCH (:Movie{title: "The Matrix"})-[:DIRECTED]-(s:ShowbizPerson)
+RETURN s.name
+```
+</details>
+
+<details class="details-s">
+<summary>Movies release between 1990-2000 (included)?</summary>
+
+```cypher
+MATCH (m:Movie)
+WHERE m.released>=1990 AND m.released<=2000
+RETURN m.title
+```
+</details>
+
+<details class="details-s">
+<summary>Which actor played in a movie with Tom Cruise?</summary>
+
+```cypher
+MATCH (s:ShowbizPerson)-[:ACTED_IN]->(:Movie)<-[:ACTED_IN]-(:ShowbizPerson{name: "Tom Cruise"})
+RETURN DISTINCT s.name
+```
+
+We added DISTINCT because an actor may have played in a movie with Tom Cruise more than once.
+</details>
+
+<details class="details-s">
+<summary>Who both wrote and produced the same movie?</summary>
+
+```cypher
+MATCH (w:ShowbizPerson)-[:WROTE]->(:Movie)<-[:PRODUCED]-(p:ShowbizPerson)
+WHERE w.name = p.name
+RETURN DISTINCT w.name
+```
+
+or
+
+```cypher
+MATCH (w:ShowbizPerson)-[:WROTE]->(:Movie)<-[:PRODUCED]-(w)
+RETURN DISTINCT w.name
+````
+
+or
+
+```cypher
+MATCH (w:ShowbizPerson)-[:WROTE]->(:Movie)
+MATCH (w)-[:PRODUCED]->(:Movie)
+RETURN DISTINCT w.name
+```
+
+</details>
+
+<details class="details-s">
+<summary>How many wrote or produced a movie?</summary>
+
+```cypher
+MATCH (p:ShowbizPerson)-[r:WROTE|PRODUCED]->(:Movie)
+RETURN DISTINCT COUNT(p)
+```
+</details>
+
+<details class="details-s">
+<summary>Give the persons directly linked with "Kevin Bacon".</summary>
+
+```cypher
+MATCH (:ShowbizPerson{name: "Kevin Bacon"})--(p:ShowbizPerson)
+RETURN DISTINCT p
+```
+
+Alternative answer, by my teacher (too hard 😭)
+
+```cypher
+MATCH p=shortestPath((:ShowbizPerson{name:"Kevin Bacon"})-[*1..2]-(c))
+WHERE c.name <> "Kevin Bacon"
+WITH collect(c.name) AS names
+RETURN names
+```
+</details>
+
+<details class="details-s">
+<summary>Give the persons indirectly linked with "Kevin Bacon".</summary>
+
+```cypher
+MATCH (:ShowbizPerson{name: "Kevin Bacon"})--()--(p:ShowbizPerson)
+RETURN DISTINCT p.name
+```
+
+Alternative answer, by my teacher (too hard 😭)
+
+```cypher
+MATCH p=shortestPath((:b{name:"Kevin Bacon"})-[*1..2]-(c))
+WHERE c.name <> "Kevin Bacon"
+WITH collect(c.name) AS names
+MATCH (a) WHERE NOT a.name in names
+WITH collect(a.name) AS cnames
+RETURN cnames
+```
+</details>
 
 <hr class="sl">
 
