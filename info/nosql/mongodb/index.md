@@ -22,27 +22,16 @@ This course will mostly cover Mongo from the point of view of a command-line use
 
 ## Create an user (optional)
 
-```sql
--- store credentials in admin database
--- "root" user
-use admin
-db.createUser({
-    user: "username",
-    pwd:"password",
-    roles:[
-        { role: "userAdminAnyDatabase", db: "admin"  }
-    ]
-})
-
--- (later) to create a regular user
+```mongodb
+// mongo -u username --authenticationDatabase admin -p
+// use admin
+// db.createUser({
+//     user: "username",
+//     pwd:"password",
+//     roles:[{ role: "userAdminAnyDatabase", db: "admin"  }]
+// })
 use database_name
 db.createUser( { user: "myuser", pwd: "password", roles: ["readWrite"] })
-```
-
-Then, you can log in with
-
-```bash
-mongo -u username --authenticationDatabase admin -p
 ```
 
 <hr class="sr">
@@ -122,3 +111,17 @@ db.persons.insertMany( [ {name: "Suwan", not_used: true }, {name: "Mynasitra"} ]
 ```
 
 > ⚠️ **Pro tip** ⚠️: even if you may think that the field `_id` is a string, it's an **ObjectID**. Use `ObjectId(string)` to cast a string to an ObjectId.
+
+<hr class="sl">
+
+## Sources
+
+* <https://docs.mongodb.com/manual/reference/mongo-shell/#command-helpers>
+* <https://docs.mongodb.com/manual/tutorial/insert-documents/>
+* <https://docs.mongodb.com/manual/tutorial/update-documents/>
+* <https://docs.mongodb.com/manual/faq/fundamentals/#how-does-mongodb-address-sql-or-query-injection>
+* <https://betterprogramming.pub/little-bobby-collections-how-to-write-a-mongodb-injection-ad58a4e2d754>
+* <https://stackoverflow.com/questions/46972695/see-setup-a-user-with-mongodb-compass>
+* <https://www.codevscolor.com/pages/mongodb-tutorials/>
+* <https://www.mongodb.com/nodejs-database>
+* <https://scotch.io/@micwanyoike/getting-started-with-mongodb-in-linux>
