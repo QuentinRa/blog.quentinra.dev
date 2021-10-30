@@ -165,6 +165,36 @@ MATCH (m:Movie{released: 2008}) RETURN m
 ```
 </details>
 
+<details class="details-e">
+<summary>WHERE (<code>SQL WHERE</code>)</summary>
+
+It's working like in SQL. The where will filter the nodes that do not matched the condition in the where. Where is taking a boolean, and you can chain conditions with `AND/OR/NOT/IS/XOR`.
+
+* `=, !=, <>, >, <, >=, <=, ...`
+* ex: `ref.attribute <> 5`
+* `attribute IN [value, value]`
+* `attribut =~ "regex"`
+* `attribute STARTS WITH, ENDS WITH, CONTAINS`
+* `ref:label`: true if ref got this label, false else
+* `exists(ref.attribute)`: check if "attribute" exists
+* `type(edge) == 'name'`: test if an edge got this name
+* you can write an edge in the WHERE like you did in the match
+
+The match can help you simply complex where, so don't hesitate to use it, as follows
+
+```cypher
+// released after 2000
+MATCH (m) WHERE m:Movie AND exists(m.released) AND m.released > 2000 RETURN m
+// could be simplied to
+MATCH (m:Movie) WHERE exists(m.released) AND m.released > 2000 RETURN m
+
+// match every node that PRODUCED a movie, and the movie
+MATCH (p)-[:PRODUCED]->(m:Movie) RETURN p, m
+// version using where
+MATCH (p), (m) WHERE (p)-[:PRODUCED]->(m:Movie) RETURN p, m
+```
+</details>
+
 <hr class="sr">
 
 ## Source
