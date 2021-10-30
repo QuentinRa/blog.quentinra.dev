@@ -33,6 +33,40 @@ The whole result is what we call a **graph**.
 
 <hr class="sr">
 
+## Nodes
+
+<div class="row row-cols-md-2 mx-0"><div class="align-self-center">
+
+**Nodes** are represented with something inside two parenthesis. It's made of 3 elements, and all three are optional. The syntax is
+
+```none
+(ref:label{})
+```
+
+</div><div>
+
+* **ref**: used to reference this node later in the query
+* **label**: tags that you may give to a node. Useful when looking at nodes having a tag. Nodes can have multiples tags.
+* **{}**: you may give **attributes** and their value here in JSON (`{ attribute:value, ... }`)
+  * if you are selecting a node, this is like a WHERE in SQL
+  * otherwise, you will use this to add/update properties of a node
+</div></div>
+
+<details class="details-e">
+<summary>Examples</summary>
+
+* `()`: every node
+* `(m)`: every node, store each node in m
+* `(:Movie)`: every node having the label "Movie"
+* `(m:Movie)`: store each node having the label "Movie" inside m
+* `(m:Movie{released:2008})`: store each movies released in 2008 in m
+* `(:Movie{released:2008})`: only movies released in 2008
+* `(:{released:2008})`: nodes having released = 2008
+* `(m:{released:2008})`: store nodes having released = 2008
+</details>
+
+<hr class="sl">
+
 ## Source
 
 * <https://en.wikipedia.org/wiki/Cypher_(query_language)>
