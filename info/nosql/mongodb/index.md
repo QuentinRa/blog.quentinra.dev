@@ -135,7 +135,6 @@ Note that I won't give examples for `findOne`, as this is the same as `find`, bu
 
 ```mongodb
 db.persons.find({}, { name: true })
-db.persons.find({}, { name: 1 }) // same
 ```
 </td></tr>
 
@@ -200,6 +199,8 @@ db.persons.find( { _id: "617d8282a6e50c611c8e3c16" } )
 db.persons.find( { _id: ObjectId('617d8282a6e50c611c8e3c16') } )
 ```
 
+> **Pro tip**: when using projection, or in some cases such as updating something, you are setting a bool at true for a column. Well, lazy as we are, we are also using `1` or `""` instead of `true`.
+
 <hr class="sr">
 
 ## Update and Delete
@@ -245,8 +246,35 @@ db.persons.deleteOne({ _id: ObjectId('617d8282a6e50c611c8e3c16') })
 
 <hr class="sl">
 
+## Methods
+
+In MongoDB, you can chain a lot of calls, unless the call is "terminal".
+
+<table class="table table-bordered table-striped border-dark">
+<tr><th>SQL concept</th><th>MongoDB</th></tr>
+
+<tr><td><pre class="language-sql"><code>COUNT(*)</code></pre></td><td>
+
+```mongodb
+db.persons.find().size() // terminal
+```
+</td></tr>
+
+<tr><td><pre class="language-sql"><code>LIMIT 0,1</code></pre></td><td>
+
+```mongodb
+db.persons.find().skip(0).limit(1)
+db.persons.find().skip(countPerPage * page).limit(countPerPage)
+```
+</td></tr>
+
+</table>
+
+<hr class="sr">
+
 ## Sources
 
+* <https://www.mongodb.com/basics/examples>
 * <https://docs.mongodb.com/manual/reference/mongo-shell/#command-helpers>
 * <https://docs.mongodb.com/manual/tutorial/insert-documents/>
 * <https://docs.mongodb.com/manual/tutorial/update-documents/>
