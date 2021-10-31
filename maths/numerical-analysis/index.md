@@ -304,3 +304,4 @@ If you can understand French, [here is a short video](https://youtu.be/8SU_HBvmZ
 * <https://mathworld.wolfram.com/topics/RelaxationMethods.html>
 * <https://www.mathportal.org/calculators/matrices-calculators/matrix-decomposition-calculator.php>
 * <https://aaronschlegel.me/cholesky-decomposition-r-example.html>
+* <https://en.wikipedia.org/wiki/Condition_number>
