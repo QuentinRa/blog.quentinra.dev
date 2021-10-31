@@ -1,0 +1,29 @@
+- FORM action
+- PHP 8
+  - enums (enum Name {case;} or case=[...]. Name::from([...]))
+  - add the ? condition (something ? blah blah : null) with ?->
+  - named arguments ($name = true => name: true)
+  - isset($a) ? $a : $b <=> $a ?? $b
+  - wrap text in {} curly braces
+  - https://www.php.net/releases/8.0/en.php
+  - https://php.watch/versions/8.1
+  - https://www.jetbrains.com/phpstorm/whatsnew/2020-3/
+
+------------
+Courses
+------------
+http://www.cburch.com/books/
+
+https://www.php-fig.org/psr/psr-1/
+https://www.php-fig.org/psr/psr-2/
+=> https://www.php-fig.org/psr/psr-12/ ?
+
+https://scotch.io/tutorials/a-beginners-guide-to-composer
+
+------------------------
+Courses - mails
+------------------------
+https://roundcube.net/
+https://stackoverflow.com/questions/1092723/how-do-you-build-a-web-based-email-client-using-php
+https://www.jotform.com/blog/10-ajax-webmail-clients/
+https://webhostingmedia.net/best-webmail-clients/
