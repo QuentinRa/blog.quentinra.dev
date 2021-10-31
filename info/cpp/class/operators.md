@@ -14,6 +14,15 @@ Every **operator** (+, +=, -, /=, <<, ...) is a **function**, and we **can overl
 
 > There is nothing official about external/internal operator, it's just of way of doing things. Every operator could be internal (resp. external) 😎.
 
+You can call an operator with either
+
+```cpp
+Fraction f;
+f.operator=(operator+(f, 5)); // 🙄
+f = f + 5; // 👍
+// the compiler will convert back
+```
+
 <hr class="sl">
 
 ## Internal operators
@@ -64,12 +73,9 @@ Fraction::Fraction(int numerator, int denominator) {
     denominator_ = denominator;
 }
 
-Fraction& Fraction::operator=(const Fraction & c) {
-    if (&c != this) {
-        this->numerator_ = c.numerator_;
-        this->denominator_ = c.denominator_;
-    }
-    return *this;
+Fraction Fraction::operator-() const
+{
+    return *this; // todo
 }
 
 Fraction Fraction::operator+=( const Fraction &f1 ) {
@@ -87,8 +93,18 @@ Fraction Fraction::operator*=( const Fraction &f1 ) {
 Fraction Fraction::operator/=( const Fraction &f1 ) {
     return (*this) = (*this) / f1;
 }
+
+Fraction& Fraction::operator=(const Fraction & c) {
+    if (&c != this) {
+        this->numerator_ = c.numerator_;
+        this->denominator_ = c.denominator_;
+    }
+    return *this;
+}
 ```
 </details>
+
+> **Pro tip**: you may use references instead of returning a value.
 
 <hr class="sr">
 
@@ -109,6 +125,8 @@ Fraction Fraction::operator/=( const Fraction &f1 ) {
 #ifndef MAIN_HPP
 #define MAIN_HPP
 
+#include <ostream>
+
 struct Fraction {
 private:
 	int numerator_;
@@ -128,7 +146,6 @@ bool operator>( const Fraction &f1, const Fraction &f2 );
 bool operator<=( const Fraction &f1, const Fraction &f2 );
 bool operator>=( const Fraction &f1, const Fraction &f2 );
 std::ostream& operator<<(std::ostream& os, const Fraction& f);
-</details>
 
 #endif //MAIN_HPP
 ```
@@ -145,6 +162,8 @@ Fraction::Fraction(int numerator, int denominator) {
     numerator_ = numerator;
     denominator_ = denominator;
 }
+
+// if inside a namespace, use :: (ig: ns::operator+)
 
 Fraction operator+(const Fraction& f1, const Fraction& f2) {
     return f1; // todo
@@ -185,3 +204,5 @@ bool operator>=( const Fraction &f1, const Fraction &f2 ) {
 }
 ```
 </details>
+
+> **Pro tip**: you may use references instead of returning a value.
