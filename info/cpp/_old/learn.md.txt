@@ -1,7 +1,0 @@
-------- input/output
-
-c out
-c in
-end l
-
-getline(cin, string_variable)

@@ -180,11 +180,13 @@ a.print(); // "A" 😱
 While this is working 🙄, so you must use pointer for generics stuff
 
 ```cpp
+// new and delete are explained later
+// we are creating a pointer and it works
 A* p_a = new B;
 p_a->print(); // "B" 😎
-delete p_a; // free the new
+delete p_a;
 
 // if there is no virtual destructor in A
-// we should do
-// delete (B*) p_a;
+// we should do 'delete (B*) p_a;' 
+// (there isn't a virtual destructor here 🙄😱, but fortunately, B isn't allocating something)
 ```
