@@ -182,7 +182,7 @@ While this is working 🙄, so you must use pointer for generics stuff
 ```cpp
 A* p_a = new B;
 p_a->print(); // "B" 😎
-delete p_a;
+delete p_a; // free the new
 
 // if there is no virtual destructor in A
 // we should do
