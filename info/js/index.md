@@ -267,5 +267,3 @@ Any cheatsheet is longer and more complete than this course 😭. Still, this on
 * <https://attacomsian.com/blog/xhr-post-request>
 * <https://javascript.pythoncheatsheet.org/>
 * <https://mbeaudru.github.io/modern-js-cheatsheet/>
-
-I would really want to read everything [jframer](https://github.com/jfarmer) made, but it didn't even start yet (🙃). Maybe you will?
