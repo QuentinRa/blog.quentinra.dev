@@ -72,7 +72,6 @@ Last updated: 2021-10-25
 * [ ] Complete Cybersecurity course
 * [ ] Complete Bootstrap course
 * [ ] Complete C course
-* [ ] Complete C++ course
 * [ ] Complete Python course
 * [ ] Complete Linux course
 * [ ] Complete Network course

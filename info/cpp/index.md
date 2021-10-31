@@ -1,6 +1,8 @@
 # C++ (cplusplus)
 
-...
+The **C++** (**cplusplus**) appeared around 1985, inspired from ADA, CLU, it's an **extension of the C language** (as the name implies 😂). It inspired many languages such as C#, Java, Lua, PHP, and Python. It's a **low level language**, **fast** and **platform independent**, **that have object-oriented features** such as constructors, inheritance, methods, objects, polymorphism and overloading.
+
+It may look complex at one glance, but if you are friendly with C, then C++ is quite easy to learn, at least from my point of view.
 
 > The current standard of C++ is **C++20**, while `C++23` is coming. The previous major versions are `C++98`, `C++11`, and `C++17`.
 
