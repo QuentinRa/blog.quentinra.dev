@@ -117,6 +117,16 @@ db.persons.insertMany( [ {name: "Suwan", not_used: true }, {name: "Mynasitra"} ]
 
 ## Find documents
 
+You may find(JSON, JSON) or findOne(JSON, JSON).
+
+* the first value is the filter, a SQL WHERE <small>(empty object=default=No restriction)</small>
+* the second value is the project, a SQL SELECT <small>(empty=default=Select *)</small>
+
+<details class="details-e">
+<summary>Examples of SQL vs MongoDB</summary>
+
+Note that I won't give examples for `findOne`, as this is the same as `find`, but return one row (in SQL, it would be `LIMIT 0,1`).
+
 <table class="table table-bordered table-striped border-dark">
 <tr><th>SQL</th><th>MongoDB</th></tr>
 
@@ -179,6 +189,7 @@ db.persons.find({ $and: [
 ```
 </td></tr>
 </table>
+</details>
 
 > ⚠️ **Pro tip** ⚠️: even if you may think that the field `_id` is a string, it's an **ObjectID**. Use `ObjectId(string)` to cast a string to an ObjectId.
 
@@ -195,16 +206,36 @@ db.persons.find( { _id: ObjectId('617d8282a6e50c611c8e3c16') } )
 
 * use UpdateOne(JSON, JSON) or UpdateMany(JSONArray, JSON)
 
+<details class="details-e">
+<summary>Set attributes</summary>
+
 ```mongodb
 db.persons.updateOne(
     // select
     { _id: ObjectId('617d8282a6e50c611c8e3c16') },
     // set selected
     {
+        // create name with value, or update field
         $set: { "name": "Mr. Calistro" }
     }
 )
 ```
+</details>
+
+<details class="details-e">
+<summary>Unset attributes</summary>
+
+```mongodb
+db.persons.updateOne(
+    // select
+    { _id: ObjectId('617e5dd65f15583a7c4e06ea') },
+    {
+        // delete this field for this document
+        $unset: { "not_used": true }
+    }
+)
+```
+</details>
 
 * use DeleteOne(JSON) or DeleteMany(JSON)
 
