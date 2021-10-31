@@ -57,3 +57,20 @@ de l’observation sur les coefficients de régression avec
 
 		library(olsrr)
 		ols_cooksd_chart(model)
+
+vous utilisez la même loi théorique proposée
+(donc Gaussienne par exmeple au problème 11)
+ce qui change est le paramètre
+pour le paramètre vous utilisez l'estimateur de MV obtenu
+et puis vous faites vos simulations de bootstrap paramétrique en faisant des échantillons de même loi suivant thetaMV
+Vous allez donc obtenir une echantillon iid d'estimateurs, à partir de laquelle vous pouvez construire un intervalle de confiance
+
+Vous allez obtenir un echantillon de parametrez
+par example, si vous utilisez M = 1000, vous allez avoir 1000 estimateurs différentes
+Que vous regardez comme des réalisation iid d'une même variable aléatoire
+Appelons Y cette variable aléatoire pour l'instante
+Vous cherchez donc des valeurs a et b telles que P( a <= Y <= b ) >= 0.95
+alors, la proposition est de prendre a = quantile 0.025 de la loi empirique
+b= quantile 0.975 de la loi empirique
+
+lorsque vous optimisez une fonction f(x), avec x appartenant à un domain D, le maximum se trouve toujours soit aux points f'(x)=0, soit aux limites du domaine
