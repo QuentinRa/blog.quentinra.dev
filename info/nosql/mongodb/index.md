@@ -162,6 +162,23 @@ db.persons.find( { name: "Calistro" } )
 ```
 </td></tr>
 
+<tr><td><pre class="language-sql"><code>SELECT * FROM persons WHERE name >= "Calistro"</code></pre>
+</td><td>
+
+```mongodb
+db.persons.find({ name: { $gte: "Calistro" } })
+// you can use $gte (>=) $gt (>) $eq (=) $ne (<>) $lt (<) $lte (<=)
+```
+</td></tr>
+
+<tr><td><pre class="language-sql"><code>-- no equivalent</code></pre>
+</td><td>
+
+```mongodb
+db.persons.find({ name: { $exists: true } })
+```
+</td></tr>
+
 <tr><td><pre class="language-sql"><code
 >SELECT * FROM persons WHERE name = "Calistro" OR
                             name = "Luna"</code></pre>
@@ -172,19 +189,7 @@ db.persons.find({ $or: [
   { name: 'Calistro' },
   { name: 'Luna' }
 ] })
-```
-</td></tr>
-
-<tr><td><pre class="language-sql"><code
->SELECT * FROM persons WHERE name = "Calistro" AND
-                            _id = "xxx"</code></pre>
-</td><td>
-
-```mongodb
-db.persons.find({ $and: [
-  { name: 'Calistro' },
-  { _id: ObjectId('617d8282a6e50c611c8e3c16') }
-]})
+// $or (OR), $and (AND), $NOR (not any of the predicates)
 ```
 </td></tr>
 </table>
@@ -265,6 +270,14 @@ db.persons.find().size() // terminal
 ```mongodb
 db.persons.find().skip(0).limit(1)
 db.persons.find().skip(countPerPage * page).limit(countPerPage)
+```
+</td></tr>
+
+<tr><td><pre class="language-sql"><code>ORDER BY</code></pre></td><td>
+
+```mongodb
+db.persons.find().sort({name: 1}) // ASC
+db.persons.find().sort({name: -1}) // DESC
 ```
 </td></tr>
 

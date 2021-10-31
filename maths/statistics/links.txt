@@ -1,3 +1,7 @@
+https://finnstats.com/index.php/2021/10/30/regression-in-r/
+https://www.r-bloggers.com/2021/10/regression-in-r-ultimate-guide/
+https://youtu.be/pWKvpoi4Cdg
+
 https://rpsychologist.com/viz
 
 https://en.wikipedia.org/wiki/Nonparametric_statistics
