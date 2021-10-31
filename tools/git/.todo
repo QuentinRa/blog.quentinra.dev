@@ -1,6 +1,17 @@
 - git tag
 - git reset
 - git filter-branch
-- https://github.com/KnpLabs/php-github-api
-- https://docs.github.com/en/graphql/overview/explorer
-- https://github.com/controlook-zz/standards/blob/master/general/version_control.md
+
+-----------------------
+GITHUB
+-----------------------
+
+https://github.com/KnpLabs/php-github-api
+https://docs.github.com/en/graphql/overview/explorer
+
+-----------------------
+STANDARD
+-----------------------
+
+https://github.com/controlook-zz/standards/blob/master/general/version_control.md
+https://chris.beams.io/posts/git-commit/#seven-rules

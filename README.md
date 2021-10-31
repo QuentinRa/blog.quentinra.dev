@@ -60,6 +60,7 @@ Last updated: 2021-10-25
 * [ ] Index Google/Bing
 * [ ] add a pull request template
 * [ ] review .summary
+* [ ] Explode the ToolBox? Check .todo in .summary
 </details>
 
 <br>
