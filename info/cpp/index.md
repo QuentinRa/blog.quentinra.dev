@@ -58,6 +58,10 @@ You will write declarations, meaning the signatures of things <small>(functions,
 * Cast with `type(value)` (ex: `int(5.0)`)
 * Type `bool`
 * `for(int i = ...; ... ; ...)` (added in C99+ later)
+* references
+* overloading methods
+* namespaces
+* improved structures, classes
 
 <hr class="sl">
 
@@ -212,7 +216,7 @@ catch (type& n) {} catch (type2& n2) {}
 catch(...) {} // fallback
 ```
 
-<hr class="sr">
+<hr class="sl">
 
 ## Structures and Classes
 

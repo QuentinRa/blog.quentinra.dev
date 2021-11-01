@@ -19,7 +19,7 @@ let main argc argv = (* some code *)
 let _ = main (1, "test") (* "NOT WORKING"-> one argument instead of two *)
 let _ = main 1 "test" (* USUAL WAY *)
 let _ = main (1) ("test") (* working but why??? 🤮 *)
-let _ = main (-1) "test" (* parenthesis required for -1 *)
+let _ = main (-1) "test" (* -1 is '-' and '1' so you need parenthesis *)
 ```
 
 <hr class="sr">
@@ -28,12 +28,12 @@ let _ = main (-1) "test" (* parenthesis required for -1 *)
 
 | | int | float | bool | char | string | unit | list |
 |-----|-----|-----|-----|-----|-----|-----|-----|
-| values | `5`, `0x29a` | `5.0` | `true` | `'5'` | `"5"` | `()` | `[]` |
+| values | `5`, `0x29a` | `5.0`, `5.` | `true` | `'5'` | `"5"` | `()` | `[]` |
 | operators | `+` `-` `*` `/`<br> `mod` | `+.` `-.` `*.` `/.` <br>`**` (pow) | `not` `&&` <code>\|\|</code> | | `^` (concat) | | `@` `::` |
-| example | `5 + 0` | `5.0 /. 1.0` | `not true` | | `"ab" ^ "c"` | | `5::[]` |
+| example | `5 + 0` | `5.0 +. 0.0` | `not true` | | `"ab" ^ "c"` | | `5::[]` |
 
 * **Note**: You can convert a variable with functions such as `string_of_int` (int -> string).
-* **Note**: unit should not be used, this is a sort of `void`. You may use it when a function is not returning something, or not taking something in argument
+* **Note**: unit should not be used, at least when practicing the functional paradigm, this is a sort of `void`. You may use it when a function is not returning something, or not taking something in argument <small>(but try to use it the least possible)</small>
 * **Note**: [Functions on string](https://ocaml.org/api/String.html) (String.equal, String.length, ex: `String.length "5"`)
 * **Note**: As in functional programming, types are inferred, you should never make an explicit declaration of the type of something.
 

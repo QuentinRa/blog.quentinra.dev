@@ -4,7 +4,10 @@
 - int& f(int &r) => do not return a local reference
 - rand()
 - struct name_s { type foo(); }
+- overload && || -> && > || unless overload
 - #include <cmath>
+- nullptr
+- "pure" virtual method
 - c out c in end l, and getline(cin, string_variable)
 	- #include <ostream>
 	- #include <oistream>
