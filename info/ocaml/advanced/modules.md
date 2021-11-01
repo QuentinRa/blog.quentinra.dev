@@ -2,7 +2,7 @@
 
 [Go back](../index.md#advanced-concepts)
 
-We can group declarations of functions and new types in a container, called a **module**. This is a sort of class, if you are familiar with this notion. The declarations of functions/types inside the modules are described in **a module type**, and your module will take the type of a **module type**.
+We can group declarations of functions and new types in a container, called a **module**. This is a sort of class, if you are familiar with this notion. The declarations of functions/types inside the modules are described in **a module type**, and your module will take the type of **module type**.
 
 If you are familiar with Java, a **module type** is an interface, and a **module** is a class implementing the interface. You can have many **modules** implementing one interface, but every module can only **implement one module type**.
 

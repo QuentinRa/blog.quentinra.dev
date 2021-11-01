@@ -39,7 +39,7 @@ module type AbstractSet = sig
 end
 
 (*
-As always, the set "GenericSet" will have to implements "AbstractSet" types and methods.
+As always, the set "GenericSet" will have to implement "AbstractSet" types and methods.
 
 We are adding an argument that will have to be provided when creating the generic set: S.
 And we are saying that the type of elt (=type of an element) will be equals to the type

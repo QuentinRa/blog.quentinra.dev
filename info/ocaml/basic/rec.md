@@ -19,19 +19,17 @@ let _ = pow 5 3 (* 125 *)
 
 ## Terminal or nonterminal functions
 
-A function is said to be **terminal** if it may ends. A **nonterminal** function may never end.
+You usually write a **nonterminal** function when you are postponing the calculations meaning that you are calculating the next term before the current term (evaluating n+1 before n).
 
-You usually write a nonterminal function when you are postponing the calculations meaning that you are calculating the next term before the current term (evaluating n+1 before n).
+A **terminal** function is when you are writing your code to evaluate n before n+1.
 
-A terminal function is when you are writing your code to evaluate n before n+1.
-
-The function above is **nonterminal**! To write some terminal function, we will use **Functions of an accumulator**.
+The function above is **nonterminal**! To write some terminal functions, we will use the concept of **functions of an accumulator**.
 
 <hr class="sr">
 
 ## Functions of an accumulator
 
-The main idea is that you will store in a variable the result, update the parameters and call the recursive function with a new accumulator, and the updated parameters.
+A function of an accumulator is called `fonction accumulatrice` in French. The main idea is that you will store in a variable the result, update the parameters and call the recursive function with a new accumulator, and the updated parameters.
 
 ```ocaml
 let pow x power =
@@ -55,3 +53,5 @@ let pow x power =
 
 let _ = pow 5 3 (* 125 *)
 ```
+
+> **Pro tip**: we are talking about Functions of accumulators, if you got more than one accumulator.

@@ -11,7 +11,7 @@ A bunch of simple questions about OCaml (not quite an MCQ 😖), summarizing wha
 What's the type of `let my_function x = x * x`?
 
 <blockquote class="spoiler">
-Notice the <code>*</code> only usable on <code>int</code> so the function takes a int and return a int giving us <code>int -> int</code>
+Notice the <code>*</code> only usable on an <code>int</code>, so the function takes an int and return an int giving us <code>int -> int</code>
 </blockquote>
 
 <hr class="sl">
@@ -32,14 +32,14 @@ so the function takes two floats and return a float giving us <code>float -> flo
 What's the type of `let my_function x = 5`?
 
 <blockquote class="spoiler">
-We don't know the type of x but the return type is int so we have <code>'a -> int</code>.
+We don't know the type of x, but the return type is int, so we have <code>'a -> int</code>.
 </blockquote>
 
 <hr class="sl">
 
-**Question 4**
+## Question 4
 
-What's this code doing ?
+What's this code doing?
 
 ```ocaml
 (* x is a number, power > 0 *)

@@ -8,7 +8,7 @@ A bunch of simple exercises in OCaml, summarizing what you learned in the sectio
 
 ## Exercise 1
 
-Write a function returning true is a number is pair, false else.
+Write a function returning true is a number is pairwise, false else.
 
 ```ocaml
 val is_pair : float -> bool
