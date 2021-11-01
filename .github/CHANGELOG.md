@@ -17,6 +17,7 @@
 * `course`: Remade of Agile-Scrum
 * `course`: Remade of SQL (separating PL/SQL)
 * `course`: Remade of PL/SQL
+* `course`: Remade of NoSQL
 * `internal`: updating dependencies
 * `rendering`: Markdown syntax reference 1.5 and 1.6
 
