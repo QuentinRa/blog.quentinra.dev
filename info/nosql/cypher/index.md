@@ -1,9 +1,9 @@
 # Cypher
 
-Cypher is a language closes to the SQL, as you got clauses and a syntax quite similar. It's used by Neo4J in their graph database, **and you will need an account to try it out**. You can either use their sandbox, and your database will be hosted in the cloud, or you can host locally your database.
+Cypher is a language close to the SQL language, as you got clauses and the syntax is quite similar. It's used by Neo4J in their graph database, **and you will need an account to try it out**. You can either use their sandbox, and your database will be hosted in the cloud, or you can host locally your database.
 
 * Create an account
-  * [use their online database](https://neo4j.com/sandbox/) database
+  * [use their online database](https://neo4j.com/sandbox/)
   * OR [install Neo4J Desktop](https://neo4j.com/download/)
 * create a new project (a group of databases)
 * create a new database
@@ -23,7 +23,7 @@ In this course, I will use [this database](https://github.com/memorize-code/memo
 ![Cypher Graph Example](images/example.png)
 </div><div class="align-self-center col-md-8">
 
-This is what a query result will looks like. You got
+This is what a query result will look like. You got
 
 * **4 nodes**, each node is like a tuple in a SQL database, they have properties called **attributes**
 * **3 edges**, they are the relation between the nodes, you may have a lot of them between two nodes and in a lot of directions
@@ -37,7 +37,7 @@ The whole result is what we call a **graph**.
 
 <div class="row row-cols-md-2 mx-0"><div class="align-self-center">
 
-**Nodes** are represented with something inside two parenthesis. It's made of 3 elements, and all three are optional. The syntax is
+**Nodes** are represented with something inside two parentheses. It's made of 3 elements, and all three are optional. The syntax is
 
 ```none
 (ref:label{})
@@ -46,7 +46,7 @@ The whole result is what we call a **graph**.
 </div><div>
 
 * **ref**: used to reference this node later in the query
-* **label**: tags that you may give to a node. Useful when looking at nodes having a tag. Nodes can have multiples tags.
+* **label**: tags that you may give to a node. Useful when looking at nodes having a tag. Nodes can have multiple tags.
 * **{}**: you may give **attributes** and their value here in JSON (`{ attribute:value, ... }`)
   * if you are selecting a node, this is like a WHERE in SQL
   * otherwise, you will use this to add/update properties of a node
@@ -93,7 +93,7 @@ But, aside from representing the edge, we also need to be able to represent the 
 * `node-edge->node` : edge with direction
 * `node<-edge-node` : edge with direction
 
-You will replace node following the format in the previous section, and `edge` with the format in this section. A edge is "anonymous", because we are not adding "edge" (`[ref:label{}]`) in the pattern.
+You will replace `node` following the format in the previous section, and `edge` with the format in this section. An edge is "anonymous", because we are not adding "edge" (`[ref:label{}]`) in the pattern.
 </div></div>
 
 <details class="details-e">
@@ -126,9 +126,9 @@ RETURN something
 
 <div>
 
-* **Clauses name are not case sensitive** (uppercase, lowercase, mix of both)
+* **Clauses names are not case-sensitive** (uppercase, lowercase, mix of both)
 * You can put everything on the same line
-* You can make multiples requests in one call, by separating requests with a `;` <small>(=no `;` for the last one)</small>
+* You can make multiple requests in one call, by separating requests with a `;` <small>(=no `;` for the last one)</small>
 </div>
 
 * Comments are made with `//` or `/* ... */`
@@ -140,7 +140,7 @@ RETURN something
 
 * `MATCH (n) RETURN n`: return every node
 * `MATCH (m:Movie) RETURN m`: return every node labeled "Movie"
-* `MATCH (m:Movie) RETURN m.title`: return the title every node labeled "Movie"
+* `MATCH (m:Movie) RETURN m.title`: return the title of every node labeled "Movie"
 * `MATCH (m:Movie) RETURN {title:m.title, desc: m.tagline}`: ... as JSON
 * `MATCH (m:Movie) RETURN m.title, m.tagline`: ... as a Table
 * `MATCH (:Movie)<-[:ACTED_IN]-(p) RETURN p`: nodes that acted in a movie
@@ -173,7 +173,7 @@ MATCH (m), (p) RETURN m, p
 <details class="details-e">
 <summary>WHERE (<code>SQL WHERE</code>)</summary>
 
-It's working like in SQL. The where will filter the nodes that do not matched the condition in the where. Where is taking a boolean, and you can chain conditions with `AND/OR/NOT/IS/XOR`.
+It's working like in SQL. The where will filter the nodes that do not match the condition in the where. Where is taking a boolean, and you can chain conditions with `AND/OR/NOT/IS/XOR`.
 
 * `=, !=, <>, >, <, >=, <=, ...`
 * ex: `ref.attribute <> 5`
@@ -185,7 +185,7 @@ It's working like in SQL. The where will filter the nodes that do not matched th
 * `type(edge) == 'name'`: test if an edge got this name
 * you can write an edge in the WHERE like you did in the match
 
-The match can help you simply complex where, so don't hesitate to use it, as follows
+The match can help you simplify complex where clauses, so don't hesitate to use it, as follows
 
 ```cypher
 // released after 2000
@@ -242,7 +242,7 @@ LIMIT 3 // return only 3 results
 <details class="details-e">
 <summary>WITH (<code>No equivalent in SQL</code>)</summary>
 
-`WITH` is allowing you to update what you matched, and prepare things for next matches. You can use WHERE, ORDER BY, LIMIT, etc. inside a WITH!
+`WITH` is allowing you to update what you matched, and prepare things for the next matches. You can use WHERE, ORDER BY, LIMIT, etc. inside a WITH!
 
 ```cypher
 // what's the average released year for the movies in the database?
@@ -259,7 +259,7 @@ RETURN m
 <details class="details-e">
 <summary>OPTIONAL MATCH (<code>No equivalent in SQL</code>)</summary>
 
-This clause is after the MATCH, before the WHERE. You can try to match something, but if there is not match, then the variable will be null.
+This clause is after the MATCH, before the WHERE. You can try to match something, but if there is no match, then the variable will be null.
 
 ```cypher
 // for each film, we want to know who acted_in, if someone
@@ -328,7 +328,7 @@ We already saw some functions such as `type`, or `ROUND/AVG`, you got the comple
 * `labels(node)`: returns the labels of a node
 * `nodes(graph)`: returns the nodes in a graph
 * `relationships(graph)`: returns all the edges of a graph
-* `id(node)`: id of a node
+* `id(node)`: ID of a node
 
 And some useful aggregates functions
 
@@ -462,7 +462,7 @@ MATCH (:ShowbizPerson{name: "Kevin Bacon"})--(p:ShowbizPerson)
 RETURN DISTINCT p
 ```
 
-Alternative answer, by my teacher (too hard 😭)
+An alternative answer, by my teacher (too hard 😭)
 
 ```cypher
 MATCH p=shortestPath((:ShowbizPerson{name:"Kevin Bacon"})-[*1..2]-(c))
@@ -480,7 +480,7 @@ MATCH (:ShowbizPerson{name: "Kevin Bacon"})--()--(p:ShowbizPerson)
 RETURN DISTINCT p.name
 ```
 
-Alternative answer, by my teacher (too hard 😭)
+An alternative answer, by my teacher (too hard 😭)
 
 ```cypher
 MATCH p=shortestPath((:b{name:"Kevin Bacon"})-[*1..2]-(c))
@@ -496,4 +496,5 @@ RETURN cnames
 
 ## Source
 
+* Teaching at the ENSIIE
 * <https://en.wikipedia.org/wiki/Cypher_(query_language)>
