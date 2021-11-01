@@ -212,13 +212,13 @@ Most of them aren't used, either because they are inefficient or because they we
 
 Caesar was replacing letters like this $a \to c,\ b \to d,\ etc.$. On the same idea, the **substitution cipher** is replacing each letter by another like $a \to w,\ b \to e,\ etc.$.
 
-Unfortunately, we can try to replace the most common letters in the cipher text, or the most commons groups of letters, with the most common letters (or group of letters) in a Language. And break the cipher.
+Unfortunately, we can try to replace the most common letters in the ciphertext, or the most common groups of letters, with the most common letters (or group of letters) in a Language. And break the cipher.
 </details>
 
 <details class="details-e">
 <summary>Vigenère cipher (<code>Cryptage en bloc de Vigenère</code>)</summary>
 
-This is the same as the Caesar cipher/Substitution cipher. We are working on letters. But, this time we are splitting letters in groups. The problem is that is we got the key, we can easily get back the message.
+This is the same as the Caesar cipher/Substitution cipher. We are working on letters. But, this time we are splitting letters into groups. The problem is that if we got the key, we can easily get back the message.
 
 * **message**: `memorize`
 * **key**: `vgn`
@@ -250,7 +250,7 @@ This algorithm is creating a **key as long or longer than the message**, so even
 <details class="details-e">
 <summary>Knapsack problem (<code>sac-à-dos</code>) of Merkle-Hellman</summary>
 
-You a got a "bag/Knapsack" of numbers (ex: 23, 5, 11, 2, 55). Your message is made of `0` and `1`, and using this method `1` means you picked something from the bag, `0` means you didn't. Then, make the sum of the numbers you picked in the bag to create the **cipher**. Note that you **will have to split the message into groups** having the size of the knapsack.
+You got a "bag/Knapsack" of numbers (ex: 23, 5, 11, 2, 55). Your message is made of `0` and `1`, and using this method `1` means you picked something from the bag, `0` means you didn't. Then, make the sum of the numbers you picked in the bag to create the **cipher**. Note that you **will have to split the message into groups** having the size of the knapsack.
 
 * **Knapsack** (private key): $2, 5, 11, 23, 55$ (up to you, size=6)
 * **Message**: $1100111001 = 11001\ 10001$ (group of 6)
@@ -304,7 +304,8 @@ To decrypt a message $S$, simply do $T = S^d\ (mod\ n)$.
 
 ## Sources
 
-* Oleg L. (My teacher when I was in the IUT of Sénart-Fontainebleau) 🚀
+* IUTSF Teaching 🚀
+* ENSIIE Teaching
 * [Online Cryptography Course](https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/)
 * <https://en.wikipedia.org/wiki/Table_of_divisors>
 * <https://en.wikipedia.org/wiki/Prime_number>
