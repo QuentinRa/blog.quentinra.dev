@@ -2,7 +2,7 @@
 
 [Go back](../index.md#structures-and-classes)
 
-Static is a modifier used to make a class member, and not a member of each object. It means that this member is shared between every instance. A static method is called a **function**. **You can't use "this" inside**, and in fact, this is the functions you already know.
+Static is a modifier used to make a class member, and not a member of each object. It means that this member is shared between every instance. A static method is called a **function**. **You can't use "this" inside**, and in fact, these are the functions you already know.
 
 <hr class="sl">
 
@@ -11,7 +11,7 @@ Static is a modifier used to make a class member, and not a member of each objec
 * you can use `static const` or `const static` to **declare static constants**
 * **You can use static members inside static functions** 🧐
 * **You can use static members inside non-static functions** (methods)
-* **You can't use instance members ("this") inside static functions** (not "this" inside a function)
+* **You can't use instance members ("this") inside static functions** (=not "this" inside a function)
 
 > You can call static members from an instance like `obj.static_member`, but this is **not** advised. **We are using the class with `::`**.
 

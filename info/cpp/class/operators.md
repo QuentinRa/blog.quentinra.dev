@@ -12,7 +12,7 @@ Every **operator** (+, +=, -, /=, <<, ...) is a **function**, and we **can overl
 * `:` (ternary operator)
 * `sizeof`, `typeid`, `static/dynamic/const/reinterpret cast`
 
-> There is nothing official about external/internal operator, it's just of way of doing things. Every operator could be internal (resp. external) 😎.
+> There is nothing official about external/internal operators, it's just a way of doing things. Every operator could be internal (resp. external) 😎.
 
 You can call an operator with either
 

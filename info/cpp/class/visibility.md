@@ -26,7 +26,7 @@ public:
 };
 ```
 
-You can add many time the same modifier, if you want to sort things.
+You can add many times the same modifier if you want to sort things.
 
 ```cpp
 struct my_structure {

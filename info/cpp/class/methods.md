@@ -19,7 +19,7 @@ public:
 };
 ```
 
-> **This is increasing the size of your structure, so this may not be a good idea**. You may declare methods like below (outside the class), using the keyword `inline` to let the compiler pick whether or not this method should be inline. **Note that the syntax above is an implicit `inline`, so we are "fine"**.
+> **This is increasing the size of your structure, so this may not be a good idea**. You may declare methods like below (outside the class), using the keyword `inline` to let the compiler pick whether this method should be inline. **Note that the syntax above is an implicit `inline`, so we are "fine"**.
 
 <hr class="sr">
 
@@ -55,9 +55,9 @@ void my_structure::set_my_float( float my_float )
 
 ## Getters and Setters
 
-* Getters (`accesseurs`) are a method returning something. They are usually starting with `get` or `is`. They are usually **not** changing the object.
+* Getters (`accesseurs`) are methods that return something. They are usually starting with `get` or `is`. They are usually **not** changing the object.
 
-* Setters (`mutateurs`) are a method setting something. They are usually starting with `set`. They are usually changing attributes of the object.
+* Setters (`mutateurs`) are methods that set something. They are usually starting with `set`. They are usually changing the attributes of the object.
 
 <hr class="sr">
 
@@ -68,7 +68,7 @@ As you could see in the function we declared, we could use the attributes of our
 * call methods of our class
 * call attributes of our class
 
-To make things easier for us, it can be omitted, and that's why it was not present until now. With this, your code would looks like this
+To make things easier for us, it can be omitted, and that's why it was not present until now. With this, your code would look like this
 
 ```cpp
 float my_structure::get_my_float() const
@@ -88,6 +88,6 @@ void my_structure::set_my_float( float my_float )
 
 ## const
 
-As you could see, a getter was `const`. **We are adding this keyword right after the right parenthesis of the arguments**. We learnt before that we could have **const references**. Such a reference can't be modified, so you can only call `const` methods on it. **This is only working for methods inside a structure/class**.
+As you could see, a getter was `const`. **We are adding this keyword right after the right parenthesis of the arguments**. We learned before that we could have **const references**. Such a reference can't be modified, so you can only call `const` methods on it. **This is only working for methods inside a structure/class**.
 
 > To be accurate, it means that "this" is a const reference, so we can't modify "this", that's why we are only allowed to call "const" methods.

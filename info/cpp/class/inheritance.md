@@ -2,7 +2,7 @@
 
 [Go back](../index.md#structures-and-classes)
 
-Inheritance (`héritage`) is allowing us to extends a structure. It means that instead of starting with a structure from scratch, we are now able to pick one or more structures as our starting point.
+Inheritance (`héritage`) is allowing us to extend a structure. It means that instead of starting with a structure from scratch, we are now able to pick one or more structures as our starting point.
 
 If your class B is inheriting from A, then we call
 
@@ -53,7 +53,7 @@ Notes
 
 ## Inheritance : Constructors & Destructors
 
-* Constructor are called **from parent to children**
+* Constructors are called **from parent to children**
 
 ```cpp
 struct Parent {
@@ -98,9 +98,9 @@ This is useful, because a function working for **A**, will also work for **C**.
 
 <hr class="sr">
 
-## Redefinitions / override
+## Redefinition / override
 
-As this examples is showing, we can call the parent method in the child class, either internally of externally (if public inheritance).
+As this example is showing, we can call the parent method in the child class, either internally or externally (if public inheritance).
 
 ```cpp
 struct A { void f() {} };
@@ -117,7 +117,7 @@ b.A::f(); // super.f
 
 ### Problem 1
 
-If we are **calling a method of A on B**, and **this method is not present in B**, then **B is** implicitly **casted to A**, and the method is called on A. **If this method is calling another method of A**, **even if you redefined this method in B**, **this is the method in A that will be called**.
+If we are **calling a method of A on B**, and **this method is not present in B**, then **B is** implicitly **cast to A**, and the method is called on A. **If this method is calling another method of A**, **even if you redefined this method in B**, **this is the method in A that will be called**.
 
 ```cpp
 struct A {
@@ -154,7 +154,7 @@ b.f(); // "B" 😎
 
 ### Problem 2
 
-If a class D is **inheriting from two classes** B and C, **and both inheriting a class A**, then we will get some **duplicates**. To prevent this, we need to add **virtual before the modifier**, when we are inheriting such a class.
+If class D is **inheriting from two classes** B and C, **and both inheriting a class A**, then we will get some **duplicates**. To prevent this, we need to add **virtual before the modifier**, when we are inheriting such a class.
 
 ```cpp
 struct A { };
@@ -177,7 +177,7 @@ A a = B();
 a.print(); // "A" 😱
 ```
 
-While this is working 🙄, so you must use pointer for generics stuff
+While this is working 🙄, so you must use pointers for generics stuff
 
 ```cpp
 // new and delete are explained later
