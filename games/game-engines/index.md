@@ -12,7 +12,7 @@ I found this picture a while back on [envato-tuts+ / Game Development](https://g
 Picking a game engine is usually a choice based on
 
 * The supported platforms for the released game 🧐
-* If the team known about this game engine 😎
+* If the team know about this game engine 😎
 * If this game engine is proving most of the features you want 🚀
 * If the price, and/or the license is matching your needs ✨
 * If it is documented, easy to learn, and you got great support ✨
@@ -31,7 +31,7 @@ Usually, in any game, you got the following lifecycle (`structure/cycle de vie`)
 
 And when the user closes the game, we are **disposing** of everything.
 
-> In a lot of libraries and even in game engine, you can find reference to this with methods called `render` or `update`.
+> In a lot of libraries and even inside game engines, you can find references to this with methods called `render` or `update`.
 
  <hr class="sl">
 

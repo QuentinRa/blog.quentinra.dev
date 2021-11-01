@@ -1,6 +1,6 @@
 # Game development
 
-I took note of many advices, and links that may be useful when developing a game. This is my summary.
+I took note of many pieces of advice, and links that may be useful when developing a game. This is my summary.
 
 Game development is structured in 3 phases
 
@@ -8,7 +8,7 @@ Game development is structured in 3 phases
 * Development
 * Production/Release
 
-As many project are **canceled**, it's quite important for neophytes (and others too) to
+As many projects are **canceled**, it's quite important for neophytes (and others too) to
 
 * **Always have a working version** 🚀, so that you or others can see what you got now, and you can test things anytime
 * **Do the minimum for your game to be playable**: No need to make your goal "The Witcher3", and in the end, cancel everything. Start with a map, then add a player, etc. Add things little by little. And keep your big goals under the carpet, while slowly coming near them.
@@ -41,7 +41,7 @@ If you don't actually know what kind of game you will make, or at least you got 
   * What feelings are you expecting the player to feel?
 * What's making the game fun to play?
 
-> In one sentence, we could resume that: YOU ARE NOT THE PLAYER. You got your tastes, and other do too. For instance, you may like bashing/farming a lot of mob, while others may enjoy an easy game while only focusing on the story. **Ask feedback and dig into this a lot before actually making something**.
+> In one sentence, we could resume that: YOU ARE NOT THE PLAYER. You got your tastes, and others do too. For instance, you may like bashing/farming a lot of mobs, while others may enjoy an easy game while only focusing on the story. **Ask feedback and dig into this a lot before actually making something**.
 </details>
 
 <details class="details-e">
@@ -53,10 +53,10 @@ If you don't actually know what kind of game you will make, or at least you got 
   * Short-term
   * Mid-term
   * Long-term
-* What are the obstacles in the goal?
+* What are the obstacles to the goal?
   * Traps
   * Enemies
-* Can the player die? How would he got a "Game over"? Is there "save points"?
+* Can the player die? How would he get a "Game over"? Is there "save points"?
 * What kind of graphics are you planning to use? Something realist, or more something fantasist?
 
 You should try to find what your game got, that other games didn't.
@@ -69,7 +69,7 @@ These are the rules of your game. Basically, what the player can do, and what th
 
 * Can the Hero, Jump? Walk? Run? Open a door/chest/...?
 * What are the items? (perks, loot, usage)
-* Is there a looting system? How do it works?
+* Is there a looting system? How does it work?
 * How are money, player life, time, etc. handled?
 * Is the user influencing the world? (ex: `The Witcher 3`, ...)
 * What are the places of your game? Give pics/a list of places such as
@@ -90,14 +90,14 @@ Things about this carefully, for instance, if you are making a zombie game, you 
 <details class="details-e">
 <summary>Game design</summary>
 
-* What's shown in the screen?
+* What's shown on the screen?
   * Is there a mini-map?
   * Is there some skills shortcuts?
   * Is there a life/mana/stamina bar?
   * Is there an icon for the settings? the sound?
   * Is there icons for other players?
-  * Is there a tchat?
-* What are the screens of your game? <small>(you may make a mockups of each screen)</small>
+  * Is there a chat?
+* What are the screens of your game? <small>(you may make a mockup of each screen)</small>
   * Inventory?
   * Play/Pause/Game Over/...
 * Is there an animation when switching screens? Describe...
@@ -114,7 +114,7 @@ Things about this carefully, for instance, if you are making a zombie game, you 
 * Do the user need a keyboard? a mouse?
 * Is a joystick supported?
 * How can the user become strong? (combos/...)
-* What kind of play-style should be encouraged? discouraged? (ex: bashing/farming?)
+* What kind of playstyle should be encouraged? discouraged? (ex: bashing/farming?)
   * are the mobs/monsters respawning? (if not, you could prevent the user from farming)
   * you can prevent the user from accessing some quests/areas
 
@@ -139,7 +139,7 @@ Starting a game from scratch is really fun 😎✨, you will learn a lot of thin
 * you should pick a **game engine** (ex: `Unity`, `Unreal engine`, etc.)
 * or you should pick a **library** (ex: `LibGDX`, etc.)
 
-It may be weird too, but you may also used **templates** in a game engine. Because a lot of developers are working on the same game engine, you could expect that some developers would build a sort of game engine, inside a game engine, but targeting one game, or one kind of games. [You can learn more about this, in this YouTube video](https://www.youtube.com/watch?v=GG0GVLYzkus). My recommendation are [More Mountains assets](https://moremountains.com/unity-assets).
+It may be weird too, but you may also use **templates** in a game engine. Because a lot of developers are working on the same game engine, you could expect that some developers would build a sort of game engine, inside a game engine, but targeting one game, or one kind of game. [You can learn more about this, in this YouTube video](https://www.youtube.com/watch?v=GG0GVLYzkus). My recommendation is [More Mountains assets](https://moremountains.com/unity-assets).
 
 ### 2.2. Tools for coding
 
@@ -158,6 +158,6 @@ Make the game ready to be released.
 
 * Steam? ...
 * Credits
-* Beta/Way of reporting bugs (and patch them?)
+* Beta/Way of reporting bugs (and patching them?)
 
 You should also test your game, while telling the testers what kind of feedback you are interested in.
