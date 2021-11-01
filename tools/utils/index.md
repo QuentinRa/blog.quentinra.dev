@@ -6,9 +6,9 @@ A gathering of notes about easy to learn, and easy to master, data definition la
 
 ## JSON
 
-You got 6 types in JSON: **number** (integer/float), **objects**, **arrays**, **booleans**, **null**, and **strings**.
+You got 6 types in JSON: **number** (integer/float), **object**, **array**, **boolean**, **null**, and **string**.
 
-* **Object** ✨: `{}`, take key and a value for each key
+* **Object** ✨: `{}`, take a key and a value for each key
 
 ```json
 {
@@ -30,7 +30,7 @@ You got 6 types in JSON: **number** (integer/float), **objects**, **arrays**, **
 ```
 
 > **JSON5** is usually what most people use, but you may try [JSON5](https://json5.org/) at your own "risks" 😎🚀.<br>
-> **Note**: There is no comments in JSON, but you can use comments in **JSON5**<br>
+> **Note**: There are no comments in JSON, but you can use comments in **JSON5**<br>
 > **Note**: There is no multiline string, so you must bear with it, unless you are using **JSON5**.
 
 <hr class="sr">
