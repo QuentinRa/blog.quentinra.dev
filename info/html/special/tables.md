@@ -2,7 +2,7 @@
 
 [Go back](../index.md#learn-the-tags-advanced)
 
-You are gonna use the **table** tag with a subtag **thead** for the first line with the column names (if you want one) and **tbody** for your table content. A line is made using **tr** tag, and you use **th** for the columns' names and **td** for the columns' values.
+You are going to use the **table** tag with a subtag **thead** for the first line with the column names (if you want one) and **tbody** for your table content. A line is made using **tr** tag, and you use **th** for the columns' names and **td** for the columns' values.
 
 ```html
 <table>

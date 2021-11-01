@@ -2,7 +2,7 @@
 
 [Go back](../index.md#learn-the-tags-advanced)
 
-You can use **dl** and **dt**/**dd** to make some dictionary-like style for a word and it's definition.
+You can use **dl** and **dt**/**dd** to make some dictionary-like style for a word, and it's definition.
 
 ```html
 <dl>
@@ -22,7 +22,7 @@ Usually, it is rendered like this
 <dd class="ps-3">a definition here</dd> 
 </dl>
 
-but, on this website I'm using Bootstrap, that is rendering them like this
+but, on this website I'm using Bootstrap, which is rendering them like this
 
 <dl> 
 <dt>a word</dt>

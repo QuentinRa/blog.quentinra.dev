@@ -7,7 +7,7 @@ Did you ever dream of having icons on your website like a lot of websites do? We
 * [Bootstrap Icons](https://icons.getbootstrap.com/)
   (open-source)
 * [fontawesome](https://fontawesome.com/v6.0/icons)
-  (open-source, some restriction like giving credits but (almost) no-one is doing it 🙄, even trough the creator told me in an email that we had to)
+  (open-source, some restriction like giving credits but (almost) no-one is doing it 🙄, even through the creator told me in an email that we had to)
 * [fontastic](https://fontastic.me/) (create your font)
 
 <hr class="sl">
@@ -28,9 +28,9 @@ Then, in the code, simply copy and paste the line for the icon, such as this lin
 
 <hr class="sr">
 
-## Using icons in a application
+## Using icons in an application
 
-You can use icons in a desktop application, the easiest way would be to download the icon as a SVG, then edit it (you can change the size/color easily), and convert it to a png (or use the SVG).
+You can use icons in a desktop application, the easiest way would be to download the icon as an SVG, then edit it (you can change the size/color easily), and convert it to a PNG (or use the SVG).
 
 For Bootstrap, the SVG is on the icon page, in the "Copy HTML" section.
 
@@ -40,7 +40,7 @@ For FontAwesome v5, you got a small icon to download as SVG right next to the sn
 
 ## I don't want to use a WebFont
 
-Maybe, you don't want your icons to use a Font, loaded over the network, for them to be rendered. I do not think this is a good practice (as the icons are loaded with CDN, which should be faster), but you may copy and paste the SVG in your HTML file (or your may link it using "img").
+Maybe, you don't want your icons to use a Font, loaded over the network, for them to be rendered. I do not think this is a good practice (as the icons are loaded with CDN, which should be faster), but you may copy and paste the SVG in your HTML file (or you may link it using "img").
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">

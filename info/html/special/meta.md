@@ -19,7 +19,7 @@ In the head, you can define the metadata of your website using the tag `meta`. A
 
 ## Search-engine optimization (note)
 
-The only one that we **keep using in SEO is description**. We will also use a lot social network meta tags, that you preview and generate [on metatags.io](https://metatags.io/) (define how user on a social network will preview your website).
+The only one that we **keep using in SEO is description**. We will also use a lot of social network meta tags, that you preview and generate [on metatags.io](https://metatags.io/) (define how a user on a social network will preview your website).
 
 ```html
  <!-- Facebook -->
@@ -39,7 +39,7 @@ The only one that we **keep using in SEO is description**. We will also use a lo
 
 ## Search-engine (index/follow)
 
-You can prevent robots from indexing your page with "noindex" (resp. "index"), and you can tell them whether or not they can follow the links with "follow" and "nofollow".
+You can prevent robots from indexing your page with "noindex" (resp. "index"), and you can tell them whether they can follow the links with "follow" and "nofollow".
 
 ```html
 <!-- index and follow -->
