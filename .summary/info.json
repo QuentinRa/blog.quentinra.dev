@@ -6,7 +6,7 @@
       {
         "tag": "ocaml",
         "name": "OCaml",
-        "desc": "OCaml may be used when you need to write a safe programs (as it is a functional language). It's quite easy to learn, almost no syntax.",
+        "desc": "OCaml may be used when you need to write a safe program (as it is a functional language). It's quite easy to learn, almost no syntax.",
         "icon": "<i class=\"bi bi-terminal-fill\"></i>"
       },
       {
@@ -20,7 +20,7 @@
       {
         "tag": "sql",
         "name": "SQL",
-        "desc": "Relational databases are using SQL (89 or 92) as their query language. Since 2011, many database are NoSQL databases.",
+        "desc": "Relational databases are using SQL (89 or 92) as their query language. Since ~2011, NoSQL databases are more and more used.",
         "icon": "<i class=\"bi bi-server\"></i>"
       },
       {
@@ -66,7 +66,7 @@
       {
         "tag": "cryptography",
         "name": "Cryptography",
-        "desc": "An introduction to cryptography (Modular arithmetic, encryption and decryption of messages, RSA)",
+        "desc": "An introduction to cryptography (Modular arithmetic, encryption, and decryption of messages, RSA)",
         "icon": "<i class=\"bi bi-shield-lock\"></i>"
       }
     ]
