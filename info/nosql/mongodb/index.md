@@ -1,6 +1,6 @@
 # MongoDB
 
-**MongoDB** is a database storing data using **JSON-based (BSON) documents**. You will use JSON everywhere, and there is **almost no syntax**. This come at the cost: **it's tricky to reference something**. You will have to use the ID of a document, or nest a document inside another 😬.
+**MongoDB** is a database storing data using **JSON-based (BSON) documents**. You will use JSON everywhere, and there is **almost no syntax**. This comes at the cost: **it's tricky to reference something**. You will have to use the ID of a document, or nest a document inside another 😬.
 
 * Windows
   * Install [MongoDBCompass](https://www.mongodb.com/products/compass)
@@ -17,13 +17,13 @@
 ## Console
 
 * On **Windows**, almost everything is made using the **interface**, but you may open the console by clicking on the small tab at the bottom of the screen.
-* On **Linux**, I used `mongod`, so I was only in **command-line**.
+* On **Linux**, I used `mongosh`, so I was only using the **command-line**.
 
-This course will mostly cover Mongo from the point of view of a command-line user, as it's easy to execute something using the interface on Windows, given a command, and driver usually provide something similar to the commands used in `mongod`.
+This course will mostly cover Mongo from the point of view of a command-line user, as it's easy to execute something using the interface on Windows, given a command, and the driver usually provides something similar to the commands used in `mongosh`.
 
 <hr class="sl">
 
-## Create an user (optional)
+## Create a user (optional)
 
 ```mongodb
 // mongo -u username --authenticationDatabase admin -p
@@ -41,12 +41,12 @@ db.createUser( { user: "myuser", pwd: "password", roles: ["readWrite"] })
 
 ## MongoDB way of doing things
 
-First, **you should now that if something do not have values**, like a database not having "tables", a table not having "values" or an attribute not having a value, **then you won't see it**.
+First, **you should know that if something does not have values**, like a database not having "tables", a table not having "values" or an attribute not having a value, **then you won't see it**.
 
 * list all databases `show dbs`
 * move to database `use database_name` ("created" if not exists)
 
-Inside a database, you can create collections of documents. A collection could be seen as table in SQL, and documents could be seen as records/tuples.
+Inside a database, you can create collections of documents. A collection could be seen as a table in SQL, and documents could be seen as records/tuples.
 
 * `show collections` <small>(remember 🙄, empty = not listed)</small>
 * every document in your collection
@@ -77,7 +77,7 @@ A document is a JSON object. It's something like this
 ```
 </div><div>
 
-The keys are your attributes, the value are the value for these attributes for this document.
+The keys are your attributes, the values are the value for these attributes for this document.
 
 **Notes**
 
@@ -95,7 +95,7 @@ The keys are your attributes, the value are the value for these attributes for t
 ## Insert documents
 
 * **Function**: insertOne(JSON)
-* **Note**: create the collection if it does no exists
+* **Note**: create the collection if it does not exist
 * **Example**
 
 ```mongodb
@@ -105,7 +105,7 @@ db.persons.insertOne( { name: "Calistro" } )
 ```
 
 * **Function**: insertMany(JSONArray)
-* **Note**: create the collection if it does no exists
+* **Note**: create the collection if it does not exist
 * **Example**
 
 ```mongodb
@@ -195,7 +195,7 @@ db.persons.find({ $or: [
 </table>
 </details>
 
-> ⚠️ **Pro tip** ⚠️: even if you may think that the field `_id` is a string, it's an **ObjectID**. Use `ObjectId(string)` to cast a string to an ObjectId.
+> ⚠️ **Pro tip** ⚠️: even if you may think that the field `_id` is a string, it's an **ObjectId**. Use `ObjectId(string)` to cast a string to an ObjectId.
 
 ```mongodb
 // no matches
@@ -323,7 +323,7 @@ db.persons.findOne(
 ```
 </div></div>
 
-> **Note**: this is one of the way to make a relationship between documents. You are simply storing a document inside another. You could give an ObjectId to main referencing another document inside another collection (ex: cars).
+> **Note**: this is one of the ways to make a relationship between documents. You are simply storing a document inside another. You could give an ObjectId to main referencing another document inside another collection (ex: cars).
 
 <hr class="sl">
 
