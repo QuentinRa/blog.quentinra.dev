@@ -23,6 +23,7 @@ Language-specific
 * [packagist](https://packagist.org/) (PHP packages)
 * [deps.rs](https://deps.rs/) (Rust dependencies alerts)
 * [DavidDM](https://david-dm.org/) (Node.js dependencies)
+* [PackageQuality](https://packagequality.com/) (npm packages)
 
 <hr class="sl my-4">
 

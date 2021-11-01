@@ -24,6 +24,8 @@ https://www.ocaml.org/learn/tutorials/a_first_hour_with_ocaml.html
 https://github.com/giraud/reasonml-idea-plugin
 https://giraud.github.io/reasonml-idea-plugin/
 
+ocamlfind ocamlc -o test -package extlib,oUnit -linkpkg -g avl.ml test.ml
+
 ---------------------------
 
 opam switch create 4.07.0
