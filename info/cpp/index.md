@@ -1,6 +1,6 @@
 # C++ (cplusplus)
 
-The **C++** (**cplusplus**) appeared around 1985, inspired from ADA, CLU, it's an **extension of the C language** (as the name implies 😂). It inspired many languages such as C#, Java, Lua, PHP, and Python. It's a **low level language**, **fast** and **platform independent**, **that have object-oriented features** such as constructors, inheritance, methods, objects, polymorphism and overloading.
+The **C++** (**cplusplus**) appeared around 1985, inspired from ADA, CLU, it's an **extension of the C language** (as the name implies 😂). It inspired many languages such as C#, Java, Lua, PHP, and Python. It's a **low-level language**, **fast** and **platform-independent**, **that have object-oriented features** such as constructors, inheritance, methods, objects, polymorphism, and overloading.
 
 It may look complex at one glance, but if you are friendly with C, then C++ is quite easy to learn, at least from my point of view.
 
@@ -67,7 +67,7 @@ You will write declarations, meaning the signatures of things <small>(functions,
 
 ## References
 
-A reference is a sort of pointer to a variable. You can modify the reference, which will modify the reference variable, but deleting a reference (ex: `ref = null`) won't destroy the referenced variable. **References** are better than pointer because their size is **constant** (either 32 or 64 bits), so you can actually save memory 🚀.
+A reference is a sort of pointer to a variable. You can modify the reference, which will modify the reference variable, but deleting a reference (ex: `ref = null`) won't destroy the referenced variable. **References** are better than pointer because their size is **constant** (either 32 or 64 bits), so you can save memory 🚀.
 
 ```cpp
 float my_float = 5.0f;
@@ -82,7 +82,7 @@ If needed, you can declare constant reference, which means you do not need anoth
 const float& ref_my_float = 5.0f;
 ```
 
-A reference can be converted to const, and both can dereferenced.
+A reference can be converted to const, and both can be dereferenced.
 
 ```cpp
 int x = 5;
@@ -97,7 +97,7 @@ y++; // x=y=6 and a=b=5
 
 ## Functions
 
-A function is a bloc of code.
+A function is a block of code.
 
 <details class="details-e">
 <summary>Default values</summary>
@@ -119,7 +119,7 @@ void abc(int a, int b=1, float c=2.0f) { /* ... */ }
 We can **overload** (`surcharger`) a function, meaning that we can write functions with the same name but ...
 
 * **Taking into account that**
-  * The return type do not matter
+  * The return type does not matter
   * The names of the arguments do no matters
 * **You can create functions with the same name**
   * with more/fewer arguments
@@ -182,7 +182,7 @@ using namespace algebra;
 
 ## Exceptions
 
-**Exceptions** are **signals** that are **send when something unexpected happened**. It could be when an error such as `1/0`, or it could be when you want to stop a function (mainly used by functional programmers).
+**Exceptions** are **signals** that are **sent when something unexpected happened**. It could be when an error such as `1/0`, or it could be when you want to stop a function (mainly used by functional programmers).
 
 > In C, we were usually, either using the return type <small>(returning -1 if an int)</small>, or using global variables in which an error code was stored.
 
@@ -195,7 +195,7 @@ throw std::exception();
 throw custom_exception(); // see inheritance, with std::exception
 ```
 
-* **catch an exception**: the signal is propagated upwards until someone catch it <small>(if none, the program is stopped and the error is shown to the user)</small>.
+* **catch an exception**: the signal is propagated upwards until someone catches it <small>(if none, the program is stopped and the error is shown to the user)</small>.
 
 ```cpp
 try {
@@ -208,7 +208,7 @@ try {
 }
 ```
 
-You can use a **fallback catch** `catch(...) {}` to any exception that were not caught in one of the previous catch.
+You can use a **fallback catch** `catch(...) {}` to catch any exceptions that were not caught in one of the previous catches.
 
 ```cpp
 try {}
@@ -248,4 +248,4 @@ object.my_method();
 * [Abstract classes](class/abstract.md)
 * [Operators](class/operators.md)
 
-> **A class is a structure, but its members are private by default**. **Simply replace struct with class**. There is no other difference, so you may use whichever you want. I will follow what some folks are doing. If my structure is complex, then I will use a class, otherwise if it's like a record in Java, something with some methods, but mainly used to store data, then I will use a structure. **Structure are mainly here for backward compatibility with C** after all.
+> **A class is a structure, but its members are private by default**. **Simply replace struct with class**. There is no other difference, so you may use whichever you want. I will follow what some folks are doing. If my structure is complex, then I will use a class, otherwise if it's like a record in Java, something with some methods, but mainly used to store data, then I will use a structure. **Structures are mainly here for backward compatibility with C** after all.
