@@ -2,7 +2,7 @@
 
 [Go back](../index.md#basic-concepts)
 
-In OCaml, types are inferred as it should be for functional languages. We are not talking about statements but expressions too.
+In OCaml, types are inferred as they should be for functional languages. We are not talking about statements but expressions too.
 
 <hr class="sl">
 
@@ -47,7 +47,7 @@ let x : float = 5.0
 
 ## Generic type
 
-Most of the time, you should make generic code. Types are inferred, but sometimes whatever the type of something, your code will work. OCaml infer this type as `'name` such as `'a`, `'b`.
+Most of the time, you should make generic code. Types are inferred, but sometimes whatever the type of something, your code will work. OCaml infers this type as `'name` such as `'a`, `'b`.
 
 ```ocaml
 (* the type of a and b does not matters
@@ -88,7 +88,7 @@ if ... then ... else if ... then ... else ...
 if ... then ... else (if ... then ... else ...)
 ```
 
-* ✅: You must have a else, it's mandatory
+* ✅: You must have an else, it's mandatory
 * 🤮: do NOT do this
 
 ```ocaml

@@ -2,7 +2,7 @@
 
 [Go back](../index.md#basic-concepts)
 
-In OCaml, variables are only declared using `let`. You got variants allowing you to declare multiples variables, or allowing you to to declare nested variables (called local variables).
+In OCaml, variables are only declared using `let`. You got variants allowing you to declare multiple variables, or allowing you to declare nested variables (called local variables).
 
 Note
 
@@ -13,7 +13,7 @@ Note
 
 <hr class="sl">
 
-## Simples declaration
+## Simple declarations
 
 ```ocaml
 let x = 5
@@ -45,7 +45,7 @@ let x =
 
 **What's the use?**
 
-You got a keyword that you will use almost everytime: `in`. We are using it to chain expressions. The last one is the one that will be evaluated.
+You got a keyword that you will use almost every time: `in`. We are using it to chain expressions. The last one is the one that will be evaluated.
 
 ```ocaml
 let res =
@@ -56,7 +56,7 @@ let res =
 (* res = 5 * 10 * 15 *)
 ```
 
-**You will use this almost everytime**, mostly with functions or with complex calculations.
+**You will use this almost every time**, mostly with functions or with complex calculations.
 
 ```ocaml
 let x =

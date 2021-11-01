@@ -2,7 +2,7 @@
 
 [Go back](../index.md#data-structures)
 
-Binary search trees (`ABR, Arbre binaire de Recherche`) are tree with each node having up to two children. The complexity is up to $O(n)$, but in average with got a complexity of $O(h)$ with $h$ the height of the tree.
+Binary search trees (`ABR, Arbre binaire de Recherche`) are trees with nodes having up to two children. The complexity is up to $O(n)$, but in average with got a complexity of $O(h)$ with $h$ the height of the tree.
 
 * ✅: easy to learn, and easy to implement
 * ✅: faster than an ordered list for `add, remove`

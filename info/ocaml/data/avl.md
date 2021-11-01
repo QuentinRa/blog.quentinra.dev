@@ -44,7 +44,7 @@ Average time for cardinal:               inf (too long)
 
 ## Depth
 
-You will have to check whether or not your tree is balanced. The depth is the height of your tree. The depth of the root is the maximum between the depth of its children.
+You will have to check whether your tree is balanced. The depth is the height of your tree. The depth of the root is the maximum between the depth of its children.
 
 In OCaml, it's strongly advised to store the depth of the tree. **I'm starting from 0**, you may start from 1 <small>(replace d+1 with d, and add 1 to max ...)</small>.
 
@@ -56,11 +56,13 @@ let get_depth s = match s with | Empty -> 0 | Node(_,_,d,_) -> d + 1
 let node l h r = Node(l, h, max (get_depth l) (get_depth r), r)
 ```
 
+> **My note 🙄**: the depth is usually called the height of the tree, but it was disturbing me because we were also calling "h" the head of the tree, now with the depth I'm fine 😬🙄.
+
 <hr class="sr">
 
 ## Rotations
 
-We got four rotation, that we will use to balance our tree.
+We got four rotations, that we will use to balance our tree.
 
 <div class="row mx-0 justify-content-center"><div class="col-4  border border-dark me-3">
 
