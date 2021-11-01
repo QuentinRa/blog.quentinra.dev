@@ -2,14 +2,14 @@
 
 [Go back](../index.md#intermediary-concepts)
 
-You can use the **assert** to test your code. Assert is taking a boolean and raise the AssertFailure exception if the boolean is false.
+You can use the **assert** to test your code. Assert is taking a boolean and raising the AssertFailure exception if the boolean is false.
 
 ```ocaml
 assert false
 (* Exception: Assert_failure ... *)
 ```
 
-> **Note**: "assert false" is useful, for instance in a match on a list, which you know that in this case the list isn't empty.
+> **Note**: "assert false" is useful, I mean "as if"! For instance, in a match on a list, when you don't want to handle the case empty because you know that the list will never be empty in this case.
 
 <hr class="sl">
 

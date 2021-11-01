@@ -8,7 +8,7 @@ An exception is the result of something exceptional happening in your program. T
 <summary>Example of exception to exit a function</summary>
 
 * you got a list of 1 000 000 elements
-* you are making sure than each element is only inserted once (=list of unique values)
+* you are making sure that each element is only inserted once (=list of unique values)
 * in OCaml, you must recreate the whole list, and you may add the element inside
 * **BUT**, if the element is inside, it's better to exit the function and returns the previous set, rather than concatenating the set you were creating, with the rest of the set
 * You will use an exception here
@@ -38,7 +38,7 @@ raise (Match_failure ("t",0,1));;
 raise Not_found
 ```
 
-As these exception are used a lot, you got some shortcuts
+As these exceptions are used a lot, you got some shortcuts
 
 ```ocaml
 invalid_arg "message" (* raise (Invalid_argument "message") *)

@@ -6,7 +6,7 @@ You can create new types, or create another name for existing types using the ke
 
 <hr class="sl">
 
-## Another name for existing type
+## Another name for existing types
 
 ```ocaml
 type person = string * int
@@ -35,7 +35,7 @@ let _ = Person ("Henry", 42)
 (* person = ("Henry", 42) *)
 ```
 
-> **Note**: the name of the constructor must start by an uppercase.
+> **Note**: the name of the constructor must start with an uppercase.
 
 <hr class="sl">
 
@@ -49,11 +49,11 @@ type tree =
     | Node of tree * int * tree
 ```
 
-All of these expressions are creating a new type `tree`. We can create
+All of these expressions are creating a new type of `tree`. We can create
 
 * an empty tree with `Empty`
-* a node, with a value (int), and two sub-trees (left and right)
-    * as the left/right are tree, they can be empty
+* a node, with a value (int), and two subtrees (left and right)
+    * as the left/right are trees, they can be empty
     * or they can have a value, and ...
 
 ```ocaml

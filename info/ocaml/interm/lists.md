@@ -11,7 +11,7 @@ type 'a list = [] | (::) of 'a * 'a list
 * `[]`: empty list
 * `a::list`: create a list with `a` then a list `list`
 
-> **Notice** that the type is `'a`, meaning that we can create list of int, float, ... or even a list of lists <small>(if 'a = int list then we got int list list)</small> with this constructor.
+> **Notice** that the type is `'a`, meaning that we can create a list of int, float, ... or even a list of lists <small>(if 'a = int list then we got int list list)</small> with this constructor.
 
 <hr class="sl">
 
@@ -62,7 +62,7 @@ You got the [complete list of functions here](https://ocaml.org/api/List.html).
 
 ## Folds
 
-If you are planning to call a on every element of the list (`such as List.map`), but unlike with map, you need to update a result (**accumulator**), then you will use folds.
+If you are planning to call a function on every element of the list (`such as List.map`), but unlike with map, you need to update a result (**accumulator**), then you will use folds.
 
 Examples
 
@@ -71,7 +71,7 @@ Examples
   * I will check every value, and update my accumulator if needed ("update")
 * **I want the number of elements in a list (without List.length)**
   * I will store 0 in an accumulator ("init")
-  * Each time I will find an element, I will increase accumulator by one ("update")
+  * Each time I will find an element, I will increase my accumulator by one ("update")
 
 As "accumulator" is too wordy, I will go with "acc". You got either `List.fold_left` <small>(terminal)</small> or `List.fold_right` <small>(non terminal)</small>.
 

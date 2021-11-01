@@ -2,7 +2,7 @@
 
 [Go back](../index.md#intermediary-concepts)
 
-If you are given an int, you know that you can use some ifelse to find what value was given. But what if you are given a list? or a new type that we created? That's when Pattern Matching come in handy, as they are breaking a value in constructors.
+If you are given an int, you know that you can use some ifelse to find what value was given. But what if you are given a list? Or a new type that we created? That's when Pattern Matching comes in handy, as they are breaking a value in constructors.
 
 <hr class="sl">
 
@@ -74,9 +74,9 @@ let are_both_anonymous p1 p2 =
 
 <hr class="sl">
 
-## Explicit pattern matching : lists
+## Explicit pattern matching: lists
 
-As you know, both `[]` and `::` are constructor for lists. Here are some samples
+As you know, both `[]` and `::` are constructors for lists. Here are some samples
 
 ```ocaml
 let is_empty l = match l with | [] -> true | _ -> false
