@@ -2,10 +2,10 @@
 
 Structured Query Language, often abbreviated **SQL** is a normalized language to process queries on a relational database. It's based on a "model" that you defined. If you need something flexible, you should look at NoSQL databases.
 
-Relational databases are provided by a **DataBase management system DBMS** (`Système de gestion de base de données (SGBD)`). You will need one to manage your databases among
+Relational databases are provided by a **Database management system DBMS** (`Système de gestion de base de données (SGBD)`). You will need one to manage your databases among
 
 * **Oracle**
-* **PostgresSQL**
+* **PostgreSQL**
 * **MariaDB**
 * MySQL
 * SQLite
@@ -21,7 +21,7 @@ Relational databases are provided by a **DataBase management system DBMS** (`Sys
 
 ## Relational model
 
-In the second screen, you can see the usual representation of your data in a database. This is a literally an Exel table with rows, columns, and entries. In the first screen, this is the UML representation, that we use when creating a database from specifications (see **relational modeling**).
+In the second screen, you can see the usual representation of your data in a database. This is literally an Excel table with rows, columns, and entries. In the first screen, this is the UML representation, that we use when creating a database from specifications (see **relational modeling**).
 
 <div class="row justify-content-center mx-0">
 <div class="col-12 col-md-3">
@@ -42,7 +42,7 @@ In the second screen, you can see the usual representation of your data in a dat
 | `(1, "Luna", 18, "Woman")`, ... | **Objects** | **Tuples**/Records | <small>(=rows)</small>. We are saying "tuples" in French too. |
 | id | **Identifiers** <br> <small>(Keys, but this is a mistake)</small> | **Keys** | A **primary key** is a set of **one or more attributes**.<br>We can find a row in a table, given its values in the primary key.<br> The primary key as a whole is **unique** and **not-null**. <br>This is used to reference a tuple in another table (**Foreign key**).<br>Usually, we are using an **artificial key** <br>which is incrementing (+=1) each time we are adding a row.<br><small>Here, given "id=1", we know we are talking of "(1, Luna, ...)".</small> |
 
-> Note: I know that the class's name "customer" **should starts with an uppercase**, as every class should. I should also **add something before/after id** <small>(as many class may have an attribute id, so I won't have to prefix it)</small>, and I should **add something before/after name** <small>(as name is a **reserved keyword** otherwise, I may have to escape it later)</small>, for instance: c_id and c_name.
+> Note: I know that the class's name "customer" **should start with an uppercase**, as every class should. I should also **add something before/after id** <small>(as many classes may have an attribute id, so I won't have to prefix it)</small>, and I should **add something before/after name** <small>(as name is a **reserved keyword** otherwise, I may have to escape it later)</small>, for instance: c_id and c_name.
 
 <hr class="sl">
 
@@ -63,7 +63,7 @@ In the second screen, you can see the usual representation of your data in a dat
 > 
 > To make it simple, this is a table storing data. Some are saying this is a library of databases. To call a table in a schema, do `schema.table`.
 > 
-> * For an user, this is the list of its tables, views, constraints
+> * For a user, this is the list of its tables, views, constraints
 > * For a database, this is the table **INFORMATION_SCHEMA** (TABLES, USERS, COLUMNS/DOMAINS, CHECK_CONSTRAINTS)
 > 
 > This word is also used for requests 🧐: this is the selected tables, and the attributes.
@@ -80,7 +80,7 @@ In the second screen, you can see the usual representation of your data in a dat
 
 > ☑✅ **Primary and Foreign keys** ☑✅
 > 
-> **YOU MUST KNOW THIS**. The primary key is explained in the previous section. This is usually one attribute called "id" which is an artificial key. A **Foreign key** is a set of attributes (=keys) which are taking values from another key.
+> **YOU MUST KNOW THIS**. The primary key is explained in the previous section. This is usually one attribute called "id" which is an artificial key. A **Foreign key** is a set of attributes (=keys) that are taking values from another key.
 > 
 > For instance, a `customer(c_id, c_name, ...)` will `purchase(p_id, date, description, ...)` things. You will add in the table purchases an attribute `c_id` <small>(the name can be different)</small> taking values from the table "customer". You should see this as referencing a customer inside another table.
 
@@ -92,7 +92,7 @@ In the second screen, you can see the usual representation of your data in a dat
 
 ## SQL Syntax
 
-Before digging into the clauses, here is a list of everything that you will be supposed to known in the next sections.
+Before digging into the clauses, here is a list of everything that you will be supposed to know in the next sections.
 
 <div class="row mx-0"><div class="col-6">
 
@@ -103,8 +103,8 @@ WHERE T.TABLE_SCHEMA = 'information_schema';
 ```
 </div><div class="col-6 align-self-center">
 
-* **Clauses name are not case sensitive** <small>(uppercase, lowercase, mix of both)</small>
-* **Requests end with a ;** <small>(unless they are simples)</small>
+* **Clauses names are not case-sensitive** <small>(uppercase, lowercase, mix of both)</small>
+* **Requests end with a ;** <small>(unless they are simple)</small>
 * You can put everything on the same line
 </div></div>
 
@@ -202,7 +202,7 @@ Output: ![Select SQL output](images/dml/select2.png)
 <details class="details-e">
 <summary>From</summary>
 
-You are using columns in select. But they are coming from somewhere... That's where the `FROM` come in handy. Pick the table <small>(for more than one, see JOINT clauses)</small> you want to select columns (and their values) from.
+You are using columns in select. But they are coming from somewhere... That's where the `FROM` comes in handy. Pick the table <small>(for more than one, see JOINT clauses)</small> you want to select columns (and their values) from.
 
 ```sql
 -- the basic 🤓
@@ -244,7 +244,7 @@ SELECT name FROM customer WHERE name IS NOT NULL; -- Both
 SELECT name FROM customer WHERE age BETWEEN 18 AND 24;
 ```
 
-You can use **Patterns** too, with `_` a unknown character, and `%` a string of unknown characters that may be empty. **BEWARE, patterns aren't case sensitive** (I is the same as i).
+You can use **patterns** too, with `_` an unknown character, and `%` a string of unknown characters that may be empty. **BEWARE, patterns aren't case-sensitive** (=`I` is the same as `i`).
 
 ```sql
 -- any character followed by una
@@ -255,7 +255,7 @@ SELECT name FROM customer WHERE name LIKE '%una';
 SELECT name FROM customer WHERE name LIKE 'Lun%';
 ```
 
-And you can used a nested request
+And you can use a nested request
 
 ```sql
 -- you will use the variable c in the nested request.
@@ -314,7 +314,7 @@ LIMIT 1, 1; -- up to one record, skip the first record
 <details class="details-e">
 <summary>ORDER BY <i class="small">(sort results)</i></summary>
 
-You can sort your results with ORDER BY, with ASC (**default**=optional, A -> Z) and DESC (Z -> A)
+You can sort your results with ORDER BY, with ASC (**default**=optional, A -> Z), and DESC (Z -> A)
 
 ```sql
 SELECT name FROM customer c ORDER BY name; -- (ASC) Henry, Luna
@@ -347,7 +347,7 @@ SELECT name, NULL FROM customer c;
 <details class="details-e">
 <summary>Calculations <i class="small">(on all tuples, on groups of tuples)</i></summary>
 
-You can **only** make calculations in **SELECT** and in a new clause **HAVING** <small>(NOT in WHERE, you may use a nested request)</small>.
+You can **only** make calculations in **SELECT** and in a new clause **HAVING** <small>(NOT in the WHERE, you may use a nested request)</small>.
 
 ```sql
 -- the most used ones
@@ -363,7 +363,7 @@ SELECT SUM(DISTINCT age) FROM customer; -- 18 + 24
 SELECT SUM(ALL age) FROM customer; -- same as SUM(age)
 ```
 
-The clause **HAVING** is only working on groups <small>(ex: group by name, and check the average age per records having this name)</small>. You may create groups of one elements by making groups on the primary key as the primary key is unique.
+The clause **HAVING** is only working on groups <small>(ex: group by name, and check the average age per record having this name)</small>. You may create groups of one element by making groups on the primary key as the primary key is unique.
 
 ```sql
 -- this request is returning the sum of age PER GENDER
@@ -374,7 +374,7 @@ GROUP BY gender -- Woman(18), Not specified (24)
 SELECT gender, SUM(age) FROM customer 
 GROUP BY gender HAVING SUM(age) >= 20 -- Not specified (24)
 
--- better (' and ` are not needed if there is no spaces)
+-- better (' and ` are not needed if there are no spaces)
 SELECT gender, SUM(age) as 'Sum of age' FROM customer 
 GROUP BY gender HAVING `Sum of age` >= 20
 ```
@@ -396,7 +396,7 @@ FROM customer
 -- Henry
 ```
 
-Alternate form, useless here, but you can change the "=" with something else...
+An alternate form, useless here, but you can change the "=" with something else...
 
 ```sql
 SELECT
@@ -412,7 +412,7 @@ FROM customer
 
 ## DML (Data Manipulation) - Joint clause
 
-The last time we tried to use two table, we got the cartesian product, **which is what you will get if the joint clause fails**. This clause will try to merge the tables in the FROM. Given the two following tables Customer2 ("A") and Purchase ("B")
+The last time we tried to use two tables, we got the cartesian product, **which is what you will get if the joint clause fails**. This clause will try to merge the tables in the FROM. Given the two following tables Customer2 ("A") and Purchase ("B")
 
 ![Table A](images/jointA.png)
 ![Table B](images/jointB.png)
@@ -468,7 +468,7 @@ SELECT c.*, p_id, `date` FROM customer2 c JOIN purchase p ON c.c_id = p.c_id
 <details class="details-e">
 <summary>OUTER JOIN (<code>Jointure externe</code>)</summary>
 
-Until now, the rows "(2, Henry, ...)" was never shown, because there was no "c_id=2" in purchases. You can make still show such records such OUTER JOIN.
+Until now, the row "(2, Henry, ...)" was never shown, because there was no "c_id=2" in purchases. You can show such records using OUTER JOIN.
 
 * **LEFT OUTER JOIN**
 
@@ -516,9 +516,9 @@ SELECT * FROM customer2 c FULL OUTER JOIN purchase p
 
 * **Conventions**
 
-**Avoid** using **reserved keywords**, and **spaces**, **use lowercase** and **snake case**, when **naming** something. Naming is quite important is an DBMS, more than ever, as names will last long.
+**Avoid** using **reserved keywords**, and **spaces**, **use lowercase** and **snake case**, when **naming** something. Naming is quite important in a DBMS, more than ever, as names will last long.
 
-Do not prefix/postfix attributes such as "id", prefix it in complex requests. Prefix foreign key with the whole name of the referenced table.
+Do not prefix/postfix attributes such as "id", prefix it in complex requests. Prefix foreign keys with the whole name of the referenced table.
 
 As always, give relevant names to indexes, views, and constraints.
 
