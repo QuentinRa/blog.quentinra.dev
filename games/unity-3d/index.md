@@ -1,6 +1,6 @@
 # Unity 3D
 
-An incomplete (in-progress) course about Unity 3D. This is listing what I used only in 3D.
+An incomplete (in-progress) course about Unity 3D. This is listing what I only used in 3D.
 
 <hr class="sl">
 
@@ -24,7 +24,7 @@ This is a sort of skin/texture for our 3D models.
 <summary>Create a material</summary>
 
 * In the Project window
-* **[Optional]** In a folder Materials
+* **[Optional]** In a folder called "Materials"
 * Right-click > Create > Material
 * **[Optional]** you may set the material as Transparent, if you are planning to make the applied game object a light source (trick)
 * **[Up to you]** you can change the **color** on the line "Albedo"

@@ -1,6 +1,6 @@
 # Game assets
 
-Links to find your assets (backgrounds, sprites, musics, sounds, sfx, ...) for your game.
+Links to find your assets (backgrounds, sprites, music, sounds, SFX, ...) for your game.
 
 **Best marketplaces**
 
@@ -18,7 +18,7 @@ Links to find your assets (backgrounds, sprites, musics, sounds, sfx, ...) for y
 
 ## Sprites
 
-* [RpgMaker kind of characters - generator](https://junkhunt.net/vx/charachip.shtml) (generate 2D characters in many directions+faces, using RPGMaker character generator, online, free, in japanese)
+* [RpgMaker kind of characters - generator](https://junkhunt.net/vx/charachip.shtml) (generate 2D characters in many directions+faces, using RPGMaker character generator, online, free, in Japanese)
 * [Game Character Hub](https://www.gamecharacterhub.com/) (generate 2D characters in many directions+faces, using RPGMaker character generator, paid?)
 * If you are using PVGames sprites, you can use [Nightmare_82 tool](https://gitlab.com/Nightmare_82/charactercreator/) to generate faces, sprites in a lot of versions (jump, walk, sleeping, etc.), and in 8 directions.
 
@@ -76,7 +76,7 @@ Both?
 
 <hr class="sl">
 
-## Musics, sounds, and sfx
+## Music, sounds, and SFX
 
 * [unminus](https://www.unminus.com/)
 * [ccmixter](http://dig.ccmixter.org/)
