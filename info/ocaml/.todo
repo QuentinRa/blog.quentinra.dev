@@ -26,6 +26,10 @@ https://giraud.github.io/reasonml-idea-plugin/
 
 ocamlfind ocamlc -o test -package extlib,oUnit -linkpkg -g avl.ml test.ml
 
+https://www.cs.cornell.edu/courses/cs3110/2021sp/textbook/intro/intro.html
+
+=> http://barbier.iiens.net/Cours/IPF3/%5bS3%5d%20++IPF3%20slides%20-%20decembre%202018%20-%20Phoko.pdf
+
 ---------------------------
 
 opam switch create 4.07.0
