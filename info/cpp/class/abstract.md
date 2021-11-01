@@ -2,7 +2,7 @@
 
 An **abstract class**, is a class **partially defined**. It means that in this class, there is **at least one method that we didn't code**, such methods are **called abstract methods**. **An abstract class is not instantiable**, meaning that you can't create variables having this type, or that you can't call constructors of this class. This is useful to make generic stuff while asserting that child classes got some properties.
 
-To define an abstract method, it's easy, use `virtual` and `= 0` before the semi-colon (`;`).
+To define an abstract method, it's easy, use `virtual` and `= 0` before the semicolon (`;`).
 
 ```cpp
 struct Pet { 
@@ -30,4 +30,4 @@ p1.feed();
 p2.feed();
 ```
 
-> **Note**: any class extending an abstract class is abstract, unless there is no more abstract methods (=all of them were implemented, no new ones).
+> **Note**: any class extending an abstract class is abstract, unless there are no more abstract methods (=all of them were implemented, no new ones).

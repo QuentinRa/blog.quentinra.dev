@@ -2,7 +2,7 @@
 
 [Go back](../index.md#structures-and-classes)
 
-An attribute (`membre de données`) is a variable inside a structure, used to store data. Usually, they are **private** and we are using **methods** to get/set them. We are also adding a `_` (before, or maybe after the name), because it makes things less wordy later.
+An attribute (`membre de données`) is a variable inside a structure, used to store data. Usually, they are **private**, and we are using **methods** to get/set them. We are also adding a `_` (before, or maybe after the name), because it makes things less wordy later.
 
 ```cpp
 struct my_structure {

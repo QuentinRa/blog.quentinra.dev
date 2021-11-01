@@ -18,9 +18,9 @@ Class obj3 = Class(); // explicit call to a constructor
 
 <hr class="sr">
 
-## Code a constructor
+## Create a constructor
 
-As the constructor is a method, everything we learnt before is applied.
+As the constructor is a method, everything we learned before is applied.
 
 ```cpp
 struct my_structure {
@@ -68,7 +68,7 @@ my_structure::my_structure(float f) : my_float_(f) {
 
 ## Copy constructor
 
-This is constructor, taking one argument having the type of structure/class. The **default copy constructor** is copying every attribute, using their copy constructor.
+This is a constructor, taking one argument having the type of structure/class. The **default copy constructor** is copying every attribute, using their copy constructor.
 
 ```cpp
 struct my_structure {
