@@ -28,7 +28,7 @@ I will be using these to create diagrams.
 * [PlantUML](https://plantuml.com/) (website) or [online editor](https://plantuml-editor.kkeisuke.com/)
 * [UML from code](https://github.com/iluwatar/uml-reverse-mapper)
 * [yuml](https://yuml.me/) (website, render on the fly)
-* [Papyrus](papyrus/index.md) (software, open-source, eclipse)
+* [Papyrus](https://www.eclipse.org/papyrus/) (software, open-source, eclipse)
 
 Others alternatives
 
