@@ -10,7 +10,7 @@ As there is a lot of content about Unity, this course will only provide knowledg
 
 ## Game object
 
-Everything in Unity is a **game object**. **Players**, **enemies**, **items**, **camera**, **sounds**, **UI elements**, **lights**, and so on, are **game objects**. it means that they got the following properties
+Everything in Unity is a **game object**. **Players**, **enemies**, **items**, **camera**, **sounds**, **UI elements**, **lights**, and so on, are **game objects**. It means that they got the following properties
 
 <details class="details-s">
 <summary>A <b>name</b> ✨: for you to know what's this game object</summary>
@@ -32,7 +32,7 @@ GameObject[] objects = GameObject.FindGameObjectsWithTag("tag");
 </details>
 
 <details class="details-s">
-<summary>A state "<b>enabled</b>" 🤚. You can enabled/disable your game object. If a game object is disabled, it won't be updated anymore.</summary>
+<summary>A state "<b>enabled</b>" 🤚. You can enable/disable your game object. If a game object is disabled, it won't be updated anymore.</summary>
 
 ```cs
 bool isEnabled = enabled;
@@ -89,7 +89,7 @@ When you are opening a project, by default you got 4 windows.
 		* press play again to stop
 		* press pause to pause the simulation
 
-When **running** your game, you can go edit things <small>(either by going back to scene, or by clicking on a game object in the game/hierarchy)</small>, to test things. **Note that everything will be reverted back once you stopped playing**.
+When **running** your game, you can go edit things <small>(either by going back to the scene, or by clicking on a game object in the game/hierarchy)</small>, to test things. **Note that everything will be reverted once you stopped playing**.
 
 * **inspector window** ⚙ (right): you can edit the properties of the selected **GameObject**
 * **project window** 🗄 (bottom): all of your project files
@@ -98,7 +98,7 @@ When **running** your game, you can go edit things <small>(either by going back 
 
 ## Hierarchy window
 
-**This is the list of the game objects that are populating your scene**. The order do not really matter in 3D, but in 2D, this is important.
+**This is the list of the game objects that are populating your scene**. The order does not really matter in 3D, but in 2D, this is important.
 
 <details class="details-e">
 <summary>Create game objects</summary>
@@ -111,7 +111,7 @@ Simply right-click in the hierarchy window, and select what you want to create.
 <details class="details-e">
 <summary>Group game objects</summary>
 
-**You can group game objects**, which is making nested game object rendered at a position relative to their parent. This is useful when you want to make sure that a gun is always rendered at a fixed position to a player <small>(or generally, when you want something to be rendered relatively to something else)</small>.
+**You can group game objects**, which is making nested game objects rendered at a position relative to their parent. This is useful when you want to make sure that a gun is always rendered at a fixed position to a player <small>(or, mostly, when you want something to be rendered relative to something else)</small>.
 
 To create a group, create a new game object inside another one (right-click on the parent > create). You can also drag and drop an existing object inside another game object.
 
@@ -164,7 +164,7 @@ In the inspector, **you can edit the properties of the selected game object**, e
 ![Unity inspector - remove component](images/inspector_remove.png)
 </div><div class="align-self-center col-md-8">
 
-Later, you may have to remove a component. You can do it by clicking on the 3 smalls dots, then "remove components".
+Later, you may have to remove a component. You can do it by clicking on the 3 small dots, then "remove components".
 
 You may also use "Copy component" and "Paste component as new" or "Paste component values".
 
@@ -178,7 +178,7 @@ You may also use "Copy component" and "Paste component as new" or "Paste compone
 
 ## Project window
 
-The project window is, as a wise man said, a warehouse. This is a file explorer allowing you to explore your scenes, your assets <small>(images, textures, materials, sounds, etc.)</small> and work on them. **The project files should be split into folders**, such as
+The project window is, as a wise man said, a warehouse. This is a file explorer allowing you to explore your scenes, your assets <small>(images, textures, materials, sounds, etc.)</small> and works on them. **The project files should be split into folders**, such as
 
 * **Animations**, **Audio**, **Cutscene**
 * **Images**, **Materials**
@@ -201,7 +201,7 @@ You can create a folder with <code>Right-click > Create > Folder</code>. Once yo
 <details class="details-e">
 <summary>Create Prefabs 📚✨</summary>
 
-You may want to create a "**template**" for your Game Objects. For instance, every bullet is the same. You could duplicate the Game Object. But what is you want to change something? Will you manually edit everything? No way! You should create a **Prefab** (Prefabricated game object).
+You may want to create a "**template**" for your Game Objects. For instance, every bullet is the same. You could duplicate the Game Object. But what if you want to change something? Will you manually edit everything? No way! You should create a **Prefab** (Prefabricated game object).
 
 **Create a prefab**
 
@@ -220,18 +220,18 @@ You may want to create a "**template**" for your Game Objects. For instance, eve
 
 **Edit one instance**
 
-* You can edit prefabs instances as you always did, it won't change the prefab
+* You can edit prefabs instances as you always did, it won't alter the prefab
 * **If the prefab and the instance got different values in a field**, then
   * the **line** with a different value will have a **blue left border**
   * the different **value** will be in **bold**
 * You can **revert/update the prefab** a value with a **right-click on the name of the field**
-* **You can see every overridden property by click on "override"**, right below "layer" in the inspector.
+* **You can see every overridden property by clicking on "override"**, right below "layer" in the inspector.
 </details>
 
 <details class="details-e">
 <summary>Console 📺</summary>
 
-The console is a tab of the **Project window**. You can clear the console with "clear". In the console, you got different kind of logs such as
+The console is a tab of the **Project window**. You can clear the console with "clear". In the console, you got different kinds of logs such as
 
 * Normal Logs (Debug)
 
@@ -322,7 +322,7 @@ bool up = Input.GetKeyUp(KeyCode.Space);
 <details class="details-e">
 <summary>Delta time</summary>
 
-As explained in the game engine course, the delta time is important. If you are planning to update the position by 10m/s, then having variations such as 6m/s one time then 11m/s another time are not good right 😬?
+As explained in the game engine course, delta time is important. If you are planning to update the position by 10 m/s, then having variations such as 9 m/s one time, then 11 m/s another time, are not good right 😬?
 
 ```cs
 // you should (MUST) store 10 in an attribute
@@ -333,7 +333,7 @@ var speed = 10 * Time.deltaTime;
 <details class="details-e">
 <summary>Raw</summary>
 
-When you are using the method not raw, you will see that the player will still move a bit after you stopped pressing a key. This is great, but if this is not what you want, you can use
+When you are using the method not raw, you will see that the player will still move a bit after you stop pressing a key. This is great, but if this is not what you want, you can use
 
 ```cs
 float axisX = Input.GetAxisRaw("Horizontal");
@@ -356,7 +356,7 @@ Input.GetMouseButtonUp(b);
 
 * **Mouse events**
 
-You can react to even such as "Mouse is over this game object", ... which the following functions available in every Game Object.
+You can react to even such as "Mouse is over this game object", ... which the following functions are available in every Game Object.
 
 ```cs
 private void OnMouseUp() {}
