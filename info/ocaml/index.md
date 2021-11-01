@@ -16,7 +16,7 @@ Like a lot of languages such as Python or Java (👀), you are able to write OCa
 * `ocaml`: to open OCaml console
 * `ocamlc file.ml`: to compile a OCaml file and create a `a.out` <small>(this is working like `gcc` in C)</small>.
 
-As the installation is hard on Windows, I gathered tutorials here to [install OCaml on Windows](intro/install-win.md). On Linux, you should not have a problem. You can also use OCaml in your browser with [TryOCamlPro](https://try.ocamlpro.com/) <small>(**I trough this was a good solution, but it made me write poor code** because I was adding `;;` or parenthesis in a lot of unneeded places)</small>.
+As the installation is hard on Windows, I gathered tutorials here to [install OCaml on Windows](intro/install-win.md). On Linux, you should not have a problem. You can also use OCaml in your browser with [TryOCamlPro](https://try.ocamlpro.com/) <small>(**I through this was a good solution, but it made me write poor code** because I was adding `;;` or parenthesis in a lot of unneeded places)</small>.
 
 <hr class="sr">
 
@@ -30,8 +30,7 @@ x = 6 (* NOT POSSIBLE *)
 let x = 6 (* delete the old x, create a new one *)
 ```
 
-In functional language, there should be no side effect. Hence, **if you are not storing something in a variable**, **the compiler won't evaluate this line**, as you are not using the result of the function (=**purity** ✨). The variable starting by a `_` are not stored by the compiler, so you can print a value like this
-printing
+In functional languages, there should be no side effects. Hence, **if you are not storing something in a variable**, **the compiler won't evaluate this line**, as you are not using the result of the function (=**purity** ✨). The variable starting by a `_` are not stored by the compiler, so you can print a value like this
 
 ```ocaml
 Printf.printf "%s\n" "Hello, World" (* SKIPPED !!! *)
@@ -47,7 +46,7 @@ let _ = Format.printf "%d@." (1+2)
 let _ = Format.printf "%d@." (-1)
 ```
 
-To be accurate, in OCaml **everything is a value**, so you can give `-` (minus) to a function, as for OCaml `-` is a function taking two integers and returning one integer. A function taking another function is argument is called **higher-order function** ✨ (`fonction d'ordre supérieur`).
+To be accurate, in OCaml **everything is a value**, so you can give `-` (minus) to a function, as for OCaml `-` is a function taking two integers and returning one integer. A function taking another function is argument is called a **higher-order function** ✨ (`fonction d'ordre supérieur`).
 
 > **CONSOLE ONLY**
 > * you need to add `;;` at the end of every expression
@@ -78,7 +77,7 @@ You might challenge yourself with these exercises
 * [Exceptions](interm/exceptions.md)
 * [Asserts](interm/asserts.md)
 
-And here some exercises
+And here are some exercises
 
 * MCQ (not yet)
 * [Write some code](interm/exercises.md)
@@ -95,7 +94,7 @@ And here some exercises
 
 ## Data structures
 
-We are testing different ways of storing of big amount of data, along with the efficiency.
+We are testing different ways of storing of big amount of data, along with their efficiency.
 
 * [Binary Search Trees](data/bst.md) (`ABR`)
 * [AVL trees](data/avl.md)
@@ -107,8 +106,8 @@ We are testing different ways of storing of big amount of data, along with the e
 
 **French course**
 
-* ENSIIE teaching (1rst year and 2nd year)
-* [Univ. Lille1 - Licence info 3ème année](https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-1.pdf) (course 1 to 4, change the number in the URL)
+* ENSIIE teachings (1rst year and 2nd year)
+* [Univ. Lille1 teachings](https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-1.pdf) (course 1 to 4, change the number in the URL)
 
 **Exercises**
 
