@@ -26,5 +26,5 @@ localStorage.clear()
 
 Most of the time, you will have to use JSON to serialize data.
 
-* ``JSON.stringify(v)``: convert v to a string
-* ``JSON.parse(string)``: parse back a string to a value
+* `JSON.stringify(v)`: convert v to a string
+* `JSON.parse(string)`: parse back a string to a value

@@ -2,9 +2,7 @@
 
 [Go back](..#js-for-websites)
 
-An event is something like clicking on a button, submitting
-a form, ... You can set a function that will be executed
-when an event is fired.
+An event is something like clicking on a button, submitting a form, ... You can set a function that will be executed when an event is fired.
 
 <hr class="sl">
 
@@ -17,15 +15,15 @@ You can add them directly inside the HTML <small>(not a good practice, but that'
         onmouseout="inline_event(this)" onload="inline_event(this)"></button>
 <form onsubmit="return inline_event(this);"></form>
 <!-- ... -->
-``` 
+```
 
 with 
 
-* ``onsubmit``: true if we can submit the form, false else
-* ``onclick``: trigger function on click
-* ``onmouseover``: trigger function on mouse entering
-* ``onmouseout``: trigger function on mouse exiting
-* ``onload``: trigger function once loaded
+* `onsubmit`: true if we can submit the form, false else
+* `onclick`: trigger function on click
+* `onmouseover`: trigger function on mouse entering
+* `onmouseout`: trigger function on mouse exiting
+* `onload`: trigger function once loaded
 * The [list is here (W3Schools)](https://www.w3schools.com/TAGs/ref_eventattributes.asp).
 
 <hr class="sr">

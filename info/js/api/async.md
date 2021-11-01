@@ -2,7 +2,7 @@
 
 [Go back](../index.md#rest-api)
 
-In practice, we want to wait for a result. We can do that using the `await`, but you can only add `await` inside an `async` function (🙃). Using these, we will get rid of callbacks, but if we got an exception, then we have to use `try-catch`.
+In practice, we want to wait for a result. We can do that using `await`, but you can only add `await` inside an `async` function (🙃). Using these, we will get rid of callbacks, but if we got an exception, then we have to use `try-catch`.
 
 ```js
 async function asyncFunction() {

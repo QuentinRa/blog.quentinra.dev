@@ -84,10 +84,10 @@ e.innerText = "<b>test</b>"; // "<b>test</b>" (plain text)
 
 ## Other functions
 
-* ``document.createElement('p')``: create a tag (ex: p)
-* ``document.createTextNode('texte')``: same as "text"
-* ``e.children``: all nested tags (a.k.a. children nodes 🙄)
-* ``e.parentNode``: ancestor node (a.k.a. parent node 🙄)
-* ``e.getAttribute(...)``: get an attribute value (like href, ...)
-* ``e.setAttribute(...)``: set an attribute value (like href, ...)
-* ``e.appendChild(...)``: add a child to e
+* `document.createElement('p')`: create a tag (ex: p)
+* `document.createTextNode('texte')`: same as "text"
+* `e.children`: all nested tags (a.k.a. children nodes 🙄)
+* `e.parentNode`: ancestor node (a.k.a. parent node 🙄)
+* `e.getAttribute(...)`: get an attribute value (like href, ...)
+* `e.setAttribute(...)`: set an attribute value (like href, ...)
+* `e.appendChild(...)`: add a child to e

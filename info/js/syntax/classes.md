@@ -2,15 +2,14 @@
 
 [Go back](../index.md#basic-syntax)
 
-In JavaScript, classes are defining the default properties of an object, but you can dynamically add properties (either for one object, or every object of the class). This can make debugging complex, so be careful (ex: use inheritance instead of dynamic properties 😉).
+In JavaScript, classes are defining the default properties of an object, but you can dynamically add properties (either for one object, or every object of the class). This can make debugging complex, so be careful (e.g.: use inheritance instead of dynamic properties 😉).
 
 Let's say you got an instance (=object of a class) of a HTMLImageElement (`<img src="a_source">`) in the variable `img`, you can
 
-* set/get the properties like "alt, src, ..." with `img.alt`
+* set/get the properties like "alt, src, ..." with `img.src`
 * use methods (like `img.getAttribute('src')` that is the same as `img.src`)
 
-You can get the variable class and prototype with
-``variable.__proto__`` (class, attributes, methods).
+You can get the variable class and prototype with `variable.__proto__` (class, attributes, methods).
 
 > **Note**: Just in case if you didn't know, but a class is something defining properties (ex: name, age, etc.) and methods (functions, such as getAge or isMarried) for a Person. You are creating an object/instance, when you are giving values to the attributes (such as name=John Doe etc.).
 
@@ -76,9 +75,7 @@ What's the use of this? Well, for images on your website, you are not the one ha
 
 ## Dynamic classes
 
-You can also create a class on the fly,
-and giving the values right away. The syntax
-for objects is the same as in JSON.
+You can also create a class on the fly, and giving the values right away. The syntax for objects is the same as in JSON.
 
 ```js
 let calistro = {

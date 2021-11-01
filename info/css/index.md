@@ -201,7 +201,7 @@ You got <code>=</code> (equals), <code>*=</code> (contains) etc.
 </tbody>
 </table>
 
-And these four aren't selector, but you can use to factorize rules
+And these four aren't selectors, but you can use them to factorize rules
 
 <table class="table table-bordered table-striped border-dark">
 <thead><tr><th>Description</th><th>CSS</th></tr></thead>
@@ -233,7 +233,7 @@ You can make a path by separating selectors with `>` (greater than). <br>Note th
 <tr>
 <td><b>Space</b><br>
 
-You can apply a selector to elements filtered by another.<br> This is the same as **path** without the constraint of being a direct child.
+You can apply a selector to elements filtered by another.<br> This is the same as for **path** without the constraint of being a direct child.
 </td>
 <td>
 <pre><code class="language-css">p a { /* ... */ }</code></pre>
@@ -294,7 +294,7 @@ You can use
 <summary>Variables</summary>
 <br>
 
-You may create variables (to store a color, a value, etc.).
+You may create variables (to store colors, sizes, etc.).
 
 <pre><code class="language-css"
 >/* declare */
@@ -433,7 +433,7 @@ Usually, when you are learning CSS, you will go to other websites that you like,
 </details>
 <br>
 
-This is almost everything I used, and I'm considering myself to be a beginner. You should **at least know these ones**
+This is almost everything I used, and I'm considering myself to be a beginner. You should **at least know these**
 
 |Property|Effect|
 |----|----|
