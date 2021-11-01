@@ -1,6 +1,6 @@
 # General knowledge
 
-Unity is a **game engine** providing support for multiples platforms <small>(Windows, Linux, Mac, Web, Android, iOS)</small>. The editor is written in **C++**, but the scripts (=your code) will be in **C#**. You can [download Unity here](https://store.unity.com/#plans-individual).
+Unity is a **game engine** providing support for multiple platforms <small>(Windows, Linux, Mac, Web, Android, iOS)</small>. The editor is written in **C++**, but the scripts (=your code) will be in **C#**. You can [download Unity here](https://store.unity.com/#plans-individual).
 
 * **unity hub**: software to manage unity versions and projects
 * **unity**: downloaded through unity hub
@@ -31,7 +31,7 @@ You may <b>apply for a student plan 📚</b> <small>(if you are a student)</smal
 
 ## Version-control in Unity
 
-Version-control is quite easy to setup. This is a way of **keeping backups** of your work on a server, so that you don't loose everything if you lost your local version. It may also be used if you are planning to **code with a team**, but unless you are editing different files, this will be hard to use.
+Version-control is quite easy to set up. This is a way of **keeping backups** of your work on a server, so that you don't lose everything if you lost your local version. It may also be used if you are planning to **code with a team**, but unless you are editing different files, this will be hard to use.
 
 First, [create an **empty** repository](https://docs.github.com/en/get-started/quickstart/create-a-repo) (no README/...).
 
@@ -76,7 +76,7 @@ Personally, I'm using [**Rider**](https://www.jetbrains.com/rider/) ([features](
 
 ## Unity Settings
 
-Go to **Edit Then Preferences**.
+Go to **Edit, Then Preferences**.
 
 * **General > Disable editor analytics**: up to you, [more info here](https://docs.unity3d.com/Manual/EditorAnalytics.html)
 * **General > Editor Theme**: Light/Dark
@@ -85,22 +85,22 @@ Go to **Edit Then Preferences**.
 
 ## Build game
 
-It's release time 🚀? When you picked your unity version, you picked the platforms that you can target. If you didn't, you can go inside unity hub, then installs, right-click on your unity, and add modules.
+It's release time 🚀? When you picked your unity version, you picked the platforms that you can target. If you didn't, you can go inside the unity hub, then "install", right-click on your unity, and add modules.
 
 Inside Unity, before building something, let's first configure our game. Go to `Edit > Project Settings > Player`.
 
 * [**Should**] Set the company name, the product name, the version
-* [**Could**] You may set the icon 🚀 (and multiples icons for each resolution)
+* [**Could**] You may set the icon 🚀 (and multiple icons for each resolution)
 * [**Could**] You can define the initial configuration
 * [**Should**] In Splash image
-  * you may remove unity logo (up to you, or you can move it)
+  * you may remove the unity logo (up to you, or you can move it)
   * add a splash screen with your own logo
-    * first, exit and add your logo in the project files
-    * click on your logo, in **texture type**, set **sprite 2D**, and apply your changes
-    * go back to splash screen
-    * click on "+" and drag and drop your logo inside the field
-    * you may set the duration
-* [**Should**] you may set the background too
+    * First, exit and add your logo in the project files
+    * Click on your logo, in **texture type**, set **sprite 2D**, and apply your changes
+    * Go back to the splash screen
+    * Click on "+" and drag and drop your logo inside the field
+    * You may set the duration
+* [**Should**] You may set the background too
 
 > **Pro tip**: it's sometimes advised to check `Edit > Project Settings > Quality`, because you may be able to reduce your build size quite a lot, mostly by decreasing the number of levels.
 

@@ -9,7 +9,7 @@ This course is a gathering of notes and tips to make your scripts cleaner, and m
 ### Methods
 
 <details class="details-s">
-<summary>The name of a method should starts with an uppercase</summary>
+<summary>The name of a method should start with an uppercase</summary>
 
 ```diff
 - private void myMethod() {}
@@ -62,7 +62,7 @@ This course is a gathering of notes and tips to make your scripts cleaner, and m
 ## Performances
 
 <details class="details-s">
-<summary>If must not be the last instruction</summary>
+<summary>"If" must not be the last instruction</summary>
 
 ```diff
 - private void MyMethod()
@@ -87,7 +87,7 @@ This course is a gathering of notes and tips to make your scripts cleaner, and m
 
 When creating a Script, it's shown in the inspector. You can add fields inside the inspector too, to allow someone (or yourself) to easily change some values/parameters.
 
-The **bad way** to do this, is to set an **attribute public**. Indeed, as a "side effect", it will be shown inside the editor, but it also means that any other class know this attribute, and this may lead to problems later.
+The **bad way** to do this, is to set an **attribute public**. Indeed, as a "side effect", it will be shown inside the editor, but it also means that any other class knows this attribute, and this may lead to problems later.
 
 The **right way** to do this, is to declare a serialized field.
 
@@ -131,7 +131,7 @@ Maybe, the name of your attribute isn't providing enough information for the use
 <details class="details-e">
 <summary>Headers ✨</summary>
 
-You can make categories with Headers. This is a great way of sorting your serialize field, if you got a lot of them.
+You can make categories with Headers. This is a great way of sorting your serialized fields, if you got a lot of them.
 
 ```cs
 [Header("Some header")]
@@ -162,7 +162,7 @@ If headers aren't enough, you can add some spacing too.
 <details class="details-e">
 <summary>New Menu 🚀</summary>
 
-When click on "adding component", you got a list of menus such as "Audio", ... You can add a new menu here 🚀!
+When clicking on "adding component", you got a list of menus such as "Audio", ... You can add a new menu here 🚀!
 
 ```cs
 // this is a path, you can subfolders (=nested menus) with /
@@ -178,7 +178,7 @@ public class MovementManager : MonoBehaviour {}
 
 <hr class="sr">
 
-## Serialize Field : more
+## Serialize Field: more
 
 <details class="details-e">
 <summary>General 🛠</summary>
@@ -205,7 +205,7 @@ public class SomeClass : MonoBehaviour {}
 ```
 </td><td><br>
 
-You can't add this class as a component of a game object, if this class do not have a collider.
+You can't add this class as a component of a game object, if this class does not have a collider.
 </td></tr>
 
 <tr><td>
@@ -227,7 +227,7 @@ public class SomeClass : MonoBehaviour {}
 ```
 </td><td><br>
 
-You can set the link opened when clicking on the "?" mark, next to the 3 dots to remove a component.
+You can set the link opened when clicking on the "?" mark, next to the 3 dots, to remove a component.
 </td></tr>
 
 <tr><td>
@@ -350,7 +350,7 @@ You got way more attributes, you can
 
 * use [SelectionBase](https://docs.unity3d.com/ScriptReference/SelectionBaseAttribute.html) to a class (even if you are not showing it in the editor), to pick whether this class should be selected (no attribute, default), or the base (this attribute)
 * add an **entry** in the **preferences** with [SettingsProvider](https://docs.unity3d.com/ScriptReference/SettingsProvider.html) (new version of [PreferenceItem](https://docs.unity3d.com/ScriptReference/PreferenceItem.html))
-* add an **entry** in the **tool bar** with [MenuItem](https://docs.unity3d.com/ScriptReference/MenuItem.html)
+* add an **entry** in the **toolbar** with [MenuItem](https://docs.unity3d.com/ScriptReference/MenuItem.html)
 * add an **entry** in the **assets list** with [CreateAssetMenu](https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html) (attached to a class extending ScriptableObject)
 * make this component show up when **selecting multiples game objects** with [CanEditMultipleObjects](https://docs.unity3d.com/ScriptReference/CanEditMultipleObjects.html)
 

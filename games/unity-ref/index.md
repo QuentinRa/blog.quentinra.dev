@@ -11,7 +11,7 @@ I'm starting to stack my references/sources for Unity here. This is almost only 
 * ✅: good
 * 📚: great video
 * 🚀: excellent
-* And if this video is only taking about a topic for a specific use, I will add the specific use
+* And if this video is only talking about a topic for a specific use, I will add the specific use
   * P = Platformer
   * URP = Universal Render Pipeline
 
