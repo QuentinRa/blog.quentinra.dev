@@ -51,3 +51,4 @@ If you ever wanted a custom invitation to your discord for free, you may check o
 ### Other Tools
 
 * [Making trees](https://ironcreek.net/syntaxtree/)
+* [Making graphs](http://webgraphviz.com/) (with [GraphViz Pocket Reference](https://graphs.grevian.org/example))

@@ -8,7 +8,7 @@ The usual place to learn HTML/CSS/JS is [W3Schools](https://www.w3schools.com/ht
 
 > **Note**: as a good developer 😎, you should follow the standards when writing code. You can test your code [using the W3C validator](https://validator.w3.org/#validate_by_input). You can also add a badge that will redirect to the validator with your page inside [as explained here](../../special/web/parts/validator.md).
 > 
-> Recently, I discovered that you could check your website with [webhint.io](https://webhint.io/scanner/), which is also embedded in edge developer tools, and providing quite good feedback. You also got other tools, such as Lighthouse to check the performances, etc. (check WEB course)
+> Recently, I discovered that you could check your website with [webhint.io](https://webhint.io/), which is also embedded in edge developer tools, and providing quite good feedback. You also got other tools, such as Lighthouse to check the performances, etc. (check WEB course)
 
 <hr class="sr">
 

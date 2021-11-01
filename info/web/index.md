@@ -168,7 +168,7 @@ It's better when everything is automated, right? Here is my list of links that m
 
 **Make more than one kind of check on a page/the whole website**
 
-* [WebHint](https://webhint.io/scanner/) (security, accessibility, compatibility, performance)
+* [WebHint](https://webhint.io/) (security, accessibility, compatibility, performance) - **edit 01/11/2021, the online scanner was removed 😬**
 * [ionos](https://www.ionos.com/tools/website-checker) (general, SEO, performance, secure)
 * [sitechecker](https://sitechecker.pro/) (**whole site, up to 150 pages**, general, SEO, HTML, but you **can't see where** without starting a trial)
 * [Google's pagespeed](https://developers.google.com/speed/pagespeed/insights/) (performance)
