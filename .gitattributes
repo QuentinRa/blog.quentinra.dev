@@ -1,3 +1,4 @@
+games/*.md linguist-documentation=false linguist-detectable=true
 info/*.md linguist-documentation=false linguist-detectable=true
 maths/*.md linguist-documentation=false linguist-detectable=true
 proj/*.md linguist-documentation=false linguist-detectable=true
