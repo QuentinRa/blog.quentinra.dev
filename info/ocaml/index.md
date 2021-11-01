@@ -106,7 +106,7 @@ We are testing different ways of storing of big amount of data, along with their
 
 **French course**
 
-* ENSIIE teachings (1rst year and 2nd year)
+* [ENSIIE Teachings](https://www.ensiie.fr/)
 * [Univ. Lille1 teachings](https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-1.pdf) (course 1 to 4, change the number in the URL)
 
 **Exercises**

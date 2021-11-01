@@ -1,6 +1,6 @@
 # Procedural Language
 
-**PL/SQL** (Procedural Language for SQL), or **PL/pgSQL** (for PostgreSQL) are extensions of the SQL, allowing you to run code in your database. There is some small differences between the procedural language in Oracle, and the procedural language in PostgreSQL, but aside from that, almost everything is the same 👍.
+**PL/SQL** (Procedural Language for SQL), or **PL/pgSQL** (for PostgreSQL) are extensions of the SQL, allowing you to run code in your database. There are some small differences between the procedural language in Oracle, and the procedural language in PostgreSQL, but aside from that, almost everything is the same 👍.
 
 <hr class="sl">
 
@@ -72,7 +72,7 @@ END;
 ```
 </div><div class="align-self-center">
 
-* **DECLARE** is optional. If you got variables, it's one per line, with a semi-colon at end end of each line.
+* **DECLARE** is optional. If you got variables, it's one per line, with a semicolon at the end of each line.
 * **BEGIN** is the code itself
 
 **Take note🤚!** If you are doing a DML statement (INSERT, UPDATE, ...), then you must **COMMIT** (=save) or **ROLLBACK** (=cancel).
@@ -86,7 +86,7 @@ END;
 
 <div class="row row-cols-md-2 mx-0"><div>
 
-We need variables, either **to store the result of a SQL request**, or because we are a good fellow, and **declare constants** instead of using hard coded values 🤮.
+We need variables, either **to store the result of a SQL request**, or because we are a good fellow, and **declare constants** instead of using hardcoded values 🤮.
 
 The syntax is the following <small>([a] means that "a" is optional)</small>
 
@@ -115,7 +115,7 @@ v_array int array[3] := '{0,1,2}';
 <details class="details-e">
 <summary>Inter types 😎</summary>
 
-You may want your variable to not take an hardcoded type, but a type from an attribute
+You may want your variable to not take a hardcoded type, but a type from an attribute
 
 ```sql
 v_name table.attr%type; -- type of the attribute "attr" in "table"
@@ -126,13 +126,7 @@ v_name_copy v_name%type; -- type of the variable v_name
 <details class="details-e">
 <summary>Records/Tuples 👌</summary>
 
-If you got such a request, returning only one record. Then we got a type for this
-
-```sql
-Select * from some_table LIMIT 0, 1
-```
-
-In PL/SQL, you can do this. Note that you can access an attribute of a record with `.` (dot).
+We got a type to **store only ONE row**. You can access an attribute of a record with `.` (dot).
 
 ```sql
 v_record record; -- record/tuple
@@ -148,15 +142,15 @@ v_record table%ROWTYPE; -- store a record/tuple of a table "table"
 <summary>IF and CASE (switch)</summary>
 
 ```sql
-IF something THEN [ELSIF condition THEN]
-	[ELSE condition THEN]
+IF something THEN [ELSIF another_condition THEN]
+	[ELSE THEN]
 END IF;
 
--- if(){} else if(){} ...
+-- IF ELSEIF ... ELSE
 CASE variable
-	WHEN valeur THEN instruction
-	WHEN valeur THEN instruction
-	ELSE instruction
+	WHEN value1 THEN instructions
+	WHEN value2 THEN instructions
+	ELSE instructions
 END CASE;
 ```
 </details>
@@ -193,7 +187,7 @@ FOR i IN REVERSE min AND max LOOP some_code END LOOP;
 <details class="details-e">
 <summary>Requests returning up to one record 📘</summary>
 
-You can use `Select ... into variables`. The variables given will be used to store the attributes of our select.
+You can use `Select ... into variables`. The variables given will be used to store the attributes of our selection.
 
 ```sql
 -- THE VARIABLES MUST BE DECLARED
@@ -220,7 +214,7 @@ CURSOR v_cursor FOR sql_request; -- sometimes
 ```sql
 FOR v_entry IN v_cursor LOOP
 	-- v_entry is a RECORD
-	-- use . (dot) to get a attribute (=field)
+	-- use . (dot) to get an attribute (=field)
 END LOOP;
 ````
 
@@ -245,17 +239,17 @@ You can ask your cursor about things
 v_cursor%FOUND -- true if there are still rows, NULL if fetch never called
 v_cursor%NOTFOUND -- true if no more rows, NULL if fetch never called
 v_cursor%ISOPEN -- 🙄
-v_cursor%ROWCOUNT -- number of rows
+v_cursor%ROWCOUNT -- get the number of rows
 ```
 
-Please, note that exceptions are not working on cursors (ig: no NO_DATA_FOUND).
+Please, note that exceptions are not working on cursors (e.g.: no NO_DATA_FOUND).
 </details>
 
 <hr class="sl">
 
 ## Exceptions
 
-An exception is a signal. Most of the time, it's raised because an error happened. You can handle it in the bloc exception, but if you didn't, then the signal will be send upward (=to the caller). If we are back on the request, then the request is crashing with an error.
+An exception is a signal. Most of the time, it's raised because an error happened. You can handle it in the block exception, but if you didn't, then the signal will be sent upward (=to the caller). If we are back on the request, then the request is crashing with an error.
 
 <div class="row row-cols-md-2 mx-0"><div>
 
@@ -296,7 +290,7 @@ You got a lot of predefined exceptions, check your database documentation.
 
 ## Functions
 
-A function is a bloc of code, that may take parameters, and return something.
+A function is a block of code, that may take parameters, and return something.
 
 <div class="row row-cols-md-2 mx-0"><div>
 
@@ -327,7 +321,7 @@ END; $$ LANGUAGE plpgsql;
 
 <div class="row row-cols-md-2 mx-0"><div>
 
-A trigger (`déclencheur`) is a function that will be triggered on an event, such as inserting, updating or deleting an element. You could use it to calculate derived fields, or to archive deleted records.
+A trigger (`déclencheur`) is a function that will be triggered on an event, such as inserting, updating, or deleting an element. You could use it to calculate derived fields, or to archive deleted records.
 
 ```sql
 CREATE [OR REPLACE] TRIGGER trigger_name
@@ -344,7 +338,7 @@ A trigger is executed either **BEFORE** or **AFTER** an event, such as **INSERT,
 
 Add **OR REPLACE** if you are updating an existing trigger.
 
-* **FOR EACH ROW**: If you are planning to update every row, then add it. This may be the case, if the grade of each person is based on the median. If a grade change, we need to update every grade.
+* **FOR EACH ROW**: If you are planning to update every row, then add it. This may be the case, if the grade of each person is based on the median. If a grade changes, we need to update every grade.
 
 * **WHEN**: You may add a when clause. If the condition is false, then the trigger is not triggered for this record.
 
@@ -355,7 +349,7 @@ A function called by a trigger isn't a normal function. Aside from the two varia
 
 * `NULL`: cancel insert/update/delete
 * `NEW`/`OLD`/...: the new record
-* If you omit RETURN, then its the same as `RETURN NEW`
+* If you omit RETURN, then it's the same as `RETURN NEW`
 
 **Vocabulary** 😎
 
@@ -368,7 +362,7 @@ A function called by a trigger isn't a normal function. Aside from the two varia
 <details class="details-e">
 <summary>OLD and NEW ✨</summary>
 
-When updating a line, you got the old record in `OLD`, the one after updating in `NEW`. For an insert, you got only `NEW` (OLD is null). For a delete, you got only `OLD` (NEW is null).
+When updating a line, you got the old record in `OLD`, the one after updating in `NEW`. For INSERT, you got only `NEW` (OLD is null). For DELETE, you got only `OLD` (NEW is null).
 
 You will most likely use them inside your trigger ✨. They are called **correlation variables**. They are records, such use `.` to get an attribute.
 
@@ -488,5 +482,5 @@ EXECUTE PROCEDURE some_function();
 
 ## Sources
 
-* [IUT-SF Teaching](http://www.iut-fbleau.fr/)
-* [ENSIIE Teaching](https://www.ensiie.fr/)
+* [IUT-SF Teachings](http://www.iut-fbleau.fr/)
+* [ENSIIE Teachings](https://www.ensiie.fr/)

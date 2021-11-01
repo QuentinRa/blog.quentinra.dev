@@ -1,6 +1,6 @@
 # Installing OCaml on Windows
 
-[Go back](..)
+[Go back](../index.md#introduction)
 
 This page is quite long, as I had a hard time, and as they were a lot of tutorials that finally worked for me, **yet none of them were enough so that I could fully enjoy OCaml in my editor** (so I'm making my own plugin for IntelliJ 🚀).
 
