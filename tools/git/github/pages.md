@@ -19,6 +19,7 @@ You may write your website in Markdown. I didn't try, but here are the links tha
 * [Beautiful Jekyll](https://beautifuljekyll.com/)
 * [Jekyll Themes](http://jekyllthemes.org/)
 * [GoHugo](https://gohugo.io/) ([Hosting on GitHub](https://gohugo.io/hosting-and-deployment/hosting-on-github/))
+* [Hexo](https://hexo.io/)
 
 You may look for "static site generators", quite a lot of them  [are listed here](https://jamstack.org/generators/) along with this [GitHub repository](https://github.com/myles/awesome-static-generators).
 

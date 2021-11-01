@@ -1,6 +1,7 @@
 - git tag
 - git reset
 - git filter-branch
+- git config credential.name "username"
 
 -----------------------
 GITHUB
@@ -8,6 +9,8 @@ GITHUB
 
 https://github.com/KnpLabs/php-github-api
 https://docs.github.com/en/graphql/overview/explorer
+
+https://docs.github.com/en/github/administering-a-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule
 
 -----------------------
 STANDARD

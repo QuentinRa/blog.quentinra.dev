@@ -15,6 +15,7 @@ A lot of notes about a lot of things that can't be added to another course. This
 7. [Screen recorders](desktop/record.md)
 8. [Shorten URL](website/short-url.md)
 9. Password Manager: [BitWarden](https://bitwarden.com/) (Open Source Password Manager)
+10. Get someone's email: [GetEmail](https://getemail.io/)
 
 <hr class="sl">
 
@@ -42,13 +43,17 @@ If you ever wanted a custom invitation to your discord for free, you may check o
 
 <hr class="sl">
 
-### Sentences
+### Bunch of websites
+
+Memes
+
+* [Know Your Meme](https://knowyourmeme.com/)
+
+Sentences
 
 * [Positive Thoughts Quotes](https://www.positivethoughtsquote.com/)
 
-<hr class="sr">
-
-### Other Tools
+Draw/create something
 
 * [Making trees](https://ironcreek.net/syntaxtree/)
 * [Making graphs](http://webgraphviz.com/) (with [GraphViz Pocket Reference](https://graphs.grevian.org/example))

@@ -1,5 +1,9 @@
 https://www.shell-tips.com/
 
+man sudo_root
+
+echo -e "DISPLAY=:0.0\nexport DISPLAY" >> ~/.bashrc
+
 https://bootstrappers.umassmed.edu/bootstrappers-courses/courses/unix/index.html
 https://bootstrappers.umassmed.edu/bootstrappers-courses/courses/bedtools/index.html
 
@@ -17,3 +21,5 @@ https://github.com/hakluke/how-to-exit-vim
 https://github.com/caseykneale/VIMKiller
 
 https://mobaxterm.mobatek.net/
+
+https://github.com/copy/v86

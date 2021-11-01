@@ -9,6 +9,42 @@ https://ocaml.org/learn/tutorials/functional_programming.html
 https://thealmarty.com/2018/09/25/lambda-calculus-in-ocaml-fun-and-function/
 https://www.cs.bham.ac.uk/~axj/pub/papers/lambda-calculus.pdf
 
+https://github.com/esy/esy/issues/1232
+https://en.wikipedia.org/wiki/ML_(programming_language)#Examples
+https://ocaml.org/manual/index.html
+https://ocaml.org/releases/4.12/ocaml-4.12-refman.pdf
+https://ocaml.org/learn/tutorials/functional_programming.html
+https://www.ocaml.org/learn/tutorials/a_first_hour_with_ocaml.html
+
+* everything is a value: you can give a function to a function (higher-order function etc.), you can return a function.
+* typing implicit: you don't have to write the types
+* immutables: you can change the value inside a variable, unless you are destroying the old one and creating one with the same name
+* purity: no side-effects, a function must returns something, no print, we should be able to predict the behavior of the program
+
+https://github.com/giraud/reasonml-idea-plugin
+https://giraud.github.io/reasonml-idea-plugin/
+
+---------------------------
+
+opam switch create 4.07.0
+https://giraud.github.io/reasonml-idea-plugin/docs/contributing/plugin-architecture
+
+.bashrc instead of /etc/profile
+/etc/bash.bashrc : all
+
+Set-Item -LiteralPath Env:PATH -Value "usr/bin"
+Get-ChildItem Env:
+
+cd "C:\Users\quent\Desktop\opam\bin"
+Set-Item -LiteralPath Env:PATH -Value "C:\Users\quent\Desktop\opam\bin"
+.\opam init --root "..\portable" --bypass-checks -a --no-setup --bare
+.\opam switch create 4.12.0 --root "..\portable"
+
+.\opam install ocamlformat  --root "..\portable" --yes
+.\opam update  --root "..\portable"
+.\opam upgrade --root "..\portable"
+rename .exe
+
 ---------------------------
 
 # Functional programming

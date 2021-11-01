@@ -1,160 +1,9 @@
-https://theamericangenius.com/business-news/brutally-honest-list-reasons-didnt-get-job-interview-job-offer/
-https://www.youtube.com/watch?v=7kYXEBHePJc
-
-https://scotch.io/
-
-https://www.semrush.com/siteaudit/
-
-https://whichbrowser.net/
-
-https://medium.com/dwarves-foundation/remove-unused-css-styles-from-bootstrap-using-purgecss-88395a2c5772
-https://webspeedtools.com/should-i-minify-html-css-js/
-https://bitsofco.de/what-i-wish-i-knew-about-react/
-https://www.rankred.com/
-
-https://www.browserstack.com/
-https://www.w3.org/WAI/tutorials/
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
-https://www.w3schools.com/Js/js_conventions.asp
-
-a download
-https://html.spec.whatwg.org/multipage/text-level-semantics.html
-https://html.spec.whatwg.org/multipage/dom.html#the-translate-attribute
-
-thumb
-
-https://github.com/iLoveCodingOrg/html-cheatsheet
-https://github.com/iLoveCodingOrg/css-cheatsheet
-https://github.com/iLoveCodingOrg/skill-roadmap/blob/master/skill-roadmap.pdf
-
-https://docs.github.com/en/github/administering-a-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule
-
- https://web.dev/prefers-color-scheme/
- https://web.dev/user-preference-media-features-headers/
-
-https://github.com/esy/esy/issues/1232
-
-https://www.emojicode.org/
-https://reqbin.com/
-https://www.w3.org/WAI/standards-guidelines/wcag/
-https://preset-env.cssdb.org/
-https://bootstrapshuffle.com/
-https://blog.stackpath.com/http-request-tools/
-https://percy.io/
-https://css-tricks.com/how-do-you-remove-unused-css-from-a-site/
-https://docs.oracle.com/javase/9/jshell/introduction-jshell.htm#JSHEL-GUID-465BA4F5-E77D-456F-BCB7-D826AC1E18AE
-https://java.developpez.com/actu/314741/JDK-17-Java-17-sera-une-version-LTS-et-ses-nouveautes-incluent-un-nouveau-pipeline-de-rendu-pour-macOS-et-une-API-uniforme-pour-les-generateurs-de-nombres-pseudo-aleatoires/
-
-https://getgood.at/js/es7-in-7-days
-https://github.com/k2052
-
-https://webaim.org/intro/
-https://wave.webaim.org/
-
-https://en.wikipedia.org/wiki/ML_(programming_language)#Examples
-=> Modules
-
-https://ocaml.org/manual/index.html
-https://ocaml.org/releases/4.12/ocaml-4.12-refman.pdf
-
-https://ocaml.org/learn/tutorials/functional_programming.html
-
-* everything is a value: you can give a function to a function (higher-order function etc.), you can return a function.
-* typing implicit: you don't have to write the types
-* immutables: you can change the value inside a variable, unless you are destroying the old one and creating one with the same name
-* purity: no side-effects, a function must returns something, no print, we should be able to predict the behavior of the program
-
-https://github.com/giraud/reasonml-idea-plugin
-https://giraud.github.io/reasonml-idea-plugin/
-
-https://learnxinyminutes.com/
-https://www.ocaml.org/learn/tutorials/a_first_hour_with_ocaml.html
-
-https://circleci.com/docs/2.0/writing-yaml/
-
-PO
-> Il gère le Backlog de Produit et le Release Plan
-Document de Vision
-Modèle Volere
-- slide 38: obj du projet
-
-Ensuite, au cours des réunions quotidiennes
-
-- slide 54: burndown
-
-PRODUCT OWNER
-=> Définit les tests d’acceptation
-=> Passe ou fait passer ces tests
-
-Tests de recette (Acceptance tests)
-tickets
-
-https://getemail.io/
-
-opam switch create 4.07.0
-https://giraud.github.io/reasonml-idea-plugin/docs/contributing/plugin-architecture
-.form
-CTRL-Q: see doc
-https://knowyourmeme.com/
-
-.bashrc instead of /etc/profile
-/etc/bash.bashrc : all
-Set-Item -LiteralPath Env:PATH -Value "usr/bin"
-Get-ChildItem Env:
-
-cd "C:\Users\quent\Desktop\opam\bin"
-Set-Item -LiteralPath Env:PATH -Value "C:\Users\quent\Desktop\opam\bin"
-.\opam init --root "..\portable" --bypass-checks -a --no-setup --bare
-.\opam switch create 4.12.0 --root "..\portable"
-
-.\opam install ocamlformat  --root "..\portable" --yes
-.\opam update  --root "..\portable"
-.\opam upgrade --root "..\portable"
-rename .exe
-
 https://unmaintained.tech/
 https://gitter.im/
 https://packagequality.com/
 
-man sudo_root
-
 https://realfavicongenerator.net/
 https://realfavicongenerator.net/svg-favicon/
-
-https://www.raywenderlich.com/
-https://www.raywenderlich.com/7630142-entity-component-system-for-unity-getting-started
-https://github.com/Unity-Technologies/EntityComponentSystemSamples
-
-scanner windows
-rider
-
-Papyrus, messages pin
-Déplacer un appel sync, en déplaçant le bloc
-
-https://www.tutorialkart.com/cpp/cpp-operator-overloading/
-https://en.cppreference.com/w/cpp/language/operators
-
-echo -e "DISPLAY=:0.0\nexport DISPLAY" >> ~/.bashrc
-
-https://github.com/user234683/youtube-local
-https://github.com/talmobi/tor-request
-https://github.com/SimonDaNinja/youtube_rss
-https://github.com/ytmous/ytmous
-https://telegram.org/
-https://github.com/ytmous/ytmous
-https://github.com/Xtrendence/X-Anonymous
-https://github.com/TimeForANinja/node-ytsr/
-https://www.jsdelivr.com/package/npm/ytsr
-https://cdn.jsdelivr.net/npm/ytsr@3.5.3/lib/main.min.js
-https://github.com/TimeForANinja/node-ytsr/
-
-https://browserify.org/
-https://github.com/fent/node-miniget
-https://nodejs.dev/learn/understanding-process-nexttick
-
-https://github.com/copy/v86
-https://hexo.io/
 
 https://github.com/trimstray/the-book-of-secret-knowledge
 https://github.com/sdmg15/Best-websites-a-programmer-should-visit
@@ -177,14 +26,6 @@ https://github.com/smartcontractkit
 https://github.com/leonardomso/33-js-concepts
 https://github.com/trekhleb/js-image-carver
 
-https://github.com/Nyandwi/machine_learning_complete
-https://github.com/eugeneyan/applied-ml
-https://github.com/python-engineer/ml-study-plan
-https://github.com/d2l-ai/d2l-en
-https://github.com/microsoft/Data-Science-For-Beginners
-https://github.com/ossu/data-science
-https://github.com/trekhleb/machine-learning-experiments
-
 https://github.com/Hopding/pdf-lib
 https://github.com/jjwilly16/node-pdftk
 https://github.com/PaddlePaddle/PaddleOCR
@@ -192,16 +33,7 @@ https://github.com/PaddlePaddle/PaddleOCR
 https://split-video.com/
 https://unmetric.com/
 
-https://landing.confirmic.com/?ref=cw/footer:cssgradient.io
 http://barbier.iiens.net/Cours/IPF3/%5bS3%5d%20++IPF3%20slides%20-%20decembre%202018%20-%20Phoko.pdf
-
-http://xlong88.github.io/draw-binary-tree-latex/
-https://texample.net/tikz/examples/red-black-tree/
-
-https://blockadblock.com/
-https://mp3-youtu.be/
-
-https://duckduckgo.com/?q=sql+clauses&atb=v230-1&ia=web
 
 https://techrez.io/
 https://madza.hashnode.dev/21-github-repositories-to-become-a-javascript-master
@@ -283,11 +115,6 @@ https://github.com/rage/java-programming
 https://cybersecuritybase.mooc.fi/
 
 https://www.gnu.org/software/make/manual/html_node/
-https://www.uml-diagrams.org/sequence-diagrams.html
 http://lac.gmu.edu/mipsa/papers/KonikT.pdf
 
 ocamlfind ocamlc -o test -package extlib,oUnit -linkpkg -g avl.ml test.ml
-
-https://www.eclipse.org/downloads/download.php?file=/modeling/mdt/papyrus/rcp/2020-06/4.8.0/papyrus-2020-06-4.8.0-win64.zip
-
-git config credential.name "username"
