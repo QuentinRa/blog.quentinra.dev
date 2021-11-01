@@ -2,9 +2,9 @@
 
 [Go back](../index.md#intermediary-concepts)
 
-If you are eager to do a bunch of exercises, then here you will be able to. This is a project split into questions. Most of them are dependant on the previous ones.
+If you are eager to do a bunch of exercises, then here you will be able to. This is a project split into questions. Most of them are dependent on the previous ones.
 
-The original subject, in french, [can be found here](https://github.com/memorize-code/memorize-references/raw/main/info/ocaml/IPF_projet_2021.pdf).
+The original subject, in French, [can be found here](https://github.com/memorize-code/memorize-references/raw/main/info/ocaml/IPF_projet_2021.pdf).
 
 **It may take around 4 hours to do all of these questions**.
 
@@ -29,7 +29,7 @@ type brin = nucleotide list
 
 <hr class="sl">
 
-## Some useless function as a warmup (1 / 2)
+## Some useless function as a warm-up (1 / 2)
 
 Return the proportions of C and G in a brin.
 
@@ -68,9 +68,9 @@ let _ = assert((contenu_gc [A;A;A;T;A]) = 0.0);;
 
 <hr class="sr">
 
-## Some useless function as a warmup (2 / 2)
+## Some useless function as a warm-up (2 / 2)
 
-Make a function returning the complementary of a brin. You may use `List.rev` or `List.fold_left` (or `List.fold_right`).
+Write a function returning the complementary of a brin. You may use `List.rev` or `List.fold_left` (or `List.fold_right`).
 
 ```ocaml
 let brin_complementaire (x : brin) : brin =
@@ -124,9 +124,9 @@ fold_right is not terminal*)
 
 ## Distance
 
-Make a function returning the distance between two brins. The distance is defined as the number of nucleotides that must be changed so that the brins become the same brin.
+Write a function returning the distance between two brins. The distance is defined as the number of nucleotides that must be changed so that the brins become the same brin.
 
-You must raise an exception if the length of the two brins are not the same.
+You must raise an exception if the length of the two brins is not the same.
 
 ```ocaml
 let distance (x : brin) (y : brin) : int =
@@ -160,7 +160,7 @@ let _ = assert((try distance [] [T] with Failure _ -> -1) = -1) ;;
 
 ## Similarity
 
-Return the similarity between two brins. It's **one minus the distance**, then **divide** everything **by the length** <small>(of one of your two brins, as they got the same length)</small>. **You must raise an exception if the length of the two brins are not the same.**
+Return the similarity between two brins. It's **one minus the distance**, then **divide** everything **by the length** <small>(of one of your two brins, as they got the same length)</small>. **You must raise an exception if the length of the two brins is not the same.**
 
 You may use `float_of_int` to convert an integer to a float number.
 
@@ -189,7 +189,7 @@ let _ = assert(similarite [A;G;C;T] [A;G;C;T] = 1.0);;
 
 ## New type: tree
 
-Create a new type, called `arbre_phylo` to represent a **binary** tree. Each branch have a `brin` and a malus.
+Create a new type, called `arbre_phylo` to represent a **binary** tree. Each branch has a `brin` and a malus.
 
 <img src="/courses/info/ocaml/interm/ipf/tree.png"
 alt="tree" width="500"/>
@@ -256,7 +256,7 @@ let _ = assert(arbre_phylo_vers_string (Br(
 
 <hr class="sr">
 
-## Similarity
+## Similar
 
 Given a list of trees, return the most similar one. You will use `similarite` function created before. The one with the highest sum of `similarite` with our brin being the most similar one.
 
@@ -351,7 +351,7 @@ let _ = assert (similaire tree1 [tree1; tree3;tree4] = tree1);;
 
 ## Getters and constructor
 
-Make a function returning the malus of the head. Make a function returning the brin of the head. Make a function creating an `arbre_phylo`.
+Write a function returning the malus of the head. Write a function returning the brin of the head. Write a function creating an `arbre_phylo`.
 
 ```ocaml
 let get_root (a : arbre_phylo) : brin =
@@ -409,7 +409,7 @@ let _ = assert(br (Lf [A;T]) [A;A] (Lf [T;C]) = Br (Lf [A; T], [A; A], 3, Lf [T;
 
 ## min_malus
 
-Make a function taking a list of trees and returning the one with the least malus.
+Write a function taking a list of trees and returning the one with the least malus.
 
 You simply have to check the head of the tree and compare the malus values.
 

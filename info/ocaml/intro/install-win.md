@@ -23,7 +23,7 @@ emacs -c
 ./idea.sh -c
 ```
 
-But this won't work. You need to install [XMing](http://www.straightrunning.com/XmingNotes/), and [XMing fonts](http://www.straightrunning.com/XmingNotes/) first (links in "public domain"). Then, every time you need to use `-c` (graphical version), start XMing.
+But this won't work. You need to install [XMing](http://www.straightrunning.com/XmingNotes/), and [XMing fonts](http://www.straightrunning.com/XmingNotes/) first (links in "public domain"). Then, every time you need to use `-c` (graphical version), start XMing first.
 </details>
 
 <details class="details-e">
