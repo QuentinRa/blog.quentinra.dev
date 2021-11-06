@@ -31,8 +31,8 @@ Note that this ranking is made relatively to other entries talking about the sam
 | [Sprite Shadows And Lighting](https://www.youtube.com/watch?v=flu2PNRUAso) | | | | | | 🚀 |
 | [Basic Lighting 2D!](https://www.youtube.com/watch?v=6Q0FnPy9Orc&ab_channel=TopsideStudios) | | | | | | URP |
 | <br> |
-| [Main Menu](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode) (anchors) | | 🚀 | | | | |
-| [UI That Looks Good](https://www.youtube.com/watch?v=HwdweCX5aMI&ab_channel=GameDevGuide) (layout) | | 🚀 | | | | |
+| [Main Menu](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode) | | 🚀 | | | | |
+| [UI That Looks Good](https://www.youtube.com/watch?v=HwdweCX5aMI&ab_channel=GameDevGuide) | | 📚 | | | | |
 | [Master buttons](https://www.youtube.com/watch?v=cW-E4WEogzE&ab_channel=CocoCode) | | 🚀 | | | | |
 
 <hr class="sl">

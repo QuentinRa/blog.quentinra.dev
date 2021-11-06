@@ -411,6 +411,26 @@ If you got a component with some text, you may want your component to auto-resiz
 > **Pro tip**: you may have to add a layout, for instance a horizontal layout, which is allowing you to use padding too.
 </details>
 
+<details class="details-e">
+<summary>Layout managers</summary>
+
+**Layout managers** (`gestionnaires de mise en page`) are components allowing you to design easily your interface. You need **to create an empty game object** (empty is not mandatory) and give it the layout manager. Once you did, **children of the** empty **game object will be displayed according to the manager you picked**.
+
+If you are familiar with Swing in Java, then this is quite similar.
+
+* **Horizontal Layout**
+
+Components are on the same line, with a gap (that is 0 by default).
+
+* **Vertical Layout**
+
+One component per line, with a gap between lines (that is 0 by default).
+
+* **Grid Layout**
+
+An horizontal layout by default. You can make columns and rows by selecting another value for the field "constraint".
+</details>
+
 <hr class="sr">
 
 ## Digging into topics
