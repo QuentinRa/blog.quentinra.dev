@@ -371,7 +371,23 @@ private void OnMouseExit() {}
 
 ## User Interface (UI)
 
-...
+In Unity, UI stuffs are in a game object called "**canvas**". Simply create one (UI > canvas), then you can add buttons (UI > buttons), texts (UI > text), etc. as a children of your canvas.
+
+> **Pro tip**: **go back to 2D** to create your user interface. If you were in 3D, simply toggle "2D" in the Scene windows ![Unity UI toggle 2D](images/toggle2D.png).
+
+<details class="details-e">
+<summary>Positioning components</summary>
+
+It's not the best to manually place something in your canvas. What if a user got a window smaller or larger? **We are usually using anchors (`ancrage`) to position components**.
+
+Click on an UI element, and check the "Rect Transform". Then click on this (**Anchor presets**) ![Unity UI Anchor presets](images/anchor_presets.png).
+
+By pressing **ALT** and clicking on elements of the grid, you can position your component somewhere in the canvas, and you can stretch it too (increase width, height, both).
+
+Here is an example of positioning an image near the top.
+
+![Example Unity UI Anchor presets](images/anchor_presets.gif)
+</details>
 
 <hr class="sr">
 

@@ -15,6 +15,8 @@ I'm starting to stack my references/sources for Unity here. This is almost only 
   * P = Platformer
   * URP = Universal Render Pipeline
 
+Note that this ranking is made relatively to other entries talking about the same topics.
+
 <hr class="sr">
 
 ## Table
@@ -22,12 +24,16 @@ I'm starting to stack my references/sources for Unity here. This is almost only 
 |  | C# | UI | Input | Collision | Camera | Light |
 |----------------------------------|---|---|---|---|---|---|
 | <br> |
-| [Player Movement](https://www.youtube.com/watch?v=Uv5tfMSKlnU) | ✅ | | ✅ | 👀 | ✅ P |
+| [Player Movement](https://www.youtube.com/watch?v=Uv5tfMSKlnU) 📚 | ✅ | | ✅ | 👀 | ✅ P |
 | <br> |
 |[Learn C# with these 9 LINES OF CODE](https://www.youtube.com/watch?v=aB9LJ9oHGOs&ab_channel=Blackthornprod)| ✅ | | 👀 | 👀 |
 | <br> |
 | [Sprite Shadows And Lighting](https://www.youtube.com/watch?v=flu2PNRUAso) | | | | | | 🚀 |
 | [Basic Lighting 2D!](https://www.youtube.com/watch?v=6Q0FnPy9Orc&ab_channel=TopsideStudios) | | | | | | URP |
+| <br> |
+| [Main Menu](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode) (anchors) | | 🚀 | | | | |
+| [UI That Looks Good](https://www.youtube.com/watch?v=HwdweCX5aMI&ab_channel=GameDevGuide) (layout) | | 🚀 | | | | |
+| [Master buttons](https://www.youtube.com/watch?v=cW-E4WEogzE&ab_channel=CocoCode) | | 🚀 | | | | |
 
 <hr class="sl">
 
