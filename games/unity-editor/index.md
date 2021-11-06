@@ -431,6 +431,8 @@ One component per line, with a gap between lines (that is 0 by default).
 An horizontal layout by default. You can make columns and rows by selecting another value for the field "constraint".
 </details>
 
+> **Pro tip**: As you can watch is [this video, there is a new way to create interface, called UI Builder](https://www.youtube.com/watch?v=NQYHIH0BJbs&ab_channel=CocoCode). It's not available yet.
+
 <hr class="sr">
 
 ## Digging into topics

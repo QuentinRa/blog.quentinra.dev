@@ -85,7 +85,7 @@ This course is a gathering of notes and tips to make your scripts cleaner, and m
 
 ## Serialize Field
 
-When creating a Script, it's shown in the inspector. You can add fields inside the inspector too, to allow someone (or yourself) to easily change some values/parameters.
+When creating a Script, it's shown) in the inspector. You can add <small>(we are saying "expose" too)</small> fields inside the inspector too, to allow someone (or yourself) to easily change some values/parameters.
 
 The **bad way** to do this, is to set an **attribute public**. Indeed, as a "side effect", it will be shown inside the editor, but it also means that any other class knows this attribute, and this may lead to problems later.
 

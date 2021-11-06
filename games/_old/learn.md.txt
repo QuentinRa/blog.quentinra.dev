@@ -1,6 +1,7 @@
 -----------------------------------------------------------------
 ------------------------- Unity
 -----------------------------------------------------------------
+click on the axis (top right).
 -----------------------------------------------------------------
 ------------------------- Game Objects
 -----------------------------------------------------------------
@@ -10,13 +11,10 @@
 -----------------------------------------------------------------
 ------------------------- Tile map
 -----------------------------------------------------------------
-
-Empty Game object "level"
-=> put tiles inside
-
 -----------------------------------------------------------------
 ------------------------- Input
 -----------------------------------------------------------------
+dead/sensitivity => make it like we were gradually pressing a joystick
 -----------------------------------------------------------------
 ------------------------- Camera
 -----------------------------------------------------------------
@@ -26,6 +24,8 @@ Click on camera.
 Use the position to set objects/camera, not your intuitive guess
 
 remove background => set color => dark
+
+=> camera INSIDE the player => follow
 
 -----------------------------------------------------------------
 ------------------------- Components
@@ -37,10 +37,27 @@ OnTriggerEnter2D => run when our object collides with another
 
 RigidBody => kinematic : no gravity
 => add gravity + physics
+=> jump: AddForce() => up Vector.up and ForceMode
+=> In 2D: freeze rotation (good for platformers)
+
+=> FixedUpdate => once per physics update (100 times per seconds)
+=> use attribute, updated in Update, to change the physics
+
+Physics.OverlapsSphere => return the components colliding with a position (ex: our feet)
+=> filter layers only
+
+Physic Material
+=> create component
+=> set friction to 0, and minimum
+
+Vector.up
+Vector.forward/...
 
 USE TAGS in collider easy to guess with who collided
 
 GetComponent<Renderer>().enabled = true;
+
+Project Settings => Physics => matrix of which layer is colliding with which one
 
 -----------------------------------------------------------------
 ------------------------- Materials
@@ -91,6 +108,12 @@ private IEnumerator WaitForSecondsAndShow()
 	yield return new WaitForSeconds(2f);
 }
 
+------------------ cs
+
+YYY.XXX => using YYY (note)
+
+Drag and drop a script on a player.
+
 -----------------------------------------------------------------
 ------------------------- Random bunch of notes
 -----------------------------------------------------------------
@@ -98,9 +121,6 @@ private IEnumerator WaitForSecondsAndShow()
 Click on the "..." and debug to enable debug mode
 => ex: shadow casting on
 => do it from the code
-
-In 2D: freeze rotation (good for platformers)
-=> camera INSIDE the player => follow
 
 The image size must be a power of two, so you can compress it. You can compress sounds too (50% seems good).
 
@@ -113,11 +133,11 @@ Enable `post-processing` in rendering.
 -----------------------------------------------------------------
 ------------------------- UserInterface (UI)
 -----------------------------------------------------------------
+-----------------------------------------------------------------
+------------------------- FAQ
+-----------------------------------------------------------------
 
-<details class="details-e">
-<summary>UI Builder (2020.3+, upcoming)</summary>
+Platformer
 
-**In 2021, you might look at the UI Builder**, to create user interfaces (UI), like in [this video](https://www.youtube.com/watch?v=NQYHIH0BJbs&ab_channel=CocoCode).
-</details>
-
-</details>
+isGrounded => check collider with the floor
+=> or, check if not colliding with someone
