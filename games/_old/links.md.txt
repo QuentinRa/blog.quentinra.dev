@@ -151,7 +151,9 @@ https://danielilett.com/2019-09-08-unity-tips-3-interpolation/
 
 -------------- Random videos from a lost guy
 
-https://www.youtube.com/watch?v=JUk02Efxq4o
+https://www.youtube.com/watch?v=J9HaHHx-GWA&list=PLrswC5B90hKy5gZZX_u8tmnkl3GoOrkcw&index=17&ab_channel=WickedCatStudios
+https://www.youtube.com/playlist?list=PLrswC5B90hKyr9SQk9ldmwOsh-jGePFzB
+
 https://www.youtube.com/watch?v=oDT8-7c0Ezg
 https://www.youtube.com/watch?v=rhKGhB6u3Lo
 https://www.youtube.com/watch?v=hSOgkWP0vSA
@@ -189,6 +191,7 @@ https://www.youtube.com/watch?v=XZ4A1H82F7Q (toggle)
 https://www.youtube.com/watch?v=hiRdux33UCs (effects)
 https://www.youtube.com/watch?v=NiveHx8wsUg (transitions)
 https://www.youtube.com/watch?v=jjBeh2xLckA
+https://www.youtube.com/watch?v=CGsEJToeXmA
 
 https://www.wyzowl.com/how-to-use-microinteractions/
 
@@ -202,3 +205,6 @@ https://www.youtube.com/watch?v=gCqOnchV4V0&ab_channel=Imphenzia
 
 https://www.youtube.com/watch?v=jjUsSL4T3ig (Unity VS Unreal)
 https://www.youtube.com/watch?v=E6A4WvsDeLE
+
+https://www.youtube.com/watch?v=76Lh0UApjNI
+https://www.youtube.com/watch?v=IUkD87VSmyg

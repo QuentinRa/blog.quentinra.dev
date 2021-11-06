@@ -2,19 +2,44 @@
 ------------------------- Unity
 -----------------------------------------------------------------
 click on the axis (top right).
+
+build > player settings (alt)
+
+edit > shortcuts
+
+define selections
+
+snap settings (CTRL+move)
 -----------------------------------------------------------------
 ------------------------- Game Objects
 -----------------------------------------------------------------
+bad idea to drag and drop games objects to be referenced in a script.
 -----------------------------------------------------------------
 ------------------------- Scenes
 -----------------------------------------------------------------
+Don't destroy on load
+=> Singleton<T>
 -----------------------------------------------------------------
 ------------------------- Tile map
 -----------------------------------------------------------------
+=> terrain => increase height (shift decrease) => soften
+"seamless textures are the best"
+import package => terrain assets
+=> edit textures => add => color
+=> 5 icon => tree => add => mass place
+=> add leaf on trees => set a material on each leaf group + each branch
+=> 6 icon => add grass / detail mesh
 -----------------------------------------------------------------
 ------------------------- Input
 -----------------------------------------------------------------
 dead/sensitivity => make it like we were gradually pressing a joystick
+
+"negative"=> send negative value to the axis
+
+dead => value between this and 0 = 0
+sensitivy => response time => low value = smooth, great value = fast
+
+physics managers => negative value => make down
 -----------------------------------------------------------------
 ------------------------- Camera
 -----------------------------------------------------------------
@@ -26,6 +51,8 @@ Use the position to set objects/camera, not your intuitive guess
 remove background => set color => dark
 
 => camera INSIDE the player => follow
+
+Camera => game object => align with view
 
 -----------------------------------------------------------------
 ------------------------- Components
@@ -58,6 +85,22 @@ USE TAGS in collider easy to guess with who collided
 GetComponent<Renderer>().enabled = true;
 
 Project Settings => Physics => matrix of which layer is colliding with which one
+
+-----
+
+Create Manager => give a script Controller to each child
+=> script is returning an enum "WhoIAm"
+=> GetComponentsInChildren<>()
+
+-----------------------------------------------------------------
+------------------------- Scripts
+-----------------------------------------------------------------
+
+protected override?
+System.Ling => List
+.ToList()
+.ForEach()
+.Find()
 
 -----------------------------------------------------------------
 ------------------------- Materials
@@ -133,6 +176,7 @@ Enable `post-processing` in rendering.
 -----------------------------------------------------------------
 ------------------------- UserInterface (UI)
 -----------------------------------------------------------------
+Unity recommends having one canvas.
 -----------------------------------------------------------------
 ------------------------- FAQ
 -----------------------------------------------------------------
