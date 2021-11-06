@@ -7,10 +7,10 @@ I'm starting to stack my references/sources for Unity here. This is almost only 
 ## Legend
 
 * 😖: not watched yet
-* 👀: talk a bit about this topic
-* ✅: good
-* 📚: great video
-* 🚀: excellent
+* 👀: learn a bit about this topic <small>(LVL 1)</small>
+* ✅: good <small>(LVL 2)</small>
+* 📚: great <small>(LVL 3)</small>
+* 🚀: excellent <small>(LVL MAX)</small>
 * And if this video is only talking about a topic for a specific use, I will add the specific use
   * P = Platformer
   * URP = Universal Render Pipeline
