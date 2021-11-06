@@ -371,7 +371,7 @@ private void OnMouseExit() {}
 
 ## User Interface (UI)
 
-In Unity, UI stuffs are in a game object called "**canvas**". Simply create one (UI > canvas), then you can add buttons (UI > buttons), texts (UI > text), etc. as a children of your canvas.
+In Unity, UI stuffs are in a game object called "**canvas**". Simply create one (UI > canvas), then you can add buttons (UI > buttons), texts (UI > text), etc. as a children of your canvas. Note that creating an UI element outside a canvas, will automatically generates a new canvas.
 
 > **Pro tip**: **go back to 2D** to create your user interface. If you were in 3D, simply toggle "2D" in the Scene windows ![Unity UI toggle 2D](images/toggle2D.png).
 
@@ -387,6 +387,28 @@ By pressing **ALT** and clicking on elements of the grid, you can position your 
 Here is an example of positioning an image near the top.
 
 ![Example Unity UI Anchor presets](images/anchor_presets.gif)
+</details>
+
+<details class="details-e">
+<summary>How to ...?</summary>
+
+* **Responsive canvas**
+
+If you are **not using anchors**, you can click on your canvas, and in the component "canvas scaler", set **mode to "scale with the screen size"** while defining a size. I think it's better to use anchors.
+
+* **Handle backgrounds**
+
+You can create an Image, or an empty component, or do this on any component having the component "Image". You may drop a **sprite** (see 2D-sprites) in "Source Image" to create a **background image**, and/or you may **change the color**/**add a material**.
+
+* **Override width/height/...**
+
+If you want to override the minimum/preferred/... width, height, then you can do that by adding a **Layout element component** to the game object you want to override. You can use this when you got components inside another, and you want one to act a bit differently.
+
+* **Auto-resize components**
+
+If you got a component with some text, you may want your component to auto-resize itself, when the text is shorter or longer, smaller or bigger. You can do that by adding a component called "Content Size Fitter" and set either (or both) fields to "Preferred size".
+
+> **Pro tip**: you may have to add a layout, for instance a horizontal layout, which is allowing you to use padding too.
 </details>
 
 <hr class="sr">

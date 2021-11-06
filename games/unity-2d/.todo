@@ -5,3 +5,10 @@
 Z-axis rendering
 => Hierarchy (last => last rendered)
 => layers
+
+-----------------------------------------------------------------
+------------------------- Sprites
+-----------------------------------------------------------------
+
+Then drag and drop an image into the slot.
+You may have to transform your image into a sprite.

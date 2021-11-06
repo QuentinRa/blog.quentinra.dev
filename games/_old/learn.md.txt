@@ -120,34 +120,4 @@ Enable `post-processing` in rendering.
 **In 2021, you might look at the UI Builder**, to create user interfaces (UI), like in [this video](https://www.youtube.com/watch?v=NQYHIH0BJbs&ab_channel=CocoCode).
 </details>
 
-<details class="details-e">
-<summary>Canvas</summary>
-
-Create a **canvas** (UI > Canvas), this is a component used to store every UI components. You may switch to 2D, as it will make your life easier.
-
-* load a background
-  * create a new ui > image
-  * then drag and drop an image into the slot
-  * you may have to transform your image into a sprite
-  * to make a **blur** background (like your game behind the UI) it's complicated
-* you create buttons with ui > buttons, then set the text, you may set an image as a background (you may look into [9patch](https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/9-patch), explained in the video too)
-* you create labels with ui > text, then set the text
-* you can use layouts (like in Java) but using anchors may be enough for a simple UI
-* if you want some resizing (and you are not using anchors) then
-  * add a "canvas scaler" to your canvas
-  * set scale mode to "scale with the screen size"
-  * and give it a size
-
-You can make your hierarchy looks better using this [plugin](https://github.com/febucci/unitypackage-custom-hierarchy) following this [video](https://www.youtube.com/watch?v=Gma7IXPj4wI&ab_channel=CocoCode)
-
-You may create advanced buttons like in this [video](https://www.youtube.com/watch?v=cW-E4WEogzE&ab_channel=CocoCode)
-* create a button add a text and an image
-* add a horizontal layout component to the button
-* set the spacing, ...
-* then on the image, you can add a layout element to resize the image
-* you can add a "content size fitter" to make the button resize itself (set fit to preferred size)
 </details>
-
-PauseMenu
-GameOverMenu
-...
