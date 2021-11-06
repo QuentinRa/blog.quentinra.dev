@@ -161,3 +161,17 @@ Make the game ready to be released.
 * Beta/Way of reporting bugs (and patching them?)
 
 You should also test your game, while telling the testers what kind of feedback you are interested in.
+
+<hr class="sr">
+
+## Replay value
+
+The **replay value** or **replayability** is a score of how much more content the user could discover after completing the game once.
+
+* Alternate/different scenario
+* New challenges (new places, new classes, open-world, new difficulties, new play styles)
+* Completing the game (i.g. without missing one-time events/items, etc.)
+* Multiplayer
+* Achievements
+
+More [on Wikipedia](https://en.wikipedia.org/wiki/Replay_value#Performance_grading).
