@@ -32,6 +32,7 @@ Note that this ranking is made relatively to other entries talking about the sam
 | [Basic Lighting 2D!](https://www.youtube.com/watch?v=6Q0FnPy9Orc&ab_channel=TopsideStudios) | | | | | | URP |
 | <br> |
 | [Main Menu](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode) | | 🚀 | | | | |
+| [Best Practices for Menus](https://www.youtube.com/watch?v=vmKxLibGrMo) | 👀 | 🚀 | | | | |
 | [UI That Looks Good](https://www.youtube.com/watch?v=HwdweCX5aMI&ab_channel=GameDevGuide) | | 📚 | | | | |
 | [Master buttons](https://www.youtube.com/watch?v=cW-E4WEogzE&ab_channel=CocoCode) | | 🚀 | | | | |
 
