@@ -278,11 +278,15 @@ You may refine your game object with what we call **components**. They are exten
 
 First, Rigidbody is for 3D games, and you have Rigidbody2D for 2D games. A game object with a rigid body **is subject to gravity** and **colliders**. If you ever add this to a game object, **you can't use transform to move your game object**, as you need to apply forces to move it. **If you are not planning to use force, be sure to toggle " is kinematic" on your Rigidbody component**.
 
-* `is kinematics: true`: you want to use collider, but don't need gravity/...
-* Constraints 
-  * you can freeze the Rotation (ex: x, y, z = no rotation)
-  * you can freeze the position (ex: z in 2D)
-* Some code
+1. `is kinematics: true`: no forces (including gravity) applied on this game object (ex: a wall).
+2. `use gravity: false`: still apply forces, but no gravity.
+3. **Constraints**
+   * you can freeze the Rotation (ex: x, y, z = no rotation)
+   * you can freeze the position (ex: z in 2D)
+4. **Settings** (Edit > Project Settings > Physics)
+   * You can change the gravity
+   * You got a Layer Collision Matrix, explained in Collider
+5. **Some code**
 
 **Pro tip**: updating physics must be done in the method `FixedUpdate` <small>(running at 50 FPS, even if the game is running at 20 FPS)</small> instead of `Update`. In `Update`, you will process input (calls to Input.Something), and in `FixedUpdate`, you will ONLY update the force, you won't call Input.Something (use attributes to remember what key/... were pressed).
 
@@ -291,6 +295,25 @@ First, Rigidbody is for 3D games, and you have Rigidbody2D for 2D games. A game 
 rb.AddForce(Vector3.left); // move to the left
 rb.AddForce(Vector3.left * speed);
 rb.AddForce(Vector3.left * speed, ForceMode.A_MODE_HERE);
+```
+</details>
+
+<details class="details-e" open>
+<summary>Colliders</summary>
+
+Colliders are used to check if our game object is colliding with another object. You will define a collider covering your game object (up to you, whether only touching the bust is considered as colliding=more efficient, etc.). Once you created you collider, **it will be triggered each time a game object having a Rigidbody is entering your collider**.
+
+1. **is trigger**
+   1. if **false**, this object is solid, trigger the method `OnCollisionEnter`. Both objects must have a **Rigid body**, at least one must be kinematic.
+   2. if **true**, object are passing trough each other, trigger the method `OnTriggerEnter`
+3. **Some Code**
+
+```cs
+// return every collider inside this sphere
+Physics.OverlapsSphere(position, radius)
+// only layers in mask (ex: mask = LayerMask.GetMask("Default", "Water"))
+Physics.OverlapsSphere(position, radius, mask)
+// you can use Vector3.Distance (or Vector2)
 ```
 </details>
 

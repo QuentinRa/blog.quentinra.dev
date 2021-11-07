@@ -30,9 +30,6 @@ OnTriggerEnter2D => run when our object collides with another
 => give both a collider set to trigger
 => one of them must have a rigid body
 
-Physics.OverlapsSphere => return the components colliding with a position (ex: our feet)
-=> filter layers only
-
 Physic Material
 => create component
 => set friction to 0, and minimum
