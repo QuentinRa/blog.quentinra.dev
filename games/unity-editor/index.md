@@ -6,7 +6,7 @@ As there is a lot of content about Unity, this course will only provide knowledg
 > You can dig more into **2D** with [Unity 2D](../unity-2d/index.md)<br>
 > You can dig more into **3D** with [Unity 3D](../unity-3d/index.md)
 
-Most of the time, you will have to go back and forth between your code and [the official documentation](https://docs.unity3d.com/Manual/index.html) or your search engine (there is a search bar in the documentation too).
+Most of the time, you will have to go back and forth between your code and [the official documentation](https://docs.unity3d.com/Manual/index.html) or your search engine (there is a search bar in the documentation too). You may also check [the scripting reference](https://docs.unity3d.com/ScriptReference/).
 
 <hr class="sl">
 
@@ -258,7 +258,7 @@ Debug.LogError("error");
 
 ## Components
 
-...
+You may refine your game object with what we call **components**. They are extensions such as collision, physics, etc. that you can add to your game objects. You can do that in the inspector (as we saw before), or by dropping a component on a game object in the hierarchy. You can write scripts which are also components to add things such as movement, etc.
 
 <hr class="sl">
 
@@ -382,6 +382,7 @@ if (Vector3.Distance(a, b) <= 0.0001f) {} // a near b?
 </table>
 </details>
 
+> **Pro tip**: [we are explaining a lot of things about scripts here](../unity-ufs/index.md).<br> 
 > **Fun fact**: a long time ago, it was possible to use JavaScript too.
 
 <hr class="sr">
