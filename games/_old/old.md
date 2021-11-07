@@ -1,27 +1,3 @@
-<hr class="sr">
-
-## Game Objects in Scripts
-
-After you attached a script to an entity, you can get other components in a script with `GetComponent<TypeOfComponent>`
-
-![Inspector: Box collider](images/get_component.png)
-
-```cs
-// In Example.cs, I can get the BoxCollider with
-BoxCollider collider = GetComponent<BoxCollider>();
-```
-
-You can also access some objects such as Transform or the tag with attributes
-
-```cs
-// associated gameObject
-GameObject o = gameObject; // <=> this.gameObject
-```
-
-<hr class="sr">
-
-Unity is providing generic support for your games, sometimes you may want more. You can add **plugins** for that. For instance, the [TopDownEngine](https://assetstore.unity.com/packages/templates/systems/topdown-engine-89636) (a **paid** asset) is providing a lot of help to create 2D/3D TopDownGames <small>(check "templates" on the unity store to see what you could expect from game templates, as you may save a lot of time with them)</small>.
-
 ## Tilemap
 
 A tilemap is a map of tiles, and a tile is an image. You can have a Rectangular or an Isometric tilemap. This is a convenient way of creating 2D maps since

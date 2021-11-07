@@ -79,9 +79,6 @@ Physic Material
 => create component
 => set friction to 0, and minimum
 
-Vector.up
-Vector.forward/...
-
 USE TAGS in collider easy to guess with who collided
 
 GetComponent<Renderer>().enabled = true;
@@ -127,13 +124,7 @@ Torch
 ------ general
 
 SendMessageUpwards("StopMoving");
-
------ vector
-
-new Vector3().normalized (do not move faster diagonally if used set position)
-Vector2.MoveTowards(start, target, speed) => easy for follow something
-_targetBounds.Intersects(_myRenderer.bounds) // Check collision
-if (Vector3.Distance(_targetBounds.center,_myRenderer.bounds.center) <= 0.001f) // near
+bounds.Intersects(_myRenderer.bounds) // Check collision
 
 ------ coroutine
 

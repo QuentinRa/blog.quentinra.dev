@@ -309,7 +309,26 @@ You can write new methods, add new attributes, ... See the [C# documentation](ht
 </div></div>
 </details>
 
-<details class="details-e" open>
+<details class="details-e">
+<summary>Game object in a class</summary>
+
+You attached your script to a Game object. You can get back the information on the attached game object, as we already saw in the section "Game objects". If needed, you got the attribute `gameObject` (or `this.gameObject`).
+
+```cs
+transform.position = /* some vector */; // you could use gameObject.transform too
+```
+
+You can use these methods to get a component, either on our game object, its children, or its parent.
+
+```cs
+// the component is Rigidbody
+Rigidbody r = GetComponent<Rigidbody>(); // same as gameObject.GetComponent<Rigidbody>() ...
+r = GetComponentInChildren<Rigidbody>();
+r = GetComponentInParent<Rigidbody>();
+```
+</details>
+
+<details class="details-e">
 <summary>Usual methods</summary>
 
 <table class="table table-bordered table-striped border-dark mt-3">
@@ -338,6 +357,24 @@ var _obj = Instantiate(obj, pos, Quaternion.identity);
 ```cs
 Destroy(obj);
 Destroy(obj, time_before_death);
+```
+</td>
+</tr>
+
+<tr><th colspan="3" class="text-center text-my-blueI">Position 🗺</th></tr>
+
+<tr>
+<th>Vector2<br>Vector3</th>
+<td>A class used to represents a position (x,y) or (x,y,z).
+Note that I'm using Vector3 a lot, but a lot of functions are in Vector2 too.</td>
+<td>
+
+```cs
+// shortcuts to create vectors
+Vector3.back, Vector3.down, Vector3.up, ...
+someVector.normalized; // magnitude=1, just a direction
+Vector3.MoveTowards(current, target, maxDistancePerStep);
+if (Vector3.Distance(a, b) <= 0.0001f) {} // a near b?
 ```
 </td>
 </tr>
