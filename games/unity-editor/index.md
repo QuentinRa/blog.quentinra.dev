@@ -631,6 +631,18 @@ One component per line, with a gap between lines (that is 0 by default).
 An horizontal layout by default. You can make columns and rows by selecting another value for the field "constraint".
 </details>
 
+<details class="details-e">
+<summary>Handling multiple menus / another way of referencing something</summary>
+
+You could create multiples canvas, and turn them on/off. I heard that Unity is advising against this, but I couldn't find a proof that this is not a good practice. Anyways, another way to
+
+* create a canvas, and put everything inside
+* Add a component "XXXManager" (your script) on the canvas
+* Add a component "XXXElement" (your script) on each menu (you may use "Empty Game objects", and put your stuff inside)
+
+Then, in the manager, you are using `GetComponentsInChildren<XXXElement>`. As each component go a field "gameObject" for the associated game object, you got your menus too from their components. You may add a method in **XXXElement** returning the kind of menu (use an enum) to do specific stuff according to the kind of menu.
+</details>
+
 > **Pro tip**: As you can watch is [this video, there is a new way to create interface, called UI Builder](https://www.youtube.com/watch?v=NQYHIH0BJbs&ab_channel=CocoCode). It's not available yet.
 
 <hr class="sr">
