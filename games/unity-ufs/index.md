@@ -104,6 +104,12 @@ Resulting in
 
 ![Create field inspector unity](images/fields.png)
 
+> **Pro tip**: Unity will show the right field, according to the type of the attribute. You can request a game object, or a component, and in both cases, you will be able to drag and drop a game object from the hierarchy, to the field. You can also use the small circle with a dot, to browse values for this field (![Unity pick value](images/picker.png)).
+
+<hr class="sr">
+
+## Serialize Field : basic
+
 <details class="details-e">
 <summary>Rename a Serialize Field 👍</summary>
 
@@ -176,7 +182,7 @@ public class MovementManager : MonoBehaviour {}
 
 > **Pro tip**: `[Space(2)][Header("name")]` is the same as `[Space(2), Header("name")]`
 
-<hr class="sr">
+<hr class="sl">
 
 ## Serialize Field: more
 

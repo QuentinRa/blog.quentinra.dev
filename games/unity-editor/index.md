@@ -391,13 +391,20 @@ You can write new methods, add new attributes, ... See the [C# documentation](ht
 </details>
 
 <details class="details-e">
-<summary>Game object in a class</summary>
+<summary>Game object</summary>
 
-You attached your script to a Game object. You can get back the information on the attached game object, as we already saw in the section "Game objects". If needed, you got the attribute `gameObject` (or `this.gameObject`).
+**You attached your script to a Game object**. We already saw in the section
 
-```cs
-transform.position = /* some vector */; // you could use gameObject.transform too
-```
+* "Game objects" how to get the name, tag, ...
+* "Components" how to get a component attached on the same game object (its children or its parent)
+
+> **Pro tip**: If needed, you got the attribute `gameObject` (resp. `this.gameObject`).
+
+There is another problem. Let's say you want to **reference another game object** in another script. There are multiples way to do this
+
+* use tags, and find object with tag
+* use SerializedFields (see [Unity Script++](../unity-ufs/index.md#serialize-field))
+* use the approach explained in the UI section, way better for UI elements
 </details>
 
 <details class="details-e">
