@@ -20,21 +20,22 @@ It's a feature of JetBrains: instead of providing an IDE that is only doing its 
 
 <hr class="sl">
 
-## What you can expect (or not) from their IDEs
+## What you can expect from their IDEs
 
-* some important RAM consumption
+* some important RAM consumption 😱
 * Good to go. <small>(no need for plugins, a lot of tuning, etc.)</small>. You got a lot of predefined features that may not be available by default in others editors.
   * **Database** (either local, remote, or remote using a SSH Tunnel)
   * Open a remote project locally
   * Invite your friends/team on your IDE (**CodeWithMe**)
-  * **Git integration** (easy merge, easily track changes)
+  * **Git integration** (easy merge, easily track changes, revert, GitHub integration)
   * **Generate UML from your code** (Java, JS, PHP)
   * Basic **spellchecker**
   * Deep refactoring <small>(ex: renaming a variable and its usages, renaming a database column and its usages, etc.)</small>
   * **File history** <small>(even without GIT, rollback to a previous version of your file)</small>
+  * **Terminals** (you can open a terminal, including WSL ones, directly inside the editor)
 * auto-install <small>(easy install of JavaFX, Java, ...)</small>
 * They got many IDE, but they are consistent <small>(same interface, same shortcuts, etc.)</small>
-* **the code hints/advice**
+* **the code hints/advice/suggestions** to fix errors, optimize your code, or detect wrong code logic 🚀
 
 <hr class="sr">
 
