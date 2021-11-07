@@ -87,7 +87,7 @@ Go to **Edit, Then Preferences**.
 
 It's release time 🚀? When you picked your unity version, you picked the platforms that you can target. If you didn't, you can go inside the unity hub, then "install", right-click on your unity, and add modules.
 
-Inside Unity, before building something, let's first configure our game. Go to `Edit > Project Settings > Player`.
+Inside Unity, before building something, let's first configure our game. Go to `Edit > Project Settings > Player`. You could also find the menu in `File > Build`, the bottom-left button "Player settings...".
 
 * [**Should**] Set the company name, the product name, the version
 * [**Could**] You may set the icon 🚀 (and multiple icons for each resolution)

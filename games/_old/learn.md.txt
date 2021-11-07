@@ -1,12 +1,6 @@
 -----------------------------------------------------------------
 ------------------------- Unity
 -----------------------------------------------------------------
-click on the axis (top right).
-
-build > player settings (alt)
-
-edit > shortcuts
-
 define selections
 
 snap settings (CTRL+move)
@@ -34,13 +28,6 @@ import package => terrain assets
 -----------------------------------------------------------------
 ------------------------- Input
 -----------------------------------------------------------------
-dead/sensitivity => make it like we were gradually pressing a joystick
-
-"negative"=> send negative value to the axis
-
-dead => value between this and 0 = 0
-sensitivy => response time => low value = smooth, great value = fast
-
 physics managers => negative value => make down
 -----------------------------------------------------------------
 ------------------------- Camera
@@ -67,6 +54,7 @@ Physics.OverlapsSphere => return the components colliding with a position (ex: o
 Physic Material
 => create component
 => set friction to 0, and minimum
+https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html
 
 USE TAGS in collider easy to guess with who collided
 

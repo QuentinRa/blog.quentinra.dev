@@ -8,6 +8,11 @@ As there is a lot of content about Unity, this course will only provide knowledg
 
 Most of the time, you will have to go back and forth between your code and [the official documentation](https://docs.unity3d.com/Manual/index.html) or your search engine (there is a search bar in the documentation too). You may also check [the scripting reference](https://docs.unity3d.com/ScriptReference/).
 
+> **Pro tip**: there are many ways to do something in unity.
+> * First, you may use a button/... in a window 👍 (most used)
+> * Second, you may use a shortcut 🚀 (best)
+> * Third, you may use a toolbar menu. You can find shortcuts here if you forgot one 🧐
+
 <hr class="sl">
 
 ## Game object
@@ -146,6 +151,8 @@ You can also change your point of view by clicking on one axis here. Click back 
 > * <kbd>Mouse Wheel</kbd> to zoom/de-zoom
 > * <kbd>Left-Click/Middle-click</kbd> to move your point of view (not the camera)
 > * <kbd>CTRL</kbd> when moving something, while make the position change by 0.25.
+> 
+> You can select and edit multiples game objects in one go, by pressing <kbd>SHIFT</kbd> and clicking on two game objects (=select every game object between these two). You can use <kbd>CTRL</kbd> and pick them one by one.
 
 <hr class="sr">
 
@@ -399,7 +406,7 @@ In Unity, go to **Edit > Project Settings > Input Manager**. Expand Axes. In thi
 * **Vertical**: you can see **down**/**up** to move, while **S** and **W** are working
 * **Jump**: you can see **space**
 
-Increase the size to add more 🚀. Once you are good, in a script, you can do that.
+Increase the size to add more 🚀. Once you are good, in a script, you can do that. If a value is inside "dead", then its 0. "negative" means the value that will be negative (-1) in GetAxis (explained later). And "sensitivity" is the response time (low=smooth, great=fast). 
 
 <div class="row row-cols-md-2 mx-0"><div>
 
