@@ -27,6 +27,7 @@ Creating a layer allows you to put things on top of another. In Unity, you will 
 Then drag and drop an image into the slot.
 You may have to transform your image into a sprite.
 
+The image size must be a power of two, so you can compress it. You can compress sounds too (50% seems good).
 
 A sprite is an image, and a sprite sheet is a big image having a lot of sprites.
 In unity, click on a sprite sheet then in property, set `Sprite mode` to `Multiple` to tell unity that this image is composed of multiples images. Then in sprite editor, slide the image (either using automatic or grid) and apply your changes. You should now see only one frame/sprite when dragging your sprite inside the scene.

@@ -4,7 +4,6 @@
 -----------------------------------------------------------------
 ------------------------- Game Objects
 -----------------------------------------------------------------
-bad idea to drag and drop games objects to be referenced in a script.
 -----------------------------------------------------------------
 ------------------------- Scenes
 -----------------------------------------------------------------
@@ -49,24 +48,6 @@ Torch
 => shadow type: hard => projected on the wall
 
 => light with the sun transparent (mesh)
-
------------------------------------------------------------------
-------------------------- Useful methods
------------------------------------------------------------------
-
------- general
-
-SendMessageUpwards("StopMoving");
-bounds.Intersects(_myRenderer.bounds) // Check collision
-
------- coroutine
-
-StartCoroutine(WaitForSecondsAndShow());
-private IEnumerator WaitForSecondsAndShow()
-{
-	yield return new WaitForSeconds(2f);
-}
-
 -----------------------------------------------------------------
 ------------------------- Random bunch of notes
 -----------------------------------------------------------------
@@ -74,10 +55,6 @@ private IEnumerator WaitForSecondsAndShow()
 Click on the "..." and debug to enable debug mode
 => ex: shadow casting on
 => do it from the code
-
-The image size must be a power of two, so you can compress it. You can compress sounds too (50% seems good).
-
-You can and should group variables. You can use `[Header("name")]` / `[Space(value)]` before your variables declarations.
 
 In RigidBodyComponent, in `Interpolate`, enable interpolation for the main character, as the [documentation is suggesting](https://docs.unity3d.com/ScriptReference/Rigidbody-interpolation.html).
 

@@ -328,7 +328,7 @@ Colliders are used to check if our game object is colliding with another object.
     * it's an asset "create > Physic Material" in the project explorer
     * you can set the every friction to 0, and set combine to minimum to disable friction.
     * then you can add it to a collider
-4. **Some Code**
+4. **Some Code** (3 ways that I used)
 
 ```cs
 // 1. return every collider inside this sphere
@@ -336,6 +336,9 @@ Physics.OverlapsSphere(position, radius)
 // only layers in mask (ex: mask = LayerMask.GetMask("Default", "Water"))
 Physics.OverlapsSphere(position, radius, mask)
 // 2. you can use Vector3.Distance (or Vector2)
+// 3. you can use Bounds.Intersects
+GetComponent<Collider>().bounds.Intersects(anotherBounds);
+etComponent<Renderer>().bounds.Intersects(anotherBounds);
 ```
 
 > **Pro tip**: this may not be the best way to do it, but methods such as `OnCollisionEnter` are filled with the game object we are colliding with. You may use tags, and check the tag of the game object.
@@ -440,6 +443,19 @@ Destroy(obj, time_before_death);
 </td>
 </tr>
 
+<tr>
+<th>Messages</th>
+<td>call a method on every script on this game object.</td>
+<td>
+
+```cs
+SendMessage("methodName");
+// and on its ancestors
+SendMessageUpwards("methodName");
+```
+</td>
+</tr>
+
 <tr><th colspan="3" class="text-center text-my-blueI">Position 🗺</th></tr>
 
 <tr>
@@ -459,6 +475,48 @@ if (Vector3.Distance(a, b) <= 0.0001f) {} // a near b?
 </tr>
 
 </table>
+</details>
+
+<details class="details-e">
+<summary>Coroutines</summary>
+
+**Coroutines** are weirds methods, that have code after the return. Once started, the coroutine will wait until the function returns something. Then, once the function returned something, the code after the return will be executed.
+
+> It's used a lot, when you need to wait before doing something.
+
+**Declare a function**
+
+```cs
+private IEnumerator MyCoroutine()
+{
+	// wait for seconds
+	yield return new WaitForSeconds(1f);
+	// if needed, you can use "yield break;" to return
+	Debug.Log("Some code");
+}
+```
+
+You got a lot of alternatives for WaitForSeconds
+
+* `new WaitUntil(() => false);`: wait until the function returns true
+* `new WaitWhile(() => true);`: wait until the function returns false
+* `new WaitForSecondsRealtime(1f)`
+* ...
+
+**Start/Stop your coroutine**
+
+```cs
+StartCoroutine(MyCoroutine());
+StartCoroutine(nameof(MyCoroutine)); // same as StartCoroutine("MyCoroutine");
+
+var c = MyCoroutine();
+StartCoroutine(c);
+StopCoroutine(c);
+StopAllCoroutines();
+```
+
+
+
 </details>
 
 > **Pro tip**: [we are explaining a lot of things about scripts here](../unity-ufs/index.md).<br> 
