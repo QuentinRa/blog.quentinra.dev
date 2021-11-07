@@ -267,13 +267,28 @@ Debug.LogError("error");
 ```
 </details>
 
+> **Pro tip**: please remember the word "assets". Everything that you are creating in the project explorer (scripts/materials/...) are called **assets**.
+
 <hr class="sr">
 
 ## Components
 
 You may refine your game object with what we call **components**. They are extensions such as collision, physics, etc. that you can add to your game objects. You can do that in the inspector (as we saw before), or by dropping a component on a game object in the hierarchy. You can write scripts which are also components to add things such as movement, etc.
 
-<details class="details-e" open>
+You can use these methods to get a component, either applied on our game object, its children, or its parent. **Note that these methods are called on a game object, here it's the attribute "gameObject" in `MonoBehaviour`**, but it's implicit.
+
+```cs
+// the component is Rigidbody
+Rigidbody r = GetComponent<Rigidbody>(); // same as gameObject.GetComponent<Rigidbody>() ...
+r = GetComponentInChildren<Rigidbody>();
+r = GetComponentInParent<Rigidbody>();
+
+// disable a component (ex: the renderer to "hide" something)
+// assert that we got a Renderer first!
+GetComponent<Renderer>().enabled = true;
+```
+
+<details class="details-e">
 <summary>Rigidbody (Physics 🐱‍🏍)</summary>
 
 First, Rigidbody is for 3D games, and you have Rigidbody2D for 2D games. A game object with a rigid body **is subject to gravity** and **colliders**. If you ever add this to a game object, **you can't use transform to move your game object**, as you need to apply forces to move it. **If you are not planning to use force, be sure to toggle " is kinematic" on your Rigidbody component**.
@@ -298,7 +313,7 @@ rb.AddForce(Vector3.left * speed, ForceMode.A_MODE_HERE);
 ```
 </details>
 
-<details class="details-e" open>
+<details class="details-e">
 <summary>Colliders</summary>
 
 Colliders are used to check if our game object is colliding with another object. You will define a collider covering your game object (up to you, whether only touching the bust is considered as colliding=more efficient, etc.). Once you created you collider, **it will be triggered each time a game object having a Rigidbody is entering your collider**.
@@ -306,15 +321,24 @@ Colliders are used to check if our game object is colliding with another object.
 1. **is trigger**
    1. if **false**, this object is solid, trigger the method `OnCollisionEnter`. Both objects must have a **Rigid body**, at least one must be kinematic.
    2. if **true**, object are passing trough each other, trigger the method `OnTriggerEnter`
-3. **Some Code**
+2. **Layers**
+   * by default, object may collide even if there are not on the same layer.
+   * You can change this behavior by tweaking the collision matrix at the end of Edit > Project Settings > Physics 
+3. **Physical material**
+    * it's an asset "create > Physic Material" in the project explorer
+    * you can set the every friction to 0, and set combine to minimum to disable friction.
+    * then you can add it to a collider
+4. **Some Code**
 
 ```cs
-// return every collider inside this sphere
+// 1. return every collider inside this sphere
 Physics.OverlapsSphere(position, radius)
 // only layers in mask (ex: mask = LayerMask.GetMask("Default", "Water"))
 Physics.OverlapsSphere(position, radius, mask)
-// you can use Vector3.Distance (or Vector2)
+// 2. you can use Vector3.Distance (or Vector2)
 ```
+
+> **Pro tip**: this may not be the best way to do it, but methods such as `OnCollisionEnter` are filled with the game object we are colliding with. You may use tags, and check the tag of the game object.
 </details>
 
 <hr class="sl">
@@ -373,15 +397,6 @@ You attached your script to a Game object. You can get back the information on t
 
 ```cs
 transform.position = /* some vector */; // you could use gameObject.transform too
-```
-
-You can use these methods to get a component, either on our game object, its children, or its parent.
-
-```cs
-// the component is Rigidbody
-Rigidbody r = GetComponent<Rigidbody>(); // same as gameObject.GetComponent<Rigidbody>() ...
-r = GetComponentInChildren<Rigidbody>();
-r = GetComponentInParent<Rigidbody>();
 ```
 </details>
 

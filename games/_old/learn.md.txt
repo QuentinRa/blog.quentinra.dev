@@ -18,30 +18,12 @@ Don't destroy on load
 -----------------------------------------------------------------
 ------------------------- Input
 -----------------------------------------------------------------
-physics managers => negative value => make down
 -----------------------------------------------------------------
 ------------------------- Camera
 -----------------------------------------------------------------
 -----------------------------------------------------------------
 ------------------------- Components
 -----------------------------------------------------------------
-
-OnTriggerEnter2D => run when our object collides with another
-=> give both a collider set to trigger
-=> one of them must have a rigid body
-
-Physic Material
-=> create component
-=> set friction to 0, and minimum
-https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html
-
-USE TAGS in collider easy to guess with who collided
-
-GetComponent<Renderer>().enabled = true;
-
-Project Settings => Physics => matrix of which layer is colliding with which one
-
------
 
 Create Manager => give a script Controller to each child
 => script is returning an enum "WhoIAm"
@@ -118,7 +100,9 @@ Platformer
 
 isGrounded => check collider with the floor
 => or, check if not colliding with someone
+=> bug between two colliders
 
 => camera INSIDE the player => follow
 
 Rigidbody => freeze Z and rotation
+=> apply 0 friction => run in a cliff
