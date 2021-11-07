@@ -274,6 +274,8 @@ Right-click inside the **project window**, create a new Folder "Scripts" and a n
 <details class="details-e">
 <summary>Basic Empty Script</summary>
 
+<div class="row row-cols-md-2 mx-0"><div>
+
 ```cs
 using UnityEngine;
 
@@ -289,6 +291,22 @@ public class Example : MonoBehaviour // Example.cs
     private void Update() { }
 }
 ```
+</div><div>
+
+* **using**
+
+The `using` keyword is importing a namespace, meaning a collection of classes, enums, ... This allow us to use `MonoBehaviour` instead of prefixing classes (`UnityEngine.MonoBehaviour`).
+
+* **MonoBehaviour**
+
+A MonoBehaviour is the base class for a Script. It got a lot of methods, that are called automatically (Awake, Start, Update, Event-related functions, ...) in which you can write some code.
+
+> A script is a component, so you can add it to a game object.
+
+* **More**
+
+You can write new methods, add new attributes, ... See the [C# documentation](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/). If you are familiar with Java, it easy to sail in C#.
+</div></div>
 </details>
 
 > **Fun fact**: a long time ago, it was possible to use JavaScript too.
