@@ -6,6 +6,8 @@ As there is a lot of content about Unity, this course will only provide knowledg
 > You can dig more into **2D** with [Unity 2D](../unity-2d/index.md)<br>
 > You can dig more into **3D** with [Unity 3D](../unity-3d/index.md)
 
+Most of the time, you will have to go back and forth between your code and [the official documentation](https://docs.unity3d.com/Manual/index.html) or your search engine (there is a search bar in the documentation too).
+
 <hr class="sl">
 
 ## Game object
@@ -262,7 +264,34 @@ Debug.LogError("error");
 
 ## Scripts
 
-...
+Scripts are in **C#**, an old version of C#. From [this page about the C# compiler](https://docs.unity3d.com/2020.3/Documentation/Manual/CSharpCompiler.html), Unity 2020.3 (LTS) is using **C# 8.0**. In **2021.2+**, they are using **C# 9.0**. You should also note that even if they are using versions 8.0 or 9.0, **every feature of C# is not available** (check on the page above, for "Unsupported features").
+
+Right-click inside the **project window**, create a new Folder "Scripts" and a new script (ex: "Example.cs").
+
+* the name of the class must be the name of the file
+* the name must start with an uppercase, following the UpperCamelCase format
+
+<details class="details-e">
+<summary>Basic Empty Script</summary>
+
+```cs
+using UnityEngine;
+
+public class Example : MonoBehaviour // Example.cs
+{
+    // Awake is called when the script instance is being loaded
+    private void Awake() { }
+
+    // Start is called before the first frame update
+    private void Start() { }
+
+    // Update is called once per frame
+    private void Update() { }
+}
+```
+</details>
+
+> **Fun fact**: a long time ago, it was possible to use JavaScript too.
 
 <hr class="sr">
 
