@@ -298,10 +298,11 @@ First, Rigidbody is for 3D games, and you have Rigidbody2D for 2D games. A game 
 3. **Constraints**
    * you can freeze the Rotation (ex: x, y, z = no rotation)
    * you can freeze the position (ex: z in 2D)
-4. **Settings** (Edit > Project Settings > Physics)
+4. **Interpolate**: turn it on for the player's character ([source](https://docs.unity3d.com/ScriptReference/Rigidbody-interpolation.html))
+5. **Settings** (Edit > Project Settings > Physics)
    * You can change the gravity
    * You got a Layer Collision Matrix, explained in Collider
-5. **Some code**
+6. **Some code**
 
 **Pro tip**: updating physics must be done in the method `FixedUpdate` <small>(running at 50 FPS, even if the game is running at 20 FPS)</small> instead of `Update`. In `Update`, you will process input (calls to Input.Something), and in `FixedUpdate`, you will ONLY update the force, you won't call Input.Something (use attributes to remember what key/... were pressed).
 

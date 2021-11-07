@@ -58,6 +58,12 @@
         "name": "Unity References",
         "desc": "I'm starting to stack my references/sources for Unity here. This is almost only a list of YouTube videos.",
         "icon": "<i class=\"bi bi-journal-bookmark\"></i>"
+      },
+      {
+        "tag": "unity-notes",
+        "name": "Unity Notes",
+        "desc": "This is a gathering of notes that I took for different kinds of games, such as things to keep in mind.",
+        "icon": "<i class=\"bi bi-journal-bookmark\"></i>"
       }
     ]
   }
