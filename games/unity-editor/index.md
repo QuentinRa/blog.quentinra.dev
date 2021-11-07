@@ -137,6 +137,10 @@ Select in this list of icons (or using their shortcut) a tool. You can move, rot
 
 ![Scene window - icons](images/scene_icons.png)
 
+You can also change your point of view by clicking on one axis here. Click back on the square to go back to Perspective.
+
+![Unity Point of View Axis](images/axis_pov.png)
+
 > **Pro tips**
 > * <kbd>F</kbd> to focus a game object
 > * <kbd>Mouse Wheel</kbd> to zoom/de-zoom
@@ -558,6 +562,20 @@ An horizontal layout by default. You can make columns and rows by selecting anot
 
 ## Digging into topics
 
-* Camera
-* Maps
-* Light
+<details class="details-e mt-3">
+<summary>Camera</summary>
+
+* **Remove background**
+
+You can replace the Skybox with a black background or something else, by clicking on the camera, and editing "clear flags" and background. You can also turn off skybox in the editor with this button. 
+
+![Unity Toggle Skybox](images/toggle_skybox.png)
+
+* **Preview camera**
+
+Simply click on the camera, you will see a little preview.
+
+* **Set camera view**
+
+If you like what you are seeing, you can right-click on your camera and click on "Align with view". The "view" is your view of the scene in the editor.
+</details>

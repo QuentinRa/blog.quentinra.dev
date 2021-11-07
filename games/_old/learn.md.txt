@@ -45,17 +45,6 @@ physics managers => negative value => make down
 -----------------------------------------------------------------
 ------------------------- Camera
 -----------------------------------------------------------------
-
-Click on camera.
-
-Use the position to set objects/camera, not your intuitive guess
-
-remove background => set color => dark
-
-=> camera INSIDE the player => follow
-
-Camera => game object => align with view
-
 -----------------------------------------------------------------
 ------------------------- Components
 -----------------------------------------------------------------
@@ -162,3 +151,5 @@ Platformer
 
 isGrounded => check collider with the floor
 => or, check if not colliding with someone
+
+=> camera INSIDE the player => follow
