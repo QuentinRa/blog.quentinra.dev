@@ -7,10 +7,6 @@
 -----------------------------------------------------------------
 ------------------------- Scenes
 -----------------------------------------------------------------
-Don't destroy on load
-=> Singleton<T>
-=> https://blog.mzikmund.com/2019/01/a-modern-singleton-in-unity/
-=> https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html
 -----------------------------------------------------------------
 ------------------------- Tile map
 -----------------------------------------------------------------
@@ -32,7 +28,6 @@ Don't destroy on load
 -----------------------------------------------------------------
 ------------------------- LIGHT and SHADOWS
 -----------------------------------------------------------------
-
 Light => shader => copy
 => https://github.com/TwoTailsGames/Unity-Built-in-Shaders
 => https://github.com/adrian-miasik/unity-shaders

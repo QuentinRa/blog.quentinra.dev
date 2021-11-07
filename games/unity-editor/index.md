@@ -82,6 +82,11 @@ SceneManager.LoadScene(buildIndex);
 SceneManager.LoadScene("SceneName");
 ```
 
+If you got things that you don't want to lose between scenes
+
+* you may create `static variables`. Instances are destroyed, but static variables aren't reset.
+* you may create a singleton, if you don't want to instance an object twice (check [DontDestroyOnLoad](https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html), or [Unity Singleton](https://blog.mzikmund.com/2019/01/a-modern-singleton-in-unity/), while [DontDestroyOnLoad+Singleton](https://gist.github.com/mstevenson/4325117))
+
 <hr class="sl">
 
 ## Interface
