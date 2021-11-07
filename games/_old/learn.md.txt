@@ -1,9 +1,6 @@
 -----------------------------------------------------------------
 ------------------------- Unity
 -----------------------------------------------------------------
-define selections
-
-snap settings (CTRL+move)
 -----------------------------------------------------------------
 ------------------------- Game Objects
 -----------------------------------------------------------------
@@ -18,13 +15,6 @@ Don't destroy on load
 -----------------------------------------------------------------
 ------------------------- Tile map
 -----------------------------------------------------------------
-=> terrain => increase height (shift decrease) => soften
-"seamless textures are the best"
-import package => terrain assets
-=> edit textures => add => color
-=> 5 icon => tree => add => mass place
-=> add leaf on trees => set a material on each leaf group + each branch
-=> 6 icon => add grass / detail mesh
 -----------------------------------------------------------------
 ------------------------- Input
 -----------------------------------------------------------------
@@ -39,14 +29,6 @@ physics managers => negative value => make down
 OnTriggerEnter2D => run when our object collides with another
 => give both a collider set to trigger
 => one of them must have a rigid body
-
-RigidBody => kinematic : no gravity
-=> add gravity + physics
-=> jump: AddForce() => up Vector.up and ForceMode
-=> In 2D: freeze rotation (good for platformers)
-
-=> FixedUpdate => once per physics update (100 times per seconds)
-=> use attribute, updated in Update, to change the physics
 
 Physics.OverlapsSphere => return the components colliding with a position (ex: our feet)
 => filter layers only
@@ -141,3 +123,5 @@ isGrounded => check collider with the floor
 => or, check if not colliding with someone
 
 => camera INSIDE the player => follow
+
+Rigidbody => freeze Z and rotation

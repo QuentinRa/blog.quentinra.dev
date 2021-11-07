@@ -134,6 +134,8 @@ To create a group, create a new game object inside another one (right-click on t
 > * <kbd>CTRL+D</kbd> to duplicate the selected item
 > * <kbd>ALT+expand or hide</kbd> to expand/hide all children of a group
 
+Note: in complex games, you may define "selections". It means that pressing a shortcut (or toggling an menu item) will automatically select a game object. Click on a game object, then edit, then selection, and save it. Then use the shortcut, or use edit > selection > load, to load your selected game object.
+
 <hr class="sl">
 
 ## Scene window
@@ -150,7 +152,7 @@ You can also change your point of view by clicking on one axis here. Click back 
 > * <kbd>F</kbd> to focus a game object
 > * <kbd>Mouse Wheel</kbd> to zoom/de-zoom
 > * <kbd>Left-Click/Middle-click</kbd> to move your point of view (not the camera)
-> * <kbd>CTRL</kbd> when moving something, while make the position change by 0.25.
+> * <kbd>CTRL</kbd> when moving something, while make the position change by 0.25. It's called **snapping**, and you can change the unit in edit > Grid and Snap settings.
 > 
 > You can select and edit multiples game objects in one go, by pressing <kbd>SHIFT</kbd> and clicking on two game objects (=select every game object between these two). You can use <kbd>CTRL</kbd> and pick them one by one.
 
@@ -270,6 +272,27 @@ Debug.LogError("error");
 ## Components
 
 You may refine your game object with what we call **components**. They are extensions such as collision, physics, etc. that you can add to your game objects. You can do that in the inspector (as we saw before), or by dropping a component on a game object in the hierarchy. You can write scripts which are also components to add things such as movement, etc.
+
+<details class="details-e" open>
+<summary>Rigidbody (Physics 🐱‍🏍)</summary>
+
+First, Rigidbody is for 3D games, and you have Rigidbody2D for 2D games. A game object with a rigid body **is subject to gravity** and **colliders**. If you ever add this to a game object, **you can't use transform to move your game object**, as you need to apply forces to move it. **If you are not planning to use force, be sure to toggle " is kinematic" on your Rigidbody component**.
+
+* `is kinematics: true`: you want to use collider, but don't need gravity/...
+* Constraints 
+  * you can freeze the Rotation (ex: x, y, z = no rotation)
+  * you can freeze the position (ex: z in 2D)
+* Some code
+
+**Pro tip**: updating physics must be done in the method `FixedUpdate` <small>(running at 50 FPS, even if the game is running at 20 FPS)</small> instead of `Update`. In `Update`, you will process input (calls to Input.Something), and in `FixedUpdate`, you will ONLY update the force, you won't call Input.Something (use attributes to remember what key/... were pressed).
+
+```cs
+// if up then Jump, etc.
+rb.AddForce(Vector3.left); // move to the left
+rb.AddForce(Vector3.left * speed);
+rb.AddForce(Vector3.left * speed, ForceMode.A_MODE_HERE);
+```
+</details>
 
 <hr class="sl">
 

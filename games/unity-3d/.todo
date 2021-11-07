@@ -9,3 +9,15 @@ Z-fighting
 => two items at the same location, overlapping
 => bug when rendering
 => trick: increase the z-values by 0.01
+
+-----------------------------------------------------------------
+------------------------- Terrain
+-----------------------------------------------------------------
+
+=> terrain => increase height (shift decrease) => soften
+"seamless textures are the best"
+import package => terrain assets
+=> edit textures => add => color
+=> 5 icon => tree => add => mass place
+=> add leaf on trees => set a material on each leaf group + each branch
+=> 6 icon => add grass / detail mesh
