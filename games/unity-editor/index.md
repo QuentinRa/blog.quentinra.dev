@@ -301,12 +301,48 @@ The `using` keyword is importing a namespace, meaning a collection of classes, e
 
 A MonoBehaviour is the base class for a Script. It got a lot of methods, that are called automatically (Awake, Start, Update, Event-related functions, ...) in which you can write some code.
 
-> A script is a component, so you can add it to a game object.
+> A script is a component, so you can add it to a game object as usual. You can also drag and drop a script on a game object in the hierarchy.
 
 * **More**
 
 You can write new methods, add new attributes, ... See the [C# documentation](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/). If you are familiar with Java, it easy to sail in C#.
 </div></div>
+</details>
+
+<details class="details-e" open>
+<summary>Usual methods</summary>
+
+<table class="table table-bordered table-striped border-dark mt-3">
+<tr><th>Method</th><th>Description</th><th>Calls</th></tr>
+
+<tr><th colspan="3" class="text-center text-my-blue">Unranked 👀</th></tr>
+
+<tr>
+<th>Instantiate</th>
+<td>clone an object</td>
+<td>
+
+```cs
+var _obj = Instantiate(obj);
+var _obj = Instantiate(obj, pos, rot);
+var _obj = Instantiate(obj, pos, Quaternion.identity);
+```
+</td>
+</tr>
+
+<tr>
+<th>Destroy</th>
+<td>destroy an object</td>
+<td>
+
+```cs
+Destroy(obj);
+Destroy(obj, time_before_death);
+```
+</td>
+</tr>
+
+</table>
 </details>
 
 > **Fun fact**: a long time ago, it was possible to use JavaScript too.

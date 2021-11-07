@@ -19,6 +19,8 @@ bad idea to drag and drop games objects to be referenced in a script.
 -----------------------------------------------------------------
 Don't destroy on load
 => Singleton<T>
+=> https://blog.mzikmund.com/2019/01/a-modern-singleton-in-unity/
+=> https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html
 -----------------------------------------------------------------
 ------------------------- Tile map
 -----------------------------------------------------------------
@@ -95,13 +97,6 @@ Create Manager => give a script Controller to each child
 -----------------------------------------------------------------
 ------------------------- Scripts
 -----------------------------------------------------------------
-
-protected override?
-System.Ling => List
-.ToList()
-.ForEach()
-.Find()
-
 -----------------------------------------------------------------
 ------------------------- Materials
 -----------------------------------------------------------------
@@ -131,9 +126,6 @@ Torch
 
 ------ general
 
-Instantiate(obj, pos, rot)
-Destroy(obj)
-Destroy(obj, time_before_death)
 SendMessageUpwards("StopMoving");
 
 ----- vector
@@ -150,12 +142,6 @@ private IEnumerator WaitForSecondsAndShow()
 {
 	yield return new WaitForSeconds(2f);
 }
-
------------------- cs
-
-YYY.XXX => using YYY (note)
-
-Drag and drop a script on a player.
 
 -----------------------------------------------------------------
 ------------------------- Random bunch of notes
