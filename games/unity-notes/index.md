@@ -34,7 +34,7 @@ We are considering that you are in Unity 3D, without the Z-axis.
   * 📕: freeze rotation (X, Y, Z)
   * 📘: move the platform by checking the position X of the mouse
     * 🗒: you may use Camera.ScreenToWorldPoint
-* 📘: Create a ball (ex: circle) with a collider and a rigid body
+* 📘: Create a ball (ex: sphere) with a collider and a rigid body
   * 🗒: make the ball interpolate (smooth collision)
   * 📕: freeze Z-axis
   * 📘: make the ball bounce when colliding

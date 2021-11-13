@@ -123,3 +123,10 @@ Another bunch
 * [TUTO UNITY FR](https://www.youtube.com/c/TUTOUNITYFR/playlists) (French)
 * [Allen Devs](https://www.youtube.com/channel/UC_7mufS5kVUUk0M7y-NPUIQ/playlists)
 * [NotSlot](https://www.youtube.com/channel/UCgK_vbcG3YxzAMB4GOffb7w)
+
+<hr class="sl">
+
+## TODO
+
+* [Unity Journey of Discovery](https://www.youtube.com/watch?v=8GE2SqTF76U&list=PLnn2bgFFpnzZDjV5AdVd1WDQETMLTIGzw&index=1&ab_channel=Re%3AcOgMission)
+* 
