@@ -21,6 +21,8 @@ Lightning => auto generate => disable if level goes darker
 
 Drag and drop scene to add it in the build
 
+Install package => unity registry/...
+
 https://github.com/UnityCommunity/UnityLibrary
 https://unitylist.com/
 https://github.com/cmilr/Unity2D-Components
@@ -131,3 +133,24 @@ Torch
 -----------------------------------------------------------------
 ------------------------- FAQ
 -----------------------------------------------------------------
+-----------------------------------------------------------------
+------------------------- Cinematic
+-----------------------------------------------------------------
+Packages: Cinemachine, LeanTween (+TMPro, Timeline)
+
+=> Add cinemachine brain to our camera
+=> create new virtual camera
+	1. => follow target => body set the position
+	   => feel nicer (camera respond to every movement bad) increasing damping (time to adjust)
+	   => there is a point, and a dead zone
+	   => if the point is too far away from the dead zone, then we are rotation/moving/... the camera => damping
+	    => width/height reduced?
+	    => reposition focus point with ScreenX/ScreenY
+	2. => look at target
+=> you can set the priority to tell the cinemachine which camera it should pick
+
+Timeline => switch between cameras
+Window => Test Runner => create => remove track and add
+	player => add animation track on player
+	camera as cinematic track => add shot clip => pick camera
+		=> overlap two camera to made a nice transition
