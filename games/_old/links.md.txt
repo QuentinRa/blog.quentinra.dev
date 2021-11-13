@@ -74,13 +74,6 @@ https://github.com/liangxiegame/QFramework
 https://github.com/OnClick9927/IFramework
 https://github.com/JasonXuDeveloper/JEngine
 
-https://github.com/UnityCommunity/UnityLibrary
-
-https://github.com/Kavex/GameDev-Resources#assets
-
-https://www.youtube.com/watch?v=v9edu2qL9Q4&ab_channel=ThomasBrush
-https://www.youtube.com/watch?v=sc3h5JXtIzw&ab_channel=RiotGames
-
 ----
 
 https://learn.unity.com/tutorial/project-architecture-unity-project-folder-structure#5c7f8528edbc2a002053b672
