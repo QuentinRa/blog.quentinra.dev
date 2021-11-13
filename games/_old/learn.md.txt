@@ -19,11 +19,14 @@ Change editor color in play mode to not forget?
 
 Lightning => auto generate => disable if level goes darker
 
+Drag and drop scene to add it in the build
+
 https://github.com/UnityCommunity/UnityLibrary
 https://unitylist.com/
 -----------------------------------------------------------------
 ------------------------- Game Objects
 -----------------------------------------------------------------
+=> arrow on each game object "go to prefab"
 -----------------------------------------------------------------
 ------------------------- Scenes
 -----------------------------------------------------------------
@@ -44,7 +47,11 @@ GetComponent<Button>().onClick.AddListener(MyMethod);
 -----------------------------------------------------------------
 Collider => edit => CTRL-click to remove
 
+lower mass=pushed back
+
 Distance Joint
+
+FindObjectOfType
 -----------------------------------------------------------------
 ------------------------- Scripts
 -----------------------------------------------------------------

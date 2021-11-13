@@ -21,26 +21,64 @@ Note that this ranking is made relatively to other entries talking about the sam
 
 ## Table
 
-|  | C# | UI | Input | Collision | Camera | Light | Physics |
-|----------------------------------|---|---|---|---|---|---|---|
+|  | C# | UI | Input | Collision | Camera | Light<br>Effects | Physics | Prefabs | Animations<br>Skins |
+|----------------------------------|---|---|---|---|---|---|---|---|---|
 | <br> |
 | [Player Movement](https://www.youtube.com/watch?v=Uv5tfMSKlnU) 📚 | ✅ | | ✅ | 👀 | ✅ P |
 | <br> |
 |[Learn C# with these 9 LINES OF CODE](https://www.youtube.com/watch?v=aB9LJ9oHGOs&ab_channel=Blackthornprod)| ✅ | | 👀 | 👀 |
 | <br> |
-| [First 3D game](https://www.youtube.com/watch?v=pCBqgREiSUE) ✅ | 👀 | | 👀 | 👀 | ✅ P |  | 👀 |
-| <br> |
-| [Sprite Shadows And Lighting](https://www.youtube.com/watch?v=flu2PNRUAso) | | | | | | 🚀 |
-| [Basic Lighting 2D!](https://www.youtube.com/watch?v=6Q0FnPy9Orc&ab_channel=TopsideStudios) | | | | | | URP |
-| <br> |
+| [First 3D game](https://www.youtube.com/watch?v=pCBqgREiSUE) ✅ | 👀 | ✅ | 👀 | 👀 | 👀 P |  | 👀 |  | 👀 (Skins) |
+| [First 3D game (2)](https://www.youtube.com/watch?v=V29O_Q7W2ZU) |  |  | |  |  | 👀 |  | ✅ | |
+| [The Most BASIC TUTORIAL](https://www.youtube.com/watch?v=pwZpJzpE2lQ) 🚀 |  ✅ |  | ✅ | ✅ | 👀 | 👀 | 🚀 | ✅ | |
+
+* **C#**: class, methods, variables, attributes
+* **UI**: canvas, menus, scenes, build game
+* **Input**: InputManager, methods in C# for keys/mouse
+* **Collision**: Colliders, Layers, Tags, Settings
+* **Physics**: FixedUpdate, RigidBody, Gravity/Kinetic/Settings
+* **Prefabs**: what is it, create one, prefab mode, overrides
+* **Animations/Skins**:
+  * **Animations**: Animations, Animator
+  * **Skins**: Materials, Sprites,
+
+<hr class="sr">
+
+## Covering one topic
+
+<details>
+<summary>UI</summary>
+
+|  | C# | UI | Input | Collision | Camera | Light | Physics | Prefabs | Animations |
+|----------------------------------|---|---|---|---|---|---|---|---|---|
 | [Main Menu](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode) | | 🚀 | | | | |
 | [Best Practices for Menus](https://www.youtube.com/watch?v=vmKxLibGrMo) | 👀 | 🚀 | | | | |
 | [UI That Looks Good](https://www.youtube.com/watch?v=HwdweCX5aMI&ab_channel=GameDevGuide) | | 📚 | | | | |
 | [Master buttons](https://www.youtube.com/watch?v=cW-E4WEogzE&ab_channel=CocoCode) | | 🚀 | | | | |
+</details>
+
+<details>
+<summary>Animations</summary>
+
+|  | C# | UI | Input | Collision | Camera | Light | Physics | Prefabs | Animations |
+|----------------------------------|---|---|---|---|---|---|---|---|---|
+| [Animations - mixamo](https://www.youtube.com/watch?v=9H0aJhKSlEQ) |  |  | |  |  |  |  | | ✅ |
+</details>
+
+<details>
+<summary>Lightning</summary>
+
+|  | C# | UI | Input | Collision | Camera | Light | Physics | Prefabs | Animations |
+|----------------------------------|---|---|---|---|---|---|---|---|---|
+| [Sprite Shadows And Lighting](https://www.youtube.com/watch?v=flu2PNRUAso) | | | | | | 🚀 |
+| [Basic Lighting 2D!](https://www.youtube.com/watch?v=6Q0FnPy9Orc&ab_channel=TopsideStudios) | | | | | | URP |
+</details>
 
 <hr class="sl">
 
 ## Others
+
+Videos
 
 * [Pick Unity version - LTS](https://www.youtube.com/watch?v=LLYhTWEX2Wc) (🚀)
 * [Are Game Templates Useful Or Not](https://www.youtube.com/watch?v=GG0GVLYzkus) (📚)
@@ -58,6 +96,13 @@ Websites
 
 <hr class="sr">
 
-## Covering a lot of topics
+## Channels
 
-* [The Most BASIC TUTORIAL I'll Ever Make](https://www.youtube.com/watch?v=pwZpJzpE2lQ) (2 hours, 🚀)
+* [Dapper Dino](https://www.youtube.com/c/DapperDinoCodingTutorials/videos) (😖)
+* [EngiGames](https://www.youtube.com/channel/UCbAsfBmEHQpPERAVx8DHxZA/videos) (🚀, 😖)
+* [Jimmy Vegas](https://www.youtube.com/c/JimmyVegasUnity/playlists) (😖)
+* [Thomas Brush](https://www.youtube.com/c/AtmosGames/videos)
+* RiotGames - Art
+  * [So You Wanna Make Games??](https://www.youtube.com/playlist?list=PL42m9XiTqPHJdJuVXO6Vf5ta5D07peiVx) (😖)
+  * [Making Games](https://www.youtube.com/playlist?list=PL42m9XiTqPHIJbQZgzDhCyXtMOKNMrRno) (😖)
+* [Jonas Tyroller](https://www.youtube.com/c/JonasTyroller/videos) (🚀, 😖)
