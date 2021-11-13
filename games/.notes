@@ -136,6 +136,9 @@ Torch
 -----------------------------------------------------------------
 ------------------------- Cinematic
 -----------------------------------------------------------------
+https://www.youtube.com/watch?v=Gx9gZ9cfrys (animations 🚀)
+https://www.youtube.com/watch?v=G_uBFM3YUF4 (animations 🚀)
+
 Packages: Cinemachine, LeanTween (+TMPro, Timeline)
 
 => Add cinemachine brain to our camera
@@ -154,3 +157,19 @@ Window => Test Runner => create => remove track and add
 	player => add animation track on player
 	camera as cinematic track => add shot clip => pick camera
 		=> overlap two camera to made a nice transition
+
+If you are creating a timeline, reset transform, remove animator and default track
+if you are not planning to use it.
+
+Animation
+=> start recording you are moving something => you may go back in time and do something too
+=> ... => ms to s
+=> right-click frames and clip
+
+Click on clip
+=> Post extrapolate (when done): ping ping ("undo")
+
+You can create a track group (left column) and group tracks
+
+Activation track
+=> enable/disable something
