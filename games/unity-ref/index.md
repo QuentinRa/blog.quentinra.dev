@@ -104,6 +104,8 @@ Websites
   * [So You Wanna Make Games??](https://www.youtube.com/playlist?list=PL42m9XiTqPHJdJuVXO6Vf5ta5D07peiVx) (😖)
   * [Making Games](https://www.youtube.com/playlist?list=PL42m9XiTqPHIJbQZgzDhCyXtMOKNMrRno) (😖)
 * [Jonas Tyroller](https://www.youtube.com/c/JonasTyroller/videos) (🚀, 😖)
+* [Coco Code](https://www.youtube.com/c/CocoCode/videos) (📚, 😖)
+* [Game Dev Guide](https://www.youtube.com/c/GameDevGuide/videos) (😖)
 
 Another bunch
 

@@ -3,74 +3,7 @@ https://www.youtube.com/watch?v=pwZpJzpE2lQ
 https://www.youtube.com/watch?v=b8YUfee_pzc&ab_channel=Epitome
 https://www.youtube.com/watch?v=Lu76c85LhGY&ab_channel=JasonWeimann
 
---------- links
-
-https://github.com/topics/unity2d
-https://github.com/Michsky/lomenui
-https://github.com/ycarowr/UiCard
-https://github.com/LewisJohnson/unity-ui-examples
-https://github.com/Zesix/Impulse
-https://github.com/Fy-/FyWorld
-https://github.com/Mukarillo/UnityTetris
-
-https://github.com/cmilr/Unity2D-Components
-https://github.com/OndrejNepozitek/Edgar-Unity
-https://github.com/pixelnest/tutorial-2d-game-unity
-https://pixelnest.io/tutorials/2d-game-unity/
-
-https://github.com/XINCGer/Unity3DTraining
-https://starchart.cc/lgs-games/eden
-https://github.com/liangxiegame/QFramework
-https://github.com/OnClick9927/IFramework
-https://github.com/JasonXuDeveloper/JEngine
-
-----
-
-https://learn.unity.com/tutorial/project-architecture-unity-project-folder-structure#5c7f8528edbc2a002053b672
-https://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control
-https://stackoverflow.com/questions/21573405/how-to-prepare-a-unity-project-for-git
-https://thoughtbot.com/blog/how-to-git-with-unity
-
-https://blog.jetbrains.com/dotnet/2017/08/30/getting-started-rider-unity/
-https://blog.jetbrains.com/dotnet/2018/10/03/integrating-rider-2018-2-unity-editor/
-
-https://blog.unity.com/technology/a-lightning-round-of-great-tips-for-2d-games
-https://blog.unity.com/technology/download-our-new-2d-sample-project-lost-crypt
-https://www.instructables.com/Make-A-2D-Infinite-Runner-with-Unity/
-https://careerkarma.com/blog/make-a-game-in-unity/
-
-https://github.com/vis2k/Mirror
-https://assetstore.unity.com/packages/templates/systems/ummorpg-2d-remastered-mmorpg-engine-102632
-https://assetstore.unity.com/packages/2d/gui/flat-clean-gui-over-200-png-files-110987
-https://assetstore.unity.com/2d?category=2d&free=true&orderBy=1&page=13
-
-Pathways
-
-* <https://learn.unity.com/pathway/unity-essentials?language=en>
-* <https://learn.unity.com/pathway/junior-programmer?language=en>
-* <https://learn.unity.com/search?k=%5B%22ind%3A5816ce9a32b30600171bef5a%22%2C%22sl%3Abeginner%22%2C%22sl%3Aintermediate%22%5D&ob=starts>
-
-Tools
-
-* [Odin](https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041)
-* [Quests / Inventory ](https://github.com/devdogio)
-
-https://danielilett.com/2019-09-08-unity-tips-3-interpolation/
-
------------------------
-
-* [TileMap](https://www.raywenderlich.com/23-introduction-to-the-new-unity-2d-tilemap-system#toc-anchor-006)
-* [Generate 2.5d map](https://hexiledgames.itch.io/25d-tilemaps-and-voxel-terrain-generator)
-* [3D Map editor](https://fertile-soil-productions.itch.io/mast)
-* [szadiart (great / paid)](https://szadiart.itch.io/)
-* [Clean GUI](https://assetstore.unity.com/packages/2d/gui/flat-clean-gui-over-200-png-files-110987)
-* [MMORPG engine (not tested)](https://assetstore.unity.com/packages/templates/systems/ummorpg-2d-remastered-mmorpg-engine-102632)
-* [Networking library](https://github.com/vis2k/Mirror)
-* [MainMenu UI](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode)
-* [Simple UI](https://www.youtube.com/watch?v=xmR07iBW7zk&ab_channel=CocoCode)
-* [GameDevGuide](https://www.youtube.com/c/GameDevGuide/videos)
-
--------------- Random videos from a lost guy
+-------------- Random videos from a lost dude
 
 https://www.youtube.com/watch?v=J9HaHHx-GWA&list=PLrswC5B90hKy5gZZX_u8tmnkl3GoOrkcw&index=17&ab_channel=WickedCatStudios
 https://www.youtube.com/playlist?list=PLrswC5B90hKyr9SQk9ldmwOsh-jGePFzB

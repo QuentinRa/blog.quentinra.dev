@@ -23,6 +23,7 @@ Drag and drop scene to add it in the build
 
 https://github.com/UnityCommunity/UnityLibrary
 https://unitylist.com/
+https://github.com/cmilr/Unity2D-Components
 -----------------------------------------------------------------
 ------------------------- Game Objects
 -----------------------------------------------------------------
@@ -72,6 +73,7 @@ Audio source
 ===========
 Vector3.Reflex -> become <-
 => normalize??? return one value
+=> https://danielilett.com/2019-09-08-unity-tips-3-interpolation/
 -----------------------------------------------------------------
 ------------------------- Scripts
 -----------------------------------------------------------------

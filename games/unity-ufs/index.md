@@ -365,3 +365,4 @@ More?
 * This [extension adding new attributes](https://github.com/dbrizov/NaughtyAttributes) may be helpful 🚀
 * This [extension is adding new attributes too](https://github.com/gasgiant/Markup-Attributes) ✨
 * This [repository is providing examples for every attribute](https://github.com/LastAssertor/Unity-Attributes-Example) 🤓
+* [Odin](https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041) (paid unity plugin)
