@@ -87,9 +87,9 @@ b = \begin{pmatrix}
 We are **checking** that A is
 
 * **leading minors not null**, ok
-  * $det(\Delta_1) = 4 \gt 0$
-  * $det(\Delta_2) = 36 \gt 0$
-  * $det(\Delta_3) = 576 \gt 0$
+  * $det(\Delta_1) = 4 \ne 0$
+  * $det(\Delta_2) = 36 \ne 0$
+  * $det(\Delta_3) = 576 \ne 0$
   * The steps are on the Cholesky factorization page
 * **invertible**:  ok, $det(A) = det(\Delta_3) \neq 0$
 
