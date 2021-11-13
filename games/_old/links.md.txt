@@ -1,49 +1,7 @@
-https://www.youtube.com/watch?v=V29O_Q7W2ZU
-https://www.youtube.com/watch?v=gCqOnchV4V0&feature=emb_rel_pause&ab_channel=Imphenzia
-
 ----- big one
 https://www.youtube.com/watch?v=pwZpJzpE2lQ
 https://www.youtube.com/watch?v=b8YUfee_pzc&ab_channel=Epitome
 https://www.youtube.com/watch?v=Lu76c85LhGY&ab_channel=JasonWeimann
-
---- channels
-new: https://www.youtube.com/c/VelvaryGames/videos
-https://www.youtube.com/c/Brackeys/playlists
-https://www.youtube.com/c/Blackthornprod/videos
-https://www.youtube.com/c/MuddyWolf/videos
-https://www.youtube.com/c/CodeMonkeyUnity/videos
-https://www.youtube.com/c/LostRelicGames/videos
-https://www.youtube.com/channel/UCFEbYRZrkvEfCAecEf0SPXg
-
-https://www.youtube.com/c/ChargerGames/videos
-
-https://www.youtube.com/watch?v=cKZqISww5Do&ab_channel=AllenDevs
-
---- series
-top down - https://www.youtube.com/playlist?list=PLl3caEhMYxQGFQ8LA5doTSkWhP2Mx84Gx
-platform - https://www.youtube.com/watch?v=_UBpkdKlJzE&ab_channel=PandemoniumGames
-zelda - https://www.youtube.com/watch?v=--N5IgSUQWI&list=PL4vbr3u7UKWp0iM1WIfRjCDTI03u43Zfu&index=4&ab_channel=MisterTaftCreates
-le fr - https://www.youtube.com/watch?v=Y3-iYIs16TI&list=PLUWxWDlz8PYKnrd27LTqOxL2lr3KhEVRT
-
---- multiplayer
-https://www.youtube.com/watch?v=nmPukdOsYQA
-https://www.youtube.com/watch?v=93SkbMpWCGo
-https://www.youtube.com/watch?v=Nt9QfRrm30c&ab_channel=Blackthornprod
-https://www.youtube.com/watch?v=DQWYMfZyMNU&ab_channel=CocoCode
-
---- combat
-https://www.youtube.com/watch?v=e2PRI19Igbo
-
------ not tutorials
-Xsolla
-https://assetstore.unity.com/packages/templates/systems/hunger-thirst-106005
-https://assetstore.unity.com/packages/templates/systems/wave-one-156657
-https://assetstore.unity.com/packages/templates/systems/legendary-loot-lite-138593
-https://assetstore.unity.com/packages/templates/systems/mmorpg-kit-2d-3d-survival-110188
-https://assetstore.unity.com/packages/templates/systems/topdown-engine-89636
-
----- great?
-https://www.pluralsight.com/courses/unity-finite-state-machines
 
 --------- links
 
@@ -86,31 +44,11 @@ https://assetstore.unity.com/packages/templates/systems/ummorpg-2d-remastered-mm
 https://assetstore.unity.com/packages/2d/gui/flat-clean-gui-over-200-png-files-110987
 https://assetstore.unity.com/2d?category=2d&free=true&orderBy=1&page=13
 
------ ensiie
-
-http://web4.ensiie.fr/~guillaume.bouyer/RVIG/Unity.pdf
-http://web4.ensiie.fr/~bouyer/RVSI/Unity.pdf
-http://web4.ensiie.fr/~guillaume.bouyer/rvsi.html
-http://web4.ensiie.fr/~bouyer/RVSI/TP%20Unity.pdf
-http://web4.ensiie.fr/~guillaume.bouyer/GPFGEA/Schmup2020.pdf
-http://web4.ensiie.fr/~guillaume.bouyer/IN.pdf
-https://www.edx.org/course/cs50s-introduction-to-game-development
-https://www.udemy.com/course/unityrpg/
-
-<hr class="sr">
-
-## To check list
-
 Pathways
 
 * <https://learn.unity.com/pathway/unity-essentials?language=en>
 * <https://learn.unity.com/pathway/junior-programmer?language=en>
 * <https://learn.unity.com/search?k=%5B%22ind%3A5816ce9a32b30600171bef5a%22%2C%22sl%3Abeginner%22%2C%22sl%3Aintermediate%22%5D&ob=starts>
-
-Youtube channels
-
-* [NoSlot](https://www.youtube.com/channel/UCgK_vbcG3YxzAMB4GOffb7w)
-* [Pandemonium games](https://www.youtube.com/channel/UCpkMj5b5kl2_YApDvgUCVQQ)
 
 Tools
 

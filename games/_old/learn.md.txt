@@ -42,19 +42,44 @@ GetComponent<Button>().onClick.AddListener(MyMethod);
 -----------------------------------------------------------------
 ------------------------- Camera
 -----------------------------------------------------------------
+ScreenToWorldPoint
+Cursor.visible = false;
 -----------------------------------------------------------------
 ------------------------- Components
 -----------------------------------------------------------------
 Collider => edit => CTRL-click to remove
 
-lower mass=pushed back
+Rigidbody
+=> lower mass=pushed back
+=> drag => slow down
+=> MovePosition
 
 Distance Joint
 
 FindObjectOfType
+
+===========
+particles system
+=> material
+=> emission => rate over time 0 (once?) => turn => add entry
+=> shape => way particles are thrown => lifetime, speed
+=> color and lifetime => 0% and 100% color => fade out
+
+============
+Audio source
+=> drag and drop in audio clip
+
+===========
+Vector3.Reflex -> become <-
+=> normalize??? return one value
 -----------------------------------------------------------------
 ------------------------- Scripts
 -----------------------------------------------------------------
+{get; private set;}
+
+Invoke("method", delay)
+
+PlayerPrefs
 -----------------------------------------------------------------
 ------------------------- Materials
 -----------------------------------------------------------------

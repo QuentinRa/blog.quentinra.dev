@@ -7,9 +7,10 @@ I'm starting to stack my references/sources for Unity here. This is almost only 
 ## Legend
 
 * 😖: not watched yet
-* 👀: learn a bit about this topic <small>(LVL 1)</small>
-* ✅: good <small>(LVL 2)</small>
-* 📚: great <small>(LVL 3)</small>
+* ✨: new tip/only one thing <small>(LVL 1)</small>
+* 👀: learn a bit about this topic <small>(LVL 2)</small>
+* ✅: good <small>(LVL 3)</small>
+* 📚: great <small>(LVL 4)</small>
 * 🚀: excellent <small>(LVL MAX)</small>
 * And if this video is only talking about a topic for a specific use, I will add the specific use
   * P = Platformer
@@ -29,8 +30,9 @@ Note that this ranking is made relatively to other entries talking about the sam
 |[Learn C# with these 9 LINES OF CODE](https://www.youtube.com/watch?v=aB9LJ9oHGOs&ab_channel=Blackthornprod)| ✅ | | 👀 | 👀 |
 | <br> |
 | [First 3D game](https://www.youtube.com/watch?v=pCBqgREiSUE) ✅ | 👀 | ✅ | 👀 | 👀 | 👀 P |  | 👀 |  | 👀 (Skins) |
-| [First 3D game (2)](https://www.youtube.com/watch?v=V29O_Q7W2ZU) |  |  | |  |  | 👀 |  | ✅ | |
+| [First 3D game (2)](https://www.youtube.com/watch?v=V29O_Q7W2ZU) |  |  | |  |  | ✨ |  | ✅ | |
 | [The Most BASIC TUTORIAL](https://www.youtube.com/watch?v=pwZpJzpE2lQ) 🚀 |  ✅ |  | ✅ | ✅ | 👀 | 👀 | 🚀 | ✅ | |
+| [FIRST COMPLETE Game](https://www.youtube.com/watch?v=gCqOnchV4V0) ✅ |   |  |  | ✅ | ✨ | ✨ | ✅ | 👀 | |
 
 * **C#**: class, methods, variables, attributes
 * **UI**: canvas, menus, scenes, build game
@@ -90,13 +92,9 @@ Websites
 
 <hr class="sr">
 
-## Playlists
-
-* [2D Platformer](https://www.youtube.com/watch?v=Ii-scMenaOQ&list=PLrnPJCHvNZuCVTz6lvhR81nnaf1a-b67U&ab_channel=CodinginFlow) (😖)
-
-<hr class="sr">
-
 ## Channels
+
+> **Note**: I have yet to explore every of these. This list will be filtered/sorted soon.
 
 * [Dapper Dino](https://www.youtube.com/c/DapperDinoCodingTutorials/videos) (😖)
 * [EngiGames](https://www.youtube.com/channel/UCbAsfBmEHQpPERAVx8DHxZA/videos) (🚀, 😖)
@@ -106,3 +104,20 @@ Websites
   * [So You Wanna Make Games??](https://www.youtube.com/playlist?list=PL42m9XiTqPHJdJuVXO6Vf5ta5D07peiVx) (😖)
   * [Making Games](https://www.youtube.com/playlist?list=PL42m9XiTqPHIJbQZgzDhCyXtMOKNMrRno) (😖)
 * [Jonas Tyroller](https://www.youtube.com/c/JonasTyroller/videos) (🚀, 😖)
+
+Another bunch
+
+* [Velvary](https://www.youtube.com/c/VelvaryGames/videos)
+* [Brackeys](https://www.youtube.com/c/Brackeys/playlists)
+* [Blackthornprod](https://www.youtube.com/c/Blackthornprod/videos)
+* [Muddy Wolf](https://www.youtube.com/c/MuddyWolf/videos)
+* [Code Monkey](https://www.youtube.com/c/CodeMonkeyUnity/videos)
+* [Lost Relic Games](https://www.youtube.com/c/LostRelicGames/videos)
+* [Highfly](https://www.youtube.com/channel/UCFEbYRZrkvEfCAecEf0SPXg)
+* [Charger Games](https://www.youtube.com/c/ChargerGames/playlists)
+* [Pandemonium Games](https://www.youtube.com/c/PandemoniumGamesDev/videos)
+* [Coding in Flow](https://www.youtube.com/c/CodinginFlow/playlists)
+* [Mister Taft Creates](https://www.youtube.com/c/MisterTaftCreates/playlists)
+* [TUTO UNITY FR](https://www.youtube.com/c/TUTOUNITYFR/playlists) (French)
+* [Allen Devs](https://www.youtube.com/channel/UC_7mufS5kVUUk0M7y-NPUIQ/playlists)
+* [NotSlot](https://www.youtube.com/channel/UCgK_vbcG3YxzAMB4GOffb7w)
