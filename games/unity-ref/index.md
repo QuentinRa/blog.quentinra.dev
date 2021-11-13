@@ -21,12 +21,14 @@ Note that this ranking is made relatively to other entries talking about the sam
 
 ## Table
 
-|  | C# | UI | Input | Collision | Camera | Light |
-|----------------------------------|---|---|---|---|---|---|
+|  | C# | UI | Input | Collision | Camera | Light | Physics |
+|----------------------------------|---|---|---|---|---|---|---|
 | <br> |
 | [Player Movement](https://www.youtube.com/watch?v=Uv5tfMSKlnU) 📚 | ✅ | | ✅ | 👀 | ✅ P |
 | <br> |
 |[Learn C# with these 9 LINES OF CODE](https://www.youtube.com/watch?v=aB9LJ9oHGOs&ab_channel=Blackthornprod)| ✅ | | 👀 | 👀 |
+| <br> |
+| [First 3D game](https://www.youtube.com/watch?v=pCBqgREiSUE) ✅ | 👀 | | 👀 | 👀 | ✅ P |  | 👀 |
 | <br> |
 | [Sprite Shadows And Lighting](https://www.youtube.com/watch?v=flu2PNRUAso) | | | | | | 🚀 |
 | [Basic Lighting 2D!](https://www.youtube.com/watch?v=6Q0FnPy9Orc&ab_channel=TopsideStudios) | | | | | | URP |

@@ -5,6 +5,9 @@ Channels
 => https://www.youtube.com/c/AtmosGames/videos
 => https://www.youtube.com/playlist?list=PL42m9XiTqPHJdJuVXO6Vf5ta5D07peiVx (playlist about ART) and https://www.youtube.com/playlist?list=PL42m9XiTqPHIJbQZgzDhCyXtMOKNMrRno
 
+Blogs
+=> https://github.com/Kavex/GameDev-Resources#tutorials
+
 Animations
 => https://www.youtube.com/watch?v=7jzC4a9Nzes&ab_channel=EngiGames
 => https://www.youtube.com/watch?v=9H0aJhKSlEQ (watched, 1, mixamo)

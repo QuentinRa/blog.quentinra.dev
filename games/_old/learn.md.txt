@@ -5,7 +5,22 @@ Object pooling => List register/unregister entries inside => function to use "en
 
 Enable post-processing in the scene bar
 
+Assets store from the project
+
+Documentation shortcut
+
+SearchBar => full name of the component or a game object
+
+You can use calculations in the editor, they are evaluated
+
+Icons=>scene see icons
+
+Change editor color in play mode to not forget?
+
+Lightning => auto generate => disable if level goes darker
+
 https://github.com/UnityCommunity/UnityLibrary
+https://unitylist.com/
 -----------------------------------------------------------------
 ------------------------- Game Objects
 -----------------------------------------------------------------
