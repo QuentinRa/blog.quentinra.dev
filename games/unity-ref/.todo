@@ -1,14 +1,67 @@
+========================================
+====================== TUTORIALS
+========================================
+
+=> https://www.raywenderlich.com/7630142-entity-component-system-for-unity-getting-started
+=> https://github.com/Unity-Technologies/EntityComponentSystemSamples
+
+=> Pathways
+	=> https://learn.unity.com/pathway/unity-essentials?language=en
+	=> <https://learn.unity.com/pathway/junior-programmer?language=en
+	=> https://learn.unity.com/search?k=%5B%22ind%3A5816ce9a32b30600171bef5a%22%2C%22sl%3Abeginner%22%2C%22sl%3Aintermediate%22%5D&ob=starts
+
+=> https://pixelnest.io/tutorials/
+=> https://careerkarma.com/blog/make-a-game-in-unity/
+
+https://web4.ensiie.fr/~bouyer/index.html#teaching
+
+https://www.youtube.com/watch?v=jjUsSL4T3ig (Unity VS Unreal)
+
+========================================
+====================== TOOLS
+========================================
+
+=> https://github.com/devdogio/
+=> https://github.com/Zesix/Impulse
+=> https://github.com/vis2k/Mirror
+
+========================================
+====================== CONCEPTS
+========================================
+
 Animations
-=> https://www.youtube.com/watch?v=7jzC4a9Nzes&ab_channel=EngiGames
+=> https://www.youtube.com/watch?v=7jzC4a9Nzes
+=> https://www.youtube.com/watch?v=Ll3yujn9GVQ
+=> https://www.youtube.com/watch?v=76Lh0UApjNI&ab_channel=UGuruz (mixamo)
+
+Combat
+=> https://www.youtube.com/watch?v=e2PRI19Igbo
+
+Minimap
+=> https://www.youtube.com/watch?v=v5GGXm791-M
 
 Multiplayer
 => https://www.youtube.com/watch?v=nmPukdOsYQA
 => https://www.youtube.com/watch?v=93SkbMpWCGo
-=> https://www.youtube.com/watch?v=Nt9QfRrm30c&ab_channel=Blackthornprod
-=> https://www.youtube.com/watch?v=DQWYMfZyMNU&ab_channel=CocoCode
+=> https://www.youtube.com/watch?v=Nt9QfRrm30c
+=> https://www.youtube.com/watch?v=DQWYMfZyMNU
 
-Combat
-=> https://www.youtube.com/watch?v=e2PRI19Igbo
+UI
+=> https://www.youtube.com/watch?v=oDT8-7c0Ezg (Canvases And Anchors)
+=> https://www.youtube.com/watch?v=zbUVWnq9j20 (scroll list)
+=> https://www.youtube.com/watch?v=cjfNgra1uWk (blur)
+=> https://www.youtube.com/watch?v=MH8a1G93mW8 (popup manager?)
+=> https://www.youtube.com/watch?v=wT7Oh1pZElk (grid)
+=> https://www.youtube.com/watch?v=_Nw2LjEeU8c (inventory)
+=> https://www.youtube.com/watch?v=XZ4A1H82F7Q (toggle)
+=> https://www.youtube.com/watch?v=hiRdux33UCs (effects)
+=> https://www.youtube.com/watch?v=NiveHx8wsUg (transitions)
+=> https://www.youtube.com/watch?v=CGsEJToeXmA (grid)
+=> https://www.youtube.com/watch?v=cW-E4WEogzE (round buttons)
+
+========================================
+====================== KIND OF GAMES
+========================================
 
 Base-Building / Simulation
 => https://github.com/Fy-/FyWorld
@@ -19,5 +72,8 @@ Tetris
 Runner
 => https://www.instructables.com/Make-A-2D-Infinite-Runner-with-Unity/
 
-UI
-=> https://www.youtube.com/watch?v=oDT8-7c0Ezg (Canvases And Anchors)
+Hex Game
+=> https://www.youtube.com/playlist?list=PLnn2bgFFpnzYDn9bW5QAIqSsFZXU7-mcB
+
+Minecraft
+=> https://www.youtube.com/playlist?list=PLOkGH8jdwMJTjyqCb6kNHeMH8u0a8N30l
