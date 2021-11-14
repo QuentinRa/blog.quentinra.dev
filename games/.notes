@@ -11,6 +11,13 @@ Component => weapon (FireWeapon)
 StateMachine => OnStateEnter / OnStateUpdate / OnStateExit
 
 Game resolution
+
+Debug.Log => console + File (slow)
+Debug.Log("<color=red>Warning!</color>");
+Debug.Log($"$(variable)");
+You may use https://docs.unity3d.com/Manual/PlatformDependentCompilation.html
+Profiler to see the performances
+Use your IDE debugger
 -----------------------------------------------------------------
 ------------------------- Game Objects
 -----------------------------------------------------------------
@@ -47,11 +54,20 @@ namespace
 -----------------------------------------------------------------
 Idle => Walking => Shooting
 
+Create animations
+
 Create animator
-=> states
+=> states (create empty state) => or drag and drop animations
 => parameters (idle, ...) => has exit time uncheck?
 => conditions on arrow
+=> click on a transition and in settings prevent them from overlapping
 => you can attach scripts to states, if they extends StateMachineBehaviour
+=> you can add animation events => call to a function
+
+Drag and drop to player/add animation
+
+Window => Animation => Animation
+=> add property => rotation ("animate rotation")
 
 Animator.SetTrigger("name") SetInteger(value)
 -----------------------------------------------------------------
