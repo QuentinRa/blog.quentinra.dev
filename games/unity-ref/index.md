@@ -74,7 +74,7 @@ Note that this ranking is made relatively to other entries talking about the sam
 <details>
 <summary>Multiplayer</summary>
 
-* [Dapper Dino - Multiplayer](https://www.youtube.com/watch?v=4Mf81GdEDU8&list=PLS6sInD7ThM2_N9a1kN2oM4zZ-U-NtT2E) and [Dapper Dino - Networking](https://www.youtube.com/watch?v=IarnBHjnX6k&list=PLS6sInD7ThM3RfYZgUn8CYMWO8KCLh6xA)
+* [Dapper Dino - Multiplayer](https://www.youtube.com/watch?v=4Mf81GdEDU8&list=PLS6sInD7ThM2_N9a1kN2oM4zZ-U-NtT2E) and [Dapper Dino - Networking](https://www.youtube.com/watch?v=IarnBHjnX6k&list=PLS6sInD7ThM3RfYZgUn8CYMWO8KCLh6xA) and [Dapper Dino - Rankings](https://www.youtube.com/watch?v=ZtRITJWzZeg&list=PLS6sInD7ThM1SCqYmiM4NQTJkOHacz2gT&ab_channel=DapperDino)
 </details>
 
 <details>

@@ -10,9 +10,13 @@ Component => weapon (FireWeapon)
 
 StateMachine => OnStateEnter / OnStateUpdate / OnStateExit
 
+Game resolution
 -----------------------------------------------------------------
 ------------------------- Game Objects
 -----------------------------------------------------------------
+Scriptable objects => data about something => non runtime data = static data = fixed values
+=> you can references them in any scene
+=> CreateAssetMenu => ScriptableObject
 -----------------------------------------------------------------
 ------------------------- Scenes
 -----------------------------------------------------------------
@@ -28,9 +32,13 @@ StateMachine => OnStateEnter / OnStateUpdate / OnStateExit
 -----------------------------------------------------------------
 ------------------------- Components
 -----------------------------------------------------------------
+TextMeshPro to write text as a game object.
 -----------------------------------------------------------------
 ------------------------- Scripts
 -----------------------------------------------------------------
+var
+private type Attribute => attr;
+namespace
 -----------------------------------------------------------------
 ------------------------- Materials
 -----------------------------------------------------------------
