@@ -98,6 +98,18 @@ Go to **Edit, Then Preferences**.
 
 <hr class="sr">
 
+## Asset Store
+
+This is one of the place that you may use to look for assets. The [Asset Store](https://assetstore.unity.com/) need you to log in to your unity account to import an asset in the editor. Fortunately, if Unity is open, you can do **Window > Asset store** which will open the asset store your browser and log you.
+
+Once you added an asset to your list of assets, in Unity, you can find your assets in **Window > Package manager**. **Right next to the "+", you can set packages to**
+
+* **My assets** (you can download and import your assets here)
+* **Unity Registry** (verified plugins)
+* **In Project** (you can update/remove your packages here)
+
+<hr class="sl">
+
 ## Build game
 
 It's release time 🚀? When you picked your unity version, you picked the platforms that you can target. If you didn't, you can go inside the unity hub, then "install", right-click on your unity, and add modules.
