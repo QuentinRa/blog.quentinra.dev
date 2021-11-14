@@ -20,11 +20,6 @@ Lightning => auto generate => disable if level goes darker
 -----------------------------------------------------------------
 ------------------------- Components
 -----------------------------------------------------------------
-Collider => edit => CTRL-click to remove
-
-Distance Joint
-
-===========
 particles system
 => material
 => emission => rate over time 0 (once?) => turn => add entry
