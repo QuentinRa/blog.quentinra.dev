@@ -2,6 +2,14 @@
 ------------------------- Unity
 -----------------------------------------------------------------
 Lightning => auto generate => disable if level goes darker
+
+"Naming"
+Managers => enemy manager (TargetExists, GetNearestTarget, SetRandomDestination)
+System => projectile system
+Component => weapon (FireWeapon)
+
+StateMachine => OnStateEnter / OnStateUpdate / OnStateExit
+
 -----------------------------------------------------------------
 ------------------------- Game Objects
 -----------------------------------------------------------------
@@ -29,6 +37,15 @@ Lightning => auto generate => disable if level goes darker
 -----------------------------------------------------------------
 ------------------------- Animations
 -----------------------------------------------------------------
+Idle => Walking => Shooting
+
+Create animator
+=> states
+=> parameters (idle, ...) => has exit time uncheck?
+=> conditions on arrow
+=> you can attach scripts to states, if they extends StateMachineBehaviour
+
+Animator.SetTrigger("name") SetInteger(value)
 -----------------------------------------------------------------
 ------------------------- LIGHT and SHADOWS
 -----------------------------------------------------------------

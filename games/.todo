@@ -20,6 +20,8 @@ Object pooling => List register/unregister entries inside => function to use "en
 => https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/performance-recommendations-for-unity
 => https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/contributing/coding-guidelines?view=mrtkunity-2021-05
 
+=> https://danielilett.com/2019-08-05-unity-tips-1-garbage-collection/
+
 Assembly Definition Files (ADF)
 => one DDL per script
 => (default without ADF): everything recompiled on every changes

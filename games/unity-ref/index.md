@@ -49,22 +49,17 @@ Note that this ranking is made relatively to other entries talking about the sam
 ## Covering one topic
 
 <details>
-<summary>UI</summary>
-
-|  | C# | UI | Input | Collision | Camera | Light | Physics | Prefabs | Animations |
-|----------------------------------|---|---|---|---|---|---|---|---|---|
-| [Main Menu](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode) | | 🚀 | | | | |
-| [Best Practices for Menus](https://www.youtube.com/watch?v=vmKxLibGrMo) | 👀 | 🚀 | | | | |
-| [UI That Looks Good](https://www.youtube.com/watch?v=HwdweCX5aMI&ab_channel=GameDevGuide) | | 📚 | | | | |
-| [Master buttons](https://www.youtube.com/watch?v=cW-E4WEogzE&ab_channel=CocoCode) | | 🚀 | | | | |
-</details>
-
-<details>
 <summary>Animations</summary>
 
 |  | C# | UI | Input | Collision | Camera | Light | Physics | Prefabs | Animations |
 |----------------------------------|---|---|---|---|---|---|---|---|---|
 | [Animations - mixamo](https://www.youtube.com/watch?v=9H0aJhKSlEQ) |  |  | |  |  |  |  | | ✅ |
+</details>
+
+<details>
+<summary>AI</summary>
+
+* [EngiGames](https://www.youtube.com/channel/UCbAsfBmEHQpPERAVx8DHxZA) (Open world IA, State machine, Some knowledge)
 </details>
 
 <details>
@@ -74,6 +69,23 @@ Note that this ranking is made relatively to other entries talking about the sam
 |----------------------------------|---|---|---|---|---|---|---|---|---|
 | [Sprite Shadows And Lighting](https://www.youtube.com/watch?v=flu2PNRUAso) | | | | | | 🚀 |
 | [Basic Lighting 2D!](https://www.youtube.com/watch?v=6Q0FnPy9Orc&ab_channel=TopsideStudios) | | | | | | URP |
+</details>
+
+<details>
+<summary>Multiplayer</summary>
+
+* [Dapper Dino - Multiplayer](https://www.youtube.com/watch?v=4Mf81GdEDU8&list=PLS6sInD7ThM2_N9a1kN2oM4zZ-U-NtT2E) and [Dapper Dino - Networking](https://www.youtube.com/watch?v=IarnBHjnX6k&list=PLS6sInD7ThM3RfYZgUn8CYMWO8KCLh6xA)
+</details>
+
+<details>
+<summary>UI</summary>
+
+|  | C# | UI | Input | Collision | Camera | Light | Physics | Prefabs | Animations |
+|----------------------------------|---|---|---|---|---|---|---|---|---|
+| [Main Menu](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode) | | 🚀 | | | | |
+| [Best Practices for Menus](https://www.youtube.com/watch?v=vmKxLibGrMo) | 👀 | 🚀 | | | | |
+| [UI That Looks Good](https://www.youtube.com/watch?v=HwdweCX5aMI&ab_channel=GameDevGuide) | | 📚 | | | | |
+| [Master buttons](https://www.youtube.com/watch?v=cW-E4WEogzE&ab_channel=CocoCode) | | 🚀 | | | | |
 </details>
 
 <hr class="sl">
@@ -98,8 +110,6 @@ Websites
 
 > **Note**: I have yet to explore every of these. This list will be filtered/sorted soon.
 
-* [Dapper Dino](https://www.youtube.com/c/DapperDinoCodingTutorials/videos) (😖)
-* [EngiGames](https://www.youtube.com/channel/UCbAsfBmEHQpPERAVx8DHxZA/videos) (🚀, 😖)
 * [Jimmy Vegas](https://www.youtube.com/c/JimmyVegasUnity/playlists) (😖)
 * [Thomas Brush](https://www.youtube.com/c/AtmosGames/videos)
 * RiotGames - Art
