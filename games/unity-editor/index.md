@@ -86,7 +86,7 @@ SceneManager.LoadScene("SceneName");
 If you got things that you don't want to lose between scenes
 
 * you may create `static variables`. Instances are destroyed, but static variables aren't reset.
-* you may create a singleton, if you don't want to instance an object twice (check [DontDestroyOnLoad](https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html), or [Unity Singleton](https://blog.mzikmund.com/2019/01/a-modern-singleton-in-unity/), while [DontDestroyOnLoad+Singleton](https://gist.github.com/mstevenson/4325117))
+* you may create a singleton, if you don't want to instance an object twice (check [DontDestroyOnLoad](https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html), or [Unity Singleton](https://blog.mzikmund.com/2019/01/a-modern-singleton-in-unity/), or [DontDestroyOnLoad+Singleton](https://gist.github.com/mstevenson/4325117))
 
 > **Pro tip?**: it seems that scenes are removed from the build after updating Unity. If you sorted your scenes and used indexes in your code, it may break. Make sure to keep a copy of your scenes indexes.
 
@@ -498,6 +498,7 @@ Note that I'm using Vector3 a lot, but a lot of functions are in Vector2 too.</t
 Vector3.back, Vector3.down, Vector3.up, ...
 someVector.normalized; // magnitude=1, just a direction
 Vector3.MoveTowards(current, target, maxDistancePerStep);
+Vector3.Reflex(inDirection, inNormal) // sort of mirror, bounce
 if (Vector3.Distance(a, b) <= 0.0001f) {} // a near b?
 ```
 </td>
@@ -757,6 +758,8 @@ Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
 
 **Coroutines** are functions with multiples returns. Each time the function is called, the code will be executed until the next return. **This is quite used when you need to do a job after X seconds, or when a condition is true, etc.**.
 
+If you only need to call a method in x seconds, and there is no optional parameter delay (ex: we got one for Destroy...), you may use `Invoke(methodName, delay);`.
+
 Inside such function, you can call
 
 * `yield return null`: tell unity to wait one frame and call again the coroutine
@@ -791,4 +794,30 @@ StartCoroutine(c);
 StopCoroutine(c);
 StopAllCoroutines();
 ```
+</details>
+
+<details class="details-e">
+<summary>Save/Load</summary>
+
+You may save the preferences of the player using [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html), that are working like Preferences in Java.
+</details>
+
+<details class="details-e">
+<summary>Particles</summary>
+
+You can make an object emit particles by adding it the "particle system" component. By default, they are purple, but that's because there is no material
+
+* **Renderer > Material**: material for the particles (see Unity3D course)
+* **Emission**
+  * you can set the number of particles per second
+  * you can add burst of particles
+* **Shape**: you can change the shape of the effect
+* **Trails**: you can give a trail to your particles
+* **Color over lifetime**: you can make your particles change color over time
+</details>
+
+<details class="details-e">
+<summary>Audio</summary>
+
+You can make a game object emit sound by adding an Audio Source component on it. You may only hear it in **Game mode** (by pressing play).
 </details>
