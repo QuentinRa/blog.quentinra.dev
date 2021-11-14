@@ -90,6 +90,7 @@ Websites
 * [Editor Attributes (GitHub)](https://github.com/teebarjunk/Unity-Built-In-Attributes/) (🚀)
 * [Editor Attributes (Unity3d.College)](https://unity3d.college/2017/05/22/unity-attributes/) (👀)
 * [Unity tips](https://learn.unity.com/tutorial/unity-tips) (🚀)
+* [Unity GIT](https://thoughtbot.com/blog/how-to-git-with-unity) (👀)
 
 <hr class="sr">
 

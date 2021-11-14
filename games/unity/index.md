@@ -59,12 +59,12 @@ Once the installation is complete, you need to add+commit your files (=save). Yo
 
 * you do not need to git `Library`, `Temp`, `Logs`, and `Packages` (that's why they are in your gitignore)
 * do not call a folder `Resources` (that's for dynamic resources)
-* do not commit psd, blend, 3ds, etc. files (sources)
+* do not commit psd, blend, 3ds, etc. files (sources). Artists are usually using another tool (ex: Dropbox)
 * reduce the resolution of your textures (relatively to their size in game)
 * compress images
 </details>
 
-> Teams should use [Unity Teams](https://unity.com/products/unity-teams).
+> **Pro tip**: Teams should use [Unity Teams](https://unity.com/products/unity-teams).
 
 <hr class="sr">
 
@@ -83,6 +83,9 @@ Personally, I'm using [**Rider**](https://www.jetbrains.com/rider/) ([features](
 * Double-click on the path > copy the path
 * Then in Unity, select browser, and paste the path
 * Then select "rider64" and you are good to go
+
+> **Sources**: [Rider in Unity](https://blog.jetbrains.com/dotnet/2017/08/30/getting-started-rider-unity/) (2017)<br>
+> **Sources**: [Rider in Unity](https://blog.jetbrains.com/dotnet/2018/10/03/integrating-rider-2018-2-unity-editor/) (2018)
 
 <hr class="sl">
 
