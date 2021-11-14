@@ -294,6 +294,7 @@ You can use these methods to get a component, either applied on our game object,
 Rigidbody r = GetComponent<Rigidbody>(); // same as gameObject.GetComponent<Rigidbody>() ...
 r = GetComponentInChildren<Rigidbody>();
 r = GetComponentInParent<Rigidbody>();
+r = FindObjectOfType<Rigidbody>();
 
 // disable a component (ex: the renderer to "hide" something)
 // assert that we got a Renderer first!
@@ -307,14 +308,17 @@ First, Rigidbody is for 3D games, and you have Rigidbody2D for 2D games. A game 
 
 1. `is kinematics: true`: no forces (including gravity) applied on this game object (ex: a wall).
 2. `use gravity: false`: still apply forces, but no gravity.
-3. **Constraints**
+3. **Notes**
+   * lower mass = pushed back by others
+   * increasing drag = slow down the velocity (speed)
+4. **Constraints**
    * you can freeze the Rotation (ex: x, y, z = no rotation)
    * you can freeze the position (ex: z in 2D)
-4. **Interpolate**: turn it on for the player's character ([source](https://docs.unity3d.com/ScriptReference/Rigidbody-interpolation.html))
-5. **Settings** (Edit > Project Settings > Physics)
+5. **Interpolate**: turn it on for the player's character ([source](https://docs.unity3d.com/ScriptReference/Rigidbody-interpolation.html)), it makes collision smoother <small>(but a collision between two interpolated objects may produce the reverse result)</small>
+6. **Settings** (Edit > Project Settings > Physics)
    * You can change the gravity
    * You got a Layer Collision Matrix, explained in Collider
-6. **Some code**
+7. **Some code**
 
 **Pro tip**: updating physics must be done in the method `FixedUpdate` <small>(running at 50 FPS, even if the game is running at 20 FPS)</small> instead of `Update`. In `Update`, you will process input (calls to Input.Something), and in `FixedUpdate`, you will ONLY update the force, you won't call Input.Something (use attributes to remember what key/... were pressed).
 
@@ -323,6 +327,8 @@ First, Rigidbody is for 3D games, and you have Rigidbody2D for 2D games. A game 
 rb.AddForce(Vector3.left); // move to the left
 rb.AddForce(Vector3.left * speed);
 rb.AddForce(Vector3.left * speed, ForceMode.A_MODE_HERE);
+rb.MovePosition(position);
+rb.AddExplosionForce(power, explosionPos, radius, 3.0F);
 ```
 </details>
 
@@ -674,6 +680,23 @@ You could create multiples canvas, and turn them on/off. I heard that Unity is a
 * Add a component "XXXElement" (your script) on each menu (you may use "Empty Game objects", and put your stuff inside)
 
 Then, in the manager, you are using `GetComponentsInChildren<XXXElement>`. As each component go a field "gameObject" for the associated game object, you got your menus too from their components. You may add a method in **XXXElement** returning the kind of menu (use an enum) to do specific stuff according to the kind of menu.
+</details>
+
+<details class="details-e">
+<summary>UI Events</summary>
+
+You can add a listener <small>(a method that will be called when an event is triggered)</small>
+
+* in the code
+
+```cs
+GetComponent<Button>().onClick.AddListener(() => {});
+GetComponent<Button>().onClick.AddListener(MyMethod);
+```
+
+* in the editor
+
+You need to add an entry inside "On Click" (ex: Button > On Click). Select "Runtime Only" and drag and drop a component having the script in which you got the method you want to call. Then select the method in "No Function".
 </details>
 
 > **Pro tip**: As you can watch is [this video, there is a new way to create interface, called UI Builder](https://www.youtube.com/watch?v=NQYHIH0BJbs&ab_channel=CocoCode). It's not available yet.

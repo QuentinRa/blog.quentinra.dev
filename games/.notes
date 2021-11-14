@@ -14,8 +14,6 @@ Lightning => auto generate => disable if level goes darker
 -----------------------------------------------------------------
 ------------------------- Input
 -----------------------------------------------------------------
-GetComponent<Button>().onClick.AddListener(() => {});
-GetComponent<Button>().onClick.AddListener(MyMethod);
 -----------------------------------------------------------------
 ------------------------- Camera
 -----------------------------------------------------------------
@@ -24,14 +22,7 @@ GetComponent<Button>().onClick.AddListener(MyMethod);
 -----------------------------------------------------------------
 Collider => edit => CTRL-click to remove
 
-Rigidbody
-=> lower mass=pushed back
-=> drag => slow down
-=> MovePosition
-
 Distance Joint
-
-FindObjectOfType
 
 ===========
 particles system
