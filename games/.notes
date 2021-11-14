@@ -26,6 +26,8 @@ Scriptable objects => data about something => non runtime data = static data = f
 => you can references them in any scene
 => CreateAssetMenu => ScriptableObject
 
+Resources => Items => Consumables
+
 transform.GetSiblingIndex (hierarchy)
 -----------------------------------------------------------------
 ------------------------- Scenes
@@ -46,12 +48,11 @@ TextMeshPro to write text as a game object.
 -----------------------------------------------------------------
 ------------------------- Scripts
 -----------------------------------------------------------------
-var
-private type Attribute => attr;
-namespace
+OnEnable
 -----------------------------------------------------------------
 ------------------------- Materials
 -----------------------------------------------------------------
+smooth 0
 -----------------------------------------------------------------
 ------------------------- Animations
 -----------------------------------------------------------------
@@ -109,10 +110,17 @@ Inventory
 => AddItem(slot) => add in stack (whole or a part),
 => RemoveItem(slot) => remove the quantity given if you slot. If empty then destroy. Reduce given slot quantity. Check others slots.
 => RemoteAt(index)
+=> GetSlotByIndex(index)
 
 Slot
 => item
 => quantity
 
-Item
+AbstractItem
+=> name
+=> icon
+=> sell price
 => maxStack
+
+ConsumableItem : AbstractItem
+=> useText

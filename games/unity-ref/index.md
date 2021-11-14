@@ -65,6 +65,12 @@ Note that this ranking is made relatively to other entries talking about the sam
 </details>
 
 <details  class="details-s">
+<summary>Inventory</summary>
+
+* [Item System Unity](https://www.youtube.com/playlist?list=PLS6sInD7ThM2W9qpLv8VcD3gOiGJcr0lw) (📚, core concepts, UI and code, 4/9 video watched)
+</details>
+
+<details  class="details-s">
 <summary>Lightning</summary>
 
 * [Sprite Shadows And Lighting](https://www.youtube.com/watch?v=flu2PNRUAso) (🚀)
@@ -74,13 +80,16 @@ Note that this ranking is made relatively to other entries talking about the sam
 <details class="details-s">
 <summary>Multiplayer</summary>
 
-* [Dapper Dino - Multiplayer](https://www.youtube.com/watch?v=4Mf81GdEDU8&list=PLS6sInD7ThM2_N9a1kN2oM4zZ-U-NtT2E) and [Dapper Dino - Networking](https://www.youtube.com/watch?v=IarnBHjnX6k&list=PLS6sInD7ThM3RfYZgUn8CYMWO8KCLh6xA) and [Dapper Dino - Rankings](https://www.youtube.com/watch?v=ZtRITJWzZeg&list=PLS6sInD7ThM1SCqYmiM4NQTJkOHacz2gT&ab_channel=DapperDino)
+* [Multiplayer](https://www.youtube.com/watch?v=4Mf81GdEDU8&list=PLS6sInD7ThM2_N9a1kN2oM4zZ-U-NtT2E) (😖)
+* [Networking](https://www.youtube.com/watch?v=IarnBHjnX6k&list=PLS6sInD7ThM3RfYZgUn8CYMWO8KCLh6xA) (😖)
+* [Rankings](https://www.youtube.com/watch?v=ZtRITJWzZeg&list=PLS6sInD7ThM1SCqYmiM4NQTJkOHacz2gT&ab_channel=DapperDino) (😖)
 </details>
 
 <details class="details-s">
 <summary>UI</summary>
 
-* [Main Menu](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode) (🚀) and [Best Practices for Menus](https://www.youtube.com/watch?v=vmKxLibGrMo) (🚀)
+* [Main Menu](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode) (🚀)
+* [Best Practices for Menus](https://www.youtube.com/watch?v=vmKxLibGrMo) (🚀)
 * [UI That Looks Good](https://www.youtube.com/watch?v=HwdweCX5aMI&ab_channel=GameDevGuide) (📚)
 * [Master buttons](https://www.youtube.com/watch?v=cW-E4WEogzE&ab_channel=CocoCode) (🚀)
 </details>
