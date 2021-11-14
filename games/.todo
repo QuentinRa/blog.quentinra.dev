@@ -1,30 +1,56 @@
-========================================
-====================== TUTORIALS
-========================================
-
-=> https://www.raywenderlich.com/7630142-entity-component-system-for-unity-getting-started
-=> https://github.com/Unity-Technologies/EntityComponentSystemSamples
-
+ALL
+=> https://unity3d.college/
+=> https://riptutorial.com/unity3d
 => Pathways
 	=> https://learn.unity.com/pathway/unity-essentials?language=en
-	=> <https://learn.unity.com/pathway/junior-programmer?language=en
+	=> https://learn.unity.com/pathway/junior-programmer?language=en
 	=> https://learn.unity.com/search?k=%5B%22ind%3A5816ce9a32b30600171bef5a%22%2C%22sl%3Abeginner%22%2C%22sl%3Aintermediate%22%5D&ob=starts
-
 => https://pixelnest.io/tutorials/
 => https://careerkarma.com/blog/make-a-game-in-unity/
+=> https://web4.ensiie.fr/~bouyer/index.html#teaching
 
-https://web4.ensiie.fr/~bouyer/index.html#teaching
+========================================
+====================== TO DO
+========================================
 
-https://www.youtube.com/watch?v=jjUsSL4T3ig (Unity VS Unreal)
+=> https://docs.unity3d.com/Manual/PostProcessingOverview.html
+
+=> https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/performance-recommendations-for-unity
+=> https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/contributing/coding-guidelines?view=mrtkunity-2021-05
+
+Assembly Definition Files (ADF)
+=> one DDL per script
+=> (default without ADF): everything recompiled on every changes
+
+Hierarchies
+=> changes are tracked per hierarchy
+=> multi-thread
+
+Cheat function
+=> speed-up development
+=> use that function before a function [Condition(DEVELOPMENT_BUILD || UNITY_EDITOR)] (ignore in production build)
+=> wrap code in this (aside from functions) #if DEVELOPMENT_BUILD || UNITY_EDITOR #endif
+
+Test Scenes
+=> test a single feature
+=> check new features didn't broke old features
+
+========================================
+====================== C#
+========================================
+
+=> var
 
 ========================================
 ====================== TOOLS
 ========================================
 
+=> https://github.com/michidk/Unity-Script-Collection
 => https://github.com/devdogio/
 => https://github.com/Zesix/Impulse
 => https://github.com/vis2k/Mirror
 => https://www.resemble.ai/
+=> https://github.com/febucci/unitypackage-custom-hierarchy / https://www.youtube.com/watch?v=Gma7IXPj4wI&ab_channel=CocoCode
 
 ========================================
 ====================== CONCEPTS

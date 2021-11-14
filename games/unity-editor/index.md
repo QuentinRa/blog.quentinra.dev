@@ -631,6 +631,8 @@ private void OnMouseExit() {}
 ```
 </details>
 
+> **Pro tip**: there is a new input system, that is event based. You should [read the documentation](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.2/manual/index.html). Available in Unity 2019.4+ in version 1.0. You may use the version 1.2 which is still compatible with 2019.4+.
+
 <hr class="sl">
 
 ## User Interface (UI)
