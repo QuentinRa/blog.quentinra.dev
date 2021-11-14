@@ -16,7 +16,7 @@ I'm starting to stack my references/sources for Unity here. This is almost only 
   * P = Platformer
   * URP = Universal Render Pipeline
 
-Note that this ranking is made relatively to other entries talking about the same topics. For the topics
+Note that this ranking is made relative to other entries talking about the same topics. For the topics
 
 * **C#**: class, methods, variables, attributes
 * **UI**: canvas, menus, scenes, build game
@@ -24,7 +24,7 @@ Note that this ranking is made relatively to other entries talking about the sam
 * **Collision**: Colliders, Layers, Tags, Settings
 * **Camera**: cinematic
 * **Light/Effects**
-  * **Light**: kind of lights, realtime/mixed/baked
+  * **Light**: kind of lights, real-time/mixed/baked
   * **Effects**: Particles, trails
 * **Physics**: FixedUpdate, RigidBody, Gravity/Kinetic/Settings
 * **Prefabs**: what is it, create one, prefab mode, overrides

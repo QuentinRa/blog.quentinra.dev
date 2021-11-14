@@ -122,7 +122,7 @@ Resulting in
 <details class="details-e">
 <summary>Tooltips 😎</summary>
 
-Maybe, the name of your attribute isn't providing enough information for the user to know what should be in this field. You should always add a **Tooltips**, shown when the user is hovering (=mouse stay over) the field.
+Maybe, the name of your attribute isn't providing enough information for the user to know what should be in this field. You should always add a **Tooltip**, shown when the user is hovering (=mouse stay over) the field.
 
 ```cs
 [Tooltip("Some description blah blah blah")]
