@@ -40,6 +40,8 @@ Scene references => removed after moving up.
 -----------------------------------------------------------------
 ------------------------- Input
 -----------------------------------------------------------------
+https://www.youtube.com/watch?v=YHC-6I_LSos&ab_channel=OneWheelStudio
+
 GetComponent<Button>().onClick.AddListener(() => {});
 GetComponent<Button>().onClick.AddListener(MyMethod);
 -----------------------------------------------------------------
@@ -88,6 +90,8 @@ PlayerPrefs
 ------------------------- Materials
 -----------------------------------------------------------------
 emission
+
+Character skeleton "rig"
 -----------------------------------------------------------------
 ------------------------- Animations
 -----------------------------------------------------------------
@@ -139,6 +143,9 @@ Torch
 https://www.youtube.com/watch?v=Gx9gZ9cfrys (animations 🚀)
 https://www.youtube.com/watch?v=G_uBFM3YUF4 (animations 🚀)
 
+https://www.youtube.com/channel/UCgfNMPfENM8cX29t3PHVA3A/videos ??? (to watch)
+https://www.youtube.com/watch?v=w6lc8svzBms&ab_channel=CGAURA ??? (to watch)
+
 Packages: Cinemachine, LeanTween (+TMPro, Timeline)
 
 => Add cinemachine brain to our camera
@@ -173,3 +180,8 @@ You can create a track group (left column) and group tracks
 
 Activation track
 => enable/disable something
+
+Multi-aim constraint
+=> head => aim at a target
+=> https://www.youtube.com/watch?v=Htl7ysv10Qs
+=> https://www.youtube.com/watch?v=hs2goLjUz4U&ab_channel=Unity

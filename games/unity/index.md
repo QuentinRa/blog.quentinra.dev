@@ -54,6 +54,18 @@ Unity projects are **made of a lot of files**, including **big files too**, so y
 
 Once the installation is complete, you need to add+commit your files (=save). You can push your saves on the server (=push), or pull the saves on the server (=pull). Check the GIT course if needed.
 
+<details class="details-e">
+<summary>Things that may be worth remembering</summary>
+
+* you do not need to git `Library`, `Temp`, `Logs`, and `Packages` (that's why they are in your gitignore)
+* do not call a folder `Resources` (that's for dynamic resources)
+* do not commit psd, blend, 3ds, etc. files (sources)
+* reduce the resolution of your textures (relatively to their size in game)
+* compress images
+</details>
+
+> Teams should use [Unity Teams](https://unity.com/products/unity-teams).
+
 <hr class="sr">
 
 ## Pick your IDE

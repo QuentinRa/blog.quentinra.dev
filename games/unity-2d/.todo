@@ -4,6 +4,9 @@ https://blog.unity.com/technology/a-lightning-round-of-great-tips-for-2d-games
 ------------------------- Game Objects
 -----------------------------------------------------------------
 
+2D GO Rigidbody, base sprite size one meter and one unit.
+For example 32px = 1 meter and 1 unit. (Pixel Per Unit)
+
 Z-axis rendering
 => Hierarchy (last => last rendered)
 => layers

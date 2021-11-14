@@ -5,6 +5,8 @@ https://riptutorial.com/unity3d
 ------------------------- Game Objects
 -----------------------------------------------------------------
 
+3D GO using Rigidbody, one unit = one meter
+
 Z-fighting
 => two items at the same location, overlapping
 => bug when rendering
