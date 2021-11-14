@@ -6,7 +6,7 @@ This is a gathering of notes that I took for different kinds of games, such as t
 
 ## Platformers
 
-> A platformer is a game such as Super Mario Bros, which a player jumping/climbing between platforms, to reach a goal.
+> A platformer is a game such as Super Mario Bros, in which a player is jumping/climbing between platforms, to reach a goal.
 
 We are considering that you are in Unity 3D, without the Z-axis.
 
@@ -24,7 +24,7 @@ We are considering that you are in Unity 3D, without the Z-axis.
 
 ## Breakout
 
-> This game is called `casse-briques` in French. "In Breakout, a layer of bricks lines the top third of the screen and the goal is to destroy them all by repeatedly bouncing a ball off a paddle into them." (Wikipedia)
+> This game is called `casse-briques` in French. "In Breakout, a layer of bricks lines the top third of the screen, and the goal is to destroy them all by repeatedly bouncing a ball off a paddle into them." (Wikipedia)
 
 We are considering that you are in Unity 3D, without the Z-axis.
 
