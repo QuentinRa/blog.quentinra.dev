@@ -2,37 +2,23 @@
 ------------------------- Unity
 -----------------------------------------------------------------
 Lightning => auto generate => disable if level goes darker
-
-Drag and drop scene to add it in the build
-
-Install package => unity registry/...
-
-https://github.com/UnityCommunity/UnityLibrary
-https://unitylist.com/
-https://github.com/cmilr/Unity2D-Components
 -----------------------------------------------------------------
 ------------------------- Game Objects
 -----------------------------------------------------------------
-=> arrow on each game object "go to prefab"
 -----------------------------------------------------------------
 ------------------------- Scenes
 -----------------------------------------------------------------
-Scene references => removed after moving up.
 -----------------------------------------------------------------
 ------------------------- Tile map
 -----------------------------------------------------------------
 -----------------------------------------------------------------
 ------------------------- Input
 -----------------------------------------------------------------
-https://www.youtube.com/watch?v=YHC-6I_LSos&ab_channel=OneWheelStudio
-
 GetComponent<Button>().onClick.AddListener(() => {});
 GetComponent<Button>().onClick.AddListener(MyMethod);
 -----------------------------------------------------------------
 ------------------------- Camera
 -----------------------------------------------------------------
-ScreenToWorldPoint
-Cursor.visible = false;
 -----------------------------------------------------------------
 ------------------------- Components
 -----------------------------------------------------------------

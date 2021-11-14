@@ -136,17 +136,3 @@ Another bunch (😖)
 * [samyam](https://www.youtube.com/c/samyam/playlists)
 * [Jason Weimann](https://www.youtube.com/c/Unity3dCollege/playlists)
 * [UGuruz](https://www.youtube.com/c/UGuruz/playlists)
-
-<hr class="sl">
-
-## TODO
-
-* [Unity Journey of Discovery](https://www.youtube.com/watch?v=8GE2SqTF76U&list=PLnn2bgFFpnzZDjV5AdVd1WDQETMLTIGzw&index=1)
-* [UIElements](https://www.youtube.com/watch?v=CZ39btQ0XlE)
-* [UIElement stick to the player](https://www.youtube.com/watch?v=0bvDmqqMXcA)
-* [LoadingScreen](https://www.youtube.com/watch?v=iXWFTgFNRdM)
-* [Work with multiple scenes](https://www.youtube.com/watch?v=zObWVOv1GlE)
-* [Learn Unity Engine and C# by creating a real top down RPG](https://www.youtube.com/watch?v=b8YUfee_pzc&ab_channel=Epitome) (7 hours)
-* [How to Make a Game](https://www.youtube.com/watch?v=Lu76c85LhGY&ab_channel=JasonWeimann) (2h43)
-* [Unity 3D Lessons](https://www.youtube.com/watch?v=J9HaHHx-GWA&list=PLrswC5B90hKy5gZZX_u8tmnkl3GoOrkcw&index=17&ab_channel=WickedCatStudios)
-* [Unity 5 - From Beginner to Pro](https://www.youtube.com/playlist?list=PLrswC5B90hKyr9SQk9ldmwOsh-jGePFzB)

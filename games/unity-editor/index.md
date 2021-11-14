@@ -73,7 +73,8 @@ In Unity, creating a scene will not be enough to make it a part of your game. Yo
 
 * Open the new scene
 * File > Build Settings
-* Click on "add opened scenes in build" <small>(you may take note of the build index)</small>
+  * Click on "add opened scenes in build" <small>(you may take note of the build index)</small>
+  * Or drag and drop scenes from the project window to the list
 
 Now, you will be able later to switch scenes using this sample of code
 
@@ -86,6 +87,8 @@ If you got things that you don't want to lose between scenes
 
 * you may create `static variables`. Instances are destroyed, but static variables aren't reset.
 * you may create a singleton, if you don't want to instance an object twice (check [DontDestroyOnLoad](https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html), or [Unity Singleton](https://blog.mzikmund.com/2019/01/a-modern-singleton-in-unity/), while [DontDestroyOnLoad+Singleton](https://gist.github.com/mstevenson/4325117))
+
+> **Pro tip?**: it seems that scenes are removed from the build after updating Unity. If you sorted your scenes and used indexes in your code, it may break. Make sure to keep a copy of your scenes indexes.
 
 <hr class="sl">
 
@@ -236,7 +239,9 @@ You may want to create a "**template**" for your Game Objects. For instance, eve
 
 **Edit the prefab**
 
-* Simply **double-click** on the **prefab** inside the **project window**
+* Simply 
+  * **double-click** on the **prefab** inside the **project window**
+  * Or click on the arrow on the line of the prefab instance in the hierarchy
 * It will open a prefab inside the scene window, with its hierarchy window
 * **It will update the values for every instance** (aside from transform, or properties modified by the instance)
 
@@ -735,4 +740,25 @@ Simply click on the camera, you will see a little preview.
 * **Set camera view**
 
 If you like what you are seeing, you can right-click on your camera and click on "Align with view". The "view" is your view of the scene in the editor.
+
+* **Some code**
+
+```cs
+Camera.current // may be null
+Camera.allCameras
+Camera.main // may be null
+
+Camera.main.ViewportToScreenPoint() // ex: mouse position to world position
+Camera.main.ScreenToViewportPoint() // ex: world position to mouse position
+```
+</details>
+
+<details class="details-e">
+<summary>Cursor</summary>
+
+```cs
+Cursor.visible = true;
+Cursor.visible = false;
+Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
+```
 </details>
