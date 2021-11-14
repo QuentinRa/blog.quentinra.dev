@@ -7,6 +7,7 @@ Lightning => auto generate => disable if level goes darker
 Managers => enemy manager (TargetExists, GetNearestTarget, SetRandomDestination)
 System => projectile system
 Component => weapon (FireWeapon)
+Item => InventoryItem (Torch=Weapon?, Key=Consumable?)
 
 StateMachine => OnStateEnter / OnStateUpdate / OnStateExit
 
@@ -24,6 +25,8 @@ Use your IDE debugger
 Scriptable objects => data about something => non runtime data = static data = fixed values
 => you can references them in any scene
 => CreateAssetMenu => ScriptableObject
+
+transform.GetSiblingIndex (hierarchy)
 -----------------------------------------------------------------
 ------------------------- Scenes
 -----------------------------------------------------------------
@@ -97,3 +100,19 @@ Torch
 -----------------------------------------------------------------
 ------------------------- FAQ
 -----------------------------------------------------------------
+
+Inventory
+=> slots (array of fixed size? or a list, check linq)
+=> Swap(index, index) => same index (return), check stack (merge if same item and stack ok)
+=> GetTotalQuantity(item) => check every slot, may be multiples stacks
+=> HasItem(item)
+=> AddItem(slot) => add in stack (whole or a part),
+=> RemoveItem(slot) => remove the quantity given if you slot. If empty then destroy. Reduce given slot quantity. Check others slots.
+=> RemoteAt(index)
+
+Slot
+=> item
+=> quantity
+
+Item
+=> maxStack
