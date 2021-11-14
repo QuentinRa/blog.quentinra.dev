@@ -57,10 +57,10 @@ Once the installation is complete, you need to add+commit your files (=save). Yo
 <details class="details-e">
 <summary>Things that may be worth remembering</summary>
 
-* you do not need to git `Library`, `Temp`, `Logs`, and `Packages` (that's why they are in your gitignore)
+* you do not need to commit `Library`, `Temp`, `Logs`, and `Packages` (that's why they are in your gitignore)
 * do not call a folder `Resources` (that's for dynamic resources)
-* do not commit psd, blend, 3ds, etc. files (sources). Artists are usually using another tool (ex: Dropbox)
-* reduce the resolution of your textures (relatively to their size in game)
+* do not commit PSD, blend, 3ds, etc. files (sources). Artists are usually using another tool (ex: Dropbox)
+* reduce the resolution of your textures (relatively to their size in-game)
 * compress images
 </details>
 
@@ -100,7 +100,7 @@ Go to **Edit, Then Preferences**.
 
 ## Asset Store
 
-This is one of the place that you may use to look for assets. The [Asset Store](https://assetstore.unity.com/) need you to log in to your unity account to import an asset in the editor. Fortunately, if Unity is open, you can do **Window > Asset store** which will open the asset store your browser and log you.
+This is one of the places that you may use to look for assets. The [Asset Store](https://assetstore.unity.com/) needs you to log in to your unity account to import an asset in the editor. Fortunately, if Unity is open, you can do **Window > Asset store**, which will open the asset store in your browser and log you.
 
 Once you added an asset to your list of assets, in Unity, you can find your assets in **Window > Package manager**. **Right next to the "+", you can set packages to**
 
