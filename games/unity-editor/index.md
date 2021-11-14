@@ -492,48 +492,6 @@ if (Vector3.Distance(a, b) <= 0.0001f) {} // a near b?
 </table>
 </details>
 
-<details class="details-e">
-<summary>Coroutines</summary>
-
-**Coroutines** are weirds methods, that have code after the return. Once started, the coroutine will wait until the function returns something. Then, once the function returned something, the code after the return will be executed.
-
-> It's used a lot, when you need to wait before doing something.
-
-**Declare a function**
-
-```cs
-private IEnumerator MyCoroutine()
-{
-	// wait for seconds
-	yield return new WaitForSeconds(1f);
-	// if needed, you can use "yield break;" to return
-	Debug.Log("Some code");
-}
-```
-
-You got a lot of alternatives for WaitForSeconds
-
-* `new WaitUntil(() => false);`: wait until the function returns true
-* `new WaitWhile(() => true);`: wait until the function returns false
-* `new WaitForSecondsRealtime(1f)`
-* ...
-
-**Start/Stop your coroutine**
-
-```cs
-StartCoroutine(MyCoroutine());
-StartCoroutine(nameof(MyCoroutine)); // same as StartCoroutine("MyCoroutine");
-
-var c = MyCoroutine();
-StartCoroutine(c);
-StopCoroutine(c);
-StopAllCoroutines();
-```
-
-
-
-</details>
-
 > **Pro tip**: [we are explaining a lot of things about scripts here](../unity-ufs/index.md).<br> 
 > **Fun fact**: a long time ago, it was possible to use JavaScript too.
 
@@ -760,5 +718,46 @@ Camera.main.ScreenToViewportPoint() // ex: world position to mouse position
 Cursor.visible = true;
 Cursor.visible = false;
 Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
+```
+</details>
+
+<details class="details-e">
+<summary>Coroutines</summary>
+
+**Coroutines** are functions with multiples returns. Each time the function is called, the code will be executed until the next return. **This is quite used when you need to do a job after X seconds, or when a condition is true, etc.**.
+
+Inside such function, you can call
+
+* `yield return null`: tell unity to wait one frame and call again the coroutine
+* `yield return ...`
+  * `new WaitForSeconds(1f);`: wait for 1 second
+  * `new WaitUntil(() => false);`: wait until the function returns true
+  * `new WaitWhile(() => true);`: wait until the function returns false
+  * `new WaitForSecondsRealtime(1f)`: wait for 1 real second (unscaled time)
+  * You can create new ones by extending `CustomYieldInstruction`
+  * ...
+* `yield break` (or no other return): coroutine done
+
+**Declare a function**
+
+```cs
+private IEnumerator MyCoroutine()
+{
+	// when started, wait for one second then print "some code"
+	yield return new WaitForSeconds(1f);
+	Debug.Log("Some code");
+}
+```
+
+**Start/Stop your coroutine**
+
+```cs
+StartCoroutine(MyCoroutine());
+StartCoroutine(nameof(MyCoroutine)); // or StartCoroutine("MyCoroutine");
+
+var c = MyCoroutine();
+StartCoroutine(c);
+StopCoroutine(c);
+StopAllCoroutines();
 ```
 </details>
