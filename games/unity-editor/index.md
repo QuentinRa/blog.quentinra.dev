@@ -143,7 +143,7 @@ To create a group, create a new game object inside another one (right-click on t
 > * <kbd>ALT+expand or hide</kbd> to expand/hide all children of a group
 > * you can use the search bar to look for a game object by name, or for game objects having a component <small>(you must write the full name of the component)</small>
 
-Note: in complex games, you may define "selections". It means that pressing a shortcut (or toggling an menu item) will automatically select a game object. Click on a game object, then edit, then selection, and save it. Then use the shortcut, or use edit > selection > load, to load your selected game object.
+Note: in complex games, you may define "selections". It means that pressing a shortcut (or toggling a menu item) will automatically select a game object. Click on a game object, then edit, then selection, and save it. Then use the shortcut, or use edit > selection > load, to load your selected game object.
 
 <hr class="sl">
 
@@ -163,7 +163,7 @@ You can also change your point of view by clicking on one axis here. Click back 
 > * <kbd>Left-Click/Middle-click</kbd> to move your point of view (not the camera)
 > * <kbd>CTRL</kbd> when moving something, while make the position change by 0.25. It's called **snapping**, and you can change the unit in edit > Grid and Snap settings.
 > 
-> You can select and edit multiples game objects in one go, by pressing <kbd>SHIFT</kbd> and clicking on two game objects (=select every game object between these two). You can use <kbd>CTRL</kbd> and pick them one by one.
+> You can select and edit multiple game objects in one go, by pressing <kbd>SHIFT</kbd> and clicking on 2 game objects (=select every game object between these two). You can use <kbd>CTRL</kbd> and pick them one by one.
 
 <hr class="sr">
 
@@ -285,7 +285,7 @@ Debug.LogError("error");
 
 ## Components
 
-You may refine your game object with what we call **components**. They are extensions such as collision, physics, etc. that you can add to your game objects. You can do that in the inspector (as we saw before), or by dropping a component on a game object in the hierarchy. You can write scripts which are also components to add things such as movement, etc.
+You may refine your game object with what we call **components**. They are extensions such as collision, physics, etc. that you can add to your game objects. You can do that in the inspector (as we saw before), or by dropping a component on a game object in the hierarchy. You can write scripts that are also components to add things such as movement, etc.
 
 You can use these methods to get a component, either applied on our game object, its children, or its parent. **Note that these methods are called on a game object, here it's the attribute "gameObject" in `MonoBehaviour`**, but it's implicit.
 
@@ -335,18 +335,18 @@ rb.AddExplosionForce(power, explosionPos, radius, 3.0F);
 <details class="details-e">
 <summary>Colliders</summary>
 
-Colliders are used to check if our game object is colliding with another object. You will define a collider covering your game object (up to you, whether only touching the bust is considered as colliding=more efficient, etc.). Once you created you collider, **it will be triggered each time a game object having a Rigidbody is entering your collider**.
+Colliders are used to check if our game object is colliding with another object. You will define a collider covering your game object (up to you, whether only touching the bust is considered as colliding=more efficient, etc.). Once you created your collider, **it will be triggered each time a game object having a Rigidbody is entering your collider**.
 
 1. **Create**: by default, the collider will fit your object, more or less according to the kind of collider you picked. You can click on edit collider. If you are zooming a lot, you will see small green dots. Click on them to edit your collider in one direction. **Pro tip**: use rectangular colliders for better performances <small>(ex: not a good example but, you can make one covering the bust rather than the whole player)</small>.
 2. **is trigger**
    1. if **false**, this object is solid, trigger the method `OnCollisionEnter(Collision)`.
-   2. if **true**, object are passing trough each other, trigger the method `OnTriggerEnter(Collider)`.
+   2. if **true**, objects are passing through each other, trigger the method `OnTriggerEnter(Collider)`.
 3. **Layers**
-   * by default, object may collide even if there are not on the same layer.
+   * by default, objects may collide even if there are not on the same layer.
    * You can change this behavior by tweaking the collision matrix at the end of Edit > Project Settings > Physics 
 4. **Physical material**
     * it's an asset "create > Physic Material" in the project explorer
-    * you can set the every friction to 0, and set combine to minimum to disable friction.
+    * you can set every friction to 0, and set combine to "minimum" to disable friction.
     * then you can add it to a collider
 5. **Some Code** (3 ways that I used)
 
@@ -408,7 +408,7 @@ public class Example : MonoBehaviour // Example.cs
 
 * **using**
 
-The `using` keyword is importing a namespace, meaning a collection of classes, enums, ... This allow us to use `MonoBehaviour` instead of prefixing classes (`UnityEngine.MonoBehaviour`).
+The `using` keyword is importing a namespace, meaning a collection of classes, enums, ... This allows us to use `MonoBehaviour` instead of prefixing classes (`UnityEngine.MonoBehaviour`).
 
 * **MonoBehaviour**
 
@@ -418,7 +418,7 @@ A MonoBehaviour is the base class for a Script. It got a lot of methods, that ar
 
 * **More**
 
-You can write new methods, add new attributes, ... See the [C# documentation](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/). If you are familiar with Java, it easy to sail in C#.
+You can write new methods, add new attributes, ... See the [C# documentation](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/). If you are familiar with Java, it's easy to sail in C#.
 </div></div>
 </details>
 
@@ -432,7 +432,7 @@ You can write new methods, add new attributes, ... See the [C# documentation](ht
 
 > **Pro tip**: If needed, you got the attribute `gameObject` (resp. `this.gameObject`).
 
-There is another problem. Let's say you want to **reference another game object** in another script. There are multiples way to do this
+There is another problem. Let's say you want to **reference another game object** in another script. There are multiple ways to do this
 
 * use tags, and find object with tag
 * use SerializedFields (see [Unity Script++](../unity-ufs/index.md#serialize-field))
@@ -489,7 +489,7 @@ SendMessageUpwards("methodName");
 
 <tr>
 <th>Vector2<br>Vector3</th>
-<td>A class used to represents a position (x,y) or (x,y,z).
+<td>A class used to represent a position (x,y) or (x,y,z).
 Note that I'm using Vector3 a lot, but a lot of functions are in Vector2 too.</td>
 <td>
 
@@ -520,7 +520,7 @@ In Unity, go to **Edit > Project Settings > Input Manager**. Expand Axes. In thi
 * **Vertical**: you can see **down**/**up** to move, while **S** and **W** are working
 * **Jump**: you can see **space**
 
-Increase the size to add more 🚀. Once you are good, in a script, you can do that. If a value is inside "dead", then its 0. "negative" means the value that will be negative (-1) in GetAxis (explained later). And "sensitivity" is the response time (low=smooth, great=fast). 
+Increase the size to add more 🚀. Once you are good, in a script, you can do that. If a value is inside "dead", then it's 0. "negative" means the value that will be negative (-1) in GetAxis (explained later). And "sensitivity" is the response time (low=smooth, great=fast). 
 
 <div class="row row-cols-md-2 mx-0"><div>
 
@@ -613,13 +613,13 @@ private void OnMouseExit() {}
 ```
 </details>
 
-> **Pro tip**: there is a new input system, that is event based. You should [read the documentation](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.2/manual/index.html). Available in Unity 2019.4+ in version 1.0. You may use the version 1.2 which is still compatible with 2019.4+.
+> **Pro tip**: there is a new input system, that is event-based. You should [read the documentation](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.2/manual/index.html). Available in Unity 2019.4+ in version 1.0. You may use version 1.2 which is still compatible with 2019.4+.
 
 <hr class="sl">
 
 ## User Interface (UI)
 
-In Unity, UI stuffs are in a game object called "**canvas**". Simply create one (UI > canvas), then you can add buttons (UI > buttons), texts (UI > text), etc. as a children of your canvas. Note that creating an UI element outside a canvas, will automatically generates a new canvas.
+In Unity, UI stuff is in a game object called "**canvas**". Simply create one (UI > canvas), then you can add buttons (UI > buttons), texts (UI > text), etc. as a child of your canvas. Note that creating a UI element outside a canvas will automatically generate a new canvas.
 
 > **Pro tip**: **go back to 2D** to create your user interface. If you were in 3D, simply toggle "2D" in the Scene windows ![Unity UI toggle 2D](images/toggle2D.png).
 
@@ -628,7 +628,7 @@ In Unity, UI stuffs are in a game object called "**canvas**". Simply create one 
 
 It's not the best to manually place something in your canvas. What if a user got a window smaller or larger? **We are usually using anchors (`ancrage`) to position components**.
 
-Click on an UI element, and check the "Rect Transform". Then click on this (**Anchor presets**) ![Unity UI Anchor presets](images/anchor_presets.png).
+Click on a UI element, and check the "Rect Transform". Then click on this (**Anchor presets**) ![Unity UI Anchor presets](images/anchor_presets.png).
 
 By pressing **ALT** and clicking on elements of the grid, you can position your component somewhere in the canvas, and you can stretch it too (increase width, height, both).
 
@@ -654,15 +654,15 @@ If you want to override the minimum/preferred/... width, height, then you can do
 
 * **Auto-resize components**
 
-If you got a component with some text, you may want your component to auto-resize itself, when the text is shorter or longer, smaller or bigger. You can do that by adding a component called "Content Size Fitter" and set either (or both) fields to "Preferred size".
+If you got a component with some text, you may want your component to auto-resize itself, when the text is shorter or longer, smaller or bigger. You can do that by adding a component called "Content Size Fitter" and setting either (or both) fields to "Preferred size".
 
-> **Pro tip**: you may have to add a layout, for instance a horizontal layout, which is allowing you to use padding too.
+> **Pro tip**: you may have to add a layout, for instance, a horizontal layout, which is allowing you to use padding too.
 </details>
 
 <details class="details-e">
 <summary>Layout managers</summary>
 
-**Layout managers** (`gestionnaires de mise en page`) are components allowing you to design easily your interface. You need **to create an empty game object** (empty is not mandatory) and give it the layout manager. Once you did, **children of the** empty **game object will be displayed according to the manager you picked**.
+**Layout managers** (`gestionnaires de mise en page`) are components allowing you to design easily your interface. You need **to create an empty game object** (empty is not mandatory) and give it to the layout manager. Once you did, **children of the** empty **game object will be displayed according to the manager you picked**.
 
 If you are familiar with Swing in Java, then this is quite similar.
 
@@ -676,19 +676,19 @@ One component per line, with a gap between lines (that is 0 by default).
 
 * **Grid Layout**
 
-An horizontal layout by default. You can make columns and rows by selecting another value for the field "constraint".
+A horizontal layout by default. You can make columns and rows by selecting another value for the field "constraint".
 </details>
 
 <details class="details-e">
 <summary>Handling multiple menus / another way of referencing something</summary>
 
-You could create multiples canvas, and turn them on/off. I heard that Unity is advising against this, but I couldn't find a proof that this is not a good practice. Anyways, another way to
+You could create multiple canvas, and turn them on/off. I heard that Unity is advising against this, but I couldn't find proof that this is not a good practice. Anyway, another way to
 
 * create a canvas, and put everything inside
 * Add a component "XXXManager" (your script) on the canvas
 * Add a component "XXXElement" (your script) on each menu (you may use "Empty Game objects", and put your stuff inside)
 
-Then, in the manager, you are using `GetComponentsInChildren<XXXElement>`. As each component go a field "gameObject" for the associated game object, you got your menus too from their components. You may add a method in **XXXElement** returning the kind of menu (use an enum) to do specific stuff according to the kind of menu.
+Then, in the manager, you are using `GetComponentsInChildren<XXXElement>`. As each component got a field "gameObject" for the associated game object, you got your menus too from their components. You may add a method in **XXXElement** returning the kind of menu (use an enum) to do specific stuff according to the kind of menu.
 </details>
 
 <details class="details-e">
@@ -708,7 +708,7 @@ GetComponent<Button>().onClick.AddListener(MyMethod);
 You need to add an entry inside "On Click" (ex: Button > On Click). Select "Runtime Only" and drag and drop a component having the script in which you got the method you want to call. Then select the method in "No Function".
 </details>
 
-> **Pro tip**: As you can watch is [this video, there is a new way to create interface, called UI Builder](https://www.youtube.com/watch?v=NQYHIH0BJbs&ab_channel=CocoCode). It's not available yet.
+> **Pro tip**: As you can watch is [this video, there is a new way to create interfaces, called UI Builder](https://www.youtube.com/watch?v=NQYHIH0BJbs&ab_channel=CocoCode). It's not available yet.
 
 <hr class="sr">
 
@@ -719,7 +719,7 @@ You need to add an entry inside "On Click" (ex: Button > On Click). Select "Runt
 
 * **Remove background**
 
-You can replace the Skybox with a black background or something else, by clicking on the camera, and editing "clear flags" and background. You can also turn off skybox in the editor with this button. 
+You can replace the Skybox with a black background or something else, by clicking on the camera, and editing "clear flags" and background. You can also turn off the skybox in the editor with this button. 
 
 ![Unity Toggle Skybox](images/toggle_skybox.png)
 
@@ -756,7 +756,7 @@ Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
 <details class="details-e">
 <summary>Coroutines</summary>
 
-**Coroutines** are functions with multiples returns. Each time the function is called, the code will be executed until the next return. **This is quite used when you need to do a job after X seconds, or when a condition is true, etc.**.
+**Coroutines** are functions with multiple returns. Each time the function is called, the code will be executed until the next return. **This is quite used when you need to do a job after X seconds, or when a condition is true, etc.**.
 
 If you only need to call a method in x seconds, and there is no optional parameter delay (ex: we got one for Destroy...), you may use `Invoke(methodName, delay);`.
 
@@ -799,18 +799,18 @@ StopAllCoroutines();
 <details class="details-e">
 <summary>Save/Load</summary>
 
-You may save the preferences of the player using [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html), that are working like Preferences in Java.
+You may save the preferences of the player using [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html), which are working like Preferences in Java.
 </details>
 
 <details class="details-e">
 <summary>Particles</summary>
 
-You can make an object emit particles by adding it the "particle system" component. By default, they are purple, but that's because there is no material
+You can make an object emit particles by adding to it the "particle system" component. By default, they are purple, but that's because there is no material
 
 * **Renderer > Material**: material for the particles (see Unity3D course)
 * **Emission**
   * you can set the number of particles per second
-  * you can add burst of particles
+  * you can add bursts of particles
 * **Shape**: you can change the shape of the effect
 * **Trails**: you can give a trail to your particles
 * **Color over lifetime**: you can make your particles change color over time
@@ -819,5 +819,5 @@ You can make an object emit particles by adding it the "particle system" compone
 <details class="details-e">
 <summary>Audio</summary>
 
-You can make a game object emit sound by adding an Audio Source component on it. You may only hear it in **Game mode** (by pressing play).
+You can make a game object emit sound by adding an Audio Source component to it. You may only hear it in **Game mode** (by pressing play).
 </details>
