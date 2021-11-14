@@ -101,7 +101,7 @@ When you are opening a project, by default you got 4 windows.
 		* press play again to stop
 		* press pause to pause the simulation
 
-When **running** your game, you can go edit things <small>(either by going back to the scene, or by clicking on a game object in the game/hierarchy)</small>, to test things. **Note that everything will be reverted once you stopped playing**.
+When **running** your game, you can go edit things <small>(either by going back to the scene, or by clicking on a game object in the game/hierarchy)</small>, to test things. **Note that everything will be reverted once you stopped playing**. Some are changing the color of the editor in play mode <small>(Edit > Preferences > Colors > Playmode tint)</small>.
 
 * **inspector window** ⚙ (right): you can edit the properties of the selected **GameObject**
 * **project window** 🗄 (bottom): all of your project files
@@ -138,6 +138,7 @@ To create a group, create a new game object inside another one (right-click on t
 > * <kbd>F2</kbd> to rename the selected item
 > * <kbd>CTRL+D</kbd> to duplicate the selected item
 > * <kbd>ALT+expand or hide</kbd> to expand/hide all children of a group
+> * you can use the search bar to look for a game object by name, or for game objects having a component <small>(you must write the full name of the component)</small>
 
 Note: in complex games, you may define "selections". It means that pressing a shortcut (or toggling an menu item) will automatically select a game object. Click on a game object, then edit, then selection, and save it. Then use the shortcut, or use edit > selection > load, to load your selected game object.
 
@@ -192,7 +193,8 @@ You may also use "Copy component" and "Paste component as new" or "Paste compone
 > **Pro tip**: as per the previous statement, in a group of game objects, try to merge some components (ex: the colliders, etc.)
 </div></div>
 
-> **Pro tip**: in the container in which you got "inspector", on the same line, you got three small dots too. You can switch from "normal" to "debug" mode here, which will show you way more fields in the inspector.
+> **Pro tip**: in the container in which you got "inspector", on the same line, you got three small dots too. You can switch from "normal" to "debug" mode here, which will show you way more fields in the inspector.<br>
+> **Pro tip**: some are giving icons to game objects. This is done by clicking on the "cube" next to (1). These icons are only visible in the scene view.
 
 <hr class="sl">
 
@@ -349,6 +351,8 @@ etComponent<Renderer>().bounds.Intersects(anotherBounds);
 
 > **Pro tip**: this may not be the best way to do it, but methods such as `OnCollisionEnter` are filled with the game object we are colliding with. You may use tags, and check the tag of the game object.
 </details>
+
+> **Pro tip**: on the same line that you use to remove a component, you got a question mark inside a circle. Click on it to open the documentation of a component.
 
 <hr class="sl">
 

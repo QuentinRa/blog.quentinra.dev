@@ -15,6 +15,8 @@ ALL
 
 => https://docs.unity3d.com/Manual/PostProcessingOverview.html
 
+Object pooling => List register/unregister entries inside => function to use "entries"
+
 => https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/performance-recommendations-for-unity
 => https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/contributing/coding-guidelines?view=mrtkunity-2021-05
 
