@@ -19,6 +19,8 @@ Debug.Log($"$(variable)");
 You may use https://docs.unity3d.com/Manual/PlatformDependentCompilation.html
 Profiler to see the performances
 Use your IDE debugger
+
+dark theme
 -----------------------------------------------------------------
 ------------------------- Game Objects
 -----------------------------------------------------------------

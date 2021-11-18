@@ -23,6 +23,11 @@ import package => terrain assets
 => add leaf on trees => set a material on each leaf group + each branch
 => 6 icon => add grass / detail mesh
 
+Texture => instead of ~~2D sprite~~ default, create a copy with normal map => you may add grayscale too
+=> in terrain settings => you may change material to legacy diffuse
+=> add both texture + normal texture to make things realistic
+=> target strength and opacity to put textures one above another
+
 -----------------------------------------------------------------
 ------------------------- Animation
 -----------------------------------------------------------------

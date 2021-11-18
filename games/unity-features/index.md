@@ -292,7 +292,6 @@ StopAllCoroutines();
 
 You may save the preferences of the player using [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html), which are working like Preferences in Java.
 
-
 <hr class="sl">
 
 ## Particles

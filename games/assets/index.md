@@ -90,6 +90,7 @@ Both?
 * [freesfx](https://freesfx.co.uk/Default.aspx) (SFX)
 * [zapsplat](https://www.zapsplat.com/) (SFX)
 * [gamesounds](https://gamesounds.xyz/) (Royalty Free)
+* [jamendo](https://www.jamendo.com/start) (Royalty Free)
 * [musopen](https://musopen.org/) (Royalty Free, piano/...)
 * [Octave/8ve](http://raisedbeaches.com/octave/index.html) (UI SFX)
 * [PacDV](https://www.pacdv.com/sounds/index.html) (Royalty Free)
