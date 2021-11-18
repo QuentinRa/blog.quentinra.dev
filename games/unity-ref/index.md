@@ -53,12 +53,18 @@ Note that this ranking is made relative to other entries talking about the same 
 ## Covering one topic
 
 <details class="details-s">
+<summary>Audio</summary>
+
+* [Audio in 2021](https://www.youtube.com/watch?v=B9yxkJuHLek)
+</details>
+
+<details class="details-s">
 <summary>Animations</summary>
 
 * [Animations](https://www.youtube.com/watch?v=9H0aJhKSlEQ) (mixamo)
 </details>
 
-<details  class="details-s">
+<details class="details-s">
 <summary>AI</summary>
 
 * [EngiGames](https://www.youtube.com/channel/UCbAsfBmEHQpPERAVx8DHxZA) (Open world IA, State machine, Some knowledge)
@@ -86,6 +92,12 @@ Note that this ranking is made relative to other entries talking about the same 
 </details>
 
 <details class="details-s">
+<summary>Shooting</summary>
+
+* [Shooting](https://www.youtube.com/watch?v=VUhHCUjRSKI) (😖)
+</details>
+
+<details class="details-s">
 <summary>UI</summary>
 
 * [Main Menu](https://www.youtube.com/watch?v=RsgiYqLID-U&ab_channel=CocoCode) (🚀)
@@ -107,6 +119,11 @@ Note that this ranking is made relative to other entries talking about the same 
 
 * [Get Started With Unity](https://www.youtube.com/playlist?list=PLS6sInD7ThM3LqdgQBGawJkSihuisN-ES) (9 videos, easy, many and innovative topics ✅, use the plugin DOTween and the new input system ❌)
 
+
+### Channels
+
+* [Jason Weimann](https://www.youtube.com/c/Unity3dCollege/playlists) (a lot of videos, maybe not the most efficient place to learn and personally I don't enjoy it)
+
 <hr class="sr">
 
 ## Websites
@@ -117,6 +134,7 @@ Note that this ranking is made relative to other entries talking about the same 
 * [Editor Attributes (Unity3d.College)](https://unity3d.college/2017/05/22/unity-attributes/) (👀)
 * [Unity tips](https://learn.unity.com/tutorial/unity-tips) (🚀)
 * [Unity GIT](https://thoughtbot.com/blog/how-to-git-with-unity) (👀)
+* [Unity Profiler](https://www.youtube.com/watch?v=fROTtgZK-Zs) (😖)
 
 ### Tutorials/MOOC
 
