@@ -204,14 +204,13 @@ You need to add an entry inside "On Click" (ex: Button > On Click). Select "Runt
 
 <hr class="sr">
 
-## Digging into topics
+## Camera/Cursor
 
-<details class="details-e mt-3">
-<summary>Camera</summary>
+<div class="row row-cols-md-2 mx-0"><div>
 
 * **Remove background**
 
-You can replace the Skybox with a black background or something else, by clicking on the camera, and editing "clear flags" and background. You can also turn off the skybox in the editor with this button.
+You can replace the Skybox with a black background or something else, by clicking on the camera, and editing "clear flags" and background. On top of that, you can also turn off the skybox in the editor with this button.
 
 ![Unity Toggle Skybox](images/toggle_skybox.png)
 
@@ -222,8 +221,7 @@ Simply click on the camera, you will see a little preview.
 * **Set camera view**
 
 If you like what you are seeing, you can right-click on your camera and click on "Align with view". The "view" is your view of the scene in the editor.
-
-* **Some code**
+</div><div class="align-self-center">
 
 ```cs
 Camera.current // may be null
@@ -233,22 +231,21 @@ Camera.main // may be null
 Camera.main.ViewportToScreenPoint() // ex: mouse position to world position
 Camera.main.ScreenToViewportPoint() // ex: world position to mouse position
 ```
-</details>
-
-<details class="details-e">
-<summary>Cursor</summary>
 
 ```cs
 Cursor.visible = true;
 Cursor.visible = false;
 Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
 ```
-</details>
+</div></div>
 
-<details class="details-e">
-<summary>Coroutines</summary>
+<hr class="sl">
+
+## Coroutines
 
 **Coroutines** are functions with multiple returns. Each time the function is called, the code will be executed until the next return. **This is quite used when you need to do a job after X seconds, or when a condition is true, etc.**.
+
+<div class="row row-cols-md-2 mx-0"><div>
 
 If you only need to call a method in x seconds, and there is no optional parameter delay (ex: we got one for Destroy...), you may use `Invoke(methodName, delay);`.
 
@@ -263,6 +260,7 @@ Inside such function, you can call
 	* You can create new ones by extending `CustomYieldInstruction`
 	* ...
 * `yield break` (or no other return): coroutine done
+</div><div class="align-self-center">
 
 **Declare a function**
 
@@ -286,30 +284,31 @@ StartCoroutine(c);
 StopCoroutine(c);
 StopAllCoroutines();
 ```
-</details>
+</div></div>
 
-<details class="details-e">
-<summary>Save/Load</summary>
+<hr class="sr">
+
+## Save/Load
 
 You may save the preferences of the player using [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html), which are working like Preferences in Java.
-</details>
 
-<details class="details-e">
-<summary>Particles</summary>
+
+<hr class="sl">
+
+## Particles
 
 You can make an object emit particles by adding to it the "particle system" component. By default, they are purple, but that's because there is no material
 
 * **Renderer > Material**: material for the particles (see Unity3D course)
 * **Emission**
-	* you can set the number of particles per second
-	* you can add bursts of particles
+    * you can set the number of particles per second
+    * you can add bursts of particles
 * **Shape**: you can change the shape of the effect
 * **Trails**: you can give a trail to your particles
 * **Color over lifetime**: you can make your particles change color over time
-</details>
 
-<details class="details-e">
-<summary>Audio</summary>
+<hr class="sr">
+
+## Audio
 
 You can make a game object emit sound by adding an Audio Source component to it. You may only hear it in **Game mode** (by pressing play).
-</details>
