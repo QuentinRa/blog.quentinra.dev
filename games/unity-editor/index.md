@@ -192,7 +192,7 @@ Later, you may have to remove a component. You can do it by clicking on the 3 sm
 
 You may also use "Copy component" and "Paste component as new" or "Paste component values".
 
-> **Pro tip**: you need to reduce the number of components as you as possible<br>
+> **Pro tip**: you need to reduce the number of components as possible<br>
 > **Pro tip**: as per the previous statement, in a group of game objects, try to merge some components (ex: the colliders, etc.)
 </div></div>
 
@@ -286,6 +286,13 @@ Debug.LogError("error");
 ## Components
 
 You may refine your game object with what we call **components**. They are extensions such as collision, physics, etc. that you can add to your game objects. You can do that in the inspector (as we saw before), or by dropping a component on a game object in the hierarchy. You can write scripts that are also components to add things such as movement, etc.
+
+> **Add a component**:
+> * you can click on Add component in the inspector
+> * you can drag and drop a component from the project window to a game object
+>	* in the inspector
+>	* in the scene <small>(not used often as you may add it on the wrong game object)</small>
+>	* in the hierarchy
 
 You can use these methods to get a component, either applied on our game object, its children, or its parent. **Note that these methods are called on a game object, here it's the attribute "gameObject" in `MonoBehaviour`**, but it's implicit.
 
