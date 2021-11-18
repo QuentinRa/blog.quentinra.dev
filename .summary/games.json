@@ -32,7 +32,13 @@
       {
         "tag": "unity-editor",
         "name": "Unity - Editor",
-        "desc": "A course covering everything I know about unity editor. This course is further developed in Unity 2D or Unity 3D.",
+        "desc": "A course covering everything I know about unity editor. This course is further developed in Unity Features.",
+        "icon": "<i class=\"bi bi-layers\"></i>"
+      },
+      {
+        "tag": "unity-features",
+        "name": "Unity - Features",
+        "desc": "A course covering everything I know about features provided by unity. This course is further developed in Unity 2D or Unity 3D.",
         "icon": "<i class=\"bi bi-layers\"></i>"
       },
       {
