@@ -21,6 +21,10 @@ Profiler to see the performances
 Use your IDE debugger
 
 dark theme
+
+It is recommended to avoid using DontDestroyOnLoad to persist manager GameObjects that you want to survive across
+scene loads. Instead, create a manager scene that has all your managers and use
+SceneManager.LoadScene(<path>, LoadSceneMode.Additive) and SceneManager.UnloadScene to manage your game progress.
 -----------------------------------------------------------------
 ------------------------- Game Objects
 -----------------------------------------------------------------
@@ -34,6 +38,7 @@ transform.GetSiblingIndex (hierarchy)
 -----------------------------------------------------------------
 ------------------------- Scenes
 -----------------------------------------------------------------
+https://docs.unity3d.com/Manual/scene-templates.html
 -----------------------------------------------------------------
 ------------------------- Tile map
 -----------------------------------------------------------------

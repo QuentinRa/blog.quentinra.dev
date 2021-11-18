@@ -88,7 +88,9 @@ If you got things that you don't want to lose between scenes
 * you may create `static variables`. Instances are destroyed, but static variables aren't reset.
 * you may create a singleton, if you don't want to instance an object twice (check [DontDestroyOnLoad](https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html), or [Unity Singleton](https://blog.mzikmund.com/2019/01/a-modern-singleton-in-unity/), or [DontDestroyOnLoad+Singleton](https://gist.github.com/mstevenson/4325117))
 
-> **Pro tip?**: it seems that scenes are removed from the build after updating Unity. If you sorted your scenes and used indexes in your code, it may break. Make sure to keep a copy of your scenes indexes.
+> **Pro tip?**: it seems that scenes are removed from the build after updating Unity. If you sorted your scenes and used indexes in your code, it may break. Make sure to keep a copy of your scenes indexes.<br>
+> **Pro tip**: saving a scene do no means saving the project. You can use save to save your scene or save project to [...]. It will save settings, or things that were not saved. Closing the project will trigger that too.
+> **Pro tip**: you can open multiples scenes in the hierarchy. You can use "Set active"
 
 <hr class="sl">
 
