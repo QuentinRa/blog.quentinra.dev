@@ -31,6 +31,12 @@
       "name": "IT Project (S2) ",
       "desc": "Some feedback about the IT project at the ENSIIE engineering school.",
       "icon": "<i class=\"bi bi-people\"></i>"
+    },
+    {
+      "tag": "igl",
+      "name": "UML/MDD - IGL",
+      "desc": "We are covering practical classes of the IGL course at the ENSIIE engineering school.",
+      "icon": "<i class=\"bi bi-bandaid\"></i>"
     }
   ]
 }
