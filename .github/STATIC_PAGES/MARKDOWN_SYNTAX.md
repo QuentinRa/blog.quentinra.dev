@@ -238,7 +238,7 @@ References, are not only the links that you used, but those that we may check if
 
 * **typos**
 
-You can use Grammarly or LanguageTool to check if they got [hints for you](../../special/toolbox/writting/index.md).
+You can use Grammarly or LanguageTool to check if they got [hints for you](../../tools/toolbox/writting/index.md).
 
 * **version 1.3.0**: the **title and the description are generated**
 
@@ -246,6 +246,6 @@ Please, try to make it so that the title of a page is good, as it's the one show
 
 * **version 1.3.0**: using **emojis** is a good practice
 
-You may [learn more here](../../special/toolbox/desktop/emojis.md). You should use them to make the content less monotone, and help the reader focusing on what he needs to remember. 
+You may [learn more here](../../tools/toolbox/desktop/emojis.md). You should use them to make the content less monotone, and help the reader focusing on what he needs to remember. 
 
 </div>

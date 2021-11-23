@@ -61,6 +61,12 @@
       "name": "Data languages",
       "desc": "A gathering of notes about easy to learn, and easy to master, data languages, such as JSON (and JSON5), or YAML.",
       "icon": "<i class=\"bi bi-layout-text-sidebar\"></i>"
+    },
+    {
+      "tag": "toolbox",
+      "name": "Toolbox",
+      "desc": "A lot of notes about a lot of things that can't be added to another course.",
+      "icon": "<i class=\"bi bi-truck\"></i>"
     }
   ]
 }
