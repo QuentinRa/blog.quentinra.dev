@@ -16,7 +16,7 @@ In **org.eclipse.papyrus.designer.languages.java.codegen.sm**, edit the file **J
 You need to know that
 
 * you will write a sort of Java code
-* if you are inside a bloc `'''`, you need to write code in `«some_code»`, while you can only put one instruction per `«»`
+* if you are inside a template block `'''`, you need to write code in `«some_code»`, while you can only put one instruction per `«»`
 * more syntax will be given when needed
 
 To generate `«»` or to trigger autocompletion, press <kbd>CTRL+SPACE</kbd>.
@@ -156,5 +156,45 @@ for (state : states) {
 	stateNames.add(state.name)
 }
 ```
+</details>
+</div></div>
+
+<hr class="sl">
+
+## TODO4
+
+<div class="row row-cols-md-2 mx-0"><div class="align-self-center">
+
+```java
+/**
+* Interpolated expression to get all state names separated by ", "
+*/
+static def getStateNames(StateMachine stateMachine) '''
+	«««TODO get all states names and build expression S1, S2, S3»
+'''
+```
+</div><div>
+
+Notice that we are in a template block `'''`. The syntax of a for loop is
+
+```java
+«FOR element: set BEFORE "" SEPARATOR "" AFTER ""»
+	«««Some code
+«ENDFOR»
+```
+
+**Todo**: we need to print every stateName, with a separator "`,`".
+
+<details class="details-e">
+<summary>The solution</summary>
+
+```java
+«««DONE get all states names and build expression S1, S2, S3»
+«FOR stateName : stateMachine.stateNamesList BEFORE "" SEPARATOR ", " AFTER ""»
+	"«stateName»"
+«ENDFOR»
+```
+
+Why do we need `""`, could I use `''` or nothing at all? My teacher told me that `""` is used when you want something to be "printed" in the code, so we have to.
 </details>
 </div></div>
