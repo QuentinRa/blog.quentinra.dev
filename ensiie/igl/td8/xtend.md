@@ -564,3 +564,51 @@ if (!effectBehaviorCode.empty) {
 ```
 </details>
 </div></div>
+
+<hr class="sl">
+
+## Generating the code
+
+You should already know how you can do that, if not, check the setup section.
+
+* Run "runtime_eclipse" > Proceed
+* Double-click on SMModel
+* Click on "Project SMModel" > Designer > Generate Java Code ...
+
+Then, let's run our code. 
+
+* Right-click on **Main** <small>(the JAVA file in the generated model)</small> > Run as > Java Application.
+* You can't execute the **Main** in expected-src <small>(at least I didn't managed too, in eclipse that is)</small>
+
+<hr class="sr">
+
+## Checking that you got what we expected
+
+I will use IntelliJ to check. You may use any IDE you want, simply enjoying this small time outside eclipse. To find a folder, don't forget to use Right-click > Show In > System Explorer.
+
+* Run the main in expected-src. **Compare with yours**
+
+```none
+Exiting S1
+Transiting from S1 to S2
+Entering S2
+Do activity of S2
+========
+Exiting S2
+Transiting from S2 to S3
+Entering S3
+Do activity of S3
+========
+Invalid transition: current state S3 cannot transit to S2
+========
+Exiting S3
+Transiting from S3 to S1
+Entering S1
+Do activity of S1
+========
+```
+
+* **Compare AnotherSMClass** with yours
+* **Compare SMClass** with yours
+
+> **Note**: In IntelliJ you got a tool to compare two or three files in a great interface, that's why I moved to IntelliJ to compare two files. You can use online tools [such as this one](https://www.diffchecker.com/diff) if you want.
