@@ -23,7 +23,7 @@ To generate `«»` or to trigger autocompletion, press <kbd>CTRL+SPACE</kbd>.
 
 <hr class="sr">
 
-## TODO1
+## TODO 1
 
 <div class="row row-cols-md-2 mx-0"><div>
 
@@ -86,7 +86,7 @@ if (transitions.contains(transition)) {
 
 <hr class="sl">
 
-## TODO2
+## TODO 2
 
 <div class="row row-cols-md-2 mx-0"><div>
 
@@ -125,7 +125,7 @@ if (stateMachine !== null) {
 
 <hr class="sr">
 
-## TODO3
+## TODO 3
 
 <div class="row row-cols-md-2 mx-0"><div>
 
@@ -161,7 +161,7 @@ for (state : states) {
 
 <hr class="sl">
 
-## TODO4
+## TODO 4
 
 <div class="row row-cols-md-2 mx-0"><div class="align-self-center">
 
@@ -201,7 +201,7 @@ Why do we need `""`, could I use `''` or nothing at all? My teacher told me that
 
 <hr class="sr">
 
-## TODO5
+## TODO 5
 
 <div class="row row-cols-md-2 mx-0"><div>
 
@@ -236,7 +236,7 @@ if (stateMachine !== null) {
 
 <hr class="sl">
 
-## TODO6
+## TODO 6
 
 <div class="row row-cols-md-2 mx-0"><div>
 
@@ -285,7 +285,7 @@ for (transition : transitions) {
 
 <hr class="sr">
 
-## TODO7
+## TODO 7
 
 <div class="row row-cols-md-2 mx-0"><div>
 
@@ -341,7 +341,7 @@ case "S3":
 
 <hr class="sr">
 
-## TODO8
+## TODO 8
 
 <div class="row row-cols-md-2 mx-0"><div>
 
@@ -388,6 +388,58 @@ if (!exitBehaviorCode.empty) {
 	switch (sourceState) {
 	'''
 	+ exitBehaviorCode +
+	'''
+	}
+	'''
+}
+```
+</details>
+</div></div>
+
+<hr class="sl">
+
+## TODO 9
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+```java
+static def getEntryBehaviors(StateMachine stateMachine) {
+	var states = stateMachine.states
+	var entryBehaviorCode = ""
+
+	// TODO builds the cases code before surrounding it with switch (sourceState) {}
+
+	// TODO if entryBehaviorCode is not empty then surround it with switch (sourceState) { entryBehaviorCode }
+}
+```
+</div><div>
+
+**Todo**: Same as TODO 8
+
+<details class="details-e">
+<summary>The solution</summary>
+
+```java
+// DONE builds the cases code before surrounding it with switch (sourceState) {}
+for (state: states) {
+	if (!state.name.empty && !state.entry.javaBehavior.empty) {
+		entryBehaviorCode +=
+		'''
+		case "«state.name»":
+			// Call «state.name» entry behavior
+			«state.entry.javaBehavior»
+			break;
+		'''
+	}
+}
+
+// DONE if entryBehaviorCode is not empty then surround it with switch (sourceState) { entryBehaviorCode }
+if (!entryBehaviorCode.empty) {
+	entryBehaviorCode = '''
+	// Entry behaviors
+	switch (targetState) {
+	'''
+	+ entryBehaviorCode +
 	'''
 	}
 	'''
