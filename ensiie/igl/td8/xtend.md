@@ -414,7 +414,7 @@ static def getEntryBehaviors(StateMachine stateMachine) {
 ```
 </div><div>
 
-**Todo**: Same as TODO 8
+**Todo**: Same as TODO 8.
 
 <details class="details-e">
 <summary>The solution</summary>
@@ -440,6 +440,57 @@ if (!entryBehaviorCode.empty) {
 	switch (targetState) {
 	'''
 	+ entryBehaviorCode +
+	'''
+	}
+	'''
+}
+```
+</details>
+</div></div>
+
+<hr class="sr">
+
+## TODO 10
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+```java
+static def getDoActivityBehaviors(StateMachine stateMachine) {
+	var states = stateMachine.states
+	var doActivityBehaviorCode = ""
+	// TODO builds the cases code before surrounding it with switch (sourceState) {}
+
+	// TODO if doActivityBehaviorCode is not empty then surround it with switch (sourceState) { doActivityBehaviorCode }
+}
+```
+</div><div>
+
+**Todo**: Same as TODO 8 or TODO 9.
+
+<details class="details-e">
+<summary>The solution</summary>
+
+```java
+// DONE builds the cases code before surrounding it with switch (sourceState) {}
+for (state: states) {
+	if (!state.name.empty && !state.doActivity.javaBehavior.empty) {
+		doActivityBehaviorCode += 
+			'''
+			case "«state.name»":
+				// Call «state.name» doActivity behavior
+				«state.doActivity.javaBehavior»
+				break;
+			'''
+	}
+}
+
+// DONE if doActivityBehaviorCode is not empty then surround it with switch (sourceState) { doActivityBehaviorCode }
+if (!doActivityBehaviorCode.empty) {
+	doActivityBehaviorCode = '''
+	// DoActivity behaviors
+	switch (targetState) {
+	'''
+	+ doActivityBehaviorCode +
 	'''
 	}
 	'''
