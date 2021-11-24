@@ -338,3 +338,60 @@ case "S3":
 
 > **Pro tip**: go read the code in expected-src, if you want to know from where the answers are coming from (i.g.: what you have to put in your switch).<br>
 > **Question**: hey, why are we using xxx in this switch, will this variable do not exist in the function. **Answer**: you called these functions in a template block. So they do not exist, their code will be printed directly in `transit` and we got `sourceState/targetState/transition`. Check `expected-src` if you don't believe it.
+
+<hr class="sr">
+
+## TODO8
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+```java
+static def getExitBehaviors(StateMachine stateMachine) {
+	var states = stateMachine.states
+	var exitBehaviorCode = ""
+	
+	// TODO builds the cases code before surrounding it with switch (sourceState) {}
+	
+	// TODO if exitBehaviorCode is not empty then surround it with switch (sourceState) { exitBehaviorCode }
+}
+```
+</div><div>
+
+**Todo**
+	* for each state, add a case in exitBehaviorCode, only if the state got an exit behavior (`state.exit.javaBehavior` not empty)
+	* if the exitBehaviorCode is not empty, wrap it in a `switch`
+
+**Tips**: you will use template blocks for the cases and the switch. Do not forget the comments.
+
+<details class="details-e">
+<summary>The solution</summary>
+
+```java
+// DONE builds the cases code before surrounding it with switch (sourceState) {}
+for (state: states) {
+	if (!state.name.empty && !state.exit.javaBehavior.empty) {
+		exitBehaviorCode += 
+		'''
+		case "«state.name»":
+			// Call «state.name» exit behavior
+			«state.exit.javaBehavior»
+			break;
+		'''
+	}
+}
+
+// DONE if exitBehaviorCode is not empty then surround it with switch (sourceState) { exitBehaviorCode }
+if (!exitBehaviorCode.empty) {
+	exitBehaviorCode =
+	'''
+	// Exit behaviors
+	switch (sourceState) {
+	'''
+	+ exitBehaviorCode +
+	'''
+	}
+	'''
+}
+```
+</details>
+</div></div>
