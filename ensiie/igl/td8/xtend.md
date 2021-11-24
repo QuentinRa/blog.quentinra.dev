@@ -282,3 +282,30 @@ for (transition : transitions) {
 ```
 </details>
 </div></div>
+
+<hr class="sr">
+
+## TODO7
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+```java
+static def getTransitionNames(StateMachine stateMachine) '''
+	«««TODO get all transition names and build expression T1, T2, ...»
+'''
+```
+</div><div>
+
+**Todo**: Same as we did in TODO4.
+
+<details class="details-e">
+<summary>The solution</summary>
+
+```java
+«««DONE get all transition names and build expression T1, T2, ...»
+«FOR transitionName : stateMachine.transitionNamesList BEFORE "" SEPARATOR ", " AFTER ""»
+	"«transitionName»"
+«ENDFOR»
+```
+</details>
+</div></div>
