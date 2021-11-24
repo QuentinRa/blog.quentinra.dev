@@ -233,3 +233,52 @@ if (stateMachine !== null) {
 ```
 </details>
 </div></div>
+
+<hr class="sl">
+
+## TODO6
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+```java
+/**
+* Utility method to get all transition names of the state machine
+* @param stateMachine the state machine to investigate
+* @return a list of transitions names in the state machine relating source & targets spearated by ";"
+*/
+static def getTransitionNamesList(StateMachine stateMachine) {
+	var transitionNames = new ArrayList<String>
+	val transitions = stateMachine.transitions	// uses getTransitions defined above
+
+	// TODO fill tansitionsNames if source & target of transition are not null & source and target names are not empty
+
+	transitionNames
+}
+```
+</div><div>
+
+You need to check that `transition.source` and `transition.target` are not null, and both of them must have a non-empty name. As you can read [in the doc](), you can use `name` (such as `transition.source.name`).
+
+* **Note**: you can call empty (`something.empty`) to check if `something` is `empty`.
+* **Note**: if you didn't pay attention, we are checking the difference with `!==`.
+
+**Todo**: if the check if passed, then add in `transitionNames`, `transition.source.name + ";" + transition.target.name`.
+
+<details class="details-e">
+<summary>The solution</summary>
+
+```java
+// DONE fill tansitionsNames iff source & target of transition are not null & source and target names are not empty
+for (transition : transitions) {
+	if (
+		transition.source !== null && 
+		transition.target !== null && 
+		!transition.source.name.empty &&
+		!transition.target.name.empty
+		) {
+			transitionNames.add(transition.source.name + ";" + transition.target.name)
+	}
+}
+```
+</details>
+</div></div>
