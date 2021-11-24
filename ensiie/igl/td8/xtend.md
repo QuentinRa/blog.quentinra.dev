@@ -122,3 +122,39 @@ if (stateMachine !== null) {
 ```
 </details>
 </div></div>
+
+<hr class="sr">
+
+## TODO3
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+```java
+static def getStateNamesList(StateMachine stateMachine) {
+	var stateNames = new ArrayList<String>
+	val states = stateMachine.states // uses getStates defined above
+	
+	// TODO fill stateNames
+	
+	stateNames
+}
+```
+</div><div>
+
+We know [from the documentation](https://download.eclipse.org/modeling/mdt/uml2/javadoc/2.1.1/org/eclipse/uml2/uml/NamedElement.html#getName()) that we got a function getName so we can call `name` on a state.
+
+**Todo**: Loop trough states and add their names in `states`.
+
+**Tip**: this is as easy as you could guess.
+
+<details class="details-e">
+<summary>The solution</summary>
+
+```java
+// DONE fill stateNames
+for (state : states) {
+	stateNames.add(state.name)
+}
+```
+</details>
+</div></div>
