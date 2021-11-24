@@ -7,7 +7,7 @@ Do you remember that in the setup, we generated code from the model? Well, if yo
 In **org.eclipse.papyrus.designer.languages.java.codegen.sm**, edit the file **JavaStateMachine.xtend** in **src/.../codegen/sm/xtend** (the last one).
 
 > **Question** 📚: How do I know that my generator is working?<br>
-> **Answer** 📖: Your generated code should be the same as the code in the the folder `expected-src` in **SMModel**.
+> **Answer** 📖: Your generated code should be the same as the code in the folder `expected-src` in **SMModel**.
 
 <hr class="sl">
 
@@ -41,7 +41,7 @@ public void transit(String sourceState, String targetState) {
 
 	String transition = sourceState + ";" + targetState;
 	if (transitions.contains(transition)) {
-		«««TODO Call entry, exit, doActivity, effect behaviors (if written in Java) in correct order according to the context (i.e. switch/cases) of this transition, the target state, and source state
+		«««TODO Call entry, exit, doActivity, effect behaviors (if written in Java) in the correct order according to the context (i.e. switch/cases) of this transition, the target state, and source state
 
 		currentState = targetState;
 	} else {
@@ -51,7 +51,7 @@ public void transit(String sourceState, String targetState) {
 ````
 </div><div>
 
-We are on a state. We are checking if we got a transition. If we do, we need to **exit the current state**, **go trough the transition so we are doing the effect**, then we are **entering** the new state, and **doing** its activity. **This is the order: exit, effect, enter, doActivity** (you don't believe me? check `expected-src`).
+We are in a state. We are checking if we got a transition. If we do, we need to **exit the current state**, **go through the transition so we are doing the effect**, then we are **entering** the new state, and **doing** its activity. **This is the order: exit, effect, enter, doActivity** (you don't believe me? check `expected-src`).
 
 Fortunately, doing exit/... is something easy, as this is simply a call to a method, at the bottom of the file <small>(the method is empty with some todo inside, but don't mind it for now)</small>.
 
@@ -143,7 +143,7 @@ static def getStateNamesList(StateMachine stateMachine) {
 
 We know [from the documentation](https://download.eclipse.org/modeling/mdt/uml2/javadoc/2.1.1/org/eclipse/uml2/uml/NamedElement.html#getName()) that we got a function getName so we can call `name` on a state.
 
-**Todo**: Loop trough states and add their names in `states`.
+**Todo**: Loop through states and add their names in `states`.
 
 **Tip**: this is as easy as you could guess.
 
@@ -167,7 +167,7 @@ for (state : states) {
 
 ```java
 /**
-* Interpolated expression to get all state names separated by ", "
+* Interpolated expression to get all states' names separated by ", "
 */
 static def getStateNames(StateMachine stateMachine) '''
 	«««TODO get all states names and build expression S1, S2, S3»
@@ -183,7 +183,7 @@ Notice that we are in a template block `'''`. The syntax of a for loop is
 «ENDFOR»
 ```
 
-**Todo**: we need to print every stateName, with a separator "`,`". You may add a if checking if stateMachine isn't null <small>(but that's useless, already checked in getStates)</small>.
+**Todo**: we need to print every stateName, with a separator "`,`". You may add an if checking if stateMachine isn't null <small>(but that's useless, we already checked in getStates)</small>.
 
 <details class="details-e">
 <summary>The solution</summary>
@@ -244,7 +244,7 @@ if (stateMachine !== null) {
 /**
 * Utility method to get all transition names of the state machine
 * @param stateMachine the state machine to investigate
-* @return a list of transitions names in the state machine relating source & targets spearated by ";"
+* @return a list of transitions names in the state machine relating source & targets separated by ";"
 */
 static def getTransitionNamesList(StateMachine stateMachine) {
 	var transitionNames = new ArrayList<String>
@@ -314,9 +314,9 @@ static def getTransitionNames(StateMachine stateMachine) '''
 
 ## Mid-way explanation
 
-Until now, you were coding functions without understanding why you did that. These functions are utilities functions that we need for our 4 main functions that we called in `transit` a while back.
+Until now, you were coding functions without understanding why you did that. These functions are utility functions that we need for the 4 main functions that we called in `transit` a while back.
 
-For each function, you are expecting something like that. Of course, `sourceState` will change, the values in the case will change, the content of the comments will change, and finally, you were not supposed to know `System.out.println(???)`. The user defined in his diagram some code that will be executed when exiting. This is `System.out.println(???)`. Some states may not have such code, so you will have to check that they do (we don't want empty cases).
+For each function, you are expecting something like that. Of course, `sourceState` will change, the values in the case will change, the content of the comments will change, and finally, you were not supposed to know `System.out.println(???)`. The user, defined in his/her diagram some code that will be executed when exiting. This is `System.out.println(???)`. Some states may not have such code, so you will have to check that they do (we don't want empty cases).
 
 ```java
 // Exit behaviors
@@ -578,13 +578,13 @@ You should already know how you can do that, if not, check the setup section.
 Then, let's run our code. 
 
 * Right-click on **Main** <small>(the JAVA file in the generated model)</small> > Run as > Java Application.
-* You can't execute the **Main** in expected-src <small>(at least I didn't managed too, in eclipse that is)</small>
+* You can't execute the **Main** in expected-src <small>(at least I didn't manage to, in eclipse that is)</small>
 
 <hr class="sr">
 
 ## Checking that you got what we expected
 
-I will use IntelliJ to check. You may use any IDE you want, simply enjoying this small time outside eclipse. To find a folder, don't forget to use Right-click > Show In > System Explorer.
+I will use IntelliJ to check. You may use any IDE you want, simply enjoying this small adventure outside eclipse. To find a folder, don't forget to use Right-click > Show In > System Explorer.
 
 * Run the main in expected-src. **Compare with yours**
 

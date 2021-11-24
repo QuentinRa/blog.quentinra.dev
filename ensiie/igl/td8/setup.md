@@ -2,9 +2,9 @@
 
 [Go back](../index.md#td8---code-generation)
 
-The setup include installing **papyrus.designer**, **Xtend IDE**, and **acceleo**. While the steps are easy, you will have to deal with multiples instances of Papyrus and things aren't tidy nor convenient at all 😬.
+The setup include installing **papyrus.designer**, **Xtend IDE**, and **acceleo**. While the steps are easy, you will have to deal with multiple instances of Papyrus and things aren't tidy nor convenient at all 😬.
 
-> **Note**: I may have installed more than the bare minimum, but it's working! Please tell me if we are unselect some things.
+> **Note**: I may have installed more than the bare minimum, but it's working! Please edit if we can unselect some things.
 
 <hr class="sl">
 
@@ -47,7 +47,7 @@ The setup include installing **papyrus.designer**, **Xtend IDE**, and **acceleo*
   * [Model_Transformation_Tutorial_Student.zip](https://github.com/memorize-code/memorize-references/tree/main/igl/Model_Transformation_Tutorial_Student.zip)
 * **WE WON'T USE THIS PAPYRUS** ❗
 
-Then, we need to create an editor that will be usable, I mean we need autocompletion and so on. You can't close the previous one trough 👎.
+Then, we need to create an editor that will be usable, I mean we need autocompletion and so on. You can't close the previous one through 👎.
 
 * Run > Run Configurations (or Debug Configurations)
 * Double-click on Eclipse
@@ -60,7 +60,7 @@ In **xtend_editor**
 * Import projects
 * Existing Projects Into Workspace
 * Browse
-* Go find "Model_Transformation_Tutorial_Student". You should have 9 projects listed once you opened "Model_Transformation_Tutorial_Student".
+* Go find "Model_Transformation_Tutorial_Student". You should have 9 projects listed once you open "Model_Transformation_Tutorial_Student".
 * Wait a bit, some cross/errors will appear. You can ignore them, aside from
   * package xxx.codegen.sm => replace java version in plugin.xml with 1.8
   * package xxx.ui.sm => replace java version in plugin.xml with 1.8
