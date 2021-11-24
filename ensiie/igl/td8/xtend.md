@@ -30,22 +30,22 @@ To generate `«»` or to trigger autocompletion, press <kbd>CTRL+SPACE</kbd>.
 ```java
 public void transit(String sourceState, String targetState) {
 	if (!states.contains(sourceState)) {
-		System.err.println("Invalid source state: " + sourceState);
-		return;
+System.err.println("Invalid source state: " + sourceState);
+return;
 	}
 	
 	if (!states.contains(targetState)) {
-		System.err.println("Invalid target state: " + targetState);
-		return;
+System.err.println("Invalid target state: " + targetState);
+return;
 	}
-		
+
 	String transition = sourceState + ";" + targetState;
 	if (transitions.contains(transition)) {
-		«««TODO Call entry, exit, doActivity, effect behaviors (if written in Java) in correct order according to the context (i.e. switch/cases) of this transition, the target state, and source state
+«««TODO Call entry, exit, doActivity, effect behaviors (if written in Java) in correct order according to the context (i.e. switch/cases) of this transition, the target state, and source state
 
-		currentState = targetState;
+currentState = targetState;
 	} else {
-		System.err.println("Invalid transition: current state " + currentState + " cannot transit to " + targetState);
+System.err.println("Invalid transition: current state " + currentState + " cannot transit to " + targetState);
 	}
 }
 ````
@@ -81,5 +81,44 @@ if (transitions.contains(transition)) {
 ```
 
 **Why do you add spaces like this?** Later, you will compare your generated code with the one in `expected-src` and see that you need to add spaces.
+</details>
+</div></div>
+
+<hr class="sl">
+
+## TODO2
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+```java
+static def getStates(StateMachine stateMachine) {
+	var states = new ArrayList<State>
+
+	// TODO fill states with all ownedElements which are State
+
+	states
+}
+```
+</div><div>
+
+This method is supposed to return every state in our `stateMachine`. Note that `states` (the last line) is the same as `return states;`.
+
+**Todo**: if stateMachine is not null, then iterate [allOwnedElements](https://download.eclipse.org/modeling/mdt/uml2/javadoc/2.1.1/org/eclipse/uml2/uml/Element.html#allOwnedElements()) and add every State (`instanceof`) in `states`.
+
+**Tip**: this is almost of copy-paste of the method above (`getInitialState`). Use it for the syntax of the for (each).
+
+<details class="details-e">
+<summary>The solution</summary>
+
+```java
+// DONE fill states with all ownedElements which are State
+if (stateMachine !== null) {
+	for (ownedElement : stateMachine.allOwnedElements) {
+		if (ownedElement instanceof State) {
+			states.add(ownedElement)
+		}
+	}
+}
+```
 </details>
 </div></div>
