@@ -30,22 +30,22 @@ To generate `«»` or to trigger autocompletion, press <kbd>CTRL+SPACE</kbd>.
 ```java
 public void transit(String sourceState, String targetState) {
 	if (!states.contains(sourceState)) {
-System.err.println("Invalid source state: " + sourceState);
-return;
+		System.err.println("Invalid source state: " + sourceState);
+		return;
 	}
 	
 	if (!states.contains(targetState)) {
-System.err.println("Invalid target state: " + targetState);
-return;
+		System.err.println("Invalid target state: " + targetState);
+		return;
 	}
 
 	String transition = sourceState + ";" + targetState;
 	if (transitions.contains(transition)) {
-«««TODO Call entry, exit, doActivity, effect behaviors (if written in Java) in correct order according to the context (i.e. switch/cases) of this transition, the target state, and source state
+		«««TODO Call entry, exit, doActivity, effect behaviors (if written in Java) in correct order according to the context (i.e. switch/cases) of this transition, the target state, and source state
 
-currentState = targetState;
+		currentState = targetState;
 	} else {
-System.err.println("Invalid transition: current state " + currentState + " cannot transit to " + targetState);
+		System.err.println("Invalid transition: current state " + currentState + " cannot transit to " + targetState);
 	}
 }
 ````
@@ -183,7 +183,7 @@ Notice that we are in a template block `'''`. The syntax of a for loop is
 «ENDFOR»
 ```
 
-**Todo**: we need to print every stateName, with a separator "`,`".
+**Todo**: we need to print every stateName, with a separator "`,`". You may add a if checking if stateMachine isn't null <small>(but that's useless, already checked in getStates)</small>.
 
 <details class="details-e">
 <summary>The solution</summary>
@@ -196,5 +196,40 @@ Notice that we are in a template block `'''`. The syntax of a for loop is
 ```
 
 Why do we need `""`, could I use `''` or nothing at all? My teacher told me that `""` is used when you want something to be "printed" in the code, so we have to.
+</details>
+</div></div>
+
+<hr class="sr">
+
+## TODO5
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+```java
+static def getTransitions(StateMachine stateMachine) {
+	var transitions = new ArrayList<Transition>
+	 	
+	// TODO fill transitions with all ownedElements which are Transition
+	 	
+	 transitions
+}
+```
+</div><div>
+
+**Todo**: some as TODO2 but with Transition
+
+<details class="details-e">
+<summary>The solution</summary>
+
+```java
+// DONE fill transitions with all ownedElements which are Transition
+if (stateMachine !== null) {
+	for (ownedElement : stateMachine.allOwnedElements) {
+		if (ownedElement instanceof Transition) {
+			transitions.add(ownedElement)
+		}
+	}
+}
+```
 </details>
 </div></div>
