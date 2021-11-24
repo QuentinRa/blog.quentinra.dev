@@ -309,3 +309,32 @@ static def getTransitionNames(StateMachine stateMachine) '''
 ```
 </details>
 </div></div>
+
+<hr class="sl">
+
+## Mid-way explanation
+
+Until now, you were coding functions without understanding why you did that. These functions are utilities functions that we need for our 4 main functions that we called in `transit` a while back.
+
+For each function, you are expecting something like that. Of course, `sourceState` will change, the values in the case will change, the content of the comments will change, and finally, you were not supposed to know `System.out.println(???)`. The user defined in his diagram some code that will be executed when exiting. This is `System.out.println(???)`. Some states may not have such code, so you will have to check that they do (we don't want empty cases).
+
+```java
+// Exit behaviors
+switch (sourceState) {
+case "S1":
+	// Call S1 exit behavior
+	System.out.println("Exiting S1");
+	break;
+case "S2":
+	// Call S2 exit behavior
+	System.out.println("Exiting S2");
+	break;
+case "S3":
+	// Call S3 exit behavior
+	System.out.println("Exiting S3");
+	break;
+}
+```
+
+> **Pro tip**: go read the code in expected-src, if you want to know from where the answers are coming from (i.g.: what you have to put in your switch).<br>
+> **Question**: hey, why are we using xxx in this switch, will this variable do not exist in the function. **Answer**: you called these functions in a template block. So they do not exist, their code will be printed directly in `transit` and we got `sourceState/targetState/transition`. Check `expected-src` if you don't believe it.
