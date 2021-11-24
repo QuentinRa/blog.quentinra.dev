@@ -498,3 +498,69 @@ if (!doActivityBehaviorCode.empty) {
 ```
 </details>
 </div></div>
+
+<hr class="sl">
+
+## TODO 11
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+```java
+static def getEffectBehaviors(StateMachine stateMachine) {
+	var transitions = stateMachine.transitions
+	var effectBehaviorCode = ""
+	// TODO builds the transition name as "transition source name;transition target name" 
+	// TODO for each case the source AND target of the transition must be non null
+	// TODO for each case the source AND target names of the transition must be non empty
+
+	// TODO if transition name is not empty AND there is an effect behavior there is a case for this transition so builds the cases code before surrounding it with switch (sourceState) {}
+		
+	// TODO if effectBehaviorCode is not empty then surround it with switch (transition) { effectBehaviorCode }
+}
+```
+</div><div>
+
+It's hard 😭, because you got 5 TODO. But it's easy, as this is almost like what you did before, but we are adding more clauses in the if.
+
+**Todo**: Same as TODO 8 or TODO 9, with some additional checks.
+
+<details class="details-e">
+<summary>The solution</summary>
+
+```java
+for (transition: transitions) {
+	// DONE for each case the source AND target of the transition must be non null
+	// DONE for each case the source AND target names of the transition must be non empty
+	if (
+		transition.source !== null && 
+		transition.target !== null && 
+		!transition.source.name.empty &&
+		!transition.target.name.empty &&
+		!transition.effect.javaBehavior.empty
+	) {
+		// DONE builds the transition name as "transition source name;transition target name"
+		var transitionName = transition.source.name + ";" + transition.target.name
+		// DONE if transition name is not empty AND there is an effect behavior there is a case for this transition so builds the cases code
+		effectBehaviorCode += '''
+		case "«transitionName»":
+			// Call «transitionName» effect behavior
+			«transition.effect.javaBehavior»
+			break;
+		'''
+	}
+}
+
+// DONE if effectBehaviorCode is not empty then surround it with switch (transition) { effectBehaviorCode }
+if (!effectBehaviorCode.empty) {
+	effectBehaviorCode = '''
+	// Transition effect behaviors
+	switch (transition) {
+	'''
+	+ effectBehaviorCode +
+	'''
+	}
+	'''
+}
+```
+</details>
+</div></div>
