@@ -1,4 +1,4 @@
-# Setup TD8 - Code Generation
+# Setup TD9 - Code Generation
 
 [Go back](../index.md#td8---code-generation)
 
@@ -67,7 +67,7 @@ In our new editor, **xtend_editor**
 * General > Existing Projects Into Workspace
 * Browse
 * Go find "Model_Transformation_Tutorial_Student". You should have 9 projects listed once you open "Model_Transformation_Tutorial_Student".
-* Wait a bit, some cross/errors will appear. You can ignore them, aside from
+* Wait a bit, some cross/errors will appear. You can ignore them (such as javaLangCodeGen.java), aside from
   * package xxx.codegen.sm => replace java version in plugin.xml with 1.8
   * package xxx.ui.sm => replace java version in plugin.xml with 1.8
 
