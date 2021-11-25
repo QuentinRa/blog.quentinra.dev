@@ -51,3 +51,16 @@ In this section, we will again generate code, but this time, we will use **Accel
 	[aType.oclAsType(Enumeration).genEnumJavaFile()/]
 ```
 </details>
+
+<hr class="sl">
+
+## Getting the results of your hard work
+
+* In the `runtime_eclipse` instance
+* Click on the arrow to extend the model (see di, notation, UML)
+* Right-click on the UML file
+  * Acceleo Model To Text
+  * Generate UML2java
+* You got a folder **src-gen**
+
+I did it on SMModel, and the folder was quite empty, but fortunately, on my model, it did the job.
