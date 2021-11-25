@@ -14,7 +14,7 @@ In this section, we will again generate **documentation, for our classes**. You 
 
 ## TODO 1 (generateMain)
 
-```none
+```
 [comment TODO search for classes and interfaces in model's nested packages/]
 [comment TODO then display Package's name/]
 [comment TODO and indent classes and interfaces names/]
@@ -80,7 +80,7 @@ Package {Name}
 
 <hr class="sr">
 
-## TODO 2
+## TODO 2 (generateClass)
 
 ```
 [comment TODO also generate Association elements for aClass : see generateAssociation.mtl/]
@@ -102,5 +102,72 @@ Then the code is
 ```java
 [comment DONE also generate Association elements for aClass : see generateAssociation.mtl/]
 [generateAssociationElement(aClass)/]
+```
+</details>
+
+<hr class="sl">
+
+## TODO 3 (generateInterface)
+
+```
+[comment TODO see generateClass.mtl for inspiration/]
+```
+
+**Todo**: ???
+
+<details class="details-e">
+<summary>Possible solution</summary>
+
+```none
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generateInterface.
+ */]
+[module generateInterface('http://www.eclipse.org/uml2/5.0.0/UML')]
+[import org::eclipse::acceleo::module::sample::files::generateAttribute/]
+[import org::eclipse::acceleo::module::sample::files::generateOperation/]
+[import org::eclipse::acceleo::module::sample::files::generateParent/]
+[import org::eclipse::acceleo::module::sample::files::generateAssociation/]
+
+[**
+ * The documentation of the template generateElement.
+ * @param anInterface
+ */]
+[template public generateInterfaceElement(anInterface : Interface)]
+
+[file (anInterface.name, false, 'UTF-8')]
+[anInterface.visibility/] interface [anInterface.name.toUpperFirst()/][generateParentElement(anInterface)/] {
+
+[for (p : Property | anInterface.attribute)]
+	[generateAttributeElement(p)/]
+[/for]
+[for (o : Operation | anInterface.ownedOperation)]
+	[generateOperationElement(o)/]
+[/for]
+[generateAssociationElement(anInterface)/]
+}
+[/file]
+[/template]
+```
+
+And create `generateParentElement(Interface)` in `generateParent.mtl`
+
+```none
+[**
+ * The documentation of the template generateElement.
+ * @param anInterface
+ */]
+[template public generateParentElement(anInterface : Interface)]
+[for (i : Interface | anInterface.redefinedInterface) before ('extends') separator (', ') ]
+	[i.name/]
+[/for]
+[/template]
+```
+
+And edit `generateAssociationElement` in `generateAssociation.html`
+
+```diff
+- [template public generateAssociationElement(c: Class)]
++ [template public generateAssociationElement(c: Type)]
 ```
 </details>

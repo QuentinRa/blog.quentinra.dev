@@ -13,4 +13,4 @@ We have to write some code, that will be able to generate **Java** and **Documen
 * [Setup](td8/setup.md) (**hard** 😱, **may take around 20 minutes**)
 * [Code generation with Xtend](td8/xtend.md) (**medium**)
 * [Code generation with Acceleo](td8/acceleo_code.md) (**easy**)
-* [Code documentation generation with Acceleo](td8/acceleo_doc.md) (**easy**)
+* [Code documentation generation with Acceleo](td8/acceleo_doc.md) (**easy-medium**)
