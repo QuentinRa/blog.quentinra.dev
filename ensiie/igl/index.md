@@ -11,4 +11,5 @@ IGL "Introduction au génie logiciel" is not an easy course. You will need stren
 We have to write some code, that will be able to generate **Java** and **Documentation** from our **model**. We will test a few ways of doing so.
 
 * [Setup](td8/setup.md) (**hard** 😱, **may take around 20 minutes**)
-* [Code generation with Xtend](td8/xtend.md) (**relatively easy**)
+* [Code generation with Xtend](td8/xtend.md) (**medium**)
+* [Code generation with Acceleo](td8/acceleo_code.md) (**easy**)
