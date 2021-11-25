@@ -53,3 +53,27 @@ Then the code is
 [/for]
 ```
 </details>
+
+I'm expecting something like this, but without changing some things, it won't look neat at all.
+
+```none
+Package {Name}
+	public class {Name} {extend ...}{implements ...} {
+		
+		public {Type} {attributeName};
+			
+		public {Type} {methodName}({args}) {
+		}			
+	}
+```
+
+<hr class="sl">
+
+## Generate Documentation
+
+* In the `runtime_eclipse` instance
+* Click on the arrow to extend the model (see di, notation, UML)
+* Right-click on the UML file
+    * Acceleo Model To Text
+    * Generate **UML2text**
+* You got a .txt in the folder **src-gen**
