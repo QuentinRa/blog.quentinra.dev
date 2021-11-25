@@ -2,7 +2,7 @@
 
 [Go back](../index.md#td8---code-generation)
 
-In this section, we will again generate code, but this time, we will use **Acceleo**. Note that the output is not the same! **Edit the file**: `/org.eclipse.acceleo.examples.uml2java/` > src > `/org/eclipse/acceleo/examples/uml2java/main/uml2java.mtl`.
+In this section, we will again generate code, but this time, we will use **Acceleo**. Note that the output is not the same, **we are only generating code for classes**! **Get started by opening the file**: `/org.eclipse.acceleo.examples.uml2java/` > src > `/org/eclipse/acceleo/examples/uml2java/main/uml2java.mtl`.
 
 <hr class="sl">
 
