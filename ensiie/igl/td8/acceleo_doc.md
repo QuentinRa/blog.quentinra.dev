@@ -77,3 +77,30 @@ Package {Name}
     * Acceleo Model To Text
     * Generate **UML2text**
 * You got a .txt in the folder **src-gen**
+
+<hr class="sr">
+
+## TODO 2
+
+```
+[comment TODO also generate Association elements for aClass : see generateAssociation.mtl/]
+```
+
+**Todo**: simply call generateAssociationElement
+
+<details class="details-e">
+<summary>Solution</summary>
+
+Don't forget to import
+
+```
+[import org::eclipse::acceleo::module::sample::files::generateInterface/]
+```
+
+Then the code is
+
+```java
+[comment DONE also generate Association elements for aClass : see generateAssociation.mtl/]
+[generateAssociationElement(aClass)/]
+```
+</details>
