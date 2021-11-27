@@ -1,0 +1,47 @@
+,
+    {
+      "tag": "it-legal",
+      "name": "<span style='background: rgb(14,0,255);\nbackground: linear-gradient(90deg, rgba(14,0,255,0.2) 0%, rgba(255,255,255,0.2) 50%, rgba(255,0,0,0.2) 100%);' class='px-1'>Droit Informatique</span>",
+      "desc": "A course in French about legal concerns that a developer may have to face in regards to data privacy and GPDR compliance.",
+      "icon": null
+    }
+
+https://www.cnil.fr/fr/cookies-et-autres-traceurs-la-cnil-publie-des-lignes-directrices-modificatives-et-sa-recommandation
+https://www.cnil.fr/fr/cookies-et-autres-traceurs-la-cnil-publie-de-nouvelles-lignes-directrices
+file:///C:/Users/quent/Desktop/ENSIIE/S3/eco/LE%20CADRE%20JURIDIQUE%20DES%20DONNEES%20A%20CARACTERE%20PERSONNEL_ENSIIE%202021-2022.pdf
+
+Consenment avant traitement => sanctions si déposés avec de dire oui
+=> site webs, applications, ...
+=> finalité => sanctions si pas assez d'infos
+	=> consentement par finalité => sanctions si finalités non essentielles
+	=> aussi facile de dire oui que non
+	=> murs de cookies non interdits de façon générale => si on dit pas oui alors dehors
+=> article 82 => ePrivacy
+=> exception: cookies fonctionels
+
+CSE
+CNIL
+DCP Données charactère personel
+AAA = Autorité admin a
+
+réglement: immédiat (2018, traitement demande autorisation)
+directive: transition (ex: 95)
+
+Conformité => s'assure on est conforme au texte -> accountability / responsabilité
+
+mineurs => RS
+
+article 32 : sécurité
+
+CNIL règles sur les cookies
+registres de traitements > 250 employés (et exceptions) mais autres peuvent en avoir un
+garantie par défaut
+privacy by design
+
+sous-traitant = 3 registres
+
+safe harbor => privacy shield
+
+12 pays adéquation transfert ok
+
+https://rgpd.medef.com/
