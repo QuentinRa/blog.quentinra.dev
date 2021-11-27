@@ -1,10 +1,38 @@
 # Introduction au génie logiciel
 
-IGL "Introduction au génie logiciel" is not an easy course. You will need strength and motivation to survive 👀. <small>Joke aside, it's hard to learn something. You will have a lot of things used in the graded homework that you didn't "see" during classes</small>.
+IGL "Introduction au génie logiciel" is not an easy course. You will need strength and motivation to survive 👀. <small>Joke aside, it's hard to learn something. You will have a lot of things used in graded homeworks that you didn't "see" during classes</small>.
 
-> In 2021, the version of Papyrus in the school was **4.8.0**, so even if there are newer versions, [install Papyrus 4.8.0](https://www.eclipse.org/downloads/download.php?file=/modeling/mdt/papyrus/rcp/2020-06/4.8.0/papyrus-2020-06-4.8.0-win64.zip). If you need another version of papyrus that is not on the official website, trick the URL above (it works, that's how I found this version).
+> In 2021, the version of Papyrus in the school was **4.8.0**, so even if there are newer versions, [install Papyrus 4.8.0](https://www.eclipse.org/downloads/download.php?file=/modeling/mdt/papyrus/rcp/2020-06/4.8.0/papyrus-2020-06-4.8.0-win64.zip). If you need another version of papyrus that is not on the official website, look for the section **Update sites** on [Papyrus Download Page](https://www.eclipse.org/papyrus/download.html).
 
 <hr class="sl">
+
+## Install Papyrus
+
+<table class="table table-bordered table-striped border-dark">
+<tr>
+<th>Steps</th>
+<th>Notes</th>
+</tr>
+
+<td>
+
+* (**If not done**) Download and Install Java <small>([Oracle JDK17](https://www.oracle.com/java/technologies/downloads/), Windows > Installer)</small>
+* [Download Papyrus 4.8.0](https://www.eclipse.org/downloads/download.php?file=/modeling/mdt/papyrus/rcp/2020-06/4.8.0/papyrus-2020-06-4.8.0-win64.zip) or check [Papyrus Download Page](https://www.eclipse.org/papyrus/download.html)
+* (**Optional**) For some, you may need to do this ([~source](https://www.youtube.com/watch?v=QlGrBHkwDXQ&ab_channel=GameTrick))
+  * To find your Java folder <small>(ex: `C:\Program Files\Java\jdk-17\bin`)</small>
+  * In Papyrus Config file, named `papyrus.ini`, add two lines before the line with `-vmargs`
+  * `-vm`
+  * `C:\Program Files\Java\jdk-17\bin`
+</td>
+<td>
+
+**We will work with Java 1.8, but you can use a newer version and configure that later**.
+
+It's a good practice to make backup, as losing everything <small>(or Random bugs)</small> may be a daily occurrence, especially if you are using SysML.
+</td>
+</table>
+
+<hr class="sr">
 
 ## TD9 - Code Generation
 

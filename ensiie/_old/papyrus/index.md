@@ -1,11 +1,8 @@
 # Papyrus
 
-[Go back](../index.md)
-
 **Papyrus** is an open-source tool, made by the eclipse foundation,
 allowing you to **create** UML diagram and **simulate** them
 with some data that you are providing.
-You can [download it here](https://www.eclipse.org/papyrus/download.html). Note that the current version is **5.0.0**, but it is [models generated with the previous version should work](https://projects.eclipse.org/projects/modeling.mdt.papyrus/releases/5.0.0/plan).
 
 Once the software is started, create a **new papyrus model**. A model is made of 3 files (.di/.notation/.uml), don't share only one of them, it won't work. Also, just in case, **save your model often 😖**.
 
