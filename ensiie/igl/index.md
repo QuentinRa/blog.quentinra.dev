@@ -40,43 +40,7 @@ We have to write some code, that will be able to generate **Java** and **Documen
 
 * [Setup](td9/setup.md) (**hard** 😱, **may take around 20 minutes**)
 * [Code generation with Xtend](td9/xtend.md) (**medium**)
-* [Code generation with Acceleo](td9/acceleo_code.md) (**easy**)
-* [Code documentation generation with Acceleo](td9/acceleo_doc.md) (**easy-medium**)
 
-> **Pro tip**: you need to close and run again the 3rd editor, each time you changed the code in the 2nd editor.<br>
-> **Pro tip**: you can't run the expected main in eclipse. If you try, you are going to run the previous program, not the expected main.
+> **Note**: you need to run the second IDE again, each time you changed something in the first IDE.
 
-About the project
-
-<details class="details-e">
-<summary>XTend Generator isn't generating a lot of files</summary>
-
-It means that it crashed. Check for error messages in `xtend_editor` console. In my case, it was because I got some vertex/nodes without names.
-</details>
-
-<details class="details-e">
-<summary><b>java.util.HashSet</b>/<b>java.util.Arrays</b> no added</summary>
-
-You need to declare dependencies. This is a bit complex, but fortunately, I'm giving you the steps
-
-* Click on SmartHouse (in the model explorer, the root)
-* Go to **Profile** > Profile Applications
-  * Next to "+" and "x", click on "apply registered profile"
-    * Add "Papyrus Code Generation Profile"
-    * Add "Papyrus Java Profile"
-
-In SmartHouse (root), add a new package (new child), Click on it, then **Profile**, then **Applied Stereotypes**, and add **NoCodeGen** (it's useless but do it). Put inside two classes
-
-* HashSet
-* Arrays
-
-And on both of them, add them a stereotype (Profile > +) "External". Click on the stereotype and don't forget to set the value for name. This is the package+class that you want.
-
-Then create in the root a new class diagram "Dependencies" and use the usage relationship to request an import.
-</details>
-
-<details class="details-e">
-<summary>Need package errors</summary>
-
-You can't use NoCodeGen, the generator is only checking classes with this stereotype. You either have to nuke Needs, tell the parser that you don't want to parse Needs, or update the parser.
-</details>
+This is covering the TP, that you need this in order to do the [**TD9 of the project**](td9/project.md).
