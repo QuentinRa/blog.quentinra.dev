@@ -578,7 +578,9 @@ You should already know how you can do that, if not, check the setup section.
 Then, let's run our code. 
 
 * Right-click on **Main** <small>(the JAVA file in the generated model)</small> > Run as > Java Application.
-* You can't execute the **Main** in expected-src <small>(at least I didn't manage to, in eclipse that is)</small>
+* **You can't execute the Main in expected-src** <small>(at least I didn't manage to, in eclipse that is)</small>. It will execute again the previous main, so you might be fooled by eclipse.
+
+> **Pro tip**: to run expected-src, you need to right-click in the package explorer (somewhere), then new > others > Java > Java Project. I used the name `org.eclipse.papyrus.expectedgen.SMModel`, Java 1.8, and "no" when prompted to open Java perspective. You can now copy and paste the "com" in "expected-src", inside the "src" of your new project, then run it.
 
 <hr class="sr">
 
