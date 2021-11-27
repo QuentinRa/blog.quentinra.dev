@@ -188,6 +188,8 @@ And we are creating the template **genType** in **common/fileUtils.mtl**
 [if (aType.toUpperFirst() = 'Real')]Float[else][aType.toUpperFirst()/][/if]
 [/template]
 ```
+
+> **Pro tip**: We should handle **Unlimited Natural** (Long) too. String, Boolean, and Integer are already like we want. 
 </details>
 
 <details class="details-e">
@@ -202,4 +204,72 @@ import java.util.*;
 // [/protected]
 [/template]
 ```
+
+You need to add import right-after the java.util import. But, this won't do. You will also have to put every package inside one package, because in Java, you can't import classes nested in the default package. **In fileUtils**, edit these two functions with
+
+```diff
+[template private packagePath(aType : Type)]
+- [ /* something */ /]
++ ['/' + aType.getSourcePackage() + '/' + /* something */ /]
+[/template]
+
+[template public genPackageValue(aType : Type)]
+- [ /* something */ /]
++ [aType.getSourcePackage() + '.' + /* something */ /]
+[/template]
+```
+
+And create the template **getSourcePackage**
+
+```java
+[template public getSourcePackage(aType : Type)]
+[aType.getModel().name/]
+[/template]
+```
+
+Now, your packages will be in a default package named **SmartHouse**. Allowing you do to use the following import statements.
+
+```java
+import SmartHouse.Software.*;
+import SmartHouse.Hardware.*;
+import SmartHouse.Communication.Alarm_Protocol.*;
+import SmartHouse.Communication.Controller_Protocol.*;
+import SmartHouse.Communication.HeatingACS_Protocol.*;
+import SmartHouse.Communication.Managers_Protocol.*;
+import SmartHouse.Communication.Sensors_Protocol.*;
+```
+</details>
+
+<details class="details-e">
+<summary>Duplicates methods</summary>
+
+Obviously, this is a problem in your model, but you can edit **classJavaFile**, template **operations**
+
+```diff
+- [for (anOperation : Operation | aClass.getOperations()->union(aClass.getImplementedInterfaces().ownedOperation))]
++ [for (anOperation : Operation | aClass.getOperations())]
+```
+</details>
+
+<details class="details-e">
+<summary>Do not generate External Classes</summary>
+
+Wrap the code generating aClass inside this if. You can trick this code to make it work with other templates.
+
+```java
+[let c : Classifier = aClass.oclAsType(Classifier)]
+[if (c.getAppliedStereotypes()->collect(name)->count('External') = 0)]
+
+[/if]
+[/let]
+```
+</details>
+
+<details class="details-e">
+<summary>Running your code 🚀</summary>
+
+* In the runtime_editor
+* Right-click > New > Others > Java Project
+* `org.eclipse.acceleo.javagen.SmartHouse`, Java 1.8, and you don't need to open the Java perspective
+* Generate the code and put it in src
 </details>

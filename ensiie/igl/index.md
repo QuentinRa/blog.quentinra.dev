@@ -41,6 +41,7 @@ We have to write some code, that will be able to generate **Java** and **Documen
 * [Setup](td9/setup.md) (**hard** 😱, **may take around 20 minutes**)
 * [Code generation with Xtend](td9/xtend.md) (**medium**)
 * [Code generation with Acceleo](td9/acceleo_code.md) (**easy**)
+* [Code documentation generation with Acceleo](td9/acceleo_doc.md) (**easy-medium**)
 
 > **Note**: you need to run the second IDE again, each time you changed something in the first IDE.
 
