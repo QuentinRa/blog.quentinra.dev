@@ -1,12 +1,14 @@
 # SmartHouse TD9
 
+[Go back](../index.md)
+
 ...
 
 <hr class="sl">
 
 ## xtend : help
 
-> **Goal**: Generate a project, with a main, that can be run. We are not expecting any output (for now, unclear directives).
+> **Goal**: Generate code, with a main, that can be run. We are expecting the code to be able to move from one state to another (???).
 
 <details class="details-e">
 <summary>Missing files</summary>
@@ -152,4 +154,52 @@ And in **javaOperationDeclaration**
 + «IF javaReturnSpec(operation) != 'void ' && !isConstructor(operation)»return null;«ENDIF»«ENDIF»
 ```
 </details>
+</details>
+
+<hr class="sr">
+
+## Acceleo (code) : help
+
+> **Goal**: generate code from classes.
+
+<details class="details-e">
+<summary>Types aren't valid Java types</summary>
+
+First, types such as Real are not converted to Float. You need to replace the print of the type by a call
+
+* use `genType(aProperty.type.name)`
+	* instead of `aProperty.type.name`
+	* or instead of `aProperty.type.name.toUpperFirst()`
+* of course, sometimes the variable isn't called aProperty
+
+The locations are
+
+* **classJavaFile**: **fields** (1), **operations** (1), **parameters** (1), **accessors** (2)
+* **interfaceJavaFile**: **genInterfaceJavaFile** (1), **parameters** (1)
+
+And we are creating the template **genType** in **common/fileUtils.mtl**
+
+```java
+[**
+ * Generates the type in Java given an OCL type
+ * @param aType The OCL Type
+ */]
+[template public genType(aType : String)]
+[if (aType.toUpperFirst() = 'Real')]Float[else][aType.toUpperFirst()/][/if]
+[/template]
+```
+</details>
+
+<details class="details-e">
+<summary>Missing imports</summary>
+
+An easy way to do this is to hardcode the import, by adding some lines in **genDefaultImport** inside **common/fileUtils.mtl**
+
+```java
+[template public genDefaultImport(aType : Type)]
+// [protected ('for imports')]
+import java.util.*;
+// [/protected]
+[/template]
+```
 </details>
