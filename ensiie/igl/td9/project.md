@@ -75,3 +75,23 @@ stateMachine.transit("S1", "S2"); // error, check HouseController for states
 
 You may run the main, as we did with the previous Main.
 </details>
+
+<details class="details-e">
+<summary>NoCodeGen</summary>
+<br>
+
+<details class="details-e">
+<summary>Code to not import a package marked as NoCodeGen</summary>
+
+If you added NoCodeGen to ExternalTypes, you have to remove it or improve the following code in **ClassUtils.java**, **requiredClassifiers**, right before the return. You may use the method filter too if you want.
+
+```
+EList<Classifier> usedClassesReturn = new UniqueEList<Classifier>();
+for(Classifier c : usedClasses) {
+	if (!GenUtils.hasStereotypeTree(c, NoCodeGen.class)) {
+		usedClassesReturn.add(c);
+	}
+}
+```
+</details>
+</details>
