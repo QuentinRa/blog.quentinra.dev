@@ -85,13 +85,71 @@ You may run the main, as we did with the previous Main.
 
 If you added NoCodeGen to ExternalTypes, you have to remove it or improve the following code in **ClassUtils.java**, **requiredClassifiers**, right before the return. You may use the method filter too if you want.
 
-```
+```java
+// import
+// import org.eclipse.papyrus.designer.languages.common.profile.Codegen.NoCodeGen;
 EList<Classifier> usedClassesReturn = new UniqueEList<Classifier>();
 for(Classifier c : usedClasses) {
 	if (!GenUtils.hasStereotypeTree(c, NoCodeGen.class)) {
 		usedClassesReturn.add(c);
 	}
 }
+```
+</details>
+
+<details class="details-e">
+<summary>Code to not generate a package marked as NoCodeGen</summary>
+
+Edit **noCodeGen** in **JavaModelElementsCreator**.
+
+```diff
+- GenUtils.hasStereotypeTree(element, ExternLibrary.class) ||
++ GenUtils.hasStereotypeTree(element, ExternLibrary.class) &&
++ GenUtils.hasStereotypeTree(element, NoCodeGen.class);
+```
+</details>
+</details>
+
+<details class="details-e">
+<summary>Default code for methods</summary>
+
+We are considering cases such as `return false;` missing in a method (as a default implementation), while you could also completely implement a method.
+
+<details class="details-e">
+<summary>Default/Implementation, as we did with the main</summary>
+
+* Right-click on a class (ex: TemperatureSensor)
+* New Child > Opaque Behavior > Owned ...
+* Name it (ex: `getTemperatureDefaultImplementation`)
+* Language > + > Java
+* Write some code
+```java
+// todo
+return false;
+```
+* Click on a method (ex: `getTemperature`)
+* In UML, look for the field Method
+* Add your Opaque Behavior
+</details>
+
+<details class="details-e">
+<summary>Default implementation in the generator</summary>
+
+You must change the return type so that's it's always a class, if this is not a constructor nor void. Then, the default behavior will be **return null** if we are returning something that is not void nor it's a constructor.
+
+In **JavaOperations.xtend**, in **javaReturnSpec**
+
+```diff
+- JavaGenUtils.javaQualifiedName(operation.type, operation.owner) + ' ' 
++ JavaGenUtils.javaQualifiedName(operation.type, operation.owner).toFirstUpper() + ' '
+```
+
+And in **javaOperationDeclaration**
+
+```diff
+- «IF mustGenerateBody(operation)»«JavaOperations.javaOperationImplementation(operation)»«ENDIF»
++ «IF mustGenerateBody(operation)»«JavaOperations.javaOperationImplementation(operation)»
++ «IF javaReturnSpec(operation) != 'void ' && !isConstructor(operation)»return null;«ENDIF»«ENDIF»
 ```
 </details>
 </details>
