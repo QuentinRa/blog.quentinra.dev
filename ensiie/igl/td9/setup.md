@@ -41,45 +41,37 @@ The setup include installing **papyrus.designer**, **Xtend IDE**, and **acceleo*
 
 ## Getting started
 
-* If needed, create a new project
+* If needed, create a new project (**ex: IGL**)
   * Papyrus
   * Remove the generated model
 * Right-click on the project, and select "import"
   * General > Archive file
-  * [Model_Transformation_Tutorial_Student.zip](https://github.com/memorize-code/memorize-references/tree/main/igl/Model_Transformation_Tutorial_Student.zip)
-* **WE WON'T USE THIS PAPYRUS** ❗
-
-<hr class="sl">
-
-## Xtend Editor
-
-We need to create an editor that will be usable, I mean we need autocompletion and so on. **You can't close the previous one** through 👎.
-
-* Run > Run Configurations (or Debug Configurations)
-* Double-click on Eclipse
-* You may name the configuration "xtend_editor"
-* Press Run (resp. Debug)
-* **You will modify files only in this editor** ❗
-
-In our new editor, **xtend_editor**
-
-* Click on "Import projects"
+  * [Model_Transformation_Tutorial_Student.zip](https://raw.githubusercontent.com/memorize-code/memorize-references/main/special/igl/Model_Transformation_Tutorial_Student.zip)
+* Once imported, click on **your root folder (ex: IGL)** then delete (but don't check "Delete ... on disk")
 * General > Existing Projects Into Workspace
 * Browse
 * Go find "Model_Transformation_Tutorial_Student". You should have 9 projects listed once you open "Model_Transformation_Tutorial_Student".
-* Wait a bit, some cross/errors will appear. You can ignore them (such as javaLangCodeGen.java), aside from
+* Wait a bit, **some cross/errors will appear**. **You can ignore them** (such as javaLangCodeGen.java), **aside from**
   * package xxx.codegen.sm => replace java version in plugin.xml with 1.8
   * package xxx.ui.sm => replace java version in plugin.xml with 1.8
 
 <hr class="sr">
 
-## Runtime editor
+## Runtime eclipse
 
-Now, we need to test our code. Redo the steps as above, and create a run configuration called "**runtime_eclipse**". Run it (click on **proceed** if prompted). In the **runtime_eclipse**
+Now, we need to test our code.
+
+* Run > Run Configurations (or Debug Configurations)
+* Double-click on Eclipse
+* You may name the configuration "runtime_eclipse"
+* Press Run (resp. Debug)
+* And click on **proceed** if prompted. 
+
+In the **runtime_eclipse**
 
 * Import projects
 * Existing Projects Into Workspace
-* Browse > Select SM Model
+* Browse > Find SMModel
 * Once imported, double-click on the model
 * In the **Model explorer**
   * right-click on "Project SMModel" 
