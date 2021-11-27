@@ -1,4 +1,4 @@
-# IGL
+# Introduction au génie logiciel
 
 IGL "Introduction au génie logiciel" is not an easy course. You will need strength and motivation to survive 👀. <small>Joke aside, it's hard to learn something. You will have a lot of things used in the graded homework that you didn't "see" during classes</small>.
 
@@ -10,10 +10,10 @@ IGL "Introduction au génie logiciel" is not an easy course. You will need stren
 
 We have to write some code, that will be able to generate **Java** and **Documentation** from our **model**. We will test a few ways of doing so.
 
-* [Setup](td8/setup.md) (**hard** 😱, **may take around 20 minutes**)
-* [Code generation with Xtend](td8/xtend.md) (**medium**)
-* [Code generation with Acceleo](td8/acceleo_code.md) (**easy**)
-* [Code documentation generation with Acceleo](td8/acceleo_doc.md) (**easy-medium**)
+* [Setup](td9/setup.md) (**hard** 😱, **may take around 20 minutes**)
+* [Code generation with Xtend](td9/xtend.md) (**medium**)
+* [Code generation with Acceleo](td9/acceleo_code.md) (**easy**)
+* [Code documentation generation with Acceleo](td9/acceleo_doc.md) (**easy-medium**)
 
 > **Pro tip**: you need to close and run again the 3rd editor, each time you changed the code in the 2nd editor.<br>
 > **Pro tip**: you can't run the expected main in eclipse. If you try, you are going to run the previous program, not the expected main.
@@ -37,9 +37,7 @@ You need to declare dependencies. This is a bit complex, but fortunately, I'm gi
     * Add "Papyrus Code Generation Profile"
     * Add "Papyrus Java Profile"
 
-First, let's exclude the Folder "Needs". Click on it, then **Profile**, then **Applied Stereotypes**, and add **NoCodeGen** (we don't want some code generation for Needs). 
-
-In SmartHouse (root), add a new package (new child), and do the same as for Needs. Put inside two classes
+In SmartHouse (root), add a new package (new child), Click on it, then **Profile**, then **Applied Stereotypes**, and add **NoCodeGen** (it's useless but do it). Put inside two classes
 
 * HashSet
 * Arrays
@@ -47,4 +45,10 @@ In SmartHouse (root), add a new package (new child), and do the same as for Need
 And on both of them, add them a stereotype (Profile > +) "External". Click on the stereotype and don't forget to set the value for name. This is the package+class that you want.
 
 Then create in the root a new class diagram "Dependencies" and use the usage relationship to request an import.
+</details>
+
+<details class="details-e">
+<summary>Need package errors</summary>
+
+You can't use NoCodeGen, the generator is only checking classes with this stereotype. You either have to nuke Needs, tell the parser that you don't want to parse Needs, or update the parser.
 </details>
