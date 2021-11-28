@@ -2,7 +2,11 @@
 
 [Go back](../index.md)
 
-...
+This section is covering the TD9. You got 3 things to do, while in my opinion, they are not that hard, you may have a hard time if you don't know how you could do something, and the instructions are not detailed enough for you to know how far you should go to reach what the teachers are expecting.
+
+* **Model to Java code generation with Xtend instructions** <small>(Use Xtend plugins for java code generation from state-machines)</small>
+* **Model to Java code generation with Acceleo instructions** <small>(Use Acceleo plugins for Java code generation from class)</small>
+* **Model to Documentation generation with Acceleo instructions** <small>(Use Acceleo plugins for document generation)</small>
 
 <hr class="sl">
 
@@ -13,16 +17,16 @@
 <details class="details-e">
 <summary>Missing files</summary>
 
-The problem is coming, as you could expect, from the model. Some problems that we found were
+The problem is coming, as you could expect, from the model. Some issues that we found were
 
-> **Possible problem**: **Missing names** (xxx.name.empty is raising a NPE)<br>
+> **Possible issue**: **Missing names** (xxx.name.empty is raising a NPE)<br>
 > **Is this your problem?**: in the first editor, you got a console with errors that happened in the second editor. Check the log inside with CTRL-F.
 
 You may have removed names on states of your Behavior diagram to make it cleaner. That's not good because it's raising exceptions. **Check that every state, if, entry, exit** got a name.
 
-> **Possible problem**: your model is broken 😭<br>
+> **Possible issue**: your model is broken 😭<br>
 
-Open every diagram, and check that there is no classes that disappeared. Explorer every entry in the model explorer, and check that there is no duplicates entries (not two times the same class, etc.) People I know having this, didn't manage to solve it 😭.
+Open every diagram, and check that there aren't classes that disappeared. Explore every entry in the model explorer, and check that there are no duplicate entries (not two times the same class, etc.) People I know having this didn't manage to solve it 😭.
 </details>
 
 <details class="details-e">
@@ -137,7 +141,7 @@ return false;
 <details class="details-e">
 <summary>Default implementation in the generator</summary>
 
-You must change the return type so that's it's always a class, if this is not a constructor nor void. Then, the default behavior will be **return null** if we are returning something that is not void nor it's a constructor.
+You must change the return type so that it is always a class, if this is not a constructor nor void. Then, the default behavior will be **return null** if we are returning something that is not void, nor it's a constructor.
 
 In **JavaOperations.xtend**, in **javaReturnSpec**
 
@@ -165,7 +169,7 @@ And in **javaOperationDeclaration**
 <details class="details-e">
 <summary>Types aren't valid Java types</summary>
 
-First, types such as Real are not converted to Float. You need to replace the print of the type by a call
+First, types such as Real are not converted to Float. You need to replace the print of the type with a call
 
 * use `genType(aProperty.type.name)`
 	* instead of `aProperty.type.name`
@@ -195,7 +199,7 @@ And we are creating the template **genType** in **common/fileUtils.mtl**
 <details class="details-e">
 <summary>Missing imports</summary>
 
-An easy way to do this is to hardcode the import, by adding some lines in **genDefaultImport** inside **common/fileUtils.mtl**
+An easy way to do this is to hard code the import, by adding some lines in **genDefaultImport** inside **common/fileUtils.mtl**
 
 ```java
 [template public genDefaultImport(aType : Type)]
@@ -205,7 +209,7 @@ import java.util.*;
 [/template]
 ```
 
-You need to add import right-after the java.util import. But, this won't do. You will also have to put every package inside one package, because in Java, you can't import classes nested in the default package. **In fileUtils**, edit these two functions with
+You need to add import right after the java.util import. But, this won't do. You will also have to put every package inside one package, because in Java, you can't import classes nested in the default package. **In fileUtils**, edit these two functions with
 
 ```diff
 [template private packagePath(aType : Type)]
@@ -227,7 +231,7 @@ And create the template **getSourcePackage**
 [/template]
 ```
 
-Now, your packages will be in a default package named **SmartHouse**. Allowing you do to use the following import statements.
+Now, your packages will be in a default package named **SmartHouse**. Allowing you to use the following import statements.
 
 ```java
 import SmartHouse.Software.*;

@@ -1,6 +1,6 @@
 # Introduction au génie logiciel
 
-IGL "Introduction au génie logiciel" is not an easy course. You will need strength and motivation to survive 👀. <small>Joke aside, it's hard to learn something. You will have a lot of things used in graded homeworks that you didn't "see" during classes</small>.
+IGL "Introduction au génie logiciel" is not an easy course. You will need strength and motivation to survive 👀. <small>Joke aside, it's hard to learn something. You will have a lot of things used in graded homework that you didn't "see" during classes</small>.
 
 > In 2021, the version of Papyrus in the school was **4.8.0**, so even if there are newer versions, [install Papyrus 4.8.0](https://www.eclipse.org/downloads/download.php?file=/modeling/mdt/papyrus/rcp/2020-06/4.8.0/papyrus-2020-06-4.8.0-win64.zip). If you need another version of papyrus that is not on the official website, look for the section **Update sites** on [Papyrus Download Page](https://www.eclipse.org/papyrus/download.html).
 
