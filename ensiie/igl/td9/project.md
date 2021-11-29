@@ -160,6 +160,14 @@ And in **javaOperationDeclaration**
 </details>
 </details>
 
+<details class="details-e">
+<summary>Missing variable states, and everything related to behaviors diagrams</summary>
+
+You should have such a variable in both manager and the controller (=every software). If not, you will have to check the **Classifier behavior** value. Simply click on the class for which there is a problem, go to advanced. Check the value for **Classifier behavior** is a state machine. If not, then double click on it and select the state machine.
+
+![Wrong classifier behavior](images/wrong_cb.png)
+</details>
+
 <hr class="sr">
 
 ## Acceleo (code) : help
