@@ -47,3 +47,21 @@ We have to write some code, that will be able to generate **Java** and **Documen
 
 * This is covering the TP, that you need this in order to do the [TD9 of the project](td9/project.md).
 * [Correction TD9](td9/correction.md).
+
+<hr class="sr">
+
+## TD10 - Tests
+
+This TP is the hardest. You will have to write tests, on an incomplete, wrongly generated code. What I mean, is that the generated (either coming from the teacher or mine) is not taking into account
+
+* **initial states**: check the list of states, they aren't in
+* **current state**: the wrong value is used for current state (the initial value), I doubt any one was expecting this (but we can ignore this)
+* **duplicate states**: there is duplicates states in the HashSet. I my own opinion, this is not a problem (HashSet = Set of unique values) as this may allow us to be "on two states" at one time
+* **current state (2)**: we used regions, but we are not able to have more than one current state, hence the tests should be either done on each region (**2 more tests to do**) or you may only do them on one. Anyway, there is a problem as this is not what we should had.
+* **signals**: did you see that your interfaces are empty. How do you even send signals. In my opinion, you should modify the generator to generate a method for each getter, allowing you to "send" signals on this class. But, must of use relied on **transit** to make tests.
+* **transit**: it's taking two states, but if things were "normal", we should be moving from one of our current states, to another state, right?
+* **methods**: their code is empty (or useless), but you can do your tests without hassle even with this (imo, you may need to add OpaqueBehavior to replace Activities trough).
+
+Without further ado, let's get started.
+
+* [Running your tests](td10/running.md)
