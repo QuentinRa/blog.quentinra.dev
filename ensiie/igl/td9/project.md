@@ -433,3 +433,31 @@ Update **generateParentElement(aClass)** in **generateParent.mtl**.
 [/template]
 ```
 </details>
+
+<details class="details-e">
+<summary>Removing type &lt;Type&gt;</summary>
+
+In **generateOperation.mtl**, replace &lt;Type&gt; with **?** (first) and then **void** (second, put a space before).
+
+```java
+[template public generateOperationElement(anOperation : Operation)]
+[if (anOperation.upper = -1 or anOperation.upper > 1)]
+[anOperation.visibility/] List<[if (anOperation.type.name.oclIsUndefined())]?[else][anOperation.type.name/][/if]> [anOperation.name/]([for (op : Parameter | anOperation.ownedParameter) separator(', ')][if (op.type.oclIsUndefined())]?[else][op.type.name/] [op.name/][/if][/for]) {}
+[else]
+[anOperation.visibility/][if (anOperation.type.name.oclIsUndefined())] void[else] [anOperation.type.name/][/if] [anOperation.name/]([for (op : Parameter | anOperation.ownedParameter) separator(', ')][if (op.type.oclIsUndefined())]<?>[else][op.type.name/] [op.name/][/if][/for]) {}
+[/if]
+[/template]
+```
+
+In **generateAttribute.mtl**, replace &lt;Type&gt; with **?** (first) and then **Object** (second).
+
+```java
+[template public generateAttributeElement(aProperty : Property)]
+...
+[aProperty.visibility/] List<[if (aProperty.type.name.oclIsUndefined())]T[else][aProperty.type.name/][/if]> [aProperty.name/];
+[else]
+[aProperty.visibility/][if (aProperty.type.name.oclIsUndefined())] Object[else] [aProperty.type.name/][/if] [aProperty.name/];
+[/if]
+[/template]
+```
+</details>
