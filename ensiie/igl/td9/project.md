@@ -286,6 +286,29 @@ Wrap the code generating aClass inside this if. You can trick this code to make 
 * Generate the code and put it in src
 </details>
 
+<details class="details-e" hidden>
+<summary>(Sample) generate imports</summary>
+
+**This code isn't complete, I was trying to generate imports**, but stopped midway.
+
+```
+[template public genDefaultImport(aType : Type)]
+// [protected ('for imports')]
+import java.util.*;
+[for (aPackage : Package | aType.ancestors().eAllContents(Package))]
+[let anc : Sequence(T) = aPackage.ancestors(Package)->reject(aPackage : Package | aPackage.oclIsTypeOf(Model)).name->reverse()->sep('.')]
+    [if (anc->isEmpty())]
+import [aPackage.name/].*;
+    [else]
+    // some import
+    [/if]
+[/let]
+[/for]
+// [/protected]
+[/template]
+```
+</details>
+
 <hr class="sr">
 
 ## Acceleo (documentation) : help
