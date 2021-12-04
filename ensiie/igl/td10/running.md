@@ -16,7 +16,7 @@ This section is supposed to help your getting started and running your tests.
 * Right-click on our src > refresh
 * Follow the steps in the next section
 
-<hr class="sl">
+<hr class="sr">
 
 ## Starting from your sources
 
@@ -45,5 +45,20 @@ public void SampleTest() {
 }
 ```
 
+* Right-Click on the file in the explorer > Run as > JUnit Test
+* **Done**
+
+<hr class="sl">
+
+## Starting in your IDE
+
+In my case, I opened the sources in **IntelliJ**, but you may use **VSCode**. Anyway, I won't make a tutorial for this, but once you did your tests and are planning to check if this is working in Papyrus. We are expecting that you got something like this in Papyrus.
+
+![Starting in your IDE - Papyrus - tests](images/papyrus_ide_tests.png)
+
+* Right-click on tests > Build path > use a source folder
+* Now JUnit is missing 
+  * Simply hover Test > Add Junit4 or **Junit5** in the classPath
+  * Or you can hover the import > Fix project setup > Add **Junit5** in the classPath
 * Right-Click on the file in the explorer > Run as > JUnit Test
 * **Done**
