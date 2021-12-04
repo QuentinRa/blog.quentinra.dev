@@ -45,4 +45,5 @@ We have to write some code, that will be able to generate **Java** and **Documen
 
 > **Note**: you need to run the second IDE again, each time you changed something in the first IDE.
 
-This is covering the TP, that you need this in order to do the [**TD9 of the project**](td9/project.md).
+* This is covering the TP, that you need this in order to do the [TD9 of the project](td9/project.md).
+* [Correction TD9](td9/correction.md).
