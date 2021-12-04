@@ -94,7 +94,7 @@ Package {Name}
 Don't forget to import
 
 ```
-[import org::eclipse::acceleo::module::sample::files::generateInterface/]
+[import org::eclipse::acceleo::module::sample::files::generateAssociation/]
 ```
 
 Then the code is
@@ -113,61 +113,10 @@ Then the code is
 [comment TODO see generateClass.mtl for inspiration/]
 ```
 
-**Todo**: ???
+* **Todo**: ???
+* **Solution**: Whatever you do here, it will **never** be called, so that's useless. Wondering why, here is the explanation
+  * Currently, your code **generateMain** (which is the code of the teacher) is not working.
+  * Our interfaces are not inside a package, but inside a package which is in another package. Your code isn't recursive, so we will never generate interfaces.
+  * Note that interfaces are generated in their own file, so you can see that if you got only one file, then you don't have your interfaces
 
-<details class="details-e">
-<summary>Possible solution</summary>
-
-```none
-[comment encoding = UTF-8 /]
-[**
- * The documentation of the module generateInterface.
- */]
-[module generateInterface('http://www.eclipse.org/uml2/5.0.0/UML')]
-[import org::eclipse::acceleo::module::sample::files::generateAttribute/]
-[import org::eclipse::acceleo::module::sample::files::generateOperation/]
-[import org::eclipse::acceleo::module::sample::files::generateParent/]
-[import org::eclipse::acceleo::module::sample::files::generateAssociation/]
-
-[**
- * The documentation of the template generateElement.
- * @param anInterface
- */]
-[template public generateInterfaceElement(anInterface : Interface)]
-
-[file (anInterface.name, false, 'UTF-8')]
-[anInterface.visibility/] interface [anInterface.name.toUpperFirst()/][generateParentElement(anInterface)/] {
-
-[for (p : Property | anInterface.attribute)]
-	[generateAttributeElement(p)/]
-[/for]
-[for (o : Operation | anInterface.ownedOperation)]
-	[generateOperationElement(o)/]
-[/for]
-[generateAssociationElement(anInterface)/]
-}
-[/file]
-[/template]
-```
-
-And create `generateParentElement(Interface)` in `generateParent.mtl`
-
-```none
-[**
- * The documentation of the template generateElement.
- * @param anInterface
- */]
-[template public generateParentElement(anInterface : Interface)]
-[for (i : Interface | anInterface.redefinedInterface) before ('extends') separator (', ') ]
-	[i.name/]
-[/for]
-[/template]
-```
-
-And edit `generateAssociationElement` in `generateAssociation.html`
-
-```diff
-- [template public generateAssociationElement(c: Class)]
-+ [template public generateAssociationElement(c: Type)]
-```
-</details>
+Fortunately, the teachers did not do something that is this complex, so don't lose time on it as we won't use it later.
