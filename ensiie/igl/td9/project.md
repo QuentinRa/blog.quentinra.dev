@@ -413,3 +413,23 @@ Update the template **generateInterfaceElement** in **generateInterface.mtl** to
 [/template]
 ```
 </details>
+
+<details class="details-e">
+<summary>Missing implements for classes</summary>
+
+Update **generateParentElement(aClass)** in **generateParent.mtl**.
+
+```java
+[template public generateParentElement(aClass : Class)]
+[aClass.extendedClasses()/][aClass.implementedInterfaces()/]
+[/template]
+
+[template private extendedClasses(aClass : Class)]
+[for (aSuperClass : Class | aClass.superClass) before(' extends ') separator(', ')][aSuperClass.name.toUpperFirst()/][/for]
+[/template]
+
+[template private implementedInterfaces(aClass : Class)]
+[for (anInterface : Interface | aClass.getImplementedInterfaces()) before(' implements ') separator(', ')][anInterface.name.toUpperFirst()/][/for]
+[/template]
+```
+</details>
