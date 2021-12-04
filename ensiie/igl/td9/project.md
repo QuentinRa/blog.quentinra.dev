@@ -285,3 +285,40 @@ Wrap the code generating aClass inside this if. You can trick this code to make 
 * `org.eclipse.acceleo.javagen.SmartHouse`, Java 1.8, and you don't need to open the Java perspective
 * Generate the code and put it in src
 </details>
+
+<hr class="sr">
+
+## Acceleo (documentation) : help
+
+> **Goal**: generate a file with some weird content, have a sort of print of our classes <s>and our interfaces</s>
+
+<details class="details-e">
+<summary>Fix generateMain not generating interfaces</summary>
+
+```java
+[for (p : Package | aModel.nestedPackage->sortedBy(name))]
+[generatePackage(p)/]
+[/for]
+```
+
+And
+
+```java
+[template private generatePackage(p : Package)]
+[if (not p.name.equalsIgnoreCase('Needs'))]
+[comment DONE then display Package's name/]
+Package [p.name/]
+[comment DONE and indent classes and interfaces names/]
+	[for (c : Class | p.packagedElement->filter(Class)->sortedBy(name))]
+	[generateClassElement(c)/]
+	[/for]
+	[for (i : Interface | p.packagedElement->filter(Interface)->sortedBy(name))]
+	[generateInterfaceElement(i)/]
+	[/for]
+	[for (p : Package | p.packagedElement->filter(Package)->sortedBy(name))]
+	[generatePackage(p)/]
+	[/for]
+[/if]
+[/template]
+```
+</details>
