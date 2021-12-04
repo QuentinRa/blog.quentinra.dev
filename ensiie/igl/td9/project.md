@@ -290,15 +290,27 @@ Wrap the code generating aClass inside this if. You can trick this code to make 
 
 ## Acceleo (documentation) : help
 
-> **Goal**: generate a file with some weird content, have a sort of print of our classes <s>and our interfaces</s>
+> **Goal**: generate a file with some weird content, have a sort of print of our classes <s>and our interfaces</s> (interfaces were not handled by our teacher)<br>
+> **Tip**: do not try to indent the code to make things cleaner. This is changing the output 😱.
 
 <details class="details-e">
 <summary>Fix generateMain not generating interfaces</summary>
 
+Update the code in **generateInterface.mtl**, to use a recursive template **generatePackage** (that we will code), to handle interfaces that were in nested packages.
+
 ```java
+[template public generateElement(aModel : Model)]
+[comment @main/]
+[file (aModel.name+'_generated.txt', false, 'UTF-8')]
+[for (c: Class | aModel.packagedElement->filter(Class)->sortedBy(name))]
+[generateClassElement(c)/]
+[/for]
+[comment DONE search for classes and interfaces in model's nested packages/]
 [for (p : Package | aModel.nestedPackage->sortedBy(name))]
 [generatePackage(p)/]
 [/for]
+[/file]
+[/template]
 ```
 
 And
@@ -319,6 +331,85 @@ Package [p.name/]
 	[generatePackage(p)/]
 	[/for]
 [/if]
+[/template]
+```
+</details>
+
+<details class="details-e">
+<summary>Possible generateInterface code</summary>
+
+Update the template **generateInterfaceElement** in **generateInterface.mtl**.
+
+```none
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generateInterface.
+ */]
+[module generateInterface('http://www.eclipse.org/uml2/5.0.0/UML')]
+[import org::eclipse::acceleo::module::sample::files::generateAttribute/]
+[import org::eclipse::acceleo::module::sample::files::generateOperation/]
+[import org::eclipse::acceleo::module::sample::files::generateParent/]
+[import org::eclipse::acceleo::module::sample::files::generateAssociation/]
+
+[**
+ * The documentation of the template generateElement.
+ * @param anInterface
+ */]
+[template public generateInterfaceElement(anInterface : Interface)]
+
+[file (anInterface.name, false, 'UTF-8')]
+[anInterface.visibility/] interface [anInterface.name.toUpperFirst()/][generateParentElement(anInterface)/] {
+
+[for (p : Property | anInterface.attribute)]
+	[generateAttributeElement(p)/]
+[/for]
+[for (o : Operation | anInterface.ownedOperation)]
+	[generateOperationElement(o)/]
+[/for]
+[generateAssociationElement(anInterface)/]
+}
+[/file]
+[/template]
+```
+
+And create `generateParentElement(Interface)` in `generateParent.mtl`
+
+```none
+[**
+ * The documentation of the template generateElement.
+ * @param anInterface
+ */]
+[template public generateParentElement(anInterface : Interface)]
+[for (i : Interface | anInterface.redefinedInterface) before ('extends') separator (', ') ]
+	[i.name/]
+[/for]
+[/template]
+```
+
+And edit `generateAssociationElement` in `generateAssociation.html`
+
+```diff
+- [template public generateAssociationElement(c: Class)]
++ [template public generateAssociationElement(c: Type)]
+```
+</details>
+
+<details class="details-e">
+<summary>Do not generateInterface documentation in another file</summary>
+
+Update the template **generateInterfaceElement** in **generateInterface.mtl** to have this (remove the file instruction).
+
+```java
+[template public generateInterfaceElement(anInterface : Interface)]
+[anInterface.visibility/] interface [anInterface.name.toUpperFirst()/][generateParentElement(anInterface)/] {
+[for (p : Property | anInterface.attribute)]
+	[generateAttributeElement(p)/]
+[/for]
+[for (o : Operation | anInterface.ownedOperation)]
+	[generateOperationElement(o)/]
+[/for]
+[generateAssociationElement(anInterface)/]
+}
 [/template]
 ```
 </details>
