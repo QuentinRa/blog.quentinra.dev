@@ -34,6 +34,14 @@ It's a good practice to make backup, as losing everything <small>(or Random bugs
 
 <hr class="sr">
 
+## TD8 - activities
+
+Once you created an activity, make sure that you are not creating a new one. Use the sync with editor / navigate to find it, then complete it.
+
+Also, every call must be typed.
+
+<hr class="sl">
+
 ## TD9 - Code Generation
 
 We have to write some code, that will be able to generate **Java** and **Documentation** from our **model**. We will test a few ways of doing so.
