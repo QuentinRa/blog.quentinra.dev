@@ -130,7 +130,7 @@ a \equiv [b]\\
 \]
 </div>
 
-> **Ex**: $27\ \text{mod}\ 12 \equiv 3\ (mod\ 12)$ as we have $12*2 + 3$<br>
+> **Ex**: $27 \equiv 3\ (mod\ 12)$ as we have $12*2 + 3$<br>
 > **Formula**: Given $a = m * q + r$, then $a \equiv r\ (mod\ m)$
 
 <details class="details-e">
