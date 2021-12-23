@@ -44,7 +44,7 @@ You have a space between the name of the command, and the arguments/options. Som
 
 > **Pro tip**: In a lot of commands, options may be merged (`-l -a`=>`-la`).<br>
 > **Pro tip**: A lot of commands have an option "help", always try `command -h`, `command -help`, or `command --help`.<br>
-> **Pro tip**: You got a manual for a lot of commands. Try `man mycommand`. If some pages are missing, you may need to install `manpages-dev``.
+> **Pro tip**: You got a manual for a lot of commands. Try `man mycommand`. If some pages are missing, you may need to install `manpages-dev`.
 
 <hr class="sl">
 
@@ -91,3 +91,21 @@ The permissions are a set of 3 numbers, for each kind of user. In binary, 000=0,
 > * `chmod u+rw file`: give rw to u
 > * `chmod 751 file`: give rwx to u, rx to g, x to o
 </details>
+
+<hr class="sr">
+
+## Edit files
+
+A lot of times, you will have to open/edit files. You need to use a terminal editor, and you may use
+
+* `vim` (there is a tutorial on this website), `neovim`, or `vim`
+* `nano` (easy, good when you need to copy-paste something)
+* `emacs` <s>(vim > emacs, change my mind 😂)</s>
+
+Let's say you need to edit `file.txt`, you can do `vim file.txt`. If the file do not exists, then it will be created.
+
+> If you need to see the content of a file, you may also use
+> * <kbd>cat file.txt</kbd> (print the whole file)
+> * <kbd>less file.txt</kbd> (print the file in the screen, you can use `up`/`down` to move up/down in the file, use `q` to exit)
+> * <kbd>head file.txt</kbd> (see the first 10 lines)
+> * <kbd>tail file.txt</kbd> (see the last 10 lines)
