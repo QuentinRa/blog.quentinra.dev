@@ -18,6 +18,6 @@ If you jumped here before reading every other page, you are a fool 🙄. We don'
     * Missing a named package at the root
     * Duplicates functions
     * ...
-* And finally, about the acceleo code generator
+* And finally, about the acceleo code documentation
   * The teacher said that the format do not matters
   * Simply write the code that you may have done in TP, and that's it. The output is quite incomplete, but that do not matters.
