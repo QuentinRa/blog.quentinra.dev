@@ -10,7 +10,7 @@ You might ask yourself, why are we learning this? Why are we using Linux? From m
 
 ## Console
 
-The console (also called terminal/shell/`ìnvite de commande`) may be the only way for you to interact with your Linux OS. This console may use a language such as **sh**, csh, tsh, ksh, **bash**, ... Most are using **Bash**, which is based on **sh**.
+The console (also called terminal/shell/`ìnvite de commande`) may be the only way for you to interact with your Linux OS. This console may use a language such as **sh**, csh, tcsh, ksh, **bash**, ... Most are using **Bash**, which is based on **sh**.
 
 <div class="text-center">
 
@@ -109,6 +109,8 @@ Let's say you need to edit `file.txt`, you can do `vim file.txt`. If the file do
 > * <kbd>less file.txt</kbd> (print the file in the screen, you can use `up`/`down` to move up/down in the file, use `q` to exit)
 > * <kbd>head file.txt</kbd> (see the first 10 lines)
 > * <kbd>tail file.txt</kbd> (see the last 10 lines)
+
+If you have a graphical interface, feel free to use SublimeText, Atom, Emacs, VSCode, or even overkill editors such as IntelliJ, PHPStorm, etc. 
 
 <hr class="sl">
 
