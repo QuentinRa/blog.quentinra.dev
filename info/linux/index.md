@@ -29,3 +29,19 @@ Usually, when writing a command in a tutorial, we are doing one of these. For in
 * `$ ls`: run the command in any kind of shell (sh/bash/...)
 * `sh> ls`: run the command in a sh console
 * `# ls`: the command must be run with a **privileged** user
+
+<hr class="sr">
+
+## Commands
+
+Commands are the instruction you are typing in the console, in a specific language. We will use **Bash**. A command is made of three parts
+
+* the name of the command (`èx: ls`)
+* [optional] the arguments (ex: `ls /`)
+* [optional] the arguments that are "options" (ex: `ls -l -a`)
+
+You have a space between the name of the command, and the arguments/options. Some commands are made of multiples words, separated by a `-` such as `sphinx-build`, but MOST common commands on Linux are not like this, so if you are seeing `ls-la`, it's most likely `ls -la` while the one who wrote that forgot the space.
+
+> **Pro tip**: In a lot of commands, options may be merged (`-l -a`=>`-la`).<br>
+> **Pro tip**: A lot of commands have an option "help", always try `command -h`, `command -help`, or `command --help`.<br>
+> **Pro tip**: You got a manual for a lot of commands. Try `man mycommand`. If some pages are missing, you may need to install `manpages-dev``.
