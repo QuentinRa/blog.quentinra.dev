@@ -28,7 +28,7 @@ Usually, when writing a command in a tutorial, we are doing one of these. For in
 
 * `$ ls`: run the command in any kind of shell (sh/bash/...)
 * `sh> ls`: run the command in a sh console
-* `# ls`: the command must be run with a **privileged** user
+* `# ls`: the command must be **run as administrator**
 
 <hr class="sr">
 
@@ -45,3 +45,49 @@ You have a space between the name of the command, and the arguments/options. Som
 > **Pro tip**: In a lot of commands, options may be merged (`-l -a`=>`-la`).<br>
 > **Pro tip**: A lot of commands have an option "help", always try `command -h`, `command -help`, or `command --help`.<br>
 > **Pro tip**: You got a manual for a lot of commands. Try `man mycommand`. If some pages are missing, you may need to install `manpages-dev``.
+
+<hr class="sl">
+
+## Users and permissions
+
+<details class="details-e mt-3">
+<summary>Run as administrator / sudo</summary>
+
+On Windows, whenever you need to install a program (in Program Files), you need to run it as administrator. It means that you are running the program in a privileged mode. We got the same thing on Linux with `sudo`.
+
+You can run a command as administrator such as ls with `sudo ls`. You can run a bash as administrator with `sudo bash`.
+
+<div class="text-center">
+
+![Linux sudo](images/sudo.png) (Notice the # at the end, as we told you before)
+</div>
+
+> **Pro tip**: You should not able to do that on servers/... that you don't own (you shouldn't be able to on Windows too).<br>
+> **Pro tip**: You may give someone the "right" do use sudo, by adding the user in the "sudoers". Simply call `sudo usermod -a -G sudo username`.
+</details>
+
+<details class="details-e mt-3">
+<summary>File / Folders</summary>
+
+You may also restrict who can read (r), write (w), or execute/access (x) your files. Linux is considering 3 kinds of users
+
+* **u**: you
+* **g**: users of your main group (ex: `promo2023`)
+* **o**: any other user
+
+And 3 (there is more) kind of permissions
+
+* **r** (4): can read
+* **w** (2): can write
+* **x** (1): can execute a script, can access a directory <small>(it means that if there is a folder without x in a path, even if we got r or w, we won't be able to work with this file)</small>
+
+The permissions are a set of 3 numbers, for each kind of user. In binary, 000=0, 001=1, 010=2, 100=4, etc. As you saw, I put 4 after r, it means that 100=4=r. If we got 110=6=4+2=r+w, it means that the user can write and read.
+
+* `110 100 100`: u (6=r+w), g (4=r), o (4=r) 
+* `111 101 100`: u (7=r+w+x), g (5=r+x), o (4=r)
+
+> * `chmod +x file`: give x to every user
+> * `chmod u+x file`: give x to u
+> * `chmod u+rw file`: give rw to u
+> * `chmod 751 file`: give rwx to u, rx to g, x to o
+</details>
