@@ -6,16 +6,26 @@ You might ask yourself, why are we learning this? Why are we using Linux? From m
 
 > **This course will refer to Windows a lot, as we are expecting readers to know Windows**.
 
-<hr class="sr">
+<hr class="sl">
 
 ## Console
 
-The console (also called terminal/`ìnvite de commande`) may be the only way for you to interact with your Linux OS. This console may use a language such as **sh**, csh, tesh, ksh, **bash**, ... Most are using **Bash**, which is based on **sh**.
+The console (also called terminal/shell/`ìnvite de commande`) may be the only way for you to interact with your Linux OS. This console may use a language such as **sh**, csh, tesh, ksh, **bash**, ... Most are using **Bash**, which is based on **sh**.
 
-![Linux console](images/console.png) : you got your username, followed by `@hostname` then a `$`. This is the default for BASH. You will write your commands after `$`. Press enter to execute the command.
+<div class="text-center">
 
-* `$ ls`: a normal command. Sometimes, teachers are using `bash> ls` which is the same as `$`.
-* `# ls`: a command that must be run with a **privileged** user.
+![Linux (Bash) console](images/console.png)
+</div>
 
-> **Pro tip**: press <kbd>CTRL-C</kbd> to cancel a command<br>
-> **Pro tip**: press <kbd>CTRL-D</kbd> to end the input of a command waiting for input
+Notes
+
+* your are writing commands right after the `$`
+* press <kbd>ENTER</kbd> to execute a command
+* press <kbd>CTRL-C</kbd> to cancel a command
+* press <kbd>CTRL-D</kbd> to end the input of a command waiting for input
+
+Usually, when writing a command in a tutorial, we are doing one of these. For instance, for the command `ls`, we may write
+
+* `$ ls`: run the command in any kind of shell (sh/bash/...)
+* `sh> ls`: run the command in a sh console
+* `# ls`: the command must be run with a **privileged** user
