@@ -1,3 +1,13 @@
+Examples of paths
+
+* `/bin/ocaml` (bin is a sort of Program Files)
+* `/home/calistro/Desktop`
+* `~/Desktop` (same as `/home/calistro/Desktop`, as `/home/calistro` is my HOME)
+* Consider the current directory to be `/home/calistro`
+* `./file.txt` (the real path is `/home/calistro/file.txt`)
+* `..` (the real path is `/home/`)
+* `/bin/../bin` (the real path is `/bin`)
+
 <hr class="sl">
 
 ## Paths
