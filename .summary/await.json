@@ -1,6 +1,18 @@
 {
   "info": [
     {
+      "tag": "linux",
+      "name": "Linux",
+      "desc": "This is a course covering a lot of things about Linux. There are a lot of distributions of Linux such as Debian, Arch Linux, Ubuntu, Fedora, and so on...",
+      "icon": "<i class=\"bi bi-terminal-fill\"></i>"
+    },
+    {
+      "tag": "cpp",
+      "name": "C++",
+      "desc": "An incomplete (in-progress) course about C++.",
+      "icon": "<i class=\"bi bi-terminal-fill\"></i>"
+    },
+    {
       "tag": "php",
       "name": "PHP",
       "desc": "Almost everything you will use in PHP to make your website server-side in PHP.",

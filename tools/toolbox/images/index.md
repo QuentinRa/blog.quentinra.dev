@@ -11,7 +11,7 @@ A bunch of tools, to create/edit images, to resize and convert them. There are a
 When dealing with images, you may want
 
 * **create/edit**
-  * to remove the background (<https://www.remove.bg/>)
+  * to remove the background (<https://www.experte.com/background-remover> or maybe <https://www.remove.bg/>)
   * to make/split/crop/... a GIF/a normal image (<https://ezgif.com/>)
 * **resize**
   * resize a lot of images (<https://picresize.com/>)
