@@ -22,3 +22,4 @@ You should name your commits as follows `emoji: description`.
   * 😏: improving the code (replace HTML by Markdown, or Markdown by HTML, adding/removing spaces, splitting files, etc.)
   * 🚀: adding/proposing feature(s) or content (todo)
   * 🙄: removing/moving content temporarily
+  * 🥲: removing content
