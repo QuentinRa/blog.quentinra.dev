@@ -79,6 +79,7 @@ Last updated: 2021-10-25
 * [ ] Complete SQL course
 * [ ] Complete Cryptography course
 * [ ] Update Unity courses (mobile, VR, ...)
+* [ ] IntelliJ Plugin Development
 </details>
 
 ## Notes

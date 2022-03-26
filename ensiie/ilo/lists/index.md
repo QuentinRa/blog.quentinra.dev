@@ -13,10 +13,7 @@ Before starting, please take note that in the project, you got 3 files
 Then open the project in your favorite IDE, 
 
 * VSCode 
-* IntelliJ. It might be a good idea to try it out now
-  * only add the folder ``tests`` **after** you finished coding (it won't compile otherwise)
-  * remove ``RunAllTests.java`` unless you want to do the same 2-minutes tutorial like in the previous TP (check it out for the setup, if you do)
-* ...
+* [IntelliJ](idea.md) (recommended for this one)
 
 The subject [is hosted here](https://github.com/memorize-code/memorize-references/raw/main/special/ilo/Listes.zip).
 
