@@ -16,7 +16,7 @@ Like a lot of languages such as Python or Java (👀), you are able to write OCa
 * `ocaml`: to open OCaml console
 * `ocamlc file.ml`: to compile a OCaml file and create a `a.out` <small>(this is working like `gcc` in C)</small>.
 
-As the installation is hard on Windows, I gathered tutorials here to [install OCaml on Windows](intro/install-win.md). On Linux, you should not have a problem. You can also use OCaml in your browser with [TryOCamlPro](https://try.ocamlpro.com/) <small>(**I through this was a good solution, but it made me write poor code** because I was adding `;;` or parenthesis in a lot of unneeded places)</small>.
+As the installation is hard on Windows, I gathered tutorials here to [install OCaml on Windows](intro/install-win.md). On Linux, you should not have a problem. You can also use OCaml in your browser with [TryOCamlPro](https://try.ocamlpro.com/) <small>(**I thought this was a good solution, but it made me write poor code** because I was adding `;;` or parenthesis in a lot of unneeded places)</small>.
 
 <hr class="sr">
 
@@ -46,7 +46,7 @@ let _ = Format.printf "%d@." (1+2)
 let _ = Format.printf "%d@." (-1)
 ```
 
-To be accurate, in OCaml **everything is a value**, so you can give `-` (minus) to a function, as for OCaml `-` is a function taking two integers and returning one integer. A function taking another function is argument is called a **higher-order function** ✨ (`fonction d'ordre supérieur`).
+To be accurate, in OCaml **everything is a value**, so you can give `-` (minus) to a function, as for OCaml `-` is a function taking two integers and returning one integer. A function taking another function in argument is called a **higher-order function** ✨ (`fonction d'ordre supérieur`).
 
 > **CONSOLE ONLY**
 > * you need to add `;;` at the end of every expression
@@ -94,7 +94,7 @@ And here are some exercises
 
 ## Data structures
 
-We are testing different ways of storing of big amount of data, along with their efficiency.
+We are testing different ways of storing big amounts of data, along with their efficiency.
 
 * [Binary Search Trees](data/bst.md) (`ABR`)
 * [AVL trees](data/avl.md)
