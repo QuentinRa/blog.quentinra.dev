@@ -132,7 +132,8 @@ let status = request ?? 200
 // status = request || 200
 
 // Optional chaining
-// if error is undefined, error?.code = undefined
+// if request is undefined, then request?.code is evaluated as undefined,
+// otherwise, it's evaluated as request.code
 status = request?.code ?? 200
 ```
 </td>
