@@ -46,23 +46,6 @@ int main(int argc, char *argv[]){
 The basic element of syntax
 
 * [Types](start/types.md)
-* [Structures](start/structures.md)
-* [Operators](start/operators.md)
-* [Libraries and import](start/import.md)
-* [Main function](start/main.md)
-
-Then some everyday concepts
-
-* [Arrays](start/arrays.md)
-* [Functions](start/functions.md)
-* [Headers](start/headers.md)
-* [gcc](start/gcc.md)
-
-And what you might use
-
-* [Reading from command line](start/cline.md)
-* [Files](start/files.md)
-* [System calls](start/syscall.md)
 
 <hr class="sl">
 
