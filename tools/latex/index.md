@@ -69,6 +69,7 @@ Related
 * [New lines in mathjax](https://github.com/mathjax/MathJax/issues/2312)
 * [Strikeout in latex](https://docs.mathjax.org/en/latest/input/tex/extensions/cancel.html)
 * [katex](https://katex.org/)
+* [rfloor and rceil](https://tex.stackexchange.com/questions/433101/rounding-to-nearest-integer-symbol-in-latex) (`partie entière sup/inf`)
 
 <hr class="sl">
 
