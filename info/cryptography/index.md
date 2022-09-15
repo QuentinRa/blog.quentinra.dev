@@ -41,11 +41,11 @@ $D(a,b)$ is the set of the common divisors between $a$ and $b$. We are calling *
 
 The formula is $a \wedge b = a * u + b * v$. **Bézout coefficients** $u$ and $v$ are **not unique**. Sometimes, this is easy to find the coefficients, but **if this isn't**, use a table (tip: read the example first)
 
-| k | $r_k$ | $q_k$ | $u_k$ | $v_k$ | Bézout |
-|---|---|---|---|---|---|
-| 0 | a | ❌ | 1 | 0 | |
-| 1 | b | the q in a/b | 0 | 1 | |
-|...|the r in a/b|...|$u_{k-2}-q_{k-1}*u_{k-1}$|$v_{k-2}-q_{k-1}*v_{k-1}$|$r_k=a*u_k+b\*v_k$|
+| k | $r_k$                       | $q_k$                                     | $u_k$ | $v_k$ | Bézout             |
+|---|-----------------------------|-------------------------------------------|---|---|--------------------|
+| 0 | $a$                         | ❌                                         | 1 | 0 | a = a * 1 + b * 0  |
+| 1 | $b$                         | $q_k= \lfloor \frac{r_{k-1}}{r_k} \rfloor$ | 0 | 1 | b = a * 0 + b * 1  |
+|...| $r_k=r_{k-2}\ mod\ r_{k-1}$ | ...                                       |$u_{k-2}-q_{k-1}*u_{k-1}$|$v_{k-2}-q_{k-1}*v_{k-1}$| $r_k=a*u_k+b\*v_k$ |
 
 Example: $a=98$ and $b=77$.
 
@@ -58,7 +58,7 @@ Example: $a=98$ and $b=77$.
 | 3 | 7  | 2 | $1 - 1 * -3 = 4$ | $-1 - 1 * 4=-5$ | $7 = 98 * 4 + 77 * -5$ (**solution ✅**) |
 | 3 | 0  | ❌ | $-3 - 2 * 4 = -11$ | $4 - 2 * -5=14$ | $0 = 98 * -11 + 77 * 14$ |
 
-Of course, we are doing this because **this one was hard**, but if you got $5 * a + 7 * b = 5 \wedge 7 = 1$, then you could find almost immediately that you can use $a=3$ and $b=-2$ giving us $15 - 14 = 1$ (you got 10 and -9 too, etc.).
+Of course, we are doing this because **this one was hard**, but if you got $5 * a + 7 * b = 5 \wedge 7 = 1$, then you could find almost immediately that you can use $a=3$ and $b=-2$ giving us $15 - 14 = 1$ (you got 10 and -7 too, etc.).
 
 > **Note**: Bézout's identity is a diophantine equation (`Équation diophantienne`, [wiki](https://en.wikipedia.org/wiki/Diophantine_equation)).
 
