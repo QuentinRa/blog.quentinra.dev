@@ -16,7 +16,7 @@ Like a lot of languages such as Python or Java, you are able to write OCaml in a
 * `ocaml`: to open the top-level / REPL (OCaml)
 * `ocamlc file.ml`: to compile a file in OCaml and create a `a.out` <small>(this is working like `gcc` in C)</small>.
 
-There are some tutorials to [install OCaml on Windows/Linux/MacOS here](https://plugins.jetbrains.com/plugin/18531-ocaml/documentation/setup-wsl-windows). You can also use OCaml in your browser with [TryOCamlPro](https://try.ocamlpro.com/).
+I made some tutorials to [install OCaml on Windows/Linux/MacOS here](https://plugins.jetbrains.com/plugin/18531-ocaml/documentation/setup-wsl-windows). You can also use OCaml in your browser with [TryOCamlPro](https://try.ocamlpro.com/).
 
 <hr class="sr">
 
@@ -30,25 +30,25 @@ x = 6 (* NOT POSSIBLE *)
 let x = 6 (* delete the old x, create a new one *)
 ```
 
-In functional languages, there should be no side effects. Hence, **if you are not storing something in a variable**, **the compiler won't evaluate this line**, something like "If you don't see you use it later, then it means that you don't need it" (concept of **purity** ✨). Variables starting by a `_` are not stored by the compiler, so you can use this print for impure functions such as print
+In functional languages, there should be no side effects. Hence, **if you are not storing something in a variable**, **the compiler will ignore it**, something like "If I don't see you use it later, then it means that you don't need it" (concept of **purity** ✨). In other words, a function returning "void" such as a print is impure. Fortunately, variables starting with a `_` are not stored by the compiler, so you can use this when calling an impure function.
 
 ```ocaml
-Printf.printf "%s\n" "Hello, World" (* SKIPPED !!! *)
+Printf.printf "%s\n" "Hello, World" (* IGNORED !!! *)
 
 (* all of them are equivalent *)
 let _ = Printf.printf "%s\n" "Hello, World"
-let _ = Format.printf "%s\n" "Hello, World"
-let _ = Format.printf "%s@." "Hello, World" (* mine *)
+let _ = Format.printf "%s\n" "Hello, World" (* Printf.printf is "weird", use Format *)
+let _ = Format.printf "%s@." "Hello, World" (* do this one *)
 
-(* in OCaml, 1+2 = 3 parameters '1' '+' '2', so add parenthesis *)
+(* In OCaml, "1+2" without parenthesis is considered as given 3 parameters '1' '+' '2' to a function, so add parenthesis *)
 let _ = Format.printf "%d@." (1+2)
-(* same *)
+(* same for "-1" *)
 let _ = Format.printf "%d@." (-1)
 ```
 
-To be accurate, in OCaml **everything is a value**, so you can give `-` (minus) to a function, as for OCaml `-` is a function taking two integers and returning one integer. A function taking another function in argument is called a **higher-order function** ✨ (`fonction d'ordre supérieur`).
+To be accurate, in OCaml **everything is a value**, so you can give "`-`" (minus) to a function, as for OCaml "`-`" is a function taking two integers and returning one integer. A function taking another function in argument is called a **higher-order function** ✨ (`fonction d'ordre supérieur`).
 
-> **CONSOLE ONLY**
+> **REPL ONLY**
 > * you need to add `;;` at the end of every expression
 > * you do not need to use printf/store expressions in variables
 
