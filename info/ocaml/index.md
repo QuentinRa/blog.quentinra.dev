@@ -13,6 +13,8 @@ OCaml is a functional language, from the family of Meta Languages (".ml", along 
 
 ...
 
+I made some tutorials to [install OCaml on Windows/Linux/MacOS here](https://plugins.jetbrains.com/plugin/18531-ocaml/documentation/setup-wsl-windows). You can also use OCaml in your browser with [TryOCamlPro](https://try.ocamlpro.com/) (online REPL).
+
 <hr class="sr">
 
 ## OCaml REPL
@@ -20,6 +22,15 @@ OCaml is a functional language, from the family of Meta Languages (".ml", along 
 The OCaml Top-Level, also called the **REPL**, is something like you got in Python or Java (recently), allowing you to write commands and see the result. You can start it using the command **`ocaml`**. Every expression must end with `;;` (unlike in a `.ml`).
 
 One thing that make the REPL useful, is that every expression is evaluated and its value is printed to the console. In other words, you won't have to call "printf", and you won't have to worry that an expression is not called (as explained below).
+
+<hr class="sl">
+
+## OCaml and .ml files
+
+You will usually write ocaml code in a `.ml` file, such as `main.ml`. Then, you will have to compile it using the command `ocamlc` which is working like `gcc` (in C programming).
+
+* `ocamlc file.ml`: create a `a.out`
+* `./a.out`: execute the code in "file.ml"
 
 <hr class="sr">
 
