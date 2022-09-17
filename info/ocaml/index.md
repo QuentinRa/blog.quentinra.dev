@@ -1,19 +1,13 @@
 # OCaml
 
-OCaml is a functional language, from the family of Meta Languages (".ml", along with SML or CAML). Unfortunately, OCaml is **impure**, as it allows side effects. It's strongly advised to read the course about **Functional programming** before starting, so you know about immutable, purity, and things like this. We are currently in [OCaml 4.14](https://github.com/ocaml/ocaml) <small>(OCaml 5.0 is in progress)</small>.
+OCaml is a functional language, from the family of Meta Languages (".ml", along with SML or CAML). According to ocaml.org, "OCaml is a general-purpose, industrial-strength programming language with an emphasis on expressiveness and safety". We are currently in [OCaml 4.14](https://github.com/ocaml/ocaml) <small>(OCaml 5.0 is in progress)</small>.
 
 * [The official manual](https://ocaml.org/manual/index.html)
 * [The official tutorials](https://ocaml.org/learn/tutorials/)
+* I made some tutorials to [install OCaml on Windows/Linux/MacOS here](https://plugins.jetbrains.com/plugin/18531-ocaml/documentation)
+* You can also use OCaml in your browser with [TryOCamlPro](https://try.ocamlpro.com/) (online REPL).
 
 > If you are into functional programming, you should check out Haskell, as there are no side effects in it.
-
-<hr class="sl">
-
-## Introduction
-
-...
-
-I made some tutorials to [install OCaml on Windows/Linux/MacOS here](https://plugins.jetbrains.com/plugin/18531-ocaml/documentation/setup-wsl-windows). You can also use OCaml in your browser with [TryOCamlPro](https://try.ocamlpro.com/) (online REPL).
 
 <hr class="sr">
 
