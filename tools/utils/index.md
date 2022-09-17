@@ -29,7 +29,7 @@ You got 6 types in JSON: **number** (integer/float), **object**, **array**, **bo
 ]
 ```
 
-> **JSON5** is usually what most people use, but you may try [JSON5](https://json5.org/) at your own "risks" 😎🚀.<br>
+> **JSON** is usually what most people use, but you may try [JSON5](https://json5.org/) at your own "risks" 😎🚀.<br>
 > **Note**: There are no comments in JSON, but you can use comments in **JSON5**<br>
 > **Note**: There is no multiline string, so you must bear with it, unless you are using **JSON5**.
 

@@ -259,7 +259,7 @@ You got a "bag/Knapsack" of numbers (ex: 23, 5, 11, 2, 55). Your message is made
   * $2 + 0 + 0 + 0 + 55 = 57$ (second group)
 * **Cipher text**: $62, 57$
 
-But, this is too easy to find what generated this cipher. So we are using the **super-increasing knapsack problem** to **generate a public key**, and **this easy key as the private key**. We will pick a value $N$ greater than the sum of the values in the Knapsack, and a number $W$, so that $N \wedge W|1$ (=no common divisor aside 1).
+But, it is too easy to find what generated this cipher. So we are using the **super-increasing knapsack problem** to **generate a public key**, and **this easy key as the private key**. We will pick a value $N$ greater than the sum of the values in the Knapsack, and a number $W$, so that $N \wedge W|1$ (=no common divisor aside 1).
 
 * We are picking $N=113$, $W=27$
 * We got $W^{-1} = 67\ (\text{mod}\ 113)$
