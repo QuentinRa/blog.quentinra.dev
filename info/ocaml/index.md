@@ -3,9 +3,10 @@
 OCaml is a functional language, from the family of Meta Languages (".ml", along with SML or CAML). According to ocaml.org, "OCaml is a general-purpose, industrial-strength programming language with an emphasis on expressiveness and safety". We are currently in [OCaml 4.14](https://github.com/ocaml/ocaml) <small>(OCaml 5.0 is in progress)</small>.
 
 * [The official manual](https://ocaml.org/manual/index.html)
-* [The official tutorials](https://ocaml.org/learn/tutorials/)
-* I made some tutorials to [install OCaml on Windows/Linux/MacOS here](https://plugins.jetbrains.com/plugin/18531-ocaml/documentation)
-* You can also use OCaml in your browser with [TryOCamlPro](https://try.ocamlpro.com/) (online REPL).
+* [The official tutorial](https://ocaml.org/docs) (the new version look nice 😍)
+* I made some tutorials to [install OCaml on **Windows**/Linux/MacOS here](https://plugins.jetbrains.com/plugin/18531-ocaml/documentation)
+* You can also use **OCaml in your browser** with [TryOCamlPro](https://try.ocamlpro.com/) (online REPL)
+* [ocamlverse.net](http://ocamlverse.net/) (an open-source wiki with a lot of knowledge related to OCaml)
 
 > If you are into functional programming, you should check out Haskell, as there are no side effects in it.
 
@@ -196,8 +197,17 @@ Also, in OCaml, you can have a comment inside another comment. What I mean, is t
 **French course**
 
 * [ENSIIE Teachings](https://www.ensiie.fr/)
-* [Univ. Lille1 teachings](https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-1.pdf) (course 1 to 4, change the number in the URL)
+* [Univ. Lille1 teachings](https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-1.pdf) (courses 1 to 4, change the number in the URL)
+* [Wikipedia](https://en.wikipedia.org/wiki/Functional_programming#Concepts)
+* [GeeksForGeeks](https://www.geeksforgeeks.org/functional-programming-paradigm/)
 
 **Exercises**
 
 * [LearnOcaml (GitHub)](https://github.com/ocaml-sf/learn-ocaml) and [Online demo](https://ocaml-sf.org/learn-ocaml-public/)
+
+**Courses**
+
+* [RealWorldOCaml](http://dev.realworldocaml.org/) (an amazing free ebook about OCaml)
+* [The official tutorial](https://ocaml.org/docs) along with [OCaml 4.41 documentation and reference](https://v2.ocaml.org/releases/4.14/ocaml-4.14-refman.pdf)
+* [OCaml: LearnCode](https://ocaml-learn-code.com/) (an app to learn/code OCaml, along with some stuff on their website)
+* [An online free ebook about OCaml](https://cs3110.github.io/textbook/cover.html)
