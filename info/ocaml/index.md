@@ -15,7 +15,10 @@ OCaml is a functional language, from the family of Meta Languages (".ml", along 
 
 Opam is a package manager for OCaml, if you are familiar with Python, then this is roughly the same as pip (or npm/yarn for Node.js). I know a teacher that is against it for security-related concerns (something like "anyone can commit to the repository and put a virus here, it happened to LUA etc.), but it's quite useful, and I could find basis to these concerns at least in 2021.
 
-To summarize: **you can use opam to install ocaml, modules, or bundle projects as "modules" to allow others to use it**.
+To summarize: **you can use opam to install ocaml, packages, or bundle your projects as "packages" to allow others to use it**.
+
+<details class="details-border">
+<summary>Some opam-related commands</summary>
 
 ```bash
 # install (please refer to https://plugins.jetbrains.com/plugin/18531-ocaml/documentation)
@@ -28,10 +31,28 @@ opam switch
 # install ocaml 4.12.0 - a bit long
 opam switch create 4.12.0
 # install the package xxx for the current switch
+# see https://opam.ocaml.org/packages/
 opam install xxx
 opam update # and opam update xxx
 opam upgrade # and opam upgrade xxx
 ```
+</details>
+
+<details class="details-border">
+<summary>ocamlfind</summary>
+
+OCaml find to do a lot of things involving libraries. One usage could be to compile using `ocamlc` files that use external libraries.
+
+```bash
+# create a file "test"
+# while compiling with debug information (-g)
+# avg.ml and test.ml
+# while linking external libraries: extlib and oUnit
+#
+# Read the documentation if you want to learn more about -package or -linkpkg, while -g/-o are options of ocamlc
+ocamlfind ocamlc -o test -package extlib,oUnit -linkpkg -g avl.ml test.ml
+```
+</details>
 
 <hr class="sr">
 
