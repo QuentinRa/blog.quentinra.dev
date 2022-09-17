@@ -102,6 +102,29 @@ We are testing different ways of storing big amounts of data, along with their e
 
 <hr class="sr">
 
+## Meaningless knowledge
+
+<details class="details-border">
+<summary>Comments</summary>
+
+In OCaml, comments are not ignored, and they are really parsed... If you are writing a `"` (quote), the parser will think that you started writing a string, even if you are inside a comment. Hence, if the string is not properly finished (no matching quote), you will have an error, as you would if you wrote a non-terminated string in your code.
+
+It can lead to surprising comments ✌, this one bellow (try it), is a valid comment, but most ocaml highlighters such as the one I'm using, are not parsing it properly.
+
+```ocaml
+(* "this is a string *)" *)
+```
+
+Also, in OCaml, you can have a comment inside another comment. What I mean, is that you can have a closing comment tag inside another comment... In every other language, you will see an error because the comment would be "(* (* *)", but in OCaml, the code below is working fine
+
+```ocaml
+(* (* *) *)
+```
+
+</details>
+
+<hr class="sl">
+
 ## Sources
 
 **French course**
