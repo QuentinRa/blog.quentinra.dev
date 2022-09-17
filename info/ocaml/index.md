@@ -7,16 +7,19 @@ OCaml is a functional language, from the family of Meta Languages (".ml", along 
 
 > If you are into functional programming, you should check out Haskell, as there are no side effects in it.
 
-<hr class="sr">
+<hr class="sl">
 
 ## Introduction
 
-Like a lot of languages such as Python or Java, you are able to write OCaml in a **console** (called REPL). Otherwise, you can also write a `file.ml` and compile it like you would in C. You can use
+...
 
-* `ocaml`: to open the top-level / REPL (OCaml)
-* `ocamlc file.ml`: to compile a file in OCaml and create a `a.out` <small>(this is working like `gcc` in C)</small>.
+<hr class="sr">
 
-I made some tutorials to [install OCaml on Windows/Linux/MacOS here](https://plugins.jetbrains.com/plugin/18531-ocaml/documentation/setup-wsl-windows). You can also use OCaml in your browser with [TryOCamlPro](https://try.ocamlpro.com/).
+## OCaml REPL
+
+The OCaml Top-Level, also called the **REPL**, is something like you got in Python or Java (recently), allowing you to write commands and see the result. You can start it using the command **`ocaml`**. Every expression must end with `;;` (unlike in a `.ml`).
+
+One thing that make the REPL useful, is that every expression is evaluated and its value is printed to the console. In other words, you won't have to call "printf", and you won't have to worry that an expression is not called (as explained below).
 
 <hr class="sr">
 
@@ -47,10 +50,6 @@ let _ = Format.printf "%d@." (-1)
 ```
 
 To be accurate, in OCaml **everything is a value**, so you can give "`-`" (minus) to a function, as for OCaml "`-`" is a function taking two integers and returning one integer. A function taking another function in argument is called a **higher-order function** ✨ (`fonction d'ordre supérieur`).
-
-> **REPL ONLY**
-> * you need to add `;;` at the end of every expression
-> * you do not need to use printf/store expressions in variables
 
 <hr class="sl">
 
