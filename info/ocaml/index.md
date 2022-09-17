@@ -9,6 +9,30 @@ OCaml is a functional language, from the family of Meta Languages (".ml", along 
 
 > If you are into functional programming, you should check out Haskell, as there are no side effects in it.
 
+<hr class="sl">
+
+## Opam
+
+Opam is a package manager for OCaml, if you are familiar with Python, then this is roughly the same as pip (or npm/yarn for Node.js). I know a teacher that is against it for security-related concerns (something like "anyone can commit to the repository and put a virus here, it happened to LUA etc.), but it's quite useful, and I could find basis to these concerns at least in 2021.
+
+To summarize: **you can use opam to install ocaml, modules, or bundle projects as "modules" to allow others to use it**.
+
+```bash
+# install (please refer to https://plugins.jetbrains.com/plugin/18531-ocaml/documentation)
+sudo apt-get install opam
+# init opam
+opam init
+# see ocaml versions (=switch) installed
+# or "ls -l ~/.opam/
+opam switch
+# install ocaml 4.12.0 - a bit long
+opam switch create 4.12.0
+# install the package xxx for the current switch
+opam install xxx
+opam update # and opam update xxx
+opam upgrade # and opam upgrade xxx
+```
+
 <hr class="sr">
 
 ## OCaml REPL
@@ -25,6 +49,12 @@ You will usually write ocaml code in a `.ml` file, such as `main.ml`. Then, you 
 
 * `ocamlc file.ml`: create a `a.out`
 * `./a.out`: execute the code in "file.ml"
+
+Here is a simple ocaml file (ex: file.ml)
+
+```ocaml
+let _ = Format.printf "Hello, World!@."
+```
 
 <hr class="sr">
 
