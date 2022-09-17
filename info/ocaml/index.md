@@ -62,6 +62,17 @@ let _ = Format.printf "%d@." (-1)
 
 To be accurate, in OCaml **everything is a value**, so you can give "`-`" (minus) to a function, as for OCaml "`-`" is a function taking two integers and returning one integer. A function taking another function in argument is called a **higher-order function** ✨ (`fonction d'ordre supérieur`).
 
+<details class="details-border">
+<summary>Summary of functional paradigm</summary>
+
+* **Immutability**: you can modify a variable
+* **Referential transparency**: if `f(x)=y`,
+  writing `y` or `f(x)` must be the same. 
+* **Purity**: `f(x)-f(x)` is equals to 0, there is no side effects, and you can predict the outcome of your code
+* **Implicit types**: types are implicit
+* **First-class citizens**: a function can be given as parameter to another function called higher-order function (`Fonction d'ordre supérieur`)
+</details>
+
 <hr class="sl">
 
 ## Basic concepts
