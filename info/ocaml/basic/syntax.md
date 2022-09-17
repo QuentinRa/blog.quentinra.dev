@@ -8,18 +8,18 @@ In OCaml, types are inferred as they should be for functional languages. We are 
 
 ## General Stuff
 
-You can make comments with `(* a comment *)`.
-
-When calling a function, we are not doing something like 
+1. You can write comments with `(* a comment *)`.
+2. To call a function, you must write the name of the function, and each argument separated with a space.
 
 ```ocaml
 (* a function *)
 let main argc argv = (* some code *)
 
-let _ = main (1, "test") (* "NOT WORKING"-> one argument instead of two *)
 let _ = main 1 "test" (* USUAL WAY *)
-let _ = main (1) ("test") (* working but why??? 🤮 *)
-let _ = main (-1) "test" (* -1 is '-' and '1' so you need parenthesis *)
+let _ = main (-1) "test" (* "-" is a function in ocaml, you must add parenthesis to pass it as an argument *)
+
+let _ = main (1, "test") (* "NOT WORKING"-> one argument instead of two *)
+let _ = main (1) ("test") (* working, but unneeded parenthesis should be avoided 🤮 *)
 ```
 
 <hr class="sr">
@@ -35,9 +35,8 @@ let _ = main (-1) "test" (* -1 is '-' and '1' so you need parenthesis *)
 * **Note**: You can convert a variable with functions such as `string_of_int` (int -> string).
 * **Note**: unit should not be used, at least when practicing the functional paradigm, this is a sort of `void`. You may use it when a function is not returning something, or not taking something in argument <small>(but try to use it the least possible)</small>
 * **Note**: [Functions on string](https://ocaml.org/api/String.html) (String.equal, String.length, ex: `String.length "5"`)
-* **Note**: As in functional programming, types are inferred, you should never make an explicit declaration of the type of something.
 
-Types are inferred, but you may add `: type` after a variable name, but we are usually not doing this. 
+Types are inferred, but you may add `: type` after a variable name. In functional programming, types are inferred, so **you shouldn't make an explicit declaration of the type of something**.
 
 ```ocaml
 let x : float = 5.0
@@ -70,7 +69,7 @@ You could see that as `f(a,b) = a` working whatever a or b given (int, string, .
 * `>=, >, <=, <`
 * you got a function `Stdlib.compare a b` (-1, 0, 1)
 
-> **A lot of folks are using `!=` for the difference**. That's working most of the time, so it's fine, but they should use `<>`. You will learn it soon when you will try `!true` and remember than `! <=> address` so you must use `not true` 😱.
+> **A lot of folks are using `!=` for the difference**. That's working most of the time, so it's fine, but they should use `<>`.
 
 <hr class="sr">
 
@@ -84,11 +83,11 @@ if condition then expression_if_true else expression_if_false
 
 (* else if *)
 if ... then ... else if ... then ... else ...
-(* which is in fact *)
+(* which is in fact... *)
 if ... then ... else (if ... then ... else ...)
 ```
 
-* ✅: You must have an else, it's mandatory
+* ✅: You must have an else clause, it's mandatory
 * 🤮: do NOT do this
 
 ```ocaml

@@ -22,7 +22,7 @@ We are saying that $b$ is a **divisor** of $a$ if $r = 0$, written $a\ |\ b$. It
 <details class="details-e" open>
 <summary>Greatest common divisor (<code>Plus grand diviseur commun</code>)</summary>
 
-$D(a,b)$ is the set of the common divisors between $a$ and $b$. We are calling **greatest common divisor** (**GCD** or `PGCD`), the greatest value of $D(a,b)$, written $GCD(a,b)$ or $a \wedge b$.
+$D(a,b)$ is the set of the common divisors between $a$ and $b$. We are calling "**greatest common divisor**" (**GCD** or `PGCD`), the greatest value of $D(a,b)$, written $GCD(a,b)$ or $a \wedge b$.
 
 > Example: what's the GCD of $(27, 15)$
 > <p>
