@@ -1,6 +1,6 @@
 # Events
 
-[Go back](..#js-for-websites)
+[Go back](..#javascript-for-websites)
 
 An event is something like clicking on a button, submitting a form, ... You can set a function that will be executed when an event is fired.
 

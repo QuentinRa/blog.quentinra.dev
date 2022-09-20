@@ -1,6 +1,6 @@
 # document
 
-[Go back](..#js-for-websites)
+[Go back](..#javascript-for-websites)
 
 Everyone knows about `getElementById`, `getElementsByClassName`, and maybe `getElementsByTagName` too. These are shortcuts of `querySelector` that is working like the operator `$` in JQuery. I listed every function you may use too.
 

@@ -1,6 +1,6 @@
 # window
 
-[Go back](..#js-for-websites)
+[Go back](..#javascript-for-websites)
 
 I only used the localStorage, but feel free to add more content here.
 
