@@ -222,7 +222,7 @@ This is the same as the Caesar cipher/Substitution cipher. We are working on let
 
 * **message**: `memorize`
 * **key**: `vgn`
-* **cipher text**: `memorize+vgn=memorize+vgnvgnv=hkzjxvuk`
+* **cipher text**: `memorize+vgnvgnv=hkzjxvuk`
   * $M=12$, $V=21$, $12+21=33\equiv 7\ (mod\ 26)=H$
   * $E=4$, $G=6$, $4+6=10\equiv 10\ (mod\ 26)=K$
   * $M=12$, $N=13$, $12+13=25\equiv 25\ (mod\ 26)=Z$

@@ -14,9 +14,7 @@ OCaml is a functional language, from the family of Meta Languages (".ml", along 
 
 ## Opam
 
-Opam is a package manager for OCaml, if you are familiar with Python, then this is roughly the same as pip (or npm/yarn for Node.js). I know a teacher that is against it for security-related concerns (something like "anyone can commit to the repository and put a virus here, it happened to LUA etc.), but it's quite useful, and I could find basis to these concerns at least in 2021.
-
-To summarize: **you can use opam to install ocaml, packages, or bundle your projects as "packages" to allow others to use it**.
+Opam is a package manager for OCaml, if you are familiar with Python, then this is roughly the same as pip (or npm/yarn for Node.js). To summarize: **you can use opam to install ocaml, packages, or pack your projects as "packages" for others to use it**.
 
 <details class="details-border">
 <summary>Some opam-related commands</summary>
