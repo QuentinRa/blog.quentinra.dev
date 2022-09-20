@@ -494,7 +494,30 @@ SELECT * FROM customer2 c FULL OUTER JOIN purchase p
 
 ## DDL (Data Definition)
 
+<details class="details-e">
+<summary>Databases</summary>
+
+```sql
+-- list databases
+SHOW DATABASES
+
+-- create
+CREATE DATABASE db_name 
+CREATE DATABASE db_name CHARACTER SET utf8mb4
+
+-- alter
+ALTER DATABASE db_name CHARACTER SET utf8mb4
+
+-- delete
+DROP DATABASE db_name
+```
+</details>
+
+<details class="details-e">
+<summary>Tables</summary>
+
 ...
+</details>
 
 <hr class="sr">
 
