@@ -4,7 +4,7 @@
 
 Better discord is a sort of software improving discord by allowing you to install plugins. You can find [the code source/the latest version here](https://github.com/BetterDiscord/BetterDiscord/releases).
 
-* [download the installer](https://github.com/BetterDiscord/Installer/releases/tag/v1.0.0-hotfix)
+* [download the installer](https://github.com/BetterDiscord/Installer/releases)
 * install and restart discord
 * in settings, you got new menus including plugins menu
 
