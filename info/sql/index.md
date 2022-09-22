@@ -38,9 +38,9 @@ In the second screen, you can see the usual representation of your data in a dat
 | Element | Name (UML) | Name (DBMS) | Note |
 |---------|---------|---------|---------|
 | Customer | **Class** | **Table** |  |
-| id, name, age, gender | **Attributes** | **Attributes**/<small>Variables</small> | <small>(=columns)</small> |
-| `(1, "Luna", 18, "Woman")`, ... | **Objects** | **Tuples**/Records | <small>(=rows)</small>. We are saying "tuples" in French too. |
-| id | **Identifiers** <br> <small>(Keys, but this is a mistake)</small> | **Keys** | A **primary key** is a set of **one or more attributes**.<br>We can find a row in a table, given its values in the primary key.<br> The primary key as a whole is **unique** and **not-null**. <br>This is used to reference a tuple in another table (**Foreign key**).<br>Usually, we are using an **artificial key** <br>which is incrementing (+=1) each time we are adding a row.<br><small>Here, given "id=1", we know we are talking of "(1, Luna, ...)".</small> |
+| id, name, age, gender | **Attributes**        | **Attributes**/<small>Variables</small> | <small>(=columns)</small> |
+| `(1, "Luna", 18, "Woman")`, ... | **Objects**           | **Tuples**/Records | <small>(=rows)</small>. We are saying "tuples" in French too. |
+| id | **Identifiers** <br> <small>(or keys, but this is a mistake)</small> | **Keys** | A **primary key** is a set of **one or more attributes**.<br>We can find a row in a table, given its values in the primary key.<br> The primary key as a whole is **unique** and **not-null**. <br>This is used to reference a tuple in another table (**Foreign key**).<br>Usually, we are using an **artificial key** <br>which is incrementing (+=1) each time we are adding a row.<br><small>Here, given "id=1", we know we are talking of "(1, Luna, ...)".</small> |
 
 > Note: I know that the class's name "customer" **should start with an uppercase**, as every class should. I should also **add something before/after id** <small>(as many classes may have an attribute id, so I won't have to prefix it)</small>, and I should **add something before/after name** <small>(as name is a **reserved keyword** otherwise, I may have to escape it later)</small>, for instance: c_id and c_name.
 
