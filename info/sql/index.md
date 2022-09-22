@@ -523,7 +523,37 @@ DROP DATABASE db_name
 
 ## DCL (Data control)
 
-...
+<details class="details-e">
+<summary>Create and delete user</summary>
+
+```sql
+CREATE USER username
+CREATE USER username IDENTIFIED BY 'password'
+DELETE USER username
+```
+
+If you need to access the user from a different domain that localhost, then you will most likely have to create a user not associated with localhost. By default, a user like `toto` implicitly means `toto@'127.0.0.1'` or `toto@'localhost'`. As you may guess, you can specify which ip can access this user.
+
+```sql
+-- localhost only
+CREATE USER username
+CREATE USER username@'localhost'
+CREATE USER username@'127.0.0.1'
+-- anyone
+CREATE USER username@'%'
+CREATE USER username@'%.%.%.%'
+-- xx.xx.xx.0 to xx.xx.xx.255
+CREATE USER username@'xx.xx.xx.%'
+```
+
+Beware ! You "can't" use `DELETE USER username` (or any calls using username) if the domain isn't localhost. You will have to specify the domain everytime you use the username, something like `DELETE USER username@'%'`.
+
+</details>
+
+<details class="details-e">
+<summary>Manage permissions</summary>
+
+</details>
 
 <hr class="sl">
 
