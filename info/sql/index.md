@@ -529,7 +529,8 @@ DROP DATABASE db_name
 ```sql
 CREATE USER username
 CREATE USER username IDENTIFIED BY 'password'
-DELETE USER username
+DROP USER username
+DROP USER username CASCADE -- drop schema too
 ```
 
 If you need to access the user from a different domain that localhost, then you will most likely have to create a user not associated with localhost. By default, a user like `toto` implicitly means `toto@'127.0.0.1'` or `toto@'localhost'`. As you may guess, you can specify which ip can access this user.
@@ -551,8 +552,49 @@ Beware ! You "can't" use `DELETE USER username` (or any calls using username) if
 </details>
 
 <details class="details-e">
-<summary>Manage permissions</summary>
+<summary>Manage privileges (<code>permissions</code>)</summary>
 
+<div class="row mx-0 row-cols-md-2"><div>
+
+You can grant permissions to each user, or grant permission to a role, and grant the role to each user. There are tons of privileges, so you should refer to the documentation of your DBMS.
+
+```sql
+GRANT xxx, yyy ON sometable TO someuser
+GRANT xxx, yyy ON *.* TO someuser
+GRANT xxx, yyy ON *.* TO PUBLIC -- everyone
+GRANT ALL PRIVILEGES ON *.* TO someuser -- all privileges
+
+REVOKE xxx ON *.* TO someuser
+```
+
+A user can grant his privileges to another user, if his privileges were given WITH GRANT OPTION. If the giver lose his privileges, then the receiver may lose his privileges unless he was also given the privilege by someone else.
+
+```sql
+GRANT xxx ON yyy TO zzz WITH GRANT OPTION
+```
+</div><div>
+
+Once created, you can grant privileges to a role, as you would for a user.
+
+```sql
+CREATE Role role_name
+CREATE Role role_name with admin user -- role managed by an admin
+```
+
+**Note** : you can only grant privileges on one table at once, and to one user by request.
+
+<table class="table table-bordered">
+<thead><tr><th colspan="2">Some privileges</th></tr></thead>
+<tbody>
+<tr><td>SELECT</td><td>DELETE</td></tr>
+<tr><td>UPDATE</td><td>UPDATE(ATTRIBUTE)</td></tr>
+<tr><td>INSERT</td><td>CREATE</td></tr>
+<tr><td>ALTER</td><td>DROP</td></tr>
+<tr><td>EXECUTE</td><td>...</td></tr>
+</tbody>
+
+</table>
+</div></div>
 </details>
 
 <hr class="sl">
@@ -566,7 +608,7 @@ Sometimes, you need to chain the queries in order to keep the database coherent.
 
 ```sql
 -- sequential
-set transaction serializable;
+set transaction serializable
 ```
 
 The transaction "ends" when you use either COMMIT or ROLLBACK. You can also use transactions to only allow some kind of changes (ex : read only).
@@ -591,7 +633,7 @@ CREATE VIEW nomVue [Attributs] AS requêteSQL
 -- check delete/update before creating view
 CREATE VIEW nomVue [ Attributs ] AS requêteSQL WITH CHECK OPTION
 -- delete
-DROP VIEW nom_vue;
+DROP VIEW nom_vue
 ```
 </details>
 
