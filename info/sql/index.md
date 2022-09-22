@@ -529,13 +529,31 @@ DROP DATABASE db_name
 
 ## Advanced concepts
 
-...
+<details class="details-e">
+<summary>Transactions</summary>
+
+Sometimes, you need to chain the queries in order to keep the database coherent. Every query in the transaction will be executed before another transaction (or query) is proceeded.
+
+```sql
+-- sequential
+set transaction serializable;
+```
+
+The transaction "ends" when you use either COMMIT or ROLLBACK. You can also use transactions to only allow some kind of changes (ex : read only).
+
+```sql
+-- select
+set transaction read only /*code*/
+set transaction read committed /*code*/
+-- update/insert/delete...
+set transaction read write /*code/
+```
+
+</details>
 
 <hr class="sr">
 
 ## CheatSheet and conventions
-
-...
 
 * **Conventions**
 
