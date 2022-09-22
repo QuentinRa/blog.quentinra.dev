@@ -548,7 +548,21 @@ set transaction read committed /*code*/
 -- update/insert/delete...
 set transaction read write /*code/
 ```
+</details>
 
+<details class="details-e">
+<summary>Views</summary>
+
+Views are virtual tables, that may be used to make things easier to access complex tables, or to prevent users from accessing some attributes in a table. Basically, **a view is a virtual table created from a SQL request**.
+
+```sql
+-- create
+CREATE VIEW nomVue [Attributs] AS requêteSQL
+-- check delete/update before creating view
+CREATE VIEW nomVue [ Attributs ] AS requêteSQL WITH CHECK OPTION
+-- delete
+DROP VIEW nom_vue;
+```
 </details>
 
 <hr class="sr">
