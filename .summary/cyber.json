@@ -1,0 +1,12 @@
+{
+  "title": "CyberSecurity-related courses - xxxx",
+  "description": "xxx",
+  "courses": [
+    {
+        "tag": "cyber-culture",
+        "name": "xxx",
+        "desc": "yyy",
+        "icon": null
+      }
+  ]
+}
