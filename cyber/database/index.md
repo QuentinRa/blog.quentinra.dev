@@ -64,6 +64,17 @@ Some boolean-based SQL injections:
 </details>
 
 <details class="details-e">
+<summary>Map columns</summary>
+
+**Goal**: To guess the number of columns in the SELECT, which is useful later to use UNION, to fetch data from the database.
+
+One way is using **ORDER BY**: the clause can take a column name that is inside the select, **but the clause can also take the index of the column in the select**. Try injecting `ORDER BY 1`, `ORDER BY 2`, etc., until the query fails.
+
+Another way is using UNION. As you may know, UNION can only be used when the two queries have the same number of columns in the select. Hence, you can try `UNION Select NULL--`, `UNION SELECT NULL, NULL--`, etc., until the query fails.
+
+</details>
+
+<details class="details-e">
 <summary>Fetch records</summary>
 
 If you have a SQL injection possible in a page displaying every username given a country, with by the following SQL query
