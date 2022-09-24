@@ -4,7 +4,15 @@
 
 <hr class="sl">
 
+## Bruteforce
+
+The [SecLists GitHub Repository](https://github.com/danielmiessler/SecLists/) contains useful lists of usernames/passwords, payloads, urls, ...
+
+<hr class="sr">
+
 ## BurpSuite
+
+![Usage: Intercept, and edit requests](https://img.shields.io/badge/usage-Intercept,%20and%20edit%20requests-ffd700)
 
 BurpSuite can be used to intercept a form, and apply some changes to it. You could automate this process. For instance, given a list of username, you can use BurpSuite to lunch a bruteforce attack.
 
@@ -37,8 +45,50 @@ Start the attack. If a response is different from others, then it should be wort
 
 </details>
 
-<hr class="sr">
+<hr class="sl">
 
-## Bruteforce
+## wfuzz
 
-The [SecLists GitHub Repository](https://github.com/danielmiessler/SecLists/) contains useful lists of usernames/passwords, payloads, urls, ...
+![Usage: Bruteforce GET URLs, and GET/POST forms](https://img.shields.io/badge/usage-Bruteforce%20GET%20URLs,%20and%20GET,%20or%20POST%20forms-ffd700)
+
+You can use `wfuzz` to bruteforce a URL, mostly a GET URL, meaning an URL like `/account/4d5z` or `/account?id=4d5z`. You can install wfuzz using pip, or use the docker image. [See the official documentation here](https://wfuzz.readthedocs.io/en/latest/index.html). **The command `wfuzz` is quite simple: given a list of word, and a URL, the command will replace the word `WFUZZ` in the URL, with each word in the list of words**.
+
+<details class="details-e">
+<summary>Using docker</summary>
+
+If you are using docker (easy to install with Docker Hub on Windows):
+
+* `docker pull ghcr.io/xmendez/wfuzz`
+* `docker run -it ghcr.io/xmendez/wfuzz wfuzz -h` (wfuzz -h)
+</details>
+
+<details class="details-e">
+<summary>Useful Parameters</summary>
+
+* `-w path`: a path to a file with a list of word (one per line)
+* `--d "uname=FUZZ"`: for a post request
+* `-z`: specify the kind of payload (ex: file, stdin...). Read the documentation.
+</details>
+
+<details class="details-e">
+<summary>Parameters to reduce the number of results</summary>
+
+You can reduce the number of requests shown after fuzzing. You have
+
+* `--hl n`: hide results for which the number of lines is not `n`
+* `--sl n`: show results only if the number of lines is  `n`
+
+You got `l` for lines, `-w` for words, `h` for characters, `c` for HTTP code. You can specify multiples values by separating them with `,` (comma).
+</details>
+
+```bash
+# replace FUZZ in the URL 'https://xxx.tld/account/FUZZ' with every word (one word=one line) in common.txt
+wfuzz -w common.txt xxx.tld/account/FUZZ
+wfuzz -w common.txt xxx.tld:443/account/FUZZ
+# if HTTP
+wfuzz -w common.txt xxx.tld:80/account/FUZZ
+# ignore 404
+wfuzz -w common.txt --hc 404 xxx.tld/account?id=FUZZ
+# try bruteforce 'admin' with password in common_pass
+wfuzz -w common_pass.txt -d "uname=admin&pass=FUZZ" xxx.tld/login.php
+```
