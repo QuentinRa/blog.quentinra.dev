@@ -21,7 +21,7 @@ Cookies are used to store data. Most of the time, they are encrypted, but if the
 
 ## File upload
 
-![Level: Novice-Intermediate](https://img.shields.io/badge/level-Novice%20Intermediate-ff7f00)
+![Level: Novice-Intermediate](https://img.shields.io/badge/level-Novice%20Intermediate-ffd700)
 
 A user may upload a file on a server such as an avatar. You must prevent users from uploading malicious files (ex : scripts), AND prevent users from accessing content belonging to other users (if they shouldn't).
 
@@ -32,3 +32,11 @@ A user may upload a file on a server such as an avatar. You must prevent users f
   * ❌ use secure functions to get the name of the file. Hackers can try to bypass them, like by using ASCII characters or stuff like that.
 
 If an attacker manage to put a PHP script on the server, they will most likely try **reverse engineering** meaning using a command such as `sudo nc -lvnp 443`, and accessing a terminal on your server (443 = HTTPS, so you go "unnoticed").
+
+<hr class="sl">
+
+## Forms
+
+![Level: Intermediate-Advanced](https://img.shields.io/badge/level-Intermediate%20Advanced-ff7f00)
+
+Forms are an entrypoint for way too many attacks. They can use bruteforce to guess username/password; try injecting some queries to expose your database, or execute malicious code; simply overusing your quota of sms/emails/... to make your services unavailable; or alter some request to get unlimited funds.
