@@ -6,6 +6,8 @@
 
 ## Cookies
 
+![Level: Novice](https://img.shields.io/badge/level-Novice-7cfc00)
+
 Cookies are used to store data. Most of the time, they are encrypted, but if they can be decrypted, then someone can change the value, and re-encrypt them.
 
 **How**: use F-12 to open the console, go to Application, then **Cookies**.
@@ -18,6 +20,8 @@ Cookies are used to store data. Most of the time, they are encrypted, but if the
 <hr class="sr">
 
 ## File upload
+
+![Level: Novice-Intermediate](https://img.shields.io/badge/level-Novice%20Intermediate-ff7f00)
 
 A user may upload a file on a server such as an avatar. You must prevent users from uploading malicious files (ex : scripts), AND prevent users from accessing content belonging to other users (if they shouldn't).
 
