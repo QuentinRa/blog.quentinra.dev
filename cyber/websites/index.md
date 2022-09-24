@@ -40,3 +40,11 @@ If an attacker manage to put a PHP script on the server, they will most likely t
 ![Level: Intermediate-Advanced](https://img.shields.io/badge/level-Intermediate%20Advanced-ff7f00)
 
 Forms are an entrypoint for way too many attacks. They can use bruteforce to guess username/password; try injecting some queries to expose your database, or execute malicious code; simply overusing your quota of sms/emails/... to make your services unavailable; or alter some request to get unlimited funds.
+
+<hr class="sr">
+
+## URLs
+
+![Level: Novice](https://img.shields.io/badge/level-Novice-7cfc00)
+
+There are cases when the request is in the URL, such as "/account/5123" or "/invoices?ref=365230". Every website should ensure that no unauthorized user can access private data.
