@@ -53,6 +53,25 @@ Start the attack. If a response is different from others, then it should be wort
 
 You can use `wfuzz` to bruteforce a URL, mostly a GET URL, meaning an URL like `/account/4d5z` or `/account?id=4d5z`. You can install wfuzz using pip, or use the docker image. [See the official documentation here](https://wfuzz.readthedocs.io/en/latest/index.html). **The command `wfuzz` is quite simple: given a list of word, and a URL, the command will replace the word `WFUZZ` in the URL, with each word in the list of words**.
 
+```bash
+# replace FUZZ in the URL 'https://xxx.tld/account/FUZZ' with every word (one word=one line) in common.txt
+wfuzz -w common.txt xxx.tld/account/FUZZ
+wfuzz -w common.txt xxx.tld:443/account/FUZZ
+
+# if HTTP
+wfuzz -w common.txt xxx.tld:80/account/FUZZ
+# ignore 404
+wfuzz -w common.txt --hc 404 xxx.tld/account?id=FUZZ
+# show only http_code=200
+wfuzz -w common.txt --sc 200 xxx.tld/account?id=FUZZ
+
+# try bruteforce 'admin' with password in common_pass
+wfuzz -w common_pass.txt -d "uname=admin&pass=FUZZ" xxx.tld/login.php
+```
+
+<details class="details-e">
+<summary>Details</summary><br>
+
 <details class="details-e">
 <summary>Using docker</summary>
 
@@ -80,15 +99,4 @@ You can reduce the number of requests shown after fuzzing. You have
 
 You got `l` for lines, `-w` for words, `h` for characters, `c` for HTTP code. You can specify multiples values by separating them with `,` (comma).
 </details>
-
-```bash
-# replace FUZZ in the URL 'https://xxx.tld/account/FUZZ' with every word (one word=one line) in common.txt
-wfuzz -w common.txt xxx.tld/account/FUZZ
-wfuzz -w common.txt xxx.tld:443/account/FUZZ
-# if HTTP
-wfuzz -w common.txt xxx.tld:80/account/FUZZ
-# ignore 404
-wfuzz -w common.txt --hc 404 xxx.tld/account?id=FUZZ
-# try bruteforce 'admin' with password in common_pass
-wfuzz -w common_pass.txt -d "uname=admin&pass=FUZZ" xxx.tld/login.php
-```
+</details>
