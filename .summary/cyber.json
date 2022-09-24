@@ -18,8 +18,20 @@
     ],
     "Attacks": [
       {
-        "tag": "websites",
-        "name": "Websites",
+        "tag": "server",
+        "name": "Server Security",
+        "desc": "...",
+        "icon": null
+      },
+      {
+        "tag": "website",
+        "name": "Website Security",
+        "desc": "...",
+        "icon": null
+      },
+      {
+        "tag": "database",
+        "name": "Database Security",
         "desc": "...",
         "icon": null
       }
