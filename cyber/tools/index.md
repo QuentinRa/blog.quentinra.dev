@@ -33,7 +33,7 @@ A payload is the form data that is stored in the request. For instance, when sub
   * **Add "$"** before and after any injectable data. These blocks of "$something$" will be later referred with "$1" for the first block, "$2" for the second block...
 * **Payload**: here you can select how to fill each of the injectable fields.
 
-Start the attack. If a response is different than others, then it's most likely that the injected data was "correct".
+Start the attack. If a response is different from others, then it should be worth it to try it manually.
 
 </details>
 
