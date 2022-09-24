@@ -100,3 +100,22 @@ You can reduce the number of requests shown after fuzzing. You have
 You got `l` for lines, `-w` for words, `h` for characters, `c` for HTTP code. You can specify multiples values by separating them with `,` (comma).
 </details>
 </details>
+
+<hr class="sr">
+
+## gobuster
+
+![Usage: Bruteforce GET URLs](https://img.shields.io/badge/usage-Bruteforce%20GET%20URLs-ffd700)
+
+This tool is quite similar as `wfuzz`, as it can be used to bruteforce URLs, written in GO, it's supposedly internally more efficient, and robust. Check the [GoBuster repository on GitHub](https://github.com/OJ/gobuster).
+
+```bash
+# gobuster dir -u url -w wordlist.txt -x extension, extension
+gobuster dir -u 127.0.0.1 -w wordlist.txt -w php
+gobuster dir -u domain.com -w wordlist.txt -w php
+# if wordlist has the word "toto", then gobuster will try
+# 127.0.0.1/toto.php (resp. domain.com/toto.php)
+
+# multiple extensions
+gobuster dir -u 127.0.0.1 -w wordlist.txt -w php, html
+```
