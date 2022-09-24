@@ -1,12 +1,22 @@
 {
   "title": "CyberSecurity-related courses - xxxx",
   "description": "xxx",
-  "courses": [
-    {
+  "courses": {
+    "e1": [
+      {
         "tag": "cyber-culture",
         "name": "xxx",
         "desc": "yyy",
         "icon": null
       }
-  ]
+    ],
+    "Attacks": [
+      {
+        "tag": "websites",
+        "name": "Websites",
+        "desc": "...",
+        "icon": null
+      }
+    ]
+  }
 }
