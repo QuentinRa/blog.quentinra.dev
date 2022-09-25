@@ -1,5 +1,15 @@
 # Change Log
 
+## no-released
+
+**Added**
+
+* `feature`: new category "cybersecurity"
+
+**Removed**
+
+* category "ensiie"
+
 ## v5.0.0 (2021-11-1)
 
 **Added**
