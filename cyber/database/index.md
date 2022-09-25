@@ -46,7 +46,7 @@ There are two kind of SQL injections, either
 * <i class="bi bi-info-square" style="background:#7cfc00"></i> you can see errors, or the result of the query, then it's pretty easy to extract information from it.
 * <i class="bi bi-info-square" style="background:#ffd700"></i> you can't see errors. Still, you can guess that there was an error if the purpose of the SQL query was not achieved (ex: login). You will have to use a **boolean-based SQL injection**. For instance, if testing that the DBMS is mariadb, if it's not mariadb, you should make the query fail. If the query worked (ex: login successful), then it means that is was mariadb!
 
-<details class="details-e" open>
+<details class="details-e">
 <summary>Manually map the database</summary><br>
 
 <details class="details-e">
