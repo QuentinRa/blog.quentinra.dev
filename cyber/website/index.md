@@ -25,3 +25,23 @@ Forms are an entrypoint for way too many attacks. They can use bruteforce to gue
 
 * <i class="bi bi-info-square" style="background:#7cfc00"></i> Open the console, and try to look for hidden input fields. Sometimes, you can do some stuff to break the server-side. You can also easily bypass JavaScript checks. You can also make a JavaScript extension to BruteForce forms (it's quite easy).
 * <i class="bi bi-info-square" style="background:#ffd700"></i> See **BurpSuite** to intercept requests, bruteForce forms, repeat requests...
+
+<hr class="sl">
+
+## Cross Site Scripting (XSS)
+
+![Level: Novice](https://img.shields.io/badge/level-Novice-7cfc00)
+
+XSS injections, sometimes called JavaScript injections, is an attack in which a hacker execute some malicious JavaScript  inside someone's else browser.
+
+<details class="details-e">
+<summary>Stored XSS</summary>
+
+The hacker submitted some JavaScript in a form (ex: username of an account, a comment). Then, anyone loading this page may execute the JavaScript.
+</details>
+
+<details class="details-e">
+<summary>Reflected XSS</summary>
+
+The hacker is dynamically loading the JavaScript, usually in a GET form: inside the URL, there is some malicious JavaScript, and when the page is loaded using the malicious JavaScript, then it will be executed.
+</details>
