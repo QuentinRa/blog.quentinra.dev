@@ -4,35 +4,35 @@
   "courses": {
     "e1": [
       {
-        "tag": "cyber-culture",
-        "name": "xxx",
-        "desc": "...",
-        "icon": null
+        "tag": "cybersecurity",
+        "name": "Culture",
+        "desc": "A lot of cyber-related stuff such as well-know threats to increase your knowledge about cybersecurity.",
+        "icon": "<i class=\"bi bi-shield-lock\"></i>"
       },
       {
         "tag": "tools",
         "name": "Tools",
-        "desc": "...",
-        "icon": null
+        "desc": "A list of tools that you may use either to defend or attack.",
+        "icon": "<i class=\"bi bi-hammer\"></i>"
       }
     ],
     "Attacks": [
       {
         "tag": "server",
         "name": "Server Security",
-        "desc": "...",
+        "desc": "Some knowledge related to how hackers can exploit your server, along with notes to prevent such things.",
         "icon": null
       },
       {
         "tag": "website",
         "name": "Website Security",
-        "desc": "...",
+        "desc": "Some knowledge related to how hackers can exploit your website, along with notes to prevent such things.",
         "icon": null
       },
       {
         "tag": "database",
         "name": "Database Security",
-        "desc": "...",
+        "desc": "Some knowledge related to how hackers can exploit your database, along with notes to prevent such things.",
         "icon": null
       }
     ]
