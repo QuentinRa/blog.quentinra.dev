@@ -130,4 +130,10 @@ Sometimes, a website may rely on another service to provide its service. in a SS
 * steal files
 * access internal services
 
-As you could guess, reducing the trust between the two services, or/and limiting what the user could do with the expose services, may help avoiding this attack.
+As you could guess, reducing the trust between the two services, or/and limiting what the user could do with the expose services, may help avoiding this attack. Usually if the web, there is way for us to insert a URL. You can try to intercept the request, and make the other services work on something he should not work on such as
+
+* `file:///etc/passwd`
+* `http://127.0.0.1`
+* `http://127.0.0.1:22`
+
+For instance, in PHP, you can use `file_get_content(...)` to GET the content of something. Now, if instead of getting the content of an external source, the user ask for one of the payload above, he could steal some files, or see ports that are enabled if there are (useful?) error messages.
