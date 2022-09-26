@@ -118,7 +118,7 @@ Some computers don't use PHP to load some websites, and relies on CGI scripts. B
 * <i class="bi bi-info-square" style="background:#7cfc00"></i> If you try `/cgi-bin/some_random_text_for_404`, then a vulnerable server may answer `bash: some_random_text_for_404: command not found`.
 *  <i class="bi bi-info-square" style="background:#7cfc00"></i> If you can identify a script such as `/cgi-bin/load.sh`, then you may try `/cgi-bin/load.sh&systeminfo` to get information on the system <small>(systeminfo is a command on Windows, you can try other commands)</small> 
 
-<hr class="sr">
+<hr class="sl">
 
 ## Server-Side Request Forgery (SSRF)
 

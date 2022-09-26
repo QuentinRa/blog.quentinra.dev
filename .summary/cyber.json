@@ -35,6 +35,20 @@
         "desc": "Some knowledge related to how hackers can exploit your database, along with notes to prevent such things.",
         "icon": null
       }
+    ],
+    "Cryptography": [
+      {
+        "tag": "cryptography/basics/index.md",
+        "name": "Crypto (basics)",
+        "desc": "...",
+        "icon": null
+      },
+      {
+        "tag": "cryptography/algorithms/index.md",
+        "name": "Crypto (algorithms)",
+        "desc": "...",
+        "icon": null
+      }
     ]
   }
 }
