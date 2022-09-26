@@ -111,7 +111,23 @@ echo "Hello, ".htmlspecialchars($username);
 
 ## Common Gateway Interface (CGI)
 
+![Level: Novice](https://img.shields.io/badge/level-Novice-7cfc00)
+
 Some computers don't use PHP to load some websites, and relies on CGI scripts. Basically, CGI is a way of interfacing between a client requesting a webpage, and another language (Java/Python/Perl/...) proving the webpage (as you would in PHP). CGI scripts are usually stored in `/cgi-bin/`.
 
-* If you try `/cgi-bin/some_random_text_for_404`, then a vulnerable server may answer `bash: some_random_text_for_404: command not found`.
-* If you can identify a script such as `/cgi-bin/load.sh`, then you may try `/cgi-bin/load.sh&systeminfo` to get information on the system <small>(systeminfo is a command on Windows, you can try other commands)</small> 
+* <i class="bi bi-info-square" style="background:#7cfc00"></i> If you try `/cgi-bin/some_random_text_for_404`, then a vulnerable server may answer `bash: some_random_text_for_404: command not found`.
+*  <i class="bi bi-info-square" style="background:#7cfc00"></i> If you can identify a script such as `/cgi-bin/load.sh`, then you may try `/cgi-bin/load.sh&systeminfo` to get information on the system <small>(systeminfo is a command on Windows, you can try other commands)</small> 
+
+<hr class="sr">
+
+## Server-Side Request Forgery (SSRF)
+
+![Level: Novice](https://img.shields.io/badge/level-Novice-7cfc00)
+
+Sometimes, a website may rely on another service to provide its service. in a SSRF attack, an attacker will use the website, which is *too much* trusted by the service used, to attack the other service. The goal is the
+
+* enumerate open ports to detect services 
+* steal files
+* access internal services
+
+As you could guess, reducing the trust between the two services, or/and limiting what the user could do with the expose services, may help avoiding this attack.
