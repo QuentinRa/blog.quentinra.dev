@@ -106,3 +106,12 @@ echo "Hello, ".htmlentities($username);
 # as some characters will be escaped twice
 echo "Hello, ".htmlspecialchars($username);
 ```
+
+<hr class="sr">
+
+## Common Gateway Interface (CGI)
+
+Some computers don't use PHP to load some websites, and relies on CGI scripts. Basically, CGI is a way of interfacing between a client requesting a webpage, and another language (Java/Python/Perl/...) proving the webpage (as you would in PHP). CGI scripts are usually stored in `/cgi-bin/`.
+
+* If you try `/cgi-bin/some_random_text_for_404`, then a vulnerable server may answer `bash: some_random_text_for_404: command not found`.
+* If you can identify a script such as `/cgi-bin/load.sh`, then you may try `/cgi-bin/load.sh&systeminfo` to get information on the system <small>(systeminfo is a command on Windows, you can try other commands)</small> 
