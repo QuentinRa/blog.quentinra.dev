@@ -32,16 +32,77 @@ Forms are an entrypoint for way too many attacks. They can use bruteforce to gue
 
 ![Level: Novice](https://img.shields.io/badge/level-Novice-7cfc00)
 
-XSS injections, sometimes called JavaScript injections, is an attack in which a hacker execute some malicious JavaScript  inside someone's else browser.
+XSS injections, sometimes called JavaScript injections, is an attack in which a hacker execute some malicious JavaScript  inside someone's else browser. To protected your website, you should filter JavaScript, along with using modern headers/settings that can prevent such things from happening. Nonetheless, there are lots of ways to inject JavaScript in a webpage, you might want to check this long [cheatsheet of ways of evading XSS filters by OWASP here](https://cheatsheetseries.owasp.org/cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.html).
 
 <details class="details-e">
 <summary>Stored XSS</summary>
 
 The hacker submitted some JavaScript in a form (ex: username of an account, a comment). Then, anyone loading this page may execute the JavaScript.
+
+**Example**
+
+* The "profile.php" below is a vulnerable script which is not "filtering" the value of `to`
+
+```php
+<?php
+function get_user_from_id($id): string {
+    // consider that this values was loaded from the database,
+    // and this is what the user submitted when creating his account
+    return "Marie<script>alert('Stored XSS')</script>";
+}
+
+$username = get_user_from_id($_GET['id']);
+echo "Show the profile of ".$username;
+```
+
+* Then, anyone loading `http://localhost/profile?id=5`, will execute the malicious JavaScript
+
 </details>
 
 <details class="details-e">
 <summary>Reflected XSS</summary>
 
 The hacker is dynamically loading the JavaScript, usually in a GET form: inside the URL, there is some malicious JavaScript, and when the page is loaded using the malicious JavaScript, then it will be executed.
+
+**Example**
+
+* Here, the script say_hello is a vulnerable script like this, which is not "filtering" the value of `to`
+
+```php
+<?php
+$username = $_GET['to'];
+echo "Hello, ".$username;
+```
+
+* Then, anyone clicking on this link will execute the malicious XSS (just a popup)  `http://localhost/say_hello.php?to=Marie<script>alert('Reflected XSS')</script>`
+
+> **Note**: in this somewhat stupid example, we can see that there is a script inside the URL, but there is a lot of ways to hide it, for instance making the URL quite long, and because the page is showing "Hello Marie", people won't see at first glance that they were attacked.
 </details>
+
+<details class="details-e">
+<summary>Some well-known XSS payloads</summary>
+
+[XSS Payload List (GitHub)](https://github.com/payloadbox/xss-payload-list)
+
+```html
+<script>/*some malicious JavaScript*/</script>
+
+<a onmouseover="/*some malicious JavaScript*/">some link</a>
+
+<img src="https://link/to/malicious.js" alt="something making it not obvious"/>
+```
+</details>
+
+You may use these in PHP, to avoid filtering in cases where you know that any form of HTML should be forbidden
+
+```php
+# remove tags
+echo "Hello, ".strip_tags($username);
+
+# replace "<" and ">" with their HTML code, so that the code is not executed
+echo "Hello, ".htmlentities($username);
+
+# this is the same as htmlentities, but it may show weird characters in old browsers,
+# as some characters will be escaped twice
+echo "Hello, ".htmlspecialchars($username);
+```
