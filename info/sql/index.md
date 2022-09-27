@@ -48,61 +48,51 @@ In the second screen, you can see the usual representation of your data in a dat
 
 <hr class="sl">
 
-## Zest of knowledge
+## Terminology
 
-<br>
+<table class="table table-bordered table-striped border-dark">
+<tr><th>Term</th><th>Explanation</th></tr>
+<tr>
+<td><b>Request</b></td>
+<td>This is a statement made of <b>clauses</b> to do something on the database.</td>
+</tr>
 
-<details class="details-e">
-<summary>Request</summary>
-
-This is a statement in which you are using clauses to do something on the database. **A request must ends with a `;`** <small>(unless this is a simple request)</small>.
-</details>
-
-<details class="details-e">
-<summary>Clause</summary>
-
-This is the keywords SELECT, FROM, ... that are making a SQL request. Clauses are optional aside SELECT <small>(even FROM is optional, when selecting a value/function)</small>. The clauses
+<tr>
+<td><b>Clauses</b></td>
+<td>These are the keyword SELECT, FROM, DELETE, CREATE... that are part of any SQL request. Note that every clause is optional, and they
 
 * are declared in THIS order: `SELECT` > `FROM` > `WHERE` > `GROUP BY` > `HAVING` > `ORDER BY` > `LIMIT`
-* executed in THIS order: `FROM` > `WHERE` > `GROUP BY` > `HAVING` > `SELECT` > `ORDER BY` > `LIMIT`
-</details>
+* while executed in THIS order: `FROM` > `WHERE` > `GROUP BY` > `HAVING` > `SELECT` > `ORDER BY` > `LIMIT`
+</td>
+</tr>
 
-<details class="details-e">
-<summary>Schema</summary>
+<tr>
+<td>Schema</td>
+<td>This is a table storing data about something. The pratical note, is that, in some cases, you may have to write <code>schema_name.table_name</code>.
 
-To make it simple, this is a table storing data. Some are saying this is a library of databases. To call a table in a schema, do `schema.table`.
+* For a user: this is the list of its tables, views, constraints
+* For a database: this is the table **INFORMATION_SCHEMA** (TABLES, USERS, COLUMNS/DOMAINS, CHECK_CONSTRAINTS)
+* For a request: this is the selected tables, and the attributes
+</td>
+</tr>
 
-* For a user, this is the list of its tables, views, constraints
-* For a database, this is the table **INFORMATION_SCHEMA** (TABLES, USERS, COLUMNS/DOMAINS, CHECK_CONSTRAINTS)
-
-This word is also used for requests 🧐: this is the selected tables, and the attributes.
-
-As the ENSIIE, we got one schema per user (ex: `prenom.nom`) in which we got another schema called `public`. You will store your databases in it.
-</details>
-
-<details class="details-e">
-<summary>DML, DDL, DCL</summary>
-
-We are using DML/DDL/DCL, to talk about a category of clauses. This is something quite used by pros 😎.
+<tr>
+<td><b>DML, DDL, and DCL</b></td>
+<td><p>These are categories of clauses. This is something quite used by pros 😎.</p>
 
 * DML (Data Manipulation): Select, Insert, Update, Delete
 * DDL (Data Definition): Create, Alter, Drop
 * DCL (Data control): Grant, Revoke
-</details>
+</td>
+</tr>
 
-<details class="details-e">
-<summary>☑✅ Primary and Foreign keys ☑✅</summary>
+<tr>
+<td><b>Domain</b></td>
+<td>
 
-**YOU MUST KNOW THIS**. The primary key is explained in the previous section. This is usually one attribute called "id" which is an artificial key. A **Foreign key** is a set of attributes (=keys) that are taking values from another key.
-
-For instance, a `customer(c_id, c_name, ...)` will `purchase(p_id, date, description, ...)` things. You will add in the table purchases an attribute `c_id` <small>(the name can be different)</small> taking values from the table "customer". You should see this as referencing a customer inside another table.
-</details>
-
-<details class="details-e">
-<summary>Domain</summary>
-
-Well, for an attribute, this is the "range" of the values that your attribute can take. It's made of the **type**, but sometimes you will add **constraints**, and all of this is what we call domain.
-</details>
+This is the "range" of the values that your attribute can take. It's made of the **type**, but sometimes you will add **constraints**, and all of this is what we call domain.</td>
+</tr>
+</table>
 
 <hr class="sr">
 
