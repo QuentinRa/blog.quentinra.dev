@@ -12,8 +12,6 @@ Relational databases are provided by a **Database management system DBMS** (`Sys
 * ...
 
 > **You need to install one**, to continue this course. Please, refer to your DBMS documentation 🤓. A temporary solution might be to use [SQLiteOnline](https://sqliteonline.com/) (🙄).
-> 
-> **ENSIIE students** got a some notes [in the WEB section](../../special/web/parts/db-acc.md) to use our school database.
 
 > **SQL 89/92**: Both **SQL-89** and **SQL-92** are quite used. There is one major difference: what we call "JOIN clauses" are **not available in SQL-89**.
 
@@ -535,7 +533,7 @@ CREATE TABLE T_NAME ( a_name a_type, ... );
 CREATE TABLE IF NOT EXISTS T_NAME ( a_name a_type, ... );
 ```
 
-<details class="details-e mt-3">
+<details class="details-e mt-3" open>
 <summary>Attributes and constraints</summary>
 
 <div class="row mx-0 row-cols-md-2"><div>
@@ -555,29 +553,48 @@ These are the most used of the predefined constraints.
 * You can give a **default value** using `DEFAULT <value>`.
 * You can create your **own constraints** using `constraint nale check (bool_expression)` (named constraint) or `check (bool_expression)` (unammed constraint).
 
+<hr>
+
+...
+
 </div><div>
 
+* Basics
+
 ```sql
-CREATE TABLE T_NAME(
-    fullname varchar(64) NOT NULL DEFAULT 'John DOE',
-    -- AUTO_INCREMENT = Artificial key in MariaDB
-    id int AUTO_INCREMENT PRIMARY KEY,
-    -- id_user must take a value taken by "id" in the table USERS
-    id_user int REFERENCES USERS(id),
+fullname varchar(64),
+fullname varchar(64) NOT NULL,
+fullname varchar(64) DEFAULT 'John DOE',
+fullname varchar(64) UNIQUE,
+-- multiple
+fullname varchar(64) NOT NULL DEFAULT 'John DOE',
+-- primary key
+id int PRIMARY KEY,
+-- Artificial key in MariaDB (+1 after each record added)
+id int AUTO_INCREMENT PRIMARY KEY,
+-- id_user must take a value taken by "id" in the table USERS
+id_user int REFERENCES USERS(id),
+```
 
-    -- if xxx is a tuple of more than one attribute
-    PRIMARY KEY(attribute1, attribute2),
-    UNIQUE(attribute1, attribute2),
-    FOREIGN KEY (attribute1) REFERENCES ANOTHER_TABLE(an_attribute),
-    FOREIGN KEY (attribute1, attribute2) REFERENCES ANOTHER_TABLE(an_attribute1, an_attribute2),
+* Multiples attributes
 
-    -- custom constraints
-    -- 1) applied on an attribute
-    attribute date check (attribute > '2000-01-01'),
-    -- 2) applied on the table
-    constraint example check (LENGTH(fullname) > 5),
-    check (id_user IN (/* some request */))
-)
+```sql
+-- if xxx is a tuple of more than one attribute
+PRIMARY KEY(attribute1, attribute2),
+UNIQUE(attribute1, attribute2),
+FOREIGN KEY (attribute1) REFERENCES ANOTHER_TABLE(an_attribute),
+FOREIGN KEY (attribute1, attribute2) REFERENCES ANOTHER_TABLE(an_attribute1, an_attribute2),
+```
+
+* Constraints
+
+```sql
+-- custom constraints
+-- 1) applied on an attribute
+attribute date check (attribute > '2000-01-01'),
+-- 2) applied on the table
+constraint example check (LENGTH(fullname) > 5),
+check (id_user IN (/* some request */))
 ```
 </div></div>
 
