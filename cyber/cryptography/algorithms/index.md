@@ -15,9 +15,9 @@ In symmetric algorithms, **both** of the sender and the receiver know the key: k
 
 <hr class="sl">
 
-## Some symmetric-algorithms
+## Caesar, and Substitution cipher
 
-<details class="details-e" open>
+<details class="details-e">
 <summary>Caesar cipher (<code>Code de César</code>)</summary>
 
 Caesar was replacing letters like this $a \to d,\ b \to e,\ ...,\ z \to c$. Each letter is associated with another one "k" letters forward (k=3 in the previous example), modulus the number of letters (26). To decrypt, for each letter, go backward by "k" letters to get back the decrypted letter.
@@ -30,7 +30,7 @@ Caesar was replacing letters like this $a \to d,\ b \to e,\ ...,\ z \to c$. Each
 
 </details>
 
-<details class="details-e" open>
+<details class="details-e">
 <summary>Substitution cipher</summary>
 
 On the same idea as the caesar cipher, the **substitution cipher** is associating each letter by another like $a \to w,\ b \to e,\ etc.$. The key is a dictionary of 26 letters (a-z).
@@ -39,3 +39,9 @@ On the same idea as the caesar cipher, the **substitution cipher** is associatin
 * **Secure**: weak
     * Entropy attack
 </details>
+
+<hr class="sr">
+
+## One Time Pad (OTP)
+
+...

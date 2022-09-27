@@ -208,14 +208,6 @@ A binary is a number in base 2, so we are using only 0 and 1. You will need to d
 Most of them aren't used, either because they are inefficient or because they were broken. You can move to the next section if you are not interested 🧐.
 
 <details class="details-e">
-<summary>Caesar cipher (<code>Code de César</code>)</summary>
-
-Caesar was replacing letters like this $a \to c,\ b \to d,\ etc.$. On the same idea, the **substitution cipher** is replacing each letter by another like $a \to w,\ b \to e,\ etc.$.
-
-Unfortunately, we can try to replace the most common letters in the ciphertext, or the most common groups of letters, with the most common letters (or group of letters) in a Language. And break the cipher.
-</details>
-
-<details class="details-e">
 <summary>Vigenère cipher (<code>Cryptage en bloc de Vigenère</code>)</summary>
 
 This is the same as the Caesar cipher/Substitution cipher. We are working on letters. But, this time we are splitting letters into groups. The problem is that if we got the key, we can easily get back the message.
