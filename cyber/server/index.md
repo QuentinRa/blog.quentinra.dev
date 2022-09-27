@@ -46,3 +46,19 @@ A user may upload a file on a server such as an avatar. You must prevent users f
   * ❌ USE secure functions/ways to get the name of the uploaded file. Hackers can try to bypass them, like by using ASCII characters, or stuff like that.
 
 If an attacker manage to upload a PHP script on the server, they will most likely try to do **reverse engineering**, meaning using a command such as `sudo nc -lvnp 443`, and accessing a remote shell on your server <small>(443 = HTTPS, so you go "unnoticed")</small>.
+
+<hr class="sr">
+
+## Transfer files using FTP (21)
+
+FTP (File Transfer protocol) is a protocol used to transfer (upload, download) files from one computer to another. The protocol use **port 21** by default <small>(22 for SFTP=Secure FTP)</small>, while data is transferred via port 20.
+
+```bash
+$ ftp <ip>
+# ls <folder>: list files of <folder>
+# cd <folder>: move to <folder>
+# put <src> <dest>: put <src> (local) to <dest> (server)
+# get <src> <dest>: get <src> (server), and save it to <dest> (local)
+```
+
+* <i class="bi bi-info-square" style="background:#7cfc00"></i> There is a user: `anonymous/no password`, that usually is disabled, or enabled with limited privileges. If a user anonymous can upload script, they will be upload with unrestrained privileges, allowing anyone executing the script to have fun to their heart's content.
