@@ -62,3 +62,9 @@ $ ftp <ip>
 ```
 
 * <i class="bi bi-info-square" style="background:#7cfc00"></i> There is a user: `anonymous/no password`, that usually is disabled, or enabled with limited privileges. If a user anonymous can upload script, they will be upload with unrestrained privileges, allowing anyone executing the script to have fun to their heart's content.
+
+<hr class="sl">
+
+  ## Transfer files using SMB/NFS
+
+SMB (Windows), and NFS (Linux), are mostly used internally to share files, instead of FTP which is mostly used externally.
