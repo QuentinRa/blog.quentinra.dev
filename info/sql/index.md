@@ -528,8 +528,6 @@ DROP DATABASE db_name
 <details class="details-e" open>
 <summary>Tables</summary>
 
-<div class="row mx-0 row-cols-md-2"><div>
-
 You can create a table with `CREATE TABLE` passing all attributes, and their constraints if any.
 
 ```sql
@@ -539,6 +537,8 @@ CREATE TABLE IF NOT EXISTS T_NAME ( a_name a_type, ... );
 
 <details class="details-e mt-3">
 <summary>Attributes and constraints</summary>
+
+<div class="row mx-0 row-cols-md-2"><div>
 
 The syntax for an attribute is `<name> <type> [constraints]*`. If constraints are applied on multiple attributes, they must be declared separately <small>(you may also do the same for one-attribute constraints, but that's not how we usually do)</small>.
 
@@ -555,10 +555,12 @@ These are the most used of the predefined constraints.
 * You can give a **default value** using `DEFAULT <value>`.
 * You can create your **own constraints** using `constraint nale check (bool_expression)` (named constraint) or `check (bool_expression)` (unammed constraint).
 
+</div><div>
+
 ```sql
 CREATE TABLE T_NAME(
     fullname varchar(64) NOT NULL DEFAULT 'John DOE',
-    -- AUTO_INCREMENT (mariadb): automatically increase the value by one by new record
+    -- AUTO_INCREMENT = Artificial key in MariaDB
     id int AUTO_INCREMENT PRIMARY KEY,
     -- id_user must take a value taken by "id" in the table USERS
     id_user int REFERENCES USERS(id),
@@ -577,12 +579,9 @@ CREATE TABLE T_NAME(
     check (id_user IN (/* some request */))
 )
 ```
-</details>
-
-</div><div>
-
-
 </div></div>
+
+</details>
 
 </details>
 
