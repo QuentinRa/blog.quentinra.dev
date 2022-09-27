@@ -525,10 +525,65 @@ DROP DATABASE db_name
 ```
 </details>
 
-<details class="details-e">
+<details class="details-e" open>
 <summary>Tables</summary>
 
-...
+<div class="row mx-0 row-cols-md-2"><div>
+
+You can create a table with `CREATE TABLE` passing all attributes, and their constraints if any.
+
+```sql
+CREATE TABLE T_NAME ( a_name a_type, ... );
+CREATE TABLE IF NOT EXISTS T_NAME ( a_name a_type, ... );
+```
+
+<details class="details-e mt-3">
+<summary>Attributes and constraints</summary>
+
+The syntax for an attribute is `<name> <type> [constraints]*`. If constraints are applied on multiple attributes, they must be declared separately <small>(you may also do the same for one-attribute constraints, but that's not how we usually do)</small>.
+
+| Constraints | Usage                                                         |
+|-------------|---------------------------------------------------------------|
+| NOT NULL    | Attribute can't be null                                       |
+| NULL        | Attribute can be null                                         |
+| UNIQUE      | Attribute must be unique                                      |
+| PRIMARY KEY | UNIQUE + NOT NULL                                             |
+| REFERENCES  | Attribute must take a value taken by the referenced attribute |
+
+These are the most used of the predefined constraints.
+
+* You can give a **default value** using `DEFAULT <value>`.
+* You can create your **own constraints** using `constraint nale check (bool_expression)` (named constraint) or `check (bool_expression)` (unammed constraint).
+
+```sql
+CREATE TABLE T_NAME(
+    fullname varchar(64) NOT NULL DEFAULT 'John DOE',
+    -- AUTO_INCREMENT (mariadb): automatically increase the value by one by new record
+    id int AUTO_INCREMENT PRIMARY KEY,
+    -- id_user must take a value taken by "id" in the table USERS
+    id_user int REFERENCES USERS(id),
+
+    -- if xxx is a tuple of more than one attribute
+    PRIMARY KEY(attribute1, attribute2),
+    UNIQUE(attribute1, attribute2),
+    FOREIGN KEY (attribute1) REFERENCES ANOTHER_TABLE(an_attribute),
+    FOREIGN KEY (attribute1, attribute2) REFERENCES ANOTHER_TABLE(an_attribute1, an_attribute2),
+
+    -- custom constraints
+    -- 1) applied on an attribute
+    attribute date check (attribute > '2000-01-01'),
+    -- 2) applied on the table
+    constraint example check (LENGTH(fullname) > 5),
+    check (id_user IN (/* some request */))
+)
+```
+</details>
+
+</div><div>
+
+
+</div></div>
+
 </details>
 
 <hr class="sr">
