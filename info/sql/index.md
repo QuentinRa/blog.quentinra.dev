@@ -331,8 +331,8 @@ SELECT name FROM customer c ORDER BY name; -- (ASC) Henry, Luna
 SELECT name FROM customer c ORDER BY name ASC; -- Henry, Luna
 SELECT name FROM customer c ORDER BY name DESC; -- Luna, Henry
 SELECT name FROM customer c ORDER BY id DESC; -- Henry (2), Luna (1)
--- THIS IS QUITE USEFUL when you selected a function (ex: AVG)
--- and you want to order your results using this function results
+-- THIS IS QUITE USEFUL when you selected something that is not an attribute,
+-- and you want to use it in "order by"
 SELECT name FROM customer c ORDER BY 1 DESC; -- 1 = name = 1 rst param
 ```
 </details>
@@ -340,24 +340,26 @@ SELECT name FROM customer c ORDER BY 1 DESC; -- 1 = name = 1 rst param
 <details class="details-e">
 <summary>UNION/INTERSECT/EXCEPT <i class="small">on two sets of results</i></summary>
 
-You can make the union, the intersection, or the difference of two requests' results, **but they must have the same number of attributes** in SELECT. We usually use `SELECT NULL` to fill missing arguments <small>(you could have used a number such as 20, if you wanted to fill the missing data of the second request with 20 instead of NULL)</small>.
+You can make the union, the intersection, or the difference of two requests' results, **but they must have the same number of selected elements** in SELECT. **TRICK**: We usually use `NULL` (or a value) if the two queries do not have the same number of selected element.</small>.
 
 ```sql
 SELECT name, age FROM customer c
 UNION -- you could use INTERSECT or EXCEPT 
 SELECT name, NULL FROM customer c;
 -- 4 rows
--- Luna (18), Henry (24)
--- Luna (null), Henry (null)
+-- Luna (18)
+-- Henry (24)
+-- Luna (null)
+-- Henry (null)
 ```
 
-> **Note**: ORDER, or LIMIT may only be applied on the whole request.
+> **Note**: ORDER, or LIMIT can only be applied on the whole request.
 </details>
 
 <details class="details-e">
 <summary>Calculations <i class="small">(on all tuples, on groups of tuples)</i></summary>
 
-You can **only** make calculations in **SELECT** and in a new clause **HAVING** <small>(NOT in the WHERE, you may use a nested request)</small>.
+You can **only** make calculations in **SELECT**, or in a new clause **HAVING** <small>(NOT in the WHERE, but you may use a nested request)</small>.
 
 ```sql
 -- the most used ones
@@ -479,8 +481,6 @@ SELECT c.*, p_id, `date` FROM customer2 c JOIN purchase p ON c.c_id = p.c_id
 <summary>OUTER JOIN (<code>Jointure externe</code>)</summary>
 
 Until now, the row "(2, Henry, ...)" was never shown, because there was no "c_id=2" in purchases. You can show such records using OUTER JOIN.
-
-* **LEFT OUTER JOIN**
 
 ```sql
 SELECT * FROM customer2 c LEFT OUTER JOIN purchase p
@@ -666,7 +666,7 @@ CREATE Role role_name with admin user -- role managed by an admin
 
 **Note** : you can only grant privileges on one table at once, and to one user by request.
 
-<table class="table table-bordered">
+<table class="table table-bordered table-striped border-dark">
 <thead><tr><th colspan="2">Some privileges</th></tr></thead>
 <tbody>
 <tr><td>SELECT</td><td>DELETE</td></tr>
