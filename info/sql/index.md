@@ -53,7 +53,7 @@ In the second screen, you can see the usual representation of your data in a dat
 <table class="table table-bordered table-striped border-dark">
 <tr><th>Term</th><th>Explanation</th></tr>
 <tr>
-<td><b>Request</b></td>
+<td><b>Request/Query</b></td>
 <td>This is a statement made of <b>clauses</b> to do something on the database.</td>
 </tr>
 
@@ -80,14 +80,14 @@ In the second screen, you can see the usual representation of your data in a dat
 <td><b>DML, DDL, and DCL</b></td>
 <td><p>These are categories of clauses. This is something quite used by pros 😎.</p>
 
-* DML (Data Manipulation): Select, Insert, Update, Delete
-* DDL (Data Definition): Create, Alter, Drop
-* DCL (Data control): Grant, Revoke
+* **DML (Data Manipulation)**: Select, Insert, Update, Delete
+* **DDL (Data Definition)**: Create, Alter, Drop
+* **DCL (Data control)**: Grant, Revoke
 </td>
 </tr>
 
 <tr>
-<td><b>Domain</b></td>
+<td>Domain</td>
 <td>
 
 This is the "range" of the values that your attribute can take. It's made of the **type**, but sometimes you will add **constraints**, and all of this is what we call domain.</td>
@@ -98,41 +98,23 @@ This is the "range" of the values that your attribute can take. It's made of the
 
 ## SQL Syntax
 
-Before digging into the clauses, here is a list of everything that you will be supposed to know in the next sections.
+Before digging into each clause, here is the basics that you need to know.
 
 <div class="row mx-0"><div class="col-6">
 
 ```sql
-SELECT * 
-FROM information_schema.TABLES T
-WHERE T.TABLE_SCHEMA = 'information_schema';
+-- a request looks like this
+SELECT *
+FROM users
+WHERE username = 'hello_world';
 ```
 </div><div class="col-6 align-self-center">
 
 * **Clauses names are not case-sensitive** <small>(uppercase, lowercase, mix of both)</small>
 * **Requests end with a ;** <small>(unless they are simple)</small>
-* You can put everything on the same line
+* You can put everything on the same line <small>(🤮)</small>
+* Comments are made using `-- comment`, `# comment`, or `/* comment */`
 </div></div>
-
-| Notion (General) | In SQL |
-| ------ | ------- |
-| Assignment <small>(PL/SQL only)</small> | `a = 5`, or `a := 5`|
-| Comments | `-- comment` or `/* comment */`|
-| a % b | `MOD(a,b)`|
-| Reserved words | `Select date [...]` ❌ (date, name, ... are reserved)<br><code>Select \`date\` [...]</code> ✅|
-| convert/cast | <ul><li>Simple CAST<br>`CAST(value as new_type)`</li><li>Extract something from a date<br>`EXTRACT(element from some_date)` <br>With element YEAR, MONTH, DAY, HOUR, ...</li></ul> |
-
-| Notion (Strings) | In SQL |
-| ------ | ------- |
-| String | `'a'` or `"a"` (the latter may not work) |
-| String (escape) | ex: use a quote in a quote `'\''` |
-| Concatenate | <code>'a' \|\| 'b'</code> |
-| Extract chars | `LEFT(string, count)` or `RIGHT(string, count)` |
-| Others | `STRCMP(str1, str2)`, `LENGTH('str')`, `LOWER('str')`, `UPPER('str')` |
-
-> **Note**: More functions at [W3Schools - SQL Server Functions](https://www.w3schools.com/SQL/sql_ref_sqlserver.asp).<br>
-> **Test a function?**: `SELECT EXTRACT(DAY from '2020-03-25')`<br>
-> **Test a function?**: `SELECT CAST(15 AS VARCHAR(11))`
 
 <details class="details-e">
 <summary>Types</summary>
@@ -148,6 +130,30 @@ WHERE T.TABLE_SCHEMA = 'information_schema';
 | Real  | `float` or `real` | To represents a price, you may use `decimal(n,p)`  |
 | date  | `date` | To represents a date |
 | Enumeration  | `enum('v1', 'v2', ...)` | An attribute/value that can take a fixed number of values. |
+</details>
+
+<details class="details-e">
+<summary>Useful functions</summary><br>
+
+
+| Notion (General)     | In SQL                                                                                       |
+|----------------------|----------------------------------------------------------------------------------------------|
+| a % b                | `MOD(a,b)`                                                                                   |
+| Quote reserved words | `Select date [...]` ❌ (date, name, ... are reserved)<br><code>Select \`date\` [...]</code> ✅ |
+| cast                 | `CAST(value as new_type)`                                                                    |
+| extract date         | `EXTRACT(element from some_date)` <br>With element YEAR, MONTH, DAY, HOUR, ...               |
+
+| Notion (Strings) | In SQL |
+| ------ | ------- |
+| String | `'a'` or `"a"` (the latter may not work) |
+| String (escape) | ex: use a quote in a quote `'\''` |
+| Concatenate | <code>'a' \|\| 'b'</code> |
+| Extract chars | `LEFT(string, count)` or `RIGHT(string, count)` |
+| Others | `STRCMP(str1, str2)`, `LENGTH('str')`, `LOWER('str')`, `UPPER('str')` |
+
+> **Note**: More functions at [W3Schools - SQL Server Functions](https://www.w3schools.com/SQL/sql_ref_sqlserver.asp).<br>
+> **Test a function?**: `SELECT EXTRACT(DAY from '2020-03-25')`<br>
+> **Test a function?**: `SELECT CAST(15 AS VARCHAR(11))`
 </details>
 
 <hr class="sl">
