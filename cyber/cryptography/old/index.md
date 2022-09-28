@@ -1,9 +1,3 @@
-# Cryptography
-
-Cryptography is the knowledge related to the **encryption** and **decryption** of messages. This course is more a mathematical course than a programming course, at least for now (sorry 😖).
-
-<hr class="sl">
-
 ## Mathematical references
 
 A summary of what you need to know.
@@ -69,23 +63,12 @@ Of course, we are doing this because **this one was hard**, but if you got $5 * 
 <details class="details-e">
 <summary>📚 Definition 📚</summary>
 
-A prime number is a number **greater or equals to 2**, which is **only divisible by 1 and itself**.
-
-* ✅: 2, 3, 5, 7, 11, 13, etc.
-* ❌: 4 (→2), 6 (→2, →3), 9 (→3), 10 (→2, →5), etc.
-
 **Note**: If $p$ and $q$ are prime numbers, and $p \neq q$, then $p \wedge q = 1$.<br>
 **Note**: $\phi(n)$ is called Euler's totient function (`indicatrice d'Euler`) and is the number of prime numbers with $n$.
 </details>
 
 <details class="details-e">
 <summary>🧺 Prime Factorization 🧺</summary>
-
-* **French**: `Décomposition en produit de facteurs premiers`
-* **Definition**: Every number ($\ge 2$) can be expressed as a product of prime numbers
-* Examples
-    * $27 = 3 * 9 = 3^3$
-    * $60 = 6 * 10 = 2 * 3 * 5 * 2 = 2^2 * 3 * 5$
 
 We are calling $\xi_p(n)$, the exponent of $p$ in the factorization of a number $n$ with prime numbers (`puissance de p dans n`, ex: $\xi_3(27) = 3$ or $\xi_5(60)=1$).
 </details>
