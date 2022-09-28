@@ -533,7 +533,7 @@ CREATE TABLE T_NAME ( a_name a_type, ... );
 CREATE TABLE IF NOT EXISTS T_NAME ( a_name a_type, ... );
 ```
 
-<details class="details-e mt-3" open>
+<details class="details-e mt-3">
 <summary>Attributes and constraints</summary>
 
 <div class="row mx-0 row-cols-md-2"><div>
@@ -555,7 +555,14 @@ These are the most used of the predefined constraints.
 
 <hr>
 
-...
+A **table should always have a primary key** (which could be an artificial key)! A primary key can be made of multiple attributes (ex: id_user, and id_purchase). In such case, the key **as a whole** must be unique, and not null, but a part of the key (meaning each attribute) may be null, or not unique.
+
+```sql
+-- considering (id_user, id_purchase, item_name) with key(id_user, id_purchase)
+(5, 12, "Book") -- ok
+(5, 13, "Computer") -- ok
+(5, 12, "Phone") -- NOT OK, duplicate key
+```
 
 </div><div>
 
