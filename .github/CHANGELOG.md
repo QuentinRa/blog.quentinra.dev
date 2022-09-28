@@ -5,6 +5,7 @@
 **Added**
 
 * `feature`: new category "cybersecurity"
+* `feature`: can hide courses
 
 **Removed**
 

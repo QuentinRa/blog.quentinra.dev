@@ -7,7 +7,8 @@
         "tag": "cybersecurity",
         "name": "Culture",
         "desc": "A lot of cyber-related stuff such as well-know threats to increase your knowledge about cybersecurity.",
-        "icon": "<i class=\"bi bi-shield-lock\"></i>"
+        "icon": "<i class=\"bi bi-shield-lock\"></i>",
+        "hidden": true
       },
       {
         "tag": "tools",
