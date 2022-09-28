@@ -5,10 +5,10 @@ Cryptography is the knowledge related to the encryption and decryption of messag
 <details class="details-e">
 <summary>Symmetric algorithms</summary>
 
-In symmetric algorithms, **both** of the sender and the receiver know the key: k.
+In symmetric algorithms, **both** of the sender and the receiver know the key: k. Algorithm are known to the public.
 
 * **A** use an algorithm C to encrypt the message with the key k, generating a cipher (`message encrypté`) c : `c = C(k, m)`
-* **B** use an angorithm D to decrypt the message with the same key k : `m = D(k, c)`
+* **B** use an algorithm D to decrypt the message with the same key k : `m = D(k, c)`
 </details>
 
 <details class="details-e">
@@ -19,7 +19,9 @@ In symmetric algorithms, **both** of the sender and the receiver know the key: k
 
 <hr class="sl">
 
-## Caesar, and Substitution cipher
+## Caesar, Substitution, and Vigenère cipher
+
+<div class="row row-cols-md-2 mt-4"><div>
 
 <details class="details-e">
 <summary>Caesar cipher (<code>Code de César</code>)</summary>
@@ -33,6 +35,7 @@ Caesar was replacing letters like this $a \to d,\ b \to e,\ ...,\ z \to c$. Each
 * **Try it online**: [Caesar cipher online (cryptii.com)](https://cryptii.com/pipes/caesar-cipher)
 
 </details>
+</div><div>
 
 <details class="details-e">
 <summary>Substitution cipher</summary>
@@ -41,39 +44,30 @@ On the same idea as the caesar cipher, the **substitution cipher** is associatin
 
 * **Possible values for k**: $26! ≈ 2^{88.4}$
 * **Secure**: weak
-    * Entropy attack
+  * Entropy attack
+* **Try it online**: [Substitution cipher (dcode.fr)](https://www.dcode.fr/substitution-cipher)
 </details>
+</div></div>
 
-<hr class="sr">
+<details class="details-e">
+<summary>Both are vulnerable to an entropy attack</summary>
 
-## One Time Pad (OTP)
-
-...
-
-<hr class="sl">
-
-## Main idea
-
-You will **encrypt** your **message** with a **key** using an **algorithm**, generating a **cipher** (`message encrypté`): $E(\text{key}_1, \text{message})=^{algo}c$. The receiver will receive your **cipher**, decrypt it using a **key** and **an algorithm**: $D(\text{key}_2, c)=^{algo}\text{message}$.
-
-* **Note**: $k_1$ should be different from $k_2$ <small>(otherwise, it will be broken)</small>
-* **Note**: The algorithm is well-known <small>(ex: AES, DES, RSA, SSL, ...)</small>
-
-We will use the terms
-
-* **public key**: a key used to encrypt a message that is shared with everyone. Only the one generating the key is supposed to be able to decrypt a message.
-* **private key**: a key associated with the public key, not shared, used to decrypt messages encrypted with the public key
-
-<hr class="sl">
-
-## Some algorithms
-
-Most of them aren't used, either because they are inefficient or because they were broken. You can move to the next section if you are not interested 🧐.
+In any language, there are letters, 2-letters long words, 3-letters long words, and so on, that are statistically very likely to be in any text. In French/English, the most common letter is `e`, while there are a lot of common words such as `de`, `du`, `le`, `la`... To find them, you need to analyze the frequence of letters/words.
+</details>
 
 <details class="details-e">
 <summary>Vigenère cipher (<code>Cryptage en bloc de Vigenère</code>)</summary>
 
-This is the same as the Caesar cipher/Substitution cipher. We are working on letters. But, this time we are splitting letters into groups. The problem is that if we got the key, we can easily get back the message.
+This is a caesar cipher, but split into blocs. The goal was to avoid entropy attacks, because a same letter will most likely be enciphered as  different ciphertext letters.
+
+* **Possible values for k**: $26^n$
+* **Secure**: weak
+  * Entropy attack to find the size of the key, because the key is repeated
+  * Once the size of the key if found, each bloc is handled as we would for a caesar cipher
+* **Try it online**: [Vigenère cipher (cryptii.com)](https://cryptii.com/pipes/vigenere-cipher)
+
+<details class="details-e">
+<summary>Example</summary>
 
 * **message**: `memorize`
 * **key**: `vgn`
@@ -89,6 +83,17 @@ This is the same as the Caesar cipher/Substitution cipher. We are working on let
   * $J=9$, $V=21$, $9 - 21 + 26 \equiv 14\ (mod\ 26)=O$
   * ...
 </details>
+</details>
+
+<hr class="sr">
+
+## One Time Pad (OTP)
+
+...
+
+<hr class="sl">
+
+## Some algorithms
 
 <details class="details-e">
 <summary>One-time pad</summary>
