@@ -48,12 +48,6 @@
         "name": "Crypto (algorithms)",
         "desc": "Cryptography is the knowledge related to the encryption and decryption of messages.",
         "icon": null
-      },
-      {
-        "tag": "cryptography/old/index.md",
-        "name": "OLD",
-        "desc": "An introduction to cryptography (Modular arithmetic, encryption, and decryption of messages, RSA)",
-        "icon": "<i class=\"bi bi-shield-lock\"></i>"
       }
     ]
   }
