@@ -12,6 +12,26 @@
     ],
     "e2": [
       {
+        "tag": "linux/knowledge/index.md",
+        "name": "Linux",
+        "desc": "General knowledge shared between most, if not all, Linux-based distributions such as Debian, Ubuntu, Fedora, Arch Linux...",
+        "icon": "<i class=\"bi bi-terminal-fill\"></i>"
+      },
+      {
+        "tag": "linux/bash/index.md",
+        "name": "Linux (bash)",
+        "desc": "The most widely used shell programming language.",
+        "icon": null
+      },
+      {
+        "tag": "linux/networking/index.md",
+        "name": "Linux (networking)",
+        "desc": "Application of the networking course on Linux-based distributions.",
+        "icon": null
+      }
+    ],
+    "e3": [
+      {
         "tag": "sql",
         "name": "SQL",
         "desc": "Relational databases are using SQL (89 or 92) as their query language. Since ~2011, NoSQL databases are more and more used.",
@@ -30,7 +50,7 @@
         "icon": "<i class=\"bi bi-stack\"></i>"
       }
     ],
-    "e3": [
+    "e4": [
       {
         "tag": "web",
         "name": "WEB",
