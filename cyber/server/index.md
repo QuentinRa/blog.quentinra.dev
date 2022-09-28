@@ -1,6 +1,6 @@
 # Server Security
 
-...
+A list of sever-related attacks, along tips, or any related knowledge. There us some knowledge about discovering entrypoint (open ports using nmap), hidden files, and knowledge related to some services such as FTP.
 
 <hr class="sl">
 
@@ -16,6 +16,7 @@ You may want to find what services a server is providing, such as webserver, tel
 * **SMTP**: 25 (mails)
 * **HTTPS**: 443
 * **Node**: usually 3000
+* ...
 
 There is a more complete [list of vulnerable ports here](). Usually, default port are changed, and sometimes they add a firewall (OVH firewall, [pfsense](https://www.pfsense.org/)... Allowing only some IP to use this port...), along with some tools ([Snort](https://www.snort.org/), [Suricata](https://suricata.io/)...) to detect tentative of mapping the ports of the server.
 
@@ -65,6 +66,6 @@ $ ftp <ip>
 
 <hr class="sl">
 
-  ## Transfer files using SMB/NFS
+## Transfer files using SMB/NFS
 
 SMB (Windows), and NFS (Linux), are mostly used internally to share files, instead of FTP which is mostly used externally.
