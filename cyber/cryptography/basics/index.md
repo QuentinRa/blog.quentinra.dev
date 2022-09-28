@@ -27,10 +27,10 @@ A prime number is a number **greater or equals to 2**, which is **only divisible
 
 Dividing $a$ by $b$, mean solving $a = b * q + r$. You need to find **quotient** $q$ and the **remainder** (`reste`) $r$, with $r \lt b$. Both are unique.
 
-We are saying that $b$ is a **divisor** of $a$ if $r = 0$, written $a\ |\ b$. It would also mean that $a$ is a multiple of $b$.
+We are saying that $a$ is a **divisor** of $b$ if $r = 0$, written $a\ |\ b$. It would also mean that $a$ is a multiple of $b$.
 
-> * $25/5$: $25 = 5 * 5 + 0$ so $5|25$
-> * $25/4$: $25 = 4 * 6 + 1$
+> **Is 5 a divisor of 25?**<br> $25 = 5 * 5 + 0$, so yes $5|25$<br><br>
+> **Is 4 a divisor of 25?**<br> $25 = 4 * 6 + 1$, so no
 
 <hr class="sl">
 
@@ -42,7 +42,7 @@ Let a and b two numbers. We are saying that $a$ is **congruent** (`congru`, $\eq
 a = b + m * q
 @
 
-We are using one of the notations below
+As you may notice, **$b$ is the same as $r$ in Euclidean division**. We are using one of the notations below
 
 <div>
 \[
@@ -54,7 +54,7 @@ a \equiv [b]\\
 \]
 </div>
 
-> **Ex**: $27 \equiv 3\ (mod\ 12)$ as we have $12*2 + 3$<br>
+> **Ex**: $27 \equiv 3\ (mod\ 12)$ as we have $12*2 + 3$ (r=3)<br>
 > **Formula**: Given $a = m * q + r$, then $a \equiv r\ (mod\ m)$
 
 
