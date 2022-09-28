@@ -23,6 +23,17 @@ A prime number is a number **greater or equals to 2**, which is **only divisible
 
 <hr class="sr">
 
+## Euclidean division (`Division euclidienne`)
+
+Dividing $a$ by $b$, mean solving $a = b * q + r$. You need to find **quotient** $q$ and the **remainder** (`reste`) $r$, with $r \lt b$. Both are unique.
+
+We are saying that $b$ is a **divisor** of $a$ if $r = 0$, written $a\ |\ b$. It would also mean that $a$ is a multiple of $b$.
+
+> * $25/5$: $25 = 5 * 5 + 0$ so $5|25$
+> * $25/4$: $25 = 4 * 6 + 1$
+
+<hr class="sl">
+
 ## Congruence
 
 Let a and b two numbers. We are saying that $a$ is **congruent** (`congru`, $\equiv$) with $b$ **modulus** (`modulo`) $m$, if we can find a $q$ giving us
@@ -65,3 +76,42 @@ If you need to evaluate the value $r$ given modulus $m$ **of a complex value** $
 
 This is called **Euler theorem** ([wiki](https://en.wikipedia.org/wiki/Euler%27s_theorem)).
 </details>
+
+<hr class="sr">
+
+## Modular Arithmetic (`Arithmétique modulaire`)
+
+This is a gathering of "random" topics that were taught along with this two previous ones, but there are way less important in my opinion.
+
+<details class="details-e">
+<summary>Bézout's identity (<code>Thèorème de Bezout</code>) </summary>
+
+</details>
+
+<details class="details-e">
+<summary>🧐 Invertible numbers 🧐</summary>
+
+A number $a$ is invertible modulus $m$ if, $\exists a^{-1}$ giving us $a * a^{-1} \equiv 1\ (mod\ m)$. To find $a^{-1}$, you can use Bézout: $a u + m v = 1 \Leftrightarrow a u = 1\ (mod\ m) \Leftrightarrow a^{-1} \equiv u\ (mod\ m)$ with $u \gt 0$.
+
+* **Condition**: $a \wedge m\ |\ 1$
+* **Ex**: in Bézout example, we had $98 * 4 + 77 * 5 = 7$
+  * ❌: not invertible
+* **Ex**: we found that $5 * 3 + 7 * -2 = 1$
+  * $m = 7$, and $a = 5$
+  * $5^{-1} = 3\ (\text{mod}\ 7)$
+  * **check**: $5 * 3 = 15 = 1\ (\text{mod}\ 7)$
+  * $7^{-1} = -2 = 3\ (\text{mod}\ 5)$
+  * **check**: $3 * 7 = 21 = 1\ (\text{mod}\ 5)$
+</details>
+
+<hr class="sl">
+
+## Sources
+
+* IUTSF Teaching 🚀
+* ENSIIE Teaching
+* [Online Cryptography Course](https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/)
+* <https://en.wikipedia.org/wiki/Table_of_divisors>
+* <https://en.wikipedia.org/wiki/Prime_number>
+* <https://en.wikipedia.org/wiki/Modular_arithmetic>
+* <https://en.wikipedia.org/wiki/Euler%27s_theorem>

@@ -1,17 +1,4 @@
-## Mathematical references
-
-A summary of what you need to know.
-
-<details class="details-e">
-<summary>Euclidean division (<code>Division euclidienne</code>)</summary>
-
-Dividing $a$ by $b$, mean solving $a = b * q + r$. You need to find **quotient** $q$ and the **remainder** (`reste`) $r$, with $r \lt b$. Both are unique.
-
-We are saying that $b$ is a **divisor** of $a$ if $r = 0$, written $a\ |\ b$. It would also mean that $a$ is a multiple of $b$.
-
-> * $25/5$: $25 = 5 * 5 + 0$ so $5|25$
-> * $25/4$: $25 = 4 * 6 + 1$
-</details>
+# Mathematical references
 
 <details class="details-e" open>
 <summary>Greatest common divisor (<code>Plus grand diviseur commun</code>)</summary>
@@ -89,22 +76,6 @@ GCP(98, 77) = 2^{min(1, 0)} * 7^{min(2, 1)} * 11^{min(0, 1)}
 </p>
 
 > **Note**: if you replace **min** with **max**, you will have the **least common multiple** (`Plus petit commun multiple/PPCM`).
-</details>
-
-<details class="details-e" open>
-<summary>🧐 Invertible numbers 🧐</summary>
-
-A number $a$ is invertible modulus $m$ if, $\exists a^{-1}$ giving us $a * a^{-1} \equiv 1\ (mod\ m)$. To find $a^{-1}$, you can use Bézout: $a u + m v = 1 \Leftrightarrow a u = 1\ (mod\ m) \Leftrightarrow a^{-1} \equiv u\ (mod\ m)$ with $u \gt 0$.
-
-* **Condition**: $a \wedge m\ |\ 1$
-* **Ex**: in Bézout example, we had $98 * 4 + 77 * 5 = 7$
-  * ❌: not invertible
-* **Ex**: we found that $5 * 3 + 7 * -2 = 1$
-  * $m = 7$, and $a = 5$
-  * $5^{-1} = 3\ (\text{mod}\ 7)$
-  * **check**: $5 * 3 = 15 = 1\ (\text{mod}\ 7)$
-  * $7^{-1} = -2 = 3\ (\text{mod}\ 5)$
-  * **check**: $3 * 7 = 21 = 1\ (\text{mod}\ 5)$
 </details>
 
 <hr class="sl">
@@ -230,15 +201,3 @@ To encrypt a message $T$, simply do $S = T^e\ (mod\ n)$, while the message is su
 To decrypt a message $S$, simply do $T = S^d\ (mod\ n)$.
 
 > This is working, because an attacker would have a lot of prime numbers to test ($10^{497}$ for $n \approx 10^{1000}$) to find back $\phi(n) = (p-1) * (q-1)$ from $n$.
-
-<hr class="sl">
-
-## Sources
-
-* IUTSF Teaching 🚀
-* ENSIIE Teaching
-* [Online Cryptography Course](https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/)
-* <https://en.wikipedia.org/wiki/Table_of_divisors>
-* <https://en.wikipedia.org/wiki/Prime_number>
-* <https://en.wikipedia.org/wiki/Modular_arithmetic>
-* <https://en.wikipedia.org/wiki/Euler%27s_theorem>
