@@ -91,50 +91,6 @@ GCP(98, 77) = 2^{min(1, 0)} * 7^{min(2, 1)} * 11^{min(0, 1)}
 > **Note**: if you replace **min** with **max**, you will have the **least common multiple** (`Plus petit commun multiple/PPCM`).
 </details>
 
-<hr class="sr">
-
-## Congruence
-
-Let a and b two numbers. We are saying that $a$ is **congruent** (`congru`, $\equiv$) with $b$ **modulus** (`modulo`) $m$, if we can find a $q$ giving us
-
-@
-a = b + m * q
-@
-
-We are using one of the notations below
-
-<div>
-\[
-\begin{align}
-a \equiv b\ (m)\\
-a \equiv b\ (mod\ m)\\
-a \equiv [b]\\
-\end{align}
-\]
-</div>
-
-> **Ex**: $27 \equiv 3\ (mod\ 12)$ as we have $12*2 + 3$<br>
-> **Formula**: Given $a = m * q + r$, then $a \equiv r\ (mod\ m)$
-
-<details class="details-e">
-<summary>🐱‍🏍 Find $r$ for a complex $a$ 🐱‍🏍</summary>
-
-
-If you need to evaluate the value $r$ given modulus $m$ **of a complex value** $a$, then simply split rewrite your value $a$ as a product of factors, and evaluate the modulus on each one.
-
-* Ex: $256\ \text{mod}\ 7 = 2^8 = 2^3 * 2^3 * 2^2$
-  * $2^3 = 8 \equiv 1\ (\text{mod}\ 7)$
-  * $2^2 = 4 \equiv 4\ (\text{mod}\ 7)$
-  * Giving us $256 \equiv 1 * 4 \equiv 4 \ (\text{mod}\ 7)$
-* Ex: $2021\ \text{mod}\ 3 = 2 * 10^3 + 2 * 10^2 + 1$
-  * $10 \equiv 1\ \text{mod}\ 3$
-  * $10^2 = 10 * 10 \equiv 1 \ (\text{mod}\ 3)$
-  * $10^3 = 10 * 10 * 10 \equiv 1 \ (\text{mod}\ 3)$
-  * $2021= 2 * 1 + 2 * 1 + 1 = 5 \equiv 2 \ (\text{mod}\ 3)$
-
-This is called **Euler theorem** ([wiki](https://en.wikipedia.org/wiki/Euler%27s_theorem)).
-</details>
-
 <details class="details-e" open>
 <summary>🧐 Invertible numbers 🧐</summary>
 
