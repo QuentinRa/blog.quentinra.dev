@@ -1,6 +1,6 @@
 # Attacks on websites
 
-...
+This is a list of attacks that are usually done either on a website (cookies, forms, XSS injections), heavily related to a website (cgi, ssrf).
 
 <hr class="sl">
 

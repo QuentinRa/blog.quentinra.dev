@@ -1,6 +1,6 @@
 # Database Security
 
-...
+This is a list of attacks that are usually done either on a database, albeit they may be started from another services such as an API, or a website. The main entry, is as one could expect, SQL injections.
 
 <hr class="sl">
 
