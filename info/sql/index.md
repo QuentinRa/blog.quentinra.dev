@@ -555,7 +555,7 @@ These are the most used of the predefined constraints.
 
 <hr>
 
-A **table should always have a primary key** (which could be an artificial key)! A primary key can be made of multiple attributes (ex: id_user, and id_purchase). In such case, the key **as a whole** must be unique, and not null, but a part of the key (meaning each attribute) may be null, or not unique.
+A **table should always have a primary key** <small>(artificial key, or foreign key)</small>! A primary key can be made of multiple attributes (ex: id_user, and id_purchase), and in such case, the key **as a whole** must be unique, and not null, but a part of the key (meaning each attribute) may be null, or not unique.
 
 ```sql
 -- considering (id_user, id_purchase, item_name) with key(id_user, id_purchase)
@@ -592,6 +592,24 @@ UNIQUE(attribute1, attribute2),
 FOREIGN KEY (attribute1) REFERENCES ANOTHER_TABLE(an_attribute),
 FOREIGN KEY (attribute1, attribute2) REFERENCES ANOTHER_TABLE(an_attribute1, an_attribute2),
 ```
+
+<details class="details-e">
+<summary>FOREIGN KEY</summary>
+
+If a record in a table is referencing another record in another table, a good way of doing that is for the referencing table to reference the **primary key** of the other table, as it is unique for each record. That's what you can do with **FOREIGN KEY**. But, if you are deleting, or updating, the referenced record's primary key, then by default the request will fail, as this would break things with the referencing record. You may change this default behavior:
+
+```sql
+-- if referenced deleted, delete referencing
+FOREIGN KEY (attribute1) REFERENCES some_table(attribute1) ON DELETE CASCADE,
+-- default: block request
+FOREIGN KEY (attribute1) REFERENCES some_table(attribute1) ON DELETE RESTRICT,
+
+-- if referenced updated, update referencing
+FOREIGN KEY (attribute1) REFERENCES some_table(attribute1) ON UPDATE CASCADE,
+-- default: block request
+FOREIGN KEY (attribute1) REFERENCES some_table(attribute1) ON UPDATE RESTRICT
+```
+</details>
 
 * Constraints
 
