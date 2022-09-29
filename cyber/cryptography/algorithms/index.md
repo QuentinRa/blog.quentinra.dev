@@ -94,7 +94,7 @@ This is a caesar cipher, but split into blocs. The goal was to avoid entropy att
 
 ## Knapsack problem (`sac-à-dos`) of Merkle-Hellman
 
-![Type: Symmetric](https://img.shields.io/badge/Type-Symmetric-7cfc00)&nbsp;&nbsp;
+![Type: Asymmetric](https://img.shields.io/badge/Type-Asymmetric-7cfc00)&nbsp;&nbsp;
 ![Practical use: NONE](https://img.shields.io/badge/Practical%20use-none%20😒-7cfc00)
 &nbsp;&nbsp;
 ![Complexity: intermediate](https://img.shields.io/badge/Complexity-intermediate-7cfc00)
@@ -164,7 +164,7 @@ We will pick a value $N$ greater than the sum of the values in the Knapsack, and
   * The message was: $1100110001$
 </details>
 
-It was cracked in 1984 by Adi Shamir published.
+It was cracked in polynomial time in 1984 by Adi Shamir published.
 
 <hr class="sr">
 
@@ -174,22 +174,15 @@ It was cracked in 1984 by Adi Shamir published.
 
 <hr class="sl">
 
-## Some algorithms
+## Diffie–Hellman key exchange
+
+![Type: Asymmetric](https://img.shields.io/badge/Type-Asymmetric-7cfc00)&nbsp;&nbsp;
+![Practical use: NONE](https://img.shields.io/badge/Practical%20use-not%20anymore-7cfc00)
+&nbsp;&nbsp;
+![Complexity: intermediate](https://img.shields.io/badge/Complexity-intermediate-7cfc00)
 
 <details class="details-e">
-<summary>One-time pad</summary>
-
-This algorithm is creating a **key as long or longer than the message**, so even though it is secure, we can't use it. For each message, both user are agreeing on a key (ex: $01010$), and the Algorithm is **XOR** (`ou exclusif`, $0+0=1+1=0$ and $1+0=0+1=1$).
-
-* **Message**: $10011$
-* **Key** (encrypt): $01010$
-* **Cipher text**: $11001$
-* **Key** (decrypt): $01010$
-* **Message**: $10011$
-</details>
-
-<details class="details-e">
-<summary>Diffie–Hellman key exchange</summary>
+<summary>old</summary>
 
 A is sending a message to B. Both are agreeing on two numbers $p$ and $g$ with $(p-1) \wedge g\ |\ 1$ (=the only divisor is 1), and they are picking a private number (resp. $a$ and $b$, lesser than $p$).
 
