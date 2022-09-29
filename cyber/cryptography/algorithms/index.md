@@ -213,16 +213,37 @@ A is sending $g^a\ (mod\ p)$ to B (resp. b for B to A). The common key for A is 
 ![Type: Asymmetric](https://img.shields.io/badge/Type-Asymmetric-7cfc00)&nbsp;&nbsp;
 ![Complexity: intermediate](https://img.shields.io/badge/Complexity-intermediate-7cfc00)
 
-This is an algorithm that is secure, the more $n$ is bigger. We are picking two **prime numbers** $p$ and $q$, and $n = p * q$. As of 2022, it's recommended that $n$ must be at least 2048 bits.
+This is an algorithm that is secure, the more $n$ is bigger. The arguments that must be given are $k$, and $n$. As of 2022, it's recommended that $n$ must be at least 2048 bits.
 
+* Given $n$, find two **prime numbers** $p$ and $q$, giving us $n = p * q$ <small>(which one is $p$, or which one is $q$, is up to you)</small>
 * Calculate phi(n): $\phi(n) = (p-1) * (q – 1)$
-* Use **Bézout(p, q)** to find $d$ and $e$ <small>(assign $u$, and $v$ to either $d$ or $e$, it's up to you)</small>
+* Use Bézout on phi(n), and k, to find $d$, and $e$
+  * Solve $B(k,\ \phi(n)) = k * u + phi(n) * v = 1$
+  * $d = k$
+  * $e = u$
 * **Encrypt**: $C(m, n, e) = m^e\ (mod\ n)$
 * **Decrypt**: $D(c, n, d) = c^d\ (mod\ n)$
 
 The **public key is $(n,e)$**, while the **private key is $(n,d)$**. Senders will use the public key to encrypt a message, while the receiver will use it's private key to decrypt a message.
 
 An attacker would have a lot of prime numbers to test ($10^{497}$ for $n \approx 10^{1000}$) to find back $\phi(n) = (p-1) * (q-1)$ from $n$.
+
+<details class="details-e">
+<summary>Example: RSA(n=35, k=7)</summary>
+
+* $35 = 5 * 7$, $p=5$, $q=7$
+* $\phi(N) = (5-1) * (7-1) = 24$
+* $B(7, 24) = 7 * u + 24 * v = 1$
+  * One solution: $u=d=7$, $v=-2$
+* **Encrypt**
+  * (2) $2^7 \mod 35 = 23$
+  * (3) $3^7 \mod 35 = 17$
+  * (4) $4^7 \mod 35 = 4$
+* **Decrypt**
+  * (23) $23^7 \mod 35 = 2$
+  * (17) $17^7 \mod 35 = 3$
+  * (4) $4^7 \mod 35 = 4$
+</details>
 
 <hr class="sr">
 
