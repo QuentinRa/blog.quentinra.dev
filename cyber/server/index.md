@@ -52,6 +52,8 @@ If an attacker manage to upload a PHP script on the server, they will most likel
 
 ## Transfer files using FTP (21)
 
+![Level: Novice](https://img.shields.io/badge/level-Novice-7cfc00)
+
 FTP (File Transfer protocol) is a protocol used to transfer (upload, download) files from one computer to another. The protocol use **port 21** by default <small>(22 for SFTP=Secure FTP)</small>, while data is transferred via port 20.
 
 ```bash
@@ -68,4 +70,23 @@ $ ftp <ip>
 
 ## Transfer files using SMB/NFS
 
-SMB (Windows), and NFS (Linux), are mostly used internally to share files, instead of FTP which is mostly used externally.
+![Level: Intermediate](https://img.shields.io/badge/level-Advanced-fae7b5)
+
+* [THM Kenobi](https://tryhackme.com/room/kenobi)
+
+SMB (Windows), and NFS (Linux), are mostly used internally to share files, instead of FTP which is mostly used externally. There is a tool called [Samba](https://www.samba.org/) that is making both systems using SMB, and NFS working together. Every device (printer, computers...) of a company make be linked via a folder `share`.
+
+```bash
+$ smbclient //IP/share_name
+# ls <folder>: list files of <folder>
+# cd <folder>: move to <folder>
+# put <src> <dest>: put <src> (local) to <dest> (server)
+# get <src> <dest>: get <src> (server), and save it to <dest> (local)
+# pwd: get the path of the working directory
+
+# download every file of a share
+$ smbget -R  smb://IP/share_name
+```
+
+* <i class="bi bi-info-square" style="background:#7cfc00"></i> Try connecting without password
+* <i class="bi bi-info-square" style="background:#7cfc00"></i> Attempt to list shares using nmap `nmap -p 445 –script=smb-enum-shares.nse,smb-enum-users.nse ip`
