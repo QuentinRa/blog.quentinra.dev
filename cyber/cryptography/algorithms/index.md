@@ -216,11 +216,11 @@ A is sending $g^a\ (mod\ p)$ to B (resp. b for B to A). The common key for A is 
 This is an algorithm that is secure, the more $n$ is bigger. We are picking two **prime numbers** $p$ and $q$, and $n = p * q$. As of 2022, it's recommended that $n$ must be at least 2048 bits.
 
 * Calculate phi(n): $\phi(n) = (p-1) * (q – 1)$
-* Use **Bézout(p, q)** to find $d$ and $e$. You will assign both u and v to either $d$ or $e$, it's up to you.
-* **Public key**: $(n, e)$ (used by others to encrypt)
-* **Private key**: $(n, d)$ (used by only me, to decrypt)
-* To encrypt a message $T$, simply do $S = T^e\ (mod\ n)$, while the message is supposed to be a number $\lt n$.
-* To decrypt a message $S$, simply do $T = S^d\ (mod\ n)$.
+* Use **Bézout(p, q)** to find $d$ and $e$ <small>(assign $u$, and $v$ to either $d$ or $e$, it's up to you)</small>
+* **Encrypt**: $C(m, n, e) = m^e\ (mod\ n)$
+* **Decrypt**: $D(c, n, d) = c^d\ (mod\ n)$
+
+The **public key is $(n,e)$**, while the **private key is $(n,d)$**. Senders will use the public key to encrypt a message, while the receiver will use it's private key to decrypt a message.
 
 An attacker would have a lot of prime numbers to test ($10^{497}$ for $n \approx 10^{1000}$) to find back $\phi(n) = (p-1) * (q-1)$ from $n$.
 
