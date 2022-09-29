@@ -21,6 +21,11 @@ In symmetric algorithms, **both** of the sender and the receiver know the key: k
 
 ## Caesar, Substitution, and Vigenère cipher
 
+![Type: Symmetric](https://img.shields.io/badge/Type-Symmetric-7cfc00)&nbsp;&nbsp;
+![Practical use: NONE](https://img.shields.io/badge/Practical%20use-none%20😒-7cfc00)
+&nbsp;&nbsp;
+![Complexity: easy](https://img.shields.io/badge/Complexity-easy-7cfc00)
+
 <div class="row row-cols-md-2 mt-4"><div>
 
 <details class="details-e">
@@ -87,6 +92,82 @@ This is a caesar cipher, but split into blocs. The goal was to avoid entropy att
 
 <hr class="sr">
 
+## Knapsack problem (`sac-à-dos`) of Merkle-Hellman
+
+![Type: Symmetric](https://img.shields.io/badge/Type-Symmetric-7cfc00)&nbsp;&nbsp;
+![Practical use: NONE](https://img.shields.io/badge/Practical%20use-none%20😒-7cfc00)
+&nbsp;&nbsp;
+![Complexity: intermediate](https://img.shields.io/badge/Complexity-intermediate-7cfc00)
+
+<details class="details-e">
+<summary>Knapsack problem</summary>
+
+The most know bag/knapsack problem is the **0-1 knapsack problem**. You got a "bag/Knapsack" of numbers <small>(ex: 23, 5, 11, 2, 55)</small>. Your message is made of `0`, and `1`, and using this method `1` means you picked something from the bag, `0` means you didn't. Then, make the sum of the numbers you picked in the bag to create the **cipher**. Note that you **will have to split the message into groups** having the size of the knapsack.
+
+* **Knapsack**: $2, 5, 11, 23, 55$ (up to you, size=6)
+* **Message**: $1100111001 = 11001\ 10001$ (group of 6)
+* **Cipher**
+  * $2 + 5 + 0 + 0 + 55 = 62$ (first group)
+  * $2 + 0 + 0 + 0 + 55 = 57$ (second group)
+* **Cipher text**: $62, 57$
+</details>
+
+<details class="details-e"> 
+<summary>Super-increasing knapsack problem</summary>
+
+An easy knapsack problem is the **super-increasing knapsack problem**, in which every next entry of the bag is greater than the sum of the previous terms. It make it easy to decipher the message without the key, as if the cipher is greater or equals than the current greatest value of the knapsack, then it is inside the knapsack of the message. 
+
+* **Knapsack**: $2, 5, 11, 23, 55$
+* **Cipher**: 62
+* Decipher
+  * $62 \ge 55$ ? yes, then 55 is in.
+  * $7 \ge 23$ ? no, then 23 is not in
+  * $7 \ge 11$ ? no, then 11 is not in.
+  * $7 \ge 5$ ? yes, then 5 is in.
+  * $2 \ge 2$ ? yes, then 2 is in.
+* **Result**: 11001
+
+</details>
+
+Merkle-Hellman knapsack problem is **one of the earliest public-key algorithm**. The private key is a super-increasing knapsack problem, while the public key is the private key modified a bit to be a knapsack problem.
+
+<details class="details-e">
+<summary>Generate a public key</summary>
+
+We will pick a value $N$ greater than the sum of the values in the Knapsack, and a number $W$, so that $N \wedge W|1$ (=no common divisor aside 1).
+
+* We are picking $N=113$, $W=27$
+* We calculated $W^{-1} = 67\ (\text{mod}\ 113)$
+* **Knapsack** (public key)
+  * We are multiplying the private key by $W$, modulus $N$
+  * Ex: $27 * 2 = 54\ (\text{mod}\ 113)$
+  * $((2, 5, 11, 23, 55) * W)\ mod\ N = 54, 22, 71, 56, 16$ 
+  * Public key: $(54, 22, 71, 56, 16)$
+</details>
+
+<details class="details-e">
+<summary>Public-key exchange</summary>
+
+* **A** is generating a private-key using the super-increasing knapsack ($(2, 5, 11, 23, 55)$)
+* **A** is generating a public-key $(54, 22, 71, 56, 16)$, using a $N=113$, and $W=27$ that **B** know
+* **A** encrypt a message using the public-key, and send the cipher text to **B**
+  * $54 + 22 + 0 + 0 + 16 = 92$ (first group)
+  * $54 + 0 + 0 + 0 + 16 = 70$ (second group)
+  * **Cipher text**: $92, 70$
+* **B** generate the private-key using the public-key, and both $W$, and $N$
+  * We are multiplying the public key by $W^{-1}$, modulus $N$
+  * We get the private key: $2, 5, 11, 23, 55$
+* **B** decrypt the message
+  * We multiply the message by $W^{-1}$, modulus $N$
+  * We get $62$, and $57$
+  * We solve them using the super-increasing knapsack problem
+  * The message was: $1100110001$
+</details>
+
+It was cracked in 1984 by Adi Shamir published.
+
+<hr class="sr">
+
 ## One Time Pad (OTP)
 
 ...
@@ -105,36 +186,6 @@ This algorithm is creating a **key as long or longer than the message**, so even
 * **Cipher text**: $11001$
 * **Key** (decrypt): $01010$
 * **Message**: $10011$
-</details>
-
-<details class="details-e">
-<summary>Knapsack problem (<code>sac-à-dos</code>) of Merkle-Hellman</summary>
-
-You got a "bag/Knapsack" of numbers (ex: 23, 5, 11, 2, 55). Your message is made of `0` and `1`, and using this method `1` means you picked something from the bag, `0` means you didn't. Then, make the sum of the numbers you picked in the bag to create the **cipher**. Note that you **will have to split the message into groups** having the size of the knapsack.
-
-* **Knapsack** (private key): $2, 5, 11, 23, 55$ (up to you, size=6)
-* **Message**: $1100111001 = 11001\ 10001$ (group of 6)
-* **Cipher**
-  * $2 + 5 + 0 + 0 + 55 = 62$ (first group)
-  * $2 + 0 + 0 + 0 + 55 = 57$ (second group)
-* **Cipher text**: $62, 57$
-
-But, it is too easy to find what generated this cipher. So we are using the **super-increasing knapsack problem** to **generate a public key**, and **this easy key as the private key**. We will pick a value $N$ greater than the sum of the values in the Knapsack, and a number $W$, so that $N \wedge W|1$ (=no common divisor aside 1).
-
-* We are picking $N=113$, $W=27$
-* We got $W^{-1} = 67\ (\text{mod}\ 113)$
-* **Knapsack** (public key)
-  * We are multiplying the private key by $W$, modulus $N$
-  * $54, 22, 71, 56, 16$ (ex: $27 * 2 = 54\ (\text{mod}\ 113)$)
-* **private cipher**
-  * $54 + 22 + 0 + 0 + 16 = 92$ (first group)
-  * $54 + 0 + 0 + 0 + 16 = 70$ (second group)
-* **Cipher text**: $92, 70$
-* **decrypt** (given N and W)
-  * We are multiplying the public key by $W$, modulus $N$
-  * we get back the private key: $2, 5, 11, 23, 55$
-  * we can easily find that: $2 + 5 + 0 + 0 + 55 = 62$ and ...
-  * so the message was: $1100110001$
 </details>
 
 <details class="details-e">
@@ -159,3 +210,11 @@ To encrypt a message $T$, simply do $S = T^e\ (mod\ n)$, while the message is su
 To decrypt a message $S$, simply do $T = S^d\ (mod\ n)$.
 
 > This is working, because an attacker would have a lot of prime numbers to test ($10^{497}$ for $n \approx 10^{1000}$) to find back $\phi(n) = (p-1) * (q-1)$ from $n$.
+
+<hr class="sl">
+
+## Sources
+
+* IUTSF Teaching 🚀
+* ENSIIE Teaching
+* [The Knapsack Problem and Public Key Cryptography](https://nrich.maths.org/2199)
