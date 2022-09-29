@@ -34,6 +34,12 @@
         "name": "Database Security",
         "desc": "Some knowledge related to how hackers can exploit your database, along with notes to prevent such things.",
         "icon": null
+      },
+      {
+        "tag": "software",
+        "name": "Reverse Engineering",
+        "desc": "Try to analyse, and exploit programs by accessing the underlying code, which can help finding database credential, or stuff like that.",
+        "icon": null
       }
     ],
     "Cryptography": [
