@@ -36,15 +36,30 @@ Select * from users where user='admin' --' AND password='nopassword';
 ```
 </details>
 
+<table class="table table-bordered table-striped border-dark"><thead>
+<tr><th>Name</th><th>Description</th></tr>
+</thead><tbody>
+
+<tr><td>Error-based</td><td>Use an error message when the query failed to adapt the payload, and get data from the database.
+</td></tr>
+
+<tr><td>Union-based</td><td>An attacker use something providing results to add records fetched illegally (ex: list of usernames/passwords/...).
+</td></tr>
+
+<tr><td>Boolean-based</td><td>This attack is used when there is no errors. An attacker will try to make a request that fail if a boolean expression is false. By doing so, if the service (ex: login) failed, the attacker can inter that is was because the boolean expression was false.
+</td></tr>
+
+<tr><td>Others</td><td>Time-based, Out-of-band-based, Voice-based, and Stacked queries-based.
+</td></tr>
+
+</tbody></table>
+
+
 A hacker that detected a possible way to inject some SQL (delayed or not), in a POST or even a GET form, may use it to map, steal, and/or maybe destroy your database.
 
+* <i class="bi bi-info-square" style="background:#7cfc00"></i> Be familiar with the [SQL Injection Payload List repository](https://github.com/payloadbox/sql-injection-payload-list)
 * <i class="bi bi-info-square" style="background:#ffd700"></i> You can manually try to map the Database
 * <i class="bi bi-info-square" style="background:#ffd700"></i> You can use **SQLMap** to map a Database
-
-There are two kind of SQL injections, either
-
-* <i class="bi bi-info-square" style="background:#7cfc00"></i> you can see errors, or the result of the query, then it's pretty easy to extract information from it.
-* <i class="bi bi-info-square" style="background:#ffd700"></i> you can't see errors. Still, you can guess that there was an error if the purpose of the SQL query was not achieved (ex: login). You will have to use a **boolean-based SQL injection**. For instance, if testing that the DBMS is mariadb, if it's not mariadb, you should make the query fail. If the query worked (ex: login successful), then it means that is was mariadb!
 
 <details class="details-e">
 <summary>Manually map the database</summary><br>
@@ -92,5 +107,4 @@ UNION
 SELECT TABLE_NAME FROM information_schema.TABLES
 ```
 </details>
-
 </details>
