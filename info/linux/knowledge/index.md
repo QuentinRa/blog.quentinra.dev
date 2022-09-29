@@ -27,3 +27,23 @@ bash > some_command_at_least_work_in_bash
   * Look for "Terminal" in your application
   * Or, use `CTRL+SHIFT+T`
 </details>
+
+<hr class="sr">
+
+## Commands
+
+A command is basically **a name**, that may be followed by options, and arguments. Usually, everyone is only saying arguments instead of differencing options/arguments, the difference being that options starts with `-`.
+
+```bash
+$ ls
+$ ls toto.txt
+$ ls -l -a
+$ ls -la
+$ ls -la toto/
+```
+
+**Notes**
+
+* Options can usually be merged. For instance, above, `-l -a` is the same as `-la`.
+* Most commands have an option to display some help, try `-h`, `-help`, or `--help`
+* There is some documentation for most commands. Try `man some_command`. **THE MANUAL (man) IS A LIFESAVER**.
