@@ -159,3 +159,19 @@ When starting the command, you will have to do some choices.
 * You should try doing both with, and without union tests, to see which one is better in your current case
 * "GET xxx is vulnerable" (resp. POST): you should answer yes if you want to exploit the vulnerable parameter
 * [SQLMap CheatSheet](https://www.security-sleuth.com/sleuth-blog/2017/1/3/sqlmap-cheat-sheet) (external)
+
+<hr class="sl">
+
+## enum4linux
+
+I don't know if there is still an `enum.exe`, because I can't find it, but you can use the tool [enum4linux](https://github.com/CiscoCXSecurity/enum4linux) for enumerating information from Windows, and Samba hosts.
+
+```bash
+$ ./enum4linux.pl <options> <ip>
+# -U : list of users
+# -M : list of devices
+# -S : list of shares
+# -o : os data
+# -i : printer data
+# -v : verbose
+```
