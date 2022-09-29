@@ -3,3 +3,16 @@ https://justcryptography.com/asymmetric-cryptography/
 https://en.wikipedia.org/wiki/Substitution_cipher
 https://www.educba.com/diffie-hellman-key-exchange-algorithm/
 https://www.askdifference.com/encrypt-vs-encipher/
+
+------------------
+
+We are picking two **prime numbers** $p$ and $q$, and deducting both $n = p * q$ and $\phi(n) = (p-1) * (q-1)$. The, use **Bézout** to find the coefficients that we will call $d$ and $e$.
+
+* **Public key**: $(n, e)$ (used by others to encrypt)
+* **Private key**: $(n, d)$ (used by only me, to decrypt)
+
+To encrypt a message $T$, simply do $S = T^e\ (mod\ n)$, while the message is supposed to be a number $\lt n$.
+
+To decrypt a message $S$, simply do $T = S^d\ (mod\ n)$.
+
+> This is working, because an attacker would have a lot of prime numbers to test ($10^{497}$ for $n \approx 10^{1000}$) to find back $\phi(n) = (p-1) * (q-1)$ from $n$.

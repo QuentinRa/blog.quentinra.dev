@@ -22,8 +22,6 @@ In symmetric algorithms, **both** of the sender and the receiver know the key: k
 ## Caesar, Substitution, and Vigenère cipher
 
 ![Type: Symmetric](https://img.shields.io/badge/Type-Symmetric-7cfc00)&nbsp;&nbsp;
-![Practical use: NONE](https://img.shields.io/badge/Practical%20use-none%20😒-7cfc00)
-&nbsp;&nbsp;
 ![Complexity: easy](https://img.shields.io/badge/Complexity-easy-7cfc00)
 
 <div class="row row-cols-md-2 mt-4"><div>
@@ -95,8 +93,6 @@ This is a caesar cipher, but split into blocs. The goal was to avoid entropy att
 ## One Time Pad (`Masque jetable`)
 
 ![Type: Symmetric](https://img.shields.io/badge/Type-Symmetric-7cfc00)&nbsp;&nbsp;
-![Practical use: NONE](https://img.shields.io/badge/Practical-likely%20not-7cfc00)
-&nbsp;&nbsp;
 ![Complexity: easy](https://img.shields.io/badge/Complexity-easy-7cfc00)
 
 The **One Time Pad**, or One Time password, abbreviated as **OTP**, is a cryptographic algorithm with a good level of security, as long as some considerations are taken, created in 2017. 
@@ -130,8 +126,6 @@ The operator $\oplus$ (XOR, `ou exclusif`) is basically this: $(a+b)%2$, with bo
 ## Knapsack problem (`sac-à-dos`) of Merkle-Hellman
 
 ![Type: Asymmetric](https://img.shields.io/badge/Type-Asymmetric-7cfc00)&nbsp;&nbsp;
-![Practical use: NONE](https://img.shields.io/badge/Practical%20use-none%20😒-7cfc00)
-&nbsp;&nbsp;
 ![Complexity: intermediate](https://img.shields.io/badge/Complexity-intermediate-7cfc00)
 
 <details class="details-e">
@@ -206,8 +200,6 @@ It was cracked in polynomial time in 1984 by Adi Shamir published.
 ## Diffie–Hellman key exchange
 
 ![Type: Asymmetric](https://img.shields.io/badge/Type-Asymmetric-7cfc00)&nbsp;&nbsp;
-![Practical use: NONE](https://img.shields.io/badge/Practical%20use-not%20anymore-7cfc00)
-&nbsp;&nbsp;
 ![Complexity: intermediate](https://img.shields.io/badge/Complexity-intermediate-7cfc00)
 
 A is sending a message to B. Both are agreeing on two numbers $p$ and $g$ with $(p-1) \wedge g\ |\ 1$ (=the only divisor is 1), and they are picking a private number (resp. $a$ and $b$, lesser than $p$).
@@ -218,16 +210,10 @@ A is sending $g^a\ (mod\ p)$ to B (resp. b for B to A). The common key for A is 
 
 ## Rivest–Shamir–Adleman (RSA)
 
-We are picking two **prime numbers** $p$ and $q$, and deducting both $n = p * q$ and $\phi(n) = (p-1) * (q-1)$. The, use **Bézout** to find the coefficients that we will call $d$ and $e$.
+![Type: Asymmetric](https://img.shields.io/badge/Type-Asymmetric-7cfc00)&nbsp;&nbsp;
+![Complexity: intermediate](https://img.shields.io/badge/Complexity-intermediate-7cfc00)
 
-* **Public key**: $(n, e)$ (used by others to encrypt)
-* **Private key**: $(n, d)$ (used by only me, to decrypt)
-
-To encrypt a message $T$, simply do $S = T^e\ (mod\ n)$, while the message is supposed to be a number $\lt n$.
-
-To decrypt a message $S$, simply do $T = S^d\ (mod\ n)$.
-
-> This is working, because an attacker would have a lot of prime numbers to test ($10^{497}$ for $n \approx 10^{1000}$) to find back $\phi(n) = (p-1) * (q-1)$ from $n$.
+...
 
 <hr class="sr">
 
