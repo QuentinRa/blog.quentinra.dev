@@ -1,10 +1,10 @@
 # Cybersecurity
 
-...
+This is a list of every tool, repository, or command that you may use across every other sub-courses, or while working in cybersecurity. The list may be incomplete if some commands are introduced directly in other courses (ex: Linux - networking).
 
 <hr class="sl">
 
-## Bruteforce
+## Bruteforce - useful repository
 
 The [SecLists GitHub Repository](https://github.com/danielmiessler/SecLists/) contains useful lists of usernames/passwords, payloads, urls, ...
 
