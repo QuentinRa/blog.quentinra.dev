@@ -8,9 +8,17 @@ This course is a gathering of general knowledge shared between most, if not all,
 
 ## Terminal
 
-Linux in its simplest form is a **terminal** (console, `invite de commande`). Inside a terminal, we can write commands interpreted by something called the shell. There are multiple languages that we can use <small>(sh, csh, tcsh, ksh, bash)</small>, but **most Linux distribution are using bash** <small>(bourne again shell)</small>, an improved version of sh.
+Linux in its simplest form is a **terminal** (console, `invite de commande`). Inside a terminal, we can write commands interpreted by something called **Shell**. There are multiple Shell languages that we can use <small>(sh, csh, tcsh, ksh, bash)</small>, but **most Linux distribution are using bash** <small>(bourne again shell)</small>, an improved version of sh.
 
 ![Linux: Terminal](_images/terminal.png)
+
+Later, or in any other course, you may find commands introduced with "something" before the command. **THIS IS NOT A PART OF THE COMMAND**, but a token that indicates where we can execute the command.
+
+```shell
+$ some_command_working_everywhere
+sh > some_command_at_least_work_in_sh
+bash > some_command_at_least_work_in_bash
+```
 
 <details class="details-e">
 <summary>Practice time</summary>
