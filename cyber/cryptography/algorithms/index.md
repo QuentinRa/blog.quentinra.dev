@@ -181,13 +181,9 @@ It was cracked in polynomial time in 1984 by Adi Shamir published.
 &nbsp;&nbsp;
 ![Complexity: intermediate](https://img.shields.io/badge/Complexity-intermediate-7cfc00)
 
-<details class="details-e">
-<summary>old</summary>
-
 A is sending a message to B. Both are agreeing on two numbers $p$ and $g$ with $(p-1) \wedge g\ |\ 1$ (=the only divisor is 1), and they are picking a private number (resp. $a$ and $b$, lesser than $p$).
 
 A is sending $g^a\ (mod\ p)$ to B (resp. b for B to A). The common key for A is $(g^a)^b\ (mod\ p)$ and for B, it is $(g^b)^a\ (mod\ p)$. They **both** have the same number, but they do not know about the exponent of the other.
-</details>
 
 <hr class="sr">
 
