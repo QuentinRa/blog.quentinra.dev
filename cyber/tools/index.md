@@ -160,9 +160,11 @@ When starting the command, you will have to do some choices.
 * "GET xxx is vulnerable" (resp. POST): you should answer yes if you want to exploit the vulnerable parameter
 * [SQLMap CheatSheet](https://www.security-sleuth.com/sleuth-blog/2017/1/3/sqlmap-cheat-sheet) (external)
 
-<hr class="sl">
+<hr class="sr">
 
 ## enum4linux
+
+![Usage: Enumerating Information](https://img.shields.io/badge/usage-Enumerating%20Information-ffd700)
 
 I don't know if there is still an `enum.exe`, because I can't find it, but you can use the tool [enum4linux](https://github.com/CiscoCXSecurity/enum4linux) for enumerating information from Windows, and Samba hosts.
 
@@ -175,3 +177,39 @@ $ ./enum4linux.pl <options> <ip>
 # -i : printer data
 # -v : verbose
 ```
+
+<hr class="sl">
+
+## Metasploit (metasploit-framework)
+
+![Usage: Penetration testing](https://img.shields.io/badge/usage-Penetration%20testing-ffd700)
+
+* [THM Metasploit (2019)](https://tryhackme.com/resources/blog/metasploit)
+
+The [Metasploit Framework](https://github.com/rapid7/metasploit-framework) ([setup debian](https://computingforgeeks.com/install-metasploit-framework-on-debian/)) is a penetration testing framework that you can use to test your systems.
+
+```bash
+$ mfsconsole -q
+# search a service/module (ex: apache)
+mfs6 > search <service_or_module>
+# select a module
+mfs6 > use <module>
+# list selected module's options
+msf6 exploit('module_used') > options
+msf6 exploit('module_used') > show options
+# set it's options
+msf6 exploit('module_used') > set <option> <valeur>
+# start exploit
+msf6 exploit('module_used') > run
+```
+
+<details class="details-e">
+<summary>Usual modules options</summary>
+
+* `set LHOST <value>`: ip of the attacker
+* `set RHOST(s) <value>`: ips of the defenders
+* `set RPORT <value>`: port of the defender
+* `set TARGETURI <value>`: an URI (ex: location to a script)
+* `set use <module>`: use another module
+* `set PAYLOAD <value>`: use another module
+</details>

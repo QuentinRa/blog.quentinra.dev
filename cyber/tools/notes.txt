@@ -1,3 +1,1 @@
 Nmap / tcpdump / wireshark / ...
-
-enum (enum4linux)
