@@ -32,6 +32,8 @@ bash > some_command_at_least_work_in_bash
 
 ## Commands
 
+<div class="row row-cols-md-2 mx-0"><div>
+
 A command is basically **a name**, that may be followed by options, and arguments. Usually, everyone is only saying arguments instead of differencing options/arguments, the difference being that options starts with `-`.
 
 ```bash
@@ -41,9 +43,29 @@ $ ls -l -a
 $ ls -la
 $ ls -la toto/
 ```
+</div><div>
 
-**Notes**
+> Options can usually be merged. For instance, above, `-l -a` is the same as `-la`.
 
-* Options can usually be merged. For instance, above, `-l -a` is the same as `-la`.
-* Most commands have an option to display some help, try `-h`, `-help`, or `--help`
-* There is some documentation for most commands. Try `man some_command`. **THE MANUAL (man) IS A LIFESAVER**.
+> Most commands have an option to display some help, try `-h`, `-help`, or `--help`
+
+> There is some documentation for most commands. Try `man some_command`. **THE MANUAL (man) IS A LIFESAVER**.
+</div></div>
+
+<hr class="sl">
+
+## Text Editors
+
+...
+
+<hr class="sr">
+
+## Permissions
+
+...
+
+<hr class="sl">
+
+## Paths
+
+...
