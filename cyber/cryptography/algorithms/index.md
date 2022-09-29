@@ -92,6 +92,41 @@ This is a caesar cipher, but split into blocs. The goal was to avoid entropy att
 
 <hr class="sr">
 
+## One Time Pad (OTP)
+
+![Type: Symmetric](https://img.shields.io/badge/Type-Symmetric-7cfc00)&nbsp;&nbsp;
+![Practical use: NONE](https://img.shields.io/badge/Practical-likely%20not-7cfc00)
+&nbsp;&nbsp;
+![Complexity: easy](https://img.shields.io/badge/Complexity-easy-7cfc00)
+
+The **One Time Pad**, or One Time password, abbreviated as **OTP**, is a cryptographic algorithm with a good level of security, as long as some considerations are taken, created in 2017. 
+
+* `m` is a message of length `n`
+* `k` is a key of length `n`
+* $C = m \oplus k$
+* $D = c \oplus k$
+
+The operator $\oplus$ (XOR, `ou exclusif`) is basically this: $(a+b)%2$, with both arguments binary numbers.
+
+<details class="details-e">
+<summary>Example</summary>
+
+* **Message**: $10011$
+* **Key** (encrypt): $01010$
+* **Cipher text**: $11001$
+* **Key** (decrypt): $01010$
+* **Message**: $10011$
+</details>
+
+<details class="details-e">
+<summary>Concerns</summary>
+
+* The key is as long as the message, making it hard to use
+* The key must be used only once
+</details>
+
+<hr class="sl">
+
 ## Knapsack problem (`sac-à-dos`) of Merkle-Hellman
 
 ![Type: Asymmetric](https://img.shields.io/badge/Type-Asymmetric-7cfc00)&nbsp;&nbsp;
@@ -115,7 +150,7 @@ The most know bag/knapsack problem is the **0-1 knapsack problem**. You got a "b
 <details class="details-e"> 
 <summary>Super-increasing knapsack problem</summary>
 
-An easy knapsack problem is the **super-increasing knapsack problem**, in which every next entry of the bag is greater than the sum of the previous terms. It make it easy to decipher the message without the key, as if the cipher is greater or equals than the current greatest value of the knapsack, then it is inside the knapsack of the message. 
+An easy knapsack problem is the **super-increasing knapsack problem**, in which every next entry of the bag is greater than the sum of the previous terms. It make it easy to decipher the message without the key, as if the cipher is greater or equals than the current greatest value of the knapsack, then it is inside the knapsack of the message.
 
 * **Knapsack**: $2, 5, 11, 23, 55$
 * **Cipher**: 62
@@ -141,7 +176,7 @@ We will pick a value $N$ greater than the sum of the values in the Knapsack, and
 * **Knapsack** (public key)
   * We are multiplying the private key by $W$, modulus $N$
   * Ex: $27 * 2 = 54\ (\text{mod}\ 113)$
-  * $((2, 5, 11, 23, 55) * W)\ mod\ N = 54, 22, 71, 56, 16$ 
+  * $((2, 5, 11, 23, 55) * W)\ mod\ N = 54, 22, 71, 56, 16$
   * Public key: $(54, 22, 71, 56, 16)$
 </details>
 
@@ -168,12 +203,6 @@ It was cracked in polynomial time in 1984 by Adi Shamir published.
 
 <hr class="sr">
 
-## One Time Pad (OTP)
-
-...
-
-<hr class="sl">
-
 ## Diffie–Hellman key exchange
 
 ![Type: Asymmetric](https://img.shields.io/badge/Type-Asymmetric-7cfc00)&nbsp;&nbsp;
@@ -185,7 +214,7 @@ A is sending a message to B. Both are agreeing on two numbers $p$ and $g$ with $
 
 A is sending $g^a\ (mod\ p)$ to B (resp. b for B to A). The common key for A is $(g^a)^b\ (mod\ p)$ and for B, it is $(g^b)^a\ (mod\ p)$. They **both** have the same number, but they do not know about the exponent of the other.
 
-<hr class="sr">
+<hr class="sl">
 
 ## Rivest–Shamir–Adleman (RSA)
 
@@ -200,7 +229,7 @@ To decrypt a message $S$, simply do $T = S^d\ (mod\ n)$.
 
 > This is working, because an attacker would have a lot of prime numbers to test ($10^{497}$ for $n \approx 10^{1000}$) to find back $\phi(n) = (p-1) * (q-1)$ from $n$.
 
-<hr class="sl">
+<hr class="sr">
 
 ## Sources
 
