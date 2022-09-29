@@ -92,7 +92,7 @@ This is a caesar cipher, but split into blocs. The goal was to avoid entropy att
 
 <hr class="sr">
 
-## One Time Pad (OTP)
+## One Time Pad (`Masque jetable`)
 
 ![Type: Symmetric](https://img.shields.io/badge/Type-Symmetric-7cfc00)&nbsp;&nbsp;
 ![Practical use: NONE](https://img.shields.io/badge/Practical-likely%20not-7cfc00)
