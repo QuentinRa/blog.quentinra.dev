@@ -1,6 +1,6 @@
 # Cybersecurity
 
-This is a list of every tool, repository, or command that you may use across every other sub-courses, or while working in cybersecurity. The list may be incomplete if some commands are introduced directly in other courses (ex: Linux - networking).
+This is a list of every tool, repository, or program that you may use across every other sub-courses, or while working in cybersecurity. The list may be incomplete if some commands are introduced directly in other courses such as 'Cybersecurity - commands', or 'Linux - networking'.
 
 <hr class="sl">
 

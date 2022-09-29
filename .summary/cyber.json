@@ -12,8 +12,14 @@
       {
         "tag": "tools",
         "name": "Tools",
-        "desc": "A list of tools that you may use either to defend or attack.",
+        "desc": "A list of tools that you may use  while practicing cybersecurity.",
         "icon": "<i class=\"bi bi-hammer\"></i>"
+      },
+      {
+        "tag": "tools/commands/index.md",
+        "name": "Native commands",
+        "desc": "A list of native commands that you may use while practicing cybersecurity.",
+        "icon": null
       }
     ],
     "Attacks": [
