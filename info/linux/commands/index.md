@@ -30,8 +30,7 @@ If there is nothing before "+", Grant to <kbd>ugo</kbd>
 
 ```bash
 chmod +x target
-chmod +rw target
-chmod +rwx target
+chmod ugo+x target # same
 ```
 </div><div>
 
