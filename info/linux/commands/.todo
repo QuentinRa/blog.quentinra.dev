@@ -20,13 +20,13 @@ xxx
 </details>
 
 <div class="row row-cols-md-2"><div>
-<details class="details-e">
+<details class="details-e" open>
 <summary><code>xxx</code>: xxx</summary>
 
 ...
 </details>
 </div><div>
-<details class="details-e">
+<details class="details-e" open>
 <summary><code>xxx</code>: xxx</summary>
 
 xxx

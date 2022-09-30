@@ -67,6 +67,38 @@ sudo aptitude install nano
 
 ...
 
+<hr class="sl">
+
+## Manage files and folders
+
+Create
+
+<div class="row row-cols-md-2"><div>
+<details class="details-e">
+<summary><code>mkdir</code>: create directories</summary>
+
+```bash
+$ mkdir folder
+```
+
+Create every non-existing folder in a path
+
+```bash
+$ mkdir -p folder0/folder1/folder2
+```
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>touch</code>: create file</summary>
+
+Create file if needed, otherwise update the last modified date. **It is important to note that this command is not clearing the contents of the existing file, if any**.
+
+```bash
+$ touch a_file
+```
+</details>
+</div></div>
+
 <hr class="sr">
 
 ## Permissions
@@ -115,7 +147,6 @@ $ chmod 700 target
 </details>
 
 <div class="row row-cols-md-2"><div>
-
 <details class="details-e">
 <summary><code>umask</code>: change default permission for new files</summary>
 
@@ -131,7 +162,6 @@ $ umask u=rwx,g=rx,o=r
 ```
 
 </details>
-
 </div><div>
 
 <details class="details-e">
@@ -148,5 +178,4 @@ $ chown n2:m toto.txt
 
 You may use `-R` (recursive), and `-h` (do not deference symbolic links).
 </details>
-
 </div></div>
