@@ -173,6 +173,21 @@ The folder with every file belonging to "user".
 <tr><td><b>hidden files</b> (<code>fichiers cachés</code>)<br>
 Files that are not visible by default..
 </td><td>❌ defined manually<td>any file starting with <code>.</code> (dot), such as <code>.config</code></td></tr>
+
+<tr><td><b>"Program files"</b><br>
+Folders used to store programs/commands.
+</td>
+<td>
+<code>C:\Program Files\</code><br>
+<code>C:\Program Files (x86)\</code><br>
+<code>%appdata%</code>
+</td>
+<td>
+<code>/bin/</code><br>
+<code>/usr/bin/</code><br>
+<code>/usr/local/bin/</code>
+</td>
+</tr>
 </tbody>
 </table>
 
