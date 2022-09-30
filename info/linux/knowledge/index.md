@@ -210,5 +210,14 @@ If the home of the current user is `/usr/user/home/`, then `~` would mean the ex
 <summary>Notes</summary>
 
 * Following slashes are merged into one <small>(ex: `///` is the same as `/`)</small>
-* Everything is a file: hard drive (/mnt/), a terminal (/dev/), a command (/bin/)...
+* "Everything is a file": hard drive (/mnt/), a terminal (/dev/), a command (/bin/)...
+</details>
+
+<details class="details-e">
+<summary>Commands</summary>
+
+* <kbd>pwd</kbd>: see the path of the current folder
+* <kbd>cd</kbd>: move to another folder
+* <kbd>ls</kbd>: to list every file/folder in a directory
+* <kbd>ls -a</kbd>: to list every file, including hidden files, in a directory
 </details>
