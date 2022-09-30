@@ -1,14 +1,5 @@
 # Linux
 
-<details class="details-e mt-3">
-<summary>File / Folders</summary>
-
-> * `chmod +x file`: give x to every user
-> * `chmod u+x file`: give x to u
-> * `chmod u+rw file`: give rw to u
-> * `chmod 751 file`: give rwx to u, rx to g, x to o
-</details>
-
 > If you need to see the content of a file, you may also use
 > * <kbd>cat file.txt</kbd> (print the whole file)
 > * <kbd>less file.txt</kbd> (print the file in the screen, you can use `up`/`down` to move up/down in the file, use `q` to exit)
