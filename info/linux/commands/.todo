@@ -12,12 +12,26 @@ xxx
 <summary><code>xxx</code>: xxx</summary>
 <div class="row row-cols-md-2"><div>
 
-
+...
 </div><div>
 
-
+...
 </div></div>
 </details>
+
+<div class="row row-cols-md-2"><div>
+<details class="details-e">
+<summary><code>xxx</code>: xxx</summary>
+
+...
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>xxx</code>: xxx</summary>
+
+xxx
+</details>
+</div></div>
 ------------------------------------------
 
 You may give someone the "right" do use sudo, by adding the user in the "sudoers".
