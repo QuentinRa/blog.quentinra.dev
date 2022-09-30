@@ -65,8 +65,43 @@ sudo aptitude install nano
 
 ## Basics
 
+<details class="details-e">
+<summary><code>ls</code>: list all files in a directory</summary>
 <div class="row row-cols-md-2"><div>
-<details class="details-e" open>
+
+List all files in the given directory. If none, work on the current directory. If a file is given, show information about the file.
+
+* `-l` : show a lof of information (l=long)
+* `-a`: show hidden files
+* `-R`: recursive
+* `-p`: add trailing "/" to repositories
+
+```bash
+$ ls
+$ ls . # same as "ls"
+$ ls folder
+$ ls *.txt # show every .txt
+```
+
+</div><div>
+
+```bash
+$ ls -l file # info on file
+$ ls -la folder # info + hidden
+```
+
+* `-A`: hide ".", and ".."
+* `-s`: show size
+* `--format="format"`: use a custom format
+* `--hide="pattern"`: hide files matching "pattern"
+* `-S`: sort by size
+* `-t`: sort by last modified date
+* `-u`: sort by last access date
+</div></div>
+</details>
+
+<div class="row row-cols-md-2"><div>
+<details class="details-e">
 <summary><code>cd</code>: move to another directory</summary>
 
 ```bash
@@ -76,7 +111,7 @@ $ cd # same as cd ~
 ```
 </details>
 </div><div>
-<details class="details-e" open>
+<details class="details-e">
 <summary><code>cat/less</code>: print/display a file</summary>
 
 ```bash
