@@ -107,6 +107,15 @@ Permissions are assigned on a file/folder, and are applied according to the targ
 Permissions are something like `u=r+w, g=r, o=r`. We usually use numbers. The syntax can be shortened to `u=6, g=4, o=4`, and because the order `ugo` is fixed, we can shorten it again to `644`. **This shortened version is the most used one**.
 
 <details class="details-e">
+<summary>Commands</summary>
+
+* <kbd>ls -l</kbd>: to view the permissions of a file/folder
+* <kbd>chmod</kbd>: to change the permissions of a file/folder
+* <kbd>umask</kbd>: to change the default permissions when a file/folder is created
+* <kbd>chown</kbd>: to change the owner of a file/folder
+</details>
+
+<details class="details-e">
 <summary>Practical knowledge</summary>
 
 ![Permissions Linux](_images/perms.png)
