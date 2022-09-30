@@ -34,7 +34,7 @@ $ sudo -s
 `apt` is the default package manager on many well-know Linux-based distributions such as Ubuntu/Debian.
 
 ```bash
-# operations on the package <aptitude>
+# operations on the package "aptitude"
 sudo apt install aptitude
 sudo apt update aptitude
 sudo apt upgrade aptitude
@@ -65,7 +65,26 @@ sudo aptitude install nano
 
 ## Basics
 
-...
+<div class="row row-cols-md-2"><div>
+<details class="details-e" open>
+<summary><code>cd</code>: move to another directory</summary>
+
+```bash
+$ cd folder
+$ cd ~
+$ cd # same as cd ~
+```
+</details>
+</div><div>
+<details class="details-e" open>
+<summary><code>cat/less</code>: print/display a file</summary>
+
+```bash
+$ cat file
+$ less file # use up/down, and q
+```
+</details>
+</div></div>
 
 <hr class="sl">
 
@@ -171,7 +190,6 @@ To delete a folder <small>(there is also `rmdir` 😒)</small>
 $ rm -r folder
 $ rm -rf folder # usual f + r
 ```
-
 </details>
 </div><div>
 <details class="details-e">
@@ -182,7 +200,6 @@ To create a symbolic link
 ```bash
 $ ln -s target_of_the_sl dest_of_the_generated_sl
 ```
-
 </details>
 </div></div>
 
