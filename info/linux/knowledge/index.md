@@ -58,7 +58,6 @@ $ ls -la toto/
 ```bash
 $ man ls
 ```
-
 </div></div>
 
 <hr class="sl">
@@ -81,13 +80,31 @@ I think nano is the easiest to learn.
 * **Quit nano**: `CTRL+X`
 
 If you only need to see the contents of a file, then you can use the commands `cat`, `less`, `head`, and `tail`.
-</div><div>
+</div></div>
 
 <hr class="sr">
 
-## Permissions
+## Permissions, and users
 
-...
+<div class="row row-cols-md-2"><div>
+
+There are 3 well-known levels of permissions
+
+* <kbd>r</kbd> (4): can read
+* <kbd>w</kbd> (2): can write <small>(=can edit+save, can create)</small>
+* <kbd>x</kbd> (1): can execute a script, can move through a repository
+
+Permissions are coded on 7 bits. `r+w` means `4+2=6`. We are usually using numbers instead of letters, because it's shorter.
+</div><div>
+
+Permissions are assigned on a file/folder, and are applied according to the target of the permissions
+
+* <kbd>u</kbd>: user, applied to the user (owner)
+* <kbd>g</kbd>: group, applied to the main group of the user <small>(ex: students_2022)</small>
+* <kbd>o</kbd>: others, applied to everyone else
+</div></div>
+
+Permissions are something like `u=r+w, g=r, o=r`. We usually use numbers. The syntax can be shortened to `u=6, g=4, o=4`, and because the order `ugo` is fixed, we can shorten it again to `644`. **This shortened version is the most used one**.
 
 <hr class="sl">
 
