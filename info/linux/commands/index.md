@@ -126,6 +126,38 @@ $ cd # same as cd ~
 </details>
 </div><div>
 <details class="details-e">
+<summary><code>pwd</code>: echo the working directory</summary>
+
+```bash
+$ pwd
+/home/listro
+```
+</details>
+</div></div>
+
+<div class="row row-cols-md-2"><div>
+<details class="details-e">
+<summary><code>echo/printf</code>: display something</summary>
+
+```bash
+$ echo Hello, World
+$ echo "Hello, World"
+```
+
+To remove the newline, use `-n`:
+
+```bash
+$ echo -n "Hello, World"
+```
+
+You can also use `printf "format" arguments`:
+
+```bash
+printf "%s\n" "Hello, World"
+```
+</details>
+</div><div>
+<details class="details-e">
 <summary><code>cat/less</code>: print/display a file</summary>
 
 ```bash

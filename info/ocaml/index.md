@@ -206,6 +206,6 @@ Also, in OCaml, you can have a comment inside another comment. What I mean, is t
 **Courses**
 
 * [RealWorldOCaml](http://dev.realworldocaml.org/) (an amazing free ebook about OCaml)
-* [The official tutorial](https://ocaml.org/docs) along with [OCaml 4.41 documentation and reference](https://v2.ocaml.org/releases/4.14/ocaml-4.14-refman.pdf)
+* [The official tutorial](https://ocaml.org/docs) along with [OCaml 4.14 documentation and reference](https://v2.ocaml.org/releases/4.14/ocaml-4.14-refman.pdf)
 * [OCaml: LearnCode](https://ocaml-learn-code.com/) (an app to learn/code OCaml, along with some stuff on their website)
 * [An online free ebook about OCaml](https://cs3110.github.io/textbook/cover.html)
