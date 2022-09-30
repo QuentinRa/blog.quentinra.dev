@@ -106,6 +106,20 @@ Permissions are assigned on a file/folder, and are applied according to the targ
 
 Permissions are something like `u=r+w, g=r, o=r`. We usually use numbers. The syntax can be shortened to `u=6, g=4, o=4`, and because the order `ugo` is fixed, we can shorten it again to `644`. **This shortened version is the most used one**.
 
+<details class="details-e">
+<summary>Practical knowledge</summary>
+
+![Permissions Linux](_images/perms.png)
+
+* In the screen bellow, the first value `-` indicates that this is a file. It would be `d` for a folder, `l` for a link...
+* The 3 following letters `rw-` are the permissions of `u`: read+write.
+* The 3 following letters `r--` are the permissions of `g`: read.
+* The 3 following letters `r--` are the permissions of `o`: read.
+* The following number `1` is the number of links.
+* The following string `listro` is the name of the user `u`
+* The following string `listro` is the name of the group `g`
+</details>
+
 <hr class="sl">
 
 ## Paths
