@@ -167,3 +167,25 @@ The folder with every file belonging to "user".
 </td><td><code>C:\Users\user\</code></td><td><code>/usr/user/home/</code></td></tr>
 </tbody>
 </table>
+
+As paths can become quite long, we can use some shortcuts
+
+<table class="table table-bordered table-striped border-dark">
+<thead>
+<tr><th>Shortcut</th><th>Description</th><th>Example</th></tr>
+</thead>
+<tbody>
+
+<tr><td><kbd>.</kbd> (dot)</td><td>Path to current folder<br>(=output of <code>pwd</code>)</td><td>
+
+If the current folder is `/usr/toto/home/`, then `./toto.txt` is an alias for `/usr/toto/home/toto.txt`.
+</td></tr>
+<tr><td><kbd>..</kbd> (2 dots)</td><td>Parent folder of the current folder.</td><td>
+
+If the current folder is `/usr/toto/home/`, then `..` is an alias for `/usr/toto/`.
+</td></tr>
+<tr><td><kbd>~</kbd> (tilde)</td><td>Path to user home</td><td>
+
+If the home of the current user is `/usr/user/home/`, then `~` would mean the exact same path.
+</td></tr>
+</tbody></table>
