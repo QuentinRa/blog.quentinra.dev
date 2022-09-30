@@ -5,11 +5,6 @@ Linux is an operating system, on which a lot of distributions such as Debian, Ar
 <details class="details-e mt-3">
 <summary>File / Folders</summary>
 
-The permissions are a set of 3 numbers, for each kind of user. In binary, 000=0, 001=1, 010=2, 100=4, etc. As you saw, I put 4 after r, it means that 100=4=r. If we got 110=6=4+2=r+w, it means that the user can write and read.
-
-* `110 100 100`: u (6=r+w), g (4=r), o (4=r) 
-* `111 101 100`: u (7=r+w+x), g (5=r+x), o (4=r)
-
 > * `chmod +x file`: give x to every user
 > * `chmod u+x file`: give x to u
 > * `chmod u+rw file`: give rw to u
