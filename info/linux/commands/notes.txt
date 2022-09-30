@@ -1,6 +1,12 @@
 https://tryhackme.com/room/linux1
 https://tryhackme.com/room/linux2
 
+<details class="details-e">
+<summary><code>xxx</code>: xxx</summary>
+
+xxx
+</details>
+
 sudo ls
 sudo -s
 You may give someone the "right" do use sudo, by adding the user in the "sudoers".

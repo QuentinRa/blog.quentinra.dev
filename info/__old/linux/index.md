@@ -1,7 +1,5 @@
 # Linux
 
-Linux is an operating system, on which a lot of distributions such as Debian, Arch Linux, Fedora, Ubuntu, and so on... are based. I'm not an expert, so in this course, you will only learn the basics.
-
 <details class="details-e mt-3">
 <summary>File / Folders</summary>
 
