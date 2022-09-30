@@ -12,33 +12,43 @@
 
 ## Permissions
 
-<details class="details-e" open>
+<details class="details-e">
 <summary><code>chmod</code>: change a file/folder permissions</summary>
 
 <div class="row row-cols-md-2"><div>
 
-* The format is either
-  * the shortened syntax (ex: `700`)
-  * **Grant perms**: the target `+` permissions
-  * **Revoke perms**: the target `-` permissions
+Use <kbd>+</kbd> to grant perms..
 
-Notes
+```bash
+chmod u+x target
+chmod g+rw target
+chmod ug+r target
+chmod g+x,o+rx target
+```
 
-* If there is no target, they are applied to all
-* Targets are "u", "g", "o", "ug", "uo", "go", "ugo"
-* Permissions are "r", "w", "x", "rw", "rx", "wx", "rwx"
-</div><div>
+If there is nothing before "+", Grant to <kbd>ugo</kbd>
 
 ```bash
 chmod +x target
+chmod +rw target
+chmod +rwx target
+```
+</div><div>
+
+Use <kbd>-</kbd> instead of <kbd>+</kbd> to revoke permissions.
+
+```bash
 chmod -x target
+chmod u-x target
+chmod ug-rw target
+```
 
-chmod u+x target
-chmod u+rw target
-chmod u+rw,g+r target
+Grant "perms" using the shortcut number.
 
+```bash
 # u=rwx, g=rx, o=x
 chmod 751 target
 ```
+
 </div></div>
 </details>
