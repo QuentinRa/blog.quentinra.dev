@@ -56,7 +56,23 @@ $ ls -la toto/
 
 ## Text Editors
 
-...
+<div class="row row-cols-md-2"><div>
+
+Text editors, or file editors, are tools allowing you to view, and edit a file. If you have a graphical interface, you may use the usual tools: vscode, sublime text, JetBrains' IDEs, emacs... But, if you only have a terminal, the most used are
+
+* `vim` <small>(there is a course on this website)</small>, or `neovim`
+* `nano`
+* `emacs` <small>(vim > emacs, change my mind 😒)</small>
+</div><div>
+
+I think nano is the easiest to learn.
+
+* **Open a file in nano**: `nano file.txt` <small>(created if it does not exists)</small>
+* **Save a file in nano**: `CTRL+S`
+* **Quit nano**: `CTRL+X`
+
+If you only need to see the contents of a file, then you can use the commands `cat`, `less`, `head`, and `tail`.
+</div><div>
 
 <hr class="sr">
 
