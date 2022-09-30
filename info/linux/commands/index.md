@@ -27,6 +27,40 @@ $ sudo -s
 </div></div>
 </details>
 
+<details class="details-e">
+<summary><code>apt/aptitude</code>: install/update packages/OS</summary>
+<div class="row row-cols-md-2"><div>
+
+`apt` is the default package manager on many well-know Linux-based distributions such as Ubuntu/Debian.
+
+```bash
+# operations on the package <aptitude>
+sudo apt install aptitude
+sudo apt update aptitude
+sudo apt upgrade aptitude
+sudo apt remove aptitude
+sudo apt auto-remove
+# update OS
+sudo apt dist-upgrade
+```
+</div><div>
+
+When installing packages, you are prompted `Do you want to continue? [Y/n]` (you need to enter `Y`). You can skip this, using `-y`.
+
+```bash
+sudo apt install -y aptitude
+```
+
+`aptitude`, which need to be installed, is doing the same as `apt`, but there is a graphical interface included.
+
+```bash
+sudo aptitude # press 'q' to quit
+sudo aptitude install nano
+```
+
+</div></div>
+</details>
+
 <hr class="sr">
 
 ## Basics
