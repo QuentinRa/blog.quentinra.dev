@@ -20,7 +20,7 @@
       {
         "tag": "linux/commands/index.md",
         "name": "Linux (commands)",
-        "desc": "A lot of commands, along with their and description, that can be used on Linux-based distributions.",
+        "desc": "A lot of commands, along with their most useful options, and some tips about their usage, that can be used on Linux-based distributions.",
         "icon": null
       },
       {

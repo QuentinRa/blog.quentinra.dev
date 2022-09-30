@@ -1,6 +1,6 @@
 # List of essentials linux commands
 
-...
+A lot of commands, along with their most useful options, and some tips about their usage, that can be used on Linux-based distributions. This includes commands such as `sudo`, `apt`, `man`, `ls`, `cd`, `pwd`, `echo`, `printf`, `cat`, `less`, `mkdir`, `touch`, `cp`, `mv`, `rm`, `ln`, `chmod`, `umask`, `chown`, and many more.
 
 <hr class="sl">
 
@@ -62,6 +62,8 @@ sudo aptitude install nano
 
 <details class="details-e">
 <summary><code>man</code>: manual for most commands</summary>
+
+**Note**: man may have to be installed.
 
 ```bash
 $ man man
