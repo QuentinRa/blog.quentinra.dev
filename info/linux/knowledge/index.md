@@ -165,8 +165,17 @@ The folder containing every other folder.
 <tr><td><b>(user) home</b> (<code>domicile</code>)<br>
 The folder with every file belonging to "user".
 </td><td><code>C:\Users\user\</code></td><td><code>/usr/user/home/</code></td></tr>
+
+<tr><td><b>hidden files</b> (<code>fichiers cachés</code>)<br>
+Files that are not visible by default..
+</td><td>❌ manually defined<td>any file starting with <code>.</code> (dot), such as <code>.config</code></td></tr>
 </tbody>
 </table>
+
+<details class="details-e" open>
+<summary>Absolute and relative paths</summary>
+
+<div class="row row-cols-md-2 mx-0"><div>
 
 As paths can become quite long, we can use some shortcuts
 
@@ -189,3 +198,19 @@ If the current folder is `/usr/toto/home/`, then `..` is an alias for `/usr/toto
 If the home of the current user is `/usr/user/home/`, then `~` would mean the exact same path.
 </td></tr>
 </tbody></table>
+</div><div>
+
+* `root` is its own parent
+* Multiples slashes are merged into one `///` is the same as `/`
+* The value of `~` is stored inside `$HOME`
+* The home of every user is record in `/etc/passwd`
+
+<hr>
+
+> A path starting by the root is called **absolute path** (`chemin absolu`)
+
+> A path that is not absolute, is called **relative path** (`chemin relatif`)
+
+</div></div>
+
+</details>
