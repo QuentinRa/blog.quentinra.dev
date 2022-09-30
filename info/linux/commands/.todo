@@ -35,6 +35,7 @@ xxx
 ------------------------------------------
 
 apropos
+alias
 
 You may give someone the "right" do use sudo, by adding the user in the "sudoers".
 Simply call sudo usermod -a -G sudo username.

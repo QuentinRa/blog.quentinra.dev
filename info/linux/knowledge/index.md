@@ -143,4 +143,27 @@ There is a super-user, usually called root, that have every control on the machi
 
 ## Paths
 
-...
+In both Linux, and Windows, there is a notion of **Path**. A path is made of one or more folders (`dossier/catalogue`), and may lead to a file (`fichier`).
+
+<table class="table table-bordered table-striped border-dark">
+<thead>
+<tr><th>Notion</th><th>Windows</th><th>Linux</th></tr>
+</thead>
+<tbody>
+
+<tr><td><b>A path</b> (<code>chemin</code>)
+</td><td><code>C:\Users\user\Documents\</code></td><td><code>/usr/home/user/Documents/</code></td></tr>
+
+<tr><td><b>Separator</b><br>
+Something separating folders in a path.
+</td><td><code>\</code> (backslash)</td><td><code>/</code> (slash)</td></tr>
+
+<tr><td><b>root</b> (<code>racine</code>)<br>
+The folder containing every other folder.
+</td><td><code>C:\</code></td><td><code>/</code></td></tr>
+
+<tr><td><b>(user) home</b> (<code>domicile</code>)<br>
+The folder with every file belonging to "user".
+</td><td><code>C:\Users\user\</code></td><td><code>/usr/user/home/</code></td></tr>
+</tbody>
+</table>
