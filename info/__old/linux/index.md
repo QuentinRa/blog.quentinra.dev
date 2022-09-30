@@ -2,15 +2,6 @@
 
 Linux is an operating system, on which a lot of distributions such as Debian, Arch Linux, Fedora, Ubuntu, and so on... are based. I'm not an expert, so in this course, you will only learn the basics.
 
-<hr class="sl">
-
-## Console
-
-* your are writing commands right after the `$`
-* press <kbd>ENTER</kbd> to execute a command
-* press <kbd>CTRL-C</kbd> to cancel a command
-* press <kbd>CTRL-D</kbd> to end the input of a command waiting for input
-
 * `# ls`: the command must be **run as administrator**
 
 <hr class="sl">

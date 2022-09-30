@@ -32,9 +32,18 @@ bash > some_command_at_least_work_in_bash
 
 ## Commands
 
-<div class="row row-cols-md-2 mx-0"><div>
+<div class="row row-cols-md-2"><div>
 
 A command is basically **a name**, that may be followed by options, and arguments. Usually, everyone is only saying arguments instead of differencing options/arguments, the difference being that options starts with `-`.
+
+* you are writing commands right after the `$`
+* press <kbd>ENTER</kbd> to execute a command
+* press <kbd>CTRL-C</kbd> to cancel a command
+* press <kbd>CTRL-D</kbd> to end the input of a command waiting for input
+* Usually, options can be merged <small>(ex: `-l -a` is the same as `-la`)</small>.
+* Most commands have an option "help": `-h`, `-help`, or `--help`
+
+</div><div>
 
 ```bash
 $ ls
@@ -43,13 +52,13 @@ $ ls -l -a
 $ ls -la
 $ ls -la toto/
 ```
-</div><div>
 
-> Options can usually be merged. For instance, above, `-l -a` is the same as `-la`.
+**There is some documentation for most commands.**
 
-> Most commands have an option to display some help, try `-h`, `-help`, or `--help`
+```bash
+$ man ls
+```
 
-> There is some documentation for most commands. Try `man some_command`. **THE MANUAL (man) IS A LIFESAVER**.
 </div></div>
 
 <hr class="sl">
