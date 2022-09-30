@@ -16,29 +16,28 @@ The permissions are a set of 3 numbers, for each kind of user. In binary, 000=0,
 > * `chmod 751 file`: give rwx to u, rx to g, x to o
 </details>
 
-<hr class="sr">
-
-## Edit files
-
-A lot of times, you will have to open/edit files. You need to use a terminal editor, and you may use
-
-* `vim` (there is a tutorial on this website), `neovim`, or `vim`
-* `nano` (easy, good when you need to copy-paste something)
-* `emacs` <s>(vim > emacs, change my mind 😂)</s>
-
-Let's say you need to edit `file.txt`, you can do `vim file.txt`. If the file do not exists, then it will be created.
-
 > If you need to see the content of a file, you may also use
 > * <kbd>cat file.txt</kbd> (print the whole file)
 > * <kbd>less file.txt</kbd> (print the file in the screen, you can use `up`/`down` to move up/down in the file, use `q` to exit)
 > * <kbd>head file.txt</kbd> (see the first 10 lines)
 > * <kbd>tail file.txt</kbd> (see the last 10 lines)
 
-If you have a graphical interface, feel free to use SublimeText, Atom, Emacs, VSCode, or even overkill editors such as IntelliJ, PHPStorm, etc. 
-
 <hr class="sl">
 
 ## File system
+
+<details class="details-e">
+<summary>Practical knowledge</summary>
+
+* In the screen bellow, the first value `-` indicates that this is a file. It would be `d` for a folder, `l` for a link...
+* The 3 following letters `rw-` are the permissions of `u`: read+write.
+* The 3 following letters `r--` are the permissions of `g`: read.
+* The 3 following letters `r--` are the permissions of `o`: read.
+* The following number `1` is the number of links.
+* The following string `listro` is the name of the user `u`
+* The following string `listro` is the name of the group `g`
+</details>
+
 
 On Windows, you were using the file explorer. On Linux, you still got the notion of folder (`dossier/catalogue`) and file (`fichier/fichier régulier`). A sequence a folder, separated by a separator (`/` on Linux, `\` on Windows), that may ends with a file, is called a **path** (`chemin`).
 

@@ -120,11 +120,11 @@ Permissions are something like `u=r+w, g=r, o=r`. We usually use numbers. The sy
 
 ![Permissions Linux](_images/perms.png)
 
-* In the screen bellow, the first value `-` indicates that this is a file. It would be `d` for a folder, `l` for a link...
+* Ignore the first `-` for now
 * The 3 following letters `rw-` are the permissions of `u`: read+write.
 * The 3 following letters `r--` are the permissions of `g`: read.
 * The 3 following letters `r--` are the permissions of `o`: read.
-* The following number `1` is the number of links.
+* Ignore `1`
 * The following string `listro` is the name of the user `u`
 * The following string `listro` is the name of the group `g`
 </details>
