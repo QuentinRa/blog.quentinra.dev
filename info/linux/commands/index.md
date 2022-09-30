@@ -57,8 +57,22 @@ sudo apt install -y aptitude
 sudo aptitude # press 'q' to quit
 sudo aptitude install nano
 ```
-
 </div></div>
+</details>
+
+<details class="details-e">
+<summary><code>man</code>: manual for most commands</summary>
+
+```bash
+$ man man
+```
+
+Entries in the manual are split into sections. To access a command of a specific section, simply add the section number before the command.
+
+```bash
+$ man 1 man
+```
+
 </details>
 
 <hr class="sr">
