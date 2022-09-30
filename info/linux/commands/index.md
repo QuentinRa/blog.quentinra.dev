@@ -85,10 +85,11 @@ $ chmod ug+r target
 $ chmod g+x,o+rx target
 ```
 
-If there is nothing before "+", Grant to <kbd>ugo</kbd>
+If there is nothing before "+", Grant to <kbd>a</kbd> (alias of <kbd>ugo</kbd>)
 
 ```bash
 $ chmod +x target
+$ chmod a+x target # same
 $ chmod ugo+x target # same
 ```
 </div><div>
@@ -106,7 +107,46 @@ Grant "perms" using the shortcut number.
 ```bash
 # u=rwx, g=rx, o=x
 $ chmod 751 target
+# u=rwx, g=, o=
+$ chmod 700 target
 ```
 
 </div></div>
 </details>
+
+<div class="row row-cols-md-2"><div>
+
+<details class="details-e">
+<summary><code>umask</code>: change default permission for new files</summary>
+
+A call to `umask` return the **missing** permissions with a leading `0`.
+
+```bash
+$ umask
+0026 # meaning 751 by default
+$ umask -s
+u=rwx,g=rx,o=r
+$ umask 0026
+$ umask u=rwx,g=rx,o=r
+```
+
+</details>
+
+</div><div>
+
+<details class="details-e">
+<summary><code>chown</code>: change the owner of a file/folder</summary>
+
+```bash
+$ ls -l toto.txt
+-rw-r-xr-x 1 n1 n [...] toto.txt 
+$ chown n2 toto.txt
+-rw-r-xr-x 1 n2 n [...] toto.txt
+$ chown n2:m toto.txt
+-rw-r-xr-x 1 n2 m [...] toto.txt
+```
+
+You may use `-R` (recursive), and `-h` (do not deference symbolic links).
+</details>
+
+</div></div>
