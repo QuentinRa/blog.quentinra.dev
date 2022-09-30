@@ -129,6 +129,16 @@ Permissions are something like `u=r+w, g=r, o=r`. We usually use numbers. The sy
 * The following string `listro` is the name of the group `g`
 </details>
 
+<details class="details-e">
+<summary>Root / Administrator</summary>
+
+There is a super-user, usually called root, that have every control on the machine. Root can delegate this power to others users by making them a part of the "sudoers" group. The command to do an action using elevated permissions is different according to the Linux-distribution, but the command **sudo** is the most well-know one.
+
+![super-user/sudo bash](_images/sudo.png)
+
+**Notice the # before every command**: in some tutorials, including ours, you will see a `#` instead of the usual `$` before a command needing elevated privileges.
+</details>
+
 <hr class="sl">
 
 ## Paths

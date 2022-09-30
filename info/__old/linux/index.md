@@ -2,42 +2,8 @@
 
 Linux is an operating system, on which a lot of distributions such as Debian, Arch Linux, Fedora, Ubuntu, and so on... are based. I'm not an expert, so in this course, you will only learn the basics.
 
-* `# ls`: the command must be **run as administrator**
-
-<hr class="sl">
-
-## Users and permissions
-
-<details class="details-e mt-3">
-<summary>Run as administrator / sudo</summary>
-
-On Windows, whenever you need to install a program (in Program Files), you need to run it as administrator. It means that you are running the program in a privileged mode. We got the same thing on Linux with `sudo`.
-
-You can run a command as administrator such as ls with `sudo ls`. You can run a bash as administrator with `sudo bash`.
-
-<div class="text-center">
-
-![Linux sudo](images/sudo.png) (Notice the # at the end, as we told you before)
-</div>
-
-> **Pro tip**: You should not able to do that on servers/... that you don't own (you shouldn't be able to on Windows too).<br>
-> **Pro tip**: You may give someone the "right" do use sudo, by adding the user in the "sudoers". Simply call `sudo usermod -a -G sudo username`.
-</details>
-
 <details class="details-e mt-3">
 <summary>File / Folders</summary>
-
-You may also restrict who can read (r), write (w), or execute/access (x) your files. Linux is considering 3 kinds of users
-
-* **u**: you
-* **g**: users of your main group (ex: `promo2023`)
-* **o**: any other user
-
-And 3 (there is more) kind of permissions
-
-* **r** (4): can read
-* **w** (2): can write
-* **x** (1): can execute a script, can access a directory <small>(it means that if there is a folder without x in a path, even if we got r or w, we won't be able to work with this file)</small>
 
 The permissions are a set of 3 numbers, for each kind of user. In binary, 000=0, 001=1, 010=2, 100=4, etc. As you saw, I put 4 after r, it means that 100=4=r. If we got 110=6=4+2=r+w, it means that the user can write and read.
 

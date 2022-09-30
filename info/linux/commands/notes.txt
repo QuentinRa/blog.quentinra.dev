@@ -1,2 +1,7 @@
 https://tryhackme.com/room/linux1
 https://tryhackme.com/room/linux2
+
+sudo ls
+sudo -s
+You may give someone the "right" do use sudo, by adding the user in the "sudoers".
+Simply call sudo usermod -a -G sudo username.
