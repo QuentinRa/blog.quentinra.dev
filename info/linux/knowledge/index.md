@@ -164,20 +164,23 @@ The folder containing every other folder.
 
 <tr><td><b>(user) home</b> (<code>domicile</code>)<br>
 The folder with every file belonging to "user".
-</td><td><code>C:\Users\user\</code></td><td><code>/usr/user/home/</code></td></tr>
+</td><td><code>C:\Users\user\</code></td><td><p><code>/usr/user/home/</code></p>
+
+* The path to the home is stored inside `$HOME`
+* The home of every user is record in `/etc/passwd`
+</td></tr>
 
 <tr><td><b>hidden files</b> (<code>fichiers cachés</code>)<br>
 Files that are not visible by default..
-</td><td>❌ manually defined<td>any file starting with <code>.</code> (dot), such as <code>.config</code></td></tr>
+</td><td>❌ defined manually<td>any file starting with <code>.</code> (dot), such as <code>.config</code></td></tr>
 </tbody>
 </table>
 
-<details class="details-e" open>
+<details class="details-e">
 <summary>Absolute and relative paths</summary>
 
-<div class="row row-cols-md-2 mx-0"><div>
-
-As paths can become quite long, we can use some shortcuts
+* A path starting by the root is called **absolute path** (`chemin absolu`).
+* A path that is not absolute, is called **relative path** (`chemin relatif`). We can create such paths using shortcuts:
 
 <table class="table table-bordered table-striped border-dark">
 <thead>
@@ -185,32 +188,27 @@ As paths can become quite long, we can use some shortcuts
 </thead>
 <tbody>
 
-<tr><td><kbd>.</kbd> (dot)</td><td>Path to current folder<br>(=output of <code>pwd</code>)</td><td>
+<tr><td><kbd>.</kbd> (dot)</td><td>Path to <b>current</b> folder<br><small>(=output of <code>pwd</code>)</small></td><td>
 
 If the current folder is `/usr/toto/home/`, then `./toto.txt` is an alias for `/usr/toto/home/toto.txt`.
 </td></tr>
-<tr><td><kbd>..</kbd> (2 dots)</td><td>Parent folder of the current folder.</td><td>
+<tr><td><kbd>..</kbd> (2 dots)</td><td><b>Parent</b> folder of the current folder.</td><td>
 
 If the current folder is `/usr/toto/home/`, then `..` is an alias for `/usr/toto/`.
+
+* `root` is its own parent (`/../` is the same as `/`)
+
 </td></tr>
-<tr><td><kbd>~</kbd> (tilde)</td><td>Path to user home</td><td>
+<tr><td><kbd>~</kbd> (tilde)</td><td>Path to user <b>home</b></td><td>
 
 If the home of the current user is `/usr/user/home/`, then `~` would mean the exact same path.
 </td></tr>
 </tbody></table>
-</div><div>
+</details>
 
-* `root` is its own parent
-* Multiples slashes are merged into one `///` is the same as `/`
-* The value of `~` is stored inside `$HOME`
-* The home of every user is record in `/etc/passwd`
+<details class="details-e">
+<summary>Notes</summary>
 
-<hr>
-
-> A path starting by the root is called **absolute path** (`chemin absolu`)
-
-> A path that is not absolute, is called **relative path** (`chemin relatif`)
-
-</div></div>
-
+* Following slashes are merged into one <small>(ex: `///` is the same as `/`)</small>
+* Everything is a file: hard drive (/mnt/), a terminal (/dev/), a command (/bin/)...
 </details>
