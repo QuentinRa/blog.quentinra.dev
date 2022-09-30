@@ -145,6 +145,47 @@ $ mv toto ./all_toto/toto0
 </details>
 </div></div>
 
+Delete, and create links
+
+<div class="row row-cols-md-2"><div>
+<details class="details-e">
+<summary><code>rm</code>: to remove files/folders</summary>
+
+`rm` is taking a list of files to remove.
+
+```bash
+$ rm file
+$ rm file0 file1
+```
+
+`rm` by default is asking you a confirmation.
+
+```bash
+$ rm -f file # do not ask (f=force)
+$ rm -i file # ask
+```
+
+To delete a folder <small>(there is also `rmdir` 😒)</small>
+
+```bash
+$ rm -r folder
+$ rm -rf folder # usual f + r
+```
+
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>ln</code>: to create links</summary>
+
+To create a symbolic link
+
+```bash
+$ ln -s target_of_the_sl dest_of_the_generated_sl
+```
+
+</details>
+</div></div>
+
 <hr class="sr">
 
 ## Permissions
