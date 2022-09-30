@@ -99,6 +99,52 @@ $ touch a_file
 </details>
 </div></div>
 
+Move, copy, and/or rename
+
+<div class="row row-cols-md-2"><div>
+<details class="details-e">
+<summary><code>cp</code>: copy (+rename) files/folders</summary>
+
+`cp` is taking a list of folders/files to copy, and a destination
+
+```bash
+$ cp toto ./all_toto/
+$ cp toto ./all_toto/toto # same
+$ cp toto1 toto_2 ./all_toto/
+```
+
+To rename something
+
+```bash
+$ cp toto ./all_toto/toto0
+```
+
+To copy a **folder**, along its content
+
+```bash
+$ cp -r all_toto/ all_toto_copy
+```
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>mv</code>: move (+rename) files/folders</summary>
+
+`mv` is taking a list of folders/files to move, and a destination
+
+```bash
+$ mv toto ./all_toto/
+$ mv toto ./all_toto/toto # same
+$ mv toto1 toto_2 ./all_toto/
+```
+
+To rename something
+
+```bash
+$ mv toto ./all_toto/toto0
+```
+</details>
+</div></div>
+
 <hr class="sr">
 
 ## Permissions
