@@ -8,16 +8,12 @@ C:\Users\windows_username\AppData\Local\Packages\TheDebianProject.DebianGNULinux
 => Use
 
 paquet (sudo apt-get install nom_package sous ubuntu)
-man : voir le manuel d’utilisation d’une commande
-cd : se déplacer dans un dossier
-ls : voir le contenu d’un dossier
-cat : voir le contenu d’un fichier
 find : trouver un fichier/dossier
-rm : supprimer un fichier/dossier
 echo : afficher un message
 gcc : compiler du c/c++
 
-Pour passer en mode console (juste un terminal) tapez n’importe quel combinaisons de Ctrl-alt-F1, …, Ctrl-Alt-F9 et Alt-f7 pour revenir au mode graphique (s’il est installé).
+Pour passer en mode console (juste un terminal) tapez n’importe quel combinaisons
+de Ctrl-alt-F1, …, Ctrl-Alt-F9 et Alt-f7 pour revenir au mode graphique (s’il est installé).
 
 => Commands
 
@@ -25,14 +21,6 @@ les options et les arguments sont facultatifs, leur nombre est variable et l’o
 certaines options doivent être suivies d’un argument juste après
 vous pouvez avoir des arguments sans options
 vous pouvez certaines fois fusionner des options (voir exemple juste après)
-
-=> File System
-
-Maybe make a table too.
-Dossier Courant
-Dossier Parent
-
-répertoire
 
 fichiers réguliers (normal)
 fichiers symboliques (liens)
