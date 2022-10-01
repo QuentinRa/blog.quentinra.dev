@@ -34,3 +34,25 @@ xxx
 xxx
 </details>
 </div></div>
+
+----------------- Template 4 --------------
+
+<div class="row row-cols-md-3"><div>
+<details class="details-e" open>
+<summary><code>xxx</code>: xxx</summary>
+
+...
+</details>
+</div><div>
+<details class="details-e" open>
+<summary><code>xxx</code>: xxx</summary>
+
+...
+</details>
+</div><div>
+<details class="details-e" open>
+<summary><code>xxx</code>: xxx</summary>
+
+...
+</details>
+</div></div>
