@@ -375,7 +375,20 @@ You may use `-R` (recursive), and `-h` (do not deference symbolic links).
 <summary><code>find</code>: search for files</summary>
 <div class="row row-cols-md-2"><div>
 
-Used to find files, usually after applying filters, while you may even execute some code on the result.
+The starting point is `find folder`, which explore recursively, and list every file inside folder. You may
+
+* apply filters
+  * `-type`: f=files only, d=folders only 
+  * `-empty`: empty only
+  * `-name "pattern"`: files' names matching "pattern"
+* execute an action on each result
+  * `-exec ... \;`: `{}` is the current file on which you may perform an action. `...` is some placeholder for your code that will use `{}`.
+  * `-execdir ... {} \;`: same as `-exec`, but each command is executed in the folder of `{}`, and not in the folder where the `find` was executed.
+* other options
+  * `-quit`: exit when one result is found
+  * `-printf`: change output
+  * `-mindepth value`: minimum depth (default=0)
+  * `-maxdepth value`: maximum depth (depth=none)
 
 <details class="details-e">
 <summary>Not frequently used options</summary>
