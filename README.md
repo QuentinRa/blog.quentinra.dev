@@ -40,7 +40,7 @@ If you want to edit a course, simply edit the ``.md`` file.
 
 ## TODO List 
 
-Last updated: 2021-10-25
+Last updated: 2022-10-01
 
 <details>
 <summary> <b>Website tasks</b></summary>
@@ -67,17 +67,19 @@ Last updated: 2021-10-25
 <details>
 <summary> <b>Next content</b></summary>
 
+* [ ] Complete Linux (knowledge) course
+* [ ] Complete Linux (commands) course
+* [ ] Complete Networking course
+* [ ] Complete Cybersecurity (knowledge) course
+* [ ] Complete Relational modeling course
 * [ ] Complete Java course
-* [ ] Complete Cybersecurity course
 * [ ] Complete Bootstrap course
 * [ ] Complete C course
+* [ ] Complete CUnit course
+* [ ] Complete NCurses course
 * [ ] Complete C++ course
 * [ ] Complete Qt course
 * [ ] Complete Python course
-* [ ] Complete Linux course
-* [ ] Complete Network course
-* [ ] Complete SQL course
-* [ ] Complete Cryptography course
 * [ ] Update Unity courses (mobile, VR, ...)
 * [ ] IntelliJ Plugin Development
 </details>
