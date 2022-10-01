@@ -98,4 +98,10 @@ PS \> Set-Location ..
 PS \> Set-Location ~
 ```
 </details>
-</div></div>    
+</div></div>
+
+<hr class="sl">
+
+## Other notes
+
+You can find new cmdlets that you will have to download first on Microsoft official website - [Sysinternals Miscellaneous Utilities](https://learn.microsoft.com/en-us/sysinternals/downloads/misc-utilities).
