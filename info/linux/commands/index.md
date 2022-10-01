@@ -523,3 +523,31 @@ $ su root
 ```
 </details>
 </div></div>
+
+<div class="row row-cols-md-3"><div>
+<details class="details-e">
+<summary><code>id</code>: info about a user</summary>
+
+```bash
+$ id
+```
+</details>
+</div><div>
+
+<details class="details-e">
+<summary><code>whoami</code>: username of the current user</summary>
+
+```bash
+$ whoami
+```
+</details>
+</div><div>
+
+<details class="details-e">
+<summary><code>usermod</code>: add user to sudoers</summary>
+
+```bash
+$ sudo usermod -a -G sudo username
+```
+</details>
+</div></div>
