@@ -398,9 +398,9 @@ I can't use Markdown tables because the content is too complex 😭, it may the 
 <td><span>This is</span><br><span>on 2 lines</span></td>
 </tr>
 
-<!-- sr -->
+<!-- hr -->
 <tr>
-<td><kbd>sr</kbd></td>
+<td><kbd>hr</kbd></td>
 <td>Horizontal separator</td>
 <td></td>
 <td><code>&lt;hr></code></td>
