@@ -5,17 +5,17 @@
 
 ![Game engine](images/architecture.png)
 </div>
-<div class="col-md-6 align-self-center">
+<div class="col-md-7 align-self-center">
 
 I found this picture a while back on [envato-tuts+ / Game Development](https://gamedevelopment.tutsplus.com/). This is quite easy to understand that a **game engine** will deal for you about a lot of things related to the tech/hardware <small>(sound, io, graphics)</small> and let you focus on your game <small>(quests, inventory, levels, ...)</small>.
 
 Picking a game engine is usually a choice based on
 
-* The supported platforms for the released game 🧐
+* The targeted platforms for your game 🧐
 * If the team know about this game engine 😎
-* If this game engine is proving most of the features you want 🚀
+* If this game engine is providing most of the features you want 🚀
 * If the price, and/or the license is matching your needs ✨
-* If it is documented, easy to learn, and you got great support ✨
+* If it is documented, easy to learn, and you got great support (forums...) ✨
 </div>
 </div>
 
