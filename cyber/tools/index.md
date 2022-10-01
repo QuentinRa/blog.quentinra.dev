@@ -4,20 +4,6 @@ This is a list of every tool, repository, or program that you may use across eve
 
 <hr class="sl">
 
-## Bruteforce - useful repository
-
-The [SecLists GitHub Repository](https://github.com/danielmiessler/SecLists/) contains useful lists of usernames/passwords, payloads, urls, ...
-
-<hr class="sl">
-
-## Looking for info about exploits
-
-* [exploit-db.com](https://www.exploit-db.com/), and the command [searchsploit](https://github.com/offensive-security/exploitdb).
-* [cve.mitre.org](https://cve.mitre.org/cve/), and [their new website: cve.org](https://www.cve.org/)
-* [attackerkb.com](https://attackerkb.com/)
-
-<hr class="sr">
-
 ## BurpSuite
 
 ![Usage: Intercept, and edit requests](https://img.shields.io/badge/usage-Intercept,%20and%20edit%20requests-ffd700)
@@ -53,7 +39,7 @@ Start the attack. If a response is different from others, then it should be wort
 
 </details>
 
-<hr class="sl">
+<hr class="sr">
 
 ## wfuzz
 
@@ -109,7 +95,7 @@ You got `l` for lines, `-w` for words, `h` for characters, `c` for HTTP code. Yo
 </details>
 </details>
 
-<hr class="sr">
+<hr class="sl">
 
 ## gobuster
 
@@ -130,7 +116,7 @@ gobuster dir -u 127.0.0.1 -w wordlist.txt -w php, html
 # 127.0.0.1/toto.html
 ```
 
-<hr class="sl">
+<hr class="sr">
 
 ## SQLMap
 
@@ -168,7 +154,7 @@ When starting the command, you will have to do some choices.
 * "GET xxx is vulnerable" (resp. POST): you should answer yes if you want to exploit the vulnerable parameter
 * [SQLMap CheatSheet](https://www.security-sleuth.com/sleuth-blog/2017/1/3/sqlmap-cheat-sheet) (external)
 
-<hr class="sr">
+<hr class="sl">
 
 ## enum4linux
 
@@ -186,7 +172,7 @@ $ ./enum4linux.pl <options> <ip>
 # -v : verbose
 ```
 
-<hr class="sl">
+<hr class="sr">
 
 ## Metasploit (metasploit-framework)
 

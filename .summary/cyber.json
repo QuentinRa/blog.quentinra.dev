@@ -14,6 +14,12 @@
         "name": "Tools",
         "desc": "A list of tools that you may use  while practicing cybersecurity.",
         "icon": "<i class=\"bi bi-hammer\"></i>"
+      },
+      {
+        "tag": "tools/links/index.md",
+        "name": "Handful websites",
+        "desc": "A list of useful website that you may use while learning, or practicing cybersecurity.",
+        "icon": null
       }
     ],
     "Attacks": [
