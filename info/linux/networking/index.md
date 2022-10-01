@@ -99,28 +99,30 @@ $ ss -u
 
 ## x
 
-<div class="row row-cols-md-3 mt-4"><div>
-<details class="details-e" open>
-<summary><code>hostname</code>: show hostname</summary>
+<div class="row row-cols-md-2 mt-4"><div>
+<details class="details-e">
+<summary><code>whois</code>: show data about IP</summary>
 
 ```bash
-$
+$ whois google.fr
+$ whois 8.8.8.8
 ```
 </details>
 </div><div>
-<details class="details-e" open>
-<summary><code>xxx</code>: xxx</summary>
+<details class="details-e">
+<summary><code>nc/ncat/netcat</code>: utility to open connections</summary>
+
+If you want to be a server, you can pick a port, and listen to find
 
 ```bash
-$
+$ netcat localhost 33666 -l
 ```
-</details>
-</div><div>
-<details class="details-e" open>
-<summary><code>xxx</code>: xxx</summary>
+
+If you are a client, you can connect to a server, and send messages. The server will see them, along with any other client.
 
 ```bash
-$
+$ netcat localhost 33666
 ```
+
 </details>
 </div></div>
