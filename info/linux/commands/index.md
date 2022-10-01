@@ -480,7 +480,7 @@ $ useradd username -g usergroup -b custom/path/to/home -m
 <summary><code>groupadd</code>: add a group</summary>
 
 ```bash
-$ groupadd name
+$ groupadd group_name
 ```
 </details>
 </div><div>
@@ -492,6 +492,34 @@ Change the password of the current user.
 
 ```bash
 $ passwd
+```
+</details>
+</div></div>
+
+<div class="row row-cols-md-3"><div>
+<details class="details-e">
+<summary><code>deluser</code>: delete a user</summary>
+
+```bash
+$ deluser username
+```
+</details>
+</div><div>
+
+<details class="details-e">
+<summary><code>delgroup</code>: delete a group</summary>
+
+```bash
+$ delgroup group_name
+```
+</details>
+</div><div>
+
+<details class="details-e">
+<summary><code>su</code>: change current user</summary>
+
+```bash
+$ su root
 ```
 </details>
 </div></div>
