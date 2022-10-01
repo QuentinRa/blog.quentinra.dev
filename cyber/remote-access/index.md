@@ -53,3 +53,11 @@ This is just random notes for now, feel free to improve it.
 
 Then simply do `chmod +x LinEnum.sh`, and `./LinEnum.sh`.
 </details>
+
+<details class="details-e">
+<summary>Step cleanup</summary>
+
+* `/var/log/auth.log`: ssh logs
+* `/var/log/syslog`: firewall logs
+* `/var/log/service`: "service" logs (ex: apache)
+</details>
