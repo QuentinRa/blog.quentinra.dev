@@ -162,6 +162,49 @@ If you are a client, you can connect to a server, and send messages. The server 
 ```bash
 $ netcat localhost 33666
 ```
+</details>
+</div></div>
 
+<hr class="sl">
+
+## Monitoring
+
+<details class="details-e mt-4">
+<summary><code>tcpdump</code>: monitor network</summary>
+<div class="row row-cols-md-2"><div>
+
+* `-i interface` : interface à écouter
+* `-e`: affiche l’entête de la requête
+* `-n`: affiche les noms plutôt que les adresses
+* `-l`: copy results in a buffer (`tcpdump -l | tee file`)
+* `-o`: no optimisations (listen take a lot of resources)
+* `-F`: read from a phile
+* `-v` et `-vv`: show more, or even more verbosity
+* `-t`: do not show time
+* `host name_or_address`: listen only one host, you can add other hots with `AND host ...`
+
+</div><div>
+
+No examples yet.
+</div></div>
+</details>
+
+<div class="row row-cols-md-2"><div>
+<details class="details-e">
+<summary><code>tshark</code>: similar to tcpdump</summary>
+
+* `-f "filter"`: see [wireshark capture filters](https://gitlab.com/wireshark/wireshark/-/wikis/CaptureFilters)
+* `-F file`: read from a file
+
+```bash
+$ tshark -i eth0 -f "host some_ip"
+```
+
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>wireshark</code>: same as tcpdump</summary>
+
+Just install, and start the software, everything should be fine.
 </details>
 </div></div>

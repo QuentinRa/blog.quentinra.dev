@@ -6,6 +6,7 @@ alias
 <kbd>head file.txt</kbd> (see the first 10 lines)
 <kbd>tail file.txt</kbd> (see the last 10 lines)
 gcc
+tee
 
 can use put, get, pwd... with FTP.
 # ls <folder>: list files of <folder>
