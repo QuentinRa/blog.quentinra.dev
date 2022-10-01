@@ -102,9 +102,28 @@ PS \> Set-Location ~
 
 <hr class="sr">
 
-## ...
+## Text utilities
 
-...
+<div class="row row-cols-md-2 mt-4"><div>
+<details class="details-e">
+<summary><code>Measure-Object</code>: count the letters/words/... (<code>wc</code>)</summary>
+
+```powershell
+PS \> Get-Content path_to_some_file  | Measure-Object
+PS \> Get-Content path_to_some_file  | Measure-Object -Word
+PS \> Get-Content path_to_some_file  | Measure-Object -Line -Character -Word
+PS \> Get-Content path_to_some_file  | Measure-Object -Minimum -Maximum
+```
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>Select-String</code>: find a motif in a tex (<code>grep</code>)</summary>
+
+```powershell
+PS \> Select-String -Pattern 'some_pattern' -Path path_to_some_file
+```
+</details>
+</div></div>
 
 <hr class="sl">
 
