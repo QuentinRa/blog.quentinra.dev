@@ -208,3 +208,21 @@ $ tshark -i eth0 -f "host some_ip"
 Just install, and start the software, everything should be fine.
 </details>
 </div></div>
+
+<hr class="sl">
+
+## ARP, and network filters
+
+<div class="row row-cols-md-2"><div>
+<details class="details-e">
+<summary><code>arp</code>: show ARP cache</summary>
+
+Obsolete. See `ip n`.
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>route</code>: show routing table</summary>
+
+Obsolete. See `ip r`.
+</details>
+</div></div>
