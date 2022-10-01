@@ -25,19 +25,19 @@
     "Attacks": [
       {
         "tag": "server",
-        "name": "Server Security",
+        "name": "Server exploits",
         "desc": "Some knowledge related to how hackers can exploit your server, along with notes to prevent such things.",
         "icon": null
       },
       {
         "tag": "website",
-        "name": "Website Security",
+        "name": "Website exploits",
         "desc": "Some knowledge related to how hackers can exploit your website, along with notes to prevent such things.",
         "icon": null
       },
       {
         "tag": "database",
-        "name": "Database Security",
+        "name": "Database exploits",
         "desc": "Some knowledge related to how hackers can exploit your database, along with notes to prevent such things.",
         "icon": null
       },

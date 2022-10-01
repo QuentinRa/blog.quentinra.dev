@@ -20,7 +20,7 @@ You may want to find what services a server is providing, such as webserver, tel
 
 There is a more complete [list of vulnerable ports here](). Usually, default port are changed, and sometimes they add a firewall (OVH firewall, [pfsense](https://www.pfsense.org/)... Allowing only some IP to use this port...), along with some tools ([Snort](https://www.snort.org/), [Suricata](https://suricata.io/)...) to detect tentative of mapping the ports of the server.
 
-* <i class="bi bi-info-square" style="background:#7cfc00"></i> Use nmap to map the ports of the server
+* <i class="bi bi-info-square" style="background:#7cfc00"></i> Use `nmap` to map the ports of the server
 
 <hr class="sr">
 
