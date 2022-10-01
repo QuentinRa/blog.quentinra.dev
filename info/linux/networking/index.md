@@ -170,7 +170,7 @@ $ netcat localhost 33666
 ## Monitoring
 
 <details class="details-e mt-4">
-<summary><code>tcpdump</code>: monitor network</summary>
+<summary><code>tcpdump</code>: monitor network (root required)</summary>
 <div class="row row-cols-md-2"><div>
 
 * `-i interface` : interface à écouter
@@ -212,6 +212,35 @@ Just install, and start the software, everything should be fine.
 <hr class="sl">
 
 ## ARP, and network filters
+
+<details class="details-e mt-4">
+<summary><code>iptables</code>: network filters (root required)</summary>
+<div class="row row-cols-md-2"><div>
+
+* `-t table`: FILTER by default
+* `-A chain`: add a rule at the end of the chain
+* `-I chain`: add a rule at the start of the chain
+* `-D chain`: supprime une règle
+* `-o interface`: sort par l’interface
+* `-i interface`: entre par l’interface
+* `-j action`: chain or
+  * `SNAT/DNAT`: translation source/destination
+  * `ACCEPT`: allow
+  * `DENY/DROP`: deny without notifying sender
+  * `REJECT`: deny, but notify sender
+* `-s ip`: source <small>(separated by colons)</small>
+* `-d ip`: destination (s<small>(separated by colons)</small>
+* `--sport port`: source port
+* `--dport port`: destination port
+* `--to ip`: if SNAT/DNAT, the new source/destination
+* `-p protocol`: which protocol
+
+**Note**: you can use `!` (NOT), such as `-s !127.0.0.1` meaning every message not having "127.0.0.1" as source will be filtered.
+</div><div>
+
+No examples yet.
+</div></div>
+</details>
 
 <div class="row row-cols-md-2"><div>
 <details class="details-e">

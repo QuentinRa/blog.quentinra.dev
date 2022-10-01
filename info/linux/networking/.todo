@@ -2,3 +2,5 @@
 - Zmap
 - netstat -tulpn
 - dig @serveur demande si ce serveur connait adresse/nom
+- traceroute
+- tracepath
