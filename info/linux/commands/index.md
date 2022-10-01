@@ -366,3 +366,40 @@ $ chown n2:m toto.txt
 You may use `-R` (recursive), and `-h` (do not deference symbolic links).
 </details>
 </div></div>
+
+<hr class="sl">
+
+## Search
+
+<div class="row row-cols-md-3"><div>
+
+<details class="details-e">
+<summary><code>locate</code>: search in a file database</summary>
+
+The local database must be updated manually `sudo updatedb`.
+
+```bash
+$ locate find
+```
+</details>
+</div><div>
+
+<details class="details-e">
+<summary><code>which</code>: first matching command</summary>
+
+```bash
+$ which find
+/usr/bin/find
+```
+</details>
+</div><div>
+
+<details class="details-e">
+<summary><code>whereis</code>: search in PATH</summary>
+
+```bash
+$ whereis ls
+ls: /bin/ls /usr/share/man/man1/ls.1.gz
+```
+</details>
+</div></div>
