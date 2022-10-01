@@ -371,7 +371,7 @@ You may use `-R` (recursive), and `-h` (do not deference symbolic links).
 
 ## Search
 
-<details class="details-e" open>
+<details class="details-e">
 <summary><code>find</code>: search for files</summary>
 <div class="row row-cols-md-2"><div>
 
@@ -429,7 +429,6 @@ $ find / -name "bin" 2> /dev/null
 </details>
 
 <div class="row row-cols-md-3"><div>
-
 <details class="details-e">
 <summary><code>locate</code>: search in a file database</summary>
 
@@ -457,6 +456,42 @@ $ which find
 ```bash
 $ whereis ls
 ls: /bin/ls /usr/share/man/man1/ls.1.gz
+```
+</details>
+</div></div>
+
+<hr class="sr">
+
+## Users, and groups
+
+<div class="row row-cols-md-3"><div>
+<details class="details-e">
+<summary><code>useradd</code>: add a user</summary>
+
+```bash
+$ useradd username
+# -m = create home
+$ useradd username -g usergroup -b custom/path/to/home -m
+```
+</details>
+</div><div>
+
+<details class="details-e">
+<summary><code>groupadd</code>: add a group</summary>
+
+```bash
+$ groupadd name
+```
+</details>
+</div><div>
+
+<details class="details-e">
+<summary><code>passwd</code>: set password</summary>
+
+Change the password of the current user.
+
+```bash
+$ passwd
 ```
 </details>
 </div></div>

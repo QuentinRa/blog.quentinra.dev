@@ -1,8 +1,12 @@
 https://www.shell-tips.com/
 
 man sudo_root
-
+ls *.{jpg,gif,png}
+ls *.h
 echo -e "DISPLAY=:0.0\nexport DISPLAY" >> ~/.bashrc
+
+no echo (password)
+quotes are not mandatory / POSIX? (find)
 
 https://bootstrappers.umassmed.edu/bootstrappers-courses/courses/unix/index.html
 https://bootstrappers.umassmed.edu/bootstrappers-courses/courses/bedtools/index.html
