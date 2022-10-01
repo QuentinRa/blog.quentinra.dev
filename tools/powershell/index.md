@@ -2,11 +2,17 @@
 
 This is a program abstracting .Net (Common Language Runtime (CLR)), allowing us to run commands called cmdlets.
 
+> **Notes**
+> 
+> * commands (and many things) are usually non-case sensitive (a=A)
+> * **You can use some Linux commands on Windows**, as long as there is an alias to a Windows commands!
+> * as in Linux terminals, you only have to use quotes when using specials characters
+
 <hr class="sl">
 
 ## Basic commands
 
-<details class="details-e mt-4" open>
+<details class="details-e mt-4">
 <summary><code>Get-ChildItem</code>: list directory content (<code>ls</code>)</summary>
 <div class="row row-cols-md-2 mx-0"><div>
 
@@ -54,7 +60,7 @@ PS \> Get-ChildItem -Directory
 
 <div class="row row-cols-md-2"><div>
 <details class="details-e">
-<summary><code>Get-Content</code>: basically <code>cat</code></summary>
+<summary><code>Get-Content</code>: print the content of a file (<code>cat</code>)</summary>
 
 ```powershell
 PS \> Get-Content file.txt
@@ -62,7 +68,7 @@ PS \> Get-Content file.txt
 </details>
 </div><div>
 <details class="details-e">
-<summary><code>Set-Location</code>: basically <code>cd</code></summary>
+<summary><code>Set-Location</code>: move to another folder (<code>cd</code>)</summary>
 
 ```powershell
 PS \> Set-Location "C:\"
