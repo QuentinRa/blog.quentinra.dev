@@ -61,3 +61,18 @@ Then simply do `chmod +x LinEnum.sh`, and `./LinEnum.sh`.
 * `/var/log/syslog`: firewall logs
 * `/var/log/service`: "service" logs (ex: apache)
 </details>
+
+<hr class="sl">
+
+## SUID exploits
+
+SUID is a permission that make created by user, executed with the permissions of its creator. It means that a script created by root, will be having root privilege when being executed.
+
+You should first find a vulnerable command,
+
+```bash
+$ find / -perm -u=s -type f 2>/dev/null
+```
+
+Then try to exploit it. The website [GTFOBins
+](https://gtfobins.github.io/) is listing a lot of knowledge about what you can do with a lot of commands.
