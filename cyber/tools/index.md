@@ -8,6 +8,14 @@ This is a list of every tool, repository, or program that you may use across eve
 
 The [SecLists GitHub Repository](https://github.com/danielmiessler/SecLists/) contains useful lists of usernames/passwords, payloads, urls, ...
 
+<hr class="sl">
+
+## Looking for info about exploits
+
+* [exploit-db.com](https://www.exploit-db.com/), and the command [searchsploit](https://github.com/offensive-security/exploitdb).
+* [cve.mitre.org](https://cve.mitre.org/cve/), and [their new website: cve.org](https://www.cve.org/)
+* [attackerkb.com](https://attackerkb.com/)
+
 <hr class="sr">
 
 ## BurpSuite
