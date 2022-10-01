@@ -17,7 +17,7 @@ can use put, get, pwd... with FTP.
 
 .bashrc
 [[]] (()) - NOT POSIX
-missing some texas_res content (dev essentials...)
+missing a lot of texas_res content (dev essentials...)
 
 man sudo_root
 ls *.{jpg,gif,png}
