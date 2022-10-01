@@ -100,8 +100,21 @@ PS \> Set-Location ~
 </details>
 </div></div>
 
+<hr class="sr">
+
+## ...
+
+...
+
 <hr class="sl">
 
-## Other notes
+## Other commands
+
+* `Get-FileHash`: return the hash of a file
+  * `-Algorithm`: specify the algorithm
+
+<hr class="sr">
+
+## Notes
 
 You can find new cmdlets that you will have to download first on Microsoft official website - [Sysinternals Miscellaneous Utilities](https://learn.microsoft.com/en-us/sysinternals/downloads/misc-utilities).
