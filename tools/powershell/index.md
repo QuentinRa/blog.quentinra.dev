@@ -13,6 +13,26 @@ This is a program abstracting .Net (Common Language Runtime (CLR)), allowing us 
 ## Basic commands
 
 <details class="details-e mt-4">
+<summary><code>Get-Help</code></summary>
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+The most useful command on Linux is `man`, and it's the same on Windows, with `Get-Help`.
+
+```powershell
+PS \> Get-Help Get-ChildItem
+```
+</div><div>
+
+If you "man" is quite empty, it's because you have to update it. Open a Powershell as administrator, and run Update-Help to update your help pages.
+
+```powershell
+PS \> Update-Help
+```
+</div></div>
+</details>
+
+<details class="details-e">
 <summary><code>Get-ChildItem</code>: list directory content (<code>ls</code>)</summary>
 <div class="row row-cols-md-2 mx-0"><div>
 
