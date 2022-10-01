@@ -97,9 +97,48 @@ $ ss -u
 
 <hr class="sr">
 
-## x
+## Interact with the outside
 
 <div class="row row-cols-md-2 mt-4"><div>
+<details class="details-e">
+<summary><code>ping</code>: send a signal</summary>
+
+```bash
+$ ping google.fr
+$ ping 8.8.8.8
+```
+
+Do "x" pings
+
+```bash
+$ ping -c x google.fr
+```
+
+Other options
+
+* `-b ip`: ping all address in the ip range
+* `-t ttl`: set the time to live of the ping
+* `-s size`: size of the ping
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>dig</code>: ip to name, name to ip</summary>
+
+```bash
+$ dig google.fr
+$ dig -x 8.8.8.8
+```
+
+We can explicitly ask for some data by using the option `-t` with one of the following
+
+* `NS`: nameserver
+* `A`: IPV4
+* `AAAA`: IPV6
+* `MS`: mail server
+</details>
+</div></div>
+
+<div class="row row-cols-md-2"><div>
 <details class="details-e">
 <summary><code>whois</code>: show data about IP</summary>
 

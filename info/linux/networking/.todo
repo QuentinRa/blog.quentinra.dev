@@ -1,3 +1,4 @@
 - nmap google.fr -p 0-65535 -O -A (port fait quoi)
 - Zmap
 - netstat -tulpn
+- dig @serveur demande si ce serveur connait adresse/nom
