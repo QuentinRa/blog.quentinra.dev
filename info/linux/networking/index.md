@@ -165,7 +165,7 @@ $ netcat localhost 33666
 </details>
 </div></div>
 
-<details class="details-e" open>
+<details class="details-e">
 <summary><code>nmap</code>: scan a machine to get some data (ports...)</summary>
 <div class="row row-cols-md-2"><div>
 
@@ -191,6 +191,7 @@ $ nmap localhost -sS
 $ nmap localhost -sT
 ```
 
+You can execute a lua script with `--script=lua_script`, see [nsedoc](https://nmap.org/nsedoc/) ([nsedoc scripts](https://nmap.org/nsedoc/scripts/): simply give the name of the script to execute).
 </div><div>
 
 Only try to map some ports
