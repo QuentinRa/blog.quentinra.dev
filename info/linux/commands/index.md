@@ -371,6 +371,30 @@ You may use `-R` (recursive), and `-h` (do not deference symbolic links).
 
 ## Search
 
+<details class="details-e" open>
+<summary><code>find</code>: search for files</summary>
+<div class="row row-cols-md-2"><div>
+
+Used to find files, usually after applying filters, while you may even execute some code on the result.
+
+<details class="details-e">
+<summary>Not frequently used options</summary>
+
+* `-mtime n`: changed in the last `n*24` hours
+* `-amin n`: accessed in the last `n` minutes
+* `-cmin n`: not changed in the last `n` minutes
+* `-newer file`: modified after `file`
+* `-size vu`: `v` is the value, `u` is the unit (ex: `4b` for 4 bytes)
+* `-perms 0744`: files matching the given perms
+</details>
+
+
+</div><div>
+
+...
+</div></div>
+</details>
+
 <div class="row row-cols-md-3"><div>
 
 <details class="details-e">
