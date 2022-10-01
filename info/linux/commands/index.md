@@ -400,11 +400,31 @@ The starting point is `find folder`, which explore recursively, and list every f
 * `-size vu`: `v` is the value, `u` is the unit (ex: `4b` for 4 bytes)
 * `-perms 0744`: files matching the given perms
 </details>
-
-
 </div><div>
 
-...
+Find every file named "ocaml" <small>(see the latest example to fix "errors")</small>
+
+```bash
+$ find / -name "ocaml" -type f
+```
+
+Find every folder called `bin` <small>(see the latest example to fix "errors")</small>
+
+```bash
+$ find / -name "bin" -type d
+```
+
+Execute the command `file` on every file called `hello_world` in the current directory.
+
+```bash
+$ find . -name "hello_world" -type f -maxdepth 1 -exec file '{}' \;
+```
+
+Get rid of errors when using find as find is trying to read directories without having sufficient permissions.
+
+```bash
+$ find / -name "bin" 2> /dev/null
+```
 </div></div>
 </details>
 
