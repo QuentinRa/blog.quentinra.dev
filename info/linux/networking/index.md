@@ -203,9 +203,20 @@ $ tshark -i eth0 -f "host some_ip"
 </details>
 </div><div>
 <details class="details-e">
-<summary><code>wireshark</code>: same as tcpdump</summary>
+<summary><code>wireshark</code>: same as tcpdump, but with GUI</summary>
 
-Just install, and start the software, everything should be fine.
+See [wireshark](https://www.wireshark.org/download.html).
+
+You can enter theses in the main bar to filter entries
+
+* `ip.src == some_ip`, or `ip.dest == some_ip`
+* `tcp.port == some_port`, or `udp.port == some_port`
+* `http.request.method == GET`,or `http.request.method == POST`, or ...
+* You can use `&&` (logical AND), `||` (logical OR), `!=` (different)
+
+Once you find something interesting, right-click on it > Follow > Flux, and pick a protocol.
+
+Use File > Export > HTTP to GET download files.
 </details>
 </div></div>
 
@@ -235,7 +246,7 @@ Just install, and start the software, everything should be fine.
 * `--to ip`: if SNAT/DNAT, the new source/destination
 * `-p protocol`: which protocol
 
-**Note**: you can use `!` (NOT), such as `-s !127.0.0.1` meaning every message not having "127.0.0.1" as source will be filtered.
+**Note**: you can use `!` (NOT), such as `-s !127.0.0.1` meaning every packet not having "127.0.0.1" as source will be filtered.
 </div><div>
 
 No examples yet.
