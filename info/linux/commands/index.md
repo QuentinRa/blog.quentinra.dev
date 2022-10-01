@@ -81,7 +81,7 @@ $ man 1 man
 
 ## Basics
 
-<details class="details-e">
+<details class="details-e mt-4">
 <summary><code>ls</code>: list all files in a directory</summary>
 <div class="row row-cols-md-2"><div>
 
@@ -371,7 +371,7 @@ You may use `-R` (recursive), and `-h` (do not deference symbolic links).
 
 ## Search
 
-<details class="details-e">
+<details class="details-e mt-4">
 <summary><code>find</code>: search for files</summary>
 <div class="row row-cols-md-2"><div>
 
@@ -464,7 +464,7 @@ ls: /bin/ls /usr/share/man/man1/ls.1.gz
 
 ## Users, and groups
 
-<div class="row row-cols-md-3"><div>
+<div class="row row-cols-md-3 mt-4"><div>
 <details class="details-e">
 <summary><code>useradd</code>: add a user</summary>
 
