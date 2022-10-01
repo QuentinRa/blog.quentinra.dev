@@ -46,6 +46,12 @@
         "icon": "<i class=\"bi bi-newspaper\"></i>"
       },
       {
+        "tag": "powershell",
+        "name": "Powershell",
+        "desc": "This is a program abstracting .Net (Common Language Runtime (CLR)), allowing us to run commands called cmdlets.",
+        "icon": "<i class=\"bi bi-newspaper\"></i>"
+      },
+      {
         "tag": "inno-setup",
         "name": "Inno Setup",
         "desc": "A tool to create Windows installers, with an uninstaller and a modern interface.",
