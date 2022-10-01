@@ -1,5 +1,9 @@
 https://www.shell-tips.com/
 
+.bashrc
+[[]] (()) - NOT POSIX
+missing some texas_res content (dev essentials...)
+
 man sudo_root
 ls *.{jpg,gif,png}
 ls *.h
