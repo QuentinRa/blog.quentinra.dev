@@ -21,7 +21,7 @@ bash > some_command_at_least_work_in_bash
 ```
 
 <details class="details-e">
-<summary>Practice time</summary>
+<summary>Notes</summary>
 
 * Open a terminal
   * Look for "Terminal" in your application

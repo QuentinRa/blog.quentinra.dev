@@ -5,6 +5,7 @@ apropos
 alias
 <kbd>head file.txt</kbd> (see the first 10 lines)
 <kbd>tail file.txt</kbd> (see the last 10 lines)
+gcc
 
 can use put, get, pwd... with FTP.
 # ls <folder>: list files of <folder>
@@ -12,3 +13,15 @@ can use put, get, pwd... with FTP.
 # put <src> <dest>: put <src> (local) to <dest> (server)
 # get <src> <dest>: get <src> (server), and save it to <dest> (local)
 # pwd: get the path of the working directory
+
+.bashrc
+[[]] (()) - NOT POSIX
+missing some texas_res content (dev essentials...)
+
+man sudo_root
+ls *.{jpg,gif,png}
+ls *.h
+echo -e "DISPLAY=:0.0\nexport DISPLAY" >> ~/.bashrc
+
+sudo update-alternatives --config php
+apt install zip unzip php7.1-zip php7.1-mbstring php7.1-curl php7.1-dom

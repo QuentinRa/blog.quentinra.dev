@@ -1,35 +1,10 @@
 https://www.shell-tips.com/
-
-.bashrc
-[[]] (()) - NOT POSIX
-missing some texas_res content (dev essentials...)
-
-man sudo_root
-ls *.{jpg,gif,png}
-ls *.h
-echo -e "DISPLAY=:0.0\nexport DISPLAY" >> ~/.bashrc
-
-no echo (password)
-quotes are not mandatory / POSIX? (find)
-
 https://bootstrappers.umassmed.edu/bootstrappers-courses/courses/unix/index.html
 https://bootstrappers.umassmed.edu/bootstrappers-courses/courses/bedtools/index.html
-
 https://www.geeksforgeeks.org/apropos-command-in-linux-with-examples/
-
-- nmap google.fr -p 0-65535 -O -A (port fait quoi)
-- Zmap
-- netstat -tulpn
-- sudo update-alternatives --config php
-- apt install zip unzip php7.1-zip php7.1-mbstring php7.1-curl php7.1-dom
-
 https://explainshell.com/
-
 https://github.com/hakluke/how-to-exit-vim
 https://github.com/caseykneale/VIMKiller
-
 https://mobaxterm.mobatek.net/
-
 https://github.com/copy/v86
-
 https://levelup.gitconnected.com/all-the-shortcuts-you-need-to-get-faster-in-the-terminal-ce91b91ecf91
