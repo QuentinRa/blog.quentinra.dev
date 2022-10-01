@@ -165,6 +165,58 @@ $ netcat localhost 33666
 </details>
 </div></div>
 
+<details class="details-e" open>
+<summary><code>nmap</code>: scan a machine to get some data (ports...)</summary>
+<div class="row row-cols-md-2"><div>
+
+List targets to scan
+
+```bash
+$ nmap 127.0.0.1 -sL
+$ nmap localhost -sL
+$ nmap google.fr -sL
+```
+
+Start a ping-scan (do not scan ports)
+
+```bash
+$ nmap localhost -sn
+```
+
+Pick a protocol: UDP (U), TCP(S, or T)
+
+```bash
+$ nmap localhost -sU # root
+$ nmap localhost -sS
+$ nmap localhost -sT
+```
+
+</div><div>
+
+Only try to map some ports
+
+```bash
+$ nmap localhost -p 22
+$ nmap localhost -p 22,23
+$ nmap localhost -p 0-65535
+```
+
+To reduce the risk of being detected, you can set some timing starting 0=passive=slow, and up to 5=aggressive=fast.
+
+```bash
+$ nmap localhost -p 22 -T0
+```
+
+Detect OS (-o), OS+Version (-A), or all information (-v).
+
+```bash
+$ nmap localhost -O
+$ nmap localhost -A
+$ nmap localhost -v
+```
+</div></div>
+</details>
+
 <hr class="sl">
 
 ## Monitoring
