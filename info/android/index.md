@@ -70,6 +70,7 @@ fun noTO() : Any {}
 * Everything is a `View`
   * Display a text: `TextView`
   * Display an image: `ImageView`
+    * scaleType:centerCrop scale without distorting (9patches)
 * Views can be clickable/editable/...
 * Views are arranged by `ViewGroup`.
   * **ConstraintLayout**: "arrange in a flexible way"
@@ -80,8 +81,27 @@ Layout are edited using the layout editor. `res > layout > activity_main.xml`. U
 * Right: BluePrint view, everything is show on it, included hidden elements.
 * Palette: list of Views
 * Component tree: structure of the screen ("lists all the views of your screen")
+  * The higher ones are rendered below the lower ones
 * Attributes: edit some Views' properties
 
 Returning on the view
 
 * To place an element in a **ConstraintLayout**, you need to add constraints to it.
+* If you give layout_width+height "0dp", android studio will match the constraint. If they are "0", then it basically means "fill".
+
+> * You got options to do things faster using right-click.
+> * There is a search bar (ex: for attributes)
+
+<hr class="sr">
+
+## Resources
+
+On the left side, or in View > Tools Windows, you got the "Resources Manager". You can use it.
+
+**Import image**
+
+* Go to Drawables
+* Click on "+"
+* Import drawables
+* The new file should be in the list
+* You can drag, and drop it in the design view (or select it when creating a new imageview)
