@@ -17,8 +17,8 @@
       },
       {
         "tag": "tools/links/index.md",
-        "name": "Handful websites",
-        "desc": "A list of useful website that you may use while learning, or practicing cybersecurity.",
+        "name": "Handful resources",
+        "desc": "A list of useful resources (ex: website, gits...) that you may use while learning, or practicing cybersecurity.",
         "icon": null
       }
     ],
