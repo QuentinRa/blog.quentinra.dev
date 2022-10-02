@@ -39,13 +39,6 @@ software to look for breaches.
     * some companies are sharing the malware used
     to attack them to help others defend themselves
 
-And you may check here if you got hacked
-
-* [have i been pwned?](https://haveibeenpwned.com/)
-* [vigilante](https://vigilante.pw/) (reported down as of 08-2021)
-* [vigilante GitHub](https://github.com/wedataintelligence/Vigilante.pw/blob/master/data.csv)
-* [cybernews check](https://cybernews.com/personal-data-leak-check/)
-
 Also, a lot of organizations are offering bounties for breaches
 to persons like you and me. I think it's quite interesting
 to look a what kind of breaches got reported like

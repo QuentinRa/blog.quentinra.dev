@@ -20,11 +20,20 @@ A list of useful resources (ex: website, gits...) that you may use while learnin
 
 <hr class="sl">
 
+## Did you credentials leak?
+
+* [have i been pwned?](https://haveibeenpwned.com/)
+* [vigilante](https://vigilante.pw/) (reported down as of 08-2021 - the new version may not be legit)
+* [vigilante GitHub](https://github.com/wedataintelligence/Vigilante.pw/blob/master/data.csv)
+* [cybernews check](https://cybernews.com/personal-data-leak-check/)
+
+<hr class="sr">
+
 ## Bruteforce  (repository)
 
 The [SecLists GitHub Repository](https://github.com/danielmiessler/SecLists/) contains useful lists of usernames/passwords, payloads, urls, ...
 
-<hr class="sr">
+<hr class="sl">
 
 ## Exploits / CVE lookup
 
