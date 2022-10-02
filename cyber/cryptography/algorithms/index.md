@@ -55,7 +55,10 @@ On the same idea as the caesar cipher, the **substitution cipher** is associatin
 <details class="details-e">
 <summary>Both are vulnerable to an entropy attack</summary>
 
-In any language, there are letters, 2-letters long words, 3-letters long words, and so on, that are statistically very likely to be in any text. In French/English, the most common letter is `e`, while there are a lot of common words such as `de`, `du`, `le`, `la`... To find them, you need to analyze the frequence of letters/words.
+In any language, there are letters, 2-letters long words, 3-letters long words, and so on, that are statistically very likely to be in any text. In French/English, the most common letter is `e`, while there are a lot of common words such as `de`, `du`, `le`, `la`... To find them, you need to analyze the frequency of letters/words.
+
+* [Characters frequency french](https://www.sttmedia.com/characterfrequency-french)
+* [Syllables frequency french](https://www.sttmedia.com/syllablefrequency-french)
 </details>
 
 <details class="details-e">
