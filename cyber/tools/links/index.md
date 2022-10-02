@@ -65,3 +65,12 @@ You may want to look for other persons having the same  username, or searching w
 * [sherlock](https://sherlock-project.github.io/) and [tutorial](https://www.geeksforgeeks.org/sherlock-hunt-username-on-social-media-kali-linux-tool/)
 * [maltego](https://www.maltego.com/) and [help](https://en.kali.tools/?p=24)
 * [spiderfoot](https://www.spiderfoot.net/) and [help](https://www.hackingloops.com/spiderfoot/)
+
+<hr class="sl">
+
+## Bounties
+
+Some companies are giving bounties to ethical hackers that detected exploits in their infrastructures.
+
+* [bounty.github.com](https://bounty.github.com/) (GitHub)
+* [huntr.dev](https://huntr.dev/) (open-source repositories)
