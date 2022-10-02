@@ -69,6 +69,19 @@ fun noTO() : Any {}
 * What you see on the screen (text, buttons...)
 * Everything is a `View`
   * Display a text: `TextView`
+  * Display an image: `ImageView`
 * Views can be clickable/editable/...
 * Views are arranged by `ViewGroup`.
   * **ConstraintLayout**: "arrange in a flexible way"
+
+Layout are edited using the layout editor. `res > layout > activity_main.xml`. Using the top-right buttons, you can switch between Code/Split/Design.
+
+* Left: Design view, this is basically what you will see.
+* Right: BluePrint view, everything is show on it, included hidden elements.
+* Palette: list of Views
+* Component tree: structure of the screen ("lists all the views of your screen")
+* Attributes: edit some Views' properties
+
+Returning on the view
+
+* To place an element in a **ConstraintLayout**, you need to add constraints to it.
