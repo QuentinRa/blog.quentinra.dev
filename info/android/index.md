@@ -115,6 +115,20 @@ There is a folder `values` in resources. You can add your own folder for a speci
 * a key
 * a "default" translation for this key
 
-If you create another folder "values", you will keep the key, and change the translation. In the code, you will only reference the "key".
+If you create another folder "values" (ex: `values-fr+ca/strings.xml`), you will keep the key, and change the translation. In the code, you will only reference the "key".
 
 If you created something with a "text" not localized. You can click on the "warning", then expand "Hardcoded text", and click on fix.
+
+<hr class="sl">
+
+## Accessibility
+
+* `contentDescription`: what's the purpose of this element
+* `importantForAccessibility`: if this element is just decorative, you can set it to no
+
+<hr class="sr">
+
+## Resources
+
+* [developer.android.com](https://developer.android.com/guide)
+* [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)
