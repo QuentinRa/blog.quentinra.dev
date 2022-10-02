@@ -254,13 +254,13 @@ A is sending $g^a\ (mod\ p)$ to B (resp. b for B to A). The common key for A is 
 ![Type: Asymmetric](https://img.shields.io/badge/Type-Asymmetric-7cfc00)&nbsp;&nbsp;
 ![Complexity: intermediate](https://img.shields.io/badge/Complexity-intermediate-7cfc00)
 
-This is an algorithm that is secure, the more $n$ is bigger. The arguments that must be given are $k$, and $n$. As of 2022, it's recommended that $n$ must be at least 2048 bits.
+This is an algorithm that is secure, the more $n$ is bigger. The arguments that must be given are $k$, and $n$. As of 2022, it's recommended that $n$ **must be at least 2048 bits**.
 
 * Given $n$, find two **prime numbers** $p$ and $q$, giving us $n = p * q$ <small>(which one is $p$, or which one is $q$, is up to you)</small>
 * Calculate phi(n): $\phi(n) = (p-1) * (q – 1)$
 * $k$ must be coprime with $\phi(n)$, meaning that $gcd(k,\ \phi(n)) = 1$.
   * $e = k$
-  * $d = e^{−1} \mod \phi(n)$
+  * $d = e^{−1}\ (mod\ \phi(n))$
 * **Encrypt**: $C(m, n, e) = m^e\ (mod\ n)$
 * **Decrypt**: $D(c, n, d) = c^d\ (mod\ n)$
 
@@ -293,6 +293,16 @@ You can use Bézout on $\phi(n)$, and $k$, to find $d$, and $e$
   * (17) $17^7 \mod 35 = 3$
   * (4) $4^7 \mod 35 = 4$
 </details>
+</details>
+
+<details class="details-e">
+<summary>Considerations</summary>
+
+* `k` should be at least "3"
+* `k` is usually $2^{16}+1=65537$
+* **Faulty key generation attack**: $p$, and $q$ shouldn't be too close  
+* **Timing attacks** (1995): if the hardware is know in details, then an attacker can guess $d$ based on the decryption time of several ciphers  
+
 </details>
 
 <hr class="sl">
