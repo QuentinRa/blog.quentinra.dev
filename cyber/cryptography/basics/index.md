@@ -81,9 +81,7 @@ This is called **Euler theorem** ([wiki](https://en.wikipedia.org/wiki/Euler%27s
 
 ## Modular Arithmetic (`Arithmétique modulaire`)
 
-This is a gathering of "random" topics that were taught along with this two previous ones, but there are way less important in my opinion.
-
-<details class="details-e">
+<details class="details-e mt-4">
 <summary>Greatest common divisor (<code>Plus grand diviseur commun</code>)</summary>
 
 $D(a,b)$ is the set of the common divisors between $a$ and $b$. We are calling "**greatest common divisor**" (**GCD** or `PGCD`), the greatest value of $D(a,b)$, written $GCD(a,b)$ or $a \wedge b$.
