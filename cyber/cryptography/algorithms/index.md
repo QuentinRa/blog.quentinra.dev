@@ -129,6 +129,41 @@ The operator $\oplus$ (XOR, `ou exclusif`) is basically this: $(a+b)%2$, with bo
 
 <hr class="sl">
 
+## AES
+
+![Type: Symmetric](https://img.shields.io/badge/Type-Symmetric-7cfc00)&nbsp;&nbsp;
+![Complexity: easy](https://img.shields.io/badge/Complexity-easy-7cfc00)
+
+The **Advanced Encryption Standard**, abbreviated as **AES**, is a part of the **Block ciphers** algorithms.
+
+<details class="details-e">
+<summary>Block cipher algorithms</summary>
+
+* a size of a bloc `n` bits
+* a message of `n` bits
+* a cipher of `n` bits
+* a key of `k` bits
+
+Note that because both `m`, and `c` are on `n` bits, we will basically apply a permutation of `m` to get `c` <small>(101 may become 011, same bits, different order)</small>.
+
+</details>
+
+For AES, `n` is 128 bits, and `k` is either 128, 192, or 256 bits. As a message may be bigger, or lower than `n`, we will split the message in blocs of size `n`. We are adding padding to fill the last block if needed. Each block is encoded with a different `k`.
+
+<details class="details-e">
+<summary>Electronic Code Book (ECB)</summary>
+
+This is a block cipher in which we are reusing the key. The problem is that parts of the message may have the same cipher, and we can use an entropy attack to break the cipher.
+</details>
+
+<details class="details-e">
+<summary>AES-CBC</summary>
+
+This is a block cipher in which we are reusing the key, but we are adding a parameter IV (uniq, and not inferable) to encrypt the first bloc, and we are using the cipher of the previous block, to encrypt the next one.
+</details>
+
+<hr class="sr">
+
 ## Knapsack problem (`sac-à-dos`) of Merkle-Hellman
 
 ![Type: Asymmetric](https://img.shields.io/badge/Type-Asymmetric-7cfc00)&nbsp;&nbsp;
@@ -201,7 +236,7 @@ We will pick a value $N$ greater than the sum of the values in the Knapsack, and
 
 It was cracked in polynomial time in 1984 by Adi Shamir published.
 
-<hr class="sr">
+<hr class="sl">
 
 ## Diffie–Hellman key exchange
 
@@ -212,7 +247,7 @@ A is sending a message to B. Both are agreeing on two numbers $p$ and $g$ with $
 
 A is sending $g^a\ (mod\ p)$ to B (resp. b for B to A). The common key for A is $(g^a)^b\ (mod\ p)$ and for B, it is $(g^b)^a\ (mod\ p)$. They **both** have the same number, but they do not know about the exponent of the other.
 
-<hr class="sl">
+<hr class="sr">
 
 ## Rivest–Shamir–Adleman (RSA)
 
@@ -251,7 +286,7 @@ An attacker would have a lot of prime numbers to test ($10^{497}$ for $n \approx
   * (4) $4^7 \mod 35 = 4$
 </details>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Sources
 
