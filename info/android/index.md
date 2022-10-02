@@ -105,3 +105,16 @@ On the left side, or in View > Tools Windows, you got the "Resources Manager". Y
 * Import drawables
 * The new file should be in the list
 * You can drag, and drop it in the design view (or select it when creating a new imageview)
+
+<hr class="sr">
+
+## Localization
+
+There is a folder `values` in resources. You can add your own folder for a specific case (ex: support another language). In strings.xml, you can add 
+
+* a key
+* a "default" translation for this key
+
+If you create another folder "values", you will keep the key, and change the translation. In the code, you will only reference the "key".
+
+If you created something with a "text" not localized. You can click on the "warning", then expand "Hardcoded text", and click on fix.
