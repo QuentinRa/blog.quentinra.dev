@@ -39,16 +39,6 @@ software to look for breaches.
     * some companies are sharing the malware used
     to attack them to help others defend themselves
 
-<hr class="sl">
-
-## Where can I learn?
-
-You can check these websites to improve your skills
-
-* [tryhackme](https://tryhackme.com/)
-* [root me](https://www.root-me.org/)
-* [Damn Vulnerable Web Application](https://dvwa.co.uk/)
-
 And you may check here if you got hacked
 
 * [have i been pwned?](https://haveibeenpwned.com/)

@@ -1,6 +1,22 @@
-# Useful websites used in cybersecurity
+# Handful resources in cybersecurity
 
-A list of useful website that you may use while learning, or practicing cybersecurity. Basically, this is a list of repositories, learning resources, practicing resources, and useful resources.
+A list of useful resources (ex: website, gits...) that you may use while learning, or practicing cybersecurity. Basically, this is a list of repositories, learning resources, practicing resources, and useful resources.
+
+<hr class="sl">
+
+## Learning
+
+* [tryhackme](https://tryhackme.com/) a lot of free courses, and a guide enjoyable way of learning
+* [academy.hackthebox.com](https://academy.hackthebox.com/catalogue), only tier-0 courses are free, so there is no much to do without paying.
+
+<hr class="sr">
+
+## Practicing
+
+* [tryhackme](https://tryhackme.com/)
+* [root me](https://www.root-me.org/)
+* [hackthebox.com](https://hackthebox.com/)
+* [Damn Vulnerable Web Application](https://dvwa.co.uk/)
 
 <hr class="sl">
 
