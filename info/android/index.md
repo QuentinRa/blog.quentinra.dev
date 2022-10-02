@@ -53,3 +53,22 @@ fun noTO() : Any {}
 **random links**
 
 * https://developer.android.com/courses/android-basics-kotlin/android-basics-kotlin-vocab
+
+<hr class="sr">
+
+## Android studio
+
+* Pick android version
+* Device emulator
+* Tests
+
+<hr class="sl">
+
+## UI
+
+* What you see on the screen (text, buttons...)
+* Everything is a `View`
+  * Display a text: `TextView`
+* Views can be clickable/editable/...
+* Views are arranged by `ViewGroup`.
+  * **ConstraintLayout**: "arrange in a flexible way"
