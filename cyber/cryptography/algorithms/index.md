@@ -9,6 +9,8 @@ In symmetric algorithms, **both** of the sender and the receiver know the key: k
 
 * **A** use an algorithm C to encrypt the message with the key k, generating a cipher (`message encrypté`) c : `c = C(k, m)`
 * **B** use an algorithm D to decrypt the message with the same key k : `m = D(k, c)`
+
+`k` should be at least 128 bits for a symmetric algorithm to be acceptable.
 </details>
 
 <details class="details-e">
@@ -98,7 +100,7 @@ This is a caesar cipher, but split into blocs. The goal was to avoid entropy att
 ![Type: Symmetric](https://img.shields.io/badge/Type-Symmetric-7cfc00)&nbsp;&nbsp;
 ![Complexity: easy](https://img.shields.io/badge/Complexity-easy-7cfc00)
 
-The **One Time Pad**, or One Time password, abbreviated as **OTP**, is a cryptographic algorithm with a good level of security, as long as some considerations are taken, created in 2017. 
+The **One Time Pad**, or One Time password, abbreviated as **OTP**, is a cryptographic algorithm with a good level of security, as long as some considerations are taken, created in 2017.  It is part of the family of **stream cipher** (`chiffrement par flot`).
 
 * `m` is a message of length `n`
 * `k` is a key of length `n`
@@ -121,7 +123,8 @@ The operator $\oplus$ (XOR, `ou exclusif`) is basically this: $(a+b)%2$, with bo
 <summary>Concerns</summary>
 
 * The key is as long as the message, making it hard to use
-* The key must be used only once
+* The key must be used only once (**Two Time Pad**)
+* OPT do not control/ensure the integrity of the message.
 </details>
 
 <hr class="sl">
@@ -252,6 +255,7 @@ An attacker would have a lot of prime numbers to test ($10^{497}$ for $n \approx
 
 ## Sources
 
-* IUTSF Teaching 🚀
-* ENSIIE Teaching
+* IUTSF Teachings 🚀
+* ENSIIE Teachings
+* UdeS Teachings
 * [The Knapsack Problem and Public Key Cryptography](https://nrich.maths.org/2199)
