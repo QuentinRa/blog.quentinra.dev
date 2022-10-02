@@ -46,12 +46,6 @@ to look a what kind of breaches got reported like
 found this website [huntr.dev](https://huntr.dev/)
 which is quite good too.
 
-You may check <https://nvd.nist.gov/general> 
-or [nvd search](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&search_type=all)
-if you are looking for vulnerabilities. I'm liking
-this page a lot [snyk.io/vuln](https://snyk.io/vuln) since
-they are sometimes giving quite good explanations and examples.
-
 <hr class="sr">
 
 ## General vulnerabilities
@@ -68,20 +62,6 @@ and because it's urgent, some gave in.
 
 You will use lures to bait the attacking and earn
 more time.
-
-<hr class="sl">
-
-## Web vulnerabilities
-
-Cookies mustn't be used, and you should not trust anything
-that's stored in the client browser.
-
-* [Cookies and Sessions](web/cookies.md)
-
-Beware of file upload, someone might send some script
-one your server and may be able to run it.
-
-* [FileUpload and ReverseScript](web/upload.md)
 
 <hr class="sl">
 
