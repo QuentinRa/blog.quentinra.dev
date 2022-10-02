@@ -54,3 +54,14 @@ The [SecLists GitHub Repository](https://github.com/danielmiessler/SecLists/) co
 * [attackerkb.com](https://attackerkb.com/)
 
 One special mention to **Snyk**: [security.snyk.io](https://security.snyk.io/), because there website is, in my opinion, way better than others.
+
+<hr class="sr">
+
+## Looking for someone
+
+You may want to look for other persons having the same  username, or searching who a person is from an image... These links may help
+
+* [osintframework](https://osintframework.com/)
+* [sherlock](https://sherlock-project.github.io/) and [tutorial](https://www.geeksforgeeks.org/sherlock-hunt-username-on-social-media-kali-linux-tool/)
+* [maltego](https://www.maltego.com/) and [help](https://en.kali.tools/?p=24)
+* [spiderfoot](https://www.spiderfoot.net/) and [help](https://www.hackingloops.com/spiderfoot/)
