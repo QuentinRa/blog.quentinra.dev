@@ -26,6 +26,12 @@
         "name": "Java",
         "desc": "...",
         "icon": "<i class=\"bi bi-terminal-fill\"></i>"
+      },
+      {
+        "tag": "kotlin",
+        "name": "Kotlin",
+        "desc": "...",
+        "icon": "<i class=\"bi bi-terminal-fill\"></i>"
       }
     ],
     "e5": [
@@ -99,6 +105,14 @@
         "tag": "js",
         "name": "JavaScript",
         "desc": "A short introduction to JavaScript used to make interactive websites or required for Node.js/Typescript courses.",
+        "icon": "<i class=\"bi bi-globe\"></i>"
+      }
+    ],
+    "e6": [
+      {
+        "tag": "android",
+        "name": "Android",
+        "desc": "...",
         "icon": "<i class=\"bi bi-globe\"></i>"
       }
     ]

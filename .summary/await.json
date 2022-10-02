@@ -19,18 +19,6 @@
       "icon": "<i class=\"bi bi-shield-shaded\"></i>"
     },
     {
-      "tag": "linux",
-      "name": "Linux",
-      "desc": "Learn how to survive in (or mastering) a Linux-based environment.",
-      "icon": "<i class=\"bi bi-terminal-fill\"></i>"
-    },
-    {
-      "tag": "networking",
-      "name": "Networking",
-      "desc": "Some basic knowledge about networking.",
-      "icon": "<i class=\"bi bi-wifi\"></i>"
-    },
-    {
       "tag": "assembly",
       "name": "Assembly",
       "desc": "A short introduction to ARM assembly.",
@@ -53,14 +41,6 @@
       "name": "API",
       "desc": "An application programming interface (API) is an interface allowing a user to use someone else services without digging into the code.",
       "icon": "<i class=\"bi bi-key\"></i>"
-    }
-  ],
-  "maths": [
-    {
-      "tag": "languages",
-      "name": "Languages theory",
-      "desc": "...",
-      "icon": null
     }
   ]
 }
