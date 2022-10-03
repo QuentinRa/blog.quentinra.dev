@@ -8,7 +8,6 @@ https://medium.com/android-news/android-localisations-with-mobile-country-code-1
 https://developer.android.com/guide/topics/resources/providing-resources
 -----------------
 
-* scaleType:centerCrop scale without distorting (9patches)
-* activity_main.xml
 * You got options to do things faster using right-click.
-* There is a search bar (ex: for attributes)
+* Android Application Lifecycle
+* [AppCompatActivity](https://developer.android.com/reference/androidx/appcompat/app/AppCompatActivity): "Base class for activities that wish to use some of the newer platform features on older Android devices."

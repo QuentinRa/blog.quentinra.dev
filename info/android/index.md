@@ -107,7 +107,7 @@ You have some attributes to increase accessibility
 
 <hr class="sl">
 
-## Resources
+## Resources Manager
 
 <div class="row row-cols-md-2 mx-0"><div>
 
@@ -147,4 +147,41 @@ You can edit locales here! Locales are made of a
 
 Every "strings.xml" shares the sames keys, but different translations. In the code, or in the view, you will only reference the "key", and the appropriate value will be shown according to the user language.
 </details>
+</div></div>
+
+<hr class="sr">
+
+## Activities
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+Activities are screens of your application. The "main" screen is usually called "Main Activity".
+
+```kotlin
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        // set the layout: activity_main.xml
+        setContentView(R.layout.activity_main)
+        // add your code here
+    }
+}
+```
+</div><div>
+
+<details class="details-e">
+<summary>Access a <code>View</code> in the code</summary>
+
+There is a class `R` representing the resources' folder. You can use `R.id.some_name_here` to the id of a view. `some_name_here` is the name of a view in the component tree.
+
+You can then use `findViewById(R.id.some_name_here)` to get your view.
+
+```kotlin
+val myButton: Button = findViewById(R.id.myButton)
+```
+</details>
+
 </div></div>
