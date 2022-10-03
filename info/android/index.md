@@ -50,7 +50,6 @@ The layout is handled by a `ViewGroup`. Layouts are edited using the layout edit
 <div class="row row-cols-md-2 mx-0"><div>
 
 On the left side, or in View > Tools Windows, you got the "Resources Manager". This is a tab in which you can easily track every resource of your application, in other words, files in `res`.
-</div><div>
 
 <details class="details-e">
 <summary>Add a new "drawable" (image)</summary>
@@ -60,5 +59,30 @@ On the left side, or in View > Tools Windows, you got the "Resources Manager". T
 * Import drawables
 * The new file should be in the list
 * You can drag, and drop it in the design view (or select it when creating a new imageview)
+</details>
+</div><div>
+
+Every folder in `res` may have multiples "copies" for different devices/languages. For instance, if there is a view for large screen devices, it will be used instead of the view made of "every" device.
+
+<details class="details-e">
+<summary>Localization</summary>
+
+To add another language
+
+* Create a new "Android resources directory"
+* Click on "Locale" then ">>"
+* Select a locale, and optionally a region
+* Switch to project view
+* Copy, and paste "strings.xml" inside the new folder
+* Switch back to android view
+* Go in "String" inside the Resources manager
+* Click on Open Translations Editor
+
+You can edit locales here! Locales are made of a
+
+* a key
+* a translation
+
+Every "strings.xml" shares the sames keys, but different translations. In the code, or in the view, you will only reference the "key", and the appropriate value will be shown according to the user language.
 </details>
 </div></div>

@@ -30,12 +30,8 @@ Returning on the view
 
 ## Localization
 
-There is a folder `values` in resources. You can add your own folder for a specific case (ex: support another language). In strings.xml, you can add
-
-* a key
-* a "default" translation for this key
-
-If you create another folder "values" (ex: `values-fr+ca/strings.xml`), you will keep the key, and change the translation. In the code, you will only reference the "key".
+https://medium.com/android-news/android-localisations-with-mobile-country-code-1c1596857d5
+https://developer.android.com/guide/topics/resources/providing-resources
 
 If you created something with a "text" not localized. You can click on the "warning", then expand "Hardcoded text", and click on fix.
 
