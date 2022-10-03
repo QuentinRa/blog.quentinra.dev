@@ -2,27 +2,32 @@
 
 ...
 
-<hr class="sr">
-
-## Android studio
-
-* Pick android version
-* Device emulator
-* Tests
-
 <hr class="sl">
+
+## Views
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+Everything displayed on the screen is a `View`.
+
+* Display a text: `TextView`
+* Display an image: `ImageView`
+* Display a button: `Button`
+
+`View` doesn't means that this is only a "view", a view be clickable/editable...
+</div><div>
+
+The layout is handled by a `ViewGroup`. Layouts are edited using the layout editor. There are located in `res > layout`.
+
+* **ConstraintLayout**: arrange elements in a flexible way
+
+</div></div>
+
+<hr class="sr">
 
 ## UI
 
-* What you see on the screen (text, buttons...)
-* Everything is a `View`
-  * Display a text: `TextView`
-  * Display an image: `ImageView`
-    * scaleType:centerCrop scale without distorting (9patches)
-  * Display a button: `Button`
-* Views can be clickable/editable/...
-* Views are arranged by `ViewGroup`.
-  * **ConstraintLayout**: "arrange in a flexible way"
+* scaleType:centerCrop scale without distorting (9patches)
 
 Layout are edited using the layout editor. `res > layout > activity_main.xml`. Using the top-right buttons, you can switch between Code/Split/Design.
 
