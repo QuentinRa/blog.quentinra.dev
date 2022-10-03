@@ -184,4 +184,19 @@ val myButton: Button = findViewById(R.id.myButton)
 ```
 </details>
 
+<details class="details-e">
+<summary>Listeners</summary>
+
+As in Java, you have listeners which are called when an event is triggered (ex: `click on a button`).
+
+Example for "OnClickListener", a listener added on a button, that is called when a user click the button.
+
+```kotlin
+val myButton: Button = findViewById(R.id.myButton)
+myButton.setOnClickListener {
+    println("Clicked on myButton")
+}
+```
+</details>
+
 </div></div>
