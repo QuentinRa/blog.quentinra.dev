@@ -8,15 +8,7 @@
 <hr class="sr">
 
 ## Kotlin
-
-* Use "fun" to declare a function
-* If the return type is "void" which is `Unit` in Kotlin, then it can be omitted
 * If an argument is not used, it can be removed
-* params: 
-  * `name: Type`
-  * can have default values
-  * Types are String, Any, Int...
-  * If we add a "?" it means that something can be null
 
 ```kotlin
 fun main(args: Array<String>) : Unit {
@@ -112,6 +104,7 @@ range.random()
   * Display a text: `TextView`
   * Display an image: `ImageView`
     * scaleType:centerCrop scale without distorting (9patches)
+  * Display a button: `Button`
 * Views can be clickable/editable/...
 * Views are arranged by `ViewGroup`.
   * **ConstraintLayout**: "arrange in a flexible way"
@@ -129,6 +122,8 @@ Returning on the view
 
 * To place an element in a **ConstraintLayout**, you need to add constraints to it.
 * If you give layout_width+height "0dp", android studio will match the constraint. If they are "0", then it basically means "fill".
+
+> You can attach a component to another in a constraint layout. click on one of the four circles on something, and link it ot the circle of another view. By doing so, constraint will be relative to the other view. And, moving the "parent" will move the child.
 
 > * You got options to do things faster using right-click.
 > * There is a search bar (ex: for attributes)
