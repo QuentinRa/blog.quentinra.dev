@@ -14,6 +14,7 @@ As you would in Java, everything is starting from the main function.
 * Unit is implicit, so it's optional too
 * There is no need for "main" to be in a class/static
 * There is no need for `;` (semicolon)
+* There is some "aliases" for functions such as "System.out.println" which has an alias "println".
 </div><div>
 
 ```kotlin
@@ -124,3 +125,11 @@ fun myFunction(param1: String = "s", param2: Int = 0) {}
 val five = myFunction(param2 = 5)
 ```
 </div></div>
+
+<hr class="sr">
+
+## References
+
+* [Android Basics Kotlin Vocab](https://developer.android.com/courses/android-basics-kotlin/android-basics-kotlin-vocab)
+* [developer.android.com](https://developer.android.com/guide)
+* [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)

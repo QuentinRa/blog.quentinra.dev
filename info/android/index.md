@@ -9,8 +9,6 @@
 
 ## Kotlin
 
-* there is some "alias" for functions. For instance "System.out.println" as an alias "println" (in Console.kt / kotlin.io).
-
 Classes.
 
 ```kotlin
@@ -34,10 +32,6 @@ var x = X()
 **useful methods?**
 
 * Class Arrays (Kotlins): `joinToString`
-
-**random links**
-
-* https://developer.android.com/courses/android-basics-kotlin/android-basics-kotlin-vocab
 
 <hr class="sr">
 
@@ -113,10 +107,3 @@ If you created something with a "text" not localized. You can click on the "warn
 
 * `contentDescription`: what's the purpose of this element
 * `importantForAccessibility`: if this element is just decorative, you can set it to no
-
-<hr class="sr">
-
-## Resources
-
-* [developer.android.com](https://developer.android.com/guide)
-* [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)
