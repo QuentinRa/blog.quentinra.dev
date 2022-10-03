@@ -28,18 +28,6 @@ Returning on the view
 
 ## Resources
 
-On the left side, or in View > Tools Windows, you got the "Resources Manager". You can use it.
-
-**Import image**
-
-* Go to Drawables
-* Click on "+"
-* Import drawables
-* The new file should be in the list
-* You can drag, and drop it in the design view (or select it when creating a new imageview)
-
-<hr class="sr">
-
 ## Localization
 
 There is a folder `values` in resources. You can add your own folder for a specific case (ex: support another language). In strings.xml, you can add

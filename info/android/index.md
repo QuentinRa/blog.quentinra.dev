@@ -42,3 +42,23 @@ The layout is handled by a `ViewGroup`. Layouts are edited using the layout edit
 
 ![Layout Editor](_images/layout_editor.png)
 </div></div>
+
+<hr class="sl">
+
+## Resources
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+On the left side, or in View > Tools Windows, you got the "Resources Manager". This is a tab in which you can easily track every resource of your application, in other words, files in `res`.
+</div><div>
+
+<details class="details-e">
+<summary>Add a new "drawable" (image)</summary>
+
+* Go to Drawables
+* Click on "+"
+* Import drawables
+* The new file should be in the list
+* You can drag, and drop it in the design view (or select it when creating a new imageview)
+</details>
+</div></div>
