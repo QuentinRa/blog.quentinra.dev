@@ -225,6 +225,25 @@ You have `anImageView.setImageResource(int)` which is taking the ID of the new i
 
 Don't forget to update `contentDescription`, or any accessibility-related attributes, if needed.
 </details>
+
+<details class="details-e">
+<summary>Get/set a text from the code</summary>
+
+You can get a text from the code using
+
+```kotlin
+var myString = getResources().getString(R.string.myStringID)
+// for strings with parameters
+var myString = getResources().getString(R.string.myStringID, param1, param2)
+```
+
+For some functions such as `#setText`, you can pass the ID
+
+```kotlin
+aTextView.text = myString
+aTextView.setText(R.string.myStringID)
+```
+</details>
 </div></div>
 
 <hr class="sr">
