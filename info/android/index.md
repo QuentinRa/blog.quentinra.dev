@@ -25,18 +25,31 @@ The layout is handled by a `ViewGroup`. Layouts are edited using the layout edit
 
 <hr class="sr">
 
+## Layout Editor
+
+<div class="row row-cols-md-2 mx-0"><div class="align-self-center">
+
+<ol style="list-style-type: lower-alpha">
+<li><b>Mode</b>: you can switch to code/layout editor here</li>
+<li><b>Palette</b>: a library of views that you can drag and drop to the design view</li>
+<li><b>Design view</b>: what the user will see</li>
+<li><b>BluePrint view</b>: everything is shown on it, included hidden elements</li>
+<li><b>Component tree</b>: list of all views of your screen</li>
+<li><b>Attributes</b>: edit the properties of a view</li>
+
+</ol>
+</div><div>
+
+![Layout Editor](_images/layout_editor.png)
+</div></div>
+
+<hr class="sl">
+
 ## UI
 
 * scaleType:centerCrop scale without distorting (9patches)
 
-Layout are edited using the layout editor. `res > layout > activity_main.xml`. Using the top-right buttons, you can switch between Code/Split/Design.
-
-* Left: Design view, this is basically what you will see.
-* Right: BluePrint view, everything is show on it, included hidden elements.
-* Palette: list of Views
-* Component tree: structure of the screen ("lists all the views of your screen")
-  * The higher ones are rendered below the lower ones
-* Attributes: edit some Views' properties
+Layout are edited using the layout editor. `res > layout > activity_main.xml`. 
 
 Returning on the view
 
