@@ -29,3 +29,14 @@ value in 1..6/???
 
 https://kotlinlang.org/docs/home.html
 https://play.kotlinlang.org/byExample/02_control_flow/01_When
+https://kotlinlang.org/docs/visibility-modifiers.html#class-members
+
+repeat(5) { /* job */ }
+basically
+i=0
+while(i<5) {
+    i++; // i unused
+    /* job */
+}
+
+"$value"
