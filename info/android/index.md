@@ -8,47 +8,8 @@
 <hr class="sr">
 
 ## Kotlin
-* If an argument is not used, it can be removed
-
-```kotlin
-fun main(args: Array<String>) : Unit {
-    println("Hello World!")
-}
-fun main() {
-    println("Hello World!")
-}
-```
 
 * there is some "alias" for functions. For instance "System.out.println" as an alias "println" (in Console.kt / kotlin.io).
-* **no need for `;`**
-
-```kotlin
-fun main() {
-    println("Hello World!")
-    println("Random number: ${5+2}")
-}
-```
-
-There is no type object in Kotlin, use any.
-
-```kotlin
-fun noTO() : Any {}
-```
-
-```kotlin
-fun noTO() : Any {}
-```
-
-Use val to declare constants, var to declare variables. Variable must have a value unless they were declared nullable (there is not such thing as default=0=.
-
-```kotlin
-var x : Int
-x = 5
-println(x)
-
-val x : Int = 5
-val x = 5
-```
 
 Classes.
 
@@ -73,15 +34,6 @@ var x = X()
 **useful methods?**
 
 * Class Arrays (Kotlins): `joinToString`
-
-**Random stuff**
-
-Create a range (IntRange).
-
-```kotlin
-val range = 1..6
-range.random()
-```
 
 **random links**
 
