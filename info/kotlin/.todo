@@ -20,7 +20,12 @@ when (variable) {
     else -> job
 }
 
+val value = when(variable) {
+    value -> new_value
+}
+
 is Type (=> Java instead of)
+value in 1..6/???
 
 https://kotlinlang.org/docs/home.html
 https://play.kotlinlang.org/byExample/02_control_flow/01_When

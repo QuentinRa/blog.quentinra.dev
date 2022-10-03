@@ -63,6 +63,7 @@ You should rely on CTRL+F to search for attributes, or by clicking on the search
 <tr><td><b>ImageView</b></td><td>
 
 * `scaleType`: use "centerCrop" to scale without distorting (9patches)
+* `srcCompat`: set image
 </td></tr>
 
 <tr><td><b>Button</b></td><td>
@@ -217,4 +218,11 @@ toast.show()
 ```
 </details>
 
+<details class="details-e">
+<summary>Set a drawable (image) in the code</summary>
+
+You have `anImageView.setImageResource(int)` which is taking the ID of the new image (drawable). You can use `R.drawable.your_drawable` to get the ID of `your_drawable`. See Resources Manager if you need to important a drawable.
+
+Don't forget to update `contentDescription`, or any accessibility-related attributes, if needed.
+</details>
 </div></div>
