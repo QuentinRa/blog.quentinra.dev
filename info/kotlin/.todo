@@ -11,3 +11,16 @@ public static interface OnClickListener {
 rollButton.setOnClickListener {
     "it" is a View
 }
+
+when (variable) {
+    value -> job
+    value -> {
+        job
+    }
+    else -> job
+}
+
+is Type (=> Java instead of)
+
+https://kotlinlang.org/docs/home.html
+https://play.kotlinlang.org/byExample/02_control_flow/01_When
