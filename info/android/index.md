@@ -19,7 +19,7 @@ Everything displayed on the screen is a `View`.
 
 The layout is handled by a `ViewGroup`. Layouts are edited using the layout editor. There are located in `res > layout`.
 
-* **ConstraintLayout**: arrange elements in a flexible way
+* [ConstraintLayout](layouts/ConstraintLayout.md) : arrange elements in a flexible way
 
 </div></div>
 
