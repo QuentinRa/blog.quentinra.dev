@@ -1,4 +1,4 @@
-# Kotlin
+# Kotlin programming
 
 Kotlin's syntax is a sort of mix between Java, R, and Typescript, while the language itself is an improved version of Java, with more safety checks, and more flexibility, while being less verbose. Kotlin code can be converted in Java, through the generated code is somewhat unreadable.
 

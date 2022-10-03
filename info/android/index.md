@@ -45,6 +45,45 @@ The layout is handled by a `ViewGroup`. Layouts are edited using the layout edit
 
 <hr class="sl">
 
+## Attributes
+
+You should rely on CTRL+F to search for attributes, or by clicking on the search icon at the top of the "Attributes" window.
+
+<table class="table table-bordered table-striped border-dark">
+<thead>
+<tr><th>View</th><th>Useful attributes</th></tr>
+</thead>
+<tbody>
+
+<tr><td><b>TextView</b></td><td>
+
+* `text`
+</td></tr>
+
+<tr><td><b>ImageView</b></td><td>
+
+* `scaleType`: use "centerCrop" to scale without distorting (9patches)
+</td></tr>
+
+<tr><td><b>Button</b></td><td>
+
+* `text`
+</td></tr>
+</tbody></table>
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+**Note for texts**: the second "text" is for a text that is only show when editing. It's useful if the field "text" should be empty by default.
+
+![Android Attribute Second Text Input Field](_images/second_text.png)
+
+</div><div>
+
+...
+</div></div>
+
+<hr class="sr">
+
 ## Good practices
 
 <div class="row row-cols-md-2 mt-4"><div>
@@ -66,7 +105,7 @@ You have some attributes to increase accessibility
 </details>
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Resources
 
