@@ -33,6 +33,7 @@ fun main() {
 ```kotlin
 fun main() {
     println("Hello World!")
+    println("Random number: ${5+2}")
 }
 ```
 
@@ -46,9 +47,49 @@ fun noTO() : Any {}
 fun noTO() : Any {}
 ```
 
+Use val to declare constants, var to declare variables. Variable must have a value unless they were declared nullable (there is not such thing as default=0=.
+
+```kotlin
+var x : Int
+x = 5
+println(x)
+
+val x : Int = 5
+val x = 5
+```
+
+Classes.
+
+```kotlin
+class X {
+  // public
+  var attribute1 = 5
+  val attribute2 = 5
+}
+
+// attribute public but const
+class X(val _attribute: Int) {
+}
+```
+
+Instantiation
+
+```kotlin
+var x = X()
+```
+
 **useful methods?**
 
 * Class Arrays (Kotlins): `joinToString`
+
+**Random stuff**
+
+Create a range (IntRange).
+
+```kotlin
+val range = 1..6
+range.random()
+```
 
 **random links**
 
