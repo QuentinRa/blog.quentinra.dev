@@ -4,11 +4,9 @@
 * Android Logcat
 
 -----------------
-
-
-<hr class="sl">
-
-## UI
+https://medium.com/android-news/android-localisations-with-mobile-country-code-1c1596857d5
+https://developer.android.com/guide/topics/resources/providing-resources
+-----------------
 
 * scaleType:centerCrop scale without distorting (9patches)
 
@@ -23,21 +21,3 @@ Returning on the view
 
 > * You got options to do things faster using right-click.
 > * There is a search bar (ex: for attributes)
-
-<hr class="sr">
-
-## Resources
-
-## Localization
-
-https://medium.com/android-news/android-localisations-with-mobile-country-code-1c1596857d5
-https://developer.android.com/guide/topics/resources/providing-resources
-
-If you created something with a "text" not localized. You can click on the "warning", then expand "Hardcoded text", and click on fix.
-
-<hr class="sl">
-
-## Accessibility
-
-* `contentDescription`: what's the purpose of this element
-* `importantForAccessibility`: if this element is just decorative, you can set it to no

@@ -45,6 +45,29 @@ The layout is handled by a `ViewGroup`. Layouts are edited using the layout edit
 
 <hr class="sl">
 
+## Good practices
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+<details class="details-e">
+<summary>No HardCoded Text</summary>
+
+If you create a TextField, or something having some text shown to the user, then it's a good practice to put the text inside a file "strings.txt". You can click on the "warning", then expand "Hardcoded text", and click on fix.
+</details>
+</div><div>
+
+<details class="details-e">
+<summary>Accessibility</summary>
+
+You have some attributes to increase accessibility
+
+* `contentDescription`: what's the purpose of this element
+* `importantForAccessibility`: if this element is just decorative, you can set it to no
+</details>
+</div></div>
+
+<hr class="sr">
+
 ## Resources
 
 <div class="row row-cols-md-2 mx-0"><div>
