@@ -34,5 +34,66 @@ Use **val** to declare a constant
 val someVal1 : Int = 5
 val someVal2 = 5
 ```
+</div></div>
 
+<hr class="sr">
+
+## Functions
+
+<div class="row row-cols-md-2"><div>
+
+We use the keyword `fun` to declare a function.
+
+```kotlin
+fun myFunction() {}
+```
+
+We call a function as you would in Java.
+
+```kotlin
+myFunction()
+```
+
+A function can return something
+
+```kotlin
+fun myFunction() : Int { return 5 }
+val five = myFunction()
+```
+
+Remainder: if a variable can be null, add `?` after the type.
+
+```kotlin
+fun myFunction(param: String?) {}
+
+myFunction(null)
+```
+
+
+</div><div>
+
+The name of a parameter is written before its type.
+
+```kotlin
+fun myFunction(param: String) {}
+```
+
+Parameters can have default values
+
+```kotlin
+fun myFunction(param: String = "Default") {}
+```
+
+Parameters can be given in any order.
+
+```kotlin
+fun myFunction(param1: String, param2: Int, param3: Any? = null) {}
+
+myFunction("5", 5)
+myFunction(param1 = "5", param2 = 5)
+myFunction(param2 = 5, param1 = "5")
+
+fun myFunction(param1: String = "s", param2: Int = 0) {}
+val five = myFunction(param2 = 5)
+```
 </div></div>
