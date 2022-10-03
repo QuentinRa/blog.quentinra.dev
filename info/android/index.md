@@ -130,7 +130,20 @@ Every folder in `res` may have multiples "copies" for different devices/language
 <details class="details-e">
 <summary>Localization</summary>
 
-To add another language
+Locales are made of a
+
+* a key
+* a translation
+
+```xml
+<string name="some_key">Hello World!</string>
+```
+
+Every "strings.xml" shares the sames keys, but different translations. In the code, or in the view, you will only use the "key", and the appropriate value will be shown according to the user language.
+</details>
+
+<details class="details-e">
+<summary>Localization: add another language</summary>
 
 * Create a new "Android resources directory"
 * Click on "Locale" then ">>"
@@ -141,12 +154,23 @@ To add another language
 * Go in "String" inside the Resources manager
 * Click on Open Translations Editor
 
-You can edit locales here! Locales are made of a
+You can edit locales here!
+</details>
 
-* a key
-* a translation
+<details class="details-e">
+<summary>Localization: variables in strings</summary>
 
-Every "strings.xml" shares the sames keys, but different translations. In the code, or in the view, you will only reference the "key", and the appropriate value will be shown according to the user language.
+If your string has variables, more commonly refered as **parameters**, you can use `%index$` in your text
+
+```xml
+<string name="some_key">Hello %1$</string>
+```
+
+And, later in the code
+
+```kotlin
+getResources().getString(R.string.myStringID, value_for_index1, ...)
+```
 </details>
 </div></div>
 
