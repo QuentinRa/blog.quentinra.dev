@@ -126,6 +126,51 @@ val five = myFunction(param2 = 5)
 ```
 </div></div>
 
+<hr class="sl">
+
+## Classes, and objects
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+By default, classes members (methods, and attributes) are **public**.
+
+```kotlin
+class SomeClass {
+  // public
+  var attribute1 = 5
+  val attribute2 = 5
+}
+```
+
+Instantiation is done like in Java, but without the new keyword <small><s>(so, more like in C++)</s></small>.
+
+```kotlin
+val anObject = SomeClass()
+```
+</div><div>
+
+You can add a constructor, and methods, like for records in Java
+
+```kotlin
+class SomeClass(val attribute: Int) {
+    fun myMethod() {}
+}
+
+val anObject = SomeClass(5)
+anObject.myMethod()
+```
+
+You can add a visibility <small>(explicit public, private, protected, internal...)</small> before an attribute/method.
+
+```kotlin
+class SomeClass {
+  private var attribute1 = 5
+  protected val attribute2 = 5
+}
+```
+
+</div></div>
+
 <hr class="sr">
 
 ## References

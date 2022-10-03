@@ -1,37 +1,6 @@
 # Android development
 
-### DISLAIMER: DIS IS NOT A COURSE.
-
-* Android Studio
-* Kotlin
-
-<hr class="sr">
-
-## Kotlin
-
-Classes.
-
-```kotlin
-class X {
-  // public
-  var attribute1 = 5
-  val attribute2 = 5
-}
-
-// attribute public but const
-class X(val _attribute: Int) {
-}
-```
-
-Instantiation
-
-```kotlin
-var x = X()
-```
-
-**useful methods?**
-
-* Class Arrays (Kotlins): `joinToString`
+...
 
 <hr class="sr">
 
