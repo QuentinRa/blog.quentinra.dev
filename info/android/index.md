@@ -182,8 +182,43 @@ val myButton: Button = findViewById(R.id.myButton)
 ```
 </details>
 
-</div></div>
+<details class="details-e">
+<summary>[new] view binding (alternative to findViewById)</summary>
 
+You first need to add `viewBinding` in build.gradle, in the bloc "Android", and reload the project. It will create an object that reference all views with an id. 
+
+```gradle
+buildFeatures {
+    viewBinding = true
+}
+```
+
+Then, create an attribute `binding`, and you will be able to access every view from it.
+
+<details class="details-e">
+<summary>Android MainActivity base code with Binding</summary>
+
+```kotlin
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.samples.google.cone.databinding.ActivityMainBinding
+
+class MainActivity : AppCompatActivity() {
+    lateinit var binding: ActivityMainBinding
+    
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+    }
+}
+```
+
+</details>
+
+</details>
+
+</div></div>
 
 <hr class="sl">
 
