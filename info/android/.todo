@@ -32,6 +32,30 @@ android:checkedButton="@id/option_twenty_percent"
 
 Switch
 android:checked
+=> isChecked
 
 id
 - android:id="@+id/plain_text_input"
+
+----------------------
+ViewBinding
+build.gradle > android
+buildFeatures {
+    viewBinding = true
+}
+
+One object references all view with an ID
+
+import com.samples.google.cone.databinding.ActivityMainBinding
+lateinit var binding: ActivityMainBinding
+binding = ActivityMainBinding.inflate(layoutInflater)
+setContentView(binding.root)
+
+v_t => vT
+
+---------
+val xxxInTheRightCurrency = NumberFormat.getCurrencyInstance().format(xxx)
+---------
+
+can use %s in strings.xml
+getString(R.string.tip_amount, formattedTip)

@@ -64,3 +64,9 @@ open class AClass {}
 with (variable) {
     // access all properties of variables without variable.
 }
+
+-------------
+lateinit
+-------------
+
+string.toDouble()
