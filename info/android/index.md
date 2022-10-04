@@ -55,33 +55,26 @@ You should rely on CTRL+F to search for attributes, or by clicking on the search
 </thead>
 <tbody>
 
-<tr><td><b>TextView</b></td><td>
+<tr><td><b>View</b><br><i>extends View</i></td><td>
 
-* `text`
 </td></tr>
 
-<tr><td><b>ImageView</b></td><td>
+<tr><td><b>TextView</b><br><i>extends View</i></td><td>
+
+* `text`
+*  (settings) `text`: this text is only shown when editing. <small>It's useful when a text should be empty by default, but you want to see what it will look like once filed.</small>
+</td></tr>
+
+<tr><td><b>ImageView</b><br><i>extends View</i></td><td>
 
 * `scaleType`: use "centerCrop" to scale without distorting (9patches)
 * `srcCompat`: set image
 </td></tr>
 
-<tr><td><b>Button</b></td><td>
+<tr><td><b>Button</b><br><i>extends TextView</i></td><td>
 
-* `text`
 </td></tr>
 </tbody></table>
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-**Note for texts**: the second "text" is for a text that is only show when editing. It's useful if the field "text" should be empty by default.
-
-![Android Attribute Second Text Input Field](_images/second_text.png)
-
-</div><div>
-
-...
-</div></div>
 
 <hr class="sr">
 
@@ -270,7 +263,7 @@ aTextView.setText(R.string.myStringID)
 </details>
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Debugging
 
