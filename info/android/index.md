@@ -159,7 +159,25 @@ You can drag, and drop it in the design view (or select it when creating a new i
 
 **Access resources in the code**
 
-...
+<details class="details-e">
+<summary>Access resource id in the code</summary>
+
+Each resource may have an id. The main class `R` is managing every id trough subclasses such as `drawable`. If you want a drawable with the id `ic_launcher_foreground` do:
+
+```kotlin
+val drawableId = R.drawable.ic_launcher_foreground;
+```
+</details>
+
+<details class="details-e">
+<summary>findViewById</summary>
+
+You can then use `findViewById(some_id)` to get a view.
+
+```kotlin
+val myButton: Button = findViewById(R.id.myButton)
+```
+</details>
 
 </div></div>
 

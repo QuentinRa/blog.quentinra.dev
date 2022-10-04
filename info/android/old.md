@@ -14,19 +14,6 @@ If you create a TextField, or something having some text shown to the user, then
 
 ## Resources Manager
 
-<div class="row row-cols-md-2 mx-0"><div>
-
-<details class="details-e">
-<summary>Add a new "drawable" (image)</summary>
-
-* Go to Drawables
-* Click on "+"
-* Import drawables
-* The new file should be in the list
-* You can drag, and drop it in the design view (or select it when creating a new imageview)
-</details>
-</div><div>
-
 Every folder in `res` may have multiples "copies" for different devices/languages. For instance, if there is a view for large screen devices, it will be used instead of the view made of "every" device.
 
 <details class="details-e">
@@ -74,24 +61,12 @@ And, later in the code
 getResources().getString(R.string.myStringID, value_for_index1, ...)
 ```
 </details>
-</div></div>
 
 <hr class="sr">
 
 ## Activities
 
 <details class="details-e">
-<summary>Access a <code>View</code> in the code</summary>
-
-There is a class `R` representing the resources' folder. You can use `R.id.some_name_here` to the id of a view. `some_name_here` is the name of a view in the component tree.
-
-You can then use `findViewById(R.id.some_name_here)` to get your view.
-
-```kotlin
-val myButton: Button = findViewById(R.id.myButton)
-```
-</details>
-
 <details class="details-e">
 <summary>Listeners</summary>
 
