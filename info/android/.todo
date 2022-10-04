@@ -17,3 +17,21 @@ https://developer.android.com/courses/android-basics-kotlin/unit-3
 https://developer.android.com/courses/android-basics-kotlin/unit-4
 https://developer.android.com/courses/android-basics-kotlin/unit-5
 https://developer.android.com/teach
+
+--------------------
+
+android:
+- text
+- padding
+- inputType="text"
+https://developer.android.com/develop/ui/views/touch-and-input/keyboard-input/style
+- hint="XxXXxX"
+
+RadioGroup
+android:checkedButton="@id/option_twenty_percent"
+
+Switch
+android:checked
+
+id
+- android:id="@+id/plain_text_input"
