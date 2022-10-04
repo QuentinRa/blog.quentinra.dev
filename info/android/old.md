@@ -14,15 +14,10 @@ If you create a TextField, or something having some text shown to the user, then
 
 ## Resources Manager
 
-Every folder in `res` may have multiples "copies" for different devices/languages. For instance, if there is a view for large screen devices, it will be used instead of the view made of "every" device.
-
 <details class="details-e">
 <summary>Localization</summary>
 
 Locales are made of a
-
-* a key
-* a translation
 
 ```xml
 <string name="some_key">Hello World!</string>
@@ -44,22 +39,6 @@ Every "strings.xml" shares the sames keys, but different translations. In the co
 * Click on Open Translations Editor
 
 You can edit locales here!
-</details>
-
-<details class="details-e">
-<summary>Localization: variables in strings</summary>
-
-If your string has variables, more commonly refered as **parameters**, you can use `%index$` in your text
-
-```xml
-<string name="some_key">Hello %1$</string>
-```
-
-And, later in the code
-
-```kotlin
-getResources().getString(R.string.myStringID, value_for_index1, ...)
-```
 </details>
 
 <hr class="sr">

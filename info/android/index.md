@@ -158,6 +158,10 @@ You can access the Resources Manager, which track every resource in `res`, and a
 You can drag, and drop it in the design view (or select it when creating a new imageview).
 </details>
 
+Every folder in `res` may have multiples "copies" for different devices/languages. For instance, if there is a view for large screen devices, it will be used instead of the view made of "every" device.
+
+* [strings.xml](values/strings.md): how to properly handle texts, and localization
+
 </div><div>
 
 **Access resources in the code**
@@ -169,6 +173,7 @@ Each resource may have an id. The main class `R` is managing every id trough sub
 
 ```kotlin
 val drawableId : Int = R.drawable.myDrawable
+val viewId : Int = R.id.hello_world
 ```
 </details>
 
