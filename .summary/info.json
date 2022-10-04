@@ -112,7 +112,7 @@
       {
         "tag": "android",
         "name": "Android",
-        "desc": "...",
+        "desc": "Android application development using Android Studio, and Kotlin.",
         "icon": "<i class=\"bi bi-globe\"></i>"
       }
     ]

@@ -1,6 +1,8 @@
 # Android development
 
-...
+There are multiple ways to develop apps for Android devices. This course will focus on Android apps written in **Kotlin**, using **Android Studio**. Kotlin which is recommended by Google since 2018, replacing Java which was mainly used until then. Switching from Kotlin to Java, and from Java to Kotlin is quite easy, Android Studio can even do the conversion for you.
+
+> Android Studio (Google) is based on IntelliJ Community (JetBrains) 😎❤️
 
 <hr class="sl">
 
