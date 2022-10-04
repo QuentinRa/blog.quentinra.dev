@@ -213,14 +213,53 @@ class MainActivity : AppCompatActivity() {
     }
 }
 ```
-
 </details>
-
 </details>
 
 </div></div>
 
 <hr class="sl">
+
+## Useful stuff
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+<details class="details-e">
+<summary>Toasts (sort of non-aggressive popups)</summary>
+
+A toast is something like this, usually at the bottom of the screen:
+
+![Android Toast](_images/toast.png)
+
+And, the code is as simple as that
+
+```kotlin
+// create
+// LENGTH_SHORT (=short duration) LENGTH_LONG (=long duration)
+val toast = Toast.makeText(this, "Some message", Toast.LENGTH_SHORT)
+// show
+toast.show()
+```
+</details>
+</div><div>
+
+<details class="details-e">
+<summary>Listeners</summary>
+
+As in Java, you have listeners which are called when an event is triggered (ex: `click on a button`).
+
+Example for "OnClickListener", a listener added on a button, that is called when a user click the button.
+
+```kotlin
+val myButton: Button = findViewById(R.id.myButton)
+myButton.setOnClickListener {
+    println("Clicked on myButton")
+}
+```
+</details>
+</div></div>
+
+<hr class="sr">
 
 ## Debugging
 
