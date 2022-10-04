@@ -58,7 +58,7 @@ The layout is handled by a **ViewGroup**. Layouts are edited using the layout ed
 
 </div></div>
 
-<details class="details-e" open>
+<details class="details-e">
 <summary>Useful Attributes/Methods for well-known Views</summary><br>
 
 <table class="table table-bordered table-striped border-dark">
@@ -294,6 +294,15 @@ myButton.setOnClickListener {
 
 <hr class="sr">
 
+## Material Design
+
+Material design is a library of pre-made components. Google recommends to use Material UI components as much as possible. The list [of Material components for Android can be found here](https://material.io/components?platform=android).
+
+* Text field: `TextInputLayout` (see [text field](https://material.io/components/text-fields/android#using-text-fields))
+* Switch: `SwitchMaterial` (create a switch, change the type in the .xml)
+
+<hr class="sl">
+
 ## Debugging
 
 <div class="row row-cols-md-2 mt-4"><div>
@@ -318,7 +327,7 @@ There are 5 levels of logs. You can view your logs in the tab "logat", in which 
 * `Log.e`: error
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## References
 
