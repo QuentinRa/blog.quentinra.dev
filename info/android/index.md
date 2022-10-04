@@ -75,7 +75,10 @@ The layout is handled by a **ViewGroup**. Layouts are edited using the layout ed
 
 * `text`
 *  (settings) `text`: this text is only shown when editing. <small>It's useful when a text should be empty by default, but you want to see what it will look like once filed.</small>
-</td><td></td></tr>
+</td><td>
+
+* `setText(stringId)`: set text for id. You can also use the attribute `text`, but with a string.
+</td></tr>
 
 <tr><td><b>ImageView</b><br><i>extends View</i></td><td>
 

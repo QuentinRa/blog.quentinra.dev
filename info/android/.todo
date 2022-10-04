@@ -39,13 +39,6 @@ android:checked
 id
 - android:id="@+id/plain_text_input"
 
----------
-val xxxInTheRightCurrency = NumberFormat.getCurrencyInstance().format(xxx)
----------
-
-can use %s in strings.xml
-getString(R.string.tip_amount, formattedTip)
-
 ********
 Theme
 ********
