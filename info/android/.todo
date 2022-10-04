@@ -59,3 +59,18 @@ val xxxInTheRightCurrency = NumberFormat.getCurrencyInstance().format(xxx)
 
 can use %s in strings.xml
 getString(R.string.tip_amount, formattedTip)
+
+********
+Theme
+********
+
+https://material.io/design/introduction#theming
+=> https://material.io/design/material-theming/implementing-your-theme.html#color
+
+themes.xml
+=> name="Theme.XXX"
+=> https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=00E5FF
+    => click on primary/secondary/... and pick colors
+    => add the colors to the app
+
+Dark theme: https://developer.android.com/codelabs/basic-android-kotlin-training-change-app-theme

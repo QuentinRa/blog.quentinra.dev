@@ -70,3 +70,4 @@ lateinit
 -------------
 
 string.toDouble()
+string.toDoubleOrNull()
