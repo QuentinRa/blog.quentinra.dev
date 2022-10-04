@@ -76,30 +76,6 @@ We use the keyword `fun` to declare a function.
 fun myFunction() {}
 ```
 
-We call a function as you would in Java.
-
-```kotlin
-myFunction()
-```
-
-A function can return something
-
-```kotlin
-fun myFunction() : Int { return 5 }
-val five = myFunction()
-```
-
-Remainder: if a variable can be null, add `?` after the type.
-
-```kotlin
-fun myFunction(param: String?) {}
-
-myFunction(null)
-```
-
-
-</div><div>
-
 The name of a parameter is written before its type.
 
 ```kotlin
@@ -110,6 +86,21 @@ Parameters can have default values
 
 ```kotlin
 fun myFunction(param: String = "Default") {}
+```
+
+A function can return something
+
+```kotlin
+fun myFunction() : Int { return 5 }
+val five = myFunction()
+```
+
+</div><div>
+
+We call a function as you would in Java.
+
+```kotlin
+myFunction()
 ```
 
 Parameters can be given in any order.

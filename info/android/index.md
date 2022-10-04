@@ -8,13 +8,14 @@
 
 <div class="row row-cols-md-2 mx-0"><div>
 
-Everything displayed on the screen is a `View`.
+Everything displayed on the screen is a `View`. `View` doesn't means that this is only a "view", a view be clickable/editable...
 
 * Display a text: `TextView`
 * Display an image: `ImageView`
 * Display a button: `Button`
-
-`View` doesn't means that this is only a "view", a view be clickable/editable...
+* Display a input field: `EditText`
+* Display a radio button: `RadioButton` + `RadioGroup`
+* Display a toggle button: `Switch`
 </div><div>
 
 The layout is handled by a `ViewGroup`. Layouts are edited using the layout editor. There are located in `res > layout`.
