@@ -1,43 +1,22 @@
 * Pick android version
+* Switch Project View
 * Device emulator
 * Android Tests
-* Android Logcat
+* You got options to do things faster using right-click.
+* Android Application Lifecycle
 
 -----------------
 https://medium.com/android-news/android-localisations-with-mobile-country-code-1c1596857d5
 https://developer.android.com/guide/topics/resources/providing-resources
 
 https://developer.android.com/docs
------------------
-
-* You got options to do things faster using right-click.
-* Android Application Lifecycle
-* [AppCompatActivity](https://developer.android.com/reference/androidx/appcompat/app/AppCompatActivity): "Base class for activities that wish to use some of the newer platform features on older Android devices."
-
-https://developer.android.com/courses/android-basics-kotlin/unit-2
-https://developer.android.com/courses/android-basics-kotlin/unit-3
-https://developer.android.com/courses/android-basics-kotlin/unit-4
-https://developer.android.com/courses/android-basics-kotlin/unit-5
 https://developer.android.com/teach
-
 --------------------
 
-android:
-- text
-- padding
-- inputType="text"
-https://developer.android.com/develop/ui/views/touch-and-input/keyboard-input/style
-- hint="XxXXxX"
-
-RadioGroup
-android:checkedButton="@id/option_twenty_percent"
-
-Switch
-android:checked
-=> isChecked
-
-id
-- android:id="@+id/plain_text_input"
+https://developer.android.com/reference/android/widget/Switch
+https://developer.android.com/reference/android/widget/RadioGroup
+https://developer.android.com/reference/android/widget/RadioButton
+https://developer.android.com/reference/android/widget/EditText
 
 ********
 Theme

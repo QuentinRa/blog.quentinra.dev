@@ -58,7 +58,7 @@ The layout is handled by a **ViewGroup**. Layouts are edited using the layout ed
 
 </div></div>
 
-<details class="details-e">
+<details class="details-e" open>
 <summary>Useful Attributes/Methods for well-known Views</summary><br>
 
 <table class="table table-bordered table-striped border-dark">
@@ -92,6 +92,33 @@ The layout is handled by a **ViewGroup**. Layouts are edited using the layout ed
 <tr><td><b>Button</b><br><i>extends TextView</i></td><td>
 
 </td><td></td></tr>
+
+<tr><td><b>Switch</b><br><i>extends Button*</i></td><td>
+
+* `checked`
+</td><td>
+
+* `isChecked`
+</td></tr>
+
+<tr><td><b>RadioGroup</b><br><i>extends LinearLayout</i></td><td>
+
+* `checkedButton`
+</td><td>
+
+* `setOnCheckedChangeListener`: parameters are radio group, and the Id of the checked button.
+</td></tr>
+
+<tr><td><b>RadioButton</b><br><i>extends Button*</i></td><td></td><td></td></tr>
+
+<tr><td><b>RadioButton</b><br><i>extends Button*</i></td><td></td><td></td></tr>
+
+<tr><td><b>EditText</b><br><i>extends TextView</i></td><td>
+
+* `inputType`: determine the [keyboard](https://developer.android.com/develop/ui/views/touch-and-input/keyboard-input/style). Can use multiple types.
+* `hint`: placeholder
+</td><td></td></tr>
+
 </tbody></table>
 </details>
 
@@ -293,7 +320,7 @@ There are 5 levels of logs. You can view your logs in the tab "logat", in which 
 * `Log.e`: error
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## References
 
