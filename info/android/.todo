@@ -74,3 +74,18 @@ themes.xml
     => add the colors to the app
 
 Dark theme: https://developer.android.com/codelabs/basic-android-kotlin-training-change-app-theme
+
+********
+Icon
+********
+
+different manufacturers may show app icons in a different shape than
+the circular icon shape :  square shape, rounded square, or squircle (between a square and circle)...
+
+https://developer.android.com/training/multiscreen/screendensities#TaskProvideAltBmp
+
+Adaptive icons since v26
+=> background
+=> foreground
+=> + new image asset
+    => new assets should be moved in the same folder v26
