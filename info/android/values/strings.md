@@ -51,22 +51,26 @@ var myText = getString(R.string.price, "$3")
 
 <div class="row row-cols-md-2 mx-0"><div>
 
-**Edit translations**
+**Add/Edit translation**
 
-* Open Resources Manager
-* Go to "String"
-* Click on Open Translations Editor
+1. Open Resources Manager
+2. Go to "String"
+3. Click on Open Translations Editor <small>(may take some time to appear)</small>
+
+![Open Translations Editor](../_images/OpenTranslationsEditor.png)
 
 </div><div>
 
 **Add another language**
 
-1. Create a new "Android resources directory"
-2. Click on "Locale" then ">>"
-3. Select a locale, and optionally a region
-4. Switch to project view
-5. Copy, and paste "strings.xml" inside the new folder
-6. Switch back to android view
+1. Open Resources Manager
+2. Go to "String"
+3. Click on "+", and add new "String Resource File"
+4. Enter "strings"
+5. Click on "Locale" in Qualifiers, then ">>", and select your Locale
+6. Directory name should have changed accordingly
+7. Press "ok"
+
 </div></div>
 
 <hr class="sr">
