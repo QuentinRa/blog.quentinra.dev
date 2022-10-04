@@ -40,3 +40,27 @@ while(i<5) {
 }
 
 "$value"
+
+parent/superclass/baseclass
+child/subclass
+Root or top-level class
+
+abstract class AClass(){
+    abstract val xxx: String
+
+    abstract fun aName(): XXX
+}
+
+class AClass : AnotherClass {]
+class AClass : AnotherClass(...) {
+    override val xxx = "value"
+
+    override fun aName(): XXX {}
+}
+super.xxx()
+
+open class AClass {}
+
+with (variable) {
+    // access all properties of variables without variable.
+}
