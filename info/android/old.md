@@ -101,14 +101,6 @@ toast.show()
 </details>
 
 <details class="details-e">
-<summary>Set a drawable (image) in the code</summary>
-
-You have `anImageView.setImageResource(int)` which is taking the ID of the new image (drawable). You can use `R.drawable.your_drawable` to get the ID of `your_drawable`. See Resources Manager if you need to important a drawable.
-
-Don't forget to update `contentDescription`, or any accessibility-related attributes, if needed.
-</details>
-
-<details class="details-e">
 <summary>Get/set a text from the code</summary>
 
 You can get a text from the code using

@@ -58,6 +58,49 @@ The layout is handled by a **ViewGroup**. Layouts are edited using the layout ed
 
 </div></div>
 
+<details class="details-e">
+<summary>Useful Attributes/Methods for well-known Views</summary><br>
+
+<table class="table table-bordered table-striped border-dark">
+<thead>
+<tr><th>View</th><th>Useful attributes</th><th>Useful Methods</th></tr>
+</thead>
+<tbody>
+
+<tr><td><b>View</b><br><i>extends View</i></td><td>
+
+</td><td></td></tr>
+
+<tr><td><b>TextView</b><br><i>extends View</i></td><td>
+
+* `text`
+*  (settings) `text`: this text is only shown when editing. <small>It's useful when a text should be empty by default, but you want to see what it will look like once filed.</small>
+</td><td></td></tr>
+
+<tr><td><b>ImageView</b><br><i>extends View</i></td><td>
+
+* `scaleType`: use "centerCrop" to scale without distorting (9patches)
+* `srcCompat`: set image
+</td><td>
+
+* `setImageResource(drawable_id)`: set image in the code. <small>Don't forget to update `contentDescription`, or any accessibility-related attributes, if needed.</small>
+</td></tr>
+
+<tr><td><b>Button</b><br><i>extends TextView</i></td><td>
+
+</td><td></td></tr>
+</tbody></table>
+</details>
+
+<details class="details-e">
+<summary>Accessibility</summary>
+
+You have some attributes to increase accessibility
+
+* `contentDescription`: what's the purpose of this element
+* `importantForAccessibility`: if this element is just decorative, you can set it to no
+</details>
+
 <hr class="sl">
 
 ## Layout Editor
@@ -78,47 +121,7 @@ The layout is handled by a **ViewGroup**. Layouts are edited using the layout ed
 ![Layout Editor](_images/layout_editor.png)
 </div></div>
 
-**TIP**: you should rely on CTRL+F to search for attributes, or by clicking on the search icon at the top of the "Attributes" window.
-
-<details class="details-e">
-<summary>Notables attributes</summary><br>
-
-<table class="table table-bordered table-striped border-dark">
-<thead>
-<tr><th>View</th><th>Useful attributes</th></tr>
-</thead>
-<tbody>
-
-<tr><td><b>View</b><br><i>extends View</i></td><td>
-
-</td></tr>
-
-<tr><td><b>TextView</b><br><i>extends View</i></td><td>
-
-* `text`
-*  (settings) `text`: this text is only shown when editing. <small>It's useful when a text should be empty by default, but you want to see what it will look like once filed.</small>
-</td></tr>
-
-<tr><td><b>ImageView</b><br><i>extends View</i></td><td>
-
-* `scaleType`: use "centerCrop" to scale without distorting (9patches)
-* `srcCompat`: set image
-</td></tr>
-
-<tr><td><b>Button</b><br><i>extends TextView</i></td><td>
-
-</td></tr>
-</tbody></table>
-</details>
-
-<details class="details-e">
-<summary>Accessibility</summary>
-
-You have some attributes to increase accessibility
-
-* `contentDescription`: what's the purpose of this element
-* `importantForAccessibility`: if this element is just decorative, you can set it to no
-</details>
+**TIP**: you should rely on <kbd>CTRL+F</kbd> to search for attributes, or by clicking on the search icon at the top of the "Attributes" window.
 
 <hr class="sr">
 
@@ -160,12 +163,12 @@ You can drag, and drop it in the design view (or select it when creating a new i
 **Access resources in the code**
 
 <details class="details-e">
-<summary>Access resource id in the code</summary>
+<summary>Access resource's (view...) Id in the code</summary>
 
 Each resource may have an id. The main class `R` is managing every id trough subclasses such as `drawable`. If you want a drawable with the id `ic_launcher_foreground` do:
 
 ```kotlin
-val drawableId = R.drawable.ic_launcher_foreground;
+val drawableId : Int = R.drawable.myDrawable
 ```
 </details>
 
