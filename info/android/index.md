@@ -301,6 +301,18 @@ Material design is a library of pre-made components. Google recommends to use Ma
 * Text field: `TextInputLayout` (see [text field](https://material.io/components/text-fields/android#using-text-fields))
 * Switch: `SwitchMaterial` (create a switch, change the type in the .xml)
 
+<details class="details-e">
+<summary>Icons</summary>
+
+* Open the resources manager
+* "+" > new vector asset
+* click on the android icon for "clip art"
+* select an icon
+
+For Android 20, or older versions, you need to add `vectorDrawables.useSupportLibrary = true` in build.gradle > Android > defaultConfig.
+
+</details>
+
 <hr class="sl">
 
 ## Debugging
