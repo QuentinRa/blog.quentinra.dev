@@ -111,8 +111,6 @@ The layout is handled by a **ViewGroup**. Layouts are edited using the layout ed
 
 <tr><td><b>RadioButton</b><br><i>extends Button*</i></td><td></td><td></td></tr>
 
-<tr><td><b>RadioButton</b><br><i>extends Button*</i></td><td></td><td></td></tr>
-
 <tr><td><b>EditText</b><br><i>extends TextView</i></td><td>
 
 * `inputType`: determine the [keyboard](https://developer.android.com/develop/ui/views/touch-and-input/keyboard-input/style). Can use multiple types.
