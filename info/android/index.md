@@ -111,6 +111,59 @@ The layout is handled by a **ViewGroup**. Layouts are edited using the layout ed
 </tbody></table>
 </details>
 
+<details class="details-e">
+<summary>Accessibility</summary>
+
+You have some attributes to increase accessibility
+
+* `contentDescription`: what's the purpose of this element
+* `importantForAccessibility`: if this element is just decorative, you can set it to no
+</details>
+
+<hr class="sr">
+
+## Resources
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+Images, texts, views, basically everything that is not a Kotlin file, is a resource. They are all stored in the  **📂res** folder
+
+* **drawables**: images
+* **layouts**: views
+* **mipmap**: icons
+* **values**: colors+theme, and strings
+* ...
+
+<details class="details-e">
+<summary>Resources Manager</summary>
+
+You can access the Resources Manager, which track every resource in `res`, and allow you to add new ones
+
+* from the Left side, right under "project")
+* with View > Tools Windows > Resources Manager
+
+![Resources Manager Android Studio](_images/resources_manager_as.png)
+</details>
+
+<details class="details-e">
+<summary>Add a new "drawable" (image)</summary>
+
+* Go to Drawables tab in the Resources Manager
+* Click on "+"
+* Import drawables
+
+You can drag, and drop it in the design view (or select it when creating a new imageview).
+</details>
+
+</div><div>
+
+**Access resources in the code**
+
+...
+
+</div></div>
+
+
 <hr class="sl">
 
 ## Debugging

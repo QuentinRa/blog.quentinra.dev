@@ -1,8 +1,3 @@
-## old
-
-
-<hr class="sr">
-
 ## Good practices
 
 <div class="row row-cols-md-2 mt-4"><div>
@@ -13,15 +8,6 @@
 If you create a TextField, or something having some text shown to the user, then it's a good practice to put the text inside a file "strings.txt". You can click on the "warning", then expand "Hardcoded text", and click on fix.
 </details>
 </div><div>
-
-<details class="details-e">
-<summary>Accessibility</summary>
-
-You have some attributes to increase accessibility
-
-* `contentDescription`: what's the purpose of this element
-* `importantForAccessibility`: if this element is just decorative, you can set it to no
-</details>
 </div></div>
 
 <hr class="sl">
@@ -29,8 +15,6 @@ You have some attributes to increase accessibility
 ## Resources Manager
 
 <div class="row row-cols-md-2 mx-0"><div>
-
-On the left side, or in View > Tools Windows, you got the "Resources Manager". This is a tab in which you can easily track every resource of your application, in other words, files in `res`.
 
 <details class="details-e">
 <summary>Add a new "drawable" (image)</summary>
@@ -95,25 +79,6 @@ getResources().getString(R.string.myStringID, value_for_index1, ...)
 <hr class="sr">
 
 ## Activities
-
-<div class="row row-cols-md-2 mx-0"><div>
-
-Activities are screens of your application. The "main" screen is usually called "Main Activity".
-
-```kotlin
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        // set the layout: activity_main.xml
-        setContentView(R.layout.activity_main)
-        // add your code here
-    }
-}
-```
-</div><div>
 
 <details class="details-e">
 <summary>Access a <code>View</code> in the code</summary>
@@ -186,4 +151,3 @@ aTextView.text = myString
 aTextView.setText(R.string.myStringID)
 ```
 </details>
-</div></div>
