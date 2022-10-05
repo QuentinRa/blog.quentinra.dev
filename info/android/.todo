@@ -85,6 +85,20 @@ https://developer.android.com/codelabs/basic-android-kotlin-training-display-lis
 https://developer.android.com/reference/com/google/android/material/card/MaterialCardView
 
 ----------------
+private lateinit var binding: ActivityMainBinding
+binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+----------------
+val shareIntent = ShareCompat.IntentBuilder.from(this)
+                .setText("...")
+                .setType("text/plain")
+                .intent
+try {
+    startActivity(shareIntent)
+} catch (ex: ActivityNotFoundException) {
+    Toast.makeText(this, "Sharing not available",
+    Toast.LENGTH_LONG).show()
+}
+----------------
 
 Resource type: Menu
 => Menu Item
