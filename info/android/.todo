@@ -9,6 +9,8 @@
 
 https://developer.android.com/docs
 https://developer.android.com/teach
+https://developer.android.com/guide
+https://developer.android.com/develop/ui
 
 https://developer.android.com/codelabs/basic-android-kotlin-training-polished-user-experience
 => Talkback
@@ -81,3 +83,35 @@ https://developer.android.com/codelabs/basic-android-kotlin-training-display-lis
 3 => easy way to import icon
 
 https://developer.android.com/reference/com/google/android/material/card/MaterialCardView
+
+----------------
+
+Resource type: Menu
+=> Menu Item
+    id
+    title
+    icon
+    showAsAction
+    => always: not in overflow
+
+ContextCompat.getDrawable(this, R.drawable.ic_grid_layout)
+
+override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+   menuInflater.inflate(R.menu.your_menu_layout, menu)
+
+   // find menu item
+   menu?.findItem(R.id.some_menu_item)
+
+   return true
+}
+
+override fun onOptionsItemSelected(item: MenuItem): Boolean {
+   return when (item.itemId) {
+       R.id.some_menu_item -> {
+            // ...
+            return true
+       }
+       //  Otherwise, do nothing and use the core event handling
+       else -> super.onOptionsItemSelected(item)
+   }
+}

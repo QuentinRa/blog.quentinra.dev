@@ -15,7 +15,7 @@ Each screen of your application is an **Activity**. The "main" screen is usually
 * **MainActivity.kt** for the code handling the view
 * **activity_main.xml** for the view
 
-An **intent** is an object representing some action to be performed. There are two kinds of intents
+An [**intent**](https://developer.android.com/guide/components/intents-filters) is an object representing some action to be performed. There are two kinds of intents
 
 * **Explicit**: everything related to your app <small>(ex: launch another activity)</small>
 * **Implicit**: this is a type of action that you request another app, or the system to do <small>(ex: open link, share something)</small>
