@@ -2,54 +2,103 @@
 
 [Go back](../index.md#views)
 
-RecyclerView is a "new" way of displaying lists, that is more efficient, and use less memory, as it is recycling views that disappeared, to show the new elements of the list that showed up. The recycler view is handled by multiple actors
+RecyclerView is a "new" way of displaying lists, that is more efficient, and use less memory, as it is recycling views that disappeared, to show the new elements of the list that showed up. The recycler view is made of three main parts
 
-* item - One data item of the list to display. Represents one Affirmation object in your app.
-* Adapter - Takes data and prepares it for RecyclerView to display.
-* ViewHolders - A pool of views for RecyclerView to use and reuse to display affirmations.
-* RecyclerView - Views on screen
+* an **Item**
+  * a view
+  * a model
+* a **RecyclerView**, in which all items are displayed
+* an **Adapter**+**ViewHolder**, which is filling the RecyclerView with the Items, and handling the recycling of the views
 
-> Since your layout only has a single child view, RecyclerView, you can switch to a simpler ViewGroup called FrameLayout that should be used for holding a single child view.
-> * Replace `ConstraintLayout` in the .fxml with `FrameLayout`
-> * Or click on `ConstraintLayout` in the layer tree > Convert view > `FrameLayout`
+<hr class="sl">
 
-RecyclerView supports displaying items in different ways, such as a linear list or a grid.
+## RecyclerView
 
-* `scrollbars`: `vertical`
-* `layoutManager`: `LinearLayoutManager`
+<div class="row row-cols-md-2 mx-0"><div>
 
-**Creating the adapter**
+* Place a RecyclerView
+* (Optional) if the RecyclerView is the only child, you should use a `FrameLayout` instead of a `ConstraintLayout`
+</div><div>
 
-* Need `context` to access stuff
+RecyclerView support different modes of displaying items: Linear, Grid... Set the attribute `layoutManager` to the value you want (ex: `LinearLayoutManager`).
+
+You shouldn't forget to enable scrollbars. Search for the attribute `scrollbars`, and enable the ones you want.
+</div></div>
+
+<hr class="sr">
+
+## Adapter, and RecyclerView
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+1. You usually provide a **collection of items** to your Adapter
 
 ```kotlin
-class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
-// stuff related to the view of one item
+class DummyAdapter(private val items: List<Any>)
+```
+
+2. You will also create a **layout for one element**
+
+Some fxml with the id `R.layout.xxx` here. Let's say there is a button inside, with the id "myButton".
+
+3. You will create a "**ViewHolder**", which is a class **helping** you **access the views inside the layout** for one element
+
+```kotlin
+class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+  val myButton: Button = view.findViewById(R.id.myButton)
 }
+```
 
-class ItemAdapter(...) : : RecyclerView.Adapter<ItemViewHolder>() {
+4. Then, you will have to define how to fill the layout with one element, using the **collection of items**, and the **ViewHolder**
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
-       return ItemViewHolder(LayoutInflater.from(parent.context)
-       .inflate(R.layout.list_item, parent, false))
+```kotlin
+// something stupid
+holder.myButton.text = items[position].toString()
+```
+
+</div><div>
+
+```kotlin
+class DummyAdapter(private val items: List<Any>) : RecyclerView.Adapter<DummyAdapter.ViewHolder>() {
+
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val myButton: Button = view.findViewById(R.id.myButton)
     }
-    
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        return ViewHolder(LayoutInflater.from(parent.context)
+            .inflate(R.layout.xxx, parent, false))
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        // for instance
+        holder.myButton.text = items[position].toString()
+    }
+
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
-    }
-    
-    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        return items.size
     }
 }
+```
+</div></div>
 
+<hr class="sl">
+
+## Activity.kt
+
+```kotlin
 // create
 recyclerView.adapter = ItemAdapter(this, myDataset)
+```
+
+* If the size of your dataset/collection of items is fixed
+
+```kotlin
 recyclerView.setHasFixedSize(true)
 ```
 
-Documentation: https://developer.android.com/develop/ui/views/layout/recyclerview
+<hr class="sr">
 
-<hr>
+## References
 
-wrap in MaterialCardView
+* [Create dynamic lists with RecyclerView](https://developer.android.com/develop/ui/views/layout/recyclerview)

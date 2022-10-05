@@ -111,3 +111,5 @@ init {
 object Layout {
    val XXX = 1
 }
+
+listOf arrayOf
