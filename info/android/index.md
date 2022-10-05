@@ -276,17 +276,35 @@ toast.show()
 </details>
 </div><div>
 
-<details class="details-e">
-<summary>Listeners</summary>
-
 As in Java, you have listeners which are called when an event is triggered (ex: `click on a button`).
 
-Example for "OnClickListener", a listener added on a button, that is called when a user click the button.
+<details class="details-e">
+<summary>OnClickListener (click on a button)</summary>
+
+Example for "OnClickListener", a listener added on a button, that is called when a user click on it.
 
 ```kotlin
 val myButton: Button = findViewById(R.id.myButton)
 myButton.setOnClickListener {
     println("Clicked on myButton")
+}
+```
+</details>
+
+<details class="details-e">
+<summary>OnKeyListener (click on a key)</summary>
+
+Example for "OnKeyListener", a listener added on a input field, that is called when a user press a key. The function takes a view, a keycode, and a keyEvent, and returns true if the event was handled.
+
+```kotlin
+val myEditText: EditText = findViewById(R.id.myEditText)
+myEditText.setOnKeyListener { v, keyCode, keyEvent ->
+    // if A pressed
+    if (keyCode == KeyEvent.KEYCODE_A) {
+        // ...
+        return@setOnKeyListener true
+    }
+    return@setOnKeyListener false
 }
 ```
 </details>

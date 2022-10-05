@@ -88,3 +88,11 @@ override fun toString(): String {
 }
 
 vararg param
+_ for unused parameter
+
+!!. assert non null
+?. if non null
+
+xxx.yyy {
+    return@unit_function return_type_if_any
+}
