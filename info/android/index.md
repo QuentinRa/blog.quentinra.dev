@@ -76,6 +76,85 @@ The layout, the arrangement of the views, is handled by a **ViewGroup**. Layouts
 * `setText(stringId)`: there is also `setText(string)`, but that's better to use `text` in such case.
 
 </details>
+
+<details class="details-e">
+<summary>Display an image with <code>ImageView</code></summary>
+
+* **Inheritance**: ImageView extends View
+* **Documentation**: [ImageView](https://developer.android.com/reference/android/widget/ImageView)
+
+**Useful attributes**
+
+* `scaleType`: use "centerCrop" to scale without distorting (9patches)
+* `srcCompat`: set image
+
+**useful methods**
+
+* `setImageResource(drawable_id)`: set image in the code. <small>Don't forget to update `contentDescription`, or any accessibility-related attributes, if needed.</small>
+</details>
+
+<details class="details-e">
+<summary>Display a button with <code>Button</code></summary>
+
+* **Inheritance**: Button extends TextView
+* **Documentation**: [Button](https://developer.android.com/reference/android/widget/Button)
+
+**Useful attributes**
+
+* ...
+
+**useful methods**
+
+* `setOnClickListener`
+</details>
+
+<details class="details-e">
+<summary>Display a RadioButton  with <code>RadioButton+RadioGroup</code></summary>
+
+* **Inheritance**: RadioButton extends Button <small>(CompoundButton to be fair)</small>, RadioGroup extends LinearLayout
+* **Documentation**: [RadioButton](https://developer.android.com/reference/android/widget/RadioButton), and [RadioGroup](https://developer.android.com/reference/android/widget/RadioGroup)
+
+RadioGroup is a ViewGroup used to ensure that only one RadioButton can be selected at a time.
+
+**Useful attributes**
+
+* RadioGroup#`checkedButton`
+
+**useful methods**
+
+* RadioGroup#`setOnCheckedChangeListener`: parameters are radio group, and the Id of the checked button.
+</details>
+
+<details class="details-e">
+<summary>Display a switch  with <code>Switch</code></summary>
+
+* **Inheritance**: Switch extends Button <small>(CompoundButton to be fair)</small>
+* **Documentation**: [Switch](https://developer.android.com/reference/android/widget/Switch)
+
+**Useful attributes**
+
+* `checked`
+
+**useful methods**
+
+* `isChecked`
+</details>
+
+<details class="details-e">
+<summary>Display a text field  with <code>EditText</code></summary>
+
+* **Inheritance**: EditText extends TextView
+* **Documentation**: [EditText](https://developer.android.com/reference/android/widget/EditText)
+
+**Useful attributes**
+
+* `inputType`: determine the [keyboard](https://developer.android.com/develop/ui/views/touch-and-input/keyboard-input/style). Can use multiple types.
+* `hint`: placeholder
+
+**useful methods**
+
+* ...
+</details>
 </div></div>
 
 <hr class="sl">
