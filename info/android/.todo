@@ -129,3 +129,12 @@ override fun onOptionsItemSelected(item: MenuItem): Boolean {
        else -> super.onOptionsItemSelected(item)
    }
 }
+----------------
+----------------
+Initialized
+-OnCreate> Created -onDestroy> Destroyed
+           <OnStop-OnStart/OnRestart*> Started (=activity visible) <OnPause-OnResume> Resumed (=activity focused)
+The schema in the course is quite good.
+
+If it's a restart, then both restart then start are called.
+OnRestart is called is the activity has already been started once.
