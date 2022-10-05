@@ -99,3 +99,7 @@ xxx.yyy {
 
 xxx as YYY
 xxx as? YYY
+
+- "data class XXX": classes only used to store/manipulate data
+- data classes must have at least one property defined.
+- create a "date source" that loads data

@@ -58,6 +58,7 @@ Each View has attributes, or properties, for instance, you can define the text s
 The layout, the arrangement of the views, is handled by a **ViewGroup**. Layouts are edited using the layout editor. They are located in `.../res/layout/xxx.xml`.
 
 * [ConstraintLayout](layouts/ConstraintLayout.md): arrange elements in a flexible way
+* [RecyclerView](layouts/RecyclerView.md): not a ViewGroup, but an efficient way of displaying a flexible list of elements.
 </div><div>
 
 <details class="details-e">
