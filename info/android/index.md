@@ -47,9 +47,9 @@ Everything displayed on the screen is a **View**. `View` doesn't mean that this 
 Each View has attributes, or properties, for instance, you can define the text shown in TextView using the attribute `text`. As some views are sharing common properties, they are **inheriting** others views, which means that they have the attributes of the view that they are inheriting, along with their own attributes.
 
 <details class="details-e">
-<summary>View : the base class of all views</summary>
+<summary>View: the base class of all views</summary>
 
-**Accessibility**
+**Accessibility (attributes)**
 
 * `contentDescription`: what's the purpose of this element
 * `importantForAccessibility`: if this element is just decorative, you can set it to no
@@ -59,7 +59,7 @@ The layout, the arrangement of the views, is handled by a **ViewGroup**. Layouts
 
 * [ConstraintLayout](layouts/ConstraintLayout.md): arrange elements in a flexible way
 * [RecyclerView](layouts/RecyclerView.md): not a ViewGroup, but an efficient way of displaying a flexible list of elements.
-</div><div>
+</div><div class="align-self-center">
 
 <details class="details-e">
 <summary>Display a text with <code>TextView</code></summary>

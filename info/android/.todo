@@ -42,6 +42,24 @@ context.resources.getStringArray(R.array.words).toList()
 
 title = getString(R.string.detail_prefix) + " " + letterId
 -----------------
+An intent is an object representing some action to be performed. There are two kinds of intents
+
+* explicit: for everything related to your app (ex: launch another activity)
+* implicit: this is a type of action that you request another app, or the system to do
+    * open link
+    * share something
+    * ...
+
+holder.myButton.setOnClickListener {
+            val context = holder.itemView.context
+            val intent = Intent(context, MainActivity::class.java)
+            intent.putExtra("param", holder.myButton.text.toString())
+            context.startActivity(intent)
+        }
+
+val someParam = intent?.extras?.getString("param").toString()
+println("param is $someParam")
+-----------------
 
 ## Material Design
 

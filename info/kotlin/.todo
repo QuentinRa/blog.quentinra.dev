@@ -131,6 +131,15 @@ c.shuffled()
 c.take(take_only_n_elements)
 c.sort() but already
 
+something.variable.also {
+    it.MethodOnVariable()
+    it.MethodOnVariable()
+}
+something.variable.apply {
+    MethodOnVariable()
+    MethodOnVariable()
+}
+
 .joinToString(", ")
 
 (ParamType) -> ReturnType
