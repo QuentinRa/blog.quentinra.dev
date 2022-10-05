@@ -148,3 +148,13 @@ something.variable.apply {
 xxx.yyy {} (lambda expression)
 
 str.startsWith("b", ignoreCase = true)
+
+-----------------
+companion object {
+    const val SOME_PARAM = "param"
+}
+
+CLASS_NAME.SOME_PARAM
+
+companion object is basically associating a nameless "object" to another class,
+while this object is kinda a singleton, or sis static.

@@ -59,6 +59,15 @@ holder.myButton.setOnClickListener {
 
 val someParam = intent?.extras?.getString("param").toString()
 println("param is $someParam")
+
+USE "STATIC" in the loading activity
+-----------------
+val queryUrl: Uri = Uri.parse("url/urn")
+tel:
+https:
+
+val intent = Intent(Intent.ACTION_VIEW, queryUrl)
+context.startActivity(intent)
 -----------------
 
 ## Material Design
