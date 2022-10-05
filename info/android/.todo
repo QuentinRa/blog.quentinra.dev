@@ -138,3 +138,16 @@ The schema in the course is quite good.
 
 If it's a restart, then both restart then start are called.
 OnRestart is called is the activity has already been started once.
+
+OnPause: when share opened, screen partially visible, paused
+Whatever code runs in onPause() blocks other things from displaying, so keep the code in onPause() lightweight.
+For example, if a phone call comes in, the code in onPause() may delay the incoming-call notification.
+
+The system destroy app when there are big changes, and it would be better to "create" the app again
+(ex: language changed, rotation of the screen).
+
+Started to Created => onSaveInstanceState
+Created to Started => onRestoreInstanceState
+
+You can use bundle, an in-memory small dictionary (string->?), to store data.
+We mostly used OnCreate to restore, because onRestoreInstanceState is called after start.

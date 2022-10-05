@@ -97,7 +97,7 @@ The layout, the arrangement of the views, is handled by a **ViewGroup**. Layouts
 
 * [ConstraintLayout](layouts/ConstraintLayout.md): arrange elements in a flexible way
 * [RecyclerView](layouts/RecyclerView.md): not a ViewGroup, but an efficient way of displaying a flexible list of elements.
-</div><div class="align-self-center">
+</div><div>
 
 <details class="details-e">
 <summary>Display a text with <code>TextView</code></summary>
