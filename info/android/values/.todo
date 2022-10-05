@@ -1,2 +1,55 @@
 https://medium.com/android-news/android-localisations-with-mobile-country-code-1c1596857d5
 https://developer.android.com/guide/topics/resources/providing-resources
+
+---------------------
+
+********
+Theme
+********
+
+https://material.io/design/introduction#theming
+=> https://material.io/design/material-theming/implementing-your-theme.html#color
+
+themes.xml
+=> name="Theme.XXX"
+=> https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=00E5FF
+    => click on primary/secondary/... and pick colors
+    => add the colors to the app
+
+Dark theme: https://developer.android.com/codelabs/basic-android-kotlin-training-change-app-theme
+
+By convention, each style should have a parent, and be named as the parent, while replacing the "MaterialComponents" by "YOUR_APP_NAME".
+
+```xml
+<style name="Widget.YOUR_APP_NAME.TextView" parent="Widget.MaterialComponents.TextView">
+</style>
+```
+
+According to Material Design specs, your input fields should have a minimum height of 48, icons should be 24x24... You can read an example for [lists (specs MD)](https://material.io/components/lists#specs).
+
+https://github.com/material-components/material-components-android/tree/master/docs/components
+
+<style name="Widget.xxx.CompoundButton.RadioButton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+   <item name="android:paddingStart">8dp</item>
+   <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+</style>
+<style name="Widget.xxx.CompoundButton.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+   <item name="android:minHeight">48dp</item>
+   <item name="android:gravity">center_vertical</item>
+   <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+</style>
+<style name="Widget.xxxx.TextView" parent="Widget.MaterialComponents.TextView">
+    <item name="android:minHeight">48dp</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+</style>
+
+Then, you have to apply the style to each component.
+
+You can create xml files for frequently used values.
+@filename/key
+
+Add theme
+<item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+<item name="radioButtonStyle">@style/Widget.TipTime.CompoundButton.RadioButton</item>
+<item name="switchStyle">@style/Widget.TipTime.CompoundButton.Switch</item>
