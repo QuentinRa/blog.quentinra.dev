@@ -96,3 +96,6 @@ _ for unused parameter
 xxx.yyy {
     return@unit_function return_type_if_any
 }
+
+xxx as YYY
+xxx as? YYY

@@ -8,13 +8,6 @@
 https://developer.android.com/docs
 https://developer.android.com/teach
 
-Wrap everything in a ScrollView.
-
-The InputMethodManager controls if a soft keyboard is shown, hidden, and allows the user to choose which soft keyboard is displayed. The method returns true if the key event was handled, and returns false otherwise.
-MainActivity.kt
-
-#setOnKeyListener => Listener for "enter"
-
 https://developer.android.com/codelabs/basic-android-kotlin-training-polished-user-experience
 => Talkback
 => Tint/Dark mode

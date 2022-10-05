@@ -129,6 +129,8 @@ You have some attributes to increase accessibility
 * `importantForAccessibility`: if this element is just decorative, you can set it to no
 </details>
 
+> **Remainder**: try to rotate the screen, and see if the view is still fine. If not, you may use a ScrollView, disable rotation...
+
 <hr class="sl">
 
 ## Layout Editor
