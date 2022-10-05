@@ -6,7 +6,7 @@ There are multiple ways to develop apps for Android devices. This course will fo
 
 <hr class="sl">
 
-## Activities
+## Activities, and Intents
 
 <div class="row row-cols-md-2 mx-0"><div>
 
@@ -14,6 +14,11 @@ Each screen of your application is an **Activity**. The "main" screen is usually
 
 * **MainActivity.kt** for the code handling the view
 * **activity_main.xml** for the view
+
+An **intent** is an object representing some action to be performed. There are two kinds of intents
+
+* **Explicit**: everything related to your app <small>(ex: launch another activity)</small>
+* **Implicit**: this is a type of action that you request another app, or the system to do <small>(ex: open link, share something)</small>
 
 </div><div>
 
@@ -34,6 +39,39 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 </details>
+
+<details class="details-e">
+<summary>Explicit intent: start another activity</summary>
+
+```kotlin
+val intent = Intent(context, MainActivity::class.java)
+// optional, you can add extra parameters
+intent.putExtra("param", holder.myButton.text.toString())
+context.startActivity(intent)
+```
+
+In the new activity, you may load some parameters using
+
+```kotlin
+val someParam = intent?.extras?.getString("param").toString()
+```
+
+**Note**: `"param"` should be a constant string.
+</details>
+
+<details class="details-e">
+<summary>Implicit intent: start another activity</summary>
+
+* ACTION_VIEW is used with a page web (`https:`), a mail (`mailto:`), or a telephone (`tel:`)
+
+```kotlin
+val intent = Intent(Intent.ACTION_VIEW, Uri.parse("???"))
+context.startActivity(intent)
+```
+
+There is a lot of [Intents here](https://developer.android.com/reference/android/content/Intent).
+</details>
+
 </div></div>
 
 <hr class="sr">
