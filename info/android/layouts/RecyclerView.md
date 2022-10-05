@@ -99,6 +99,12 @@ recyclerView.setHasFixedSize(true)
 
 <hr class="sr">
 
+## MaterialCardView
+
+You can wrap your view in a MaterialCardView. See [MaterialCardView](https://developer.android.com/reference/com/google/android/material/card/MaterialCardView)
+
+<hr class="sl">
+
 ## References
 
 * [Create dynamic lists with RecyclerView](https://developer.android.com/develop/ui/views/layout/recyclerview)
