@@ -274,6 +274,23 @@ val toast = Toast.makeText(this, "Some message", Toast.LENGTH_SHORT)
 toast.show()
 ```
 </details>
+
+<details class="details-e">
+<summary>Keyboard</summary>
+
+You can get an `` which is handling the input of the application with
+
+```kotlin
+val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+```
+
+**Hide keyboard** (given a view)
+
+```kotlin
+inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
+```
+
+</details>
 </div><div>
 
 As in Java, you have listeners which are called when an event is triggered (ex: `click on a button`).
