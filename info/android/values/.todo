@@ -16,7 +16,10 @@ themes.xml
     => click on primary/secondary/... and pick colors
     => add the colors to the app
 
+android:textAppearance="?attr/textAppearanceHeadline6"
+
 Dark theme: https://developer.android.com/codelabs/basic-android-kotlin-training-change-app-theme
+Always update the dark theme too.
 
 By convention, each style should have a parent, and be named as the parent, while replacing the "MaterialComponents" by "YOUR_APP_NAME".
 

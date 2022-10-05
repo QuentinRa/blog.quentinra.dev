@@ -1,7 +1,9 @@
 * Pick android version
 * Switch Project View
 * Device emulator
-* Android Tests + Advanced testing (https://developer.android.com/codelabs/android-basics-kotlin-write-instrumentation-tests)
+* Android Tests + Advanced testing
+=> https://developer.android.com/codelabs/android-basics-kotlin-write-instrumentation-tests
+=> https://developer.android.com/codelabs/android-basics-kotlin-affirmations-test-lists-and-adapters
 * You got options to do things faster using right-click.
 * Android Application Lifecycle
 
@@ -13,6 +15,10 @@ https://developer.android.com/codelabs/basic-android-kotlin-training-polished-us
 => Tint/Dark mode
 
 > **Remainder**: try to rotate the screen, and see if the view is still fine. If not, you may use a ScrollView, disable rotation...
+
+@StringRes
+@DrawableRes
+@LayoutRes
 
 ********
 Icon
@@ -28,3 +34,8 @@ Adaptive icons since v26
 => foreground
 => + new image asset
     => new assets should be moved in the same folder v26
+
+https://developer.android.com/codelabs/basic-android-kotlin-training-display-list-cards
+3 => easy way to import icon
+
+https://developer.android.com/reference/com/google/android/material/card/MaterialCardView

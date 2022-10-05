@@ -49,3 +49,7 @@ recyclerView.setHasFixedSize(true)
 ```
 
 Documentation: https://developer.android.com/develop/ui/views/layout/recyclerview
+
+<hr>
+
+wrap in MaterialCardView
