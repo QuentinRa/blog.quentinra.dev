@@ -113,3 +113,29 @@ object Layout {
 }
 
 listOf arrayOf
+toSet() setOf() mutableSetOf()
+set1 == set2 : true if equals
+
+mutableMapOf<TK, TV>(
+    key to value,
+    ...
+)
+put(key, value)
+m[key] = value
+
+c.forEach { /* ... using it */ }
+c.map { /* generate a new collection applying a transformation on each it.key it.value */ }
+c.filter { /* if true allow, use it */ }
+c.sortedWith {}
+c.shuffled()
+c.take(take_only_n_elements)
+c.sort() but already
+
+.joinToString(", ")
+
+(ParamType) -> ReturnType
+=> you could give { v: Type -> expression_evaluated_to_return_type }
+
+xxx.yyy {} (lambda expression)
+
+str.startsWith("b", ignoreCase = true)

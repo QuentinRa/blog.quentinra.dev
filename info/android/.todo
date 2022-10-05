@@ -24,6 +24,44 @@ FrameLayout: a single child view.
 @DrawableRes
 @LayoutRes
 
+-----------------
+recyclerView.layoutManager = LinearLayoutManager(this)
+// Adds a [DividerItemDecoration] between items
+recyclerView.addItemDecoration(
+    DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
+)
+
+@RequiresApi(Build.VERSION_CODES.LOLLIPOP)
+
+<resources>
+    <string-array name="words">
+    </string-array>
+</resources>
+
+context.resources.getStringArray(R.array.words).toList()
+
+title = getString(R.string.detail_prefix) + " " + letterId
+-----------------
+
+## Material Design
+
+Material design is a library of pre-made components. Google recommends to use Material UI components as much as possible. The list [of Material components for Android can be found here](https://material.io/components?platform=android).
+
+* Text field: `TextInputLayout` (see [text field](https://material.io/components/text-fields/android#using-text-fields))
+* Switch: `SwitchMaterial` (create a switch, change the type in the .xml)
+
+<details class="details-e">
+<summary>Icons</summary>
+
+* Open the resources manager
+* "+" > new vector asset
+* click on the android icon for "clip art"
+* select an icon
+
+For Android 20, or older versions, you need to add `vectorDrawables.useSupportLibrary = true` in build.gradle > Android > defaultConfig.
+
+</details>
+
 ********
 Icon
 ********
