@@ -44,92 +44,39 @@ class MainActivity : AppCompatActivity() {
 
 Everything displayed on the screen is a **View**. `View` doesn't mean that this is only a something displayed, it be also be something clickable/editable...
 
-* Display a text: `TextView`
-* Display an image: `ImageView`
-* Display a button: `Button`
-* Display a input field: `EditText`
-* Display a radio button: `RadioButton` + `RadioGroup`
-* Display a toggle button: `Switch`
-</div><div>
-
-The layout is handled by a **ViewGroup**. Layouts are edited using the layout editor. They are located in `.../res/layout/xxx.xml`.
-
-* [ConstraintLayout](layouts/ConstraintLayout.md): arrange elements in a flexible way
-
-</div></div>
+Each View has attributes, or properties, for instance, you can define the text shown in TextView using the attribute `text`. As some views are sharing common properties, they are **inheriting** others views, which means that they have the attributes of the view that they are inheriting, along with their own attributes.
 
 <details class="details-e">
-<summary>Useful Attributes/Methods for well-known Views</summary><br>
+<summary>View : the base class of all views</summary>
 
-<table class="table table-bordered table-striped border-dark">
-<thead>
-<tr><th>View</th><th>Useful attributes</th><th>Useful Methods</th></tr>
-</thead>
-<tbody>
-
-<tr><td><b>View</b><br><i>extends View</i></td><td>
-
-</td><td></td></tr>
-
-<tr><td><b>TextView</b><br><i>extends View</i></td><td>
-
-* `text`
-*  (settings) `text`: this text is only shown when editing. <small>It's useful when a text should be empty by default, but you want to see what it will look like once filed.</small>
-</td><td>
-
-* `setText(stringId)`: set text for id. You can also use the attribute `text`, but with a string.
-</td></tr>
-
-<tr><td><b>ImageView</b><br><i>extends View</i></td><td>
-
-* `scaleType`: use "centerCrop" to scale without distorting (9patches)
-* `srcCompat`: set image
-</td><td>
-
-* `setImageResource(drawable_id)`: set image in the code. <small>Don't forget to update `contentDescription`, or any accessibility-related attributes, if needed.</small>
-</td></tr>
-
-<tr><td><b>Button</b><br><i>extends TextView</i></td><td>
-
-</td><td></td></tr>
-
-<tr><td><b>Switch</b><br><i>extends Button*</i></td><td>
-
-* `checked`
-</td><td>
-
-* `isChecked`
-</td></tr>
-
-<tr><td><b>RadioGroup</b><br><i>extends LinearLayout</i></td><td>
-
-* `checkedButton`
-</td><td>
-
-* `setOnCheckedChangeListener`: parameters are radio group, and the Id of the checked button.
-</td></tr>
-
-<tr><td><b>RadioButton</b><br><i>extends Button*</i></td><td></td><td></td></tr>
-
-<tr><td><b>EditText</b><br><i>extends TextView</i></td><td>
-
-* `inputType`: determine the [keyboard](https://developer.android.com/develop/ui/views/touch-and-input/keyboard-input/style). Can use multiple types.
-* `hint`: placeholder
-</td><td></td></tr>
-
-</tbody></table>
-</details>
-
-<details class="details-e">
-<summary>Accessibility</summary>
-
-You have some attributes to increase accessibility
+**Accessibility**
 
 * `contentDescription`: what's the purpose of this element
 * `importantForAccessibility`: if this element is just decorative, you can set it to no
 </details>
 
-> **Remainder**: try to rotate the screen, and see if the view is still fine. If not, you may use a ScrollView, disable rotation...
+The layout, the arrangement of the views, is handled by a **ViewGroup**. Layouts are edited using the layout editor. They are located in `.../res/layout/xxx.xml`.
+
+* [ConstraintLayout](layouts/ConstraintLayout.md): arrange elements in a flexible way
+</div><div>
+
+<details class="details-e">
+<summary>Display a text with <code>TextView</code></summary>
+
+* **Inheritance**: TextView extends View
+* **Documentation**: [TextView](https://developer.android.com/reference/android/widget/TextView)
+
+**Useful attributes**
+
+* `text`
+*  (settings) `text`: this text is only shown when editing. <small>It's useful when a text should be empty by default, but you want to see what it will look like once filed.</small>
+
+**useful methods**
+
+* `setText(stringId)`: there is also `setText(string)`, but that's better to use `text` in such case.
+
+</details>
+</div></div>
 
 <hr class="sl">
 

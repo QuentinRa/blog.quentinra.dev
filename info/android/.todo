@@ -12,6 +12,8 @@ https://developer.android.com/codelabs/basic-android-kotlin-training-polished-us
 => Talkback
 => Tint/Dark mode
 
+> **Remainder**: try to rotate the screen, and see if the view is still fine. If not, you may use a ScrollView, disable rotation...
+
 ********
 Icon
 ********
