@@ -135,3 +135,52 @@ $ echo "$text1 $number" # same
 $ echo "$text1" $number # same
 ```
 </div></div>
+
+<hr class="sr">
+
+## Branching
+
+<div class="row row-cols-md-2 mt-2"><div>
+
+```bash
+if test1; then
+# code
+fi
+
+if test1; then
+    # code
+elif test2; then
+    # code
+fi
+
+if test1; then
+    # code
+else
+    # code
+fi
+```
+</div><div>
+
+A test is a **command** exiting with the code 0 (TRUE), or a number between 1, and 255 (FALSE). This could be expressed like this
+
+```bash
+if `exit 1`; then 
+  echo "ok";
+else 
+  echo "ko";
+fi
+```
+
+Fortunately, you got a command called <kbd>test</kbd> which is taking a condition, and returning 0 if true, 1 otherwise. This command has a shortcut: <kbd>[]</kbd> which is doing the exact same thing.
+
+```bash
+if test toto == toto; then 
+  echo "ok";
+fi
+# same
+if [ toto == toto ]; then 
+  echo "ok";
+fi
+```
+
+</div></div>
