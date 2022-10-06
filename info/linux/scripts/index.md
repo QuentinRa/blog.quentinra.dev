@@ -44,9 +44,16 @@ $ bash < ./example.sh # or, in rare cases
 The Portable Operating System Interface (**POSIX**) is a family of standards (`normes POSIX`) that defines what we should, and shouldn't do, to make our apps compatibles across a maximum of operating systems.
 
 **DO only use allowed POSIX syntax in your scripts.**
+
+* ❌ **DO NOT USE `((`, `[[`, `]]`, and `))`**
+* ❌ **DO NOT USE `&&`<sup>1</sup>, `||`**<sup>1</sup>
+* ❌ **DO NOT USE `>`<sup>1</sup>, `<`<sup>1</sup>...** to compare something
+
+<sup>1</sup> such operators are only working inside `[[ ]]`
+
 </div><div>
 
-❌ DO NOT USE `((`, `[[`, `]]`, and `))`
+**Recap of what isn't allowed by POSIX**
 
 ```bash
 for (( i = 0; i < 10; i++ )); do
@@ -55,12 +62,10 @@ done
 
 echo $((0+1))
 
-if [[ 5 > 3 ]]; then
+if [[ 5 > 3 || 4 > 3 ]]; then
   # code
 fi
 ```
-
-❌ DO NOT USE `&&`, `||`, and they can only be used in `[[]]` anyway
 
 </div></div>
 
