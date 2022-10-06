@@ -153,6 +153,8 @@ $ echo "$text1" $number # same
 
 <div class="row row-cols-md-2 mt-4"><div>
 
+The usual if, else if (elif), and else.
+
 ```bash
 if test1; then
   # code
@@ -177,9 +179,11 @@ A test is a **command** exiting with the code 0 (TRUE), or a number between 1, a
 if `exit 1`; then 
   echo "ok";
 else 
-  echo "ko"; # will execute this as 1 = FALSE
+  echo "ko"; # will execute this as '1' is FALSE
 fi
 ```
+
+While `exit 1` could be replaced with `false`, as if you followed, `false` is a command exiting with `1`.
 
 </div><div>
 
