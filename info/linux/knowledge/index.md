@@ -298,6 +298,17 @@ And, some new tokens were introduced
 </tbody></table>
 
 Something to note with regexes is the notion of groups. You can write some expression, and wrap it into escaped parenthesis `\(some_part_of_my_regex\)`. By doing so, you created a group, that may be later referred as `$1`/`\1` if this was the first one. This is useful do extract some parts of the matching result.
-
 </div><div>
 </div></div>
+
+<details class="details-e">
+<summary>Commands</summary>
+
+Most well-know usages of **glob-patterns** are in commands such as `ls`, `cat`, `gcc`, or more generally, commands taking a variable amount of files. For instance, in Java, some programmers are using `java *.java` to compile every `.java`.
+
+For **regexes**, you will most likely use them
+
+* <kbd>sed</kbd>: find, and replace matching text with some other text
+* <kbd>grep</kbd>: find matching text, or files having the matching text
+* <kbd>awk</kbd>: sort of `grep`
+</details>
