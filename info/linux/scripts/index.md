@@ -328,7 +328,7 @@ echo $@
 ```
 </div><div>
 
-**Note 1**: we are usually NOT using `$0`... directly in the code. We are usually storing them in variables, and using these intead.
+**Note 1**: we are usually NOT using `$0`... directly in the code. We are usually storing them in variables, and using these instead.
 
 ```bash
 program_name=$0
@@ -350,5 +350,50 @@ fi
 for i in "$@"; do
   echo $i
 done
+```
+</div></div>
+
+<hr class="sl">
+
+## Builtin functions
+
+<div class="row row-cols-md-2 mt-2"><div>
+
+Builtin function, are functions that are declared inside your script.
+
+```bash
+myBuiltin() {
+  # code
+}
+```
+
+Then, you can call the builtin function in your script like this
+
+```bash
+myBuiltin arg1 arg2
+```
+
+The myBuiltin may take arguments, but the parentheses will always remain empty `()`. In the builtin function, you will access args as you would for command-line arguments!
+
+```bash
+# myBuiltin arg1 arg2
+myBuiltin() {
+  echo $0 # ./example (not myBuiltin)
+  echo $1 # arg1
+  echo $2 # arg2
+  # ...
+}
+```
+</div><div>
+
+A builtin function may return something, but you CAN NOT use `exit`, as it would kill the whole process. Use `return` instead.
+
+```bash
+myBuiltin() {
+  return $1
+}
+
+myBuiltin 5
+echo $? # will be "5"
 ```
 </div></div>
