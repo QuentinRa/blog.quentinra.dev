@@ -293,3 +293,62 @@ for i in `seq 1 5`; do
 done
 ```
 </div></div>
+
+<hr class="sr">
+
+## Command-line arguments
+
+<div class="row row-cols-md-2 mt-2"><div>
+
+As you can for commands, you can pass arguments to your script.
+
+```bash
+$ ./example arg1 "This is arg2" -o arg4 
+```
+
+Print the number of arguments, which is stored in `$#`
+
+```bash
+echo $#
+# 4
+```
+
+Print an argument
+
+```bash
+echo $0 # ./example
+echo $1 # arg1
+echo $2 # This is arg2
+```
+
+List of all arguments
+
+```bash
+echo $@
+```
+</div><div>
+
+**Note 1**: we are usually NOT using `$0`... directly in the code. We are usually storing them in variables, and using these intead.
+
+```bash
+program_name=$0
+```
+
+**Note 2**: check the number of arguments, the example below check that there is at least 2 arguments, print a message, and exit with 1 otherwise.
+
+```bash
+if [ $# -lt 2 ]; then
+    echo "Usage: $0 arg1 arg2"
+    echo "Try '$0 -h' for more information."
+    exit 1
+fi
+```
+
+**Note 3**: iterate every argument (DO NOT forget the quotes)
+
+```bash
+for i in "$@"; do
+  echo $i
+done
+```
+</div></div>

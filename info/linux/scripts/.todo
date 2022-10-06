@@ -1,6 +1,7 @@
 Commands
 - seq
 - exit
+- shift
 
 Control flow
 - case esac
