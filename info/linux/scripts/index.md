@@ -34,30 +34,28 @@ $ ./example.sh
 
 > **It's important to remember that scripts are just a chain of commands**
 
-<hr class="sr">
+<hr class="sl">
 
-## Basics
+## POSIX standard
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-md-2 mx-0"><div class="align-self-center">
 
-**Variables**
+The Portable Operating System Interface (**POSIX**) is a family of standards (`normes POSIX`) that defines what we should, and shouldn't do, to make our apps compatibles across a maximum of operating systems.
 
-You can declare a variable with `=`, without ANY SPACES.
-
-```bash
-number=5
-text1=Hello
-text2="Hello, World"
-```
-
-You can even store the output of a command
-
-```bash
-command_output1=`ls -la .`
-command_output2=$(ls -la .)
-```
-
+**DO ONLY USE ALLOWED POSIX SYNTAX IN YOUR SCRIPTS.**
 </div><div>
 
+❌ DO NOT USE `((`, `[[`, `]]`, and `))`
 
+```bash
+for (( i = 0; i < 10; i++ )); do
+    # code
+done
+
+echo $((0+1))
+
+if [[ 5 > 3 ]]; then
+  # code
+fi
+```
 </div></div>
