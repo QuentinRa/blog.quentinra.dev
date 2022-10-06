@@ -29,6 +29,7 @@ $ chmod +x example.sh
 
 ```bash
 $ ./example.sh
+$ bash < ./example.sh # or, in rare cases
 ```
 </div></div>
 
@@ -42,7 +43,7 @@ $ ./example.sh
 
 The Portable Operating System Interface (**POSIX**) is a family of standards (`normes POSIX`) that defines what we should, and shouldn't do, to make our apps compatibles across a maximum of operating systems.
 
-**DO ONLY USE ALLOWED POSIX SYNTAX IN YOUR SCRIPTS.**
+**DO only use allowed POSIX syntax in your scripts.**
 </div><div>
 
 ❌ DO NOT USE `((`, `[[`, `]]`, and `))`
@@ -58,4 +59,29 @@ if [[ 5 > 3 ]]; then
   # code
 fi
 ```
+</div></div>
+
+<hr class="sr">
+
+## Introduction
+
+<div class="row row-cols-md-2 mt-2"><div>
+
+Every script **should** start with a directive telling the shell in which language the script is. It is mostly a link to the interpreter.
+
+* Traditional way for a script (bash)
+
+```bash
+#!/bin/bash
+```
+
+* Best way for a script (bash)
+
+```bash
+#!/usr/bin/env bash
+```
+
+</div><div>
+
+
 </div></div>

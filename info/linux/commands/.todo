@@ -8,6 +8,7 @@ alias
 gcc
 tee
 curl
+env
 
 can use put, get, pwd... with FTP.
 # ls <folder>: list files of <folder>
