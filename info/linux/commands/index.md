@@ -211,14 +211,13 @@ Move, copy, and/or rename
 
 ```bash
 $ cp toto ./all_toto/
-$ cp toto ./all_toto/toto # same
 $ cp toto1 toto_2 ./all_toto/
 ```
 
 To rename something
 
 ```bash
-$ cp toto ./all_toto/toto0
+$ cp toto toto0
 ```
 
 To copy a **folder**, along its content
@@ -235,14 +234,13 @@ $ cp -r all_toto/ all_toto_copy
 
 ```bash
 $ mv toto ./all_toto/
-$ mv toto ./all_toto/toto # same
 $ mv toto1 toto_2 ./all_toto/
 ```
 
 To rename something
 
 ```bash
-$ mv toto ./all_toto/toto0
+$ mv toto toto0
 ```
 </details>
 </div></div>

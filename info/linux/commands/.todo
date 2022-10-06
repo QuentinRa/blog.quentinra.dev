@@ -9,6 +9,7 @@ gcc
 tee
 curl
 env
+dir
 
 can use put, get, pwd... with FTP.
 # ls <folder>: list files of <folder>
