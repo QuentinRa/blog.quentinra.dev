@@ -158,3 +158,5 @@ CLASS_NAME.SOME_PARAM
 
 companion object is basically associating a nameless "object" to another class,
 while this object is kinda a singleton, or sis static.
+
+https://kotlin-quick-reference.com/052-R-control-structures.html

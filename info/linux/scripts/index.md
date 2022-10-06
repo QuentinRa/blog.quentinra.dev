@@ -11,7 +11,6 @@ A script is usually written in a file `name.sh`, regardless of the language used
 
 echo "Hello, World!"
 ```
-
 </div><div>
 
 1. Create a script `example.sh` <small>(or, get a script somewhere, and got to "2.")</small>
@@ -31,5 +30,34 @@ $ chmod +x example.sh
 ```bash
 $ ./example.sh
 ```
+</div></div>
+
+> **It's important to remember that scripts are just a chain of commands**
+
+<hr class="sr">
+
+## Basics
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+**Variables**
+
+You can declare a variable with `=`, without ANY SPACES.
+
+```bash
+number=5
+text1=Hello
+text2="Hello, World"
+```
+
+You can even store the output of a command
+
+```bash
+command_output1=`ls -la .`
+command_output2=$(ls -la .)
+```
+
+</div><div>
+
 
 </div></div>
