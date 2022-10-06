@@ -282,13 +282,13 @@ done
 **for i** <small>(here, starting at 1, increment by one, up to 5 included)</small>
 
 ```bash
-for i in {1..5} ; do
+for i in {1..5}; do
     # code
 done
 ```
 
 ```bash
-for i in seq 1 5 ; do
+for i in `seq 1 5`; do
     # code
 done
 ```
