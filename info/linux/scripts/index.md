@@ -464,3 +464,46 @@ $ echo $y
 tata titi
 ```
 </div></div>
+
+<details class="details-border">
+<summary><b>Note</b>: handle newlines / "infinite input"...</summary>
+
+<div class="row row-cols-md-2 mt-4"><div class="align-self-center">
+
+This code is running indefinitely until "read" fails. Each time the user press <kbd>ENTER</kbd>, the code will loop, and ask for input again. A user can notify the script that the input is done using <kbd>CTRL+D</kbd>, which will make read fail, and end the loop.
+
+```bash
+while read x; do
+  echo $x
+done
+```
+</div><div>
+
+You can use a nested for to extract each word that was entered.
+
+```bash
+while read input; do
+  for word in $input; do
+    echo $word
+  done
+done
+```
+
+<details class="details-e">
+<summary>Test</summary>
+
+**Note**: `<CR>`, for carriage return, means that I pressed enter.
+
+```bash
+$ ./example
+toto tata <CR>
+toto
+tata
+titi toto tata <CR>
+titi
+toto
+tata
+```
+</details>
+</div></div>
+</details>
