@@ -60,6 +60,12 @@
         "name": "Linux (networking)",
         "desc": "Application of the networking course on Linux-based distributions. This is basically a list of a lot of commands.",
         "icon": null
+      },
+      {
+        "tag": "linux/scripts/index.md",
+        "name": "Linux (scripts)",
+        "desc": "Learn how to write scripts (bash).",
+        "icon": null
       }
     ],
     "e3": [
