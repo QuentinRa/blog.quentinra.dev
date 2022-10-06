@@ -252,5 +252,44 @@ $ test -d $path; echo $?
 $ if [ -d $path ]; then echo "Folder+exists."; fi
 Folder+exists.
 ```
+</div></div>
 
+<hr class="sl">
+
+## Loops
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+**for i in**: this loop is taking values separated by a space
+
+```bash
+for i in "Hello, World!" word2 word3 ; do
+    # i will be: Hello, World!
+    # ...
+done
+```
+
+**while**: while is taking a "test" like if.
+
+```bash
+while test; do
+    # code
+done
+```
+
+</div><div>
+
+**for i** <small>(here, starting at 1, increment by one, up to 5 included)</small>
+
+```bash
+for i in {1..5} ; do
+    # code
+done
+```
+
+```bash
+for i in seq 1 5 ; do
+    # code
+done
+```
 </div></div>
