@@ -59,6 +59,9 @@ if [[ 5 > 3 ]]; then
   # code
 fi
 ```
+
+❌ DO NOT USE `&&`, `||`, and they can only be used in `[[]]` anyway
+
 </div></div>
 
 <hr class="sr">
@@ -159,7 +162,6 @@ else
     # code
 fi
 ```
-</div><div>
 
 A test is a **command** exiting with the code 0 (TRUE), or a number between 1, and 255 (FALSE). This could be expressed like this
 
@@ -167,9 +169,13 @@ A test is a **command** exiting with the code 0 (TRUE), or a number between 1, a
 if `exit 1`; then 
   echo "ok";
 else 
-  echo "ko";
+  echo "ko"; # will execute this as 1 = FALSE
 fi
 ```
+
+As a side note, there is a command called `true` returning 0, and a command called `false` returning 1, so you can use `if true`...
+
+</div><div>
 
 Fortunately, you got a command called <kbd>test</kbd> which is taking a condition, and returning 0 if true, 1 otherwise. This command has a shortcut: <kbd>[]</kbd> which is doing the exact same thing.
 
@@ -181,6 +187,60 @@ fi
 if [ toto == toto ]; then 
   echo "ok";
 fi
+```
+
+<details class="details-e">
+<summary>Operators</summary>
+
+* `a -lt b`: true if $a \lt b$ <small>(lesser than)</small>
+* `a -le b`: true if $a \le b$ <small>(lesser equals)</small>
+* `a -eq b`: true if $a = b$ <small>(equals)</small>
+* `a -ne b`: true if $a \neq b$ <small>(not equals)</small>
+* `a -ge b`: true if $a \ge b$ <small>(greater equals)</small>
+* `a -gt b`: true if $a \gt b$ <small>(greater than)</small>
+* `-z $variable`: true, if `$variable` is empty
+
+Others
+
+* `str1 == str2`: true if "str1" is the same as "str2"
+* `str1 != str2`: true if "str1" is the different than "str2"
+</details>
+
+<details class="details-e">
+<summary>Special conditions (is file, exists...)</summary>
+
+* `-f path`: true, if path is leading to a regular file
+* `-d path`: true, if path is leading to a folder
+* `-a path`: true, if path is leading to a system file
+* `-w path`: true, if path is writable
+</details>
+
+<details class="details-e">
+<summary>Chain expressions (AND, OR)</summary>
+
+Of course, you can chain expressions, with equivalents of `&&`, and `!!`
+
+```bash
+# and
+$ test toto == toto -a test toto == toto
+# or
+$ test toto == toto -o test tata == toto
+# not
+$ test ! toto == tata
+$ test toto != tata
+```
+</details>
+
+Examples
+
+```bash
+$ path=~/some_folder_that_exists
+$ test -f $path; echo $?
+1
+$ test -d $path; echo $?
+0
+$ if [ -d $path ]; then echo "Folder+exists."; fi
+Folder+exists.
 ```
 
 </div></div>
