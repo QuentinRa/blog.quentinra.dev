@@ -265,18 +265,39 @@ If the shell notice a pattern, then it will try to replace any matching content 
 <tr><td><code>[abc]</code></td><td>one character which is either a, b, or c.</td></tr>
 <tr><td><code>[^abc]</code><br><code>[!abc]</code></td><td>any character which is not a, nor b, nor c.</td></tr>
 </tbody></table>
-</div><div>
-</div></div>
-
-<hr>
-
-<div class="row row-cols-md-2"><div>
 
 **Note**: you may use ranges in `[]` such as `[0-9]`, or `[a-z]`, or shortcuts such as `[[:digit:]]` (a number), `[[:upper:]]` (uppercase), .`[[:lower:]]` (lowercase), `[[:space:]]` (space, tab, newline...), `[[:alnum:]]` (any alphanumeric character).
+
+**Note**: You may want to use a token as a character such as "*", "?"...
+
+* Use `[]` to escape it: `[?]`
+* Or using `\` (backslash) which is its purpose: `\*`
+
 </div><div>
 
-You may want to use a character in your regex/glob-pattern such as "*"
+**Regular expressions** (`expressions régulières`), commonly referred as **regex**, are an enhanced version of glob-patterns used by tools such as `grep`, `sed`, and most, if not all, programming language.
 
-* Use `[]` to escape it `[*]`
-* Or using `\` (backslash) which is its purpose `\*`
+* Every glob-pattern exists too in regexes
+* But, `?` is now replace with `.`
+
+And, some new tokens were introduced
+
+<table class="table table-bordered table-striped border-dark">
+<thead>
+<tr><th></th><th>Description</th></tr>
+</thead>
+<tbody>
+
+<tr><td><code>x?</code></td><td>an optional character 'x'</td></tr>
+<tr><td><code>x+</code></td><td>at least x times this character</td></tr>
+<tr><td><code>^x</code></td><td>lines starting with x</td></tr>
+<tr><td><code>[abc]</code></td><td>lines ending with x</td></tr>
+<tr><td><code>(x|y)</code></td><td>either x or y</td></tr>
+<tr><td><nobr><code>x{n, m}</code></nobr></td><td>at least $n$ times x, up to $m$ times, leave either empty if no limit</td></tr>
+<tr><td><code>(ab)+</code></td><td>at least one time 'ab'</td></tr>
+</tbody></table>
+
+Something to note with regexes is the notion of groups. You can write some expression, and wrap it into escaped parenthesis `\(some_part_of_my_regex\)`. By doing so, you created a group, that may be later referred as `$1`/`\1` if this was the first one. This is useful do extract some parts of the matching result.
+
+</div><div>
 </div></div>
