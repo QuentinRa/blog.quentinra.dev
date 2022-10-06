@@ -33,7 +33,7 @@ $ bash < ./example.sh # or, in rare cases
 ```
 </div></div>
 
-> **It's important to remember that scripts are just a chain of commands**
+> **It's important to remember that scripts are just a chain of commands**, and everything below can be used outside a script.
 
 <hr class="sl">
 
@@ -80,14 +80,20 @@ Every script **should** start with a directive telling the shell in which langua
 ```bash
 #!/usr/bin/env bash
 ```
+
+Also, this is how you do comments
+
+```bash
+# this is a comment
+```
 </div><div class="align-self-center">
 
-It's important for you to remember that in shell, **0 means success**, anything else, usually 1, means failure. This will be important later, because in conditions
+It's important for you to remember that in shell, **0 means success**, **anything else**, usually 1, **means failure**. This will be important later, because you will most likely write conditions
 
 * **0 means TRUE**
 * **NOT 0 means FALSE**
 
-This MUST be engraved in your mind, because in many other languages, such as C, `if (1)` is TRUE, while in bash, `if (1)` is FALSE. 
+This MUST be engraved in your mind, because in many other languages, such as in C, `if (1)` is TRUE, while in bash, `if (1)` is FALSE.
 
 </div></div>
 
