@@ -90,3 +90,42 @@ It's important for you to remember that in shell, **0 means success**, anything 
 This MUST be engraved in your mind, because in many other languages, such as C, `if (1)` is TRUE, while in bash, `if (1)` is FALSE. 
 
 </div></div>
+
+<hr class="sl">
+
+## Variables, and their usage
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+You can declare a variable with `=`, without ANY SPACES.
+
+```bash
+number=5
+text1=Hello
+text2="Hello, World"
+```
+
+You can even store the output of a command
+
+```bash
+command_output1=`ls -la .`
+command_output2=$(ls -la .)
+```
+</div><div>
+
+Add **$ before a variable name**.
+
+```bash
+echo $number
+echo ${number} # same
+```
+
+There is no need to use "quotes" to concatenate
+
+```bash
+$ echo $text1 $number
+Hello 5
+$ echo "$text1 $number" # same
+$ echo "$text1" $number # same
+```
+</div></div>
