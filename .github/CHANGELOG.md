@@ -7,6 +7,10 @@
 * `feature`: new category "cybersecurity"
 * `feature`: can hide courses
 
+**Changed**
+
+* `rendering`: Markdown syntax reference 1.7
+
 **Removed**
 
 * category "ensiie"

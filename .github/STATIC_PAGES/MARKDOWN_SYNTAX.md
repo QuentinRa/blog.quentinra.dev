@@ -6,7 +6,7 @@
 
 This page is a **summary of the syntax that we are using** in Markdown, and how it is rendered **on this website**.
 
-**Version**: <a href="https://github.com/lgs-games/memorize/blob/master/.github/STATIC_PAGES/MARKDOWN_SYNTAX.md" target="_blank" rel="noopener noreferrer">1.6.0</a> (2021-10-30)
+**Version**: <a href="https://github.com/lgs-games/memorize/blob/master/.github/STATIC_PAGES/MARKDOWN_SYNTAX.md" target="_blank" rel="noopener noreferrer">1.7.0</a> (2022-10-06)
 
 <div class="table-of-contents w-25 mx-auto">
 
@@ -188,10 +188,10 @@ The result is different according to the classes you gave to **details**.
 
 **Since version 1.6.0**.
 
-<div class="row row-cols-md-2 mx-0"><div>
+<div class="row row-cols-md-2"><div>
 
 ```html
-<div class="row row-cols-md-2 mx-0"><div>
+<div class="row row-cols-md-2"><div>
 
 ...
 </div><div>
@@ -200,7 +200,7 @@ The result is different according to the classes you gave to **details**.
 </div></div>
 ```
 </div><div class="align-self-center">
-<div class="row row-cols-md-2 mx-0"><div>
+<div class="row row-cols-md-2"><div>
 
 **Some content** 🚀<br>
 ... (ex: an image) ...
@@ -210,12 +210,15 @@ The result is different according to the classes you gave to **details**.
 ... (ex: describe the image)...
 </div></div><br><br>
 
-* You may add the class "align-self-center" to a div to center its content vertically
+* You may add the class `align-self-center` to a div to center its content vertically
+* **1.7.0**: you may use `mx-0`, `mt-2`, or `mt-4` to apply some margins to your columns
 </div></div>
 
 <hr class="sep-both">
 
 ## 11. Usage
+
+<div class="row row-cols-md-2 mt-4"><div>
 
 * You should **split a page into sections** using a separator, the code is
 
@@ -232,6 +235,11 @@ The result is different according to the classes you gave to **details**.
 
 We are allowing HTML, but note that using style is not recommended (as it may be disabled later), while scripts aren't allowed 🙄. <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank" rel="noopener noreferrer">Bootstrap 5</a> classes are allowed, and you may use [our CSS rules](https://github.com/memorize-code/memorize-references/tree/main/.assets/css).
 
+* **version 1.3.0**: using **emojis** is a good practice
+
+You may [learn more about emojis here](../../tools/toolbox/desktop/emojis.md). You should use them to make the content less monotone, and help the reader focusing on what he needs to remember.
+</div><div>
+
 * **add references**
 
 References, are not only the links that you used, but those that we may check if we want to improve the course. You should add a lot of them, and sort them if needed.
@@ -243,9 +251,5 @@ You can use Grammarly or LanguageTool to check if they got [hints for you](../..
 * **version 1.3.0**: the **title and the description are generated**
 
 Please, try to make it so that the title of a page is good, as it's the one shown by the search engines. The first paragraph should be long (at least 50 characters) and a description of the page, as it will be used for the description of the page, shown by the search engines.
-
-* **version 1.3.0**: using **emojis** is a good practice
-
-You may [learn more here](../../tools/toolbox/desktop/emojis.md). You should use them to make the content less monotone, and help the reader focusing on what he needs to remember. 
-
+</div></div>
 </div>
