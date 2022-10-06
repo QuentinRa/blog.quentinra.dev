@@ -89,14 +89,22 @@ Also, this is how you do comments
 ```bash
 # this is a comment
 ```
-</div><div class="align-self-center">
+</div><div>
 
-It's important for you to remember that in shell, **0 means success**, **anything else**, usually 1, **means failure**. This will be important later, because you will most likely write conditions
+It's important for you to remember that in shell, **0 means success**, **anything else**, usually 1, **means failure**. In conditions:
 
 * **0 means TRUE**
 * **NOT 0 means FALSE**
 
 This MUST be engraved in your mind, because in many other languages, such as in C, `if (1)` is TRUE, while in bash, `if (1)` is FALSE.
+
+**Pro-tip**: you can use `echo $?` to see the exit code of the previous command executed.
+
+```bash
+$ true # /bin/true is a command returning 0
+$ echo $?
+0
+```
 
 </div></div>
 
@@ -141,13 +149,13 @@ $ echo "$text1" $number # same
 
 <hr class="sr">
 
-## Branching
+## Branching, and the command `test`
 
-<div class="row row-cols-md-2 mt-2"><div>
+<div class="row row-cols-md-2 mt-4"><div>
 
 ```bash
 if test1; then
-# code
+  # code
 fi
 
 if test1; then
@@ -172,8 +180,6 @@ else
   echo "ko"; # will execute this as 1 = FALSE
 fi
 ```
-
-As a side note, there is a command called `true` returning 0, and a command called `false` returning 1, so you can use `if true`...
 
 </div><div>
 
