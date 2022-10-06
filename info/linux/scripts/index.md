@@ -434,3 +434,33 @@ while [ $i -lt 5 ]; do
 done
 ```
 </div></div>
+
+<hr class="sl">
+
+## Read input from the user
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+You can use the command `read` to read input. This command takes a suite of 1, or more variables, and stores a word in each variable. If there is not enough variables, then the last variables is used to store everything that could not be stored.
+
+```bash
+$ read x
+toto
+$ echo $x
+toto
+```
+</div><div>
+
+```bash
+$ read x
+toto tata
+$ echo $x
+toto tata
+$ read x y
+toto tata titi
+$ echo $x
+toto
+$ echo $y
+tata titi
+```
+</div></div>
