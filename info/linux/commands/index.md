@@ -6,6 +6,7 @@ Some commands, mainly used in scripts, are not listed here
 
 * `test`: take a condition, and exit with 0 if true, 1 if false
 * `seq`: generate a list of numbers
+* `read`: to read input from the user
 * `exit`: exit the shell with an exit code
 
 <hr class="sl">

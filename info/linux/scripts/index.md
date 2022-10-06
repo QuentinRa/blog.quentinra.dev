@@ -284,7 +284,7 @@ done
 
 </div><div>
 
-**for i** <small>(here, starting at 1, increment by one, up to 5 included)</small>
+**for i** <small>(here, starting at 1, increment by one, up to 5 included)</small>.
 
 ```bash
 for i in {1..5}; do
@@ -297,6 +297,13 @@ for i in `seq 1 5`; do
     # code
 done
 ```
+
+You can change the increment (one by default)
+
+* `{1..5..2}`: "i" start at 1, incremented by 2, while "i" is lower than 5
+* `seq 1 2 5`: same
+
+> Non-POSIX followers can use the real "for i" with i++, which is usually faster.
 </div></div>
 
 <hr class="sr">
@@ -414,6 +421,8 @@ You may want to do some stuff involving calculations. The shell won't interpret 
 ```bash
 four=$[3+1]
 ```
+
+> Non-POSIX followers can use `$((3+1))`.
 </div><div>
 
 Example of increasing a variable by one.
