@@ -80,8 +80,13 @@ Every script **should** start with a directive telling the shell in which langua
 ```bash
 #!/usr/bin/env bash
 ```
+</div><div class="align-self-center">
 
-</div><div>
+It's important for you to remember that in shell, **0 means success**, anything else, usually 1, means failure. This will be important later, because in conditions
 
+* **0 means TRUE**
+* **NOT 0 means FALSE**
+
+This MUST be engraved in your mind, because in many other languages, such as C, `if (1)` is TRUE, while in bash, `if (1)` is FALSE. 
 
 </div></div>
