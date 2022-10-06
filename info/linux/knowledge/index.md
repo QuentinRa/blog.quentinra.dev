@@ -236,3 +236,47 @@ If the home of the current user is `/usr/user/home/`, then `~` would mean the ex
 * <kbd>ls</kbd>: to list every file/folder in a directory
 * <kbd>ls -a</kbd>: to list every file, including hidden files, in a directory
 </details>
+
+<hr class="sr">
+
+## Environment variables
+
+...
+
+<hr class="sl">
+
+## Glob-patterns, and regex
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+**Glob-patterns** (`motifs`) are a sort of simplified version of regex, mainly used to do request given a pattern. For instance, `ls *.h` is listing every file (and directory) ending with `.h`.
+
+If the shell notice a pattern, then it will try to replace any matching content where the pattern was used. With this, `ls *.h` would become something like `ls toto.h lili.h`, then will be executed.
+
+<table class="table table-bordered table-striped border-dark">
+<thead>
+<tr><th>Wildcards</th><th>Description</th></tr>
+</thead>
+<tbody>
+
+<tr><td><code>x</code> (a character)</td><td>the character 'x'</td></tr>
+<tr><td><code>*</code> (asterisk)</td><td>a, possibly-empty, list of characters</td></tr>
+<tr><td><code>?</code> (question mark)</td><td>one character</td></tr>
+<tr><td><code>[abc]</code></td><td>one character which is either a, b, or c.</td></tr>
+<tr><td><code>[^abc]</code><br><code>[!abc]</code></td><td>any character which is not a, nor b, nor c.</td></tr>
+</tbody></table>
+</div><div>
+</div></div>
+
+<hr>
+
+<div class="row row-cols-md-2"><div>
+
+**Note**: you may use ranges in `[]` such as `[0-9]`, or `[a-z]`, or shortcuts such as `[[:digit:]]` (a number), `[[:upper:]]` (uppercase), .`[[:lower:]]` (lowercase), `[[:space:]]` (space, tab, newline...), `[[:alnum:]]` (any alphanumeric character).
+</div><div>
+
+You may want to use a character in your regex/glob-pattern such as "*"
+
+* Use `[]` to escape it `[*]`
+* Or using `\` (backslash) which is its purpose `\*`
+</div></div>
