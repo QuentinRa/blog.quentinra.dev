@@ -1,15 +1,19 @@
 # Change Log
 
-## no-released
+## not-released
 
 **Added**
 
 * `feature`: new category "cybersecurity"
 * `feature`: can hide courses
+* `course`: Adding course "Android"
+* `course`: Adding course "Kotlin"
+* `course`: Adding course "Linux" "Linux (commands)" "Linux (Network)" "Linux (scripts)"
 
 **Changed**
 
 * `rendering`: Markdown syntax reference 1.7
+* `course`: Remade of SQL (done)
 
 **Removed**
 
