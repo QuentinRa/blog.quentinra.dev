@@ -2,18 +2,30 @@
     About <b>Memorize</b>
 </h1>
 
-I first made a website called RpgDatabase, because my friends and I wanted to make an [RPG](https://en.wikipedia.org/wiki/Role-playing_game).
+<div class="row row-cols-md-2"><div class="align-self-center">
 
-Later, I thought that it would be convenient if I made a website with everything that I learned, so that
+<b>Welcome</b> 👋 on the **v5** of **Memorize**.
 
-* I would not have to re-open my old books to look for something
-* I can read my courses everywhere
+The main goal is to easily access knowledge, tips, and experiences about something in one place. To improve the reliability of the knowledge, every course is stored in a public place, and open for edits.
 
-Then since November 2020, I thought of helping my classmates too, and created "Memorize". You can find [the changelog here](https://github.com/lgs-games/memorize/blob/master/.github/CHANGELOG.md).
+* You can find [Memorize changelog here](https://github.com/lgs-games/memorize/blob/master/.github/CHANGELOG.md).
 
-<p class="text-end pt-3">
- I hope you'll find it to your liking - Quentin RA "Calistro"
-</p>
+* You can find [Memorize Roadmap here](https://github.com/lgs-games/memorize/blob/master/ROADMAP.md).
+
+I hope you'll find it to your liking - Quentin "Calistro" RA
+
+</div><div style="font-size: 1.12rem">
+
+<p class="text-center fs-4">Some history 🗺️📌</p>
+
+* **02-2020**: It all started with a website called RpgDatabase, in which I tried teaching my friends that wanted to learn the lwjgl3 library, to create a [Role-playing game](https://en.wikipedia.org/wiki/Role-playing_game).
+
+* **06-2020**: I tried to make a whole website with everything that I learned so far (Java, C, Probabilities, SQL, HTML/CSS/PHP...)
+
+* **10-2020**: I wanted to help my classmates struggling in IT. I made `memorize.readthedocs.io`, this was the start of **Memorize**.
+
+* **11-2021**: I tried to improve every course, which made quite a lot of courses leave the front 😢
+</div></div>
 
 <hr class="sep-both">
 

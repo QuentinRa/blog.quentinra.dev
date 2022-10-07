@@ -245,14 +245,14 @@ I moved from ReadTheDocs, and the domains learngo/memorize. The courses aren't i
 - I'm using Grammarly to check the courses.
 - The courses are in English.
 
-## v3.0.0 (2020-10-??)
+## v3.0.0 (2020-10)
 
 *Omitted*, Courses were in ReStructuredText, hosted on ReadTheDocs.
 
-## v2.0.0 (2019-08-??)
+## v2.0.0 (2020-06)
 
 *Omitted*, Courses were HTML/PHP, hosted on my personal website.
 
-## v1.0.0 -  (2019-02-??)
+## v1.0.0 -  (2020-02)
 
 *Omitted*, Courses were in HTML/PHP, the website was called RpgDatabase, and was only about RPG-related stuff.
