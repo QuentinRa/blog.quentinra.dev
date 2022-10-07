@@ -130,16 +130,11 @@ override fun onOptionsItemSelected(item: MenuItem): Boolean {
    }
 }
 ----------------
-----------------
+https://developer.android.com/guide/components/activities/activity-lifecycle
+Do rotating really create/destroy the app?
 OnPause: when share opened, screen partially visible, paused
 Whatever code runs in onPause() blocks other things from displaying, so keep the code in onPause() lightweight.
 For example, if a phone call comes in, the code in onPause() may delay the incoming-call notification.
-
-The system destroy app when there are big changes, and it would be better to "create" the app again
-(ex: language changed, rotation of the screen).
-
-You can use bundle, an in-memory small dictionary (string->?), to store data.
-We mostly used OnCreate to restore, because onRestoreInstanceState is called after start.
 ----------------
 
 Bottom Navigation

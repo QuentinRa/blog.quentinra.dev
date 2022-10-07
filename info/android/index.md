@@ -89,12 +89,10 @@ If the app is partially visible <small>(ex: click on share/...)</small>, then yo
 
 If you press the home button, your app will go back to Created, until you start it again.
 
-If Android need resources, then you app may be destroyed. If there are a lot of changes <small>(ex: language changed, **orientation of the screen**)</small>, then android will most likely destroy, and re-create the app.
+If Android need resources, then you app may be destroyed. If there are a lot of changes <small>(ex: language changed...)</small>, then android will most likely destroy, and re-create the app.
 
-You can use `onCreate(Bundle)`, `onRestoreInstanceState(Bundle)`, to load saved data, and `onSaveInstanceState(Bundle)` to save data. A "bundle" is a **small, in-memory** dictionary, in which you can save a bit of data, that will be reloaded when the app is created, or started again.
+You can use `onCreate(Bundle?)`, `onRestoreInstanceState(Bundle)`, to load saved data, and `onSaveInstanceState(Bundle)` to save data. A "bundle" is a **small, in-memory** dictionary, in which you can save a bit of data, that will be reloaded when the app is created, or started again.
 </div></div>
-
-> If `onCreate` bundle is null, this is the "first" time starting the app. Try rotating the screen, and you will see a case when `onCreate` is called with a non-null bundle.
 
 <hr class="sl">
 
