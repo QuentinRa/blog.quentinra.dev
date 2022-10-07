@@ -1,6 +1,6 @@
 # Culture
 
-...
+Coming soon!
 
 <hr class="sl">
 

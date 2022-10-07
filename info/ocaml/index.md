@@ -169,7 +169,7 @@ We are testing different ways of storing big amounts of data, along with their e
 
 ## Meaningless knowledge
 
-<details class="details-border">
+<details class="details-e mt-4">
 <summary>Comments</summary>
 
 In OCaml, comments are not ignored, and they are really parsed... If you are writing a `"` (quote), the parser will think that you started writing a string, even if you are inside a comment. Hence, if the string is not properly finished (no matching quote), you will have an error, as you would if you wrote a non-terminated string in your code.
