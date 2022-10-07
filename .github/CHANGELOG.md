@@ -12,8 +12,9 @@
 
 **Changed**
 
-* `rendering`: Markdown syntax reference 1.7
 * `course`: Remade of SQL (done)
+* `internal`: now the title of the page is the same as the content of "h1"
+* `rendering`: Markdown syntax reference 1.7
 
 **Removed**
 

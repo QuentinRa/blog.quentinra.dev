@@ -1,4 +1,4 @@
-# Scripts (bash)
+# Shell scripts
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -119,7 +119,7 @@ $ echo $?
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-You can declare a variable with `=`, without ANY SPACES.
+You can assign a variable with `=`, without ANY SPACES. **Note**: a variable exists even without being assigned, but it's empty <small>(=sort of "")</small>.
 
 ```bash
 number=5
@@ -127,7 +127,7 @@ text1=Hello
 text2="Hello, World"
 ```
 
-You can even store the output of a command
+You can even store the output of a command to work on it
 
 ```bash
 command_output1=`ls -la .`
@@ -156,7 +156,7 @@ $ echo "$text1" $number # same
 
 ## Branching, and the command `test`
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-md-2 mx-0"><div>
 
 The usual if, else if (elif), and else.
 
@@ -514,9 +514,9 @@ tata
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-You should already know `>`, and `<` which are used to redirect input/output. If `> some_file` is used on a non-empty file, the file is truncated <small>(=cleared of its content)</small>. To avoid that, we can use `>> some_file`.
+We are mainly using redirections to read/write files, as the process is the same as reading input from a user, but this time the input/output source is different.
 
-* **Create an empty file `toto.txt`**, note that `touch` DO NOT ensure that the file is empty, so we can't use that.
+* **Create an empty file `toto.txt`** <small>(note that `touch` DO NOT ensure that the file is empty, so we can't use that)</small>
 
 ```bash
 # create an empty file
@@ -531,7 +531,7 @@ while read line; do
 done
 ```
 
-which can be enhanced by doing the redirection at the end
+which can be enhanced by doing the redirection at the end, meaning that every output <small>(every echo...)</small> will be redirected to `toto.txt`.
 
 ```bash
 while read line; do

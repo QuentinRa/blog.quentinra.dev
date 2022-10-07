@@ -64,7 +64,7 @@
       {
         "tag": "linux/scripts/index.md",
         "name": "Linux (scripts)",
-        "desc": "Learn how to write scripts (bash).",
+        "desc": "Learn how to write Shell scripts.",
         "icon": null
       }
     ],
