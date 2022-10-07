@@ -12,25 +12,25 @@
       {
         "tag": "c",
         "name": "C",
-        "desc": "...",
+        "desc": "Coming soon!",
         "icon": "<i class=\"bi bi-terminal-fill\"></i>"
       },
       {
         "tag": "cpp",
         "name": "C++",
-        "desc": "...",
+        "desc": "Coming soon!",
         "icon": "<i class=\"bi bi-terminal-fill\"></i>"
       },
       {
         "tag": "java",
         "name": "Java",
-        "desc": "...",
+        "desc": "Coming soon!",
         "icon": "<i class=\"bi bi-terminal-fill\"></i>"
       },
       {
         "tag": "kotlin",
         "name": "Kotlin",
-        "desc": "...",
+        "desc": "Coming soon!",
         "icon": "<i class=\"bi bi-terminal-fill\"></i>"
       }
     ],
@@ -38,7 +38,7 @@
       {
         "tag": "networking",
         "name": "Networking",
-        "desc": "Knowledge about IPV4 (CIDR, notations, Masks...), IPV6 (CHN, EUI-64...), protocols (TCP/IP, ICMP, TCP, UDP, IP....), and a lot of stuff related to networking.",
+        "desc": "Coming soon!",
         "icon": "<i class=\"bi bi-hdd-network\"></i>"
       }
     ],
