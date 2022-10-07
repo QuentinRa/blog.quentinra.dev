@@ -512,7 +512,7 @@ tata
 
 ## Read a file, or Write content in a file
 
-<div class="row row-cols-md-2 mt-2"><div>
+<div class="row row-cols-md-2 mt-4"><div>
 
 You should already know `>`, and `<` which are used to redirect input/output. If `> some_file` is used on a non-empty file, the file is truncated <small>(=cleared of its content)</small>. To avoid that, we can use `>> some_file`.
 
@@ -531,14 +531,36 @@ while read line; do
 done
 ```
 
+which can be enhanced by doing the redirection at the end
+
+```bash
+while read line; do
+    echo $line
+done >> toto.txt
+```
+</div><div>
+
 * Read the content of `toto.txt`
+
+```bash
+while read line; do
+  echo $line
+done < toto.txt
+```
+
+* **Note 1**: DO NOT USE CAT, stop killing kittens 😿😾
 
 ```bash
 cat toto.txt | while read line; do
     echo $line
 done
 ```
-</div><div>
 
-...
+* **Note 2**: But, you may use the concept with other commands
+
+```bash
+head -n 5 toto.txt | while read line; do
+    echo $line
+done
+```
 </div></div>
