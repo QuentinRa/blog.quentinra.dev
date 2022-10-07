@@ -482,8 +482,8 @@ done
 You can use a nested for to extract each word that was entered.
 
 ```bash
-while read input; do
-  for word in $input; do
+while read line; do
+  for word in $line; do
     echo $word
   done
 done
@@ -507,3 +507,38 @@ tata
 </details>
 </div></div>
 </details>
+
+<hr class="sr">
+
+## Read a file, or Write content in a file
+
+<div class="row row-cols-md-2 mt-2"><div>
+
+You should already know `>`, and `<` which are used to redirect input/output. If `> some_file` is used on a non-empty file, the file is truncated <small>(=cleared of its content)</small>. To avoid that, we can use `>> some_file`.
+
+* **Create an empty file `toto.txt`**, note that `touch` DO NOT ensure that the file is empty, so we can't use that.
+
+```bash
+# create an empty file
+echo -n "" > toto.txt
+```
+
+* Write user input in `toto.txt`
+
+```bash
+while read line; do
+    echo $line >> toto.txt
+done
+```
+
+* Read the content of `toto.txt`
+
+```bash
+cat toto.txt | while read line; do
+    echo $line
+done
+```
+</div><div>
+
+...
+</div></div>
