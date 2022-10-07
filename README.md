@@ -38,56 +38,11 @@ If you choose `info`, then create in `/info/` a folder named `course-name`. Insi
 
 If you want to edit a course, simply edit the `.md` file.
 
-## TODO List 
-
-Last updated: 2022-10-01
-
-<details>
-<summary> <b>Website tasks</b></summary>
-
-* **Guidelines**
-* [ ] empty alt in the Markdown should be checked/removed
-* [ ] add a width/height to images?
-* **Features**
-* [ ] advanced search? (inside a course/category)
-* [ ] adding file history
-* [ ] adding submit issue
-* [ ] breadcrumb?
-* [ ] improve edit page
-* [ ] local save (edit)?
-* **Content**
-* [ ] Index Google/Bing
-* [ ] add a pull request template
-* [ ] Explode the ToolBox? Check .todo in .summary
-</details>
-
-<br>
-
-<details>
-<summary> <b>Next content</b></summary>
-
-* [ ] Complete Linux (knowledge) course
-* [ ] Complete Linux (commands) course
-* [ ] Complete Networking course
-* [ ] Complete Cybersecurity (knowledge) course
-* [ ] Complete Relational modeling course
-* [ ] Complete Java course
-* [ ] Complete Bootstrap course
-* [ ] Complete C course
-* [ ] Complete CUnit course
-* [ ] Complete NCurses course
-* [ ] Complete C++ course
-* [ ] Complete Qt course
-* [ ] Complete Python course
-* [ ] Update Unity courses (mobile, VR, ...)
-* [ ] IntelliJ Plugin Development
-</details>
-
 ## Notes
 
 The website's backgrounds were made by [kronbits](https://kronbits.itch.io/backgrounds). If you want to add/remove one, feel free to submit a request using issues.
 
-If you are enjoying the website, please don't forget to star the repository on GitHub to support us.
+If you are enjoying the website, please ⭐ the repository on GitHub to support us.
 
 We backed references in another repository [here](https://github.com/memorize-code/memorize-references).
 
