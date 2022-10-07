@@ -76,6 +76,28 @@ There is a lot of [Intents here](https://developer.android.com/reference/android
 
 <hr class="sr">
 
+## Application life-cycle
+
+<div class="row row-cols-md-2 mt-4"><div class="align-self-center">
+
+![android_application_lifecycle](_images/android_application_lifecycle.png)
+</div><div>
+
+Android life-cycle is a bit complex. When starting an app, you go from Initialized, to Created, then Started, then Resumed.
+
+If the app is partially visible <small>(ex: click on share/...)</small>, then you go back to "Started".
+
+If you press the home button, your app will go back to Created, until you start it again.
+
+If Android need resources, then you app may be destroyed. If there are a lot of changes <small>(ex: language changed, **orientation of the screen**)</small>, then android will most likely destroy, and re-create the app.
+
+You can use `onCreate(Bundle)`, `onRestoreInstanceState(Bundle)`, to load saved data, and `onSaveInstanceState(Bundle)` to save data. A "bundle" is a **small, in-memory** dictionary, in which you can save a bit of data, that will be reloaded when the app is created, or started again.
+</div></div>
+
+> If `onCreate` bundle is null, this is the "first" time starting the app. Try rotating the screen, and you will see a case when `onCreate` is called with a non-null bundle.
+
+<hr class="sl">
+
 ## Views
 
 <div class="row row-cols-md-2 mx-0"><div>
@@ -196,7 +218,7 @@ RadioGroup is a ViewGroup used to ensure that only one RadioButton can be select
 </details>
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Layout Editor
 
@@ -218,7 +240,7 @@ RadioGroup is a ViewGroup used to ensure that only one RadioButton can be select
 
 **TIP**: you should rely on <kbd>CTRL+F</kbd> to search for attributes, or by clicking on the search icon at the top of the "Attributes" window.
 
-<hr class="sr">
+<hr class="sl">
 
 ## Resources
 
@@ -318,7 +340,7 @@ class MainActivity : AppCompatActivity() {
 
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Useful stuff
 
@@ -394,7 +416,7 @@ myEditText.setOnKeyListener { v, keyCode, keyEvent ->
 </details>
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Debugging
 
@@ -420,7 +442,7 @@ There are 5 levels of logs. You can view your logs in the tab "logat", in which 
 * `Log.e`: error
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## References
 
