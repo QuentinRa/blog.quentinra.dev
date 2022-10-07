@@ -13,7 +13,7 @@
 **Changed**
 
 * `course`: Remade of SQL (done)
-* `internal`: now the title of the page is the same as the content of "h1"
+* `internal`: now the title of the page is the same as the content of the course header
 * `rendering`: Markdown syntax reference 1.7
 
 **Removed**
