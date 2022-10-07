@@ -405,7 +405,7 @@ In Android project, you should use the logger instead of the standard output (ex
 ```kotlin
 // proper
 private const val TAG = "MainActivity"
-Log.v(MTAG, "message")
+Log.v(TAG, "message")
 // improper
 Log.v("tag", "message")
 ```
