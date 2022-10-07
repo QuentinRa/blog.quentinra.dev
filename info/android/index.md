@@ -15,12 +15,6 @@ Each screen of your application is an **Activity**. The "main" screen is usually
 * **MainActivity.kt** for the code handling the view
 * **activity_main.xml** for the view
 
-An [**intent**](https://developer.android.com/guide/components/intents-filters) is an object representing some action to be performed. There are two kinds of intents
-
-* **Explicit**: everything related to your app <small>(ex: launch another activity)</small>
-* **Implicit**: this is a type of action that you request another app, or the system to do <small>(ex: open link, share something)</small>
-
-</div><div>
 
 <details class="details-e">
 <summary>Base code for an Activity</summary>
@@ -39,9 +33,15 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 </details>
+</div><div>
+
+An [**intent**](https://developer.android.com/guide/components/intents-filters) is an object representing some action to be performed, such as navigating to another activity. There are two kinds of intents
+
+* **Explicit**: related to your app <small>(ex: launch one of your activities)</small>
+* **Implicit**: you request another application, or the system, to do the wanted action <small>(ex: open link, share something)</small>
 
 <details class="details-e">
-<summary>Explicit intent: start another activity</summary>
+<summary>Explicit intent: Start another activity</summary>
 
 ```kotlin
 val intent = Intent(context, MainActivity::class.java)
@@ -60,16 +60,16 @@ val someParam = intent?.extras?.getString("param").toString()
 </details>
 
 <details class="details-e">
-<summary>Implicit intent: start another activity</summary>
+<summary>Implicit intent: Start another activity</summary>
 
-* ACTION_VIEW is used with a page web (`https:`), a mail (`mailto:`), or a telephone (`tel:`)
+[There is a lot of Intents here](https://developer.android.com/reference/android/content/Intent).
+
+* **ACTION_VIEW** is used with a URL (`https:`), a mail (`mailto:`), or a telephone (`tel:`). For instance, given a URL, it will try to open it in a browser...
 
 ```kotlin
 val intent = Intent(Intent.ACTION_VIEW, Uri.parse("???"))
 context.startActivity(intent)
 ```
-
-There is a lot of [Intents here](https://developer.android.com/reference/android/content/Intent).
 </details>
 
 </div></div>
@@ -335,7 +335,6 @@ class MainActivity : AppCompatActivity() {
 ```
 </details>
 </details>
-
 </div></div>
 
 <hr class="sr">
