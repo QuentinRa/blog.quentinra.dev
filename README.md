@@ -5,9 +5,9 @@
 
 <h1>Memorize V5</h1>
 
-`Memorize` was made for students to create courses to help other students. We are gathering notes, exercises, links, etc. that helped us understand what we are learning in school.
+**Memorize** was made for people to share notes, links, tutorials, experiences, along with exercises, to help each other. We are providing programming, mathematical, projects-related and tools-related courses.
 
-Since we are still learning, we could have made mistakes. Please kindly correct or report them. Thanks!
+Anyone can contribute, and you are more than welcome! There is a small gift for each contribution 😘!
 
 Provided by `Legendary Games Studio`, [memorize@lgs-games.com](mailto:memorize@lgs-games.com).
 </div>
@@ -23,7 +23,7 @@ Provided by `Legendary Games Studio`, [memorize@lgs-games.com](mailto:memorize@l
 
 ## How to contribute
 
-If you want to add a new course, add an entry in ``.summary``, in the JSON of your course category.
+If you want to add a new course, add an entry in `.summary`, in the JSON of your course category.
 
 ```json
 {
@@ -34,9 +34,9 @@ If you want to add a new course, add an entry in ``.summary``, in the JSON of yo
 }
 ```
 
-If you choose ``info``, then create in ``/info/`` a folder named `course-name`. Inside, create a file ``index.md`` that will be used as the entry point for your course. You may check others' files if you're wondering how you should write yours.
+If you choose `info`, then create in `/info/` a folder named `course-name`. Inside, create a file `index.md` that will be used as the entry point for your course. You may check others' files if you're wondering how you should write yours.
 
-If you want to edit a course, simply edit the ``.md`` file.
+If you want to edit a course, simply edit the `.md` file.
 
 ## TODO List 
 

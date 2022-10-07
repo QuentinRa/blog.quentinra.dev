@@ -523,7 +523,7 @@ We are mainly using redirections to read/write files, as the process is the same
 echo -n "" > toto.txt
 ```
 
-* Write user input in `toto.txt`
+* **Write** user input in `toto.txt`
 
 ```bash
 while read line; do
@@ -540,7 +540,7 @@ done >> toto.txt
 ```
 </div><div>
 
-* Read the content of `toto.txt`
+* **Read** the content of `toto.txt`
 
 ```bash
 while read line; do
