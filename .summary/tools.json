@@ -78,7 +78,7 @@
         "icon": "<i class=\"bi bi-battery-charging\"></i>"
       },
       {
-        "tag": "jetbrains-plugins",
+        "tag": "jetbrains/plugins/index.md",
         "name": "JetBrains (plugins)",
         "desc": "No description yet.",
         "icon": null
