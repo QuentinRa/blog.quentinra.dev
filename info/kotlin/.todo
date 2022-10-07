@@ -160,3 +160,26 @@ companion object is basically associating a nameless "object" to another class,
 while this object is kinda a singleton, or sis static.
 
 https://kotlin-quick-reference.com/052-R-control-structures.html
+
+private val name get() = value
+    public var x : Any? = null
+        get() = field
+        get() {
+        }
+        set(value) {
+            field = value
+        }
+
+* onCreate => bundle
+    => setHasOptionsMenu(true) ???
+* onViewCreated()
+* onDestroyView()
+    => binding = null
+
+Cannot use this, use requireContext(), when a context is needed
+activity?.intent?
+
+-------------
+AndroidManifest
+=> activities
+    => intent-filter

@@ -87,6 +87,12 @@ https://developer.android.com/reference/com/google/android/material/card/Materia
 ----------------
 private lateinit var binding: ActivityMainBinding
 binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+https://blog.logrocket.com/data-binding-android-tutorial-with-examples/
+```gradle
+buildFeatures {
+    dataBinding = true
+}
+```
 ----------------
 val shareIntent = ShareCompat.IntentBuilder.from(this)
                 .setText("...")
@@ -171,3 +177,10 @@ Navigation UI
 
 It's possible to have multiples "screens" within one activity, for instance tabs, using fragments. Fragments
 are reusable view that can be embed in activities. For instance, a navbar will most likely be a fragment.
+It fragment has it own lifecycle.
+
+https://developer.android.com/reference/kotlin/androidx/lifecycle/Lifecycle.State
+https://developer.android.com/codelabs/basic-android-kotlin-training-fragments-navigation-component#2
+
+New fragment
+tools:context if changing the .fxml
