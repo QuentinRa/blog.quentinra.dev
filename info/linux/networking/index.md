@@ -1,6 +1,6 @@
 # Linux networking commands
 
-A lot of commands, along with their most useful options, and some tips about their usage, that can be used on Linux-based distributions. This includes commands such as `hostname`, `ip`, `ifconfig`, `ss`, `ping`, `ncat/nc/netcat`, `whois`, `dig`, `wireshark`, `tcpdump`, `tshark`, `arp`, `route`, `iptables` and many more.
+A lot of commands that can be used on Linux-based distributions, along with their most useful options, and some tips about their usage. This includes commands such as `hostname`, `ip`, `ifconfig`, `ss`, `ping`, `ncat/nc/netcat`, `whois`, `dig`, `wireshark`, `tcpdump`, `tshark`, `arp`, `route`, `iptables` and many more.
 
 <hr class="sl">
 
@@ -25,7 +25,7 @@ $ ip link show dev0
 ```
 <br>
 
-Useful option: `-r` to show names instead of ips.
+Useful option: `-r` to show names instead of IPs.
 </div><div>
 
 Show routing table <small>(r=route)</small>
@@ -116,13 +116,13 @@ $ ping -c x google.fr
 
 Other options
 
-* `-b ip`: ping all address in the ip range
+* `-b ip`: ping all addresses in the IP range
 * `-t ttl`: set the time to live of the ping
-* `-s size`: size of the ping
+* `-s size`: the size of the "ping"
 </details>
 </div><div>
 <details class="details-e">
-<summary><code>dig</code>: ip to name, name to ip</summary>
+<summary><code>dig</code>: IP to name, name to IP</summary>
 
 ```bash
 $ dig google.fr
@@ -169,7 +169,7 @@ $ netcat localhost 33666
 <summary><code>nmap</code>: scan a machine to get some data (ports...)</summary>
 <div class="row row-cols-md-2"><div>
 
-List targets to scan
+List all targets to scan
 
 ```bash
 $ nmap 127.0.0.1 -sL
@@ -191,7 +191,7 @@ $ nmap localhost -sS
 $ nmap localhost -sT
 ```
 
-You can execute a lua script with `--script=lua_script`, see [nsedoc](https://nmap.org/nsedoc/) ([nsedoc scripts](https://nmap.org/nsedoc/scripts/): simply give the name of the script to execute).
+You can execute a Lua script with `--script=lua_script`, see [nsedoc](https://nmap.org/nsedoc/) ([nsedoc scripts](https://nmap.org/nsedoc/scripts/): simply give the name of the script to execute).
 </div><div>
 
 Only try to map some ports
@@ -202,7 +202,7 @@ $ nmap localhost -p 22,23
 $ nmap localhost -p 0-65535
 ```
 
-To reduce the risk of being detected, you can set some timing starting 0=passive=slow, and up to 5=aggressive=fast.
+To reduce the risk of being detected, you can set some timing starting with 0=passive=slow, and up to 5=aggressive=fast.
 
 ```bash
 $ nmap localhost -p 22 -T0
@@ -226,15 +226,15 @@ $ nmap localhost -v
 <summary><code>tcpdump</code>: monitor network (root required)</summary>
 <div class="row row-cols-md-2"><div>
 
-* `-i interface` : interface à écouter
-* `-e`: affiche l’entête de la requête
-* `-n`: affiche les noms plutôt que les adresses
+* `-i interface` : listen to this interface
+* `-e`: show the header of the request
+* `-n`: show names instead of addresses
 * `-l`: copy results in a buffer (`tcpdump -l | tee file`)
-* `-o`: no optimisations (listen take a lot of resources)
-* `-F`: read from a phile
-* `-v` et `-vv`: show more, or even more verbosity
+* `-o`: no optimizations (listen take a lot of resources)
+* `-F`: read from a file
+* `-v`, and `-vv`: show more, or even more verbosity
 * `-t`: do not show time
-* `host name_or_address`: listen only one host, you can add other hots with `AND host ...`
+* `host name_or_address`: listen to only one host, you can add other hots with `AND host ...`
 
 </div><div>
 
@@ -260,11 +260,11 @@ $ tshark -i eth0 -f "host some_ip"
 
 See [wireshark](https://www.wireshark.org/download.html).
 
-You can enter theses in the main bar to filter entries
+You can enter these in the main bar to filter entries
 
 * `ip.src == some_ip`, or `ip.dest == some_ip`
 * `tcp.port == some_port`, or `udp.port == some_port`
-* `http.request.method == GET`,or `http.request.method == POST`, or ...
+* `http.request.method == GET`, or `http.request.method == POST`...
 * You can use `&&` (logical AND), `||` (logical OR), `!=` (different)
 
 Once you find something interesting, right-click on it > Follow > Flux, and pick a protocol.
@@ -284,14 +284,14 @@ Use File > Export > HTTP to GET download files.
 * `-t table`: FILTER by default
 * `-A chain`: add a rule at the end of the chain
 * `-I chain`: add a rule at the start of the chain
-* `-D chain`: supprime une règle
-* `-o interface`: sort par l’interface
-* `-i interface`: entre par l’interface
-* `-j action`: chain or
+* `-D chain`: delete a rule
+* `-o interface`: exit via "interface"
+* `-i interface`: enter using "interface"
+* `-j action`: a chain or:
   * `SNAT/DNAT`: translation source/destination
   * `ACCEPT`: allow
-  * `DENY/DROP`: deny without notifying sender
-  * `REJECT`: deny, but notify sender
+  * `DENY/DROP`: deny without notifying the sender
+  * `REJECT`: deny, but notify the sender
 * `-s ip`: source <small>(separated by colons)</small>
 * `-d ip`: destination (s<small>(separated by colons)</small>
 * `--sport port`: source port
@@ -299,7 +299,7 @@ Use File > Export > HTTP to GET download files.
 * `--to ip`: if SNAT/DNAT, the new source/destination
 * `-p protocol`: which protocol
 
-**Note**: you can use `!` (NOT), such as `-s !127.0.0.1` meaning every packet not having "127.0.0.1" as source will be filtered.
+**Note**: you can use `!` (NOT), such as `-s !127.0.0.1` meaning every packet not having "127.0.0.1" as `source` will be filtered.
 </div><div>
 
 No examples yet.
