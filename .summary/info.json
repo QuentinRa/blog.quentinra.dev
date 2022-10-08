@@ -13,25 +13,29 @@
         "tag": "c",
         "name": "C",
         "desc": "Coming soon!",
-        "icon": "<i class=\"bi bi-terminal-fill\"></i>"
+        "icon": "<i class=\"bi bi-terminal-fill\"></i>",
+        "hidden": true
       },
       {
         "tag": "cpp",
         "name": "C++",
         "desc": "Coming soon!",
-        "icon": "<i class=\"bi bi-terminal-fill\"></i>"
+        "icon": "<i class=\"bi bi-terminal-fill\"></i>",
+        "hidden": true
       },
       {
         "tag": "java",
         "name": "Java",
         "desc": "Coming soon!",
-        "icon": "<i class=\"bi bi-terminal-fill\"></i>"
+        "icon": "<i class=\"bi bi-terminal-fill\"></i>",
+        "hidden": true
       },
       {
         "tag": "kotlin",
         "name": "Kotlin",
         "desc": "Coming soon!",
-        "icon": "<i class=\"bi bi-terminal-fill\"></i>"
+        "icon": "<i class=\"bi bi-terminal-fill\"></i>",
+        "hidden": true
       }
     ],
     "e5": [
@@ -39,7 +43,8 @@
         "tag": "networking",
         "name": "Networking",
         "desc": "Coming soon!",
-        "icon": "<i class=\"bi bi-hdd-network\"></i>"
+        "icon": "<i class=\"bi bi-hdd-network\"></i>",
+        "hidden": true
       }
     ],
     "e2": [
