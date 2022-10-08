@@ -1,14 +1,19 @@
 # Change Log
 
-## v5.1.0 (2022-10-9)
+## upcoming
+
+**Added**
+
+* `course`: Adding course "Android"
+* `course`: Adding course "Kotlin"
+
+## v5.1.0 (2022-10-8)
 
 **Added**
 
 * `feature`: new category "cybersecurity"
 * `feature`: can hide courses
-* `feature`: ROADMAP
-* `course`: Adding course "Android"
-* `course`: Adding course "Kotlin"
+* `feature`: Roadmap
 * `course`: Adding course "Linux" "Linux (commands)" "Linux (Network)" "Linux (scripts)"
 
 **Changed**
