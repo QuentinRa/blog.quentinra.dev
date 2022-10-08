@@ -13,6 +13,7 @@ dir
 rmdir
 cd -
 ps -C program
+xrandr --output DP-2 --brightness 0.5
 
 can use put, get, pwd... with FTP.
 # ls <folder>: list files of <folder>
