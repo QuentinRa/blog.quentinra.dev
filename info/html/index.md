@@ -17,14 +17,15 @@ The usual place to learn HTML/CSS/JS is [W3Schools](https://www.w3schools.com/ht
 To summarize what was written in the WEB course, 
 
 * a browser and a server are communicating using the protocol HTTP (or HTTPS=HTTP Secure)
-* when you are visiting a page (ex: https://duckduckgo.com)
+* when you are visiting a page <small>(ex: https://duckduckgo.com)</small>
 * you are asking the server to return the HTML for this page
-* **usually**, no HTML file in the URL means
-  * that the server is using a router
-  * or, that the file `index.html` (or `index.php`...) is loaded
-  * ex: for DuckDuckGo, `https://duckduckgo.com` is the same as `https://duckduckgo.com/index.html`.
+* **usually**, if the URL isn't ending with an HTML file
+  * then either the server is using a router
+  * or, the file `index.html` (or `index.php`...) is loaded
 
-<details class="pb-3">
+> For instance, for DuckDuckGo, `https://duckduckgo.com` is the same as `https://duckduckgo.com/index.html`.
+
+<details class="details-n">
 <summary>An HTML file is made a <b>tags</b> (ex: title, meta, ...) that have <b>attributes</b> (properties such as <code>lang="fr"</code> etc.).
 </summary>
 
@@ -51,10 +52,10 @@ To summarize what was written in the WEB course,
 ```
 </details>
 
-<details class="pb-3">
-<summary><b>How do I "run" HTML code?</b></summary>
+<details class="details-n">
+<summary>How do I "run" HTML code?</summary>
 
-Create a file `index.html` (ex: with the content above), drag and drop it inside a browser, and you should see your page. You don't need a server as your code is fully in HTML (no PHP). You can change the name of the file, but the main file of your website must be called `index`. Your browser isn't "executing" code, it's simply rendering the code it received <small>(the URL is a sort of `file://path/to/a/file.html`, and as we learned before, if there is no file in the URL, and you got an index.html, then it's loaded instead)</small>.
+Create a file `index.html` (ex: with the content above), drag and drop it inside a browser, and you should see your page. You don't need a server as your code is fully in HTML (no PHP). You can change the name of the file, but the main file of your website must be called `index`. Your browser isn't "executing" code, it's simply rendering the code it received <small>(the URL is a sort of `file://path/to/a/file.html`, and as we learned before, if there is no file in the URL, and an index.html exists, then it's loaded instead)</small>.
 
 You can also try [an online editor such as this one](https://dev.codehs.com/editor/new/html). If you want something cleaner (using a server, http/https instead of file), then refer to the PHP course (this isn't complicated).
 </details>
@@ -63,23 +64,25 @@ You can also try [an online editor such as this one](https://dev.codehs.com/edit
 
 ## Tags
 
+<div class="row row-cols-md-2"><div>
+
 The main idea when writing HTML is that you are going to write some tags, such as **p** for a paragraph or **a** for a link. Then you can add some attributes, such as `href` for a link that is the URL the link will be pointing to.
 
-You will have two types of tags, tags like `<img ...>` called **auto-closing tags** because you don't write `<img></img>`, as you would with **others** such as `<a ...>this is a link</a>`.
+You will have two types of tags, tags like `<img ...>` called **auto-closing tags** because you don't write `<img></img>`, as you would with **non-auto-closing tags** such as `<a ...>this is a link</a>`.
 
 You may also note that tags such as **p** are called blocking tags, because unless you use CSS, the tags after **p** will be rendered starting from a newline. To be accurate, "p", "div", etc. are **block-level elements** while "a", "span", etc. are called **inline elements**. A block element is usually storing a bunch of inline elements. I'm usually calling those "containers".
-
-**Notes**
+</div><div>
 
 * the name of a tag can be in lowercase or in uppercase (ex: "a" or "A" are working), use lowercase 😎
 * you can write `attribute=value` (without ", but that may not work every time according to the value, **do not use this 😟**)
 * you can write `attribute='value'` (instead of ", **do not use this 😟**)
 * you may write `<img ...></img>` or `<img ... />` (without the /), but we are usually writing `<img ...>` for auto-closable tags.
 * you do not need to indent your code, but it makes things cleaner 🙂
-* you do not need to put one tag per line, but it makes things cleaner 🙂
-* so tags are optional (such as </li> or </body>, but you shouldn't omit/forget them)
+* you do not need to put one tag per line, but it makes things cleaner
+* so tags are optional (such as `</li>` or `</body>`, but you shouldn't omit/forget them)
 
-> When I'm saying "do not use/do this", I mean that developers are usually not using this, and if you do, then you should make sure **to not mix things** (do not mix ' and ") as this is what bad developers do. Pick one, and be consistent until the end.
+> When I'm saying "do not use/do this", I mean that developers are usually not doing/using this, BUT if you do, then you should make sure **to not mix things** <small>(ex: do not mix ' and ")</small> **as this is what bad developers do**. Pick one, and be consistent until the end.
+</div></div>
 
 <hr class="sr">
 
@@ -122,7 +125,7 @@ The first line is `<!doctype html>` (or DOCTYPE), and the code is inside a tag c
 <details>
 <summary>Example (image)</summary>
 
-![html5_doc_sections](html5.png)
+![html5_doc_sections](_images/html5.png)
 </details>
 
 <details>

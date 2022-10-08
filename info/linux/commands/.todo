@@ -10,6 +10,7 @@ tee
 curl
 env
 dir
+rmdir
 
 can use put, get, pwd... with FTP.
 # ls <folder>: list files of <folder>
