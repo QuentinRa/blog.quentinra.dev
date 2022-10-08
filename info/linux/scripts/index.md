@@ -4,7 +4,7 @@
 
 Scripts are simply files with usually many Linux commands, usually written in Bash, as it is the default shell language in many Linux-based distributions. You can see scripts as programs, and you will execute them as you do with programs.
 
-A script is usually written in a file `name.sh`, regardless of the language used in the script, but this isn't mandatory. Here, is a simple script show "Hello, World", in a file `example.sh`
+A script is usually written in a file `name.sh`, regardless of the language used in the script, but this isn't mandatory. Here, is a simple script to show "Hello, World", in a file `example.sh`
 
 ```bash
 #!/bin/bash
@@ -346,7 +346,7 @@ echo $@
 program_name=$0
 ```
 
-**Note 2**: check the number of arguments, the example below check that there is at least 2 arguments, print a message, and exit with 1 otherwise.
+**Note 2**: check the number of arguments! The example below checks that there are at least 2 arguments, prints a message, and exits with 1 otherwise.
 
 ```bash
 if [ $# -lt 2 ]; then
@@ -531,7 +531,7 @@ while read line; do
 done
 ```
 
-which can be enhanced by doing the redirection at the end, meaning that every output <small>(every echo...)</small> will be redirected to `toto.txt`.
+Which can be enhanced by doing the redirection at the end, meaning that every output <small>(every echo...)</small> will be redirected to `toto.txt`.
 
 ```bash
 while read line; do
