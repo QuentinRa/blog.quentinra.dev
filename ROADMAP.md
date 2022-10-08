@@ -26,6 +26,7 @@ Last updated: 2022-10-01
 **Changes**: what need to be changed in the existing courses
 
 * [ ] Explode the ToolBox? Check .todo in .summary
+* [ ] Split SCSS/SASS/LESS in another course
 
 **In-progress**: courses that I'm working on, and need to be completed
 
@@ -40,6 +41,9 @@ Last updated: 2022-10-01
 * [ ] Redo C, CUnit, NCurses courses
 * [ ] Redo C++ course
 * [ ] Redo Python course
+* [ ] Redo OCaml course
+* [ ] Redo JavaScript course
+* [ ] Redo HTML course
 * [ ] Redo Unity courses (+mobile, +vr)
 
 **New**: courses that I will work on later
