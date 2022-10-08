@@ -12,6 +12,7 @@ env
 dir
 rmdir
 cd -
+ps -C program
 
 can use put, get, pwd... with FTP.
 # ls <folder>: list files of <folder>
