@@ -75,7 +75,7 @@ Text editors, or file editors, are tools allowing you to view, and edit a file. 
 
 I think nano is the easiest to learn.
 
-* **Open a file in nano**: `nano file.txt` <small>(created if it does not exists)</small>
+* **Open a file in nano**: `nano file.txt` <small>(created if it does not exist)</small>
 * **Save a file in nano**: `CTRL+S`
 * **Quit nano**: `CTRL+X`
 
@@ -118,7 +118,7 @@ Permissions are something like `u=r+w, g=r, o=r`. We usually use numbers. The sy
 <details class="details-e">
 <summary>Root / Administrator</summary>
 
-There is a super-user, usually called root, that has absolute control over the machine. `root` can delegate this power to others   by making them a part of the "sudoers" group. The command to do an action using elevated permissions is different according to the Linux distribution, but the command **sudo** is the most well-known one.
+There is a super-user, usually called root, that has absolute control over the machine. `root` can delegate this power to others by making them a part of the "sudoers" group. The command to do an action using elevated permissions is different according to the Linux distribution, but the command **sudo** is the most well-known one.
 
 ![super-user/sudo bash](_images/sudo.png)
 
@@ -171,7 +171,7 @@ The folder with every file belonging to "user".
 </td></tr>
 
 <tr><td><b>hidden files</b> (<code>fichiers cachés</code>)<br>
-Files that are not visible by default..
+Files that are not visible by default.
 </td><td>❌ defined manually<td>any file starting with <code>.</code> (dot), such as <code>.config</code></td></tr>
 
 <tr><td><b>"Program files"</b><br>
@@ -260,7 +260,7 @@ If the shell notices a pattern, then it will try to replace any matching content
 <tbody>
 
 <tr><td><code>x</code> (a character)</td><td>the character 'x'</td></tr>
-<tr><td><code>*</code> (asterisk)</td><td>a, possibly-empty, list of characters</td></tr>
+<tr><td><code>*</code> (asterisk)</td><td>a possibly empty suite of characters</td></tr>
 <tr><td><code>?</code> (question mark)</td><td>one character</td></tr>
 <tr><td><code>[abc]</code></td><td>one character which is either a, b, or c.</td></tr>
 <tr><td><code>[^abc]</code><br><code>[!abc]</code></td><td>any character which is not a, nor b, nor c.</td></tr>
