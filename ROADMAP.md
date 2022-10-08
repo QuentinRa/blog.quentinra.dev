@@ -19,6 +19,20 @@ Last updated: 2022-10-01
 - [ ] add a list of modifications/...
 - [ ] add a "last modified: ..."
 
+<details class="details-e">
+<summary>Random notes</summary>
+
+* add go back to #titleID instead of #linkID
+* replacing links like [here] by something better
+* increase courses title length (ex: add programming)
+* review all pages for SEO
+* replace HTML tables by Markdown tables
+* soft wraps for everyone
+* replace <code>````</code> by <code>``</code>
+* check the description for sub pages
+* check the titles for sub pages
+</details>
+
 <hr>
 
 ## Courses
@@ -53,6 +67,7 @@ Last updated: 2022-10-01
 * [ ] Do Bootstrap course
 * [ ] Do IntelliJ Plugin Development
 * [ ] Do Relational modeling course
+* [ ] Do WordPress/Moodle course
 
 **Learn**: stuff I would want to learn, or check out at least
 
