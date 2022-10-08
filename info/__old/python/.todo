@@ -9,3 +9,9 @@ https://programmingwithmosh.com/wp-content/uploads/2019/02/Python-Cheat-Sheet.pd
 https://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html
 
 https://pythonawesome.com/all-algorithms-implemented-in-python-for-education/
+
+-----------
+
+sorted(dic.items(), key= lambda x : x[0], reverse=True)
+
+https://docs.python.org/3.10/library/stdtypes.html#mapping-types-dict

@@ -28,3 +28,29 @@ STANDARD
 
 https://github.com/controlook-zz/standards/blob/master/general/version_control.md
 https://chris.beams.io/posts/git-commit/#seven-rules
+
+-----------------------
+xxx
+-----------------------
+
+GIT SUBMODULES
+git submodule init
+git submodule update
+.gitmodules
+[submodule "RosettaCodeData"]
+    path = RosettaCodeData
+    url = https://github.com/acmeism/RosettaCodeData.git
+[submodule "watts-up"]
+    path = watts-up
+    url = https://github.com/pyrovski/watts-up.git
+[submodule "ExternalLibraries/C/yajl"]
+    path = ExternalLibraries/C/yajl
+    url = https://github.com/lloyd/yajl.git
+
+GIT LFS
+git lfs fetch --all origin
+https://stackoverflow.com/questions/46595617/what-does-this-git-lfs-corrupted-file-error-mean-and-how-to-fix-it
+https://stackoverflow.com/questions/48699293/how-do-i-disable-git-lfs
+https://stackoverflow.com/questions/47763228/how-to-stop-using-git-lfs-in-a-repository
+https://github.com/git-lfs/git-lfs/issues/3463
+https://stackoverflow.com/questions/21353656/merge-git-repo-into-branch-of-another-repo
