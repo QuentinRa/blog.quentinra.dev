@@ -124,7 +124,8 @@
         "tag": "android",
         "name": "Android",
         "desc": "Android application development using Android Studio, and Kotlin.",
-        "icon": "<i class=\"bi bi-globe\"></i>"
+        "icon": "<i class=\"bi bi-globe\"></i>",
+        "hidden": true
       }
     ]
   }
