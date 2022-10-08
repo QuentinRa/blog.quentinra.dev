@@ -31,3 +31,15 @@ Attack a vulnerable machine, scan the network to discover more vulnerable machin
 ## Linux
 
 * `<command> <flag> <input>`
+* `&` bg
+* `$USER`, `export <varname>=<value>`
+* `cat -`
+* `;`
+* ugo or uge = everyone else?
+* `/etc/shadow`
+
+<hr class="sep-both">
+
+## Tools
+
+* Putty
