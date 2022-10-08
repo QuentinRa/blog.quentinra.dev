@@ -1,4 +1,4 @@
-# List of essentials linux commands
+# List of essential Linux commands
 
 A lot of commands, along with their most useful options, and some tips about their usage, that can be used on Linux-based distributions. This includes commands such as `sudo`, `apt`, `man`, `ls`, `cd`, `pwd`, `echo`, `printf`, `cat`, `less`, `mkdir`, `touch`, `cp`, `mv`, `rm`, `ln`, `chmod`, `umask`, `chown`, and many more.
 
@@ -38,7 +38,7 @@ $ sudo -s
 <summary><code>apt/aptitude</code>: install/update packages/OS</summary>
 <div class="row row-cols-md-2"><div>
 
-`apt` is the default package manager on many well-know Linux-based distributions such as Ubuntu/Debian.
+`apt` is the default package manager on many well-known Linux-based distributions such as Ubuntu/Debian.
 
 ```bash
 # operations on the package "aptitude"
@@ -58,7 +58,7 @@ When installing packages, you are prompted `Do you want to continue? [Y/n]` (you
 sudo apt install -y aptitude
 ```
 
-`aptitude`, which need to be installed, is doing the same as `apt`, but there is a graphical interface included.
+`aptitude`, which needs to be installed, is doing the same as `apt`, but there is a graphical interface included.
 
 ```bash
 sudo aptitude # press 'q' to quit
@@ -76,7 +76,7 @@ sudo aptitude install nano
 $ man man
 ```
 
-Entries in the manual are split into sections. To access a command of a specific section, simply add the section number before the command.
+Entries in the manual are split into sections. To access a command in a specific section, simply add the section number before the command.
 
 ```bash
 $ man 1 man
@@ -97,7 +97,7 @@ List all files in the given directory. If none, work on the current directory. I
 * `-l` : show a lof of information (l=long)
 * `-a`: show hidden files
 * `-R`: recursive
-* `-p`: add trailing "/" to repositories
+* `-p`: add a trailing "/" to repositories
 
 ```bash
 $ ls
@@ -200,7 +200,7 @@ $ mkdir -p folder0/folder1/folder2
 <details class="details-e">
 <summary><code>touch</code>: create file</summary>
 
-Create file if needed, otherwise update the last modified date. **It is important to note that this command is not clearing the contents of the existing file, if any**.
+Create a file if needed, otherwise, update the last modified date. **It is important to note that this command is not clearing the contents of the existing file if any**.
 
 ```bash
 $ touch a_file
@@ -227,7 +227,7 @@ To rename something
 $ cp toto toto0
 ```
 
-To copy a **folder**, along its content
+To copy a **folder**, along with its content
 
 ```bash
 $ cp -r all_toto/ all_toto_copy
@@ -380,16 +380,16 @@ You may use `-R` (recursive), and `-h` (do not deference symbolic links).
 <summary><code>find</code>: search for files</summary>
 <div class="row row-cols-md-2"><div>
 
-The starting point is `find folder`, which explore recursively, and list every file inside folder. You may
+The starting point is `find folder`, which explores recursively, and lists every file inside `folder`. You may
 
-* apply filters
+* Apply filters
   * `-type`: f=files only, d=folders only 
   * `-empty`: empty only
   * `-name "pattern"`: files' names matching "pattern"
-* execute an action on each result
+* Execute an action on each result
   * `-exec ... \;`: `{}` is the current file on which you may perform an action. `...` is some placeholder for your code that will use `{}`.
   * `-execdir ... {} \;`: same as `-exec`, but each command is executed in the folder of `{}`, and not in the folder where the `find` was executed.
-* other options
+* Use other options
   * `-quit`: exit when one result is found
   * `-printf`: change output
   * `-mindepth value`: minimum depth (default=0)

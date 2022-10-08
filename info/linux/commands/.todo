@@ -11,6 +11,7 @@ curl
 env
 dir
 rmdir
+cd -
 
 can use put, get, pwd... with FTP.
 # ls <folder>: list files of <folder>
