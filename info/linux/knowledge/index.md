@@ -1,14 +1,14 @@
 # Operating System
 
-This course is a gathering of general knowledge shared between most, if not all, Linux-based distributions such as Debian, Ubuntu, Fedora, Arch Linux... Most of Linux-based distributions are free, open-source, light, secure, and performant. As the source-code is exposed, anyone can improve it, modify, and know how the underlying system is doing its job.
+This course is a gathering of general knowledge shared between most, if not all, Linux-based distributions such as Debian, Ubuntu, Fedora, or Arch Linux... Most Linux-based distributions are free, open-source, light, secure, and performant. As the source code is public, anyone can improve it, modify it, and know how the underlying system is doing its job.
 
-> **Note**: as of now, Linux-based distributions will be referred as Linux. GNU/Linux will be referred as Linux too. Let's keep things simple, and tidy.
+> **Note**: as of now, Linux-based distributions will be referred to as Linux. GNU/Linux will be referred to as Linux too. Let's keep things simple, and tidy.
 
 <hr class="sl">
 
 ## Terminal
 
-Linux in its simplest form is a **terminal** (console, `invite de commande`). Inside a terminal, we can write commands interpreted by something called **Shell**. There are multiple Shell languages that we can use <small>(sh, csh, tcsh, ksh, bash)</small>, but **most Linux distribution are using bash** <small>(bourne again shell)</small>, an improved version of sh.
+Linux in its simplest form is a **terminal** (console, `invite de commande`). Inside a terminal, we can write commands interpreted by something called **Shell**. There are multiple Shell languages that we can use <small>(sh, csh, tcsh, ksh, bash)</small>, but **most Linux distributions are using bash** <small>(bourne again shell)</small>, an improved version of sh.
 
 ![Linux: Terminal](_images/terminal.png)
 
@@ -34,7 +34,7 @@ bash > some_command_at_least_work_in_bash
 
 <div class="row row-cols-md-2"><div>
 
-A command is basically **a name**, that may be followed by options, and arguments. Usually, everyone is only saying arguments instead of differencing options/arguments, the difference being that options starts with `-`.
+A command is **a name**, which may be followed by **arguments**, in which some may be **options**. Usually, devs are only saying "arguments" rather than differencing options/arguments, the difference being that an option starts with a `-`.
 
 * you are writing commands right after the `$`
 * press <kbd>ENTER</kbd> to execute a command
@@ -118,7 +118,7 @@ Permissions are something like `u=r+w, g=r, o=r`. We usually use numbers. The sy
 <details class="details-e">
 <summary>Root / Administrator</summary>
 
-There is a super-user, usually called root, that have every control on the machine. Root can delegate this power to others users by making them a part of the "sudoers" group. The command to do an action using elevated permissions is different according to the Linux-distribution, but the command **sudo** is the most well-know one.
+There is a super-user, usually called root, that has absolute control over the machine. `root` can delegate this power to others   by making them a part of the "sudoers" group. The command to do an action using elevated permissions is different according to the Linux distribution, but the command **sudo** is the most well-known one.
 
 ![super-user/sudo bash](_images/sudo.png)
 
@@ -155,11 +155,11 @@ In both Linux, and Windows, there is a notion of **Path**. A path is made of one
 </td><td><code>C:\Users\user\Documents\</code></td><td><code>/usr/home/user/Documents/</code></td></tr>
 
 <tr><td><b>Separator</b><br>
-Something separating folders in a path.
+Something that is separating folders in a path.
 </td><td><code>\</code> (backslash)</td><td><code>/</code> (slash)</td></tr>
 
 <tr><td><b>root</b> (<code>racine</code>)<br>
-The folder containing every other folder.
+The folder is containing every other folder.
 </td><td><code>C:\</code></td><td><code>/</code></td></tr>
 
 <tr><td><b>(user) home</b> (<code>domicile</code>)<br>
@@ -167,7 +167,7 @@ The folder with every file belonging to "user".
 </td><td><code>C:\Users\user\</code></td><td><p><code>/usr/user/home/</code></p>
 
 * The path to the home is stored inside `$HOME`
-* The home of every user is record in `/etc/passwd`
+* The home of every user is recorded in `/etc/passwd`
 </td></tr>
 
 <tr><td><b>hidden files</b> (<code>fichiers cachés</code>)<br>
@@ -249,9 +249,9 @@ If the home of the current user is `/usr/user/home/`, then `~` would mean the ex
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-**Glob-patterns** (`motifs`) are a sort of simplified version of regex, mainly used to do request given a pattern. For instance, `ls *.h` is listing every file (and directory) ending with `.h`.
+**Glob-patterns** (`motifs`) are a sort of simplified version of regex, mainly used to do requests given a pattern. For instance, `ls *.h` is listing every file (and directory) ending with `.h`.
 
-If the shell notice a pattern, then it will try to replace any matching content where the pattern was used. With this, `ls *.h` would become something like `ls toto.h lili.h`, then will be executed.
+If the shell notices a pattern, then it will try to replace any matching content where the pattern was used. With this, `ls *.h` would become something like `ls toto.h lili.h`, then will be executed.
 
 <table class="table table-bordered table-striped border-dark">
 <thead>
@@ -275,10 +275,10 @@ If the shell notice a pattern, then it will try to replace any matching content 
 
 </div><div>
 
-**Regular expressions** (`expressions régulières`), commonly referred as **regex**, are an enhanced version of glob-patterns used by tools such as `grep`, `sed`, and most, if not all, programming language.
+**Regular expressions** (`expressions régulières`), commonly referred to as **regex**, are an enhanced version of glob-patterns used by tools such as `grep`, `sed`, and most, if not all, programming language.
 
 * Every glob-pattern exists too in regexes
-* But, `?` is now replace with `.`
+* But, `?` is now replaced with `.`
 
 And, some new tokens were introduced
 
@@ -297,14 +297,14 @@ And, some new tokens were introduced
 <tr><td><code>(ab)+</code></td><td>at least one time 'ab'</td></tr>
 </tbody></table>
 
-Something to note with regexes is the notion of groups. You can write some expression, and wrap it into escaped parenthesis `\(some_part_of_my_regex\)`. By doing so, you created a group, that may be later referred as `$1`/`\1` if this was the first one. This is useful do extract some parts of the matching result.
+Something to note with regexes is the notion of groups. You can write some expression, and wrap it into escaped parenthesis `\(some_part_of_my_regex\)`. By doing so, you created a group, that may be later referred to as `$1`/`\1` if this was the first one. This is useful to extract some parts of the matching result.
 </div><div>
 </div></div>
 
 <details class="details-e">
 <summary>Commands</summary>
 
-Most well-know usages of **glob-patterns** are in commands such as `ls`, `cat`, `gcc`, or more generally, commands taking a variable amount of files. For instance, in Java, some programmers are using `java *.java` to compile every `.java`.
+Most well-known usages of **glob-patterns** are in commands such as `ls`, `cat`, `gcc`, or more generally, commands taking a variable amount of files. For instance, in Java, some programmers are using `java *.java` to compile every `.java`.
 
 For **regexes**, you will most likely use them
 
