@@ -13,29 +13,25 @@
         "tag": "c",
         "name": "C",
         "desc": "Coming soon!",
-        "icon": "<i class=\"bi bi-terminal-fill\"></i>",
-        "hidden": true
+        "icon": "<i class=\"bi bi-terminal-fill\"></i>"
       },
       {
         "tag": "cpp",
         "name": "C++",
         "desc": "Coming soon!",
-        "icon": "<i class=\"bi bi-terminal-fill\"></i>",
-        "hidden": true
+        "icon": "<i class=\"bi bi-terminal-fill\"></i>"
       },
       {
         "tag": "java",
         "name": "Java",
         "desc": "Coming soon!",
-        "icon": "<i class=\"bi bi-terminal-fill\"></i>",
-        "hidden": true
+        "icon": "<i class=\"bi bi-terminal-fill\"></i>"
       },
       {
         "tag": "kotlin",
         "name": "Kotlin",
         "desc": "Coming soon!",
-        "icon": "<i class=\"bi bi-terminal-fill\"></i>",
-        "hidden": true
+        "icon": "<i class=\"bi bi-terminal-fill\"></i>"
       }
     ],
     "e5": [
@@ -43,8 +39,7 @@
         "tag": "networking",
         "name": "Networking",
         "desc": "Coming soon!",
-        "icon": "<i class=\"bi bi-hdd-network\"></i>",
-        "hidden": true
+        "icon": "<i class=\"bi bi-hdd-network\"></i>"
       }
     ],
     "e2": [
@@ -124,8 +119,7 @@
         "tag": "android",
         "name": "Android",
         "desc": "Android application development using Android Studio, and Kotlin.",
-        "icon": "<i class=\"bi bi-globe\"></i>",
-        "hidden": true
+        "icon": "<i class=\"bi bi-globe\"></i>"
       }
     ]
   }
