@@ -61,3 +61,4 @@ Last updated: 2022-10-01
 * [ ] Learn ReactNative/Ionic
 * [ ] Learn Perl
 * [ ] Learn [a lot of languages listed here](https://www.jetbrains.com/help/webstorm/application-development-guidelines.html)
+* [ ] ML (programming language)
