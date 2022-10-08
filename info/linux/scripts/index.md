@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-Scripts are simply files with usually many Linux commands, usually written in Bash, as it is the default shell language in many Linux-based distributions. You can see scripts as programs, and you will execute them like you do with programs.
+Scripts are simply files with usually many Linux commands, usually written in Bash, as it is the default shell language in many Linux-based distributions. You can see scripts as programs, and you will execute them as you do with programs.
 
 A script is usually written in a file `name.sh`, regardless of the language used in the script, but this isn't mandatory. Here, is a simple script show "Hello, World", in a file `example.sh`
 
@@ -41,7 +41,7 @@ $ bash < ./example.sh # or, in rare cases
 
 <div class="row row-cols-md-2 mx-0"><div class="align-self-center">
 
-The Portable Operating System Interface (**POSIX**) is a family of standards (`normes POSIX`) that defines what we should, and shouldn't do, to make our apps compatibles across a maximum of operating systems.
+The Portable Operating System Interface (**POSIX**) is a family of standards (`normes POSIX`) that defines what we should, and shouldn't do, to make our apps compatible across a maximum of operating systems.
 
 **DO only use allowed POSIX syntax in your scripts.**
 
@@ -178,7 +178,7 @@ else
 fi
 ```
 
-A test is a **command** exiting with the code 0 (TRUE), or a number between 1, and 255 (FALSE). This could be expressed like this
+A test is a **command** exiting with the code 0 (TRUE), or a number between 1, and 255 (FALSE). This could be expressed as follows
 
 ```bash
 if `exit 1`; then 
@@ -192,7 +192,7 @@ While `exit 1` could be replaced with `false`, as if you followed, `false` is a 
 
 </div><div>
 
-Fortunately, you got a command called <kbd>test</kbd> which is taking a condition, and returning 0 if true, 1 otherwise. This command has a shortcut: <kbd>[]</kbd> which is doing the exact same thing.
+Fortunately, you got a command called <kbd>test</kbd> which is taking a condition, and returning 0 if true, and 1 otherwise. This command has a shortcut: <kbd>[]</kbd> which is doing the exact same thing.
 
 ```bash
 if test toto == toto; then 
@@ -224,10 +224,10 @@ Others
 <details class="details-e">
 <summary>Special conditions (is file, exists...)</summary>
 
-* `-f path`: true, if path is leading to a regular file
-* `-d path`: true, if path is leading to a folder
-* `-a path`: true, if path is leading to a system file
-* `-w path`: true, if path is writable
+* `-f path`: true, if `path` leads to a regular file
+* `-d path`: true, if `path` leads to a folder
+* `-a path`: true, if `path` leads to a system file
+* `-w path`: true, if `path` is writable
 </details>
 
 <details class="details-e">
@@ -371,7 +371,7 @@ done
 
 <div class="row row-cols-md-2 mt-2"><div>
 
-Builtin function, are functions that are declared inside your script.
+Builtin functions, are functions that are declared inside your script.
 
 ```bash
 myBuiltin() {
@@ -441,7 +441,7 @@ done
 
 <div class="row row-cols-md-2 mx-0"><div>
 
-You can use the command `read` to read input. This command takes a suite of 1, or more variables, and stores a word in each variable. If there is not enough variables, then the last variables is used to store everything that could not be stored.
+You can use the command `read` to read input. This command takes a suite of 1, or more variables, and stores a word in each variable. If there are not enough variables, then the last variable is used to store everything that could not be stored.
 
 ```bash
 $ read x
@@ -470,7 +470,7 @@ tata titi
 
 <div class="row row-cols-md-2 mt-4"><div class="align-self-center">
 
-This code is running indefinitely until "read" fails. Each time the user press <kbd>ENTER</kbd>, the code will loop, and ask for input again. A user can notify the script that the input is done using <kbd>CTRL+D</kbd>, which will make read fail, and end the loop.
+This code is running indefinitely until `read` fails. Each time the user press <kbd>ENTER</kbd>, the code will loop, and ask for input again. A user can notify the script that the input is done using <kbd>CTRL+D</kbd>, which will make `read` fail, and end the loop.
 
 ```bash
 while read x; do
@@ -479,7 +479,7 @@ done
 ```
 </div><div>
 
-You can use a nested for to extract each word that was entered.
+You can use a nested `for` to extract each word that was entered.
 
 ```bash
 while read line; do
