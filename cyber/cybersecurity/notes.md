@@ -166,7 +166,7 @@ Networks: things connected.
   * (The) Internet: many small networks all joined together
   * public/private networks
   * To identify a device: MAC+IP
-    * IP: 4 octets=32 bits, 0-255, private/public ips, given by Internet Service Provider (or ISP)
+    * IP **logical identifier**: 4 octets=32 bits, 0-255, private/public ips, given by Internet Service Provider (or ISP)
       * Network Address
       * Host Address
       * Default Gateway: special address that is capable of sending information to another network (.1 or .254)
@@ -175,7 +175,7 @@ Networks: things connected.
         * is achieved by splitting up the number of hosts that can fit within the network, represented by a number called a subnet mask
         * 32 bits
     * IPV6: 2^128 of IP addresses (340 trillion-plus), "More efficient due to new methodologies"
-    * MAC (Media Access Control), assigned to network card, twelve-character hexadecimal number, colon-separated
+    * MAC (Media Access Control) - **physical identifier**, assigned to network card, twelve-character hexadecimal number, colon-separated
       can be spoofed/faked
       * 6 first: vendor/manufacturer
       * 6 last: unique address
@@ -186,3 +186,14 @@ Networks: things connected.
   * **Ring/Token Topology**: each computer is connected to another forming a loop, data do the whole loop if needed, only one direction, not efficient, if hardware/cable is down/dead/fault network broken
   * **Switch**: aggregate multiples devices (4-64 ports), send packet to target because they know which target is on which of its ports
   * **Router**: connect networks, do "routing" (decide which route packets take)
+
+* Address Resolution Protocol (ARP)
+  * Protocol, allow a device to associate its MAC address with an IP
+  * broadcast using ARP protocol to find MAC
+    * ARP Request broadcasted, is it you having this MAC for this IP?
+      * src mac
+      * dest mac: FF:FF:FF:FF:FF:FF
+    * ARP Reply: yes
+      * src mac
+      * dest mac
+    * cache result
