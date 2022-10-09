@@ -110,3 +110,16 @@ Attack a vulnerable machine, scan the network to discover more vulnerable machin
 ## Folk
 
 Intrusion Detection System (IDS) is a system that detects unauthorised network and system intrusions. Examples include detecting unauthorised devices connected to the local network and unauthorised users accessing a system or modifying a file.
+
+## Networking
+
+The OSI (Open Systems Interconnection) Model is a standardised model which we use to demonstrate the theory behind computer networking.
+In practice industry is using the TCP/IP model (more compact)
+
+* Layer 7 -- Application: interface for programs - ex: FTP
+* Layer 6 -- Presentation: standardize the message, handle encryption, compression...
+* Layer 5 -- Session: try to establish a connection
+* Layer 4 -- Transport: Select protocol, and make segments (TCP), or datagrams (UDP)
+* Layer 3 -- Network: IP (network) - packet
+* Layer 2 -- Data Link: MAC (machine), and integrity check, along preparations for transmission
+* Layer 1 -- Physical: binary to signals, receive signals and convert them back
