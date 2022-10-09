@@ -161,3 +161,14 @@ protocol called DNS (Domain Name System): domain to IP
 
 * whois: https://www.whois.com/whois/
 * https://osintframework.com/
+
+Networks: things connected.
+  * (The) Internet: many small networks all joined together
+  * public/private networks
+  * To identify a device: MAC+IP
+    * IP: 4 octets, 0-255, private/public ips, given by Internet Service Provider (or ISP)
+    * IPV6: 2^128 of IP addresses (340 trillion-plus), "More efficient due to new methodologies"
+    * MAC (Media Access Control), assigned to network card, twelve-character hexadecimal number, colon-separated
+      can be spoofed/faked
+      * 6 first: vendor/manufacturer
+      * 6 last: unique address
