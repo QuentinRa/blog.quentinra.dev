@@ -166,7 +166,14 @@ Networks: things connected.
   * (The) Internet: many small networks all joined together
   * public/private networks
   * To identify a device: MAC+IP
-    * IP: 4 octets, 0-255, private/public ips, given by Internet Service Provider (or ISP)
+    * IP: 4 octets=32 bits, 0-255, private/public ips, given by Internet Service Provider (or ISP)
+      * Network Address
+      * Host Address
+      * Default Gateway: special address that is capable of sending information to another network (.1 or .254)
+        Any data that need to go to a device that isn't on the same network will be sent here.
+      * subnetting: use Network Adress to split the network
+        * is achieved by splitting up the number of hosts that can fit within the network, represented by a number called a subnet mask
+        * 32 bits
     * IPV6: 2^128 of IP addresses (340 trillion-plus), "More efficient due to new methodologies"
     * MAC (Media Access Control), assigned to network card, twelve-character hexadecimal number, colon-separated
       can be spoofed/faked
