@@ -255,6 +255,7 @@ Samba is based on the common client/server protocol of Server Message Block (SMB
   * john --format=gpg
   * if it takes a lot of time, try another algorithm first
   * if it takes a lot of times, try reversing the wordlist
+  * you can use "cat x & cat y && cat z > hhh", then "grep -e something > stuff" to merge then filter
 * Type of Hash
   * `hash-identifier <input>` to find the type for well-known hashes
   * https://hashes.com/en/tools/hash_identifier
@@ -284,3 +285,10 @@ gpg
 * Type "source" followed by the filename of the mysql database to specify that you wish to view its database.
 * `DESCRIBE [table name]`
 * `source [sql filename]`: import. Don't write a path, move to the folder with the file.
+
+<hr>
+
+## Hell
+
+* find "password" in some conversations
+* try to get access to some stuff with it
