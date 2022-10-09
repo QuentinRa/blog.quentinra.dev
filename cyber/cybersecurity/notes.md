@@ -251,7 +251,23 @@ Samba is based on the common client/server protocol of Server Message Block (SMB
   * john --format=raw-md5 myHash.txt
   * john --format=raw-md4 --wordlist=xxx.txt myHash.txt
   * john --format=raw-sha1
+  * if it takes a lot of time, try another algorithm first
 * Type of Hash
   * `hash-identifier <input>` to find the type for well-known hashes
   * https://hashes.com/en/tools/hash_identifier
   * Modern alternative: https://github.com/noraj/haiti
+
+base64
+
+* a group of binary-to-text encoding schemes that represent binary data in an ASCII string format
+* `xxx | base64 -d`
+* https://www.base64encode.net/
+
+gpg
+
+* way to encrypt something
+* `gpg --cipher-algo [encryption type] [encryption method] [file to encrypt]`
+* `[encryption type]`: AES-256
+* `[encryption method]`: `--symmetric`
+* way to decrypt
+* `gpg encrypted_file`
