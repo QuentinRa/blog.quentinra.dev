@@ -127,6 +127,27 @@ Attack a vulnerable machine, scan the network to discover more vulnerable machin
     * --scan-delay xms
     * --badsum: some firewall respond automatically without checking the checksum, so you can know if there is a firewall
     * https://nmap.org/book/man-bypass-firewalls-ids.html
+* **Nessus vulnerability scanner**
+  * find and report vulnerabilities
+  * **Install**
+    * https://www.tenable.com/products/nessus/nessus-essentials
+    * sudo dpkg -i  Nessus-10.3.0-ubuntu1404_amd64.deb
+    * sudo /bin/systemctl start nessusd.service
+  * **Run**: 
+    * https://localhost:8834/
+    * close popup
+  * create new scan
+    * Host Discovery: find alive hosts
+    * Basic network scan:
+      * set target
+      * schedule
+      * Discovery > select ports (common, all...)
+      * Assessment > select kind of scan
+      * Advanced > low brandwidth scan
+      * arrow next to "save" > launch
+    * credentialed patch audit: find missing updates
+  * policies: create custom templates
+  * Plugin rules: change plugins properties
 
 ## Folk
 
