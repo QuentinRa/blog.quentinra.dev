@@ -276,3 +276,11 @@ gpg
 * `gpg encrypted_file`
 * crack
 * `sudo gpg2john file`: convert gpg to hash
+
+## SQL
+
+* service mysql start
+* mysql -u root -p -h ip
+* Type "source" followed by the filename of the mysql database to specify that you wish to view its database.
+* `DESCRIBE [table name]`
+* `source [sql filename]`: import. Don't write a path, move to the folder with the file.
