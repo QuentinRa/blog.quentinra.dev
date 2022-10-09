@@ -123,3 +123,20 @@ In practice industry is using the TCP/IP model (more compact)
 * Layer 3 -- Network: IP (network) - packet
 * Layer 2 -- Data Link: MAC (machine), and integrity check, along preparations for transmission
 * Layer 1 -- Physical: binary to signals, receive signals and convert them back
+
+![OSI headers](_images/osi_headers.png)
+
+Headers: verify integrity, store src, dest...
+
+* encapsulation: add headers
+* de-encapsulation: reverse process
+
+TCP/IP (introduced first)
+
+* Application (L7-L5)
+* Transport (L4)
+* Internet (L3)
+* Network interface (L2-L1) - some are breaking it into two, but not in RFC1122
+
+TCP (connection-based protocol) "three-way handshake": SYN (synchronise) SYN/ACK ACK (Acknowledgement)
+UDP (connectionless)
