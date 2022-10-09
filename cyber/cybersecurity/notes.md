@@ -191,6 +191,15 @@ Attack a vulnerable machine, scan the network to discover more vulnerable machin
     * `python2 ../Downloads/volatility/vol.py -f cridex.vmem --profile=WinXPSP2x86 dlllist`
     * pull the ddl infected
     * `python2 ../Downloads/volatility/vol.py -f cridex.vmem --profile=WinXPSP2x86 --pid=368 dlldump -D <Destination Directory>`
+    * https://github.com/kevthehermit/VolUtility
+    * https://youtu.be/dB5852eAgpc
+    * https://subscription.packtpub.com/book/security/9781838640804/10/ch10lvl1sec55/using-volatility-in-kali-linux
+* Inpect files - dump all processes, and ddl
+  * https://www.virustotal.com/gui/home/upload
+  * https://www.hybrid-analysis.com/
+* AlienVault Open Threat Exchange (OTX) - An open-source threat tracking system
+* SANS 408 - Windows Forensic Analysis
+* https://github.com/stuxnet999/MemLabs
 
 ## Folk
 
