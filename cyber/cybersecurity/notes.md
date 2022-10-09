@@ -54,6 +54,9 @@ Attack a vulnerable machine, scan the network to discover more vulnerable machin
     * ufw: firewall
     * apache
     * fail2ban
+* `nc address port`
+
+![img.png](_images/bits.png)
 
 <hr class="sep-both">
 
@@ -67,7 +70,7 @@ Attack a vulnerable machine, scan the network to discover more vulnerable machin
   * `Syn Scan` (SYN "Half-open"/"stealth" Scan) -sS
   * version only: -sv
   * Each of these values after "s" are called switches
-  * advised to use at least `-vv`
+  * **advised to use at least** `-vv`!!!!!!!!!!!!!!!!!!!!!!!!!!
   * `-oA` to save results in normal (N), XML (X), and grepble (G) formats at once
   * -a: shorthand service detection, operating system detection, a traceroute and common script scanning
   * `-p-` scan all ports
@@ -207,3 +210,15 @@ Networks: things connected.
     * The device confirm the IP: DHCP Request
     * The server ack: DHCP ACK
     * NOTE: ACK, REQUEST... are DHCP packets
+
+## Stuff
+
+"Samba is the standard Windows interoperability suite of programs for Linux and Unix. It allows end users to access and use files, printers and other commonly shared resources on a companies intranet or internet. Its often referred to as a network file system.
+
+Samba is based on the common client/server protocol of Server Message Block (SMB). SMB is developed only for Windows, without Samba, other computer platforms would be isolated from Windows machines, even if they were part of the same network."
+
+* Using nmap we can enumerate a machine for SMB shares:
+  * port 445, and 139
+  * `nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse <ip> -vv`
+* `smbclient //<ip>/anonymous` login without password
+* You may find useful information
