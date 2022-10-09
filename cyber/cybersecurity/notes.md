@@ -129,6 +129,7 @@ Attack a vulnerable machine, scan the network to discover more vulnerable machin
     * https://nmap.org/book/man-bypass-firewalls-ids.html
 * **Nessus vulnerability scanner**
   * find and report vulnerabilities
+  * https://www.tenable.com/downloads/nessus
   * **Install**
     * https://www.tenable.com/products/nessus/nessus-essentials
     * sudo dpkg -i  Nessus-10.3.0-ubuntu1404_amd64.deb
@@ -148,6 +149,17 @@ Attack a vulnerable machine, scan the network to discover more vulnerable machin
     * credentialed patch audit: find missing updates
   * policies: create custom templates
   * Plugin rules: change plugins properties
+* **Volatility** (free memory forensics tool, incident response)
+  * `git clone https://github.com/volatilityfoundation/volatility.git`
+  * <s>`sudo python setup.py install`</s>
+  * `curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py`
+  * `sudo python2 get-pip.py`
+  * `sudo apt-get install build-essential libssl-dev libffi-dev python2-dev`
+  * `pip2 install pycryptodome`
+  * https://alvinisonline.medium.com/volatility-importerror-no-module-named-crypto-hash-e515092fd8e3
+  * `pip2 install --upgrade setuptools`
+  * `pip2 install distorm3`
+  * `python2 vol.py -h`
 
 ## Folk
 
