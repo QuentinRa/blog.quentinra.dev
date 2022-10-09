@@ -140,3 +140,9 @@ TCP/IP (introduced first)
 
 TCP (connection-based protocol) "three-way handshake": SYN (synchronise) SYN/ACK ACK (Acknowledgement)
 UDP (connectionless)
+ICMP protocol, one of the TCP/IP protocols / Network Level
+
+* `ping -i`: interval, -4 ipv4, -v verbose, -I interface
+* `traceroute`: Traceroute can be used to map the path your request takes as it heads to the target machine.
+* `traceroute host`, -I interface, -t USE TCP SYN
+  * Layer Internet
