@@ -72,6 +72,7 @@ Attack a vulnerable machine, scan the network to discover more vulnerable machin
 * `mv xxx -t dest`
 * any file starting with `-`: error. `cp -- -filename.txt`
 * `sudo snap install xxx`
+* `tac`
 
 ![img.png](_images/bits.png)
 
@@ -251,7 +252,9 @@ Samba is based on the common client/server protocol of Server Message Block (SMB
   * john --format=raw-md5 myHash.txt
   * john --format=raw-md4 --wordlist=xxx.txt myHash.txt
   * john --format=raw-sha1
+  * john --format=gpg
   * if it takes a lot of time, try another algorithm first
+  * if it takes a lot of times, try reversing the wordlist
 * Type of Hash
   * `hash-identifier <input>` to find the type for well-known hashes
   * https://hashes.com/en/tools/hash_identifier
@@ -271,3 +274,5 @@ gpg
 * `[encryption method]`: `--symmetric`
 * way to decrypt
 * `gpg encrypted_file`
+* crack
+* `sudo gpg2john file`: convert gpg to hash
