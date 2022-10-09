@@ -146,3 +146,18 @@ ICMP protocol, one of the TCP/IP protocols / Network Level
 * `traceroute`: Traceroute can be used to map the path your request takes as it heads to the target machine.
 * `traceroute host`, -I interface, -t USE TCP SYN
   * Layer Internet
+
+protocol called DNS (Domain Name System): domain to IP
+- check local cache
+- ask recursive DNS server
+  - Many Internet Service Providers (ISPs) maintain their own recursive servers,
+  - Top-Level Domain servers: records for specific extensions
+- TLD servers keep track of the next level down: Authoritative name servers
+- Authoritative name servers: store DNS records
+- dig domain `@dns-server-ip` such as @1.1.1.1 @8.8.8.8/8.8.4.4 (google)
+- **ANSWER**
+  - domain ttl IN type IP
+  - ttl, time to live (in seconds), how much time this result is valid
+
+* whois: https://www.whois.com/whois/
+* https://osintframework.com/
