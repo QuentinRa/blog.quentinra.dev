@@ -55,6 +55,18 @@ Attack a vulnerable machine, scan the network to discover more vulnerable machin
     * apache
     * fail2ban
 * `nc address port`
+* `find` -size (c for bytes, k for kilobytes, M megabytes, G for gigabytes)
+  * `-user username`
+  * `-group gname`
+  * -newermt
+  * -newerat
+  * find a file with a modified date of 2016-09-12
+    * `find ~/workflows/ -newermt 2016-09-11 ! -newermt 2016-09-13`
+* `grep -iRl` find files by keyword, `grep -o "....{.*}"` (match only)
+* http://explainshell.com/
+* CTRL+L same as clear
+* `2>/dev/null`
+* search with `/`, then ENTER or n
 
 ![img.png](_images/bits.png)
 
