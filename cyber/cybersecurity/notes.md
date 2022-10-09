@@ -12,6 +12,8 @@ network security knowledge, use various programming languages, cloud security)
 
 Detect, and stop attacks.
 
+* Linux security researcher > Hashing
+
 <hr class="sep-both">
 
 ## Web
@@ -67,6 +69,9 @@ Attack a vulnerable machine, scan the network to discover more vulnerable machin
 * CTRL+L same as clear
 * `2>/dev/null`
 * search with `/`, then ENTER or n
+* `mv xxx -t dest`
+* any file starting with `-`: error. `cp -- -filename.txt`
+* `sudo snap install xxx`
 
 ![img.png](_images/bits.png)
 
@@ -225,6 +230,8 @@ Networks: things connected.
 
 ## Stuff
 
+### Samba
+
 "Samba is the standard Windows interoperability suite of programs for Linux and Unix. It allows end users to access and use files, printers and other commonly shared resources on a companies intranet or internet. Its often referred to as a network file system.
 
 Samba is based on the common client/server protocol of Server Message Block (SMB). SMB is developed only for Windows, without Samba, other computer platforms would be isolated from Windows machines, even if they were part of the same network."
@@ -234,3 +241,17 @@ Samba is based on the common client/server protocol of Server Message Block (SMB
   * `nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse <ip> -vv`
 * `smbclient //<ip>/anonymous` login without password
 * You may find useful information
+
+### Hashing
+
+* Take input, and generate a hash. It's a one-way function.
+* Ex: https://www.md5hashgenerator.com/ (weak, so is SHA1, as two input same output)
+* most important use: integrity checking
+* bruteforce, with **John the Ripper**
+  * john --format=raw-md5 myHash.txt
+  * john --format=raw-md4 --wordlist=xxx.txt myHash.txt
+  * john --format=raw-sha1
+* Type of Hash
+  * `hash-identifier <input>` to find the type for well-known hashes
+  * https://hashes.com/en/tools/hash_identifier
+  * Modern alternative: https://github.com/noraj/haiti
