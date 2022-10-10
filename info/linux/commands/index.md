@@ -42,11 +42,11 @@ $ sudo -s
 
 ```bash
 # operations on the package "aptitude"
-sudo apt install aptitude
-sudo apt update aptitude
-sudo apt upgrade aptitude
-sudo apt remove aptitude
-sudo apt auto-remove
+sudo apt install aptitude  #install the package as well as its dependencies
+sudo apt update aptitude  #search for an upgrade
+sudo apt upgrade aptitude  #install the update
+sudo apt remove aptitude  #uninstall the package
+sudo apt auto-remove  #uninstall the package as well as its useless dependencies
 # update OS
 sudo apt dist-upgrade
 ```
@@ -80,6 +80,18 @@ Entries in the manual are split into sections. To access a command in a specific
 
 ```bash
 $ man 1 man
+```
+
+Remark : you may also try the `--help` flag.
+
+</details>
+
+<details class="details-e">
+<summary><code>whatis</code>: a short description of a command from the manual</summary>
+
+```bash
+$ whatis whatis
+whatis (1)           - display one-line manual page descriptions
 ```
 
 </details>
@@ -275,6 +287,7 @@ $ rm -i file # ask
 To delete a folder <small>(there is also `rmdir` 😒)</small>
 
 ```bash
+$ rm -d folder #if the folder is empty
 $ rm -r folder
 $ rm -rf folder # usual f + r
 ```
