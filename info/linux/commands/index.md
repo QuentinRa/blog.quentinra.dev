@@ -547,7 +547,8 @@ $ su root
 <summary><code>id</code>: info about a user</summary>
 
 ```bash
-$ id
+$ id # current user
+$ id username # some user
 ```
 </details>
 </div><div>
@@ -566,6 +567,20 @@ $ whoami
 
 ```bash
 $ sudo usermod -a -G sudo username
+```
+</details>
+</div></div>
+
+<div class="row row-cols-md-3"><div>
+<details class="details-e">
+<summary><code>uname</code>: info about the machine</summary>
+
+```bash
+$ uname # show OS name
+$ uname -s # same
+$ uname -rv # kernel
+$ uname -m # architecture (x64, x86...)
+$ uname -a # all
 ```
 </details>
 </div></div>
