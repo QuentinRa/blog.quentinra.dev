@@ -1,6 +1,8 @@
 # Kotlin programming
 
-Kotlin's syntax is a sort of mix between Java, R, and Typescript, while the language itself is an improved version of Java, with more safety checks, and more flexibility, while being less verbose/more compact. Kotlin code can be converted in Java, through the generated code is somewhat unreadable.
+Kotlin is a open-source, modern, programming language developed by JetBrains, which is also the main language used for Android applications. Kotlin's syntax is a sort of mix between Java, R, and Typescript, while the language itself is an improved version of Java, with more safety checks, and more flexibility, while being less verbose/more compact.
+
+> Kotlin code can be converted in Java, through the generated code is somewhat unreadable.
 
 <hr class="sr">
 

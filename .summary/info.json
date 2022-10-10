@@ -13,24 +13,27 @@
         "tag": "c",
         "name": "C",
         "desc": "Coming soon!",
-        "icon": "<i class=\"bi bi-terminal-fill\"></i>"
+        "icon": "<i class=\"bi bi-terminal-fill\"></i>",
+        "hidden": true
       },
       {
         "tag": "cpp",
         "name": "C++",
         "desc": "Coming soon!",
-        "icon": "<i class=\"bi bi-terminal-fill\"></i>"
+        "icon": "<i class=\"bi bi-terminal-fill\"></i>",
+        "hidden": true
       },
       {
         "tag": "java",
         "name": "Java",
         "desc": "Coming soon!",
-        "icon": "<i class=\"bi bi-terminal-fill\"></i>"
+        "icon": "<i class=\"bi bi-terminal-fill\"></i>",
+        "hidden": true
       },
       {
         "tag": "kotlin",
         "name": "Kotlin",
-        "desc": "Coming soon!",
+        "desc": "Kotlin is a open-source, modern, programming language developed by JetBrains, which is also the main language used for Android applications.",
         "icon": "<i class=\"bi bi-terminal-fill\"></i>"
       }
     ],
