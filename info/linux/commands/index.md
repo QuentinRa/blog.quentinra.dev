@@ -564,6 +564,56 @@ $ sudo usermod -a -G sudo username
 
 ## Processes
 
+<details class="details-e mt-4">
+<summary><code>ps</code>: list running processes</summary>
+<div class="row row-cols-md-2"><div>
+
+See all processes
+
+```bash
+$ ps -e
+```
+
+Every process "bash"
+
+```bash
+$ ps -C bash
+```
+
+List processes by PID (`-s` for SID)
+
+```bash
+$ ps -p 12563
+$ ps -p 12560,12563
+$ ps -p {12590..12600}
+```
+
+</div><div>
+
+List processes for a given user (`-g` for a group)
+
+```bash
+$ ps -u username
+```
+
+List processes by terminal identifier, or a path to the terminal
+
+```bash
+$ ps -t pts/0
+$ ps -t /dev/pts/0
+```
+
+Change the output
+
+```bash
+$ ps -j # basic
+$ ps -l # long
+$ ps -o pid,ppid
+$ ps -o pid,ppid,pgid,tpgid,sid
+```
+</div></div>
+</details>
+
 <div class="row row-cols-md-2"><div>
 <details class="details-e">
 <summary><code>fg</code>: bring (a group of) processes to the foreground</summary>
@@ -588,4 +638,15 @@ $ fg %1
 $ bg
 ```
 </details>
+</div></div>
+
+<div class="row row-cols-md-2"><div>
+<details class="details-e">
+<summary><code>top</code>: list all running processes</summary>
+
+```bash
+$ top
+```
+</details>
+</div><div>
 </div></div>
