@@ -32,12 +32,9 @@ Attack a vulnerable machine, scan the network to discover more vulnerable machin
 
 ## Linux
 
-* `<command> <flag> <input>`
 * `&` bg
 * `$USER`, `export <varname>=<value>`
 * `cat -`
-* `;`
-* ugo or uge = everyone else?
 * `/etc/shadow`
 * `Secure copy, or SCP` scp file_to_upload user@ip:path/to/upload scp user@ip:path/to/ddl dest
 * python3 -m  http.server: start web server, was used to open a "root" file without perms

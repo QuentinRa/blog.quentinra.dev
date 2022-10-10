@@ -38,7 +38,7 @@ bash > command_at_least_working_in_bash
 
 <div class="row row-cols-md-2"><div>
 
-A command is **a name**, which may be followed by **arguments**, including some usually called **options**; the difference being that an option starts with a `-`.
+A command is **a name**, which may be followed by **arguments**, including some usually called **options**/flag; the difference being that an option starts with a `-`.
 
 * you are writing commands right after the `$`
 * press <kbd>ENTER</kbd> to execute a command
@@ -64,9 +64,13 @@ $ man ls
 ```
 </div></div>
 
+> Usually, you write one command per line, but if you want to write more at once, separate every command with `;`, such as `$ ls toto; ls tata`.
+
 > Usually, pressing the scroll button will `paste` any copied content.
 
-> Quotes (`"`) which may surround some arguments are NOT mandatory, but may be required mostly if you are using special characters, such as **space**. You can actually do `a\ folder`, or `"a folder"`.
+> Quotes (`"`) which may surround some arguments are not mandatory, but may be required mostly if you are using special characters, such as **space**. You can actually use backslash `a\ folder`, or quotes `"a folder"`.
+
+> There is no "echo" when writing a password, so you won't see your password.
 
 <hr class="sl">
 
