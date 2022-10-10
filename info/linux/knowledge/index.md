@@ -273,11 +273,15 @@ If the home of the current user is `/usr/user/home/`, then `~` would mean the ex
 
 ## Glob-patterns, and regex
 
-<div class="row row-cols-md-2 mt-4"><div>
+<details class="details-e">
+<summary>Glob-patterns</summary>
+
+<div class="row row-cols-md-2"><div>
 
 **Glob-patterns** (`motifs`) are a sort of simplified version of regex, mainly used to do requests given a pattern. For instance, `ls *.h` is listing every file (and directory) ending with `.h`.
 
 If the shell notices a pattern, then it will try to replace any matching content where the pattern was used. With this, `ls *.h` would become something like `ls toto.h lili.h`, then will be executed.
+</div><div>
 
 <table class="table table-bordered table-striped border-dark">
 <thead>
@@ -298,8 +302,13 @@ If the shell notices a pattern, then it will try to replace any matching content
 
 * Use `[]` to escape it: `[?]`
 * Or using `\` (backslash) which is its purpose: `\*`
+</div></div>
+</details>
 
-</div><div>
+<details class="details-e">
+<summary>Regular expressions</summary>
+
+<div class="row row-cols-md-2"><div>
 
 **Regular expressions** (`expressions régulières`), commonly referred to as **regex**, are an enhanced version of glob-patterns used by tools such as `grep`, `sed`, and most, if not all, programming language.
 
@@ -322,10 +331,11 @@ And, some new tokens were introduced
 <tr><td><nobr><code>x{n, m}</code></nobr></td><td>at least $n$ times x, up to $m$ times, leave either empty if no limit</td></tr>
 <tr><td><code>(ab)+</code></td><td>at least one time 'ab'</td></tr>
 </tbody></table>
+</div><div>
 
 Something to note with regexes is the notion of groups. You can write some expression, and wrap it into escaped parenthesis `\(some_part_of_my_regex\)`. By doing so, you created a group, that may be later referred to as `$1`/`\1` if this was the first one. This is useful to extract some parts of the matching result.
-</div><div>
 </div></div>
+</details>
 
 <details class="details-e">
 <summary>Commands</summary>
