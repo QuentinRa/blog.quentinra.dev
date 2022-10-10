@@ -2,12 +2,13 @@
 
 A lot of commands, along with their most useful options, and some tips about their usage, that can be used on Linux-based distributions. This includes commands such as `sudo`, `apt`, `man`, `ls`, `cd`, `pwd`, `echo`, `printf`, `cat`, `less`, `mkdir`, `touch`, `cp`, `mv`, `rm`, `ln`, `chmod`, `umask`, `chown`, and many more.
 
-Some commands, mainly used in scripts, are not listed here
+Some commands are not listed here
 
-* `test`: take a condition, and exit with 0 if true, 1 if false
-* `seq`: generate a list of numbers
-* `read`: to read input from the user
-* `exit`: exit the shell with an exit code
+* `test` (scripts): take a condition, and exit with 0 if true, 1 if false
+* `seq` (scripts): generate a list of numbers
+* `read` (scripts): to read input from the user
+* `exit` (scripts): exit the shell with an exit code
+* `env` (knowledge): list all environment variables
 
 <hr class="sl">
 
@@ -86,7 +87,7 @@ $ man 1 man
 
 <hr class="sr">
 
-## Basics
+## Must know
 
 <details class="details-e mt-4">
 <summary><code>ls</code>: list all files in a directory</summary>
