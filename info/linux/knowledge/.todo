@@ -1,7 +1,21 @@
+---------------
+---- Knowledge
+---------------
+
+file:///C:/Users/quent/Documents/texas-res/_build/html/system/linux/files/enc/proc.html
+file:///C:/Users/quent/Documents/texas-res/_build/html/system/linux/index.html#vue-generale-du-systeme-informatique-technique
+
+---------------
+---- Permissions
+---------------
+
+https://linuxhandbook.com/suid-sgid-sticky-bit/
+
+---------------
+---- Path
+---------------
+
 /etc/: all files related to the configuration of the OS.
-
------------------
-
 
 <details class="details-e">
 <summary>Practical knowledge</summary>
@@ -19,6 +33,16 @@ fichiers réguliers (normal)
 fichiers symboliques (liens)
 fichiers spéciaux (terminaux)
 
-https://linuxhandbook.com/suid-sgid-sticky-bit/
-file:///C:/Users/quent/Documents/texas-res/_build/html/system/linux/files/enc/proc.html
-file:///C:/Users/quent/Documents/texas-res/_build/html/system/linux/index.html#vue-generale-du-systeme-informatique-technique
+-----------------
+---- Environment variables
+-----------------
+
+echo -e "DISPLAY=:0.0\nexport DISPLAY" >> ~/.bashrc
+
+-----------------
+---- Regex/Patterns
+-----------------
+
+ls *.{jpg,gif,png}
+
+-----------------

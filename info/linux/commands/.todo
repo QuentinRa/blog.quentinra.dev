@@ -23,8 +23,6 @@ can use put, get, pwd... with FTP.
 .bashrc
 
 man sudo_root
-ls *.{jpg,gif,png}
-echo -e "DISPLAY=:0.0\nexport DISPLAY" >> ~/.bashrc
 
 sudo update-alternatives --config php
 apt install zip unzip php7.1-zip php7.1-mbstring php7.1-curl php7.1-dom
