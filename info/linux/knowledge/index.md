@@ -98,17 +98,39 @@ There are 3 well-known levels of permissions
 * <kbd>w</kbd> (2): can write <small>(=can edit+save, can create)</small>
 * <kbd>x</kbd> (1): can execute a script, can move through a repository
 
-Permissions are coded on 7 bits. `r+w` means `4+2=6`. We are usually using numbers instead of letters, because it's shorter.
-</div><div>
-
-Permissions are assigned on a file/folder, and are applied according to the target of the permissions
+Permissions are assigned on a file/folder, and are applied according to the target of the permissions (ownership)
 
 * <kbd>u</kbd>: user, applied to the user (owner)
 * <kbd>g</kbd>: group, applied to the main group of the user <small>(ex: students_2022)</small>
 * <kbd>o</kbd>: others, applied to everyone else
+
+Permissions are something is `u=r+w, g=r, o=r`, which means that user can read+write, group can r, and others can read.
+</div><div>
+
+You may have noticed a number next to every kind of permissions. This is because permissions are coded on 3 bits, which means that they can take 7 values.
+
+* `1`: can execute <small>(1=x)</small>
+* `2`: can write <small>(2=w)</small>
+* `3`: can execute, and write <small>(1+2=x+w)</small>
+* `4`: can read <small>(4=r)</small>
+* `5`: can read, and execute <small>(4+1=r+x)</small>
+* `6`: can read, and write <small>(4+2=r+w)</small>
+* `7`: can read, write, and execute <small>(4+2+1=r+w+x)</small>
+
+**Why?** We are usually using numbers instead of letters, because it's shorter. The syntax can be shortened to `u=6, g=4, o=4`, and because the order `ugo` is fixed, we can shorten it again to `644`. **This shortened version is the most used one** <small>(in commands, verbally...)</small>.
 </div></div>
 
-Permissions are something like `u=r+w, g=r, o=r`. We usually use numbers. The syntax can be shortened to `u=6, g=4, o=4`, and because the order `ugo` is fixed, we can shorten it again to `644`. **This shortened version is the most used one** <small>(in commands, verbally...)</small>.
+<details class="details-e">
+<summary>Root / Administrator</summary>
+
+There is a super-user, usually called root, that has absolute control over the machine. `root` can delegate this power to others by making them a part of the "sudoers" group. The command to do an action using elevated privileges is different according to the Linux distribution, but the command **sudo** is the most well-known one.
+
+![super-user/sudo bash](_images/sudo.png)
+
+**Notice the # before every command**: in some tutorials, including ours, you will see a `#` instead of the usual `$` before a command needing elevated privileges.
+</details>
+
+<div class="row row-cols-md-2"><div>
 
 <details class="details-e">
 <summary>Commands</summary>
@@ -118,16 +140,7 @@ Permissions are something like `u=r+w, g=r, o=r`. We usually use numbers. The sy
 * <kbd>umask</kbd>: to change the default permissions when a file/folder is created
 * <kbd>chown</kbd>: to change the owner of a file/folder
 </details>
-
-<details class="details-e">
-<summary>Root / Administrator</summary>
-
-There is a super-user, usually called root, that has absolute control over the machine. `root` can delegate this power to others by making them a part of the "sudoers" group. The command to do an action using elevated permissions is different according to the Linux distribution, but the command **sudo** is the most well-known one.
-
-![super-user/sudo bash](_images/sudo.png)
-
-**Notice the # before every command**: in some tutorials, including ours, you will see a `#` instead of the usual `$` before a command needing elevated privileges.
-</details>
+</div><div>
 
 <details class="details-e">
 <summary>Practical knowledge: <code>ls -l</code> to see permissions</summary>
@@ -142,6 +155,7 @@ There is a super-user, usually called root, that has absolute control over the m
 * The following string `listro` is the name of the user `u`
 * The following string `listro` is the name of the group `g`
 </details>
+</div></div>
 
 <hr class="sl">
 
