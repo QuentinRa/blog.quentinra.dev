@@ -559,3 +559,33 @@ $ sudo usermod -a -G sudo username
 ```
 </details>
 </div></div>
+
+<hr class="sl">
+
+## Processes
+
+<div class="row row-cols-md-2"><div>
+<details class="details-e">
+<summary><code>fg</code>: bring (a group of) processes to the foreground</summary>
+
+```bash
+$ some_command &
+[1] 89
+$ fg 1
+```
+
+```bash
+$ some_command &
+[1] 89
+$ fg %1
+```
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>bg</code>: bring (a group of) processes to the background</summary>
+
+```bash
+$ bg
+```
+</details>
+</div></div>

@@ -30,6 +30,9 @@ https://linuxhandbook.com/suid-sgid-sticky-bit/
 
 /etc/: all files related to the configuration of the OS.
 
+Windows et ses D:/, H:/, G:/...
+Linux et ses /dev/sda*, /mnt, /media ou /run/media...
+
 <details class="details-e">
 <summary>Practical knowledge</summary>
 
