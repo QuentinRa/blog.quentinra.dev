@@ -2,8 +2,6 @@ glob - Filename pattern matching
 
 ------------------
 
-fichier régulier
-
 <details class="details-e">
 <summary>Practical knowledge</summary>
 
@@ -20,29 +18,16 @@ fichiers réguliers (normal)
 fichiers symboliques (liens)
 fichiers spéciaux (terminaux)
 
-Ne pas utiliser d'espaces.
-./erreur\ 404
-
-------------------
-
-paquet
-
-------------------
+---------------------
 
 Pour passer en mode console (juste un terminal) tapez n’importe quel combinaisons
 de Ctrl-alt-F1, …, Ctrl-Alt-F9 et Alt-f7 pour revenir au mode graphique (s’il est installé).
 
-------------------
-
 missing some texas_res content
-
-------------------
 
 no echo (password)
 quotes are not mandatory / POSIX? (find)
-press enter to enter a command
-
-------------------
+Ne pas utiliser d'espaces. ./erreur\ 404
 
 https://linuxhandbook.com/suid-sgid-sticky-bit/
 
