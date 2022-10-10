@@ -102,8 +102,10 @@ $ man 1 man
 ## Must know
 
 <details class="details-e mt-4">
-<summary><code>ls</code>: list all files in a directory</summary>
+<summary><code>ls/dir</code>: list all files in a directory</summary>
 <div class="row row-cols-md-2"><div>
+
+**Note**: `dir` is working exactly like `ls`, we are using the shorter one.
 
 List all files in the given directory. If none, work on the current directory. If a file is given, show information about the file.
 
@@ -182,7 +184,7 @@ printf "%s\n" "Hello, World"
 
 </div>
 
-<details class="details-e" open>
+<details class="details-e">
 <summary><code>cat/tac/less</code>: print/display a file</summary>
 <div class="row row-cols-md-2"><div>
 
@@ -306,7 +308,7 @@ Delete, and create links
 
 <div class="row row-cols-md-2"><div>
 <details class="details-e">
-<summary><code>rm</code>: to remove files/folders</summary>
+<summary><code>rm/rmdir</code>: to remove files/folders</summary>
 
 `rm` is taking a list of files to remove.
 
@@ -322,7 +324,7 @@ $ rm -f file # do not ask (f=force)
 $ rm -i file # ask
 ```
 
-To delete a folder <small>(there is also `rmdir` 😒)</small>
+To delete a folder <small>(there is also `rmdir`, but it's garbage 😒)</small>
 
 ```bash
 $ rm -r folder

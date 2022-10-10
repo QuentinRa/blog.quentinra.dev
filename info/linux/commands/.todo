@@ -5,9 +5,6 @@ alias
 gcc
 tee
 curl
-env
-dir
-rmdir
 cd -
 ps -C program
 xrandr --output DP-2 --brightness 0.5
