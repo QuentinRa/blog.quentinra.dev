@@ -606,3 +606,28 @@ The main difference, is that background processes
 * <kbd>bg</kbd>: bring a process to the background
 * <kbd>top</kbd>: list all process, and their memory usage <small>(same as the task manager on Windows)</small>
 </details>
+
+<hr class="sl">
+
+## Calculations
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+You may want to do some stuff involving calculations. The shell won't interpret any calculations, so you must use `$[calculation]` to evaluate something.
+
+```bash
+four=$[3+1]
+```
+
+> Non-POSIX followers can use `$((3+1))`.
+</div><div>
+
+Example of increasing a variable by one.
+
+```bash
+i=0
+while [ $i -lt 5 ]; do
+   i=$[i+1] 
+done
+```
+</div></div>

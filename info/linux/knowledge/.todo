@@ -60,6 +60,7 @@ echo -e "DISPLAY=:0.0\nexport DISPLAY" >> ~/.bashrc
 -----------------
 
 ls *.{jpg,gif,png}
+ls *.{0..5}
 
 -----------------
 ---- System_call

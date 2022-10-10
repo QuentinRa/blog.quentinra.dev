@@ -412,31 +412,6 @@ echo $? # will be "5"
 
 <hr class="sr">
 
-## Calculations
-
-<div class="row row-cols-md-2 mx-0"><div>
-
-You may want to do some stuff involving calculations. The shell won't interpret any calculations, so you must use `$[calculation]` to evaluate something.
-
-```bash
-four=$[3+1]
-```
-
-> Non-POSIX followers can use `$((3+1))`.
-</div><div>
-
-Example of increasing a variable by one.
-
-```bash
-i=0
-while [ $i -lt 5 ]; do
-   i=$[i+1] 
-done
-```
-</div></div>
-
-<hr class="sl">
-
 ## Read input from the user
 
 <div class="row row-cols-md-2 mx-0"><div>
@@ -508,7 +483,7 @@ tata
 </div></div>
 </details>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Read a file, or Write content in a file
 
