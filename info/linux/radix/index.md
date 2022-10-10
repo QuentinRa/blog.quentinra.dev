@@ -21,7 +21,7 @@ A radix-2 number is called binary number, and it's made of $0$, and $1$. For ins
 
 <div class="row row-cols-md-2"><div>
 
-**From radix-10 to radix-2**
+**From radix-10 to radix-2** [online tool](https://www.binaryhexconverter.com/decimal-to-binary-converter)
 
 You must know every small power of 2 like the back of your hand:
 
@@ -38,7 +38,7 @@ So it means that we have $125 = {\color{red} 1 *} 2^6+ {\color{red} 1 *} 2^5+ {\
 
 </div><div>
 
-**From radix-2 to radix-10**
+**From radix-2 to radix-10** [online tool](https://www.binaryhexconverter.com/binary-to-decimal-converter)
 
 You simply have to do the inverse of what you did, but to make things easier, you should start from the right, and go back to the left
 
@@ -50,7 +50,7 @@ You simply have to do the inverse of what you did, but to make things easier, yo
 Pretty easy, right?
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Radix-8
 
@@ -58,9 +58,9 @@ A radix-8 number is called octal number, and it's made of values from $0$, and $
 
 <div class="row row-cols-md-2"><div>
 
-**From radix-8 to radix-2**
+**From radix-8 to radix-2** [online tool](https://www.binaryhexconverter.com/octal-to-binary-converter)
 
-A digit in radix-2 is equals to 3 digits in radix-8 <small>($2^3=8$)</small>. You will that to convert each radix-8 digit to a 3-digits binary, and convert back each 3-digits binary, to a radix-8 digit.
+A digit in radix-2 is equals to 3 digits in radix-8 <small>($2^3=8$)</small>. You will use that to convert each radix-8 digit to a 3-digits binary, and convert back each 3-digits binary, to a radix-8 digit.
 
 * Given $(175)\_{8}$
   * $(1)_8 = (1)_2$
@@ -70,7 +70,7 @@ A digit in radix-2 is equals to 3 digits in radix-8 <small>($2^3=8$)</small>. Yo
 
 </div><div>
 
-**From radix-2 to radix-8**
+**From radix-2 to radix-8** [online tool](https://www.binaryhexconverter.com/binary-to-octal-converter)
 
 You number of digits in base-2 should be a multiple of 3 to apply the previous formula, if not, add leading zeros.
 
@@ -81,5 +81,42 @@ You number of digits in base-2 should be a multiple of 3 to apply the previous f
   * $111$ is $1+2+4=7$
   * $101$ is $1+4=5$
 * So we have $(175)_{8}$, or $0175$
+
+</div></div>
+
+<hr class="sr">
+
+## Radix-16
+
+A radix-16 number is called hexadecimal number, and it's made of values from $0$ to $9$, and letters from $A$ to $F$. In most languages, an octal number is starting with $0x$.
+
+<div class="row row-cols-md-2"><div>
+
+**From radix-16 to radix-2** [online tool](https://www.binaryhexconverter.com/hex-to-binary-converter)
+
+A digit in radix-2 is equals to 4 digits in radix-8 <small>($2^4=16$)</small>. You will use that to convert each radix-16 digit to a 4-digits binary, and convert back each 4-digits binary, to a radix-16 digit.
+
+
+| 10  | 11  | 12  | 13  | 14  | 15  |
+|-----|-----|-----|-----|-----|-----|
+| A   | B   | C   | D   | E   | F   |
+
+* Given $(7D)_{16}$
+  * $(7)_{16} = (111)_2$
+  * $(D)\_{16} = (13)\_{10} = (1101)_2$
+* Giving us $(7D)\_{16}=(1111101)\_{2}$
+
+</div><div>
+
+**From radix-2 to radix-16** [online tool](https://www.binaryhexconverter.com/binary-to-hex-converter)
+
+You number of digits in base-2 should be a multiple of 4 to apply the previous formula, if not, add leading zeros.
+
+* Given $(1111101)\_{2}$, we need 1 leading zeros
+* $(01111101)\_{2}$
+* Now, simply convert each group of 4 digits to radix-16, as you would for radix-10
+  * $0111$ is $1+2+4=7$
+  * $1101$ is $1+4+8=13$, but $13$ do not exists in radix-16, so we should use $D$
+* So we have $(7D)_{16}$, or $0x7D$
 
 </div></div>
