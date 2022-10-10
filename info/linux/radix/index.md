@@ -37,5 +37,14 @@ So it means that we have $125 = {\color{red} 1 *} 2^6+ {\color{red} 1 *} 2^5+ {\
 
 </div><div>
 
-...
+**From radix-2 to radix-10**
+
+You simply have to do the inverse of what you did, but to make things easier, you should start from the right, and go back to the left
+
+* Given $(1111101)\_{2}$
+* You have $1 * 2^0 + 0 * 2^1 + 1 * 2^2+ 1 * 2^3+ 1 * 2^4+ 1 * 2^5+ 1 * 2^6$
+* Which is $1 + 0 + 4 + 8 + 16 + 32 + 64$
+* Giving us $125$
+
+Pretty easy, right?
 </div></div>
