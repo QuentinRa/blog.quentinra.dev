@@ -277,7 +277,49 @@ If the home of the current user is `/usr/user/home/`, then `~` would mean the ex
 
 ## Environment variables
 
-...
+<div class="row row-cols-md-2"><div>
+
+Environment variables (`Variables d’environnement`) are variables defined in the environment that can be used read by others apps. There a few well-known ones
+
+* **HOME**: path to the current user home
+* **USER**: username of the current user
+* **LANG**: language of the current user
+* **SHELL**: path to the shell
+* **PWD**: path to the current folder
+
+And, there is **PATH**. This variable is used to store a list of folders. When you write a command on Linux, then **the Shell will look for the command's file in the PATH**, starting from the first folder, up to the last folder.
+
+* On Windows, folders are separated with `;`
+* On Linux, folders are separated with `:`
+
+</div><div>
+
+Print all environment variables
+
+```bash
+$ env
+```
+
+Print the value of one environment variable
+
+```bash
+$ echo $PATH
+$ env | grep "^PATH="
+```
+
+Set an environment variable
+
+```bash
+$ export VAR_NAME=value
+```
+
+Update PATH to add `/home/toto/bin`
+
+```bash
+$ export PATH=/home/toto/bin:$PATH
+```
+
+</div></div>
 
 <hr class="sl">
 
