@@ -437,3 +437,33 @@ Something to note with regexes is the notion of **groups**. You can write some e
 * Many programming languages
 </div></div>
 </details>
+
+<hr class="sr">
+
+## Processes
+
+<div class="row row-cols-md-2"><div>
+
+Processes (`processus`) are a sort of box with
+
+* a code to execute
+* an environment (file descriptors, parameters, permissions...)
+* some data (stack, variables...)
+
+Each process is assigned an **PID** (process identifier). When a machine is starting, the first process (pid=0) is launched, and start the **systemd daemon**, which is the parent of every process.
+
+> A **daemon** is a process that never ends. They are called **services** on Windows. They are usually ending with **d**.
+
+> Processes are stored in `/proc/`, in a folder corresponding to their PID. 
+</div><div>
+
+No-one can create a process. A new process is "created" by duplicating an existing process, using a function called `fork()` hence we say **forking a process** instead of creating a process. 
+
+When a process dies, they are returning a code: $0$ is everything went fine, and not $0$, if an error occurred. You can use `$?` to see the exit code of the last process that died.
+
+```bash
+$ echo $?
+```
+
+As every process is forked from another, they have a reference to their parent called PPID (Parent PID). If a parent process dies, the forked children **won't die**, and will be assigned $-1$ as their PPID.
+</div></div>

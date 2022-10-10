@@ -44,5 +44,3 @@ echo -e "DISPLAY=:0.0\nexport DISPLAY" >> ~/.bashrc
 -----------------
 
 ls *.{jpg,gif,png}
-
------------------
