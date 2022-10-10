@@ -15,6 +15,8 @@ sudo apt-get install build-essential gdb
 cut
 shopt (file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/files/bric/var.html)
 https://www.gnu.org/software/bash/manual/bash.html
+search in manual
+cat t.txt t.txt t.txt
 
 can use put, get, pwd... with FTP.
 # ls <folder>: list files of <folder>

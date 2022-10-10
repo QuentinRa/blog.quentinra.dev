@@ -631,3 +631,31 @@ while [ $i -lt 5 ]; do
 done
 ```
 </div></div>
+
+<hr class="sr">
+
+## Input, output, pipes, and redirections
+
+Each command has **one input**, and **two outputs**: **standard**, and **error**.
+
+<div class="row row-cols-md-2"><div>
+
+**Pipe** (`tube`)
+
+It's possible for a command output, to be used as the next command input using pipe: **his_output | is_my_input**.
+
+The command `wc -l` is used to count the number of lines in a text. The text could be a file, or some input. We want to find out how many files named "toto" were found with `find` using `wc`.
+
+```bash
+$ find . -name toto
+./mem/mv/all_toto_copy/toto
+./mem/mv/all_toto/toto
+[...]
+./mem/mv/toto
+$ find . -name toto | wc -l
+57 # find returned 57 lines
+```
+</div><div>
+
+...
+</div></div> 
