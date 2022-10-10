@@ -250,7 +250,7 @@ $ mkdir -p folder0/folder1/folder2
 </details>
 </div><div>
 <details class="details-e">
-<summary><code>touch</code>: create file</summary>
+<summary><code>touch</code>: may create file, update the last modified date</summary>
 
 Create a file if needed, otherwise, update the last modified date. **It is important to note that this command is not clearing the contents of the existing file if any**.
 
@@ -259,6 +259,41 @@ $ touch a_file
 ```
 </details>
 </div></div>
+
+<details class="details-e">
+<summary><code>echo/truncate/...</code>: create an empty file / clear the contents of a file</summary>
+<div class="row row-cols-md-2"><div>
+
+You can create a file using echo, with a redirection
+
+```bash
+$ echo -n "" > file
+$ echo -n > file # some are allowing this syntax
+```
+
+But, the syntax above may be shortened quite a bit
+
+```bash
+# Not working everywhere, but quite well-known
+$ > file
+# Should work everywhere
+$ :> file
+```
+</div><div>
+
+Another wordy way is using `cp`
+
+```bash
+$ cp /dev/null file
+```
+
+Or, using `truncate`
+
+```bash
+$ truncate -s 0 file
+```
+</div></div>
+</details>
 
 Move, copy, and/or rename
 
