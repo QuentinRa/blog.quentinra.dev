@@ -636,7 +636,7 @@ done
 
 ## Input, output, pipes, and redirections
 
-Each command has **one input**, and **two outputs**: **standard**, and **error**.
+Each command has 1️⃣ one input (0), and 2️⃣ two outputs: standard (1), and error (2).
 
 <div class="row row-cols-md-2"><div>
 
@@ -657,5 +657,37 @@ $ find . -name toto | wc -l
 ```
 </div><div>
 
-...
+**Redirections**
+
+We can redirect output to a file. For instance, if a result take a long time, and you need to do multiple operations on it, you will store it, and work on the file. We are doing this using `>`.
+
+```bash
+$ echo "Hello, World" > myFile
+```
+
+The operator `>` is truncating (=emptying) the file, if you want to append something, use `>>`.
+
+```bash
+$ echo "Hello, World" >> myFile
+```
+
+You can also load some input from a file, but I don't have any useful examples for now. The command below is giving the content of `original.txt` to the command `tee` which is outputting the content.
+
+```bash
+$ tee < original.txt
+Hello, World
+```
+
+Another very useful usage to redirections, is redirecting errors, meanwhile non-errors message will still be shown.
+
+```bash
+$ ls /error 2> onl_errors_will_be_stored_here
+$ ls /error 2> /dev/null # redirect to the "trash"
+```
+
+Sometimes, you may even want to print errors on the standard output.
+
+```bash
+$ ls /error 2>&1
+```
 </div></div> 

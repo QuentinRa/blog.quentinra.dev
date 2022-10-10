@@ -17,6 +17,10 @@ shopt (file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/files/
 https://www.gnu.org/software/bash/manual/bash.html
 search in manual
 cat t.txt t.txt t.txt
+truncate -s 0 filename
+> filename
+cp /dev/null filename
+: > filename
 
 can use put, get, pwd... with FTP.
 # ls <folder>: list files of <folder>
