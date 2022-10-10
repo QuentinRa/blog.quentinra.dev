@@ -11,6 +11,7 @@ rmdir
 cd -
 ps -C program
 xrandr --output DP-2 --brightness 0.5
+sudo apt-get install build-essential gdb
 
 can use put, get, pwd... with FTP.
 # ls <folder>: list files of <folder>
