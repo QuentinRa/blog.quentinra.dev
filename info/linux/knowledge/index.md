@@ -14,22 +14,31 @@ Linux in its simplest form is a **terminal** (console, `invite de commande`). In
 
 ![Linux: Terminal](_images/terminal.png)
 
-> To open a terminal
-> * Look for "Terminal" in your Applications
-> * Or, use the shortcut `CTRL+SHIFT+T`
-
-> Use `CTRL +`, and `CTRL -` to increase/decrease zoom
-
-> You can use CTRL+SHIFT+F1 to swap to console mode <small>(from F1, up to F9)</small>, while you can use ALT+F7 to swap back.
-</div><div>
-
-Most "commands" that you will see are written like `$ xxx`: **`$` IS NOT A PART OF THE COMMAND**, but a token that indicates **where** we can execute the command. It could be `#`, `sh >`...
+Most "commands" that you will see are written like `$ xxx`, but **`$` IS NOT A PART OF THE COMMAND**; this is a token that indicates **where** we can execute the command. It could be `#`, `sh >`...
 
 ```shell
 $ command_working_everywhere
 sh > command_at_least_working_in_sh
 bash > command_at_least_working_in_bash
 ```
+</div><div>
+
+**Open a terminal**
+
+> * Look for "Terminal" in your Applications
+> * Or, use the shortcut `CTRL+SHIFT+T`
+
+**Change Zoom**
+
+> Use `CTRL +`, and `CTRL -` to increase/decrease zoom
+
+**Console mode** 🤕 - beginner killer
+
+> You can use CTRL+ALT+F1 to swap to console mode <small>(from F1, up to F6)</small>, while you can use ALT+F7 to swap back 🤤.
+
+**Paste something**
+
+> Usually, pressing the scroll button will paste any copied content.
 </div></div>
 
 <hr class="sr">
@@ -63,10 +72,6 @@ $ ls -la toto/
 $ man ls
 ```
 </div></div>
-
-> Usually, you write one command per line, but if you want to write more at once, separate every command with `;`, such as `$ ls toto; ls tata`.
-
-> Usually, pressing the scroll button will `paste` any copied content.
 
 > Quotes (`"`) which may surround some arguments are not mandatory, but may be required mostly if you are using special characters, such as **space**. You can actually use backslash `a\ folder`, or quotes `"a folder"`.
 
