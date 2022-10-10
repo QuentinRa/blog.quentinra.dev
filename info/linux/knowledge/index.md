@@ -219,6 +219,7 @@ There is a super-user, usually called root, that has absolute control over the m
 <summary>Commands</summary>
 
 * <kbd>ls -l</kbd>: to view the permissions of a file/folder
+* <kbd>stat</kbd>: to view the permissions of a file/folder
 * <kbd>chmod</kbd>: to change the permissions of a file/folder
 * <kbd>umask</kbd>: to change the default permissions when a file/folder is created
 * <kbd>chown</kbd>: to change the owner of a file/folder

@@ -626,6 +626,34 @@ $ uname -a # all
 
 <hr class="sl">
 
+## Utilities
+
+<div class="row row-cols-md-2 mt-4"><div>
+<details class="details-e">
+<summary><code>file</code>: show image resolution, basic info on a file/folder..</summary>
+
+```bash
+$ file folder
+folder: directory
+$ file image.jpg
+image.jpg: JPEG image data, JFIF standard 1.01, resolution (DPI), density 72x72, segment length 16, comment: "CREATOR: gd-jpeg v1.0 (using IJG JPEG v90), quality = 90", baseline, precision 8, 1080x1350, components 3
+```
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>stat</code>: show a lot of informations about a file/folder</summary>
+
+```bash
+$ stat folder
+$ stat file
+$ stat toto -c "Size: %s -- Name: %n -- Perms: %a / %A -- type: %F"
+Size: 4096 -- Name: toto -- Perms: 755 / drwxr-xr-x -- type: directory
+```
+</details>
+</div></div>
+
+<hr class="sr">
+
 ## Processes
 
 <details class="details-e mt-4">

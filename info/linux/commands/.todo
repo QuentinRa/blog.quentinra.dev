@@ -6,7 +6,6 @@ gcc
 tee
 curl
 cd -
-ps -C program
 xrandr --output DP-2 --brightness 0.5
 sudo apt-get install build-essential gdb
 cut
@@ -19,7 +18,6 @@ cp /dev/null filename
 : > filename
 date
 time
-file
 
 can use put, get, pwd... with FTP.
 # ls <folder>: list files of <folder>
