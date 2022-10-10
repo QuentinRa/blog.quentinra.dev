@@ -6,6 +6,13 @@ file:///C:/Users/quent/Documents/texas-res/_build/html/system/linux/files/enc/pr
 file:///C:/Users/quent/Documents/texas-res/_build/html/system/linux/index.html#vue-generale-du-systeme-informatique-technique
 
 ---------------
+---- Terminal
+---------------
+
+https://linuxhandbook.com/linux-shortcuts/
+https://www.lostsaloon.com/technology/7-keyboard-shortcuts-you-should-know-in-linux-command-shell/
+
+---------------
 ---- Permissions
 ---------------
 
@@ -44,3 +51,15 @@ echo -e "DISPLAY=:0.0\nexport DISPLAY" >> ~/.bashrc
 -----------------
 
 ls *.{jpg,gif,png}
+
+<details class="details-e">
+<summary>Sessions</summary>
+
+Every process is attached to a session, which can be found with the **SID** (Session identifier) property. Most sessions are attached to a terminal (`/dev/tty`).
+
+Sessions are partitioned into [groups of processes](https://en.wikipedia.org/wiki/Process_group).
+
+If a session dies, then the signal **SIGHUP** is sent to every process.
+</details>
+
+https://en.wikipedia.org/wiki/System_call

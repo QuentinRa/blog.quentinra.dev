@@ -467,3 +467,55 @@ $ echo $?
 
 As every process is forked from another, they have a reference to their parent called PPID (Parent PID). If a parent process dies, the forked children **won't die**, and will be assigned $-1$ as their PPID.
 </div></div>
+
+<div class="row row-cols-md-2"><div>
+
+<details class="details-e">
+<summary>Scheduling (<code>Ordonnancement</code>)</summary>
+
+Visually, you would see two processes such as `firefox`, and a file explorer running at the same time. They are not actually running in parallel, but something called pseudo-parallelism. 
+
+The scheduler (`ordonnanceur/gouverneur`) is allowing each process to run a little, and because they are all running a little, you won't see that they are not executed at the same time.
+</details>
+</div><div>
+
+<details class="details-e">
+<summary>Signals</summary>
+
+Signals are used for communication, both between processes, or between a user and a process. There are **34** signals, but a programmer may override the code executed when a process is receiving a signal.
+
+* <kbd>CTRL+C</kbd> (SIGINT=exit): exit process
+* <kbd>CTRL+Z</kbd> (SIGTSTP=suspend): terminate an action <small>(ex: waiting for input)</small>
+
+> **Note**: <kbd>CTRL+D</kbd> is NOT a signal.
+</details>
+</div></div>
+
+<div class="row row-cols-md-2"><div>
+<details class="details-e">
+<summary>Sessions</summary>
+
+Every process is attached to a session, which can be found with their value for **SID** (Session identifier). Most sessions are attached to a terminal (`/dev/tty`). 
+
+Sessions are partitioned into [groups of processes](https://en.wikipedia.org/wiki/Process_group). A signal sent to a group, is dispatched to every process of the group.
+
+If a session dies, then the signal **SIGHUP** is sent to every process.
+</details>
+</div><div>
+
+<details class="details-e">
+<summary>Foreground, and background processes</summary>
+
+In every terminal, there is a session running, which means at least one group of processes. There is two "slots" that groups in a session
+
+* **foreground**: only one group may be at the foreground
+* **background**: every other group will be there
+
+The main difference, is that background processes
+
+* can't read, and write<sup>1</sup> on the terminal
+* aren't receiving signals, except **CTRL-Z** (suspend)
+
+<sup>1</sup> In some shells, or actually in most shells, this feature is enabled by default, but it can be disabled by editing an environment variable (but, I forgot which one sadly).
+</details>
+</div></div>
