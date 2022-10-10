@@ -178,16 +178,53 @@ You can also use `printf "format" arguments`:
 printf "%s\n" "Hello, World"
 ```
 </details>
-</div><div>
-<details class="details-e">
-<summary><code>cat/less</code>: print/display a file</summary>
+</div><div></div>
+
+</div>
+
+<details class="details-e" open>
+<summary><code>cat/tac/less</code>: print/display a file</summary>
+<div class="row row-cols-md-2"><div>
+
+`cat` is the most used command to see the content of a file, while `less` is also quite used for big files, as we can scroll up/down.
 
 ```bash
 $ cat file
 $ less file # use up/down, and q
 ```
-</details>
+
+But, `cat` is originally a command mean to concatenate files/input, and output the result.
+
+```bash
+$ cat f0 f1
+f0
+f1 Line 1
+f1 Line 2
+```
+</div><div>
+
+The command `tac` is doing the same, but each file is reversed.
+
+```bash
+$ cat f0 f1
+f0
+f1 Line 1
+f1 Line 2
+$ tac f0 f1
+f0
+f1 Line 2
+f1 Line 1
+```
+
+`cat` may be used on some input
+
+```bash
+$ cat
+$ cat -
+$ cat f0 f1 - > ok
+```
 </div></div>
+</details>
 
 <hr class="sl">
 
