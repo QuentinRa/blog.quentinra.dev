@@ -1,15 +1,4 @@
-tips: use scroll to paste
-
 glob - Filename pattern matching
-
-------------------
-
-=> Install
-- VM
-- Docker
-C:\Users\windows_username\AppData\Local\Packages\TheDebianProject.DebianGNULinux_76v4gfsz19hv4\LocalState\rootfs\home\linux_username
-- WSL (\\wsl$ in search bar) => https://docs.microsoft.com/fr-fr/windows/wsl/install-win10
-- DualBoot
 
 ------------------
 

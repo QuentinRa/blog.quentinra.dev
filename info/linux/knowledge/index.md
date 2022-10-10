@@ -62,6 +62,8 @@ $ man ls
 ```
 </div></div>
 
+> Usually, pressing the scroll button will `paste` any copied content.
+
 <hr class="sl">
 
 ## Text Editors
