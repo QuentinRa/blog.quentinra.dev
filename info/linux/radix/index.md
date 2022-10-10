@@ -36,7 +36,7 @@ Every number can be expressed as a sum of power of two. For instance, $125 = 64+
 
 So it means that we have $125 = {\color{red} 1 *} 2^6+ {\color{red} 1 *} 2^5+ {\color{red} 1 *} 2^4+ {\color{red} 1 *} 2^3+ {\color{red} 1 *} 2^2 + {\color{green} 0 *} * 2^1 + {\color{red} 1 *}2^0$, giving us $(125)\_{10} = ({\color{red} 11111} {\color{green}0} {\color{red}1})\_{2}$
 
-</div><div>
+</div><div class="border-start border-dark">
 
 **From radix-2 to radix-10** [online tool](https://www.binaryhexconverter.com/binary-to-decimal-converter)
 
@@ -68,7 +68,7 @@ A digit in radix-2 is equals to 3 digits in radix-8 <small>($2^3=8$)</small>. Yo
   * $(5)_8 = (101)_2$
 * Giving us $(175)\_{8}=(1111101)\_{2}$
 
-</div><div>
+</div><div class="border-start border-dark">
 
 **From radix-2 to radix-8** [online tool](https://www.binaryhexconverter.com/binary-to-octal-converter)
 
@@ -80,7 +80,7 @@ You number of digits in base-2 should be a multiple of 3 to apply the previous f
   * $001$ is $1$
   * $111$ is $1+2+4=7$
   * $101$ is $1+4=5$
-* So we have $(175)_{8}$, or $0175$
+* So we have $(175)_{8}$ or $0175$
 
 </div></div>
 
@@ -88,7 +88,7 @@ You number of digits in base-2 should be a multiple of 3 to apply the previous f
 
 ## Radix-16
 
-A radix-16 number is called hexadecimal number, and it's made of values from $0$ to $9$, and letters from $A$ to $F$. In most languages, an octal number is starting with $0x$.
+A radix-16 number is called hexadecimal number, and it's made of values from $0$ to $9$, and letters from $A$ to $F$. In most languages, an octal number is starting with $\text{0x}$.
 
 <div class="row row-cols-md-2"><div>
 
@@ -106,7 +106,7 @@ A digit in radix-2 is equals to 4 digits in radix-8 <small>($2^4=16$)</small>. Y
   * $(D)\_{16} = (13)\_{10} = (1101)_2$
 * Giving us $(7D)\_{16}=(1111101)\_{2}$
 
-</div><div>
+</div><div class="border-start border-dark">
 
 **From radix-2 to radix-16** [online tool](https://www.binaryhexconverter.com/binary-to-hex-converter)
 
@@ -117,6 +117,6 @@ You number of digits in base-2 should be a multiple of 4 to apply the previous f
 * Now, simply convert each group of 4 digits to radix-16, as you would for radix-10
   * $0111$ is $1+2+4=7$
   * $1101$ is $1+4+8=13$, but $13$ do not exists in radix-16, so we should use $D$
-* So we have $(7D)_{16}$, or $0x7D$
+* So we have $(7D)_{16}$ or $\text{0x}7D$
 
 </div></div>
