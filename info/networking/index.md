@@ -60,7 +60,7 @@ The id_host has non-null bits, so it's not a network address.
 </div></div>
 </details>
 
-<details class="details-e" open>
+<details class="details-e">
 <summary>Classless Inter-Domain Routing (CIDR)</summary>
 
 <div class="row row-cols-md-2"><div>
@@ -81,5 +81,27 @@ We have the address `01001101001000011110000100000000` (`77.33.225.0`). We were 
 * We are adding `/24`: `77.33.225.0/24`
 
 The CIDR notation is `77.33.225.0/24`.
+</div></div>
+</details>
+
+<details class="details-e" open>
+<summary>netmask</summary>
+
+<div class="row row-cols-md-2"><div>
+
+This is an IP address which is a mask that can be used to find the number of fixed bits in another IP address.
+
+* We are written **n** non-nul bits (1), with $n$ the number of fixed bits
+* We are completing with nul bits (0)
+
+If we know that `77.33.225.0` has 24 fixed bits, then we will write 24 times "1", and 8 <small>(32-24)</small> times "0", giving us `11111111111111111111111100000000` which is `255.255.255.0`.
+</div><div>
+
+Given a CIDR address `77.33.128.0/17`, it's even easier to find the netmask.
+
+* Calculate $\frac{n}{8}$: $\frac{17}{8}$ gives us $q=2$, $r=1$
+* Calculate $c=255-2^{8-r} + 1$: $255-2^{8-1}=128$
+* The result is $q$ times $255$, 1 time $c$, and $\min(4-q-1, 0)$ times $0$
+* Giving us $255.255.128.0$
 </div></div>
 </details>
