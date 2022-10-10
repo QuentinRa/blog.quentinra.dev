@@ -273,15 +273,12 @@ If the home of the current user is `/usr/user/home/`, then `~` would mean the ex
 
 ## Glob-patterns, and regex
 
-<details class="details-e">
+<details class="details-e mt-4">
 <summary>Glob-patterns</summary>
 
 <div class="row row-cols-md-2"><div>
 
-**Glob-patterns** (`motifs`) are a sort of simplified version of regex, mainly used to do requests given a pattern. For instance, `ls *.h` is listing every file (and directory) ending with `.h`.
-
-If the shell notices a pattern, then it will try to replace any matching content where the pattern was used. With this, `ls *.h` would become something like `ls toto.h lili.h`, then will be executed.
-</div><div>
+**Glob-patterns** allow us to define a set of filenames using **wildcards** (`motifs`). For instance, `*.h` will be replaced with every file -- and directory --, ending with `.h`. They are mostly used on commands taking many filenames, in which you don't want to manually have to write all of them 😎.
 
 <table class="table table-bordered table-striped border-dark">
 <thead>
@@ -302,6 +299,46 @@ If the shell notices a pattern, then it will try to replace any matching content
 
 * Use `[]` to escape it: `[?]`
 * Or using `\` (backslash) which is its purpose: `\*`
+</div><div>
+
+List (`ls`) every file
+
+```bash
+$ ls *
+```
+
+List (`ls`) every file starting with `b`
+
+```bash
+$ ls b*
+```
+
+List (`ls`) every file NOT starting with `b`
+
+```bash
+$ ls [^b]*
+```
+
+List (`ls`) every file starting with "a-" followed by 2 numbers <small>(ex: a-22)</small>
+
+```bash
+$ ls a-[0-9][0-9]*
+$ ls a-[[:digit:]][[:digit:]]*
+```
+
+List (`ls`) every three-letters long file ending with "n" <small>(ex: von)</small>
+
+```bash
+$ ls ??n
+```
+
+List (`ls`) every file ending with "?"
+
+```bash
+$ ls *[?]
+$ ls *\?
+```
+
 </div></div>
 </details>
 
