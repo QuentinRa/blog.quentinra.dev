@@ -17,14 +17,16 @@ Linux in its simplest form is a **terminal** (console, `invite de commande`). In
 > To open a terminal
 > * Look for "Terminal" in your Applications
 > * Or, use the shortcut `CTRL+SHIFT+T`
+
+> Use `CTRL +`, and `CTRL -` to increase/decrease zoom
 </div><div>
 
-Later, or in any other course, you may find commands introduced with "something" before the command. **THIS IS NOT A PART OF THE COMMAND**, but a token that indicates where we can execute the command.
+Most "commands" that you will see are written like `$ xxx`: **`$` IS NOT A PART OF THE COMMAND**, but a token that indicates **where** we can execute the command. It could be `#`, `sh >`...
 
 ```shell
-$ some_command_working_everywhere
-sh > some_command_at_least_work_in_sh
-bash > some_command_at_least_work_in_bash
+$ command_working_everywhere
+sh > command_at_least_working_in_sh
+bash > command_at_least_working_in_bash
 ```
 </div></div>
 
@@ -34,11 +36,11 @@ bash > some_command_at_least_work_in_bash
 
 <div class="row row-cols-md-2"><div>
 
-A command is **a name**, which may be followed by **arguments**, in which some may be **options**. Usually, devs are only saying "arguments" rather than differencing options/arguments, the difference being that an option starts with a `-`.
+A command is **a name**, which may be followed by **arguments**, including some usually called **options**; the difference being that an option starts with a `-`.
 
 * you are writing commands right after the `$`
 * press <kbd>ENTER</kbd> to execute a command
-* press <kbd>CTRL-C</kbd> to cancel a command
+* press <kbd>CTRL-C</kbd> to cancel/kill a command
 * press <kbd>CTRL-D</kbd> to end the input of a command waiting for input
 * Usually, options can be merged <small>(ex: `-l -a` is the same as `-la`)</small>.
 * Most commands have an option "help": `-h`, `-help`, or `--help`
