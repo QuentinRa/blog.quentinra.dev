@@ -19,6 +19,8 @@ Linux in its simplest form is a **terminal** (console, `invite de commande`). In
 > * Or, use the shortcut `CTRL+SHIFT+T`
 
 > Use `CTRL +`, and `CTRL -` to increase/decrease zoom
+
+> You can use CTRL+SHIFT+F1 to swap to console mode <small>(from F1, up to F9)</small>, while you can use ALT+F7 to swap back.
 </div><div>
 
 Most "commands" that you will see are written like `$ xxx`: **`$` IS NOT A PART OF THE COMMAND**, but a token that indicates **where** we can execute the command. It could be `#`, `sh >`...
@@ -64,6 +66,8 @@ $ man ls
 
 > Usually, pressing the scroll button will `paste` any copied content.
 
+> Quotes (`"`) which may surround some arguments are NOT mandatory, but may be required mostly if you are using special characters, such as **space**. You can actually do `a\ folder`, or `"a folder"`.
+
 <hr class="sl">
 
 ## Text Editors
@@ -107,12 +111,13 @@ Permissions are assigned on a file/folder, and are applied according to the targ
 Permissions are something is `u=r+w, g=r, o=r`, which means that user can read+write, group can r, and others can read.
 </div><div>
 
-You may have noticed a number next to every kind of permissions. This is because permissions are coded on 3 bits, which means that they can take 7 values.
+You may have noticed a number next to every kind of permissions. This is because permissions are coded on 3 bits, which means that they can take 8 values <small>(000, 001, 010...)</small>.
 
-* `1`: can execute <small>(1=x)</small>
-* `2`: can write <small>(2=w)</small>
+* `0`: nothing <small>(000)</small>
+* `1`: can execute <small>(001=1=x)</small>
+* `2`: can write <small>(010=2=w)</small>
 * `3`: can execute, and write <small>(1+2=x+w)</small>
-* `4`: can read <small>(4=r)</small>
+* `4`: can read <small>(100=4=r)</small>
 * `5`: can read, and execute <small>(4+1=r+x)</small>
 * `6`: can read, and write <small>(4+2=r+w)</small>
 * `7`: can read, write, and execute <small>(4+2+1=r+w+x)</small>
@@ -250,6 +255,7 @@ If the home of the current user is `/usr/user/home/`, then `~` would mean the ex
 
 * Following slashes are merged into one <small>(ex: `///` is the same as `/`)</small>
 * "Everything is a file": hard drive (/mnt/), a terminal (/dev/), a command (/bin/)...
+* **Remember** that if you have spaces in your paths, then you must either quote them, or use `\` before any space.
 </details>
 </div><div>
 
