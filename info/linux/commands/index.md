@@ -2,15 +2,25 @@
 
 A lot of commands, along with their most useful options, and some tips about their usage, that can be used on Linux-based distributions. This includes commands such as `sudo`, `apt`, `man`, `ls`, `cd`, `pwd`, `echo`, `printf`, `cat`, `less`, `mkdir`, `touch`, `cp`, `mv`, `rm`, `ln`, `chmod`, `umask`, `chown`, and many more.
 
-Some commands are not listed here
+**Note**: some commands are not listed here
 
-* `test` (scripts): take a condition, and exit with 0 if true, 1 if false
-* `seq` (scripts): generate a list of numbers
-* `read` (scripts): to read input from the user
-* `exit` (scripts): exit the shell with an exit code
-* `env/printenv` (knowledge): list all environment variables
-* `hexdump` (radix): convert some text to octal/hexadecimal
-* `k#n` (radix): convert a number $n$ in radix-$k$ to decimal
+<blockquote>
+<div class="row row-cols-md-2"><div>
+
+* `test`<sup>1</sup>: take a condition, and exit with 0 if true, 1 if false
+* `seq` <sup>1</sup>: generate a list of numbers
+* `read` <sup>1</sup>: to read input from the user
+* `exit` <sup>1</sup>: exit the shell with an exit code
+* `env/printenv` <sup>2</sup>: list all environment variables
+* `hexdump` <sup>3</sup>: convert some text to octal/hexadecimal
+* `k#n` <sup>3</sup>: convert a number $n$ in radix-$k$ to decimal
+</div><div class="small">
+
+<sup>1</sup> see [Linux - Scripts](../scripts/index.md)<br>
+<sup>2</sup> see [Linux - Main course](../knowledge/index.md) <br>
+<sup>3</sup> see [Linux - Radix](../radix/index.md)
+</div></div>
+</blockquote>
 
 <hr class="sl">
 
