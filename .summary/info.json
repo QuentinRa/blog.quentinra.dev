@@ -66,6 +66,12 @@
         "name": "Linux (scripts)",
         "desc": "Learn how to write Shell scripts.",
         "icon": null
+      },
+      {
+        "tag": "linux/windows/index.md",
+        "name": "Linux on Windows",
+        "desc": "Knowledge related to using Linux on Windows.",
+        "icon": null
       }
     ],
     "e3": [
