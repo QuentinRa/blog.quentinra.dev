@@ -41,6 +41,8 @@ bash > command_at_least_working_in_bash
 > Usually, pressing the scroll button will paste any copied content.
 </div></div>
 
+> There is no "echo" when writing a password, so don't be confused when you are writing one.
+
 <hr class="sr">
 
 ## Commands
@@ -61,6 +63,7 @@ A command is **a name**, which may be followed by **arguments**, including some 
 ```bash
 $ ls
 $ ls toto.txt
+$ ls "toto.txt"
 $ ls -l -a
 $ ls -la
 $ ls -la toto/
@@ -73,9 +76,75 @@ $ man ls
 ```
 </div></div>
 
-> Quotes (`"`) which may surround some arguments are not mandatory, but may be required mostly if you are using special characters, such as **space**. You can actually use backslash `a\ folder`, or quotes `"a folder"`.
+<details class="details-e">
+<summary>Quoting in bash</summary>
 
-> There is no "echo" when writing a password, so you won't see your password.
+<div class="row row-cols-md-2"><div>
+
+Quotes are not mandatory unless there are some specials characters, such as a space in a path, for instance
+
+```bash
+$ ls /Documents/my bookmarks/ # Will not work
+$ ls "/Documents/my bookmarks/" # 👌
+$ ls '/Documents/my bookmarks/' # 👌
+$ ls /Documents/my\ bookmarks/ # 👌
+```
+</div><div>
+
+The main difference between single and double quotes, is that variables, and nested commands, will still be executed when using double quotes.
+
+```bash
+$ echo "$toto" # echo "OK"
+$ echo '$toto' # echo "$toto" 
+```
+</div></div>
+</details>
+
+<details class="details-e">
+<summary>Exit codes, nested commands, and operators <code>; && ||</code></summary>
+
+
+<div class="row row-cols-md-2"><div>
+
+Commands (processes) are returning a code:
+
+* $0$: everything went fine
+* Not $0$: an error occurred
+
+The exit code of the last command is stored in `$?`
+
+```bash
+$ echo $?
+```
+
+You can execute a command inside another command (nested)
+
+```bash
+$ ls `echo ~` # ls ~
+$ ls $(echo ~) # ls ~
+```
+
+</div><div>
+
+You can run multiple commands in one go
+
+```bash
+$ ls toto; ls tata
+```
+
+The operator `&&` only execute the next command if the previous one successfully ended (code=0)
+
+```bash
+$ ls toto && ls tata
+```
+
+The operator `||` execute every command until a one is successful (code=0)
+
+```bash
+$ ls toto && ls tata
+```
+</div></div>
+</details>
 
 <hr class="sl">
 
