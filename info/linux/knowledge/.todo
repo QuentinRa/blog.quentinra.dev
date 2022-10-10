@@ -1,4 +1,9 @@
 ---------------
+---- All
+---------------
+file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/index.html#exercices
+
+---------------
 ---- Knowledge
 ---------------
 
@@ -52,14 +57,10 @@ echo -e "DISPLAY=:0.0\nexport DISPLAY" >> ~/.bashrc
 
 ls *.{jpg,gif,png}
 
-<details class="details-e">
-<summary>Sessions</summary>
-
-Every process is attached to a session, which can be found with the **SID** (Session identifier) property. Most sessions are attached to a terminal (`/dev/tty`).
-
-Sessions are partitioned into [groups of processes](https://en.wikipedia.org/wiki/Process_group).
-
-If a session dies, then the signal **SIGHUP** is sent to every process.
-</details>
+-----------------
+---- System_call
+-----------------
 
 https://en.wikipedia.org/wiki/System_call
+file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/index.html#appels-systemes
+file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/exercices/sys.html
