@@ -9,6 +9,8 @@ Some commands are not listed here
 * `read` (scripts): to read input from the user
 * `exit` (scripts): exit the shell with an exit code
 * `env/printenv` (knowledge): list all environment variables
+* `hexdump` (radix): convert some text to octal/hexadecimal
+* `k#n` (radix): convert a number $n$ in radix-$k$ to decimal
 
 <hr class="sl">
 

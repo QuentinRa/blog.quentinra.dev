@@ -13,6 +13,8 @@ ps -C program
 xrandr --output DP-2 --brightness 0.5
 sudo apt-get install build-essential gdb
 cut
+shopt (file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/files/bric/var.html)
+https://www.gnu.org/software/bash/manual/bash.html
 
 can use put, get, pwd... with FTP.
 # ls <folder>: list files of <folder>

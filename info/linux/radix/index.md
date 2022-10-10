@@ -9,11 +9,44 @@ This is more of a mathematical course, but you will use binaries, octal, hexadec
 
 <hr class="sl">
 
+## Commands
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+<details class="details-e">
+<summary><code>hexdump</code>: convert some text to octal/hexadecimal, and 🔁</summary>
+
+* `-b`: to octal
+* `-C`: to hexadecimal
+* `-e`: customize
+
+```bash
+$ hexdump 001
+```
+
+<!--
+<code>hexdump -ve '"%08_ax"  8/1 "%02x" "  " 8/1 "%02x" "\n"'</code>
+-->
+</details>
+</div><div>
+
+<details class="details-e">
+<summary><code>k#n</code>: convert a number $n$ in radix-$k$ to decimal</summary>
+
+```bash
+$ echo $[2#101] # 5
+```
+
+</details>
+</div></div>
+
+<hr class="sr">
+
 ## Radix-10
 
 Radix-10 numbers are called decimals, and you should already know them, as they are the numbers that you have been using every day, for instance $125$ is a number in radix-10.
 
-<hr class="sr">
+<hr class="sl">
 
 ## Radix-2
 
@@ -50,7 +83,7 @@ You simply have to do the inverse of what you did, but to make things easier, yo
 Pretty easy, right?
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Radix-8
 
@@ -84,7 +117,7 @@ You number of digits in base-2 should be a multiple of 3 to apply the previous f
 
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Radix-16
 
