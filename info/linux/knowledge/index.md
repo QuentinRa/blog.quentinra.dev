@@ -372,12 +372,14 @@ Print all environment variables
 
 ```bash
 $ env
+$ printenv
 ```
 
 Print the value of one environment variable
 
 ```bash
 $ echo $PATH
+$ printenv PATH
 $ env | grep "^PATH="
 ```
 
@@ -387,7 +389,7 @@ Set an environment variable
 $ export VAR_NAME=value
 ```
 
-Update PATH to add `/home/toto/bin`
+Add `/home/toto/bin` to the PATH
 
 ```bash
 $ export PATH=/home/toto/bin:$PATH

@@ -8,7 +8,7 @@ Some commands are not listed here
 * `seq` (scripts): generate a list of numbers
 * `read` (scripts): to read input from the user
 * `exit` (scripts): exit the shell with an exit code
-* `env` (knowledge): list all environment variables
+* `env/printenv` (knowledge): list all environment variables
 
 <hr class="sl">
 
