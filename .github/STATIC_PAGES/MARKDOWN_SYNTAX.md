@@ -6,7 +6,7 @@
 
 This page is a **summary of the syntax that we are using** in Markdown, and how it is rendered **on this website**.
 
-**Version**: <a href="https://github.com/lgs-games/memorize/blob/master/.github/STATIC_PAGES/MARKDOWN_SYNTAX.md" target="_blank" rel="noopener noreferrer">1.7.0</a> (2022-10-06)
+**Version**: <a href="https://github.com/lgs-games/memorize/blob/master/.github/STATIC_PAGES/MARKDOWN_SYNTAX.md" target="_blank" rel="noopener noreferrer">1.7.1</a> (2022-10-10)
 
 <div class="table-of-contents w-25 mx-auto">
 
@@ -212,6 +212,7 @@ The result is different according to the classes you gave to **details**.
 
 * You may add the class `align-self-center` to a div to center its content vertically
 * **1.7.0**: you may use `mx-0`, `mt-2`, or `mt-4` to apply some margins to your columns
+* **1.7.1**: you may use `class="border-start border-dark"` on the second div, to add a vertical separator
 </div></div>
 
 <hr class="sep-both">
