@@ -34,3 +34,23 @@ On Windows, you can browse your WSL files in the Linux section of your file expl
 </div></div>
 
 > There are a lot of downsides to a WSL, such as the lack of a graphical user interface, or some commands not working, including many of the network-related commands such as "ping".
+
+<details class="details-e">
+<summary>Add a low-quality graphical user interface</summary>
+
+It will be a low quality once, but it still possible for some software. You need to install [XMing](http://www.straightrunning.com/XmingNotes/), and [XMing fonts](http://www.straightrunning.com/XmingNotes/). **Scroll to "public domain" to find the download links**. Then, every time you need to use `-c` (graphical version), start XMing first. For instance
+
+```bash
+$ sudo apt-get update
+# editor: sublime text
+$ sudo apt-get install sublime-text
+$ subl -c
+# editor: emacs
+$ sudo apt-get install emacs
+$ emacs -c
+# editor: IntelliJ
+# ... get the tar.gz on their Website, tar xvf idea.tar.gz
+# inside the bin folder, run the .sh
+$ ./idea.sh -c
+```
+</details>

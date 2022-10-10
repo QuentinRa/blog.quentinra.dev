@@ -1,6 +1,3 @@
-https://tryhackme.com/room/linux1
-https://tryhackme.com/room/linux2
-
 apropos
 alias
 <kbd>head file.txt</kbd> (see the first 10 lines)
@@ -23,8 +20,6 @@ can use put, get, pwd... with FTP.
 # pwd: get the path of the working directory
 
 .bashrc
-[[]] (()) - NOT POSIX
-missing a lot of texas_res content (dev essentials...)
 
 man sudo_root
 ls *.{jpg,gif,png}
