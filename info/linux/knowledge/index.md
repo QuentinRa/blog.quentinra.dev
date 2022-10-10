@@ -163,6 +163,9 @@ There is a super-user, usually called root, that has absolute control over the m
 
 In both Linux, and Windows, there is a notion of **Path**. A path is made of one or more folders (`dossier/catalogue`), and may lead to a file (`fichier`).
 
+<details class="details-e">
+<summary>Notions: Path, Separator, root, home...</summary>
+
 <table class="table table-bordered table-striped border-dark">
 <thead>
 <tr><th>Notion</th><th>Windows</th><th>Linux</th></tr>
@@ -190,7 +193,7 @@ The folder with every file belonging to "user".
 
 <tr><td><b>hidden files</b> (<code>fichiers cachés</code>)<br>
 Files that are not visible by default.
-</td><td>❌ defined manually<td>any file starting with <code>.</code> (dot), such as <code>.config</code></td></tr>
+</td><td>❌ manually defined<td>Any file starting with <code>.</code> (dot), such as <code>.config</code></td></tr>
 
 <tr><td><b>"Program files"</b><br>
 Folders used to store programs/commands.
@@ -208,6 +211,7 @@ Folders used to store programs/commands.
 </tr>
 </tbody>
 </table>
+</details>
 
 <details class="details-e">
 <summary>Absolute and relative paths</summary>
@@ -239,12 +243,15 @@ If the home of the current user is `/usr/user/home/`, then `~` would mean the ex
 </tbody></table>
 </details>
 
+<div class="row row-cols-md-2"><div>
+
 <details class="details-e">
 <summary>Notes</summary>
 
 * Following slashes are merged into one <small>(ex: `///` is the same as `/`)</small>
 * "Everything is a file": hard drive (/mnt/), a terminal (/dev/), a command (/bin/)...
 </details>
+</div><div>
 
 <details class="details-e">
 <summary>Commands</summary>
@@ -254,6 +261,7 @@ If the home of the current user is `/usr/user/home/`, then `~` would mean the ex
 * <kbd>ls</kbd>: to list every file/folder in a directory
 * <kbd>ls -a</kbd>: to list every file, including hidden files, in a directory
 </details>
+</div></div>
 
 <hr class="sr">
 
