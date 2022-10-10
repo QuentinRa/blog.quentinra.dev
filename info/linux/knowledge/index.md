@@ -595,3 +595,14 @@ The main difference, is that background processes
 <sup>1</sup> In some shells, or actually in most shells, this feature is enabled by default, but it can be disabled by editing an environment variable (but, I forgot which one sadly).
 </details>
 </div></div>
+
+<details class="details-e">
+<summary>Commands</summary>
+
+* <kbd>&</kbd>: run a command (process) in the background
+* <kbd>ps</kbd>: list process
+* <kbd>kill</kbd>: send a signal to a process
+* <kbd>fg</kbd>: bring a process back to the foreground
+* <kbd>bg</kbd>: bring a process to the background
+* <kbd>top</kbd>: list all process, and their memory usage <small>(same as the task manager on Windows)</small>
+</details>
