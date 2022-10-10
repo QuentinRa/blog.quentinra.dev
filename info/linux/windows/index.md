@@ -69,3 +69,42 @@ Instead of adding a low-quality graphical user interface, it would be better to 
 * [Get started using VSCode with WSL](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode), or this for [C/C++, and WSL](https://code.visualstudio.com/docs/cpp/config-wsl)
 </details>
 </div></div>
+
+<hr class="sr">
+
+## Cygwin
+
+<div class="row row-cols-md-2"><div>
+
+Cygwin is "a large collection of GNU and Open Source tools which provide functionality similar to a Linux distribution on Windows" according to the [Cygwin Project website](https://www.cygwin.com/). 
+
+This is basically a collection of .exe for most, if not all, Linux commands. This will allow you, if you want, to call Linux commands in a PowerShell.
+
+You will also have a Cygwin console, in which you can run your commands, but **you can only install new commands using the installer**.
+</div><div>
+
+1. [Download Cygwin Installer/Updater](https://www.cygwin.com/install.html)
+2. Run it, press next
+3. Install from the internet, Next, Next, Next, Next
+4. Pick a mirror in the list, Next
+5. In view, select full
+
+Now, you have to pick the **commands** you want, which means replacing "Skip" <small>(in the column "New")</small> with a version of the command. You should use the search bar. You may install `vim`, `wget`/`curl`, and `make` to compile Makefiles.
+
+6. Then process with the installation
+7. Now, you should open a new terminal on Windows (ex: Powershell, cmd, ...) and write a command
+
+```bash
+$ make -v
+# GNU Make 4.3
+# ...
+```
+
+<details class="details-e">
+<summary>What to do if the command is 'not found'?</summary>
+
+* You may have to restart your IDE (if you are using one), or your computer.
+* If this is still not working, check that `C:/cygwin64/bin` is in the PATH.
+</details>
+
+</div></div>
