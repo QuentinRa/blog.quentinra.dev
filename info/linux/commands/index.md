@@ -22,6 +22,25 @@ A lot of commands, along with their most useful options, and some tips about the
 </div></div>
 </blockquote>
 
+<hr class="sr">
+
+## Less-editor
+
+<div class="row row-cols-md-2"><div class="align-self-center">
+
+*This isn't an official way to call it*, but there is a command called `less` allowing you to read usually big amount of text in a editor. Less-editor is used by **man**, and some others commands.
+
+There are QUITE a lot of options. Simply press <kbd>h</kbd> to see all of them.
+</div><div>
+
+* <kbd>arrow up</kbd>: to move up,
+* <kbd>arrow down</kbd>: to move down
+* <kbd>q</kbd>: to quit
+* <kbd>/something</kbd>: search "something"
+  * <kbd>Enter or n</kbd>: go to the next match
+  * <kbd>N</kbd>: go back to the previous match
+</div></div>
+
 <hr class="sl">
 
 ## System
@@ -277,13 +296,14 @@ printf "%s\n" "Hello, World"
 </div>
 
 <details class="details-e">
-<summary><code>cat/tac/less</code>: print/display a file</summary>
+<summary><code>cat/tac/less/more</code>: print/display a file</summary>
 <div class="row row-cols-md-2"><div>
 
-`cat` is the most used command to see the content of a file, while `less` is also quite used for big files, as we can scroll up/down.
+`cat` is the most used command to see the content of a file, while `less` is also quite used for big files, as we can scroll up/down. `more` is an in-between, working like `cat` for small files, and a bit like `less` for big files.
 
 ```bash
 $ cat file
+$ more file # use up/down, and q
 $ less file # use up/down, and q
 ```
 
