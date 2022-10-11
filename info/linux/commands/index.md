@@ -883,6 +883,44 @@ $ cat file | tr -d 'W'
 </details>
 </div></div>
 
+<div class="row row-cols-md-2"><div>
+<details class="details-e">
+<summary><code>head/tail</code>: show the $n$ first/last lines of a file</summary>
+
+Both a working the same, `head` is for the first lines, `tail` is for the last lines, so I will only introduce one.
+
+```bash
+# first 10 lines
+$ head f
+# first 5 lines
+$ head f -n 5
+$ head f -n +5
+# all lines, aside the last 3 lines
+$ head f -n -5
+```
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>cut</code> 😎: extract data</summary>
+
+```bash
+$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+```
+
+In such file, values are separated with `:`. For cut, if you consider `:` as a separator, it looks like this `f1:f2:f3:f4:f5:f6:f7`. These values "f" are called fields, and you can extract them.
+
+```bash
+$ cat /etc/passwd | cut -d: -f1
+root
+$ cat /etc/passwd | cut -d: -f1-3
+root:x:0
+$ cat /etc/passwd | cut -d: -f1,3
+root:0
+```
+</details>
+</div></div>
+
 <hr class="sl">
 
 ## Processes
