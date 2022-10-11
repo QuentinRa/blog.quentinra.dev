@@ -219,9 +219,9 @@ msf6 exploit('module_used') > run
 Volatility is a free memory forensics tool.
 
 <details class="details-e">
-<summary>Install</summary>
+<summary>Install on Linux</summary>
 
-I wouldn't work with `apt-get install volatility` on Kali-2022, so I had to do things manually, and it was tiring. I hope it works for you.
+It wouldn't work with `apt-get install volatility` on Kali-2022, so I had to do things manually, and it was tiring because it uses python2. There is a version for [python3](https://github.com/volatilityfoundation/volatility3/tree/stable) in development.
 
 * `git clone https://github.com/volatilityfoundation/volatility.git`
 * First patch ([source](https://alvinisonline.medium.com/volatility-importerror-no-module-named-crypto-hash-e515092fd8e3))
@@ -236,7 +236,54 @@ I wouldn't work with `apt-get install volatility` on Kali-2022, so I had to do t
 * You should add an alias: `alias vol='python2 /path/to/vol.py'`
 * `vol -h`
 </details>
+
+In order to use Volatility, you need a memory capture (usually, a .raw file). Try checking out [FTK Imager](https://accessdata.com/product-download/ftk-imager-version-4-2-0), [Redline](https://www.fireeye.com/services/freeware/redline.html), [DumpIt.exe](https://www.aldeid.com/wiki/Dumpit), [winDD](https://sourceforge.net/projects/windd/)...
+
+Find the profiles that you can use:
+
+```bash
+$ vol -f memory_capture_file imageinfo
+# Suggested Profile(s): ...
+```
+
+View active processes/connections
+
+```bash
+# processes
+$ vol -f memory_capture_file --profile=a_profile pslist
+# hidden processes
+$ vol -f memory_capture_file --profile=a_profile psxview
+# connections
+$ vol -f memory_capture_file --profile=a_profile netscan
+# both actives, and actives+hidden
+vol -f memory_capture_file --profile=a_profile ldrmodules > output
+```
+
 </div><div>
 
-...
+Malicious processes will most likely try to hide themselves.
+
+```bash
+$ grep -o '^.*False.*False.*False.*' output
+```
+
+Check unexpected patches in the standard system DLLs
+
+```bash
+$ vol -f memory_capture_file --profile=a_profile apihooks
+```
+
+Look for injected code, and dump it
+
+```bash
+$ vol -f memory_capture_file --profile=a_profile malfind -D dest
+```
+
+View all the DLLs loaded into memory
+
+```bash
+$ vol -f memory_capture_file --profile=a_profile dlllist
+# dump them
+$ vol -f memory_capture_file --profile=a_profile --pid=some_pid dlldump -D dest
+```
 </div></div>

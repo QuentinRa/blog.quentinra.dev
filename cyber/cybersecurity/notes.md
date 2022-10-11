@@ -70,39 +70,6 @@ Detect, and stop attacks.
     * credentialed patch audit: find missing updates
   * policies: create custom templates
   * Plugin rules: change plugins properties
-* **Volatility** (free memory forensics tool, incident response)
-  * memory capture - output .raw file
-    * [FTK Imager](https://accessdata.com/product-download/ftk-imager-version-4-2-0)
-    * [Redline](https://www.fireeye.com/services/freeware/redline.html) (Requires registration, nice GUI?)
-    * DumpIt.exe
-    * win32dd.exe / win64dd.exe (psexec support???)
-    * VMware - .vmem file
-  * %SystemDrive%/hiberfil.sys
-    * Windows hibernation file 
-    * contains a compressed memory image from the previous boot
-  * `python2 ../Downloads/volatility/vol.py -f cridex.vmem imageinfo`
-    * `Suggested Profile(s): ...`
-    * you can view actives processes
-    * `python2 ../Downloads/volatility/vol.py -f cridex.vmem --profile=WinXPSP2x86 pslist`
-    * you can view actives connections
-    * `python2 ../Downloads/volatility/vol.py -f cridex.vmem --profile=WinXPSP2x86 netscan`
-    * you can view hidden processes
-    * `python2 ../Downloads/volatility/vol.py -f cridex.vmem --profile=WinXPSP2x86 psxview`
-    * check actives, and hidden processes
-    * `python2 ../Downloads/volatility/vol.py -f cridex.vmem --profile=WinXPSP2x86 ldrmodules > output`
-    * `grep -o '^.*False.*False.*False.*' output`
-    * check unexpected patches in the standard system DLLs
-    * if `Hooking module: <unknown>` it's bad.
-    * `python2 ../Downloads/volatility/vol.py -f cridex.vmem --profile=WinXPSP2x86 apihooks`
-    * Look for injected code, and dump it
-    * `python2 ../Downloads/volatility/vol.py -f cridex.vmem --profile=WinXPSP2x86 malfind -D dest`
-    * view all the DLLs loaded into memory. DLLs are shared system libraries utilized in system processes. These are commonly subjected to hijacking and other side-loading attacks,
-    * `python2 ../Downloads/volatility/vol.py -f cridex.vmem --profile=WinXPSP2x86 dlllist`
-    * pull the ddl infected
-    * `python2 ../Downloads/volatility/vol.py -f cridex.vmem --profile=WinXPSP2x86 --pid=368 dlldump -D <Destination Directory>`
-    * https://github.com/kevthehermit/VolUtility
-    * https://youtu.be/dB5852eAgpc
-    * https://subscription.packtpub.com/book/security/9781838640804/10/ch10lvl1sec55/using-volatility-in-kali-linux
 * Inpect files - dump all processes, and ddl
   * https://www.virustotal.com/gui/home/upload
   * https://www.hybrid-analysis.com/
