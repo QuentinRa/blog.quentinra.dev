@@ -165,59 +165,6 @@ $ netcat localhost 33666
 </details>
 </div></div>
 
-<details class="details-e">
-<summary><code>nmap</code>: scan a machine to get some data (ports...)</summary>
-<div class="row row-cols-md-2"><div>
-
-List all targets to scan
-
-```bash
-$ nmap 127.0.0.1 -sL
-$ nmap localhost -sL
-$ nmap google.fr -sL
-```
-
-Start a ping-scan (do not scan ports)
-
-```bash
-$ nmap localhost -sn
-```
-
-Pick a protocol: UDP (U), TCP(S, or T)
-
-```bash
-$ nmap localhost -sU # root
-$ nmap localhost -sS
-$ nmap localhost -sT
-```
-
-You can execute a Lua script with `--script=lua_script`, see [nsedoc](https://nmap.org/nsedoc/) ([nsedoc scripts](https://nmap.org/nsedoc/scripts/): simply give the name of the script to execute).
-</div><div>
-
-Only try to map some ports
-
-```bash
-$ nmap localhost -p 22
-$ nmap localhost -p 22,23
-$ nmap localhost -p 0-65535
-```
-
-To reduce the risk of being detected, you can set some timing starting with 0=passive=slow, and up to 5=aggressive=fast.
-
-```bash
-$ nmap localhost -p 22 -T0
-```
-
-Detect OS (-o), OS+Version (-A), or all information (-v).
-
-```bash
-$ nmap localhost -O
-$ nmap localhost -A
-$ nmap localhost -v
-```
-</div></div>
-</details>
-
 <hr class="sl">
 
 ## Monitoring
@@ -273,7 +220,7 @@ Use File > Export > HTTP to GET download files.
 </details>
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## ARP, and network filters
 
@@ -318,4 +265,56 @@ Obsolete. See `ip n`.
 
 Obsolete. See `ip r`.
 </details>
+</div></div>
+
+<hr class="sl">
+
+## Nmap
+
+`nmap` is used to detect services used by a server, such as SSH, FTP, HTTP/HTTPS... Each service is associated with a port, such as `21` for FTP, but they may be changed. A port may be filtered, meaning that a firewall is preventing you to find if a port is open, or closed.
+
+<details class="details-e" open>
+<summary>There are 6 kind of scans, called switches <code>-s</code></summary>
+<div class="row row-cols-md-2"><div>
+
+* `-sS` (**Syn Scan**): "Half-open"/"Stealth" Scan
+
+```bash
+$ sudo nmap localhost -sS
+```
+</div><div>
+</div></div>
+</details>
+
+<div class="row row-cols-md-2"><div>
+
+**TIP**: use at least `-vv` to add a level-2 verbosity.
+
+```bash
+$ nmap localhost -vv
+```
+
+Find...
+
+```bash
+$ nmap localhost -sV # ... if a host is up
+```
+
+Select which ports to scan
+
+```bash
+$ nmap localhost -p 22
+$ nmap localhost -p 22,23
+$ nmap localhost -p 0-65535
+$ nmap localhost -p- # same :)
+```
+</div><div>
+
+Store results
+
+```bash
+$ nmap localhost > output_localhost
+# generate .nmap=-oN, .gnmap=-oG, and .xml=oX 
+$ nmap localhost -oA output_localhost
+```
 </div></div>

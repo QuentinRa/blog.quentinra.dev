@@ -2,3 +2,50 @@ https://linuxcommandlibrary.com/man/snap
 sudo snap install xxx
 
 dpkg / apt in /etc/apt/sources.list.d
+
+declare -F
+
+<details class="details-e">
+<summary><code>nmap</code>: scan a machine to get some data (ports...)</summary>
+<div class="row row-cols-md-2"><div>
+
+List all targets to scan
+
+```bash
+$ nmap 127.0.0.1 -sL
+$ nmap localhost -sL
+$ nmap google.fr -sL
+```
+
+Start a ping-scan (do not scan ports)
+
+```bash
+$ nmap localhost -sn
+```
+
+Pick a protocol: UDP (U), TCP(S, or T)
+
+```bash
+$ nmap localhost -sU # root
+$ nmap localhost -sS
+$ nmap localhost -sT
+```
+
+You can execute a Lua script with `--script=lua_script`, see [nsedoc](https://nmap.org/nsedoc/) ([nsedoc scripts](https://nmap.org/nsedoc/scripts/): simply give the name of the script to execute).
+</div><div>
+
+To reduce the risk of being detected, you can set some timing starting with 0=passive=slow, and up to 5=aggressive=fast.
+
+```bash
+$ nmap localhost -p 22 -T0
+```
+
+Detect OS (-o), OS+Version (-A), or all information (-v).
+
+```bash
+$ nmap localhost -O
+$ nmap localhost -A
+$ nmap localhost -v
+```
+</div></div>
+</details>

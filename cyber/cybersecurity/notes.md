@@ -50,16 +50,8 @@ Detect, and stop attacks.
 
 * Putty
 * Nmap
-  * 65535 available ports
-  * standard ports (https://techhyme.com/list-of-commonly-used-well-known-ports/)
   * open, closed, or filtered (usually by a firewall)
-  * `Syn Scan` (SYN "Half-open"/"stealth" Scan) -sS
-  * version only: -sv
-  * Each of these values after "s" are called switches
-  * **advised to use at least** `-vv`!!!!!!!!!!!!!!!!!!!!!!!!!!
-  * `-oA` to save results in normal (N), XML (X), and grepble (G) formats at once
   * -a: shorthand service detection, operating system detection, a traceroute and common script scanning
-  * `-p-` scan all ports
   * `--script=vuln` `--script vuln` activate all scripts in the vuln category
   * TCP scan (request with SYN/ACK=ok RST=closed), but firewall
   * SYN: when receving response that port open, then respond that yours is closed, slightly faster than TCP, need sudo
