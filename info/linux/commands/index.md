@@ -138,6 +138,18 @@ $ alias
 
 **Note**: aliases aren't permanent. Add them in your `.bashrc`.
 </details>
+</div><div>
+<details class="details-e">
+<summary><code>update-alternatives</code>: switch PHP/Python/Java... version</summary>
+
+**Note**: it's only available on debian-based distributions, from what I read.
+
+```bash
+$ sudo update-alternatives --config php
+```
+
+> c++, cc, nc, php, java...
+</details>
 </div></div>
 
 <div class="row row-cols-md-2"><div>
@@ -1061,7 +1073,7 @@ Because we need to print a `#`, then the line, we need to store the line. We are
 </details>
 
 <div class="row row-cols-md-2"><div>
-<details class="details-e" open>
+<details class="details-e">
 <summary><code>awk</code>: extract columns (cut), rearrange columns...</summary>
 
 [The_AWK_Programming_Language](https://ia903404.us.archive.org/0/items/pdfy-MgN0H1joIoDVoIC7/The_AWK_Programming_Language.pdf) & [To awk or not](https://pmitev.github.io/to-awk-or-not/)
