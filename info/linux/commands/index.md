@@ -921,6 +921,54 @@ root:0
 </details>
 </div></div>
 
+<div class="row row-cols-md-2"><div>
+<details class="details-e">
+<summary><code>sort</code>: output the sorted file</summary>
+
+```bash
+$ sort
+$ sort -d
+```
+
+* `-b`: ignore leading blanks
+* `-r`: reverse (z to a)
+
+You can define a separator (`:`), and sort only a column.
+
+```bash
+$ sort s -t: -k2 # sort by second column
+3:a
+1:b
+2:c
+$ sort s -t: -k2.0 # column.nth character
+$ sort s -t: -k2.0,2.1 # range
+```
+
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>expr</code>: substring, indexOf...</summary>
+
+Extract a string of "3" characters from "Sarah" starting from index "2"
+
+```bash
+$ expr substr "Sarah" 2 3
+ara
+```
+
+Index of ...
+
+```bash
+$ expr index "Sarah" S
+1
+$ expr index "Sarah" w
+0
+```
+
+
+</details>
+</div></div>
+
 <hr class="sl">
 
 ## Processes
