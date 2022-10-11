@@ -854,10 +854,18 @@ $ tar -xvf archive_name.tar.gz
 
 <div class="row row-cols-md-3"><div>
 <details class="details-e">
-<summary><code>unzip</code>: unzip a .zip</summary>
+<summary><code>zip/unzip</code>: zip/unzip a .zip</summary>
 
 ```bash
+$ zip toto.zip f0 f1 f2
 $ unzip toto.zip
+```
+
+View the contents of a zip
+
+```bash
+$ zipinfo toto.zip
+$ unzip -l toto.zip
 ```
 </details>
 </div><div>

@@ -1,0 +1,12 @@
+.bashrc
+file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/files/bash/bashrc.html
+
+source
+: / command
+
+https://programmerall.com/article/17441621896/
+ls *.{jpg,gif,png}
+ls *.{0..5}
+
+https://linux.die.net/man/1/bash
+https://www.gnu.org/software/bash/manual/bash.html

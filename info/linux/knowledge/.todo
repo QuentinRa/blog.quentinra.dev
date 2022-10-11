@@ -1,71 +1,31 @@
----------------
----- All
----------------
+> Original
 file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/index.html#exercices
-
----------------
----- Knowledge
----------------
-
 file:///C:/Users/quent/Documents/texas-res/_build/html/system/linux/files/enc/proc.html
 file:///C:/Users/quent/Documents/texas-res/_build/html/system/linux/index.html#vue-generale-du-systeme-informatique-technique
 
----------------
----- Terminal
----------------
-
+> Shortcuts
 https://linuxhandbook.com/linux-shortcuts/
 https://www.lostsaloon.com/technology/7-keyboard-shortcuts-you-should-know-in-linux-command-shell/
 https://linuxhint.com/100_keyboard_shortcuts_linux/
 
----------------
----- Permissions
----------------
-
+> Perms
 https://linuxhandbook.com/suid-sgid-sticky-bit/
 
----------------
----- Path
----------------
-
+> Paths
 /etc/: all files related to the configuration of the OS.
-
 Windows et ses D:/, H:/, G:/...
 Linux et ses /dev/sda*, /mnt, /media ou /run/media...
 
-<details class="details-e">
-<summary>Practical knowledge</summary>
-
-* In the screen bellow, the first value `-` indicates that this is a file. It would be `d` for a folder, `l` for a link...
-* The 3 following letters `rw-` are the permissions of `u`: read+write.
-* The 3 following letters `r--` are the permissions of `g`: read.
-* The 3 following letters `r--` are the permissions of `o`: read.
-* The following number `1` is the number of links.
-* The following string `listro` is the name of the user `u`
-* The following string `listro` is the name of the group `g`
-</details>
+In the screen bellow, the first value `-` indicates that this is a file. It would be `d` for a folder, `l` for a link...`
 
 fichiers réguliers (normal)
 fichiers symboliques (liens)
 fichiers spéciaux (terminaux)
 
------------------
----- Environment variables
------------------
-
+> Environment variables
 echo -e "DISPLAY=:0.0\nexport DISPLAY" >> ~/.bashrc
 
------------------
----- Regex/Patterns
------------------
-
-ls *.{jpg,gif,png}
-ls *.{0..5}
-
------------------
----- System_call
------------------
-
+> System_call
 https://en.wikipedia.org/wiki/System_call
 file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/index.html#appels-systemes
 file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/exercices/sys.html
