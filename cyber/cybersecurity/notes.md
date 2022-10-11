@@ -32,10 +32,6 @@ Attack a vulnerable machine, scan the network to discover more vulnerable machin
 
 ## Linux
 
-* `&` bg
-* `$USER`, `export <varname>=<value>`
-* `cat -`
-* `/etc/shadow`
 * python3 -m  http.server: start web server, was used to open a "root" file without perms
 * `ps aux`: process not attached to a session / belonging to others
 *  `kill` SIGTERM (soft kill, allow cleanup), SIGSTOP (suspend), SIGKILL (kill)
@@ -53,23 +49,9 @@ Attack a vulnerable machine, scan the network to discover more vulnerable machin
     * apache
     * fail2ban
 * `nc address port`
-* `find` -size (c for bytes, k for kilobytes, M megabytes, G for gigabytes)
-  * `-user username`
-  * `-group gname`
-  * -newermt
-  * -newerat
-  * find a file with a modified date of 2016-09-12
-    * `find ~/workflows/ -newermt 2016-09-11 ! -newermt 2016-09-13`
 * `grep -iRl` find files by keyword, `grep -o "....{.*}"` (match only)
-* http://explainshell.com/
-* CTRL+L same as clear
-* `2>/dev/null`
-* search with `/`, then ENTER or n
-* `mv xxx -t dest`
 * any file starting with `-`: error. `cp -- -filename.txt`
 * `sudo snap install xxx`
-* `tac`
-* `unzip`
 
 ![img.png](_images/bits.png)
 

@@ -13,6 +13,8 @@ https://linuxhandbook.com/suid-sgid-sticky-bit/
 
 > Paths
 /etc/: all files related to the configuration of the OS.
+/dev/null
+/etc/shadow
 Windows et ses D:/, H:/, G:/...
 Linux et ses /dev/sda*, /mnt, /media ou /run/media...
 
