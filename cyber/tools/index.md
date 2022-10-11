@@ -287,3 +287,34 @@ $ vol -f memory_capture_file --profile=a_profile dlllist
 $ vol -f memory_capture_file --profile=a_profile --pid=some_pid dlldump -D dest
 ```
 </div></div>
+
+<hr class="sr">
+
+## Nessus vulnerability scanner
+
+![Usage: Penetration testing](https://img.shields.io/badge/usage-Penetration%20testing-ffd700)
+
+<div class="row row-cols-md-2"><div>
+
+**Nessus vulnerability scanner** is a tool to find, and report vulnerabilities.
+
+* [Download Nessus](https://www.tenable.com/downloads/nessus)
+
+```bash
+$ sudo dpkg -i  Nessus-10.3.0-ubuntu1404_amd64.deb
+$ sudo /bin/systemctl start nessusd.service
+```
+
+* Open `https://localhost:8834/`
+* [You will need an activation code](https://www.tenable.com/products/nessus/nessus-essentials)
+</div><div>
+
+Once you are logged on the website, you can create new scans.
+
+* **Host Discovery**: find alive hosts
+* **Basic network scan**: sort of nmap
+  * Set a target
+  * In Discovery, you can select a range of ports
+  * In Assessment, you can select the kind of scan
+  * In Advanced, you may go for a "low bandwidth scan"
+</div></div>

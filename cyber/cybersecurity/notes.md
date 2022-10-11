@@ -23,6 +23,9 @@ Detect, and stop attacks.
 * Attack a vulnerable machine, scan the network to discover more vulnerable machines.
 
 * find "password" in some conversations > try to get access to some stuff with it
+
+* Intrusion Detection System (IDS) is a system that detects unauthorised network and system intrusions. Examples include detecting unauthorised devices connected to the local network and unauthorised users accessing a system or modifying a file.
+
 <hr class="sep-both">
 
 ## Linux
@@ -30,7 +33,7 @@ Detect, and stop attacks.
 * python3 -m  http.server: start web server, was used to open a "root" file without perms
 * `ps aux`: process not attached to a session / belonging to others
 * `kill` SIGTERM (soft kill, allow cleanup), SIGSTOP (suspend), SIGKILL (kill)
-* `systemctl` allow to interact with the systemd process/daemon. `systemctl start apache2` (start, stop, enable, disable)
+* `systemctl /bin/systemctl`  allow to interact with the systemd process/daemon. `systemctl start apache2` (start, stop, enable, disable)
 * `cron` process to schedule tasks, with `crontabs` (file)
   * ...
   * https://crontab-generator.org/
@@ -43,43 +46,6 @@ Detect, and stop attacks.
     * fail2ban
 
 ![img.png](_images/bits.png)
-
-<hr class="sep-both">
-
-## Tools
-
-* **Nessus vulnerability scanner**
-  * find and report vulnerabilities
-  * https://www.tenable.com/downloads/nessus
-  * **Install**
-    * https://www.tenable.com/products/nessus/nessus-essentials
-    * sudo dpkg -i  Nessus-10.3.0-ubuntu1404_amd64.deb
-    * sudo /bin/systemctl start nessusd.service
-  * **Run**: 
-    * https://localhost:8834/
-    * close popup
-  * create new scan
-    * Host Discovery: find alive hosts
-    * Basic network scan:
-      * set target
-      * schedule
-      * Discovery > select ports (common, all...)
-      * Assessment > select kind of scan
-      * Advanced > low brandwidth scan
-      * arrow next to "save" > launch
-    * credentialed patch audit: find missing updates
-  * policies: create custom templates
-  * Plugin rules: change plugins properties
-* Inpect files - dump all processes, and ddl
-  * https://www.virustotal.com/gui/home/upload
-  * https://www.hybrid-analysis.com/
-* AlienVault Open Threat Exchange (OTX) - An open-source threat tracking system
-* SANS 408 - Windows Forensic Analysis
-* https://github.com/stuxnet999/MemLabs
-
-## Folk
-
-Intrusion Detection System (IDS) is a system that detects unauthorised network and system intrusions. Examples include detecting unauthorised devices connected to the local network and unauthorised users accessing a system or modifying a file.
 
 ## Networking
 
