@@ -1,16 +1,11 @@
-apropos
 alias
-gcc
 tee
 xrandr --output DP-2 --brightness 0.5
-sudo apt-get install build-essential gdb
 shopt (file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/files/bric/var.html)
 search in manual / less
 :
-ssh login@host -u port
 du
 tree
-htop
 
 .bashrc
 

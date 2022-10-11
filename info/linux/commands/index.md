@@ -82,7 +82,7 @@ sudo aptitude install nano
 
 <div class="row row-cols-md-2"><div>
 <details class="details-e">
-<summary><code>man</code>: manual for most commands</summary>
+<summary><code>man/apropos</code>: manual for most commands</summary>
 
 **Note**: man may have to be installed.
 
@@ -95,6 +95,16 @@ Entries in the manual are split into sections. To access a command in a specific
 ```bash
 $ man 1 man
 ```
+
+You can use `apropos` to search in which section a command is.
+
+```bash
+$ apropos fopen
+fopen (3)            - stream open functions
+fopencookie (3)      - opening a custom stream
+$ man 3 fopen
+```
+
 </details>
 </div><div>
 
@@ -1051,7 +1061,9 @@ $ bg
 
 <div class="row row-cols-md-2"><div>
 <details class="details-e">
-<summary><code>top</code>: list all running processes</summary>
+<summary><code>top/htop</code>: list all running processes</summary>
+
+You may check/install `htop` instead of `top`.
 
 ```bash
 $ top
