@@ -989,7 +989,7 @@ $ grep -E "opt?" *
 </div></div>
 </details>
 
-<details class="details-e" open>
+<details class="details-e">
 <summary><code>sed</code>: search, and replace, or "play" with a file</summary>
 <div class="row row-cols-md-2"><div>
 
@@ -1060,7 +1060,65 @@ Because we need to print a `#`, then the line, we need to store the line. We are
 </div></div>
 </details>
 
-<div class="row row-cols-md-3"><div>
+<div class="row row-cols-md-2"><div>
+<details class="details-e" open>
+<summary><code>awk</code>: extract columns (cut), rearrange columns...</summary>
+
+[The_AWK_Programming_Language](https://ia903404.us.archive.org/0/items/pdfy-MgN0H1joIoDVoIC7/The_AWK_Programming_Language.pdf) & [To awk or not](https://pmitev.github.io/to-awk-or-not/)
+
+`awk` is considering space (`-F` to change) as a separator for columns. The first column is `$1`, the nth column is `$n`. `$0` means every column.
+
+The syntax is `awk 'target {action}' file`.
+
+* `target`: is something to filter where the action is applied
+* `action`: print
+
+By default, `awk` prints every column.
+
+```bash
+$ awk '{print}' file
+$ awk -F' ' '{print $0}' file # same
+```
+
+Only print the first column of lines having AT LEAST 6 columns (`NF`)
+
+```bash
+$ awk 'NF > 6 {print $1}' file
+```
+
+Print the first, and the third column, if the file has at least 3 lines (`NR`)
+
+```bash
+$ awk 'NR > 3 {print $1 $3}' file
+```
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>tr</code>: replace a character with another/delete a character</summary>
+
+Replace "c" with "n"
+
+```bash
+$ cat file | tr 'c' 'n'
+```
+
+Can be used to insert new lines
+
+```bash
+$ cat file | tr 'c' '\n'
+$ stat file -c "Size: %s\nName: %n\nPerms: %a / %A\ntype: %F" | tr '\\n' '\n'
+```
+
+Delete a character
+
+```bash
+$ cat file | tr -d 'W'
+```
+
+</details>
+</div></div>
+
+<div class="row row-cols-md-2"><div>
 <details class="details-e">
 <summary><code>wc</code>: count words/lines/characters</summary>
 
@@ -1091,30 +1149,6 @@ Number all lines
 ```bash
 $ nl -ba file
 ```
-</details>
-</div><div>
-<details class="details-e">
-<summary><code>tr</code>: replace a character with another<br>delete a character</summary>
-
-Replace "c" with "n"
-
-```bash
-$ cat file | tr 'c' 'n'
-```
-
-Can be used to insert new lines
-
-```bash
-$ cat file | tr 'c' '\n'
-$ stat file -c "Size: %s\nName: %n\nPerms: %a / %A\ntype: %F" | tr '\\n' '\n'
-```
-
-Delete a character
-
-```bash
-$ cat file | tr -d 'W'
-```
-
 </details>
 </div></div>
 
