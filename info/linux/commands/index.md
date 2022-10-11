@@ -989,6 +989,41 @@ $ grep -E "opt?" *
 </div></div>
 </details>
 
+<details class="details-e" open>
+<summary><code>sed</code>: search, and replace, or "play" with a file</summary>
+<div class="row row-cols-md-2"><div>
+
+One of the use of "sed" is generating an output of a file after applying a modification. **sed do not change the content of the file**, use a redirection if that's what you want.
+
+The syntax is `sed '<number><letter><args>' <file>`.
+
+* `i`: add a line with "XXX" before (`i`) every line
+* `a`: add a line with "XXX" after (`a`) every line
+* `c`: replace every line with "XXX"
+* `e`: execute the command before every line <small>(you may add parenthesis to make things cleaner)</small>
+
+```bash
+$ sed 'iXXX' file
+$ sed 'cXXX' file
+$ sed 'aXXX' file
+$ sed 'e(echo hello)' file
+```
+
+Instead of applying a command to every line, you can pick some lines
+
+```bash
+$ sed '1iXXX' file # line 1
+$ sed '1,3iXXX' file # line 1 to 3
+$ sed '$iXXX' file # last line
+```
+</div><div>
+
+```bash
+$
+```
+</div></div>
+</details>
+
 <div class="row row-cols-md-3"><div>
 <details class="details-e">
 <summary><code>wc</code>: count words/lines/characters</summary>
