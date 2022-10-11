@@ -80,15 +80,16 @@ sudo aptitude install nano
 </div></div>
 </details>
 
-<div class="row row-cols-md-2"><div>
 <details class="details-e">
 <summary><code>man/apropos</code>: manual for most commands</summary>
+<div class="row row-cols-md-2"><div>
 
 **Note**: man may have to be installed.
 
 ```bash
 $ man man
 ```
+</div><div>
 
 Entries in the manual are split into sections. To access a command in a specific section, simply add the section number before the command.
 
@@ -104,10 +105,10 @@ fopen (3)            - stream open functions
 fopencookie (3)      - opening a custom stream
 $ man 3 fopen
 ```
-
+</div></div>
 </details>
-</div><div>
 
+<div class="row row-cols-md-3"><div>
 <details class="details-e">
 <summary><code>clear</code>: clear the terminal</summary>
 
@@ -117,6 +118,35 @@ $ clear
 
 You may use the shortcut <kbd>CTRL+L</kbd>.
 
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>alias</code>: create an alias for a command</summary>
+
+If you want `ls` to always use `-la`:
+```bash
+$ alias la='ls -la'
+$ la
+# same as ls -la
+```
+
+You can see every alias created using:
+
+```bash
+$ alias
+```
+
+**Note**: aliases aren't permanent. Add them in your `.bashrc`.
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>xrandr</code>: set the size, orientation, brightness of the screen</summary>
+
+Set the brightness to "0.5"
+
+```bash
+$ xrandr --output DP-2 --brightness 0.5
+```
 </details>
 </div></div>
 
