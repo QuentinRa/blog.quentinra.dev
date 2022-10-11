@@ -53,14 +53,6 @@ Detect, and stop attacks.
   * open, closed, or filtered (usually by a firewall)
   * -a: shorthand service detection, operating system detection, a traceroute and common script scanning
   * `--script=vuln` `--script vuln` activate all scripts in the vuln category
-  * TCP scan (request with SYN/ACK=ok RST=closed), but firewall
-  * SYN: when receving response that port open, then respond that yours is closed, slightly faster than TCP, need sudo
-    * default if sudo, TCP otherwise
-  * UDP is slower cause no ACK "open|filtered": no response, "ICMP" (protocol, ping): closed
-    * `-top-ports 20`
-  * -sN (NULL scans), -sF (FIN scans), -sX (Xmas scans): even stealthier than SYN,
-    but they may bypass firewall drop TCP packets SYN flag
-    Windows (and a lot of Cisco network devices) may respond "RST" to all 3 scans, as they are sending malformed packets
   * nmap -sn 192.168.0.1-254 / nmap -sn 192.168.0.0/24
   * Nmap Scripting Engine (NSE)
     * from scanning for vulnerabilities, to automating exploits for them
@@ -80,7 +72,6 @@ Detect, and stop attacks.
     * ls -l /usr/share/nmap/scripts/*smb* (ex: script smb server)
   * -Pn: do not ping, so don't check host is up, which is allowing us to scan host that block ICMP packets
   * SYN + -Pn results, no -Pn: no results
-  * https://nmap.org/book/
   * if you see "no-response", then it's closed
   * firewall evasion
     * -f fragment packet

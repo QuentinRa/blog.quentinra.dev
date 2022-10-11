@@ -271,18 +271,60 @@ Obsolete. See `ip r`.
 
 ## Nmap
 
-`nmap` is used to detect services used by a server, such as SSH, FTP, HTTP/HTTPS... Each service is associated with a port, such as `21` for FTP, but they may be changed. A port may be filtered, meaning that a firewall is preventing you to find if a port is open, or closed.
+**nmap** ([nmap book](https://nmap.org/book/)) is used to detect services used by a server, such as SSH, FTP, HTTP/HTTPS... Each service is associated with a port, such as `21` for FTP, but they may be changed. A port may be filtered, meaning that a firewall is preventing you to find if a port is open, or closed.
 
-<details class="details-e" open>
+<details class="details-e">
 <summary>There are 6 kind of scans, called switches <code>-s</code></summary>
 <div class="row row-cols-md-2"><div>
 
-* `-sS` (**Syn Scan**): "Half-open"/"Stealth" Scan
+* **TCP scan** (3-ways handshake)
+
+Default scan. Request a port with SYN. Receive RST if closed. Receive SYN/ACK if closed. Answer back ACK if open. Usually blocked by firewalls. 
 
 ```bash
+$ nmap localhost
+$ nmap localhost -sT
+```
+
+* **Syn Scan**: "Half-open"/"Stealth" Scan
+
+Default scan if root. Need sudo/root. Same as TCP, but don't answer back ACK, meaning that the server will believe that your port was closed. Slightly faster than TCP. 
+
+```bash
+$ sudo nmap localhost
 $ sudo nmap localhost -sS
 ```
+
+* **UDP Scan**
+
+Send a message asking if a port is open. If there is no response, then the port is assumed to be "open|filtered", otherwise, which is rare, we may receive an answer that the port is closed. Because there are multiple tries, it's quite slower than TCP.
+
+```bash
+$ sudo nmap localhost -sU
+# to avoid checking many ports
+$ sudo nmap localhost -sU -top-ports 20
+```
 </div><div>
+
+The 3 scans below are less used, so less likely to be detected, and blocked. They are even stealthier than SYN. The problem is that Windows, and other OS, are responding RST (closed) to such pings, because they are sending malformed packet.
+
+* **NULL scans**
+
+```bash
+$ sudo nmap localhost -sN
+```
+
+* **FIN scans**
+
+```bash
+$ sudo nmap localhost -sF
+```
+
+* **Xmas scans**
+
+```bash
+$ sudo nmap localhost -sX
+```
 </div></div>
 </details>
 
@@ -297,7 +339,11 @@ $ nmap localhost -vv
 Find...
 
 ```bash
-$ nmap localhost -sV # ... if a host is up
+$ nmap localhost -sL # hosts to scan
+$ nmap localhost -sn # if a host is up
+$ nmap localhost -sV # services, version
+$ nmap localhost -O # OS
+$ nmap localhost -A # -O, -sV, script scanning, and traceroute
 ```
 
 Select which ports to scan
@@ -309,6 +355,12 @@ $ nmap localhost -p 0-65535
 $ nmap localhost -p- # same :)
 ```
 </div><div>
+
+To reduce the risk of being detected, you can set some timing starting with 0=passive=slow, and up to 5=aggressive=fast.
+
+```bash
+$ nmap localhost -T0
+```
 
 Store results
 
