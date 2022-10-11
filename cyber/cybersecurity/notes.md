@@ -71,17 +71,6 @@ Detect, and stop attacks.
   * policies: create custom templates
   * Plugin rules: change plugins properties
 * **Volatility** (free memory forensics tool, incident response)
-  * install
-    * `git clone https://github.com/volatilityfoundation/volatility.git`
-    * <s>`sudo python setup.py install`</s>
-    * `curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py`
-    * `sudo python2 get-pip.py`
-    * `sudo apt-get install build-essential libssl-dev libffi-dev python2-dev`
-    * `pip2 install pycryptodome`
-    * https://alvinisonline.medium.com/volatility-importerror-no-module-named-crypto-hash-e515092fd8e3
-    * `pip2 install --upgrade setuptools`
-    * `pip2 install distorm3`
-    * `python2 vol.py -h`
   * memory capture - output .raw file
     * [FTK Imager](https://accessdata.com/product-download/ftk-imager-version-4-2-0)
     * [Redline](https://www.fireeye.com/services/freeware/redline.html) (Requires registration, nice GUI?)

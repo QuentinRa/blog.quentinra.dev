@@ -207,3 +207,36 @@ msf6 exploit('module_used') > run
 * `set use <module>`: use another module
 * `set PAYLOAD <value>`: use another module
 </details>
+
+<hr class="sl">
+
+## Volatility
+
+![Usage: Forensics tool](https://img.shields.io/badge/usage-Forensics%20tool-ffd700)
+
+<div class="row row-cols-md-2"><div>
+
+Volatility is a free memory forensics tool.
+
+<details class="details-e">
+<summary>Install</summary>
+
+I wouldn't work with `apt-get install volatility` on Kali-2022, so I had to do things manually, and it was tiring. I hope it works for you.
+
+* `git clone https://github.com/volatilityfoundation/volatility.git`
+* First patch ([source](https://alvinisonline.medium.com/volatility-importerror-no-module-named-crypto-hash-e515092fd8e3))
+  * `curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py`
+  * `sudo python2 get-pip.py`
+  * `sudo apt-get install build-essential libssl-dev libffi-dev python2-dev`
+* Second patch
+  * `pip2 install pycryptodome`
+  * `pip2 install --upgrade setuptools`
+  * `pip2 install distorm3`
+  * `python2 vol.py -h`
+* You should add an alias: `alias vol='python2 /path/to/vol.py'`
+* `vol -h`
+</details>
+</div><div>
+
+...
+</div></div>
