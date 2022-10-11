@@ -36,10 +36,9 @@ Attack a vulnerable machine, scan the network to discover more vulnerable machin
 * `$USER`, `export <varname>=<value>`
 * `cat -`
 * `/etc/shadow`
-* `Secure copy, or SCP` scp file_to_upload user@ip:path/to/upload scp user@ip:path/to/ddl dest
 * python3 -m  http.server: start web server, was used to open a "root" file without perms
 * `ps aux`: process not attached to a session / belonging to others
-* `top`, `kill` SIGTERM (soft kill, allow cleanup), SIGSTOP (suspend), SIGKILL (kill)
+*  `kill` SIGTERM (soft kill, allow cleanup), SIGSTOP (suspend), SIGKILL (kill)
 * `systemctl` allow to interact with the systemd process/daemon
   * `systemctl start apache2` (start, stop, enable, disable)
 * `cron` process to schedule tasks, with `crontabs` (file)
