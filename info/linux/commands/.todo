@@ -1,1 +1,4 @@
 https://linuxcommandlibrary.com/man/snap
+sudo snap install xxx
+
+dpkg / apt in /etc/apt/sources.list.d

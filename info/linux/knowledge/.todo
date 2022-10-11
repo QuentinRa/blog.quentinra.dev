@@ -18,6 +18,8 @@ https://linuxhandbook.com/suid-sgid-sticky-bit/
 Windows et ses D:/, H:/, G:/...
 Linux et ses /dev/sda*, /mnt, /media ou /run/media...
 
+any file starting with `-`: error. `cp -- -filename.txt`
+
 In the screen bellow, the first value `-` indicates that this is a file. It would be `d` for a folder, `l` for a link...`
 
 fichiers réguliers (normal)
