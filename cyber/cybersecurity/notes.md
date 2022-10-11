@@ -50,9 +50,6 @@ Detect, and stop attacks.
 
 * Putty
 * Nmap
-  * open, closed, or filtered (usually by a firewall)
-  * -a: shorthand service detection, operating system detection, a traceroute and common script scanning
-  * nmap -sn 192.168.0.1-254 / nmap -sn 192.168.0.0/24
   * -Pn: do not ping, so don't check host is up, which is allowing us to scan host that block ICMP packets
   * SYN + -Pn results, no -Pn: no results
   * if you see "no-response", then it's closed

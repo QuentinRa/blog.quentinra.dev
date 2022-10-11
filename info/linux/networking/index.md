@@ -306,7 +306,7 @@ $ sudo nmap localhost -sU -top-ports 20
 ```
 </div><div>
 
-The 3 scans below are less used, so less likely to be detected, and blocked. They are even stealthier than SYN. The problem is that Windows, and other OS, are responding RST (closed) to such pings, because they are sending malformed packet.
+The 3 scans below are less used, so less likely to be detected, and blocked. They are even stealthier than SYN. The problem is that Windows <small>(and some others)</small>, are responding RST (closed) to such switches, because they are sending malformed packet.
 
 * **NULL scans**
 
@@ -333,6 +333,15 @@ $ sudo nmap localhost -sX
 
 <div class="row row-cols-md-2"><div>
 
+You can give an IP, a name, and even a range of IPs to nmap.
+
+```bash
+$ nmap 127.0.0.1
+$ nmap 192.168.0.1-254 # from 1 to 254
+$ nmap 192.168.0.0/24 # same
+$ nmap google.fr
+```
+
 **TIP**: use at least `-vv` to add a level-2 verbosity.
 
 ```bash
@@ -348,6 +357,7 @@ $ nmap localhost -sV # services, version
 $ nmap localhost -O # OS
 $ nmap localhost -A # -O, -sV, script scanning, and traceroute
 ```
+</div><div>
 
 Select which ports to scan
 
@@ -357,7 +367,6 @@ $ nmap localhost -p 22,23
 $ nmap localhost -p 0-65535
 $ nmap localhost -p- # same :)
 ```
-</div><div>
 
 To reduce the risk of being detected, you can set some timing starting with 0=passive=slow, and up to 5=aggressive=fast.
 
@@ -390,14 +399,15 @@ $ nmap localhost -oA output_localhost
 * `brute`: attempt bruteforce
 * `discovery`: try to discover more about the network.
 
-You can use a whole category of scripts, or a path to a script, or the name of a script.
+You can use a whole category of scripts, or a path to a script, or the name of a script (see [nsedoc scripts](https://nmap.org/nsedoc/scripts/)).
 
 ```bash
 $ nmap localhost --script=vuln
+$ nmap localhost --script=lua_script
 $ nmap localhost --script vuln # same
 ```
 
-You may have to pass arguments to a script
+You may have to pass arguments to a script.
 
 ```bash
 $ nmap localhost --script=a,b --script-args a.key=value,...
@@ -417,7 +427,7 @@ $ nmap --script-updatedb
 
 To find a script
 
-* Use NSEDoc, for instance [SMB NSE scripts](https://nmap.org/search/?q=smb)
+* Use NSEDoc, for instance ["smb" NSE scripts](https://nmap.org/search/?q=smb)
 * Or, use commands, `ls -l /usr/share/nmap/scripts/*smb*`
 
 </div></div>
