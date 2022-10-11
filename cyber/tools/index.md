@@ -239,35 +239,35 @@ It wouldn't work with `apt-get install volatility` on Kali-2022, so I had to do 
 
 In order to use Volatility, you need a memory capture (usually, a .raw file). Try checking out [FTK Imager](https://accessdata.com/product-download/ftk-imager-version-4-2-0), [Redline](https://www.fireeye.com/services/freeware/redline.html), [DumpIt.exe](https://www.aldeid.com/wiki/Dumpit), [winDD](https://sourceforge.net/projects/windd/)...
 
-Find the profiles that you can use:
+Volatility need to know on which version of Windows it should base its analysis. It's called profiles, and you can run `imageinfo` to find which profiles you can use.
 
 ```bash
 $ vol -f memory_capture_file imageinfo
 # Suggested Profile(s): ...
 ```
 
-View active processes/connections
+If the following commands are working, then the profile you took is the right one. You can view active processes/connections
 
 ```bash
 # processes
 $ vol -f memory_capture_file --profile=a_profile pslist
-# hidden processes
-$ vol -f memory_capture_file --profile=a_profile psxview
 # connections
 $ vol -f memory_capture_file --profile=a_profile netscan
+# hidden processes
+$ vol -f memory_capture_file --profile=a_profile psxview
 # both actives, and actives+hidden
 vol -f memory_capture_file --profile=a_profile ldrmodules > output
 ```
 
 </div><div>
 
-Malicious processes will most likely try to hide themselves.
+Malicious processes will most likely try to hide themselves. If you process is neither InLoad, InInit, InMem, then it's suspicious. You can use grep on the output to check if there is a process like this.
 
 ```bash
 $ grep -o '^.*False.*False.*False.*' output
 ```
 
-Check unexpected patches in the standard system DLLs
+Processes aren't the only place to inspect. We can also check for unexpected patches in the standard system DLLs.
 
 ```bash
 $ vol -f memory_capture_file --profile=a_profile apihooks
@@ -284,7 +284,7 @@ View all the DLLs loaded into memory
 ```bash
 $ vol -f memory_capture_file --profile=a_profile dlllist
 # dump them
-$ vol -f memory_capture_file --profile=a_profile --pid=some_pid dlldump -D dest
+$ vol -f memory_capture_file --profile=a_profile --pid=infected_process_pid dlldump -D dest
 ```
 </div></div>
 
@@ -302,7 +302,7 @@ $ vol -f memory_capture_file --profile=a_profile --pid=some_pid dlldump -D dest
 
 ```bash
 $ sudo dpkg -i  Nessus-10.3.0-ubuntu1404_amd64.deb
-$ sudo /bin/systemctl start nessusd.service
+$ sudo systemctl start nessusd.service
 ```
 
 * Open `https://localhost:8834/`
@@ -317,4 +317,6 @@ Once you are logged on the website, you can create new scans.
   * In Discovery, you can select a range of ports
   * In Assessment, you can select the kind of scan
   * In Advanced, you may go for a "low bandwidth scan"
+  * **Launch**: explore vulnerabilities to see results
+* **Web application test**: see vulnerabilities in your web app
 </div></div>
