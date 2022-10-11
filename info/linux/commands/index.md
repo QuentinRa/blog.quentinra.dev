@@ -772,6 +772,25 @@ $ curl -I https://example.com
 </details>
 </div></div>
 
+<details class="details-e">
+<summary><code>tar</code>: compress files (tar.gz, gz, tgz...), and decompress them</summary>
+<div class="row row-cols-md-2"><div>
+
+Compress <small>(`c`=create, `v`=verbose, `z`=compress, `f`=archive name)</small>
+
+```bash
+$ tar -cvzf archive_name.tar.gz file0 file1 # ...
+```
+</div><div>
+
+Decompress <small>(`x`=decompress, `v`=verbose, `f`=archive name)</small>
+
+```bash
+$ tar -xvf archive_name.tar.gz
+```
+</div></div>
+</details>
+
 <div class="row row-cols-md-3"><div>
 <details class="details-e">
 <summary><code>unzip</code>: unzip a .zip</summary>

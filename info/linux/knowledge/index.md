@@ -206,7 +206,7 @@ You may have noticed a number next to every kind of permissions. This is because
 <details class="details-e">
 <summary>Root / Administrator</summary>
 
-There is a super-user, usually called root, that has absolute control over the machine. `root` can delegate this power to others by making them a part of the "sudoers" group. The command to do an action using elevated privileges is different according to the Linux distribution, but the command **sudo** is the most well-known one.
+There is a super-user, usually called root, that has absolute control over the machine. `root` can delegate this power to others by making them a part of the "sudoers" group. The command to do an action using elevated privileges is different according to the Linux distribution, but the command **sudo** is the most well-known one (check `man sudo_root`).
 
 ![super-user/sudo bash](_images/sudo.png)
 
@@ -248,7 +248,7 @@ There is a super-user, usually called root, that has absolute control over the m
 In both Linux, and Windows, there is a notion of **Path**. A path is made of one or more folders (`dossier/catalogue`), and may lead to a file (`fichier`).
 
 <details class="details-e">
-<summary>Notions: Path, Separator, root, home...</summary>
+<summary>Notions: Path, Separator, root, home...</summary><br>
 
 <table class="table table-bordered table-striped border-dark">
 <thead>
