@@ -947,7 +947,49 @@ $ tree .
 
 ## String utilities
 
-<div class="row row-cols-md-3 mt-4"><div>
+<details class="details-e mt-4">
+<summary><code>grep</code>: search file having a pattern in them</summary>
+<div class="row row-cols-md-2"><div>
+
+List files having 'toto' in them
+
+```bash
+$ grep "toto" *
+$ grep --color "toto" * # highlight match
+```
+
+Best options
+
+* `-r` recursive <small>(`-R` to follow links too)</small>
+* `-i` Ignore case
+* `-v` Inverse pattern
+* `-c`: number of match per file
+* `n`: add line number before each match
+* `-o` Show only the matched part
+* `-H` Show only the matched part
+* `-w` words-only <small>("XxtotoxX" won't match "toto")</small>
+</div><div>
+
+Less frequently used
+
+* `-L`: stop when match found, show files without matches
+* `-l`: stop when match found, show file with matches
+* `-q`: no output, use the exit code to indicate if a match was found (0), or not (1).
+
+By default, if you are using `?`, `(`, or any character that are only used in regex won't be interpreted (`?` won't be considered as "optional"). You have two choices, using `-E` (extended), or escaping them
+
+```bash
+$ grep "opt?" *
+# match "opt?"
+$ grep "opt\?" *
+# match "op" with "t" optional
+$ grep -E "opt?" *
+# match "op" with "t" optional
+```
+</div></div>
+</details>
+
+<div class="row row-cols-md-3"><div>
 <details class="details-e">
 <summary><code>wc</code>: count words/lines/characters</summary>
 

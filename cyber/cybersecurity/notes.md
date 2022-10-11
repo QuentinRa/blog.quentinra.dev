@@ -49,7 +49,6 @@ Attack a vulnerable machine, scan the network to discover more vulnerable machin
     * apache
     * fail2ban
 * `nc address port`
-* `grep -iRl` find files by keyword, `grep -o "....{.*}"` (match only)
 * any file starting with `-`: error. `cp -- -filename.txt`
 * `sudo snap install xxx`
 
