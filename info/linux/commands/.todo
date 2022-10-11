@@ -1,8 +1,11 @@
-shopt (file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/files/bric/var.html)
 search in manual / less
-:
 
 .bashrc
+source
+: / command
+https://programmerall.com/article/17441621896/
+https://linux.die.net/man/1/bash
+file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/files/bash/bashrc.html
 
 sudo update-alternatives --config php
 apt install zip unzip php7.1-zip php7.1-mbstring php7.1-curl php7.1-dom

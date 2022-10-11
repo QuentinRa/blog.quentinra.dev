@@ -138,6 +138,27 @@ $ alias
 
 **Note**: aliases aren't permanent. Add them in your `.bashrc`.
 </details>
+</div></div>
+
+<div class="row row-cols-md-2"><div>
+<details class="details-e">
+<summary><code>shopt</code>: change terminal behavior</summary>
+
+Enable an option (ex: nullglob)
+
+```bash
+$ shopt -ps nullglob
+```
+
+Disable an option (ex: nullglob)
+
+```bash
+$ shopt -pu nullglob
+```
+
+> By default, if a pattern returns nothing, some commands fails. This option will make any pattern without results return an empty "null" string.
+
+</details>
 </div><div>
 <details class="details-e">
 <summary><code>xrandr</code>: set the size, orientation, brightness of the screen</summary>
