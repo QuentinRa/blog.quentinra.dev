@@ -13,6 +13,7 @@ search in manual / less
 date
 time
 :
+ssh login@host -u port
 
 can use put, get, pwd... with FTP.
 # ls <folder>: list files of <folder>

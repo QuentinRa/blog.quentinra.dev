@@ -2,6 +2,7 @@ Commands
 - seq
 - exit
 - shift
+- sleep
 
 Control flow
 - case

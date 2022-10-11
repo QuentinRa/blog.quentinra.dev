@@ -772,6 +772,36 @@ $ curl -I https://example.com
 </details>
 </div></div>
 
+<div class="row row-cols-md-3"><div>
+<details class="details-e">
+<summary><code>unzip</code>: unzip a .zip</summary>
+
+```bash
+$ unzip toto.zip
+```
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>date</code>: show the data</summary>
+
+```bash
+$ date
+Mon 12 Oct 2020 08:32:11 PM EDT
+```
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>time</code>: track a command duration</summary>
+
+```bash
+$ time sleep 5
+real    0m5.002s
+user    0m0.001s
+sys     0m0.000s
+```
+</details>
+</div></div>
+
 <hr class="sr">
 
 ## Processes
