@@ -706,6 +706,37 @@ Size: 4096 -- Name: toto -- Perms: 755 / drwxr-xr-x -- type: directory
 </details>
 </div></div>
 
+<div class="row row-cols-md-2"><div>
+<details class="details-e">
+<summary><code>wget</code>: get a file/folder from a URL</summary>
+
+```bash
+$ wget https://path/to/file
+$ wget -d https://path/to/folder/
+```
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>curl</code>: can be used to make requests</summary>
+
+**Note**: you may have to install it.
+
+* GET
+
+```bash
+$ curl https://example.com
+$ curl --request GET https://example.com
+$ curl -X GET https://example.com
+```
+
+* Request headers
+
+```bash
+$ curl -I https://example.com
+```
+</details>
+</div></div>
+
 <hr class="sr">
 
 ## Processes
