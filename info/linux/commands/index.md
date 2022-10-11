@@ -706,6 +706,41 @@ Size: 4096 -- Name: toto -- Perms: 755 / drwxr-xr-x -- type: directory
 </details>
 </div></div>
 
+
+<div class="row row-cols-md-2"><div>
+<details class="details-e">
+<summary><code>diff</code>: show the differences between two files</summary>
+
+```bash
+$ diff f0 f1 -q
+Files f0 and f1 differ
+$ diff f0 f1
+# one-bellow-the-other diff
+$ diff f0 f1 -y
+# side-by-side diff
+```
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>patch</code>: apply a patch of the differences between two files</summary>
+
+Generate a patch
+
+```bash
+$ diff f0 f1 -u
+# ...
+$ diff f0 f1 -u > f0.patch 
+```
+
+Then, you can use `patch` to apply the differences with `f1` to `f0`.
+
+```bash
+$ patch < f0.patch
+```
+
+</details>
+</div></div>
+
 <div class="row row-cols-md-2"><div>
 <details class="details-e">
 <summary><code>wget</code>: get a file/folder from a URL</summary>
