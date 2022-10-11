@@ -861,6 +861,49 @@ sys     0m0.000s
 </details>
 </div></div>
 
+<div class="row row-cols-md-3"><div>
+<details class="details-e">
+<summary><code>tee</code>: read input, and output input</summary>
+
+It's most likely more proper to use this than `cat` to output the content of a file.
+
+```bash
+$ tee < file
+```
+
+But the useful usage of tee is taking one input, and sending the output to many destinations.
+
+```bash
+$ tee output1 output2 < file
+# also show content of file here
+$ tee output1 output2
+Hello # CTRL-D
+Hello
+```
+
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>du</code>: estimate file space usage</summary>
+
+* `s` is for summarize (one result per argument)
+* `h` is for human-readable (add units...)
+
+```bash
+$  du -sh folder
+8.0K folder
+```
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>tree</code>:  list files in a tree-like format</summary>
+
+```bash
+$ tree .
+```
+</details>
+</div></div>
+
 <hr class="sr">
 
 ## String utilities
