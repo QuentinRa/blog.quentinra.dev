@@ -12,9 +12,8 @@ declare -F
 List all targets to scan
 
 ```bash
-$ nmap 127.0.0.1 -sL
-$ nmap localhost -sL
-$ nmap google.fr -sL
+$ nmap 127.0.0.1
+$ nmap google.fr
 ```
 
 Start a ping-scan (do not scan ports)

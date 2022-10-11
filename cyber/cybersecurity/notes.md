@@ -52,32 +52,10 @@ Detect, and stop attacks.
 * Nmap
   * open, closed, or filtered (usually by a firewall)
   * -a: shorthand service detection, operating system detection, a traceroute and common script scanning
-  * `--script=vuln` `--script vuln` activate all scripts in the vuln category
   * nmap -sn 192.168.0.1-254 / nmap -sn 192.168.0.0/24
-  * Nmap Scripting Engine (NSE)
-    * from scanning for vulnerabilities, to automating exploits for them
-    * safe:- Won't affect the target
-    * intrusive:- Not safe: likely to affect the target
-    * vuln:- Scan for vulnerabilities
-    * exploit:- Attempt to exploit a vulnerability
-    * auth:- Attempt to bypass authentication for running services (e.g. Log into an FTP server anonymously)
-    * brute:- Attempt to bruteforce credentials for running services
-    * discovery:- Attempt to query running services for further information about the network (e.g. query an SNMP server).
-    * https://nmap.org/book/nse-usage.html
-    * --script=a,b --script-args a.key=value,...
-    * /usr/share/nmap/scripts
-    * To install manually a script
-      * sudo wget -O /usr/share/nmap/scripts/<script-name>.nse https://svn.nmap.org/nmap/scripts/<script-name>.nse
-      * nmap --script-updatedb
-    * ls -l /usr/share/nmap/scripts/*smb* (ex: script smb server)
   * -Pn: do not ping, so don't check host is up, which is allowing us to scan host that block ICMP packets
   * SYN + -Pn results, no -Pn: no results
   * if you see "no-response", then it's closed
-  * firewall evasion
-    * -f fragment packet
-    * --scan-delay xms
-    * --badsum: some firewall respond automatically without checking the checksum, so you can know if there is a firewall
-    * https://nmap.org/book/man-bypass-firewalls-ids.html
 * **Nessus vulnerability scanner**
   * find and report vulnerabilities
   * https://www.tenable.com/downloads/nessus

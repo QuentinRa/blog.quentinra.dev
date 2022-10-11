@@ -328,6 +328,9 @@ $ sudo nmap localhost -sX
 </div></div>
 </details>
 
+<details class="details-e">
+<summary>Other arguments</summary>
+
 <div class="row row-cols-md-2"><div>
 
 **TIP**: use at least `-vv` to add a level-2 verbosity.
@@ -370,3 +373,54 @@ $ nmap localhost > output_localhost
 $ nmap localhost -oA output_localhost
 ```
 </div></div>
+</details>
+
+<details class="details-e">
+<summary>Nmap Scripting Engine (NSE)</summary>
+
+<div class="row row-cols-md-2"><div>
+
+[NSE](https://nmap.org/book/nse-usage.html) is a library of scripts that can be used to scan vulnerabilities, and automatically exploit them. Scripts are stocked in categories
+
+* `safe`: won't harm the target
+* `intrusive`: will harm the target
+* `vuln`: scan for vulnerabilities
+* `exploit`: try to exploit a vulnerability
+* `auth`
+* `brute`: attempt bruteforce
+* `discovery`: try to discover more about the network.
+
+You can use a whole category of scripts, or a path to a script, or the name of a script.
+
+```bash
+$ nmap localhost --script=vuln
+$ nmap localhost --script vuln # same
+```
+
+You may have to pass arguments to a script
+
+```bash
+$ nmap localhost --script=a,b --script-args a.key=value,...
+```
+
+</div><div>
+
+Scripts are stored in `/usr/share/nmap/scripts`.
+
+To install manually a script
+
+```bash
+$ script_name=<script-name>
+$ sudo wget -O /usr/share/nmap/scripts/$script_name.nse https://svn.nmap.org/nmap/scripts/$script_name.nse
+$ nmap --script-updatedb
+```
+
+To find a script
+
+* Use NSEDoc, for instance [SMB NSE scripts](https://nmap.org/search/?q=smb)
+* Or, use commands, `ls -l /usr/share/nmap/scripts/*smb*`
+
+</div></div>
+</details>
+
+There are techniques to try to bypass firewalls (fragment packet, add delay, use a badsum...).
