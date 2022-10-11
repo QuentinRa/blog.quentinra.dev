@@ -5,7 +5,6 @@ alias
 gcc
 tee
 curl
-cd -
 xrandr --output DP-2 --brightness 0.5
 sudo apt-get install build-essential gdb
 cut
@@ -14,6 +13,7 @@ https://www.gnu.org/software/bash/manual/bash.html
 search in manual
 date
 time
+:
 
 can use put, get, pwd... with FTP.
 # ls <folder>: list files of <folder>

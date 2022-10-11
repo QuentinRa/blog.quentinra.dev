@@ -80,6 +80,7 @@ sudo aptitude install nano
 </div></div>
 </details>
 
+<div class="row row-cols-md-2"><div>
 <details class="details-e">
 <summary><code>man</code>: manual for most commands</summary>
 
@@ -94,8 +95,20 @@ Entries in the manual are split into sections. To access a command in a specific
 ```bash
 $ man 1 man
 ```
+</details>
+</div><div>
+
+<details class="details-e">
+<summary><code>clear</code>: clear the terminal</summary>
+
+```bash
+$ clear
+```
+
+You may use the shortcut <kbd>CTRL+L</kbd>.
 
 </details>
+</div></div>
 
 <hr class="sr">
 
@@ -146,6 +159,12 @@ $ ls -la folder # info + hidden
 $ cd folder
 $ cd ~
 $ cd # same as cd ~
+```
+
+You may go back to the previous folder because using `cd`
+
+```bash
+$ cd -
 ```
 </details>
 </div><div>
