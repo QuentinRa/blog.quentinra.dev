@@ -48,11 +48,6 @@ Detect, and stop attacks.
 
 ## Tools
 
-* Putty
-* Nmap
-  * -Pn: do not ping, so don't check host is up, which is allowing us to scan host that block ICMP packets
-  * SYN + -Pn results, no -Pn: no results
-  * if you see "no-response", then it's closed
 * **Nessus vulnerability scanner**
   * find and report vulnerabilities
   * https://www.tenable.com/downloads/nessus

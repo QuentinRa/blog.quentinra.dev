@@ -286,7 +286,7 @@ $ nmap localhost
 $ nmap localhost -sT
 ```
 
-* **Syn Scan**: "Half-open"/"Stealth" Scan
+* **Syn "Half-open"/"Stealth" Scan**
 
 Default scan if root. Need sudo/root. Same as TCP, but don't answer back ACK, meaning that the server will believe that your port was closed. Slightly faster than TCP. 
 
@@ -297,7 +297,7 @@ $ sudo nmap localhost -sS
 
 * **UDP Scan**
 
-Send a message asking if a port is open. If there is no response, then the port is assumed to be "open|filtered", otherwise, which is rare, we may receive an answer that the port is closed. Because there are multiple tries, it's quite slower than TCP.
+Send a message asking if a port is open. If there is no response, then the port is assumed to be "open|filtered", otherwise, the target may send a packet (ping/ICMP) with a message that the port is closed. Because there are multiple tries, it's quite slower than TCP.
 
 ```bash
 $ sudo nmap localhost -sU
@@ -308,19 +308,19 @@ $ sudo nmap localhost -sU -top-ports 20
 
 The 3 scans below are less used, so less likely to be detected, and blocked. They are even stealthier than SYN. The problem is that Windows <small>(and some others)</small>, are responding RST (closed) to such switches, because they are sending malformed packet.
 
-* **NULL scans**
+* **TCP NULL scans**
 
 ```bash
 $ sudo nmap localhost -sN
 ```
 
-* **FIN scans**
+* **TCP FIN scans**
 
 ```bash
 $ sudo nmap localhost -sF
 ```
 
-* **Xmas scans**
+* **TCP Xmas scans**
 
 ```bash
 $ sudo nmap localhost -sX
@@ -348,11 +348,16 @@ $ nmap google.fr
 $ nmap localhost -vv
 ```
 
+Check if a host is up. Note that **Windows with its default firewall is blocking every ICMP request**, so ping is useless. If you are against such a host, use `-Pn` in every request.
+
+```bash
+$ nmap localhost -sn
+```
+
 Find...
 
 ```bash
 $ nmap localhost -sL # hosts to scan
-$ nmap localhost -sn # if a host is up
 $ nmap localhost -sV # services, version
 $ nmap localhost -O # OS
 $ nmap localhost -A # -O, -sV, script scanning, and traceroute
