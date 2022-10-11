@@ -823,6 +823,68 @@ sys     0m0.000s
 
 <hr class="sr">
 
+## String utilities
+
+<div class="row row-cols-md-3"><div>
+<details class="details-e">
+<summary><code>wc</code>: count words/lines/characters</summary>
+
+Use `-l` for lines, `-w` for words, and `-c` for characters.
+
+```bash
+$ cat file.txt | wc -l
+7560 # lines
+$ wc -w
+Hello
+World # <CTRL-D>
+2
+```
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>nl</code>: number lines of files</summary>
+
+Number non-empty lines
+
+```bash
+$ nl file
+$ nl -bt file
+```
+
+Number all lines
+
+```bash
+$ nl -ba file
+```
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>tr</code>: replace a character with another<br>delete a character</summary>
+
+Replace "c" with "n"
+
+```bash
+$ cat file | tr 'c' 'n'
+```
+
+Can be used to insert new lines
+
+```bash
+$ cat file | tr 'c' '\n'
+$ stat file -c "Size: %s\nName: %n\nPerms: %a / %A\ntype: %F" | tr '\\n' '\n'
+```
+
+Delete a character
+
+```bash
+$ cat file | tr -d 'W'
+```
+
+</details>
+</div></div>
+
+<hr class="sl">
+
 ## Processes
 
 <details class="details-e mt-4">
