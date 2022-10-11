@@ -12,6 +12,9 @@ https://www.gnu.org/software/bash/manual/bash.html
 search in manual / less
 :
 ssh login@host -u port
+du
+tree
+htop
 
 can use put, get, pwd... with FTP.
 # ls <folder>: list files of <folder>
