@@ -1024,9 +1024,39 @@ $ sed '1d' file # delete first
 ```
 </div><div>
 
+The most well-known use case of `sed` is to replace something with something else.
+
+The syntax is `sed 's/pattern/replaced_with/option`.
+
+* `pattern`: refer to regex for write a pattern
+* `option`:
+  * `none`: first match of each line
+  * `g`: every match is replaced
+  * `n`: replace the nth match of each line
+* `replaced_with`: it's usually some text
+
+Replace every "e" with "E"
+
 ```bash
-$
+$ sed "s/e/E/g" file
 ```
+
+Replace the first "e" of each file with "&lt;First E&gt;"
+
+```bash
+$ sed "s/e/E/" file
+$ sed "s/e/E/1" file
+```
+
+Comment every line starting with "S".
+
+```bash
+$ sed "s/^\(S.*\)/# \1./" file
+```
+
+To break down this sed, we are matching a line starting (`^`), followed by a 'S', and by 0, or more (`*`) characters (`.`). 
+
+Because we need to print a `#`, then the line, we need to store the line. We are doing that using `\(\)` around the part we want to capture, and in the replacement text, we are using `\1` to reference the first capture group `\(\)`, as you may have multiple of them.
 </div></div>
 </details>
 
