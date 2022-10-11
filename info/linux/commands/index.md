@@ -999,6 +999,8 @@ The syntax is `sed '<number><letter><args>' <file>`.
 
 * `i`: add a line with "XXX" before (`i`) every line
 * `a`: add a line with "XXX" after (`a`) every line
+* `p`: duplicate every line
+* `d`: delete every line
 * `c`: replace every line with "XXX"
 * `e`: execute the command before every line <small>(you may add parenthesis to make things cleaner)</small>
 
@@ -1006,6 +1008,7 @@ The syntax is `sed '<number><letter><args>' <file>`.
 $ sed 'iXXX' file
 $ sed 'cXXX' file
 $ sed 'aXXX' file
+$ sed 'p' file
 $ sed 'e(echo hello)' file
 ```
 
@@ -1015,6 +1018,9 @@ Instead of applying a command to every line, you can pick some lines
 $ sed '1iXXX' file # line 1
 $ sed '1,3iXXX' file # line 1 to 3
 $ sed '$iXXX' file # last line
+$ sed '1p' file # duplicate first
+$ sed '1d' file # delete first
+# ...
 ```
 </div><div>
 
