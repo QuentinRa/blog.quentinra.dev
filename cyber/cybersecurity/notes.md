@@ -29,11 +29,17 @@ Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try 
 
 * Intrusion Detection System (IDS) is a system that detects unauthorised network and system intrusions. Examples include detecting unauthorised devices connected to the local network and unauthorised users accessing a system or modifying a file.
 
+* "bug bounty programs"
+
 <hr class="sep-both">
 
 ## Tools
 
 * https://osintframework.com/
+
+Not-related to cyber
+
+* https://www.zoho.com/office/
 
 <hr class="sep-both">
 
@@ -197,3 +203,25 @@ A recursive server is provided by your ISP, you can pick your own. This server h
 The authoritative server is often also known as the nameserver for the domain.
 
 TTL is in seconds.
+
+<hr class="sep-both">
+
+### Websites
+
+* Identification and Authentication Failure
+  * Do not prevent bruteforce
+  * Allow users to use weak passwords
+  * Not encrypting passwords
+* Broken Access Control (can access files/URLs we shouldn't)
+  * principle of the least privilege not applied correctly
+  * use someone token/id to view/edit/...
+  * Access "authenticated-only" page without logging in
+* Injection
+  * validation
+  * sanitization
+* Cryptographic Failures
+  * using clear text
+  * HTTP instead of HTTPS
+  * weak algorithm
+
+BAC : Insecure Direct Object References (IDOR). Example is a server service resources, with a URL in which we can guess other files names.
