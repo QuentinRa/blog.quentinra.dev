@@ -1,17 +1,12 @@
 # Networking
 
-A network is a net of things connected to each other. What we refer to "The Internet" are many small networks all joined together.
+...
 
 <hr class="sl">
 
-## Communication
+## ...
 
-A communication between two machines implies
-
-* an IP address to identify the network, and the machine outside the network (logical identifier)
-* a MAC address, to identify the current owner of an IP address (physical identifier)
-* a port, that is "where" the communication will pass by on a machine
-* a protocol, which is "how" the communication will be handled
+...
 
 <hr class="sr">
 
