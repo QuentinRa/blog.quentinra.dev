@@ -169,3 +169,31 @@ Robots.txt can be used to disallow robots from indexing pages. Maybe they add so
 * `filetype:pdf`
 * `cache:domain`: cached version of URL
 * `intitle:...`: must be in the title
+
+<hr class="sep-both">
+
+### DNS
+
+TLD
+
+* gTLD (Generic Top Level)
+* ccTLD (Country Code Top Level Domain)
+
+Historically, gTLD were used to tell the purpose (.com=commercial), and ccTLD were used for geographical purposes.
+
+Second-Level Domain: xxx.com, xxx is a SLD.
+Subdomain: www
+
+DNS records
+
+* A = IPV4
+* AAAA = IPV6
+* CNAME Record: sort of "A" pointing to "B", so go ask the IP of "B"?
+* MX Record = Mail server
+* TXT Record = a lot of uses, such as to verify ownership of the domain name when signing up for third party services
+
+A recursive server is provided by your ISP, you can pick your own. This server has a cache.
+
+The authoritative server is often also known as the nameserver for the domain.
+
+TTL is in seconds.
