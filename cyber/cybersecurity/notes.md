@@ -1,16 +1,19 @@
 # Notes
 
-* **offensive**
+**offensive security**
 
-Look for vulnerabilities. **penetration tester** (web security, 
-network security knowledge, use various programming languages, cloud security)
+Look for vulnerabilities, recommend patches. Exploiting bugs. Finding loopholes. Gain unauthorized access.
 
-* **defensive Security**. 
+* **penetration tester**: "Responsible for testing technology products for finding exploitable security vulnerabilities." (web security, network security knowledge, use various programming languages, cloud security)
+* **Red Teamer**: "Plays the role of an adversary, attacking an organization and providing feedback from an enemy's perspective."
+* **Security Engineer**: "design, monitor, and maintain security controls, networks, and systems to help prevent cyberattacks".
+
+**defensive Security**. 
   * **Security Analyst** (monitor - splunk?)
   * **Incident Responder** (impact? goal? what can they do? - Volatility?)
   * **malware analysis**
 
-Detect, and stop attacks.
+Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try to find how they were hacked, track down cybercriminals.
 
 * Linux security researcher > Hashing
 
