@@ -56,17 +56,6 @@ Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try 
 * `traceroute host`, -I interface, -t USE TCP SYN
   * Layer Internet
 
-protocol called DNS (Domain Name System): domain to IP
-- check local cache
-- ask recursive DNS server
-  - Many Internet Service Providers (ISPs) maintain their own recursive servers,
-  - Top-Level Domain servers: records for specific extensions
-- TLD servers keep track of the next level down: Authoritative name servers
-- Authoritative name servers: store DNS records
-- **ANSWER**
-  - domain ttl IN type IP
-  - ttl, time to live (in seconds), how much time this result is valid
-
 * whois: https://www.whois.com/whois/
 * https://osintframework.com/
 
