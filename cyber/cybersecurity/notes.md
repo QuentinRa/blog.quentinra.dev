@@ -39,6 +39,10 @@ Not-related to cyber
 
 * https://www.zoho.com/office/
 
+Moar
+
+* https://dhilipsanjay.gitbook.io/ctfs/
+
 <hr class="sep-both">
 
 ## Linux
@@ -281,3 +285,10 @@ $ python pret.py file.lan ps # test language postscript
 $ python pret.py <ip> pjl # Printer Job Language
 $ python pret.py /dev/usb/lp0 pcl # Printer Command Language
 ```
+
+http://hacking-printers.net/wiki/index.php/Printer_Security_Testing_Cheat_Sheet
+
+PRET isn't going to work here as it is using port 9000 by default
+
+* Brute force ssh password `nmap <MACHINE_IP> -p 22 --script ssh-brute --script-arg userdb=user.txt`
+* `http://ip:631/printers/`
