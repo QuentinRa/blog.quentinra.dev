@@ -351,28 +351,36 @@ Remembering IP addresses can be a trough process. Because of that, **Fully Quali
 
 For instance, the domain name `example.com` is pointing to `93.184.216.34`.
 
-> Note: `example.com`, is actually `example.com.`, with a "`.`" at the end. That's why "`.`" is called the root, as every domain is "starting" with "`.`".
-
-The iterative approach mandated by the RFC 1034 is
-
-* A client is asking the IP of `www.example.com` to the root server `.`
-* The root server tell him to ask `.com`, and give the IP of .com
-* The client asks `.com`, which answers with the IP of `example.com`
-* The client asks `example.com`, which answers with the IP we were looking for
-
-But, in practice, to reduce traffic, and not put a heavy pressure on the root servers, practices such as caching are used.
+> Note: `example.com` is actually `example.com.`, with a "`.`" at the end. That's why "`.`" is called the root, as every domain is "starting" with "`.`".
 
 </div><div>
 
 When a computer requests the IP associated with a domain name
 
-* First, it will check if there is the answer in the cache
+<details class="details-n">
+<summary>1. It will check if there is the answer in the cache</summary>
 
 DNS records are stored in the cache for a duration determined by their **Time-to-live (TTL)** which is sent along the IP when requesting a DNS record.
+</details>
 
-* If not, it will ask a **recursive DNS server**
+<details class="details-n">
+<summary>2. If not cached, it will ask a <b>recursive DNS server</b></summary>
 
 Your internet provider (ISP) maintain its own recursive servers.
 
 The **root domain** is "`.`", and its servers are keeping track of the IP addresses of the **Top level domain (TLD)** servers: `.com`, `.net`, `.fr`... TLD are keeping track of servers one-level down: **Authoritative name servers**, in which DNS records are stored.
+</details>
+
+<details class="details-n">
+<summary>RFC 1034 approach</summary>
+
+The iterative approach mandated by the RFC 1034 is
+
+* A client is asking the IP of `www.example.com` to the root server `.`
+* The root server tell him to ask `.com`, and give the IP of `.com`
+* The client asks `.com`, which responds with the IP of `example.com`
+* The client asks `example.com`, which responds with the IP we were looking for
+
+But, in practice, to reduce traffic, and not put a heavy pressure on the root servers, practices such as caching are used.
+</details>
 </div></div>
