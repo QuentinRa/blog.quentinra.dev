@@ -51,12 +51,6 @@ Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try 
 
 ## Networking
 
-* `ping -i`: interval, -4 ipv4, -v verbose, -I interface
-* `traceroute`: Traceroute can be used to map the path your request takes as it heads to the target machine.
-* `traceroute host`, -I interface, -t USE TCP SYN
-  * Layer Internet
-
-* whois: https://www.whois.com/whois/
 * https://osintframework.com/
 
 Networks: things connected.

@@ -362,5 +362,4 @@ DNS records are stored in the cache for a duration determined by their **Time-to
 Your internet provider (ISP) maintain its own recursive servers.
 
 The **root domain** is "`.`", and its servers are keeping track of the IP addresses of the **Top level domain (TLD)** servers: `.com`, `.net`, `.fr`... TLD are keeping track of servers one-level down: **Authoritative name servers**, in which DNS records are stored.
-
 </div></div>

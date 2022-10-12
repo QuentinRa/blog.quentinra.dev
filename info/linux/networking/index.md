@@ -119,6 +119,9 @@ Other options
 * `-b ip`: ping all addresses in the IP range
 * `-t ttl`: set the time to live of the ping
 * `-s size`: the size of the "ping"
+* `-i interval`: the interval between pings
+* `-v`: verbose
+* `-i interface`: pass via interface
 </details>
 </div><div>
 <details class="details-e">
@@ -161,6 +164,8 @@ google.fr.              300     IN      AAAA 2607:f8b0:4020:805::2003
 <details class="details-e">
 <summary><code>whois</code>: show data about IP</summary>
 
+You can also use [whois via their website](https://www.whois.com/whois/).
+
 ```bash
 $ whois google.fr
 $ whois 8.8.8.8
@@ -180,6 +185,33 @@ If you are a client, you can connect to a server, and send messages. The server 
 
 ```bash
 $ netcat localhost 33666
+```
+</details>
+</div></div>
+
+<div class="row row-cols-md-2"><div>
+<details class="details-e" open>
+<summary><code>traceroute</code>: trace the path that a request is taking</summary>
+
+```bash
+$ traceroute localhost
+# pass via eth0
+$ traceroute localhost -i eth0
+```
+
+Use TCP/SYN
+
+```bash
+$ sudo traceroute localhost -T
+```
+
+</details>
+</div><div>
+<details class="details-e" open>
+<summary><code>tracepath</code>: a similar/simplified traceroute</summary>
+
+```bash
+$ tracepath localhost
 ```
 </details>
 </div></div>
