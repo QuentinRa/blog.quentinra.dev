@@ -68,17 +68,6 @@ Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try 
   * **Switch**: aggregate multiples devices (4-64 ports), send packet to target because they know which target is on which of its ports
   * **Router**: connect networks, do "routing" (decide which route packets take)
 
-* Address Resolution Protocol (ARP)
-  * Protocol, allow a device to associate its MAC address with an IP
-  * broadcast using ARP protocol to find MAC
-    * ARP Request broadcasted, is it you having this MAC for this IP?
-      * src mac
-      * dest mac: FF:FF:FF:FF:FF:FF
-    * ARP Reply: yes
-      * src mac
-      * dest mac
-    * cache result
-
 * **DHCP**
   * IP adresses can be assigned manually
   * or most commonly by using a DHCP (Dynamic Host Configuration Protocol) server

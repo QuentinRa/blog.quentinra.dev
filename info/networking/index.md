@@ -343,6 +343,39 @@ Each code is associated with a type. Here some of them (code: type). See [Contro
 
 <hr class="sr">
 
+## Address Resolution Protocol (ARP)
+
+<div class="row row-cols-md-2"><div>
+
+The Address Resolution Protocol (ARP) is used **to find a MAC given an IP address**. Once found, the MAC is stored in the ARP cache.
+
+You can observe an ARP request by using `tcpdump`, and a `ping` on an uncached target
+
+```none
+... request who-has <target_IP> tell <sender_IP> ...
+```
+
+```none
+... reply <target_IP> is-at <MAC_address> ...
+```
+</div><div>
+
+**Protocol**
+
+**ARP Request broadcast**: A machine is asking every machine of a network is a MAC is theirs using the broadcast address.
+
+* Mac source (requester MAC address)
+* Mac destination (`ff:ff:ff:ff:ff:ff`)
+* IP source (requested IP)
+* IP destination (target IP)
+
+**ARP Reply**: if a machine found its IP in the Request, they are replying to the sender with their MAC.
+* Mac source (its MAC address)
+* ...
+</div></div>
+
+<hr class="sl">
+
 ## Domain Name System (DNS) protocol
 
 <div class="row row-cols-md-2"><div>
