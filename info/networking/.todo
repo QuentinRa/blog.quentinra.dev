@@ -11,3 +11,14 @@ https://en.wikipedia.org/wiki/Subnetwork
 25 SMTP
 22 SSH/SFTP
 21 FTP
+
+> Protocols
+Headers: verify integrity, store src, dest...
+https://en.wikipedia.org/wiki/List_of_IP_protocol_numbers
+
+>> TCP
+"three-way handshake": SYN (synchronise) SYN/ACK ACK (Acknowledgement)
+This protocol is used when we want liability (`fiabilité`).
+
+>> ICMP
+ICMP protocol, one of the TCP/IP protocols / Network Level

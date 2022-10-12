@@ -47,13 +47,9 @@ Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try 
 
 ![img.png](_images/bits.png)
 
+<hr class="sep-both">
+
 ## Networking
-
-Headers: verify integrity, store src, dest...
-
-TCP (connection-based protocol) "three-way handshake": SYN (synchronise) SYN/ACK ACK (Acknowledgement)
-UDP (connectionless)
-ICMP protocol, one of the TCP/IP protocols / Network Level
 
 * `ping -i`: interval, -4 ipv4, -v verbose, -I interface
 * `traceroute`: Traceroute can be used to map the path your request takes as it heads to the target machine.
@@ -134,6 +130,8 @@ Samba is based on the common client/server protocol of Server Message Block (SMB
 * `smbclient //<ip>/anonymous` login without password
 * You may find useful information
 
+<hr class="sep-both">
+
 ### Hashing
 
 * Take input, and generate a hash. It's a one-way function.
@@ -168,6 +166,8 @@ gpg
 * `gpg encrypted_file`
 * crack
 * `sudo gpg2john file`: convert gpg to hash
+
+<hr class="sep-both">
 
 ## SQL
 

@@ -211,3 +211,51 @@ The TCP/IP model was introduced way before the OSI model, and remain the most us
 * **Layer 1 - Physical**: Layers 1, and 2 of OSI <small>(WIFI, ADSL, ETH...)</small>
 
 Some are splitting the "Layer 1" back in two layers, but it's not in the RFC1122 standard.
+
+<hr class="sl">
+
+## Protocols
+
+<details class="details-e mt-4">
+<summary>TCP (6): transmission control protocol</summary>
+<div class="row row-cols-md-2"><div>
+
+It's a **connection-based protocol**.
+</div><div>
+
+...
+</div></div>
+</details>
+
+<details class="details-e mt-4">
+<summary>UDP (17): user datagram protocol</summary>
+<div class="row row-cols-md-2"><div>
+
+It's a **connection-less protocol**.
+</div><div>
+
+...
+</div></div>
+</details>
+
+<details class="details-e mt-4">
+<summary>ICMP (1): internet control message protocol</summary>
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+</details>
+
+<details class="details-e mt-4">
+<summary>IP (?): internet protocol</summary>
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+</details>
