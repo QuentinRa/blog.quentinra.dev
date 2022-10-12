@@ -133,5 +133,35 @@ Add a server
     * Port is usually 22, you can leave it empty
     * Enter your username
     * Connect
-    * 
+
+</div></div>
+
+<hr class="sr">
+
+## SSH (Secure Shell)
+
+You can use any powershell to open a remote shell, but there a a few solutions that Windows users usually use
+
+* [Putty](https://putty.org/)
+* [mobaxterm](https://mobaxterm.mobatek.net/)
+
+<hr class="sl">
+
+## Environment variables
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+The shortest way to find the menu we are looking for is by writing PATH in the search bar.
+
+![Write PATH in the search bar](_images/env/var1.png)
+
+</div><div class="align-self-center">
+
+![Click on environment variables](_images/env/var2.png)
+
+![Select a variable](_images/env/var3.png)
+
+<br>
+
+Click on a line, such as `Path`, then Edit. You can add entries to the Path!
 </div></div>
