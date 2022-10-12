@@ -57,9 +57,7 @@ Networks: things connected.
   * (The) Internet: many small networks all joined together
   * public/private networks
   * To identify a device: MAC+IP
-    * IP **logical identifier**: 4 octets=32 bits, 0-255, private/public ips, given by Internet Service Provider (or ISP)
-      * Network Address
-      * Host Address
+    * IP **logical identifier**: private/public ips, given by Internet Service Provider (or ISP)
       * Default Gateway: special address that is capable of sending information to another network (.1 or .254)
         Any data that need to go to a device that isn't on the same network will be sent here.
       * subnetting: use Network Adress to split the network

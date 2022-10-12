@@ -65,7 +65,7 @@ $ hostname -d
 </details>
 </div><div>
 <details class="details-e">
-<summary><code>ifconfig</code>: DEPRECATED version of <code>ip a</code></summary>
+<summary><code>ifconfig</code>: Obsolete version of <code>ip a</code></summary>
 
 Show information about the network. Note that RT = received, TX = emitted. Print info about all interfaces:
 
@@ -190,7 +190,7 @@ $ netcat localhost 33666
 </div></div>
 
 <div class="row row-cols-md-2"><div>
-<details class="details-e" open>
+<details class="details-e">
 <summary><code>traceroute</code>: trace the path that a request is taking</summary>
 
 ```bash
@@ -207,7 +207,7 @@ $ sudo traceroute localhost -T
 
 </details>
 </div><div>
-<details class="details-e" open>
+<details class="details-e">
 <summary><code>tracepath</code>: a similar/simplified traceroute</summary>
 
 ```bash
@@ -306,15 +306,15 @@ No examples yet.
 
 <div class="row row-cols-md-2"><div>
 <details class="details-e">
-<summary><code>arp</code>: show ARP cache</summary>
+<summary><code>arp</code>: Obsolete version of ip n</summary>
 
-Obsolete. See `ip n`.
+Show ARP cache. Obsolete. See `ip n`.
 </details>
 </div><div>
 <details class="details-e">
-<summary><code>route</code>: show routing table</summary>
+<summary><code>route</code>: Obsolete version of ip r</summary>
 
-Obsolete. See `ip r`.
+Show routing table. See `ip r`.
 </details>
 </div></div>
 

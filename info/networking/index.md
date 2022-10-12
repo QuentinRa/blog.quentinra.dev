@@ -139,13 +139,23 @@ Giving us `01001101001000011110000111111111` which is `77.33.225.255`.
 </div></div>
 </details>
 
+<details class="details-e">
+<summary>Reserved/Private IP addresses</summary>
+
+There are 3 ranges of IPV4 addresses that are said private/reserved for internal use
+
+* `10.0.0.0/8`
+* `172.16.0.0/12`
+* `192.168.0.0/16`
+</details>
+
 <hr class="sr">
 
 ## IPV6 addresses
 
 <div class="row row-cols-md-2"><div>
 
-A Internet Protocol version 6 (**IPV6**) address is a **128-bits long address**. It was introduced because of the shortage of IPV4.
+The Internet Protocol version 6 (**IPV6**) address is a **128-bits long address**. It was introduced because of the shortage of IPV4.
 
 It looks like this: `2002:6963:6961:2046:616c:636f:6e20:3c33`, which is 8 blocs of 16 bits, separated with `:`. Because it's somewhat long, there are a few rules to shorten it
 
