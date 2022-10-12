@@ -475,7 +475,7 @@ $ rm -i file # ask
 To delete a folder <small>(there is also `rmdir`, but it's garbage 😒)</small>
 
 ```bash
-$ rm -r folder
+$ rm -r folder # -R is doing the same
 $ rm -rf folder # usual f + r
 ```
 </details>
@@ -734,6 +734,13 @@ $ delgroup group_name
 
 ```bash
 $ su root
+$ su -l root # perform a login, move to root's home...
+```
+
+If you want to login as some other user, meaning moving to their home... Then use
+
+```bash
+$ su -l root
 ```
 </details>
 </div></div>
