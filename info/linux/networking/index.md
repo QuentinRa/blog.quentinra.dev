@@ -124,9 +124,19 @@ Other options
 <details class="details-e">
 <summary><code>dig</code>: IP to name, name to IP</summary>
 
+You can give a domain name, or an IP (`-x`).
+
 ```bash
+# Name
 $ dig google.fr
+# IP
 $ dig -x 8.8.8.8
+```
+
+Domain name resolution is done by asking a **DNS server**. You can pick which DNS server should be used with `@` (1.1.1.1, 8.8.8.8/8.8.4.4=google...).
+
+```bash
+$ dig google.fr @8.8.8.8
 ```
 
 We can explicitly ask for some data by using the option `-t` with one of the following
@@ -135,6 +145,15 @@ We can explicitly ask for some data by using the option `-t` with one of the fol
 * `A`: IPV4
 * `AAAA`: IPV6
 * `MS`: mail server
+
+```bash
+$ dig google.fr -t A
+;; ANSWER SECTION:
+google.fr.              300     IN      A  172.217.13.131
+$ dig google.fr -t AAAA
+;; ANSWER SECTION:
+google.fr.              300     IN      AAAA 2607:f8b0:4020:805::2003
+```
 </details>
 </div></div>
 
@@ -272,6 +291,8 @@ Obsolete. See `ip r`.
 ## Nmap
 
 **nmap** ([nmap book](https://nmap.org/book/)) is used to detect services used by a server, such as SSH, FTP, HTTP/HTTPS... Each service is associated with a port, such as `21` for FTP, but they may be changed. A port may be filtered, meaning that a firewall is preventing you to find if a port is open, or closed.
+
+> There is an interface to `nmap` called [ZenMap](https://nmap.org/zenmap/).
 
 <details class="details-e">
 <summary>There are 6 kind of scans, called switches <code>-s</code></summary>
