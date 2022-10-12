@@ -108,3 +108,30 @@ $ make -v
 </details>
 
 </div></div>
+
+<hr class="sl">
+
+## FTP (file transfer protocol)
+
+<div class="row row-cols-md-2"><div>
+
+You will most likely have to transfer files to a server. You can use `scp`, as if you were on Linux. If you don't like having to use a command, I recommend you to install [FileZilla](https://filezilla-project.org/).
+
+Once connected to "a site",
+
+* To upload a file, simply drag and drop a file in a folder on your server.
+
+* To download a file, simply drag and drop a file in a folder on your computer.
+</div><div>
+
+Add a server
+
+* File > Site Manager...
+* New
+* You will most likely use SFTP
+    * Host is the IP of your server
+    * Port is usually 22, you can leave it empty
+    * Enter your username
+    * Connect
+    * 
+</div></div>
