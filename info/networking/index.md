@@ -231,10 +231,24 @@ It's a **connection-based protocol**.
 <summary>UDP (17): user datagram protocol</summary>
 <div class="row row-cols-md-2"><div>
 
-It's a **connection-less protocol**.
+It's a **connection-less protocol**. It's used for fast messaging, by applications that don't mind if a packet is loss/incorrect. It's **not trustworthy** (`fiable`)
+
+* No warranty that the message will be received
+* No warranty that the message received is correct
+
+> **UPD** messages are called datagrams.
 </div><div>
 
-...
+**Example**
+
+* `dig`
+
+**Header**
+
+* 2 bytes for "source port"
+* 2 bytes for "destination port"
+* 2 bytes for "size of the message"
+* 2 bytes for "checksum of the message"
 </div></div>
 </details>
 
