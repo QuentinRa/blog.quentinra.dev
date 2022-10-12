@@ -5,3 +5,9 @@ dpkg / apt in /etc/apt/sources.list.d
 sudo dpkg -i xxx.deb
 
 declare -F
+
+`systemctl /bin/systemctl`  allow to interact with the systemd process/daemon.
+`systemctl start apache2` (start, stop, enable, disable)
+
+PS is moving to BSD-like options?
+= ps aux = ps -e

@@ -562,7 +562,9 @@ The scheduler (`ordonnanceur/gouverneur`) is allowing each process to run a litt
 Signals are used for communication, both between processes, or between a user and a process. There are **34** signals, but a programmer may override the code executed when a process is receiving a signal.
 
 * <kbd>CTRL+C</kbd> (SIGINT=exit): exit process
-* <kbd>CTRL+Z</kbd> (SIGTSTP=suspend): terminate an action <small>(ex: waiting for input)</small>
+* <kbd>CTRL+Z</kbd> (SIGSTOP=suspend): terminate an action <small>(ex: waiting for input)</small>
+* SIGKILL: kill a process, no cleanup
+* SIGTERM: soft kill a process, allow cleanup
 
 > **Note**: <kbd>CTRL+D</kbd> is NOT a signal.
 </details>

@@ -34,9 +34,6 @@ Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try 
 ## Linux
 
 * python3 -m  http.server: start web server, was used to open a "root" file without perms
-* `ps aux`: process not attached to a session / belonging to others
-* `kill` SIGTERM (soft kill, allow cleanup), SIGSTOP (suspend), SIGKILL (kill)
-* `systemctl /bin/systemctl`  allow to interact with the systemd process/daemon. `systemctl start apache2` (start, stop, enable, disable)
 * `cron` process to schedule tasks, with `crontabs` (file)
   * ...
   * https://crontab-generator.org/

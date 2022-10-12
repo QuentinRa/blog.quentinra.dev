@@ -1368,6 +1368,28 @@ $ top
 ```
 </details>
 </div><div>
+<details class="details-e">
+<summary><code>kill</code>: kill a process/send a signal</summary>
+
+All are sending "SIGTERM" (soft kill, allow cleanup)
+
+```bash
+$ kill pid
+$ kill 15  pid
+$ kill -s TERM  pid
+$ kill -SIGTERM  pid
+```
+
+* `-9` / SIGKILL: kill without cleanup
+* `-19` / SIGSTOP: suspend
+
+You can use `-l` to see the code for a given signal
+
+```bash
+$ kill -l SIGSTOP
+19
+```
+</details>
 </div></div>
 
 <hr class="sr">
