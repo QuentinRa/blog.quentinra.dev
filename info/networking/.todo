@@ -1,7 +1,5 @@
 https://www.faidherbe.org/tutoriel/
 
-paquet = packet
-
 65535 available ports
 standard ports (https://techhyme.com/list-of-commonly-used-well-known-ports/)
 open, closed, or filtered (usually by a firewall)

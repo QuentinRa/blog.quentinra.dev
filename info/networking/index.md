@@ -171,7 +171,7 @@ There are 8 kind of IPV6 addresses
 
 ## OSI model
 
-The Open Systems Interconnection (**OSI**) model is a representation of how we could send a message between two machines. It's made of **7 layers** (`couche`): Physical, Data Link, Network, Transport, Session, Presentation, and Application. Although it's newer that the TCP/IP model, the later remain the most widely used one as it is more compact.
+The Open Systems Interconnection (**OSI**) model is a standardised representation of how we could send a message between two machines. It's made of **7 layers** (`couche`): Physical, Data Link, Network, Transport, Session, Presentation, and Application. Although it's newer that the TCP/IP model, the later remain the most widely used one as it is more compact.
 
 <div class="row"><div class="col-md-7">
 
@@ -189,6 +189,8 @@ When a computer send a message, it will be send starting a layer, and go down. W
 Each time a `data` go down to be sent, a header is added. This process is called **encapsulation**. 
 
 When a message is received, each header will be removed when going up. This process is called **de-encapsulation**.
+
+The data being send is named differently according to the headers that were added
 
 * **Level 5 to 7**: data
 * **Level 4**: segments (TCP), or datagrams (UDP)

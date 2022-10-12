@@ -49,23 +49,7 @@ Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try 
 
 ## Networking
 
-The OSI (Open Systems Interconnection) Model is a standardised model which we use to demonstrate the theory behind computer networking.
-In practice industry is using the TCP/IP model (more compact)
-
-* Layer 7 -- Application: interface for programs - ex: FTP
-* Layer 6 -- Presentation: standardize the message, handle encryption, compression...
-* Layer 5 -- Session: try to establish a connection
-* Layer 4 -- Transport: Select protocol, and make segments (TCP), or datagrams (UDP)
-* Layer 3 -- Network: IP (network) - packet
-* Layer 2 -- Data Link: MAC (machine), and integrity check, along preparations for transmission
-* Layer 1 -- Physical: binary to signals, receive signals and convert them back
-
-![OSI headers](_images/osi_headers.png)
-
 Headers: verify integrity, store src, dest...
-
-* encapsulation: add headers
-* de-encapsulation: reverse process
 
 TCP/IP (introduced first)
 
