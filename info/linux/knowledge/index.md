@@ -49,13 +49,13 @@ bash > command_at_least_working_in_bash
 
 <div class="row row-cols-md-2"><div>
 
-A command is **a name**, which may be followed by **arguments**, including some usually called **options**/flag; the difference being that an option starts with a `-`.
+A command is **a name**, which may be followed by **arguments**, including some usually called flag/switches (`options`); the difference being that a flag starts with a `-`.
 
 * you are writing commands right after the `$`
 * press <kbd>ENTER</kbd> to execute a command
 * press <kbd>CTRL-C</kbd> to cancel/kill a command
 * press <kbd>CTRL-D</kbd> to end the input of a command waiting for input
-* Usually, options can be merged <small>(ex: `-l -a` is the same as `-la`)</small>.
+* Usually, flags can be merged <small>(ex: `-l -a` is the same as `-la`)</small>.
 * Most commands have an option "help": `-h`, `-help`, or `--help`
 
 </div><div>
@@ -73,6 +73,13 @@ $ ls -la toto/
 
 ```bash
 $ man ls
+```
+
+**Rely heavily on Tabulation (tab) to autocomplete commands/paths**
+
+```bash
+$ ls /<TAB>
+# will display every path starting with "/"
 ```
 </div></div>
 
@@ -240,6 +247,38 @@ There is a super-user, usually called root, that has absolute control over the m
 * The following string `listro` is the name of the group `g`
 </details>
 </div></div>
+
+<details class="details-e">
+<summary>The 3 not well-known permissions</summary>
+
+<table class="table table-bordered table-striped border-dark mt-4">
+<thead>
+<tr><th></th><th>SUID bit (on user)</th><th>SGID bit (on group)</th><th>Sticky bit (on others)</th></tr>
+</thead>
+<tbody>
+
+<tr><td>File</td><td>
+This file will be executed using the permissions of its owner.
+</td><td>
+This file will be executed using the permissions of its group owner.
+</td><td></td>
+</tr>
+<tr><td>Folder</td><td></td><td>
+The group of newly created sub-folders will be the same as the folder with the SGID bit.
+</td><td>
+Use can't delete files belonging to another user.
+</td></tr>
+
+<tr>
+<td></td>
+<td>Add: <code>u+s</code> Remove: <code>u-s</code><br>Ex: <code>-rwsr--r--</code> </td>
+<td>Add: <code>g+s</code> Remove: <code>g-s</code><br>Ex: <code>-rwsr-sr--</code> </td>
+<td>Add: <code>o+t</code> Remove: <code>o-t</code><br>Ex: <code>-rwxrw-rwt</code> </td>
+</tr>
+</tbody></table>
+
+If you are giving one of these, in a context where you couldn't (such as giving `s` to `u`, while `u` don't have `x`), then the permission would be displayed in uppercase, indicating an error.
+</details>
 
 <hr class="sl">
 

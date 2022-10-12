@@ -8,13 +8,6 @@ https://linuxhandbook.com/linux-shortcuts/
 https://www.lostsaloon.com/technology/7-keyboard-shortcuts-you-should-know-in-linux-command-shell/
 https://linuxhint.com/100_keyboard_shortcuts_linux/
 
-> Terminal
-flags or switches
-use tab
-
-> Perms
-https://linuxhandbook.com/suid-sgid-sticky-bit/
-
 > Paths
 /etc/: commonplace location to store system files that are used by your operating system
 /dev/null

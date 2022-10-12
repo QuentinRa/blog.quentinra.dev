@@ -51,8 +51,6 @@ Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try 
     * apache
     * fail2ban
 
-![img.png](_images/bits.png)
-
 <hr class="sep-both">
 
 ## Networking
