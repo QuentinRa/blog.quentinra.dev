@@ -48,9 +48,11 @@ The [SecLists GitHub Repository](https://github.com/danielmiessler/SecLists/) co
 
 ## Exploits / CVE lookup
 
-* [exploit-db.com](https://www.exploit-db.com/), and the command [searchsploit](https://github.com/offensive-security/exploitdb).
+CVEs take the form: CVE-YEAR-ID.
+
+* [exploit-db.com](https://www.exploit-db.com/), and the command [searchsploit](https://github.com/offensive-security/exploitdb). Useful to find exploits, and test them.
 * [nvd.nist.gov](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&search_type=all)
-* [cve.mitre.org](https://cve.mitre.org/cve/), and [their new website: cve.org](https://www.cve.org/)
+* [cve.mitre.org](https://cve.mitre.org/cve/), and [their new website: cve.org](https://www.cve.org/). This is basically of big list of CVE, regardless of them being exploitable, or not.
 * [attackerkb.com](https://attackerkb.com/)
 
 One special mention to **Snyk**: [security.snyk.io](https://security.snyk.io/), because there website is, in my opinion, way better than others.

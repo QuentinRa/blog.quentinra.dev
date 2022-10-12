@@ -31,7 +31,7 @@ Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try 
 
 <hr class="sep-both">
 
-## Web tools
+## Tools
 
 * https://osintframework.com/
 
@@ -42,6 +42,7 @@ Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try 
 * python3 -m  http.server: start web server, was used to open a "root" file without perms
 * `cron` process to schedule tasks, with `crontabs` (file)
   * ...
+  * Automated tasks in Linux
   * https://crontab-generator.org/
   * https://crontab.guru/
   * edit `crontab -e`
@@ -50,6 +51,8 @@ Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try 
     * ufw: firewall
     * apache
     * fail2ban
+* `scp -r`
+* `nc -l -p 12345`
 
 <hr class="sep-both">
 
@@ -138,3 +141,9 @@ gpg
 * Type "source" followed by the filename of the mysql database to specify that you wish to view its database.
 * `DESCRIBE [table name]`
 * `source [sql filename]`: import. Don't write a path, move to the folder with the file.
+
+<hr class="sep-both">
+
+### Steganography
+
+Hide things in images: [Steganography](https://0xrick.github.io/lists/stego/).
