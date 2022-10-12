@@ -4,4 +4,8 @@ sudo snap install xxx
 dpkg / apt in /etc/apt/sources.list.d
 sudo dpkg -i xxx.deb
 
+rm -R
+
+su -l (--login): start in the other user home
+
 declare -F
