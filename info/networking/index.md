@@ -327,3 +327,22 @@ Each code is associated with a type. Here some of them (code: type). See [Contro
 </details>
 
 > One thing to note, is that for instance in UDP, there is no "IP address" in the header. You should remember than UDP is working at a layer above (Layer 4) the one adding such information (Layer 3). And, as written before, each layer is adding its header, so still for UDP, you would have the header of IP followed by the header of UDP...
+
+<hr class="sr">
+
+## Domain Name System (DNS) protocol
+
+<div class="row row-cols-md-2"><div>
+
+Remembering IP addresses can be a trough process. Because of that, **Fully Qualified Domain Name** (FQDN), mostly simply called **Domain names**, were introduced, pointing to IP addresses.
+
+For instance, the domain name `example.com` is pointing to `93.184.216.34`.
+
+The **root domain** is `.`. For instance, `example.com` is actually the domain `example.com.` (notice the '.' at the end). 
+
+The servers associated with this root domain are keeping track of the **Top level domain (TLD)**: `.com`, `.net`, `.fr`...
+
+</div><div>
+
+...
+</div></div>
