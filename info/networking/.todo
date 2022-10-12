@@ -18,7 +18,8 @@ https://en.wikipedia.org/wiki/List_of_IP_protocol_numbers
 
 >> TCP
 "three-way handshake": SYN (synchronise) SYN/ACK ACK (Acknowledgement)
-This protocol is used when we want liability (`fiabilité`).
+ACK number
+https://en.wikipedia.org/wiki/Transmission_Control_Protocol
 
 >> ICMP
 ICMP protocol, one of the TCP/IP protocols / Network Level

@@ -220,10 +220,38 @@ Some are splitting the "Layer 1" back in two layers, but it's not in the RFC1122
 <summary>TCP (6): transmission control protocol</summary>
 <div class="row row-cols-md-2"><div>
 
-It's a **connection-based protocol**.
+It's a **connection-based protocol**. It's used when there is a need for a **trustworthy/reliable** (`fiable`), and ordered way of sending messages.. If there is an error, then the sender is notified, and the message is sent again.
+
+> **TCP** messages are called segments.
+
+**Example**
+
+* `ssh`
+
+TCP messages all have a [flag](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
+
+* `1`: F=FIN
+* `2`: S=Syn
+* `4`: R=Reset
+* `8`: P=Push
+* `16`: A=Ack
+* ...
+
 </div><div>
 
-...
+**Header**
+
+* 2 bytes for "source port"
+* 2 bytes for "destination port"
+* 4 bytes for "sequence number" (seq)
+* 2 bytes for "acknowledgement number" (ack)
+* 4 bits for the "offset"
+* 3 bits "reserved" (000)
+* 9 bits for the "flag"
+* 2 bytes for the "frame/windows" (`cadre`)
+* 2 bytes for the "checksum"
+* 2 bytes for the "urgent pointer"
+* 4 bytes for "options" (optional)
 </div></div>
 </details>
 
