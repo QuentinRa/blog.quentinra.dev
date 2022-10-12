@@ -7,3 +7,9 @@ standard ports (https://techhyme.com/list-of-commonly-used-well-known-ports/)
 open, closed, or filtered (usually by a firewall)
 
 https://en.wikipedia.org/wiki/Subnetwork
+
+80 HTTP
+443 HTTPS
+25 SMTP
+22 SSH/SFTP
+21 FTP

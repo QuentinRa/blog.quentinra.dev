@@ -166,3 +166,33 @@ There are 8 kind of IPV6 addresses
 | Unique local Unicast (private)   | 11111101...0      | ffd0:://8<br>ffc0::/7    |
 | Global Unicast (Internet)        | ...               | 2001..<br>2002...<br>... |
 </div></div>
+
+<hr class="sl">
+
+## OSI model
+
+The Open Systems Interconnection (**OSI**) model is a representation of how we could send a message between two machines. It's made of **7 layers** (`couche`): Physical, Data Link, Network, Transport, Session, Presentation, and Application. Although it's newer that the TCP/IP model, the later remain the most widely used one as it is more compact.
+
+<div class="row"><div class="col-md-7">
+
+When a computer send a message, it will be send starting a layer, and go down. When a computer receive a message, it will go up every layer in the reverse order.
+
+* **Layer 7 - Application**: Programs are exchanging data <small>(HTTP, SSH, FTP, SMTP...)</small>
+* **Layer 6 - Presentation**: Standardize, add encryption/compression... <small>(SSL, TLS...)</small>
+* **Layer 5 - Session**: Try to establish a connexion <small>(RPC, PAP...)</small>
+* **Layer 4 - Transport**: select a protocol <small>(TCP, UDP...)</small>
+* **Layer 3 - Network** (`Réseau`, Router): create a packet <small>(IP, NAT...)</small>
+* **Layer 2 - Data Link** (`Liaison`, Switch): resolve MAC <small>(ARP, ETH...)</small>
+* **Layer 1 - Physical** (HUB): binary to signals <small>(links, USB...)</small>
+</div><div class="col-md-5">
+
+Each time a `data` go down to be sent, a header is added. This process is called **encapsulation**. 
+
+When a message is received, each header will be removed when going up. This process is called **de-encapsulation**.
+
+* **Level 5 to 7**: data
+* **Level 4**: segments (TCP), or datagrams (UDP)
+* **Level 3**: packets
+* **Level 2**: frames
+* **Level 1**: stream (bits)
+</div></div>
