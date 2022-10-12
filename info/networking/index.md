@@ -198,3 +198,16 @@ The data being send is named differently according to the headers that were adde
 * **Level 2**: frames
 * **Level 1**: stream (bits)
 </div></div>
+
+<hr class="sr">
+
+## TCP/IP model
+
+The TCP/IP model was introduced way before the OSI model, and remain the most used because it's more compact. It's made of 4 layers
+
+* **Layer 4 - Application**: Layers 5 to 7 of OSI
+* **Layer 3 - Transport**: Layers 4 of OSI <small>(socket, port...)</small>
+* **Layer 2 - Internet**: Layers 3 of OSI <small>(IP, ETH...)</small>
+* **Layer 1 - Physical**: Layers 1, and 2 of OSI <small>(WIFI, ADSL, ETH...)</small>
+
+Some are splitting the "Layer 1" back in two layers, but it's not in the RFC1122 standard.

@@ -51,13 +51,6 @@ Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try 
 
 Headers: verify integrity, store src, dest...
 
-TCP/IP (introduced first)
-
-* Application (L7-L5)
-* Transport (L4)
-* Internet (L3)
-* Network interface (L2-L1) - some are breaking it into two, but not in RFC1122
-
 TCP (connection-based protocol) "three-way handshake": SYN (synchronise) SYN/ACK ACK (Acknowledgement)
 UDP (connectionless)
 ICMP protocol, one of the TCP/IP protocols / Network Level
