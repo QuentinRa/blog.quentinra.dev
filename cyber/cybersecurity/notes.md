@@ -19,9 +19,7 @@ Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try 
 
 <hr class="sep-both">
 
-## Web
-
-* "You need to understand a website, to find weakness, and process hacking a website."
+## Random
 
 * Attack a vulnerable machine, scan the network to discover more vulnerable machines.
 
@@ -225,3 +223,38 @@ TTL is in seconds.
   * weak algorithm
 
 BAC : Insecure Direct Object References (IDOR). Example is a server service resources, with a URL in which we can guess other files names.
+
+<hr class="sep-both">
+
+## Forensics
+
+"You need to understand a website, to find weakness, and process hacking a website."
+
+https://tryhackme.com/room/introdigitalforensics
+
+Forensics is the application of science to investigate crimes and establish facts -> digital forensics. Digital forensics is used in two types of investigations:
+
+* Public-sector investigations (gov, law enforcement)
+* Private-sector investigations (hired by companies)
+
+---------
+
+pdfinfo DOCUMENT.pdf
+sudo apt install poppler-utils
+Open in edge -> details.
+
+------
+
+Images.
+
+* Camera model / Smartphone model
+* Date and time of image capture
+* Photo settings such as focal length, aperture, shutter speed, and ISO settings
+* GPS coordinates (if there is a GPS sensor)
+
+exiftool. ExifTool is used to read and write metadata in various file types, such as JPEG images.
+
+sudo apt install libimage-exiftool-perl
+
+https://jimpl.com/
+https://www.geekyhumans.com/tools/image-metadata-viewer
