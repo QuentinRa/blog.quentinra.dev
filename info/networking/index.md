@@ -1,26 +1,34 @@
 # Networking
 
-...
+A network is a net of things connected to each other. What we refer to "The Internet" are many small networks all joined together.
 
 <hr class="sl">
 
-## xxx
-
-...
-
-<hr class="sr">
-
 ## Communication
-
-<div class="row row-cols-md-2"><div>
 
 A communication between two machines implies
 
-* an IP to identify the network, and the machine outside the network
-* a MAC address, to identify the current owner of an IP address
+* an IP address to identify the network, and the machine outside the network (logical identifier)
+* a MAC address, to identify the current owner of an IP address (physical identifier)
 * a port, that is "where" the communication will pass by on a machine
 * a protocol, which is "how" the communication will be handled
+
+<hr class="sr">
+
+## MAC address
+
+<div class="row row-cols-md-2"><div>
+
+A **media access control address (MAC address)** is a **unique (physical) address** associated with the network card (`carte réseau`) of the machine uses to connect itself to the internet.
+
+* Can be [spoofed](https://en.wikipedia.org/wiki/MAC_spoofing) <small>(some hacker can usurp your MAC)</small>
+
 </div><div>
+
+This is a 6-bytes-long address such as `FF:FF:FF:FF:FF:FF` with 12 hexadecimal character, separated with a colon.
+
+* The first 6 characters are the vendor/manufacturer
+* The last 6 characters are the unique address
 </div></div>
 
 <hr class="sl">
@@ -155,7 +163,7 @@ There are 3 ranges of IPV4 addresses that are said private/reserved for internal
 
 <div class="row row-cols-md-2"><div>
 
-The Internet Protocol version 6 (**IPV6**) address is a **128-bits long address**. It was introduced because of the shortage of IPV4.
+The Internet Protocol version 6 (**IPV6**) address is a **128-bits long address**. It was introduced because of the shortage of IPV4. It's also more efficient due to new technologies.
 
 It looks like this: `2002:6963:6961:2046:616c:636f:6e20:3c33`, which is 8 blocs of 16 bits, separated with `:`. Because it's somewhat long, there are a few rules to shorten it
 

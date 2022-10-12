@@ -31,6 +31,12 @@ Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try 
 
 <hr class="sep-both">
 
+## Web tools
+
+* https://osintframework.com/
+
+<hr class="sep-both">
+
 ## Linux
 
 * python3 -m  http.server: start web server, was used to open a "root" file without perms
@@ -51,23 +57,11 @@ Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try 
 
 ## Networking
 
-* https://osintframework.com/
-
-Networks: things connected.
-  * (The) Internet: many small networks all joined together
-  * public/private networks
-  * To identify a device: MAC+IP
-    * IP **logical identifier**: private/public ips, given by Internet Service Provider (or ISP)
-      * Default Gateway: special address that is capable of sending information to another network (.1 or .254)
-        Any data that need to go to a device that isn't on the same network will be sent here.
-      * subnetting: use Network Adress to split the network
-        * is achieved by splitting up the number of hosts that can fit within the network, represented by a number called a subnet mask
-        * 32 bits
-    * IPV6: 2^128 of IP addresses (340 trillion-plus), "More efficient due to new methodologies"
-    * MAC (Media Access Control) - **physical identifier**, assigned to network card, twelve-character hexadecimal number, colon-separated
-      can be spoofed/faked
-      * 6 first: vendor/manufacturer
-      * 6 last: unique address
+* Default Gateway: special address that is capable of sending information to another network (.1 or .254)
+       Any data that need to go to a device that isn't on the same network will be sent here.
+     * subnetting: use Network Address to split the network
+       * is achieved by splitting up the number of hosts that can fit within the network, represented by a number called a subnet mask
+       * 32 bits
 
 * Local Area Network (LAN)
   * **Star Topology**: all devices are connected to a central networking device such as a switch or hub
