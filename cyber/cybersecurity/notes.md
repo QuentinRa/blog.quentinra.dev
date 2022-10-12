@@ -78,7 +78,7 @@ Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try 
     * The server ack: DHCP ACK
     * NOTE: ACK, REQUEST... are DHCP packets
 
-## Stuff
+<hr class="sep-both">
 
 ### Samba
 

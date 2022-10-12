@@ -20,7 +20,7 @@ A **media access control address (MAC address)** is a **unique (physical) addres
 
 </div><div>
 
-This is a 6-bytes-long address such as `FF:FF:FF:FF:FF:FF` with 12 hexadecimal character, separated with a colon.
+This is a 6-bytes-long address such as `ff:ff:ff:ff:ff:ff` with 12 hexadecimal character, separated with a colon.
 
 * The first 6 characters are the vendor/manufacturer
 * The last 6 characters are the unique address
@@ -347,7 +347,7 @@ Each code is associated with a type. Here some of them (code: type). See [Contro
 
 <div class="row row-cols-md-2"><div>
 
-The Address Resolution Protocol (ARP) is used **to find a MAC given an IP address**. Once found, the MAC is stored in the ARP cache.
+The Address Resolution Protocol (ARP) is used **to find a MAC given an IPV4 address**. Once found, the MAC is stored in the ARP cache.
 
 You can observe an ARP request by using `tcpdump`, and a `ping` on an uncached target
 
@@ -362,7 +362,7 @@ You can observe an ARP request by using `tcpdump`, and a `ping` on an uncached t
 
 **Protocol**
 
-**ARP Request broadcast**: A machine is asking every machine of a network is a MAC is theirs using the broadcast address.
+**ARP Request broadcast**: A machine is asking every machine of a network is a MAC is theirs using the broadcast MAC address.
 
 * Mac source (requester MAC address)
 * Mac destination (`ff:ff:ff:ff:ff:ff`)
