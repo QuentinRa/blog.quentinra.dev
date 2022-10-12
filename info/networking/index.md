@@ -10,6 +10,21 @@
 
 <hr class="sr">
 
+## Communication
+
+<div class="row row-cols-md-2"><div>
+
+A communication between two machines implies
+
+* an IP to identify the network, and the machine outside the network
+* a MAC address, to identify the current owner of an IP address
+* a port, that is "where" the communication will pass by on a machine
+* a protocol, which is "how" the communication will be handled
+</div><div>
+</div></div>
+
+<hr class="sl">
+
 ## IPV4 addresses
 
 A Internet Protocol version 4 (**IPV4**) address is a **32-bits long address**.
@@ -123,3 +138,31 @@ Given the IP `77.33.225.0/24`,
 Giving us `01001101001000011110000111111111` which is `77.33.225.255`.
 </div></div>
 </details>
+
+<hr class="sr">
+
+## IPV6 addresses
+
+<div class="row row-cols-md-2"><div>
+
+A Internet Protocol version 6 (**IPV6**) address is a **128-bits long address**. It was introduced because of the shortage of IPV4.
+
+It looks like this: `2002:6963:6961:2046:616c:636f:6e20:3c33`, which is 8 blocs of 16 bits, separated with `:`. Because it's somewhat long, there are a few rules to shorten it
+
+* Any leading $0$ in a bloc can be removed <small>(`0014 -> 14`)</small>
+* A whole bloc of $0$ can be replaced with one $0$ <small>(`0000 -> 0`)</small>
+* **One**, and only one suite of nul-groups, may be merged in `..` <small>(`...:0000:0000:... -> ...::...`)</small>
+</div><div>
+
+There are 8 kind of IPV6 addresses
+
+| Type/Name                        | Prefix (128 bits) | IPV6 notation            |
+|----------------------------------|-------------------|--------------------------|
+| Unspecified (`non spécifié`)     | 0...0             | ::/128                   |
+| LoopBack (=localhost)            | 0...01            | ::1/128                  |
+| Multicast (=broadcast)           | 111111110...0     | ff00::/8                 |
+| Multicast (using ARP)            |                   | ff02::/8                 |
+| Link-local Unicast (subnet only) | 1111111110...0    | ff80::/10                |
+| Unique local Unicast (private)   | 11111101...0      | ffd0:://8<br>ffc0::/7    |
+| Global Unicast (Internet)        | ...               | 2001..<br>2002...<br>... |
+</div></div>
