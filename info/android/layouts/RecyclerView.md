@@ -64,19 +64,28 @@ holder.myButton.text = items[position].toString()
 </div><div>
 
 ```kotlin
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+
+// todo: rename DummyAdapter (2 occurrences)
+//  and adapt the constructor (if needed)
 class DummyAdapter(private val items: List<Any>) : RecyclerView.Adapter<DummyAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        // todo: your attributes
         val myButton: Button = view.findViewById(R.id.myButton)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        // todo: your layout
         return ViewHolder(LayoutInflater.from(parent.context)
             .inflate(R.layout.xxx, parent, false))
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        // for instance
+        // todo: your binding
         holder.myButton.text = items[position].toString()
     }
 
@@ -91,6 +100,8 @@ class DummyAdapter(private val items: List<Any>) : RecyclerView.Adapter<DummyAda
 
 ## Activity.kt
 
+<div class="row row-cols-md-2"><div>
+
 ```kotlin
 // create
 recyclerView.adapter = DummyAdapter(myDataset)
@@ -101,6 +112,22 @@ recyclerView.adapter = DummyAdapter(myDataset)
 ```kotlin
 recyclerView.setHasFixedSize(true)
 ```
+</div><div>
+
+* Change/set the layout manager
+
+```kotlin
+recyclerView.layoutManager = LinearLayoutManager(this)
+```
+
+* Add a divider between entries
+
+```kotlin
+recyclerView.addItemDecoration(
+    DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
+)
+```
+</div></div>
 
 <hr class="sr">
 

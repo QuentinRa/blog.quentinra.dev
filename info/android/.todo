@@ -13,8 +13,6 @@ https://developer.android.com/teach
 https://developer.android.com/guide
 https://developer.android.com/develop/ui
 
-FrameLayout: a single child view
-
 > **Remainder**: try to rotate the screen, and see if the view is still fine. If not, you may use a ScrollView, disable rotation...
 
 @StringRes
@@ -22,12 +20,6 @@ FrameLayout: a single child view
 @LayoutRes
 
 -----------------
-recyclerView.layoutManager = LinearLayoutManager(this)
-// Adds a [DividerItemDecoration] between items
-recyclerView.addItemDecoration(
-    DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
-)
-
 @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
 
 <resources>
