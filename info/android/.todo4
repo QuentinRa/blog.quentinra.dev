@@ -1,0 +1,28 @@
+Main thread display UI + events (This is (usually) the UI thread.)
+Background thread
+
+multitasking / Concurrency
+
+Coroutines enable multitasking, but provide another level of abstraction over simply working with threads.
+One key feature of coroutines is the ability to store state, so that they can be halted and resumed. A coroutine may or may not execute.
+
+* job: cancellable work
+* CoroutineScope: create coroutines
+* Dispatcher: determine thread by used coroutine
+    The Main dispatcher will always run coroutines on the main thread,
+    while dispatchers like Default, IO, or Unconfined will use other threads.
+
+GlobalScope.launch {}
+= as long as the app is running
+
+Suspend signals that a block of code or function can be paused or resumed.
+suspend fun() {}
+delay(3000)
+if call suspend, then suspend
+
+.runBlocking {}
+.async {}
+    .await()
+    Deferred = Promise = Future, promise that a result will be returned later
+
+https://developer.android.com/kotlin/coroutines

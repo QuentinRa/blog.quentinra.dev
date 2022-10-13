@@ -175,3 +175,11 @@ private val name get() = value
 arguments?.let {
     letterId = it.getString(LETTER).toString()
 }
+
+------------------
+
+val thread = Thread {
+        println("${Thread.currentThread()} has run.")
+    }
+    thread.start()
+    Thread.sleep(50)
