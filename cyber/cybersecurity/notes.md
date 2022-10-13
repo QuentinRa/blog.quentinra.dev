@@ -442,3 +442,15 @@ $ transport[1]="v"
 * `if [ "$x" = "$y" ]`
 * https://www.codewars.com/
 * https://www.hackerrank.com/
+
+<hr class="sep-both">
+
+## Vim
+
+* Debian-Based Distributions: sudo apt install vim
+* Arch-Based Distributions: sudo pacman -S vim
+* Fedora-Based Distributions: sudo dnf install vim-enhanced
+* w: start of a word
+* e: end of a word
+* `:w !sudo tee %`: write file as root
+* `2yy`: copy 2 lines
