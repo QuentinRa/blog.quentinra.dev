@@ -74,3 +74,34 @@ Permissions
 https://developer.android.com/guide/topics/permissions/overview
 <uses-permission android:name="android.permission.INTERNET" />
 -------------------
+
+moshi
+https://github.com/square/moshi
+// Moshi
+implementation 'com.squareup.moshi:moshi-kotlin:1.13.0'
+
+// Retrofit with Moshi Converter - replace previous imports
+implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
+
+data class XXX(
+    @Json(name = "img_src_if_needed")
+    with the fields of the JSON
+)
+
+private val moshi = Moshi.Builder()
+   .add(KotlinJsonAdapterFactory())
+   .build()
+
+.addConverterFactory(MoshiConverterFactory.create(moshi))
+
+------------
+
+class MainActivity : AppCompatActivity(R.layout.activity_main)
+==
+class MainActivity : AppCompatActivity() {
+
+   override fun onCreate(savedInstanceState: Bundle?) {
+       super.onCreate(savedInstanceState)
+       setContentView(R.layout.activity_main)
+   }
+}
