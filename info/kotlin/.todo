@@ -11,6 +11,8 @@ public static interface OnClickListener {
 rollButton.setOnClickListener {
     "it" is a View
 }
+trailing lambda syntax.
+https://kotlinlang.org/docs/reference/lambdas.html#passing-a-lambda-to-the-last-parameter
 
 when (variable) {
     value -> job
