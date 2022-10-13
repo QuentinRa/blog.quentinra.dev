@@ -20,6 +20,12 @@ https://developer.android.com/develop/ui
 @LayoutRes
 
 -----------------
+LinearLayout
+- layout_weight
+- layout_orientation
+
+Values are in 10dp
+-----------------
 @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
 
 <resources>

@@ -152,6 +152,8 @@ The layout, the arrangement of the views, is handled by a **ViewGroup**. Layouts
 * [**ConstraintLayout**](layouts/ConstraintLayout.md): arrange elements in a flexible way
 * [**RecyclerView**](layouts/RecyclerView.md): not a ViewGroup, but an efficient way of displaying a flexible list of elements.
 * **FrameLayout**: if a view has ONE child, then this single child view, is the MOST appropriate view.
+* **LinearLayout**: arrange elements horizontally/vertically
+
 </div><div>
 
 <details class="details-e">
