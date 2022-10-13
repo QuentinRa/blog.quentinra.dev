@@ -45,3 +45,32 @@ implementation "com.squareup.retrofit2:retrofit:2.9.0"
 implementation "com.squareup.retrofit2:converter-scalars:2.9.0"
 
 Need support for Java8.
+
+* network/XXXApiService.kt cool name
+* private const val BASE_URL
+* private val retrofit = Retrofit.Builder()
+    * opt: .addConverterFactory(ScalarsConverterFactory.create())
+    .baseUrl(BASE_URL)
+    .build()
+interface XXXApiService {
+    @GET("route") // get request to retrosfit
+    fun assMethod()
+}
+
+object MarsApi {
+    val retrofitService : MarsApiService by lazy {
+       retrofit.create(MarsApiService::class.java) }
+}
+
+MarsApi.retrofitService.YOU
+catch (e: Exception)
+
+A ViewModelScope is the built-in coroutine scope defined for each ViewModel in your app.
+Any coroutine launched in this scope is automatically canceled if the ViewModel is cleared.
+viewModelScope.launch {}
+
+-------------------
+Permissions
+https://developer.android.com/guide/topics/permissions/overview
+<uses-permission android:name="android.permission.INTERNET" />
+-------------------
