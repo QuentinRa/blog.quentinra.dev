@@ -413,3 +413,32 @@ PRET isn't going to work here as it is using port 9000 by default
 
 * Brute force ssh password `nmap <MACHINE_IP> -p 22 --script ssh-brute --script-arg userdb=user.txt`
 * `http://ip:631/printers/`
+
+<hr class="sep-both">
+
+## Bash
+
+* https://devhints.io/bash
+
+Debugging bash has a few built-in
+
+```bash
+$ bash -x ./file.sh
+```
+
+* `set -x code to debug set +x`
+
+```bash
+$ transport=('car' 'train' 'bike' 'bus')
+$ echo "${transport[@]}"
+car train bike bus
+$ echo "${transport[0]}"
+car
+$ unset transport[1]
+$ transport[1]="v"
+```
+
+* `if [] && []`
+* `if [ "$x" = "$y" ]`
+* https://www.codewars.com/
+* https://www.hackerrank.com/
