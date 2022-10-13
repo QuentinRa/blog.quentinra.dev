@@ -15,7 +15,6 @@ Each screen of your application is an **Activity**. The "main" screen is usually
 * **MainActivity.kt** for the code handling the view
 * **activity_main.xml** for the view
 
-
 <details class="details-e">
 <summary>Base code for an Activity</summary>
 
@@ -32,7 +31,16 @@ class MainActivity : AppCompatActivity() {
     }
 }
 ```
+
+This code can be shortened to
+
+```kotlin
+class MainActivity : AppCompatActivity(R.layout.activity_main) {
+}
+```
 </details>
+
+> An activity has an attribute `title` to change the title of the current window/frame.
 </div><div>
 
 An [**intent**](https://developer.android.com/guide/components/intents-filters) is an object representing some action to be performed, such as navigating to another activity. There are two kinds of intents
@@ -60,18 +68,44 @@ val someParam = intent?.extras?.getString("param").toString()
 </details>
 
 <details class="details-e">
-<summary>Implicit intent: Start another activity</summary>
+<summary>Implicit intent: Start another activity / Share / ...</summary>
 
 [There is a lot of Intents here](https://developer.android.com/reference/android/content/Intent).
 
-* **ACTION_VIEW** is used with a URL (`https:`), a mail (`mailto:`), or a telephone (`tel:`). For instance, given a URL, it will try to open it in a browser...
+**ACTION_VIEW** is used with a URL (`https:`), a mail (`mailto:`), or a telephone (`tel:`). For instance, given a URL, it will try to open it in a browser...
 
 ```kotlin
 val intent = Intent(Intent.ACTION_VIEW, Uri.parse("???"))
-context.startActivity(intent)
+```
+
+**Share**
+
+```kotlin
+val shareIntent = ShareCompat.IntentBuilder.from(this)
+                .setText("...")
+                .setType("text/plain")
+                .intent
+```
+
+**Run an intent**
+
+```kotlin
+// context.startActivity(intent)
+startActivity(intent)
+```
+
+But, as this may fail, you would better use a try-catch
+
+```kotlin
+try {
+    startActivity(intent)
+} catch (ex: ActivityNotFoundException) {
+    // use a toast / ...
+}
 ```
 </details>
 
+> Nowadays, you should use Jetpack navigation component.
 </div></div>
 
 <hr class="sr">

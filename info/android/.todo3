@@ -180,6 +180,15 @@ With Data Binding, when an observable LiveData value changes, t
 he UI elements in the layout it's bound to are also notified,
 and the UI can be updated from within the layout.
 
+private lateinit var binding: ActivityMainBinding
+binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+https://blog.logrocket.com/data-binding-android-tutorial-with-examples/
+```gradle
+buildFeatures {
+    dataBinding = true
+}
+```
+
 binding.textViewUnscrambledWord.text = viewModel.currentScrambledWord
 https://developer.android.com/topic/libraries/data-binding
 

@@ -38,28 +38,6 @@ recyclerView.addItemDecoration(
 </resources>
 
 context.resources.getStringArray(R.array.words).toList()
-
-title = getString(R.string.detail_prefix) + " " + letterId
------------------
-private lateinit var binding: ActivityMainBinding
-binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-https://blog.logrocket.com/data-binding-android-tutorial-with-examples/
-```gradle
-buildFeatures {
-    dataBinding = true
-}
-```
-----------------
-val shareIntent = ShareCompat.IntentBuilder.from(this)
-                .setText("...")
-                .setType("text/plain")
-                .intent
-try {
-    startActivity(shareIntent)
-} catch (ex: ActivityNotFoundException) {
-    Toast.makeText(this, "Sharing not available",
-    Toast.LENGTH_LONG).show()
-}
 ----------------
 
 Resource type: Menu
