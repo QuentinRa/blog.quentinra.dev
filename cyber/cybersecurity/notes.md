@@ -483,3 +483,27 @@ $ \S
 
 ^\D : don't start with a digit
 ```
+
+<hr class="sep-both">
+
+## Privilege escalation
+
+* https://www.udemy.com/course/linux-privilege-escalation/?referralCode=0B0B7AA1E52B4B7F4C06
+
+Services
+
+* https://www.exploit-db.com/exploits/1518
+  * use mysql with root and no password, to create a root shell, using some C code.
+
+Weak perms
+
+* /etc/shadow
+  * if "r": try bruteforce 
+  * if "w": `mkpasswd -m sha-512 newpasswordhere` then edit
+* /etc/passwd
+  * some old Linux allow us to replace "x" with a password (`openssl passwd newpasswordhere`)
+* `sudo -l`: see what I can run with sudo, https://gtfobins.github.io/
+* https://github.com/TH3xACE/SUDO_KILLER
+* https://blog.certcube.com/linux-privilege-escalation-with-sudo-rights/
+* https://gtfobins.github.io/
+* If env variables are loaded, you may exploit them too.
