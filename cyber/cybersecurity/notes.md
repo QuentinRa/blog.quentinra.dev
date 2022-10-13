@@ -117,7 +117,7 @@ Cryptography is used to
 
 * protect confidentiality (ssh tunnel)
 * ensure integrity (checksum)
-* ensure authenticity (certificate )
+* ensure authenticity (certificate, signatures)
 
 Any sensitive data stored must be encrypted.
 
@@ -140,6 +140,36 @@ Python for crypto: integers are unlimited in size
 > 
 > https://muirlandoracle.co.uk/2020/01/29/rsa-encryption/
 
+* exchanging keys
+  * use public-private key to send the key
+  * then use symmetric
+  * In reality, you need to check authenticity
+  * https://robertheaton.com/2014/03/27/how-does-https-actually-work/
+
+* Signature
+* Certificates
+  * Root CA trusted by device -> chain of trust
+  * Let’s Encrypt
+
+SSH that use keys instead of login/pass. ssh-keygen, ssh-copy-id, or manually copying the key into authorized_keys with cat.
+
+DHK
+
+An excellent video if you want a visual explanation is available here. https://www.youtube.com/watch?v=NmM9HA2MQGI
+
+DH Key Exchange is often used alongside RSA public key cryptography, to prove the identity of the person you’re talking to with digital signing. This prevents someone from attacking the connection with a man-in-the-middle attack by pretending to be Bob.
+
+PGP?
+PGP stands for Pretty Good Privacy. It’s a software that implements encryption for encrypting files, performing digital signing and more.
+
+GnuPG or GPG is an Open Source implementation of PGP from the GNU project.
+
+AES is complicated to explain, and doesn’t seem to come up as often. If you’d like to learn how it works, here’s an excellent video from Computerphile https://www.youtube.com/watch?v=O4xNJsjtN6E
+
+The NSA recommends using RSA-3072 or better for asymmetric encryption and AES-256 or better for symmetric encryption.
+
+https://doi.org/10.6028/NIST.IR.8105
+
 ---
 
 * Take input, and generate a hash. It's a one-way function.
@@ -153,6 +183,9 @@ Python for crypto: integers are unlimited in size
   * if it takes a lot of time, try another algorithm first
   * if it takes a lot of times, try reversing the wordlist
   * you can use "cat x & cat y && cat z > hhh", then "grep -e something > stuff" to merge then filter
+  * if this bastard is doing ASCII shit, try `john myHash.txt --wordlist=/usr/share/wordlists/rockyou.txt`
+  * ssh2john
+  * gpg2john as said below
 * Type of Hash
   * `hash-identifier <input>` to find the type for well-known hashes
   * https://hashes.com/en/tools/hash_identifier
@@ -172,8 +205,11 @@ gpg
 * `[encryption method]`: `--symmetric`
 * way to decrypt
 * `gpg encrypted_file`
+* `gpg -d encrypted_file`
 * crack
 * `sudo gpg2john file`: convert gpg to hash
+* import someone else private key
+* `gpg --import xxx.key`
 
 <hr class="sep-both">
 
