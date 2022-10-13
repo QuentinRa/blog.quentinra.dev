@@ -107,6 +107,41 @@ Samba is based on the common client/server protocol of Server Message Block (SMB
 
 ### Hashing
 
+Asymmetric encryption - Uses different keys to encrypt and decrypt.
+
+Cryptanalysis - Attacking cryptography by finding a weakness in the underlying maths
+
+Passphrase - Separate to the key, a passphrase is similar to a password and used to protect a key.
+
+Cryptography is used to 
+
+* protect confidentiality (ssh tunnel)
+* ensure integrity (checksum)
+* ensure authenticity (certificate )
+
+Any sensitive data stored must be encrypted.
+
+https://www.pcisecuritystandards.org/documents/PCI_DSS_for_Large_Organizations_v1.pdf
+
+* password are hashed, not encrypted
+
+Python for crypto: integers are unlimited in size
+
+* Symmetric encryption: tend to be faster, use smaller keys 128/256 AES
+* Asymmetric encryption uses a pair of keys
+  * Elliptic Curve Cryptography
+  * RSA and Elliptic Curve cryptography are based around different mathematically difficult (intractable) problems, which give them their strength
+
+> RSA typically uses 2048 to 4096 bits keys
+> 
+> RSA is based on the mathematically difficult problem of working out the factors of a large number.
+> 
+> CTF RSA https://github.com/RsaCtfTool/RsaCtfTool / https://github.com/ius/rsatool ?
+> 
+> https://muirlandoracle.co.uk/2020/01/29/rsa-encryption/
+
+---
+
 * Take input, and generate a hash. It's a one-way function.
 * Ex: https://www.md5hashgenerator.com/ (weak, so is SHA1, as two input same output)
 * most important use: integrity checking
