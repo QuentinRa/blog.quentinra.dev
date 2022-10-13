@@ -1,0 +1,43 @@
+Bottom Navigation
+=> navigates, and you want the color to change,
+handle "back-stack" (what is it?)
+
+Navigation component is a collection of libs, and stuff simplifying android navigation.
+=> navigation graph: view of screens (called destinations) linked by "action". Click on a screen to see options, args passed...
+    There are deep links like in facebook.
+
+=> nav host widget: sort of cardlayout in Java
+
+Navigation Controller
+=> findNavController().navigate(dest_or_action_id)
+
+SafeArgs plugin
+=> generate classes based on navigation graph
+=> XXXArgs
+=> XXXDirections
+
+val direction: NavDirections: ZZZDirections.xxxAction()
+val direction: NavDirections: ZZZDirections.xxxAction( arg = value )
+findNavController().navigate(direction)
+
+in a fragment
+val args by navArgs<XXXArgs>()
+val argName = args.argName
+
+Navigation UI
+=> Options Menus, bottom nav, nav view, nav drawer, action bar, tool bar, collapsed tool bar
+=> do "as normal", then setup with nav controller
+
+https://developer.android.com/guide/navigation/navigation-getting-started
+
+-----------------
+
+It's possible to have multiples "screens" within one activity, for instance tabs, using fragments. Fragments
+are reusable view that can be embed in activities. For instance, a navbar will most likely be a fragment.
+It fragment has it own lifecycle.
+
+https://developer.android.com/reference/kotlin/androidx/lifecycle/Lifecycle.State
+https://developer.android.com/codelabs/basic-android-kotlin-training-fragments-navigation-component#2
+
+New fragment
+tools:context if changing the .fxml

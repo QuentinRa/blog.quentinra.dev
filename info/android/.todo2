@@ -1,0 +1,42 @@
+## Material Design
+
+https://developer.android.com/codelabs/basic-android-kotlin-training-polished-user-experience
+=> Talkback
+=> Tint/Dark mode
+
+Material design is a library of pre-made components. Google recommends to use Material UI components as much as possible. The list [of Material components for Android can be found here](https://material.io/components?platform=android).
+
+* Text field: `TextInputLayout` (see [text field](https://material.io/components/text-fields/android#using-text-fields))
+* Switch: `SwitchMaterial` (create a switch, change the type in the .xml)
+
+<details class="details-e">
+<summary>Icons</summary>
+
+* Open the resources manager
+* "+" > new vector asset
+* click on the android icon for "clip art"
+* select an icon
+
+For Android 20, or older versions, you need to add `vectorDrawables.useSupportLibrary = true` in build.gradle > Android > defaultConfig.
+
+</details>
+
+********
+Icon
+********
+
+different manufacturers may show app icons in a different shape than
+the circular icon shape :  square shape, rounded square, or squircle (between a square and circle)...
+
+https://developer.android.com/training/multiscreen/screendensities#TaskProvideAltBmp
+
+Adaptive icons since v26
+=> background
+=> foreground
+=> + new image asset
+    => new assets should be moved in the same folder v26
+
+https://developer.android.com/codelabs/basic-android-kotlin-training-display-list-cards
+3 => easy way to import icon
+
+https://developer.android.com/reference/com/google/android/material/card/MaterialCardView
