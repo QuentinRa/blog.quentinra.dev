@@ -32,6 +32,29 @@ If all set, you should have something like this:
 
 <hr class="sr">
 
+## Your item
+
+<div class="row row-cols-md-2"><div>
+
+Create a layout for ONE item. Let's call it `xxx_item`, with `xxx` the kind of item that this view is representing.
+
+* Set the "layout_height" to wrap content, or something else that "match_parent", as this would mean each item is taking the whole screen.
+
+</div><div>
+
+We will consider for this "example", that you are using hardcoded data, that is a list of anything. 
+
+```kotlin
+val myDataset : List<Any> = listOf(...)
+```
+
+You will obviously have to fix that later.
+
+</div></div>
+
+
+<hr class="sl">
+
 ## Adapter, and RecyclerView
 
 <div class="row row-cols-md-2 mx-0"><div>
@@ -42,17 +65,23 @@ If all set, you should have something like this:
 class DummyAdapter(private val items: List<Any>)
 ```
 
+<br><br>
+
 2. You will also create a **layout for one element**
 
-Some fxml with the id `R.layout.xxx` here. Let's say there is a button inside, with the id "myButton".
+We will assume that you created `xxx_item`. Let's say there is a button inside, with the id "my_button".
+
+<br><br>
 
 3. You will create a "**ViewHolder**", which is a class **helping** you **access the views inside the layout** for one element
 
 ```kotlin
 class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-  val myButton: Button = view.findViewById(R.id.myButton)
+  val myButton: Button = view.findViewById(R.id.my_button)
 }
 ```
+
+<br><br>
 
 4. Then, you will have to define how to fill the layout with one element, using the **collection of items**, and the **ViewHolder**
 
@@ -75,13 +104,13 @@ class DummyAdapter(private val items: List<Any>) : RecyclerView.Adapter<DummyAda
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         // todo: your attributes
-        val myButton: Button = view.findViewById(R.id.myButton)
+        val myButton: Button = view.findViewById(R.id.my_button)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         // todo: your layout
         return ViewHolder(LayoutInflater.from(parent.context)
-            .inflate(R.layout.xxx, parent, false))
+            .inflate(R.layout.xxx_item, parent, false))
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -96,31 +125,33 @@ class DummyAdapter(private val items: List<Any>) : RecyclerView.Adapter<DummyAda
 ```
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Activity.kt
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2 mt-3"><div>
+
+* **Set the adapter**
 
 ```kotlin
 // create
 recyclerView.adapter = DummyAdapter(myDataset)
 ```
 
-* If the size of your dataset/collection of items is fixed
+* (optional) if the size of your dataset/collection of items is fixed, you can improve your performances
 
 ```kotlin
 recyclerView.setHasFixedSize(true)
 ```
 </div><div>
 
-* Change/set the layout manager
+* (optional) change the layout manager in the code
 
 ```kotlin
 recyclerView.layoutManager = LinearLayoutManager(this)
 ```
 
-* Add a divider between entries
+* (optional) add a divider between entries
 
 ```kotlin
 recyclerView.addItemDecoration(
@@ -129,13 +160,13 @@ recyclerView.addItemDecoration(
 ```
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## MaterialCardView
 
 You can wrap your view in a MaterialCardView. See [MaterialCardView](https://developer.android.com/reference/com/google/android/material/card/MaterialCardView)
 
-<hr class="sl">
+<hr class="sr">
 
 ## References
 
