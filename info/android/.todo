@@ -96,3 +96,7 @@ OnPause: when share opened, screen partially visible, paused
 Whatever code runs in onPause() blocks other things from displaying, so keep the code in onPause() lightweight.
 For example, if a phone call comes in, the code in onPause() may delay the incoming-call notification.
 ----------------
+AndroidManifest
+=> activities
+    => intent-filter
+-------------

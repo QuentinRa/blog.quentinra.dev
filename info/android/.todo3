@@ -1,3 +1,13 @@
+* onCreate => bundle
+    => setHasOptionsMenu(true) ???
+* onViewCreated()
+* onDestroyView()
+    => binding = null
+
+Cannot use this, use requireContext(), when a context is needed
+activity?.intent?
+--------
+
 Bottom Navigation
 => navigates, and you want the color to change,
 handle "back-stack" (what is it?)
@@ -6,9 +16,45 @@ Navigation component is a collection of libs, and stuff simplifying android navi
 => navigation graph: view of screens (called destinations) linked by "action". Click on a screen to see options, args passed...
     There are deep links like in facebook.
 
+screens+fragments that are called destinations
+* main activity: FragmentContainerView (ex id: nav_host_fragment,
+name=androidx.navigation.fragment.NavHostFragment
+"While you can specify a specific fragment for this attribute, setting it to NavHostFragment allows your
+FragmentContainerView to navigate between fragments.")
+Add defaultNavHost "true". This allows the fragment container to interact with the navigation hierarchy.
+if the system back button pressed, then the container will navigate back to the previously shown fragment
+
+dd an attribute called app:navGraph and set it equal to "@navigation/nav_graph".
+This points to an XML file that defines how your app's fragments can navigate to one another.
+
+because you added two attributes with the app namespace, be sure to add the xmlns:app attribute to the FrameLayout.
+   xmlns:app="http://schemas.android.com/apk/res-auto
+
+* new res nav
+* screen+ > pick frags
+* arrow from one screen to another > add arguments if needed
+* select a dest > click on home to Assign it as the start destination.
+* property label for the "name of the screen"
+
 => nav host widget: sort of cardlayout in Java
 
 Navigation Controller
+-----
+private lateinit var navController: NavController
+val navHostFragment = supportFragmentManager
+    .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+navController = navHostFragment.navController
+
+setupActionBarWithNavController(navController)
+
+Finally, implement onSupportNavigateUp(). Along with setting defaultNavHost to true in the XML,
+ this method allows you to handle the up button. However, your activity needs to provide the implementation.
+
+override fun onSupportNavigateUp(): Boolean {
+   return navController.navigateUp() || super.onSupportNavigateUp()
+}
+https://en.wikipedia.org/wiki/Short-circuit_evaluation
+-----
 => findNavController().navigate(dest_or_action_id)
 
 SafeArgs plugin
@@ -16,13 +62,17 @@ SafeArgs plugin
 => XXXArgs
 => XXXDirections
 
-val direction: NavDirections: ZZZDirections.xxxAction()
-val direction: NavDirections: ZZZDirections.xxxAction( arg = value )
+val direction: NavDirections: ZZZDirections.actionXXXXToYYY()
+val direction: NavDirections: ZZZDirections.actionXXXXToYYY( arg = value )
 findNavController().navigate(direction)
+"holder.view.findXXX"...
 
 in a fragment
 val args by navArgs<XXXArgs>()
 val argName = args.argName
+arguments?.let {
+    letterId = it.getString(LETTER).toString()
+}
 
 Navigation UI
 => Options Menus, bottom nav, nav view, nav drawer, action bar, tool bar, collapsed tool bar
@@ -41,3 +91,7 @@ https://developer.android.com/codelabs/basic-android-kotlin-training-fragments-n
 
 New fragment
 tools:context if changing the .fxml
+
+------------
+
+https://developer.android.com/courses/pathways/android-basics-kotlin-unit-3-pathway-2#codelab-https://developer.android.com/codelabs/basic-android-kotlin-training-fragments-navigation-component
