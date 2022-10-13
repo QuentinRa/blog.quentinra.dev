@@ -91,7 +91,7 @@ override fun onOptionsItemSelected(item: MenuItem): Boolean {
 }
 ----------------
 https://developer.android.com/guide/components/activities/activity-lifecycle
-Do rotating really create/destroy the app?
+Do rotating really create/destroy the app? -> rotating must be enabled (:
 OnPause: when share opened, screen partially visible, paused
 Whatever code runs in onPause() blocks other things from displaying, so keep the code in onPause() lightweight.
 For example, if a phone call comes in, the code in onPause() may delay the incoming-call notification.
