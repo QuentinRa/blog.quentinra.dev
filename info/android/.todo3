@@ -209,3 +209,4 @@ binding = DataBindingUtil.inflate(inflater, R.layout.game_fragment, container, f
 </layout>
 
 binding.lifecycleOwner = viewLifecycleOwner
+binding.lifecycleOwner = this

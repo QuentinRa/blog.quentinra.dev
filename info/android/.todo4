@@ -26,3 +26,22 @@ if call suspend, then suspend
     Deferred = Promise = Future, promise that a result will be returned later
 
 https://developer.android.com/kotlin/coroutines
+
+------------
+------------
+GET POST PUT DELETE
+Content-type
+
+Most web servers today run web services using a common stateless web architecture known as REST,
+which stands for REpresentational State Transfer.
+Web services that offer this architecture are known as RESTful services.
+
+Retrofit Library
+https://github.com/square/retrofit
+
+// Retrofit
+implementation "com.squareup.retrofit2:retrofit:2.9.0"
+// Retrofit with Scalar Converter: converter enables Retrofit to return the JSON result as a String
+implementation "com.squareup.retrofit2:converter-scalars:2.9.0"
+
+Need support for Java8.
