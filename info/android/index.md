@@ -500,6 +500,28 @@ There are 5 levels of logs. You can view your logs in the tab "logat", in which 
 
 <hr class="sr">
 
+## Multitasking
+
+<div class="row row-cols-md-2"><div>
+
+Most android applications runs on one "main" thread usually called "UI Thread", which is the one handling rendering the view, processing events, and so on.
+
+To run long operations, you can't use this thread, and have to use background threads, as you can't render the view/respond to events, if the main thread is busy.
+
+While you can use threads to run background tasks, you should use **coroutine** which are a modern, and more efficient way of doing that. A coroutine is doing a job, that can be halted/resumed. They are created from a **CoroutineScope**, while the **Dispatcher** is the one telling on which thread a coroutine will execute.
+</div><div>
+
+Dispatchers are **Main** (main thread), Default, IO, or Unconfined.
+
+Scopes are
+
+* **GlobalScope**: executed as long as the app is running
+
+</div></div>
+
+
+<hr class="sr">
+
 ## References
 
 * [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)
