@@ -87,6 +87,18 @@ TCP/UDP ping scan: This scan sends packets to TCP ports and UDP ports to determi
 * sudo -PE ( ICMP echo request)
 * Because ICMP echo requests tend to be blocked, you might also consider ICMP Timestamp or ICMP Address Mask requests to tell if a system is online. Nmap uses timestamp request (ICMP Type 13) and checks whether it will get a Timestamp reply (ICMP Type 14). Adding the -PP option tells Nmap to use ICMP timestamp requests.
 * Similarly, Nmap uses address mask queries (ICMP Type 17) and checks whether it gets an address mask reply (ICMP Type 18). This scan can be enabled with the option -PM.
+* TCP SYN -> RST (Reset) if closed `-PS` (if root, reply with RST/ACK otherwise)
+* TCP ACK -> send ACK reply? RST -PA
+  * used to check if host is up, as RST is replied 'cause no connection
+  * If you try it as an unprivileged user, Nmap will attempt a 3-way handshake.
+* UDP sudo -PU
+* -R, query DNS server even for offline hosts
+
+Masscan
+
+On a side note, Masscan uses a similar approach to discover the available systems. However, to finish its network scan quickly, Masscan is quite aggressive with the rate of packets it generates.
+
+* There is summary: https://tryhackme.com/room/nmap01
 
 <hr class="sep-both">
 
