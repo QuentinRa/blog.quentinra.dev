@@ -138,22 +138,6 @@ Backing properties like in C#
 A view model lives from the start until the activity is destroyed (#onCleared())
 Add helpers in your view model, like getUserByID(XXX).
 
-----------
-Dialogs
-* title (optional)
-* message
-* buttons
-
-MaterialAlertDialogBuilder(requireContext())
-.setTitle(getString(R.string.xxx))
-.setMessage(getString(R.string.xxx))
-.setCancelable(false) # not closable using back
-.setNegativeButton(getString(R.string.xxx)) { _, _ ->
-}
-.setPositiveButton(getString(R.string.xxx)) { _, _ ->
-}
-.show()
-
 -----------
 TextInputLayout comes with a built-in functionality to display error messages.
 xxx.error = getString(R.string.error)

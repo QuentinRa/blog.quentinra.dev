@@ -416,6 +416,26 @@ inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
 ```
 
 </details>
+
+<details class="details-e">
+<summary>Dialogs (Popups)</summary>
+
+Dialogs are made of a title (optional), a message, and some buttons (accept/close). Clicking on any button will close the popup.
+
+```kotlin
+ MaterialAlertDialogBuilder(this)
+    .setTitle("XXX")
+    .setMessage("YYY")
+    // by default, pressing "back" closes the popup
+    .setCancelable(false)
+    .setNegativeButton("Button1") { _, _ ->
+    }
+    .setPositiveButton("Button2") { _, _ ->
+    }
+    .show()
+```
+
+</details>
 </div><div>
 
 As in Java, you have listeners which are called when an event is triggered (ex: `click on a button`).
