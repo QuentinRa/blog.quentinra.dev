@@ -149,8 +149,9 @@ Each View has attributes, or properties, for instance, you can define the text s
 
 The layout, the arrangement of the views, is handled by a **ViewGroup**. Layouts are edited using the layout editor. They are located in `.../res/layout/xxx.xml`.
 
-* [ConstraintLayout](layouts/ConstraintLayout.md): arrange elements in a flexible way
-* [RecyclerView](layouts/RecyclerView.md): not a ViewGroup, but an efficient way of displaying a flexible list of elements.
+* [**ConstraintLayout**](layouts/ConstraintLayout.md): arrange elements in a flexible way
+* [**RecyclerView**](layouts/RecyclerView.md): not a ViewGroup, but an efficient way of displaying a flexible list of elements.
+* **FrameLayout**: if a view has ONE child, then this single child view, is the MOST appropriate view.
 </div><div>
 
 <details class="details-e">
@@ -271,6 +272,8 @@ RadioGroup is a ViewGroup used to ensure that only one RadioButton can be select
 </div></div>
 
 **TIP**: you should rely on <kbd>CTRL+F</kbd> to search for attributes, or by clicking on the search icon at the top of the "Attributes" window.
+
+**TIP**: you will most likely have a time when you want to replace a view with another view. In the component tree, right-click on a view, and use "convert view". You could also manually get the job done by directly editing the `.fxml`.
 
 <hr class="sl">
 

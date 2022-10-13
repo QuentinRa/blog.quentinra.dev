@@ -13,9 +13,7 @@ https://developer.android.com/teach
 https://developer.android.com/guide
 https://developer.android.com/develop/ui
 
-FrameLayout: a single child view.
-> * Replace `ConstraintLayout` in the .fxml with `FrameLayout`
-> * Or click on `ConstraintLayout` in the layer tree > Convert view > `FrameLayout`
+FrameLayout: a single child view
 
 > **Remainder**: try to rotate the screen, and see if the view is still fine. If not, you may use a ScrollView, disable rotation...
 

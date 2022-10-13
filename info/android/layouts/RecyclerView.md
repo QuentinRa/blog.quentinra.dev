@@ -16,13 +16,18 @@ RecyclerView is a "new" way of displaying lists, that is more efficient, and use
 
 <div class="row row-cols-md-2 mx-0"><div>
 
-* Place a RecyclerView
-* (Optional) if the RecyclerView is the only child, you should use a `FrameLayout` instead of a `ConstraintLayout`
-</div><div>
+1. Place a RecyclerView in your `activity_main.xml`
+2. (Optional) if the RecyclerView is the only child, you should use a `FrameLayout` instead of a `ConstraintLayout`
+3. (Optional) enable scrollbars. Search for the attribute `scrollbars`, and enable the ones you want.
+4. (Optional) RecyclerView support different modes of displaying items: Linear, Grid... Set the attribute `layoutManager` to the value you want (ex: `LinearLayoutManager`).
 
-RecyclerView support different modes of displaying items: Linear, Grid... Set the attribute `layoutManager` to the value you want (ex: `LinearLayoutManager`).
+5. Give an id to the view, for instance `recycler_view`
+</div><div class="align-self-center">
 
-You shouldn't forget to enable scrollbars. Search for the attribute `scrollbars`, and enable the ones you want.
+If all set, you should have something like this:
+
+![recycler view attributes](../_images/recycler_view_attributes.png)
+
 </div></div>
 
 <hr class="sr">
@@ -88,7 +93,7 @@ class DummyAdapter(private val items: List<Any>) : RecyclerView.Adapter<DummyAda
 
 ```kotlin
 // create
-recyclerView.adapter = ItemAdapter(this, myDataset)
+recyclerView.adapter = DummyAdapter(myDataset)
 ```
 
 * If the size of your dataset/collection of items is fixed
