@@ -174,3 +174,38 @@ MutableLiveData is the mutable version of the LiveData
 // viewLifecycleOwner -> as we are in a fragment
 viewModel.live_data_var.observe(viewLifecycleOwner, { p ->
 })
+
+apps can listen to the data changes from the layout.
+With Data Binding, when an observable LiveData value changes, t
+he UI elements in the layout it's bound to are also notified,
+and the UI can be updated from within the layout.
+
+binding.textViewUnscrambledWord.text = viewModel.currentScrambledWord
+https://developer.android.com/topic/libraries/data-binding
+
+dataBinding = true INSTEAD OF viewBinding
+To use data binding in any Kotlin project, you should apply the kotlin-kapt plugin.
+
+binding = DataBindingUtil.inflate(inflater, R.layout.game_fragment, container, false)
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools">
+
+   <data>
+    <!-- binding.gameViewModel = viewModel -->
+<variable
+       name="gameViewModel"
+       type="com.example.android.unscramble.ui.game.GameViewModel" />
+       <variable
+              name="maxNoOfWords"
+              type="int" />
+   </data>
+
+   <!-- wrapped content
+
+    android:text="@{gameViewModel.currentScrambledWord}"
+    android:text="@{@string/example_resource(user.lastName)}"
+    -->
+</layout>
+
+binding.lifecycleOwner = viewLifecycleOwner
