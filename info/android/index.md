@@ -514,8 +514,8 @@ Dispatchers are **Main** (main thread), Default, IO, or Unconfined.
 
 Scopes are
 
-* **GlobalScope**: executed as long as the app is running
-* **viewModelScope**: ONLY inside a viewModel.
+* **GlobalScope**: executed as long as the app is running.
+* **viewModelScope**: only inside a viewModel, canceled if the view model is cleared.
 </div><div>
 
 On each scope, you can call
@@ -621,7 +621,7 @@ viewModel.list.observe(this) { p ->
 
 <div class="row row-cols-md-2"><div>
 
-Most of android apps are making requests to a server, mostly to REST API, which take GET/POST/PUT/DELETE/... requests, and returns some JSON/XML.
+Most of android apps are making requests to a server, mostly to REST API, which take GET/POST/PUT/DELETE/... requests, and returns some JSON/XML. You can do that easily using the [Retrofit Library](https://github.com/square/retrofit).
 
 * In your manifest, before application, allow your app to use Internet
 
@@ -666,8 +666,11 @@ Then in a ViewModel, you can do something like this
 ```kotlin
 init {
     viewModelScope.launch {
-        val res = XXXXApi.retrofitService.getAllPosts()
-        // ...
+        try {
+            val res = XXXXApi.retrofitService.getAllPosts()
+        } catch(e: Exception) {
+            // ...
+        }
     }
 }
 ```
@@ -675,6 +678,71 @@ init {
 </details>
 </div><div>
 
+**Note**: if you are using localhost, for instance `localhost:3000`, then you must use `http://10.0.2.2:3000/`, as this address will redirect to localhost. You will also have to add `android:usesCleartextTraffic="true"` in your application attributes.
+
+<details class="details-e">
+<summary>Retrofit+JsonToText (use this for an initial test)</summary>
+
+```gradle
+implementation "com.squareup.retrofit2:retrofit:2.9.0"
+implementation "com.squareup.retrofit2:converter-scalars:2.9.0"
+```
+
+The factory is the following
+
+```kotlin
+// ...
+addConverterFactory(ScalarsConverterFactory.create())
+// ...
+```
+
+Every method in `XXXApiService` returns a string, the resulting JSON is being converted to a string when using this library.
+</details>
+
+<details class="details-e">
+<summary>Moshi: Json To Kotlin</summary>
+
+```gradle
+// https://github.com/square/moshi
+implementation 'com.squareup.moshi:moshi-kotlin:1.13.0'
+implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
+```
+
+The factory is the following
+
+```kotlin
+private val moshi = Moshi.Builder()
+    .add(KotlinJsonAdapterFactory())
+    .build()
+
+// ...
+.addConverterFactory(MoshiConverterFactory.create(moshi))
+// ...
+```
+
+Now, the "hardest" part, is if your API return the following JSON for `/posts` (GET)
+
+```json
+[
+    { "name": "toto" }, 
+    { "name": "tota" } 
+]
+```
+
+Then, you associated method will be
+
+```kotlin
+@GET("posts")
+suspend fun getAllPosts() : List<Post>
+```
+
+And each key in the JSON, must have an attribute in the (data) class Player. If the attribute has a different name than the key, you may use `@Json(name = "name")` for moshi to handle that.
+
+```kotlin
+data class Player(
+    @Json(name = "name") val name: String)
+```
+</details>
 </div></div>
 
 <hr class="sr">
