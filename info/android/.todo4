@@ -42,6 +42,53 @@ viewModelScope.launch {}
 Permissions
 https://developer.android.com/guide/topics/permissions/overview
 <uses-permission android:name="android.permission.INTERNET" />
+
+android:usesCleartextTraffic="true" is localhost+clear
+
+https://stackoverflow.com/questions/60175852/cleartext-communication-not-permitted-by-network-security-policy-working-on-my-m
+package ca.usherbrooke.bonpari.api
+
+import retrofit2.Retrofit
+import retrofit2.converter.scalars.ScalarsConverterFactory
+import retrofit2.http.GET
+
+private const val BASE_URL = "http://127.0.0.1:3000"
+
+private val retrofit = Retrofit.Builder()
+    .addConverterFactory(ScalarsConverterFactory.create())
+    .baseUrl(BASE_URL)
+    .build()
+
+interface BonPariApiService {
+    @GET("parties")
+    suspend fun getAllGames() : String
+}
+
+object BonPariApi {
+    val retrofitService : BonPariApiService by lazy {
+        retrofit.create(BonPariApiService::class.java) }
+}
+
+private const val BASE_URL = "http://10.0.2.2:3000/"
+
+private val moshi = Moshi.Builder()
+    .add(KotlinJsonAdapterFactory())
+    .build()
+
+private val retrofit = Retrofit.Builder()
+    .addConverterFactory(MoshiConverterFactory.create(moshi))
+    .baseUrl(BASE_URL)
+    .build()
+
+interface BonPariApiService {
+    @GET("parties")
+    suspend fun getAllGames() : List<Match>
+}
+
+object BonPariApi {
+    val retrofitService : BonPariApiService by lazy {
+        retrofit.create(BonPariApiService::class.java) }
+}
 -------------------
 
 moshi
@@ -51,6 +98,8 @@ implementation 'com.squareup.moshi:moshi-kotlin:1.13.0'
 
 // Retrofit with Moshi Converter - replace previous imports
 implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
+
+http://10.0.2.2:3000/
 
 data class XXX(
     @Json(name = "img_src_if_needed")
