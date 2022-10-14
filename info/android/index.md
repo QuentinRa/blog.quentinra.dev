@@ -582,6 +582,12 @@ class XXXViewModel : ViewModel() {
 ```
 
 To access your nested value, use `xx.value`, or `xx.value!!`.
+
+```kotlin
+viewModel.list.observe(this) { p ->
+   // p is a List<Int>!
+}
+```
 </div><div>
 
 ...
