@@ -8,14 +8,6 @@ Web services that offer this architecture are known as RESTful services.
 Retrofit Library
 https://github.com/square/retrofit
 
-// Retrofit
-implementation "com.squareup.retrofit2:retrofit:2.9.0"
-// Retrofit with Scalar Converter: converter enables Retrofit to return the JSON result as a String
-implementation "com.squareup.retrofit2:converter-scalars:2.9.0"
-
-Need support for Java8.
-
-* network/XXXApiService.kt cool name
 * private const val BASE_URL
 * private val retrofit = Retrofit.Builder()
     * opt: .addConverterFactory(ScalarsConverterFactory.create())
@@ -39,38 +31,6 @@ Any coroutine launched in this scope is automatically canceled if the ViewModel 
 viewModelScope.launch {}
 
 -------------------
-Permissions
-https://developer.android.com/guide/topics/permissions/overview
-<uses-permission android:name="android.permission.INTERNET" />
-
-android:usesCleartextTraffic="true" is localhost+clear
-
-https://stackoverflow.com/questions/60175852/cleartext-communication-not-permitted-by-network-security-policy-working-on-my-m
-package ca.usherbrooke.bonpari.api
-
-import retrofit2.Retrofit
-import retrofit2.converter.scalars.ScalarsConverterFactory
-import retrofit2.http.GET
-
-private const val BASE_URL = "http://127.0.0.1:3000"
-
-private val retrofit = Retrofit.Builder()
-    .addConverterFactory(ScalarsConverterFactory.create())
-    .baseUrl(BASE_URL)
-    .build()
-
-interface BonPariApiService {
-    @GET("parties")
-    suspend fun getAllGames() : String
-}
-
-object BonPariApi {
-    val retrofitService : BonPariApiService by lazy {
-        retrofit.create(BonPariApiService::class.java) }
-}
-
-private const val BASE_URL = "http://10.0.2.2:3000/"
-
 private val moshi = Moshi.Builder()
     .add(KotlinJsonAdapterFactory())
     .build()

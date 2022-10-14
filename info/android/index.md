@@ -567,7 +567,7 @@ implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
 // and expose a public val
 class XXXViewModel : ViewModel() {
 
-    private var _list = listOf(...)
+    private var _list = listOf(5)
 
     val list: List<Int>
         get() = _list
@@ -616,6 +616,68 @@ viewModel.list.observe(this) { p ->
 </div></div>
 
 <hr class="sl">
+
+## Retrofit: sending requests over the internet
+
+<div class="row row-cols-md-2"><div>
+
+Most of android apps are making requests to a server, mostly to REST API, which take GET/POST/PUT/DELETE/... requests, and returns some JSON/XML.
+
+* In your manifest, before application, allow your app to use Internet
+
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+```
+
+* You will have to pick a "retrofit" extension according to your needs <small>(You must use Java 8)</small>
+
+<details class="details-e">
+<summary>XXXApiService.kt</summary>
+
+```kotlin
+
+import retrofit2.Retrofit
+import retrofit2.converter.scalars.ScalarsConverterFactory
+import retrofit2.http.GET
+
+// URL
+private const val BASE_URL = "https://url_to_your_api"
+
+private val retrofit = Retrofit.Builder()
+    // TODO: add the factory
+    .addConverterFactory(xxx)
+    .baseUrl(BASE_URL)
+    .build()
+
+// create an interface with the routes+methods
+interface XXXApiService {
+    @GET("posts")
+    suspend fun getAllPosts() : SomeReturnType
+}
+
+object XXXXApi {
+    val retrofitService : XXXApiService by lazy {
+        retrofit.create(XXXApiService::class.java) }
+}
+```
+
+Then in a ViewModel, you can do something like this
+
+```kotlin
+init {
+    viewModelScope.launch {
+        val res = XXXXApi.retrofitService.getAllPosts()
+        // ...
+    }
+}
+```
+
+</details>
+</div><div>
+
+</div></div>
+
+<hr class="sr">
 
 ## References
 
