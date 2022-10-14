@@ -42,6 +42,7 @@ Not-related to cyber
 Moar
 
 * https://dhilipsanjay.gitbook.io/ctfs/
+* https://overthewire.org/wargames/bandit/
 
 <hr class="sep-both">
 
@@ -298,6 +299,8 @@ Robots.txt can be used to disallow robots from indexing pages. Maybe they add so
 * `filetype:pdf`
 * `cache:domain`: cached version of URL
 * `intitle:...`: must be in the title
+* https://ahrefs.com/blog/google-advanced-search-operators/
+* https://www.exploit-db.com/google-hacking-database
 
 <hr class="sep-both">
 
@@ -507,3 +510,34 @@ Weak perms
 * https://blog.certcube.com/linux-privilege-escalation-with-sudo-rights/
 * https://gtfobins.github.io/
 * If env variables are loaded, you may exploit them too.
+
+<hr class="sep-both">
+
+## OSINT
+
+* https://osintframework.com/
+* https://medium.com/the-first-digit/osint-how-to-find-information-on-anyone-5029a3c7fd56
+* https://github.com/Datalux/Osintgram / https://kali-linuxtr.net/osintgram-a-osint-tool-on-instagram ?
+* Maltego: https://www.crackitdown.com/2018/07/maltego-full-user-guide-and-tutorial.html
+
+<hr class="sep-both²">
+
+## Bunch
+
+* https://wiki.owasp.org/index.php/OWASP_Testing_Guide_v4_Table_of_Contents
+* Metasploit
+  * https://www.youtube.com/watch?v=kdtMthVeC1M
+* Wireshark: https://unit42.paloaltonetworks.com/wireshark-workshop-videos/
+
+"IEUser" / "Passw0rd!"
+90 days.
+https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
+
+Sudo flaw
+https://thehackernews.com/2019/10/linux-sudo-run-as-root-flaw.html
+
+* XP
+  * https://helpdeskgeek.com/virtualization/how-to-set-up-a-windows-xp-virtual-machine-for-free/
+  * https://helpdeskgeek.com/virtualization/virtualbox-share-folder-host-guest/ sahre must be activated
+  * Must be "bridge"?
+* Exploit-db + others https://securitytrails.com/blog/top-exploit-databases
