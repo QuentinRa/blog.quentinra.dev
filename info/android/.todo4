@@ -89,26 +89,6 @@ https://developer.android.com/codelabs/basic-android-kotlin-training-internet-im
 
 ----------------
 OhMY
-ListAdapter is a subclass of the RecyclerView.Adapter class for presenting List data in a RecyclerView,
- including computing diffs between Lists on a background thread.
 
- implementation 'androidx.leanback:leanback:1.0.0'
-
-Use viewBinding
+Use dataBinding
 https://developer.android.com/codelabs/basic-android-kotlin-training-internet-images
-
-private val items: LiveData<List<Int>>
-items.value!!.size
-
-ListAdapter<Int, MatchItemAdapter.ViewHolder>(DiffCallback)
-companion object DiffCallback : DiffUtil.ItemCallback<Int>() {
-        // ex: id changed
-        override fun areItemsTheSame(oldItem: Int, newItem: Int): Boolean {
-            return oldItem == newItem
-        }
-
-        // ex: attributes/values changed
-        override fun areContentsTheSame(oldItem: Int, newItem: Int): Boolean {
-            return oldItem == newItem
-        }
-    }
