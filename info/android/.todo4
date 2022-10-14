@@ -1,18 +1,3 @@
-Suspend signals that a block of code or function can be paused or resumed.
-suspend fun() {}
-delay(3000)
-if call suspend, then suspend
-
-.launch {}
-.runBlocking {}
-.async {}
-    .await()
-    Deferred = Promise = Future, promise that a result will be returned later
-
-https://developer.android.com/kotlin/coroutines
-
-------------
-------------
 GET POST PUT DELETE
 Content-type
 

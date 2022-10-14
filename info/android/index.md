@@ -508,14 +508,36 @@ Most android applications runs on one "main" thread usually called "UI Thread", 
 
 To run long operations, you can't use this thread, and have to use background threads, as you can't render the view/respond to events, if the main thread is busy.
 
-While you can use threads to run background tasks, you should use **coroutine** which are a modern, and more efficient way of doing that. A coroutine is doing a job, that can be halted/resumed. They are created from a **CoroutineScope**, while the **Dispatcher** is the one telling on which thread a coroutine will execute.
-</div><div>
+While you can use threads to run background tasks, you should use [**coroutines**](https://developer.android.com/kotlin/coroutines) which are a modern, and more efficient way of doing that. A coroutine is doing a job, that can be halted/resumed. They are created from a **CoroutineScope**, while the **Dispatcher** is the one telling on which thread a coroutine will execute.
 
 Dispatchers are **Main** (main thread), Default, IO, or Unconfined.
 
 Scopes are
 
 * **GlobalScope**: executed as long as the app is running
+* **viewModelScope**: ONLY inside a viewModel.
+</div><div>
+
+On each scope, you can call
+
+* `launch {}`: the most used one, simply lunch a coroutine with some code
+* `runBlocking {}`: block the running thread to execute some code
+* `async {}` which generate a Deferred (=Promise) that can be "await".
+
+Some code may be paused/resumed. If you use such a function, marked `suspend`, then you must make your own function `suspend`.
+
+```kotlin
+viewModelScope.launch {
+    // lunch is suspend, we can call a suspend function
+    waitFiveSeconds()
+}
+
+private suspend fun waitFiveSeconds() {
+    // delay is a suspend function
+    // we can call it, waitFiveSeconds is suspend too
+    delay(5000)
+}
+```
 
 </div></div>
 
