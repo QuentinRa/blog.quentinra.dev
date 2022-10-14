@@ -183,3 +183,8 @@ val thread = Thread {
     }
     thread.start()
     Thread.sleep(50)
+
+---------------
+private val xxx: YYY by yyy()
+--------------
+Backing properties like in C#

@@ -519,6 +519,45 @@ Scopes are
 
 </div></div>
 
+<hr class="sl">
+
+## ViewModel
+
+<div class="row row-cols-md-2"><div>
+
+ViewModel is a Jetpack component that existing **since the application is created, until the application is destroyed** (`ViewModel#onCleared()`). It is used to store data. Unlike methods such as `onXXXInstanceState` using a bundle, it's not limited in size, nor requiring additional code.
+
+```gradle
+implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+// if not imported, add this one for activities
+// implementation "androidx.activity:activity-ktx:1.6.0"
+// and, this one if using fragments
+// implementation "androidx.fragment:fragment-ktx:1.5.3"
+```
+
+> Architectural note: this class should handle the data, along decision-making logic about that data, and helpers.
+</div><div>
+
+* Create a view model class
+
+```kotlin
+// always use a backing-field (private, var)
+// and expose a public val
+class XXXViewModel : ViewModel() {
+
+    private var _list = listOf(...)
+
+    val list: List<Int>
+        get() = _list
+}
+```
+
+* In your Activity, add a viewModel controlled by "viewModels". By doing that, you will ensure that "viewModel" is always filled with the same instance, instead of creating a new one using the constructor.
+
+```kotlin
+private val viewModel: XXXViewModel by viewModels()
+```
+</div></div>
 
 <hr class="sr">
 

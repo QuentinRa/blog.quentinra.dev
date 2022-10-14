@@ -92,18 +92,7 @@ https://developer.android.com/codelabs/basic-android-kotlin-training-fragments-n
 New fragment
 tools:context if changing the .fxml
 
-------------
-https://developer.android.com/guide/navigation/navigation-getting-started
-https://developer.android.com/guide/navigation/navigation-pass-data
-https://developer.android.com/courses/pathways/android-basics-kotlin-unit-3-pathway-2#codelab-https://developer.android.com/codelabs/basic-android-kotlin-training-fragments-navigation-component
-
-------
-
-ViewModel, one of the Architecture components to store your app data. The stored data is not lost if the framework
-destroys and re-creates the activities and fragments during a configuration change or other events.
-
-onSaveInstanceState() -> extra code + too small
-
+----------
 The main classes or components in Android Architecture are UI Controller (activity/fragment), ViewModel, LiveData and Room.
 These components take care of some of the complexity of the lifecycle and help you avoid lifecycle related issues.
 
@@ -111,32 +100,6 @@ Controller
 Draw on screen
 capture events / stuff related to the UI
 Can be destroyed at any time
-
-ViewModel
-Data, decision-making logic about that dat
-app related data that isn't destroyed when activity or fragment is destroyed and recreated by the Android framework
-
-// ViewModel
-implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
-https://developer.android.com/jetpack/androidx/releases/lifecycle
-
-// create in the associated activity/fragment
-private val viewModel: XXXViewModel by viewModels()
-=>
-Property delegation in Kotlin helps you to handoff the getter-setter responsibility to a different class.
-This class (called delegate class) provides getter and setter functions of the property and handles its changes.
-=> we are using this to avoid having a new instance created
-Instead, use the property delegate approach and delegate the responsibility of the viewModel object to a separate class called viewModels.
-That means when you access the viewModel object, it is handled internally by the delegate class, viewModels.
-The delegate class creates the viewModel object for you on the first access, and retains its value through configuration changes and
- returns the value when requested.
-
-Backing properties like in C#
- val count: Int
-    get() = _count
-
-A view model lives from the start until the activity is destroyed (#onCleared())
-Add helpers in your view model, like getUserByID(XXX).
 
 -----------
 TextInputLayout comes with a built-in functionality to display error messages.
