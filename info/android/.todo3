@@ -107,20 +107,6 @@ xxx.error = getString(R.string.error)
 xxx.error = null // clear
 xxx.isErrorEnabled = true
 -----------
-LiveData is an observable data holder class that is lifecycle-aware (only update if started/resumed).
-Just something observing changes in the model, and updating the view.
-
-MutableLiveData is the mutable version of the LiveData
-=> use LiveData as a type  LiveData<String> and MutableLiveData<String> (backed)
-=> live_data_var.value
-=> _currentWordCount.value!!
-=> LiveData<Int>.value)?.plus(v)
-=> LiveData<Int>.value)?.inc()
-
-// Observe the live_data_var LiveData.
-// viewLifecycleOwner -> as we are in a fragment
-viewModel.live_data_var.observe(viewLifecycleOwner, { p ->
-})
 
 apps can listen to the data changes from the layout.
 With Data Binding, when an observable LiveData value changes, t

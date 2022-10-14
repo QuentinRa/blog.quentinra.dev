@@ -188,3 +188,6 @@ val thread = Thread {
 private val xxx: YYY by yyy()
 --------------
 Backing properties like in C#
+------------
+=> Int?.plus(v)
+=> Int?.inc()
