@@ -541,3 +541,19 @@ https://thehackernews.com/2019/10/linux-sudo-run-as-root-flaw.html
   * https://helpdeskgeek.com/virtualization/virtualbox-share-folder-host-guest/ sahre must be activated
   * Must be "bridge"?
 * Exploit-db + others https://securitytrails.com/blog/top-exploit-databases
+
+<hr class="sep-both">
+
+## metasploit
+
+* vm2
+  * https://docs.rapid7.com/metasploit/metasploitable-2/
+  * msfadmin:msfadmin
+  * sudo loadkeys fr
+  * VBox: use existing drive
+  * C:\Program Files (x86)\VMware\VMware Player\OVFTool> .\ovftool.exe "Metasploitable.vmx"  "export.ovf"
+  * https://windowsloop.com/convert-vmware-to-virtualbox/
+  * 2 processors
+  * https://www.vulnhub.com/entry/metasploitable-2,29/
+  * File > Tools > Network manager (add)
+    * add to each VM instead of Nat in network
