@@ -2,6 +2,36 @@ https://www.offensive-security.com/metasploit-unleashed/
 https://github.com/rapid7/metasploitable3
 https://dhilipsanjay.gitbook.io/ctfs/
 
+------------------
+
+https://www.databreaches.net/hackers-are-using-cookies-to-sidestep-two-factor-authentication/
+https://www.thewindowsclub.com/cookie-stealing-or-scraping
+https://thehackernews.com/2021/10/hackers-stealing-browser-cookies-to.html
+https://www.malwarebytes.com/spoofing
+Juiceshop
+
+https://owasp.org/www-project-top-ten/
+
+https://app.hackthebox.com/starting-point
+https://academy.hackthebox.com/login
+
+https://www.youtube.com/watch?v=1iHCZybiDcw
+https://www.youtube.com/watch?v=-pNYmgK_dWo
+https://www.youtube.com/watch?v=G-v2NEgyzSs
+
+https://www.kali.org/get-kali/#kali-platforms
+https://usherbrooke-my.sharepoint.com/personal/bush1001_usherbrooke_ca/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbush1001%5Fusherbrooke%5Fca%2FDocuments%2FVM%2FXP%2Ezip&parent=%2Fpersonal%2Fbush1001%5Fusherbrooke%5Fca%2FDocuments%2FVM&ga=1
+https://moodle.usherbrooke.ca/pluginfile.php/3164887/mod_resource/content/1/Cr%C3%A9ation%20dune%20cl%C3%A9%20USB%20live%20boot%20Kali.pdf
+https://sourceforge.net/projects/metasploitable/
+
+https://www.educba.com/mariadb-list-tables/
+https://www.sqltutorial.org/sql-list-all-tables/
+
+Alternate Data Streams (ADS)
+Dans les fichiers NTFS, généralement un flux :$DATA est le flux par défaut, mais il peut y avoir d’autres flux cachés dans un exécutable.
+Get-Item -Path fichier.exe -Stream * : voir tous les flux
+wmic process call create $(Resolve-Path .\fichier.exe:flux) : lancer l’exécutable via un flux
+
 ------------
 
 https://www.inmotionhosting.com/blog/ways-to-learn-more-about-cybersecurity/

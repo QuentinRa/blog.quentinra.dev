@@ -22,36 +22,32 @@
         "icon": null
       }
     ],
-    "Attacks": [
+    "Web": [
       {
-        "tag": "server",
-        "name": "Server exploits",
-        "desc": "Some knowledge related to how hackers can exploit your server, along with notes to prevent such things.",
-        "icon": null
+        "tag": "web/website/index.md",
+        "name": "Exploit website",
+        "desc": "",
+        "icon": ""
       },
       {
-        "tag": "website",
-        "name": "Website exploits",
-        "desc": "Some knowledge related to how hackers can exploit your website, along with notes to prevent such things.",
-        "icon": null
+        "tag": "web/website/index.md",
+        "name": "Exploit webserver",
+        "desc": "",
+        "icon": ""
       },
       {
-        "tag": "database",
-        "name": "Database exploits",
-        "desc": "Some knowledge related to how hackers can exploit your database, along with notes to prevent such things.",
-        "icon": null
-      },
+        "tag": "web/tools/index.md",
+        "name": "CyberTools (Web)",
+        "desc": "",
+        "icon": ""
+      }
+    ],
+    "Software": [
       {
-        "tag": "software",
-        "name": "Reverse Engineering",
-        "desc": "Try to analyse, and exploit programs by accessing the underlying code, which can help finding database credential, or stuff like that.",
-        "icon": null
-      },
-      {
-        "tag": "remote-access",
-        "name": "Remote Access",
-        "desc": "This is some knowledge related to what attackers are doing once they have access to a remote shell.",
-        "icon": null
+        "tag": "random/crack_password/index.md",
+        "name": "Crack passwords",
+        "desc": "",
+        "icon": ""
       }
     ]
   }
