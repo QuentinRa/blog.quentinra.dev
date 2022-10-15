@@ -178,8 +178,6 @@ $ ./enum4linux.pl <options> <ip>
 
 ![Usage: Penetration testing](https://img.shields.io/badge/usage-Penetration%20testing-ffd700)
 
-* [THM Metasploit (2019)](https://tryhackme.com/resources/blog/metasploit)
-
 The [Metasploit Framework](https://github.com/rapid7/metasploit-framework) ([setup debian](https://computingforgeeks.com/install-metasploit-framework-on-debian/)) is a penetration testing framework that you can use to test your systems.
 
 ```bash

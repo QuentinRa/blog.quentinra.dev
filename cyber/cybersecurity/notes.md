@@ -626,6 +626,11 @@ https://thehackernews.com/2019/10/linux-sudo-run-as-root-flaw.html
   * `vulns`
   * `vulns -s ftp`
   * `vulns -S keyword`
+* https://www.techtalk7.com/detect-if-running-with-administrator-privileges-under-windows-xp/
+* https://www.offensive-security.com/metasploit-unleashed/working-with-nessus/
+  * MS09-050
+  * search exploits 09-050
+* https://tryhackme.com/resources/blog/metasploit
 
 <hr class="sep-both">
 
@@ -633,6 +638,9 @@ https://thehackernews.com/2019/10/linux-sudo-run-as-root-flaw.html
 
 * `sudo apt install maltego`
 * `maltego`
-* Maltego CE (free)
+  * Maltego CE (free)
+  * Login (https://www.maltego.com/ce-registration/)
+  * ...
+* https://docs.maltego.com/support/solutions/articles/15000041468-introduction-to-maltego-standard-transforms
 * https://medium.com/hengky-sanjaya-blog/how-to-use-maltego-f57fe77e36e2
 * https://www.maltego.com/blog/how-to-use-maltego-transforms-to-map-network-infrastructure-an-in-depth-guide/
