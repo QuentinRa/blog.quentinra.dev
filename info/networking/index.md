@@ -271,7 +271,7 @@ TCP messages all have a [flag](https://en.wikipedia.org/wiki/Transmission_Contro
 <summary>UDP (17): user datagram protocol</summary>
 <div class="row row-cols-md-2"><div>
 
-It's a **connection-less protocol**. It's used for fast messaging, by applications that don't mind if a packet is loss/incorrect. It's **not trustworthy** (`fiable`)
+It's a **connection-less protocol**. It's used for fast messaging, by applications that don't mind if a packet is loss/incorrect. It's **not trustworthy** (`non fiable`)
 
 * No warranty that the message will be received
 * No warranty that the message received is correct
@@ -415,4 +415,28 @@ The iterative approach mandated by the RFC 1034 is
 
 But, in practice, to reduce traffic, and not put a heavy pressure on the root servers, practices such as caching are used.
 </details>
+</div></div>
+
+<hr class="sr">
+
+## Routing table
+
+<div class="row row-cols-md-2"><div>
+
+When a machine want to send a packet to another one, the **routing table** will be used to determine
+
+* if we can send the packet directly to the destination
+* or, which machine can we ask to do the delivery
+
+![Routing table](_images/routing_table.png)
+
+You can relate this table to a (switch) case statement which exists in many programming languages.
+
+* The IP will pass by each destination. The GenMask (Netmask) will be used to get the **network address**. Then, if the IP is withing the network range, then we will use this destination.
+* If no destination is found, then `0.0.0.0` <small>(default)</small> will be used
+</div><div>
+
+Once you found a destination, the **gateway** indicate what to do to reach this destination. If the gateway is `0.0.0.0`, then it means that you can directly send the packet (LAN). Otherwise, you have to send the packet to the IP in gateway.
+
+Another thing that you should take note of is **Iface**, which is the network interface that will be used to send the packet.
 </div></div>
