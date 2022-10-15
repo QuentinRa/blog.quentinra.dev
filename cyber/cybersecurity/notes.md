@@ -628,3 +628,13 @@ https://thehackernews.com/2019/10/linux-sudo-run-as-root-flaw.html
   * `vulns`
   * `vulns -s ftp`
   * `vulns -S keyword`
+
+<hr class="sep-both">
+
+## maltego
+
+* `sudo apt install maltego`
+* `maltego`
+* Maltego CE (free)
+* https://medium.com/hengky-sanjaya-blog/how-to-use-maltego-f57fe77e36e2
+* https://www.maltego.com/blog/how-to-use-maltego-transforms-to-map-network-infrastructure-an-in-depth-guide/
