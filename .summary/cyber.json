@@ -53,20 +53,6 @@
         "desc": "This is some knowledge related to what attackers are doing once they have access to a remote shell.",
         "icon": null
       }
-    ],
-    "Cryptography": [
-      {
-        "tag": "cryptography/basics/index.md",
-        "name": "Crypto (basics)",
-        "desc": "A lot of mathematical foundations allowing one's to understand more easily cryptographic algorithms.",
-        "icon": null
-      },
-      {
-        "tag": "cryptography/algorithms/index.md",
-        "name": "Crypto (algorithms)",
-        "desc": "Cryptography is the knowledge related to the encryption and decryption of messages.",
-        "icon": null
-      }
     ]
   }
 }
