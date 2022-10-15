@@ -1420,6 +1420,8 @@ $ scp file_to_upload user@ip:remote/path/
 ```bash
 $ scp user@ip:remote/path/ local_path_to_dest
 ```
+
+Use `scp -r` to download/upload a folder will all its content.
 </details>
 </div><div>
 <details class="details-e">

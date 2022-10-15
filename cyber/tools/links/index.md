@@ -26,7 +26,7 @@ A list of useful resources (ex: website, gits...) that you may use while learnin
 * [Damn Vulnerable Web Application](https://dvwa.co.uk/)
 
 
-**BugBounties**
+**bug bounty programs** [bug bounty programs list](https://www.bugcrowd.com/bug-bounty-list/)
 
 Some companies are giving bounties to ethical hackers that detected exploits in their infrastructures.
 

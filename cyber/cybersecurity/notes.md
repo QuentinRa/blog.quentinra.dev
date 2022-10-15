@@ -27,22 +27,11 @@ Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try 
 
 * Intrusion Detection System (IDS) is a system that detects unauthorised network and system intrusions. Examples include detecting unauthorised devices connected to the local network and unauthorised users accessing a system or modifying a file.
 
-* "bug bounty programs"
-
 <hr class="sep-both">
 
 ## Tools
 
-* https://osintframework.com/
-
-Not-related to cyber
-
-* https://www.zoho.com/office/
-
-Moar
-
-* https://dhilipsanjay.gitbook.io/ctfs/
-* https://overthewire.org/wargames/bandit/
+* The [SecLists GitHub Repository](https://github.com/danielmiessler/SecLists/) contains useful lists of usernames/passwords, payloads, urls, ...
 
 <hr class="sep-both">
 
@@ -60,8 +49,6 @@ Moar
     * ufw: firewall
     * apache
     * fail2ban
-* `scp -r`
-* `nc -l -p 12345`
 
 <hr class="sep-both">
 
@@ -613,3 +600,11 @@ https://thehackernews.com/2019/10/linux-sudo-run-as-root-flaw.html
   * Root (cd /)
   * Documents
   * Windows/System32/config/ (sam database - where password are stored)
+
+<hr class="sep-both">
+
+## Nmap
+
+* nmap -F (fast scan)
+* scanme.nmap.org
+* Disable intrusion detection in norton

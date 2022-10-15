@@ -179,12 +179,14 @@ If you want to be a server, you can pick a port, and listen to find
 
 ```bash
 $ netcat localhost 33666 -l
+$ netcat localhost -p 33666 -l
 ```
 
 If you are a client, you can connect to a server, and send messages. The server will see them, along with any other client.
 
 ```bash
 $ netcat localhost 33666
+$ netcat localhost -p 33666
 ```
 </details>
 </div></div>
