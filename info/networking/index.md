@@ -35,7 +35,6 @@ A Internet Protocol version 4 (**IPV4**) address is a **32-bits long address**.
 <details class="details-e">
 <summary>Dot-decimal notation (<code>Notation décimale pointée</code>, DDN)</summary>
 
-
 <div class="row row-cols-md-2"><div>
 
 This is the most-known representation of a IPV4 address. We are splitting ours **32 bits** into **4 groups of 8 bits** called **bytes**/octets (`octect`), we are converting them to decimal, and separated with a **dot**.

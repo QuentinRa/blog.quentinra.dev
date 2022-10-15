@@ -596,6 +596,10 @@ https://thehackernews.com/2019/10/linux-sudo-run-as-root-flaw.html
     * rid
     * LM hash
     * NTML hash - decrypt this (john nt)
+  * `getuid`
+  * https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/
+  * Capture: https://www.offensive-security.com/metasploit-unleashed/screen-capture/
+  * https://www.offensive-security.com/metasploit-unleashed/Keylogging/
 * KeyLocations Windows
   * Root (cd /)
   * Documents
@@ -608,3 +612,19 @@ https://thehackernews.com/2019/10/linux-sudo-run-as-root-flaw.html
 * nmap -F (fast scan)
 * scanme.nmap.org
 * Disable intrusion detection in norton
+* sudo systemctl start postgresql
+* sudo msfdb init
+  * I got some error, but it works
+  * you need to restart msf
+  * `db_status
+    [*] Connected to msf. Connection type: postgresql.`
+* https://www.offensive-security.com/metasploit-unleashed/using-databases/
+* https://scubarda.com/2015/11/16/launching-nessus-scans-inside-metasploit/
+  * `load nessus`
+  * `nessus_connect user:pass@localhost:8834`
+  * `nessus_scan_list`
+  * `nessus_db_import id`
+  * `services`
+  * `vulns`
+  * `vulns -s ftp`
+  * `vulns -S keyword`
