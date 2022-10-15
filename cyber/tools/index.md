@@ -183,18 +183,19 @@ $ ./enum4linux.pl <options> <ip>
 The [Metasploit Framework](https://github.com/rapid7/metasploit-framework) ([setup debian](https://computingforgeeks.com/install-metasploit-framework-on-debian/)) is a penetration testing framework that you can use to test your systems.
 
 ```bash
-$ mfsconsole -q
+$ msfconsole -q
 # search a service/module (ex: apache)
-mfs6 > search <service_or_module>
-# select a module
-mfs6 > use <module>
+msf6 > search <service_or_module_or_CVE-YEAR-Id>
+# select a module (enter its name)
+msf6 > use <module_or_#>
 # list selected module's options
 msf6 exploit('module_used') > options
-msf6 exploit('module_used') > show options
+msf6 exploit('module_used') > show options # same
 # set it's options
-msf6 exploit('module_used') > set <option> <valeur>
+msf6 exploit('module_used') > set <option> <value>
 # start exploit
 msf6 exploit('module_used') > run
+msf6 exploit('module_used') > exploit # same
 ```
 
 <details class="details-e">
