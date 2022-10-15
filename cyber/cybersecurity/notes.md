@@ -92,11 +92,9 @@ On a side note, Masscan uses a similar approach to discover the available system
 
 ## Networking
 
-* Default Gateway: special address that is capable of sending information to another network (.1 or .254)
-       Any data that need to go to a device that isn't on the same network will be sent here.
-     * subnetting: use Network Address to split the network
-       * is achieved by splitting up the number of hosts that can fit within the network, represented by a number called a subnet mask
-       * 32 bits
+* subnetting: use Network Address to split the network
+  * is achieved by splitting up the number of hosts that can fit within the network, represented by a number called a subnet mask
+  * 32 bits
 
 a subnetwork is usually the equivalent of one or more network segments connected together and configured to use the same router. The network segment refers to a physical connection, while a subnetwork refers to a logical connection.
 
@@ -131,7 +129,7 @@ ARP RESPONSE
 
 ### Samba
 
-"Samba is the standard Windows interoperability suite of programs for Linux and Unix. It allows end users to access and use files, printers and other commonly shared resources on a companies intranet or internet. Its often referred to as a network file system.
+"Samba is the standard Windows interoperability suite of programs for Linux and Unix. It allows end users to access and use files, printers and other commonly shared resources on a companies intranet or internet. It's often referred to as a network file system.
 
 Samba is based on the common client/server protocol of Server Message Block (SMB). SMB is developed only for Windows, without Samba, other computer platforms would be isolated from Windows machines, even if they were part of the same network."
 

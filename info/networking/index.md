@@ -432,8 +432,8 @@ When a machine want to send a packet to another one, the **routing table** will 
 
 You can relate this table to a (switch) case statement which exists in many programming languages.
 
-* The IP will pass by each destination. The GenMask (Netmask) will be used to get the **network address**. Then, if the IP is withing the network range, then we will use this destination.
-* If no destination is found, then `0.0.0.0` <small>(default)</small> will be used
+* The IP will try each destination. The GenMask (Netmask) will be used to get the **network address**. Then, if the IP is withing the network range, then we will use this destination.
+* If no destination is found, then `0.0.0.0` , will be used. It's leading to what we call the **Default Gateway**, which is usually ending with either ".1" or ".254".
 </div><div>
 
 Once you found a destination, the **gateway** indicate what to do to reach this destination. If the gateway is `0.0.0.0`, then it means that you can directly send the packet (LAN). Otherwise, you have to send the packet to the IP in gateway.
