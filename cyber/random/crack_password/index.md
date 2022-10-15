@@ -84,3 +84,40 @@ $ echo "dG90bw=" | base64 -d
 toto
 ```
 </div></div>
+
+<hr class="sl">
+
+## GPG
+
+<div class="row row-cols-md-2"><div>
+
+The `gpg` tool can be used to encrypt files, using a passphrase, which is like a password. It can also be used to sign something. For instance, GitHub allow you to sign your commits using GPG keys.
+
+To encrypt something, you could do this. It will generate a `file.gpg`
+
+```bash
+$ gpg --cipher-algo AES-256 --symmetric file
+```
+
+And, to decrypt <small>(no passphrase is asked if it is cached)</small>
+
+```bash
+$ gpg -d file.gpg
+# generate back file
+```
+</div><div>
+
+You can **crack a gpg passphrase** using john too! But, you need to convert the gpg passphrase to a hash first.
+
+```bash
+$ sudo gpg2john file.pgp > hash
+```
+
+Then, use john as usual, with the format "gpg"
+
+```bash
+$ john --format=gpg hash --wordlist=/usr/share/wordlists/rockyou.txt 
+```
+
+> If by any means you got someone's private key that was used to encrypt this file <small>(a key may be used instead of a passphrase)</small>, then use `gpg --import xxx.key` to import it, and decrypt the file as usual.
+</div></div> 

@@ -208,23 +208,7 @@ https://doi.org/10.6028/NIST.IR.8105
 
 ---
 
-* john --format=gpg
 * ssh2john
-* gpg2john as said below
-
-gpg
-
-* way to encrypt something
-* `gpg --cipher-algo [encryption type] [encryption method] [file to encrypt]`
-* `[encryption type]`: AES-256
-* `[encryption method]`: `--symmetric`
-* way to decrypt
-* `gpg encrypted_file`
-* `gpg -d encrypted_file`
-* crack
-* `sudo gpg2john file`: convert gpg to hash
-* import someone else private key
-* `gpg --import xxx.key`
 
 <hr class="sep-both">
 
