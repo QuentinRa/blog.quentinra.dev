@@ -206,8 +206,6 @@ The NSA recommends using RSA-3072 or better for asymmetric encryption and AES-25
 
 https://doi.org/10.6028/NIST.IR.8105
 
----
-
 * ssh2john
 
 <hr class="sep-both">
@@ -393,17 +391,6 @@ $ transport[1]="v"
 * `if [ "$x" = "$y" ]`
 * https://www.codewars.com/
 * https://www.hackerrank.com/
-
-<hr class="sep-both">
-
-## Vim
-
-* Debian-Based Distributions: sudo apt install vim
-* Arch-Based Distributions: sudo pacman -S vim
-* Fedora-Based Distributions: sudo dnf install vim-enhanced
-* w: start of a word
-* e: end of a word
-* `:w !sudo tee %`: write file as root
 
 <hr class="sep-both">
 

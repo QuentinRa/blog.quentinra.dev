@@ -1,6 +1,9 @@
 https://linuxcommandlibrary.com/man/snap
 sudo snap install xxx
 
+Arch-Based Distributions: sudo pacman -S vim
+Fedora-Based Distributions: sudo dnf install vim-enhanced
+
 dpkg / apt in /etc/apt/sources.list.d
 sudo dpkg -i xxx.deb
 

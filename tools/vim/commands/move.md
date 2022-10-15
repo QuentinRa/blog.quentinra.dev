@@ -14,6 +14,8 @@ This is a list of the commands you will use to move your cursor/the screen.
 * `xG` or `:x` : go to line x
 * `gg` : start of the file
 * `G` : end of the file
+* `w` : start of a word
+* `e` : end of a word
 * `j` : move down
 * `k` : move up
 * `h` : move left

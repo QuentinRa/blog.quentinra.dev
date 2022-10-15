@@ -75,8 +75,10 @@ Here are some details about basic commands
 * [copy](commands/copy.md)
 * [search](commands/search.md)
 * [replace](commands/replace.md)
-* [others commands](commands/others.md)
+* [other commands](commands/others.md)
 * [cqi syntax](commands/cqi.md)
+
+> One little trick: `:w !sudo tee %` allows us to save a file in a vim session that wasn't started as root.
 
 <hr class="sr">
 
