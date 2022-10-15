@@ -4,9 +4,24 @@
 
 <hr class="sl">
 
-## ...
+## How is communication taking place?
+
+<div class="row row-cols-md-2"><div>
+
+To send a message from A to B, 
+
+1. You first need to know how to contact is B
+   * **IP address**: know where is B
+   * **MAC address**: a way of identifying B given a location
+   * **Interface**: this represents where <small>(physically)</small> the data will pass by
+2. Then, you need to determine how you will communicate
+   * **Protocol**: set of rules used to formalize of way of exchanging messages
+   * **Port**: this represents where <small>(virtually)</small> the data will pass by
+3. Send the message, and way for a reply
+</div><div>
 
 ...
+</div></div>
 
 <hr class="sr">
 
@@ -228,13 +243,15 @@ Some are splitting the "Layer 1" back in two layers, but it's not in the RFC1122
 
 ## Protocols
 
+> **Protocol Data Unit (PDU)**: this is format that is used to transfer data. This is made of the headers of the protocol, followed by the data.
+
 <details class="details-e mt-4">
 <summary>TCP (6): transmission control protocol</summary>
 <div class="row row-cols-md-2"><div>
 
 It's a **connection-based protocol**. It's used when there is a need for a **trustworthy/reliable** (`fiable`), and ordered way of sending messages.. If there is an error, then the sender is notified, and the message is sent again.
 
-> **TCP** messages are called segments.
+> TCP PDU are called **segments**.
 
 **Example**
 
@@ -276,7 +293,7 @@ It's a **connection-less protocol**. It's used for fast messaging, by applicatio
 * No warranty that the message will be received
 * No warranty that the message received is correct
 
-> **UPD** messages are called datagrams.
+> UPD PDU are called **datagrams**.
 </div><div>
 
 **Example**
