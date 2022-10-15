@@ -59,4 +59,28 @@ You can provide a wordlist
 # on Kali
 john --format=raw-md4 --wordlist=/usr/share/wordlists/rockyou.txt myHash.txt
 ```
+
+**Notes**
+
+* You can merge wordlist into one if needed (`cat wordlist1 wordlist2 wordlist3 > wordlist4`)
+* If it takes a lot of time, you may try another algorithm, or maybe reversing the list
+</div></div>
+
+<hr class="sr">
+
+## Base64
+
+<div class="row row-cols-md-2"><div>
+
+Base64 is only an encoding function. This isn't doing an encryption, or something cool like that, so it's not used for confidentiality. It could be used to write (encode) an image/... as a string.
+
+> Most base64 strings are ending with "=", or "==".
+</div><div>
+
+```bash
+$ echo "toto" | base64
+dG90bwo=
+$ echo "dG90bw=" | base64 -d
+toto
+```
 </div></div>

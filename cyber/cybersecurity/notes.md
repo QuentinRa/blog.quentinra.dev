@@ -208,31 +208,9 @@ https://doi.org/10.6028/NIST.IR.8105
 
 ---
 
-* Take input, and generate a hash. It's a one-way function.
-* Ex: https://www.md5hashgenerator.com/ (weak, so is SHA1, as two input same output)
-* most important use: integrity checking
-* bruteforce, with **John the Ripper**
-  * john --format=raw-md5 myHash.txt
-  * --wordlist=/usr/share/wordlists/rockyou.txt
-  * john --format=raw-md4 --wordlist=xxx.txt myHash.txt
-  * john --format=raw-sha1
-  * john --format=gpg
-  * if it takes a lot of time, try another algorithm first
-  * if it takes a lot of times, try reversing the wordlist
-  * you can use "cat x & cat y && cat z > hhh", then "grep -e something > stuff" to merge then filter
-  * if this bastard is doing ASCII shit, try `john myHash.txt --wordlist=/usr/share/wordlists/rockyou.txt`
-  * ssh2john
-  * gpg2john as said below
-* Type of Hash
-  * `hash-identifier <input>` to find the type for well-known hashes
-  * https://hashes.com/en/tools/hash_identifier
-  * Modern alternative: https://github.com/noraj/haiti
-
-base64
-
-* a group of binary-to-text encoding schemes that represent binary data in an ASCII string format
-* `xxx | base64 -d`
-* https://www.base64encode.net/
+* john --format=gpg
+* ssh2john
+* gpg2john as said below
 
 gpg
 
