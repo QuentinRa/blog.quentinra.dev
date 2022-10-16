@@ -1024,6 +1024,8 @@ $ grep "opt\?" *
 # match "op" with "t" optional
 $ grep -E "opt?" *
 # match "op" with "t" optional
+$ egrep "opt?" *
+# same as grep -E
 ```
 </div></div>
 </details>

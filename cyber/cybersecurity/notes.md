@@ -394,36 +394,6 @@ $ transport[1]="v"
 
 <hr class="sep-both">
 
-## Regex
-
-* `egrep` = `grep -E`
-* https://tryhackme.com/room/catregex
-* https://regexr.com/
-* "a.c" means it could be "a@c"... but with "a[.]c", or "a\.c", it will match just "a.c".
-
-```none
-$ [a-z] # charset
-metacharacter
-$ \d digit
-$ \D non-digit
-$ \w alphanumerical (_, ., a-zA-Z, 0-9...)
-$ \W (!#...)
-$ \s whitespace
-$ \S
-
-{12} - exactly 12 times.
-{1,5} - 1 to 5 times.
-{2,} - 2 or more times.
-* - 0 or more times.
-+ - 1 or more times.
-
-(day|night)
-
-^\D : don't start with a digit
-```
-
-<hr class="sep-both">
-
 ## Privilege escalation
 
 * https://www.udemy.com/course/linux-privilege-escalation/?referralCode=0B0B7AA1E52B4B7F4C06

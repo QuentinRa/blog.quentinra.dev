@@ -446,7 +446,9 @@ $ export PATH=/home/toto/bin:$PATH
 
 <div class="row row-cols-md-2"><div>
 
-**Glob-patterns** allow us to define a set of filenames using **wildcards** (`motifs`). For instance, `*.h` will be replaced with every file -- and directory --, ending with `.h`. They are mostly used on commands taking many filenames, in which you don't want to manually have to write all of them 😎.
+A **glob-pattern** is an expression using **wildcards** (`motifs`), that when evaluated by the shell, will be replaced with a list of files. 
+
+For instance, `*.h` will be replaced with every file -- and directory --, ending with `.h`. They are mostly used on commands taking many filenames, in which you don't want to manually have to write all of them 😎.
 
 <table class="table table-bordered table-striped border-dark">
 <thead>
@@ -460,52 +462,57 @@ $ export PATH=/home/toto/bin:$PATH
 <tr><td><code>[abc]</code></td><td>one character which is either a, b, or c.</td></tr>
 <tr><td><code>[^abc]</code><br><code>[!abc]</code></td><td>any character which is not a, nor b, nor c.</td></tr>
 </tbody></table>
-
-**Note**: you may use ranges in `[]` such as `[0-9]`, or `[a-z]`, or shortcuts such as `[[:digit:]]` (a number), `[[:upper:]]` (uppercase), .`[[:lower:]]` (lowercase), `[[:space:]]` (space, tab, newline...), `[[:alnum:]]` (any alphanumeric character).
-
-**Note**: You may want to use a token as a character such as "*", "?"...
-
-* Use `[]` to escape it: `[?]`
-* Or using `\` (backslash) which is its purpose: `\*`
 </div><div>
 
-List (`ls`) every file
+<table class="table table-bordered table-striped border-dark">
+<thead>
+<tr><th>GP</th><th>Description</th><th>Examples</th></tr>
+</thead>
+<tbody>
 
-```bash
-$ ls *
-```
+<tr><td><code>*</code></td><td>
 
-List (`ls`) every file starting with `b`
+Anything
+</td><td>
 
-```bash
-$ ls b*
-```
+* &lt;nothing&gt;
+* folder
+* myFile.txt
+</td></tr>
 
-List (`ls`) every file NOT starting with `b`
+<tr><td><code>???</code></td><td>
 
-```bash
-$ ls [^b]*
-```
+match a 3-characters string
+</td><td>
 
-List (`ls`) every file starting with "a-" followed by 2 numbers <small>(ex: a-22)</small>
+abc
+</td></tr>
 
-```bash
-$ ls a-[0-9][0-9]*
-$ ls a-[[:digit:]][[:digit:]]*
-```
+<tr><td><code>toto*</code></td><td>
 
-List (`ls`) every three-letters long file ending with "n" <small>(ex: von)</small>
+A word starting with "toto"
+</td><td>
 
-```bash
-$ ls ??n
-```
+* toto
+* toto1
+</td></tr>
 
-List (`ls`) every file ending with "?"
+<tr><td><code>[0-9]*</code><br><code>[[:digit:]]*</code></td><td>
 
-```bash
-$ ls *[?]
-$ ls *\?
-```
+a word starting with a digit
+</td><td>
+
+0ac
+</td></tr>
+
+<tr><td><code>[^ab]*</code><br><code>[!ab]*</code></td><td>
+
+match a string not starting with "a", nor "b"
+</td><td>
+
+downloads
+</td></tr>
+</tbody></table>
 
 </div></div>
 </details>
@@ -533,12 +540,12 @@ And, some new tokens were introduced
 <tr><td><code>^x</code></td><td>lines starting with x</td></tr>
 <tr><td><code>[abc]</code></td><td>lines ending with x</td></tr>
 <tr><td><code>(x|y)</code></td><td>either x or y</td></tr>
-<tr><td><nobr><code>x{n, m}</code></nobr></td><td>at least $n$ times x, up to $m$ times, leave either empty if no limit</td></tr>
+<tr><td><nobr><code>x{n,m}</code></nobr><br><nobr><code>x{n,}</code></nobr><br><nobr><code>x{,m}</code></nobr><br><nobr><code>x{n}</code></nobr></td><td>at least $n$ times x, up to $m$ times, leave either empty if no limit.<br>The last one means "exactly $n$" times.</td></tr>
 <tr><td><code>(ab)+</code></td><td>at least one time 'ab'</td></tr>
 </tbody></table>
 </div><div>
 
-Use [regex101](https://regex101.com/), or similar websites to test your regexes.
+Use [regex101](https://regex101.com/)/[regexr](https://regexr.com/), or similar websites to test your regexes.
 
 * <kbd>sed</kbd>: find, and replace matching text with some other text
 * <kbd>grep</kbd>: find matching text, or files having the matching text
@@ -551,8 +558,30 @@ Something to note with regexes is the notion of **groups**. You can write some e
 
 * <kbd>sed</kbd>
 * Many programming languages
+
+<hr>
+
+You can [train your skills in the 'catregex' room on TryHackMe](https://tryhackme.com/room/catregex).
 </div></div>
 </details>
+
+<div class="row row-cols-md-2"><div>
+
+If you want to use a pattern as a character, meaning that you don't want it to be interpreted as a pattern, then you need to escape it.
+
+For instance, if you write the glob-pattern `a?c`, then it could be `abc`... But if you write `a\?c`, or `a[?]c`, then it will only match `a?c`.
+</div><div>
+
+Everything defined in `[]` is called a **charset**. If you need to character between 'a', and 'z', then you could write the charset `[a-z]`. There are pre-defined charset if needed
+
+* `[[:digit:]]` which is `[0-9]`
+* `[[:upper:]]` which is `[A-Z]`
+* `[[:lower:]]` which is `[a-z]`
+* `[[:space:]]` which is `[ \n\t]`
+* `[[:alnum:]]` which is `[a-zA-Z0-9._]`
+
+Regex introduced **metacharacter** which are shortcut to these charsets: `\d` <small>(digit)</small>, `\w` <small>(alnum)</small>, `\s` <small>(whitespace...)</small>.... They also have their negative: `\D` <small>(non-digit)</small>, `\W` <small>(non-alnum: !#...)</small>, `\s` <small>(not whitespace/...)</small>.
+</div></div>
 
 <hr class="sr">
 

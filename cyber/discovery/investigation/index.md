@@ -6,7 +6,6 @@
 
 ...
 
-
 <hr class="sr">
 
 ## Maltego
