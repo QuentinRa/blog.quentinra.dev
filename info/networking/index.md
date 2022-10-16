@@ -6,13 +6,13 @@
 
 ## How is communication taking place?
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2"><div class="align-self-center">
 
 To send a message from A to B, 
 
 1. You first need to know how to contact is B
    * **IP address**: know where is B <small>(logical identifier)</small>
-   * **MAC address**: a way of identifying B given a location <small>(physical identifier)</small>
+   * **MAC address**: identifying B given a location <small>(physical identifier)</small>
    * **Network interface**: this represents where <small>(physically)</small> the data will pass by
 2. Then, you need to determine how you will communicate
    * **Protocol**: set of rules to define a way of exchanging messages
@@ -20,7 +20,9 @@ To send a message from A to B,
 3. Send the message, and way for a reply
 </div><div>
 
-...
+This is a sort of simplified representation of all elements that are a part of the communication of two machines.
+
+![Random Network](_images/radom_network.png)
 </div></div>
 
 <hr class="sr">
@@ -29,7 +31,7 @@ To send a message from A to B,
 
 <div class="row row-cols-md-2"><div>
 
-A **network interface** is the connection between your machine, and the network. In the machine, there is a virtual representation of a network interface, called virtual network interface. 
+A **network interface** is the connection between your machine, and the network. It's most likely done by a network card. From the machine point of view, a virtual representation of a network interface was introduced, called virtual network interface.
 
 For instance, if you are using Ethernet, then you will most likely have a virtual interface called `eth0` <small>(or ethSomething)</small>.
 
@@ -37,6 +39,8 @@ If you are using a vpn, you may see virtual network interfaces such as `tun0` <s
 </div><div>
 
 For application on a local machine to communicate with each other, there is a special virtual network called **localhost** (127.0.0.1), which is associated with the virtual network interface  **lo** (loop back), allowing local application to locally transfer data over this virtual network.
+
+> As a machine may have multiple network cards, or a network card have connections to multiple networks, you have to determine which interface will be used for each communication.
 </div></div>
 
 <hr class="sl">
@@ -73,6 +77,7 @@ There a TCP ports, and UDP ports. The most well-known one being TCP ports. Here 
 A **media access control address (MAC address)** is a **unique (physical) address** associated with the network card (`carte réseau`) of the machine uses to connect itself to the internet.
 
 * Can be [spoofed](https://en.wikipedia.org/wiki/MAC_spoofing) <small>(some hacker can usurp your MAC)</small>
+* An IP address changes when a computer is connecting from another network. That's why we need a MAC address.
 
 </div><div>
 
