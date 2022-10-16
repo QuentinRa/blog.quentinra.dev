@@ -417,10 +417,31 @@ Each code is associated with a type. Here some of them (code: type). See [Contro
 <summary>IP: internet protocol</summary>
 <div class="row row-cols-md-2"><div>
 
-...
+The IP protocol is using this header
+
+![IP Header](_images/ip_headers.png)
+
+* **version**: 4 (IPV4), or 6 (IPV6)
+* **IHL**: a quarter of the length of the header, which is usually of 20 bytes <small>(so, the IHL would be 5)</small>.
+* **TPL**: size of the entire packet in bytes
+* **Fragment ID**: identifier of the packet. Fragmented packet have the same fragment ID.
 </div><div>
 
-...
+* **FLAG**:
+  * 010 (DF): do not fragment
+  * 001 (MF): more fragments are coming
+  * 100 (X): reserved
+* **Fragment Offset**: index of this package payload in the un-fragmented data. This is the sum of the length of the previous fragmented packets payloads. This value is in **bytes** <small>(TPL divided by 8)</small>. For instance, the first fragment would have 0.
+* **TTL**: decrease by one each time the packet transit by a host. The packet is destroyed if the TTL reaches 0. This is used to prevent looping.
+* **Protocol**: which protocol was used <small>(1=ICMP, 6=TCP, 17=UDP...)</small>
+
+The size of the payload is **TPL-IHL**.
+
+To check if two packets are fragments, they MUST have
+
+* the same source, destination, id, and protocol
+* every packet aside from the last one have the flag MF <small>(flag[+])</small>, while the last has the flag DF <small>(flag[none])</small>.
+
 </div></div>
 </details>
 
