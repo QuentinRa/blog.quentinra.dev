@@ -220,7 +220,7 @@ It looks like this: `2002:6963:6961:2046:616c:636f:6e20:3c33`, which is 8 blocs 
 
 * Any leading $0$ in a bloc can be removed <small>(`0014 -> 14`)</small>
 * A whole bloc of $0$ can be replaced with one $0$ <small>(`0000 -> 0`)</small>
-* **One**, and only one suite of nul-groups, may be merged in `..` <small>(`...:0000:0000:... -> ...::...`)</small>
+* **One**, and only one suite of nul-groups, may be merged in `::` <small>(`...:0000:0000:... -> ...::...`)</small>
 </div><div>
 
 There are 8 kind of IPV6 addresses

@@ -22,6 +22,20 @@
         "icon": null
       }
     ],
+    "Discovery": [
+      {
+        "tag": "discovery/investigation/index.md",
+        "name": "Investigation",
+        "desc": "",
+        "icon": ""
+      },
+      {
+        "tag": "discovery/host/index.md",
+        "name": "Host discovery",
+        "desc": "",
+        "icon": ""
+      }
+    ],
     "Web": [
       {
         "tag": "web/website/index.md",
