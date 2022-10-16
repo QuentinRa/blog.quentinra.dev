@@ -8,12 +8,6 @@ https://www.inetdaemon.com/tutorials/internet/tcp/3-way_handshake.shtml
 https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml
 https://www.faidherbe.org/tutoriel/
 ----------------
->> Ports
-65535 available ports
-standard ports (https://techhyme.com/list-of-commonly-used-well-known-ports/)
-open, closed, or filtered (usually by a firewall)
-80 HTTP - 443 HTTPS - 25 SMTP - 22 SSH/SFTP - 21 FTP
-
 >> Subnetwork
 https://en.wikipedia.org/wiki/Subnetwork
 

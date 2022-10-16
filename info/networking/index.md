@@ -39,6 +39,32 @@ If you are using a vpn, you may see virtual network interfaces such as `tun0` <s
 For application on a local machine to communicate with each other, there is a special virtual network called **localhost** (127.0.0.1), which is associated with the virtual network interface  **lo** (loop back), allowing local application to locally transfer data over this virtual network.
 </div></div>
 
+<hr class="sl">
+
+## Ports
+
+<div class="row row-cols-md-2"><div>
+
+A port is something virtual associated with a protocol. By using that, we know that if something is coming to the port XXX, then it's using the protocol YYY. 
+
+* There are 65535 available ports
+* There are 1024 are standard ports
+
+> Ports are not set in stone, for security-related concerns, they are usually changed.
+</div><div>
+
+There a TCP ports, and UDP ports. The most well-known one being TCP ports. Here is the list of [TCP/UDP ports](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers).
+
+* **21**: FTP
+* **22**: SSH, SFTP, SCP
+* 23: telnet
+* 25: SMTP
+* **80**: HTTP
+* 137: NetBios
+* **443**: HTTPS
+* 465: SMTPS
+</div></div>
+
 <hr class="sr">
 
 ## MAC address
