@@ -31,7 +31,7 @@ To send a message from A to B,
 
 A **network interface** is the connection between your machine, and the network. In the machine, there is a virtual representation of a network interface, called virtual network interface. 
 
-For instance, if you are using ADSL (Ethernet), then you will most likely have a virtual interface called `eth0` <small>(or ethSomething)</small>.
+For instance, if you are using Ethernet, then you will most likely have a virtual interface called `eth0` <small>(or ethSomething)</small>.
 
 If you are using a vpn, you may see virtual network interfaces such as `tun0` <small>(or tunSomething)</small>.
 </div><div>
@@ -62,7 +62,6 @@ There a TCP ports, and UDP ports. The most well-known one being TCP ports. Here 
 * **80**: HTTP
 * 137: NetBios
 * **443**: HTTPS
-* 465: SMTPS
 </div></div>
 
 <hr class="sr">
@@ -137,13 +136,14 @@ The id_host has non-null bits, so it's not a network address.
 
 <details class="details-e">
 <summary>Classless Inter-Domain Routing (CIDR)</summary>
-
 <div class="row row-cols-md-2"><div>
 
 It is a way to write/share an IP address along the number of bits of the fixed part. The syntax is `ip/n`, such as `192.168.0.0/12`.
 
 * `ip` is the network address
 * `n` is the amount of fixed bits
+
+> Traditionally, before CIDR, n could only be 8, 16, or 24. They were called A-class, B-class, and C-class networks, used by big, medium, small scale organisation. Unfortunately, there was a very fast shortage of B-class networks, which leads to CIDR, and it's flexible network size.
 </div><div>
 
 We have the address `01001101001000011110000100000000` (`77.33.225.0`). We were told that there is 24 fixed bits.
