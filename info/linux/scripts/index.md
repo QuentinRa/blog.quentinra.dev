@@ -41,19 +41,19 @@ $ bash < ./example.sh # or, in rare cases
 
 <div class="row row-cols-md-2 mx-0"><div class="align-self-center">
 
-The Portable Operating System Interface (**POSIX**) is a family of standards (`normes POSIX`) that defines what we should, and shouldn't do, to make our apps compatible across a maximum of operating systems.
+The Portable Operating System Interface (**POSIX**) is a family of standards (`normes POSIX`) that defines what we should, and shouldn't do, to make our scripts compatible across a maximum of operating systems.
 
-**DO only use allowed POSIX syntax in your scripts.**
+**This course will focus on making POSIX-compliant scripts**.
 
-* ❌ **DO NOT USE `((`, `[[`, `]]`, and `))`**
-* ❌ **DO NOT USE `&&`<sup>1</sup>, `||`**<sup>1</sup>
-* ❌ **DO NOT USE `>`<sup>1</sup>, `<`<sup>1</sup>...** to compare something
-
-<sup>1</sup> such operators are only working inside `[[ ]]`
+<span class="h3">As such if you want to make bash-only scripts, read the bash-course to improve your posix scripts by using bash-only syntax </span><small>(usually shorter, and/or simplified)</small>.
 
 </div><div>
 
 **Recap of what isn't allowed by POSIX**
+
+* ❌ **DO NOT USE `((`, `[[`, `]]`, and `))`**
+* ❌ **DO NOT USE `&&`<sup>1</sup>, `||`**<sup>1</sup>
+* ❌ **DO NOT USE `>`<sup>1</sup>, `<`<sup>1</sup>...** to compare
 
 ```bash
 for (( i = 0; i < 10; i++ )); do
@@ -66,6 +66,8 @@ if [[ 5 > 3 || 4 > 3 ]]; then
   # code
 fi
 ```
+
+<sup>1</sup> such operators are only working inside `[[ ]]`
 
 </div></div>
 
