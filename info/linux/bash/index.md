@@ -106,5 +106,50 @@ for (( i = 0; i < 10; i++ )); do
     # code
 done
 ```
+</div></div>
 
+<hr class="sl">
+
+## Arrays
+
+<div class="row row-cols-md-2"><div>
+
+Create an array
+
+```bash
+$ array=(1 2 3 4 5)
+```
+
+Get a value
+
+```bash
+$ echo ${array[0]}
+```
+
+Get all values
+
+```bash
+$ echo ${array[@]}
+```
+</div><div>
+
+Set a value
+
+```bash
+$ array[0]=1
+```
+
+Remove a value
+
+```bash
+$ unset array[0]
+```
+
+Iterate an array
+
+```bash
+for i in ${array[@]}; do
+  echo $i
+done
+```
 </div></div>

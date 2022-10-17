@@ -370,23 +370,9 @@ PRET isn't going to work here as it is using port 9000 by default
 
 <hr class="sep-both">
 
-## Bash
-
-```bash
-$ transport=('car' 'train' 'bike' 'bus')
-$ echo "${transport[@]}"
-car train bike bus
-$ echo "${transport[0]}"
-car
-$ unset transport[1]
-$ transport[1]="v"
-```
-
-<hr class="sep-both">
-
 ## Privilege escalation
 
-* https://www.udemy.com/course/linux-privilege-escalation/?referralCode=0B0B7AA1E52B4B7F4C06
+* https://www.udemy.com/course/linux-privilege-escalation/
 
 Services
 
