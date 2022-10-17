@@ -78,3 +78,33 @@ for i in {0..5}; do
 done
 ```
 </div></div>
+
+<hr class="sr">
+
+## Enhanced control-flow structures
+
+<div class="row row-cols-md-2"><div>
+
+* You can use `&&` (AND), and `&&` (OR)
+* You can use `>`... to compare numbers/strings
+
+```bash
+if [ 5 > 3 ] || false; then
+  echo "ok";
+fi
+
+if [[ 5 > 3  || false ]]; then
+  echo "ok";
+fi
+```
+</div><div>
+
+* You can use "for i, i++"
+
+```bash
+for (( i = 0; i < 10; i++ )); do
+    # code
+done
+```
+
+</div></div>

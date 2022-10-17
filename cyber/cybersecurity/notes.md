@@ -17,6 +17,11 @@ Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try 
 
 * Linux security researcher > Hashing
 
+
+Other
+
+* https://www.hackerrank.com/
+
 <hr class="sep-both">
 
 ## Random
@@ -376,11 +381,6 @@ car
 $ unset transport[1]
 $ transport[1]="v"
 ```
-
-* `if [] && []`
-* `if [ "$x" = "$y" ]`
-* https://www.codewars.com/
-* https://www.hackerrank.com/
 
 <hr class="sep-both">
 
