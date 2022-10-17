@@ -47,3 +47,34 @@ Not debug
 ```
 </details>
 </div></div>
+
+<hr class="sl">
+
+## Bash expansion
+
+<div class="row row-cols-md-2"><div class="align-self-center">
+
+This is most likely one of the coolest features, as we can use this everywhere.
+
+* `{0..5}` is replaced with "0 1 2 3 4 5"
+* `{toto,tata,titi}` is replaced with "toto tata titi"
+
+For instance, you can use these in loops, or in glob-patterns.
+</div><div>
+
+* Glob-patterns
+
+```bash
+$ ls *.{jpg,png,gif}
+# is the same as
+$ ls *.jpg *.png *.gif
+```
+
+* "for i"
+
+```bash
+for i in {0..5}; do 
+  echo "$i"
+done
+```
+</div></div>
