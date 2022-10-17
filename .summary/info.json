@@ -77,6 +77,12 @@
         "icon": null
       },
       {
+        "tag": "linux/bash/index.md",
+        "name": "Linux (Bash)",
+        "desc": "...",
+        "icon": null
+      },
+      {
         "tag": "linux/windows/index.md",
         "name": "Linux on Windows",
         "desc": "Knowledge related to using Linux on Windows.",
