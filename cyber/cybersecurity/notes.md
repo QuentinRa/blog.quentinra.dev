@@ -367,16 +367,6 @@ PRET isn't going to work here as it is using port 9000 by default
 
 ## Bash
 
-* https://devhints.io/bash
-
-Debugging bash has a few built-in
-
-```bash
-$ bash -x ./file.sh
-```
-
-* `set -x code to debug set +x`
-
 ```bash
 $ transport=('car' 'train' 'bike' 'bus')
 $ echo "${transport[@]}"
@@ -415,6 +405,8 @@ Weak perms
 * https://blog.certcube.com/linux-privilege-escalation-with-sudo-rights/
 * https://gtfobins.github.io/
 * If env variables are loaded, you may exploit them too.
+
+Maybe not really useful, but with `bash script.sh`, you can execute without having the permission `x`.
 
 <hr class="sep-both">
 
