@@ -262,10 +262,25 @@ TLD
 * gTLD (Generic Top Level)
 * ccTLD (Country Code Top Level Domain)
 
+....
+
+* Restricted TLD
+* Experimental TLD
+* `dig +stats +trace +nodnssec`
+
+```
+Chaque Top Level Domain (TLD) est administré par une organisation particulière
+appelée Registry Operator qui a établi un contrat avec l' Assigned Names and
+Numbers (ICANN)
+La zone racine (Root zone) est gérée par l'ICANN à travers la fonction Internet
+Assigned Numbers Authority (IANA). La fonction IANA est opérée par Public Technical
+Identifiers (PTI) et Verisign.
+```
+
 Historically, gTLD were used to tell the purpose (.com=commercial), and ccTLD were used for geographical purposes.
 
 Second-Level Domain: xxx.com, xxx is a SLD.
-Subdomain: www
+Subdomain / third-level domain: www
 
 DNS records
 
@@ -280,6 +295,35 @@ A recursive server is provided by your ISP, you can pick your own. This server h
 The authoritative server is often also known as the nameserver for the domain.
 
 TTL is in seconds.
+
+* DNSSEC (DNS Secure, extension of DNS protocol)
+* Resource Record (RR)
+  * NAME
+  * Type (https://www.ietf.org/rfc/rfc1035.txt, MX, TXT, CNAME...)
+  * Class
+  * TTL
+  * RDLength
+  * Data
+
+![img.png](img.png)
+
+* Domain Name Hijacking
+  * Redirect to malicious website/web server
+  * ManInTheMiddle (malicious acting like legitimate)
+  * Isolation (prevent from accessing)
+
+To DNH, Cache poisoning
+
+* When a question is sent, there is an ID
+* If a malicious DNS answer before the legitimate one, to the RIGHT REQUEST, with the RIGHT ID (16bits), then H@CKED
+  * The probability to have both the queried DN, and the ID is low, and maybe the answer is cached, so you need to know if the server actually made a request
+  * Dan Kaminsky
+    * You are requesting a DOMAIN that you can guess isn't in the cache
+    * Then, you know that the server will make a request
+    * So, you only have to match the ID now. Still, this ain't enough
+    * But, you will try to send a malicious NS too, which are the NameServer/Authoritative servers, which means that the server *may* ask the malicious server next time
+    * But, "easy to patch" with a better entropy for Ids https://www.dns-oarc.net/oarc/services/dnsentropy...
+    * https://www.youtube.com/watch?v=qftKfFVHVuY
 
 <hr class="sep-both">
 
