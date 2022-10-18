@@ -12,7 +12,9 @@ Some nice information
 
 * 1989
 * Bourne Again Shell
-* Debian and many derivatives, such as Ubuntu 
+* Debian and many derivatives, such as Ubuntu
+
+The [man page for bash](https://linux.die.net/man/1/bash) is explaining everything about bash, such as environment variables, control-flow structures...
 </div><div>
 
 `~/.bashrc` is a script executed when launching a terminal. You can write alias, permanent changes to environment variables, or builtin inside. You may have to create it. Once you changed its contents, you can update your current terminal using `source ~/.bashrc`.
@@ -177,7 +179,6 @@ In bash, there are two commands that does nothing
 
 ```bash
 $ :
-$ command
 ```
 </div><div>
 </div></div>

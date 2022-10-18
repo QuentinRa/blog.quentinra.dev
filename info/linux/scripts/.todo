@@ -5,8 +5,10 @@ Commands
 - sleep
 
 Control flow
-- case
-- break, continue
+- case word in [ [(] pattern [ | pattern ] ... ) list ;; ] ... esac
+- until list; do list; done
+- break [n]; Exit from within a for, while, until, or select loop. If n is specified, break n levels.
+- continue [n]. Resume the next iteration of the enclosing for, while, until, or select loop. If n is specified, resume at the nth enclosing loop.
 
 Args
 - $*

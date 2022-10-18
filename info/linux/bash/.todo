@@ -1,6 +1,18 @@
-https://programmerall.com/article/17441621896/
+select name [ in word ] ; do list ; done
 
-https://linux.die.net/man/1/bash
+< file is faster than cat file
+
+tee <<< word
+
+Command history
+!n (nth in history)
+!-n (current minus n)
+!! (previous)
+!x (most recent starting with x)
+!?x[?] (most recent containing x, last ? may be omitted if immediately followed by \n)
+!# (repeat the command-line typed so far)
+
+Parameter Expansion
 https://www.gnu.org/software/bash/manual/bash.html
 
 https://www.oreilly.com/library/view/linux-command-line/9780470251287/
