@@ -63,7 +63,53 @@ Not debug
 
 <hr class="sl">
 
-## Bash expansion
+## History expansion
+
+<div class="row row-cols-md-2"><div>
+
+Bash introduced some patterns that are expanded into a previous command from your history. You history of commands is stored in `~/.bash_history`
+
+* nth command in history, starting from 0
+
+```bash
+$ !n
+# if failed:
+# -bash: !0: event not found
+```
+
+* nth command in history, starting from the previous command
+
+```bash
+$ !-n
+```
+</div><div>
+
+* the previous command, same as `!-1`
+
+```bash
+$ !!
+```
+
+* the most recent command starting with `cat`
+
+```bash
+$ !cat
+```
+
+* the last command containing "hello"
+
+```bash
+$ !?hello
+# add a trailing '?' to explicitly close the query
+$ !?hello?
+```
+
+There is also `!#` which repeats the command-line typed so far. It seems kinda useless for my point of view.
+</div></div>
+
+<hr class="sr">
+
+## Braces expansion
 
 <div class="row row-cols-md-2"><div class="align-self-center">
 
@@ -73,6 +119,7 @@ This is most likely one of the coolest features, as we can use this everywhere.
 * `{a..e}` is replaced with "a b c d e"
 * `{a..e..2}` is replaced with "a c e"
 * `{toto,tata,titi}` is replaced with "toto tata titi"
+* `{toto,tata,???}` is replaced with "toto tata", and any file matching the glob-pattern "???"
 
 For instance, you can use these in loops, or in glob-patterns.
 </div><div>
@@ -94,7 +141,7 @@ done
 ```
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Enhanced control-flow structures
 
@@ -123,7 +170,7 @@ done
 ```
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Arrays
 
@@ -169,9 +216,9 @@ done
 ```
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
-## Random
+## Random notes
 
 <div class="row row-cols-md-2"><div>
 

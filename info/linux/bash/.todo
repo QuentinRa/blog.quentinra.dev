@@ -4,14 +4,6 @@ select name [ in word ] ; do list ; done
 
 tee <<< word
 
-Command history
-!n (nth in history)
-!-n (current minus n)
-!! (previous)
-!x (most recent starting with x)
-!?x[?] (most recent containing x, last ? may be omitted if immediately followed by \n)
-!# (repeat the command-line typed so far)
-
 Parameter Expansion
 https://www.gnu.org/software/bash/manual/bash.html
 
