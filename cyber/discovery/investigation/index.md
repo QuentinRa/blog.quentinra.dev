@@ -36,3 +36,35 @@ Select "Maltego CE (free)", then once you [created a MaltegoCE account](https://
 
 Wait, and investigate what maltego found for you!
 </div></div>
+
+<hr class="sl">
+
+## Google dorking
+
+<div class="row row-cols-md-2"><div>
+
+Search engines are using bots, called **crawlers** to index websites. They go from a page to another, or from a website to another, by following links. The file **robots.txt** is listing the pages that "good" crawlers shouldn't index, along with the path to a file called **sitemap** which is literally a map of every page/resources of the websites, allowing crawler to easily crawl the website.
+
+Most search engines, Google being the most famous one, allow us to make **advanced queries**. This was a know as Advanced search, but after some guys wrote some books naming that as "Google dorking", then it became widely know as **Google dorking**.
+
+On Google, you can use the [Advanced search](https://www.google.com/advanced_search) page to make advanced queries, while you may also directly use specials tokens in your search bar. There you can find a [long list of Google Search Operators](https://ahrefs.com/blog/google-advanced-search-operators/).
+
+[See Google Hacking Database](https://www.exploit-db.com/google-hacking-database) for juicy queries to exploit this.
+</div><div>
+
+* `site:example.com`: search only results on "example.com"
+* `site:.com`: search only results on ".com" domains
+* `cache:example.com`: cached versions of "example.com"
+* `-word`: search results that do not have this word
+* `"some word"`: search results that must have "some word"
+* `filetype:pdf`: search PDF files
+* `intitle:"Hello World"`: search for websites having "Hello World" in their title
+
+You may also use
+
+* `imagesize:1920x1080`: search only images on "1920 by 1080"
+* `@twitter`: search results on Twitter
+* `$400` or `$50..$100`: search for a price
+* `#hashtag`: search for a hashtag
+* `xxx OR yyy`: search both xxx and yyy
+</div></div>

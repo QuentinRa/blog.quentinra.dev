@@ -231,30 +231,6 @@ Hide things in images: [Steganography](https://0xrick.github.io/lists/stego/).
 
 <hr class="sep-both">
 
-### Search engines
-
-Crawler/spiders are indexing websites. Follow URL by URL.
-
-Search Engine Optimisation
-
-* easy to crawl (sitemaps)
-* keywords
-* responsiveness
-
-Robots.txt can be used to disallow robots from indexing pages. Maybe they add some config files (ini Windows, conf Linux).
-
-**Google dorking**
-
-* `"exact"`
-* `site:domain`
-* `filetype:pdf`
-* `cache:domain`: cached version of URL
-* `intitle:...`: must be in the title
-* https://ahrefs.com/blog/google-advanced-search-operators/
-* https://www.exploit-db.com/google-hacking-database
-
-<hr class="sep-both">
-
 ### Websites
 
 * Identification and Authentication Failure
