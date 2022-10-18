@@ -1,6 +1,6 @@
 # Networking
 
-...
+A network is a net of things connected to each other. We call a network of devices "internet", and what we refer to (The) "Internet" are many small networks all joined together. Networking is someone complex, has it involves a lot of things: devices <small>(Routers, Hub/Switches...)</small>, Protocols <small>(TCP/UDP/ICMP/ARP/DNS...)</small>, Ports, Network interfaces, models <small>(OSI, TCP/IP)</small>, and addresses <small>(IPV4/IPV6/MAC...)</small>.
 
 <hr class="sr">
 
@@ -333,7 +333,7 @@ Some are splitting the "Layer 1" back in two layers, but it's not in the RFC1122
 
 <div class="row row-cols-md-2"><div>
 
-A **protocol** is a set of rules used to formalize of way of exchanging messages <small>(endianness, floating numbers format, charset, separators...)</small>.
+A **protocol** is a set of rules used to formalize of way of exchanging messages <small>(endianness, floating numbers format, charset, separators, integrity...)</small>.
 
 Each protocol is following a [**Message Sequence Chart**](https://en.wikipedia.org/wiki/Message_sequence_chart) which is simply describing how two machines are interacting using this protocol.
 
@@ -479,7 +479,7 @@ The IP protocol is using this header
   * 100 (X): reserved
 * **Fragment Offset**: index of this package payload in the un-fragmented data. This is the sum of the length of the previous fragmented packets payloads. This value is in **bytes** <small>(TPL divided by 8)</small>. For instance, the first fragment would have 0.
 * **TTL**: decrease by one each time the packet transit by a host. The packet is destroyed if the TTL reaches 0. This is used to prevent looping.
-* **Protocol**: which protocol was used <small>(1=ICMP, 6=TCP, 17=UDP...)</small>
+* **Protocol**: which protocol was used <small>(1=ICMP, 6=TCP, 17=UDP...)</small>. [See the list of IP protocol numbers](https://en.wikipedia.org/wiki/List_of_IP_protocol_numbers).
 
 The size of the payload is **TPL-IHL**.
 
