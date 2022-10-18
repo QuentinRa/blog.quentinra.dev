@@ -168,6 +168,16 @@ for (( i = 0; i < 10; i++ )); do
     # code
 done
 ```
+
+* You can use a select statement to select an option
+
+```bash
+select name in option1 option2 ; do
+  # name is either empty, of equals to option1/option2
+  echo $name
+done
+```
+
 </div></div>
 
 <hr class="sr">
@@ -222,10 +232,26 @@ done
 
 <div class="row row-cols-md-2"><div>
 
-In bash, there are two commands that does nothing
+This is a command taking a variable number of parameters, and literally doing nothing
 
 ```bash
 $ :
 ```
+
+In bash, doing "< file" is a faster way of doing "cat file", according to the manual
+
+```bash
+$ < file
+```
 </div><div>
+
+Bash introduced a new redirection which take some text, and redirect it to the standard output
+
+```bash
+$ tee <<< word
+word
+# is the same as
+$ echo word | tee
+word
+```
 </div></div>
