@@ -378,6 +378,20 @@ If the home of the current user is `/usr/user/home/`, then `~` would mean the ex
 * `/tmp` (folder): a trash folder cleaned at restart
 </details>
 </div><div>
+<details class="details-e">
+<summary>Regular, and non-regular files</summary>
+
+Before, we didn't explain the first "-" before every result of `ls -l`, but it could be
+
+```none
+-rw-r--r--
+```
+
+* `d`: a folder
+* `s`: a symbolic link
+* `-`: a regular file (`fichier normal/régulier`)
+* there is a lot for special files such as `b`, `c`...
+</details>
 </div></div>
 
 <div class="row row-cols-md-2"><div>
@@ -387,6 +401,7 @@ If the home of the current user is `/usr/user/home/`, then `~` would mean the ex
 * Following slashes are merged into one <small>(ex: `///` is the same as `/`)</small>
 * "Everything is a file": hard drive (/mnt/), a terminal (/dev/), a command (/bin/)...
 * **Remember** that if you have spaces in your paths, then you must either quote them, or use `\` before any space.
+* If you met a crazy guy that named something starting with a `-`, then you need to use `--` before the weird filename. For instance: `cp -- -filename`.
 </details>
 </div><div>
 <details class="details-e">

@@ -3,14 +3,6 @@ file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/index.html#ex
 file:///C:/Users/quent/Documents/texas-res/_build/html/system/linux/files/enc/proc.html
 file:///C:/Users/quent/Documents/texas-res/_build/html/system/linux/index.html#vue-generale-du-systeme-informatique-technique
 
-any file starting with `-`: error. `cp -- -filename.txt`
-
-In the screen bellow, the first value `-` indicates that this is a file. It would be `d` for a folder, `l` for a link...`
-
-fichiers réguliers (normal)
-fichiers symboliques (liens)
-fichiers spéciaux (terminaux)
-
 > Environment variables
 echo -e "DISPLAY=:0.0\nexport DISPLAY" >> ~/.bashrc
 
