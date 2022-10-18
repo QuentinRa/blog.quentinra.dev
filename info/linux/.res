@@ -3,6 +3,8 @@ https://devhints.io/bash#parameter-expansions
 what is the difference between snap/package/dpkg...
 
 Blog
+https://linuxhandbook.com/
+https://linuxhint.com/
 https://www.howtouselinux.com/
 
 Reference

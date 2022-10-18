@@ -367,7 +367,20 @@ If the home of the current user is `/usr/user/home/`, then `~` would mean the ex
 </details>
 
 <div class="row row-cols-md-2"><div>
+<details class="details-e">
+<summary>Notable Linux files/folders</summary>
 
+* `/etc` (folder): "commonplace location to store system files that are used by your operating system"
+* `/dev/null` (file): a empty file, sort of trash files in which everything you write inside is deleted.
+* `/etc/shadow` (file): username, and their hashed password
+* `/var/log/` (folder): log files
+* `/mnt` (folder): mounted device/hard-drives (D:, USB...)
+* `/tmp` (folder): a trash folder cleaned at restart
+</details>
+</div><div>
+</div></div>
+
+<div class="row row-cols-md-2"><div>
 <details class="details-e">
 <summary>Notes</summary>
 
@@ -376,7 +389,6 @@ If the home of the current user is `/usr/user/home/`, then `~` would mean the ex
 * **Remember** that if you have spaces in your paths, then you must either quote them, or use `\` before any space.
 </details>
 </div><div>
-
 <details class="details-e">
 <summary>Commands</summary>
 

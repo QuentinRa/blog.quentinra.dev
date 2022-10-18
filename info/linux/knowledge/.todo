@@ -3,20 +3,6 @@ file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/index.html#ex
 file:///C:/Users/quent/Documents/texas-res/_build/html/system/linux/files/enc/proc.html
 file:///C:/Users/quent/Documents/texas-res/_build/html/system/linux/index.html#vue-generale-du-systeme-informatique-technique
 
-> Shortcuts
-https://linuxhandbook.com/linux-shortcuts/
-https://www.lostsaloon.com/technology/7-keyboard-shortcuts-you-should-know-in-linux-command-shell/
-https://linuxhint.com/100_keyboard_shortcuts_linux/
-
-> Paths
-/etc/: commonplace location to store system files that are used by your operating system
-/dev/null
-/etc/shadow
-(/var/log
-/tmp : emptied on restart
-Windows et ses D:/, H:/, G:/...
-Linux et ses /dev/sda*, /mnt, /media ou /run/media...
-
 any file starting with `-`: error. `cp -- -filename.txt`
 
 In the screen bellow, the first value `-` indicates that this is a file. It would be `d` for a folder, `l` for a link...`
