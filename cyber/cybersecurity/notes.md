@@ -111,15 +111,6 @@ ICMP from Network Layer
 
 If you want to ping a system on the same subnet, an ARP query should precede the ICMP Echo.
 
-ARP RESPONSE
-
-* Local Area Network (LAN)
-  * **Star Topology**: all devices are connected to a central networking device such as a switch or hub
-  * **Bus Topology**: a single cable "backbone cable", all devices connect to the cable, too much packets: satured
-  * **Ring/Token Topology**: each computer is connected to another forming a loop, data do the whole loop if needed, only one direction, not efficient, if hardware/cable is down/dead/fault network broken
-  * **Switch**: aggregate multiples devices (4-64 ports), send packet to target because they know which target is on which of its ports
-  * **Router**: connect networks, do "routing" (decide which route packets take)
-
 <hr class="sep-both">
 
 ### Samba

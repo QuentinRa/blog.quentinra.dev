@@ -12,14 +12,21 @@
 
 **Local Area Network** (LAN, `réseau domestique`) is a network established within a limited area such as your home.
 
-**Router**: this is a device usually connecting a LAN network, with a WAN network.
+**Router**: a device usually connecting a LAN network, with a WAN network. It does "routing", meaning sending determining the route that packets will take to arrive to the destination network.
 
-**Hub/Switch**: this is an intermediary used when exchanging packet in a network, that handle that received packets are in the right order, not corrupted, and received.
+**Hub/Switch**: a device that can be connected via ethernet to usually at least 4, up to 64 devices. They are receiving packets from others hosts, and they handle the delivery of packets while ensuring that they are received in the right order, and are not corrupted.
 
 **Ethernet**: this is a cable that can be used to connect a device to a Hub/Switch.
 </div><div>
-</div></div>
 
+**Network topologies** are different ways of connecting devices in a network.
+
+* **Star Topology**: all devices are connected to a central networking device such as a switch or hub
+
+* **Bus Topology**: a single cable "backbone cable", and all devices connect to the cable. If a lot of packets are send, the cable most likely be saturated.
+
+* **Ring/Token Topology**: each computer is connected to another one forming a loop. Packets are only moving in one direction, meaning that sometime packets will do a whole loop (not efficient). If a computer/cable is faulty, then the loop is broken.
+</div></div>
 
 <hr class="sl">
 
@@ -514,7 +521,7 @@ You can observe an ARP request by using `tcpdump`, and a `ping` on an uncached t
 * IP source (requested IP)
 * IP destination (target IP)
 
-**ARP Reply**: if a machine found its IP in the Request, they are replying to the sender with their MAC.
+**ARP Reply**/Response: if a machine found its IP in the Request, they are replying to the sender with their MAC.
 * Mac source (its MAC address)
 * ...
 </div></div>
