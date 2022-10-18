@@ -1,0 +1,2 @@
+`systemctl /bin/systemctl`  allow to interact with the systemd process/daemon.
+`systemctl start apache2` (start, stop, enable, disable)

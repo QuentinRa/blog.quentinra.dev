@@ -67,7 +67,7 @@ $ sudo -s
 </details>
 
 <details class="details-e">
-<summary><code>apt/aptitude</code>: install/update packages/OS</summary>
+<summary><code>apt/aptitude/dpkg</code>: install/update packages/OS</summary>
 <div class="row row-cols-md-2"><div>
 
 `apt` is the default package manager on many well-known Linux-based distributions such as Ubuntu/Debian.
@@ -95,6 +95,12 @@ sudo apt install -y aptitude
 ```bash
 sudo aptitude # press 'q' to quit
 sudo aptitude install nano
+```
+
+And, you can use this to install a `.deb`
+
+```bash
+$ sudo dpkg -i xxx.deb
 ```
 </div></div>
 </details>
@@ -201,6 +207,8 @@ $ xrandr --output DP-2 --brightness 0.5
 ```
 </details>
 </div></div>
+
+> Random: you can use `xdg-open` to open a PDF, or an URL.
 
 <hr class="sr">
 
@@ -1290,7 +1298,7 @@ $ expr index "Sarah" w
 See all processes
 
 ```bash
-$ ps -e
+$ ps -e # same as 'ps aux'
 ```
 
 Every process "bash"
@@ -1333,9 +1341,9 @@ $ ps -o pid,ppid,pgid,tpgid,sid
 </div></div>
 </details>
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-3"><div>
 <details class="details-e">
-<summary><code>fg</code>: bring (a group of) processes to the foreground</summary>
+<summary><code>fg</code>: bring processes to the foreground</summary>
 
 ```bash
 $ some_command &
@@ -1351,10 +1359,21 @@ $ fg %1
 </details>
 </div><div>
 <details class="details-e">
-<summary><code>bg</code>: bring (a group of) processes to the background</summary>
+<summary><code>bg</code>: bring processes to the background</summary>
 
 ```bash
 $ bg
+```
+</details>
+</div><div>
+<details class="details-e">
+<summary><code>job</code>: list background processes</summary>
+
+```bash
+$ sleep 50&
+[1] 36
+$ jobs
+[1]+  Running        sleep 50 &
 ```
 </details>
 </div></div>

@@ -1,5 +1,6 @@
 Learn
 https://devhints.io/bash#parameter-expansions
+what is the difference between snap/package/dpkg...
 
 Blog
 https://www.howtouselinux.com/
