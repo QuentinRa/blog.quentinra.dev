@@ -497,6 +497,8 @@ For instance, the domain name `example.com` is pointing to `93.184.216.34`.
 
 > Note: `example.com` is actually `example.com.`, with a "`.`" at the end. That's why "`.`" is called the root, as every domain is "starting" with "`.`".
 
+> DNSSEC stands for DNS Secure, which is an extension of the DNS protocol adding security as they were no such thing originally.
+
 </div><div>
 
 When a computer requests the IP associated with a domain name
@@ -504,7 +506,7 @@ When a computer requests the IP associated with a domain name
 <details class="details-n">
 <summary>1. It will check if there is the answer in the cache</summary>
 
-DNS records are stored in the cache for a duration determined by their **Time-to-live (TTL)** which is sent along the IP when requesting a DNS record.
+DNS records are stored in the cache for a duration determined by their **Time-to-live (TTL)** <small>(in seconds)</small> which is sent along the IP when requesting a DNS record.
 </details>
 
 <details class="details-n">
@@ -512,7 +514,16 @@ DNS records are stored in the cache for a duration determined by their **Time-to
 
 Your internet provider (ISP) maintain its own recursive servers.
 
-The **root domain** is "`.`", and its servers are keeping track of the IP addresses of the **Top level domain (TLD)** servers: `.com`, `.net`, `.fr`... TLD are keeping track of servers one-level down: **Authoritative name servers**, in which DNS records are stored.
+The **root domain** is "`.`", and its servers are keeping track of the IP addresses of the **Top level domain (TLD)** servers.
+
+* Generic Top Level (gTLD): `.com`, `.net`...
+* Country Code Top Level Domain (ccTLD): `.fr`, `.ca`...
+
+Historically, gTLD were used to indicate a purpose <small>(ex: com for commercial)</small>, and ccTLD were used for geographical purposes. There is also Restricted TLD, and Experimental TLD.
+
+TLD are keeping track of servers one-level down: **Authoritative name servers**, also called **nameserver**, in which DNS records are stored, mostly for **Second-Level Domain**, such as `example.com`. They may keep track of Third-Level Domains <small>(such as www)</small>, or even every Subdomain <small>(any third-level domain, and below)</small>.
+
+DNS records include IPV4 (A), and IPV6 addresses (AAAA), along mail servers (MX), CNAME records <small>(ask another domain)</small>, TXT RECORDS <small>(mainly used to ensure ownership of a domain by third-parties websites)</small>... See [rfc1035 specification](https://www.ietf.org/rfc/rfc1035.txt).
 </details>
 
 <details class="details-n">

@@ -255,55 +255,7 @@ Robots.txt can be used to disallow robots from indexing pages. Maybe they add so
 
 <hr class="sep-both">
 
-### DNS
-
-TLD
-
-* gTLD (Generic Top Level)
-* ccTLD (Country Code Top Level Domain)
-
-....
-
-* Restricted TLD
-* Experimental TLD
 * `dig +stats +trace +nodnssec`
-
-```
-Chaque Top Level Domain (TLD) est administré par une organisation particulière
-appelée Registry Operator qui a établi un contrat avec l' Assigned Names and
-Numbers (ICANN)
-La zone racine (Root zone) est gérée par l'ICANN à travers la fonction Internet
-Assigned Numbers Authority (IANA). La fonction IANA est opérée par Public Technical
-Identifiers (PTI) et Verisign.
-```
-
-Historically, gTLD were used to tell the purpose (.com=commercial), and ccTLD were used for geographical purposes.
-
-Second-Level Domain: xxx.com, xxx is a SLD.
-Subdomain / third-level domain: www
-
-DNS records
-
-* A = IPV4
-* AAAA = IPV6
-* CNAME Record: sort of "A" pointing to "B", so go ask the IP of "B"?
-* MX Record = Mail server
-* TXT Record = a lot of uses, such as to verify ownership of the domain name when signing up for third party services
-
-A recursive server is provided by your ISP, you can pick your own. This server has a cache.
-
-The authoritative server is often also known as the nameserver for the domain.
-
-TTL is in seconds.
-
-* DNSSEC (DNS Secure, extension of DNS protocol)
-* Resource Record (RR)
-  * NAME
-  * Type (https://www.ietf.org/rfc/rfc1035.txt, MX, TXT, CNAME...)
-  * Class
-  * TTL
-  * RDLength
-  * Data
 
 ![img.png](img.png)
 
