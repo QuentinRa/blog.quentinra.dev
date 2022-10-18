@@ -2,7 +2,45 @@
 
 A network is a net of things connected to each other. We call a network of devices "internet", and what we refer to (The) "Internet" are many small networks all joined together. Networking is someone complex, has it involves a lot of things: devices <small>(Routers, Hub/Switches...)</small>, Protocols <small>(TCP/UDP/ICMP/ARP/DNS...)</small>, Ports, Network interfaces, models <small>(OSI, TCP/IP)</small>, and addresses <small>(IPV4/IPV6/MAC...)</small>.
 
-<hr class="sr">
+<details class="details-e">
+<summary>Imunes - free open-source network emulator</summary>
+<div class="row row-cols-md-2"><div>
+
+[**imunes**](http://imunes.net/) is a free open-source network emulator in which you can create nodes (hosts, switches, routers...), connect them, add rules (see iptables), and send requests from one computer to another, mostly to test your network configuration.
+
+```bash
+$ sudo imunes &
+```
+
+You may have multiple sessions.
+
+```bash
+$ imunes image -l # list
+$ imunes -b -e <id> # kill
+```
+
+> There are a lot of newer (and better?) alternatives...
+</div><div>
+
+Using the graphical interface
+
+* <kbd>experiment | execute</kbd>: run simulation
+* <kbd>experiment | terminate</kbd>: terminate simulation
+* <kbd>double-click on a host</kbd>: open a terminal on the host
+* <kbd>right-click on a node | configure</kbd>: setup rules <small>(routing, ARP)</small>
+  * enable "custom startup config"
+  * enable "editor | create | fill default"
+  * then use your head
+
+You can run a command on a machine from the terminal with
+
+```bash
+$ sudo himage <hostname>@<id> <command>
+```
+</div></div>
+</details>
+
+<hr class="sl">
 
 ## LAN, and WAN networks
 
@@ -37,7 +75,7 @@ If both the switch and the machine try to send a message at the same time, then 
 * **Ring/Token Topology**: each computer is connected to another one forming a loop. Packets are only moving in one direction, meaning that sometime packets will do a whole loop (not efficient). If a computer/cable is faulty, then the loop is broken.
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## How is communication taking place?
 
@@ -60,7 +98,7 @@ This is a sort of simplified representation of all elements that are a part of t
 ![Random Network](_images/radom_network.png)
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Network interface
 
@@ -78,7 +116,7 @@ For application on a local machine to communicate with each other, there is a sp
 > As a machine may have multiple network cards, or a network card have connections to multiple networks, you have to determine which interface will be used for each communication.
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Ports
 
@@ -103,7 +141,7 @@ There a TCP ports, and UDP ports. The most well-known one being TCP ports. Here 
 * **443**: HTTPS
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## MAC address
 
@@ -122,7 +160,7 @@ This is a 6-bytes-long address such as `ff:ff:ff:ff:ff:ff` with 12 hexadecimal c
 * The last 6 characters are the unique address
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## IPV4 addresses
 
@@ -175,7 +213,7 @@ The id_host has non-null bits, so it's not a network address.
 </details>
 
 <details class="details-e">
-<summary>Classless Inter-Domain Routing (CIDR)</summary>
+<summary>Classress Inter-Domain Routing (CIDR)</summary>
 <div class="row row-cols-md-2"><div>
 
 It is a way to write/share an IP address along the number of bits of the fixed part. The syntax is `ip/n`, such as `192.168.0.0/12`.
@@ -294,7 +332,7 @@ Example: Given $172.16.254.0/23$, we have $N = 23$, and we want to divide our ne
 </div></div>
 </details>
 
-<hr class="sr">
+<hr class="sl">
 
 ## IPV6 addresses
 
@@ -322,7 +360,7 @@ There are 8 kind of IPV6 addresses
 | Global Unicast (Internet)        | ...               | 2001..<br>2002...<br>... |
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## OSI model
 
@@ -333,7 +371,7 @@ The Open Systems Interconnection (**OSI**) model is a standardised representatio
 When a computer send a message, it will be send starting a layer, and go down. When a computer receive a message, it will go up every layer in the reverse order.
 
 * **Layer 7 - Application**: Programs are exchanging data <small>(HTTP, SSH, FTP, SMTP...)</small>
-* **Layer 6 - Presentation**: Standardize, add encryption/compression... <small>(SSL, TLS...)</small>
+* **Layer 6 - Presentation**: Standardize, add encryption/compression... <small>(Ssr, TLS...)</small>
 * **Layer 5 - Session**: Try to establish a connexion <small>(RPC, PAP...)</small>
 * **Layer 4 - Transport**: select a protocol <small>(TCP, UDP...)</small>
 * **Layer 3 - Network** (`Réseau`, Router): create a packet <small>(IP, NAT, ICMP...)</small>
@@ -354,7 +392,7 @@ The data being send is named differently according to the headers that were adde
 * **Level 1**: stream (bits)
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## TCP/IP model
 
@@ -363,11 +401,11 @@ The TCP/IP model was introduced way before the OSI model, and remain the most us
 * **Layer 4 - Application**: Layers 5 to 7 of OSI
 * **Layer 3 - Transport**: Layers 4 of OSI <small>(socket, port...)</small>
 * **Layer 2 - Internet**: Layers 3 of OSI <small>(IP, ETH...)</small>
-* **Layer 1 - Physical**: Layers 1, and 2 of OSI <small>(WIFI, ADSL, ETH...)</small>
+* **Layer 1 - Physical**: Layers 1, and 2 of OSI <small>(WIFI, ADsr, ETH...)</small>
 
 Some are splitting the "Layer 1" back in two layers, but it's not in the RFC1122 standard.
 
-<hr class="sl">
+<hr class="sr">
 
 ## Protocols
 
@@ -533,7 +571,7 @@ To check if two packets are fragments, they MUST have
 
 > One thing to note, is that for instance in UDP, there is no "IP address" in the header. You should remember than UDP is working at a layer above (Layer 4) the one adding such information (Layer 3). And, as written before, each layer is adding its header, so still for UDP, you would have the header of IP followed by the header of UDP...
 
-<hr class="sr">
+<hr class="sl">
 
 ## Address Resolution Protocol (ARP)
 
@@ -568,7 +606,7 @@ You can observe an ARP request by using `tcpdump`, and a `ping` on an uncached t
 * ...
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Domain Name System (DNS) protocol
 
@@ -623,7 +661,7 @@ But, in practice, to reduce traffic, and not put a heavy pressure on the root se
 </details>
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Routing table
 
