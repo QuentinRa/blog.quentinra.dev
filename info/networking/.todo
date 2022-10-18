@@ -1,14 +1,8 @@
-https://cisco.goffinet.org/ccna/fondamentaux/modeles-tcp-ip-osi/
-https://www.tummy.com/articles/networking-basics-how-arp-works/
-https://www.digitalocean.com/community/tutorials/an-introduction-to-dns-terminology-components-and-concepts
-https://www.inetdaemon.com/tutorials/internet/tcp/3-way_handshake.shtml
-https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml
-https://www.faidherbe.org/tutoriel/
-----------------
 >> TCP
 "three-way handshake": SYN (synchronise) SYN/ACK ACK (Acknowledgement)
 ACK number
-https://en.wikipedia.org/wiki/Transmission_Control_Protocol
+https://www.howtouselinux.com/post/understanding-tcp-sequence-number
+https://www.inetdaemon.com/tutorials/internet/tcp/3-way_handshake.shtml
 
 >> IPV6
 file:///C:/Users/quent/Documents/texas-res/_build/html/system/net/files/ipv6/eui.html

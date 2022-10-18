@@ -301,7 +301,7 @@ IP address are either attributed manually, or by something called a <small>(Dyna
 </details>
 </div></div>
 
-<details class="details-e" open>
+<details class="details-e">
 <summary>Subnetwork, subnet, subnetting: divide your network</summary>
 
 <div class="row row-cols-md-2"><div>
@@ -612,11 +612,11 @@ You can observe an ARP request by using `tcpdump`, and a `ping` on an uncached t
 
 <div class="row row-cols-md-2"><div>
 
-Remembering IP addresses can be a trough process. Because of that, **Fully Qualified Domain Name** (FQDN), mostly simply called **Domain names**, were introduced, pointing to IP addresses.
+Remembering IP addresses can be a trough process. Because of that, **Domain names** were introduced, pointing to IP addresses.
 
 For instance, the domain name `example.com` is pointing to `93.184.216.34`.
 
-> Note: `example.com` is actually `example.com.`, with a "`.`" at the end. That's why "`.`" is called the root, as every domain is "starting" with "`.`".
+> Note: `example.com` is actually the **Fully Qualified Domain Name** (FQDN) `example.com.`, with a "`.`" at the end. That's why "`.`" is called the root, as every domain is a child of root.
 
 > DNSSEC stands for DNS Secure, which is an extension of the DNS protocol adding security as they were no such thing originally.
 
@@ -659,6 +659,9 @@ The iterative approach mandated by the RFC 1034 is
 
 But, in practice, to reduce traffic, and not put a heavy pressure on the root servers, practices such as caching are used.
 </details>
+
+See also: [An Introduction to DNS Terminology, Components, and Concepts
+(digitalocean)](https://www.digitalocean.com/community/tutorials/an-introduction-to-dns-terminology-components-and-concepts)
 </div></div>
 
 <hr class="sl">
