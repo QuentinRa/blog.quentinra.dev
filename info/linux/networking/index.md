@@ -157,6 +157,8 @@ $ dig google.fr -t AAAA
 ;; ANSWER SECTION:
 google.fr.              300     IN      AAAA 2607:f8b0:4020:805::2003
 ```
+
+You can also add options: `+stats +trace +nodnssec`.
 </details>
 </div></div>
 

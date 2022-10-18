@@ -120,16 +120,6 @@ ARP RESPONSE
   * **Switch**: aggregate multiples devices (4-64 ports), send packet to target because they know which target is on which of its ports
   * **Router**: connect networks, do "routing" (decide which route packets take)
 
-* **DHCP**
-  * IP adresses can be assigned manually
-  * or most commonly by using a DHCP (Dynamic Host Configuration Protocol) server
-  * If device connect, and has no IP
-    * Send request to retrieve an IP: DHCP Discover
-    * DHCP server replies if any, with an IP: DHCP Offer
-    * The device confirm the IP: DHCP Request
-    * The server ack: DHCP ACK
-    * NOTE: ACK, REQUEST... are DHCP packets
-
 <hr class="sep-both">
 
 ### Samba
