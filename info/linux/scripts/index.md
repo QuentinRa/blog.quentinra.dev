@@ -45,7 +45,7 @@ The Portable Operating System Interface (**POSIX**) is a family of standards (`n
 
 **This course will focus on making POSIX-compliant scripts**.
 
-<span class="h3">As such if you want to make bash-only scripts, read the bash-course to improve your posix scripts by using bash-only syntax </span><small>(usually shorter, and/or simplified)</small>.
+<span class="h4">As such if you want to make bash-only scripts, read the bash-course to improve your posix scripts by using bash-only syntax </span><small>(usually shorter, faster, and/or simplified)</small>.
 
 </div><div>
 
@@ -53,14 +53,12 @@ The Portable Operating System Interface (**POSIX**) is a family of standards (`n
 
 * ❌ **DO NOT USE `((`, `[[`, `]]`, and `))`**
 * ❌ **DO NOT USE `&&`<sup>1</sup>, `||`**<sup>1</sup>
-* ❌ **DO NOT USE `>`<sup>1</sup>, `<`<sup>1</sup>...** to compare
+* ❌ **DO NOT USE `>`<sup>1</sup>, `<`<sup>1</sup>...**
 
 ```bash
 for (( i = 0; i < 10; i++ )); do
     # code
 done
-
-echo $((0+1))
 
 if [[ 5 > 3 || 4 > 3 ]]; then
   # code
@@ -289,23 +287,14 @@ done
 **for i** <small>(here, starting at 1, increment by one, up to 5 included)</small>.
 
 ```bash
-for i in {1..5}; do
-    # code
-done
-```
-
-```bash
 for i in `seq 1 5`; do
     # code
 done
 ```
 
-You can change the increment (one by default)
+You can change the increment <small>(`+1` by default)</small> by adding a third parameter to `seq`, for instance with `seq 1 2 5`, `i` starts at 1, incremented by 2, while being lower, or equals to 5 <small>(1 3 5)</small>.
 
-* `{1..5..2}`: "i" start at 1, incremented by 2, while "i" is lower than 5
-* `seq 1 2 5`: same
-
-> Non-POSIX followers can use the real "for i" with i++, which is usually faster.
+> Non-POSIX followers can use the real "for i" with i++, which is usually faster, or use brace expansion instead of `seq`.
 </div></div>
 
 <hr class="sr">
@@ -339,7 +328,10 @@ List of all arguments
 
 ```bash
 echo $@
+# echo ./example arg1 "This is arg2" -o arg4
 ```
+
+There is also `$*` in which is all arguments as a single string.
 </div><div>
 
 **Note 1**: we are usually NOT using `$0`... directly in the code. We are usually storing them in variables, and using these instead.

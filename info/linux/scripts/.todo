@@ -1,5 +1,4 @@
 Commands
-- seq
 - exit
 - shift
 - sleep
@@ -15,12 +14,6 @@ esac
 - until list; do list; done
 - break [n]; Exit from within a for, while, until, or select loop. If n is specified, break n levels.
 - continue [n]. Resume the next iteration of the enclosing for, while, until, or select loop. If n is specified, resume at the nth enclosing loop.
-
-Args
-- $* all arguments as a single word
-
-Other
-- Operators >, <, ... lexicography?
 
 -----------------
 file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/exercices/scripts.html

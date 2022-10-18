@@ -688,9 +688,9 @@ You may want to do some stuff involving calculations. The shell won't interpret 
 
 ```bash
 four=$[3+1]
+# same
+four=$((3+1))
 ```
-
-> Non-POSIX followers can use `$((3+1))`.
 </div><div>
 
 Example of increasing a variable by one.
