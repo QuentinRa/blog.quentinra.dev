@@ -2,6 +2,25 @@
 
 ...
 
+<hr class="sr">
+
+## LAN, and WAN networks
+
+<div class="row row-cols-md-2"><div>
+
+**Wide area network** (WAN, `réseau modial/étendu`) is every network outside your LAN network.
+
+**Local Area Network** (LAN, `réseau domestique`) is a network established within a limited area such as your home.
+
+**Router**: this is a device usually connecting a LAN network, with a WAN network.
+
+**Hub/Switch**: this is an intermediary used when exchanging packet in a network, that handle that received packets are in the right order, not corrupted, and received.
+
+**Ethernet**: this is a cable that can be used to connect a device to a Hub/Switch.
+</div><div>
+</div></div>
+
+
 <hr class="sl">
 
 ## How is communication taking place?
@@ -227,8 +246,6 @@ IP address are either attributed manually, or by something called a <small>(Dyna
 4. **DHCP ACK**: the DHCP server confirms that the device was assigned the given IP address
 </details>
 </div></div>
-
-
 
 <hr class="sr">
 
