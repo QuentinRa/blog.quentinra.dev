@@ -7,19 +7,22 @@
         "tag": "cybersecurity",
         "name": "Culture",
         "desc": "A lot of cyber-related stuff such as well-know threats to increase your knowledge about cybersecurity.",
-        "icon": "<i class=\"bi bi-shield-lock\"></i>"
+        "icon": "<i class=\"bi bi-shield-lock\"></i>",
+        "hidden": false
       },
       {
         "tag": "tools",
         "name": "Tools",
         "desc": "A list of tools that you may use  while practicing cybersecurity.",
-        "icon": "<i class=\"bi bi-hammer\"></i>"
+        "icon": "<i class=\"bi bi-hammer\"></i>",
+        "hidden": false
       },
       {
         "tag": "tools/links/index.md",
         "name": "Handful resources",
         "desc": "A list of useful resources (ex: website, gits...) that you may use while learning, or practicing cybersecurity.",
-        "icon": null
+        "icon": null,
+        "hidden": false
       }
     ],
     "Discovery": [
@@ -27,13 +30,15 @@
         "tag": "discovery/investigation/index.md",
         "name": "Investigation",
         "desc": "",
-        "icon": ""
+        "icon": "",
+        "hidden": false
       },
       {
         "tag": "discovery/host/index.md",
         "name": "Host discovery",
         "desc": "",
-        "icon": ""
+        "icon": "",
+        "hidden": false
       }
     ],
     "Web": [
@@ -41,19 +46,29 @@
         "tag": "web/website/index.md",
         "name": "Exploit website",
         "desc": "",
-        "icon": ""
+        "icon": "",
+        "hidden": true
       },
       {
         "tag": "web/server/index.md",
         "name": "Exploit webserver",
         "desc": "",
-        "icon": ""
+        "icon": "",
+        "hidden": true
+      },
+      {
+        "tag": "web/dns/index.md",
+        "name": "Exploit DNS",
+        "desc": "",
+        "icon": "",
+        "hidden": false
       },
       {
         "tag": "web/tools/index.md",
         "name": "CyberTools (Web)",
         "desc": "",
-        "icon": ""
+        "icon": "",
+        "hidden": true
       }
     ],
     "Software": [
@@ -61,7 +76,8 @@
         "tag": "random/crack_password/index.md",
         "name": "Crack passwords",
         "desc": "",
-        "icon": ""
+        "icon": "",
+        "hidden": false
       }
     ]
   }
