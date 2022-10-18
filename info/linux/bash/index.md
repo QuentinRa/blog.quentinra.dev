@@ -173,8 +173,9 @@ done
 
 ```bash
 select name in option1 option2 ; do
-  # name is either empty, of equals to option1/option2
-  echo $name
+  # name is either empty, of equals to option1/option2,
+  # and $REPLY is your REPLY
+  echo $name with reply: $REPLY
 done
 ```
 
@@ -198,12 +199,24 @@ Get a value
 $ echo ${array[0]}
 ```
 
-Get all values
+Print all values
 
 ```bash
 $ echo ${array[@]}
 ```
+
+Length
+
+```bash
+$ echo ${#array[@]}
+```
 </div><div>
+
+Add a value
+
+```bash
+$ array+=(1)
+```
 
 Set a value
 
@@ -255,3 +268,10 @@ $ echo word | tee
 word
 ```
 </div></div>
+
+<hr class="sr">
+
+## References
+
+* [man bash](https://linux.die.net/man/1/bash)
+* [devhints.io](https://devhints.io/bash)
