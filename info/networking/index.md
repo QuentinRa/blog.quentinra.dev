@@ -118,7 +118,7 @@ A **media access control address (MAC address)** is a **unique (physical) addres
 
 This is a 6-bytes-long address such as `ff:ff:ff:ff:ff:ff` with 12 hexadecimal character, separated with a colon.
 
-* The first 6 characters are the vendor/manufacturer
+* The first 6 characters are identifying the vendor/manufacturer. This is called a [OUI](http://standards-oui.ieee.org/oui/oui.txt) <small>(Organizationally unique identifier)</small>.
 * The last 6 characters are the unique address
 </div></div>
 
