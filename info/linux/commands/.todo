@@ -14,5 +14,6 @@ declare -F
 
 PS is moving to BSD-like options?
 = ps aux = ps -e
+jobs
 
 open pdf/browser...

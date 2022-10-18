@@ -4,9 +4,20 @@ This course will introduce bash-specific knowledge that should help you write si
 
 <hr class="sl">
 
-## ...
+## Bash
 
-...
+<div class="row row-cols-md-2"><div>
+
+Some nice information
+
+* 1989
+* Bourne Again Shell
+* Debian and many derivatives, such as Ubuntu 
+</div><div>
+
+`~/.bashrc` is a script executed when launching a terminal. You can write alias, permanent changes to environment variables, or builtin inside. You may have to create it. Once you changed its contents, you can update your current terminal using `source ~/.bashrc`.
+
+</div></div>
 
 <hr class="sr">
 
@@ -57,6 +68,8 @@ Not debug
 This is most likely one of the coolest features, as we can use this everywhere.
 
 * `{0..5}` is replaced with "0 1 2 3 4 5"
+* `{a..e}` is replaced with "a b c d e"
+* `{a..e..2}` is replaced with "a c e"
 * `{toto,tata,titi}` is replaced with "toto tata titi"
 
 For instance, you can use these in loops, or in glob-patterns.
@@ -152,4 +165,19 @@ for i in ${array[@]}; do
   echo $i
 done
 ```
+</div></div>
+
+<hr class="sr">
+
+## Random
+
+<div class="row row-cols-md-2"><div>
+
+In bash, there are two commands that does nothing
+
+```bash
+$ :
+$ command
+```
+</div><div>
 </div></div>
