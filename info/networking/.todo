@@ -5,9 +5,6 @@ https://www.inetdaemon.com/tutorials/internet/tcp/3-way_handshake.shtml
 https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml
 https://www.faidherbe.org/tutoriel/
 ----------------
->> Subnetwork
-https://en.wikipedia.org/wiki/Subnetwork
-
 >> TCP
 "three-way handshake": SYN (synchronise) SYN/ACK ACK (Acknowledgement)
 ACK number
