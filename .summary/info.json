@@ -4,35 +4,35 @@
   "courses": {
     "e1": [
       {
-        "tag": "ocaml",
+        "tag": "programming/ocaml/index.md",
         "name": "OCaml",
         "desc": "OCaml may be used when you need to write a safe program (as it is a functional language). It's quite easy to learn, almost no syntax.",
         "icon": "<i class=\"bi bi-terminal-fill\"></i>",
         "hidden": false
       },
       {
-        "tag": "c",
+        "tag": "programming/c/index.md",
         "name": "C",
         "desc": "Coming soon!",
         "icon": "<i class=\"bi bi-terminal-fill\"></i>",
         "hidden": true
       },
       {
-        "tag": "cpp",
+        "tag": "programming/cpp/index.md",
         "name": "C++",
         "desc": "Coming soon!",
         "icon": "<i class=\"bi bi-terminal-fill\"></i>",
         "hidden": true
       },
       {
-        "tag": "java",
+        "tag": "programming/java/index.md",
         "name": "Java",
         "desc": "Coming soon!",
         "icon": "<i class=\"bi bi-terminal-fill\"></i>",
         "hidden": true
       },
       {
-        "tag": "kotlin",
+        "tag": "programming/kotlin/index.md",
         "name": "Kotlin",
         "desc": "Kotlin is a open-source, modern, programming language developed by JetBrains, which is also the main language used for Android applications.",
         "icon": "<i class=\"bi bi-terminal-fill\"></i>",
@@ -101,21 +101,21 @@
     ],
     "e3": [
       {
-        "tag": "sql",
+        "tag": "databases/sql/index.md",
         "name": "SQL",
         "desc": "Relational databases are using SQL (89 or 92) as their query language. Since ~2011, NoSQL databases are more and more used.",
         "icon": "<i class=\"bi bi-server\"></i>",
         "hidden": false
       },
       {
-        "tag": "plsql",
+        "tag": "databases/plsql/index.md",
         "name": "PL/SQL",
         "desc": "If you want to add functions in SQL, you need to learn the Procedural Language (PL) for SQL. In PostgreSQL, this is called PL/pgSQL.",
         "icon": "<i class=\"bi bi-server\"></i>",
         "hidden": false
       },
       {
-        "tag": "nosql",
+        "tag": "databases/nosql/index.md",
         "name": "NoSQL",
         "desc": "Learn about NoSQL 'NotOnlySQL', 4 new kinds of databases which are more flexible than relational databases (such as MongoDB or Cypher).",
         "icon": "<i class=\"bi bi-stack\"></i>",
@@ -124,28 +124,28 @@
     ],
     "e4": [
       {
-        "tag": "web",
+        "tag": "web/general/index.md",
         "name": "WEB",
         "desc": "How to start, what you need to know, ... and everything that couldn't be put in a specific language course.",
         "icon": "<i class=\"bi bi-globe\"></i>",
         "hidden": false
       },
       {
-        "tag": "html",
+        "tag": "web/html/index.md",
         "name": "HTML",
         "desc": "A complete summary of what you need to know in HTML to make a website.",
         "icon": "<i class=\"bi bi-globe\"></i>",
         "hidden": false
       },
       {
-        "tag": "css",
+        "tag": "web/css/index.md",
         "name": "CSS",
         "desc": "What's CSS and how you could use it to make your website looks better.",
         "icon": "<i class=\"bi bi-globe\"></i>",
         "hidden": false
       },
       {
-        "tag": "js",
+        "tag": "web/js/index.md",
         "name": "JavaScript",
         "desc": "A short introduction to JavaScript used to make interactive websites or required for Node.js/Typescript courses.",
         "icon": "<i class=\"bi bi-globe\"></i>",

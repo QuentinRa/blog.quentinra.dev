@@ -171,7 +171,7 @@ This may look like something easy, but you need to think about your tests while 
     
 And then you will end speeding the development through you suffered at the beginning doing some UML.
 
-* [JUnit in Java](../../info/java/index.md#tests-with-junit)
+* [JUnit in Java](../../info/programming/java/index.md#tests-with-junit)
 * [PHPUnit in PHP](../../info/php/index.md#tests-with-phpunit)
 * ...
 
