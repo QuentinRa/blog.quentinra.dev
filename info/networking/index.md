@@ -336,7 +336,7 @@ When a computer send a message, it will be send starting a layer, and go down. W
 * **Layer 6 - Presentation**: Standardize, add encryption/compression... <small>(SSL, TLS...)</small>
 * **Layer 5 - Session**: Try to establish a connexion <small>(RPC, PAP...)</small>
 * **Layer 4 - Transport**: select a protocol <small>(TCP, UDP...)</small>
-* **Layer 3 - Network** (`Réseau`, Router): create a packet <small>(IP, NAT...)</small>
+* **Layer 3 - Network** (`Réseau`, Router): create a packet <small>(IP, NAT, ICMP...)</small>
 * **Layer 2 - Data Link** (`Liaison`, Switch): resolve MAC <small>(ARP, ETH...)</small>
 * **Layer 1 - Physical** (HUB): binary to signals <small>(links, USB...)</small>
 </div><div class="col-md-5">
@@ -550,6 +550,8 @@ You can observe an ARP request by using `tcpdump`, and a `ping` on an uncached t
 ```none
 ... reply <target_IP> is-at <MAC_address> ...
 ```
+
+> ARP packets are bound to their subnet, so they won't leave it. If a machine isn't found in a subnet, then the requested will send a packet to the gateway, which will most likely either return the IP address, or repeat the same process.
 </div><div>
 
 **Protocol**
