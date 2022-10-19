@@ -97,6 +97,13 @@
         "desc": "Knowledge related to using Linux on Windows.",
         "icon": null,
         "hidden": false
+      },
+      {
+        "tag": "linux/system_calls/index.md",
+        "name": "System calls",
+        "desc": "...",
+        "icon": null,
+        "hidden": false
       }
     ],
     "e3": [

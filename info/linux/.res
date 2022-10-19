@@ -7,6 +7,7 @@ https://linuxhandbook.com/
 https://linuxhint.com/
 https://linuxize.com/
 https://www.howtouselinux.com/
+https://linuxconfig.org/
 
 Reference
 https://www.gnu.org/software/bash/manual/bash.html
