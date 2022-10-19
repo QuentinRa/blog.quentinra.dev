@@ -208,7 +208,10 @@ $ xrandr --output DP-2 --brightness 0.5
 </details>
 </div></div>
 
-> Random: you can use `xdg-open` to open a PDF, or an URL.
+> Random:
+> 
+> * you can use `xdg-open` to open a PDF, or an URL.
+> * you can use `getent passwd` <small>(get entry)</small> instead of `cat /etc/passwd`
 
 <hr class="sr">
 
@@ -1266,6 +1269,13 @@ $ sort s -t: -k2.0,2.1 # range
 </div><div>
 <details class="details-e">
 <summary><code>expr</code>: substring, indexOf...</summary>
+
+Length of a string
+
+```bash
+$ expr length "Sarah"
+5
+```
 
 Extract a string of "3" characters from "Sarah" starting from index "2"
 
