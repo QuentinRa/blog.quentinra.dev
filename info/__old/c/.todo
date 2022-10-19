@@ -1,6 +1,8 @@
 https://stackoverflow.com/questions/14492637/warn-when-using-parameter-marked-as-unused
 flags
 
+dup dup2 dup3(2)
+
 https://learn.onlinegdb.com/
 http://learn.onlinegdb.com/
 
