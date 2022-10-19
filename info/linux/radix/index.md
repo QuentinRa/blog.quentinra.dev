@@ -192,7 +192,7 @@ Then we are converting $12=C$, $14=E$, $11=B$, et concatenating in the reverse o
 
 <hr class="sl">
 
-## Encoding numbers
+## Integers arithmetic
 
 <div class="row row-cols-md-2"><div>
 
@@ -206,8 +206,9 @@ $n$ is the number of bits that we have to store this value. For instance, it's u
 With signed numbers, we are using the leading bit <small>(or the trailing bit)</small>, to know the sign: 0 means positive, 1 means negative.
 
 For positive numbers, regardless of whether they are signed or not, we only have to convert them to binary, and store them.
+</div><div>
 
-For negative numbers, we need to do an operation called [**Two's complement**](https://en.wikipedia.org/wiki/Two's_complement) (`complément à 2`). 
+For negative numbers, we need to do an operation called [**Two's complement**](https://en.wikipedia.org/wiki/Two's_complement) (`complément à 2`).
 
 <details class="details-e">
 <summary>Two's complement</summary>
@@ -225,7 +226,6 @@ For negative numbers, we need to do an operation called [**Two's complement**](h
 2. add 1
 3. convert back to decimal
 </details>
-</div><div>
 
 The most common problem that may occur when doing calculations is an **overflow** (`Débordement`). It means that the result is outside the bounds/range of values for the given number. An **overflow may be without any consequences**, meaning that the right result was returned.
 
@@ -250,13 +250,22 @@ To add 5 (101), with 5 (101), you need to do like you will in grad school.
 
 One trick is that if the two numbers are negative, you can use the **Two's complement** on each to make them positive, then do the addition, ensure there is no overflow, and do the **Two's complement** on the result. 
 </details>
+</div></div>
 
-<details class="details-e" open>
+<hr class="sr">
+
+## Floating-point arithmetic
+
+<div class="row row-cols-md-2"><div>
+
+A floating-point can be identified by the **Radix point**, which is usually either `.` (dot), or `,` (comma). 
+
+The first step is scientific notation. You should have heard of $1.3 * 10^n$, in radix-10, and our goal is something like $1.11 * 2^n$, so in radix-2.
+
+**Note**: not every number can be written using scientific notation.
+
+<details class="details-e">
 <summary>Encoding floating numbers</summary>
-
-In base 10, there is the scientific notation, such as $1.3 * 10^n$. Here, we will have something similar, but in base 2, so $1.11 * 2^n$.
-
-A floating-point can be identified by the **Radix point**, which is usually either `.` (dot), or `,` (comma). **Please note that not every number can be written using scientific notation**.
 
 * $e(a)$ extract the digits after the radix point of $a$ <small>(ex: 1.11 -> 0.11)</small>
 * $a_i = \text{your_number}$
@@ -274,8 +283,9 @@ For instance, with 5.75
 * $a_0 = 0.5 * 2 = 1.0$
 * $r_0 = 1$
 
-As $5 = (101)_2$, and $0.75=(11)_2$, we have $(5.75)_10=(101.11)_2$.
-
+As $5 = (101)_2$, and $.75=(.11)_2$, we have $(5.75)_10=(101.11)_2$.
 </details>
+</div><div>
 
+...
 </div></div>
