@@ -11,13 +11,6 @@
         "hidden": false
       },
       {
-        "tag": "programming/c/index.md",
-        "name": "C",
-        "desc": "Coming soon!",
-        "icon": "<i class=\"bi bi-terminal-fill\"></i>",
-        "hidden": true
-      },
-      {
         "tag": "programming/cpp/index.md",
         "name": "C++",
         "desc": "Coming soon!",
@@ -97,15 +90,25 @@
         "desc": "Knowledge related to using Linux on Windows.",
         "icon": null,
         "hidden": false
-      },
+      }
+    ],
+    "Low-Level": [
       {
         "tag": "linux/system_calls/index.md",
         "name": "System calls",
         "desc": "...",
         "icon": null,
         "hidden": false
+      },
+      {
+        "tag": "programming/c/index.md",
+        "name": "C",
+        "desc": "Coming soon!",
+        "icon": "<i class=\"bi bi-terminal-fill\"></i>",
+        "hidden": true
       }
     ],
+
     "e3": [
       {
         "tag": "databases/sql/index.md",
