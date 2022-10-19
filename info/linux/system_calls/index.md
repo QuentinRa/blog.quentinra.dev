@@ -20,3 +20,19 @@ void perror(const char *s);
 
 If a system call failed, a flag will be set. You can use `perror` to print the error message, and you can even append your own error message with the parameter `s`.
 </div></div>
+
+<hr class="sr">
+
+## `exit` - kill the process
+
+<div class="row row-cols-md-2"><div>
+
+```c
+#include <unistd.h>
+
+void _exit(int status);
+```
+</div><div class="align-self-center">
+
+You will use this to terminate the program.
+</div></div>
