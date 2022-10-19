@@ -36,7 +36,7 @@
       {
         "tag": "networking",
         "name": "Networking",
-        "desc": "Coming soon!",
+        "desc": "Learn about protocols, network interfaces, ports, IPV4/IPV6, and models such as OSI, or TCP/IP.",
         "icon": "<i class=\"bi bi-hdd-network\"></i>",
         "hidden": false
       }
@@ -80,7 +80,7 @@
       {
         "tag": "linux/bash/index.md",
         "name": "Linux (Bash)",
-        "desc": "...",
+        "desc": "Learn about Bash-only features.",
         "icon": null,
         "hidden": false
       },

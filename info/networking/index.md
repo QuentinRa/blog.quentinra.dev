@@ -687,3 +687,38 @@ Once you found a destination, the **gateway** indicate what to do to reach this 
 
 Another thing that you should take note of is **Iface**, which is the network interface that will be used to send the packet.
 </div></div>
+
+<hr class="sr">
+
+## Network filters
+
+<div class="row row-cols-md-2"><div>
+
+Network filters are behaviors applied to a packet matching predefined rules. This section will highly refer to the command `iptables`. 
+
+This command is using tables, the most widely used are **filter packets** (filter), and **network address translation** (NAT). Each table is made of sets of **chains** which are statements "`<expression> <action>`"
+
+* `expression`: is a condition, that if false, will trigger action
+* `action`: an action on the packet (filter/NAT), or another chain
+</div><div>
+
+<details class="details-e">
+<summary>Table "filter"</summary>
+
+This table is used to accept, or drop a packet. There are 3 kinds of chains, according to what packets are doing
+
+* **FORWARD**: packets are transiting/passing by this machine
+* **INPUT**: packet have this machine for destination
+* **OUTPUT**: packet have emitted from this machine
+
+And you have actions such as **ACCEPT/DENY/DROP/...** to drop a packet. 
+
+For instance, this command will DROP any packet using the protocol TCP, on the port 22, that have our machine for destination, emitted by `172.16.1.1`.
+
+```bash
+$ sudo iptables -t filter -A INPUT -s 172.16.1.1 -p tcp --dport 22 -j DROP
+```
+</details>
+
+...
+</div></div>
