@@ -30,9 +30,34 @@ If a system call failed, a flag will be set. You can use `perror` to print the e
 ```c
 #include <unistd.h>
 
-void _exit(int status);
+void exit(int status);
 ```
 </div><div class="align-self-center">
 
 You will use this to terminate the program.
+</div></div>
+
+<hr class="sl">
+
+## `open` - open a file
+
+<div class="row row-cols-md-2"><div class="align-self-center">
+
+```c
+#include <fcntl.h>
+
+int open(const char *pathname, int flags);
+int open(const char *pathname, int flags, mode_t mode);
+```
+</div><div>
+
+* `pathname` is the path to your file
+
+* `flags` are a list of one, or mode options, separated with a pipe (`|`), used to determine how the file is opened.
+  * `O_RDONLY`: read only
+  * `O_WRONLY`: write only
+  * `O_CREAT`: create if it does not exist
+  * `O_TRUNC`: truncate/clear content
+
+* If you are creating a file, you must add a third argument, which is the permissions given to the file, such as `0600`.
 </div></div>
