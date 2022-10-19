@@ -1,6 +1,6 @@
 # Instructions
 
-[Go back](..)
+[Go back](../..)
 
 Our news instructions are
 

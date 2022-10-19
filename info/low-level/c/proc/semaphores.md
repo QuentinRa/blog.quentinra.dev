@@ -1,6 +1,6 @@
 # Semaphores
 
-[Go back](..)
+[Go back](../../../__old/c)
 
 Let's set ``n`` : a number of resources. Then we want
 to prevent more than n access of a resource at the same

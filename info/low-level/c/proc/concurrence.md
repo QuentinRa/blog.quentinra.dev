@@ -1,6 +1,6 @@
 # Concurrence
 
-[Go back](..)
+[Go back](../../../__old/c)
 
 We will use something called a ``mutex`` to prevent
 multiple threads to modify a variable.

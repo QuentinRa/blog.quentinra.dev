@@ -1,6 +1,6 @@
 # Threads
 
-[Go back](..)
+[Go back](../../../__old/c)
 
 **Beware**, before starting that to use threads, you
 must compile in ``gcc`` for instance with

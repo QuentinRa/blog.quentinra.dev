@@ -1,6 +1,6 @@
 # Pipes
 
-[Go back](..)
+[Go back](../../../__old/c)
 
 It's another way to communicates between process,
 more flexible that signals since you can share

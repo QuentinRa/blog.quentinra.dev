@@ -1,6 +1,6 @@
 # Types
 
-[Go back](..)
+[Go back](../../../__old/c)
 
 You got 5 primitives types in C. All variables must have a type, and you
 can create new ones.

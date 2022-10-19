@@ -1,6 +1,6 @@
 # Usage
 
-[Go back](..)
+[Go back](../..)
 
 The form is like
 

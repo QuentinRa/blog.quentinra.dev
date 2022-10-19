@@ -1,6 +1,6 @@
 # Processes : wait
 
-[Go back](..)
+[Go back](../../../__old/c)
 
 When starting a process, you might want as a father,
 to wait for your child to do his task and die. We do

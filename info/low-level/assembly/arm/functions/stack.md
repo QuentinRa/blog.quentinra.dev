@@ -1,6 +1,6 @@
 # Stack
 
-[Go back](..)
+[Go back](../..)
 
 Do you remember that `pc` is the current instruction and `lr` the next one?
 
