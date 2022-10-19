@@ -250,4 +250,32 @@ To add 5 (101), with 5 (101), you need to do like you will in grad school.
 
 One trick is that if the two numbers are negative, you can use the **Two's complement** on each to make them positive, then do the addition, ensure there is no overflow, and do the **Two's complement** on the result. 
 </details>
+
+<details class="details-e" open>
+<summary>Encoding floating numbers</summary>
+
+In base 10, there is the scientific notation, such as $1.3 * 10^n$. Here, we will have something similar, but in base 2, so $1.11 * 2^n$.
+
+A floating-point can be identified by the **Radix point**, which is usually either `.` (dot), or `,` (comma). **Please note that not every number can be written using scientific notation**.
+
+* $e(a)$ extract the digits after the radix point of $a$ <small>(ex: 1.11 -> 0.11)</small>
+* $a_i = \text{your_number}$
+* do
+  * $a_i = e(a_i) * 2$
+  * $r_i = \text{if}\ a_i > 1.0\ \text{then}\ 1\ \text{else}\ 0$
+* while $a_i \neq 1.0$
+
+Simply concatenate the $r_i$ to get the floating part representation in base 2. Now, convert the decimal part, and your is $(a.r)_2$.
+
+For instance, with 5.75
+
+* $a_0 = 0.75 * 2 = 1.5$
+* $r_0 = 1$
+* $a_0 = 0.5 * 2 = 1.0$
+* $r_0 = 1$
+
+As $5 = (101)_2$, and $0.75=(11)_2$, we have $(5.75)_10=(101.11)_2$.
+
+</details>
+
 </div></div>
