@@ -205,38 +205,26 @@ $n$ is the number of bits that we have to store this value. For instance, it's u
 
 With signed numbers, we are using the leading bit <small>(or the trailing bit)</small>, to know the sign: 0 means positive, 1 means negative.
 
-<details class="details-e">
-<summary>signed number</summary>
+For positive numbers, regardless of whether they are signed or not, we only have to convert them to binary, and store them.
 
-This is the most used method to represent a signed number on a computer. [More info on Wikipedia](https://en.wikipedia.org/wiki/Two's_complement).
-
-**Convert decimal to signed number**
-
-* if the number is positive, do the same as for unsigned numbers
-* otherwise, do what we call **Two's complement** (`complément à 2`)
-  1. convert to binary
-  2. inverse every bit
-  3. add 1
-  4. store it
-
-**Convert signed number to decimal**
-
-* if the sign bit is 0, sdo the same as for unsigned numbers
-* otherwise,
-  *
-</details>
+For negative numbers, we need to do an operation called [**Two's complement**](https://en.wikipedia.org/wiki/Two's_complement) (`complément à 2`). 
 
 <details class="details-e">
-<summary>unsigned numbers</summary>
+<summary>Two's complement</summary>
 
-**Convert decimal to unsigned number**
+**Convert to positive**
 
-* convert to binary
-* store it
+1. convert to binary
+2. inverse every bit (**Two's complement**)
+3. add 1
+4. store it
 
-**Convert signed number to decimal**
+**Convert back to negative**
 
-* convert back to decimal
+1. inverse every bit (**Two's complement**)
+2. add 1
+3. convert back to decimal
 </details>
 </div><div>
-</div></div>
+
+The most common problem that may occur when doing calculations is an **overflow** (`Débordement`). It means that the result is outside the bounds/range of values for the given number. An **overflow may be without any consequences**, meaning that the right result was returned.
