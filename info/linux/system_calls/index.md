@@ -41,7 +41,7 @@ You will use this to terminate the program.
 
 ## `open` - open a file
 
-<div class="row row-cols-md-2"><div class="align-self-center">
+<div class="row row-cols-md-2"><div>
 
 ```c
 #include <fcntl.h>
@@ -49,7 +49,13 @@ You will use this to terminate the program.
 int open(const char *pathname, int flags);
 int open(const char *pathname, int flags, mode_t mode);
 ```
-</div><div>
+
+This function returns an `int`, usually called `fd`, short for **file descriptor**, and is used by other system calls. If you didn't know, there are 3 already open file descriptors: 
+
+* stdin, standard input: `0`
+* stdout, standard output: `1`
+* stderr, standard error output: `2`
+</div><div class="align-self-center">
 
 * `pathname` is the path to your file
 
@@ -60,4 +66,34 @@ int open(const char *pathname, int flags, mode_t mode);
   * `O_TRUNC`: truncate/clear content
 
 * If you are creating a file, you must add a third argument, which is the permissions given to the file, such as `0600`.
+</div></div>
+
+<hr class="sr">
+
+## `read` - read a file descriptor
+
+<div class="row row-cols-md-2"><div>
+
+```c
+#include <unistd.h>
+
+ssize_t read(int fd, void *buf, size_t count);
+```
+
+For instance, here is an example
+
+```c
+char str[11];
+ssize_t res = read(0, &str, 10);
+```
+
+</div><div class="align-self-center">
+
+* `fd` is the file descriptor from which you want to read
+
+* `*buf` is what you want to write. It's usually a string, while it could be something else.
+
+* `count` is the size of what you want to read.
+
+> You will most likely enter `n` to read `n` chars, but you should note that you implicitly wrote `10 * sizeof(char)`, and as the `sizeof(char)` is `1`, then you can only write `10`.
 </div></div>
