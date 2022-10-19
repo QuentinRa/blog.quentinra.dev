@@ -373,6 +373,7 @@ If the home of the current user is `/usr/user/home/`, then `~` would mean the ex
 * `/etc` (folder): "commonplace location to store system files that are used by your operating system"
 * `/dev/null` (file): a empty file, sort of trash files in which everything you write inside is deleted.
 * `/etc/shadow` (file): username, and their hashed password
+* `/etc/gshadow` (file), and `/etc/group`: groups
 * `/var/log/` (folder): log files
 * `/mnt` (folder): mounted device/hard-drives (D:, USB...)
 * `/tmp` (folder): a trash folder cleaned at restart
