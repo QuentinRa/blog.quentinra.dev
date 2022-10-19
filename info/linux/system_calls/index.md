@@ -18,8 +18,10 @@ void perror(const char *s);
 ```
 </div><div class="align-self-center">
 
-If a system call failed, a flag will be set. You can use `perror` to print the error message, and you can even append your own error message with the parameter `s`.
+If a system call failed, an error code will be set. You can use `perror` to print the error message, and you can even append your own error message with the parameter `s`.
 </div></div>
+
+> **NOTE**: system calls are usually returning **0 upon success, and -1 upon failure**. In any case, they set the variable "errno" with the code indicating what error occurred, and this is what perror will use to tell us more about the error.
 
 <hr class="sr">
 
@@ -87,6 +89,7 @@ char str[11];
 ssize_t res = read(0, &str, 10);
 ```
 
+The system call returns `-1` upon failure (see perror), or the number of character read.
 </div><div class="align-self-center">
 
 * `fd` is the file descriptor from which you want to read
@@ -116,6 +119,7 @@ For instance, here is an example
 ssize_t res = write(1, "Hello, World", 13);
 ```
 
+The system call returns `-1` upon failure (see perror), or the number of character written.
 </div><div class="align-self-center">
 
 * `fd` is the file descriptor in which you want to write
@@ -123,4 +127,23 @@ ssize_t res = write(1, "Hello, World", 13);
 * `buf` is what you want to write. It's usually a string, but it could be something else.
 
 * `count` is the size of what you want to write. Like read, you should use `sizeof(xxx)` if you are writing something else than chars <small>(for which sizeof is usually omitted because it's 1)</small>.
+</div></div>
+
+<hr class="sr">
+
+## `close` - close a file descriptor
+
+<div class="row row-cols-md-2"><div>
+
+```c
+#include <unistd.h>
+
+int close(int fd);
+```
+</div><div class="align-self-center">
+
+Aside from 0, 1, and 2, every file descriptor should be closed. 
+
+* `fd`: the file descriptor you want to close
+* return `0`, or `-1`
 </div></div>
