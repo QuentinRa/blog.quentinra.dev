@@ -2,14 +2,21 @@
 
 System calls are low-level functions that are directly interacting with the Linux kernel. You would usually use them in assembly, but this will be explained in another course. Rather, this course will focus on system calls in C, as this is hopefully simpler to learn than assembly.
 
+<div class="row row-cols-md-2"><div>
+
 > System functions are defined in `man 2`, such as `man 2 open`.<br>
-> You will find inside **imports**, and **signatures** of the system calls.
-> 
-> **Note**: for now, `fork`, `kill`, `dup/dup2/dup3`, `execv`, `sleep`, `pipe`, along every process-related system-calls, will not be listed in this course.
+> You will find inside **imports**, and **signatures** of the system calls.<br>
+> See `man 2 syscalls`.
+</div><div class="align-self-center">
+
+**Note**: for now, `fork`, `kill`, `dup/dup2/dup3`, `execv`, `sleep`, `pipe`, along every process-related system-calls, will not be listed in this course.
+</div></div>
 
 <hr class="sl">
 
 ## `perror` - print system call error message
+
+*This is not a system call, let's make <s>one</s> two exceptions*.
 
 <div class="row row-cols-md-2"><div>
 
