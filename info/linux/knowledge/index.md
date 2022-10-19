@@ -428,6 +428,7 @@ Environment variables (`Variables d’environnement`) are variables defined in t
 * **LANG**: language of the current user
 * **SHELL**: path to the shell
 * **PWD**: path to the current folder
+* **RANDOM**: return a random value
 * **DISPLAY**: [identify display](https://unix.stackexchange.com/questions/16815/what-does-display-0-0-actually-mean)
 
 And, there is **PATH**. This variable is used to store a list of folders. When you write a command on Linux, then **the Shell will look for the command's file in the PATH**, starting from the first folder, up to the last folder.

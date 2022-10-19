@@ -577,4 +577,11 @@ You may use "sleep" to pause your script
 $ sleep 50
 $ sleep 50s # same
 ```
-</div><div></div></div>
+</div><div>
+
+Don't ask why, but if you want a random number in $[10, 20]$.
+
+```bash
+$ echo $[RANDOM%(20-10+1) + 10]
+```
+</div></div>

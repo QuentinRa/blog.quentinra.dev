@@ -14,7 +14,7 @@ You can install it using `sudo apt-get install vim` or whatever command you are 
 * `vim`: open vim
 * `vim file`: open a file in vim (and create it, if it didn't exist)
 
-**HELP, I can't exit vim.**
+**HELP, I can't exit vim.** (😂 [how-to-exit-vim](https://github.com/hakluke/how-to-exit-vim) & [VimKiller](https://github.com/caseykneale/VIMKiller))
 
 If you are trapped in vim, keep calm, and press `esc` (escape key), then `:q!`.
 
