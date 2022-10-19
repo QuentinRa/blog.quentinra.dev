@@ -228,3 +228,26 @@ For negative numbers, we need to do an operation called [**Two's complement**](h
 </div><div>
 
 The most common problem that may occur when doing calculations is an **overflow** (`Débordement`). It means that the result is outside the bounds/range of values for the given number. An **overflow may be without any consequences**, meaning that the right result was returned.
+
+<details class="details-e">
+<summary>Addition / Subtraction</summary>
+
+Actually, there is no such operation as subtracting, we can only do additions, but there trick is that $a - b = a + (-b)$, and we can use the **Two's complement** to convert a positive number to a negative number.
+
+<div class="row"><div class="col-md-3">
+
+![addition](_images/addition.png)
+</div><div class="col-md-9">
+
+To add 5 (101), with 5 (101), you need to do like you will in grad school.
+
+* $0+0=0$
+* $0+1=1+0=0$
+* $1+1=0$ with a carry on the next (left-wise), as shown in green.
+</div></div>
+
+**Overflow**: there is an overflow if the two numbers have the same sign, such as two positives numbers. If the last carry, and the sign bit have a different value <small>(they are highlighted in red)</small>, then there is an **overflow with consequences**. That's the case with the example of 5+5, if we only have 3 bits, we can't store a 4 bits number.
+
+One trick is that if the two numbers are negative, you can use the **Two's complement** on each to make them positive, then do the addition, ensure there is no overflow, and do the **Two's complement** on the result. 
+</details>
+</div></div>
