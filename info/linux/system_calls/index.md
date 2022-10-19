@@ -34,6 +34,49 @@ If a system call failed, an error code will be set. You can use `perror` to prin
 
 <hr class="sr">
 
+## `strtol/atoi` - string to number
+
+*This is not a system call, this is the 2nd exception*.
+
+<div class="row row-cols-md-2"><div>
+
+It will surely be useful when making programs using system-calls. The easiest one to use is `atoi`, while its shortcoming is that if there is an error, nothing will happen, and it will return "0".
+
+```c
+#include <stdlib.h>
+
+// int atoi(const char *nptr);
+int c = atoi("5");
+// long atol(const char *nptr);
+long l = atol("5");
+```
+</div><div>
+
+```c
+#include <stdlib.h>
+
+// long strtol(const char *nptr, char **endptr, int base);
+int c = (int) strtol("5", NULl, 0);
+long l = strtol("5", NULl, 10);
+
+// double strtod(const char *nptr, char **endptr);
+// float strtof(const char *nptr, char **endptr);
+double d = strtod("2.0", NULL);
+```
+
+* `base`: 0 means autodetect radix, otherwise, the radix
+* `endptr`: NULL, or a pointer of a pointer, in which invalid character are stored. They are removed when making the conversion.
+
+```c
+char* str;
+long _ = strtol("5a", &str, 0);
+// str will be "a"
+```
+
+</div></div>
+
+<hr class="sl">
+
 ## `exit` - kill the process
 
 <div class="row row-cols-md-2"><div>
@@ -48,7 +91,7 @@ void exit(int status);
 You will use this to terminate the program.
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## `open` - open a file
 
@@ -79,7 +122,7 @@ This function returns an `int`, usually called `fd`, short for **file descriptor
 * If you are creating a file, you must add a third argument, which is the permissions given to the file, such as `0600`.
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## `read` - read a file descriptor
 
@@ -110,7 +153,7 @@ The system call returns `-1` upon failure (see perror), or the number of charact
 > You will most likely enter `n` to read `n` chars, but you should note that you implicitly wrote `10 * sizeof(char)`, and as the `sizeof(char)` is `1`, then you can only write `10`.
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## `write` - write in a file descriptor
 
@@ -138,7 +181,7 @@ The system call returns `-1` upon failure (see perror), or the number of charact
 * `count` is the size of what you want to write. Like read, you should use `sizeof(xxx)` if you are writing something else than chars <small>(for which sizeof is usually omitted because it's 1)</small>.
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## `lseek` - move through a file
 
@@ -171,7 +214,7 @@ If you understood right, to move back to the start, you would do
 ```
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## `close` - close a file descriptor
 
@@ -190,7 +233,7 @@ Aside from 0, 1, and 2, every file descriptor should be closed.
 * return `0`, or `-1`
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## `stat` - close a file descriptor
 
