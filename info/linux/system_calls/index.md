@@ -133,6 +133,39 @@ The system call returns `-1` upon failure (see perror), or the number of charact
 
 <hr class="sr">
 
+## `lseek` - move through a file
+
+<div class="row row-cols-md-2"><div>
+
+```c
+#include <unistd.h>
+
+off_t lseek(int fd, off_t offset, int whence);
+```
+
+Note that the function is returning your new offset in the file. To get your offset at any time, you can use this trick:
+
+```c
+... = lseek(xxx, 0L, SEEK_CUR);
+```
+</div><div class="align-self-center">
+
+* `fd` is the file descriptor
+* `offset` is a number (long) of character you want to skip starting from "whence"
+* `whence` is the location we are moving to before applying the offset.
+  * `SEEK_CUR`: do not move, use the current position
+  * `SEEK_SET`: move to the start of the file, and apply offset
+  * `SEEK_END`: move to the end of the file, and apply offset
+
+If you understood right, to move back to the start, you would do
+
+```c
+... = lseek(xxx, 0L, SEEK_SET);
+```
+</div></div>
+
+<hr class="sl">
+
 ## `close` - close a file descriptor
 
 <div class="row row-cols-md-2"><div>
