@@ -182,3 +182,45 @@ Aside from 0, 1, and 2, every file descriptor should be closed.
 * `fd`: the file descriptor you want to close
 * return `0`, or `-1`
 </div></div>
+
+<hr class="sr">
+
+## `stat` - close a file descriptor
+
+<div class="row row-cols-md-2"><div>
+
+```c
+#include <unistd.h>
+
+int stat(const char *pathname, struct stat *statbuf);
+int fstat(int fd, struct stat *statbuf);
+```
+
+`stat` is taking a path to a file or a file descriptor for `fstat`, and an empty structure, and will fill it with info about the file. If the function failed to do its job, then `-1` is returned.
+
+```c
+struct stat s;
+int res = stat("path", &s);
+res = fstat(xxx, &s);
+```
+
+</div><div class="align-self-center">
+
+```c
+struct stat {
+ dev_t     st_dev;     /* ID of device containing file */
+ ino_t     st_ino;     /* inode number */
+ mode_t    st_mode;    /* protection */
+ nlink_t   st_nlink;   /* number of hard links */
+ uid_t     st_uid;     /* user ID of owner */
+ gid_t     st_gid;     /* group ID of owner */
+ dev_t     st_rdev;    /* device ID (if special file) */
+ off_t     st_size;    /* total size, in bytes */
+ lksize_t st_blksize; /* blocksize for file system I/O */
+ blkcnt_t  st_blocks;  /* number of 512B blocks allocated */
+ time_t    st_atime;   /* time of last access */
+ time_t    st_mtime;   /* time of last modification */
+ time_t    st_ctime;   /* time of last status change */
+};
+```
+</div></div>
