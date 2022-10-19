@@ -91,9 +91,36 @@ ssize_t res = read(0, &str, 10);
 
 * `fd` is the file descriptor from which you want to read
 
-* `*buf` is what you want to write. It's usually a string, while it could be something else.
+* `buf` is where you will store what you read. It's usually a char array, but it could be something else.
 
 * `count` is the size of what you want to read.
 
 > You will most likely enter `n` to read `n` chars, but you should note that you implicitly wrote `10 * sizeof(char)`, and as the `sizeof(char)` is `1`, then you can only write `10`.
+</div></div>
+
+<hr class="sl">
+
+## `write` - write in a file descriptor
+
+<div class="row row-cols-md-2"><div>
+
+```c
+#include <unistd.h>
+
+ssize_t write(int fd, const void *buf, size_t count);
+```
+
+For instance, here is an example
+
+```c
+ssize_t res = write(1, "Hello, World", 13);
+```
+
+</div><div class="align-self-center">
+
+* `fd` is the file descriptor in which you want to write
+
+* `buf` is what you want to write. It's usually a string, but it could be something else.
+
+* `count` is the size of what you want to write. Like read, you should use `sizeof(xxx)` if you are writing something else than chars <small>(for which sizeof is usually omitted because it's 1)</small>.
 </div></div>
