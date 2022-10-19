@@ -1,18 +1,6 @@
 Commands
 - shift
 
-Control flow
-- case word in [ [(] pattern [ | pattern ] ... ) list ;; ] ... esac
-case $ANIMAL in
-  horse | dog | cat) echo -n "four";;
-  man | kangaroo ) echo -n "two";;
-  *) echo -n "an unknown number of";;
-esac
-
-- until list; do list; done
-- break [n]; Exit from within a for, while, until, or select loop. If n is specified, break n levels.
-- continue [n]. Resume the next iteration of the enclosing for, while, until, or select loop. If n is specified, resume at the nth enclosing loop.
-
 -----------------
 file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/exercices/scripts.html
 https://stackoverflow.com/questions/20615217/bash-bad-substitution#20616103

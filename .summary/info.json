@@ -79,7 +79,7 @@
       },
       {
         "tag": "linux/bash/index.md",
-        "name": "Linux (Bash)",
+        "name": "Linux (bash)",
         "desc": "Learn about Bash-only features.",
         "icon": null,
         "hidden": false

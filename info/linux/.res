@@ -3,6 +3,7 @@ https://devhints.io/bash#parameter-expansions
 what is the difference between snap/package/dpkg...
 learn more about what can I do with netstat (-tulpn?)
 converting BASH Scripts to Binary (https://iq.opengenus.org/bash-bourne-again-shell/)
+OS/ENS
 
 Blog
 https://linuxhandbook.com/

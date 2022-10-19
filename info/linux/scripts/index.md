@@ -274,27 +274,57 @@ for i in "Hello, World!" word2 word3 ; do
 done
 ```
 
-**while**: while is taking a "test" like if.
+**iterative for**
 
 ```bash
-while test; do
+# for ((i = 1; i <= 5; i++))
+for i in `seq 1 5`; do
     # code
+done
+# for ((i = 1; i <= 5; i+=2))
+for i in `seq 1 5 2`; do
+    # code
+done
+```
+
+You can use **break** to forcefully exit a for/while/until, and you can use **continue** to forcefully finish the current iteration, and start the next one. You may apply the keyword on more than one loop.
+
+```bash
+for i in {1..5} ; do
+    break
+    break 1 # same, break 1 loop
 done
 ```
 
 </div><div>
 
-**for i** <small>(here, starting at 1, increment by one, up to 5 included)</small>.
+**while**/**until**: while is taking a "test" like if.
 
 ```bash
-for i in `seq 1 5`; do
+while test; do
+    # code
+done
+until test; do
     # code
 done
 ```
 
-You can change the increment <small>(`+1` by default)</small> by adding a third parameter to `seq`, for instance with `seq 1 2 5`, `i` starts at 1, incremented by 2, while being lower, or equals to 5 <small>(1 3 5)</small>.
+You can merge if/elif/else into a **case** statement
 
-> Non-POSIX followers can use the real "for i" with i++, which is usually faster, or use brace expansion instead of `seq`.
+```bash
+case $x in
+pattern)
+  # if $x == pattern
+  ;;
+pattern1 | pattern2)
+  # if [ $x == pattern -o $x == pattern ]
+  ;;
+*)
+  # else = default
+;;
+esac
+```
+
 </div></div>
 
 <hr class="sr">
