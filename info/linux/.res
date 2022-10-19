@@ -5,6 +5,7 @@ what is the difference between snap/package/dpkg...
 Blog
 https://linuxhandbook.com/
 https://linuxhint.com/
+https://linuxize.com/
 https://www.howtouselinux.com/
 
 Reference
