@@ -12,6 +12,7 @@ A lot of commands, along with their most useful options, and some tips about the
 * `read` <sup>1</sup>: to read input from the user
 * `exit` <sup>1</sup>: exit the shell with an exit code
 * `env/printenv` <sup>2</sup>: list all environment variables
+* `getent` <sup>2</sup>: get an entry such as "passwd"
 * `hexdump` <sup>3</sup>: convert some text to octal/hexadecimal
 * `k#n` <sup>3</sup>: convert a number $n$ in radix-$k$ to decimal
 </div><div class="small">
@@ -21,6 +22,10 @@ A lot of commands, along with their most useful options, and some tips about the
 <sup>3</sup> see [Linux - Radix](../radix/index.md)
 </div></div>
 </blockquote>
+
+<p class="h4">
+⭐ If there is a command that you don't understand, check out <a href="https://explainshell.com/" target="_blank" rel="noopener noreferrer">explain shell</a>.
+</p>
 
 <hr class="sr">
 
