@@ -1348,13 +1348,9 @@ $ ps -o pid,ppid,pgid,tpgid,sid
 ```bash
 $ some_command &
 [1] 89
-$ fg 1
-```
-
-```bash
-$ some_command &
-[1] 89
-$ fg %1
+$ fg
+$ fg 1 # same
+$ fg %1 # same
 ```
 </details>
 </div><div>
@@ -1362,7 +1358,12 @@ $ fg %1
 <summary><code>bg</code>: bring processes to the background</summary>
 
 ```bash
+$ some_command
+# CTRL-Z
+[1]+  Stopped
 $ bg
+$ bg 1 # same
+$ bg %1 # same
 ```
 </details>
 </div><div>
