@@ -705,7 +705,7 @@ This command is using tables, the most widely used are **filter packets** (filte
 <details class="details-e">
 <summary>Table "filter"</summary>
 
-This table is used to accept, or drop a packet. There are 3 kinds of chains, according to what packets are doing
+This table is used to accept, or drop a packet. There are 3 chains, according to what packets are doing
 
 * **FORWARD**: packets are transiting/passing by this machine
 * **INPUT**: packet have this machine for destination
@@ -720,5 +720,27 @@ $ sudo iptables -t filter -A INPUT -s 172.16.1.1 -p tcp --dport 22 -j DROP
 ```
 </details>
 
-...
+<details class="details-e">
+<summary>Table "NAT"</summary>
+
+This table is used to modify the IP_SRC, or IP_DEST, usually referred as translating, mostly to allow machines to communicate between each other, without being aware of what is the machine they are communicating with.
+
+![NAT](_images/nat.png)
+
+In the schema above, host1 want to allow PC1, and PC2 to communicate, but don't want PC2 to know that PC1. When host1 receives a message from PC1, it will replace PC1 address (source) by its own address, and send it to PC2. When receiving a reply from PC2, it will replace its address (dest) with PC1 address, and send the reply to PC1. 
+
+Another case, is that if a machine inside your network is sending a message to the outside word, instead of exposing your machines IP addresses, you could only expose your host IP address by using NAT. 
+
+There are 3 chains
+
+* **POSTROUTING**: change source (action: SNAT)
+* **PREROUTING**: change destination (action: DNAT)
+* **OUTPUT**: applied on locally generated packets
+
+For instance, this command will hide the IP addresses of pc1, and pc2, using host1 IP address (50.50.50.50), when they are sending a packet to the world using the network interface "eth2".
+
+```bash
+$ sudo iptables -t NAT -A POSTROUTING -o eth2 -j SNAT --to-source 50.50.50.50
+```
+</details>
 </div></div>

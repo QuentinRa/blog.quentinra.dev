@@ -304,7 +304,24 @@ Use File > Export > HTTP to GET download files.
 **Note**: you can use `!` (NOT), such as `-s !127.0.0.1` meaning every packet not having "127.0.0.1" as `source` will be filtered.
 </div><div>
 
-No examples yet.
+List tables
+
+```bash
+$ sudo iptables -L
+```
+
+DROP any packet using the protocol TCP, on the port 22, that have our machine for destination, emitted by `172.16.1.1`.
+
+```bash
+$ sudo iptables -t filter -A INPUT -s 172.16.1.1 -p tcp --dport 22 -j DROP
+```
+
+Hide any IP address using host1 IP address (50.50.50.50), when machines are sending a packet passing by this machine, using the network interface "eth2".
+
+```bash
+$ sudo iptables -t NAT -A POSTROUTING -o eth2 -j SNAT --to-source 50.50.50.50
+```
+
 </div></div>
 </details>
 
