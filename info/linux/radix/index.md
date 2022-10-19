@@ -189,3 +189,54 @@ Using this algorithm, at the end, you have to convert every invalid $r_i$ to rad
 
 Then we are converting $12=C$, $14=E$, $11=B$, et concatenating in the reverse order giving us $(6072)\_{10} = (1BEC)\_{15}$.
 </div></div>
+
+<hr class="sl">
+
+## Encoding numbers
+
+<div class="row row-cols-md-2"><div>
+
+We are considering
+
+* **unsigned numbers**: $[0, 2^{n} - 1]$
+* **signed numbers**: $]-2^{n-1}, 0] \cup ]0,2^{n-1}-1[$
+
+$n$ is the number of bits that we have to store this value. For instance, it's usually $32$ for an `int`.
+
+With signed numbers, we are using the leading bit <small>(or the trailing bit)</small>, to know the sign: 0 means positive, 1 means negative.
+
+<details class="details-e">
+<summary>signed number</summary>
+
+This is the most used method to represent a signed number on a computer. [More info on Wikipedia](https://en.wikipedia.org/wiki/Two's_complement).
+
+**Convert decimal to signed number**
+
+* if the number is positive, do the same as for unsigned numbers
+* otherwise, do what we call **Two's complement** (`complément à 2`)
+  1. convert to binary
+  2. inverse every bit
+  3. add 1
+  4. store it
+
+**Convert signed number to decimal**
+
+* if the sign bit is 0, sdo the same as for unsigned numbers
+* otherwise,
+  *
+</details>
+
+<details class="details-e">
+<summary>unsigned numbers</summary>
+
+**Convert decimal to unsigned number**
+
+* convert to binary
+* store it
+
+**Convert signed number to decimal**
+
+* convert back to decimal
+</details>
+</div><div>
+</div></div>
