@@ -14,19 +14,28 @@ This is more of a mathematical course, but you will use binaries, octal, hexadec
 <div class="row row-cols-md-2 mt-4"><div>
 
 <details class="details-e">
-<summary><code>hexdump</code>: convert some text to octal/hexadecimal, and 🔁</summary>
+<summary><code>hexdump/xxd</code>: convert some text to octal/hexadecimal, and 🔁</summary>
 
 * `-b`: to octal
 * `-C`: to hexadecimal
 * `-e`: customize
 
 ```bash
-$ hexdump 001
+$ hexdump <<< "Hello, World" > hello_world.hex
+$ cat hello_world.hex
+0000000 6548 6c6c 2c6f 5720 726f 646c 000a
+000000d
+# letters were mixed?
+$ echo -e "\x65"
+e
+$ echo -e "\x48"
+H
+$ xxd <<< "Hello, World" | tee hello_world.hex
+00000000: 4865 6c6c 6f2c 2057 6f72 6c64 0a         Hello, World.
+# reverse
+$ xxd -r hello_world.hex
+Hello, World
 ```
-
-<!--
-<code>hexdump -ve '"%08_ax"  8/1 "%02x" "  " 8/1 "%02x" "\n"'</code>
--->
 </details>
 </div><div>
 
@@ -246,9 +255,9 @@ To add 5 (101), with 5 (101), you need to do like you will in grad school.
 * $1+1=0$ with a carry on the next (left-wise), as shown in green.
 </div></div>
 
-**Overflow**: there is an overflow if the two numbers have the same sign, such as two positives numbers. If the last carry, and the sign bit have a different value <small>(they are highlighted in red)</small>, then there is an **overflow with consequences**. That's the case with the example of 5+5, if we only have 3 bits, we can't store a 4 bits number.
+**Overflow**: there is an overflow if the last two carries (from right-to-left), highlighted in red, are different from one another. That's the case with the example of 5+5, if we only have 3 bits, we can't store a 10, as we need 4 bits. There is also an overflow, but without consequences, if the last two carries are 1.
 
-One trick is that if the two numbers are negative, you can use the **Two's complement** on each to make them positive, then do the addition, ensure there is no overflow, and do the **Two's complement** on the result. 
+See [Integer overflow](https://en.wikipedia.org/wiki/Integer_overflow).
 </details>
 </div></div>
 
@@ -262,7 +271,7 @@ A floating-point can be identified by the **Radix point**, which is usually eith
 
 The first step is scientific notation. You should have heard of $1.3 * 10^n$, in radix-10, and our goal is something like $1.11 * 2^n$, so in radix-2.
 
-**Note**: not every number can be written using scientific notation.
+**Note**: not every number can be written using scientific notation (such as `0.1`).
 
 <details class="details-e">
 <summary>Encoding floating numbers</summary>
