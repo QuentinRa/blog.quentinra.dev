@@ -29,7 +29,7 @@ $ chmod +x example.sh
 
 ```bash
 $ ./example.sh
-$ bash < ./example.sh # or, in rare cases
+$ bash ./example.sh # explicitly use bash
 ```
 </div></div>
 
@@ -65,7 +65,7 @@ if [[ 5 > 3 || 4 > 3 ]]; then
 fi
 ```
 
-<sup>1</sup> such operators are only working inside `[[ ]]`
+<sup>1</sup> such operators are only doing what you expect inside `[[ ]]`
 
 </div></div>
 
@@ -533,3 +533,18 @@ head -n 5 toto.txt | while read line; do
 done
 ```
 </div></div>
+
+<hr class="sr">
+
+## Random
+
+<div class="row row-cols-md-2"><div>
+
+You may use "sleep" to pause your script
+
+```bash
+# sleep for 50 seconds
+$ sleep 50
+$ sleep 50s # same
+```
+</div><div></div></div>

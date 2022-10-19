@@ -1,8 +1,5 @@
 Commands
-- exit
 - shift
-- sleep
-- sleep 2s
 
 Control flow
 - case word in [ [(] pattern [ | pattern ] ... ) list ;; ] ... esac
