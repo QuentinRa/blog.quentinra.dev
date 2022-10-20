@@ -128,6 +128,8 @@ If you press the home button, your app will go back to Created, until you start 
 If Android need resources, then your app may be destroyed. If there are a lot of changes <small>(ex: language changed, rotation...)</small>, then android will most likely destroy, and re-create the app.
 
 You can use `onCreate(Bundle?)`, `onRestoreInstanceState(Bundle)`, to load saved data, and `onSaveInstanceState(Bundle)` to save data. A "bundle" is a **small, in-memory** dictionary, in which you can save a bit of data, that will be reloaded when the app is created, or started again.
+
+Code in `onPause()` must be lightweight, because it will delay the other application that is showing up in the front screen.
 </div></div>
 
 <hr class="sl">
@@ -755,9 +757,38 @@ data class Player(
 
 ## Fragments, and navigation component
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2 mt-4"><div>
+<details class="details-e">
+<summary>Menus</summary>
 
-...
+* Resources manager | Menus 
+* Create a new one
+
+It will generate a new layout, in which you can add menu items. You should give each an `id`, a `title`, and maybe an `icon`. Finally, you might have noticed that your menus are shown in "...". You can modify this behavior with `showAsAction` such as `always` which means that the menu will never be in the "..." (overflow).
+
+In your Activity
+
+```kotlin
+override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    menuInflater.inflate(R.menu.refresh_menu, menu)
+    // you may use
+    // menu?.findItem(R.id.some_menu_item)
+    // to setup your menu items
+    return true
+}
+
+override fun onOptionsItemSelected(item: MenuItem): Boolean {
+    return when (item.itemId) {
+        R.id.xxx -> {
+            // ... code if the user click on this menu item ...
+            true
+        }
+        else -> super.onOptionsItemSelected(item)
+    }
+}
+```
+
+</details>
 </div><div>
 
 ...

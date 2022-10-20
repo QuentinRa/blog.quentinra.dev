@@ -22,6 +22,7 @@ Each row is made of
 In the code you can use that get the text for "app_name"
 
 ```kotlin
+// implicit "context." (this.)
 var appName = getString(R.string.app_name)
 ```
 </div><div>
