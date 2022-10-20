@@ -18,13 +18,6 @@ Permissions: https://developer.android.com/guide/topics/permissions/overview
 @StringRes
 @DrawableRes
 @LayoutRes
-
-<resources>
-    <string-array name="words">
-    </string-array>
-</resources>
-
-context.resources.getStringArray(R.array.words).toList()
 ----------------
 
 Resource type: Menu
