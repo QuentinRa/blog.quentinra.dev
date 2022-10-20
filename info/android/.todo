@@ -1,27 +1,3 @@
 * Pick android version
-* Switch Project View
+* Switch Project View / IntelliJ-features
 * Device emulator
-* Android Tests + Advanced testing
-=> https://developer.android.com/codelabs/android-basics-kotlin-write-instrumentation-tests
-=> https://developer.android.com/codelabs/android-basics-kotlin-affirmations-test-lists-and-adapters
-* You got options to do things faster using right-click.
-
-https://developer.android.com/codelabs/basic-android-kotlin-training-livedata Talkback enabled
-
-https://developer.android.com/docs
-https://developer.android.com/teach
-https://developer.android.com/guide
-https://developer.android.com/develop/ui
-
-Permissions: https://developer.android.com/guide/topics/permissions/overview
-
-@StringRes
-@DrawableRes
-@LayoutRes
-----------------
-ContextCompat.getDrawable(this, R.drawable.ic_grid_layout)
-----------------
-AndroidManifest
-=> activities
-    => intent-filter
--------------

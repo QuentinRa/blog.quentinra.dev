@@ -382,6 +382,14 @@ class MainActivity : AppCompatActivity() {
 ```
 </details>
 </details>
+
+If you write in your code a method taking an id, then you can check if this id has the "right" type using annotation, as every id is an int. Add `@StringRes`, `@DrawableRes`, or `@LayoutRes` before a variable, a parameter, or an attribute.
+
+```kotlin
+fun loadIcon(@DrawableRes drawableId: Int) {
+    val drawable = AppCompatResources.getDrawable(this, drawableId)
+}
+```
 </div></div>
 
 <hr class="sr">
