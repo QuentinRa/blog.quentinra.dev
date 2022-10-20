@@ -112,9 +112,11 @@ try {
 
 ## Application life-cycle
 
-<div class="row row-cols-md-2 mt-4"><div class="align-self-center">
+<div class="row row-cols-md-2 mt-4"><div>
 
 ![android_application_lifecycle](_images/android_application_lifecycle.png)
+
+> **Note**: it should be highlighted again, that rotating your devices will destroy, and create again your app. On Android Studio, don't forget to enable device rotation to try it out.
 </div><div>
 
 Android life-cycle is a bit complex. When starting an app, you go from Initialized, to Created, then Started, then Resumed.
@@ -123,7 +125,7 @@ If the app is partially visible <small>(ex: click on share/...)</small>, then yo
 
 If you press the home button, your app will go back to Created, until you start it again.
 
-If Android need resources, then you app may be destroyed. If there are a lot of changes <small>(ex: language changed...)</small>, then android will most likely destroy, and re-create the app.
+If Android need resources, then your app may be destroyed. If there are a lot of changes <small>(ex: language changed, rotation...)</small>, then android will most likely destroy, and re-create the app.
 
 You can use `onCreate(Bundle?)`, `onRestoreInstanceState(Bundle)`, to load saved data, and `onSaveInstanceState(Bundle)` to save data. A "bundle" is a **small, in-memory** dictionary, in which you can save a bit of data, that will be reloaded when the app is created, or started again.
 </div></div>
@@ -141,6 +143,9 @@ Each View has attributes, or properties, for instance, you can define the text s
 <details class="details-e">
 <summary>View: the base class of all views</summary>
 
+* `padding`: gap between the border and the content outside (ex: 10dp)
+* `layout_margin`: gap with the outside (ex: 10dp)
+
 **Accessibility (attributes)**
 
 * `contentDescription`: what's the purpose of this element
@@ -152,7 +157,7 @@ The layout, the arrangement of the views, is handled by a **ViewGroup**. Layouts
 * [**ConstraintLayout**](layouts/ConstraintLayout.md): arrange elements in a flexible way
 * [**RecyclerView**](layouts/RecyclerView.md): not a ViewGroup, but an efficient way of displaying a flexible list of elements.
 * **FrameLayout**: if a view has ONE child, then this single child view, is the MOST appropriate view.
-* **LinearLayout**: arrange elements horizontally/vertically
+* **LinearLayout**: arrange elements horizontally/vertically <small>(see layout_weight on each item, and layout_orientation)</small>
 
 </div><div>
 
@@ -746,6 +751,18 @@ data class Player(
 </div></div>
 
 <hr class="sr">
+
+## Fragments, and navigation component
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sl">
 
 ## References
 

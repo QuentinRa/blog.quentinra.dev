@@ -13,22 +13,11 @@ https://developer.android.com/teach
 https://developer.android.com/guide
 https://developer.android.com/develop/ui
 
-> **Remainder**: try to rotate the screen, and see if the view is still fine. If not, you may use a ScrollView, disable rotation...
-
 Permissions: https://developer.android.com/guide/topics/permissions/overview
 
 @StringRes
 @DrawableRes
 @LayoutRes
-
------------------
-LinearLayout
-- layout_weight
-- layout_orientation
-
-Values are in 10dp
------------------
-@RequiresApi(Build.VERSION_CODES.LOLLIPOP)
 
 <resources>
     <string-array name="words">
