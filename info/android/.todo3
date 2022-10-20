@@ -79,33 +79,6 @@ Navigation UI
 => do "as normal", then setup with nav controller
 
 https://developer.android.com/guide/navigation/navigation-getting-started
-
------------------
-
-It's possible to have multiples "screens" within one activity, for instance tabs, using fragments. Fragments
-are reusable view that can be embed in activities. For instance, a navbar will most likely be a fragment.
-It fragment has it own lifecycle.
-
-https://developer.android.com/reference/kotlin/androidx/lifecycle/Lifecycle.State
-https://developer.android.com/codelabs/basic-android-kotlin-training-fragments-navigation-component#2
-
-New fragment
-tools:context if changing the .fxml
-
-----------
-The main classes or components in Android Architecture are UI Controller (activity/fragment), ViewModel, LiveData and Room.
-These components take care of some of the complexity of the lifecycle and help you avoid lifecycle related issues.
-
-Controller
-Draw on screen
-capture events / stuff related to the UI
-Can be destroyed at any time
-
------------
-TextInputLayout comes with a built-in functionality to display error messages.
-xxx.error = getString(R.string.error)
-xxx.error = null // clear
-xxx.isErrorEnabled = true
 -----------
 
 apps can listen to the data changes from the layout.

@@ -464,6 +464,37 @@ Dialogs are made of a title (optional), a message, and some buttons (accept/clos
 ```
 
 </details>
+
+<details class="details-e">
+<summary>Menus</summary>
+
+* Resources manager | Menus
+* Create a new one
+
+It will generate a new layout, in which you can add menu items. You should give each an `id`, a `title`, and maybe an `icon`. Finally, you might have noticed that your menus are shown in "...". You can modify this behavior with `showAsAction` such as `always` which means that the menu will never be in the "..." (overflow).
+
+In your Activity
+
+```kotlin
+override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    menuInflater.inflate(R.menu.refresh_menu, menu)
+    // you may use
+    // menu?.findItem(R.id.some_menu_item)
+    // to setup your menu items
+    return true
+}
+
+override fun onOptionsItemSelected(item: MenuItem): Boolean {
+    return when (item.itemId) {
+        R.id.xxx -> {
+            // ... code if the user click on this menu item ...
+            true
+        }
+        else -> super.onOptionsItemSelected(item)
+    }
+}
+```
+</details>
 </div><div>
 
 As in Java, you have listeners which are called when an event is triggered (ex: `click on a button`).
@@ -776,37 +807,10 @@ data class Player(
 ## Fragments, and navigation component
 
 <div class="row row-cols-md-2 mt-4"><div>
-<details class="details-e">
-<summary>Menus</summary>
 
-* Resources manager | Menus 
-* Create a new one
+Fragments are recyclable views that can be reused in multiple activities, and they can't exist outside an activity. A simple example could be a navbar component. A fragment has its own lifecycle, which is pretty similar to the activity lifecycle.
 
-It will generate a new layout, in which you can add menu items. You should give each an `id`, a `title`, and maybe an `icon`. Finally, you might have noticed that your menus are shown in "...". You can modify this behavior with `showAsAction` such as `always` which means that the menu will never be in the "..." (overflow).
-
-In your Activity
-
-```kotlin
-override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-    menuInflater.inflate(R.menu.refresh_menu, menu)
-    // you may use
-    // menu?.findItem(R.id.some_menu_item)
-    // to setup your menu items
-    return true
-}
-
-override fun onOptionsItemSelected(item: MenuItem): Boolean {
-    return when (item.itemId) {
-        R.id.xxx -> {
-            // ... code if the user click on this menu item ...
-            true
-        }
-        else -> super.onOptionsItemSelected(item)
-    }
-}
-```
-
-</details>
+![Fragment lifecycle](_images/android_application_lifecycle.png)
 </div><div>
 
 ...

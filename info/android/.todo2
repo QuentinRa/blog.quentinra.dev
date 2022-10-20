@@ -5,6 +5,11 @@ Material design is a library of pre-made components. Google recommends to use Ma
 * Text field: `TextInputLayout` (see [text field](https://material.io/components/text-fields/android#using-text-fields))
 * Switch: `SwitchMaterial` (create a switch, change the type in the .xml)
 
+TextInputLayout comes with a built-in functionality to display error messages.
+xxx.error = getString(R.string.error)
+xxx.error = null // clear
+xxx.isErrorEnabled = true
+
 ********
 Icon
 ********
