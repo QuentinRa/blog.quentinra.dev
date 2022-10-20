@@ -2,16 +2,12 @@
 name=androidx.navigation.fragment.NavHostFragment
 "While you can specify a specific fragment for this attribute, setting it to NavHostFragment allows your
 FragmentContainerView to navigate between fragments.")
+
 Add defaultNavHost "true". This allows the fragment container to interact with the navigation hierarchy.
 if the system back button pressed, then the container will navigate back to the previously shown fragment
 
-dd an attribute called app:navGraph and set it equal to "@navigation/nav_graph".
+add an attribute called app:navGraph and set it equal to "@navigation/nav_graph".
 This points to an XML file that defines how your app's fragments can navigate to one another.
-
-because you added two attributes with the app namespace, be sure to add the xmlns:app attribute to the FrameLayout.
-   xmlns:app="http://schemas.android.com/apk/res-auto
-
-=> nav host widget: sort of cardlayout in Java
 
 Navigation Controller
 -----
@@ -99,9 +95,6 @@ binding = DataBindingUtil.inflate(inflater, R.layout.game_fragment, container, f
 
 binding.lifecycleOwner = viewLifecycleOwner
 binding.lifecycleOwner = this
-
-------------
-leanback in the manifest
 
 ----------------
 

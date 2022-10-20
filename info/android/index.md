@@ -637,6 +637,10 @@ class XXXViewModel : ViewModel() {
 
 ```kotlin
 private val viewModel: XXXViewModel by viewModels()
+
+// or
+// using lateinit, and
+// viewModel = ViewModelProvider(this).get(MatchSummaryViewModel::class.java)
 ```
 </div></div>
 
@@ -817,9 +821,10 @@ Fragments are recyclable views that can be reused in multiple activities, and th
 Differences with activities
 
 * `findViewById` should only be called in **onViewCreated**!
-* `requireContext()` can be used, if there are some methods not available in a Fragment, that were available in an Activity
+* `requireContext()` can be used, if there are some methods not available in a Fragment, that were available in an Activity, or simply for methods requiring a context
 * use `activity?.intent?` instead of `intent` in Fragments
 * `onCreateOptionsMenu()`: there is no `menuInflater`, instead a parameter `inflater` is provided. You will also have to call `setHasOptionsMenu(true)` in `onCreate()`.
+* use `viewLifecycleOwner` instead of `this`, when an owner is required
 
 <details class="details-e">
 <summary>Fragment + ViewBinding</summary>
@@ -847,8 +852,21 @@ class XXXFragment : Fragment() {
 
 Navigation component is a collection of libs simplifying android navigation. For instance, for a bottom navigation, you would want to click on icons, and move from one screen to another. In such case, the navigation component would handle for you stuff like highlighting the current menu.
 
+```gradle
+implementation "androidx.navigation:navigation-fragment-ktx:2.5.2"
+implementation "androidx.navigation:navigation-ui-ktx:2.5.2"
+```
+
 <details class="details-e">
-<summary>Navigation graph</summary>
+<summary>NavHost: view were the fragments are displayed</summary>
+
+The **NavHost** is a container that you will put in your activity.xml, that will be filled with the current fragment being displayed.
+
+It will be linked to a **Navigation graph**, which will handle filling the container with the right fragment. If you are familiar with Java, this is the same as a CardLayout. 
+</details>
+
+<details class="details-e">
+<summary>Navigation graph: navigate between fragments</summary>
 
 This is a file, with an editor, allowing to link fragments, and define what **action** make the user move to another fragment, and what parameters are added... Each fragment/screen is called **destination**.
 
