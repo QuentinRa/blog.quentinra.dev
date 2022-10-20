@@ -1,25 +1,9 @@
 ## Material Design
 
-https://developer.android.com/codelabs/basic-android-kotlin-training-polished-user-experience
-=> Talkback
-=> Tint/Dark mode
-
 Material design is a library of pre-made components. Google recommends to use Material UI components as much as possible. The list [of Material components for Android can be found here](https://material.io/components?platform=android).
 
 * Text field: `TextInputLayout` (see [text field](https://material.io/components/text-fields/android#using-text-fields))
 * Switch: `SwitchMaterial` (create a switch, change the type in the .xml)
-
-<details class="details-e">
-<summary>Icons</summary>
-
-* Open the resources manager
-* "+" > new vector asset
-* click on the android icon for "clip art"
-* select an icon
-
-For Android 20, or older versions, you need to add `vectorDrawables.useSupportLibrary = true` in build.gradle > Android > defaultConfig.
-
-</details>
 
 ********
 Icon

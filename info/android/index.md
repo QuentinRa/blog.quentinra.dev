@@ -319,6 +319,18 @@ You can access the Resources Manager, which track every resource in `res`, and a
 You can drag, and drop it in the design view (or select it when creating a new imageview).
 </details>
 
+<details class="details-e">
+<summary>Icons</summary>
+
+* Open the resources manager
+* "+" > new vector asset
+* click on the android icon for "clip art"
+* select an icon
+
+For Android 20, or older versions, you need to add `vectorDrawables.useSupportLibrary = true` in build.gradle > Android > defaultConfig.
+
+</details>
+
 Every folder in `res` may have multiples "copies" for different devices/languages. For instance, if there is a view for large screen devices, it will be used instead of the view made of "every" device.
 
 * [strings.xml](values/strings.md): how to properly handle texts, and localization
@@ -651,9 +663,7 @@ Most of android apps are making requests to a server, mostly to REST API, which 
 <summary>XXXApiService.kt</summary>
 
 ```kotlin
-
 import retrofit2.Retrofit
-import retrofit2.converter.scalars.ScalarsConverterFactory
 import retrofit2.http.GET
 
 // URL
