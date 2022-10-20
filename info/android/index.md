@@ -282,7 +282,7 @@ RadioGroup is a ViewGroup used to ensure that only one RadioButton can be select
 
 **TIP**: you should rely on <kbd>CTRL+F</kbd> to search for attributes, or by clicking on the search icon at the top of the "Attributes" window.
 
-**TIP**: you will most likely have a time when you want to replace a view with another view. In the component tree, right-click on a view, and use "convert view". You could also manually get the job done by directly editing the `.fxml`.
+**TIP**: you will most likely have a time when you want to replace a view with another view. In the component tree, right-click on a view, and use "convert view". You could also manually get the job done by directly editing the `.xml`.
 
 <hr class="sl">
 
@@ -675,7 +675,42 @@ viewModel.list.observe(this) { p ->
 ```
 </div><div>
 
-...
+**Data binding** can be used to get rid of observers, and directly connect the model with the view, inside the .xml.
+
+```kotlin
+buildFeatures {
+    dataBinding = true
+}
+```
+
+Then, you must manually edit the `.xml` using data binding, by wrapping its content in a `layout`. You will also add a section `data` with `variables`. Variables are set from the code, are instances of a class, and can be used in the rest of the `.xml`.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable name="viewModel" type="xxx" />
+    </data>
+
+    <!-- then, you can use it in your tags, -->
+    <!-- and you can even write some code -->
+    <tag
+        android:text="@{viewModel.xxx}"
+        android:checked="@{viewModel.xxx.equals(yyy)}"
+        android:onClick="@{() -> viewModel.xxx()}"
+    />
+</layout>
+```
+
+In the code, get the binding, and set variables
+
+```kotlin
+private lateinit var binding: XXXBinding
+
+// set variables
+binding.viewModel = ...
+```
+
 </div></div>
 
 <hr class="sl">
@@ -827,6 +862,7 @@ Differences with activities
 * use `activity?.intent?` instead of `intent` in Fragments
 * `onCreateOptionsMenu()`: there is no `menuInflater`, instead a parameter `inflater` is provided. You will also have to call `setHasOptionsMenu(true)` in `onCreate()`.
 * use `viewLifecycleOwner` instead of `this`, when an owner is required
+* **Instead of `viewModels()`** which is not shared between fragments of one activity, you can use `activityViewModels()`.
 
 <details class="details-e">
 <summary>Fragment + ViewBinding</summary>
@@ -896,7 +932,7 @@ This is a file, with an editor, allowing to link fragments, and define what **ac
 * Add your fragments
 * Use arrows to link your screens
 * Click on a screen to define arguments that are passed
-* Select the initial screen, and click on the "Home button" (Assign start destination)
+* Select the initial screen, and click on the "Home button" (Assign start destination). You can also right-click on a screen, as use "set as start destination".
 
 > **Note**: if you want the name shown in the navbar to match the current fragment, edit the property `label` of each fragment with something else than `@string/app_name`.
 </details>
@@ -931,6 +967,8 @@ Use the function `navigate` on the nav controller
 ```kotlin
 // in a Fragment
 findNavController().navigate(action)
+// or, if your action do not take any parameters
+findNavController().navigate(action_id)
 ```
 
 You need to provide an action. If you are inside `XXX`, then the action will be available as a static method of `XXXDirections`. You may have to build the project, as these classes are created for you by the SafeArgs plugin, when you connected two fragments.
