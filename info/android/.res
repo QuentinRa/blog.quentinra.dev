@@ -12,6 +12,8 @@ Learn
 => Controller: Draw on screen capture events / stuff related to the UI Can be destroyed at any time
 * XML
 => tools:context
+* Navigation component
+=> deep link
 
 Training
 https://developer.android.com/docs

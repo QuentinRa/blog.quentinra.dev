@@ -7,11 +7,6 @@
 Cannot use this, use requireContext(), when a context is needed
 activity?.intent?
 --------
-
-=> navigation graph: view of screens (called destinations) linked by "action". Click on a screen to see options, args passed...
-    There are deep links like in facebook.
-
-screens+fragments that are called destinations
 * main activity: FragmentContainerView (ex id: nav_host_fragment,
 name=androidx.navigation.fragment.NavHostFragment
 "While you can specify a specific fragment for this attribute, setting it to NavHostFragment allows your
@@ -24,12 +19,6 @@ This points to an XML file that defines how your app's fragments can navigate to
 
 because you added two attributes with the app namespace, be sure to add the xmlns:app attribute to the FrameLayout.
    xmlns:app="http://schemas.android.com/apk/res-auto
-
-* new res nav
-* screen+ > pick frags
-* arrow from one screen to another > add arguments if needed
-* select a dest > click on home to Assign it as the start destination.
-* property label for the "name of the screen"
 
 => nav host widget: sort of cardlayout in Java
 

@@ -494,6 +494,8 @@ override fun onOptionsItemSelected(item: MenuItem): Boolean {
     }
 }
 ```
+
+**Note**: if you are inside a **fragment**, you need to call `setHasOptionsMenu(true)` in `onCreate()`.
 </details>
 </div><div>
 
@@ -817,7 +819,21 @@ Fragments are recyclable views that can be reused in multiple activities, and th
 
 Navigation component is a collection of libs simplifying android navigation. For instance, for a bottom navigation, you would want to click on icons, and move from one screen to another. In such case, the navigation component would handle for you stuff like highlighting the current menu.
 
-...
+<details class="details-e">
+<summary>Navigation graph</summary>
+
+This is a file, with an editor, allowing to link fragments, and define what **action** make the user move to another fragment, and what parameters are added... Each fragment/screen is called **destination**.
+
+* Resource manager | Navigation | New
+* Click on the phone with a +
+* Add your fragments
+* Use arrows to link your screens
+  * ex: from a button to another screen
+  * Click on an arrow to define arguments that are passed
+* Select the initial screen, and click on the "Home button" (Assign start destination)
+
+> **Note**: if you want the name shown in the navbar to match the current fragment, edit the property `label` of each fragment with something else than `@string/app_name`.
+</details>
 </div></div>
 
 <hr class="sl">
