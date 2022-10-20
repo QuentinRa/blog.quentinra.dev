@@ -812,9 +812,34 @@ data class Player(
 
 Fragments are recyclable views that can be reused in multiple activities, and they can't exist outside an activity. A simple example could be a navbar component. A fragment has its own lifecycle, which is pretty similar to the activity lifecycle.
 
-![Fragment lifecycle](_images/android_application_lifecycle.png)
+![Fragment lifecycle](_images/android_fragment_lifecycle.png)
 
 **To create a new fragment**: File > new > fragment > ... You can actually right-click on any folder, and create one from the "new" menu.
+
+* `findViewById` should only be called in **onViewCreated**!
+
+<details class="details-e">
+<summary>Fragment + ViewBinding</summary>
+
+```kotlin
+class XXXFragment : Fragment() {
+    private lateinit var binding: FragmentXXXBinding
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        binding = FragmentXXXBinding.inflate(layoutInflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        val xxx = binding.xxx
+        // ...
+    }
+}
+```
+</details>
 </div><div>
 
 Navigation component is a collection of libs simplifying android navigation. For instance, for a bottom navigation, you would want to click on icons, and move from one screen to another. In such case, the navigation component would handle for you stuff like highlighting the current menu.

@@ -1,9 +1,3 @@
-* onCreate => bundle
-    => setHasOptionsMenu(true) ???
-* onViewCreated()
-* onDestroyView()
-    => binding = null
-
 Cannot use this, use requireContext(), when a context is needed
 activity?.intent?
 --------
