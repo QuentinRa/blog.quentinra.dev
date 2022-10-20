@@ -191,3 +191,5 @@ Backing properties like in C#
 ------------
 => Int?.plus(v)
 => Int?.inc()
+
+top-level function = not in a class
