@@ -11,14 +11,14 @@
         "hidden": false
       },
       {
-        "tag": "tools",
+        "tag": "box/tools/index.md",
         "name": "Tools",
         "desc": "A list of tools that you may use  while practicing cybersecurity.",
         "icon": "<i class=\"bi bi-hammer\"></i>",
         "hidden": false
       },
       {
-        "tag": "tools/links/index.md",
+        "tag": "box/links/index.md",
         "name": "Handful resources",
         "desc": "A list of useful resources (ex: website, gits...) that you may use while learning, or practicing cybersecurity.",
         "icon": null,
@@ -57,13 +57,6 @@
         "hidden": true
       },
       {
-        "tag": "web/dns/index.md",
-        "name": "Exploit DNS",
-        "desc": "",
-        "icon": "",
-        "hidden": false
-      },
-      {
         "tag": "web/tools/index.md",
         "name": "CyberTools (Web)",
         "desc": "",
@@ -75,6 +68,13 @@
       {
         "tag": "random/crack_password/index.md",
         "name": "Crack passwords",
+        "desc": "",
+        "icon": "",
+        "hidden": false
+      },
+      {
+        "tag": "random/index.md",
+        "name": "Random exploits",
         "desc": "",
         "icon": "",
         "hidden": false
