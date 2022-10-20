@@ -3,6 +3,7 @@ Learn
 * Android Tests + Advanced testing
 => https://developer.android.com/codelabs/android-basics-kotlin-write-instrumentation-tests
 => https://developer.android.com/codelabs/android-basics-kotlin-affirmations-test-lists-and-adapters
+=> https://developer.android.com/codelabs/android-basics-kotlin-test-viewmodel-and-livedata
 * Learn about the AndroidManifest
 => leanback in the manifest
 => Permissions: https://developer.android.com/guide/topics/permissions/overview
@@ -18,6 +19,7 @@ Learn
 => if app namespace missing: xmlns:app="http://schemas.android.com/apk/res-auto (to the root)
 * Navigation component
 => deep link
+* Modern Android Development (MAD)
 
 Training
 https://developer.android.com/docs

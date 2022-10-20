@@ -810,6 +810,8 @@ data class Player(
 
 ## Fragments, and navigation component
 
+*[Navigation component (guide)](https://developer.android.com/guide/navigation/navigation-getting-started)*
+
 <div class="row row-cols-md-2 mt-4"><div>
 
 Fragments are recyclable views that can be reused in multiple activities, and they can't exist outside an activity. A simple example could be a navbar component. A fragment has its own lifecycle, which is pretty similar to the activity lifecycle.
@@ -949,6 +951,22 @@ val args by navArgs<XXXArgs>()
 val arg = args.arg
 ```
 </details>
+
+<details class="details-e">
+<summary>Navigation UI</summary>
+
+A set of UI components to do "Options Menus, bottom nav, nav view, nav drawer, action bar, toolbars, and collapsed toolbars". For instance, for a bottom navigation menu, 
+
+* Create a BottomNavigationView,
+* Process as you do for menus
+* And, in the code,
+
+```kotlin
+val bottomNavigationView = binding.bottomNavigationView
+bottomNavigationView?.setupWithNavController(findNavController())
+```
+</details>
+
 </div></div>
 
 <hr class="sl">
