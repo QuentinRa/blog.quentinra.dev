@@ -811,7 +811,11 @@ data class Player(
 Fragments are recyclable views that can be reused in multiple activities, and they can't exist outside an activity. A simple example could be a navbar component. A fragment has its own lifecycle, which is pretty similar to the activity lifecycle.
 
 ![Fragment lifecycle](_images/android_application_lifecycle.png)
+
+**To create a new fragment**: File > new > fragment > ... You can actually right-click on any folder, and create one from the "new" menu.
 </div><div>
+
+Navigation component is a collection of libs simplifying android navigation. For instance, for a bottom navigation, you would want to click on icons, and move from one screen to another. In such case, the navigation component would handle for you stuff like highlighting the current menu.
 
 ...
 </div></div>

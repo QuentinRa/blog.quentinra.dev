@@ -193,3 +193,5 @@ Backing properties like in C#
 => Int?.inc()
 
 top-level function = not in a class
+-------------
+@JvmStatic

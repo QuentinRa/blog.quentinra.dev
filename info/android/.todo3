@@ -8,11 +8,6 @@ Cannot use this, use requireContext(), when a context is needed
 activity?.intent?
 --------
 
-Bottom Navigation
-=> navigates, and you want the color to change,
-handle "back-stack" (what is it?)
-
-Navigation component is a collection of libs, and stuff simplifying android navigation.
 => navigation graph: view of screens (called destinations) linked by "action". Click on a screen to see options, args passed...
     There are deep links like in facebook.
 
