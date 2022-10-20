@@ -685,6 +685,9 @@ buildFeatures {
 
 Then, you must manually edit the `.xml` using data binding, by wrapping its content in a `layout`. You will also add a section `data` with `variables`. Variables are set from the code, are instances of a class, and can be used in the rest of the `.xml`.
 
+<details class="details-e">
+<summary>See the XML</summary>
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
@@ -702,6 +705,7 @@ Then, you must manually edit the `.xml` using data binding, by wrapping its cont
     />
 </layout>
 ```
+</details>
 
 In the code, get the binding, and set variables
 
@@ -711,6 +715,42 @@ private lateinit var binding: XXXBinding
 // set variables
 binding.viewModel = ...
 ```
+
+<details class="details-e">
+<summary>Data binding for attributes needing formatting</summary>
+
+You may have to pass an attribute that need to be formatted before being shown to the view. If you can't do it like in the examples shown in the XML above, such as a ternary operator (`condition ? "token" : "another token"`) which isn't available in data binding braces, then you can try a little workaround
+
+```gradle
+plugins {
+    // add kapt
+    id 'kotlin-kapt'
+}
+```
+
+You could add this code wherever you want, such as in the associated Fragment. `xxx` is the name of the new attribute we will create. `TextView` is the one we will give the attribute `xxx`. `value` is the value we will pass, coming from a Data Binding, and `Type` is the type of the value we will pass. The code of this method can be everything you want, so you can do your formatting here.
+
+```kotlin
+companion object {
+    @BindingAdapter("xxx") @JvmStatic
+    fun setText(textView: TextView, value: Type) {
+        textView.text = ...
+    }
+
+    @InverseBindingAdapter(attribute = "xxx", event = "android:textAttrChanged")
+    @JvmStatic
+    fun getText(textView: TextView) = textView.text.toString()
+    }
+```
+
+In your XML, you will use this newly created attribute, that is taking your value that you could "display as if", execute the code you wrote, which should display the value you couldn't before.
+
+```xml
+<TextView
+    xxx="@{viewModel.someNotDisplayableValueSuchAsABoolean}"
+    />
+```
+</details>
 
 </div></div>
 
