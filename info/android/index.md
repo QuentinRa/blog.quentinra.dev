@@ -860,14 +860,16 @@ buildscript {
     }
 }
 
+// after plugin { ... }
+apply plugin: 'androidx.navigation.safeargs.kotlin'
+
 // then as usual
 implementation "androidx.navigation:navigation-fragment-ktx:2.5.2"
-implementation "androidx.navigation:navigation-ui-ktx:2.5.2"
-implementation "androidx.navigation:navigation-safe-args-gradle-plugin:2.5.2"
+implementation "androidx.navigation:navigation-ui-ktx:2.5.2":2.5.2"
 ```
 
 <details class="details-e">
-<summary>NavHost: view were fragments are displayed</summary>
+<summary>NavHost: view where fragments are displayed</summary>
 
 The **NavHost** is a container that you will put in your activity.xml, that will be filled with the current fragment being displayed.
 
@@ -916,6 +918,35 @@ override fun onCreate(savedInstanceState: Bundle?) {
 override fun onSupportNavigateUp(): Boolean {
     return navController.navigateUp() || super.onSupportNavigateUp()
 }
+```
+</details>
+
+<details class="details-e">
+<summary>Navigate to another fragment</summary>
+
+Use the function `navigate` on the nav controller
+
+```kotlin
+// in a Fragment
+findNavController().navigate(action)
+```
+
+You need to provide an action. If you are inside `XXX`, then the action will be available as a static method of `XXXDirections`. You may have to build the project, as these classes are created for you by the SafeArgs plugin, when you connected two fragments.
+
+```kotlin
+// the name of the action is the one of your link
+// between the two fragments.
+// hint: use autocompletion with CTRL+SPACE
+val action = XXXDirections.actionSomeName()
+// if you defined parameters to your action
+val action = XXXDirections.actionSomeName(param = value)
+```
+
+In the other fragment, let's say, `YYY`, you will have a class `YYYArgs` that will be generated. Then, you can do this to get "`arg`"
+
+```kotlin
+val args by navArgs<XXXArgs>()
+val arg = args.arg
 ```
 </details>
 </div></div>
