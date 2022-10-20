@@ -494,8 +494,6 @@ override fun onOptionsItemSelected(item: MenuItem): Boolean {
     }
 }
 ```
-
-**Note**: if you are inside a **fragment**, you need to call `setHasOptionsMenu(true)` in `onCreate()`.
 </details>
 </div><div>
 
@@ -612,10 +610,10 @@ ViewModel is a Jetpack component that existing **since the application is create
 
 ```gradle
 implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
-// if not imported, add this one for activities
-// implementation "androidx.activity:activity-ktx:1.6.0"
-// and, this one if using fragments
-// implementation "androidx.fragment:fragment-ktx:1.5.3"
+// ACTIVITY-ONLY
+implementation "androidx.activity:activity-ktx:1.6.0"
+// FRAGMENTS-ONLY
+implementation "androidx.fragment:fragment-ktx:1.5.3"
 ```
 
 > Architectural note: this class should handle the data, along decision-making logic about that data, and helpers.
@@ -816,7 +814,12 @@ Fragments are recyclable views that can be reused in multiple activities, and th
 
 **To create a new fragment**: File > new > fragment > ... You can actually right-click on any folder, and create one from the "new" menu.
 
+Differences with activities
+
 * `findViewById` should only be called in **onViewCreated**!
+* `requireContext()` can be used, if there are some methods not available in a Fragment, that were available in an Activity
+* use `activity?.intent?` instead of `intent` in Fragments
+* `onCreateOptionsMenu()`: there is no `menuInflater`, instead a parameter `inflater` is provided. You will also have to call `setHasOptionsMenu(true)` in `onCreate()`.
 
 <details class="details-e">
 <summary>Fragment + ViewBinding</summary>

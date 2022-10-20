@@ -1,4 +1,5 @@
 Learn
+* "Menus" in fragments are deprecated
 * Android Tests + Advanced testing
 => https://developer.android.com/codelabs/android-basics-kotlin-write-instrumentation-tests
 => https://developer.android.com/codelabs/android-basics-kotlin-affirmations-test-lists-and-adapters

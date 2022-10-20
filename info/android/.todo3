@@ -1,6 +1,3 @@
-Cannot use this, use requireContext(), when a context is needed
-activity?.intent?
---------
 * main activity: FragmentContainerView (ex id: nav_host_fragment,
 name=androidx.navigation.fragment.NavHostFragment
 "While you can specify a specific fragment for this attribute, setting it to NavHostFragment allows your
@@ -31,7 +28,6 @@ Finally, implement onSupportNavigateUp(). Along with setting defaultNavHost to t
 override fun onSupportNavigateUp(): Boolean {
    return navController.navigateUp() || super.onSupportNavigateUp()
 }
-https://en.wikipedia.org/wiki/Short-circuit_evaluation
 -----
 => findNavController().navigate(dest_or_action_id)
 
@@ -103,3 +99,17 @@ binding = DataBindingUtil.inflate(inflater, R.layout.game_fragment, container, f
 
 binding.lifecycleOwner = viewLifecycleOwner
 binding.lifecycleOwner = this
+
+------------
+leanback in the manifest
+
+----------------
+
+https://coil-kt.github.io/coil/
+If you got URL but ImageView slot
+implementation "io.coil-kt:coil:1.1.1"
+https://developer.android.com/codelabs/basic-android-kotlin-training-internet-images
+
+----------------
+Use dataBinding
+https://developer.android.com/codelabs/basic-android-kotlin-training-internet-images
