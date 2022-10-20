@@ -197,3 +197,5 @@ top-level function = not in a class
 @JvmStatic
 
 https://en.wikipedia.org/wiki/Short-circuit_evaluation
+----------
+fun getFullName() : String = "$firstName $lastName"

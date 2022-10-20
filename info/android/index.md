@@ -696,6 +696,7 @@ Then, you must manually edit the `.xml` using data binding, by wrapping its cont
     <!-- and you can even write some code -->
     <tag
         android:text="@{viewModel.xxx}"
+        android:text="@{@string/xxx(yyy)}"
         android:checked="@{viewModel.xxx.equals(yyy)}"
         android:onClick="@{() -> viewModel.xxx()}"
     />
