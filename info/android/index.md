@@ -850,23 +850,40 @@ class XXXFragment : Fragment() {
 </details>
 </div><div>
 
-Navigation component is a collection of libs simplifying android navigation. For instance, for a bottom navigation, you would want to click on icons, and move from one screen to another. In such case, the navigation component would handle for you stuff like highlighting the current menu.
+The **navigation component** is a collection of libs simplifying android navigation. For instance, for a bottom navigation, you would want to click on icons, and move from one screen to another. In such case, the navigation component would handle for you stuff like highlighting the current menu.
 
 ```gradle
+// At the top of your build.gradle
+buildscript {
+    dependencies {
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.5.2"
+    }
+}
+
+// then as usual
 implementation "androidx.navigation:navigation-fragment-ktx:2.5.2"
 implementation "androidx.navigation:navigation-ui-ktx:2.5.2"
+implementation "androidx.navigation:navigation-safe-args-gradle-plugin:2.5.2"
 ```
 
 <details class="details-e">
-<summary>NavHost: view were the fragments are displayed</summary>
+<summary>NavHost: view were fragments are displayed</summary>
 
 The **NavHost** is a container that you will put in your activity.xml, that will be filled with the current fragment being displayed.
 
 It will be linked to a **Navigation graph**, which will handle filling the container with the right fragment. If you are familiar with Java, this is the same as a CardLayout. 
+
+Open your `activity.xml`
+
+* Add a **NavHostFragment**
+* Create a **Navigation Graph** (ex: nav_graph)
+* You are done, move to the Navigation Graph section
+
+> **defaultNavHost** is an attribute when true, which is the default value, allows the host to interact with the navigation hierarchy, meaning that for instance, when "back" is pressed, then the Navigation Graph will go back to the previous screen.
 </details>
 
 <details class="details-e">
-<summary>Navigation graph: navigate between fragments</summary>
+<summary>Navigation graph: navigation between fragments</summary>
 
 This is a file, with an editor, allowing to link fragments, and define what **action** make the user move to another fragment, and what parameters are added... Each fragment/screen is called **destination**.
 
@@ -874,11 +891,32 @@ This is a file, with an editor, allowing to link fragments, and define what **ac
 * Click on the phone with a +
 * Add your fragments
 * Use arrows to link your screens
-  * ex: from a button to another screen
-  * Click on an arrow to define arguments that are passed
+* Click on a screen to define arguments that are passed
 * Select the initial screen, and click on the "Home button" (Assign start destination)
 
 > **Note**: if you want the name shown in the navbar to match the current fragment, edit the property `label` of each fragment with something else than `@string/app_name`.
+</details>
+
+<details class="details-e">
+<summary>NavController: ...</summary>
+
+```kotlin
+private lateinit var navController: NavController
+
+override fun onCreate(savedInstanceState: Bundle?) {
+    // ... code ...
+    val navHostFragment = supportFragmentManager
+        .findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+    navController = navHostFragment.navController
+    // show menus
+    setupActionBarWithNavController(navController)
+}
+
+// handle "up" button
+override fun onSupportNavigateUp(): Boolean {
+    return navController.navigateUp() || super.onSupportNavigateUp()
+}
+```
 </details>
 </div></div>
 
