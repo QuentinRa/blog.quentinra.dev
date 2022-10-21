@@ -7,9 +7,10 @@ Learn
 * Learn about the AndroidManifest
 => leanback in the manifest
 => Permissions: https://developer.android.com/guide/topics/permissions/overview
-* Learn about Talkback/Tint/Dark mode, and stuff like this
+* Talkback/Tint/Dark mode
 => https://developer.android.com/codelabs/basic-android-kotlin-training-livedata Talkback enabled
 => https://developer.android.com/codelabs/basic-android-kotlin-training-polished-user-experience
+=> https://developer.android.com/guide/topics/ui/accessibility/testing#explore_your_app_with_talkback
 * MVVM
 => The main classes or components in Android Architecture are UI Controller (activity/fragment), ViewModel, LiveData and Room.
 => These components take care of some of the complexity of the lifecycle and help you avoid lifecycle related issues.
