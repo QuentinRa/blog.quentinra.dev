@@ -1307,10 +1307,10 @@ Result.success(workDataOf(key to value))
 <details class="details-e">
 <summary>Unique work chains</summary>
 
-A unique work chain is identified by a `TAG`, and there will only be ONE work chain with this tag at a time.
+A unique work chain is identified by an `ID`, and there will only be ONE work chain with this `ID` at a time.
 
-* `enqueue(request)` $\to$ `enqueueUniqueWork(TAG, policy, request)`
-* `begin(request)` $\to$ `beginUniqueWork(TAG, policy, request)`
+* `enqueue(request)` $\to$ `enqueueUniqueWork(ID, policy, request)`
+* `begin(request)` $\to$ `beginUniqueWork(ID, policy, request)`
 
 Policies are
 
@@ -1321,6 +1321,49 @@ Policies are
 > **Note**: `TAG` should definitely be a `const`.
 </details>
 
+<details class="details-e">
+<summary>Observe worker</summary>
+
+```kotlin
+private val _work : LiveData<List<WorkInfo>>
+
+_work = workManager.getWorkInfosForUniqueWorkLiveData(ID)
+_work = workManager.getWorkInfoByIdLiveData(uuid)
+// you can add a tag to a request
+// with .addTag(TAG)
+_work = workManager.getWorkInfosByTagLiveData(tag)
+```
+
+You may have noticed, but these functions return a list of WorkInfo. In the code below, we only have one job that was started, as we haven't chained jobs, so we will only be interested in the first index. We will use a Transformations, listening for changes on `_work`, and serving an appropriate value to your LiveData, if any.
+
+```kotlin
+// only one job, no need for a list to be public
+val work: LiveData<WorkInfo>
+
+// NOTE: this must be called after
+// _work = ...
+// as _work must have been initialized
+work = Transformations.map(_work) {
+    // not yet
+    if (it.isNullOrEmpty()) {
+        return@map null
+    }
+    // ensure that the job if finished
+    return@map if (it[0].state.isFinished) it[0] else null
+}
+```
+
+Then, do as usual
+
+```kotlin
+viewModel.work.observe(viewLifecycleOwner) {
+    // ...
+    // maybe you will use it.outputData
+    // which is the dictionnary that is passed
+    // between workers
+}
+```
+</details>
 </div></div>
 
 <hr class="sr">

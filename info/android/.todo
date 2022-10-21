@@ -106,50 +106,6 @@ val request = OneTimeWorkRequestBuilder<XXXWorker>()
 
 https://github.com/googlecodelabs/android-workmanager/blob/start_kotlin/app/src/main/java/com/example/background/workers/WorkerUtils.kt
 
-=> LiveData<List<WorkInfo>> to
-    => keep track of the state (BLOCKED, CANCELLED, ENQUEUED, FAILED, RUNNING or SUCCEEDED) of a WorkRequest
-    => if the request is finished, the output data, if any
-=> you can get your work request info, by using an Id, a tag, or a unique chain name
-    => workManager.getWorkInfoByIdLiveData()
-    => workManager.getWorkInfosForUniqueWorkLiveData()
-    => workManager.getWorkInfosByTagLiveData()
-        => you will have to call .addTag(TAG_OUTPUT) on your WorkRequest
-
-override fun onCreate(savedInstanceState: Bundle?) {
-    ...
-    // Observe work status, added in onCreate()
-    viewModel.outputWorkInfos.observe(this, workInfosObserver())
-}
-
-// Define the observer function
-private fun workInfosObserver(): Observer<List<WorkInfo>> {
-    return Observer { listOfWorkInfo ->
-
-        // Note that these next few lines grab a single WorkInfo if it exists
-        // This code could be in a Transformation in the ViewModel; they are included here
-        // so that the entire process of displaying a WorkInfo is in one location.
-
-        // If there are no matching work info, do nothing
-        if (listOfWorkInfo.isNullOrEmpty()) {
-            return@Observer
-        }
-
-        // We only care about the one output status.
-        // Every continuation has only one worker tagged TAG_OUTPUT
-        val workInfo = listOfWorkInfo[0]
-
-        if (workInfo.state.isFinished) {
-            showWorkFinished()
-
-            // Normally this processing, which is not directly related to drawing views on
-            // screen would be in the ViewModel. For simplicity we are keeping it here.
-            val outputImageUri = workInfo.outputData.getString(KEY_IMAGE_URI)
-        } else {
-            showWorkInProgress()
-        }
-    }
-}
-
 => workManager.cancelUniqueWork(key)
 
 https://github.com/google-developer-training/android-basics-kotlin-water-me-app/blob/main/app/src/main/java/com/example/waterme/worker/WaterReminderWorker.kt
