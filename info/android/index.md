@@ -1141,10 +1141,22 @@ val bottomNavigationView = binding.bottomNavigationView
 bottomNavigationView?.setupWithNavController(findNavController())
 ```
 </details>
-
 </div></div>
 
 <hr class="sl">
+
+## WorkManager
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+
+<hr class="sr">
 
 ## References
 

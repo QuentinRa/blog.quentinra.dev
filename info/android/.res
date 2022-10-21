@@ -34,3 +34,7 @@ https://developer.android.com/docs
 https://developer.android.com/teach
 https://developer.android.com/guide
 https://developer.android.com/develop/ui
+
+https://developer.android.com/courses/android-basics-compose/course
+https://developer.android.com/courses/android-basics-kotlin/unit-5
+https://developer.android.com/codelabs/basic-android-kotlin-training-adaptive-layouts
