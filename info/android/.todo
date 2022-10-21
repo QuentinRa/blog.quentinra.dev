@@ -1,7 +1,8 @@
 * Pick android version
 * Switch Project View / IntelliJ-features
 * Device emulator
-* Layout Inspector
+=> Layout Inspector
+=> Advanced controls (charging...)
 
 ------- Material -------
 
@@ -96,7 +97,10 @@ With the previous APIs, you don't have guarantees that you job will be executed.
 Android Jetpack WorkManager, backward-compatible, you are guaranteed that you job will be executed,
 even if the app is closed, or the device restarts.
 
-Worker(context, params) : extend this class, put your code in "doWork()". Return a Request.
+Worker(context, params) : extend this class, put your code in "doWork()". Return a Result.
+    => applicationContext to get back the context
+    => Result.success()
+    => Result.failure()
 
 Constraints.Builder()
 .setRequireCharging(...)
@@ -105,16 +109,77 @@ Constraints.Builder()
 
 WorkerRequest: take a worker, and constraints. OneTimeWorkRequestBuilder<Worker>().setConstraints().build()
 => frequency
+=> provide data: setInputData(Data.Builder().putString(key, value).build())
+    => in the code, use inputData.getString(key)
+    => output data: Result.success(workDataOf(key to value))
 
 WorkManager: enqueue requests, WorkManager.enqueue(WorkerRequest)
 WorkManager.enqueue(OneTimeWorkRequest.from(Worker::class.java)
 WorkManager.getInstance(context)
+=> in the viewModel: private val workManager = WorkManager.getInstance(application)
 
 You can chain requests
 .beginWith(listOf())
 .then()
 .then()
 .build()
+
+https://github.com/googlecodelabs/android-workmanager/blob/start_kotlin/app/src/main/java/com/example/background/workers/WorkerUtils.kt
+
+// WorkManager dependency
+implementation "androidx.work:work-runtime-ktx:2.7.1"
+
+unique work chains
+=> beginUniqueWork
+=> avoid having two time the same chain running
+    => key
+    => a ExistingWorkPolicy: REPLACE, KEEP or APPEND.
+
+=> LiveData<List<WorkInfo>> to
+    => keep track of the state (BLOCKED, CANCELLED, ENQUEUED, FAILED, RUNNING or SUCCEEDED) of a WorkRequest
+    => if the request is finished, the output data, if any
+=> you can get your work request info, by using an Id, a tag, or a unique chain name
+    => workManager.getWorkInfoByIdLiveData()
+    => workManager.getWorkInfosForUniqueWorkLiveData()
+    => workManager.getWorkInfosByTagLiveData()
+        => you will have to call .addTag(TAG_OUTPUT) on your WorkRequest
+
+override fun onCreate(savedInstanceState: Bundle?) {
+    ...
+    // Observe work status, added in onCreate()
+    viewModel.outputWorkInfos.observe(this, workInfosObserver())
+}
+
+// Define the observer function
+private fun workInfosObserver(): Observer<List<WorkInfo>> {
+    return Observer { listOfWorkInfo ->
+
+        // Note that these next few lines grab a single WorkInfo if it exists
+        // This code could be in a Transformation in the ViewModel; they are included here
+        // so that the entire process of displaying a WorkInfo is in one location.
+
+        // If there are no matching work info, do nothing
+        if (listOfWorkInfo.isNullOrEmpty()) {
+            return@Observer
+        }
+
+        // We only care about the one output status.
+        // Every continuation has only one worker tagged TAG_OUTPUT
+        val workInfo = listOfWorkInfo[0]
+
+        if (workInfo.state.isFinished) {
+            showWorkFinished()
+
+            // Normally this processing, which is not directly related to drawing views on
+            // screen would be in the ViewModel. For simplicity we are keeping it here.
+            val outputImageUri = workInfo.outputData.getString(KEY_IMAGE_URI)
+        } else {
+            showWorkInProgress()
+        }
+    }
+}
+
+=> workManager.cancelUniqueWork(key)
 
 -------------
 To fix this, you need to tell the RecyclerView not to clip the inner contents to the padding using android:clipToPadding attribute.
