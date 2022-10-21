@@ -1382,6 +1382,92 @@ workManager.cancelAllWorkByTag(TAG)
 
 <hr class="sr">
 
+## Notifications
+
+<div class="row row-cols-md-2"><div>
+
+Notification are used to for application to send something to the user usually when the application isn't running. To trigger a notification, you need a **channel**, **an icon**, a **title**, a **message**, and [**a priority**](https://developer.android.com/reference/androidx/core/app/NotificationCompat.Builder#setPriority(int)).
+
+```kotlin
+val builder = NotificationCompat.Builder(applicationContext, channel_id)
+    .setSmallIcon(icon_id)
+    .setContentTitle(title)
+    .setContentText(body)
+    .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+```
+
+You must have the permission to send notifications (AndroidManifest.xml)
+
+```xml
+<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+```
+
+<details class="details-e mt-3">
+<summary>Create a channel</summary>
+
+You must create a channel, which is a sort of group, in which all notification of your app will be stored, for devices running ANDROID 8 or higher.
+
+The code sample to create a channel is in the [documentation](https://developer.android.com/develop/ui/views/notifications/build-notification), while the location of the given `createNotificationChannel()` method isn't set in stone:
+
+> According to the documentation: "Because you must create the notification channel before posting any notifications on Android 8.0 and higher, you should execute this code as soon as your app starts."
+
+We will put it in a class `MainApplication`, the name do not matter, extending `Application`, and this will ensure that this code is **executed once** <small>(although the code itself can be run multiple times, it's not optimal)</small> **when the application is created**.
+
+<details class="details-e">
+<summary>MainApplication</summary>
+
+```kotlin
+class MainApplication : Application() {
+
+    override fun onCreate() {
+        super.onCreate()
+        createNotificationChannel()
+    }
+
+    private fun createNotificationChannel() {
+        // Create the NotificationChannel, but only on API 26+ because
+        // the NotificationChannel class is new and not in the support library
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val name = getString(R.string.channel_name)
+            val descriptionText = getString(R.string.channel_description)
+            val importance = NotificationManager.IMPORTANCE_DEFAULT
+            val channel = NotificationChannel(CHANNEL_ID, name, importance).apply {
+                description = descriptionText
+            }
+            // Register the channel with the system
+            val notificationManager: NotificationManager =
+                getSystemService(NOTIFICATION_SERVICE) as NotificationManager
+            notificationManager.createNotificationChannel(channel)
+        }
+    }
+
+    companion object {
+        const val CHANNEL_ID = "SOME_ID"
+    }
+}
+```
+</details>
+
+Then, you must indicate that you create an extension of application in your AndroidManifest
+
+```xml
+<!-- add Android:name pointing to your MainApplication -->
+<!-- use CTRL+SPACE / auto-completion -->
+<application
+        android:name=".xxx.MainApplication"
+        />
+```
+
+> **Note**: a channel is created with an [**importance**](https://developer.android.com/develop/ui/views/notifications/channels#importance). The attribute **priority** of the notification is ignored on Android 8.0.
+
+</details>
+</div><div>
+
+...
+</div></div>
+
+<hr class="sl">
+
 ## References
 
 * [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)
