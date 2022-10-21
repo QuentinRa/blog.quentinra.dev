@@ -967,6 +967,11 @@ And in the code
 ```kotlin
 val imgUri = imgUrl.toUri().buildUpon().scheme("https").build()
 imgView.load(imgUri)
+// or
+imgView.load(imgUri) {
+    placeholder(R.drawable.id_of_a_loading_animation)
+    error(R.drawable.id_of_a_broken_image)
+}
 ```
 
 To use this with data binding, create a custom attribute (ex: `app:imgUrl`), as explaining in the paragraph about "formatting" in the data binding section, calling the code above.

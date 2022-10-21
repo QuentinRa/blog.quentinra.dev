@@ -73,8 +73,52 @@ Use resources.getQuantityString with quantity="one"/"other"
 
 --------------
 Call executePendingBindings() after setting the property, which causes the update to execute immediately.
+This is important, because it forces the data binding to execute immediately,
+which allows the RecyclerView to make the correct view size measurements.
+Situation: using images.
+
+@BindingAdapter("listData")
+fun bindRecyclerView(recyclerView: RecyclerView, data: List<MarsPhoto>?) {
+    val adapter = recyclerView.adapter as PhotoGridAdapter
+    adapter.submitList(data)
+}
+
+imageView.visibility = View.VISIBLE / GONE
 
 @Query("id")
 @GET("xxx/{id}")
 suspend fun xxx(@Path("id") id: Int): yyy
 https://square.github.io/retrofit/
+
+----------
+Long or battery intensive tasks.
+With the previous APIs, you don't have guarantees that you job will be executed.
+Android Jetpack WorkManager, backward-compatible, you are guaranteed that you job will be executed,
+even if the app is closed, or the device restarts.
+
+Worker(context, params) : extend this class, put your code in "doWork()". Return a Request.
+
+Constraints.Builder()
+.setRequireCharging(...)
+...
+.build() to create constraints
+
+WorkerRequest: take a worker, and constraints. OneTimeWorkRequestBuilder<Worker>().setConstraints().build()
+=> frequency
+
+WorkManager: enqueue requests, WorkManager.enqueue(WorkerRequest)
+WorkManager.enqueue(OneTimeWorkRequest.from(Worker::class.java)
+WorkManager.getInstance(context)
+
+You can chain requests
+.beginWith(listOf())
+.then()
+.then()
+.build()
+
+-------------
+To fix this, you need to tell the RecyclerView not to clip the inner contents to the padding using android:clipToPadding attribute.
+ This makes it draw the scrolling view in the padding area. Go back to layout/fragment_overview.xml. Add android:clipToPadding attribute
+ for the RecyclerView, set it to false.
+--------
+_status.value = MarsApiStatus.LOADING
