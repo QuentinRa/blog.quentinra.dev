@@ -1176,18 +1176,34 @@ class XXXWorker(c: Context, args: WorkerParameters) : Worker(c, args) {
 * **WorkerRequest**: this is the request send to the work manager, with both the worker, and the **constraints** that may be applied
 
 <details class="details-e">
-<summary>Kind of requests</summary>
+<summary>You may use the following constraints</summary>
 
-* `OneTimeWorkRequest`: executed one time
+```kotlin
+val constraints = Constraints.Builder()
+    .setRequiresCharging(true)
+    .setRequiresBatteryNotLow(true)
+    .setRequiresStorageNotLow(true)
+    .setRequiresDeviceIdle(true)
+    .setRequiredNetworkType(NetworkType.CONNECTED)
+    .build()
+```
 </details>
 
 <details class="details-e">
 <summary>Create a request</summary>
 
-For instance, with `OneTimeWorkRequest` and the worker `XXXWorker`, you can create a request without any constraints with
+We will use `OneTimeWorkRequest` to run requests once, and the worker `XXXWorker`. For a request without any constraints
 
 ```kotlin
 val request = OneTimeWorkRequest.from(XXXWorker::class.java)
+```
+
+And, for a request with constraints
+
+```kotlin
+val request = OneTimeWorkRequestBuilder<XXXWorker>()
+    .setConstraints(constraints)
+    .build()
 ```
 </details>
 
@@ -1221,8 +1237,64 @@ class XXXViewModelFactory(private val context: Context) : ViewModelProvider.Fact
 private val viewModel: MatchListViewModel by activityViewModels { MatchListViewModelFactory(requireContext()) }
 ```
 </details>
-</div></div>
 
+<details class="details-e">
+<summary>Enqueue: process the request</summary>
+
+```kotlin
+// example with a non-static work manager
+workManager.enqueue(request)
+```
+</details>
+
+<details class="details-e">
+<summary>Sequential execution of requests / Chaining requests</summary>
+
+```kotlin
+workManager
+    .beginWith(request)
+    .then(request)
+    // ... chen as much then as you want ...
+    .build()
+```
+</details>
+
+<details class="details-e">
+<summary>Pass data to a request, or from a request to another</summary>
+
+A request may take data, and if chaining requests, it this data may be modified, and will be passed to the next ones. First, define what is the dictionary=data that will be passed to a worker
+
+```kotlin
+val data = Data.Builder()
+    // "key" should be a const, not hard-coded
+    .putString("key", "value")
+    .build()
+// or,
+val data = workDataOf("key" to "value", "key2" to "value2")
+```
+
+When creating a request, use the Builder, with `setInputData`
+
+```kotlin
+val request = OneTimeWorkRequestBuilder<XXXWorker>()
+    .setInputData(data)
+    .build()
+```
+
+In your workers, you can use `inputData` to access the dictionary
+
+```kotlin
+inputData.getString(key)
+```
+
+And, you can pass a new dictionary upon exit, that will be merged with the existing `inputData` dictionary! New workers will have this updated dictionary as `inputData`.
+
+```kotlin
+Result.success(workDataOf(key to value))
+```
+</details>
+
+</div></div>
 
 <hr class="sr">
 

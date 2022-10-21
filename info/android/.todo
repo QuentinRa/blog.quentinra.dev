@@ -4,6 +4,7 @@
 => Layout Inspector
 => Advanced controls (charging...)
 => double-click on navbar
+* Access context in viewModel, see WorkManager
 
 ------- Material -------
 
@@ -93,42 +94,17 @@ suspend fun xxx(@Path("id") id: Int): yyy
 https://square.github.io/retrofit/
 
 ----------
-Long or battery intensive tasks.
-With the previous APIs, you don't have guarantees that you job will be executed.
-Android Jetpack WorkManager, backward-compatible, you are guaranteed that you job will be executed,
-even if the app is closed, or the device restarts.
+App inspection (API 26+, Android Studio): inspect workers
 
-Worker(context, params) : extend this class, put your code in "doWork()". Return a Result.
-    => applicationContext to get back the context
-    => Result.success()
-    => Result.failure()
-
-Constraints.Builder()
-.setRequireCharging(...)
-...
-.build() to create constraints
-
-WorkerRequest: take a worker, and constraints. OneTimeWorkRequestBuilder<Worker>().setConstraints().build()
-=> frequency
-=> provide data: setInputData(Data.Builder().putString(key, value).build())
-    => in the code, use inputData.getString(key)
-    => output data: Result.success(workDataOf(key to value))
-
-WorkManager: enqueue requests, WorkManager.enqueue(WorkerRequest)
-WorkManager.enqueue(OneTimeWorkRequest.from(Worker::class.java)
-WorkManager.getInstance(context)
-=> in the viewModel: private val workManager = WorkManager.getInstance(application)
-
-You can chain requests
-.beginWith(listOf())
-.then()
-.then()
-.build()
+WorkerRequest
+val request = OneTimeWorkRequestBuilder<XXXWorker>()
+            .setConstraints(constraints)
+            .setInitialDelay(15, TimeUnit.MINUTES)
+            .setPeriodStartTime(1, TimeUnit.MINUTES)
+            .setScheduleRequestedAt(1, TimeUnit.DAYS)
+            .build()
 
 https://github.com/googlecodelabs/android-workmanager/blob/start_kotlin/app/src/main/java/com/example/background/workers/WorkerUtils.kt
-
-// WorkManager dependency
-implementation "androidx.work:work-runtime-ktx:2.7.1"
 
 unique work chains
 => beginUniqueWork
