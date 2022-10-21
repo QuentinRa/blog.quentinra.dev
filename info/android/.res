@@ -24,6 +24,10 @@ Learn
 * data binding
 => https://developer.android.com/topic/libraries/data-binding/start
 => https://developer.android.com/topic/architecture#recommended-app-arch
+* other
+=> https://developer.android.com/develop/ui/views/layout/twopane
+=> https://developer.android.com/develop/ui/views/layout/cardview
+=> https://developer.android.com/codelabs/basic-android-kotlin-training-adaptive-layouts
 
 Training
 https://developer.android.com/docs

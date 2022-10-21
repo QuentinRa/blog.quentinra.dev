@@ -3,13 +3,6 @@
 * Device emulator
 * Layout Inspector
 
------ coil -------
-
-https://coil-kt.github.io/coil/
-If you got URL but ImageView slot
-implementation "io.coil-kt:coil:1.1.1"
-https://developer.android.com/codelabs/basic-android-kotlin-training-internet-images
-
 ------- Material -------
 
 Material design is a library of pre-made components. Google recommends to use Material UI components as much as possible. The list [of Material components for Android can be found here](https://material.io/components?platform=android).
@@ -77,3 +70,11 @@ quantity strings
 </plurals>
 Use resources.getQuantityString with quantity="one"/"other"
 %1
+
+--------------
+Call executePendingBindings() after setting the property, which causes the update to execute immediately.
+
+@Query("id")
+@GET("xxx/{id}")
+suspend fun xxx(@Path("id") id: Int): yyy
+https://square.github.io/retrofit/

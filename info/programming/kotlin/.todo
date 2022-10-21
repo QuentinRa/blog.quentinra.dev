@@ -199,3 +199,5 @@ top-level function = not in a class
 https://en.wikipedia.org/wiki/Short-circuit_evaluation
 ----------
 fun getFullName() : String = "$firstName $lastName"
+------------
+let code block will only be executed if the object is not null.
