@@ -1149,10 +1149,39 @@ bottomNavigationView?.setupWithNavController(findNavController())
 
 <div class="row row-cols-md-2"><div>
 
-...
+The WorkManager is an Android Jetpack component providing a modern way to launch long, periodic, or battery intensive tasks. Unlike previous APIs, you are guaranteed that you job will be executed, even if the app is closed, or the phone restart.
+
+```gradle
+implementation "androidx.work:work-runtime-ktx:2.7.1"
+```
+
+* **Worker**: a class extending a worker, with the code that the work manager will execute
+
+```kotlin
+class XXXWorker(c: Context, args: WorkerParameters) : Worker(c, args) {
+    override fun doWork(): Result {
+        return try {
+            // if you need a context: applicationContext
+            // ok
+            Result.success()
+        } catch (e: Exception) {
+            // error
+            Result.failure()
+        }
+    }
+}
+```
 </div><div>
 
+* **WorkerRequest**: this is the request send to the work manager, with both the worker, and the constraints that may be applied
+
 ...
+
+
+* **WorkManager**: take your request, and handle them
+
+...
+
 </div></div>
 
 
