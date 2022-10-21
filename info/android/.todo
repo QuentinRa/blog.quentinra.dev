@@ -104,12 +104,6 @@ val request = OneTimeWorkRequestBuilder<XXXWorker>()
             .setScheduleRequestedAt(1, TimeUnit.DAYS)
             .build()
 
-https://github.com/googlecodelabs/android-workmanager/blob/start_kotlin/app/src/main/java/com/example/background/workers/WorkerUtils.kt
-
-=> workManager.cancelUniqueWork(key)
-
-https://github.com/google-developer-training/android-basics-kotlin-water-me-app/blob/main/app/src/main/java/com/example/waterme/worker/WaterReminderWorker.kt
-
 -------------
 To fix this, you need to tell the RecyclerView not to clip the inner contents to the padding using android:clipToPadding attribute.
  This makes it draw the scrolling view in the padding area. Go back to layout/fragment_overview.xml. Add android:clipToPadding attribute

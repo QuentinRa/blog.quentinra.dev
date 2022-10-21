@@ -1364,6 +1364,20 @@ viewModel.work.observe(viewLifecycleOwner) {
 }
 ```
 </details>
+
+<details class="details-e">
+<summary>Cancel work</summary>
+
+```kotlin
+workManager.cancelAllWork()
+workManager.cancelUniqueWork(ID)
+workManager.cancelWorkById(uuid)
+// you can add a tag to a request
+// with .addTag(TAG)
+workManager.cancelAllWorkByTag(TAG)
+```
+
+</details>
 </div></div>
 
 <hr class="sr">
