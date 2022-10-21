@@ -495,6 +495,38 @@ override fun onOptionsItemSelected(item: MenuItem): Boolean {
 }
 ```
 </details>
+<details class="details-e">
+<summary>Menu Provider : reusable menus</summary>
+
+This is an extension to menus allowing us to reuse the same menu in multiple activities, or fragments. You will simply move the code you coded for menus inside a MenuProvider.
+
+```kotlin
+class XXXMenuProvider : MenuProvider {
+    override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
+        menuInflater.inflate(R.menu.xxx, menu)
+    }
+
+    override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
+        return when (menuItem.itemId) {
+            R.id.xxx -> {
+                // ... code if the user click on this menu item ...
+                true
+            }
+            else -> false
+        }
+    }
+}
+```
+
+Then, in any fragment, or activity using this menu 
+
+```kotlin
+// FOR A FRAGMENT
+activity?.addMenuProvider(RefreshMenuProvider(), viewLifecycleOwner, Lifecycle.State.RESUMED)
+// FOR AN ACTIVITY
+addMenuProvider(RefreshMenuProvider(), this, Lifecycle.State.RESUMED)
+```
+</details>
 </div><div>
 
 As in Java, you have listeners which are called when an event is triggered (ex: `click on a button`).
@@ -673,6 +705,20 @@ viewModel.list.observe(this) { p ->
    // p is a List<Int>!
 }
 ```
+
+<details class="details-e">
+<summary>LiveData Transformations</summary>
+
+You can apply a transformation on a LiveData, such as sorting/filtering the LiveData, formatting something, or calculate something.
+
+```kotlin
+val list: LiveData<List<Int>> = Transformations.map(_list) {
+    // do something
+    it
+}
+```
+
+</details>
 </div><div>
 
 **Data binding** can be used to get rid of observers, and directly connect the model with the view, inside the .xml.
@@ -720,7 +766,7 @@ If you are using it on an `activity_main.xml`
 private lateinit var binding: XXXBinding
 
 binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-// optional
+// optional, mandatory if using LiveData
 binding.lifecycleOwner = this
 ```
 
@@ -730,7 +776,8 @@ If you are using it on an `fragment.xml`
 private lateinit var binding: XXXBinding
 
 binding = DataBindingUtil.inflate(inflater, R.layout.fragment, container, false)
-// optional
+// optional, mandatory if using LiveData
+// in "onViewCreated"
 binding.lifecycleOwner = viewLifecycleOwner
 ```
 </details>
@@ -926,7 +973,7 @@ Differences with activities
 * `findViewById` should only be called in **onViewCreated**!
 * `requireContext()` can be used, if there are some methods not available in a Fragment, that were available in an Activity, or simply for methods requiring a context
 * use `activity?.intent?` instead of `intent` in Fragments
-* `onCreateOptionsMenu()`: there is no `menuInflater`, instead a parameter `inflater` is provided. You will also have to call `setHasOptionsMenu(true)` in `onCreate()`.
+* `menus`: you must use a menu provider.
 * use `viewLifecycleOwner` instead of `this`, when an owner is required
 * **Instead of `viewModels()`** which is not shared between fragments of one activity, you can use `activityViewModels()`.
 
@@ -1018,7 +1065,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
     setupActionBarWithNavController(navController)
 }
 
-// handle "up" button
+// handle "up" button, to go back if pressed
 override fun onSupportNavigateUp(): Boolean {
     return navController.navigateUp() || super.onSupportNavigateUp()
 }
