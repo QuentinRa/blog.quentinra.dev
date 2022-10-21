@@ -1173,15 +1173,54 @@ class XXXWorker(c: Context, args: WorkerParameters) : Worker(c, args) {
 ```
 </div><div>
 
-* **WorkerRequest**: this is the request send to the work manager, with both the worker, and the constraints that may be applied
+* **WorkerRequest**: this is the request send to the work manager, with both the worker, and the **constraints** that may be applied
 
-...
+<details class="details-e">
+<summary>Kind of requests</summary>
 
+* `OneTimeWorkRequest`: executed one time
+</details>
+
+<details class="details-e">
+<summary>Create a request</summary>
+
+For instance, with `OneTimeWorkRequest` and the worker `XXXWorker`, you can create a request without any constraints with
+
+```kotlin
+val request = OneTimeWorkRequest.from(XXXWorker::class.java)
+```
+</details>
+
+<br>
 
 * **WorkManager**: take your request, and handle them
 
-...
+<details class="details-e">
+<summary>Get access to the work manager</summary>
 
+You can call static methods
+
+```kotlin
+WorkManager.xxx()
+```
+
+But, you may also fetch the workManager instance, and call methods on it using `WorkManager.getInstance(context)`. Here, is an example in a ViewModel
+
+```kotlin
+class XXXViewModel(context: Context) : ViewModel() {
+    private val workManager = WorkManager.getInstance(context)
+}
+class XXXViewModelFactory(private val context: Context) : ViewModelProvider.Factory {
+    @Suppress("UNCHECKED_CAST")
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        return MatchListViewModel(context) as T
+    }
+}
+
+// and
+private val viewModel: MatchListViewModel by activityViewModels { MatchListViewModelFactory(requireContext()) }
+```
+</details>
 </div></div>
 
 
