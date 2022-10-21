@@ -952,6 +952,25 @@ data class Player(
     @Json(name = "name") val name: String)
 ```
 </details>
+
+<details class="details-e">
+<summary>Load images from the internet</summary>
+
+You can use the [coil](https://github.com/coil-kt/coil) library.
+
+```gradle
+implementation "io.coil-kt:coil:1.1.1"
+```
+
+And in the code
+
+```kotlin
+val imgUri = imgUrl.toUri().buildUpon().scheme("https").build()
+imgView.load(imgUri)
+```
+
+To use this with data binding, create a custom attribute (ex: `app:imgUrl`), as explaining in the paragraph about "formatting" in the data binding section, calling the code above.
+</details>
 </div></div>
 
 <hr class="sr">
