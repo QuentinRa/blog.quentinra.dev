@@ -92,3 +92,19 @@ val amount = NumberFormat.getCurrencyInstance().format(1300.74)
 * `1 300,74€` (FR)
 * ...
 </div></div>
+
+<hr class="sl">
+
+## Dates
+
+<div class="row row-cols-md-2"><div>
+
+```kotlin
+val formatter = SimpleDateFormat("FORMAT", Locale.getDefault())
+val calendar = Calendar.getInstance()
+val xxx = formatter.format(calendar.time)
+```
+</div><div class="align-self-center">
+
+See [SimpleDateFormat](https://developer.android.com/reference/java/text/SimpleDateFormat#date-and-time-patterns).
+</div></div>
