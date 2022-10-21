@@ -16,10 +16,14 @@ Learn
 => Controller: Draw on screen capture events / stuff related to the UI Can be destroyed at any time
 * XML
 => tools:context
+=> namespace in xml (app, android, tools)
 => if app namespace missing: xmlns:app="http://schemas.android.com/apk/res-auto (to the root)
 * Navigation component
 => deep link
 * Modern Android Development (MAD)
+* data binding
+=> https://developer.android.com/topic/libraries/data-binding/start
+=> https://developer.android.com/topic/architecture#recommended-app-arch
 
 Training
 https://developer.android.com/docs

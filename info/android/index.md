@@ -700,6 +700,8 @@ Then, you must manually edit the `.xml` using data binding, by wrapping its cont
     <tag
         android:text="@{viewModel.xxx}"
         android:text="@{@string/xxx(yyy)}"
+        android:text='@{viewModel.boolean ? "x" : "y" }'
+        android:text='@{viewModel.boolean ? @string/toto : "" }'
         android:checked="@{viewModel.xxx.equals(yyy)}"
         android:onClick="@{() -> viewModel.xxx()}"
     />
@@ -709,9 +711,33 @@ Then, you must manually edit the `.xml` using data binding, by wrapping its cont
 
 In the code, get the binding, and set variables
 
+<details class="details-e">
+<summary>Load Data Bound XML</summary>
+
+If you are using it on an `activity_main.xml`
+
 ```kotlin
 private lateinit var binding: XXXBinding
 
+binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+// optional
+binding.lifecycleOwner = this
+```
+
+If you are using it on an `fragment.xml`
+
+```kotlin
+private lateinit var binding: XXXBinding
+
+binding = DataBindingUtil.inflate(inflater, R.layout.fragment, container, false)
+// optional
+binding.lifecycleOwner = viewLifecycleOwner
+```
+</details>
+
+If you added variables, you need to set them. If you are in a Fragment, then DON'T forget that you must do this on `onViewCreated()`.
+
+```kotlin
 // set variables
 binding.viewModel = ...
 ```
@@ -732,12 +758,12 @@ You could add this code wherever you want, such as in the associated Fragment. `
 
 ```kotlin
 companion object {
-    @BindingAdapter("xxx") @JvmStatic
+    @BindingAdapter("app:xxx") @JvmStatic
     fun setText(textView: TextView, value: Type) {
         textView.text = ...
     }
 
-    @InverseBindingAdapter(attribute = "xxx", event = "android:textAttrChanged")
+    @InverseBindingAdapter(attribute = "app:xxx", event = "android:textAttrChanged")
     @JvmStatic
     fun getText(textView: TextView) = textView.text.toString()
     }
@@ -747,11 +773,10 @@ In your XML, you will use this newly created attribute, that is taking your valu
 
 ```xml
 <TextView
-    xxx="@{viewModel.someNotDisplayableValueSuchAsABoolean}"
+    app:xxx="@{viewModel.aNotDisplayableValue}"
     />
 ```
 </details>
-
 </div></div>
 
 <hr class="sl">
