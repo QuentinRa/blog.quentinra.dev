@@ -1161,7 +1161,8 @@ implementation "androidx.work:work-runtime-ktx:2.7.1"
 class XXXWorker(c: Context, args: WorkerParameters) : Worker(c, args) {
     override fun doWork(): Result {
         return try {
-            // if you need a context: applicationContext
+            // get a context: applicationContext
+            // ...
             // ok
             Result.success()
         } catch (e: Exception) {
@@ -1463,7 +1464,16 @@ Then, you must indicate that you create an extension of application in your Andr
 </details>
 </div><div>
 
-...
+Send
+
+```kotlin
+// random unique id
+private val notificationId = 0
+
+with(NotificationManagerCompat.from(context)) {
+    notify(notificationId, builder.build())
+}
+```
 </div></div>
 
 <hr class="sl">
