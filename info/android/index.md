@@ -1260,11 +1260,21 @@ workManager
 </details>
 
 <details class="details-e">
-<summary>Pass data to a request, or from a request to another</summary>
+<summary>Input, pass, and output data</summary>
 
-A request may take data, and if chaining requests, it this data may be modified, and will be passed to the next ones. First, define what is the dictionary=data that will be passed to a worker
+Cases are 
+
+* passing data from your code to a worker
+* passing data from a worker to another
+* access the result/output of a worker
+
+A request may take data, and if chaining requests, it this data may be modified, and will be passed to the next ones. You may observe the worker too (explained later), and fetch the output of a worker.
+
+First, define what is the dictionary=data that will be passed to a worker
 
 ```kotlin
+// example are with strings
+// but, the type is <String, *>
 val data = Data.Builder()
     // "key" should be a const, not hard-coded
     .putString("key", "value")
@@ -1287,11 +1297,28 @@ In your workers, you can use `inputData` to access the dictionary
 inputData.getString(key)
 ```
 
-And, you can pass a new dictionary upon exit, that will be merged with the existing `inputData` dictionary! New workers will have this updated dictionary as `inputData`.
+And, you can pass a new dictionary upon exit, that will be merged with the existing `inputData` dictionary! New workers will have this updated dictionary as `inputData`. **Observers will have access to it too**.
 
 ```kotlin
 Result.success(workDataOf(key to value))
 ```
+</details>
+
+<details class="details-e">
+<summary>Unique work chains</summary>
+
+A unique work chain is identified by a `TAG`, and there will only be ONE work chain with this tag at a time.
+
+* `enqueue(request)` $\to$ `enqueueUniqueWork(TAG, policy, request)`
+* `begin(request)` $\to$ `beginUniqueWork(TAG, policy, request)`
+
+Policies are
+
+* **ExistingWorkPolicy.REPLACE**: cancel previous work (if any), and start this one
+* **ExistingWorkPolicy.KEEP**: if there is a pending work, do not start this one
+* **ExistingWorkPolicy.APPEND**: chain to existing if any, otherwise start a new chain
+
+> **Note**: `TAG` should definitely be a `const`.
 </details>
 
 </div></div>

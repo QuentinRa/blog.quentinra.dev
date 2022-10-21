@@ -106,12 +106,6 @@ val request = OneTimeWorkRequestBuilder<XXXWorker>()
 
 https://github.com/googlecodelabs/android-workmanager/blob/start_kotlin/app/src/main/java/com/example/background/workers/WorkerUtils.kt
 
-unique work chains
-=> beginUniqueWork
-=> avoid having two time the same chain running
-    => key
-    => a ExistingWorkPolicy: REPLACE, KEEP or APPEND.
-
 => LiveData<List<WorkInfo>> to
     => keep track of the state (BLOCKED, CANCELLED, ENQUEUED, FAILED, RUNNING or SUCCEEDED) of a WorkRequest
     => if the request is finished, the output data, if any
