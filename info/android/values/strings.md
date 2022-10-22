@@ -76,6 +76,34 @@ var myText = getString(R.string.price, "$3")
 
 <hr class="sr">
 
+## Plurals
+
+<div class="row row-cols-md-2"><div>
+
+```xml
+<plurals name="count">
+    <item quantity="zero">0</item>
+    <item quantity="one">1</item>
+    <item quantity="two">2</item>
+    <item quantity="few">few</item>
+    <item quantity="many">many</item>
+    <item quantity="other">unknown</item>
+</plurals>
+```
+</div><div>
+
+You can define plurals, which allows you to add a "s" for instance, if there are more than one entity. Aside from the method that is "new", and an additional parameter, which is used to find which item to use, everything you could do before is still possible.
+
+```kotlin
+resources.getQuantityString(R.plurals.count, 0)
+```
+
+> **Note**: the selecting of which item ISN'T only based on the quantity, for instance in english, you would say "0 items", and "n items" if $n \gt 1$, so only **other**, and **one** will be used in english, regardless of the quantity.
+</div></div>
+
+
+<hr class="sl">
+
 ## Currency
 
 <div class="row row-cols-md-2 mx-0"><div>
@@ -93,7 +121,7 @@ val amount = NumberFormat.getCurrencyInstance().format(1300.74)
 * ...
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Dates
 
