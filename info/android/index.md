@@ -719,6 +719,30 @@ val list: LiveData<List<Int>> = Transformations.map(_list) {
 ```
 
 </details>
+
+<details class="details-e">
+<summary>Merge/Connect LiveData using MediatorLiveData</summary>
+
+The example on this [StackOverflow Thread](https://stackoverflow.com/questions/47572913/livedata-transformations-map-with-multiple-arguments#answer-53628300) is most likely better than what I do. Anyway, the solution is to use `MediatorLiveData` which can have multiple livedata as source. If a source is modified, then it may, according to each listener your will code for each source, propagate to the `MediatorLiveData`. It means that observers should observe the `MediatorLiveData`.
+
+```kotlin
+private val mediator = MediatorLiveData<Int>()
+// only expose xxx, which is actually a mediator
+val xxx : LiveData<Int> = mediator
+    
+init {
+    mediator.addSource(yyy) {
+        // write what to do when "yyy" is updated
+        mediator.value = it
+    }
+    mediator.addSource(zzz) {
+    // write what to do when "zzz" is updated
+        mediator.value = it
+    }
+}
+```
+
+</details>
 </div><div>
 
 **Data binding** can be used to get rid of observers, and directly connect the model with the view, inside the .xml.

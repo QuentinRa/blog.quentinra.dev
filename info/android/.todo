@@ -95,9 +95,10 @@ imageView.visibility = View.VISIBLE / GONE
 @GET("xxx/{id}")
 suspend fun xxx(@Path("id") id: Int): yyy
 https://square.github.io/retrofit/
-
 ----------
 App inspection (API 26+, Android Studio): inspect workers
+@WorkerThread
+@Throws(FileNotFoundException::class)
 -------------
 To fix this, you need to tell the RecyclerView not to clip the inner contents to the padding using android:clipToPadding attribute.
  This makes it draw the scrolling view in the padding area. Go back to layout/fragment_overview.xml. Add android:clipToPadding attribute
