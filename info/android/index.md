@@ -87,6 +87,16 @@ val shareIntent = ShareCompat.IntentBuilder.from(this)
                 .intent
 ```
 
+**Send an email**
+
+```kotlin
+val intent = Intent(Intent.ACTION_SEND)
+    .setType("text/plain")
+    .putExtra(Intent.EXTRA_SUBJECT, "xxx")
+    .putExtra(Intent.EXTRA_TEXT, "yyy")
+    .putExtra(Intent.EXTRA_EMAIL, "a@b.c")
+```
+
 **Run an intent**
 
 ```kotlin
@@ -101,6 +111,14 @@ try {
     startActivity(intent)
 } catch (ex: ActivityNotFoundException) {
     // use a toast / ...
+}
+```
+
+Or, you may check if your intent can be started, before starting it
+
+```kotlin
+if (packageManager.resolveActivity(intent, 0) != null) {
+    startActivity(intent)
 }
 ```
 </details>
@@ -147,6 +165,7 @@ Each View has attributes, or properties, for instance, you can define the text s
 
 * `padding`: gap between the border and the content outside (ex: 10dp)
 * `layout_margin`: gap with the outside (ex: 10dp)
+* `visibility`: View.VISIBLE / <s>View.INVISIBLE</s> / View.GONE
 
 **Accessibility (attributes)**
 
