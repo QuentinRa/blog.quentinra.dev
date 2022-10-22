@@ -1172,6 +1172,17 @@ class XXXWorker(c: Context, args: WorkerParameters) : Worker(c, args) {
     }
 }
 ```
+
+In Kotlin, you can use a [CoroutineWorker](https://developer.android.com/topic/libraries/architecture/workmanager/advanced/coroutineworker) to run async tasks.
+
+```Kotlin
+class XXXWorker(c: Context, args: WorkerParameters) : CoroutineWorker(c, args) {
+    override suspend fun doWork(): Result {
+        return Result.success()
+    }
+}
+``` 
+
 </div><div>
 
 * **WorkerRequest**: this is the request send to the work manager, with both the worker, and the **constraints** that may be applied
@@ -1496,11 +1507,11 @@ with(NotificationManagerCompat.from(context)) {
 
 <hr class="sl">
 
-## Random notes
-
-<div class="row row-cols-md-2"><div>
+## Nice, or bad notes
 
 **Disclaimer**: this section is the result of my own research for hours, without finding any better way to do what I had to do, so you should try to look for more suitable alternatives, if any.
+
+<div class="row row-cols-md-2"><div>
 
 * I had to update my view **every 60 seconds** after fetching the API, in an architecture MVVM, so in which I use a viewModel, **livedata** with DataBinding, AND this update had to be run only if the app is on the **foreground**
 
@@ -1565,10 +1576,81 @@ lifecycleScope.launch {
 ```
 </details>
 
-I didn't manage to do it with services because it did not seem possible, nor intended to, that services could communicate with a viewModel. There was also the fact that any solution was also using a "update loop with a while/delay", but none were shorter than the solution I found...
+I didn't manage to do it with services because it did not seem possible, nor intended to, that services could communicate with a viewModel. There was also the fact that any solution was also using an "update loop with a while/delay", but none were shorter than the solution I found... Especially, as I had to run the code only in the foreground.
 </div><div>
 
-...
+* I had to run some **code every 10 seconds**, **only when the app is in the background** (not closed, nor in the foreground), fetching data from the API, and showing notifications if any
+
+I used a sort of trick/workaround that is starting a Worker when the application is on the background, and stopping the worker when the application is back on the foreground.
+
+<details class="details-e">
+<summary>Starting the worker when the app is on the background</summary>
+
+Create a file (ex: MainApplication). This class, once linked to the AndroidManifest, will override the default application, which is the one starting activities, and stuff. By using a listener on its methods onStart, onStop, you have a more reliable way of knowing that the app is in the foreground/background ([source](https://stackoverflow.com/questions/3667022/checking-if-an-android-application-is-running-in-the-background#answer-48767617
+)).
+
+> If you did that in an activity, such methods are called every time the screen rotate... as per android activity lifecycle.
+
+```kotlin
+class MainApplication : Application(), DefaultLifecycleObserver {
+    private lateinit var workManager : WorkManager
+
+    override fun onCreate() {
+        super<Application>.onCreate()
+        ProcessLifecycleOwner.get().lifecycle.addObserver(this)
+        workManager = WorkManager.getInstance(applicationContext)
+    }
+
+    override fun onStart(owner: LifecycleOwner) {
+        // App in foreground
+        Log.d("YOUR_TAG", "in foreground")
+        workManager.cancelUniqueWork(UNIQUE_WORK_NAME)
+    }
+
+    override fun onStop(owner: LifecycleOwner) {
+        //App in background
+        Log.d("YOUR_TAG", "in background")
+        workManager.enqueueUniqueWork(
+            UNIQUE_WORK_NAME,
+            ExistingWorkPolicy.REPLACE,
+            OneTimeWorkRequest.from(XXXWorker::class.java)
+        )
+    }
+    
+    companion object {
+        const val UNIQUE_WORK_NAME = "toto"
+    }
+}
+```
+
+Edit AndroidManifest to indicate the app to use your application
+
+```xml
+<!-- add android:name linking to your newly create file -->
+<activity
+    android:name=".MainActivity"
+/>
+```
+</details>
+
+<details class="details-e">
+<summary>XXXWorker</summary>
+
+I used a CoroutineWorker to run async tasks, in an update loop. As the worker is cancelled when the app go back to the foreground, there is no need for a return/break.
+
+```Kotlin
+class XXXWorker(c: Context, args: WorkerParameters) : CoroutineWorker(c, args) {
+    override suspend fun doWork(): Result {
+        while (true) {
+            // do task
+            // every 10 seconds
+            delay(10000)
+        }
+    }
+}
+```
+
+</details>
 </div></div>
 
 <hr class="sr">
