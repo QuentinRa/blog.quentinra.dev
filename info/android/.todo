@@ -5,6 +5,7 @@
 => Layout Inspector
 => Advanced controls (charging...)
 => double-click on navbar
+=> App inspection (API 26+, Android Studio): inspect workers
 * Access context in viewModel, see WorkManager
 
 https://codelabs.developers.google.com/?cat=Android
@@ -68,15 +69,6 @@ val intent = Intent(Intent.ACTION_SEND)
 if (activity?.packageManager?.resolveActivity(intent, 0) != null) {
     startActivity(intent)
 }
-
-quantity strings
-<plurals name="xxx">
-    <item quantity="one">xxx</item>
-    <item quantity="other">xxs</item>
-</plurals>
-Use resources.getQuantityString with quantity="one"/"other"
-%1
-
 --------------
 Call executePendingBindings() after setting the property, which causes the update to execute immediately.
 This is important, because it forces the data binding to execute immediately,
@@ -90,13 +82,7 @@ fun bindRecyclerView(recyclerView: RecyclerView, data: List<MarsPhoto>?) {
 }
 
 imageView.visibility = View.VISIBLE / GONE
-
-@Query("id")
-@GET("xxx/{id}")
-suspend fun xxx(@Path("id") id: Int): yyy
-https://square.github.io/retrofit/
 ----------
-App inspection (API 26+, Android Studio): inspect workers
 @WorkerThread
 @Throws(FileNotFoundException::class)
 -------------

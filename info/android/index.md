@@ -909,6 +909,25 @@ init {
 ```
 
 </details>
+
+<details class="details-e">
+<summary>XXXApiService</summary>
+
+[Complete list](https://square.github.io/retrofit/)
+
+```kotlin
+// GET /route
+@GET("route")
+
+// GET /route?id=...
+@GET("route")
+suspend fun xxx(@Query("id") id: Int): XXX
+
+// get a route with injectable parameters
+@GET("parties/{id}")
+suspend fun xxx(@Path("id") id: Int): XXX
+```
+</details>
 </div><div>
 
 **Note**: if you are using localhost, for instance `localhost:3000`, then you must use `http://10.0.2.2:3000/`, as this address will redirect to localhost. You will also have to add `android:usesCleartextTraffic="true"` in your application attributes.
