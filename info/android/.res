@@ -38,3 +38,7 @@ https://developer.android.com/develop/ui
 https://developer.android.com/courses/android-basics-compose/course
 https://developer.android.com/courses/android-basics-kotlin/unit-5
 https://developer.android.com/codelabs/basic-android-kotlin-training-adaptive-layouts
+https://developer.android.com/courses/pathways/android-coroutines
+https://developer.android.com/courses/jetpack-compose/course
+https://developer.android.com/courses/android-basics-compose/course
+https://developer.android.com/courses/pathways/android-architecture

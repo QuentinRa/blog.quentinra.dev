@@ -1496,6 +1496,83 @@ with(NotificationManagerCompat.from(context)) {
 
 <hr class="sl">
 
+## Random notes
+
+<div class="row row-cols-md-2"><div>
+
+**Disclaimer**: this section is the result of my own research for hours, without finding any better way to do what I had to do, so you should try to look for more suitable alternatives, if any.
+
+* I had to update my view **every 60 seconds** after fetching the API, in an architecture MVVM, so in which I use a viewModel, **livedata** with DataBinding, AND this update had to be run only if the app is on the **foreground**
+
+<details class="details-e">
+<summary>Trying using flows (fail)</summary>
+
+*[See the flow documentation](https://developer.android.com/kotlin/flow)*
+
+Flows are methods that may return more than one result, something like a method having multiple returns, and each time you call it, the method will resume itself until the next return, if any. **A flow returns every time `emit(data)` is called.
+
+```kotlin
+fun periodicRefreshFlow() = flow {
+    emit(1)
+    delay(5000) // wait 5 seconds
+    emit(2)
+    // ...
+}
+```
+
+You would, according to StackOverflow, do something like that to run a flow every 60 seconds. While it works, and the result is a LiveData, so we can do as we always do, a flow would be cancelled everytime the app is put to the background, or simply by rotating the screen. We could patch that by giving a timeout to "asLiveData", but by doing that, the flow will continue to be run while the app is in the background, until the timeout that is, but a service would be more appropriate if that was the goal.
+
+```kotlin
+// implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
+val myLiveData : LiveData<Int> = flow {
+    while (true) {
+        val data : Int = 0 /* fetch from the api some data */
+        emit(data) // send
+        delay(60000) // wait 60 seconds
+    }
+}.asLiveData()
+```
+</details>
+
+<details class="details-e">
+<summary>Using coroutines (success)</summary>
+
+After failing successfully with flows, I through of applying the "while(true)" inside a coroutine. This was a failure too, because the coroutine was still executed while the app was in the background.
+
+But, I found a solution by extract the "while", and the logic of automatic refresh from the view model. First, do a method "refreshXXX" as usual.
+
+```kotlin
+fun refreshXXX() {
+        viewModelScope.launch {
+            // do your job as usual
+            val data = // fetch from the api
+            myLiveData.value = data
+        }
+}
+```
+
+Then, the caller will have to call `refreshXXX()` every 60 seconds. If this code is inside your main activity, then the update loop will be executed only if the activity is started ([source](https://stackoverflow.com/questions/60672406/how-to-use-coroutine-in-kotlin-to-call-a-function-every-second#answer-60673320)).
+
+```kotlin
+lifecycleScope.launch {
+    repeatOnLifecycle(Lifecycle.State.STARTED) {
+        while (true) {
+            viewModel.refreshXXX()
+            delay(60000)
+        }
+    }
+}
+```
+</details>
+
+I didn't manage to do it with services because it did not seem possible, nor intended to, that services could communicate with a viewModel. There was also the fact that any solution was also using a "update loop with a while/delay", but none were shorter than the solution I found...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sr">
+
 ## References
 
 * [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)
