@@ -1379,6 +1379,21 @@ workManager.cancelAllWorkByTag(TAG)
 ```
 
 </details>
+
+<details class="details-e">
+<summary>Periodic Request</summary>
+
+Everything is the same as a OneTimeRequest, except that they can take an interval which is the amount of time between two requests, that the work manager will try to enforce. **This interval should be at least 15 minutes**, for tasks less than 15 minutes, you should look for other alternatives such as "periodic" coroutines/flows, and services.
+
+```kotlin
+// every 15 hours
+val request = 
+    PeriodicWorkRequestBuilder<XXXWorker>(15, TimeUnit.HOURS)
+    .build()
+workManager.enqueueUniquePeriodicWork(UNIQUE_WORK_ID, ExistingPeriodicWorkPolicy.REPLACE, request)
+```
+
+</details>
 </div></div>
 
 <hr class="sr">
@@ -1467,13 +1482,16 @@ Then, you must indicate that you create an extension of application in your Andr
 Send
 
 ```kotlin
-// random unique id
+// unique id
 private val notificationId = 0
 
 with(NotificationManagerCompat.from(context)) {
     notify(notificationId, builder.build())
 }
 ```
+
+* [Create multi-lines notifications, or add images/...](https://developer.android.com/develop/ui/views/notifications/expanded)
+* [Do something if the user click on the notification](https://developer.android.com/develop/ui/views/notifications/navigation)
 </div></div>
 
 <hr class="sl">
