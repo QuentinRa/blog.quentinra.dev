@@ -6,6 +6,31 @@ There are multiple ways to develop apps for Android devices. This course will fo
 
 <hr class="sl">
 
+## Android studio
+
+<div class="row row-cols-md-2"><div>
+
+Life-saving shortcuts
+
+* <kbd>CTRL+P</kbd>: in `method(<here>)`, show the arguments of a method
+* <kbd>CTRL+SPACE</kbd>: manually trigger autocompletion
+* <kbd>SHIFT+SHIFT</kbd>: search for a method/class/...
+* Your usual <kbd>CTRL+C</kbd> (copy), <kbd>CTRL+V</kbd> (paste), <kbd>CTRL+A</kbd> (select all), <kbd>CTRL+F</kbd> (search)
+* <kbd>CTRL+D</kbd>: shortcut to duplicate a line, or the selection if any
+* <kbd>TAB</kbd>: in a context of autocompletion, trigger to use of the selected autocompletion fragment
+* <kbd>CTRL+(MOUSE LEFT)</kbd>: on a method, move to where this method is declared
+* <kbd>ALT+ENTER</kbd> ⭐: Android Studio will highlight in red, yellow, grey, or underline in green some things. Either hover the highlighted "things" to see why, or use this shortcut on it.
+  * **red**: an error
+  * **yellow**: a warning
+  * **grey**: something useless that should be removed
+  * **underlined green**: a typo
+</div><div>
+
+...
+</div></div>
+
+<hr class="sr">
+
 ## Activities, and Intents
 
 <div class="row row-cols-md-2 mx-0"><div>
@@ -126,7 +151,7 @@ if (packageManager.resolveActivity(intent, 0) != null) {
 > Nowadays, you should use Jetpack navigation component.
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Application life-cycle
 
@@ -154,7 +179,7 @@ Code in `onPause()` must be lightweight, because it will delay the other applica
 > **Note**: it should be highlighted, that rotating your devices will destroy, and create again your activity. In Android Studio, don't forget to enable device rotation to try it out.
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Views
 
@@ -283,7 +308,7 @@ RadioGroup is a ViewGroup used to ensure that only one RadioButton can be select
 </details>
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Layout Editor
 
@@ -306,6 +331,12 @@ RadioGroup is a ViewGroup used to ensure that only one RadioButton can be select
 **TIP**: you should rely on <kbd>CTRL+F</kbd> to search for attributes, or by clicking on the search icon at the top of the "Attributes" window.
 
 **TIP**: you will most likely have a time when you want to replace a view with another view. In the component tree, right-click on a view, and use "convert view". You could also manually get the job done by directly editing the `.xml`.
+
+<hr class="sr">
+
+## Material Design
+
+...
 
 <hr class="sl">
 
