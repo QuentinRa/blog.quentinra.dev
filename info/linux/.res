@@ -10,6 +10,7 @@ EOF)
 subshell
 https://wonderfall.space/linux-securite/
 Learn ELF
+CRON `cron` process to schedule tasks, with `crontabs` (file) / Automated tasks in Linux / https://crontab-generator.org/ / https://crontab.guru/ / edit `crontab -e`
 
 Blog
 https://linuxhandbook.com/

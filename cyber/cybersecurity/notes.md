@@ -28,8 +28,6 @@ Other
 
 * Attack a vulnerable machine, scan the network to discover more vulnerable machines.
 
-* find "password" in some conversations > try to get access to some stuff with it
-
 * Intrusion Detection System (IDS) is a system that detects unauthorised network and system intrusions. Examples include detecting unauthorised devices connected to the local network and unauthorised users accessing a system or modifying a file.
 
 <hr class="sep-both">
@@ -37,23 +35,6 @@ Other
 ## Tools
 
 * The [SecLists GitHub Repository](https://github.com/danielmiessler/SecLists/) contains useful lists of usernames/passwords, payloads, urls, ...
-
-<hr class="sep-both">
-
-## Linux
-
-* python3 -m  http.server: start web server, was used to open a "root" file without perms
-* `cron` process to schedule tasks, with `crontabs` (file)
-  * ...
-  * Automated tasks in Linux
-  * https://crontab-generator.org/
-  * https://crontab.guru/
-  * edit `crontab -e`
-* Logs
-  * `/var/log`
-    * ufw: firewall
-    * apache
-    * fail2ban
 
 <hr class="sep-both">
 
