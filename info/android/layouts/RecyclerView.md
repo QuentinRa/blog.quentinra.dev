@@ -117,6 +117,10 @@ class DummyAdapter(private val items: List<Any>) : RecyclerView.Adapter<DummyAda
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         // todo: your binding
         holder.myButton.text = items[position].toString()
+        // if you are using data binding (XXXBinding)
+        // try using XXXBinding#executePendingBindings()
+        // to update the view now, allowing the recycler view
+        // to compute correct size ajustement
     }
 
     override fun getItemCount(): Int {

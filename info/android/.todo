@@ -58,17 +58,8 @@ On an action, there is an attribute "popUpTo". It means that
 destination in the stack will be popped off until the last one is the given one.
 You may want to even remove the given one, by setting "popUpToInclusive" to true.
 For instance, if you start wit A, go to D, and go back to A with popUpTo, you will have AA.
---------------
-Call executePendingBindings() after setting the property, which causes the update to execute immediately.
-This is important, because it forces the data binding to execute immediately,
-which allows the RecyclerView to make the correct view size measurements.
-Situation: using images.
 ----------
 @WorkerThread
 @Throws(FileNotFoundException::class)
 -------------
-To fix this, you need to tell the RecyclerView not to clip the inner contents to the padding using android:clipToPadding attribute.
- This makes it draw the scrolling view in the padding area. Go back to layout/fragment_overview.xml. Add android:clipToPadding attribute
- for the RecyclerView, set it to false.
---------
 _status.value = MarsApiStatus.LOADING
