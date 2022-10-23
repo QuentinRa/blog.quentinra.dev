@@ -309,33 +309,6 @@ One level above binary (010010...), we have a language called assembly which is 
 * `-top-ports 20` (with UDP)
 
 <details class="details-e">
-<summary>There are 6 kind of scans, called switches <code>-s</code></summary>
-<div class="row row-cols-md-2"><div>
-</div><div>
-
-The 3 scans below are less used, so less likely to be detected, and blocked. They are even stealthier than SYN. The problem is that Windows <small>(and some others)</small>, are responding RST (closed) to such switches, because they are sending malformed packet.
-
-* **TCP NULL scans**
-
-```bash
-$ sudo nmap localhost -sN
-```
-
-* **TCP FIN scans**
-
-```bash
-$ sudo nmap localhost -sF
-```
-
-* **TCP Xmas scans**
-
-```bash
-$ sudo nmap localhost -sX
-```
-</div></div>
-</details>
-
-<details class="details-e">
 <summary>Other arguments</summary>
 
 <div class="row row-cols-md-2"><div>
