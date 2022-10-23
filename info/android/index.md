@@ -134,7 +134,9 @@ if (packageManager.resolveActivity(intent, 0) != null) {
 
 ![android_application_lifecycle](_images/android_application_lifecycle.png)
 
-> **Note**: it should be highlighted again, that rotating your devices will destroy, and create again your app. On Android Studio, don't forget to enable device rotation to try it out.
+> Activities are started by the Application, which is the class that the user may implement, for instance, if there is a need to run code when the application starts/stop.
+
+> The Android/Activity **back-stack** refer to the fact that each new activity in you application is put on top of a stack. The activity at the top is the one displayed. If you press "back", then you will pop this activity from the stack, and move to the new head of the stack. If the stack is empty, then you go back to the home.
 </div><div>
 
 Android life-cycle is a bit complex. When starting an app, you go from Initialized, to Created, then Started, then Resumed.
@@ -148,6 +150,8 @@ If Android need resources, then your app may be destroyed. If there are a lot of
 You can use `onCreate(Bundle?)`, `onRestoreInstanceState(Bundle)`, to load saved data, and `onSaveInstanceState(Bundle)` to save data. A "bundle" is a **small, in-memory** dictionary, in which you can save a bit of data, that will be reloaded when the app is created, or started again.
 
 Code in `onPause()` must be lightweight, because it will delay the other application that is showing up in the front screen.
+
+> **Note**: it should be highlighted, that rotating your devices will destroy, and create again your activity. In Android Studio, don't forget to enable device rotation to try it out.
 </div></div>
 
 <hr class="sl">
@@ -381,7 +385,7 @@ val myButton: Button = findViewById(R.id.myButton)
 </details>
 
 <details class="details-e">
-<summary>[new] view binding (alternative to findViewById)</summary>
+<summary>[new] view A (alternative to findViewById)</summary>
 
 You first need to add `viewBinding` in build.gradle, in the bloc "Android", and reload the project. It will create an object that reference all views with an id. 
 
@@ -849,14 +853,21 @@ You could add this code wherever you want, such as in the associated Fragment. `
 ```kotlin
 companion object {
     @BindingAdapter("app:xxx") @JvmStatic
-    fun setText(textView: TextView, value: Type) {
+    fun bindXXXText(textView: TextView, value: Type) {
         textView.text = ...
     }
 
+    @BindingAdapter("app:data")
+    fun bindRecyclerView(recyclerView: RecyclerView, data: List<XXX>?) {
+        val adapter = recyclerView.adapter as XXXAdapter
+        adapter.submitList(data)
+    }
+
+    // optional, usually not needed
     @InverseBindingAdapter(attribute = "app:xxx", event = "android:textAttrChanged")
     @JvmStatic
     fun getText(textView: TextView) = textView.text.toString()
-    }
+}
 ```
 
 In your XML, you will use this newly created attribute, that is taking your value that you could "display as if", execute the code you wrote, which should display the value you couldn't before.
@@ -1202,6 +1213,12 @@ A set of UI components to do "Options Menus, bottom nav, nav view, nav drawer, a
 val bottomNavigationView = binding.bottomNavigationView
 bottomNavigationView?.setupWithNavController(findNavController())
 ```
+</details>
+
+<details class="details-e">
+<summary>Navigation back-stack</summary>
+
+...
 </details>
 </div></div>
 

@@ -63,12 +63,6 @@ Call executePendingBindings() after setting the property, which causes the updat
 This is important, because it forces the data binding to execute immediately,
 which allows the RecyclerView to make the correct view size measurements.
 Situation: using images.
-
-@BindingAdapter("listData")
-fun bindRecyclerView(recyclerView: RecyclerView, data: List<MarsPhoto>?) {
-    val adapter = recyclerView.adapter as PhotoGridAdapter
-    adapter.submitList(data)
-}
 ----------
 @WorkerThread
 @Throws(FileNotFoundException::class)

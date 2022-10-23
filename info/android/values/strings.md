@@ -135,4 +135,6 @@ val xxx = formatter.format(calendar.time)
 </div><div class="align-self-center">
 
 See [SimpleDateFormat](https://developer.android.com/reference/java/text/SimpleDateFormat#date-and-time-patterns).
+
+For instance: `ss`, "s" means "seconds", and because there are 2,  it means "use 2 digits" <small>(such as "01" instead of "1")</small>
 </div></div>
