@@ -309,15 +309,6 @@ Maybe not really useful, but with `bash script.sh`, you can execute without havi
 
 <hr class="sep-both">
 
-## OSINT
-
-* https://osintframework.com/
-* https://medium.com/the-first-digit/osint-how-to-find-information-on-anyone-5029a3c7fd56
-* https://github.com/Datalux/Osintgram / https://kali-linuxtr.net/osintgram-a-osint-tool-on-instagram ?
-* Maltego: https://www.crackitdown.com/2018/07/maltego-full-user-guide-and-tutorial.html
-
-<hr class="sep-both²">
-
 ## Bunch
 
 * https://wiki.owasp.org/index.php/OWASP_Testing_Guide_v4_Table_of_Contents
