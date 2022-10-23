@@ -81,6 +81,70 @@ One last very useful thing, is that you can press <kbd>CTRL+Q</kbd>, or hover a 
 
 <hr class="sr">
 
+## Application Architecture
+
+<div class="row row-cols-md-2"><div>
+
+**MVVM**: Model-View-ViewModel, is an architecture by opposition to the MVC architecture, in which the ViewModel is updating the view, when the Model changed. In Android,
+
+The Controller is responsible for rendering the UI, and listening to events. Using the full application of MVVM
+
+* A LiveData is a variable storing a value, and calling an observer when this value changed
+* A repository is a class that is fetching data from an API, or a local database (see Room)
+* A ViewModel is a class providing access to the LiveData to other classes. It will use the repository to update the value stored in a LiveData
+
+Then, using **Data binding**, you can directly use your LiveData in your XML, the file in which you create your view, and if the LiveData value is updated, so will your view.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sl">
+
+## XML
+
+<div class="row row-cols-md-2"><div>
+
+Aside from your code, almost every file is a XML file. This is a sort of HTML with tags `<MyTag></MyTag>`, or `<MyTag />`, in which you can add attributes  `<ImageView src="/path/to/my/image" />`.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".controller.MainActivity" >
+
+  <!-- comment -->
+</FrameLayout>
+```
+
+> **The root tag** is the one in which every other will be. It's noticeable because of the additional attributes "xmlns:", and "tools:context".
+
+</div><div>
+
+* Every tag must have the attributes `android:layout_width`, and `android:layout_height`.
+
+* Attributes are coming from a namespace, which needs to be imported. If you are using the LayoutEditor, this is done behind the scene for you. Anyway, if you want to use `android:`, then the root tag must have the attribute `xmlns:android="http://schemas.android.com/apk/res/android"`.
+
+* The `tools:context` is pointing to the class which will use this layout.
+
+<hr>
+
+The file **AndroidManifest.xml** is used to make your application. It is storing 
+
+* the permissions given to your app, 
+* the features requested,
+* the list of activities = the screens of your app,
+* the main activity,
+* the services used,
+* ...
+
+</div></div>
+
+<hr class="sr">
+
 ## Activities, and Intents
 
 <div class="row row-cols-md-2 mx-0"><div>
@@ -386,7 +450,12 @@ RadioGroup is a ViewGroup used to ensure that only one RadioButton can be select
 
 ## Material Design
 
-...
+Material design is a library of pre-made components. Google recommends to use Material UI components as much as possible.
+The list [of Material components for Android can be found here](https://material.io/components?platform=android).
+
+* Text field: `TextInputLayout` (see [text field](https://material.io/components/text-fields/android#using-text-fields))
+* Switch: `SwitchMaterial` (create a switch, change the type in the .xml)
+* EditText: `TextInputLayout`. There is a builtin feature to display errors (see `error`, and `isErrorEnabled`)
 
 <hr class="sl">
 
@@ -1838,14 +1907,11 @@ class XXXWorker(c: Context, args: WorkerParameters) : CoroutineWorker(c, args) {
 <div class="row row-cols-md-2"><div>
 
 * [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)
-
-Useful links
-
 * [Android docs](https://developer.android.com/docs)
 * [Android teach](https://developer.android.com/teach)
 * [Android guides](https://developer.android.com/guide)
 * [Android UI](https://developer.android.com/develop/ui)
-</div><div>
+* [Android CodeLabs](https://codelabs.developers.google.com/?cat=Android)
 
 **Todo**
 
@@ -1855,6 +1921,14 @@ Useful links
 * [Android coroutines](https://developer.android.com/courses/pathways/android-coroutines)
 * [Jetpack Compose](https://developer.android.com/courses/jetpack-compose/course)
 * [Android architecture](https://developer.android.com/courses/pathways/android-architecture)
+</div><div>
+
+Other topics not covered
+
 * Modern Android Development (MAD)
+* Android Tests + Advanced testing
 * Deep Link
+* Talkback
+* Tint/Dark mode
+* Advanced Data Binding, Recommanded App architecture
 </div></div>

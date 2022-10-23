@@ -209,3 +209,4 @@ fun Class.X() {
 ---------
 for (j in max downTo minExcluded)
 for (j in min until maxExcluded)
+@Throws(FileNotFoundException::class)
