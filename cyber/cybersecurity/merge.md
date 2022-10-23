@@ -306,10 +306,6 @@ One level above binary (010010...), we have a language called assembly which is 
 
 ## Nmap
 
-**nmap** ([nmap book](https://nmap.org/book/)) is used to detect services used by a server, such as SSH, FTP, HTTP/HTTPS... Each service is associated with a port, such as `21` for FTP, but they may be changed. A port may be filtered, meaning that a firewall is preventing you to find if a port is open, or closed.
-
-> There is an interface to `nmap` called [ZenMap](https://nmap.org/zenmap/).
-
 <details class="details-e">
 <summary>There are 6 kind of scans, called switches <code>-s</code></summary>
 <div class="row row-cols-md-2"><div>

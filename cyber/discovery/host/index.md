@@ -2,7 +2,7 @@
 
 ...
 
-<hr class="sr">
+<hr class="sl">
 
 ## Nessus vulnerability scanner
 
@@ -31,4 +31,22 @@ Once you are logged on the website, you can create new scans.
     * In Advanced, you may go for a "low bandwidth scan"
     * **Launch**: explore vulnerabilities to see results
 * **Web application test**: see vulnerabilities in your web app
+</div></div>
+
+<hr class="sr">
+
+## nmap
+
+<div class="row row-cols-md-2"><div>
+
+**nmap** ([nmap book](https://nmap.org/book/)) is a tool to detect hosts, their open ports, and eventually run script trying to go more information, or even exploiting a vulnerability to gain access.
+
+> There is an interface to `nmap` called [ZenMap](https://nmap.org/zenmap/).
+</div><div>
+
+A port is used by a protocol such as FTP (File Transfer Protocol) to transfer data. There are $2^{16}$ ports, while the first 1024 are restricted, and can only be used by standard protocols. A port can be changed. Look for **vulnerable ports** on Google. A port can be
+
+* `open`: can be reached
+* `filtered`: no response, usually meaning that it's filtered by a firewall
+* `closed`: cannot be reached
 </div></div>
