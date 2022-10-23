@@ -192,3 +192,24 @@ $ nmap scanme.nmap.org --script=lua_script
 $ nmap scanme.nmap.org --script=s1,s2 --script-args s1.key=value
 ```
 </div></div>
+
+<hr class="sl">
+
+## MASSCAN: Mass IP port scanner
+
+<div class="row row-cols-md-2"><div class="align-self-center">
+
+* `masscan` is a fast, quite aggressive, port scanner.
+* [Masscan GitHub](https://github.com/robertdavidgraham/masscan)
+* Most options are the same as in nmap (`masscan --nmap`)
+* It uses a TCP SYN Scan.
+</div><div>
+
+```bash
+$ masscan scanme.nmap.org -p21
+$ masscan scanme.nmap.org -p21,22
+$ masscan scanme.nmap.org -p21-25
+$ masscan scanme.nmap.org ‐‐top-ports 100
+$ masscan scanme.nmap.org ‐‐top-ports 100 --rate 1000
+```
+</div></div>

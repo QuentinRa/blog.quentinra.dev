@@ -57,16 +57,6 @@ Other
 
 <hr class="sep-both">
 
-## nmap
-
-Masscan
-
-On a side note, Masscan uses a similar approach to discover the available systems. However, to finish its network scan quickly, Masscan is quite aggressive with the rate of packets it generates.
-
-* There is summary: https://tryhackme.com/room/nmap01
-
-<hr class="sep-both">
-
 ### Samba
 
 "Samba is the standard Windows interoperability suite of programs for Linux and Unix. It allows end users to access and use files, printers and other commonly shared resources on a companies intranet or internet. It's often referred to as a network file system.
