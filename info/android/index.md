@@ -672,6 +672,14 @@ implementation "androidx.fragment:fragment-ktx:1.5.3"
 ```
 
 > Architectural note: this class should handle the data, along decision-making logic about that data, and helpers.
+
+* Handling errors
+
+If an error occurred when fetching the API, you could create a LiveData that will be observed by others, so that they can show an error messages.
+
+* Handle loading/...
+
+Do the same as you would when handling errors. You should use an enum class with a status, such as "LOADING", "SUCCESS", "FAILED"..
 </div><div>
 
 * Create a view model class
@@ -1218,7 +1226,17 @@ bottomNavigationView?.setupWithNavController(findNavController())
 <details class="details-e">
 <summary>Navigation back-stack</summary>
 
-...
+As much as an Application has a "back" stack with Activity, each Activity has a "back" stack for every fragment. As for activities, the top fragment is the one shown, and pressing back will pop up this fragment, and load the new top fragment. If this was the last, then the activity will be pop-up instead.
+
+Within the Navigation Graph, there are attributes "popUpTo", and "popUpToInclusive". They are used to manually pop up fragments when moving to another fragment. It could be useful if you are going back to your starting fragment, and you want to pop up every fragment on the way, so that the user can't press "back", and cancel its action of moving to the starting fragment.
+
+* Imagine a stack of fragments `ABCDE`, with `E` on top
+* `E` navigate to `A` would be that we will have `ABCDEA`
+* Pressing "back", the user will be back on `E`
+* Instead, you may want to pop up every fragment, until "A": **popUpTo: A**
+* Now, `E` navigate to `A` would be that we will have `AA`
+* The job was done, but since `A` isn't included in the "pop up" operation, there is two '`A`'. You could fix that with `popUpToInclusive=true`
+* Now, `E` navigate to `A` would be that we will only have `A`
 </details>
 </div></div>
 
@@ -1736,4 +1754,26 @@ class XXXWorker(c: Context, args: WorkerParameters) : CoroutineWorker(c, args) {
 
 ## References
 
+<div class="row row-cols-md-2"><div>
+
 * [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)
+
+Useful links
+
+* [Android docs](https://developer.android.com/docs)
+* [Android teach](https://developer.android.com/teach)
+* [Android guides](https://developer.android.com/guide)
+* [Android UI](https://developer.android.com/develop/ui)
+</div><div>
+
+**Todo**
+
+* [Android compose](https://developer.android.com/courses/android-basics-compose/course)
+* [Android Basics: Room](https://developer.android.com/courses/android-basics-kotlin/unit-5)
+* [Android Basics: Adaptive Layouts](https://developer.android.com/codelabs/basic-android-kotlin-training-adaptive-layouts), [twopane](https://developer.android.com/develop/ui/views/layout/twopane), [cardview](https://developer.android.com/develop/ui/views/layout/cardview)
+* [Android coroutines](https://developer.android.com/courses/pathways/android-coroutines)
+* [Jetpack Compose](https://developer.android.com/courses/jetpack-compose/course)
+* [Android architecture](https://developer.android.com/courses/pathways/android-architecture)
+* Modern Android Development (MAD)
+* Deep Link
+</div></div>

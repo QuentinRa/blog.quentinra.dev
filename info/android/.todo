@@ -1,4 +1,3 @@
-* Pick android version
 * Switch Project View / IntelliJ-features
 => download sources
 * Device emulator
@@ -11,8 +10,8 @@
 https://codelabs.developers.google.com/?cat=Android
 
 ------- Material -------
-
-Material design is a library of pre-made components. Google recommends to use Material UI components as much as possible. The list [of Material components for Android can be found here](https://material.io/components?platform=android).
+Material design is a library of pre-made components. Google recommends to use Material UI components as much as possible.
+The list [of Material components for Android can be found here](https://material.io/components?platform=android).
 
 * Text field: `TextInputLayout` (see [text field](https://material.io/components/text-fields/android#using-text-fields))
 * Switch: `SwitchMaterial` (create a switch, change the type in the .xml)
@@ -25,7 +24,6 @@ xxx.isErrorEnabled = true
 style="?attr/materialButtonOutlinedStyle"
 
 https://m3.material.io/design/material-studies/shrine.html
-
 ------- Icons --------
 
 different manufacturers may show app icons in a different shape than
@@ -43,23 +41,6 @@ https://developer.android.com/codelabs/basic-android-kotlin-training-display-lis
 3 => easy way to import icon
 
 https://developer.android.com/reference/com/google/android/material/card/MaterialCardView
-
-------------------
-A task is a collection of activities
-Activities are arranged in a stack, known as a back stack
-where each new activity the user visits gets pushed onto the back stack for the task
-back = remove act on top and destroy it "popping an activity off the stack"
-if no more, back to home
-
-There is also a fragment stack in an activity
-Navigation library
-
-On an action, there is an attribute "popUpTo". It means that
-destination in the stack will be popped off until the last one is the given one.
-You may want to even remove the given one, by setting "popUpToInclusive" to true.
-For instance, if you start wit A, go to D, and go back to A with popUpTo, you will have AA.
 ----------
 @WorkerThread
 @Throws(FileNotFoundException::class)
--------------
-_status.value = MarsApiStatus.LOADING
