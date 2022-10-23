@@ -27,13 +27,20 @@
         "hidden": false
       }
     ],
-    "Web": [
+    "Server": [
       {
         "tag": "web/website/index.md",
         "name": "Exploit website",
         "desc": "",
         "icon": "",
         "hidden": true
+      },
+      {
+        "tag": "server/database/index.md",
+        "name": "Exploit database",
+        "desc": "",
+        "icon": "",
+        "hidden": false
       },
       {
         "tag": "web/server/index.md",
@@ -54,13 +61,6 @@
       {
         "tag": "random/crack_password/index.md",
         "name": "Crack passwords",
-        "desc": "",
-        "icon": "",
-        "hidden": false
-      },
-      {
-        "tag": "random/index.md",
-        "name": "Random exploits",
         "desc": "",
         "icon": "",
         "hidden": false

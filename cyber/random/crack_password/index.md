@@ -1,4 +1,4 @@
-# Crack (weak) passwords
+# Crack (insecure) passwords
 
 <div class="row row-cols-md-2"><div>
 

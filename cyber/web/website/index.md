@@ -1,3 +1,0 @@
-# Exploit a website
-
-...
