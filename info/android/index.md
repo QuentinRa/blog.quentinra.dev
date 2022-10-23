@@ -49,6 +49,30 @@ In the Android view, below all your files, there is your **build.gradle (module)
 
 ![gradle](_images/gradle.png)
 </details>
+
+<details class="details-n">
+<summary><b>Device Emulator</b>: emulate an android device</summary>
+
+<div class="row"><div class="col-md-3">
+
+![device_manager](_images/device_manager.png)
+</div><div class="col-md-9">
+
+You can create a new virtual device in the device manager.
+
+As the bottom of the right-panel, there is a vertical tab "Emulator" in which your running emulated device will be shown.
+</div></div>
+
+Right-above this tab, there is a tab to browse the files on your device. You may have to right-click on a folder > refresh, if you don't see changes that were made by your application recently.
+
+In the Top-Right corner, there is a tab "Layout inspector", allowing, as the name imply, to inspect the views, and the layout, of your running application.
+
+You can control your device use these buttons, if there is a need. Note that the "..." menu is useful if you need to do things such as setting your phone state as "charging", or things like that.
+
+![emulated_device_controls](_images/emulated_device_controls.png)
+</details>
+
+> **Note**: you will usually resize windows, such as resizing your emulator window, as sometimes you want to have it side-by-side, and some other time, you want to have it taking the whole screen. It doesn't work everytime, but by double-clicking on the top bar on a window, will expand/reduce it's size, as it does with other windows (app/file explorer/...).
 </div></div>
 
 <hr class="sr">

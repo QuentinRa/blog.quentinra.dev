@@ -1,8 +1,4 @@
 => download sources
-* Device emulator
-=> Layout Inspector
-=> Advanced controls (charging...)
-=> double-click on navbar
 => App inspection (API 26+, Android Studio): inspect workers
 * Access context in viewModel, see WorkManager
 
