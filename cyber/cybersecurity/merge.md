@@ -307,67 +307,12 @@ One level above binary (010010...), we have a language called assembly which is 
 ## Nmap
 
 * `-top-ports 20` (with UDP)
-
-<details class="details-e">
-<summary>Other arguments</summary>
-
-<div class="row row-cols-md-2"><div>
-
-You can give an IP, a name, and even a range of IPs to nmap.
-
-```bash
-$ nmap 127.0.0.1
-$ nmap 192.168.0.1-254 # from 1 to 254
-$ nmap 192.168.0.0/24 # same
-$ nmap google.fr
-```
-
-**TIP**: use at least `-vv` to add a level-2 verbosity.
-
-```bash
-$ nmap localhost -vv
-```
-
-Check if a host is up. Note that **Windows with its default firewall is blocking every ICMP request**, so ping is useless. If you are against such a host, use `-Pn` in every request.
+* `-sn` not scan any port (ICMP echo packets/sudo ARP on local networks)
+* Check if a host is up. Note that **Windows with its default firewall is blocking every ICMP request**, so ping is useless. If you are against such a host, use `-Pn` in every request.
 
 ```bash
 $ nmap localhost -sn
 ```
-
-Find...
-
-```bash
-$ nmap localhost -sL # hosts to scan
-$ nmap localhost -sV # services, version
-$ nmap localhost -O # OS
-$ nmap localhost -A # -O, -sV, script scanning, and traceroute
-```
-</div><div>
-
-Select which ports to scan
-
-```bash
-$ nmap localhost -p 22
-$ nmap localhost -p 22,23
-$ nmap localhost -p 0-65535
-$ nmap localhost -p- # same :)
-```
-
-To reduce the risk of being detected, you can set some timing starting with 0=passive=slow, and up to 5=aggressive=fast.
-
-```bash
-$ nmap localhost -T0
-```
-
-Store results
-
-```bash
-$ nmap localhost > output_localhost
-# generate .nmap=-oN, .gnmap=-oG, and .xml=oX 
-$ nmap localhost -oA output_localhost
-```
-</div></div>
-</details>
 
 <details class="details-e">
 <summary>Nmap Scripting Engine (NSE)</summary>
