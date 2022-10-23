@@ -26,7 +26,29 @@ Life-saving shortcuts
   * **underlined green**: a typo
 </div><div>
 
-...
+<details class="details-n">
+<summary><b>Local History</b>: automatic backup of your files</summary>
+
+You can right-click on a file/folder, and use Local History to see any changes made on this folder/file. It useful if, at some point, you removed something, but can't go back...
+
+![local_history](_images/local_history.png)
+</details>
+
+<details class="details-n">
+<summary><b>Project view</b>: why some files aren't shown, or the file structure is not how it is on the disk?</summary>
+
+Android Studio use file structures, in order to show a project in a simplified, nicer, way. If you are looking for some file that aren't shown, simply change the file structure.
+
+![project_view](_images/project_view.png)
+</details>
+
+<details class="details-n">
+<summary><b>Gradle scripts</b>: add dependencies</summary>
+
+In the Android view, below all your files, there is your **build.gradle (module)**. This is the file in which you will add dependencies later. Every time you can it, a message on top of the file will pop up asking you to "sync" the project, just do it.
+
+![gradle](_images/gradle.png)
+</details>
 </div></div>
 
 <hr class="sr">
