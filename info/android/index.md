@@ -70,10 +70,14 @@ In the Top-Right corner, there is a tab "Layout inspector", allowing, as the nam
 You can control your device use these buttons, if there is a need. Note that the "..." menu is useful if you need to do things such as setting your phone state as "charging", or things like that.
 
 ![emulated_device_controls](_images/emulated_device_controls.png)
+
+For applications loaded on a device with an API of 26, or higher, you can also inspect workers, the database, etc. See the tab "App inspection".
 </details>
 
 > **Note**: you will usually resize windows, such as resizing your emulator window, as sometimes you want to have it side-by-side, and some other time, you want to have it taking the whole screen. It doesn't work everytime, but by double-clicking on the top bar on a window, will expand/reduce it's size, as it does with other windows (app/file explorer/...).
 </div></div>
+
+One last very useful thing, is that you can press <kbd>CTRL+Q</kbd>, or hover a method, to see its documentation. Unfortunately, by default, sources aren't downloaded, so you will basically see nothing useful. To download sources, the easiest way is using <kbd>CTRL+(MOUSE LEFT)</kbd> on a method/class from the Android SDK, to navigate to its source. Then, on the top of the file, you will be prompted to download sources as they are missing. Just do it, and you are ready for an enhanced experience aboard IntelliJ-based IDE: Android Studio.
 
 <hr class="sr">
 

@@ -1,5 +1,3 @@
-=> download sources
-=> App inspection (API 26+, Android Studio): inspect workers
 * Access context in viewModel, see WorkManager
 
 https://codelabs.developers.google.com/?cat=Android
