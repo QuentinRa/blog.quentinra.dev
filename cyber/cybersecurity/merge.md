@@ -306,37 +306,11 @@ One level above binary (010010...), we have a language called assembly which is 
 
 ## Nmap
 
+* `-top-ports 20` (with UDP)
+
 <details class="details-e">
 <summary>There are 6 kind of scans, called switches <code>-s</code></summary>
 <div class="row row-cols-md-2"><div>
-
-* **TCP scan** (3-ways handshake)
-
-Default scan. Request a port with SYN. Receive RST if closed. Receive SYN/ACK if closed. Answer back ACK if open. Usually blocked by firewalls.
-
-```bash
-$ nmap localhost
-$ nmap localhost -sT
-```
-
-* **Syn "Half-open"/"Stealth" Scan**
-
-Default scan if root. Need sudo/root. Same as TCP, but don't answer back ACK, meaning that the server will believe that your port was closed. Slightly faster than TCP.
-
-```bash
-$ sudo nmap localhost
-$ sudo nmap localhost -sS
-```
-
-* **UDP Scan**
-
-Send a message asking if a port is open. If there is no response, then the port is assumed to be "open|filtered", otherwise, the target may send a packet (ping/ICMP) with a message that the port is closed. Because there are multiple tries, it's quite slower than TCP.
-
-```bash
-$ sudo nmap localhost -sU
-# to avoid checking many ports
-$ sudo nmap localhost -sU -top-ports 20
-```
 </div><div>
 
 The 3 scans below are less used, so less likely to be detected, and blocked. They are even stealthier than SYN. The problem is that Windows <small>(and some others)</small>, are responding RST (closed) to such switches, because they are sending malformed packet.

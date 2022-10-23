@@ -432,3 +432,9 @@ https://thehackernews.com/2019/10/linux-sudo-run-as-root-flaw.html
   * MS09-050
   * search exploits 09-050
 * https://tryhackme.com/resources/blog/metasploit
+
+<hr class="sep-both">
+
+## F
+
+* `-j REJECT --reject-with tcp-reset`
