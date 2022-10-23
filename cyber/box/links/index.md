@@ -61,20 +61,16 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 
 CVEs take the form: CVE-YEAR-ID.
 
+<div class="row row-cols-md-2"><div>
+
 * [exploit-db.com](https://www.exploit-db.com/), and the command [searchsploit](https://github.com/offensive-security/exploitdb). Useful to find exploits, and test them.
+
 * [nvd.nist.gov](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&search_type=all)
+
+* [attackerkb.com](https://attackerkb.com/): the community is giving reviews on CVEs.
+</div><div>
+
 * [cve.mitre.org](https://cve.mitre.org/cve/), and their new website: [cve.org](https://www.cve.org/). This is basically of big list of CVE, regardless of them being exploitable, or not.
-* [attackerkb.com](https://attackerkb.com/)
 
-One special mention to **Snyk**: [security.snyk.io](https://security.snyk.io/), because there website is, in my opinion, way better than others.
-
-<hr class="sr">
-
-## Looking for someone
-
-You may want to look for other persons having the same  username, or searching who a person is from an image... These links may help
-
-* [osintframework](https://osintframework.com/)
-* [sherlock](https://sherlock-project.github.io/) and [tutorial](https://www.geeksforgeeks.org/sherlock-hunt-username-on-social-media-kali-linux-tool/)
-* [maltego](https://www.maltego.com/) and [help](https://en.kali.tools/?p=24)
-* [spiderfoot](https://www.spiderfoot.net/) and [help](https://www.hackingloops.com/spiderfoot/)
+* [security.snyk.io](https://security.snyk.io/): the interface is nicer,  through it's not as generic / covering as much CVEs as others.
+</div></div>
