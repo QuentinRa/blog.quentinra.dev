@@ -164,7 +164,8 @@ CVEs take the form: CVE-YEAR-ID.
 * [CrackItDown](https://web.archive.org/web/20210923121550/https://www.crackitdown.com/) (website dead, still available via the wayback machine)
 </div><div>
 
-Lesser blogs
+Small blogs
 
-*[TheDutchHacker](https://www.thedutchhacker.com/)
+* [TheDutchHacker](https://www.thedutchhacker.com/)
+* [0xrick](https://0xrick.github.io/categories/)
 </div></div>

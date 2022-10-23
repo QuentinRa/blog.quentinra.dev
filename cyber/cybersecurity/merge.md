@@ -172,13 +172,17 @@ $ smbget -R  smb://IP/share_name
 * <i class="bi bi-info-square" style="background:#7cfc00"></i> Try connecting without password
 * <i class="bi bi-info-square" style="background:#7cfc00"></i> Attempt to list shares using nmap `nmap -p 445 –script=smb-enum-shares.nse,smb-enum-users.nse ip`
 
+"Samba is the standard Windows interoperability suite of programs for Linux and Unix. It allows end users to access and use files, printers and other commonly shared resources on a companies intranet or internet. It's often referred to as a network file system.
+
+Samba is based on the common client/server protocol of Server Message Block (SMB). SMB is developed only for Windows, without Samba, other computer platforms would be isolated from Windows machines, even if they were part of the same network."
+
+* Using nmap we can enumerate a machine for SMB shares:
+  * port 445, and 139
+  * `nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse <ip> -vv`
+* `smbclient //<ip>/anonymous` login without password
+* You may find useful information
+
 <hr class="sep-both">
-
-# Database Security
-
-This is a list of attacks that are usually done either on a database, albeit they may be started from another services such as an API, or a website. The main entry, is as one could expect, SQL injections.
-
-<hr class="sl">
 
 ## SQL injections
 
@@ -304,8 +308,6 @@ One level above binary (010010...), we have a language called assembly which is 
 
 <hr class="sep-both">
 
-<hr class="sl">
-
 ## Domain Name Hijacking via Cache poisoning
 
 <div class="row row-cols-md-2"><div>
@@ -328,3 +330,9 @@ A way to patch this is for the DNS to have a good entropy when generating Ids. [
 
 This video is a bit long, but explain better [the Dan Kaminsky attack](https://www.youtube.com/watch?v=qftKfFVHVuY).
 </div></div>
+
+<hr class="sep-both">
+
+### Steganography
+
+Hide things in images: [Steganography](https://0xrick.github.io/lists/stego/).

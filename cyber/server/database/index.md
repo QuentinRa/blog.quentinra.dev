@@ -1,0 +1,27 @@
+# Exploit a Database
+
+<hr class="sl">
+
+## Random
+
+Note: this isn't a course about SQL, but stuff that may be useful to hackers.
+
+<div class="row row-cols-md-2"><div>
+
+* `service xxx status`: check if a service is enabled. 
+  * `mysql`
+  * `postgresql`
+  * `...`
+* `mysql -u root -p -h <ip>`: login as root to the database at `<ip>`
+  * Use `mysql -u root -p` for a local database.
+  * Try an empty password, as this is the default password for root.
+</div><div>
+
+Inside the SQL console, you may use
+
+* `source <sql>`: in MySQL console, import a SQL file.
+
+Note that even if you can insert a path, you should start the SQL console inside the folder with the SQL file, and only enter the filename. This is because, if the file is importing data from other files, it less likely to still work if the statements are executed from another folder than the one with the script.
+
+* `DESCRIBE <table>`: see the structure of `<table>`
+</div></div>

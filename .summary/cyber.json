@@ -29,11 +29,11 @@
     ],
     "Server": [
       {
-        "tag": "web/website/index.md",
-        "name": "Exploit website",
+        "tag": "server/web/index.md",
+        "name": "Exploit webserver",
         "desc": "",
         "icon": "",
-        "hidden": true
+        "hidden": false
       },
       {
         "tag": "server/database/index.md",

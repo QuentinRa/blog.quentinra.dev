@@ -57,26 +57,6 @@ Other
 
 <hr class="sep-both">
 
-### Samba
-
-"Samba is the standard Windows interoperability suite of programs for Linux and Unix. It allows end users to access and use files, printers and other commonly shared resources on a companies intranet or internet. It's often referred to as a network file system.
-
-Samba is based on the common client/server protocol of Server Message Block (SMB). SMB is developed only for Windows, without Samba, other computer platforms would be isolated from Windows machines, even if they were part of the same network."
-
-* Using nmap we can enumerate a machine for SMB shares:
-  * port 445, and 139
-  * `nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse <ip> -vv`
-* `smbclient //<ip>/anonymous` login without password
-* You may find useful information
-
-<hr class="sep-both">
-
-### Steganography
-
-Hide things in images: [Steganography](https://0xrick.github.io/lists/stego/).
-
-<hr class="sep-both">
-
 ### Websites
 
 * Identification and Authentication Failure
