@@ -304,69 +304,6 @@ One level above binary (010010...), we have a language called assembly which is 
 
 <hr class="sep-both">
 
-## Nmap
-
-* `-top-ports 20` (with UDP)
-* `-sn` not scan any port (ICMP echo packets/sudo ARP on local networks)
-* Check if a host is up. Note that **Windows with its default firewall is blocking every ICMP request**, so ping is useless. If you are against such a host, use `-Pn` in every request.
-
-```bash
-$ nmap localhost -sn
-```
-
-<details class="details-e">
-<summary>Nmap Scripting Engine (NSE)</summary>
-
-<div class="row row-cols-md-2"><div>
-
-[NSE](https://nmap.org/book/nse-usage.html) is a library of scripts that can be used to scan vulnerabilities, and automatically exploit them. Scripts are stocked in categories
-
-* `safe`: won't harm the target
-* `intrusive`: will harm the target
-* `vuln`: scan for vulnerabilities
-* `exploit`: try to exploit a vulnerability
-* `auth`
-* `brute`: attempt bruteforce
-* `discovery`: try to discover more about the network.
-
-You can use a whole category of scripts, or a path to a script, or the name of a script (see [nsedoc scripts](https://nmap.org/nsedoc/scripts/)).
-
-```bash
-$ nmap localhost --script=vuln
-$ nmap localhost --script=lua_script
-$ nmap localhost --script vuln # same
-```
-
-You may have to pass arguments to a script.
-
-```bash
-$ nmap localhost --script=a,b --script-args a.key=value,...
-```
-
-</div><div>
-
-Scripts are stored in `/usr/share/nmap/scripts`.
-
-To install manually a script
-
-```bash
-$ script_name=<script-name>
-$ sudo wget -O /usr/share/nmap/scripts/$script_name.nse https://svn.nmap.org/nmap/scripts/$script_name.nse
-$ nmap --script-updatedb
-```
-
-To find a script
-
-* Use NSEDoc, for instance ["smb" NSE scripts](https://nmap.org/search/?q=smb)
-* Or, use commands, `ls -l /usr/share/nmap/scripts/*smb*`
-
-</div></div>
-</details>
-
-There are techniques to try to bypass firewalls (fragment packet, add delay, use a badsum...).
-
-<hr class="sep-both">
-
 <hr class="sl">
 
 ## Domain Name Hijacking via Cache poisoning

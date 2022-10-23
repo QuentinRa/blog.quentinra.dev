@@ -51,7 +51,7 @@ A port is used by a protocol such as FTP (File Transfer Protocol) to transfer da
 * `closed`: cannot be reached
 </div></div><br>
 
-**Kinds of scans**
+🤯 **Kinds of scans** 🤯
 
 Nmap can do multiple **scans** with `-s<type>`, and it's up to you to pick the "right" one according to your case, and what you are looking for, along with the constraints that you may have.
 
@@ -76,9 +76,21 @@ The 3 scans below can be used to try to bypass weak firewalls that have only rul
 > **UDP Scans** are scans used to **detect UDP ports**, meaning ports using the UDP connection-less protocol, in which a message is sent, with no reply, and without care if the message was received or not, corrupted or not.... This is quite faster than TCP.
 
 * **UDP Scan** | `-sU` | `Need root privileges`. The scan is slow as UDP ports may only respond if they are closed (with a PING/ICMP), so the scan must send multiple requests, to ensure that the port isn't closed, as there is no way to ensure that the port is open, so they are usually marked as `open|filtered`.
-</div></div><br>
 
-**Examples of scans**
+> **ICMP Requests** ⚠️: By default, nmap will send a query checking if a host is up. This query is a ICMP request, but they are **blocked on Windows** <small>(Windows replies closed to every ICMP request by default)</small>. To scan Windows hosts, use the option `-Pn`. The problem with that, is that if the host is actually not running Windows, but down, then you will wait a lot, so only use that if you are sure that the host is up.
+
+```bash
+$ nmap 55.55.55.55 # not working if it's a Windows host
+$ nmap 55.55.55.55 -Pn # fixed 😎
+```
+
+> **ICMP Scans**: are used to check if a host is up or not.
+
+* **Ping Scan** | `-sn`. Do not scan ports. If root, and targeting a host on the same network, then use ARP.
+
+</div></div><br><br>
+
+🗺️ **Examples of scans** 🗺️
 
 <div class="row row-cols-md-2"><div>
 
@@ -116,6 +128,7 @@ $ nmap -vv scanme.nmap.org -p 22,23 # both 22, and 23
 $ nmap -vv scanme.nmap.org -p 0-65535 # from 0 to ...
 $ nmap -vv scanme.nmap.org -p- # same :)
 $ nmap -vv scanme.nmap.org -p22-25,80,443 # mix
+$ nmap -vv scanme.nmap.org -top-ports 20
 ```
 
 To set the intensity of the scan, reducing the risks of between detected, you can set a timing between requests from 0=passive=very slow, and up to 5=aggressive=faster.
@@ -127,8 +140,46 @@ $ nmap -vv scanme.nmap.org -T5 -p22
 Store results
 
 ```bash
-$ nmap localhost > output_localhost
+$ nmap scanme.nmap.org > output_localhost
 # generate .nmap=-oN, .gnmap=-oG, and .xml=oX 
-$ nmap localhost -oA output_localhost
+$ nmap -vv scanme.nmap.org -oA output_localhost
+```
+</div></div><br><br>
+
+📌 **Nmap Scripting Engine (NSE)** 📌
+
+Actually, when you are requesting information about the host, this information is found using scripts. This is because nmap has a [library of scripts](https://nmap.org/book/nse-usage.html), that you can even use to exploit the target.
+
+<div class="row row-cols-md-2"><div>
+
+Scripts are stocked in categories such as
+
+* `safe`: won't harm the target
+* `intrusive`: will harm the target
+* `vuln`: scan for vulnerabilities
+* `exploit`: try to exploit a vulnerability
+* `brute`: attempt bruteforce
+* `discovery`: try to discover more about the network.
+
+You can execute every script of a category
+
+```bash
+$ nmap scanme.nmap.org --script=vuln
+$ nmap scanme.nmap.org --script vuln # same
+```
+
+</div><div>
+
+To find a script
+
+* Use NSEDoc, for instance ["smb" NSE scripts](https://nmap.org/search/?q=smb)
+* Or, use commands, `ls -l /usr/share/nmap/scripts/*smb*`
+
+You can run a specific script that you selected
+
+```bash
+$ nmap scanme.nmap.org --script=lua_script
+# run two scripts, set argument "key" of "s1" to "value"
+$ nmap scanme.nmap.org --script=s1,s2 --script-args s1.key=value
 ```
 </div></div>
