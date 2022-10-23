@@ -34,27 +34,31 @@
         "desc": "",
         "icon": "",
         "hidden": false
-      },
+      }
+    ],
+    "Database": [
       {
         "tag": "server/database/index.md",
         "name": "Exploit database",
         "desc": "",
         "icon": "",
         "hidden": false
-      },
+      }
+    ],
+    "OS": [
       {
-        "tag": "web/server/index.md",
-        "name": "Exploit webserver",
+        "tag": "os/linux/index.md",
+        "name": "Exploit Linux",
         "desc": "",
         "icon": "",
-        "hidden": true
+        "hidden": false
       },
       {
-        "tag": "web/tools/index.md",
-        "name": "CyberTools (Web)",
+        "tag": "os/linux/index.md",
+        "name": "Exploit Windows",
         "desc": "",
         "icon": "",
-        "hidden": true
+        "hidden": false
       }
     ],
     "Software": [

@@ -57,28 +57,6 @@ Other
 
 <hr class="sep-both">
 
-### Websites
-
-* Identification and Authentication Failure
-  * Do not prevent bruteforce
-  * Allow users to use weak passwords
-  * Not encrypting passwords
-* Broken Access Control (can access files/URLs we shouldn't)
-  * principle of the least privilege not applied correctly
-  * use someone token/id to view/edit/...
-  * Access "authenticated-only" page without logging in
-* Injection
-  * validation
-  * sanitization
-* Cryptographic Failures
-  * using clear text
-  * HTTP instead of HTTPS
-  * weak algorithm
-
-BAC : Insecure Direct Object References (IDOR). Example is a server service resources, with a URL in which we can guess other files names.
-
-<hr class="sep-both">
-
 ## Forensics
 
 "You need to understand a website, to find weakness, and process hacking a website."
