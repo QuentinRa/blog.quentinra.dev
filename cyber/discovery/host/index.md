@@ -35,7 +35,7 @@ Once you are logged on the website, you can create new scans.
 
 <hr class="sr">
 
-## nmap
+## nmap port scanner
 
 <div class="row row-cols-md-2"><div>
 
@@ -118,6 +118,13 @@ You can use flags to fetch information about your targets
 ```bash
 $ nmap -sV scanme.nmap.org -vv
 ```
+
+Run a fast scan
+
+```bash
+$ nmap -F scanme.nmap.org -vv
+```
+
 </div><div>
 
 You can select a range of ports to scan, or only scan the "top ports". By default, nmap scan the top 1000 ports.
@@ -167,6 +174,8 @@ You can execute every script of a category
 $ nmap scanme.nmap.org --script=vuln
 $ nmap scanme.nmap.org --script vuln # same
 ```
+
+> **Note**: I had to disable some functionalities of my antivirus, otherwise some NSE scripts would fail.
 
 </div><div>
 
