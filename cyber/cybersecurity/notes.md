@@ -283,6 +283,8 @@ PRET isn't going to work here as it is using port 9000 by default
 
 ## Privilege escalation
 
+https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
+https://payatu.com/guide-linux-privilege-escalation
 * https://www.udemy.com/course/linux-privilege-escalation/
 
 Services

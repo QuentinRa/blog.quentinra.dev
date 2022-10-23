@@ -5,23 +5,9 @@
     "e1": [
       {
         "tag": "cybersecurity",
-        "name": "Culture",
-        "desc": "A lot of cyber-related stuff such as well-know threats to increase your knowledge about cybersecurity.",
+        "name": "Getting Started",
+        "desc": "Websites to learn, practice, find news, look for news, along with CVE lookup, credentials leak lookup, or stuff like that. ",
         "icon": "<i class=\"bi bi-shield-lock\"></i>",
-        "hidden": false
-      },
-      {
-        "tag": "box/tools/index.md",
-        "name": "Tools",
-        "desc": "A list of tools that you may use  while practicing cybersecurity.",
-        "icon": "<i class=\"bi bi-hammer\"></i>",
-        "hidden": false
-      },
-      {
-        "tag": "box/links/index.md",
-        "name": "Handful resources",
-        "desc": "A list of useful resources (ex: website, gits...) that you may use while learning, or practicing cybersecurity.",
-        "icon": null,
         "hidden": false
       }
     ],
