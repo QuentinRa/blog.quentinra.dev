@@ -13,6 +13,8 @@ If you want to test your skills, download the Vulnerable OS [Metasploit 2](https
 * **Username**: `msfadmin`. **Password**: `msfadmin`
 * Before the keyword is using QWERTY. You can swap once logged (`sudo loadkeys fr`).
 
+> A great reference is [metasploit-unleashed](https://www.offensive-security.com/metasploit-unleashed/).
+
 </div><div>
 
 Metasploit is divided into modules
@@ -24,7 +26,7 @@ Metasploit is divided into modules
 * **Payloads** <small>(single/inline, and not inline)</small>: how the framework will send data
 * **Post**: scripts to start the meterpreter, or convenient functions such as `hashdump`.
 
-> **Auxiliary**, if available, can be used to check if an exploit can be used on a target.
+> **Auxiliary** can be used to check if an exploit can be used on a target. They are not always an auxiliary.
 </div></div>
 
 <hr class="sr">
@@ -51,7 +53,9 @@ msf6 > search module # ex: exploit/windows/http/xxx
 msf6 > search CVE-YEAR-ID
 msf6 > search type:auxiliary # search auxiliaries
 msf6 > search platform:... 
+msf6 > search search cve:2010-2025
 ```
+</div><div>
 
 Use an exploit
 
@@ -59,7 +63,6 @@ Use an exploit
 msf6 > use module_name # ex: exploit/windows/http/xxx
 msf6 > use module_index # ex: 0
 ```
-</div><div>
 
 See the options required by the module. Find properties marked "required", but with no default value.
 
@@ -124,6 +127,13 @@ You can check if an exploit is available before running it. It will only work if
 ```bash
 msf6 exploit('module_used') > check
 ```
+
+You can request info about an exploit/...
+
+```bash
+msf6 > info module_name # ex: exploit/windows/http/xxx
+msf6 > info module_index # ex: 0
+```
 </div><div>
 
 If you want to unset a variable, or all variables...
@@ -144,11 +154,12 @@ msf6 > set payload 1
 msf6 > set payload payload_name
 ```
 
-You can request info about an exploit/...
+You may send a command to the background with `CTRL-Z`, or using `background`. You can use `sessions` to see your sessions, and `sessions -i <sid>` to move a session to the foreground.
 
 ```bash
-msf6 > info module_name # ex: exploit/windows/http/xxx
-msf6 > info module_index # ex: 0
+meterpreter > background
+msf6 exploit('module_used') > sessions
+msf6 exploit('module_used') > sessions -i 1
 ```
 </div></div>
 
@@ -166,6 +177,7 @@ meterpreter > cd # move
 meterpreter > pwd # path to current folder
 meterpreter > cat file # print file
 meterpreter > edit file # open file in vim
+meterpreter > ps # see running processes
 meterpreter > exit
 ```
 
@@ -273,7 +285,7 @@ msf6 > db_status # check if connected
 ```
 </div><div>
 
-Everything below is coming from [this tutorial](https://scubarda.com/2015/11/16/launching-nessus-scans-inside-metasploit/).
+Everything below is coming from [this tutorial](https://scubarda.com/2015/11/16/launching-nessus-scans-inside-metasploit/), but metasploit unleashed has also [some tips](https://www.offensive-security.com/metasploit-unleashed/working-with-nessus/).
 
 ```bash
 msf6 > load nessus
@@ -291,6 +303,7 @@ Once you did, there a few commands you can use
 * `vulns`: see vulnerabilities
 * `vulns -s ftp`: see ftp vulnerabilities
 * `vulns -S keyword`: see vulnerabilities including keyword
+* `search cve:2010-2075`: search CVE
 
 Then, process as usual.
 </div></div>

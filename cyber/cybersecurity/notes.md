@@ -60,22 +60,7 @@ https://thehackernews.com/2019/10/linux-sudo-run-as-root-flaw.html
 
 <hr class="sep-both">
 
-## metasploit
-
-* `exploit -z` in the background
-* background/CTRL+Z to background sessions
-  * sessions
-  * sessions -i <id>
-* shell to meterpreter (seems useless in msf6)
-  * `ps` find NT AUTHORITY\SYSTEM and migrate to it -> `migrate pid`
-
-<hr class="sep-both">
-
 ## Nmap
 
-* https://www.techtalk7.com/detect-if-running-with-administrator-privileges-under-windows-xp/
-* https://www.offensive-security.com/metasploit-unleashed/working-with-nessus/
-  * MS09-050
-  * search exploits 09-050
 * https://tryhackme.com/resources/blog/metasploit
 * `-j REJECT --reject-with tcp-reset`
