@@ -89,25 +89,14 @@ https://thehackernews.com/2019/10/linux-sudo-run-as-root-flaw.html
 * `show payloads`
 * `set payload 1`
   * Payloads are the code that will run on the target.
-* `debug`
-* `help set`
-* `history`
 * "the tab key"
-* see required options
-* back...
 * info
 
 ![](_images/img.png)
 
 * https://github.com/rapid7/metasploit-framework/wiki/Exploit-Ranking
 * search type:auxiliary platform:
-* mfs ex> (context prompt)
-* meterpreter> (the Meterpreter prompt)
-* unset all
-* unset xxx
-* setg used in all modules
 * `exploit -z` in the background
-* check: check if exploitable, if supported
 * background/CTRL+Z to background sessions
   * sessions
   * sessions -i <id>

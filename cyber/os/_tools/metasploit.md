@@ -75,6 +75,48 @@ meterpreter >
 ```
 </div></div>
 
+<br><br>
+
+📌 Advanced usage 📌
+
+<div class="row row-cols-md-2"><div>
+
+You can ask for "help"
+
+```bash
+msf6 exploit('module_used') > help set
+```
+
+You can see the history of the command you used
+
+```bash
+msf6 exploit('module_used') > history
+```
+
+If you don't plan to use an exploit, you can go back
+
+```bash
+msf6 exploit('module_used') > back
+msf6 > 
+```
+
+You can check if an exploit is available before running it. It will only work if there is an auxiliary for this exploit.
+
+```bash
+msf6 exploit('module_used') > check
+```
+</div><div>
+
+If you want to unset a variable, or all variables...
+
+```bash
+msf6 exploit('module_used') > unset RHOSTS
+msf6 exploit('module_used') > unset all
+# even if you go back, every module with have
+# this value for RHOSTS, unless, you use unset
+msf6 exploit('module_used') > setg RHOSTS xxx
+```
+</div></div>
 <hr class="sr">
 
 ## msfconsole, and nessus
