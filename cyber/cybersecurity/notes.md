@@ -67,24 +67,7 @@ https://thehackernews.com/2019/10/linux-sudo-run-as-root-flaw.html
   * sessions
   * sessions -i <id>
 * shell to meterpreter (seems useless in msf6)
-  * `shell`
-    * `whoami`
-  * `getsystem`
-  * `sysinfo`
   * `ps` find NT AUTHORITY\SYSTEM and migrate to it -> `migrate pid`
-  * `hashdump`
-    * username
-    * rid
-    * LM hash
-    * NTML hash - decrypt this (john nt)
-  * `getuid`
-  * https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/
-  * Capture: https://www.offensive-security.com/metasploit-unleashed/screen-capture/
-  * https://www.offensive-security.com/metasploit-unleashed/Keylogging/
-* KeyLocations Windows
-  * Root (cd /)
-  * Documents
-  * Windows/System32/config/ (sam database - where password are stored)
 
 <hr class="sep-both">
 

