@@ -82,6 +82,8 @@ Cron are the name given to automated tasks on Linux. See `crontab -l` for the ta
 * PostgresSQL: `psql -V`
 * MySQL: `mysql --version`
 
+Once you found a service, look for CVE for the given version, and try to use one to escalate to root.
+
 <br>
 
 **Cleaning up your traces** 🧹
@@ -119,4 +121,25 @@ There are multiple ways to get the script on your target
 * Use nc/netcat
   * On the victim: `nc -l -p port > script.sh`
   * On the attacker: `nc IP port < script.sh`
+</div></div>
+
+<hr class="sr">
+
+## Linux privilege escalation
+
+<div class="row row-cols-md-2"><div>
+
+Privilege escalation refer to a process of obtaining super-administrator (a.k.a. root) privileges, starting from a non-root user.
+
+* [gtfobins](https://gtfobins.github.io/) (7k ⭐): a reference to find ways to exploit a command with misconfigured permissions.
+</div><div>
+
+* Find a vulnerable service an exploit it <small>(apache, mysql...)</small>
+* Find a service in which you can inject data, in order to exploit it
+  * Exploit `sudo`
+  * Exploit system files
+  * Exploit cron jobs
+  * Exploit script with the SUID bit
+  * ...
+* ...
 </div></div>

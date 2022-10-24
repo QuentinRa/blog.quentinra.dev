@@ -107,12 +107,7 @@ PRET isn't going to work here as it is using port 9000 by default
 
 https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
 https://payatu.com/guide-linux-privilege-escalation
-* https://www.udemy.com/course/linux-privilege-escalation/
-
-Services
-
-* https://www.exploit-db.com/exploits/1518
-  * use mysql with root and no password, to create a root shell, using some C code.
+https://www.udemy.com/course/linux-privilege-escalation/
 
 Weak perms
 
