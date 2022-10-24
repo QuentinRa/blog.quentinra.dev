@@ -108,21 +108,7 @@ PRET isn't going to work here as it is using port 9000 by default
 https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
 https://payatu.com/guide-linux-privilege-escalation
 https://www.udemy.com/course/linux-privilege-escalation/
-
-Weak perms
-
-* /etc/shadow
-  * if "r": try bruteforce 
-  * if "w": `mkpasswd -m sha-512 newpasswordhere` then edit
-* /etc/passwd
-  * some old Linux allow us to replace "x" with a password (`openssl passwd newpasswordhere`)
-* `sudo -l`: see what I can run with sudo, https://gtfobins.github.io/
-* https://github.com/TH3xACE/SUDO_KILLER
-* https://blog.certcube.com/linux-privilege-escalation-with-sudo-rights/
-* https://gtfobins.github.io/
-* If env variables are loaded, you may exploit them too.
-
-Maybe not really useful, but with `bash script.sh`, you can execute without having the permission `x`.
+https://blog.certcube.com/linux-privilege-escalation-with-sudo-rights/
 
 <hr class="sep-both">
 

@@ -105,10 +105,10 @@ Once you found a service, look for CVE for the given version, and try to use one
 
 There are many scripts checking if there are "common" files, testing commands... in order to look for information that would be useful for you to reach a higher level of privilege.
 
-* [LinEnum](https://github.com/rebootuser/LinEnum) (5k ⭐): a script shell
-* [traitor](https://github.com/liamg/traitor)  (5k ⭐): a script in Go
-* [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) (2k ⭐): a script shell
-* [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) (1k ⭐): a python script
+* [LinEnum](https://github.com/rebootuser/LinEnum) (5.4k ⭐): a script shell
+* [traitor](https://github.com/liamg/traitor)  (5.4k ⭐): a script in Go
+* [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) (2.5k ⭐): a script shell
+* [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) (1.1k ⭐): a python script
 </div><div>
 
 There are multiple ways to get the script on your target
@@ -131,7 +131,7 @@ There are multiple ways to get the script on your target
 
 Privilege escalation refer to a process of obtaining super-administrator (a.k.a. root) privileges, starting from a non-root user.
 
-* [gtfobins](https://gtfobins.github.io/) (7k ⭐): a reference to find ways to exploit a command with misconfigured permissions.
+* [gtfobins](https://gtfobins.github.io/) (7.4k ⭐): a reference to find ways to exploit a command with misconfigured permissions.
 </div><div>
 
 * Find a vulnerable service an exploit it <small>(apache, mysql...)</small>
@@ -142,4 +142,54 @@ Privilege escalation refer to a process of obtaining super-administrator (a.k.a.
   * Exploit script with the SUID bit
   * ...
 * ...
+</div></div>
+
+<hr class="sl">
+
+## Misconfigured permissions
+
+<div class="row row-cols-md-2"><div>
+
+If `/etc/shadow` was "intentionally" misconfigured
+
+```bash
+$ cat /etc/shadow
+# if you can read it: try to bruteforce the password
+# if you can write it: change the root password
+# (copy a password / generate one mkpasswd -m sha-512 toto)
+```
+
+In OLD version of Linux, passwords could be stored in `/etc/passwd`
+
+```bash
+$ cat /etc/shadow
+- root:x:...
++ root:hashed_password:...
+# openssl passwd toto
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sr">
+
+## Exploit sudo
+
+*A good reference to exploit sudo: [SUDO_KILLER](https://github.com/TH3xACE/SUDO_KILLER)* (1.6k ⭐).
+
+<div class="row row-cols-md-2"><div>
+
+Try to find commands that can be run with sudo
+
+```bash
+$ sudo -l
+# if asking a password, abort
+# otherwise, 
+# - look for the command on GTFOBins
+# - look for environment variable loaded that may be exploited
+```
+</div><div>
+
+...
 </div></div>
