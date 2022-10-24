@@ -42,7 +42,7 @@ Learn more about your environment
 
 <hr class="sr">
 
-## Linux key files
+## Linux environment
 
 <div class="row row-cols-md-2 mt-3"><div>
 
@@ -71,7 +71,7 @@ Learn more about your environment
 
 **Cron tasks** ⭐
 
-Cron are the name given to automated tasks on Linux. See `crontab -l` for the tasks of the current user, and `ls -la /etc/cron*` for every cron tasks.
+Cron are the name given to automated tasks on Linux. See `crontab -l` for the tasks of the current user, and `ls -la /etc/cron*` for every cron tasks. Then, you may look for vulnerable cron tasks.
 
 <br>
 
@@ -81,6 +81,16 @@ Cron are the name given to automated tasks on Linux. See `crontab -l` for the ta
 * Sudo: `sudo -V`
 * PostgresSQL: `psql -V`
 * MySQL: `mysql --version`
+
+<br>
+
+**Cleaning up your traces** 🧹
+
+* `/var/log/auth.log`: ssh logs
+* `/var/log/syslog`: firewall logs
+* `/var/log/service`: "service" logs (ex: apache)
+* ...
+
 </div></div>
 
 > **NOTE**: don't forget to redirect any errors with `some_command 2> /dev/null`.
@@ -99,5 +109,14 @@ There are many scripts checking if there are "common" files, testing commands...
 * [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) (1k ⭐): a python script
 </div><div>
 
-...
+There are multiple ways to get the script on your target
+
+* Open a text editor, copy-paste it
+  * run it `bash script.sh`,
+  * or use chmod, then `./script.sh`
+* Use `wget`
+* Use `FTP`
+* Use nc/netcat
+  * On the victim: `nc -l -p port > script.sh`
+  * On the attacker: `nc IP port < script.sh`
 </div></div>
