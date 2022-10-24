@@ -137,22 +137,6 @@ https://thehackernews.com/2019/10/linux-sudo-run-as-root-flaw.html
 
 ## Nmap
 
-* sudo systemctl start postgresql
-* sudo msfdb init
-  * I got some error, but it works
-  * you need to restart msf
-  * `db_status
-    [*] Connected to msf. Connection type: postgresql.`
-* https://www.offensive-security.com/metasploit-unleashed/using-databases/
-* https://scubarda.com/2015/11/16/launching-nessus-scans-inside-metasploit/
-  * `load nessus`
-  * `nessus_connect user:pass@localhost:8834`
-  * `nessus_scan_list`
-  * `nessus_db_import id`
-  * `services`
-  * `vulns`
-  * `vulns -s ftp`
-  * `vulns -S keyword`
 * https://www.techtalk7.com/detect-if-running-with-administrator-privileges-under-windows-xp/
 * https://www.offensive-security.com/metasploit-unleashed/working-with-nessus/
   * MS09-050

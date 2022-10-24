@@ -64,10 +64,62 @@ msf6 exploit('module_used') > set <option> <value>
 * `set PAYLOAD <value>`: use another module
 </details>
 
-Once ou filled everything you need to, run the exploit.
+Once ou filled everything you need to, run the exploit. If you were successful, a meterpreter will be created allowing you to access a short of enhanced <small>(with more features)</small> shell of the target.
 
 ```bash
 msf6 exploit('module_used') > run
 msf6 exploit('module_used') > exploit # same
+# ...
+# if you were successful
+meterpreter >
 ```
+</div></div>
+
+<hr class="sr">
+
+## msfconsole, and nessus
+
+<div class="row row-cols-md-2"><div>
+
+To be honest, it was way more useful to explore results in nessus web interface, but if you don't have one, then this is surely something useful.
+
+![nessus_exploit_with](_images/nessus_exploit_with.png)
+
+First, start a msf database
+
+```bash
+$ sudo systemctl start postgresql
+$ sudo msfdb init
+# I got some errors, but it still works
+```
+
+Then in your msfconsole
+
+```bash
+$ msfconsole -q
+msf6 > db_status # check if connected
+[*] Connected to msf. Connection type: postgresql.
+```
+</div><div>
+
+Everything below is coming from [this tutorial](https://scubarda.com/2015/11/16/launching-nessus-scans-inside-metasploit/).
+
+```bash
+msf6 > load nessus
+# Connect
+msf6 > nessus_connect user:pass@localhost:8834
+# List the scans that you did
+msf6 > nessus_scan_list
+# Import the result of a scan
+msf6 > nessus_db_import id_you_found_in_the_list
+```
+
+Once you did, there a few commands you can use
+
+* `services`: see what services the target run
+* `vulns`: see vulnerabilities
+* `vulns -s ftp`: see ftp vulnerabilities
+* `vulns -S keyword`: see vulnerabilities including keyword
+
+Then, process as usual.
 </div></div>
