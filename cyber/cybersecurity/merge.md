@@ -1,46 +1,5 @@
 # Techniques used by cyber hackers
 
-This is some knowledge related to what attackers are doing once they have access to a remote shell. The first goal is to access root/administrator privileges, which is called **privilege escalation**. Then, a hacker will try to access private data (credential), and other services (database...).
-
-<hr class="sl">
-
-## List of steps
-
-This is just random notes for now, feel free to improve it.
-
-<details class="details-e mt-4">
-<summary>Step 1: bash</summary>
-
-* `echo $0`: see the language of the shell
-* `bash`: use bash
-* `python -c 'import pty; pty.spawn("/bin/bash")'`: use bash (if bash isn't available)
-</details>
-
-<details class="details-e">
-<summary>Step 2: Find which user you are using</summary>
-
-* `whoami`: username
-* `id`: username, group...
-</details>
-
-<details class="details-e">
-<summary>Step: Identify the machine</summary>
-
-* `cat /etc/*release`: see OS info
-* `uname -a`: see machine info
-* Look for process that may be vulnerable
-* Try to exploit backup scripts (ex: crontab)
-* Try to find folders/files which exploitable permissions
-</details>
-
-<details class="details-e">
-<summary>Step: Look for data</summary>
-
-* `find / -name id_rsa 2> /dev/null`: rsa credentials
-* Look for saves/backups
-* Look for private files/passwords
-</details>
-
 <details class="details-e">
 <summary>Step 😎: use LinEnum</summary>
 
