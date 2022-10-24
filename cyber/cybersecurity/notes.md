@@ -49,18 +49,8 @@ Other
 90 days.
 https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
 
-Sudo flaw
-https://thehackernews.com/2019/10/linux-sudo-run-as-root-flaw.html
-
 * XP
   * https://helpdeskgeek.com/virtualization/how-to-set-up-a-windows-xp-virtual-machine-for-free/
   * https://helpdeskgeek.com/virtualization/virtualbox-share-folder-host-guest/ sahre must be activated
   * Must be "bridge"?
 * Exploit-db + others https://securitytrails.com/blog/top-exploit-databases
-
-<hr class="sep-both">
-
-## Nmap
-
-* https://tryhackme.com/resources/blog/metasploit
-* `-j REJECT --reject-with tcp-reset`

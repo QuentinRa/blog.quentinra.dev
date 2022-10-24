@@ -12,6 +12,7 @@ https://wonderfall.space/linux-securite/
 Learn ELF
 CRON `cron` process to schedule tasks, with crontab/crontab -l / Automated tasks in Linux / https://crontab-generator.org/ / https://crontab.guru/ / edit `crontab -e`
 uniq / uniq -c
+-j REJECT --reject-with tcp-reset
 
 Blog
 https://linuxhandbook.com/

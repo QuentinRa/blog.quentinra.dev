@@ -9,6 +9,13 @@
         "desc": "Websites to learn, practice, find news, look for news, along with CVE lookup, credentials leak lookup, or stuff like that. ",
         "icon": "<i class=\"bi bi-shield-lock\"></i>",
         "hidden": false
+      },
+      {
+        "tag": "os/_vms/index.md",
+        "name": "Virtual Machines",
+        "desc": "",
+        "icon": null,
+        "hidden": false
       }
     ],
     "Discovery": [
