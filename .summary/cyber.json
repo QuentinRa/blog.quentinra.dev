@@ -59,6 +59,13 @@
         "desc": "",
         "icon": "",
         "hidden": false
+      },
+      {
+        "tag": "os/_tools/metasploit.md",
+        "name": "metasploit",
+        "desc": "",
+        "icon": "<i class=\"bi bi-tools\"></i>",
+        "hidden": false
       }
     ],
     "Software": [
