@@ -92,3 +92,20 @@ Run the Linux Exploit Suggester 2 tool to identify potential kernel exploits on 
 perl linux-exploit-suggester-2.pl
 
 Linux kernel exploit "Dirty COW"
+
+----
+
+sudo -nS -l
+sudo -S id
+
+ssh2john
+
+https://github.com/Cerbersec/scripts
+https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS
+https://github.com/carlospolop/PEASS-ng
+https://github.com/InteliSecureLabs/Linux_Exploit_Suggester
+https://github.com/jondonas/linux-exploit-suggester-2
+https://docs.metasploit.com/docs/using-metasploit/intermediate/exploit-ranking.html
+
+* Kali: update / upgrade
+* sudo gunzip /usr/share/wordlists/rockyou.txt.gz

@@ -70,3 +70,8 @@ Add theme
 <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
 <item name="radioButtonStyle">@style/Widget.TipTime.CompoundButton.RadioButton</item>
 <item name="switchStyle">@style/Widget.TipTime.CompoundButton.Switch</item>
+
+--------
+android:gravity="center_vertical|right"
+https://duckduckgo.com/?q=android+tablerow+spacing&atb=v332-1&ia=web
+https://stackoverflow.com/questions/2710793/what-is-the-equivalent-of-colspan-in-an-android-tablelayout
