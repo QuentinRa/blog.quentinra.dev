@@ -21,7 +21,7 @@ Explore the host
 * `su`: change user
 * `wget`: download something
 
-> You may use python to do things for you, such as starting a web server <small>(`python3 -m  http.server`)</small>, or starting a bash shell <small>(`python -c 'import pty; pty.spawn("/bin/bash")'` - don't ask why)</small>.
+> You may use python to do things for you, such as starting a web server to browse files <small>(`python3 -m  http.server`)</small>, or run commands <small>(`python -c 'import pty; pty.spawn("/bin/bash")'`)</small>.
 </div><div>
 
 Learn more about your environment
@@ -46,12 +46,12 @@ Learn more about your environment
 **Look for (sensitive?) information** 🔑
 
 * `/etc/passwd`: usernames, their groups, their home, and their shell
-* `/etc/shadow` <small>(usually root-only)</small>: username, and their hashed password
+* `/etc/shadow` <small>(root)</small>: username, and their hashed password
 * `/etc/group`: groups
-* `/etc/gshadow` <small>(usually root-only)</small>: groups hashed passwords (if any)
+* `/etc/gshadow` <small>(root)</small>: groups hashed passwords (if any)
 * `/proc/version`: information about the machine
 * `cat /etc/*release`: information about the operating system
-* `/etc/sudoers`: sudoers, and rules applied to them, if any
+* `/etc/sudoers` <small>(root)</small>: sudoers, and rules applied to them, if any
 * `find / -name id_rsa 2> /dev/null`: rsa credentials
 
 **Logs** 🗺️
@@ -74,4 +74,19 @@ Cron are the name given to automated tasks on Linux. See `crontab -l` for the ta
 
 * Apache: `apache2 -v` / `httpd -v`
 * Sudo: `sudo -V`
+</div></div>
+
+<hr class="sl">
+
+## Linux automated exploration
+
+<div class="row row-cols-md-2"><div>
+
+There are many scripts checking if there are "common" files, testing commands... in order to look for information that would be useful for you to reach a higher level of privilege.
+
+* [LinEnum](https://github.com/rebootuser/LinEnum) (5k ⭐): a script shell
+* [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) (1k ⭐): a python script
+</div><div>
+
+...
 </div></div>

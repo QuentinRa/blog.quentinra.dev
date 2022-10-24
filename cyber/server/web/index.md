@@ -9,12 +9,14 @@
 * The website do not prevent bruteforce
 * The website allows users to use weak passwords
 * The website do not encrypt passwords
+	
+<br>
 
 **Broken Access Control** 📭 <small>(a hacker can access files/URLs we shouldn't)</small>
 
 * The principle of the least privilege not applied correctly
 * Someone can use someone else token/id to do...
-* A user can access "auth-only" pages without logging in
+* A user can access "logged-only" pages without logging in
 </div><div>
 
 **Injections** 🪤
@@ -22,7 +24,7 @@
 * There is an insufficient, or no validation at all
 * There is an insufficient, or no sanitization at all
 
-<br>
+<p>&nbsp;</p>
 
 **Cryptographic Failures** 🔓
 
