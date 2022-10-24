@@ -26,14 +26,17 @@ Explore the host
 
 Learn more about your environment
 
+* `w`: who is logged in, and what they are doing
 * `who`: who is logged in
 * `echo $0`: language used by the current shell
 * `whoami`: username
+* `last`: list of last logged users
 * `id`: username, group...
 * `uname -a`: info about the machine
 * `hostname`: info about the host
 * `ps`: see running processes
 * `env`: see environment variables
+* `umask`: see the default perms on newly created files
 * `getent`: shortcut to get entries about something, such as `passwd`
 </div></div>
 
@@ -47,12 +50,13 @@ Learn more about your environment
 
 * `/etc/passwd`: usernames, their groups, their home, and their shell
 * `/etc/shadow` <small>(root)</small>: username, and their hashed password
-* `/etc/group`: groups
+* `/etc/group`/`groups`: groups
 * `/etc/gshadow` <small>(root)</small>: groups hashed passwords (if any)
 * `/proc/version`: information about the machine
 * `cat /etc/*release`: information about the operating system
 * `/etc/sudoers` <small>(root)</small>: sudoers, and rules applied to them, if any
-* `find / -name id_rsa 2> /dev/null`: rsa credentials
+* `ls -ahl /root/`: see if there are readable files in root's home
+* `find / -name *id_dsa* 2> /dev/null`: RSA credentials
 
 **Logs** 🗺️
 
@@ -61,6 +65,7 @@ Learn more about your environment
 * Look for apache logs
 * Look for fail2ban logs
 * Look for backups <small>(such as emails/conversations/database)</small>
+* Look for mails `/var/mail/`
 * `~/.bash_history`: there may be something useful in the bash_history
 </div><div>
 
@@ -72,19 +77,25 @@ Cron are the name given to automated tasks on Linux. See `crontab -l` for the ta
 
 **Potentially vulnerable services** 😢
 
-* Apache: `apache2 -v` / `httpd -v`
+* Apache: `apache2 -v` / `apache2ctl -M` / `httpd -v`
 * Sudo: `sudo -V`
+* PostgresSQL: `psql -V`
+* MySQL: `mysql --version`
 </div></div>
+
+> **NOTE**: don't forget to redirect any errors with `some_command 2> /dev/null`.
 
 <hr class="sl">
 
-## Linux automated exploration
+## Linux (automated) enumeration
 
 <div class="row row-cols-md-2"><div>
 
 There are many scripts checking if there are "common" files, testing commands... in order to look for information that would be useful for you to reach a higher level of privilege.
 
 * [LinEnum](https://github.com/rebootuser/LinEnum) (5k ⭐): a script shell
+* [traitor](https://github.com/liamg/traitor)  (5k ⭐): a script in Go
+* [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) (2k ⭐): a script shell
 * [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) (1k ⭐): a python script
 </div><div>
 
