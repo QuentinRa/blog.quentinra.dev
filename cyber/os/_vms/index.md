@@ -25,3 +25,34 @@
 </div></div>
 
 > There is also [qemu](https://www.qemu.org/), mostly for Linux users.
+
+<hr class="sr">
+
+## Find a distribution
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+**Microsoft Edge developer center** 💻
+
+* [Link](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)
+* Windows 7/8/10
+* **Username**: IEUser / **Password**: "Passw0rd!".
+* Valid 90 days.
+
+**Microsoft download center** 💻
+
+* [Link](https://www.microsoft.com/en-us/download/details.aspx?id=31791) (Professional)
+* [Link](https://download.cnet.com/Windows-XP-Mode/3000-18513_4-77683344.html) (Mode, it was removed from Microsoft website)
+* Windows XP
+
+**Microsoft developer center** 💻
+
+* [Link](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/)
+* Windows 11
+</div><div>
+
+**Kali Linux** ⭐
+
+* [Link](https://www.kali.org/get-kali/#kali-virtual-machines)
+* There are giving you prebuilt image, get started in seconds!
+</div></div>

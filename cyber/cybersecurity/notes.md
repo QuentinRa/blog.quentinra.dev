@@ -30,27 +30,14 @@ Other
 
 * Intrusion Detection System (IDS) is a system that detects unauthorised network and system intrusions. Examples include detecting unauthorised devices connected to the local network and unauthorised users accessing a system or modifying a file.
 
-<hr class="sep-both">
+* https://wiki.owasp.org/index.php/OWASP_Testing_Guide_v4_Table_of_Contents
 
-## Tools
+* Wireshark: https://unit42.paloaltonetworks.com/wireshark-workshop-videos/
 
 * The [SecLists GitHub Repository](https://github.com/danielmiessler/SecLists/) contains useful lists of usernames/passwords, payloads, urls, ...
 
 <hr class="sep-both">
 
-## Bunch
+## xxx
 
-* https://wiki.owasp.org/index.php/OWASP_Testing_Guide_v4_Table_of_Contents
-* Metasploit
-  * https://www.youtube.com/watch?v=kdtMthVeC1M
-* Wireshark: https://unit42.paloaltonetworks.com/wireshark-workshop-videos/
-
-"IEUser" / "Passw0rd!"
-90 days.
-https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
-
-* XP
-  * https://helpdeskgeek.com/virtualization/how-to-set-up-a-windows-xp-virtual-machine-for-free/
-  * https://helpdeskgeek.com/virtualization/virtualbox-share-folder-host-guest/ sahre must be activated
-  * Must be "bridge"?
-* Exploit-db + others https://securitytrails.com/blog/top-exploit-databases
+...
