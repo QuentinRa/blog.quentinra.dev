@@ -111,7 +111,7 @@ There are many scripts checking if there are "common" files, testing commands...
 
 * [LinEnum](https://github.com/rebootuser/LinEnum) (5.4k ⭐): a script shell
 * [traitor](https://github.com/liamg/traitor)  (5.4k ⭐): a script in Go
-* [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) (2.5k ⭐): a script shell
+* [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) (lse, 2.5k ⭐): a script shell
 * [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) (1.1k ⭐): a python script
 </div><div>
 
