@@ -238,3 +238,17 @@ it's always interesting to remote into machines and view them as their users do.
 
 remote desktop (MSRDP)
 we can enable it via the following Metasploit module: `run post/windows/manage/enable_rdp`
+
+<hr class="sep-both">
+
+## XYZ
+
+* `nmap -n`: no dns resolution
+* nmap -O is no always useful to return the OS. Try using -sN on the open ports too.
+* `dirsearch -u ip:port`
+* `dirsearch -u ip:port -e php -x 400,404`
+* `sudo apt install dirsearch`
+
+-U and -P	Username and Password for Basic Auth
+-p <x>	Proxy to use for requests
+-c <http cookies>	Specify a cookie for simulating your auth
