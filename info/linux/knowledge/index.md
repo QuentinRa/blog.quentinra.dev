@@ -75,7 +75,7 @@ $ ls -la toto/
 $ man ls
 ```
 
-**Rely heavily on Tabulation (tab) to autocomplete commands/paths**
+**Rely heavily on the tab key to autocomplete commands/paths**
 
 ```bash
 $ ls /<TAB>

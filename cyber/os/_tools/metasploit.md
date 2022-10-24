@@ -7,9 +7,24 @@
 <div class="row row-cols-md-2"><div>
 
 The [Metasploit Framework](https://github.com/rapid7/metasploit-framework) is a penetration testing framework that you can use to test your systems.
+
+If you want to test your skills, download the Vulnerable OS [Metasploit 2](https://docs.rapid7.com/metasploit/metasploitable-2/), or [Metasploit3](https://github.com/rapid7/metasploitable3). You can install it on a VM.
+
+* **Username**: `msfadmin`. **Password**: `msfadmin`
+* Before the keyword is using QWERTY. You can swap once logged (`sudo loadkeys fr`).
+
 </div><div>
 
-...
+Metasploit is divided into modules
+
+* **Encoders**
+* **Evasion**
+* **Exploits**
+* **NOPs**
+* **Payloads** <small>(single/inline, and not inline)</small>: how the framework will send data
+* **Post**: scripts to start the meterpreter, or convenient functions such as `hashdump`.
+
+> **Auxiliary**, if available, can be used to check if an exploit can be used on a target.
 </div></div>
 
 <hr class="sr">
@@ -34,6 +49,8 @@ msf6 > search word1 word2 # simple search for words in name/description
 msf6 > search service # ex: apache, ftp...
 msf6 > search module # ex: exploit/windows/http/xxx
 msf6 > search CVE-YEAR-ID
+msf6 > search type:auxiliary # search auxiliaries
+msf6 > search platform:... 
 ```
 
 Use an exploit
@@ -75,6 +92,8 @@ meterpreter >
 ```
 </div></div>
 
+> **TryHackMe note**: you need to start the VPN on the host, and use `set LHOST tun0`, or the correct network interface used by the VPN.
+
 <br><br>
 
 📌 Advanced usage 📌
@@ -115,6 +134,21 @@ msf6 exploit('module_used') > unset all
 # even if you go back, every module with have
 # this value for RHOSTS, unless, you use unset
 msf6 exploit('module_used') > setg RHOSTS xxx
+```
+
+See, and use another payload
+
+```bash
+msf6 > show payloads
+msf6 > set payload 1
+msf6 > set payload payload_name
+```
+
+You can request info about an exploit/...
+
+```bash
+msf6 > info module_name # ex: exploit/windows/http/xxx
+msf6 > info module_index # ex: 0
 ```
 </div></div>
 <hr class="sr">
