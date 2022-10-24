@@ -262,3 +262,33 @@ This video is a bit long, but explain better [the Dan Kaminsky attack](https://w
 ### Steganography
 
 Hide things in images: [Steganography](https://0xrick.github.io/lists/stego/).
+
+<hr class="sep-both">
+
+## Printers - IPP - (TCP/631)
+
+"The Internet Printing Protocol (IPP) - is a specialized Internet protocol for communication between client devices and printers. It allows clients to submit one or more print jobs to the printer or print server, and perform tasks such as querying the status of a printer, obtaining the status of print jobs, or canceling individual print jobs."
+
+If open to the internet, everyone can print, or use it as a middleman for attacks.
+
+https://www.variot.eu/
+
+"An open IPP port can expose a lot of sensitive information such as printer name, location, model, firmware version, or even printer wifi SSID."
+
+* https://github.com/RUB-NDS/PRET
+* pip install colorama pysnmp
+
+```bash
+$ python pret.py
+# look for printers
+$ python pret.py file.lan ps # test language postscript
+$ python pret.py <ip> pjl # Printer Job Language
+$ python pret.py /dev/usb/lp0 pcl # Printer Command Language
+```
+
+http://hacking-printers.net/wiki/index.php/Printer_Security_Testing_Cheat_Sheet
+
+PRET isn't going to work here as it is using port 9000 by default
+
+* Brute force ssh password `nmap <MACHINE_IP> -p 22 --script ssh-brute --script-arg userdb=user.txt`
+* `http://ip:631/printers/`

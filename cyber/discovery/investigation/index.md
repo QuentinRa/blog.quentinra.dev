@@ -8,6 +8,45 @@
 
 <hr class="sr">
 
+## Inspecting files
+
+<div class="row row-cols-md-2"><div>
+
+**A PDF**: use `pdfinfo`, an online tool, or simply your default reader, which should have a "details" section.
+
+```bash
+$ sudo apt install poppler-utils
+$ pdfinfo xxx.pdf
+Author:         XXX
+Creator:        Microsoft Word
+CreationDate:   Sun Aug 28 22:12:17 2022 EDT
+ModDate:        Sun Aug 28 22:12:17 2022 EDT
+[...]
+PDF version:    1.7
+```
+</div><div>
+
+**An image**: use `exiftool`, or an online tool such as [jimpl](https://jimpl.com/) / [IMV](https://www.geekyhumans.com/tools/image-metadata-viewer).
+
+```bash
+$ sudo apt install libimage-exiftool-perl
+$ exiftool xxx.png
+[...]
+File Modification Date/Time     : 2022:10:22 18:01:32-04:00
+[...]
+File Type                       : PNG
+File Type Extension             : png
+MIME Type                       : image/png
+[...]
+Software                        : www.inkscape.org
+[...]
+```
+
+You can view stuff like the GPS coordinates, the camera/device model...
+</div></div>
+
+<hr class="sl">
+
 ## Maltego
 
 <div class="row row-cols-md-2"><div>
@@ -37,7 +76,7 @@ Select "Maltego CE (free)", then once you [created a MaltegoCE account](https://
 Wait, and investigate what maltego found for you!
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Google dorking
 
