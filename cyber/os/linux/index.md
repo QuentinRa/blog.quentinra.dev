@@ -71,7 +71,11 @@ Learn more about your environment
 
 **Cron tasks** ⭐
 
-Cron are the name given to automated tasks on Linux. See `crontab -l` for the tasks of the current user, and `ls -la /etc/cron*` for every cron tasks. Then, you may look for vulnerable cron tasks.
+Cron are the name given to automated tasks on Linux. See `crontab -l` for the tasks of the current user, and `ls -la /etc/cron*` for every cron tasks. Then, you may look for vulnerable cron tasks, meaning tasks using
+
+* files that you can edit, 
+* environment variables using paths/... that you can edit,
+* glob-patterns that you may inject, for instance, if a command runs on a directory in which you can create files, you can create files named after the injectable command line flags.
 
 <br>
 
