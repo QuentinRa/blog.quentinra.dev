@@ -169,7 +169,11 @@ $ cat /etc/shadow
 ```
 </div><div>
 
-...
+Scripts having the SUID bit can be executed with the permissions of their owner. If you find one, try to see on GTFOBins if you have a well-known way to exploit it.
+
+```bash
+$ find / -perm -u=s -type f 2>/dev/null
+```
 </div></div>
 
 <hr class="sr">
