@@ -88,3 +88,5 @@ Since we know our victim machine is running Windows Defender, let's go ahead and
   * https://tryhackme.com/room/linuxstrengthtraining
   * https://tryhackme.com/room/blaster
   * https://tryhackme.com/room/kenobi
+
+* Random: https://www.thewindowsclub.com/how-to-create-a-virtualbox-shared-folder-in-windows
