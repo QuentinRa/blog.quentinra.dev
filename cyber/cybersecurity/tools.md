@@ -95,27 +95,6 @@ You got `l` for lines, `-w` for words, `h` for characters, `c` for HTTP code. Yo
 </details>
 </details>
 
-<hr class="sl">
-
-## gobuster
-
-![Usage: Bruteforce GET URLs](https://img.shields.io/badge/usage-Bruteforce%20GET%20URLs-ffd700)
-
-This tool can be used to bruteforce URLs, written in GO, it's supposedly internally more efficient, and robust. Check [GoBuster repository on GitHub](https://github.com/OJ/gobuster).
-
-```bash
-# gobuster dir -u url -w wordlist.txt -x extension, extension
-gobuster dir -u 127.0.0.1 -w wordlist.txt -w php
-gobuster dir -u domain.com -w wordlist.txt -w php
-# if "wordlist.txt" has the word "toto", then gobuster will try
-# 127.0.0.1/toto.php (resp. domain.com/toto.php)
-
-# multiple extensions
-gobuster dir -u 127.0.0.1 -w wordlist.txt -w php, html
-# 127.0.0.1/toto.php
-# 127.0.0.1/toto.html
-```
-
 <hr class="sr">
 
 ## SQLMap
