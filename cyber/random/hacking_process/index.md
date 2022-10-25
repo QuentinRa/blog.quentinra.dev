@@ -41,6 +41,7 @@
 
 **Find more infos about the computer** 🗺️
 
+* If you can, try to see the computer as its users do, because you may find some interesting stuff.
 * ...
 
 </div><div>
@@ -51,4 +52,18 @@
 * Try to look for mails/conversations
 * Try to look the browser history of the target
 * Try to look the command history of the target
+</div></div>
+
+<hr class="sl">
+
+## After
+
+<div class="row row-cols-md-2"><div>
+
+* Cleanup logs
+* Mess with timestamp/... to complicate forensics
+* Leave a backdoor?
+</div><div>
+
+...
 </div></div>

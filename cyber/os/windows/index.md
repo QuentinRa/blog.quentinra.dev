@@ -41,6 +41,7 @@ Learn more about your environment
 
 **Note**:
 
-* The `lsass service` is responsible for authentication within Windows.
+* The `lsass service` is responsible for authentication within Windows. There is [mimikatz/kiwi](https://github.com/gentilkiwi/mimikatz) (16.2k ⭐) to extract passwords from the memory. For instance, if there is a task running belonging to an user, even if they are not logged in, we can get their password.
+* Kerberos is the authentication system in Windows domains.
 
 </div></div>

