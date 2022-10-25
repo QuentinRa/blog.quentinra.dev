@@ -124,27 +124,11 @@ https://github.com/jondonas/linux-exploit-suggester-2
 https://docs.metasploit.com/docs/using-metasploit/intermediate/exploit-ranking.html
 https://darkstar7471.com/resources.html
 
-* Kali: update / upgrade
-* sudo gunzip /usr/share/wordlists/rockyou.txt.gz
-
 <hr class="sep-both">
 
 ## Adventure
 
 Steps
-- (First investigate)
-- Then discovery
-  => notice http -> try loading the website
-  - Try to find hidden folders
-  - `gobuster dir -u 10.10.11.56 -w /usr/share/dirbuster/wordlists/directory-list-2.3-small.txt`
-  => 3389/tcp open  ms-wbt-server
-  - apt install remmina
-  - remmina
-  - enter the ip
-  - then the credentials
-  - toogle dynamic resolution update
-  - whoami : nt authority\system
-- check browser history / credentials
 - nmap -sC
   - OS
   - Computer name / hostname

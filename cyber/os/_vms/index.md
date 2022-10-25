@@ -55,4 +55,8 @@
 
 * [Link](https://www.kali.org/get-kali/#kali-virtual-machines)
 * There are giving you prebuilt image, get started in seconds!
+* **Username**: kali / **Password**: kali
+* Don't forget to use `sudo apt update` / `sudo apt upgrade`
+* You may find wordlist in `/usr/share/wordlists/`
+* extract "rockyou.txt" `sudo gunzip /usr/share/wordlists/rockyou.txt.gz`
 </div></div>

@@ -18,7 +18,7 @@ Most Linux commands are available, although they are aliases to Windows commands
 
 Learn more about your environment
 
-* `whoami`: see your username
+* `whoami`: see your username, or `NT AUTHORITY\SYSTEM` (root)
 * `hostname`: see hostname
 * `net localgroup administrators`: see users, and if they are administrators or not.
 </div></div>

@@ -13,6 +13,7 @@
     * Find the services running on these ports, and maybe the OS
     * Find the OS
     * Saving scans can be useful has they can be imported <small>(ex: in `metasploit`)</small>
+    * Lunch at least a scan on all ports, not just the top ones.
 
 > You may have to use `-Pn` on hosts not responding to ICMP requests, such as Windows servers by default.
 

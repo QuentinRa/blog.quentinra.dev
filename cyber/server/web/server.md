@@ -2,7 +2,7 @@
 
 <hr class="sl">
 
-## Server enumeration
+## Forced Browsing / Server enumeration
 
 *The goal is to find "hidden" files/directories.*
 

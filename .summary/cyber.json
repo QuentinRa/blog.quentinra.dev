@@ -75,6 +75,13 @@
     ],
     "OS": [
       {
+        "tag": "os/index.md",
+        "name": "General notes",
+        "desc": "",
+        "icon": "",
+        "hidden": false
+      },
+      {
         "tag": "os/linux/index.md",
         "name": "Exploit Linux",
         "desc": "",
