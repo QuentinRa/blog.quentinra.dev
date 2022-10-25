@@ -113,4 +113,15 @@ First, let's navigate to AttackerKB! For our purposes, think of AttackerKB as si
 
 * read comments
 * links to metasploit
+* https://github.com/horshark/akb-explorer
 * ...
+
+We previously had to add the hostname to the /etc/hosts file because of this. SSL true. Metasploit. The hostname was found in the certificate.
+
+* Command shell session 1 opened
+  * If it shows that, you can write commands, that just no a meterpreter
+  * use "background"
+  * `sessions -u -1`
+  * go to your new nice meterpreter session
+  * https://docs.metasploit.com/docs/pentesting/metasploit-guide-upgrading-shells-to-meterpreter.html
+  * `sessions -k 3`
