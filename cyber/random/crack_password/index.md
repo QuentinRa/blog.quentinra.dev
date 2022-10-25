@@ -120,4 +120,25 @@ $ john --format=gpg hash --wordlist=/usr/share/wordlists/rockyou.txt
 ```
 
 > If by any means you got someone's private key that was used to encrypt this file <small>(a key may be used instead of a passphrase)</small>, then use `gpg --import xxx.key` to import it, and decrypt the file as usual.
-</div></div> 
+</div></div>
+
+<hr class="sr">
+
+## SSH private key
+
+<div class="row row-cols-md-2"><div>
+
+Some users are using a key instead of a password while connecting to a server via SSH, because, as long as the key do not leak, it's more secure than sending credentials.
+
+```bash
+ssh -i key
+```
+</div><div>
+
+The key is usually protected by a password. You can use `ssh2jhon` to convert it to a file that `john` can try to break.
+
+```bash
+$ ssh2jhon key > hash
+$ john --format=ssh hash --wordlist=/usr/share/wordlists/rockyou.txt
+```
+</div></div>
