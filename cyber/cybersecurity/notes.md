@@ -108,7 +108,6 @@ URL
 
 ---
 
-
 First, let's navigate to AttackerKB! For our purposes, think of AttackerKB as similar to Exploit-DB but with a higher degree of information surrounding vulnerabilities and the exploits therein associated with them. 
 
 * read comments
@@ -125,3 +124,27 @@ We previously had to add the hostname to the /etc/hosts file because of this. SS
   * go to your new nice meterpreter session
   * https://docs.metasploit.com/docs/pentesting/metasploit-guide-upgrading-shells-to-meterpreter.html
   * `sessions -k 3`
+  
+<hr class="sep-both">
+
+## Burp
+
+Burp Suite is also very commonly used when assessing mobile applications, as the same features which make it so attractive for web app testing translate almost perfectly into testing the APIs (Application Programming Interfaces) powering most mobile apps.
+
+* Proxy: intercept, and modify request
+* Repeater: intercept, modify, and resend multiple times
+* Intruder: try to bruteforce entrypoint/forms/...
+* Decoder: decode something, or encode a payload
+* Comparer: compare data
+* Sequencer: check algorithm generating tokens/...
+
+```
+Ctrl + Shift + D Switch to the Dashboard
+Ctrl + Shift + T Switch to the Target tab
+Ctrl + Shift + P Switch to the Proxy tab
+Ctrl + Shift + I Switch to the Intruder tab
+Ctrl + Shift + R Switch to the Repeater tab
+```
+
+* Project options (only one project)
+* Users options (application-wise)
