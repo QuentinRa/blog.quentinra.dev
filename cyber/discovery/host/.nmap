@@ -1,5 +1,8 @@
 https://tryhackme.com/room/nmap01
 
+`nmap -n`: no dns resolution
+nmap -O is no always useful to return the OS. Try using -sN on the open ports too.
+
 ARP scan: This scan uses ARP requests to discover live hosts
 ICMP scan: This scan uses ICMP requests to identify live hosts
 TCP/UDP ping scan: This scan sends packets to TCP ports and UDP ports to determine live hosts.
