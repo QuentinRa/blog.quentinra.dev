@@ -269,5 +269,16 @@ There are two OLD scripts, for OLD Linux Kernels, if needed
 
 * [Linux_Exploit_Suggester](https://github.com/InteliSecureLabs/Linux_Exploit_Suggester) (1.6k ⭐): up to 4.x excluded
 * [Linux Kernel Exploit Suggester 2](https://github.com/jondonas/linux-exploit-suggester-2) (1.4k ⭐): up to 5.x excluded
+</div></div>
 
+<hr class="sr">
+
+## Random
+
+<div class="row row-cols-md-2"><div>
+
+The Fork bomb is an attack wherein a process continually replicates itself to deplete available system resources, according to [Wikipedia](https://en.wikipedia.org/wiki/Fork_bomb).
+</div><div>
+
+...
 </div></div>

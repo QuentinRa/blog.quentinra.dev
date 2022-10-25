@@ -2,7 +2,8 @@
 
 A lot of stuff to get started in cybersecurity, including websites to learn, practice, find news, look for news, along with CVE lookup, and websites to check if your credentials leaked, or stuff like that. 
 
-> You may also check [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources) (GitHub).
+> You may also check [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources) (GitHub).<br>
+> If you are tired, learn [some excuses to not do your job properly](https://cyberwtf.com/).
 
 <hr class="sl">
 
@@ -172,6 +173,7 @@ CVEs take the form: CVE-YEAR-ID.
 
 Small blogs
 
+* [dhilipsanjay CTFs](https://dhilipsanjay.gitbook.io/ctfs/)
 * [TheDutchHacker](https://www.thedutchhacker.com/)
 * [0xrick](https://0xrick.github.io/categories/)
 </div></div>

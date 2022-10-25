@@ -11,7 +11,7 @@ The [Metasploit Framework](https://github.com/rapid7/metasploit-framework) is a 
 If you want to test your skills, download the Vulnerable OS [Metasploit 2](https://docs.rapid7.com/metasploit/metasploitable-2/), or [Metasploit3](https://github.com/rapid7/metasploitable3). You can install it on a VM.
 
 * **Username**: `msfadmin`. **Password**: `msfadmin`
-* Before the keyword is using QWERTY. You can swap once logged (`sudo loadkeys fr`).
+* The keyword is using QWERTY. You can swap once logged, if you need to (ex: `sudo loadkeys fr`).
 
 > A great reference is [metasploit-unleashed](https://www.offensive-security.com/metasploit-unleashed/).
 

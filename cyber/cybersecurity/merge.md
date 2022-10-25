@@ -282,3 +282,40 @@ PRET isn't going to work here as it is using port 9000 by default
 
 * Brute force ssh password `nmap <MACHINE_IP> -p 22 --script ssh-brute --script-arg userdb=user.txt`
 * `http://ip:631/printers/`
+
+<hr class="sep-both">
+
+## SSRF
+
+https://www.youtube.com/watch?v=1iHCZybiDcw
+https://www.youtube.com/watch?v=-pNYmgK_dWo
+https://www.youtube.com/watch?v=G-v2NEgyzSs
+
+<hr class="sep-both">
+
+## OWASP
+
+* https://owasp.org/www-project-top-ten/
+* Juiceshop
+* https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
+* https://github.com/OWASP/wstg
+
+<hr class="sep-both">
+
+## MITM
+
+* https://us.norton.com/internetsecurity-wifi-what-is-a-man-in-the-middle-attack.html
+* https://snyk.io/learn/man-in-the-middle-attack/
+* https://www.rapid7.com/fundamentals/man-in-the-middle-attacks/
+
+<hr class="sep-both">
+
+## Alternate Data Streams
+
+Alternate Data Streams (ADS)
+Dans les fichiers NTFS, généralement un flux :$DATA est le flux par défaut, mais il peut y avoir d’autres flux cachés dans un exécutable.
+Get-Item -Path fichier.exe -Stream * : voir tous les flux
+wmic process call create $(Resolve-Path .\fichier.exe:flux) : lancer l’exécutable via un flux
+
+https://github.com/OWASP/CheatSheetSeries
+https://www.zaproxy.org/
