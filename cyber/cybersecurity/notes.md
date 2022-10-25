@@ -58,3 +58,18 @@ Since we know our victim machine is running Windows Defender, let's go ahead and
   * paste the command output by Metasploit
 * https://www.offensive-security.com/metasploit-unleashed/meterpreter-service/
 * run persistence -X
+
+<hr class="sep-both">
+
+## Learn again
+
+* https://www.kali.org/tools/hashid/
+* https://github.com/t0thkr1s/gtfo
+* https://vulners.com/ -> https://vulners.com/cve/CVE-2016-1531
+* WTF (strace) https://jvns.ca/strace-zine-v3.pdf
+* no_root_squash: if a root user (client) is dumping a file on the server, then they will be created as "root": https://en.wikipedia.org/wiki/Unix_security#Root_squash
+* https://github.com/mzet-/linux-exploit-suggester
+* https://github.com/diego-treitos/linux-smart-enumeration (lse)
+* https://0xsanz.medium.com/70-ways-to-get-root-linux-privilege-escalation-d98ec78f1405 (do not seem really "useful")
+* ".old" as backups
+* unexpected folders in "/"
