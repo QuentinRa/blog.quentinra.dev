@@ -16,6 +16,13 @@
         "desc": "",
         "icon": null,
         "hidden": false
+      },
+      {
+        "tag": "random/hacking_process/index.md",
+        "name": "H@king process",
+        "desc": "",
+        "icon": null,
+        "hidden": false
       }
     ],
     "Discovery": [
@@ -38,6 +45,20 @@
       {
         "tag": "server/web/index.md",
         "name": "Exploit webserver",
+        "desc": "",
+        "icon": "",
+        "hidden": false
+      },
+      {
+        "tag": "server/web//server.md",
+        "name": "Server-side",
+        "desc": "",
+        "icon": "",
+        "hidden": false
+      },
+      {
+        "tag": "server/web/client.md",
+        "name": "Client-side",
         "desc": "",
         "icon": "",
         "hidden": false
