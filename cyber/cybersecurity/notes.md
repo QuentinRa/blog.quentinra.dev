@@ -73,3 +73,18 @@ Since we know our victim machine is running Windows Defender, let's go ahead and
 * https://0xsanz.medium.com/70-ways-to-get-root-linux-privilege-escalation-d98ec78f1405 (do not seem really "useful")
 * ".old" as backups
 * unexpected folders in "/"
+* hydra -l username -P rockyou.txt ssh://{target ip}
+  * try to bruteforce ssh password
+  * ssh xxx@yyy -T -L xxx:domain:xxx: create a tunnel mapping one port to another, need more research.
+* Nessus policies
+  * if you have a scope/knowledge of specific ports/app (dig)
+  * Discovery (all ports for instance)
+  * Credentials tabs
+* we may try to find urls with ".bak" files, like backup of scripts...
+
+* Must read again
+  * https://tryhackme.com/room/blue
+  * https://tryhackme.com/room/ice
+  * https://tryhackme.com/room/linuxstrengthtraining
+  * https://tryhackme.com/room/blaster
+  * https://tryhackme.com/room/kenobi
