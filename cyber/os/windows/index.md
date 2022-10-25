@@ -20,6 +20,7 @@ Learn more about your environment
 
 * `whoami`: see your username, or `NT AUTHORITY\SYSTEM` (root)
 * `hostname`: see hostname
+* `systeminfo`: see infos about the system
 * `net localgroup administrators`: see users, and if they are administrators or not.
 </div></div>
 
@@ -37,4 +38,9 @@ Learn more about your environment
 * `cd /Users/path/to/Documents`: usual place to store documents
 * `cd /Windows/System32/config/`: this may be a location for the **Security Account Manager** (**SAM**) database file is stored. This file is used to store users, their passwords, their groups...
 </div><div>
+
+**Note**:
+
+* The `lsass service` is responsible for authentication within Windows.
+
 </div></div>

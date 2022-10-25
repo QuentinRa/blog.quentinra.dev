@@ -112,6 +112,7 @@ $ nmap -sT -vv scanme.nmap.org # level 2 verbose
 You can use flags to fetch information about your targets
 
 * `-sV`: what are the services used by the open ports? What's their versions? <small>(ex: 80 is using Apache x.xx.xx)</small>
+* `-sC`: find hostname, maybe the OS too, the computer name
 * `-O`: what's the operating system of the host?
 * `-A`: look for every kind of information
 

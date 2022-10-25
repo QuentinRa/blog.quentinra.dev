@@ -10,8 +10,9 @@
 
 * You can use `nmap` to
     * Find open ports
-    * Find the services running on these ports, and maybe the OS
-    * Find the OS
+    * Find the services running on these ports, and maybe the OS (`-sV`)
+    * Find the OS (`-O`)
+    * Find the hostname / computer name, or some info that may be relevant (`-sC`)
     * Saving scans can be useful has they can be imported <small>(ex: in `metasploit`)</small>
     * Lunch at least a scan on all ports, not just the top ones.
 
@@ -38,9 +39,16 @@
 
 <div class="row row-cols-md-2 mt-4"><div>
 
+**Find more infos about the computer** 🗺️
+
+* ...
+
+</div><div>
+
+**Fetch data** 😎
+
 * Try to look for backups
 * Try to look for mails/conversations
 * Try to look the browser history of the target
 * Try to look the command history of the target
-</div><div>
 </div></div>

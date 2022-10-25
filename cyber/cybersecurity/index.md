@@ -147,9 +147,11 @@ CVEs take the form: CVE-YEAR-ID.
 
 * [exploit-db.com](https://www.exploit-db.com/), and the command [searchsploit](https://github.com/offensive-security/exploitdb). Useful to find exploits, and test them.
 
-* [nvd.nist.gov](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&search_type=all)
+* [nvd.nist.gov](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&search_type=all): a reference 📌
 
-* [attackerkb.com](https://attackerkb.com/): the community is giving reviews on CVEs.
+* [attackerkb.com](https://attackerkb.com/): community reviews on CVEs.
+
+* [CVE details](https://www.cvedetails.com/): interface easy to use
 </div><div>
 
 * [cve.circl.lu](https://cve.circl.lu/): quite readable, as they get to the point, with a readable interface
