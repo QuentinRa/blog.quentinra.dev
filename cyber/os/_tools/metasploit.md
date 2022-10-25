@@ -55,7 +55,6 @@ msf6 > search type:auxiliary # search auxiliaries
 msf6 > search platform:... 
 msf6 > search search cve:2010-2025
 ```
-</div><div>
 
 Use an exploit
 
@@ -63,6 +62,7 @@ Use an exploit
 msf6 > use module_name # ex: exploit/windows/http/xxx
 msf6 > use module_index # ex: 0
 ```
+</div><div>
 
 See the options required by the module. Find properties marked "required", but with no default value.
 
@@ -83,6 +83,13 @@ msf6 exploit('module_used') > set <option> <value>
 * `set use <module>`: use another module
 * `set PAYLOAD <value>`: use another module
 </details>
+
+At the bottom of the options shown by `options`, there is also a target. You may want to use another one, in some cases.
+
+```bash
+$ show targets
+$ set target 2 # ex: use target 2
+```
 
 Once ou filled everything you need to, run the exploit. If you were successful, a meterpreter will be created allowing you to access a short of enhanced <small>(with more features)</small> shell of the target.
 
@@ -210,7 +217,6 @@ meterpreter > run post/multi/recon/local_exploit_suggester
 ```
 
 Note: you can use `sessions sid` in the meterpreter, which is like `sessions -i sid` in the msfconsole. You can use `background` to go back to the msfconsole, for instance, to run another exploit.
-</div><div>
 
 To access a service, we need to be "in" a process that has the same architecture, and the same permissions, that our target. Usually, look for process run by "NT AUTHORITY\SYSTEM" (root).
 
@@ -230,8 +236,9 @@ meterpreter > creds_all # retrieve all credentials
 meterpreter > golden_ticket_create
 ```
 </details>
+</div><div>
 
-Once you are admin
+Once/if you are admin,
 
 ```bash
 meterpreter > getsystem

