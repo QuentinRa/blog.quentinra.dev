@@ -1,10 +1,4 @@
-# Cybersecurity
-
-This is a list of every tool, repository, or program that you may use across every other sub-courses, or while working in cybersecurity. The list may be incomplete if some commands are introduced directly in other courses such as 'Cybersecurity - commands', or 'Linux - networking'.
-
-<hr class="sl">
-
-## BurpSuite
+# BurpSuite
 
 ![Usage: Intercept, and edit requests](https://img.shields.io/badge/usage-Intercept,%20and%20edit%20requests-ffd700)
 

@@ -1,14 +1,4 @@
-# Techniques used by cyber hackers
-
-<hr class="sep-both">
-
-# Server Security
-
-A list of sever-related attacks, along tips, or any related knowledge. There us some knowledge about discovering entrypoint (open ports using nmap), hidden files, and knowledge related to some services such as FTP.
-
-<hr class="sl">
-
-## Discovery of hidden entrypoint
+# Discovery of hidden entrypoint
 
 ![Level: Novice](https://img.shields.io/badge/level-Novice-7cfc00)
 

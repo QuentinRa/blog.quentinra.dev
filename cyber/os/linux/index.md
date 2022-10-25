@@ -238,3 +238,36 @@ export -f /some/path
 $ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/; chmod +xs /tmp/bash)' ./script
 ```
 </div></div>
+
+<hr class="sr">
+
+## NFS
+
+<div class="row row-cols-md-2"><div>
+
+NFS files are created with the permissions of the remote user. If the user is root, and root squashing was enabled, then "nobody" will be used instead.
+
+```bash
+# see NFS exports
+$ cat /etc/exports
+```
+</div><div>
+</div></div>
+
+<hr class="sl">
+
+## Kernel exploits
+
+<div class="row row-cols-md-2"><div>
+
+Kernel exploits should be used at a last resort, as they will most probably severely impact the machine state.
+
+* [Dirty COW](https://en.wikipedia.org/wiki/Dirty_COW) on Linux kernel <4.8.3
+</div><div>
+
+There are two OLD scripts, for OLD Linux Kernels, if needed
+
+* [Linux_Exploit_Suggester](https://github.com/InteliSecureLabs/Linux_Exploit_Suggester) (1.6k ⭐): up to 4.x excluded
+* [Linux Kernel Exploit Suggester 2](https://github.com/jondonas/linux-exploit-suggester-2) (1.4k ⭐): up to 5.x excluded
+
+</div></div>
