@@ -90,3 +90,27 @@ Since we know our victim machine is running Windows Defender, let's go ahead and
   * https://tryhackme.com/room/kenobi
 
 * Random: https://www.thewindowsclub.com/how-to-create-a-virtualbox-shared-folder-in-windows
+
+<hr class="sl">
+
+## ...
+
+URL
+
+* Scheme: (protocol) HTTP/HTTPS/...
+* Username:Password@Domain:port/Path?query#Fragment
+* Methods GET, DELETE...
+* Headers
+  * Server: some server
+  * Set-cookie: ... => server send the cookie in every request
+  * ...
+* Response code
+
+---
+
+
+First, let's navigate to AttackerKB! For our purposes, think of AttackerKB as similar to Exploit-DB but with a higher degree of information surrounding vulnerabilities and the exploits therein associated with them. 
+
+* read comments
+* links to metasploit
+* ...
