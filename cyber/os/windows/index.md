@@ -119,10 +119,6 @@ Infos on a Local Machine
 
 <hr class="sr">
 
-## ...
-
-<hr class="sep-both">
-
 ## Alternate Data Streams (ADS)
 
 <div class="row row-cols-md-2"><div>
@@ -152,5 +148,7 @@ Hackers can use that to store malicious code inside a file. They can execute it 
 > $(Resolve-Path .\file.exe:stream)
 ```
 
-...
+More about it:
+
+* [Introduction to Alternate Data Streams](https://www.malwarebytes.com/blog/news/2015/07/introduction-to-alternate-data-streams)
 </div></div>
