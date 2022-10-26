@@ -1,32 +1,31 @@
 # metasploit
 
-<hr class="sl">
-
-## Introduction
-
 <div class="row row-cols-md-2"><div>
 
-The [Metasploit Framework](https://github.com/rapid7/metasploit-framework) is a penetration testing framework that you can use to test your systems. [See Metasploit Documentation](https://docs.metasploit.com/).
-
-If you want to test your skills, download the Vulnerable OS [Metasploit 2](https://docs.rapid7.com/metasploit/metasploitable-2/), or [Metasploit3](https://github.com/rapid7/metasploitable3). You can install it on a VM.
-
-* **Username**: `msfadmin`. **Password**: `msfadmin`
-* The keyword is using QWERTY. You can swap once logged, if you need to (ex: `sudo loadkeys fr`).
-
-> A great reference is [metasploit-unleashed](https://www.offensive-security.com/metasploit-unleashed/).
-
-</div><div>
+The [Metasploit Framework](https://github.com/rapid7/metasploit-framework) is a penetration testing framework that you can use to test your systems.
 
 Metasploit is divided into modules
 
-* **Encoders**
-* **Evasion**
-* **Exploits**
-* **NOPs**
-* **Payloads** <small>(single/inline, and not inline)</small>: how the framework will send data
-* **Post**: scripts to start the meterpreter, or convenient functions such as `hashdump`.
+* **Auxiliary**: test an exploit
+* **Payloads**: way used to attack the target
+    * single/inline payloads
+    * not inline payloads
+* **Exploits**: code exploiting a vulnerability
+* Encoders/Evasion/NOPs
+* **Post**: useful scripts once you are on the target
 
-> **Auxiliary** can be used to check if an exploit can be used on a target. They are not always an auxiliary.
+Links
+
+* [Metasploit Documentation](https://docs.metasploit.com/)
+* [Metasploit Unleashed](https://www.offensive-security.com/metasploit-unleashed/) 📌
+
+</div><div>
+
+
+If you want to test your skills on a target, download Metasploit Vulnerable OS [Metasploit 2](https://docs.rapid7.com/metasploit/metasploitable-2/), or [Metasploit3](https://github.com/rapid7/metasploitable3).
+
+* **Username**: `msfadmin`. **Password**: `msfadmin`
+* The keyword layout is QWERTY. You can swap it once logged, if you need to <small>(ex: `sudo loadkeys fr`)</small>.
 </div></div>
 
 <hr class="sr">

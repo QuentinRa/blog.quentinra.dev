@@ -96,7 +96,7 @@
         "hidden": false
       },
       {
-        "tag": "os/_tools/metasploit.md",
+        "tag": "os/_tools/metasploit/index.md",
         "name": "metasploit",
         "desc": "",
         "icon": "<i class=\"bi bi-tools\"></i>",
