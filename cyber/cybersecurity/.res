@@ -1,5 +1,9 @@
 Next
 => Cyberattacks https://en.wikipedia.org/wiki/List_of_cyberattacks + https://en.wikipedia.org/wiki/Petya_and_NotPetya
+=> MITM (https://snyk.io/learn/man-in-the-middle-attack/
+
+Learn
+https://www.rapid7.com/fundamentals/
 
 Articles
 https://www.guru99.com/what-is-hacking-an-introduction.html

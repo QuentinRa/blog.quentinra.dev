@@ -15,6 +15,7 @@ uniq / uniq -c
 -j REJECT --reject-with tcp-reset
 find / -type f -a \( -perm -u+s -o -perm -g+s \)
 https://unit42.paloaltonetworks.com/wireshark-workshop-videos/
+less -r (read with colors?)
 
 Blog
 https://linuxhandbook.com/

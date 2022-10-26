@@ -114,6 +114,7 @@ Once you found a service, look for CVE for the given version, and try to use one
 
 There are many scripts checking if there are "common" files, testing commands... in order to look for information that would be useful for you to reach a higher level of privilege.
 
+* [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) (10.4k ⭐): a script shell
 * [LinEnum](https://github.com/rebootuser/LinEnum) (5.4k ⭐): a script shell
 * [traitor](https://github.com/liamg/traitor)  (5.4k ⭐): a script in Go
 * [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) (lse, 2.5k ⭐): a script shell
@@ -125,11 +126,13 @@ There are multiple ways to get the script on your target
 * Open a text editor, copy-paste it
   * run it `bash script.sh`,
   * or use chmod, then `./script.sh`
-* Use `wget`
+* Use `wget` / `curl`
+* Use `python` <small>(`sudo python -m SimpleHTTPServer 80` on the host)</small>
 * Use `FTP`
 * Use nc/netcat
   * On the victim: `nc -l -p port > script.sh`
   * On the attacker: `nc IP port < script.sh`
+* Using [penelope](https://github.com/brightio/penelope)
 </div></div>
 
 <hr class="sr">
@@ -267,6 +270,7 @@ Kernel exploits should be used at a last resort, as they will most probably seve
 
 There are two OLD scripts, for OLD Linux Kernels, if needed
 
+* [linux-exploit-suggester](https://github.com/mzet-/linux-exploit-suggester) (3.9k ⭐): still updated with new exploits
 * [Linux_Exploit_Suggester](https://github.com/InteliSecureLabs/Linux_Exploit_Suggester) (1.6k ⭐): up to 4.x excluded
 * [Linux Kernel Exploit Suggester 2](https://github.com/jondonas/linux-exploit-suggester-2) (1.4k ⭐): up to 5.x excluded
 </div></div>

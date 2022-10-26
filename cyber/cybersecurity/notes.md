@@ -1,24 +1,5 @@
 # Notes
 
-https://github.com/hack-with-github
-
-https://github.com/carlospolop/PEASS-ng
-https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet
-https://github.com/OWASP/Amass
-https://github.com/epi052/feroxbuster
-https://github.com/DominicBreuker/pspy
-https://github.com/evyatarmeged/Raccoon
-https://book.hacktricks.xyz/welcome/readme
-
-https://github.com/Cerbersec/scripts
-https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS
-https://github.com/carlospolop/PEASS-ng
-https://github.com/InteliSecureLabs/Linux_Exploit_Suggester
-https://github.com/jondonas/linux-exploit-suggester-2
-https://docs.metasploit.com/docs/using-metasploit/intermediate/exploit-ranking.html
-https://darkstar7471.com/resources.html
-https://github.com/mzet-/linux-exploit-suggester
-
 Other
 
 * https://www.hackerrank.com/
@@ -241,3 +222,8 @@ Not all its uses are malicious. For example, when you download a file from the I
 To learn more about ADS, refer to the following link from MalwareBytes here.
 
 * https://blog.malwarebytes.com/101/2015/07/introduction-to-alternate-data-streams/
+
+Alternate Data Streams (ADS)
+Dans les fichiers NTFS, généralement un flux :$DATA est le flux par défaut, mais il peut y avoir d’autres flux cachés dans un exécutable.
+Get-Item -Path fichier.exe -Stream * : voir tous les flux
+wmic process call create $(Resolve-Path .\fichier.exe:flux) : lancer l’exécutable via un flux

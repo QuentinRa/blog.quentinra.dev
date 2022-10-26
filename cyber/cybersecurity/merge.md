@@ -207,13 +207,7 @@ SELECT TABLE_NAME FROM information_schema.TABLES
 
 <hr class="sep-both">
 
-# Reverse Engineering
-
-Try to analyse, and exploit programs by accessing the underlying code, which can help finding database credential, or stuff like that. Any program is converted to a binary (language machine) via the compiler. The goal of Reverse Engineering is to find the code that generated this binary file.
-
-<hr class="sl">
-
-## Assembly
+# Assembly
 
 ![Level: Intermediate](https://img.shields.io/badge/level-Advanced-fae7b5)
 
@@ -285,14 +279,6 @@ PRET isn't going to work here as it is using port 9000 by default
 
 <hr class="sep-both">
 
-## SSRF
-
-https://www.youtube.com/watch?v=1iHCZybiDcw
-https://www.youtube.com/watch?v=-pNYmgK_dWo
-https://www.youtube.com/watch?v=G-v2NEgyzSs
-
-<hr class="sep-both">
-
 ## OWASP
 
 * https://owasp.org/www-project-top-ten/
@@ -300,23 +286,6 @@ https://www.youtube.com/watch?v=G-v2NEgyzSs
 * https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
 * https://github.com/OWASP/wstg
 * https://wiki.owasp.org/index.php/OWASP_Testing_Guide_v4_Table_of_Contents
-
-<hr class="sep-both">
-
-## MITM
-
-* https://us.norton.com/internetsecurity-wifi-what-is-a-man-in-the-middle-attack.html
-* https://snyk.io/learn/man-in-the-middle-attack/
-* https://www.rapid7.com/fundamentals/man-in-the-middle-attacks/
-
-<hr class="sep-both">
-
-## Alternate Data Streams
-
-Alternate Data Streams (ADS)
-Dans les fichiers NTFS, généralement un flux :$DATA est le flux par défaut, mais il peut y avoir d’autres flux cachés dans un exécutable.
-Get-Item -Path fichier.exe -Stream * : voir tous les flux
-wmic process call create $(Resolve-Path .\fichier.exe:flux) : lancer l’exécutable via un flux
-
-https://github.com/OWASP/CheatSheetSeries
-https://www.zaproxy.org/
+* https://github.com/OWASP/CheatSheetSeries
+* https://www.zaproxy.org/
+* https://github.com/OWASP/Amass

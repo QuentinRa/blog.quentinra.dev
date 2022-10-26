@@ -211,6 +211,7 @@ CVEs take the form: CVE-YEAR-ID.
 <div class="row row-cols-md-2 mt-3"><div>
 
 * [CrackItDown](https://web.archive.org/web/20210923121550/https://www.crackitdown.com/) (website dead, still available via the wayback machine)
+* [hacktricks.xyz](https://book.hacktricks.xyz/welcome/readme)
 </div><div>
 
 Small blogs
