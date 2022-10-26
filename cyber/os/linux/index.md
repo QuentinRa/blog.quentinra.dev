@@ -62,6 +62,8 @@ Learn more about your environment
   * The key must have the permissions `u+rw` at least
   * You can try to crack it
 
+<br>
+
 **Logs** 🗺️
 
 * `/var/log/` (folder): log files
