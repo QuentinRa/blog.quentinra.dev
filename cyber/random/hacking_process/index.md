@@ -2,6 +2,8 @@
 
 *These are notes that I'm taking when doing CTFs, nothing much.*
 
+*This page will be deleted*
+
 <hr class="sl">
 
 ## Discovery

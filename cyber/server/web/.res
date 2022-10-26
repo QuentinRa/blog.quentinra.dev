@@ -20,13 +20,3 @@ Forced-Browsing
 https://github.com/epi052/feroxbuster
 https://github.com/ffuf/ffuf
 https://github.com/epi052/feroxfuzz/
-
-URL
-* Scheme: (protocol) HTTP/HTTPS/...
-* Username:Password@Domain:port/Path?query#Fragment
-* Methods GET, DELETE...
-* Headers
-  * Server: some server
-  * Set-cookie: ... => server send the cookie in every request
-  * ...
-* Response code

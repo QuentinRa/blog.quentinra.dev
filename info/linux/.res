@@ -3,7 +3,7 @@ https://devhints.io/bash#parameter-expansions / bash reference / use brace expan
 what is the difference between snap/package/dpkg...
 learn more about what can I do with netstat (-tulpn?)
 converting BASH Scripts to Binary (https://iq.opengenus.org/bash-bourne-again-shell/)
-OS/ENS
+OS/ENS Course
 Heredoc (<<EOF
 YWFhYQ==
 EOF)
@@ -19,6 +19,7 @@ less -r (read with colors?)
 strace/strings https://jvns.ca/strace-zine-v3.pdf
 env X=val ./myScript
 ssh xxx@yyy -T -L xxx:domain:xxx: create a tunnel mapping one port to another, need more research.
+xargs
 
 Blog
 https://linuxhandbook.com/
