@@ -1,9 +1,3 @@
-# BurpSuite
-
-![Usage: Intercept, and edit requests](https://img.shields.io/badge/usage-Intercept,%20and%20edit%20requests-ffd700)
-
-BurpSuite can be used to intercept a form, and apply some changes to it. You could automate this process. For instance, given a list of username, you can use BurpSuite to lunch a bruteforce attack.
-
 <details class="details-e">
 <summary>Intercept a form</summary>
 
@@ -32,18 +26,6 @@ A payload is the form data that is stored in the request. For instance, when sub
 Start the attack. If a response is different from others, then it should be worth it to try it manually.
 
 </details>
-
-
-## Burp
-
-Burp Suite is also very commonly used when assessing mobile applications, as the same features which make it so attractive for web app testing translate almost perfectly into testing the APIs (Application Programming Interfaces) powering most mobile apps.
-
-* Proxy: intercept, and modify request
-* Repeater: intercept, modify, and resend multiple times
-* Intruder: try to bruteforce entrypoint/forms/...
-* Decoder: decode something, or encode a payload
-* Comparer: compare data
-* Sequencer: check algorithm generating tokens/...
 
 ```
 Ctrl + Shift + D Switch to the Dashboard

@@ -62,6 +62,13 @@
         "desc": "",
         "icon": "",
         "hidden": false
+      },
+      {
+        "tag": "server/web/_tools/burp/index.md",
+        "name": "Burp Suite",
+        "desc": "",
+        "icon": "<i class=\"bi bi-tools\"></i>",
+        "hidden": false
       }
     ],
     "Database": [
@@ -74,13 +81,6 @@
       }
     ],
     "OS": [
-      {
-        "tag": "os/index.md",
-        "name": "General notes",
-        "desc": "",
-        "icon": "",
-        "hidden": false
-      },
       {
         "tag": "os/linux/index.md",
         "name": "Exploit Linux",
