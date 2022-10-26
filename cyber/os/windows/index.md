@@ -4,11 +4,25 @@
 
 ## Knowledge about Windows
 
+*It will, most likely, not change your life much if you know this, but, it's interesting I think.*
+
 <div class="row row-cols-md-2"><div>
 
 **File system**
 
-...
+Modern versions of Windows are using the New Technology File System (**NTFS**). Before, FAT16/32, and HPFS were used. FAT is still used for stuff like USB keys. NTFS is a file system that can repair itself in case of failure, using logs. It's known as a journaling file system.
+
+**Task Manager**
+
+* Shortcut: <kbd>CTRL+SHIFT+ESC</kbd>
+* List running processes
+* This guide is quite complete [Windows Task Manager](https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide/)
+
+**Control panel**
+
+* This is the entry point to most settings
+* In the top-right corner, it's possible to switch to another view <small>(ex: small icons)</small>, in which you may discover menus that you never opened before, but may but useful one way or another.
+
 </div><div>
 
 **Users**
@@ -16,15 +30,22 @@
 * `Administrator`: manage users, apps, groups, system-wide settings...
 * `Standard User`: can use apps, can access their files
 
+When there is a need for a user to elevate, Windows will show the User Account Control (UAC), in which a root user can press "yes", and a non-root user will have to log in using an account having sufficient privileges to do the requested action.
+
 **Permissions**
 
-...
-</div></div>
+Windows has 7 categories of permissions: Read, Write, Read & Execute, List Folder Contents, Modify, Full Control.
 
+You can learn more about them on this [article](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb727008(v=technet.10)#understanding-file-and-folder-permissions).
+
+The administrator can set permissions for a group, and users may be in multiple groups.
+</div></div>
 
 <hr class="sr">
 
 ## Windows handy commands
+
+*For a complete list of commands, you may check [Windows server shell reference](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands).*
 
 <div class="row row-cols-md-2"><div>
 
@@ -60,7 +81,7 @@ Infos on a Local Machine
 
 ## Windows environment
 
-*Note that you may be able to use Linux paths such as `/` instead of `c:\\`.*
+*Note that you may not be able to use Linux paths such as `/` instead of `c:\\`, as I'm using bellow.*
 
 <div class="row row-cols-md-2"><div>
 
@@ -85,6 +106,8 @@ Infos on a Local Machine
 **Windows services** <small>(usually use "Win✖️R" to open one)</small>:
 
 * `lusrmgr.msc`: list of users/groups
+* `taskmgr`: open the task manager
+* `MSConfig`: open the system configuration menu
 * `lsass` is responsible for authentication within Windows. There is [mimikatz/kiwi](https://github.com/gentilkiwi/mimikatz) (16.2k ⭐) to extract passwords from the memory. For instance, if there is a task running belonging to a user, even if they are not logged in, we can get their password.
 
 <br>

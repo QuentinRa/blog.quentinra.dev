@@ -115,13 +115,13 @@ $ make -v
 
 <div class="row row-cols-md-2"><div>
 
-You will most likely have to transfer files to a server. You can use `scp`, as if you were on Linux. If you don't like having to use a command, I recommend you to install [FileZilla](https://filezilla-project.org/).
+You will most likely have to transfer files to a server. You may use the graphical interface provided by [FileZilla](https://filezilla-project.org/).
 
-Once connected to "a site",
+Once connected,
 
-* To upload a file, simply drag and drop a file in a folder on your server.
+* **Upload**: simply drag and drop a file in a folder on your server.
 
-* To download a file, simply drag and drop a file in a folder on your computer.
+* **Download**: simply drag and drop a file in a folder on your computer.
 </div><div>
 
 Add a server
@@ -136,14 +136,24 @@ Add a server
 
 </div></div>
 
+> There is also [WinSCP](https://winscp.net/eng/index.php) if you want to use FTP/SCP. <br>
+> You may directly use the scp command without any interface, if you install GitSCM (see SSH).
+
 <hr class="sr">
 
 ## SSH (Secure Shell)
 
-You can use any powershell to open a remote shell, but there a a few solutions that Windows users usually use
+<div class="row row-cols-md-2"><div>
+
+There two graphical interfaces
 
 * [Putty](https://putty.org/)
 * [mobaxterm](https://mobaxterm.mobatek.net/)
+
+</div><div>
+
+Otherwise, if ssh is not installed on your computer, you can install it using [GitSCM](https://git-scm.com/), which will also install scp, and some others commands you might need.
+</div></div>
 
 <hr class="sl">
 

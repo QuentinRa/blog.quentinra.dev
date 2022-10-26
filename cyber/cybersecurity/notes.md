@@ -30,38 +30,6 @@
 
 <hr class="sep-both">
 
-## Windows
-
-The file system used in modern versions of Windows is the New Technology File System or simply NTFS. Before NTFS, there was FAT16/FAT32 (File Allocation Table) and HPFS (High Performance File System). You still see FAT partitions in USB devices, MicroSD cards, etc.
-
-NTFS is known as a journaling file system. In case of a failure, the file system can automatically repair the folders/files on disk using information stored in a log file. This function is not possible with FAT.
-
-NTFS addresses many of the limitations of the previous file systems; such as:
-
-Supports files larger than 4GB
-Set specific permissions on folders and files
-Folder and file compression
-Encryption (Encryption File System or EFS)
-
-* https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands
-
-The permissions are: https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb727008(v=technet.10)
-
-Each group has permissions set to it, and users are assigned/added to groups by the Administrator. When a user is assigned to a group, the user inherits the permissions of that group. A user can be assigned to multiple groups.
-
-* User Account Control (UAC)
-  * Everyone is a user
-  * When there is a need to upgrade a process
-  * Then user is prompted
-* See tasks
-  * Ctrl+Shift+Esc
-  * https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide/
-* Control panel > small icons
-* MSConfig W+R
-* taskmgr W+R
-
-<hr class="sep-both">
-
 ## ADS
 
 Alternate Data Streams (ADS) is a file attribute specific to Windows NTFS (New Technology File System).
