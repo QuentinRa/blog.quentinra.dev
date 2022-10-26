@@ -115,5 +115,42 @@ Infos on a Local Machine
 **Random**
 
 * Kerberos is the authentication system in Windows domains.
+</div></div>
 
+<hr class="sr">
+
+## ...
+
+<hr class="sep-both">
+
+## Alternate Data Streams (ADS)
+
+<div class="row row-cols-md-2"><div>
+
+On a file system using NTFS, ADS allow files to have more than one stream (`flux`) of data. By default, every file has only one stream: **:$DATA**. You can inspect a file using
+
+```powershell
+> Get-Item -Path SomeFile -Stream *
+
+PSPath        : Microsoft.PowerShell.Core\FileSystem::XXX\toto.pdf::$DATA
+PSParentPath  : Microsoft.PowerShell.Core\FileSystem::XXX
+PSChildName   : toto.pdf::$DATA
+PSDrive       : XXX
+PSProvider    : Microsoft.PowerShell.Core\FileSystem
+PSIsContainer : False
+FileName      : XXX\toto.pdf
+Stream        : :$DATA
+Length        : 0
+```
+</div><div>
+
+They can be used by Windows to store data, such as identifier on a file telling the operating system that this file was download from the Internet.
+
+Hackers can use that to store malicious code inside a file. They can execute it like this later, for instance using a legit/non-malicious application
+
+```powershell
+> $(Resolve-Path .\file.exe:stream)
+```
+
+...
 </div></div>

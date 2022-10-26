@@ -56,6 +56,7 @@ Learn more about your environment
 * `cat /etc/*release`: information about the operating system
 * `/etc/sudoers` <small>(root)</small>: sudoers, and rules applied to them, if any
 * `ls -ahl /root/`: see if there are readable files in root's home
+* `ls /`: look for unexpected folders in `/`
 * `find / -name *id_dsa* 2> /dev/null`: RSA credentials
   * You can use `ssh -i key` to connect using a key
   * The key must have the permissions `u+rw` at least

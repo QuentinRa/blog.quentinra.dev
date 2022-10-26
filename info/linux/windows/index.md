@@ -2,6 +2,8 @@
 
 Knowledge related to using Linux on Windows.
 
+> If you are having troubles, you may [check the Windows club](https://www.thewindowsclub.com/).
+
 <hr class="sl">
 
 ## Windows Subsystem for Linux (WSL)
