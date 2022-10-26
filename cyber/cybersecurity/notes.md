@@ -93,7 +93,7 @@ Since we know our victim machine is running Windows Defender, let's go ahead and
 
 <hr class="sl">
 
-## ...
+## WEB
 
 URL
 
@@ -106,7 +106,9 @@ URL
   * ...
 * Response code
 
----
+<hr class="sep-both">
+
+## AttackerKB
 
 First, let's navigate to AttackerKB! For our purposes, think of AttackerKB as similar to Exploit-DB but with a higher degree of information surrounding vulnerabilities and the exploits therein associated with them. 
 
@@ -114,6 +116,10 @@ First, let's navigate to AttackerKB! For our purposes, think of AttackerKB as si
 * links to metasploit
 * https://github.com/horshark/akb-explorer
 * ...
+
+<hr class="sep-both">
+
+## Metasploit
 
 We previously had to add the hostname to the /etc/hosts file because of this. SSL true. Metasploit. The hostname was found in the certificate.
 
@@ -182,3 +188,40 @@ Ctrl + Shift + R Switch to the Repeater tab
   * map the website as we visit it
 * Target > Issues definitions: list of attacks BurpSuite can detect.
 * In the proxy, you need to ensure that values are encoded. Select something > convert in > URL > URL encode key characters. Use the shortcut CTRL+U.
+
+<hr class="sep-both">
+
+## Windows
+
+* Linux .so
+
+The file system used in modern versions of Windows is the New Technology File System or simply NTFS. Before NTFS, there was FAT16/FAT32 (File Allocation Table) and HPFS (High Performance File System). You still see FAT partitions in USB devices, MicroSD cards, etc.
+
+NTFS is known as a journaling file system. In case of a failure, the file system can automatically repair the folders/files on disk using information stored in a log file. This function is not possible with FAT.
+
+NTFS addresses many of the limitations of the previous file systems; such as:
+
+Supports files larger than 4GB
+Set specific permissions on folders and files
+Folder and file compression
+Encryption (Encryption File System or EFS)
+
+* https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands
+
+The permissions are: https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb727008(v=technet.10)
+
+<hr class="sep-both">
+
+## ADS
+
+Alternate Data Streams (ADS) is a file attribute specific to Windows NTFS (New Technology File System).
+
+Every file has at least one data stream ($DATA), and ADS allows files to contain more than one stream of data. Natively Window Explorer doesn't display ADS to the user. There are 3rd party executables that can be used to view this data, but Powershell gives you the ability to view ADS for files.
+
+From a security perspective, malware writers have used ADS to hide data.
+
+Not all its uses are malicious. For example, when you download a file from the Internet, there are identifiers written to ADS to identify that the file was downloaded from the Internet.
+
+To learn more about ADS, refer to the following link from MalwareBytes here.
+
+* https://blog.malwarebytes.com/101/2015/07/introduction-to-alternate-data-streams/
