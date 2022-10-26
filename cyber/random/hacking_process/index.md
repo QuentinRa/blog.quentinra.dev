@@ -65,5 +65,5 @@
 * Leave a backdoor?
 </div><div>
 
-...
+* Use this machine as a starting point. Scan the network to discover more vulnerable machines.
 </div></div>

@@ -148,7 +148,7 @@ Privilege escalation refer to a process of obtaining super-administrator (a.k.a.
   * Exploit `sudo`
   * Exploit system files
   * Exploit cron jobs
-  * Exploit script with the SUID bit
+  * Exploit script/.so/... with the SUID bit
   * ...
 * ...
 </div></div>
@@ -245,7 +245,7 @@ $ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/; chmod +xs /tmp/bash)' ./scr
 
 <div class="row row-cols-md-2"><div>
 
-NFS files are created with the permissions of the remote user. If the user is root, and root squashing was enabled, then "nobody" will be used instead.
+NFS files are created with the permissions of the remote user. If the remote user is root, and root squashing is disabled, then the files will be created as root.
 
 ```bash
 # see NFS exports
@@ -279,6 +279,4 @@ There are two OLD scripts, for OLD Linux Kernels, if needed
 
 The Fork bomb is an attack wherein a process continually replicates itself to deplete available system resources, according to [Wikipedia](https://en.wikipedia.org/wiki/Fork_bomb).
 </div><div>
-
-...
 </div></div>

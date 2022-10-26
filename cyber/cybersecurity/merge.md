@@ -299,6 +299,7 @@ https://www.youtube.com/watch?v=G-v2NEgyzSs
 * Juiceshop
 * https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
 * https://github.com/OWASP/wstg
+* https://wiki.owasp.org/index.php/OWASP_Testing_Guide_v4_Table_of_Contents
 
 <hr class="sep-both">
 

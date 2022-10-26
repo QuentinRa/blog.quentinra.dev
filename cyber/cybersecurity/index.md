@@ -176,4 +176,6 @@ Small blogs
 * [dhilipsanjay CTFs](https://dhilipsanjay.gitbook.io/ctfs/)
 * [TheDutchHacker](https://www.thedutchhacker.com/)
 * [0xrick](https://0xrick.github.io/categories/)
+* [cyber-security-base-19](https://github.com/rage/cyber-security-base-19) <small>(down - the didn't paid the hosting provider :3)</small>
+* [MayADevBe](https://mayadevbe.me/)
 </div></div>

@@ -57,6 +57,14 @@
 * There are giving you prebuilt image, get started in seconds!
 * **Username**: kali / **Password**: kali
 * Don't forget to use `sudo apt update` / `sudo apt upgrade`
-* You may find wordlist in `/usr/share/wordlists/`
-* extract "rockyou.txt" `sudo gunzip /usr/share/wordlists/rockyou.txt.gz`
+* Keyboard: If you are using a non-qwerty keyword
+  * First, log in
+  * Click on kali icon (top left)
+  * Search "Keyboard"
+  * Go to the layout tab
+  * Add a keyboard layout, remove the unused one
+  * Now, aside from before login in, you will be able to use your keyboard
+* RockYou / Wordlist
+  * You may find wordlist in `/usr/share/wordlists/`
+  * extract "rockyou.txt" `sudo gunzip /usr/share/wordlists/rockyou.txt.gz`
 </div></div>

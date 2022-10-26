@@ -1,39 +1,27 @@
 # Notes
 
-**offensive security**
+https://github.com/hack-with-github
 
-Look for vulnerabilities, recommend patches. Exploiting bugs. Finding loopholes. Gain unauthorized access.
+https://github.com/carlospolop/PEASS-ng
+https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet
+https://github.com/OWASP/Amass
+https://github.com/epi052/feroxbuster
+https://github.com/DominicBreuker/pspy
+https://github.com/evyatarmeged/Raccoon
+https://book.hacktricks.xyz/welcome/readme
 
-* **penetration tester**: "Responsible for testing technology products for finding exploitable security vulnerabilities." (web security, network security knowledge, use various programming languages, cloud security)
-* **Red Teamer**: "Plays the role of an adversary, attacking an organization and providing feedback from an enemy's perspective."
-* **Security Engineer**: "design, monitor, and maintain security controls, networks, and systems to help prevent cyberattacks".
-
-**defensive Security**. 
-  * **Security Analyst** (monitor - splunk?)
-  * **Incident Responder** (impact? goal? what can they do? - Volatility?)
-  * **malware analysis**
-
-Detect, and stop attacks. Monitor, analyze. Investigate infected computers, try to find how they were hacked, track down cybercriminals.
-
-* Linux security researcher > Hashing
-
+https://github.com/Cerbersec/scripts
+https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS
+https://github.com/carlospolop/PEASS-ng
+https://github.com/InteliSecureLabs/Linux_Exploit_Suggester
+https://github.com/jondonas/linux-exploit-suggester-2
+https://docs.metasploit.com/docs/using-metasploit/intermediate/exploit-ranking.html
+https://darkstar7471.com/resources.html
+https://github.com/mzet-/linux-exploit-suggester
 
 Other
 
 * https://www.hackerrank.com/
-
-<hr class="sep-both">
-
-## Random
-
-* Attack a vulnerable machine, scan the network to discover more vulnerable machines.
-
-* Intrusion Detection System (IDS) is a system that detects unauthorised network and system intrusions. Examples include detecting unauthorised devices connected to the local network and unauthorised users accessing a system or modifying a file.
-
-* https://wiki.owasp.org/index.php/OWASP_Testing_Guide_v4_Table_of_Contents
-
-* Wireshark: https://unit42.paloaltonetworks.com/wireshark-workshop-videos/
-
 * The [SecLists GitHub Repository](https://github.com/danielmiessler/SecLists/) contains useful lists of usernames/passwords, payloads, urls, ...
 
 <hr class="sep-both">
@@ -193,8 +181,6 @@ Ctrl + Shift + R Switch to the Repeater tab
 
 ## Windows
 
-* Linux .so
-
 The file system used in modern versions of Windows is the New Technology File System or simply NTFS. Before NTFS, there was FAT16/FAT32 (File Allocation Table) and HPFS (High Performance File System). You still see FAT partitions in USB devices, MicroSD cards, etc.
 
 NTFS is known as a journaling file system. In case of a failure, the file system can automatically repair the folders/files on disk using information stored in a log file. This function is not possible with FAT.
@@ -237,6 +223,8 @@ Each group has permissions set to it, and users are assigned/added to groups by 
   * Ctrl+Shift+Esc
   * https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide/
 * Control panel > small icons
+* MSConfig W+R
+* taskmgr W+R
 
 <hr class="sep-both">
 

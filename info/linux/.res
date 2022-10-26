@@ -14,6 +14,7 @@ CRON `cron` process to schedule tasks, with crontab/crontab -l / Automated tasks
 uniq / uniq -c
 -j REJECT --reject-with tcp-reset
 find / -type f -a \( -perm -u+s -o -perm -g+s \)
+https://unit42.paloaltonetworks.com/wireshark-workshop-videos/
 
 Blog
 https://linuxhandbook.com/
