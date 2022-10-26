@@ -198,6 +198,8 @@ CVEs take the form: CVE-YEAR-ID.
 
 * [attackerkb.com](https://attackerkb.com/): community reviews on CVEs. There is a tool similar to searchsploit [akb-explorer](https://github.com/horshark/akb-explorer) (33⭐).
 
+* [vulners](https://vulners.com/) (ex: [CVE-2016-1531](https://vulners.com/cve/CVE-2016-1531))) is a big search engines for vulnerabilities.
+
 </div><div>
 
 * [CVE details](https://www.cvedetails.com/): interface easy to use

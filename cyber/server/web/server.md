@@ -4,7 +4,7 @@
 
 ## Forced Browsing / Server enumeration
 
-*The goal is to find "hidden" files/directories.*
+*The goal is to find "hidden" files/directories. Look for PHP files, config files, backups files <small>(xxx.php.old...)</small>...*
 
 <div class="row row-cols-md-2"><div>
 

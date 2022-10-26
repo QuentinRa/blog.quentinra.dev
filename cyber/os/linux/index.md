@@ -145,6 +145,7 @@ There are multiple ways to get the script on your target
 Privilege escalation refer to a process of obtaining super-administrator (a.k.a. root) privileges, starting from a non-root user.
 
 * [gtfobins](https://gtfobins.github.io/) (7.4k ⭐): a reference to find ways to exploit a command with misconfigured permissions.
+* [gtfo](https://github.com/t0thkr1s/gtfo) (96 ⭐): a python script to browse locally, a most-likely, outdated, version of gtfobins.
 </div><div>
 
 * Find a vulnerable service an exploit it <small>(apache, mysql...)</small>

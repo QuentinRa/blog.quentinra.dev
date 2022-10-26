@@ -1,13 +1,6 @@
 # Learn again
 
-* https://github.com/t0thkr1s/gtfo
-* https://vulners.com/ -> https://vulners.com/cve/CVE-2016-1531
-* WTF (strace) https://jvns.ca/strace-zine-v3.pdf
-* no_root_squash: if a root user (client) is dumping a file on the server, then they will be created as "root": https://en.wikipedia.org/wiki/Unix_security#Root_squash
-* https://github.com/mzet-/linux-exploit-suggester
-* https://github.com/diego-treitos/linux-smart-enumeration (lse)
 * https://0xsanz.medium.com/70-ways-to-get-root-linux-privilege-escalation-d98ec78f1405 (do not seem really "useful")
-* ".old" as backups
 * unexpected folders in "/"
 * hydra -l username -P rockyou.txt ssh://{target ip}
   * try to bruteforce ssh password
