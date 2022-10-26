@@ -20,11 +20,11 @@ A cyber expert can specialize in offense/defense
 <tr><td>Work</td>
 <td>
 
-Try to hack a company or their software to look for breaches.
+Look for vulnerabilities (bug, loopholes) in the tools/software of a company, try to exploit them, and suggest patches.
 </td>
 <td>
 
-Stop the attack as fast as possible.
+Detect, and stop attacks as fast as possible. Monitor, and analyse. Investigate/Do Forensics. Find attack paths/track down hackers.
 </td></tr>
 
 <tr><td>Skills</td>
@@ -35,6 +35,7 @@ Knowledgeable in a lot of things
 * **Web**: HTML/CSS/JS/Node/PHP
 * **DataBases**: SQL/NoSQL/PLSQL
 * **Networking**: Bash/PowerShell/Network
+* **Cloud**
 * ...
 
 </td>
@@ -52,16 +53,46 @@ Knowledgeable about
 <tr><td>Jobs</td>
 <td>
 
-* **Penetration tester**: ...
+* **Penetration tester**: Try to find vulnerabilities in a product of the company
+* **Red Teamer**: play the hacker
+* **Security Engineer**: implement, and maintain security controls, threats protection... to help prevent cyberattacks, and protect data.
 
 </td>
 <td>
 
-* **incident responder**: dispatched to guess what the hackers want, and what will be the consequences of the attack
+* **Security Analyst** <small>(use Splunk?)</small>
+* **Incident responder** <small>(use Volatility?)</small>: dispatched to guess what the hackers want, and what will be the consequences of the attack
+* **Malware Analyst**
+* **Security researcher**: Linux, Hashing...
 </td></tr>
 </tbody></table>
 
 <hr class="sr">
+
+## Random vocabulary
+
+<div class="row row-cols-md-2"><div>
+
+* **Cyber/Data Breach**: a leak of data
+* **Vulnerability**: a failure/flaw in a system
+* **Exploits**: code that make use of a vulnerability to gain access to a machine, install a malware, steal data...
+
+</div><div>
+
+* **0 Day**/Zero day: an unknown vulnerability that was just discovered
+* **Security Operation Center** (APT): usually, a hacker want to remain as long as possible within an infected network. They are using backdoors, and keep updating the code to avoid being discovered.
+* **RansomwareAsAService** (RAAS): hackers selling their skills to other hackers, in exchange for a part of their benefices. There is also "MalwareAsAService" (MAAS), which is the same with malware.
+
+<span></spann>
+
+* **Intrusion Detection System** (IDS): a system detecting intrusions...
+* **Endpoint Detection and Response** (EDS)
+* **Deceptive security**
+* **Security Operation Center** (SOC)
+</div></div>
+
+
+<hr class="sl">
 
 ## Famous attacks
 
@@ -84,8 +115,7 @@ Use a breach in Windows, created by the NSA, and stolen by hackers in 2013. The 
 </td></tr>
 </table>
 
-
-<hr class="sl">
+<hr class="sr">
 
 ## Learning, & Practicing
 
@@ -117,7 +147,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## News
 
@@ -138,7 +168,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Exploits / CVE lookup
 
@@ -162,7 +192,7 @@ CVEs take the form: CVE-YEAR-ID.
 * [security.snyk.io](https://security.snyk.io/): the interface is nicer,  through it's not as generic / covering as much CVEs as others.
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Blogs
 
