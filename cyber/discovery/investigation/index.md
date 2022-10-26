@@ -1,10 +1,32 @@
 # Investigation
 
-...
-
 <hr class="sl">
 
-...
+## Open-source intelligence (OSINT)
+
+<div class="row row-cols-md-2"><div>
+
+Open-source intelligence (**OSINT**) is simply of any information that you gather from public sources. It's a collection of websites, available on [osintframework.com](https://osintframework.com/). Simply expand the node, and you will see websites that can provide you information about what you are looking for.
+
+All in one?
+
+* [spiderfoot](https://github.com/smicallef/spiderfoot) (8.7k ⭐)
+
+</div><div>
+
+Social Networks
+* [Osintgram](https://github.com/Datalux/Osintgram) (Instagram, 5.3k⭐)
+* [twint](https://github.com/twintproject/twint) (Twitter, archived, 13.9k ⭐)
+* [GHunt](https://github.com/mxrch/GHunt) (Google, 12.1k ⭐)
+* [social-analyzer](https://github.com/qeeqbox/social-analyzer) (Profile in many SN, 9.4k ⭐)
+* ...
+
+Find other account for a username: [sherlock](https://github.com/sherlock-project/sherlock) (36.6k ⭐)
+
+Find information about a number: [phoneinfoga](https://github.com/sundowndev/phoneinfoga) (7.7k ⭐)
+
+And many more tools.
+</div></div>
 
 <hr class="sr">
 
@@ -78,7 +100,7 @@ Wait, and investigate what maltego found for you!
 
 <hr class="sr">
 
-## Google dorking
+## Google Hacking/Dorking
 
 <div class="row row-cols-md-2"><div>
 

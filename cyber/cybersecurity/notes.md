@@ -1,10 +1,11 @@
 # Notes
 
+* https://www.blackhat.com/
+
 <hr class="sep-both">
 
 ## Dorking
 
-* Osint
 * inurl:admin
 * https://en.wikipedia.org/wiki/Google_hacking
 
@@ -68,11 +69,12 @@ Wappalyzer (https://www.wappalyzer.com/) is an online tool and browser extension
 * Look if there are some companies employees on GitHub, try to find the source code...
 * S3 Buckets: http(s)://{name}.s3.amazonaws.com with name chosen by the owner. If perms are incorrect, then.
 
-ffuf -w /usr/share/wordlists/dirb/common.txt -u http://10.10.152.110/FUZZ
+ffuf -w /usr/share/seclists/Discovery/Web-Content/common.txt -u http://10.10.152.110/FUZZ
 
-dirb http://10.10.152.110/ /usr/share/wordlists/dirb/common.txt
+dirb http://10.10.152.110/ /usr/share/seclists/Discovery/Web-Content/common.txt
 
-git clone https://github.com/danielmiessler/SecLists/
+* https://github.com/danielmiessler/SecLists/
+* sudo apt install seclists
 
 <hr class="sep-both">
 
