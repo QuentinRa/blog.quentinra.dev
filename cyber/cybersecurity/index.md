@@ -76,7 +76,19 @@ Knowledgeable about
 * **Cyber/Data Breach**: a leak of data
 * **Vulnerability**: a failure/flaw in a system
 * **Exploits**: code that make use of a vulnerability to gain access to a machine, install a malware, steal data...
+* **Social engineering**: hackers manipulate someone, to make them compromise the system.
 
+A look at cyberattacks categories ([source](https://www.malwarebytes.com/))
+
+* **ransomware** 🔒: lock your system, ask for a ransom.
+* **adware** 📰: hide, and show ads in the browser, may monitor the user to show relevant ads.
+* **spyware** 🕵️: hide, and monitor user, steal credentials...
+* **phishing** 🎣: pose as someone trustworthy, in order to steal your information
+* **spoofing** 🎣: usurp someone else identify, to get access, steal data...
+* **trojans horse** 🎠: programs that pretend to do something, while actually doing something malicious
+* **ddos** 💥: send false traffic in bulk to take down servers
+* **cryptojacking** ⛏️: hide, and mine currencies on your computer
+* **virus** 😎: attached to a program, replicate, and spread
 </div><div>
 
 * **0 Day**/Zero day: an unknown vulnerability that was just discovered
