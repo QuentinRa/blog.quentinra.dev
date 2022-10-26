@@ -218,6 +218,43 @@ meterpreter > run post/multi/recon/local_exploit_suggester
 
 If you found once, use `background` to go back to the console, and try an additional exploit.
 
+<details class="details-e">
+<summary>Note: Windows defender</summary>
+
+It's highly likely that the machine is running Windows defender. You may try to use others payloads, such as `exploit/multi/script/web_delivery`.
+
+* set the target (ex: powershell)
+* ...
+* run
+* paste the prompt in the terminal you want to exploit
+* done?
+</details>
+
+<details class="details-e">
+<summary>Note: "Command shell session 1 opened" and nothing</summary>
+
+It can be a bit tricky, but you can write commands, and you will see the results, it's just no quite visible. You may want to upgrade to a meterpreter shell trough
+
+* `background`: go back, note the session id
+* `sessions -u -1`: upgrade the last session you used
+* `sessions -u sid`: OR, you can upgrade a specific session
+* *there you got your meterpreter*
+* `sessions -k sid`: kill the "normal" shell
+
+[Source](https://docs.metasploit.com/docs/pentesting/metasploit-guide-upgrading-shells-to-meterpreter.html)
+</details>
+
+<details class="details-e">
+<summary>Note: SSL</summary>
+
+I had to that once, no really know why 💥
+
+* Add the `hostname` to `/etc/hosts` (use nano/...)
+* In meterpreter, set SSL to true
+* run
+
+</details>
+
 </div></div>
 
 <hr class="sl">
@@ -370,6 +407,17 @@ meterpreter > record_mic
 
 ```bash
 meterpreter > run post/windows/manage/enable_rdp
+```
+</details>
+
+<details class="details-e">
+<summary>Persistence</summary>
+
+See [METERPRETER SERVICE](https://www.offensive-security.com/metasploit-unleashed/meterpreter-service/).
+
+```bash
+# Automatically start the agent when the system boots
+meterpreter > run persistence -X
 ```
 </details>
 </div></div>

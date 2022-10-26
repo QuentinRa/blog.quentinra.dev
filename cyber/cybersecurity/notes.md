@@ -1,18 +1,4 @@
-# Metasploit
-
-Since we know our victim machine is running Windows Defender, let's go ahead and try a different method of payload delivery! For this, we'll be using the script web delivery exploit within Metasploit. Launch Metasploit now and select 'exploit/multi/script/web_delivery' for use.
-
-* set target
-* https://github.com/nobodyatall648/CVE-2019-1388
-* A simple reverse HTTP payload.
-* 'set payload windows/meterpreter/reverse_http'.
-* paste the command output by Metasploit
-* https://www.offensive-security.com/metasploit-unleashed/meterpreter-service/
-* run persistence -X
-
-<hr class="sep-both">
-
-## Learn again
+# Learn again
 
 * https://www.kali.org/tools/hashid/
 * https://github.com/t0thkr1s/gtfo
@@ -57,31 +43,6 @@ URL
   * ...
 * Response code
 
-<hr class="sep-both">
-
-## AttackerKB
-
-First, let's navigate to AttackerKB! For our purposes, think of AttackerKB as similar to Exploit-DB but with a higher degree of information surrounding vulnerabilities and the exploits therein associated with them. 
-
-* read comments
-* links to metasploit
-* https://github.com/horshark/akb-explorer
-* ...
-
-<hr class="sep-both">
-
-## Metasploit
-
-We previously had to add the hostname to the /etc/hosts file because of this. SSL true. Metasploit. The hostname was found in the certificate.
-
-* Command shell session 1 opened
-  * If it shows that, you can write commands, that just no a meterpreter
-  * use "background"
-  * `sessions -u -1`
-  * go to your new nice meterpreter session
-  * https://docs.metasploit.com/docs/pentesting/metasploit-guide-upgrading-shells-to-meterpreter.html
-  * `sessions -k 3`
-  
 <hr class="sep-both">
 
 ## Burp
