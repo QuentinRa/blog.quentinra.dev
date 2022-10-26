@@ -1,4 +1,28 @@
-# Learn again
+# Notes
+
+<hr class="sep-both">
+
+## Web
+
+* source / view-source:
+  * HTML comments
+  * hidden stuff
+  * try to find the framework used/version
+    * test default credentials
+    * test bruteforce with default username
+    * test if there are vulnerabilities for this version
+* inspector
+  * show/hide/remove elements
+* debugger (in sources on chrome)
+  * put a break point
+  * run the page again, the page will pause waiting for debugger
+* Network
+  * Header
+  * Response
+  * ...
+
+Penetration tester (web)
+=> map every feature=~page (like both /account /account?id=5)
 
 <hr class="sep-both">
 
