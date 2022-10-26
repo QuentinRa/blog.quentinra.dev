@@ -148,3 +148,28 @@ Ctrl + Shift + R Switch to the Repeater tab
 
 * Project options (only one project)
 * Users options (application-wise)
+
+--- Proxy
+
+* intercept is on
+* HTTP history: even if off, we can find requests here
+* In the proxy options, we can grab responses, or add a filter on only some responses
+* forward: allow to pass (CTRL+F)
+* Right-click > send to
+* https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-basic/
+  * click on it
+  * options
+  * Title: Burp
+  * Proxy IP: 127.0.0.1 
+  * Port: 8080
+  * click on your config to turn it on
+* HTTPS
+  * http://burp/cert cacert.der
+  * http://burpsuite/ -> CA
+  * You need to intercept the request!
+  * https://portswigger.net/burp/documentation/desktop/external-browser-config/certificate
+    * Search certificates
+    * View certificates
+    * import
+    * Trust this CA to identify websites
+    * OK > OK
