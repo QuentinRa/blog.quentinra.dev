@@ -1,0 +1,91 @@
+# BurpSuite
+
+![Usage: Intercept, and edit requests](https://img.shields.io/badge/usage-Intercept,%20and%20edit%20requests-ffd700)
+
+BurpSuite can be used to intercept a form, and apply some changes to it. You could automate this process. For instance, given a list of username, you can use BurpSuite to lunch a bruteforce attack.
+
+<details class="details-e">
+<summary>Intercept a form</summary>
+
+Start a new project in BurpSuite and **start listening** (Proxy > Intercept > On). Then, open the page with the form in your browser.
+
+You need to configure, and **enable, your browser proxy to redirect any requests to localhost** (127.0.0.1).
+
+* Check your browser settings
+* Or, use BurpSuite extension
+
+Now, any request will be opened inside BurpSuite, in the tab target. Click on **Forward** to process request that you don't want to work on.
+
+**Note**: if you try loading some webpage, but it takes a lot of time, that's because the request is pending in BurpSuite.
+</details>
+
+<details class="details-e">
+<summary>Edit a payload</summary>
+
+A payload is the form data that is stored in the request. For instance, when submitting a login form, you will most likely have: `username=toto&password=otot`. Once you intercepted such a request, instead of clicking on "forward", right-click on it, and select "sent to intruder". Then go to intruder tab.
+
+* **Positions**: can be used to select attack mode, and injectable data
+  * **Attack mode**: select cluster bomb
+  * **Add "$"** before and after any injectable data. These blocks of "$something$" will be later referred with "$1" for the first block, "$2" for the second block...
+* **Payload**: here you can select how to fill each of the injectable fields.
+
+Start the attack. If a response is different from others, then it should be worth it to try it manually.
+
+</details>
+
+
+## Burp
+
+Burp Suite is also very commonly used when assessing mobile applications, as the same features which make it so attractive for web app testing translate almost perfectly into testing the APIs (Application Programming Interfaces) powering most mobile apps.
+
+* Proxy: intercept, and modify request
+* Repeater: intercept, modify, and resend multiple times
+* Intruder: try to bruteforce entrypoint/forms/...
+* Decoder: decode something, or encode a payload
+* Comparer: compare data
+* Sequencer: check algorithm generating tokens/...
+
+```
+Ctrl + Shift + D Switch to the Dashboard
+Ctrl + Shift + T Switch to the Target tab
+Ctrl + Shift + P Switch to the Proxy tab
+Ctrl + Shift + I Switch to the Intruder tab
+Ctrl + Shift + R Switch to the Repeater tab
+```
+
+* Project options (only one project)
+* Users options (application-wise)
+
+--- Proxy
+
+* intercept is on
+* HTTP history: even if off, we can find requests here
+* In the proxy options, we can grab responses, or add a filter on only some responses
+* forward: allow to pass (CTRL+F)
+* Right-click > send to
+* https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-basic/
+  * click on it
+  * options
+  * Title: Burp
+  * Proxy IP: 127.0.0.1
+  * Port: 8080
+  * click on your config to turn it on
+* HTTPS
+  * http://burp/cert cacert.der
+  * http://burpsuite/ -> CA
+  * You need to intercept the request!
+  * https://portswigger.net/burp/documentation/desktop/external-browser-config/certificate
+    * Search certificates
+    * View certificates
+    * import
+    * Trust this CA to identify websites
+    * OK > OK
+* There is an integrated preconfigured chrominium web browser if needed
+* Scoping: avoid capturing two much
+  * Target > select a target > Right-click > add to scope
+  * "yes" to disable out of scope logs
+  * in the proxy options, you can only intercept scoped requests
+* Target > Site map
+  * map the website as we visit it
+* Target > Issues definitions: list of attacks BurpSuite can detect.
+* In the proxy, you need to ensure that values are encoded. Select something > convert in > URL > URL encode key characters. Use the shortcut CTRL+U.

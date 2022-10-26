@@ -15,3 +15,13 @@ Cookies
 https://www.databreaches.net/hackers-are-using-cookies-to-sidestep-two-factor-authentication/
 https://www.thewindowsclub.com/cookie-stealing-or-scraping
 https://thehackernews.com/2021/10/hackers-stealing-browser-cookies-to.html
+
+URL
+* Scheme: (protocol) HTTP/HTTPS/...
+* Username:Password@Domain:port/Path?query#Fragment
+* Methods GET, DELETE...
+* Headers
+  * Server: some server
+  * Set-cookie: ... => server send the cookie in every request
+  * ...
+* Response code
