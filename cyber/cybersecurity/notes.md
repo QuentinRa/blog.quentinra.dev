@@ -1,6 +1,5 @@
 # Learn again
 
-* https://www.kali.org/tools/hashid/
 * https://github.com/t0thkr1s/gtfo
 * https://vulners.com/ -> https://vulners.com/cve/CVE-2016-1531
 * WTF (strace) https://jvns.ca/strace-zine-v3.pdf

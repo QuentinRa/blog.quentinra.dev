@@ -29,17 +29,34 @@ The most important use of hashing is for integrity. We generate a hash of file/.
 
 <div class="row row-cols-md-2"><div>
 
-You can use [**hash-identifier**](https://github.com/blackploit/hash-identifier) to find which kind a hash algorithm was used to generate a hash.
+There are a few solutions to find which kind a hash algorithm was used to generate a hash. We consider in the following, that the hash is stored inside a file called "hash".
 
-Put the hash in a file, for instance "hash".
+The most well-known one is [**hash-identifier**](https://github.com/blackploit/hash-identifier) (399⭐), but it's kinda old.
 
 ```bash
 $ cat hash | hash-identifier
-# or
 $ hash-identifier "some_hash"
 ```
 
-You may also try your luck with [hashes.com/hash_identifier](https://hashes.com/en/tools/hash_identifier), or the new modern alternative to hash-identifier: [haiti](https://noraj.github.io/haiti/#/).
+[Name-that-hash](https://github.com/HashPals/Name-That-Hash) (1.1k ⭐, fork of hashID)
+
+```bash
+# sudo apt install name-that-hash
+$ nth -t "some_hash"
+$ nth -f hash
+```
+
+[hashID](https://github.com/psypanda/hashID) (1.2k ⭐, not updated since 2015)
+
+```bash
+$ cat hash | hashid
+$ hashid "some_hash"
+```
+
+Others
+
+* [haiti](https://github.com/noraj/haiti/) (309 ⭐)
+* [hashes.com/hash_identifier](https://hashes.com/en/tools/hash_identifier) (website)
 </div><div>
 
 You can use [**John the Ripper**](https://github.com/openwall/john) to try to bruteforce a hash.
@@ -47,7 +64,7 @@ You can use [**John the Ripper**](https://github.com/openwall/john) to try to br
 Put the hash in a file, for instance "hash".
 
 ```bash
-# md 5
+# md5
 john --format=raw-md5 hash
 john --format=raw-md4 hash
 john --format=raw-sha1 hash
@@ -57,13 +74,13 @@ You can provide a wordlist
 
 ```bash
 # on Kali
-john --format=raw-md4 --wordlist=/usr/share/wordlists/rockyou.txt myHash.txt
+john --format=raw-md4 --wordlist=/usr/share/wordlists/rockyou.txt hash
 ```
 
 **Notes**
 
-* You can merge wordlist into one if needed (`cat wordlist1 wordlist2 wordlist3 > wordlist4`)
-* If it takes a lot of time, you may try another algorithm, or maybe reversing the list
+* Merge wordlist: `cat wordlist1 wordlist2 wordlist3 > wordlist4`
+* You may try another algorithm, if it does not progress much
 </div></div>
 
 <hr class="sr">
