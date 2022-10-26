@@ -4,13 +4,6 @@
 
 <hr class="sep-both">
 
-## Dorking
-
-* inurl:admin
-* https://en.wikipedia.org/wiki/Google_hacking
-
-<hr class="sep-both">
-
 ## Web
 
 URL

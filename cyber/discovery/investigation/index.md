@@ -8,24 +8,23 @@
 
 Open-source intelligence (**OSINT**) is simply of any information that you gather from public sources. It's a collection of websites, available on [osintframework.com](https://osintframework.com/). Simply expand the node, and you will see websites that can provide you information about what you are looking for.
 
-All in one?
+Find other account for a username
 
-* [spiderfoot](https://github.com/smicallef/spiderfoot) (8.7k ⭐)
+* [sherlock](https://github.com/sherlock-project/sherlock) (36.6k ⭐)
+* [maigret](https://github.com/soxoj/maigret) (7.1k ⭐)
 
+Find information about a number
+
+* [phoneinfoga](https://github.com/sundowndev/phoneinfoga) (7.7k ⭐)
 </div><div>
 
 Social Networks
-* [Osintgram](https://github.com/Datalux/Osintgram) (Instagram, 5.3k⭐)
+* Instagram: [Osintgram](https://github.com/Datalux/Osintgram) (5.3k⭐) [instaloader](https://github.com/instaloader/instaloader) (5k ⭐)
 * [twint](https://github.com/twintproject/twint) (Twitter, archived, 13.9k ⭐)
 * [GHunt](https://github.com/mxrch/GHunt) (Google, 12.1k ⭐)
 * [social-analyzer](https://github.com/qeeqbox/social-analyzer) (Profile in many SN, 9.4k ⭐)
 * ...
 
-Find other account for a username: [sherlock](https://github.com/sherlock-project/sherlock) (36.6k ⭐)
-
-Find information about a number: [phoneinfoga](https://github.com/sundowndev/phoneinfoga) (7.7k ⭐)
-
-And many more tools.
 </div></div>
 
 <hr class="sr">
@@ -120,6 +119,7 @@ On Google, you can use the [Advanced search](https://www.google.com/advanced_sea
 * `"some word"`: search results that must have "some word"
 * `filetype:pdf`: search PDF files
 * `intitle:"Hello World"`: search for websites having "Hello World" in their title
+* `inurl:admin`: search for URL containing the word "admin"
 
 You may also use
 
