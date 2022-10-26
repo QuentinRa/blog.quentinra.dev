@@ -173,3 +173,12 @@ Ctrl + Shift + R Switch to the Repeater tab
     * import
     * Trust this CA to identify websites
     * OK > OK
+* There is an integrated preconfigured chrominium web browser if needed
+* Scoping: avoid capturing two much
+  * Target > select a target > Right-click > add to scope
+  * "yes" to disable out of scope logs
+  * in the proxy options, you can only intercept scoped requests
+* Target > Site map
+  * map the website as we visit it
+* Target > Issues definitions: list of attacks BurpSuite can detect.
+* In the proxy, you need to ensure that values are encoded. Select something > convert in > URL > URL encode key characters. Use the shortcut CTRL+U.
