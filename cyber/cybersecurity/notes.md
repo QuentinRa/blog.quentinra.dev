@@ -47,25 +47,8 @@ Encryption (Encryption File System or EFS)
 
 The permissions are: https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb727008(v=technet.10)
 
-* %windir% (search) path to C:\Windows (usually)
-  * The System32 folder holds the important files that are critical for the operating system.
-* `$Env:windir` / `Get-ChildItem -Path Env:`
-* https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.2
-* User accounts: 
-  * Administrator: add users, delete users, modify groups, modify settings on the system, etc.
-  * Standard User=Member: modify its own folder
-  * `Get-LocalGroup`
-  * `net localgroup users`
-  * C:\Users
-  * Search bar > lusrmgr.msc
-  * Or Windows+R > lusrmgr.msc
-  * lusrmgr.msc: interface to groups/users
-  * `Get-LocalUser`
-  * `net user quent` https://spgeeks.devoworx.com/get-groups-in-which-a-user-is-a-member-using-cmd/ (see full name, last password change, groups...)
-
-if you click on Groups, you see all the names of the local groups along with a brief description for each group.
-
 Each group has permissions set to it, and users are assigned/added to groups by the Administrator. When a user is assigned to a group, the user inherits the permissions of that group. A user can be assigned to multiple groups.
+
 * User Account Control (UAC)
   * Everyone is a user
   * When there is a need to upgrade a process

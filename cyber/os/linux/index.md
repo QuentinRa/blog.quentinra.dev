@@ -72,6 +72,7 @@ Learn more about your environment
 * `~/.bash_history`: there may be something useful in the bash_history
   * Look for calls to sudo
   * Look for calls to services (mysql...)
+* Check browser history / credentials...
 </div><div>
 
 **Cron tasks** ⭐

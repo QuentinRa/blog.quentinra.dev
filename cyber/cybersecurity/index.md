@@ -76,7 +76,7 @@ Knowledgeable about
 * **Cyber/Data Breach**: a leak of data
 * **Vulnerability**: a failure/flaw in a system
 * **Exploits**: code that make use of a vulnerability to gain access to a machine, install a malware, steal data...
-* **Social engineering**: hackers manipulate someone, to make them compromise the system.
+* **Social engineering**: hackers manipulate someone, to make them compromise the system, or do something that benefit them.
 
 A look at cyberattacks categories ([source](https://www.malwarebytes.com/))
 
