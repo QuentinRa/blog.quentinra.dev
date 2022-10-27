@@ -20,8 +20,8 @@ Find information about a number
 
 Social Networks
 * Instagram: [Osintgram](https://github.com/Datalux/Osintgram) (5.3k⭐) [instaloader](https://github.com/instaloader/instaloader) (5k ⭐)
-* [twint](https://github.com/twintproject/twint) (Twitter, archived, 13.9k ⭐)
-* [GHunt](https://github.com/mxrch/GHunt) (Google, 12.1k ⭐)
+* Twitter: [twint](https://github.com/twintproject/twint) (archived, 13.9k ⭐)
+* Google: [GHunt](https://github.com/mxrch/GHunt) (12.1k ⭐)
 * [social-analyzer](https://github.com/qeeqbox/social-analyzer) (Profile in many SN, 9.4k ⭐)
 * ...
 
@@ -30,6 +30,8 @@ Social Networks
 <hr class="sr">
 
 ## Inspecting files
+
+[![introdigitalforensics](../../_badges/introdigitalforensics.svg)](https://tryhackme.com/room/introdigitalforensics)
 
 <div class="row row-cols-md-2"><div>
 
@@ -100,6 +102,8 @@ Wait, and investigate what maltego found for you!
 <hr class="sr">
 
 ## Google Hacking/Dorking
+
+[![googledorking](../../_badges/googledorking.svg)](https://tryhackme.com/room/googledorking)
 
 <div class="row row-cols-md-2"><div>
 

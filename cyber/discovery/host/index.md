@@ -6,6 +6,8 @@
 
 ## Nessus vulnerability scanner
 
+[![rpnessusredux](../../_badges/rpnessusredux.svg)](https://tryhackme.com/room/rpnessusredux)
+
 <div class="row row-cols-md-2"><div>
 
 **Nessus vulnerability scanner** is a tool to find, and report vulnerabilities.
@@ -36,6 +38,9 @@ Once you are logged on the website, you can create new scans.
 <hr class="sr">
 
 ## nmap port scanner
+
+[![nmap01](../../_badges/nmap01.svg)](https://tryhackme.com/room/nmap01)
+[![furthernmap](../../_badges/furthernmap.svg)](https://tryhackme.com/room/furthernmap)
 
 <div class="row row-cols-md-2"><div>
 
@@ -197,6 +202,8 @@ $ nmap scanme.nmap.org --script=s1,s2 --script-args s1.key=value
 <hr class="sl">
 
 ## MASSCAN: Mass IP port scanner
+
+[![nmap01](../../_badges/nmap01.svg)](https://tryhackme.com/room/nmap01)
 
 <div class="row row-cols-md-2"><div class="align-self-center">
 
