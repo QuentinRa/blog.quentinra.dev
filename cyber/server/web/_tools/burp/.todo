@@ -28,12 +28,6 @@ Start the attack. If a response is different from others, then it should be wort
 </details>
 
 --- Proxy
-
-* intercept is on
-* HTTP history: even if off, we can find requests here
-* In the proxy options, we can grab responses, or add a filter on only some responses
-* forward: allow to pass (CTRL+F)
-* Right-click > send to
 * Scoping: avoid capturing two much
   * Target > select a target > Right-click > add to scope
   * "yes" to disable out of scope logs
