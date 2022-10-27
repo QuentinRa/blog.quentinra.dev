@@ -6,32 +6,12 @@
 
 ## Web
 
-here are three main ways of discovering content on a website
-
-* Manually, 
-* Automated,
-* and OSINT
-
-**Robots.txt**: sitemap, and page declared as forbidden to robots=crawlers.
-
-Sitemap way lead to old endpoints that are not used anymore, but still available, and maybe vulnerable.
-
-**Headers**: server version, maybe os...
-
-Wappalyzer (https://www.wappalyzer.com/) is an online tool and browser extension that helps identify what technologies a website uses, such as frameworks, Content Management Systems (CMS), payment processors and much more, and it can even find version numbers as well.
-
-* Look for old versions of the Wayback Machine https://archive.org/web/
-* Look if there are some companies employees on GitHub, try to find the source code...
-* S3 Buckets: http(s)://{name}.s3.amazonaws.com with name chosen by the owner. If perms are incorrect, then.
-
 ffuf -w /usr/share/seclists/Discovery/Web-Content/common.txt -u http://10.10.152.110/FUZZ
 
 dirb http://10.10.152.110/ /usr/share/seclists/Discovery/Web-Content/common.txt
 
 * https://github.com/danielmiessler/SecLists/
 * sudo apt install seclists
-
-Do not use default passwords.
 
 <hr class="sep-both">
 

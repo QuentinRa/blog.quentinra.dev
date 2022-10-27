@@ -1,6 +1,27 @@
 # Host discovery
 
-...
+<div class="row row-cols-md-2"><div>
+
+* You can use `nmap` to
+  * Find open ports
+  * Find the services running on these ports, and maybe the OS (`-sV`)
+  * Find the OS (`-O`)
+  * Find the hostname / computer name, or some info that may be relevant (`-sC`)
+  * Saving scans can be useful has they can be imported <small>(ex: in `metasploit`)</small>
+  * Find vulnerabilities
+
+* `masscan` is a sort of `nmap`, but for mass scanning. It's not used much in our cases.
+</div><div>
+
+* You can use `nessus`
+  * To scan open port, the services running, their versions
+  * The protocols used, if they are secure, or not
+  * The OS
+  * Vulnerabilities, and there is also a list of tools in which you may be able to exploit these vulnerabilities (ex: `metasploit`)
+  * Saving scans can be useful has they can be imported <small>(ex: in `metasploit`)</small>
+</div></div>
+
+> Lunch at least a scan on all ports, not just the top ones, you may start this scan in the background while exploring the first interesting ports.
 
 <hr class="sl">
 

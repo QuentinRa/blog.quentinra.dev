@@ -1,41 +1,40 @@
 # H@cking process
 
-*These are notes that I'm taking when doing CTFs, nothing much.*
-
-*This page will be deleted*
-
 <hr class="sl">
+
+## Investigation
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+* Learn more about the company, programming languages, software...
+
+* Find targets that may be used for an attack, for instance, a server used with a subdomain for another purpose
+</div><div>
+
+...
+
+</div></div>
+
+<hr class="sr">
 
 ## Discovery
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-* You can use `nmap` to
-    * Find open ports
-    * Find the services running on these ports, and maybe the OS (`-sV`)
-    * Find the OS (`-O`)
-    * Find the hostname / computer name, or some info that may be relevant (`-sC`)
-    * Saving scans can be useful has they can be imported <small>(ex: in `metasploit`)</small>
-    * Lunch at least a scan on all ports, not just the top ones.
+* Find running services, their version...
 
-> You may have to use `-Pn` on hosts not responding to ICMP requests, such as Windows servers by default.
+* Find the running OS
 
-* Look for vulnerabilities (using nmap, nessus)
-* Try to find a CVE you could exploit using `metasploit`
+* If there is a website, try to check what you can get from it.
+
 </div><div>
 
-* Try to look for usernames/passwords
-* Maybe there is a service with a weak password...
+* Try to find vulnerabilities
 
-<span></span>
-
-* If there is a website
-    * Try to look for a software, and its version (ex: wordpress)
-    * Try to look for hidden directories/files (`gobuster`, `dirsearch`)
-    * Try to look for a username, and maybe a password
+* Try to bruteforce credentials on running services
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Once on the host
 
@@ -43,12 +42,15 @@
 
 **Find more infos about the computer** 🗺️
 
-* If you can, try to see the computer as its users do, because you may find some interesting stuff.
-* ...
+If you can, try to see the computer as its users do, because you may find some interesting stuff.
+
+**Get to root using privilege escalation** 😎
+
+As you can't do much as a regular user, that's the main goal when getting inside.
 
 </div><div>
 
-**Fetch data** 😎
+**Fetch data** 🪙
 
 * Try to look for backups
 * Try to look for mails/conversations
@@ -56,16 +58,18 @@
 * Try to look the command history of the target
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## After
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2 mt-4"><div>
 
 * Cleanup logs
+
 * Mess with timestamp/... to complicate forensics
-* Leave a backdoor?
 </div><div>
+
+* Leave a backdoor
 
 * Use this machine as a starting point. Scan the network to discover more vulnerable machines.
 </div></div>
