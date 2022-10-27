@@ -12,6 +12,14 @@ Fuzzing involve taking values from a wordlist, and testing one by one these valu
 
 * `wordlists`
 * `seclists` (may have to be installed, wordlists from [SecLists](https://github.com/danielmiessler/SecLists))
+
+Finally, much like in forced browsing, you will have to private an URL
+
+* `http://xxx.yyy`
+* `http://xxx.yyy:80`
+* `127.0.0.1`
+* `127.0.0.1:80`
+* ...
 </div></div>
 
 <hr class="sl">
@@ -20,8 +28,42 @@ Fuzzing involve taking values from a wordlist, and testing one by one these valu
 
 <div class="row row-cols-md-2"><div>
 
-Nothing aside from this [wfuzz](https://github.com/xmendez/wfuzz) GitHub link.
+[wfuzz](https://github.com/xmendez/wfuzz) (4.7k ⭐). FUZZ is pretty simple: there is a wordlist, and you add a word FUZZ in the URL/request, and wfuzz will replace, one by one, the word FUZZ with every entry in the wordlist. [See the official documentation here](https://wfuzz.readthedocs.io/en/latest/index.html), or use `wfuzz -h`.
+
+Try to bruteforce a GET form.
+
+```bash
+$ wfuzz -w wordlist URL/account?id=FUZZ
+```
+
+Try to bruteforce a POST form.
+
+```bash
+$ wfuzz -w wordlist -d "username=admin&pass=FUZZ" URL/login.php
+```
+
+Add some verbose, if you want to.
+
+```bash
+$ wfuzz -w wordlist -u URL/FUZZ -v
+```
+
 </div><div>
+
+You can filter responses by code. `-h` will hide a response based on a criteria... And, `-s`, which is working the same, will do the opposite, and only show a response matching a criteria. 
+
+* `c code`: show/hide responses with this return code
+* `l n`: show/hide responses with this $n$ number of lines
+* `w n`: show/hide responses with this $n$ number of words
+* `c n`: show/hide responses with this $n$ number of characters
+* `s regex`: show/hide responses containing the regex
+
+```bash
+# ignore 404,500
+$ wfuzz -w wordlist --hc 404,500 xxx.tld/account?id=FUZZ
+# show only 200
+$ wfuzz -w wordlist --sc 200 xxx.tld/account?id=FUZZ
+```
 </div></div>
 
 <hr class="sr">
