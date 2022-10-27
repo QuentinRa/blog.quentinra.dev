@@ -11,16 +11,6 @@
 * https://tryhackme.com/room/walkinganapplication
 * https://tryhackme.com/room/httpindetail
 
-URL
-* Scheme: (protocol) HTTP/HTTPS/...
-* Username:Password@Domain:port/Path?query#Fragment
-* Methods GET, DELETE...
-* Headers
-  * Server: some server
-  * Set-cookie: ... => server send the cookie in every request
-  * ...
-* Response code
-
 * source / view-source:
   * HTML comments
   * hidden stuff

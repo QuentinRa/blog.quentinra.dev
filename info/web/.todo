@@ -1,2 +1,12 @@
 `systemctl /bin/systemctl`  allow to interact with the systemd process/daemon.
 `systemctl start apache2` (start, stop, enable, disable)
+
+URL
+* Scheme: (protocol) HTTP/HTTPS/...
+* Username:Password@Domain:port/Path?query#Fragment
+* Methods GET, DELETE...
+* Headers
+  * Server: some server
+  * Set-cookie: ... => server send the cookie in every request
+  * ...
+* Response code

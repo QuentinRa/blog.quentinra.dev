@@ -1,6 +1,11 @@
 # Exploit a webserver
 
-*According to TryHackMe, there are 4 kinds of failures related to webservices.*
+[![introwebapplicationsecurity](../../_badges/introwebapplicationsecurity.svg)](https://tryhackme.com/room/introwebapplicationsecurity)
+[![contentdiscovery](../../_badges/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
+[![walkinganapplication](../../_badges/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
+[![httpindetail](../../_badges/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
+
+*According to TryHackMe, there are 4 categories of failures related to webservices.*
 
 <div class="row row-cols-md-2"><div>
 

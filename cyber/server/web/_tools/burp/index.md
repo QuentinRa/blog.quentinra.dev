@@ -132,3 +132,20 @@ If you are interested in responses, be sure to check "intercept responses [...]"
 
 ![burp_suite_proxy_scope_options](_images/burp_suite_proxy_scope_options.png)
 </div></div>
+
+<hr class="sl">
+
+## Intruder tab
+
+<div class="row row-cols-md-2"><div>
+
+Once you caught a request with injectable parameters, such as `username=toto&password=otot`, you may send it to the intruder to bruteforce credentials.
+
+* **Positions**: can be used to select attack mode, and injectable data
+  * **Attack mode**: select cluster bomb
+  * **Add "$"** before and after any injectable data. These blocks of "\\$something\\$" will be later referred with "\\$1" for the first block, "$2" for the second block...
+* **Payload**: here you can select how to fill each of the injectable fields.
+</div><div>
+
+Start the attack. If a response is different from others, then it should be worth it to try it manually.
+</div></div>

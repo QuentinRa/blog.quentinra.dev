@@ -12,3 +12,10 @@ https://www.guru99.com/skills-required-become-ethical-hacker.html
 https://auth0.com/blog/top-6-cybersecurity-predictions-for-2022/
 https://www.inmotionhosting.com/blog/ways-to-learn-more-about-cybersecurity/
 https://www.inmotionhosting.com/blog/8-free-cybersecurity-tools-to-secure-your-server/
+
+Alternatives to msf?
+https://www.coresecurity.com/products/core-impact
+https://www.immunityinc.com/products/canvas/
+fgdump
+pwdump
+cachedump
