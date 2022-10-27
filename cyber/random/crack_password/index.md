@@ -1,5 +1,7 @@
 # Crack (insecure) passwords
 
+[![encryptioncrypto101](../../_badges/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
+
 <div class="row row-cols-md-2"><div>
 
 Almost all the time, password are **hashed**. It means that some "clear text" is passed to a one-way function that returns a hash. One-way means that you can't get back the password from the hash. But, we can check if a password has generated a hash, so it's a useful, and supposedly secure way of storing a password.

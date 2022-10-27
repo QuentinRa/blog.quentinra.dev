@@ -1,5 +1,7 @@
 # Burp suite
 
+[![burpsuitebasics](../../../../_badges/burpsuitebasics.svg)](https://tryhackme.com/room/burpsuitebasics)
+
 <div class="row row-cols-md-2"><div>
 
 BurpSuite is a collection of tools that can be used to intercept requests, responses, and inject content in them. This process can be automated, and it's useful both to test websites, and API.

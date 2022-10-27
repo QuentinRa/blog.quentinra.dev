@@ -4,6 +4,8 @@
 
 ## Hydra
 
+[![hydra](../../_badges/hydra.svg)](https://tryhackme.com/room/hydra)
+
 <div class="row row-cols-md-2"><div>
 
 [Hydra](https://github.com/vanhauser-thc/thc-hydra) (6.8k ⭐) is a well-known tool to bruteforce authentication services such SSH, FTP, RTP, MySQL... It can even be used for login forms, but that's convered somewhere else.
