@@ -70,35 +70,11 @@ Samba is based on the common client/server protocol of Server Message Block (SMB
 
 ## SQL injections
 
-![Level: Novice-Intermediate](https://img.shields.io/badge/level-Novice%20Intermediate-ffd700)
-
 SQL injections means for someone to insert some SQL code inside a SQL query. For instance, if a user have a query taking a username, then the user may submit a SQL query rather than his username.
 
 * <i class="bi bi-shield-check text-success"></i> Use prepared requests (or queries), they are ensuring that parameters of your queries are not interpreted as SQL code
 * <i class="bi bi-shield-minus text-danger"></i> You can filter input, but you CAN'T rely on it, as you filter will _most likely_ be bypassed
 * <i class="bi bi-shield-minus text-danger"></i> **YOU SHOULD NEVER TRUST DATA FROM THE USER** <small>(actually, don't trust anyone)</small>. SQL injections may be delayed. You may do protect your login queries, but if the username is some SQL code, then any other request using the username may interpret it, hence you should secure **every** request.
-
-<details class="details-e">
-<summary>Basics of SQL injection</summary>
-
-Let's say someone submitted this request, trying to login without password to the account 'admin'.
-
-```http request
-POST /login.php username="admin' --"&password='nopassword'
-```
-
-And in the PHP code, we got a super-stupid-and-lazy-not-prepared SQL request like this <small>(assuming that the password is not encrypted in the Database)</small>.
-
-```php
-$sql = "Select * from users where user='$username' AND password='$password'";
-```
-
-Then, the SQL request will be as follow. This is because the user used a quote (`'`), which closed the input, allowing him to write his own code. As you should notice, the check for the password is bypassed, and the request will return the record for the user "admin".
-
-```sql
-Select * from users where user='admin' --' AND password='nopassword';
-```
-</details>
 
 <table class="table table-bordered table-striped border-dark"><thead>
 <tr><th>Name</th><th>Description</th></tr>

