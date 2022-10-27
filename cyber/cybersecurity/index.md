@@ -1,5 +1,8 @@
 # Getting started
 
+[![beginnerpathintro](../_badges/beginnerpathintro.svg)](https://tryhackme.com/room/beginnerpathintro)
+[![startingoutincybersec](../_badges/startingoutincybersec.svg)](https://tryhackme.com/room/startingoutincybersec)
+
 A lot of stuff to get started in cybersecurity, including websites to learn, practice, find news, look for news, along with CVE lookup, and websites to check if your credentials leaked, or stuff like that. 
 
 > You may also check [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources) (GitHub).<br>
