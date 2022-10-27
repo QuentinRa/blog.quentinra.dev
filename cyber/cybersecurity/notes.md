@@ -6,8 +6,6 @@
 
 ## Web
 
-A website content is usually what we can't see at first sight (backups, old files, configuration files, administration panels, framework panels...).
-
 here are three main ways of discovering content on a website
 
 * Manually, 

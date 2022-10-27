@@ -3,14 +3,6 @@ https://www.youtube.com/watch?v=1iHCZybiDcw
 https://www.youtube.com/watch?v=-pNYmgK_dWo
 https://www.youtube.com/watch?v=G-v2NEgyzSs
 
-Wordpress
-https://wpscan.com/
-https://jetpack.com/protect/
-https://github.com/wpscanteam/wpscan
-https://medium.com/@edwinngugi149/wordpress-hacking-tryhackme-write-up-1c895a1822b
-https://ryanplatten.com/2022/06/wpscan/
-https://medium.com/swlh/tryhackme-internal-walkthrough-fdc6c4b569bd
-
 Cookies
 https://www.databreaches.net/hackers-are-using-cookies-to-sidestep-two-factor-authentication/
 https://www.thewindowsclub.com/cookie-stealing-or-scraping

@@ -93,14 +93,22 @@ If you found a framework
   * Test bruteforce password, with the default username
 </div><div>
 
-...
+**WordPress** (not tested yet)
+
+* Scan
+  * [WPScan](https://github.com/wpscanteam/wpscan) (open-source)
+  * [jetpack](https://jetpack.com/) (paid)
+  * [WPScan](https://wpscan.com/) (cloud version, paid)
+* Todo
+  * [WordPress: THM WebEnumeration2](https://medium.com/@edwinngugi149/wordpress-hacking-tryhackme-write-up-1c895a1822b)
+  * [Wordpress: THM Internals](https://medium.com/swlh/tryhackme-internal-walkthrough-fdc6c4b569bd)
 </div></div>
 
 <hr class="sl">
 
 ## Forced Browsing / Server enumeration
 
-*The goal is to find "hidden" files/directories. Look for PHP files, config files, backups files <small>(xxx.php.old, xxx.bak...)</small>...*
+*The goal is to find "hidden" files/directories. Look for PHP files, config files, framework files, backups files <small>(xxx.php.old, xxx.bak...)</small>, admin panels...*
 
 <div class="row row-cols-md-2"><div>
 
