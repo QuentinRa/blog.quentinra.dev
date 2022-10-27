@@ -9,8 +9,6 @@
   * Find the hostname / computer name, or some info that may be relevant (`-sC`)
   * Saving scans can be useful has they can be imported <small>(ex: in `metasploit`)</small>
   * Find vulnerabilities
-
-* `masscan` is a sort of `nmap`, but for mass scanning. It's not used much in our cases.
 </div><div>
 
 * You can use `nessus`
@@ -19,6 +17,7 @@
   * The OS
   * Vulnerabilities, and there is also a list of tools in which you may be able to exploit these vulnerabilities (ex: `metasploit`)
   * Saving scans can be useful has they can be imported <small>(ex: in `metasploit`)</small>
+* `masscan` is a sort of `nmap`, but for mass scanning.
 </div></div>
 
 > Lunch at least a scan on all ports, not just the top ones, you may start this scan in the background while exploring the first interesting ports.
