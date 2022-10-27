@@ -110,3 +110,23 @@ You can also specifically ask Burp suite to catch the response for this request,
 <b>Drop the request</b>
 </p>
 </div></div>
+
+<div class="row row-cols-md-2"><div>
+
+**Scoping**
+
+Usually, to avoid receiving too much traffic, you will define a scope. Then, you can make user to only grab requests/responses being in this scope. First, intercept a request, a forward it.
+
+Now, go to the tab "Targets". Select your target, right-click on it, and add it to the scope. Answer "yes" when prompted to disable out of scope logs.
+
+Go back to the proxy tab, then go to options. Here, you can check "AND URL is in target scope". Now, burp will only intercept requests in the scope.
+
+> **Note**: In target, you will also be able to see burp "sitemap" of the website, along with Issues definitions, which are unused in the community version, but may be a reference when looking for attacks.
+
+**Responses**
+
+If you are interested in responses, be sure to check "intercept responses [...]", and you can also check "AND URL is in target scope".
+</div><div class="align-self-center">
+
+![burp_suite_proxy_scope_options](_images/burp_suite_proxy_scope_options.png)
+</div></div>
