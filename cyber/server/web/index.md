@@ -37,3 +37,101 @@
 * The server allow/use HTTP instead of HTTPS
 * The server use a weak cryptographic algorithm
 </div></div>
+
+<hr class="sl">
+
+## Discovery of a website
+
+*As a penetration tester, you will have to list every feature of the website. For instance, "list all products":`/products,` "list a product":`/products?id=x`. This is done as you explore by tools such as Burp.*
+
+<div class="row row-cols-md-2"><div>
+
+Try to view the source of the website
+
+* hidden elements?
+* HTML comments?
+* framework / version?
+
+Most developers are using a framework, which is a sort of box of utilities to make a website more easily.
+
+* Look if the framework is credited at the bottom of the page
+* Look if there is a comment with the framework name/... in the HTML
+* Look for the default favicon of the framework. Usually, it's stored at `/favicon.ico`, although it's usually removed. If you do find one, download it, hash it (MD5), and [find it in OWASP favicon database](https://wiki.owasp.org/index.php/OWASP_favicon_database)
+
+```bash
+# Linux
+curl url/favicon.ico | md5sum
+# Windows (on a download favicon)
+Get-FileHash .\favicon.ico -Algorithm MD5
+```
+</div><div>
+
+**Analyse the network**
+
+You may the dev console network tab to analyse requests, and responses send to the server. Once you click on a request, there are multiple tabs, for the request, the response...
+
+Some misconfigured servers are for instance, sending the web service name <small>(nginx, apache)</small>, and sometimes even the version.
+
+**Analyse the javascript**
+
+You may use the dev console debugger, after adding a breakpoint in the JavaScript, to analyze the javascript code, if needed.
+</div></div>
+
+<hr class="sr">
+
+## Frameworks
+
+<div class="row row-cols-md-2"><div>
+
+If you found a framework
+
+* Look for a way to get the version (as a client, if any). For instance, the framework in a specific version, may use a specific version of a JavaScript/CSS library, if any. It may be a hint, trough it's not reliable.
+* Look for common misconfiguration mistakes
+* Look for vulnerabilities
+* Look for the login page / CMS panel. 
+  * Test default credentials
+  * Test bruteforce password, with the default username
+</div><div>
+
+...
+</div></div>
+
+<hr class="sl">
+
+## Forced Browsing / Server enumeration
+
+*The goal is to find "hidden" files/directories. Look for PHP files, config files, backups files <small>(xxx.php.old, xxx.bak...)</small>...*
+
+<div class="row row-cols-md-2"><div>
+
+[GoBuster](https://github.com/OJ/gobuster) (6.7k ⭐) is a tool in GO, which given a wordlist of directories, will try to find if this server has any of them.
+
+```bash
+# kali
+$ cd /usr/share/wordlists/dirbuster/
+$ gobuster dir -u url_or_ip -w directory-list-2.3-small.txt
+```
+
+Note that you can add a port if no 80/443 with `:port` after the IP/URL. This tool can also append an extension to every word in the wordlist. For instance,
+
+```bash
+$ gobuster dir -u url_or_ip -w directory-list-2.3-small.txt -w php
+$ gobuster dir -u url_or_ip -w directory-list-2.3-small.txt -w php,html
+```
+
+You can provide an username with `-U`, a password with `P`, use a proxy <nobr>(`-p`)</nobr>, and provide a cookie (`-c`) simulating that we are logged in.
+</div><div>
+
+[dirsearch](https://github.com/maurosoria/dirsearch) (8.7k ⭐) is a python web scanner. You can install it with `apt install dirsearch`, and there is an implementation in GO if you want to.
+
+```bash
+$ dirsearch -u ip_or_address
+# use a special port
+$ dirsearch -u ip_or_address:port
+# test adding .php
+$ dirsearch -u ip_or_address -e php
+# ignore ...
+$ dirsearch -u ip_or_address -e php -x 404
+$ dirsearch -u ip_or_address -e php -x 404,500
+```
+</div></div>

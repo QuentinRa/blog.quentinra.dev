@@ -6,37 +6,6 @@
 
 ## Web
 
-* https://tryhackme.com/room/introwebapplicationsecurity
-* https://tryhackme.com/room/contentdiscovery
-* https://tryhackme.com/room/walkinganapplication
-* https://tryhackme.com/room/httpindetail
-
-* source / view-source:
-  * HTML comments
-  * hidden stuff
-  * try to find the framework used/version
-    * test default credentials
-    * test bruteforce with default username
-    * test if there are vulnerabilities for this version
-    * look for the default favicon
-      * https://wiki.owasp.org/index.php/OWASP_favicon_database
-      * curl favicon.ico | md5sum
-      * Download, then
-      * Get-FileHash .\favicon.ico -Algorithm MD5
-    * In credits/footer/...
-* inspector
-  * show/hide/remove elements
-* debugger (in sources on chrome)
-  * put a break point
-  * run the page again, the page will pause waiting for debugger
-* Network
-  * Header
-  * Response
-  * ...
-
-Penetration tester (web)
-=> map every feature=~page (like both /account /account?id=5)
-
 A website content is usually what we can't see at first sight (backups, old files, configuration files, administration panels, framework panels...).
 
 here are three main ways of discovering content on a website
