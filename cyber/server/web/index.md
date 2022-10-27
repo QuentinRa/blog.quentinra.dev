@@ -134,49 +134,86 @@ If you found a framework
 
 ## Forced Browsing / Server enumeration
 
-*The goal is to find "hidden" files/directories. Look for PHP files, config files, framework files, backups files <small>(xxx.php.old, xxx.bak...)</small>, admin panels...*
-
 <div class="row row-cols-md-2"><div>
 
-[GoBuster](https://github.com/OJ/gobuster) (6.7k ⭐) is a tool in GO, which given a wordlist of directories, will try to find if this server has any of them.
+Forced browsing means using an automated tool in order to find hidden folders, and files. These files/folders are supposed to be unreadable, but sometimes they are not.
+
+* configuration files (ex: .config)
+* old files (ex: index.php.old)
+* backup files (ex: xxx.bak, backup.xxx)
+* admin/cms panels (ex: WordPress admin login page)
+* private files (ex: documents...)
+
+Most tools, namely **web scanners**, are taking
+
+* **a URL**: `http://xxx.yyy`, `http://xxx.yyy:80`, `127.0.0.1`, `127.0.0.1:80`
+* **a WordList**: on kali, use the command `wordlists` to find directories used to store wordlists. Alternatively, install the command `seclists` to have even more wordlists.
+  * `/usr/share/wordlists/dirb/common.txt`
+  * `/usr/share/wordlists/dirbuster/directory-list-2.3-small.txt`
+  * ...
+</div><div>
+
+<details class="details-e">
+<summary class="pb-2">GoBuster (6.7k ⭐ / Language: Go)</summary>
 
 ```bash
-$ gobuster dir -u url_or_ip -w /usr/share/wordlists/dirb/common.txt
-# test both with and without php
-$ gobuster dir -u url_or_ip -w /usr/share/wordlists/dirb/common.txt -w php
-$ gobuster dir -u url_or_ip -w /usr/share/wordlists/dirb/common.txt -w php,html
+$ gobuster dir -u URL -w wordlist 
 ```
 
-You can provide an username with `-U`, a password with `P`, use a proxy <nobr>(`-p`)</nobr>, and provide a cookie (`-c`) simulating that we are logged in.
+Using the following command, for every entry in the wordlist, a version with, and without each extension will be tested.
 
+```bash
+$ gobuster dir -u URL -w wordlist -w php
+$ gobuster dir -u URL -w wordlist -w php,html
+```
 
-<br>
+Other options
 
-[ffuz](https://github.com/ffuf/ffuf) (8k ⭐) is a web fuzzer (explained somewhere else), but some are using it for forced browsing.
+* `-U`: username
+* `-P`: password
+* `-p`: proxy
+* `-p`: proxy
+* `-c`: a cookie <small>(for instance, to simulated that we are logged)</small>
+</details>
+
+<details class="details-e">
+<summary class="pb-2">dirsearch (8.7k ⭐ / Language: python)</summary>
+
+You can install it with `apt install dirsearch`, and there is an implementation in GO if you want to.
+
+```bash
+# use default wordlist
+$ dirsearch -u URL
+$ dirsearch -u URL -w wordlist
+```
+
+Ignore some error codes
+
+```bash
+$ dirsearch -u URL -x 404
+$ dirsearch -u URL -x 404,500
+```
+
+Using the following command, for every entry in the wordlist, a version with, and without each extension will be tested.
+
+```bash
+$ dirsearch -u URL -e php
+$ dirsearch -u URL -e php,html
+```
+</details>
+
+<details class="details-e">
+<summary>ffuz (8k ⭐ / Language: Go / not primary purpose)</summary>
 
 ```bash
 # will replace FUZZ with every entry in common.txt
-$ ffuf -u ip_or_address/FUZZ -w /usr/share/wordlists/dirb/common.txt
+$ ffuf -u URL/FUZZ -w wordlist
 ```
-</div><div>
-
-[dirsearch](https://github.com/maurosoria/dirsearch) (8.7k ⭐) is a python web scanner. You can install it with `apt install dirsearch`, and there is an implementation in GO if you want to.
-
-```bash
-$ dirsearch -u ip_or_address
-$ dirsearch -u ip_or_address port
-$ dirsearch -u ip_or_address -e php # test both with, and without php
-$ dirsearch -u ip_or_address -e php -x 404 # ignore 404
-$ dirsearch -u ip_or_address -e php -x 404,500
-$ dirsearch -u ip_or_address -w /usr/share/wordlists/dirb/common.txt
-```
-
-<br>
+</details>
 
 Other tools
 
-* [dirb](https://dirb.sourceforge.net/) is a web scanner that is installed on debian-based os using `apt install dirb`.
+* [dirb](https://dirb.sourceforge.net/) (debian: `apt install dirb`)
 * [DirBuster](https://github.com/KajanM/DirBuster) (63 ⭐)
+...
 </div></div>
-
-> If you don't use kali, you may use wordlist in [SecLists](https://github.com/danielmiessler/SecLists/).
