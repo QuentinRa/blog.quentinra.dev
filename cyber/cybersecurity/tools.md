@@ -70,37 +70,6 @@ Samba is based on the common client/server protocol of Server Message Block (SMB
 
 ## SQL injections
 
-SQL injections means for someone to insert some SQL code inside a SQL query. For instance, if a user have a query taking a username, then the user may submit a SQL query rather than his username.
-
-* <i class="bi bi-shield-check text-success"></i> Use prepared requests (or queries), they are ensuring that parameters of your queries are not interpreted as SQL code
-* <i class="bi bi-shield-minus text-danger"></i> You can filter input, but you CAN'T rely on it, as you filter will _most likely_ be bypassed
-* <i class="bi bi-shield-minus text-danger"></i> **YOU SHOULD NEVER TRUST DATA FROM THE USER** <small>(actually, don't trust anyone)</small>. SQL injections may be delayed. You may do protect your login queries, but if the username is some SQL code, then any other request using the username may interpret it, hence you should secure **every** request.
-
-<table class="table table-bordered table-striped border-dark"><thead>
-<tr><th>Name</th><th>Description</th></tr>
-</thead><tbody>
-
-<tr><td>Error-based</td><td>Use an error message when the query failed to adapt the payload, and get data from the database.
-</td></tr>
-
-<tr><td>Union-based</td><td>An attacker use something providing results to add records fetched illegally (ex: list of usernames/passwords/...).
-</td></tr>
-
-<tr><td>Boolean-based</td><td>This attack is used when there is no errors. An attacker will try to make a request that fail if a boolean expression is false. By doing so, if the service (ex: login) failed, the attacker can inter that is was because the boolean expression was false.
-</td></tr>
-
-<tr><td>Others</td><td>Time-based, Out-of-band-based, Voice-based, and Stacked queries-based.
-</td></tr>
-
-</tbody></table>
-
-
-A hacker that detected a possible way to inject some SQL (delayed or not), in a POST or even a GET form, may use it to map, steal, and/or maybe destroy your database.
-
-* <i class="bi bi-info-square" style="background:#7cfc00"></i> Be familiar with the [SQL Injection Payload List repository](https://github.com/payloadbox/sql-injection-payload-list)
-* <i class="bi bi-info-square" style="background:#ffd700"></i> You can manually try to map the Database
-* <i class="bi bi-info-square" style="background:#ffd700"></i> You can use **SQLMap** to map a Database
-
 <details class="details-e">
 <summary>Manually map the database</summary><br>
 

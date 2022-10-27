@@ -82,6 +82,48 @@ Select name,desc from product where name LIKE '%' -- -%'
 
 <hr class="sl">
 
+## SQLInjections in practice
+
+<div class="row row-cols-md-2"><div>
+
+There are many scenarios in which a hacker will find a SQL injection. The example above was a **Union-based SQL Injection**.
+
+
+<table class="table table-bordered table-striped border-dark"><thead>
+<tr><th>Name</th><th>Description</th></tr>
+</thead><tbody>
+
+<tr><td>Error-based</td><td>The simplest SQL injection. If a hacker send a wrong query, the server print the failing SQL query to the user. The hacker can easily use it to adapt the payload, and broke into the database.
+</td></tr>
+
+<tr><td>Union-based</td><td>An attacker use a form returning a list of results, to concatenate to them records fetched illegally.
+</td></tr>
+
+<tr><td>Boolean-based</td><td>This attack is used when there is no errors. An attacker will try to make a request that fail if a boolean expression is false. By doing so, if the service (ex: login) failed, the attacker can inter that is was because the boolean expression was false.
+</td></tr>
+
+<tr><td>Others</td><td>Time-based, Out-of-band-based, Voice-based, and Stacked queries-based.
+</td></tr>
+</tbody></table>
+</div><div>
+
+**Payloads** are the values that you are using the break into the database.
+
+* [sql-injection-payload-list](https://github.com/payloadbox/sql-injection-payload-list) (2.6k ⭐)
+* [PayloadsAllTheThings/SQL Injection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection) (42.3k ⭐)
+* Tools, such as SQLMap (25k ⭐)
+
+Mitigations
+
+* Use prepared requests (queries), they are ensuring that parameters of your queries are not interpreted as SQL code
+* You can filter input, but you CAN'T rely on it, as you filter will _most likely_ be bypassed
+* Do not trust anyone. SQL injections may be delayed. You may do protect your login queries, but if provided username is some SQL code, then any other request using the username may interpret it, hence you should secure every request, even if there are not handling data from the user, as they may later. You should use API for better security.
+</div></div>
+
+
+
+<hr class="sr">
+
 ## SQLMap
 
 <div class="row row-cols-md-2"><div>
