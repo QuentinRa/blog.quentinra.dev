@@ -302,6 +302,21 @@ toto
 
 <hr class="sep-both">
 
+## Web
+
+* **Load Balancers**: handle if a server is down (periodic health check - if no response, no more clients until there is an answer), and manage the server load
+  * algorithms are round-robin, which sends it to each server in turn, or weighted, which checks how many requests a server is currently dealing with and sends it to the least busy server
+* CDN (Content Delivery Networks): CDN works out where the nearest server is physically located and sends the request there instead of potentially the other side of the world
+* Common databases: MySQL, MSSQL, MongoDB, GraphQL, Postgres
+* WAF (Web Application Firewall)
+  * protect web servers (ex: against DDOS)
+  * analyse if the traffic comes from a bit, and the rate of the traffic
+* Apache, Nginx, IIS and NodeJS
+* Virtual Hosts: one server and multiples domains
+* PHP, Python, Ruby, NodeJS, Perl and many more
+
+<hr class="sep-both">
+
 ## SQLi
 
 * https://tryhackme.com/room/sqlinjectionlm
