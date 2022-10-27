@@ -262,44 +262,6 @@ PRET isn't going to work here as it is using port 9000 by default
 
 <hr class="sep-both">
 
-# SQLMap
-
-![Usage: Map DataBase](https://img.shields.io/badge/usage-Map%20DataBase-ffd700)
-
-From the [SQLMap GitHub Repository](https://github.com/sqlmapproject/sqlmap): "sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.".
-
-```py
-# try login.php
-sqlmap -u "https://xxx.tld/login.php"
-# try to dump the table USERS in the database xxx
-sqlmap -u "https://xxx.tld/login.php" -D xxx -T USERS –dump
-```
-
-<details class="details-e">
-<summary>Parameters</summary>
-
-* `--url URL_TO_TEST`: test a URL in which we may find a SQL injection
-* `-r request_file`: if you saved a request (ex: BurpSuite > Save item), you can use that instead of `--url`, **that your antivirus may block**.
-* `--dbs`: display all databases
-* `--tables`: display tables
-* `--column`: display columns
-* `-C xx, yy`: display only columns xx, and yy
-* `--dbms=some_dmbs`: to increase the chances of success, specify the dbms
-* `-D db_name`: the name of the database
-* `--time-sec timeout`: specify a timeout
-* `--dump`: save current data
-* `--dump-all`: save all data
-* `--batch`: do all requests at once (do not way for input)
-</details>
-
-When starting the command, you will have to do some choices.
-
-* You should try doing both with, and without union tests, to see which one is better in your current case
-* "GET xxx is vulnerable" (resp. POST): you should answer yes if you want to exploit the vulnerable parameter
-* [SQLMap CheatSheet](https://www.security-sleuth.com/sleuth-blog/2017/1/3/sqlmap-cheat-sheet) (external)
-
-<hr class="sl">
-
 ## enum4linux
 
 ![Usage: Enumerating Information](https://img.shields.io/badge/usage-Enumerating%20Information-ffd700)
