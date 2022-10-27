@@ -16,17 +16,6 @@ There is a more complete [list of vulnerable ports here](). Usually, default por
 
 * <i class="bi bi-info-square" style="background:#7cfc00"></i> Use `nmap` to map the ports of the server
 
-<hr class="sr">
-
-## Discovery of hidden content
-
-* <i class="bi bi-info-square" style="background:#7cfc00"></i> There are cases when the request is in the URL, such as "/account/5123" or "/invoices?ref=365230". Every website should ensure that no unauthorized user can access private data.
-
-BAC : Insecure Direct Object References (IDOR). Example is a server service resources, with a URL in which we can guess other files names.
-
-* <i class="bi bi-info-square" style="background:#ffd700"></i> use `wfuzz` (or any similar tool) to automate the process above
-* <i class="bi bi-info-square" style="background:#ffd700"></i> use `Gobuster` (or any similar tool) with a list of directories (see bruteforce) to search for hidden directories
-
 <hr class="sl">
 
 ## File upload

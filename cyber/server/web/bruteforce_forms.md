@@ -6,6 +6,9 @@ This practice of using bruteforce on GET/POST Forms, is usually called "web fuzz
 
 > **Note**: BurpSuite can be used too, see the Intruder tab.<br>
 > **Note**: FeroxBuster users should take a look at the [feroxfuzz](https://github.com/epi052/feroxfuzz/) library.
+
+**Insecure Direct Object References** (BrokenAccessControl), is a failure in which we can guess given a URL how to access other elements, and if we change the URl, we can indeed access them.
+
 </div><div>
 
 Fuzzing involve taking values from a wordlist, and testing one by one these values in the request. On Kali, you can use these two commands to find where wordlists are stored:
