@@ -2,6 +2,8 @@
 
 [![beginnerpathintro](../_badges/beginnerpathintro.svg)](https://tryhackme.com/room/beginnerpathintro)
 [![startingoutincybersec](../_badges/startingoutincybersec.svg)](https://tryhackme.com/room/startingoutincybersec)
+[![defensivesecurity](../_badges/defensivesecurity.svg)](https://tryhackme.com/room/defensivesecurity)
+[![careersincyber](../_badges/careersincyber.svg)](https://tryhackme.com/room/careersincyber)
 
 A lot of stuff to get started in cybersecurity, including websites to learn, practice, find news, look for news, along with CVE lookup, and websites to check if your credentials leaked, or stuff like that. 
 
