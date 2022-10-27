@@ -2,30 +2,17 @@
 
 <div class="row row-cols-md-2"><div>
 
-Cryptography is used to **protect confidentiality** <small>(can someone eavesdrop on your conversations?)</small>, **ensure integrity** <small>(are the message exchanged untempered?)</small>, along with **authenticity** <small>(are you really exchanging with the person you believe to be exchanging?)</small>.
-
-* [DamnVulnerableCryptoApp](https://damnvulnerablecryptoapp.github.io/DamnVulnerableCryptoApp/) might be worth the check
-</div><div>
-
-We are mostly using something called the **checksum** to ensure the integrity.
-
-While we usually rely on **signatures**, and/or **certificates** used by trusted parties to ensure authenticity.
-</div></div>
-
-<hr class="sl">
-
-## Cracking a hash
-
-<div class="row row-cols-md-2"><div>
-
 Almost all the time, password are **hashed**. It means that some "clear text" is passed to a one-way function that returns a hash. One-way means that you can't get back the password from the hash. But, we can check if a password has generated a hash, so it's a useful, and supposedly secure way of storing a password.
-
 </div><div>
 
 The most important use of hashing is for integrity. We generate a hash of file/..., and make it available with the file. Others can generate the hash of the file after they download it. If both are the same, then it means that the content was not tempered with.
+</div></div>
 
 > Some hashing functions are proven to be faulty, such as SHA1, or MD5, as two different password generated the same hash, which means that using a different password that intended, you could log in into the victim account.
-</div></div>
+
+<hr class="sl">
+
+## Find which algorithm generated this hash
 
 <div class="row row-cols-md-2"><div>
 
@@ -45,6 +32,7 @@ $ hash-identifier "some_hash"
 $ nth -t "some_hash"
 $ nth -f hash
 ```
+</div><div>
 
 [hashID](https://github.com/psypanda/hashID) (1.2k ⭐, not updated since 2015)
 
@@ -57,7 +45,13 @@ Others
 
 * [haiti](https://github.com/noraj/haiti/) (309 ⭐)
 * [hashes.com/hash_identifier](https://hashes.com/en/tools/hash_identifier) (website)
-</div><div>
+</div></div>
+
+<hr class="sr">
+
+## Cracking a hash
+
+<div class="row row-cols-md-2"><div>
 
 You can use [**John the Ripper**](https://github.com/openwall/john) to try to bruteforce a hash.
 
@@ -70,6 +64,8 @@ john --format=raw-md4 hash
 john --format=raw-sha1 hash
 ```
 
+</div><div>
+
 You can provide a wordlist
 
 ```bash
@@ -81,25 +77,6 @@ john --format=raw-md4 --wordlist=/usr/share/wordlists/rockyou.txt hash
 
 * Merge wordlist: `cat wordlist1 wordlist2 wordlist3 > wordlist4`
 * You may try another algorithm, if it does not progress much
-</div></div>
-
-<hr class="sr">
-
-## Base64
-
-<div class="row row-cols-md-2"><div>
-
-Base64 is only an encoding function. This isn't doing an encryption, or something cool like that, so it's not used for confidentiality. It could be used to write (encode) an image/... as a string.
-
-> Most base64 strings are ending with "=", or "==".
-</div><div>
-
-```bash
-$ echo "toto" | base64
-dG90bwo=
-$ echo "dG90bw=" | base64 -d
-toto
-```
 </div></div>
 
 <hr class="sl">

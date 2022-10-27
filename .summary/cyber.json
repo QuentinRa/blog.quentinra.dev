@@ -30,14 +30,14 @@
         "tag": "discovery/investigation/index.md",
         "name": "Investigation",
         "desc": "",
-        "icon": "",
+        "icon": null,
         "hidden": false
       },
       {
         "tag": "discovery/host/index.md",
         "name": "Host discovery",
         "desc": "",
-        "icon": "",
+        "icon": null,
         "hidden": false
       }
     ],
@@ -46,21 +46,21 @@
         "tag": "server/web/index.md",
         "name": "Exploit webserver",
         "desc": "",
-        "icon": "",
+        "icon": null,
         "hidden": false
       },
       {
         "tag": "server/web//server.md",
         "name": "Server-side",
         "desc": "",
-        "icon": "",
+        "icon": null,
         "hidden": false
       },
       {
         "tag": "server/web/client.md",
         "name": "Client-side",
         "desc": "",
-        "icon": "",
+        "icon": null,
         "hidden": false
       },
       {
@@ -76,7 +76,7 @@
         "tag": "server/database/index.md",
         "name": "Exploit database",
         "desc": "",
-        "icon": "",
+        "icon": null,
         "hidden": false
       }
     ],
@@ -85,20 +85,20 @@
         "tag": "os/linux/index.md",
         "name": "Exploit Linux",
         "desc": "",
-        "icon": "",
+        "icon": null,
         "hidden": false
       },
       {
         "tag": "os/windows/index.md",
         "name": "Exploit Windows",
         "desc": "",
-        "icon": "",
+        "icon": null,
         "hidden": false
       },
       {
         "tag": "os/_tools/metasploit/index.md",
         "name": "metasploit",
-        "desc": "",
+        "desc": null,
         "icon": "<i class=\"bi bi-tools\"></i>",
         "hidden": false
       }
@@ -106,9 +106,16 @@
     "Software": [
       {
         "tag": "random/crack_password/index.md",
-        "name": "Crack passwords",
-        "desc": "",
-        "icon": "",
+        "name": "Crack a hash",
+        "desc": "Use john the ripper to break insecure passwords, and gpg/ssh keys with a weak passphrase..",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "random/crack_password/hydra.md",
+        "name": "Bruteforce services",
+        "desc": "Use hydra to bruteforce SSH, FTP...",
+        "icon": null,
         "hidden": false
       }
     ]

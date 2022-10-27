@@ -1,3 +1,15 @@
+<div class="row row-cols-md-2"><div>
+
+Cryptography is used to **protect confidentiality** <small>(can someone eavesdrop on your conversations?)</small>, **ensure integrity** <small>(are the message exchanged untempered?)</small>, along with **authenticity** <small>(are you really exchanging with the person you believe to be exchanging?)</small>.
+
+* [DamnVulnerableCryptoApp](https://damnvulnerablecryptoapp.github.io/DamnVulnerableCryptoApp/) might be worth the check
+</div><div>
+
+We are mostly using something called the **checksum** to ensure the integrity.
+
+While we usually rely on **signatures**, and/or **certificates** used by trusted parties to ensure authenticity.
+</div></div>
+
 https://www.angelique-renaud.com/cryptage.php
 https://fr.wikipedia.org/wiki/Portail:Cryptologie
 https://qvault.io/
