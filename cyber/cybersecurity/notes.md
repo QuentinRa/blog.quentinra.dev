@@ -4,18 +4,9 @@
 
 <hr class="sep-both">
 
-## Web
-
-ffuf -w /usr/share/seclists/Discovery/Web-Content/common.txt -u http://10.10.152.110/FUZZ
-
-dirb http://10.10.152.110/ /usr/share/seclists/Discovery/Web-Content/common.txt
-
-* https://github.com/danielmiessler/SecLists/
-* sudo apt install seclists
-
-<hr class="sep-both">
-
 ## Hydra
+
+> If you don't use kali, you may use wordlist in [SecLists](https://github.com/danielmiessler/SecLists/).
 
 * Post Web Form
 * http-post-form "/:username=^USER^&password=^PASS^:F=incorrect" -V

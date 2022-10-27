@@ -141,31 +141,42 @@ If you found a framework
 [GoBuster](https://github.com/OJ/gobuster) (6.7k ⭐) is a tool in GO, which given a wordlist of directories, will try to find if this server has any of them.
 
 ```bash
-# kali
-$ cd /usr/share/wordlists/dirbuster/
-$ gobuster dir -u url_or_ip -w directory-list-2.3-small.txt
-```
-
-Note that you can add a port if no 80/443 with `:port` after the IP/URL. This tool can also append an extension to every word in the wordlist. For instance,
-
-```bash
-$ gobuster dir -u url_or_ip -w directory-list-2.3-small.txt -w php
-$ gobuster dir -u url_or_ip -w directory-list-2.3-small.txt -w php,html
+$ gobuster dir -u url_or_ip -w /usr/share/wordlists/dirb/common.txt
+# test both with and without php
+$ gobuster dir -u url_or_ip -w /usr/share/wordlists/dirb/common.txt -w php
+$ gobuster dir -u url_or_ip -w /usr/share/wordlists/dirb/common.txt -w php,html
 ```
 
 You can provide an username with `-U`, a password with `P`, use a proxy <nobr>(`-p`)</nobr>, and provide a cookie (`-c`) simulating that we are logged in.
+
+
+<br>
+
+[ffuz](https://github.com/ffuf/ffuf) (8k ⭐) is a web fuzzer (explained somewhere else), but some are using it for forced browsing.
+
+```bash
+# will replace FUZZ with every entry in common.txt
+$ ffuf -u ip_or_address/FUZZ -w /usr/share/wordlists/dirb/common.txt
+```
 </div><div>
 
 [dirsearch](https://github.com/maurosoria/dirsearch) (8.7k ⭐) is a python web scanner. You can install it with `apt install dirsearch`, and there is an implementation in GO if you want to.
 
 ```bash
 $ dirsearch -u ip_or_address
-# use a special port
-$ dirsearch -u ip_or_address:port
-# test adding .php
-$ dirsearch -u ip_or_address -e php
-# ignore ...
-$ dirsearch -u ip_or_address -e php -x 404
+$ dirsearch -u ip_or_address port
+$ dirsearch -u ip_or_address -e php # test both with, and without php
+$ dirsearch -u ip_or_address -e php -x 404 # ignore 404
 $ dirsearch -u ip_or_address -e php -x 404,500
+$ dirsearch -u ip_or_address -w /usr/share/wordlists/dirb/common.txt
 ```
+
+<br>
+
+Other tools
+
+* [dirb](https://dirb.sourceforge.net/) is a web scanner that is installed on debian-based os using `apt install dirb`.
+* [DirBuster](https://github.com/KajanM/DirBuster) (63 ⭐)
 </div></div>
+
+> If you don't use kali, you may use wordlist in [SecLists](https://github.com/danielmiessler/SecLists/).

@@ -72,4 +72,5 @@
 * RockYou / Wordlist
   * You may find wordlist in `/usr/share/wordlists/`
   * extract "rockyou.txt" `sudo gunzip /usr/share/wordlists/rockyou.txt.gz`
+  * `sudo apt install seclists` to install [SecLists](https://github.com/danielmiessler/SecLists/) wordlists.
 </div></div>

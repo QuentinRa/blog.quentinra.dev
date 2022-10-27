@@ -27,7 +27,7 @@ $ cat hash | hash-identifier
 $ hash-identifier "some_hash"
 ```
 
-[Name-that-hash](https://github.com/HashPals/Name-That-Hash) (1.1k ⭐, fork of hashID)
+[Name-that-hash](https://github.com/HashPals/Name-That-Hash) (1.1k ⭐, fork of hashID). There is an [online version](https://nth.skerritt.blog/). The program is giving you the john format 🚀! 
 
 ```bash
 # sudo apt install name-that-hash
