@@ -211,9 +211,9 @@ $ ffuf -u URL/FUZZ -w wordlist
 ```
 </details>
 
-Other tools
+Other tools that you may see in use
 
-* [dirb](https://dirb.sourceforge.net/) (debian: `apt install dirb`)
+* [feroxbuster](https://github.com/epi052/feroxbuster) (3.3k ⭐, Rust)
+* [dirb](https://dirb.sourceforge.net/) <small>(debian: `apt install dirb`)</small>
 * [DirBuster](https://github.com/KajanM/DirBuster) (63 ⭐)
-...
 </div></div>

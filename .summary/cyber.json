@@ -50,15 +50,8 @@
         "hidden": false
       },
       {
-        "tag": "server/web//server.md",
-        "name": "Server-side",
-        "desc": "",
-        "icon": null,
-        "hidden": false
-      },
-      {
-        "tag": "server/web/client.md",
-        "name": "Client-side",
+        "tag": "server/web/bruteforce_forms.md",
+        "name": "Bruteforce forms",
         "desc": "",
         "icon": null,
         "hidden": false
