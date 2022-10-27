@@ -68,58 +68,6 @@ Samba is based on the common client/server protocol of Server Message Block (SMB
 
 <hr class="sep-both">
 
-## SQL injections
-
-<details class="details-e">
-<summary>Manually map the database</summary><br>
-
-<details class="details-e">
-<summary>Database, version, and user</summary>
-
-You need to find the kind of database, the version, the username, the table and its columns, then steal everything.
-
-* `SELECT @@version`: return the database version
-* `SELECT database()`: return the name of the database
-* `SELECT user()`: return the name of the database
-
-Some boolean-based SQL injections:
-
-* **For any text**: `' AND (ascii(substr((select database()),1,1))) = 115 --`: return true if the first character of the name of the database is "s" (ascii('s') is 115).
-</details>
-
-<details class="details-e">
-<summary>Map columns</summary>
-
-**Goal**: To guess the number of columns in the SELECT, which is useful later to use UNION, to fetch data from the database.
-
-One way is using **ORDER BY**: the clause can take a column name that is inside the select, **but the clause can also take the index of the column in the select**. Try injecting `ORDER BY 1`, `ORDER BY 2`, etc., until the query fails.
-
-Another way is using UNION. As you may know, UNION can only be used when the two queries have the same number of columns in the select. Hence, you can try `UNION Select NULL--`, `UNION SELECT NULL, NULL--`, etc., until the query fails.
-
-</details>
-
-<details class="details-e">
-<summary>Fetch records</summary>
-
-If you have a SQL injection possible in a page displaying every username given a country, with by the following SQL query
-
-```php
-$sql = "SELECT username FROM users WHERE country='$country'";
-```
-
-Then, using UNION, you could add another request which will append the results of the second request in the view of the first request <small>(**note**: UNION requires the same number of columns in every SELECT)</small>
-
-```sql
--- inject $country with "' UNION SELECT TABLE_NAME FROM information_schema.TABLES"
-SELECT username FROM users WHERE country=''
-UNION
-SELECT TABLE_NAME FROM information_schema.TABLES
-```
-</details>
-</details>
-
-<hr class="sep-both">
-
 # Assembly
 
 ![Level: Intermediate](https://img.shields.io/badge/level-Advanced-fae7b5)
