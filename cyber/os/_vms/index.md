@@ -12,7 +12,7 @@
 * **Notes**
   * Some are sharing pre-configured machines ready to install
   * The UX is better than in Virtual Box
-  * At least in the free version, there is fewer features than Virtual Box, such as to easily resize permanently the screen, and their documentation is not that good.
+  * At least in the free version, there are fewer features than Virtual Box, such as to easily resize permanently the screen, and their documentation is not that good.
   * In the settings
     * you can create a shared folder between Windows/VM
 </div><div>

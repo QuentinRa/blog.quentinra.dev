@@ -10,3 +10,5 @@ A payload is the form data that is stored in the request. For instance, when sub
 
 Start the attack. If a response is different from others, then it should be worth it to try it manually.
 </details>
+
+https://github.com/SNGWN/Burp-Suite
