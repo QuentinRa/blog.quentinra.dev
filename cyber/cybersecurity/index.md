@@ -71,17 +71,17 @@ Knowledgeable about
 <tr><td>Jobs</td>
 <td>
 
-* **Red Teamer**: play the hacker
-* **Penetration tester**: Try to find vulnerabilities in a product of the company
+* **Red Teamer**: play the hacker, provide feedback from an enemy perspective. They are testing the company response.
+* **Penetration tester**: Try to find vulnerabilities in a system, a network, or an application. Perform security assessments, and audits. Recommend actions to prevent attacks.
 * **Security Engineer**: implement, and maintain security controls, threats protection... to help prevent cyberattacks, and protect data.
 
 </td>
 <td>
 
-* **Security Analyst**: use a SIEM to analyse, and remediate to issues.
+* **Security Analyst**: Analyse, and remediate to issues. Develop security plans to keep the company safe.
 * **Incident responder**: determine how a cyberattack is handled, see [Incident Handling Guide by the NIST](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf).
-* **Digital Forensics**: investigate attacks <small>(file system, memory, logs)</small>
-* **Malware Analyst**: analyse malware, statically <small>(read the code)</small>, and dynamically <small>(see what it does)</small>.
+* **Digital Forensics**: investigate attacks <small>(file system, memory, logs)</small>, and policies violations.
+* **Malware Analyst**/**Reverse-engineer**: analyse malware, statically <small>(read the code)</small>, and dynamically <small>(see what it does)</small>.
 * **Security researcher**: Linux, Hashing...
 </td></tr>
 </tbody></table>

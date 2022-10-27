@@ -288,6 +288,12 @@ toto
 
 # Notes
 
+* https://tryhackme.com/resources/blog/online-training-for-careers
+
+<hr class="sep-both">
+
+# Resources
+
 * There are websites on the Internet that allow you to check the reputation of an IP address to see whether it's malicious or suspicious.
   * AbuseIPDB
   * Cisco Talos Intelligence
