@@ -97,6 +97,7 @@ Samba is based on the common client/server protocol of Server Message Block (SMB
   * `nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse <ip> -vv`
 * `smbclient //<ip>/anonymous` login without password
 * You may find useful information
+* https://tryhackme.com/room/kenobi
 
 <hr class="sep-both">
 
@@ -250,6 +251,8 @@ Hide things in images: [Steganography](https://0xrick.github.io/lists/stego/).
 <hr class="sep-both">
 
 ## Printers - IPP - (TCP/631)
+
+https://tryhackme.com/room/printerhacking101
 
 "The Internet Printing Protocol (IPP) - is a specialized Internet protocol for communication between client devices and printers. It allows clients to submit one or more print jobs to the printer or print server, and perform tasks such as querying the status of a printer, obtaining the status of print jobs, or canceling individual print jobs."
 

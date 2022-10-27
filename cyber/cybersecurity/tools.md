@@ -190,7 +190,10 @@ $ vol -f memory_capture_file --profile=a_profile --pid=infected_process_pid dlld
 
 Volatility
 https://subscription.packtpub.com/book/security/9781838640804/10/ch10lvl1sec55/using-volatility-in-kali-linux
+
 https://youtu.be/dB5852eAgpc
+
+https://tryhackme.com/room/bpvolatility
 
 * Inpect files - dump all processes, and ddl
   * https://www.virustotal.com/gui/home/upload

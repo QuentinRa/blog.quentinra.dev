@@ -6,6 +6,11 @@
 
 ## Web
 
+* https://tryhackme.com/room/introwebapplicationsecurity
+* https://tryhackme.com/room/contentdiscovery
+* https://tryhackme.com/room/walkinganapplication
+* https://tryhackme.com/room/httpindetail
+
 URL
 * Scheme: (protocol) HTTP/HTTPS/...
 * Username:Password@Domain:port/Path?query#Fragment
