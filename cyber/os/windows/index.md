@@ -1,5 +1,12 @@
 # Exploit Windows
 
+[![windowsfundamentals1xbx](../../_badges/windowsfundamentals1xbx.svg)](https://tryhackme.com/room/windowsfundamentals1xbx)
+[![windowsfundamentals2x0x](../../_badges/windowsfundamentals2x0x.svg)](https://tryhackme.com/room/windowsfundamentals2x0x)
+[![windowsfundamentals3xzx](../../_badges/windowsfundamentals3xzx.svg)](https://tryhackme.com/room/windowsfundamentals3xzx)
+[![retro](../../_badges/retro.svg)](https://tryhackme.com/room/retro)
+[![ice](../../_badges/ice.svg)](https://tryhackme.com/room/ice)
+[![blaster](../../_badges/blaster.svg)](https://tryhackme.com/room/blaster)
+
 <hr class="sl">
 
 ## Knowledge about Windows

@@ -1,10 +1,11 @@
 # metasploit
 
+[![metasploitintro](../../../_badges/metasploitintro.svg)](https://tryhackme.com/room/metasploitintro)
+[![rpmetasploit](../../../_badges/rpmetasploit.svg)](https://tryhackme.com/room/rpmetasploit)
+
 <div class="row row-cols-md-2"><div>
 
-The [Metasploit Framework](https://github.com/rapid7/metasploit-framework) is a penetration testing framework that you can use to test your systems.
-
-Metasploit is divided into modules
+The [Metasploit Framework](https://github.com/rapid7/metasploit-framework) is a penetration testing framework that you can use to test your systems. Metasploit is divided into modules
 
 * **Auxiliary**: test an exploit
 * **Payloads**: way used to attack the target
@@ -14,13 +15,12 @@ Metasploit is divided into modules
 * Encoders/Evasion/NOPs
 * **Post**: useful scripts once you are on the target
 
+</div><div>
+
 Links
 
 * [Metasploit Documentation](https://docs.metasploit.com/)
 * [Metasploit Unleashed](https://www.offensive-security.com/metasploit-unleashed/) 📌
-
-</div><div>
-
 
 If you want to test your skills on a target, download Metasploit Vulnerable OS [Metasploit 2](https://docs.rapid7.com/metasploit/metasploitable-2/), or [Metasploit3](https://github.com/rapid7/metasploitable3).
 
