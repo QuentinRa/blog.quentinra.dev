@@ -27,17 +27,6 @@ Start the attack. If a response is different from others, then it should be wort
 
 </details>
 
-```
-Ctrl + Shift + D Switch to the Dashboard
-Ctrl + Shift + T Switch to the Target tab
-Ctrl + Shift + P Switch to the Proxy tab
-Ctrl + Shift + I Switch to the Intruder tab
-Ctrl + Shift + R Switch to the Repeater tab
-```
-
-* Project options (only one project)
-* Users options (application-wise)
-
 --- Proxy
 
 * intercept is on
@@ -45,24 +34,6 @@ Ctrl + Shift + R Switch to the Repeater tab
 * In the proxy options, we can grab responses, or add a filter on only some responses
 * forward: allow to pass (CTRL+F)
 * Right-click > send to
-* https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-basic/
-  * click on it
-  * options
-  * Title: Burp
-  * Proxy IP: 127.0.0.1
-  * Port: 8080
-  * click on your config to turn it on
-* HTTPS
-  * http://burp/cert cacert.der
-  * http://burpsuite/ -> CA
-  * You need to intercept the request!
-  * https://portswigger.net/burp/documentation/desktop/external-browser-config/certificate
-    * Search certificates
-    * View certificates
-    * import
-    * Trust this CA to identify websites
-    * OK > OK
-* There is an integrated preconfigured chrominium web browser if needed
 * Scoping: avoid capturing two much
   * Target > select a target > Right-click > add to scope
   * "yes" to disable out of scope logs

@@ -18,3 +18,29 @@ There are 6 modules in the suite:
 * **Comparer**: compare data
 * **Sequencer**: check algorithm generating tokens/...
 </div></div>
+
+<hr class="sl">
+
+## General notes
+
+<div class="row row-cols-md-2"><div>
+
+* Launch the software
+* Create a new temporary project
+
+If needed, you can set some project-only options, according to what you will do in the project.
+
+If you want, you can set users-options, such as increasing the font, or using the dark mode.
+
+</div><div>
+
+Some shortcuts
+
+```
+Ctrl + Shift + D Switch to the Dashboard
+Ctrl + Shift + T Switch to the Target tab
+Ctrl + Shift + P Switch to the Proxy tab
+Ctrl + Shift + I Switch to the Intruder tab
+Ctrl + Shift + R Switch to the Repeater tab
+```
+</div></div>
