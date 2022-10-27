@@ -16,7 +16,7 @@ A cyber expert can specialize in offense/defense
 
 <table class="table table-bordered table-striped border-dark">
 <thead>
-<tr><th></th><th>Offense</th><th>Defense</th></tr>
+<tr><th></th><th>Offense (Read Team)</th><th>Defense (Blue team)</th></tr>
 </thead>
 <tbody>
 
@@ -27,7 +27,9 @@ Look for vulnerabilities (bug, loopholes) in the tools/software of a company, tr
 </td>
 <td>
 
-Detect, and stop attacks as fast as possible. Monitor, and analyse. Investigate/Do Forensics. Find attack paths/track down hackers.
+Prevent attacks <small>(firewall, IPS)</small>. Monitor, and analyse traffic... Detect, and stop attacks as fast as possible. Investigate/Do Forensics. Find attack paths/track down hackers.
+
+Do awareness, documenting the network/devices, update and ensure that the company is protected against known vulnerabilities.
 </td></tr>
 
 <tr><td>Skills</td>
@@ -53,22 +55,36 @@ Knowledgeable about
 * ...
 </td></tr>
 
+<tr><td></td>
+<td>
+
+</td>
+<td>
+
+* **Security Operation Center** (SOC): a team of cybersecurity professionals <small>(detect unusual activity, weakness, intrusions, violations)</small>
+* **Threat Intelligence**: dig information about actual and potential enemies, and prepare in case they attack you.
+* A Security Information and Event Management (**SIEM**) system is combine information from various places in one interface <small>(login attempts...)</small>.
+</td></tr>
+
 <tr><td>Jobs</td>
 <td>
 
-* **Penetration tester**: Try to find vulnerabilities in a product of the company
 * **Red Teamer**: play the hacker
+* **Penetration tester**: Try to find vulnerabilities in a product of the company
 * **Security Engineer**: implement, and maintain security controls, threats protection... to help prevent cyberattacks, and protect data.
 
 </td>
 <td>
 
-* **Security Analyst** <small>(use Splunk?)</small>
-* **Incident responder** <small>(use Volatility?)</small>: dispatched to guess what the hackers want, and what will be the consequences of the attack
-* **Malware Analyst**
+* **Security Analyst**: use a SIEM to analyse, and remediate to issues.
+* **Incident responder**: determine how a cyberattack is handled, see [Incident Handling Guide by the NIST](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf).
+* **Digital Forensics**: investigate attacks <small>(file system, memory, logs)</small>
+* **Malware Analyst**: analyse malware, statically <small>(read the code)</small>, and dynamically <small>(see what it does)</small>.
 * **Security researcher**: Linux, Hashing...
 </td></tr>
 </tbody></table>
+
+> And, obviously, there are [**Black hats**](https://www.blackhat.com/) (hackers).
 
 <hr class="sr">
 
@@ -77,7 +93,7 @@ Knowledgeable about
 <div class="row row-cols-md-2"><div>
 
 * **Cyber/Data Breach**: a leak of data
-* **Vulnerability**: a failure/flaw in a system
+* **Vulnerability**/**weakness**: a failure/flaw in a system
 * **Exploits**: code that make use of a vulnerability to gain access to a machine, install a malware, steal data...
 * **Social engineering**: hackers manipulate someone, to make them compromise the system, or do something that benefit them.
 
@@ -103,7 +119,6 @@ A look at cyberattacks categories ([source](https://www.malwarebytes.com/))
 * **Intrusion Detection System** (IDS): a system detecting intrusions...
 * **Endpoint Detection and Response** (EDS)
 * **Deceptive security**
-* **Security Operation Center** (SOC)
 </div></div>
 
 
