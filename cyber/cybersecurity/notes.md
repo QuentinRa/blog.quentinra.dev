@@ -557,3 +557,39 @@ Confidentiality, Integrity, and Availability (CIA) is the opposite of Disclosure
 * https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md
 * https://github.com/alexb49/total-oscp-guide
 * https://payatu.com/guide-linux-privilege-escalation
+
+<hr class="sep-both">
+
+## Encryption/Encoding
+
+* hash function, create/digest a hash of a data
+* hash collision (2i->1o)
+  * https://www.mscs.dal.ca/~selinger/md5collision/
+  * https://shattered.io/
+* A rainbow table is a lookup table of hashes to plaintexts
+* To protect against rainbow tables, we add a salt to the passwords. 
+* https://duckduckgo.com/?q=5b31f93c09ad1d065c0491b764d04933&hps=1&atb=v332-1&ia=web
+
+$1$	md5crypt, used in Cisco stuff and older Linux/Unix systems
+$2$, $2a$, $2b$, $2x$, $2y$	Bcrypt (Popular for web applications)
+$6$
+sha512crypt (Default for most Linux/Unix systems)
+
+* https://hashcat.net/wiki/doku.php?id=example_hashes
+* https://hashcat.net/hashcat/
+* hashcat mode number
+
+It’s worth mentioning that virtual machines normally don’t have access to the host's graphics card(s) (You can set this up, but it’s a lot of work). If you want to run hashcat, it’s best to run it on your host (Windows builds are available on the website, run it from powershell). You can get Hashcat working with OpenCL in a VM, but the speeds will likely be much worse than cracking on your host. John the ripper uses CPU by default and as such, works in a VM out of the box although you may get better speeds running it on the host OS as it will have more threads and no overhead from running in a VM.
+
+NEVER (I repeat, NEVER!) use --force for hashcat. It can lead to false positives (wrong passwords being given to you) and false negatives (skips over the correct hash).
+
+UPDATE: As of Kali 2020.2, hashcat 6.0 will run on the CPU without --force. I still recommend cracking on your host OS if you have a GPU, as it will be much much faster.
+
+* john >>
+* don't forget to quote hash (bcrypt $$...)
+* it's md5, better use https://md5hashing.net/hash/md5/xxx
+* https://md5hashing.net/
+
+* Integrity Checking 
+* HMAC is a method of using a cryptographic hashing function to verify the authenticity and integrity of data.
+* A HMAC can be used to ensure that the person who created the HMAC is who they say they are (authenticity), and that the message hasn’t been modified or corrupted (integrity). They use a secret key, and a hashing algorithm in order to produce a hash.
