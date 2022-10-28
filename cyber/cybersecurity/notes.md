@@ -385,7 +385,6 @@ The Operating System (OS) is the layer sitting between the hardware and the appl
 ## Windows
 
 * C:\Windows\system32\winver.exe: display windows version information
-* C:\Windows\System32\msinfo32.exe: open system information
 * C:\Windows\System32\control.exe system: view basic information about the system
 * C:\Windows\System32\regedt32.exe: open windows registry
 * C:\Windows\System32\control.exe: open the control panel
@@ -406,3 +405,14 @@ WMI Control configures and controls the Windows Management Instrumentation (WMI)
 Per Wikipedia, "WMI allows scripting languages (such as VBScript or Windows PowerShell) to manage Microsoft Windows personal computers and servers, both locally and remotely. Microsoft also provides a command-line interface to WMI called Windows Management Instrumentation Command-line (WMIC)."
 
 Note: The WMIC tool is deprecated in Windows 10, version 21H1. Windows PowerShell supersedes this tool for WMI.
+
+* C:\Windows\System32\msinfo32.exe: open system information
+* %systemroot%
+* resmon / Resource Monitor (CPU Disk Network Memory)
+* ipconfig
+* A  command to retrieve the help manual for a command is /?
+* To clear the command prompt screen, the command is cls. 
+* The next command is netstat. Per the help manual, this command will display protocol statistics and current TCP/IP network connections. 
+* The net command is primarily used to manage network resources. This command supports sub-commands.
+* net help /help too?
+* gcm ipconfig https://stackoverflow.com/questions/304319/is-there-an-equivalent-of-which-on-the-windows-command-line
