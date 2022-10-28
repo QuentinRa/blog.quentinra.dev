@@ -593,3 +593,13 @@ UPDATE: As of Kali 2020.2, hashcat 6.0 will run on the CPU without --force. I st
 * Integrity Checking 
 * HMAC is a method of using a cryptographic hashing function to verify the authenticity and integrity of data.
 * A HMAC can be used to ensure that the person who created the HMAC is who they say they are (authenticity), and that the message hasn’t been modified or corrupted (integrity). They use a secret key, and a hashing algorithm in order to produce a hash.
+
+* dictionary attack
+* https://www.blackarch.org/
+* https://github.com/openwall/john (Jumbo John)
+* infamous rockyou.txt wordlist- which is a very large common password wordlist, obtained from a data breach on a website called rockyou.com in 2009
+
+When you are telling john to use formats, if you're dealing with a standard hash type, e.g. md5 as in the example above, you have to prefix it withraw- to tell john you're just dealing with a standard hash type, though this doesn't always apply. To check if you need to add the prefix or not, you can list all of John's formats using john --list=formats and either check manually, or grep for your hash type using something like john --list=formats | grep -iF "md5".
+
+* sudo gem install haiti-hash
+* `haiti <hash>`
