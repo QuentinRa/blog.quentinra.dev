@@ -386,7 +386,6 @@ The Operating System (OS) is the layer sitting between the hardware and the appl
 
 * C:\Windows\system32\winver.exe: display windows version information
 * C:\Windows\System32\control.exe system: view basic information about the system
-* C:\Windows\System32\regedt32.exe: open windows registry
 * C:\Windows\System32\control.exe: open the control panel
 * C:\Windows\System32\UserAccountControlSettings.exe: UAC settings
 * Windows R > msconfig > Tools
@@ -416,3 +415,18 @@ Note: The WMIC tool is deprecated in Windows 10, version 21H1. Windows PowerShel
 * The net command is primarily used to manage network resources. This command supports sub-commands.
 * net help /help too?
 * gcm ipconfig https://stackoverflow.com/questions/304319/is-there-an-equivalent-of-which-on-the-windows-command-line
+
+xxx
+
+* C:\Windows\System32\regedt32.exe: open windows registry
+* regedit
+* The Windows Registry (per Microsoft) is a central hierarchical database used to store information necessary to configure the system for one or more users, applications, and hardware devices.
+
+The registry contains information that Windows continually references during operation, such as:
+
+Profiles for each user
+Applications installed on the computer and the types of documents that each can create
+Property sheet settings for folders and application icons
+What hardware exists on the system
+The ports that are being used.
+* https://docs.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users
