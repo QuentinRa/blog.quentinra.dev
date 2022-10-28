@@ -394,3 +394,9 @@ The Operating System (OS) is the layer sitting between the hardware and the appl
 * X
   * use auxiliary/analyze/crack_windows
   * set CUSTOM_WORDLIST /usr/share/wordlists/rockyou.txt
+* echo xxx name >> /etc/hosts 
+* nmap xxx
+  * Service Info: Host: Os: 
+* https://github.com/wyllianbs/xfreerdp-gui && https://github.com/FreeRDP/FreeRDP
+  * xfreedrp /u:x /p:y /v:ip
+* https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2019-1388
