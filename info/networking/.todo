@@ -6,3 +6,16 @@ https://www.inetdaemon.com/tutorials/internet/tcp/3-way_handshake.shtml
 
 >> IPV6
 file:///C:/Users/quent/Documents/texas-res/_build/html/system/net/files/ipv6/eui.html
+
+>> Session
+the session layer will begin to divide up the data sent into smaller chunks of data and begin to send these chunks (packets) one at a time.
+This dividing up is beneficial because if the connection is lost, only the chunks that weren't yet sent will have to be sent again
+
+=> Network
+Whilst some protocols at this layer determine exactly what is the "optimal" path that data should take to reach a device,
+we should only know about their existence at this stage of the networking module. Briefly, these protocols include OSPF
+(Open Shortest Path First) and RIP (Routing Information Protocol). The factors that decide what route is taken is decided by the following:
+
+What path is the shortest? I.e. has the least amount of devices that the packet needs to travel across.
+What path is the most reliable? I.e. have packets been lost on that path before?
+Which path has the faster physical connection? I.e. is one path using a copper connection (slower) or a fibre (considerably faster)?

@@ -371,7 +371,7 @@ The Open Systems Interconnection (**OSI**) model is a standardised representatio
 When a computer send a message, it will be send starting a layer, and go down. When a computer receive a message, it will go up every layer in the reverse order.
 
 * **Layer 7 - Application**: Programs are exchanging data <small>(HTTP, SSH, FTP, SMTP...)</small>
-* **Layer 6 - Presentation**: Standardize, add encryption/compression... <small>(Ssr, TLS...)</small>
+* **Layer 6 - Presentation**: Standardize, add encryption/compression... <small>(SSL, TLS...)</small>
 * **Layer 5 - Session**: Try to establish a connexion <small>(RPC, PAP...)</small>
 * **Layer 4 - Transport**: select a protocol <small>(TCP, UDP...)</small>
 * **Layer 3 - Network** (`Réseau`, Router): create a packet <small>(IP, NAT, ICMP...)</small>
