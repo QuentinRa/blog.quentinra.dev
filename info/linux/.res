@@ -22,6 +22,7 @@ ssh xxx@yyy -T -L xxx:domain:xxx: create a tunnel mapping one port to another, n
 xargs
 man history
 su - root
+cyber commands
 
 Blog
 https://linuxhandbook.com/

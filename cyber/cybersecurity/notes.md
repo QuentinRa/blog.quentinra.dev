@@ -12,24 +12,6 @@ A user may upload a file on a server such as an avatar. You must prevent users f
 
 If an attacker manage to upload a PHP script on the server, they will most likely try to do **reverse engineering**, meaning using a command such as `sudo nc -lvnp 443`, and accessing a remote shell on your server <small>(443 = HTTPS, so you go "unnoticed")</small>.
 
-<hr class="sr">
-
-## Transfer files using FTP (21)
-
-![Level: Novice](https://img.shields.io/badge/level-Novice-7cfc00)
-
-FTP (File Transfer protocol) is a protocol used to transfer (upload, download) files from one computer to another. The protocol use **port 21** by default <small>(22 for SFTP=Secure FTP)</small>, while data is transferred via port 20.
-
-```bash
-$ ftp <ip>
-# ls <folder>: list files of <folder>
-# cd <folder>: move to <folder>
-# put <src> <dest>: put <src> (local) to <dest> (server)
-# get <src> <dest>: get <src> (server), and save it to <dest> (local)
-```
-
-* <i class="bi bi-info-square" style="background:#7cfc00"></i> There is a user: `anonymous/no password`, that usually is disabled, or enabled with limited privileges. If a user anonymous can upload script, they will be upload with unrestrained privileges, allowing anyone executing the script to have fun to their heart's content.
-
 <hr class="sl">
 
 ## Transfer files using SMB/NFS
@@ -309,9 +291,6 @@ The Operating System (OS) is the layer sitting between the hardware and the appl
 * Antivirus software: You install an antivirus on your computer or smartphone to detect malicious files and block them from executing. 
 * Host firewall: Unlike the firewall appliance, a hardware device, a host firewall is a program that ships as part of your system, or it is a program that you install on your system. For instance, MS Windows includes Windows Defender Firewall, and Apple macOS includes an application firewall; both are host firewalls.
 * https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html
-* anonymous to see if this FTP server supports anonymous logins
-  * less file
-  * exit/bye
 * SOC
   * 24 hours a day, seven days a week
   * vulnerabilities

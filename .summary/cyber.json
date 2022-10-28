@@ -75,6 +75,13 @@
     ],
     "OS": [
       {
+        "tag": "server/services.md",
+        "name": "Services",
+        "desc": "SSH, FTP, RDP...",
+        "icon": null,
+        "hidden": false
+      },
+      {
         "tag": "os/linux/index.md",
         "name": "Exploit Linux",
         "desc": "",
