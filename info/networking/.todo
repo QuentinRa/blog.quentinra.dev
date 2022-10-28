@@ -21,6 +21,23 @@ https://www.pfsense.org/
 Stateless: check packet
 Stateful: check connection
 
+>> VPN
+A Virtual Private Network (or VPN for short) is a technology that allows devices on separate networks to
+communicate securely by creating a dedicated path between each other over the Internet (known as a tunnel).
+Devices connected within this tunnel form their own private network.
+=> PPP (internal VPNs using public/private key)
+=> PPTP use PPP, Point-to-Point Tunneling Protocol, allow leave network
+=> IPSec Internet Protocol Security (IPsec) encrypts data using the existing Internet Protocol (IP) framework.
+
+Router: Layer3 (use IP)
+Switch: Layer2 (use MAC)
+Switch: Layer3 (use MAC/IP): can do routing
+A technology called VLAN (Virtual Local Area Network) allows specific devices within a network
+to be virtually split up. This split means they can all benefit from things such as an Internet
+connection but are treated separately. This network separation provides security because it means
+that rules in place determine how specific devices communicate with each other.
+This segregation is illustrated in the diagram below:
+
 >> IPV6
 file:///C:/Users/quent/Documents/texas-res/_build/html/system/net/files/ipv6/eui.html
 
