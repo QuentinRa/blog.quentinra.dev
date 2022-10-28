@@ -282,7 +282,7 @@ The Operating System (OS) is the layer sitting between the hardware and the appl
 * Passwords saved in notes
 * Private photos/documents/emails
 * CIA
-  * Confidentiality: ensure private
+  * Confidentiality: ensure ONLY those allowed can access
   * Integrity: not tampered with
   * Availability: available when needed
 * Principle of the least privilege. 
@@ -522,3 +522,22 @@ Penetration tester determine the scope with the system owner. Everything outside
 * Grey-box partial/limited knowledge
 * White-box full knowledge
 * msf exploit(handler) > exploit -k -z
+
+<hr class="sep-both">
+
+## xx
+
+https://tryhackme.com/room/principlesofsecurity
+
+Defence in Depth is the use of multiple varied layers of security to an organisation's systems and data in the hopes that multiple layers will provide redundancy in an organisation's security perimeter.
+
+Confidentiality, Integrity, and Availability (CIA) is the opposite of Disclosure, Alternation, and Destruction (DAD).
+
+* Principles of Privileges
+  * Level of access based on the role, and the sensitivity of the information stored on the system
+  * Privileged Identity Management (PIM): translate a user's role within an organisation into an access role on a system
+  * Privileged Access Management (PAM): management of the privileges a system's access role has, enforcing security policies such as password management, auditing policies and reducing the attack surface a system faces.
+    * principle of least privilege
+* Bell-La Padula Model "can't read up, can't read down"
+* Biba Model "can read up, can't read down"
+* WHELP https://tryhackme.com/room/principlesofsecurity
