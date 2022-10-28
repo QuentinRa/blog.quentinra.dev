@@ -622,3 +622,25 @@ input username: toto
 `john --single --format=raw-md5 hash` (no wordlist)
 
 and the file must be `username:password`
+
+* https://www.openwall.com/john/
+* `rar2john`
+* `john -w wordlist hash`
+* `unrar x xxx.rar`
+* `zip2john`
+* `john -w wordlist hash`
+* `unzip xxx.zip`
+* Create rules for passwords
+  * Common Custom Rules
+  * You expect the uppercase first, a letter then a symbol at the end
+  * `/etc/john/john.conf`
+  * `--config=FILE              Use FILE instead of john.conf or john.ini`
+  * `[List.Rules:RuleName]`: header before a rule
+
+Az - Takes the word and appends it with the characters you define
+A0 - Takes the word and prepends it with the characters you define
+c - Capitalises the character positionally
+
+* `cAz"[0-9] [!£$%@]"` (capitalize, then Az) followed by number then symbol
+* `--rule=RuleName`
+* exploit password complexity predictability

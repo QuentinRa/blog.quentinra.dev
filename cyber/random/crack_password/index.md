@@ -78,7 +78,6 @@ john --format=raw-md4 --wordlist=/usr/share/wordlists/rockyou.txt hash
 **Notes**
 
 * Merge wordlist: `cat wordlist1 wordlist2 wordlist3 > wordlist4`
-* You may try another algorithm, if it does not progress much
 </div></div>
 
 <hr class="sl">
@@ -131,7 +130,7 @@ ssh -i key
 ```
 </div><div>
 
-The key is usually protected by a password. You can use `ssh2jhon` to convert it to a file that `john` can try to break.
+The key is usually protected by a passphrase. You can use `ssh2jhon` to convert it to a file that `john` can try to break.
 
 ```bash
 $ ssh2jhon key > hash
