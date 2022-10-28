@@ -430,3 +430,59 @@ Property sheet settings for folders and application icons
 What hardware exists on the system
 The ports that are being used.
 * https://docs.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users
+
+yyy
+
+* Windows Update
+
+Windows Update is a service provided by Microsoft to provide security updates, feature enhancements, and patches for the Windows operating system and other Microsoft products, such as Microsoft Defender.
+
+Updates are typically released on the 2nd Tuesday of each month. This day is called Patch Tuesday. That doesn't necessarily mean that a critical update/patch has to wait for the next Patch Tuesday to be released. If the update is urgent, then Microsoft will push the update via the Windows Update service to the Windows devices.
+
+https://msrc.microsoft.com/update-guide
+
+control /name Microsoft.WindowsUpdate
+
+* Windows security - Windows defender
+  * Antivirus. Can enable ransomware protection.
+  * Firewall (Allow an app through firewall, WF.msc)
+  * SmartScreen (protect against phishing..., https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
+  * Device security (core isolation)
+
+What is the Trusted Platform Module (TPM)?
+
+Per Microsoft, "Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that is designed to carry out cryptographic operations. The chip includes multiple physical security mechanisms to make it tamper-resistant, and malicious software is unable to tamper with the security functions of the TPM".
+
+* BitLocker
+
+Per Microsoft, "BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers".
+
+On devices with TPM installed, BitLocker offers the best protection.
+
+
+Per Microsoft, "BitLocker provides the most protection when used with a Trusted Platform Module (TPM) version 1.2 or later. The TPM is a hardware component installed in many newer computers by the computer manufacturers. It works with BitLocker to help protect user data and to ensure that a computer has not been tampered with while the system was offline".
+
+Refer to the official Microsoft documentation to learn more about BitLocker (https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview). 
+
+* https://docs.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service
+
+Per Microsoft, the Volume Shadow Copy Service (VSS) coordinates the required actions to create a consistent shadow copy (also known as a snapshot or a point-in-time copy) of the data that is to be backed up.
+
+Volume Shadow Copies are stored on the System Volume Information folder on each drive that has protection enabled.
+
+If VSS is enabled (System Protection turned on), you can perform the following tasks from within advanced system settings.
+
+Create a restore point
+Perform system restore
+Configure restore settings
+Delete restore points
+
+From a security perspective, malware writers know of this Windows feature and write code in their malware to look for these files and delete them. Doing so makes it impossible to recover from a ransomware attack unless you have an offline/off-site backup.
+
+* Right-click on a hard-drive > shadow copies
+* https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-portal
+* https://docs.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-manage
+* https://support.microsoft.com/en-us/windows/learn-about-windows-hello-and-set-it-up-dae28983-8242-bb2a-d3d1-87c9d265a5f0#:~:text=Windows%2010,in%20with%20just%20your%20PIN.
+* https://www.csoonline.com/article/3253899/the-best-new-windows-10-security-features.html
+* Note: Attackers use built-in Windows tools and utilities in an attempt to go undetected within the victim environment.  This tactic is known as Living Off The Land. Refer to the following resource here to learn more about this. 
+* https://lolbas-project.github.io/
