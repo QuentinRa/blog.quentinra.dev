@@ -193,7 +193,7 @@ Permissions are assigned on a file/folder, and are applied according to the targ
 * <kbd>g</kbd>: group, applied to the main group of the user <small>(ex: students_2022)</small>
 * <kbd>o</kbd>: others, applied to everyone else
 
-Permissions are something is `u=r+w, g=r, o=r`, which means that user can read+write, group can r, and others can read.
+Permissions are something is `u=r+w, g=r, o=r`, which means that user can read+write, group can read, and others can read too.
 </div><div>
 
 You may have noticed a number next to every kind of permissions. This is because permissions are coded on 3 bits, which means that they can take 8 values <small>(000, 001, 010...)</small>.

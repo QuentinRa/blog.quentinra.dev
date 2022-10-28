@@ -41,9 +41,7 @@ When there is a need for a user to elevate, Windows will show the User Account C
 
 **Permissions**
 
-Windows has 7 categories of permissions: Read, Write, Read & Execute, List Folder Contents, Modify, Full Control.
-
-You can learn more about them on this [article](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb727008(v=technet.10)#understanding-file-and-folder-permissions).
+Windows has 7 categories of permissions: Read, Write, Read & Execute, List Folder Contents, Modify, Full Control. You can learn more about them in this [article](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb727008(v=technet.10)#understanding-file-and-folder-permissions).
 
 The administrator can set permissions for a group, and users may be in multiple groups.
 </div></div>

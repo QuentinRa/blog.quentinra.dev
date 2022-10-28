@@ -546,6 +546,8 @@ Confidentiality, Integrity, and Availability (CIA) is the opposite of Disclosure
 
 ## Linux prev esc
 
+https://tryhackme.com/room/commonlinuxprivesc
+
 * Reset passwords
 * Bypass access controls to compromise protected data
 * Edit software configurations
@@ -561,6 +563,9 @@ Confidentiality, Integrity, and Availability (CIA) is the opposite of Disclosure
 <hr class="sep-both">
 
 ## Encryption/Encoding
+
+https://tryhackme.com/room/hashingcrypto101
+https://tryhackme.com/room/johntheripper0
 
 * hash function, create/digest a hash of a data
 * hash collision (2i->1o)
@@ -601,8 +606,6 @@ UPDATE: As of Kali 2020.2, hashcat 6.0 will run on the CPU without --force. I st
 
 When you are telling john to use formats, if you're dealing with a standard hash type, e.g. md5 as in the example above, you have to prefix it withraw- to tell john you're just dealing with a standard hash type, though this doesn't always apply. To check if you need to add the prefix or not, you can list all of John's formats using john --list=formats and either check manually, or grep for your hash type using something like john --list=formats | grep -iF "md5".
 
-* sudo gem install haiti-hash
-* `haiti <hash>`
 * NThash is the hash format that modern Windows Operating System machines will store user and service passwords in. It's also commonly referred to as "NTLM" which references the previous version of Windows format for hashing passwords known as "LM", thus "NT/LM".
 * You can acquire NTHash/NTLM hashes by dumping the SAM database on a Windows machine, by using a tool like Mimikatz or from the Active Directory database: NTDS.dit. 
 * If shadow password

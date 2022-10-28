@@ -20,21 +20,12 @@ The most important use of hashing is for integrity. We generate a hash of file/.
 
 There are a few solutions to find which kind a hash algorithm was used to generate a hash. We consider in the following, that the hash is stored inside a file called "hash".
 
-The most well-known one is [**hash-identifier**](https://github.com/blackploit/hash-identifier) (399⭐), but it's kinda old.
+Historically, there was [hash-identifier](https://github.com/blackploit/hash-identifier) (399⭐), but it's kinda old (2011).
 
 ```bash
 $ cat hash | hash-identifier
 $ hash-identifier "some_hash"
 ```
-
-[Name-that-hash](https://github.com/HashPals/Name-That-Hash) (1.1k ⭐, fork of hashID). There is an [online version](https://nth.skerritt.blog/). The program is giving you the john format 🚀! 
-
-```bash
-# sudo apt install name-that-hash
-$ nth -t "some_hash"
-$ nth -f hash
-```
-</div><div>
 
 [hashID](https://github.com/psypanda/hashID) (1.2k ⭐, not updated since 2015)
 
@@ -42,10 +33,23 @@ $ nth -f hash
 $ cat hash | hashid
 $ hashid "some_hash"
 ```
+</div><div>
 
-Others
+[Name-that-hash](https://github.com/HashPals/Name-That-Hash) (1.1k ⭐, fork of hashID). There is an [online version](https://nth.skerritt.blog/). The program is giving you john (JtR), and the hashCat (hc) format 🚀! 
 
-* [haiti](https://github.com/noraj/haiti/) (309 ⭐)
+```bash
+# sudo apt install name-that-hash
+$ nth -t "some_hash"
+$ nth -f hash
+```
+
+[haiti](https://github.com/noraj/haiti/) (309 ⭐). The program is giving you john (JtR), and the hashCat (hc) format 🚀!
+
+```bash
+$ sudo gem install haiti-hash
+$ haiti "some_hash"
+```
+
 * [hashes.com/hash_identifier](https://hashes.com/en/tools/hash_identifier) (website)
 </div></div>
 
