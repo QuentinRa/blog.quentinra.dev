@@ -20,6 +20,8 @@ strace/strings https://jvns.ca/strace-zine-v3.pdf
 env X=val ./myScript
 ssh xxx@yyy -T -L xxx:domain:xxx: create a tunnel mapping one port to another, need more research.
 xargs
+man history
+su - root
 
 Blog
 https://linuxhandbook.com/

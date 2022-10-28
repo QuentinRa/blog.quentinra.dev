@@ -293,6 +293,28 @@ toto
 
 <hr class="sep-both">
 
+## Other
+
+The Operating System (OS) is the layer sitting between the hardware and the applications and programs you are running.
+
+* Passwords saved in notes
+* Private photos/documents/emails
+* CIA
+  * Confidentiality: ensure private
+  * Integrity: not tampered with
+  * Availability: available when needed
+* Principle of the least privilege. 
+* Intrusion Detection System (IDS): detect (IPS=blocks) system/network intrusion, and tries to break into the network
+* Virtual Private Network (VPN) concentrator appliance: A VPN ensures that the network traffic cannot be read nor altered by a third party. It protects the confidentiality (secrecy) and integrity of the sent data.
+* Antivirus software: You install an antivirus on your computer or smartphone to detect malicious files and block them from executing. 
+* Host firewall: Unlike the firewall appliance, a hardware device, a host firewall is a program that ships as part of your system, or it is a program that you install on your system. For instance, MS Windows includes Windows Defender Firewall, and Apple macOS includes an application firewall; both are host firewalls.
+* https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html
+* anonymous to see if this FTP server supports anonymous logins
+  * less file
+  * exit/bye
+
+<hr class="sep-both">
+
 # Resources
 
 * There are websites on the Internet that allow you to check the reputation of an IP address to see whether it's malicious or suspicious.
