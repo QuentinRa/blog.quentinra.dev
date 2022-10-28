@@ -603,3 +603,22 @@ When you are telling john to use formats, if you're dealing with a standard hash
 
 * sudo gem install haiti-hash
 * `haiti <hash>`
+* NThash is the hash format that modern Windows Operating System machines will store user and service passwords in. It's also commonly referred to as "NTLM" which references the previous version of Windows format for hashing passwords known as "LM", thus "NT/LM".
+* You can acquire NTHash/NTLM hashes by dumping the SAM database on a Windows machine, by using a tool like Mimikatz or from the Active Directory database: NTDS.dit. 
+* If shadow password
+  * --format=sha512crypt hash
+  * unshadow 
+    * passwd
+    * shadow
+  * Replace "x" with the hash
+  * Then you can give the file to john
+
+John also has another mode, called Single Crack mode. In this mode, John uses only the information provided in the username, to try and work out possible passwords heuristically, by slightly changing the letters and numbers contained within the username
+
+input username: toto 
+=> Word Mangling: Toto tOTo toto1 toto!
+=> GECOS (ex: in passwd, the home... are Gecos fields)
+
+`john --single --format=raw-md5 hash` (no wordlist)
+
+and the file must be `username:password`
