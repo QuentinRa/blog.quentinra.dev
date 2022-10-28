@@ -247,7 +247,7 @@ It can be a bit tricky, but you can write commands, and you will see the results
 <details class="details-e">
 <summary>Note: SSL</summary>
 
-I had to that once, no really know why 💥
+I had to do that once, I don't remember why 💥
 
 * Add the `hostname` to `/etc/hosts` (use nano/...)
 * In meterpreter, set SSL to true

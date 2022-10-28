@@ -541,3 +541,19 @@ Confidentiality, Integrity, and Availability (CIA) is the opposite of Disclosure
 * Bell-La Padula Model "can't read up, can't read down"
 * Biba Model "can read up, can't read down"
 * WHELP https://tryhackme.com/room/principlesofsecurity
+
+<hr class="sep-both">
+
+## Linux prev esc
+
+* Reset passwords
+* Bypass access controls to compromise protected data
+* Edit software configurations
+* Enable persistence, so you can access the machine again later.
+* Change privilege of users
+  * https://github.com/arthepsy/CVE-2021-4034 / https://github.com/berdav/CVE-2021-4034
+* finger — user information lookup program
+* https://github.com/netbiosX/Checklists/blob/master/Linux-Privilege-Escalation.md
+* https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md
+* https://github.com/alexb49/total-oscp-guide
+* https://payatu.com/guide-linux-privilege-escalation

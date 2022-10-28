@@ -144,7 +144,7 @@ There are multiple ways to get the script on your target
   * run it `bash script.sh`,
   * or use chmod, then `./script.sh`
 * Use `wget` / `curl`
-* Use `python` <small>(`sudo python -m SimpleHTTPServer 80` on the host)</small>
+* Use `python` <small>(`sudo python -m http.server 80` on the host)</small>
 * Use `FTP`
 * Use nc/netcat
   * On the victim: `nc -l -p port > script.sh`
