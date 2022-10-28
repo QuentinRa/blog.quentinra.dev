@@ -141,3 +141,47 @@ $ ssh2jhon key > hash
 $ john --format=ssh hash --wordlist=/usr/share/wordlists/rockyou.txt
 ```
 </div></div>
+
+<hr class="sl">
+
+## RAR password cracking
+
+<div class="row row-cols-md-2"><div>
+
+As for SSH, first convert the password to a file compatible with john.
+
+```bash
+$ rar2john hello.rar > hash
+$ john hash --wordlist=/usr/share/wordlists/rockyou.txt
+```
+</div><div>
+
+If you found the password, you can unrar your rar with
+
+```bash
+$ unrar x hello.rar
+# enter the password
+```
+</div></div>
+
+<hr class="sr">
+
+## ZIP password cracking
+
+<div class="row row-cols-md-2"><div>
+
+As for RAR, first convert the password to a file compatible with john.
+
+```bash
+$ zip2john hello.zip > hash
+$ john hash --wordlist=/usr/share/wordlists/rockyou.txt
+```
+</div><div>
+
+If you found the password, you can unzip your zip with
+
+```bash
+$ unzip hello.zip
+# enter the password
+```
+</div></div>

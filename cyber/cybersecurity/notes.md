@@ -627,12 +627,6 @@ input username: toto
 and the file must be `username:password`
 
 * https://www.openwall.com/john/
-* `rar2john`
-* `john -w wordlist hash`
-* `unrar x xxx.rar`
-* `zip2john`
-* `john -w wordlist hash`
-* `unzip xxx.zip`
 * Create rules for passwords
   * Common Custom Rules
   * You expect the uppercase first, a letter then a symbol at the end
