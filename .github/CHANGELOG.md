@@ -7,6 +7,10 @@
 * `course`: Adding course "Android"
 * `course`: Adding course "Kotlin"
 
+**Changed**
+
+* `rendering`: fix dark render not rendering background correctly
+
 ## v5.1.0 (2022-10-8)
 
 **Added**
