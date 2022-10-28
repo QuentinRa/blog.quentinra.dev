@@ -3,6 +3,23 @@
 ACK number
 https://www.howtouselinux.com/post/understanding-tcp-sequence-number
 https://www.inetdaemon.com/tutorials/internet/tcp/3-way_handshake.shtml
+Sequence Number	When a connection occurs, the first piece of data transmitted is given a random number.
+Acknowledgement Number	After a piece of data has been given a sequence number, the number for the next piece of data will
+have the sequence number + 1.
+
+>> UDP
+stateless
+
+>> Port-forwarding
+port forwarding opens specific ports
+
+>> Firewalls
+https://www.snort.org/
+https://suricata.io/
+OVH firewall
+https://www.pfsense.org/
+Stateless: check packet
+Stateful: check connection
 
 >> IPV6
 file:///C:/Users/quent/Documents/texas-res/_build/html/system/net/files/ipv6/eui.html
@@ -19,3 +36,5 @@ we should only know about their existence at this stage of the networking module
 What path is the shortest? I.e. has the least amount of devices that the packet needs to travel across.
 What path is the most reliable? I.e. have packets been lost on that path before?
 Which path has the faster physical connection? I.e. is one path using a copper connection (slower) or a fibre (considerably faster)?
+
+A packet without the IP is called frame.

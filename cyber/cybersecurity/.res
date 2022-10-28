@@ -19,11 +19,3 @@ https://www.immunityinc.com/products/canvas/
 fgdump
 pwdump
 cachedump
-
-Firewall
-OVH firewall
-https://www.pfsense.org/
-
-Tools to detect tentative of mapping the ports of the server
-https://www.snort.org/
-https://suricata.io/
