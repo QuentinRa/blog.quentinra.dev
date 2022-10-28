@@ -459,7 +459,6 @@ Per Microsoft, "BitLocker Drive Encryption is a data protection feature that int
 
 On devices with TPM installed, BitLocker offers the best protection.
 
-
 Per Microsoft, "BitLocker provides the most protection when used with a Trusted Platform Module (TPM) version 1.2 or later. The TPM is a hardware component installed in many newer computers by the computer manufacturers. It works with BitLocker to help protect user data and to ensure that a computer has not been tampered with while the system was offline".
 
 Refer to the official Microsoft documentation to learn more about BitLocker (https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview). 
@@ -486,3 +485,40 @@ From a security perspective, malware writers know of this Windows feature and wr
 * https://www.csoonline.com/article/3253899/the-best-new-windows-10-security-features.html
 * Note: Attackers use built-in Windows tools and utilities in an attempt to go undetected within the victim environment.  This tactic is known as Living Off The Land. Refer to the following resource here to learn more about this. 
 * https://lolbas-project.github.io/
+
+<hr class="sep-both">
+
+## xx
+
+https://tryhackme.com/room/pentestingfundamentals
+
+* White Hat: follows the rules; try to benefit others
+* Grey Hat: benefit others often, but usually not following the rules (ex: take down malicious website)
+* Black Hat: criminals
+
+**Rules of Engagement (ROE)**
+
+Penetration tester determine the scope with the system owner. Everything outside the scope is deemed illegal. https://sansorg.egnyte.com/dl/bF4I3yCcnt/?. Determine the Permission, the scope (ex: some servers), and rules (ex: forbid some techniques)
+
+
+**Stages**
+
+* Information Gathering
+* Enumeration/Scanning (discovering applications and services)
+* Exploitation
+* Privilege Escalation (Once you have successfully exploited a system or application (known as a foothold).  You can escalate horizontally and vertically)
+* Post-exploitation
+
+**X**
+
+* https://www.isecom.org/OSSTMM.3.pdf (OSSTMM)
+* OWASP https://owasp.org/ security of web applications and services
+* NIST Cybersecurity Framework 1.1 https://www.nist.gov/cyberframework
+* NCSC CAF https://www.ncsc.gov.uk/collection/caf/caf-principles-and-guidance
+
+**YYY**
+
+* Black-box no knowledge
+* Grey-box partial/limited knowledge
+* White-box full knowledge
+* msf exploit(handler) > exploit -k -z
