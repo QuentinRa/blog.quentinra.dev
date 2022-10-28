@@ -379,3 +379,30 @@ The Operating System (OS) is the layer sitting between the hardware and the appl
 * https://github.com/wyllianbs/xfreerdp-gui && https://github.com/FreeRDP/FreeRDP
   * xfreedrp /u:x /p:y /v:ip
 * https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2019-1388
+
+<hr class="sep-both">
+
+## Windows
+
+* C:\Windows\system32\winver.exe: display windows version information
+* C:\Windows\System32\msinfo32.exe: open system information
+* C:\Windows\System32\control.exe system: view basic information about the system
+* C:\Windows\System32\regedt32.exe: open windows registry
+* C:\Windows\System32\control.exe: open the control panel
+* C:\Windows\System32\UserAccountControlSettings.exe: UAC settings
+* Windows R > msconfig > Tools
+* System Configuration (compmgmt)
+  * System Tools
+    * schedule tasks
+    * view events that occured on the computer (https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types, https://learn.microsoft.com/en-us/windows/win32/eventlog/eventlog-key)
+    * Shared Folders is where you will see a complete list of shares and folders shared that others can connect to. In sessions, you can see users connected to shares.
+    * users, and groups
+    * In Performance, you'll see a utility called Performance Monitor (perfmon). Perfmon is used to view performance data either in real-time or from a log file. This utility is useful for troubleshooting performance issues on a computer system, whether local or remote. 
+    * Device Manager allows us to view and configure the hardware, such as disabling any hardware attached to the computer.
+  * Storage: Under Storage is Windows Server Backup and Disk Management.
+
+WMI Control configures and controls the Windows Management Instrumentation (WMI) service.
+
+Per Wikipedia, "WMI allows scripting languages (such as VBScript or Windows PowerShell) to manage Microsoft Windows personal computers and servers, both locally and remotely. Microsoft also provides a command-line interface to WMI called Windows Management Instrumentation Command-line (WMIC)."
+
+Note: The WMIC tool is deprecated in Windows 10, version 21H1. Windows PowerShell supersedes this tool for WMI.
