@@ -312,6 +312,14 @@ The Operating System (OS) is the layer sitting between the hardware and the appl
 * anonymous to see if this FTP server supports anonymous logins
   * less file
   * exit/bye
+* SOC
+  * 24 hours a day, seven days a week
+  * vulnerabilities
+  * use logs (DHCP, firewall, DNS...)
+  * might use a SIEM
+  * Network security monitoring (NSM): This focuses on monitoring the network data and analyzing the traffic to detect signs of intrusions. 
+  * Threat hunting: With threat hunting, the SOC assumes an intrusion has already taken place and begins its hunt to see if they can confirm this assumption.
+  * Other services by the SOC include cyber security training.
 
 <hr class="sep-both">
 
