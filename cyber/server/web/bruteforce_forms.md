@@ -31,7 +31,7 @@ Finally, much like in forced browsing, you will have to private an URL
 
 <div class="row row-cols-md-2"><div>
 
-[wfuzz](https://github.com/xmendez/wfuzz) (4.7k ⭐). FUZZ is pretty simple: there is a wordlist, and you add a word FUZZ in the URL/request, and wfuzz will replace, one by one, the word FUZZ with every entry in the wordlist. [See the official documentation here](https://wfuzz.readthedocs.io/en/latest/index.html), or use `wfuzz -h`.
+[wfuzz](https://github.com/xmendez/wfuzz) (4.7k ⭐). FUZZ is pretty simple: there is a wordlist, and you add a word FUZZ in the URL/request, and wfuzz will replace, one by one, the word FUZZ with every entry in the wordlist.
 
 Try to bruteforce a GET form.
 

@@ -371,3 +371,26 @@ The Operating System (OS) is the layer sitting between the hardware and the appl
 * Remediations
   * Input Validation (remove invalid stuff?)
   * Escaping User Input (escape invalid stuff?)
+
+<hr class="sep-both">
+
+# Learn again
+
+* netdiscover
+* https://github.com/hashcat/hashcat
+* hashcat --username --show -a 0 -m 1000 hashes.txt rockyou.txt
+  * xxx:yyy --username ignore xxx
+  * -a: attack mode
+  * -m: hash type=nt=1000
+  * https://github.com/hashcat/hashcat
+* type file (cat file)
+* https://www.sans.org/cyberaces/
+* File permissions in Windows are controlled using DACLs (Discretionary Access Control List). To view these DACLs you can use the icacls command
+* whoami /groups: see your groups
+* dir flag* /s /p | search -f flag*
+* https://crackstation.net/
+* bg instead of background?
+* In practice, any NT/SYS is ok
+* X
+  * use auxiliary/analyze/crack_windows
+  * set CUSTOM_WORDLIST /usr/share/wordlists/rockyou.txt
