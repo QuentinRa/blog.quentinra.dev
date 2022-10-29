@@ -578,13 +578,6 @@ UPDATE: As of Kali 2020.2, hashcat 6.0 will run on the CPU without --force. I st
 * it's md5, better use https://md5hashing.net/hash/md5/xxx
 * https://md5hashing.net/
 
-* Integrity Checking 
-* HMAC is a method of using a cryptographic hashing function to verify the authenticity and integrity of data.
-* A HMAC can be used to ensure that the person who created the HMAC is who they say they are (authenticity), and that the message hasn’t been modified or corrupted (integrity). They use a secret key, and a hashing algorithm in order to produce a hash.
-
-* dictionary attack
-* https://www.blackarch.org/
-
 * NThash is the hash format that modern Windows Operating System machines will store user and service passwords in. It's also commonly referred to as "NTLM" which references the previous version of Windows format for hashing passwords known as "LM", thus "NT/LM".
 * You can acquire NTHash/NTLM hashes by dumping the SAM database on a Windows machine, by using a tool like Mimikatz or from the Active Directory database: NTDS.dit. 
 * If shadow password

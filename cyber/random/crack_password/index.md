@@ -8,14 +8,14 @@
 
 Almost all the time, password are **hashed**. It means that some "clear text" is passed to a one-way function that returns (=digest) a hash. One-way means that you can't get back the password from the hash. But, we can check if a password has generated a hash, so it's a useful, and supposedly secure way of storing a password.
 
-xxx
+Usually, hackers create **rainbow tables**, or dictionaries, in which hashes are mapped to passwords. This allows tools to easily give us back the password, if it's in the dictionary. This is possible, because the same password will generate the same hash, by default. To avoid such attacks, hash functions are taking a parameter called **salt**. Now, only the same salt should produce the same hash.
 
-> For instance, you can try the infamous rockyou.txt <small>(data breach of rockyou.com in 2009)</small>.
+> The hash brute-forcing tools will usually take a wordlist, for instance, you could use rockyou.txt which is an infamous wordlist of passwords <small>(data breach of rockyou.com in 2009)</small>. See [SecLists](https://github.com/danielmiessler/SecLists/tree/master/Passwords). 
 </div><div>
 
 The most important use of hashing is for integrity. We generate a hash of file/..., and make it available with the file. Others can generate the hash of the file after they download it. If both are the same, then it means that the content was not tempered with.
 
-xxx
+> Ex: HMAC.
 </div></div>
 
 > Some hashing functions are proven to be faulty, such as [SHA1](https://shattered.io/), or [MD5](https://www.mscs.dal.ca/~selinger/md5collision/), as two different password generated the same hash (hash collision), which means that using a different password that intended, you could log in into the victim account.
@@ -63,7 +63,7 @@ $ haiti "some_hash"
 
 > You might have to do it manually too. Some well-known one are "\\$1\\$" <small>(cisco, old linux)</small>, "\\$2\\$, \\$2a\\$, \\$2b\\$, \\$2x\\$, \\$2y\\$" <small>(bcrypt, web)</small>, or "$6" <small>(sha512crypt, modern linux)</small>. You can find a lot of examples [on hashcat website](https://hashcat.net/wiki/doku.php?id=example_hashes).
 
-<hr class="sr">
+<hr class="sl">
 
 ## Cracking a hash
 
