@@ -72,9 +72,29 @@ $ haiti "some_hash"
 <div class="row row-cols-md-2"><div>
 
 My experience with [hashcat](https://github.com/hashcat/hashcat) (15.9k ⭐) has been worse than john, but it's quite well-known, and popular.
+
+```bash
+$ hashcat [options] -o result hash wordlist
+$ hashcat [options] --show hash wordlist
+$ hashcat -m code -a code --show hash wordlist
+```
+
+Hashcat store cracked hash in a Potfile: `~/.hashcat/hashcat.potfile`.
+
+* `-m code`: the code identifying this algorithm, provided by nth/haiti
+  * MD5 <small>(0)</small> / SHA1 <small>(100)</small> / nt <small>(1000)</small>
+  * See the hashcat reference in the help
+* `-a code`: the kind of attack <small>(0=Straight...)</small>
+* `-o output`: cracked passwords
+* `--show`: show cracked passwords
+* `--remove`: remove cracked hashes
+* `--username`: ignore username, in files `user:password`
+
 </div><div>
 
-[MD5Hashing](https://md5hashing.net/) is a quite useful websites to crack a hash, while it only work if the database has a record of this hash.
+[MD5Hashing](https://md5hashing.net/) is a quite useful website to crack a hash, while it only work if the database has a record of this hash.
+
+[crackstation](https://crackstation.net/) is quite similar to MD5Hashing, but on top, we can download their dictionary  🚀.
 </div></div>
 
 <hr class="sl">
