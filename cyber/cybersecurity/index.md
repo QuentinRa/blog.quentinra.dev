@@ -113,10 +113,10 @@ A look at cyberattacks categories ([source](https://www.malwarebytes.com/))
 </div><div>
 
 * **0 Day**/Zero day: an unknown vulnerability that was just discovered
-* **Security Operation Center** (APT): usually, a hacker want to remain as long as possible within an infected network. They are using backdoors, and keep updating the code to avoid being discovered.
+* **Advanced Persistent Threat** (APT): usually, a hacker want to remain as long as possible within an infected network. They are using backdoors, and keep updating the code to avoid being discovered.
 * **RansomwareAsAService** (RAAS): hackers selling their skills to other hackers, in exchange for a part of their benefices. There is also "MalwareAsAService" (MAAS), which is the same with malware.
 
-<span></spann>
+<br>
 
 * **Intrusion Detection System** (IDS): a system detecting intrusions...
 * **Endpoint Detection and Response** (EDS)
@@ -133,7 +133,7 @@ A look at cyberattacks categories ([source](https://www.malwarebytes.com/))
 
 <tr><td>Estonia (2007)<br><b>DDOS</b></td><td>
 
-First major attack against a country, by a group of russian hackers. They used botnets from 87 countries targeting websites of Estonian banks/...
+First major attack against a country by a group of russian hackers. They used botnets from 87 countries targeting websites of Estonian banks/...
 </td></tr>
 
 <tr><td>Stuxnet (2010)<br><b>SCADA</b></td><td>
@@ -143,7 +143,7 @@ First attack targeting SCADA systems. An infected USB key was connected a comput
 
 <tr><td>WannaCry (2016)<br><b>Ransomware</b></td><td>
 
-Use a breach in Windows, created by the NSA, and stolen by hackers in 2013. The NSA notified Microsoft when this virus was released, to make them patch it. Used in 2017 by North Korean on 200 000 computers. Auto-replicating virus, asking for a ransom. The original code was added a kill-switch by the NSA, allowing them to kill the virus.
+Use a breach in Windows, created by the NSA, and stolen by hackers in 2013. The NSA notified Microsoft when this virus was released to make them patch it. Used in 2017 by North Korean on 200 000 computers. Auto-replicating virus, asking for a ransom. The original code was added a kill-switch by the NSA, allowing anyone knowing it to kill the virus.
 </td></tr>
 </table>
 
@@ -155,7 +155,7 @@ Use a breach in Windows, created by the NSA, and stolen by hackers in 2013. The 
 
 **Learning**
 
-* [TryHackMe](https://tryhackme.com/) (THM): a lot of free courses, and a guide enjoyable way of learning
+* [TryHackMe](https://tryhackme.com/) (THM): a lot of free courses, and a guide enjoyable/gratifying place to start learning, although you will have to go to other sites later
 * [academy.hackthebox.com](https://academy.hackthebox.com/catalogue): only tier-0 courses are free, so there is no much to do without paying
 * [cybersecurityeducation.org](https://www.cybersecurityeducation.org/) (not tested)
 * [hackerone.com](https://www.hackerone.com/hackers) (not tested)

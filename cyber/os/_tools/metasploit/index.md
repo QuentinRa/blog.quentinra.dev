@@ -51,8 +51,8 @@ msf6 > search service # ex: apache, ftp...
 msf6 > search module # ex: exploit/windows/http/xxx
 msf6 > search CVE-YEAR-ID
 msf6 > search type:auxiliary # search auxiliaries
-msf6 > search platform:... 
-msf6 > search search cve:2010-2025
+msf6 > search platform:...
+msf6 > search cve:YEAR_START-YEAR_END
 ```
 
 Use an exploit
