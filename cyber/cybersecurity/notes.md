@@ -60,6 +60,27 @@ $ ./enum4linux.pl <options> <ip>
 
 <hr class="sep-both">
 
+# Web
+
+**Subdomain** enumeration is the process of finding valid subdomains for a domain, but why do we do this? We do this to expand our attack surface to try and discover more potential points of vulnerability.
+
+* Brute Force
+  * https://www.kali.org/tools/dnsrecon/ & https://github.com/darkoperator/dnsrecon
+  * dnsrecon -t brt -d xxx.thm
+* OSINT (Open-Source Intelligence)
+  * https://crt.sh/
+  * https://ui.ctsearch.entrust.com/ui/ctsearchui
+  * -site:www.domain.com site:*.domain.com
+  * Sublist3r https://github.com/aboul3la/Sublist3r
+* Virtual Host
+  * /etc/hosts file (or c:\windows\system32\drivers\etc\hosts file for Windows users)
+  * Because web servers can host multiple websites from one server when a website is requested from a client, the server knows which website the client wants from the Host header.
+  * `ffuf -w /usr/share/seclists/Discovery/DNS/namelist.txt -H "Host: FUZZ.acmeitsupport.thm" -u http://10.10.126.102 -fs 2395`
+  * The above command uses the -w switch to specify the wordlist we are going to use. The -H switch adds/edits a header (in this instance, the Host header), we have the FUZZ keyword in the space where a subdomain would normally go, and this is where we will try all the options from the wordlist.
+  * Because the above command will always produce a valid result, we need to filter the output. We can do this by using the page size result with the -fs switch. Edit the below command replacing {size} with the most occurring size value
+
+<hr class="sep-both">
+
 # SQL
 
 * Input Box String: usual
