@@ -1,16 +1,18 @@
 # Crack (insecure) passwords
 
 [![encryptioncrypto101](../../_badges/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
+[![johntheripper0](../../_badges/johntheripper0.svg)](https://tryhackme.com/room/johntheripper0)
+[![hashingcrypto101](../../_badges/hashingcrypto101.svg)](https://tryhackme.com/room/hashingcrypto101)
 
 <div class="row row-cols-md-2"><div>
 
-Almost all the time, password are **hashed**. It means that some "clear text" is passed to a one-way function that returns a hash. One-way means that you can't get back the password from the hash. But, we can check if a password has generated a hash, so it's a useful, and supposedly secure way of storing a password.
+Almost all the time, password are **hashed**. It means that some "clear text" is passed to a one-way function that returns (=digest) a hash. One-way means that you can't get back the password from the hash. But, we can check if a password has generated a hash, so it's a useful, and supposedly secure way of storing a password.
 </div><div>
 
 The most important use of hashing is for integrity. We generate a hash of file/..., and make it available with the file. Others can generate the hash of the file after they download it. If both are the same, then it means that the content was not tempered with.
 </div></div>
 
-> Some hashing functions are proven to be faulty, such as SHA1, or MD5, as two different password generated the same hash, which means that using a different password that intended, you could log in into the victim account.
+> Some hashing functions are proven to be faulty, such as [SHA1](https://shattered.io/), or [MD5](https://www.mscs.dal.ca/~selinger/md5collision/), as two different password generated the same hash (hash collision), which means that using a different password that intended, you could log in into the victim account.
 
 <hr class="sl">
 
@@ -35,7 +37,7 @@ $ hashid "some_hash"
 ```
 </div><div>
 
-[Name-that-hash](https://github.com/HashPals/Name-That-Hash) (1.1k ⭐, fork of hashID). There is an [online version](https://nth.skerritt.blog/). The program is giving you john (JtR), and the hashCat (hc) format 🚀! 
+[Name-that-hash](https://github.com/HashPals/Name-That-Hash) (1.1k ⭐, fork of hashID). There is an [online version](https://nth.skerritt.blog/). The program is giving you john (JtR), and the hashcat (hc) format 🚀! 
 
 ```bash
 # sudo apt install name-that-hash
@@ -43,7 +45,7 @@ $ nth -t "some_hash"
 $ nth -f hash
 ```
 
-[haiti](https://github.com/noraj/haiti/) (309 ⭐). The program is giving you john (JtR), and the hashCat (hc) format 🚀!
+[haiti](https://github.com/noraj/haiti/) (309 ⭐). The program is giving you john (JtR), and the hashcat (hc) format 🚀!
 
 ```bash
 $ sudo gem install haiti-hash
@@ -52,6 +54,8 @@ $ haiti "some_hash"
 
 * [hashes.com/hash_identifier](https://hashes.com/en/tools/hash_identifier) (website)
 </div></div>
+
+> You might have to do it manually too. Some well-known one are "\\$1\\$" <small>(cisco, old linux)</small>, "\\$2\\$, \\$2a\\$, \\$2b\\$, \\$2x\\$, \\$2y\\$" <small>(bcrypt, web)</small>, or "$6" <small>(sha512crypt, modern linux)</small>. You can find a lot of examples [on hashcat website](https://hashcat.net/wiki/doku.php?id=example_hashes).
 
 <hr class="sr">
 
