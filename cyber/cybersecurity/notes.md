@@ -574,7 +574,6 @@ NEVER (I repeat, NEVER!) use --force for hashcat. It can lead to false positives
 
 UPDATE: As of Kali 2020.2, hashcat 6.0 will run on the CPU without --force. I still recommend cracking on your host OS if you have a GPU, as it will be much much faster.
 
-* john >>
 * don't forget to quote hash (bcrypt $$...)
 * it's md5, better use https://md5hashing.net/hash/md5/xxx
 * https://md5hashing.net/
@@ -585,10 +584,6 @@ UPDATE: As of Kali 2020.2, hashcat 6.0 will run on the CPU without --force. I st
 
 * dictionary attack
 * https://www.blackarch.org/
-* https://github.com/openwall/john (Jumbo John)
-* infamous rockyou.txt wordlist- which is a very large common password wordlist, obtained from a data breach on a website called rockyou.com in 2009
-
-When you are telling john to use formats, if you're dealing with a standard hash type, e.g. md5 as in the example above, you have to prefix it withraw- to tell john you're just dealing with a standard hash type, though this doesn't always apply. To check if you need to add the prefix or not, you can list all of John's formats using john --list=formats and either check manually, or grep for your hash type using something like john --list=formats | grep -iF "md5".
 
 * NThash is the hash format that modern Windows Operating System machines will store user and service passwords in. It's also commonly referred to as "NTLM" which references the previous version of Windows format for hashing passwords known as "LM", thus "NT/LM".
 * You can acquire NTHash/NTLM hashes by dumping the SAM database on a Windows machine, by using a tool like Mimikatz or from the Active Directory database: NTDS.dit. 

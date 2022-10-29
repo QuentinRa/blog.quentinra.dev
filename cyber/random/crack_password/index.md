@@ -7,9 +7,15 @@
 <div class="row row-cols-md-2"><div>
 
 Almost all the time, password are **hashed**. It means that some "clear text" is passed to a one-way function that returns (=digest) a hash. One-way means that you can't get back the password from the hash. But, we can check if a password has generated a hash, so it's a useful, and supposedly secure way of storing a password.
+
+xxx
+
+> For instance, you can try the infamous rockyou.txt <small>(data breach of rockyou.com in 2009)</small>.
 </div><div>
 
 The most important use of hashing is for integrity. We generate a hash of file/..., and make it available with the file. Others can generate the hash of the file after they download it. If both are the same, then it means that the content was not tempered with.
+
+xxx
 </div></div>
 
 > Some hashing functions are proven to be faulty, such as [SHA1](https://shattered.io/), or [MD5](https://www.mscs.dal.ca/~selinger/md5collision/), as two different password generated the same hash (hash collision), which means that using a different password that intended, you could log in into the victim account.
@@ -63,15 +69,24 @@ $ haiti "some_hash"
 
 <div class="row row-cols-md-2"><div>
 
-You can use [**John the Ripper**](https://github.com/openwall/john) to try to bruteforce a hash.
+You can use <small>(Jumbo)</small> [**John the Ripper**](https://github.com/openwall/john) (6.9 ⭐) to try to bruteforce a hash. Put the hash in a file, for instance "hash".
 
-Put the hash in a file, for instance "hash".
+You can use the default wordlist, and let john guess the format. Unfortunately, it's more efficient to provide both arguments, especially the format.
 
 ```bash
-# md5
-john --format=raw-md5 hash
-john --format=raw-md4 hash
-john --format=raw-sha1 hash
+$ john hash
+```
+
+List formats <small>(you don't need it with nth/haiti, as they give you the format)</small>. Note that standard formats, such as MD5, are starting with "raw-".
+
+```bash
+$ john --list=formats | grep -i "md5"
+```
+
+```bash
+$ john hash --format=raw-md5
+$ john hash --format=raw-md4
+$ john hash --format=raw-sha1
 ```
 
 </div><div>
@@ -80,15 +95,14 @@ You can provide a wordlist
 
 ```bash
 # on Kali
-john --format=raw-md4 --wordlist=/usr/share/wordlists/rockyou.txt hash
+$ john hash --format=raw-md4 --wordlist=/usr/share/wordlists/rockyou.txt
+# multiple lists
+$ cat wordlist1 wordlist2 wordlist3 > wordlist123
+$ john hash --format=raw-md4 --wordlist=wordlist123
 ```
-
-**Notes**
-
-* Merge wordlist: `cat wordlist1 wordlist2 wordlist3 > wordlist4`
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## GPG
 
@@ -125,7 +139,7 @@ $ john --format=gpg hash --wordlist=/usr/share/wordlists/rockyou.txt
 > If by any means you got someone's private key that was used to encrypt this file <small>(a key may be used instead of a passphrase)</small>, then use `gpg --import xxx.key` to import it, and decrypt the file as usual.
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## SSH private key
 
@@ -146,7 +160,7 @@ $ john --format=ssh hash --wordlist=/usr/share/wordlists/rockyou.txt
 ```
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## RAR password cracking
 
@@ -168,7 +182,7 @@ $ unrar x hello.rar
 ```
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## ZIP password cracking
 
