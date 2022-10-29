@@ -119,9 +119,23 @@
         "hidden": false
       },
       {
-        "tag": "random/crack_password/hydra.md",
+        "tag": "random/crack_password/services.md",
         "name": "Bruteforce services",
         "desc": "Use hydra to bruteforce SSH, FTP...",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "random/forensics/index.md",
+        "name": "Digital Forensics",
+        "desc": "Notes about forensics, i.e. investigating cyber crimes.",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "random/printers/index.md",
+        "name": "Printers",
+        "desc": "How to exploit printers.",
         "icon": null,
         "hidden": false
       }

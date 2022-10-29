@@ -105,5 +105,5 @@ This command will
 * Set the field with the name "password" with every entry in the wordlist, on by one
 * Consider comme failures (`-F`) any web page that returns the word "incorrect"
 
-You should check the [bruteforce services](../../random/crack_password/hydra.md) page to learn more about Hydra.
+You should check the [bruteforce services](../../random/crack_password/services.md) page to learn more about Hydra.
 </div></div>
