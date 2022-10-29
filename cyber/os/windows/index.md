@@ -105,7 +105,7 @@ Infos on a Local Machine
 **Windows files** <small>(it may not be `/Windows`, see `$Env:windir`)</small>
 
 * in a file explore, enter `%windir%`
-* `cd /Windows/System32/config/`: this may be a location for the **Security Account Manager** (**SAM**) database file is stored. This file is used to store users, their passwords, their groups...
+* `cd /Windows/System32/config/`: this may be a location for the **Security Account Manager** (**SAM**) database file is stored. This file is used to store users, their passwords, their groups... Modern versions of Windows use the NT hash format, commonly referred as NTLM, as the previous format was LM.
 </div><div>
 
 **Windows services** <small>(usually use "Win✖️R" to open one)</small>:

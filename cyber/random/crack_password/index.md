@@ -6,11 +6,13 @@
 
 <div class="row row-cols-md-2"><div>
 
-Almost all the time, password are **hashed**. It means that some "clear text" is passed to a one-way function that returns (=digest) a hash. One-way means that you can't get back the password from the hash. But, we can check if a password has generated a hash, so it's a useful, and supposedly secure way of storing a password.
+Almost all the time, password are **hashed**. It means that some "clear text" is passed to a one-way function that returns (=digest) a hash. One-way means that you can't get back the password from the hash. But, we can check if a password has generated a hash, so it's a useful, and a (supposedly) secure way of storing a password.
 
-Usually, hackers create **rainbow tables**, or dictionaries, in which hashes are mapped to passwords. This allows tools to easily give us back the password, if it's in the dictionary. This is possible, because the same password will generate the same hash, by default. To avoid such attacks, hash functions are taking a parameter called **salt**. Now, only the same salt should produce the same hash.
+Usually, hackers create **rainbow tables**, or dictionaries, in which hashes are mapped to passwords. This allows tools to easily give them back the password, if it's in the dictionary. This is possible, because, by default, the same password will generate the same hash. To avoid such attacks, hash functions are taking a parameter called **salt**, and only the same salt should produce the same hash.
 
-> The hash brute-forcing tools will usually take a wordlist, for instance, you could use rockyou.txt which is an infamous wordlist of passwords <small>(data breach of rockyou.com in 2009)</small>. See [SecLists](https://github.com/danielmiessler/SecLists/tree/master/Passwords). 
+> The hash brute-forcing tools will usually take a wordlist with passwords to try. You could use rockyou.txt which is an infamous wordlist of passwords <small>(data breach of rockyou.com in 2009)</small>. See [SecLists](https://github.com/danielmiessler/SecLists/tree/master/Passwords). 
+
+> hash brute-forcing tools are (usually) using your CPU to computer results faster. On VM, they may be less efficient, as the VM itself is taking a lot of resources.
 </div><div>
 
 The most important use of hashing is for integrity. We generate a hash of file/..., and make it available with the file. Others can generate the hash of the file after they download it. If both are the same, then it means that the content was not tempered with.
@@ -65,16 +67,14 @@ $ haiti "some_hash"
 
 <hr class="sr">
 
-## hashcat
+## hashcat / MD5Hashing
 
 <div class="row row-cols-md-2"><div>
 
 My experience with [hashcat](https://github.com/hashcat/hashcat) (15.9k ⭐) has been worse than john, but it's quite well-known, and popular.
-
-...
 </div><div>
 
-...
+[MD5Hashing](https://md5hashing.net/) is a quite useful websites to crack a hash, while it only work if the database has a record of this hash.
 </div></div>
 
 <hr class="sl">
@@ -88,7 +88,10 @@ You can use <small>(Jumbo)</small> [**John the Ripper**](https://github.com/open
 You can use the default wordlist, and let john guess the format. Unfortunately, it's more efficient to provide both arguments, especially the format.
 
 ```bash
+# use quotes, because $ won't be interpreted inside quotes
+$ echo 'some_hash' > hash
 $ john hash
+$ john 'some_hash'
 ```
 
 List formats <small>(you don't need it with nth/haiti, as they give you the format)</small>. Note that standard formats, such as MD5, are starting with "raw-".
@@ -137,6 +140,20 @@ $ john hash --format=sha512crypt --wordlist=/usr/share/wordlists/rockyou.txt
 ```
 
 Note that "unshadow" simply replaced the "x" in "passwd", with the password in "shadow", as you would find in some old linux distros.
+</div></div>
+
+<hr class="sl">
+
+## Windows password cracking
+
+<div class="row row-cols-md-2"><div>
+
+Modern Windows are using the hash format "NT", also referred as "NTLM", because "LM" was the previous hash format.
+
+```bash
+$ john hash --format=nt --wordlist=/usr/share/wordlists/rockyou.txt
+```
+</div><div>
 </div></div>
 
 <hr class="sr">

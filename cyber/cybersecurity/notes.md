@@ -564,23 +564,6 @@ https://tryhackme.com/room/commonlinuxprivesc
 
 ## Encryption/Encoding
 
-* A rainbow table is a lookup table of hashes to plaintexts
-* To protect against rainbow tables, we add a salt to the passwords. 
-* https://duckduckgo.com/?q=5b31f93c09ad1d065c0491b764d04933&hps=1&atb=v332-1&ia=web
-
-It’s worth mentioning that virtual machines normally don’t have access to the host's graphics card(s) (You can set this up, but it’s a lot of work). If you want to run hashcat, it’s best to run it on your host (Windows builds are available on the website, run it from powershell). You can get Hashcat working with OpenCL in a VM, but the speeds will likely be much worse than cracking on your host. John the ripper uses CPU by default and as such, works in a VM out of the box although you may get better speeds running it on the host OS as it will have more threads and no overhead from running in a VM.
-
-NEVER (I repeat, NEVER!) use --force for hashcat. It can lead to false positives (wrong passwords being given to you) and false negatives (skips over the correct hash).
-
-UPDATE: As of Kali 2020.2, hashcat 6.0 will run on the CPU without --force. I still recommend cracking on your host OS if you have a GPU, as it will be much much faster.
-
-* don't forget to quote hash (bcrypt $$...)
-* it's md5, better use https://md5hashing.net/hash/md5/xxx
-* https://md5hashing.net/
-
-* NThash is the hash format that modern Windows Operating System machines will store user and service passwords in. It's also commonly referred to as "NTLM" which references the previous version of Windows format for hashing passwords known as "LM", thus "NT/LM".
-* You can acquire NTHash/NTLM hashes by dumping the SAM database on a Windows machine, by using a tool like Mimikatz or from the Active Directory database: NTDS.dit.
-
 John also has another mode, called Single Crack mode. In this mode, John uses only the information provided in the username, to try and work out possible passwords heuristically, by slightly changing the letters and numbers contained within the username
 
 input username: toto 
