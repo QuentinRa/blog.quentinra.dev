@@ -49,6 +49,9 @@ $ ./enum4linux.pl <options> <ip>
 
 * https://tryhackme.com/resources/blog/online-training-for-careers
 * https://tryhackme.com/resources/blog/cyber-security-awareness-month
+* https://www.virustotal.com/gui/home/upload
+* https://www.hybrid-analysis.com/
+* https://otx.alienvault.com/ (An open-source threat tracking system)
 
 <hr class="sep-both">
 
