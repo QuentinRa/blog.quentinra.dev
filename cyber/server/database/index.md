@@ -343,5 +343,28 @@ You may try other kind of question than only "is the nth character x".
 -- do the table name contains 0?
 table_name LIKE '%0%'
 ```
+</div></div>
 
+<hr class="sr">
+
+## Manual Time-based SQLi
+
+<div class="row row-cols-md-2"><div>
+
+This kind of SQLi is quite similar to **Error-based SQLi**, the only difference being that instead of using
+
+```
+UNION SELECT NULL
+```
+
+We will use
+
+```
+UNION SELECT SLEEP(5)
+```
+</div><div>
+
+The SELECT is only applied on the elements returned after applying the WHERE, if there are none, then the SLEEP function won't be called, and if so, it the hacker didn't have to wait $n$ seconds, it will indicate that the where was false.
+
+For instance, on a login page in which you don't know the credentials, you will most likely don't know if the query failed, there are too many possibilities as to why. But, using time-based SQLi, if the request take a fixed amount of time, you will be sure of the answer to your question.
 </div></div>
