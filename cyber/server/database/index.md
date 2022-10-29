@@ -1,5 +1,7 @@
 # Exploit a Database
 
+[![sqlinjectionlm](../../_badges/sqlinjectionlm.svg)](https://tryhackme.com/room/sqlinjectionlm)
+
 <hr class="sl">
 
 ## Random
@@ -93,16 +95,22 @@ There are many scenarios in which a hacker will find a SQL injection. The exampl
 <tr><th>Name</th><th>Description</th></tr>
 </thead><tbody>
 
-<tr><td>Error-based</td><td>The simplest SQL injection. If a hacker send a wrong query, the server print the failing SQL query to the user. The hacker can easily use it to adapt the payload, and broke into the database.
+<tr><td class="text-center" colspan="2"><b>In-band SQLi</b> (same channel to attack, and gather results)</td></tr>
+
+<tr><td>Error-based</td><td>The simplest SQL injection. The SQL errors are displayed to the user. The hacker can easily use it to adapt the query, and broke into the database.
 </td></tr>
 
-<tr><td>Union-based</td><td>An attacker use a form returning a list of results, to concatenate to them records fetched illegally.
+<tr><td>Union-based</td><td>An attacker use an injectable entrypoint returning a list of results, and append to them records fetched illegally.
 </td></tr>
 
-<tr><td>Boolean-based</td><td>This attack is used when there is no errors. An attacker will try to make a request that fail if a boolean expression is false. By doing so, if the service (ex: login) failed, the attacker can inter that is was because the boolean expression was false.
+<tr><td class="text-center" colspan="2"><b>Blind/inferential SQLi</b> (observe the database response to map it)</td></tr>
+
+<tr><td>Boolean-based</td><td>The attack will first look for a successful injectable query. Then, it will append to the working query a condition such as  "AND is the DBMS starting with 's'". If the query is successful, then it means the answer was "yes". Question by question, the hacker is mapping the database.
 </td></tr>
 
-<tr><td>Others</td><td>Time-based, Out-of-band-based, Voice-based, and Stacked queries-based.
+<tr><td>Time-based</td><td>The attack add in the request a call to `sleep(n)` if successful. If the request take $n$ seconds, then the hacker will know that the query was successful.</td></tr>
+
+<tr><td>Others</td><td>Out-of-band-based, Voice-based, and Stacked queries-based.
 </td></tr>
 </tbody></table>
 </div><div>
@@ -115,9 +123,9 @@ There are many scenarios in which a hacker will find a SQL injection. The exampl
 
 Mitigations
 
-* Use prepared requests (queries), they are ensuring that parameters of your queries are not interpreted as SQL code
-* You can filter input, but you CAN'T rely on it, as you filter will _most likely_ be bypassed
-* Do not trust anyone. SQL injections may be delayed. You may do protect your login queries, but if provided username is some SQL code, then any other request using the username may interpret it, hence you should secure every request, even if there are not handling data from the user, as they may later. You should use API for better security.
+* Use **prepared requests** (statements), they are ensuring that parameters of your queries are not interpreted as SQL code
+* Input validation or escaping user input: You can filter input, but you CAN'T rely on it, as you filter will _most likely_ be bypassed
+* Do not trust anyone. SQL injections may be delayed. You may do protect your login queries, but if the provided username is some SQL code, then any other request using the username may interpret it, hence you should secure every request, even if there are not handling data from the user, as they may later. You should use an API for better security.
 </div></div>
 
 <hr class="sr">
