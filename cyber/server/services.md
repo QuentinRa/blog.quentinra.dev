@@ -2,9 +2,7 @@
 
 <hr class="sl">
 
-## 3389 (tcp) - Remote Desktop Protocol
-
-*If there is an open port, such as `3389/tcp open  ms-wbt-server`, you can try to connect to the target (if you have credentials).*
+## Remote Desktop Protocol - 3389 (tcp)
 
 <div class="row row-cols-md-2"><div>
 
@@ -22,7 +20,7 @@ There is also [rdesktop](https://github.com/rdesktop/rdesktop) (1.1k ⭐).
 
 <hr class="sr">
 
-## 21 (tcp) - File Transfer protocol
+## File Transfer protocol - 21 (tcp)
 
 <div class="row row-cols-md-2"><div>
 
@@ -45,5 +43,45 @@ ftp> bye # same
 
 ```bash
 $ ftp anonymous@ip
+```
+</div></div>
+
+<hr class="sl">
+
+## Samba - 445 (or 139 before, tcp)
+
+[![kenobi](../_badges/kenobi.svg)](https://tryhackme.com/room/kenobi)
+
+<div class="row row-cols-md-2"><div>
+
+[Samba](https://www.samba.org/) that is making both file exchange system of Linux (NFS), and Windwos (SMB) work together. It's mostly used to share file internally, by connecting every computer, printer... to a **share**, a shared folder.
+
+Find shares using nmap
+
+```bash
+$ nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse ip
+```
+
+Connect to a share <small>(try without submitting a password)</small>
+
+```bash
+$ smbclient //IP/share_name
+```
+</div><div>
+Once connected, you can use theses
+
+```bash
+smb> pwd # get current folder
+smb> ls folder # list files in folder
+smb> cd folder # move to folder
+smb> put /local/path /remote/path # upload
+smb> get /remote/path /local/path # download
+smb> exit
+```
+
+Download everything in a share
+
+```bash
+$ smbget -R smb://IP/share_name
 ```
 </div></div>
