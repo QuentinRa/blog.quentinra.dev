@@ -559,33 +559,3 @@ https://tryhackme.com/room/commonlinuxprivesc
 * https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md
 * https://github.com/alexb49/total-oscp-guide
 * https://payatu.com/guide-linux-privilege-escalation
-
-<hr class="sep-both">
-
-## Encryption/Encoding
-
-John also has another mode, called Single Crack mode. In this mode, John uses only the information provided in the username, to try and work out possible passwords heuristically, by slightly changing the letters and numbers contained within the username
-
-input username: toto 
-=> Word Mangling: Toto tOTo toto1 toto!
-=> GECOS (ex: in passwd, the home... are Gecos fields)
-
-`john --single --format=raw-md5 hash` (no wordlist)
-
-and the file must be `username:password`
-
-* https://www.openwall.com/john/
-* Create rules for passwords
-  * Common Custom Rules
-  * You expect the uppercase first, a letter then a symbol at the end
-  * `/etc/john/john.conf`
-  * `--config=FILE              Use FILE instead of john.conf or john.ini`
-  * `[List.Rules:RuleName]`: header before a rule
-
-Az - Takes the word and appends it with the characters you define
-A0 - Takes the word and prepends it with the characters you define
-c - Capitalises the character positionally
-
-* `cAz"[0-9] [!£$%@]"` (capitalize, then Az) followed by number then symbol
-* `--rule=RuleName`
-* exploit password complexity predictability
