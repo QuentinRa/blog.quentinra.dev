@@ -6,7 +6,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[Remmina](https://github.com/FreeRDP/Remmina) (1.8k ⭐) that can be installed with `apt install remmina` is an easy-to-use tool allowing you to open access a remote desktop.
+[Remmina](https://github.com/FreeRDP/Remmina) (1.9k ⭐) that can be installed with `apt install remmina` is an easy-to-use tool allowing you to open access a remote desktop.
 
 * `remmina`: start the graphical interface
     * Enter the IP of the target
@@ -16,6 +16,12 @@
 </div><div>
 
 There is also [rdesktop](https://github.com/rdesktop/rdesktop) (1.1k ⭐).
+
+There is also [FreeRDP](https://github.com/FreeRDP/FreeRDP) (7.5k ⭐), and there is a graphical version too [xfreerdp-gui](https://github.com/wyllianbs/xfreerdp-gui) (29 ⭐).
+
+```bash
+$ xfreedrp /u:x /p:y /v:ip
+```
 </div></div>
 
 <hr class="sr">
@@ -27,7 +33,7 @@ There is also [rdesktop](https://github.com/rdesktop/rdesktop) (1.1k ⭐).
 FTP (File Transfer protocol) is a protocol used to transfer (upload, download) files from one computer to another. Use port **21** by default <small>(22 for SFTP=Secure FTP)</small>, while data is transferred via port 20.
 
 ```bash
-$ ftp ip
+$ ftp user@ip
 ftp> pwd # path to current folder
 ftp> ls folder # list files
 ftp> cd folder # move to folder
