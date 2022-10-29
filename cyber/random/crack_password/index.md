@@ -63,6 +63,20 @@ $ haiti "some_hash"
 
 > You might have to do it manually too. Some well-known one are "\\$1\\$" <small>(cisco, old linux)</small>, "\\$2\\$, \\$2a\\$, \\$2b\\$, \\$2x\\$, \\$2y\\$" <small>(bcrypt, web)</small>, or "$6" <small>(sha512crypt, modern linux)</small>. You can find a lot of examples [on hashcat website](https://hashcat.net/wiki/doku.php?id=example_hashes).
 
+<hr class="sr">
+
+## hashcat
+
+<div class="row row-cols-md-2"><div>
+
+My experience with [hashcat](https://github.com/hashcat/hashcat) (15.9k ⭐) has been worse than john, but it's quite well-known, and popular.
+
+...
+</div><div>
+
+...
+</div></div>
+
 <hr class="sl">
 
 ## Cracking a hash
@@ -104,7 +118,30 @@ $ john hash --format=raw-md4 --wordlist=wordlist123
 
 <hr class="sr">
 
-## GPG
+## Linux shadow hash cracking
+
+<div class="row row-cols-md-2"><div>
+
+Modern Linux are using `sha512crypt`. Use name-that-hash, or any other tools to find the format if needed. The easy way is only passing the hash of the user you want
+
+```bash
+$ john hash --format=sha512crypt --wordlist=/usr/share/wordlists/rockyou.txt
+```
+</div><div>
+
+But, there is a more complicated way. I think it's useful if using john "single" mode.
+
+```bash
+$ unshadow /path/to/stolen_passwd /path/to/stolen_shadow > hash
+$ john hash --format=sha512crypt --wordlist=/usr/share/wordlists/rockyou.txt
+```
+
+Note that "unshadow" simply replaced the "x" in "passwd", with the password in "shadow", as you would find in some old linux distros.
+</div></div>
+
+<hr class="sr">
+
+## GPG passphrase cracking
 
 <div class="row row-cols-md-2"><div>
 
@@ -141,7 +178,7 @@ $ john --format=gpg hash --wordlist=/usr/share/wordlists/rockyou.txt
 
 <hr class="sl">
 
-## SSH private key
+## SSH private key - passphrase cracking
 
 <div class="row row-cols-md-2"><div>
 

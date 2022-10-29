@@ -579,14 +579,7 @@ UPDATE: As of Kali 2020.2, hashcat 6.0 will run on the CPU without --force. I st
 * https://md5hashing.net/
 
 * NThash is the hash format that modern Windows Operating System machines will store user and service passwords in. It's also commonly referred to as "NTLM" which references the previous version of Windows format for hashing passwords known as "LM", thus "NT/LM".
-* You can acquire NTHash/NTLM hashes by dumping the SAM database on a Windows machine, by using a tool like Mimikatz or from the Active Directory database: NTDS.dit. 
-* If shadow password
-  * --format=sha512crypt hash
-  * unshadow 
-    * passwd
-    * shadow
-  * Replace "x" with the hash
-  * Then you can give the file to john
+* You can acquire NTHash/NTLM hashes by dumping the SAM database on a Windows machine, by using a tool like Mimikatz or from the Active Directory database: NTDS.dit.
 
 John also has another mode, called Single Crack mode. In this mode, John uses only the information provided in the username, to try and work out possible passwords heuristically, by slightly changing the letters and numbers contained within the username
 
