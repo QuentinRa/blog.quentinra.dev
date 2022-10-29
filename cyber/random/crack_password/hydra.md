@@ -8,7 +8,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[Hydra](https://github.com/vanhauser-thc/thc-hydra) (6.8k ⭐) is a well-known tool to bruteforce authentication services such SSH, FTP, RTP, MySQL... It can even be used for login forms, but that's convered somewhere else.
+[Hydra](https://github.com/vanhauser-thc/thc-hydra) (6.8k ⭐) is a well-known tool to bruteforce authentication services such SSH, FTP, RDP, MySQL... It can even be used for login forms, but that's convered somewhere else.
 
 ```bash
 $ rockyou=/usr/share/wordlists/rockyou.txt

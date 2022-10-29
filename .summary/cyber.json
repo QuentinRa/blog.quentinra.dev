@@ -103,11 +103,18 @@
         "hidden": false
       }
     ],
-    "Software": [
+    "Random": [
       {
         "tag": "random/crack_password/index.md",
         "name": "Crack a hash",
-        "desc": "Use john the ripper to break insecure passwords, and gpg/ssh keys with a weak passphrase..",
+        "desc": "Use john the ripper to crack insecure passwords/passphrase using their hash (SSH key, GPG/ZIP/RAR...).",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "random/encoding/index.md",
+        "name": "Encoding",
+        "desc": "Learn about base64...",
         "icon": null,
         "hidden": false
       },
