@@ -249,4 +249,5 @@ Small blogs
 * [cyber-security-base-19](https://github.com/rage/cyber-security-base-19) <small>(down - the didn't paid the hosting provider :3)</small>
 * [MayADevBe](https://mayadevbe.me/)
 * [ryanplatten](https://ryanplatten.com/various-journal-entries/)
+* [kalilinuxtutorials](https://kalilinuxtutorials.com/)
 </div></div>

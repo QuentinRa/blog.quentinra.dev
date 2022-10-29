@@ -16,7 +16,7 @@ Note: this isn't a course about SQL, but stuff that may be useful to hackers.
   * `...`
 * `mysql -u root -p -h <ip>`: login as root to the database at `<ip>`
   * Use `mysql -u root -p` for a local database.
-  * Try an empty password, as this is the default password for root.
+  * Try an empty password, as this is the default password for root. [You may check this article](https://redteamnation.com/mysql-user-defined-functions/).
 </div><div>
 
 Inside the SQL console, you may use
