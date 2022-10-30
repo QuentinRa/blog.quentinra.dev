@@ -62,17 +62,21 @@ Most Linux commands are available, although they are aliases to Windows commands
 * `cat`: print (usually small) files
 * `find`: find a file/folder
 * `wget`: download something
+* `clear`: clear the terminal
+* `gcm command`: find the executable given a command ([source](https://stackoverflow.com/questions/304319/is-there-an-equivalent-of-which-on-the-windows-command-line))
 
-Other alias
+cmd commands
 
+* `cd` / `find`
 * `dir`: same as ls
 * `type`: same as cat
+* `cls`: same as clear
 
 Open a Windows shell
 
 * `powershell`: Linux-friendly console
 * `cmd`: The traditional Windows console. Most commands in this course won't work on it. CMD options are usually like `/xxx`.
-* `wmic`: a deprecated console in Windows 10 21H1, supersedes by Powershell. 
+* `wmic` ([doc](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wmic)): a deprecated console since Windows 10 21H1 
 </div><div>
 
 Learn more about your environment
@@ -80,6 +84,8 @@ Learn more about your environment
 * `whoami`: see your username, or `NT AUTHORITY\SYSTEM` (root)
 * `whoami /groups`: see your groups
 * `hostname`: see hostname
+* `ipconfig`: network configuration
+* `netstat`: monitor network traffic
 * `systeminfo`: see infos about the system
 * `Get-ChildItem -Path Env:`: see environment variables
 * `$Env:windir`: print the value of one environment variable
@@ -92,6 +98,8 @@ Infos on a Local Machine
 * `net localgroup users`:list users in the group "users"
 * `net localgroup administrators`: list administrators
 * `net user username`: infos about an user
+
+> **Get help**: `help command`, `command help`, `command /?`, or `command /help`.
 </div></div>
 
 <hr class="sl">
@@ -125,10 +133,12 @@ Infos on a Local Machine
 * `lusrmgr.msc`: list of users/groups
 * `msconfig`: see services, manage system configurations
 * `lsass` is responsible for authentication within Windows. There is [mimikatz/kiwi](https://github.com/gentilkiwi/mimikatz) (16.2k ⭐) to extract passwords from the memory. For instance, if there is a task running belonging to a user, even if they are not logged in, we can get their password.
-* `winver.exe`: show Windows version+build, and licence holder.
-* `control.exe system`: open system info (Device/Windows specifications)
-* `UserAccountControlSettings.exe`: change UAC settings
-* `compmgmt` is responsable for managing **shares**, **running tasks**, **listing events** ([doc](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types), monitor performance (`perfmon`), or even manage device hardware/services. 
+* `winver`: show Windows version+build, and licence holder.
+* `control system`: open system info (Device/Windows specifications)
+* `msinfo32`: system info (raw, can search) + hardware and services
+* `UserAccountControlSettings`: change UAC settings
+* `compmgmt` is responsable for managing **shares**, **running tasks**, **listing events** ([doc](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types), monitor performance (`perfmon`/`resmon`), or even manage device hardware/services. 
+* `regedt32/regedit`: open Windows registry, a database used to store information needed to configure the system for users/applications/devices <small>(ports in use, applications...)</small>. See the [doc](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users).
 
 <br>
 
