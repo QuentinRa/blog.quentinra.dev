@@ -23,6 +23,7 @@ xargs
 man history
 su - root
 cyber commands
+help/info
 
 Blog
 https://linuxhandbook.com/

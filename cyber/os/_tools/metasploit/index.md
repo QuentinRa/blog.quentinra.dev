@@ -163,8 +163,8 @@ msf6 > set payload payload_name
 You may send a command to the background with `CTRL-Z`, or using `background`. You can use `sessions` to see your sessions, and `sessions -i <sid>` to move a session to the foreground.
 
 ```bash
-meterpreter > bg # todo: need test
-meterpreter > background
+meterpreter > bg
+meterpreter > background # same
 msf6 exploit('module_used') > sessions
 msf6 exploit('module_used') > sessions -i 1
 ```
@@ -334,10 +334,10 @@ Dump every username/password store by the system, they are hashed, you need to u
 
 ```bash
 meterpreter > hashdump
-# todo: NEED TEST
+# You may try to crack them using john within the msfconsole
 msf6 exploit('module_used') > use auxiliary/analyze/crack_windows
 msf6 exploit('module_used') > set CUSTOM_WORDLIST /usr/share/wordlists/rockyou.txt
-msf6 exploit('module_used') > [...]
+msf6 exploit('module_used') > run
 ```
 
 Clear logs
