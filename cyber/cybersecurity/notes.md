@@ -194,3 +194,42 @@ jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('THM') )//%0D%0A%0d%0a//</stY
   * W: whoami dir ping timeout
 * sanitisation = check the format (ex: number, email...). Filters can be bypassed (ex: hexadecimal...).
 * https://github.com/payloadbox/command-injection-payload-list
+
+<hr class="sep-both">
+
+## MSF
+
+Metasploit has a number of modules to scan open ports on the target system and network. You can list potential port scanning modules available using the `search portscan`
+
+* `auxiliary/scanner/portscan/tcp` (TCP port scan)
+* `scanner/discovery/udp_sweep` (UDP services)
+* `auxiliary/scanner/smb/smb_version` (SMB Scans)
+* `auxiliary/scanner/http/http_version` (HTTP version)
+* `auxiliary/scanner/smb/smb_login`: bruteforce SMB
+* you can write "use xxx" if there is only one xxx
+
+XXX
+
+* Start the database: `sudo systemctl start postgresql` (See commands for Nessus, move them)
+* workspace
+  * workspace -a xxx
+  * workspace xxx
+  * workspace -d xxx
+* `db_nmap`: execute and store nmap result
+* `hosts`
+* `services`
+* `hosts -R`: add all ips to RHOSTS
+* `services -S netbios`: search a service
+
+----
+
+You may want to look for low-hanging fruits such as:
+HTTP: Could potentially host a web application where you can find vulnerabilities like SQL injection or Remote Code Execution (RCE).
+FTP: Could allow anonymous login and provide access to interesting files.
+SMB: Could be vulnerable to SMB exploits like MS17-010
+SSH: Could have default or easy to guess credentials
+RDP: Could be vulnerable to Bluekeep or allow desktop access if weak credentials were used. 
+
+----
+
+Note that choosing a working payload could become a trial and error process due to environmental or OS restrictions such as firewall rules, anti-virus, file writing, or the program performing the payload execution isn't available (eg. payload/python/shell_reverse_tcp).
