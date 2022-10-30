@@ -19,13 +19,13 @@
 
 Modern versions of Windows are using the New Technology File System (**NTFS**). Before, FAT16/32, and HPFS were used. FAT is still used for stuff like USB keys. NTFS is a file system that can repair itself in case of failure, using logs. It's known as a journaling file system.
 
-**Task Manager**
+**Task Manager** (`taskmgr`)
 
 * Shortcut: <kbd>CTRL+SHIFT+ESC</kbd>
 * List running processes
 * This guide is quite complete [Windows Task Manager](https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide/)
 
-**Control panel**
+**Control panel** (`control.exe`)
 
 * This is the entry point to most settings
 * In the top-right corner, it's possible to switch to another view <small>(ex: small icons)</small>, in which you may discover menus that you never opened before, but may but useful one way or another.
@@ -67,6 +67,12 @@ Other alias
 
 * `dir`: same as ls
 * `type`: same as cat
+
+Open a Windows shell
+
+* `powershell`: Linux-friendly console
+* `cmd`: The traditional Windows console. Most commands in this course won't work on it. CMD options are usually like `/xxx`.
+* `wmic`: a deprecated console in Windows 10 21H1, supersedes by Powershell. 
 </div><div>
 
 Learn more about your environment
@@ -114,12 +120,15 @@ Infos on a Local Machine
 * `/Windows/System32/config/`: location where the **Security Account Manager** (**SAM**) database file is stored. This file is used to store users, their passwords, their groups... Modern versions of Windows use the NT hash format, commonly referred as NTLM, as the previous format was LM.
 </div><div>
 
-**Windows services** <small>(usually use "Win✖️R" to open one)</small>:
+**Windows services** <small>(usually use "Win✖️R" to open one)</small>. These are shortcuts to find in one action the menu you are looking for. Note that extension such as ".exe", or ".msc" are optional.
 
 * `lusrmgr.msc`: list of users/groups
-* `taskmgr`: open the task manager
-* `MSConfig`: open the system configuration menu
+* `msconfig`: see services, manage system configurations
 * `lsass` is responsible for authentication within Windows. There is [mimikatz/kiwi](https://github.com/gentilkiwi/mimikatz) (16.2k ⭐) to extract passwords from the memory. For instance, if there is a task running belonging to a user, even if they are not logged in, we can get their password.
+* `winver.exe`: show Windows version+build, and licence holder.
+* `control.exe system`: open system info (Device/Windows specifications)
+* `UserAccountControlSettings.exe`: change UAC settings
+* `compmgmt` is responsable for managing **shares**, **running tasks**, **listing events** ([doc](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types), monitor performance (`perfmon`), or even manage device hardware/services. 
 
 <br>
 
