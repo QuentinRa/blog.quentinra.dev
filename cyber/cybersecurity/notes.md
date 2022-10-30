@@ -94,3 +94,14 @@ $ ./enum4linux.pl <options> <ip>
 * https://www.base64encode.org/
 * IDOR: if accounts are unpredictable, try making two accounts, and test if you can swap with both.
 * URL/source code, scripts (see network tab)...
+* https://canitakeyoursubdomain.name/
+* https://secalerts.co/
+* https://stack.watch/
+* File inclusion
+  * Local File Inclusion (LFI)
+  * Remote File Inclusion (RFI)
+  * Path/Directory traversal: manipulating and abusing the web application's URL to locate and access files or directories stored outside the application's root directory
+    * file_get_contents in PHP
+    * ../[...]/etc/passwd (dot-dot-slash attack)
+    * ../[...]/windows/win.ini
+    * https://tryhackme.com/room/fileinc (common files)
