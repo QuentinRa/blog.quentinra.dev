@@ -71,5 +71,7 @@ As you can't do much as a regular user, that's the main goal when getting inside
 
 * Leave a backdoor
 
+* Edit software configurations / users permissions
+
 * Use this machine as a starting point. Scan the network to discover more vulnerable machines.
 </div></div>

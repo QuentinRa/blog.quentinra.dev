@@ -12,7 +12,7 @@
 [![linuxstrengthtraining](../../_badges/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 [![catregex](../../_badges/catregex.svg)](https://tryhackme.com/room/catregex)
 [![linuxprivesc](../../_badges/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
-
+[![commonlinuxprivesc](../../_badges/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 <hr class="sl">
 
 ## Linux handy commands
@@ -51,6 +51,7 @@ Learn more about your environment
 * `env`: see environment variables
 * `umask`: see the default perms on newly created files
 * `getent`: shortcut to get entries about something, such as `passwd`
+* `finger`: return a summary of information about a user
 </div></div>
 
 <hr class="sr">
@@ -209,6 +210,9 @@ $ find / -perm -g=s -type f 2>/dev/null
 ```
 
 If the script "hand-made", or not something on GTFOBins, then you can use `strace script`, and `strings script`. Both commands can be used if the script is "unreadable", to try to find what the script is doing, and maybe find Paths/Environment variables that you may have the permission to edit.
+
+> **CVE-2021-4034**: `/usr/bin/pkexec` a file installed by default on
+every major Linux distribution with a SUID bit could be exploited to get root. See [arthepsy PoC](https://github.com/arthepsy/CVE-2021-4034) (913 ⭐), or [berdav PoC](https://github.com/berdav/CVE-2021-4034) (1.7k ⭐).
 </div></div>
 
 <hr class="sr">

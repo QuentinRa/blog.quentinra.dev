@@ -92,7 +92,6 @@ $ ./enum4linux.pl <options> <ip>
   * POST URL in which you can override the value of the non-injectable parameter
   * curl 'http://10.10.136.157/customers/reset?email=robert@acmeitsupport.thm' -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=robert&email=hacker@hack.ca'
   * Common encoding types are base32 which converts binary data to the characters A-Z and 2-7, and base64 which converts using the characters a-z, A-Z, 0-9,+, / and the equals sign for padding.
-  * https://crackstation.net/
   * https://www.base64encode.org/
   * Cookies (encoded/raw/ff)
   * https://tryhackme.com/room/authenticationbypass

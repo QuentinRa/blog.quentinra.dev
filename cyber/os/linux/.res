@@ -5,3 +5,7 @@ https://www.udemy.com/course/linux-privilege-escalation/
 https://blog.certcube.com/linux-privilege-escalation-with-sudo-rights/
 https://github.com/DominicBreuker/pspy
 https://0xsanz.medium.com/70-ways-to-get-root-linux-privilege-escalation-d98ec78f1405
+https://github.com/netbiosX/Checklists/blob/master/Linux-Privilege-Escalation.md
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md
+https://github.com/alexb49/total-oscp-guide
+https://payatu.com/guide-linux-privilege-escalation
