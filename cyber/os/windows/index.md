@@ -25,11 +25,18 @@ Modern versions of Windows are using the New Technology File System (**NTFS**). 
 * List running processes
 * This guide is quite complete [Windows Task Manager](https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide/)
 
-**Control panel** (`control.exe`)
+**Control panel** (`control`)
 
 * This is the entry point to most settings
 * In the top-right corner, it's possible to switch to another view <small>(ex: small icons)</small>, in which you may discover menus that you never opened before, but may but useful one way or another.
 
+**Windows Update** (`control /name Microsoft.WindowsUpdate`)
+
+A service looking for updates, downloading them, and asking <small>(or, forcing since Windows 10)</small> the user to install them. They are typically released on the 2nd Tuesday of each month (Patch Tuesday), unless there is an important patch.
+
+**Windows security** / **Windows defender**
+
+A set of tools to protect your Windows. There is an antivirus, which has a "ransomware protection" feature. There is a firewall to set rules for your network traffic. [SmartScreen](https://learn.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) was design to protects against phishing or malware, and there is a tab with security features such as Core isolation.
 </div><div>
 
 **Users**
@@ -44,6 +51,10 @@ When there is a need for a user to elevate, Windows will show the User Account C
 Windows has 7 categories of permissions: Read, Write, Read & Execute, List Folder Contents, Modify, Full Control. You can learn more about them in this [article](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb727008(v=technet.10)#understanding-file-and-folder-permissions). Permissions are controlled by Discretionary Access Control List (DACLs), see the `icacls` command.
 
 The administrator can set permissions for a group, and users may be in multiple groups.
+
+**BitLocker**
+
+The Trusted Platform Module (TPM) hardware component providing security against tampering, or many other things. BitLocker was designed "to help protect user data, and to ensure that a computer has not been tampered with while the system was offline", as per [Microsoft](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview).
 </div></div>
 
 <hr class="sr">
@@ -149,6 +160,20 @@ Infos on a Local Machine
 
 <hr class="sr">
 
+## Linux privilege escalation
+
+<div class="row row-cols-md-2"><div>
+
+Privilege escalation refer to a process of obtaining super-administrator (a.k.a. Administrator) privileges, starting from a regular user.
+
+* [LOLBAS](https://github.com/LOLBAS-Project/LOLBAS) (4.8k ⭐): similar to GTFOBins on Linux, exploit the Windows executables 
+</div><div>
+
+* ...
+</div></div>
+
+<hr class="sl">
+
 ## Volume Shadow Copy Service (VSS)
 
 <div class="row row-cols-md-2"><div>
@@ -166,7 +191,7 @@ To manage them
 > See [Volume Shadow Copy Service](https://learn.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service)
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Alternate Data Streams (ADS)
 
