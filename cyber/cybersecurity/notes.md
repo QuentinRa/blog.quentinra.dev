@@ -127,3 +127,25 @@ $ ./enum4linux.pl <options> <ip>
 
 echo shell_exec("hostname");
 ```
+
+* SSRF Server-Side Request Forgery
+  * Exploit a server to make a request to another services, that could be located on another machine, to look for a resource usually of the attacker's choosing
+    * Regular SSRF: the client see the result
+    * Blind SSRF: no information returned
+  * Can be used to access/map internal/inaccessible areas
+  * `a?api=path` -> `b/path`
+  * `a?server=my?x=&api=path` -> `server?x=original_server/path`
+    * if we manage to redirect the traffic to our domain
+    * we could get some credentials (ex: API keys) in the headers
+  * Look at
+    * URL (full URL, or partial, or a path)
+    * forms
+
+If working with a blind SSRF where no output is reflected back to you, you'll need to use an external HTTP logging tool to monitor requests such as requestbin.com, your own HTTP server or Burp Suite's Collaborator client.
+
+* deny list or an allow list
+  * Such as deny access to localhost which may contain server performance data or further sensitive information, bypass 0, 0.0.0.0, 0000, 127.1, 127.*.*.*, 2130706433, 017700000001 or subdomains that have a DNS record which resolves to the IP Address 127.0.0.1 such as 127.0.0.1.nip.io
+  * 169.254.169.254.may contains sensitive data in cloud environments
+  * Allow List: allows those starting with "https://xxx.com", but you could make a domain name giving us "https://xxx.com.virus.com"
+* An open redirect is an endpoint on the server where the website visitor gets automatically redirected to another website address.
+* A form with profile images: give a path in it
