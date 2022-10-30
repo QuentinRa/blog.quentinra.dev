@@ -99,9 +99,16 @@ $ ./enum4linux.pl <options> <ip>
 * https://stack.watch/
 * File inclusion
   * Local File Inclusion (LFI)
+    * someone make a require/import of something fetched by the user, such as LANG (ex with `$_GET["lang"]`)
+    * if there are error messages, it's easy to get the path good
+    * Null Byte (< PHP 5.3.4, expecting EN -> EN.php, then "EN%00" or "EN0x00" ignore the ".php")
+    * `/etc/passwd%00` (bypass simple filters)
+    * `....//` (bypass filter with `../` as PHP will not replace the output)
+    * it's also possible that the dev force the files to be in a folder, but we simply need to make a path starting with this folder then
   * Remote File Inclusion (RFI)
   * Path/Directory traversal: manipulating and abusing the web application's URL to locate and access files or directories stored outside the application's root directory
     * file_get_contents in PHP
     * ../[...]/etc/passwd (dot-dot-slash attack)
     * ../[...]/windows/win.ini
+    * It may be worth noting that the root, it its own parent, so if you don't know the path of the server, you can still get add way more "../" than needed, and add a path starting from the root.
     * https://tryhackme.com/room/fileinc (common files)
