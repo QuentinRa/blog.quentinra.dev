@@ -85,3 +85,12 @@ $ ./enum4linux.pl <options> <ip>
 
 * take a request captured in the Proxy, edit it, and send the same request repeatedly as many times as we wish
 * tabs per request
+
+<hr class="sep-both">
+
+# weeb
+
+* https://www.base64decode.org/
+* https://www.base64encode.org/
+* IDOR: if accounts are unpredictable, try making two accounts, and test if you can swap with both.
+* URL/source code, scripts (see network tab)...

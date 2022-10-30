@@ -7,7 +7,7 @@ This practice of using bruteforce on GET/POST Forms, is usually called "web fuzz
 > **Note**: BurpSuite can be used too, see the Intruder tab.<br>
 > **Note**: FeroxBuster users should take a look at the [feroxfuzz](https://github.com/epi052/feroxfuzz/) library.
 
-**Insecure Direct Object References** (BrokenAccessControl), is a failure in which we can guess given a URL how to access other elements, and if we change the URl, we can indeed access them.
+📌 **Insecure Direct Object References** (BrokenAccessControl), is a failure in which we can guess given a URL how to access other elements, and if we change the URL <small>(id=10$\to$id=11)</small>, we can indeed access them.
 
 </div><div>
 
