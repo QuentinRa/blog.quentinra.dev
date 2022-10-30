@@ -41,7 +41,7 @@ When there is a need for a user to elevate, Windows will show the User Account C
 
 **Permissions**
 
-Windows has 7 categories of permissions: Read, Write, Read & Execute, List Folder Contents, Modify, Full Control. You can learn more about them in this [article](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb727008(v=technet.10)#understanding-file-and-folder-permissions).
+Windows has 7 categories of permissions: Read, Write, Read & Execute, List Folder Contents, Modify, Full Control. You can learn more about them in this [article](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb727008(v=technet.10)#understanding-file-and-folder-permissions). Permissions are controlled by Discretionary Access Control List (DACLs), see the `icacls` command.
 
 The administrator can set permissions for a group, and users may be in multiple groups.
 </div></div>
@@ -62,11 +62,17 @@ Most Linux commands are available, although they are aliases to Windows commands
 * `cat`: print (usually small) files
 * `find`: find a file/folder
 * `wget`: download something
+
+Other alias
+
+* `dir`: same as ls
+* `type`: same as cat
 </div><div>
 
 Learn more about your environment
 
 * `whoami`: see your username, or `NT AUTHORITY\SYSTEM` (root)
+* `whoami /groups`: see your groups
 * `hostname`: see hostname
 * `systeminfo`: see infos about the system
 * `Get-ChildItem -Path Env:`: see environment variables
@@ -102,10 +108,10 @@ Infos on a Local Machine
 
 <br>
 
-**Windows files** <small>(it may not be `/Windows`, see `$Env:windir`)</small>
+**Windows files** <small>(it may not be `/Windows`, see `$Env:windir`/`$Env:systemroot`)</small>
 
-* in a file explore, enter `%windir%`
-* `cd /Windows/System32/config/`: this may be a location for the **Security Account Manager** (**SAM**) database file is stored. This file is used to store users, their passwords, their groups... Modern versions of Windows use the NT hash format, commonly referred as NTLM, as the previous format was LM.
+* in a file explore, enter `%windir%` (or `%systemroot%`)
+* `/Windows/System32/config/`: location where the **Security Account Manager** (**SAM**) database file is stored. This file is used to store users, their passwords, their groups... Modern versions of Windows use the NT hash format, commonly referred as NTLM, as the previous format was LM.
 </div><div>
 
 **Windows services** <small>(usually use "Win✖️R" to open one)</small>:
