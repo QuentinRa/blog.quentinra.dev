@@ -243,6 +243,7 @@ CVEs take the form: CVE-YEAR-ID.
 
 Small blogs
 
+* [mikadmin.fr](https://mikadmin.fr/blog/)
 * [dhilipsanjay CTFs](https://dhilipsanjay.gitbook.io/ctfs/)
 * [TheDutchHacker](https://www.thedutchhacker.com/)
 * [0xrick](https://0xrick.github.io/categories/)

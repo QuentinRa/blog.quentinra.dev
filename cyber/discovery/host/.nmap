@@ -1,3 +1,7 @@
+* echo xxx name >> /etc/hosts
+* nmap xxx
+  * Service Info: Host: Os:
+
 https://tryhackme.com/room/nmap01
 
 `nmap -n`: no dns resolution

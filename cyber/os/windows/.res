@@ -2,7 +2,9 @@ https://github.com/frizb/Windows-Privilege-Escalation
 https://github.com/itm4n/PrivescCheck
 https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet
 https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS
+
 https://github.com/nobodyatall648/CVE-2019-1388
+https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2019-1388
 
 You can acquire NTHash/NTLM hashes by dumping the SAM database on a Windows machine, from the Active Directory database: NTDS.dit.
 
