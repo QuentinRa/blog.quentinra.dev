@@ -1,5 +1,30 @@
 # H@cking process
 
+<div class="row row-cols-md-2"><div>
+
+The Cyber Kill Chain model identifies 7 steps in the hacking process
+
+1. Reconnaissance: investigate the target (passive, and active recon)
+2. Weaponization: create/prepare an exploit
+3. Delivery: deliver your exploit
+4. Exploitation: make the exploit used
+5. Installation: install a malware
+6. Command&Control: get a remote shell on the victim
+7. Actions on objective: accomplish the goal
+
+> See: [Cyber Kill Chain® framework](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
+</div><div>
+
+For a penetration tester, it's more something like that
+
+* **Investigation**: (passive) information gathering
+* **Discovery**: enumerate/scan the target to find running applications, and services
+* **Exploitation**: find a way to get in, once you got a **foothold**
+* **Privilege Escalation**: try to get root/administrator (horizontal/vertical escalation)
+* **Post-exploitation**: hide your traces...
+
+</div></div>
+
 <hr class="sl">
 
 ## Investigation
@@ -25,18 +50,32 @@
 
 * Find the running OS
 
-* If there is a website, try to check what you can get from it.
-
 </div><div>
 
-* Try to find vulnerabilities
-
-* Try to bruteforce credentials on running services
+* If there is a website, check the web server section to find what you should look for.
+  * Look for a Framework (if any)
+  * Try to do **forced browsing**
+  * Try to find **logic flaws**
+  * ...
 </div></div>
 
 <hr class="sl">
 
-## Once on the host
+## Exploitation
+
+<div class="row row-cols-md-2"><div>
+
+* Try to find vulnerabilities in running services
+
+* Try to bruteforce credentials on running services
+</div><div>
+
+* Try to exploit the website
+</div></div>
+
+<hr class="sl">
+
+## Privilege Escalation
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -56,22 +95,27 @@ As you can't do much as a regular user, that's the main goal when getting inside
 * Try to look for mails/conversations
 * Try to look the browser history of the target
 * Try to look the command history of the target
+* Try to look for passwords saved in notes
 </div></div>
 
 <hr class="sr">
 
-## After
+## Post-exploitation
 
 <div class="row row-cols-md-2 mt-4"><div>
 
 * Cleanup logs
 
 * Mess with timestamp/... to complicate forensics
-</div><div>
 
 * Leave a backdoor
 
 * Edit software configurations / users permissions
 
 * Use this machine as a starting point. Scan the network to discover more vulnerable machines.
+</div><div>
+
+* Steal (more?) private information <small>(files, photos, emails, authentication tokens, source code...)</small>
+
+* defacing the public website / redirect to a malicious website
 </div></div>

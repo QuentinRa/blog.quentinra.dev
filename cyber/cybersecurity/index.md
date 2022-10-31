@@ -62,6 +62,8 @@ Knowledgeable about
 <tr><td></td>
 <td>
 
+* **Rules of Engagement (ROE)**: agreement between a penetration tester and the system owner, defining the scope (servers), and the rules (techniques allowed). Everything outside the scope is illegal (ex: [SANS ROE template](https://sansorg.egnyte.com/dl/bF4I3yCcnt/)). 
+
 </td>
 <td>
 
@@ -89,7 +91,9 @@ Knowledgeable about
 </td></tr>
 </tbody></table>
 
-> And, obviously, there are [**Black hats**](https://www.blackhat.com/) (hackers).
+> There are **White hats**: hackers that follow the rules, and try to benefit others<br>
+> There are **Grey hats**: hackers that are usually not following the rules, but often benefit others <small>(take down malicious website)</small><br>
+> And, obviously, there are [**Black hats**](https://www.blackhat.com/) (criminals/hackers).
 
 <hr class="sr">
 
