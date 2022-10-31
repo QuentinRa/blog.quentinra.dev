@@ -1,7 +1,7 @@
 Next
 => Cyberattacks https://en.wikipedia.org/wiki/List_of_cyberattacks + https://en.wikipedia.org/wiki/Petya_and_NotPetya
 => MITM (https://snyk.io/learn/man-in-the-middle-attack/
-=> Hide things in images: [Steganography](https://0xrick.github.io/lists/stego/).
+=> https://github.com/ReFirmLabs/binwalk
 
 Learn
 https://www.rapid7.com/fundamentals/

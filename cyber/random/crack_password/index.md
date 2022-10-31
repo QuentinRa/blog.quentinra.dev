@@ -103,7 +103,7 @@ Hashcat store cracked hash in a Potfile: `~/.hashcat/hashcat.potfile`.
 
 <div class="row row-cols-md-2"><div>
 
-You can use <small>(Jumbo)</small> [**John the Ripper**](https://github.com/openwall/john) (6.9 ⭐) to try to bruteforce a hash. Put the hash in a file, for instance "hash".
+You can use [**John the Ripper**](https://github.com/openwall/john) (<small>Jumbo</small>, 6.9 ⭐) to try to bruteforce a hash. Put the hash in a file, for instance "hash".
 
 You can use the default wordlist, and let john guess the format. Unfortunately, it's more efficient to provide both arguments, especially the format.
 

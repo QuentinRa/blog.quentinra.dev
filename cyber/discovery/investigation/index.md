@@ -53,7 +53,7 @@ PDF version:    1.7
 ```
 </div><div>
 
-**An image**: use `exiftool`, or an online tool such as [jimpl](https://jimpl.com/) / [IMV](https://www.geekyhumans.com/tools/image-metadata-viewer).
+**An image**: use `exiftool`, or an online tool such as [jimpl](https://jimpl.com/) / [IMV](https://www.geekyhumans.com/tools/image-metadata-viewer). You can view stuff like the GPS coordinates, the camera/device model...
 
 ```bash
 $ sudo apt install libimage-exiftool-perl
@@ -69,7 +69,7 @@ Software                        : www.inkscape.org
 [...]
 ```
 
-You can view stuff like the GPS coordinates, the camera/device model...
+> Hide things in images: [Steganography](https://0xrick.github.io/lists/stego/)
 </div></div>
 
 <hr class="sl">

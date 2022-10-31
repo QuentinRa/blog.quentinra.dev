@@ -6,3 +6,4 @@
 * https://github.com/topics/osint (4.2)
 * https://github.com/jivoi/awesome-osint
 * [spiderfoot](https://github.com/smicallef/spiderfoot) (8.7k ⭐)
+* https://github.com/mgp25/OSINT-Tools
