@@ -50,14 +50,14 @@
         "hidden": false
       },
       {
-        "tag": "server/web/_tools/fuzz/index.md",
+        "tag": "server/web/fuzz/index.md",
         "name": "Fuzzing / Fuzz",
         "desc": "",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "server/web/bruteforce_forms.md",
+        "tag": "server/web/bruteforce/forms.md",
         "name": "Bruteforce forms",
         "desc": "",
         "icon": null,
@@ -71,7 +71,7 @@
         "hidden": false
       },
       {
-        "tag": "server/web/_tools/burp/index.md",
+        "tag": "server/web/burpsuite/index.md",
         "name": "Burp Suite",
         "desc": "",
         "icon": "<i class=\"bi bi-tools\"></i>",

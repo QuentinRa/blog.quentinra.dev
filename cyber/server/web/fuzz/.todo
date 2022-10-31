@@ -1,0 +1,2 @@
+ffuf -w wordlist -H "Host: FUZZ.example.com" -u example.com
+ffuf -w wordlist -u FUZZ.example.com
