@@ -31,13 +31,10 @@ For a penetration tester, it's more something like that
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-* Learn more about the company, programming languages, software...
+* Learn more about the company, the programming languages, and software that they use... 🧑‍💻
 
-* Find targets that may be used for an attack, for instance, a server used with a subdomain for another purpose
+* Find your target, for instance, a subdomain owned by the company for another purpose, that is hosted on the network that their main website 🐟
 </div><div>
-
-...
-
 </div></div>
 
 <hr class="sr">
@@ -46,13 +43,13 @@ For a penetration tester, it's more something like that
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-* Find running services, their version...
+* Find running services, their version... 🧭
 
-* Find the running OS
+* Find the running OS 🖥️
 
 </div><div>
 
-* If there is a website, check the web server section to find what you should look for.
+* If there is a website, check the web server section 🗺️.
   * Look for a Framework (if any)
   * Try to do **forced browsing**
   * Try to find **logic flaws**
@@ -63,14 +60,14 @@ For a penetration tester, it's more something like that
 
 ## Exploitation
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2 mt-4"><div>
 
-* Try to find vulnerabilities in running services
+* Try to find vulnerabilities in running services 🎯
 
-* Try to bruteforce credentials on running services
+* Try to bruteforce credentials on running services 🔏
 </div><div>
 
-* Try to exploit the website
+* Try to exploit the website 🕵️
 </div></div>
 
 <hr class="sl">
@@ -81,7 +78,7 @@ For a penetration tester, it's more something like that
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-**Find more infos about the computer** 🗺️
+**Find more infos about the computer** 🧭️
 
 If you can, try to see the computer as its users do, because you may find some interesting stuff.
 
@@ -106,18 +103,18 @@ As you can't do much as a regular user, that's the main goal when getting inside
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-* Cleanup logs
+* Cleanup logs 🧹
 
-* Mess with timestamp/... to complicate forensics
+* Mess with timestamp/... to complicate forensics 🌋
 
-* Leave a backdoor
+* Leave a backdoor 🚪
 
-* Edit software configurations / users permissions
+* Edit software configurations / users permissions 🧨
 
-* Use this machine as a starting point. Scan the network to discover more vulnerable machines.
+* Use this machine as a starting point. Scan the network to discover more vulnerable machines. 🔓
 </div><div>
 
-* Steal (more?) private information <small>(files, photos, emails, authentication tokens, source code...)</small>
+* Steal (more?) private information <small>(files, photos, emails, authentication tokens, source code...)</small> 💰
 
-* defacing the public website / redirect to a malicious website
+* defacing the public website / redirect to a malicious website 🙊
 </div></div>

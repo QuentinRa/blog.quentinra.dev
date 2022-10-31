@@ -39,6 +39,13 @@
         "desc": "",
         "icon": null,
         "hidden": false
+      },
+      {
+        "tag": "discovery/subdomains/index.md",
+        "name": "Subdomains",
+        "desc": "",
+        "icon": null,
+        "hidden": false
       }
     ],
     "Server": [
