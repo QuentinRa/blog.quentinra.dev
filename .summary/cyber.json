@@ -39,13 +39,6 @@
         "desc": "",
         "icon": null,
         "hidden": false
-      },
-      {
-        "tag": "discovery/subdomains/index.md",
-        "name": "Subdomains",
-        "desc": "",
-        "icon": null,
-        "hidden": false
       }
     ],
     "Server": [
@@ -57,8 +50,22 @@
         "hidden": false
       },
       {
+        "tag": "server/web/_tools/fuzz/index.md",
+        "name": "Fuzzing / Fuzz",
+        "desc": "",
+        "icon": null,
+        "hidden": false
+      },
+      {
         "tag": "server/web/bruteforce_forms.md",
         "name": "Bruteforce forms",
+        "desc": "",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "discovery/subdomains/index.md",
+        "name": "Subdomains",
         "desc": "",
         "icon": null,
         "hidden": false
