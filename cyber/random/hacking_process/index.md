@@ -77,6 +77,8 @@ For a penetration tester, it's more something like that
 
 ## Privilege Escalation
 
+*You can escalate horizontally (use another user) and vertically (get a higher level of privileges)*
+
 <div class="row row-cols-md-2 mt-4"><div>
 
 **Find more infos about the computer** 🗺️

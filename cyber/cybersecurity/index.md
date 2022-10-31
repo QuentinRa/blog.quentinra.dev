@@ -62,7 +62,8 @@ Knowledgeable about
 <tr><td></td>
 <td>
 
-* **Rules of Engagement (ROE)**: agreement between a penetration tester and the system owner, defining the scope (servers), and the rules (techniques allowed). Everything outside the scope is illegal (ex: [SANS ROE template](https://sansorg.egnyte.com/dl/bF4I3yCcnt/)). 
+* **Rules of Engagement (ROE)**: agreement between a penetration tester and the system owner, defining the scope (servers), and the rules (techniques allowed). Everything outside the scope is illegal (ex: [SANS ROE template](https://sansorg.egnyte.com/dl/bF4I3yCcnt/)).
+* You can have no knowledge about the target <small>(black box)</small>, a partial knowledge <small>(grey box)</small>, or a complete knowledge <small>(white box)</small>. According to your knowlege of the application, you will test different things.
 
 </td>
 <td>
@@ -71,6 +72,8 @@ Knowledgeable about
 * **Security Operation Center** (SOC): a team of cybersecurity professionals working 24/7 <small>(detect unusual activity, vulnerabilities, intrusions, violations, training/awareness)</small>. They are using the firewall/dns/DHCP/... logs, Network security monitoring (NSM), and they might use a SIEM.
 * **Threat Intelligence**: dig information about actual and potential enemies, and prepare in case they attack you.
 * **Threat hunting**: if a machine is suspected to have been intruded, they start hunting to confirm they assumption.
+* **Threat modelling**: review, and improve the security measures (STRIDE, PASTA)
+* **Defence in Depth**: try to delay the attack with multiple varied layers of security, with the aim to stopping the hacker momentum
 </td></tr>
 
 <tr><td>Jobs</td>
@@ -84,10 +87,10 @@ Knowledgeable about
 <td>
 
 * **Security Analyst**: Analyse, and remediate to issues. Develop security plans to keep the company safe.
-* **Incident responder**: determine how a cyberattack is handled, see [Incident Handling Guide by the NIST](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf).
+* **Incident responder**: determine how a cyberattack is handled, see [Incident Handling Guide by the NIST](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf), [OSSTMM](https://www.isecom.org/OSSTMM.3.pdf), [NIST Cybersecurity Framework 1.1](https://www.nist.gov/cyberframework), [NCSC CAF](https://www.ncsc.gov.uk/collection/caf/caf-principles-and-guidance), and [OWASP](https://owasp.org/).
 * **Digital Forensics**: investigate attacks <small>(file system, memory, logs)</small>, and policies violations.
 * **Malware Analyst**/**Reverse-engineer**: analyse malware, statically <small>(read the code)</small>, and dynamically <small>(see what it does)</small>.
-* **Security researcher**: Linux, Hashing...
+* **Security researcher**: research Linux, hashing algorithms...
 </td></tr>
 </tbody></table>
 
@@ -105,6 +108,9 @@ Knowledgeable about
 * **Vulnerability**/**weakness**: a failure/flaw in a system
 * **Exploits**: code that make use of a vulnerability to gain access to a machine, install a malware, steal data...
 * **Social engineering**: hackers manipulate someone, to make them compromise the system, or do something that benefit them.
+* **Incident**: something unexpect occurred, which could be an intrusion
+
+<br>
 
 A look at cyberattacks categories ([source](https://www.malwarebytes.com/))
 
@@ -125,12 +131,20 @@ A look at cyberattacks categories ([source](https://www.malwarebytes.com/))
 
 <br>
 
+* **CIA**: Confidentiality <small>(only allowed persons can read it)</small>, Integrity <small>(not tampered)</small>, Availability <small>(available when needed)</small>. The opposite is DAD <small>(Disclosure, Alternation, and Destruction)</small>.
+* **Principle of the least privileges**: based on the role, and the data being shared.
+  * Privileged Identity Management (PIM): from organisation role to system role
+  * Privileged Access Management (PAM): manage the role that a privileged user has.
+  * Models: Bell-LaPadula, Biba Model
+
+<br>
+
 * **Intrusion Detection System** (IDS): a system detecting intrusions.
 * **Intrusion Prevention System** (IPS): a system blocking detected intrusions.
 * **Endpoint Detection and Response** (EDS)
 * **Deceptive security**
-* Virtual Private Network (VPN): it ensures both integrity <small>(not tampered)</small>, and confidentiality <small>(can't read it)</small> of the network traffic.
-* Host firewall: a program shipped with the Operating System to filter packets as firewall do
+* **Virtual Private Network** (VPN): it ensures both integrity <small>(not tampered)</small>, and confidentiality <small>(can't read it)</small> of the network traffic.
+* **Host firewall**: a program shipped with the Operating System to filter packets as firewall do
 </div></div>
 
 
