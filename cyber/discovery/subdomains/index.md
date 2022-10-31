@@ -25,3 +25,72 @@ fierce-hostlist.txt                  sortedcombined-knock-dnsrecon-fierce-reconn
 ```
 
 </div></div>
+
+<hr class="sl">
+
+## Automated
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+[DNSRecon](https://github.com/darkoperator/dnsrecon) (2k ⭐) is a Python script that can be used to bruteforce DNS, and check DNS/NS records.
+
+```bash
+$ dnsrecon -d URL -t type
+$ dnsrecon -d URL -D wordlist -t type
+```
+
+The type could be 
+
+* `brt`: bruteforce using a dictionary
+* `std`: NS, A/AAAA, MX...
+* `bing`: test bing
+* `yand`: test Yandex
+* `rvl`: reverse lookup
+* `crt`: test [crt.sh](https://crt.sh/)
+* ...
+</div><div>
+
+[Sublist3r](https://github.com/aboul3la/Sublist3r) (7.7k ⭐) is a Python script to enumerate subdomains of websites using OSINT.
+
+You can use wfuzz to bruteforce a subdomain
+
+```bash
+wfuzz -w wordlist FUZZ.example.com
+```
+</div></div>
+
+<hr class="sr">
+
+## OSINT
+
+<div class="row row-cols-md-2"><div>
+
+You can use [crt.sh](https://crt.sh/) to search for certificated issued for a domain name. An alternative would be [ct search](https://ui.ctsearch.entrust.com/ui/ctsearchui)
+</div><div>
+
+You can also use your Google Hacking/Dorking skills with
+
+```none
+-site:example.com site:*.example.com
+```
+</div></div>
+
+<hr class="sl">
+
+## Virtual Hosts
+
+<div class="row row-cols-md-2"><div>
+
+A server can serve multiple domains using what we call virtual hosts. When a request is received, the header "HOST" allow the server to know which domain name was queried, and send back the appropriate resource.
+
+It's possible for subdomains records to be only available locally, on the server <small>(`/etc/hosts`, or `c:\windows\system32\drivers\etc\hosts`)</small>, usually for websites that aren't meant to be discovered/available to the public.
+</div><div>
+
+The server will process as usual, whether the subdomain is public or not, if someone request it, and there is indeed such a domain name, then it will be served to the user.
+
+You can try using ffuf to bruteforce such virtual hosts. You may have to filter responses, as every response having the same size for instance, are most likely the same answer (failure).
+
+```bash
+ffuf -w wordlist -H "Host: FUZZ.example.com" -u example.com
+```
+</div></div>
