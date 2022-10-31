@@ -4,6 +4,8 @@
 [![startingoutincybersec](../_badges/startingoutincybersec.svg)](https://tryhackme.com/room/startingoutincybersec)
 [![defensivesecurity](../_badges/defensivesecurity.svg)](https://tryhackme.com/room/defensivesecurity)
 [![careersincyber](../_badges/careersincyber.svg)](https://tryhackme.com/room/careersincyber)
+[![pentestingfundamentals](../_badges/pentestingfundamentals.svg)](https://tryhackme.com/room/pentestingfundamentals)
+[![principlesofsecurity](../_badges/principlesofsecurity.svg)](https://tryhackme.com/room/principlesofsecurity)
 
 A lot of stuff to get started in cybersecurity, including websites to learn, practice, find news, look for news, along with CVE lookup, and websites to check if your credentials leaked, or stuff like that. 
 
@@ -63,9 +65,10 @@ Knowledgeable about
 </td>
 <td>
 
-* **Security Operation Center** (SOC): a team of cybersecurity professionals <small>(detect unusual activity, weakness, intrusions, violations)</small>
+* **SIEM**: A Security Information and Event Management system is combine information from various places in one interface <small>(login attempts...)</small>.
+* **Security Operation Center** (SOC): a team of cybersecurity professionals working 24/7 <small>(detect unusual activity, vulnerabilities, intrusions, violations, training/awareness)</small>. They are using the firewall/dns/DHCP/... logs, Network security monitoring (NSM), and they might use a SIEM.
 * **Threat Intelligence**: dig information about actual and potential enemies, and prepare in case they attack you.
-* A Security Information and Event Management (**SIEM**) system is combine information from various places in one interface <small>(login attempts...)</small>.
+* **Threat hunting**: if a machine is suspected to have been intruded, they start hunting to confirm they assumption.
 </td></tr>
 
 <tr><td>Jobs</td>
@@ -118,9 +121,12 @@ A look at cyberattacks categories ([source](https://www.malwarebytes.com/))
 
 <br>
 
-* **Intrusion Detection System** (IDS): a system detecting intrusions...
+* **Intrusion Detection System** (IDS): a system detecting intrusions.
+* **Intrusion Prevention System** (IPS): a system blocking detected intrusions.
 * **Endpoint Detection and Response** (EDS)
 * **Deceptive security**
+* Virtual Private Network (VPN): it ensures both integrity <small>(not tampered)</small>, and confidentiality <small>(can't read it)</small> of the network traffic.
+* Host firewall: a program shipped with the Operating System to filter packets as firewall do
 </div></div>
 
 

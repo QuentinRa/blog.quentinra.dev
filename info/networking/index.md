@@ -111,9 +111,9 @@ For instance, if you are using Ethernet, then you will most likely have a virtua
 If you are using a vpn, you may see virtual network interfaces such as `tun0` <small>(or tunSomething)</small>.
 </div><div>
 
-For application on a local machine to communicate with each other, there is a special virtual network called **localhost** (127.0.0.1), which is associated with the virtual network interface  **lo** (loop back), allowing local application to locally transfer data over this virtual network.
+For application on a local machine to communicate with each other, there is a special virtual network called **localhost** (127.0.0.1), which is associated with the virtual network interface  **lo** (loop back), allowing local applications to locally transfer data over this virtual network.
 
-> As a machine may have multiple network cards, or a network card have connections to multiple networks, you have to determine which interface will be used for each communication.
+> As a machine may have multiple network cards, or a network card may be connected to multiple networks, you have to determine which interface will be used for each communication.
 </div></div>
 
 <hr class="sr">
@@ -122,15 +122,15 @@ For application on a local machine to communicate with each other, there is a sp
 
 <div class="row row-cols-md-2"><div>
 
-A port is something virtual associated with a protocol. By using that, we know that if something is coming to the port XXX, then it's using the protocol YYY. 
+A port is something virtual associated with a protocol. By using that, we know that if a message enter via the port XXX, then it's using the protocol YYY. 
 
 * There are 65535 available ports
 * There are 1024 are standard ports
 
-> Ports are not set in stone, for security-related concerns, they are usually changed.
+> The protocol used by a port are not set in stone! For security-related concerns, they are usually changed, and port are protected by something called a firewall, to hopefully prevent unauthorized users to know which protocol is run by each port. Ports may be closed too.
 </div><div>
 
-There a TCP ports, and UDP ports. The most well-known one being TCP ports. Here is the list of [TCP/UDP ports](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers).
+There are TCP ports, and UDP ports. The former are the most well-known ones. Here is the list of [TCP/UDP ports](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers).
 
 * **21**: FTP
 * **22**: SSH, SFTP, SCP
@@ -150,7 +150,7 @@ There a TCP ports, and UDP ports. The most well-known one being TCP ports. Here 
 A **media access control address (MAC address)** is a **unique (physical) address** associated with the network card (`carte réseau`) of the machine uses to connect itself to the internet.
 
 * Can be [spoofed](https://en.wikipedia.org/wiki/MAC_spoofing) <small>(some hacker can usurp your MAC)</small>
-* An IP address changes when a computer is connecting from another network. That's why we need a MAC address.
+* The IP identify our machine within a network, but if we move to another network, then we will receive a new IP address. That's why we need something that do not change such as the MAC address.
 
 </div><div>
 

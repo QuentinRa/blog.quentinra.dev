@@ -1,8 +1,8 @@
 # Operating System
 
-This course is a gathering of general knowledge shared between most, if not all, Linux-based distributions such as Debian, Ubuntu, Fedora, or Arch Linux... Most Linux-based distributions are free, open-source, light, secure, and performant. As the source code is public, anyone can improve it, modify it, and know how the underlying system is doing its job.
+This course is a gathering of general knowledge shared between most, if not all, Linux distributions (distros) such as Debian, Ubuntu, Fedora, or Arch Linux... Most of them are free, open-source, light, secure, and performant. As the source code is public, anyone can improve it, modify it, and know how the underlying system is doing its job, or a list it was supposed to be like that. The Operating System (OS) is the one connecting the hardware and the applications running on your computer.
 
-> **Note**: Linux-based distributions will be referred to as Linux. GNU/Linux will be referred to as Linux too. Let's keep things simple, and tidy.
+> **Note**: Linux is actually the name of the Kernel, while GNU/Linux is the operating system. To reduce complexity, Linux distributions may be referred to as distros, and GNU/Linux, will be referred as Linux, as Wikipedia do. Let's keep things simple, and tidy.
 
 <hr class="sl">
 
