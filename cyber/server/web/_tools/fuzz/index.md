@@ -20,3 +20,53 @@ The second is a **URL**. For instance, `example.com`. Fuzzers will allow you to 
 * Find Insecure Direct Object References? `example.com?id=FUZZ`
 * ...
 </div></div>
+
+<hr class="sl">
+
+## ffuf
+
+<div class="row row-cols-md-2"><div>
+
+Nothing aside from this [ffuf](https://github.com/ffuf/ffuf) GitHub link.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sr">
+
+## wfuzz
+
+<div class="row row-cols-md-2"><div>
+
+[wfuzz](https://github.com/xmendez/wfuzz) (4.7k ⭐) is a web fuzzer in Python.
+
+Example
+
+```bash
+$ wfuzz -w wordlist URL/account?id=FUZZ
+```
+
+You can add some verbose, if you want to.
+
+```bash
+$ wfuzz -w wordlist -u URL/FUZZ -v
+```
+
+</div><div>
+
+You can filter responses by code. `-h` will hide a response based on a criteria... And, `-s`, which is working the same, will do the opposite, and only show a response matching a criteria.
+
+* `c code`: show/hide responses with this return code
+* `l n`: show/hide responses with this $n$ number of lines
+* `w n`: show/hide responses with this $n$ number of words
+* `c n`: show/hide responses with this $n$ number of characters
+* `s regex`: show/hide responses containing the regex
+
+```bash
+# ignore 404,500
+$ wfuzz -w wordlist --hc 404,500 xxx.tld/account?id=FUZZ
+# show only 200
+$ wfuzz -w wordlist --sc 200 xxx.tld/account?id=FUZZ
+```
+</div></div>

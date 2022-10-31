@@ -2,21 +2,15 @@
 
 <div class="row row-cols-md-2"><div>
 
-This practice of using bruteforce on GET/POST Forms, is usually called "web fuzzing". Basically, every request made by a client to the server is transferring a list of `key=value` such as `username=toto&password=toto`. The art of injecting data is what we call fuzzing.
-
-> **Note**: BurpSuite can be used too, see the Intruder tab.<br>
-> **Note**: FeroxBuster users should take a look at the [feroxfuzz](https://github.com/epi052/feroxfuzz/) library.
-
-📌 **Insecure Direct Object References** (BrokenAccessControl), is a failure in which we can guess given a URL how to access other elements, and if we change the URL <small>(id=10$\to$id=11)</small>, we can indeed access them.
-
+...
 </div><div>
 
-Fuzzing involve taking values from a wordlist, and testing one by one these values in the request. On Kali, you can use these two commands to find where wordlists are stored:
+Wordlists
 
-* `wordlists`
-* `seclists` (may have to be installed, wordlists from [SecLists](https://github.com/danielmiessler/SecLists))
+* package wordlist: ???
+* package seclists: ???
 
-Finally, much like in forced browsing, you will have to private an URL
+Most commands asks for a URL, which could be
 
 * `http://xxx.yyy`
 * `http://xxx.yyy:80`
@@ -27,56 +21,36 @@ Finally, much like in forced browsing, you will have to private an URL
 
 <hr class="sl">
 
-## Bruteforce using wfuzz
+## Bruteforce using ffuf
 
 <div class="row row-cols-md-2"><div>
 
-[wfuzz](https://github.com/xmendez/wfuzz) (4.7k ⭐). FUZZ is pretty simple: there is a wordlist, and you add a word FUZZ in the URL/request, and wfuzz will replace, one by one, the word FUZZ with every entry in the wordlist.
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sr">
+
+## Bruteforce using wfuzz
+
+[See fuzzing/wfuzz for more information](_tools/fuzz/index.md#wfuzz)
+
+<div class="row row-cols-md-2"><div>
 
 Try to bruteforce a GET form.
 
 ```bash
 $ wfuzz -w wordlist URL/account?id=FUZZ
 ```
+</div><div>
 
 Try to bruteforce a POST form.
 
 ```bash
 $ wfuzz -w wordlist -d "username=admin&pass=FUZZ" URL/login.php
 ```
-
-Add some verbose, if you want to.
-
-```bash
-$ wfuzz -w wordlist -u URL/FUZZ -v
-```
-
-</div><div>
-
-You can filter responses by code. `-h` will hide a response based on a criteria... And, `-s`, which is working the same, will do the opposite, and only show a response matching a criteria. 
-
-* `c code`: show/hide responses with this return code
-* `l n`: show/hide responses with this $n$ number of lines
-* `w n`: show/hide responses with this $n$ number of words
-* `c n`: show/hide responses with this $n$ number of characters
-* `s regex`: show/hide responses containing the regex
-
-```bash
-# ignore 404,500
-$ wfuzz -w wordlist --hc 404,500 xxx.tld/account?id=FUZZ
-# show only 200
-$ wfuzz -w wordlist --sc 200 xxx.tld/account?id=FUZZ
-```
-</div></div>
-
-<hr class="sr">
-
-## Bruteforce using ffuf
-
-<div class="row row-cols-md-2"><div>
-
-Nothing aside from this [ffuf](https://github.com/ffuf/ffuf) GitHub link.
-</div><div>
 </div></div>
 
 <hr class="sl">
