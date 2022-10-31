@@ -15,7 +15,7 @@ Wordlists
 
 ## Bruteforce using ffuf
 
-[See fuzzing/wfuzz for more information](_tools/fuzz/index.md#wfuzz)
+[See fuzzing/ffuf for more information](../fuzz/index.md#ffuf---fuzz-faster-u-fool)
 
 <div class="row row-cols-md-2"><div>
 
@@ -29,8 +29,6 @@ $ wfuzz -w wordlist -u URL/account?id=FUZZ
 Try to bruteforce a POST form.
 
 ```bash
-# todo: check
-$ wfuzz -w wordlist -X POST -d "username=admin&pass=FUZZ" URL/login.php
 $ wfuzz -w wordlist -X POST -d "username=admin&pass=FUZZ" URL/login.php -H "Content-Type: application/x-www-form-urlencoded"
 ```
 </div></div>
@@ -39,7 +37,7 @@ $ wfuzz -w wordlist -X POST -d "username=admin&pass=FUZZ" URL/login.php -H "Cont
 
 ## Bruteforce using wfuzz
 
-[See fuzzing/wfuzz for more information](_tools/fuzz/index.md#wfuzz)
+[See fuzzing/wfuzz for more information](../fuzz/index.md#wfuzz---web-application-fuzzer)
 
 <div class="row row-cols-md-2"><div>
 

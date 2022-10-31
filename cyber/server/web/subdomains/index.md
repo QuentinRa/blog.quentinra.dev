@@ -52,7 +52,7 @@ The type could be
 
 [Sublist3r](https://github.com/aboul3la/Sublist3r) (7.7k ⭐) is a Python script to enumerate subdomains of websites using OSINT.
 
-You can use [ffuf/wfuzz](../../server/web/_tools/fuzz/index.md) to bruteforce a subdomain
+You can use [ffuf/wfuzz/...](../fuzz/index.md) to bruteforce a subdomain
 
 ```bash
 ffuf -w wordlist -u FUZZ.example.com

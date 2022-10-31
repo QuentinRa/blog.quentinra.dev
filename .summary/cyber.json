@@ -64,7 +64,7 @@
         "hidden": false
       },
       {
-        "tag": "discovery/subdomains/index.md",
+        "tag": "server/web/subdomains/index.md",
         "name": "Subdomains",
         "desc": "",
         "icon": null,

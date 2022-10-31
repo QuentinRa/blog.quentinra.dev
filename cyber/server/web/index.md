@@ -146,7 +146,7 @@ Forced browsing means using an automated tool in order to find hidden folders, a
 
 Most tools, namely **web scanners**, are taking
 
-* **a URL**: `http://xxx.yyy`, `http://xxx.yyy:80`, `127.0.0.1`, `127.0.0.1:80`
+* **a URL**: `http://xxx.yyy`, `https://xxx.yyy:80`, `127.0.0.1`, `127.0.0.1:80`
 * **a WordList**: on kali, use the command `wordlists` to find directories used to store wordlists. Alternatively, install the command `seclists` to have even more wordlists.
   * `/usr/share/wordlists/dirb/common.txt`
   * `/usr/share/wordlists/dirbuster/directory-list-2.3-small.txt`
@@ -202,18 +202,10 @@ $ dirsearch -u URL -e php,html
 ```
 </details>
 
-<details class="details-e">
-<summary>ffuz (8k ⭐ / Language: Go / not primary purpose)</summary>
-
-```bash
-# will replace FUZZ with every entry in common.txt
-$ ffuf -u URL/FUZZ -w wordlist
-```
-</details>
-
 Other tools that you may see in use
 
+* [ffuf/wfuzz/...](fuzz/index.md) (see web fuzzers)
 * [feroxbuster](https://github.com/epi052/feroxbuster) (3.3k ⭐, Rust)
-* [dirb](https://dirb.sourceforge.net/) <small>(debian: `apt install dirb`)</small>
+* [dirb](https://dirb.sourceforge.net/)
 * [DirBuster](https://github.com/KajanM/DirBuster) (63 ⭐)
 </div></div>
