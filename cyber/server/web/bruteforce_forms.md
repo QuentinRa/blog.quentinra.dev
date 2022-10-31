@@ -9,26 +9,30 @@ Wordlists
 
 * package wordlist: ???
 * package seclists: ???
-
-Most commands asks for a URL, which could be
-
-* `http://xxx.yyy`
-* `http://xxx.yyy:80`
-* `127.0.0.1`
-* `127.0.0.1:80`
-* ...
 </div></div>
 
 <hr class="sl">
 
 ## Bruteforce using ffuf
 
+[See fuzzing/wfuzz for more information](_tools/fuzz/index.md#wfuzz)
+
 <div class="row row-cols-md-2"><div>
 
-...
+Try to bruteforce a GET form.
+
+```bash
+$ wfuzz -w wordlist -u URL/account?id=FUZZ
+```
 </div><div>
 
-...
+Try to bruteforce a POST form.
+
+```bash
+# todo: check
+$ wfuzz -w wordlist -X POST -d "username=admin&pass=FUZZ" URL/login.php
+$ wfuzz -w wordlist -X POST -d "username=admin&pass=FUZZ" URL/login.php -H "Content-Type: application/x-www-form-urlencoded"
+```
 </div></div>
 
 <hr class="sr">

@@ -23,11 +23,11 @@ The second is a **URL**. For instance, `example.com`. Fuzzers will allow you to 
 
 <hr class="sl">
 
-## ffuf
+## ffuf - Fuzz Faster U Fool
 
 <div class="row row-cols-md-2"><div>
 
-Nothing aside from this [ffuf](https://github.com/ffuf/ffuf) GitHub link.
+Nothing aside from this [ffuf](https://github.com/ffuf/ffuf) (8.1k ⭐) GitHub link.
 </div><div>
 
 ...
@@ -35,7 +35,7 @@ Nothing aside from this [ffuf](https://github.com/ffuf/ffuf) GitHub link.
 
 <hr class="sr">
 
-## wfuzz
+## wfuzz - web (application) fuzzer
 
 <div class="row row-cols-md-2"><div>
 
