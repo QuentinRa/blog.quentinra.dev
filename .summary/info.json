@@ -39,6 +39,13 @@
         "desc": "Learn about protocols, network interfaces, ports, IPV4/IPV6, and models such as OSI, or TCP/IP.",
         "icon": "<i class=\"bi bi-hdd-network\"></i>",
         "hidden": false
+      },
+      {
+        "tag": "networking/protocols/index.md",
+        "name": "Protocols & services",
+        "desc": "Learn more about HTTP, SSH, FTP...",
+        "icon": null,
+        "hidden": false
       }
     ],
     "e2": [
