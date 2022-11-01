@@ -38,6 +38,44 @@
 * The server use a weak cryptographic algorithm
 </div></div>
 
+<hr class="sl">
+
+## Terminology
+
+<div class="row row-cols-md-2"><div>
+
+A URL is a suite of: a scheme (http/https), a username, a password, `@`, a domain, `:`, a port, a route, a query (`?`), and a fragment (`#`). Most parameters are options, and URLs you will use will mostly look like this
+
+```
+http://example.com
+http://example.com:80
+https://example.com
+https://example.com:443
+https://example.com/route/?query#fragment
+127.0.0.1
+127.0.0.1:80
+[...]
+```
+</div><div>
+
+Requests are using a method to send something to the server.
+
+* `GET`: get a resource
+* `POST`: upload a resource
+* `PUT`: update ONE field of a resource
+* `DELETE`: delete a resource
+* ...
+
+And a request has headers both set by the client, and the server, in order for each of them to send more information than just data:
+
+* `Set-cookie`: if the server want to create a cookie
+* `Host`: the server that the request is addressing
+* `Server:` (opt): name of the HTTP service, its version, and even the OS
+* ...
+
+The server will answer with an [HTTP response code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) according to how it could handle the request (200=OK, 301/303=redirected, 404=Not found, 500=Internal error...). 
+</div></div>
+
 <hr class="sr">
 
 ## Discovery of a website
