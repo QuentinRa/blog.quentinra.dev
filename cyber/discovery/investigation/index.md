@@ -189,3 +189,19 @@ $ nslookup -type=A example.com 1.1.1.1
 $ dig example.com -t A @1.1.1.1
 ```
 </div></div>
+
+<hr class="sr">
+
+## Shodan.io
+
+<div class="row row-cols-md-2"><div>
+
+[Shodan.io](https://www.shodan.io/) is a search engine indexing devices and their information such as the app running on it, the webserver (apache/...), the location, the ports open... And you can even see statistics, such as the top ports used with apache!
+
+> [Search Query Fundamentals](https://help.shodan.io/the-basics/search-query-fundamentals)
+</div><div>
+
+**Todo**
+
+* [THM Shodan](https://tryhackme.com/room/shodan)
+</div></div>

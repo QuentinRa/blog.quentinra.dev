@@ -255,15 +255,7 @@ Note that choosing a working payload could become a trial and error process due 
 
 <hr class="sep-both">
 
-## Recon
-
-* Shodan.io : a browser indexing devices and their information
-  * https://www.shodan.io/
-  * https://help.shodan.io/the-basics/search-query-fundamentals
-  * https://tryhackme.com/room/shodan
-  * can see the top ports for apache...
-
-----
+## Active
 
 * active reconnaissance activities
   * Connecting to one of the company servers such as HTTP, FTP, and SMTP. 

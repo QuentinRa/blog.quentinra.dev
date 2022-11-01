@@ -1,5 +1,7 @@
 # Host discovery
 
+[![activerecon](../../_badges/activerecon.svg)](https://tryhackme.com/room/activerecon)
+
 <div class="row row-cols-md-2"><div>
 
 * You can use `nmap` to
