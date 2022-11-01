@@ -168,3 +168,15 @@ If you can find employees on GitHub/..., you may find what language/frameworks t
 
 You may also look for personal websites/posts/interest of employees, because that may be an indicator too.
 </div></div>
+
+<hr class="sl">
+
+## Random
+
+<div class="row row-cols-md-2"><div>
+
+You can install an extension to make the target website believe that you are using another browser. Look for **User-Agent Switcher** extensions on Google. You can try them on [whatismybrowser](https://www.whatismybrowser.com/).
+</div><div>
+
+You may use a proxy as an intermediary for your requests. If you do, then you can use the **FoxyProxy extension** of your browser to easily swap between no proxy, and your proxies configurations.
+</div></div>

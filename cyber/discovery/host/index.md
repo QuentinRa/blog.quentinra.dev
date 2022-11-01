@@ -2,6 +2,8 @@
 
 [![activerecon](../../_badges/activerecon.svg)](https://tryhackme.com/room/activerecon)
 
+Host discovery is the core of the active reconnaissance (recon) activities. A hacker could other things such as getting in touch with employees, and trying to use social engineering to learn more about their company.
+
 <div class="row row-cols-md-2"><div>
 
 **Nmap**
@@ -21,6 +23,8 @@ Nessus is much like nmap, while providing a web interface, but a few differences
 
 Scans may be exported too, and imported in others tools, such as in `metasploit`.
 </div></div>
+
+> You may also use commands such as `ping` <small>(test if the host is up, and accepting ICMP packets)</small>, `traceroute/tracepath` which are using the TTL to know how much steps/hops it took for a packet to reach the target <small>(they increase the TTL by one, and try to get the intermediaries IPs as they respond that the packet was destroyed, but most aren't responding, so we got no information. Also, the route may change, as routers are always calculating the most optimal route)</small>.
 
 <hr class="sl">
 
