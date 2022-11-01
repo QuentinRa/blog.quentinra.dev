@@ -160,7 +160,7 @@ Infos on a Local Machine
 
 <hr class="sr">
 
-## Linux privilege escalation
+## Windows privilege escalation
 
 <div class="row row-cols-md-2"><div>
 
