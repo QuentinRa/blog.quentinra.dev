@@ -69,14 +69,15 @@ xato-net-10-million-usernames.txt
 Try to bruteforce a GET form.
 
 ```bash
-$ wfuzz -w wordlist -u URL/account?id=FUZZ
+$ ffuf -w wordlist -u URL/account?id=FUZZ
 ```
 </div><div>
 
 Try to bruteforce a POST form.
 
 ```bash
-$ wfuzz -w wordlist -X POST -d "username=admin&pass=FUZZ" URL/login.php
+$ ffuf -w wordlist -X POST -d "username=admin&pass=FUZZ" URL/login.php
+$ ffuf -w wordlist1:W1,wordlist2:W2 -X POST -d "username=W1&password=W2" -u URL
 ```
 </div></div>
 

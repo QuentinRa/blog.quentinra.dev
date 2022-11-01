@@ -50,6 +50,12 @@ $ ffuf -w wordlist -u URL -X POST -d "xxx=FUZZ"
 * `-H header_value`: a header, or a list of headers comma separated
 * `-X method`: the method used (GET/POST..;). Default: GET.
 * `-d payload`: POST payload
+
+You can use multiple wordlists, in such case, you won't use FUZZ, but your own keyword, such as W1/W2.
+
+```bash
+$ ffuf -w wordlist1:W1,wordlist2:W2 -u URL?w1=W1&w2=W2 [...]
+```
 </div><div>
 
 You will most likely want to only show some answer, or filter=hide some answers, based on a criteria. A filter switch is starting with `-f`, while a show switch is starting with `-m`.

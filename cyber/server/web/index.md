@@ -56,7 +56,6 @@ https://example.com/route/?query#fragment
 127.0.0.1:80
 [...]
 ```
-</div><div>
 
 Requests are using a method to send something to the server.
 
@@ -65,6 +64,7 @@ Requests are using a method to send something to the server.
 * `PUT`: update ONE field of a resource
 * `DELETE`: delete a resource
 * ...
+</div><div>
 
 And a request has headers both set by the client, and the server, in order for each of them to send more information than just data:
 
@@ -73,7 +73,13 @@ And a request has headers both set by the client, and the server, in order for e
 * `Server:` (opt): name of the HTTP service, its version, and even the OS
 * ...
 
-The server will answer with an [HTTP response code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) according to how it could handle the request (200=OK, 301/303=redirected, 404=Not found, 500=Internal error...). 
+The server will answer with an [HTTP response code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) according to how it could handle the request (200=OK, 301/303=redirected, 404=Not found, 500=Internal error...).
+
+**Random**
+
+* Web Application Firewall (WAF): protect web apps against DDOS/..., and analyse/limit-rate traffic from bots.
+* Content Delivery Networks (CDN): servers that are used to store static resources of a website. When a website needs a resource, the nearest CDN server is used, allowing a faster response.
+* Load Balancers: interface between clients and server, distributing the load among the available servers using algorithms such as round-robin <small>(in turn)</small>, or weighted <small>(is server busy?)</small>. There are periodic check to ensure that servers are still online, and if there is no response, a server is considered down until proven otherwise.
 </div></div>
 
 <hr class="sr">
@@ -91,6 +97,12 @@ The server will answer with an [HTTP response code](https://developer.mozilla.or
 
 <br>
 
+**Look for logic flaws**
+
+A logic flaw is when a programmer is thinking that a user will do something, such as visiting page in a determined order, or submitting an email in an "email input field", and do no check, or not properly check, for those that take a path different than intended.
+
+<br>
+
 **Look for frameworks** [See frameworks](frameworks/index.md)
 
 Most developers are using a framework, which is a sort of box of utilities to make a website more easily.
@@ -101,7 +113,7 @@ Most developers are using a framework, which is a sort of box of utilities to ma
 
 You may the dev console network tab to analyse requests, and responses send to the server. Once you click on a request, there are multiple tabs, for the request, the response...
 
-Some misconfigured servers are for instance, sending the web service name <small>(nginx, apache)</small>, and sometimes even the version.
+Some misconfigured servers are for instance, sending the web service name <small>(Nginx, Apache, IIS, Node.js)</small>, and sometimes even the version.
 
 <br>
 
