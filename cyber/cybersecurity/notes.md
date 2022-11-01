@@ -110,4 +110,29 @@ Servers implementing these protocols are subject to different kinds of attacks. 
     * The server reply that it will use encryption
   * DOT (DNS Over TLS)
 * Password Attack (Authentication Attack)
-* Vulnerabilities
+  * hydra -d, for debugging
+  * Mitigations: https://tryhackme.com/room/protocolsandservers2
+
+--- https://tryhackme.com/room/vulnerabilities101
+
+vulnerabilities = weakness or flaw.  five main categories of vulnerabilities
+
+* Operating System
+* (Mis)Configuration-based
+  * Version Disclosure
+* Weak or Default Credentials
+* Application Logic
+* Human-Factor
+
+Not all vulnerabilities are exploitable.
+
+*  the popular Common Vulnerability Scoring System (CVSS, 2005, free+opens-source) awards points to a vulnerability based upon its features, availability, and reproducibility. It takes into account the impact on the CIA triad, the ease of use, and the existence of exploits. https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator
+* Vulnerability Priority Rating (VPR): modern, based on the risks to an org
+
+* “Common Vulnerabilities and Exposures”
+* https://nvd.nist.gov/vuln/full-listing
+
+Why they're worthy of learning about
+How are vulnerabilities rated
+Databases for vulnerability research
+A showcase of how vulnerability research is used on ACKme's engagement
