@@ -57,3 +57,24 @@ $ ./enum4linux.pl <options> <ip>
 
 * take a request captured in the Proxy, edit it, and send the same request repeatedly as many times as we wish
 * tabs per request
+
+<hr class="sep-both">
+
+# xxx
+
+Sending a mail involves a Mail Submission Agent (MSA) to send the mails to someone who can send it, a Mail Transfer Agent, which will send it to the Mail Delivery Agent, that will achieve it to the other Mail User Agent. MTA+MTA is common.
+
+* Simple Mail Transfer Protocol (SMTP): use plaintext. port 25.
+  * helo hostname
+  * mail from:
+  * rcpt to:
+  * data
+    * subject:
+    * <CR>.<CR>
+* POP3/IMAP are protocols to download mails from a MDA
+  * Post Office Protocol version 3 (POP3, 110): USER/PASS to the server. STAT to find the number of mails, and the size of the mailbox. LIST to list new messages. RETR 1 to retrieve the "1rst" one. plaintext. Email is deleted once downloaded (default), but you would lose track or read/unread.
+  * Internet Message Access Protocol (IMAP) - 143: LOGIN username password. Synchronisation: if you read something, then the status is updated on the server.
+    * c1 LIST "" "*" (list emails in any folder)
+    * c2 EXAMINE INBOX
+    * c3 LOGOUT
+    * Send as clear text
