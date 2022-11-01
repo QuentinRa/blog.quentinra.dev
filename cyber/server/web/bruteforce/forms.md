@@ -56,6 +56,8 @@ xato-net-10-million-usernames.txt
 ```
 </div></div>
 
+> CTF are usually using `/usr/share/wordlists/rockyou.txt`, and a manually created list of usernames if needed.
+
 <hr class="sr">
 
 ## Bruteforce using ffuf

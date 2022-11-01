@@ -147,6 +147,7 @@ A look at cyberattacks categories ([source](https://www.malwarebytes.com/))
 * **Host firewall**: a program shipped with the Operating System to filter packets as firewall do
 </div></div>
 
+> **Random**: most CTF challenges use the infamous rockyou.txt wordlist of passwords <small>(from a data breach of rockyou.com in 2009)</small>, through they were most likely not user passwords.
 
 <hr class="sl">
 

@@ -8,19 +8,24 @@
 
 Almost all the time, password are **hashed**. It means that some "clear text" is passed to a one-way function that returns (=digest) a hash. One-way means that you can't get back the password from the hash. But, we can check if a password has generated a hash, so it's a useful, and a (supposedly) secure way of storing a password.
 
-Usually, hackers create **rainbow tables**, or dictionaries, in which hashes are mapped to passwords. This allows tools to easily give them back the password, if it's in the dictionary. This is possible, because, by default, the same password will generate the same hash. To avoid such attacks, hash functions are taking a parameter called **salt**, and only the same salt should produce the same hash.
-
-> The hash brute-forcing tools will usually take a wordlist with passwords to try. You could use rockyou.txt which is an infamous wordlist of passwords <small>(data breach of rockyou.com in 2009)</small>. See [SecLists](https://github.com/danielmiessler/SecLists/tree/master/Passwords). 
-
-> hash brute-forcing tools are (usually) using your CPU to computer results faster. On VM, they may be less efficient, as the VM itself is taking a lot of resources.
-</div><div>
-
 The most important use of hashing is for integrity. We generate a hash of file/..., and make it available with the file. Others can generate the hash of the file after they download it. If both are the same, then it means that the content was not tempered with.
 
 > Ex: HMAC.
-</div></div>
 
-> Some hashing functions are proven to be faulty, such as [SHA1](https://shattered.io/), or [MD5](https://www.mscs.dal.ca/~selinger/md5collision/), as two different password generated the same hash (hash collision), which means that using a different password that intended, you could log in into the victim account.
+Some hashing functions are proven to be faulty, such as [SHA1](https://shattered.io/), or [MD5](https://www.mscs.dal.ca/~selinger/md5collision/), as two different password generated the same hash (hash collision), which means that using a different password that intended, you could log in into the victim account.
+</div><div>
+
+Usually, hackers create **rainbow tables**, or dictionaries, in which hashes are mapped to passwords. This allows tools to easily give them back the password, if it's in the dictionary. This is possible, because, by default, the same password will generate the same hash. To avoid such attacks, hash functions are taking a parameter called **salt**, and only the same salt should produce the same hash.
+
+Hash brute-forcing tools are (usually) using your CPU to computer results faster. On VM, they may be less efficient, as the VM itself is taking a lot of resources.
+
+These tools will usually take a wordlist of passwords to try
+
+* package seclists 📌 ([SecLists](https://github.com/danielmiessler/SecLists/tree/master/Passwords))
+* package wordlists ([dirb](https://github.com/drtychai/wordlists/tree/master/dirb/others)...)
+
+> CTF are usually using `/usr/share/wordlists/rockyou.txt`.
+</div></div>
 
 <hr class="sl">
 
@@ -56,7 +61,7 @@ $ nth -f hash
 [haiti](https://github.com/noraj/haiti/) (309 ⭐). The program is giving you john (JtR), and the hashcat (hc) format 🚀!
 
 ```bash
-$ sudo gem install haiti-hash
+# sudo gem install haiti-hash
 $ haiti "some_hash"
 ```
 
@@ -132,7 +137,7 @@ You can provide a wordlist
 
 ```bash
 # on Kali
-$ john hash --format=raw-md4 --wordlist=/usr/share/wordlists/rockyou.txt
+$ john hash --format=raw-md4 --wordlist=wordlist
 # multiple lists
 $ cat wordlist1 wordlist2 wordlist3 > wordlist123
 $ john hash --format=raw-md4 --wordlist=wordlist123
@@ -190,7 +195,7 @@ $ john --config=FILE
 Modern Linux are using `sha512crypt`. Use name-that-hash, or any other tools to find the format if needed. The easy way is only passing the hash of the user you want
 
 ```bash
-$ john hash --format=sha512crypt --wordlist=/usr/share/wordlists/rockyou.txt
+$ john hash --format=sha512crypt --wordlist=wordlist
 ```
 </div><div>
 
@@ -198,7 +203,7 @@ But, there is a more complicated way. I think it's useful if using john "single"
 
 ```bash
 $ unshadow /path/to/stolen_passwd /path/to/stolen_shadow > hash
-$ john hash --format=sha512crypt --wordlist=/usr/share/wordlists/rockyou.txt
+$ john hash --format=sha512crypt --wordlist=wordlist
 ```
 
 Note that "unshadow" simply replaced the "x" in "passwd", with the password in "shadow", as you would find in some old linux distros.
@@ -213,7 +218,7 @@ Note that "unshadow" simply replaced the "x" in "passwd", with the password in "
 Modern Windows are using the hash format "NT", also referred as "NTLM", because "LM" was the previous hash format.
 
 ```bash
-$ john hash --format=nt --wordlist=/usr/share/wordlists/rockyou.txt
+$ john hash --format=nt --wordlist=wordlist
 ```
 </div><div>
 </div></div>
@@ -249,7 +254,7 @@ $ sudo gpg2john file.pgp > hash
 Then, use john as usual, with the format "gpg"
 
 ```bash
-$ john --format=gpg hash --wordlist=/usr/share/wordlists/rockyou.txt 
+$ john --format=gpg hash --wordlist=wordlist 
 ```
 
 > If by any means you got someone's private key that was used to encrypt this file <small>(a key may be used instead of a passphrase)</small>, then use `gpg --import xxx.key` to import it, and decrypt the file as usual.
@@ -272,7 +277,7 @@ The key is usually protected by a passphrase. You can use `ssh2jhon` to convert 
 
 ```bash
 $ ssh2jhon key > hash
-$ john --format=ssh hash --wordlist=/usr/share/wordlists/rockyou.txt
+$ john --format=ssh hash --wordlist=wordlist
 ```
 </div></div>
 
@@ -286,7 +291,7 @@ As for SSH, first convert the password to a file compatible with john.
 
 ```bash
 $ rar2john hello.rar > hash
-$ john hash --wordlist=/usr/share/wordlists/rockyou.txt
+$ john hash --wordlist=wordlist
 ```
 </div><div>
 
@@ -308,7 +313,7 @@ As for RAR, first convert the password to a file compatible with john.
 
 ```bash
 $ zip2john hello.zip > hash
-$ john hash --wordlist=/usr/share/wordlists/rockyou.txt
+$ john hash --wordlist=wordlist
 ```
 </div><div>
 
