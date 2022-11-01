@@ -39,7 +39,7 @@ $ ftp login@ip
 ftp> commands
 ```
 
-Once in a FTP shell, you may use the commands defined in the [RFC](https://www.rfc-editor.org/rfc/rfc959).
+Once in a FTP shell, you may use the commands, see the [section 5.3.1.](https://www.rfc-editor.org/rfc/rfc959)
 
 <details class="details-e">
 <summary>FTP commands summary</summary>
@@ -54,6 +54,23 @@ ftp> less file # read file
 ftp> exit # exit
 ftp> bye # same
 ```
+
+And
+
+```bash
+ftp> syst # useless? information about the system
+ftp> stat # same, but there is the version+ftp client name
+```
+</details>
+
+<details class="details-e">
+<summary>Knowledge about FTP</summary>
+
+An FTP request is starting with the server sending `USER`, the client answering with a username, the server sending `PASS`, and the user answering back with the password.
+
+There are two modes in FTP: active, and passive. The mode determine the port used to transfer data. Originally, data is transferred via the port 20, while in passive mode, a port higher than 1023 (reserved/system ports) will be used.
+
+There are two channels in a FTP connection: a channel to send commands, and one to transfer data. There is also a transfer mode, which could be ascii, or binary (default). You can enter `type [a|i]` or `ascii|binary` to switch.
 </details>
 
 </div><div class="border-st art border-dark ps-4">

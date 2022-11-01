@@ -296,7 +296,7 @@ https://tryhackme.com/room/protocolsandservers2
     * `telnet X 80`
     * `GET / HTTP/2<CR>Host: xxx<CR><CR>` but >> `curl -I 10.10.233.54:80`
   * Netcatp same as telnet but TCP, and UDP. `nc 10.10.127.12 80`
-  * 
+
 ```
 -v	Verbose output (optional, yet useful to discover any bugs)
 -vv	Very Verbose (optional)
