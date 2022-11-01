@@ -58,6 +58,7 @@ $ ./enum4linux.pl <options> <ip>
 
 * take a request captured in the Proxy, edit it, and send the same request repeatedly as many times as we wish
 * tabs per request
+* ISO/OSI
 
 <hr class="sep-both">
 
@@ -92,5 +93,21 @@ Servers implementing these protocols are subject to different kinds of attacks. 
   * Wireshark: enter "pop" > same result but nicer
   * TLS have been added to HTTP, FTP, SMTP, POP3, and IMAP
 * Man-in-the-Middle (MITM) Attack
+  * A Man-in-the-Middle (MITM) attack occurs when a victim (A) believes they are communicating with a legitimate destination (B) but is unknowingly communicating with an attacker (E).
+  * The attacker can modify the information send by the client, or sniff packets. It depends of the integrity checks/security of the protocol.
+  * https://www.ettercap-project.org/
+  * https://www.bettercap.org/
+  * The solution lies in proper authentication along with encryption or signing of the exchanged messages. With the help of Public Key Infrastructure (PKI) and trusted root certificates, Transport Layer Security (TLS) protects from MITM attacks.
+* SSL (Secure Sockets Layer) then TLS (more secure).
+  * HTTPS: 443
+  * FTPS: 990
+  * SMTPS: 465
+  * POP3S: 995
+  * IMAPS: 993
+  * They add an additional step when connected with the server, which is establishing a SSL/TLS connection
+    * SSL: ClientHello (indicate supported algorithms)
+    * Exchanges information to create a maser key
+    * The server reply that it will use encryption
+  * DOT (DNS Over TLS)
 * Password Attack (Authentication Attack)
 * Vulnerabilities
