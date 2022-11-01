@@ -305,6 +305,59 @@ https://tryhackme.com/room/protocolsandservers2
 nc X 21
     220 debra2.thm.local FTP server (Version 6.4/OpenBSD/Linux-ftpd-0.17) ready.
 ```
+
+The Telnet protocol is an application layer protocol used to connect to a virtual terminal of another computer. Using Telnet, a user can log into another computer and access its terminal (console) to run programs, start batch processes, and perform system administration tasks remotely.
+
+Telnet protocol is relatively simple. When a user connects, they will be asked for a username and password. Upon correct authentication, the user will access the remote system’s terminal. Unfortunately, all this communication between the Telnet client and the Telnet server is not encrypted, making it an easy target for attackers.
+
+Port 23
+
 * browser
 
 User-Agent Switcher and Manager gives you the ability to pretend to be accessing the webpage from a different operating system or different web browser. In other words, you can pretend to be browsing a site using an iPhone when in fact, you are accessing it from Mozilla Firefox. 
+
+---
+
+HTTP
+FTP
+
+USER xxx
+PASS yyy
+
+A command like STAT can provide some added information. The SYST command shows the System Type of the target (UNIX in this case). PASV switches the mode to passive. It is worth noting that there are two modes for FTP:
+
+Active: In the active mode, the data is sent over a separate channel originating from the FTP server’s port 20.
+Passive: In the passive mode, the data is sent over a separate channel originating from an FTP client’s port above port number 1023.
+The command TYPE A switches the file transfer mode to ASCII, while TYPE I switches the file transfer mode to binary. However, we cannot transfer a file using a simple client such as Telnet because FTP creates a separate connection for file transfer.
+
+2 channels: commands, and a new tcp connection to transfer data.
+
+ascii
+
+ftp> syst
+215 UNIX Type: L8
+ftp> stat
+Connected and logged into 10.10.208.209.
+No proxy connection.
+Gate ftp: off, server (none), port ftpgate.
+Passive mode: on; fallback to active mode: on.
+Mode: stream; Type: binary; Form: non-print; Structure: file.
+Verbose: on; Bell: off; Prompting: on; Globbing: on.
+Store unique: off; Receive unique: off.
+Preserve modification times: on.
+Case: off; CR stripping: on.
+Ntrans: off.
+Nmap: off.
+Hash mark printing: off; Mark count: 1024; Progress bar: on.
+Get transfer rate throttle: off; maximum: 0; increment 1024.
+Put transfer rate throttle: off; maximum: 0; increment 1024.
+Socket buffer sizes: send 16384, receive 131072.
+Use of PORT cmds: on.
+Use of EPSV/EPRT cmds for IPv4: on.
+Use of EPSV/EPRT cmds for IPv6: on.
+Command line editing: on.
+Version: tnftp 20210827
+
+POP3
+SMTP
+IMAP
