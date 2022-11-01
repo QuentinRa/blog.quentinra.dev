@@ -272,11 +272,29 @@ Note that choosing a working payload could become a trial and error process due 
   * https://tryhackme.com/room/shodan
   * can see the top ports for apache...
 * https://www.unifiedkillchain.com/
-* Passive
+* Passive reconnaissance activities
   * Looking up DNS records of a domain from a public DNS server. 
   * Checking job ads related to the target website. 
   * Reading news articles about the target company.
+* https://tryhackme.com/room/passiverecon
+
+----
+https://tryhackme.com/room/protocolsandservers
+https://tryhackme.com/room/protocolsandservers2
+----
+
+* https://tryhackme.com/room/activerecon
 * active reconnaissance activities
   * Connecting to one of the company servers such as HTTP, FTP, and SMTP. 
   * Calling the company in an attempt to get information (social engineering). 
   * Entering company premises pretending to be a repairman.
+* ping, traceroute, telnet, and nc
+  * ping: We learned that X is up and is not blocking ICMP echo requests.
+  * traceroute command traces the route taken by the packets. This command also reveals the number of routers between the two systems. It is helpful as it indicates the number of hops (routers) between your system and the target host. However, note that the route taken by the packets might change as many routers use dynamic routing protocols that adapt to network changes. tracert on Windows. if the TTL reaches 0, it will be dropped, and an ICMP Time-to-Live exceeded would be sent to the original sender. Some routers return a public IP address. You might examine a few of these routers based on the scope of the intended penetration testing.
+    Some routers don’t return a reply.
+  * telnet: The TELNET (Teletype Network) protocol was developed in 1969 to communicate with a remote system via a command-line interface (CLI). Hence, the command telnet uses the TELNET protocol for remote administration. The default port used by telnet is 23. From a security perspective, telnet sends all the data, including usernames and passwords, in cleartext. Sending in cleartext makes it easy for anyone, who has access to the communication channel, to steal the login credentials. The secure alternative is SSH (Secure SHell) protocol.
+    * `telnet X 80`
+    * `GET / HTTP/2<CR>Host: xxx<CR><CR>` but >> `curl -I 10.10.233.54:80`
+* browser
+
+User-Agent Switcher and Manager gives you the ability to pretend to be accessing the webpage from a different operating system or different web browser. In other words, you can pretend to be browsing a site using an iPhone when in fact, you are accessing it from Mozilla Firefox. 
