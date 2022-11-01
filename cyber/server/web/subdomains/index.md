@@ -28,57 +28,6 @@ fierce-hostlist.txt                  sortedcombined-knock-dnsrecon-fierce-reconn
 
 <hr class="sl">
 
-## Automated
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-[DNSRecon](https://github.com/darkoperator/dnsrecon) (2k ⭐) is a Python script that can be used to bruteforce DNS, and check DNS/NS records.
-
-```bash
-$ dnsrecon -d URL -t type
-$ dnsrecon -d URL -D wordlist -t type
-```
-
-The type could be 
-
-* `brt`: bruteforce using a dictionary
-* `std`: NS, A/AAAA, MX...
-* `bing`: test bing
-* `yand`: test Yandex
-* `rvl`: reverse lookup
-* `crt`: test [crt.sh](https://crt.sh/)
-* ...
-</div><div>
-
-[Sublist3r](https://github.com/aboul3la/Sublist3r) (7.7k ⭐) is a Python script to enumerate subdomains of websites using OSINT.
-
-<br>
-
-You can use [ffuf/wfuzz/...](../fuzz/index.md) to bruteforce a subdomain
-
-```bash
-ffuf -w wordlist -u FUZZ.example.com
-```
-</div></div>
-
-<hr class="sr">
-
-## OSINT
-
-<div class="row row-cols-md-2"><div>
-
-You can use [crt.sh](https://crt.sh/) to search for certificated issued for a domain name. An alternative would be [ct search](https://ui.ctsearch.entrust.com/ui/ctsearchui)
-</div><div>
-
-You can also use your Google Hacking/Dorking skills with
-
-```none
--site:example.com site:*.example.com
-```
-</div></div>
-
-<hr class="sl">
-
 ## Virtual Hosts
 
 <div class="row row-cols-md-2"><div>
@@ -89,10 +38,71 @@ It's possible for subdomains records to be only available locally, on the server
 </div><div>
 
 The server will process as usual, whether the subdomain is public or not, if someone request it, and there is indeed such a domain name, then it will be served to the user.
+</div></div>
 
-You can try using ffuf to bruteforce such virtual hosts. You may have to filter responses, as every response having the same size for instance, are most likely the same answer (failure).
+<hr class="sr">
+
+## DNSRecon
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+[DNSRecon](https://github.com/darkoperator/dnsrecon) (2k ⭐) is a Python script that can be used to bruteforce DNS, and OSINT checks (see std, bing, yandex, and crt).
+
+```bash
+$ dnsrecon -d URL -t type
+$ dnsrecon -d URL -D wordlist -t type
+```
+</div><div>
+
+The type could be
+
+* `brt`: bruteforce using a dictionary
+* `std`: NS, A/AAAA, MX...
+* `bing`: test bing
+* `yand`: test Yandex
+* `rvl`: reverse lookup
+* `crt`: test [crt.sh](https://crt.sh/)
+* ...
+</div></div>
+
+> I would advise testing other tools too...
+
+<hr class="sl">
+
+## Bruteforce
+
+<div class="row row-cols-md-2"><div>
+
+You can use [ffuf](../fuzz/index.md#ffuf---fuzz-faster-u-fool) for DNS subdomains, and Virtual hosts.
 
 ```bash
 ffuf -w wordlist -H "Host: FUZZ.example.com" -u example.com
+```
+
+> As every response having the same size for instance, are most likely the same answer (failure).
+</div><div>
+
+You can use [gobuster](../bruteforce/forced_browsing.md#gobuster-go) for DNS subdomains, and Virtual hosts.
+
+```bash
+gobuster dns -d URL -w wordlist
+```
+</div></div>
+
+<hr class="sr">
+
+## OSINT
+
+<div class="row row-cols-md-2"><div>
+
+You can use [crt.sh](https://crt.sh/) to search for certificated issued for a domain name. An alternative would be [ct search](https://ui.ctsearch.entrust.com/ui/ctsearchui)
+
+[Sublist3r](https://github.com/aboul3la/Sublist3r) (7.7k ⭐) is a Python script to enumerate subdomains of websites using OSINT.
+</div><div>
+
+You can also use your Google Hacking/Dorking skills with
+
+```none
+-site:example.com site:*.example.com
 ```
 </div></div>

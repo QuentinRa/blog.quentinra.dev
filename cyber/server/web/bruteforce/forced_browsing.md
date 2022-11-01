@@ -1,0 +1,87 @@
+# Forced Browsing / Server enumeration
+
+<div class="row row-cols-md-2"><div>
+
+Forced browsing means using an automated tool in order to find hidden folders, and files. These files/folders are supposed to be unreadable, but sometimes they are not.
+
+* configuration files (ex: .config)
+* old files (ex: index.php.old)
+* backup files (ex: xxx.bak, backup.xxx)
+* admin/cms panels (ex: WordPress admin login page)
+* private files (ex: documents...)
+</div><div>
+
+Most tools, namely **web scanners**, are taking
+
+* **a URL**
+* **a WordList**: see the package `wordlists`, and `seclists` on Kali
+  * `/usr/share/wordlists/dirb/common.txt`
+  * `/usr/share/wordlists/dirbuster/directory-list-2.3-small.txt`
+  * ...
+
+Other tools that you may see in use
+
+* [ffuf/wfuzz/...](../fuzz/index.md) (see web fuzzers)
+* [feroxbuster](https://github.com/epi052/feroxbuster) (3.3k ⭐, Rust)
+* [dirb](https://dirb.sourceforge.net/)
+* [DirBuster](https://github.com/KajanM/DirBuster) (63 ⭐)
+</div></div>
+
+<hr class="sl">
+
+## GoBuster (Go)
+
+<div class="row row-cols-md-2"><div>
+
+[GoBuster](https://github.com/OJ/gobuster) (6.7k ⭐)
+
+```bash
+$ gobuster dir -u URL -w wordlist 
+```
+
+Using the following command, for every entry in the wordlist, a version with, and without each extension will be tested.
+
+```bash
+$ gobuster dir -u URL -w wordlist -w php
+$ gobuster dir -u URL -w wordlist -w php,html
+```
+</div><div>
+
+Other options
+
+* `-U`: username
+* `-P`: password
+* `-p`: proxy
+* `-p`: proxy
+* `-c`: a cookie <small>(for instance, to simulated that we are logged)</small>
+</div></div>
+
+<hr class="sr">
+
+## dirsearch (python)
+
+<div class="row row-cols-md-2"><div>
+
+[dirsearch](https://github.com/maurosoria/dirsearch) (8.7k ⭐) can be installed with `apt install dirsearch`, and there is an implementation in GO if you want to.
+
+```bash
+# use default wordlist
+$ dirsearch -u URL
+$ dirsearch -u URL -w wordlist
+```
+</div><div>
+
+Ignore some error codes
+
+```bash
+$ dirsearch -u URL -x 404
+$ dirsearch -u URL -x 404,500
+```
+
+Using the following command, for every entry in the wordlist, a version with, and without each extension will be tested.
+
+```bash
+$ dirsearch -u URL -e php
+$ dirsearch -u URL -e php,html
+```
+</div></div>

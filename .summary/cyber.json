@@ -64,6 +64,13 @@
         "hidden": false
       },
       {
+        "tag": "server/web/bruteforce/forced_browsing.md",
+        "name": "Forced browsing",
+        "desc": "",
+        "icon": null,
+        "hidden": false
+      },
+      {
         "tag": "server/web/subdomains/index.md",
         "name": "Subdomains",
         "desc": "",

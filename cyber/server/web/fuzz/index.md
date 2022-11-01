@@ -7,7 +7,11 @@ Fuzzing, or most likely web-fuzzing is the art of injecting data, and finding so
 * Bruteforce a form
 * Subdomains exploration
 * Forced browsing
-* Find Insecure Direct Object References (IDOR)
+* Find **Insecure Direct Object References** (IDOR)
+
+A failure in which we can guess given a URL how to access other elements,
+and if we change the URL <small>(id=10$\to$id=11)</small>. It could be a get form with predictable values, a folder with predictable filenames...
+
 * ...
 </div><div>
 
@@ -35,6 +39,8 @@ Examples
 
 ```bash
 $ ffuf -w wordlist -u URL/FUZZ
+$ ffuf -w wordlist -u URL?FUZZ=value
+$ ffuf -w wordlist -u URL?key=FUZZ
 $ ffuf -w wordlist -u URL/FUZZ -H "Header: value"
 $ ffuf -w wordlist -u URL -X POST -d "xxx=FUZZ"
 ```
