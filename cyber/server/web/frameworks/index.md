@@ -1,0 +1,43 @@
+# Frameworks
+
+<div class="row row-cols-md-2"><div>
+
+* Look if the framework is credited at the bottom of the page
+* Look if there is a comment with the framework name/... in the HTML
+* Look for the default favicon of the framework. Usually, it's stored at `/favicon.ico`, although it's usually removed. If you do find one, download it, hash it (MD5), and [find it in OWASP favicon database](https://wiki.owasp.org/index.php/OWASP_favicon_database)
+
+```bash
+# Linux
+curl url/favicon.ico | md5sum
+# Windows (on a download favicon)
+Get-FileHash .\favicon.ico -Algorithm MD5
+```
+
+</div><div>
+
+If you found a framework
+
+* Look for a way to get the version (as a client, if any). For instance, the framework in a specific version, may use a specific version of a JavaScript/CSS library, if any. It may be a hint, trough it's not reliable.
+* Look for common misconfiguration mistakes
+* Look for vulnerabilities
+* Look for the login page / CMS panel.
+    * Test default credentials
+    * Test bruteforce password, with the default username
+</div></div>
+
+<hr class="sl">
+
+## WordPress
+
+<div class="row row-cols-md-2"><div>
+
+* Scan
+  * [WPScan](https://github.com/wpscanteam/wpscan) (open-source)
+  * [jetpack](https://jetpack.com/) (paid)
+  * [WPScan](https://wpscan.com/) (cloud version, paid)
+</div><div>
+
+* Todo
+  * [WordPress: THM WebEnumeration2](https://medium.com/@edwinngugi149/wordpress-hacking-tryhackme-write-up-1c895a1822b)
+  * [Wordpress: THM Internals](https://medium.com/swlh/tryhackme-internal-walkthrough-fdc6c4b569bd)
+</div></div>
