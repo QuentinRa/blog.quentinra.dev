@@ -78,6 +78,7 @@ $ ./enum4linux.pl <options> <ip>
 * sqlmap -u http://10.10.55.189:5000/challenge3/login --data="username=admin&password=admin" --level=5 --risk=3 --dbms=sqlite --technique=b --dump --threads 10
 * https://tryhackme.com/room/sqlilab
 * See tamper script
+* Imagine website injectable parameter toLowerCase the parameter.
 
 <hr class="sep-both">
 
@@ -251,3 +252,31 @@ Note that choosing a working payload could become a trial and error process due 
 > set SESSION 1
 > run
 ```
+
+<hr class="sep-both">
+
+## Recon
+
+* whois to query WHOIS servers
+  * Registrar -> find more about it
+  * Contact info
+  * ...
+* nslookup to query DNS servers
+  * nslookup -type=A tryhackme.com 1.1.1.1
+* dig to query DNS servers
+* DNSDumpster / https://dnsdumpster.com/
+  * ...
+* Shodan.io : a browser indexing devices and their information
+  * https://www.shodan.io/
+  * https://help.shodan.io/the-basics/search-query-fundamentals
+  * https://tryhackme.com/room/shodan
+  * can see the top ports for apache...
+* https://www.unifiedkillchain.com/
+* Passive
+  * Looking up DNS records of a domain from a public DNS server. 
+  * Checking job ads related to the target website. 
+  * Reading news articles about the target company.
+* active reconnaissance activities
+  * Connecting to one of the company servers such as HTTP, FTP, and SMTP. 
+  * Calling the company in an attempt to get information (social engineering). 
+  * Entering company premises pretending to be a repairman.

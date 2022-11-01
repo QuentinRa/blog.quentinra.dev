@@ -71,9 +71,16 @@
         "hidden": false
       },
       {
+        "tag": "server/web/frameworks/index.md",
+        "name": "Frameworks",
+        "desc": "Find and exploit frameworks such as Wordpress.",
+        "icon": null,
+        "hidden": false
+      },
+      {
         "tag": "server/web/subdomains/index.md",
         "name": "Subdomains",
-        "desc": "",
+        "desc": "Look for additional entrypoints.",
         "icon": null,
         "hidden": false
       },
