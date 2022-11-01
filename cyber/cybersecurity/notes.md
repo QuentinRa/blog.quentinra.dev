@@ -49,9 +49,10 @@ $ ./enum4linux.pl <options> <ip>
 
 <hr class="sep-both">
 
-# Learn again
+# Notes
 
 * netdiscover
+* security triad: CIA.
 
 ## Burp
 
@@ -78,3 +79,18 @@ Sending a mail involves a Mail Submission Agent (MSA) to send the mails to someo
     * c2 EXAMINE INBOX
     * c3 LOGOUT
     * Send as clear text
+
+Servers implementing these protocols are subject to different kinds of attacks. To name a few, consider:
+
+* Sniffing Attack (Network Packet Capture)
+  * using a network packet capture tool to collect information about the target
+  * Tcpdump is a free open source command-line interface (CLI) program that has been ported to work on many operating systems.
+  * Wireshark is a free open source graphical user interface (GUI) program available for several operating systems, including Linux, macOS and MS Windows.
+  * Tshark is a CLI alternative to Wireshark.
+  * Before explaining this command, we should mention that this attack requires access to the network traffic, for example, via a wiretap or a switch with port mirroring. Alternatively, we can access the traffic exchanged if we launch a successful Man-in-the-Middle (MITM) attack.
+  * `sudo tcpdump port 110 -A` (only port 110=POP3, and ASCII)
+  * Wireshark: enter "pop" > same result but nicer
+  * TLS have been added to HTTP, FTP, SMTP, POP3, and IMAP
+* Man-in-the-Middle (MITM) Attack
+* Password Attack (Authentication Attack)
+* Vulnerabilities
