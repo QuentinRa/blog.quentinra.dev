@@ -119,10 +119,14 @@ vulnerabilities = weakness or flaw.  five main categories of vulnerabilities
 
 * Operating System
 * (Mis)Configuration-based
-  * Version Disclosure
 * Weak or Default Credentials
 * Application Logic
 * Human-Factor
+
+Types
+
+* Remote code execution
+* Version Disclosure
 
 Not all vulnerabilities are exploitable.
 
@@ -132,7 +136,14 @@ Not all vulnerabilities are exploitable.
 * “Common Vulnerabilities and Exposures”
 * https://nvd.nist.gov/vuln/full-listing
 
-Why they're worthy of learning about
-How are vulnerabilities rated
-Databases for vulnerability research
-A showcase of how vulnerability research is used on ACKme's engagement
+* many clients -> there is possiblity a custom/helpdesk that can be used to attck
+
+Nessus: do not be dependent, they often do not find every vulnerability. They are loud/generate a lot of logs/traffic.
+
+* Security Misconfigurations (cyrpto), and Insecure Deserialization, and not THM for the 4 categories?
+* https://tryhackme.com/room/exploitingavulnerabilityv2
+* https://www.rapid7.com/db/: instructions for metasploit may be given
+* GitHub by keywords such as “PoC”, “vulnerability”
+* searchsploit
+  * searchsploit xxx
+  * searchsploit -p 47887
