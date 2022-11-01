@@ -13,12 +13,14 @@ Fuzzing, or most likely web-fuzzing is the art of injecting data, and finding so
 
 **Two ingredients are required**. First, a **wordlist**, basically a list of values to test. Some tools can take more than one, such as when you try to bruteforce with both a list of usernames, and a list of passwords
 
-The second is a **URL**. For instance, `example.com`. Fuzzers will allow you to place where in the URL you want something to be injected. For instance,
+The second is a **URL**. For instance, `example.com`. Fuzzers will allow you to place where in the URL you want something to be injected using FUZZ
 
 * Guessing a subdomain? `FUZZ.example.com`
 * Forced browsing? `example.com/FUZZ`
 * Find Insecure Direct Object References? `example.com?id=FUZZ`
 * ...
+
+> FUZZ will be replaced with the values in the wordlist, one-by-one.
 </div></div>
 
 <hr class="sl">
@@ -27,10 +29,38 @@ The second is a **URL**. For instance, `example.com`. Fuzzers will allow you to 
 
 <div class="row row-cols-md-2"><div>
 
-Nothing aside from this [ffuf](https://github.com/ffuf/ffuf) (8.1k ⭐) GitHub link.
+[ffuf](https://github.com/ffuf/ffuf) (8.1k ⭐) is a modern version of wfuzz in Go. In theory, the repository [ffuf-scripts](https://github.com/ffuf/ffuf-scripts) should have a list of scripts useful with ffuf.
+
+Examples
+
+```bash
+$ ffuf -w wordlist -u URL/FUZZ
+$ ffuf -w wordlist -u URL/FUZZ -H "Header: value"
+$ ffuf -w wordlist -u URL -X POST -d "xxx=FUZZ"
+```
+
+* `-w wordlist`: FUZZ will be replaced with each entry in the wordlist
+* `-u URL`: URL/endpoint where the request is made
+* `-H header_value`: a header, or a list of headers comma separated
+* `-X method`: the method used (GET/POST..;). Default: GET.
+* `-d payload`: POST payload
 </div><div>
 
-...
+You will most likely want to only show some answer, or filter=hide some answers, based on a criteria. A filter switch is starting with `-f`, while a show switch is starting with `-m`.
+
+* `c code`: show/hide response with this code
+* `l n`: show/hide responses with this $n$ number of lines
+* `m n`: show/hide responses with this $n$ number of words
+* `s size`: show/hide responses with a size equals to $s$
+* `r regex`: show/hide responses matching the regex
+
+```bash
+$ ffuf -fc 404,500 [...] # hides 404,500
+$ ffuf -fc 400-404 [...] # hides 400 to 404
+$ wfuzz -mc 200 [...] # show only 200
+$ wfuzz -mc 200,301 [...] # show only 200,301
+$ wfuzz -fs 5230 [...] # hides responses with size=5230
+```
 </div></div>
 
 <hr class="sr">
@@ -70,3 +100,9 @@ $ wfuzz -w wordlist --hc 404,500 xxx.tld/account?id=FUZZ
 $ wfuzz -w wordlist --sc 200 xxx.tld/account?id=FUZZ
 ```
 </div></div>
+
+<hr class="sl">
+
+## feroxfuzz
+
+FeroxBuster users should take a look at the [feroxfuzz](https://github.com/epi052/feroxfuzz/) library for FeroxBuster.
