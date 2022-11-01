@@ -1,5 +1,8 @@
 # Protocols & services notes
 
+[![protocolsandservers](../_badges/protocolsandservers.svg)](https://tryhackme.com/room/protocolsandservers)
+[![protocolsandservers2](../_badges/protocolsandservers2.svg)](https://tryhackme.com/room/protocolsandservers2)
+
 Most entries in this course are partial knowledge about protocols/services extracted from the [Protocols & Services course](/info/networking/protocols/index.md), with cybersecurity related notes about them. The former course is more about describing the services, and the client that may be used to interact with them.
 
 <hr class="sr">

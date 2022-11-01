@@ -276,14 +276,9 @@ Note that choosing a working payload could become a trial and error process due 
   * Looking up DNS records of a domain from a public DNS server. 
   * Checking job ads related to the target website. 
   * Reading news articles about the target company.
-* https://tryhackme.com/room/passiverecon
 
 ----
-https://tryhackme.com/room/protocolsandservers
-https://tryhackme.com/room/protocolsandservers2
-----
 
-* https://tryhackme.com/room/activerecon
 * active reconnaissance activities
   * Connecting to one of the company servers such as HTTP, FTP, and SMTP. 
   * Calling the company in an attempt to get information (social engineering). 

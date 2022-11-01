@@ -1,5 +1,28 @@
 # Investigation
 
+[![passiverecon](../../_badges/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
+
+<div class="row row-cols-md-2"><div>
+
+Investigation, or passive reconnaissance (recon) involve gathering information about the target from afar, using public information available, for instance,
+
+* Look for DNS records to look for registrar/contact info/...
+* Look for job offers
+* Look for news
+* ...
+</div><div>
+
+The goal is to find as much information as possible. This step is followed by active reconnaissance where you directly interact with the target.
+
+**DNS**
+
+The knowledge related to DNS is stored in [another course](../../server/dns/index.md#recon).
+
+**Subdomains**
+
+As long as you don't interact with the target (no bruteforce...), [Subdomains enumeration](../../server/web/subdomains/index.md) is usually done at this step.
+</div></div>
+
 <hr class="sl">
 
 ## Open-source intelligence (OSINT)
