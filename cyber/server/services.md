@@ -1,8 +1,12 @@
-# Services
+# Protocols & services notes
+
+Most entries in this course are partial knowledge about protocols/services extracted from the [Protocols & Services course](/info/networking/protocols/index.md), with cybersecurity related notes about them. The former course is more about describing the services, and the client that may be used to interact with them.
 
 <hr class="sr">
 
 ## File Transfer protocol - 21 (tcp)
+
+[See FTP Protocol for more information](/info/networking/protocols/index.md#-ftp---21-tcp)
 
 <div class="row row-cols-md-2"><div>
 
@@ -10,14 +14,7 @@ FTP (File Transfer protocol) is a protocol used to transfer (upload, download) f
 
 ```bash
 $ ftp user@ip
-ftp> pwd # path to current folder
-ftp> ls folder # list files
-ftp> cd folder # move to folder
-ftp> put /local/path /remote/dest # upload
-ftp> get /remote/path /local/dest # download
-ftp> less file # read file
-ftp> exit # exit
-ftp> bye # same
+ftp> ...
 ```
 </div><div>
 
@@ -32,38 +29,24 @@ $ ftp anonymous@ip
 
 ## Samba - 445 (or 139 before, tcp)
 
+[See Samba service for more information](/info/networking/protocols/index.md#samba---445-or-139-before-tcp)
+
 [![kenobi](../_badges/kenobi.svg)](https://tryhackme.com/room/kenobi)
 
 <div class="row row-cols-md-2"><div>
 
-[Samba](https://www.samba.org/) that is making both file exchange system of Linux (NFS), and Windwos (SMB) work together. It's mostly used to share file internally, by connecting every computer, printer... to a **share**, a shared folder.
+[Samba](https://www.samba.org/) is making both file exchange system of Linux (NFS), and Windwos (SMB) work together. It's mostly used to share file internally, by connecting every computer, printer... to a **share**, a shared folder.
 
 Find shares using nmap
 
 ```bash
 $ nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse ip
 ```
+</div><div>
 
-Connect to a share <small>(try without submitting a password)</small>
+* Try connecting without submitting a password
 
 ```bash
 $ smbclient //IP/share_name
-```
-</div><div>
-Once connected, you can use theses
-
-```bash
-smb> pwd # get current folder
-smb> ls folder # list files in folder
-smb> cd folder # move to folder
-smb> put /local/path /remote/path # upload
-smb> get /remote/path /local/path # download
-smb> exit
-```
-
-Download everything in a share
-
-```bash
-$ smbget -R smb://IP/share_name
 ```
 </div></div>

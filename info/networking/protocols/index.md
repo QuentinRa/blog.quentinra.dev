@@ -41,7 +41,20 @@ ftp> commands
 
 Once in a FTP shell, you may use the commands defined in the [RFC](https://www.rfc-editor.org/rfc/rfc959).
 
+<details class="details-e">
+<summary>FTP commands summary</summary>
 
+```bash
+ftp> pwd # path to current folder
+ftp> ls folder # list files
+ftp> cd folder # move to folder
+ftp> put /local/path /remote/dest # upload
+ftp> get /remote/path /local/dest # download
+ftp> less file # read file
+ftp> exit # exit
+ftp> bye # same
+```
+</details>
 
 </div><div class="border-st art border-dark ps-4">
 
@@ -57,6 +70,40 @@ $ scp user@ip:remote/path/ local_path_to_dest
 ```
 
 > Use `scp -r` to download/upload a folder will all its content.
+</div></div>
+
+<hr class="sep-both">
+
+## Samba - 445 (or 139 before, tcp)
+
+<div class="row row-cols-md-2"><div>
+
+[Samba](https://www.samba.org/) is making both file exchange system of Linux (NFS), and Windwos (SMB) work together. It's mostly used to share file internally, by connecting every computer, printer... to a **share**, a shared folder.
+
+Connect
+
+```bash
+$ smbclient //IP/share_name
+$ smbclient smb://IP/share_name
+```
+
+Download everything in a share
+
+```bash
+$ smbget -R //IP/share_name
+```
+</div><div>
+
+Once connected, you can use theses
+
+```bash
+smb> pwd # get current folder
+smb> ls folder # list files in folder
+smb> cd folder # move to folder
+smb> put /local/path /remote/path # upload
+smb> get /remote/path /local/path # download
+smb> exit
+```
 </div></div>
 
 <hr class="sep-both">
