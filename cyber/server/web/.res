@@ -8,6 +8,7 @@ https://www.databreaches.net/hackers-are-using-cookies-to-sidestep-two-factor-au
 https://www.thewindowsclub.com/cookie-stealing-or-scraping
 https://thehackernews.com/2021/10/hackers-stealing-browser-cookies-to.html
 
+----
 File upload
 A user may upload a file on a server such as an avatar. You must prevent users from uploading malicious files (ex : scripts),
 AND prevent users from accessing content belonging to other users (if they shouldn't).

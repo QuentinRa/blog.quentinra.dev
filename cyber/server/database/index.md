@@ -2,6 +2,8 @@
 
 [![sqlinjectionlm](../../_badges/sqlinjectionlm.svg)](https://tryhackme.com/room/sqlinjectionlm)
 
+> Common databases are: MySQL, Microsoft SQL Server (MSSQL), MongoDB, GraphQL, PostgresSQL.<br> While you may see MariaDB, SQLite; Redis, and Oracle too.
+
 <hr class="sl">
 
 ## Random
