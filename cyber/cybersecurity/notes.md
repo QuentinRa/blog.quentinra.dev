@@ -265,23 +265,6 @@ Note that choosing a working payload could become a trial and error process due 
   * ping: We learned that X is up and is not blocking ICMP echo requests.
   * traceroute command traces the route taken by the packets. This command also reveals the number of routers between the two systems. It is helpful as it indicates the number of hops (routers) between your system and the target host. However, note that the route taken by the packets might change as many routers use dynamic routing protocols that adapt to network changes. tracert on Windows. if the TTL reaches 0, it will be dropped, and an ICMP Time-to-Live exceeded would be sent to the original sender. Some routers return a public IP address. You might examine a few of these routers based on the scope of the intended penetration testing.
     Some routers don’t return a reply.
-  * telnet: The TELNET (Teletype Network) protocol was developed in 1969 to communicate with a remote system via a command-line interface (CLI). Hence, the command telnet uses the TELNET protocol for remote administration. The default port used by telnet is 23. From a security perspective, telnet sends all the data, including usernames and passwords, in cleartext. Sending in cleartext makes it easy for anyone, who has access to the communication channel, to steal the login credentials. The secure alternative is SSH (Secure SHell) protocol.
-    * `telnet X 80`
-    * `GET / HTTP/2<CR>Host: xxx<CR><CR>` but >> `curl -I 10.10.233.54:80`
-  * Netcatp same as telnet but TCP, and UDP. `nc 10.10.127.12 80`
-
-```
--v	Verbose output (optional, yet useful to discover any bugs)
--vv	Very Verbose (optional)
--k	Keep listening after client disconnects
-
-nc X 21
-    220 debra2.thm.local FTP server (Version 6.4/OpenBSD/Linux-ftpd-0.17) ready.
-```
-
-The Telnet protocol is an application layer protocol used to connect to a virtual terminal of another computer. Using Telnet, a user can log into another computer and access its terminal (console) to run programs, start batch processes, and perform system administration tasks remotely.
-
-Telnet protocol is relatively simple. When a user connects, they will be asked for a username and password. Upon correct authentication, the user will access the remote system’s terminal. Unfortunately, all this communication between the Telnet client and the Telnet server is not encrypted, making it an easy target for attackers.
 
 Port 23
 

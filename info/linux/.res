@@ -25,6 +25,7 @@ su - root
 cyber commands (linux/...)
 help/info
 nslookup
+nc -v	Verbose output -vv Very Verbose -k Keep listening after client disconnects (-lvnp)
 
 Blog
 https://linuxhandbook.com/

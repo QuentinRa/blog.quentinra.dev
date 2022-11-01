@@ -4,60 +4,25 @@
 
 <div class="row row-cols-md-2"><div>
 
-* You can use `nmap` to
-  * Find open ports
-  * Find the services running on these ports, and maybe the OS (`-sV`)
-  * Find the OS (`-O`)
-  * Find the hostname / computer name, or some info that may be relevant (`-sC`)
-  * Saving scans can be useful has they can be imported <small>(ex: in `metasploit`)</small>
-  * Find vulnerabilities
+**Nmap**
+
+Use **nmap** to find open ports, their services+version with `-sV`, the os with `-O` <small>(`-sV` too, if a service is talkative)</small>, the hostname / computer name, or some info that may be relevant with `-sC`.
+
+You should also save the scans: it may take a long time, so you want to do it only once, and they can be imported in other tools too 🚀!
+
+You can use it to find, and exploit vulnerabilities, or to bruteforce services such as SSH (see [bruteforce services](../../random/crack_password/services.md#nmap)).
+
+> CTF: Lunch at least a scan on all ports in the background while exploring the first interesting ports.
 </div><div>
 
-* You can use `nessus`
-  * To scan open port, the services running, their versions
-  * The protocols used, if they are secure, or not
-  * The OS
-  * Vulnerabilities, and there is also a list of tools in which you may be able to exploit these vulnerabilities (ex: `metasploit`)
-  * Saving scans can be useful has they can be imported <small>(ex: in `metasploit`)</small>
-* `masscan` is a sort of `nmap`, but for mass scanning.
-</div></div>
+**Nessus**
 
-> Lunch at least a scan on all ports, not just the top ones, you may start this scan in the background while exploring the first interesting ports.
+Nessus is much like nmap, while providing a web interface, but a few differences are that you got way more information about the vulnerabilities, and how you can exploit them <small>(list of tools)</small>. On top of that, if you got credentials, you can also easily login, and scan the system from the inside.
+
+Scans may be exported too, and imported in others tools, such as in `metasploit`.
+</div></div>
 
 <hr class="sl">
-
-## Nessus vulnerability scanner
-
-[![rpnessusredux](../../_badges/rpnessusredux.svg)](https://tryhackme.com/room/rpnessusredux)
-
-<div class="row row-cols-md-2"><div>
-
-**Nessus vulnerability scanner** is a tool to find, and report vulnerabilities.
-
-* [Download Nessus](https://www.tenable.com/downloads/nessus)
-
-```bash
-$ sudo dpkg -i  Nessus-10.3.0-ubuntu1404_amd64.deb
-$ sudo systemctl start nessusd.service
-```
-
-* Open `https://localhost:8834/`
-* [You will need an activation code](https://www.tenable.com/products/nessus/nessus-essentials)
-</div><div>
-
-Once you are logged on the website, you can create new scans.
-
-* **Host Discovery**: find alive hosts
-* **Basic network scan**: sort of nmap
-    * Set a target
-    * In Discovery, you can select a range of ports
-    * In Assessment, you can select the kind of scan
-    * In Advanced, you may go for a "low bandwidth scan"
-    * **Launch**: explore vulnerabilities to see results
-* **Web application test**: see vulnerabilities in your web app
-</div></div>
-
-<hr class="sr">
 
 ## nmap port scanner
 
@@ -221,7 +186,81 @@ $ nmap scanme.nmap.org --script=s1,s2 --script-args s1.key=value
 ```
 </div></div>
 
+<hr class="sr">
+
+## Nessus vulnerability scanner
+
+[![rpnessusredux](../../_badges/rpnessusredux.svg)](https://tryhackme.com/room/rpnessusredux)
+
+<div class="row row-cols-md-2"><div>
+
+**Nessus vulnerability scanner** is a tool to find, and report vulnerabilities.
+
+* [Download Nessus](https://www.tenable.com/downloads/nessus)
+
+```bash
+$ sudo dpkg -i  Nessus-10.3.0-ubuntu1404_amd64.deb
+$ sudo systemctl start nessusd.service
+```
+
+* Open `https://localhost:8834/`
+* [You will need an activation code](https://www.tenable.com/products/nessus/nessus-essentials)
+</div><div>
+
+Once you are logged on the website, you can create new scans.
+
+* **Host Discovery**: find alive hosts
+* **Basic network scan**: sort of nmap
+  * Set a target
+  * In Discovery, you can select a range of ports
+  * In Assessment, you can select the kind of scan
+  * In Advanced, you may go for a "low bandwidth scan"
+  * **Launch**: explore vulnerabilities to see results
+* **Web application test**: see vulnerabilities in your web app
+</div></div>
+
 <hr class="sl">
+
+## Manual mapping using commands
+
+<div class="row row-cols-md-2"><div>
+
+`nmap` bellow is doing a lot of stuff for us, but it may be worthwhile to know a bit more about how you could fetch such information manually.
+
+**telnet** (TCP): telnet can be used to send cleartext to an HOST. You will have to "talk" in the protocol running on this port language defined in the RFC through, but when you manage too, you may find some stuff like the OS/the service running.
+
+```bash
+$ telnet ip port
+# Example in HTTP
+GET / HTTP/1.1
+HOST: random_value
+
+# after two <CR>, you will receive a response (hopefully)
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+# ...
+```
+
+Of course, in such case as it's HTTP, you can use `curl`!
+
+```bash
+$ curl -I ip:port
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+# ...
+```
+</div><div>
+
+You can also do the same with **netcat**, the difference with telnet being that you can connect to TCP, and UDP ports, and `ncat` support encryption (SSL).
+
+```bash
+$ nc ip 21
+[...] FTP server (Version 6.4/OpenBSD/Linux-ftpd-0.17) ready.
+```
+
+</div></div>
+
+<hr class="sr">
 
 ## MASSCAN: Mass IP port scanner
 

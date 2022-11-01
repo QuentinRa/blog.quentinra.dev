@@ -45,6 +45,8 @@ $ hydra -l username -P /usr/share/wordlists/rockyou.txt ssh://MACHINE_IP
 ```bash
 $ nmap IP -p 22 --script ssh-brute --script-args userdb=users.lst,passdb=pass.lst
 ```
+
+> More services? See [nmap brute list of NSE scripts](https://nmap.org/nsedoc/categories/brute.html).
 </div><div>
 
 Both `.lst` files are literally files with one username/password per line, and nmap will try the cartesian product of both files <small>(i.g. the first username with every password, the second username with every password...)</small>.
