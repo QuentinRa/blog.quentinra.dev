@@ -38,11 +38,11 @@
 * The server use a weak cryptographic algorithm
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Discovery of a website
 
-*As a penetration tester, you will have to list every feature of the website. For instance, "list all products":`/products,` "list a product":`/products?id=x`. This is done as you explore by tools such as Burp.*
+*As a penetration tester, you will have to list every feature of the website. For instance, "list all products": `/products,` "list a product": `/products?id=x`. This is done as you explore by tools such as Burp.*
 
 <div class="row row-cols-md-2"><div>
 
@@ -103,7 +103,7 @@ If you can find employees on GitHub/..., you may find what language/frameworks t
 You may also look for personal websites/posts/interest of employees, because that may be an indicator too.
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Frameworks
 
@@ -130,7 +130,7 @@ If you found a framework
   * [Wordpress: THM Internals](https://medium.com/swlh/tryhackme-internal-walkthrough-fdc6c4b569bd)
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Forced Browsing / Server enumeration
 
@@ -144,14 +144,19 @@ Forced browsing means using an automated tool in order to find hidden folders, a
 * admin/cms panels (ex: WordPress admin login page)
 * private files (ex: documents...)
 
+<br>
+
+📌 **Insecure Direct Object References** (BrokenAccessControl) is a failure in which we can guess given a URL how to access other elements,
+and if we change the URL <small>(id=10$\to$id=11)</small>, we can indeed access them.
+</div><div>
+
 Most tools, namely **web scanners**, are taking
 
-* **a URL**: `http://xxx.yyy`, `https://xxx.yyy:80`, `127.0.0.1`, `127.0.0.1:80`
-* **a WordList**: on kali, use the command `wordlists` to find directories used to store wordlists. Alternatively, install the command `seclists` to have even more wordlists.
+* **a URL**
+* **a WordList**: see the package `wordlists`, and `seclists` on Kali
   * `/usr/share/wordlists/dirb/common.txt`
   * `/usr/share/wordlists/dirbuster/directory-list-2.3-small.txt`
   * ...
-</div><div>
 
 <details class="details-e">
 <summary class="pb-2">GoBuster (6.7k ⭐ / Language: Go)</summary>
