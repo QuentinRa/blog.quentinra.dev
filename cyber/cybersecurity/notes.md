@@ -257,25 +257,11 @@ Note that choosing a working payload could become a trial and error process due 
 
 ## Recon
 
-* whois to query WHOIS servers
-  * Registrar -> find more about it
-  * Contact info
-  * ...
-* nslookup to query DNS servers
-  * nslookup -type=A tryhackme.com 1.1.1.1
-* dig to query DNS servers
-* DNSDumpster / https://dnsdumpster.com/
-  * ...
 * Shodan.io : a browser indexing devices and their information
   * https://www.shodan.io/
   * https://help.shodan.io/the-basics/search-query-fundamentals
   * https://tryhackme.com/room/shodan
   * can see the top ports for apache...
-* https://www.unifiedkillchain.com/
-* Passive reconnaissance activities
-  * Looking up DNS records of a domain from a public DNS server. 
-  * Checking job ads related to the target website. 
-  * Reading news articles about the target company.
 
 ----
 

@@ -160,3 +160,32 @@ You may also use
 * `#hashtag`: search for a hashtag
 * `xxx OR yyy`: search both xxx and yyy
 </div></div>
+
+<hr class="sl">
+
+## Recon using certificates/DNS records
+
+<div class="row row-cols-md-2"><div>
+
+[DNS](/info/networking/index.md#domain-name-system-dns-protocol) <small>(used to translate a domain name to an IP address)</small> are storing records about a domain, and its subdomains. The knowledge related to subdomains is stored [here](../web/subdomains/index.md#osint).
+
+Much like subdomains, you can use:
+
+* [crt.sh](https://crt.sh/) to search for certificates issued for a domain name
+* [ct search](https://ui.ctsearch.entrust.com/ui/ctsearchui) same, may fetch old certificates
+* [dnsdumpster](https://dnsdumpster.com/) fetch DNS records
+</div><div>
+
+You can use the [whois](https://www.whois.com/whois/) website, or their command, to dig information about the owner of a domain name, their registrar...
+
+You can use the commands [nslookup/dig](/info/linux/networking/index.md#interact-with-the-outside) to query DNS servers.
+
+```bash
+# A = IPV4, AAAA=IPV6, MX, TXT, CNAME...
+$ nslookup -type=A example.com
+$ dig example.com -t A
+# ask 1.1.1.1 DNS server
+$ nslookup -type=A example.com 1.1.1.1
+$ dig example.com -t A @1.1.1.1
+```
+</div></div>

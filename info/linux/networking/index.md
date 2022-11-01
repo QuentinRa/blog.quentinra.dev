@@ -131,7 +131,7 @@ You can give a domain name, or an IP (`-x`).
 
 ```bash
 # Name
-$ dig google.fr
+$ dig example.com
 # IP
 $ dig -x 8.8.8.8
 ```
@@ -147,13 +147,13 @@ We can explicitly ask for some data by using the option `-t` with one of the fol
 * `NS`: nameserver
 * `A`: IPV4
 * `AAAA`: IPV6
-* `MS`: mail server
+* `MX`: mail server
 
 ```bash
-$ dig google.fr -t A
+$ dig example.com -t A
 ;; ANSWER SECTION:
 google.fr.              300     IN      A  172.217.13.131
-$ dig google.fr -t AAAA
+$ dig example.com -t AAAA
 ;; ANSWER SECTION:
 google.fr.              300     IN      AAAA 2607:f8b0:4020:805::2003
 ```
