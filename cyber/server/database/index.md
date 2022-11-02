@@ -2,13 +2,13 @@
 
 [![sqlinjectionlm](../../_badges/thm/sqlinjectionlm.svg)](https://tryhackme.com/room/sqlinjectionlm)
 
-> Common databases are: MySQL, Microsoft SQL Server (MSSQL), MongoDB, GraphQL, PostgresSQL.<br> While you may see MariaDB, SQLite; Redis, and Oracle too.
+You can find a course about [SQL](/info/databases/sql/index.md) for relational database, and a course for [NoSQL](/info/databases/nosql/index.md) on Memorize. To summarize, the former are used to store data in a predefined format (relational model), while the latter is used by dataBases that want the flexibility, like adding some properties only to some users.
+
+> **Common DBMS are**: MySQL, Microsoft SQL Server (MSSQL), MongoDB, GraphQL, PostgresSQL.<br>**Other well-known DBMS**: MariaDB, SQLite; Redis, and Oracle too.
 
 <hr class="sl">
 
-## Random
-
-Note: this isn't a course about SQL, but stuff that may be useful to hackers.
+## Random notes (SQL)
 
 <div class="row row-cols-md-2"><div>
 
@@ -18,7 +18,7 @@ Note: this isn't a course about SQL, but stuff that may be useful to hackers.
   * `...`
 * `mysql -u root -p -h <ip>`: login as root to the database at `<ip>`
   * Use `mysql -u root -p` for a local database.
-  * Try an empty password, as this is the default password for root. [You may check this article](https://redteamnation.com/mysql-user-defined-functions/).
+  * Try an empty password, as this is the default password for root.
 </div><div>
 
 Inside the SQL console, you may use
@@ -36,9 +36,7 @@ Note that even if you can insert a path, you should start the SQL console inside
 
 <div class="row row-cols-md-2"><div>
 
-Most websites are using SQL database to store records. For instance, when using a login form, the username will most likely be used to fetch a user, then there will be a check of the password.
-
-In some cases, SQL injections are possible. It means that instead of providing our username, we will provide some SQL code that will be injected in the SQL request, and allow a hacker to access the database via the login form.
+Most websites are using SQL database to store records. Injections are possible, when a query to a database uses data from the user (ex: username), without escaping it, meaning that an attack why use some SQL code, instead of a username. This would allow a hacker to access the database, to steal/edit/delete data...
 
 **Example of injectable PHP code**: this code is fetching a list of products matching the product name send by the client.
 
@@ -58,30 +56,30 @@ Then, the SQL query that will be executed will be
 Select name,desc from product where name LIKE '%' UNION Select username,password FROM users-- -%'
 ```
 
-Notice that now, the query will return a list of product, concatenated with a list of usernames/password!
+UNION is used to concatenate the results of two queries, here the first one return a list of products, while the second one return a list (username,password).
 </div><div>
 
-**Explanation**
+**How we created this payload:**
 
-**Inject `'`**: because we want to close the "Like", and avoid an error `[...] LIKE '%`.
+**Test `'`**: because the value in inside quotes, we need to close it.
 
 ```sql
 Select name,desc from product where name LIKE '%'%'
 ```
 
-**1. Inject `' --`**: the problem, is that now the query won't work, because we have 3 single quotes, and there is a trailing `%`. So, what we do is commenting the rest of the query.
+The problem, is that now the query won't work, because we have a trailing `%'`. So, we comment the rest of the query with `' --`.
 
 ```sql
 Select name,desc from product where name LIKE '%' --%'
 ```
 
-**2. Inject `'-- -`**:  The code above may not work on some DBMS, because they want a space between the start of a comment, and the comment itself. So, we add ` -`, to ensure that there is a space.
+The code above may not work on some DBMS, because they want a space between the start of a comment, and the comment itself. So, we add "` -`", to ensure that there is a space giving us **`'-- -`**.
 
 ```sql
 Select name,desc from product where name LIKE '%' -- -%'
 ```
 
-**3. Have fun**: between `'%'` and `-- -%'`, we can write SQL code, through the syntax of the final query must be valid. In the example, we used `UNION Select username,password FROM users`, which is used to merge results of two queries.
+Between `'` and `-- -`, we can write SQL code, through the syntax of the final query must be valid ✌️. In the example, we used "` UNION Select username,password FROM users`" to merge the results of two queries.
 </div></div>
 
 <hr class="sl">
@@ -126,8 +124,8 @@ There are many scenarios in which a hacker will find a SQL injection. The exampl
 Mitigations
 
 * Use **prepared requests** (statements), they are ensuring that parameters of your queries are not interpreted as SQL code
-* Input validation or escaping user input: You can filter input, but you CAN'T rely on it, as you filter will _most likely_ be bypassed
-* Do not trust anyone. SQL injections may be delayed. You may do protect your login queries, but if the provided username is some SQL code, then any other request using the username may interpret it, hence you should secure every request, even if there are not handling data from the user, as they may later. You should use an API for better security.
+* **Input validation** or **escaping user input**: You can filter input, but you CAN'T rely on it, as you filter will _most likely_ be bypassed
+* **Do not trust anyone** 📌. SQL injections may be delayed. You may do protect your login queries, but if the provided username is some SQL code, then any other request using the username may interpret it, hence you should secure every request, even if there are not handling data from the user, as they may later. You should use an API for better security.
 </div></div>
 
 <hr class="sr">

@@ -59,7 +59,7 @@ It's not very likely again, but it's possible that the website is making request
 
 <hr class="sr">
 
-## Remediation
+## Mitigations
 
 <div class="row row-cols-md-2"><div>
 
