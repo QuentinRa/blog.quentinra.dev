@@ -59,7 +59,6 @@ Between `'` and `-- -`, we can write SQL code, through the syntax of the final q
 
 There are many scenarios in which a hacker will find a SQL injection. The example above was a **Union-based SQLi**.
 
-
 <table class="table table-bordered table-striped border-dark"><thead>
 <tr><th>Name</th><th>Description</th></tr>
 </thead><tbody>
@@ -84,12 +83,6 @@ There are many scenarios in which a hacker will find a SQL injection. The exampl
 </tbody></table>
 </div><div>
 
-**Payloads** are the values that you are using the break into the database.
-
-* [sql-injection-payload-list](https://github.com/payloadbox/sql-injection-payload-list) (2.6k ⭐)
-* [PayloadsAllTheThings/SQL Injection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection) (42.3k ⭐)
-* Tools, such as SQLMap (25k ⭐)
-
 Mitigations
 
 * Use **prepared requests** (statements), they are ensuring that parameters of your queries are not interpreted as SQL code
@@ -100,6 +93,18 @@ Mitigations
 <hr class="sr">
 
 ## Famous payloads
+
+**Payloads** are the values that you are using the break into the database.
+
+<div class="row row-cols-md-2"><div>
+
+* [sql-injection-payload-list](https://github.com/payloadbox/sql-injection-payload-list) (2.6k ⭐)
+* [PayloadsAllTheThings/SQL Injection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection) (42.3k ⭐)
+</div><div>
+
+* [SQLMap](../sqlmap/index.md) (25k ⭐) - automated tool 📌
+
+</div></div>
 
 <table class="table table-bordered table-striped border-dark mt-3">
 <thead>
@@ -128,22 +133,6 @@ Mitigations
 </div></div>
 
 <hr class="sl">
-
-## SQLMap
-
-<div class="row row-cols-md-2"><div>
-
-From the [SQLMap GitHub Repository](https://github.com/sqlmapproject/sqlmap) (25k ⭐): "sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.".
-
-
-</div><div>
-
-> [SQLMap CheatSheet](https://www.security-sleuth.com/sleuth-blog/2017/1/3/sqlmap-cheat-sheet) (external)
-</div></div>
-
-> You can use **BurpSuite** with SQLMap. Once you intercepted a request, right-click on it, and use **Save item**. Then, in SQLMap, use `-r /path/to/your/saved/item`. If your antivirus is blocking SQLMap, this may bypass it.
-
-<hr class="sr">
 
 ## Manual Union-based SQLi
 
@@ -227,7 +216,7 @@ SELECT [...] UNION SELECT group_concat(col1 || ":" || col2, '<br>') [...]
 
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Manual Error-based SQLi
 
@@ -318,7 +307,7 @@ If the query returns true, you may have one more database to check up. In the en
 ```
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Manual Time-based SQLi
 
