@@ -92,6 +92,13 @@
         "hidden": false
       },
       {
+        "tag": "server/web/ssrf/index.md",
+        "name": "SSRF",
+        "desc": "Server-Side Request Forgery",
+        "icon": null,
+        "hidden": false
+      },
+      {
         "tag": "server/web/burpsuite/index.md",
         "name": "Burp Suite",
         "desc": "",
@@ -111,8 +118,8 @@
     "OS": [
       {
         "tag": "server/services.md",
-        "name": "Services",
-        "desc": "SSH, FTP, RDP...",
+        "name": "Exploit services",
+        "desc": "Notes about misconfigurations, discovery... of services (SSH, FTP...).",
         "icon": null,
         "hidden": false
       },

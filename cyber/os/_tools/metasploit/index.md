@@ -172,7 +172,7 @@ msf6 exploit('module_used') > sessions -i 1
 
 <hr class="sl">
 
-## Meterpreter on Windows
+## Meterpreter
 
 <div class="row row-cols-md-2"><div>
 
