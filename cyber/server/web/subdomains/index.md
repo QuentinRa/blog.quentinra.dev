@@ -10,6 +10,8 @@ As a remainder, a domain is something like `example.com`, while a subdomain may 
 
 * `www.example.com`
 * `v2.www.example.com`
+
+> **Todo**: [can I take your subdomain?](https://canitakeyoursubdomain.name/)
 </div><div>
 
 Wordlists that you may use

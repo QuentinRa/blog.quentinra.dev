@@ -116,6 +116,10 @@ Servers implementing these protocols are subject to different kinds of attacks. 
   * hydra -d, for debugging
   * Mitigations: https://tryhackme.com/room/protocolsandservers2
 
+<hr class="sep-both">
+
+# Vulnerabilities
+
 --- https://tryhackme.com/room/vulnerabilities101
 
 vulnerabilities = weakness or flaw.  five main categories of vulnerabilities
@@ -154,3 +158,31 @@ Nessus: do not be dependent, they often do not find every vulnerability. They ar
   * searchsploit -p 47887
 
 --- https://tryhackme.com/room/vulnerabilitycapstone
+
+<hr class="sep-both">
+
+# Meterpreter2
+
+https://tryhackme.com/room/meterpreter
+
+* Notes about the meterpreter
+* getpid
+* `tasklist /m /fi "pid eq 1304"`
+* inline (also called single) and staged
+  * staged payloads are sent to the target in two steps
+  * An initial part is installed (the stager) and requests the rest of the payload
+  * This allows for a smaller initial payload size. The inline payloads are sent in a single step.
+* `msfvenom --list payloads | grep meterpreter`: you need to pick one based on the OS, the availability of the component (python/php...), and the kind of connection allowed. Some exploits have a default Meterpreter payload see `show payloads`.
+* `help` (Windows version of Meterpreter windows/x64/meterpreter/reverse_tcp)
+* https://tryhackme.com/room/meterpreter list of commands
+* Remember to check all available commands running the help command once a Meterpreter session has started
+* Be careful; you may lose your user privileges if you migrate from a higher privileged (e.g. SYSTEM) user to a process started by a lower privileged user (e.g. webserver). You may not be able to gain them back.
+* These hashes can also be used in Pass-the-Hash attacks to authenticate to other systems that these users can access the same network.
+* load command to leverage additional tools such as Kiwi or even the whole Python language
+* Gathering further information about the target system.
+  Looking for interesting files, user credentials, additional network interfaces, and generally interesting information on the target system.
+  Privilege escalation.
+  Lateral movement.
+* SMB with credentials `using exploit/windows/smb/psexec`
+* post/windows/gather/enum_domain (target domain, can use sysinfo?)
+* `migrate -N spoolsv.exe` (printer service)
