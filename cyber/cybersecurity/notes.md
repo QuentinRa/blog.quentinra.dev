@@ -138,6 +138,8 @@ Not all vulnerabilities are exploitable.
 
 * many clients -> there is possiblity a custom/helpdesk that can be used to attck
 
+--- https://tryhackme.com/jr/exploitingavulnerabilityv2
+
 Nessus: do not be dependent, they often do not find every vulnerability. They are loud/generate a lot of logs/traffic.
 
 * Security Misconfigurations (cyrpto), and Insecure Deserialization, and not THM for the 4 categories?
@@ -147,3 +149,5 @@ Nessus: do not be dependent, they often do not find every vulnerability. They ar
 * searchsploit
   * searchsploit xxx
   * searchsploit -p 47887
+
+--- https://tryhackme.com/room/vulnerabilitycapstone

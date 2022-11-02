@@ -80,7 +80,14 @@
       {
         "tag": "server/web/subdomains/index.md",
         "name": "Subdomains",
-        "desc": "Look for additional entrypoints.",
+        "desc": "Try to expand your attack scope",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "server/web/xss/index.md",
+        "name": "XSS / JavaScript",
+        "desc": "XSS and JavaScript vulnerabilities",
         "icon": null,
         "hidden": false
       },

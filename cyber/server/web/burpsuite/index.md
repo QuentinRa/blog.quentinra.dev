@@ -1,6 +1,6 @@
 # Burp suite
 
-[![burpsuitebasics](../../../../_badges/burpsuitebasics.svg)](https://tryhackme.com/room/burpsuitebasics)
+[![burpsuitebasics](../../../_badges/burpsuitebasics.svg)](https://tryhackme.com/room/burpsuitebasics)
 
 <div class="row row-cols-md-2"><div>
 
