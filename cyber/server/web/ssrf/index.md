@@ -1,6 +1,7 @@
 # Server-Side Request Forgery
 
 [![ssrfqi](../../../_badges/thmp/ssrfqi.svg)](https://tryhackme.com/room/ssrfqi)
+[![testingforssrf](../../../_badges/owasp/testingforssrf.svg)](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/19-Testing_for_Server-Side_Request_Forgery)
 
 <div class="row row-cols-md-2"><div>
 
@@ -37,6 +38,8 @@ A vulnerable entrypoint to this attack could be
 
 ## Some examples
 
+*See [PayloadsAllTheThings/SSRF](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Request%20Forgery)*
+
 <div class="row row-cols-md-2"><div>
 
 **a?api=path $\to$ b/path**
@@ -60,12 +63,12 @@ It's not very likely again, but it's possible that the website is making request
 
 <div class="row row-cols-md-2"><div>
 
-**Deny list**
-
-You may allow every IP aside from some such as localhost (127.0.0.1), or 169.254.169.254 in cloud environment, but there is usually a lot of way to bypass such filters. For instance, `0`, `00`, `000[...]0`, `0.0.0.0`, `127.1` (IP shortening), `2130706433` (decimal), `017700000001` (octal) and many more such as [127.0.0.1.nip.io](http://127.0.0.1.nip.io)/[localtest.me](http://localtest.me) are all resolving to `127.0.0.1`.
-</div><div>
-
 **Allow List**
 
 It's usually the better way. But, if there is condition is something like `URL is starting with https://example.com`, then it can be easily bypassed with `https://example.com.malicious.website`
+</div><div>
+
+**Deny list**
+
+You may allow every IP aside from some such as localhost (127.0.0.1), or 169.254.169.254 in cloud environment, but there is usually a lot of way to bypass such filters. For instance, `0`, `00`, `000[...]0`, `0.0.0.0`, `127.1` (IP shortening), `2130706433` (decimal), `017700000001` (octal) and many more such as [127.0.0.1.nip.io](http://127.0.0.1.nip.io)/[localtest.me](http://localtest.me) are all resolving to `127.0.0.1`.
 </div></div>
