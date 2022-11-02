@@ -47,6 +47,8 @@ $ ./enum4linux.pl <options> <ip>
 * https://www.virustotal.com/gui/home/upload
 * https://www.hybrid-analysis.com/
 * https://otx.alienvault.com/ (An open-source threat tracking system)
+* https://secalerts.co/
+* https://stack.watch/
 
 <hr class="sep-both">
 
