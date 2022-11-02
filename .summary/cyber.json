@@ -113,6 +113,20 @@
         "desc": "",
         "icon": null,
         "hidden": false
+      },
+      {
+        "tag": "server/database/sqli/index.md",
+        "name": "SQL injections",
+        "desc": "",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "server/database/sqlmap/index.md",
+        "name": "SQLMap",
+        "desc": "",
+        "icon": "<i class=\"bi bi-tools\"></i>",
+        "hidden": false
       }
     ],
     "OS": [
