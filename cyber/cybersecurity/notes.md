@@ -50,6 +50,7 @@ $ ./enum4linux.pl <options> <ip>
 * https://secalerts.co/
 * https://stack.watch/
 * https://cybr.com/
+* https://www.acunetix.com/blog/articles/
 
 <hr class="sep-both">
 
