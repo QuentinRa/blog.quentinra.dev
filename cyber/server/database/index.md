@@ -1,6 +1,7 @@
 # Exploit a Database
 
 [![sqlinjectionlm](../../_badges/thm/sqlinjectionlm.svg)](https://tryhackme.com/room/sqlinjectionlm)
+[![sqlilab](../../_badges/thm/sqlilab.svg)](https://tryhackme.com/room/sqlilab)
 
 You can find a course about [SQL](/info/databases/sql/index.md) for relational database, and a course for [NoSQL](/info/databases/nosql/index.md) on Memorize. To summarize, the former are used to store data in a predefined format (relational model), while the latter is used by dataBases that want the flexibility, like adding some properties only to some users.
 
@@ -130,6 +131,36 @@ Mitigations
 
 <hr class="sr">
 
+## Famous payloads
+
+<table class="table table-bordered table-striped border-dark mt-3">
+<thead>
+<tr><th>Name</th><th>SQL</th><th>Payload</th></tr>
+</thead>
+<tbody>
+
+<tr><td>Usual PoC</td><td><code>Select [...] where xxx='here' [...]</code></td><td><code>'</code><br><small>The query will fail as there would be 3 quotes,<br> and that would confirm that an injection is possible.</small></td></tr>
+
+<tr><td>NoPassword</td><td><code>Select [...] where username='here' AND password='here' [...]</code></td><td><code>' OR 1=1 -- -</code><br><small>The query will bypass the check of the password,<br>if it was made in the query.<br>We use 1=1 for maximum compatibility.</small></td></tr>
+
+<tr><td>Input box String</td><td><code>Select [...] where xxx='here' [...]</code></td><td><code>' code -- -</code></td></tr>
+
+<tr><td>Input box Non-String</td><td><code>Select [...] where xxx=here [...]</code></td><td><code>'' code -- -</code></td></tr>
+
+<tr><td>Update</td><td><code>Update [...] set x='here',y=[...]</code></td><td><code>',x=(code),y='</code></td></tr>
+</tbody></table>
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+* If there are client-side filters, then intercept the request (ex: Burp)
+
+* If the developer was lazy, the "names" in the form, may be similar, or the name of columns in the database
+
+</div><div>
+</div></div>
+
+<hr class="sl">
+
 ## SQLMap
 
 <div class="row row-cols-md-2"><div>
@@ -143,26 +174,6 @@ From the [SQLMap GitHub Repository](https://github.com/sqlmapproject/sqlmap) (25
 </div></div>
 
 > You can use **BurpSuite** with SQLMap. Once you intercepted a request, right-click on it, and use **Save item**. Then, in SQLMap, use `-r /path/to/your/saved/item`. If your antivirus is blocking SQLMap, this may bypass it.
-
-<hr class="sl">
-
-## Famous payloads
-
-<div class="row row-cols-md-2"><div>
-
-Testing if a SQL injection is possible. If it "works", it means that we will have "3 quotes" in the SQL query, so there will be an error.
-
-```none
-'
-```
-</div><div>
-
-Login without password on a website that do password check in an injectable query. The `1=1` is, like `-- -`, something to support some DBMS that are not allowing "1", or "TRUE".
-
-```none
-' OR 1=1 -- -
-```
-</div></div>
 
 <hr class="sr">
 

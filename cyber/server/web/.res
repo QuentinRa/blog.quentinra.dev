@@ -7,6 +7,7 @@ Cookies
 https://www.databreaches.net/hackers-are-using-cookies-to-sidestep-two-factor-authentication/
 https://www.thewindowsclub.com/cookie-stealing-or-scraping
 https://thehackernews.com/2021/10/hackers-stealing-browser-cookies-to.html
+https://www.kirsle.net/wizards/flask-session.cgi
 
 ----
 File upload
@@ -23,11 +24,3 @@ If an attacker manage to upload a PHP script on the server,
 they will most likely try to do **reverse engineering**, meaning using a command such as `sudo nc -lvnp 443`,
 and accessing a remote shell on your server <small>(443 = HTTPS, so you go "unnoticed")</small>.
 ----
-
-Random
-$_REQUEST=$_GET+$_POST. If both have a key, then post is used.
-GET url with non-injectable parameter (verified)
-POST URL in which you can override the value of the non-injectable parameter
-curl 'http://10.10.136.157/customers/reset?email=robert@acmeitsupport.thm' -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=robert&email=hacker@hack.ca'
-https://tryhackme.com/room/authenticationbypass
-https://tryhackme.com/room/subdomainenumeration
