@@ -14,6 +14,7 @@
 * https://github.com/OWASP/CheatSheetSeries
 * https://www.zaproxy.org/
 * https://github.com/OWASP/Amass
+* https://cheatsheetseries.owasp.org/index.html
 
 <hr class="sep-both">
 
