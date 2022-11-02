@@ -161,28 +161,28 @@ Nessus: do not be dependent, they often do not find every vulnerability. They ar
 
 <hr class="sep-both">
 
-# Meterpreter2
+# Linux privilege esc
 
-https://tryhackme.com/room/meterpreter
+* https://tryhackme.com/room/linprivesc
 
-* Notes about the meterpreter
-* getpid
-* `tasklist /m /fi "pid eq 1304"`
-* inline (also called single) and staged
-  * staged payloads are sent to the target in two steps
-  * An initial part is installed (the stager) and requests the rest of the payload
-  * This allows for a smaller initial payload size. The inline payloads are sent in a single step.
-* `msfvenom --list payloads | grep meterpreter`: you need to pick one based on the OS, the availability of the component (python/php...), and the kind of connection allowed. Some exploits have a default Meterpreter payload see `show payloads`.
-* `help` (Windows version of Meterpreter windows/x64/meterpreter/reverse_tcp)
-* https://tryhackme.com/room/meterpreter list of commands
-* Remember to check all available commands running the help command once a Meterpreter session has started
-* Be careful; you may lose your user privileges if you migrate from a higher privileged (e.g. SYSTEM) user to a process started by a lower privileged user (e.g. webserver). You may not be able to gain them back.
-* These hashes can also be used in Pass-the-Hash attacks to authenticate to other systems that these users can access the same network.
-* load command to leverage additional tools such as Kiwi or even the whole Python language
-* Gathering further information about the target system.
-  Looking for interesting files, user credentials, additional network interfaces, and generally interesting information on the target system.
-  Privilege escalation.
-  Lateral movement.
-* SMB with credentials `using exploit/windows/smb/psexec`
-* post/windows/gather/enum_domain (target domain, can use sysinfo?)
-* `migrate -N spoolsv.exe` (printer service)
+```
+Resetting passwords
+Bypassing access controls to compromise protected data
+Editing software configurations
+Enabling persistence
+Changing the privilege of existing (or new) users
+Execute any administrative command
+```
+
+* hostname can be used to find the role of the foothold user (ex: website-dev)
+* uname -a (kernel)
+* /proc/version (processes, kernel version?, is gcc installed?)
+* /etc/issue (maybe used to find the system)
+* `ps -A: View all running processes` / `ps axjf: View process tree`
+* see all users
+* see the network interfaces/routes/communications (https://tryhackme.com/room/linprivesc netcat)
+* (https://tryhackme.com/room/linprivesc find?)
+* Although it looks simple, please remember that a failed kernel exploit can lead to a system crash. Make sure this potential outcome is acceptable within the scope of your penetration testing engagement before attempting a kernel exploit.
+* https://www.linuxkernelcves.com/cves
+* LES (Linux Exploit Suggester) but remember that these tools can generate false positives (report a kernel vulnerability that does not affect the target system) or false negatives (not report any kernel vulnerabilities although the kernel is vulnerable).
+* https://tryhackme.com/room/linprivesc (hint/notes)
