@@ -4,7 +4,7 @@
 
 ## Volatility
 
-[![bpvolatility](../../_badges/bpvolatility.svg)](https://tryhackme.com/room/bpvolatility)
+[![bpvolatility](../../_badges/thm/bpvolatility.svg)](https://tryhackme.com/room/bpvolatility)
 
 <div class="row row-cols-md-2"><div>
 

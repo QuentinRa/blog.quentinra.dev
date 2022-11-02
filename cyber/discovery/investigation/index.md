@@ -1,6 +1,6 @@
 # Investigation
 
-[![passiverecon](../../_badges/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
+[![passiverecon](../../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
 
 <div class="row row-cols-md-2"><div>
 
@@ -13,10 +13,6 @@ Investigation, or passive reconnaissance (recon) involve gathering information a
 </div><div>
 
 The goal is to find as much information as possible. This step is followed by active reconnaissance where you directly interact with the target.
-
-**DNS**
-
-The knowledge related to DNS is stored in [another course](../../server/dns/index.md#recon).
 
 **Subdomains**
 
@@ -167,7 +163,7 @@ You may also use
 
 <div class="row row-cols-md-2"><div>
 
-[DNS](/info/networking/index.md#domain-name-system-dns-protocol) <small>(used to translate a domain name to an IP address)</small> are storing records about a domain, and its subdomains. The knowledge related to subdomains is stored [here](../web/subdomains/index.md#osint).
+[DNS](/info/networking/index.md#domain-name-system-dns-protocol) <small>(used to translate a domain name to an IP address)</small> are storing records about a domain, and its subdomains. The knowledge related to subdomains is stored [here](/cyber/server/web/subdomains/index.md#osint).
 
 Much like subdomains, you can use:
 
@@ -204,4 +200,5 @@ $ dig example.com -t A @1.1.1.1
 **Todo**
 
 * [THM Shodan](https://tryhackme.com/room/shodan)
+* During the Black Friday/Cyber Monday, Shodan may be at 5$ for life
 </div></div>

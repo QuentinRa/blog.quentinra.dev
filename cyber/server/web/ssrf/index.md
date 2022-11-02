@@ -1,6 +1,6 @@
 # Server-Side Request Forgery
 
-[![ssrfqi](../../../_badges/ssrfqi.svg)](https://tryhackme.com/room/ssrfqi)
+[![ssrfqi](../../../_badges/thmp/ssrfqi.svg)](https://tryhackme.com/room/ssrfqi)
 
 <div class="row row-cols-md-2"><div>
 

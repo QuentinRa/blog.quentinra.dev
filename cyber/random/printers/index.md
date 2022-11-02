@@ -4,7 +4,7 @@
 
 ## Internet Printing Protocol - 631 (tcp)
 
-[![printerhacking101](../../_badges/printerhacking101.svg)](https://tryhackme.com/room/printerhacking101)
+[![printerhacking101](../../_badges/thm/printerhacking101.svg)](https://tryhackme.com/room/printerhacking101)
 
 <div class="row row-cols-md-2"><div>
 

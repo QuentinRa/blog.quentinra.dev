@@ -1,6 +1,6 @@
 # Host discovery
 
-[![activerecon](../../_badges/activerecon.svg)](https://tryhackme.com/room/activerecon)
+[![activerecon](../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
 
 Host discovery is the core of the active reconnaissance (recon) activities. A hacker could other things such as getting in touch with employees, and trying to use social engineering to learn more about their company.
 
@@ -30,8 +30,8 @@ Scans may be exported too, and imported in others tools, such as in `metasploit`
 
 ## nmap port scanner
 
-[![nmap01](../../_badges/nmap01.svg)](https://tryhackme.com/room/nmap01)
-[![furthernmap](../../_badges/furthernmap.svg)](https://tryhackme.com/room/furthernmap)
+[![nmap01](../../_badges/thm/nmap01.svg)](https://tryhackme.com/room/nmap01)
+[![furthernmap](../../_badges/thm/furthernmap.svg)](https://tryhackme.com/room/furthernmap)
 
 <div class="row row-cols-md-2"><div>
 
@@ -194,7 +194,7 @@ $ nmap scanme.nmap.org --script=s1,s2 --script-args s1.key=value
 
 ## Nessus vulnerability scanner
 
-[![rpnessusredux](../../_badges/rpnessusredux.svg)](https://tryhackme.com/room/rpnessusredux)
+[![rpnessusredux](../../_badges/thm/rpnessusredux.svg)](https://tryhackme.com/room/rpnessusredux)
 
 <div class="row row-cols-md-2"><div>
 
@@ -268,7 +268,7 @@ $ nc ip 21
 
 ## MASSCAN: Mass IP port scanner
 
-[![nmap01](../../_badges/nmap01.svg)](https://tryhackme.com/room/nmap01)
+[![nmap01](../../_badges/thm/nmap01.svg)](https://tryhackme.com/room/nmap01)
 
 <div class="row row-cols-md-2"><div class="align-self-center">
 

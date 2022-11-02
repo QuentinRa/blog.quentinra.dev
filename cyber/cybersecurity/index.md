@@ -1,11 +1,11 @@
 # Getting started
 
-[![beginnerpathintro](../_badges/beginnerpathintro.svg)](https://tryhackme.com/room/beginnerpathintro)
-[![startingoutincybersec](../_badges/startingoutincybersec.svg)](https://tryhackme.com/room/startingoutincybersec)
-[![defensivesecurity](../_badges/defensivesecurity.svg)](https://tryhackme.com/room/defensivesecurity)
-[![careersincyber](../_badges/careersincyber.svg)](https://tryhackme.com/room/careersincyber)
-[![pentestingfundamentals](../_badges/pentestingfundamentals.svg)](https://tryhackme.com/room/pentestingfundamentals)
-[![principlesofsecurity](../_badges/principlesofsecurity.svg)](https://tryhackme.com/room/principlesofsecurity)
+[![beginnerpathintro](../_badges/thm/beginnerpathintro.svg)](https://tryhackme.com/room/beginnerpathintro)
+[![startingoutincybersec](../_badges/thm/startingoutincybersec.svg)](https://tryhackme.com/room/startingoutincybersec)
+[![defensivesecurity](../_badges/thmp/defensivesecurity.svg)](https://tryhackme.com/room/defensivesecurity)
+[![careersincyber](../_badges/thmp/careersincyber.svg)](https://tryhackme.com/room/careersincyber)
+[![pentestingfundamentals](../_badges/thm/pentestingfundamentals.svg)](https://tryhackme.com/room/pentestingfundamentals)
+[![principlesofsecurity](../_badges/thm/principlesofsecurity.svg)](https://tryhackme.com/room/principlesofsecurity)
 
 A lot of stuff to get started in cybersecurity, including websites to learn, practice, find news, look for news, along with CVE lookup, and websites to check if your credentials leaked, or stuff like that. 
 

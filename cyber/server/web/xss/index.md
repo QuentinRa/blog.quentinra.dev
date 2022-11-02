@@ -1,6 +1,6 @@
 # XSS and Javascript vulnerabilities
 
-[![xssgi](../../../_badges/xssgi.svg)](https://tryhackme.com/room/xssgi)
+[![xssgi](../../../_badges/thmp/xssgi.svg)](https://tryhackme.com/room/xssgi)
 
 <div class="row row-cols-md-2"><div>
 

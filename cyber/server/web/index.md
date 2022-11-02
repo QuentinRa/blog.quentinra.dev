@@ -1,9 +1,9 @@
 # Exploit a webserver
 
-[![introwebapplicationsecurity](../../_badges/introwebapplicationsecurity.svg)](https://tryhackme.com/room/introwebapplicationsecurity)
-[![contentdiscovery](../../_badges/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
-[![walkinganapplication](../../_badges/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
-[![httpindetail](../../_badges/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
+[![introwebapplicationsecurity](../../_badges/thm/introwebapplicationsecurity.svg)](https://tryhackme.com/room/introwebapplicationsecurity)
+[![contentdiscovery](../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
+[![walkinganapplication](../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
+[![httpindetail](../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
 
 *According to TryHackMe, there are 4 categories of failures related to webservices.*
 

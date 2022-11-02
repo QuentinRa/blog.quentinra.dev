@@ -2,17 +2,17 @@
 
 <span></span>
 
-[![linuxfundamentalspart1](../../_badges/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
-[![linuxfundamentalspart2](../../_badges/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
-[![linuxfundamentalspart3](../../_badges/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
-[![linux1](../../_badges/linux1.svg)](https://tryhackme.com/room/linux1)
-[![linux2](../../_badges/linux2.svg)](https://tryhackme.com/room/linux2)
+[![linuxfundamentalspart1](../../_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
+[![linuxfundamentalspart2](../../_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
+[![linuxfundamentalspart3](../../_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
+[![linux1](../../_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
+[![linux2](../../_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
 
-[![bashscripting](../../_badges/bashscripting.svg)](https://tryhackme.com/room/bashscripting)
-[![linuxstrengthtraining](../../_badges/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
-[![catregex](../../_badges/catregex.svg)](https://tryhackme.com/room/catregex)
-[![linuxprivesc](../../_badges/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
-[![commonlinuxprivesc](../../_badges/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
+[![bashscripting](../../_badges/thm/bashscripting.svg)](https://tryhackme.com/room/bashscripting)
+[![linuxstrengthtraining](../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
+[![catregex](../../_badges/thm/catregex.svg)](https://tryhackme.com/room/catregex)
+[![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
+[![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 <hr class="sl">
 
 ## Linux handy commands

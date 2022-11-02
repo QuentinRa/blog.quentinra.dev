@@ -1,7 +1,7 @@
 # metasploit
 
-[![metasploitintro](../../../_badges/metasploitintro.svg)](https://tryhackme.com/room/metasploitintro)
-[![rpmetasploit](../../../_badges/rpmetasploit.svg)](https://tryhackme.com/room/rpmetasploit)
+[![metasploitintro](../../../_badges/thm/metasploitintro.svg)](https://tryhackme.com/room/metasploitintro)
+[![rpmetasploit](../../../_badges/thm/rpmetasploit.svg)](https://tryhackme.com/room/rpmetasploit)
 
 <div class="row row-cols-md-2"><div>
 

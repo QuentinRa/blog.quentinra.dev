@@ -1,7 +1,7 @@
 # Protocols & services notes
 
-[![protocolsandservers](../_badges/protocolsandservers.svg)](https://tryhackme.com/room/protocolsandservers)
-[![protocolsandservers2](../_badges/protocolsandservers2.svg)](https://tryhackme.com/room/protocolsandservers2)
+[![protocolsandservers](../_badges/thmp/protocolsandservers.svg)](https://tryhackme.com/room/protocolsandservers)
+[![protocolsandservers2](../_badges/thmp/protocolsandservers2.svg)](https://tryhackme.com/room/protocolsandservers2)
 
 Most entries in this course are partial knowledge about protocols/services extracted from the [Protocols & Services course](/info/networking/protocols/index.md), with cybersecurity related notes about them. The former course is more about describing the services, and the client that may be used to interact with them.
 
@@ -34,7 +34,7 @@ $ ftp anonymous@ip
 
 [See Samba service for more information](/info/networking/protocols/index.md#samba---445-or-139-before-tcp)
 
-[![kenobi](../_badges/kenobi.svg)](https://tryhackme.com/room/kenobi)
+[![kenobi](../_badges/thm/kenobi.svg)](https://tryhackme.com/room/kenobi)
 
 <div class="row row-cols-md-2"><div>
 
