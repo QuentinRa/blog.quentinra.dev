@@ -99,6 +99,13 @@
         "hidden": false
       },
       {
+        "tag": "server/web/files/index.md",
+        "name": "File/Path exploits",
+        "desc": "File upload, Path transversal...",
+        "icon": null,
+        "hidden": false
+      },
+      {
         "tag": "server/web/burpsuite/index.md",
         "name": "Burp Suite",
         "desc": "",
