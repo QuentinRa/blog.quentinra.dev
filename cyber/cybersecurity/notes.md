@@ -186,3 +186,7 @@ Execute any administrative command
 * https://www.linuxkernelcves.com/cves
 * LES (Linux Exploit Suggester) but remember that these tools can generate false positives (report a kernel vulnerability that does not affect the target system) or false negatives (not report any kernel vulnerabilities although the kernel is vulnerable).
 * https://tryhackme.com/room/linprivesc (hint/notes)
+* LD_PRELOAD is a function that allows any program to use shared libraries. (https://rafalcieslak.wordpress.com/2013/04/02/dynamic-linker-tricks-using-ld_preload-to-cheat-inject-features-and-investigate-programs/)
+* `find / -type f -perm -04000 -ls 2>/dev/null`
+* on nano: use it to read/write shadow/...
+* https://tbhaxor.com/exploiting-suid-binaries-to-get-root-user-shell/
