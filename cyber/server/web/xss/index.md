@@ -9,7 +9,13 @@ Cross-site Scripting, most commonly called **XSS**, refer to injecting malicious
 **The usual proof of concept**: show an alert if the script was executed.
 
 ```js
-<script>alert('XSS');</script>
+<script>alert('XSS')</script>
+```
+
+I think you would enjoy more
+
+```js
+<script>console.log('XSS')</script>
 ```
 
 <br>
@@ -19,6 +25,11 @@ You will most likely use these references:
 * [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection) (42.5k ⭐)
 * [OWASP Filter Evasion](https://cheatsheetseries.owasp.org/cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.html) (22k ⭐)
 * [OWASP DOM XSS Prevention](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html) (22k ⭐)
+
+<br>
+
+One thing to remember is that you would rather make it invisible to the user that a script is being executed in its browser. As such, if you inject a malicious payload in the source attribute of an image field, it would be best to still make sure an image is properly displayed, so that it does not look suspicious at first glance.
+
 </div><div>
 
 <p class="text-center">Some attacks</p>
@@ -108,9 +119,41 @@ See [xsshunter](https://github.com/mandatoryprogrammer/xsshunter) (1.2k ⭐)
 
 <tr><td>JavaScript</td><td><code>xxx.innerHTML = 'here';</code></td><td><code>';MaliciousCodeHere;//</code></td></tr>
 
+<tr><td>Boxed Image</td><td><code>&lt;img src="here" alt="xxx"/&gt;</code></td><td><code>URL" onload="maliciousCodeHere"</code></td></tr>
+
+<tr><td>Boxed Image</td><td><code>&lt;img src="here" alt="xxx"/&gt;</code></td><td><code>URL" onerror="maliciousCodeHere"</code></td></tr>
+
 </tbody></table>
 
 <hr class="sr">
+
+## Bypass filters
+
+<div class="row row-cols-md-2"><div>
+
+**Logic flaw**
+
+Developers may not protect everything. For instance a select list in which a user is supposed to pick a country. A hacker can try to inject a malicious payload instead of a country, and as the developer used a select list, it may not be filtered.
+
+**Bypass HTML symbols filtering**
+
+If `<`, and `>` are filtered, an attacker may still use HTML attributes.
+</div><div>
+
+**Replace failures**
+
+If a developer used a "replace" function, then they there are tricks such as the one below. If there is a filter removing "script", then after removal of "&lt;script&gt;", we will have "s" concatenated with "cript", and we successfully bypassed the filter.
+
+```
+<s<script>cript>alert('XSS');</s<script>cript>
+// filter remove "<script>"
+<script>alert('XSS');</script>
+```
+
+There are also various tricks using ASCII/... to bypass filters.
+</div></div>
+
+<hr class="sl">
 
 ## Polyglots - the magic payloads
 
