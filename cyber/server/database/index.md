@@ -27,3 +27,9 @@ Note that even if you can insert a path, you should start the SQL console inside
 
 * `DESCRIBE <table>`: see the structure of `<table>`
 </div></div>
+
+<hr class="sl">
+
+## Privilege Escalation (SQL)
+
+See [Privilege Escalation: MySQL User Defined Functions](https://redteamnation.com/mysql-user-defined-functions/).

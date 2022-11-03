@@ -176,20 +176,22 @@ Use a breach in Windows, created by the NSA, and stolen by hackers in 2013. The 
 
 ## Learning, & Practicing
 
+You can use [cybersecurityeducation.org](https://www.cybersecurityeducation.org/) to find degrees, certifications...
+
 <div class="row row-cols-md-2"><div>
 
 **Learning**
 
 * [TryHackMe](https://tryhackme.com/) (THM): a lot of free courses, and a guide enjoyable/gratifying place to start learning, although you will have to go to other sites later
-* [academy.hackthebox.com](https://academy.hackthebox.com/catalogue): only tier-0 courses are free, so there is no much to do without paying
-* [cybersecurityeducation.org](https://www.cybersecurityeducation.org/) (not tested)
-* [hackerone.com](https://www.hackerone.com/hackers) (not tested)
-* [PortSwigger](https://portswigger.net/web-security) (not tested)
+* [academy.hackthebox.com](https://academy.hackthebox.com/catalogue): you pay to enroll in courses, you have some starter "money", and you get back all <small>(tier-0, newcomers)</small>, or a part of your credits, once you finished the course.
+* [hackerone.com](https://www.hackerone.com/hackers)
+* [PortSwigger](https://portswigger.net/web-security)
 
 **Professional training**
 
-* [hackerrank](https://www.hackerrank.com/) (not tested)
-* [sans.org: cyberaces](https://www.sans.org/cyberaces/) (not tested)
+* [hackerrank](https://www.hackerrank.com/)
+* [sans.org: cyberaces](https://www.sans.org/cyberaces/)
+* [Red Team Nation](https://redteamnation.com/)
 </div><div>
 
 **Practicing**
@@ -213,9 +215,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 
 ## News
 
-<div class="row row-cols-md-2"><div>
-
-**In English**
+<div class="row row-cols-md-2"><div><br>
 
 * [hackerone.com](https://www.hackerone.com/resources)
 * [cybernews.com](https://cybernews.com/news/)
@@ -267,13 +267,11 @@ CVEs take the form: CVE-YEAR-ID.
 * [hacktricks.xyz](https://book.hacktricks.xyz/welcome/readme)
 </div><div>
 
-Small blogs
-
 * [mikadmin.fr](https://mikadmin.fr/blog/)
 * [dhilipsanjay CTFs](https://dhilipsanjay.gitbook.io/ctfs/)
 * [TheDutchHacker](https://www.thedutchhacker.com/)
 * [0xrick](https://0xrick.github.io/categories/)
-* [cyber-security-base-19](https://github.com/rage/cyber-security-base-19) <small>(down - the didn't paid the hosting provider :3)</small>
+* [cyber-security-base-19](https://github.com/rage/cyber-security-base-19)
 * [MayADevBe](https://mayadevbe.me/)
 * [ryanplatten](https://ryanplatten.com/various-journal-entries/)
 * [kalilinuxtutorials](https://kalilinuxtutorials.com/)
