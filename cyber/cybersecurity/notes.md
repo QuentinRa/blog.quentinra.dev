@@ -200,6 +200,7 @@ Execute any administrative command
 * https://ctf101.org/
 * https://devansh.xyz/osint/2021/09/11/weaponizing-favicon-ico.html
 * https://github.com/devanshbatham/Awesome-Bugbounty-Writeups
+* Add new user
 
 <hr class="sep-both">
 

