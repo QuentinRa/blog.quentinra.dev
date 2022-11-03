@@ -63,7 +63,12 @@ $ ./enum4linux.pl <options> <ip>
 
 * take a request captured in the Proxy, edit it, and send the same request repeatedly as many times as we wish
 * tabs per request
+* Ctrl + R
 * ISO/OSI
+* Inspector to edit requets for those not familiar with HTML/...
+* Ex: SQL Injection vulnerability
+* Test endpoints, such as text, extremes (-1...), symbols...
+* SQL table ready to copy paste manual SQLi commands?
 
 <hr class="sep-both">
 
