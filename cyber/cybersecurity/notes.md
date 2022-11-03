@@ -195,3 +195,17 @@ Execute any administrative command
 * https://ctf101.org/
 * https://devansh.xyz/osint/2021/09/11/weaponizing-favicon-ico.html
 * https://github.com/devanshbatham/Awesome-Bugbounty-Writeups
+
+<hr class="sep-both">
+
+# nmap
+
+* https://tryhackme.com/room/nmap02
+  * unfiltered
+  * TCP actually send an RST,ACK to close the connection
+  * Note that we can use -F to enable fast mode and decrease the number of scanned ports from 1000 to 100 most common ports.
+  * It is worth mentioning that the -r option can also be added to scan the ports in consecutive order instead of random order. This option is useful when testing whether ports open in a consistent manner, for instance, when a target boots up.
+* Wireshark ip.addr==X.X.X.X / tcp / && / tcp.port
+* -sU -F (:D)
+* you can press enter to force nmap to display the progress
+* section about -T https://tryhackme.com/room/nmap02
