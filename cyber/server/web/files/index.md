@@ -74,3 +74,25 @@ If there are client-side filtering, you may use [BurpSuite](/cyber/server/web/bu
 $ curl URL/vulnerable.php -d 'file=/etc/flag1' -H 'Content-Type: application/x-www-form-urlencoded'
 ```
 </div></div>
+
+<hr class="sl">
+
+## File upload
+
+<div class="row row-cols-md-2"><div>
+
+A hacker could try to upload a script, and then find a way to run it. The script usually open a **reverse shell**, meaning a shell on the target, that can be access from the hacker computer.
+
+**Bypass filters**
+
+* Try `xxx.png.php` to bypass stupid filters
+* Try the null byte `xxx.php%00.png` <small>(PHP < 5.3.4)</small>
+* Try intercepting the request, changing the content type, if the server is only checking the content-type.
+
+> Do not use public/folders available to the user, if it's not needed. If you still do, do not use common names that could be found with forced browsing.
+</div><div>
+
+**Reverse shell**
+
+To avoid alerting IDS, the reverse shell should use a port that would not be suspected such as `443` (HTTPS).
+</div></div>
