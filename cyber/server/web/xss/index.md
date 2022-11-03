@@ -1,4 +1,4 @@
-# XSS and Javascript vulnerabilities
+# XSS vulnerabilities (Javascript)
 
 [![xssgi](../../../_badges/thmp/xssgi.svg)](https://tryhackme.com/room/xssgi)
 

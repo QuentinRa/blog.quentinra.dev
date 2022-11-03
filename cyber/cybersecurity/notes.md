@@ -192,3 +192,6 @@ Execute any administrative command
 * `find / -type f -perm -04000 -ls 2>/dev/null`
 * on nano: use it to read/write shadow/...
 * https://tbhaxor.com/exploiting-suid-binaries-to-get-root-user-shell/
+* https://ctf101.org/
+* https://devansh.xyz/osint/2021/09/11/weaponizing-favicon-ico.html
+* https://github.com/devanshbatham/Awesome-Bugbounty-Writeups

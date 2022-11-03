@@ -86,8 +86,8 @@
       },
       {
         "tag": "server/web/xss/index.md",
-        "name": "XSS / JavaScript",
-        "desc": "XSS and JavaScript vulnerabilities",
+        "name": "XSS (JavaScript)",
+        "desc": "XSS vulnerabilities",
         "icon": null,
         "hidden": false
       },
@@ -101,7 +101,7 @@
       {
         "tag": "server/web/files/index.md",
         "name": "File/Path exploits",
-        "desc": "File upload, Path transversal...",
+        "desc": "File upload, Path traversal...",
         "icon": null,
         "hidden": false
       },

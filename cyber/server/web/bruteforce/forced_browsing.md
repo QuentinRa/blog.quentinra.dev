@@ -52,7 +52,6 @@ Other options
 * `-U`: username
 * `-P`: password
 * `-p`: proxy
-* `-p`: proxy
 * `-c`: a cookie <small>(for instance, to simulated that we are logged)</small>
 </div></div>
 
