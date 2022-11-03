@@ -1,6 +1,9 @@
 # nmap port scanner
 
 [![nmap01](../../../_badges/thm/nmap01.svg)](https://tryhackme.com/room/nmap01)
+[![nmap02](../../../_badges/thmp/nmap02.svg)](https://tryhackme.com/room/nmap02)
+[![nmap03](../../../_badges/thmp/nmap03.svg)](https://tryhackme.com/room/nmap03)
+[![nmap04](../../../_badges/thmp/nmap04.svg)](https://tryhackme.com/room/nmap04)
 [![furthernmap](../../../_badges/thm/furthernmap.svg)](https://tryhackme.com/room/furthernmap)
 
 <div class="row row-cols-md-2"><div>
@@ -16,6 +19,34 @@ A port is used by a protocol such as FTP (File Transfer Protocol) to transfer da
 * `filtered`: no response, usually meaning that it's filtered by a firewall
 * `closed`: cannot be reached
 </div></div><br>
+
+> As you reminder, you can check [Networking/Ports](/info/networking/index.md#ports) to learn more about ports, you can check [Networking/Services](/info/networking/protocols/index.md) to learn more about the services using these ports, you can use [Cyber/Services](/cyber/server/services.md) to learn more about how you can exploit services, and you may also check [Cyber/Bruteforce services](/cyber/random/crack_password/services.md) to try to bruteforce a service credentials.
+
+<hr class="sep-both">
+
+## **ICMP Requests** ⚠
+
+<div class="row row-cols-md-2"><div>
+
+By default, nmap will send a query checking if a host is up. This query is a ICMP request, but they are **blocked on Windows** <small>(Windows replies closed to every ICMP request by default)</small>.
+
+To scan Windows hosts, use the option `-Pn`. The problem with that, is that if the host is actually not running Windows, but down, then you will wait a lot, so only use that if you are sure that the host is up, or you were informed that the host do not accept ICMP requests.
+</div><div>
+
+If you receive a response using ping, everything is good. If you don't, then either the host is up, and blocking ICMP requests, or it's down.
+
+```bash
+$ ping -c 10 ip
+```
+
+Example of using `-Pn`
+
+```bash
+$ nmap ip # not working if it's a Windows host
+$ nmap ip -Pn # fixed 😎
+```
+
+</div></div>
 
 <hr class="sep-both">
 
@@ -45,24 +76,19 @@ The 3 scans below can be used to try to bypass weak firewalls that have only rul
 
 * **UDP Scan** | `-sU` | `Need root privileges`. The scan is slow as UDP ports may only respond if they are closed (with a PING/ICMP), so the scan must send multiple requests, to ensure that the port isn't closed, as there is no way to ensure that the port is open, so they are usually marked as `open|filtered`.
 
-> **ICMP Requests** ⚠️: By default, nmap will send a query checking if a host is up. This query is a ICMP request, but they are **blocked on Windows** <small>(Windows replies closed to every ICMP request by default)</small>. To scan Windows hosts, use the option `-Pn`. The problem with that, is that if the host is actually not running Windows, but down, then you will wait a lot, so only use that if you are sure that the host is up.
-
-```bash
-$ nmap 55.55.55.55 # not working if it's a Windows host
-$ nmap 55.55.55.55 -Pn # fixed 😎
-```
-
 > **ICMP Scans**: are used to check if a host is up or not.
 
 * **Ping Scan** | `-sn`. Do not scan ports. If root, and targeting a host on the same network, then use ARP.
 
-</div></div><br><br>
+</div></div>
 
-🗺️ **Examples of scans** 🗺️
+<hr class="sep-both">
+
+## 🗺️ Examples of scans 🗺️
 
 <div class="row row-cols-md-2"><div>
 
-To scan a host <small>(TCP SCAN, as it's the default as non-root)</small>
+To scan a host <small>(it's a TCP SCAN, as it's the default as non-root)</small>
 
 ```bash
 $ nmap 127.0.0.1
@@ -74,7 +100,7 @@ $ nmap scanme.nmap.org
 Usually, as scans take a lot of time, we are adding `-v` to increase the verbose. The more you add, the more verbose nmap is.
 
 ```bash
-$ nmap -sT -vv scanme.nmap.org # level 2 verbose
+$ nmap -vv scanme.nmap.org # level 2 verbose
 ```
 
 You can use flags to fetch information about your targets
