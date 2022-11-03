@@ -1,6 +1,6 @@
 # Nessus vulnerability scanner
 
-[![rpnessusredux](../../_badges/thm/rpnessusredux.svg)](https://tryhackme.com/room/rpnessusredux)
+[![rpnessusredux](../../../_badges/thm/rpnessusredux.svg)](https://tryhackme.com/room/rpnessusredux)
 
 <div class="row row-cols-md-2"><div>
 
@@ -27,4 +27,8 @@ Once you are logged on the website, you can create new scans.
     * In Advanced, you may go for a "low bandwidth scan"
     * **Launch**: explore vulnerabilities to see results
 * **Web application test**: see vulnerabilities in your web app
+
+> In the credential tabs, you can log in to an account.
 </div></div>
+
+> **Note**: if you have a scope/knowledge of specific ports/... to scan, you can define a policy in the Policy tab.

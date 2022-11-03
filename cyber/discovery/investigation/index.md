@@ -54,7 +54,7 @@ Social Networks
 
 ## Inspecting files
 
-[![introdigitalforensics](../../_badges/introdigitalforensics.svg)](https://tryhackme.com/room/introdigitalforensics)
+[![introdigitalforensics](../../_badges/thm/introdigitalforensics.svg)](https://tryhackme.com/room/introdigitalforensics)
 
 <div class="row row-cols-md-2"><div>
 
@@ -126,7 +126,7 @@ Wait, and investigate what maltego found for you!
 
 ## Google Hacking/Dorking
 
-[![googledorking](../../_badges/googledorking.svg)](https://tryhackme.com/room/googledorking)
+[![googledorking](../../_badges/thm/googledorking.svg)](https://tryhackme.com/room/googledorking)
 
 <div class="row row-cols-md-2"><div>
 

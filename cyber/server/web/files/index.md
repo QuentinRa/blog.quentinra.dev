@@ -73,9 +73,4 @@ If there are client-side filtering, you may use [BurpSuite](/cyber/server/web/bu
 ```bash
 $ curl URL/vulnerable.php -d 'file=/etc/flag1' -H 'Content-Type: application/x-www-form-urlencoded'
 ```
-
-<p>
-
-If a server is filtering `$_GET`, but uses `$_REQUEST` <small>(merge of GET, and POST, if there are duplicate entries, POST take prevalence)</small>. It looks kinda special, and I hope there is no developer doing that.
-</p>
 </div></div>

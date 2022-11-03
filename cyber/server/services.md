@@ -5,6 +5,8 @@
 
 Most entries in this course are partial knowledge about protocols/services extracted from the [Protocols & Services course](/info/networking/protocols/index.md), with cybersecurity related notes about them. The former course is more about describing the services, and the client that may be used to interact with them.
 
+> You may also check [Cyber/Bruteforce services](/cyber/random/crack_password/services.md) to try to bruteforce a service credentials.
+
 <hr class="sr">
 
 ## File Transfer protocol - 21 (tcp)

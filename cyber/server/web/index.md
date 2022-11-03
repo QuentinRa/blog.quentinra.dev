@@ -4,6 +4,7 @@
 [![contentdiscovery](../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
 [![walkinganapplication](../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
 [![httpindetail](../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
+[![authenticationbypass](../../_badges/thmp/authenticationbypass.svg)](https://tryhackme.com/room/authenticationbypass)
 
 *According to TryHackMe, there are 4 categories of failures related to webservices.*
 
