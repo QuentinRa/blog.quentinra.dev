@@ -101,6 +101,16 @@ Intruder
   * If long responses
   * Send to comparer
   * Then identify what changed
+* Sequencer allows us to measure the entropy (or randomness, in other words) of "tokens"
+  * Live capture: capture a request generating tokens
+  * Manual load: load a list of captured tokens
+* "Cross-Site Request Forgery (CSRF) token protecting a form submission"
+* https://tryhackme.com/room/burpsuiteom
+* Extender
+*  Burp App Store BApp Store (ex: Request Timer for time-based responses)
+* Logger++
+* Jython to use Python modules
+* JRuby... https://github.com/jruby/jruby
 
 <hr class="sep-both">
 
