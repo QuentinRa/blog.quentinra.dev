@@ -87,6 +87,20 @@ Intruder
   * Simple lists
   * Numbers (range...)
 * Payload Processing: ex: capitalize, add prefix, add suffix...
+* Start attack
+  * Mark results as errors (based on response code/size) to filter results. We can click on a column to sort results.
+* https://tryhackme.com/room/burpsuiteintruder (macros)
+* Decoder
+  * Input something, then use the menus to apply transformation on it (smart decode much like cyber-chief magic)
+  * / is %2f (https://www.asciitable.com/ ascii then hex)
+  * Gzip: Gzip provides a way to compress data. It is widely used to reduce the size of files and pages before they are sent to your browser.
+  * Colors to see what transformation
+* Comparer
+  * Intercept requests
+  * Repeater
+  * If long responses
+  * Send to comparer
+  * Then identify what changed
 
 <hr class="sep-both">
 
