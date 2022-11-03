@@ -25,19 +25,35 @@
         "hidden": false
       }
     ],
-    "Discovery": [
+    "investigation": [
       {
         "tag": "discovery/investigation/index.md",
         "name": "Investigation",
         "desc": "",
         "icon": null,
         "hidden": false
-      },
+      }
+    ],
+    "discovery": [
       {
         "tag": "discovery/host/index.md",
         "name": "Host discovery",
         "desc": "",
         "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "discovery/host/nmap/index.md",
+        "name": "Nmap",
+        "desc": "",
+        "icon": "<i class=\"bi bi-tools\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "discovery/host/nessus/index.md",
+        "name": "Nessus",
+        "desc": "",
+        "icon": "<i class=\"bi bi-tools\"></i>",
         "hidden": false
       }
     ],
