@@ -68,7 +68,25 @@ $ ./enum4linux.pl <options> <ip>
 * Inspector to edit requets for those not familiar with HTML/...
 * Ex: SQL Injection vulnerability
 * Test endpoints, such as text, extremes (-1...), symbols...
-* SQL table ready to copy paste manual SQLi commands?
+* ...
+
+Intruder
+
+* use Intruder to fuzz for subdirectories, endpoints, or virtual hosts
+* CTRL+I
+* Options to flag results?
+* § (silcrows ) not $ stupid
+* automatically detected
+* you can do it on headers too!
+* 4 attack types
+  * Sniper is the first and most common attack type (one set of payloads). If we have two values, it will try replacing the first by every word, then the second, but not both at the same time. (#words * #parameters). We attack only one parameter.
+  * Battering Ram: take one too, but replace every param by the nth word. (#words)
+  * Pitchfork is the attack type you are most likely to use. One payload set (wordlist) per parameter. The first of each tried simulataneously. (20 max)
+  * Cluster bomb: test every combination (20 max, one w per p). #w1 * #wn. Create a hude amount of traffic, CE rate-limited.
+* Payload set
+  * Simple lists
+  * Numbers (range...)
+* Payload Processing: ex: capitalize, add prefix, add suffix...
 
 <hr class="sep-both">
 
