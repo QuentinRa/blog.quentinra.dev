@@ -251,3 +251,4 @@ Execute any administrative command
 * ftp://IP:port
 * ftp xxx@IP -p port
 * nmap –script=http-server-header.nse XXX (or -sC)
+* http://www.itsecgames.com/index.htm
