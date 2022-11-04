@@ -25,7 +25,7 @@ The second is a **URL**. For instance, `example.com`. Fuzzers will allow you to 
 
 <hr class="sl">
 
-## ffuf - Fuzz Faster U Fool
+## ffuf - fuzz faster u fool
 
 <div class="row row-cols-md-2"><div>
 
@@ -65,9 +65,9 @@ You will most likely want to only show some answer, or filter=hide some answers,
 ```bash
 $ ffuf -fc 404,500 [...] # hides 404,500
 $ ffuf -fc 400-404 [...] # hides 400 to 404
-$ wfuzz -mc 200 [...] # show only 200
-$ wfuzz -mc 200,301 [...] # show only 200,301
-$ wfuzz -fs 5230 [...] # hides responses with size=5230
+$ ffuf -mc 200 [...] # show only 200
+$ ffuf -mc 200,301 [...] # show only 200,301
+$ ffuf -fs 5230 [...] # hides responses with size=5230
 ```
 </div></div>
 

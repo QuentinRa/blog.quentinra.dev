@@ -1,18 +1,18 @@
 # Exploit Linux
 
-<span></span>
-
 [![linuxfundamentalspart1](../../_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 [![linuxfundamentalspart2](../../_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 [![linuxfundamentalspart3](../../_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
 [![linux1](../../_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
 [![linux2](../../_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
-
 [![bashscripting](../../_badges/thm/bashscripting.svg)](https://tryhackme.com/room/bashscripting)
 [![linuxstrengthtraining](../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 [![catregex](../../_badges/thm/catregex.svg)](https://tryhackme.com/room/catregex)
 [![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
+
+> [Privilege-Escalation](https://github.com/Ignitetechnologies/Privilege-Escalation) (2.6k ⭐) list a lot of CTF to practice.
+
 <hr class="sl">
 
 ## Linux handy commands
@@ -60,14 +60,17 @@ Learn more about your environment
 
 <div class="row row-cols-md-2 mt-3"><div>
 
+**Learn more about your computer** 🗺️
+
+* `/proc/version`: information about the machine
+* `cat /etc/*release`: information about the operating system
+
 **Look for (sensitive?) information** 🔑
 
 * `/etc/passwd`: usernames, their groups, their home, and their shell
 * `/etc/shadow` <small>(root)</small>: username, and their hashed password
 * `/etc/group`/`groups`: groups
 * `/etc/gshadow` <small>(root)</small>: groups hashed passwords (if any)
-* `/proc/version`: information about the machine
-* `cat /etc/*release`: information about the operating system
 * `/etc/sudoers` <small>(root)</small>: sudoers, and rules applied to them, if any
 * `ls -ahl /root/`: see if there are readable files in root's home
 * `ls /`: look for unexpected folders in `/`
@@ -78,18 +81,19 @@ Learn more about your environment
 
 <br>
 
-**Logs** 🗺️
+**There may be useful things in logs** 🔎 
 
-* `/var/log/` (folder): log files
-* Look for ufw (firewall) logs
-* Look for apache logs
-* Look for fail2ban logs
-* Look for backups <small>(such as emails/conversations/database)</small>
-* Look for mails `/var/mail/`
+* Check browser history + saved credentials
 * `~/.bash_history`: there may be something useful in the bash_history
   * Look for calls to sudo
   * Look for calls to services (mysql...)
-* Check browser history / credentials...
+* Look for backups <small>(such as emails/conversations/database)</small>
+* Look for mails `/var/mail/`
+* `/var/log/` (folder): log files
+  * Look for firewall logs (`/var/log/syslog`)
+  * Look for apache/... logs
+  * Look for fail2ban logs
+  * Look for ssh logs (`/var/log/auth.log`)
 </div><div>
 
 **Cron tasks** ⭐
@@ -111,59 +115,17 @@ Cron are the name given to automated tasks on Linux. See `crontab -l` for the ta
 
 Once you found a service, look for CVE for the given version, and try to use one to escalate to root.
 
-<br>
-
-**Cleaning up your traces** 🧹
-
-* `/var/log/auth.log`: ssh logs
-* `/var/log/syslog`: firewall logs
-* `/var/log/service`: "service" logs (ex: apache)
-* ...
-
 </div></div>
 
 > **NOTE**: don't forget to redirect any errors with `some_command 2> /dev/null`.
 
 <hr class="sl">
 
-## Linux (automated) enumeration
-
-<div class="row row-cols-md-2"><div>
-
-There are many scripts checking if there are "common" files, testing commands... in order to look for information that would be useful for you to reach a higher level of privilege.
-
-* [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) (10.4k ⭐): a script shell
-* [LinEnum](https://github.com/rebootuser/LinEnum) (5.4k ⭐): a script shell
-* [traitor](https://github.com/liamg/traitor)  (5.4k ⭐): a script in Go
-* [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) (lse, 2.5k ⭐): a script shell
-* [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) (1.1k ⭐): a python script
-</div><div>
-
-There are multiple ways to get the script on your target
-
-* Open a text editor, copy-paste it
-  * run it `bash script.sh`,
-  * or use chmod, then `./script.sh`
-* Use `wget` / `curl`
-* Use `python` <small>(`sudo python -m http.server 80` on the host)</small>
-* Use `FTP`
-* Use nc/netcat
-  * On the victim: `nc -l -p port > script.sh`
-  * On the attacker: `nc IP port < script.sh`
-* Using [penelope](https://github.com/brightio/penelope)
-</div></div>
-
-<hr class="sr">
-
-## Linux privilege escalation
+## Linux privilege enumeration
 
 <div class="row row-cols-md-2"><div>
 
 Privilege escalation refer to a process of obtaining super-administrator (a.k.a. root) privileges, starting from a non-root user.
-
-* [gtfobins](https://gtfobins.github.io/) (7.4k ⭐): a reference to find ways to exploit a command with misconfigured permissions.
-* [gtfo](https://github.com/t0thkr1s/gtfo) (96 ⭐): a python script to browse locally, a most-likely, outdated, version of gtfobins.
-</div><div>
 
 * Find a vulnerable service an exploit it <small>(apache, mysql...)</small>
 * Find a service in which you can inject data, in order to exploit it
@@ -173,9 +135,33 @@ Privilege escalation refer to a process of obtaining super-administrator (a.k.a.
   * Exploit script/.so/... with the SUID bit
   * ...
 * ...
+
+See guides
+
+* [PayloadsAllTheThings / Linux Privilege Escalation](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md)
+* [Basic Linux Privilege Escalation](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)
+
+</div><div>
+
+Find vulnerabilities in binaries.
+
+* [gtfobins](https://gtfobins.github.io/) (7.4k ⭐): a reference to find ways to exploit a command with misconfigured permissions.
+* [gtfo](https://github.com/t0thkr1s/gtfo) (96 ⭐): a python script to browse locally, a most-likely, outdated, version of gtfobins.
+
+There are many scripts checking if there are "common" files, testing commands... in order to look for information that would be useful for you to reach a higher level of privilege.
+
+* [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) (10.4k ⭐): a script shell
+* [LinEnum](https://github.com/rebootuser/LinEnum) (5.4k ⭐): a script shell
+* [traitor](https://github.com/liamg/traitor)  (5.4k ⭐): a script in Go
+* [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) (lse, 2.5k ⭐): a script shell
+* [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) (1.1k ⭐): a python script
+
+Others
+
+* [pspy](https://github.com/DominicBreuker/pspy) (3.2k ⭐): "Monitor linux processes without root permissions"
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Misconfigured permissions
 
@@ -215,7 +201,7 @@ If the script "hand-made", or not something on GTFOBins, then you can use `strac
 every major Linux distribution with a SUID bit could be exploited to get root. See [arthepsy PoC](https://github.com/arthepsy/CVE-2021-4034) (913 ⭐), or [berdav PoC](https://github.com/berdav/CVE-2021-4034) (1.7k ⭐).
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Exploit sudo
 
@@ -243,7 +229,7 @@ $ sudo -u#4294967295 nc
 ```
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Exploit bash
 
@@ -264,7 +250,7 @@ $ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/; chmod +xs /tmp/bash)' ./scr
 ```
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## NFS
 
@@ -279,7 +265,7 @@ $ cat /etc/exports
 </div><div>
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Kernel exploits
 
@@ -297,7 +283,7 @@ There are two OLD scripts, for OLD Linux Kernels, if needed
 * [Linux Kernel Exploit Suggester 2](https://github.com/jondonas/linux-exploit-suggester-2) (1.4k ⭐): up to 5.x excluded
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Random
 
