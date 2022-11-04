@@ -1,4 +1,4 @@
-# Bruteforce forms
+# Bruteforce forms, and other vulnerabilities
 
 <div class="row row-cols-md-2"><div>
 
@@ -24,6 +24,42 @@ The common point between the two are that the data transferred is looking like t
 > **Note**: BurpSuite can be used too, see the Intruder tab.<br>
 
 <hr class="sl">
+
+## Logic Flaw
+
+[![authenticationbypass](../../../_badges/thmp/authenticationbypass.svg)](https://tryhackme.com/room/authenticationbypass)
+
+<div class="row row-cols-md-2"><div>
+
+In PHP, there is a variable `$_POST` to fetch the input fields send to the server using POST, and `$_GET` for input fields send using GET. There is another prefilled variable: `$_REQUEST` which contains both values in `$_GET`, and values in `$_POST`. 
+
+If a value is both in `$_POST`, AND `$_GET`, then ONLY the value in `$_POST` will be kept. This is worth mentioning, because
+
+* a developer might use `$_REQUEST` for a GET form, instead of `$_GET`. In such case, we may be able to inject data using POST, so that even if the data send using GET is filtered, we may bypass these filters.
+
+```bash
+$ curl 'URL?param=value' -d 'param=not_filtered'
+# the dev filter $_GET: filterXXX($_GET)
+# but in $_REQUEST['param'], there will be
+# our value 'not_filtered'
+```
+</div><div>
+
+* it's possible that a developer is using a GET form, then a POST form. In such scenario, the (lazy?) developer may use `$_REQUEST` to fetch values. If the dev checked the data at step1, but not at step2, we may be able to bypass the check in step1.
+
+```bash
+$ curl 'URL/step1?param=verified'
+# the dev ensure param is verified
+# verify_or_reject_param($_GET)
+# now, the dev may "trust" param to be valid
+$ curl 'URL/step2?param=verified' -d 'xxx=yyy&param=unverified'
+# the dev filter $_POST: filterXXX($_POST)
+# the dev uses $_REQUEST['param']
+# but, it's our unverified value that is used
+```
+</div></div>
+
+<hr class="sr">
 
 ## Wordlists
 
@@ -58,7 +94,7 @@ xato-net-10-million-usernames.txt
 
 > CTF are usually using `/usr/share/wordlists/rockyou.txt`, and a manually created list of usernames if needed.
 
-<hr class="sr">
+<hr class="sl">
 
 ## Bruteforce using ffuf
 
@@ -81,7 +117,7 @@ $ ffuf -w wordlist1:W1,wordlist2:W2 -X POST -d "username=W1&password=W2" -u URL
 ```
 </div></div>
 
-<hr class="sl">
+<hr class="sr">
 
 ## Bruteforce using wfuzz
 
@@ -103,7 +139,7 @@ $ wfuzz -w wordlist -d "username=admin&pass=FUZZ" URL/login.php
 ```
 </div></div>
 
-<hr class="sr">
+<hr class="sl">
 
 ## Bruteforce authentication forms using Hydra
 

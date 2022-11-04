@@ -86,7 +86,7 @@ ffuf -w wordlist -H "Host: FUZZ.example.com" -u example.com
 > As every response having the same size for instance, are most likely the same answer (failure).
 </div><div>
 
-You can use [gobuster](../bruteforce/forced_browsing.md#gobuster-go) for DNS subdomains, and Virtual hosts.
+You can use [gobuster](../files/forced_browsing.md#gobuster-go) for DNS subdomains, and Virtual hosts.
 
 ```bash
 gobuster dns -d URL -w wordlist

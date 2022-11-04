@@ -73,14 +73,14 @@
         "hidden": false
       },
       {
-        "tag": "server/web/bruteforce/forms.md",
-        "name": "Bruteforce forms",
-        "desc": "",
+        "tag": "server/web/forms/index.md",
+        "name": "Forms",
+        "desc": "Bruteforce, Logic flaws...",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "server/web/bruteforce/forced_browsing.md",
+        "tag": "server/web/files/forced_browsing.md",
         "name": "Forced browsing",
         "desc": "",
         "icon": null,

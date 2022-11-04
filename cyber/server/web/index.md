@@ -143,7 +143,7 @@ As a penetration tester, you will have to list every feature of the website, and
 
 <br>
 
-**Forced Browsing** [See Forced Browsing](bruteforce/forced_browsing.md)
+**Forced Browsing** [See Forced Browsing](files/forced_browsing.md)
 
 This is a technique of not using the website links to navigate to another page, but rather trying manually, or not, page that may exist on the website, while hoping to find some gold.
 
@@ -158,7 +158,7 @@ and if we change the URL <small>(id=10$\to$id=11)</small>. It could be a get for
 
 <br>
 
-**Find usernames/emails** [See Bruteforce forms](bruteforce/forms.md)
+**Find usernames/emails** [See Bruteforce forms](forms/index.md)
 
 You could achieve this using the website API if there is one, and/or its interface, such as register forms: "this username is already taken", or the same process for emails with the password forgot page...
 
