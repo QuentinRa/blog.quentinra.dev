@@ -257,6 +257,8 @@ CVEs take the form: CVE-YEAR-ID.
 * [cve.mitre.org](https://cve.mitre.org/cve/), and their new website: [cve.org](https://www.cve.org/). This is basically of big list of CVE, regardless of them being exploitable, or not.
 
 * [security.snyk.io](https://security.snyk.io/): the interface is nicer,  through it's not as generic / covering as much CVEs as others.
+
+* [microsoft.com](https://msrc.microsoft.com/update-guide/) (example: [CVE-2019-1388](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2019-1388)): for Microsoft CVEs
 </div></div>
 
 <hr class="sl">

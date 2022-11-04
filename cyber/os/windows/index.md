@@ -46,6 +46,8 @@ A set of tools to protect your Windows. There is an antivirus, which has a "rans
 
 When there is a need for a user to elevate, Windows will show the User Account Control (UAC), in which a root user can press "yes", and a non-root user will have to log in using an account having sufficient privileges to do the requested action.
 
+There is one funny/easy exploit using UAC to get root: [CVE-2019-1388](https://github.com/nobodyatall648/CVE-2019-1388).
+
 **Permissions**
 
 Windows has 7 categories of permissions: Read, Write, Read & Execute, List Folder Contents, Modify, Full Control. You can learn more about them in this [article](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb727008(v=technet.10)#understanding-file-and-folder-permissions). Permissions are controlled by Discretionary Access Control List (DACLs), see the `icacls` command.
@@ -169,7 +171,15 @@ Privilege escalation refer to a process of obtaining super-administrator (a.k.a.
 * [LOLBAS](https://github.com/LOLBAS-Project/LOLBAS) (4.8k ⭐): similar to GTFOBins on Linux, exploit the Windows executables 
 </div><div>
 
-* ...
+Scripts
+
+* [WinPeas](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS) (10.5k ⭐)
+* [PrivescCheck](https://github.com/itm4n/PrivescCheck) (1.8k ⭐)
+* There was [PowerUp](https://github.com/HarmJ0y/PowerUp) (222⭐) that was deprecated over [PowerTools](https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerUp) (1.8k ⭐) that was deprecated again over [PowerSploit](https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc) (10k ⭐) which is now archived 😂
+
+Guides
+
+* [Windows-Privilege-Escalation](https://github.com/frizb/Windows-Privilege-Escalation) (641 ⭐)
 </div></div>
 
 <hr class="sl">
@@ -225,4 +235,16 @@ Hackers can use that to store malicious code inside a file. They can execute it 
 More about it:
 
 * [Introduction to Alternate Data Streams](https://www.malwarebytes.com/blog/news/2015/07/introduction-to-alternate-data-streams)
+</div></div>
+
+<hr class="sl">
+
+## Active directory
+
+<div class="row row-cols-md-2"><div>
+
+You can acquire NTHash/NTLM hashes by dumping the SAM database, from the Active Directory database: `NTDS.dit`.
+</div><div>
+
+[Active Directory Exploitation Cheat Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet) (3.4k ⭐)
 </div></div>
