@@ -122,6 +122,20 @@
         "hidden": false
       },
       {
+        "tag": "server/web/rce/index.md",
+        "name": "RCE",
+        "desc": "Remote code execution",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "server/web/cookies/index.md",
+        "name": "Cookies",
+        "desc": "Cookies vulnerabilities",
+        "icon": null,
+        "hidden": false
+      },
+      {
         "tag": "server/web/burpsuite/index.md",
         "name": "Burp Suite",
         "desc": "",

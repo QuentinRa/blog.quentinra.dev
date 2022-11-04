@@ -252,3 +252,7 @@ Execute any administrative command
 * ftp xxx@IP -p port
 * nmap –script=http-server-header.nse XXX (or -sC)
 * http://www.itsecgames.com/index.htm
+* https://attack.mitre.org/tactics/enterprise/
+* https://appsec-labs.com/online-training/
+* https://www.contrastsecurity.com/developer
+* https://github.com/trickest/cve

