@@ -47,13 +47,20 @@
 **Microsoft download center** 💻
 
 * [Link](https://www.microsoft.com/en-us/download/details.aspx?id=31791) (Professional)
-* [Link](https://download.cnet.com/Windows-XP-Mode/3000-18513_4-77683344.html) (Mode, it was removed from Microsoft website)
+* [Link](https://download.cnet.com/Windows-XP-Mode/3000-18513_4-77683344.html) (Mode, it was removed from Microsoft website). There is a tutorial [here](https://helpdeskgeek.com/virtualization/how-to-set-up-a-windows-xp-virtual-machine-for-free/), another [here](https://www.makeuseof.com/tag/download-windows-xp-for-free-and-legally-straight-from-microsoft-si/), and one more [here](https://ihax.io/windows-xp-virtual-machine/).
 * Windows XP
 
 **Microsoft developer center** 💻
 
 * [Link](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/)
 * Windows 11
+
+<br>
+
+**DarkStar7471**
+
+You can find images by DarkStar7471 Rooms on TryHackMe [here](https://darkstar7471.com/resources.html).
+
 </div><div>
 
 **Kali Linux** ⭐

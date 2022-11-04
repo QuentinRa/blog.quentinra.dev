@@ -4,6 +4,7 @@
 [![windowsfundamentals2x0x](../../_badges/thm/windowsfundamentals2x0x.svg)](https://tryhackme.com/room/windowsfundamentals2x0x)
 [![windowsfundamentals3xzx](../../_badges/thm/windowsfundamentals3xzx.svg)](https://tryhackme.com/room/windowsfundamentals3xzx)
 [![retro](../../_badges/thm/retro.svg)](https://tryhackme.com/room/retro)
+[![blue](../../_badges/thm/blue.svg)](https://tryhackme.com/room/blue)
 [![ice](../../_badges/thm/ice.svg)](https://tryhackme.com/room/ice)
 [![blaster](../../_badges/thm/blaster.svg)](https://tryhackme.com/room/blaster)
 
