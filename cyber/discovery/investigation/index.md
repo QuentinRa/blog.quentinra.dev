@@ -39,6 +39,7 @@ Find information about a number
 Find information about an email
 
 * [epieos](https://epieos.com/)
+* [ProtOSINT](https://github.com/pixelbubble/ProtOSINT) (proton)
 </div><div>
 
 Social Networks
@@ -47,6 +48,12 @@ Social Networks
 * Google: [GHunt](https://github.com/mxrch/GHunt) (12.1k ⭐)
 * [social-analyzer](https://github.com/qeeqbox/social-analyzer) (Profile in many SN, 9.4k ⭐)
 * ...
+
+Others
+
+* [awesome-osint](https://github.com/jivoi/awesome-osint) (list, 10.7k ⭐)
+* [spiderfoot](https://github.com/smicallef/spiderfoot) (automated, 8.7k ⭐)
+* [OSINT-Tools](https://github.com/mgp25/OSINT-Tools) (list, 45 ⭐)
 
 </div></div>
 

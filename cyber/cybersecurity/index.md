@@ -228,6 +228,8 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [vigilante GitHub](https://github.com/wedataintelligence/Vigilante.pw/blob/master/data.csv)
 * [cybernews check](https://cybernews.com/personal-data-leak-check/)
 
+There are also premium solutions such as [leakcheck](https://leakcheck.io/), or [dehashed](https://dehashed.com/).
+
 </div></div>
 
 <hr class="sr">

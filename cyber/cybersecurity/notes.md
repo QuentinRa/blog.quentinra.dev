@@ -257,3 +257,9 @@ Execute any administrative command
 * https://www.contrastsecurity.com/developer
 * https://github.com/trickest/cve
 * https://github.com/payloadbox
+* https://github.com/michenriksen/aquatone
+* https://github.com/projectdiscovery/subfinder
+* https://github.com/s0md3v/Photon
+* https://github.com/evyatarmeged/Raccoon
+* https://github.com/laramies/theHarvester
+* https://github.com/topics/osint (4.2)
