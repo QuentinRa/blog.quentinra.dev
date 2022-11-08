@@ -306,3 +306,15 @@ Execute any administrative command
 * Email injection
 * https://tryhackme.com/room/owaspjuiceshop
 * ...
+
+--- https://tryhackme.com/room/uploadvulns
+
+* do not override an existing file. Usual practices are generating/assigning a name to the uploaded file. There could be prefixed/postfixed too. They could be checks if the name is taken.
+* webshells, and reverse/bind shells. Realistically a fully featured reverse/bind shell is the ideal goal for an attacker; however, a webshell may be the only option available (for example, if a file length limit has been imposed on uploads, or if firewall rules prevent any network-based shells)
+* <?=system($_GET["cmd"] ?? "whoami");?>
+* https://github.com/pentestmonkey/php-reverse-shell
+* filter extensions (blacklist/whitelist)
+* file type (MIME validation=Content-Type=<type>/<subtype>=https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types, Magic Number validation=bytes at the beginning of the file)
+* file length
+* file name (check not overriding protected file)
+* file content
