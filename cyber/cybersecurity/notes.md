@@ -278,3 +278,16 @@ Execute any administrative command
 * file xxx.db => sqlite3 file.db
   * .tables
   * PRAGMA table_info(table);
+* XML External Entity (XXE) attack is a vulnerability that abuses features of XML parsers/data (in-band and out-of-band/blind)
+  * It often allows an attacker to interact with any backend or external systems that the application itself can access and can allow the attacker to read the file on that system. 
+  * DoS SSRF
+* Every XML document mostly starts with what is known as XML Prolog.
+* <?xml version="1.0" encoding="UTF-8"?>
+* XML allows validation using DTD and Schema.
+* https://tryhackme.com/room/owasptop10 (details + DTD)
+* see writeups
+* https://owasp.org/www-project-secure-headers/
+* https://duckduckgo.com/?q=2016%2C+Dyn&atb=v332-1&ia=web
+* http://www.xss-payloads.com/index.html
+* http://www.xss-payloads.com/payloads/scripts/simplekeylogger.js.html
+* get target ip: window.location.hostname
