@@ -268,6 +268,8 @@ Execute any administrative command
 
 # XXX
 
+--- https://tryhackme.com/room/owasptop10
+
 * https://tryhackme.com/room/owasptop10 (note about remediation)
 * `;nc -e /bin/bash` (no every nc variant support `-e`, see https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
 * https://www.php.net/manual/en/function.passthru.php (past command output raw?)
@@ -291,3 +293,16 @@ Execute any administrative command
 * http://www.xss-payloads.com/index.html
 * http://www.xss-payloads.com/payloads/scripts/simplekeylogger.js.html
 * get target ip: window.location.hostname
+* Replacing data with malicious code: Insecure Deserialisation
+  * Coookies => user can edit values from its side, can decode them...
+  * Ex: flask in Python pickle.load, that can load a cookie in which the base64 
+  * encoded value could be a reverse shell.
+* do good logging / do not display too much info about errors
+* https://tryhackme.com/room/owasptop10 (notes, last)
+
+--- https://tryhackme.com/room/owaspjuiceshop
+
+* Recon by making requests pass through burp
+* Email injection
+* https://tryhackme.com/room/owaspjuiceshop
+* ...
