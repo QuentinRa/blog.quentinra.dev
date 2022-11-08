@@ -176,7 +176,7 @@ $ cat /etc/shadow
 # (copy a password / generate one mkpasswd -m sha-512 toto)
 ```
 
-In OLD version of Linux, passwords could be stored in `/etc/passwd`
+Until 1979/Unix V7, passwords were stored in `/etc/passwd`, so a regular user could read them, and try brute-forcing the password.
 
 ```bash
 $ cat /etc/shadow

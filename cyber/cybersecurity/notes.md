@@ -263,3 +263,18 @@ Execute any administrative command
 * https://github.com/evyatarmeged/Raccoon
 * https://github.com/laramies/theHarvester
 * https://github.com/topics/osint (4.2)
+
+<hr class="sep-both">
+
+# XXX
+
+* https://tryhackme.com/room/owasptop10 (note about remediation)
+* `;nc -e /bin/bash` (no every nc variant support `-e`, see https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
+* https://www.php.net/manual/en/function.passthru.php (past command output raw?)
+* cmd "ver" to see Windows version
+* two user with the same username, such as "admin", and " admin". They say you can access the other account if things were done wrongly, but HOW?
+* Sensitive Data Exposure: app that discloses user sensitive data accidentally (ex: database source...)
+* ps -ef
+* file xxx.db => sqlite3 file.db
+  * .tables
+  * PRAGMA table_info(table);
