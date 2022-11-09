@@ -1,28 +1,4 @@
 * echo xxx name >> /etc/hosts
-* nmap xxx
-  * Service Info: Host: Os:
-
-`nmap -n`: no dns resolution
-nmap -O is no always useful to return the OS. Try using -sN on the open ports too.
-
-ARP scan: This scan uses ARP requests to discover live hosts
-ICMP scan: This scan uses ICMP requests to identify live hosts
-
-* If sudo + local => ARP
-* If sudo + outside:ICMP echo requests, TCP ACK (Acknowledge) to port 80, TCP SYN (Synchronize) to port 443, and ICMP timestamp request.
-* When an unprivileged user tries to scan targets outside the local network, Nmap resorts to a TCP 3-way handshake by sending SYN packets to ports 80 and 443.
-* sudo -PR: ARP scan
-  * arp-scan --localnet or simply arp-scan -l
-  * sudo arp-scan -I eth0 -l
-* sudo -PE ( ICMP echo request)
-* Because ICMP echo requests tend to be blocked, you might also consider ICMP Timestamp or ICMP Address Mask requests to tell if a system is online. Nmap uses timestamp request (ICMP Type 13) and checks whether it will get a Timestamp reply (ICMP Type 14). Adding the -PP option tells Nmap to use ICMP timestamp requests.
-* Similarly, Nmap uses address mask queries (ICMP Type 17) and checks whether it gets an address mask reply (ICMP Type 18). This scan can be enabled with the option -PM.
-* TCP SYN -> RST (Reset) if closed `-PS` (if root, reply with RST/ACK otherwise)
-* TCP ACK -> send ACK reply? RST -PA
-  * used to check if host is up, as RST is replied 'cause no connection
-  * If you try it as an unprivileged user, Nmap will attempt a 3-way handshake.
-* UDP sudo -PU
-* -R, query DNS server even for offline hosts
 
 * https://tryhackme.com/room/nmap02
   * unfiltered

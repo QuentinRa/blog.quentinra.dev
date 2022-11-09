@@ -48,8 +48,10 @@ Example of using `-Pn`
 $ nmap ip # not working if it's a Windows host
 $ nmap ip -Pn # fixed 😎
 ```
-
 </div></div>
+
+> **Random note**: if you try to use nmap on a host living in the same network, then, if the scan is run with elevated privileges, an ARP scan will be used instead. You can explicitly request an ARP scan with `-PR`. Another way of doing an ARP scan is using `sudo arp-scan -l -I eth0`.<br><br>
+> **Random note**: ICMP echo requests `-PE`. ICMP timestamp requests `-PP`. ICMP 17/18 `-PM`. TCP 3-way handshake `-PS`. TCP ACK `-PA`. UDP `-PU`.
 
 <hr class="sep-both">
 
@@ -57,18 +59,17 @@ $ nmap ip -Pn # fixed 😎
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-Nmap can scan a one, or more machines
+Nmap can scan a one, or more hosts to scan
 
 ```bash
 $ nmap 127.0.0.1
 $ nmap 192.168.0.1-254 # from 1 to 254
 $ nmap 192.168.0.0/24 # same
-# multiple hosts
-$ nmap scanme.nmap.org scanme.nmap.org scanme.nmap.org
+$ nmap scanme.nmap.org scanme.nmap.org # list
 $ nmap -iL hosts.txt
 ```
 
-If you don't want `nmap` to fetch DNS records, use `-n`
+If you don't want `nmap` to fetch DNS records, use `-n`. You can use `-R` to force `nmap` to query DNS servers.
 
 ```bash
 $ nmap -n 10.10.12.13
@@ -79,10 +80,10 @@ You can use `-sL` to list every host that will be scanned.
 
 ```bash
 $ nmap -sL -n 92.168.0.1/29
-Nmap scan report for 92.168.0.0
-[...]
-Nmap scan report for 92.168.0.7
-Nmap done: 8 IP addresses (0 hosts up) scanned in 0.01 seconds
+# Nmap scan report for 92.168.0.0
+# [...]
+# Nmap scan report for 92.168.0.7
+# Nmap done: 8 IP addresses (0 hosts up) scanned in 0.01 seconds
 ```
 </div></div>
 
@@ -122,69 +123,79 @@ The 3 scans below can be used to try to bypass weak firewalls that have only rul
 
 <hr class="sep-both">
 
-## 🗺️ Examples of scans 🗺️
+## 🔎 Nmap in practice 🔎
 
 <div class="row row-cols-md-2"><div>
 
-To scan a host <small>(it's a TCP SCAN, as it's the default as non-root)</small>
+<p class="mt-3"><b>1. Required parameters</b></p>
+
+As mentioned before, we need a host (or multiple hosts)
 
 ```bash
-$ nmap 127.0.0.1
-$ nmap 192.168.0.1-254 # from 1 to 254
-$ nmap 192.168.0.0/24 # same
 $ nmap scanme.nmap.org
 ```
 
-Usually, as scans take a lot of time, we are adding `-v` to increase the verbose. The more you add, the more verbose nmap is.
+Then, we will try different kind of scans until one works out.
+
+```bash
+$ nmap -sT scanme.nmap.org
+$ sudo nmap -sS scanme.nmap.org
+# ...
+```
+
+<p class="mt-3"><b>2. Verbose</b></p>
+
+Usually, as scans take a lot of time, we are adding `-v` to increase the verbosity. You can use `-v`, `-vv`, `-d`, and `-dd`.
 
 ```bash
 $ nmap -vv scanme.nmap.org # level 2 verbose
 ```
 
-You can use flags to fetch information about your targets
-
-* `-sV`: what are the services used by the open ports? What's their versions? <small>(ex: 80 is using Apache x.xx.xx)</small>
-* `-sC`: find hostname, maybe the OS too, the computer name
-* `-O`: what's the operating system of the host?
-* `-A`: look for every kind of information
+<p class="mt-3"><b>3. Store result</b></p>
 
 ```bash
-$ nmap -sV scanme.nmap.org -vv
+# primitive, and not really handy way
+$ nmap scanme.nmap.org > output_file_name
+# generate .nmap=-oN, .gnmap=-oG, and .xml=oX
+# -oG is kinda nice, as the file is grep-able (grep xxx output)
+$ nmap -vv scanme.nmap.org -oA output_file_name
 ```
-
-Run a fast scan
-
-```bash
-$ nmap -F scanme.nmap.org -vv
-```
-
 </div><div>
 
-You can select a range of ports to scan, or only scan the "top ports". By default, nmap scan the top 1000 ports.
+<p class="mt-3"><b>Select port ranges</b></p>
+
+By default, `nmap` will scan the top 1000 of ports that should be checked.
 
 ```bash
-$ nmap -vv scanme.nmap.org -p 22
+$ nmap -vv scanme.nmap.org -F # Fast, only top 100
+$ nmap -vv scanme.nmap.org -p 22 # only port 22
 $ nmap -vv scanme.nmap.org -p 22,23 # both 22, and 23
 $ nmap -vv scanme.nmap.org -p 0-65535 # from 0 to ...
-$ nmap -vv scanme.nmap.org -p- # same :)
+$ nmap -vv scanme.nmap.org -p- # same !!!
 $ nmap -vv scanme.nmap.org -p22-25,80,443 # mix
-$ nmap -vv scanme.nmap.org -top-ports 20
+$ nmap -vv scanme.nmap.org -top-ports 20 # top 20
 ```
 
-To set the intensity of the scan, reducing the risks of between detected, you can set a timing between requests from 0=passive=very slow, and up to 5=aggressive=faster.
+<p class="mt-3"><b>Stealth level</b></p>
+
+You can set the intensity of the scan to decrease risks of between detected by adding timing between requests from 0=passive=very slow=one request per 5 minutes, and up to 5=aggressive=loud.
 
 ```bash
 $ nmap -vv scanme.nmap.org -T5 -p22
 ```
 
-Store results
+<p class="mt-3"><b>Dig information</b></p>
+
+* `-sV`: what are the services used by the open ports? What's their versions? <small>(ex: 80 is using Apache x.xx.xx)</small>. May also guess the OS.
+* `-sC`: find hostname, maybe the OS too, the computer name
+* `-O`: what's the operating system of the host, a bit unreliable
+* `-A`: all the above, and some more
+* Nmap by default may return `Service Info: Host: Os:` with some information.
 
 ```bash
-$ nmap scanme.nmap.org > output_localhost
-# generate .nmap=-oN, .gnmap=-oG, and .xml=oX 
-$ nmap -vv scanme.nmap.org -oA output_localhost
+$ nmap -sV scanme.nmap.org -vv
 ```
-</div></div><br><br>
+</div></div>
 
 <hr class="sep-both">
 
