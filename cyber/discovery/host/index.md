@@ -14,7 +14,7 @@ You should also save the scans: it may take a long time, so you want to do it on
 
 You can use it to find, and exploit vulnerabilities, or to bruteforce services such as SSH (see [bruteforce services](../../random/crack_password/services.md#nmap)).
 
-> CTF: Lunch at least a scan on all ports in the background while exploring the first interesting ports.
+> CTF: Lunch at least a scan on all ports in the background while exploring the firsts interesting ports.
 </div><div>
 
 **Nessus** [See nessus](nessus/index.md)

@@ -318,3 +318,8 @@ Execute any administrative command
 * file length
 * file name (check not overriding protected file)
 * file content
+* Client-side: turn off JS, intercept (page:remove JS, file: edit), do the request manually: `curl -X POST -F "submit:<value>" -F "<file-parameter>:@<path-to-file>" <site>`
+* BurpSuite intercept javascript: you need to remove `^js$` in options > intercept client requests / File extension does not match. You may have to clear the cache. https://stackoverflow.com/questions/37296343/modify-javascript-with-burp-if-js-is-in-separate-file-but-gets-loaded-in-the-s
+* pathinfo to get the extension, then a blacklist with a switch. We can pass it easily with values such as PhP pHP... or php5... .phtml... https://en.wikipedia.org/wiki/PHP
+* hexeditor to edit the hex of a file. Write X letters, save, open in hex editor, and replace them with magic number: https://en.wikipedia.org/wiki/List_of_file_signatures
+* writeups
