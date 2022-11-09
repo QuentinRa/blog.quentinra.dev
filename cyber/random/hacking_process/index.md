@@ -81,6 +81,8 @@ For a penetration tester, it's more something like that
 **Find more infos about the computer** 🧭️
 
 * version
+* services
+* users
 * ...
 
 **Get to root using privilege escalation** 😎

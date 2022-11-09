@@ -10,7 +10,7 @@ Any knowledge related to protocols, and services, such as ftp, ssh, sftp, scp, t
 
 ### 🔓 Telnet - 23 (tcp)
 
-No encryption, be it the credentials or the data exchanged.
+No encryption for the credentials nor the data exchanged.
 
 ...
 </div><div class="border-st art border-dark ps-4">

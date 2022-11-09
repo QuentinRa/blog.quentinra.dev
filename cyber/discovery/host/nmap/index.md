@@ -20,7 +20,10 @@ A port is used by a protocol such as FTP (File Transfer Protocol) to transfer da
 * `closed`: cannot be reached
 </div></div><br>
 
-> As you reminder, you can check [Networking/Ports](/info/networking/index.md#ports) to learn more about ports, you can check [Networking/Services](/info/networking/protocols/index.md) to learn more about the services using these ports, you can use [Cyber/Services](/cyber/server/services.md) to learn more about how you can exploit services, and you may also check [Cyber/Bruteforce services](/cyber/random/crack_password/services.md) to try to bruteforce a service credentials.
+> * [Networking/Ports](/info/networking/index.md#ports) to learn more about ports
+> * [Networking/Services](/info/networking/protocols/index.md) to learn more about the services using these ports
+> *  [Cyber/Services](/cyber/server/services.md) to learn more about how you can exploit services
+> * [Cyber/Bruteforce services](/cyber/random/crack_password/services.md) to try to bruteforce a service credentials.
 
 <hr class="sep-both">
 
@@ -46,6 +49,41 @@ $ nmap ip # not working if it's a Windows host
 $ nmap ip -Pn # fixed 😎
 ```
 
+</div></div>
+
+<hr class="sep-both">
+
+##  🎯 Define the target(s) 🎯
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+Nmap can scan a one, or more machines
+
+```bash
+$ nmap 127.0.0.1
+$ nmap 192.168.0.1-254 # from 1 to 254
+$ nmap 192.168.0.0/24 # same
+# multiple hosts
+$ nmap scanme.nmap.org scanme.nmap.org scanme.nmap.org
+$ nmap -iL hosts.txt
+```
+
+If you don't want `nmap` to fetch DNS records, use `-n`
+
+```bash
+$ nmap -n 10.10.12.13
+```
+</div><div>
+
+You can use `-sL` to list every host that will be scanned.
+
+```bash
+$ nmap -sL -n 92.168.0.1/29
+Nmap scan report for 92.168.0.0
+[...]
+Nmap scan report for 92.168.0.7
+Nmap done: 8 IP addresses (0 hosts up) scanned in 0.01 seconds
+```
 </div></div>
 
 <hr class="sep-both">
