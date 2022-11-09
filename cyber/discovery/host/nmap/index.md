@@ -10,6 +10,8 @@
 
 **nmap** ([nmap book](https://nmap.org/book/)) is a tool to detect hosts, their open ports, and eventually run script trying to go more information, or even exploiting a vulnerability to gain access.
 
+We are calling **probe** a request made to inquire something from an host, such as testing if a port is open.
+
 > There is an interface to `nmap` called [ZenMap](https://nmap.org/zenmap/).
 </div><div>
 
@@ -17,6 +19,7 @@ A port is used by a protocol such as FTP (File Transfer Protocol) to transfer da
 
 * `open`: can be reached
 * `filtered`: no response, usually meaning that it's filtered by a firewall
+* `unfiltered`: nmap can't determine if the port is open, or filtered
 * `closed`: cannot be reached
 </div></div><br>
 
@@ -95,11 +98,13 @@ Nmap can do multiple **scans** with `-s<type>`, and it's up to you to pick the "
 
 <div class="row row-cols-md-2"><div>
 
+### ➡️ TCP Scans
+
 > **TCP scans** are scans used to **detect TCP ports**, meaning port used by a protocol using the connection-based protocol TCP. TCP is a protocol in which every message send, is followed by a reply, and an acknowledgement of receiving the reply. This is slower than UDP, but, it allows us to ensure that a message is received.
 
 *  **TCP Scan** | `-sT`. Default scan if not root. Usually blocked by firewalls. Send a SYN packet, receive RST (closed), or SYN/ACK (open). If the later, answer back with ACK (3-ways handshake).
 
-* **TCP Syn (Half-open/Stealth) Scan** | `-sS` | `Need root privileges`. Default scan in root. Same as TCP scan, but don't answer "ACK", but "RST" instead. Sightly faster than `-sT`.
+* **TCP Syn (Half-open/Stealth) Scan** | `-sS` | `Need root privileges`. Default scan in root. Same as TCP scan, but close the connection with 'RST,ACK'. Sightly faster than `-sT`.
 
 The 3 scans below can be used to try to bypass weak firewalls that have only rules for the two previous well-known scans. As they are only checking if a port is closed, every port is marked `open|filtered`. Note that some OS such as Windows, are responding `closed` to any malformed packet.
 
@@ -107,17 +112,38 @@ The 3 scans below can be used to try to bypass weak firewalls that have only rul
 
 * **TCP FIN scans** | `-sF` | `Need root privileges`. Send a malformed packet with an invalid flag (FIN). If the port is closed, an RST packet is received.
 
-* **TCP Xmas scans** | `-sX` | `Need root privileges`. Send a malformed packet.  If the port is closed, an RST packet is received.
+* **TCP Xmas scans** | `-sX` | `Need root privileges`. Send a unexpected packet with FIN+PSH+URG flags.  If the port is closed, an RST packet is received.
+
+* **Maimon scan** | `-sM` | `Need root privileges`. Useless. Send an unexpected packet with FIN+ACK flags. Most modern targets will reply with RST regardless of the port being open, or not.
 
 </div><div>
+
+### ➡️UDP Scans
 
 > **UDP Scans** are scans used to **detect UDP ports**, meaning ports using the UDP connection-less protocol, in which a message is sent, with no reply, and without care if the message was received or not, corrupted or not.... This is quite faster than TCP.
 
 * **UDP Scan** | `-sU` | `Need root privileges`. The scan is slow as UDP ports may only respond if they are closed (with a PING/ICMP), so the scan must send multiple requests, to ensure that the port isn't closed, as there is no way to ensure that the port is open, so they are usually marked as `open|filtered`.
 
-> **ICMP Scans**: are used to check if a host is up or not.
+### ➡️ICMP Scans
 
-* **Ping Scan** | `-sn`. Do not scan ports. If root, and targeting a host on the same network, then use ARP.
+* **Ping Scan** | `-sn`. Do not scan ports, but used to check if a host is up. It uses ARP if launch as root, and targeting a host on the same network.
+
+### ➡️Scans to find ports unprotected by a firewall
+
+* **ACK scan** | `-sA`. Send a packet with ACK, any port will reply with RST. But, the response is analyzed to find if the firewall, or the port responded.
+
+* **Window scan** | `-sW`. Same as ACK, but analyze the window field to identify who responded. On some system, it may even help in determining if the port is open, or not.
+
+Note that a port not being protected by a firewall do not imply that the port is open, as the firewall may not have been updated.
+
+### ➡️ Custom
+
+You can create custom scans with `--scanflags`
+
+```bash
+# RST SYN FIN enabled
+$ sudo nmap [...] --scanflags RSTSYNFIN
+```
 
 </div></div>
 
@@ -176,13 +202,17 @@ $ nmap -vv scanme.nmap.org -p22-25,80,443 # mix
 $ nmap -vv scanme.nmap.org -top-ports 20 # top 20
 ```
 
+You can ask for ports to be queried in the consecutive order with `-r`.
+
 <p class="mt-3"><b>Stealth level</b></p>
 
-You can set the intensity of the scan to decrease risks of between detected by adding timing between requests from 0=passive=very slow=one request per 5 minutes, and up to 5=aggressive=loud.
+You can set the intensity of the scan to decrease risks of between detected by adding timing between requests from 0 to 5, while 0 means one request per 5 minutes <small>(paranoid (0), sneaky (1), polite (2), normal (3), aggressive (4), and insane (5))</small>. Note that T3 is the default, T0/T1 are the usual for stealth, T4 is the most used in CTFs, and T5 can be inaccurate as many packets may be lost.
 
 ```bash
 $ nmap -vv scanme.nmap.org -T5 -p22
 ```
+
+Other alternatives are `--min-rate/--max-rate` to set the rate per seconds, or `--min-parallelism/--max-parallelism` for the number of probes made in parallel.
 
 <p class="mt-3"><b>Dig information</b></p>
 
@@ -196,6 +226,8 @@ $ nmap -vv scanme.nmap.org -T5 -p22
 $ nmap -sV scanme.nmap.org -vv
 ```
 </div></div>
+
+> **Random**: you can press <kbd>Enter</kbd> during a scan in-progress to query the progress of the scan.
 
 <hr class="sep-both">
 

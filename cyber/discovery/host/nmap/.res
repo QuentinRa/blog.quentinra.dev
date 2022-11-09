@@ -1,23 +1,5 @@
 * echo xxx name >> /etc/hosts
 
-* https://tryhackme.com/room/nmap02
-  * unfiltered
-  * TCP actually send an RST,ACK to close the connection
-  * Note that we can use -F to enable fast mode and decrease the number of scanned ports from 1000 to 100 most common ports.
-  * It is worth mentioning that the -r option can also be added to scan the ports in consecutive order instead of random order. This option is useful when testing whether ports open in a consistent manner, for instance, when a target boots up.
-* Wireshark ip.addr==X.X.X.X / tcp / && / tcp.port
-* -sU -F (:D)
-* you can press enter to force nmap to display the progress
-* section about -T https://tryhackme.com/room/nmap02
-* Null scan (no flag set)
-* FIN scan (send the flag saying "no more to send")
-* XMAS (FIN=no more, PSH=push the data to the app, URG=urgent)
-* Maimon (FIN=no more, ACK, -sM, most target will reply with RST regardless of open or not)
-* -sA ACK scan (send ACK, reply RST regardless...). If may be useful to know which ports are behind a firewall, if a port answered or the firewall did.
-* Window scan, same as ACK scan, but analyse the window field of RST responses which on some system may indicate if a port is open (-sW)
-* --scanflags RSTSYNFIN (Custom)
-* the fact that a firewall allowed a port to respond do not mean that the port is open, as the firewall may not have been updated, or maybe it's a trap.
-* sudo/all
 * nmap -S SPOOFED_IP IP (but you must have control on the SPOOFED IP to fetch results) -e NET_INTERFACE --spoof-mac SPOOFED_MAC (if on the same network). Maybe used to create decoys.
 * nmap -D A,B,C target (decoy scans)
 * -f size/8 packets -ff size/16 packets

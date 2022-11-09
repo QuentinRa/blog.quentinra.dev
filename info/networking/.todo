@@ -1,3 +1,5 @@
+Wireshark ip.addr==X.X.X.X / tcp / && / tcp.port
+
 >> TCP
 "three-way handshake": SYN (synchronise) SYN/ACK ACK (Acknowledgement)
 ACK number
