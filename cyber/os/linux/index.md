@@ -63,13 +63,14 @@ Learn more about your environment
 **Learn more about your computer** 🗺️
 
 * `/proc/version`: information about the machine
-* `cat /etc/*release`: information about the operating system
+* `/etc/*release`: information about the operating system
+* `/etc/issue`: alternative to find the OS/version
 
 **Look for (sensitive?) information** 🔑
 
 * `/etc/passwd`: usernames, their groups, their home, and their shell
 * `/etc/shadow` <small>(root)</small>: username, and their hashed password
-* `/etc/group`/`groups`: groups
+* `/etc/group` or `groups`: see groups
 * `/etc/gshadow` <small>(root)</small>: groups hashed passwords (if any)
 * `/etc/sudoers` <small>(root)</small>: sudoers, and rules applied to them, if any
 * `ls -ahl /root/`: see if there are readable files in root's home
@@ -115,6 +116,13 @@ Cron are the name given to automated tasks on Linux. See `crontab -l` for the ta
 
 Once you found a service, look for CVE for the given version, and try to use one to escalate to root.
 
+<br>
+
+**Other files that may be useful** 🚪
+
+* `/etc/services`: see ports and the services running on it
+* `/etc/profile`: set environment variables...
+
 </div></div>
 
 > **NOTE**: don't forget to redirect any errors with `some_command 2> /dev/null`.
@@ -148,7 +156,7 @@ Find vulnerabilities in binaries.
 * [gtfobins](https://gtfobins.github.io/) (7.4k ⭐): a reference to find ways to exploit a command with misconfigured permissions.
 * [gtfo](https://github.com/t0thkr1s/gtfo) (96 ⭐): a python script to browse locally, a most-likely, outdated, version of gtfobins.
 
-There are many scripts checking if there are "common" files, testing commands... in order to look for information that would be useful for you to reach a higher level of privilege.
+There are many scripts **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
 
 * [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) (10.4k ⭐): a script shell
 * [LinEnum](https://github.com/rebootuser/LinEnum) (5.4k ⭐): a script shell
@@ -156,9 +164,9 @@ There are many scripts checking if there are "common" files, testing commands...
 * [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) (lse, 2.5k ⭐): a script shell
 * [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) (1.1k ⭐): a python script
 
-Others
+Random stuff that may be useful
 
-* [pspy](https://github.com/DominicBreuker/pspy) (3.2k ⭐): "Monitor linux processes without root permissions"
+* [pspy](https://github.com/DominicBreuker/pspy) (3.2k ⭐): monitor linux processes without root permissions
 </div></div>
 
 <hr class="sr">

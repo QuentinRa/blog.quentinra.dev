@@ -80,15 +80,18 @@ For a penetration tester, it's more something like that
 
 **Find more infos about the computer** 🧭️
 
-If you can, try to see the computer as its users do, because you may find some interesting stuff.
+* version
+* ...
 
 **Get to root using privilege escalation** 😎
 
-As you can't do much as a regular user, that's the main goal when getting inside.
+There isn't much you can do as a regular user, so that's the main goal.
 
 </div><div>
 
-**Fetch data** 🪙
+**Find useful data** 🪙
+
+If you can, try to see the computer as its users do, because you may find some interesting stuff.
 
 * Try to look for backups
 * Try to look for mails/conversations
@@ -114,7 +117,9 @@ As you can't do much as a regular user, that's the main goal when getting inside
 * Use this machine as a starting point. Scan the network to discover more vulnerable machines. 🔓
 </div><div>
 
-* Steal (more?) private information <small>(files, photos, emails, authentication tokens, source code...)</small> 💰
+* Steal more sensitive information <small>(files, photos, emails, authentication tokens, source code...)</small> 💰
 
-* defacing the public website / redirect to a malicious website 🙊
+* defacing the public website 🙊
+
+* redirect users to a malicious website 🕸️
 </div></div>
