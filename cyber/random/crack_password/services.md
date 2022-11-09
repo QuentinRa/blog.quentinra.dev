@@ -13,12 +13,14 @@
 ```bash
 $ wordlist=/usr/share/wordlists/rockyou.txt
 # use ssh, ftp...
-$ hydra -l username -P $wordlist ssh://MACHINE_IP
-# alternate forms
-$ hydra -l username -P $wordlist MACHINE_IP ssh
-# without using a variable
-$ hydra -l username -P /usr/share/wordlists/rockyou.txt ssh://MACHINE_IP
+$ hydra -l username -P $wordlist ssh://IP
+$ hydra -l username -P $wordlist ftp://IP:port
+$ [...]
+# alternate form
+$ hydra -l username -P $wordlist IP ssh
 ```
+
+> Note: I use a variable `$wordlist` to write shorter commands.
 </div><div class="align-self-center">
 
 * `-l username`: try this username
@@ -30,7 +32,7 @@ $ hydra -l username -P /usr/share/wordlists/rockyou.txt ssh://MACHINE_IP
 * `-t n`: use $n$ threads (default: 16)
 * `-v`: verbose
 * `-V`: show login+password for each attempt
-* `-e [values]` such as `-e nsr`
+* `-e [values]` such as `-e nsr` for all three
   * `n`: try null password
   * `s`: try login as pass
   * `r`: try reversed login
@@ -40,14 +42,20 @@ $ hydra -l username -P /usr/share/wordlists/rockyou.txt ssh://MACHINE_IP
 
 ## Nmap
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2 mt-3"><div>
 
 ```bash
 $ nmap IP -p 22 --script ssh-brute --script-args userdb=users.lst,passdb=pass.lst
 ```
 
-> More services? See [nmap brute list of NSE scripts](https://nmap.org/nsedoc/categories/brute.html).
-</div><div>
+You can actually load every brute force script
+
+```bash
+$ nmap IP --script "*brute*" --script-args userdb=users.lst,passdb=pass.lst
+```
+</div><div class="align-self-center">
 
 Both `.lst` files are literally files with one username/password per line, and nmap will try the cartesian product of both files <small>(i.g. the first username with every password, the second username with every password...)</small>.
+
+> You want more services? See [nmap brute list of NSE scripts](https://nmap.org/nsedoc/categories/brute.html).
 </div></div>
