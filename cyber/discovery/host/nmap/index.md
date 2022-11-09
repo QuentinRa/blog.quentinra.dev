@@ -216,11 +216,11 @@ Other alternatives are `--min-rate/--max-rate` to set the rate per seconds, or `
 
 <p class="mt-3"><b>Dig information</b></p>
 
-* `-sV`: what are the services used by the open ports? What's their versions? <small>(ex: 80 is using Apache x.xx.xx)</small>. May also guess the OS.
-* `-sC`: find hostname, maybe the OS too, the computer name
+* `-sV`: what are the services used by the open ports? What's their versions? <small>(ex: 80 $\to$ Apache x.xx.xx)</small>. May also guess the OS. You may set the intensity with `--version-intensity level` (from 0 to 9). There are shortcuts `--version-light` (2), and `--version-all` (9).
+* `-sC`: execute default scripts <small>(find hostname, OS, computer name...)</small>
 * `-O`: what's the operating system of the host, a bit unreliable
 * `-A`: all the above, and some more
-* Nmap by default may return `Service Info: Host: Os:` with some information.
+* The line `Service Info: Host: Os:` usually has some information.
 
 ```bash
 $ nmap -sV scanme.nmap.org -vv
@@ -253,7 +253,7 @@ $ nmap scanme.nmap.org --script=vuln
 $ nmap scanme.nmap.org --script vuln # same
 ```
 
-> **Note**: I had to disable some functionalities of my antivirus, otherwise some NSE scripts would fail.
+> **Note**: I had to disable some functionalities of my antivirus, otherwise some/most NSE scripts would fail.
 
 </div><div>
 
@@ -261,6 +261,7 @@ To find a script
 
 * Use NSEDoc, for instance ["smb" NSE scripts](https://nmap.org/search/?q=smb)
 * Or, use commands, `ls -l /usr/share/nmap/scripts/*smb*`
+* Note that there are also CVEs!
 
 You can run a specific script that you selected
 
@@ -268,6 +269,12 @@ You can run a specific script that you selected
 $ nmap scanme.nmap.org --script=lua_script
 # run two scripts, set argument "key" of "s1" to "value"
 $ nmap scanme.nmap.org --script=s1,s2 --script-args s1.key=value
+```
+
+You can also use patterns to select scripts 👑
+
+```bash
+$ nmap scanme.nmap.org --script "ftp*"
 ```
 </div></div>
 
@@ -329,5 +336,14 @@ $ nmap -f # create packets of 8 bytes or less
 $ nmap -ff # create packets of 16 bytes or less
 $ nmap --mtu xxx # maximum transfer unit (multiple of 8)
 $ nmap --data-length length # split by length
+```
+<span></span>
+
+**Traceroute**
+
+You can ask nmap to do a traceroute, much like with `traceroute`.
+
+```bash
+$ nmap [...] --traceroute
 ```
 </div></div>
