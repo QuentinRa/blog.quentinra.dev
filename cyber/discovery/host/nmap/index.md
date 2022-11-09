@@ -118,17 +118,17 @@ The 3 scans below can be used to try to bypass weak firewalls that have only rul
 
 </div><div>
 
-### ➡️UDP Scans
+### ➡️ UDP Scans
 
 > **UDP Scans** are scans used to **detect UDP ports**, meaning ports using the UDP connection-less protocol, in which a message is sent, with no reply, and without care if the message was received or not, corrupted or not.... This is quite faster than TCP.
 
 * **UDP Scan** | `-sU` | `Need root privileges`. The scan is slow as UDP ports may only respond if they are closed (with a PING/ICMP), so the scan must send multiple requests, to ensure that the port isn't closed, as there is no way to ensure that the port is open, so they are usually marked as `open|filtered`.
 
-### ➡️ICMP Scans
+### ➡️ ICMP Scans
 
 * **Ping Scan** | `-sn`. Do not scan ports, but used to check if a host is up. It uses ARP if launch as root, and targeting a host on the same network.
 
-### ➡️Scans to find ports unprotected by a firewall
+### ➡️ Scans to find ports unprotected by a firewall
 
 * **ACK scan** | `-sA`. Send a packet with ACK, any port will reply with RST. But, the response is analyzed to find if the firewall, or the port responded.
 
@@ -268,5 +268,66 @@ You can run a specific script that you selected
 $ nmap scanme.nmap.org --script=lua_script
 # run two scripts, set argument "key" of "s1" to "value"
 $ nmap scanme.nmap.org --script=s1,s2 --script-args s1.key=value
+```
+</div></div>
+
+<hr class="sep-both">
+
+## 👑 Other notes 👑
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+**IP Spoofing**
+
+Change the IP making the request. Beware that it's useless if you can't grab the response, either because you have control over the machine, or something like that.
+
+```bash
+$ nmap -S SOME_OTHER_IP
+```
+<span></span>
+
+️🧟️ **Zombies/Idle** 🧟 | `-sI`.
+
+A host idle is a host that is not making any requests, such as a printer. We can use it to make requests instead of us. Every packet has an ID that is usually incrementing by one at every request. We will query the zombie once to know the starting number, spoof a request using the zombie IP, then be querying again the packet ID, we will know if the host replied, or not.
+
+**MAC spoofing**
+
+You can also use someone else MAC, but it's only useful if you are on the same network, I admit I don't know why.
+
+```bash
+$ nmap --spoof-mac SPOOFED_MAC
+```
+
+**Option `--reason`**
+
+You can ask nmap to give the reason as to why a port is identified as "xxx". This will add a column "REASON" in the result, that is usually present by default (at least on Kali).
+
+</div><div>
+
+**Select a network interface**
+
+```bash
+$ nmap -e NETWORK_INTERFACE
+```
+<span></span>
+
+**Decoys**
+
+You can create decoys, i.e. make nmap create multiple packets with the same request but different IPs, with the hacker IP being one of them.
+
+```bash
+$ nmap -D A,B,YOUR_IP target
+```
+<span></span>
+
+**Fragmentation**
+
+You can fragment packets which may be used to bypass firewalls
+
+```bash
+$ nmap -f # create packets of 8 bytes or less
+$ nmap -ff # create packets of 16 bytes or less
+$ nmap --mtu xxx # maximum transfer unit (multiple of 8)
+$ nmap --data-length length # split by length
 ```
 </div></div>
