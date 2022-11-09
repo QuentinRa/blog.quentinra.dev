@@ -336,3 +336,17 @@ URL [200 OK] Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][nginx/1.14.0
 * `data:text/javascript;base64,` (can append directly)
 * https://blog.cyberethical.me/
 * stat xxx.file
+* curl invalid_file_that_my_browser_cant_open to see the contents
+* `nc -lnvp xxx`
+
+---- https://tryhackme.com/room/picklerick
+
+* R1ckRul3s
+* Wubbalubbadubdub (robots.txt)
+* Apache/2.4.18 (Ubuntu)
+* ...
+* nikto -h URL (Scan web server for known vulnerabilities)
+* Baka
+  * Directory to look at: /root, /home...
+  * Don't forget to check sudo -l
+* https://fr33s0ul.tech/index.html
