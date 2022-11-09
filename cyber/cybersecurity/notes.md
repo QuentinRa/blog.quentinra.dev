@@ -350,3 +350,21 @@ URL [200 OK] Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][nginx/1.14.0
   * Directory to look at: /root, /home...
   * Don't forget to check sudo -l
 * https://fr33s0ul.tech/index.html
+
+XXX
+
+* db_vulns
+
+<hr class="sep-both">
+
+## Network & protocols
+
+--- https://tryhackme.com/room/networkservices
+
+* SMB: files, printers, ...
+* https://en.wikipedia.org/wiki/Request%E2%80%93response
+* Enum4Linux: Enum4linux is a tool used to enumerate SMB shares on both Windows and Linux systems. https://github.com/CiscoCXSecurity/enum4linux https://www.kali.org/tools/enum4linux/ enum4linux -a IP (full scan)
+* smbclient //IP/share -U name -p port
+* -U Anonymous
+* help/history/pwd/ls/cd/stat/q/exit/quit/more/get/put
+* check id_rsa.pub to find the username (?)
