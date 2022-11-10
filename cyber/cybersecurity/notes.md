@@ -469,3 +469,17 @@ it was not working in a file
 * These objects are organised in Organizational Units (OUs) which are container objects that allow you to classify users and machines.
 * List of others OUs https://tryhackme.com/room/winadbasics
 * OUs are used to apply policies on a group of entities? they are part of one OUs. While Security Groups grant perms over resources, like allowing access to a shared folder.
+* View > Advanced Features. Disable the protection to delete something. (Properties > Objects)
+* Can delegate control. Ex: allow IT support to reset low-level accounts pass. If you right-click on a OU, then delegate, you would allow a user to have more priviledge over this OU.
+* `Set-ADAccountPassword sophie -Reset -NewPassword (Read-Host -AsSecureString -Prompt 'New Password') -Verbose` (reset sophie password)
+* `Set-ADUser -ChangePasswordAtLogon $true -Identity sophie -Verbose` (reset on login)
+* Workstations (usual devices), Servers, DC
+* Group Policy Management
+  * Group Policy Objects (GPO). GPOs are simply a collection of settings that can be applied to OUs.
+  * In the tab above, tou create GPO.
+  * Something important to have in mind is that any GPO will apply to the linked OU and any sub-OUs under it.
+  * Scope
+  * GPOs are distributed to the network via a network share called SYSVOL in the DC
+  * This share points by default to the C:\Windows\SYSVOL\sysvol\ directory on each of the DCs in our network.
+  * Users must sync with it periodically, may force update with `gpupdate /force`
+  * Drag the GPO to every OU
