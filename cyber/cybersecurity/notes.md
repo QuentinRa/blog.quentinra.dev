@@ -396,6 +396,16 @@ XXX
     * sudo chown root /tmp/mount/sbash
     * sudo chmod +s /tmp/mount/sbash
   * remote: /share/sbash -p
+* sudo umount /tmp/mount
+* port 2049
+* nfs-showmount (nmap)
+* SMTP send back the email if it couldn't be sent
+* Metasploit: smtp_version
+* The SMTP service has two internal commands that allow the enumeration of users: VRFY (confirming the names of valid users) and EXPN (which reveals the actual address of user’s aliases and lists of e-mail (mailing lists)
+* auxiliary/scanner/smtp/smtp_version
+* auxiliary/scanner/smtp/smtp_enum
+* sudo nmap 10.10.200.26 -p25 --script "*smtp*"
+* https://www.kali.org/tools/smtp-user-enum/
 
 --- https://tryhackme.com/room/crackthehash
 
