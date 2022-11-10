@@ -416,6 +416,10 @@ XXX
 * get users + hash
 * password reuse
 
+<hr class="sep-both">
+
+## Hash
+
 --- https://tryhackme.com/room/crackthehash
 
 ```
@@ -442,3 +446,19 @@ https://narancsblog.com/category/thm/easy/
 .\hashcat -m 160 hash:key .\12rock.lst
 it was not working in a file
 ```
+
+<hr class="sep-both">
+
+## Windows
+
+--- https://tryhackme.com/room/winadbasics
+
+* Microsoft's Active Directory 
+* simplifies the management of devices and users within a corporate environment
+* computer stop working? create users?
+* Windows domain is a group of users and computers under the administration of a given business
+* centralise the administration of common components of a Windows computer network in a single repository called Active Directory (AD)
+* The server that runs the Active Directory services is known as a Domain Controller (DC).
+* Ex: login to a school network.
+* Username: XXX\USER login on domain XXX with username USER
+* Active Directory Domain Service (AD DS). This service acts as a catalogue that holds the information of all of the "objects" that exist on your network. 
