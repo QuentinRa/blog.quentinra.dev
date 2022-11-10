@@ -461,4 +461,11 @@ it was not working in a file
 * The server that runs the Active Directory services is known as a Domain Controller (DC).
 * Ex: login to a school network.
 * Username: XXX\USER login on domain XXX with username USER
-* Active Directory Domain Service (AD DS). This service acts as a catalogue that holds the information of all of the "objects" that exist on your network. 
+* Active Directory Domain Service (AD DS). This service acts as a catalogue that holds the information of all of the "objects" that exist on your network.
+* Users (security principals=can login, can be assigned privileges over resources=file/printers) -> People/Services
+* Machines (SP too, have an account which is the local admin). Machine Account passwords are automatically rotated out and are generally comprised of 120 random characters. The machine account name is the computer's name followed by a dollar sign.
+* Security Groups (security principals): give priviledge to a group, assign users to it. See https://tryhackme.com/room/winadbasics https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups#default-security-groups
+* https://stackoverflow.com/questions/56820526/how-to-change-keyboard-layout-in-windows-console-cmd-or-wsl
+* These objects are organised in Organizational Units (OUs) which are container objects that allow you to classify users and machines.
+* List of others OUs https://tryhackme.com/room/winadbasics
+* OUs are used to apply policies on a group of entities? they are part of one OUs. While Security Groups grant perms over resources, like allowing access to a shared folder.
