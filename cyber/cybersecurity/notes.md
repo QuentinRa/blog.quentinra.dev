@@ -483,3 +483,7 @@ it was not working in a file
   * This share points by default to the C:\Windows\SYSVOL\sysvol\ directory on each of the DCs in our network.
   * Users must sync with it periodically, may force update with `gpupdate /force`
   * Drag the GPO to every OU
+* protocols can be used for network authentication in windows domains 
+* Kerberos: Used by any recent version of Windows. This is the default protocol in any recent domain. Users who log into a service using Kerberos will be assigned tickets. Think of tickets as proof of a previous authentication. The initial ticket is a Ticket Granting Ticket (TGT) that allow a user to request other tickets without sending credentials such as when accessing another service (share/db/...).
+* NetNTLM: Legacy authentication protocol kept for compatibility purposes.
+* See https://tryhackme.com/room/winadbasics + Tree/...
