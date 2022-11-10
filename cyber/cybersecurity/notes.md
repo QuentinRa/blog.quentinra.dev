@@ -379,3 +379,36 @@ XXX
 * https://gregit.medium.com/exploiting-simple-network-services-in-ctfs-ec8735be5eef
 * https://attack.mitre.org/techniques/T1210/
 * https://www.nextgov.com/cybersecurity/2019/10/nsa-warns-vulnerabilities-multiple-vpn-services/160456/
+
+--- https://tryhackme.com/room/networkservices2
+
+* NFS stands for "Network File System"
+* Mount remote repository on local host
+* RPC calls to check with the server access rights
+
+--- https://tryhackme.com/room/crackthehash
+
+```
+wordlists
+Do you want to extract the wordlist rockyou.txt? [Y/n] Y
+grep '^....$' /usr/share/wordlists/rockyou.txt > /tmp/4rock.lst
+egrep '^.{6}$' /usr/share/wordlists/rockyou.txt > /tmp/6rock.lst
+https://hashkiller.io/listmanager
+https://hashes.com/en/decrypt/hash
+
+hashcat.exe -m 1000 .\hash.txt .\rockyou.txt --force
+hashcat.exe -m 1000 .\hash.txt .\rockyou.txt --force --show
+https://mrash.co/
+
+xxxsha1: hash:salt
+
+https://stackoverflow.com/questions/64534436/hash-hashcat-token-length-exception
+hashcat -m 0 -a 0 hash rock.lst -r /usr/share/hashcat/rules/best64.rule
+
+https://sckull.github.io/
+https://decrypt.tools/
+https://ctf.ac/
+https://narancsblog.com/category/thm/easy/
+.\hashcat -m 160 hash:key .\12rock.lst
+it was not working in a file
+```
