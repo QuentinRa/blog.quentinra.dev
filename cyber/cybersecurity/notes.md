@@ -487,3 +487,14 @@ it was not working in a file
 * Kerberos: Used by any recent version of Windows. This is the default protocol in any recent domain. Users who log into a service using Kerberos will be assigned tickets. Think of tickets as proof of a previous authentication. The initial ticket is a Ticket Granting Ticket (TGT) that allow a user to request other tickets without sending credentials such as when accessing another service (share/db/...).
 * NetNTLM: Legacy authentication protocol kept for compatibility purposes.
 * See https://tryhackme.com/room/winadbasics + Tree/...
+
+<hr class="sep-both">
+
+## XSS
+
+--- https://tryhackme.com/room/xss
+
+* Webcam snapshot
+* Phishing 
+* Port Scanning
+* `sed -n 's/GET \/?cookie=\(.*\)/\1/p' test | base64 -d`

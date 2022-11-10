@@ -1020,8 +1020,8 @@ Best options
 * `-v` Inverse pattern
 * `-c`: number of match per file
 * `n`: add line number before each match
-* `-o` Show only the matched part
-* `-H` Show only the matched part
+* `-o` show only the matched part
+* `-H` show the file before every match
 * `-w` words-only <small>("XxtotoxX" won't match "toto")</small>
 </div><div>
 
