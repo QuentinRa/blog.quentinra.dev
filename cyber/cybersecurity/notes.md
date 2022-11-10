@@ -406,6 +406,15 @@ XXX
 * auxiliary/scanner/smtp/smtp_enum
 * sudo nmap 10.10.200.26 -p25 --script "*smtp*"
 * https://www.kali.org/tools/smtp-user-enum/
+* sudo apt install default-mysql-client
+* mysql-enum (nmap)
+* 3306
+* mysql_sql: send SQL queries...
+* auxiliary/scanner/mysql/mysql_schemadump (dump cols+tables)
+* use xxx
+* auxiliary/scanner/mysql/mysql_hashdump
+* get users + hash
+* password reuse
 
 --- https://tryhackme.com/room/crackthehash
 
