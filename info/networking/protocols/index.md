@@ -137,6 +137,8 @@ xxx
 .
 ```
 
+> SMTP also has the commands `VRFY` to check if a user exists, and `EXPN` to see the emails/mailing lists/... for a user.
+
 </div><div class="border-st art border-dark ps-4">
 
 The Mail Transfer Agent will send the mail to a **Mail Delivery Agent** which is the server that the client will query to access its mails. It's common for a MTA to also be an MDA. 
