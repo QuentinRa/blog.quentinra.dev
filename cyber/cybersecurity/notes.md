@@ -341,10 +341,6 @@ URL [200 OK] Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][nginx/1.14.0
 
 ---- https://tryhackme.com/room/picklerick
 
-* R1ckRul3s
-* Wubbalubbadubdub (robots.txt)
-* Apache/2.4.18 (Ubuntu)
-* ...
 * nikto -h URL (Scan web server for known vulnerabilities)
 * Baka
   * Directory to look at: /root, /home...
@@ -487,26 +483,6 @@ it was not working in a file
 * Kerberos: Used by any recent version of Windows. This is the default protocol in any recent domain. Users who log into a service using Kerberos will be assigned tickets. Think of tickets as proof of a previous authentication. The initial ticket is a Ticket Granting Ticket (TGT) that allow a user to request other tickets without sending credentials such as when accessing another service (share/db/...).
 * NetNTLM: Legacy authentication protocol kept for compatibility purposes.
 * See https://tryhackme.com/room/winadbasics + Tree/...
-
-<hr class="sep-both">
-
-## XSS
-
---- https://tryhackme.com/room/xss
-
-* Webcam snapshot
-* Phishing 
-* Port Scanning
-* `sed -n 's/GET \/?cookie=\(.*\)/\1/p' test | base64 -d`
-* window.location.host
-* dom-based attacks are only triggered when the user interact with an element of the dom, such as hovering an image.
-* onmouseover
-* <img src="aza" onerror="eval('aler'+'t')('Hello')">a
-* <img src="blah" onerror=alert('H'+'ello') />
-* <img src="blah" onerror=alert('HHelloello') />
-* <img src="blah" ONERROR=alert('H'+'ello') />
-* https://beefproject.com/
-* XSS-Payloads.com
 
 ## Shells
 
