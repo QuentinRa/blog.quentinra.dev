@@ -269,7 +269,7 @@ $ john --format=gpg hash --wordlist=wordlist
 Some users are using a key instead of a password while connecting to a server via SSH, because, as long as the key do not leak, it's more secure than sending credentials.
 
 ```bash
-ssh -i key
+ssh login@ip -i key
 ```
 </div><div>
 

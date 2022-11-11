@@ -10,9 +10,23 @@ Any knowledge related to protocols, and services, such as ftp, ssh, sftp, scp, t
 
 ### 🔓 Telnet - 23 (tcp)
 
-No encryption for the credentials nor the data exchanged.
+No encryption neither for the credentials nor the data exchanged.
 
-...
+```bash
+$ telnet IP port
+# 1. the server send the protocol banner
+# 2. the user write text while following the protocol
+```
+
+Example with HTTP 1.1
+
+```bash
+$ telnet IP 80
+GET / HTTP/1.1
+Host: example.com
+# leave two blank lines (press ENTER twice)
+```
+
 </div><div class="border-st art border-dark ps-4">
 
 ### 🔒 SSH - 22 (tcp)
@@ -34,7 +48,7 @@ $ ssh login@ip -i /path/to/id_rsa
 
 ### 🔓 ftp - 21 (tcp)
 
-No encryption, be it the credentials or the data exchanged.
+No encryption neither for the credentials nor the data exchanged.
 
 ```bash
 $ ftp ip
@@ -71,9 +85,9 @@ ftp> stat # same, but there is the version+ftp client name
 
 An FTP request is starting with the server sending `USER`, the client answering with a username, the server sending `PASS`, and the user answering back with the password.
 
-There are two modes in FTP: active, and passive. The mode determine the port used to transfer data. Originally, data is transferred via the port 20, while in passive mode, a port higher than 1023 (reserved/system ports) will be used.
+There are two modes in FTP: active, and passive. The mode determine the port used to transfer data. Data is transferred via the port 20, while in passive mode, a port higher than 1023 (reserved/system ports) will be used.
 
-There are two channels in a FTP connection: a channel to send commands, and one to transfer data. There is also a transfer mode, which could be ascii, or binary (default). You can enter `type [a|i]` or `ascii|binary` to switch.
+There are two channels in a FTP connection: a channel to send commands <small>(also called control)</small>, and one to transfer data. There is also a transfer mode, which could be ascii, or binary (default). You can enter `type [a|i]` or `ascii|binary` to switch.
 </details>
 
 </div><div class="border-st art border-dark ps-4">
