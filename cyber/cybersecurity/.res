@@ -1,6 +1,5 @@
 Next
 => Cyberattacks https://en.wikipedia.org/wiki/List_of_cyberattacks + https://en.wikipedia.org/wiki/Petya_and_NotPetya
-=> MITM (https://snyk.io/learn/man-in-the-middle-attack/
 => https://github.com/ReFirmLabs/binwalk
 
 Learn
