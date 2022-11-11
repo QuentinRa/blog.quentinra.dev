@@ -213,6 +213,34 @@ smb> exit # there is also "q" and "quit"
 
 <hr class="sep-both">
 
+## 🔒 NFS - 2049 (tcp)
+
+<div class="row row-cols-md-2 mt-2"><div>
+
+Network File System (NFS) is a protocol allowing a computer to mount a remote folder on its local file system. The command below will mount the remote folder `/share` inside `/tmp/share` on our machine. It means that when we browse `/tmp/share`, we will see the files inside `/share` on the remote host.
+
+```bash
+#  sudo apt install nfs-common
+$ mkdir /tmp/share
+$ sudo mount -t nfs IP:/share /tmp/share/ -nolock
+# unmount
+$ sudo umount /tmp/share
+```
+
+Remote Procedure Calls (RPC) are used to exchange with the server.
+</div><div>
+
+List mounts
+
+```bash
+$ showmount -e IP
+# see NFS exports
+$ cat /etc/exports
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 🔒 Remote Desktop Protocol (RDP) - 3389 (tcp)
 
 <div class="row row-cols-md-2"><div>

@@ -107,12 +107,13 @@ Cron are the name given to automated tasks on Linux. See `crontab -l` for the ta
 
 <br>
 
-**Potentially vulnerable services** 😢
+**Potentially vulnerable services** 💸
 
 * Apache: `apache2 -v` / `apache2ctl -M` / `httpd -v`
 * Sudo: `sudo -V`
 * PostgresSQL: `psql -V`
 * MySQL: `mysql --version`
+* NFS: see if there are shares, and if root_squashing is enabled
 
 Once you found a service, look for CVE for the given version, and try to use one to escalate to root.
 
@@ -135,13 +136,13 @@ Once you found a service, look for CVE for the given version, and try to use one
 
 Privilege escalation refer to a process of obtaining super-administrator (a.k.a. root) privileges, starting from a non-root user.
 
-* Find a vulnerable service an exploit it <small>(apache, mysql...)</small>
-* Find a service in which you can inject data, in order to exploit it
-  * Exploit `sudo`
-  * Exploit system files
-  * Exploit cron jobs
-  * Exploit script/.so/... with the SUID bit
+* Find misconfiguration <small>(sudo, system files, NFS...)</small>
+* Find a vulnerable service and exploit it <small>(apache, mysql...)</small>
+* Find processes/tasks/script in which you can inject data
+  * cron jobs
+  * script/.so/... with the SUID bit
   * ...
+* Find if you can exploit the kernel
 * ...
 
 See guides
@@ -256,21 +257,6 @@ export -f /some/path
 ```bash
 $ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/; chmod +xs /tmp/bash)' ./script
 ```
-</div></div>
-
-<hr class="sep-both">
-
-## NFS
-
-<div class="row row-cols-md-2"><div>
-
-NFS files are created with the permissions of the remote user. If the remote user is root, and root squashing is disabled, then the files will be created as root.
-
-```bash
-# see NFS exports
-$ cat /etc/exports
-```
-</div><div>
 </div></div>
 
 <hr class="sep-both">
