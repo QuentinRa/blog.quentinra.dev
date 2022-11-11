@@ -34,11 +34,11 @@ Host: example.com
 ### 🔒 SSH - 22 (tcp)
 
 ```bash
-$ ssh login@ip
-$ ssh login@ip -u port
+$ ssh login@IP
+$ ssh login@IP -u port
 # use a private key
 # instead of a password
-$ ssh login@ip -i /path/to/id_rsa
+$ ssh login@IP -i /path/to/id_rsa
 ```
 </div></div>
 
@@ -55,8 +55,8 @@ $ ssh login@ip -i /path/to/id_rsa
 No encryption neither for the credentials nor the data exchanged.
 
 ```bash
-$ ftp ip
-$ ftp login@ip
+$ ftp IP
+$ ftp login@IP
 ftp> commands
 ```
 
@@ -102,9 +102,9 @@ Secure versions of FTP built over SSH.
 
 ```bash
 # upload
-$ scp file_to_upload user@ip:remote/path/
+$ scp file_to_upload user@IP:remote/path/
 # download
-$ scp user@ip:remote/path/ local_path_to_dest
+$ scp user@IP:remote/path/ local_path_to_dest
 ```
 
 > Use `scp -r` to download/upload a folder will all its content.
@@ -252,8 +252,8 @@ There is [rdesktop](https://github.com/rdesktop/rdesktop) (1.1k ⭐).
 There is [FreeRDP](https://github.com/FreeRDP/FreeRDP) (7.5k ⭐), and there is a graphical version too [xfreerdp-gui](https://github.com/wyllianbs/xfreerdp-gui) (29 ⭐).
 
 ```bash
-$ xfreerdp /u:x /p:y /v:ip
-$ xfreerdp /dynamic-resolution +clipboard /cert:ignore /v:ip /u:x /p:y
+$ xfreerdp /u:x /p:y /v:IP
+$ xfreerdp /dynamic-resolution +clipboard /cert:ignore /v:IP /u:x /p:y
 ```
 </div><div>
 
