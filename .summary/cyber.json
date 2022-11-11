@@ -2,7 +2,7 @@
   "title": "CyberSecurity-related courses - xxxx",
   "description": "xxx",
   "courses": {
-    "e1": [
+    "~e1": [
       {
         "tag": "cybersecurity",
         "name": "Getting Started",
@@ -11,7 +11,7 @@
         "hidden": false
       },
       {
-        "tag": "os/_vms/index.md",
+        "tag": "cybersecurity/vms.md",
         "name": "Virtual Machines",
         "desc": "",
         "icon": null,
@@ -25,7 +25,7 @@
         "hidden": false
       }
     ],
-    "investigation": [
+    "1. Investigation 🔎": [
       {
         "tag": "discovery/investigation/index.md",
         "name": "Investigation",
@@ -34,7 +34,7 @@
         "hidden": false
       }
     ],
-    "discovery": [
+    "2. Discovery 🗺️": [
       {
         "tag": "discovery/host/index.md",
         "name": "Host discovery",
@@ -57,7 +57,53 @@
         "hidden": false
       }
     ],
-    "Server": [
+    "3. Exploitation 💥": [
+      {
+        "tag": "server/services.md",
+        "name": "Exploitation",
+        "desc": "",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "server/services.md",
+        "name": "Exploit services",
+        "desc": "",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "os/_tools/metasploit/index.md",
+        "name": "metasploit",
+        "desc": null,
+        "icon": "<i class=\"bi bi-tools\"></i>",
+        "hidden": false
+      }
+    ],
+    "Exploitation: Services 🧟️": [
+      {
+        "tag": "server/services.md",
+        "name": "Exploit services",
+        "desc": "Notes about misconfigurations, discovery... of services (SSH, FTP...).",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "random/crack_password/services.md",
+        "name": "Bruteforce services",
+        "desc": "Use hydra to bruteforce SSH, FTP...",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "random/printers/index.md",
+        "name": "Printers",
+        "desc": "How to exploit printers.",
+        "icon": null,
+        "hidden": false
+      }
+    ],
+    "Exploitation: Web 🕸️": [
       {
         "tag": "server/web/index.md",
         "name": "Exploit webserver",
@@ -143,7 +189,7 @@
         "hidden": false
       }
     ],
-    "Database": [
+    "Exploitation: Databases 🖥️": [
       {
         "tag": "server/database/index.md",
         "name": "Exploit database",
@@ -166,37 +212,23 @@
         "hidden": false
       }
     ],
-    "OS": [
+    "4. Privilege escalation 🔓": [
       {
-        "tag": "server/services.md",
-        "name": "Exploit services",
-        "desc": "Notes about misconfigurations, discovery... of services (SSH, FTP...).",
-        "icon": null,
-        "hidden": false
-      },
-      {
-        "tag": "os/linux/index.md",
-        "name": "Exploit Linux",
+        "tag": "privilege-escalation/linux/index.md",
+        "name": "Linux PrivEsc",
         "desc": "",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "os/windows/index.md",
-        "name": "Exploit Windows",
+        "tag": "privilege-escalation/windows/index.md",
+        "name": "Windows PrivEsc",
         "desc": "",
         "icon": null,
-        "hidden": false
-      },
-      {
-        "tag": "os/_tools/metasploit/index.md",
-        "name": "metasploit",
-        "desc": null,
-        "icon": "<i class=\"bi bi-tools\"></i>",
         "hidden": false
       }
     ],
-    "Random": [
+    " ⚒️ Random  ⚒️": [
       {
         "tag": "random/crack_password/index.md",
         "name": "Crack a hash",
@@ -212,23 +244,9 @@
         "hidden": false
       },
       {
-        "tag": "random/crack_password/services.md",
-        "name": "Bruteforce services",
-        "desc": "Use hydra to bruteforce SSH, FTP...",
-        "icon": null,
-        "hidden": false
-      },
-      {
         "tag": "random/forensics/index.md",
         "name": "Digital Forensics",
         "desc": "Notes about forensics, i.e. investigating cyber crimes.",
-        "icon": null,
-        "hidden": false
-      },
-      {
-        "tag": "random/printers/index.md",
-        "name": "Printers",
-        "desc": "How to exploit printers.",
         "icon": null,
         "hidden": false
       }
