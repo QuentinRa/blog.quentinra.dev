@@ -27,7 +27,7 @@
     ],
     "1. Investigation 🔎": [
       {
-        "tag": "discovery/investigation/index.md",
+        "tag": "investigation/index.md",
         "name": "Investigation",
         "desc": "",
         "icon": null,
@@ -36,21 +36,21 @@
     ],
     "2. Discovery 🗺️": [
       {
-        "tag": "discovery/host/index.md",
+        "tag": "discovery/index.md",
         "name": "Host discovery",
         "desc": "",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "discovery/host/nmap/index.md",
+        "tag": "discovery/nmap/index.md",
         "name": "Nmap",
         "desc": "",
         "icon": "<i class=\"bi bi-tools\"></i>",
         "hidden": false
       },
       {
-        "tag": "discovery/host/nessus/index.md",
+        "tag": "discovery/nessus/index.md",
         "name": "Nessus",
         "desc": "",
         "icon": "<i class=\"bi bi-tools\"></i>",
