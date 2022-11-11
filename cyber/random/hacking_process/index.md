@@ -25,7 +25,7 @@ For a penetration tester, it's more something like that
 
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Investigation
 
@@ -37,7 +37,7 @@ For a penetration tester, it's more something like that
 </div><div>
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Discovery
 
@@ -56,7 +56,7 @@ For a penetration tester, it's more something like that
   * ...
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Exploitation
 
@@ -70,7 +70,7 @@ For a penetration tester, it's more something like that
 * Try to exploit the website 🕵️
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Privilege Escalation
 
@@ -102,7 +102,7 @@ If you can, try to see the computer as its users do, because you may find some i
 * Try to look for passwords saved in notes
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Post-exploitation
 

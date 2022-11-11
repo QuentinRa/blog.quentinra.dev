@@ -1,6 +1,6 @@
 # Forensics
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Volatility
 
@@ -86,7 +86,7 @@ $ vol -f memory_capture_file --profile=a_profile --pid=infected_process_pid dlld
 > * [SANS Windows Forensic Analysis](https://www.sans.org/cyber-security-courses/windows-forensic-analysis/)
 > * [MemLabs](https://github.com/stuxnet999/MemLabs)
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Assembly
 

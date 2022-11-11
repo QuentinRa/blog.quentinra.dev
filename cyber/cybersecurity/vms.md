@@ -1,6 +1,6 @@
 # Virtual Machines
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Virtual machine emulators
 
@@ -31,7 +31,7 @@
 
 > There is also [qemu](https://www.qemu.org/), mostly for Linux users.
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Find a distribution
 

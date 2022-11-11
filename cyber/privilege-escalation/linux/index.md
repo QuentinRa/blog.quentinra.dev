@@ -13,7 +13,7 @@
 
 > [Privilege-Escalation](https://github.com/Ignitetechnologies/Privilege-Escalation) (2.6k ⭐) list a lot of CTF to practice.
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Linux handy commands
 
@@ -54,7 +54,7 @@ Learn more about your environment
 * `finger`: return a summary of information about a user
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Linux environment
 
@@ -127,7 +127,7 @@ Once you found a service, look for CVE for the given version, and try to use one
 
 > **NOTE**: don't forget to redirect any errors with `some_command 2> /dev/null`.
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Linux privilege enumeration
 
@@ -169,7 +169,7 @@ Random stuff that may be useful
 * [pspy](https://github.com/DominicBreuker/pspy) (3.2k ⭐): monitor linux processes without root permissions
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Misconfigured permissions
 
@@ -209,7 +209,7 @@ If the script "hand-made", or not something on GTFOBins, then you can use `strac
 every major Linux distribution with a SUID bit could be exploited to get root. See [arthepsy PoC](https://github.com/arthepsy/CVE-2021-4034) (913 ⭐), or [berdav PoC](https://github.com/berdav/CVE-2021-4034) (1.7k ⭐).
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Exploit sudo
 
@@ -237,7 +237,7 @@ $ sudo -u#4294967295 nc
 ```
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Exploit bash
 
@@ -258,7 +258,7 @@ $ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/; chmod +xs /tmp/bash)' ./scr
 ```
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## NFS
 
@@ -273,7 +273,7 @@ $ cat /etc/exports
 </div><div>
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Kernel exploits
 
@@ -291,7 +291,7 @@ There are two OLD scripts, for OLD Linux Kernels, if needed
 * [Linux Kernel Exploit Suggester 2](https://github.com/jondonas/linux-exploit-suggester-2) (1.4k ⭐): up to 5.x excluded
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Random
 

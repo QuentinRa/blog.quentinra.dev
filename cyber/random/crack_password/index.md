@@ -27,7 +27,7 @@ These tools will usually take a wordlist of passwords to try
 > CTF are usually using `/usr/share/wordlists/rockyou.txt`.
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Find which algorithm generated this hash
 
@@ -70,7 +70,7 @@ $ haiti "some_hash"
 
 > You might have to do it manually too. Some well-known one are "\\$1\\$" <small>(cisco, old linux)</small>, "\\$2\\$, \\$2a\\$, \\$2b\\$, \\$2x\\$, \\$2y\\$" <small>(bcrypt, web)</small>, or "$6" <small>(sha512crypt, modern linux)</small>. You can find a lot of examples [on hashcat website](https://hashcat.net/wiki/doku.php?id=example_hashes).
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## hashcat / MD5Hashing
 
@@ -102,7 +102,7 @@ Hashcat store cracked hash in a Potfile: `~/.hashcat/hashcat.potfile`.
 [crackstation](https://crackstation.net/) is quite similar to MD5Hashing, but on top, we can download their dictionary  🚀.
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Cracking a hash
 
@@ -186,7 +186,7 @@ $ john --config=FILE
 </details>
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Linux shadow hash cracking
 
@@ -209,7 +209,7 @@ $ john hash --format=sha512crypt --wordlist=wordlist
 Note that "unshadow" simply replaced the "x" in "passwd", with the password in "shadow", as you would find in some old linux distros.
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Windows password cracking
 
@@ -223,7 +223,7 @@ $ john hash --format=nt --wordlist=wordlist
 </div><div>
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## GPG passphrase cracking
 
@@ -260,7 +260,7 @@ $ john --format=gpg hash --wordlist=wordlist
 > If by any means you got someone's private key that was used to encrypt this file <small>(a key may be used instead of a passphrase)</small>, then use `gpg --import xxx.key` to import it, and decrypt the file as usual.
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## SSH private key - passphrase cracking
 
@@ -281,7 +281,7 @@ $ john --format=ssh hash --wordlist=wordlist
 ```
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## RAR password cracking
 
@@ -303,7 +303,7 @@ $ unrar x hello.rar
 ```
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## ZIP password cracking
 

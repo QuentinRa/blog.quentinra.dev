@@ -8,7 +8,7 @@
 [![ice](../../_badges/thm/ice.svg)](https://tryhackme.com/room/ice)
 [![blaster](../../_badges/thm/blaster.svg)](https://tryhackme.com/room/blaster)
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Knowledge about Windows
 
@@ -60,7 +60,7 @@ The administrator can set permissions for a group, and users may be in multiple 
 The Trusted Platform Module (TPM) hardware component providing security against tampering, or many other things. BitLocker was designed "to help protect user data, and to ensure that a computer has not been tampered with while the system was offline", as per [Microsoft](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview).
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Windows handy commands
 
@@ -116,7 +116,7 @@ Infos on a Local Machine
 > **Get help**: `help command`, `command help`, `command /?`, or `command /help`.
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Windows environment
 
@@ -161,7 +161,7 @@ Infos on a Local Machine
 * Kerberos is the authentication system in Windows domains.
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Windows privilege escalation
 
@@ -183,7 +183,7 @@ Guides
 * [Windows-Privilege-Escalation](https://github.com/frizb/Windows-Privilege-Escalation) (641 ⭐)
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Volume Shadow Copy Service (VSS)
 
@@ -202,7 +202,7 @@ To manage them
 > See [Volume Shadow Copy Service](https://learn.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service)
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Alternate Data Streams (ADS)
 
@@ -238,7 +238,7 @@ More about it:
 * [Introduction to Alternate Data Streams](https://www.malwarebytes.com/blog/news/2015/07/introduction-to-alternate-data-streams)
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Active directory
 

@@ -12,7 +12,7 @@ Encoding, unlike encryption, is simply another way of presenting data. Anyone th
 You can use [CyberChef](https://github.com/gchq/CyberChef) (19.2k ⭐) to encode/decode a message. They have an [online version here](https://gchq.github.io/CyberChef/).
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Base64
 

@@ -12,7 +12,7 @@ A lot of stuff to get started in cybersecurity, including websites to learn, pra
 > You may also check [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources) (GitHub).<br>
 > If you are tired, learn [some excuses to not do your job properly](https://cyberwtf.com/).
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Cybersecurity jobs
 
@@ -98,7 +98,7 @@ Knowledgeable about
 > There are **Grey hats**: hackers that are usually not following the rules, but often benefit others <small>(take down malicious website)</small><br>
 > And, obviously, there are [**Black hats**](https://www.blackhat.com/) (criminals/hackers).
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Random vocabulary
 
@@ -149,7 +149,7 @@ A look at cyberattacks categories ([source](https://www.malwarebytes.com/))
 
 > **Random**: most CTF challenges use the infamous rockyou.txt wordlist of passwords <small>(from a data breach of rockyou.com in 2009)</small>, through they were most likely not user passwords.
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Famous attacks
 
@@ -172,7 +172,7 @@ Use a breach in Windows, created by the NSA, and stolen by hackers in 2013. The 
 </td></tr>
 </table>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Learning, & Practicing
 
@@ -212,7 +212,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## News
 
@@ -233,7 +233,7 @@ There are also premium solutions such as [leakcheck](https://leakcheck.io/), or 
 
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Exploits / CVE lookup
 
@@ -262,7 +262,7 @@ CVEs take the form: CVE-YEAR-ID.
 * [microsoft.com](https://msrc.microsoft.com/update-guide/) (example: [CVE-2019-1388](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2019-1388)): for Microsoft CVEs
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Blogs
 

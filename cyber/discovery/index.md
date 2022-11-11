@@ -26,7 +26,7 @@ Scans may be exported too, and imported in others tools, such as in `metasploit`
 
 > You may also use commands such as `ping` <small>(test if the host is up, and accepting ICMP packets)</small>, `traceroute/tracepath` which are using the TTL to know how much steps/hops it took for a packet to reach the target <small>(they increase the TTL by one, and try to get the intermediaries IPs as they respond that the packet was destroyed, but most aren't responding, so we got no information. Also, the route may change, as routers are always calculating the most optimal route)</small>.
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Manual mapping
 
@@ -69,7 +69,7 @@ Of course, in practice, it's no as easy on top of taking a long time, so you sho
 
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## MASSCAN: Mass IP port scanner
 

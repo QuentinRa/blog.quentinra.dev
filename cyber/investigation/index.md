@@ -19,7 +19,7 @@ The goal is to find as much information as possible. This step is followed by ac
 As long as you don't interact with the target (no bruteforce...), [Subdomains enumeration](/cyber/exploitation/web/subdomains/index.md) is usually done at this step.
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Open-source intelligence (OSINT)
 
@@ -57,7 +57,7 @@ Others
 
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Inspecting files
 
@@ -98,7 +98,7 @@ Software                        : www.inkscape.org
 > Hide things in images: [Steganography](https://0xrick.github.io/lists/stego/)
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Maltego
 
@@ -129,7 +129,7 @@ Select "Maltego CE (free)", then once you [created a MaltegoCE account](https://
 Wait, and investigate what maltego found for you!
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Google Hacking/Dorking
 
@@ -164,7 +164,7 @@ You may also use
 * `xxx OR yyy`: search both xxx and yyy
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Recon using certificates/DNS records
 
@@ -193,7 +193,7 @@ $ dig example.com -t A @1.1.1.1
 ```
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Shodan.io
 
