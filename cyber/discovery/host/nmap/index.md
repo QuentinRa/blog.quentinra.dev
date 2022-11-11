@@ -26,7 +26,7 @@ A port is used by a protocol such as FTP (File Transfer Protocol) to transfer da
 > * [Networking/Ports](/info/networking/index.md#ports) to learn more about ports
 > * [Networking/Services](/info/networking/protocols/index.md) to learn more about the services using these ports
 > *  [Cyber/Services](/cyber/server/services.md) to learn more about how you can exploit services
-> * [Cyber/Bruteforce services](/cyber/random/crack_password/services.md) to try to bruteforce a service credentials.
+> * [Cyber/Bruteforce services](/cyber/random/crack_password/bruteforce.md) to try to bruteforce a service credentials.
 
 <hr class="sep-both">
 

@@ -59,21 +59,21 @@
     ],
     "3. Exploitation 💥": [
       {
-        "tag": "server/services.md",
+        "tag": "exploitation/general/index.md",
         "name": "Exploitation",
         "desc": "",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "server/services.md",
-        "name": "Exploit services",
+        "tag": "exploitation/general/shell.md",
+        "name": "Exploitation: Shells",
         "desc": "",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "os/_tools/metasploit/index.md",
+        "tag": "exploitation/general/metasploit/index.md",
         "name": "metasploit",
         "desc": null,
         "icon": "<i class=\"bi bi-tools\"></i>",
@@ -82,21 +82,21 @@
     ],
     "Exploitation: Services 🧟️": [
       {
-        "tag": "server/services.md",
+        "tag": "exploitation/services/index.md",
         "name": "Exploit services",
         "desc": "Notes about misconfigurations, discovery... of services (SSH, FTP...).",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "random/crack_password/services.md",
+        "tag": "exploitation/services/bruteforce.md",
         "name": "Bruteforce services",
         "desc": "Use hydra to bruteforce SSH, FTP...",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "random/printers/index.md",
+        "tag": "exploitation/services/printers.md",
         "name": "Printers",
         "desc": "How to exploit printers.",
         "icon": null,
@@ -105,84 +105,84 @@
     ],
     "Exploitation: Web 🕸️": [
       {
-        "tag": "server/web/index.md",
-        "name": "Exploit webserver",
+        "tag": "exploitation/web/index.md",
+        "name": "Exploit webservers",
         "desc": "",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "server/web/fuzz/index.md",
+        "tag": "exploitation/web/fuzz/index.md",
         "name": "Fuzzing / Fuzz",
         "desc": "",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "server/web/forms/index.md",
+        "tag": "exploitation/web/forms/index.md",
         "name": "Forms",
         "desc": "Bruteforce, Logic flaws...",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "server/web/files/forced_browsing.md",
+        "tag": "exploitation/web/files/forced_browsing.md",
         "name": "Forced browsing",
         "desc": "",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "server/web/frameworks/index.md",
+        "tag": "exploitation/web/frameworks/index.md",
         "name": "Frameworks",
         "desc": "Find and exploit frameworks such as Wordpress.",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "server/web/subdomains/index.md",
+        "tag": "exploitation/web/subdomains/index.md",
         "name": "Subdomains",
         "desc": "Try to expand your attack scope",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "server/web/xss/index.md",
+        "tag": "exploitation/web/xss/index.md",
         "name": "XSS (JavaScript)",
         "desc": "XSS vulnerabilities",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "server/web/ssrf/index.md",
+        "tag": "exploitation/web/ssrf/index.md",
         "name": "SSRF",
         "desc": "Server-Side Request Forgery",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "server/web/files/index.md",
+        "tag": "exploitation/web/files/index.md",
         "name": "File/Path exploits",
         "desc": "File upload, Path traversal...",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "server/web/rce/index.md",
+        "tag": "exploitation/web/rce/index.md",
         "name": "RCE",
         "desc": "Remote code execution",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "server/web/cookies/index.md",
+        "tag": "exploitation/web/cookies/index.md",
         "name": "Cookies",
         "desc": "Cookies vulnerabilities",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "server/web/burpsuite/index.md",
+        "tag": "exploitation/web/burpsuite/index.md",
         "name": "Burp Suite",
         "desc": "",
         "icon": "<i class=\"bi bi-tools\"></i>",
@@ -191,38 +191,38 @@
     ],
     "Exploitation: Databases 🖥️": [
       {
-        "tag": "server/database/index.md",
-        "name": "Exploit database",
+        "tag": "exploitation/database/index.md",
+        "name": "Exploit databases",
         "desc": "",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "server/database/sqli/index.md",
+        "tag": "exploitation/database/sqli/index.md",
         "name": "SQL injections",
         "desc": "",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "server/database/sqlmap/index.md",
+        "tag": "exploitation/database/sqlmap/index.md",
         "name": "SQLMap",
         "desc": "",
         "icon": "<i class=\"bi bi-tools\"></i>",
         "hidden": false
       }
     ],
-    "4. Privilege escalation 🔓": [
+    "4. Privilege escalation 🔓 <br><p></p> 5. Post-exploitation 🧹": [
       {
         "tag": "privilege-escalation/linux/index.md",
-        "name": "Linux PrivEsc",
+        "name": "On Linux",
         "desc": "",
         "icon": null,
         "hidden": false
       },
       {
         "tag": "privilege-escalation/windows/index.md",
-        "name": "Windows PrivEsc",
+        "name": "On Windows",
         "desc": "",
         "icon": null,
         "hidden": false

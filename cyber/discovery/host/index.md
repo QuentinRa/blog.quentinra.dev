@@ -12,7 +12,7 @@ Use **nmap** to find open ports, their services+version with `-sV`, the os with 
 
 You should also save the scans: it may take a long time, so you want to do it only once, and they can be imported in other tools too 🚀!
 
-You can use it to find, and exploit vulnerabilities, or to bruteforce services such as SSH (see [bruteforce services](../../random/crack_password/services.md#nmap)).
+You can use it to find, and exploit vulnerabilities, or to bruteforce services such as SSH (see [bruteforce services](../../random/crack_password/bruteforce.md#nmap)).
 
 > CTF: Lunch at least a scan on all ports in the background while exploring the firsts interesting ports.
 </div><div>
