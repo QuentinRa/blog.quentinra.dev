@@ -20,6 +20,9 @@ No encryption for the credentials nor the data exchanged.
 ```bash
 $ ssh login@ip
 $ ssh login@ip -u port
+# use a private key
+# instead of a password
+$ ssh login@ip -i /path/to/id_rsa
 ```
 </div></div>
 
@@ -95,13 +98,15 @@ $ scp user@ip:remote/path/ local_path_to_dest
 
 <div class="row row-cols-md-2"><div>
 
-[Samba](https://www.samba.org/) is making both file exchange system of Linux (NFS), and Windwos (SMB) work together. It's mostly used to share file internally, by connecting every computer, printer... to a **share**, a shared folder.
+[Samba](https://www.samba.org/) is making both file exchange system of Linux (NFS), and Windwos (SMB) work together. It's mostly used to share files internally by connecting computers/printers/... to a shared folder called **share**.
 
 Connect
 
 ```bash
 $ smbclient //IP/share_name
-$ smbclient smb://IP/share_name
+$ smbclient smb://IP/share_name # same
+$ smbclient //IP/share_name -p port
+$ smbclient //IP/share_name -U username
 ```
 
 Download everything in a share
@@ -114,12 +119,15 @@ $ smbget -R //IP/share_name
 Once connected, you can use theses
 
 ```bash
+smb> help # list every command
 smb> pwd # get current folder
 smb> ls folder # list files in folder
 smb> cd folder # move to folder
+smb> stat file # show information
+smb> more file # read a file remotely
 smb> put /local/path /remote/path # upload
 smb> get /remote/path /local/path # download
-smb> exit
+smb> exit # there is also "q" and "quit"
 ```
 </div></div>
 
