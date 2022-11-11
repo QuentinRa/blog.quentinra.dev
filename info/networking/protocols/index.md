@@ -2,6 +2,8 @@
 
 Any knowledge related to protocols, and services, such as ftp, ssh, sftp, scp, telnet, smtp...
 
+> A lot of protocols were sending data/credentials as plaintext=unencrypted. Later, protocols such as SSL (Secure Sockets Layer) which was replaced with TLS (more secure), were introduced to improve existing protocols by adding encryption. TLS is usually referred as SSL/TLS. 
+
 <hr class="sep-both">
 
 ## Open a shell on a remote machine
@@ -47,6 +49,8 @@ $ ssh login@ip -i /path/to/id_rsa
 <div class="row row-cols-md-2 mt-3"><div class="border-end border-dark">
 
 ### 🔓 ftp - 21 (tcp)
+
+➡️&nbsp; There is a secure version called FTPS (port 990).
 
 No encryption neither for the credentials nor the data exchanged.
 
@@ -94,7 +98,7 @@ There are two channels in a FTP connection: a channel to send commands <small>(a
 
 ### 🔒 scp/sftp - 22 (tcp)
 
-Secure version of FTP built over SSH.
+Secure versions of FTP built over SSH.
 
 ```bash
 # upload

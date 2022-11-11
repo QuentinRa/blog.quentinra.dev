@@ -271,8 +271,6 @@ XXX
 ```
 wordlists
 Do you want to extract the wordlist rockyou.txt? [Y/n] Y
-grep '^....$' /usr/share/wordlists/rockyou.txt > /tmp/4rock.lst
-egrep '^.{6}$' /usr/share/wordlists/rockyou.txt > /tmp/6rock.lst
 https://hashkiller.io/listmanager
 https://hashes.com/en/decrypt/hash
 
