@@ -1,10 +1,10 @@
 # nmap port scanner
 
-[![nmap01](../../../_badges/thm/nmap01.svg)](https://tryhackme.com/room/nmap01)
-[![nmap02](../../../_badges/thmp/nmap02.svg)](https://tryhackme.com/room/nmap02)
-[![nmap03](../../../_badges/thmp/nmap03.svg)](https://tryhackme.com/room/nmap03)
-[![nmap04](../../../_badges/thmp/nmap04.svg)](https://tryhackme.com/room/nmap04)
-[![furthernmap](../../../_badges/thm/furthernmap.svg)](https://tryhackme.com/room/furthernmap)
+[![nmap01](../../_badges/thm/nmap01.svg)](https://tryhackme.com/room/nmap01)
+[![nmap02](../../_badges/thmp/nmap02.svg)](https://tryhackme.com/room/nmap02)
+[![nmap03](../../_badges/thmp/nmap03.svg)](https://tryhackme.com/room/nmap03)
+[![nmap04](../../_badges/thmp/nmap04.svg)](https://tryhackme.com/room/nmap04)
+[![furthernmap](../../_badges/thm/furthernmap.svg)](https://tryhackme.com/room/furthernmap)
 
 <div class="row row-cols-md-2"><div>
 
@@ -25,8 +25,8 @@ A port is used by a protocol such as FTP (File Transfer Protocol) to transfer da
 
 > * [Networking/Ports](/info/networking/index.md#ports) to learn more about ports
 > * [Networking/Services](/info/networking/protocols/index.md) to learn more about the services using these ports
-> *  [Cyber/Services](/cyber/server/services.md) to learn more about how you can exploit services
-> * [Cyber/Bruteforce services](/cyber/random/crack_password/bruteforce.md) to try to bruteforce a service credentials.
+> *  [Cyber/Services](/cyber/exploitation/services/index.md) to learn more about how you can exploit services
+> * [Cyber/Bruteforce services](/cyber/exploitation/services/bruteforce.md) to try to bruteforce a service credentials.
 
 <hr class="sep-both">
 

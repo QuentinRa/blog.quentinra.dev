@@ -1,6 +1,6 @@
 # Nessus vulnerability scanner
 
-[![rpnessusredux](../../../_badges/thm/rpnessusredux.svg)](https://tryhackme.com/room/rpnessusredux)
+[![rpnessusredux](../../_badges/thm/rpnessusredux.svg)](https://tryhackme.com/room/rpnessusredux)
 
 <div class="row row-cols-md-2"><div>
 

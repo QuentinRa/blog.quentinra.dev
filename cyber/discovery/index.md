@@ -1,6 +1,6 @@
 # Host discovery
 
-[![activerecon](../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
+[![activerecon](../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
 
 Host discovery is the core of the active reconnaissance (recon) activities. A hacker could other things such as getting in touch with employees, and trying to use social engineering to learn more about their company.
 
@@ -12,7 +12,7 @@ Use **nmap** to find open ports, their services+version with `-sV`, the os with 
 
 You should also save the scans: it may take a long time, so you want to do it only once, and they can be imported in other tools too 🚀!
 
-You can use it to find, and exploit vulnerabilities, or to bruteforce services such as SSH (see [bruteforce services](../../random/crack_password/bruteforce.md#nmap)).
+You can use it to find, and exploit vulnerabilities, or to bruteforce services such as SSH (see [bruteforce services](/cyber/exploitation/services/bruteforce.md#nmap)).
 
 > CTF: Lunch at least a scan on all ports in the background while exploring the firsts interesting ports.
 </div><div>
@@ -73,7 +73,7 @@ Of course, in practice, it's no as easy on top of taking a long time, so you sho
 
 ## MASSCAN: Mass IP port scanner
 
-[![nmap01](../../_badges/thm/nmap01.svg)](https://tryhackme.com/room/nmap01)
+[![nmap01](../_badges/thm/nmap01.svg)](https://tryhackme.com/room/nmap01)
 
 <div class="row row-cols-md-2"><div class="align-self-center">
 

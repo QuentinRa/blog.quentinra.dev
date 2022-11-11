@@ -1,6 +1,6 @@
 # Investigation
 
-[![passiverecon](../../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
+[![passiverecon](../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
 
 <div class="row row-cols-md-2"><div>
 
@@ -16,7 +16,7 @@ The goal is to find as much information as possible. This step is followed by ac
 
 **Subdomains**
 
-As long as you don't interact with the target (no bruteforce...), [Subdomains enumeration](../../server/web/subdomains/index.md) is usually done at this step.
+As long as you don't interact with the target (no bruteforce...), [Subdomains enumeration](/cyber/exploitation/web/subdomains/index.md) is usually done at this step.
 </div></div>
 
 <hr class="sl">
@@ -61,7 +61,7 @@ Others
 
 ## Inspecting files
 
-[![introdigitalforensics](../../_badges/thm/introdigitalforensics.svg)](https://tryhackme.com/room/introdigitalforensics)
+[![introdigitalforensics](../_badges/thm/introdigitalforensics.svg)](https://tryhackme.com/room/introdigitalforensics)
 
 <div class="row row-cols-md-2"><div>
 
@@ -133,7 +133,7 @@ Wait, and investigate what maltego found for you!
 
 ## Google Hacking/Dorking
 
-[![googledorking](../../_badges/thm/googledorking.svg)](https://tryhackme.com/room/googledorking)
+[![googledorking](../_badges/thm/googledorking.svg)](https://tryhackme.com/room/googledorking)
 
 <div class="row row-cols-md-2"><div>
 
@@ -170,7 +170,7 @@ You may also use
 
 <div class="row row-cols-md-2"><div>
 
-[DNS](/info/networking/index.md#domain-name-system-dns-protocol) <small>(used to translate a domain name to an IP address)</small> are storing records about a domain, and its subdomains. The knowledge related to subdomains is stored [here](/cyber/server/web/subdomains/index.md#osint).
+[DNS](/info/networking/index.md#domain-name-system-dns-protocol) <small>(used to translate a domain name to an IP address)</small> are storing records about a domain, and its subdomains. The knowledge related to subdomains is stored [here](/cyber/exploitation/web/subdomains/index.md#osint).
 
 Much like subdomains, you can use:
 
