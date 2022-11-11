@@ -112,13 +112,75 @@ $ scp user@ip:remote/path/ local_path_to_dest
 
 <hr class="sep-both">
 
-## Samba - 445 (or 139 before, tcp)
+## Sending mails
+
+No encryption neither for the credentials nor the data exchanged.
+
+<div class="row row-cols-md-2 mt-3"><div class="border-end border-dark">
+
+### 🔓 SMTP - 25 (tcp)
+
+➡️&nbsp; There is a secure version called SMTPS (port 445).
+
+Simple Mail Transfer Protocol (SMTP) is a protocol is used by a mail client (**Mail User Agent**) to transfer mails (**Mail Submission Agent**) to a server that can transfer them for delivery called **Mail Transfer Agent**.
+
+You could use the analogy of an MSA being the postman that take mails from your inbox (MUA) and deliver them to the post center (MTA).
+
+```bash
+$ telnet IP 25
+helo hostname
+mail from:
+rcpt to:
+data
+subject: xxx
+xxx
+.
+```
+
+</div><div class="border-st art border-dark ps-4">
+
+The Mail Transfer Agent will send the mail to a **Mail Delivery Agent** which is the server that the client will query to access its mails. It's common for a MTA to also be an MDA. 
+
+### 🔓 POP3 - 110 (tcp)
+
+➡️&nbsp; There is a secure version called POP3S (port 995).
+
+Post Office Protocol version 3 is a protocol that open the box, check if there are mails, if there are any, they are download and removed from the box.
+
+```bash
+$ telnet IP 110
+USER xxx
+PASS xxx
+STAT # find if there mails
+LIST # list new messages
+RETR 1 # retrieve the first message
+```
+
+It's possible to configure POP3 so that mails aren't removed, but due to how it works, mails will remain marked as "new", and the client will lose track of whether a mail was read or not.
+
+### 🔓 IMAP - 143 (tcp)
+
+➡️&nbsp; There is a secure version called IMAPS (port 993).
+
+Internet Message Access Protocol is a protocol design for synchronisation between mailbox. It allows the user to create folders, and sort mails inside. If a mail is read inside a mailbox, then it's marked as read in every other mailbox.
+
+```bash
+$ telnet IP 143
+LOGIN username password
+# every command must starts with an unique token of your choice
+unique_token1 LIST "" "*" # list mails in every folder
+unique_token2 EXAMINE INBOX # list mails in INBOX
+unique_token3 LOGOUT # logout
+```
+</div></div>
+
+<hr class="sep-both">
+
+## 🔒 Samba - 445 (or 139 before, tcp)
 
 <div class="row row-cols-md-2"><div>
 
 [Samba](https://www.samba.org/) is making both file exchange system of Linux (NFS), and Windwos (SMB) work together. It's mostly used to share files internally by connecting computers/printers/... to a shared folder called **share**.
-
-Connect
 
 ```bash
 $ smbclient //IP/share_name
@@ -151,26 +213,28 @@ smb> exit # there is also "q" and "quit"
 
 <hr class="sep-both">
 
-## Remote Desktop Protocol (RDP) - 3389 (tcp)
+## 🔒 Remote Desktop Protocol (RDP) - 3389 (tcp)
 
 <div class="row row-cols-md-2"><div>
 
-A protocol used to connect a desktop with a graphical interface to another computer over a network connection.
+RDP is a protocol used to connect a desktop with a graphical interface to another computer over a network connection.
 
 There is [rdesktop](https://github.com/rdesktop/rdesktop) (1.1k ⭐).
 
 There is [FreeRDP](https://github.com/FreeRDP/FreeRDP) (7.5k ⭐), and there is a graphical version too [xfreerdp-gui](https://github.com/wyllianbs/xfreerdp-gui) (29 ⭐).
 
 ```bash
-$ xfreedrp /u:x /p:y /v:ip
+$ xfreerdp /u:x /p:y /v:ip
+$ xfreerdp /dynamic-resolution +clipboard /cert:ignore /v:ip /u:x /p:y
 ```
 </div><div>
 
-There is [Remmina](https://github.com/FreeRDP/Remmina) (1.9k ⭐, `apt install remmina`) which is an easy-to-use graphical.
+There is [Remmina](https://github.com/FreeRDP/Remmina) (1.9k ⭐, `apt install remmina`) which has an easy-to-use graphical interface.
 
 * `remmina`: start the graphical interface
     * Enter the IP of the target
     * Enter the credentials
     * Connect
 * Then, I would advise to toggle "dynamic resolution update" in the left menu, so that you have a bigger screen.
+* In preferences, we should be able to select a keyboard mapping <nobr class="small text-muted">(⚠️ need check)</nobr>
 </div></div>
