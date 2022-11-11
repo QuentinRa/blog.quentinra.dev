@@ -201,6 +201,7 @@ You can use [cybersecurityeducation.org](https://www.cybersecurityeducation.org/
 * [TryHackMe](https://tryhackme.com/) (THM)
 * [OverTheWire](https://overthewire.org/wargames/)
 * [Damn Vulnerable Web Application](https://dvwa.co.uk/)
+* [OWASP Juice Shop](https://github.com/juice-shop/juice-shop)
 
 **Bug bounty programs** [bug bounty programs list](https://www.bugcrowd.com/bug-bounty-list/)
 
