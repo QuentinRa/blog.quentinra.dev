@@ -2,7 +2,7 @@
   "title": "Game development-related courses - Unity, Unreal Engine, ...",
   "description": "A lot of tools that you might use such as Unity 2D/3D or Unreal Engine, including general knowledge, assets, and data for your games.",
   "courses": {
-    "e1": [
+    "~e1": [
       {
         "tag": "game-engines",
         "name": "Game engines",
@@ -25,7 +25,7 @@
         "hidden": false
       }
     ],
-    "e2": [
+    "~e2": [
       {
         "tag": "unity",
         "name": "Unity - General",

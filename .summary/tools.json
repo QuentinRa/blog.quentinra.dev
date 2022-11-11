@@ -2,7 +2,7 @@
   "title": "Tools-related courses - GIT, Markdown, Vim, Latex, JetBrains",
   "description": "A lot of tools that you might use such as GIT, Unity, VIM, Doxygen, and Docker. We are also including languages such as Markdown, Latex, and ReStructuredText.",
   "courses": {
-    "e1": [
+    "~e1": [
       {
         "tag": "docker",
         "name": "Docker",
@@ -81,7 +81,7 @@
         "hidden": false
       }
     ],
-    "e2": [
+    "JetBrains": [
       {
         "tag": "jetbrains",
         "name": "JetBrains",

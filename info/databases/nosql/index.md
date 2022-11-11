@@ -21,16 +21,16 @@ We got **4 majors kinds of NoSQL databases models/stores**
 
 * **Description**: Cypher is Neo4J Graph Query Language
 * **Category**: Graph
-* **My tutorial** 📚: [Learn Cypher - Memorize](cypher/index.md)
 * **Official tutorial**: [Neo4J - Cypher Query Language](https://neo4j.com/developer/cypher/)
+
+[My notes about Cypher](cypher/index.md)
 </div><div>
 
-> * **Needs register** 🙄
-> * **Cloud** (free version available) or **local** database
-> * [**Open-source**](https://github.com/neo4j) ✨
+> * **Account required** 🙄
+> * **Cloud** (free version available) or **self-hosted** (local)
+> * [**Open-source**](https://github.com/neo4j) (10.6k ✨)
 > * The syntax **looks like SQL**
 > * **easy to learn**
-> * **easy to make a "mistake"**, I mean a working query that is in fact not doing what you want 🙄🤚
 </div></div>
 
 <hr class="sr">
@@ -41,16 +41,17 @@ We got **4 majors kinds of NoSQL databases models/stores**
 
 * **Description**: NoSQL with JSON-based (BSON) documents
 * **Category**: Document
-* **My tutorial** 📚: [Learn MongoDB - Memorize](mongodb/index.md)
 * **Official tutorial**: [MongoDB documentation](https://docs.mongodb.com/guides/)
+
+[My notes about MongoDB](mongodb/index.md)
 </div><div>
 
-> * **No register** 🚀
-> * **Cloud** (free version available) or **local** database
-> * [**Open-source**](https://github.com/mongodb) ✨
+> * **No need for an account** 🚀
+> * **Cloud** (free version available) or **self-hosted** (local)
+> * [**Open-source**](https://github.com/mongodb) (22.8k ✨)
 > * **JSON** 👍
 > * **Almost no syntax** 📚
-> * **Hard to reference something** 🙄 (No relationships/edges/...)
+> * **Hard to reference something** 🙄 (no relationships/edges/...)
 </div></div>
 
 <hr class="sl">
