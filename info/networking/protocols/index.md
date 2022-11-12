@@ -55,9 +55,10 @@ $ ssh login@IP -i /path/to/id_rsa
 No encryption neither for the credentials nor the data exchanged.
 
 ```bash
-$ ftp IP
-$ ftp login@IP
-ftp> commands
+$ ftp IP # use current user username
+$ ftp username@IP
+$ ftp username@IP -p port
+ftp> help
 ```
 
 Once in a FTP shell, you may use the commands, see the [section 5.3.1.](https://www.rfc-editor.org/rfc/rfc959)
@@ -79,7 +80,7 @@ ftp> bye # same
 And
 
 ```bash
-ftp> syst # useless? information about the system
+ftp> syst # information about the system
 ftp> stat # same, but there is the version+ftp client name
 ```
 </details>
@@ -173,6 +174,44 @@ LOGIN username password
 unique_token1 LIST "" "*" # list mails in every folder
 unique_token2 EXAMINE INBOX # list mails in INBOX
 unique_token3 LOGOUT # logout
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Exchange with a webserver
+
+<div class="row row-cols-md-2 mt-3"><div class="border-end border-dark">
+
+### 🔓 http - 80 (tcp)
+
+➡️&nbsp; There is a secure version called HTTPS (port 443).
+
+HTTP/HTTPS are defining the following methods
+
+* `GET`: get a ressource
+* `POST`: create a resource on the server
+* `PUT`: update a field of a resource on the server
+* `DELETE`: delete a resource on the server
+* ...
+
+We are need to provide a **URI**, which is a path relative to the webserver root. For instance, `https://example.com/index.html`, the URi is `/index.html`.
+
+The two most used versions of HTTP are `HTTP/1.1`, and `HTTP 2.0`.
+
+</div><div>
+
+In every HTTP/HTTPS request/response, there are headers that are set both by the client and the server. The format is `Header-name: value`, and anyone can add its own headers.
+
+There may be data send with the request. For instance, if we are `POST`-ing a resource, we will most likely provide some data about the resource we want to create. This data can be specified leaving one blank line below the headers, and must be URL-encoded <small>(characters that are not valid inside a URL must be converted to ascii, then to hexadecimal, with a leading `%` before the result, for instance, space is `%20`)</small>.
+
+You need to leave a blank line to indicate that the request is finished.
+
+```bash
+$ telnet IP 80
+GET / HTTP/1.1
+Host: example.com
+# leave a blank line
 ```
 </div></div>
 
