@@ -141,7 +141,8 @@ $ hashcat -m 0 hash wordlist -r /usr/share/hashcat/rules/best64.rule
 Hashcat store cracked hashes in `~/.hashcat/hashcat.potfile`.
 
 * `-m code`: the code identifying this algorithm, provided by nth/haiti
-  * MD5 <small>(0)</small> / MD4 <small>(900)</small> / SHA1 <small>(100)</small> / nt <small>(1000)</small>
+  * MD5 <small>(0)</small> / MD4 <small>(900)</small> / SHA1 <small>(100)</small> / NTLM <small>(1000)</small>
+  * SHA256 <small>(1400)</small> / bcrypt <small>(3200)</small> / sha512crypt <small>(1800)</small>
   * See the hashcat reference in the help
 * `-a code`: the kind of attack <small>(0=Straight...)</small>
 * `-o output`: file to store cracked passwords

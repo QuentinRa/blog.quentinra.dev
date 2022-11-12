@@ -149,7 +149,6 @@ See guides
 
 * [PayloadsAllTheThings / Linux Privilege Escalation](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md)
 * [Basic Linux Privilege Escalation](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)
-
 </div><div>
 
 Find vulnerabilities in binaries.
