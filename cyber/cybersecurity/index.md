@@ -280,4 +280,5 @@ CVEs take the form: CVE-YEAR-ID.
 * [MayADevBe](https://mayadevbe.me/)
 * [ryanplatten](https://ryanplatten.com/various-journal-entries/)
 * [kalilinuxtutorials](https://kalilinuxtutorials.com/)
+* [mrash.co](https://mrash.co/)
 </div></div>

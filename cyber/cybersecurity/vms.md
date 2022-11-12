@@ -78,7 +78,7 @@ You can find images by DarkStar7471 Rooms on TryHackMe [here](https://darkstar74
   * Now, aside from before login in, you will be able to use your keyboard
 * RockYou / Wordlist
   * You may find wordlist in `/usr/share/wordlists/`
-  * extract "rockyou.txt" `sudo gunzip /usr/share/wordlists/rockyou.txt.gz`
+  * Run `wordlists` and press Y to extract `rockyou.txt`
   * `sudo apt install seclists` to install [SecLists](https://github.com/danielmiessler/SecLists/) wordlists.
 
 **BlackArch** 😶‍🌫️

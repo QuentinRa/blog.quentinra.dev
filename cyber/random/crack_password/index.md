@@ -3,6 +3,7 @@
 [![encryptioncrypto101](../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
 [![johntheripper0](../../_badges/thmp/johntheripper0.svg)](https://tryhackme.com/room/johntheripper0)
 [![hashingcrypto101](../../_badges/thmp/hashingcrypto101.svg)](https://tryhackme.com/room/hashingcrypto101)
+[![crackthehash](../../_badges/thm/crackthehash.svg)](https://tryhackme.com/room/crackthehash)
 
 <div class="row row-cols-md-2"><div>
 
@@ -72,17 +73,36 @@ $ haiti "some_hash"
 
 <hr class="sep-both">
 
-## hashcat / MD5Hashing
+## Online password cracking
+
+There are a lot of online websites that have big databases with ton of hashes and the cracked password (rainbow tables). It's only helpful if the hash is recorded inside.
 
 <div class="row row-cols-md-2"><div>
 
-My experience with [hashcat](https://github.com/hashcat/hashcat) (15.9k ⭐) has been worse than john, but it's quite well-known, and popular.
+* [crackstation](https://crackstation.net/). Not many algorithms, but we can download their wordlist  🚀 (4Go / 15Go uncompressed).
+
+* [MD5Hashing](https://md5hashing.net/). A ton of ads <small>(#team ublock)</small>. Quite of a lot of algorithms.
+
+
+</div><div>
+
+* [hashkiller.io](https://hashkiller.io/listmanager) / [hashes.com](https://hashes.com/en/decrypt/hash) which can [generate](https://hashes.com/en/generate/hash) hashes too.
+</div></div>
+
+<hr class="sep-both">
+
+## hashcat
+
+<div class="row row-cols-md-2"><div>
+
+[hashcat](https://github.com/hashcat/hashcat) (15.9k ⭐) is with john the ripper, a well-known, and popular tool to crack passwords.
 
 ```bash
 $ hashcat [options] -o result hash wordlist
 $ hashcat [options] --show hash wordlist
 $ hashcat -m code -a code --show hash wordlist
 ```
+</div><div>
 
 Hashcat store cracked hash in a Potfile: `~/.hashcat/hashcat.potfile`.
 
@@ -95,28 +115,27 @@ Hashcat store cracked hash in a Potfile: `~/.hashcat/hashcat.potfile`.
 * `--remove`: remove cracked hashes
 * `--username`: ignore username, in files `user:password`
 
-</div><div>
-
-[MD5Hashing](https://md5hashing.net/) is a quite useful website to crack a hash, while it only work if the database has a record of this hash.
-
-[crackstation](https://crackstation.net/) is quite similar to MD5Hashing, but on top, we can download their dictionary  🚀.
 </div></div>
 
 <hr class="sep-both">
 
-## Cracking a hash
+## John the Ripper
 
 <div class="row row-cols-md-2"><div>
 
-You can use [**John the Ripper**](https://github.com/openwall/john) (<small>Jumbo</small>, 6.9 ⭐) to try to bruteforce a hash. Put the hash in a file, for instance "hash".
-
-You can use the default wordlist, and let john guess the format. Unfortunately, it's more efficient to provide both arguments, especially the format.
+[John the Ripper](https://github.com/openwall/john) (<small>Jumbo</small>, 6.9 ⭐), a.k.a. **john**, is like hashcat, a tool to crack hashes. For convienience sake, store the hash in a file `hash`.
 
 ```bash
 # use quotes, because $ won't be interpreted inside quotes
 $ echo 'some_hash' > hash
+```
+
+You can use the default wordlist, and let john guess the format. Unfortunately, it doesn't work often, so provide at least the format.
+
+```bash
+# basic form with no format, and the default wordlist
 $ john hash
-$ john 'some_hash'
+$ john 'some_hash' # if you didn't use a file
 ```
 
 List formats <small>(you don't need it with nth/haiti, as they give you the format)</small>. Note that standard formats, such as MD5, are starting with "raw-".
@@ -125,22 +144,20 @@ List formats <small>(you don't need it with nth/haiti, as they give you the form
 $ john --list=formats | grep -i "md5"
 ```
 
+</div><div>
+
+Provide the format
+
 ```bash
 $ john hash --format=raw-md5
 $ john hash --format=raw-md4
 $ john hash --format=raw-sha1
 ```
 
-</div><div>
-
 You can provide a wordlist
 
 ```bash
-# on Kali
-$ john hash --format=raw-md4 --wordlist=wordlist
-# multiple lists
-$ cat wordlist1 wordlist2 wordlist3 > wordlist123
-$ john hash --format=raw-md4 --wordlist=wordlist123
+$ john hash --format=raw-md4 --wordlist=/usr/share/wordlists/rockyou.txt
 ```
 
 <details class="details-e mt-4">

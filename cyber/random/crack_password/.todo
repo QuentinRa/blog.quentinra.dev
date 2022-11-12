@@ -1,14 +1,5 @@
---- https://tryhackme.com/room/crackthehash
-
-```
-wordlists
-Do you want to extract the wordlist rockyou.txt? [Y/n] Y
-https://hashkiller.io/listmanager
-https://hashes.com/en/decrypt/hash
-
 hashcat.exe -m 1000 .\hash.txt .\rockyou.txt --force
 hashcat.exe -m 1000 .\hash.txt .\rockyou.txt --force --show
-https://mrash.co/
 
 xxxsha1: hash:salt
 
