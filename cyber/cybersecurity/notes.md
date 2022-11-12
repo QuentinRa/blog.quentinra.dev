@@ -30,49 +30,22 @@ Refs
 
 * netdiscover
 * security triad: CIA.
-
-<hr class="sep-both">
-
-# Vulnerabilities
-
---- https://tryhackme.com/room/vulnerabilities101
-
-vulnerabilities = weakness or flaw.  five main categories of vulnerabilities
-
-* Operating System
-* (Mis)Configuration-based
-* Weak or Default Credentials
-* Application Logic
-* Human-Factor
-
-Types
-
-* Remote code execution
-* Version Disclosure
-
-Not all vulnerabilities are exploitable.
-
-*  the popular Common Vulnerability Scoring System (CVSS, 2005, free+opens-source) awards points to a vulnerability based upon its features, availability, and reproducibility. It takes into account the impact on the CIA triad, the ease of use, and the existence of exploits. https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator
-* Vulnerability Priority Rating (VPR): modern, based on the risks to an org
-
-* “Common Vulnerabilities and Exposures”
-* https://nvd.nist.gov/vuln/full-listing
-
-* many clients -> there is possiblity a custom/helpdesk that can be used to attck
-
---- https://tryhackme.com/jr/exploitingavulnerabilityv2
-
-Nessus: do not be dependent, they often do not find every vulnerability. They are loud/generate a lot of logs/traffic.
-
-* Security Misconfigurations (cyrpto), and Insecure Deserialization, and not THM for the 4 categories?
-* https://tryhackme.com/room/exploitingavulnerabilityv2
-* https://www.rapid7.com/db/: instructions for metasploit may be given
-* GitHub by keywords such as “PoC”, “vulnerability”
-* searchsploit
-  * searchsploit xxx
-  * searchsploit -p 47887
-
---- https://tryhackme.com/room/vulnerabilitycapstone
+* ftp://IP:port
+* ftp xxx@IP -p port
+* nmap –script=http-server-header.nse XXX (or -sC)
+* http://www.itsecgames.com/index.htm
+* https://attack.mitre.org/tactics/enterprise/
+* https://appsec-labs.com/online-training/
+* https://www.contrastsecurity.com/developer
+* https://github.com/trickest/cve
+* https://github.com/payloadbox
+* https://github.com/michenriksen/aquatone
+* https://github.com/projectdiscovery/subfinder
+* https://github.com/s0md3v/Photon
+* https://github.com/evyatarmeged/Raccoon
+* https://github.com/laramies/theHarvester
+* https://github.com/topics/osint (4.2)
+* password reuse
 
 <hr class="sep-both">
 
@@ -109,27 +82,6 @@ Execute any administrative command
 * https://devansh.xyz/osint/2021/09/11/weaponizing-favicon-ico.html
 * https://github.com/devanshbatham/Awesome-Bugbounty-Writeups
 * Add new user
-
-<hr class="sep-both">
-
-# Random
-
-* ftp://IP:port
-* ftp xxx@IP -p port
-* nmap –script=http-server-header.nse XXX (or -sC)
-* http://www.itsecgames.com/index.htm
-* https://attack.mitre.org/tactics/enterprise/
-* https://appsec-labs.com/online-training/
-* https://www.contrastsecurity.com/developer
-* https://github.com/trickest/cve
-* https://github.com/payloadbox
-* https://github.com/michenriksen/aquatone
-* https://github.com/projectdiscovery/subfinder
-* https://github.com/s0md3v/Photon
-* https://github.com/evyatarmeged/Raccoon
-* https://github.com/laramies/theHarvester
-* https://github.com/topics/osint (4.2)
-* password reuse
 
 <hr class="sep-both">
 
@@ -217,33 +169,6 @@ URL [200 OK] Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][nginx/1.14.0
 XXX
 
 * db_vulns
-
-## Hash
-
---- https://tryhackme.com/room/crackthehash
-
-```
-wordlists
-Do you want to extract the wordlist rockyou.txt? [Y/n] Y
-https://hashkiller.io/listmanager
-https://hashes.com/en/decrypt/hash
-
-hashcat.exe -m 1000 .\hash.txt .\rockyou.txt --force
-hashcat.exe -m 1000 .\hash.txt .\rockyou.txt --force --show
-https://mrash.co/
-
-xxxsha1: hash:salt
-
-https://stackoverflow.com/questions/64534436/hash-hashcat-token-length-exception
-hashcat -m 0 -a 0 hash rock.lst -r /usr/share/hashcat/rules/best64.rule
-
-https://sckull.github.io/
-https://decrypt.tools/
-https://ctf.ac/
-https://narancsblog.com/category/thm/easy/
-.\hashcat -m 160 hash:key .\12rock.lst
-it was not working in a file
-```
 
 <hr class="sep-both">
 
