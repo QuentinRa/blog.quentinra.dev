@@ -81,10 +81,12 @@ There are a lot of online websites that have big databases with ton of hashes an
 
 * [crackstation](https://crackstation.net/). Not many algorithms, but we can download their wordlist  🚀 (4Go / 15Go uncompressed).
 
-* [MD5Hashing](https://md5hashing.net/). A ton of ads <small>(#team ublock)</small>. Quite of a lot of algorithms.
+* [MD5Hashing](https://md5hashing.net/). A ton of ads <small>(#team ublock)</small>. Quite of a lot of algorithms. Can encrypt/decrypt.
 
 
 </div><div>
+
+* [decrypt.tools](https://decrypt.tools/). Very similar to MD5Hashing, but without ads. It's not very well-known, so there aren't as many hashes as others.
 
 * [hashkiller.io](https://hashkiller.io/listmanager) / [hashes.com](https://hashes.com/en/decrypt/hash) which can [generate](https://hashes.com/en/generate/hash) hashes too.
 </div></div>
@@ -95,26 +97,57 @@ There are a lot of online websites that have big databases with ton of hashes an
 
 <div class="row row-cols-md-2"><div>
 
-[hashcat](https://github.com/hashcat/hashcat) (15.9k ⭐) is with john the ripper, a well-known, and popular tool to crack passwords.
+[hashcat](https://github.com/hashcat/hashcat) (15.9k ⭐) is with john the ripper, a well-known, and popular tool to crack passwords. For convenience’s sake, we store the hash in a file `hash`.
 
 ```bash
-$ hashcat [options] -o result hash wordlist
-$ hashcat [options] --show hash wordlist
-$ hashcat -m code -a code --show hash wordlist
+# use quotes, so that $/... aren't interpreted
+$ echo 'some_hash' > hash
 ```
+
+Crack the password
+
+```bash
+$ hashcat -m code hash wordlist
+$ hashcat -m code hash wordlist -o hashes_cracked
+# in my case, hashcat started then stopped, 
+# I had to use this awful option
+$ hashcat -m code hash wordlist --force
+```
+
+Once the password was cracked, you can see it
+
+```bash
+$ hashcat -m code hash wordlist --show
+```
+
+You can use rules <small>(see John section for explanations)</small>
+
+```bash
+$ hashcat -m 0 hash wordlist -r /usr/share/hashcat/rules/best64.rule
+```
+
 </div><div>
 
-Hashcat store cracked hash in a Potfile: `~/.hashcat/hashcat.potfile`.
+**Token length exception**: I had this error so many times that I got crazy about it. There are many causes for this error, unfortunately.
+
+* Try to look for your hash format [on hashcat website](https://hashcat.net/wiki/doku.php?id=example_hashes). There is an exemple of the output that hashcat is expecting. For instance, sometimes,  you need a file with `hash:salt`.
+
+* I don't know why but it worked for me when I didn't use a file: `hashcat -m 160 hash:key wordlist`.
+
+* <i><span>More patches to come 😭</small></i>
+
+<br>
+
+Hashcat store cracked hashes in `~/.hashcat/hashcat.potfile`.
 
 * `-m code`: the code identifying this algorithm, provided by nth/haiti
-  * MD5 <small>(0)</small> / SHA1 <small>(100)</small> / nt <small>(1000)</small>
+  * MD5 <small>(0)</small> / MD4 <small>(900)</small> / SHA1 <small>(100)</small> / nt <small>(1000)</small>
   * See the hashcat reference in the help
 * `-a code`: the kind of attack <small>(0=Straight...)</small>
-* `-o output`: cracked passwords
+* `-o output`: file to store cracked passwords
 * `--show`: show cracked passwords
 * `--remove`: remove cracked hashes
 * `--username`: ignore username, in files `user:password`
-
 </div></div>
 
 <hr class="sep-both">
@@ -123,10 +156,10 @@ Hashcat store cracked hash in a Potfile: `~/.hashcat/hashcat.potfile`.
 
 <div class="row row-cols-md-2"><div>
 
-[John the Ripper](https://github.com/openwall/john) (<small>Jumbo</small>, 6.9 ⭐), a.k.a. **john**, is like hashcat, a tool to crack hashes. For convienience sake, store the hash in a file `hash`.
+[John the Ripper](https://github.com/openwall/john) (<small>Jumbo</small>, 6.9 ⭐), a.k.a. **john**, is like hashcat, a tool to crack hashes. For convenience’s sake, we store the hash in a file `hash`.
 
 ```bash
-# use quotes, because $ won't be interpreted inside quotes
+# use quotes, so that $/... aren't interpreted
 $ echo 'some_hash' > hash
 ```
 

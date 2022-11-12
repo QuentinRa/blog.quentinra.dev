@@ -270,15 +270,21 @@ CVEs take the form: CVE-YEAR-ID.
 
 * [CrackItDown](https://web.archive.org/web/20210923121550/https://www.crackitdown.com/) (website dead, still available via the wayback machine)
 * [hacktricks.xyz](https://book.hacktricks.xyz/welcome/readme)
-</div><div>
+
+<br>
 
 * [mikadmin.fr](https://mikadmin.fr/blog/)
 * [dhilipsanjay CTFs](https://dhilipsanjay.gitbook.io/ctfs/)
 * [TheDutchHacker](https://www.thedutchhacker.com/)
 * [0xrick](https://0xrick.github.io/categories/)
 * [cyber-security-base-19](https://github.com/rage/cyber-security-base-19)
+</div><div>
+
 * [MayADevBe](https://mayadevbe.me/)
 * [ryanplatten](https://ryanplatten.com/various-journal-entries/)
 * [kalilinuxtutorials](https://kalilinuxtutorials.com/)
 * [mrash.co](https://mrash.co/)
+* [sckull.github.io/](https://sckull.github.io/)
+* [ctf.ac](https://ctf.ac/)
+* [narancsblog.com](https://narancsblog.com/category/thm/)
 </div></div>
