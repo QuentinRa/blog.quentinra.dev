@@ -237,3 +237,15 @@ XXX
   * `stty -a` in another terminal to find the value you want
   * stty rows <number> / stty cols <number>
 * `sudp python3 -m http.server 80`
+
+## Overconfidence
+
+--- https://tryhackme.com/room/agentsudoctf
+
+* `echo {A..Z} | tr ' ' '\n'`
+* `echo {0..9} | tr ' ' '\n'`
+* `dd bs=34562 skip=1 if=cutie.png.zip of=agent.zip`. The file was an image followed by a zip. (https://unix.stackexchange.com/questions/6852/best-way-to-remove-bytes-from-the-start-of-a-file)
+* `7z x agent.zip` (https://stackoverflow.com/questions/28383199/error-while-unzipping-a-file-in-shell-script-need-pk-compat-v5-1-can-do-v4)
+* Reverse search images (note below xxx)
+* python2 / python3
+* writeups
