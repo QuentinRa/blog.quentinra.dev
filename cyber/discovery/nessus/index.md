@@ -21,14 +21,19 @@ Once you are logged on the website, you can create new scans.
 
 * **Host Discovery**: find alive hosts
 * **Basic network scan**: sort of nmap
-    * Set a target
-    * In Discovery, you can select a range of ports
-    * In Assessment, you can select the kind of scan
-    * In Advanced, you may go for a "low bandwidth scan"
-    * **Launch**: explore vulnerabilities to see results
 * **Web application test**: see vulnerabilities in your web app
 
-> In the credential tabs, you can log in to an account.
+Most scans have the following options
+
+* Set a target
+* In Discovery, you can select a range of ports
+* In Assessment, you can select the kind of scan
+* In Advanced, you may go for a "low bandwidth scan"
+* In the credential tabs, you can log in to an account.
+* **Launch**: explore vulnerabilities to see results
+
+It's important to note that Nessus is generating a lot of traffic, and may not find every vulnerability, so you shouldn't grow dependant of it, and do things "manually" when you can.
+
 </div></div>
 
-> **Note**: if you have a scope/knowledge of specific ports/... to scan, you can define a policy in the Policy tab.
+> **Note**: if you have a scope/knowledge of specific ports/... to scan, you can define a policy in the Policy tab.<br>
