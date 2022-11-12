@@ -28,49 +28,6 @@ Scans may be exported too, and imported in others tools, such as in `metasploit`
 
 <hr class="sep-both">
 
-## Manual mapping
-
-<div class="row row-cols-md-2"><div>
-
-`nmap` bellow is doing a lot of stuff for us, and it may be worthwhile to know a bit more about how you could fetch such information manually.
-
-**telnet** (TCP): telnet can be used to send cleartext to an HOST. You will have to "talk" in the protocol running on this port language defined in the RFC through, but when you manage too, you may find some stuff like the OS/the service running.
-
-```bash
-$ telnet ip port
-# Example in HTTP
-GET / HTTP/1.1
-HOST: random_value
-
-# after two <CR>, you will receive a response (hopefully)
-HTTP/1.1 200 OK
-Server: nginx/1.18.0 (Ubuntu)
-# ...
-```
-</div><div>
-
-Of course, as it's HTTP, you can use `curl`!
-
-```bash
-$ curl -I ip:port
-HTTP/1.1 200 OK
-Server: nginx/1.18.0 (Ubuntu)
-# ...
-```
-
-You can also do the same with **netcat**, the difference with telnet being that you can connect to TCP, and UDP ports, and `ncat` support encryption (SSL).
-
-```bash
-$ nc ip 21
-[...] FTP server (Version 6.4/OpenBSD/Linux-ftpd-0.17) ready.
-```
-
-Of course, in practice, it's no as easy on top of taking a long time, so you should definitely use `nmap` and/or `nessus`.
-
-</div></div>
-
-<hr class="sep-both">
-
 ## MASSCAN: Mass IP port scanner
 
 [![nmap01](../_badges/thm/nmap01.svg)](https://tryhackme.com/room/nmap01)
