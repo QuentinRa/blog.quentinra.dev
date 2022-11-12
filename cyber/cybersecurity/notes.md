@@ -17,6 +17,7 @@
 * https://stack.watch/
 * https://cybr.com/
 * https://www.acunetix.com/blog/articles/
+*  many clients -> there is possibility a custom/helpdesk that can be used to attack
 
 
 Refs

@@ -235,35 +235,6 @@ There are also premium solutions such as [leakcheck](https://leakcheck.io/), or 
 
 <hr class="sep-both">
 
-## Exploits / CVE lookup
-
-CVEs take the form: CVE-YEAR-ID.
-
-<div class="row row-cols-md-2"><div>
-
-* [exploit-db.com](https://www.exploit-db.com/), and the command [searchsploit](https://github.com/offensive-security/exploitdb) (7.5k ⭐). Useful to find exploits, and test them.
-
-* [nvd.nist.gov](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&search_type=all): a reference 📌
-
-* [attackerkb.com](https://attackerkb.com/): community reviews on CVEs. There is a tool similar to searchsploit [akb-explorer](https://github.com/horshark/akb-explorer) (33⭐).
-
-* [vulners](https://vulners.com/) (ex: [CVE-2016-1531](https://vulners.com/cve/CVE-2016-1531))) is a big search engines for vulnerabilities.
-
-</div><div>
-
-* [CVE details](https://www.cvedetails.com/): interface easy to use
-
-* [cve.circl.lu](https://cve.circl.lu/): quite readable, as they get to the point, with a readable interface
-
-* [cve.mitre.org](https://cve.mitre.org/cve/), and their new website: [cve.org](https://www.cve.org/). This is basically of big list of CVE, regardless of them being exploitable, or not.
-
-* [security.snyk.io](https://security.snyk.io/): the interface is nicer,  through it's not as generic / covering as much CVEs as others.
-
-* [microsoft.com](https://msrc.microsoft.com/update-guide/) (example: [CVE-2019-1388](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2019-1388)): for Microsoft CVEs
-</div></div>
-
-<hr class="sep-both">
-
 ## Blogs
 
 <div class="row row-cols-md-2 mt-3"><div>
