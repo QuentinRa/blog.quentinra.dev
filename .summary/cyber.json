@@ -43,6 +43,13 @@
         "hidden": false
       },
       {
+        "tag": "exploitation/services/banner.md",
+        "name": "Services banner",
+        "desc": "Getting information on a service.",
+        "icon": null,
+        "hidden": false
+      },
+      {
         "tag": "discovery/nmap/index.md",
         "name": "Nmap",
         "desc": "",
@@ -83,8 +90,8 @@
     "Exploitation: Services 🧟️": [
       {
         "tag": "exploitation/services/index.md",
-        "name": "Exploit services",
-        "desc": "Notes about misconfigurations, discovery... of services (SSH, FTP...).",
+        "name": "Services",
+        "desc": "Notes about discovery/misconfigurations of services (SSH, FTP, SMTP...).",
         "icon": null,
         "hidden": false
       },
