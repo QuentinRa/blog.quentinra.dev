@@ -238,6 +238,7 @@ XXX
   * `stty -a` in another terminal to find the value you want
   * stty rows <number> / stty cols <number>
 * `sudp python3 -m http.server 80`
+* Maybe you could check out [penelope](https://github.com/brightio/penelope)
 
 ## Overconfidence
 
