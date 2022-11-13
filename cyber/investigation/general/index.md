@@ -1,6 +1,6 @@
 # Investigation
 
-[![passiverecon](../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
+[![passiverecon](../../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
 
 <div class="row row-cols-md-2"><div>
 
@@ -59,47 +59,6 @@ Others
 
 <hr class="sep-both">
 
-## Inspecting files
-
-[![introdigitalforensics](../_badges/thm/introdigitalforensics.svg)](https://tryhackme.com/room/introdigitalforensics)
-
-<div class="row row-cols-md-2"><div>
-
-**A PDF**: use `pdfinfo`, an online tool, or simply your default reader, which should have a "details" section.
-
-```bash
-$ sudo apt install poppler-utils
-$ pdfinfo xxx.pdf
-Author:         XXX
-Creator:        Microsoft Word
-CreationDate:   Sun Aug 28 22:12:17 2022 EDT
-ModDate:        Sun Aug 28 22:12:17 2022 EDT
-[...]
-PDF version:    1.7
-```
-</div><div>
-
-**An image**: use `exiftool`, or an online tool such as [jimpl](https://jimpl.com/) / [IMV](https://www.geekyhumans.com/tools/image-metadata-viewer). You can view stuff like the GPS coordinates, the camera/device model...
-
-```bash
-$ sudo apt install libimage-exiftool-perl
-$ exiftool xxx.png
-[...]
-File Modification Date/Time     : 2022:10:22 18:01:32-04:00
-[...]
-File Type                       : PNG
-File Type Extension             : png
-MIME Type                       : image/png
-[...]
-Software                        : www.inkscape.org
-[...]
-```
-
-> Hide things in images: [Steganography](https://0xrick.github.io/lists/stego/)
-</div></div>
-
-<hr class="sep-both">
-
 ## Maltego
 
 <div class="row row-cols-md-2"><div>
@@ -133,7 +92,7 @@ Wait, and investigate what maltego found for you!
 
 ## Google Hacking/Dorking
 
-[![googledorking](../_badges/thm/googledorking.svg)](https://tryhackme.com/room/googledorking)
+[![googledorking](../../_badges/thm/googledorking.svg)](https://tryhackme.com/room/googledorking)
 
 <div class="row row-cols-md-2"><div>
 

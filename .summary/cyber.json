@@ -27,8 +27,15 @@
     ],
     "1. Investigation 🔎": [
       {
-        "tag": "investigation/index.md",
+        "tag": "investigation/general/index.md",
         "name": "Investigation",
+        "desc": "",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "investigation/files/index.md",
+        "name": "Investigate Files",
         "desc": "",
         "icon": null,
         "hidden": false
