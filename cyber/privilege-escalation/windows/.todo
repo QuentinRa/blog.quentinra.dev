@@ -1,0 +1,40 @@
+<hr class="sep-both">
+
+## Windows
+
+--- https://tryhackme.com/room/winadbasics
+
+* Microsoft's Active Directory
+* simplifies the management of devices and users within a corporate environment
+* computer stop working? create users?
+* Windows domain is a group of users and computers under the administration of a given business
+* centralise the administration of common components of a Windows computer network in a single repository called Active Directory (AD)
+* The server that runs the Active Directory services is known as a Domain Controller (DC).
+* Ex: login to a school network.
+* Username: XXX\USER login on domain XXX with username USER
+* Active Directory Domain Service (AD DS). This service acts as a catalogue that holds the information of all of the "objects" that exist on your network.
+* Users (security principals=can login, can be assigned privileges over resources=file/printers) -> People/Services
+* Machines (SP too, have an account which is the local admin). Machine Account passwords are automatically rotated out and are generally comprised of 120 random characters. The machine account name is the computer's name followed by a dollar sign.
+* Security Groups (security principals): give priviledge to a group, assign users to it. See https://tryhackme.com/room/winadbasics https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups#default-security-groups
+* https://stackoverflow.com/questions/56820526/how-to-change-keyboard-layout-in-windows-console-cmd-or-wsl
+* These objects are organised in Organizational Units (OUs) which are container objects that allow you to classify users and machines.
+* List of others OUs https://tryhackme.com/room/winadbasics
+* OUs are used to apply policies on a group of entities? they are part of one OUs. While Security Groups grant perms over resources, like allowing access to a shared folder.
+* View > Advanced Features. Disable the protection to delete something. (Properties > Objects)
+* Can delegate control. Ex: allow IT support to reset low-level accounts pass. If you right-click on a OU, then delegate, you would allow a user to have more priviledge over this OU.
+* `Set-ADAccountPassword sophie -Reset -NewPassword (Read-Host -AsSecureString -Prompt 'New Password') -Verbose` (reset sophie password)
+* `Set-ADUser -ChangePasswordAtLogon $true -Identity sophie -Verbose` (reset on login)
+* Workstations (usual devices), Servers, DC
+* Group Policy Management
+  * Group Policy Objects (GPO). GPOs are simply a collection of settings that can be applied to OUs.
+  * In the tab above, tou create GPO.
+  * Something important to have in mind is that any GPO will apply to the linked OU and any sub-OUs under it.
+  * Scope
+  * GPOs are distributed to the network via a network share called SYSVOL in the DC
+  * This share points by default to the C:\Windows\SYSVOL\sysvol\ directory on each of the DCs in our network.
+  * Users must sync with it periodically, may force update with `gpupdate /force`
+  * Drag the GPO to every OU
+* protocols can be used for network authentication in windows domains
+* Kerberos: Used by any recent version of Windows. This is the default protocol in any recent domain. Users who log into a service using Kerberos will be assigned tickets. Think of tickets as proof of a previous authentication. The initial ticket is a Ticket Granting Ticket (TGT) that allow a user to request other tickets without sending credentials such as when accessing another service (share/db/...).
+* NetNTLM: Legacy authentication protocol kept for compatibility purposes.
+* See https://tryhackme.com/room/winadbasics + Tree/...
