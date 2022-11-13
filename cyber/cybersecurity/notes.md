@@ -3,10 +3,7 @@
 * Remember for web/general/security
 * .todo: metasploit dns sqlmap
 * .todo: windows Linux web shell
-* web general | terminology may have to be extracted
-* web forms/file/... | I think I have to do something
-  * xss/index.md
-  * rce/index.md
+* web general | terminology | URL may have to be moved
 
 ## Overconfidence
 

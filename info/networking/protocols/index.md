@@ -179,15 +179,15 @@ unique_token3 LOGOUT # logout
 
 <hr class="sep-both">
 
-## Exchange with a webserver
+## 🔓 HTTP - 80 (tcp)
+
+➡ There is a secure version called HTTPS (port 443).
 
 <div class="row row-cols-md-2 mt-3"><div class="border-end border-dark">
 
-### 🔓 http - 80 (tcp)
+HTTP/HTTPS is a protocol used to exchange wit a webserver. Usually, a web browser will make a request, and the result will be some HTML. An HTTP/HTTPS request involve a few things
 
-➡️&nbsp; There is a secure version called HTTPS (port 443).
-
-HTTP/HTTPS are defining the following methods
+✅ First, there is a method
 
 * `GET`: get a ressource
 * `POST`: create a resource on the server
@@ -195,24 +195,33 @@ HTTP/HTTPS are defining the following methods
 * `DELETE`: delete a resource on the server
 * ...
 
-We are need to provide a **URI**, which is a path relative to the webserver root. For instance, `https://example.com/index.html`, the URi is `/index.html`.
+✅  We also need to provide a **URI**, which is a path relative to the webserver root. For instance, for `https://example.com/index.html`, the URI is `/index.html`.
 
-The two most used versions of HTTP are `HTTP/1.1`, and `HTTP 2.0`.
+✅  We will also use an HTTP version, the most used ones are `HTTP/1.1`, and `HTTP 2.0`.
 
+✅  In every HTTP/HTTPS request/response, there are headers that are set both by the client and the server. The format is `Header-name: value`, and anyone can add its own headers.
+
+* `Set-cookie`: the cookies <small>(usually the server add this to create them in the client browser, and the client will send the cookies in every following request)</small>
+* `Host`: one of the domain name associated with the IP of the server
+* `Server:`: name of the HTTP server, maybe the version/OS too
+* ...
 </div><div>
 
-In every HTTP/HTTPS request/response, there are headers that are set both by the client and the server. The format is `Header-name: value`, and anyone can add its own headers.
+✅  There may be data send with the request. For instance, if we are `POST`-ing a resource, we will most likely provide some data about the resource we want to create. This data can be specified leaving one blank line below the headers, and must be URL-encoded <small>(characters that are not valid inside a URL such as `'` must be URL encoded, meaning we convert them to hexadecimal `27` and prepended with a `%` giving us `%27`)</small>. This is automatically done by your browser.
 
-There may be data send with the request. For instance, if we are `POST`-ing a resource, we will most likely provide some data about the resource we want to create. This data can be specified leaving one blank line below the headers, and must be URL-encoded <small>(characters that are not valid inside a URL must be converted to ascii, then to hexadecimal, with a leading `%` before the result, for instance, space is `%20`)</small>.
+✅  You need to leave a blank line to indicate that the request is finished.
 
-You need to leave a blank line to indicate that the request is finished.
+Here is an example of a request of the resource (GET) at the URI `/` (webserver root) from the website `example.com`, hosted by the server with the IP `IP`, using HTTP 1.1 on port 80.
 
 ```bash
+# Basically: http://example.com/
 $ telnet IP 80
 GET / HTTP/1.1
 Host: example.com
 # leave a blank line
 ```
+
+The server will answer with an [HTTP response code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) according to how it could handle the request <small>(200=OK, 301/303=redirected, 404=Not found, 500=Internal error...)</small>, along with its HTTP response headers, and data.
 </div></div>
 
 <hr class="sep-both">
