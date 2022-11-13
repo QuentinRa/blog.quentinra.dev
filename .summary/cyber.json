@@ -154,34 +154,6 @@
         "hidden": false
       },
       {
-        "tag": "exploitation/web/xss/index.md",
-        "name": "XSS (JavaScript)",
-        "desc": "XSS vulnerabilities",
-        "icon": null,
-        "hidden": false
-      },
-      {
-        "tag": "exploitation/web/ssrf/index.md",
-        "name": "SSRF",
-        "desc": "Server-Side Request Forgery",
-        "icon": null,
-        "hidden": false
-      },
-      {
-        "tag": "exploitation/web/files/index.md",
-        "name": "File/Path exploits",
-        "desc": "File upload, Path traversal...",
-        "icon": null,
-        "hidden": false
-      },
-      {
-        "tag": "exploitation/web/rce/index.md",
-        "name": "RCE",
-        "desc": "Remote code execution",
-        "icon": null,
-        "hidden": false
-      },
-      {
         "tag": "exploitation/web/cookies/index.md",
         "name": "Cookies",
         "desc": "Cookies vulnerabilities",
@@ -215,6 +187,27 @@
         "tag": "exploitation/web/forms/file_path_exploits.md",
         "name": "File/Path exploits",
         "desc": "File inclusion and Path Traversal",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "exploitation/web/xss/index.md",
+        "name": "XSS (JavaScript)",
+        "desc": "XSS vulnerabilities",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "exploitation/web/forms/ssrf.md",
+        "name": "SSRF",
+        "desc": "Server-Side Request Forgery",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "exploitation/web/forms/command-injection.md",
+        "name": "Command injection",
+        "desc": "",
         "icon": null,
         "hidden": false
       }
