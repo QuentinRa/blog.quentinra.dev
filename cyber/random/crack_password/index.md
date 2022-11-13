@@ -19,14 +19,10 @@ Some hashing functions are proven to be faulty, such as [SHA1](https://shattered
 
 Usually, hackers create **rainbow tables**, or dictionaries, in which hashes are mapped to passwords. This allows tools to easily give them back the password, if it's in the dictionary. This is possible, because, by default, the same password will generate the same hash. To avoid such attacks, hash functions are taking a parameter called **salt**, and only the same salt should produce the same hash.
 
-Hash brute-forcing tools are (usually) using your CPU to computer results faster. On VM, they may be less efficient, as the VM itself is taking a lot of resources.
+⚠️Hash brute-forcing tools are (usually) using your CPU to computer results faster. On VM, they may be less efficient, as the VM itself is taking a lot of resources.
 
-These tools will usually take a wordlist of passwords to try
-
-* package seclists 📌 ([SecLists](https://github.com/danielmiessler/SecLists/tree/master/Passwords))
-* package wordlists ([dirb](https://github.com/drtychai/wordlists/tree/master/dirb/others)...)
-
-> CTF are usually using `/usr/share/wordlists/rockyou.txt`.
+> You can find the location of [password wordlists here](/cyber/exploitation/general/index.md#-wordlists-).<br>
+> Remainder: CTF are usually using `/usr/share/wordlists/rockyou.txt`.
 </div></div>
 
 <hr class="sep-both">
