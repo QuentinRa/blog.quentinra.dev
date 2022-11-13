@@ -33,3 +33,17 @@ Notes about cyber defense. I'm not really interested in cyber defense for now, s
 
 * [VirusTotal](https://www.virustotal.com/gui/home/upload)
 </div></div>
+
+<hr class="sep-both">
+
+## Threat intelligence
+
+<div class="row row-cols-md-2"><div>
+
+* [Open Threat Exchange (OTX) / AlientVault](https://otx.alienvault.com/): allow organisations to "share the latest information about emerging threats, attack methods, and malicious actors"
+
+* [secalerts](https://secalerts.co/): "Subscribe to vulnerability alerts and news matched to your software."
+</div><div>
+
+* [stack.watch](https://stack.watch/): "Use StackWatch to create a software stack (a list of software you use), then get a weekly email with security vulnerabilities that have been published for software within your stack."
+</div></div>

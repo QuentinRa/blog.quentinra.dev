@@ -5,12 +5,7 @@
 
 # Notes
 
-* https://otx.alienvault.com/ (An open-source threat tracking system)
-* https://secalerts.co/
-* https://stack.watch/
-* https://cybr.com/
-* https://www.acunetix.com/blog/articles/
-*  many clients -> there is possibility a custom/helpdesk that can be used to attack
+* many clients -> there is possibility a custom/helpdesk that can be used to attack
 * https://amandinegh.gitbook.io/cyberadventure/
 
 Refs

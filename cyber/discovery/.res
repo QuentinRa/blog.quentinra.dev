@@ -6,3 +6,6 @@ https://github.com/projectdiscovery/naabu
 https://github.com/projectdiscovery/nuclei
 https://github.com/projectdiscovery/subfinder
 https://github.com/projectdiscovery/dnsx
+
+https://www.acunetix.com/
+https://www.coresecurity.com/products/core-impact

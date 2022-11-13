@@ -193,6 +193,10 @@ You can use [cybersecurityeducation.org](https://www.cybersecurityeducation.org/
 * [hackerrank](https://www.hackerrank.com/)
 * [sans.org: cyberaces](https://www.sans.org/cyberaces/)
 * [Red Team Nation](https://redteamnation.com/)
+
+**Other platforms found in the wild**
+
+* [cybr.com](https://cybr.com/)
 </div><div>
 
 **Practicing**
@@ -242,6 +246,7 @@ There are also premium solutions such as [leakcheck](https://leakcheck.io/), or 
 
 * [CrackItDown](https://web.archive.org/web/20210923121550/https://www.crackitdown.com/) (website dead, still available via the wayback machine)
 * [hacktricks.xyz](https://book.hacktricks.xyz/welcome/readme)
+* [guru99.com](https://www.guru99.com/ethical-hacking-tutorials.html)
 
 <br>
 
@@ -252,6 +257,7 @@ There are also premium solutions such as [leakcheck](https://leakcheck.io/), or 
 * [cyber-security-base-19](https://github.com/rage/cyber-security-base-19)
 </div><div>
 
+* [auth0.com](https://auth0.com/blog/)
 * [MayADevBe](https://mayadevbe.me/)
 * [ryanplatten](https://ryanplatten.com/various-journal-entries/)
 * [kalilinuxtutorials](https://kalilinuxtutorials.com/)
