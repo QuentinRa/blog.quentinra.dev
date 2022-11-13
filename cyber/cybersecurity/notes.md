@@ -195,6 +195,7 @@ XXX
   * stty rows <number> / stty cols <number>
 * `sudp python3 -m http.server 80`
 * Maybe you could check out [penelope](https://github.com/brightio/penelope)
+* https://github.com/0x00-0x00/ShellPop
 
 ## Overconfidence
 

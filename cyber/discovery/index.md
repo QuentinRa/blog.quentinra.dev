@@ -48,3 +48,15 @@ $ masscan scanme.nmap.org ‐‐top-ports 100
 $ masscan scanme.nmap.org ‐‐top-ports 100 --rate 1000
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## aquatone : visual inspection of websites
+
+<div class="row row-cols-md-2"><div>
+
+[aquatone](https://github.com/michenriksen/aquatone) (4.9k ⭐) is from what I understood, a tool that can automate the process of inspection the website on a port, given a (supposedly long) list of IP addresses.
+</div><div>
+
+It can take reports generated with nmap/masscan, and do its job.
+</div></div>

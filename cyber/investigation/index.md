@@ -47,6 +47,7 @@ Social Networks
 * Twitter: [twint](https://github.com/twintproject/twint) (archived, 13.9k ⭐)
 * Google: [GHunt](https://github.com/mxrch/GHunt) (12.1k ⭐)
 * [social-analyzer](https://github.com/qeeqbox/social-analyzer) (Profile in many SN, 9.4k ⭐)
+* Github: [Gitrob](https://github.com/michenriksen/gitrob) (archived, 5.5k ⭐)
 * ...
 
 Others
@@ -54,7 +55,6 @@ Others
 * [awesome-osint](https://github.com/jivoi/awesome-osint) (list, 10.7k ⭐)
 * [spiderfoot](https://github.com/smicallef/spiderfoot) (automated, 8.7k ⭐)
 * [OSINT-Tools](https://github.com/mgp25/OSINT-Tools) (list, 45 ⭐)
-
 </div></div>
 
 <hr class="sep-both">

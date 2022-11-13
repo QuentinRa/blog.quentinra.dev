@@ -253,6 +253,7 @@ There are also premium solutions such as [leakcheck](https://leakcheck.io/), or 
 * [guru99.com](https://www.guru99.com/ethical-hacking-tutorials.html)
 * [PayloadsAllTheThingsWeb](https://swisskyrepo.github.io/PayloadsAllTheThingsWeb/)
 * [amandinegh](https://amandinegh.gitbook.io/cyberadventure/)
+* [PENTESTING-BIBLE](https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE) (11k ⭐)
 
 <br>
 
@@ -271,4 +272,6 @@ There are also premium solutions such as [leakcheck](https://leakcheck.io/), or 
 * [sckull.github.io/](https://sckull.github.io/)
 * [ctf.ac](https://ctf.ac/)
 * [narancsblog.com](https://narancsblog.com/category/thm/)
+* [xapax.github.io](https://xapax.github.io/security/#)
+* [total-oscp-guide](https://github.com/alexb49/total-oscp-guide)
 </div></div>
