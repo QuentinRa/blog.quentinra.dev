@@ -117,7 +117,7 @@
         "hidden": false
       }
     ],
-    "Exploitation: Web 🕸️": [
+    "Exploitation: Web - part 1 🕸️": [
       {
         "tag": "exploitation/web/index.md",
         "name": "Exploit webservers",
@@ -133,16 +133,16 @@
         "hidden": false
       },
       {
-        "tag": "exploitation/web/forms/index.md",
-        "name": "Forms",
-        "desc": "Bruteforce, Logic flaws...",
+        "tag": "exploitation/web/files/forced_browsing.md",
+        "name": "Forced browsing",
+        "desc": "Find routes, hidden folders/files, configuration-related files...",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "exploitation/web/files/forced_browsing.md",
-        "name": "Forced browsing",
-        "desc": "",
+        "tag": "exploitation/web/subdomains/index.md",
+        "name": "Subdomains",
+        "desc": "Expand your attack scope by discovering new domains.",
         "icon": null,
         "hidden": false
       },
@@ -150,13 +150,6 @@
         "tag": "exploitation/web/frameworks/index.md",
         "name": "Frameworks",
         "desc": "Find and exploit frameworks such as Wordpress.",
-        "icon": null,
-        "hidden": false
-      },
-      {
-        "tag": "exploitation/web/subdomains/index.md",
-        "name": "Subdomains",
-        "desc": "Try to expand your attack scope",
         "icon": null,
         "hidden": false
       },
@@ -200,6 +193,29 @@
         "name": "Burp Suite",
         "desc": "",
         "icon": "<i class=\"bi bi-tools\"></i>",
+        "hidden": false
+      }
+    ],
+    "Exploitation: Web - part 2 🕸️": [
+      {
+        "tag": "exploitation/web/forms/index.md",
+        "name": "Forms",
+        "desc": "Knowledge related to forms.",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "exploitation/web/forms/bruteforce.md",
+        "name": "Bruteforce Forms",
+        "desc": "Examples with ffuf, wfuzz, hydra...",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "exploitation/web/forms/file_path_exploits.md",
+        "name": "File/Path exploits",
+        "desc": "File inclusion and Path Traversal",
+        "icon": null,
         "hidden": false
       }
     ],
