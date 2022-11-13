@@ -4,6 +4,7 @@
 [![johntheripper0](../../_badges/thmp/johntheripper0.svg)](https://tryhackme.com/room/johntheripper0)
 [![hashingcrypto101](../../_badges/thmp/hashingcrypto101.svg)](https://tryhackme.com/room/hashingcrypto101)
 [![crackthehash](../../_badges/thm/crackthehash.svg)](https://tryhackme.com/room/crackthehash)
+[![hash_cracking_md](../../_badges/poat/hash_cracking_md.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Hash%20Cracking.md)
 
 <div class="row row-cols-md-2"><div>
 

@@ -2,16 +2,13 @@
 
 * Remember for web/general/security
 * .todo: metasploit dns sqlmap 
+* web general | terminology may have to be extracted
 
 # Notes
 
 * many clients -> there is possibility a custom/helpdesk that can be used to attack
 * https://amandinegh.gitbook.io/cyberadventure/
-
-Refs
-
 * https://swisskyrepo.github.io/PayloadsAllTheThingsWeb/
-* There is also the xxx you know
 
 <hr class="sep-both">
 
