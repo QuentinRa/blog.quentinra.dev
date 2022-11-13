@@ -1314,6 +1314,7 @@ See all processes
 
 ```bash
 $ ps -e # same as 'ps aux'
+$ ps -ef # add more information
 ```
 
 Every process "bash"

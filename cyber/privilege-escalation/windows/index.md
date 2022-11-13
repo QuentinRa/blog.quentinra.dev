@@ -95,6 +95,7 @@ Open a Windows shell
 
 Learn more about your environment
 
+* `ver` (cmd): see Windows version
 * `whoami`: see your username, or `NT AUTHORITY\SYSTEM` (root)
 * `whoami /groups`: see your groups
 * `hostname`: see hostname
