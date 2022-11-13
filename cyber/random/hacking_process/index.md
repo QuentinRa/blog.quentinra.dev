@@ -33,8 +33,14 @@ For a penetration tester, it's more something like that
 
 * Learn more about the company, the programming languages, and software that they use... 🧑‍💻
 
-* Find your target, for instance, a subdomain owned by the company for another purpose, that is hosted on the network that their main website 🐟
+* Find your candidate targets, for instance, a subdomain owned by the company for another purpose, that is hosted on the network that their main website, and may be vulnerable 🐟
+
+* Find employees, their emails, their social accounts... Try to find if some of their password leaked, and as password tend to be reused, you may access other accounts.
 </div><div>
+
+For instance, if they have many customers, it highly likely that they have a way to provide support for them, which may be an attack vector...
+
+If they are looking for developers that are proficient in Node.js, it's likely that they are either using Node.js, were using Node.js, or are planning to use Node.js.
 </div></div>
 
 <hr class="sep-both">

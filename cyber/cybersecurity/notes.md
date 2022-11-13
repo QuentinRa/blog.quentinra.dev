@@ -4,28 +4,6 @@
 * .todo: metasploit dns sqlmap 
 * web general | terminology may have to be extracted
 
-# Notes
-
-* many clients -> there is possibility a custom/helpdesk that can be used to attack
-* https://amandinegh.gitbook.io/cyberadventure/
-* https://swisskyrepo.github.io/PayloadsAllTheThingsWeb/
-
-<hr class="sep-both">
-
-# Notes
-
-* netdiscover
-* https://attack.mitre.org/tactics/enterprise/
-* https://appsec-labs.com/online-training/
-* https://www.contrastsecurity.com/developer
-* https://github.com/payloadbox
-* https://github.com/michenriksen/aquatone
-* https://github.com/s0md3v/Photon
-* https://github.com/evyatarmeged/Raccoon
-* https://github.com/laramies/theHarvester
-* https://github.com/topics/osint (4.2)
-* password reuse
-
 <hr class="sep-both">
 
 # Linux privilege esc

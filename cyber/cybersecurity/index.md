@@ -193,10 +193,12 @@ You can use [cybersecurityeducation.org](https://www.cybersecurityeducation.org/
 * [hackerrank](https://www.hackerrank.com/)
 * [sans.org: cyberaces](https://www.sans.org/cyberaces/)
 * [Red Team Nation](https://redteamnation.com/)
+* [appsec-labs.com](https://appsec-labs.com/online-training/)
 
 **Other platforms found in the wild**
 
 * [cybr.com](https://cybr.com/)
+* [academy.tcm-sec.com](https://academy.tcm-sec.com/)
 </div><div>
 
 **Practicing**
@@ -207,6 +209,7 @@ You can use [cybersecurityeducation.org](https://www.cybersecurityeducation.org/
 * [OverTheWire](https://overthewire.org/wargames/)
 * [Damn Vulnerable Web Application](https://dvwa.co.uk/)
 * [OWASP Juice Shop](https://github.com/juice-shop/juice-shop)
+* [vulnhub](https://www.vulnhub.com/)
 
 **Bug bounty programs** [bug bounty programs list](https://www.bugcrowd.com/bug-bounty-list/)
 
@@ -214,6 +217,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 
 * [bounty.github.com](https://bounty.github.com/) (GitHub)
 * [huntr.dev](https://huntr.dev/) (open-source repositories)
+* [BugBountyHunter.com](https://www.bugbountyhunter.com/)
 
 </div></div>
 
@@ -247,6 +251,8 @@ There are also premium solutions such as [leakcheck](https://leakcheck.io/), or 
 * [CrackItDown](https://web.archive.org/web/20210923121550/https://www.crackitdown.com/) (website dead, still available via the wayback machine)
 * [hacktricks.xyz](https://book.hacktricks.xyz/welcome/readme)
 * [guru99.com](https://www.guru99.com/ethical-hacking-tutorials.html)
+* [PayloadsAllTheThingsWeb](https://swisskyrepo.github.io/PayloadsAllTheThingsWeb/)
+* [amandinegh](https://amandinegh.gitbook.io/cyberadventure/)
 
 <br>
 
