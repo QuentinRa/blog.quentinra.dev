@@ -1,17 +1,10 @@
 # R
 
 * Remember for web/general/security
+* .todo: metasploit dns sqlmap 
 
 # Notes
 
-* https://tryhackme.com/resources/blog/online-training-for-careers
-* https://tryhackme.com/resources/blog/cyber-security-awareness-month
-* There are websites on the Internet that allow you to check the reputation of an IP address to see whether it's malicious or suspicious.
-  * AbuseIPDB
-  * Cisco Talos Intelligence
-  * https://ipinfo.io/
-* https://www.virustotal.com/gui/home/upload
-* https://www.hybrid-analysis.com/
 * https://otx.alienvault.com/ (An open-source threat tracking system)
 * https://secalerts.co/
 * https://stack.watch/

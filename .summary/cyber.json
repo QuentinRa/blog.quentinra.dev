@@ -235,6 +235,22 @@
         "hidden": false
       }
     ],
+    " 🛡️️ Defense  ⚔️️": [
+      {
+        "tag": "defense/general/index.md",
+        "name": "CyberDefense",
+        "desc": "Tools for IP/malware lookup...",
+        "icon": "<i class=\"bi bi-shield-lock\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "defense/digital_forensics/index.md",
+        "name": "Digital Forensics",
+        "desc": "Notes about forensics, i.e. investigating cyber crimes.",
+        "icon": null,
+        "hidden": false
+      }
+    ],
     " ⚒️ Random  ⚒️": [
       {
         "tag": "random/crack_password/index.md",
@@ -247,13 +263,6 @@
         "tag": "random/encoding/index.md",
         "name": "Encoding",
         "desc": "Learn about base64...",
-        "icon": null,
-        "hidden": false
-      },
-      {
-        "tag": "random/forensics/index.md",
-        "name": "Digital Forensics",
-        "desc": "Notes about forensics, i.e. investigating cyber crimes.",
         "icon": null,
         "hidden": false
       }
