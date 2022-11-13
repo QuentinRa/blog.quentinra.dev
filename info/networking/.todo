@@ -1,5 +1,7 @@
 ISO/OSI
 
+HTTP response code
+
 Wireshark ip.addr==X.X.X.X / tcp / && / tcp.port
 * sudo tcpdump ip proto \\icmp -i tun0
 * tcpdump listener, specifically listening for ICMP traffic
