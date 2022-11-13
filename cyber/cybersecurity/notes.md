@@ -30,16 +30,11 @@ Refs
 # Notes
 
 * netdiscover
-* security triad: CIA.
-* nmap –script=http-server-header.nse XXX (or -sC)
-* http://www.itsecgames.com/index.htm
 * https://attack.mitre.org/tactics/enterprise/
 * https://appsec-labs.com/online-training/
 * https://www.contrastsecurity.com/developer
-* https://github.com/trickest/cve
 * https://github.com/payloadbox
 * https://github.com/michenriksen/aquatone
-* https://github.com/projectdiscovery/subfinder
 * https://github.com/s0md3v/Photon
 * https://github.com/evyatarmeged/Raccoon
 * https://github.com/laramies/theHarvester

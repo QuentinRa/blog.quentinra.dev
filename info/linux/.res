@@ -26,6 +26,7 @@ cyber commands (linux/...)
 help/info
 nslookup
 nc -v	Verbose output -vv Very Verbose -k Keep listening after client disconnects (-lvnp)
+https://snapcraft.io/
 
 Blog
 https://linuxhandbook.com/

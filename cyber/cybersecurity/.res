@@ -1,9 +1,5 @@
 Next
 => Cyberattacks https://en.wikipedia.org/wiki/List_of_cyberattacks + https://en.wikipedia.org/wiki/Petya_and_NotPetya
-=> https://github.com/ReFirmLabs/binwalk
-
-Learn
-https://www.rapid7.com/fundamentals/
 
 Articles
 https://www.guru99.com/what-is-hacking-an-introduction.html

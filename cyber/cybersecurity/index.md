@@ -131,7 +131,7 @@ A look at cyberattacks categories ([source](https://www.malwarebytes.com/))
 
 <br>
 
-* **CIA**: Confidentiality <small>(only allowed persons can read it)</small>, Integrity <small>(not tampered)</small>, Availability <small>(available when needed)</small>. The opposite is DAD <small>(Disclosure, Alternation, and Destruction)</small>.
+* The security triad **CIA**: Confidentiality <small>(only allowed users can read it)</small>, Integrity <small>(not tampered)</small>, Availability <small>(available when needed)</small>. The opposite is DAD <small>(Disclosure, Alternation, and Destruction)</small>.
 * **Principle of the least privileges**: based on the role, and the data being shared.
   * Privileged Identity Management (PIM): from organisation role to system role
   * Privileged Access Management (PAM): manage the role that a privileged user has.
@@ -186,6 +186,7 @@ You can use [cybersecurityeducation.org](https://www.cybersecurityeducation.org/
 * [academy.hackthebox.com](https://academy.hackthebox.com/catalogue): you pay to enroll in courses, you have some starter "money", and you get back all <small>(tier-0, newcomers)</small>, or a part of your credits, once you finished the course.
 * [hackerone.com](https://www.hackerone.com/hackers)
 * [PortSwigger](https://portswigger.net/web-security)
+* [rapid7](https://www.rapid7.com/fundamentals/)
 
 **Professional training**
 
