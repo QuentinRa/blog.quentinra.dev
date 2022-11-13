@@ -371,4 +371,6 @@ If you found the password, you can unzip your zip with
 $ unzip hello.zip
 # enter the password
 ```
+
+> There is also [fcrackzip](https://github.com/hyc/fcrackzip) (0.3k ⭐)
 </div></div>
