@@ -61,17 +61,3 @@ If they are looking for developers that are proficient in Node.js, it's likely t
   * Try to find **logic flaws**
   * ...
 </div></div>
-
-<hr class="sep-both">
-
-## Exploitation
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-* Try to find vulnerabilities in running services 🎯
-
-* Try to bruteforce credentials on running services 🔏
-</div><div>
-
-* Try to exploit the website 🕵️
-</div></div>

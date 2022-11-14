@@ -1,7 +1,3 @@
-<hr class="sep-both">
-
-# Linux privilege esc
-
 * https://tryhackme.com/room/linprivesc
 
 * hostname can be used to find the role of the foothold user (ex: website-dev)
