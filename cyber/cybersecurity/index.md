@@ -187,6 +187,7 @@ You can use [cybersecurityeducation.org](https://www.cybersecurityeducation.org/
 * [hackerone.com](https://www.hackerone.com/hackers)
 * [PortSwigger](https://portswigger.net/web-security)
 * [rapid7](https://www.rapid7.com/fundamentals/)
+* [codered.eccouncil.org](https://codered.eccouncil.org/)
 
 **Professional training**
 
@@ -210,6 +211,7 @@ You can use [cybersecurityeducation.org](https://www.cybersecurityeducation.org/
 * [Damn Vulnerable Web Application](https://dvwa.co.uk/)
 * [OWASP Juice Shop](https://github.com/juice-shop/juice-shop)
 * [vulnhub](https://www.vulnhub.com/)
+* [capturetheflag.withgoogle.com](https://capturetheflag.withgoogle.com/beginners-quest)
 
 **Bug bounty programs** [bug bounty programs list](https://www.bugcrowd.com/bug-bounty-list/)
 
@@ -274,4 +276,8 @@ There are also premium solutions such as [leakcheck](https://leakcheck.io/), or 
 * [narancsblog.com](https://narancsblog.com/category/thm/)
 * [xapax.github.io](https://xapax.github.io/security/#)
 * [total-oscp-guide](https://github.com/alexb49/total-oscp-guide)
+* [fr33s0ul.tech](https://fr33s0ul.tech/index.html)
+* [blog.cyberethical.me](https://blog.cyberethical.me/)
+* [trailofbits](https://trailofbits.github.io/ctf/)
+* [lkmidas](https://lkmidas.github.io/)
 </div></div>

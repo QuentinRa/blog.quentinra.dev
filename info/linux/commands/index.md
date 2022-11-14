@@ -1313,8 +1313,10 @@ $ expr index "Sarah" w
 See all processes
 
 ```bash
-$ ps -e # same as 'ps aux'
+$ ps -A # same as 'ps aux'
+$ ps -e # same
 $ ps -ef # add more information
+$ ps axjf # view process tree
 ```
 
 Every process "bash"

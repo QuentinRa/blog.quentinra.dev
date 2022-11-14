@@ -264,7 +264,7 @@ $ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/; chmod +xs /tmp/bash)' ./scr
 
 <div class="row row-cols-md-2"><div>
 
-Kernel exploits should be used at a last resort, as they will most probably severely impact the machine state.
+Kernel exploits should be used at a last resort, as they will most probably severely impact the machine state/crash the machine if they fail. You can find the complete list of CVE for the Linux Kernel [here](https://www.linuxkernelcves.com/cves).
 
 * [Dirty COW](https://en.wikipedia.org/wiki/Dirty_COW) on Linux kernel <4.8.3
 </div><div>
