@@ -2,29 +2,40 @@
 
 [![activerecon](../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
 
-Host discovery is the core of the active reconnaissance (recon) activities. A hacker could other things such as getting in touch with employees, and trying to use social engineering to learn more about their company.
-
 <div class="row row-cols-md-2"><div>
 
-**Nmap** [See nmap](nmap/index.md)
+Host discovery is the core of the active reconnaissance (recon) activities.
 
-Use **nmap** to find open ports, their services+version with `-sV`, the os with `-O` <small>(`-sV` too, if a service is talkative)</small>, the hostname / computer name, or some info that may be relevant with `-sC`.
+* Find running services, their version... 🧭
 
-You should also save the scans: it may take a long time, so you want to do it only once, and they can be imported in other tools too 🚀!
+* Find the running OS 🖥️
 
-You can use it to find, and exploit vulnerabilities, or to bruteforce services such as SSH (see [bruteforce services](/cyber/exploitation/services/bruteforce.md#nmap)).
+* If there is a website, check the [webserver](/cyber/exploitation/web/index.md) section 🗺️.
+  * Look for a Framework (if any)
+  * Try to do **forced browsing**
+  * Try to find **logic flaws**
+  * Try to find **injections**
+  * ...<br><span>&nbsp;</span>
 
-> CTF: Lunch at least a scan on all ports in the background while exploring the firsts interesting ports.
+* Find if there is an API
+
+* ...
 </div><div>
 
-**Nessus** [See nessus](nessus/index.md)
+There is a lot of ways to perform its discovery 
 
-Nessus is much like nmap, while providing a web interface, but a few differences are that you got way more information about the vulnerabilities, and how you can exploit them <small>(list of tools)</small>. On top of that, if you got credentials, you can also easily login, and scan the system from the inside.
+* `ping`: test if the host is up, and accepting ICMP packets. Useful to find if the option `-Pn` must be used in `nmap`.
 
-Scans may be exported too, and imported in others tools, such as in `metasploit`.
+* **Nmap** ([course](nmap/index.md)): to find open ports, their services+version with `-sV`, the os with `-O` or `-sV`, and try to exploit vulnerabilities
+
+* **Nessus** ([course](nessus/index.md)): find open ports and their vulnerabilities. This is a local website that can be used when needing an automated, noisy, slow, but somewhat advanced scan.
+
+* A hacker could other things such as getting in touch with employees, and trying to use social engineering to learn more about their company.
+
+* `traceroute/tracepath` which are using the TTL to know how much steps/hops it took for a packet to reach the target <small>(they increase the TTL by one, and try to get the intermediaries IPs as they respond that the packet was destroyed, but most aren't responding, so we got no information. Also, the route may change, as routers are always calculating the most optimal route)</small>.
+
+> CTF: Lunch at least a scan on all ports in the background while exploring the firsts interesting ports.
 </div></div>
-
-> You may also use commands such as `ping` <small>(test if the host is up, and accepting ICMP packets)</small>, `traceroute/tracepath` which are using the TTL to know how much steps/hops it took for a packet to reach the target <small>(they increase the TTL by one, and try to get the intermediaries IPs as they respond that the packet was destroyed, but most aren't responding, so we got no information. Also, the route may change, as routers are always calculating the most optimal route)</small>.
 
 <hr class="sep-both">
 

@@ -13,6 +13,8 @@
 We are calling **probe** a request made to inquire something from an host, such as testing if a port is open.
 
 > There is an interface to `nmap` called [ZenMap](https://nmap.org/zenmap/).
+
+> It may take a long time to scan, so you should save your scans, and this is one stone two birds as they can be imported in other tools 🚀!
 </div><div>
 
 A port is used by a protocol such as FTP (File Transfer Protocol) to transfer data. There are $2^{16}$ ports, while the first 1024 are restricted, and can only be used by standard protocols. A port can be changed. Look for **vulnerable ports** on Google. A port can be

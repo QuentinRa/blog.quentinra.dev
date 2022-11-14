@@ -42,22 +42,3 @@ For instance, if they have many customers, it highly likely that they have a way
 
 If they are looking for developers that are proficient in Node.js, it's likely that they are either using Node.js, were using Node.js, or are planning to use Node.js.
 </div></div>
-
-<hr class="sep-both">
-
-## Discovery
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-* Find running services, their version... 🧭
-
-* Find the running OS 🖥️
-
-</div><div>
-
-* If there is a website, check the web server section 🗺️.
-  * Look for a Framework (if any)
-  * Try to do **forced browsing**
-  * Try to find **logic flaws**
-  * ...
-</div></div>
