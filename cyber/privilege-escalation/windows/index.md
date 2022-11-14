@@ -1,5 +1,7 @@
 # Compromise a Windows host
 
+<p>
+
 [![windowsfundamentals1xbx](../../_badges/thm/windowsfundamentals1xbx.svg)](https://tryhackme.com/room/windowsfundamentals1xbx)
 [![windowsfundamentals2x0x](../../_badges/thm/windowsfundamentals2x0x.svg)](https://tryhackme.com/room/windowsfundamentals2x0x)
 [![windowsfundamentals3xzx](../../_badges/thm/windowsfundamentals3xzx.svg)](https://tryhackme.com/room/windowsfundamentals3xzx)
@@ -7,6 +9,7 @@
 [![blue](../../_badges/thm/blue.svg)](https://tryhackme.com/room/blue)
 [![ice](../../_badges/thm/ice.svg)](https://tryhackme.com/room/ice)
 [![blaster](../../_badges/thm/blaster.svg)](https://tryhackme.com/room/blaster)
+</p>
 
 <hr class="sep-both">
 

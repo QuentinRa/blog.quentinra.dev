@@ -1,5 +1,7 @@
 # Compromise a Linux host
 
+<p>
+
 [![linuxfundamentalspart1](../../_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 [![linuxfundamentalspart2](../../_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 [![linuxfundamentalspart3](../../_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
@@ -10,6 +12,8 @@
 [![catregex](../../_badges/thm/catregex.svg)](https://tryhackme.com/room/catregex)
 [![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
+[![linprivesc](../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
+</p>
 
 <hr class="sep-both">
 
@@ -199,6 +203,7 @@ Scripts having the SUID bit can be executed with the permissions of their owner.
 ```bash
 $ find / -perm -u=s -type f 2>/dev/null
 $ find / -perm -g=s -type f 2>/dev/null
+# $ find / -type f -perm -04000 -ls 2>/dev/null
 ```
 
 If the script "hand-made", or not something on GTFOBins, then you can use `strace script`, and `strings script`. Both commands can be used if the script is "unreadable", to try to find what the script is doing, and maybe find Paths/Environment variables that you may have the permission to edit.

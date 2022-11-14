@@ -27,6 +27,7 @@ help/info
 nslookup
 nc -v	Verbose output -vv Very Verbose -k Keep listening after client disconnects (-lvnp)
 https://snapcraft.io/
+find / -type f -perm -04000 -ls 2>/dev/null
 
 Blog
 https://linuxhandbook.com/
