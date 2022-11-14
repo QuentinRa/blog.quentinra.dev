@@ -157,12 +157,6 @@ Infos on a Local Machine
 * `UserAccountControlSettings`: change UAC settings
 * `compmgmt` is responsable for managing **shares**, **running tasks**, **listing events** ([doc](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types), monitor performance (`perfmon`/`resmon`), or even manage device hardware/services. 
 * `regedt32/regedit`: open Windows registry, a database used to store information needed to configure the system for users/applications/devices <small>(ports in use, applications...)</small>. See the [doc](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users).
-
-<br>
-
-**Random**
-
-* Kerberos is the authentication system in Windows domains.
 </div></div>
 
 <hr class="sep-both">
@@ -244,12 +238,46 @@ More about it:
 
 <hr class="sep-both">
 
-## Active directory
+## Active directory (AD)
+
+[![winadbasics](../../_badges/thm/winadbasics.svg)](https://tryhackme.com/room/winadbasics)
+
+[Active Directory Exploitation Cheat Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet) (3.4k ⭐)
 
 <div class="row row-cols-md-2"><div>
 
-You can acquire NTHash/NTLM hashes by dumping the SAM database, from the Active Directory database: `NTDS.dit`.
+Microsoft Active Directory (**AD**) is used by organisations to manage their computers, users, groups, privileges of every entity... from one computer called **Domain Controller (DC)**.
+
+From the Domain Controller, we can open the **Active Directory Domain Service** (AD DS) from the search bar, to manage entities such as computers/users/... referred within the application as **objects**.
+
+Objects are organised into **Organizational Units (OUs)** which are folders or containers. You have some default one such as `Builtin` <small>(default groups...)</small>; `Computers`; `Domain Controllers`; `Users` and some others. 
+
+> Computers include Workstations <small>(usual computer that the user will use to log in to the Windows domain: `DomainName\Username`)</small> and Servers.
+
+**Delegate control**
+
+The main use of OUs is to apply policies. For instance, you may want the user XXX to be able to perform the operation YYY on any object of a category, such as a staff being able to reset passwords of any client. This is called **delegating control**.
+
+* Right-click on an organisation unit (ex: regular-users)
+* Select "Delegate control"
+* Add users that will be able to use the new privilege
+* Then, press next, and select what the selected users will be able to do on the objects contained in this OU.
+
+> **Note** that policies are applied to the OU, and on any nested OU.
 </div><div>
 
-[Active Directory Exploitation Cheat Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet) (3.4k ⭐)
+**Create/Delete OUs**
+
+* You can easily create an OUs with the Right-click menu. Usually, we create a OU matching an existing service such as `Sales`, in which we add the users in the said service.
+* But, to delete an OUs, you first need to disable the protection against accidental removal. Click on View > Advanced Features. Then Edit the properties of your OUs, and in Objects, uncheck the protection. Then, you can remove it.
+
+**Security Principals** ([doc](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-principals))
+
+This is objects that can be authenticated. This includes users, and computers. For the latter, an account is automatically created with a username corresponding to the machine name appended with a dollar (`$`), while the password is a randomly generated string of 120 characters. A computer account is the local administrator of the machine.
+
+**Group Policy Management**
+
+This is another service that can be used to manage **Security Groups**. They are used for convenience, as instead of assigning permissions to each user, we can assign permission to groups, and give groups to users.
+
+**Group Policy Objects (GPO)** are a set of policies/rules that can be applied to an OU. For instance, we may want to force every user to have a password of a least $n$ characters. Inside the GPO OU, we can create our policies. The **Scope** determine where the GPO will be applied. Simply drag and drop the policies to an OU, and the OU along every child will have the GPO applied to them. Changes are distributed to the network via a network share called SYSVOL (`C:\Windows\SYSVOL\sysvol\`). It may take time for the changes to applies, but they can be forced with `gpupdate /force`. 
 </div></div>

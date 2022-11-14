@@ -1,5 +1,7 @@
 Windows
 => https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-how-it-works
+=> You can acquire NTHash/NTLM hashes by dumping the SAM database, from the Active Directory database: `NTDS.dit`.
+=> https://stackoverflow.com/questions/56820526/how-to-change-keyboard-layout-in-windows-console-cmd-or-wsl
 
 Linux
 => https://payatu.com/guide-linux-privilege-escalation

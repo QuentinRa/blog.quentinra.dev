@@ -6,6 +6,16 @@
 * web general | terminology | URL may have to be moved
 * explose hacking_process
 
+<hr>
+
+## Prev esc
+
+https://tryhackme.com/room/linprivesc
+=> hint/notes
+=> network
+
+<hr>
+
 ## Overconfidence
 
 --- https://tryhackme.com/room/rrootme
