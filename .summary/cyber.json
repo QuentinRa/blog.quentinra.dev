@@ -13,7 +13,7 @@
       {
         "tag": "cybersecurity/vms.md",
         "name": "Virtual Machines",
-        "desc": "",
+        "desc": "Notes/links to find a VM (Windows, Kali, CTF...) and install it.",
         "icon": null,
         "hidden": false
       },
@@ -242,7 +242,14 @@
         "hidden": false
       }
     ],
-    "4. Privilege escalation 🔓 <br><p></p> 5. Post-exploitation 🧹": [
+    "4. Privilege escalation 🔓": [
+      {
+        "tag": "privilege-escalation/index.md",
+        "name": "Privilege escalation",
+        "desc": "",
+        "icon": null,
+        "hidden": false
+      },
       {
         "tag": "privilege-escalation/linux/index.md",
         "name": "On Linux",
@@ -253,6 +260,15 @@
       {
         "tag": "privilege-escalation/windows/index.md",
         "name": "On Windows",
+        "desc": "",
+        "icon": null,
+        "hidden": false
+      }
+    ],
+    "5. Post-exploitation 🧹": [
+      {
+        "tag": "post-exploitation/index.md",
+        "name": "Post-exploitation",
         "desc": "",
         "icon": null,
         "hidden": false

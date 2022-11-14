@@ -55,12 +55,6 @@
 * [Link](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/)
 * Windows 11
 
-<br>
-
-**DarkStar7471**
-
-You can find images by DarkStar7471 Rooms on TryHackMe [here](https://darkstar7471.com/resources.html).
-
 </div><div>
 
 **Kali Linux** ⭐
@@ -84,4 +78,18 @@ You can find images by DarkStar7471 Rooms on TryHackMe [here](https://darkstar74
 **BlackArch** 😶‍🌫️
 
 * [Link](https://www.blackarch.org/)
+</div></div>
+
+<hr class="sep-both">
+
+## CTF Virtual Machines
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+* ➡️ **DarkStar7471**
+
+You can find images by DarkStar7471 Rooms on TryHackMe [here](https://darkstar7471.com/resources.html).
+</div><div>
+
+...
 </div></div>

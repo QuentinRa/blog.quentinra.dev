@@ -4,21 +4,11 @@
 
 * https://tryhackme.com/room/linprivesc
 
-```
-Resetting passwords
-Bypassing access controls to compromise protected data
-Editing software configurations
-Enabling persistence
-Changing the privilege of existing (or new) users
-Execute any administrative command
-```
-
 * hostname can be used to find the role of the foothold user (ex: website-dev)
 * uname -a (kernel)
 * /proc/version (processes, kernel version?, is gcc installed?)
 * see the network interfaces/routes/communications (https://tryhackme.com/room/linprivesc netcat)
 * (https://tryhackme.com/room/linprivesc find?)
-* LES (Linux Exploit Suggester) but remember that these tools can generate false positives (report a kernel vulnerability that does not affect the target system) or false negatives (not report any kernel vulnerabilities although the kernel is vulnerable).
 * https://tryhackme.com/room/linprivesc (hint/notes)
 * LD_PRELOAD is a function that allows any program to use shared libraries. (https://rafalcieslak.wordpress.com/2013/04/02/dynamic-linker-tricks-using-ld_preload-to-cheat-inject-features-and-investigate-programs/)
 * `find / -type f -perm -04000 -ls 2>/dev/null`

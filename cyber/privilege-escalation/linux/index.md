@@ -11,8 +11,6 @@
 [![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 
-> [Privilege-Escalation](https://github.com/Ignitetechnologies/Privilege-Escalation) (2.6k ⭐) list a lot of CTF to practice.
-
 <hr class="sep-both">
 
 ## Linux handy commands
@@ -221,7 +219,7 @@ Try to find commands that can be run with sudo
 
 ```bash
 $ sudo -l
-# if asking a password, abort
+# if asking a password, abort or try yours if you can sudo
 # otherwise, 
 # - look for the command on GTFOBins
 # - look for environment variable loaded that may be exploited
@@ -269,7 +267,7 @@ Kernel exploits should be used at a last resort, as they will most probably seve
 * [Dirty COW](https://en.wikipedia.org/wiki/Dirty_COW) on Linux kernel <4.8.3
 </div><div>
 
-There are two OLD scripts, for OLD Linux Kernels, if needed
+There are scripts, but remember that they may generate false positives or false negatives.
 
 * [linux-exploit-suggester](https://github.com/mzet-/linux-exploit-suggester) (3.9k ⭐): still updated with new exploits
 * [Linux_Exploit_Suggester](https://github.com/InteliSecureLabs/Linux_Exploit_Suggester) (1.6k ⭐): up to 4.x excluded

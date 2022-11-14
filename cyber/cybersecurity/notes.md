@@ -4,6 +4,7 @@
 * .todo: metasploit dns sqlmap
 * .todo: windows Linux web shell
 * web general | terminology | URL may have to be moved
+* explose hacking_process
 
 ## Overconfidence
 
