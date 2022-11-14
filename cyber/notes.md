@@ -1,7 +1,7 @@
 # R
 
 * Remember for web/general/security
-* .todo: metasploit dns sqlmap
+* .todo: metasploit dns
 * .todo: windows Linux web shell
 * web general | terminology | URL may have to be moved
 * explose hacking_process
