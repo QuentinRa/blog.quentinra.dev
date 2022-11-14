@@ -264,6 +264,8 @@ There are also premium solutions such as [leakcheck](https://leakcheck.io/), or 
 * [TheDutchHacker](https://www.thedutchhacker.com/)
 * [0xrick](https://0xrick.github.io/categories/)
 * [cyber-security-base-19](https://github.com/rage/cyber-security-base-19)
+* [ctf101.org](https://ctf101.org/)
+* [tbhaxor.com](https://tbhaxor.com/)
 </div><div>
 
 * [auth0.com](https://auth0.com/blog/)

@@ -47,8 +47,8 @@ Learn more about your environment
 * `whoami`: username
 * `last`: list of last logged users
 * `id`: username, group...
-* `uname -a`: info about the machine
-* `hostname`: info about the host
+* `uname -a`: info about the kernel
+* `hostname`: info about the host <small>(can be used to find the role of the user such as `website-dev`)</small>
 * `ps`: see running processes
 * `env`: see environment variables
 * `umask`: see the default perms on newly created files
@@ -64,7 +64,7 @@ Learn more about your environment
 
 **Learn more about your computer** 🗺️
 
-* `/proc/version`: information about the machine
+* `/proc/version`: information about the machine <small> (processes, kernel version, is gcc/... installed?)</small>
 * `/etc/*release`: information about the operating system
 * `/etc/issue`: alternative to find the OS/version
 
@@ -177,12 +177,21 @@ Random stuff that may be useful
 
 <div class="row row-cols-md-2"><div>
 
-If `/etc/shadow` was "intentionally" misconfigured
+If `/etc/shadow` was <s>intentionally</s> misconfigured
 
 ```bash
 $ cat /etc/shadow
 # if you can read it: try to bruteforce the password
 # if you can write it: change the root password
+# (copy a password / generate one mkpasswd -m sha-512 toto)
+```
+
+If `/etc/passwd` was <s>intentionally</s> misconfigured
+
+```bash
+$ cat /etc/shadow
+# if you can write it: make your user part of root group
+# if you can write it: add a new user that is part of root group
 # (copy a password / generate one mkpasswd -m sha-512 toto)
 ```
 
@@ -204,6 +213,7 @@ Scripts having the SUID bit can be executed with the permissions of their owner.
 $ find / -perm -u=s -type f 2>/dev/null
 $ find / -perm -g=s -type f 2>/dev/null
 # $ find / -type f -perm -04000 -ls 2>/dev/null
+# $ find / -type f -perm -4001 -exec ls -h {} \; 2> /dev/null
 ```
 
 If the script "hand-made", or not something on GTFOBins, then you can use `strace script`, and `strings script`. Both commands can be used if the script is "unreadable", to try to find what the script is doing, and maybe find Paths/Environment variables that you may have the permission to edit.
@@ -228,6 +238,7 @@ $ sudo -l
 # otherwise, 
 # - look for the command on GTFOBins
 # - look for environment variable loaded that may be exploited
+# - ex: LD_PRELOAD
 $ sudo -n nc # if nc allowed
 ```
 </div><div>
