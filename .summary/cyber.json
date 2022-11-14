@@ -191,7 +191,7 @@
         "hidden": false
       },
       {
-        "tag": "exploitation/web/xss/index.md",
+        "tag": "exploitation/web/forms/xss.md",
         "name": "XSS (JavaScript)",
         "desc": "XSS vulnerabilities",
         "icon": null,
@@ -205,9 +205,16 @@
         "hidden": false
       },
       {
-        "tag": "exploitation/web/forms/command-injection.md",
+        "tag": "exploitation/web/forms/command_injection.md",
         "name": "Command injection",
-        "desc": "",
+        "desc": "A vulnerability leading to Remote Command Execution (RCE).",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "exploitation/web/forms/file_upload.md",
+        "name": "File upload",
+        "desc": "A vulnerability leading to Remote Code Execution (RCE).",
         "icon": null,
         "hidden": false
       }
