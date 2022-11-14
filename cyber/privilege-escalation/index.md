@@ -11,8 +11,6 @@ Once you are admin, you will be able to do things such as
 * Enabling Persistence
 * ...
 
-See [Post-exploitation](/cyber/post-exploitation/index.md).
-
 > [Privilege-Escalation](https://github.com/Ignitetechnologies/Privilege-Escalation) (2.6k ⭐) list a lot of CTF to practice.
 </div><div>
 

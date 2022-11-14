@@ -614,14 +614,15 @@ The starting point is `find folder`, which explores recursively, and lists every
 <details class="details-e">
 <summary>Not frequently used options</summary>
 
-* `-mtime n`: changed in the last `n*24` hours
-* `-amin n`: accessed in the last `n` minutes
-* `-cmin n`: not changed in the last `n` minutes
+* `-mtime n` and `-atime n`: changed/accessed in the last $n$ days
+* `-cmin n` and `-amin n`: changed/accessed in the last `n` minutes
 * `-newer file`: modified after `file`
-* `-size vu`: `v` is the value, `u` is the unit (ex: `4c` for 4 bytes)
-* `-perms 0744`: files matching the given perms
+* `-size vu`: `v` is the value, `u` is the unit (ex: `4M` for 4 Mb)
+* `-perms 0744` or `-perms a=x` or `-writable` or `-perm -o w` or `-222`: files matching the given perms
 * `-user username`: files belonging to username
 * `-group group_name`: files belonging to the group "group_name"
+
+You can add `+` or `-` before $n$ / $vu$ to indicate any value higher (resp. lower) than the provided one.
 
 find a file with a modified (`mt`, accessed is `at`) date of 2020-09-12. We are using ranges, but you may include only one of them.
 
