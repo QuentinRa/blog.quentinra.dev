@@ -2,7 +2,7 @@
 
 * Remember for web/general/security
 * .todo: metasploit dns
-* .todo: priv-esc web shell
+* .todo: web shell
 * web general | terminology | URL may have to be moved
 * explose hacking_process
 
