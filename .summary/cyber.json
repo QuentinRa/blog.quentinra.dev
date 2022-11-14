@@ -133,7 +133,7 @@
         "hidden": false
       },
       {
-        "tag": "exploitation/web/files/forced_browsing.md",
+        "tag": "exploitation/web/fuzz/forced_browsing.md",
         "name": "Forced browsing",
         "desc": "Find routes, hidden folders/files, configuration-related files...",
         "icon": null,
