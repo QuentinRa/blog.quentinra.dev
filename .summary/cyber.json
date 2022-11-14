@@ -18,7 +18,7 @@
         "hidden": false
       },
       {
-        "tag": "random/hacking_process/index.md",
+        "tag": "cybersecurity/hacking_process.md",
         "name": "H@king process",
         "desc": "",
         "icon": null,
@@ -159,13 +159,6 @@
         "desc": "Cookies vulnerabilities",
         "icon": null,
         "hidden": false
-      },
-      {
-        "tag": "exploitation/web/burpsuite/index.md",
-        "name": "Burp Suite",
-        "desc": "",
-        "icon": "<i class=\"bi bi-tools\"></i>",
-        "hidden": false
       }
     ],
     "Exploitation: Web - part 2 🕸️": [
@@ -207,15 +200,22 @@
       {
         "tag": "exploitation/web/forms/command_injection.md",
         "name": "Command injection",
-        "desc": "A vulnerability leading to Remote Command Execution (RCE).",
+        "desc": "A flaw may lead to Remote Command Execution (RCE).",
         "icon": null,
         "hidden": false
       },
       {
         "tag": "exploitation/web/forms/file_upload.md",
         "name": "File upload",
-        "desc": "A vulnerability leading to Remote Code Execution (RCE).",
+        "desc": "A flaw may lead to Remote Code Execution (RCE).",
         "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "exploitation/web/burpsuite/index.md",
+        "name": "Burp Suite",
+        "desc": "",
+        "icon": "<i class=\"bi bi-tools\"></i>",
         "hidden": false
       }
     ],

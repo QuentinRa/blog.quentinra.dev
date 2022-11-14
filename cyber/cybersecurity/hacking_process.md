@@ -22,23 +22,4 @@ For a penetration tester, it's more something like that
 * **Exploitation**: find a way to get in, get a **foothold**
 * **Privilege Escalation**: try to get root/administrator (horizontal/vertical escalation)
 * **Post-exploitation**: accomplish the goal, hide your traces...
-
-</div></div>
-
-<hr class="sep-both">
-
-## Investigation
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-* Learn more about the company, the programming languages, and software that they use... 🧑‍💻
-
-* Find your candidate targets, for instance, a subdomain owned by the company for another purpose, that is hosted on the network that their main website, and may be vulnerable 🐟
-
-* Find employees, their emails, their social accounts... Try to find if some of their password leaked, and as password tend to be reused, you may access other accounts.
-</div><div>
-
-For instance, if they have many customers, it highly likely that they have a way to provide support for them, which may be an attack vector...
-
-If they are looking for developers that are proficient in Node.js, it's likely that they are either using Node.js, were using Node.js, or are planning to use Node.js.
 </div></div>

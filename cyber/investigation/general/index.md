@@ -2,21 +2,27 @@
 
 [![passiverecon](../../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2"><div class="align-self-center">
 
-Investigation, or passive reconnaissance (recon) involve gathering information about the target from afar, using public information available, for instance,
+Investigation, or passive reconnaissance (recon) involve gathering information about the target from afar, meaning with **no direct interaction with the target**, using public information (OSINT)
 
-* Look for DNS records to look for registrar/contact info/...
-* Look for job offers
-* Look for news
+* DNS records to look for registrar/contact info/...
+* Job offers
+* News related to the company
 * ...
-</div><div>
 
 The goal is to find as much information as possible. This step is followed by active reconnaissance where you directly interact with the target.
+</div><div>
 
-**Subdomains**
+* Learn more about the company, the programming languages, and software that they use... 🧑‍💻
 
-As long as you don't interact with the target (no bruteforce...), [Subdomains enumeration](/cyber/exploitation/web/subdomains/index.md) is usually done at this step.
+* Find your candidate targets, for instance, a subdomain owned by the company for another purpose, that is hosted on the network that their main website, and may be vulnerable 🐟
+
+* Find employees, their emails, their social accounts... Try to find if some of their password leaked, and as password tend to be reused, you may access other accounts.
+
+For instance, if they have many customers, it highly likely that they have a way to provide support for them, which may be an attack vector...
+
+If they are looking for developers that are proficient in Node.js, it's likely that they are either using, were using, or are planning to use Node.js.
 </div></div>
 
 <hr class="sep-both">
@@ -129,18 +135,27 @@ You may also use
 
 <div class="row row-cols-md-2"><div>
 
-[DNS](/info/networking/index.md#domain-name-system-dns-protocol) <small>(used to translate a domain name to an IP address)</small> are storing records about a domain, and its subdomains. The knowledge related to subdomains is stored [here](/cyber/exploitation/web/subdomains/index.md#osint).
+[DNS](/info/networking/general/index.md#domain-name-system-dns-protocol) are storing records about a domain, and its subdomains, used to translate a domain name to an IP address.
 
-Much like subdomains, you can use:
+➡️ You can dig into dns records
 
-* [crt.sh](https://crt.sh/) to search for certificates issued for a domain name
-* [ct search](https://ui.ctsearch.entrust.com/ui/ctsearchui) same, may fetch old certificates
-* [dnsdumpster](https://dnsdumpster.com/) fetch DNS records
+* [dnsdumpster](https://dnsdumpster.com/) to fetch DNS records
+
+➡️ You can dig into certificates issued for a domain
+
+* [crt.sh](https://crt.sh/) to search for certificates
+* [ct search](https://ui.ctsearch.entrust.com/ui/ctsearchui) same, can fetch old certificates
+
+➡️ You can use scripts
+
+[Sublist3r](https://github.com/aboul3la/Sublist3r) (7.7k ⭐) is a Python script to enumerate subdomains of websites using OSINT.
+
+There is also [theHarvester](https://github.com/laramies/theHarvester) (7.6k ⭐) which is a Python script too.
 </div><div>
 
-You can use the [whois](https://www.whois.com/whois/) website, or their command, to dig information about the owner of a domain name, their registrar...
+➡️ You can use [whois](https://www.whois.com/whois/) website, or their command, to dig information about the owner of a domain name, their registrar...
 
-You can use the commands [nslookup/dig](/info/linux/networking/index.md#interact-with-the-outside) to query DNS servers.
+➡️ You can use the commands [nslookup/dig](/info/linux/networking/index.md#interact-with-the-outside) to query DNS servers.
 
 ```bash
 # A = IPV4, AAAA=IPV6, MX, TXT, CNAME...
@@ -149,6 +164,12 @@ $ dig example.com -t A
 # ask 1.1.1.1 DNS server
 $ nslookup -type=A example.com 1.1.1.1
 $ dig example.com -t A @1.1.1.1
+```
+
+➡️ You can also use your Google Dorking skills to find subdomains
+
+```none
+-site:example.com site:*.example.com
 ```
 </div></div>
 
