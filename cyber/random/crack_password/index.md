@@ -321,10 +321,10 @@ ssh login@ip -i key
 ```
 </div><div>
 
-The key is usually protected by a passphrase. You can use `ssh2jhon` to convert it to a file that `john` can try to break.
+The key is usually protected by a passphrase. You can use `ssh2john` to convert it to a file that `john` can try to break.
 
 ```bash
-$ ssh2jhon key > hash
+$ ssh2john key > hash
 $ john --format=ssh hash --wordlist=wordlist
 ```
 </div></div>
