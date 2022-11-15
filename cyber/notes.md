@@ -79,3 +79,16 @@ cat /tmp/output
 * From what I understood, on port 111, there is rcpbind that can indicate which port is providing a service given a protocol number
 * `sudo nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.12.68`
 * There was a failure in ProFtpd  that allowed users to move files from a non-mounted path to the mounted path. Could steal id_rsa.
+
+--- https://tryhackme.com/room/steelmountain
+
+* use meterpreter upload to upload the winPEAS
+* `shell`
+* `.\winPEASany_ofs.exe`
+* `powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"`
+* `powershell -ep bypass -c ". .\PowerUp.ps1;"`
+* `https://github.com/itm4n/PrivescCheck#metasploit-timeout`
+* `powershell_shell`
+* `. .\PowerUp.ps1` `PS > Invoke-AllChecks`
+* https://www.joesandbox.com/#windows
+* https://github.com/EgeBalci/sgn
