@@ -2,7 +2,7 @@
 
 * Remember for web/general/security
 * .todo: metasploit dns
-* .todo: web shell
+* .todo: web
 * web general | terminology | URL may have to be moved
 * explose hacking_process
 
@@ -13,6 +13,13 @@
 https://tryhackme.com/room/linprivesc
 => hint/notes
 => network
+
+* If there are tools not installed on your target: https://github.com/andrew-d/static-binaries
+* exploit/multi/handler
+* nc ip port -e /bin/bash
+
+* socat is a sort of ncat+more, but not installed by default, and harder to learn.
+* Socat: transfer the socat binary
 
 <hr>
 
