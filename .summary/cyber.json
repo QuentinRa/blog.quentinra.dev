@@ -126,7 +126,7 @@
         "hidden": false
       },
       {
-        "tag": "exploitation/web/others/headers.md",
+        "tag": "exploitation/web/others/webserver.md",
         "name": "Webservers",
         "desc": "HTTP Headers, SSL/TLS...",
         "icon": null,
@@ -169,8 +169,8 @@
       },
       {
         "tag": "exploitation/web/others/xml.md",
-        "name": "XML",
-        "desc": "Cookies vulnerabilities",
+        "name": "XML External Entity",
+        "desc": "XML External Entity (XEE)",
         "icon": null,
         "hidden": false
       }
