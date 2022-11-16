@@ -1,8 +1,7 @@
 # R
 
 * Remember for web/general/security
-* .todo: metasploit dns
-* .todo: web
+* .todo: metasploit dns web
 * web general | terminology | URL may have to be moved
 * explose hacking_process
 
@@ -68,9 +67,6 @@ systemctl -f link $TF
 systemctl -f enable --now $TF
 cat /tmp/output
 ```
-
-* `git clone https://github.com/brightio/penelope.git`
-* `python penelope.py`
 
 --- https://tryhackme.com/room/basicpentestingjt
 --- https://tryhackme.com/room/kenobi
