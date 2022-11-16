@@ -1,7 +1,7 @@
 # R
 
 * Remember for web/general/security
-* .todo: metasploit dns web
+* .todo: metasploit dns
 * web general | terminology | URL may have to be moved
 
 <hr>

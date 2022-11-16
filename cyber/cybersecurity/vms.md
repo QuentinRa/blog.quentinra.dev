@@ -1,39 +1,41 @@
 # Virtual Machines
 
+Notes about Virtual Machine, Emulator, along with links to download CTF Virtual Machines to have some fun.
+
 <hr class="sep-both">
 
 ## Virtual machine emulators
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2 mt-3"><div>
 
 📌 **VMWare workstation** 📌
 
 * **Link**: [VMware Workstation 16.2.4 Player](https://customerconnect.vmware.com/downloads/details?downloadGroup=WKST-PLAYER-1624&productId=1039&rPId=91446)
 * **Notes**
-  * Some are sharing pre-configured machines ready to install
-  * The UX is better than in Virtual Box
-  * At least in the free version, there are fewer features than Virtual Box, such as to easily resize permanently the screen, and their documentation is not that good.
-  * In the settings
-    * you can create a shared folder between Windows/VM
+  * 🚀 You can import pre-configured VMs
+  * ✨ The UX is better than in Virtual Box
+  * 👎 Their documentation isn't helpful. If you got problems with the keyboard, or to permanently resize the screen, it may take a few minutes.
+  * ➡️ in the settings
+    * you can create a shared folder between Windows/your VM
 </div><div>
 
 ⭐ **Oracle VirtualBox** ⭐
 
 * **Link**: [Download VirtualBox](https://www.virtualbox.org/)
 * **Notes**
-    * There are always problems, like you need to go deep into the settings, in order to set a lot of values, and cross-finger while praying that they are the right ones for your machine.
-    * There are not "ready to sail", like if you want to create two machines, and send a ping from one to another, you can't because they have the same IP, you need to do some manual work, and that's a very bad UX.
-    * There are a lot of nice features, when it works that is.
-    * In the settings
+    * 👎 There are always problems, like you need to go deep into the settings, in order to set a lot of values, and cross-finger while praying that they are the right ones for your machine. For instance, by default, every machine has the same IP, so you can't another one...
+    * 💭 It's possible to find pre-installed VMs, but you can only import the hard-drive, so you still have to manually configure them.
+    * 🥈 There are a lot of nice features, when it works that is.
+    * ➡️ In the settings
       * you can enable copy-paste from the source to the VM <small>(enabled by default on VMWare)</small>
-      * you can create a shared folder between Windows/VM
+      * you can create a shared folder between Windows/your VM
 </div></div>
 
 > There is also [qemu](https://www.qemu.org/), mostly for Linux users.
 
 <hr class="sep-both">
 
-## Find a distribution
+## Download Virtual Machines
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -57,7 +59,7 @@
 
 </div><div>
 
-**Kali Linux** ⭐
+**Kali Linux** 🚀
 
 * [Link](https://www.kali.org/get-kali/#kali-virtual-machines)
 * There are giving you prebuilt image, get started in seconds!
