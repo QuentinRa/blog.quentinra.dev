@@ -10,6 +10,8 @@ Encoding, unlike encryption, is simply another way of presenting data. Anyone th
 </div><div>
 
 You can use [CyberChef](https://github.com/gchq/CyberChef) (19.2k ⭐) to encode/decode a message. They have an [online version here](https://gchq.github.io/CyberChef/).
+
+You can use [BurpSuite Decoder](/cyber/exploitation/web/burpsuite/index.md#decoder-tab).
 </div></div>
 
 <hr class="sep-both">
