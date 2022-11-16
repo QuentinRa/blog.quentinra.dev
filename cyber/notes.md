@@ -3,7 +3,6 @@
 * Remember for web/general/security
 * .todo: metasploit dns web
 * web general | terminology | URL may have to be moved
-* explose hacking_process
 
 <hr>
 
