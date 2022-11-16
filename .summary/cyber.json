@@ -126,6 +126,13 @@
         "hidden": false
       },
       {
+        "tag": "exploitation/web/others/headers.md",
+        "name": "Webservers",
+        "desc": "HTTP Headers, SSL/TLS...",
+        "icon": null,
+        "hidden": false
+      },
+      {
         "tag": "exploitation/web/fuzz/index.md",
         "name": "Fuzzing / Fuzz",
         "desc": "",
@@ -154,8 +161,15 @@
         "hidden": false
       },
       {
-        "tag": "exploitation/web/cookies/index.md",
+        "tag": "exploitation/web/others/cookies.md",
         "name": "Cookies",
+        "desc": "Cookies vulnerabilities",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "exploitation/web/others/xml.md",
+        "name": "XML",
         "desc": "Cookies vulnerabilities",
         "icon": null,
         "hidden": false
