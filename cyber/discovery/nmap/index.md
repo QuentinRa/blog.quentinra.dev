@@ -1,10 +1,17 @@
-# nmap port scanner
+# Nmap: the Network Mapper
 
 [![nmap01](../../_badges/thm/nmap01.svg)](https://tryhackme.com/room/nmap01)
 [![nmap02](../../_badges/thmp/nmap02.svg)](https://tryhackme.com/room/nmap02)
 [![nmap03](../../_badges/thmp/nmap03.svg)](https://tryhackme.com/room/nmap03)
 [![nmap04](../../_badges/thmp/nmap04.svg)](https://tryhackme.com/room/nmap04)
 [![furthernmap](../../_badges/thm/furthernmap.svg)](https://tryhackme.com/room/furthernmap)
+[![vulnversity](../../_badges/thm-p/vulnversity.svg)](https://tryhackme.com/room/vulnversity)
+[![blue](../../_badges/thm-p/blue.svg)](https://tryhackme.com/room/blue)
+[![ice](../../_badges/thm-p/ice.svg)](https://tryhackme.com/room/ice)
+[![blaster](../../_badges/thm-p/blaster.svg)](https://tryhackme.com/room/blaster)
+[![kenobi](../../_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
+[![rrootme](../../_badges/thm-p/rrootme.svg)](https://tryhackme.com/room/rrootme)
+[![basicpentestingjt](../../_badges/thm-p/basicpentestingjt.svg)](https://tryhackme.com/room/basicpentestingjt)
 
 <div class="row row-cols-md-2"><div>
 

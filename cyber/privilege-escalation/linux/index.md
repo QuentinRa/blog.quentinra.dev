@@ -208,6 +208,8 @@ $ cat /etc/shadow
 **SUID/GUID**
 
 [![vulnversity](../../_badges/thm-p/vulnversity.svg)](https://tryhackme.com/room/vulnversity)
+[![kenobi](../../_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
+[![rrootme](../../_badges/thm-p/rrootme.svg)](https://tryhackme.com/room/rrootme)
 
 Scripts having the SUID bit can be executed with the permissions of their owner. GUID is the same, but using the owner group permissions. If you find one, try to see on GTFOBins if you have a well-known way to exploit it.
 
@@ -231,6 +233,8 @@ every major Linux distribution with a SUID bit could be exploited to get root. S
 *A good reference to exploit sudo: [SUDO_KILLER](https://github.com/TH3xACE/SUDO_KILLER)* (1.6k ⭐).
 
 <div class="row row-cols-md-2"><div>
+
+[![picklerick](../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
 
 Try to find commands that can be run with sudo
 
