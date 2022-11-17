@@ -207,7 +207,7 @@ $ cat /etc/shadow
 
 **SUID/GUID**
 
-[![vulnversity](../../_badges/thm/vulnversity.svg)](https://tryhackme.com/room/vulnversity)
+[![vulnversity](../../_badges/thm-p/vulnversity.svg)](https://tryhackme.com/room/vulnversity)
 
 Scripts having the SUID bit can be executed with the permissions of their owner. GUID is the same, but using the owner group permissions. If you find one, try to see on GTFOBins if you have a well-known way to exploit it.
 
@@ -247,7 +247,7 @@ $ sudo -n nc # if nc allowed
 
 **sudo before 1.8.28 (CVE-2019-14287)**
 
-[![agentsudoctf](../../_badges/thm/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
+[![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 
 If a user was allowed to run one specific command using sudo, such as `nc`, then it was possible for any user to bypass the check, and run the command as root.
 
