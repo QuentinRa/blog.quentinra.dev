@@ -34,7 +34,7 @@ There are other alternatives 📌
 ## Find data from an image
 
 [![introdigitalforensics](../../_badges/thm/introdigitalforensics.svg)](https://tryhackme.com/room/introdigitalforensics)
-[![agentsudoctf](../../_badges/thm/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
+[![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 
 <div class="row row-cols-md-2"><div>
 
@@ -71,7 +71,7 @@ You can also do a reverse image search 🧵
 
 ## Find hidden data in an image
 
-[![agentsudoctf](../../_badges/thm/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
+[![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 
 <div class="row row-cols-md-2"><div>
 
