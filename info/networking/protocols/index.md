@@ -226,6 +226,16 @@ The server will answer with an [HTTP response code](https://developer.mozilla.or
 
 <hr class="sep-both">
 
+## ⚡ RCPBind - 111 (tcp/udp)
+
+<div class="row row-cols-md-2"><div>
+
+From what I understood, `rcpbind` is a tcp/udp service that if running, can be used to find the port used by a protocol from a a protocol number.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 🔒 Samba - 445 (or 139 before, tcp)
 
 <div class="row row-cols-md-2"><div>

@@ -56,14 +56,6 @@ systemctl -f enable --now $TF
 cat /tmp/output
 ```
 
---- https://tryhackme.com/room/basicpentestingjt
---- https://tryhackme.com/room/kenobi
-
-* `smbclient //10.10.12.68/Anonymous -U Anonymous/`
-* From what I understood, on port 111, there is rcpbind that can indicate which port is providing a service given a protocol number
-* `sudo nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.12.68`
-* There was a failure in ProFtpd  that allowed users to move files from a non-mounted path to the mounted path. Could steal id_rsa.
-
 --- https://tryhackme.com/room/steelmountain
 
 * use meterpreter upload to upload the winPEAS
