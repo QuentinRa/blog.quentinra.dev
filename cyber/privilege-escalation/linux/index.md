@@ -155,7 +155,7 @@ See guides
 
 Find vulnerabilities in binaries.
 
-* [gtfobins](https://gtfobins.github.io/) (7.4k ⭐): a reference to find ways to exploit a command with misconfigured permissions.
+* [gtfobins](https://gtfobins.github.io/) (7.4k ⭐): a reference to find ways to exploit a command with misconfigured permissions. I'm adding [some extra here](gtfobins.md).
 * [gtfo](https://github.com/t0thkr1s/gtfo) (96 ⭐): a python script to browse locally, a most-likely, outdated, version of gtfobins.
 
 There are many scripts **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
@@ -206,6 +206,8 @@ $ cat /etc/shadow
 </div><div>
 
 **SUID/GUID**
+
+[![vulnversity](../../_badges/thm/vulnversity.svg)](https://tryhackme.com/room/vulnversity)
 
 Scripts having the SUID bit can be executed with the permissions of their owner. GUID is the same, but using the owner group permissions. If you find one, try to see on GTFOBins if you have a well-known way to exploit it.
 
