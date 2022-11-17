@@ -57,6 +57,13 @@ Notes about Virtual Machine, Emulator, along with links to download CTF Virtual 
 * [Link](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/)
 * Windows 11
 
+**Metasploit Vulnerable VM** 💣
+
+* Internationally misconfigured virtual machine to test your skills
+* [Metasploit 2](https://docs.rapid7.com/metasploit/metasploitable-2/)
+* [Metasploit3](https://github.com/rapid7/metasploitable3)
+* **Username**: `msfadmin`. **Password**: `msfadmin`
+* The keyword layout is QWERTY. You can swap it once logged, if you need to <small>(ex: `sudo loadkeys fr`)</small>.
 </div><div>
 
 **Kali Linux** 🚀
