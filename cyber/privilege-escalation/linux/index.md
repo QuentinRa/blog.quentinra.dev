@@ -245,7 +245,11 @@ $ sudo -n nc # if nc allowed
 ```
 </div><div>
 
-**sudo before 1.8.28 (CVE-2019-14287)**: if a user was allowed to run one specific command using sudo, such as `nc`, then it was possible for any user to bypass the check, and run the command as root.
+**sudo before 1.8.28 (CVE-2019-14287)**
+
+[![agentsudoctf](../../_badges/thm/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
+
+If a user was allowed to run one specific command using sudo, such as `nc`, then it was possible for any user to bypass the check, and run the command as root.
 
 ```bash
 $ sudo -u#-1 nc
