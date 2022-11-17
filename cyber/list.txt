@@ -1,25 +1,7 @@
-[![retro](../../_badges/thm/retro.svg)](https://tryhackme.com/room/retro)
-[![blaster](../../_badges/thm/blaster.svg)](https://tryhackme.com/room/blaster)
-
-https://tryhackme.com/room/basicpentestingjt
-=> service? can read .rsa => crack passphrase
-=> hydra (ssh)
-
-https://tryhackme.com/room/agentsudoctf
-=> headers
-=> password cracking
-
 https://tryhackme.com/room/blue
 https://tryhackme.com/room/ice
 => metasploit Windows
 
-https://tryhackme.com/room/steelmountain
-=> ...
-
 https://tryhackme.com/room/blaster
 => vuln in windows dialog
 => metasploit
-
-https://tryhackme.com/room/netsecchallenge
-=> hydra
-=> telnet

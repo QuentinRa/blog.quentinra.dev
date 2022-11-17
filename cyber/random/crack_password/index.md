@@ -3,8 +3,8 @@
 [![encryptioncrypto101](../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
 [![johntheripper0](../../_badges/thmp/johntheripper0.svg)](https://tryhackme.com/room/johntheripper0)
 [![hashingcrypto101](../../_badges/thmp/hashingcrypto101.svg)](https://tryhackme.com/room/hashingcrypto101)
-[![crackthehash](../../_badges/thm-p/crackthehash.svg)](https://tryhackme.com/room/crackthehash)
 [![hash_cracking](../../_badges/poat/hash_cracking.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Hash%20Cracking.md)
+[![crackthehash](../../_badges/thm-p/crackthehash.svg)](https://tryhackme.com/room/crackthehash)
 
 <div class="row row-cols-md-2"><div>
 
@@ -312,6 +312,8 @@ $ john --format=gpg hash --wordlist=wordlist
 
 ## SSH private key - passphrase cracking
 
+[![basicpentestingjt](../../_badges/thm-p/basicpentestingjt.svg)](https://tryhackme.com/room/basicpentestingjt)
+
 <div class="row row-cols-md-2"><div>
 
 Some users are using a key instead of a password while connecting to a server via SSH, because, as long as the key do not leak, it's more secure than sending credentials.
@@ -354,6 +356,8 @@ $ unrar x hello.rar
 <hr class="sep-both">
 
 ## ZIP password cracking
+
+[![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 
 <div class="row row-cols-md-2"><div>
 
