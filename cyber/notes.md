@@ -1,8 +1,14 @@
 # R
 
 * Remember for web/general/security
-* .todo: metasploit dns
+* .todo: metasploit dns discord
 * web general | terminology | URL may have to be moved
+
+<hr>
+
+## Notes
+
+* CTF =  capture the flag
 
 <hr>
 
@@ -31,6 +37,24 @@ https://tryhackme.com/room/linprivesc
   * Can encrypt, may bypass an IDS: https://tryhackme.com/room/introtoshells
 * Socat: transfer the socat binary
 * Reverse shells/... note lasty
+
+<hr>
+
+## Forced Browsing
+
+* https://tryhackme.com/room/webenumerationv2
+  * Gobuster options.
+  * -k for ssl errors
+* Gobuster DNS/VHosts
+* Useful wordlists
+* nmap `-n` redo
+* add a warning + 64th
+* `cat /usr/share/wordlists/dirb/extensions_common.txt | tr '\n' ','`
+* `gobuster -u` for vhost
+* `gobuster vhost -u http://webenum.thm -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -t50 --append-domain` (in new versions of gobuster, false by default)
+* NOT FINISHED https://tryhackme.com/room/webenumerationv2
+
+> While participating in rooms on TryHackMe, virtual hosts would be a good way to hide a completely different website if nothing turned up on your main port 80/443 scan.
 
 <hr>
 
