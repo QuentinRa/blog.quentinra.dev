@@ -6,7 +6,7 @@
 
 This page is a **summary of the syntax that we are using** in Markdown, and how it is rendered **on this website**.
 
-**Version**: <a href="https://github.com/lgs-games/memorize/blob/master/.github/STATIC_PAGES/MARKDOWN_SYNTAX.md" target="_blank" rel="noopener noreferrer">1.7.1</a> (2022-10-10)
+**Version**: <a href="https://github.com/lgs-games/memorize/blob/master/.github/STATIC_PAGES/MARKDOWN_SYNTAX.md" target="_blank" rel="noopener noreferrer">1.7.2</a> (2022-11-18)
 
 <div class="table-of-contents w-25 mx-auto">
 
@@ -29,18 +29,20 @@ This page is a **summary of the syntax that we are using** in Markdown, and how 
 
 ## 1. Titles
 
-| Markdown | Description | HTML | Preview |
-|----------|----------|----------|----------|
-| `# title` | h1 (big header) | &lt;h1&gt;title&lt;/h1&gt; | <h2 class="display-6 fw-bold">title</h2> |
-| `## title` | h2 (normal header) | &lt;h2&gt;title&lt;/h2&gt; | <h2 class="h2">title</h2> |
-| `### title` | h3 (subsection header) | &lt;h3&gt;title&lt;/h3&gt; | <h2 class="h3">title</h2> |
+| Markdown     | Description                  | HTML                       | Preview                                  |
+|--------------|------------------------------|----------------------------|------------------------------------------|
+| `# title`    | h1 (big header)              | &lt;h1&gt;title&lt;/h1&gt; | <h2 class="display-6 fw-bold">title</h2> |
+| `## title`   | h2 (normal header)           | &lt;h2&gt;title&lt;/h2&gt; | <h2 class="h2">title</h2>                |
+| `### title`  | h3 (subsection header)       | &lt;h3&gt;title&lt;/h3&gt; | <h2 class="h3">title</h2>                |
+| `#### title` | h4 (subsection header) | &lt;h4&gt;title&lt;/h4&gt; | <h2 class="h4">title</h2>                |
 
 Notes
 
-* you can use headers h3 to h6, but they will be rendered as if they were h2. You should split a big page, so that such a situation does not happen. An alternative would be to use bold.
+* you can use headers <s>h3</s> <s>h4</s> h5 to h6, but they will be rendered as if they were h2. You should split a big page, so that such a situation does not happen. An alternative would be to use bold.
 * **version 1.2.0**: a permalink icon is added to each header (#content-{title}).
-* **version 1.2.0**: if you add more than one header h1, they will be rendered using the style shown above, but their HTML tag will be h2
+* **version 1.2.0**: only one h1 tag per page, others will only be visually similar as h1
 * **version 1.4.1**: allowing **h3**
+* **version 1.7.2**: allowing **h4**
 
 <hr class="sep-both">
 
