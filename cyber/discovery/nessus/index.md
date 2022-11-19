@@ -42,29 +42,18 @@ It's important to note that Nessus is generating a lot of traffic, and may not f
 
 ## 🥳 metasploit and nessus ⚡
 
-[See metasploit framework](/cyber/exploitation/general/metasploit/index.md)
+[See metasploit framework - Database / Workspaces](/cyber/exploitation/general/metasploit/index.md#-the-metasploit-database-)
 
 <div class="row row-cols-md-2"><div>
 
-To be honest, it was way more useful to explore results in nessus web interface, but if you don't have one, then this is surely something useful.
+First, in Nessus web interface, when exploring each vulnerability one by one, you may find a section **Exploitable With** indicating tools that Nessus knows which you can use them to test the exploit.
 
 ![nessus_exploit_with](_images/nessus_exploit_with.png)
 
-First, start a msf database
-
-```bash
-$ sudo systemctl start postgresql
-$ sudo msfdb init
-# I got some errors, but it still works
-```
-
-Then in your msfconsole
-
-```bash
-$ msfconsole -q
-msf6 > db_status # check if connected
-[*] Connected to msf. Connection type: postgresql.
-```
+* First, start msf database
+* Second, create a workspace (optional)
+* Third, import your scan inside the database
+* Four, work on it
 </div><div>
 
 Everything below is coming from [this tutorial](https://scubarda.com/2015/11/16/launching-nessus-scans-inside-metasploit/), but metasploit unleashed has also [some tips](https://www.offensive-security.com/metasploit-unleashed/working-with-nessus/).
@@ -78,14 +67,4 @@ msf6 > nessus_scan_list
 # Import the result of a scan
 msf6 > nessus_db_import id_you_found_in_the_list
 ```
-
-Once you did, there a few commands you can use
-
-* `services`: see what services the target run
-* `vulns`: see vulnerabilities
-* `vulns -s ftp`: see ftp vulnerabilities
-* `vulns -S keyword`: see vulnerabilities including keyword
-* ...
-
-Once you found a vulnerability, process as usual.
 </div></div>
