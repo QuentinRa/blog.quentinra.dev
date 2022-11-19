@@ -55,6 +55,38 @@ int main() {
 }
 ```
 
+* https://tryhackme.com/room/windowsprivesc20
+
+```
+Misconfigurations on Windows services or scheduled tasks
+Excessive privileges assigned to our account
+Vulnerable software
+Missing Windows security patches
+```
+
+* System are more perms that admin
+* Windows Deployment Services: deploy an image to serveral hosts. These are refereed as Unattended, Admin account required to create them. Credentials
+
+```
+C:\Unattend.xml
+C:\Windows\Panther\Unattend.xml
+C:\Windows\Panther\Unattend\Unattend.xml
+C:\Windows\system32\sysprep.inf
+C:\Windows\system32\sysprep\sysprep.xml
+```
+
+* PowerShell's history: `type $Env:userprofile\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt` and in a cmd `type %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt`
+* List saved crendetials `cmdkey /list`. Run command as another user? `runas /savecred /user:admin cmd.exe`
+* Internet Information Services (IIS) is the default web server on Windows installations.
+
+```
+C:\inetpub\wwwroot\web.config
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config
+type C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config | findstr connectionString
+```
+
+* PuTTY `reg query HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\ /f "Proxy" /s`
+
 <hr>
 
 ## Forced Browsing

@@ -222,6 +222,8 @@ $ find / -perm -g=s -type f -ls 2>/dev/null
 
 If the script "hand-made", or not something on GTFOBins, then you can use `strace script`, and `strings script`. Both commands can be used if the script is "unreadable", to try to find what the script is doing, and maybe find Paths/Environment variables that you may have the permission to edit.
 
+**Other notes**
+
 > **CVE-2021-4034**: `/usr/bin/pkexec` a file installed by default on
 every major Linux distribution with a SUID bit could be exploited to get root. See [arthepsy PoC](https://github.com/arthepsy/CVE-2021-4034) (913 ⭐), or [berdav PoC](https://github.com/berdav/CVE-2021-4034) (1.7k ⭐).
 </div></div>
