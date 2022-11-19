@@ -357,3 +357,24 @@ You can ask nmap to do a traceroute, much like with `traceroute`.
 $ nmap [...] --traceroute
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## 🥳 metasploit and nmap ⚡
+
+[See metasploit framework - Database / Workspaces](/cyber/exploitation/general/metasploit/index.md#-the-metasploit-database-)
+
+<div class="row row-cols-md-2"><div>
+
+* First, start msf database
+* Second, create a workspace (optional)
+* Third, start your scan with `db_nmap`
+* Four, work on it
+</div><div>
+
+The command `db_nmap` is the same as `nmap`.
+
+```bash
+msf6 > db_nmap -sV -p- IP
+```
+</div></div>
