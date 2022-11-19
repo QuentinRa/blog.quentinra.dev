@@ -55,7 +55,7 @@ int main() {
 }
 ```
 
-* https://tryhackme.com/room/windowsprivesc20
+* https://tryhackme.com/room/windowsprivesc20 (premium)
 
 ```
 Misconfigurations on Windows services or scheduled tasks
@@ -93,7 +93,27 @@ type C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config | findstr
 * Windows installer files (-f msi -o malicious.msi)
 * Windows services are managed by the Service Control Manager (SCM).
 * `sc qc` (ahah, my steel moutain)
-* IN A EFFING CMD BITCH
+* IN A EFFING CMD BITCH (otherwise: sc.exe)
+* Unquoted Service Paths
+  * If there are space in the executable space
+  * and there is an executable that can be created in the path of the service
+  * then the executable will be executed with the rest of the path as arguments
+  * AD and WD privileges, allowing the user to create subdirectories and files
+  * https://askubuntu.com/questions/1075098/remmina-scaling-options
+* Insecure Service Permissions
+* XXX
+* https://tryhackme.com/room/windowsprivesc20 (dropped fur now)
+* XXX
+* Moar
+  * https://github.com/bitsadmin/wesng
+  * https://blog.bitsadmin.com/blog/windows-security-updates-for-hackers
+  * https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md
+  * https://github.com/gtworek/Priv2Admin
+  * https://github.com/antonioCoco/RogueWinRM
+  * https://jlajara.gitlab.io/Potatoes_Windows_Privesc
+  * https://decoder.cloud/
+  * https://dl.packetstormsecurity.net/papers/presentations/TokenKidnapping.pdf
+  * https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation
 
 <hr>
 
