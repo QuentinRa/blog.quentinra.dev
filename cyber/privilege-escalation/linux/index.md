@@ -177,16 +177,16 @@ Random stuff that may be useful
 
 <div class="row row-cols-md-2"><div>
 
-If `/etc/shadow` was <s>intentionally</s> misconfigured
+If `/etc/passwd` was <s>intentionally</s> misconfigured
 
 ```bash
-$ cat /etc/shadow
+$ cat /etc/passwd
 # if you can read it: try to bruteforce the password
 # if you can write it: change the root password
 # (copy a password / generate one mkpasswd -m sha-512 toto)
 ```
 
-If `/etc/passwd` was <s>intentionally</s> misconfigured
+If `/etc/shadow` was <s>intentionally</s> misconfigured
 
 ```bash
 $ cat /etc/shadow

