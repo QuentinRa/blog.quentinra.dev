@@ -155,7 +155,7 @@ See guides
 
 Find vulnerabilities in binaries.
 
-* [gtfobins](https://gtfobins.github.io/) (7.4k ⭐): a reference to find ways to exploit a command with misconfigured permissions. I'm adding [some extra here](gtfobins.md).
+* [gtfobins](https://gtfobins.github.io/) (7.4k ⭐): a **reference** 🎁 to find ways to get root with a misconfigured command. I'm adding [some extra here](gtfobins.md).
 * [gtfo](https://github.com/t0thkr1s/gtfo) (96 ⭐): a python script to browse locally, a most-likely, outdated, version of gtfobins.
 
 There are many scripts **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
@@ -239,13 +239,15 @@ every major Linux distribution with a **SUID bit** could be exploited to get roo
 Try to find commands that can be run with sudo
 
 ```bash
-$ sudo -l
-# if asking a password, abort or try yours if you can sudo
-# otherwise, 
-# - look for the command on GTFOBins
-# - look for environment variable loaded that may be exploited
-# - ex: LD_PRELOAD
-$ sudo -n nc # if nc allowed
+$ sudo -nl # test if you can sudo without a password
+$ sudo -l # if you can't, try with your password
+# -> if both cases, if you were successful
+# and there are some interesting stuff such as:
+Matching Defaults entries for [...]:
+    [...] # try to exploit values here (LD_PRELOAD...)
+
+User [...] may run the following commands on [...]:
+    (root) /bin/tar # see GTFOBins for sudo exploit
 ```
 </div><div>
 
