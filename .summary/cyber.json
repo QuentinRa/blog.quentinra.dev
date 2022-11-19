@@ -87,9 +87,16 @@
         "hidden": false
       },
       {
-        "tag": "exploitation/general/metasploit/index.md",
+        "tag": "exploitation/general/metasploit/msfconsole.md",
         "name": "metasploit",
-        "desc": null,
+        "desc": "The metasploit framework",
+        "icon": "<i class=\"bi bi-tools\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "exploitation/general/metasploit/msfvenom.md",
+        "name": "msfvenom",
+        "desc": "Generate/catch a reverse shell",
         "icon": "<i class=\"bi bi-tools\"></i>",
         "hidden": false
       }
