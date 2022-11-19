@@ -42,7 +42,7 @@ It's important to note that Nessus is generating a lot of traffic, and may not f
 
 ## 🥳 metasploit and nessus ⚡
 
-[See metasploit framework - Database / Workspaces](/cyber/exploitation/general/metasploit/index.md#-the-metasploit-database-)
+[See metasploit framework - Database / Workspaces](/cyber/exploitation/general/metasploit/msfconsole.md#-the-metasploit-database-)
 
 <div class="row row-cols-md-2"><div>
 
