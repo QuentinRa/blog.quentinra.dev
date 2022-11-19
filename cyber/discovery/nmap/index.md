@@ -362,6 +362,8 @@ $ nmap [...] --traceroute
 
 ## 🥳 metasploit and nmap ⚡
 
+[![metasploitexploitation](../../_badges/thmp/metasploitexploitation.svg)](https://tryhackme.com/room/metasploitexploitation)
+
 [See metasploit framework - Database / Workspaces](/cyber/exploitation/general/metasploit/msfconsole.md#-the-metasploit-database-)
 
 <div class="row row-cols-md-2"><div>
