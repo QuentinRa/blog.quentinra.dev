@@ -172,7 +172,13 @@ type C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config | findstr
 * Hydra ssh
 * SUID
 
---- https://tryhackme.com/room/cowboyhacker
+--- https://tryhackme.com/room/lazyadmin 🐍🐍🐍
+
+* nmap
+* gobuster
+* ...
+
+--- https://tryhackme.com/room/startup
 
 * nmap
 * gobuster
@@ -195,4 +201,3 @@ Others
 * Kali right-arrow
 * Test: `wpscan --url http://10.10.162.222/wordpress/ --detection-mode aggressive`
 * `php://filter/convert.base64-encode/resource=../../../../../wp-config.php` (file inclusion)
-* not finished aza.
