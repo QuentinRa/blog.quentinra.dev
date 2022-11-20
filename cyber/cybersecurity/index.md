@@ -202,7 +202,7 @@ You can use [cybersecurityeducation.org](https://www.cybersecurityeducation.org/
 * [academy.tcm-sec.com](https://academy.tcm-sec.com/)
 </div><div>
 
-**Practicing**
+**Practicing** (CTF = capture the flag)
 
 * [HackTheBox](https://hackthebox.com/) (HTB)
 * [root me](https://www.root-me.org/)
