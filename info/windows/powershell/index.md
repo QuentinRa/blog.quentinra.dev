@@ -1,12 +1,17 @@
 # Powershell
 
-This is a program abstracting .Net (Common Language Runtime (CLR)), allowing us to run commands called cmdlets.
+<div class="row row-cols-md-2"><div class="align-self-center">
 
-> **Notes**
-> 
-> * commands (and many things) are usually non-case sensitive (a=A)
-> * **You can use some Linux commands on Windows**, as long as there is an alias to a Windows commands!
-> * as in Linux terminals, you only have to use quotes when using specials characters
+This is a program abstracting .NET Common Language Runtime (CLR), allowing us to run commands called cmdlets.
+</div><div>
+
+* 🤯 Commands/Paths are case insensitive <small>(a=A)</small>
+* 📝 Many Linux commands are available <small>(aliases to Windows commands)</small>
+* ⚡ Quotes are only needed when using specials characters
+...
+</div></div>
+
+> See [Comparison of cmdlets with similar commands](https://en.wikipedia.org/wiki/PowerShell#Comparison_of_cmdlets_with_similar_commands).
 
 <hr class="sl">
 
@@ -20,14 +25,14 @@ This is a program abstracting .Net (Common Language Runtime (CLR)), allowing us 
 The most useful command on Linux is `man`, and it's the same on Windows, with `Get-Help`.
 
 ```powershell
-PS \> Get-Help Get-ChildItem
+PS> Get-Help Get-ChildItem
 ```
 </div><div>
 
 If you "man" is quite empty, it's because you have to update it. Open a Powershell as administrator, and run Update-Help to update your help pages.
 
 ```powershell
-PS \> Update-Help
+PS> Update-Help
 ```
 </div></div>
 </details>
@@ -39,41 +44,41 @@ PS \> Update-Help
 List files in the current directory
 
 ```powershell
-PS \> Get-ChildItem
-PS \> Get-ChildItem .
-PS \> Get-ChildItem -Path .
+PS> Get-ChildItem
+PS> Get-ChildItem .
+PS> Get-ChildItem -Path .
 ```
 
 List files in the directory "dir"
 
 ```powershell
-PS \> Get-ChildItem "dir"
-PS \> Get-ChildItem -Path "dir"
+PS> Get-ChildItem "dir"
+PS> Get-ChildItem -Path "dir"
 ```
 
 Filter files by pattern
 
 ```powershell
-PS \> Get-ChildItem "dir" -Filter "a*"
+PS> Get-ChildItem "dir" -Filter "a*"
 ```
 </div><div>
 
 Show only files
 
 ```powershell
-PS \> Get-ChildItem -File
+PS> Get-ChildItem -File
 ```
 
 Show only folders
 
 ```powershell
-PS \> Get-ChildItem -Directory
+PS> Get-ChildItem -Directory
 ```
 
 Show only hidden files/folders
 
 ```powershell
-PS \> Get-ChildItem -Directory
+PS> Get-ChildItem -Directory
 ```
 </div></div>
 </details>
@@ -83,7 +88,7 @@ PS \> Get-ChildItem -Directory
 <summary><code>Get-Content</code>: print the content of a file (<code>cat</code>)</summary>
 
 ```powershell
-PS \> Get-Content file.txt
+PS> Get-Content file.txt
 ```
 </details>
 </div><div>
@@ -91,11 +96,11 @@ PS \> Get-Content file.txt
 <summary><code>Set-Location</code>: move to another folder (<code>cd</code>)</summary>
 
 ```powershell
-PS \> Set-Location "C:\"
-PS \> Set-Location
-PS \> Set-Location . # same
-PS \> Set-Location ..
-PS \> Set-Location ~
+PS> Set-Location "C:\"
+PS> Set-Location
+PS> Set-Location . # same
+PS> Set-Location ..
+PS> Set-Location ~
 ```
 </details>
 </div></div>
@@ -109,10 +114,10 @@ PS \> Set-Location ~
 <summary><code>Measure-Object</code>: count the letters/words/... (<code>wc</code>)</summary>
 
 ```powershell
-PS \> Get-Content path_to_some_file  | Measure-Object
-PS \> Get-Content path_to_some_file  | Measure-Object -Word
-PS \> Get-Content path_to_some_file  | Measure-Object -Line -Character -Word
-PS \> Get-Content path_to_some_file  | Measure-Object -Minimum -Maximum
+PS> Get-Content path_to_some_file  | Measure-Object
+PS> Get-Content path_to_some_file  | Measure-Object -Word
+PS> Get-Content path_to_some_file  | Measure-Object -Line -Character -Word
+PS> Get-Content path_to_some_file  | Measure-Object -Minimum -Maximum
 ```
 </details>
 </div><div>
@@ -120,7 +125,7 @@ PS \> Get-Content path_to_some_file  | Measure-Object -Minimum -Maximum
 <summary><code>Select-String</code>: find a motif in a tex (<code>grep</code>)</summary>
 
 ```powershell
-PS \> Select-String -Pattern 'some_pattern' -Path path_to_some_file
+PS> Select-String -Pattern 'some_pattern' -Path path_to_some_file
 ```
 </details>
 </div></div>
@@ -129,8 +134,18 @@ PS \> Select-String -Pattern 'some_pattern' -Path path_to_some_file
 
 ## Other commands
 
-* `Get-FileHash`: return the hash of a file
-  * `-Algorithm`: specify the algorithm
+<div class="row row-cols-md-2 mt-4"><div>
+
+<details class="details-e">
+<summary><code>Get-FileHash</code>: return the hash of a file</summary>
+
+```powershell
+PS> Get-FileHash path_to_file
+PS> Get-FileHash path_to_file -Algorithm MD5
+```
+</details>
+</div><div>
+</div></div>
 
 <hr class="sr">
 
