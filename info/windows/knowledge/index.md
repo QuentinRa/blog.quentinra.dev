@@ -41,6 +41,33 @@ You can open a CMD/powershell in a folder by using <kbd>SHIFT+Right-click</kbd> 
 
 <hr class="sep-both">
 
+## CMD commands
+
+If you don't use powershell, which is Linux friendly so most Unix commands are available, here are some commands that you will most likely use. See [comparison of cmdlets with similar commands](https://en.wikipedia.org/wiki/PowerShell#Comparison_of_cmdlets_with_similar_commands). If you need help, use `command /?`, `help command`, `command /help`...
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+* 🍃 `cd`: move to another folder
+
+* 📝️ `dir`: list files, same as `ls`
+
+* 📖 `type`: print files, same as `cat`
+
+* 🧹 `cls`: clear the screen, same as `clear`
+
+</div><div>
+
+* 🔎 `find`: search files
+
+* 🔎 `findstr`: search content in files, same as `grep`
+
+* 🗃️ `move`: move files
+
+* 🎣 `curl`: fetch web resources
+</div></div>
+
+<hr class="sep-both">
+
 ## Permissions, and users
 
 <div class="row row-cols-md-2"><div>

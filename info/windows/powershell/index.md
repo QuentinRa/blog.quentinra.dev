@@ -13,12 +13,14 @@ This is a program abstracting .NET Common Language Runtime (CLR), allowing us to
 
 > See [Comparison of cmdlets with similar commands](https://en.wikipedia.org/wiki/PowerShell#Comparison_of_cmdlets_with_similar_commands).
 
+⚠️ Note that for the whole course, if you see `Get-Help` (`help`), it means that you can use either of them, both will work.
+
 <hr class="sl">
 
 ## Basic commands
 
 <details class="details-e mt-4">
-<summary><code>Get-Help</code></summary>
+<summary><code>Get-Help</code>: sort of linux man (<code>help</code>)</summary>
 
 <div class="row row-cols-md-2 mx-0"><div>
 

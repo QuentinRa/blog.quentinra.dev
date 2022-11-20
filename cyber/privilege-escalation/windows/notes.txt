@@ -12,13 +12,6 @@ Most Linux commands are available, although they are aliases to Windows commands
 * `clear`: clear the terminal
 * `gcm command`: find the executable given a command ([source](https://stackoverflow.com/questions/304319/is-there-an-equivalent-of-which-on-the-windows-command-line))
 
-cmd commands
-
-* `cd` / `find`
-* `dir`: same as ls
-* `type`: same as cat
-* `cls`: same as clear
-
 Open a Windows shell
 
 * CMD options are usually like `/xxx`.
@@ -42,8 +35,6 @@ Infos on a Local Machine
 * `net localgroup users`:list users in the group "users"
 * `net localgroup administrators`: list administrators
 * `net user username`: infos about an user
-
-> **Get help**: `help command`, `command help`, `command /?`, or `command /help`.
 </div></div>
 
 * `/Windows/System32/config/`: location where the **Security Account Manager** (**SAM**) database file is stored. This file is used to store users, their passwords, their groups... Modern versions of Windows use the NT hash format, commonly referred as NTLM, as the previous format was LM.
