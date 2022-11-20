@@ -20,7 +20,7 @@ As there isn't much we can do as a regular user, we will try to elevate our leve
 * Find misconfiguration <small>(sudo, system files, NFS...)</small>
 * Find a vulnerable service and exploit it <small>(apache, mysql...)</small>
 * Find processes/tasks/script in which you can inject data
-  * cron jobs
+  * cronjobs
   * executables with the SUID bit
   * ...
 * Find a vulnerability in the kernel

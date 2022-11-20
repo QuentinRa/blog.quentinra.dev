@@ -273,14 +273,14 @@
       },
       {
         "tag": "privilege-escalation/linux/index.md",
-        "name": "On Linux",
+        "name": "Linux Priv. Esc.",
         "desc": "",
         "icon": null,
         "hidden": false
       },
       {
         "tag": "privilege-escalation/windows/index.md",
-        "name": "On Windows",
+        "name": "Windows Priv. Esc.",
         "desc": "",
         "icon": null,
         "hidden": false
