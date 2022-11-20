@@ -73,6 +73,8 @@ CMD> type %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\
 * ➡️ Check the browser saved credentials
 
 * ➡️ Check the registry (need admin)
+
+* ➡️ There is [mimikatz/kiwi](https://github.com/gentilkiwi/mimikatz) (16.2k ⭐) to extract passwords from the memory. For instance, if there is a task running belonging to a user, even if they are not logged in, we can get their password.
 </div><div>
 
 * ➡️ List credentials saved by applications

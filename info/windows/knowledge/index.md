@@ -95,9 +95,10 @@ PS> cd \Users\xxx
 
 </div><div>
 
-I'm using below Unix Paths, because it's easier to write.
+I'm using below Unix Paths, because it's easier to write. See environment variables for the path, if it was changed.
 
 * root: `/`, which is usually `c:\ `
+* Windows root: usually `/Windows`
 * Find users files
     * `/Users`
     * `/Users/xxx/Desktop` (ex: user `xxx`)
@@ -112,13 +113,41 @@ I'm using below Unix Paths, because it's easier to write.
 
 ## Environment variables
 
-...
+<div class="row row-cols-md-2"><div>
+
+The syntax to display/use an environment variable is different.
+
+```bash
+# only in Powershell
+PS> ls Env: # list all
+PS> echo $Env:systemroot # print one
+PS> $Env:xxx = 'yyy' # set
+```
+
+```bash
+CMD> set # list all
+CMD> echo %windir% # print one
+```
+</div><div>
+
+Environment variables are
+
+* `PATH`: same use as on Linux
+* `PATHEXT`: extensions that you may omit in commands
+* `USERNAME`: current user
+* `SystemDrive`: location to system drive
+* `SystemRoot` / `windir`: location to Windows root
+* `ProgramFiles`: location to program files
+* `ProgramFiles(x86)`: location to program files
+* `APPDATA`: location to app data
+* `TEMP` / `TMP`: location to temp folder
+</div></div>
 
 <hr class="sep-both">
 
 ### Windows services
 
-You can use the commands next to each task to use/open them, and you can also enter the command inside "execute" (Win  ➕ R). Note that extension that you may see are such as ".exe", or ".msc" optional.
+You can use the commands next to each task to use/open them, and you can also enter the command inside "execute" (Win  ➕ R). Note that extension that you may see are such as ".exe", or ".msc" optional (see `PATHEXT`).
 
 <div class="row row-cols-md-2"><div>
 
