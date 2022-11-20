@@ -209,7 +209,7 @@ You can use the commands next to each task to use/open them, and you can also en
 
 **Windows Update** (`control /name Microsoft.WindowsUpdate`)
 
-A service looking for updates, downloading them, and asking <small>(or, forcing since Windows 10)</small> the user to install them. They are typically released on the 2nd Tuesday of each month (Patch Tuesday), unless there is an important patch.
+A service looking for updates, downloading them, and asking <small>(forcing since Windows 10)</small> the user to install them. They are usually released on the 2nd Tuesday of each month (Patch Tuesday).
 </div><div>
 
 **Windows security** / **Windows defender**

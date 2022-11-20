@@ -19,6 +19,8 @@ This is a program abstracting .NET Common Language Runtime (CLR), allowing us to
 
 ## Basic commands
 
+You can use `clear` to clear the terminal, and `gcm command` to find what cmdlet is your alias pointing to.
+
 <details class="details-e mt-4">
 <summary><code>Get-Help</code>: sort of linux man (<code>help</code>)</summary>
 
@@ -147,6 +149,15 @@ PS> Get-FileHash path_to_file -Algorithm MD5
 ```
 </details>
 </div><div>
+
+<details class="details-e">
+<summary><code>Get-FileHash</code>: fetch web resource (<code>wget/iwr</code>)</summary>
+
+```powershell
+PS> Invoke-WebRequest URL -o output
+PS> Invoke-WebRequest -uri URL -outfile output
+```
+</details>
 </div></div>
 
 <hr class="sr">

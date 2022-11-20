@@ -27,14 +27,28 @@ There are many **automated scripts** that will investigate usual places, service
 
 <hr class="sep-both">
 
-## 👻 TODO 👻
+## Learn more about your environment
 
-Stuff that I found, but never read/used yet.
+Aside from commands that are in the Windows notes, here are a few used in cybersecurity.
 
 <div class="row row-cols-md-2"><div>
 
-* [LOLBAS](https://github.com/LOLBAS-Project/LOLBAS) (4.8k ⭐): similar to GTFOBins on Linux, exploit the Windows executables
+* `ver` (cmd): see Windows version
+* `whoami`: see your username <small>(ex: `NT AUTHORITY\SYSTEM`=root)</small>
+* `whoami /groups`: see your groups
+* `hostname`: see hostname
+* `ipconfig`: network configuration
+* `netstat`: monitor network traffic
+* `systeminfo`: see infos about the system
 </div><div>
+
+* `Get-LocalGroup`: list groups (users, administrators...)
+* `Get-LocalUser`:list users
+* `net localgroup users`:list users in the group "users"
+* `net localgroup administrators`: list administrators
+* `net user username`: infos about an user
+
+> Change the keyboard language to French: `Set-WinUserLanguageList -LanguageList  fr-FR, en-US -force` ([source](https://stackoverflow.com/questions/56820526/how-to-change-keyboard-layout-in-windows-console-cmd-or-wsl)).
 </div></div>
 
 <hr class="sep-both">
@@ -202,4 +216,27 @@ Hackers can use that to store malicious code inside a file. They can execute it 
 More about it:
 
 * [Introduction to Alternate Data Streams](https://www.malwarebytes.com/blog/news/2015/07/introduction-to-alternate-data-streams)
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 TODO 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+Tools
+
+* [LOLBAS](https://github.com/LOLBAS-Project/LOLBAS) (4.8k ⭐): exploit Windows executables
+* [wmic](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wmic): a deprecated console since Windows 10 21H1
+
+Checklists
+
+* [UltimateAppLockerByPassList](https://github.com/api0cradle/UltimateAppLockerByPassList) (1.5k ⭐)
+* [Active Directory Exploitation Cheat Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet) (3.4k ⭐) + `winadbasics`
+</div><div>
+
+* `/Windows/System32/config/`: location where the Security Account Manager (**SAM**) database file is stored. This file is used to store users, their passwords, their groups... Modern versions of Windows use the NT hash format, commonly referred as NTLM, as the previous format was LM.
+* [Windows credential guard](https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-how-it-works)
 </div></div>

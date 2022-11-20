@@ -283,3 +283,17 @@ There are also premium solutions such as [leakcheck](https://leakcheck.io/), or 
 * [trailofbits](https://trailofbits.github.io/ctf/)
 * [lkmidas](https://lkmidas.github.io/)
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 TODO 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* GitHub Topics [redteam](https://github.com/topics/redteam), [blueteam](https://github.com/topics/blueteam), and [purpleteam](https://github.com/topics/purpleteam)
+</div><div>
+
+...
+</div></div>
