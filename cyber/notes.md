@@ -8,7 +8,7 @@
 
 ## Notes
 
-* CTF =  capture the flag
+* CTF = capture the flag
 
 <hr>
 
