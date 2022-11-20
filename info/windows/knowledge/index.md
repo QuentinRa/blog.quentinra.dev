@@ -32,9 +32,13 @@ You can start a CMD with the commands `cmd`/`cmd.exe`, and a powershell with the
 
 **Hint 1**
 
-To run administrative commands in a CMD/Powershell, you need to start it by right-clicking on it, and using "Run as administrator".
+⚠️⚠️ DANGER ⚠️⚠️. In PowerShell `where` is an alias of `Where-content`, but `where` is also a command in CMD. In such case, you need to call `where.exe` to use the CMD command, it's pretty tricky!!!
 
 **Hint 2**
+
+To run administrative commands in a CMD/Powershell, you need to start it by right-clicking on it, and using "Run as administrator".
+
+**Hint 3**
 
 You can open a CMD/powershell in a folder by using <kbd>SHIFT+Right-click</kbd> on the folder, then selecting "Open a Powershell here". Note that since Windows 11, you have to click on "More options" first...
 </div></div>

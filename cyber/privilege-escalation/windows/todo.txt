@@ -1,7 +1,3 @@
-* Windows installer files (-f msi -o malicious.msi)
-* Windows services are managed by the Service Control Manager (SCM).
-* `sc qc` (ahah, my steel moutain)
-* IN A EFFING CMD BITCH (otherwise: sc.exe)
 * Unquoted Service Paths
   * If there are space in the executable space
   * and there is an executable that can be created in the path of the service

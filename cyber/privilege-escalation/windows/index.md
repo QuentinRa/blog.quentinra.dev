@@ -33,7 +33,7 @@ Aside from commands that are in the Windows notes, here are a few used in cybers
 
 <div class="row row-cols-md-2"><div>
 
-* `ver` (cmd): see Windows version
+* `ver` (cmd-only): see Windows version
 * `whoami`: see your username <small>(ex: `NT AUTHORITY\SYSTEM`=root)</small>
 * `whoami /groups`: see your groups
 * `hostname`: see hostname
@@ -165,6 +165,46 @@ PS> schtasks /run /tn taskname
 
 <hr class="sep-both">
 
+## Windows Services
+
+<div class="row row-cols-md-2"><div>
+
+Windows services are managed by the Service Control Manager (SCM). You can use scripts such as winPEAS or PowerUp to list Windows services.
+
+* 🔎 Get more info about a service
+
+```java
+PS> sc.exe qc xxx // add .exe!!!
+CMD> sc qc xxx
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: xxx
+  [...]
+  BINARY_PATH_NAME   : C:\[...]\service.exe
+  [...]
+```
+
+In CTF, you are usually able to start/stop the service manually
+
+```bash
+PS> sc.exe stop xxx
+# do your job
+PS> sc.exe start xxx
+```
+
+</div><div>
+
+* ➡️ Insecure permissions: the current user may be able to replace the service with a malicious executable (ex: revshell.exe)
+
+```bash
+PS> icacls C:\[...]\service.exe
+PS> move C:\[...]\service.exe C:\[...]\service.exe.old
+PS> icacls C:\[...]\malicious.exe /grant Everyone:F
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Volume Shadow Copy Service (VSS)
 
 <div class="row row-cols-md-2"><div>
@@ -216,6 +256,22 @@ Hackers can use that to store malicious code inside a file. They can execute it 
 More about it:
 
 * [Introduction to Alternate Data Streams](https://www.malwarebytes.com/blog/news/2015/07/introduction-to-alternate-data-streams)
+</div></div>
+
+<hr class="sep-both">
+
+## Random
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+* ➡️ **AlwaysInstallElevated**: it's possible that an admin allowed programs to be installed without needed Administrator privilege, i.e. without the User Account Control (UAC) popup. If both are set, then you found a golden fish 🎣
+
+```java
+PS> reg query HKCU\SOFTWARE\Policies\Microsoft\Windows\Installer
+PS> reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer
+PS> msiexec /quiet /qn /i $Env:TMP\malicious.msi
+```
+</div><div>
 </div></div>
 
 <hr class="sep-both">

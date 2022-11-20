@@ -63,6 +63,68 @@ $ sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/
 
 <hr class="sep-both">
 
+## Learn more about your environment
+
+Aside from commands that are in the Linux notes, here are a few used in cybersecurity.
+
+<div class="row row-cols-md-2"><div>
+
+* `w`: who is logged in, and what they are doing
+* `who`: who is logged in
+* `echo $0`: language used by the current shell
+* `whoami`: username
+* `last`: list of last logged users
+* `id`: username, group...
+* `groups`: list groups
+* `uname -a`: info about the kernel
+* `hostname`: info about the host <small>(ex: `website-dev` -> role of the user)</small>
+* `ps -e`: see every running process
+* `env`: see environment variables
+* `umask`: see the default perms on newly created files
+* `finger`: return a summary of information about a user
+
+**Potentially vulnerable services** 💸
+
+* Apache: `apache2 -v` / `apache2ctl -M`
+* Sudo: `sudo -V`
+* PostgresSQL: `psql -V`
+* MySQL: `mysql --version`
+</div><div>
+
+System Files 🔏
+
+* `/proc/version`: information about the machine
+* `/etc/*release`: information about the operating system
+* `/etc/issue`: alternative to find the OS/version
+* `/etc/passwd`: usernames, their groups, their home, and their shell
+* `/etc/shadow` <small>(root)</small>: username, and their hashed password
+* `/etc/sudoers` <small>(root)</small>: sudoers, and rules applied to them, if any
+
+User files 🍃
+
+* `ls -ahl /root/`: see if there are readable files in root's home
+* `ls /`: look for unexpected folders in `/`
+* `find / -name *id_dsa* 2> /dev/null`: RSA credentials
+* `~/.bash_history`: password (sudo/mysql...)
+* Look for backups <small>(.bak, .old...)</small>
+
+Others 🔎
+
+* Look for mails `/var/mail/`
+* Look for logs `/var/log/`
+  * Look for firewall logs (`/var/log/syslog`)
+  * Look for apache/... logs
+  * Look for fail2ban logs
+  * Look for ssh logs (`/var/log/auth.log`)
+* `/etc/services`: see ports and the services running on it
+* `/etc/profile`: set environment variables...
+
+</div></div>
+
+> **NOTE**: don't forget to redirect any errors with `some_command 2> /dev/null`.
+
+<hr class="sep-both">
+
 ## Exploit sudo
 
 *A good reference to exploit sudo: [SUDO_KILLER](https://github.com/TH3xACE/SUDO_KILLER)* (1.6k ⭐).
@@ -112,6 +174,7 @@ There are basic scenarios in which you can directly exploit the executable, but 
 
 * edit the environment variables
 * edit the files used by the program
+* create a file named after the options of the command, so that when a vulnerable glob-pattern is replaced, you will actually inject options
 * ...
 
 For instance, if a script using the command `ls` and the environment variable `PATH` with the value `/tmp:[...]`, then because you can write in `/tmp`, you can create an executable named `ls` which is actually a `bash`. When the script run as root is executed, the command bash is executed as root, and your escalation is done.
@@ -315,5 +378,23 @@ There are scripts, but remember that they may generate false positives or false 
 <div class="row row-cols-md-2"><div>
 
 The Fork bomb is an attack wherein a process continually replicates itself to deplete available system resources, according to [Wikipedia](https://en.wikipedia.org/wiki/Fork_bomb).
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 TODO 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+Courses
+
+* [payatu.com](https://payatu.com/guide-linux-privilege-escalation)
+* [udemy.com](https://www.udemy.com/course/linux-privilege-escalation/)
+* [tbhaxor.com](https://tbhaxor.com/exploiting-suid-binaries-to-get-root-user-shell/) (SUID)
+* [rafalcieslak](https://rafalcieslak.wordpress.com/2013/04/02/dynamic-linker-tricks-using-ld_preload-to-cheat-inject-features-and-investigate-programs/) (LD_PRELOAD)
+* [g0tmi1k.com](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)
 </div><div>
 </div></div>
