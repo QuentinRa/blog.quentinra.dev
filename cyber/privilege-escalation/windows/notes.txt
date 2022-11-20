@@ -55,12 +55,6 @@ Infos on a Local Machine
 > **Get help**: `help command`, `command help`, `command /?`, or `command /help`.
 </div></div>
 
-<hr class="sep-both">
-
-## Windows environment
-
-*Note that you may not be able to use Linux paths such as `/` instead of `c:\\`, as I'm using bellow.*
-
 **Windows files** <small>(it may not be `/Windows`, see `$Env:windir`/`$Env:systemroot`)</small>
 
 * in a file explore, enter `%windir%` (or `%systemroot%`)

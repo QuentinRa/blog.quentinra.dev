@@ -16,6 +16,31 @@ Some dates about the latest versions
 
 <hr class="sep-both">
 
+## Windows console
+
+<div class="row row-cols-md-2"><div>
+
+You can run commands on Windows inside a **CMD** (Command Prompt), or inside a **Powershell** (see [Powershell](../powershell/index.md)). The latter is an improved version of the former, which is retro compatible, meaning commands working in a CMD are, ⚠️for most ⚠️, working inside a powershell.
+
+The syntax used **on this website** (📌) is that commands starting with the prompt
+
+* `PS>` are working in both a CMD or a Powershell
+* `CMD>` are only working in a CMD
+
+You can start a CMD with the commands `cmd`/`cmd.exe`, and a powershell with the commands `powershell`/`powershell.exe`.
+</div><div>
+
+**Hint 1**
+
+To run administrative commands in a CMD/Powershell, you need to start it by right-clicking on it, and using "Run as administrator".
+
+**Hint 2**
+
+You can open a CMD/powershell in a folder by using <kbd>SHIFT+Right-click</kbd> on the folder, then selecting "Open a Powershell here". Note that since Windows 11, you have to click on "More options" first...
+</div></div>
+
+<hr class="sep-both">
+
 ## Permissions, and users
 
 <div class="row row-cols-md-2"><div>
