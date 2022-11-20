@@ -18,7 +18,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-As there isn't much we can do as a regular user, we will try to elevate our level of privileges to root (administrator). You may have to do lateral movement first, i.g. moving to another account that has the same level of privilege, but may have different permissions.
+As there isn't much we can do as a regular user, we will try to elevate our level of privileges to root (administrator). You may have to do horizontal escalation first, i.g. moving to another account that has the same level of privilege, but may have different permissions.
 
 * Find misconfiguration <small>(sudo, system files, NFS...)</small>
 * Find a vulnerable service and exploit it <small>(apache, mysql...)</small>
@@ -28,6 +28,8 @@ As there isn't much we can do as a regular user, we will try to elevate our leve
   * ...
 * Find a vulnerability in the kernel
 * ...
+
+The **goal is to pop out a bash as root** (root bash), basically, the same as if the administrator used `sudo -s`.
 
 </div><div>
 
@@ -93,7 +95,7 @@ It's possible for the administrator to only allow a command/multiple commands to
 
 [![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 
-If a user was allowed to run one specific command using sudo, such as `tar`, then it was possible for any other user to impersonate the authorized user, and run the command as root.
+If a user was allowed to run one specific command using sudo, such as `tar`, then it was possible for any other user to impersonate the authorized user, and run the command as root too.
 
 ```bash
 $ sudo -u#-1 tar [...]
@@ -196,6 +198,27 @@ If the script **hand-made**, or **not on GTFOBins**, then you can use the comman
 * `strings script`: extract every readable string, may not be installed
 
 You may be able to make the script do what you want by editing environment variables or files that it uses.
+</div></div>
+
+<hr class="sep-both">
+
+## Capabilities
+
+<div class="row row-cols-md-2"><div>
+
+Capabilities are a level below SUID/GUID permissions. It's possible for an administrator to allow an executable to use some "features" that usually would require root privileges <small>(ex: creating sockets, creating raw TCP packets...)</small>.
+
+Find executables with capabilities
+
+```bash
+$ getcap -r / 2>/dev/null
+```
+</div><div>
+
+Then, 
+
+* Look for the executable on [GTFOBins](https://gtfobins.github.io/#+capabilities)
+* Use the same techniques that for SUID/GUID files not on GTFOBins
 </div></div>
 
 <hr class="sep-both">

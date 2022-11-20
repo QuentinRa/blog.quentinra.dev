@@ -12,10 +12,6 @@ https://tryhackme.com/room/linprivesc
 => If there are tools not installed on your target: https://github.com/andrew-d/static-binaries
 => hint/notes
 => network
-=> capabilities
-=> `getcap -r / 2>/dev/null`
-=> gtfobins
-* if no_root_squash present
 * Another alternative to this program, is to create a suite file with a copy of bash.
 
 ```c

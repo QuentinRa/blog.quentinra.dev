@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-There isn't much you can do as a regular user, so **Privilege escalation** is the main goal. It refers to the process of obtaining super-administrator (a.k.a. root on Linux, Administrator on Windows) privileges, starting from a regular user. You can escalate **horizontally/laterally** (use another user) and **vertically** (get a higher level of privileges).
+There isn't much you can do as a regular user, so **Privilege escalation** is the main goal. It refers to the process of obtaining super-administrator (a.k.a. root on Linux, Administrator on Windows) privileges, starting from a regular user. You can escalate **horizontally**/laterally (use another user) and **vertically** (get a higher level of privileges).
 
 Once you are admin, you will be able to do things such as
 
