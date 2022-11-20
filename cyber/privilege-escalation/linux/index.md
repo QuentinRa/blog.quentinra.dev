@@ -85,6 +85,7 @@ $ cat /etc/shadow
 # if you can write it: add a new user that is part of root group
 # (copy a password / generate one mkpasswd -m sha-512 toto)
 ```
+</div><div>
 
 Until 1979/Unix V7, passwords were stored in `/etc/passwd`, so a regular user could read them, and try brute-forcing the password.
 
@@ -94,15 +95,19 @@ $ cat /etc/shadow
 + root:hashed_password:...
 # openssl passwd toto
 ```
-</div><div>
+</div></div>
 
-**SUID/GUID**
+<hr class="sep-both">
+
+## SUID/GUID bit
 
 [![vulnversity](../../_badges/thm-p/vulnversity.svg)](https://tryhackme.com/room/vulnversity)
 [![kenobi](../../_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
 [![rrootme](../../_badges/thm-p/rrootme.svg)](https://tryhackme.com/room/rrootme)
 
-Scripts having the SUID bit can be executed with the permissions of their owner. GUID is the same, but using the owner group permissions. If you find one, try to see on GTFOBins if you have a well-known way to exploit it.
+<div class="row row-cols-md-2"><div>
+
+Scripts having the SUID bit can be executed with the permissions of their owner. GUID is the same with the group owner permissions. If you find interesting files using find, check them out on GTFOBins.
 
 ```bash
 # "-04000" "-4000" | "-4001"
@@ -111,10 +116,14 @@ $ find / -perm -u=s -type f -ls 2>/dev/null
 $ find / -perm -g=s -type f -ls 2>/dev/null
 ```
 
-If the script "hand-made", or not something on GTFOBins, then you can use `strace script`, and `strings script`. Both commands can be used if the script is "unreadable", to try to find what the script is doing, and maybe find Paths/Environment variables that you may have the permission to edit.
-
 > **CVE-2021-4034**: `/usr/bin/pkexec` a file installed by default on
 every major Linux distribution with a **SUID bit** could be exploited to get root. See [arthepsy PoC](https://github.com/arthepsy/CVE-2021-4034) (913 ⭐), or [berdav PoC](https://github.com/berdav/CVE-2021-4034) (1.7k ⭐).
+</div><div>
+
+If the script **hand-made**, or **not on GTFOBins**, then you can use the commands below to hopefully find which files and environment variables the script is using
+
+* `strace script`: see every system call
+* `strings script`: extract every readable string, may not be installed
 </div></div>
 
 <hr class="sep-both">
@@ -138,7 +147,7 @@ Matching Defaults entries for [...]:
     [...] # try to exploit values here (LD_PRELOAD...)
 
 User [...] may run the following commands on [...]:
-    (root) /bin/tar # see GTFOBins for sudo exploit
+    (root) /bin/tar # see tar#sudo on GTFOBins
 ```
 </div><div>
 
