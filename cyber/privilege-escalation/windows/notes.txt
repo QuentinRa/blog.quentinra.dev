@@ -61,44 +61,11 @@ Infos on a Local Machine
 
 *Note that you may not be able to use Linux paths such as `/` instead of `c:\\`, as I'm using bellow.*
 
-<div class="row row-cols-md-2"><div>
-
-**Look for (sensitive?) information** 🔑
-
-* `cd /`: the root, maybe you will find something interesting?
-* `/Users`: usually, each folder is associated with a user
-  * `/Users/xxx/Desktop`
-  * `/Users/xxx/Documents`
-  * You should also check the trash-box
-* Maybe check `%appdata%`
-
-<br>
-
 **Windows files** <small>(it may not be `/Windows`, see `$Env:windir`/`$Env:systemroot`)</small>
 
 * in a file explore, enter `%windir%` (or `%systemroot%`)
 * `/Windows/System32/config/`: location where the **Security Account Manager** (**SAM**) database file is stored. This file is used to store users, their passwords, their groups... Modern versions of Windows use the NT hash format, commonly referred as NTLM, as the previous format was LM.
 </div><div>
 
-**Windows services** <small>(usually use "Win✖️R" to open one)</small>. These are shortcuts to find in one action the menu you are looking for. Note that extension such as ".exe", or ".msc" are optional.
-
-* `lusrmgr.msc`: list of users/groups
-* `msconfig`: see services, manage system configurations
 * `lsass` is responsible for authentication within Windows. There is [mimikatz/kiwi](https://github.com/gentilkiwi/mimikatz) (16.2k ⭐) to extract passwords from the memory. For instance, if there is a task running belonging to a user, even if they are not logged in, we can get their password.
-* `winver`: show Windows version+build, and licence holder.
-* `control system`: open system info (Device/Windows specifications)
-* `msinfo32`: system info (raw, can search) + hardware and services
-* `UserAccountControlSettings`: change UAC settings
-* `compmgmt` is responsable for managing **shares**, **running tasks**, **listing events** ([doc](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types), monitor performance (`perfmon`/`resmon`), or even manage device hardware/services.
-* `regedt32/regedit`: open Windows registry, a database used to store information needed to configure the system for users/applications/devices <small>(ports in use, applications...)</small>. See the [doc](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users).
 </div></div>
-
-<hr class="sep-both">
-
-## Windows privilege escalation
-
-<div class="row row-cols-md-2"><div>
-
-Privilege escalation refer to a process of obtaining super-administrator (a.k.a. Administrator) privileges, starting from a regular user.
-
-* [LOLBAS](https://github.com/LOLBAS-Project/LOLBAS) (4.8k ⭐): similar to GTFOBins on Linux, exploit the Windows executables

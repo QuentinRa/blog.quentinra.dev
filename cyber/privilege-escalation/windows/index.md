@@ -27,6 +27,18 @@ There are many **automated scripts** that will investigate usual places, service
 
 <hr class="sep-both">
 
+## 👻 TODO 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [LOLBAS](https://github.com/LOLBAS-Project/LOLBAS) (4.8k ⭐): similar to GTFOBins on Linux, exploit the Windows executables
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Windows exploits
 
 <div class="row row-cols-md-2 mt-4"><div>
@@ -83,6 +95,20 @@ PS> reg query HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\ /f "Proxy" 
 PS> type C:\xampp\FileZilla Server\FileZilla Server.xml
 PS> type C:\Program Files\FileZilla Server\FileZilla Server.xml
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Look for (sensitive?) information 🔑
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+* ➡️ Check the root folder
+
+* ➡️ Check users desktop/documents
+</div><div>
+
+* ➡️ Check `%appdata%`
 </div></div>
 
 <hr class="sep-both">
