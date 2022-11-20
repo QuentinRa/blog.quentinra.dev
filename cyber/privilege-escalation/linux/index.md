@@ -85,17 +85,19 @@ Matching Defaults entries for [...]:
 User [...] may run the following commands on [...]:
     (root) /bin/tar # see tar#sudo on GTFOBins
 ```
+
+It's possible for the administrator to only allow a command/multiple commands to be run as root by a user. This is the case with `tar` above. If you can see `ALL`, then you can run any command as root. 
 </div><div>
 
 **sudo before 1.8.28 (CVE-2019-14287)**
 
 [![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 
-If a user was allowed to run one specific command using sudo, such as `nc`, then it was possible for any user to bypass the check, and run the command as root.
+If a user was allowed to run one specific command using sudo, such as `tar`, then it was possible for any other user to impersonate the authorized user, and run the command as root.
 
 ```bash
-$ sudo -u#-1 nc
-$ sudo -u#4294967295 nc
+$ sudo -u#-1 tar [...]
+$ sudo -u#4294967295 tar [...]
 ```
 </div></div>
 
@@ -105,7 +107,15 @@ $ sudo -u#4294967295 nc
 
 <div class="row row-cols-md-2"><div>
 
-The environment refer to the environment variable, the file system, pretty much anything that a script/command/executable will use while running (ex: `sudo`).
+In a lot of cases (SUID/GUID, sudo, capabilities...), you may have to use the trick of editing the environment. In all the cases listed, a **regular user** is allowed to run an executable/command/script **as root**.
+
+There are basic scenarios in which you can directly exploit the executable, but in other scenarios, you may have to exploit the environment, meaning
+
+* edit the environment variables
+* edit the files used by the program
+* ...
+
+For instance, if a script using the command `ls` and the environment variable `PATH` with the value `/tmp:[...]`, then because you can write in `/tmp`, you can create an executable named `ls` which is actually a `bash`. When the script run as root is executed, the command bash is executed as root, and your escalation is done.
 </div><div>
 
 **Bash versions <4.2-048**: it is possible to create functions named after a path, which allow us to execute a command instead. If the path is accessed by a script, then using `-p`, we can create a bash while inheriting the permissions of its creator.
@@ -184,6 +194,8 @@ If the script **hand-made**, or **not on GTFOBins**, then you can use the comman
 
 * `strace script`: see every system call
 * `strings script`: extract every readable string, may not be installed
+
+You may be able to make the script do what you want by editing environment variables or files that it uses.
 </div></div>
 
 <hr class="sep-both">
