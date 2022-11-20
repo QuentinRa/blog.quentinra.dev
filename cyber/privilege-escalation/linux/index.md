@@ -13,162 +13,53 @@
 [![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 [![linprivesc](../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
+[![linux_privilege_escalation](../../_badges/poat/linux_privilege_escalation.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md)
 </p>
 
-<hr class="sep-both">
-
-## Linux handy commands
-
 <div class="row row-cols-md-2"><div>
 
-Explore the host
-
-* `bash`: start a bash shell
-* `cd`: move to another folder
-* `ls`: list files in a folder
-* `pwd`: path to the current directory
-* `cat`: print (usually small) files
-* `less`: read (usually big) files
-* `chmod`: change permissions
-* `chown`: change owner
-* `find`: find a file/folder
-* `grep/egrep`: find something in a file
-* `su`: change user
-* `wget`: download something
-
-> You may use python to do things for you, such as starting a web server to browse files <small>(`python3 -m  http.server`)</small>, or run commands <small>(`python -c 'import pty; pty.spawn("/bin/bash")'`)</small>.
-</div><div>
-
-Learn more about your environment
-
-* `w`: who is logged in, and what they are doing
-* `who`: who is logged in
-* `echo $0`: language used by the current shell
-* `whoami`: username
-* `last`: list of last logged users
-* `id`: username, group...
-* `uname -a`: info about the kernel
-* `hostname`: info about the host <small>(can be used to find the role of the user such as `website-dev`)</small>
-* `ps`: see running processes
-* `env`: see environment variables
-* `umask`: see the default perms on newly created files
-* `getent`: shortcut to get entries about something, such as `passwd`
-* `finger`: return a summary of information about a user
-</div></div>
-
-<hr class="sep-both">
-
-## Linux environment
-
-<div class="row row-cols-md-2 mt-3"><div>
-
-**Learn more about your computer** 🗺️
-
-* `/proc/version`: information about the machine <small> (processes, kernel version, is gcc/... installed?)</small>
-* `/etc/*release`: information about the operating system
-* `/etc/issue`: alternative to find the OS/version
-
-**Look for (sensitive?) information** 🔑
-
-* `/etc/passwd`: usernames, their groups, their home, and their shell
-* `/etc/shadow` <small>(root)</small>: username, and their hashed password
-* `/etc/group` or `groups`: see groups
-* `/etc/gshadow` <small>(root)</small>: groups hashed passwords (if any)
-* `/etc/sudoers` <small>(root)</small>: sudoers, and rules applied to them, if any
-* `ls -ahl /root/`: see if there are readable files in root's home
-* `ls /`: look for unexpected folders in `/`
-* `find / -name *id_dsa* 2> /dev/null`: RSA credentials
-  * You can use `ssh -i key` to connect using a key
-  * The key must have the permissions `u+rw` at least
-  * You can try to crack it
-
-<br>
-
-**There may be useful things in logs** 🔎 
-
-* Check browser history + saved credentials
-* `~/.bash_history`: there may be something useful in the bash_history
-  * Look for calls to sudo
-  * Look for calls to services (mysql...)
-* Look for backups <small>(such as emails/conversations/database)</small>
-* Look for mails `/var/mail/`
-* `/var/log/` (folder): log files
-  * Look for firewall logs (`/var/log/syslog`)
-  * Look for apache/... logs
-  * Look for fail2ban logs
-  * Look for ssh logs (`/var/log/auth.log`)
-</div><div>
-
-**Cron tasks** ⭐
-
-Cron are the name given to automated tasks on Linux. See `crontab -l` for the tasks of the current user, and `ls -la /etc/cron*` for every cron tasks. Then, you may look for vulnerable cron tasks, meaning tasks using
-
-* files that you can edit, 
-* environment variables using paths/... that you can edit,
-* glob-patterns that you may inject, for instance, if a command runs on a directory in which you can create files, you can create files named after the injectable command line flags.
-
-<br>
-
-**Potentially vulnerable services** 💸
-
-* Apache: `apache2 -v` / `apache2ctl -M` / `httpd -v`
-* Sudo: `sudo -V`
-* PostgresSQL: `psql -V`
-* MySQL: `mysql --version`
-* NFS: see if there are shares, and if root_squashing is enabled
-
-Once you found a service, look for CVE for the given version, and try to use one to escalate to root.
-
-<br>
-
-**Other files that may be useful** 🚪
-
-* `/etc/services`: see ports and the services running on it
-* `/etc/profile`: set environment variables...
-
-</div></div>
-
-> **NOTE**: don't forget to redirect any errors with `some_command 2> /dev/null`.
-
-<hr class="sep-both">
-
-## Linux privilege enumeration
-
-<div class="row row-cols-md-2"><div>
-
-Privilege escalation refer to a process of obtaining super-administrator (a.k.a. root) privileges, starting from a non-root user.
+As there isn't much we can do as a regular user, we will try to elevate our level of privileges to root (administrator). You may have to do lateral movement first, i.g. moving to another account that has the same level of privilege, but may have different permissions.
 
 * Find misconfiguration <small>(sudo, system files, NFS...)</small>
 * Find a vulnerable service and exploit it <small>(apache, mysql...)</small>
 * Find processes/tasks/script in which you can inject data
   * cron jobs
-  * script/.so/... with the SUID bit
+  * executables with the SUID bit
   * ...
-* Find if you can exploit the kernel
+* Find a vulnerability in the kernel
 * ...
 
-See guides
-
-* [PayloadsAllTheThings / Linux Privilege Escalation](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md)
-* [Basic Linux Privilege Escalation](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)
 </div><div>
-
-Find vulnerabilities in binaries.
-
-* [gtfobins](https://gtfobins.github.io/) (7.4k ⭐): a **reference** 🎁 to find ways to get root with a misconfigured command. I'm adding [some extra here](gtfobins.md).
-* [gtfo](https://github.com/t0thkr1s/gtfo) (96 ⭐): a python script to browse locally, a most-likely, outdated, version of gtfobins.
 
 There are many scripts **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
 
-* [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) (10.4k ⭐): a script shell
-* [LinEnum](https://github.com/rebootuser/LinEnum) (5.4k ⭐): a script shell
-* [traitor](https://github.com/liamg/traitor)  (5.4k ⭐): a script in Go
-* [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) (lse, 2.5k ⭐): a script shell
-* [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) (1.1k ⭐): a python script
+* [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) (10.4k ⭐): enumerate host | script shell
+* [LinEnum](https://github.com/rebootuser/LinEnum) (5.4k ⭐): enumerate host | script shell
+* [traitor](https://github.com/liamg/traitor)  (5.4k ⭐): enumerate/exploit host | script in go
+* [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) (lse, 2.5k ⭐): enumerate host | script shell
+* [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) (1.1k ⭐): enumerate host | python script
+</div></div>
 
-Random stuff that may be useful
+<hr class="sep-both">
 
-* [pspy](https://github.com/DominicBreuker/pspy) (3.2k ⭐): monitor linux processes without root permissions
+## 🎁 GTFOBins 🎁
+
+<div class="row row-cols-md-2"><div>
+
+It's common for well-known Linux commands to be misconfigured. Vulnerabilities can lead to reading/writing root-only files, execute commands as root...
+
+**[gtfobins](https://gtfobins.github.io/)** (7.4k ⭐) is the reference when looking for commands to exploit misconfigured Linux commands.
+
+> There is a local version of [gtfo in Python](https://github.com/t0thkr1s/gtfo) (96 ⭐, 2021).
+</div><div>
+
+Example: you can only run `tar` using `sudo`. Run the command below from [GTFOBins](https://gtfobins.github.io/gtfobins/tar/#sudo), and you will get a bash as root.
+
+```bash
+$ sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
+```
+
+> I'm adding [some extras here](gtfobins.md).
 </div></div>
 
 <hr class="sep-both">

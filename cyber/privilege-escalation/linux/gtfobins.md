@@ -4,17 +4,17 @@ Some scripts, utilities, notes... complementary to GTFOBins.
 
 <hr class="sep-both">
 
-## ⚡ Create a bash from a suid program
+## ⚡ Create a root bash
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-* ➡️ Version 1 : create a SUID file
+* ➡️ Version 1: with root executing 2 commands
 
 ```bash
 $ cp /bin/bash /tmp/rootbash
 ```
 
-Make the SUID program run the following commands.
+Run **as root** (SUID executable, sudo...) the commands
 
 ```bash
 $ chown root /tmp/rootbash
@@ -59,6 +59,6 @@ Calls
 ```bash
 $ chmod +x script.sh
 $ ./script.sh id
-$ ./script.sh ls -la
+$ ./script.sh ls -laR /root
 ```
 </div></div>
