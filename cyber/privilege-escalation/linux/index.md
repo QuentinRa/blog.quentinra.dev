@@ -1,7 +1,5 @@
 # Compromise a Linux host
 
-<p>
-
 [![linuxfundamentalspart1](../../_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 [![linuxfundamentalspart2](../../_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 [![linuxfundamentalspart3](../../_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
@@ -14,7 +12,6 @@
 [![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 [![linprivesc](../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![linux_privilege_escalation](../../_badges/poat/linux_privilege_escalation.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md)
-</p>
 
 <div class="row row-cols-md-2"><div>
 
@@ -33,7 +30,7 @@ The **goal is to pop out a bash as root** (root bash), basically, the same as if
 
 </div><div>
 
-There are many scripts **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
+There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
 
 * [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) (10.4k ⭐): enumerate host | script shell
 * [LinEnum](https://github.com/rebootuser/LinEnum) (5.4k ⭐): enumerate host | script shell
