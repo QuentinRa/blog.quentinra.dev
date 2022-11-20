@@ -116,6 +116,13 @@
         "hidden": false
       },
       {
+        "tag": "windows/active-directory/index.md",
+        "name": "Active Directory",
+        "desc": "It's used by organisations to manage computers/users/...",
+        "icon": null,
+        "hidden": false
+      },
+      {
         "tag": "windows/linux/index.md",
         "name": "Linux on Windows",
         "desc": "Knowledge related to using Linux on Windows.",

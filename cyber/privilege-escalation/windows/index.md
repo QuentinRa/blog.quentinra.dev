@@ -111,6 +111,25 @@ PS> schtasks /run /tn taskname
 
 <hr class="sep-both">
 
+## Volume Shadow Copy Service (VSS)
+
+<div class="row row-cols-md-2"><div>
+
+The Volume Shadow Copy Service (VSS) is handling the creation, and management of **shadow copies**/**snapshot** of the data backed up.  They are stored in the volume information of each drive that has the feature enabled.
+
+They may allow a system admin to restore the system after an attack. So, hackers will most likely check them, and delete them. There may exist a "offline" version of these shadow copies.
+</div><div>
+
+To manage them
+
+* Right-click on a hard-drive
+* Select Shadow copies
+
+> See [Volume Shadow Copy Service](https://learn.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service)
+</div></div>
+
+<hr class="sep-both">
+
 ## Alternate Data Streams (ADS)
 
 <div class="row row-cols-md-2"><div>
