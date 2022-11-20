@@ -1,7 +1,0 @@
-https://tryhackme.com/room/blue
-https://tryhackme.com/room/ice
-=> metasploit Windows
-
-https://tryhackme.com/room/blaster
-=> vuln in windows dialog
-=> metasploit
