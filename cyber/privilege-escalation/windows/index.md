@@ -27,6 +27,18 @@ There are many **automated scripts** that will investigate usual places, service
 
 <hr class="sep-both">
 
+## Windows exploits
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+* ➡️ Exploit User Account Control (UAC) which is the popup prompted when trying to run a program as administrator. 
+
+> See [CVE-2019-1388](https://github.com/nobodyatall648/CVE-2019-1388).
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Find credentials
 
 <div class="row row-cols-md-2 mt-4"><div>
