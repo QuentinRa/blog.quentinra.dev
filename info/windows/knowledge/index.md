@@ -93,7 +93,7 @@ When there is a need for a user to elevate, Windows will show the User Account C
 
 **Permissions** ([doc](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb727008(v=technet.10)#understanding-file-and-folder-permissions))
 
-Windows has 7 categories of permissions: Read, Write, Read & Execute, List Folder Contents, Modify, Full Control (**F**).
+Windows has 7 categories of permissions: Read, Write <small>(**AD**: create directory, **WD**: create file)</small>, Read & Execute <small>(**RX**)</small>, List Folder Contents, Modify, Full Control <small>(**F**)</small>.
 
 Permissions are controlled by Discretionary Access Control List (DACLs), see the `icacls` command.
 

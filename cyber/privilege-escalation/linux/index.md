@@ -132,6 +132,7 @@ Others 🔎
 <div class="row row-cols-md-2"><div>
 
 [![picklerick](../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
+[![linprivesc](../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
 
 Try to find commands that can be run with sudo
 
@@ -196,7 +197,7 @@ $ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/; chmod +xs /tmp/bash)' ./scr
 
 <hr class="sep-both">
 
-## Misconfigured permissions
+## Misconfigured files
 
 <div class="row row-cols-md-2"><div>
 
@@ -236,6 +237,7 @@ $ cat /etc/shadow
 [![vulnversity](../../_badges/thm-p/vulnversity.svg)](https://tryhackme.com/room/vulnversity)
 [![kenobi](../../_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
 [![rrootme](../../_badges/thm-p/rrootme.svg)](https://tryhackme.com/room/rrootme)
+[![linprivesc](../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
 
 <div class="row row-cols-md-2"><div>
 

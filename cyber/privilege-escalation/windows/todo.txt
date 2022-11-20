@@ -1,8 +1,0 @@
-* Unquoted Service Paths
-  * If there are space in the executable space
-  * and there is an executable that can be created in the path of the service
-  * then the executable will be executed with the rest of the path as arguments
-  * AD and WD privileges, allowing the user to create subdirectories and files
-  * https://askubuntu.com/questions/1075098/remmina-scaling-options
-* Insecure Service Permissions
-* XXX

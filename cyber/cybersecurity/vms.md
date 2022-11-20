@@ -85,6 +85,7 @@ Notes about Virtual Machine, Emulator, along with links to download CTF Virtual 
   * `sudo apt install seclists` to install [SecLists](https://github.com/danielmiessler/SecLists/) wordlists.
 * Notes
   * Use the right-arrow to use the suggested command
+  * In the top-right corner, you can find your IP address (tun0)
 
 **BlackArch** 😶‍🌫️
 

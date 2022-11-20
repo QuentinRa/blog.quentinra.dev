@@ -238,6 +238,8 @@ $ john --config=FILE
 
 ## Linux shadow hash cracking
 
+[![linprivesc](../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
+
 <div class="row row-cols-md-2"><div>
 
 Modern Linux are using `sha512crypt`. Use name-that-hash, or any other tools to find the format if needed. The easy way is only passing the hash of the user you want
