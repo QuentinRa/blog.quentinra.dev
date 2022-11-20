@@ -90,6 +90,48 @@ There are a lot of online websites that have big databases with ton of hashes an
 
 <hr class="sep-both">
 
+## Generate Hash 🔑
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+* ➡️ Using `mkpasswd`
+
+```bash
+$ mkpasswd -m help
+bcrypt          bcrypt
+sha512crypt     SHA-512
+sha256crypt     SHA-256
+md5crypt        MD5
+nt              NT-Hash
+[...]
+$ mkpasswd -m sha512crypt toto
+# your hash
+```
+</div><div>
+
+* ➡️ Using `openssl`
+
+```bash
+$ openssl list --digest-commands
+md4 md5 sha1 [...]
+$ echo -n "toto" | openssl dgst -md5
+$ openssl dgst -md5 <<< "toto" # bash-only
+# your hash
+```
+
+* ➡️compute and check XXX message digest ([gnu](https://www.gnu.org/software/coreutils/manual/html_node/Summarizing-files.html))
+
+```bash
+# you can also use echo -n with a pipe
+$ sha1sum <<< "toto"
+$ md5sum <<< "toto"
+$ sha256sum <<< "toto"
+$ sha512sum <<< "toto"
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## hashcat
 
 <div class="row row-cols-md-2"><div>

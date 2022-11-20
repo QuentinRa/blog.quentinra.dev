@@ -283,6 +283,8 @@ Network File System (NFS) is a protocol allowing a computer to mount a remote fo
 #  sudo apt install nfs-common
 $ mkdir /tmp/share
 $ sudo mount -t nfs IP:/share /tmp/share/ -nolock
+# there is also variants (with/without vers=2): 
+# sudo mount -o rw,vers=2 IP:/share /tmp/share/
 # unmount
 $ sudo umount /tmp/share
 ```

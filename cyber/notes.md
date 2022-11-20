@@ -6,6 +6,12 @@
 
 <hr>
 
+## Oh... no...
+
+* https://github.com/rmusser01/Infosec_Reference
+
+<hr>
+
 ## Prev esc
 
 https://tryhackme.com/room/linprivesc
