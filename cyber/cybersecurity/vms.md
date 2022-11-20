@@ -83,6 +83,8 @@ Notes about Virtual Machine, Emulator, along with links to download CTF Virtual 
   * You may find wordlist in `/usr/share/wordlists/`
   * Run `wordlists` and press Y to extract `rockyou.txt`
   * `sudo apt install seclists` to install [SecLists](https://github.com/danielmiessler/SecLists/) wordlists.
+* Notes
+  * Use the right-arrow to use the suggested command
 
 **BlackArch** 😶‍🌫️
 

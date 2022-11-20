@@ -103,11 +103,9 @@ Others
 * FTP do not seem to work with path (to upload with put, but it works if you start FTP in the directory where the file is)
 * Press F12 to go back to penelope UI. You can use upload/download. Go back with `interact 1`
 * wireshark `.pcapng`. Then right-click on interesting packets, and click on "follow TCP Stream"
-* crontab for a user (`ls /var/spool/cron/crontabs/root` root). https://github.com/DominicBreuker/pspy
 * Proper name for this section whelp 😭
 
 --- https://tryhackme.com/room/allinonemj 🐍🐍🐍
 
-* Kali right-arrow
 * Test: `wpscan --url http://10.10.162.222/wordpress/ --detection-mode aggressive`
 * `php://filter/convert.base64-encode/resource=../../../../../wp-config.php` (file inclusion)

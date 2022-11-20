@@ -20,7 +20,7 @@ As there isn't much we can do as a regular user, we will try to elevate our leve
 * Find misconfiguration <small>(sudo, system files, NFS...)</small>
 * Find a vulnerable service and exploit it <small>(apache, mysql...)</small>
 * Find processes/tasks/script in which you can inject data
-  * cronjobs
+  * cron tasks/jobs
   * executables with the SUID bit
   * ...
 * Find a vulnerability in the kernel
@@ -252,6 +252,42 @@ $ sudo chmod +s /tmp/share/sbash
 # will run it as root
 $ /share/sbash -p
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Cron tasks/jobs
+
+<div class="row row-cols-md-2"><div>
+
+Cron are the name given to automated tasks on Linux.
+
+```bash
+# tasks of the current user
+$ crontab -l
+# list every system-wide cron task
+$ ls -la /etc/cron*
+```
+
+It's worth noting that system-wide cron tasks and user created cron tasks are not stored in the same place. Only root can browse/list other users cron tasks.
+
+```bash
+# tasks of the user 'root'
+$ sudo ls /var/spool/cron/crontabs/root
+# tasks of the user 'root'
+$ sudo crontab -l -u root
+```
+</div><div>
+
+But, there is another way to find the cron tasks. You can monitor Linux processes, for instance using [pspy](https://github.com/DominicBreuker/pspy) (3.2k ⭐) which can monitor linux processes without root permissions.
+
+```bash
+$ # use wget/... to fetch the static binary
+$ chmod +x /tmp/pspy
+$ /tmp/pspy
+```
+
+> **CTF**: cron tasks are usually running every minute, or every 5 minutes.
 </div></div>
 
 <hr class="sep-both">

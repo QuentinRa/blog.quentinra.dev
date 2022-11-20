@@ -1,11 +1,3 @@
-https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
-
-Random stuff that may be useful
-
-* [pspy](https://github.com/DominicBreuker/pspy) (3.2k ⭐): monitor linux processes without root permissions
-
-<hr class="sep-both">
-
 ## Linux handy commands
 
 <div class="row row-cols-md-2"><div>
@@ -87,10 +79,6 @@ Learn more about your environment
   * Look for fail2ban logs
   * Look for ssh logs (`/var/log/auth.log`)
 </div><div>
-
-**Cron tasks** ⭐
-
-Cron are the name given to automated tasks on Linux. See `crontab -l` for the tasks of the current user, and `ls -la /etc/cron*` for every cron tasks. Then, you may look for vulnerable cron tasks, meaning tasks using
 
 * files that you can edit,
 * environment variables using paths/... that you can edit,
