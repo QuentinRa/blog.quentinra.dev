@@ -22,36 +22,6 @@
 * https://github.com/s0md3v/Decodify
 * https://github.com/carlospolop/legion
 * export TERM=xterm-256color
-* websites
-  * https://blog.razrsec.uk/
-  * https://stawm.design.blog/
-  * https://blog.qz.sg/
-  * https://saharshtapi.github.io/
-  * https://vitcher97.blogspot.com/
-  * https://marcorei7.wordpress.com/
-  * https://thefluffy007.com/
-  * https://fr33s0ul.tech/
-  * https://beginninghacking.net/
-  * https://aptx1337.github.io/
-  * https://shishirsubedi.com.np/
-  * https://hackofalltrades.dev/
-  * https://cybersecnerds.com/
-  * https://blog.raw.pm/
-  * https://nairitya03.github.io/CTF-WriteUps/
-  * https://mrash.co/
-  * https://robertmuwanga.netlify.app/
-  * https://zachkenney.me/
-  * https://cybersecbits.com/
-  * https://jarrodrizor.com/
-  * https://0xv3r4x.github.io/
-  * https://www.6rian.com/
-  * https://steflan-security.com/
-  * https://dailycompute.net/
-  * https://ammmy7580.gitbook.io/
-  * https://hacking-capture.github.io/
-  * https://deltreey.blogspot.com/
-  * https://bryce-simpson.netlify.app/
-  * https://hambyhacks.github.io/
 * https://www.pentesterlab.com/
 * https://github.com/epinna/weevely3
   * weevely generate password webshell.php

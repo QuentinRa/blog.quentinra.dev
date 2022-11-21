@@ -194,12 +194,12 @@ You can use [cybersecurityeducation.org](https://www.cybersecurityeducation.org/
 * [hackerrank](https://www.hackerrank.com/)
 * [sans.org: cyberaces](https://www.sans.org/cyberaces/)
 * [Red Team Nation](https://redteamnation.com/)
-* [appsec-labs.com](https://appsec-labs.com/online-training/)
 
 **Other platforms found in the wild**
 
 * [cybr.com](https://cybr.com/)
 * [academy.tcm-sec.com](https://academy.tcm-sec.com/)
+* [appsec-labs.com](https://appsec-labs.com/online-training/)
 </div><div>
 
 **Practicing** (CTF = capture the flag)
@@ -249,9 +249,9 @@ There are also premium solutions such as [leakcheck](https://leakcheck.io/), or 
 
 ## Blogs
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-md-4 mt-3"><div>
 
-* [CrackItDown](https://web.archive.org/web/20210923121550/https://www.crackitdown.com/) (website dead, still available via the wayback machine)
+* [CrackItDown](https://web.archive.org/web/20210923121550/https://www.crackitdown.com/)
 * [hacktricks.xyz](https://book.hacktricks.xyz/welcome/readme)
 * [guru99.com](https://www.guru99.com/ethical-hacking-tutorials.html)
 * [PayloadsAllTheThingsWeb](https://swisskyrepo.github.io/PayloadsAllTheThingsWeb/)
@@ -281,10 +281,43 @@ There are also premium solutions such as [leakcheck](https://leakcheck.io/), or 
 * [total-oscp-guide](https://github.com/alexb49/total-oscp-guide)
 * [fr33s0ul.tech](https://fr33s0ul.tech/index.html)
 * [blog.cyberethical.me](https://blog.cyberethical.me/)
+* [dailycompute](https://dailycompute.net/)
+* [ammmy7580](https://ammmy7580.gitbook.io/)
+* [hacking-capture](https://hacking-capture.github.io/)
+</div><div>
+
+* [razrsec](https://blog.razrsec.uk/)
+* [stawm](https://stawm.design.blog/)
+* [qz.sg](https://blog.qz.sg/)
+* [saharshtapi](https://saharshtapi.github.io/)
+* [vitcher97](https://vitcher97.blogspot.com/)
+* [marcorei7](https://marcorei7.wordpress.com/)
+* [thefluffy007](https://thefluffy007.com/)
+* [beginninghacking](https://beginninghacking.net/)
+* [aptx1337](https://aptx1337.github.io/)
+* [shishirsubedi](https://shishirsubedi.com.np/)
+* [hackofalltrades](https://hackofalltrades.dev/)
+* [cybersecnerds](https://cybersecnerds.com/)
+* [raw.pm](https://blog.raw.pm/)
+* [nairitya03](https://nairitya03.github.io/CTF-WriteUps/)
+* [robertmuwanga](https://robertmuwanga.netlify.app/)
+</div><div>
+
+* [deltreey](https://deltreey.blogspot.com/)
+* [bryce-simpson](https://bryce-simpson.netlify.app/)
+* [hambyhacks](https://hambyhacks.github.io/)
+* [6rian](https://www.6rian.com/)
+* [cybersecbits](https://cybersecbits.com/)
+* [jarrodrizor](https://jarrodrizor.com/)
+* [0xv3r4x](https://0xv3r4x.github.io/)
 * [trailofbits](https://trailofbits.github.io/ctf/)
 * [lkmidas](https://lkmidas.github.io/)
 * [hacktoday.io](https://hacktoday.io/)
-</div></div>
+* [steflan](https://steflan-security.com/)
+* [zachkenney](https://zachkenney.me/)
+</div>
+
+</div>
 
 <hr class="sep-both">
 
