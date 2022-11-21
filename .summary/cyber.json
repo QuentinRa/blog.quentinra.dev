@@ -247,6 +247,15 @@
         "hidden": false
       }
     ],
+    "Exploitation: Network 🌐": [
+      {
+        "tag": "exploitation/network/index.md",
+        "name": "Exploit network",
+        "desc": "",
+        "icon": null,
+        "hidden": false
+      }
+    ],
     "Exploitation: Databases 🖥️": [
       {
         "tag": "exploitation/database/index.md",

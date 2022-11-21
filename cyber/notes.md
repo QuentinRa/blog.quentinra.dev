@@ -6,31 +6,9 @@
 
 <hr>
 
-<hr class="sep-both">
-
-## 👻 TODO 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-xxx
-</div><div>
-
-
-</div></div>
-
-<hr>
-
 ## Reaped
 
 ...
-
-<hr>
-
-## Special
-
-* `wireshark` (https://tryhackme.com/room/startup): wireshark `.pcapng`. Then right-click on interesting packets, and click on "follow TCP Stream"
 
 <hr>
 

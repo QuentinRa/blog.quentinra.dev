@@ -212,6 +212,7 @@ You can use [cybersecurityeducation.org](https://www.cybersecurityeducation.org/
 * [vulnhub](https://www.vulnhub.com/)
 * [capturetheflag.withgoogle.com](https://capturetheflag.withgoogle.com/beginners-quest)
 * [List of CTFs websites](https://hacktoday.io/t/list-of-hacking-ctf-challenge-sites/1980)
+* [attackdefense](https://attackdefense.com/)
 
 **Bug bounty programs** [bug bounty programs list](https://www.bugcrowd.com/bug-bounty-list/)
 
@@ -228,21 +229,25 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 
 ## News
 
-<div class="row row-cols-md-2"><div><br>
+<div class="row row-cols-md-2 mt-3"><div>
+
+Nothing much yet.
 
 * [hackerone.com](https://www.hackerone.com/resources)
 * [cybernews.com](https://cybernews.com/news/)
+* [thehackernews.com](https://thehackernews.com/)
 </div><div>
 
 **Did you credentials leak?**
 
 * [have i been pwned?](https://haveibeenpwned.com/)
-* [vigilante.pw](https://vigilante.pw/) <small>(reported down as of 08-2021 - "up" in 10-2022, but the new version may not be legit)</small>
-* [vigilante GitHub](https://github.com/wedataintelligence/Vigilante.pw/blob/master/data.csv)
-* [cybernews check](https://cybernews.com/personal-data-leak-check/)
+* [cybernews check](https://cybernews.com/personal-data-leak-check/) 
+* [leakcheck](https://leakcheck.io/) (premium?)
+* [dehashed](https://dehashed.com/) (premium?)
+* [monitor.firefox.com](https://monitor.firefox.com/)
+* [breachdirectory](https://www.breachdirectory.org/) (you can some some half-censured passwords)
 
-There are also premium solutions such as [leakcheck](https://leakcheck.io/), or [dehashed](https://dehashed.com/).
-
+There is also [vigilante.pw](https://github.com/wedataintelligence/Vigilante.pw/blob/master/data.csv) / [breaches.net](https://breaches.net/) / [nuclearleaks.com](https://nuclearleaks.com/search) / [monitor.firefox.com](https://monitor.firefox.com/breaches) listing information about data leaks.
 </div></div>
 
 <hr class="sep-both">

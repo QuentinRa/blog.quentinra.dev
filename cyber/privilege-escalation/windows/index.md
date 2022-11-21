@@ -330,6 +330,7 @@ Stuff that I found, but never read/used yet.
 Tools
 
 * [LOLBAS](https://github.com/LOLBAS-Project/LOLBAS) (4.8k ⭐): exploit Windows executables
+* [adPEAS](https://github.com/61106960/adPEAS) (0.4k ⭐)
 * [wmic](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wmic): a deprecated console since Windows 10 21H1
 
 Checklists
