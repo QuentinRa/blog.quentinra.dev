@@ -40,6 +40,18 @@
   * https://nairitya03.github.io/CTF-WriteUps/
   * https://mrash.co/
   * https://robertmuwanga.netlify.app/
+  * https://zachkenney.me/
+  * https://cybersecbits.com/
+  * https://jarrodrizor.com/
+  * https://0xv3r4x.github.io/
+  * https://www.6rian.com/
+  * https://steflan-security.com/
+  * https://dailycompute.net/
+  * https://ammmy7580.gitbook.io/
+  * https://hacking-capture.github.io/
+  * https://deltreey.blogspot.com/
+  * https://bryce-simpson.netlify.app/
+  * https://hambyhacks.github.io/
 * https://www.pentesterlab.com/
 * https://github.com/epinna/weevely3
   * weevely generate password webshell.php
@@ -48,6 +60,9 @@
   * pwncat -lvv PORT
 * https://github.com/nccgroup/GTFOBLookup
 * https://null-byte.wonderhowto.com/how-to/bypass-file-upload-restrictions-web-apps-get-shell-0323454/
+* rustscan -a $IP -- --script=http-headers
+* https://n3t-hunt3r.gitbook.io/pentest-book/web-application-pentesting/file-upload -- https://book.hacktricks.xyz/pentesting-web/file-upload
+* https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys
 
 <hr>
 
