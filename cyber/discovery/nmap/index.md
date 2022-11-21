@@ -13,6 +13,7 @@
 [![rrootme](../../_badges/thm-p/rrootme.svg)](https://tryhackme.com/room/rrootme)
 [![basicpentestingjt](../../_badges/thm-p/basicpentestingjt.svg)](https://tryhackme.com/room/basicpentestingjt)
 [![netsecchallenge](../../_badges/thmp-p/netsecchallenge.svg)](https://tryhackme.com/room/netsecchallenge)
+[![startup](../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 
 <div class="row row-cols-md-2"><div>
 

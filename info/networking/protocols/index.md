@@ -66,6 +66,8 @@ Once in a FTP shell, you may use the commands, see the [section 5.3.1.](https://
 <details class="details-e">
 <summary>FTP commands summary</summary>
 
+**Note**: ⚠️I had some issues when using paths with put/get, the transfer would always fail. By using only file name, meaning starting FTP in the directory where my file was, solved the problem, but...
+
 ```bash
 ftp> pwd # path to current folder
 ftp> ls folder # list files

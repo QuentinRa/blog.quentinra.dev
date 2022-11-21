@@ -349,6 +349,8 @@ $ /share/sbash -p
 
 ## Cron tasks/jobs
 
+[![startup](../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
+
 <div class="row row-cols-md-2"><div>
 
 Cron are the name given to automated tasks on Linux.
