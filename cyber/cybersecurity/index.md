@@ -327,8 +327,12 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+General
+
 * GitHub Topics [redteam](https://github.com/topics/redteam), [blueteam](https://github.com/topics/blueteam), and [purpleteam](https://github.com/topics/purpleteam)
 </div><div>
 
-...
+Articles
+
+* [breach attack](https://www.acunetix.com/blog/articles/breach-attack/)
 </div></div>

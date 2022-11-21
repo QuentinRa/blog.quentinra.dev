@@ -15,12 +15,8 @@
 ## Reaped
 
 * `smbmap -H IP`: see shares, users, files
-* binwalk / binwalk -e (extract)
-  * see what there is inside the file (ex: img then zip)
 * https://github.com/frizb/Hydra-Cheatsheet
-* https://github.com/s0md3v/Decodify
 * https://github.com/carlospolop/legion
-* export TERM=xterm-256color
 * https://www.pentesterlab.com/
 * https://github.com/nccgroup/GTFOBLookup
 * https://null-byte.wonderhowto.com/how-to/bypass-file-upload-restrictions-web-apps-get-shell-0323454/

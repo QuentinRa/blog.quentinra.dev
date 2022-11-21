@@ -36,7 +36,7 @@
       {
         "tag": "investigation/files/index.md",
         "name": "Investigate Files",
-        "desc": "",
+        "desc": "Find metadata from a PDF, an image... Learn about steganography, tricks...",
         "icon": null,
         "hidden": false
       }
