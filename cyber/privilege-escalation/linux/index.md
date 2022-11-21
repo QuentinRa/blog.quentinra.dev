@@ -37,6 +37,7 @@ There are many **automated scripts** that will investigate usual places, service
 * [traitor](https://github.com/liamg/traitor)  (5.4k ⭐): enumerate/exploit host | script in go
 * [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) (lse, 2.5k ⭐): enumerate host | script shell
 * [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) (1.1k ⭐): enumerate host | python script
+* [pwncat-cs](https://github.com/calebstewart/pwncat) (1.8k ⭐): enumerate/exploit host | script in Python
 </div></div>
 
 <hr class="sep-both">

@@ -184,22 +184,20 @@ You can use [cybersecurityeducation.org](https://www.cybersecurityeducation.org/
 
 * [TryHackMe](https://tryhackme.com/) (THM): a lot of free courses, and a guide enjoyable/gratifying place to start learning, although you will have to go to other sites later
 * [academy.hackthebox.com](https://academy.hackthebox.com/catalogue): you pay to enroll in courses, you have some starter "money", and you get back all <small>(tier-0, newcomers)</small>, or a part of your credits, once you finished the course.
+
+**Others that I didn't check out yet**
+
 * [hackerone.com](https://www.hackerone.com/hackers)
 * [PortSwigger](https://portswigger.net/web-security)
 * [rapid7](https://www.rapid7.com/fundamentals/)
 * [codered.eccouncil.org](https://codered.eccouncil.org/)
-
-**Professional training**
-
 * [hackerrank](https://www.hackerrank.com/)
 * [sans.org: cyberaces](https://www.sans.org/cyberaces/)
 * [Red Team Nation](https://redteamnation.com/)
-
-**Other platforms found in the wild**
-
 * [cybr.com](https://cybr.com/)
 * [academy.tcm-sec.com](https://academy.tcm-sec.com/)
 * [appsec-labs.com](https://appsec-labs.com/online-training/)
+* [pentesterlab](https://www.pentesterlab.com/)
 </div><div>
 
 **Practicing** (CTF = capture the flag)
@@ -221,6 +219,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [bounty.github.com](https://bounty.github.com/) (GitHub)
 * [huntr.dev](https://huntr.dev/) (open-source repositories)
 * [BugBountyHunter.com](https://www.bugbountyhunter.com/)
+* [intigriti.com](https://www.intigriti.com/)
 
 </div></div>
 
@@ -249,6 +248,8 @@ There are also premium solutions such as [leakcheck](https://leakcheck.io/), or 
 
 ## Blogs
 
+A list of blogs that I want to check out one day. There are too many pilling up, so I filter them and keep the most interesting ones.
+
 <div class="row row-cols-md-4 mt-3"><div>
 
 * [CrackItDown](https://web.archive.org/web/20210923121550/https://www.crackitdown.com/)
@@ -257,9 +258,6 @@ There are also premium solutions such as [leakcheck](https://leakcheck.io/), or 
 * [PayloadsAllTheThingsWeb](https://swisskyrepo.github.io/PayloadsAllTheThingsWeb/)
 * [amandinegh](https://amandinegh.gitbook.io/cyberadventure/)
 * [PENTESTING-BIBLE](https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE) (11k ⭐)
-
-<br>
-
 * [mikadmin.fr](https://mikadmin.fr/blog/)
 * [dhilipsanjay CTFs](https://dhilipsanjay.gitbook.io/ctfs/)
 * [TheDutchHacker](https://www.thedutchhacker.com/)
@@ -267,6 +265,9 @@ There are also premium solutions such as [leakcheck](https://leakcheck.io/), or 
 * [cyber-security-base-19](https://github.com/rage/cyber-security-base-19)
 * [ctf101.org](https://ctf101.org/)
 * [tbhaxor.com](https://tbhaxor.com/)
+* [zachkenney](https://zachkenney.me/)
+* [n3t-hunt3r](https://n3t-hunt3r.gitbook.io/pentest-book/)
+* [ropnop](https://blog.ropnop.com/)
 </div><div>
 
 * [auth0.com](https://auth0.com/blog/)
@@ -284,6 +285,7 @@ There are also premium solutions such as [leakcheck](https://leakcheck.io/), or 
 * [dailycompute](https://dailycompute.net/)
 * [ammmy7580](https://ammmy7580.gitbook.io/)
 * [hacking-capture](https://hacking-capture.github.io/)
+* [steflan](https://steflan-security.com/)
 </div><div>
 
 * [razrsec](https://blog.razrsec.uk/)
@@ -301,6 +303,7 @@ There are also premium solutions such as [leakcheck](https://leakcheck.io/), or 
 * [raw.pm](https://blog.raw.pm/)
 * [nairitya03](https://nairitya03.github.io/CTF-WriteUps/)
 * [robertmuwanga](https://robertmuwanga.netlify.app/)
+* [hacktoday.io](https://hacktoday.io/)
 </div><div>
 
 * [deltreey](https://deltreey.blogspot.com/)
@@ -312,9 +315,6 @@ There are also premium solutions such as [leakcheck](https://leakcheck.io/), or 
 * [0xv3r4x](https://0xv3r4x.github.io/)
 * [trailofbits](https://trailofbits.github.io/ctf/)
 * [lkmidas](https://lkmidas.github.io/)
-* [hacktoday.io](https://hacktoday.io/)
-* [steflan](https://steflan-security.com/)
-* [zachkenney](https://zachkenney.me/)
 </div>
 
 </div>

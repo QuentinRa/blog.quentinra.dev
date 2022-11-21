@@ -23,6 +23,13 @@
         "desc": "",
         "icon": null,
         "hidden": false
+      },
+      {
+        "tag": "cybersecurity/hacking_box.md",
+        "name": "H@king box",
+        "desc": "Stuff that couldn't be put somewhere else.",
+        "icon": null,
+        "hidden": false
       }
     ],
     "1. Investigation 🔎": [

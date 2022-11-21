@@ -6,6 +6,22 @@
 
 <hr>
 
+<hr class="sep-both">
+
+## 👻 TODO 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+xxx
+</div><div>
+
+
+</div></div>
+
+<hr>
+
 ## Oh... no...
 
 * https://github.com/rmusser01/Infosec_Reference
@@ -14,15 +30,8 @@
 
 ## Reaped
 
-* `smbmap -H IP`: see shares, users, files
-* https://github.com/frizb/Hydra-Cheatsheet
 * https://github.com/carlospolop/legion
-* https://www.pentesterlab.com/
-* https://github.com/nccgroup/GTFOBLookup
-* https://null-byte.wonderhowto.com/how-to/bypass-file-upload-restrictions-web-apps-get-shell-0323454/
 * rustscan -a $IP -- --script=http-headers
-* https://n3t-hunt3r.gitbook.io/pentest-book/web-application-pentesting/file-upload -- https://book.hacktricks.xyz/pentesting-web/file-upload
-* https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys
 
 <hr>
 
