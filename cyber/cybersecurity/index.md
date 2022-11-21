@@ -288,6 +288,7 @@ A list of blogs that I want to check out one day. There are too many pilling up,
 * [ammmy7580](https://ammmy7580.gitbook.io/)
 * [hacking-capture](https://hacking-capture.github.io/)
 * [steflan](https://steflan-security.com/)
+* [g0tmi1k](https://blog.g0tmi1k.com/)
 </div><div>
 
 * [razrsec](https://blog.razrsec.uk/)
@@ -306,6 +307,7 @@ A list of blogs that I want to check out one day. There are too many pilling up,
 * [nairitya03](https://nairitya03.github.io/CTF-WriteUps/)
 * [robertmuwanga](https://robertmuwanga.netlify.app/)
 * [hacktoday.io](https://hacktoday.io/)
+* [ThePacketBender](https://github.com/ThePacketBender/notes)
 </div><div>
 
 * [deltreey](https://deltreey.blogspot.com/)
@@ -334,4 +336,10 @@ Articles
 
 * [breach attack](https://www.acunetix.com/blog/articles/breach-attack/)
 </div><div>
+
+Random
+
+* [bugtraq](https://bugtraq.securityfocus.com/archive)
+* [cxsecurity](https://cxsecurity.com/) / [cifrex](https://cifrex.org/)
+* [packetstormsecurity](https://packetstormsecurity.com/)
 </div></div>

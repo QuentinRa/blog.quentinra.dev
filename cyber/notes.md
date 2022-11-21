@@ -103,13 +103,6 @@ int main() {
 * oh gosh, volatily + `pip install --upgrade setuptools` https://stackoverflow.com/questions/31719816/pip-fails-to-install-anything-error-invalid-command-egg-info
 * `print "[+] Specify an url target"`
 
---- https://tryhackme.com/room/cowboyhacker ⭐
-
-* nmap
-* FTP exposed
-* Hydra ssh
-* SUID
-
 --- https://tryhackme.com/room/lazyadmin 🐍🐍⭐
 
 * nmap

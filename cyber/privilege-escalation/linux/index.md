@@ -264,6 +264,7 @@ $ cat /etc/shadow
 [![kenobi](../../_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
 [![rrootme](../../_badges/thm-p/rrootme.svg)](https://tryhackme.com/room/rrootme)
 [![linprivesc](../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
+[![cowboyhacker](../../_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
 
 <div class="row row-cols-md-2"><div>
 
@@ -423,7 +424,5 @@ Courses
 
 * [payatu.com](https://payatu.com/guide-linux-privilege-escalation)
 * [udemy.com](https://www.udemy.com/course/linux-privilege-escalation/)
-* [tbhaxor.com](https://tbhaxor.com/exploiting-suid-binaries-to-get-root-user-shell/) (SUID)
-* [g0tmi1k.com](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)
 </div><div>
 </div></div>

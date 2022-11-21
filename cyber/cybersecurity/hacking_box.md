@@ -40,5 +40,6 @@ General
 * GitHub Topics [redteam](https://github.com/topics/redteam), [blueteam](https://github.com/topics/blueteam), and [purpleteam](https://github.com/topics/purpleteam)
 * [faraday](https://github.com/infobyte/faraday): Vulnerability scanner?
 * [legion](https://github.com/carlospolop/legion): Enumeration
+* [beyondsecurity](https://www.beyondsecurity.com/): Vulnerability scanner?
 </div><div>
 </div></div>
