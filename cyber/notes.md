@@ -12,6 +12,26 @@
 
 <hr>
 
+## Reaped
+
+* `smbmap -H IP`: see shares, users, files
+* RPC 111
+* binwalk / binwalk -e (extract)
+  * see what there is inside the file (ex: img then zip)
+* www
+  * whatweb 
+* https://github.com/frizb/Hydra-Cheatsheet
+* https://github.com/s0md3v/Decodify
+* websites
+  * https://blog.razrsec.uk/
+  * https://stawm.design.blog/
+  * https://blog.qz.sg/
+  * https://saharshtapi.github.io/
+  * https://vitcher97.blogspot.com/
+  * https://marcorei7.wordpress.com/
+
+<hr>
+
 ## Prev esc
 
 https://tryhackme.com/room/linprivesc

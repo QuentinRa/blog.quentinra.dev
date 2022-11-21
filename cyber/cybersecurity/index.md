@@ -212,6 +212,7 @@ You can use [cybersecurityeducation.org](https://www.cybersecurityeducation.org/
 * [OWASP Juice Shop](https://github.com/juice-shop/juice-shop)
 * [vulnhub](https://www.vulnhub.com/)
 * [capturetheflag.withgoogle.com](https://capturetheflag.withgoogle.com/beginners-quest)
+* [List of CTFs websites](https://hacktoday.io/t/list-of-hacking-ctf-challenge-sites/1980)
 
 **Bug bounty programs** [bug bounty programs list](https://www.bugcrowd.com/bug-bounty-list/)
 
@@ -282,6 +283,7 @@ There are also premium solutions such as [leakcheck](https://leakcheck.io/), or 
 * [blog.cyberethical.me](https://blog.cyberethical.me/)
 * [trailofbits](https://trailofbits.github.io/ctf/)
 * [lkmidas](https://lkmidas.github.io/)
+* [hacktoday.io](https://hacktoday.io/)
 </div></div>
 
 <hr class="sep-both">
