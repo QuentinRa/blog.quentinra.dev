@@ -27,7 +27,11 @@ The syntax used **on this website** (📌) is that commands starting with the pr
 * `PS>` are working in both a CMD or a Powershell
 * `CMD>` are only working in a CMD
 
-You can start a CMD with the commands `cmd`/`cmd.exe`, and a powershell with the commands `powershell`/`powershell.exe`.
+You can start a CMD with the commands `cmd`/`cmd.exe`, and a powershell with the commands `powershell`/`powershell.exe`. You can also use
+
+```bash
+CMD> powershell -c "powershell command here"
+```
 </div><div>
 
 **Hint 1**

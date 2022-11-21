@@ -320,6 +320,10 @@ A list of blogs that I want to check out one day. There are too many pilling up,
 * [trailofbits](https://trailofbits.github.io/ctf/)
 * [lkmidas](https://lkmidas.github.io/)
 * [bees](https://bees.substack.com/archive)
+* [goron](https://gitlab.com/goron/security_whitepapers/-/tree/master)
+* [pentestlab](https://pentestlab.blog/)
+* [enigma0x3](https://enigma0x3.net/)
+* [hackingarticles.in](https://www.hackingarticles.in)
 </div>
 
 </div>
@@ -335,6 +339,8 @@ Stuff that I found, but never read/used yet.
 Articles
 
 * [breach attack](https://www.acunetix.com/blog/articles/breach-attack/)
+* [elastic](https://www.elastic.co/guide/en/security/current/es-overview.html)
+* [attack.mitre](https://attack.mitre.org/tactics/enterprise/)
 </div><div>
 
 Random
