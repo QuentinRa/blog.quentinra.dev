@@ -69,7 +69,7 @@ int main() {
 
 ## Overconfidence
 
---- https://tryhackme.com/room/steelmountain
+--- https://tryhackme.com/room/steelmountain ⭐
 
 * use meterpreter upload to upload the winPEAS
 * `upload /tmp/xxx`
@@ -91,26 +91,26 @@ int main() {
 * `powershell -c wget "URL" -outfile "OUTPUT"`
 * like OTX: https://cyware.com/
 
---- https://tryhackme.com/room/easyctf 🐍🐍🐍
+--- https://tryhackme.com/room/easyctf 🐍🐍⭐
 
 * `python2 simple.py`
 * oh gosh, volatily + `pip install --upgrade setuptools` https://stackoverflow.com/questions/31719816/pip-fails-to-install-anything-error-invalid-command-egg-info
 * `print "[+] Specify an url target"`
 
---- https://tryhackme.com/room/cowboyhacker
+--- https://tryhackme.com/room/cowboyhacker ⭐
 
 * nmap
 * FTP exposed
 * Hydra ssh
 * SUID
 
---- https://tryhackme.com/room/lazyadmin 🐍🐍🐍
+--- https://tryhackme.com/room/lazyadmin 🐍🐍⭐
 
 * nmap
 * gobuster
 * ...
 
---- https://tryhackme.com/room/startup
+--- https://tryhackme.com/room/startup ⭐
 
 * nmap
 * gobuster
