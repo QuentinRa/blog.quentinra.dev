@@ -78,9 +78,9 @@ If you don't use powershell, which is Linux friendly so most Unix commands are a
 
 **Users**
 
-* `system`: an automatically created account used by the system to do internal tasks. It has more rights than an administrator.
+* `LocalSystem`: an automatically created account used by the system to do internal tasks. It has higher privileges than Administrator.
 * `Administrator`: manage users, apps, groups, system-wide settings...
-* `Standard User`: can use apps, can access their files
+* `Standard User`: can use apps, can access their files...
 
 **Groups**
 
@@ -102,6 +102,8 @@ PS> icacls xxx
 xxx NT AUTHORITY\SYSTEM:(I)(F)
     BUILTIN\Administrators:(I)(F)
     Local\username:(I)(F)
+PS> icacls xxx /grant Everyone:F
+PS> icacls xxx /grant username:F
 ```
 </div></div>
 

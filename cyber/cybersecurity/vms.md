@@ -14,9 +14,10 @@ Notes about Virtual Machine, Emulator, along with links to download CTF Virtual 
 * **Notes**
   * 🚀 You can import pre-configured VMs
   * ✨ The UX is better than in Virtual Box
-  * 👎 Their documentation isn't helpful. If you got problems with the keyboard, or to permanently resize the screen, it may take a few minutes.
+  * 👎 Their documentation isn't helpful. If you got problems with the keyboard, or to permanently resize the screen, it will take more than a few clicks.
   * ➡️ in the settings
     * you can create a shared folder between Windows/your VM
+    * the bidirectional keyboard is already enabled
 </div><div>
 
 ⭐ **Oracle VirtualBox** ⭐
@@ -25,10 +26,17 @@ Notes about Virtual Machine, Emulator, along with links to download CTF Virtual 
 * **Notes**
     * 👎 There are always problems, like you need to go deep into the settings, in order to set a lot of values, and cross-finger while praying that they are the right ones for your machine. For instance, by default, every machine has the same IP, so you can't another one...
     * 💭 It's possible to find pre-installed VMs, but you can only import the hard-drive, so you still have to manually configure them.
-    * 🥈 There are a lot of nice features, when it works that is.
     * ➡️ In the settings
-      * you can enable copy-paste from the source to the VM <small>(enabled by default on VMWare)</small>
+      * you can enable copy-paste from the source to the VM
       * you can create a shared folder between Windows/your VM
+
+<details class="details-e">
+<summary>🪲 There are bugs</summary>
+
+* If you close your machine and select "saving the machine state" while the user account isn't locked, then you may not be able to use your mouse when restarting the saved instance. The top-left icon with a lock is useful to avoid this.
+
+* One day, the bidirectional keyboard just stopped working. Restarting the machine solved the problem.
+</details>
 </div></div>
 
 > There is also [qemu](https://www.qemu.org/), mostly for Linux users.
