@@ -32,6 +32,8 @@ Notes about cyber defense. I'm not really interested in cyber defense for now, s
 * [Hybrid Analysis](https://www.hybrid-analysis.com/). Will test the file on 3 or more websites, which includes VirusTotal.
 
 * [VirusTotal](https://www.virustotal.com/gui/home/upload)
+
+* [joesandbox](https://www.joesandbox.com/)
 </div></div>
 
 <hr class="sep-both">
@@ -46,4 +48,6 @@ Notes about cyber defense. I'm not really interested in cyber defense for now, s
 </div><div>
 
 * [stack.watch](https://stack.watch/): "Use StackWatch to create a software stack (a list of software you use), then get a weekly email with security vulnerabilities that have been published for software within your stack."
+
+* [cyware](https://cyware.com/)
 </div></div>

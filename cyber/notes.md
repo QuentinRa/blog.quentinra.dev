@@ -75,19 +75,6 @@ int main() {
 
 ## Overconfidence
 
-* `powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"`
-* `powershell -ep bypass -c ". .\PowerUp.ps1;"`
-* `https://github.com/itm4n/PrivescCheck#metasploit-timeout`
-* `load powershell`
-* `powershell_shell`
-* `. .\PowerUp.ps1; Invoke-AllChecks`
-* `. .\PowerUp.ps1` `PS > Invoke-AllChecks`
-* https://www.joesandbox.com/#windows
-* https://github.com/EgeBalci/sgn
-* `Write-ServiceBinary -Name 'XXX' -Path ".\nc.exe"`
-* `powershell -c wget "URL" -outfile "OUTPUT"`
-* like OTX: https://cyware.com/
-
 --- https://tryhackme.com/room/easyctf 🐍🐍⭐
 
 * `python2 simple.py`

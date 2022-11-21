@@ -23,6 +23,12 @@ There are many **automated scripts** that will investigate usual places, service
 * [WinPeas](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS) (10.5k ⭐)
 * [PrivescCheck](https://github.com/itm4n/PrivescCheck) (1.8k ⭐)
 * [PowerUp](https://github.com/HarmJ0y/PowerUp) (222⭐) that was deprecated over [PowerTools](https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerUp) (1.8k ⭐) that was deprecated again over [PowerSploit](https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc) (10k ⭐) which is now archived 😂. PowerUp from PowerSploit is still used.
+
+```bash
+PS> .\winPEASany_ofs.exe
+PS> powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"
+PS> powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"
+```
 </div></div>
 
 <hr class="sep-both">

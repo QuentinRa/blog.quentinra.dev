@@ -97,9 +97,11 @@ When there is a need for a user to elevate, Windows will show the User Account C
 
 **Permissions** ([doc](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb727008(v=technet.10)#understanding-file-and-folder-permissions))
 
-Windows has 7 categories of permissions: Read, Write <small>(**AD**: create directory, **WD**: create file)</small>, Read & Execute <small>(**RX**)</small>, List Folder Contents, Modify, Full Control <small>(**F**)</small>.
+Windows has 7 categories of permissions: Read <small>(**R**)</small>, Write <small>(**W**)</small>, List Folder Contents, Read & Execute <small>(**RX**)</small>, Modify <small>(**M**)</small>, Full Control <small>(**F**)</small> and Special permissions.
 
-Permissions are controlled by Discretionary Access Control List (DACLs), see the `icacls` command.
+There are advanced permissions: Create Directory <small>(**AD**)</small>, Create File <small>(**WD**)</small>, Delete <small>(**D**)</small>, Execute/Traverse <small>(**X**)</small>...
+
+Permissions are controlled by Discretionary Access Control List (DACLs), see the [icacls](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/icacls) command.
 
 ```java
 PS> icacls xxx

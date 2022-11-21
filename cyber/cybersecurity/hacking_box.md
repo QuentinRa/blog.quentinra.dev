@@ -42,4 +42,7 @@ General
 * [legion](https://github.com/carlospolop/legion): Enumeration
 * [beyondsecurity](https://www.beyondsecurity.com/): Vulnerability scanner?
 </div><div>
+
+* [termux](https://github.com/topics/termux-hacking)
+* [sgn](https://github.com/EgeBalci/sgn)
 </div></div>
