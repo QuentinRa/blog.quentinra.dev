@@ -89,6 +89,7 @@ If you don't want `nmap` to fetch DNS records, use `-n`. You can use `-R` to for
 
 ```bash
 $ nmap -n 10.10.12.13
+# won't look for the domain associated with this IP
 ```
 </div><div>
 

