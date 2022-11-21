@@ -22,16 +22,9 @@ xxx
 
 <hr>
 
-## Oh... no...
-
-* https://github.com/rmusser01/Infosec_Reference
-
-<hr>
-
 ## Reaped
 
-* https://github.com/carlospolop/legion
-* rustscan -a $IP -- --script=http-headers
+...
 
 <hr>
 

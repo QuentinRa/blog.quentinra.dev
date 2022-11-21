@@ -62,7 +62,7 @@ $ masscan scanme.nmap.org ‐‐top-ports 100 --rate 1000
 
 <hr class="sep-both">
 
-## aquatone : visual inspection of websites
+## aquatone: visual inspection of websites
 
 <div class="row row-cols-md-2"><div>
 
@@ -70,4 +70,23 @@ $ masscan scanme.nmap.org ‐‐top-ports 100 --rate 1000
 </div><div>
 
 It can take reports generated with nmap/masscan, and do its job.
+</div></div>
+
+<hr class="sep-both">
+
+## Rustscan
+
+<div class="row row-cols-md-2"><div class="align-self-center">
+
+[RustScan](https://github.com/RustScan/RustScan) (8.4k ⭐) is a very fast and noisy port scanner designed for CTFs. You can scan all 65k ports in a few seconds.
+</div><div>
+
+```bash
+$ rustscan -a IP -p 21
+$ rustscan -a IP -p 21,22,80
+$ rustscan -a IP --range 1-1023
+$ rustscan -a IP -sC # default scripts
+$ rustscan -a IP --script=http-headers # nmap script http-headers
+$ rustscan -a IP  -q # quit
+```
 </div></div>

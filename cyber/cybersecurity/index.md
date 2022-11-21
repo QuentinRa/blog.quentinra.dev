@@ -198,6 +198,7 @@ You can use [cybersecurityeducation.org](https://www.cybersecurityeducation.org/
 * [academy.tcm-sec.com](https://academy.tcm-sec.com/)
 * [appsec-labs.com](https://appsec-labs.com/online-training/)
 * [pentesterlab](https://www.pentesterlab.com/)
+* [cybertalents](https://cybertalents.com/)
 </div><div>
 
 **Practicing** (CTF = capture the flag)
@@ -258,6 +259,7 @@ A list of blogs that I want to check out one day. There are too many pilling up,
 * [PayloadsAllTheThingsWeb](https://swisskyrepo.github.io/PayloadsAllTheThingsWeb/)
 * [amandinegh](https://amandinegh.gitbook.io/cyberadventure/)
 * [PENTESTING-BIBLE](https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE) (11k ⭐)
+* [Infosec_Reference](https://github.com/rmusser01/Infosec_Reference) (4.6k ⭐)
 * [mikadmin.fr](https://mikadmin.fr/blog/)
 * [dhilipsanjay CTFs](https://dhilipsanjay.gitbook.io/ctfs/)
 * [TheDutchHacker](https://www.thedutchhacker.com/)
@@ -315,6 +317,7 @@ A list of blogs that I want to check out one day. There are too many pilling up,
 * [0xv3r4x](https://0xv3r4x.github.io/)
 * [trailofbits](https://trailofbits.github.io/ctf/)
 * [lkmidas](https://lkmidas.github.io/)
+* [bees](https://bees.substack.com/archive)
 </div>
 
 </div>
@@ -327,12 +330,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-General
-
-* GitHub Topics [redteam](https://github.com/topics/redteam), [blueteam](https://github.com/topics/blueteam), and [purpleteam](https://github.com/topics/purpleteam)
-</div><div>
-
 Articles
 
 * [breach attack](https://www.acunetix.com/blog/articles/breach-attack/)
+</div><div>
 </div></div>

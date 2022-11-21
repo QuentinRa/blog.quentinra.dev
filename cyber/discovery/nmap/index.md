@@ -16,7 +16,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-**nmap** ([nmap book](https://nmap.org/book/)) is a tool to detect hosts, their open ports, and eventually run script trying to go more information, or even exploiting a vulnerability to gain access.
+**nmap** ([nmap book](https://nmap.org/book/), [GitHub](https://github.com/nmap/nmap) 7.1k ⭐) is a tool to detect hosts, their open ports, and eventually run script trying to go more information, or even exploiting a vulnerability to gain access.
 
 We are calling **probe** a request made to inquire something from an host, such as testing if a port is open.
 
