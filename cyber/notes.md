@@ -79,3 +79,13 @@
 * https://stawm.design.blog/
 * https://infosecjunky.com/
 * https://marcorei7.wordpress.com/
+
+--- https://tryhackme.com/room/c4ptur3th3fl4g
+
+* https://dencode.com/en/
+* https://n0w4n.nl/
+* https://github.com/s0md3v/Hash-Buster
+* Audacity/...
+* steg hide always ask for a password, can leave it blank
+* strings to see the content of an image, wtf?
+* https://academo.org/demos/spectrum-analyzer/
