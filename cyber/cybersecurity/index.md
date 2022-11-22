@@ -207,12 +207,11 @@ You can use [cybersecurityeducation.org](https://www.cybersecurityeducation.org/
 * [root me](https://www.root-me.org/)
 * [TryHackMe](https://tryhackme.com/) (THM)
 * [OverTheWire](https://overthewire.org/wargames/)
-* [Damn Vulnerable Web Application](https://dvwa.co.uk/)
-* [OWASP Juice Shop](https://github.com/juice-shop/juice-shop)
 * [vulnhub](https://www.vulnhub.com/)
 * [capturetheflag.withgoogle.com](https://capturetheflag.withgoogle.com/beginners-quest)
 * [List of CTFs websites](https://hacktoday.io/t/list-of-hacking-ctf-challenge-sites/1980)
 * [attackdefense](https://attackdefense.com/)
+* See the webserver page for vulnerable web applications to test your skills such as OWASP JuiceShop, DVWA...
 
 **Bug bounty programs** [bug bounty programs list](https://www.bugcrowd.com/bug-bounty-list/)
 
@@ -353,4 +352,10 @@ Random
 * [bugtraq](https://bugtraq.securityfocus.com/archive)
 * [cxsecurity](https://cxsecurity.com/) / [cifrex](https://cifrex.org/)
 * [packetstormsecurity](https://packetstormsecurity.com/)
+
+Attacks
+
+* [Email_injection](https://en.wikipedia.org/wiki/Email_injection)
+* [HTTP_header_injection](https://en.wikipedia.org/wiki/HTTP_header_injection)
+* [Session_fixation](https://en.wikipedia.org/wiki/Session_fixation)
 </div></div>
