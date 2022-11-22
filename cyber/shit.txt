@@ -1,6 +1,7 @@
 https://github.com/wpscanteam/CMSScanner
 https://inthewild.io/ / https://github.com/gmatuz/inthewilddb
 https://github.com/CVEProject/cvelist
+https://github.com/OWASP/Amass
 
 https://github.com/screetsec/TheFatRat
 https://github.com/LasCC/Hack-Tools
