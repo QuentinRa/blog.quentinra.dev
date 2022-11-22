@@ -14,17 +14,17 @@
 
 ## Prev esc
 
-https://tryhackme.com/room/linprivesc
+--- https://tryhackme.com/room/linprivesc
 => hint/notes
 => network
 
-* https://tryhackme.com/room/windowsprivesc20 (dropped fur now)
+--- https://tryhackme.com/room/windowsprivesc20 🐍🐍🐍
 
 <hr>
 
 ## Forced Browsing
 
---- https://tryhackme.com/room/webenumerationv2
+[![webenumerationv2](../../../_badges/thmp/webenumerationv2.svg)](https://tryhackme.com/room/webenumerationv2)
 
 * Nikto: sensitive files, vulnerabilities of the web server, misconfigurations
   * -h: headers and sensitive files
@@ -35,7 +35,6 @@ https://tryhackme.com/room/linprivesc
   * -Display (verbosity): see the course
   * -Tuning search file upload...
   * -o Text/HTML report
-* Bash/sh and/or \"'(safe and vuln)'\"")
 
 <hr>
 

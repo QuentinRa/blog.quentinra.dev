@@ -1,6 +1,8 @@
 `systemctl /bin/systemctl`  allow to interact with the systemd process/daemon.
 `systemctl start apache2` (start, stop, enable, disable)
 
+https://en.wikipedia.org/wiki/HTTP/3
+
 URL
 * Scheme: (protocol) HTTP/HTTPS/...
 * Username:Password@Domain:port/Path?query#Fragment
