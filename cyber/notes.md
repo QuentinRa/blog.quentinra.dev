@@ -58,7 +58,7 @@
 * Test: `wpscan --url http://10.10.162.222/wordpress/ --detection-mode aggressive`
 * `php://filter/convert.base64-encode/resource=../../../../../wp-config.php` (file inclusion, https://www.idontplaydarts.com/2011/02/using-php-filter-for-local-file-inclusion/)
 
---- https://tryhackme.com/room/ignite
+--- https://tryhackme.com/room/ignite (done)
 
 * default credentials => lead to nothing
 * command injection
@@ -80,12 +80,21 @@
 * https://infosecjunky.com/
 * https://marcorei7.wordpress.com/
 
---- https://tryhackme.com/room/c4ptur3th3fl4g
+--- https://tryhackme.com/room/c4ptur3th3fl4g (done)
 
 * https://dencode.com/en/
 * https://n0w4n.nl/
 * https://github.com/s0md3v/Hash-Buster
-* Audacity/...
 * steg hide always ask for a password, can leave it blank
 * strings to see the content of an image, wtf?
-* https://academo.org/demos/spectrum-analyzer/
+* Audacity/...
+  * https://academo.org/demos/spectrum-analyzer/
+  * https://hackedpatched.wordpress.com/
+  * https://morsecode.world/international/decoder/audio-decoder-adaptive.html
+  * apt install audacity (click on the file name->wav to spectrogram)
+* https://www.tunnelsup.com/hash-analyzer/
+* https://futureboy.us/stegano/
+* https://xavag3djang0.github.io/
+* https://0xnirvana.gitbook.io/writeups/
+* https://robertmuwanga.netlify.app/
+* https://niekdang.wordpress.com/
