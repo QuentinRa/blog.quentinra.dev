@@ -8,7 +8,8 @@
 
 ## Reaped
 
-...
+* https://github.com/Hifumi1337/Bounty-Hacker
+* https://security.stackexchange.com/questions/234859/inject-update-motd-d-00-header-to-run-a-script-on-ssh-login
 
 <hr>
 
