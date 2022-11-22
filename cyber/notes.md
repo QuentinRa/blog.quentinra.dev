@@ -10,6 +10,7 @@
 
 * https://github.com/Hifumi1337/Bounty-Hacker
 * https://security.stackexchange.com/questions/234859/inject-update-motd-d-00-header-to-run-a-script-on-ssh-login
+* https://defaultcredentials.com/
 
 <hr>
 
@@ -110,3 +111,18 @@ List
 * html comments
 * gobuster
 * sudo -l
+
+<hr>
+
+## HackTheBox
+
+* Server Message Block
+* `smbclient -L IP -U Anonymous` (list shares)
+* `smbclient //IP/Anonymous -U Anonymous` (typo, two slashes)
+* Redis 6379/tcp in-memory db
+* redis-cli `sudo apt install redis-tools` (-h host -p port)
+  * `10.129.15.139:6379> help`
+  * https://redis.io/commands/
+  * info (see version...)
+  * `keys *`
+  * `get flag`
