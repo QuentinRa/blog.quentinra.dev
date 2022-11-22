@@ -166,9 +166,9 @@ First major attack against a country by a group of russian hackers. They used bo
 First attack targeting SCADA systems. An infected USB key was connected a computer on the internal network. One of the 3 virus of the "olympic games" along **DuQu**, and **Flame**. Supposedly made by the NSA, and Iran.
 </td></tr>
 
-<tr><td>WannaCry (2016)<br><b>Ransomware</b></td><td>
+<tr><td>WannaCry (2017)<br><b>Ransomware</b></td><td>
 
-Use a breach in Windows, created by the NSA, and stolen by hackers in 2013. The NSA notified Microsoft when this virus was released to make them patch it. Used in 2017 by North Korean on 200 000 computers. Auto-replicating virus, asking for a ransom. The original code was added a kill-switch by the NSA, allowing anyone knowing it to kill the virus.
+Use a vulnerability in Windows. The exploit was created by the NSA and  stolen by hackers in 2013. The NSA notified Microsoft when this virus was released so that they patch it. Used in 2017 by North Korea, infected 200 000 computers. Auto-replicating virus, asking for a ransom. The NSA added a kill-switch to the exploit, allowing anyone knowing it to stop the propagation.
 </td></tr>
 </table>
 
