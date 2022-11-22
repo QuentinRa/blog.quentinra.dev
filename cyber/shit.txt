@@ -1,3 +1,4 @@
+https://github.com/wpscanteam/CMSScanner
 https://github.com/screetsec/TheFatRat
 https://github.com/LasCC/Hack-Tools
 https://github.com/oddcod3/Phantom-Evasion

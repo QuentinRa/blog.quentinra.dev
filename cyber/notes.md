@@ -26,20 +26,6 @@ https://tryhackme.com/room/linprivesc
 
 --- https://tryhackme.com/room/webenumerationv2
 
-* wpscan
-* plugins, themes, misconfigurations, bruteforce, install files
-* `wpscan --update` (you will be prompted if you didn't)
-* `wpscan --url URL`
-* how
-  * active theme: path of loaded assets. [...] `--enumerate t`. `/wp-content/themes/`
-  * `/wp-content/plugins/pluginname`. README.txt with the version/... is mandatory. `--enumerate p`
-  * Users. They are in posts/... `--enumerate u`
-* Vulnerabilities: `v`. Plugins: `--enumerate vp` (WPVulnDB API)
-* Brute-force: `–-passwords rockyou.txt –-usernames xxx`
-* `--plugins-detection aggressive/passive`
-* `-e t`
-* we may have to switch between agg/pass
-* `hydra -l Phreakazoid -P /usr/share/wordlists/rockyou.txt wpscan.thm http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&testcookie=1:S=Location' -V`
 * Nikto: sensitive files, vulnerabilities of the web server, misconfigurations
   * -h: headers and sensitive files
   * can take a nmap scan
