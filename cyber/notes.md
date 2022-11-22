@@ -24,7 +24,7 @@ https://tryhackme.com/room/linprivesc
 
 ## Forced Browsing
 
---- https://tryhackme.com/room/webenumerationv2 🐍🐍🐍
+--- https://tryhackme.com/room/webenumerationv2
 
 * wpscan
 * plugins, themes, misconfigurations, bruteforce, install files
@@ -42,6 +42,19 @@ https://tryhackme.com/room/linprivesc
 * `hydra -l Phreakazoid -P /usr/share/wordlists/rockyou.txt wpscan.thm http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&testcookie=1:S=Location' -V`
 * -n nor n for grep
 * -w nor m for words with ffuf
+* Nikto: sensitive files, vulnerabilities of the web server, misconfigurations
+  * -h: headers and sensitive files
+  * can take a nmap scan
+  * `-p 80,8000,8080`
+  * https://github.com/sullo/nikto/wiki/Plugin-list
+  * -Plugin (ex: robots, cgi, ...)
+  * -Display (verbosity): see the course
+  * -Tuning search file upload...
+  * -o Text/HTML report
+* Install https://github.com/RustScan/RustScan/wiki/Installation-Guide#%EF%B8%8F-debian--kali
+* `rustscan -a 10.10.88.172 --scripts default --ulimit 10000`
+* `rustscan -a 10.10.88.172 --ulimit 10000 -- -q`
+* Bash/sh and/or \"'(safe and vuln)'\"")
 
 <hr>
 
