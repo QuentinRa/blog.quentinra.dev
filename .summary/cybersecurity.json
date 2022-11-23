@@ -242,7 +242,7 @@
       {
         "tag": "exploitation/web/burpsuite/index.md",
         "name": "Burp Suite",
-        "desc": "",
+        "desc": "Suite of tools for web pentesting.",
         "icon": "<i class=\"bi bi-tools\"></i>",
         "hidden": false
       }
@@ -251,7 +251,7 @@
       {
         "tag": "exploitation/network/index.md",
         "name": "Exploit network",
-        "desc": "",
+        "desc": "Notes about networking tools.",
         "icon": null,
         "hidden": false
       }
@@ -260,21 +260,21 @@
       {
         "tag": "exploitation/database/index.md",
         "name": "Exploit databases",
-        "desc": "",
+        "desc": "Notes about databases.",
         "icon": null,
         "hidden": false
       },
       {
         "tag": "exploitation/database/sqli/index.md",
         "name": "SQL injections",
-        "desc": "",
+        "desc": "Learn about SQLi (SQL injections).",
         "icon": null,
         "hidden": false
       },
       {
         "tag": "exploitation/database/sqlmap/index.md",
         "name": "SQLMap",
-        "desc": "",
+        "desc": "Tool to automate SQLi exploitation.",
         "icon": "<i class=\"bi bi-tools\"></i>",
         "hidden": false
       }
@@ -283,21 +283,21 @@
       {
         "tag": "privilege-escalation/index.md",
         "name": "Privilege escalation",
-        "desc": "",
+        "desc": "Methodology used from a regular user to get an administrative account.",
         "icon": null,
         "hidden": false
       },
       {
         "tag": "privilege-escalation/linux/index.md",
         "name": "Linux Priv. Esc.",
-        "desc": "",
+        "desc": "Key escalation vectors on Linux.",
         "icon": null,
         "hidden": false
       },
       {
         "tag": "privilege-escalation/windows/index.md",
         "name": "Windows Priv. Esc.",
-        "desc": "",
+        "desc": "Key escalation vectors on Windows.",
         "icon": null,
         "hidden": false
       }
@@ -306,7 +306,7 @@
       {
         "tag": "post-exploitation/index.md",
         "name": "Post-exploitation",
-        "desc": "",
+        "desc": "Once you got root/system/administrator, what do hackers do?",
         "icon": null,
         "hidden": false
       }

@@ -2,7 +2,7 @@
   "title": "IT",
   "description": "Notes about IT.",
   "courses": {
-    "Networking": [
+    "🌐 Networking 🌐": [
       {
         "tag": "networking/general/index.md",
         "name": "Networking",

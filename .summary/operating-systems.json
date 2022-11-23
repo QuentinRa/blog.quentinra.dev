@@ -2,7 +2,7 @@
   "title": "Operating Systems",
   "description": "Notes about Windows and Linux.",
   "courses": {
-    "Linux": [
+    "🦆  Linux  🦆": [
       {
         "tag": "linux/knowledge/index.md",
         "name": "Linux",
@@ -53,8 +53,7 @@
         "hidden": false
       }
     ],
-
-    "Windows": [
+    "<i class=\"bi bi-windows pe-2\"></i> Windows <i class=\"bi bi-windows ps-2\"></i>": [
       {
         "tag": "windows/knowledge/index.md",
         "name": "Windows",

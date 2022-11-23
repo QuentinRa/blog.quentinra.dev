@@ -1,8 +1,8 @@
 {
 	"title": "Archived notes",
-	"description": "",
+	"description": "Notes that may be very old or not really user-friendly/readable.",
 	"courses": {
-		"🌠 Projects 🌠": [
+		"🌠 Methodologies 🌠": [
 			{
 				"tag": "hmi",
 				"name": "HMI",
@@ -67,7 +67,7 @@
 				"hidden": false
 			}
 		],
-		"✂  Maths 🔬": [
+		"✂  &nbsp;Maths&nbsp;  ✂️": [
 			{
 				"tag": "optimization",
 				"name": "Optimization",
@@ -125,7 +125,7 @@
 				"hidden": false
 			}
 		],
-		"⛏️ Tools ⛏️": [
+		"⛏️ &nbsp;Tools&nbsp; ⛏️": [
 			{
 				"tag": "docker",
 				"name": "Docker",
@@ -283,6 +283,41 @@
 				"name": "API",
 				"desc": "An application programming interface (API) is an interface allowing a user to use someone else services without digging into the code.",
 				"icon": "<i class=\"bi bi-key\"></i>"
+			},
+			{
+				"tag": "low-level/system_calls/index.md",
+				"name": "System calls",
+				"desc": "Learn about the most-used system calls.",
+				"icon": null,
+				"hidden": false
+			},
+			{
+				"tag": "low-level/assembly/arm/index.md",
+				"name": "Assembly (ARM)",
+				"desc": "...",
+				"icon": null,
+				"hidden": false
+			},
+			{
+				"tag": "low-level/c/index.md",
+				"name": "C programming",
+				"desc": "...",
+				"icon": "<i class=\"bi bi-terminal-fill\"></i>",
+				"hidden": false
+			},
+			{
+				"tag": "cryptography/basics/index.md",
+				"name": "Crypto (basics)",
+				"desc": "A lot of mathematical foundations allowing one's to understand more easily cryptographic algorithms.",
+				"icon": null,
+				"hidden": false
+			},
+			{
+				"tag": "cryptography/algorithms/index.md",
+				"name": "Crypto (algorithms)",
+				"desc": "Cryptography is the knowledge related to the encryption and decryption of messages.",
+				"icon": null,
+				"hidden": false
 			}
 		],
 		"🎮 Games 🎮": [
@@ -364,30 +399,7 @@
 				"hidden": false
 			}
 		],
-		"Low-Level languages": [
-			{
-				"tag": "low-level/system_calls/index.md",
-				"name": "System calls",
-				"desc": "Learn about the most-used system calls.",
-				"icon": null,
-				"hidden": false
-			},
-			{
-				"tag": "low-level/assembly/arm/index.md",
-				"name": "Assembly (ARM)",
-				"desc": "...",
-				"icon": null,
-				"hidden": false
-			},
-			{
-				"tag": "low-level/c/index.md",
-				"name": "C programming",
-				"desc": "...",
-				"icon": "<i class=\"bi bi-terminal-fill\"></i>",
-				"hidden": false
-			}
-		],
-		"Databases": [
+		"🖥️ &nbsp;Databases&nbsp; 🖥️": [
 			{
 				"tag": "databases/sql/index.md",
 				"name": "SQL",
@@ -410,7 +422,7 @@
 				"hidden": false
 			}
 		],
-		"Web | Android": [
+		"🕸️ &nbsp;Web | Android&nbsp; 🕸️": [
 			{
 				"tag": "web/general/index.md",
 				"name": "WEB",
@@ -444,22 +456,6 @@
 				"name": "Android",
 				"desc": "Android application development using Android Studio, and Kotlin.",
 				"icon": "<i class=\"bi bi-globe\"></i>",
-				"hidden": false
-			}
-		],
-		"Cryptography": [
-			{
-				"tag": "cryptography/basics/index.md",
-				"name": "Crypto (basics)",
-				"desc": "A lot of mathematical foundations allowing one's to understand more easily cryptographic algorithms.",
-				"icon": null,
-				"hidden": false
-			},
-			{
-				"tag": "cryptography/algorithms/index.md",
-				"name": "Crypto (algorithms)",
-				"desc": "Cryptography is the knowledge related to the encryption and decryption of messages.",
-				"icon": null,
 				"hidden": false
 			}
 		]
