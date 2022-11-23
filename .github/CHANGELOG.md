@@ -1,6 +1,14 @@
 # Change Log
 
-## upcoming
+## v6.0.0 (2022-11-23)
+
+**Major changes**
+
+* Discontinuation of `memorize.be`
+* New domain: `blog.quentinra.dev`
+* Changing everything, for the last time
+
+## v5.1.0-pre (2022-11-23)
 
 **Added**
 
