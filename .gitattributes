@@ -1,6 +1,5 @@
-ensiie/*.md linguist-documentation=false linguist-detectable=true
-games/*.md linguist-documentation=false linguist-detectable=true
-info/*.md linguist-documentation=false linguist-detectable=true
-maths/*.md linguist-documentation=false linguist-detectable=true
-proj/*.md linguist-documentation=false linguist-detectable=true
-tools/*.md linguist-documentation=false linguist-detectable=true
+archives/*.md linguist-documentation=false linguist-detectable=true
+cybersecurity/*.md linguist-documentation=false linguist-detectable=true
+it/*.md linguist-documentation=false linguist-detectable=true
+operating-systems/*.md linguist-documentation=false linguist-detectable=true
+programming/*.md linguist-documentation=false linguist-detectable=true
