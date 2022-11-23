@@ -145,3 +145,5 @@ SMB] NTLMv2-SSP Client   : IP
 * `evil-winrm -i IP  -u username -p password` (remote powershell)
 * https://github.com/Hackplayers/evil-winrm
 * `-t 64` to domains
+* `awscli` (https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html)
+* Read all
