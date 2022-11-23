@@ -100,7 +100,7 @@
 * https://robertmuwanga.netlify.app/
 * https://niekdang.wordpress.com/
 
---- https://tryhackme.com/room/wgelctf
+--- https://tryhackme.com/room/wgelctf (done)
 
 * use common first, before small/...
 * `document.firstChild.nextSibling.innerHTML.match(/<!--.*?-->/g)`
@@ -111,6 +111,13 @@ List
 * html comments
 * gobuster
 * sudo -l
+
+<hr>
+
+## Random
+
+* https://owaspsamm.org/
+* https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
 
 <hr>
 
@@ -147,3 +154,4 @@ SMB] NTLMv2-SSP Client   : IP
 * `-t 64` to domains
 * `awscli` (https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html)
 * Read all
+* `pip3 install xxx`
