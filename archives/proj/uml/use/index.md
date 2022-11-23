@@ -12,7 +12,7 @@ The "Use case diagram" <small> (or "Diagramme de cas d'utilisation / usage" = DC
 
 A DCU looks like this
 
-![DCU example](images/LOyn2iCm34LdznGYUuQcUmcOpeL23o1irJ5nxIBBK-ZTgq02pI3ulFVv86F6AiZItkbaJAANW1JW62O17vcSn9BLe9F2O5EaB80LWh8FkXa3mODqeZ6gMHIRLibX9UZkx8cxjVwqvuEn4xcvDDdaS90ttFb5-LSlGDzVjv4z3tzvxOsKlNxn0m00.png)
+![DCU example](images/LOyn2iCm.png)
 
 with
 

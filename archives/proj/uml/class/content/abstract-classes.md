@@ -10,4 +10,4 @@ An abstract class is like a normal class, aside from the fact that we are allowe
 
 It's an alternative to interfaces since you can have attributes and write constructors.
 
-![abstract class](../images/LOvD2W8n38NNoIcoL8PUGCg0p5eyWBXeCm4hCfKs2lxCtQrrN7INzxsNv87pMPDZ9Rwud6cxoA6g5nfogYducmfjI1zNmGx0slzQtrCEJrcjYnic_PeS9qwYiXCznR4wznX6X1aHsllsRGmDIxwY4laLQMWf0c1exy_2UZXIh4Cki6lVm_m1.png)
+![abstract class](../images/LOvD2W8n.png)
