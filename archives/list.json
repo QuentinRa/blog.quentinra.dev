@@ -1,66 +1,66 @@
 {
 	"title": "Archived notes",
-	"description": "Notes that may be very old or not really user-friendly/readable.",
+	"description": "Notes that may be very old, not really user-friendly/readable, or with broken links/... ⚠️ (sorry).",
 	"courses": {
 		"🌠 Methodologies 🌠": [
 			{
-				"tag": "hmi",
+				"tag": "proj/hmi/index.md",
 				"name": "HMI",
 				"desc": "Learn about what you must think before making an interface. Tools to make mock-ups are also listed here.",
 				"icon": "<i class=\"bi bi-window\"></i>",
 				"hidden": false
 			},
 			{
-				"tag": "uml",
+				"tag": "proj/uml/index.md",
 				"name": "UML",
 				"desc": "UML is a tool used to work on the conception part of a project.",
 				"icon": "<i class=\"bi bi-map\"></i>",
 				"hidden": false
 			},
 			{
-				"tag": "make-a-project",
+				"tag": "proj/make-a-project/index.md",
 				"name": "Make a project",
 				"desc": "What's a project in real-life and how one should handle it.",
 				"icon": "<i class=\"bi bi-archive\"></i>",
 				"hidden": false
 			},
 			{
-				"tag": "make-git-project",
+				"tag": "proj/make-git-project/index.md",
 				"name": "Make Git project",
 				"desc": "A gathering of everything related to Git projects and their management.",
 				"icon": "<i class=\"bi bi-archive\"></i>",
 				"hidden": false
 			},
 			{
-				"tag": "agile-scrum",
+				"tag": "proj/agile-scrum/index.md",
 				"name": "Agile scrum",
 				"desc": "A project framework/methodology following the Agile mindset.",
 				"icon": "<i class=\"bi bi-shield-lock\"></i>",
 				"hidden": false
 			},
 			{
-				"tag": "design-patterns",
+				"tag": "proj/design-patterns/index.md",
 				"name": "Design patterns",
 				"desc": "Because writing code can be easier, and you would rather want to learn the good practices beforehand.",
 				"icon": null,
 				"hidden": false
 			},
 			{
-				"tag": "tests",
+				"tag": "proj/tests/index.md",
 				"name": "Tests",
 				"desc": "What are tests and assertions? What's the Test-driven development and the Behavior-driven development?",
 				"icon": "<i class=\"bi bi-cup\"></i>",
 				"hidden": false
 			},
 			{
-				"tag": "guidelines",
+				"tag": "proj/guidelines/index.md",
 				"name": "Code guidelines",
 				"desc": "What are the best practices when writing code? KISS, YAGNI, SOLID, DRY, and a lot more!",
 				"icon": "<i class=\"bi bi-award\"></i>",
 				"hidden": false
 			},
 			{
-				"tag": "methods",
+				"tag": "proj/methods/index.md",
 				"name": "Methodologies",
 				"desc": "Learn more about methods like model-driven dev, data-driven...",
 				"icon": "<i class=\"bi bi-emoji-dizzy\"></i>",
@@ -69,56 +69,56 @@
 		],
 		"✂  &nbsp;Maths&nbsp;  ✂️": [
 			{
-				"tag": "optimization",
+				"tag": "maths/optimization/index.md",
 				"name": "Optimization",
 				"desc": "A short introduction to optimization with examples in R.",
 				"icon": "<i class=\"bi bi-cash-coin\"></i>",
 				"hidden": false
 			},
 			{
-				"tag": "r",
+				"tag": "maths/r/index.md",
 				"name": "R language",
 				"desc": "The language used in most of the mathematics courses. You may use python instead.",
 				"icon": "<i class=\"bi bi-terminal\"></i>",
 				"hidden": false
 			},
 			{
-				"tag": "statistics",
+				"tag": "maths/statistics/index.md",
 				"name": "Statistics",
 				"desc": "Learn about statistics, be it descriptive or inferential statistics, with examples using R language.",
 				"icon": "<i class=\"bi bi-lightbulb\"></i>",
 				"hidden": false
 			},
 			{
-				"tag": "numerical-analysis",
+				"tag": "maths/numerical-analysis/index.md",
 				"name": "Numerical analysis",
 				"desc": "Learn some tips about how you should handle calculations such as Ax=b on a computer.",
 				"icon": null,
 				"hidden": false
 			},
 			{
-				"tag": "logic",
+				"tag": "maths/logic/index.md",
 				"name": "Logic",
 				"desc": "Learn about first-order logic, proofs, and demonstrations with examples using OCaml language.",
 				"icon": "<i class=\"bi bi-list-stars\"></i>",
 				"hidden": true
 			},
 			{
-				"tag": "probabilities",
+				"tag": "maths/probabilities/index.md",
 				"name": "Probabilities",
 				"desc": "An introduction to discrete and continuous probabilities.",
 				"icon": "<i class=\"bi bi-dice-5-fill\"></i>",
 				"hidden": false
 			},
 			{
-				"tag": "graph",
+				"tag": "maths/graph/index.md",
 				"name": "Graph theory",
 				"desc": "Graph are used to solve problems (find the shortest path, an Eulerian path, etc.) or in graph databases (Facebook, ...).",
 				"icon": "<i class=\"bi bi-bezier\"></i>",
 				"hidden": false
 			},
 			{
-				"tag": "matrix",
+				"tag": "maths/matrix/index.md",
 				"name": "Matrices",
 				"desc": "You will use matrices a lot (graphs, numerical analysis, statistics, ...) so it would be good to know more about them.",
 				"icon": "<i class=\"bi bi-rulers\"></i>",
