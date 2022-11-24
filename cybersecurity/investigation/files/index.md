@@ -85,7 +85,7 @@ $ steghide extract -sf file
 ```
 </div><div>
 
-The content may be protected by a password. In such case, you may try brute force. More information about wordlist [here](/cybersecurity/exploitation/general/index.md#-wordlists-).
+The content may be protected by a password. In such a case, you may try brute force. More information about wordlists [here](/cybersecurity/exploitation/general/index.md#-wordlists-).
 
 ```bash
 # https://github.com/RickdeJager/stegseek
