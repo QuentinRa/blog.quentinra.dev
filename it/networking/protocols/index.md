@@ -1,8 +1,8 @@
 # Protocols & services
 
-Any knowledge related to protocols, and services, such as ftp, ssh, sftp, scp, telnet, smtp...
+Any knowledge related to protocols, and services, such as FTP, SSH, SFTP, SCP, Telnet, SMTP...
 
-> A lot of protocols were sending data/credentials as plaintext=unencrypted. Later, protocols such as SSL (Secure Sockets Layer) which was replaced with TLS (more secure), were introduced to improve existing protocols by adding encryption. TLS is usually referred as SSL/TLS. 
+> A lot of protocols were sending data/credentials as plaintext=unencrypted. Later, protocols such as SSL (Secure Sockets Layer) which was replaced with TLS (more secure), were introduced to improve existing protocols by adding encryption. TLS is usually referred to as SSL/TLS. 
 
 <hr class="sep-both">
 
@@ -10,17 +10,17 @@ Any knowledge related to protocols, and services, such as ftp, ssh, sftp, scp, t
 
 <div class="row row-cols-md-2 mt-3"><div class="border-end border-dark">
 
-### 🔓 Telnet - 23 (tcp)
+### 🔓 Telnet - 23 (TCP)
 
-No encryption neither for the credentials nor the data exchanged.
+No encryption neither for the credentials or the data exchanged.
 
 ```bash
 $ telnet IP port
-# 1. the server send the protocol banner
-# 2. the user write text while following the protocol
+# 1. the server sends the protocol banner
+# 2. the user writes text while following the protocol
 ```
 
-Example with HTTP 1.1
+As an example, for HTTP version 1.1, you can write
 
 ```bash
 $ telnet IP 80
@@ -31,12 +31,12 @@ Host: example.com
 
 </div><div class="border-st art border-dark ps-4">
 
-### 🔒 SSH - 22 (tcp)
+### 🔒 SSH - 22 (TCP)
 
 ```bash
 $ ssh login@IP
 $ ssh login@IP -u port
-# use a private key
+# you can use a private key
 # instead of a password
 $ ssh login@IP -i /path/to/id_rsa
 ```
@@ -48,11 +48,11 @@ $ ssh login@IP -i /path/to/id_rsa
 
 <div class="row row-cols-md-2 mt-3"><div class="border-end border-dark">
 
-### 🔓 ftp - 21 (tcp)
+### 🔓 FTP - 21 (TCP)
 
 ➡️&nbsp; There is a secure version called FTPS (port 990).
 
-No encryption neither for the credentials nor the data exchanged.
+No encryption neither for the credentials or the data exchanged.
 
 ```bash
 $ ftp IP # use current user username
@@ -61,15 +61,15 @@ $ ftp username@IP -p port
 ftp> help
 ```
 
-Once in a FTP shell, you may use the commands, see the [section 5.3.1.](https://www.rfc-editor.org/rfc/rfc959)
+Once in an FTP shell, you may use the commands, see the [section 5.3.1.](https://www.rfc-editor.org/rfc/rfc959)
 
 <details class="details-e">
 <summary>FTP commands summary</summary>
 
-**Note**: ⚠️I had some issues when using paths with put/get, the transfer would always fail. By using only file name, meaning starting FTP in the directory where my file was, solved the problem, but...
+**Note**: ⚠️I had some issues when using paths with put/get, the transfer would always fail. Using only the file name, meaning starting FTP in the directory where my file was, solved the problem, but...
 
 ```bash
-ftp> pwd # path to current folder
+ftp> pwd # path to the current folder
 ftp> ls folder # list files
 ftp> cd folder # move to folder
 ftp> put /local/path /remote/dest # upload
@@ -92,14 +92,14 @@ ftp> stat # same, but there is the version+ftp client name
 
 An FTP request is starting with the server sending `USER`, the client answering with a username, the server sending `PASS`, and the user answering back with the password.
 
-There are two modes in FTP: active, and passive. The mode determine the port used to transfer data. Data is transferred via the port 20, while in passive mode, a port higher than 1023 (reserved/system ports) will be used.
+There are two modes in FTP: active, and passive. The mode determines the port used to transfer data. Data is transferred via the port 20, while in passive mode, a port higher than 1023 (reserved/system ports) will be used.
 
-There are two channels in a FTP connection: a channel to send commands <small>(also called control)</small>, and one to transfer data. There is also a transfer mode, which could be ascii, or binary (default). You can enter `type [a|i]` or `ascii|binary` to switch.
+There are two channels in an FTP connection: a channel to send commands <small>(also called control)</small>, and one to transfer data. There is also a transfer mode, which could be ASCII, or binary (default). You can enter `type [a|i]` or `ascii|binary` to switch.
 </details>
 
 </div><div class="border-st art border-dark ps-4">
 
-### 🔒 scp/sftp - 22 (tcp)
+### 🔒 SCP/SFTP - 22 (TCP)
 
 Secure versions of FTP built over SSH.
 
@@ -117,17 +117,17 @@ $ scp user@IP:remote/path/ local_path_to_dest
 
 ## Sending mails
 
-No encryption neither for the credentials nor the data exchanged.
+No encryption neither for the credentials or the data exchanged.
 
 <div class="row row-cols-md-2 mt-3"><div class="border-end border-dark">
 
-### 🔓 SMTP - 25 (tcp)
+### 🔓 SMTP - 25 (TCP)
 
 ➡️&nbsp; There is a secure version called SMTPS (port 445).
 
-Simple Mail Transfer Protocol (SMTP) is a protocol is used by a mail client (**Mail User Agent**) to transfer mails (**Mail Submission Agent**) to a server that can transfer them for delivery called **Mail Transfer Agent**.
+Simple Mail Transfer Protocol (SMTP) is a protocol used by a mail client (**Mail User Agent**) to transfer emails (**Mail Submission Agent**) to a server called **Mail Transfer Agent**. This server will transfer emails to another server that will handle the delivery.
 
-You could use the analogy of an MSA being the postman that take mails from your inbox (MUA) and deliver them to the post center (MTA).
+You could use the analogy of an MSA being the postman that takes mail from your inbox <small>(MUA)</small> and deliver them to the post center <small>(MTA)</small>.
 
 ```bash
 $ telnet IP 25
@@ -144,13 +144,13 @@ xxx
 
 </div><div class="border-st art border-dark ps-4">
 
-The Mail Transfer Agent will send the mail to a **Mail Delivery Agent** which is the server that the client will query to access its mails. It's common for a MTA to also be an MDA. 
+The Mail Transfer Agent will send the mail to a **Mail Delivery Agent** which is the server that the client will query to access his/her emails. It's common for an MTA to also be an MDA. 
 
-### 🔓 POP3 - 110 (tcp)
+### 🔓 POP3 - 110 (TCP)
 
 ➡️&nbsp; There is a secure version called POP3S (port 995).
 
-Post Office Protocol version 3 is a protocol that open the box, check if there are mails, if there are any, they are download and removed from the box.
+Post Office Protocol version 3 is a protocol that opens the box, checks if there are emails, and if any, downloads and removes them from the box.
 
 ```bash
 $ telnet IP 110
@@ -163,7 +163,7 @@ RETR 1 # retrieve the first message
 
 It's possible to configure POP3 so that mails aren't removed, but due to how it works, mails will remain marked as "new", and the client will lose track of whether a mail was read or not.
 
-### 🔓 IMAP - 143 (tcp)
+### 🔓 IMAP - 143 (TCP)
 
 ➡️&nbsp; There is a secure version called IMAPS (port 993).
 
@@ -181,7 +181,7 @@ unique_token3 LOGOUT # logout
 
 <hr class="sep-both">
 
-## 🔓 HTTP - 80 (tcp)
+## 🔓 HTTP - 80 (TCP)
 
 ➡ There is a secure version called HTTPS (port 443).
 
@@ -228,17 +228,17 @@ The server will answer with an [HTTP response code](https://developer.mozilla.or
 
 <hr class="sep-both">
 
-## ⚡ RPC - 111 (tcp/udp)
+## ⚡ RPC - 111 (TCP/udp)
 
 <div class="row row-cols-md-2"><div>
 
-On RPC port, from what I understood, there is a tcp/udp service called `rpcbind` that if running, can be used to find the port used by a protocol from a protocol number.
+On RPC port, from what I understood, there is a TCP/udp service called `rpcbind` that if running, can be used to find the port used by a protocol from a protocol number.
 </div><div>
 </div></div>
 
 <hr class="sep-both">
 
-## 🔒 Samba - 445 (or 139 before, tcp)
+## 🔒 Samba - 445 (or 139 before, TCP)
 
 <div class="row row-cols-md-2"><div>
 
@@ -275,7 +275,7 @@ smb> exit # there is also "q" and "quit"
 
 <hr class="sep-both">
 
-## 🔒 NFS - 2049 (tcp)
+## 🔒 NFS - 2049 (TCP)
 
 <div class="row row-cols-md-2 mt-2"><div>
 
@@ -305,7 +305,7 @@ $ cat /etc/exports
 
 <hr class="sep-both">
 
-## 🔒 Remote Desktop Protocol (RDP) - 3389 (tcp)
+## 🔒 Remote Desktop Protocol (RDP) - 3389 (TCP)
 
 <div class="row row-cols-md-2"><div>
 
