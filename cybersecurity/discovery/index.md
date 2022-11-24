@@ -4,7 +4,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-Discovery, or host discovery, is the core of the active reconnaissance (recon) activities.
+Discovery, or host discovery, is the core of active reconnaissance (recon) activities.
 
 * Find running services, their version... 🧭
 
@@ -22,20 +22,20 @@ Discovery, or host discovery, is the core of the active reconnaissance (recon) a
 * ...
 </div><div>
 
-There is a lot of ways to perform its discovery 
+There are a lot of ways to perform its discovery 
 
 * `ping`: test if the host is up, and accepting ICMP packets. Useful to find if the option `-Pn` must be used in `nmap`.
 
-* **Nmap** ([course](nmap/index.md)): to find open ports, their services+version with `-sV`, the os with `-O` or `-sV`, and try to exploit vulnerabilities
+* **Nmap** ([course](nmap/index.md)): to find open ports, their services+version with `-sV`, the OS with `-O` or `-sV`, and try to exploit vulnerabilities
 
 * **Nessus** ([course](nessus/index.md)): find open ports and their vulnerabilities. This is a local website that can be used when needing an automated, noisy, slow, but somewhat advanced scan.
 
-* A hacker could other things such as getting in touch with employees, and trying to use social engineering to learn more about their company.
+* A hacker could do other activities such as getting in touch with employees, and trying to use social engineering to learn more about their company.
 
-* `traceroute/tracepath` which are using the TTL to know how much steps/hops it took for a packet to reach the target <small>(they increase the TTL by one, and try to get the intermediaries IPs as they respond that the packet was destroyed, but most aren't responding, so we got no information. Also, the route may change, as routers are always calculating the most optimal route)</small>.
-
-> CTF: Lunch at least a scan on all ports in the background while exploring the firsts interesting ports.
+* `traceroute/tracepath` which are using the TTL to know how many steps/hops it took for a packet to reach the target <small>(they increase the TTL by one, and try to get the intermediaries IPs as they respond that the packet was destroyed, but most aren't responding, so we got no information. Also, the route may change, as routers are always calculating the most optimal route)</small>.
 </div></div>
+
+> CTF 🌟: Lunch at least a scan on all ports in the background while exploring the first interesting ports. See [Rustscan below](#rustscan).
 
 <hr class="sep-both">
 
@@ -66,7 +66,7 @@ $ masscan scanme.nmap.org ‐‐top-ports 100 --rate 1000
 
 <div class="row row-cols-md-2"><div>
 
-[aquatone](https://github.com/michenriksen/aquatone) (4.9k ⭐) is from what I understood, a tool that can automate the process of inspection the website on a port, given a (supposedly long) list of IP addresses.
+[aquatone](https://github.com/michenriksen/aquatone) (4.9k ⭐) is from what I understood, a tool that can automate the process of inspecting the website on a port, given a (supposedly long) list of IP addresses.
 </div><div>
 
 It can take reports generated with nmap/masscan, and do its job.
@@ -80,7 +80,7 @@ It can take reports generated with nmap/masscan, and do its job.
 
 [RustScan](https://github.com/RustScan/RustScan) (8.4k ⭐) is a very fast and noisy port scanner designed for CTFs. You can scan all 65k ports in a few seconds.
 
-It's not installed by default on Kali. First, search the latest `.deb` that you can find on their [release page](https://github.com/RustScan/RustScan/releases).
+It's not installed by default on Kali. First, search for the latest `.deb` that you can find on their [release page](https://github.com/RustScan/RustScan/releases).
 
 ```bash
 # there wasn't the .deb for the latest

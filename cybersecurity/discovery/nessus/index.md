@@ -17,7 +17,7 @@ $ sudo systemctl start nessusd.service
 * [You will need an activation code](https://www.tenable.com/products/nessus/nessus-essentials)
 </div><div>
 
-Once you are logged on the website, you can create new scans.
+Once you are logged in to the website, you can create new scans.
 
 * **Host Discovery**: find alive hosts
 * **Basic network scan**: sort of nmap
@@ -32,7 +32,7 @@ Most scans have the following options
 * In the credential tabs, you can log in to an account.
 * **Launch**: explore vulnerabilities to see results
 
-It's important to note that Nessus is generating a lot of traffic, and may not find every vulnerability, so you shouldn't grow dependant of it, and do things "manually" when you can.
+It's important to note that Nessus is generating a lot of traffic, and may not find every vulnerability, so you shouldn't grow dependent on it, and do things "manually" when you can.
 
 </div></div>
 
@@ -40,13 +40,13 @@ It's important to note that Nessus is generating a lot of traffic, and may not f
 
 <hr class="sep-both">
 
-## 🥳 metasploit and nessus ⚡
+## 🥳 Metasploit and nessus ⚡
 
-[See metasploit framework - Database / Workspaces](/cybersecurity/exploitation/general/metasploit/msfconsole.md#-the-metasploit-database-)
+[See Metasploit framework - Database / Workspaces](/cybersecurity/exploitation/general/metasploit/msfconsole.md#-the-metasploit-database-)
 
 <div class="row row-cols-md-2"><div>
 
-First, in Nessus web interface, when exploring each vulnerability one by one, you may find a section **Exploitable With** indicating tools that Nessus knows which you can use them to test the exploit.
+First, in the Nessus web interface, when exploring each vulnerability one by one, you may find a section **Exploitable With** indicating tools that Nessus knows you can exploit this vulnerability with these.
 
 ![nessus_exploit_with](_images/nessus_exploit_with.png)
 
@@ -56,7 +56,7 @@ First, in Nessus web interface, when exploring each vulnerability one by one, yo
 * Four, work on it
 </div><div>
 
-Everything below is coming from [this tutorial](https://scubarda.com/2015/11/16/launching-nessus-scans-inside-metasploit/), but metasploit unleashed has also [some tips](https://www.offensive-security.com/metasploit-unleashed/working-with-nessus/).
+Everything below is coming from [this tutorial](https://scubarda.com/2015/11/16/launching-nessus-scans-inside-metasploit/), but Metasploit unleashed has also [some tips](https://www.offensive-security.com/metasploit-unleashed/working-with-nessus/).
 
 ```bash
 msf6 > load nessus
