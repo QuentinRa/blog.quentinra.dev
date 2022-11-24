@@ -2,7 +2,7 @@
 
 Knowledge related to using Linux on Windows.
 
-> If you are having troubles, you may [check the Windows club](https://www.thewindowsclub.com/).
+> If you are having some problems, you may [find something in the Windows club](https://www.thewindowsclub.com/).
 
 <hr class="sl">
 
@@ -12,8 +12,8 @@ Knowledge related to using Linux on Windows.
 
 Windows Subsystem for Linux lets developers run a GNU/Linux environment including most command-line tools, utilities, and applications, directly on Windows [according to the Windows Subsystem for Linux Documentation](https://learn.microsoft.com/en-us/windows/wsl/).
 
-1. Click on the search icon / search for a program
-2. Look for powershell
+1. Click on the search icon/search for a program
+2. Look for PowerShell
 3. Right-click on it > "Run as administrator"
 
 ![run_powershell_as_admin](_images/run_powershell_as_admin.png)
@@ -43,7 +43,7 @@ On Windows, you can browse your WSL files in the Linux section of your file expl
 <details class="details-e">
 <summary>Add a low-quality graphical user interface (GUI)</summary>
 
-It will be a low quality once, but it still possible for some software. You need to install [XMing](http://www.straightrunning.com/XmingNotes/), and [XMing fonts](http://www.straightrunning.com/XmingNotes/). **Scroll to "public domain" to find the download links**. Then, every time you need to use `-c` (graphical version), start XMing first. For instance
+It will be a low-quality interface, but it's still an option for some software. You need to install [XMing](http://www.straightrunning.com/XmingNotes/), and [XMing fonts](http://www.straightrunning.com/XmingNotes/). **Scroll to "public domain" to find the download links**. Then, every time you need to use `-c` (graphical version), start XMing first. For instance
 
 ```bash
 $ sudo apt-get update
@@ -80,7 +80,7 @@ Instead of adding a low-quality graphical user interface, it would be better to 
 
 Cygwin is "a large collection of GNU and Open Source tools which provide functionality similar to a Linux distribution on Windows" according to the [Cygwin Project website](https://www.cygwin.com/). 
 
-This is basically a collection of .exe for most, if not all, Linux commands. This will allow you, if you want, to call Linux commands in a PowerShell.
+This is basically a collection of .exe for most, if not all, Linux commands. This will allow you, if you want, to call Linux commands in PowerShell.
 
 You will also have a Cygwin console, in which you can run your commands, but **you can only install new commands using the installer**.
 </div><div>
@@ -93,8 +93,8 @@ You will also have a Cygwin console, in which you can run your commands, but **y
 
 Now, you have to pick the **commands** you want, which means replacing "Skip" <small>(in the column "New")</small> with a version of the command. You should use the search bar. You may install `vim`, `wget`/`curl`, and `make` to compile Makefiles.
 
-6. Then process with the installation
-7. Now, you should open a new terminal on Windows (ex: Powershell, cmd, ...) and write a command
+6. Finish the installation
+7. Now, you should open a new terminal on Windows (ex: PowerShell, cmd, ...) and write a command
 
 ```bash
 $ make -v
@@ -121,9 +121,9 @@ You will most likely have to transfer files to a server. You may use the graphic
 
 Once connected,
 
-* **Upload**: simply drag and drop a file in a folder on your server.
+* **Upload**: simply drag and drop a file into a folder on your server.
 
-* **Download**: simply drag and drop a file in a folder on your computer.
+* **Download**: simply drag and drop a file into a folder on your computer.
 </div><div>
 
 Add a server
@@ -147,14 +147,14 @@ Add a server
 
 <div class="row row-cols-md-2"><div>
 
-There two graphical interfaces
+Here are two graphical interfaces
 
 * [Putty](https://putty.org/)
 * [mobaxterm](https://mobaxterm.mobatek.net/)
 
 </div><div>
 
-Otherwise, if ssh is not installed on your computer, you can install it using [GitSCM](https://git-scm.com/), which will also install scp, and some others commands you might need.
+Otherwise, if ssh is not installed on your computer, you can install it using [GitSCM](https://git-scm.com/), which will also install scp, and some other commands you might need.
 </div></div>
 
 <hr class="sl">
