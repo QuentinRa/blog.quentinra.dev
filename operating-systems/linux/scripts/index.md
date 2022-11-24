@@ -45,7 +45,7 @@ The Portable Operating System Interface (**POSIX**) is a family of standards (`n
 
 **This course will focus on making POSIX-compliant scripts**.
 
-<span class="h4">As such if you want to make bash-only scripts, read the bash-course to improve your posix scripts by using bash-only syntax </span><small>(usually shorter, faster, and/or simplified)</small>.
+<span class="h4">As such, if you want to make bash-only scripts, read the bash-course to improve your POSIX scripts by using bash-only syntax </span><small>(usually shorter, faster, and/or simplified)</small>.
 
 </div><div>
 
@@ -218,11 +218,11 @@ fi
 Others
 
 * `str1 == str2`: true if "str1" is the same as "str2"
-* `str1 != str2`: true if "str1" is the different than "str2"
+* `str1 != str2`: true if "str1" is the different from "str2"
 </details>
 
 <details class="details-e">
-<summary>Special conditions (is file, exists...)</summary>
+<summary>Special conditions (is it a file, does it exist...)</summary>
 
 * `-f path`: true, if `path` leads to a regular file
 * `-d path`: true, if `path` leads to a folder
@@ -530,7 +530,7 @@ while read line; do
 done
 ```
 
-Which can be enhanced by doing the redirection at the end, meaning that every output <small>(every echo...)</small> will be redirected to `toto.txt`.
+This can be enhanced by doing the redirection at the end, meaning that every output <small>(every echo...)</small> will be redirected to `toto.txt`.
 
 ```bash
 while read line; do

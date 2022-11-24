@@ -44,13 +44,6 @@
         "desc": "Learn about Bash-only features.",
         "icon": null,
         "hidden": false
-      },
-      {
-        "tag": "linux/windows/index.md",
-        "name": "Linux on Windows",
-        "desc": "Knowledge related to using Linux on Windows.",
-        "icon": null,
-        "hidden": false
       }
     ],
     "<i class=\"bi bi-windows pe-2\"></i> Windows <i class=\"bi bi-windows ps-2\"></i>": [
