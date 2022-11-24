@@ -7,7 +7,7 @@
 [![pentestingfundamentals](../_badges/thm/pentestingfundamentals.svg)](https://tryhackme.com/room/pentestingfundamentals)
 [![principlesofsecurity](../_badges/thm/principlesofsecurity.svg)](https://tryhackme.com/room/principlesofsecurity)
 
-A lot of stuff to get started in cybersecurity, including websites to learn, practice, find news, look for news, along with CVE lookup, and websites to check if your credentials leaked, or stuff like that. 
+A lot of stuff to get started in cybersecurity, including websites to learn, practice, find news, look for news, CVE lookup, and websites to check if your credentials leaked, or stuff like that. 
 
 > You may also check [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources) (GitHub).<br>
 > If you are tired, learn [some excuses to not do your job properly](https://cyberwtf.com/).
@@ -27,13 +27,13 @@ A cyber expert can specialize in offense/defense
 <tr><td>Work</td>
 <td>
 
-Look for vulnerabilities (bug, loopholes) in the tools/software of a company, try to exploit them, and suggest patches.
+Look for vulnerabilities (bugs, loopholes) in the tools/software of a company, try to exploit them, and suggest patches.
 </td>
 <td>
 
-Prevent attacks <small>(firewall, IPS)</small>. Monitor, and analyse traffic... Detect, and stop attacks as fast as possible. Investigate/Do Forensics. Find attack paths/track down hackers.
+Prevent attacks <small>(firewall, IPS)</small>. Monitor, and analyze traffic... Detect, and stop attacks as fast as possible. Investigate/Do Forensics. Find attack paths/track down hackers.
 
-Do awareness, documenting the network/devices, update and ensure that the company is protected against known vulnerabilities.
+Do awareness, document the network/devices, update, and ensure that the company is protected against known vulnerabilities.
 </td></tr>
 
 <tr><td>Skills</td>
@@ -62,26 +62,27 @@ Knowledgeable about
 <tr><td></td>
 <td>
 
-* **Rules of Engagement (ROE)**: agreement between a penetration tester and the system owner, defining the scope (servers), and the rules (techniques allowed). Everything outside the scope is illegal (ex: [SANS ROE template](https://sansorg.egnyte.com/dl/bF4I3yCcnt/)).
-* You can have no knowledge about the target <small>(black box)</small>, a partial knowledge <small>(grey box)</small>, or a complete knowledge <small>(white box)</small>. According to your knowlege of the application, you will test different things.
+* **Rules of Engagement (ROE)**: an agreement between a penetration tester and the system owner, defining the scope <small>(servers)</small>, and the rules <small>(techniques allowed)</small>. Everything outside the scope is illegal (ex: [SANS ROE template](https://sansorg.egnyte.com/dl/bF4I3yCcnt/)).
+
+* You can have no knowledge about the target <small>(black box)</small>, a partial knowledge <small>(grey box)</small>, or a complete knowledge <small>(white box)</small>. According to your knowledge of the application, you will test different things.
 
 </td>
 <td>
 
-* **SIEM**: A Security Information and Event Management system is combine information from various places in one interface <small>(login attempts...)</small>.
-* **Security Operation Center** (SOC): a team of cybersecurity professionals working 24/7 <small>(detect unusual activity, vulnerabilities, intrusions, violations, training/awareness)</small>. They are using the firewall/dns/DHCP/... logs, Network security monitoring (NSM), and they might use a SIEM.
+* **SIEM**: A Security Information and Event Management system is centralizing information from various places in one interface <small>(login attempts...)</small>.
+* **Security Operation Center** (SOC): a team of cybersecurity professionals working 24/7 <small>(detect unusual activity, vulnerabilities, intrusions, violations, training/awareness)</small>. They are using the firewall/DNS/DHCP/... logs, Network security monitoring (NSM), and they might use a SIEM.
 * **Threat Intelligence**: dig information about actual and potential enemies, and prepare in case they attack you.
-* **Threat hunting**: if a machine is suspected to have been intruded, they start hunting to confirm they assumption.
-* **Threat modelling**: review, and improve the security measures (STRIDE, PASTA)
-* **Defence in Depth**: try to delay the attack with multiple varied layers of security, with the aim to stopping the hacker momentum
+* **Threat hunting**: if a machine is suspected to have been intruded, they start hunting to confirm their assumption.
+* **Threat modeling**: review, and improve the security measures (STRIDE, PASTA)
+* **Defence in Depth**: use of multiple layers of security, along with various tactics, to slow down any intruder
 </td></tr>
 
 <tr><td>Jobs</td>
 <td>
 
-* **Red Teamer**: play the hacker, provide feedback from an enemy perspective. They are testing the company response.
+* **Red Teamer**: play the hacker, and provide feedback from an enemy perspective. They are testing the company response.
 * **Penetration tester**: Try to find vulnerabilities in a system, a network, or an application. Perform security assessments, and audits. Recommend actions to prevent attacks.
-* **Security Engineer**: implement, and maintain security controls, threats protection... to help prevent cyberattacks, and protect data.
+* **Security Engineer**: implement, and maintain security controls, handle threats protection... to help prevent cyberattacks, and protect data.
 
 </td>
 <td>
@@ -95,7 +96,7 @@ Knowledgeable about
 </tbody></table>
 
 > There are **White hats**: hackers that follow the rules, and try to benefit others<br>
-> There are **Grey hats**: hackers that are usually not following the rules, but often benefit others <small>(take down malicious website)</small><br>
+> There are **Grey hats**: hackers that are usually not following the rules, but often benefit others <small>(take down malicious websites)</small><br>
 > And, obviously, there are [**Black hats**](https://www.blackhat.com/) (criminals/hackers).
 
 <hr class="sep-both">
@@ -106,34 +107,34 @@ Knowledgeable about
 
 * **Cyber/Data Breach**: a leak of data
 * **Vulnerability**/**weakness**: a failure/flaw in a system
-* **Exploits**: code that make use of a vulnerability to gain access to a machine, install a malware, steal data...
-* **Social engineering**: hackers manipulate someone, to make them compromise the system, or do something that benefit them.
-* **Incident**: something unexpect occurred, which could be an intrusion
+* **Exploits**: code that makes use of a vulnerability to gain access to a machine, install malware, steal data...
+* **Social engineering**: hackers manipulate someone, to make them compromise the system, or do something that benefits them.
+* **Incident**: something unexpected occurred, which could be an intrusion
 
 <br>
 
 A look at cyberattacks categories ([source](https://www.malwarebytes.com/))
 
-* **ransomware** 🔒: lock your system, ask for a ransom.
+* **ransomware** 🔒: lock your system, and ask for a ransom.
 * **adware** 📰: hide, and show ads in the browser, may monitor the user to show relevant ads.
-* **spyware** 🕵️: hide, and monitor user, steal credentials...
+* **spyware** 🕵️: hide, monitor users, steal credentials...
 * **phishing** 🎣: pose as someone trustworthy, in order to steal your information
-* **spoofing** 🎣: usurp someone else identify, to get access, steal data...
+* **spoofing** 🎣: usurp someone else identity, to get access, steal data...
 * **trojans horse** 🎠: programs that pretend to do something, while actually doing something malicious
-* **ddos** 💥: send false traffic in bulk to take down servers
+* **DDoS** 💥: send false traffic in bulk to take down servers
 * **cryptojacking** ⛏️: hide, and mine currencies on your computer
 * **virus** 😎: attached to a program, replicate, and spread
 </div><div>
 
 * **0 Day**/Zero day: an unknown vulnerability that was just discovered
-* **Advanced Persistent Threat** (APT): usually, a hacker want to remain as long as possible within an infected network. They are using backdoors, and keep updating the code to avoid being discovered.
-* **RansomwareAsAService** (RAAS): hackers selling their skills to other hackers, in exchange for a part of their benefices. There is also "MalwareAsAService" (MAAS), which is the same with malware.
+* **Advanced Persistent Threat** (APT): usually, a hacker wants to remain as long as possible within an infected network. They are using backdoors, and keep updating the code to avoid being discovered.
+* **RansomwareAsAService** (RAAS): hackers selling their skills to other hackers, in exchange for a part of their benefices. There is also "MalwareAsAService" (MAAS), which is the same but with malware.
 
 <br>
 
 * The security triad **CIA**: Confidentiality <small>(only allowed users can read it)</small>, Integrity <small>(not tampered)</small>, Availability <small>(available when needed)</small>. The opposite is DAD <small>(Disclosure, Alternation, and Destruction)</small>.
 * **Principle of the least privileges**: based on the role, and the data being shared.
-  * Privileged Identity Management (PIM): from organisation role to system role
+  * Privileged Identity Management (PIM): from organization role to system role
   * Privileged Access Management (PAM): manage the role that a privileged user has.
   * Models: Bell-LaPadula, Biba Model
 
@@ -144,7 +145,7 @@ A look at cyberattacks categories ([source](https://www.malwarebytes.com/))
 * **Endpoint Detection and Response** (EDS)
 * **Deceptive security**
 * **Virtual Private Network** (VPN): it ensures both integrity <small>(not tampered)</small>, and confidentiality <small>(can't read it)</small> of the network traffic.
-* **Host firewall**: a program shipped with the Operating System to filter packets as firewall do
+* **Host firewall**: a program shipped with the Operating System to filter packets as a firewall does
 </div></div>
 
 > **Random**: most CTF challenges use the infamous rockyou.txt wordlist of passwords <small>(from a data breach of rockyou.com in 2009)</small>, through they were most likely not user passwords.
@@ -158,17 +159,17 @@ A look at cyberattacks categories ([source](https://www.malwarebytes.com/))
 
 <tr><td>Estonia (2007)<br><b>DDOS</b></td><td>
 
-First major attack against a country by a group of russian hackers. They used botnets from 87 countries targeting websites of Estonian banks/...
+The first major attack against a country. A Russian group used botnets from 87 countries to attack Estonian banks/...
 </td></tr>
 
 <tr><td>Stuxnet (2010)<br><b>SCADA</b></td><td>
 
-First attack targeting SCADA systems. An infected USB key was connected a computer on the internal network. One of the 3 virus of the "olympic games" along **DuQu**, and **Flame**. Supposedly made by the NSA, and Iran.
+The first attack targeting SCADA systems. An infected USB key was connected a computer on the internal network. One of the 3 viruses of the "olympic games" along **DuQu**, and **Flame**. Supposedly made by the NSA, and Iran.
 </td></tr>
 
 <tr><td>WannaCry (2017)<br><b>Ransomware</b></td><td>
 
-Use a vulnerability in Windows. The exploit was created by the NSA and  stolen by hackers in 2013. The NSA notified Microsoft when this virus was released so that they patch it. Used in 2017 by North Korea, infected 200 000 computers. Auto-replicating virus, asking for a ransom. The NSA added a kill-switch to the exploit, allowing anyone knowing it to stop the propagation.
+Use a vulnerability in Windows. The exploit was created by the NSA and  stolen by hackers in 2013. The NSA notified Microsoft when this virus was released so that they patch it. Used in 2017 by North Korea, infected 200 000 computers. Auto-replicating virus, asking for a ransom. The NSA added a kill switch to the exploit, allowing anyone knowing it to stop the propagation.
 </td></tr>
 </table>
 
@@ -244,7 +245,7 @@ Nothing much yet.
 * [leakcheck](https://leakcheck.io/) (premium?)
 * [dehashed](https://dehashed.com/) (premium?)
 * [monitor.firefox.com](https://monitor.firefox.com/)
-* [breachdirectory](https://www.breachdirectory.org/) (you can some some half-censured passwords)
+* [breachdirectory](https://www.breachdirectory.org/) (you can see some half-censured passwords)
 
 There is also [vigilante.pw](https://github.com/wedataintelligence/Vigilante.pw/blob/master/data.csv) / [breaches.net](https://breaches.net/) / [nuclearleaks.com](https://nuclearleaks.com/search) / [monitor.firefox.com](https://monitor.firefox.com/breaches) listing information about data leaks.
 </div></div>
@@ -253,7 +254,7 @@ There is also [vigilante.pw](https://github.com/wedataintelligence/Vigilante.pw/
 
 ## Blogs
 
-A list of blogs that I want to check out one day. There are too many pilling up, so I filter them and keep the most interesting ones.
+This is a list of blogs that I want to check out one day. There are too many piling up, so I filter them and keep the most interesting ones.
 
 <div class="row row-cols-md-4 mt-3"><div>
 
@@ -281,13 +282,13 @@ A list of blogs that I want to check out one day. There are too many pilling up,
 * [ryanplatten](https://ryanplatten.com/various-journal-entries/)
 * [kalilinuxtutorials](https://kalilinuxtutorials.com/)
 * [mrash.co](https://mrash.co/)
-* [sckull.github.io/](https://sckull.github.io/)
+* [sckull](https://sckull.github.io/)
 * [ctf.ac](https://ctf.ac/)
-* [narancsblog.com](https://narancsblog.com/category/thm/)
-* [xapax.github.io](https://xapax.github.io/security/#)
+* [narancsblog](https://narancsblog.com/category/thm/)
+* [xapax](https://xapax.github.io/security/#)
 * [total-oscp-guide](https://github.com/alexb49/total-oscp-guide)
 * [fr33s0ul.tech](https://fr33s0ul.tech/index.html)
-* [blog.cyberethical.me](https://blog.cyberethical.me/)
+* [yberethical](https://blog.cyberethical.me/)
 * [dailycompute](https://dailycompute.net/)
 * [ammmy7580](https://ammmy7580.gitbook.io/)
 * [hacking-capture](https://hacking-capture.github.io/)

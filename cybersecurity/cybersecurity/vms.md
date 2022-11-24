@@ -1,6 +1,6 @@
 # Virtual Machines
 
-Notes about Virtual Machine, Emulator, along with links to download CTF Virtual Machines to have some fun.
+Notes about Virtual Machine, Emulators, along with links to download CTF Virtual Machines to have some fun.
 
 <hr class="sep-both">
 
@@ -14,18 +14,18 @@ Notes about Virtual Machine, Emulator, along with links to download CTF Virtual 
 * **Notes**
   * 🚀 You can import pre-configured VMs
   * ✨ The UX is better than in Virtual Box
-  * 👎 Their documentation isn't helpful. If you got problems with the keyboard, or to permanently resize the screen, it will take more than a few clicks.
+  * 👎 Their documentation isn't helpful. If you got problems with the keyboard, or want to permanently resize the screen, it will take more than a few clicks.
   * ➡️ in the settings
-    * you can create a shared folder between Windows/your VM
-    * the bidirectional keyboard is already enabled
+    * You can create a shared folder between Windows/your VM
+    * The bidirectional keyboard is already enabled
 </div><div>
 
 ⭐ **Oracle VirtualBox** ⭐
 
 * **Link**: [Download VirtualBox](https://www.virtualbox.org/)
 * **Notes**
-    * 👎 There are always problems, like you need to go deep into the settings, in order to set a lot of values, and cross-finger while praying that they are the right ones for your machine. For instance, by default, every machine has the same IP, so you can't another one...
-    * 💭 It's possible to find pre-installed VMs, but you can only import the hard-drive, so you still have to manually configure them.
+    * 👎 There are always problems, like you need to go deep into the settings, in order to set a lot of values, and cross-finger while praying that they are the right ones for your machine. For instance, by default, every machine has the same IP, so you can't reach the other one...
+    * 💭 It's possible to find pre-installed VMs, but you can only import the hard drive, so you still have to manually configure them.
     * ➡️ In the settings
       * you can enable copy-paste from the source to the VM
       * you can create a shared folder between Windows/your VM
@@ -77,12 +77,12 @@ Notes about Virtual Machine, Emulator, along with links to download CTF Virtual 
 **Kali Linux** 🚀
 
 * [Link](https://www.kali.org/get-kali/#kali-virtual-machines)
-* There are giving you prebuilt image, get started in seconds!
+* There are giving you a prebuilt image, get started in seconds!
 * **Username**: kali / **Password**: kali
 * Don't forget to use `sudo apt update` / `sudo apt upgrade`
 * Keyboard: If you are using a non-qwerty keyword
   * First, log in
-  * Click on kali icon (top left)
+  * Click on Kali icon (top left)
   * Search "Keyboard"
   * Go to the layout tab
   * Add a keyboard layout, remove the unused one
@@ -92,7 +92,7 @@ Notes about Virtual Machine, Emulator, along with links to download CTF Virtual 
   * Run `wordlists` and press Y to extract `rockyou.txt`
   * `sudo apt install seclists` to install [SecLists](https://github.com/danielmiessler/SecLists/) wordlists.
 * Notes
-  * Use the right-arrow to use the suggested command
+  * Use the <kbd>right arrow</kbd> key to use the suggested command
   * In the top-right corner, you can find your IP address (tun0)
 
 **BlackArch** 😶‍🌫️
