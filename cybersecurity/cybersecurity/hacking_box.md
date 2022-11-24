@@ -64,7 +64,7 @@ I don't want to forget tools later, so I'm listing some here, just in case, as t
 * `winPEAS`/`linpeas`: enumeration
 * many other scripts
 * ➡️ `pwncat-cs`: enumeration et exploitation
-* ➡️ `traiter`: enumeration et exploitation
+* ➡️ `traitor`: enumeration et exploitation
 
 **Tools for post-exploitation** 🧹
 
@@ -89,7 +89,7 @@ From [their GitHub](https://github.com/WADComs/WADComs.github.io) (1k ⭐): "WAD
 
 Basically, a website to find commands that others use.
 
-> See [wadcoms.github.io](https://wadcoms.github.io/)
+> See [wadcoms website](https://wadcoms.github.io/).
 </div></div>
 
 <hr class="sep-both">
@@ -104,7 +104,7 @@ Basically, a website to find commands that others use.
 
 <hr class="sep-both">
 
-## 👻 TODO 👻
+## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
