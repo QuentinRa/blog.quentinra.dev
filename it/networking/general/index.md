@@ -1,6 +1,6 @@
 # Networking
 
-A network is a net of things connected to each other. We call a network of devices "internet", and what we refer to (The) "Internet" are many small networks all joined together. Networking is someone complex, has it involves a lot of things: devices <small>(Routers, Hub/Switches...)</small>, Protocols <small>(TCP/UDP/ICMP/ARP/DNS...)</small>, Ports, Network interfaces, models <small>(OSI, TCP/IP)</small>, and addresses <small>(IPV4/IPV6/MAC...)</small>.
+A network is a net of things connected to each other. We call a network of devices "internet", and what we refer to (THE) "Internet" are many small networks all joined together. Networking is someone complex, as it involves a lot of things: devices <small>(Routers, Hub/Switches...)</small>, Protocols <small>(TCP/UDP/ICMP/ARP/DNS...)</small>, Ports, Network interfaces, models <small>(OSI, TCP/IP)</small>, and addresses <small>(IPV4/IPV6/MAC...)</small>.
 
 <details class="details-e">
 <summary>Imunes - free open-source network emulator</summary>
@@ -50,19 +50,19 @@ $ sudo himage <hostname>@<id> <command>
 
 **Local Area Network** (LAN, `réseau domestique`) is a network established within a limited area such as your home.
 
-**Router**: a device usually connecting a LAN network, with a WAN network. It does "routing", meaning sending determining the route that packets will take to arrive to the destination network.
+**Router**: a device usually connecting a LAN network, with a WAN network. It does "routing", meaning selecting the route/path that packets will take to arrive at the destination.
 
 **Hub/Switch**: a device that can be connected via ethernet to usually at least 4, up to 64 devices. They are receiving packets from others hosts, and they handle the delivery of packets while ensuring that they are received in the right order, and are not corrupted.
 
 <details class="details-n">
 <summary><b>Ethernet</b>: this is a cable that can be used to connect a device to a Hub/Switch.</summary>
 
-Instead of connecting nodes/devices to each others, they all are connected to a switch/hub using Ethernet (norm IEE 802.3). They are using a technique called "Carrier sensitive multiple access with collision detection", or **CSMA/CP** in short, to handle collisions.
+Instead of connecting nodes/devices to each other, they all are connected to a switch/hub using Ethernet (norm IEE 802.3). They are using a technique called "Carrier sensitive multiple access with collision detection", or **CSMA/CP** in short, to handle collisions.
 
 If both the switch and the machine try to send a message at the same time, then both messages are colluding, and are destroyed
   * each other signal that they will re-send the message
   * each network card has its own delay before sending a message again
-  * the machine/switch send the message first, and there is hopefully no problem this time
+  * the machine/switch sends the message first, and there is hopefully no problem this time
 </details>
 </div><div>
 
@@ -70,9 +70,9 @@ If both the switch and the machine try to send a message at the same time, then 
 
 * **Star Topology**: all devices are connected to a central networking device such as a switch or hub
 
-* **Bus Topology**: a single cable "backbone cable", and all devices connect to the cable. If a lot of packets are send, the cable most likely be saturated.
+* **Bus Topology**: a single cable "backbone cable", and all devices connect to the cable. If a lot of packets are sent, the cable most likely be saturated.
 
-* **Ring/Token Topology**: each computer is connected to another one forming a loop. Packets are only moving in one direction, meaning that sometime packets will do a whole loop (not efficient). If a computer/cable is faulty, then the loop is broken.
+* **Ring/Token Topology**: each computer is connected to another one forming a loop. Packets are only moving in one direction, meaning that sometimes packets will do a whole loop (not efficient). If a computer/cable is faulty, then the loop is broken.
 </div></div>
 
 <hr class="sr">
@@ -104,14 +104,14 @@ This is a sort of simplified representation of all elements that are a part of t
 
 <div class="row row-cols-md-2"><div>
 
-A **network interface** is the connection between your machine, and the network. It's most likely done by a network card. From the machine point of view, a virtual representation of a network interface was introduced, called virtual network interface.
+A **network interface** is the connection between your machine and the network. It's most likely done by a network card. From the machine point of view, a virtual representation of a network interface was introduced, called "virtual network interface".
 
 For instance, if you are using Ethernet, then you will most likely have a virtual interface called `eth0` <small>(or ethSomething)</small>.
 
-If you are using a vpn, you may see virtual network interfaces such as `tun0` <small>(or tunSomething)</small>.
+If you are using a VPN, you may see virtual network interfaces such as `tun0` <small>(or tunSomething)</small>.
 </div><div>
 
-For application on a local machine to communicate with each other, there is a special virtual network called **localhost** (127.0.0.1), which is associated with the virtual network interface  **lo** (loop back), allowing local applications to locally transfer data over this virtual network.
+For applications on a local machine to communicate with each other, there is a special virtual network called **localhost** (127.0.0.1), which is associated with the virtual network interface  **lo** (loopback), allowing local applications to locally transfer data over this virtual network.
 
 > As a machine may have multiple network cards, or a network card may be connected to multiple networks, you have to determine which interface will be used for each communication.
 </div></div>
@@ -122,15 +122,15 @@ For application on a local machine to communicate with each other, there is a sp
 
 <div class="row row-cols-md-2"><div>
 
-A port is something virtual associated with a protocol. By using that, we know that if a message enter via the port XXX, then it's using the protocol YYY. 
+A port is something virtual associated with a protocol. By using that, we know that if a message enters the port XXX, then it's using the protocol YYY. 
 
 * There are 65535 available ports
-* There are 1024 are standard ports
+* There first 1024 are called "standard ports"
 
-> The protocol used by a port are not set in stone! For security-related concerns, they are usually changed, and port are protected by something called a firewall, to hopefully prevent unauthorized users to know which protocol is run by each port. Ports may be closed too.
+> The protocol used by a port is not set in stone! For security-related concerns, they are usually changed, and ports are also protected by something called a firewall, to hopefully prevent unauthorized users to know which protocol is run by each port. Ports may be closed too.
 </div><div>
 
-There are TCP ports, and UDP ports. The former are the most well-known ones. Here is the list of [TCP/UDP ports](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers).
+There are TCP ports, and UDP ports. The former ports are the most well-known ones. Here is the list of [TCP/UDP ports](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers).
 
 * **21**: FTP
 * **22**: SSH, SFTP, SCP
@@ -147,14 +147,14 @@ There are TCP ports, and UDP ports. The former are the most well-known ones. Her
 
 <div class="row row-cols-md-2"><div>
 
-A **media access control address (MAC address)** is a **unique (physical) address** associated with the network card (`carte réseau`) of the machine uses to connect itself to the internet.
+A **media access control address (MAC address)** is a **unique (physical) address** associated with the network card (`carte réseau`) which the machine uses to connect itself to the internet.
 
 * Can be [spoofed](https://en.wikipedia.org/wiki/MAC_spoofing) <small>(some hacker can usurp your MAC)</small>
-* The IP identify our machine within a network, but if we move to another network, then we will receive a new IP address. That's why we need something that do not change such as the MAC address.
+* The IP identifies our machine within a network, but if we move to another network, then we will receive a new IP address. That's why we need something that does not change such as the MAC address.
 
 </div><div>
 
-This is a 6-bytes-long address such as `ff:ff:ff:ff:ff:ff` with 12 hexadecimal character, separated with a colon.
+This is a 6-bytes-long address such as `ff:ff:ff:ff:ff:ff` with 12 hexadecimal characters, separated by a colon.
 
 * The first 6 characters are identifying the vendor/manufacturer. This is called a [OUI](http://standards-oui.ieee.org/oui/oui.txt) <small>(Organizationally unique identifier)</small>.
 * The last 6 characters are the unique address
@@ -171,7 +171,7 @@ Internet Protocol version 4 (**IPV4**) addresses are **32-bits long addresses**.
 
 <div class="row row-cols-md-2"><div>
 
-This is the most-known representation of a IPV4 address. We are splitting ours **32 bits** into **4 groups of 8 bits** called **bytes**/octets (`octect`), we are converting them to decimal, and separated with a **dot**.
+This is the most-known representation of an IPV4 address. We are splitting ours **32 bits** into **4 groups of 8 bits** called **bytes**/octets (`octet`), we are converting them to decimal, and separated with a **dot**.
 
 * Starting with a binary IP <small>(ex: `0101100010[...]01`)</small>
 * We are ending with **n.n.n.n** <small>(with each $n \in \[0,\ 255]$)</small>
@@ -193,17 +193,17 @@ Given this IP (binary): `01001101001000011110000100000000`
 
 <div class="row row-cols-md-2"><div>
 
-The bits in the IP address are actually separated in 2 parts
+The bits in the IP address are actually separated into 2 parts
 
 * **id_net**: a fixed part for every address in a network, that is used to identify the network
-* **id_host**: every remaining bit. Pointing to a host in a network, but if there is only null-bits (0), then this is the **address of the network**.
+* **id_host**: every remaining bit. Pointing to a host in a network, but if there are only null bits (0), then this is the **address of the network**.
 
 You can't guess the number of fixed bits, either it is given by an organism <small>(such as your ISP)</small>, or you are given something called the netmask which is explained a bit further.
 </div><div>
 
 Example: is xxx a network address?
 
-We consider the IP `01001101001000011110000100000000` (`77.33.225.0`). We are told that for the fixed part is 17 bits long.
+We consider the IP `01001101001000011110000100000000` (`77.33.225.0`). We are told that the fixed part is 17 bits long.
 
 * id_net: `01001101001000011` (17 bits)
 * id_host: `110000100000000` (32-17=15 bits)
@@ -213,18 +213,18 @@ The id_host has non-null bits, so it's not a network address.
 </details>
 
 <details class="details-e">
-<summary>Classress Inter-Domain Routing (CIDR)</summary>
+<summary>Classless Inter-Domain Routing (CIDR)</summary>
 <div class="row row-cols-md-2"><div>
 
-It is a way to write/share an IP address along the number of bits of the fixed part. The syntax is `ip/n`, such as `192.168.0.0/12`.
+It is a way to write/share an IP address along the number of bits of the fixed part. The syntax is `IP/n`, such as `192.168.0.0/12`.
 
-* `ip` is the network address
-* `n` is the amount of fixed bits
+* `IP` is the network address
+* `n` is the number of fixed bits
 
-> Traditionally, before CIDR, n could only be 8, 16, or 24. They were called A-class, B-class, and C-class networks, used by big, medium, small scale organisation. Unfortunately, there was a very fast shortage of B-class networks, which leads to CIDR, and it's flexible network size.
+> Traditionally, before CIDR, n could only be 8, 16, or 24. They were called A-class, B-class, and C-class networks, used respectively by big, medium, and small-scale organizations. Unfortunately, there was a very fast shortage of B-class networks, which leads to CIDR which has a flexible network size.
 </div><div>
 
-We have the address `01001101001000011110000100000000` (`77.33.225.0`). We were told that there is 24 fixed bits.
+We have the address `01001101001000011110000100000000` (`77.33.225.0`). We were told that there are 24 fixed bits.
 
 * We are extracting 24 bits from the address: `010011010010000111100001`
 * We are filling the missing bits with `0` (32-24=8): `01001101001000011110000100000000`
@@ -242,8 +242,8 @@ The CIDR notation is `77.33.225.0/24`.
 
 This is an IP address which is a mask that can be used to find the number of fixed bits in another IP address.
 
-* We are writing **n** non-nul bits (1), with $n$ the number of fixed bits
-* We are completing with nul bits (0)
+* We are writing **n** non-null bits (1), with $n$ the number of fixed bits
+* We are completing with null bits (0)
 
 If we know that `77.33.225.0` has 24 fixed bits, then we will write 24 times "1", and 8 <small>(32-24)</small> times "0", giving us `11111111111111111111111100000000` which is `255.255.255.0`.
 </div><div>
@@ -262,9 +262,9 @@ Given a CIDR address `77.33.128.0/17`, it's even easier to find the netmask.
 
 <div class="row row-cols-md-2"><div>
 
-This mask is used to send a message to EVERY machine of the network. 
+This mask is used to send a message to EVERY machine in the network. 
 
-Basically, you are simply filling the **id_host** with non-nul bits (1).
+Basically, you are simply filling the **id_host** with non-null bits (1).
 </div><div>
 
 Given the IP `77.33.225.0/24`,
@@ -292,7 +292,7 @@ There are 3 ranges of IPV4 addresses that are said private/reserved for internal
 <details class="details-e">
 <summary>DHCP Server</summary>
 
-IP address are either attributed manually, or by something called a <small>(Dynamic Host Configuration Protocol)</small> server. If a new device with no address IP is connecting to the network
+IP addresses are either attributed manually or by something called a DHCP <small>(Dynamic Host Configuration Protocol)</small> server. If a new device with no address IP is connecting to the network
 
 1. **DHCP Discover**: the device sends a request to retrieve an IP
 2. **DHCP Offer**: if there is a DHCP server, it answers with an IP
@@ -311,7 +311,7 @@ Dividing a network into subnetworks/subnet (`sous-réseaux`), is called **subnet
 * each network will have its own netmask, and broadcast address <small>(the "minus 2" when counting IPs)</small>
 * it means that each network will have $2^{32-n} - 2$ addresses, with $n$ the number of fixed bits
 
-The process is a bit complicated to explain 😢, please read the example too. Your current network address has $N$ fixed bits. Let's say you want to divide your network so that there are $x$ subnetwork.
+The process is a bit complicated to explain 😢, please read the example too. Your current network address has $N$ fixed bits. Let's say you want to divide your network so that there are $x$ subnetworks.
 
 * Find the lowest $n$ solving $2^n \ge x$
 * If $N + n \ge 32$, then you can't
@@ -328,7 +328,7 @@ Example: Given $172.16.254.0/23$, we have $N = 23$, and we want to divide our ne
   * $172.16.254.0/24$ <small>(the 24th bit is 0)</small>
   * $172.16.255.0/24$ <small>(the 24th bit is 1)</small>
 
-> **Subnet** are a logical way of dividing a network, while **network segments** are a physical way of doing so.
+> **Subnets** are a logical way of dividing a network, while **network segments** are a physical way of doing so.
 </div></div>
 </details>
 
