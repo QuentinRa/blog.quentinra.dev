@@ -12,7 +12,7 @@ Any knowledge related to protocols, and services, such as FTP, SSH, SFTP, SCP, T
 
 ### 🔓 Telnet - 23 (TCP)
 
-No encryption neither for the credentials or the data exchanged.
+No encryption neither for the credentials nor the data exchanged.
 
 ```bash
 $ telnet IP port
@@ -52,7 +52,7 @@ $ ssh login@IP -i /path/to/id_rsa
 
 ➡️&nbsp; There is a secure version called FTPS (port 990).
 
-No encryption neither for the credentials or the data exchanged.
+No encryption neither for the credentials nor the data exchanged.
 
 ```bash
 $ ftp IP # use current user username
@@ -117,7 +117,7 @@ $ scp user@IP:remote/path/ local_path_to_dest
 
 ## Sending mails
 
-No encryption neither for the credentials or the data exchanged.
+No encryption neither for the credentials nor the data exchanged.
 
 <div class="row row-cols-md-2 mt-3"><div class="border-end border-dark">
 
@@ -161,18 +161,18 @@ LIST # list new messages
 RETR 1 # retrieve the first message
 ```
 
-It's possible to configure POP3 so that mails aren't removed, but due to how it works, mails will remain marked as "new", and the client will lose track of whether a mail was read or not.
+It's possible to configure POP3 so that emails aren't removed, but due to how it works, mails will remain marked as "new", and the client will lose track of whether a mail was read or not.
 
 ### 🔓 IMAP - 143 (TCP)
 
 ➡️&nbsp; There is a secure version called IMAPS (port 993).
 
-Internet Message Access Protocol is a protocol design for synchronisation between mailbox. It allows the user to create folders, and sort mails inside. If a mail is read inside a mailbox, then it's marked as read in every other mailbox.
+Internet Message Access Protocol is a protocol designed for synchronization between mailboxes. It allows the user to create folders, and sort mails inside. If a mail is read inside a mailbox, then it's marked as read in every other mailbox.
 
 ```bash
 $ telnet IP 143
 LOGIN username password
-# every command must starts with an unique token of your choice
+# every command must start with a unique token of your choice
 unique_token1 LIST "" "*" # list mails in every folder
 unique_token2 EXAMINE INBOX # list mails in INBOX
 unique_token3 LOGOUT # logout
@@ -187,11 +187,11 @@ unique_token3 LOGOUT # logout
 
 <div class="row row-cols-md-2 mt-3"><div class="border-end border-dark">
 
-HTTP/HTTPS is a protocol used to exchange wit a webserver. Usually, a web browser will make a request, and the result will be some HTML. An HTTP/HTTPS request involve a few things
+HTTP/HTTPS is a protocol used to exchange with a webserver. Usually, a web browser will make a request, and the result will be some HTML. An HTTP/HTTPS request involves a few things
 
 ✅ First, there is a method
 
-* `GET`: get a ressource
+* `GET`: get a resource
 * `POST`: create a resource on the server
 * `PUT`: update a field of a resource on the server
 * `DELETE`: delete a resource on the server
@@ -201,15 +201,15 @@ HTTP/HTTPS is a protocol used to exchange wit a webserver. Usually, a web browse
 
 ✅  We will also use an HTTP version, the most used ones are `HTTP/1.1`, and `HTTP 2.0`.
 
-✅  In every HTTP/HTTPS request/response, there are headers that are set both by the client and the server. The format is `Header-name: value`, and anyone can add its own headers.
+✅  In every HTTP/HTTPS request/response, there are headers that are set both by the client and the server. The format is `Header-name: value`, and anyone can add their own headers.
 
 * `Set-cookie`: the cookies <small>(usually the server add this to create them in the client browser, and the client will send the cookies in every following request)</small>
-* `Host`: one of the domain name associated with the IP of the server
+* `Host`: one of the domain names associated with the IP of the server
 * `Server:`: name of the HTTP server, maybe the version/OS too
 * ...
 </div><div>
 
-✅  There may be data send with the request. For instance, if we are `POST`-ing a resource, we will most likely provide some data about the resource we want to create. This data can be specified leaving one blank line below the headers, and must be URL-encoded <small>(characters that are not valid inside a URL such as `'` must be URL encoded, meaning we convert them to hexadecimal `27` and prepended with a `%` giving us `%27`)</small>. This is automatically done by your browser.
+✅  There may be data sent with the request. For instance, if we are `POST`-ing a resource, we will most likely provide some data about the resource we want to create. This data can be specified by leaving one blank line below the headers, and must be URL-encoded <small>(characters that are not valid inside a URL such as `'` must be URL encoded, meaning we convert them to hexadecimal `27` and prepended with a `%` giving us `%27`)</small>. This is automatically done by your browser.
 
 ✅  You need to leave a blank line to indicate that the request is finished.
 
@@ -228,11 +228,11 @@ The server will answer with an [HTTP response code](https://developer.mozilla.or
 
 <hr class="sep-both">
 
-## ⚡ RPC - 111 (TCP/udp)
+## ⚡ RPC - 111 (TCP/UDP)
 
 <div class="row row-cols-md-2"><div>
 
-On RPC port, from what I understood, there is a TCP/udp service called `rpcbind` that if running, can be used to find the port used by a protocol from a protocol number.
+On the RPC port, from what I understood, there is a TCP/UDP service called `rpcbind` that, if running, can be used to find the port used by a protocol from a protocol number.
 </div><div>
 </div></div>
 
@@ -242,7 +242,7 @@ On RPC port, from what I understood, there is a TCP/udp service called `rpcbind`
 
 <div class="row row-cols-md-2"><div>
 
-[Samba](https://www.samba.org/) is making both file exchange system of Linux (NFS), and Windwos (SMB) work together. It's mostly used to share files internally by connecting computers/printers/... to a shared folder called **share**.
+[Samba](https://www.samba.org/) is making both file exchange systems of Linux (NFS), and Windows (SMB) work together. It's mostly used to share files internally by connecting computers/printers/... to a shared folder called **share**.
 
 ```bash
 $ smbclient //IP/share_name
@@ -327,7 +327,7 @@ There is [Remmina](https://github.com/FreeRDP/Remmina) (1.9k ⭐, `apt install r
     * Enter the IP of the target
     * Enter the credentials
     * Connect
-* Then, I would advise to toggle "dynamic resolution update" in the left menu, so that you have a bigger screen.
+* Then, I would advise toggling "dynamic resolution update" in the left menu, so that you have a bigger screen.
 * In preferences, we should be able to select a keyboard mapping <nobr class="small text-muted">(⚠️ need check)</nobr>
 * [You can scale the screen too](https://askubuntu.com/questions/1075098/remmina-scaling-options)
 </div></div>
