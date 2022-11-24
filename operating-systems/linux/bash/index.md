@@ -39,7 +39,7 @@ Toto
 
 You can use `-x` to debug your scripts. Each line prefixed with a `+` is the command executed, then you have the command output. It should help you find the command that failed.
 
-You could also add breakpoint, if you want to only have this feature for a part of your code.
+You could also add a breakpoint if you want to only have this feature for a part of your code.
 
 <details class="details-e">
 <summary>Example of using breakpoints</summary>
