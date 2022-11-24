@@ -4,7 +4,7 @@
 
 Microsoft Active Directory (**AD**) is used by organisations to manage their computers, users, groups, privileges of every entity... from one computer called **Domain Controller (DC)**.
 
-From the Domain Controller, we can open the **Active Directory Domain Service** (AD DS) from the search bar, to manage entities such as computers/users/... referred within the application as **objects**.
+From the Domain Controller, we can open the **Active Directory Domain Service** (AD DS) from the search bar, to manage entities such as computers/users/... referred to within the application as **objects**.
 </div><div>
 
 Objects are organised into **Organizational Units (OUs)** which are basically containers. You have some default one such as `Builtin` <small>(default groups...)</small>; `Computers`; `Domain Controllers`; `Users` and some others.

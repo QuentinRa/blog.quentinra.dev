@@ -71,7 +71,7 @@ pthread_mutex_unlock(&mutex);
 To explain this, we have a global variable ``cond``. Since
 it may be accessed by multiples threads, we need a mutex.
 
-The core idea is that a lof of threads will way for
+The core idea is that a lot of threads will way for
 a condition. In a loop so that if the condition is
 not triggered then they wait again.
 
