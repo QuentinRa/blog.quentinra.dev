@@ -1,6 +1,6 @@
 # Bash
 
-This course will introduce bash-specific knowledge that should help you write simpler, and maybe better code/commands, using some enhancements introduced with Bash. Note that the features introduced here shouldn't work on every machine, as they will most likely not use bash <small>(zsh. ash, csh, ksh..)</small>.
+This course will introduce bash-specific knowledge that should help you write simpler, and maybe better code/commands, using some enhancements introduced with Bash. Note that the features introduced here shouldn't work on every machine, as they will most likely not use bash <small>(zsh. ash, csh, ksh...)</small>.
 
 <hr class="sl">
 
@@ -14,7 +14,7 @@ Some nice information
 * Bourne Again Shell
 * Debian and many derivatives, such as Ubuntu
 
-The [man page for bash](https://linux.die.net/man/1/bash) is explaining everything about bash, such as environment variables, control-flow structures...
+The [man page for bash](https://linux.die.net/man/1/bash) is explaining everything about bash, such as environment variables, or control-flow structures...
 </div><div>
 
 `~/.bashrc` is a script executed when launching a terminal. You can write alias, permanent changes to environment variables, or builtin inside. You may have to create it. Once you changed its contents, you can update your current terminal using `source ~/.bashrc`.
@@ -67,7 +67,7 @@ Not debug
 
 <div class="row row-cols-md-2"><div>
 
-Bash introduced some patterns that are expanded into a previous command from your history. You history of commands is stored in `~/.bash_history`
+Bash introduced some patterns that are expanded into a previous command from your history. Your history of commands is stored in `~/.bash_history`
 
 * nth command in history, starting from 0
 
@@ -104,7 +104,7 @@ $ !?hello
 $ !?hello?
 ```
 
-There is also `!#` which repeats the command-line typed so far. It seems kinda useless for my point of view.
+There is also `!#` which repeats the command-line typed so far. It seems kinda useless from my point of view.
 </div></div>
 
 <hr class="sr">
@@ -121,7 +121,7 @@ This is most likely one of the coolest features, as we can use this everywhere.
 * `{toto,tata,titi}` is replaced with "toto tata titi"
 * `{toto,tata,???}` is replaced with "toto tata", and any file matching the glob-pattern "???"
 
-For instance, you can use these in loops, or in glob-patterns.
+For instance, you can use these in loops, or in glob patterns.
 </div><div>
 
 * Glob-patterns
@@ -173,7 +173,7 @@ done
 
 ```bash
 select name in option1 option2 ; do
-  # name is either empty, of equals to option1/option2,
+  # name is either empty or equal to option1/option2,
   # and $REPLY is your REPLY
   echo $name with reply: $REPLY
 done
@@ -258,7 +258,7 @@ $ < file
 ```
 </div><div>
 
-Bash introduced a new redirection which take some text, and redirect it to the standard output
+Bash introduced a new redirection that takes some text, and redirects it to the standard output
 
 ```bash
 $ tee <<< word
