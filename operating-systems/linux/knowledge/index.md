@@ -49,7 +49,7 @@ bash > command_at_least_working_in_bash
 
 <div class="row row-cols-md-2"><div>
 
-A command is **a name**, which may be followed by **arguments**, including some usually called flag/switches (`options`); the difference being that a flag starts with a `-`.
+A command is **a name**, which may be followed by **arguments**, including some usually called **flag**/**switches** (`options`). The difference between both is that a flag starts with a `-`.
 
 * you are writing commands right after the `$`
 * press <kbd>ENTER</kbd> to execute a command
@@ -421,7 +421,7 @@ In `ls -l` output, the first character indicates the kind of file.
 
 <div class="row row-cols-md-2"><div>
 
-Environment variables (`Variables d’environnement`) are variables globally, mostly used by commands/applications to access information about the system, save configurations... There a few well-known ones
+Environment variables (`Variables d’environnement`) are variables globally, mostly used by commands/applications to access information about the system, save configurations... There are a few well-known ones
 
 * **HOME**: path to the current user home
 * **USER**: username of the current user
@@ -602,7 +602,7 @@ If you want to use a pattern as a character, meaning that you don't want it to b
 For instance, if you write the glob-pattern `a?c`, then it could be `abc`... But if you write `a\?c`, or `a[?]c`, then it will only match `a?c`.
 </div><div>
 
-Everything defined in `[]` is called a **charset**. If you need to character between 'a', and 'z', then you could write the charset `[a-z]`. There are pre-defined charset if needed
+Everything defined in `[]` is called a **charset**. If you want every character between 'a', and 'z', then you could write the charset `[a-z]`. There are pre-defined charsets if needed
 
 * `[[:digit:]]` which is `[0-9]`
 * `[[:upper:]]` which is `[A-Z]`
@@ -625,7 +625,7 @@ Processes (`processus`) are a sort of box with
 * an environment (file descriptors, parameters, permissions...)
 * some data (stack, variables...)
 
-Each process is assigned an **PID** (process identifier). When a machine is starting, the first process (pid=0) is launched, and start the **systemd daemon**, which is the parent of every process.
+Each process is assigned a **PID** (process identifier). When a machine is starting, the first process (pid=0) is launched, and start the **systemd daemon**, which is the parent of every process.
 
 > A **daemon** is a process that never ends. They are called **services** on Windows. They are usually ending with **d**.
 
@@ -683,7 +683,7 @@ If a session dies, then the signal **SIGHUP** is sent to every process.
 <details class="details-e">
 <summary>Foreground, and background processes</summary>
 
-In every terminal, there is a session running, which means at least one group of processes. There is two "slots" that groups in a session
+In every terminal, there is a session running, which means at least one group of processes. There are two "slots" in a session
 
 * **foreground**: only one group may be at the foreground
 * **background**: every other group will be there
@@ -743,7 +743,7 @@ Each command has 1️⃣ one input (0), and 2️⃣ two outputs: standard (1), a
 
 **Pipe** (`tube`)
 
-It's possible for a command output, to be used as the next command input using pipe: **his_output | is_my_input**.
+It's possible for a command output, to be used as the next command input using a pipe: **his_output | is_my_input**.
 
 The command `wc -l` is used to count the number of lines in a text. The text could be a file, or some input. We want to find out how many files named "toto" were found with `find` using `wc`.
 
@@ -760,7 +760,7 @@ $ find . -name toto | wc -l
 
 **Redirections**
 
-We can redirect output to a file. For instance, if a result take a long time, and you need to do multiple operations on it, you will store it, and work on the file. We are doing this using `>`.
+We can redirect output to a file. For instance, if a result takes a long time, or you need to do multiple operations on it, you will usually store it, and work on the file. We are doing this using `>`.
 
 ```bash
 $ echo "Hello, World" > myFile
@@ -779,7 +779,7 @@ $ tee < original.txt
 Hello, World
 ```
 
-Another very useful usage to redirections, is redirecting errors, meanwhile non-errors message will still be shown.
+Another very useful usage of redirections, is redirecting errors, meanwhile non-errors message will still be shown.
 
 ```bash
 $ ls /error 2> onl_errors_will_be_stored_here
