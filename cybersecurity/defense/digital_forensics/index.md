@@ -33,7 +33,7 @@ It wouldn't work with `apt-get install volatility` on Kali-2022, so I had to do 
 
 In order to use Volatility, you need a memory capture (usually, a .raw file). Try checking out [FTK Imager](https://accessdata.com/product-download/ftk-imager-version-4-2-0), [Redline](https://www.fireeye.com/services/freeware/redline.html), [DumpIt.exe](https://www.aldeid.com/wiki/Dumpit), [winDD](https://sourceforge.net/projects/windd/)...
 
-Volatility need to know on which version of Windows it should base its analysis. It's called profiles, and you can run `imageinfo` to find which profiles you can use.
+Volatility needs to know on which version of Windows it should base its analysis. It's called profiles, and you can run `imageinfo` to find which profiles you can use.
 
 ```bash
 $ vol -f memory_capture_file imageinfo
@@ -54,7 +54,7 @@ vol -f memory_capture_file --profile=a_profile ldrmodules > output
 ```
 </div><div>
 
-Malicious processes will most likely try to hide themselves. If you process is neither InLoad, InInit, InMem, then it's suspicious. You can use grep on the output to check if there is a process like this.
+Malicious processes will most likely try to hide themselves. If a process is neither InLoad, InInit, nor InMem, then it's suspicious. You can use grep on the output to check if there is a process like this.
 
 ```bash
 $ grep -o '^.*False.*False.*False.*' output
@@ -97,7 +97,7 @@ $ vol -f memory_capture_file --profile=a_profile --pid=infected_process_pid dlld
 One level above binary (010010...), we have a language called assembly which is basically written in instructions specific to a set of machines (Intel, ARM...). You need to use the appropriate tool according to the kind of application.
 
 * [radare2](https://github.com/radareorg/radare2) (17.1k ⭐): Convert binary to assembly
-* `strace`: trace of a program (systemcalls)
+* `strace`: trace of a program (system calls)
 * `strings`: extract readable strings in a binary
 </div><div>
 
