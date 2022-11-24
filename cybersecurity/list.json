@@ -36,7 +36,7 @@
       {
         "tag": "investigation/general/index.md",
         "name": "Investigation",
-        "desc": "",
+        "desc": "Step 1: Dig information from afar.",
         "icon": null,
         "hidden": false
       },
@@ -52,7 +52,30 @@
       {
         "tag": "discovery/index.md",
         "name": "Discovery",
-        "desc": "",
+        "desc": "Step 2: approach your targets to learn more about them.",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "discovery/nmap/index.md",
+        "name": "Nmap",
+        "desc": "The Network Mapper. Find open ports, running services, and common vulnerabilities.",
+        "icon": "<i class=\"bi bi-tools\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "discovery/nessus/index.md",
+        "name": "Nessus",
+        "desc": "Automated though noisy tool to find open ports, running services, many vulnerabilities...",
+        "icon": "<i class=\"bi bi-tools\"></i>",
+        "hidden": false
+      }
+    ],
+    "Services 🧟️<br><p class=\"pt-2 fs-6\">Discovery & Exploitation</p>": [
+      {
+        "tag": "exploitation/services/index.md",
+        "name": "Services",
+        "desc": "Notes about discovery/misconfigurations of services (SSH, FTP, SMTP...).",
         "icon": null,
         "hidden": false
       },
@@ -60,59 +83,6 @@
         "tag": "exploitation/services/banner.md",
         "name": "Services banner",
         "desc": "Getting information on a service.",
-        "icon": null,
-        "hidden": false
-      },
-      {
-        "tag": "discovery/nmap/index.md",
-        "name": "Nmap",
-        "desc": "",
-        "icon": "<i class=\"bi bi-tools\"></i>",
-        "hidden": false
-      },
-      {
-        "tag": "discovery/nessus/index.md",
-        "name": "Nessus",
-        "desc": "",
-        "icon": "<i class=\"bi bi-tools\"></i>",
-        "hidden": false
-      }
-    ],
-    "3. Exploitation 💥": [
-      {
-        "tag": "exploitation/general/index.md",
-        "name": "Exploitation",
-        "desc": "",
-        "icon": null,
-        "hidden": false
-      },
-      {
-        "tag": "exploitation/general/shell.md",
-        "name": "Exploitation: Shells",
-        "desc": "",
-        "icon": null,
-        "hidden": false
-      },
-      {
-        "tag": "exploitation/general/metasploit/msfconsole.md",
-        "name": "metasploit",
-        "desc": "The metasploit framework",
-        "icon": "<i class=\"bi bi-tools\"></i>",
-        "hidden": false
-      },
-      {
-        "tag": "exploitation/general/metasploit/msfvenom.md",
-        "name": "msfvenom",
-        "desc": "Generate/catch a reverse shell",
-        "icon": "<i class=\"bi bi-tools\"></i>",
-        "hidden": false
-      }
-    ],
-    "Exploitation: Services 🧟️": [
-      {
-        "tag": "exploitation/services/index.md",
-        "name": "Services",
-        "desc": "Notes about discovery/misconfigurations of services (SSH, FTP, SMTP...).",
         "icon": null,
         "hidden": false
       },
@@ -131,11 +101,41 @@
         "hidden": false
       }
     ],
+    "3. Exploitation 💥": [
+      {
+        "tag": "exploitation/general/index.md",
+        "name": "Exploitation",
+        "desc": "Step 3: exploit a vulnerability to get something from your target.",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "exploitation/general/shell.md",
+        "name": "Exploitation: Shells",
+        "desc": "Learn about reverse, bind, and web shells. Learn about tools/techniques to stabilize them.",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "exploitation/general/metasploit/msfconsole.md",
+        "name": "Metasploit",
+        "desc": "The Metasploit framework, a well-known penetration testing tool.",
+        "icon": "<i class=\"bi bi-tools\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "exploitation/general/metasploit/msfvenom.md",
+        "name": "msfvenom",
+        "desc": "Utility to generate a bind/reverse shells, along with notes about meterpreter reverse shells and multi handler.",
+        "icon": "<i class=\"bi bi-tools\"></i>",
+        "hidden": false
+      }
+    ],
     "Exploitation: Web - part 1 🕸️": [
       {
         "tag": "exploitation/web/index.md",
         "name": "Exploit webservers",
-        "desc": "",
+        "desc": "Notes focused on exploiting webservers.",
         "icon": null,
         "hidden": false
       },
@@ -149,7 +149,7 @@
       {
         "tag": "exploitation/web/fuzz/index.md",
         "name": "Fuzzing / Fuzz",
-        "desc": "",
+        "desc": "Something that can be used for many things (forced browsing, brute force...).",
         "icon": null,
         "hidden": false
       },
@@ -170,14 +170,14 @@
       {
         "tag": "exploitation/web/frameworks/index.md",
         "name": "Frameworks",
-        "desc": "Find and exploit frameworks such as Wordpress.",
+        "desc": "Find and exploit frameworks such as WordPress.",
         "icon": null,
         "hidden": false
       },
       {
         "tag": "exploitation/web/others/cookies.md",
         "name": "Cookies",
-        "desc": "Cookies vulnerabilities",
+        "desc": "Cookies/Sessions vulnerabilities",
         "icon": null,
         "hidden": false
       },
@@ -331,7 +331,7 @@
       {
         "tag": "random/crack_password/index.md",
         "name": "Crack a hash",
-        "desc": "Use john the ripper to crack insecure passwords/passphrase using their hash (SSH key, GPG/ZIP/RAR...).",
+        "desc": "Use john the ripper to crack insecure passwords/passphrases using their hash (SSH key, GPG/ZIP/RAR...).",
         "icon": null,
         "hidden": false
       },
