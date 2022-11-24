@@ -310,7 +310,7 @@ List tables
 $ sudo iptables -L
 ```
 
-DROP any packet using the protocol TCP, on the port 22, that have our machine for destination, emitted by `172.16.1.1`.
+DROP any packet using the protocol TCP, on the port 22, that has our machine for destination, emitted by `172.16.1.1`.
 
 ```bash
 $ sudo iptables -t filter -A INPUT -s 172.16.1.1 -p tcp --dport 22 -j DROP
