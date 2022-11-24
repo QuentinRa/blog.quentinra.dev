@@ -480,7 +480,7 @@ $ rm file
 $ rm file0 file1
 ```
 
-`rm` by default is asking you a confirmation.
+`rm` by default is asking for confirmation.
 
 ```bash
 $ rm -f file # do not ask (f=force)
