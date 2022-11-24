@@ -1,6 +1,6 @@
 # Radix/Bases (`bases`)
 
-This is more of a mathematical course, but you will use binaries, octal, hexadecimal numbers everywhere, as they are used by Linux. This course is about radix (`bases`), especially binaries (radix-2), octal (radix-8), decimal (radix-10), and hexadecimal (radix-16), along with how Linux is handling signed, and unsigned integers, and floating numbers.
+This is more of a mathematical course, but you will use binaries, octal, and hexadecimal numbers everywhere, as they are used by Linux. This course is about radix (`bases`), especially binaries (radix-2), octal (radix-8), decimal (radix-10), and hexadecimal (radix-16), along with how Linux is handling signed, and unsigned integers, and floating numbers.
 
 * In a $radix-n$, values goes from $0$ to $n-1$
 * After 9, we are using letters
@@ -25,11 +25,12 @@ $ hexdump <<< "Hello, World" > hello_world.hex
 $ cat hello_world.hex
 0000000 6548 6c6c 2c6f 5720 726f 646c 000a
 000000d
-# letters were mixed?
+# letters were mixed (WTF!!?)
 $ echo -e "\x65"
 e
 $ echo -e "\x48"
 H
+# here it works fine
 $ xxd <<< "Hello, World" | tee hello_world.hex
 00000000: 4865 6c6c 6f2c 2057 6f72 6c64 0a         Hello, World.
 # reverse
@@ -59,7 +60,7 @@ Radix-10 numbers are called decimals, and you should already know them, as they 
 
 ## Radix-2
 
-A radix-2 number is called binary number, and it's made of $0$, and $1$. For instance $001$ is the binary for $1$.
+A radix-2 number is called a binary number, and it's made of $0$, and $1$. For instance, $001$ is the binary for $1$.
 
 <div class="row row-cols-md-2"><div>
 
@@ -71,7 +72,7 @@ You must know every small power of 2 like the back of your hand:
 |-------|-------|-------|-------|-------|-------|-------|-------|-------|
 | 256   | 128   | 64    | 32    | 16    | 8     | 4     | 2     | 1     |
 
-Every number can be expressed as a sum of power of two. For instance, $125 = 64+32+16+8+4+1$ which means $125 = 2^6+2^5+2^4+2^3+2^2+2^0$. Now, to write the binary
+Every number can be expressed as a sum of powers of two. For instance, $125 = 64+32+16+8+4+1$ which means $125 = 2^6+2^5+2^4+2^3+2^2+2^0$. Now, to write the binary
 
 * if you used a power of 2, then it's a $1$
 * otherwise, it's $0$.
@@ -96,7 +97,7 @@ Pretty easy, right?
 
 ## Radix-8
 
-A radix-8 number is called octal number, and it's made of values from $0$, and $7$. In most languages, an octal number is starting with $0$.
+A radix-8 number is called an octal number, and it's made of values from $0$, and $7$. In most languages, an octal number is starting with $0$.
 
 <div class="row row-cols-md-2"><div>
 
@@ -114,7 +115,7 @@ A digit in radix-2 is equals to 3 digits in radix-8 <small>($2^3=8$)</small>. Yo
 
 **From radix-2 to radix-8** [online tool](https://www.binaryhexconverter.com/binary-to-octal-converter)
 
-You number of digits in base-2 should be a multiple of 3 to apply the previous formula, if not, add leading zeros.
+Your number of digits in base-2 should be a multiple of 3 to apply the previous formula, if not, add leading zeros.
 
 * Given $(1111101)\_{2}$, we need 2 leading zeros
 * $(001111101)\_{2}$
@@ -130,7 +131,7 @@ You number of digits in base-2 should be a multiple of 3 to apply the previous f
 
 ## Radix-16
 
-A radix-16 number is called hexadecimal number, and it's made of values from $0$ to $9$, and letters from $A$ to $F$. In most languages, an octal number is starting with $\text{0x}$.
+A radix-16 number is called a hexadecimal number, and it's made of values from $0$ to $9$, and letters from $A$ to $F$. In most languages, an octal number is starting with $\text{0x}$.
 
 <div class="row row-cols-md-2"><div>
 
@@ -152,13 +153,13 @@ A digit in radix-2 is equals to 4 digits in radix-8 <small>($2^4=16$)</small>. Y
 
 **From radix-2 to radix-16** [online tool](https://www.binaryhexconverter.com/binary-to-hex-converter)
 
-You number of digits in base-2 should be a multiple of 4 to apply the previous formula, if not, add leading zeros.
+Your number of digits in base-2 should be a multiple of 4 to apply the previous formula, if not, add leading zeros.
 
 * Given $(1111101)\_{2}$, we need 1 leading zeros
 * $(01111101)\_{2}$
 * Now, simply convert each group of 4 digits to radix-16, as you would for radix-10
   * $0111$ is $1+2+4=7$
-  * $1101$ is $1+4+8=13$, but $13$ do not exists in radix-16, so we should use $D$
+  * $1101$ is $1+4+8=13$, but $13$ do not exist in radix-16, so we should use $D$
 * So we have $(7D)_{16}$ or $\text{0x}7D$
 
 </div></div>
@@ -169,9 +170,9 @@ You number of digits in base-2 should be a multiple of 4 to apply the previous f
 
 <div class="row row-cols-md-2"><div>
 
-Every previous example was first converting radix-10 the radix-2, then radix-2 to radix-n. This is both inefficient, and not universal, as the same process can't be applied to radix-15, which isn't a multiple of 2...
+Every previous example was first converting radix-10 to radix-2, then radix-2 to radix-n. This is both inefficient, and not universal, as the same process can't be applied to radix-15, which isn't a multiple of 2...
 
-Instead, here is another more universal, trough possibly harder/longer
+Instead, here is another more universal, though possibly harder/longer
 
 * $a = \text{your_number}$
 * $n = \text{your_radix}$
@@ -180,7 +181,7 @@ Instead, here is another more universal, trough possibly harder/longer
   * $r_i = a\ mod\ n$
   * $a = q_i$
 
-Using this algorithm, at the end, you have to convert every invalid $r_i$ to radix-n <small>(ex: 14 in radix-15 is E)</small>, and concatenate **in the reverse order** every value. You can [use rapid-table website to do it online](https://www.rapidtables.com/convert/number/base-converter.html).
+Using this algorithm, in the end, you have to convert every invalid $r_i$ to radix-n <small>(ex: 14 in radix-15 is E)</small>, and concatenate **in the reverse order** every value. You can [use rapid-table website to do it online](https://www.rapidtables.com/convert/number/base-converter.html).
 </div><div>
 
 * $a = 6072$
@@ -196,7 +197,7 @@ Using this algorithm, at the end, you have to convert every invalid $r_i$ to rad
   * $r_3 = 1\ mod\ 15 = 1$
   * exit, $a$ is now 0
 
-Then we are converting $12=C$, $14=E$, $11=B$, et concatenating in the reverse order giving us $(6072)\_{10} = (1BEC)\_{15}$.
+Then we are converting $12=C$, $14=E$, $11=B$, then concatenating in reverse order giving us $(6072)\_{10} = (1BEC)\_{15}$.
 </div></div>
 
 <hr class="sl">
@@ -241,14 +242,14 @@ The most common problem that may occur when doing calculations is an **overflow*
 <details class="details-e">
 <summary>Addition / Subtraction</summary>
 
-Actually, there is no such operation as subtracting, we can only do additions, but there trick is that $a - b = a + (-b)$, and we can use the **Two's complement** to convert a positive number to a negative number.
+Actually, there is no such operation as subtracting, we can only do additions, but there is a trick: $a - b = a + (-b)$, and we can use the **Two's complement** to convert a positive number to a negative number.
 
 <div class="row"><div class="col-md-3">
 
 ![addition](_images/addition.png)
 </div><div class="col-md-9">
 
-To add 5 (101), with 5 (101), you need to do like you will in grad school.
+To add 5 (101) to 5 (101), you need to do like you would have in grad school.
 
 * $0+0=0$
 * $0+1=1+0=0$
@@ -271,7 +272,7 @@ A floating-point can be identified by the **Radix point**, which is usually eith
 
 The first step is scientific notation. You should have heard of $1.3 * 10^n$, in radix-10, and our goal is something like $1.11 * 2^n$, so in radix-2.
 
-**Note**: not every number can be written using scientific notation (such as `0.1`).
+**Note**: not every number can be written using scientific notation ⚠️
 
 <details class="details-e">
 <summary>Encoding floating numbers</summary>
@@ -283,7 +284,7 @@ The first step is scientific notation. You should have heard of $1.3 * 10^n$, in
   * $r_i = \text{if}\ a_i > 1.0\ \text{then}\ 1\ \text{else}\ 0$
 * while $a_i \neq 1.0$
 
-Simply concatenate the $r_i$ to get the floating part representation in base 2. Now, convert the decimal part, and your is $(a.r)_2$.
+Simply concatenate the $r_i$ to get the floating part representation in base 2. Now, convert the decimal part, and the result is $(a.r)_2$.
 
 For instance, with 5.75
 
@@ -292,7 +293,7 @@ For instance, with 5.75
 * $a_0 = 0.5 * 2 = 1.0$
 * $r_0 = 1$
 
-As $5 = (101)_2$, and $.75=(.11)_2$, we have $(5.75)_10=(101.11)_2$.
+As $5 = (101)_2$, and $.75=(.11)\_2$, we have $(5.75)\_{10}=(101.11)_2$.
 </details>
 </div><div>
 
@@ -327,7 +328,7 @@ To find the numerical value, evaluate $(-1)^S * 1.M * 2^{E - q}$.
 <details class="details-e">
 <summary>Find S, E, and M</summary>
 
-As we explained before, $(5.75)_10=(101.11)_2$. You should have noticed that we have "1.M", so we to move the radix point by **3 times** to the left, giving us $(101.11)_2 = (1.0111)_2 * 2^3$.
+As we explained before, $(5.75)_10=(101.11)_2$. You should have noticed that we have "1.M", so we have to move the radix point by **3 times** to the left, giving us $(101.11)_2 = (1.0111)_2 * 2^3$.
 
 If we are using a float (simple precision).
 
