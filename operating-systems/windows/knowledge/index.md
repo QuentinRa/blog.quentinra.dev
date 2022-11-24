@@ -1,10 +1,10 @@
-# Operating system
+# Operating System (Windows)
 
 <div class="row row-cols-md-2"><div>
 
 Microsoft Windows is the most used operating system. Windows versions that were quite used are Windows XP, Windows 7, Windows 10, and now Windows 11 is slowly gaining new users.
 
-> There are a lot of things that are similar to [Linux Operating systems](/info/linux/knowledge/index.md), so I will add fewer details here.
+> There are a lot of things that are similar to [Linux Operating systems](/operating-systems/linux/knowledge/index.md), so I will add fewer details here.
 </div><div>
 
 Some dates about the latest versions
@@ -20,38 +20,38 @@ Some dates about the latest versions
 
 <div class="row row-cols-md-2"><div>
 
-You can run commands on Windows inside a **CMD** (Command Prompt), or inside a **Powershell** (see [Powershell](../powershell/index.md)). The latter is an improved version of the former, which is retro compatible, meaning commands working in a CMD are, ⚠️for most ⚠️, working inside a powershell.
+You can run commands on Windows inside a **CMD** (Command Prompt), or inside a **PowerShell** (see [PowerShell](../powershell/index.md)). The latter is an improved version of the former, and it is retro compatible too, meaning commands working in a CMD are, ⚠️for most ⚠️, working inside a PowerShell.
 
 The syntax used **on this website** (📌) is that commands starting with the prompt
 
-* `PS>` are working in both a CMD or a Powershell
+* `PS>` are working in both a CMD or a PowerShell
 * `CMD>` are only working in a CMD
 
-You can start a CMD with the commands `cmd`/`cmd.exe`, and a powershell with the commands `powershell`/`powershell.exe`. You can also use
+You can start a CMD with the commands `cmd`/`cmd.exe`, and a PowerShell with the commands `powershell`/`powershell.exe`. You can also use
 
 ```bash
-CMD> powershell -c "powershell command here"
+CMD> powershell -c "PowerShell command here"
 ```
 </div><div>
 
 **Hint 1**
 
-⚠️⚠️ DANGER ⚠️⚠️. In PowerShell `where` is an alias of `Where-content`, but `where` is also a command in CMD. In such case, you need to call `where.exe` to use the CMD command, it's pretty tricky!!!
+⚠️⚠️ DANGER ⚠️⚠️. There are many aliases in PowerShell, such as `sc` for `Set-Content`. The problem is that some aliases are also CMD commands... The easy solution is to add `.exe`, such as `sc.exe`.
 
 **Hint 2**
 
-To run administrative commands in a CMD/Powershell, you need to start it by right-clicking on it, and using "Run as administrator".
+To run administrative commands in a CMD/PowerShell, you need to start it by right-clicking on it, and using "Run as administrator".
 
 **Hint 3**
 
-You can open a CMD/powershell in a folder by using <kbd>SHIFT+Right-click</kbd> on the folder, then selecting "Open a Powershell here". Note that since Windows 11, you have to click on "More options" first...
+You can open a CMD/PowerShell in a folder by using <kbd>SHIFT+Right-click</kbd> on the folder, then selecting "Open a PowerShell here". Note that since Windows 11, you have to click on "More options" first...
 </div></div>
 
 <hr class="sep-both">
 
 ## CMD commands
 
-If you don't use powershell, which is Linux friendly so most Unix commands are available, here are some commands that you will most likely use. See [comparison of cmdlets with similar commands](https://en.wikipedia.org/wiki/PowerShell#Comparison_of_cmdlets_with_similar_commands). If you need help, use `command /?`, `help command`, `command /help`...
+If you don't use PowerShell, which is Linux friendly so most Unix commands are available, here are some commands that you will most likely use. See [comparison of cmdlets with similar commands](https://en.wikipedia.org/wiki/PowerShell#Comparison_of_cmdlets_with_similar_commands). If you need help, use `command /?`, `help command`, `command /help`...
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -83,7 +83,7 @@ If you don't use powershell, which is Linux friendly so most Unix commands are a
 **Users**
 
 * `LocalSystem`: an automatically created account used by the system to do internal tasks. It has higher privileges than Administrator.
-* `Administrator`: manage users, apps, groups, system-wide settings...
+* `Administrator`: manage users, apps, groups, and system-wide settings...
 * `Standard User`: can use apps, can access their files...
 
 **Groups**
@@ -123,7 +123,7 @@ Modern versions of Windows are using the New Technology File System (**NTFS**). 
 
 **Case-insensitive**
 
-Unlike linux, for Windows, `a` and `A` are the same. And you can use `\ ` (the default separator), and `/` (Unix separator).
+Unlike Linux, for Windows, `a` and `A` are the same. And you can use `\ ` (the default separator), and `/` (Unix separator).
 
 ```bash
 PS> cd c:\Users\xxx
@@ -138,7 +138,7 @@ I'm using below Unix Paths, because it's easier to write. See environment variab
 
 * root: `/`, which is usually `c:\ `
 * Windows root: usually `/Windows`
-* Find users files
+* Files belonging to a user
     * `/Users`
     * `/Users/xxx/Desktop` (ex: user `xxx`)
     * `/Users/xxx/Documents`  (ex: user `xxx`)
@@ -186,14 +186,14 @@ Environment variables are
 
 ### Windows services
 
-You can use the commands next to each task to use/open them, and you can also enter the command inside "execute" (Win  ➕ R). Note that extension that you may see are such as ".exe", or ".msc" optional (see `PATHEXT`).
+You can use the commands next to each task to use/open them, and you can also enter the command inside "execute" (Win  ➕ R). Note that extensions that you may see are such as ".exe", or ".msc" optional (see `PATHEXT`).
 
 <div class="row row-cols-md-2"><div>
 
 **Task Manager** (`taskmgr`)
 
 * Shortcut: <kbd>CTRL+SHIFT+ESC</kbd>
-* List running processes
+* List of running processes
 * This guide is quite complete [Windows Task Manager](https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide/)
 
 **Control panel** (`control`)
@@ -205,11 +205,11 @@ You can use the commands next to each task to use/open them, and you can also en
 * `lusrmgr.msc`: list of users/groups
 * `msconfig`: see services, manage system configurations
 * `lsass` is responsible for authentication within Windows.
-* `winver`: show Windows version+build, and licence holder.
+* `winver`: show Windows version+build, and license holder.
 * `control system`: open system info (Device/Windows specifications)
 * `msinfo32`: system info (raw, can search) + hardware and services
 * `UserAccountControlSettings`: change UAC settings
-* `compmgmt` is responsable for managing **shares**, **running tasks**, **listing events** ([doc](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types), monitor performance (`perfmon`/`resmon`), or even manage device hardware/services.
+* `compmgmt` is responsible for managing **shares**, **running tasks**, **listing events** ([doc](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types), monitoring performance (`perfmon`/`resmon`), or even manage device hardware/services.
 * `regedt32/regedit`: open Windows registry, a database used to store information needed to configure the system for users/applications/devices <small>(ports in use, applications...)</small>. See the [doc](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users).
 </div></div>
 
@@ -226,10 +226,10 @@ A service looking for updates, downloading them, and asking <small>(forcing sinc
 
 **Windows security** / **Windows defender**
 
-A set of tools to protect your Windows. There is an antivirus, which has a "ransomware protection" feature. There is a firewall to set rules for your network traffic. [SmartScreen](https://learn.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) was design to protects against phishing or malware, and there is a tab with security features such as Core isolation.
+A set of tools to protect your Windows. There is an antivirus, which has a "ransomware protection" feature. There is a firewall to set rules for your network traffic. [SmartScreen](https://learn.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) was designed to protect against phishing or malware, and there is a tab with security features such as Core isolation.
 
 
 **BitLocker**
 
-The Trusted Platform Module (TPM) hardware component providing security against tampering, or many other things. BitLocker was designed "to help protect user data, and to ensure that a computer has not been tampered with while the system was offline", as per [Microsoft](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview).
+The Trusted Platform Module (TPM) hardware component provides security against tampering along with many other things. BitLocker was designed "to help protect user data and to ensure that a computer has not been tampered with while the system was offline", as per [Microsoft](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview).
 </div></div>

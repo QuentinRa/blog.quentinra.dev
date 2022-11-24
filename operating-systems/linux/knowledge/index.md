@@ -1,4 +1,4 @@
-# Operating System
+# Operating System (Linux)
 
 This course is a gathering of general knowledge shared between most, if not all, Linux distributions (distros) such as Debian, Ubuntu, Fedora, or Arch Linux... Most of them are free, open-source, light, secure, and performant. As the source code is public, anyone can improve it, modify it, and know how the underlying system is doing its job, or a list it was supposed to be like that. The Operating System (OS) is the one connecting the hardware and the applications running on your computer.
 
