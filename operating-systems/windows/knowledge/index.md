@@ -29,7 +29,7 @@ The syntax used **on this website** (📌) is that commands starting with the pr
 
 You can start a CMD with the commands `cmd`/`cmd.exe`, and a PowerShell with the commands `powershell`/`powershell.exe`. You can also use
 
-```bash
+```powershell
 CMD> powershell -c "PowerShell command here"
 ```
 </div><div>
@@ -103,7 +103,7 @@ There are advanced permissions: Create Directory <small>(**AD**)</small>, Create
 
 Permissions are controlled by Discretionary Access Control List (DACLs), see the [icacls](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/icacls) command.
 
-```bash
+```powershell
 PS> icacls xxx
 xxx NT AUTHORITY\SYSTEM:(I)(F)
     BUILTIN\Administrators:(I)(F)
@@ -125,7 +125,7 @@ Modern versions of Windows are using the New Technology File System (**NTFS**). 
 
 Unlike Linux, for Windows, `a` and `A` are the same. And you can use `\ ` (the default separator), and `/` (Unix separator).
 
-```bash
+```powershell
 PS> cd c:\Users\xxx
 PS> cd C:\Users\xxx
 PS> cd /Users/xxx
@@ -156,14 +156,14 @@ I'm using below Unix Paths, because it's easier to write. See environment variab
 
 The syntax to display/use an environment variable is different.
 
-```bash
+```powershell
 # only in Powershell
 PS> ls Env: # list all
 PS> echo $Env:systemroot # print one
 PS> $Env:xxx = 'yyy' # set
 ```
 
-```bash
+```powershell
 CMD> set # list all
 CMD> echo %windir% # print one
 ```
