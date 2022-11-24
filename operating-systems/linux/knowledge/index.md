@@ -2,7 +2,7 @@
 
 This course is a gathering of general knowledge shared between most, if not all, Linux distributions (distros) such as Debian, Ubuntu, Fedora, or Arch Linux... Most of them are free, open-source, light, secure, and performant. As the source code is public, anyone can improve it, modify it, and know how the underlying system is doing its job, or a list it was supposed to be like that. The Operating System (OS) is the one connecting the hardware and the applications running on your computer.
 
-> **Note**: Linux is actually the name of the Kernel, while GNU/Linux is the operating system. To reduce complexity, Linux distributions may be referred to as distros, and GNU/Linux, will be referred as Linux, as Wikipedia do. Let's keep things simple, and tidy.
+> **Note**: Linux is actually the name of the Kernel, while GNU/Linux is the operating system. To reduce complexity, Linux distributions may be referred to as distros, and GNU/Linux, will be referred to as Linux, as Wikipedia does. Let's keep things simple, and tidy.
 
 <hr class="sl">
 
@@ -139,13 +139,13 @@ You can run multiple commands in one go
 $ ls toto; ls tata
 ```
 
-The operator `&&` only execute the next command if the previous one successfully ended (code=0)
+With the operator `&&`, the next command is only executed if the previous one successfully ended (code=0)
 
 ```bash
 $ ls toto && ls tata
 ```
 
-The operator `||` execute every command until a one is successful (code=0)
+With the operator `||`, every following command is executed until one is successful (code=0)
 
 ```bash
 $ ls toto && ls tata
@@ -196,7 +196,7 @@ Permissions are assigned on a file/folder, and are applied according to the targ
 Permissions are something is `u=r+w, g=r, o=r`, which means that user can read+write, group can read, and others can read too.
 </div><div>
 
-You may have noticed a number next to every kind of permissions. This is because permissions are coded on 3 bits, which means that they can take 8 values <small>(000, 001, 010...)</small>.
+You may have noticed a number next to every kind of permission. This is because permissions are coded on 3 bits, which means that they can take 8 values <small>(000, 001, 010...)</small>.
 
 * `0`: nothing <small>(000)</small>
 * `1`: can execute <small>(001=1=x)</small>
@@ -284,7 +284,7 @@ If you are giving one of these, in a context where you couldn't (such as giving 
 
 ## Paths
 
-In both Linux, and Windows, there is a notion of **Path**. A path is made of one or more folders (`dossier/catalogue`), and may lead to a file (`fichier`).
+A **path** (`chemin`) is a suite of one or more folders (`dossier/catalogue`) that may lead to a file (`fichier`).
 
 <details class="details-e">
 <summary>Notions: Path, Separator, root, home...</summary><br>
@@ -296,7 +296,7 @@ In both Linux, and Windows, there is a notion of **Path**. A path is made of one
 <tbody>
 
 <tr><td><b>A path</b> (<code>chemin</code>)
-</td><td><code>C:\Users\user\Documents\</code></td><td><code>/usr/home/user/Documents/</code></td></tr>
+</td><td><code>C:\Users\toto\Documents\</code></td><td><code>/usr/home/toto/Documents/</code></td></tr>
 
 <tr><td><b>Separator</b><br>
 Something that is separating folders in a path.
@@ -308,7 +308,7 @@ The folder is containing every other folder.
 
 <tr><td><b>(user) home</b> (<code>domicile</code>)<br>
 The folder with every file belonging to "user".
-</td><td><code>C:\Users\user\</code></td><td><p><code>/usr/user/home/</code></p>
+</td><td><code>C:\Users\toto\</code></td><td><p><code>/usr/toto/home/</code></p>
 
 * The path to the home is stored inside `$HOME`
 * The home of every user is recorded in `/etc/passwd`
@@ -371,18 +371,18 @@ If the home of the current user is `/usr/user/home/`, then `~` would mean the ex
 <summary>Notable Linux files/folders</summary>
 
 * `/etc` (folder): "commonplace location to store system files that are used by your operating system"
-* `/dev/null` (file): a empty file, sort of trash files in which everything you write inside is deleted.
+* `/dev/null` (file): an empty file, a sort of trash file in which everything you write inside is deleted.
 * `/etc/shadow` (file): username, and their hashed password
 * `/etc/gshadow` (file), and `/etc/group`: groups
 * `/var/log/` (folder): log files
-* `/mnt` (folder): mounted device/hard-drives (D:, USB...)
-* `/tmp` (folder): a trash folder cleaned at restart
+* `/mnt` (folder): mounted device/hard drives (D:, USB...)
+* `/tmp` (folder): a trash folder cleaned on reboot
 </details>
 </div><div>
 <details class="details-e">
 <summary>Regular, and non-regular files</summary>
 
-Before, we didn't explain the first "-" before every result of `ls -l`, but it could be
+In `ls -l` output, the first character indicates the kind of file.
 
 ```none
 -rw-r--r--
@@ -391,7 +391,7 @@ Before, we didn't explain the first "-" before every result of `ls -l`, but it c
 * `d`: a folder
 * `s`: a symbolic link
 * `-`: a regular file (`fichier normal/régulier`)
-* there is a lot for special files such as `b`, `c`...
+* There is also `b`, `c`...
 </details>
 </div></div>
 
@@ -421,7 +421,7 @@ Before, we didn't explain the first "-" before every result of `ls -l`, but it c
 
 <div class="row row-cols-md-2"><div>
 
-Environment variables (`Variables d’environnement`) are variables defined in the environment that can be used read by others apps. There a few well-known ones
+Environment variables (`Variables d’environnement`) are variables globally, mostly used by commands/applications to access information about the system, save configurations... There a few well-known ones
 
 * **HOME**: path to the current user home
 * **USER**: username of the current user

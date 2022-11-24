@@ -1,6 +1,6 @@
 # List of essential Linux commands
 
-A lot of commands, along with their most useful options, and some tips about their usage, that can be used on Linux-based distributions. This includes commands such as `sudo`, `apt`, `man`, `ls`, `cd`, `pwd`, `echo`, `printf`, `cat`, `less`, `mkdir`, `touch`, `cp`, `mv`, `rm`, `ln`, `chmod`, `umask`, `chown`, and many more.
+A lot of commands, that can be used on Linux-based distributions, along with their most useful options, and some tips about their usage. This includes commands such as `sudo`, `apt`, `man`, `ls`, `cd`, `pwd`, `echo`, `printf`, `cat`, `less`, `mkdir`, `touch`, `cp`, `mv`, `rm`, `ln`, `chmod`, `umask`, `chown`, and many more.
 
 **Note**: some commands are not listed here
 
@@ -23,9 +23,8 @@ A lot of commands, along with their most useful options, and some tips about the
 </div></div>
 </blockquote>
 
-<p class="h4">
-⭐ If there is a command that you don't understand, check out <a href="https://explainshell.com/" target="_blank" rel="noopener noreferrer">explain shell</a>.
-</p>
+<span class="h4 fs-4">➡️ If there is a command that you don't understand, check out [explain shell](https://explainshell.com/).
+</span>
 
 <hr class="sr">
 
@@ -33,7 +32,7 @@ A lot of commands, along with their most useful options, and some tips about the
 
 <div class="row row-cols-md-2"><div class="align-self-center">
 
-*This isn't an official way to call it*, but there is a command called `less` allowing you to read usually big amount of text in a editor. Less-editor is used by **man**, and some others commands.
+*This isn't an official way to call it*, but there is a command called `less` allowing you to read a usually big amount of text in a terminal editor. Less-editor is used by **man**, and some other commands.
 
 There are QUITE a lot of options. Simply press <kbd>h</kbd> to see all of them.
 </div><div>
@@ -172,7 +171,7 @@ $ alias
 <details class="details-e">
 <summary><code>update-alternatives</code>: switch PHP/Python/Java... version</summary>
 
-**Note**: it's only available on debian-based distributions, from what I read.
+**Note**: it's only available on Debian-based distributions, from what I read.
 
 ```bash
 $ sudo update-alternatives --config php
@@ -198,7 +197,7 @@ Disable an option (ex: nullglob)
 $ shopt -pu nullglob
 ```
 
-> By default, if a pattern returns nothing, some commands fails. This option will make any pattern without results return an empty "null" string.
+> By default, if a pattern returns nothing, some commands fail. This option will make any pattern without results return an empty "null" string.
 
 </details>
 </div><div>
@@ -230,7 +229,7 @@ $ xrandr --output DP-2 --brightness 0.5
 
 List all files in the given directory. If none, work on the current directory. If a file is given, show information about the file.
 
-* `-l` : show a lof of information (l=long)
+* `-l` : shows a lot of information (l=long)
 * `-a`: show hidden files
 * `-R`: recursive
 * `-p`: add a trailing "/" to repositories
@@ -323,7 +322,7 @@ $ more file # use up/down, and q
 $ less file # use up/down, and q
 ```
 
-But, `cat` is originally a command mean to concatenate files/input, and output the result.
+But, `cat` is originally a command to concatenate files/input, and output the result.
 
 ```bash
 $ cat f0 f1
@@ -754,7 +753,7 @@ $ su root
 $ su -l root # perform a login, move to root's home...
 ```
 
-If you want to login as some other user, meaning moving to their home... Then use
+If you want to log in as some other user, meaning moving to their home... Then use
 
 ```bash
 $ su -l root
@@ -970,7 +969,7 @@ But the useful usage of tee is taking one input, and sending the output to many 
 
 ```bash
 $ tee output1 output2 < file
-# also show content of file here
+# also shows the content of the file here
 $ tee output1 output2
 Hello # CTRL-D
 Hello
@@ -981,8 +980,8 @@ Hello
 <details class="details-e">
 <summary><code>du</code>: estimate file space usage</summary>
 
-* `s` is for summarize (one result per argument)
-* `h` is for human-readable (add units...)
+* `s` to summarize the result (one result per argument)
+* `h` to use a human-readable format (add units...)
 
 ```bash
 $  du -sh folder
@@ -1019,7 +1018,7 @@ Best options
 * `-r` recursive <small>(`-R` to follow links too)</small>
 * `-i` Ignore case
 * `-v` Inverse pattern
-* `-c`: number of match per file
+* `-c`: number of matches per file
 * `-n`: add line number before each match
 * `-o` show only the matched part
 * `-H` show the file before every match
@@ -1032,7 +1031,7 @@ Less frequently used
 * `-l`: stop when match found, show file with matches
 * `-q`: no output, use the exit code to indicate if a match was found (0), or not (1).
 
-By default, if you are using `?`, `(`, or any character that are only used in regex won't be interpreted (`?` won't be considered as "optional"). You have two choices, using `-E` (extended), or escaping them
+By default, if you are using `?`, `(`, or any character used by regexes, it won't be interpreted (`?` won't be considered as "optional"). You have two choices, using `-E` (extended), or escaping them
 
 ```bash
 $ grep "opt?" *
@@ -1040,9 +1039,8 @@ $ grep "opt?" *
 $ grep "opt\?" *
 # match "op" with "t" optional
 $ grep -E "opt?" *
-# match "op" with "t" optional
-$ egrep "opt?" *
 # same as grep -E
+$ egrep "opt?" *
 ```
 </div></div>
 </details>
@@ -1051,7 +1049,7 @@ $ egrep "opt?" *
 <summary><code>sed</code>: search, and replace, or "play" with a file</summary>
 <div class="row row-cols-md-2"><div>
 
-One of the use of "sed" is generating an output of a file after applying a modification. **sed do not change the content of the file**, use a redirection if that's what you want.
+One of the uses of "sed" is generating an output of a file after applying a modification. **sed does not change the content of the file**, use a redirection if that's what you want.
 
 The syntax is `sed '<number><letter><args>' <file>`.
 
@@ -1086,7 +1084,7 @@ The most well-known use case of `sed` is to replace something with something els
 
 The syntax is `sed 's/pattern/replaced_with/option`.
 
-* `pattern`: refer to regex for write a pattern
+* `pattern`: refer to the regex section to write a pattern
 * `option`:
   * `none`: first match of each line
   * `g`: every match is replaced
@@ -1106,7 +1104,7 @@ $ sed "s/e/E/" file
 $ sed "s/e/E/1" file
 ```
 
-Comment every line starting with "S".
+Comment out every line starting with "S".
 
 ```bash
 $ sed "s/^\(S.*\)/# \1./" file
@@ -1222,7 +1220,7 @@ $ head f
 # first 5 lines
 $ head f -n 5
 $ head f -n +5
-# all lines, aside the last 3 lines
+# all lines, aside from the last 3 lines
 $ head f -n -5
 ```
 </details>
@@ -1235,7 +1233,7 @@ $ cat /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 ```
 
-In such file, values are separated with `:`. For cut, if you consider `:` as a separator, it looks like this `f1:f2:f3:f4:f5:f6:f7`. These values "f" are called fields, and you can extract them.
+In this file, values are separated with `:`. For cut, if you consider `:` as a separator, it looks like this `f1:f2:f3:f4:f5:f6:f7`. These values "f" are called fields, and you can extract them.
 
 ```bash
 $ cat /etc/passwd | cut -d: -f1
