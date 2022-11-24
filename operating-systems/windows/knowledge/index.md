@@ -103,7 +103,7 @@ There are advanced permissions: Create Directory <small>(**AD**)</small>, Create
 
 Permissions are controlled by Discretionary Access Control List (DACLs), see the [icacls](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/icacls) command.
 
-```java
+```bash
 PS> icacls xxx
 xxx NT AUTHORITY\SYSTEM:(I)(F)
     BUILTIN\Administrators:(I)(F)
