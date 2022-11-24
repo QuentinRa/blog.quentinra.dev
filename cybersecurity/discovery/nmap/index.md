@@ -39,7 +39,7 @@ A port is used by a protocol such as FTP (File Transfer Protocol) to transfer da
 > * [Networking/Ports](/info/networking/index.md#ports) to learn more about ports
 > * [Networking/Services](/info/networking/protocols/index.md) to learn more about the services using these ports
 > *  [Cyber/Services](/cybersecurity/exploitation/services/index.md) to learn more about how you can exploit services
-> * [Cyber/Bruteforce services](/cybersecurity/exploitation/services/bruteforce.md) to try to bruteforce a service credentials.
+> * [Cyber/Brute force services](/cybersecurity/exploitation/services/bruteforce.md) to try to brute force a service credentials.
 
 <hr class="sep-both">
 
@@ -257,7 +257,7 @@ Scripts are stocked in categories such as
 * `intrusive`: will harm the target
 * `vuln`: scan for vulnerabilities
 * `exploit`: try to exploit a vulnerability
-* `brute`: attempt bruteforce
+* `brute`: attempt brute force
 * `discovery`: try to discover more about the network.
 
 You can execute every script of a category

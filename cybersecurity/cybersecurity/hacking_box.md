@@ -22,7 +22,7 @@ I don't want to forget tools later, so I'm listing some here, just in case, as t
 
 * `telnet`/`curl` to fetch banners/headers
 * `whatweb`: fetch headers, certificates...
-* `nikto`: to fetch headers, discovery vulnerabilities
+* `nikto`: to fetch headers, discover vulnerabilities
 * `aquatone`: preview websites given a long list of hosts
 * `masscan`: "scan the internet in seconds"
 *  ➡️ `rustscan`: port scanner for CTFs
@@ -47,7 +47,7 @@ I don't want to forget tools later, so I'm listing some here, just in case, as t
 
 * `ffuf`/`wfuzz`: for fuzzing
 * `gobuster`/`dirsearch`: for forced browsing
-* `ffuf`/`wfuzz`/`hydra`: bruteforce forms
+* `ffuf`/`wfuzz`/`hydra`: brute force forms
 * `gobuster`/`ffuf`: virtual hosts/subdomains
 * BurpSuite to catch/repeat/... requests
 

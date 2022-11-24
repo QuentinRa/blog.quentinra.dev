@@ -225,7 +225,7 @@ If `/etc/passwd` was <s>intentionally</s> misconfigured
 
 ```bash
 $ cat /etc/passwd
-# if you can read it: try to bruteforce the password
+# if you can read it: try to brute force the password
 # if you can write it: change the root password
 # (copy a password / generate one mkpasswd -m sha-512 toto)
 ```

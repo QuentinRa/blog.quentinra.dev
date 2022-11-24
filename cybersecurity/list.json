@@ -118,8 +118,8 @@
       },
       {
         "tag": "exploitation/services/bruteforce.md",
-        "name": "Bruteforce services",
-        "desc": "Use hydra to bruteforce SSH, FTP...",
+        "name": "Brute force services",
+        "desc": "Use hydra to brute force SSH, FTP...",
         "icon": null,
         "hidden": false
       },
@@ -199,7 +199,7 @@
       },
       {
         "tag": "exploitation/web/forms/bruteforce.md",
-        "name": "Bruteforce Forms",
+        "name": "Brute force Forms",
         "desc": "Examples with ffuf, wfuzz, hydra...",
         "icon": null,
         "hidden": false
