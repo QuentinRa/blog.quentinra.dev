@@ -1,7 +1,7 @@
 <div align="center">
 <br>
 
-![icon](.github/icon64.png)
+![icon](.github/icon64.ico)
 
 <h1>blog.quentinra.dev</h1>
 
