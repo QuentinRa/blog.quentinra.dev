@@ -48,14 +48,14 @@ $ sudo himage <hostname>@<id> <command>
 
 **Wide area network** (WAN, `réseau mondial/étendu`) is every network outside your LAN network.
 
-**Local Area Network** (LAN, `réseau domestique`) is a network established within a limited area such as your home.
+**Local Area Network** (LAN, `réseau domestique`) is a network established within a limited area, such as your home.
 
 **Router**: a device usually connecting a LAN network, with a WAN network. It does "routing", meaning selecting the route/path that packets will take to arrive at the destination.
 
-**Hub/Switch**: a device that can be connected via ethernet to usually at least 4, up to 64 devices. They are receiving packets from others hosts, and they handle the delivery of packets while ensuring that they are received in the right order, and are not corrupted.
+**Hub/Switch**: a device which can be connected to usually at least 4, and up to 64 devices, using Ethernet. They are receiving packets from others hosts, and they handle the delivery of packets while ensuring that they are received in the right order, and are not corrupted.
 
 <details class="details-n">
-<summary><b>Ethernet</b>: this is a cable that can be used to connect a device to a Hub/Switch.</summary>
+<summary><b>Ethernet</b>: a cable to connect a device to a Hub/Switch.</summary>
 
 Instead of connecting nodes/devices to each other, they all are connected to a switch/hub using Ethernet (norm IEE 802.3). They are using a technique called "Carrier sensitive multiple access with collision detection", or **CSMA/CP** in short, to handle collisions.
 
@@ -72,7 +72,7 @@ If both the switch and the machine try to send a message at the same time, then 
 
 * **Bus Topology**: a single cable "backbone cable", and all devices connect to the cable. If a lot of packets are sent, the cable most likely be saturated.
 
-* **Ring/Token Topology**: each computer is connected to another one forming a loop. Packets are only moving in one direction, meaning that sometimes packets will do a whole loop (not efficient). If a computer/cable is faulty, then the loop is broken.
+* **Ring/Token Topology**: each computer is connected to another one, forming a loop. Packets are only moving in one direction, meaning that sometimes packets will do a whole loop (not efficient). If a computer/cable is faulty, then the loop is broken.
 </div></div>
 
 <hr class="sr">
@@ -104,7 +104,7 @@ This is a sort of simplified representation of all elements that are a part of t
 
 <div class="row row-cols-md-2"><div>
 
-A **network interface** is the connection between your machine and the network. It's most likely done by a network card. From the machine point of view, a virtual representation of a network interface was introduced, called "virtual network interface".
+A **network interface** is the connection between your machine and the network. It's most likely done by a network card. From the machine point of view, a virtual representation of a network interface was introduced, called a virtual network interface.
 
 For instance, if you are using Ethernet, then you will most likely have a virtual interface called `eth0` <small>(or ethSomething)</small>.
 
@@ -124,8 +124,8 @@ For applications on a local machine to communicate with each other, there is a s
 
 A port is something virtual associated with a protocol. By using that, we know that if a message enters the port XXX, then it's using the protocol YYY. 
 
-* There are 65535 available ports
-* There first 1024 are called "standard ports"
+* There are 65535 <small>(or in short $2^{16}$)</small> available ports
+* The first 1024 ports are called "standard ports"
 
 > The protocol used by a port is not set in stone! For security-related concerns, they are usually changed, and ports are also protected by something called a firewall, to hopefully prevent unauthorized users to know which protocol is run by each port. Ports may be closed too.
 </div><div>
@@ -150,7 +150,7 @@ There are TCP ports, and UDP ports. The former ports are the most well-known one
 A **media access control address (MAC address)** is a **unique (physical) address** associated with the network card (`carte réseau`) which the machine uses to connect itself to the internet.
 
 * Can be [spoofed](https://en.wikipedia.org/wiki/MAC_spoofing) <small>(some hacker can usurp your MAC)</small>
-* The IP identifies our machine within a network, but if we move to another network, then we will receive a new IP address. That's why we need something that does not change such as the MAC address.
+* The IP identifies our machine within a network, but if we move to another network, then we will receive a new IP address. That's why we need something that does not change, such as the MAC address.
 
 </div><div>
 
@@ -240,20 +240,23 @@ The CIDR notation is `77.33.225.0/24`.
 
 <div class="row row-cols-md-2"><div>
 
-This is an IP address which is a mask that can be used to find the number of fixed bits in another IP address.
+This IP address is called a mask, as it was not created to be assigned to a machine, but to find the number of fixed bits in another IP address.
 
-* We are writing **n** non-null bits (1), with $n$ the number of fixed bits
-* We are completing with null bits (0)
+* We are writing $n$ <small>(=number of fixed bits)</small> non-null bits (1)
+* We are filling the remaining bits with null bits (0)
 
 If we know that `77.33.225.0` has 24 fixed bits, then we will write 24 times "1", and 8 <small>(32-24)</small> times "0", giving us `11111111111111111111111100000000` which is `255.255.255.0`.
 </div><div>
 
-Given a CIDR address `77.33.128.0/17`, it's even easier to find the netmask.
+It's even easier to find the netmask. <small>Example with `77.33.128.0/17`.</small>
 
-* Calculate $\frac{n}{8}$: $\frac{17}{8}$ gives us $q=2$, $r=1$
-* Calculate $c=255-2^{8-r} + 1$: $255-2^{8-1}=128$
-* The result is $q$ times $255$, 1 time $c$, and $\min(4-q-1, 0)$ times $0$
-* Giving us $255.255.128.0$
+* Calculate $\frac{n}{8}$ (<small>$\frac{17}{8}$ gives us $q=2$, $r=1$</small>)
+* Calculate $c=255-2^{8-r} + 1$ (<small>$c=255-2^{8-1}=128$</small>)
+* The result is
+  * $q$ times $255$ <small>(2 times $255$)</small>
+  * 1 time $c$ <small>(1 times $128$)</small>
+  * and $\min(4-q-1, 0)$ times $0$  <small>(1 times $0$)</small>
+* <small>Giving us $255.255.128.0$</small>
 </div></div>
 </details>
 
@@ -264,7 +267,7 @@ Given a CIDR address `77.33.128.0/17`, it's even easier to find the netmask.
 
 This mask is used to send a message to EVERY machine in the network. 
 
-Basically, you are simply filling the **id_host** with non-null bits (1).
+We are simply filling the **id_host** with non-null bits (1).
 </div><div>
 
 Given the IP `77.33.225.0/24`,
@@ -372,7 +375,7 @@ When a computer sends a message, it will be sent starting a layer, and go down. 
 
 * **Layer 7 - Application**: Programs are exchanging data <small>(HTTP, SSH, FTP, SMTP...)</small>
 * **Layer 6 - Presentation**: Standardize, add encryption/compression... <small>(SSL, TLS...)</small>
-* **Layer 5 - Session**: Try to establish a connexion <small>(RPC, PAP...)</small>
+* **Layer 5 - Session**: Try to establish a connection <small>(RPC, PAP...)</small>
 * **Layer 4 - Transport**: select a protocol <small>(TCP, UDP...)</small>
 * **Layer 3 - Network** (`Réseau`, Router): create a packet <small>(IP, NAT, ICMP...)</small>
 * **Layer 2 - Data Link** (`Liaison`, Switch): resolve MAC <small>(ARP, ETH...)</small>
@@ -401,7 +404,7 @@ The TCP/IP model was introduced before the OSI model but remains the most used b
 * **Layer 4 - Application**: Layers 5 to 7 of OSI
 * **Layer 3 - Transport**: Layers 4 of OSI <small>(socket, port...)</small>
 * **Layer 2 - Internet**: Layers 3 of OSI <small>(IP, ETH...)</small>
-* **Layer 1 - Physical**: Layers 1, and 2 of OSI <small>(WIFI, ADsr, ETH...)</small>
+* **Layer 1 - Physical**: Layers 1, and 2 of OSI <small>(Wi-Fi, ADsr, ETH...)</small>
 
 Some are splitting "Layer 1" back into two layers, but it's not in the RFC1122 standard.
 
@@ -683,7 +686,7 @@ You can relate this table to a (switch) case statement that exists in many progr
 * If no destination is found, then `0.0.0.0` , will be used. It's leading to what we call the **Default Gateway**, which is usually ending with either ".1" or ".254".
 </div><div>
 
-Once you found a destination, the **gateway** indicate how you can reach it. If the gateway is `0.0.0.0`, then it means that you can directly send the packet (LAN). Otherwise, you have to send the packet to the IP in field "gateway".
+Once you found a destination, the **gateway** indicates how you can reach it. If the gateway is `0.0.0.0`, then it means that you can directly send the packet (LAN). Otherwise, you have to send the packet to the IP stored in the field "gateway".
 
 Another thing that you should take note of is **Iface**, which is the network interface that will be used to send the packet.
 </div></div>
