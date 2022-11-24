@@ -46,7 +46,7 @@ $ sudo himage <hostname>@<id> <command>
 
 <div class="row row-cols-md-2"><div>
 
-**Wide area network** (WAN, `réseau modial/étendu`) is every network outside your LAN network.
+**Wide area network** (WAN, `réseau mondial/étendu`) is every network outside your LAN network.
 
 **Local Area Network** (LAN, `réseau domestique`) is a network established within a limited area such as your home.
 
@@ -338,16 +338,16 @@ Example: Given $172.16.254.0/23$, we have $N = 23$, and we want to divide our ne
 
 <div class="row row-cols-md-2"><div>
 
-The Internet Protocol version 6 (**IPV6**) address is a **128-bits long address**. It was introduced because of the shortage of IPV4. It's also more efficient due to new technologies.
+The Internet Protocol version 6 (**IPV6**) address is a **128-bit long address**. It was introduced because of the shortage of IPV4. It's also more efficient due to new technologies.
 
-It looks like this: `2002:6963:6961:2046:616c:636f:6e20:3c33`, which is 8 blocs of 16 bits, separated with `:`. Because it's somewhat long, there are a few rules to shorten it
+It looks like this: `2002:6963:6961:2046:616c:636f:6e20:3c33`, which is 8 blocks of 16 bits, separated with `:`. Because it's somewhat long, there are a few rules to shorten it
 
-* Any leading $0$ in a bloc can be removed <small>(`0014 -> 14`)</small>
-* A whole bloc of $0$ can be replaced with one $0$ <small>(`0000 -> 0`)</small>
-* **One**, and only one suite of nul-groups, may be merged in `::` <small>(`...:0000:0000:... -> ...::...`)</small>
+* Any leading $0$ in a block can be removed <small>(`0014 -> 14`)</small>
+* A whole block of $0$ can be replaced with one $0$ <small>(`0000 -> 0`)</small>
+* **One**, and only one suite of null-groups, may be merged in `::` <small>(`...:0000:0000:... -> ...::...`)</small>
 </div><div>
 
-There are 8 kind of IPV6 addresses
+There are 8 kinds of IPV6 addresses
 
 | Type/Name                        | Prefix (128 bits) | IPV6 notation            |
 |----------------------------------|-------------------|--------------------------|
@@ -364,11 +364,11 @@ There are 8 kind of IPV6 addresses
 
 ## OSI model
 
-The Open Systems Interconnection (**OSI**) model is a standardised representation of how we could send a message between two machines. It's made of **7 layers** (`couche`): Physical, Data Link, Network, Transport, Session, Presentation, and Application. Although it's newer that the TCP/IP model, the later remain the most widely used one as it is more compact.
+The Open Systems Interconnection (**OSI**) model is a standardized representation of how we could send a message between two machines. It's made of **7 layers** (`couche`): Physical, Data Link, Network, Transport, Session, Presentation, and Application. Although it's newer than the TCP/IP model, the latter remains the most widely used one as it is more compact.
 
 <div class="row"><div class="col-md-7">
 
-When a computer send a message, it will be send starting a layer, and go down. When a computer receive a message, it will go up every layer in the reverse order.
+When a computer sends a message, it will be sent starting a layer, and go down. When a computer receives a message, it will go up every layer in reverse order.
 
 * **Layer 7 - Application**: Programs are exchanging data <small>(HTTP, SSH, FTP, SMTP...)</small>
 * **Layer 6 - Presentation**: Standardize, add encryption/compression... <small>(SSL, TLS...)</small>
@@ -383,7 +383,7 @@ Each time a `data` go down to be sent, a header is added. This process is called
 
 When a message is received, each header will be removed when going up. This process is called **de-encapsulation**.
 
-The data being send is named differently according to the headers that were added
+The data being sent is named differently according to the headers that were added
 
 * **Level 5 to 7**: data
 * **Level 4**: segments (TCP), or datagrams (UDP)
@@ -396,14 +396,14 @@ The data being send is named differently according to the headers that were adde
 
 ## TCP/IP model
 
-The TCP/IP model was introduced way before the OSI model, and remain the most used because it's more compact. It's made of 4 layers
+The TCP/IP model was introduced before the OSI model but remains the most used because it's more compact. It's made of 4 layers
 
 * **Layer 4 - Application**: Layers 5 to 7 of OSI
 * **Layer 3 - Transport**: Layers 4 of OSI <small>(socket, port...)</small>
 * **Layer 2 - Internet**: Layers 3 of OSI <small>(IP, ETH...)</small>
 * **Layer 1 - Physical**: Layers 1, and 2 of OSI <small>(WIFI, ADsr, ETH...)</small>
 
-Some are splitting the "Layer 1" back in two layers, but it's not in the RFC1122 standard.
+Some are splitting "Layer 1" back into two layers, but it's not in the RFC1122 standard.
 
 <hr class="sr">
 
@@ -411,16 +411,16 @@ Some are splitting the "Layer 1" back in two layers, but it's not in the RFC1122
 
 <div class="row row-cols-md-2"><div>
 
-A **protocol** is a set of rules used to formalize of way of exchanging messages <small>(endianness, floating numbers format, charset, separators, integrity...)</small>.
+A **protocol** is a set of rules used to formalize the way of exchanging messages <small>(endianness, floating numbers format, charset, separators, integrity...)</small>.
 
 Each protocol is following a [**Message Sequence Chart**](https://en.wikipedia.org/wiki/Message_sequence_chart) which is simply describing how two machines are interacting using this protocol.
 
-**Protocol Data Unit (PDU)**: this is format that is used to transfer data. This is made of the **headers** of the protocol, followed by the data which is called **Payload** (`charge`).
+**Protocol Data Unit (PDU)**: this is the format that is used to transfer data. This is made of the **headers** of the protocol, followed by the data which is called **Payload** (`charge`).
 </div><div>
 
 **Maximum Transmission Unit (MTU)**
 
-To avoid data loss, each interface has a maximum size for a packet. The MTU of `lo` is usually 65536ko, while others, it's something more like 1500ko <small>(default value)</small>. If a packet is bigger than the MTU, then it will be **fragmented** (`fragmentés`) into smaller packets.
+To avoid data loss, each interface has a maximum size for a packet. The MTU of `lo` is usually 65536ko, while for others, it's something more like 1500ko <small>(default value)</small>. If a packet is bigger than the MTU, then it will be **fragmented** (`fragmenté`) into smaller packets.
 
 <details class="details-e">
 <summary>Example of a packet being fragmented (handled by IP)</summary>
@@ -442,7 +442,7 @@ To avoid data loss, each interface has a maximum size for a packet. The MTU of `
 <summary>TCP (6): transmission control protocol</summary>
 <div class="row row-cols-md-2"><div>
 
-It's a **connection-based protocol**. It's used when there is a need for a **trustworthy/reliable** (`fiable`), and ordered way of sending messages.. If there is an error, then the sender is notified, and the message is sent again.
+It's a **connection-based protocol**. It's used when there is a need for a **trustworthy/reliable** (`fiable`), and ordered way of sending messages. If there is an error, the sender is notified, and the message will be sent again.
 
 > TCP PDU are called **segments**.
 
@@ -463,12 +463,12 @@ TCP messages all have a [flag](https://en.wikipedia.org/wiki/Transmission_Contro
 
 **Header**
 
-* 2 bytes for "source port"
-* 2 bytes for "destination port"
-* 4 bytes for "sequence number" (seq)
-* 2 bytes for "acknowledgement number" (ack)
+* 2 bytes for the "source port"
+* 2 bytes for the "destination port"
+* 4 bytes for the "sequence number" (seq)
+* 2 bytes for the "acknowledgment  number" (ack)
 * 4 bits for the "offset"
-* 3 bits "reserved" (000)
+* 3 bits that are "reserved" (000)
 * 9 bits for the "flag"
 * 2 bytes for the "frame/windows" (`cadre`)
 * 2 bytes for the "checksum"
@@ -481,7 +481,7 @@ TCP messages all have a [flag](https://en.wikipedia.org/wiki/Transmission_Contro
 <summary>UDP (17): user datagram protocol</summary>
 <div class="row row-cols-md-2"><div>
 
-It's a **connection-less protocol**. It's used for fast messaging, by applications that don't mind if a packet is loss/incorrect. It's **not trustworthy** (`non fiable`)
+It's a **connection-less protocol**. It's used for fast messaging, by applications that don't mind if a packet is lost/incorrect. It's **not trustworthy** (`non fiable`)
 
 * No warranty that the message will be received
 * No warranty that the message received is correct
@@ -526,7 +526,7 @@ For instance, if someone tries to send a message using TCP to a closed port, the
 * 2 bytes for "checksum of the message"
 * 4 bytes for "additional/specific information"
 
-Each code is associated with a type. Here some of them (code: type). See [Control Messages (ICMP) on Wikipedia](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol#Control_messages)
+Each code is associated with a type. Here are some of them (code: type). See [Control Messages (ICMP) on Wikipedia](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol#Control_messages)
 
 * `0`: echo reply
 * `3`: destination unreachable
@@ -546,16 +546,16 @@ The IP protocol is using this header
 ![IP Header](_images/ip_headers.png)
 
 * **version**: 4 (IPV4), or 6 (IPV6)
-* **IHL**: a quarter of the length of the header, which is usually of 20 bytes <small>(so, the IHL would be 5)</small>.
-* **TPL**: size of the entire packet in bytes
-* **Fragment ID**: identifier of the packet. Fragmented packet have the same fragment ID.
+* **IHL**: a quarter of the length of the header, which is usually 20 bytes <small>(so, the IHL would be 5)</small>.
+* **TPL**: the size of the entire packet in bytes
+* **Fragment ID**: identifier of the packet. Fragmented packets have the same fragment ID.
 </div><div>
 
 * **FLAG**:
   * 010 (DF): do not fragment
   * 001 (MF): more fragments are coming
   * 100 (X): reserved
-* **Fragment Offset**: index of this package payload in the un-fragmented data. This is the sum of the length of the previous fragmented packets payloads. This value is in **bytes** <small>(TPL divided by 8)</small>. For instance, the first fragment would have 0.
+* **Fragment Offset**: index of this package payload in the un-fragmented data. This is the sum of the length of previously fragmented packet payloads. This value is in **bytes** <small>(TPL divided by 8)</small>. For instance, the first fragment would have 0.
 * **TTL**: decrease by one each time the packet transit by a host. The packet is destroyed if the TTL reaches 0. This is used to prevent looping.
 * **Protocol**: which protocol was used <small>(1=ICMP, 6=TCP, 17=UDP...)</small>. [See the list of IP protocol numbers](https://en.wikipedia.org/wiki/List_of_IP_protocol_numbers).
 
@@ -564,12 +564,12 @@ The size of the payload is **TPL-IHL**.
 To check if two packets are fragments, they MUST have
 
 * the same source, destination, id, and protocol
-* every packet aside from the last one have the flag MF <small>(flag[+])</small>, while the last has the flag DF <small>(flag[none])</small>.
+* every packet aside from the last one has the flag MF <small>(flag[+])</small>, while the last has the flag DF <small>(flag[none])</small>.
 
 </div></div>
 </details>
 
-> One thing to note, is that for instance in UDP, there is no "IP address" in the header. You should remember than UDP is working at a layer above (Layer 4) the one adding such information (Layer 3). And, as written before, each layer is adding its header, so still for UDP, you would have the header of IP followed by the header of UDP...
+> One thing to note, is that for instance in UDP, there is no "IP address" in the header. You should remember that UDP is working at a layer above (Layer 4) the one adding such information (Layer 3). And, as written before, each layer is adding its header, so still for UDP, you would have the header of IP followed by the header of UDP...
 
 <hr class="sl">
 
@@ -589,7 +589,7 @@ You can observe an ARP request by using `tcpdump`, and a `ping` on an uncached t
 ... reply <target_IP> is-at <MAC_address> ...
 ```
 
-> ARP packets are bound to their subnet, so they won't leave it. If a machine isn't found in a subnet, then the requested will send a packet to the gateway, which will most likely either return the IP address, or repeat the same process.
+> ARP packets are bound to their subnet, so they won't leave it. If a machine isn't found in a subnet, then the request will be sent to the gateway, which will most likely either return the IP address (if cached) or repeat the same process.
 </div><div>
 
 **Protocol**
@@ -601,7 +601,7 @@ You can observe an ARP request by using `tcpdump`, and a `ping` on an uncached t
 * IP source (requested IP)
 * IP destination (target IP)
 
-**ARP Reply**/Response: if a machine found its IP in the Request, they are replying to the sender with their MAC.
+**ARP Reply**/Response: if a machine found its IP in the Request, they are replying to the sender with its MAC.
 * Mac source (its MAC address)
 * ...
 </div></div>
@@ -612,11 +612,11 @@ You can observe an ARP request by using `tcpdump`, and a `ping` on an uncached t
 
 <div class="row row-cols-md-2"><div>
 
-Remembering IP addresses can be a trough process. Because of that, **Domain names** were introduced, pointing to IP addresses.
+Remembering IP addresses can be a tough process. Because of that, **Domain names** were introduced, pointing to IP addresses.
 
 For instance, the domain name `example.com` is pointing to `93.184.216.34`.
 
-> Note: `example.com` is actually the **Fully Qualified Domain Name** (FQDN) `example.com.`, with a "`.`" at the end. That's why "`.`" is called the root, as every domain is a child of root.
+> Note: `example.com` is actually the **Fully Qualified Domain Name** (FQDN) `example.com.`, with a "`.`" at the end. That's why "`.`" is called the root, as every domain is a child of "root".
 
 > DNSSEC stands for DNS Secure, which is an extension of the DNS protocol adding security as they were no such thing originally.
 
@@ -633,7 +633,7 @@ DNS records are stored in the cache for a duration determined by their **Time-to
 <details class="details-n">
 <summary>2. If not cached, it will ask a <b>recursive DNS server</b></summary>
 
-Your internet provider (ISP) maintain its own recursive servers.
+Your internet provider (ISP) maintains its own recursive servers.
 
 The **root domain** is "`.`", and its servers are keeping track of the IP addresses of the **Top level domain (TLD)** servers.
 
@@ -652,12 +652,12 @@ DNS records include IPV4 (A), and IPV6 addresses (AAAA), along mail servers (MX)
 
 The iterative approach mandated by the RFC 1034 is
 
-* A client is asking the IP of `www.example.com` to the root server `.`
-* The root server tell him to ask `.com`, and give the IP of `.com`
-* The client asks `.com`, which responds with the IP of `example.com`
-* The client asks `example.com`, which responds with the IP we were looking for
+* A client is asking for the IP of `www.example.com` to the root server `.`
+* The root server tells him to ask `.com`, and give the IP of `.com`
+* The client asks `.com`, which answers with the IP of `example.com`
+* The client asks `example.com`, which answers with the IP we were looking for
 
-But, in practice, to reduce traffic, and not put a heavy pressure on the root servers, practices such as caching are used.
+In practice, to reduce traffic, and not put pressure on the root servers, DNS records are cached.
 </details>
 
 See also: [An Introduction to DNS Terminology, Components, and Concepts
@@ -670,20 +670,20 @@ See also: [An Introduction to DNS Terminology, Components, and Concepts
 
 <div class="row row-cols-md-2"><div>
 
-When a machine want to send a packet to another one, the **routing table** will be used to determine
+When a machine wants to send a packet to another one, the **routing table** will be used to determine
 
 * if we can send the packet directly to the destination
 * or, which machine can we ask to do the delivery
 
 ![Routing table](_images/routing_table.png)
 
-You can relate this table to a (switch) case statement which exists in many programming languages.
+You can relate this table to a (switch) case statement that exists in many programming languages.
 
-* The IP will try each destination. The GenMask (Netmask) will be used to get the **network address**. Then, if the IP is withing the network range, then we will use this destination.
+* The IP will try each destination. The GenMask (Netmask) will be used to get the **network address**. Then, if the IP is within the network range, then we will use this destination.
 * If no destination is found, then `0.0.0.0` , will be used. It's leading to what we call the **Default Gateway**, which is usually ending with either ".1" or ".254".
 </div><div>
 
-Once you found a destination, the **gateway** indicate what to do to reach this destination. If the gateway is `0.0.0.0`, then it means that you can directly send the packet (LAN). Otherwise, you have to send the packet to the IP in gateway.
+Once you found a destination, the **gateway** indicate how you can reach it. If the gateway is `0.0.0.0`, then it means that you can directly send the packet (LAN). Otherwise, you have to send the packet to the IP in field "gateway".
 
 Another thing that you should take note of is **Iface**, which is the network interface that will be used to send the packet.
 </div></div>
@@ -708,12 +708,12 @@ This command is using tables, the most widely used are **filter packets** (filte
 This table is used to accept, or drop a packet. There are 3 chains, according to what packets are doing
 
 * **FORWARD**: packets are transiting/passing by this machine
-* **INPUT**: packet have this machine for destination
-* **OUTPUT**: packet have emitted from this machine
+* **INPUT**: packets that have this machine for destination
+* **OUTPUT**: packets that have been emitted from this machine
 
 And you have actions such as **ACCEPT/DENY/DROP/...** to drop a packet. 
 
-For instance, this command will DROP any packet using the protocol TCP, on the port 22, that have our machine for destination, emitted by `172.16.1.1`.
+For instance, this command will DROP any packet using the protocol TCP, on the port 22, which has our machine as the destination, emitted by `172.16.1.1`.
 
 ```bash
 $ sudo iptables -t filter -A INPUT -s 172.16.1.1 -p tcp --dport 22 -j DROP
@@ -723,13 +723,13 @@ $ sudo iptables -t filter -A INPUT -s 172.16.1.1 -p tcp --dport 22 -j DROP
 <details class="details-e">
 <summary>Table "NAT"</summary>
 
-This table is used to modify the IP_SRC, or IP_DEST, usually referred as translating, mostly to allow machines to communicate between each other, without being aware of what is the machine they are communicating with.
+This table is used to modify the IP_SRC, or IP_DEST, usually referred to as translating, mostly to allow machines to communicate with each other, without being aware of which machine they are communicating with.
 
 ![NAT](_images/nat.png)
 
-In the schema above, host1 want to allow PC1, and PC2 to communicate, but don't want PC2 to know that PC1. When host1 receives a message from PC1, it will replace PC1 address (source) by its own address, and send it to PC2. When receiving a reply from PC2, it will replace its address (dest) with PC1 address, and send the reply to PC1. 
+In the schema above, host1 wants to allow PC1, and PC2 to communicate, but doesn't want PC2 to know that messages are from PC1. When host1 receives a message from PC1, it will replace PC1 address (source) with its own address, and send it to PC2. When receiving a reply from PC2, it will replace its address (dest) with PC1 address, and send the reply to PC1. 
 
-Another case, is that if a machine inside your network is sending a message to the outside word, instead of exposing your machines IP addresses, you could only expose your host IP address by using NAT. 
+Another case, is that if a machine inside your network is sending a message to the outside world, instead of exposing your machines' IP addresses, you could only expose your host IP address by using NAT. 
 
 There are 3 chains
 
