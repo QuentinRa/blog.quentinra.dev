@@ -8,21 +8,21 @@
 
 <div class="row row-cols-md-2"><div>
 
-Almost all the time, password are **hashed**. It means that some "clear text" is passed to a one-way function that returns (=digest) a hash. One-way means that you can't get back the password from the hash. But, we can check if a password has generated a hash, so it's a useful, and a (supposedly) secure way of storing a password.
+Almost all the time, passwords are **hashed**. It means that some "clear text" is passed to a one-way function that returns (=digest) a hash. One-way means that you can't get back the password from the hash. But, we can check if a password has generated a hash, so it's both a useful and (supposedly) secure way of storing a password.
 
-The most important use of hashing is for integrity. We generate a hash of file/..., and make it available with the file. Others can generate the hash of the file after they download it. If both are the same, then it means that the content was not tempered with.
+The most important use of hashing is for integrity. We generate a hash of file/..., and make it available with the file. Others can generate the hash of the file after they download it. If both are the same, then it means that the content was not tampered with.
 
 > Ex: HMAC.
 
-Some hashing functions are proven to be faulty, such as [SHA1](https://shattered.io/), or [MD5](https://www.mscs.dal.ca/~selinger/md5collision/), as two different password generated the same hash (hash collision), which means that using a different password that intended, you could log in into the victim account.
+Some hashing functions are proven to be faulty, such as [SHA1](https://shattered.io/), or [MD5](https://www.mscs.dal.ca/~selinger/md5collision/), as two different passwords generated the same hash (hash collision), which means that using a different password than intended, you could log in into the victim account.
 </div><div>
 
 Usually, hackers create **rainbow tables**, or dictionaries, in which hashes are mapped to passwords. This allows tools to easily give them back the password, if it's in the dictionary. This is possible, because, by default, the same password will generate the same hash. To avoid such attacks, hash functions are taking a parameter called **salt**, and only the same salt should produce the same hash.
 
-⚠️Hash brute-forcing tools are (usually) using your CPU to computer results faster. On VM, they may be less efficient, as the VM itself is taking a lot of resources.
+⚠️Hash brute-forcing tools are (usually) using your CPU to compute results faster. On a VM, they may be less efficient, as the VM itself is taking a lot of resources.
 
 > You can find the location of [password wordlists here](/cybersecurity/exploitation/general/index.md#-wordlists-).<br>
-> Remainder: CTF are usually using `/usr/share/wordlists/rockyou.txt`.
+> Reminder: CTFs are usually using `/usr/share/wordlists/rockyou.txt`.
 </div></div>
 
 <hr class="sep-both">
@@ -31,7 +31,7 @@ Usually, hackers create **rainbow tables**, or dictionaries, in which hashes are
 
 <div class="row row-cols-md-2"><div>
 
-There are a few solutions to find which kind a hash algorithm was used to generate a hash. We consider in the following, that the hash is stored inside a file called "hash".
+There are a few solutions to find which kind of hash algorithm was used to generate a hash. We consider in the following, that the hash is stored inside a file called "hash".
 
 Historically, there was [hash-identifier](https://github.com/blackploit/hash-identifier) (399⭐), but it's kinda old (2011).
 
@@ -66,24 +66,24 @@ $ haiti "some_hash"
 * [hashes.com/hash_identifier](https://hashes.com/en/tools/hash_identifier) (website)
 </div></div>
 
-> You might have to do it manually too. Some well-known one are "\\$1\\$" <small>(cisco, old linux)</small>, "\\$2\\$, \\$2a\\$, \\$2b\\$, \\$2x\\$, \\$2y\\$" <small>(bcrypt, web)</small>, or "$6" <small>(sha512crypt, modern linux)</small>. You can find a lot of examples [on hashcat website](https://hashcat.net/wiki/doku.php?id=example_hashes).
+> You might have to do it manually too. Some well-known one are "\\$1\\$" <small>(crypt, cisco, old Linux)</small>, "\\$2\\$, \\$2a\\$, \\$2b\\$, \\$2x\\$, \\$2y\\$" <small>(bcrypt, web)</small>, or "$6" <small>(sha512crypt, modern Linux)</small>. You can find a lot of examples [on hashcat website](https://hashcat.net/wiki/doku.php?id=example_hashes).
 
 <hr class="sep-both">
 
 ## Online password cracking
 
-There are a lot of online websites that have big databases with ton of hashes and the cracked password (rainbow tables). It's only helpful if the hash is recorded inside.
+There are a lot of online websites that have big databases with tons of hashes matched with cracked passwords (rainbow tables). It's only helpful if the hash is recorded inside.
 
 <div class="row row-cols-md-2"><div>
 
 * [crackstation](https://crackstation.net/). Not many algorithms, but we can download their wordlist  🚀 (4Go / 15Go uncompressed).
 
-* [MD5Hashing](https://md5hashing.net/). A ton of ads <small>(#team ublock)</small>. Quite of a lot of algorithms. Can encrypt/decrypt.
+* [MD5Hashing](https://md5hashing.net/). A ton of ads <small>(#team ublock)</small>. Quite a lot of algorithms. Can encrypt/decrypt.
 
 
 </div><div>
 
-* [decrypt.tools](https://decrypt.tools/). Very similar to MD5Hashing, but without ads. It's not very well-known, so there aren't as many hashes as others.
+* [decrypt.tools](https://decrypt.tools/). Very similar to MD5Hashing, but without ads. It's not very well known, so there aren't as many hashes as others.
 
 * [hashkiller.io](https://hashkiller.io/listmanager) / [hashes.com](https://hashes.com/en/decrypt/hash) which can [generate](https://hashes.com/en/generate/hash) hashes too.
 </div></div>
@@ -169,15 +169,15 @@ $ hashcat -m 0 hash wordlist -r /usr/share/hashcat/rules/best64.rule
 
 **Token length exception**: I had this error so many times that I got crazy about it. There are many causes for this error, unfortunately.
 
-* Try to look for your hash format [on hashcat website](https://hashcat.net/wiki/doku.php?id=example_hashes). There is an exemple of the output that hashcat is expecting. For instance, sometimes,  you need a file with `hash:salt`.
+* Try to look for your hash format [on hashcat website](https://hashcat.net/wiki/doku.php?id=example_hashes). There is an example of the output that hashcat is expecting. For instance, sometimes, you need a file with `hash:salt`.
 
-* I don't know why but it worked for me when I didn't use a file: `hashcat -m 160 hash:key wordlist`.
+* I don't know why, but it worked for me when I didn't use a file: `hashcat -m 160 hash:key wordlist`.
 
 * <i><span>More patches to come 😭</small></i>
 
 <br>
 
-Hashcat store cracked hashes in `~/.hashcat/hashcat.potfile`.
+Hashcat stores cracked hashes in `~/.hashcat/hashcat.potfile`.
 
 * `-m code`: the code identifying this algorithm, provided by nth/haiti
   * MD5 <small>(0)</small> / MD4 <small>(900)</small> / SHA1 <small>(100)</small> / NTLM <small>(1000)</small>
@@ -236,7 +236,7 @@ $ john hash --format=raw-md4 --wordlist=/usr/share/wordlists/rockyou.txt
 <details class="details-e mt-4">
 <summary>Single Crack mode</summary>
 
-This is one of the three modes of John. It won't use a wordlist, but an username instead, as the user may have used their username with some slight modifications as their password, as a password. For the username "toto", john will use both
+This is one of the three modes of John. It won't use a wordlist, but a username instead, as the user may have used their username with some slight modifications as their password. For the username "toto", john will use both
 
 * **Word Mangling**: Toto tOTo toto1 toto!
 * **GECOS**: other (GECOS) fields that are provided
@@ -257,7 +257,7 @@ $ john hash --single --format=raw-md5
 <details class="details-e">
 <summary>Custom rules</summary>
 
-You may try to exploit "password complexity predictability", for instance, the first character is usually an uppercase, and the last character a number. If a symbol was required, then its most likely the last character, after the number.
+You may try to exploit "password complexity predictability", for instance, the first character is usually an uppercase, and the last character a number. If a symbol was required, then it's most likely the last character, after the number.
 
 You may edit `/etc/john/john.conf`, and add your rules. You may make a copy, and use this configuration instead of the default one. You can use the regex operation `[]` inside quotes. `c` means that the character is capitalized. `Az` means appending character, while `A0` means prepending.
 
@@ -298,7 +298,7 @@ $ unshadow /path/to/stolen_passwd /path/to/stolen_shadow > hash
 $ john hash --format=sha512crypt --wordlist=wordlist
 ```
 
-Note that "unshadow" simply replaced the "x" in "passwd", with the password in "shadow", as you would find in some old linux distros.
+Note that "unshadow" simply replaced the "x" in "passwd", with the password in "shadow", as you would find in some old Linux distros.
 </div></div>
 
 <hr class="sep-both">
@@ -307,7 +307,7 @@ Note that "unshadow" simply replaced the "x" in "passwd", with the password in "
 
 <div class="row row-cols-md-2"><div>
 
-Modern Windows are using the hash format "NT", also referred as "NTLM", because "LM" was the previous hash format.
+Modern Windows are using the hash format "NT", also referred to as "NTLM", because "LM" was the previous hash format.
 
 ```bash
 $ john hash --format=nt --wordlist=wordlist
@@ -321,7 +321,7 @@ $ john hash --format=nt --wordlist=wordlist
 
 <div class="row row-cols-md-2"><div>
 
-The `gpg` tool can be used to encrypt files, using a passphrase, which is like a password. It can also be used to sign something. For instance, GitHub allow you to sign your commits using GPG keys.
+The `gpg` tool can be used to encrypt files, using a passphrase, which is like a password. It can also be used to sign something. For instance, GitHub allows you to sign your commits using GPG keys.
 
 To encrypt something, you could do this. It will generate a `file.gpg`
 
@@ -333,7 +333,7 @@ And, to decrypt <small>(no passphrase is asked if it is cached)</small>
 
 ```bash
 $ gpg -d file.gpg
-# generate back file
+# generate back your file
 ```
 </div><div>
 
@@ -360,7 +360,7 @@ $ john --format=gpg hash --wordlist=wordlist
 
 <div class="row row-cols-md-2"><div>
 
-Some users are using a key instead of a password while connecting to a server via SSH, because, as long as the key do not leak, it's more secure than sending credentials.
+Some users are using a key instead of a password while connecting to a server via SSH, because, as long as the key does not leak, it's more secure than sending credentials.
 
 ```bash
 ssh login@ip -i key
@@ -381,7 +381,7 @@ $ john --format=ssh hash --wordlist=wordlist
 
 <div class="row row-cols-md-2"><div>
 
-As for SSH, first convert the password to a file compatible with john.
+First convert the password to a file compatible with john.
 
 ```bash
 $ rar2john hello.rar > hash
@@ -389,7 +389,7 @@ $ john hash --wordlist=wordlist
 ```
 </div><div>
 
-If you found the password, you can unrar your rar with
+If you found the password, you can unrar your RAR with
 
 ```bash
 $ unrar x hello.rar
@@ -405,7 +405,7 @@ $ unrar x hello.rar
 
 <div class="row row-cols-md-2"><div>
 
-As for RAR, first convert the password to a file compatible with john.
+First convert the password to a file compatible with john.
 
 ```bash
 $ zip2john hello.zip > hash
@@ -413,7 +413,7 @@ $ john hash --wordlist=wordlist
 ```
 </div><div>
 
-If you found the password, you can unzip your zip with
+If you found the password, you can unzip your ZIP with
 
 ```bash
 $ unzip hello.zip
