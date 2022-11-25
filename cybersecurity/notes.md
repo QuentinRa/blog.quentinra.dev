@@ -26,7 +26,7 @@
 
 ## Forced Browsing
 
-[![webenumerationv2](../../../_badges/thmp/webenumerationv2.svg)](https://tryhackme.com/room/webenumerationv2)
+[![webenumerationv2](_badges/thmp/webenumerationv2.svg)](https://tryhackme.com/room/webenumerationv2)
 
 * Nikto: sensitive files, vulnerabilities of the web server, misconfigurations
   * -h: headers and sensitive files

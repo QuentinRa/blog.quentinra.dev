@@ -322,7 +322,7 @@ Then,
 
 To avoid copying and pasting information too much, you will have to read these pages for more information.
 
-* [NFS protocol](/info/networking/protocols/index.md#-nfs---2049-tcp)
+* [NFS protocol](/it/networking/protocols/index.md#-nfs---2049-tcp)
 * [NFS notes](/cybersecurity/exploitation/services/index.md#nfs---2049-tcp)
 
 To summarize, locally, you can use this command to find NFS shares.
