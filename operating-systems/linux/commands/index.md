@@ -78,11 +78,11 @@ $ sudo -s
 
 ```bash
 # operations on the package "aptitude"
-sudo apt install aptitude
-sudo apt update aptitude
-sudo apt upgrade aptitude
-sudo apt remove aptitude
-sudo apt auto-remove
+sudo apt install aptitude # install the package as well as its dependencies
+sudo apt update aptitude # search for an update
+sudo apt upgrade aptitude # install the update
+sudo apt remove aptitude  # uninstall the package
+sudo apt auto-remove # uninstall the package as well as its useless dependencies
 # update OS
 sudo apt dist-upgrade
 ```
@@ -110,13 +110,28 @@ $ sudo dpkg -i xxx.deb
 </details>
 
 <details class="details-e">
-<summary><code>man/apropos</code>: manual for most commands</summary>
+<summary><code>man/apropos/whatis</code>: manual for most commands</summary>
 <div class="row row-cols-md-2"><div>
 
 **Note**: man may have to be installed.
 
 ```bash
 $ man man
+```
+
+Commands without a man page, usually have an option "help"
+
+```bash
+$ man -h
+$ find -help
+$ gcc --help
+```
+
+Display one-line manual page descriptions
+
+```bash
+$ whatis whatis
+whatis (1) - display one-line manual page descriptions
 ```
 </div><div>
 
@@ -490,6 +505,7 @@ $ rm -i file # ask
 To delete a folder <small>(there is also `rmdir`, but it's garbage 😒)</small>
 
 ```bash
+$ rm -d folder # if the folder is empty
 $ rm -r folder # -R is doing the same
 $ rm -rf folder # usual f + r
 ```
