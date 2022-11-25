@@ -19,8 +19,8 @@ As there isn't much we can do as a regular user, we will try to elevate our leve
 
 * Find misconfiguration <small>(sudo, system files, NFS...)</small>
 * Find a vulnerable service and exploit it <small>(apache, mysql...)</small>
-* Find processes/tasks/script in which you can inject data
-  * cron tasks/jobs
+* Find processes/tasks/scripts in which you can inject data
+  * Cron tasks/jobs
   * executables with the SUID bit
   * ...
 * Find a vulnerability in the kernel
@@ -46,7 +46,7 @@ There are many **automated scripts** that will investigate usual places, service
 
 <div class="row row-cols-md-2"><div>
 
-It's common for well-known Linux commands to be misconfigured. Vulnerabilities can lead to reading/writing root-only files, execute commands as root...
+It's common for well-known Linux commands to be misconfigured. Vulnerabilities can lead to reading/writing root-only files, executing commands as root...
 
 **[gtfobins](https://gtfobins.github.io/)** (7.4k ⭐) is the reference when looking for commands to exploit misconfigured Linux commands.
 
@@ -100,7 +100,7 @@ System Files 🔏
 
 * `/proc/version`: information about the machine
 * `/etc/*release`: information about the operating system
-* `/etc/issue`: alternative to find the OS/version
+* `/etc/issue`: an alternative to find the OS/version
 * `/etc/passwd`: usernames, their groups, their home, and their shell
 * `/etc/shadow` <small>(root)</small>: username, and their hashed password
 * `/etc/sudoers` <small>(root)</small>: sudoers, and rules applied to them, if any
@@ -144,7 +144,7 @@ Try to find commands that can be run with sudo
 ```bash
 $ sudo -nl # test if you can sudo without a password
 $ sudo -l # if you can't, try with your password
-# -> if both cases, if you were successful
+# -> in both cases, if you were successful
 # and there are some interesting stuff such as:
 Matching Defaults entries for [...]:
     [...] # vulnerable env variables? (LD_PRELOAD...)
@@ -198,10 +198,10 @@ There are basic scenarios in which you can directly exploit the executable, but 
 * create a file named after the options of the command, so that when a vulnerable glob-pattern is replaced, you will actually inject options
 * ...
 
-For instance, if a script using the command `ls` and the environment variable `PATH` with the value `/tmp:[...]`, then because you can write in `/tmp`, you can create an executable named `ls` which is actually a `bash`. When the script run as root is executed, the command bash is executed as root, and your escalation is done.
+For instance, if a script uses the command `ls` and the environment variable `PATH` with the value `/tmp:[...]`, then because you can write in `/tmp`, you can create an executable named `ls` which is actually a `bash`. When the script run as root is executed, the command bash is executed as root, and your escalation is done. If you are the one running the script, you can also change your own PATH.
 </div><div>
 
-**Bash versions <4.2-048**: it is possible to create functions named after a path, which allow us to execute a command instead. If the path is accessed by a script, then using `-p`, we can create a bash while inheriting the permissions of its creator.
+**Bash versions <4.2-048**: it is possible to create functions named after a path, which allows us to execute a command instead. If the path is accessed by a script, then using `-p`, we can create a bash while inheriting the permissions of its creator.
 
 ```bash
 function /some/path { /bin/bash -p; }
@@ -271,7 +271,7 @@ $ cat /etc/shadow
 
 <div class="row row-cols-md-2"><div>
 
-Scripts having the SUID bit can be executed with the permissions of their owner. GUID is the same with the group owner permissions. If you find interesting files using find, check them out on GTFOBins.
+Scripts having the SUID bit can be executed with the permissions of their owner. GUID is the same as the SUID, but with group owner permissions. If you find interesting files, check them out on GTFOBins.
 
 ```bash
 # "-04000" "-4000" | "-4001"
@@ -280,8 +280,7 @@ $ find / -perm -u=s -type f -ls 2>/dev/null
 $ find / -perm -g=s -type f -ls 2>/dev/null
 ```
 
-> **CVE-2021-4034**: `/usr/bin/pkexec` a file installed by default on
-every major Linux distribution with a **SUID bit** could be exploited to get root. See [arthepsy PoC](https://github.com/arthepsy/CVE-2021-4034) (913 ⭐), or [berdav PoC](https://github.com/berdav/CVE-2021-4034) (1.7k ⭐).
+> **CVE-2021-4034**: `/usr/bin/pkexec` a file installed by default on every major Linux distribution with a **SUID bit** could be exploited to get root. See [arthepsy PoC](https://github.com/arthepsy/CVE-2021-4034) (0.9k ⭐), or [berdav PoC](https://github.com/berdav/CVE-2021-4034) (1.7k ⭐).
 </div><div>
 
 If the script **hand-made**, or **not on GTFOBins**, then you can use the commands below to hopefully find which files and environment variables the script is using
@@ -357,7 +356,7 @@ $ /share/sbash -p
 
 <div class="row row-cols-md-2"><div>
 
-Cron are the name given to automated tasks on Linux.
+Cron is the name given to automated tasks on Linux.
 
 ```bash
 # tasks of the current user
@@ -366,7 +365,7 @@ $ crontab -l
 $ ls -la /etc/cron*
 ```
 
-It's worth noting that system-wide cron tasks and user created cron tasks are not stored in the same place. Only root can browse/list other users cron tasks.
+⚠️ It's worth noting that system-wide cron tasks and user-created cron tasks are not stored in the same place. Only root can browse/list other users' cron tasks.
 
 ```bash
 # tasks of the user 'root'
@@ -376,7 +375,7 @@ $ sudo crontab -l -u root
 ```
 </div><div>
 
-But, there is another way to find the cron tasks. You can monitor Linux processes, for instance using [pspy](https://github.com/DominicBreuker/pspy) (3.2k ⭐) which can monitor linux processes without root permissions.
+But, there is another way to find users' cron tasks. You can monitor Linux processes, for instance, using [pspy](https://github.com/DominicBreuker/pspy) (3.2k ⭐) which can monitor Linux processes without root permissions.
 
 ```bash
 $ # use wget/... to fetch the static binary
@@ -384,7 +383,7 @@ $ chmod +x /tmp/pspy
 $ /tmp/pspy
 ```
 
-> **CTF**: cron tasks are usually running every minute, or every 5 minutes.
+> **CTF**: they're usually running every minute or every 5 minutes.
 </div></div>
 
 <hr class="sep-both">
@@ -393,7 +392,7 @@ $ /tmp/pspy
 
 <div class="row row-cols-md-2"><div>
 
-Kernel exploits should be used at a last resort, as they will most probably severely impact the machine state/crash the machine if they fail. You can find the complete list of CVE for the Linux Kernel [here](https://www.linuxkernelcves.com/cves).
+Kernel exploits should be used as the last resort, as they will most probably severely impact the machine state/crash the machine if they fail. You can find the complete list of CVEs for the Linux Kernel [here](https://www.linuxkernelcves.com/cves).
 
 * [Dirty COW](https://en.wikipedia.org/wiki/Dirty_COW) on Linux kernel <4.8.3
 </div><div>
@@ -417,7 +416,7 @@ The Fork bomb is an attack wherein a process continually replicates itself to de
 
 <hr class="sep-both">
 
-## 👻 TODO 👻
+## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 

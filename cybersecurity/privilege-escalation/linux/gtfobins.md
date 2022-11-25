@@ -51,7 +51,7 @@ Then, you have to execute `rootbash` as root, either using a misconfiguration in
 
 ## ⚡ SUID `systemctl` script
 
-Description: this script make it easier to run several commands using `systemctl`.
+Description: this script makes it easier to run several commands using `systemctl`.
 
 <div class="row row-cols-md-2 mt-4"><div>
 
