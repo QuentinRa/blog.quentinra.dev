@@ -32,13 +32,6 @@
 				"hidden": false
 			},
 			{
-				"tag": "proj/agile-scrum/index.md",
-				"name": "Agile scrum",
-				"desc": "A project framework/methodology following the Agile mindset.",
-				"icon": "<i class=\"bi bi-shield-lock\"></i>",
-				"hidden": false
-			},
-			{
 				"tag": "proj/design-patterns/index.md",
 				"name": "Design patterns",
 				"desc": "Because writing code can be easier, and you would rather want to learn the good practices beforehand.",
