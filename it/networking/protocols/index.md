@@ -344,3 +344,18 @@ There is [Remmina](https://github.com/FreeRDP/Remmina) (1.9k ⭐, `apt install r
 * In preferences, we should be able to select a keyboard mapping <nobr class="small text-muted">(⚠️ need check)</nobr>
 * [You can scale the screen too](https://askubuntu.com/questions/1075098/remmina-scaling-options)
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* `ssh xxx@yyy -T -L xxx:domain:xxx`: create a tunnel mapping one port to another
+* see SRM notes
+</div><div>
+
+
+</div></div>

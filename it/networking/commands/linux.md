@@ -342,3 +342,20 @@ Show ARP cache. Obsolete. See `ip n`.
 Show routing table. See `ip r`.
 </details>
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* learn more about what can I do with netstat (-tulpn?)
+* See cyber commands (ex: `nslookup`)
+* [wireshark](https://unit42.paloaltonetworks.com/wireshark-workshop-videos/)
+* `-j REJECT --reject-with tcp-reset`
+</div><div>
+
+* `nc -v` Verbose output` -vv` Very Verbose `-k` Keep listening after client disconnects and `-lvnp`
+</div></div>

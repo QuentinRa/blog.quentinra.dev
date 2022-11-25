@@ -440,6 +440,15 @@
 				"icon": "<i class=\"bi bi-globe\"></i>",
 				"hidden": false
 			}
+		],
+		"Random": [
+			{
+				"tag": "general/todo.md",
+				"name": "\uD83D\uDC7B To-do \uD83D\uDC7B",
+				"desc": "Stuff that are not even sorted.",
+				"icon": null,
+				"hidden": false
+			}
 		]
 	}
 }

@@ -269,9 +269,21 @@ word
 ```
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
-## References
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
 
 * [man bash](https://linux.die.net/man/1/bash)
 * [devhints.io](https://devhints.io/bash)
+* [Double/Single braces](https://stackoverflow.com/questions/2188199/how-to-use-double-or-single-brackets-parentheses-curly-braces)
+</div><div>
+
+* [converting BASH Scripts to Binary](https://iq.opengenus.org/bash-bourne-again-shell/))
+* `history`
+* [GNU bash](https://www.gnu.org/software/bash/manual/bash.html)
+
+</div></div>

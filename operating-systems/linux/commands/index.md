@@ -1446,3 +1446,26 @@ $ kill -l SIGSTOP
 ```
 </details>
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* subshell
+* `less -r`: read with colors?
+</div><div>
+
+* `uniq / uniq -c`
+* `find / -type f -a \( -perm -u+s -o -perm -g+s \)`
+* `find / -type f -perm -04000 -ls 2>/dev/null`
+* `\"'(safe and vuln)'\"")`
+* `su - root`
+* `help`/`info`
+* `xargs`
+* `env X=val ./myScript`
+* `strace/strings` [link](https://jvns.ca/strace-zine-v3.pdf)
+</div></div>
