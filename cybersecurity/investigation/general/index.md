@@ -155,7 +155,7 @@ There is also [theHarvester](https://github.com/laramies/theHarvester) (7.6k ⭐
 
 ➡️ You can use [whois](https://www.whois.com/whois/) website, or their command, to dig for information about the owner of a domain name, their registrar...
 
-➡️ You can use the commands [nslookup/dig](/operating-systems/linux/networking/index.md#interact-with-the-outside) to query DNS servers.
+➡️ You can use the commands [nslookup/dig](/it/networking/commands/index.md#interact-with-the-outside) to query DNS servers.
 
 ```bash
 # A = IPV4, AAAA=IPV6, MX, TXT, CNAME...

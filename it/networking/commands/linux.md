@@ -240,7 +240,11 @@ $ tracepath localhost
 
 </div><div>
 
-No examples yet.
+Listen for ICMP requests passing by the interface `tun0`
+
+```bash
+$ sudo tcpdump ip proto \\icmp -i tun0
+```
 </div></div>
 </details>
 
@@ -260,16 +264,16 @@ $ tshark -i eth0 -f "host some_ip"
 <details class="details-e">
 <summary><code>wireshark</code>: same as tcpdump, but with GUI</summary>
 
-See [wireshark](https://www.wireshark.org/download.html).
+See [wireshark](https://www.wireshark.org/download.html). Wireshark is providing a graphical interface. Inside the search bar, you can filter requests/responses
 
-You can enter these in the main bar to filter entries
-
-* `ip.src == some_ip`, or `ip.dest == some_ip`
+* `ip.src == some_IP`, or `ip.dest == some_IP`
+* `ip.addr == some_IP`
 * `tcp.port == some_port`, or `udp.port == some_port`
-* `http.request.method == GET`, or `http.request.method == POST`...
+* `http.request.method == GET`, or `... == POST`...
 * You can use `&&` (logical AND), `||` (logical OR), `!=` (different)
+* You can enter a protocol, or `tcp`/`udp`
 
-Once you find something interesting, right-click on it > Follow > Flux, and pick a protocol.
+Once you find something interesting, right-click on it > Follow TCP Stream, and you will see in a human-readable way the data exchanged.
 
 Use File > Export > HTTP to GET download files.
 </details>

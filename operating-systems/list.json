@@ -25,13 +25,6 @@
         "hidden": false
       },
       {
-        "tag": "linux/networking/index.md",
-        "name": "Linux (networking)",
-        "desc": "Application of the networking course on Linux-based distributions. This is basically a list of a lot of commands.",
-        "icon": null,
-        "hidden": false
-      },
-      {
         "tag": "linux/scripts/index.md",
         "name": "Linux (scripts)",
         "desc": "Learn how to write Shell scripts.",
