@@ -51,7 +51,7 @@
 --- https://tryhackme.com/room/lazyadmin 🐍🐍⭐
 
 * nmap
-* gobuster
+* Gobuster
 * FTP do not seem to work with path (to upload with put, but it works if you start FTP in the directory where the file is)
 
 --- https://tryhackme.com/room/allinonemj 🐍🐍⭐
@@ -109,7 +109,7 @@
 List
 
 * html comments
-* gobuster
+* Gobuster
 * sudo -l
 
 <hr>
