@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-Encoding, unlike encryption, is simply another way of presenting data. Anyone that know the algorithm used for encryption, can easily decode the message. In most cases, it's usually
+Encoding, unlike encryption, is simply another way of presenting data. Anyone that knows the algorithm used for encryption, can easily decode the message. In most cases, it's usually
 
 * base32 <small>[A-Z] and [2-7] or [A-V] and [0-9]...</small>
 * base64 <small>(a-Z, 0-9, +, /, and "=" for padding)</small> 📌
@@ -11,7 +11,7 @@ Encoding, unlike encryption, is simply another way of presenting data. Anyone th
 
 You can use [CyberChef](https://github.com/gchq/CyberChef) (19.2k ⭐) to encode/decode a message. They have an [online version here](https://gchq.github.io/CyberChef/).
 
-You can use [BurpSuite Decoder](/cybersecurity/exploitation/web/burpsuite/index.md#decoder-tab).
+You can use [Burp Suite Decoder](/cybersecurity/exploitation/web/burpsuite/index.md#decoder-tab).
 
 There is also a python tool called [Decodify](https://github.com/s0md3v/Decodify) (0.8k ⭐).
 </div></div>
