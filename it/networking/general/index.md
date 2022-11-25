@@ -747,3 +747,56 @@ $ sudo iptables -t NAT -A POSTROUTING -o eth2 -j SNAT --to-source 50.50.50.50
 ```
 </details>
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+Websites
+
+* [ccna](https://cisco.goffinet.org/ccna/)
+* [faidherbe](https://www.faidherbe.org/tutoriel/)
+* [Request-response](https://en.wikipedia.org/wiki/Request%E2%80%93response)
+
+Notes about firewalls
+
+* [snort](https://www.snort.org/)
+* [suricata](https://suricata.io/)
+* [pfsense](https://www.pfsense.org/)
+* Could be Stateless (check packet) or Stateful (check connection)
+
+Notes about Virtual Private Network (VPNs)
+
+* Create a secure tunnel allowing devices on different networks to communicate.
+* PPP (internal VPNs using public/private key)
+* PPTP use PPP, Point-to-Point Tunneling Protocol, allow leave network
+* IPSec Internet Protocol Security (IPsec) encrypts data using the existing Internet Protocol (IP) framework.
+
+</div><div>
+
+Notes about protocols
+
+* ISO/OSI. 
+  * Session (divide up the data sent into smaller chunks of data=packets) 
+  * Network (OSPF=Open Shortest Path First) and RIP (Routing Information Protocol). Shortest number of devices, reliable (packet loss?), faster physical connection (fibre/...).
+* TCP: "three-way handshake": SYN (synchronise) SYN/ACK ACK (Acknowledgement). ACK number. [link](https://www.howtouselinux.com/post/understanding-tcp-sequence-number). [link](https://www.inetdaemon.com/tutorials/internet/tcp/3-way_handshake.shtml). Sequence Number: random number. ACK Number: sequence number + 1.
+* UDP: stateless
+* Port-forwarding
+* IPV6 EUI64
+* A packet without the IP is called frame.
+
+Notes about devices
+
+* Router: Layer3 (use IP)
+* Switch: Layer2 (use MAC)
+* Switch: Layer3 (use MAC/IP): can do routing
+
+Notes about ...
+
+* VLAN (Virtual Local Area Network)
+
+</div></div>
