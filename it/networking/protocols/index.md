@@ -187,43 +187,56 @@ unique_token3 LOGOUT # logout
 
 <div class="row row-cols-md-2 mt-3"><div class="border-end border-dark">
 
-HTTP/HTTPS is a protocol used to exchange with a webserver. Usually, a web browser will make a request, and the result will be some HTML. An HTTP/HTTPS request involves a few things
-
-✅ First, there is a method
-
-* `GET`: get a resource
-* `POST`: create a resource on the server
-* `PUT`: update a field of a resource on the server
-* `DELETE`: delete a resource on the server
-* ...
-
-✅  We also need to provide a **URI**, which is a path relative to the webserver root. For instance, for `https://example.com/index.html`, the URI is `/index.html`.
-
-✅  We will also use an HTTP version, the most used ones are `HTTP/1.1`, and `HTTP 2.0`.
-
-✅  In every HTTP/HTTPS request/response, there are headers that are set both by the client and the server. The format is `Header-name: value`, and anyone can add their own headers.
-
-* `Set-cookie`: the cookies <small>(usually the server add this to create them in the client browser, and the client will send the cookies in every following request)</small>
-* `Host`: one of the domain names associated with the IP of the server
-* `Server:`: name of the HTTP server, maybe the version/OS too
-* ...
-</div><div>
-
-✅  There may be data sent with the request. For instance, if we are `POST`-ing a resource, we will most likely provide some data about the resource we want to create. This data can be specified by leaving one blank line below the headers, and must be URL-encoded <small>(characters that are not valid inside a URL such as `'` must be URL encoded, meaning we convert them to hexadecimal `27` and prepended with a `%` giving us `%27`)</small>. This is automatically done by your browser.
-
-✅  You need to leave a blank line to indicate that the request is finished.
-
-Here is an example of a request of the resource (GET) at the URI `/` (webserver root) from the website `example.com`, hosted by the server with the IP `IP`, using HTTP 1.1 on port 80.
+HTTP/HTTPS is a protocol used to exchange with a webserver. Your browser is sending an HTTP request to a webserver, receive a response with HTML inside, and display the page your browser.
 
 ```bash
-# Basically: http://example.com/
 $ telnet IP 80
 GET / HTTP/1.1
 Host: example.com
 # leave a blank line
 ```
 
-The server will answer with an [HTTP response code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) according to how it could handle the request <small>(200=OK, 301/303=redirected, 404=Not found, 500=Internal error...)</small>, along with its HTTP response headers, and data.
+The **first** element is inside a request is the method.
+
+* `GET`: get a resource  <small>(ex: return `/index.html`)</small>
+* `POST`: create a resource <small>(ex: create a user)</small>
+* `PUT`: update ONE field of a resource <small>(ex: update user password)</small>
+* `DELETE`: delete a resource  <small>(ex: delete a user)</small>
+* ...
+
+The **second** is the called **URI**, which is a path relative to the webserver root. For instance, for `https://example.com/index.html`, the URI is `/index.html`.
+
+HTTP versions that are widely used are `HTTP/1.1`, and `HTTP 2.0`, while `HTTP 3.0` was released in 2022.
+</div><div>
+
+**HTTP Headers**
+
+In every HTTP/HTTPS request/response, there are headers that are set both by the client and the server. The format is `Header-name: value`, and anyone can add their own headers.
+
+* `Set-cookie`: the cookies <small>(usually the server add this to create them in the client browser, and the client will send the cookies in every following request)</small>
+* `Host`: one of the domain names associated with the IP of the server
+* `Server:`: name of the HTTP server, maybe the version/OS too
+* ...
+
+**HTTP Response code**
+
+When the server answers, it returns an [HTTP response code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) according to how it could handle the request
+
+* `200`: OK
+* `301/303`: Redirected
+* `404`: Not found
+* `500`: Internal server error
+* ...
+
+**URL-encoding**
+
+If you are creating a user, you will most likely send the username/... to the server. Aside from `GET`, this data is added after leaving one blank line below the headers. In any case, the data must be URL-encoded as some characters aren't valid in a URL.
+
+* Example of encoding `%`
+* Find the ASCII of `%`: `37`
+* Convert the value to hexadecimal: `25`
+* Add `%` before the result: `%25`
+* This is automatically done by your browser.
 </div></div>
 
 <hr class="sep-both">
