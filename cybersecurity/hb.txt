@@ -31,3 +31,38 @@ nmap --badsum
 Firewall Spotting
 If there is a reponse, then a firewall/IDS responded.
 --script-trace
+
+acunetix
+hp webinspect
+fireeye
+qualys
+tenable.sc tenable.io
+
+nikto is a web scanner
+=> noisy
+=> owasp
+
+ES Linsniff Websniff Tcpdump Snoop Wireshark
+
+https://cxsecurity.com/exploit/
+https://www.vulnerability-lab.com/
+http://www-.0day.today/
+Security Focus (par Symantec)
+Packet Storm Security
+
+CCE (Common configuration Enumeration)
+CPE (Common platform Enumeration)
+XCCDF (Extensible Configuration Checklist Description Format)
+
+Legion
+ NMAP, whatweb, nikto,
+Vulners, Hydra, SMBenum, dirbuster, sslyzer, webslayer
+...
+
+rlogin
+
+QubesOS
+
+adobe/fileformat/adobe_utilprintf
+
+Top 10 • WebGoat • WebScarab • Testing guide • Code review guide • Mobile security testing guide • ZAP – Zed Attack Proxy
