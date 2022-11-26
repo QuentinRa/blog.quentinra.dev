@@ -168,7 +168,7 @@ $ dig example.com -t A @1.1.1.1
 
 ➡️ You can also use your Google Dorking skills to find subdomains
 
-```none
+```text
 -site:example.com site:*.example.com
 ```
 </div></div>

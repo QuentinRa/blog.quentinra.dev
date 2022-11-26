@@ -243,7 +243,7 @@ This is one of the three modes of John. It won't use a wordlist, but a username 
 
 You will have to change the format of your file
 
-```none
+```text
 username:password
 ```
 

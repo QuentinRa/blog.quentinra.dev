@@ -584,11 +584,11 @@ The Address Resolution Protocol (ARP) is used **to find a MAC given an IPV4 addr
 
 You can observe an ARP request by using `tcpdump`, and a `ping` on an uncached target
 
-```none
+```text
 ... request who-has <target_IP> tell <sender_IP> ...
 ```
 
-```none
+```text
 ... reply <target_IP> is-at <MAC_address> ...
 ```
 
