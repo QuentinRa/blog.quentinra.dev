@@ -103,7 +103,7 @@
 --- https://tryhackme.com/room/wgelctf (done)
 
 * use common first, before small/...
-* `document.firstChild.nextSibling.innerHTML.match(/<!--.*?-->/g)`
+* `document.firstChild.nextSibling.innerHTML.replaceAll('\n', ' ').match(/<!--.*?-->/g)`
 * `$(whoami)  ALL=(ALL) NOPASSWD:ALL`
 
 List
