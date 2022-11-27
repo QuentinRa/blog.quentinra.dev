@@ -79,3 +79,6 @@ https://github.com/exbotanical/brutus
 /usr/share/windows-binaries/radmin.exe
 -e x86/shikata_ga_nai
 Veil Framework
+
+Logic Flaw: the dev expect fields to remain unchanged.
+Not all browsers are the same, we should test websites in multiple browsers.
