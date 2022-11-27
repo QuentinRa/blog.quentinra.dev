@@ -10,12 +10,7 @@ Discovery, or host discovery, is the core of active reconnaissance (recon) activ
 
 * Find the running OS 🖥️
 
-* If there is a website, check the [webserver](/cybersecurity/exploitation/web/index.md) section 🗺️.
-  * Look for a Framework (if any)
-  * Try to do **forced browsing**
-  * Try to find **logic flaws**
-  * Try to find **injections**
-  * ...<br><span>&nbsp;</span>
+* If there is a website, check the [webserver methodology](/cybersecurity/exploitation/web/methodology.md) to learn more about how you could find vulnerabilities and exploit them 🗺️.
 
 * Find if there is an API
 
@@ -24,11 +19,11 @@ Discovery, or host discovery, is the core of active reconnaissance (recon) activ
 
 There are a lot of ways to perform its discovery 
 
-* `ping`: test if the host is up, and accepting ICMP packets. Useful to find if the option `-Pn` must be used in `nmap`.
+* `ping`: test if the host is up, and accepting ICMP packets. Useful to find if the flag `-Pn` must be used in `nmap`.
 
 * **Nmap** ([course](nmap/index.md)): to find open ports, their services+version with `-sV`, the OS with `-O` or `-sV`, and try to exploit vulnerabilities
 
-* **Nessus** ([course](nessus/index.md)): find open ports and their vulnerabilities. This is a local website that can be used when needing an automated, noisy, slow, but somewhat advanced scan.
+* **Nessus** ([course](nessus/index.md)): find open ports and their vulnerabilities. This is a local website that can be used when needing an automated scan, albeit noisy, and somewhat slow.
 
 * A hacker could do other activities such as getting in touch with employees, and trying to use social engineering to learn more about their company.
 
