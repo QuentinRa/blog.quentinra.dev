@@ -14,5 +14,5 @@ This blog (formerly known as **Memorize**) is a gathering of notes, links, tutor
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/lgs-games/memorize)](https://github.com/lgs-games/memorize)
 </div>
 
-Anyone can contribute, and you are more than welcome! There is a small gift for each contribution 😘!
+Anyone can contribute, and you are more than welcome 🤗!
 </div>
