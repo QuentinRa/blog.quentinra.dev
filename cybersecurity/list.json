@@ -80,13 +80,6 @@
         "hidden": false
       },
       {
-        "tag": "exploitation/services/banner.md",
-        "name": "Services banner",
-        "desc": "Getting information on a service.",
-        "icon": null,
-        "hidden": false
-      },
-      {
         "tag": "exploitation/services/bruteforce.md",
         "name": "Brute force services",
         "desc": "Use hydra to brute force SSH, FTP...",
@@ -135,14 +128,21 @@
       {
         "tag": "exploitation/web/index.md",
         "name": "Exploit webservers",
-        "desc": "Notes focused on exploiting webservers.",
+        "desc": "Notes on webservers.",
         "icon": null,
         "hidden": false
       },
       {
-        "tag": "exploitation/web/others/webserver.md",
-        "name": "Webservers",
-        "desc": "HTTP Headers, SSL/TLS...",
+        "tag": "exploitation/web/methodology.md",
+        "name": "Methodology",
+        "desc": "Steps and tools to exploit webservers.",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "exploitation/web/others/headers.md",
+        "name": "HTTP Headers",
+        "desc": "Learn how HTTP headers could be exploited.",
         "icon": null,
         "hidden": false
       },
