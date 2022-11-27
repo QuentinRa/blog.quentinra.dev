@@ -112,7 +112,7 @@ Stuff that I found, but never read/used yet.
 
 General
 
-* GitHub Topics [redteam](https://github.com/topics/redteam), [blueteam](https://github.com/topics/blueteam), and [purpleteam](https://github.com/topics/purpleteam)
+* GitHub Topics [redteam](https://github.com/topics/redteam), [blueteam](https://github.com/topics/blueteam), [purpleteam](https://github.com/topics/purpleteam) and [cybersecurity](https://github.com/topics/cybersecurity)
 * [faraday](https://github.com/infobyte/faraday): Vulnerability scanner?
 * [legion](https://github.com/carlospolop/legion): Enumeration
 * [beyondsecurity](https://www.beyondsecurity.com/): Vulnerability scanner?
