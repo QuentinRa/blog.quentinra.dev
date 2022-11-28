@@ -15,40 +15,6 @@ The **Product backlog**, is a sort of project specification (`cahier des charges
 
 <hr class="sl">
 
-## User Stories and Epics
-
-An **Epic** is a group of **(user) stories** that are "similar" <small>(ex: all stories related to the user management)</small>. A User Story is a text describing a task from the point of view of a user. You got stories about
-
-* **features** (functional)
-* **bugs** (technical)
-* **tests** (technical)
-* **technical debt** (technical): this is what you have to do before starting to improve the code (refactor/create constants/normalize things/...)
-* **actions** (technical): changing your way of doing things (=from a retrospective)
-
-A user story is supposed to provide content about the task, so that you are "working with" the one that actually needs it. We must know the **reason**, the **goal**, the **value**, and an **estimation** of the cost/value for the person needing this task to be done.
-
-The usual template is `"As a <type of user>, I <want to do something/goal>, so that <a reason/benefit>."`.
-
-> **Note**: to add a technical story, you need to explain and persuade the product owner that this will help<br>
-> **Note**: you will usually deliver the stories when the epic is done.<br>
-> **Tip**: give colors to your stories according to their kind (ie: feature, bugs, etc.). <br>
-> **Note**: You can see an epic as the result of a succession of stories, and a group of epics is making an initiative (omitted).
-
-<hr class="sr">
-
-## Priority
-
-You must filter the tasks by priorities, most likely using the **MoSCoW** notation.
-
-* **M**: Must have this
-* **S**: Should have this
-* **C**: Could have this
-* **W**: Would have this
-
-You may ask the client about the priority and/or deduct it by yourself, since some tasks that the client wants may be too hard/useless if done in the first increment. You must take into account **the value for the client**.
-
-<hr class="sl">
-
 ## Estimation
 
 You need to evaluate how much **complex** a task is (or how much **effort** it will require). We are not evaluating the duration like in non-agile projects. 

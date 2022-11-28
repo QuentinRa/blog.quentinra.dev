@@ -123,16 +123,60 @@ And **write some code**, but only **the bare minimum** so that everyone can star
 
 The main goal of the **Sprint Planning** is to decide your **Sprint goal**. Your **Sprint goal** is what you want to make at the end of the sprint.
 
-* **Involves**: PO, SM, Dev. team
-* **Duration**: up to 4 hours/4 weeks
 </div><div>
 
-The Product Owner is **proposing a goal**, and the **items** of the **product backlog** that you may do.  The dev team is picking items (=>value for the client, effort), explicitly defining when they are considered to be "done" (doc? tests?), in the **sprint backlog**. You need to have a clear idea of **what makes the sprint successful**, and how you will achieve the **sprint goal**.
+* **Involves**: PO, SM, Dev. team
+* **Duration**: up to 4 hours/4 weeks
+</div></div>
 
-The Product Owner will redact **two of Scrum's artifacts**
+The Product Owner is **proposing a goal**, and the **items** of the **product backlog** that you may do.  The dev team is picking items (=>value for the client, effort), explicitly defining when they are considered to be "done" (doc? tests?), in the **sprint backlog**. You need to have a clear idea of **what makes the sprint successful**, and how you will achieve the **sprint goal**. He/She will redact **two of Scrum's artifacts**:
 
-* [Product backlog](artifacts/product-backlog.md)
-* [Sprint backlog](artifacts/sprint-backlog.md)
+<div class="row row-cols-md-2"><div>
+
+#### 🌟  Product backlog
+
+The **Product backlog**, is a sort of project specification (`cahier des charges`). This is a list of tasks. You must add features that the client requested in a specific format, called **User Stories** or **US** for short.
+
+<details class="details-e">
+<summary>User Stories and Epics</summary>
+
+A **User Story** (**US**) is a text describing a task from the point of view of a user. Ideally, we would only have user stories, but there are always some other stories (technical/...) that are popping up. An **Epic** is a group of **stories** <small>(mostly US)</small> that are "similar" <small>(ex: all stories related to the user management)</small>. You got stories about
+
+* **features** (functional)
+* **bugs** (technical)
+* **tests** (technical)
+* **technical debt** (technical): this is what you have to do before starting to improve the code <small>(refactor, use constants...)</small>
+* **actions** (technical): changing your way of doing things <small>(=usually a reflexion from a retrospective)</small>
+
+In a user story, we must know the **reason**, the **goal**, the **value**, and an **estimation** of the cost/value for the person needing this task to be done. Ex:
+
+Example (template): `"As a <type of user>, I <want to do something/goal>, so that <a reason/benefit>."`.
+
+> **Note**: to add a technical story, you need to explain and persuade the product owner that this will help<br>
+> 
+> **Note**: you will usually deliver the stories when the epic is done.<br>
+> 
+> **Tip**: give colors to your stories according to their kind (ie: feature, bugs, etc.). <br>
+> 
+> **Note**: You can see an epic as the result of a succession of stories, and a group of epics is making what we call an **initiative**.
+
+</details>
+
+<details class="details-e">
+<summary>Prioritizing using MoSCoW</summary>
+
+You will most likely using the **MoSCoW** notation to prioritize US.
+
+* **M**: Must have this US <small>(mandatory)</small>
+* **S**: Should have this US <small>(expected)</small>
+* **C**: Could have this US <small>(ideally)</small>
+* **W**: Would have this US <small>(will most likely never be added)</small>
+
+You should ask the client about priorities and suggest priorities too, since some tasks may be too hard/useless if done in the first increment. You must take into account **the value for the client**.
+</details>
+</div><div>
+
+...
 </div></div>
 
 <hr class="sl">
