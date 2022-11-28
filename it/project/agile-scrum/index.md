@@ -374,7 +374,25 @@ Concepts
 * Themes
 * T-Shirt Size Estimation
 * Scrum release planning
+* DevOps
+* Delegation Poker
+* Vision Statement
+* Volere Requirements
+* Product roadmap
+* Product requirements documents (PRD)
 </div><div>
 
+Websites
 
+* [atlassian.com](https://www.atlassian.com/agile/scrum) and [atlassian.com (plays)](https://www.atlassian.com/team-playbook/plays)
+* [scrum.org](https://www.scrum.org/)
+* [scrumguides.org](https://scrumguides.org/index.html)
+* [knowledgehut.com](https://www.knowledgehut.com/tutorials/scrum-tutorial)
+* [visual-paradigm.com](https://www.visual-paradigm.com/scrum/)
+* [management30](https://management30.com/)
+* [plan.io](https://plan.io/blog/what-is-agile-project-management/)
+* [scrum-institute](https://www.scrum-institute.org/)
+* [explainagile.com](https://explainagile.com/)
+* [romanpichler](https://www.romanpichler.com/)
+* [hymnsofagile.com](https://hymnsofagile.com/blog/)
 </div></div>

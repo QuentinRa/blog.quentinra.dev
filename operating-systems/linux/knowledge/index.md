@@ -805,7 +805,7 @@ Stuff that I found, but never read/used yet.
 * [linux-securite](https://wonderfall.space/linux-securite/)
 * what is the difference between [snap](https://snapcraft.io/)/package/dpkg...
 * ELF
-* Cron `cron` process to schedule tasks, with crontab/crontab -l / Automated tasks in Linux / https://crontab-generator.org/ / https://crontab.guru/ / edit `crontab -e`
+* Cron `cron` process to schedule tasks, with crontab/crontab -l / Automated tasks in Linux / https://crontab-generator.org/ / https://crontab.guru/ / edit `crontab -e` / https://www.crontabs.org/
 </div><div>
 
 * [linuxhandbook](https://linuxhandbook.com/)
