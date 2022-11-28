@@ -103,3 +103,5 @@ https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/
 https://github.com/Arachni/arachni
 
 https://juice-shop.github.io/juice-shop/#/
+
+See my DM.

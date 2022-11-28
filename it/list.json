@@ -27,7 +27,7 @@
     ],
     "💻 IT Project Management 💻": [
       {
-        "tag": "proj/agile-scrum/index.md",
+        "tag": "project/agile-scrum/index.md",
         "name": "Agile scrum",
         "desc": "A project framework/methodology following the Agile mindset.",
         "icon": "<i class=\"bi bi-shield-lock\"></i>",

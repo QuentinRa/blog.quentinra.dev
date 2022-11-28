@@ -95,6 +95,26 @@ Usually, a sprint lasts **2 to 4 weeks**. Once you picked a duration, you should
 A sprint is considered as a project as a whole, so you have to write tests and the documentation during the sprint. You will do the same as you are doing for the project and add functionalities one after another until you reach your goal.
 </div></div>
 
+<hr class="sl">
+
+## Sprint 0
+
+<div class="row row-cols-md-2"><div>
+
+This is the first sprint, but it's labeled as **Sprint 0**, because this is not a real sprint and this is before the first sprint. You will set up everything during this sprint, and create the workflow of the application. It means, you **have to**
+
+* create the folders <small>(ex: src, headers, etc.)</small>
+* create files such as README.md, LICENSE, etc.
+* write your guidelines/style guide/... <small>(if you got one)</small>
+* pick your tools <small>(ex: git, trello, ...)</small>
+* set up your tools <small>(ex: create repository, master/main?)</small>
+* set up the rules <small>(ex: branches/...)</small>
+* ...
+</div><div>
+
+And **write some code**, but only **the bare minimum** so that everyone can start their task without meddling with/stopping everyone else (ex: create the Main file, maybe create the data-related files, so that all of you know what data is manipulated, etc.).
+</div></div>
+
 <hr class="sr">
 
 ## 1. Sprint Planning
@@ -125,15 +145,18 @@ Check the **progress**. What each one did **yesterday**, what are they planning 
 
 * You can use **Round Robin**: everyone is answering three questions (yesterday? today? blockers?)
 
-* You can use the **Board-based** method (**walking the board**): simply ask easy one about their task, starting from the **right** to the left
+* You can use the **Board-based** method (**walking the board**): from the **right** to the left, ask for each task info about it
 
-* Some are using a token to the one talking (ex: ball ⚾), the person talking will throw the ball to the next person (not a neighbor)
+* Some are using a token to the one talking (ex: ball ⚾), the person talking will throw the ball to the next person with the constraint of the next one not being their neighbor in the circle.
 </div><div>
 
 * **Involves**: SM, Dev. team, PO?
 * **Duration**: up to **15 minutes**
 
-**As a Scrum master**: Try to relay as much as possible information in your group. It may be a good idea to have a **one-to-one talk** with each member, once a day. This may help them think of new ways of doing something, help them writing documentation/thinking of new tests, and broaden their horizons (and yours too).
+<br>
+<p class="text-center">🪙 My two cents 🪙</p>
+
+**As a Scrum master**, try to relay as much as possible information in your group. It may be a good idea to have a **one-to-one talk** with each member, once a day/[...]. This may help them think of new ways of doing something,  to improve their documentation/comments, thinking of new tests, and hopefully broaden both of your horizons.
 </div></div>
 
 <hr class="sr">
@@ -176,26 +199,6 @@ At the end, you must select **one thing** and focus on it. Focusing on one is ma
 **Note**: You can do this retrospective in the middle of a sprint.
 </div></div>
 
-<hr class="sl">
-
-## Sprint 0
-
-<div class="row row-cols-md-2"><div>
-
-This is the first sprint, but it's labeled as **Sprint 0**, because this is not a real sprint and this is before the first sprint. You will set up everything during this sprint, and create the workflow of the application. It means, you **have to**
-
-* create the folders <small>(ex: src, headers, etc.)</small>
-* create files such as README.md, LICENSE, etc.
-* write your guidelines/style guide/... <small>(if you got one)</small>
-* pick your tools <small>(ex: git, trello, ...)</small>
-* set up your tools <small>(ex: create repository, master/main?)</small>
-* set up the rules <small>(ex: branches/...)</small>
-* ...
-</div><div>
-
-And **write some code**, but only **the bare minimum** so that everyone can start their task without meddling with/stopping everyone else (ex: create the Main file, maybe create the data-related files, so that all of you know what data is manipulated, etc.).
-</div></div>
-
 <hr class="sr">
 
 ## Metrics
@@ -206,7 +209,13 @@ They are the way of checking what progress, or the key indicators of your projec
 
 * **R.O.T.I** (Return of time invested)
 
-Ask your team, how much a meeting was useful (`5`: excellent, `4`: above average/good, `3`: average/ok, `2`: useful, `1`: useless)
+Ask your team, how much a meeting was useful 
+
+* `5`: excellent
+* `4`: above average/good
+* `3`: average/ok
+* `2`: useful
+* `1`: useless
 </div><div>
 
 * **Velocity**
