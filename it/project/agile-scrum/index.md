@@ -50,7 +50,7 @@ Scrum is involving **3 roles** in a team
 
 <div class="row row-cols-md-2"><div>
 
-### ➡️ Product Owner (PO)
+#### 👑 Product Owner (PO)
 
 The client interacts with the **Product owner**. He must understand the business/market requirements, and organize the tasks so that the client gets what he/she wanted.
 
@@ -58,22 +58,26 @@ He will redact (and update) the **Product backlog**. He may not be the only one 
 
 <br>
 
-### ➡️ Development team (Dev. team)
+#### 🤵 Development team (Dev. team)
 
 They are the people doing the work. This is usually a team of 3 to 9 persons, but some are adapting Scrum for bigger teams. **Notice** that is **Development**, **not Developers**. You can have **graphics/UX designers**, **sound engineers**, **artists**, or **testers**, along with the developers. Anyway, we are considering all of them as **developers** in the end, so you can use both.
 </div><div>
 
-### ➡️ Scrum master (SM)
+#### 🌠 Scrum master (SM)
 
 The **Scrum master** is **making sure that the developers** <small>(the product owner, and the company too)</small> **are only focusing on their job**, and not on applying Scrum. He should **organize (or sometimes facilitate) meetings**, **support the team**, **manage the tools**, do **reporting**, **deal with blockers**, and **"timeboxing"** <small>(a meeting shouldn't last more than it was supposed to)</small>  so that the project is going smoothly.
 
 The Scrum Master is an expert of Scrum, and he/she must **ensure that Scrum is used properly**, but if the team agree on changing something, he/she must be **open for changes** (as he/she follows the principles and values of Scrum).
 
-> (1) Do not ask the intern to grab some cakes, or some coffee, that's the Scrum master's job 🤩 (joke, but he/she may). <br>
-> 
-> (2) The Scrum master may be a member of the dev team, and it may rotate through the team. <br>
-> 
-> (3) The Scrum master is not a project manager/leader (`chef de projet`). The project manager is overseeing/controlling the project, while the Scrum master is actively working on improving the workflow of the project, as someone of the team.
+<details class="details-e">
+<summary>Random notes</summary>
+
+(1) Do not ask the intern to grab some cakes, or some coffee, that's the Scrum master's job 🤩 <small>(joke aside, he/she may)</small>.
+
+(2) The Scrum master may be a member of the dev team, and it may rotate through the team.
+
+(3) The Scrum master is not a project manager/leader (`chef de projet`). The project manager is overseeing/controlling the project, while the Scrum master is actively working on improving the workflow of the project.
+</details>
 </div></div>
 
 <hr class="sep-both">
@@ -133,7 +137,7 @@ The Product Owner is **proposing a goal**, and the **items** of the **product ba
 
 <div class="row row-cols-md-2"><div>
 
-#### 🌟  Product backlog
+#### 🪀️  Product backlog
 
 The **Product backlog**, is a sort of project specification (`cahier des charges`). This is a list of tasks. You must add features that the client requested in a specific format, called **User Stories** or **US** for short.
 
@@ -219,7 +223,7 @@ You may create a table, in which each row is a story. You may group them by epic
 </details>
 </div><div>
 
-#### 🌟  Sprint backlog
+#### 🏢  Sprint backlog
 
 The **Sprint backlog** is a list of tasks that the **dev team** took from the product backlog. These are the **tasks that they are planning to do during the sprint**. Tasks are split into smaller tasks, each ideally taking a few hours and up to one day to be marked as "done".
 

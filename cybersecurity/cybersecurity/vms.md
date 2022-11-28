@@ -43,57 +43,91 @@ Notes about Virtual Machine, Emulators, along with links to download CTF Virtual
 
 <hr class="sep-both">
 
-## Download Virtual Machines
+## Windows Virtual Machines 💻
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-**Microsoft Edge developer center** 💻
+**Microsoft Edge developer center**
 
 * [Link](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)
 * Windows 7/8/10
 * **Username**: IEUser / **Password**: "Passw0rd!".
 * Valid 90 days.
 
-**Microsoft download center** 💻
+**Microsoft developer center**
+
+* [Link](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/)
+* Windows 11
+</div><div>
+
+**Microsoft download center**
 
 * [Link](https://www.microsoft.com/en-us/download/details.aspx?id=31791) (Professional)
 * [Link](https://download.cnet.com/Windows-XP-Mode/3000-18513_4-77683344.html) (Mode, it was removed from Microsoft website). There is a tutorial [here](https://helpdeskgeek.com/virtualization/how-to-set-up-a-windows-xp-virtual-machine-for-free/), another [here](https://www.makeuseof.com/tag/download-windows-xp-for-free-and-legally-straight-from-microsoft-si/), and one more [here](https://ihax.io/windows-xp-virtual-machine/).
 * Windows XP
 
-**Microsoft developer center** 💻
+</div></div>
 
-* [Link](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/)
-* Windows 11
+<hr class="sep-both">
 
-**Metasploit Vulnerable VM** 💣
+## Linux Virtual Machines 💻
 
-* Internationally misconfigured virtual machine to test your skills
-* [Metasploit 2](https://docs.rapid7.com/metasploit/metasploitable-2/)
-* [Metasploit3](https://github.com/rapid7/metasploitable3)
-* **Username**: `msfadmin`. **Password**: `msfadmin`
-* The keyword layout is QWERTY. You can swap it once logged, if you need to <small>(ex: `sudo loadkeys fr`)</small>.
-</div><div>
+<div class="row row-cols-md-2"><div>
 
 **Kali Linux** 🚀
 
 * [Link](https://www.kali.org/get-kali/#kali-virtual-machines)
-* There are giving you a prebuilt image, get started in seconds!
+* Get started in seconds 🚀
+  * **VirtualBox**: Click on new, do the first two steps <small>(type: Linux, version: Linux 2.6/3.x/4.x/5.x (64-bits), set other values however you want)</small>. In the 3rd menu, select "Use an existing hard drive", and select the one you downloaded. That's it 🤡.
+  * **VMWare**: click on import and select the downloaded VM.
 * **Username**: kali / **Password**: kali
 * Don't forget to use `sudo apt update` / `sudo apt upgrade`
-* Keyboard: If you are using a non-qwerty keyword
-  * First, log in
-  * Click on Kali icon (top left)
-  * Search "Keyboard"
-  * Go to the layout tab
-  * Add a keyboard layout, remove the unused one
-  * Now, aside from before login in, you will be able to use your keyboard
-* RockYou / Wordlist
-  * You may find wordlist in `/usr/share/wordlists/`
-  * Run `wordlists` and press Y to extract `rockyou.txt`
-  * `sudo apt install seclists` to install [SecLists](https://github.com/danielmiessler/SecLists/) wordlists.
-* Notes
-  * Use the <kbd>right arrow</kbd> key to use the suggested command
-  * In the top-right corner, you can find your IP address (tun0)
+
+<details class="details-e">
+<summary>Swap to another keyboard layout</summary>
+
+* First, log in
+* Click on Kali icon (top left)
+* Search "Keyboard"
+* Select the Keyboard Utility
+* Go to the layout tab
+* Add a keyboard layout <small>(ex: fr-FR/AZERTY)</small>
+* Remove the unused QWERTY layout
+
+> The change is applied immediately... But on the login screen, the keyboard layout will still be QWERTY ⚠️.
+</details>
+
+<details class="details-e">
+<summary>Wordlists</summary>
+
+**Wordlists**
+
+* Run `wordlists` and press Y to extract `rockyou.txt`
+* You can find pre-installed wordlists in `/usr/share/wordlists/`
+
+**Seclists**
+
+* `sudo apt install seclists` to install [SecLists](https://github.com/danielmiessler/SecLists/) wordlists.
+
+**Others**
+
+* `/usr/share/webshells`: bind/reverse/web shells
+</details>
+
+<details class="details-e">
+<summary>Tips 🪄</summary>
+
+* Use the <kbd>right arrow</kbd> key to use the suggested command
+
+* In the top-right corner, you can find your IP address (tun0)
+</details>
+</div><div>
+
+**Parrot Linux**
+
+* [Link](https://www.parrotsec.org/)
+
+<br>
 
 **BlackArch** 😶‍🌫️
 
@@ -104,12 +138,20 @@ Notes about Virtual Machine, Emulators, along with links to download CTF Virtual
 
 ## CTF Virtual Machines
 
+⚠️ Do not use these machines for something else aside from testing your penetration skills. They are all vulnerable by design.
+
 <div class="row row-cols-md-2 mt-4"><div>
 
-* ➡️ **DarkStar7471**
+**Metasploit Vulnerable VM** 💣
 
-You can find images by DarkStar7471 Rooms on TryHackMe [here](https://darkstar7471.com/resources.html).
+* [Metasploit 2](https://docs.rapid7.com/metasploit/metasploitable-2/)
+* [Metasploit 3](https://github.com/rapid7/metasploitable3)
+* **Username**: `msfadmin`. **Password**: `msfadmin`
+* Intentionally misconfigured Linux <small>(no graphical interface)</small>
+* You can swap to AZERTY with `sudo loadkeys fr`
 </div><div>
 
-...
+**DarkStar7471** 🌠
+
+You can find VMs made by DarkStar7471 on TryHackMe [here](https://darkstar7471.com/resources.html).
 </div></div>
