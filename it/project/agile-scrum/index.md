@@ -219,7 +219,55 @@ You may create a table, in which each row is a story. You may group them by epic
 </details>
 </div><div>
 
-...
+#### 🌟  Sprint backlog
+
+The **Sprint backlog** is a list of tasks that the **dev team** took from the product backlog. These are the **tasks that they are planning to do during the sprint**. Tasks are split into smaller tasks, each ideally taking a few hours and up to one day to be marked as "done".
+
+Each developer is taking tasks according to their **capacity**. This is the sum of the **complexity** of tasks they picked in the previous sprint.
+
+<details class="details-e">
+<summary>Whiteboard</summary>
+
+We are using the famous **whiteboard**, with the following columns
+
+* **Todo** (`À faire`): what has to be done
+* **In-progress** (`En cours`): working on it
+* **Done** (`Terminé/Fini`): done
+
+Your goal is to move all of your cards in **Done**. You should add on each card the person that will do the task.
+
+![Source: scrum.org](_images/SprintBacklog.png)
+
+You may have a few more columns before "Done"
+
+* **Review** (`Revue/Relecture`): someone else is checking your task
+* **Tests** (`Tests`): testing the feature
+* **Documented** (`Documentation`): working on the documentation
+* **Canceled/Blocked** (`Annulée`): you won't/can't continue a task
+</details>
+
+<details class="details-e">
+<summary>Whiteboard (Online)</summary>
+
+Here are some free tools
+
+* [Trello](https://trello.com/) (Atlassian/Jira)
+* [GitHub](https://github.com/features/project-management) (Microsoft)
+* [YouTrack](https://www.jetbrains.com/youtrack/) (JetBrains)
+</details>
+
+<details class="details-e">
+<summary>How to split tasks in smaller tasks?</summary>
+
+Here is an example for a functionality to show the main page of a desktop application
+
+* make the frame without any content <small>(close, minimize, etc.)</small>
+* make the toolbar
+* display the main content
+* deal with the translations
+* make the app responsive <small>(=adapting itself to the size of the screen)</small>
+* ...
+</details>
 </div></div>
 
 <hr class="sep-both">
@@ -307,7 +355,7 @@ Ask your team, how much a meeting was useful
 
 * **Velocity**
 
-The velocity is the capacity of your team. This is not a value comparable with other teams/projects. This is the **sum of the complexity of the tasks your team took**. You should use it to not take too many stories <small>(both per person and per group)</small>. This value will converge after some iterations. You should usually keep a 10% margin (meetings, technical debt, quality, etc.).
+The velocity is the capacity of your team. This is not a value comparable with other teams/projects. This is the **sum of the complexity of the tasks your team took**. You should use it to not take too many stories <small>(both per person and per group)</small>. This value will converge after some iterations. You should usually keep a 10% margin <small>(meetings, technical debt, quality, etc.)</small>.
 
 You may use a **Burndown chart** (or the **Burnup chart**) to represent this graphically.
 </div></div>
@@ -325,6 +373,7 @@ Concepts
 * Initiatives
 * Themes
 * T-Shirt Size Estimation
+* Scrum release planning
 </div><div>
 
 
