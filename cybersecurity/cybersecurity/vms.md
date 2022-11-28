@@ -62,17 +62,17 @@ Notes about Virtual Machine, Emulators, along with links to download CTF Virtual
 
 **Microsoft download center**
 
-* [Link](https://www.microsoft.com/en-us/download/details.aspx?id=31791) (Professional)
-* [Link](https://download.cnet.com/Windows-XP-Mode/3000-18513_4-77683344.html) (Mode, it was removed from Microsoft website). There is a tutorial [here](https://helpdeskgeek.com/virtualization/how-to-set-up-a-windows-xp-virtual-machine-for-free/), another [here](https://www.makeuseof.com/tag/download-windows-xp-for-free-and-legally-straight-from-microsoft-si/), and one more [here](https://ihax.io/windows-xp-virtual-machine/).
+* [Link](https://www.microsoft.com/en-us/download/details.aspx?id=31791) <small>(Professional)</small>
+* [Link](https://download.cnet.com/Windows-XP-Mode/3000-18513_4-77683344.html) <small>(Mode, it was removed from Microsoft website)</small>.
 * Windows XP
 
 </div></div>
 
 <hr class="sep-both">
 
-## Linux Virtual Machines 💻
+## Linux Virtual Machines 👑
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2 mt-4"><div>
 
 **Kali Linux** 🚀
 
@@ -154,4 +154,22 @@ Notes about Virtual Machine, Emulators, along with links to download CTF Virtual
 **DarkStar7471** 🌠
 
 You can find VMs made by DarkStar7471 on TryHackMe [here](https://darkstar7471.com/resources.html).
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+**Setup Windows XP**
+
+* [helpdeskgeek](https://helpdeskgeek.com/virtualization/how-to-set-up-a-windows-xp-virtual-machine-for-free/)
+* [makeuseof](https://www.makeuseof.com/tag/download-windows-xp-for-free-and-legally-straight-from-microsoft-si/)
+* [ihax.io](https://ihax.io/windows-xp-virtual-machine/)
+
+</div><div>
+
 </div></div>
