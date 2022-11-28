@@ -14,7 +14,7 @@ Other Agile methodologies: XP (Extreme programming), Kanban.
 The Agile manifesto (`Manifeste Agile`), signed in 2001, is defining the guidelines for Agile project: [Agile Manifesto](https://agilemanifesto.org/)
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## 💪 Values and principles 💪
 
@@ -42,7 +42,7 @@ Agile methodologies are based on **12 principles** and **4 values** ([principles
 * interact face-to-face 🗣️
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Roles
 
@@ -76,7 +76,7 @@ The Scrum Master is an expert of Scrum, and he/she must **ensure that Scrum is u
 > (3) The Scrum master is not a project manager/leader (`chef de projet`). The project manager is overseeing/controlling the project, while the Scrum master is actively working on improving the workflow of the project, as someone of the team.
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## 📜 Scrum 📜
 
@@ -95,7 +95,7 @@ Usually, a sprint lasts **2 to 4 weeks**. Once you picked a duration, you should
 A sprint is considered as a project as a whole, so you have to write tests and the documentation during the sprint. You will do the same as you are doing for the project and add functionalities one after another until you reach your goal.
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## Sprint 0
 
@@ -103,7 +103,7 @@ A sprint is considered as a project as a whole, so you have to write tests and t
 
 This is the first sprint, but it's labeled as **Sprint 0**, because this is not a real sprint and this is before the first sprint. You will set up everything during this sprint, and create the workflow of the application. It means, you **have to**
 
-* create the folders <small>(ex: src, headers, etc.)</small>
+* create the folders <small>(ex: sep-bothc, headers, etc.)</small>
 * create files such as README.md, LICENSE, etc.
 * write your guidelines/style guide/... <small>(if you got one)</small>
 * pick your tools <small>(ex: git, trello, ...)</small>
@@ -115,7 +115,7 @@ This is the first sprint, but it's labeled as **Sprint 0**, because this is not 
 And **write some code**, but only **the bare minimum** so that everyone can start their task without meddling with/stopping everyone else (ex: create the Main file, maybe create the data-related files, so that all of you know what data is manipulated, etc.).
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## 1. Sprint Planning
 
@@ -170,16 +170,59 @@ You will most likely using the **MoSCoW** notation to prioritize US.
 * **M**: Must have this US <small>(mandatory)</small>
 * **S**: Should have this US <small>(expected)</small>
 * **C**: Could have this US <small>(ideally)</small>
-* **W**: Would have this US <small>(will most likely never be added)</small>
+* **W**: Would have this US <small>(out of scope)</small>
 
 You should ask the client about priorities and suggest priorities too, since some tasks may be too hard/useless if done in the first increment. You must take into account **the value for the client**.
+</details>
+
+<details class="details-e">
+<summary>Estimation of the complexity</summary>
+
+You need to evaluate how much **complex** a task is (or how much **effort** it will require). We are not evaluating the duration like in non-agile projects.
+
+* You may **compare tasks** and sort them by difficulty.
+* You can give a value among a fixed list (`0, 1/2, 1, 2, 3, 5, 8, 13, 20, 40, 100, ?, inf.`) to each task. The average/median value may be used as an answer.
+
+If you got outliers (`valeurs abérantes`) such as (almost) everyone gave "10", one gave "5", and one gave "20", then it would be a good idea to ask them **why** they gave this value (maybe they thought of something others didn't).
+
+> You should learn from your previous estimates. You may pick a previous task and use it as a reference.
+</details>
+
+<details class="details-e">
+<summary>Example of Product Backlog as a table</summary>
+
+You may create a table, in which each row is a story. You may group them by epics if you want. As for the columns, here are some ideas
+
+* \# or **ID**: ID of the story
+* **Title** or Title+**Description**: the story
+* The **priority**
+* The **importance**, estimated with
+    * An estimation of the **complexity**
+    * An estimation of the **value for the client**
+* Some **notes**
+* **The Sprint**: the one in which you completed this story (empty if you didn't)
+* **The Epic**: if this story belongs to an epic
+* The **dependencies** between US/Epics
+* **Acceptance tests**: how will the Product Owner <small>(or ...)</small> test that the feature is working
+</details>
+
+<details class="details-e">
+<summary>Notes</summary>
+
+* Entries of the product backlog are also called **items**.
+
+* Sometimes, the backlog may become too big, so you may remove the less important tasks, and label them as **"out of scope"** <small>(such as the Could/Would, or tasks that do not impact the sprint goal if they are removed)</small>
+
+* Reviewing the backlog is sometimes called backlog **grooming** (or refinement)
+
+* Usually, the Product Owner and the Scrum Master are preparing the Product backlog **before** the meeting.
 </details>
 </div><div>
 
 ...
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ## 2. Daily Scrum or standup/stand-up
 
@@ -203,7 +246,7 @@ Check the **progress**. What each one did **yesterday**, what are they planning 
 **As a Scrum master**, try to relay as much as possible information in your group. It may be a good idea to have a **one-to-one talk** with each member, once a day/[...]. This may help them think of new ways of doing something,  to improve their documentation/comments, thinking of new tests, and hopefully broaden both of your horizons.
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ### 3. Sprint review
 
@@ -220,7 +263,7 @@ Each developer may **demonstrate** what they did (and why?), but do not make it 
 Some organizations are making weekly demo with the team, so that everyone knows what the others are doing, understand a bit more what they need to do, and keep track of what the client wants.
 </div></div>
 
-<hr class="sl">
+<hr class="sep-both">
 
 ### 4. Sprint retrospective
 
@@ -243,7 +286,7 @@ At the end, you must select **one thing** and focus on it. Focusing on one is ma
 **Note**: You can do this retrospective in the middle of a sprint.
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Metrics
 
@@ -267,4 +310,22 @@ Ask your team, how much a meeting was useful
 The velocity is the capacity of your team. This is not a value comparable with other teams/projects. This is the **sum of the complexity of the tasks your team took**. You should use it to not take too many stories <small>(both per person and per group)</small>. This value will converge after some iterations. You should usually keep a 10% margin (meetings, technical debt, quality, etc.).
 
 You may use a **Burndown chart** (or the **Burnup chart**) to represent this graphically.
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+Concepts
+
+* Initiatives
+* Themes
+* T-Shirt Size Estimation
+</div><div>
+
+
 </div></div>
