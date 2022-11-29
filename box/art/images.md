@@ -39,6 +39,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [avif.io](https://avif.io/)
+* [watermarks.io](https://watermarks.io/)
 </div><div>
 
 

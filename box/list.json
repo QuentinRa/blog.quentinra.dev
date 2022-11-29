@@ -31,7 +31,7 @@
       {
         "tag": "random/index.md",
         "name": "Random stuff",
-        "desc": "Did you read the title?",
+        "desc": "Even I don't know what's inside.",
         "icon": "<i class=\"bi bi-tropical-storm\"></i>",
         "hidden": false
       },
@@ -40,6 +40,20 @@
         "name": "Comics",
         "desc": "Mangas Webtoons Manhwa Manhua",
         "icon": "<i class=\"bi bi-book\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "random/spellcheckers.md",
+        "name": "Spellcheckers",
+        "desc": "...",
+        "icon": "<i class=\"bi bi-spellcheck\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "random/privacy.md",
+        "name": "Privacy tips",
+        "desc": "Notes/Tips to protect yourself.",
+        "icon": "<i class=\"bi bi-shield-lock\"></i>",
         "hidden": false
       }
     ]
