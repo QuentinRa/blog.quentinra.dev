@@ -25,6 +25,13 @@
         "desc": "Nothing much.",
         "icon": "<i class=\"bi bi-camera-reels\"></i>",
         "hidden": false
+      },
+      {
+        "tag": "desktop/browsers.md",
+        "name": "Browsers",
+        "desc": "Nothing much.",
+        "icon": "<i class=\"bi bi-browser-firefox\"></i>",
+        "hidden": false
       }
     ],
     "Random": [

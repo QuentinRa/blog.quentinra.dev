@@ -105,3 +105,9 @@ https://github.com/Arachni/arachni
 https://juice-shop.github.io/juice-shop/#/
 
 See my DM.
+
+https://www.rapid7.com/products/nexpose/
+https://www.qualys.com/free-services/
+https://phoenixnap.com/blog/cybersecurity-experts-threats-trends
+
+udemy learn ethical hacking from scratch / python and ethical hacking from scratch
