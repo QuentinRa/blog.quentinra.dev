@@ -31,6 +31,14 @@
 
 * [Terms of Service Didn't Read](https://tosdr.org/)
 
+
+##### Youtube
+
+* [node-ytsr](https://github.com/TimeForANinja/node-ytsr/) (anonymous search requests)
+* [ytmous](https://github.com/ytmous/ytmous) (unmaintained, privacy-focused, 0.04k ⭐)
+* [youtube_rss](https://github.com/SimonDaNinja/youtube_rss) (privacy-focused, 0.05k ⭐)
+* [youtube-local](https://github.com/user234683/youtube-local) (privacy-focused, 0.3k ⭐)
+
 ##### Random
 
 * [cookie consent speed run](https://cookieconsentspeed.run/) 🤩

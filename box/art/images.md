@@ -29,6 +29,10 @@
 * [tineye](https://tineye.com/)
 * [images.google.com](https://images.google.com/):  drag and drop your image in the search bar
 
+##### OCR
+
+* [tesseract.js](https://github.com/naptha/tesseract.js) ([Website](https://tesseract.projectnaptha.com/))
+
 ##### Memes
 
 * [Know Your Meme](https://knowyourmeme.com/)
@@ -45,6 +49,10 @@ Stuff that I found, but never read/used yet.
 * [avif.io](https://avif.io/)
 * [watermarks.io](https://watermarks.io/)
 * [img2go](https://www.img2go.com/) (bunch of tools)
+* [tensorflowjs-remove-background](https://github.com/poly-glot/tensorflowjs-remove-background)
+* [image-background-remove-tool](https://github.com/OPHoperHPO/image-background-remove-tool)
+* [background-removal](https://github.com/topics/background-removal)
+* [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
 </div><div>
 
 

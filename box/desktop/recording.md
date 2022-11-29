@@ -7,6 +7,11 @@
 * "Screen Recorder Pro For Win10" (free, ads, Windows store)
 * Nvidia GeForce and <kbd>ALT+Z</kbd>
 * [obsproject](https://obsproject.com/)
+
+##### Editing
+
+* [Camtasia](https://www.techsmith.com/video-editor.html) (easy to learn)
+* [Real-Time-Person-Removal](https://github.com/jasonmayes/Real-Time-Person-Removal)
 </div><div>
 
 ##### Special
