@@ -1,13 +1,29 @@
 {
   "title": "Pandora Box",
-  "description": "While browsing the Internet or any many other cases, I find some tools/websites/... that I didn't search, but I may search latter, so I'm gathering everything here.",
+  "description": "While browsing the Internet or any many other cases, I find some tools/websites/... that I didn't search, but I may search latter, so I'm gathering everything here.<br><b>⚠️Not many websites were tested, they are only listed so that one day I may check if they are worth something.</b>",
   "courses": {
-    "Tools": [
+    "🎨 &nbsp;Art&nbsp; 🎨": [
       {
-        "tag": "images.md",
+        "tag": "art/images.md",
         "name": "Images",
-        "desc": "Remove backgrounds...",
-        "icon": null,
+        "desc": "Remove backgrounds, remove something from an image, create a GIF...",
+        "icon": "<i class=\"bi bi-images\"></i>",
+        "hidden": false
+      }
+    ],
+    "Random": [
+      {
+        "tag": "random/index.md",
+        "name": "Random stuff",
+        "desc": "Did you read the title?",
+        "icon": "<i class=\"bi bi-tropical-storm\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "random/comics.md",
+        "name": "Comics",
+        "desc": "Mangas Webtoons Manhwa Manhua",
+        "icon": "<i class=\"bi bi-book\"></i>",
         "hidden": false
       }
     ]

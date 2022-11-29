@@ -64,9 +64,7 @@ There are other alternatives 📌
 * [jimpl](https://jimpl.com/) (website)
 * [IMV](https://www.geekyhumans.com/tools/image-metadata-viewer) (website)
 
-You can also do a reverse image search 🧵
-
-* [images.google.com](https://images.google.com/):  drag and drop your image in the search bar
+You can also do a reverse image search 🧵. Please refer to [Box/Images](/box/art/images.md#reverse-search).
 </div></div>
 
 <hr class="sep-both">
