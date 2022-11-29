@@ -57,9 +57,9 @@
         "hidden": false
       },
       {
-        "tag": "utils/privacy.md",
-        "name": "Privacy tips",
-        "desc": "Notes/Tips to protect yourself.",
+        "tag": "utils/security.md",
+        "name": "Security tips",
+        "desc": "Protect yourself and your privacy.",
         "icon": "<i class=\"bi bi-shield-lock\"></i>",
         "hidden": false
       }
