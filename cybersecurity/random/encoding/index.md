@@ -35,3 +35,20 @@ $ echo "dG90bw=" | base64 -d
 toto
 ```
 </div></div>
+
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+URL encoding
+
+* [urlencoder](https://www.urlencoder.io/)
+* add a section here about URL encoding, instead of having it in many places
+</div><div>
+
+</div></div>
