@@ -31,7 +31,7 @@
 
 <br>
 
-##### Archiving one page
+##### Saving one page
 
 * [Archive.org](https://archive.org/web/)
 * [ArchiveBox](https://github.com/ArchiveBox/ArchiveBox) <small>(self-install)</small>

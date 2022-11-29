@@ -119,7 +119,7 @@ $ sudo dpkg -i xxx.deb
 $ man man
 ```
 
-Commands without a man page, usually have an option "help"
+Commands usually have an option "help".
 
 ```bash
 $ man -h
@@ -766,13 +766,13 @@ $ delgroup group_name
 
 ```bash
 $ su root
-$ su -l root # perform a login, move to root's home...
 ```
 
-If you want to log in as some other user, meaning moving to their home... Then use
+If you want to log in as another user (ex: move the their home...), use
 
 ```bash
 $ su -l root
+$ su - root # same
 ```
 </details>
 </div></div>
@@ -1463,7 +1463,6 @@ Stuff that I found, but never read/used yet.
 * `find / -type f -a \( -perm -u+s -o -perm -g+s \)`
 * `find / -type f -perm -04000 -ls 2>/dev/null`
 * `\"'(safe and vuln)'\"")`
-* `su - root`
 * `help`/`info`
 * `xargs`
 * `env X=val ./myScript`

@@ -22,15 +22,22 @@
       {
         "tag": "desktop/recording.md",
         "name": "Recording",
-        "desc": "Nothing much.",
+        "desc": "Record your screen...",
         "icon": "<i class=\"bi bi-camera-reels\"></i>",
         "hidden": false
       },
       {
         "tag": "desktop/browsers.md",
         "name": "Browsers",
-        "desc": "Nothing much.",
+        "desc": "Notes on browsers/search engines. Shorten URLs. Saving webpages...",
         "icon": "<i class=\"bi bi-browser-firefox\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "desktop/share.md",
+        "name": "Share stuff",
+        "desc": "Share files/... Watch movies together...",
+        "icon": "<i class=\"bi bi-share\"></i>",
         "hidden": false
       }
     ],

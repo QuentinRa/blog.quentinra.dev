@@ -20,6 +20,10 @@
 * [adblock](https://adblockplus.org/): block most ads/trackers
 * [ublock origin](https://ublockorigin.com/): block most ads/trackers, can disable JavaScript...
 
+##### Temporary
+
+* [filevert](https://filevert.fr/) (temporary file hosting)
+
 ##### Utilities
 
 * [Terms of Service Didn't Read](https://tosdr.org/)
