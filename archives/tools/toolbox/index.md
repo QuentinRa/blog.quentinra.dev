@@ -11,7 +11,7 @@ A lot of notes about a lot of things that can't be added to another course. This
 3. [Temporary file hosting](website/hosting.md)
 4. [Emojis](../../../box/art/emojis.md)
 5. [Safe browsing](website/safe.md)
-6. [Saving, converting, and/or Archiving](website/archive.md)
+6. [Saving, converting, and/or Archiving](../../../box/utils/archive.md)
 7. [Screen recorders](../../../box/desktop/record.md)
 8. [Shorten URL](website/short-url.md)
 9. Password Manager: [BitWarden](https://bitwarden.com/) (Open Source Password Manager)

@@ -40,6 +40,7 @@ Stuff that I found, but never read/used yet.
 
 * [avif.io](https://avif.io/)
 * [watermarks.io](https://watermarks.io/)
+* [img2go](https://www.img2go.com/) (bunch of tools)
 </div><div>
 
 
