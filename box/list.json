@@ -18,6 +18,15 @@
         "hidden": false
       }
     ],
+    "💻 &nbsp;Desktop&nbsp; 💻": [
+      {
+        "tag": "desktop/recording.md",
+        "name": "Recording",
+        "desc": "Nothing much.",
+        "icon": "<i class=\"bi bi-camera-reels\"></i>",
+        "hidden": false
+      }
+    ],
     "Random": [
       {
         "tag": "random/index.md",
