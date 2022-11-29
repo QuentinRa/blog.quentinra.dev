@@ -1,6 +1,6 @@
 {
   "title": "Pandora's Box",
-  "description": "While browsing the Internet or any many other cases, I find some tools/websites/... that I didn't search, but I may search latter, so I'm gathering everything here.<br><b>⚠️Not many websites were tested, they are only listed so that one day I may check if they are worth something.</b>",
+  "description": "While browsing the Internet or any many other cases, I find some tools/websites/... that I didn't search, but I may search latter, so I'm gathering everything here.",
   "courses": {
     "🎨 &nbsp;Art&nbsp; 🎨": [
       {
@@ -43,9 +43,9 @@
     ],
     "🪄 &nbsp;Utilities, and Tips&nbsp; 💫": [
       {
-        "tag": "utils/recording.md",
-        "name": "Documents",
-        "desc": "Convert documents (ex: Word to PDF)...",
+        "tag": "utils/documents.md",
+        "name": "Notes on Files",
+        "desc": "Convert documents, Sync folders...",
         "icon": "<i class=\"bi bi-newspaper\"></i>",
         "hidden": false
       },

@@ -24,3 +24,13 @@
 * [termly](https://termly.io/) (big unreadable ToS, free with watermarks)
 </div><div>
 </div></div>
+
+<hr class="sep-both">
+
+##  🏢 Solutions for entreprises 🏢
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+* [nimbusweb.me](https://nimbusweb.me/) (👻)
+</div><div>
+</div></div>

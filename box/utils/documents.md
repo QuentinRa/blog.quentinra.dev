@@ -1,4 +1,4 @@
-# 📄 Work on documents 📄
+# 📄 Notes on Files 📄
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -6,6 +6,10 @@
 
 * Search it on "Google" <small>(ex: convert HTML to PDF)</small>
 * There are too many websites
+
+##### Sync files between drives
+
+* [freefilesync](https://freefilesync.org/download.php)
 
 </div><div>
 

@@ -35,10 +35,20 @@
 * [adblock](https://adblockplus.org/): block most ads/trackers
 * [ublock origin](https://ublockorigin.com/): block most ads/trackers, can disable JavaScript...
 
+<br>
+
+##### Services
+
+* [Proton](https://proton.me/) (mails, calendar, drive, VPN)
+* [mailo](https://www.mailo.com/) (mails)
+
+<br>
+
 ##### Utilities
 
 * [Terms of Service Didn't Read](https://tosdr.org/)
 
+<br>
 
 ##### Youtube
 
@@ -46,6 +56,8 @@
 * [ytmous](https://github.com/ytmous/ytmous) (unmaintained, privacy-focused, 0.04k ⭐)
 * [youtube_rss](https://github.com/SimonDaNinja/youtube_rss) (privacy-focused, 0.05k ⭐)
 * [youtube-local](https://github.com/user234683/youtube-local) (privacy-focused, 0.3k ⭐)
+
+<br>
 
 ##### Random
 
