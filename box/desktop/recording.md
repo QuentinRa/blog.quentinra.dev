@@ -12,10 +12,12 @@
 
 * [Camtasia](https://www.techsmith.com/video-editor.html) (easy to learn)
 * [Real-Time-Person-Removal](https://github.com/jasonmayes/Real-Time-Person-Removal)
+* [split-video](https://split-video.com/) (split a video online)
 </div><div>
 
 ##### Special
 
 * [ScreenToGif](https://www.screentogif.com/) (free, create a GIF, WindowsStore, [GitHub](https://github.com/NickeManarin/ScreenToGif))
 * [TTYGIF](https://github.com/icholy/ttygif) (record a terminal)
+* [loom](https://www.loom.com/) (free with an account, record yourself with your slides)
 </div></div>

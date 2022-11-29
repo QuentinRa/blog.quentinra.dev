@@ -18,6 +18,14 @@
 ##### Temporary
 
 * [filevert](https://filevert.fr/) (temporary file hosting)
+
+<br>
+
+##### Social
+
+* [elements](https://element.io/) (Secure communication, connected via Matrix)
+* [signal](https://signal.org/en/) (Secure communication, quite trusted on mobiles)
+* [matrix](https://matrix.org/) ("An open network for secure, decentralized communication")
 </div><div>
 
 ##### Nice browser extensions
@@ -42,4 +50,19 @@
 ##### Random
 
 * [cookie consent speed run](https://cookieconsentspeed.run/) 🤩
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [telegram.org](https://telegram.org/)
+* [joinmastodon.org](https://joinmastodon.org/)
+</div><div>
+
+
 </div></div>

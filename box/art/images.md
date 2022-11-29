@@ -23,6 +23,7 @@
 
 * [picresize.com](https://picresize.com/) (batch)
 * [resizepixel.com](https://www.resizepixel.com/) (one)
+* [js-image-carver](https://github.com/trekhleb/js-image-carver) (amazing, [demo](https://trekhleb.dev/js-image-carver/))
 
 ##### Reverse search
 
@@ -53,6 +54,7 @@ Stuff that I found, but never read/used yet.
 * [image-background-remove-tool](https://github.com/OPHoperHPO/image-background-remove-tool)
 * [background-removal](https://github.com/topics/background-removal)
 * [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
+* [pngquant](https://pngquant.org/) (compress)
 </div><div>
 
 
