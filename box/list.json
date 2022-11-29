@@ -9,6 +9,13 @@
         "desc": "Remove backgrounds, remove something from an image, create a GIF...",
         "icon": "<i class=\"bi bi-images\"></i>",
         "hidden": false
+      },
+      {
+        "tag": "art/emojis.md",
+        "name": "Emojis",
+        "desc": "Nothing much.",
+        "icon": "<i class=\"bi bi-emoji-sunglasses\"></i>",
+        "hidden": false
       }
     ],
     "Random": [

@@ -240,7 +240,7 @@ We are allowing HTML, but note that using style is not recommended (as it may be
 
 * **version 1.3.0**: using **emojis** is a good practice
 
-You may [learn more about emojis here](../archives/tools/toolbox/desktop/emojis.md). You should use them to make the content less monotone, and help the reader focusing on what he needs to remember.
+You may [learn more about emojis here](../box/art/emojis.md). You should use them to make the content less monotone, and help the reader focusing on what he needs to remember.
 </div><div>
 
 * **add references**
