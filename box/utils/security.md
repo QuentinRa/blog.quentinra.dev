@@ -84,5 +84,6 @@ Stuff that I found, but never read/used yet.
 * [joinmastodon.org](https://joinmastodon.org/)
 </div><div>
 
-
+* [degooglisons-internet](https://degooglisons-internet.org/en/alternatives/) (old)
+* [framalibre](https://framalibre.org/) (french)
 </div></div>

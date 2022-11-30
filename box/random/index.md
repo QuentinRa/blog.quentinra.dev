@@ -31,13 +31,15 @@
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-* [nimbusweb.me](https://nimbusweb.me/) (👻, project/team management?)
 * [blockadblock.com](https://blockadblock.com/) (block newbies using adblock)
 * [chpadblock.com](https://chpadblock.com/) (block newbies using adblock)
+* [confirmic](https://landing.confirmic.com/) (👻, cookies)
 </div><div>
 
+* [nimbusweb.me](https://nimbusweb.me/) (👻, project/team management?)
 * [united-heroes](https://www.united-heroes.com/) (👻, events?)
 * [zoho.com](https://www.zoho.com/office/) (👻, office 365~?)
+* [goodfirms.co](https://www.goodfirms.co/) (👻, review/promote tools?)
 </div></div>
 
 <hr class="sep-both">

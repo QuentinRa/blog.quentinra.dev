@@ -13,8 +13,15 @@
       {
         "tag": "art/emojis.md",
         "name": "Emojis",
-        "desc": "Nothing much.",
+        "desc": "Notes about emojis. Nothing much.",
         "icon": "<i class=\"bi bi-emoji-sunglasses\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "art/shop.md",
+        "name": "Shop",
+        "desc": "Look for creators and assets.",
+        "icon": "<i class=\"bi bi-shop\"></i>",
         "hidden": false
       }
     ],
@@ -77,6 +84,13 @@
         "name": "Random stuff",
         "desc": "Even I don't know what's inside.",
         "icon": "<i class=\"bi bi-tropical-storm\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "random/formations.md",
+        "name": "Formations",
+        "desc": "Websites on which you can learn/...",
+        "icon": "<i class=\"bi bi-body-text\"></i>",
         "hidden": false
       },
       {

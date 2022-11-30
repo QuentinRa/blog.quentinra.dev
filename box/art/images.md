@@ -34,6 +34,11 @@
 
 * [tesseract.js](https://github.com/naptha/tesseract.js) ([Website](https://tesseract.projectnaptha.com/))
 
+##### Favicons
+
+* [realfavicongenerator](https://realfavicongenerator.net/)
+* [realfavicongenerator](https://realfavicongenerator.net/svg-favicon/) (svg)
+
 ##### Memes
 
 * [Know Your Meme](https://knowyourmeme.com/)
