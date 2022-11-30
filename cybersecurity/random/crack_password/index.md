@@ -425,3 +425,65 @@ $ unzip hello.zip
 
 > There is also [fcrackzip](https://github.com/hyc/fcrackzip) (0.3k ⭐)
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* Hashcat
+
+<details class="details-e">
+<summary>Brute force</summary>
+
+* Your device driver installation is probably broken. See also: https://hashcat.net/faq/wrongdriver
+
+* https://hashcat.net/wiki/doku.php?id=mask_attack
+
+```text
+.\hashcat.exe -m 900 XXX -a 3 -o cracked.txt
+.\hashcat.exe -m 900 XXX -a 3 -o cracked.txt --self-test-disable
+hashcat (v6.2.6) starting
+
+ATTENTION! Pure (unoptimized) backend kernels selected.
+Pure kernels can crack longer passwords, but drastically reduce performance.
+If you want to switch to optimized kernels, append -O to your commandline.
+See the above message to find out about the exact limits.
+
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 900 (MD4)
+Hash.Target......: XXX
+Kernel.Feature...: Pure Kernel
+Guess.Mask.......: ?1 [1]
+Guess.Charset....: -1 ?l?d?u, -2 ?l?d, -3 ?l?d*!$@_, -4 Undefined
+
+Guess.Mask.......: ?1?2 [2]
+Guess.Charset....: -1 ?l?d?u, -2 ?l?d, -3 ?l?d*!$@_, -4 Undefined
+
+Guess.Mask.......: ?1?2?2 [3]
+Guess.Charset....: -1 ?l?d?u, -2 ?l?d, -3 ?l?d*!$@_, -4 Undefined
+
+Guess.Mask.......: ?1?2?2?2 [4]
+Guess.Charset....: -1 ?l?d?u, -2 ?l?d, -3 ?l?d*!$@_, -4 Undefined
+
+Guess.Mask.......: ?1?2?2?2?2 [5]
+Guess.Charset....: -1 ?l?d?u, -2 ?l?d, -3 ?l?d*!$@_, -4 Undefined
+
+Guess.Mask.......: ?1?2?2?2?2?2 [6]
+Guess.Charset....: -1 ?l?d?u, -2 ?l?d, -3 ?l?d*!$@_, -4 Undefined
+
+Guess.Mask.......: ?1?2?2?2?2?2?2 [7]
+Guess.Charset....: -1 ?l?d?u, -2 ?l?d, -3 ?l?d*!$@_, -4 Undefined
+
+Guess.Mask.......: ?1?2?2?2?2?2?2?3 [8]
+Guess.Charset....: -1 ?l?d?u, -2 ?l?d, -3 ?l?d*!$@_, -4 Undefined
+```
+</details>
+</div><div>
+
+
+</div></div>
