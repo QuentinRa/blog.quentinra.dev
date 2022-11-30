@@ -33,7 +33,7 @@ Usually, hackers create **rainbow tables**, or dictionaries, in which hashes are
 
 There are a few solutions to find which kind of hash algorithm was used to generate a hash. We consider in the following, that the hash is stored inside a file called "hash".
 
-Historically, there was [hash-identifier](https://github.com/blackploit/hash-identifier) (399⭐), but it's kinda old (2011).
+Historically, we used [hash-identifier](https://github.com/blackploit/hash-identifier) (0.3k⭐), but it's obsolete (2011).
 
 ```bash
 $ cat hash | hash-identifier
@@ -48,7 +48,7 @@ $ hashid "some_hash"
 ```
 </div><div>
 
-[Name-that-hash](https://github.com/HashPals/Name-That-Hash) (1.1k ⭐, fork of hashID). There is an [online version](https://nth.skerritt.blog/). The program is giving you john (JtR), and the hashcat (hc) format 🚀! 
+[Name-that-hash](https://github.com/HashPals/Name-That-Hash) (1.1k ⭐, fork of hashID). There is an [online version](https://nth.skerritt.blog/). The program is giving you the format for john (JtR) and hashcat (hc)! 
 
 ```bash
 # sudo apt install name-that-hash
@@ -56,7 +56,7 @@ $ nth -t "some_hash"
 $ nth -f hash
 ```
 
-[haiti](https://github.com/noraj/haiti/) (309 ⭐). The program is giving you john (JtR), and the hashcat (hc) format 🚀!
+[haiti](https://github.com/noraj/haiti/) (309 ⭐). Less famous than nth, but quite similar, as the program is also giving you the format for john (JtR) and hashcat (hc)!
 
 ```bash
 # sudo gem install haiti-hash
@@ -264,7 +264,7 @@ You may try to exploit "password complexity predictability", for instance, the f
 
 You may edit `/etc/john/john.conf`, and add your rules. You may make a copy, and use this configuration instead of the default one. You can use the regex operation `[]` inside quotes. `c` means that the character is capitalized. `Az` means appending character, while `A0` means prepending.
 
-```ini
+```text
 [List.Rules:RuleName]
 cAz"[0-9] [!$%@]"
 ```

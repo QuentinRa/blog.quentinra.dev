@@ -28,6 +28,12 @@
 * [elements](https://element.io/) (Secure communication, connected via Matrix)
 * [signal](https://signal.org/en/) (Secure communication, quite trusted on mobiles)
 * [matrix](https://matrix.org/) ("An open network for secure, decentralized communication")
+
+<br>
+
+##### Password Managers
+
+* [BitWarden](https://bitwarden.com/) (Open Source Password Manager)
 </div><div>
 
 ##### Nice browser extensions

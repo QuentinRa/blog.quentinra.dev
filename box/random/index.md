@@ -31,8 +31,27 @@
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-* [nimbusweb.me](https://nimbusweb.me/) (👻)
-* [blockadblock.com](https://blockadblock.com/)
-* [chpadblock.com](https://chpadblock.com/)
+* [nimbusweb.me](https://nimbusweb.me/) (👻, project/team management?)
+* [blockadblock.com](https://blockadblock.com/) (block newbies using adblock)
+* [chpadblock.com](https://chpadblock.com/) (block newbies using adblock)
+</div><div>
+
+* [united-heroes](https://www.united-heroes.com/) (👻, events?)
+* [zoho.com](https://www.zoho.com/office/) (👻, office 365~?)
+</div></div>
+
+<hr class="sep-both">
+
+##  📈 plots/graphs 📈
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+##### Trees
+
+* [ironcreek](https://ironcreek.net/syntaxtree/)  (syntaxtree)
+
+##### Graphs
+
+* [webgraphviz](http://webgraphviz.com/) (with [GraphViz Pocket Reference](https://graphs.grevian.org/example))
 </div><div>
 </div></div>

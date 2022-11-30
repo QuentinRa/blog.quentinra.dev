@@ -10,5 +10,9 @@
 * [mega.io](https://mega.io/start)
 </div><div>
 
-...
+##### Images
+
+* [prnt.sc](https://prnt.sc/) (images are kept indefinitely, unless reported)
+* As a reminder, an Image is a File, so you can use filevert...
+
 </div></div>

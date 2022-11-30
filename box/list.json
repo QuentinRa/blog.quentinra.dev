@@ -39,6 +39,13 @@
         "desc": "Share files/... Watch movies together...",
         "icon": "<i class=\"bi bi-share\"></i>",
         "hidden": false
+      },
+      {
+        "tag": "desktop/other_notes.md",
+        "name": "Other notes",
+        "desc": "Scan something...",
+        "icon": "<i class=\"bi bi-box\"></i>",
+        "hidden": false
       }
     ],
     "🪄 &nbsp;Utilities, and Tips&nbsp; 💫": [
