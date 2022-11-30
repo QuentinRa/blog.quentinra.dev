@@ -253,21 +253,21 @@
 				"icon": "<i class=\"bi bi-key\"></i>"
 			},
 			{
-				"tag": "low-level/system_calls/index.md",
+				"tag": "info/low-level/system_calls/index.md",
 				"name": "System calls",
 				"desc": "Learn about the most-used system calls.",
 				"icon": null,
 				"hidden": false
 			},
 			{
-				"tag": "low-level/assembly/arm/index.md",
+				"tag": "info/low-level/assembly/arm/index.md",
 				"name": "Assembly (ARM)",
 				"desc": "...",
 				"icon": null,
 				"hidden": false
 			},
 			{
-				"tag": "low-level/c/index.md",
+				"tag": "info/low-level/c/index.md",
 				"name": "C programming",
 				"desc": "...",
 				"icon": "<i class=\"bi bi-terminal-fill\"></i>",

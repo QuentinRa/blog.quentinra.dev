@@ -22,6 +22,7 @@
 
 * [termshub](https://termshub.io/) (readable and simple, free)
 * [termly](https://termly.io/) (big unreadable ToS, free with watermarks)
+* [freeprivacypolicy](https://www.freeprivacypolicy.com/) (👻)
 </div><div>
 </div></div>
 

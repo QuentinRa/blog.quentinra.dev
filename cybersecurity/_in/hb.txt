@@ -89,6 +89,13 @@ https://chrome.google.com/webstore/detail/tamper-chrome-extension/hifhgpdkfodlpn
 https://tamper.dev
 https://pwning.owasp-juice.shop/part1/categories.html
 
+Open firefox network tab before sending a request
+Then, once the request was sent, you will see it inside even if the page changed.
+You can
+
+* resend a request
+* edit a request and send it again (click on "use as fetch in console")
+
 --exclude-length 1987
 Error: the server returns a status code that matches the provided options for non existing urls. URL/xxxx-xxxx-xxxx-xxx => 200 (Length: 1987). To continue please exclude the status code or the length
 
@@ -111,3 +118,20 @@ https://www.qualys.com/free-services/
 https://phoenixnap.com/blog/cybersecurity-experts-threats-trends
 
 udemy learn ethical hacking from scratch / python and ethical hacking from scratch
+
+```
+Array.from(document.querySelectorAll('a:not([hidden])')).map(e => {
+let h = e.href
+const name = h.substr(h.lastIndexOf("/")+1)
+if (name === "") return 0;
+if (!h.endsWith(".md")) h += "%2500.md"
+const a = document.createElement('a')
+a.setAttribute('href', h)
+a.setAttribute('downlaod', name)
+a.setAttribute('hidden', '')
+a.setAttribute('target', '_blank')
+document.body.appendChild(a)
+a.click()
+return 1
+})
+```
