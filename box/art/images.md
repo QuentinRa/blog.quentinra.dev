@@ -48,6 +48,7 @@
 ##### Editors
 
 * [ephtracy](https://ephtracy.github.io/) (voxel art editor)
+* [boundingboxsoftware](https://boundingboxsoftware.com/materialize/) (image to material)
 </div><div>
 </div></div>
 

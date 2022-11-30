@@ -12,12 +12,14 @@
 ##### Test your browser configuration
 
 * [coveryourtracks](https://coveryourtracks.eff.org/)
+* [amiunique](https://www.amiunique.org/fp) ([article in french](https://wonderfall.space/empreinte-numerique/))
 
 <br>
 
 ##### Temporary
 
 * [filevert](https://filevert.fr/) (temporary file hosting)
+* [fakenamegenerator](https://en.fakenamegenerator.com/) (fake data, temporary email)
 
 <br>
 

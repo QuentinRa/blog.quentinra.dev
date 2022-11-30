@@ -32,5 +32,7 @@
 <div class="row row-cols-md-2 mt-3"><div>
 
 * [nimbusweb.me](https://nimbusweb.me/) (👻)
+* [blockadblock.com](https://blockadblock.com/)
+* [chpadblock.com](https://chpadblock.com/)
 </div><div>
 </div></div>
