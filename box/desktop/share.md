@@ -13,6 +13,5 @@
 ##### Images
 
 * [prnt.sc](https://prnt.sc/) (images are kept indefinitely, unless reported)
-* As a reminder, an Image is a File, so you can use filevert...
-
+* As a reminder, an image is a file, so you can use filevert...
 </div></div>

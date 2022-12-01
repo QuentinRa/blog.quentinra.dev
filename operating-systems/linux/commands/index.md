@@ -1457,6 +1457,15 @@ Stuff that I found, but never read/used yet.
 
 * subshell
 * `less -r`: read with colors?
+* `mktemp`
+* pretty CSV ([article](https://www.stefaanlippens.net/pretty-csv.html))
+
+```bash
+wget https://github.com/alexhallam/tv/releases/download/1.4.30/tidy-viewer_1.4.30_amd64.deb
+sudo dpkg -i tidy-viewer_1.4.30_amd64.deb
+echo "alias tv='tidy-viewer'" >> ~/.bashrc
+source ~/.bashrc
+```
 </div><div>
 
 * `uniq / uniq -c`

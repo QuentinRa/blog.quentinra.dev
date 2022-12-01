@@ -20,7 +20,6 @@ C:\> Add-MpPreference -ExclusionPath "C:\Users\xxx\AppData\Local\Temp\chocolatey
 ```
 
 * https://www.vagrantup.com/ manage vms?
-* https://www.parrotsec.org/
 * https://linux.backbox.org/
 * `sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y`
 * Terminator	Guake	iTerm2	Terminology [tmux](https://www.youtube.com/watch?v=Lqehvpe_djs)

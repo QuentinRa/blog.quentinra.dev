@@ -346,6 +346,11 @@ Articles
 * [breach attack](https://www.acunetix.com/blog/articles/breach-attack/)
 * [elastic](https://www.elastic.co/guide/en/security/current/es-overview.html)
 * [attack.mitre](https://attack.mitre.org/tactics/enterprise/)
+
+Courses
+
+* udemy learn ethical hacking from scratch
+* udemy python and ethical hacking from scratch
 </div><div>
 
 Random
