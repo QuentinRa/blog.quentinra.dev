@@ -135,3 +135,24 @@ a.click()
 return 1
 })
 ```
+
+sudo apt install zaproxy
+owasp-zap
+https://www.kali.org/tools/kali-meta/
+https://github.com/bettercap/bettercap
+https://github.com/infobyte/evilgrade
+https://github.com/Veil-Framework/Veil
+https://github.com/vernjan/owasp-juice-shop
+
+-T table
+do you want to store hashes to a temporary file for eventual further processing with other tools [y/N] y
+do you want to crack passwords?
+what dictionary you want to use.
+do you want to use common password suffixes? (slow!) [y/N] N
+
+https://www.stefaanlippens.net/pretty-csv.html
+==> a bit shitty for long columns and many columns (tl;dr big tables)
+wget https://github.com/alexhallam/tv/releases/download/1.4.30/tidy-viewer_1.4.30_amd64.deb
+sudo dpkg -i tidy-viewer_1.4.30_amd64.deb
+echo "alias tv='tidy-viewer'" >> ~/.bashrc
+source ~/.bashrc
