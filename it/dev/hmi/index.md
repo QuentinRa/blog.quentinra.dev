@@ -1,30 +1,33 @@
 # Human-machine interfaces
 
-Human-machine interfaces (`IHM = Ìnterfaces Homme-machine`) are interfaces connecting the interactions between humans and machines. For instance, this could be a program or a website.
+<div class="row row-cols-md-2 mt-4"><div>
 
-You must think a lot about how you should create one, and that's the purpose of this course.
+Human-machine interfaces (HMI, `IHM`, `Interfaces Homme-machine`) are interfaces connecting humans and machines, for instance, a mail client. More widely, this includes any programs or websites. 
 
-<hr class="sl">
+You must think a lot about how you should create one, and that's the purpose of this course. You will need to **think 🤔** about
 
-## Introduction
+* **where** 🗺️: layout of your application
+* **what** 🗃️: which element is required, which one isn't...
+* **how** 🖇️: what are your menus, are they simple and intuitive?
 
-You will need
+We usually create a **mockup** (`maquette`) first. Each screen of the interface is called **a wireframe**. Once every screen is created, you will add actions between your screen, which includes stuff like what happens when the user hover/press/click/... on a button/... The final output with interconnected wireframes is called **a wireflow**.
+</div><div>
 
-* to think about where you put the elements of your interfaces, by creating `wireframes` 
-* you will need to think about what elements you need in your interfaces
-* you must think about how you will sort things like your menus to make them simple and intuitive
-  
-A wireframe is literally a frame of your application, you can draw it by yourself or use tools like
+You can create wireframes using
 
-* PowerPoint (no, don't 🙄)
-* [Diagrams](https://app.diagrams.net/) (fast, but quite poor quality)
-* [Sketch](https://www.sketch.com/) (macOS)
-* Photoshop (paid, for professionals)
-* [Justinmind](https://www.justinmind.com/) (trial available but paid, **the best of all** 🚀)
-* [Moqups](https://moqups.com/) (**the best for free**, account required)
-* Or simply in HTML using Bootstrap, simple and efficient (**my favorite alternative**)
+* [Justinmind](https://www.justinmind.com/) <small>(paid, free trial, really good 🚀)</small>
+* [Moqups](https://moqups.com/) <small>(free with a limit, account required, quite good 📌)</small>
+* [Diagrams](https://app.diagrams.net/) <small>(fast, poor quality)</small>
+* [Sketch](https://www.sketch.com/) <small>(macOS, 👻)</small>
+* [Photoshop](https://www.adobe.com/products/photoshop.html) (<small>paid, for professionals)</small>
+* [Bootstrap](https://getbootstrap.com/) <small>(my favorite 😍, require advanced Bootstrap+CSS skills)</small>
 
-You can use this great website to think about menus or make optimal choices : [optimalworkshop](https://www.optimalworkshop.com/).
+<br>
+
+Other tools
+
+* [optimalworkshop](https://www.optimalworkshop.com/) <small>(think about your menus/...)</small>
+</div></div>
 
 <hr class="sr">
 
