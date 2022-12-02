@@ -50,8 +50,15 @@
       {
         "tag": "desktop/other_notes.md",
         "name": "Other notes",
-        "desc": "Scan something...",
+        "desc": "Scan something, take screenshots...",
         "icon": "<i class=\"bi bi-box\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "desktop/discord.md",
+        "name": "Discord",
+        "desc": "Notes about Discord.",
+        "icon": "<i class=\"bi bi-discord\"></i>",
         "hidden": false
       }
     ],
