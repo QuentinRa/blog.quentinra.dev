@@ -126,6 +126,11 @@ General
 * [TheFatRat](https://github.com/screetsec/TheFatRat)
 * [Phantom-Evasion](https://github.com/oddcod3/Phantom-Evasion)
 * [msfpc](https://github.com/g0tmi1k/msfpc)
+* [arsenal](https://github.com/Orange-Cyberdefense/arsenal)
+* [CrackMapExec](https://github.com/Porchetta-Industries/CrackMapExec)
+* [hackertarget](https://hackertarget.com/)
+* [Raccoon](https://github.com/evyatarmeged/Raccoon)
+* [Photon](https://github.com/s0md3v/Photon)
 
 <br>
 

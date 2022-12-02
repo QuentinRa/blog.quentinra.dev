@@ -1,17 +1,8 @@
-https://github.com/Orange-Cyberdefense/arsenal
-https://github.com/Orange-Cyberdefense/GOAD
-https://github.com/Orange-Cyberdefense/ocd-mindmaps
-https://github.com/Porchetta-Industries/CrackMapExec
-https://github.com/frizb/Windows-Privilege-Escalation
-
-https://hackertarget.com/
-https://github.com/evyatarmeged/Raccoon
-https://github.com/s0md3v/Photon
-https://chaos.projectdiscovery.io/#/
 https://github.com/payloadbox
 https://github.com/Cerbersec/scripts
 https://github.com/hack-with-github
 https://github.com/netbiosX/Checklists
+https://chaos.projectdiscovery.io/#/
 https://github.com/glitchedgitz/cook (see SecList refs)
 https://github.com/OJ/gobuster to find s3/...
 

@@ -154,6 +154,11 @@ Notes about Virtual Machine, Emulators, along with links to download CTF Virtual
 **DarkStar7471** 🌠
 
 You can find VMs made by DarkStar7471 on TryHackMe [here](https://darkstar7471.com/resources.html).
+
+**Game of Active Directory**
+
+* [Link](https://github.com/Orange-Cyberdefense/GOAD)
+* 1.4k ⭐
 </div></div>
 
 <hr class="sep-both">

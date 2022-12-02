@@ -377,6 +377,7 @@ Courses
 
 Random
 
+* [ocd-mindmaps](https://orange-cyberdefense.github.io/ocd-mindmaps/)
 * [bugtraq](https://bugtraq.securityfocus.com/archive)
 * [cxsecurity](https://cxsecurity.com/) / [cifrex](https://cifrex.org/)
 * [packetstormsecurity](https://packetstormsecurity.com/)
