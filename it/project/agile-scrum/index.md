@@ -7,11 +7,11 @@ Agile **Scrum** (`Mêlée au rugby`) is one of the most used **Agile methodologi
 A long time ago, the **V-Model** (`Cycle en V`) model <small>(an extension of the Waterfall model)</small> was the most used methodology. But, it **wasn't flexible**, the client often had to **wait a long time**, and the product **may not have been what he wanted**, so a lot of companies are moving to Agile methodologies.
 </div><div>
 
-As this is an incremental method, you will add functionalities incrementally. When your iteration ended, the client will check what you did, give you feedback, so that you know what to do in the next iteration.
+As this is an incremental method, you will add functionalities incrementally. When your iteration ended, the client will check what you did, and give you feedback, so that you know what to do in the next iteration.
 
 Other Agile methodologies: XP (Extreme programming), Kanban.
  
-The Agile manifesto (`Manifeste Agile`), signed in 2001, is defining the guidelines for Agile project: [Agile Manifesto](https://agilemanifesto.org/)
+The Agile manifesto (`Manifeste Agile`), signed in 2001, is defining the guidelines for Agile projects: [Agile Manifesto](https://agilemanifesto.org/)
 </div></div>
 
 <hr class="sep-both">
@@ -67,7 +67,7 @@ They are the people doing the work. This is usually a team of 3 to 9 persons, bu
 
 The **Scrum master** is **making sure that the developers** <small>(the product owner, and the company too)</small> **are only focusing on their job**, and not on applying Scrum. He should **organize (or sometimes facilitate) meetings**, **support the team**, **manage the tools**, do **reporting**, **deal with blockers**, and **"timeboxing"** <small>(a meeting shouldn't last more than it was supposed to)</small>  so that the project is going smoothly.
 
-The Scrum Master is an expert of Scrum, and he/she must **ensure that Scrum is used properly**, but if the team agree on changing something, he/she must be **open for changes** (as he/she follows the principles and values of Scrum).
+The Scrum Master is an expert in Scrum, and he/she must **ensure that Scrum is used properly**, but if the team agrees on changing something, he/she must be **open for changes** (as he/she follows the principles and values of Scrum).
 
 <details class="details-e">
 <summary>Random notes</summary>
@@ -150,7 +150,7 @@ A **User Story** (**US**) is a text describing a task from the point of view of 
 * **bugs** (technical)
 * **tests** (technical)
 * **technical debt** (technical): this is what you have to do before starting to improve the code <small>(refactor, use constants...)</small>
-* **actions** (technical): changing your way of doing things <small>(=usually a reflexion from a retrospective)</small>
+* **actions** (technical): changing your way of doing things <small>(=usually a reflection from a retrospective)</small>
 
 In a user story, we must know the **reason**, the **goal**, the **value**, and an **estimation** of the cost/value for the person needing this task to be done. Ex:
 
@@ -215,7 +215,7 @@ You may create a table, in which each row is a story. You may group them by epic
 
 * Entries of the product backlog are also called **items**.
 
-* Sometimes, the backlog may become too big, so you may remove the less important tasks, and label them as **"out of scope"** <small>(such as the Could/Would, or tasks that do not impact the sprint goal if they are removed)</small>
+* Sometimes, the backlog may become too big, so you may remove the less important tasks, and label them as **"out of scope"** <small>(such as Could/Would, or tasks that do not impact the sprint goal if they are removed)</small>
 
 * Reviewing the backlog is sometimes called backlog **grooming** (or refinement)
 
@@ -234,7 +234,7 @@ Each developer is taking tasks according to their **capacity**. This is the sum 
 
 We are using the famous **whiteboard**, with the following columns
 
-* **Todo** (`À faire`): what has to be done
+* **To-do** (`À faire`): what has to be done
 * **In-progress** (`En cours`): working on it
 * **Done** (`Terminé/Fini`): done
 
@@ -261,9 +261,9 @@ Here are some free tools
 </details>
 
 <details class="details-e">
-<summary>How to split tasks in smaller tasks?</summary>
+<summary>How to split tasks into smaller tasks?</summary>
 
-Here is an example for a functionality to show the main page of a desktop application
+Here is an example with the main page of a desktop application
 
 * make the frame without any content <small>(close, minimize, etc.)</small>
 * make the toolbar
@@ -295,7 +295,7 @@ Check the **progress**. What each one did **yesterday**, what are they planning 
 <br>
 <p class="text-center">🪙 My two cents 🪙</p>
 
-**As a Scrum master**, try to relay as much as possible information in your group. It may be a good idea to have a **one-to-one talk** with each member, once a day/[...]. This may help them think of new ways of doing something,  to improve their documentation/comments, thinking of new tests, and hopefully broaden both of your horizons.
+**As a Scrum master**, try to relay as much as possible information in your group. It may be a good idea to have a **one-to-one talk** with each member, once a day/[...]. This may help them think of new ways of doing something, improve their documentation/comments, think of new tests, and hopefully broaden both your and their horizons.
 </div></div>
 
 <hr class="sep-both">
@@ -304,7 +304,7 @@ Check the **progress**. What each one did **yesterday**, what are they planning 
 
 <div class="row row-cols-md-2"><div>
 
-At the end, you must **demonstrate** to the client (and your team sometimes) **what you did**, the items you completed (also talk about what you planned, but didn't made). Take note of what the client wants to **review** in **the product backlog**.
+At the end, you must **demonstrate** to the client (and your team sometimes) **what you did**, the items you completed (also talk about what you planned, but didn't make). Take note of what the client wants to **review** in **the product backlog**.
 
 Each developer may **demonstrate** what they did (and why?), but do not make it too long, like 5 minutes per person. Do not forget to talk about **key metrics**: you are making a software/website/... for customers, check that it is usable/...
 </div><div class="align-self-center">
@@ -312,7 +312,7 @@ Each developer may **demonstrate** what they did (and why?), but do not make it 
 * **Involves**: PO, SM, Dev. team, the client/users
 * **Duration**: up to 4 hours/4 weeks
 
-Some organizations are making weekly demo with the team, so that everyone knows what the others are doing, understand a bit more what they need to do, and keep track of what the client wants.
+Some organizations are making a weekly demo with the team, so that everyone knows what the others are doing, understand a bit more what they need to do, and keep track of what the client wants.
 </div></div>
 
 <hr class="sep-both">
@@ -344,7 +344,7 @@ At the end, you must select **one thing** and focus on it. Focusing on one is ma
 
 <div class="row row-cols-md-2"><div>
 
-They are the way of checking what progress, or the key indicators of your project.
+The following are ways used to check the progress, or the key indicators of your project.
 
 * **R.O.T.I** (Return of time invested)
 
