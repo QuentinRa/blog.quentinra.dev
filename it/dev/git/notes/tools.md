@@ -29,7 +29,7 @@ Language-specific
 
 > **BUT** it's tiring to check each website if they got news? or How is it automated?
 
-Well, you will usually put a badge in your README (as explained in [Make Git project](../../../proj/make-git-project/index.md)), and the badge will be updated each time someone goes to the page (=each time the badge is rendered), so you will see inside if you have to go check the website or not.
+Well, you will usually put a badge in your README (as explained in [Make Git project](../../../../archives/proj/make-git-project/index.md)), and the badge will be updated each time someone goes to the page (=each time the badge is rendered), so you will see inside if you have to go check the website or not.
 
 ![GitHub external tools badges](../images/badges.png)
 

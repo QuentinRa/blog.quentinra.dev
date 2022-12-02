@@ -16,7 +16,7 @@ This course will strongly refer to [GitHub](https://github.com/), but you may al
 
 As a student, you may enjoy the benefits of the [GitHub student pack](https://education.github.com/pack).
 
-> **edit 21/08/2021**: A lot of content that was in this course (README, LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, ...), was moved to "[Make Git project](../../proj/make-git-project/index.md)". This is because I wanted to separate a bit more the commands and the concepts 🙇. Still, I kept a short description here, for those that are not interested in the advanced or the proper way to use these files.
+> **edit 21/08/2021**: A lot of content that was in this course (README, LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, ...), was moved to "[Make Git project](../../../archives/proj/make-git-project/index.md)". This is because I wanted to separate a bit more the commands and the concepts 🙇. Still, I kept a short description here, for those that are not interested in the advanced or the proper way to use these files.
 
 <hr class="sr">
 
@@ -106,7 +106,7 @@ By default, you are coding on a branch called `master` (or `main`). Let's explai
     * if "main" didn't change, no problems, the copy replace "main"
     * but if "main" changed, then you may have to manually pick which parts of the two copies you want in the new "main" (=resolving conflicts).
 
-> As a side note, when you have to resolve conflicts, the merge command's output will list what files need to be reviewed. In each file, you have the two different versions and need to delete the code you don't want to keep. Some software provides you an interface to do that quite easily such as [PHPStorm](https://www.jetbrains.com/help/phpstorm/resolving-conflicts.html#distributed-version-control-systems), or any software made by [JetBrains](../jetbrains/index.md).
+> As a side note, when you have to resolve conflicts, the merge command's output will list what files need to be reviewed. In each file, you have the two different versions and need to delete the code you don't want to keep. Some software provides you an interface to do that quite easily such as [PHPStorm](https://www.jetbrains.com/help/phpstorm/resolving-conflicts.html#distributed-version-control-systems), or any software made by [JetBrains](../../../archives/tools/jetbrains/index.md).
 
 ![Merge image - GitGraph.js](images/merge.png)
 

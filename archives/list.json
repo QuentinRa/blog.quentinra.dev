@@ -120,13 +120,6 @@
 				"hidden": false
 			},
 			{
-				"tag": "tools/git/index.md",
-				"name": "Git",
-				"desc": "Git is the most famous version control tool, and as a programmer, you must learn it.",
-				"icon": "<i class=\"bi bi-github\"></i>",
-				"hidden": false
-			},
-			{
 				"tag": "tools/vim/index.md",
 				"name": "VIM",
 				"desc": "The legendary, old yet powerful console terminal editor.",
