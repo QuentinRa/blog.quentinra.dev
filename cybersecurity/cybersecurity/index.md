@@ -200,6 +200,7 @@ You can use [cybersecurityeducation.org](https://www.cybersecurityeducation.org/
 * [appsec-labs.com](https://appsec-labs.com/online-training/)
 * [pentesterlab](https://www.pentesterlab.com/)
 * [cybertalents](https://cybertalents.com/)
+* [crowdstrike](https://www.crowdstrike.com/cybersecurity-101/)
 </div><div>
 
 **Practicing** (CTF = capture the flag)
@@ -311,7 +312,7 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [raw.pm](https://blog.raw.pm/)
 * [nairitya03](https://nairitya03.github.io/CTF-WriteUps/)
 * [robertmuwanga](https://robertmuwanga.netlify.app/)
-* [hacktoday.io](https://hacktoday.io/)
+* [hacktoday](https://hacktoday.io/)
 * [ThePacketBender](https://github.com/ThePacketBender/notes)
 </div><div>
 
@@ -328,7 +329,12 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [goron](https://gitlab.com/goron/security_whitepapers/-/tree/master)
 * [pentestlab](https://pentestlab.blog/)
 * [enigma0x3](https://enigma0x3.net/)
-* [hackingarticles.in](https://www.hackingarticles.in)
+* [hackingarticles](https://www.hackingarticles.in)
+* [motasem](https://motasem-notes.net/)
+* [thehackerish](https://thehackerish.com/)
+* [secjuice](https://www.secjuice.com/)
+* [cnil](https://www.cnil.fr/fr/cybersecurite)
+* [fredtep](https://fredtep.com/)
 </div>
 
 </div>
@@ -341,17 +347,33 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+Read writeups about
+
+* [THM/owasptop10](https://tryhackme.com/room/owasptop10)
+* [THM/uploadvulns](https://tryhackme.com/room/uploadvulns)
+* [THM/vulnversity](https://tryhackme.com/room/vulnversity)
+* [THM/basicpentestingjt](https://tryhackme.com/room/basicpentestingjt)
+* [THM/owasptop10](https://tryhackme.com/room/owasptop10)
+* [THM/startup](https://tryhackme.com/room/startup)
+* [THM/steelmountain](https://tryhackme.com/room/steelmountain) (premium)
+* Daily Bugle ([cenaras](https://cenaras.wordpress.com/2020/07/14/example-post-3/))
+
+Next
+
+* Explore the JuiceShop (see [THM/JuiceShop](https://tryhackme.com/room/owaspjuiceshop))
+* [Mobile app testing](https://github.com/OWASP/owasp-mastg)
+
 Articles
 
 * [breach attack](https://www.acunetix.com/blog/articles/breach-attack/)
 * [elastic](https://www.elastic.co/guide/en/security/current/es-overview.html)
 * [attack.mitre](https://attack.mitre.org/tactics/enterprise/)
+</div><div>
 
 Courses
 
 * udemy learn ethical hacking from scratch
 * udemy python and ethical hacking from scratch
-</div><div>
 
 Random
 
@@ -364,4 +386,5 @@ Attacks
 * [Email_injection](https://en.wikipedia.org/wiki/Email_injection)
 * [HTTP_header_injection](https://en.wikipedia.org/wiki/HTTP_header_injection)
 * [Session_fixation](https://en.wikipedia.org/wiki/Session_fixation)
+* Pass-The-Hash Attack
 </div></div>

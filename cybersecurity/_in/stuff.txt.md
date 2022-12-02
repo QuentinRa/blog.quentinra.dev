@@ -1,37 +1,3 @@
-https://github.com/wpscanteam/CMSScanner
-https://inthewild.io/ / https://github.com/gmatuz/inthewilddb
-https://github.com/CVEProject/cvelist
-https://github.com/OWASP/Amass
-
-https://motasem-notes.net/bypassing-php-disable-functions-and-upload-filters-tryhackme/
-GIF87A après intercept request in burp / https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5
-Gobuster to find file
-https://medium.com/swlh/web-security-sessions-and-tokens-6468c6feaa41
-https://github.com/OWASP/owasp-mstg
-https://us.norton.com/internetsecurity-id-theft-session-hijacking.html
-https://thehackerish.com/
-https://www.secjuice.com/
-https://www.wappalyzer.com/
-https://github.com/pentestmonkey/php-reverse-shell
-https://gtfobins.github.io/
-https://www.cnil.fr/fr/cybersecurite
-https://www.secjuice.com/apache-server-recon/
-https://attackdefense.com/
-https://www.secjuice.com/webgoat-challenge/
-https://www.secjuice.com/how-to-hack-an-insecure-web-app-owasp-webgoat-challenge-part-2/
-
-https://github.com/screetsec/TheFatRat
-https://github.com/LasCC/Hack-Tools
-https://github.com/oddcod3/Phantom-Evasion
-https://github.com/AdrMXR/KitHack
-https://github.com/g0tmi1k/msfpc
-
-https://www.crowdstrike.com/cybersecurity-101/pass-the-hash/
-https://www.beyondtrust.com/resources/glossary/pass-the-hash-pth-attack
-https://fredtep.com/
-https://github.com/t3l3machus/hoaxshell
-https://github.com/t3l3machus/Villain
-
 https://github.com/Orange-Cyberdefense/arsenal
 https://github.com/Orange-Cyberdefense/GOAD
 https://github.com/Orange-Cyberdefense/ocd-mindmaps

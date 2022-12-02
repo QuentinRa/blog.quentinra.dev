@@ -4,7 +4,7 @@
   "courses": {
     "~e1": [
       {
-        "tag": "cybersecurity",
+        "tag": "cybersecurity/index.md",
         "name": "Getting Started",
         "desc": "Websites to learn, practice, find news, look for news, along with CVE lookup, credentials leak lookup, or stuff like that. ",
         "icon": "<i class=\"bi bi-shield-lock\"></i>",

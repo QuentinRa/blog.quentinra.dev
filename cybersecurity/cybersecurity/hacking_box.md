@@ -116,7 +116,18 @@ General
 * [faraday](https://github.com/infobyte/faraday): Vulnerability scanner?
 * [legion](https://github.com/carlospolop/legion): Enumeration
 * [beyondsecurity](https://www.beyondsecurity.com/): Vulnerability scanner?
+* [KitHack](https://github.com/AdrMXR/KitHack)
+* [hoaxshell](https://github.com/t3l3machus/hoaxshell)
+* [Villain](https://github.com/t3l3machus/Villain)
 </div><div>
+
+* [OWASP Amass](https://github.com/OWASP/Amass)
+* [HackTools](https://github.com/LasCC/Hack-Tools)
+* [TheFatRat](https://github.com/screetsec/TheFatRat)
+* [Phantom-Evasion](https://github.com/oddcod3/Phantom-Evasion)
+* [msfpc](https://github.com/g0tmi1k/msfpc)
+
+<br>
 
 * [termux](https://github.com/topics/termux-hacking) / [0xAbbarhSF](https://github.com/0xAbbarhSF/Termux-Nation-2022-Alpha)
 * [sgn](https://github.com/EgeBalci/sgn)
