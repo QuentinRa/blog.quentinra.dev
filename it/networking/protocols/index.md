@@ -187,7 +187,7 @@ unique_token3 LOGOUT # logout
 
 <div class="row row-cols-md-2 mt-3"><div class="border-end border-dark">
 
-HTTP/HTTPS is a protocol used to exchange with a webserver. Your browser is sending an HTTP request to a webserver, receive a response with HTML inside, and display the page your browser.
+HTTP/HTTPS is a protocol used to exchange with a webserver. Your browser is sending an HTTP request to a webserver, receives a response with HTML inside, and displays the page in your browser.
 
 ```bash
 $ telnet IP 80
@@ -196,7 +196,7 @@ Host: example.com
 # leave a blank line
 ```
 
-The **first** element is inside a request is the method.
+The **first** element in a request is the method.
 
 * `GET`: get a resource  <small>(ex: return `/index.html`)</small>
 * `POST`: create a resource <small>(ex: create a user)</small>
@@ -204,7 +204,7 @@ The **first** element is inside a request is the method.
 * `DELETE`: delete a resource  <small>(ex: delete a user)</small>
 * ...
 
-The **second** is the called **URI**, which is a path relative to the webserver root. For instance, for `https://example.com/index.html`, the URI is `/index.html`.
+The **second** is called **URI**, which is a path relative to the webserver root. For instance, for `https://example.com/index.html`, the URI is `/index.html`.
 
 HTTP versions that are widely used are `HTTP/1.1`, and `HTTP 2.0`, while `HTTP 3.0` was released in 2022.
 </div><div>
