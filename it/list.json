@@ -33,6 +33,15 @@
         "icon": "<i class=\"bi bi-shield-lock\"></i>",
         "hidden": false
       }
+    ],
+    "🛸 IT Development 🛸": [
+      {
+        "tag": "dev/hmi/index.md",
+        "name": "HMI",
+        "desc": "Learn about what you must think before making an interface. Tools to make mock-ups are also listed here.",
+        "icon": "<i class=\"bi bi-window\"></i>",
+        "hidden": true
+      }
     ]
   }
 }

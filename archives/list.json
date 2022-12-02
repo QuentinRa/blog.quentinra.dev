@@ -4,13 +4,6 @@
 	"courses": {
 		"🌠 Methodologies 🌠": [
 			{
-				"tag": "proj/hmi/index.md",
-				"name": "HMI",
-				"desc": "Learn about what you must think before making an interface. Tools to make mock-ups are also listed here.",
-				"icon": "<i class=\"bi bi-window\"></i>",
-				"hidden": false
-			},
-			{
 				"tag": "proj/uml/index.md",
 				"name": "UML",
 				"desc": "UML is a tool used to work on the conception part of a project.",
