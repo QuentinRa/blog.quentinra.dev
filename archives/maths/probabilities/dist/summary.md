@@ -1,6 +1,6 @@
 # Summary
 
-[Go back](..#cheatsheet)
+[Go back](../index.md#cheatsheet)
 
 A summary of the discrete distributions
 

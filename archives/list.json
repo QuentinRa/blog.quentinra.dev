@@ -260,14 +260,14 @@
 				"hidden": false
 			},
 			{
-				"tag": "cryptography/basics/index.md",
+				"tag": "info/cryptography/basics/index.md",
 				"name": "Crypto (basics)",
 				"desc": "A lot of mathematical foundations allowing one's to understand more easily cryptographic algorithms.",
 				"icon": null,
 				"hidden": false
 			},
 			{
-				"tag": "cryptography/algorithms/index.md",
+				"tag": "info/cryptography/algorithms/index.md",
 				"name": "Crypto (algorithms)",
 				"desc": "Cryptography is the knowledge related to the encryption and decryption of messages.",
 				"icon": null,
