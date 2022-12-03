@@ -31,31 +31,39 @@ Other tools
 
 <hr class="sr">
 
-## Users
+## 👲 Users 👲
 
-Before coding some application, you must think about what kinds of persons will use it
+<div class="row row-cols-md-2"><div>
+
+Before coding some application, you must think about what kinds of users will use it
 
 * Language/country
 * Age
 * Color-blind, partially sighted ...
 * Culture
 * Devices (computer? Keyboard? Mouse?)
-* Screen orientation, the size on tablet/phone
+* Screen orientation, Screen size
 * Day/Night mode
 * Knowledge about computers/...
 * Illiterate?
+</div><div>
 
-You can't make something that would be perfect for everyone, but try to make some categories of users and provide them an application, that would aim to satisfy most of their requests. For instance, you can 
+You can't make something that would be perfect for everyone, but try to make some categories of users and provide them an application, that would aim to satisfy most of their requests. For instance, you can
 
 * Make a website/app per country,
 * Add a settings tab to enable the day/night mode,
 * Think about the color-blind users when designing,
 * Make your website/app responsive
 * ...
+</div></div>
 
 <hr class="sl">
 
-## Steps
+## 📄 Steps 📄
+
+<div class="row row-cols-md-2"><div>
+
+Usual steps
 
 1. Create some categories of users
 2. Ask persons matching your categories where they would go to find XXX in the menus, ... to test your interface.
@@ -64,20 +72,24 @@ You can't make something that would be perfect for everyone, but try to make som
 5. Test your mock-up
 6. Make a dynamic mock-up (links working, some code, ...)
 7. Test again
+</div><div>
 
 OR you can follow my steps
 
 1. Create a dynamic mock-up
 2. And repeat these steps
-    1. Test and reviews by users
-    2. Filter changes to be made 
-    3. Implement one or more changes
+   1. Test and reviews by users
+   2. Sort changes to be made
+   3. Implement one or more changes
+</div></div>
 
 <hr class="sr">
 
 ## Jakob Nielsen
 
-Jakob Nielsen wrote the **10 principles** that you should <s>MUST 😠</s> take into account.
+Jakob Nielsen wrote the **10 principles** that you should <s>MUST 😠</s> take into account. See [ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/).
+
+<div class="row row-cols-md-2"><div>
 
 1. Keep the user updated on what's happening
 
@@ -105,6 +117,7 @@ Jakob Nielsen wrote the **10 principles** that you should <s>MUST 😠</s> take 
    > * do not let the user make mistakes, you should code or use the right kind of input field if you expect a specific kind of value.
    > * asking the user confirmation might also be a good practice.
    > * you may add a small help, an example, or a message saying what you are expecting
+</div><div>
 
 6. Users shouldn't need to learn
 
@@ -126,6 +139,7 @@ Jakob Nielsen wrote the **10 principles** that you should <s>MUST 😠</s> take 
 10. Documentation
 
     > As a last resort, you may add documentation for complex applications.
+</div></div>
 
 <hr class="sl">
 
@@ -137,16 +151,24 @@ Jakob Nielsen wrote the **10 principles** that you should <s>MUST 😠</s> take 
 
 3. If you need more than 3 clicks to do one action, and you do this action often, then you MUST re-think your interface.
 
-<hr class="sr">
+<hr class="sep-both">
 
-## Sources
+## 👻 To-do 👻
 
-* <https://fr.wikipedia.org/wiki/Skeuomorphisme>
-* <https://www.nngroup.com/articles/ten-usability-heuristics/>
-* <https://duckduckgo.com/?q=card+sorting&ia=web&atb=v230-1>
-* <https://www.optimalworkshop.com/>
-* <https://www.axure.com/>
-* <https://www.sketch.com/>
-* <https://www.figma.com/>
-* <https://balsamiq.com/>
-* <https://medium.com/sketch-app-sources/how-i-started-using-sketch-app-in-windows-756e7091b0bc>
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* Skeuomorph
+</div><div>
+
+Tools
+
+* [axure](https://www.axure.com/)
+* [figma](https://www.figma.com/)
+* [balsamiq](https://balsamiq.com/)
+* [lunacy](https://icons8.com/lunacy)
+* [zeplin](https://zeplin.io/)
+* [avocode](https://avocode.com/)
+
+</div></div>

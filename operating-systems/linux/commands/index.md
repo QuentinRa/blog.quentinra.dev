@@ -1458,6 +1458,7 @@ Stuff that I found, but never read/used yet.
 * subshell
 * `less -r`: read with colors?
 * `mktemp`
+* `ranger`
 * pretty CSV ([article](https://www.stefaanlippens.net/pretty-csv.html))
 
 ```bash
