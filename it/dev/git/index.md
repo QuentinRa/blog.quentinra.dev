@@ -56,7 +56,7 @@ $ git config --global user.email "example@example.com"
 * ➡ Download the project locally
 
 ```bash
-$ git clone "URL"
+$ git clone URL
 ```
 
 * ➡ When working on your project
@@ -68,7 +68,7 @@ $ git pull
 # check what changed
 $ git status
 # add files to the backup
-$ git add toto tata
+$ git add .
 # snapshot named "I worked a lot" 
 $ git commit -m "I worked a lot"
 # send the snapshot to the server
@@ -120,6 +120,57 @@ $ gpg-connect-agent reloadagent /bye
 </details>
 
 On GitHub, verified commits are tagged with a tag "verified" next to them: ![Verified commit](_images/gpg.png)
+</div></div>
+
+<hr class="sep-both">
+
+## 🎉 Git commands 🎉
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+* **clone**: fetch a repository (=project) from the server
+
+```bash
+# basic clone
+$ git clone URL
+# clone and store the files in "folder"
+$ git clone URL folder
+# clone a branch
+$ git clone URL --branch name
+```
+
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## 💪 Advanced commands 💪
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+* Convert a normal folder to a Git repository.
+
+```bash
+# create .git
+$ git init
+$ git remote add origin CLONE_URL
+$ 
+```
+
+* Update the CLONE_URL <small>(ex: repository renamed/moved server-side)</small>
+
+```bash
+# get current clone URL
+$ git remote get-url origin
+# update the clone URL
+$ git remote set-url origin NEW_CLONE_URL
+```
+
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">

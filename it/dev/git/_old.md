@@ -12,8 +12,6 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
   * you're cloning it, creating a new branch, on which you'll work
   * then you are **merging** or dropping your changes
 
-* [set things up server-side](server-install.md)
-
 As a side note before starting, you can create aliases for a command like `git name` with the command `git config --global alias.name 'a command'` where a command could be `add .` or `commit`...
 
 <hr class="sl">
