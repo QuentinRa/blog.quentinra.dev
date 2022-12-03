@@ -32,6 +32,13 @@
         "desc": "A project framework/methodology following the Agile mindset.",
         "icon": "<i class=\"bi bi-shield-lock\"></i>",
         "hidden": false
+      },
+      {
+        "tag": "project/git/index.md",
+        "name": "Git projects",
+        "desc": "Notes about making projects using Git.",
+        "icon": "<i class=\"bi bi-github\"></i>",
+        "hidden": false
       }
     ],
     "🛸 IT Development 🛸": [

@@ -20,29 +20,4 @@
 
 Note: I'm putting a lot of files in a folder `.github`, because it makes my root folder cleaner, but you can put the files directly in your root folder (😐). You can also replace UPPER_CASE names with lowercase names. You can use `docs` instead of `.github`.
 
-This page [Working Open Workshop](https://mozillascience.github.io/working-open-workshop/github_for_collaboration/) is summarizing with a lot of pictures (issues, forking a repository, pull requests, etc.).
-
-> Note: On Github, you can add a description
-> 
-> * [on your profile page](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)
-> * [on your organization page](https://github.blog/changelog/2021-09-14-readmes-for-organization-profiles/)
-
-## Fancy notes
-
-* You can make a [Profile card](https://github.com/anuraghazra/github-readme-stats)
-
-* You can also show an [achievements badge](https://github.com/ryo-ma/github-profile-trophy)
-
-* You can look at your [most used languages](https://github.com/anuraghazra/github-readme-stats#top-languages-card)
-
-* And you can even find things like [joke cards](https://readme-jokes.vercel.app/api)
-
-* You can also **create a skyline** [with your contributions](https://skyline.github.com/).
-
-* You can bring [Microsoft IA - GitHub Copilot](https://copilot.github.com/) inside VSCode ([I enjoyed this feedback](https://www.sitepoint.com/github-copilot-ai-pair-programming/)).
-
 * As you could see with [Memorize](https://github.com/lgs-games/memorize), the repository's language is Markdown, which is unusual as Markdown isn't considered to be a programming language. You do that by tweaking the file [.gitattributes](https://github.com/lgs-games/memorize/blob/master/.gitattributes) while following [linguist documentation](https://github.com/github/linguist/tree/master/docs).
-
-* You can make a [card for a repository](https://github.com/anuraghazra/github-readme-stats#repo-card-exclusive-options)
-
-[![Memorize - card](https://github-readme-stats.vercel.app/api/pin?username=quentinra&repo=blog.quentinra.dev&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)](https://github.com/lgs-games/memorize)
