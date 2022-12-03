@@ -31,8 +31,8 @@ Language-specific
 
 Well, you will usually put a badge in your README (as explained in [Make Git project](../../../../archives/proj/make-git-project/index.md)), and the badge will be updated each time someone goes to the page (=each time the badge is rendered), so you will see inside if you have to go check the website or not.
 
-![GitHub external tools badges](../images/badges.png)
+![GitHub external tools badges](../_images/badges.png)
 
 Some websites can also **make comments in your Pull requests** (ex: Sonar cloud, LGTM, and Snyk).
 
-![GitHub external tools comment](../images/comment.png)
+![GitHub external tools comment](../_images/comment.png)

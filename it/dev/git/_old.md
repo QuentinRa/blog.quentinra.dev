@@ -62,7 +62,7 @@ By default, you are coding on a branch called `master` (or `main`). Let's explai
 
 > As a side note, when you have to resolve conflicts, the merge command's output will list what files need to be reviewed. In each file, you have the two different versions and need to delete the code you don't want to keep. Some software provides you an interface to do that quite easily such as [PHPStorm](https://www.jetbrains.com/help/phpstorm/resolving-conflicts.html#distributed-version-control-systems), or any software made by [JetBrains](../../../archives/tools/jetbrains/index.md).
 
-![Merge image - GitGraph.js](images/merge.png)
+![Merge image - GitGraph.js](_images/merge.png)
 
 > **Note**: if you think main is better than "master" then don't forget to add that to your config `git config --global init.defaultBranch main`.
 

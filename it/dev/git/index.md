@@ -48,9 +48,8 @@ $ git config --global user.email "example@example.com"
 
 * ➡️ Create a project on your GIT server
 
-```text
-On GitHub, see https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository
-```
+  * [Documentation on GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
+  * The process is quite similar for others
 
 </div><div>
 
@@ -75,6 +74,52 @@ $ git commit -m "I worked a lot"
 # send the snapshot to the server
 $ git push
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## 🔑 SSH/GPG Keys 🔑
+
+<div class="row row-cols-md-2"><div>
+
+Setting up SSH keys is a must in most projects. Without SSH keys, you have to log in everytime you want to pull/push to the server.
+
+```bash
+$ ssh-keygen -t ed25519 -C "email"
+# press ENTER every time.
+# You should add a passphrase to protect your key. If someone want to
+# use your key, the will be prompted to enter the passphrase.
+$ cat ~/.ssh/id_rsa.pub
+$ Copy the key in Settings > SSH Keys on GitHub/...
+```
+
+> [GitHub tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).<br>
+> Before, we were using `ssh-keygen -t rsa -b 4096 -C "email"`.
+</div><div>
+
+GPG keys are a bit different. They are used to sign your commits, and prove that you were the one that committed. It's possible for someone that has your email to usurp your identify after all.
+
+* [GitHub tutorial](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/generating-a-new-gpg-key)
+
+<details class="details-e">
+<summary>Increase the delay between passphrase prompts</summary>
+
+You will need to **write a passphrase almost every time you are committing**, unless you provided your passphrase in the last **10 minutes**. You can increase the time your passphrase is cached
+
+```bash
+# note the location of the file
+# this is usually ~/.gnupg/gpg-agent.conf
+$ gpg-agent --gpgconf-list | head -n1
+# create the file, or edit it
+# cached 8 hours
+$ echo "max-cache-ttl 28800" >> ~/.gnupg/gpg-agent.conf
+$ echo "default-cache-ttl 28800" >> ~/.gnupg/gpg-agent.conf
+# reload
+$ gpg-connect-agent reloadagent /bye
+```
+</details>
+
+On GitHub, verified commits are tagged with a tag "verified" next to them: ![Verified commit](_images/gpg.png)
 </div></div>
 
 <hr class="sep-both">
