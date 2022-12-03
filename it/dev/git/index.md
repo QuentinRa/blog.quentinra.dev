@@ -5,8 +5,11 @@
 When working on a project, here are a few problems
 
 * **code sharing** 📬: the need to allow other developers/contributors to read, or even edit the code
+
 * **a need for time travel** 🗃️: the developer removed some old long time ago, and now needs to access it again. There could also be a case in which there is a need to go back to a previous version
-* **duplicates** 🎭: a copy of a project to test something
+
+* **duplicates** 🎭: a copy of a project to test something, it takes places. And what if you want to merge them?
+
 * **computer dies** 😵: if your computer dies, and you don't have backups, then you lost your project for good
 </div><div>
 
@@ -33,7 +36,7 @@ Version-control is helpful to solve these, and Git is the most well-known one. T
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-Git allows us to create **commits** which are snapshots (`sauvegardes`) of your project. These commits are stored in **branches** 🪵, which are basically like different directories on your computer.
+Git allows us to create **commits** which are snapshots (`sauvegardes`) of your project. These commits are stored in **branches** 🪵, which are quite similar to local copies of the project.
 
 ```bash
 # install
@@ -231,6 +234,40 @@ $ git checkout sha1@{2021-05-05}
 
 <hr class="sep-both">
 
+## 🪵 Branches, and merges 🪵 
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+A branch is a copy of your project. The main branch is usually called **main**/**master** by default, and you will most likely work directly on it.
+
+Sometimes, to avoid breaking the main branch, we create other branches to add/edit a feature, to avoid breaking your teammates project.
+
+```bash
+$ git branch "branch_name"
+$ git checkout "branch_name"
+# shortcut to create + checkout
+$ git checkout -b "branch_name"
+# delete a branch
+$ git branch -d "branch_name"
+```
+</div><div>
+
+Once you're finished, you will want to merge your work with another copy (branch) of the project.
+
+```bash
+# ex: merge "branch_name" with main
+$ git checkout main
+$ git merge "branch_name"
+```
+
+⚠️ Unfortunately, it doesn't always work out nicely. If the main branch was changed since we created our copy, then it's likely that a file was changed on both branches. 
+
+If this happens, you will have to open every file, and resolve conflicts. Git will put in every file the two versions, and you will have to remove/keep what you want.
+
+</div></div>
+
+<hr class="sep-both">
+
 ## 💪 Advanced commands 💪
 
 <div class="row row-cols-md-2 mt-4"><div>
@@ -321,12 +358,18 @@ $ git diff --check <COMMIT> # markers/whitespace errors
 ```
 </details>
 
-<details class="details-e">
-<summary>&nbsp;<code>git config</code>: aliases</summary>
+<details class="details-n">
+<summary>&nbsp;<code>git config</code>: aliases, default branch...</summary>
 
 ```bash
+# add aliases
 $ git config --global alias.toto 'add .'
 $ git toto # same as 'git add .'
+```
+
+```bash
+# use "main" as the default branch
+$ git config --global init.defaultBranch main
 ```
 </details>
 

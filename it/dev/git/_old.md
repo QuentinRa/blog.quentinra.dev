@@ -4,39 +4,6 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 > **edit 21/08/2021**: A lot of content that was in this course (README, LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, ...), was moved to "[Make Git project](../../../archives/proj/make-git-project/index.md)". This is because I wanted to separate a bit more the commands and the concepts 🙇. Still, I kept a short description here, for those that are not interested in the advanced or the proper way to use these files.
 
-* usually the original is on the branch "master" or "main"
-* you're cloning it, creating a new branch, on which you'll work
-* then you are **merging** or dropping your changes
-
-<hr class="sr">
-
-## Main concepts
-
-Here are commands that you will use on a project, if you are not working alone (you may also use it when working alone, if you're consistent).
-
-* `git branch name`: create a branch "name"
-* `git checkout name`: move to the branch "name"
-* `git checkout -b name`: create and move
-* `git merge name`: merge the current branch with the branch "name"
-* `git branch -d name`: delete a branch
-
-By default, you are coding on a branch called `master` (or `main`). Let's explain what's a branch. If you're smart, you will want to always have a working version of your project ("main" here). In that case, if you want to add one functionality (let's call it "f1"), 
-
-* you will copy your project in "f1":  `git branch f1`
-* you will move to the copy: `git checkout f1`
-* [...] *work on the copy* (you can use add, commit, push, ...) [...]
-* you can go back to "main": `git checkout main`
-  * delete the new copy `git branch -d f1`
-  * or accept your changes `git merge f1`
-    * if "main" didn't change, no problems, the copy replace "main"
-    * but if "main" changed, then you may have to manually pick which parts of the two copies you want in the new "main" (=resolving conflicts).
-
-> As a side note, when you have to resolve conflicts, the merge command's output will list what files need to be reviewed. In each file, you have the two different versions and need to delete the code you don't want to keep. Some software provides you an interface to do that quite easily such as [PHPStorm](https://www.jetbrains.com/help/phpstorm/resolving-conflicts.html#distributed-version-control-systems), or any software made by [JetBrains](../../../archives/tools/jetbrains/index.md).
-
-![Merge image - GitGraph.js](_images/merge.png)
-
-> **Note**: if you think main is better than "master" then don't forget to add that to your config `git config --global init.defaultBranch main`.
-
 <hr class="sl">
 
 ## Good practices
@@ -84,7 +51,6 @@ Here are some functionalities that you can find on GitHub, but you may find thin
   * [Digital Object Identifiers](github/doi.md): researchers' stuff
   * [Referencing code in PR/issues](github/ref-code.md): reference a line or a block of code in a PR or an issue
 * Commits
-  * [Verified commits](notes/verified.md): add "verified" to your commits
   * [Multiples authors](notes/multiples.md): add multiples authors to a commit
   * [Referencing ...](notes/reference.md): reference a user, an issue, or a pull request
 
@@ -104,8 +70,6 @@ This page [Working Open Workshop](https://mozillascience.github.io/working-open-
 You may, like me, hear about these commands, so I'm adding them here, but unfortunately, I didn't use even one of them yet 🙄
 
 * **Searching a bug** with [git bisect](master/bisect.md) 🐛
-
-* **Make an empty commit** with [--allow-empty](master/empty.md) 🗑️
 
 * **Get information about the remote repository** with [git ls-remote](master/ls-remote.md) 🧐
 
