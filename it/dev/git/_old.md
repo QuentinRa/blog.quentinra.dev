@@ -8,17 +8,10 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 ## Introduction
 
-Git is a great tool that allows users to work on one project together, by allowing things as
-
-* **commits**: a save of your project
-* **branch**: a copy of your project
   * usually the original is on the branch "master" or "main"
   * you're cloning it, creating a new branch, on which you'll work
   * then you are **merging** or dropping your changes
 
-First, you need to
-
-* [set things up locally](local-install.md)
 * [set things up server-side](server-install.md)
 
 As a side note before starting, you can create aliases for a command like `git name` with the command `git config --global alias.name 'a command'` where a command could be `add .` or `commit`...
@@ -34,31 +27,6 @@ Please take note that every command is starting with "git", followed by one spac
 * [Save your local changes](commands/commit.md)
 * [Send your changes to the server](commands/push.md)
 * [Check the git status](commands/status.md)
-
-So to summarize, a basic usage would be
-
-```bash
-# 
-# Only done once, download the repository locally 
-#
-git clone "https://github.com/lgs-games/memorize.git"
-
-# Then inside the folder, you can do
-
-# get the latest version on the server
-git pull
-# ... work a lot ...
-# check what changed
-git status
-# notify git that these files should be added
-# to the save
-git add .
-# create a save named "I worked a lot"
-git commit -m "I worked a lot"
-# then send your saves=commits to the server
-# (or you can repeat work->add->commit)
-git push
-```
 
 As a side note
 
