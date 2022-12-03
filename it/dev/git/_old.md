@@ -14,27 +14,6 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 As a side note before starting, you can create aliases for a command like `git name` with the command `git config --global alias.name 'a command'` where a command could be `add .` or `commit`...
 
-<hr class="sl">
-
-## Basic usage
-
-Please take note that every command is starting with "git", followed by one space.
-
-* [Get your repository from server](commands/clone.md)
-* [Update your local version](commands/pull.md)
-* [Save your local changes](commands/commit.md)
-* [Send your changes to the server](commands/push.md)
-* [Check the git status](commands/status.md)
-
-As a side note
-
-```bash
-git add .
-git commit -m "I worked a lot"
-# is almost the same as (new files aren't added)
-git commit -am "I worked a lot"
-```
-
 <hr class="sr">
 
 ## Main concepts

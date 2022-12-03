@@ -139,9 +139,55 @@ $ git clone URL folder
 $ git clone URL --branch name
 ```
 
+* **pull/fetch**: get the latest version from the server
+
+```bash
+$ git pull
+# fetch locally, but don't apply any changes
+# useful when you want to check the code first
+$ git fetch
+```
+
+* **add**: select files that were added/modified since the previous snapshot/commit, and should be added to the next commit
+
+```bash
+# all added/modified
+$ git add .
+$ git add *
+# add one file
+$ git add file
+# add one folder
+$ git add folder
+```
 </div><div>
 
-...
+* **commit**: create a snapshot with a message
+
+```bash
+# open "vim" to enter the message
+$ git commit
+# pass the message directly
+$ git commit -m "message"
+$ git commit -m "This is a long message.
+Press SHIFT+ENTER to add another line.
+"
+# automatically add modified files
+$ git commit -am "message"
+# empty commit
+$ git commit -m "message" --allow-empty
+```
+
+* **status**: see files added/changed, commits that were not pushed to the server...
+
+```bash
+$ git status
+```
+
+* **push**: send your commits to the server
+
+```bash
+$ git push
+```
 </div></div>
 
 <hr class="sep-both">
@@ -156,7 +202,6 @@ $ git clone URL --branch name
 # create .git
 $ git init
 $ git remote add origin CLONE_URL
-$ 
 ```
 
 * Update the CLONE_URL <small>(ex: repository renamed/moved server-side)</small>
@@ -167,8 +212,75 @@ $ git remote get-url origin
 # update the clone URL
 $ git remote set-url origin NEW_CLONE_URL
 ```
-
 </div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## 🧺 Other commands 🧺
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+
+* See previous commits
+
+<details class="details-n">
+<summary>&nbsp;<code>git log</code>: the sad life of client-less dudes 😢</summary>
+
+```bash
+$ git log
+$ git log -n # last n
+$ git log --oneline # one line per commit
+$ git log --decorate # ...
+$ git log --stat # changed files
+$ git log -p # show diff
+$ git log --pretty=fuller # custom: https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-log.html#_pretty_formats
+$ git log --no-walk <COMMIT> # see one commit
+$ git log --graph # draw graph
+$ git log --grep="feat:" # filter by message
+$ git log -- README.md # filter by files
+```
+</details>
+
+<details class="details-n">
+<summary>&nbsp;<code>git shortlog</code>: quick recap of who committed</summary>
+
+```bash
+$ git shortlog
+```
+</details>
+
+<details class="details-n">
+<summary>&nbsp;<code>git reflog</code>: browse your commits</summary>
+
+```bash
+$ git reflog --date=iso
+```
+</details>
+</div><div>
+
+* Utilities
+
+<details class="details-n">
+<summary>&nbsp;<code>git show</code>: show your changes</summary>
+
+```bash
+$ git show
+$ git show -s --pretty=fuller HEAD
+```
+</details>
+
+<details class="details-n">
+<summary>&nbsp;<code>git diff</code>: diff between two commits</summary>
+
+```bash
+$ git diff
+$ git diff <COMMIT>
+$ git diff --check <COMMIT> # markers/whitespace errors
+```
+</details>
 
 ...
 </div></div>
