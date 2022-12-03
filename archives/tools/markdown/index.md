@@ -2,7 +2,7 @@
 
 Markdown, associated with the `.md` extension (like for the famous `README.md`), is commonly used in documentation files or to write simple documents... You can learn it in a couple of minutes. Here is an [amazing markdown guide](https://www.markdownguide.org/basic-syntax/).
 
-You could also write your website in Markdown, using Jekyll or whatever, as you could have read in the [GitHub Pages section](../../../it/dev/git/github/pages.md).
+You could also write your website in Markdown, using Jekyll or whatever, as you could have read in the [GitHub Pages section](../../../it/dev/git/_rip/pages.md).
 
 > All courses on this website are written in **Markdown** so you can contribute if you want to 🙇. Thanks if you do.
 

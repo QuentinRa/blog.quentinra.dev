@@ -170,10 +170,8 @@ $ git add folder
 # open "vim" to enter the message
 $ git commit
 # pass the message directly
+# press SHIFT+ENTER for multiple comments!
 $ git commit -m "message"
-$ git commit -m "This is a long message.
-Press SHIFT+ENTER to add another line.
-"
 # automatically add modified files
 $ git commit -am "message"
 # empty commit
@@ -272,15 +270,22 @@ If this happens, you will have to open every file, and resolve conflicts. Git wi
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-* **Convert a normal folder to a Git repository**
+* 📦 **Convert a normal folder to a Git repository**
+
+<details class="details-n">
+<summary>&nbsp;<code>git init</code></summary>
 
 ```bash
 # create .git
 $ git init
 $ git remote add origin CLONE_URL
 ```
+</details>
 
-* **Update the CLONE_URL** <small>(ex: repository renamed/moved server-side)</small>
+* 🗓️ **Update CLONE_URL** <small>(ex: repository renamed/moved, HTTP $\to$ SSH)</small>
+
+<details class="details-n">
+<summary>&nbsp;<code>git remote</code></summary>
 
 ```bash
 # get current clone URL
@@ -288,12 +293,13 @@ $ git remote get-url origin
 # update the clone URL
 $ git remote set-url origin NEW_CLONE_URL
 ```
+</details>
 </div><div>
 
-* **Find the commit that messed up your project**
+* 🔎 **Find the commit that messed up your project**
 
 <details class="details-n">
-<summary>&nbsp;<code>git bisect</code>: find a commit using binary search</summary>
+<summary>&nbsp;<code>git bisect</code></summary>
 
 If the project was working in **A**, and not working in **B**, then you can use `git bisect` to find the bad commit. This command uses a binary search algorithm (`recherche dichotomique`).
 
@@ -306,7 +312,20 @@ git bisect reset # exit
 ```
 </details>
 
-...
+* 🍒 **Pick a commit from another branch**
+
+<details class="details-n">
+<summary>&nbsp;<code>git cherry-pick</code></summary>
+
+If the project was working in **A**, and not working in **B**, then you can use `git bisect` to find the bad commit. This command uses a binary search algorithm (`recherche dichotomique`).
+
+```bash
+# pick a commit
+git cherry-pick SHA1
+# pick files but do not commit
+git cherry-pick SHA1 --no-commit
+```
+</details>
 </div></div>
 
 <hr class="sep-both">

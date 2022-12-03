@@ -2,7 +2,7 @@
 
 As a student, you may enjoy the benefits of the [GitHub student pack](https://education.github.com/pack).
 
-> **edit 21/08/2021**: A lot of content that was in this course (README, LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, ...), was moved to "[Make Git project](../../../archives/proj/make-git-project/index.md)". This is because I wanted to separate a bit more the commands and the concepts 🙇. Still, I kept a short description here, for those that are not interested in the advanced or the proper way to use these files.
+> **edit 21/08/2021**: A lot of content that was in this course (README, LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, ...), was moved to "[Make Git project](../../../../archives/proj/make-git-project/index.md)". This is because I wanted to separate a bit more the commands and the concepts 🙇. Still, I kept a short description here, for those that are not interested in the advanced or the proper way to use these files.
 
 <hr class="sl">
 
@@ -36,20 +36,19 @@ what I did
 Here are some functionalities that you can find on GitHub, but you may find things similar (if not exactly the same) on GitLab or Gogs.
 
 * General
-  * [Wikis](github/wiki.md): write documentation
-  * [Actions](github/actions.md): continuous integration (**ci**)
+  * [Wikis](wiki.md): write documentation
+  * [Actions](actions.md): continuous integration (**ci**)
     * [Heroku](notes/heroku.md): preconfigured continuous integration and deployment
     * [External websites for reviews](notes/tools.md): a bunch of tools such as tools to get automated feedback on your code
-    * [Dependabot](github/dependabot.md): get pull requests to update your dependencies when new versions are available
-  * [Pull requests (PR)](github/pull-requests.md): ask before merging
-  * [Issues](github/issues.md): got a question? Report a bug?
-  * [Pages](github/pages.md): host your website on GitHub
-  * [Project board](github/project.md): you can have your scrum board directly on GitHub
+    * [Dependabot](dependabot.md): get pull requests to update your dependencies when new versions are available
+  * [Pull requests (PR)](pull-requests.md): ask before merging
+  * [Issues](issues.md): got a question? Report a bug?
+  * [Pages](pages.md): host your website on GitHub
+  * [Project board](project.md): you can have your scrum board directly on GitHub
   * [Discussions](https://docs.github.com/en/discussions): you can allow discussions on GitHub
-  * [Fork](github/fork.md): you want to submit a pull request on a repository, but you can't create a branch (nor commit)
+  * [Fork](fork.md): you want to submit a pull request on a repository, but you can't create a branch (nor commit)
 * Special
-  * [Digital Object Identifiers](github/doi.md): researchers' stuff
-  * [Referencing code in PR/issues](github/ref-code.md): reference a line or a block of code in a PR or an issue
+  * [Referencing code in PR/issues](ref-code.md): reference a line or a block of code in a PR or an issue
 * Commits
   * [Multiples authors](notes/multiples.md): add multiples authors to a commit
   * [Referencing ...](notes/reference.md): reference a user, an issue, or a pull request
@@ -62,21 +61,6 @@ This page [Working Open Workshop](https://mozillascience.github.io/working-open-
 > 
 > * [on your profile page](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)
 > * [on your organization page](https://github.blog/changelog/2021-09-14-readmes-for-organization-profiles/)
-
-<hr class="sl">
-
-## Git master
-
-You may, like me, hear about these commands, so I'm adding them here, but unfortunately, I didn't use even one of them yet 🙄
-
-* **Searching a bug** with [git bisect](master/bisect.md) 🐛
-
-* **Get information about the remote repository** with [git ls-remote](master/ls-remote.md) 🧐
-
-* **Editing your commit history** with [git rebase](master/rebase.md) 😎
-
-* **Pick up commits with** [git cherry-pick](master/cherry-pick.md) 🍒
-<hr class="sl">
 
 ## Fancy notes
 
