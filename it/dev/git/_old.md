@@ -4,15 +4,9 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 > **edit 21/08/2021**: A lot of content that was in this course (README, LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, ...), was moved to "[Make Git project](../../../archives/proj/make-git-project/index.md)". This is because I wanted to separate a bit more the commands and the concepts 🙇. Still, I kept a short description here, for those that are not interested in the advanced or the proper way to use these files.
 
-<hr class="sr">
-
-## Introduction
-
-  * usually the original is on the branch "master" or "main"
-  * you're cloning it, creating a new branch, on which you'll work
-  * then you are **merging** or dropping your changes
-
-As a side note before starting, you can create aliases for a command like `git name` with the command `git config --global alias.name 'a command'` where a command could be `add .` or `commit`...
+* usually the original is on the branch "master" or "main"
+* you're cloning it, creating a new branch, on which you'll work
+* then you are **merging** or dropping your changes
 
 <hr class="sr">
 
@@ -118,19 +112,6 @@ You may, like me, hear about these commands, so I'm adding them here, but unfort
 * **Editing your commit history** with [git rebase](master/rebase.md) 😎
 
 * **Pick up commits with** [git cherry-pick](master/cherry-pick.md) 🍒
-
-Instead of providing a SHA1, you may use one of these shortcuts
-
-* **HEAD**: the last commit
-* **@**: the last commit
-* **HEAD^**: the commit before HEAD <small>(not working well on Windows)</small>
-* **HEAD^n**: the n-th commit before HEAD <small>(not working well on Windows)</small>
-* **HEAD~n**: the n-th commit before HEAD (same as ^)
-* **SHA1**: either the sort SHA1 such as `54b01d4a` or the whole SHA1
-* **HEAD@{two month ago}**: the closed commit that we made after a date <small>(you may add "" on Windows)</small>
-* **HEAD@{2021-05-05}**: the closest commit after a date (YYYY-MM-DD) <small>(you may add "" on Windows)</small>
-* **origin/master@{two month ago}**: same as before, but we can add a branch
-
 <hr class="sl">
 
 ## Fancy notes
