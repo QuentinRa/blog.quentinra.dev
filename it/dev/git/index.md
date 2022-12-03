@@ -272,7 +272,7 @@ If this happens, you will have to open every file, and resolve conflicts. Git wi
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-* Convert a normal folder to a Git repository.
+* **Convert a normal folder to a Git repository**
 
 ```bash
 # create .git
@@ -280,7 +280,7 @@ $ git init
 $ git remote add origin CLONE_URL
 ```
 
-* Update the CLONE_URL <small>(ex: repository renamed/moved server-side)</small>
+* **Update the CLONE_URL** <small>(ex: repository renamed/moved server-side)</small>
 
 ```bash
 # get current clone URL
@@ -289,6 +289,22 @@ $ git remote get-url origin
 $ git remote set-url origin NEW_CLONE_URL
 ```
 </div><div>
+
+* **Find the commit that messed up your project**
+
+<details class="details-n">
+<summary>&nbsp;<code>git bisect</code>: find a commit using binary search</summary>
+
+If the project was working in **A**, and not working in **B**, then you can use `git bisect` to find the bad commit. This command uses a binary search algorithm (`recherche dichotomique`).
+
+```bash
+git bisect start A B
+git bisect bad # not this one
+git bisect good # it works here
+git bisect skip # skip
+git bisect reset # exit
+```
+</details>
 
 ...
 </div></div>
@@ -337,7 +353,7 @@ $ git reflog --date=iso
 </details>
 </div><div>
 
-* Utilities
+* Random Utilities
 
 <details class="details-n">
 <summary>&nbsp;<code>git show</code>: show your changes</summary>
@@ -373,6 +389,17 @@ $ git config --global init.defaultBranch main
 ```
 </details>
 
+<details class="details-n">
+<summary>&nbsp;<code>git ls-remote</code>: get information about the remote repository</summary>
+
+```bash
+git ls-remote
+git ls-remote --heads
+git ls-remote --tags
+git ls-remote --heads --tags
+```
+</details>
+
 </div></div>
 
 <hr class="sep-both">
@@ -384,5 +411,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [git-scm/doc](https://git-scm.com/doc)
+* Digital Object Identifiers (see [GitHub article](https://guides.github.com/activities/citable-code/))
 </div><div>
 </div></div>

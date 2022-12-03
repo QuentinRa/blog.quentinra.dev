@@ -177,3 +177,15 @@ The shortest way to find the menu we are looking for is by writing PATH in the s
 
 Click on a line, such as `Path`, then Edit. You can add entries to the Path!
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [winpty](https://github.com/rprichard/winpty)
+</div><div>
+</div></div>
