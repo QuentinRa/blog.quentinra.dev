@@ -429,7 +429,25 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [git-scm/doc](https://git-scm.com/doc)
+Stuff
+
 * Digital Object Identifiers (see [GitHub article](https://guides.github.com/activities/citable-code/))
+* GitGraph.js
+
+Learn
+
+* [git-scm/doc](https://git-scm.com/doc)
+* [github.com](https://github.com/git-guides/)
+* [adopteungit](https://github.com/lgiraudel/adopteungit)
+* [dubrayn](https://dubrayn.github.io/IPS-DEV/git.html#1)
+* [Git & Github Desktop](https://docs.google.com/presentation/d/1vtK6LoqwF4rQQZZy-ovuEgsYUwwMRXsqDVMOjAPSBt0/edit#slide=id.p) and [learn-git-milestones](https://github.com/omundy/learn-git-milestones)
 </div><div>
+
+Cheatsheets
+
+* [gitlab.com](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
+* [education.github.com](https://education.github.com/git-cheat-sheet-education.pdf)
+* [training.github.com](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
+* [cheat-sheets.org](http://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf)
+* [atlassian.com](https://www.atlassian.com/dam/jcr:e7e22f25-bba2-4ef1-a197-53f46b6df4a5/SWTM-2088_Atlassian-Git-Cheatsheet.pdf)
 </div></div>

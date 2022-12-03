@@ -1,40 +1,5 @@
 # Version-control using Git
 
-As a student, you may enjoy the benefits of the [GitHub student pack](https://education.github.com/pack).
-
-> **edit 21/08/2021**: A lot of content that was in this course (README, LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, ...), was moved to "[Make Git project](../../../../archives/proj/make-git-project/index.md)". This is because I wanted to separate a bit more the commands and the concepts 🙇. Still, I kept a short description here, for those that are not interested in the advanced or the proper way to use these files.
-
-<hr class="sl">
-
-## Good practices
-
-**Atomic commits**: one commit means one change, such as adding one functionality. Do not make hundreds of changes in one commit, making it hard to find what you did. You can select the lines of a file you want to commit using `git add -p file`.
-
-**Short-Long description**: you should make a short and a long description of your commits, like that
-
-```bash
-git commit -m "a short inline description
-
-A long description, where I further describe
-what I did
-"
-```
-
-**README.md**: put a README in all of your projects, that is the start of a great adventure.
-
-**LICENSE**: you may also put a LICENSE even if you don't want to put restrictions on your code, to protect yourself from complaints (MIT LICENSE is good for that, or The Unlicense). You should [pick your license here](https://choosealicense.com/).
-
-**.gitignore**: you may not want to commit some files like high-churn ones or big files... Create a file called "gitignore" is a good practice, you can
-
-* [generate a gitignore here](https://www.toptal.com/developers/gitignore).
-* [use a template here](https://github.com/github/gitignore)
-
-<hr class="sr">
-
-## Advanced concepts
-
-Here are some functionalities that you can find on GitHub, but you may find things similar (if not exactly the same) on GitLab or Gogs.
-
 * General
   * [Wikis](wiki.md): write documentation
   * [Actions](actions.md): continuous integration (**ci**)
@@ -80,30 +45,4 @@ This page [Working Open Workshop](https://mozillascience.github.io/working-open-
 
 * You can make a [card for a repository](https://github.com/anuraghazra/github-readme-stats#repo-card-exclusive-options)
 
-[![Memorize - card](https://github-readme-stats.vercel.app/api/pin?username=lgs-games&repo=memorize&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)](https://github.com/lgs-games/memorize)
-
-<hr class="sr">
-
-## Cheatsheet
-
-You may look at these cheat sheets
-
-* [GitLab Cheatsheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
-* [GitHub Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
-* [GitHub Cheatsheet (2)](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
-* [cheat-sheets.org](http://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf)
-* [Atlassian Cheatsheet](https://www.atlassian.com/dam/jcr:e7e22f25-bba2-4ef1-a197-53f46b6df4a5/SWTM-2088_Atlassian-Git-Cheatsheet.pdf)
-
-<hr class="sl">
-
-## Sources
-
-* [GitHub git guide](https://github.com/git-guides/)
-* [changing remote](https://docs.github.com/en/github/using-git/changing-a-remotes-url)
-* [add ssh key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-* http://adopteungit.fr/ (reported down as of 08-2021, [GitHub](https://github.com/lgiraudel/adopteungit))
-* [git_commits_atomiques](https://francoisbrucker.github.io/cours_informatique/cours/dfs/git_commits_atomiques.html)
-* [git tutorial](https://dubrayn.github.io/IPS-DEV/git.html#1)
-* <https://github.com/nicoespeon/gitgraph.js/>
-* [Git & GitHub Desktop](https://docs.google.com/presentation/d/1vtK6LoqwF4rQQZZy-ovuEgsYUwwMRXsqDVMOjAPSBt0/edit#slide=id.gad119073e1_0_6)
-* [learn-git-milestones](https://github.com/omundy/learn-git-milestones)
+[![Memorize - card](https://github-readme-stats.vercel.app/api/pin?username=quentinra&repo=blog.quentinra.dev&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)](https://github.com/lgs-games/memorize)
