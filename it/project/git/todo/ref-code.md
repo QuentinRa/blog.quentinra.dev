@@ -1,6 +1,6 @@
 # Referencing code in PR/issues
 
-[Go back](..#advanced-concepts)
+[Go back](../../../dev/git#advanced-concepts)
 
 You can reference some lines of code in an issue or a pull request, as long as they are from a file in this repository.
 

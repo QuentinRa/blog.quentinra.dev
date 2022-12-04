@@ -1,6 +1,6 @@
 # Edit your commit history
 
-[Go back](../index.md#git-master)
+[Go back](../../../dev/git/index.md#git-master)
 
 You can edit your commit history using `git rebase`, to merge commits, edit a message, remove a commit, etc.
 

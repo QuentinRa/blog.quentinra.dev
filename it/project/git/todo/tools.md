@@ -1,6 +1,6 @@
 # External websites for reviews
 
-[Go back](../index.md#advanced-concepts)
+[Go back](../../../dev/git/index.md#advanced-concepts)
 
 This is my list of websites that I heard of and used for most of them. You can log in using your GitHub account, and make them review your code (usually, it's free for an open-source project, paid for others).
 

@@ -1,61 +1,4 @@
-# Make Git project
-
-This course is a follow-up of [make a project](../make-a-project/index.md). We will talk about a lot of files used in GIT repositories, and introduce other courses such as HMI, Design Patterns, Code guidelines, Tests, etc.
-
-This is not only a course that is explaining to you "how to make a Git project", since I wanted to add knowledge for IT project too. This is a gathering of
-
-* explanations about the most used files in GIT
-* explanations about courses that you might want to look at
-* a lot of tips about IT (and Git) projects (versioning, ...)
-
-This is focused on providing help for open-source projects, but I'm sure that you'll be able to tell what you can do (or not) according to what kind of project you're doing.
-
-<hr class="sl">
-
-## About other courses
-
-If you are planning to make a project with a team, you should also look at **AGILE-SCRUM** methodology (or Agile methodologies), to replace the traditional V-Model.
-
-If you are planning to make something clean, and well-made, then you should look at 
-
-* **Design patterns**: typical implementations of some concepts
-* **Methodologies**: some methodologies you might want to try
-* **Code guidelines**: make your code consistent (how parameters are declared? Language? Indents? ...)
-* **Tests**: automated tests to test that your software is working as intended, even after some updates
-* **HMI**: carefully think about your interface
-* **Frameworks**: frameworks that are **actively maintained** might help you save time, while making your code more maintainable and secure
-
-And finally, you should look at the **project management course** (namely "Make a project"), as it explains things like "how to write specifications", or how you can organize your project.
-
-<hr class="sr">
-
-## README.md/README.rst
-
-This is a file you must already know. We are putting a README.md in **Markdown** (or README.rst, if you enjoy ReStructuredText) to explain
-
-* What's the project's **name**
-* What's the project's **goal**/ **description** of the project
-* **Why** did you made this project? Who is your **audience**?
-* How we can **install the project**? **Run** it? Test it?
-* Where is the **documentation**? (you got one, right? Right? 🧐)
-  * You should add **some samples of code**
-  * Of course, you should generate the code's documentation (like the Javadoc, the JSDoc, ...)
-  * Write runtimes usages (global variables, the usage of a session for a website, ...)
-  * ex: `Daux.io`, `Read the Docs`, `Doxygen`, ... 
-* Some **badges** such as this one ![badge](https://img.shields.io/github/license/lgs-games/memorize) ([more explanations here](readme/badges.md))
-* You may add **pictures/a GIF** showing an **example** of what's the project doing
-* A link to a demo (if you have one)
-* Credits/Authors and core maintainers (with a way to contact them)
-
-You may also
-
-* Add the contributors (some are doing it)
-* Add a link to other files (such as the LICENSE, or CONTRIBUTING)
-* [Read this website](https://www.makeareadme.com/)
-
-<hr class="sl">
-
-## Commits
+# Commits
 
 In CONTRIBUTING.md, as you will see later, you have to define guidelines/a style for things such as commits. For instance, some are adding smileys and so [as you can see here](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages).
 
@@ -80,22 +23,6 @@ with
 * **footer**: you may add "BREAKING CHANGE" (=MAJOR), Co-authored-by, Reviewed-by, Refs etc.
 
 You may check that your message [is valid using commitlint](https://github.com/conventional-changelog/commitlint). If you don't understand **MAJOR.MINOR.PATCH**, check the section about versioning (a bit further).
-
-<hr class="sr">
-
-## LICENSE/LICENSE.txt
-
-You **must** add a LICENSE, the most used ones being
-
-* the MIT license
-* the Apache license, version 2.0
-* the [creative common kinds of licenses](https://creativecommons.org/)
-* Copyright (default - no license)
-
-Pick the one that is corresponding to what you want 
-
-* [choosealicense.com](https://choosealicense.com/)
-* [Creative Commons](https://creativecommons.org/choose/)
 
 <hr class="sl">
 

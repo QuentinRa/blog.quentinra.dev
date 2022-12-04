@@ -22,9 +22,28 @@ This imaged tutorial about [GitHub for collaboration](https://mozillascience.git
 
 #### README.md
 
-...
+The README.md <small>(or README.rst)</small> is a file in Markdown describing the project, how to install it, how to use it... [See makeareadme.com](https://www.makeareadme.com/)
+
+* ✍️ What's the project's name and goal/description
+* 🧸 How can we install it? Run it? Test it?
+  * Add examples (GIF, Input-Output, demo...)
+  * Provide a link to some documentation
+* 📦 Why have you made this project? Who is your audience?
+* 🌳 Credits, maintainers, contributors, License...
+
+> A lot of developers are using badges to show some information about the project such as ![badge](https://img.shields.io/github/license/quentinra/blog.quentinra.dev). See [shields.io](https://shields.io/), [badgen.net](https://badgen.net/), [markdown-badges](https://github.com/Ileriayo/markdown-badges), and [unmaintained.tech](https://unmaintained.tech/).
 </div><div>
 
+#### LICENSE / LICENSE.txt
+
+A license describes what others can do with your code. No license means that your code is copyrighted. We usually use these
+
+* the MIT license ⭐
+* the Apache license, version 2.0
+* the [creative common kinds of licenses](https://creativecommons.org/)
+* [Creative Commons](https://creativecommons.org/choose/)
+
+> See [choosealicense.com](https://choosealicense.com/), and especially the [licenses](https://choosealicense.com/licenses/) page.
 ...
 </div></div>
 
