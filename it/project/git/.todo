@@ -1,0 +1,110 @@
+https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-code
+https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
+
+# Edit your commit history
+
+[Go back](../../../dev/git/index.md#git-master)
+
+You can edit your commit history using `git rebase`, to merge commits, edit a message, remove a commit, etc.
+
+```bash
+git rebase -i
+```
+
+You will usually select a few commits, you could use this to check the last 10 commits
+
+```bash
+git rebase -i HEAD~10
+```
+
+<hr class="sl">
+
+## How does it work?
+
+First, using `-i`, you are using the interactive mode. This is opening an editor with "pick SHORT_SHA1 commit_message". You can rearrange commits (move lines), and replace pick by
+
+* **pick** = use commit
+* reword = use commit, but edit the commit message
+* **edit** = use commit, but stop for amending
+* **squash** = use commit, but meld into previous commit
+* fixup = like "squash", but discard this commit's log message
+* exec = run command (the rest of the line) using shell
+* drop = remove commit
+* ...
+
+You may have to press "i" to enable input, and CTRL-C, then `:wq` to save and exit (or `q!` to exit without saving). If you squashed commits, the editor will open itself again, and allow you to merge the commits messages.
+
+```bash
+# since the editor didn't open itself for me, I did
+# check
+git status
+# modify commit
+git commit --amend
+# next task
+git rebase --continue
+```
+
+# Referencing code in PR/issues
+
+[Go back](../../../dev/git#advanced-concepts)
+
+You can reference some lines of code in an issue or a pull request, as long as they are from a file in this repository.
+
+* go to a file
+* click on the line number of the line you want to reference
+* you may click on a number, then another while pressing shift to select an internal
+* click on "..."
+* copy permalink
+* then simply paste the code into an issue/pull request
+
+This is a follow-up of this [tutorial](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-code), and officially [explained here]().
+
+<hr class="sl">
+
+## Referencing Markdown files
+
+The format of a referencing link is
+
+* "PERMALINK#LX" (a line $X$)
+* "PERMALINK#LX-LY" (an interval of lines $X \to Y$)
+
+And you can get the permalink of a file with the "..." next to "Go to file". You can "edit the file", to get the lines numbers.
+
+# External websites for reviews
+
+[Go back](../../../dev/git/index.md#advanced-concepts)
+
+This is my list of websites that I heard of and used for most of them. You can log in using your GitHub account, and make them review your code (usually, it's free for an open-source project, paid for others).
+
+* [sonarcloud](https://sonarcloud.io) (the **BEST**, quite a lot of feedback)
+* [codefactor](https://www.codefactor.io/) (analysis, good)
+* [deepsource](https://deepsource.io/) (seems good, but no issues were found in my project 😐)
+* [codetriage](https://www.codetriage.com/) (get issues in your inbox)
+* [IssueHunt](https://issuehunt.io/) (tackle issues, not really related to this page 🙄)
+* [codecov](https://about.codecov.io/) (code coverage)
+* [weblate](https://weblate.org/) (not used, translations)
+* [snyk](https://snyk.io/) (vulnerabilities, **good**)
+* [codacy](https://www.codacy.com/) (I didn't manage to install this one)
+* [lgtm](https://lgtm.com/) (basic feedback)
+* [scrutinizer-ci](https://scrutinizer-ci.com/) (paid only, not tested)
+* [CircleCI](https://circleci.com/) (not tested, ci)
+
+Language-specific
+
+* [StyleCI](https://styleci.io/) (style for PHP/CSS/JS)
+* [packagist](https://packagist.org/) (PHP packages)
+* [deps.rs](https://deps.rs/) (Rust dependencies alerts)
+* [DavidDM](https://david-dm.org/) (Node.js dependencies)
+* [PackageQuality](https://packagequality.com/) (npm packages)
+
+<hr class="sl my-4">
+
+> **BUT** it's tiring to check each website if they got news? or How is it automated?
+
+Well, you will usually put a badge in your README (as explained in [Make Git project](index.md)), and the badge will be updated each time someone goes to the page (=each time the badge is rendered), so you will see inside if you have to go check the website or not.
+
+![GitHub external tools badges](../_images/badges.png)
+
+Some websites can also **make comments in your Pull requests** (ex: Sonar cloud, LGTM, and Snyk).
+
+![GitHub external tools comment](../_images/comment.png)

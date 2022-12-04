@@ -45,6 +45,23 @@ A license describes what others can do with your code. No license means that you
 
 > See [choosealicense.com](https://choosealicense.com/), and especially the [licenses](https://choosealicense.com/licenses/) page.
 ...
+
+<br>
+
+#### 📦 .gitignore
+
+A "git ignore" is a really useful files to avoid uploading big or sensitive files on GitHub. You can 
+
+* Generate one: [gitignore.io](https://www.toptal.com/developers/gitignore).
+* Find a template: [gitignore](https://github.com/github/gitignore)
+
+```ini
+*.zip # ignore every zip
+!toto.zip # don't ignore toto.zip
+data/ # ignore every folder called 'data'
+data/* # ignore everything inside folders called 'data'
+/data # ignore only the folder data in the root directory
+```
 </div></div>
 
 <hr class="sep-both">
@@ -74,6 +91,12 @@ What behavior is tolerated? What's behavior isn't tolerated?
 
 * [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) (the most used one, ![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg))
 * Write your own
+
+<br>
+
+#### 🍒 SECURITY.md
+
+This file explains which versions are eligible for security patches, for how long they will be receiving patches (LTS/...), and what's the process to report a vulnerability.
 </div><div>
 
 #### 🍒 CHANGELOG.md
@@ -91,9 +114,12 @@ Keep track of every change. See [keepachangelog.com](https://keepachangelog.com/
 
 <br>
 
-#### 🍒 SECURITY.md
+#### 🍒 ROADMAP.md
 
-This file explains which versions are eligible for security patches, for how long they will be receiving patches (LTS/...), and what's the process to report a vulnerability.
+A roadmap help other know the direction that the project will take, like what features are you planning to add.
+
+* What's the project goal (short/mid/long term)?
+* How can people can get involved?
 </div></div>
 
 <hr class="sep-both">
@@ -102,7 +128,7 @@ This file explains which versions are eligible for security patches, for how lon
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-* ➡️ **Issues**
+#### 🏹 Issues
 
 When someone found a bug/problem with the project, they will usually create an issue. [See GitHub tutorial](https://guides.github.com/features/issues/).
 
@@ -111,18 +137,22 @@ On GitHub/GitLab/???, you can create issue templates.
 > See <kbd>Options > Features > Issues</kbd> on GitHub.<br>
 > See [GitHub Issue templates](https://github.com/stevemao/github-issue-templates) (3.5k ⭐)
 
-* ➡️ **Wiki**
+<br>
+
+#### 🏹 Wiki
 
 The wiki is used by developers to write some primitive documentation that is store "near" your project. You can add images inside, that are stored in your repository <small>(try with/without a leading `/`)</small>.
 
 You can clone your wiki with `.wiki.git` instead of `.git`!
 
-* ➡️ **Forks**
+<br>
+
+#### 🏹 Forks
 
 Usually, repositories do not allow everyone to contribute. Instead, they can fork the repository, which will create a copy that they own. They will work on it, and they will be able to create a Pull Request to the original repository, that may be merged by the original repository's maintainers. [See GitHub tutorial](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
 </div><div>
 
-* ➡️ **Pull Requests** (PR) / Merge requests
+#### 🏹 Pull Requests (PR) / Merge requests
 
 In most cases, developers establish a formal procedure to merge branches into main. Anyone will have to create a Pull Request asking if they can merge. Then, reviewers will check the code, and allow master/main to be modified. [See GitHub tutorial](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
@@ -130,7 +160,9 @@ On GitHub/???, you can create pull requests templates.
 
 > See [GitHub Issue templates](https://github.com/stevemao/github-issue-templates) (3.5k ⭐)
 
-* ➡️ **References** 🏹
+<br>
+
+#### 🏹 References
 
 I'm still not sure if this is only available on GitHub or not, but every issue/pull request as an Id, for instance, `#1`. You can reference this Id anywhere else, for instance, inside a commit! At least on GitHub, on the issue/Pull request page, we will see the referencing commit SHA1.
 
@@ -166,7 +198,15 @@ The most used way to give name versions of your project is the [Semantic Version
 
 #### 🌞 **Commits**
 
-...
+Commits must be **atomic**, meaning you shouldn't do more than one thing per commit <small>(ex: adding a small feature)</small>. The second thing is properly naming commits:
+
+* 📃 Usually, we add a type before any message, followed by `:`. <small>(build, docs, feat (=MINOR), fix (=PATCH), style, test, chore, ci, perf, refactor, revert, security, and deps)</small>
+* ✍️Then, we add the commit message, with is a short description
+* 📦  We may then leave a blank line, and add a body describing more the commit, such as adding a list of changes, or labels such as `Co-authored-by`, `Reviewed-by`, `Refs`...
+
+> See [Conventional Commits](https://www.conventionalcommits.org/en/) and [
+commitlint](https://commitlint.js.org/#/).<br>
+> Example: [Atom - Git commit messages](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages) or [commitment](https://github.com/thiagodp/commitment/blob/master/rules-en.md).
 </div></div>
 
 <hr class="sep-both">
@@ -175,7 +215,7 @@ The most used way to give name versions of your project is the [Semantic Version
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-* ➡️ **GitHub Actions**
+#### ✍️GitHub Actions
 
 GitHub Actions are some code that is run every time a commit/a pull request/... is made. This is up to you. For instance, you could run some tests. [See this tutorial](https://docs.github.com/en/actions/quickstart).
 
@@ -193,9 +233,45 @@ Others
 
 * [actions/setup-java](https://github.com/actions/setup-java): install Java
 </details>
+
+<br>
+
+#### ✍️Co-authors
+
+If you know someone else email, then you can include them as author of a commit. Note that the one creating the commit (you) will be marked as commiter, so there will always be at least two names, unless you directly edit the GIT configuration 🚓.
+
+```bash
+git commit -m "xxx
+
+Co-authored-by: name <name@example.com>"
+```
+
+<br>
+
+#### ✍️CODEOWNERS
+
+This file is a dictionary with patterns associated with GitHub usernames. Repositories can be configured so that if a file owned by a codeowner is modified, then inside the Pull Request, the CodeOwner will be asked for a review. See [GitHub tutorial](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners).
+
+```
+*       @QuentinRa
+```
+
+* You may add [CITATION.cff](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-citation-files) to tell others how to cite your project.
+
 </div><div>
 
-* ➡️ **Dependabot**
+#### ✍️Git attributes
+
+While the file `.gitattribute` is not exclusive to GitHub, it is used by GitHub [linguist](https://github.com/github/linguist/tree/master/docs) if we want to edit the rules that GitHub uses to determine languages used by our project.
+
+```
+# Ex: add Markdown files in the language list
+*.md linguist-documentation=false linguist-detectable=true
+```
+
+<br>
+
+#### ✍️Dependabot
 
 A bot checking your dependencies, and creating pull-request with the new version that you're suggested to update to. [See this tutorial](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuring-dependabot-version-updates#enabling-dependabot-version-updates).
 
@@ -224,9 +300,20 @@ updates:
 ```
 </details>
 
-* ➡️ **Projects**
+<br>
+
+#### ✍️Projects
 
 This is a feature that includes Agile-Scrum Scrum boards. It's actually a bit more complex and less convenient. You can create **tasks**, but you can't do much with them. Once you convert them to **issues**, you can assign people to them along with tags. They are useful to track/sort **issues** and keep track of **milestones**.
+
+<br>
+
+#### ✍️Random
+
+List of stuff that I have yet to test out.
+
+* [CITATION files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files) (👻)
+* **Templates**: see [git-repository-template](https://github.com/misitebao/template-git-repository) / [opensource-template](https://github.com/EmbarkStudios/opensource-template)
 </div></div>
 
 <hr class="sep-both">
@@ -267,11 +354,19 @@ Stuff that I found, but never read/used yet.
 Continuous Integration (CI)
 
 * [Heroku](https://www.heroku.com/home) / [Heroku (student)](https://www.heroku.com/students)
+* Git Hooks and [husky](https://github.com/typicode/husky)
 
 Badges
 
 * [OpenSSF Best Practices Badge](https://github.com/coreinfrastructure/best-practices-badge)
 </div><div>
 
+Random
 
+* [opensource.guide](https://opensource.guide/)
+* [best practices CII/FLOSS](https://bestpractices.coreinfrastructure.org/fr)
+* [best practices CII/FLOSS - GitHub](https://github.com/coreinfrastructure/best-practices-badge)
+* [Government best practices](https://government.github.io/best-practices/)
+* [Working Open Workshop](https://mozillascience.github.io/working-open-workshop/)
+* [fossa](https://fossa.com/) (+badge)
 </div></div>

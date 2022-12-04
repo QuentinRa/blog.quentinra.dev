@@ -1,5 +1,7 @@
 # ⚒️ Random Tools ⚒️
 
+As a student, you may enjoy the benefits of the [GitHub student pack](https://education.github.com/pack).
+
 <hr class="sep-both">
 
 ## 🧑‍🏫 Create polls/forms/... 🧑‍🏫

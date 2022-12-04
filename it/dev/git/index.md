@@ -162,6 +162,8 @@ $ git add *
 $ git add file
 # add one folder
 $ git add folder
+# select the part of a file that you want to add
+$ git add -p file
 ```
 </div><div>
 
