@@ -1,3 +1,7 @@
 Note: I'm putting a lot of files in a folder `.github`, because it makes my root folder cleaner, but you can put the files directly in your root folder (😐). You can also replace UPPER_CASE names with lowercase names. You can use `docs` instead of `.github`.
 
 As you could see with [Memorize](https://github.com/lgs-games/memorize), the repository's language is Markdown, which is unusual as Markdown isn't considered to be a programming language. You do that by tweaking the file [.gitattributes](https://github.com/lgs-games/memorize/blob/master/.gitattributes) while following [linguist documentation](https://github.com/github/linguist/tree/master/docs).
+
+---
+
+https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-code
