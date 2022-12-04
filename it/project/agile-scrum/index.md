@@ -300,7 +300,7 @@ Check the **progress**. What each one did **yesterday**, what are they planning 
 
 <hr class="sep-both">
 
-### 3. Sprint review
+## 3. Sprint review
 
 <div class="row row-cols-md-2"><div>
 
@@ -317,7 +317,7 @@ Some organizations are making a weekly demo with the team, so that everyone know
 
 <hr class="sep-both">
 
-### 4. Sprint retrospective
+## 4. Sprint retrospective
 
 <div class="row row-cols-md-2"><div>
 
