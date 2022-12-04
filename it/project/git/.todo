@@ -1,5 +1,7 @@
 # Good practices
 
+https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
+
 As a student, you may enjoy the benefits of the [GitHub student pack](https://education.github.com/pack).
 
 **Atomic commits**: one commit means one change, such as adding one functionality. Do not make hundreds of changes in one commit, making it hard to find what you did. You can select the lines of a file you want to commit using `git add -p file`.

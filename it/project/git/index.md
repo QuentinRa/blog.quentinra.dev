@@ -16,6 +16,34 @@ This imaged tutorial about [GitHub for collaboration](https://mozillascience.git
 
 <hr class="sep-both">
 
+## 📦 Basic files 📦
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+#### README.md
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## 🍒 Special files 🍒
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+#### CONTRIBUTING.md
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 🏹 Server-side features 🏹
 
 <div class="row row-cols-md-2 mt-4"><div>
@@ -28,6 +56,12 @@ On GitHub/GitLab/???, you can create issue templates.
 
 > To create a template, go to <kbd>Options > Features > Issues</kbd>.<br>
 > See [GitHub Issue templates](https://github.com/stevemao/github-issue-templates) (3.5k ⭐)
+
+* ➡️ **Wiki**
+
+The wiki is used by developers to write some primitive documentation that is store "near" your project. You can add images inside, that are stored in your repository <small>(try with/without a leading `/`)</small>.
+
+You can clone your wiki with `.wiki.git` instead of `.git`!
 
 * ➡️ **Forks**
 

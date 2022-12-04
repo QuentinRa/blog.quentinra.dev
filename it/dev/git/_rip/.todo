@@ -1,14 +1,7 @@
-- git tag
-- git reset
-- git filter-branch
-- git config credential.name "username"
-git clone -b start_kotlin https://github.com/googlecodelabs/android-workmanager
-- https://utteranc.es/
-
 -----------------------
 GITHUB
 -----------------------
-
+https://github.com/utterance/utterances
 https://starchart.cc/
 
 https://github.com/ombratteng

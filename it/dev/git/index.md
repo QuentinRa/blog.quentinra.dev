@@ -139,6 +139,7 @@ $ git clone URL
 # clone and store the files in "folder"
 $ git clone URL folder
 # clone a branch
+$ git clone URL -b name
 $ git clone URL --branch name
 ```
 
@@ -433,6 +434,9 @@ Stuff
 
 * Digital Object Identifiers (see [GitHub article](https://guides.github.com/activities/citable-code/))
 * GitGraph.js
+* git tag
+* git reset
+* git filter-branch
 
 Learn
 
