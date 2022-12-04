@@ -24,69 +24,7 @@ with
 
 You may check that your message [is valid using commitlint](https://github.com/conventional-changelog/commitlint). If you don't understand **MAJOR.MINOR.PATCH**, check the section about versioning (a bit further).
 
-<hr class="sl">
-
-## CONTRIBUTING.md
-
-Tell others, how they can contribute to your project.
-
-* Maybe add a description/table of contents
-* How **issues** are handled?
-* How **pull requests** are handled?
-* What **guidelines**/**style** are you following?
-  * commits ([example](https://github.com/thiagodp/commitment/blob/master/rules-en.md))
-  * code
-  * documentation
-* Where, and How, can we **ask a question**?
-* Is there a place to **discuss**/**chat**?
-* Example: [atom - CONTRIBUTING.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
-
-<hr class="sr">
-
-## CHANGELOG.md
-
-This is useful to help the developers know what you did, or everything major that happened. The website [keep a changelog](https://keepachangelog.com/en/1.0.0/#how) is giving you a lot of help.
-
-* latest to oldest
-* for each version
-  * give the release date (YYYY-MM-DD)
-  * tell us what you added/changed
-  * tell us what you deprecated/removed/fixed
-  * you may link issues, pull requests, and commits
-
-On GitHub, the **releases** could be an alternative to the CHANGELOG.md, or you can use both.
-
-You got tools that may help you generate a changelog, but I didn't test them
-
-* [github-changelog-generator](https://github.com/github-changelog-generator/github-changelog-generator)
-* [conventional-changelog](https://github.com/conventional-changelog)
-
-<hr class="sl">
-
-## CODE_OF_CONDUCT.md
-
-What behavior is tolerated? What's behavior isn't tolerated? You should explain this in the Code Of Conduct.
-
-The most used template is the [Contributor Covenant (Markdown - 2.1)](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md), you can [find the latest version here](https://www.contributor-covenant.org/).
-
-You can add this badge too, if you're proud of it ![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
-
-```markdown
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
-```
-
-<hr class="sr">
-
-## SECURITY.md
-
-You should give a way for users to report any security-related issues. You may also write in this file, 
-
-* which versions of your software will have security updates, 
-* or for how much time you're planning to provide security updates, for each version
-
-Sometimes, even if you moved to another major version (like from v1 to v2), you will still provide security updates for the previous versions. We usually call these versions "Long-Term Support" (LTS). For instance, Java LTS versions are released every 5 years, we got Java11 and soon Java17.
-
-If you're tenacious and motivated, you might read [about security practices here](https://github.com/coreinfrastructure/best-practices-badge/blob/main/doc/security.md). I haven't read enough to make you a summary.
+https://github.com/thiagodp/commitment/blob/master/rules-en.md
 
 <hr class="sl">
 
@@ -103,10 +41,6 @@ Maybe someone already configured a repository for you. On GitHub, you can find "
 
 Note that you may find node-project templates too, etc.
 
-* **Issues and pull requests templates**
-
-I don't know if you can do that everywhere, but on GitHub, you can define templates for your issues and your pull requests. Everything is explained in the Git course.
-
 <hr class="sr">
 
 ## Workflows
@@ -117,24 +51,6 @@ Usually, developers are configuring automatic testing or actions that are execut
 * check that the code is covered by the tests
 * check that you didn't have introduced a security breach
 * ...
-
-On GitHub, the concept of workflow is associated with the [notion of actions](https://fr.github.com/features/actions). You got a lot of tools/some help in the section about advanced concepts in the Git course.
-
-<hr class="sl">
-
-## Versioning
-
-It seems that a lot of persons are using
-
-* The [Semantic Versioning 2.0.0](https://semver.org/)
-  * FORMAT: **MAJOR.MINOR.PATCH**
-    * MAJOR: breaking change (of the API)
-    * MINOR: non-breaking change, backward compatible
-    * PATCH: internal change
-  * **0.y.z**: in development
-  * **1.y.z**: stable
-  * you may add a tag like **1.0.0-alpha**
-* You may also check [Calver](https://calver.org/)
 
 <hr class="sr">
 

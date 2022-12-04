@@ -5,9 +5,9 @@
 You can find notes about Git [here](/it/dev/git/index.md). Here, I will assume that you're already familiar with Git, and you will notes about stuff like
 
 * 📦 Basic files: README.md, LICENSE, and .gitignore
-* 🍒 Special files: CONTRIBUTING.md
+* 🍒 Special files: CONTRIBUTING.md, CHANGELOG.md...
 * 🏹 Server-side features
-* 👌 Good practices
+* 🌞 Good practices
 * ...
 </div><div>
 
@@ -20,7 +20,7 @@ This imaged tutorial about [GitHub for collaboration](https://mozillascience.git
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-#### README.md
+#### 📦 README.md
 
 The README.md <small>(or README.rst)</small> is a file in Markdown describing the project, how to install it, how to use it... [See makeareadme.com](https://www.makeareadme.com/)
 
@@ -34,7 +34,7 @@ The README.md <small>(or README.rst)</small> is a file in Markdown describing th
 > A lot of developers are using badges to show some information about the project such as ![badge](https://img.shields.io/github/license/quentinra/blog.quentinra.dev). See [shields.io](https://shields.io/), [badgen.net](https://badgen.net/), [markdown-badges](https://github.com/Ileriayo/markdown-badges), and [unmaintained.tech](https://unmaintained.tech/).
 </div><div>
 
-#### LICENSE / LICENSE.txt
+#### 📦 LICENSE / LICENSE.txt
 
 A license describes what others can do with your code. No license means that your code is copyrighted. We usually use these
 
@@ -51,14 +51,49 @@ A license describes what others can do with your code. No license means that you
 
 ## 🍒 Special files 🍒
 
+You may reach a point where you have too many files are the root of your project. On GitHub, you can move these files to a `.github` at the root of your project, and GitHub will still detect them.
+
 <div class="row row-cols-md-2 mt-3"><div>
 
-#### CONTRIBUTING.md
+#### 🍒 CONTRIBUTING.md
 
-...
+Explain how they can contribute to your project.
+
+* 📦 What is the structure of the code?
+* 👥 How/When should others open issues/Pull-requests?
+* 🧹 Is there guidelines/a style to adopt when coding?
+* 🌳 Is there a forum/place to exchange about the project/...?
+
+> Example: [atom - CONTRIBUTING.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
+
+<br>
+
+#### 🍒 CODE_OF_CONDUCT.md
+
+What behavior is tolerated? What's behavior isn't tolerated?
+
+* [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) (the most used one, ![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg))
+* Write your own
 </div><div>
 
-...
+#### 🍒 CHANGELOG.md
+
+Keep track of every change. See [keepachangelog.com](https://keepachangelog.com/en/).
+
+* 🗓️  From the latest changes to the oldest ones
+* ✍️For each version
+  * Give the release date (YYYY-MM-DD)
+  * Tell what was added/changed/deprecated/removed/fixed
+  * You may link issues, pull requests, and commits
+* Changes that were not released are usually in "[Unreleased]"
+
+> See [conventional-changelog](https://github.com/conventional-changelog) and [github-changelog-generator](https://github.com/github-changelog-generator/github-changelog-generator).
+
+<br>
+
+#### 🍒 SECURITY.md
+
+This file explains which versions are eligible for security patches, for how long they will be receiving patches (LTS/...), and what's the process to report a vulnerability.
 </div></div>
 
 <hr class="sep-both">
@@ -73,7 +108,7 @@ When someone found a bug/problem with the project, they will usually create an i
 
 On GitHub/GitLab/???, you can create issue templates.
 
-> To create a template, go to <kbd>Options > Features > Issues</kbd>.<br>
+> See <kbd>Options > Features > Issues</kbd> on GitHub.<br>
 > See [GitHub Issue templates](https://github.com/stevemao/github-issue-templates) (3.5k ⭐)
 
 * ➡️ **Wiki**
@@ -87,7 +122,7 @@ You can clone your wiki with `.wiki.git` instead of `.git`!
 Usually, repositories do not allow everyone to contribute. Instead, they can fork the repository, which will create a copy that they own. They will work on it, and they will be able to create a Pull Request to the original repository, that may be merged by the original repository's maintainers. [See GitHub tutorial](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
 </div><div>
 
-* ➡️ **Pull requests** (PR) / Merge requests
+* ➡️ **Pull Requests** (PR) / Merge requests
 
 In most cases, developers establish a formal procedure to merge branches into main. Anyone will have to create a Pull Request asking if they can merge. Then, reviewers will check the code, and allow master/main to be modified. [See GitHub tutorial](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
@@ -101,6 +136,37 @@ I'm still not sure if this is only available on GitHub or not, but every issue/p
 
 > On GitHub, you can also reference a user with `@username`.
 
+</div></div>
+
+<hr class="sep-both">
+
+## 🌞 Good practices 🌞
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+#### 🌞 **Versioning**
+
+The most used way to give name versions of your project is the [Semantic Versioning](https://semver.org/).
+
+* 🗒️ The format is **MAJOR.MINOR.PATCH**
+  * MAJOR: breaking change (of the API)
+  * MINOR: non-breaking change, backward compatible
+  * PATCH: internal change
+* When <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mtext>MAJOR</mtext>
+  <mo>=</mo>
+  <mn>0</mn></math>: in development
+* When <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mtext>MAJOR</mtext>
+  <mo>&#x2265;</mo>
+  <mn>1</mn></math>: Stable
+
+> An alternative is [Calendar Versioning](https://calver.org/).
+</div><div>
+
+#### 🌞 **Commits**
+
+...
 </div></div>
 
 <hr class="sep-both">
@@ -201,6 +267,10 @@ Stuff that I found, but never read/used yet.
 Continuous Integration (CI)
 
 * [Heroku](https://www.heroku.com/home) / [Heroku (student)](https://www.heroku.com/students)
+
+Badges
+
+* [OpenSSF Best Practices Badge](https://github.com/coreinfrastructure/best-practices-badge)
 </div><div>
 
 
