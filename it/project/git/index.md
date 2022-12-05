@@ -358,6 +358,40 @@ Cards (usually added on a profile/...)
 
 <hr class="sep-both">
 
+## 🚀 Continuous integration (CI) 🚀
+
+<div class="row row-cols-md-2"><div>
+
+There are many tools out there providing features for open-source project, such as watching dependencies to detect vulnerabilities, find vulnerabilities/code smells/... in the code...
+
+**Code quality and reviews**
+
+* [sonarcloud](https://sonarcloud.io) (quite a lot of feedback)
+* [codefactor](https://www.codefactor.io/) (good)
+* [deepsource](https://deepsource.io/) (not very deep)
+* lgtm.com (deprecated, see [code scanning](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning))
+* [codecov](https://about.codecov.io/) (👻)
+* [codacy](https://www.codacy.com/) (👻)
+* [scrutinizer-ci](https://scrutinizer-ci.com/) (👻)
+* [CircleCI](https://circleci.com/) (👻)
+</div><div>
+
+**Others**
+
+* [weblate](https://weblate.org/) (👻, paid, continuous localization)
+* [snyk](https://snyk.io/) (security, good)
+
+**Language-specific**
+
+* [StyleCI](https://styleci.io/) (style for PHP/CSS/JS)
+* [packagist](https://packagist.org/) (PHP packages)
+* [deps.rs](https://deps.rs/) (Rust dependencies alerts)
+* [DavidDM](https://david-dm.org/) (Node.js dependencies)
+* [PackageQuality](https://packagequality.com/) (npm packages)
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -383,4 +417,5 @@ Random
 * [Government best practices](https://government.github.io/best-practices/)
 * [Working Open Workshop](https://mozillascience.github.io/working-open-workshop/)
 * [fossa](https://fossa.com/) (+badge)
+* [codetriage](https://www.codetriage.com/) (get issues from your favorites repos in your inbox)
 </div></div>
