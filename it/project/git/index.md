@@ -248,6 +248,21 @@ Co-authored-by: name <name@example.com>"
 
 <br>
 
+#### ✍ Reference code in issues
+
+There is a nice way of referencing code from the same repository inside an issue/a pull request. See [GitHub tutorial](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-code).
+
+* Open the target file
+* Click on the line number of the line you want to reference
+* Hold Shift and press another line to select an interval
+* Click on "..."
+* Copy permalink
+* Then simply paste the permalink inside an issue/a pull request
+
+> It won't always work. In such cases, simply click on "..." on a file, get the permalink, and append to it `#LX` <small>(line X)</small> or `#LX-LY` <small>(line X to line Y)</small>.
+
+</div><div>
+
 #### ✍️CODEOWNERS
 
 This file is a dictionary with patterns associated with GitHub usernames. Repositories can be configured so that if a file owned by a codeowner is modified, then inside the Pull Request, the CodeOwner will be asked for a review. See [GitHub tutorial](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners).
@@ -256,9 +271,7 @@ This file is a dictionary with patterns associated with GitHub usernames. Reposi
 *       @QuentinRa
 ```
 
-* You may add [CITATION.cff](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-citation-files) to tell others how to cite your project.
-
-</div><div>
+<br>
 
 #### ✍️Git attributes
 
@@ -363,6 +376,7 @@ Badges
 
 Random
 
+* [About READMEs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
 * [opensource.guide](https://opensource.guide/)
 * [best practices CII/FLOSS](https://bestpractices.coreinfrastructure.org/fr)
 * [best practices CII/FLOSS - GitHub](https://github.com/coreinfrastructure/best-practices-badge)
