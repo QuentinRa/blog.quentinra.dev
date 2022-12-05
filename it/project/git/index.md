@@ -31,7 +31,11 @@ The README.md <small>(or README.rst)</small> is a file in Markdown describing th
 * 📦 Why have you made this project? Who is your audience?
 * 🌳 Credits, maintainers, contributors, License...
 
-> A lot of developers are using badges to show some information about the project such as ![badge](https://img.shields.io/github/license/quentinra/blog.quentinra.dev). See [shields.io](https://shields.io/), [badgen.net](https://badgen.net/), [markdown-badges](https://github.com/Ileriayo/markdown-badges), and [unmaintained.tech](https://unmaintained.tech/).
+> A lot of developers are using badges to show some information about the project such as ![badge](https://img.shields.io/github/license/quentinra/blog.quentinra.dev). See [shields.io](https://shields.io/), [badgen.net](https://badgen.net/), [markdown-badges](https://github.com/Ileriayo/markdown-badges), [unmaintained.tech](https://unmaintained.tech/), and [License badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba).
+
+There are a few things you may also find in use
+
+* [Repository stars over time](https://starchart.cc/)
 </div><div>
 
 #### 📦 LICENSE / LICENSE.txt
@@ -232,6 +236,7 @@ On a repository, go to the action tab, select an action, and it will autogenerat
 Others
 
 * [actions/setup-java](https://github.com/actions/setup-java): install Java
+* [awesome-actions](https://github.com/sdras/awesome-actions)
 </details>
 
 <br>
@@ -353,6 +358,7 @@ Cards (usually added on a profile/...)
   * Most used languages
   * WakaTime
 * [GitHub Profile Trophy](https://github.com/ryo-ma/github-profile-trophy)
+* [metrics](https://github.com/lowlighter/metrics) (really nice cards, see [omBratteng profile](https://github.com/omBratteng/omBratteng))
 * [Jokes' Cards](https://readme-jokes.vercel.app/api)
 </div></div>
 
@@ -402,14 +408,20 @@ Continuous Integration (CI)
 
 * [Heroku](https://www.heroku.com/home) / [Heroku (student)](https://www.heroku.com/students)
 * Git Hooks and [husky](https://github.com/typicode/husky)
+* [Basics of CI/CD](https://levelup.gitconnected.com/basics-of-ci-cd-a98340c60b04)
 
 Badges
 
 * [OpenSSF Best Practices Badge](https://github.com/coreinfrastructure/best-practices-badge)
+* [holopin](https://www.holopin.io/)
 </div><div>
 
 Random
 
+* [GitHub Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
+* GraphQL
+* [branch protection rule](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule)
+* [controlook-zz](https://github.com/controlook-zz/standards) or [Git Commit Message](https://cbea.ms/git-commit/#seven-rules) and [code-review-tips](https://github.com/ryanmcdermott/code-review-tips)
 * [About READMEs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
 * [opensource.guide](https://opensource.guide/)
 * [best practices CII/FLOSS](https://bestpractices.coreinfrastructure.org/fr)

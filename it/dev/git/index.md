@@ -11,6 +11,8 @@ When working on a project, here are a few problems
 * **duplicates** 🎭: a copy of a project to test something, it takes places. And what if you want to merge them?
 
 * **computer dies** 😵: if your computer dies, and you don't have backups, then you lost your project for good
+
+> See [OH MY GIT!](https://ohmygit.org/): "An open source game about learning Git!".
 </div><div>
 
 Version-control is helpful to solve these, and Git is the most well-known one. To use Git, there are two actors involved
