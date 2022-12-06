@@ -27,9 +27,30 @@
     ],
     "🧃 Store data 🧃": [
       {
-        "tag": "data/index.md",
-        "name": "Data languages",
-        "desc": "A gathering of notes about easy to learn, and easy to master, data languages, such as JSON (and JSON5), or YAML.",
+        "tag": "data/json.md",
+        "name": "JSON",
+        "desc": "JSON, JSON5, GEOJson...",
+        "icon": "<i class=\"bi bi-layout-text-sidebar\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "data/yaml.md",
+        "name": "YAML",
+        "desc": "Mostly used in configurations.",
+        "icon": "<i class=\"bi bi-layout-text-sidebar\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "data/ini.md",
+        "name": "INI",
+        "desc": "Used in configurations on Windows.",
+        "icon": "<i class=\"bi bi-layout-text-sidebar\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "data/xml.md",
+        "name": "XML",
+        "desc": "...",
         "icon": "<i class=\"bi bi-layout-text-sidebar\"></i>",
         "hidden": false
       }
