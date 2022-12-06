@@ -18,6 +18,13 @@
         "hidden": false
       },
       {
+        "tag": "art/canva.md",
+        "name": "Canva",
+        "desc": "Notes about canva.",
+        "icon": "<i class=\"bi bi-pencil\"></i>",
+        "hidden": false
+      },
+      {
         "tag": "art/shop.md",
         "name": "Shop",
         "desc": "Look for creators and assets.",

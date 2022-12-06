@@ -17,27 +17,32 @@
 * [online-converting.com](https://online-converting.com/image/) (JPGs to WebP, batch)
 * [png-svg.com](https://png-svg.com/) (PNG to SVG)
 * otherwise, Google!
-</div><div>
 
 ##### Resize images
 
 * [picresize.com](https://picresize.com/) (batch)
 * [resizepixel.com](https://www.resizepixel.com/) (one)
 * [js-image-carver](https://github.com/trekhleb/js-image-carver) (amazing, [demo](https://trekhleb.dev/js-image-carver/))
+</div><div>
 
 ##### Reverse search
 
 * [tineye](https://tineye.com/)
 * [images.google.com](https://images.google.com/):  drag and drop your image in the search bar
 
-##### OCR
+##### OCR (image to text)
 
-* [tesseract.js](https://github.com/naptha/tesseract.js) ([Website](https://tesseract.projectnaptha.com/))
+* [tesseract.js](https://github.com/naptha/tesseract.js) ([website](https://tesseract.projectnaptha.com/), free, open-source)
 
 ##### Favicons
 
 * [realfavicongenerator](https://realfavicongenerator.net/)
 * [realfavicongenerator](https://realfavicongenerator.net/svg-favicon/) (svg)
+
+
+##### Icons
+
+* [Bootstrap Icons](https://icons.getbootstrap.com/) (free, open-source, svg)
 
 ##### Memes
 

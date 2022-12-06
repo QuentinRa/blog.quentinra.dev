@@ -8,14 +8,16 @@ When working on a project, here are a few problems
 
 * **a need for time travel** 🗃️: the developer removed some old long time ago, and now needs to access it again. There could also be a case in which there is a need to go back to a previous version
 
-* **duplicates** 🎭: a copy of a project to test something, it takes places. And what if you want to merge them?
+* **duplicates** 🎭: a copy of a project to test something, it takes disk space. And what if you want to merge code between them?
 
-* **computer dies** 😵: if your computer dies, and you don't have backups, then you lost your project for good
+* **computer dies** 😵: if it happens, and you don't have any backups, then you lost your project for good...
+
+There are many more of them, but in short, all of them can be addressed with Version-control, and Git is the most used one.
 
 > See [OH MY GIT!](https://ohmygit.org/): "An open source game about learning Git!".
 </div><div>
 
-Version-control is helpful to solve these, and Git is the most well-known one. To use Git, there are two actors involved
+To use Git, there are two actors involved
 
 * **clients** 👲: these are computers that will download project, work on them, upload their changes...
   * The command `git` / [git-scm](https://git-scm.com/) (Windows) 
@@ -67,7 +69,7 @@ $ git clone URL
 * ➡ When working on your project
 
 ```bash
-# get the latest version on the server
+# get the latest snapshot from the server
 $ git pull
 # ... work a lot ...
 # check what changed
@@ -98,7 +100,7 @@ $ cat ~/.ssh/id_rsa.pub
 $ Copy the key in Settings > SSH Keys on GitHub/...
 ```
 
-> [GitHub tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).<br>
+> See [GitHub tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).<br>
 > Before, we were using `ssh-keygen -t rsa -b 4096 -C "email"`.
 </div><div>
 
