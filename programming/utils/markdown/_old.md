@@ -1,84 +1,4 @@
-# Lists
-
-You may use `*` or `-` or `+`. It looks like this
-
-```markdown
-* an item
-* another item
-    * an item of a sub-list
-      having a long description
-    * and yet another item
-* a 3rd item
-```
-
-You can replace `*` with a number to make an ordered list. You can mix both too.
-
-```markdown
-1. an item
-2. another item
-    * an item of a nested list
-      having a long description
-    * and yet another item
-3. a 3rd item
-```
-
-<hr class="sr">
-
-## Code
-
-You can write `inline code` using inverted quotes
-
-```markdown
-You can write `inline code` using inverted quotes 
-```
-
-and you can write a lot of code, using this syntax. Note that `c` is the language used for highlighting the code.
-
-<pre class="language-c">
-<code class="language-c"
->```c
-int main(void) {
-
-}
-```</code>
-</pre>
-
-<hr class="sl">
-
-## Links and images
-
-```markdown
-For **link**: [text that will be shown](https://example.com)
-For an **image**: ![text if the image is not found](https://lgs-games.com/assets/icon64.png)
-
-You can create a **link with a text shown when hovered** with
-[text that will be shown](https://example.com "some text here")
-
-You could create a link easily with <https://example.com>.
-```
-
-<hr class="sr">
-
-## Table
-
-This is NOT supported everywhere, but you can make a table with this code
-
-```markdown
-| Column name | Column name |
-| ------ | ------ |
-| tab[0][0] | tab[0][1] |
-| tab[1][0] | tab[1][1] |
-| tab[2][0] | tab[2][1] |
-| tab[3][0] | tab[3][1] |
-| tab[4][0] | tab[4][1] |
-| tab[5][0] | tab[5][1] |
-```
-
-You can center the column content by adding `:---:` instead of `---`. You can align the content to the right/left by only adding `:` at the right/left of `---`.
-
-<hr class="sl">
-
-## Emojis
+# Emojis
 
 You can write `:emoji:` to render an emoji, with "emoji" the one you want. The list of values can be found here
 
@@ -99,10 +19,8 @@ And you can use **horizontal separators** with
 
 ```markdown
 ***
-
 ---
-
-_________________
+___
 ```
 
 You may be able to use a **checkbox** too with

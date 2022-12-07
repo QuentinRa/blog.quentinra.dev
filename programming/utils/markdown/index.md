@@ -18,7 +18,7 @@ Note that you can use HTML inside Markdown files 💫.
 
 <hr class="sep-both">
 
-## Basic syntax
+## 🪵 Most used elements 🪵
 
 <div class="row row-cols-md-2"><div>
 
@@ -32,20 +32,18 @@ A paragraph is a bloc of text. Leave of blank line to close it.
 Here is a text
 that continues here.
 
-This is another paragraph.
+Here is a text
 \
-This is still the same paragraph, but you should
-not use this uncommon syntax.
+that continues here. Do not use this uncommon syntax.
 ```
 </div><div>
 
 Here is a text
 that continues here.
 
-This is another paragraph.
+Here is a text
 \
-This is still the same paragraph, but you should
-not use this uncommon syntax.
+that continues here. Do not use this uncommon syntax.
 </div></div>
 
 <br>
@@ -84,4 +82,93 @@ The more `#` you add, the smaller your title becomes.
 </div></div>
 
 **Nice dude** 🧹: make sure to leave a space after `#`.
+</div></div>
+
+<hr class="sep-both">
+
+## 🌿 Other elements :leaf: 🌿
+
+<div class="row row-cols-md-2"><div>
+
+#### Lists
+
+Use `*`, `+`, or `-` to create unordered lists. Use `n.` for ordered lists.
+
+<div class="row row-cols-md-2"><div>
+
+```markdown
+1. an item
+2. an item
+    * an item
+    * an item
+3. an item
+```
+</div><div>
+
+1. an item
+2. an item
+    * an item
+    * an item
+3. an item
+</div></div>
+
+<br>
+
+#### Links
+
+* [example](https://example.com): `[example](https://example.com)`
+* <https://example.com>: `<https://example.com>`
+* If supported, you can add a title `[placeholder](URL "title")`
+
+<br>
+
+#### Images
+
+* `![alt](URL)` is the same as `<img src="URL" alt="alt">`
+* `![alt](URL "title")` with a title `<img [...] title="title">`
+
+</div><div>
+
+#### Code
+
+Code inside a sentence is called **inline code**. You can write some using inverted quotes.
+
+* `inline code`: <code>\`inline code\`</code>
+* You can write some code-block with syntax highlighting using 3 inverted quotes, then the highlighting language <small>(ex: c, java...)</small>.
+
+<pre class="language-c">
+<code class="language-c"
+>```c
+int main(void) {
+
+}
+```</code></pre>
+
+<br>
+
+#### Table
+
+Tables are only available in extended Markdown.
+
+<div class="row row-cols-md-2"><div>
+
+```markdown
+| Column name | Column name |
+| --- | --- |
+| tab[0][0] | tab[0][1] |
+| tab[1][0] | tab[1][1] |
+```
+</div><div>
+
+| Column name | Column name |
+|-------------|-------------|
+| tab[0][0]   | tab[0][1]   |
+| tab[1][0]   | tab[1][1]   |
+</div></div>
+
+You may also note that you can add more than 3 hyphens (`---`). And, you can use `:` to align values inside a column.
+
+* `:---`: align left
+* `---:`: align right
+* `:---:`: align center
 </div></div>
