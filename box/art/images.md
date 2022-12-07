@@ -80,5 +80,6 @@ Stuff that I found, but never read/used yet.
 * [pngquant](https://pngquant.org/) (compress)
 </div><div>
 
-
+* [photofeeler](https://www.photofeeler.com/)
+* [pfpmaker](https://pfpmaker.com/)
 </div></div>

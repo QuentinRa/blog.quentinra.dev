@@ -10,10 +10,10 @@ You must think a lot about how you should create one, and that's the purpose of 
 * **what** 🗃️: which element is required, which one isn't...
 * **how** 🖇️: what are your menus, are they simple and intuitive?
 
-We usually create a **mockup** (`maquette`) first. Each screen of the interface is called **a wireframe**. Once every screen is created, you will add actions between your screen, which includes stuff like what happens when the user hover/press/click/... on a button/... The final output with interconnected wireframes is called **a wireflow**.
+We usually create a **mockup** (`maquette`) first. Each screen of the application is called **a wireframe**. Once every screen is created, you will add actions between your screen, which includes stuff like what happens when the user hover/press/click/... on a button/... The final output with interconnected wireframes is called **a wireflow**.
 </div><div>
 
-You can create wireframes using
+You can create wireframes/wireflows using
 
 * [Justinmind](https://www.justinmind.com/) <small>(paid, free trial, really good 🚀)</small>
 * [Moqups](https://moqups.com/) <small>(free with a limit, account required, quite good 📌)</small>

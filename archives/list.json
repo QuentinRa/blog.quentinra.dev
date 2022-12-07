@@ -18,13 +18,6 @@
 				"hidden": false
 			},
 			{
-				"tag": "proj/make-git-project/index.md",
-				"name": "Make Git project",
-				"desc": "A gathering of everything related to Git projects and their management.",
-				"icon": "<i class=\"bi bi-archive\"></i>",
-				"hidden": false
-			},
-			{
 				"tag": "proj/design-patterns/index.md",
 				"name": "Design patterns",
 				"desc": "Because writing code can be easier, and you would rather want to learn the good practices beforehand.",
