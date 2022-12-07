@@ -55,6 +55,7 @@ that continues here. Do not use this uncommon syntax.
 * *italic*: `*italic*` or `_italic_`
 * ***bold+italic***: `***bold+italic***` or `___bold+italic___`
 * <s>crossed text</s>: `~~crossed text~~` or `<s>crossed text</s>`
+* <u>underline</u>: `<u>underline</u>`
 
 </div><div>
 
@@ -138,7 +139,6 @@ Use `*`, `+`, or `-` to create unordered lists. Use `n.` for ordered lists.
 [comment]: <> (a comment)
 [//]: <> (a comment)
 [//]: # (a comment)
-<!-- a comment -->
 ```
 </div>
 </div><div>
@@ -255,4 +255,128 @@ You can write `:emoji:` to render an emoji, with "emoji" the one you want. It wo
 
 * [markdown-emojis](https://github.com/markdown-templates/markdown-emojis) / [gist:7360908](https://gist.github.com/rxaviers/7360908)
 * [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet)
+</div></div>
+
+<hr class="sep-both">
+
+## 🍹 Using HTML 🍹
+
+<div class="row row-cols-md-2"><div>
+
+You can use HTML inside your Markdown.
+
+
+| Markdown             | HTML                                                 |
+|----------------------|------------------------------------------------------|
+| \#\# Title           | &lt;h2&gt;title&lt;/h2&gt;                           |
+| \*\*bold\*\*         | &lt;b&gt;bold&lt;/b&gt;                              |
+| \*italic\*           | &lt;i&gt;bold&lt;/i&gt;                              |
+| \~\~crossed text\~\~ | &lt;s&gt;strikethrough&lt;/s&gt;                     |
+| a list               | see &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt;           |
+| \`code\`             | &lt;code&gt;code&lt;/code&gt;                        |
+| \[link](url)         | &lt;a href="url"&gt;link&lt;/a&gt;                   |
+| \!\[alt](url)        | &lt;img src="url" alt="alt"&gt;                      |
+| \> text              | &lt;blockquote&gt;text&lt;/blockquote&gt;            |
+| \---                 | &lt;hr&gt;                                           |
+| new line             | &lt;br&gt;                                           |
+
+<br>
+
+#### Markdown inside HTML
+
+You can use Markdown inside HTML, but you need to leave a blank line after the leading tag.
+
+<div class="row row-cols-md-2"><div>
+
+```markdown
+<div>
+**Here**, you cannot use Markdown.
+
+**But**, here you can.
+</div>
+```
+</div><div>
+
+<div>**Here**, you cannot use
+Markdown.
+
+<br>**But**, here you can.
+</div>
+</div></div>
+
+<br>
+
+#### Center something
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+```markdown
+<div align="center">
+
+This text is **centered**
+</div>
+```
+</div><div>
+
+<div align="center">
+
+This text is **centered**
+</div>
+</div></div>
+
+</div><div>
+
+#### Dropdowns
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+```html
+<details open>
+<summary>Dropdown open</summary>
+Content
+</details>
+```
+
+<details open>
+<summary>Dropdown open</summary>
+Content
+</details>
+</div><div>
+
+```html
+<details>
+<summary><b>Click here to expand</b>
+A short description
+</summary><hr>
+
+A long description
+</details>
+```
+
+<details>
+<summary><b>Click here to expand</b>
+
+A short description
+</summary><hr>
+
+A long description
+</details>
+</div></div>
+
+<br>
+
+#### Other nice HTML tags
+
+<p></p>
+
+| Tag | Preview                                                          |
+| ------ |------------------------------------------------------------------|
+| <b>kbd</b> | <kbd>CTRL+X</kbd>                                                |
+| <b>sup</b> (used in footnotes) | <sup>[1]: From XXX</sup><br><sup>[2]: Notation used in XXX</sup> |
+| <b>dl</b>, <b>dt</b> (keyword), and <b>dd</b> (definition). <br> (the definition is usually indented, so it looks better) | <dl><dt>Keyword</dt><dd>definition</dd></dl>                     |
+| <b>abbr</b> (show a note on hover) | <abbr title="Shown when hovered">some text</abbr>                |
+| <b>mark</b> | This <mark>word</mark> has a yellow background.                  |
+| <b>ruby</b> and <b>rt</b> (put some text above another one) | <p></p><ruby>Some title<rt>version 5.0</rt></ruby>               |
+| <b>progress</b> | <progress value="50" max="100"></progress> 50%                   |
+
 </div></div>
