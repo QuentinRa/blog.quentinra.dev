@@ -7,6 +7,7 @@ Markdown is the language used in `.md` files. It's mostly used to write simple d
 * 📝 Git-related documents <small>(README.md, CONTRIBUTING.md...)</small>
 * 🏫 Documentation <small>(GIT wikis)</small>
 * 🗃️ Websites <small>(GitHub Pages...)</small>
+* 🎉 Articles, Presentations...
 </div><div>
 
 Note that you can use HTML inside Markdown files 💫.
@@ -15,6 +16,13 @@ Note that you can use HTML inside Markdown files 💫.
 
 * [markdownguide.org](https://www.markdownguide.org/basic-syntax/)
 * [commonmark.org](https://commonmark.org/)
+* [markdowntutorial](https://www.markdowntutorial.com/)
+
+**Editors**
+
+* [madoko](https://www.madoko.net/editor.html) (👻, web)
+* [zettlr](https://www.zettlr.com/)  (👻, desktop)
+* [obsidian](https://obsidian.md/)
 </div></div>
 
 <hr class="sep-both">
@@ -378,5 +386,22 @@ A long description
 | <b>mark</b> | This <mark>word</mark> has a yellow background.                  |
 | <b>ruby</b> and <b>rt</b> (put some text above another one) | <p></p><ruby>Some title<rt>version 5.0</rt></ruby>               |
 | <b>progress</b> | <progress value="50" max="100"></progress> 50%                   |
+
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [GitHub Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+* [sindresorhus.com](https://sindresorhus.com/github-markdown-css/)
+* [JetBrains](https://www.jetbrains.com/help/hub/Markdown-Syntax.html#quick-notes-markdown-headings)
+* [markdown-here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+</div><div>
+
 
 </div></div>
