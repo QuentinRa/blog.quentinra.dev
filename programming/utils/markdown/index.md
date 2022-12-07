@@ -14,6 +14,7 @@ Note that you can use HTML inside Markdown files 💫.
 **Resources**
 
 * [markdownguide.org](https://www.markdownguide.org/basic-syntax/)
+* [commonmark.org](https://commonmark.org/)
 </div></div>
 
 <hr class="sep-both">
@@ -86,7 +87,7 @@ The more `#` you add, the smaller your title becomes.
 
 <hr class="sep-both">
 
-## 🌿 Other elements :leaf: 🌿
+## 🌿 Other elements 🌿
 
 <div class="row row-cols-md-2"><div>
 
@@ -127,6 +128,19 @@ Use `*`, `+`, or `-` to create unordered lists. Use `n.` for ordered lists.
 * `![alt](URL)` is the same as `<img src="URL" alt="alt">`
 * `![alt](URL "title")` with a title `<img [...] title="title">`
 
+<br>
+
+#### Comments
+
+<div class="mt-4">
+
+```markdown
+[comment]: <> (a comment)
+[//]: <> (a comment)
+[//]: # (a comment)
+<!-- a comment -->
+```
+</div>
 </div><div>
 
 #### Code
@@ -134,21 +148,67 @@ Use `*`, `+`, or `-` to create unordered lists. Use `n.` for ordered lists.
 Code inside a sentence is called **inline code**. You can write some using inverted quotes.
 
 * `inline code`: <code>\`inline code\`</code>
-* You can write some code-block with syntax highlighting using 3 inverted quotes, then the highlighting language <small>(ex: c, java...)</small>.
+* You can write some code-block with syntax highlighting using 3 inverted quotes, then the highlighting language <small>(ex: c, java, diff...)</small>.
 
-<pre class="language-c">
-<code class="language-c"
->```c
-int main(void) {
+<div class="row row-cols-md-2"><div>
 
-}
+<pre><code class="language-markdown"
+>```diff
+unchanged
+- removed
++ added
 ```</code></pre>
+</div><div>
+
+```diff
+unchanged
+- removed
++ added
+```
+</div></div>
 
 <br>
 
-#### Table
+#### Quotes
 
-Tables are only available in extended Markdown.
+<div class="row row-cols-md-2 mb-3 mt-4"><div>
+
+```markdown
+> some quote
+```
+</div><div>
+
+> some quote
+</div></div>
+
+<br>
+
+#### Horizontal separators
+
+<div class="row row-cols-md-2 mb-3 mt-4"><div>
+
+```markdown
+***
+---
+___
+```
+</div><div class="align-self-center">
+
+You can add more than 3 stars/...
+
+---
+</div></div>
+</div></div>
+
+<hr class="sep-both">
+
+## 🥥 Extended Markdown 🥥
+
+Extended features are available on most Markdown interpreters (ex: GitHub), but they are not available by default.
+
+<div class="row row-cols-md-2"><div>
+
+#### Tables
 
 <div class="row row-cols-md-2"><div>
 
@@ -171,4 +231,28 @@ You may also note that you can add more than 3 hyphens (`---`). And, you can use
 * `:---`: align left
 * `---:`: align right
 * `:---:`: align center
+</div><div>
+
+#### Checkbox
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+```markdown
+* [ ] not checked
+* [x] checked
+```
+</div><div class="align-self-center">
+
+* [ ] not checked
+* [x] checked
+</div></div>
+
+<br>
+
+#### Emojis
+
+You can write `:emoji:` to render an emoji, with "emoji" the one you want. It works on GitHub, and some parsers are also supporting these. Otherwise, you may directly copy-paste emojis.
+
+* [markdown-emojis](https://github.com/markdown-templates/markdown-emojis) / [gist:7360908](https://gist.github.com/rxaviers/7360908)
+* [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet)
 </div></div>
