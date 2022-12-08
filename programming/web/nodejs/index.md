@@ -17,6 +17,58 @@ Node.js is a modern JavaScript environment that can be used
 
 <hr class="sep-both">
 
+## 📟 Express.js 📟
+
+<div class="row row-cols-md-2"><div>
+
+Express can be used to create websites or APIs.
+
+* [Express.js documentation](https://expressjs.com/)
+* [expressjs/generator](https://github.com/expressjs/generator)
+
+```powershell
+$ npx --yes --package express-generator express --force --no-view
+$ npm audit fix --force
+```
+</div><div>
+
+<details class="details-e">
+<summary>Configuration</summary>
+
+```javascript
+const app = express();
+
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/', require('./routes/indexRouter'));
+```
+</details>
+
+<details class="details-e">
+<summary>Usage</summary>
+
+```javascript
+const express = require('express');
+const router = express.Router();
+
+router.get('/', (req, res, next) => {
+    // useful methods
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.send(something); // HTML, JSON...
+    res.render('index', { title: 'Title' }); // public/index.html
+});
+
+module.exports = router;
+```
+</details>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -24,6 +76,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * Webpack
+* [emojione](https://github.com/joypixels/emojione) and [emoji-toolkit](https://github.com/joypixels/emoji-toolkit)
 </div><div>
 
 Tutorials
