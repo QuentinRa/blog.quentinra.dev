@@ -2,6 +2,15 @@
   "title": "Programming",
   "description": "Notes about programming languages.",
   "courses": {
+    "🕸️ Web and Android apps 🕸️": [
+      {
+        "tag": "web/nodejs/index.md",
+        "name": "Node.js",
+        "desc": "...",
+        "icon": "<i class=\"bi bi-box\"></i>",
+        "hidden": false
+      }
+    ],
     "✏️ Writing documents ✏️": [
       {
         "tag": "utils/markdown/index.md",
