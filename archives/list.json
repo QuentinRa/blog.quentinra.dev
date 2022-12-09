@@ -198,12 +198,6 @@
 				"icon": "<i class=\"bi bi-cup-straw\"></i>"
 			},
 			{
-				"tag": "info/very_old/api/index.md",
-				"name": "API",
-				"desc": "An application programming interface (API) is an interface allowing a user to use someone else services without digging into the code.",
-				"icon": "<i class=\"bi bi-key\"></i>"
-			},
-			{
 				"tag": "info/low-level/system_calls/index.md",
 				"name": "System calls",
 				"desc": "Learn about the most-used system calls.",

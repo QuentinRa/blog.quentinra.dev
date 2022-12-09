@@ -201,6 +201,7 @@ The **first** element in a request is the method.
 * `GET`: get a resource  <small>(ex: return `/index.html`)</small>
 * `POST`: create a resource <small>(ex: create a user)</small>
 * `PUT`: update ONE field of a resource <small>(ex: update user password)</small>
+* `PATCH`: update a resource <small>(ex: update user data)</small>
 * `DELETE`: delete a resource  <small>(ex: delete a user)</small>
 * ...
 

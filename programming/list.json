@@ -6,8 +6,15 @@
       {
         "tag": "web/nodejs/index.md",
         "name": "Node.js",
-        "desc": "...",
+        "desc": "A modern JavaScript environment.",
         "icon": "<i class=\"bi bi-box\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "web/apis/index.md",
+        "name": "API",
+        "desc": "Application Programming Interface",
+        "icon": "<i class=\"bi bi-book\"></i>",
         "hidden": false
       }
     ],
