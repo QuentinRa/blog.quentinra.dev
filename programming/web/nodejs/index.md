@@ -30,52 +30,55 @@ Express can be used to create websites or APIs.
 $ npx --yes --package express-generator express --force --no-view
 $ npm audit fix --force
 ```
-</div><div>
 
-<details class="details-e">
-<summary>Configuration</summary>
+**Middlewares**: they are functions that will be executed for each request. For instance, `express.json()` is adding the header `application/json` to the response.
 
 ```javascript
-const app = express();
-
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+// example: adding headers
 app.use(function (req, res, next) {
-    // res.setHeader('Access-Control-Allow-Origin', '*');
-    // res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-    // res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-    // res.setHeader('Access-Control-Expose-Headers', 'Custom-header');
-    // res.setHeader('Custom-header', 'value');
-    next();
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+    res.setHeader('Access-Control-Expose-Headers', 'Custom-header');
+    res.setHeader('Custom-header', 'value');
+    next(); // pass to the next middleware
 });
-
-app.use('/', require('./routes/indexRouter'));
 ```
-</details>
+</div><div>
 
-<details class="details-e">
-<summary>Usage</summary>
+Then, we are adding "local" routers for each API route.
+
+```bash
+const usersRouter = require('./routes/usersRouter');
+app.use('/users', usersRouter);
+```
+
+A "local" router is something like this.
 
 ```javascript
 const express = require('express');
 const router = express.Router();
 
-// API Routes (GET/POST/PUT/DELETE/...)
-router.get('/', (req, res, next) => {
-    // get headers
-    req.get('header-name')
-    req.headers['header-name']
-    // send something to the requester
-    res.send(something); // HTML, JSON...
-    res.render('index', { title: 'Title' }); // public/index.html
-});
+// API Routes "/" matches "/users/"
+router.get('/', (req, res) => {});
+router.post('/:id', (req, res) => {});
+router.patch('/delete/:id', (req, res) => {});
+router.delete('/:id', (req, res) => {});
 
 module.exports = router;
 ```
-</details>
+
+Useful methods
+
+```javascript
+// get headers
+req.get('header-name')
+req.headers['header-name']
+
+// send something to the requester
+res.send(something); // HTML, JSON...
+res.render('index', { title: 'Title' }); // public/index.html
+```
 </div></div>
 
 <hr class="sep-both">
