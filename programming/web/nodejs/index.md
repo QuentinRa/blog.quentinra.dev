@@ -23,7 +23,7 @@ Node.js is a modern JavaScript environment that can be used
 
 Express can be used to create websites or APIs.
 
-* [Express.js documentation](https://expressjs.com/)
+* [Express.js documentation](https://expressjs.com/) and [examples](https://expressjs.com/en/starter/examples.html)
 * [expressjs/generator](https://github.com/expressjs/generator)
 
 ```powershell
@@ -31,10 +31,10 @@ $ npx --yes --package express-generator express --force --no-view
 $ npm audit fix --force
 ```
 
-**Middlewares**: they are functions that will be executed for each request. For instance, `express.json()` is adding the header `application/json` to the response.
+**Middlewares** are functions that will be executed for each request.
 
 ```javascript
-// example: adding headers
+// example: adding headers to every response
 app.use(function (req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
@@ -44,29 +44,32 @@ app.use(function (req, res, next) {
     next(); // pass to the next middleware
 });
 ```
-</div><div>
 
 Then, we are adding "local" routers for each API route.
 
 ```bash
-const usersRouter = require('./routes/usersRouter');
+const usersRouter = require('./routes/users');
 app.use('/users', usersRouter);
 ```
 
 A "local" router is something like this.
 
 ```javascript
+// ./routes/users
 const express = require('express');
 const router = express.Router();
 
-// API Routes "/" matches "/users/"
+// API Routes "/:id" matches "/users/:id"
+// req = requester, res = response
 router.get('/', (req, res) => {});
 router.post('/:id', (req, res) => {});
-router.patch('/delete/:id', (req, res) => {});
+router.put('/:id', (req, res) => {});
+router.patch('/:id', (req, res) => {});
 router.delete('/:id', (req, res) => {});
 
 module.exports = router;
 ```
+</div><div>
 
 Useful methods
 
@@ -75,9 +78,34 @@ Useful methods
 req.get('header-name')
 req.headers['header-name']
 
+// get GET/POST params
+req.params.key // GET param named "key"
+req.body.key // POST param named "key"
+
 // send something to the requester
 res.send(something); // HTML, JSON...
+res.status(404).send(something); // ex: 404 HTTP code
 res.render('index', { title: 'Title' }); // public/index.html
+
+// redirect
+res.redirect('URL');
+```
+
+Adding a session (see [GitHub](https://github.com/expressjs/session))
+
+```javascript
+// add a middleware
+const session = require('express-session');
+app.use(session({
+    resave: false,
+    saveUninitialized: false,
+    secret: 'something-random-and-secret'
+}));
+
+// later in the code
+await req.session.regenerate(() => {}); // generate session
+req.session.key = 'value'; // set some values
+await req.session.destroy(() => {}) // destroy session
 ```
 </div></div>
 
@@ -192,4 +220,5 @@ Tutorials
 * Node Mocha Chai
   * [ezekielekunola.com](https://www.blog.ezekielekunola.com/testing-node-api-with-mocha-and-chai)
   * [buddy.works](https://buddy.works/guides/how-automate-nodejs-unit-tests-with-mocha-chai)
+* Express for websites
 </div></div>
