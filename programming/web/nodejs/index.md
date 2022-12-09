@@ -80,6 +80,68 @@ module.exports = router;
 
 <hr class="sep-both">
 
+## 🌟 mocha.js 🌟
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+Mocha is a **testing-framework**. See [GitHub](https://github.com/mochajs/mocha) (21.8k ⭐).
+
+```bash
+$ npm i mocha
+$ npx mocha folder
+```
+
+The two main components are:
+
+* **describe** 📦: a suite of tests
+* **it** 🔨: a test
+
+As for the code of your test, there are many libraries.
+
+<details class="details-e">
+<summary>Assert</summary>
+
+```javascript
+let assert = require('assert');
+
+describe('name', function() {
+    it('name', function () {
+        // examples
+        assert.equal(actuel, expected);
+        assert.ok(boolean);
+        assert.fail();
+        // ...
+    });
+})
+```
+</details>
+
+</div><div>
+
+```javascript
+describe('name', function() {
+    // before: before all tests
+    // beforeEach: before eacht est
+    // ...
+
+    it('name', function () {
+        // your test here
+    });
+
+    // if working with promises
+    it('name', function (done) {
+        asyncCode().then(() => {
+            done(); // test done
+        });
+    });
+    // same
+    it('name', async () => { await asyncCode() });
+})
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
