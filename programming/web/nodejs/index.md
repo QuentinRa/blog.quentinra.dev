@@ -43,6 +43,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(function (req, res, next) {
+    // res.setHeader('Access-Control-Allow-Origin', '*');
+    // res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    // res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+    // res.setHeader('Access-Control-Expose-Headers', 'Custom-header');
+    // res.setHeader('Custom-header', 'value');
+    next();
+});
 
 app.use('/', require('./routes/indexRouter'));
 ```
@@ -55,9 +63,12 @@ app.use('/', require('./routes/indexRouter'));
 const express = require('express');
 const router = express.Router();
 
+// API Routes (GET/POST/PUT/DELETE/...)
 router.get('/', (req, res, next) => {
-    // useful methods
-    res.setHeader('Access-Control-Allow-Origin', '*');
+    // get headers
+    req.get('header-name')
+    req.headers['header-name']
+    // send something to the requester
     res.send(something); // HTML, JSON...
     res.render('index', { title: 'Title' }); // public/index.html
 });
