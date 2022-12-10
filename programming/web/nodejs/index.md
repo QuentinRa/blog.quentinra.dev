@@ -59,13 +59,19 @@ A "local" router is something like this.
 const express = require('express');
 const router = express.Router();
 
-// API Routes "/:id" matches "/users/:id"
+// API Routes "/" matches "/users/"
 // req = requester, res = response
 router.get('/', (req, res) => {});
-router.post('/:id', (req, res) => {});
+router.post('/', (req, res) => {});
+// use can use dynamic routes with params
 router.put('/:id', (req, res) => {});
 router.patch('/:id', (req, res) => {});
 router.delete('/:id', (req, res) => {});
+// extracting params
+router.delete('/:x1/:x2', (req, res) => {
+  const {x1, x2} = req.params;
+  // or use req.params.x1 / req.params.x2
+})
 
 module.exports = router;
 ```
@@ -79,17 +85,21 @@ req.get('header-name')
 req.headers['header-name']
 
 // get GET/POST params
-req.params.key // GET param named "key"
+req.query.param // GET param named "key"
 req.body.key // POST param named "key"
 
 // send something to the requester
-res.send(something); // HTML, JSON...
+res.send(something); // HTML, JSON, XML...
 res.status(404).send(something); // ex: 404 HTTP code
 res.render('index', { title: 'Title' }); // public/index.html
 
 // redirect
 res.redirect('URL');
 ```
+
+<br>
+
+#### Persistence
 
 Adding a session (see [GitHub](https://github.com/expressjs/session))
 
@@ -104,9 +114,58 @@ app.use(session({
 
 // later in the code
 await req.session.regenerate(() => {}); // generate session
-req.session.key = 'value'; // set some values
+req.session.key = 'value'; // store a value
+if (req.session.key) { /* ... */ } // use it
 await req.session.destroy(() => {}) // destroy session
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## socket.io
+
+<div class="row row-cols-md-2"><div>
+
+If you are planning to make a real-time application like
+a tchat, then you should use WebSockets. [socket.io](https://socket.io/)
+is a library helping you handling those. It's like Sockets
+in other application, you would rather create a connection
+and send only data rather than both sending header + data
+each time you want to send something.
+
+````js
+// in the server
+const app = require("express")();
+const port = process.env.PORT || 3000;
+// http only
+const server = require("http").createServer(app);
+const io = require('socket.io')(server);
+
+server.listen(port, () => { console.log('Server listening at port %d', port); });
+
+io.on('connect', (socket) => {
+  console.log(`new connection ${socket.id}`);
+
+  socket.on('command', (arg, cb) => {})
+  
+  // other "on" for other commands
+})
+````
+</div><div>
+
+In the client, you are gonna create a socket with
+the server. Then each time you can to trigger a "on"
+on the server, then call ``socket.emit("event", args)``
+with args the argument. The last one is usually a function
+called ``callback`` that the server will call with the
+result.
+
+You may also add listeners ("on") in the client
+just in case the server emit something.
+
+Well the [examples](https://github.com/socketio/socket.io/tree/master/examples)
+will be more helpful and you should also
+check the [documentation](https://socket.io/get-started/).
 </div></div>
 
 <hr class="sep-both">
