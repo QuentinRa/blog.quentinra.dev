@@ -390,6 +390,28 @@ $ git remote get-url origin
 $ git remote set-url origin NEW_CLONE_URL
 ```
 </details>
+
+* 🦄 **Steal commits from another local+unrelated repository**
+
+<details class="details-n">
+<summary>&nbsp;<code>git remote/fetch/merge</code></summary>
+
+The goal is to "steal" commits from another local repository. For instance, if you started a project from scratch, but you want to get back the previous project commits.
+
+```bash
+# remove everything as you don't want old files
+$ cd AnotherRepository
+$ rm -rf *
+$ git add .
+$ git commit -m "feat: delete everything"
+# move to the other repository
+$ cd ../YourRepository
+$ git remote add other ../AnotherRepository
+$ git fetch other
+$ git merge other/main --allow-unrelated-histories
+# now, your repositories has commits from the previous repository
+```
+</details>
 </div><div>
 
 * 🔎 **Find the commit that messed up your project**
