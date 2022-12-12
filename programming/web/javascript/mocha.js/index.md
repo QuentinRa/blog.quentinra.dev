@@ -131,12 +131,23 @@ describe('name', function() {
 
 <div class="row row-cols-md-2"><div>
 
-[Assert](https://nodejs.org/api/assert.html).
+Node.js provide an assertion library called [assert.js](https://nodejs.org/api/assert.html).
 
-> You can also use [better-assert](https://github.com/tj/better-assert).
+```javascript
+let assert = require('assert');
+```
+
+> You can use [better-assert](https://github.com/tj/better-assert) for c-style asserts.
 </div><div>
 
-...
+```javascript
+it('name', function () {
+    // examples
+    assert.equal(actuel, expected);
+    assert.ok(boolean);
+    assert.fail();
+});
+```
 </div></div>
 
 <hr class="sep-both">
@@ -241,6 +252,10 @@ res.body.should.be.eql('zzz')
 Chai support expect.js BDD assertions. See [expect.js](https://github.com/Automattic/expect.js) (2.1k ⭐).
 
 ```javascript
+// at the top
+chai.expect();
+
+// inside a test
 expect(res).to.have.status(200);
 expect(res).to.be.json;
 expect(res).to.redirectTo("xxx");
@@ -259,37 +274,4 @@ Stuff that I found, but never read/used yet.
 
 * [unexpected.js](https://unexpected.js.org/) (0.4k ⭐)
 </div><div>
-
-
-</div></div>
-
-
-
-<hr class="sep-both">
-
-## To delete
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-As for the code of your test, there are many libraries.
-
-<details class="details-e">
-<summary>Assert</summary>
-
-```javascript
-let assert = require('assert');
-
-describe('name', function() {
-    it('name', function () {
-        // examples
-        assert.equal(actuel, expected);
-        assert.ok(boolean);
-        assert.fail();
-        // ...
-    });
-})
-```
-</details>
-</div><div>
-
 </div></div>
