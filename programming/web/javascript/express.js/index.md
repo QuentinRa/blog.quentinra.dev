@@ -55,25 +55,37 @@ For instance, `app.use(cookieParser())` is a middleware that will parse cookies 
 See also [Express.js/cors middleware](https://github.com/expressjs/cors).
 
 ```javascript
-app.use(function (req, res, next) {
-    // Allow any website (*) to use the API
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-    next()
-});
+const cors = require('cors');
+app.use(
+    cors({
+        origin: 'http://localhost', // ex: allow localhost
+        methods: ["GET", "POST", "PATCH", "PUT", "OPTIONS", "HEAD"],
+        allowedHeaders: ['X-Requested-With', 'content-type']
+    })
+);
 ```
 
-If you want to allow a browser (fetch) to use cookies, then you can't use `*` anymore, and you need to add an additional header.
+Allowing browsers to fetch cookies
 
-```javascript
-app.use(function (req, res, next) {
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-    res.setHeader('Access-Control-Allow-Credentials', 'true');
-    next()
-});
+```diff
+methods: [...],
++ credentials: true,
+```
+
+If you want to use `origin: '*'` (any) with credentials
+
+```diff
+- origin: '*',
++ origin: [ /.*/ ],
+...
+credentials: true,
+```
+
+Allowing multiple origins <small>(you can use regexes...)</small>
+
+```diff
+- origin: 'URL',
++ origin: ['http://localhost', 'http://127.0.0.1' ],
 ```
 </details>
 
@@ -201,7 +213,7 @@ You may want to use cookies to store some data, such as the logged user. We use 
 
 The client will store and return us in every request the **session-id**, which will allow us to load the matching session data.
 
-See [GitHub](https://github.com/expressjs/session).
+See [GitHub](https://github.com/expressjs/session) or [session](https://expressjs.com/en/resources/middleware/session.html).
 
 ```bash
 $ npm i express-session
