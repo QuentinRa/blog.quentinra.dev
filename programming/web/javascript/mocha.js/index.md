@@ -40,11 +40,20 @@ describe('Some tests', function() {
     });
 })
 ```
+
+Inside your `it` blocs, you will use a testing framework
+
+* [Assert.js](#assertions-with-assert)
+* [Chai.js](https://github.com/chaijs/chai) (7.8k ⭐)
+* [Should.js](https://github.com/shouldjs/should.js) (1.9k ⭐, archived)
+
 </div></div>
 
 <hr class="sep-both">
 
 ## Basics
+
+Some additional notes about features mocha has to offer.
 
 <div class="row row-cols-md-2"><div>
 
@@ -56,12 +65,14 @@ describe('Some tests', function() {
     describe('Another bunch', function() {
     })
 
-    // you can add pending test (to-do)
+    // you can add pending test (=to do)
     it('name')
 })
 ```
 
 #### Hooks
+
+These are functions that are run before/after one/every test.
 
 ```javascript
 describe('name', function() {
@@ -79,6 +90,8 @@ describe('name', function() {
 
 #### Skip a test
 
+It's a better practice than to comment out code.
+
 ```javascript
 describe.skip('name', function () {});
 it.skip('name', function () {});
@@ -89,6 +102,8 @@ it('name', function () {
 ```
 
 #### Async tests
+
+Use this to test Promises/async code.
 
 ```javascript
 describe('name', function() {
@@ -112,8 +127,35 @@ describe('name', function() {
 
 <hr class="sep-both">
 
-<div class="row row-cols-md-2 mt-4"><div>
+## Assertions with assert
 
+<div class="row row-cols-md-2"><div>
+
+[Assert](https://nodejs.org/api/assert.html).
+
+> You can also use [better-assert](https://github.com/tj/better-assert).
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Testing requests with chai-http
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## To delete
+
+<div class="row row-cols-md-2 mt-4"><div>
 
 As for the code of your test, there are many libraries.
 
