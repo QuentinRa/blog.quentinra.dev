@@ -145,11 +145,125 @@ describe('name', function() {
 
 <div class="row row-cols-md-2"><div>
 
-...
+This is an extension of chai to deal with HTTP requests.
+
+See [GitHub](https://github.com/chaijs/chai-http) (0.7k ⭐).
+
+```javascript
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+const app = require('../app');
+chai.use(chaiHttp);
+```
+
+For reference, in express, `app.js` is something like that
+
+```javascript
+const app = express();
+module.exports = app;
+```
+
+Then, you can run a test like this
+
+```javascript
+it('name', (done) => {
+    chai.request(app).get('/').end((err, res) => {
+        // yor tests here
+        done()
+    });
+});
+
+// for other requests
+xxx.post('URI').send(body) // post
+xxx.patch('URI').send(body) // patch
+xxx.delete('URI') // delete
+```
+
+It's worth noting that if you do this, then for EVERY test, chai will create an HTTP server, run the request, and close it. You may want to keep the server open for all your tests.
+
+<details class="details-e">
+<summary>Keep the server open</summary>
+
+```javascript
+describe('name', function() {
+    // open connection
+    const requester = chai.request(app).keepOpen();
+
+    it('name', async () => {
+        const res = await requester.post('/').send({});
+        // your tests here
+    });
+
+    after('name', async function () {
+        await requester.close()
+    });
+});
+```
+</details>
+
+<details class="details-e">
+<summary>Login cookie</summary>
+
+This is a follow-up of the dropdown to keep the connection open.
+
+```javascript
+// get it back and save it
+const cookies = res.headers['set-cookie'];
+
+// in every following request
+requester.get('/').set('Cookie', cookies[0]);
+```
+</details>
+
 </div><div>
 
-...
+#### Should.js
+
+Chai support should.js BDD assertions.
+
+```javascript
+// at the top
+chai.should();
+
+// inside a test
+res.should.have.status(200);
+res.body.should.be.a('array');
+res.body.should.be.a('object');
+res.body.length.should.be.eql(0);
+res.body.should.have.a.lengthOf.at.least(2);
+res.body.should.have.property('xxx');
+res.should.have.header('yyy');
+res.body.should.be.eql('zzz')
+```
+
+#### Expect.js
+
+Chai support expect.js BDD assertions. See [expect.js](https://github.com/Automattic/expect.js) (2.1k ⭐).
+
+```javascript
+expect(res).to.have.status(200);
+expect(res).to.be.json;
+expect(res).to.redirectTo("xxx");
+expect(res).to.have.header('yyy');
+expect(req).to.have.cookie('zzz');
+```
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [unexpected.js](https://unexpected.js.org/) (0.4k ⭐)
+</div><div>
+
+
+</div></div>
+
+
 
 <hr class="sep-both">
 
@@ -174,38 +288,6 @@ describe('name', function() {
         // ...
     });
 })
-```
-</details>
-
-<details class="details-e">
-<summary>Chai.js (plugin HTTP)</summary>
-
-See [GitHub](https://github.com/chaijs/chai-http) (0.7k ⭐).
-
-```javascript
-const chai = require('chai');
-const chaiHttp = require('chai-http');
-const app = require('../app');
-
-// setup
-chai.use(chaiHttp);
-chai.should();
-
-chai.request(app)
-    .get('URL') // get
-    .post('URL').send(body) // post
-    .patch('URL').send(body) // patch
-    .delete('URL') // delete
-/*
-res.should.have.status(200);
-res.body.should.be.a('array');
-res.body.should.be.a('object');
-res.body.length.should.be.eql(0);
-res.body.should.have.a.lengthOf.at.least(2);
-res.body.should.have.property('xxx');
-res.should.have.header('yyy');
-res.body.should.be.eql('zzz')
- */
 ```
 </details>
 </div><div>
