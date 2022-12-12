@@ -15,11 +15,63 @@ $ npm audit fix --force
 
 **Understand your generated project**
 
-* ✨ Your server is created inside `/bin/www`
-* 🍹 It will load routes your application `/app.js`
-* 🔥 Your application will use routes, that are stored inside `/routes` and declared/linked inside `/app.js`.
+* ✨ Your server is created inside `/bin/www`. <small>You will most likely never have to edit this file.</small>
+* 🍹 It will load routes your application `/app.js`. <small>You will add "routes" and "middlewares" here.</small>
+* 🔥 Your routes are stored inside `/routes`.
+* 💐 Your public files are stored inside `/public`.
 
 If you are not familiar with routes, HTTP methods/responses codes... Then you should learn that first. [See HTTP protocol](/it/networking/protocols/index.md#-http---80-tcp).
+
+</div></div>
+
+<hr class="sep-both">
+
+## Middlewares
+
+<div class="row row-cols-md-2"><div>
+
+In your **app.js** you should see a lot of `app.use(xxx)`. These are called middleware. A middleware is a function that will prepare the request (**req**)/response (**res**) for usage in routes later.
+
+```javascript
+app.use(function (req, res, next) {
+    // ... do something ...
+    next()
+});
+```
+
+</div><div>
+
+* ✨ Example: cookie parser
+
+For instance, `app.use(cookieParser())` is a middleware that will parse cookies in the request, and store them in `req.cookies`.
+
+* ✨ Example: adding headers
+
+<details class="details-n">
+<summary>CORS headers</summary>
+
+```javascript
+app.use(function (req, res, next) {
+    // Allow any website (*) to use the API
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+    next()
+});
+```
+</details>
+
+<details class="details-n">
+<summary>Custom headers</summary>
+
+```javascript
+app.use(function (req, res, next) {
+    res.setHeader('Access-Control-Expose-Headers', 'Custom-header');
+    res.setHeader('Custom-header', 'value');
+    next()
+});
+```
+</details>
 
 </div></div>
 
@@ -28,20 +80,6 @@ If you are not familiar with routes, HTTP methods/responses codes... Then you sh
 ## Routing
 
 <div class="row row-cols-md-2"><div>
-
-**Middlewares** are functions that will be executed for each request.
-
-```javascript
-// example: adding headers to every response
-app.use(function (req, res, next) {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-    res.setHeader('Access-Control-Expose-Headers', 'Custom-header');
-    res.setHeader('Custom-header', 'value');
-    next(); // pass to the next middleware
-});
-```
 
 Then, we are adding "local" routers for each API route.
 
@@ -99,7 +137,7 @@ res.redirect('URL');
 
 <hr class="sep-both">
 
-#### Persistence
+## Persistence
 
 <div class="row row-cols-md-2"><div>
 
