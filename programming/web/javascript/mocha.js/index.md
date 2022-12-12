@@ -13,6 +13,20 @@ The two main components are
 * 📦 **describe** which is a suite of tests <small>(it)</small>
 * 🛠️ **it** which is a function making tests
 
+To run your tests
+
+```bash
+# run every test file inside a folder
+$ npx mocha folder
+# run some specific tests
+$ npx mocha folder --grep "Some tests" # Some tests
+$ npx mocha folder --grep "test.*" # test1, test2
+```
+
+</div><div>
+
+In a nutshell, the syntax you will use is something like that
+
 ```javascript
 describe('Some tests', function() {
     // you can init variables here
@@ -24,36 +38,30 @@ describe('Some tests', function() {
     it('test2', function () {
         // your test here
     });
-    
+})
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Basics
+
+<div class="row row-cols-md-2"><div>
+
+#### General notes
+
+```javascript
+describe('Some tests', function() {
     // you can nest another describe
+    describe('Another bunch', function() {
+    })
+
     // you can add pending test (to-do)
     it('name')
 })
 ```
 
-#### Run your tests
-
-```bash
-# run every test file inside a folder
-$ npx mocha folder
-# run some specific tests
-$ npx mocha folder --grep "Some tests" # Some tests
-$ npx mocha folder --grep "test.*" # test1, test2
-```
-</div><div>
-
-#### Skip a test
-
-```javascript
-describe.skip('name', () => {});
-it.skip('name', () => {});
-it('name', () => {
-    // ex: call based on a condition... 
-    this.skip();
-});
-```
-
-#### Useful methods
+#### Hooks
 
 ```javascript
 describe('name', function() {
@@ -66,6 +74,18 @@ describe('name', function() {
     // after each test
     afterEach('name', function () {});
 })
+```
+</div><div>
+
+#### Skip a test
+
+```javascript
+describe.skip('name', function () {});
+it.skip('name', function () {});
+it('name', function () {
+    // ex: call based on a condition... 
+    this.skip();
+});
 ```
 
 #### Async tests
