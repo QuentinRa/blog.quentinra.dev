@@ -30,7 +30,7 @@ If you are not familiar with routes, HTTP methods/responses codes... Then you sh
 
 <div class="row row-cols-md-2"><div>
 
-In your **app.js** you should see a lot of `app.use(xxx)`. These are called middleware. A middleware is a function that will prepare the request (**req**)/response (**res**) for usage in routes later.
+In **app.js** you should see a lot of `app.use(xxx)`. These are called middleware. A middleware is a function that will prepare the request (**req**)/response (**res**) for usage in routes later.
 
 ```javascript
 app.use(function (req, res, next) {
@@ -77,16 +77,50 @@ app.use(function (req, res, next) {
 
 <hr class="sep-both">
 
-## Routing
+## Routers
 
 <div class="row row-cols-md-2"><div>
 
-Then, we are adding "local" routers for each API route.
+In **app.js**, you will also define routes. To make things cleaner, we are moving routes to "local" routers in `./routes`. In **app.js**, we are importing (require) local routers, and associating them with an API endpoint.
 
 ```bash
 const usersRouter = require('./routes/users');
 app.use('/users', usersRouter);
 ```
+
+In the scenario above, any requests to the endpoint `/users` will be handled by `usersRouter`. 
+
+⚠️It's important to note that inside a "local" router, routes will be declared relatively to this endpoint. For instance, `/` would be `/users/`.
+
+> Routing should be done **AFTER** every calling every middleware.
+</div><div>
+
+A "local" router is something like this.
+
+```javascript
+// ./routes/users
+const express = require('express');
+const router = express.Router();
+
+// router.get => GET
+// / => /users/
+// req => the request
+// res => the response
+router.get('/', (req, res) => {
+    // ... code ...
+    // send a response
+});
+// add more routes
+
+module.exports = router;
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Routing
+
+<div class="row row-cols-md-2"><div>
 
 A "local" router is something like this.
 
@@ -133,7 +167,6 @@ res.render('index', { title: 'Title' }); // public/index.html
 res.redirect('URL');
 ```
 </div></div>
-
 
 <hr class="sep-both">
 
