@@ -196,6 +196,8 @@ Host: example.com
 # leave a blank line
 ```
 
+##### Method
+
 The **first** element in a request is the method.
 
 * `GET`: get a resource  <small>(ex: return `/index.html`)</small>
@@ -205,21 +207,26 @@ The **first** element in a request is the method.
 * `DELETE`: delete a resource  <small>(ex: delete a user)</small>
 * ...
 
+##### URI
+
 The **second** is called **URI**, which is a path relative to the webserver root. For instance, for `https://example.com/index.html`, the URI is `/index.html`.
+
+##### HTTP versions
 
 HTTP versions that are widely used are `HTTP/1.1`, and `HTTP 2.0`, while `HTTP 3.0` was released in 2022.
 </div><div>
 
-**HTTP Headers**
+##### HTTP Headers
 
 In every HTTP/HTTPS request/response, there are headers that are set both by the client and the server. The format is `Header-name: value`, and anyone can add their own headers.
 
-* `Set-cookie`: the cookies <small>(usually the server add this to create them in the client browser, and the client will send the cookies in every following request)</small>
-* `Host`: one of the domain names associated with the IP of the server
+* `Set-cookie`: The server request the creation of cookies
+* `Cookie`: The client send in every request the created cookies
+* `Host`: one of the domain names hosted by the server
 * `Server:`: name of the HTTP server, maybe the version/OS too
 * ...
 
-**HTTP Response code**
+##### HTTP Response code
 
 When the server answers, it returns an [HTTP response code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) according to how it could handle the request
 
@@ -229,7 +236,7 @@ When the server answers, it returns an [HTTP response code](https://developer.mo
 * `500`: Internal server error
 * ...
 
-**URL-encoding**
+##### URL-encoding
 
 If you are creating a user, you will most likely send the username/... to the server. Aside from `GET`, this data is added after leaving one blank line below the headers. In any case, the data must be URL-encoded as some characters aren't valid in a URL.
 

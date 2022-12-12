@@ -11,6 +11,23 @@ Express can be used to create websites or APIs.
 $ npx --yes --package express-generator express --force --no-view
 $ npm audit fix --force
 ```
+</div><div>
+
+**Understand your generated project**
+
+* ✨ Your server is created inside `/bin/www`
+* 🍹 It will load routes your application `/app.js`
+* 🔥 Your application will use routes, that are stored inside `/routes` and declared/linked inside `/app.js`.
+
+If you are not familiar with routes, HTTP methods/responses codes... Then you should learn that first. [See HTTP protocol](/it/networking/protocols/index.md#-http---80-tcp).
+
+</div></div>
+
+<hr class="sep-both">
+
+## Routing
+
+<div class="row row-cols-md-2"><div>
 
 **Middlewares** are functions that will be executed for each request.
 
@@ -77,10 +94,14 @@ res.render('index', { title: 'Title' }); // public/index.html
 // redirect
 res.redirect('URL');
 ```
+</div></div>
 
-<br>
+
+<hr class="sep-both">
 
 #### Persistence
+
+<div class="row row-cols-md-2"><div>
 
 Adding a session (see [GitHub](https://github.com/expressjs/session))
 
