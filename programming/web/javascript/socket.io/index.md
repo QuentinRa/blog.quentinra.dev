@@ -129,3 +129,95 @@ client.on('connect', () => {
 });
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## Android client (kotlin)
+
+<div class="row row-cols-md-2"><div>
+
+You must add the library in `build.gradle`
+
+```diff
+dependencies {
+    ...
++    implementation ('io.socket:socket.io-client:2.0.0') {
++        exclude group: 'org.json', module: 'json'
++    }
+    ...
+}
+```
+
+Then, let's create a handler for our Socket.io connection.
+
+```kotlin
+package xxx
+
+import io.socket.client.IO
+import io.socket.client.Socket
+import java.net.URISyntaxException
+
+
+object SocketIOHandler {
+    private lateinit var _socket: Socket
+    val socket: Socket
+        get() = _socket
+
+    fun init() {
+        try {
+            _socket = IO.socket("http://10.0.2.2:3000")
+            _socket.connect()
+        } catch (_: URISyntaxException) {}
+    }
+
+    fun dispose() {
+        _socket.disconnect()
+    }
+}
+```
+
+</div><div>
+
+In your Application, you will need to init and close socket.io client. If you don't have one, then create add it to the MANIFEST.
+
+```diff
+    <application
++        android:name=".MainApplication"
+```
+
+```kotlin
+package xxx
+
+import android.app.Application
+import androidx.lifecycle.DefaultLifecycleObserver
+import androidx.lifecycle.LifecycleOwner
+import androidx.lifecycle.ProcessLifecycleOwner
+import xxx.SocketIOHandler
+
+class MainApplication : Application(), DefaultLifecycleObserver {
+override fun onCreate() {
+        super<Application>.onCreate()
+        ProcessLifecycleOwner.get().lifecycle.addObserver(this)
+        SocketIOHandler.init()
+    }
+
+    override fun onDestroy(owner: LifecycleOwner) {
+        super.onDestroy(owner)
+        SocketIOHandler.dispose()
+    }
+}
+```
+
+Then, you're now ready. For instance, in your MainActivity.
+
+```kotlin
+SocketIOHandler.socket.on("event") {
+    // fetch argument (use JSONArray for [])
+    val json = it[0] as JSONObject
+    // fetch values { key: value }
+    val value = json.getString("key")
+    val value = json.getJSONObject("key")
+    // ...
+}
+```
+</div></div>
