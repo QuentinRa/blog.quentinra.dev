@@ -1,18 +1,99 @@
-# 🌟 Testing with mocha.js 🌟
+# Testing with mocha.js
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-md-2"><div>
 
 Mocha is a **testing-framework**. See [GitHub](https://github.com/mochajs/mocha) (21.8k ⭐).
 
 ```bash
 $ npm i mocha
-$ npx mocha folder
 ```
 
-The two main components are:
+The two main components are
 
-* **describe** 📦: a suite of tests
-* **it** 🔨: a test
+* 📦 **describe** which is a suite of tests <small>(it)</small>
+* 🛠️ **it** which is a function making tests
+
+```javascript
+describe('Some tests', function() {
+    // you can init variables here
+    const x1 = {}
+    
+    it('test1', function () {
+        // your test here
+    });
+    it('test2', function () {
+        // your test here
+    });
+    
+    // you can nest another describe
+    // you can add pending test (to-do)
+    it('name')
+})
+```
+
+#### Run your tests
+
+```bash
+# run every test file inside a folder
+$ npx mocha folder
+# run some specific tests
+$ npx mocha folder --grep "Some tests" # Some tests
+$ npx mocha folder --grep "test.*" # test1, test2
+```
+</div><div>
+
+#### Skip a test
+
+```javascript
+describe.skip('name', () => {});
+it.skip('name', () => {});
+it('name', () => {
+    // ex: call based on a condition... 
+    this.skip();
+});
+```
+
+#### Useful methods
+
+```javascript
+describe('name', function() {
+    // before all tests
+    before('name', function () {});
+    // before each test
+    beforeEach('name', function () {});
+    // after all tests
+    after('name', function () {});
+    // after each test
+    afterEach('name', function () {});
+})
+```
+
+#### Async tests
+
+```javascript
+describe('name', function() {
+    it('name', function (done) {
+        asyncCode().then(() => {
+            done(); // test done
+        });
+    });
+    // or
+    it('name', async () => {
+        await asyncCode()
+    });
+
+    // you can set a custom timeout for one test
+    it('name', async () => {
+        await asyncCode()
+    }).timeout(5000); // 5 seconds
+})
+```
+</div></div>
+
+<hr class="sep-both">
+
+<div class="row row-cols-md-2 mt-4"><div>
+
 
 As for the code of your test, there are many libraries.
 
@@ -67,24 +148,4 @@ res.body.should.be.eql('zzz')
 </details>
 </div><div>
 
-```javascript
-describe('name', function() {
-    // before: before all tests
-    // beforeEach: before eacht est
-    // ...
-
-    it('name', function () {
-        // your test here
-    });
-
-    // if working with promises
-    it('name', function (done) {
-        asyncCode().then(() => {
-            done(); // test done
-        });
-    });
-    // same
-    it('name', async () => { await asyncCode() });
-})
-```
 </div></div>
