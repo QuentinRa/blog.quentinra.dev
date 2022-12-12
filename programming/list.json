@@ -2,19 +2,42 @@
   "title": "Programming",
   "description": "Notes about programming languages.",
   "courses": {
-    "🕸️ Web and Android apps 🕸️": [
+    "🕸️ Web 🕸️": [
       {
-        "tag": "web/nodejs/index.md",
+        "tag": "web/apis/index.md",
+        "name": "API",
+        "desc": "Application Programming Interface",
+        "icon": "<i class=\"bi bi-book\"></i>",
+        "hidden": false
+      }
+    ],
+    "🕸️ Web - JavaScript 🕸️": [
+      {
+        "tag": "web/javascript/node.js/index.md",
         "name": "Node.js",
         "desc": "A modern JavaScript environment.",
         "icon": "<i class=\"bi bi-box\"></i>",
         "hidden": false
       },
       {
-        "tag": "web/apis/index.md",
-        "name": "API",
-        "desc": "Application Programming Interface",
-        "icon": "<i class=\"bi bi-book\"></i>",
+        "tag": "web/javascript/express.js/index.md",
+        "name": "Express.js",
+        "desc": "Build websites and APIs.",
+        "icon": "<i class=\"bi bi-box\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "web/javascript/socket.io/index.md",
+        "name": "socket.io",
+        "desc": "Server Push for real-time applications.",
+        "icon": "<i class=\"bi bi-box\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "web/javascript/mocha.js/index.md",
+        "name": "mocha.js",
+        "desc": "Testing with mocha.",
+        "icon": "<i class=\"bi bi-box\"></i>",
         "hidden": false
       }
     ],
