@@ -29,11 +29,20 @@ Socket.io is really easy to use.
 
 * **Listen to an event**: `on("eventName", callback)`
 * **Stop listening to an event**: `off("eventName")`
-* **Stop listening**: `off()`
+* **Stop listening to every event**: `off()`
 * **Emit an event**: `emit("eventName", JSON_DATA)`
 </div><div>
 
-...
+```javascript
+// ex: node client listening to "event"
+client.on("event", (data) => {
+    // send a reply
+    client.emit("event-ack", data)
+
+    // stop listening to event
+    client.off("event")
+})
+```
 </div></div>
 
 <hr class="sep-both">
@@ -61,6 +70,22 @@ app.io.on('connection', () => {
 })
 ```
 
+<details class="details-e">
+<summary>CORS</summary>
+
+See [Handling CORS](https://socket.io/docs/v4/handling-cors/).
+
+Example allowing any host to make requests.
+
+```diff
+- app.io = require('socket.io')(server)
++ app.io = require('socket.io')(server, {
++    cors: {
++        origin: "*"
++    }
++}
+```
+</details>
 </div><div>
 
 And in `app.js`, you must add a middleware

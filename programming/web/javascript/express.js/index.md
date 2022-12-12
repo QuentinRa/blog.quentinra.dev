@@ -52,6 +52,8 @@ For instance, `app.use(cookieParser())` is a middleware that will parse cookies 
 <details class="details-n">
 <summary>CORS headers</summary>
 
+See also [Express.js/cors middleware](https://github.com/expressjs/cors).
+
 ```javascript
 app.use(function (req, res, next) {
     // Allow any website (*) to use the API
