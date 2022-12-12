@@ -30,7 +30,7 @@ If you are not familiar with routes, HTTP methods/responses codes... Then you sh
 
 <div class="row row-cols-md-2"><div>
 
-In **app.js** you should see a lot of `app.use(xxx)`. These are called middleware. A middleware is a function that will prepare the request (**req**)/response (**res**) for usage in routes later.
+In **app.js** you should see a lot of `app.use(xxx)`. These are called middleware. A middleware is a function that will prepare the request (**req**) or the response (**res**) for usage in routes later.
 
 ```javascript
 app.use(function (req, res, next) {
@@ -38,6 +38,8 @@ app.use(function (req, res, next) {
     next()
 });
 ```
+
+> ➡️ It's useful to know if there is some code you want to execute for every/some requests.
 
 </div><div>
 
@@ -122,32 +124,35 @@ module.exports = router;
 
 <div class="row row-cols-md-2"><div>
 
-A "local" router is something like this.
+You can use every HTTP methods
 
 ```javascript
-// ./routes/users
-const express = require('express');
-const router = express.Router();
-
-// API Routes "/" matches "/users/"
-// req = requester, res = response
 router.get('/', (req, res) => {});
 router.post('/', (req, res) => {});
-// use can use dynamic routes with params
-router.put('/:id', (req, res) => {});
-router.patch('/:id', (req, res) => {});
-router.delete('/:id', (req, res) => {});
+router.put('/', (req, res) => {});
+router.patch('/', (req, res) => {});
+router.delete('/', (req, res) => {});
+```
+
+You can also declare "dynamic" routes. For instance, a route `/:id` will take any value after the `/` and store it inside `id`.
+
+```javascript
+router.delete('/:id', (req, res) => {
+    const id = req.params.id
+    // ...
+})
 // extracting params
 router.delete('/:x1/:x2', (req, res) => {
   const {x1, x2} = req.params;
   // or use req.params.x1 / req.params.x2
 })
-
-module.exports = router;
 ```
+
+> You can use regexes inside your dynamic routes! See [Route Paths](https://expressjs.com/en/guide/routing.html#route-paths).
+
 </div><div>
 
-Useful methods
+Useful methods on **req**.
 
 ```javascript
 // get headers
@@ -157,7 +162,11 @@ req.headers['header-name']
 // get GET/POST params
 req.query.key // GET param named "key"
 req.body.key // POST param named "key"
+```
 
+Useful methods on **res**.
+
+```javascript
 // send something to the requester
 res.send(something); // HTML, JSON, XML...
 res.status(404).send(something); // ex: 404 HTTP code
@@ -170,25 +179,52 @@ res.redirect('URL');
 
 <hr class="sep-both">
 
-## Persistence
+## Express handle login
 
 <div class="row row-cols-md-2"><div>
 
-Adding a session (see [GitHub](https://github.com/expressjs/session))
+You may want to use cookies to store some data, such as the logged user. We use a special cookie called session for this purpose. A session is a file on the server in which we can store data.
+
+The client will store and return us in every request the **session-id**, which will allow us to load the matching session data.
+
+See [GitHub](https://github.com/expressjs/session).
+
+```bash
+$ npm i express-session
+```
 
 ```javascript
-// add a middleware
 const session = require('express-session');
+/* ... */
 app.use(session({
     resave: false,
     saveUninitialized: false,
     secret: 'something-random-and-secret'
 }));
+```
+</div><div>
 
-// later in the code
+* **Create a session**
+
+```javascript
 await req.session.regenerate(() => {}); // generate session
+```
+
+* **Store data inside the session**
+
+```javascript
 req.session.key = 'value'; // store a value
-if (req.session.key) { /* ... */ } // use it
+```
+
+* **Read data inside the session**
+
+```javascript
+const value = req.session.key
+```
+
+* **Delete a session**
+
+```javascript
 await req.session.destroy(() => {}) // destroy session
 ```
 </div></div>
