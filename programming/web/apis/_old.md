@@ -1,5 +1,7 @@
 # Introduction
 
+**[Updates notes](index.md)**
+
 There are two parts when dealing with an API
 
 * creation (if you are not using an existing one)

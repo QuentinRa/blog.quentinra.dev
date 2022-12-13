@@ -335,7 +335,7 @@
 				"hidden": false
 			}
 		],
-		"🕸️ &nbsp;Web | Android&nbsp; 🕸️": [
+		"🕸️ &nbsp;Web&nbsp; 🕸️": [
 			{
 				"tag": "info/web/general/index.md",
 				"name": "WEB",
@@ -361,13 +361,6 @@
 				"tag": "info/web/js/index.md",
 				"name": "JavaScript",
 				"desc": "A short introduction to JavaScript used to make interactive websites or required for Node.js/Typescript courses.",
-				"icon": "<i class=\"bi bi-globe\"></i>",
-				"hidden": false
-			},
-			{
-				"tag": "info/android/index.md",
-				"name": "Android",
-				"desc": "Android application development using Android Studio, and Kotlin.",
 				"icon": "<i class=\"bi bi-globe\"></i>",
 				"hidden": false
 			}
