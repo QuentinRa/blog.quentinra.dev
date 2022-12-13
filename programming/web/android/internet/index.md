@@ -18,14 +18,14 @@ Add the permission in your AndroidManifest.xml <small>(above application)</small
 
 There are many library that you may use at some point
 
-* [retrofit](https://github.com/square/retrofit) (40.9k ⭐): HTTP client
+* [retrofit](https://github.com/square/retrofit) (40.9k ⭐): HTTP library
 * [moshi](https://github.com/square/moshi) (8.7k ⭐): JSON library
 * [gson](https://github.com/google/gson) (21.7k ⭐): JSON library
-* [okhttp](https://github.com/square/okhttp) (43.3k ⭐): HTTP library used by retrofit/fuel/...
-* [fuel](https://github.com/kittinunf/fuel) (4.3k ⭐, 👻): HTTP client
-* [volley](https://github.com/google/volley) (3.3k ⭐, 👻): HTTP client
+* [okhttp](https://github.com/square/okhttp) (43.3k ⭐): HTTP client used by retrofit/fuel/...
+* [fuel](https://github.com/kittinunf/fuel) (4.3k ⭐, 👻): HTTP library
+* [volley](https://github.com/google/volley) (3.3k ⭐, 👻): HTTP library
 
-What I defined as HTTP clients are libraries that are providing an interface to do HTTP requests, but aren't the one doing the request.
+What I defined as HTTP libraries are libraries that are providing an interface to an HTTP client, so they aren't the one doing the request.
 
 <details class="details-e">
 <summary>Note about localhost</summary>
@@ -255,6 +255,55 @@ data class Player(
 ```
 </details>
 
+<details class="details-e">
+<summary>Multiple response formats</summary>
+
+After looking around, I found a lot of alternatives, but I didn't like them, so I made my own.
+
+```diff
+private val moshi = Moshi.Builder()
++    .add(XXXXJsonAdapter)
+    .add(KotlinJsonAdapterFactory())
+    .build()
+```
+
+Then, create an Adapter that will map to results to one data class
+
+```diff
+data class Post(val userId: Int,
+                val id: Int,
+                val title: String,
+                val body: String,
++               val error: String?)
+```
+
+```
+// OK: { "userId": 1, "id": 1, "title": "xxx", "body": "yyy" }
+// ERROR: { "message": "xxx" }
+object XXXJsonAdapter {
+    @Suppress("unused") @FromJson
+    fun parse(json: Map<*, *>) : Post {
+        // error result
+        if (json.containsKey("message")) {
+            return Post(
+                -1, -1, "", "", json["message"] as String
+            )
+        }
+        // normal result
+        return Post(
+            json["userId"] as Int,
+            json["id"] as Int,
+            json["title"] as String,
+            json["body"] as String,
+            null // no error
+        )
+    }
+}
+```
+
+Then in the code, simply check if error is null or not.
+</details>
+
 </div></div>
 
 <hr class="sep-both">
@@ -268,8 +317,6 @@ By default, Retrofit do not store/load cookies. It can be solved easily by creat
 ```diff
 + import okhttp3.OkHttpClient
 
-...
-
 private val retrofit = Retrofit.Builder()
     .addConverterFactory(MoshiConverterFactory.create(moshi))
 +    .client(OkHttpClient().newBuilder().cookieJar(SimpleCookieJar()).build())
@@ -277,7 +324,7 @@ private val retrofit = Retrofit.Builder()
     .build()
 ```
 
-The SimpleCookieJar is a class that is storing cookies send by the server, and loading them in the next requests.
+The SimpleCookieJar is a class that is storing cookies received from the server, and loading them in the next requests.
 </div><div>
 
 ```
