@@ -44,7 +44,125 @@ You will also have to edit AndroidManifest.xml and allow HTTP
 
 ## Retrofit
 
-...
+<div class="row row-cols-md-2"><div>
+
+[Retrofit](https://github.com/square/retrofit) is the most used HTTP client.
+
+```
+implementation "com.squareup.retrofit2:retrofit:2.9.0"
+implementation "com.squareup.retrofit2:converter-scalars:2.9.0"
+```
+
+#### Use the API
+
+In an Activity, you will be able to fetch results with the code below.
+
+```kotlin
+CoroutineScope(Dispatchers.IO).launch {
+    Log.d("TAG", RetrofitService.instance.getAllPosts())
+}
+```
+
+But, you should do it inside a ViewModel with viewModelScope
+
+```kotlin
+viewModelScope.launch {
+    Log.d("TAG", RetrofitService.instance.getAllPosts())
+}
+```
+
+#### interface xxxAPI
+
+In the example, this interface is called `JsonPlaceholderAPI`. Name it however you want, but inside you will declare the methods that you will be able to use in the code. See the [documentation](https://square.github.io/retrofit/).
+
+```kotlin
+// create an interface with the routes+methods
+interface JsonPlaceholderAPI {
+    // GET /posts
+    @GET("posts") suspend fun getAllPosts() : String
+    // GET /posts?id=value
+    @GET("posts") suspend fun getPost(@Query("id") id: Int) : String
+    // GET /posts/:id
+    @GET("posts/{id}") suspend fun getPost(@Path("id") id: Int) : String
+    // POST /posts with parameters wrapped in a class
+    @POST("posts") suspend fun getPost(@Body body: SomeWrapper) : String
+    // POST /posts with parameters provided one by one
+    @POST("posts") @FormUrlEncoded suspend fun login(@Field("xxx") xxx: String/*, ...*/) : String
+}
+```
+
+> Yu can remove the return type if the result do not interest you.
+</div><div>
+
+#### RetrofitService
+
+```kotlin
+package xxx
+
+import retrofit2.Retrofit
+import retrofit2.converter.scalars.ScalarsConverterFactory
+import retrofit2.http.GET
+
+private const val BASE_URL = "https://jsonplaceholder.typicode.com"
+
+private val retrofit = Retrofit.Builder()
+    .addConverterFactory(ScalarsConverterFactory.create())
+    .baseUrl(BASE_URL)
+    .build()
+
+// create an interface with the routes+methods
+interface JsonPlaceholderAPI {
+    @GET("posts")
+    suspend fun getAllPosts() : String
+}
+
+object RetrofitService {
+    val instance : JsonPlaceholderAPI by lazy {
+        retrofit.create(JsonPlaceholderAPI::class.java) }
+}
+```
+
+<details class="details-e">
+<summary>Make this code yours</summary>
+
+```diff
+- package xxx
++ package com.my.app
+
+import retrofit2.Retrofit
+import retrofit2.converter.scalars.ScalarsConverterFactory
+import retrofit2.http.GET
+
+- private const val BASE_URL = "https://jsonplaceholder.typicode.com"
++ private const val BASE_URL = "https://MY_URL_HERE"
+
+private val retrofit = Retrofit.Builder()
+    .addConverterFactory(ScalarsConverterFactory.create())
+    .baseUrl(BASE_URL)
+    .build()
+
+- interface JsonPlaceholderAPI {
++ interface MyAPI {
+-    @GET("posts")
+-    suspend fun getAllPosts() : String
++    // add your methods here
+}
+
+object RetrofitService {
+-    val instance : JsonPlaceholderAPI by lazy {
+-        retrofit.create(JsonPlaceholderAPI::class.java) }
++    val instance : MyAPI by lazy {
++        retrofit.create(MyAPI::class.java) }
+}
+```
+</details>
+
+#### expected result
+
+Any request will return a big string with the result inside. The JSON isn't converted to Kotlin as we haven't used any converted yet.
+
+➡️That's why every method inside "xxxAPI" is returning a String.
+</div></div>
 
 <hr class="sep-both">
 
@@ -55,50 +173,6 @@ You will also have to edit AndroidManifest.xml and allow HTTP
 Most of android apps are making requests to a server, mostly to REST API, which take GET/POST/PUT/DELETE/... requests, and returns some JSON/XML. You can do that easily using the [Retrofit Library](https://github.com/square/retrofit).
 
 * You will have to pick a "retrofit" extension according to your needs <small>(You must use Java 8)</small>
-
-<details class="details-e">
-<summary>XXXApiService.kt</summary>
-
-```kotlin
-import retrofit2.Retrofit
-import retrofit2.http.GET
-
-// URL
-private const val BASE_URL = "https://url_to_your_api"
-
-private val retrofit = Retrofit.Builder()
-    // TODO: add the factory
-    .addConverterFactory(xxx)
-    .baseUrl(BASE_URL)
-    .build()
-
-// create an interface with the routes+methods
-interface XXXApiService {
-    @GET("posts")
-    suspend fun getAllPosts() : SomeReturnType
-}
-
-object XXXXApi {
-    val retrofitService : XXXApiService by lazy {
-        retrofit.create(XXXApiService::class.java) }
-}
-```
-
-Then in a ViewModel, you can do something like this
-
-```kotlin
-init {
-    viewModelScope.launch {
-        try {
-            val res = XXXXApi.retrofitService.getAllPosts()
-        } catch(e: Exception) {
-            // ...
-        }
-    }
-}
-```
-
-</details>
 
 <details class="details-e">
 <summary>XXXApiService</summary>
@@ -119,8 +193,6 @@ suspend fun xxx(@Path("id") id: Int): XXX
 ```
 </details>
 </div><div>
-
-**Note**: if you are using localhost, for instance `localhost:3000`, then you must use `http://10.0.2.2:3000/`, as this address will redirect to localhost. You will also have to add `android:usesCleartextTraffic="true"` in your application attributes.
 
 <details class="details-e">
 <summary>Retrofit+JsonToText (use this for an initial test)</summary>
