@@ -41,26 +41,42 @@
         "hidden": false
       }
     ],
+    "🕸️ Web - Android 🕸️": [
+      {
+        "tag": "web/android/general/index.md",
+        "name": "Android",
+        "desc": "How to create Android Applications.",
+        "icon": "<i class=\"bi bi-android\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "web/android/internet/index.md",
+        "name": "Internet",
+        "desc": "How to connect to APIs.",
+        "icon": "<i class=\"bi bi-android\"></i>",
+        "hidden": false
+      }
+    ],
     "✏️ Writing documents ✏️": [
       {
         "tag": "utils/markdown/index.md",
         "name": "Markdown",
         "desc": "Popular language to write simple documents (ex: README.md).",
-        "icon": "<i class=\"bi bi-box\"></i>",
+        "icon": "<i class=\"bi bi-file-earmark-richtext\"></i>",
         "hidden": false
       },
       {
         "tag": "utils/rst/index.md",
         "name": "reStructuredText",
         "desc": "A language to write documentations outside your code with a lot of powerful tools such as generating UML, graphs ... The syntax is like an improved version of Markdown.",
-        "icon": "<i class=\"bi bi-box\"></i>",
+        "icon": "<i class=\"bi bi-file-earmark-richtext\"></i>",
         "hidden": true
       },
       {
         "tag": "utils/latex/index.md",
         "name": "LaTeX",
         "desc": "A language used to write reports, create presentations quite easily and with great style. You may also use it to write math in a website/documents.",
-        "icon": "<i class=\"bi bi-box\"></i>",
+        "icon": "<i class=\"bi bi-file-earmark-richtext\"></i>",
         "hidden": true
       }
     ],
