@@ -1,6 +1,6 @@
 ## My notes about electron
 
-[Go back](..)
+[Go back](../../../../../archives/info/very_old/node)
 
 Starting the app
 

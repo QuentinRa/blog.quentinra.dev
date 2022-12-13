@@ -1,6 +1,6 @@
 ## electron reference
 
-[Go back](..)
+[Go back](../../../../../archives/info/very_old/node)
 
 * <https://medium.com/@johndyer24/creating-and-deploying-an-auto-updating-electron-app-for-mac-and-windows-using-electron-builder-6a3982c0cee6>
 * <https://dev.to/milburngomes/getting-started-with-electronjs-ep9>

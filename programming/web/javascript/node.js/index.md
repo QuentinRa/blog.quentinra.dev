@@ -1,5 +1,7 @@
 # 🚀 Node.js 🚀
 
+**[Old notes](_old.md)**
+
 <div class="row row-cols-md-2 mt-4"><div>
 
 Node.js is a modern JavaScript environment that can be used

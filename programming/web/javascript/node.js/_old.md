@@ -1,5 +1,7 @@
 # Introduction
 
+**[Updates notes](index.md)**
+
 This course will introduce **Node.js**,
 
 * creating an API using **Node.js**

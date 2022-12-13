@@ -1,6 +1,6 @@
 # Promises
 
-[Go back](..)
+[Go back](../../../../../archives/info/very_old/node)
 
 This should be explained in JavaScript course
 but promises are the way we are using the handle

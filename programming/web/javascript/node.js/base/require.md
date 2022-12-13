@@ -1,6 +1,6 @@
 ## Require
 
-[Go back](..)
+[Go back](../../../../../archives/info/very_old/node)
 
 You can import a library (in the dependencies)
 using ``require``

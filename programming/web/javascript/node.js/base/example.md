@@ -1,6 +1,6 @@
 ## Example
 
-[Go back](..)
+[Go back](../../../../../archives/info/very_old/node)
 
 Your file may look like this
 
