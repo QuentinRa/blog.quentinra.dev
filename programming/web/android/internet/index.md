@@ -20,6 +20,7 @@ There are many library/clients to a website
 
 * [retrofit](https://github.com/square/retrofit) (40.9k ⭐): HTTP client
 * [moshi](https://github.com/square/moshi) (8.7k ⭐): JSON library
+* [gson](https://github.com/google/gson) (21.7k ⭐): JSON library
 * [okhttp](https://github.com/square/okhttp) (43.3k ⭐): HTTP library used by retrofit/fuel
 * [fuel](https://github.com/kittinunf/fuel) (4.3k ⭐, 👻): HTTP client
 * [volley](https://github.com/google/volley) (3.3k ⭐, 👻): HTTP client
@@ -48,7 +49,7 @@ You will also have to edit AndroidManifest.xml and allow HTTP
 
 [Retrofit](https://github.com/square/retrofit) is the most used HTTP client.
 
-```
+```gradle
 implementation "com.squareup.retrofit2:retrofit:2.9.0"
 implementation "com.squareup.retrofit2:converter-scalars:2.9.0"
 ```
@@ -166,61 +167,91 @@ Any request will return a big string with the result inside. The JSON isn't conv
 
 <hr class="sep-both">
 
+## Retrofit - moshi
+
+<div class="row row-cols-md-2"><div>
+
+[Moshi](https://github.com/square/moshi) is one of the [converters](https://github.com/square/retrofit/tree/master/retrofit-converters) supported by Retrofit. It's very similar to the popular GSON converter.
+
+**Replace** the previous imports with the two below
+
+```gradle
+implementation 'com.squareup.moshi:moshi-kotlin:1.13.0'
+implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
+```
+
+Then, you need to replace the previous "default" converter
+
+```diff
+- import retrofit2.converter.scalars.ScalarsConverterFactory
++ import com.squareup.moshi.Moshi
++ import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
++ import retrofit2.converter.moshi.MoshiConverterFactory
+
++ private val moshi = Moshi.Builder()
++    .add(KotlinJsonAdapterFactory())
++    .build()
+
+private val retrofit = Retrofit.Builder()
+-    .addConverterFactory(ScalarsConverterFactory.create())
++    .addConverterFactory(MoshiConverterFactory.create(moshi))
+    .baseUrl(BASE_URL)
+    .build()
+```
+</div><div>
+
+Then, you need to define a class to store the JSON responses
+
+```kotlin
+// { "userId": 1, "id": 1, "title": "xxx", "body": "yyy" }
+data class Post(val userId: Int,
+                val id: Int,
+                val title: String,
+                val body: String)
+```
+
+Then, you can replace the return type of your methods
+
+```diff
+interface JsonPlaceholderAPI {
+    @GET("posts")
+-    suspend fun getAllPosts() : String
++    suspend fun getAllPosts() : List<Post>
+}
+```
+
+And now we can adapt our code.
+
+```diff
+CoroutineScope(Dispatchers.IO).launch {
+-    Log.d("TAG", RetrofitService.instance.getAllPosts())
++    val posts = RetrofitService.instance.getAllPosts()
++    posts.forEach {
++        Log.d("TAG", "Post title is:"+it.title)
++    }
+}
+```
+
+And the output will be
+
+```text
+Post title is:sunt aut [...]
+Post title is:qui est esse [...]
+[...]
+```
+
+</div></div>
+
+<hr class="sep-both">
+
 ## Retrofit: sending requests over the internet
 
 <div class="row row-cols-md-2"><div>
 
-Most of android apps are making requests to a server, mostly to REST API, which take GET/POST/PUT/DELETE/... requests, and returns some JSON/XML. You can do that easily using the [Retrofit Library](https://github.com/square/retrofit).
-
-* You will have to pick a "retrofit" extension according to your needs <small>(You must use Java 8)</small>
-
-<details class="details-e">
-<summary>XXXApiService</summary>
-
-[Complete list](https://square.github.io/retrofit/)
-
-```kotlin
-// GET /route
-@GET("route")
-
-// GET /route?id=...
-@GET("route")
-suspend fun xxx(@Query("id") id: Int): XXX
-
-// get a route with injectable parameters
-@GET("parties/{id}")
-suspend fun xxx(@Path("id") id: Int): XXX
-```
-</details>
 </div><div>
 
 <details class="details-e">
-<summary>Retrofit+JsonToText (use this for an initial test)</summary>
-
-```gradle
-implementation "com.squareup.retrofit2:retrofit:2.9.0"
-implementation "com.squareup.retrofit2:converter-scalars:2.9.0"
-```
-
-The factory is the following
-
-```kotlin
-// ...
-addConverterFactory(ScalarsConverterFactory.create())
-// ...
-```
-
-Every method in `XXXApiService` returns a string, the resulting JSON is being converted to a string when using this library.
-</details>
-
-<details class="details-e">
 <summary>Moshi: Json To Kotlin</summary>
-
-```gradle
-// https://github.com/square/moshi
-implementation 'com.squareup.moshi:moshi-kotlin:1.13.0'
-implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
-```
 
 The factory is the following
 
