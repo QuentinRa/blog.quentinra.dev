@@ -16,12 +16,12 @@ Add the permission in your AndroidManifest.xml <small>(above application)</small
 
 </div><div>
 
-There are many library/clients to a website
+There are many library that you may use at some point
 
 * [retrofit](https://github.com/square/retrofit) (40.9k ⭐): HTTP client
 * [moshi](https://github.com/square/moshi) (8.7k ⭐): JSON library
 * [gson](https://github.com/google/gson) (21.7k ⭐): JSON library
-* [okhttp](https://github.com/square/okhttp) (43.3k ⭐): HTTP library used by retrofit/fuel
+* [okhttp](https://github.com/square/okhttp) (43.3k ⭐): HTTP library used by retrofit/fuel/...
 * [fuel](https://github.com/kittinunf/fuel) (4.3k ⭐, 👻): HTTP client
 * [volley](https://github.com/google/volley) (3.3k ⭐, 👻): HTTP client
 
@@ -92,7 +92,7 @@ interface JsonPlaceholderAPI {
 }
 ```
 
-> Yu can remove the return type if the result do not interest you.
+> You can remove the return type if the result do not interest you.
 </div><div>
 
 #### RetrofitService
@@ -259,6 +259,48 @@ data class Player(
 
 <hr class="sep-both">
 
+## Retrofit: cookies/sessions
+
+<div class="row row-cols-md-2"><div>
+
+By default, Retrofit do not store/load cookies. It can be solved easily by creating a CookieJar.
+
+```diff
++ import okhttp3.OkHttpClient
+
+...
+
+private val retrofit = Retrofit.Builder()
+    .addConverterFactory(MoshiConverterFactory.create(moshi))
++    .client(OkHttpClient().newBuilder().cookieJar(SimpleCookieJar()).build())
+    .baseUrl(BASE_URL)
+    .build()
+```
+
+The SimpleCookieJar is a class that is storing cookies send by the server, and loading them in the next requests.
+</div><div>
+
+```
+import okhttp3.Cookie
+import okhttp3.CookieJar
+import okhttp3.HttpUrl
+
+class SimpleCookieJar : CookieJar {
+    private var _cookies : MutableList<Cookie> = mutableListOf()
+
+    override fun saveFromResponse(url: HttpUrl, cookies: MutableList<Cookie>) {
+        _cookies = cookies
+    }
+
+    override fun loadForRequest(url: HttpUrl): MutableList<Cookie> {
+        return _cookies
+    }
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Coil: Load images from the internet
 
 <div class="row row-cols-md-2"><div>
@@ -350,6 +392,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [Fuel example (stripe)](https://stripe.com/docs/payments/accept-a-payment?platform=android&ui=payment-sheet#android-collect-payment-details)
+* [Retrofit errors](https://futurestud.io/tutorials/retrofit-2-simple-error-handling)
 </div><div>
 
 * [glide](https://github.com/bumptech/glide) (33.2k ⭐, images)
