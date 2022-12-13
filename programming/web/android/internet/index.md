@@ -163,6 +163,8 @@ object RetrofitService {
 Any request will return a big string with the result inside. The JSON isn't converted to Kotlin as we haven't used any converted yet.
 
 ➡️That's why every method inside "xxxAPI" is returning a String.
+
+The output is available in the logcat tab after a few seconds.
 </div></div>
 
 <hr class="sep-both">
@@ -198,7 +200,6 @@ private val retrofit = Retrofit.Builder()
     .baseUrl(BASE_URL)
     .build()
 ```
-</div><div>
 
 Then, you need to define a class to store the JSON responses
 
@@ -209,6 +210,7 @@ data class Post(val userId: Int,
                 val title: String,
                 val body: String)
 ```
+</div><div>
 
 Then, you can replace the return type of your methods
 
@@ -227,91 +229,116 @@ CoroutineScope(Dispatchers.IO).launch {
 -    Log.d("TAG", RetrofitService.instance.getAllPosts())
 +    val posts = RetrofitService.instance.getAllPosts()
 +    posts.forEach {
-+        Log.d("TAG", "Post title is:"+it.title)
++        Log.d("TAG", "Post title is: "+it.title)
 +    }
 }
 ```
 
-And the output will be
+And the output in the console will be
 
 ```text
-Post title is:sunt aut [...]
-Post title is:qui est esse [...]
+Post title is: sunt aut [...]
+Post title is: qui est esse [...]
 [...]
 ```
+
+Useful stuff
+
+<details class="details-e">
+<summary>Different names for API fields and attributes</summary>
+
+```kotlin
+// { player_name: "toto" }
+// store "player_name" inside "playerName" 
+data class Player(
+    @Json(name = "player_name") val playerName: String)
+```
+</details>
 
 </div></div>
 
 <hr class="sep-both">
 
-## Retrofit: sending requests over the internet
+## Coil: Load images from the internet
 
 <div class="row row-cols-md-2"><div>
 
-</div><div>
-
-<details class="details-e">
-<summary>Moshi: Json To Kotlin</summary>
-
-The factory is the following
-
-```kotlin
-private val moshi = Moshi.Builder()
-    .add(KotlinJsonAdapterFactory())
-    .build()
-
-// ...
-.addConverterFactory(MoshiConverterFactory.create(moshi))
-// ...
-```
-
-Now, the "hardest" part, is if your API return the following JSON for `/posts` (GET)
-
-```json
-[
-    { "name": "toto" }, 
-    { "name": "tota" } 
-]
-```
-
-Then, you associated method will be
-
-```kotlin
-@GET("posts")
-suspend fun getAllPosts() : List<Post>
-```
-
-And each key in the JSON, must have an attribute in the (data) class Player. If the attribute has a different name than the key, you may use `@Json(name = "name")` for moshi to handle that.
-
-```kotlin
-data class Player(
-    @Json(name = "name") val name: String)
-```
-</details>
-
-<details class="details-e">
-<summary>Load images from the internet</summary>
-
-You can use the [coil](https://github.com/coil-kt/coil) library.
+You can use the [coil](https://github.com/coil-kt/coil) (8.8k ⭐) library.
 
 ```gradle
 implementation "io.coil-kt:coil:1.1.1"
 ```
 
-And in the code
+Example of working imageURL
 
 ```kotlin
-val imgUri = imgUrl.toUri().buildUpon().scheme("https").build()
-imgView.load(imgUri)
-// or
-imgView.load(imgUri) {
-    placeholder(R.drawable.id_of_a_loading_animation)
-    error(R.drawable.id_of_a_broken_image)
+val imageURL = "https://hdqwalls.com/download/far-cry-5-australian-cattle-dog-5k-du-2160x3840.jpg"
+```
+
+And we will consider an ImageView with the id "image_view".
+
+<br>
+
+#### Use with findViewById
+
+```kotlin
+view.findViewById<ImageView>(R.id.image_view).load(imageURL)
+```
+
+<br>
+
+#### Use with View Binding
+
+```kotlin
+binding.imageView.load(imageURL)
+```
+
+<br>
+
+#### Add a placeholder/handle loading errors
+
+```
+imgView.load(imageURL) {
+    placeholder(R.drawable.a_loading_image)
+    error(R.drawable.a_broken_image)
+}
+```
+</div><div>
+
+#### Use with Data Binding
+
+I assume here that you're already familiar with data binding.
+
+```xml
+<!-- xxx is a variable in <data> with an attribute imageURL -->
+<!--You must import app (xmlns:app="http://schemas.android.com/apk/res-auto" in <layout>)  -->
+<!-- we will create loadImage -->
+<ImageView
+    [...]
+    app:loadImage="@{xxx.imageURL}" />
+```
+
+```kotlin
+// see binding adapter, apply for 'kotlin-kapt'
+object BindingAdapters {
+    // you can change the first/second argument name/type
+    // according to the component on which you use it
+    // and the type of the value you are passing to it
+    @BindingAdapter("app:loadImage") @JvmStatic
+    fun someMethodName(imageView: ImageView, imageUrl: String) {
+        imageView.load(imageUrl)
+    }
 }
 ```
 
-To use this with data binding, create a custom attribute (ex: `app:imgUrl`), as explaining in the paragraph about "formatting" in the data binding section, calling the code above.
-</details>
+<br>
+
+#### Convert any URL to HTTPS
+
+```kotlin
+val imgUri = imageURL.toUri().buildUpon().scheme("https").build()
+imgView.load(imgUri)
+```
 </div></div>
 
 <hr class="sep-both">
