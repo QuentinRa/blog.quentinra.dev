@@ -8,7 +8,7 @@ You may also want to check out
 
 * [firebase](https://firebase.google.com/) (auth, server push, 👻)
 
-Add the permission in your AndroidManifest.xml <small>(above application)</small>
+Add the permission in your AndroidManifest.xml <small>(above application)</small> ⭐
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
@@ -302,6 +302,48 @@ object XXXJsonAdapter {
 ```
 
 Then in the code, simply check if error is null or not.
+</details>
+
+<details class="details-e">
+<summary>Prepare/Format results</summary>
+
+See [Custom Type Adapters](https://github.com/square/moshi#custom-type-adapters) for better examples. See also the example above for multiple response formats.
+
+```diff
+private val moshi = Moshi.Builder()
++    .add(XXXXJsonAdapter)
+    .add(KotlinJsonAdapterFactory())
+    .build()
+```
+
+```kotlin
+// mochi will first parse the result in XXX
+data class XXX(@Json(name = "type") val type : Int)
+// but, we want to use a enum instead of an Int
+enum class YYY {
+    AAA,
+    BBB,
+    CCC
+}
+```
+
+```kotlin
+object XXXJsonAdapter {
+    @Suppress("unused") @FromJson
+    fun parse(xxxJson: XXX): YYY {
+        return when(xxxJson.type) {
+            1 -> YYY.AAA
+            2 -> YYY.BBB
+            3 -> YYY.CCC
+        }
+    }
+}
+```
+
+```kotlin
+// in your interface xxxAPI
+suspend fun getXXX() : YYY
+```
 </details>
 
 </div></div>
