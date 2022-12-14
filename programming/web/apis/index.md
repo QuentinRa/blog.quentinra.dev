@@ -80,7 +80,7 @@ $ java -jar openapi-generator-cli.jar generate -g nodejs-express-server -i xxx.y
 paths:
   /some/route:
     get: # post, put, patch, delete
-      summary: A name
+      summary: Creates a product # example
       description: An optional description
       responses:
         '200':
@@ -90,8 +90,6 @@ paths:
         # you can add other codes
         '404': { description: "some description" }
 ```
-
-</div><div>
 
 ##### Schema and Content
 
@@ -111,6 +109,7 @@ content:
 ```
 
 Types are `string`, `array`, `object`, `boolean`, `integer`, `number`, and `null`.
+</div><div>
 
 ##### Defining "classes" = schemas
 
@@ -124,7 +123,11 @@ components:
       properties:
         # description and example are optional
         username: { type: string, description: "desc", example: "toto" }
-        age: { type: integer }
+        # you can add constraints
+        age: 
+          type: integer
+          format: int64
+          minimum: 0
 ```
 
 You can use the reference as follows for a list of User.
@@ -138,5 +141,49 @@ content:
         $ref: '#/components/schemas/User'
 ```
 
+##### Parameters
+
+Add a block parameters, usually below summary/description.
+
+```yaml
+  /products/{id}:
+    get:
+      parameters:
+        # Ex: the path has a dynamic {id}
+        - in: path
+          name: id
+          required: true
+          description: A description
+          schema: # see schema
+            type: integer
+        # You can also request cookies
+        # Ex: request a cookie called cookie.sid
+        - in: cookie
+          name: cookie.sid
+          schema:
+            type: string
+```
+
+##### Body
+
+Add a block requestBody, usually below parameters.
+
+```yaml
+requestBody:
+  required: true
+  # notice that this is a content
+  content:
+    application/json:
+      # example with a JSON object
+      schema:
+        type: object
+        properties:
+          username: { type: string }
+          age: { type: integer }
+```
+
+##### To-do
+
+* Definitions
 
 </div></div>
