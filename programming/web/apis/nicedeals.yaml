@@ -20,10 +20,10 @@ components:
         buyerId: { type: string }
         purchased: { type: boolean }
         locked: { type: boolean }
-      required:
-        - name
-        - description
-        - price
+    Customer:
+      type: object
+      properties:
+        username: { type: string }
 paths:
   /products:
     get:
@@ -36,18 +36,7 @@ paths:
               schema:
                 type: array
                 items:
-                  type: object
-                  properties:
-                    # todo: add constraints + descriptions
-                    id: { type: integer }
-                    name: { type: string }
-                    price: { type: string }
-                    sellerId: { type: string }
-                    description: { type: string }
-                    imageURL: { type: string }
-                    buyerId: { type: string }
-                    purchased: { type: boolean }
-                    locked: { type: boolean }
+                  $ref: '#/components/schemas/Product'
     post:
       summary: Creates a product.
       requestBody:
@@ -55,11 +44,21 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Product'
+              type: object
+              properties:
+                # todo: add constraints
+                name: { type: string }
+                description: { type: string }
+                # todo: check price
+                price: { type: string }
       responses:
         # todo: 201 + body
         '200':
           description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
   /products/{id}:
     get:
       summary: Returns a product by ID.
@@ -82,3 +81,98 @@ paths:
                 $ref: '#/components/schemas/Product'
         '404':
           description: A product with the specified ID was not found.
+    # todo:
+    patch:
+      summary: Edit a product
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The product's Id
+          schema:
+            type: integer
+            format: int64
+            minimum: 0
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                # todo: see POST notes
+                name: { type: string }
+                description: { type: string }
+                price: { type: string }
+                imageURL: { type: string }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        '401': { description: "Login required." }
+        '403': { description: "Not allowed to edit this product." }
+        '404': { description: "A product with the specified ID was not found." }
+    delete:
+      summary: Delete a product
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The product's Id
+          schema:
+            type: integer
+            format: int64
+            minimum: 0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: boolean
+        '401': { description: "Login required." }
+        '403': { description: "Not allowed to delete this product." }
+        '404': { description: "A product with the specified ID was not found." }
+  /customer:
+    get:
+      summary: Returns the logged customer data.
+      responses:
+        '200':
+          description: OK
+          content: { application/json: { schema: { $ref: '#/components/schemas/Customer' } } }
+        '401': { description: "Login required." }
+  # todo: cookie
+  /customer/login:
+    post:
+      summary: Login.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        '400': { description: "Invalid API usage." }
+  /customer/logout:
+    post:
+      summary: Logout.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: boolean
+                example: true
