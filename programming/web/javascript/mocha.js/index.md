@@ -274,4 +274,8 @@ Stuff that I found, but never read/used yet.
 
 * [unexpected.js](https://unexpected.js.org/) (0.4k ⭐)
 </div><div>
+
+* Node Mocha Chai
+  * [ezekielekunola.com](https://www.blog.ezekielekunola.com/testing-node-api-with-mocha-and-chai)
+  * [buddy.works](https://buddy.works/guides/how-automate-nodejs-unit-tests-with-mocha-chai)
 </div></div>

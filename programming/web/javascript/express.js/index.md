@@ -254,3 +254,17 @@ const value = req.session.key
 await req.session.destroy(() => {}) // destroy session
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* Express
+  * [Stripe](https://www.youtube.com/watch?v=rPR2aJ6XnAc)
+  * Express for Websites
+</div><div>
+</div></div>

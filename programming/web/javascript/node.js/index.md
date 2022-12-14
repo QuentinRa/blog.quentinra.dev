@@ -32,10 +32,4 @@ Stuff that I found, but never read/used yet.
 Tutorials
 
 * [logrocket](https://blog.logrocket.com/how-to-set-up-node-typescript-express/)
-* Node Mocha Chai
-  * [ezekielekunola.com](https://www.blog.ezekielekunola.com/testing-node-api-with-mocha-and-chai)
-  * [buddy.works](https://buddy.works/guides/how-automate-nodejs-unit-tests-with-mocha-chai)
-* Express
-  * [Stripe](https://www.youtube.com/watch?v=rPR2aJ6XnAc)
-  * Express for Websites
 </div></div>
