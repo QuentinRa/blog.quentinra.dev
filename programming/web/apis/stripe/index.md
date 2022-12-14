@@ -44,6 +44,41 @@ Testing
 * `4000 0000 0000 9995` (any CVC/...): Refused
 </div></div>
 
+<hr class="sep-both">
+
+## Node.js (server)
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+Generate a payment intent
+
+```javascript
+await stripe.paymentIntents.create({
+    amount: 1400, // calculate the price
+    currency: "usd",
+    payment_method_types: ['card'],
+    // optional; you can store custom data
+    // metadata: {
+    //     key: value
+    // }
+}).then(r => res.json({ id: r.id, clientSecret: r.client_secret }) )
+```
+
+Retrieve a payment intent
+
+```javascript
+const paymentIntent = await stripe.paymentIntents.retrieve('pi_id')
+// see status
+if (paymentIntent.status === 'succeeded') { /* ... */ }
+```
+</div><div>
+
+Delete a payment intent
+
+```javascript
+const paymentIntent = await stripe.paymentIntents.cancel('pi_id')
+```
+</div></div>
 
 <hr class="sep-both">
 
