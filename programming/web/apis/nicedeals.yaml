@@ -41,13 +41,12 @@ paths:
             schema:
               type: object
               properties:
-                # todo: add constraints (price...)
+                # todo: add constraints (price...) - same for patch
                 name: { type: string }
                 description: { type: string }
                 price: { type: string }
       responses:
-        # todo: 201
-        '200':
+        '201':
           description: Created
           content: { application/json: { schema: { $ref: '#/components/schemas/Product' } } }
         '400': { description: "Invalid API usage." }
@@ -63,6 +62,7 @@ paths:
             type: integer
             format: int64
             minimum: 0
+            example: 1
       responses:
         '200':
           description: OK
@@ -71,6 +71,9 @@ paths:
           description: A product with the specified ID was not found.
     patch:
       summary: Edit a product
+      description: >
+        There is no need to send unchanged properties.
+        Sending `{}` works fine and changes nothing.
       parameters:
         - name: id
           in: path
@@ -87,7 +90,6 @@ paths:
             schema:
               type: object
               properties:
-                # todo: see POST notes
                 name: { type: string }
                 description: { type: string }
                 price: { type: string }
@@ -103,14 +105,7 @@ paths:
     delete:
       summary: Delete a product
       parameters:
-        - name: id
-          in: path
-          required: true
-          description: The product's Id
-          schema:
-            type: integer
-            format: int64
-            minimum: 0
+        - $ref: '#/definitions/ProductId'
       responses:
         '200':
           description: OK
@@ -142,10 +137,7 @@ paths:
       responses:
         '200':
           description: OK
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Customer'
+          content: { application/json: { schema: { $ref: '#/components/schemas/Customer' } } }
         '400': { description: "Invalid API usage." }
   /customer/logout:
     post:
@@ -158,3 +150,48 @@ paths:
               schema:
                 type: boolean
                 example: true
+  /stripe/checkout:
+    post:
+      summary: Ask for payment intent
+      description: >
+        Generate a payment intent and lock the product for **30** seconds. The client
+        will use the payment intent's **clientSecret** to show a payment page using Stripe client.<br><br>
+        Then, the `/stripe/validate` route should be called to finalize the purchase.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { type: object, properties: { productId: { type: string } } }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  # todo: add errors
+                  id: { type: string }
+                  clientSecret: { type: string }
+  /stripe/validate:
+    post:
+      summary: Validate a purchase
+      description: >
+        A purchase will be marked as locked, but not purchased, until the client calls /validate.<br>
+        Only the payment intent Id of the `/stripe/checkout` response must be provided.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties: { paymentIntentId: { type: string } }
+              example: { paymentIntentId: 'pi_3MDdYMALDsGVpaqD0BMkf6TZ' }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: boolean
+        '400': { description: "Invalid API usage." }
