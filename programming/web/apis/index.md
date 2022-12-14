@@ -40,7 +40,13 @@ Some notes about APIs
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-```
+[OpenAPI](https://swagger.io/specification/) is a wonderful project to create API. You will define a specification, and you will be able to generate the node in many language from the specification. 
+
+Many API specifications are available [here](https://app.swaggerhub.com/search).
+
+Base template for a OAS3 <small>(OpenAPI Specification Version 3)</small> in YAML
+
+```yaml
 openapi: 3.0.3
 info:
   title: API NAME
@@ -52,6 +58,10 @@ servers:
 paths:
   # Add your paths here
 ```
+
+To generate a server from a specification, you can use [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator) (14.3k ⭐).
+
+> In **PHPStorm**, everything is already set up for you, you even got schema verification. See [OpenAPI](https://www.jetbrains.com/help/phpstorm/openapi.html).
 </div><div>
 
 </div></div>
