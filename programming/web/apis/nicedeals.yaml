@@ -34,6 +34,7 @@ paths:
           content: { application/json: { schema: { type: array, items: { $ref: '#/components/schemas/Product' } } } }
     post:
       summary: Creates a product.
+      parameters: [ { in: cookie, name: cookie.sid, schema: { type: string } } ]
       requestBody:
         required: true
         content:
@@ -83,6 +84,7 @@ paths:
             type: integer
             format: int64
             minimum: 0
+        - { in: cookie, name: cookie.sid, schema: { type: string } }
       requestBody:
         required: true
         content:
@@ -106,6 +108,7 @@ paths:
       summary: Delete a product
       parameters:
         - $ref: '#/definitions/ProductId'
+        - { in: cookie, name: cookie.sid, schema: { type: string } }
       responses:
         '200':
           description: OK
@@ -116,6 +119,7 @@ paths:
   /customer:
     get:
       summary: Returns the logged customer data.
+      parameters: [ { in: cookie, name: cookie.sid, schema: { type: string } } ]
       responses:
         '200':
           description: OK
@@ -157,6 +161,7 @@ paths:
         Generate a payment intent and lock the product for **30** seconds. The client
         will use the payment intent's **clientSecret** to show a payment page using Stripe client.<br><br>
         Then, the `/stripe/validate` route should be called to finalize the purchase.
+      parameters: [ { in: cookie, name: cookie.sid, schema: { type: string } } ]
       requestBody:
         required: true
         content:
@@ -179,6 +184,7 @@ paths:
       description: >
         A purchase will be marked as locked, but not purchased, until the client calls /validate.<br>
         Only the payment intent Id of the `/stripe/checkout` response must be provided.
+      parameters: [ { in: cookie, name: cookie.sid, schema: { type: string } } ]
       requestBody:
         required: true
         content:
