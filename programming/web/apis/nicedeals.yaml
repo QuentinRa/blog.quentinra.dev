@@ -1,0 +1,84 @@
+openapi: 3.0.3
+info:
+  title: NiceDeals
+  description: NiceDeals
+  version: 1.0.0
+servers:
+  - url: 'http://localhost:3000'
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        # todo: add constraints + descriptions
+        id: { type: integer }
+        name: { type: string }
+        price: { type: string }
+        sellerId: { type: string }
+        description: { type: string }
+        imageURL: { type: string }
+        buyerId: { type: string }
+        purchased: { type: boolean }
+        locked: { type: boolean }
+      required:
+        - name
+        - description
+        - price
+paths:
+  /products:
+    get:
+      summary: Returns a list of products.
+      responses:
+        '200':
+          description: A JSON array of products
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    # todo: add constraints + descriptions
+                    id: { type: integer }
+                    name: { type: string }
+                    price: { type: string }
+                    sellerId: { type: string }
+                    description: { type: string }
+                    imageURL: { type: string }
+                    buyerId: { type: string }
+                    purchased: { type: boolean }
+                    locked: { type: boolean }
+    post:
+      summary: Creates a product.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        # todo: 201 + body
+        '200':
+          description: Created
+  /products/{id}:
+    get:
+      summary: Returns a product by ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The product's Id
+          schema:
+            type: integer
+            format: int64
+            minimum: 0
+      responses:
+        # todo: ...
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        '404':
+          description: A product with the specified ID was not found.

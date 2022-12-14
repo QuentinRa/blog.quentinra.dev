@@ -33,3 +33,25 @@ Some notes about APIs
 * [Stripe](stripe/index.md) (payments)
 
 </div></div>
+
+<hr class="sep-both">
+
+## OpenAPI
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+```
+openapi: 3.0.3
+info:
+  title: API NAME
+  description: >
+    API DESCRIPTION. You can use Markdown.
+  version: 1.0.0
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  # Add your paths here
+```
+</div><div>
+
+</div></div>
