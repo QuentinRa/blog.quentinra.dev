@@ -31,5 +31,4 @@ Some APIs
 Some notes about APIs
 
 * [Stripe](stripe/index.md) (payments)
-
 </div></div>

@@ -90,5 +90,4 @@ As a client, you should care the most about the server response code. **Remember
 You may use these to document your API.
 
 * [apiary](https://apiary.io/) (reader can test your API from the documentation, can be linked with github)
-* [redoc](https://github.com/Redocly/redoc)
 * [stoplight](https://stoplight.io/)

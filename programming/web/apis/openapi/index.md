@@ -50,7 +50,14 @@ $ java -jar openapi-generator-cli.jar generate -g nodejs-express-server -i xxx.y
 > In **PHPStorm**, everything is already set up for you, you even got schema verification. See [OpenAPI](https://www.jetbrains.com/help/phpstorm/openapi.html).
 </div><div>
 
-...
+#### Documentation
+
+I haven't test other tools, but with the popular [Redoc](https://github.com/Redocly/redoc) (19.1k ⭐) you simply have to
+
+* Copy the [following HTML](https://github.com/Redocly/redoc#deployment) on your web server
+* Replace the URL with the link your to YAML file
+
+And you're done. See [Redoc quickstart](https://redocly.com/docs/redoc/quickstart/).
 </div></div>
 
 <hr class="sep-both">
@@ -271,48 +278,50 @@ content:
 
 <hr class="sep-both">
 
-<div class="row row-cols-md-2 mt-4"><div>
-</div><div>
+## Requests
 
-##### Parameters
+<div class="row row-cols-md-2"><div>
 
-Add a block parameters, usually below summary/description.
+#### Parameters
+
+A query is a parameter in the URL. This is usually used for GET parameters.
 
 ```yaml
-  /products/{id}:
+paths:
+  /some/route:
     get:
       parameters:
-        # Ex: the path has a dynamic {id}
+        # ex: /user?id=some_value
         - in: query
           name: id
           required: true
           description: A description
           schema: # see schema
-            type: integer
-        # You can also request cookies
-        # Ex: request a cookie called cookie.sid
+```
+
+</div><div>
+
+You could also request a cookie inside parameters.
+
+```yaml
+        # ex: cookie
         - in: cookie
           name: cookie.sid
           schema:
             type: string
 ```
 
-##### Body
+#### Body
 
-Add a block requestBody, usually below parameters.
+Mostly for POST/PATCH/PUT requests.
 
 ```yaml
-requestBody:
-  required: true
-  # notice that this is a content
-  content:
-    application/json:
-      # example with a JSON object
-      schema:
-        type: object
-        properties:
-          username: { type: string }
-          age: { type: integer }
+paths:
+  /some/route:
+    post:
+      requestBody:
+        required: true
+        content: # see content
 ```
 
 </div></div>
@@ -329,10 +338,12 @@ Stuff that I found, but never read/used yet.
 * [Full spec](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md)
 * [What's new in OpenAPI 3.0](https://swagger.io/blog/news/whats-new-in-openapi-3-0/)
 * [MangaDex](https://api.mangadex.org/docs/swagger.html)
+* [create-openapi-repo](https://github.com/Redocly/create-openapi-repo)
 
 Stuff
 
 * oneOf, anyOf, not
+* see how to generate code samples
 </div><div>
 
 * [params](https://swagger.io/docs/specification/describing-parameters/)
