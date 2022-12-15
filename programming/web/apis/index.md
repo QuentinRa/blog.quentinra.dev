@@ -25,7 +25,7 @@ Some APIs
 * [myanimelist API](https://myanimelist.net/apiconfig/references/api/v2) (mangas, anime, ...) or [jikan](https://jikan.moe/) (unofficial MAL API)
 * [pokemon API](https://pokeapi.co/)
 * [Paypal API](https://developer.paypal.com/docs/api/overview/) (payments)
-* [Mangadex API](https://api.mangadex.org/docs.html) (manga reader)
+* [MangaDex API](https://api.mangadex.org/docs/) (manga reader)
 * ...
 
 Some notes about APIs

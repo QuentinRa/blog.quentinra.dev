@@ -12,10 +12,6 @@ Web services that offer this architecture are known as RESTful service.
 https://github.com/controlook-zz/standards/blob/master/backend/rest-api-guidelines.md
 https://stackoverflow.com/questions/2965746/how-do-you-prevent-brute-force-attacks-on-restful-data-services
 
-https://github.com/md-y/mangadex-full-api
-https://github.com/ejnshtein/mangadex-api
-https://www.npmjs.com/package/mangadex-api
-
 https://reqbin.com/
 
 https://stepzen.com/blog/designing-graphql-apis-best-practices-and-learnings-from-rest-api-design

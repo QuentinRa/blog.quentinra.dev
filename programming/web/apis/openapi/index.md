@@ -12,6 +12,7 @@ Many API specifications are available [here](https://app.swaggerhub.com/search).
 
 * [About](https://swagger.io/docs/specification/about/)
 * [Specification](https://swagger.io/specification/)
+* [OpenAPI Tools](https://openapi.tools/)
 
 </div><div>
 
@@ -98,7 +99,7 @@ schema:
 }
 ```
 
-Has the schema
+Give us the schema:
 
 ```yaml
 schema:
@@ -244,7 +245,7 @@ Add a block parameters, usually below summary/description.
     get:
       parameters:
         # Ex: the path has a dynamic {id}
-        - in: path
+        - in: query
           name: id
           required: true
           description: A description
@@ -289,6 +290,7 @@ Stuff that I found, but never read/used yet.
 * [Basic Structure](https://swagger.io/docs/specification/basic-structure/)
 * [Full spec](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md)
 * [What's new in OpenAPI 3.0](https://swagger.io/blog/news/whats-new-in-openapi-3-0/)
+* [MangaDex](https://api.mangadex.org/docs/swagger.html)
 </div><div>
 
 * [params](https://swagger.io/docs/specification/describing-parameters/)
