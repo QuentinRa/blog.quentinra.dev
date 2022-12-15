@@ -14,6 +14,13 @@
               "desc": "Application Programming Interface",
               "icon": "<i class=\"bi bi-book\"></i>",
               "hidden": false
+            },
+            {
+              "tag": "web/apis/openapi/index.md",
+              "name": "OpenAPI",
+              "desc": "Generate API code/documentation/... from a specification.",
+              "icon": "<i class=\"bi bi-book\"></i>",
+              "hidden": false
             }
           ],
           "🕸️ Web - JavaScript 🕸️": [
