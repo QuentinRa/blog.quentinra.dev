@@ -13,7 +13,7 @@
       {
         "tag": "networking/protocols/index.md",
         "name": "Protocols & services",
-        "desc": "Learn more about Telnet, SSH, FTP, SCP/SFTP, HTTP, HTTPS, SMTP, POP3, IMAP...",
+        "desc": "Learn more about Telnet, SSH, FTP, SCP/SFTP, HTTP, HTTPS, SMTP, POP3, IMAP, Samba, NFS, RDP...",
         "icon": null,
         "hidden": false
       },
@@ -25,32 +25,32 @@
         "hidden": false
       }
     ],
-    "🛸 IT Development 🛸": [
+    "🛸 IT Project 🛸": [
       {
-        "tag": "dev/hmi/index.md",
+        "tag": "project/hmi/index.md",
         "name": "HMI",
         "desc": "Learn about what you must think before making an interface. Tools to make mock-ups are also listed here.",
         "icon": "<i class=\"bi bi-window\"></i>",
         "hidden": false
       },
       {
-        "tag": "dev/git/index.md",
-        "name": "Git",
-        "desc": "Git is the most famous version control tool. As a programmer, you must learn it.",
-        "icon": "<i class=\"bi bi-github\"></i>",
-        "hidden": false
-      }
-    ],
-    "💻 IT Project Management 💻": [
-      {
         "tag": "project/agile-scrum/index.md",
         "name": "Agile scrum",
         "desc": "A project framework/methodology following the Agile mindset.",
         "icon": "<i class=\"bi bi-shield-lock\"></i>",
         "hidden": false
+      }
+    ],
+    "💻 IT Project - Version control 💻": [
+      {
+        "tag": "dev/git/index.md",
+        "name": "Git",
+        "desc": "Git is the most famous version control tool. As a programmer, you must learn it.",
+        "icon": "<i class=\"bi bi-github\"></i>",
+        "hidden": false
       },
       {
-        "tag": "project/git/index.md",
+        "tag": "dev/git-project/index.md",
         "name": "Git projects",
         "desc": "Notes about making projects using Git.",
         "icon": "<i class=\"bi bi-github\"></i>",

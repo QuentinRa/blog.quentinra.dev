@@ -134,7 +134,7 @@ This is a compilation of notes, mainly for testing a website, but you should be 
   * test removing fields, is it robust?
   * test if your website is **usable** 
     * not tiring to use
-    * you may check the [HMI course](../../../it/dev/hmi/index.md)
+    * you may check the [HMI course](../../../it/project/hmi/index.md)
   * test that the animations are working (hover, click, ...)
 * check for adaptivity (mobile, tablet, other resolutions)
   * configured to work on mobiles (the viewport line)

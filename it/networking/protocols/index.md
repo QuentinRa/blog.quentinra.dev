@@ -207,9 +207,9 @@ The **first** element in a request is the method.
 * `DELETE`: delete a resource  <small>(ex: delete a user)</small>
 * ...
 
-##### URI
+##### Path/Route
 
-The **second** is called **URI**, which is a path relative to the webserver root. For instance, for `https://example.com/index.html`, the URI is `/index.html`.
+The **second** is called **Path**/**Route**. It's a path relative to the webserver root. For instance, for `https://example.com/index.html`, the path is `/index.html`.
 
 ##### HTTP versions
 

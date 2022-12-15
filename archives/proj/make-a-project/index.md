@@ -1,6 +1,6 @@
 # Make a project
 
-If you're wondering what's the vocabulary used when doing a project, how you could write your specifications or organize your project, then you're in the right place. If you're making an IT project, then we have some [additional knowledge here](../../../it/project/git/todo/index.md).
+If you're wondering what's the vocabulary used when doing a project, how you could write your specifications or organize your project, then you're in the right place. If you're making an IT project, then we have some [additional knowledge here](../../../it/dev/git-project/todo/index.md).
 
 Honestly, this is a boring yet interesting theoretical course. You will learn a lot of things, but there is a lot of vocabulary. I will try to present it to you in a useful way so that you will enjoy the course. You will learn
 

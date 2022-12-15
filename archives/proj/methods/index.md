@@ -44,7 +44,7 @@ Since I don't like wasting my time, I think you should
 * do a mock-up of your application (with events... maybe in Bootstrap/JS or using an app)
 * then do the **MDD** method
 
-By doing so, you will most likely find more things than doing, again and again, loops, using the sequence diagram to find the missing classes/attributes/relationships... Or coding, then going back to update the model... I'm using Bootstrap, and it makes' it easy to create a mock-up (at least I'm doing this for all my apps, and I feel like it's worth it). Check the [HMI](../../../it/dev/hmi/index.md) course to get some help.
+By doing so, you will most likely find more things than doing, again and again, loops, using the sequence diagram to find the missing classes/attributes/relationships... Or coding, then going back to update the model... I'm using Bootstrap, and it makes' it easy to create a mock-up (at least I'm doing this for all my apps, and I feel like it's worth it). Check the [HMI](../../../it/project/hmi/index.md) course to get some help.
 
 <hr class="sr">
 

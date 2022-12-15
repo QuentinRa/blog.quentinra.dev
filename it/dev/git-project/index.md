@@ -414,6 +414,10 @@ Badges
 
 * [OpenSSF Best Practices Badge](https://github.com/coreinfrastructure/best-practices-badge)
 * [holopin](https://www.holopin.io/)
+
+GitHub features
+
+* Discussions
 </div><div>
 
 Random
