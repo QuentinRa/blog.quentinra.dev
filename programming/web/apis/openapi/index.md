@@ -74,7 +74,7 @@ schema:
 
 ```yaml
 schema:
-  type: string
+  type: array
   # type of one element
   items: # a schema
     - type: string
@@ -123,6 +123,22 @@ Schema have more attributes than just a type if you need them.
 ```yaml
 schema:
   type: string
+  format: email
+```
+
+```yaml
+schema:
+  type: array
+  uniqueItems: true
+  minItems: 0
+  maxItems: 5
+```
+
+```yaml
+schema:
+  type: xxx
+  readOnly: true # GET only
+  writeOnly: true # POST/...
   description: desc
   example: "1"
 ```
@@ -133,6 +149,16 @@ schema:
   type: integer
   format: int64
   minimum: 0
+```
+
+```yaml
+schema:
+  type: object
+  additionalProperties: true
+  minProperties: 0
+  maxProperties: 4
+  required:
+    - id
 ```
 </div></div>
 
@@ -222,18 +248,30 @@ paths:
 
 <hr class="sep-both">
 
-<div class="row row-cols-md-2 mt-4"><div>
+## 📦 Content 📦
 
-##### Content
+<div class="row row-cols-md-2"><div class="align-self-center">
+
+Another block always seen in many responses, bodies, or parameters is **content**.
 
 A content englobes content-types <small>(ex: json)</small> with their associated schema <small>(ex: PersonJSON)</small>.
+</div><div>
 
 ```yaml
+# ex: if you support both JSON and HTML
 content:
-  application/json: # could be XML... see supported formats.
+  application/json:
     schema:
       # insert your schema here
+  text/html:
+    schema:
+      # ...
 ```
+</div></div>
+
+<hr class="sep-both">
+
+<div class="row row-cols-md-2 mt-4"><div>
 </div><div>
 
 ##### Parameters
@@ -291,6 +329,10 @@ Stuff that I found, but never read/used yet.
 * [Full spec](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md)
 * [What's new in OpenAPI 3.0](https://swagger.io/blog/news/whats-new-in-openapi-3-0/)
 * [MangaDex](https://api.mangadex.org/docs/swagger.html)
+
+Stuff
+
+* oneOf, anyOf, not
 </div><div>
 
 * [params](https://swagger.io/docs/specification/describing-parameters/)
