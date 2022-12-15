@@ -33,9 +33,11 @@ paths:
 
 <hr class="sep-both">
 
-<div class="row row-cols-md-2 mt-4"><div>
+## 🚀 Generation 🚀
 
-#### Generate server-side code
+<div class="row row-cols-md-2 mt-3"><div>
+
+#### API Server-side code
 
 To generate a server from a specification, you can use [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator) (14.3k ⭐). See [Install](https://openapi-generator.tech/docs/installation).
 
@@ -45,6 +47,115 @@ $ java -jar openapi-generator-cli.jar generate -g nodejs-express-server -i xxx.y
 ```
 
 > In **PHPStorm**, everything is already set up for you, you even got schema verification. See [OpenAPI](https://www.jetbrains.com/help/phpstorm/openapi.html).
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## 🪵 Schema 🪵
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+A schema is a definition of something. It's pretty much like a class in Oriented object programming. 7 types are supported which are `string`, `array`, `object`, `boolean`, `integer`, `number`, and `null`.
+
+<div class="row row-cols-md-2"><div>
+
+**String example**
+
+```yaml
+schema:
+  type: string
+```
+
+**Array example**
+
+```yaml
+schema:
+  type: string
+  # type of one element
+  items: # a schema
+    - type: string
+```
+</div><div>
+
+**Object example**
+
+```json
+{
+    "username": "toto",
+    "age": 0
+}
+```
+
+Has the schema
+
+```yaml
+schema:
+  type: object
+  properties:
+    username: # a schema
+      type: string
+    age: # a schema
+      type: integer
+```
+</div></div>
+
+</div><div>
+
+#### Schema attributes
+
+Schema have more attributes than just a type if you need them.
+
+<div class="row row-cols-md-2"><div>
+
+```yaml
+schema:
+  type: string
+  description: desc
+  example: "1"
+```
+</div><div>
+
+```yaml
+schema:
+  type: integer
+  format: int64
+  minimum: 0
+```
+</div></div>
+
+<br>
+
+#### Schema references
+
+You may want to avoid copy-pasting the same schema. You can store them in a section **components** <small>(above "paths:" for me)</small>
+
+<div class="row row-cols-md-2"><div>
+
+```yaml
+components:
+  schemas:
+    ProductIdParameter:
+      type: string
+      example: "1"
+```
+</div><div>
+
+In the code, you will use **$ref**
+
+```yaml
+schema:
+  $ref: '#/components/schemas/ProductIdParameter'
+```
+</div></div>
+
+</div></div>
+
+<hr class="sep-both">
+
+<div class="row row-cols-md-2 mt-4"><div>
 
 #### Write your YAML
 
@@ -65,29 +176,17 @@ paths:
         '404': { description: "some description" }
 ```
 
-##### Schema and Content
+##### Content
 
-You will have two attributes that are coming back often: **schema** and **content**. A schema is the structure of something <small>(properties, types)</small>. In other languages, it's like defining a class. A content englobes content-types <small>(ex: json)</small> with their associated schema <small>(ex: PersonJSON)</small>.
-
-Here we are defining that if the user requests a JSON, we return an Array of Strings.
+A content englobes content-types <small>(ex: json)</small> with their associated schema <small>(ex: PersonJSON)</small>.
 
 ```yaml
 content:
   application/json: # could be XML... see supported formats.
     schema:
-      type: array
-      items: # the type of one item, this is a schema
-        - type: string
-      example: # optional example
-        [ "toto", "tata" ]
+      # insert your schema here
 ```
-
-Types are `string`, `array`, `object`, `boolean`, `integer`, `number`, and `null`.
 </div><div>
-
-##### Defining "classes" = schemas
-
-You can actually create "classes". Add a block "components" <small>(ex: after the block "servers:")</small>. Here, we created a class **User**.
 
 ```yaml
 components:
