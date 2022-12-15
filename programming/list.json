@@ -2,113 +2,127 @@
   "title": "Programming",
   "description": "Notes about programming languages.",
   "courses": {
-    "🕸️ Web 🕸️": [
-      {
-        "tag": "web/apis/index.md",
-        "name": "API",
-        "desc": "Application Programming Interface",
-        "icon": "<i class=\"bi bi-book\"></i>",
-        "hidden": false
+    "categories": {
+      "web": {
+        "name": "Web, Android, and APIs",
+        "active": true,
+        "courses": {
+          "🕸️ Web - APIs 🕸️": [
+            {
+              "tag": "web/apis/index.md",
+              "name": "API",
+              "desc": "Application Programming Interface",
+              "icon": "<i class=\"bi bi-book\"></i>",
+              "hidden": false
+            }
+          ],
+          "🕸️ Web - JavaScript 🕸️": [
+            {
+              "tag": "web/javascript/node.js/index.md",
+              "name": "Node.js",
+              "desc": "A modern JavaScript environment.",
+              "icon": "<i class=\"bi bi-box\"></i>",
+              "hidden": false
+            },
+            {
+              "tag": "web/javascript/express.js/index.md",
+              "name": "Express.js",
+              "desc": "Build websites and APIs.",
+              "icon": "<i class=\"bi bi-box\"></i>",
+              "hidden": false
+            },
+            {
+              "tag": "web/javascript/socket.io/index.md",
+              "name": "socket.io",
+              "desc": "Server Push for real-time applications.",
+              "icon": "<i class=\"bi bi-box\"></i>",
+              "hidden": false
+            },
+            {
+              "tag": "web/javascript/mocha.js/index.md",
+              "name": "mocha.js",
+              "desc": "Testing with mocha.",
+              "icon": "<i class=\"bi bi-box\"></i>",
+              "hidden": false
+            }
+          ],
+          "🕸️ Web - Android 🕸️": [
+            {
+              "tag": "web/android/general/index.md",
+              "name": "Android",
+              "desc": "How to create Android Applications.",
+              "icon": "<i class=\"bi bi-android\"></i>",
+              "hidden": false
+            },
+            {
+              "tag": "web/android/internet/index.md",
+              "name": "Internet",
+              "desc": "How to connect to APIs.",
+              "icon": "<i class=\"bi bi-android\"></i>",
+              "hidden": false
+            }
+          ]
+        }
+      },
+      "data": {
+        "name": "Utilities",
+        "active": false,
+        "courses": {
+          "✏️ Writing documents ✏️": [
+            {
+              "tag": "utils/markdown/index.md",
+              "name": "Markdown",
+              "desc": "Popular language to write simple documents (ex: README.md).",
+              "icon": "<i class=\"bi bi-file-earmark-richtext\"></i>",
+              "hidden": false
+            },
+            {
+              "tag": "utils/rst/index.md",
+              "name": "reStructuredText",
+              "desc": "A language to write documentations outside your code with a lot of powerful tools such as generating UML, graphs ... The syntax is like an improved version of Markdown.",
+              "icon": "<i class=\"bi bi-file-earmark-richtext\"></i>",
+              "hidden": true
+            },
+            {
+              "tag": "utils/latex/index.md",
+              "name": "LaTeX",
+              "desc": "A language used to write reports, create presentations quite easily and with great style. You may also use it to write math in a website/documents.",
+              "icon": "<i class=\"bi bi-file-earmark-richtext\"></i>",
+              "hidden": true
+            }
+          ],
+          "🧃 Store data 🧃": [
+            {
+              "tag": "data/json.md",
+              "name": "JSON",
+              "desc": "JSON, JSON5, GEOJson...",
+              "icon": "<i class=\"bi bi-layout-text-sidebar\"></i>",
+              "hidden": false
+            },
+            {
+              "tag": "data/yaml.md",
+              "name": "YAML",
+              "desc": "Mostly used in configurations.",
+              "icon": "<i class=\"bi bi-layout-text-sidebar\"></i>",
+              "hidden": false
+            },
+            {
+              "tag": "data/ini.md",
+              "name": "INI",
+              "desc": "Used in configurations on Windows.",
+              "icon": "<i class=\"bi bi-layout-text-sidebar\"></i>",
+              "hidden": false
+            },
+            {
+              "tag": "data/xml.md",
+              "name": "XML",
+              "desc": "...",
+              "icon": "<i class=\"bi bi-layout-text-sidebar\"></i>",
+              "hidden": false
+            }
+          ]
+        }
       }
-    ],
-    "🕸️ Web - JavaScript 🕸️": [
-      {
-        "tag": "web/javascript/node.js/index.md",
-        "name": "Node.js",
-        "desc": "A modern JavaScript environment.",
-        "icon": "<i class=\"bi bi-box\"></i>",
-        "hidden": false
-      },
-      {
-        "tag": "web/javascript/express.js/index.md",
-        "name": "Express.js",
-        "desc": "Build websites and APIs.",
-        "icon": "<i class=\"bi bi-box\"></i>",
-        "hidden": false
-      },
-      {
-        "tag": "web/javascript/socket.io/index.md",
-        "name": "socket.io",
-        "desc": "Server Push for real-time applications.",
-        "icon": "<i class=\"bi bi-box\"></i>",
-        "hidden": false
-      },
-      {
-        "tag": "web/javascript/mocha.js/index.md",
-        "name": "mocha.js",
-        "desc": "Testing with mocha.",
-        "icon": "<i class=\"bi bi-box\"></i>",
-        "hidden": false
-      }
-    ],
-    "🕸️ Web - Android 🕸️": [
-      {
-        "tag": "web/android/general/index.md",
-        "name": "Android",
-        "desc": "How to create Android Applications.",
-        "icon": "<i class=\"bi bi-android\"></i>",
-        "hidden": false
-      },
-      {
-        "tag": "web/android/internet/index.md",
-        "name": "Internet",
-        "desc": "How to connect to APIs.",
-        "icon": "<i class=\"bi bi-android\"></i>",
-        "hidden": false
-      }
-    ],
-    "✏️ Writing documents ✏️": [
-      {
-        "tag": "utils/markdown/index.md",
-        "name": "Markdown",
-        "desc": "Popular language to write simple documents (ex: README.md).",
-        "icon": "<i class=\"bi bi-file-earmark-richtext\"></i>",
-        "hidden": false
-      },
-      {
-        "tag": "utils/rst/index.md",
-        "name": "reStructuredText",
-        "desc": "A language to write documentations outside your code with a lot of powerful tools such as generating UML, graphs ... The syntax is like an improved version of Markdown.",
-        "icon": "<i class=\"bi bi-file-earmark-richtext\"></i>",
-        "hidden": true
-      },
-      {
-        "tag": "utils/latex/index.md",
-        "name": "LaTeX",
-        "desc": "A language used to write reports, create presentations quite easily and with great style. You may also use it to write math in a website/documents.",
-        "icon": "<i class=\"bi bi-file-earmark-richtext\"></i>",
-        "hidden": true
-      }
-    ],
-    "🧃 Store data 🧃": [
-      {
-        "tag": "data/json.md",
-        "name": "JSON",
-        "desc": "JSON, JSON5, GEOJson...",
-        "icon": "<i class=\"bi bi-layout-text-sidebar\"></i>",
-        "hidden": false
-      },
-      {
-        "tag": "data/yaml.md",
-        "name": "YAML",
-        "desc": "Mostly used in configurations.",
-        "icon": "<i class=\"bi bi-layout-text-sidebar\"></i>",
-        "hidden": false
-      },
-      {
-        "tag": "data/ini.md",
-        "name": "INI",
-        "desc": "Used in configurations on Windows.",
-        "icon": "<i class=\"bi bi-layout-text-sidebar\"></i>",
-        "hidden": false
-      },
-      {
-        "tag": "data/xml.md",
-        "name": "XML",
-        "desc": "...",
-        "icon": "<i class=\"bi bi-layout-text-sidebar\"></i>",
-        "hidden": false
-      }
-    ]
+    }
   }
 }
