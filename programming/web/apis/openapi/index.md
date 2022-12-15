@@ -78,6 +78,15 @@ schema:
   items: # a schema
     - type: string
 ```
+
+**String (enum)**
+
+```yaml
+schema:
+  type: string
+  enum: [value1, value2, value3]
+```
+
 </div><div>
 
 **Object example**
@@ -155,26 +164,64 @@ schema:
 
 <hr class="sep-both">
 
+## 🛣️ Paths 🛣️
+
 <div class="row row-cols-md-2 mt-4"><div>
 
-#### Write your YAML
+Given `http://localhost:3000/products`, if the endpoint is `http://localhost:3000`, then `/products` is a path of your API.
 
-**Paths** are the paths of your APIs, with their HTTP methods, parameters, headers, cookies, and responses.
+```yaml
+paths:
+  /products:
+    get: # post, put, patch, delete
+      summary: 'Get the list of products'
+      description: 'An optional description'
+      responses:
+        # see responses
+```
+
+A path can accept multiple methods.
+
+```yaml
+paths:
+  /products:
+    get:
+      # ...
+    post:
+      # ...
+```
+</div><div>
+
+And a path can be made of dynamic parameters
+
+```yaml
+paths:
+  /products/{id}:
+    get:
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: A description
+          schema: # see schema
+```
+
+Other notes
 
 ```yaml
 paths:
   /some/route:
-    get: # post, put, patch, delete
-      summary: Creates a product # example
-      description: An optional description
-      responses:
-        '200':
-          description: A description of the response
-          content:
-            # optional example of a response
-        # you can add other codes
-        '404': { description: "some description" }
+    get:
+      # deprecate a method
+      deprecated: true
+      # practical use ???
+      operationId: some-id
 ```
+</div></div>
+
+<hr class="sep-both">
+
+<div class="row row-cols-md-2 mt-4"><div>
 
 ##### Content
 
@@ -187,32 +234,6 @@ content:
       # insert your schema here
 ```
 </div><div>
-
-```yaml
-components:
-  schemas:
-    User:
-      type: object
-      properties:
-        # description and example are optional
-        username: { type: string, description: "desc", example: "toto" }
-        # you can add constraints
-        age: 
-          type: integer
-          format: int64
-          minimum: 0
-```
-
-You can use the reference as follows for a list of User.
-
-```yaml
-content:
-  application/json:
-    schema:
-      type: array
-      items:
-        $ref: '#/components/schemas/User'
-```
 
 ##### Parameters
 
@@ -255,8 +276,25 @@ requestBody:
           age: { type: integer }
 ```
 
-##### To-do
+</div></div>
 
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [Basic Structure](https://swagger.io/docs/specification/basic-structure/)
+* [Full spec](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md)
+* [What's new in OpenAPI 3.0](https://swagger.io/blog/news/whats-new-in-openapi-3-0/)
+</div><div>
+
+* [params](https://swagger.io/docs/specification/describing-parameters/)
+* [body](https://swagger.io/docs/specification/describing-request-body/)
+* [responses](https://swagger.io/docs/specification/describing-responses/)
+* [api keys](https://swagger.io/docs/specification/authentication/api-keys/)
+* [Tags](https://swagger.io/docs/specification/grouping-operations-with-tags/)
 * Definitions
-
 </div></div>
