@@ -27,25 +27,25 @@ $ npm run dev
 The main component is **App**. We are storing each component inside a `.vue` file, so we will have **App.vue**. Each `.vue` file has 3 tags
 
 ```
-<script setup>
+<script>
 // example: import a component
 import HelloWorld from './components/HelloWorld.vue'
-</script>
-
-<script>
-// some JavaScript
 </script>
 
 <template>
   <!-- HTML CODE -->
   <!-- ex: use your imported component -->
   <HelloWorld msg="Hello, World!" />
+  <!-- Using ':', you can use JavaScript inside "" -->
+  <HelloWorld :msg="'Hello, World!'" />
 </template>
 
 <style scoped>
     /* component style */
 </style>
 ```
+
+There are two ways of doing the same thing is Vue. One is to use `<script setup>` (**Composition API**) and the other is to use `<script>` (**Options API**). The latter is usually more wordy, but relatively easier to learn, so we will go with that.
 </div><div>
 
 As you have seen, a component can pass arguments to another component. Here, the component is declaring a property `msg`.
@@ -58,7 +58,7 @@ export default {
     other: { // more complex properties
       type: String,
       required: false,
-      default: "xxx"
+      default: {}
     }
   }
 }
@@ -87,11 +87,9 @@ Inside the template, you can use it with `{{ property_name }}`
 
 <hr class="sep-both">
 
-## 📖 SFC blocks 📖️
+## 📖 SFC - Composition API 📖️
 
-<div class="row row-cols-md-2"><div>
-
-There are two ways of doing the same thing is Vue. One is to use `<script setup>` (**Composition API**) and the other is to use `<script>` (**Options API**). The latter is more wordy, but easier to understand, so we will go with that.
+<div class="row row-cols-md-2 mt-4"><div>
 
 ```
 <script>
@@ -136,7 +134,9 @@ export default {
     // execute code with document.querySelector/... here,
     // like stuff that need the component to be inside the
     // DOM to work.
-  }
+  },
+  created() {},
+  // async created() {},
 }
 </script>
 ```
@@ -229,6 +229,20 @@ On a component
 />
 ```
 
+In "MyComponent", you could use code like that.
+
+```javascript
+// good practice: define a class for item
+import Product from "@/classes/Product";
+
+export default {
+  props: {
+    item: Product
+    // if you don't want to create a class
+    // 'item: Object'
+  }
+}
+```
 </div></div>
 
 <hr class="sep-both">
@@ -279,6 +293,12 @@ const router = createRouter({
   ]
 })
 ```
+
+You can move to another page with
+
+```javascript
+this.$router.push({ name:'about' })
+```
 </div></div>
 
 <hr class="sep-both">
@@ -295,6 +315,7 @@ const router = createRouter({
 * template refs
 * Preprocessors (ts, scss)
 * v-bind to pass data
+* `@/main` matches `src/main.js` (shortcut for src)
 </div><div>
 
 ```
