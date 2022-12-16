@@ -7,23 +7,25 @@
         "name": "Web, Android, and APIs",
         "active": true,
         "courses": {
-          "🕸️ Web - APIs 🕸️": [
+          "🪄 Frameworks 💫": [
             {
-              "tag": "web/apis/index.md",
-              "name": "API",
-              "desc": "Application Programming Interface",
-              "icon": "<i class=\"bi bi-book\"></i>",
-              "hidden": false
-            },
-            {
-              "tag": "web/apis/openapi/index.md",
-              "name": "OpenAPI",
-              "desc": "Generate API code/documentation/... from a specification.",
+              "tag": "web/frameworks/front/vue.js/index.md",
+              "name": "Vue.js",
+              "desc": "Front-end Framework (Node.js).",
               "icon": "<i class=\"bi bi-book\"></i>",
               "hidden": false
             }
           ],
-          "🕸️ Web - JavaScript 🕸️": [
+          "🎨 Cascading Style Sheets (CSS) 🖼️": [
+            {
+              "tag": "web/frameworks/css/bootstrap/index.md",
+              "name": "Bootstrap",
+              "desc": "A popular CSS library.",
+              "icon": "<i class=\"bi bi-book\"></i>",
+              "hidden": false
+            }
+          ],
+          "🦤 JavaScript (JS) 🦤": [
             {
               "tag": "web/javascript/node.js/index.md",
               "name": "Node.js",
@@ -53,7 +55,23 @@
               "hidden": false
             }
           ],
-          "🕸️ Web - Android 🕸️": [
+          "🐲 Application Programming Interface (API) 🐉": [
+            {
+              "tag": "web/apis/index.md",
+              "name": "API",
+              "desc": "Application Programming Interface",
+              "icon": "<i class=\"bi bi-book\"></i>",
+              "hidden": false
+            },
+            {
+              "tag": "web/apis/openapi/index.md",
+              "name": "OpenAPI",
+              "desc": "Generate API code/documentation/... from a specification.",
+              "icon": "<i class=\"bi bi-book\"></i>",
+              "hidden": false
+            }
+          ],
+          "📱 Android 📲": [
             {
               "tag": "web/android/general/index.md",
               "name": "Android",
