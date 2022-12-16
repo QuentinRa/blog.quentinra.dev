@@ -65,7 +65,15 @@ export default {
 </script>
 ```
 
-> Note that you can also use `v-bind` to pass data.
+The code could be simplified if we remove every check
+
+```
+<script>
+export default {
+  props: ['msg']
+}
+</script>
+```
 
 Inside the template, you can use it with `{{ property_name }}`
 
@@ -83,7 +91,7 @@ Inside the template, you can use it with `{{ property_name }}`
 
 <div class="row row-cols-md-2"><div>
 
-There are two ways of doing the same thing is Vue. One is to use `<script setup>` and the other is to use `<script>`. The latter is more wordy, but easier to understand, so we will go with that.
+There are two ways of doing the same thing is Vue. One is to use `<script setup>` (**Composition API**) and the other is to use `<script>` (**Options API**). The latter is more wordy, but easier to understand, so we will go with that.
 
 ```
 <script>
@@ -146,6 +154,8 @@ Example usage
 
 Inside braces, or inside Vue attributes, you can use JavaScript, or most specifically, only JavaScript expressions (ex: `a_value`, `true ? "OK" : "KO"`...). You should only use values, and use methods/computed properties for complex cases.
 </div><div>
+
+#### Directives
 
 * **v-bind**: uni-directional data binding. When the value is updated, the bound attributes/... are updated, but editing the input field won't update the value.
 
@@ -245,6 +255,8 @@ import { RouterLink, RouterView } from 'vue-router'
   <RouterView />
 </template>
 ```
+
+Note that RouterView is where the loaded page will be displayed.
 </div><div>
 
 In `main.js` when mouting the app, we "use" a router
@@ -282,6 +294,7 @@ const router = createRouter({
 * deep watchers
 * template refs
 * Preprocessors (ts, scss)
+* v-bind to pass data
 </div><div>
 
 ```
