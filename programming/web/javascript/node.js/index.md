@@ -25,8 +25,9 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* Webpack
+* Webpack, rollupjs, parcel, Snowpack, WMR, and vite
 * [emojione](https://github.com/joypixels/emojione) and [emoji-toolkit](https://github.com/joypixels/emoji-toolkit)
+* [jestjs](https://jestjs.io/docs/getting-started)
 </div><div>
 
 Tutorials
