@@ -20,6 +20,55 @@ $ npm run dev
 
 <hr class="sep-both">
 
+## 📦 Components 📦
+
+<div class="row row-cols-md-2"><div>
+
+The main component is **App**. We are storing each component inside a `.vue` file, so we will have **App.vue**. Each `.vue` file has 3 tags
+
+```
+<script setup>
+// example: import a component
+import HelloWorld from './components/HelloWorld.vue'
+</script>
+
+<template>
+  <!-- HTML CODE -->
+  <!-- use your imported component -->
+  <HelloWorld msg="Hello, World!" />
+</template>
+
+<style scoped>
+    /* component style */
+</style>
+```
+</div><div>
+
+As you have seen, a component can pass arguments to another component. Here, the component is declaring a property `msg`.
+
+```
+<script setup>
+defineProps({
+  msg: {
+    type: String,
+    required: true
+  }
+})
+</script>
+```
+
+Inside the template, you can use it with `{{ property_name }}`
+
+```
+<template>
+  <p>{{ msg }}</p>
+</template>
+```
+
+</div></div>
+
+<hr class="sep-both">
+
 ## 🐏 Notes 🐏
 
 <div class="row row-cols-md-2"><div>
