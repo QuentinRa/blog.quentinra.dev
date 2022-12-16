@@ -79,7 +79,7 @@ Inside the template, you can use it with `{{ property_name }}`
 
 <hr class="sep-both">
 
-## 🖼️ Components template 🖼️
+## 📖 SFC blocks 📖️
 
 <div class="row row-cols-md-2"><div>
 
@@ -144,7 +144,8 @@ Example usage
 </template>
 ```
 
-Inside braces, or inside Vue attributes, you can use JavaScript, but only expression (ex: `true ? "ok" : "false"`). Otherwise, you will have to use methods/computed properties.
+Inside braces, or inside Vue attributes, you can use JavaScript, or most specifically, only JavaScript expressions (ex: `a_value`, `true ? "OK" : "KO"`...). You should only use values, and use methods/computed properties for complex cases.
+</div><div>
 
 * **v-bind**: uni-directional data binding. When the value is updated, the bound attributes/... are updated, but editing the input field won't update the value.
 
@@ -157,7 +158,6 @@ Inside braces, or inside Vue attributes, you can use JavaScript, but only expres
 <div :class="{ 'active': isActive }"></div>
 <div :class="['classA', 'classB']"></div>
 ```
-</div><div>
 
 * **v-model**: bi-directional data-binding. Now, if the value is modified by the element, then the data is modified too.
 
@@ -286,7 +286,7 @@ const router = createRouter({
 
 ```
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 // reactive state
 const count = ref(0)
 </script>
