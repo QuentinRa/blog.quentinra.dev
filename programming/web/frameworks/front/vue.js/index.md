@@ -20,7 +20,7 @@ $ npm run dev
 
 <hr class="sep-both">
 
-## 📦 Components 📦
+## 📦 Vue Single-File Components (SFC) 📦
 
 <div class="row row-cols-md-2"><div>
 
@@ -51,15 +51,21 @@ import HelloWorld from './components/HelloWorld.vue'
 As you have seen, a component can pass arguments to another component. Here, the component is declaring a property `msg`.
 
 ```
-<script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
+<script>
+export default {
+  props: {
+    msg: String,
+    other: { // more complex properties
+      type: String,
+      required: false,
+      default: "xxx"
+    }
   }
-})
+}
 </script>
 ```
+
+> Note that you can also use `v-bind` to pass data.
 
 Inside the template, you can use it with `{{ property_name }}`
 
@@ -217,6 +223,54 @@ On a component
 
 <hr class="sep-both">
 
+## Routing
+
+<div class="row row-cols-md-2"><div>
+
+See [Router](https://router.vuejs.org/guide/#html). See also [Data Fetching](https://router.vuejs.org/guide/advanced/data-fetching.html).
+
+```html
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+</script>
+
+<template>
+  <header>
+    <nav>
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/about">About</RouterLink>
+    </nav>
+  </header>
+
+  <RouterView />
+</template>
+```
+</div><div>
+
+In `main.js` when mouting the app, we "use" a router
+
+```javascript
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: HomeView
+    },
+    {
+      path: '/about',
+      name: 'about',
+      // lazy-loaded when the route is visited
+      component: () => import('../views/AboutView.vue')
+    }
+  ]
+})
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 🐏 Notes 🐏
 
 <div class="row row-cols-md-2"><div>
@@ -227,6 +281,7 @@ On a component
 * writable computed
 * deep watchers
 * template refs
+* Preprocessors (ts, scss)
 </div><div>
 
 ```
