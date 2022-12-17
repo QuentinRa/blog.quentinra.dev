@@ -197,6 +197,43 @@ Less used/useful
 
 <hr class="sep-both rounded">
 
+## 📊 Tables 🗓️
+
+See [Tables](https://getbootstrap.com/docs/5.2/content/tables/).
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+Everything is starting by adding the `table` class.
+
+```html
+<table class="table"></table>
+```
+
+Then, as always, you can add more classes.
+
+**Style**
+
+* `table-hover`: hover current row
+* `table-striped`: alternate colors between rows
+* `table-<color>`: tune the table using the color (danger/warning...)
+
+</div><div>
+
+**Borders**
+
+By default, there are only borders between rows.
+
+* `border-xxx`: used to set border color
+* `table-bordered`: add all borders
+* `table-borderless`: remove all borders
+
+**Special**
+
+* `table-responsive`: add a scrollbar if the screen is too small
+</div></div>
+
+<hr class="sep-both rounded">
+
 ## 🌠 Components 🌠️
 
 <div class="row row-cols-md-2 mt-4"><div>
