@@ -97,12 +97,35 @@ See [Colors](https://getbootstrap.com/docs/5.2/utilities/colors/).
 
 ## 🎬 Breakpoints🎬
 
+See [breakpoints](https://getbootstrap.com/docs/5.2/layout/breakpoints/).
+
 <div class="row row-cols-md-2 mt-4"><div>
 
-See [breakpoints](https://getbootstrap.com/docs/5.2/layout/breakpoints/).
+Many CSS classes have variants based on a breakpoint. Basically, these are **classes based on a media-query** that will only "enable" them if the screen fit the condition.
+
+* `<none>`: every screen size
+* `sm`: any screen of at least **576px** (mobile)
+* `md`: any screen of at least **768px** (tablet)
+* `lg`: any screen of at least **992px** (pc)
+* `xl`: any screen of at least **1200px** (big)
+* `xll`: any screen of at least **1400px** (big too)
+
+➡️ This is only useful to make more responsive interfaces.
 </div><div>
 
-...
+For instance, with `d-none` that allow us to hide an element.
+
+* `d-done`: always hidden
+* `d-sm-done`: hidden for all aside from mobiles
+* `d-md-done`: hidden for all aside from mobiles+tablets
+* ...
+
+If you want to hide something on mobile only, you will have to combine two classes:
+
+* `d-none`: always hidden
+* `d-md-block`: always shown if the screen is at least 768px long
+
+The later being more specific take precedence over the former.
 </div></div>
 
 <hr class="sep-both">
