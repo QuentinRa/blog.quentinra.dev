@@ -22,3 +22,46 @@ See the [documentation](https://getbootstrap.com/docs/). For **5.2.3**, you coul
 </head>
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## Learn Bootstrap
+
+<div class="row row-cols-md-2"><div>
+
+The best way to learn Bootstrap is to copy-and-paste examples. You can find them [here](https://getbootstrap.com/docs/5.2/examples/).
+
+* Click on an exemple to your liking
+* Use <kbd>CTRL+U</kbd> or "View page source" to see the code
+* Copy-paste it inside your project and tune it
+</div><div>
+
+Additionally, open the [documentation](https://getbootstrap.com/docs/5.2/getting-started/introduction/), and search what you want to do. For instance, [a navbar](https://getbootstrap.com/docs/5.2/components/navbar/). You will see
+
+* the code
+* a preview of the expected output
+</div></div>
+
+<hr class="sep-both">
+
+## 📖 Bootstrap basics 📖
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+As many CSS frameworks, Bootstrap is defining CSS classes, and you will simply have to use them on your HTML elements.
+
+```html
+<someHTMLtag class="add bootstrap classes here" />
+```
+
+➡️ If your IDE isn't providing autocompletion for Bootstrap classes, you might consider downloading Bootstrap sources [here](https://getbootstrap.com/docs/5.2/getting-started/download/), and add them in your project.
+</div><div>
+
+For instance, to have this button: <button class="btn btn-warning text-dark">xxx</button>
+
+You will have to set the text to black (`text-dark`), to have rounded corners, you will have to add `btn`, and to have a yellow button, you need `btn-warning`.
+
+```
+<button class="btn btn-warning text-dark">xxx</button>
+```
+</div></div>
