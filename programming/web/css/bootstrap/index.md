@@ -196,10 +196,32 @@ Less used/useful
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-...
+Row are allowing us to add items next to each other. Using breakpoints, we can do things like display one element per "row" on small screen, two on tablets, and three or more on computers.
+
+```
+<div class="row mx-0">
+    <div class="col-md-6 col-12"></div>
+    <div class="col-md-6 col-12"></div>
+</div>
+```
+
+A row is **12 columns**. A row will keep elements on the same line if their sum is less than 12, otherwise, they will go to the next line.
+
+In the code above, on mobile, each element will take 12 columns (ex: a whole line), but on tablets (md), each element will take 6 columns, so we will be able to put two on the same line.
 </div><div>
 
-...
+This code is a simplified version of the previous one, doing exactly the same. `row-cols-md-2` means that we should have 2 columns on md or higher, otherwise, we will have one <small>(as there is no other rule)</small>.
+
+```html
+<div class="row row-cols-md-2">
+    <div></div>
+    <div></div>
+</div>
+```
+
+Other notes
+
+* `col`: without a number, columns are of equal size
 </div></div>
 
 <hr class="sep-both">
