@@ -40,6 +40,8 @@ Additionally, open the [documentation](https://getbootstrap.com/docs/5.2/getting
 
 * the code
 * a preview of the expected output
+
+> See also [W3Schools/Bootstrap 5](https://www.w3schools.com/bootstrap5/index.php) and [exercices](https://www.w3schools.com/bootstrap5/exercise.php).
 </div></div>
 
 <hr class="sep-both">
@@ -126,6 +128,54 @@ If you want to hide something on mobile only, you will have to combine two class
 * `d-md-block`: always shown if the screen is at least 768px long
 
 The later being more specific take precedence over the former.
+</div></div>
+
+<hr class="sep-both">
+
+## 📦 Essential classes 📦
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+**Visibility**
+
+* `d-none`: hide something (support breakpoints)
+* `d-block`: show something (support breakpoints)
+* `d-print-none`: do not show when printing the page
+
+**Alignment**
+
+* `align-self-center`: align center (vertically)
+* `justify-content-center`: align center (horizontally)
+* `text-center`: center text (horizontally)
+* `text-start`/`text-end`: align text (left/right)
+
+**Text**
+
+* `h1`/`h2`/.../`h6`: give the same style as the matching header
+* `lead`: give a special style to a paragraph
+* `display-n` (1 to 6): huge titles
+
+Less used/useful
+
+* `text-truncate`/`text-break`
+* `text-lowercase`/`text-uppercase`
+
+</div><div>
+
+**Margins/Padding** (see [Margins/Padding](https://getbootstrap.com/docs/5.2/utilities/spacing/))
+
+* `p-0`/`p-1`/.../`p-5`: padding levels (support breakpoints)
+* `m-0`/`m-1`/.../`m-5`: margin levels (support breakpoints)
+* `pt/pb/ps/pe-<level>`: padding on only one corner <small>(s=left, e=right)</small>
+* `mt/mb/ms/me-<level>`: margin on only one corner  <small>(s=left, e=right)</small>
+* `mx-<level>`/`my-<level>`: margin on both s/e or t/b
+* `px-<level>`/`py-<level>`: padding on both s/e or t/b
+* `mx-auto`/`my-auto`: center horizontally/vertically
+
+```html
+<p class="pt-5 mx-0">Padding-top level 5 (=3rem)</p>
+<p class="mx-3">Margin x and y, level 3 (=1rem)</p>
+```
 </div></div>
 
 <hr class="sep-both">
