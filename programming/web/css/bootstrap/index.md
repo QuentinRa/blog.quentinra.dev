@@ -65,3 +65,30 @@ You will have to set the text to black (`text-dark`), to have rounded corners, y
 <button class="btn btn-warning text-dark">xxx</button>
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## 🎨 Colors 🖌️ 
+
+<div class="row row-cols-md-2"><div>
+
+Usage:
+
+* Change the color of one element: `text-<color>`
+* Change the background of one element: `bg-<color>`
+
+```
+<p class="text-success">green text</p>
+<p class="bg-success">green background</p>
+```
+</div><div>
+
+See [Colors](https://getbootstrap.com/docs/5.2/utilities/colors/). 
+
+* <span class="text-success">xxx-success</span>
+* <span class="text-warning">xxx-warning</span>
+* <span class="text-danger">xxx-danger</span>
+* <span class="text-info">xxx-info</span>
+* <span class="text-muted">xxx-muted</span>
+* And "xxx-dark" for black
+</div></div>
