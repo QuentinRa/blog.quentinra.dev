@@ -92,3 +92,27 @@ See [Colors](https://getbootstrap.com/docs/5.2/utilities/colors/).
 * <span class="text-muted">xxx-muted</span>
 * And "xxx-dark" for black
 </div></div>
+
+<hr class="sep-both">
+
+## 🎬 Breakpoints🎬
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+See [breakpoints](https://getbootstrap.com/docs/5.2/layout/breakpoints/).
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## 🏙️ Row and columns 🏙️
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+...
+</div><div>
+
+...
+</div></div>

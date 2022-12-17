@@ -132,6 +132,27 @@ client.on('connect', () => {
 
 <hr class="sep-both">
 
+## HTML client
+
+<div class="row row-cols-md-2"><div>
+
+You need to add the following script (version 4.5.3). See [cdnjs](https://cdnjs.com/libraries/socket.io).
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.3/socket.io.js" integrity="sha512-iWPnCISAd/J+ZacwV2mbNLCaPGRrRo5OS81lKTVPtRg1wGTC20Cfmp5Us5RcbLv42QLdbAWl0MI57yox5VecQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+```
+</div><div>
+
+```javascript
+const client = io("http://localhost:3000");
+client.on('connect', () => {
+    console.log("Connected");
+});
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Android client (kotlin)
 
 <div class="row row-cols-md-2"><div>
