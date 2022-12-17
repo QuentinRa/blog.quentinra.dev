@@ -14,6 +14,4 @@ Stuff that I found, but never read/used yet.
 
 * Android ProGuard
 </div><div>
-
-
 </div></div>

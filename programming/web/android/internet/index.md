@@ -86,7 +86,7 @@ interface JsonPlaceholderAPI {
     // GET /posts/:id
     @GET("posts/{id}") suspend fun getPost(@Path("id") id: Int) : String
     // POST /posts with parameters wrapped in a class
-    @POST("posts") suspend fun getPost(@Body body: SomeWrapper) : String
+    @POST("posts") suspend fun getPost(@Body body: String) : String
     // POST /posts with parameters provided one by one
     @POST("posts") @FormUrlEncoded suspend fun login(@Field("xxx") xxx: String/*, ...*/) : String
 }
@@ -158,11 +158,13 @@ object RetrofitService {
 ```
 </details>
 
-#### expected result
+#### Expected result
 
 Any request will return a big string with the result inside. The JSON isn't converted to Kotlin as we haven't used any converted yet.
 
 ➡️That's why every method inside "xxxAPI" is returning a String.
+
+➡️That's why the POST's request Body has the type String.
 
 The output is available in the logcat tab after a few seconds.
 </div></div>
