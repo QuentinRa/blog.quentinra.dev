@@ -162,10 +162,10 @@ Less used/useful
 
 </div><div>
 
-**Margins/Padding** (see [Margins/Padding](https://getbootstrap.com/docs/5.2/utilities/spacing/))
+**Margins/Padding** (see [Margins/Padding](https://getbootstrap.com/docs/5.2/utilities/spacing/), support breakpoints)
 
-* `p-0`/`p-1`/.../`p-5`: padding levels (support breakpoints)
-* `m-0`/`m-1`/.../`m-5`: margin levels (support breakpoints)
+* `p-0`/`p-1`/.../`p-5`: padding levels
+* `m-0`/`m-1`/.../`m-5`: margin levels
 * `pt/pb/ps/pe-<level>`: padding on only one corner <small>(s=left, e=right)</small>
 * `mt/mb/ms/me-<level>`: margin on only one corner  <small>(s=left, e=right)</small>
 * `mx-<level>`/`my-<level>`: margin on both s/e or t/b
@@ -177,13 +177,20 @@ Less used/useful
 <p class="mx-3">Margin x and y, level 3 (=1rem)</p>
 ```
 
-**Special**
+**Style**
 
 * `rounded-0`/.../`rounded-5`: rounded corners
+* `border-<color>`: used to set border color
 
+**Size**
+
+* `w-auto`/`w-0`/`w-25`/`w-50`/`w-75`/`w-100`: width (w-50=50%)
+* `h-auto`/`h-0`/`h-25`/`h-50`/`h-75`/`h-100`: height (h-50=50%)
+* `mw-100`: max-width 100% (ex: image don't overflow horizontally)
+* `hw-100`: max-height 100%
 </div></div>
 
-<hr class="sep-both rounded">
+<hr class="sep-both mh-100">
 
 ## 🏙️ Row and columns 🏙️
 
@@ -195,7 +202,7 @@ Less used/useful
 ...
 </div></div>
 
-<hr class="sep-both rounded">
+<hr class="sep-both">
 
 ## 📊 Tables 🗓️
 
@@ -223,7 +230,6 @@ Then, as always, you can add more classes.
 
 By default, there are only borders between rows.
 
-* `border-xxx`: used to set border color
 * `table-bordered`: add all borders
 * `table-borderless`: remove all borders
 
@@ -232,7 +238,7 @@ By default, there are only borders between rows.
 * `table-responsive`: add a scrollbar if the screen is too small
 </div></div>
 
-<hr class="sep-both rounded">
+<hr class="sep-both">
 
 ## 🌠 Components 🌠️
 
@@ -258,4 +264,18 @@ By default, there are only borders between rows.
 * [accordion](https://getbootstrap.com/docs/5.2/components/accordion/): pretty "details" tag (~dropdowns)
 
 * See [Forms](https://getbootstrap.com/docs/5.2/forms/overview/) for forms.
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* container/container-fluid
+* update this old content
+</div><div>
+
 </div></div>
