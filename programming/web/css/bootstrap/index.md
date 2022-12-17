@@ -132,7 +132,7 @@ The later being more specific take precedence over the former.
 
 <hr class="sep-both">
 
-## 📦 Essential classes 📦
+## 📦 Useful classes 📦
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -176,9 +176,14 @@ Less used/useful
 <p class="pt-5 mx-0">Padding-top level 5 (=3rem)</p>
 <p class="mx-3">Margin x and y, level 3 (=1rem)</p>
 ```
+
+**Special**
+
+* `rounded-0`/.../`rounded-5`: rounded corners
+
 </div></div>
 
-<hr class="sep-both">
+<hr class="sep-both rounded">
 
 ## 🏙️ Row and columns 🏙️
 
@@ -188,4 +193,32 @@ Less used/useful
 </div><div>
 
 ...
+</div></div>
+
+<hr class="sep-both rounded">
+
+## 🌠 Components 🌠️
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+* [Alerts](https://getbootstrap.com/docs/5.2/components/alerts/): useful to show a message (ex: announcement, errors...)
+
+```html
+<p class="alert alert-danger">xxx</p>
+```
+
+* [Cards](https://getbootstrap.com/docs/5.2/components/card/): profile cards, products...
+
+* [Carousel](https://getbootstrap.com/docs/5.2/components/card/): a slideshow
+</div><div>
+
+* [Modal](https://getbootstrap.com/docs/5.2/components/modal/): a nice popup
+
+* [Toasts](https://getbootstrap.com/docs/5.2/components/toasts/): Pretty in-browser notifications
+
+* [Navbar](https://getbootstrap.com/docs/5.2/components/modal/) and [Navs](https://getbootstrap.com/docs/5.2/components/navs-tabs/): a navbar/a menubar
+
+* [accordion](https://getbootstrap.com/docs/5.2/components/accordion/): pretty "details" tag (~dropdowns)
+
+* See [Forms](https://getbootstrap.com/docs/5.2/forms/overview/) for forms.
 </div></div>
