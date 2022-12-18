@@ -20,6 +20,7 @@ Stuff that I found, but never read/used yet.
 
 * [clean-code-typescript](https://github.com/labs42io/clean-code-typescript)
 * [typescript-cheat-sheet](https://www.sitepen.com/blog/typescript-cheat-sheet)
+* See TP2/...
 </div><div>
 
 

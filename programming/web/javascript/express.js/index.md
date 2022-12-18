@@ -266,5 +266,6 @@ Stuff that I found, but never read/used yet.
 * Express
   * [Stripe](https://www.youtube.com/watch?v=rPR2aJ6XnAc)
   * Express for Websites
+* `res.json()`
 </div><div>
 </div></div>

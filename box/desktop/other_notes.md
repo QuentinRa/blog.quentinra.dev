@@ -14,5 +14,7 @@
 * Install Windows Scanner for the Windows Store
 </div><div>
 
-...
+##### Random
+
+* <kbd>Win+H</kbd>: voice to text
 </div></div>

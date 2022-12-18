@@ -47,7 +47,7 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 <hr class="sep-both">
 
-##  📈 plots/graphs 📈
+##  📈 Plots/graphs 📈
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -58,5 +58,15 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 ##### Graphs
 
 * [webgraphviz](http://webgraphviz.com/) (with [GraphViz Pocket Reference](https://graphs.grevian.org/example))
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
+##  💰 Earn money 💰
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+* [macad.am](https://macad.am/) ("walk and earn", 👻)
 </div><div>
 </div></div>

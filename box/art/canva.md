@@ -39,7 +39,7 @@ There is this video [Canva - How to delete ALL images from trash folder automati
 * 💣 There is a need for additional software <small>(and the suggested download link is from a dangerous website with cracked software...)</small>
 * 🤯 Elements aren't always at the same location
 
-So, I made some complex JavaScript, because their code is complex.
+So, I made some complex JavaScript, because their code is complex. **You're responsible for any problems. Use it at your own risk.**
 
 <br>
 
@@ -65,7 +65,7 @@ You must run the script on the page: `https://canva.com/folder/trash`.
 
 5. Finally, the script will wait **0.4s**, and start again
 
-> It's worth noting that the script won't work if the page has changed. It was working as of December 2022.
+> It's worth noting that the script won't work if the code has changed. It was working as of December 2022.
 
 <br>
 

@@ -1,6 +1,14 @@
 # My super-increasing To-do list
 
+<div class="row row-cols-md-2"><div>
+
 A super-increasing to-do list in which I keep adding stuff, but there are too many things to-do that they may stay here for a few more years. To increase the amount of "to-do" that I'm tackling, I moved some of them inside separated "to-do" sections, in the appropriate notes.
+</div><div>
+
+Topics
+
+* Create browser extensions/plugins
+</div></div>
 
 <hr class="sep-both">
 
@@ -28,7 +36,9 @@ Programming languages (+tools) that I want to check, but never had the time.
 * [retype](https://retype.com/) (Extended Markdown)
 </div><div>
 
-...
+**Tools/APIs**
+
+* [algolia](https://www.algolia.com/) (add a searchbar?)
 </div></div>
 
 <hr class="sep-both">
