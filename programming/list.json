@@ -48,6 +48,12 @@
               "hidden": false
             },
             {
+              "tag": "info/very_old/typescript/index.md",
+              "name": "Typescript",
+              "desc": "...",
+              "icon": "<i class=\"bi bi-cup-straw\"></i>"
+            },
+            {
               "tag": "web/javascript/express.js/index.md",
               "name": "Express.js",
               "desc": "Build websites and APIs.",
@@ -65,6 +71,13 @@
               "tag": "web/javascript/mocha.js/index.md",
               "name": "mocha.js",
               "desc": "Testing with mocha.",
+              "icon": "<i class=\"bi bi-box\"></i>",
+              "hidden": false
+            },
+            {
+              "tag": "web/javascript/electron.js/index.md",
+              "name": "electron.js",
+              "desc": "...",
               "icon": "<i class=\"bi bi-box\"></i>",
               "hidden": false
             }

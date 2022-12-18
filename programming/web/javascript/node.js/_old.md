@@ -82,44 +82,6 @@ Other notes
 
 <hr class="sl">
 
-## electron
-
-electron is a js framework allowing you to write a desktop
-app in html/css/js (even typescript, react, boostrap, ...).
-In fact, electron is loading your code in a
-chromium browser so you can use features like
-``CTRL-SHIFT-I`` to open the console.
-
-Applications like discord or MongoDBCompass were
-made using electron.
-
-There are a lot of release so electron is changing
-quite a lot, when I made my app I was in electron
-12 but I didn't use any of the latest security practices.
-You should check these before you start
-
-* [my project](https://github.com/lgs-games/prim/tree/master/version_js), I may not
-  be secure and I'm using a lot of deprecated things but the project is not intended
-  to be secure (for now at least) and the code is quite easy to understand
-  if you are starting learning electron
-* [secure electron template](https://github.com/reZach/secure-electron-template)
-* [simple electron template](https://github.com/electron/electron-quick-start)
-* [examples](https://github.com/hokein/electron-sample-apps)
-* [4 examples](https://github.com/akabekobeko/examples-electron)
-
-If i were to do something clean, I would start using
-the secure electron template, removing everything
-that I won't use (such as react because I'm a boostrap
-enjoyer for now). Once I'm done, then I would actually
-start coding, starting with making 
-[this](https://github.com/binaryfunt/electron-seamless-titlebar-tutorial)
-working in the template.
-
-* [My notes about electron](electron/notes.md)
-* [electron reference](electron/ref.md)
-
-<hr class="sl">
-
 ## Sources
 
 * <https://nodejs.org/en/download/>

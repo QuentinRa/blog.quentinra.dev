@@ -192,12 +192,6 @@
 				"icon": "<i class=\"bi bi-tropical-storm\"></i>"
 			},
 			{
-				"tag": "info/very_old/typescript/index.md",
-				"name": "Typescript",
-				"desc": "Write once and compile in any version of JavaScript.",
-				"icon": "<i class=\"bi bi-cup-straw\"></i>"
-			},
-			{
 				"tag": "info/low-level/system_calls/index.md",
 				"name": "System calls",
 				"desc": "Learn about the most-used system calls.",

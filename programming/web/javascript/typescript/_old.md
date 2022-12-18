@@ -1,5 +1,7 @@
 # Typescript
 
+**[Updated notes](index.md)**
+
 Typescript is a wonderful upgrade of Javascript, allowing to write a `.ts` file an compile it in any version of javascript creating a `.js`. The advantages are
 
 * more elements of syntax like enums or an advanced syntax

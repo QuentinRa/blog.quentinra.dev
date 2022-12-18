@@ -1,6 +1,83 @@
-## electron reference
+## Electron
 
-[Go back](../../../../../archives/info/very_old/node)
+**[Updated notes](index.md)**
+
+electron is a js framework allowing you to write a desktop
+app in html/css/js (even typescript, react, boostrap, ...).
+In fact, electron is loading your code in a
+chromium browser so you can use features like
+``CTRL-SHIFT-I`` to open the console.
+
+Applications like discord or MongoDBCompass were
+made using electron.
+
+There are a lot of release so electron is changing
+quite a lot, when I made my app I was in electron
+12 but I didn't use any of the latest security practices.
+You should check these before you start
+
+* [my project](https://github.com/lgs-games/prim/tree/master/version_js), I may not
+  be secure and I'm using a lot of deprecated things but the project is not intended
+  to be secure (for now at least) and the code is quite easy to understand
+  if you are starting learning electron
+* [secure electron template](https://github.com/reZach/secure-electron-template)
+* [simple electron template](https://github.com/electron/electron-quick-start)
+* [examples](https://github.com/hokein/electron-sample-apps)
+* [4 examples](https://github.com/akabekobeko/examples-electron)
+
+If i were to do something clean, I would start using
+the secure electron template, removing everything
+that I won't use (such as react because I'm a boostrap
+enjoyer for now). Once I'm done, then I would actually
+start coding, starting with making
+[this](https://github.com/binaryfunt/electron-seamless-titlebar-tutorial)
+working in the template.
+
+<hr class="sep-both">
+
+## Notes
+
+Starting the app
+
+```json
+"scripts": {
+    "start": "electron ."
+}
+```
+
+Creating a window
+
+```js
+mainWindow = new BrowserWindow({
+    // some properties
+    width: ???, height: ???, icon: ???,
+    webPreferences: {
+        // loaded before each view
+        // seems deprecated
+        preload: path.join(__dirname, './src/preload.js'),
+        // enable remote, deprecated
+        // https://github.com/electron/remote
+        // ipcRenderer should be used instead
+        enableRemoteModule: true
+    }
+});
+```
+
+Enable or disabled ``CTRL-SHIFT-I``
+
+```js
+// Open the DevTools.
+mainWindow.webContents.openDevTools();
+
+// Close the DevTools
+mainWindow.webContents.on("devtools-opened", () => {
+    mainWindow.webContents.closeDevTools();
+});
+```
+
+<hr class="sep-both">
+
+## References
 
 * <https://medium.com/@johndyer24/creating-and-deploying-an-auto-updating-electron-app-for-mac-and-windows-using-electron-builder-6a3982c0cee6>
 * <https://dev.to/milburngomes/getting-started-with-electronjs-ep9>
