@@ -28,18 +28,12 @@ Stuff that I found, but never read/used yet.
 * Webpack, rollupjs, parcel, Snowpack, WMR, and vite+vitest
 * End-to-End Testing Solution (cypress/...)
 * .env
-* [emojione](https://github.com/joypixels/emojione) and [emoji-toolkit](https://github.com/joypixels/emoji-toolkit)
-* [jestjs](https://jestjs.io/docs/getting-started)
-* [connect](https://www.npmjs.com/package/connect)
-* [node-config](https://github.com/node-config/node-config)
 * "yarn add xxx" / "pnpm"
 
 </div><div>
 
-Tutorials
-
-* [logrocket](https://blog.logrocket.com/how-to-set-up-node-typescript-express/)
-* MongoDB
-  * Sessions cookies
-  * [Mocha Chai](https://www.digitalocean.com/community/tutorials/test-a-node-restful-api-with-mocha-and-chai)
+* [emojione](https://github.com/joypixels/emojione) and [emoji-toolkit](https://github.com/joypixels/emoji-toolkit)
+* [jestjs](https://jestjs.io/docs/getting-started)
+* [connect](https://www.npmjs.com/package/connect)
+* [node-config](https://github.com/node-config/node-config)
 </div></div>

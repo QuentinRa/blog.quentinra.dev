@@ -7,10 +7,6 @@ A super-increasing to-do list in which I keep adding stuff, but there are too ma
 **Topics**
 
 * Create browser extensions/plugins
-
-**Special**
-
-* [Summer-Internships](https://github.com/pittcsc/Summer2023s-Internships)
 </div><div>
 
 **Planned**
@@ -55,7 +51,7 @@ Programming languages (+tools) that I want to check, but never had the time.
 * [symfony](https://symfony.com/) ([nelmio](https://github.com/nelmio/NelmioApiDocBundle))
 * [laravel](https://laravel.com/)
 * [elm](https://elm-lang.org/) (language)
-* React/React Native/Ionic
+* React/React Native/Ionic/Angular
 * [Dart](https://dart.dev/)
 * [Flutter](https://flutter.dev/)
 
@@ -63,6 +59,7 @@ Programming languages (+tools) that I want to check, but never had the time.
 
 * [retype](https://retype.com/) (Extended Markdown)
 * [utterances](https://github.com/utterance/utterances) (Git-based comments)
+* GitBook
 
 </div><div>
 
@@ -71,6 +68,7 @@ Programming languages (+tools) that I want to check, but never had the time.
 * [algolia](https://www.algolia.com/) (add a searchbar?, see bt)
 * [simpleen](https://simpleen.io/) (localization)
 * [crowdin](https://crowdin.com/) (localization)
+* Slack
 
 **Tools~Software**
 
@@ -87,6 +85,8 @@ Programming languages (+tools) that I want to check, but never had the time.
 
 * Moodle
 * Lua
+* Lisp
+* Rust
 * Perl
 * Heredoc
 * [A lot of languages listed here](https://www.jetbrains.com/help/webstorm/application-development-guidelines.html)
@@ -105,7 +105,12 @@ Blogs that I found, but never read yet.
 
 * [codesource.io](https://codesource.io/) <small>(JS/CSS, Node, Vue/React/Angular/..., Python)</small>
 * [masteringjs](https://masteringjs.io/) <small>(Express, Mongoose, Vue, Mocha, Node...)</small>
-* [sabe.io](https://sabe.io/) <small>(Web, Node, Vue/React, Python, Java, Docker, Deno)</small>
+* [sabe.io](https://sabe.io/) <small>(Node, Vue/React, Python, Java, Docker, Deno)</small>
+* [logrocket](https://blog.logrocket.com/) <small>(React/Nest, Node, Sidekick/Bun, Kotlin, Rust...)</small>
+* [futurestud](https://futurestud.io/) <small>(Android, Node, nginx...)</small>
+* [ezekielekunola](https://www.blog.ezekielekunola.com/) <small>(Vue/React...)</small>
+* [buddy.works](https://buddy.works/tutorials) <small>(Vue/React/Mocha/..., Node, Docker...)</small>
+* [sitepen](https://www.sitepen.com/blog) <small>(Typescript, Jest, Deno, Angular...)</small>
 </div><div>
 
 **Theory**
@@ -127,5 +132,31 @@ Courses that I found, but never tried yet.
 ...
 </div><div>
 
+...
+</div></div>
 
+<hr class="sep-both">
+
+## 🎉 Random 🎉
+
+Random stuff...
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+**Interviews**
+
+* [Summer-Internships](https://github.com/pittcsc/Summer2023s-Internships)
+* [techrez](https://techrez.io/) (tech resumes)
+* [reverse-interview](https://github.com/viraptor/reverse-interview)
+* [Hiring Without Whiteboards](https://github.com/poteto/hiring-without-whiteboards)
+* [essential-dev-skills](https://essential-dev-skills.com/) (french)
+
+**Interviews - it skills**
+
+* [hackerrank](https://www.hackerrank.com/)
+</div><div>
+
+**Entrepreneurship**
+
+* [Promote Your Next Startup](https://github.com/trekhleb/promote-your-next-startup)
 </div></div>

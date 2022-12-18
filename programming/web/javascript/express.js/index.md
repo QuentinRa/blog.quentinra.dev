@@ -267,5 +267,6 @@ Stuff that I found, but never read/used yet.
   * [Stripe](https://www.youtube.com/watch?v=rPR2aJ6XnAc)
   * Express for Websites
 * `res.json()`
+* [typescript+express](https://blog.logrocket.com/how-to-set-up-node-typescript-express/)
 </div><div>
 </div></div>
