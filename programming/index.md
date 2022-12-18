@@ -119,6 +119,9 @@ Blogs that I found, but never read yet.
 * [ilovecoding](https://ilovecoding.org/) <small>(???)</small>
 * [browserstack](https://www.browserstack.com/guide/category/tutorials) <small>(???)</small>
 * [jgthms](https://jgthms.com/) and [marksheet](https://marksheet.io/)
+* [attacomsian](https://attacomsian.com/blog) <small>(JS, Node.js)</small>
+* [web.dev](https://web.dev/) <small>(HTML, Accessibility, CSS)</small>
+* [bitsofco](https://bitsofco.de/) <small>(random)</small>
 </div><div>
 
 **All**
@@ -129,12 +132,19 @@ Blogs that I found, but never read yet.
 * [skillshare](https://www.skillshare.com/) <small>(non-programming topics)</small>
 * [digitalocean](https://www.digitalocean.com/community) <small>(Python, PHP, SQL, Go, Node)</small>
 * [w3schools](https://www.w3schools.com/default.asp) and [w3docs](https://www.w3docs.com/)
+* [toptal](https://www.toptal.com/developers/blog) <small>(blog with random stuff)</small>
+* [codevscolor](https://www.codevscolor.com/) <small>(web, mobile...)</small>
 
 **Programming languages focused**
 
 * [programiz](https://programiz.pro/catalog) <small>(Python, C, C++, Java, SQL, Linux)</small>
 * [programmingwithmosh](https://programmingwithmosh.com/) <small>(Node, Java, JS, C#)</small>
 * [codingthesmartway](https://www.codingthesmartway.com/) <small>(Node, React...)</small>
+* [codewithharry](https://www.codewithharry.com/) <small>(JS, C, C++, Java, Python, React, PHP)</small>
+* [baeldung](https://www.baeldung.com/) <small>(Java)</small>
+* [mooc.fi](https://www.mooc.fi/en/#courses) <small>(Java, Cyber)</small>
+* [pluralsight](https://www.pluralsight.com/blog) <small>(React, Java, Ruby, Python, Angular...)</small>
+* [knowledgehut](https://www.knowledgehut.com/tutorials) <small>(R, Node, Ionic, C#...)</small>
 
 **Blogs**
 
@@ -145,6 +155,18 @@ Blogs that I found, but never read yet.
 * [umassmed](https://bootstrappers.umassmed.edu/bootstrappers-courses/index.html) <small>(Python, R, Linux)</small>
 * [codinginfinite](https://codinginfinite.com/)
 * [dataschool](https://www.dataschool.io/) <small>(Datascience)</small>
+* [1NSI2](https://padlet.com/sophie_martinez/1NSI2) <small>(french)</small>
+* [fxjollois](https://fxjollois.github.io/) <small>(french)</small>
+* [computerhope](https://www.computerhope.com/tips/) <small>(tips)</small>
+* [codeur](https://www.codeur.com/blog/) <small>(french)</small>
+* [wonderfall](https://wonderfall.space/) <small>(french)</small>
+* [leblogducodeur](https://web.archive.org/web/20220819200109/https://leblogducodeur.fr/) <small>(french)</small>
+* [zestedesavoir](https://zestedesavoir.com/bibliotheque/informatique/) <small>(french)</small>
+* [thinkr](https://thinkr.fr/abcdr/tous-les-scripts/) <small>(french)</small>
+
+**Linux**
+
+* [tecmint](https://www.tecmint.com/)
 
 </div><div>
 
@@ -156,10 +178,9 @@ Blogs that I found, but never read yet.
 
 * [Complexity](https://math.ryerson.ca/~danziger/professor/MTH108/Handouts/gauss-complexity.pdf)
 
-**Hard to sort**
+**Non-programming focused**
 
-* [pluralsight](https://www.pluralsight.com/blog) <small>(React, Java, Ruby, Python, Angular...)</small>
-* [knowledgehut](https://www.knowledgehut.com/tutorials) <small>(R, Node, Ionic, C#...)</small>
+* [lucidchart](https://www.lucidchart.com/blog/)
 
 **MOOCs**
 
@@ -171,6 +192,18 @@ Blogs that I found, but never read yet.
 
 * [hackreactor](https://www.hackreactor.com/)
 * [careerkarma](https://careerkarma.com/)
+
+**YouTube**
+
+* WebDevJourney
+
+**GitHub**
+
+* [omundy](https://github.com/omundy)
+
+**Cheatsheet**
+
+* [devhints.io](https://devhints.io/)
 </div></div>
 
 <hr class="sep-both">
@@ -202,4 +235,9 @@ Random stuff...
 
 * [rankred](https://www.rankred.com/)
 * [daily.dev](https://daily.dev/)
+
+**Help**
+
+* [includestdio](https://includestdio.com/) (<s>dead</s>)
+* [codeproject](https://www.codeproject.com/)
 </div></div>

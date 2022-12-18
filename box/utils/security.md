@@ -70,6 +70,7 @@
 ##### Random
 
 * [cookie consent speed run](https://cookieconsentspeed.run/) 🤩
+* [tallysavestheinternet](https://tallysavestheinternet.com/)
 </div></div>
 
 <hr class="sep-both">
