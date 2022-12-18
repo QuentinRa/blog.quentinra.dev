@@ -307,7 +307,6 @@ this.$router.push({ name:'about' })
 
 <div class="row row-cols-md-2"><div>
 
-* `%PUBLIC_URL%` placeholder
 * Vue is a declarative framework
 * nextTick in Methods
 * writable computed
@@ -316,6 +315,7 @@ this.$router.push({ name:'about' })
 * Preprocessors (ts, scss)
 * v-bind to pass data
 * `@/main` matches `src/main.js` (shortcut for src)
+* [Nuxt.js](https://nuxtjs.org/) (see [vuestripe](https://vuestripe.com/nuxt/))
 </div><div>
 
 ```

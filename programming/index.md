@@ -1,12 +1,6 @@
 # My super-increasing To-do list
 
-<div class="row row-cols-md-2"><div>
-
-...
-</div><div>
-
-...
-</div></div>
+A super-increasing to-do list in which I keep adding stuff, but there are too many things to-do that they may stay here for a few more years. To increase the amount of "to-do" that I'm tackling, I moved some of them inside separated "to-do" sections, in the appropriate notes.
 
 <hr class="sep-both">
 
@@ -30,12 +24,13 @@ Programming languages (+tools) that I want to check, but never had the time.
 
 Blogs that I found, but never read yet.
 
-<div class="row row-cols-md-4"><div>
+<div class="row row-cols-md-3"><div>
 
-xxx
-</div><div>
+**Web focused**
 
-xxx
+* [codesource.io](https://codesource.io/) <small>(JS/CSS, Node, Vue/React/Angular/..., Python)</small>
+* [masteringjs](https://masteringjs.io/) <small>(Express, Mongoose, Vue, Mocha, Node...)</small>
+* [sabe.io](https://sabe.io/) <small>(Web, Node, Vue/React, Python, Java, Docker, Deno)</small>
 </div><div>
 
 xxx
