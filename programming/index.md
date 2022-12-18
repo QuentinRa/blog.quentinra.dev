@@ -103,6 +103,47 @@ Blogs that I found, but never read yet.
 
 <div class="row row-cols-md-3"><div>
 
+**All**
+
+* [guru99](https://www.guru99.com/) <small>(too much :/)</small>
+* [exercism](https://exercism.org/) <small>(C, C#, Go, Bash...)</small>
+* [studytonight](https://www.studytonight.com/library/) <small>(C, C++, Android...)</small> + Tests
+* [skillshare](https://www.skillshare.com/) <small>(non-programming topics)</small>
+* [digitalocean](https://www.digitalocean.com/community) <small>(Python, PHP, SQL, Go, Node)</small>
+* [w3schools](https://www.w3schools.com/default.asp) and [w3docs](https://www.w3docs.com/)
+* [toptal](https://www.toptal.com/developers/blog) <small>(blog with random stuff)</small>
+* [codevscolor](https://www.codevscolor.com/) <small>(web, mobile...)</small>
+* [learnxinyminutes](https://learnxinyminutes.com/) <small>(many)</small>
+* [adamtheautomator](https://adamtheautomator.com/tutorials/) <small>(???)</small>
+
+**MOOCs**
+
+* [udemy](https://www.udemy.com/) <small>(well-known)</small>
+* [coursera](https://www.coursera.org/) <small>(well-known)</small>
+* [fun-mooc](https://www.fun-mooc.fr/en/) <small>(french)</small>
+
+**Bootcamps focused**
+
+* [hackreactor](https://www.hackreactor.com/)
+* [careerkarma](https://careerkarma.com/)
+
+**Programming languages focused**
+
+* [programiz](https://programiz.pro/catalog) <small>(Python, C, C++, Java, SQL, Linux)</small>
+* [programmingwithmosh](https://programmingwithmosh.com/) <small>(Node, Java, JS, C#)</small>
+* [codingthesmartway](https://www.codingthesmartway.com/) <small>(Node, React...)</small>
+* [codewithharry](https://www.codewithharry.com/) <small>(JS, C, C++, Java, Python, React, PHP)</small>
+* [baeldung](https://www.baeldung.com/) <small>(Java)</small>
+* [mooc.fi](https://www.mooc.fi/en/#courses) <small>(Java, Cyber)</small>
+* [pluralsight](https://www.pluralsight.com/blog) <small>(React, Java, Ruby, Python, Angular...)</small>
+* [knowledgehut](https://www.knowledgehut.com/tutorials) <small>(R, Node, Ionic, C#...)</small>
+
+**Linux focused**
+
+* [tecmint](https://www.tecmint.com/)
+
+</div><div>
+
 **Web focused**
 
 * [codesource.io](https://codesource.io/) <small>(JS/CSS, Node, Vue/React/Angular/..., Python)</small>
@@ -122,29 +163,24 @@ Blogs that I found, but never read yet.
 * [attacomsian](https://attacomsian.com/blog) <small>(JS, Node.js)</small>
 * [web.dev](https://web.dev/) <small>(HTML, Accessibility, CSS)</small>
 * [bitsofco](https://bitsofco.de/) <small>(random)</small>
+* [blocshop](https://www.blocshop.io/blog) <small>(random)</small>
+* [kodeco](https://www.kodeco.com/library) <small>(ios, android, flutter/dart...)</small>
+* [thoughtbot](https://thoughtbot.com/blog)<small>(ios, android...)</small>
+* [weeklyhow](https://weeklyhow.com/blog/)<small>(Shopify...)</small>
+
+**Blockchains focused**
+
+* [bitdegree](https://www.bitdegree.org/)
+
+**Single-courses**
+
+* [Complexity](https://math.ryerson.ca/~danziger/professor/MTH108/Handouts/gauss-complexity.pdf)
+
+**Project management/... focused**
+
+* [lucidchart](https://www.lucidchart.com/blog/)
+* [taskade](https://www.taskade.com/blog/)
 </div><div>
-
-**All**
-
-* [guru99](https://www.guru99.com/) <small>(too much :/)</small>
-* [exercism](https://exercism.org/) <small>(C, C#, Go, Bash...)</small>
-* [studytonight](https://www.studytonight.com/library/) <small>(C, C++, Android...)</small> + Tests
-* [skillshare](https://www.skillshare.com/) <small>(non-programming topics)</small>
-* [digitalocean](https://www.digitalocean.com/community) <small>(Python, PHP, SQL, Go, Node)</small>
-* [w3schools](https://www.w3schools.com/default.asp) and [w3docs](https://www.w3docs.com/)
-* [toptal](https://www.toptal.com/developers/blog) <small>(blog with random stuff)</small>
-* [codevscolor](https://www.codevscolor.com/) <small>(web, mobile...)</small>
-
-**Programming languages focused**
-
-* [programiz](https://programiz.pro/catalog) <small>(Python, C, C++, Java, SQL, Linux)</small>
-* [programmingwithmosh](https://programmingwithmosh.com/) <small>(Node, Java, JS, C#)</small>
-* [codingthesmartway](https://www.codingthesmartway.com/) <small>(Node, React...)</small>
-* [codewithharry](https://www.codewithharry.com/) <small>(JS, C, C++, Java, Python, React, PHP)</small>
-* [baeldung](https://www.baeldung.com/) <small>(Java)</small>
-* [mooc.fi](https://www.mooc.fi/en/#courses) <small>(Java, Cyber)</small>
-* [pluralsight](https://www.pluralsight.com/blog) <small>(React, Java, Ruby, Python, Angular...)</small>
-* [knowledgehut](https://www.knowledgehut.com/tutorials) <small>(R, Node, Ionic, C#...)</small>
 
 **Blogs**
 
@@ -163,35 +199,10 @@ Blogs that I found, but never read yet.
 * [leblogducodeur](https://web.archive.org/web/20220819200109/https://leblogducodeur.fr/) <small>(french)</small>
 * [zestedesavoir](https://zestedesavoir.com/bibliotheque/informatique/) <small>(french)</small>
 * [thinkr](https://thinkr.fr/abcdr/tous-les-scripts/) <small>(french)</small>
-
-**Linux**
-
-* [tecmint](https://www.tecmint.com/)
-
-</div><div>
-
-**Blockchains focused**
-
-* [bitdegree](https://www.bitdegree.org/)
-
-**Single-courses**
-
-* [Complexity](https://math.ryerson.ca/~danziger/professor/MTH108/Handouts/gauss-complexity.pdf)
-
-**Non-programming focused**
-
-* [lucidchart](https://www.lucidchart.com/blog/)
-
-**MOOCs**
-
-* [udemy](https://www.udemy.com/) <small>(well-known)</small>
-* [coursera](https://www.coursera.org/) <small>(well-known)</small>
-* [fun-mooc](https://www.fun-mooc.fr/en/) <small>(french)</small>
-
-**Bootcamps focused**
-
-* [hackreactor](https://www.hackreactor.com/)
-* [careerkarma](https://careerkarma.com/)
+* [thenewdeveloper](https://thenewdeveloper.substack.com/) <small>(tests)</small>
+* [poftut](https://www.poftut.com/) <small>(???)</small>
+* [jvns](https://jvns.ca/) and [wizardzines](https://wizardzines.com/)
+* [stackpath](https://www.stackpath.com/blog) <small>(???)</small>
 
 **YouTube**
 
@@ -200,6 +211,7 @@ Blogs that I found, but never read yet.
 **GitHub**
 
 * [omundy](https://github.com/omundy)
+* [developer-y](https://github.com/Developer-Y/cs-video-courses)
 
 **Cheatsheet**
 
@@ -230,11 +242,13 @@ Random stuff...
 **Entrepreneurship**
 
 * [Promote Your Next Startup](https://github.com/trekhleb/promote-your-next-startup)
+* [shopify](https://www.shopify.com/)
 
 **News**
 
 * [rankred](https://www.rankred.com/)
 * [daily.dev](https://daily.dev/)
+* [polygon](https://www.polygon.com/)
 
 **Help**
 
