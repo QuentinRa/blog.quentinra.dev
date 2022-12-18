@@ -41,6 +41,7 @@ Programming languages (+tools) that I want to check, but never had the time.
 * [ace](https://github.com/ajaxorg/ace) (web code editor)
 * [stackblitz](https://stackblitz.com/) (web coding environment)
 * [glitch](https://glitch.com/) (web coding environment?)
+* [codepen](https://codepen.io/) (web coding environment+editor?)
 
 **Web/Android/UI**
 
@@ -117,6 +118,7 @@ Blogs that I found, but never read yet.
 * [admecindia](https://www.admecindia.co.in/category/web-development/)  <small>(many)</small>
 * [ilovecoding](https://ilovecoding.org/) <small>(???)</small>
 * [browserstack](https://www.browserstack.com/guide/category/tutorials) <small>(???)</small>
+* [jgthms](https://jgthms.com/) and [marksheet](https://marksheet.io/)
 </div><div>
 
 **All**
@@ -131,14 +133,18 @@ Blogs that I found, but never read yet.
 **Programming languages focused**
 
 * [programiz](https://programiz.pro/catalog) <small>(Python, C, C++, Java, SQL, Linux)</small>
+* [programmingwithmosh](https://programmingwithmosh.com/) <small>(Node, Java, JS, C#)</small>
+* [codingthesmartway](https://www.codingthesmartway.com/) <small>(Node, React...)</small>
 
-**Small blogs**
+**Blogs**
 
 * [arne](https://notes.arne.me/about-these-notes/) <small>(notes)</small>
 * [mokacoding](https://mokacoding.com/)
 * [francoisbrucker](https://francoisbrucker.github.io/cours_informatique/) <small>(french)</small>
 * [dubrayn](https://dubrayn.github.io/#1)
 * [umassmed](https://bootstrappers.umassmed.edu/bootstrappers-courses/index.html) <small>(Python, R, Linux)</small>
+* [codinginfinite](https://codinginfinite.com/)
+* [dataschool](https://www.dataschool.io/) <small>(Datascience)</small>
 
 </div><div>
 
@@ -191,4 +197,9 @@ Random stuff...
 **Entrepreneurship**
 
 * [Promote Your Next Startup](https://github.com/trekhleb/promote-your-next-startup)
+
+**News**
+
+* [rankred](https://www.rankred.com/)
+* [daily.dev](https://daily.dev/)
 </div></div>
