@@ -1,3 +1,5 @@
+super<Application>.onCreate()
+
 https://github.com/Kotlin/dokka
 
 Arrays#joinToString

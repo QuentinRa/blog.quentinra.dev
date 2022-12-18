@@ -25,8 +25,15 @@ if ("".trim().length !== 0) {}
 if ("") {} // empty = false
 const {x1, x2} = { x1: 'xxx', x2: 'yyy' }
 const merge = Object.assign({name: 'toto', age: 10}, { age: 15 })
-```
+``` 
 </div><div>
 
-* [Maps](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+* [Javascript Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+* [localizejs](https://localizejs.com/)
+* [javascript.info](https://javascript.info/)
+* axios
+
+Tools
+
+* [babeljs](https://babeljs.io/)
 </div></div>

@@ -343,3 +343,17 @@ Checklists
 * `/Windows/System32/config/`: location where the Security Account Manager (**SAM**) database file is stored. This file is used to store users, their passwords, their groups... Modern versions of Windows use the NT hash format, commonly referred to as NTLM, as the previous format was LM.
 * [Windows credential guard](https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-how-it-works)
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [Mercurial-Grabber](https://github.com/NightfallGT/Mercurial-Grabber) (a [real](https://blog.cyble.com/2022/01/18/mercurial-grabber-malware-builder/) malware to steal credential)
+* [discoon](https://github.com/RadonCoding/discoon) (another potential real malware)
+</div><div>
+
+</div></div>

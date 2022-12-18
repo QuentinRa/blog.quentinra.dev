@@ -16,9 +16,19 @@ Stuff that I found, but never read/used yet.
 * Datastore
 * File system
 * Themes
+* Android bottom navigation
+* Services
 </div><div>
 
 ```kotlin
 ViewModelProvider(this)[XXXViewModel::class.java]
+recyclerView.apply {
+    layoutManager = GridLayoutManager(requireContext(), 2)
+}
+
+val preferences: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
+if (preferences.getBoolean("key", false)) {}
+
+intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
 ```
 </div></div>
