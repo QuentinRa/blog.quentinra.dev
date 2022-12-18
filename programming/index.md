@@ -2,12 +2,30 @@
 
 <div class="row row-cols-md-2"><div>
 
-A super-increasing to-do list in which I keep adding stuff, but there are too many things to-do that they may stay here for a few more years. To increase the amount of "to-do" that I'm tackling, I moved some of them inside separated "to-do" sections, in the appropriate notes.
-</div><div>
+A super-increasing to-do list in which I keep adding stuff, but there are too many things to-do that they may stay here for a few more years. To increase the amount of "to-do" that I'm tackling, I moved (➡️) some of them inside separated "to-do" sections, in the appropriate notes.
 
-Topics
+**Topics**
 
 * Create browser extensions/plugins
+
+**Special**
+
+* [Summer-Internships](https://github.com/pittcsc/Summer2023s-Internships)
+</div><div>
+
+**Planned**
+
+* android
+* node.js
+* javascript (language, dom)
+* typescript
+* html
+* electron
+* css, sass, less
+* latex/rst
+* xml
+* gradle
+* web (general)
 </div></div>
 
 <hr class="sep-both">
@@ -29,16 +47,36 @@ Programming languages (+tools) that I want to check, but never had the time.
 
 **Web**
 
-➡️[Modern web](https://modern-web.dev/guides/)
+➡️See [Modern web](https://modern-web.dev/guides/)<br>
+➡️See API/GraphQL (to-do)<br>
+➡️See API/OpenAPI/tools (to-do)
 
 * [symfony](https://symfony.com/) ([nelmio](https://github.com/nelmio/NelmioApiDocBundle))
 * [laravel](https://laravel.com/)
 * [retype](https://retype.com/) (Extended Markdown)
+* [elm](https://elm-lang.org/) (language)
+* React/React Native/Ionic
 </div><div>
 
 **Tools/APIs**
 
-* [algolia](https://www.algolia.com/) (add a searchbar?)
+* [algolia](https://www.algolia.com/) (add a searchbar?, see bt)
+
+**Learned** (but there is no notes about them)
+
+* QT
+* IntelliJ Plugin Development
+* Relational modeling
+* WordPress
+
+**Random**
+
+* Moodle
+* Lua
+* Perl
+* Heredoc
+* [A lot of languages listed here](https://www.jetbrains.com/help/webstorm/application-development-guidelines.html)
+* ML (programming language)
 </div></div>
 
 <hr class="sep-both">
@@ -70,9 +108,7 @@ Courses that I found, but never tried yet.
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-Courses+Blog
-
-* [sabe.io](https://sabe.io/) <small>(Web, Node, Vue/React, Python, Java, Docker, Deno)</small>
+...
 </div><div>
 
 
