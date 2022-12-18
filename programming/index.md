@@ -39,9 +39,10 @@ Programming languages (+tools) that I want to check, but never had the time.
 **Editors**
 
 * [ace](https://github.com/ajaxorg/ace) (web code editor)
-* [stackblitz](https://stackblitz.com/) (web coding environment)
-* [glitch](https://glitch.com/) (web coding environment?)
-* [codepen](https://codepen.io/) (web coding environment+editor?)
+* [stackblitz](https://stackblitz.com/) (???)
+* [glitch](https://glitch.com/) (???)
+* [codepen](https://codepen.io/) (???)
+* [codesandbox](https://codesandbox.io/) (???)
 
 **Web/Android/UI**
 
@@ -55,6 +56,7 @@ Programming languages (+tools) that I want to check, but never had the time.
 * React/React Native/Ionic/Angular
 * [Dart](https://dart.dev/)
 * [Flutter](https://flutter.dev/)
+* [vercel](https://vercel.com/)
 
 **Web (markdown)**
 
@@ -93,6 +95,11 @@ Programming languages (+tools) that I want to check, but never had the time.
 * Heredoc
 * [A lot of languages listed here](https://www.jetbrains.com/help/webstorm/application-development-guidelines.html)
 * ML (programming language)
+
+**Trolls**
+
+* [emojicode](https://www.emojicode.org/)
+* [jsfuck](http://www.jsfuck.com/)
 </div></div>
 
 <hr class="sep-both">
@@ -115,6 +122,14 @@ Blogs that I found, but never read yet.
 * [codevscolor](https://www.codevscolor.com/) <small>(web, mobile...)</small>
 * [learnxinyminutes](https://learnxinyminutes.com/) <small>(many)</small>
 * [adamtheautomator](https://adamtheautomator.com/tutorials/) <small>(???)</small>
+* [sindresorhus/awesome](https://github.com/sindresorhus/awesome)  <small>(230k ⭐)</small>
+* [NARKOZ/guides](https://github.com/NARKOZ/guides) <small>(guidelines, 2k ⭐)</small>
+* [palash25/best-practices](https://github.com/palash25/best-practices-checklist) <small>(0.9k ⭐)</small>
+* [the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) <small>(85k ⭐)</small>
+* [sdmg15/websites](https://github.com/sdmg15/Best-websites-a-programmer-should-visit) <small>(50k ⭐)</small>
+* [theAlgorithms](https://github.com/theAlgorithms) <small>(150k ⭐)</small>
+* [smashingmagazine](https://www.smashingmagazine.com/) <small>(many)</small>
+* [gitconnected](https://gitconnected.com/) <small>(aggregate websites)</small>
 
 **MOOCs**
 
@@ -175,6 +190,7 @@ Blogs that I found, but never read yet.
 **Single-courses**
 
 * [Complexity](https://math.ryerson.ca/~danziger/professor/MTH108/Handouts/gauss-complexity.pdf)
+* [cburch](http://www.cburch.com/books/) (books)
 
 **Project management/... focused**
 
@@ -212,6 +228,15 @@ Blogs that I found, but never read yet.
 
 * [omundy](https://github.com/omundy)
 * [developer-y](https://github.com/Developer-Y/cs-video-courses)
+* [build-your-own-x](https://github.com/codecrafters-io/build-your-own-x)
+
+**Practice**
+
+* [app-ideas](https://github.com/florinpop17/app-ideas) (60k ⭐)
+* [project-based-learning](https://github.com/practical-tutorials/project-based-learning) (84k ⭐)
+* [leetcode](https://leetcode.com/)
+* [codewars](https://www.codewars.com/)
+* [hackerrank](https://www.hackerrank.com/)
 
 **Cheatsheet**
 
@@ -230,13 +255,10 @@ Random stuff...
 
 * [Summer-Internships](https://github.com/pittcsc/Summer2023s-Internships)
 * [techrez](https://techrez.io/) (tech resumes)
+* [gitconnected](https://gitconnected.com/) (tech resumes)
 * [reverse-interview](https://github.com/viraptor/reverse-interview)
 * [Hiring Without Whiteboards](https://github.com/poteto/hiring-without-whiteboards)
 * [essential-dev-skills](https://essential-dev-skills.com/) (french)
-
-**Interviews - it skills**
-
-* [hackerrank](https://www.hackerrank.com/)
 </div><div>
 
 **Entrepreneurship**
