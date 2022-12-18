@@ -2,11 +2,7 @@
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-It's highly likely that if you make some Android application, you will want to connect your app to your servers. To avoid putting credentials in the code, Android developers use [APIs](/programming/web/apis/index.md) to connect to their servers/external services.
-
-You may also want to check out
-
-* [firebase](https://firebase.google.com/) (auth, server push, 👻)
+It's highly likely that if you make some Android application, you will want to connect your app to your servers. To avoid putting credentials in the code, or to use external services, Android developers use [APIs](/programming/web/apis/index.md) to connect to their/external servers.
 
 Add the permission in your AndroidManifest.xml <small>(above application)</small> ⭐
 
@@ -14,6 +10,18 @@ Add the permission in your AndroidManifest.xml <small>(above application)</small
 <uses-permission android:name="android.permission.INTERNET" />
 ```
 
+<details class="details-e">
+<summary>Note about localhost</summary>
+
+⚠️ Note that `localhost`/`127.0.0.1` isn't available from your Android application. You should use `10.0.2.2` instead.
+
+You will also have to edit AndroidManifest.xml and allow HTTP
+
+```diff
+    <application
++        android:usesCleartextTraffic="true"
+```
+</details>
 </div><div>
 
 There are many library that you may use at some point
@@ -26,19 +34,6 @@ There are many library that you may use at some point
 * [volley](https://github.com/google/volley) (3.3k ⭐, 👻): HTTP library
 
 What I defined as HTTP libraries are libraries that are providing an interface to an HTTP client, so they aren't the one doing the request.
-
-<details class="details-e">
-<summary>Note about localhost</summary>
-
-⚠️ Note that `localhost` isn't available from your Android application. There is `10.0.2.2` which is redirecting to localhost that you must use instead.
-
-You will also have to edit AndroidManifest.xml and allow HTTP
-
-```diff
-    <application
-+        android:usesCleartextTraffic="true"
-```
-</details>
 </div></div>
 
 <hr class="sep-both">

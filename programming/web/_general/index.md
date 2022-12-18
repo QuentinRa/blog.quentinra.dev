@@ -16,5 +16,8 @@ Stuff that I found, but never read/used yet.
 * [keycdn](https://www.keycdn.com/support/tutorials)
 </div><div>
 
+Tools
 
+* [firebase](https://firebase.google.com/) (auth, server push...)
+* [pusher](https://pusher.com/) (server push...)
 </div></div>
