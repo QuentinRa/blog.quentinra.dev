@@ -1,7 +1,5 @@
 # 🛳️ Application Programming Interface 🛳️
 
-**[Old notes](_old.md)**
-
 <div class="row row-cols-md-2 mt-4"><div>
 
 Application Programming Interfaces (APIs) are used to allow access to internal services such as a database to both internal and external entities, but with a layer of abstraction called "interface".
@@ -31,6 +29,8 @@ Some APIs
 Some notes about APIs
 
 * [Stripe](stripe/index.md) (payments)
+
+➡️ If you need a fake API for testing, see [jsonplaceholder](https://jsonplaceholder.typicode.com/).
 </div></div>
 
 <hr class="sep-both">
@@ -110,4 +110,36 @@ You should look on Google/GitHub for drivers/wrappers of your API.
 * Use your web browser with fetch (JavaScript)
 
 * Use [JetBrains HTTP client](https://www.jetbrains.com/help/phpstorm/http-client-in-product-code-editor.html)
+
+* Use [reqbin](https://reqbin.com/) to do/generate code to do requests
+</div></div>
+
+<hr class="sep-both">
+
+## 🤙 API documentation 👈️
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+To write API documentation, you can use
+
+* [apiary](https://apiary.io/) <small>(Oracle, easy/manual, not recommended)</small>
+* [stoplight](https://stoplight.io/) (👻)
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* REST/RESTful/[REST API guidelines](https://github.com/controlook-zz/standards/blob/master/backend/rest-api-guidelines.md)
+* GraphQL ([article on best practices](https://stepzen.com/blog/designing-graphql-apis-best-practices-and-learnings-from-rest-api-design))
+</div><div>
+
+
 </div></div>
