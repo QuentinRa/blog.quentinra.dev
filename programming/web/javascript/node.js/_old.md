@@ -1,6 +1,6 @@
 # Introduction
 
-**[Updates notes](index.md)**
+**[Updated notes](index.md)**
 
 This course will introduce **Node.js**,
 

@@ -193,7 +193,7 @@ xxx.delete('URI') // delete
 It's worth noting that if you do this, then for EVERY test, chai will create an HTTP server, run the request, and close it. You may want to keep the server open for all your tests.
 
 <details class="details-e">
-<summary>Keep the server open</summary>
+<summary>Keep the client open</summary>
 
 ```javascript
 describe('name', function() {
@@ -215,7 +215,7 @@ describe('name', function() {
 <details class="details-e">
 <summary>Login cookie</summary>
 
-This is a follow-up of the dropdown to keep the connection open.
+This is a follow-up of the dropdown to keep the client open.
 
 ```javascript
 // get it back and save it

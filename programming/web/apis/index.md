@@ -32,3 +32,28 @@ Some notes about APIs
 
 * [Stripe](stripe/index.md) (payments)
 </div></div>
+
+<hr class="sep-both">
+
+## 📖 Terminology 📖
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+* **Base endpoint**: the base URL for any request to the API
+* **Endpoint**: a URL with a route of the API
+* **Path**: the part after the base endpoint
+
+For the endpoint `http://localhost:3000/users/1`, the base endpoint would be `http://localhost:3000` while the path would be `/users/1`.
+</div><div>
+
+**Methods**
+
+An endpoint may allow multiple HTTP methods (GET, POST, PUT...). Refer to the API documentation to known which one are available. See [HTTP protocol/method](/it/networking/protocols/index.md#method) for your own API if needed.
+
+**Responses**
+
+Usually, only one format is supported, but developers may allow the developer to select a format <small>(ex: header content-type)</small>
+
+* JSON 💫 or sometimes XML
+* [HTTP response code](/it/networking/protocols/index.md#http-response-code) <small>(200, 201, 400, 401, 403, 404, 500)</small>
+</div></div>
