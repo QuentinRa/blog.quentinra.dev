@@ -57,3 +57,57 @@ Usually, only one format is supported, but developers may allow the developer to
 * JSON 💫 or sometimes XML
 * [HTTP response code](/it/networking/protocols/index.md#http-response-code) <small>(200, 201, 400, 401, 403, 404, 500)</small>
 </div></div>
+
+<hr class="sep-both">
+
+## ✈  Test/use an API ️✈️
+
+*Something like: "How to make API requests?"*
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+#### Postman
+
+The most well-known tool is [PostMan](https://www.postman.com/). Once downloaded,
+
+* Go to the collection tab
+* Create a new collection
+* Add a request
+  * Click on "GET" to select the method
+  * Fill the URL with an endpoint of the API
+  * You can add
+    * Query parameters (GET, tab Params)
+    * Headers (tab Headers)
+    * Body (POST, x-www-form-encoded, tab Body)
+* Then, click on send
+
+➡️ Instead of editing your request to test another endpoint. Save it <small>(CTRL+S/save button)</small>, and create a new one.
+
+➡️ In the right-side panel, there is a code tag. Click on it, and you will be able to generate the API request in many languages.
+</div><div>
+
+#### cURL
+
+cURL is a command that is useful for quick tests.
+
+```
+# postman
+$ curl --location --request POST 'URL' --header 'Content-Type: application/x-www-form-urlencoded' --data-urlencode 'key=value'
+# simplified
+$ curl -X POST 'URL' -d 'key=value' -H 'Content-Type: application/x-www-form-urlencoded'
+```
+
+<br>
+
+#### Drivers
+
+You should look on Google/GitHub for drivers/wrappers of your API.
+
+<br>
+
+#### Others
+
+* Use your web browser with fetch (JavaScript)
+
+* Use [JetBrains HTTP client](https://www.jetbrains.com/help/phpstorm/http-client-in-product-code-editor.html)
+</div></div>
