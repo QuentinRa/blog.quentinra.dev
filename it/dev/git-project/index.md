@@ -435,4 +435,5 @@ Random
 * [codetriage](https://www.codetriage.com/) (get issues from your favorites repos in your inbox)
 * [opencollective](https://opencollective.com/)
 * [cla-assistant](https://cla-assistant.io/)
+* [gitter](https://gitter.im/)
 </div></div>

@@ -44,8 +44,9 @@ Programming languages (+tools) that I want to check, but never had the time.
 
 * [ace](https://github.com/ajaxorg/ace) (web code editor)
 * [stackblitz](https://stackblitz.com/) (web coding environment)
+* [glitch](https://glitch.com/) (web coding environment?)
 
-**Web**
+**Web/Android/UI**
 
 ➡️See [Modern web](https://modern-web.dev/guides/)<br>
 ➡️See API/GraphQL (to-do)<br>
@@ -53,14 +54,27 @@ Programming languages (+tools) that I want to check, but never had the time.
 
 * [symfony](https://symfony.com/) ([nelmio](https://github.com/nelmio/NelmioApiDocBundle))
 * [laravel](https://laravel.com/)
-* [retype](https://retype.com/) (Extended Markdown)
 * [elm](https://elm-lang.org/) (language)
 * React/React Native/Ionic
+* [Dart](https://dart.dev/)
+* [Flutter](https://flutter.dev/)
+
+**Web (markdown)**
+
+* [retype](https://retype.com/) (Extended Markdown)
+* [utterances](https://github.com/utterance/utterances) (Git-based comments)
+
 </div><div>
 
-**Tools/APIs**
+**Tools~APIs**
 
 * [algolia](https://www.algolia.com/) (add a searchbar?, see bt)
+* [simpleen](https://simpleen.io/) (localization)
+* [crowdin](https://crowdin.com/) (localization)
+
+**Tools~Software**
+
+* [editorconfig](https://editorconfig.org/)
 
 **Learned** (but there is no notes about them)
 
@@ -94,7 +108,9 @@ Blogs that I found, but never read yet.
 * [sabe.io](https://sabe.io/) <small>(Web, Node, Vue/React, Python, Java, Docker, Deno)</small>
 </div><div>
 
-xxx
+**Theory**
+
+* [Complexity](https://math.ryerson.ca/~danziger/professor/MTH108/Handouts/gauss-complexity.pdf)
 </div><div>
 
 xxx
