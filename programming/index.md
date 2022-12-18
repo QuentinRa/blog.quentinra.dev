@@ -73,6 +73,7 @@ Programming languages (+tools) that I want to check, but never had the time.
 **Tools~Software**
 
 * [editorconfig](https://editorconfig.org/)
+* [visual-paradigm](https://www.visual-paradigm.com/) (project management)
 
 **Learned** (but there is no notes about them)
 
@@ -114,6 +115,8 @@ Blogs that I found, but never read yet.
 * [unclebigbay](https://unclebigbay.com/) <small>(React, JS, CSS)</small>
 * [freecodecamp](https://www.freecodecamp.org/news) <small>(React, JS)</small>
 * [admecindia](https://www.admecindia.co.in/category/web-development/)  <small>(many)</small>
+* [ilovecoding](https://ilovecoding.org/) <small>(???)</small>
+* [browserstack](https://www.browserstack.com/guide/category/tutorials) <small>(???)</small>
 </div><div>
 
 **All**
@@ -121,10 +124,21 @@ Blogs that I found, but never read yet.
 * [guru99](https://www.guru99.com/) <small>(too much :/)</small>
 * [exercism](https://exercism.org/) <small>(C, C#, Go, Bash...)</small>
 * [studytonight](https://www.studytonight.com/library/) <small>(C, C++, Android...)</small> + Tests
+* [skillshare](https://www.skillshare.com/) <small>(non-programming topics)</small>
+* [digitalocean](https://www.digitalocean.com/community) <small>(Python, PHP, SQL, Go, Node)</small>
+* [w3schools](https://www.w3schools.com/default.asp) and [w3docs](https://www.w3docs.com/)
 
 **Programming languages focused**
 
 * [programiz](https://programiz.pro/catalog) <small>(Python, C, C++, Java, SQL, Linux)</small>
+
+**Small blogs**
+
+* [arne](https://notes.arne.me/about-these-notes/) <small>(notes)</small>
+* [mokacoding](https://mokacoding.com/)
+* [francoisbrucker](https://francoisbrucker.github.io/cours_informatique/) <small>(french)</small>
+* [dubrayn](https://dubrayn.github.io/#1)
+* [umassmed](https://bootstrappers.umassmed.edu/bootstrappers-courses/index.html) <small>(Python, R, Linux)</small>
 
 </div><div>
 

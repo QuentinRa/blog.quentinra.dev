@@ -26,7 +26,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * Webpack, rollupjs, parcel, Snowpack, WMR, and vite+vitest
-* End-to-End Testing Solution (cypress/...)
+* End-to-End Testing Solution (cypress/[browserstack](https://www.browserstack.com/)/...)
 * .env
 * "yarn add xxx" / "pnpm"
 
