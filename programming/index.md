@@ -111,28 +111,46 @@ Blogs that I found, but never read yet.
 * [ezekielekunola](https://www.blog.ezekielekunola.com/) <small>(Vue/React...)</small>
 * [buddy.works](https://buddy.works/tutorials) <small>(Vue/React/Mocha/..., Node, Docker...)</small>
 * [sitepen](https://www.sitepen.com/blog) <small>(Typescript, Jest, Deno, Angular...)</small>
+* [unclebigbay](https://unclebigbay.com/) <small>(React, JS, CSS)</small>
+* [freecodecamp](https://www.freecodecamp.org/news) <small>(React, JS)</small>
+* [admecindia](https://www.admecindia.co.in/category/web-development/)  <small>(many)</small>
 </div><div>
 
-**Theory**
+**All**
+
+* [guru99](https://www.guru99.com/) <small>(too much :/)</small>
+* [exercism](https://exercism.org/) <small>(C, C#, Go, Bash...)</small>
+* [studytonight](https://www.studytonight.com/library/) <small>(C, C++, Android...)</small> + Tests
+
+**Programming languages focused**
+
+* [programiz](https://programiz.pro/catalog) <small>(Python, C, C++, Java, SQL, Linux)</small>
+
+</div><div>
+
+**Blockchains focused**
+
+* [bitdegree](https://www.bitdegree.org/)
+
+**Single-courses**
 
 * [Complexity](https://math.ryerson.ca/~danziger/professor/MTH108/Handouts/gauss-complexity.pdf)
-</div><div>
 
-xxx
-</div></div>
+**Hard to sort**
 
-<hr class="sep-both">
+* [pluralsight](https://www.pluralsight.com/blog) <small>(React, Java, Ruby, Python, Angular...)</small>
+* [knowledgehut](https://www.knowledgehut.com/tutorials) <small>(R, Node, Ionic, C#...)</small>
 
-## 🏫 Courses 🎒
+**MOOCs**
 
-Courses that I found, but never tried yet.
+* [udemy](https://www.udemy.com/) <small>(well-known)</small>
+* [coursera](https://www.coursera.org/) <small>(well-known)</small>
+* [fun-mooc](https://www.fun-mooc.fr/en/) <small>(french)</small>
 
-<div class="row row-cols-md-2 mt-4"><div>
+**Bootcamps focused**
 
-...
-</div><div>
-
-...
+* [hackreactor](https://www.hackreactor.com/)
+* [careerkarma](https://careerkarma.com/)
 </div></div>
 
 <hr class="sep-both">
