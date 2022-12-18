@@ -10,9 +10,22 @@ Programming languages (+tools) that I want to check, but never had the time.
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-**Tools**
+**General**
 
 * [mercurial](https://www.mercurial-scm.org/) (version-control)
+
+**Editors**
+
+* [ace](https://github.com/ajaxorg/ace) (web code editor)
+* [stackblitz](https://stackblitz.com/) (web coding environment)
+
+**Web**
+
+➡️[Modern web](https://modern-web.dev/guides/)
+
+* [symfony](https://symfony.com/) ([nelmio](https://github.com/nelmio/NelmioApiDocBundle))
+* [laravel](https://laravel.com/)
+* [retype](https://retype.com/) (Extended Markdown)
 </div><div>
 
 ...

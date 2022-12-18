@@ -315,7 +315,6 @@ this.$router.push({ name:'about' })
 * Preprocessors (ts, scss)
 * v-bind to pass data
 * `@/main` matches `src/main.js` (shortcut for src)
-* [Nuxt.js](https://nuxtjs.org/) (see [vuestripe](https://vuestripe.com/nuxt/))
 </div><div>
 
 ```
@@ -325,4 +324,9 @@ import { ref } from 'vue'
 const count = ref(0)
 </script>
 ```
+
+* [pinia](https://pinia.vuejs.org/)
+* [Nuxt.js](https://nuxtjs.org/) (see [vuestripe](https://vuestripe.com/nuxt/))
+* [vuemastery](https://www.vuemastery.com/)
+* [vueschool](https://vueschool.io/)
 </div></div>

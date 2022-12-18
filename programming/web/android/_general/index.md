@@ -1,6 +1,6 @@
 # Android
 
-**[Old notes](../_old/index.md)**
+**[Old notes](_old.md)**
 
 ...
 
@@ -18,6 +18,8 @@ Stuff that I found, but never read/used yet.
 * Themes
 * Android bottom navigation
 * Services
+* [Nested navigation graphs](https://developer.android.com/guide/navigation/navigation-nested-graphs)
+* Room
 </div><div>
 
 ```kotlin

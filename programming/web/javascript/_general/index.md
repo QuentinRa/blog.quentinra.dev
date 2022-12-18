@@ -25,6 +25,8 @@ if ("".trim().length !== 0) {}
 if ("") {} // empty = false
 const {x1, x2} = { x1: 'xxx', x2: 'yyy' }
 const merge = Object.assign({name: 'toto', age: 10}, { age: 15 })
+// filter
+// match (/xxx/)
 ``` 
 </div><div>
 

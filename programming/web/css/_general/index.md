@@ -23,5 +23,9 @@ Stuff that I found, but never read/used yet.
 * Bootstrap icons
 </div><div>
 
-
+```css
+.selector {
+    white-space: pre-line; /* multilines */
+}
+```
 </div></div>

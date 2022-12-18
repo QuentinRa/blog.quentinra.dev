@@ -100,7 +100,7 @@
           ],
           "📱 Android 📲": [
             {
-              "tag": "web/android/general/index.md",
+              "tag": "web/android/_general/index.md",
               "name": "Android",
               "desc": "How to create Android Applications.",
               "icon": "<i class=\"bi bi-android\"></i>",
@@ -138,9 +138,9 @@
             {
               "tag": "utils/latex/index.md",
               "name": "LaTeX",
-              "desc": "A language used to write reports, create presentations quite easily and with great style. You may also use it to write math in a website/documents.",
+              "desc": "...",
               "icon": "<i class=\"bi bi-file-earmark-richtext\"></i>",
-              "hidden": true
+              "hidden": false
             }
           ],
           "🧃 Store data 🧃": [

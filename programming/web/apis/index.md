@@ -138,7 +138,10 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * REST/RESTful/[REST API guidelines](https://github.com/controlook-zz/standards/blob/master/backend/rest-api-guidelines.md)
-* GraphQL ([article on best practices](https://stepzen.com/blog/designing-graphql-apis-best-practices-and-learnings-from-rest-api-design))
+  * stateless (do not use previous requests)
+  * uniform (ex: json for all responses)
+  * multiple requests to get one ressource (disavantage)
+* [GraphQL](https://graphql.org/) ([article on best practices](https://stepzen.com/blog/designing-graphql-apis-best-practices-and-learnings-from-rest-api-design))
 </div><div>
 
 
