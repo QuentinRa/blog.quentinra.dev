@@ -1,6 +1,6 @@
 # Events
 
-[Go back](..#javascript-for-websites)
+[Go back](../../../../../archives/info/web/_old#javascript-for-websites)
 
 An event is something like clicking on a button, submitting a form, ... You can set a function that will be executed when an event is fired.
 

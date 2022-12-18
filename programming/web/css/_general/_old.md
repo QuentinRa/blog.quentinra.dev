@@ -1,5 +1,7 @@
 # Cascading Style Sheets
 
+**[Updated notes](index.md)**
+
 Cascading Style Sheets (CSS) are mainly used to style websites, and add some animations. I'm not an expert nor fond of CSS because CSS frameworks such as Bootstrap are providing most of the CSS that I need. We are currently using **CSS3**, but maybe [someday we will see CSS4](https://css4-selectors.com/status-for-css4/) introducing [new selectors](https://css4-selectors.com/selectors/) (a lot of them are already available).
 
 * How to write CSS

@@ -1,6 +1,6 @@
 # Spread syntax
 
-[Go back](..#advanced-syntax)
+[Go back](../../../../../archives/info/web/_old#advanced-syntax)
 
 The spread syntax `...` allows us to expand an array. For instance, let's say you got an array with $[1,2,3,4]$, you could create a new one with the same values, like this
 

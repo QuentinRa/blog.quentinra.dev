@@ -1,6 +1,6 @@
 # window
 
-[Go back](..#javascript-for-websites)
+[Go back](../../../../../archives/info/web/_old#javascript-for-websites)
 
 I only used the localStorage, but feel free to add more content here.
 

@@ -349,20 +349,6 @@
 				"desc": "A complete summary of what you need to know in HTML to make a website.",
 				"icon": "<i class=\"bi bi-globe\"></i>",
 				"hidden": false
-			},
-			{
-				"tag": "info/web/css/index.md",
-				"name": "CSS",
-				"desc": "What's CSS and how you could use it to make your website looks better.",
-				"icon": "<i class=\"bi bi-globe\"></i>",
-				"hidden": false
-			},
-			{
-				"tag": "info/web/js/index.md",
-				"name": "JavaScript",
-				"desc": "A short introduction to JavaScript used to make interactive websites or required for Node.js/Typescript courses.",
-				"icon": "<i class=\"bi bi-globe\"></i>",
-				"hidden": false
 			}
 		]
 	}

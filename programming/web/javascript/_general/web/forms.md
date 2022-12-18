@@ -1,6 +1,6 @@
 # Forms
 
-[Go back](..#javascript-for-websites)
+[Go back](../../../../../archives/info/web/_old#javascript-for-websites)
 
 Most of the verifications are in HTML, but If you **can't check something in HTML** (ex: the password and the password confirmation have the same value) or you want to **display a custom error message**, then here you go.
 

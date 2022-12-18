@@ -18,6 +18,13 @@
           ],
           "🎨 Cascading Style Sheets (CSS) 🖼️": [
             {
+              "tag": "web/css/_general/index.md",
+              "name": "CSS",
+              "desc": "...",
+              "icon": "<i class=\"bi bi-globe\"></i>",
+              "hidden": false
+            },
+            {
               "tag": "web/css/bootstrap/index.md",
               "name": "Bootstrap",
               "desc": "A popular CSS library.",
@@ -26,6 +33,13 @@
             }
           ],
           "🦤 JavaScript (JS) 🦤": [
+            {
+              "tag": "web/javascript/_general/index.md",
+              "name": "JavaScript",
+              "desc": "...",
+              "icon": "<i class=\"bi bi-globe\"></i>",
+              "hidden": false
+            },
             {
               "tag": "web/javascript/node.js/index.md",
               "name": "Node.js",
