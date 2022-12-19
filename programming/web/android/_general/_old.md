@@ -2,85 +2,6 @@
 
 **[Updates notes](index.md)**
 
-There are multiple ways to develop apps for Android devices. This course will focus on Android apps written in **Kotlin**, using **Android Studio**. Kotlin which is recommended by Google since 2018, replacing Java which was mainly used until then. Switching from Kotlin to Java, and from Java to Kotlin is quite easy, Android Studio can even do the conversion for you.
-
-> Android Studio (Google) is based on IntelliJ Community (JetBrains) 😎❤️
-
-<hr class="sl">
-
-## Android studio
-
-<div class="row row-cols-md-2"><div>
-
-Life-saving shortcuts
-
-* <kbd>CTRL+P</kbd>: in `method(<here>)`, show the arguments of a method
-* <kbd>CTRL+SPACE</kbd>: manually trigger autocompletion
-* <kbd>SHIFT+SHIFT</kbd>: search for a method/class/...
-* Your usual <kbd>CTRL+C</kbd> (copy), <kbd>CTRL+V</kbd> (paste), <kbd>CTRL+A</kbd> (select all), <kbd>CTRL+F</kbd> (search)
-* <kbd>CTRL+D</kbd>: shortcut to duplicate a line, or the selection if any
-* <kbd>TAB</kbd>: in a context of autocompletion, trigger to use of the selected autocompletion fragment
-* <kbd>CTRL+(MOUSE LEFT)</kbd>: on a method, move to where this method is declared
-* <kbd>ALT+ENTER</kbd> ⭐: Android Studio will highlight in red, yellow, grey, or underline in green some things. Either hover the highlighted "things" to see why, or use this shortcut on it.
-  * **red**: an error
-  * **yellow**: a warning
-  * **grey**: something useless that should be removed
-  * **underlined green**: a typo
-</div><div>
-
-<details class="details-n">
-<summary><b>Local History</b>: automatic backup of your files</summary>
-
-You can right-click on a file/folder, and use Local History to see any changes made on this folder/file. It useful if, at some point, you removed something, but can't go back...
-
-![local_history](_images/local_history.png)
-</details>
-
-<details class="details-n">
-<summary><b>Project view</b>: why some files aren't shown, or the file structure is not how it is on the disk?</summary>
-
-Android Studio use file structures, in order to show a project in a simplified, nicer, way. If you are looking for some file that aren't shown, simply change the file structure.
-
-![project_view](_images/project_view.png)
-</details>
-
-<details class="details-n">
-<summary><b>Gradle scripts</b>: add dependencies</summary>
-
-In the Android view, below all your files, there is your **build.gradle (module)**. This is the file in which you will add dependencies later. Every time you can it, a message on top of the file will pop up asking you to "sync" the project, just do it.
-
-![gradle](_images/gradle.png)
-</details>
-
-<details class="details-n">
-<summary><b>Device Emulator</b>: emulate an android device</summary>
-
-<div class="row"><div class="col-md-3">
-
-![device_manager](_images/device_manager.png)
-</div><div class="col-md-9">
-
-You can create a new virtual device in the device manager.
-
-As the bottom of the right-panel, there is a vertical tab "Emulator" in which your running emulated device will be shown.
-</div></div>
-
-Right-above this tab, there is a tab to browse the files on your device. You may have to right-click on a folder > refresh, if you don't see changes that were made by your application recently.
-
-In the Top-Right corner, there is a tab "Layout inspector", allowing, as the name imply, to inspect the views, and the layout, of your running application.
-
-You can control your device use these buttons, if there is a need. Note that the "..." menu is useful if you need to do things such as setting your phone state as "charging", or things like that.
-
-![emulated_device_controls](_images/emulated_device_controls.png)
-
-For applications loaded on a device with an API of 26, or higher, you can also inspect workers, the database, etc. See the tab "App inspection".
-</details>
-
-> **Note**: you will usually resize windows, such as resizing your emulator window, as sometimes you want to have it side-by-side, and some other time, you want to have it taking the whole screen. It doesn't work everytime, but by double-clicking on the top bar on a window, will expand/reduce it's size, as it does with other windows (app/file explorer/...).
-</div></div>
-
-One last very useful thing, is that you can press <kbd>CTRL+Q</kbd>, or hover a method, to see its documentation. Unfortunately, by default, sources aren't downloaded, so you will basically see nothing useful. To download sources, the easiest way is using <kbd>CTRL+(MOUSE LEFT)</kbd> on a method/class from the Android SDK, to navigate to its source. Then, on the top of the file, you will be prompted to download sources as they are missing. Just do it, and you are ready for an enhanced experience aboard IntelliJ-based IDE: Android Studio.
-
 <hr class="sr">
 
 ## Application Architecture
@@ -1736,13 +1657,6 @@ class XXXWorker(c: Context, args: WorkerParameters) : CoroutineWorker(c, args) {
 ## References
 
 <div class="row row-cols-md-2"><div>
-
-* [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)
-* [Android docs](https://developer.android.com/docs)
-* [Android teach](https://developer.android.com/teach)
-* [Android guides](https://developer.android.com/guide)
-* [Android UI](https://developer.android.com/develop/ui)
-* [Android CodeLabs](https://codelabs.developers.google.com/?cat=Android)
 
 **Todo**
 
