@@ -12,7 +12,6 @@ A super-increasing to-do list in which I keep adding stuff, but there are too ma
 **Planned**
 
 * android
-* node.js
 * javascript (language, dom)
 * typescript
 * html

@@ -39,6 +39,8 @@ You will usually need to use external libraries such as a library to test your c
 
 ➡️ One package worth mentioning is [nodemon](https://www.npmjs.com/package/nodemon) ("node-mon", 25k ⭐) which is automatically restarting the node client (ex: `node index.js`) when a file in your project changed.
 
+<br>
+
 #### In a nutshell
 
 Node.js includes everything you know about JavaScript, aside from the DOM <small>(document, window...)</small> as Node.js is NOT replicating an environment similar to a web browser.

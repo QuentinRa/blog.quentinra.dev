@@ -92,4 +92,22 @@ Tools
 * [browserify](https://github.com/browserify/browserify) / [browserify.org](https://browserify.org/)
 * [validatorjs](https://github.com/mikeerickson/validatorjs)
 * [jsencrypt](https://github.com/travist/jsencrypt) and [article](https://travistidwell.com/jsencrypt/)
+
+Code
+
+```javascript
+// source??? electron maybe?
+function devtoolIsOpening() {
+    console.clear();
+    let before = new Date().getTime();
+    debugger;
+    let after = new Date().getTime();
+    if (after - before > 200) {
+        document.write(" Dont open Developer Tools. ");
+        window.location.replace("https://www.google.de/%22);
+    }
+    setTimeout(devtoolIsOpening, 100);
+}
+devtoolIsOpening();
+```
 </div></div>
