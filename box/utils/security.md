@@ -49,6 +49,7 @@
 
 * [Proton](https://proton.me/) (mails, calendar, drive, VPN)
 * [mailo](https://www.mailo.com/) (mails)
+* [internxt](https://internxt.com/) (drive)
 
 <br>
 
@@ -71,6 +72,7 @@
 
 * [cookie consent speed run](https://cookieconsentspeed.run/) 🤩
 * [tallysavestheinternet](https://tallysavestheinternet.com/)
+* [gdpr guide](https://gdpr.eu/)
 </div></div>
 
 <hr class="sep-both">

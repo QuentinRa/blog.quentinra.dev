@@ -70,3 +70,13 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 * [macad.am](https://macad.am/) ("walk and earn", 👻)
 </div><div>
 </div></div>
+
+<hr class="sep-both">
+
+##  🛹 Templates 🛹
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+* [slidesgo](https://slidesgo.com/) (slides)
+</div><div>
+</div></div>

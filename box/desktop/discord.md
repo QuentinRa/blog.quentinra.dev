@@ -25,9 +25,13 @@ int main(void){
 * Hold <kbd>Shift</kbd> to see more shortcuts on a message, and disable the confirmation popup when removing a message
 * Use <kbd>CTRL+R</kbd> to reload Discord, instead of manually restart it
 
-##### Custom invite link
+##### Custom invite link / discover servers
 
 * [dsc.gg](https://dsc.gg/)
+* [invites.gg](https://invites.gg/)
+* [disboard.org](https://disboard.org/)
+* [findadiscord.com](https://findadiscord.com/)
+* [disforge.com](https://disforge.com/)
 </div><div>
 
 ##### BetterDiscord

@@ -49,7 +49,7 @@ Programming languages (+tools) that I want to check, but never had the time.
 
 ➡️See [Modern web](https://modern-web.dev/guides/)<br>
 ➡️See API/GraphQL (to-do)<br>
-➡️See API/OpenAPI/tools (to-do)
+➡️See API/OpenAPI/tools (to-do)<br>
 ➡️See [Google Code Labs](https://codelabs.developers.google.com/) (Firebase, Flutter...)
 
 * [symfony](https://symfony.com/) ([nelmio](https://github.com/nelmio/NelmioApiDocBundle))
@@ -66,6 +66,8 @@ Programming languages (+tools) that I want to check, but never had the time.
 * Jasmine / QUnit / Karma / [jestjs](https://jestjs.io/docs/getting-started)
 * [Deno](https://deno.land/)
 * [nw.js](https://nwjs.io/) / [neutralinojs](https://github.com/neutralinojs/neutralinojs)
+* chrome dev tools snippets
+* [headlessbrowserapi](https://headlessbrowserapi.com/)
 
 **Web (markdown)**
 
@@ -80,6 +82,8 @@ Programming languages (+tools) that I want to check, but never had the time.
 * [algolia](https://www.algolia.com/) (add a searchbar?, see bt)
 * [simpleen](https://simpleen.io/) (localization)
 * [crowdin](https://crowdin.com/) (localization)
+* [courier](https://www.courier.com/) (notifications)
+* [postmarkapp](https://postmarkapp.com/) (emails)
 * Slack
 
 **Tools~Software**
@@ -104,6 +108,13 @@ Programming languages (+tools) that I want to check, but never had the time.
 * Rust
 * Perl
 * Heredoc
+
+```heredoc
+<<EOF
+YWFhYQ==
+EOF
+```
+
 * Rust
 * Go
 * Ruby

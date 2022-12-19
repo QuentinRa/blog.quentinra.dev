@@ -4,7 +4,7 @@
 
 You can develop Android apps with many frameworks such as React Native or Electron which uses JavaScript/HTML. This course is about **Android development in Kotlin** while Java could also be used.
 
-> Kotlin is recommended over Java by Google since 2018.
+> Kotlin is recommended over Java by Google since 2019.
 
 **References**
 
@@ -35,7 +35,7 @@ To see the documentation of a method, use <kbd>CTRL+Q</kbd> or hover a method. B
 
 <hr class="sep-both">
 
-## 📱 Android Studio (notes) 📱
+## 📱 Android Studio 📱
 
 <div class="row row-cols-md-2"><div>
 

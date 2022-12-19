@@ -440,4 +440,5 @@ Random
 * [best practices CII/FLOSS - GitHub](https://github.com/coreinfrastructure/best-practices-badge)
 * [Government best practices](https://government.github.io/best-practices/)
 * [Working Open Workshop](https://mozillascience.github.io/working-open-workshop/)
+* [gerritcodereview](https://www.gerritcodereview.com/)
 </div></div>

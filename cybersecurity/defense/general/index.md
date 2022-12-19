@@ -34,6 +34,8 @@ Notes about cyber defense. I'm not really interested in cyber defense for now, s
 * [VirusTotal](https://www.virustotal.com/gui/home/upload)
 
 * [joesandbox](https://www.joesandbox.com/)
+
+* [internxt](https://internxt.com/virus-scanner)
 </div></div>
 
 <hr class="sep-both">

@@ -6,6 +6,7 @@
 
 * [patreon.com](https://www.patreon.com/home)
 * [gumroad.com](https://gumroad.com/) (👻)
+* [thingiverse](https://www.thingiverse.com/)
 </div><div>
 
 ##### 2D/3D/AR/VR assets

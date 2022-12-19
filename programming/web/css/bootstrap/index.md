@@ -300,4 +300,9 @@ Stuff that I found, but never read/used yet.
 * update this old content
 </div><div>
 
+```
+h-100
+fs-4
+list-inline + list-inline-item
+```
 </div></div>
