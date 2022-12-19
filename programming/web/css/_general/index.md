@@ -22,6 +22,7 @@ Stuff that I found, but never read/used yet.
 * MaterialUI
 * Bootstrap icons
 * SASS (see TP2/...)
+* Stylus/Compass/LESS/SASS
 * [bootstrapshuffle](https://bootstrapshuffle.com/)
 * [tailwindcss](https://tailwindcss.com/)
 * [primer.style](https://primer.style/css/getting-started)

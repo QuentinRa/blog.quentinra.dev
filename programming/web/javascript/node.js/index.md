@@ -1,10 +1,8 @@
 # 🚀 Node.js 🚀
 
-**[Old notes](_old.md)**
-
 <div class="row row-cols-md-2 mt-4"><div>
 
-Node.js is a modern JavaScript environment that can be used
+[Node.js](https://nodejs.org/) is a modern JavaScript environment that can be used
 
 * 🗃️ To write websites <small>(express handlebars...)</small>
 * 📦 To write desktop/mobile apps <small>(electron...)</small>
@@ -14,7 +12,17 @@ Node.js is a modern JavaScript environment that can be used
 * ... and many more
 </div><div>
 
-...
+You can download Node.js [here](https://nodejs.org/en/download/). On Windows, you will get an installer, so you can get started in seconds. To check that you installation was successful, use
+
+```bash
+# see Node version
+$ node -v
+# run a JavaScript
+$ node index
+$ node index.js
+```
+
+> To easily manage multiple version of Node, see [nvm](https://github.com/nvm-sh/nvm) (64k ⭐).
 </div></div>
 
 <hr class="sep-both">
@@ -26,9 +34,11 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * Webpack, rollupjs, parcel, Snowpack, WMR, and vite+vitest
+* Dust, EJS, Handlebars, Hogan.js, Pug (Jade), Twig, and Vash (express)
 * End-to-End Testing Solution (cypress/[browserstack](https://www.browserstack.com/)/...)
 * .env
 * "yarn add xxx" / "pnpm"
+* update node
 
 </div><div>
 
