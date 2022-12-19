@@ -37,6 +37,8 @@ $ node index.js
 
 You will usually need to use external libraries such as a library to test your code, or stuff like that. They are referred to as package, and you will need a **package manager** to install them.
 
+➡️ One package worth mentioning is [nodemon](https://www.npmjs.com/package/nodemon) ("node-mon", 25k ⭐) which is automatically restarting the node client (ex: `node index.js`) when a file in your project changed.
+
 #### In a nutshell
 
 Node.js includes everything you know about JavaScript, aside from the DOM <small>(document, window...)</small> as Node.js is NOT replicating an environment similar to a web browser.
@@ -93,7 +95,7 @@ Instead, commit `package-lock.json`. Someone else will use the command below to 
 
 ➡️ Commit `package.json` too, so that devs can add packages...
 
-* Install existing project (from `package-lock.json`)
+* Install packages from an existing project (`package-lock.json`)
 
 ```powershell
 $ npm ci
@@ -113,6 +115,10 @@ $ npm install
 # Update package-lock.json
 $ npm update
 ```
+
+➡️ If you see an example with `require('xxx')`, then it's rather safe to assume that you can use `npm i xxx`.
+
+<br>
 
 * Run a task: usually, we store the commands to run/... a project in `package.json/scripts`. To run "start" below, use `npm start`.
 

@@ -1,9 +1,7 @@
-- yarn
-- https://pnpm.io/
 - Mocha / https://www.cypress.io/how-it-works
 - https://github.com/goldbergyoni/nodebestpractices
-- npm update npm install --save npm i -S
-- npm u i / ??? (c?) / g
+- --save -S
+- npm -g
 - https://github.com/neutralinojs/neutralinojs
 
 https://github.com/electron-userland/electron-build-service
