@@ -34,6 +34,8 @@ Programming languages (+tools) that I want to check, but never had the time.
 
 **General**
 
+➡️ [chocolatey](https://chocolatey.org/)
+
 * [mercurial](https://www.mercurial-scm.org/) (version-control)
 
 **Editors**
@@ -57,6 +59,10 @@ Programming languages (+tools) that I want to check, but never had the time.
 * [Dart](https://dart.dev/)
 * [Flutter](https://flutter.dev/)
 * [vercel](https://vercel.com/)
+* Webpack, rollupjs, parcel, Snowpack, WMR, and vite+vitest
+* Dust, EJS, Handlebars, Hogan.js, Pug (Jade), Twig, and Vash (express)
+* End-to-End Testing Solution (cypress/[browserstack](https://www.browserstack.com/)/...)
+* [Deno](https://deno.land/)
 
 **Web (markdown)**
 
@@ -77,6 +83,7 @@ Programming languages (+tools) that I want to check, but never had the time.
 
 * [editorconfig](https://editorconfig.org/)
 * [visual-paradigm](https://www.visual-paradigm.com/) (project management)
+* [asdf](https://github.com/asdf-vm/asdf) (package management)
 
 **Learned** (but there is no notes about them)
 
