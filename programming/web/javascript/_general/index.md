@@ -74,6 +74,7 @@ Learn
 * ESM import: `<script type="module">` (see [socket.io](https://socket.io/docs/v4/client-initialization/))
 
 ```javascript
+// todo: node.js has some notes too :(
 module.exports = {};
 require('./exports.js');
 ```
@@ -88,4 +89,6 @@ Random
 Tools
 
 * [babeljs](https://babeljs.io/)
+* [browserify](https://github.com/browserify/browserify)
+* [validatorjs](https://github.com/mikeerickson/validatorjs)
 </div></div>

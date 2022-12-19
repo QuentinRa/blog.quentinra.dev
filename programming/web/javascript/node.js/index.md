@@ -10,6 +10,8 @@
 * 🔥️ To write Typescript <small>(a typed JavaScript)</small>
 * ✨ To write LESS/SASS/Stylus/... <small>(improved CSS)</small>
 * ... and many more
+
+➡️You can find the [documentation here](https://nodejs.org/api/) or [here](https://nodejs.org/en/knowledge/). [Learn here](https://nodejs.dev/en/learn).
 </div><div>
 
 You can download Node.js [here](https://nodejs.org/en/download/). On Windows, you will get an installer, so you can get started in seconds. To check that you installation was successful, use
@@ -25,7 +27,41 @@ $ node index.js
 > To easily manage multiple version of Node, see [nvm](https://github.com/nvm-sh/nvm) (64k ⭐), [nvm-windows](https://github.com/coreybutler/nvm-windows) (25k ⭐), or [n](https://github.com/tj/n) (17k ⭐).
 </div></div>
 
+<hr class="sep-both">
+
+## Node.js basics
+
+<div class="row row-cols-md-2"><div>
+
+#### Packages
+
 You will usually need to use external libraries such as a library to test your code, or stuff like that. They are referred to as package, and you will need a **package manager** to install them.
+
+#### In a nutshell
+
+Node.js includes everything you know about JavaScript, aside from the DOM <small>(document, window...)</small> as Node.js is NOT replicating an environment similar to a web browser.
+</div><div>
+
+#### What's new?
+
+* Import a packages with **require**
+
+```javascript
+// pre-installed, see https://nodejs.org/api/fs.html
+const FileSystem = require('fs');
+```
+
+Sub-example: Access another script B from a script A
+
+```javascript
+// in A, you need to export what you want to expose
+module.exports = {}
+module.exports.five = 5
+// in B, use require
+const A = require('./A.js')
+console.log(A.five)
+```
+</div></div>
 
 <hr class="sep-both">
 
@@ -45,15 +81,19 @@ $ npm -v
 
 npm use a file called `package.json` to known which packages to import in your project. As the version are usually based on a rule, the exact version of the package can be found in `package-lock.json`.
 
-All packages are stored in `/node_modules/`.
-
 * Create an empty project with an empty `package.json`
 
 ```powershell
 $ npm init
 ```
 
-* Init an existing project from a package-lock.json
+All installed packages are stored in the folder `node_modules`. ⚠️ Add it to your `.gitignore`, because it's heavy+useless. 
+
+Instead, commit `package-lock.json`. Someone else will use the command below to install the same packages+version as yours.
+
+➡️ Commit `package.json` too, so that devs can add packages...
+
+* Install existing project (from `package-lock.json`)
 
 ```powershell
 $ npm ci
@@ -95,10 +135,12 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * .env
+* modules and stuff like that
 * [yarn](https://github.com/yarnpkg/yarn) and [berry](https://github.com/yarnpkg/berry) (41k ⭐)
 * [pnpm](https://github.com/pnpm/pnpm) (21k ⭐)
 * update node
 * [nvs](https://github.com/jasongin/nvs) / [nave](https://github.com/isaacs/nave) / [volta](https://github.com/volta-cli/volta) / [nodenv](https://github.com/nodenv/nodenv) / [fnm](https://github.com/Schniz/fnm) / [nodist](https://github.com/nullivex/nodist)
+* [runkit](https://runkit.com/home)
 
 </div><div>
 
