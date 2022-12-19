@@ -1,4 +1,4 @@
-# Course
+# HTML
 
 **Old notes are somewhere else**
 

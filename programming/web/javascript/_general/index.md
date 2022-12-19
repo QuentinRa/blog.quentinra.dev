@@ -89,6 +89,7 @@ Random
 Tools
 
 * [babeljs](https://babeljs.io/)
-* [browserify](https://github.com/browserify/browserify)
+* [browserify](https://github.com/browserify/browserify) / [browserify.org](https://browserify.org/)
 * [validatorjs](https://github.com/mikeerickson/validatorjs)
+* [jsencrypt](https://github.com/travist/jsencrypt) and [article](https://travistidwell.com/jsencrypt/)
 </div></div>

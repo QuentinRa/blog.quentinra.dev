@@ -53,13 +53,13 @@ Node.js includes everything you know about JavaScript, aside from the DOM <small
 const FileSystem = require('fs');
 ```
 
-Sub-example: Access another script B from a script A
+Access another script A from a script B
 
 ```javascript
-// in A, you need to export what you want to expose
+// in A.js, you need to export what you want to expose
 module.exports = {}
 module.exports.five = 5
-// in B, use require
+// in B.js, use require
 const A = require('./A.js')
 console.log(A.five)
 ```
@@ -79,7 +79,7 @@ $ npm -v
 ```
 
 * See the [documentation here](https://docs.npmjs.com/).
-* Use [npmjs](https://www.npmjs.com/) to find packages.
+* Use [npmjs](https://www.npmjs.com/) to find packages ([Registry API](https://registry.npmjs.org/nodemon/2.0.20)).
 
 npm use a file called `package.json` to known which packages to import in your project. As the version are usually based on a rule, the exact version of the package can be found in `package-lock.json`.
 
@@ -116,6 +116,25 @@ $ npm install
 $ npm update
 ```
 
+<details class="details-e">
+<summary>Define which versions are allowed</summary>
+
+Either when installing or by editing the `package.json`, you can select which version of a library you want to use.
+
+```powershell
+# when used with "i", use "@" followed by the "version"
+$ npm i express@latest
+```
+
+* **^1.2.3**: same major version (1), can change (2.3)
+* **~1.2.3**: same major+minor version (1.2), can change (3)
+* **>=version**: version greater or equals <small>(see also `>,<,<=`)</small>
+* **=version**: this exact version
+* **a-b**: a range of versions
+* **a||b**: either a or b
+* **latest**: use the latest
+</details>
+
 ➡️ If you see an example with `require('xxx')`, then it's rather safe to assume that you can use `npm i xxx`.
 
 <br>
@@ -150,14 +169,21 @@ Stuff that I found, but never read/used yet.
 
 </div><div>
 
-* [emojione](https://github.com/joypixels/emojione) and [emoji-toolkit](https://github.com/joypixels/emoji-toolkit)
-* [jestjs](https://jestjs.io/docs/getting-started)
+Libraries
+
+* see JS libraries
 * [connect](https://www.npmjs.com/package/connect)
+* [bcrypt](https://attacomsian.com/blog/nodejs-password-hashing-with-bcrypt)
+
+Stuff
+
 * [node-config](https://github.com/node-config/node-config)
 * [http2 server-push](https://blog.risingstack.com/node-js-http-2-push/)
+* [nodebestpractices](https://github.com/goldbergyoni/nodebestpractices)
 
 npm
 
 * devDependencies
 * npx
+* `--save` / `-S` / `-g` (+not recommended)
 </div></div>

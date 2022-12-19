@@ -58,11 +58,14 @@ Programming languages (+tools) that I want to check, but never had the time.
 * React/React Native/Ionic/Angular
 * [Dart](https://dart.dev/)
 * [Flutter](https://flutter.dev/)
+* [emojione](https://github.com/joypixels/emojione) and [emoji-toolkit](https://github.com/joypixels/emoji-toolkit)
 * [vercel](https://vercel.com/)
 * Webpack, rollupjs, parcel, Snowpack, WMR, and vite+vitest
 * Dust, EJS, Handlebars, Hogan.js, Pug (Jade), Twig, and Vash (express)
-* End-to-End Testing Solution (cypress/[browserstack](https://www.browserstack.com/)/...)
+* End-to-End Testing Solution ([cypress](https://www.cypress.io/how-it-works)/[browserstack](https://www.browserstack.com/)/...)
+* Jasmine / QUnit / Karma / [jestjs](https://jestjs.io/docs/getting-started)
 * [Deno](https://deno.land/)
+* [nw.js](https://nwjs.io/) / [neutralinojs](https://github.com/neutralinojs/neutralinojs)
 
 **Web (markdown)**
 
@@ -141,6 +144,7 @@ Websites that I found, but never used yet.
 * [theAlgorithms](https://github.com/theAlgorithms) <small>(150k ⭐)</small>
 * [smashingmagazine](https://www.smashingmagazine.com/) <small>(many)</small>
 * [gitconnected](https://gitconnected.com/) <small>(aggregate websites)</small>
+* [devglan](https://www.devglan.com/programming/programming-tutorials) <small>(many)</small>
 
 **MOOCs**
 
@@ -148,6 +152,7 @@ Websites that I found, but never used yet.
 * [coursera](https://www.coursera.org/) <small>(well-known)</small>
 * [fun-mooc](https://www.fun-mooc.fr/en/) <small>(french)</small>
 * [educative](https://www.educative.io/) <small>(paid)</small>
+* LinkedIn
 
 **Bootcamps focused**
 
@@ -199,6 +204,7 @@ Websites that I found, but never used yet.
 * [frontendmasters](https://frontendmasters.com/) <small>(paid)</small>
 * [onemonth](https://onemonth.com/) <small>(paid, html/css/...)</small>
 * [symfonycasts](https://symfonycasts.com/) <small>(paid)</small>
+* [travistidwell](https://travistidwell.com/) <small>(???)</small>
 
 **Blockchains focused**
 
@@ -239,6 +245,7 @@ Websites that I found, but never used yet.
 * [jerhemy](https://jerhemy.com/) <small>(a few articles, JS/...)</small>
 * [kdnuggets](https://www.kdnuggets.com/tag/programming) <small>(???)</small>
 * [interviewcake](https://www.interviewcake.com/) <small>(small courses)</small>
+* [mkyong](https://mkyong.com/) <small>(Java, maven...)</small>
 
 **YouTube**
 
