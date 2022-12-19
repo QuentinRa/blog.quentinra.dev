@@ -419,9 +419,17 @@ Badges
 GitHub features
 
 * Discussions
-</div><div>
 
 Random
+
+* [codeclimate](https://codeclimate.com/)
+* [travis-ci](https://www.travis-ci.com/)
+* [fossa](https://fossa.com/) (+badge)
+* [codetriage](https://www.codetriage.com/) (get issues from your favorites repos in your inbox)
+* [opencollective](https://opencollective.com/)
+* [cla-assistant](https://cla-assistant.io/)
+* [gitter](https://gitter.im/)
+</div><div>
 
 * [GitHub Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
 * [branch protection rule](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule)
@@ -432,9 +440,4 @@ Random
 * [best practices CII/FLOSS - GitHub](https://github.com/coreinfrastructure/best-practices-badge)
 * [Government best practices](https://government.github.io/best-practices/)
 * [Working Open Workshop](https://mozillascience.github.io/working-open-workshop/)
-* [fossa](https://fossa.com/) (+badge)
-* [codetriage](https://www.codetriage.com/) (get issues from your favorites repos in your inbox)
-* [opencollective](https://opencollective.com/)
-* [cla-assistant](https://cla-assistant.io/)
-* [gitter](https://gitter.im/)
 </div></div>

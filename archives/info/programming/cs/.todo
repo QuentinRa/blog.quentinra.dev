@@ -7,3 +7,5 @@
 => private type Name => attribute same as private type Name { get; private set; }
 => can override operator (static bool operator==(a,b) => implies != )
 => namespace, struct, class
+
+https://gist.github.com/jwill9999/68c0da6c4c58efb42e25f887152256e1

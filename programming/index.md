@@ -98,7 +98,7 @@ Programming languages (+tools) that I want to check, but never had the time.
 * Go
 * Ruby
 * [A lot of languages listed here](https://www.jetbrains.com/help/webstorm/application-development-guidelines.html)
-* ML (programming language)
+* Other: ML (programming language), [Q#](https://devblogs.microsoft.com/qsharp/)
 
 **Trolls**
 
@@ -223,6 +223,7 @@ Blogs that I found, but never read yet.
 * [jvns](https://jvns.ca/) and [wizardzines](https://wizardzines.com/)
 * [stackpath](https://www.stackpath.com/blog) <small>(???)</small>
 * [jerhemy](https://jerhemy.com/) <small>(a few articles, JS/...)</small>
+* [kdnuggets](https://www.kdnuggets.com/tag/programming) <small>(???)</small>
 
 **YouTube**
 

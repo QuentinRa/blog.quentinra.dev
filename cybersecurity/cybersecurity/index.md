@@ -237,6 +237,7 @@ Nothing much yet.
 * [hackerone.com](https://www.hackerone.com/resources)
 * [cybernews.com](https://cybernews.com/news/)
 * [thehackernews.com](https://thehackernews.com/)
+* [threatpost.com](https://threatpost.com/)
 </div><div>
 
 **Did you credentials leak?**
@@ -276,6 +277,9 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [zachkenney](https://zachkenney.me/)
 * [n3t-hunt3r](https://n3t-hunt3r.gitbook.io/pentest-book/)
 * [ropnop](https://blog.ropnop.com/)
+* [infosecinstitute](https://resources.infosecinstitute.com/)
+* [hacksplaining](https://www.hacksplaining.com/lessons)
+* [complexsecurity](https://complexsecurity.io/)
 </div><div>
 
 * [auth0.com](https://auth0.com/blog/)
@@ -295,6 +299,9 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [hacking-capture](https://hacking-capture.github.io/)
 * [steflan](https://steflan-security.com/)
 * [g0tmi1k](https://blog.g0tmi1k.com/)
+* [fredtep](https://fredtep.com/)
+* [null-byte](https://null-byte.wonderhowto.com/)
+* [wonderhowto](https://www.wonderhowto.com/)
 </div><div>
 
 * [razrsec](https://blog.razrsec.uk/)
@@ -314,6 +321,9 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [robertmuwanga](https://robertmuwanga.netlify.app/)
 * [hacktoday](https://hacktoday.io/)
 * [ThePacketBender](https://github.com/ThePacketBender/notes)
+* [fredtep](https://fredtep.com/)
+* [null-byte](https://null-byte.wonderhowto.com/)
+* [wonderhowto](https://www.wonderhowto.com/)
 </div><div>
 
 * [deltreey](https://deltreey.blogspot.com/)
@@ -334,10 +344,6 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [thehackerish](https://thehackerish.com/)
 * [secjuice](https://www.secjuice.com/)
 * [cnil](https://www.cnil.fr/fr/cybersecurite)
-* [fredtep](https://fredtep.com/)
-* [null-byte](https://null-byte.wonderhowto.com/)
-* [wonderhowto](https://www.wonderhowto.com/)
-* [infosecinstitute](https://resources.infosecinstitute.com/)
 </div>
 
 </div>

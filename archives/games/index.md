@@ -32,6 +32,11 @@ Stuff that I found, but never read/used yet.
 **Learn**
 
 * [circuitstream](https://www.circuitstream.com/course-catalog) (VR...)
+* [udemy](https://www.udemy.com/courses/development/game-development/)
+
+**YouTube**
+
+* [DapperDinoCodingTutorials](https://www.youtube.com/@DapperDinoCodingTutorials)
 
 **Inspiration**
 

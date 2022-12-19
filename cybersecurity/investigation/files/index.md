@@ -65,6 +65,8 @@ There are other alternatives 📌
 * [IMV](https://www.geekyhumans.com/tools/image-metadata-viewer) (website)
 
 You can also do a reverse image search 🧵. Please refer to [Box/Images](/box/art/images.md#reverse-search).
+
+> See [Stegosploit malware](https://thehackernews.com/2015/06/Stegosploit-malware.html).
 </div></div>
 
 <hr class="sep-both">
