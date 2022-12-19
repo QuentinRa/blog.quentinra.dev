@@ -335,6 +335,9 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [secjuice](https://www.secjuice.com/)
 * [cnil](https://www.cnil.fr/fr/cybersecurite)
 * [fredtep](https://fredtep.com/)
+* [null-byte](https://null-byte.wonderhowto.com/)
+* [wonderhowto](https://www.wonderhowto.com/)
+* [infosecinstitute](https://resources.infosecinstitute.com/)
 </div>
 
 </div>

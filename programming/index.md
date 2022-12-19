@@ -84,6 +84,7 @@ Programming languages (+tools) that I want to check, but never had the time.
 * IntelliJ Plugin Development
 * Relational modeling
 * WordPress
+* C#
 
 **Random**
 
@@ -93,6 +94,9 @@ Programming languages (+tools) that I want to check, but never had the time.
 * Rust
 * Perl
 * Heredoc
+* Rust
+* Go
+* Ruby
 * [A lot of languages listed here](https://www.jetbrains.com/help/webstorm/application-development-guidelines.html)
 * ML (programming language)
 
@@ -153,10 +157,6 @@ Blogs that I found, but never read yet.
 * [pluralsight](https://www.pluralsight.com/blog) <small>(React, Java, Ruby, Python, Angular...)</small>
 * [knowledgehut](https://www.knowledgehut.com/tutorials) <small>(R, Node, Ionic, C#...)</small>
 
-**Linux focused**
-
-* [tecmint](https://www.tecmint.com/)
-
 </div><div>
 
 **Web focused**
@@ -182,6 +182,9 @@ Blogs that I found, but never read yet.
 * [kodeco](https://www.kodeco.com/library) <small>(ios, android, flutter/dart...)</small>
 * [thoughtbot](https://thoughtbot.com/blog)<small>(ios, android...)</small>
 * [weeklyhow](https://weeklyhow.com/blog/)<small>(Shopify...)</small>
+* [risingstack](https://blog.risingstack.com/)<small>(Node, JS...)</small>
+* [keycdn](https://www.keycdn.com/support/tutorials)<small>(???)</small>
+* [ipraxa](https://www.ipraxa.com/blog/)<small>(???)</small>
 
 **Blockchains focused**
 
@@ -219,6 +222,7 @@ Blogs that I found, but never read yet.
 * [poftut](https://www.poftut.com/) <small>(???)</small>
 * [jvns](https://jvns.ca/) and [wizardzines](https://wizardzines.com/)
 * [stackpath](https://www.stackpath.com/blog) <small>(???)</small>
+* [jerhemy](https://jerhemy.com/) <small>(a few articles, JS/...)</small>
 
 **YouTube**
 
@@ -270,7 +274,8 @@ Random stuff...
 
 * [rankred](https://www.rankred.com/)
 * [daily.dev](https://daily.dev/)
-* [polygon](https://www.polygon.com/)
+* [polygon](https://www.polygon.com/) (movies, games...)
+* [getdroidtips](https://www.getdroidtips.com/) (games, android...)
 
 **Help**
 

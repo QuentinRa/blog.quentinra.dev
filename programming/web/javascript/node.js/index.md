@@ -36,4 +36,5 @@ Stuff that I found, but never read/used yet.
 * [jestjs](https://jestjs.io/docs/getting-started)
 * [connect](https://www.npmjs.com/package/connect)
 * [node-config](https://github.com/node-config/node-config)
+* [http2 server-push](https://blog.risingstack.com/node-js-http-2-push/)
 </div></div>

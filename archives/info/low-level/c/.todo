@@ -15,3 +15,7 @@ webassembly
 
 sudo apt-get install build-essential gdb
 file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/files/bash/utils.html
+
+ncurses
+https://gist.github.com/alan-mushi/c8a6f34d1df18574f643
+https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/forms.html

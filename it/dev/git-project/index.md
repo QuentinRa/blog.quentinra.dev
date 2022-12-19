@@ -357,6 +357,7 @@ Cards (usually added on a profile/...)
   * Repository Card
   * Most used languages
   * WakaTime
+* [GitHub Profile Streak](https://github-readme-streak-stats.herokuapp.com/demo/)
 * [GitHub Profile Trophy](https://github.com/ryo-ma/github-profile-trophy)
 * [metrics](https://github.com/lowlighter/metrics) (really nice cards, see [omBratteng profile](https://github.com/omBratteng/omBratteng))
 * [Jokes' Cards](https://readme-jokes.vercel.app/api)
