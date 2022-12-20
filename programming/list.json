@@ -127,7 +127,21 @@
             {
               "tag": "web/android/_general/index.md",
               "name": "Android",
-              "desc": "...<!--How to create Android Applications.-->",
+              "desc": "How to create Android Applications.",
+              "icon": "<i class=\"bi bi-android\"></i>",
+              "hidden": false
+            },
+            {
+              "tag": "web/android/_general/index.md",
+              "name": "Activities",
+              "desc": "...",
+              "icon": "<i class=\"bi bi-android\"></i>",
+              "hidden": false
+            },
+            {
+              "tag": "web/android/_general/index.md",
+              "name": "Views",
+              "desc": "...",
               "icon": "<i class=\"bi bi-android\"></i>",
               "hidden": false
             },

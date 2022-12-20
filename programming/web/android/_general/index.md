@@ -23,7 +23,7 @@ Android Studio <small>(Google)</small> is the IDE you will use. It's based on In
 * <kbd>ALT+ENTER</kbd>/**hover** something highlight in red, yellow, grey... to see quick fixes/details.
 
 <details class="details-e">
-<summary>Configuration in-editor documentation</summary>
+<summary>Configure in-editor documentation</summary>
 
 To see the documentation of a method, use <kbd>CTRL+Q</kbd> or hover a method. By default, you won't see anything interesting.
 
@@ -37,19 +37,51 @@ To see the documentation of a method, use <kbd>CTRL+Q</kbd> or hover a method. B
 
 ## 📱 Android Studio 📱
 
+I won't cover how to use an IDE or whatever, but here are a few things worth being mentioned.
+
 <div class="row row-cols-md-2"><div>
 
 #### Gradle
 
-In the Project tab, at the bottom, you got a section "Gradle Scripts". You will have to edit the second `build.gradle` (Module: XXX).
+In the Project tab, at the bottom, you got a section "Gradle Scripts". You will have to edit the second `build.gradle (Module: XXX)`.
 
 <div class="text-center">
 
 ![gradle](_images/gradle.png)
 </div>
 
-This is inside the `dependencies {}` that you will add new libraries. You need to click on "sync" each time you add a new dependency.
+Inside `dependencies {}`, you will add new libraries. You need to click on "sync" (when prompted) each time you add a new dependency.
+
+<br>
+
+##### app/manifests/AndroidManifest.xml
+
+This is a file that describes
+
+* What is the main activity <small>(~=screen)</small>?
+* What activities <small>(~=screens)</small> you defined?
+* What are the permissions that your application needs?
+* If your application defining services <small>(~=tasks)</small>?
+* ...
+
+<br>
+
+##### app/java/com.xxx.yyy
+
+This is where your classes will be store.
 </div><div>
+
+##### app/res
+
+This is where the resources of your application will be stored.
+
+* Drawables <small>(images, icons...)</small>
+* Layouts <small>(the layout of each screen)</small>
+* Menu
+* Values <small>(translations, colors/themes...)</small>
+* XML <small>(preferences...)</small>
+
+<br>
 
 #### Device Emulator
 
@@ -74,34 +106,39 @@ The device emulator allow you to create a virtual device or connect yours. You m
 
 <hr class="sep-both">
 
-## ✏️Key elements  📝
+## 🐛 Debugging 🐛 
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2 mt-4"><div>
 
-##### app/manifests/AndroidManifest.xml
+Use the Logger instead of print/println to keep track of what your application is doing (=logs).
 
-This is a file that describes
+You must give a tag to your log. You will be able to filter messages by tag in the Logcat tab.
 
-* What is the main activity <small>(~=screen)</small>?
-* What activities <small>(~=screens)</small> you defined? 
-* What are the permissions that your application needs?
-* If your application defining services <small>(~=tasks)</small>?
-* ...
-
-##### app/java/com.xxx.yyy
-
-This is where your classes will be store.
+```kotlin
+class XXX : YYY() {
+    companion object {
+        private const val TAG = "SOME_TAG_NAME"
+    }
+    
+    fun xxx() {
+        Log.v(TAG, "verbose message")
+    }
+}
+```
 </div><div>
 
-##### app/res
+```kotlin
+// improper, but easier
+Log.v("SOME_TAG_NAME", "message")
+```
 
-This is where the resources of your application will be stored.
+There are 5 levels of logs. You can increase/decrease the level of logs inside Logcat or by editing the log settings.
 
-* Drawables <small>(images, icons...)</small>
-* Layouts <small>(the layout of each screen)</small>
-* Menu
-* Values <small>(translations, colors/themes...)</small>
-* XML <small>(preferences...)</small>
+* `Log.v`: verbose
+* `Log.d`: debug
+* `Log.i`: info
+* `Log.w`: warn
+* `Log.e`: error
 </div></div>
 
 <hr class="sep-both">

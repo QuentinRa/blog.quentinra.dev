@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-...
+An activity is a screen or a group of screens of your application.
 </div><div>
 
 ...

@@ -648,32 +648,6 @@ myEditText.setOnKeyListener { v, keyCode, keyEvent ->
 </details>
 </div></div>
 
-<hr class="sl">
-
-## Debugging
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-In Android project, you should use the logger instead of the standard output (ex: println). Each logging function is taking a "tag" used to "sort" logs. Later, you can search for all logs having this tag, among the great amount of logs, so it's pretty useful.
-
-```kotlin
-// proper
-private const val TAG = "MainActivity"
-Log.v(TAG, "message")
-// improper
-Log.v("tag", "message")
-```
-</div><div>
-
-There are 5 levels of logs. You can view your logs in the tab "logat", in which you can also change the Log settings, or create filtering rules for your tags.
-
-* `Log.v`: verbose
-* `Log.d`: debug
-* `Log.i`: info
-* `Log.w`: warn
-* `Log.e`: error
-</div></div>
-
 <hr class="sr">
 
 ## Multitasking
