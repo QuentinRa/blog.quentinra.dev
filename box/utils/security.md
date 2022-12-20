@@ -21,6 +21,7 @@
 * [filevert](https://filevert.fr/) (temporary file hosting)
 * [fakenamegenerator](https://en.fakenamegenerator.com/) (fake data, temporary email)
 * [chapril](https://drop.chapril.org/) (👻)
+* [proxy.email](https://play.google.com/store/apps/details?id=org.proxy.email) (👻)
 
 <br>
 
@@ -34,7 +35,10 @@
 
 ##### Password Managers
 
-* [BitWarden](https://bitwarden.com/) (Open Source Password Manager)
+* [1password](https://1password.com/)
+* [BitWarden](https://bitwarden.com/)
+* [keepersecurity](https://www.keepersecurity.com/)
+* [lastpass](https://www.lastpass.com/)
 </div><div>
 
 ##### Nice browser extensions
@@ -43,6 +47,7 @@
 * [DuckDuckGo](https://duckduckgo.com/app): trackers/ads/...
 * [adblock](https://adblockplus.org/): block most ads/trackers
 * [ublock origin](https://ublockorigin.com/): block most ads/trackers, can disable JavaScript...
+* [noscript](https://noscript.net/): disable JavaScript
 
 <br>
 

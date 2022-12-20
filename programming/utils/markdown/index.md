@@ -202,7 +202,7 @@ ___
 ```
 </div><div class="align-self-center">
 
-You can add more than 3 stars/...
+It will work the same if you add more than 3 stars/...
 
 ---
 </div></div>

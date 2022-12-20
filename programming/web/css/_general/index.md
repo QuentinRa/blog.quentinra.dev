@@ -32,5 +32,6 @@ Stuff that I found, but never read/used yet.
 .selector {
     white-space: pre-line; /* multilines */
 }
+:not(td[colspan="7"], td[colspan="3"]) {}
 ```
 </div></div>

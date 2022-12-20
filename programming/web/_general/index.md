@@ -15,6 +15,7 @@ Stuff that I found, but never read/used yet.
 * ssl
 * CDNs ([keycdn](https://www.keycdn.com/))
 * semantic web ([protege](https://protege.stanford.edu/))
+* progressive web apps
 </div><div>
 
 Tools
@@ -23,6 +24,7 @@ Tools
 * [pusher](https://pusher.com/) (server push...)
 * [statshow](https://www.statshow.com/) (stats)
 * [twbs](https://github.com/twbs/bootstrap) (see badges)
+* color picker (console)
 
 SEO
 

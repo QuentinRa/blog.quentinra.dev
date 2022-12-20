@@ -2,14 +2,19 @@
 
 <div class="row row-cols-md-2"><div>
 
-A super-increasing to-do list in which I keep adding stuff, but there are too many things to-do that they may stay here for a few more years. To increase the amount of "to-do" that I'm tackling, I moved (➡️) some of them inside separated "to-do" sections, in the appropriate notes.
+A super-increasing to-do list in which I keep adding stuff, but there are too many things to-do that they may stay here for a few more years. To increase the amount of "to-do" that I'm tackling, I moved some of them inside "to-do" sections, in separate notes.
 
-**Topics**
+The icon with an arrow (➡️) means that they should be tackled first.
+
+**Topics planned**
 
 * Create browser extensions/plugins
+* JetBrains plugin development
+* Kotlin
+* WordPress
 </div><div>
 
-**Planned**
+**Courses planned**
 
 * android
 * javascript (language, dom)
@@ -160,6 +165,7 @@ Websites that I found, but never used yet.
 * [gitconnected](https://gitconnected.com/) <small>(aggregate websites)</small>
 * [devglan](https://www.devglan.com/programming/programming-tutorials) <small>(many)</small>
 * [hackr.io](https://hackr.io/) <small>(aggregate)</small>
+* [hashnode.com](https://hashnode.com/community) <small>(community-based?)</small>
 
 **MOOCs**
 
@@ -221,6 +227,7 @@ Websites that I found, but never used yet.
 * [symfonycasts](https://symfonycasts.com/) <small>(paid)</small>
 * [travistidwell](https://travistidwell.com/) <small>(???)</small>
 * [ilikekillnerds](https://ilikekillnerds.com/) <small>(???)</small>
+* [bobbyhadz](https://bobbyhadz.com/) <small>(???)</small>
 
 **Blockchains focused**
 
@@ -263,6 +270,8 @@ Websites that I found, but never used yet.
 * [interviewcake](https://www.interviewcake.com/) <small>(small courses)</small>
 * [mkyong](https://mkyong.com/) <small>(Java, maven...)</small>
 * [ebens](https://ebens.me/blog) <small>(???)</small>
+* [fireship](https://fireship.io/) <small>(short articles)</small>
+* [codingbeautydev](https://codingbeautydev.com/) <small>(???)</small>
 
 **YouTube**
 

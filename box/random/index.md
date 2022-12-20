@@ -38,9 +38,15 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-* [blockadblock.com](https://blockadblock.com/) (block newbies using adblock)
-* [chpadblock.com](https://chpadblock.com/) (block newbies using adblock)
-* [confirmic](https://landing.confirmic.com/) (👻, cookies)
+Adblock
+
+* [blockadblock.com](https://blockadblock.com/) (block newbies)
+* [chpadblock.com](https://chpadblock.com/) (block newbies)
+
+Cookies
+
+* [confirmic](https://landing.confirmic.com/) (👻)
+* [axeptio](https://www.axeptio.eu) (👻)
 </div><div>
 
 * [nimbusweb.me](https://nimbusweb.me/) (👻, project/team management?)

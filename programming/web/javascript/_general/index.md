@@ -83,9 +83,13 @@ Random
 
 * [Javascript Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 * [localizejs](https://localizejs.com/)
-* [javascript.info](https://javascript.info/)
 * axios
 * [ct](https://github.com/csswizardry/ct)
+
+Tutorials/...
+
+* [javascript.info](https://javascript.info/)
+* [javascripttutorial](https://www.javascripttutorial.net/)
 
 Tools
 
