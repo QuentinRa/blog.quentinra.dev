@@ -7,6 +7,31 @@
         "name": "Web, Android, and APIs",
         "active": true,
         "courses": {
+          "🌏 World-wide Web 🌏": [
+            {
+              "tag": "web/_general/index.md",
+              "name": "Web development",
+              "desc": "...",
+              "icon": null,
+              "hidden": false
+            },
+            {
+              "tag": "web/_general/apache/index.md",
+              "name": "Apache",
+              "desc": "...",
+              "icon": "<i class=\"bi bi-server\"></i>",
+              "hidden": false
+            }
+          ],
+          "\uD83D\uDD2D HTML \uD83D\uDD2D": [
+            {
+              "tag": "web/html/index.md",
+              "name": "HTML",
+              "desc": "...",
+              "icon": "<i class=\"bi bi-filetype-html\"></i>",
+              "hidden": false
+            }
+          ],
           "🪄 Frameworks 💫": [
             {
               "tag": "web/frameworks/front/vue.js/index.md",
@@ -102,7 +127,7 @@
             {
               "tag": "web/android/_general/index.md",
               "name": "Android",
-              "desc": "How to create Android Applications.",
+              "desc": "...<!--How to create Android Applications.-->",
               "icon": "<i class=\"bi bi-android\"></i>",
               "hidden": false
             },
