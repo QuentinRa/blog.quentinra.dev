@@ -1,4 +1,5 @@
 https://insert-koin.io/
+T extends XXX<YYY, ZZZ>  & TTT &  UUU
 
 super<Application>.onCreate()
 

@@ -69,11 +69,12 @@ Programming languages (+tools) that I want to check, but never had the time.
 * chrome dev tools snippets
 * [headlessbrowserapi](https://headlessbrowserapi.com/)
 
-**Web (markdown)**
+**Markdown-based**
 
-* [retype](https://retype.com/) (Extended Markdown)
+* [retype](https://retype.com/) (Extended Markdown for websites)
 * [utterances](https://github.com/utterance/utterances) (Git-based comments)
 * GitBook
+* [Obsidian](https://obsidian.md/) (notes?)
 
 </div><div>
 
@@ -84,13 +85,14 @@ Programming languages (+tools) that I want to check, but never had the time.
 * [crowdin](https://crowdin.com/) (localization)
 * [courier](https://www.courier.com/) (notifications)
 * [postmarkapp](https://postmarkapp.com/) (emails)
-* Slack
+* [gravatar](https://en.gravatar.com/) (avatars)
 
 **Tools~Software**
 
 * [editorconfig](https://editorconfig.org/)
 * [visual-paradigm](https://www.visual-paradigm.com/) (project management)
 * [asdf](https://github.com/asdf-vm/asdf) (package management)
+* Slack
 
 **Learned** (but there is no notes about them)
 
@@ -156,6 +158,7 @@ Websites that I found, but never used yet.
 * [smashingmagazine](https://www.smashingmagazine.com/) <small>(many)</small>
 * [gitconnected](https://gitconnected.com/) <small>(aggregate websites)</small>
 * [devglan](https://www.devglan.com/programming/programming-tutorials) <small>(many)</small>
+* [hackr.io](https://hackr.io/) <small>(aggregate)</small>
 
 **MOOCs**
 
@@ -216,6 +219,7 @@ Websites that I found, but never used yet.
 * [onemonth](https://onemonth.com/) <small>(paid, html/css/...)</small>
 * [symfonycasts](https://symfonycasts.com/) <small>(paid)</small>
 * [travistidwell](https://travistidwell.com/) <small>(???)</small>
+* [ilikekillnerds](https://ilikekillnerds.com/) <small>(???)</small>
 
 **Blockchains focused**
 
@@ -257,6 +261,7 @@ Websites that I found, but never used yet.
 * [kdnuggets](https://www.kdnuggets.com/tag/programming) <small>(???)</small>
 * [interviewcake](https://www.interviewcake.com/) <small>(small courses)</small>
 * [mkyong](https://mkyong.com/) <small>(Java, maven...)</small>
+* [ebens](https://ebens.me/blog) <small>(???)</small>
 
 **YouTube**
 
@@ -310,6 +315,7 @@ Random stuff...
 * [daily.dev](https://daily.dev/)
 * [polygon](https://www.polygon.com/) (movies, games...)
 * [getdroidtips](https://www.getdroidtips.com/) (games, android...)
+* [80](https://80.lv/) (games...)
 
 **Help**
 

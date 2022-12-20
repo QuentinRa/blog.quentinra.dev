@@ -14,6 +14,7 @@ Stuff that I found, but never read/used yet.
 
 * ssl
 * CDNs ([keycdn](https://www.keycdn.com/))
+* semantic web ([protege](https://protege.stanford.edu/))
 </div><div>
 
 Tools

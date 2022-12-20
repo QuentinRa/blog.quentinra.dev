@@ -43,6 +43,7 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 * [united-heroes](https://www.united-heroes.com/) (👻, events?)
 * [zoho.com](https://www.zoho.com/office/) (👻, office 365~?)
 * [goodfirms.co](https://www.goodfirms.co/) (👻, review/promote tools?)
+* [confluent.io](https://www.confluent.io/) (👻)
 </div></div>
 
 <hr class="sep-both">
@@ -50,6 +51,10 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 ##  📈 Plots/graphs 📈
 
 <div class="row row-cols-md-2 mt-4"><div>
+
+##### Whiteboard
+
+* [excalidraw](https://github.com/excalidraw/excalidraw)
 
 ##### Trees
 

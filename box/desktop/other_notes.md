@@ -17,4 +17,8 @@
 ##### Random
 
 * <kbd>Win+H</kbd>: voice to text
+
+##### Windows4Free/Office4Free
+
+* see [msguides.com](https://msguides.com/)
 </div></div>

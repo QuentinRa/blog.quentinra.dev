@@ -6,6 +6,13 @@
 
 <hr>
 
+## XXX
+
+* https://github.com/apsdehal/awesome-ctf
+* https://exceptionnotfound.net/
+
+<hr>
+
 ## Reaped
 
 * https://github.com/Hifumi1337/Bounty-Hacker
