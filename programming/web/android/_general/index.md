@@ -74,6 +74,38 @@ The device emulator allow you to create a virtual device or connect yours. You m
 
 <hr class="sep-both">
 
+## ✏️Key elements  📝
+
+<div class="row row-cols-md-2"><div>
+
+##### app/manifests/AndroidManifest.xml
+
+This is a file that describes
+
+* What is the main activity <small>(~=screen)</small>?
+* What activities <small>(~=screens)</small> you defined? 
+* What are the permissions that your application needs?
+* If your application defining services <small>(~=tasks)</small>?
+* ...
+
+##### app/java/com.xxx.yyy
+
+This is where your classes will be store.
+</div><div>
+
+##### app/res
+
+This is where the resources of your application will be stored.
+
+* Drawables <small>(images, icons...)</small>
+* Layouts <small>(the layout of each screen)</small>
+* Menu
+* Values <small>(translations, colors/themes...)</small>
+* XML <small>(preferences...)</small>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -88,6 +120,7 @@ Stuff that I found, but never read/used yet.
 * Services
 * [Nested navigation graphs](https://developer.android.com/guide/navigation/navigation-nested-graphs)
 * Room
+* backups (see [autobackups](https://developer.android.com/guide/topics/data/autobackup))
 </div><div>
 
 ```kotlin
