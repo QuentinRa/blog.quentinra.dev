@@ -61,36 +61,6 @@ Aside from your code, almost every file is a XML file. This is a sort of HTML wi
 
 <div class="row row-cols-md-2 mx-0"><div>
 
-Each screen of your application is an **Activity**. The "main" screen is usually called "Main Activity". Each activity is made of two files
-
-* **MainActivity.kt** for the code handling the view
-* **activity_main.xml** for the view
-
-<details class="details-e">
-<summary>Base code for an Activity</summary>
-
-```kotlin
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        // set the view: activity_main.xml
-        setContentView(R.layout.activity_main)
-        // add your code here
-    }
-}
-```
-
-This code can be shortened to
-
-```kotlin
-class MainActivity : AppCompatActivity(R.layout.activity_main) {
-}
-```
-</details>
-
 > An activity has an attribute `title` to change the title of the current window/frame.
 </div><div>
 
@@ -333,30 +303,6 @@ RadioGroup is a ViewGroup used to ensure that only one RadioButton can be select
 * ...
 </details>
 </div></div>
-
-<hr class="sl">
-
-## Layout Editor
-
-<div class="row row-cols-md-2 mx-0"><div class="align-self-center">
-
-<ol style="list-style-type: lower-alpha">
-<li><b>Mode</b>: you can switch to code/layout editor here</li>
-<li><b>Palette</b>: a library of views that you can drag and drop to the design view</li>
-<li><b>Design view</b>: what the user will see</li>
-<li><b>BluePrint view</b>: everything is shown on it, included hidden elements</li>
-<li><b>Component tree</b>: list of all views of your screen</li>
-<li><b>Attributes</b>: edit the properties of a view</li>
-
-</ol>
-</div><div>
-
-![Layout Editor](_images/layout_editor.png)
-</div></div>
-
-**TIP**: you should rely on <kbd>CTRL+F</kbd> to search for attributes, or by clicking on the search icon at the top of the "Attributes" window.
-
-**TIP**: you will most likely have a time when you want to replace a view with another view. In the component tree, right-click on a view, and use "convert view". You could also manually get the job done by directly editing the `.xml`.
 
 <hr class="sr">
 

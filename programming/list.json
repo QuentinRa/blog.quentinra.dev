@@ -132,14 +132,14 @@
               "hidden": false
             },
             {
-              "tag": "web/android/_general/index.md",
+              "tag": "web/android/activities/index.md",
               "name": "Activities",
               "desc": "...",
               "icon": "<i class=\"bi bi-android\"></i>",
               "hidden": false
             },
             {
-              "tag": "web/android/_general/index.md",
+              "tag": "web/android/views/index.md",
               "name": "Views",
               "desc": "...",
               "icon": "<i class=\"bi bi-android\"></i>",
