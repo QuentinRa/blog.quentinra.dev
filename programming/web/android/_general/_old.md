@@ -147,34 +147,6 @@ if (packageManager.resolveActivity(intent, 0) != null) {
 > Nowadays, you should use Jetpack navigation component.
 </div></div>
 
-<hr class="sl">
-
-## Application life-cycle
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-![android_application_lifecycle](_images/android_application_lifecycle.png)
-
-> Activities are started by the Application, which is the class that the user may implement, for instance, if there is a need to run code when the application starts/stop.
-
-> The Android/Activity **back-stack** refer to the fact that each new activity in you application is put on top of a stack. The activity at the top is the one displayed. If you press "back", then you will pop this activity from the stack, and move to the new head of the stack. If the stack is empty, then you go back to the home.
-</div><div>
-
-Android life-cycle is a bit complex. When starting an app, you go from Initialized, to Created, then Started, then Resumed.
-
-If the app is partially visible <small>(ex: click on share/...)</small>, then you go back to "Started".
-
-If you press the home button, your app will go back to Created, until you start it again.
-
-If Android need resources, then your app may be destroyed. If there are a lot of changes <small>(ex: language changed, rotation...)</small>, then android will most likely destroy, and re-create the app.
-
-You can use `onCreate(Bundle?)`, `onRestoreInstanceState(Bundle)`, to load saved data, and `onSaveInstanceState(Bundle)` to save data. A "bundle" is a **small, in-memory** dictionary, in which you can save a bit of data, that will be reloaded when the app is created, or started again.
-
-Code in `onPause()` must be lightweight, because it will delay the other application that is showing up in the front screen.
-
-> **Note**: it should be highlighted, that rotating your devices will destroy, and create again your activity. In Android Studio, don't forget to enable device rotation to try it out.
-</div></div>
-
 <hr class="sr">
 
 ## Views
@@ -1382,16 +1354,6 @@ class MainApplication : Application() {
 }
 ```
 </details>
-
-Then, you must indicate that you create an extension of application in your AndroidManifest
-
-```xml
-<!-- add Android:name pointing to your MainApplication -->
-<!-- use CTRL+SPACE / auto-completion -->
-<application
-        android:name=".xxx.MainApplication"
-        />
-```
 
 > **Note**: a channel is created with an [**importance**](https://developer.android.com/develop/ui/views/notifications/channels#importance). The attribute **priority** of the notification is ignored on Android 8.0.
 

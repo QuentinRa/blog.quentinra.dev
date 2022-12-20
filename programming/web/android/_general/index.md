@@ -15,19 +15,19 @@ You can develop Android apps with many frameworks such as React Native or Electr
 
 </div><div>
 
-Android Studio <small>(Google)</small> is the IDE you will use. It's based on IntelliJ Community <small>(JetBrains)</small> 😎❤️. It's quite complex with a lot of Windows.
+Android Studio <small>(Google)</small> is the IDE you will use. It's based on IntelliJ Community <small>(JetBrains)</small> 😎❤️. There are a few life-saving shortcuts
 
 * <kbd>CTRL+P</kbd>: in `method(<here>)`, show the arguments of a method
-* <kbd>CTRL+SPACE</kbd>: manually trigger autocompletion (then use <kbd>TAB</kbd>)
+* <kbd>CTRL+SPACE</kbd>: manually trigger autocompletion <small>(then use <kbd>TAB</kbd>)</small>
 * <kbd>SHIFT+SHIFT</kbd>: search for a method/class/...
-* <kbd>ALT+ENTER</kbd>/**hover** something highlight in red, yellow, grey... to see quick fixes/details.
+* <kbd>ALT+ENTER</kbd>/**hover something** highlighted in red, yellow, grey... to see quick fixes/details.
 
 <details class="details-e">
 <summary>Configure in-editor documentation</summary>
 
 To see the documentation of a method, use <kbd>CTRL+Q</kbd> or hover a method. By default, you won't see anything interesting.
 
-* Navigate to the source of any Android class. As a remainder, you can use <kbd>CTRL+(MOUSE LEFT)</kbd>.
+* Navigate to the source of any Android class. As a remainder, you can use <kbd>CTRL+(MOUSE LEFT)</kbd> like in VSCode/...
 * Click on "Download sources"
 * Done
 </details>
@@ -37,7 +37,7 @@ To see the documentation of a method, use <kbd>CTRL+Q</kbd> or hover a method. B
 
 ## 📱 Android Studio 📱
 
-I won't cover how to use an IDE or whatever, but here are a few things worth being mentioned.
+*You should refer to IntelliJ notes if you want to master Android Studio.*
 
 <div class="row row-cols-md-2"><div>
 
@@ -54,7 +54,7 @@ Inside `dependencies {}`, you will add new libraries. You need to click on "sync
 
 <br>
 
-##### app/manifests/AndroidManifest.xml
+#### app/manifests/AndroidManifest.xml
 
 This is a file that describes
 
@@ -66,12 +66,12 @@ This is a file that describes
 
 <br>
 
-##### app/java/com.xxx.yyy
+#### app/java/com.xxx.yyy
 
 This is where your classes will be store.
 </div><div>
 
-##### app/res
+#### app/res
 
 This is where the resources of your application will be stored.
 
