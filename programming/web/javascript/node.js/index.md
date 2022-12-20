@@ -173,7 +173,6 @@ Stuff that I found, but never read/used yet.
 
 Libraries
 
-* see JS libraries
 * [connect](https://www.npmjs.com/package/connect)
 * [bcrypt](https://attacomsian.com/blog/nodejs-password-hashing-with-bcrypt)
 

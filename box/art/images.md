@@ -6,6 +6,7 @@
 
 * [experte.com](https://www.experte.com/background-remover) (free)
 * [remove.bg](https://www.remove.bg/) (free but output is of a lower quality)
+* [bgremover](https://icons8.com/bgremover) (free with watermark)
 
 ##### Remove something from an image
 
@@ -86,4 +87,5 @@ Stuff that I found, but never read/used yet.
 
 * [photofeeler](https://www.photofeeler.com/)
 * [pfpmaker](https://pfpmaker.com/)
+* [icons8](https://icons8.com/)
 </div></div>

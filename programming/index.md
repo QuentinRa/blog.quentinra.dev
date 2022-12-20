@@ -34,7 +34,7 @@ The icon with an arrow (➡️) means that they should be tackled first.
 
 Programming languages (+tools) that I want to check, but never had the time.
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-md-3 mt-4"><div>
 
 **General**
 
@@ -50,6 +50,33 @@ Programming languages (+tools) that I want to check, but never had the time.
 * [codepen](https://codepen.io/) (???)
 * [codesandbox](https://codesandbox.io/) (???)
 
+**Tools~APIs**
+
+* [algolia](https://www.algolia.com/) <small>(add a searchbar?, see bt)</small>
+* [simpleen](https://simpleen.io/) <small>(localization)</small>
+* [crowdin](https://crowdin.com/) <small>(localization)</small>
+* [courier](https://www.courier.com/) <small>(notifications)</small>
+* [postmarkapp](https://postmarkapp.com/) <small>(emails)</small>
+* [gravatar](https://en.gravatar.com/) <small>(avatars)</small>
+* [customer.io](https://customer.io/) <small>(messaging)</small>
+
+**Tools~Software**
+
+* [editorconfig](https://editorconfig.org/)
+* [visual-paradigm](https://www.visual-paradigm.com/) <small>(project management)</small>
+* [asdf](https://github.com/asdf-vm/asdf) <small>(package management)</small>
+* Slack
+
+
+**Markdown-based**
+
+* [retype](https://retype.com/) <small>(Extended Markdown for websites)</small>
+* [utterances](https://github.com/utterance/utterances) <small>(Git-based comments)</small>
+* GitBook
+* [Obsidian](https://obsidian.md/) <small>(notes?)</small>
+
+</div><div>
+
 **Web/Android/UI**
 
 ➡️See [Modern web](https://modern-web.dev/guides/)<br>
@@ -63,7 +90,6 @@ Programming languages (+tools) that I want to check, but never had the time.
 * React/React Native/Ionic/Angular
 * [Dart](https://dart.dev/)
 * [Flutter](https://flutter.dev/)
-* [emojione](https://github.com/joypixels/emojione) and [emoji-toolkit](https://github.com/joypixels/emoji-toolkit)
 * [vercel](https://vercel.com/)
 * Webpack, rollupjs, parcel, Snowpack, WMR, and vite+vitest
 * Dust, EJS, Handlebars, Hogan.js, Pug (Jade), Twig, and Vash (express)
@@ -74,31 +100,18 @@ Programming languages (+tools) that I want to check, but never had the time.
 * chrome dev tools snippets
 * [headlessbrowserapi](https://headlessbrowserapi.com/)
 
-**Markdown-based**
+**JS libraries**
 
-* [retype](https://retype.com/) (Extended Markdown for websites)
-* [utterances](https://github.com/utterance/utterances) (Git-based comments)
-* GitBook
-* [Obsidian](https://obsidian.md/) (notes?)
+* [localizejs](https://localizejs.com/)
+* axios
+* [ct](https://github.com/csswizardry/ct)
+* [babeljs](https://babeljs.io/)
+* [browserify](https://github.com/browserify/browserify) / [browserify.org](https://browserify.org/)
+* [validatorjs](https://github.com/mikeerickson/validatorjs)
+* [jsencrypt](https://github.com/travist/jsencrypt) and [article](https://travistidwell.com/jsencrypt/)
+* [emojione](https://github.com/joypixels/emojione) and [emoji-toolkit](https://github.com/joypixels/emoji-toolkit)
 
 </div><div>
-
-**Tools~APIs**
-
-* [algolia](https://www.algolia.com/) (add a searchbar?, see bt)
-* [simpleen](https://simpleen.io/) (localization)
-* [crowdin](https://crowdin.com/) (localization)
-* [courier](https://www.courier.com/) (notifications)
-* [postmarkapp](https://postmarkapp.com/) (emails)
-* [gravatar](https://en.gravatar.com/) (avatars)
-* [customer.io](https://customer.io/) (messaging)
-
-**Tools~Software**
-
-* [editorconfig](https://editorconfig.org/)
-* [visual-paradigm](https://www.visual-paradigm.com/) (project management)
-* [asdf](https://github.com/asdf-vm/asdf) (package management)
-* Slack
 
 **Learned** (but there is no notes about them)
 
@@ -203,7 +216,7 @@ Websites that I found, but never used yet.
 * [logrocket](https://blog.logrocket.com/) <small>(React/Nest, Node, Sidekick/Bun, Kotlin, Rust...)</small>
 * [futurestud](https://futurestud.io/) <small>(Android, Node, nginx...)</small>
 * [ezekielekunola](https://www.blog.ezekielekunola.com/) <small>(Vue/React...)</small>
-* [buddy.works](https://buddy.works/tutorials) <small>(Vue/React/Mocha/..., Node, Docker...)</small>
+* [buddy.works](https://buddy.works/tutorials) <small>(Vue/React/Mocha/..., Node, Docker...)</small>****
 * [sitepen](https://www.sitepen.com/blog) <small>(Typescript, Jest, Deno, Angular...)</small>
 * [unclebigbay](https://unclebigbay.com/) <small>(React, JS, CSS)</small>
 * [freecodecamp](https://www.freecodecamp.org/news) <small>(React, JS)</small>
@@ -294,6 +307,7 @@ Websites that I found, but never used yet.
 **Cheatsheet**
 
 * [devhints.io](https://devhints.io/)
+* [cheat-sheets.org](http://www.cheat-sheets.org/)
 </div></div>
 
 <hr class="sep-both">

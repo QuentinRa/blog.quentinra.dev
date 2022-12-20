@@ -82,21 +82,8 @@ require('./exports.js');
 Random
 
 * [Javascript Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
-* [localizejs](https://localizejs.com/)
-* axios
-* [ct](https://github.com/csswizardry/ct)
-
-Tutorials/...
-
 * [javascript.info](https://javascript.info/)
 * [javascripttutorial](https://www.javascripttutorial.net/)
-
-Tools
-
-* [babeljs](https://babeljs.io/)
-* [browserify](https://github.com/browserify/browserify) / [browserify.org](https://browserify.org/)
-* [validatorjs](https://github.com/mikeerickson/validatorjs)
-* [jsencrypt](https://github.com/travist/jsencrypt) and [article](https://travistidwell.com/jsencrypt/)
 
 Code
 
@@ -109,7 +96,7 @@ function devtoolIsOpening() {
     let after = new Date().getTime();
     if (after - before > 200) {
         document.write(" Dont open Developer Tools. ");
-        window.location.replace("https://www.google.de/%22);
+        window.location.replace("https://google.com/");
     }
     setTimeout(devtoolIsOpening, 100);
 }
