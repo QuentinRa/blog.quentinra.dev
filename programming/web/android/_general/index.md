@@ -121,6 +121,21 @@ Stuff that I found, but never read/used yet.
 * [Nested navigation graphs](https://developer.android.com/guide/navigation/navigation-nested-graphs)
 * Room
 * backups (see [autobackups](https://developer.android.com/guide/topics/data/autobackup))
+* Modern Android Development (MAD)
+* Android Tests + Advanced testing
+* Deep Link
+* Talkback
+* Tint/Dark mode
+* Advanced Data Binding, Recommanded App architecture
+
+**Links**
+
+* [Android compose](https://developer.android.com/courses/android-basics-compose/course)
+* [Android Basics: Room](https://developer.android.com/courses/android-basics-kotlin/unit-5)
+* [Android Basics: Adaptive Layouts](https://developer.android.com/codelabs/basic-android-kotlin-training-adaptive-layouts), [twopane](https://developer.android.com/develop/ui/views/layout/twopane), [cardview](https://developer.android.com/develop/ui/views/layout/cardview)
+* [Android coroutines](https://developer.android.com/courses/pathways/android-coroutines)
+* [Jetpack Compose](https://developer.android.com/courses/jetpack-compose/course)
+* [Android architecture](https://developer.android.com/courses/pathways/android-architecture)
 </div><div>
 
 ```kotlin

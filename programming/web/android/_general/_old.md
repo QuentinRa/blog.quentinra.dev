@@ -53,17 +53,6 @@ Aside from your code, almost every file is a XML file. This is a sort of HTML wi
 
 * The `tools:context` is pointing to the class which will use this layout.
 
-<hr>
-
-The file **AndroidManifest.xml** is used to make your application. It is storing 
-
-* the permissions given to your app, 
-* the features requested,
-* the list of activities = the screens of your app,
-* the main activity,
-* the services used,
-* ...
-
 </div></div>
 
 <hr class="sr">
@@ -1650,30 +1639,4 @@ class XXXWorker(c: Context, args: WorkerParameters) : CoroutineWorker(c, args) {
 ```
 
 </details>
-</div></div>
-
-<hr class="sr">
-
-## References
-
-<div class="row row-cols-md-2"><div>
-
-**Todo**
-
-* [Android compose](https://developer.android.com/courses/android-basics-compose/course)
-* [Android Basics: Room](https://developer.android.com/courses/android-basics-kotlin/unit-5)
-* [Android Basics: Adaptive Layouts](https://developer.android.com/codelabs/basic-android-kotlin-training-adaptive-layouts), [twopane](https://developer.android.com/develop/ui/views/layout/twopane), [cardview](https://developer.android.com/develop/ui/views/layout/cardview)
-* [Android coroutines](https://developer.android.com/courses/pathways/android-coroutines)
-* [Jetpack Compose](https://developer.android.com/courses/jetpack-compose/course)
-* [Android architecture](https://developer.android.com/courses/pathways/android-architecture)
-</div><div>
-
-Other topics not covered
-
-* Modern Android Development (MAD)
-* Android Tests + Advanced testing
-* Deep Link
-* Talkback
-* Tint/Dark mode
-* Advanced Data Binding, Recommanded App architecture
 </div></div>
