@@ -20,6 +20,7 @@
 
 * [filevert](https://filevert.fr/) (temporary file hosting)
 * [fakenamegenerator](https://en.fakenamegenerator.com/) (fake data, temporary email)
+* [chapril](https://drop.chapril.org/) (👻)
 
 <br>
 
@@ -89,4 +90,5 @@ Stuff that I found, but never read/used yet.
 
 * [degooglisons-internet](https://degooglisons-internet.org/en/alternatives/) (old)
 * [framalibre](https://framalibre.org/) (french)
+* [chapril](https://www.chapril.org/-services-.html) (french)
 </div></div>

@@ -20,5 +20,6 @@
 * [ScreenToGif](https://www.screentogif.com/) (free, create a GIF, WindowsStore, [GitHub](https://github.com/NickeManarin/ScreenToGif))
 * [TTYGIF](https://github.com/icholy/ttygif) (record a terminal)
 * [loom](https://www.loom.com/) (free with an account, record yourself with your slides)
-* [wyzowl](https://www.wyzowl.com/) (paid)
+* [wyzowl](https://www.wyzowl.com/) (👻)
+* [yopbox](https://www.yopbox.com/) (👻)
 </div></div>

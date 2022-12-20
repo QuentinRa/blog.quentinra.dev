@@ -7,6 +7,10 @@
 * [experte.com](https://www.experte.com/background-remover) (free)
 * [remove.bg](https://www.remove.bg/) (free but output is of a lower quality)
 
+##### Remove something from an image
+
+* [cleanup.pictures](https://cleanup.pictures/)
+
 ##### GIFs
 
 * [ezgif.com](https://ezgif.com/) (create, split, crop, compress)

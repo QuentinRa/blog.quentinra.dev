@@ -23,4 +23,8 @@ Tools
 * [pusher](https://pusher.com/) (server push...)
 * [statshow](https://www.statshow.com/) (stats)
 * [twbs](https://github.com/twbs/bootstrap) (see badges)
+
+SEO
+
+* [nitropack](https://nitropack.io/)
 </div></div>

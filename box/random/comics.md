@@ -13,5 +13,16 @@
 * Try [saucenao.com](https://saucenao.com)
 </div><div>
 
-...
+##### Read
+
+Aggregators
+
+* [mangaguru.org](https://mangaguru.org/index.php)
+* [comickiba.com](https://comickiba.com/) (WordPress Madara)
+
+Webtoons
+
+* [webtoon.xyz](https://www.webtoon.xyz/)
+* [manhuascan.us](https://manhuascan.us/)
+* [mangarolls.com](https://mangarolls.com/rolls/) (WordPress Madara)
 </div></div>
