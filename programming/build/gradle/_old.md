@@ -1,6 +1,6 @@
 # Gradle
 
-[Go back](../index.md#expert)
+[Go back](index.md)
 
 You may use gradle to make your project more easy to manage like a Makefile. You will run one command downloading all libraries or running the project.
 
@@ -121,12 +121,12 @@ dependencies {
 You will have a folder `src` with
 
 * main
-  * java
-  * resources
+    * java
+    * resources
 * tests
-  * java
-  * resources
-  
+    * java
+    * resources
+
 The unusual thing is that you will have to put all your files in `resources` and use some weirds methods to get a stream, but the code will works when packed in .jar file so you will be able to share it without path problems.
 
 Note that the path starts with a `/` pointing to the `resources` folder.
@@ -145,7 +145,7 @@ File f = new File(url.toURI());
 ## Notes
 
 * you may use `gradle wrapper` (or `./gradlew wrapper`) to create the gradle jar, check out `/gradle/wrapper/gradle-wrapper.properties` (project root)
-  
+
 ```properties
 distributionBase=GRADLE_USER_HOME
 distributionPath=wrapper/dists
@@ -177,5 +177,5 @@ task makeJar(type: Jar) {
 ```
 
 * you can change the gradle JVM version
-  * <https://stackoverflow.com/questions/18487406/how-do-i-tell-gradle-to-use-specific-jdk-version#answer-64220088>
-  * in Intellij <https://www.jetbrains.com/help/idea/gradle-jvm-selection.html>
+    * <https://stackoverflow.com/questions/18487406/how-do-i-tell-gradle-to-use-specific-jdk-version#answer-64220088>
+    * in Intellij <https://www.jetbrains.com/help/idea/gradle-jvm-selection.html>

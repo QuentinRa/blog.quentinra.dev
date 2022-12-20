@@ -141,7 +141,7 @@ Special notes
 **Note**: note that I'm not an expert, so this section is about some notes about the things that I'm discovering while practicing.
 
 * [Modules](expert/modules.md)
-* [Gradle](expert/gradle.md)
+* Gradle
 * [Generating a .exe or an installer](expert/exe.md)
 * [Protect a jar](expert/jar.md)
 

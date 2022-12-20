@@ -24,7 +24,7 @@ The icon with an arrow (➡️) means that they should be tackled first.
 * css, sass, less
 * latex/rst
 * xml
-* gradle
+* build tools
 * web (general)
 </div></div>
 
@@ -41,14 +41,6 @@ Programming languages (+tools) that I want to check, but never had the time.
 ➡️ [chocolatey](https://chocolatey.org/)
 
 * [mercurial](https://www.mercurial-scm.org/) (version-control)
-
-**Editors**
-
-* [ace](https://github.com/ajaxorg/ace) (web code editor)
-* [stackblitz](https://stackblitz.com/) (???)
-* [glitch](https://glitch.com/) (???)
-* [codepen](https://codepen.io/) (???)
-* [codesandbox](https://codesandbox.io/) (???)
 
 **Tools~APIs**
 
@@ -118,17 +110,26 @@ Programming languages (+tools) that I want to check, but never had the time.
 
 </div><div>
 
+**Editors**
+
+* [ace](https://github.com/ajaxorg/ace) (web code editor)
+* [stackblitz](https://stackblitz.com/) (???)
+* [glitch](https://glitch.com/) (???)
+* [codepen](https://codepen.io/) (???)
+* [codesandbox](https://codesandbox.io/) (???)
+
 **Learned** (but there is no notes about them)
 
 * QT
-* IntelliJ Plugin Development
 * Relational modeling
 * WordPress
 * C#
+* Apache
 
 **Random**
 
 * Moodle
+* Nginx
 * Lua
 * Lisp
 * Rust
@@ -143,6 +144,8 @@ EOF
 
 * Rust
 * Go
+* Groovy
+* Swift ([pods](https://cocoapods.org/))
 * Ruby ([gems](https://rubygems.org/))
 * .NET ([nuget](https://www.nuget.org/))
 * [A lot of languages listed here](https://www.jetbrains.com/help/webstorm/application-development-guidelines.html)
