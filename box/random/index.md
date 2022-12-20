@@ -20,15 +20,13 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 <hr class="sep-both">
 
-## 🛖 TOS / PP 🛖
+## 🛖 Art 🛖
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-##### Generate TOS/PP/...
+##### Music
 
-* [termshub](https://termshub.io/) (readable and simple, free)
-* [termly](https://termly.io/) (big unreadable ToS, free with watermarks)
-* [freeprivacypolicy](https://www.freeprivacypolicy.com/) (👻)
+* [fl-studio](https://www.image-line.com/fl-studio/)
 </div><div>
 </div></div>
 
@@ -38,16 +36,24 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-Adblock
+##### Adblock
 
 * [blockadblock.com](https://blockadblock.com/) (block newbies)
 * [chpadblock.com](https://chpadblock.com/) (block newbies)
 
-Cookies
+##### Cookies
 
 * [confirmic](https://landing.confirmic.com/) (👻)
 * [axeptio](https://www.axeptio.eu) (👻)
 </div><div>
+
+##### Generate TOS/PP/...
+
+* [termshub](https://termshub.io/) (readable and simple, free)
+* [termly](https://termly.io/) (big unreadable ToS, free with watermarks)
+* [freeprivacypolicy](https://www.freeprivacypolicy.com/) (👻)
+
+##### Other
 
 * [nimbusweb.me](https://nimbusweb.me/) (👻, project/team management?)
 * [united-heroes](https://www.united-heroes.com/) (👻, events?)
@@ -69,11 +75,11 @@ Cookies
 ##### Trees
 
 * [ironcreek](https://ironcreek.net/syntaxtree/)  (syntaxtree)
+</div><div>
 
 ##### Graphs
 
 * [webgraphviz](http://webgraphviz.com/) (with [GraphViz Pocket Reference](https://graphs.grevian.org/example))
-</div><div>
 </div></div>
 
 <hr class="sep-both">

@@ -65,6 +65,12 @@
 * [ephtracy](https://ephtracy.github.io/) (voxel art editor)
 * [boundingboxsoftware](https://boundingboxsoftware.com/materialize/) (image to material)
 </div><div>
+
+##### Text to image
+
+* [stable-diffusion](https://github.com/CompVis/stable-diffusion)
+* [DALL·E mini](https://huggingface.co/spaces/dalle-mini/dalle-mini)
+* [DALL·E 2](https://openai.com/dall-e-2/)
 </div></div>
 
 <hr class="sep-both">

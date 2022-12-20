@@ -56,17 +56,20 @@ Programming languages (+tools) that I want to check, but never had the time.
 * [simpleen](https://simpleen.io/) <small>(localization)</small>
 * [crowdin](https://crowdin.com/) <small>(localization)</small>
 * [courier](https://www.courier.com/) <small>(notifications)</small>
+* [pusher](https://pusher.com/) <small>(notifications)</small>
 * [postmarkapp](https://postmarkapp.com/) <small>(emails)</small>
 * [gravatar](https://en.gravatar.com/) <small>(avatars)</small>
 * [customer.io](https://customer.io/) <small>(messaging)</small>
+* [firebase](https://firebase.google.com/) <small>(???)</small>
 
 **Tools~Software**
 
 * [editorconfig](https://editorconfig.org/)
 * [visual-paradigm](https://www.visual-paradigm.com/) <small>(project management)</small>
 * [asdf](https://github.com/asdf-vm/asdf) <small>(package management)</small>
+* [wakatime](https://wakatime.com/) <small>(metrics)</small>
+* [xmind](https://xmind.app/) <small>(brainstorming)</small>
 * Slack
-
 
 **Markdown-based**
 
@@ -74,6 +77,7 @@ Programming languages (+tools) that I want to check, but never had the time.
 * [utterances](https://github.com/utterance/utterances) <small>(Git-based comments)</small>
 * GitBook
 * [Obsidian](https://obsidian.md/) <small>(notes?)</small>
+* [notion](https://www.notion.so/) <small>(notes?)</small>
 
 </div><div>
 
@@ -99,6 +103,7 @@ Programming languages (+tools) that I want to check, but never had the time.
 * [nw.js](https://nwjs.io/) / [neutralinojs](https://github.com/neutralinojs/neutralinojs)
 * chrome dev tools snippets
 * [headlessbrowserapi](https://headlessbrowserapi.com/)
+* [atmospherejs](https://atmospherejs.com/)
 
 **JS libraries**
 
@@ -138,7 +143,8 @@ EOF
 
 * Rust
 * Go
-* Ruby
+* Ruby ([gems](https://rubygems.org/))
+* .NET ([nuget](https://www.nuget.org/))
 * [A lot of languages listed here](https://www.jetbrains.com/help/webstorm/application-development-guidelines.html)
 * Other: ML (programming language), [Q#](https://devblogs.microsoft.com/qsharp/)
 
@@ -326,6 +332,7 @@ Random stuff...
 * [reverse-interview](https://github.com/viraptor/reverse-interview)
 * [Hiring Without Whiteboards](https://github.com/poteto/hiring-without-whiteboards)
 * [essential-dev-skills](https://essential-dev-skills.com/) (french)
+* [choosemycompany](https://choosemycompany.com/en/)
 </div><div>
 
 **Entrepreneurship**

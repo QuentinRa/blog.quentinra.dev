@@ -16,17 +16,11 @@ Stuff that I found, but never read/used yet.
 * CDNs ([keycdn](https://www.keycdn.com/))
 * semantic web ([protege](https://protege.stanford.edu/))
 * progressive web apps
-</div><div>
-
-Tools
-
-* [firebase](https://firebase.google.com/) (auth, server push...)
-* [pusher](https://pusher.com/) (server push...)
-* [statshow](https://www.statshow.com/) (stats)
-* [twbs](https://github.com/twbs/bootstrap) (see badges)
 * color picker (console)
+</div><div>
 
 SEO
 
 * [nitropack](https://nitropack.io/)
+* [statshow](https://www.statshow.com/) (stats)
 </div></div>

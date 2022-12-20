@@ -429,6 +429,8 @@ Random
 * [opencollective](https://opencollective.com/)
 * [cla-assistant](https://cla-assistant.io/)
 * [gitter](https://gitter.im/)
+* [ossf](https://github.com/ossf/scorecard)
+* [coveralls](https://coveralls.io/)
 </div><div>
 
 * [GitHub Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)

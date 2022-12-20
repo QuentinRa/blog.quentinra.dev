@@ -11,6 +11,8 @@
 * https://github.com/apsdehal/awesome-ctf
 * https://exceptionnotfound.net/
 * https://github.com/tomnomnom/waybackurls
+* https://www.ssllabs.com/
+* https://openvpn.net/community-downloads/
 
 <hr>
 
