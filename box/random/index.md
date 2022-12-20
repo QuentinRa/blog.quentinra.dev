@@ -12,6 +12,10 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 * [askabox](https://askabox.com/) (👻)
 </div><div>
+
+##### QR Codes
+
+* [onelink.to](https://www.onelink.to/)
 </div></div>
 
 <hr class="sep-both">

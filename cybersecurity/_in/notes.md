@@ -10,6 +10,7 @@
 
 * https://github.com/apsdehal/awesome-ctf
 * https://exceptionnotfound.net/
+* https://github.com/tomnomnom/waybackurls
 
 <hr>
 

@@ -820,4 +820,5 @@ Stuff that I found, but never read/used yet.
 * [linux-audit](https://linux-audit.com/)
 * [oreilly](https://www.oreilly.com/library/view/linux-command-line/9780470251287/)
 * [tldp](https://tldp.org/guides.html)
+* [linuxshelltips](https://www.linuxshelltips.com/)
 </div></div>

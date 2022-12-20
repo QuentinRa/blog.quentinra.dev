@@ -68,4 +68,5 @@ int main(void){
 ##### Random
 
 * [NitroGen](https://github.com/logicguy1/Discord-Nitro-Generator-and-Checker) (👻)
+* [DiscordChatExporter](https://github.com/Tyrrrz/DiscordChatExporter) (👻)
 </div></div>
