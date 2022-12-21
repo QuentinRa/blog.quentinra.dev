@@ -155,7 +155,8 @@ val param = intent?.extras?.getString("param")
 Example to navigate to "MainActivity"
 
 ```kotlin
-val intent = Intent(context, MainActivity::class.java)
+// this = a context
+val intent = Intent(this, MainActivity::class.java)
 ```
 
 #### External activities
@@ -218,6 +219,28 @@ if (packageManager.resolveActivity(intent, 0) != null) {
 }
 ```
 </details>
+</div></div>
+
+<hr class="sep-both">
+
+## Application back stack
+
+<div class="row row-cols-md-2"><div>
+
+Android activities are pilled up in something called the "back stack". In older devices, users can use the "back arrow" to go back to a previous activity. The current intent is popped out, and the previous activity is started. If there are none, then the app is terminated.
+
+![img.png](_images/android_back_stack.png)
+</div><div>
+
+In the example above, we got two instances of "MainActivity". It's important to consider if this behavior is acceptable or not. If not, you should pass flags to your Intent using [Intent#addFlags](https://developer.android.com/reference/android/content/Intent.html#flags).
+
+👉 For instance, if the user log out, he should not be able to press "back", and go back to the "connected area".
+
+* Manual "back" <small>(pop out current)</small>
+
+```javascript
+intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+```
 </div></div>
 
 <hr class="sep-both">

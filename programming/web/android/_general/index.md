@@ -183,8 +183,6 @@ recyclerView.apply {
 
 val preferences: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
 if (preferences.getBoolean("key", false)) {}
-
-intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
 ```
 
 > See also: **[Old notes](_old.md)**
