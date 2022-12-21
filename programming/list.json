@@ -146,6 +146,13 @@
               "hidden": false
             },
             {
+              "tag": "web/android/view-model/index.md",
+              "name": "View-Model",
+              "desc": "...",
+              "icon": "<i class=\"bi bi-android\"></i>",
+              "hidden": false
+            },
+            {
               "tag": "web/android/core/index.md",
               "name": "Core",
               "desc": "...",

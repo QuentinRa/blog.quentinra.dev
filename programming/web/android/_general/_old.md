@@ -361,6 +361,8 @@ Dialogs are made of a title (optional), a message, and some buttons (accept/clos
 <details class="details-e">
 <summary>Menus</summary>
 
+> * `menus`: you must use a menu provider in fragments.
+
 * Resources manager | Menus
 * Create a new one
 
@@ -739,14 +741,6 @@ In your XML, you will use this newly created attribute, that is taking your valu
 *[Navigation component (guide)](https://developer.android.com/guide/navigation/navigation-getting-started)*
 
 <div class="row row-cols-md-2 mt-4"><div>
-
-![Fragment lifecycle](_images/android_fragment_lifecycle.png)
-
-Differences with activities
-
-* `menus`: you must use a menu provider.
-* use `viewLifecycleOwner` instead of `this`, when an owner is required
-* **Instead of `viewModels()`** which is not shared between fragments of one activity, you can use `activityViewModels()`.
 
 <details class="details-e">
 <summary>Fragment + ViewBinding</summary>

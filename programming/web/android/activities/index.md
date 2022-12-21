@@ -333,6 +333,10 @@ class BlankFragment : Fragment() {
     }
 }
 ```
+
+The Fragment lifecycle is as follows.
+
+![Fragment lifecycle](./_images/android_fragment_lifecycle.png)
 </div></div>
 
 <hr class="sep-both">
