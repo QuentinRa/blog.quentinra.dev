@@ -2,9 +2,9 @@
 
 <div class="row row-cols-md-2"><div>
 
-You can develop Android apps with many frameworks such as React Native or Electron which uses JavaScript/HTML. This course is about **Android development in Kotlin** while Java could also be used.
+You can develop Android apps with many frameworks such as React Native or Electron which uses JavaScript/HTML. This course is about **Android development in Kotlin** while you could use Java too.
 
-> Kotlin is recommended over Java by Google since 2019.
+> Google recommends using Kotlin over Java since 2019.
 
 **References**
 
@@ -165,7 +165,7 @@ Stuff that I found, but never read/used yet.
 * Tint/Dark mode
 * Advanced Data Binding, Recommanded App architecture
 
-**Links**
+</div><div>
 
 * [Android compose](https://developer.android.com/courses/android-basics-compose/course)
 * [Android Basics: Room](https://developer.android.com/courses/android-basics-kotlin/unit-5)
@@ -173,7 +173,6 @@ Stuff that I found, but never read/used yet.
 * [Android coroutines](https://developer.android.com/courses/pathways/android-coroutines)
 * [Jetpack Compose](https://developer.android.com/courses/jetpack-compose/course)
 * [Android architecture](https://developer.android.com/courses/pathways/android-architecture)
-</div><div>
 
 ```kotlin
 ViewModelProvider(this)[XXXViewModel::class.java]

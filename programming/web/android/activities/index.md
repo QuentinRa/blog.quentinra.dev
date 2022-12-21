@@ -254,7 +254,5 @@ Stuff that I found, but never read/used yet.
 ...
 </div><div>
 
-The Android/Activity **back-stack** refer to the fact that each new activity in you application is put on top of a stack. The activity at the top is the one displayed. If you press "back", then you will pop this activity from the stack, and move to the new head of the stack. If the stack is empty, then you go back to the home.
-
 An activity has an attribute `title` to change the title of the current window/frame.
 </div></div>

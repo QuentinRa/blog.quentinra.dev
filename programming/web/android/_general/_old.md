@@ -322,24 +322,6 @@ fun loadIcon(@DrawableRes drawableId: Int) {
 <div class="row row-cols-md-2 mt-4"><div>
 
 <details class="details-e">
-<summary>Toasts (sort of non-aggressive popups)</summary>
-
-A toast is something like this, usually at the bottom of the screen:
-
-![Android Toast](_images/toast.png)
-
-And, the code is as simple as that
-
-```kotlin
-// create
-// LENGTH_SHORT (=short duration) LENGTH_LONG (=long duration)
-val toast = Toast.makeText(this, "Some message", Toast.LENGTH_SHORT)
-// show
-toast.show()
-```
-</details>
-
-<details class="details-e">
 <summary>Keyboard</summary>
 
 You can get an `` which is handling the input of the application with
@@ -1193,94 +1175,6 @@ workManager.enqueueUniquePeriodicWork(UNIQUE_WORK_ID, ExistingPeriodicWorkPolicy
 ```
 
 </details>
-</div></div>
-
-<hr class="sr">
-
-## Notifications
-
-<div class="row row-cols-md-2"><div>
-
-Notification are used to for application to send something to the user usually when the application isn't running. To trigger a notification, you need a **channel**, **an icon**, a **title**, a **message**, and [**a priority**](https://developer.android.com/reference/androidx/core/app/NotificationCompat.Builder#setPriority(int)).
-
-```kotlin
-val builder = NotificationCompat.Builder(applicationContext, channel_id)
-    .setSmallIcon(icon_id)
-    .setContentTitle(title)
-    .setContentText(body)
-    .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-```
-
-You must have the permission to send notifications (AndroidManifest.xml)
-
-```xml
-<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-```
-
-<details class="details-e mt-3">
-<summary>Create a channel</summary>
-
-You must create a channel, which is a sort of group, in which all notification of your app will be stored, for devices running ANDROID 8 or higher.
-
-The code sample to create a channel is in the [documentation](https://developer.android.com/develop/ui/views/notifications/build-notification), while the location of the given `createNotificationChannel()` method isn't set in stone:
-
-> According to the documentation: "Because you must create the notification channel before posting any notifications on Android 8.0 and higher, you should execute this code as soon as your app starts."
-
-We will put it in a class `MainApplication`, the name do not matter, extending `Application`, and this will ensure that this code is **executed once** <small>(although the code itself can be run multiple times, it's not optimal)</small> **when the application is created**.
-
-<details class="details-e">
-<summary>MainApplication</summary>
-
-```kotlin
-class MainApplication : Application() {
-
-    override fun onCreate() {
-        super.onCreate()
-        createNotificationChannel()
-    }
-
-    private fun createNotificationChannel() {
-        // Create the NotificationChannel, but only on API 26+ because
-        // the NotificationChannel class is new and not in the support library
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val name = getString(R.string.channel_name)
-            val descriptionText = getString(R.string.channel_description)
-            val importance = NotificationManager.IMPORTANCE_DEFAULT
-            val channel = NotificationChannel(CHANNEL_ID, name, importance).apply {
-                description = descriptionText
-            }
-            // Register the channel with the system
-            val notificationManager: NotificationManager =
-                getSystemService(NOTIFICATION_SERVICE) as NotificationManager
-            notificationManager.createNotificationChannel(channel)
-        }
-    }
-
-    companion object {
-        const val CHANNEL_ID = "SOME_ID"
-    }
-}
-```
-</details>
-
-> **Note**: a channel is created with an [**importance**](https://developer.android.com/develop/ui/views/notifications/channels#importance). The attribute **priority** of the notification is ignored on Android 8.0.
-
-</details>
-</div><div>
-
-Send
-
-```kotlin
-// unique id
-private val notificationId = 0
-
-with(NotificationManagerCompat.from(context)) {
-    notify(notificationId, builder.build())
-}
-```
-
-* [Create multi-lines notifications, or add images/...](https://developer.android.com/develop/ui/views/notifications/expanded)
-* [Do something if the user click on the notification](https://developer.android.com/develop/ui/views/notifications/navigation)
 </div></div>
 
 <hr class="sl">
