@@ -825,29 +825,7 @@ Within the Navigation Graph, there are attributes "popUpTo", and "popUpToInclusi
 
 <div class="row row-cols-md-2"><div>
 
-The WorkManager is an Android Jetpack component providing a modern way to launch long, periodic, or battery intensive tasks. Unlike previous APIs, you are guaranteed that you job will be executed, even if the app is closed, or the phone restart.
-
-```gradle
-implementation "androidx.work:work-runtime-ktx:2.7.1"
-```
-
 * **Worker**: a class extending a worker, with the code that the work manager will execute
-
-```kotlin
-class XXXWorker(c: Context, args: WorkerParameters) : Worker(c, args) {
-    override fun doWork(): Result {
-        return try {
-            // get a context: applicationContext
-            // ...
-            // ok
-            Result.success()
-        } catch (e: Exception) {
-            // error
-            Result.failure()
-        }
-    }
-}
-```
 
 In Kotlin, you can use a [CoroutineWorker](https://developer.android.com/topic/libraries/architecture/workmanager/advanced/coroutineworker) to run async tasks.
 
@@ -861,64 +839,9 @@ class XXXWorker(c: Context, args: WorkerParameters) : CoroutineWorker(c, args) {
 
 </div><div>
 
-* **WorkerRequest**: this is the request send to the work manager, with both the worker, and the **constraints** that may be applied
-
-<details class="details-e">
-<summary>You may use the following constraints</summary>
-
-```kotlin
-val constraints = Constraints.Builder()
-    .setRequiresCharging(true)
-    .setRequiresBatteryNotLow(true)
-    .setRequiresStorageNotLow(true)
-    .setRequiresDeviceIdle(true)
-    .setRequiredNetworkType(NetworkType.CONNECTED)
-    .build()
-```
-</details>
-
-<details class="details-e">
-<summary>Create a request</summary>
-
-We will use `OneTimeWorkRequest` to run requests once, and the worker `XXXWorker`. For a request without any constraints
-
-```kotlin
-val request = OneTimeWorkRequest.from(XXXWorker::class.java)
-```
-
-And, for a request with constraints
-
-```kotlin
-val request = OneTimeWorkRequestBuilder<XXXWorker>()
-    .setConstraints(constraints)
-    .build()
-```
-</details>
-
 <br>
 
 * **WorkManager**: take your request, and handle them
-
-<details class="details-e">
-<summary>Enqueue: process the request</summary>
-
-```kotlin
-// example with a non-static work manager
-workManager.enqueue(request)
-```
-</details>
-
-<details class="details-e">
-<summary>Sequential execution of requests / Chaining requests</summary>
-
-```kotlin
-workManager
-    .beginWith(request)
-    .then(request)
-    // ... chen as much then as you want ...
-    .build()
-```
-</details>
 
 <details class="details-e">
 <summary>Input, pass, and output data</summary>
@@ -971,7 +894,7 @@ Result.success(workDataOf(key to value))
 A unique work chain is identified by an `ID`, and there will only be ONE work chain with this `ID` at a time.
 
 * `enqueue(request)` $\to$ `enqueueUniqueWork(ID, policy, request)`
-* `begin(request)` $\to$ `beginUniqueWork(ID, policy, request)`
+* `beginWith(request)` $\to$ `beginUniqueWork(ID, policy, request)`
 
 Policies are
 
