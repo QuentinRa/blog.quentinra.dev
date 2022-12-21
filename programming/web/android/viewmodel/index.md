@@ -187,7 +187,7 @@ class MainViewModel : ViewModel() {
 }
 ```
 
-It's important to note that you can't simply call `_count.value!!.inc()`. A livedata is only calling observe when the property `value` is assigned to a new value, not when the property is modified.
+It's important to note that you can't simply call `_count.value!!.inc()`. A livedata is only calling `observe` when the property `value` is assigned to a new value, not when the property is modified.
 
 </div><div>
 
@@ -218,14 +218,55 @@ viewModel.count.observe(viewLifecycleOwner) {
 
 <hr class="sep-both">
 
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
+## ⚡ Advanced LiveData ⚡
 
 <div class="row row-cols-md-2"><div>
 
-* **Instead of `viewModels()`** which is not shared between fragments of one activity, you can use `activityViewModels()`.
+#### Transformations
+
+Transformations allow us to create a "fake" LiveData from another LiveData.
+
+➡️In the example, we are always converting "count" to a String. Why not creating a `LiveData<String>` instead?
+
+```kotlin
+// When _count is changed, we execute the code below.
+// The last line is the newValue of our LiveData<String>
+val count: LiveData<String> = Transformations.map(_count) {
+    it.toString()
+}
+```
+
+```diff
+- countTextView.text = it.toString()
++ countTextView.text = it
+```
 </div><div>
 
+#### Mediator
 
+A mediator is a LiveData that is linked to multiple LiveData. When one LiveData is updated, then the mediator is updated.
+
+➡️Increasing "a" or "b" will edit "count" with the sum of both.
+
+```
+private val a = MutableLiveData(0)
+private val b = MutableLiveData(0)
+private val mediator = MediatorLiveData<Int>()
+val count: LiveData<Int> = mediator
+
+init {
+    mediator.addSource(a) { mediator.value = it + b.value!! }
+    mediator.addSource(b) { mediator.value = it + a.value!! }
+}
+
+fun increaseCount() {
+    if ((1..10).random() > 5){
+         a.value = a.value!! + 10
+    } else {
+        b.value = b.value!! + 100
+    }
+}
+```
+
+See also [Transformations with multiple arguments](https://stackoverflow.com/questions/47572913/livedata-transformations-map-with-multiple-arguments#answer-53628300).
 </div></div>
