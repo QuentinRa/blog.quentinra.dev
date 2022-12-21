@@ -115,6 +115,53 @@ class BlankFragment : Fragment() {
 
 <hr class="sep-both">
 
+## ☕ Example ☕
+
+<div class="row row-cols-md-2"><div>
+
+First, we are defining a ViewModel
+
+```kotlin
+class MainViewModel : ViewModel() {
+    // use a backing field
+    // count is unmodifiable from the "outside"
+    var _count = MutableLiveData<Int>(0)
+    var count : LiveData<Int> = _count
+
+    // only allow count to be increased
+    fun increaseCount() {
+        _count.value = _count.value!!.inc()
+    }
+}
+```
+
+</div><div>
+
+An Activity/a fragment will link the ViewModel and the View.
+
+* ➡️ Ex: When a button is clicked, we update the ViewModel
+
+```kotlin
+val myButton = ...
+myButton.setOnClickListener {
+    viewModel.increaseCount()
+}
+```
+
+* ➡️Ex: When the ViewModel is updated, we update the View
+
+```kotlin
+val countTextView = ...
+viewModel.count.observe(viewLifecycleOwner) {
+    // it is the newValue for "count"
+    // here, we update a TextView
+    countTextView.text = it.toString()
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
