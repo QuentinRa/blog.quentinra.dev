@@ -900,33 +900,6 @@ val request = OneTimeWorkRequestBuilder<XXXWorker>()
 * **WorkManager**: take your request, and handle them
 
 <details class="details-e">
-<summary>Get access to the work manager</summary>
-
-You can call static methods
-
-```kotlin
-WorkManager.xxx()
-```
-
-But, you may also fetch the workManager instance, and call methods on it using `WorkManager.getInstance(context)`. Here, is an example in a ViewModel
-
-```kotlin
-class XXXViewModel(context: Context) : ViewModel() {
-    private val workManager = WorkManager.getInstance(context)
-}
-class XXXViewModelFactory(private val context: Context) : ViewModelProvider.Factory {
-    @Suppress("UNCHECKED_CAST")
-    override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        return MatchListViewModel(context) as T
-    }
-}
-
-// and
-private val viewModel: MatchListViewModel by activityViewModels { MatchListViewModelFactory(requireContext()) }
-```
-</details>
-
-<details class="details-e">
 <summary>Enqueue: process the request</summary>
 
 ```kotlin

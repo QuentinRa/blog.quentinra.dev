@@ -58,12 +58,12 @@ class MainActivity : AppCompatActivity() {
 
 <br>
 
-#### Other alternatives
+#### Additional notes
 
-You may use these instead of `by` <small>(delegated creation)</small>.
+<p></p>
 
-<details class="details-e">
-<summary>Use <code>ViewModelProvider</code></summary>
+<details class="details-n">
+<summary>Alternative: <code>ViewModelProvider</code></summary>
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
@@ -76,6 +76,34 @@ class MainActivity : AppCompatActivity() {
         val count = viewModel.count
     }   
 }
+```
+</details>
+
+<details class="details-n">
+<summary>Pass arguments to your ViewModel</summary>
+
+Exemple with an Integer.
+
+```kotlin
+class XXXViewModel(v: Integer) : ViewModel() {
+    // ...
+}
+```
+
+```kotlin
+class XXXViewModelFactory(private val v: Integer) : ViewModelProvider.Factory {
+    @Suppress("UNCHECKED_CAST")
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        return XXXViewModel(v) as T
+    }
+}
+```
+
+```diff
+- private val viewModel: XXXViewModel by viewModels()
++ private val viewModel: XXXViewModel by viewModels {
++    XXXViewModelFactory(10)
++}
 ```
 </details>
 </div><div>
