@@ -124,6 +124,27 @@ Android activities lifecycle is a bit complex. To summarize,
 
 <hr class="sep-both">
 
+## Random notes about activities
+
+<div class="row row-cols-md-2"><div>
+
+* Set the Activity title from the code. The title is shown is the task list, and in the default menu bar.
+
+```kotlin
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        ...
+        title = "Some title"
+    }
+}
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Navigate/open another activity
 
 <div class="row row-cols-md-2"><div>
@@ -150,7 +171,7 @@ val param = intent?.extras?.getString("param")
 ```
 </div><div>
 
-#### Internal activities
+#### Explicit intent
 
 Example to navigate to "MainActivity"
 
@@ -159,7 +180,7 @@ Example to navigate to "MainActivity"
 val intent = Intent(this, MainActivity::class.java)
 ```
 
-#### External activities
+#### Implicit intent
 
 [There is a lot of Intents here](https://developer.android.com/reference/android/content/Intent).
 
@@ -197,7 +218,7 @@ val intent = Intent(Intent.ACTION_SEND)
 </details>
 
 <details class="details-e">
-<summary>⚠️ Properly run a implicit intent ⚠️</summary>
+<summary>⚠️ Properly run an implicit intent ⚠️</summary>
 
 What if you try to open a link in a browser, but the user uninstalled every browser? It will fail. You have to handle errors!
 
@@ -227,10 +248,12 @@ if (packageManager.resolveActivity(intent, 0) != null) {
 
 <div class="row row-cols-md-2"><div>
 
-Android activities are pilled up in something called the "back stack". In older devices, users can use the "back arrow" to go back to a previous activity. The current intent is popped out, and the previous activity is started. If there are none, then the app is terminated.
+Android activities are pilled up in something called the "back stack". In older devices, users can use the "back arrow" to go back to a previous activity. The current intent is popped out, and the previous activity is started again. If there are none, then the app is terminated.
 
 ![img.png](_images/android_back_stack.png)
 </div><div>
+
+It's always the activity at the top that is shown to the user.
 
 In the example above, we got two instances of "MainActivity". It's important to consider if this behavior is acceptable or not. If not, you should pass flags to your Intent using [Intent#addFlags](https://developer.android.com/reference/android/content/Intent.html#flags).
 
@@ -245,6 +268,75 @@ intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
 
 <hr class="sep-both">
 
+## Fragments
+
+<div class="row row-cols-md-2"><div>
+
+Fragments are in many way similar to activities. They are loaded by an activity, but they have their own lifecycle.
+
+* 👉 `Activity#onCreated` was split in 3 methods
+* 👉 Some code need to be updated <small>(most "`this`" won't work...)</small>
+  * Use `requireActivity()` to get an Activity
+  * Use `activity` to get an Activity <small>(@Nullable)</small>
+
+```diff
+- val param = intent?.extras?.getString("param")
++ val intent = requireActivity().intent?.extras?.getString("param")
++ val intent = activity?.intent?.extras?.getString("param")
+```
+
+  * Use `requireContext()` to get a Context
+  * Use `context` to get a Context <small>(@Nullable)</small>
+
+```diff
+- val intent = Intent(this, MainActivity::class.java)
++ val intent = Intent(requireContext(), MainActivity::class.java)
++ val intent = Intent(context!!, MainActivity::class.java)
+```
+
+* Use `view`/`requireView()` to get a View
+
+```diff
+- val myButton = findViewById<Button>(R.id.myButton)
++ val myButton = view.findViewById<Button>(R.id.myButton)
++ val myButton = requireView().findViewById<Button>(R.id.myButton)
+```
+
+* Use `viewLifecycleOwner` to get a LifecycleOwner
+
+```diff
+- myLiveData.observe(this) {}
++ myLiveData.observe(viewLifecycleOwner) {}
+```
+</div><div>
+
+#### Create a fragment
+
+* File > New > fragment > [...]
+* Note that you can open the "new" menu from any folder
+
+```kotlin
+class BlankFragment : Fragment() {
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Load the associated View
+        return inflater.inflate(R.layout.fragment_blank, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        // See View to configure the view (listeners...)
+        // use "view.xxx()" instead of "xxx()".
+    }
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -254,5 +346,5 @@ Stuff that I found, but never read/used yet.
 ...
 </div><div>
 
-An activity has an attribute `title` to change the title of the current window/frame.
+...
 </div></div>

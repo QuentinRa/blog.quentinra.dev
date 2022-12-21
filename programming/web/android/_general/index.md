@@ -163,7 +163,8 @@ Stuff that I found, but never read/used yet.
 * Deep Link
 * Talkback
 * Tint/Dark mode
-* Advanced Data Binding, Recommanded App architecture
+* Advanced Data Binding, Recommended App architecture
+* NFC
 
 </div><div>
 

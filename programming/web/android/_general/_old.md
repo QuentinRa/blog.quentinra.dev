@@ -740,17 +740,10 @@ In your XML, you will use this newly created attribute, that is taking your valu
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-Fragments are recyclable views that can be reused in multiple activities, and they can't exist outside an activity. A simple example could be a navbar component. A fragment has its own lifecycle, which is pretty similar to the activity lifecycle.
-
 ![Fragment lifecycle](_images/android_fragment_lifecycle.png)
-
-**To create a new fragment**: File > new > fragment > ... You can actually right-click on any folder, and create one from the "new" menu.
 
 Differences with activities
 
-* `findViewById` should only be called in **onViewCreated**!
-* `requireContext()` can be used, if there are some methods not available in a Fragment, that were available in an Activity, or simply for methods requiring a context
-* use `activity?.intent?` instead of `intent` in Fragments
 * `menus`: you must use a menu provider.
 * use `viewLifecycleOwner` instead of `this`, when an owner is required
 * **Instead of `viewModels()`** which is not shared between fragments of one activity, you can use `activityViewModels()`.

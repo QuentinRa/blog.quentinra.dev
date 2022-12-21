@@ -38,8 +38,8 @@ First, add the permission in AndroidManifest.xml
 
 Then, since Android O, you need to create a **channel**. Developers should group their notifications by channels. For the user, they can do operations like disabling a notification channel.
 
-* [documentation](https://developer.android.com/develop/ui/views/notifications/channels#CreateChannel)
-* I put the code in `XXXApplication#onCreate` <small>(extends Application)</small>
+* [Create a Channel](https://developer.android.com/develop/ui/views/notifications/channels#CreateChannel)
+* I pasted the code in `XXX#onCreate` <small>(XXX extends Application)</small>
 
 See also.
 
