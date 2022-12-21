@@ -115,18 +115,70 @@ class BlankFragment : Fragment() {
 
 <hr class="sep-both">
 
-## ☕ Example ☕
+## 🌀 LiveData 🌀
 
 <div class="row row-cols-md-2"><div>
 
-First, we are defining a ViewModel
+A **LiveData** is an observable variable. It means a component can execute some code when the variable changed.
+
+They are usually used to update the View when a variable in the model changed.
+
+```gradle
+implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
+```
+
+It's worth noting that LiveData are **life-cycle aware**, so observers are only called when the app is either **Started** or **Resumed**.
+
+A **LiveData** is wrapping a type inside **value**. For instance, **LiveData<Int>** will have a **value** of type **Int**.
+
+```kotlin
+val count : LiveData<Int> = MutableLiveData<Int>(0)
+if (count.value!! == 0) {} // true
+```
+
+LiveData variables are store inside a ViewModel.
+</div><div>
+
+As **value may be null**, we need to use null-safe operators <small>(`!!`, `?`, `?:`...)</small>. The difference between a LiveData and a MutableLiveData is that in the latter, you can change `value`.
+
+```kotlin
+// count.value will be null
+val count : MutableLiveData<Int> = MutableLiveData<Int>()
+// count.value is now '10'
+count.value = 10
+```
+
+Each time **value is assigned** <small>(modifying value won't trigger observers)</small>, observers will be called. In an Activity/Fragment
+
+```kotlin
+// ➡️ In a fragment, use viewLifecycleOwner instead of this
+viewModel.count.observe(this) { newCount ->
+    // ... 
+}
+// same, but with "it" instead of "newCount"
+viewModel.count.observe(this) {
+    // ...
+}
+```
+
+</div></div>
+
+<hr class="sep-both">
+
+## ☕ Example ☕
+
+*Listeners, and everything related to Views are explained in [Views](../views/index.md).*
+
+<div class="row row-cols-md-2"><div>
+
+First, we are defining a ViewModel.
 
 ```kotlin
 class MainViewModel : ViewModel() {
     // use a backing field
     // count is unmodifiable from the "outside"
-    var _count = MutableLiveData<Int>(0)
-    var count : LiveData<Int> = _count
+    var _count = MutableLiveData(0)
+    val count : LiveData<Int> = _count
 
     // only allow count to be increased
     fun increaseCount() {
@@ -134,6 +186,8 @@ class MainViewModel : ViewModel() {
     }
 }
 ```
+
+It's important to note that you can't simply call `_count.value!!.inc()`. A livedata is only calling observe when the property `value` is assigned to a new value, not when the property is modified.
 
 </div><div>
 
@@ -158,6 +212,8 @@ viewModel.count.observe(viewLifecycleOwner) {
     countTextView.text = it.toString()
 }
 ```
+
+**Note**: using [Data binding](../views/index.md), you can avoid using observers.
 </div></div>
 
 <hr class="sep-both">

@@ -539,30 +539,6 @@ class XXXViewModel : ViewModel() {
 
 <div class="row row-cols-md-2"><div>
 
-LiveData is a Jetpack component <small>(bundled with ViewModel)</small> which is creating observables, and life-cycle aware variables. By being observables, a listener is called every time the value is changed, and by being life-cycle aware, such listener is only called if the application is "Started", or "Resumed".
-
-Instead of having a lot of calls to "xxx.text = value", or such calls to update the view when the data change, we will only update the view when the variable changed.
-
-You can use `LiveData<T>`, and `MutableLiveData<T>`.
-
-```kotlin
-class XXXViewModel : ViewModel() {
-
-    private var _list = MutableLiveData(listOf(5))
-
-    val list: LiveData<List<Int>>
-        get() = _list
-}
-```
-
-To access your nested value, use `xx.value`, or `xx.value!!`.
-
-```kotlin
-viewModel.list.observe(this) { p ->
-   // p is a List<Int>!
-}
-```
-
 <details class="details-e">
 <summary>LiveData Transformations</summary>
 
