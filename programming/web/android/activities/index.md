@@ -1,6 +1,6 @@
 # Android Activities
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2"><div class="align-self-center">
 
 From a user perspective, an activity is a view of your application.
 
@@ -26,7 +26,8 @@ import android.os.Bundle
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // Associate the View
+        // Load the associated View
+        // See View to configure the view (listeners...)
         setContentView(R.layout.activity_main)
     }
 }
@@ -94,30 +95,129 @@ In you AndroidManifest.xml, look for the tag "application", and add an attribute
 
 <hr class="sep-both">
 
-## Application life-cycle
+## Activity life-cycle
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-md-2 mt-4"><div class="align-self-center">
+
+Android activities lifecycle is a bit complex. To summarize, 
+
+* 👉 **onCreate** is where you will use the most to configure the view
+* 👉 Before presenting the activity, **onStart** is called. If the user press "home"/the activity isn't visible anymore, **onStop** is called.
+* 👉 Before allow the user to interact with the activity, **onResume** is called. If the user isn't be able to interact with the activity anymore, **onPause** is called.
+
+**onDestroy** is called
+
+* when the user closes the app
+* when the system terminate the app <small>(free up memory...)</small>
+* when it's easier to kill and recreate the app
+  * the language changed
+  * **the rotation changed** <small>(on emulated devices, after enabling screen-rotation, you can use the buttons in the bar to rotate the screen)</small>
+</div><div>
 
 ![android_application_lifecycle](_images/android_application_lifecycle.png)
 
-> Activities are started by the Application, which is the class that the user may implement, for instance, if there is a need to run code when the application starts/stop.
 
-> The Android/Activity **back-stack** refer to the fact that each new activity in you application is put on top of a stack. The activity at the top is the one displayed. If you press "back", then you will pop this activity from the stack, and move to the new head of the stack. If the stack is empty, then you go back to the home.
+**Note**: **onPause** must be lightweight, otherwise it will delay the other application that is showing up in the front screen.
+
+**Note** (2): A bundles is a **small, in-memory**, dictionary. It's passed to onCreate, if the app was recreated. See [onRestoreInstanceState](https://developer.android.com/reference/android/app/Activity#onRestoreInstanceState(android.os.Bundle)) and [onSaveInstanceState](https://developer.android.com/reference/android/app/Activity#onSaveInstanceState(android.os.Bundle)) if you want to store/load data.
+</div></div>
+
+<hr class="sep-both">
+
+## Navigate/open another activity
+
+<div class="row row-cols-md-2"><div>
+
+An [**intent**](https://developer.android.com/guide/components/intents-filters) is an object representing some action to be performed, such as navigating to another activity. There are two kinds of intents
+
+
+* **Explicit**: ask specifically for something <small>(ex: start the Activity XXX)</small>
+* **Implicit**: request another application/the system <small>(ex: open link)</small>
+
+```kotlin
+// create an intent
+val intent = Intent(SOME_PARAMETERS)
+// optional, you can pass parameters
+intent.putExtra("param", "a value")
+// start
+startActivity(intent)
+```
+
+If you passed parameters, in the new Activity, use
+
+```kotlin
+val param = intent?.extras?.getString("param")
+```
 </div><div>
 
-Android life-cycle is a bit complex. When starting an app, you go from Initialized, to Created, then Started, then Resumed.
+#### Internal activities
 
-If the app is partially visible <small>(ex: click on share/...)</small>, then you go back to "Started".
+Example to navigate to "MainActivity"
 
-If you press the home button, your app will go back to Created, until you start it again.
+```kotlin
+val intent = Intent(context, MainActivity::class.java)
+```
 
-If Android need resources, then your app may be destroyed. If there are a lot of changes <small>(ex: language changed, rotation...)</small>, then android will most likely destroy, and re-create the app.
+#### External activities
 
-You can use `onCreate(Bundle?)`, `onRestoreInstanceState(Bundle)`, to load saved data, and `onSaveInstanceState(Bundle)` to save data. A "bundle" is a **small, in-memory** dictionary, in which you can save a bit of data, that will be reloaded when the app is created, or started again.
+[There is a lot of Intents here](https://developer.android.com/reference/android/content/Intent).
 
-Code in `onPause()` must be lightweight, because it will delay the other application that is showing up in the front screen.
+<details class="details-e">
+<summary>Open a link/mail/phone</summary>
 
-> **Note**: it should be highlighted, that rotating your devices will destroy, and create again your activity. In Android Studio, don't forget to enable device rotation to try it out.
+Open a URL (`https:`), a mail (`mailto:`), or a telephone (`tel:`). For instance, given a URL, it will try to open it in a browser...
+
+```kotlin
+val intent = Intent(Intent.ACTION_VIEW, Uri.parse("???"))
+```
+</details>
+
+<details class="details-e">
+<summary>Share something</summary>
+
+```kotlin
+val intent = ShareCompat.IntentBuilder.from(this)
+        .setText("...")
+        .setType("text/plain")
+        .intent
+```
+</details>
+
+<details class="details-e">
+<summary>Send an email</summary>
+
+```kotlin
+val intent = Intent(Intent.ACTION_SEND)
+    .setType("text/plain")
+    .putExtra(Intent.EXTRA_SUBJECT, "xxx")
+    .putExtra(Intent.EXTRA_TEXT, "yyy")
+    .putExtra(Intent.EXTRA_EMAIL, "a@b.c")
+```
+</details>
+
+<details class="details-e">
+<summary>⚠️ Properly run a implicit intent ⚠️</summary>
+
+What if you try to open a link in a browser, but the user uninstalled every browser? It will fail. You have to handle errors!
+
+* Option 1: check if the startActivity fails
+
+```kotlin
+try {
+    startActivity(intent)
+} catch (ex: ActivityNotFoundException) {
+    // use a toast / ...
+}
+```
+
+* Option 2: check before starting the intent
+
+```kotlin
+if (packageManager.resolveActivity(intent, 0) != null) {
+    startActivity(intent)
+}
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
@@ -131,5 +231,7 @@ Stuff that I found, but never read/used yet.
 ...
 </div><div>
 
+The Android/Activity **back-stack** refer to the fact that each new activity in you application is put on top of a stack. The activity at the top is the one displayed. If you press "back", then you will pop this activity from the stack, and move to the new head of the stack. If the stack is empty, then you go back to the home.
 
+An activity has an attribute `title` to change the title of the current window/frame.
 </div></div>
