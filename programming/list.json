@@ -146,8 +146,8 @@
               "hidden": false
             },
             {
-              "tag": "web/android/view-model/index.md",
-              "name": "View-Model",
+              "tag": "web/android/viewmodel/index.md",
+              "name": "ViewModel",
               "desc": "...",
               "icon": "<i class=\"bi bi-android\"></i>",
               "hidden": false
