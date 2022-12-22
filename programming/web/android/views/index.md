@@ -108,6 +108,10 @@ And these attributes are available on any View
     tools:text="Shown in the DesignView"
     />
 ```
+
+##### Button: a button
+
+[Button extends TextView](https://developer.android.com/reference/android/widget/Button).
 </div><div>
 
 ##### ImageView: display an image
@@ -115,11 +119,35 @@ And these attributes are available on any View
 [ImageView extends View](https://developer.android.com/reference/android/widget/ImageView)
 
 ```
+<!-- scaleType="centerCrop" is used for 9patches scaling -->
 <ImageView 
     tools:srcCompat="YOUR_IMAGE"
     android:scaleType="centerCrop"
     />
-<!-- centerCrop = 9patches scaling -->
+```
+
+##### EditText: an input field
+
+[EditText extends TextView](https://developer.android.com/reference/android/widget/EditText). See also [InputType](https://developer.android.com/develop/ui/views/touch-and-input/keyboard-input/style) and [Autofill](https://developer.android.com/guide/topics/text/autofill-optimize).
+
+```
+<EditText
+    android:inputType="text"
+    android:autofillHints="username"
+    android:hint="Placeholder in the app"
+    tools:hint="Placeholder in the DesignView"
+    />
+```
+
+##### Switch: check or uncheck
+
+[Switch extends Button](https://developer.android.com/reference/android/widget/Switch) <small>(indirectly)</small> and [SwitchCompat](https://developer.android.com/reference/androidx/appcompat/widget/SwitchCompat).
+
+```
+<Switch android:checked="true" />
+<!-- ✅ better -->
+<androidx.appcompat.widget.SwitchCompat
+    android:checked="true" />
 ```
 </div></div>
 
@@ -181,7 +209,7 @@ To change the behavior of how the free space is handled, simply edit the layout 
 
 <hr class="sep-both">
 
-## Calling views in the code
+## 🔗 Get access to a view from the code 🖇️
 
 <div class="row row-cols-md-2"><div>
 
@@ -193,6 +221,8 @@ You can then use `findViewById(some_id)` to get a view.
 ```
 
 ```kotlin
+// ➡️ In Activity#onCreate
+// ➡️ In Fragment#onViewCreated
 val x = findViewById<SomeViewHere>(R.id.someUniqIdHere)
 ```
 
@@ -202,6 +232,15 @@ val x = findViewById<SomeViewHere>(R.id.someUniqIdHere)
 var t = findViewById<TextView>(...)
 t.text = "Some text"
 t.setText(R.string.some_string)
+```
+
+#### Button
+
+```kotlin
+val b = findViewById<Button>(...)
+b.setOnClickListener {
+    println("Clicked on myButton")
+}
 ```
 </div><div>
 
@@ -213,7 +252,25 @@ var i = findViewById<ImageView>(...)
 i.setImageResource(R.drawable.some_drawable_here)
 ```
 
-...
+#### EditText
+
+```kotlin
+val e = findViewById<EditText>(...)
+// handle key events
+e.setOnKeyListener { v, keyCode, keyEvent ->
+    if (keyCode == KeyEvent.KEYCODE_A) {
+        return@setOnKeyListener true
+    }
+    return@setOnKeyListener false
+}
+```
+
+#### Switch/SwitchCompact
+
+```kotlin
+var s = findViewById<SwitchCompact>(...)
+if(s.isChecked) {}
+```
 </div></div>
 
 
@@ -241,6 +298,17 @@ android {
 
 </div><div>
 
+Assume that we have a XML with file with
+
+```xml
+<SomeViewHere
+    android:id="@+id/someUniqIdHere"
+    ...
+/>
+```
+
+This is how you could adapt your previous code with `findViewById`.
+
 <details class="details-e">
 <summary>Ex: activity_main.xml in an Activity</summary>
 
@@ -267,9 +335,12 @@ class MainActivity : AppCompatActivity() {
 
 ```diff
 class BlankFragment : Fragment() {
++    private lateinit var binding: FragmentBlankBinding
 
     override fun onCreateView(...): View? {
 -        return inflater.inflate(R.layout.fragment_blank, container, false)
++        binding = FragmentBlankBinding.inflate(layoutInflater, container, false)
++        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -301,7 +372,9 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-...
+* [RadioButton](https://developer.android.com/reference/android/widget/RadioButton), and [RadioGroup](https://developer.android.com/reference/android/widget/RadioGroup)
+  * RadioGroup#`checkedButton`
+  * RadioGroup#`setOnCheckedChangeListener`: parameters are radio group, and the Id of the checked button.
 </div><div>
 
 

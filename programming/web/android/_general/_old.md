@@ -33,123 +33,6 @@ Then, using **Data binding**, you can directly use your LiveData in your XML, th
 * `contentDescription`: what's the purpose of this element
 * `importantForAccessibility`: if this element is just decorative, you can set it to no
 * <small>Don't forget to update `contentDescription`, or any accessibility-related attributes, if needed.</small>, if updating an image from the code/dynamically
-</div><div>
-
-* [**RecyclerView**](layouts/RecyclerView.md): not a ViewGroup, but an efficient way of displaying a flexible list of elements.
-
-<details class="details-e">
-<summary>Display a button with <code>Button</code></summary>
-
-* **Inheritance**: Button extends TextView
-* **Documentation**: [Button](https://developer.android.com/reference/android/widget/Button)
-
-**Useful attributes**
-
-* ...
-
-**useful methods**
-
-* `setOnClickListener`
-</details>
-
-<details class="details-e">
-<summary>Display a RadioButton  with <code>RadioButton+RadioGroup</code></summary>
-
-* **Inheritance**: RadioButton extends Button <small>(CompoundButton to be fair)</small>, RadioGroup extends LinearLayout
-* **Documentation**: [RadioButton](https://developer.android.com/reference/android/widget/RadioButton), and [RadioGroup](https://developer.android.com/reference/android/widget/RadioGroup)
-
-RadioGroup is a ViewGroup used to ensure that only one RadioButton can be selected at a time.
-
-**Useful attributes**
-
-* RadioGroup#`checkedButton`
-
-**useful methods**
-
-* RadioGroup#`setOnCheckedChangeListener`: parameters are radio group, and the Id of the checked button.
-</details>
-
-<details class="details-e">
-<summary>Display a switch  with <code>Switch</code></summary>
-
-* **Inheritance**: Switch extends Button <small>(CompoundButton to be fair)</small>
-* **Documentation**: [Switch](https://developer.android.com/reference/android/widget/Switch)
-
-**Useful attributes**
-
-* `checked`
-
-**useful methods**
-
-* `isChecked`
-</details>
-
-<details class="details-e">
-<summary>Display a text field  with <code>EditText</code></summary>
-
-* **Inheritance**: EditText extends TextView
-* **Documentation**: [EditText](https://developer.android.com/reference/android/widget/EditText)
-
-**Useful attributes**
-
-* `inputType`: determine the [keyboard](https://developer.android.com/develop/ui/views/touch-and-input/keyboard-input/style). Can use multiple types.
-* `hint`: placeholder
-
-**useful methods**
-
-* ...
-</details>
-</div></div>
-
-<hr class="sr">
-
-## Material Design
-
-Material design is a library of pre-made components. Google recommends to use Material UI components as much as possible.
-The list [of Material components for Android can be found here](https://material.io/components?platform=android).
-
-* Text field: `TextInputLayout` (see [text field](https://material.io/components/text-fields/android#using-text-fields))
-* Switch: `SwitchMaterial` (create a switch, change the type in the .xml)
-* EditText: `TextInputLayout`. There is a builtin feature to display errors (see `error`, and `isErrorEnabled`)
-
-<hr class="sl">
-
-## Resources
-
-<div class="row row-cols-md-2 mx-0"><div>
-
-Every folder in `res` may have multiples "copies" for different devices/languages. For instance, if there is a view for large screen devices, it will be used instead of the view made of "every" device.
-
-* [strings.xml](values/strings.md): how to properly handle texts, and localization
-* [arrays.xml](values/arrays.md): handle arrays of strings/integers
-
-</div><div>
-
-<details class="details-e">
-<summary>Access resource's (view...) Id in the code</summary>
-
-Each resource may have an id. The main class `R` is managing every id trough subclasses such as `drawable`. If you want a drawable with the id `ic_launcher_foreground` do:
-
-```kotlin
-val drawableId : Int = R.drawable.myDrawable
-val viewId : Int = R.id.hello_world
-```
-</details>
-
-If you write in your code a method taking an id, then you can check if this id has the "right" type using annotation, as every id is an int. Add `@StringRes`, `@DrawableRes`, or `@LayoutRes` before a variable, a parameter, or an attribute.
-
-```kotlin
-fun loadIcon(@DrawableRes drawableId: Int) {
-    val drawable = AppCompatResources.getDrawable(this, drawableId)
-}
-```
-</div></div>
-
-<hr class="sr">
-
-## Useful stuff
-
-<div class="row row-cols-md-2 mt-4"><div>
 
 <details class="details-e">
 <summary>Menus</summary>
@@ -206,7 +89,7 @@ class XXXMenuProvider : MenuProvider {
 }
 ```
 
-Then, in any fragment, or activity using this menu 
+Then, in any fragment, or activity using this menu
 
 ```kotlin
 // FOR A FRAGMENT
@@ -217,38 +100,47 @@ addMenuProvider(RefreshMenuProvider(), this, Lifecycle.State.RESUMED)
 </details>
 </div><div>
 
-As in Java, you have listeners which are called when an event is triggered (ex: `click on a button`).
+* [**RecyclerView**](layouts/RecyclerView.md): not a ViewGroup, but an efficient way of displaying a flexible list of elements.
+
+Material design is a library of pre-made components. Google recommends to use Material UI components as much as possible.
+The list [of Material components for Android can be found here](https://material.io/components?platform=android).
+
+* Text field: `TextInputLayout` (see [text field](https://material.io/components/text-fields/android#using-text-fields))
+* Switch: `SwitchMaterial` (create a switch, change the type in the .xml)
+* EditText: `TextInputLayout`. There is a builtin feature to display errors (see `error`, and `isErrorEnabled`)
+</div></div>
+
+<hr class="sl">
+
+## Resources
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+Every folder in `res` may have multiples "copies" for different devices/languages. For instance, if there is a view for large screen devices, it will be used instead of the view made of "every" device.
+
+* [strings.xml](values/strings.md): how to properly handle texts, and localization
+* [arrays.xml](values/arrays.md): handle arrays of strings/integers
+
+</div><div>
 
 <details class="details-e">
-<summary>OnClickListener (click on a button)</summary>
+<summary>Access resource's (view...) Id in the code</summary>
 
-Example for "OnClickListener", a listener added on a button, that is called when a user click on it.
+Each resource may have an id. The main class `R` is managing every id trough subclasses such as `drawable`. If you want a drawable with the id `ic_launcher_foreground` do:
 
 ```kotlin
-val myButton: Button = findViewById(R.id.myButton)
-myButton.setOnClickListener {
-    println("Clicked on myButton")
-}
+val drawableId : Int = R.drawable.myDrawable
+val viewId : Int = R.id.hello_world
 ```
 </details>
 
-<details class="details-e">
-<summary>OnKeyListener (click on a key)</summary>
-
-Example for "OnKeyListener", a listener added on a input field, that is called when a user press a key. The function takes a view, a keycode, and a keyEvent, and returns true if the event was handled.
+If you write in your code a method taking an id, then you can check if this id has the "right" type using annotation, as every id is an int. Add `@StringRes`, `@DrawableRes`, or `@LayoutRes` before a variable, a parameter, or an attribute.
 
 ```kotlin
-val myEditText: EditText = findViewById(R.id.myEditText)
-myEditText.setOnKeyListener { v, keyCode, keyEvent ->
-    // if A pressed
-    if (keyCode == KeyEvent.KEYCODE_A) {
-        // ...
-        return@setOnKeyListener true
-    }
-    return@setOnKeyListener false
+fun loadIcon(@DrawableRes drawableId: Int) {
+    val drawable = AppCompatResources.getDrawable(this, drawableId)
 }
 ```
-</details>
 </div></div>
 
 <hr class="sr">
@@ -421,29 +313,6 @@ In your XML, you will use this newly created attribute, that is taking your valu
 *[Navigation component (guide)](https://developer.android.com/guide/navigation/navigation-getting-started)*
 
 <div class="row row-cols-md-2 mt-4"><div>
-
-<details class="details-e">
-<summary>Fragment + ViewBinding</summary>
-
-```kotlin
-class XXXFragment : Fragment() {
-    private lateinit var binding: FragmentXXXBinding
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        binding = FragmentXXXBinding.inflate(layoutInflater, container, false)
-        return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val xxx = binding.xxx
-        // ...
-    }
-}
-```
-</details>
 
 The **navigation component** is a collection of libs simplifying android navigation. For instance, for a bottom navigation, you would want to click on icons, and move from one screen to another. In such case, the navigation component would handle for you stuff like highlighting the current menu.
 
