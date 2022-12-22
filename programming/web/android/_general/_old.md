@@ -683,7 +683,6 @@ class XXXFragment : Fragment() {
 }
 ```
 </details>
-</div><div>
 
 The **navigation component** is a collection of libs simplifying android navigation. For instance, for a bottom navigation, you would want to click on icons, and move from one screen to another. In such case, the navigation component would handle for you stuff like highlighting the current menu.
 
@@ -702,13 +701,14 @@ apply plugin: 'androidx.navigation.safeargs.kotlin'
 implementation "androidx.navigation:navigation-fragment-ktx:2.5.2"
 implementation "androidx.navigation:navigation-ui-ktx:2.5.2":2.5.2"
 ```
+</div><div>
 
 <details class="details-e">
 <summary>NavHost: view where fragments are displayed</summary>
 
 The **NavHost** is a container that you will put in your activity.xml, that will be filled with the current fragment being displayed.
 
-It will be linked to a **Navigation graph**, which will handle filling the container with the right fragment. If you are familiar with Java, this is the same as a CardLayout. 
+It will be linked to a **Navigation graph**, which will handle filling the container with the right fragment. If you are familiar with Java, this is the same as a CardLayout.
 
 Open your `activity.xml`
 
@@ -816,241 +816,5 @@ Within the Navigation Graph, there are attributes "popUpTo", and "popUpToInclusi
 * Now, `E` navigate to `A` would be that we will have `AA`
 * The job was done, but since `A` isn't included in the "pop up" operation, there is two '`A`'. You could fix that with `popUpToInclusive=true`
 * Now, `E` navigate to `A` would be that we will only have `A`
-</details>
-</div></div>
-
-<hr class="sl">
-
-## WorkManager
-
-<div class="row row-cols-md-2"><div>
-
-</div><div>
-
-<br>
-
-<details class="details-e">
-<summary>Input, pass, and output data</summary>
-
-Cases are 
-
-* passing data from your code to a worker
-* passing data from a worker to another
-* access the result/output of a worker
-
-A request may take data, and if chaining requests, it this data may be modified, and will be passed to the next ones. You may observe the worker too (explained later), and fetch the output of a worker.
-
-First, define what is the dictionary=data that will be passed to a worker
-
-```kotlin
-// example are with strings
-// but, the type is <String, *>
-val data = Data.Builder()
-    // "key" should be a const, not hard-coded
-    .putString("key", "value")
-    .build()
-// or,
-val data = workDataOf("key" to "value", "key2" to "value2")
-```
-
-When creating a request, use the Builder, with `setInputData`
-
-```kotlin
-val request = OneTimeWorkRequestBuilder<XXXWorker>()
-    .setInputData(data)
-    .build()
-```
-
-In your workers, you can use `inputData` to access the dictionary
-
-```kotlin
-inputData.getString(key)
-```
-
-And, you can pass a new dictionary upon exit, that will be merged with the existing `inputData` dictionary! New workers will have this updated dictionary as `inputData`. **Observers will have access to it too**.
-
-```kotlin
-Result.success(workDataOf(key to value))
-```
-</details>
-
-<details class="details-e">
-<summary>Unique work chains</summary>
-
-A unique work chain is identified by an `ID`, and there will only be ONE work chain with this `ID` at a time.
-
-* `enqueue(request)` $\to$ `enqueueUniqueWork(ID, policy, request)`
-* `beginWith(request)` $\to$ `beginUniqueWork(ID, policy, request)`
-
-Policies are
-
-* **ExistingWorkPolicy.REPLACE**: cancel previous work (if any), and start this one
-* **ExistingWorkPolicy.KEEP**: if there is a pending work, do not start this one
-* **ExistingWorkPolicy.APPEND**: chain to existing if any, otherwise start a new chain
-
-> **Note**: `TAG` should definitely be a `const`.
-</details>
-
-<details class="details-e">
-<summary>Periodic Request</summary>
-
-Everything is the same as a OneTimeRequest, except that they can take an interval which is the amount of time between two requests, that the work manager will try to enforce. **This interval should be at least 15 minutes**, for tasks less than 15 minutes, you should look for other alternatives such as "periodic" coroutines/flows, and services.
-
-```kotlin
-// every 15 hours
-val request = 
-    PeriodicWorkRequestBuilder<XXXWorker>(15, TimeUnit.HOURS)
-    .build()
-workManager.enqueueUniquePeriodicWork(UNIQUE_WORK_ID, ExistingPeriodicWorkPolicy.REPLACE, request)
-```
-
-</details>
-</div></div>
-
-<hr class="sl">
-
-## Nice, or bad notes
-
-**Disclaimer**: this section is the result of my own research for hours, without finding any better way to do what I had to do, so you should try to look for more suitable alternatives, if any.
-
-<div class="row row-cols-md-2"><div>
-
-* I had to update my view **every 60 seconds** after fetching the API, in an architecture MVVM, so in which I use a viewModel, **livedata** with DataBinding, AND this update had to be run only if the app is on the **foreground**
-
-<details class="details-e">
-<summary>Trying using flows (fail)</summary>
-
-*[See the flow documentation](https://developer.android.com/kotlin/flow)*
-
-Flows are methods that may return more than one result, something like a method having multiple returns, and each time you call it, the method will resume itself until the next return, if any. **A flow returns every time `emit(data)` is called.
-
-```kotlin
-fun periodicRefreshFlow() = flow {
-    emit(1)
-    delay(5000) // wait 5 seconds
-    emit(2)
-    // ...
-}
-```
-
-You would, according to StackOverflow, do something like that to run a flow every 60 seconds. While it works, and the result is a LiveData, so we can do as we always do, a flow would be cancelled everytime the app is put to the background, or simply by rotating the screen. We could patch that by giving a timeout to "asLiveData", but by doing that, the flow will continue to be run while the app is in the background, until the timeout that is, but a service would be more appropriate if that was the goal.
-
-```kotlin
-// implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
-val myLiveData : LiveData<Int> = flow {
-    while (true) {
-        val data : Int = 0 /* fetch from the api some data */
-        emit(data) // send
-        delay(60000) // wait 60 seconds
-    }
-}.asLiveData()
-```
-</details>
-
-<details class="details-e">
-<summary>Using coroutines (success)</summary>
-
-After failing successfully with flows, I through of applying the "while(true)" inside a coroutine. This was a failure too, because the coroutine was still executed while the app was in the background.
-
-But, I found a solution by extract the "while", and the logic of automatic refresh from the view model. First, do a method "refreshXXX" as usual.
-
-```kotlin
-fun refreshXXX() {
-        viewModelScope.launch {
-            // do your job as usual
-            val data = // fetch from the api
-            myLiveData.value = data
-        }
-}
-```
-
-Then, the caller will have to call `refreshXXX()` every 60 seconds. If this code is inside your main activity, then the update loop will be executed only if the activity is started ([source](https://stackoverflow.com/questions/60672406/how-to-use-coroutine-in-kotlin-to-call-a-function-every-second#answer-60673320)).
-
-```kotlin
-lifecycleScope.launch {
-    repeatOnLifecycle(Lifecycle.State.STARTED) {
-        while (true) {
-            viewModel.refreshXXX()
-            delay(60000)
-        }
-    }
-}
-```
-</details>
-
-I didn't manage to do it with services because it did not seem possible, nor intended to, that services could communicate with a viewModel. There was also the fact that any solution was also using an "update loop with a while/delay", but none were shorter than the solution I found... Especially, as I had to run the code only in the foreground.
-</div><div>
-
-* I had to run some **code every 10 seconds**, **only when the app is in the background** (not closed, nor in the foreground), fetching data from the API, and showing notifications if any
-
-I used a sort of trick/workaround that is starting a Worker when the application is on the background, and stopping the worker when the application is back on the foreground.
-
-<details class="details-e">
-<summary>Starting the worker when the app is on the background</summary>
-
-Create a file (ex: MainApplication). This class, once linked to the AndroidManifest, will override the default application, which is the one starting activities, and stuff. By using a listener on its methods onStart, onStop, you have a more reliable way of knowing that the app is in the foreground/background ([source](https://stackoverflow.com/questions/3667022/checking-if-an-android-application-is-running-in-the-background#answer-48767617
-)).
-
-> If you did that in an activity, such methods are called every time the screen rotate... as per android activity lifecycle.
-
-```kotlin
-class MainApplication : Application(), DefaultLifecycleObserver {
-    private lateinit var workManager : WorkManager
-
-    override fun onCreate() {
-        super<Application>.onCreate()
-        ProcessLifecycleOwner.get().lifecycle.addObserver(this)
-        workManager = WorkManager.getInstance(applicationContext)
-    }
-
-    override fun onStart(owner: LifecycleOwner) {
-        // App in foreground
-        Log.d("YOUR_TAG", "in foreground")
-        workManager.cancelUniqueWork(UNIQUE_WORK_NAME)
-    }
-
-    override fun onStop(owner: LifecycleOwner) {
-        //App in background
-        Log.d("YOUR_TAG", "in background")
-        workManager.enqueueUniqueWork(
-            UNIQUE_WORK_NAME,
-            ExistingWorkPolicy.REPLACE,
-            OneTimeWorkRequest.from(XXXWorker::class.java)
-        )
-    }
-    
-    companion object {
-        const val UNIQUE_WORK_NAME = "toto"
-    }
-}
-```
-
-Edit AndroidManifest to indicate the app to use your application
-
-```xml
-<!-- add android:name linking to your newly create file -->
-<activity
-    android:name=".MainActivity"
-/>
-```
-</details>
-
-<details class="details-e">
-<summary>XXXWorker</summary>
-
-I used a CoroutineWorker to run async tasks, in an update loop. As the worker is cancelled when the app go back to the foreground, there is no need for a return/break.
-
-```Kotlin
-class XXXWorker(c: Context, args: WorkerParameters) : CoroutineWorker(c, args) {
-    override suspend fun doWork(): Result {
-        while (true) {
-            // do task
-            // every 10 seconds
-            delay(10000)
-        }
-    }
-}
-```
-
 </details>
 </div></div>

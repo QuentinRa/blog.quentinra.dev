@@ -186,12 +186,6 @@
 				"icon": "<i class=\"bi bi-globe\"></i>"
 			},
 			{
-				"tag": "info/very_old/node/index.md",
-				"name": "Node.js",
-				"desc": "Learn how you could use node to handle server-side logic, creating an API, or even creating an application with electron.",
-				"icon": "<i class=\"bi bi-tropical-storm\"></i>"
-			},
-			{
 				"tag": "info/low-level/system_calls/index.md",
 				"name": "System calls",
 				"desc": "Learn about the most-used system calls.",

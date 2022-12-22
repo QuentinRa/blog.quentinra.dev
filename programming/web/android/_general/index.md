@@ -182,6 +182,30 @@ Stuff that I found, but never read/used yet.
 * Advanced Data Binding, Recommended App architecture
 * NFC
 
+```kotlin
+// https://stackoverflow.com/questions/60672406/how-to-use-coroutine-in-kotlin-to-call-a-function-every-second#answer-60673320
+lifecycleScope.launch {
+    repeatOnLifecycle(Lifecycle.State.STARTED) {
+        while (true) {
+            viewModel.refreshXXX()
+            delay(60000)
+        }
+    }
+}
+```
+
+```kotlin
+// implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
+val myLiveData : LiveData<Int> = flow {
+    while (true) {
+        val data : Int = 0 /* fetch from the api some data */
+        emit(data) // send
+        delay(60000) // wait 60 seconds
+    }
+}.asLiveData()
+```
+
+A [flow](https://developer.android.com/kotlin/flow) is canceled when the app goes to background/rotating the screen. We could patch that by giving a timeout to "asLiveData", but by doing that, the flow will continue to be run while the app is in the background, until the timeout that is.
 </div><div>
 
 * [Android compose](https://developer.android.com/courses/android-basics-compose/course)
@@ -199,6 +223,12 @@ recyclerView.apply {
 
 val preferences: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
 if (preferences.getBoolean("key", false)) {}
+
+while (true) {
+    // do task
+    // every 10 seconds
+    delay(10000)
+}
 ```
 
 > See also: **[Old notes](_old.md)**

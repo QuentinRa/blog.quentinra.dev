@@ -120,6 +120,8 @@ val request = OneTimeWorkRequest.from(XXXWorker::class.java)
 val request = OneTimeWorkRequestBuilder<XXXWorker>().build()
 ```
 
+See also **PeriodicWorkRequest** below.
+
 #### Run a WorkRequest
 
 A work manager is taking a **WorKRequest** and run it.
@@ -170,6 +172,47 @@ This can be used to find work requests by tag.
 val request = OneTimeWorkRequestBuilder<XXXWorker>()
 +    .addTag(TAG)
     .build()
+```
+
+</details>
+
+<details class="details-e">
+<summary>Pass data to a worker, between worker, or return a result</summary>
+
+The data passed is a dictionary.
+
+```kotlin
+// ✅ good practice (in a companion object...)
+private const val KEY = "key"
+private const val KEY2 = "key2"
+// ➡️ Using Data.Builder
+val someData = Data.Builder()
+    .putString(KEY, "value")
+    .putInt(KEY2, 5000)
+    .build()
+// ➡️ Using workDataOf
+val someData = workDataOf(KEY to "value", KEY2 to 5000)
+```
+
+To pass data to the first task, use
+
+```diff
+val request = OneTimeWorkRequestBuilder<XXXWorker>()
++    .setInputData(someData)
+    .build()
+```
+
+Inside a worker, to get data, use
+
+```kotlin
+inputData.getString(key)
+...
+```
+
+To pass data to the following task if any, or to any observer
+
+```kotlin
+Result.success(someData)
 ```
 
 </details>
@@ -226,5 +269,43 @@ workManager.cancelWorkById(uuid)
 workManager.cancelAllWorkByTag(TAG)
 ```
 
+</details>
+
+<details class="details-e">
+<summary>Unique WorkRequests</summary>
+
+If you want to ensure there is **up to one** WorkRequest running at a time, you can use **unique work chains**.
+
+```diff
+// ✅ good practice (in a companion object...)
+private const val WID = "SOME_ID"
+
+// process a request
+-workManager.enqueue(request)
++workManager.enqueueUniqueWork(WID, policy, request)
+// chain requests
+-workManager.beginWith(request)
++workManager.beginUniqueWork(WID, policy, request)
+    .then(request).then(request)/*...*/.build()
+```
+
+The policy is one of these
+
+* **ExistingWorkPolicy.REPLACE**: cancel previous job then start
+* **ExistingWorkPolicy.KEEP**: only start if there is no pending job
+* **ExistingWorkPolicy.APPEND**: process after the previous unique work chain is finished
+</details>
+
+<details class="details-e">
+<summary>PeriodicWorkRequest</summary>
+
+You can use **PeriodicWorkRequest** for requests that should be executed every X minutes, X being greater than 15.
+
+```kotlin
+// every 15 hours
+val request = PeriodicWorkRequestBuilder<XXXWorker>(15, TimeUnit.HOURS) .build()
+// and you need to use
+workManager.enqueueUniquePeriodicWork(WID, ExistingPeriodicWorkPolicy.REPLACE, request)
+```
 </details>
 </div></div>
