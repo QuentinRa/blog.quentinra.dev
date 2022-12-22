@@ -168,6 +168,11 @@ val request = OneTimeWorkRequestBuilder<XXXWorker>()
 
 This can be used to find work requests by tag.
 
+```kotlin
+// ✅ good practice (in a companion object...)
+private const val TAG = "SOME_TAG"
+```
+
 ```diff
 val request = OneTimeWorkRequestBuilder<XXXWorker>()
 +    .addTag(TAG)
@@ -223,9 +228,9 @@ Result.success(someData)
 ```kotlin
 private val _work : LiveData<List<WorkInfo>>
 
-_work = workManager.getWorkInfosForUniqueWorkLiveData(ID)
+_work = workManager.getWorkInfosForUniqueWorkLiveData(WID)
 _work = workManager.getWorkInfoByIdLiveData(uuid)
-_work = workManager.getWorkInfosByTagLiveData(tag)
+_work = workManager.getWorkInfosByTagLiveData(TAG)
 ```
 
 The LiveData contains a list of WorkInfo, one per worker.
@@ -264,7 +269,7 @@ viewModel.work.observe(viewLifecycleOwner) {
 
 ```kotlin
 workManager.cancelAllWork()
-workManager.cancelUniqueWork(ID)
+workManager.cancelUniqueWork(WID)
 workManager.cancelWorkById(uuid)
 workManager.cancelAllWorkByTag(TAG)
 ```
@@ -276,10 +281,12 @@ workManager.cancelAllWorkByTag(TAG)
 
 If you want to ensure there is **up to one** WorkRequest running at a time, you can use **unique work chains**.
 
-```diff
+```kotlin
 // ✅ good practice (in a companion object...)
 private const val WID = "SOME_ID"
+```
 
+```diff
 // process a request
 -workManager.enqueue(request)
 +workManager.enqueueUniqueWork(WID, policy, request)
@@ -308,4 +315,59 @@ val request = PeriodicWorkRequestBuilder<XXXWorker>(15, TimeUnit.HOURS) .build()
 workManager.enqueueUniquePeriodicWork(WID, ExistingPeriodicWorkPolicy.REPLACE, request)
 ```
 </details>
+</div></div>
+
+<hr class="sep-both">
+
+## 🪁 InputManager 🪁
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+**Hide keyboard**
+
+```kotlin
+val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+// ➡️ Activity
+inputMethodManager.hideSoftInputFromWindow(currentFocus!!.windowToken, 0)
+// ➡️ Fragment
+inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
+```
+</div><div>
+
+</div></div>
+
+<hr class="sep-both">
+
+## 📧 Dialogs 📧
+
+<div class="row row-cols-md-2"><div>
+
+Dialogs are made of a title (optional), a message, and some buttons (accept/close). Clicking on any button will close the popup.
+
+![Android dialog](_images/dialogs.png)
+
+```kotlin
+MaterialAlertDialogBuilder(this)
+    .setTitle("XXX")
+    .setMessage("YYY")
+    .setNegativeButton("Button1") { _, _ ->
+        // execute some code when Button1 is pressed
+    }
+    .setPositiveButton("Button2") { _, _ ->
+        // execute some code when Button2 is pressed
+    }
+    .show()
+```
+</div><div>
+
+#### Non-cancelable dialogs
+
+It may be worth noting that users can close the dialog by using the "back" arrow, which was removed on newer devices. To prevent this:
+
+```diff
+MaterialAlertDialogBuilder(this)
+    [...]
++    .setCancelable(false)
+    .show()
+```
 </div></div>

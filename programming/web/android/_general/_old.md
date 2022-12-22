@@ -125,8 +125,6 @@ Every folder in `res` may have multiples "copies" for different devices/language
 
 </div><div>
 
-**Access resources in the code**
-
 <details class="details-e">
 <summary>Access resource's (view...) Id in the code</summary>
 
@@ -152,43 +150,6 @@ fun loadIcon(@DrawableRes drawableId: Int) {
 ## Useful stuff
 
 <div class="row row-cols-md-2 mt-4"><div>
-
-<details class="details-e">
-<summary>Keyboard</summary>
-
-You can get an `` which is handling the input of the application with
-
-```kotlin
-val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-```
-
-**Hide keyboard** (given a view)
-
-```kotlin
-inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
-```
-
-</details>
-
-<details class="details-e">
-<summary>Dialogs (Popups)</summary>
-
-Dialogs are made of a title (optional), a message, and some buttons (accept/close). Clicking on any button will close the popup.
-
-```kotlin
- MaterialAlertDialogBuilder(this)
-    .setTitle("XXX")
-    .setMessage("YYY")
-    // by default, pressing "back" closes the popup
-    .setCancelable(false)
-    .setNegativeButton("Button1") { _, _ ->
-    }
-    .setPositiveButton("Button2") { _, _ ->
-    }
-    .show()
-```
-
-</details>
 
 <details class="details-e">
 <summary>Menus</summary>
