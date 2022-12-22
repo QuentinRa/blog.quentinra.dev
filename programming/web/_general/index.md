@@ -12,7 +12,6 @@ Stuff that I found, but never read/used yet.
 
 **Random**
 
-* ssl
 * CDNs ([keycdn](https://www.keycdn.com/))
 * semantic web ([protege](https://protege.stanford.edu/))
 * progressive web apps
@@ -23,4 +22,10 @@ SEO
 
 * [nitropack](https://nitropack.io/)
 * [statshow](https://www.statshow.com/) (stats)
+
+SSL
+
+```
+sudo certbot --apache --cert-name xxx.com -d xxx.com -d www.xxx.com
+```
 </div></div>

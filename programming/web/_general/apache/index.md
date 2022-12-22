@@ -18,7 +18,10 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-...
+```
+sudo chown www-data:www-data .
+sudo service apache2 restart
+```
 </div><div>
 
 

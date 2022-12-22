@@ -807,7 +807,40 @@ Stuff that I found, but never read/used yet.
 * ELF
 * Cron `cron` process to schedule tasks, with crontab/crontab -l / Automated tasks in Linux / https://crontab-generator.org/ / https://crontab.guru/ / edit `crontab -e` / https://www.crontabs.org/
 * [tcsh](https://www.ibm.com/docs/en/zos/2.3.0?topic=shells-writing-tcsh-shell-scripts)
-* ArchTitus
+* [ArchTitus](https://github.com/ChrisTitusTech/ArchTitus)
+
+<details class="details-e">
+<summary>Services</summary>
+
+```bash
+sudo systemctl stop xxx.service 
+sudo vim /etc/systemd/system/xxx.service 
+sudo systemctl status xxx.service 
+sudo systemctl daemon-reload
+sudo systemctl start xxx.service
+sudo systemctl status xxx.service
+```
+
+```ini
+[Unit]
+Description="Some nice description here"
+
+[Service]
+ExecStart=/usr/local/bin/nodemon /home/bye/index.js
+WorkingDirectory=/home/bye/
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+; examples
+SyslogIdentifier=byebye
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
+```
+</details>
+
 </div><div>
 
 * [linuxhandbook](https://linuxhandbook.com/)
@@ -821,4 +854,5 @@ Stuff that I found, but never read/used yet.
 * [oreilly](https://www.oreilly.com/library/view/linux-command-line/9780470251287/)
 * [tldp](https://tldp.org/guides.html)
 * [linuxshelltips](https://www.linuxshelltips.com/)
+* [shellhacks](https://www.shellhacks.com)
 </div></div>
