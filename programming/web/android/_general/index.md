@@ -225,7 +225,6 @@ A [flow](https://developer.android.com/kotlin/flow) is canceled when the app goe
 </details>
 
 ```kotlin
-ViewModelProvider(this)[XXXViewModel::class.java]
 recyclerView.apply {
     layoutManager = GridLayoutManager(requireContext(), 2)
 }
