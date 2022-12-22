@@ -54,6 +54,67 @@ Instead of editing the XML manually, you will usually use the Design mode.
 
 <hr class="sep-both">
 
+## Views
+
+<div class="row row-cols-md-2"><div>
+
+In Android, every composant such as an Image is called a **View**.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Layouts
+
+<div class="row row-cols-md-2"><div>
+
+There composants called **ViewGroup** to group views and apply changes/... on the group.
+
+Layouts are ViewGroups with predefined settings. For instance, a **GridLayout** will put nested views in a grid-like format.
+
+* [LinearLayout](https://developer.android.com/develop/ui/views/layout/linear): Horizontal/Vertical
+
+```
+<LinearLayout
+    ...
+    android:orientation="vertical"
+    android:orientation="horizontal"
+    >
+      <!-- optional weight (responsive width/height) -->
+      <XXXView
+           android:layout_weight="1"
+           />
+</LinearLayout>
+```
+</div><div>
+
+* [FrameLayout](https://developer.android.com/reference/android/widget/FrameLayout): a layout with only one child.
+
+```
+<FrameLayout ...>
+  <!-- usually a recycler view, or a fragment container -->
+</FrameLayout>
+```
+
+* [ConstraintLayout](https://developer.android.com/develop/ui/views/layout/constraint-layout): a painful way to design views.
+
+```
+implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+```
+
+A constraint layout is rendering element relatively to another component <small>(which could be the screen)</small>. You will set margins which are the gap with the other component.
+
+On a screen of 226px, if you define that the component should have a margin left of 140, and a margin right of 26. The composant will be centered within the 60 remaining px called **free space**.
+
+To change the behavior of how the free space is handled, simply edit the layout width/height OR you can use a shortcut by clicking on arrows such as ">>" right where you added margins.
+
+![Constraint Layout Margins Kind](_images/cl_margins_kind.png)
+</div></div>
+
+<hr class="sep-both">
+
 ## ✨ View Binding ✨
 
 ...

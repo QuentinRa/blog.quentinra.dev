@@ -34,8 +34,6 @@ Then, using **Data binding**, you can directly use your LiveData in your XML, th
 
 <div class="row row-cols-md-2 mx-0"><div>
 
-Everything displayed on the screen is a **View**. `View` doesn't mean that this is only a something displayed, it be also be something clickable/editable...
-
 Each View has attributes, or properties, for instance, you can define the text shown in TextView using the attribute `text`. As some views are sharing common properties, they are **inheriting** others views, which means that they have the attributes of the view that they are inheriting, along with their own attributes.
 
 <details class="details-e">
@@ -51,12 +49,7 @@ Each View has attributes, or properties, for instance, you can define the text s
 * `importantForAccessibility`: if this element is just decorative, you can set it to no
 </details>
 
-The layout, the arrangement of the views, is handled by a **ViewGroup**. Layouts are edited using the layout editor. They are located in `.../res/layout/xxx.xml`.
-
-* [**ConstraintLayout**](layouts/ConstraintLayout.md): arrange elements in a flexible way
 * [**RecyclerView**](layouts/RecyclerView.md): not a ViewGroup, but an efficient way of displaying a flexible list of elements.
-* **FrameLayout**: if a view has ONE child, then this single child view, is the MOST appropriate view.
-* **LinearLayout**: arrange elements horizontally/vertically <small>(see layout_weight on each item, and layout_orientation)</small>
 
 </div><div>
 
