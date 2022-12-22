@@ -118,47 +118,6 @@ The list [of Material components for Android can be found here](https://material
 
 <div class="row row-cols-md-2 mx-0"><div>
 
-Images, texts, views, basically everything that is not a Kotlin file, is a resource. They are all stored in the  **📂res** folder
-
-* **drawables**: images
-* **layouts**: views
-* **mipmap**: icons
-* **values**: colors+theme, and strings
-* ...
-
-<details class="details-e">
-<summary>Resources Manager</summary>
-
-You can access the Resources Manager, which track every resource in `res`, and allow you to add new ones
-
-* from the Left side, right under "project")
-* with View > Tools Windows > Resources Manager
-
-![Resources Manager Android Studio](_images/resources_manager_as.png)
-</details>
-
-<details class="details-e">
-<summary>Add a new "drawable" (image)</summary>
-
-* Go to Drawables tab in the Resources Manager
-* Click on "+"
-* Import drawables
-
-You can drag, and drop it in the design view (or select it when creating a new imageview).
-</details>
-
-<details class="details-e">
-<summary>Icons</summary>
-
-* Open the resources manager
-* "+" > new vector asset
-* click on the android icon for "clip art"
-* select an icon
-
-For Android 20, or older versions, you need to add `vectorDrawables.useSupportLibrary = true` in build.gradle > Android > defaultConfig.
-
-</details>
-
 Every folder in `res` may have multiples "copies" for different devices/languages. For instance, if there is a view for large screen devices, it will be used instead of the view made of "every" device.
 
 * [strings.xml](values/strings.md): how to properly handle texts, and localization

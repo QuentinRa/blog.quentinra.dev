@@ -28,6 +28,35 @@ Aside from that, almost every file is a XML file. This is a sort of HTML with ta
 
 <hr class="sep-both">
 
+## 📦 Resources 📦
+
+<div class="row row-cols-md-2"><div>
+
+Resources englobes **strings** (texts), **colors**, **dimensions**, **drawables** (images), **mipmap** (icons), and many other things.
+
+You can manage them from the **Resources Manager**
+
+* From the Left side, right under "project"
+* with View > Tools Windows > Resources Manager
+
+![Resources Manager Android Studio](_images/resources_manager_as.png)
+</div><div>
+
+##### Add a local image
+
+Go to drawables, and click on "+" > Import.
+
+<br>
+
+##### Add an icon
+
+Go to drawables, and click on "+" > Vector Asset. Then, click on the <i class="bi bi-android"></i> <small>(android icon)</small> next to "clip art".
+
+On Android 20, or older, you need to add this in build.gradle > Android > defaultConfig: `vectorDrawables.useSupportLibrary = true`.
+</div></div>
+
+<hr class="sep-both">
+
 ## Layout Editor
 
 Instead of editing the XML manually, you will usually use the Design mode.
@@ -79,12 +108,6 @@ And these attributes are available on any View
     tools:text="Shown in the DesignView"
     />
 ```
-
-```kotlin
-var t : TextView = ...
-t.text = "Some text"
-t.setText(R.string.some_string)
-```
 </div><div>
 
 ##### ImageView: display an image
@@ -97,12 +120,6 @@ t.setText(R.string.some_string)
     android:scaleType="centerCrop"
     />
 <!-- centerCrop = 9patches scaling -->
-```
-
-```kotlin
-var i : ImageView = ...
-// set image from the code
-i.setImageResource(R.drawable.some_drawable_here)
 ```
 </div></div>
 
@@ -161,6 +178,35 @@ To change the behavior of how the free space is handled, simply edit the layout 
 
 ![Constraint Layout Margins Kind](_images/cl_margins_kind.png)
 </div></div>
+
+<hr class="sep-both">
+
+## Calling views in the code
+
+<div class="row row-cols-md-2"><div>
+
+...
+
+#### TextView
+
+```kotlin
+var t : TextView = ...
+t.text = "Some text"
+t.setText(R.string.some_string)
+```
+</div><div>
+
+#### ImageView
+
+```kotlin
+var i : ImageView = ...
+// set image from the code
+i.setImageResource(R.drawable.some_drawable_here)
+```
+
+...
+</div></div>
+
 
 <hr class="sep-both">
 
