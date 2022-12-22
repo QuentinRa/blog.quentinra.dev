@@ -22,69 +22,20 @@ Then, using **Data binding**, you can directly use your LiveData in your XML, th
 ...
 </div></div>
 
-<hr class="sl">
-
-## XML
-
-* Every tag must have the attributes `android:layout_width`, and `android:layout_height`.
-
 <hr class="sr">
 
 ## Views
 
 <div class="row row-cols-md-2 mx-0"><div>
 
-Each View has attributes, or properties, for instance, you can define the text shown in TextView using the attribute `text`. As some views are sharing common properties, they are **inheriting** others views, which means that they have the attributes of the view that they are inheriting, along with their own attributes.
-
-<details class="details-e">
-<summary>View: the base class of all views</summary>
-
-* `padding`: gap between the border and the content outside (ex: 10dp)
-* `layout_margin`: gap with the outside (ex: 10dp)
-* `visibility`: View.VISIBLE / <s>View.INVISIBLE</s> / View.GONE
-
 **Accessibility (attributes)**
 
 * `contentDescription`: what's the purpose of this element
 * `importantForAccessibility`: if this element is just decorative, you can set it to no
-</details>
-
-* [**RecyclerView**](layouts/RecyclerView.md): not a ViewGroup, but an efficient way of displaying a flexible list of elements.
-
+* <small>Don't forget to update `contentDescription`, or any accessibility-related attributes, if needed.</small>, if updating an image from the code/dynamically
 </div><div>
 
-<details class="details-e">
-<summary>Display a text with <code>TextView</code></summary>
-
-* **Inheritance**: TextView extends View
-* **Documentation**: [TextView](https://developer.android.com/reference/android/widget/TextView)
-
-**Useful attributes**
-
-* `text`
-*  (settings) `text`: this text is only shown when editing. <small>It's useful when a text should be empty by default, but you want to see what it will look like once filed.</small>
-
-**useful methods**
-
-* `setText(stringId)`: there is also `setText(string)`, but that's better to use `text` in such case.
-
-</details>
-
-<details class="details-e">
-<summary>Display an image with <code>ImageView</code></summary>
-
-* **Inheritance**: ImageView extends View
-* **Documentation**: [ImageView](https://developer.android.com/reference/android/widget/ImageView)
-
-**Useful attributes**
-
-* `scaleType`: use "centerCrop" to scale without distorting (9patches)
-* `srcCompat`: set image
-
-**useful methods**
-
-* `setImageResource(drawable_id)`: set image in the code. <small>Don't forget to update `contentDescription`, or any accessibility-related attributes, if needed.</small>
-</details>
+* [**RecyclerView**](layouts/RecyclerView.md): not a ViewGroup, but an efficient way of displaying a flexible list of elements.
 
 <details class="details-e">
 <summary>Display a button with <code>Button</code></summary>

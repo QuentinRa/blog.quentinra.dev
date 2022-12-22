@@ -58,10 +58,52 @@ Instead of editing the XML manually, you will usually use the Design mode.
 
 <div class="row row-cols-md-2"><div>
 
-In Android, every composant such as an Image is called a **View**.
+In Android, every composant such as an Image is called a **View**. Every view must have at least these two attributes
+
+* **android:layout_width**: wrap, match_parent, a fixed width
+* **android:layout_height**: wrap, match_parent, a fixed height
+
+And these attributes are available on any View
+
+* **android:padding**: internal gap <small>(ex: 10dp)</small>
+* **android:layout_margin**: external gap <small>(ex: 10dp)</small>
+* **android:visibility**: View.VISIBLE / View.INVISIBLE / View.GONE
+
+##### TextView: display a text
+
+[TextView extends View](https://developer.android.com/reference/android/widget/TextView).
+
+```xml
+<TextView
+    android:text="Shown in the app"
+    tools:text="Shown in the DesignView"
+    />
+```
+
+```kotlin
+var t : TextView = ...
+t.text = "Some text"
+t.setText(R.string.some_string)
+```
 </div><div>
 
-...
+##### ImageView: display an image
+
+[ImageView extends View](https://developer.android.com/reference/android/widget/ImageView)
+
+```
+<ImageView 
+    tools:srcCompat="YOUR_IMAGE"
+    android:scaleType="centerCrop"
+    />
+<!-- centerCrop = 9patches scaling -->
+```
+
+```kotlin
+var i : ImageView = ...
+// set image from the code
+i.setImageResource(R.drawable.some_drawable_here)
+```
 </div></div>
 
 <hr class="sep-both">
@@ -74,7 +116,9 @@ There composants called **ViewGroup** to group views and apply changes/... on th
 
 Layouts are ViewGroups with predefined settings. For instance, a **GridLayout** will put nested views in a grid-like format.
 
-* [LinearLayout](https://developer.android.com/develop/ui/views/layout/linear): Horizontal/Vertical
+#### LinearLayout: Horizontal/Vertical
+
+[Documentation](https://developer.android.com/develop/ui/views/layout/linear)
 
 ```
 <LinearLayout
@@ -88,23 +132,28 @@ Layouts are ViewGroups with predefined settings. For instance, a **GridLayout** 
            />
 </LinearLayout>
 ```
-</div><div>
 
-* [FrameLayout](https://developer.android.com/reference/android/widget/FrameLayout): a layout with only one child.
+#### FrameLayout: a layout with only one child.
+
+[Documentation](https://developer.android.com/reference/android/widget/FrameLayout)
 
 ```
 <FrameLayout ...>
   <!-- usually a recycler view, or a fragment container -->
 </FrameLayout>
 ```
+</div><div>
 
-* [ConstraintLayout](https://developer.android.com/develop/ui/views/layout/constraint-layout): a painful way to design views.
+#### ConstraintLayout: a flexible way to design views
 
+[Documentation](https://developer.android.com/develop/ui/views/layout/constraint-layout)
 ```
 implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 ```
 
 A constraint layout is rendering element relatively to another component <small>(which could be the screen)</small>. You will set margins which are the gap with the other component.
+
+![Constraint Layout Margins Relative](_images/cl_margins_relative.png)
 
 On a screen of 226px, if you define that the component should have a margin left of 140, and a margin right of 26. The composant will be centered within the 60 remaining px called **free space**.
 
