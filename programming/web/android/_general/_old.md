@@ -138,50 +138,6 @@ val viewId : Int = R.id.hello_world
 ```
 </details>
 
-<details class="details-e">
-<summary>findViewById</summary>
-
-You can then use `findViewById(some_id)` to get a view.
-
-```kotlin
-val myButton: Button = findViewById(R.id.myButton)
-```
-</details>
-
-<details class="details-e">
-<summary>[new] view A (alternative to findViewById)</summary>
-
-You first need to add `viewBinding` in build.gradle, in the bloc "Android", and reload the project. It will create an object that reference all views with an id. 
-
-```gradle
-buildFeatures {
-    viewBinding = true
-}
-```
-
-Then, create an attribute `binding`, and you will be able to access every view from it.
-
-<details class="details-e">
-<summary>Android MainActivity base code with Binding</summary>
-
-```kotlin
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import com.samples.google.cone.databinding.ActivityMainBinding
-
-class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
-    
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-    }
-}
-```
-</details>
-</details>
-
 If you write in your code a method taking an id, then you can check if this id has the "right" type using annotation, as every id is an int. Add `@StringRes`, `@DrawableRes`, or `@LayoutRes` before a variable, a parameter, or an attribute.
 
 ```kotlin

@@ -185,12 +185,21 @@ To change the behavior of how the free space is handled, simply edit the layout 
 
 <div class="row row-cols-md-2"><div>
 
-...
+You can then use `findViewById(some_id)` to get a view.
+
+```diff
+<SomeViewHere
++        android:id="@+id/someUniqIdHere"
+```
+
+```kotlin
+val x = findViewById<SomeViewHere>(R.id.someUniqIdHere)
+```
 
 #### TextView
 
 ```kotlin
-var t : TextView = ...
+var t = findViewById<TextView>(...)
 t.text = "Some text"
 t.setText(R.string.some_string)
 ```
@@ -199,7 +208,7 @@ t.setText(R.string.some_string)
 #### ImageView
 
 ```kotlin
-var i : ImageView = ...
+var i = findViewById<ImageView>(...)
 // set image from the code
 i.setImageResource(R.drawable.some_drawable_here)
 ```
@@ -212,7 +221,65 @@ i.setImageResource(R.drawable.some_drawable_here)
 
 ## ✨ View Binding ✨
 
-...
+<div class="row row-cols-md-2"><div>
+
+ViewBinding is a new alternative to `findViewById`.
+
+Ids declared in **activity_main.xml** will be available via a generated class called **ActivityMainBinding** <small>(matching the XML filename)</small>.
+
+First, add the viewBinding build feature.
+
+```diff
+android {
+    ...
+
++    buildFeatures {
++        viewBinding = true
++    }
+}
+```
+
+</div><div>
+
+<details class="details-e">
+<summary>Ex: activity_main.xml in an Activity</summary>
+
+```diff
+class MainActivity : AppCompatActivity() {
++    private lateinit var binding: ActivityMainBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
++        binding = ActivityMainBinding.inflate(layoutInflater)
+
+-        setContentView(R.layout.activity_main)
++        setContentView(binding.root)
+
+-        val x = findViewById<SomeViewHere>(R.id.someUniqIdHere)
++        val x = binding.someUniqIdHere
+    }
+}
+```
+</details>
+
+<details class="details-e">
+<summary>Ex: fragment_blank.xml in a Fragment</summary>
+
+```diff
+class BlankFragment : Fragment() {
+
+    override fun onCreateView(...): View? {
+-        return inflater.inflate(R.layout.fragment_blank, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
++        val x = binding.someUniqIdHere
+    }
+}
+```
+</details>
+</div></div>
 
 <hr class="sep-both">
 
