@@ -26,34 +26,7 @@ Then, using **Data binding**, you can directly use your LiveData in your XML, th
 
 ## XML
 
-<div class="row row-cols-md-2"><div>
-
-Aside from your code, almost every file is a XML file. This is a sort of HTML with tags `<MyTag></MyTag>`, or `<MyTag />`, in which you can add attributes  `<ImageView src="/path/to/my/image" />`.
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:app="http://schemas.android.com/apk/res-auto"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".controller.MainActivity" >
-
-  <!-- comment -->
-</FrameLayout>
-```
-
-> **The root tag** is the one in which every other will be. It's noticeable because of the additional attributes "xmlns:", and "tools:context".
-
-</div><div>
-
 * Every tag must have the attributes `android:layout_width`, and `android:layout_height`.
-
-* Attributes are coming from a namespace, which needs to be imported. If you are using the LayoutEditor, this is done behind the scene for you. Anyway, if you want to use `android:`, then the root tag must have the attribute `xmlns:android="http://schemas.android.com/apk/res/android"`.
-
-* The `tools:context` is pointing to the class which will use this layout.
-
-</div></div>
 
 <hr class="sr">
 

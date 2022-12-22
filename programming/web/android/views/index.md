@@ -2,23 +2,43 @@
 
 <div class="row row-cols-md-2"><div>
 
-...
+Android Views are **XML files** stored in **app/res/layout**.
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".MainActivity" >
+  <!-- YOUR VIEW HERE -->
+</FrameLayout>
+```
 </div><div>
 
-...
+If you copy-pasted a XML, or tried to edit it manually, you must know
+
+* 👉 FrameLayout <small>(or the parent of every other)</small> is called the **root**.
+* 👉 **xmlns:** are very important. You can't use **android:** if you didn't add the matching **xmlns:android**. They are added to the **root**.
+* 👉 **tools:context** point to the associated Fragment/Activity in YOUR code, so you must give it an appropriate value.
+
+Aside from that, almost every file is a XML file. This is a sort of HTML with tags **<MyTag></MyTag>**, or **<MyTag />**, in which you can add attributes  **<ImageView src="/path/to/my/image" />**.
 </div></div>
 
 <hr class="sep-both">
 
 ## Layout Editor
 
+Instead of editing the XML manually, you will usually use the Design mode.
+
 <div class="row row-cols-md-2 mx-0"><div class="align-self-center">
 
 <ol style="list-style-type: lower-alpha">
-<li><b>Mode</b>: you can switch to code/layout editor here</li>
-<li><b>Palette</b>: a library of views that you can drag and drop to the design view</li>
+<li><b>Mode</b>: you can switch to the XML/Layout editor here</li>
+<li><b>Palette</b>: views that you can drag and drop to the design view</li>
 <li><b>Design view</b>: what the user will see</li>
-<li><b>BluePrint view</b>: everything is shown on it, included hidden elements</li>
+<li><b>BluePrint view</b>: Design View, but with hidden elements too</li>
 <li><b>Component tree</b>: list of all views of your screen</li>
 <li><b>Attributes</b>: edit the properties of a view</li>
 

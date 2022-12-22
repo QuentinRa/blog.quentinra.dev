@@ -182,6 +182,22 @@ Stuff that I found, but never read/used yet.
 * Advanced Data Binding, Recommended App architecture
 * NFC
 
+Links
+
+* [Android compose](https://developer.android.com/courses/android-basics-compose/course)
+* [Android Basics: Room](https://developer.android.com/courses/android-basics-kotlin/unit-5)
+* [Android Basics: Adaptive Layouts](https://developer.android.com/codelabs/basic-android-kotlin-training-adaptive-layouts), [twopane](https://developer.android.com/develop/ui/views/layout/twopane), [cardview](https://developer.android.com/develop/ui/views/layout/cardview)
+* [Android coroutines](https://developer.android.com/courses/pathways/android-coroutines)
+* [Jetpack Compose](https://developer.android.com/courses/jetpack-compose/course)
+* [Android architecture](https://developer.android.com/courses/pathways/android-architecture)
+</div><div>
+
+**[Old notes](_old.md)**
+
+<details class="details-e">
+<summary>Flows</summary>
+
+
 ```kotlin
 // https://stackoverflow.com/questions/60672406/how-to-use-coroutine-in-kotlin-to-call-a-function-every-second#answer-60673320
 lifecycleScope.launch {
@@ -206,14 +222,7 @@ val myLiveData : LiveData<Int> = flow {
 ```
 
 A [flow](https://developer.android.com/kotlin/flow) is canceled when the app goes to background/rotating the screen. We could patch that by giving a timeout to "asLiveData", but by doing that, the flow will continue to be run while the app is in the background, until the timeout that is.
-</div><div>
-
-* [Android compose](https://developer.android.com/courses/android-basics-compose/course)
-* [Android Basics: Room](https://developer.android.com/courses/android-basics-kotlin/unit-5)
-* [Android Basics: Adaptive Layouts](https://developer.android.com/codelabs/basic-android-kotlin-training-adaptive-layouts), [twopane](https://developer.android.com/develop/ui/views/layout/twopane), [cardview](https://developer.android.com/develop/ui/views/layout/cardview)
-* [Android coroutines](https://developer.android.com/courses/pathways/android-coroutines)
-* [Jetpack Compose](https://developer.android.com/courses/jetpack-compose/course)
-* [Android architecture](https://developer.android.com/courses/pathways/android-architecture)
+</details>
 
 ```kotlin
 ViewModelProvider(this)[XXXViewModel::class.java]
@@ -230,6 +239,4 @@ while (true) {
     delay(10000)
 }
 ```
-
-> See also: **[Old notes](_old.md)**
 </div></div>
