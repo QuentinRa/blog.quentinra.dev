@@ -115,20 +115,7 @@ Use the Logger instead of print/println to keep track of what your application i
 You must give a tag to your log. You will be able to filter messages by tag in the Logcat tab.
 
 ```kotlin
-class XXX : YYY() {
-    companion object {
-        private const val TAG = "SOME_TAG_NAME"
-    }
-    
-    fun xxx() {
-        Log.v(TAG, "verbose message")
-    }
-}
-```
-</div><div>
-
-```kotlin
-// improper, but easier
+// ❌ improper, but easier
 Log.v("SOME_TAG_NAME", "message")
 ```
 
@@ -139,6 +126,35 @@ There are 5 levels of logs. You can increase/decrease the level of logs inside L
 * `Log.i`: info
 * `Log.w`: warn
 * `Log.e`: error
+
+If the level of log is **debug**, then all below are included, meaning that only verbose logs won't be shown/logged.
+
+</div><div>
+
+```kotlin
+// ✅ proper logging
+class XXX : YYY() {
+    companion object {
+        private const val TAG = "SOME_TAG_NAME"
+    }
+    
+    fun xxx() {
+        Log.v(TAG, "verbose message")
+    }
+}
+```
+
+OR, with the TAG outside, and not inside a companion object
+
+```kotlin
+// ✅ proper logging
+private const val TAG = "SOME_TAG_NAME"
+
+class XXX : YYY() {    
+    ...
+}
+```
+
 </div></div>
 
 <hr class="sep-both">

@@ -91,7 +91,18 @@ WorkManager.someStaticMethod()
 class XXXWorker(c: Context, args: WorkerParameters) : Worker(c, args) {
     // use 'applicationContext' to get back the context
     override fun doWork(): Result {
-        // use Result.failure() on error
+        // use Result.failure()/Result.retry() on error
+        return Result.success()
+    }
+}
+```
+
+To create an async worker, you can use a [CoroutineWorker](https://developer.android.com/guide/background/persistent/threading/coroutineworker).
+
+```kotlin
+class XXXWorker(c: Context, args: WorkerParameters) : CoroutineWorker(c, args) {
+    override suspend fun doWork(): Result {
+        delay(5000) // example of async call
         return Result.success()
     }
 }
@@ -128,7 +139,7 @@ workManager.beginWith(request)
 <details class="details-e">
 <summary>Add constraints on the WorkRequest</summary>
 
-Here is an example of every constraint you can use with the builder.
+Here is an example of every constraint you can use
 
 ```kotlin
 // here examples of every constraint you can use
@@ -141,13 +152,79 @@ val constraints = Constraints.Builder()
     .build()
 ```
 
-Then, you can use `setConstraints` to pass contraints.
+Then, you can use `setConstraints` to pass contraints. For instance, for a **OneTimeWorkRequest**, you will have
 
-```kotlin
-// example with a OneTimeWorkRequest
+```diff
 val request = OneTimeWorkRequestBuilder<XXXWorker>()
-    .setConstraints(constraints)
++    .setConstraints(constraints)
     .build()
 ```
+</details>
+
+<details class="details-e">
+<summary>Add a tag to a work request</summary>
+
+This can be used to find work requests by tag.
+
+```diff
+val request = OneTimeWorkRequestBuilder<XXXWorker>()
++    .addTag(TAG)
+    .build()
+```
+
+</details>
+
+<details class="details-e">
+<summary>Observe a worker</summary>
+
+```kotlin
+private val _work : LiveData<List<WorkInfo>>
+
+_work = workManager.getWorkInfosForUniqueWorkLiveData(ID)
+_work = workManager.getWorkInfoByIdLiveData(uuid)
+_work = workManager.getWorkInfosByTagLiveData(tag)
+```
+
+The LiveData contains a list of WorkInfo, one per worker.
+
+To make thing easier, we use Transformations, and work will only be non-null when the first task (`it[0]`) in completed.
+
+```kotlin
+// only one job, no need for a list to be public
+val work: LiveData<WorkInfo>
+
+// NOTE: this must be called after
+// _work = ...
+// as _work must have been initialized
+work = Transformations.map(_work) {
+    // not yet
+    if (it.isNullOrEmpty()) {
+        return@map null
+    }
+    // ensure that the job if finished
+    return@map if (it[0].state.isFinished) it[0] else null
+}
+```
+
+Then, do as usual
+
+```kotlin
+viewModel.work.observe(viewLifecycleOwner) {
+    // do something when the job has finished.
+    // If you passed data, you can use it.outputData
+}
+```
+</details>
+
+<details class="details-e">
+<summary>Cancel work</summary>
+
+```kotlin
+workManager.cancelAllWork()
+workManager.cancelUniqueWork(ID)
+workManager.cancelWorkById(uuid)
+workManager.cancelAllWorkByTag(TAG)
+```
+
 </details>
 </div></div>
