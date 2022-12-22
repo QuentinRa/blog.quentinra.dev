@@ -34,6 +34,24 @@
 
 <hr class="sep-both">
 
+## ✨ View Binding ✨
+
+...
+
+<hr class="sep-both">
+
+## ⚡ Data Binding ⚡
+
+...
+
+<hr class="sep-both">
+
+## 🧭 Navigation Component 🧭 
+
+...
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

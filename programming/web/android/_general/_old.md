@@ -1,6 +1,6 @@
 # Android development
 
-**[Updates notes](index.md)**
+**[Updated notes](index.md)**
 
 <hr class="sr">
 
@@ -499,38 +499,6 @@ private suspend fun waitFiveSeconds() {
 }
 ```
 
-</div></div>
-
-<hr class="sl">
-
-## ViewModel
-
-<div class="row row-cols-md-2"><div>
-
-> Architectural note: this class should handle the data, along decision-making logic about that data, and helpers.
-
-* Handling errors
-
-If an error occurred when fetching the API, you could create a LiveData that will be observed by others, so that they can show an error messages.
-
-* Handle loading/...
-
-Do the same as you would when handling errors. You should use an enum class with a status, such as "LOADING", "SUCCESS", "FAILED"..
-</div><div>
-
-* Create a view model class
-
-```kotlin
-// always use a backing-field (private, var)
-// and expose a public val
-class XXXViewModel : ViewModel() {
-
-    private var _list = listOf(5)
-
-    val list: List<Int>
-        get() = _list
-}
-```
 </div></div>
 
 <hr class="sr">

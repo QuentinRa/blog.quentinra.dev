@@ -298,3 +298,42 @@ fun increaseCount() {
 
 See also [Transformations with multiple arguments](https://stackoverflow.com/questions/47572913/livedata-transformations-map-with-multiple-arguments#answer-53628300).
 </div></div>
+
+<hr class="sep-both">
+
+## 🗃️ State of a request using LiveData 🗃️
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+You can use an additional LiveData to handle
+
+* Loading time
+* Errors
+
+You should use a LiveData of an enum, such as
+
+```
+private val _state = MutableLiveData<LoadingState>()
+val state : LiveData<LoadingState>  = _state
+
+enum class LoadingState {
+    LOADING, SUCCESS, FAILED
+}
+```
+</div><div>
+
+The views will observe this state, and show an appropriate message to the user such as a Toast for errors.
+
+Inside the ViewModel, when doing API requests, you will update the state
+
+```kotlin
+...
+_state.value = LoadingState.LOADING
+// An API request
+...
+// modify the state
+_state.value =
+    if (...) LoadingState.SUCCESS
+    else LoadingState.FAILED
+```
+</div></div>

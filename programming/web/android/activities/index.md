@@ -275,6 +275,7 @@ intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
 Fragments are in many way similar to activities. They are loaded by an activity, but they have their own lifecycle.
 
 * 👉 `Activity#onCreated` was split in 3 methods
+* 👉 The navigation is done with a [Navigation Component](../views/index.md#-navigation-component-)
 * 👉 Some code need to be updated <small>(most "`this`" won't work...)</small>
   * Use `requireActivity()` to get an Activity
   * Use `activity` to get an Activity <small>(@Nullable)</small>
@@ -337,18 +338,4 @@ class BlankFragment : Fragment() {
 The Fragment lifecycle is as follows.
 
 ![Fragment lifecycle](./_images/android_fragment_lifecycle.png)
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-...
-</div><div>
-
-...
 </div></div>

@@ -134,7 +134,7 @@
             {
               "tag": "web/android/activities/index.md",
               "name": "Activities",
-              "desc": "...",
+              "desc": "Activities, Fragments, Life-cycle...",
               "icon": "<i class=\"bi bi-android\"></i>",
               "hidden": false
             },
@@ -148,14 +148,14 @@
             {
               "tag": "web/android/viewmodel/index.md",
               "name": "ViewModel",
-              "desc": "...",
+              "desc": "Bind the model and the view together.",
               "icon": "<i class=\"bi bi-android\"></i>",
               "hidden": false
             },
             {
               "tag": "web/android/core/index.md",
               "name": "Core",
-              "desc": "...",
+              "desc": "Notifications, Toasts, WorkManager...",
               "icon": "<i class=\"bi bi-android\"></i>",
               "hidden": false
             },
