@@ -490,5 +490,137 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 </details>
+</div></div>
 
+<hr class="sep-both">
+
+## 🚃 Display a list of items 🚃
+
+<div class="row row-cols-md-2"><div>
+
+[RecyclerView](https://developer.android.com/develop/ui/views/layout/recyclerview) is a "new" way of displaying lists, that is more efficient, and use less memory, as it is recycling views that disappeared, to show the new elements of the list that showed up.
+
+```xml
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/example_recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+```
+
+##### Scrollbars
+
+You may enable scrollbars <small>(vertical, horizontal, none, both with "|")</small>
+
+```diff
+<androidx.recyclerview.widget.RecyclerView
+    ...
++    android:scrollbars="vertical"
+     />
+```
+
+##### Layout
+
+By default, the list is using a ListView, which is similar to a LinearLayout with an orientation set to vertical. The next element is below the previous one. You can change the layout inside the XML
+
+```diff
+<androidx.recyclerview.widget.RecyclerView
+    ...
++    app:layoutManager="LinearLayoutManager"
++    android:orientation="horizontal"
+     />
+```
+
+```diff
+<androidx.recyclerview.widget.RecyclerView
+    ...
++    app:layoutManager="GridLayoutManager"
+     />
+```
+
+Or, inside the code
+
+```kotlin
+val recyclerView : RecyclerView = ...
+with(recyclerView) {
+    // ➡️ Horizontal LinearLayout
+    layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+    // ➡️ Two-columns GridLayout
+    layoutManager = GridLayoutManager(context, 2)
+}
+```
+</div><div>
+
+#### Adapter
+
+Let's say we have a list of elements of type Data
+
+```kotlin
+class Data(val message: String)
+// example
+val myList = listOf(Data("one"), Data("two"))
+```
+
+We need to create a View for **one item**. Create an XML Layout. It's worth noting that you should NOT use **match_parent** to both horizontal/vertical, otherwise each item will take the whole screen.
+
+<details class="details-e">
+<summary>Ex: data_item.xml | An item with only a TextView</summary>
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ➡️ There is only one item, so we use a FrameLayout -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- ➡️ Don't forget to give an Id to your TextView -->
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</FrameLayout>
+```
+</details>
+
+Now, we need to write an **Adapter**. This is a class that will handle displaying an item of our list (**Data**) inside one instance of **data_item.xml**. 
+
+<details class="details-e">
+<summary>DummyAdapter</summary>
+
+```kotlin
+class DummyAdapter(private val items: List<Data>) : RecyclerView.Adapter<DummyAdapter.ViewHolder>() {
+    // ➡️ The function bind take a Data, and fill our Item
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        private val messageView = view.findViewById<TextView>(R.id.message)
+
+        fun bind(data: Data) {
+            messageView.text = data.message
+        }
+    }
+
+    // ➡️ We are linking data_item.xml here
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.data_item, parent, false))
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.bind(items[position])
+    }
+
+    override fun getItemCount(): Int {
+        return items.size
+    }
+}
+```
+</details>
+
+Then, inside an Activity/a Fragment, we need to link the recycler view with the adapter.
+
+```kotlin
+val recyclerView : RecyclerView = ...
+with(recyclerView) {
+    adapter = DummyAdapter(myList)
+}
+```
 </div></div>

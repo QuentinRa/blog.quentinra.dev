@@ -221,10 +221,6 @@ A [flow](https://developer.android.com/kotlin/flow) is canceled when the app goe
 </details>
 
 ```kotlin
-recyclerView.apply {
-    layoutManager = GridLayoutManager(requireContext(), 2)
-}
-
 val preferences: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
 if (preferences.getBoolean("key", false)) {}
 

@@ -1,7 +1,5 @@
 # RecyclerView
 
-[Go back](../index.md#views)
-
 RecyclerView is a "new" way of displaying lists, that is more efficient, and use less memory, as it is recycling views that disappeared, to show the new elements of the list that showed up. The recycler view is made of three main parts
 
 * an **Item**
@@ -10,26 +8,6 @@ RecyclerView is a "new" way of displaying lists, that is more efficient, and use
 * a **RecyclerView**, in which all items are displayed
 * an **Adapter**+**ViewHolder**, which is filling the RecyclerView with the Items, and handling the recycling of the views
   * TIP: Use **ListAdapter** for Lists
-
-<hr class="sl">
-
-## RecyclerView
-
-<div class="row row-cols-md-2 mx-0"><div>
-
-1. Place a RecyclerView in your `activity_main.xml`
-2. (Optional) if the RecyclerView is the only child, you should use a `FrameLayout` instead of a `ConstraintLayout`
-3. (Optional) enable scrollbars. Search for the attribute `scrollbars`, and enable the ones you want.
-4. (Optional) RecyclerView support different modes of displaying items: Linear, Grid... Set the attribute `layoutManager` to the value you want (ex: `LinearLayoutManager`).
-
-5. Give an id to the view, for instance `recycler_view`
-</div><div class="align-self-center">
-
-If all set, you should have something like this:
-
-![recycler view attributes](../_images/recycler_view_attributes.png)
-
-</div></div>
 
 <hr class="sr">
 
@@ -51,83 +29,6 @@ val myDataset : List<Any> = listOf(...)
 
 You will obviously have to fix that later.
 
-</div></div>
-
-
-<hr class="sl">
-
-## Adapter, and RecyclerView
-
-<div class="row row-cols-md-2 mx-0"><div>
-
-1. You usually provide a **collection of items** to your Adapter
-
-```kotlin
-class DummyAdapter(private val items: List<Any>)
-```
-
-<br><br>
-
-2. You will also create a **layout for one element**
-
-We will assume that you created `xxx_item`. Let's say there is a button inside, with the id "my_button".
-
-<br><br>
-
-3. You will create a "**ViewHolder**", which is a class **helping** you **access the views inside the layout** for one element
-
-```kotlin
-class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-  val myButton: Button = view.findViewById(R.id.my_button)
-}
-```
-
-<br><br>
-
-4. Then, you will have to define how to fill the layout with one element, using the **collection of items**, and the **ViewHolder**
-
-```kotlin
-// something stupid
-holder.myButton.text = items[position].toString()
-```
-
-</div><div>
-
-```kotlin
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
-
-// todo: rename DummyAdapter (2 occurrences)
-//  and adapt the constructor (if needed)
-class DummyAdapter(private val items: List<Any>) : RecyclerView.Adapter<DummyAdapter.ViewHolder>() {
-
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        // todo: your attributes
-        val myButton: Button = view.findViewById(R.id.my_button)
-    }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        // todo: your layout
-        return ViewHolder(LayoutInflater.from(parent.context)
-            .inflate(R.layout.xxx_item, parent, false))
-    }
-
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        // todo: your binding
-        holder.myButton.text = items[position].toString()
-        // if you are using data binding (XXXBinding)
-        // try using XXXBinding#executePendingBindings()
-        // to update the view now, allowing the recycler view
-        // to compute correct size ajustement
-    }
-
-    override fun getItemCount(): Int {
-        return items.size
-    }
-}
-```
 </div></div>
 
 <hr class="sr">

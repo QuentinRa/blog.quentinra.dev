@@ -2,8 +2,6 @@
 
 **[Updated notes](index.md)**
 
-* [**RecyclerView**](layouts/RecyclerView.md): not a ViewGroup, but an efficient way of displaying a flexible list of elements.
-
 <hr class="sr">
 
 ## Multitasking
