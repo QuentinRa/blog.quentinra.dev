@@ -282,8 +282,8 @@ Fragments are in many way similar to activities. They are loaded by an activity,
 
 ```diff
 - val param = intent?.extras?.getString("param")
-+ val intent = requireActivity().intent?.extras?.getString("param")
-+ val intent = activity?.intent?.extras?.getString("param")
++ val param = requireActivity().intent?.extras?.getString("param")
++ val param = activity?.intent?.extras?.getString("param")
 ```
 
   * Use `requireContext()` to get a Context

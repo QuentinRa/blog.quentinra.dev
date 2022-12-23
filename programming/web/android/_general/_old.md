@@ -19,7 +19,6 @@ The Controller is responsible for rendering the UI, and listening to events. Usi
 Then, using **Data binding**, you can directly use your LiveData in your XML, the file in which you create your view, and if the LiveData value is updated, so will your view.
 </div><div>
 
-...
 </div></div>
 
 <hr class="sr">
@@ -33,71 +32,6 @@ Then, using **Data binding**, you can directly use your LiveData in your XML, th
 * `contentDescription`: what's the purpose of this element
 * `importantForAccessibility`: if this element is just decorative, you can set it to no
 * <small>Don't forget to update `contentDescription`, or any accessibility-related attributes, if needed.</small>, if updating an image from the code/dynamically
-
-<details class="details-e">
-<summary>Menus</summary>
-
-> * `menus`: you must use a menu provider in fragments.
-
-* Resources manager | Menus
-* Create a new one
-
-It will generate a new layout, in which you can add menu items. You should give each an `id`, a `title`, and maybe an `icon`. Finally, you might have noticed that your menus are shown in "...". You can modify this behavior with `showAsAction` such as `always` which means that the menu will never be in the "..." (overflow).
-
-In your Activity
-
-```kotlin
-override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-    menuInflater.inflate(R.menu.refresh_menu, menu)
-    // you may use
-    // menu?.findItem(R.id.some_menu_item)
-    // to setup your menu items
-    return true
-}
-
-override fun onOptionsItemSelected(item: MenuItem): Boolean {
-    return when (item.itemId) {
-        R.id.xxx -> {
-            // ... code if the user click on this menu item ...
-            true
-        }
-        else -> super.onOptionsItemSelected(item)
-    }
-}
-```
-</details>
-<details class="details-e">
-<summary>Menu Provider : reusable menus</summary>
-
-This is an extension to menus allowing us to reuse the same menu in multiple activities, or fragments. You will simply move the code you coded for menus inside a MenuProvider.
-
-```kotlin
-class XXXMenuProvider : MenuProvider {
-    override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
-        menuInflater.inflate(R.menu.xxx, menu)
-    }
-
-    override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
-        return when (menuItem.itemId) {
-            R.id.xxx -> {
-                // ... code if the user click on this menu item ...
-                true
-            }
-            else -> false
-        }
-    }
-}
-```
-
-Then, in any fragment, or activity using this menu
-
-```kotlin
-// FOR A FRAGMENT
-activity?.addMenuProvider(RefreshMenuProvider(), viewLifecycleOwner, Lifecycle.State.RESUMED)
-// FOR AN ACTIVITY
-addMenuProvider(RefreshMenuProvider(), this, Lifecycle.State.RESUMED)
-```
-</details>
 </div><div>
 
 * [**RecyclerView**](layouts/RecyclerView.md): not a ViewGroup, but an efficient way of displaying a flexible list of elements.
@@ -108,6 +42,11 @@ The list [of Material components for Android can be found here](https://material
 * Text field: `TextInputLayout` (see [text field](https://material.io/components/text-fields/android#using-text-fields))
 * Switch: `SwitchMaterial` (create a switch, change the type in the .xml)
 * EditText: `TextInputLayout`. There is a builtin feature to display errors (see `error`, and `isErrorEnabled`)
+
+Todo Material 2 and 3.
+
+* [components](https://github.com/material-components/material-components-android/tree/master/docs/components)
+
 </div></div>
 
 <hr class="sl">
