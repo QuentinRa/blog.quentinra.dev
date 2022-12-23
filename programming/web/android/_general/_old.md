@@ -6,11 +6,9 @@
 
 ## Fragments, and navigation component
 
-*[Navigation component (guide)](https://developer.android.com/guide/navigation/navigation-getting-started)*
-
 <div class="row row-cols-md-2 mt-4"><div>
 
-The **navigation component** is a collection of libs simplifying android navigation. For instance, for a bottom navigation, you would want to click on icons, and move from one screen to another. In such case, the navigation component would handle for you stuff like highlighting the current menu.
+or instance, for a bottom navigation, you would want to click on icons, and move from one screen to another. In such case, the navigation component would handle for you stuff like highlighting the current menu.
 
 ```gradle
 // At the top of your build.gradle
@@ -23,38 +21,16 @@ buildscript {
 // after plugin { ... }
 apply plugin: 'androidx.navigation.safeargs.kotlin'
 
-// then as usual
-implementation "androidx.navigation:navigation-fragment-ktx:2.5.2"
-implementation "androidx.navigation:navigation-ui-ktx:2.5.2":2.5.2"
-
 findNavController().popBackStack()
 ```
+
+define what **action** make the user move to another fragment, and what parameters are added... Each fragment/screen is called **destination**.
 </div><div>
 
-<details class="details-e">
-<summary>NavHost: view where fragments are displayed</summary>
-
-The **NavHost** is a container that you will put in your activity.xml, that will be filled with the current fragment being displayed.
-
-It will be linked to a **Navigation graph**, which will handle filling the container with the right fragment. If you are familiar with Java, this is the same as a CardLayout.
-
-Open your `activity.xml`
-
-* Add a **NavHostFragment**
-* Create a **Navigation Graph** (ex: nav_graph)
-* You are done, move to the Navigation Graph section
-
-> **defaultNavHost** is an attribute when true, which is the default value, allows the host to interact with the navigation hierarchy, meaning that for instance, when "back" is pressed, then the Navigation Graph will go back to the previous screen.
-</details>
 
 <details class="details-e">
 <summary>Navigation graph: navigation between fragments</summary>
 
-This is a file, with an editor, allowing to link fragments, and define what **action** make the user move to another fragment, and what parameters are added... Each fragment/screen is called **destination**.
-
-* Resource manager | Navigation | New
-* Click on the phone with a +
-* Add your fragments
 * Use arrows to link your screens
 * Click on a screen to define arguments that are passed
 * Select the initial screen, and click on the "Home button" (Assign start destination). You can also right-click on a screen, as use "set as start destination".

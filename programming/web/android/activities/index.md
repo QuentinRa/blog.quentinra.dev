@@ -313,8 +313,7 @@ Fragments are in many way similar to activities. They are loaded by an activity,
 
 #### Create a fragment
 
-* File > New > fragment > [...]
-* Note that you can open the "new" menu from any folder
+* File > New > fragment > [select a template]
 
 ```kotlin
 class BlankFragment : Fragment() {

@@ -517,7 +517,49 @@ You can use the attribute as long as `app` was imported <small>(see the appropri
 
 ## 🧭 Navigation Component 🧭 
 
-...
+<div class="row row-cols-md-2"><div>
+
+The [navigation component](https://developer.android.com/guide/navigation/navigation-getting-started) is a Jetpack component to handle the navigation between fragments.
+
+```gradle
+dependencies {
+  implementation "androidx.navigation:navigation-fragment-ktx:2.5.3"
+  implementation "androidx.navigation:navigation-ui-ktx:2.5.3"
+}
+```
+
+From the resource manager, go to "navigation", then add a new navigation. For instance, "example_navigation". The generated **example_navigation.xml** is the following
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/example_navigation">
+</navigation>
+```
+
+<div class="row row-cols-md-2"><div>
+
+Switch to the Design View. Create or import your Fragments by clicking on the phone with the plus/add icon.
+</div><div>
+
+![New destination](_images/new_destination.png)
+</div></div>
+</div><div>
+
+Now, you need to create a container. This container will host your navigation graph. It will load the default fragment, and show another fragment when prompted.
+
+```xml
+<androidx.fragment.app.FragmentContainerView
+  android:id="@+id/nav_host_fragment"
+  android:name="androidx.navigation.fragment.NavHostFragment"
+
+  app:defaultNavHost="true"
+  app:navGraph="@navigation/example_navigation" />
+```
+
+➡️On old devices, there is an arrow to go "back". If defaultNavHost is set to true, then "back" will go back to the previous fragment.
+</div></div>
 
 <hr class="sep-both">
 
