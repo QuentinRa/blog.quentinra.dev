@@ -620,6 +620,86 @@ class MainActivity : AppCompatActivity() {
 ```
 </details>
 
+<details class="details-e">
+<summary>Pass arguments to another fragment</summary>
+
+For that, you must create an action. Then, click on the screen that must receive the parameter. In the section, add arguments.
+
+```kotlin
+findNavController().navigate(R.id.action_first_to_second, Bundle().apply {
+  // example with passing a string
+  putString("key", "value")
+})
+```
+
+in the fragment receiving the arguments, use
+
+```kotlin
+val value = arguments?.getString("key")
+```
+
+👉 The problem with that, is that there is no verification of the argument being passed or stuff like that. So, we use **SafeArgs** when we want to do things safely.
+
+```gradle
+// At the top of your build.gradle
+buildscript {
+    dependencies {
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3"
+    }
+}
+
+// after plugin { ... }
+apply plugin: 'androidx.navigation.safeargs.kotlin'
+```
+
+SafeArgs will generate a class **XXXDirections** with XXX the name of the current class.
+
+```diff
+-findNavController().navigate(R.id.action_first_to_second, Bundle().apply {
+-  putString("key", "value")
+-})
++val destination = FirstDirections.actionFirstToSecond(key = "value")
++findNavController().navigate(destination)
+```
+
+Again, SafeArgs will generate a class **XXXArgs** with XXX the name of the current class.
+
+```diff
+-val value = arguments?.getString("key")
++val args by navArgs<XXXArgs>()
++val value = args.key
+```
+</details>
+
+<details class="details-e">
+<summary>Navigation back stack</summary>
+
+The idea is the same as for [Activities](../activities/index.md#application-back-stack), but **each Activity has a back stack of fragments**.
+
+* Remove every fragment until the previous one is either null or a fragment with the Id "**DESTINATION_ID**".
+
+```diff
+<action
++  app:popUpTo="@id/DESTINATION_ID"
+  />
+```
+
+* Remove every fragment until the previous one is either null or the fragment BEFORE a fragment with the Id "**DESTINATION_ID**".
+
+```diff
+<action
+  app:popUpTo="@id/first"
++  app:popUpToInclusive="true"
+  />
+```
+
+* You can call methods from the code too
+
+```kotlin
+findNavController().popBackStack()
+```
+</details>
+
 </div></div>
 
 <hr class="sep-both">
