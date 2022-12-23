@@ -12,7 +12,6 @@
 
 Every folder in `res` may have multiples "copies" for different devices/languages. For instance, if there is a view for large screen devices, it will be used instead of the view made of "every" device.
 
-* [strings.xml](values/strings.md): how to properly handle texts, and localization
 * [arrays.xml](values/arrays.md): handle arrays of strings/integers
 
 </div><div>

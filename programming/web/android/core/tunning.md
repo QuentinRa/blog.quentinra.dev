@@ -89,3 +89,92 @@ Manually edit the XML and replace AndroidX classes with MaterialUI classes. Asid
 * `SwitchCompat` <math xmlns="http://www.w3.org/1998/Math/MathML"><mo accent="false" stretchy="false">&#x2192;</mo></math> `SwitchMaterial`
 * ...
 </div></div>
+
+<hr class="sep-both">
+
+## 🔤 Localization 🔤
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+Android automatically detect the language of the operating system, and load the appropriate language if available, otherwise fallback to the default language.
+
+The default language is defined inside **res/values/strings.xml**.
+
+#### Add a new language
+
+* Open the Resource Manager
+* Click on "String"
+* Click on "+" and "New resource file"
+  * Give the FileName "strings"
+  * Select "Locale" in "Available qualifiers"
+  * Click on ">>"
+  * Select the language your want. You may select a region too.
+* This will open an empty file
+* Copy-paste inside the default language file.
+
+Now, you can set translations for the new locale.
+
+To add translations, you should use the **Translations Editor** <small>(see the "open edit" at the top of any language file)</small>.
+
+#### Edit strings.xml
+
+The format is a dictionary: a **key** is associated with a **value**.
+
+```xml
+<string name="key">value</string>
+```
+
+Inside another XML, you can reference a string with `@string`
+
+```xml
+<TextView
+    android:text="@string/key" />
+```
+
+Or, in the code
+
+```kotlin
+var value = getString(R.string.key)
+// same (from resources)
+var value = resources.getString(R.string.key)
+// same (from a view)
+var value = view.context.getString(R.string.key)
+```
+</div><div>
+
+
+#### Parameters
+
+Android use **String.format** to parse the value, so you can pass parameters, like you would to printf in C.
+
+```xml
+<string name="price">The price is %s</string>
+```
+
+Inside the code
+
+```kotlin
+var value = getString(R.string.price, "$3")
+```
+
+#### Plurals
+
+You can provide variants according to the number of elements.
+
+```xml
+<plurals name="count">
+    <item quantity="zero">0</item>
+    <item quantity="one">1</item>
+    <item quantity="two">2</item>
+    <item quantity="few">few</item>
+    <item quantity="many">many</item>
+    <item quantity="other">unknown</item>
+</plurals>
+```
+
+Then, you need to pass a quantity. ⚠️ **NOTE** that the quantity is used along the locale to determine which "item" will be used. For instance, in english, only **one**, and **other** will be used.
+
+```kotlin
+resources.getQuantityString(R.plurals.count, 0)
+```
+</div></div>
