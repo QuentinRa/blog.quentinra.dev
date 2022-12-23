@@ -2,33 +2,7 @@
 
 **[Updated notes](index.md)**
 
-<hr class="sr">
-
-## Views
-
-<div class="row row-cols-md-2 mx-0"><div>
-
-**Accessibility (attributes)**
-
-* `contentDescription`: what's the purpose of this element
-* `importantForAccessibility`: if this element is just decorative, you can set it to no
-* <small>Don't forget to update `contentDescription`, or any accessibility-related attributes, if needed.</small>, if updating an image from the code/dynamically
-</div><div>
-
 * [**RecyclerView**](layouts/RecyclerView.md): not a ViewGroup, but an efficient way of displaying a flexible list of elements.
-
-Material design is a library of pre-made components. Google recommends to use Material UI components as much as possible.
-The list [of Material components for Android can be found here](https://material.io/components?platform=android).
-
-* Text field: `TextInputLayout` (see [text field](https://material.io/components/text-fields/android#using-text-fields))
-* Switch: `SwitchMaterial` (create a switch, change the type in the .xml)
-* EditText: `TextInputLayout`. There is a builtin feature to display errors (see `error`, and `isErrorEnabled`)
-
-Todo Material 2 and 3.
-
-* [components](https://github.com/material-components/material-components-android/tree/master/docs/components)
-
-</div></div>
 
 <hr class="sl">
 
