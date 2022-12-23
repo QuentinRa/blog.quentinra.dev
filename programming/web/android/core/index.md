@@ -617,10 +617,118 @@ class DummyAdapter(private val items: List<Data>) : RecyclerView.Adapter<DummyAd
 
 Then, inside an Activity/a Fragment, we need to link the recycler view with the adapter.
 
-```kotlin
+```diff
 val recyclerView : RecyclerView = ...
 with(recyclerView) {
-    adapter = DummyAdapter(myList)
++    adapter = DummyAdapter(myList)
 }
 ```
+
+#### Additional notes
+
+<p></p>
+
+<details class="details-e">
+<summary>Optimization: lists of fixed size</summary>
+
+```diff
+val recyclerView : RecyclerView = ...
+with(recyclerView) {
++    setHasFixedSize(true)
+}
+```
+</details>
+
+<details class="details-e">
+<summary>Style: add a separator between items</summary>
+
+```diff
+val recyclerView : RecyclerView = ...
+with(recyclerView) {
++    addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.HORIZONTAL))
+}
+```
+</details>
+
+<details class="details-e">
+<summary>🤔 Dynamic lists: notify 🤔</summary>
+
+The example is using a static unchangeable list. The easy+bad patch would be to rely on **notifyDataSetChanged** which mean we are updating the whole view, for a potentially minor change.
+
+```diff
+-class DummyAdapter(private val items: List<Data>) : RecyclerView.Adapter<DummyAdapter.ViewHolder>() {
++class DummyAdapter(private var items: List<Data>) : RecyclerView.Adapter<DummyAdapter.ViewHolder>() {
+
++    fun updateList(newItems: List<Data>) {
++        items = newItems
++        notifyDataSetChanged()
++    }
+}
+```
+
+You can improve the code above, only update one index, and use a variant of **notify** such as `notifyItemInserted(position)`. Or, you can use LiveData (inside a ViewModel) and a ListAdapter.
+</details>
+
+<details class="details-e">
+<summary>⚡ Dynamic Lists: ListAdapter ⚡</summary>
+
+We need to add a method to compute the difference between two values.
+
+```kotlin
+data class Data(val message: String) {
+    companion object DataDiff : DiffUtil.ItemCallback<Data>() {
+        override fun areItemsTheSame(oldItem: Data, newItem: Data): Boolean {
+            /* you should something unique */
+            return oldItem == newItem ||
+                    oldItem.message == newItem.message
+        }
+
+        override fun areContentsTheSame(oldItem: Data, newItem: Data): Boolean {
+            /* check every attribute that may have changed */
+            return oldItem.message == newItem.message
+        }
+    }
+}
+```
+
+Then, we replace our Adapter with a ListAdapter.
+
+```diff
+-class DummyAdapter(private val items: List<Data>) : RecyclerView.Adapter<DummyAdapter.ViewHolder>() {
++class DummyAdapter(private val items: LiveData<List<Data>>) : ListAdapter<Data, DummyAdapter.ViewHolder>(Data) {
+        private val messageView = view.findViewById<TextView>(R.id.message)
+
+        fun bind(data: Data) {
+            messageView.text = data.message
+        }
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.data_item, parent, false))
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+-        holder.bind(items[position])
++        holder.bind(items.value!![position])
+    }
+
+    override fun getItemCount(): Int {
+-        return items.size
++        return items.value?.size ?: 0
+    }
+}
+```
+
+Then, you can use the code below to update the recycler view when the list is updated. The ListAdapter will compute changes in a **background thread**, and **only update what changed**.
+
+```kotlin
+viewModel.myList.observe(this) {
+  with(binding.recyclerView.adapter as DummyAdapter) {
+    submitList(it)
+  }
+}
+```
+
+⚠️ It's worth noting that this is only working because `items` inside our ListAdapter is a LiveData. If it was a normal list, we would have to re-assign the attribute as we did with **notify**.
+</details>
 </div></div>

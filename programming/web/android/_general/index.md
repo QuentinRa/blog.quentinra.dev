@@ -230,4 +230,8 @@ while (true) {
     delay(10000)
 }
 ```
+
+```gradle
+implementation 'androidx.leanback:leanback:1.0.0'
+```
 </div></div>
