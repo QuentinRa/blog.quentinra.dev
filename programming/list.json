@@ -167,7 +167,7 @@
               "hidden": false
             },
             {
-              "tag": "web/android/core/tunning.md",
+              "tag": "web/android/core/tuning.md",
               "name": "Improvements",
               "desc": "Localization, MVVM, Themes...",
               "icon": "<i class=\"bi bi-lightning-fill\"></i>",

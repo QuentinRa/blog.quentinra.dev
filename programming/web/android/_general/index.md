@@ -308,12 +308,17 @@ Links
 * [Jetpack Compose](https://developer.android.com/courses/jetpack-compose/course)
 * [Android architecture](https://developer.android.com/courses/pathways/android-architecture)
 * [KTX](https://developer.android.com/kotlin/ktx)
+
+External
+
+* Internet
+* Views
+* Improvements
 </div><div>
 
-**[Old notes](_old.md)**
+Random
 
-<details class="details-e">
-<summary>Flows</summary>
+A [flow](https://developer.android.com/kotlin/flow) ([and](https://developer.android.com/topic/libraries/architecture/coroutines#lifecycle-aware).) is canceled when the app goes to background/rotating the screen. We could patch that by giving a timeout to "asLiveData", but by doing that, the flow will continue to be run while the app is in the background, until the timeout that is.
 
 ```kotlin
 // implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
@@ -326,20 +331,9 @@ val myLiveData : LiveData<Int> = flow {
 }.asLiveData()
 ```
 
-[Also](https://developer.android.com/topic/libraries/architecture/coroutines#lifecycle-aware).
-
-A [flow](https://developer.android.com/kotlin/flow) is canceled when the app goes to background/rotating the screen. We could patch that by giving a timeout to "asLiveData", but by doing that, the flow will continue to be run while the app is in the background, until the timeout that is.
-</details>
-
 ```kotlin
 val preferences: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
 if (preferences.getBoolean("key", false)) {}
-
-while (true) {
-    // do task
-    // every 10 seconds
-    delay(10000)
-}
 ```
 
 ```gradle
