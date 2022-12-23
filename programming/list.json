@@ -165,6 +165,13 @@
               "desc": "How to connect to APIs.",
               "icon": "<i class=\"bi bi-android\"></i>",
               "hidden": false
+            },
+            {
+              "tag": "web/android/core/tunning.md",
+              "name": "Improvements",
+              "desc": "Localization, MVVM, Themes...",
+              "icon": "<i class=\"bi bi-lightning-fill\"></i>",
+              "hidden": false
             }
           ]
         }

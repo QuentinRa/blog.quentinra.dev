@@ -4,25 +4,6 @@
 
 <hr class="sr">
 
-## Application Architecture
-
-<div class="row row-cols-md-2"><div>
-
-**MVVM**: Model-View-ViewModel, is an architecture by opposition to the MVC architecture, in which the ViewModel is updating the view, when the Model changed. In Android,
-
-The Controller is responsible for rendering the UI, and listening to events. Using the full application of MVVM
-
-* A LiveData is a variable storing a value, and calling an observer when this value changed
-* A repository is a class that is fetching data from an API, or a local database (see Room)
-* A ViewModel is a class providing access to the LiveData to other classes. It will use the repository to update the value stored in a LiveData
-
-Then, using **Data binding**, you can directly use your LiveData in your XML, the file in which you create your view, and if the LiveData value is updated, so will your view.
-</div><div>
-
-</div></div>
-
-<hr class="sr">
-
 ## Views
 
 <div class="row row-cols-md-2 mx-0"><div>
