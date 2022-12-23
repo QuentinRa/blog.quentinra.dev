@@ -24,41 +24,9 @@ apply plugin: 'androidx.navigation.safeargs.kotlin'
 findNavController().popBackStack()
 ```
 
-define what **action** make the user move to another fragment, and what parameters are added... Each fragment/screen is called **destination**.
 </div><div>
 
-
-<details class="details-e">
-<summary>Navigation graph: navigation between fragments</summary>
-
-* Use arrows to link your screens
 * Click on a screen to define arguments that are passed
-* Select the initial screen, and click on the "Home button" (Assign start destination). You can also right-click on a screen, as use "set as start destination".
-
-> **Note**: if you want the name shown in the navbar to match the current fragment, edit the property `label` of each fragment with something else than `@string/app_name`.
-</details>
-
-<details class="details-e">
-<summary>NavController: ...</summary>
-
-```kotlin
-private lateinit var navController: NavController
-
-override fun onCreate(savedInstanceState: Bundle?) {
-    // ... code ...
-    val navHostFragment = supportFragmentManager
-        .findFragmentById(R.id.fragmentContainerView) as NavHostFragment
-    navController = navHostFragment.navController
-    // show menus
-    setupActionBarWithNavController(navController)
-}
-
-// handle "up" button, to go back if pressed
-override fun onSupportNavigateUp(): Boolean {
-    return navController.navigateUp() || super.onSupportNavigateUp()
-}
-```
-</details>
 
 <details class="details-e">
 <summary>Navigate to another fragment</summary>
@@ -68,8 +36,6 @@ Use the function `navigate` on the nav controller
 ```kotlin
 // in a Fragment
 findNavController().navigate(action)
-// or, if your action do not take any parameters
-findNavController().navigate(action_id)
 ```
 
 You need to provide an action. If you are inside `XXX`, then the action will be available as a static method of `XXXDirections`. You may have to build the project, as these classes are created for you by the SafeArgs plugin, when you connected two fragments.
@@ -88,21 +54,6 @@ In the other fragment, let's say, `YYY`, you will have a class `YYYArgs` that wi
 ```kotlin
 val args by navArgs<XXXArgs>()
 val arg = args.arg
-```
-</details>
-
-<details class="details-e">
-<summary>Navigation UI</summary>
-
-A set of UI components to do "Options Menus, bottom nav, nav view, nav drawer, action bar, toolbars, and collapsed toolbars". For instance, for a bottom navigation menu, 
-
-* Create a BottomNavigationView,
-* Process as you do for menus
-* And, in the code,
-
-```kotlin
-val bottomNavigationView = binding.bottomNavigationView
-bottomNavigationView?.setupWithNavController(findNavController())
 ```
 </details>
 

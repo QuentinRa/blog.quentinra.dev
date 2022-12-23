@@ -528,6 +528,10 @@ dependencies {
 }
 ```
 
+<br>
+
+#### Create a navigation graph
+
 From the resource manager, go to "navigation", then add a new navigation. For instance, "example_navigation". The generated **example_navigation.xml** is the following
 
 ```xml
@@ -538,6 +542,10 @@ From the resource manager, go to "navigation", then add a new navigation. For in
 </navigation>
 ```
 
+<br>
+
+#### Add destinations
+
 <div class="row row-cols-md-2"><div>
 
 Switch to the Design View. Create or import your Fragments by clicking on the phone with the plus/add icon.
@@ -545,7 +553,11 @@ Switch to the Design View. Create or import your Fragments by clicking on the ph
 
 ![New destination](_images/new_destination.png)
 </div></div>
+
+➡️ To change the "home" fragment, select on a fragment, and click on the home icon. The home fragment is the one loaded by default.
 </div><div>
+
+#### Create a NavHost
 
 Now, you need to create a container. This container will host your navigation graph. It will load the default fragment, and show another fragment when prompted.
 
@@ -559,6 +571,55 @@ Now, you need to create a container. This container will host your navigation gr
 ```
 
 ➡️On old devices, there is an arrow to go "back". If defaultNavHost is set to true, then "back" will go back to the previous fragment.
+
+#### Navigation
+
+Inside **example_navigation.xml**, each fragment should have an Id.
+
+```kotlin
+findNavController().navigate(R.id.DESTINATION_ID)
+```
+
+You can also create an action (=link), by linking two destinations. Then, use the action's Id
+
+```kotlin
+findNavController().navigate(R.id.action_xxx_to_yyy)
+```
+
+#### Additional notes
+
+<p></p>
+
+<details class="details-e">
+<summary>Setup the navbar to follow a NavHost</summary>
+
+This will set the "label" of a fragment <small>(see the navigation file)</small> as the title of the screen. Moreover, this will add a button "back" to go back to the previous fragment.
+
+![fragment_back](_images/fragment_back.png)
+
+```kotlin
+class MainActivity : AppCompatActivity() {
+    private lateinit var navController: NavController
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        navController = navHostFragment.navController
+        // show the label in the menu bar
+        // and the icon "back" when needed
+        setupActionBarWithNavController(navController)
+    }
+
+    // pressing "back" in the menu, will go back
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp() || super.onSupportNavigateUp()
+    }
+}
+```
+</details>
+
 </div></div>
 
 <hr class="sep-both">
