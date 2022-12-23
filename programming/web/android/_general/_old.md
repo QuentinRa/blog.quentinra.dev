@@ -4,38 +4,6 @@
 
 * [**RecyclerView**](layouts/RecyclerView.md): not a ViewGroup, but an efficient way of displaying a flexible list of elements.
 
-<hr class="sl">
-
-## Resources
-
-<div class="row row-cols-md-2 mx-0"><div>
-
-Every folder in `res` may have multiples "copies" for different devices/languages. For instance, if there is a view for large screen devices, it will be used instead of the view made of "every" device.
-
-* [arrays.xml](values/arrays.md): handle arrays of strings/integers
-
-</div><div>
-
-<details class="details-e">
-<summary>Access resource's (view...) Id in the code</summary>
-
-Each resource may have an id. The main class `R` is managing every id trough subclasses such as `drawable`. If you want a drawable with the id `ic_launcher_foreground` do:
-
-```kotlin
-val drawableId : Int = R.drawable.myDrawable
-val viewId : Int = R.id.hello_world
-```
-</details>
-
-If you write in your code a method taking an id, then you can check if this id has the "right" type using annotation, as every id is an int. Add `@StringRes`, `@DrawableRes`, or `@LayoutRes` before a variable, a parameter, or an attribute.
-
-```kotlin
-fun loadIcon(@DrawableRes drawableId: Int) {
-    val drawable = AppCompatResources.getDrawable(this, drawableId)
-}
-```
-</div></div>
-
 <hr class="sr">
 
 ## Multitasking

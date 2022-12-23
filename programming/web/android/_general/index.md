@@ -168,7 +168,6 @@ Stuff that I found, but never read/used yet.
 * Android ProGuard
 * Datastore
 * File system
-* Themes
 * Android bottom navigation
 * Services
 * [Nested navigation graphs](https://developer.android.com/guide/navigation/navigation-nested-graphs)
@@ -176,9 +175,6 @@ Stuff that I found, but never read/used yet.
 * backups (see [autobackups](https://developer.android.com/guide/topics/data/autobackup))
 * Modern Android Development (MAD)
 * Android Tests + Advanced testing
-* Deep Link
-* Talkback
-* Tint/Dark mode
 * Advanced Data Binding, Recommended App architecture
 * NFC
 

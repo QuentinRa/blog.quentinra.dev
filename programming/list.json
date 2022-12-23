@@ -141,7 +141,7 @@
             {
               "tag": "web/android/views/index.md",
               "name": "Views",
-              "desc": "...",
+              "desc": "XML, Views, Layouts, Bindings...",
               "icon": "<i class=\"bi bi-android\"></i>",
               "hidden": false
             },
