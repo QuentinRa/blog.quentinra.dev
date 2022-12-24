@@ -6,10 +6,7 @@
 
 ## Basic Syntax
 
-* [Variables](syntax/var.md)
 * [Types](syntax/types.md)
-* [Operators](syntax/operators.md)
-* [Structures](syntax/structures.md)
 * [Functions](syntax/function.md)
 
 You may use this too, but for some, the syntax above will be enough

@@ -86,6 +86,53 @@ You can use every usual operator.
 * `===`/`!==`: **strict**, compare value and the type <small>(`5==='5'` is false)</small>
 </div></div>
 
+<hr class="sep-both">
+
+## 🗃️ Control-flow and usual functions 🗃️
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+⚠️ It's important to note that any non-boolean value will be casted to a boolean. For instance, `" "` is equals to `false` <small>(`" " == true` is `false`)</small>.
+
+➡️ As always, you can use break/continue in loops.
+
+##### If and Switch
+
+```javascript
+if (boolean) { /* ... */ }
+if (boolean) { /* ... */ } else { /* ... */ }
+if (boolean) { /* ... */ } else if (boolean) { /* ... */ }
+switch (value) {
+    case xxx: /* ... */; break;
+    case yyy: /* ... */; break;
+    default: /* ... */;break;
+}
+```
+
+##### While / Do while
+
+```javascript
+while (cond) { /* ... */ }
+do { /* ... */ } while (boolean)
+```
+
+##### for (i) and for (each)
+
+```javascript
+for(let i = 0; i < 10; i++) { /* ... */ }
+for(let i = 0, j = 0; /* ... */; i++) { /* ... */ }
+for(i = 0; i < 10; i++) { /* ❌ implicit var */ }
+```
+
+```javascript
+for(i in array) { /* i is an index of array */ }
+for(i of array) { /* i is a value of array */ }
+```
+
+</div><div>
+
+...
+</div></div>
 
 <hr class="sep-both">
 
