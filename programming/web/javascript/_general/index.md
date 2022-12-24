@@ -41,6 +41,11 @@ class X {
 }
 this.events.splice(0, 0, xxx) // insert at 0
 "xxx,yyy".includes(",") // contains
+
+setTimeout(function () { },  xxx);
+setInterval(function () { },  xxx);
+
+// /x/g
 ```
 </div><div>
 

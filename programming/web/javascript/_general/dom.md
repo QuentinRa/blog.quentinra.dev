@@ -63,6 +63,75 @@ This is the proper way to do it. It allows us to minify JavaScript, use CDNs, ha
 
 <hr class="sep-both">
 
+## 🚀 Events 🚀
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+* ➡️ Called when the visibility <small>(hidden, shown back)</small> of the page is changed <small>(ex: tab changed, minified...)</small>
+
+```javascript
+// ➡️  See "document.hidden" (boolean)
+document.addEventListener('visibilitychange', () => {});
+```
+</div><div>
+
+* ➡  Execute some code when a key is pressed
+
+```javascript
+document.onkeydown = e => {
+    switch (e.code) {
+        case 'KeyR': 
+            e.preventDefault();
+            // ...
+            break;
+    }
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
+## ⚡ Special features ⚡
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+#### Notifications
+
+```javascript
+if (Notification?.permission === "granted") {
+    // send a notification
+    const img = 'xxx.png';
+    const notification = new Notification(title, { body: body, icon: img });
+    // done
+} else {
+    // you may request permission first
+    Notification.requestPermission().then()
+}
+```
+</div><div>
+
+#### Popups
+
+* ➡️ Show a popup with some message
+
+```javascript
+alert("XXX?")
+```
+
+* ➡️ Show a popup asking the user for input
+
+```javascript
+let value = prompt("XXX?", "defaultValueOfTheInputField")
+if (value != null) {
+    // ...
+}
+```
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -70,17 +139,10 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 ```javascript
-const img = 'xxx.png';
-const notification = new Notification(title, { body: body, icon: img });
-
 xxx.removeAttribute("hidden")
 xxx.setAttribute("hidden", "")
 
-document.hidden
-document.addEventListener('visibilitychange', () => {})
-
-setTimeout(function () { },  xxx);
-setInterval(function () { },  xxx);
+xxx.innerHTML = ``
 ```
 </div><div>
 
