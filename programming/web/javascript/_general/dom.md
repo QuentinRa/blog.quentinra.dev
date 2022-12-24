@@ -97,6 +97,8 @@ document.onkeydown = e => {
 
 #### Notifications
 
+[See NotificationsAPI](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API)
+
 ```javascript
 if (Notification?.permission === "granted") {
     // send a notification
@@ -108,6 +110,25 @@ if (Notification?.permission === "granted") {
     Notification.requestPermission().then()
 }
 ```
+
+#### LocalStorage
+
+The localStorage is a storage inside the client browser. What's stored inside can be edited from the developers tools in the tab Application.
+
+```javascript
+// store
+localStorage.setItem('key', 'value')
+// get
+const value = localStorage.getItem("key")
+if (value != null) { /* ... */ }
+
+localStorage.removeItem("key")
+```
+
+It's useful to store/cache some data, but you must take into account that the user can add/edit/remove them.
+
+➡️To store an Object, use `JSON.stringify` and `JSON.parse`.
+
 </div><div>
 
 #### Popups
@@ -139,12 +160,18 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 ```javascript
+document.createElement("div")
+xxx.querySelector("xxx")
+xxx.appendChild(node)
 xxx.removeAttribute("hidden")
 xxx.setAttribute("hidden", "")
-
+xxx.replaceChildren() // remove children
+xxx.replaceChildren(yyy, zzz)
 xxx.innerHTML = ``
 ```
 </div><div>
 
+* SessionStorage
+* ServiceWorkers
 
 </div></div>

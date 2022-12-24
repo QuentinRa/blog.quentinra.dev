@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[Vue.js](https://vuejs.org/) is a simplified yet robust alternative to popular front-end frameworks like React or Angular. It's nice to learn this one first, as has a smaller learning curve, meaning it's easier to learn.
+[Vue.js](https://vuejs.org/) is a simplified yet robust alternative to popular front-end frameworks like React or Angular. It's nice to learn this one first, as it has a smaller learning curve, meaning it's easier to learn.
 
 Before, you could use [vue-cli](https://github.com/vuejs/vue-cli) (29.5k ⭐), but now it's in maintenance mode, so they are recommending us to use [vite](https://vitejs.dev/) (50.6k ⭐).
 
@@ -45,7 +45,7 @@ import HelloWorld from './components/HelloWorld.vue'
 </style>
 ```
 
-There are two ways of doing the same thing is Vue. One is to use `<script setup>` (**Composition API**) and the other is to use `<script>` (**Options API**). The latter is usually more wordy, but relatively easier to learn, so we will go with that.
+There are two ways of doing the same thing in Vue. One is to use `<script setup>` (**Composition API**) and the other is to use `<script>` (**Options API**). The latter is usually wordier, but relatively easier to learn, so we will go with that.
 </div><div>
 
 As you have seen, a component can pass arguments to another component. Here, the component is declaring a property `msg`.
@@ -101,9 +101,9 @@ export default {
   components: { HelloWorld },
   data() {
     // declare references here. These are variables
-    // that can be used in the HTML. If they are modified
-    // then, the HTML element is updated too.
-    // (bi-directional data-biding)
+    // that can be used in the HTML block. If they are
+    // modified, then, the HTML element is updated too.
+    // (bidirectional data-biding)
     return {
       count: 0
     }
@@ -132,7 +132,7 @@ export default {
   },
   mounted() {
     // execute code with document.querySelector/... here,
-    // like stuff that need the component to be inside the
+    // like stuff that needs the component to be inside the
     // DOM to work.
   },
   created() {},
@@ -169,7 +169,7 @@ Inside braces, or inside Vue attributes, you can use JavaScript, or most specifi
 <div :class="['classA', 'classB']"></div>
 ```
 
-* **v-model**: bi-directional data-binding. Now, if the value is modified by the element, then the data is modified too.
+* **v-model**: bidirectional data-binding. Now, if the value is modified by the element, then the data is modified too.
 
 ```
 <input v-model="count">
@@ -273,7 +273,7 @@ import { RouterLink, RouterView } from 'vue-router'
 Note that RouterView is where the loaded page will be displayed.
 </div><div>
 
-In `main.js` when mouting the app, we "use" a router
+In `main.js` when mounting the app, we "use" a router
 
 ```javascript
 const router = createRouter({
