@@ -45,6 +45,9 @@ this.events.splice(0, 0, xxx) // insert at 0
 setTimeout(function () { },  xxx);
 setInterval(function () { },  xxx);
 
+// parseFloat(x);
+// parseInt(x);
+// sNaN(montant)
 // /x/g
 ```
 </div><div>
