@@ -4,18 +4,6 @@
 
 As you saw, we don't specify the variable type when creating a variable. The typing is implicit, and you will often see these types
 
-* `true/false`: a boolean (type boolean)
-* `5`: an integer (type number)
-* `5.0`: a float (type number)
-* `5.0`: a string (type string, class String)
-* `"5.0"`: a string (type string, class String)
-* <code>\`5.0\`</code>: a string (type string, class String)
-* `[]`: an (empty) array (type object, class Array)
-* `{}`: an (empty) object (type object)
-* `undefined`: something not defined, default value
-* `null`: something null (defined but empty)
-* `NaN`: NotANumber (type number)
-
 You can use 
 
 * `typeof variable`: return the type of variable, mainly used in well-written functions

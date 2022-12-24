@@ -23,6 +23,63 @@ console.info("message")
 
 <hr class="sep-both">
 
+## Variables and Types
+
+<div class="row row-cols-md-2"><div>
+
+There are 3 ways to declare a variable.
+
+```javascript
+// ✅ use CONST as much as possible
+const five = 5
+// ✅ let is used for scoped-variable
+let str = "five"
+// ❌ var is used for global variables
+var x = 5
+```
+
+There are two "null" values. Note that both are equals (`==`).
+
+* **undefined**: not defined
+* **null**: defined, but null
+
+You can use type-safe calls
+
+```
+// default value
+const default_value = null ?? default_value
+const default_value = undefined ?? default_value
+// if one is null/undefined, return undefined
+const undefined = undefined?.property
+const null = null?.property
+// mix both
+const zero = null?.property ?? default_value
+```
+
+</div><div>
+
+Types are implicit in JavaScript.
+
+```javascript
+// boolean
+const boolean = true || false
+// number
+const number = 5
+const number = 5.0
+const number = NaN
+// string - class String
+const string = "str"
+const string = 'str'
+const string = `str`
+// object
+const object = {}
+const object = [] // class Array
+```
+</div></div>
+
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -30,6 +87,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 ```javascript
+// null/undefined ?? 'value'
 if (typeof(value) === 'string') {}
 const f = (args) => (5);
 if ("".trim().length !== 0) {}
