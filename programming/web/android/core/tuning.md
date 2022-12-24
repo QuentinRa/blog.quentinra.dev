@@ -58,8 +58,8 @@ By convention, each style should have a parent, and be named as the parent, whil
 <details class="details-e">
 <summary>Icons</summary>
 
-Different manufacturers may show app icons in a different shape than
-the circular icon shape :  square shape, rounded square, or squircle (between a square and circle)...
+Different manufacturers may show app icons in a different shapes than
+the circular icon shape: square shape, rounded square, or squircle (between a square and circle)...
 
 <https://developer.android.com/training/multiscreen/screendensities#TaskProvideAltBmp>
 
@@ -67,7 +67,7 @@ Adaptive icons since v26
 => background
 => foreground
 => + new image asset
-=> new assets should be moved in the same folder v26
+=> new assets should be moved to the same folder v26
 
 <https://developer.android.com/codelabs/basic-android-kotlin-training-display-list-cards> (3 => easy way to import icon).
 </details>
@@ -97,7 +97,7 @@ Adaptive icons since v26
   * They are usually stored in `.ui.viewname` with their View
   * See also: DataBinding
 
-The "main" composant is the ViewModel. This is a composant that will link the View with the model. When the model is updated, it will update the View. When the View is updated, it will update the model.
+The "main" component is the ViewModel. This is a component that will link the View with the model. When the model is updated, it will update the View. When the View is updated, it will update the model.
 
 <br>
 
@@ -134,18 +134,18 @@ For images, if they are important for accessibility, you should provide a conten
 
 <div class="row row-cols-md-2"><div>
 
-Material design is a library of pre-made components. Google recommends to use Material UI components as much as possible.
+Material design is a library of pre-made components. Google recommends using Material UI components as much as possible.
 
 * [See Material 2 Documentation](https://m2.material.io/) <small>(currently widely used)</small>
 * [See Material 3 Documentation](https://m3.material.io/) <small>(released in late 2022)</small>
 
-Material design provide both
+Material design provides both
 
 * 👉 Guidelines (padding, sizes...) to make nice UI
 * 👉 Pre-made Composants <small>(padding, sizes...)</small>
 </div><div>
 
-Manually edit the XML and replace AndroidX classes with MaterialUI classes. Aside the name of the class, and new attributes being available, nothing much will change.
+Manually edit the XML and replace AndroidX classes with MaterialUI classes. Aside from the name of the class, and new attributes being available, nothing much will change.
 
 [See the list here + detailed instructions](https://github.com/material-components/material-components-android/tree/master/docs/components)
 
@@ -160,7 +160,7 @@ Manually edit the XML and replace AndroidX classes with MaterialUI classes. Asid
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-Android automatically detect the language of the operating system, and load the appropriate language if available, otherwise fallback to the default language.
+Android automatically detects the language of the operating system and loads the appropriate language if available, otherwise fallback to the default language.
 
 The default language is defined inside **res/values/strings.xml**.
 
@@ -184,7 +184,7 @@ To add translations, you should use the **Translations Editor** <small>(see the 
 
 #### Edit strings.xml
 
-The format is a dictionary: a **key** is associated with a **value**.
+This is a dictionary: a **key** is associated with a **value**.
 
 ```xml
 <string name="key">value</string>
@@ -210,7 +210,7 @@ var value = view.context.getString(R.string.key)
 
 #### Parameters
 
-Android use **String.format** to parse the value, so you can pass parameters, like you would to printf in C.
+Android use **String.format** to parse the value, so you can pass parameters, as you would to printf in C.
 
 ```xml
 <string name="price">The price is %s</string>
@@ -237,7 +237,7 @@ You can provide variants according to the number of elements.
 </plurals>
 ```
 
-Then, you need to pass a quantity. ⚠️ **NOTE** that the quantity is used along the locale to determine which "item" will be used. For instance, in english, only **one**, and **other** will be used.
+Then, you need to pass a quantity. ⚠️ **NOTE** that the quantity is used along the locale to determine which "item" will be used. For instance, in English, only **one**, and **other** will be used.
 
 ```kotlin
 resources.getQuantityString(R.plurals.count, 0)
@@ -276,7 +276,7 @@ val xxx = formatter.format(calendar.time)
 
 #### Arrays
 
-Arrays are list of hard-coded values such as a list of countries. Go to Resources Manager > Arrays, and create a new one.
+Arrays are lists of hard-coded values such as a list of countries. Go to Resources Manager > Arrays, and create a new one.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -301,7 +301,7 @@ val intArray = resources.getIntArray(R.array.int_array).toList()
 
 #### Dimensions
 
-Every folder in `res` may have multiples "copies" for different devices. For instance, if there is a view for large screen devices, it will be used instead of the view made of "every" device.
+Every folder in `res` may have multiples "copies" for different devices. For instance, if there is a view for large-screen devices, it will be used instead of the view made of "every" device.
 
 It's also a better practice to avoid hard-coded padding/margins/..., and instead, add them inside a `dimens.xml`, then use `@dimens/key`.
 

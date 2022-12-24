@@ -24,7 +24,7 @@ You will also have to edit AndroidManifest.xml and allow HTTP
 </details>
 </div><div>
 
-There are many library that you may use at some point
+There are many libraries that you may use at some point
 
 * [retrofit](https://github.com/square/retrofit) (40.9k ⭐): HTTP library
 * [moshi](https://github.com/square/moshi) (8.7k ⭐): JSON library
@@ -33,7 +33,7 @@ There are many library that you may use at some point
 * [fuel](https://github.com/kittinunf/fuel) (4.3k ⭐, 👻): HTTP library
 * [volley](https://github.com/google/volley) (3.3k ⭐, 👻): HTTP library
 
-What I defined as HTTP libraries are libraries that are providing an interface to an HTTP client, so they aren't the one doing the request.
+What I defined as HTTP libraries are libraries that are providing an interface to an HTTP client, so they aren't the ones doing the request.
 </div></div>
 
 <hr class="sep-both">
@@ -87,7 +87,7 @@ interface JsonPlaceholderAPI {
 }
 ```
 
-> You can remove the return type if the result do not interest you.
+> You can remove the return type if the result does not interest you.
 </div><div>
 
 #### RetrofitService
@@ -316,7 +316,7 @@ private val moshi = Moshi.Builder()
 ```kotlin
 // mochi will first parse the result in XXX
 data class XXX(@Json(name = "type") val type : Int)
-// but, we want to use a enum instead of an Int
+// but, we want to use an enum instead of an Int
 enum class YYY {
     AAA,
     BBB,
@@ -351,7 +351,7 @@ suspend fun getXXX() : YYY
 
 <div class="row row-cols-md-2"><div>
 
-By default, Retrofit do not store/load cookies. It can be solved easily by creating a CookieJar.
+By default, Retrofit does not store/load cookies. It can be solved easily by creating a CookieJar.
 
 ```diff
 + import okhttp3.OkHttpClient
@@ -363,7 +363,7 @@ private val retrofit = Retrofit.Builder()
     .build()
 ```
 
-The SimpleCookieJar is a class that is storing cookies received from the server, and loading them in the next requests.
+The SimpleCookieJar is a class that is storing cookies received from the server, and loads them in the next requests.
 </div><div>
 
 ```

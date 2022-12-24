@@ -1,3 +1,8 @@
+class TTT {
+    companion object XXX : YYY {}
+}
+TTT.XXX or TTT
+
 https://insert-koin.io/
 T extends XXX<YYY, ZZZ>  & TTT &  UUU
 
