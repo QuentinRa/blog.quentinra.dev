@@ -31,7 +31,11 @@ Stuff that I found, but never read/used yet.
 ```css
 .selector {
     white-space: pre-line; /* multilines */
+    background: rgba(37,70,170,0.83) !important;
+    width: 44px;
+    opacity: 1;
 }
-:not(td[colspan="7"], td[colspan="3"]) {}
+
+table.class tr > :not(td[colspan="7"], :first-child) {}
 ```
 </div></div>

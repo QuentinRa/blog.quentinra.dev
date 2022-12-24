@@ -303,6 +303,8 @@ Stuff that I found, but never read/used yet.
 ```
 h-100
 fs-4
+fw-bold
+align-middle
 list-inline + list-inline-item
 ```
 </div></div>
