@@ -2,14 +2,6 @@
 
 [Go back](../index.md#basic-syntax)
 
-As you saw, we don't specify the variable type when creating a variable. The typing is implicit, and you will often see these types
-
-You can use 
-
-* `typeof variable`: return the type of variable, mainly used in well-written functions
-* `var instanceof className` returning a boolean if this variable is an instance of a class
-like `[] instanceof Array`.
-
 <hr class="sl">
 
 ## Strings

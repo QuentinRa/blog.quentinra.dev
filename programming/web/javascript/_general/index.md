@@ -32,7 +32,7 @@ There are 3 ways to declare a variable.
 ```javascript
 // ✅ use CONST as much as possible
 const five = 5
-// ✅ let is used for scoped-variable
+// ✅ let is used for scoped-variable (=block variables)
 let str = "five"
 // ❌ var is used for global variables
 var x = 5
@@ -43,38 +43,47 @@ There are two "null" values. Note that both are equals (`==`).
 * **undefined**: not defined
 * **null**: defined, but null
 
-You can use type-safe calls
+You can use the operator `?.` and `??` to write null-safe code
 
 ```
 // default value
-const default_value = null ?? default_value
-const default_value = undefined ?? default_value
-// if one is null/undefined, return undefined
-const undefined = undefined?.property
-const null = null?.property
+const x = null ?? default_value // default
+const x = undefined ?? default_value // default
+// call on null/undefined, return null/undefined
+const x = undefined?.toString() // undefined
+const x = null?.property // null
 // mix both
-const zero = null?.property ?? default_value
+const x = null?.property ?? default_value // default
 ```
 
 </div><div>
 
-Types are implicit in JavaScript.
+Types are implicit in JavaScript. See **typeof**/**instanceof**.
 
 ```javascript
-// boolean
-const boolean = true || false
-// number
-const number = 5
-const number = 5.0
-const number = NaN
-// string - class String
-const string = "str"
-const string = 'str'
-const string = `str`
-// object
-const object = {}
-const object = [] // class Array
+// Boolean | typeof(b) === 'boolean'
+const b = true || false
+// Number | typeof(n) === 'number'
+const n = 5 // ➡️ Number.isInteger(xxx), parseInt(xxx)
+const n = 5.0 // ➡️ Number.isFinite(xxx), parseFloat(xxx)
+const n = NaN // ➡️ Number.isNan(xxx)
+// String | typeof(str) === 'string'
+const str = "string"
+const str = 'string'
+const str = `template literals/string`
+// Object | typeof(o) === 'object'
+const o = {}
+// Array | typeof(a) === 'object' | ✅ a instanceof Array
+const a = []
 ```
+
+You can use every usual operator.
+
+* `+`, `-`, `>`, `>=`, `&&`, `||`, `!`...
+* `^` <small>(modulo)</small>, `**` <small>(exponentiation/power)</small>
+* `+=`/`-=`/... `var++` and `var--`
+* `==`/`!=`: **non-strict**, compare value <small>(`5=='5'` is true)</small>
+* `===`/`!==`: **strict**, compare value and the type <small>(`5==='5'` is false)</small>
 </div></div>
 
 
@@ -87,8 +96,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 ```javascript
-// null/undefined ?? 'value'
-if (typeof(value) === 'string') {}
 const f = (args) => (5);
 if ("".trim().length !== 0) {}
 if ("") {} // empty = false
