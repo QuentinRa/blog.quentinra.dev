@@ -16,6 +16,9 @@ Some browsers may not support some newly added features.
 * 🚀 If there is a heavy need for a feature, you can use [polyfill](https://polyfill.io/v3/) to load missing features. You can generate one [here](https://polyfill.io/v3/url-builder/).
 </div></div>
 
+⚠️ Modern browsers are usually caching JavaScript files. If you changed a file, and don't see any changes, clear the cache, and try again.<br>
+Usual shortcuts: <kbd>CTRL+SHIFT+R</kbd> or <kbd>SHIFT+F5</kbd> or <kbd>CTRL+F5</kbd>
+
 <hr class="sep-both">
 
 ## Getting started
@@ -23,7 +26,7 @@ Some browsers may not support some newly added features.
 There are 3 ways to write JavaScript for a website.
 
 <table class="table border-dark table-striped table-bordered">
-<thead><tr><th>Inline JS 🤮</th><th>SCRIPT tag 🤢</th><th>External JS 😍</th></tr></thead>
+<thead><tr><th>Inline JS 🤮</th><th>SCRIPT tag 🤢</th><th>External JavaScript file 😍</th></tr></thead>
 <tbody>
 <tr>
 <td>
@@ -175,5 +178,9 @@ xxx.innerHTML = ``
 * SessionStorage
 * ServiceWorkers
 * [Get Query](https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript)
+
+JavaScript (JS) base is made of the scripting language ECMAScript. We are currently in **ECMAScript2021** (v12). The most used version of JavaScript is **ECMAScript6** (2015). In the ancient times, jQuery was a popular library adding a lot of useful stuff in JavaScript, but now quite a lot of these are directly served in JavaScript, so modern developers aren't using it as often as before <small>(because removing it makes the website faster, increasing both performances and SEO)</small>. For instance, Bootstrap (the famous CSS framework) removed the jQuery dependency in version 5 <small>(dropping Internet Explorer support in the meantime)</small>.
+
+As always, you may learn JavaScript on [W3School](https://www.w3schools.com/Js/default.asp) or [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction).
 
 </div></div>

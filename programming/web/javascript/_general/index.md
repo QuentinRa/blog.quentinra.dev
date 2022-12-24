@@ -1,13 +1,24 @@
 # JavaScript (JS)
 
-**[Old notes](_old.md)**
-
 <div class="row row-cols-md-2"><div>
 
-...
+JavaScript (JS) is a popular language used to develop
+
+* 🌳 Dynamic websites <small>(DOM, jquery...)</small>
+* 🗃️ Servers and APIs <small>(Node.js, Express...)</small>
+* 🖥️ Desktop applications <small>(Electron.js...)</small>
+* 🧪 Programming styles like [JsFuck](https://github.com/aemkei/jsfuck) (7.3k ⭐)
+* ...
 </div><div>
 
-...
+Most environments support `console.log` to print something.
+
+```js
+console.log("message")
+console.error("error message")
+console.warn("warning message")
+console.info("message")
+```
 </div></div>
 
 <hr class="sep-both">
@@ -31,7 +42,6 @@ const merge = Object.assign({name: 'toto', age: 10}, { age: 15 })
 if (xxx in [0,1]) {}
 if (xxx instanceof XXX) {}
 new Date().toTimeString().substring(0,8)
-console.info("")
 class X {
     static xxx = 0;
     static xxx(args) {}
@@ -78,6 +88,9 @@ Random
 * [Javascript Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 * [javascript.info](https://javascript.info/)
 * [javascripttutorial](https://www.javascripttutorial.net/)
+* [javascript.com](https://www.javascript.com/learn)
+* [JS minifier](https://javascriptminifier.com/)
+* [JSDoc](https://jsdoc.app/)
 
 Code
 
@@ -96,4 +109,6 @@ function devtoolIsOpening() {
 }
 devtoolIsOpening();
 ```
+
+**[Old notes](_old.md)**
 </div></div>

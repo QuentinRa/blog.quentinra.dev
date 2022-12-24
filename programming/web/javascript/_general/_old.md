@@ -2,41 +2,6 @@
 
 **[Updated notes](index.md)**
 
-JavaScript (JS) base is made of the scripting language ECMAScript. We are currently in **ECMAScript2021** (v12). The most used version of JavaScript is **ECMAScript6** (2015). In the ancient times, jQuery was a popular library adding a lot of useful stuff in JavaScript, but now quite a lot of these are directly served in JavaScript, so modern developers aren't using it as often as before <small>(because removing it makes the website faster, increasing both performances and SEO)</small>. For instance, Bootstrap (the famous CSS framework) removed the jQuery dependency in version 5 <small>(dropping Internet Explorer support in the meantime)</small>.
-
-* [Riot.js](https://riot.js.org/)
-
-As always, you may learn JavaScript on [W3School](https://www.w3schools.com/Js/default.asp) or [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction). But, maybe those two may be worth a go [javascript.com](https://www.javascript.com/learn/strings) and [JavaScript tutorial](https://www.javascripttutorial.net/).
-
-> **Note**: As you may have seen in the CSS course, instead of writing JavaScript, you can write **TypeScript** (sort of enhanced JavaScript) and **compile it in any version of JavaScript**. You can use [JS minifier](https://javascriptminifier.com/) to reduce the size of your JavaScript (decrease the loading time), and a CDN (see the WEB course).
->
-> You may use [JSDoc](https://jsdoc.app/) for your **documentation** (not tested). You may use [mocha](https://mochajs.org/) or [jasmine](https://jasmine.github.io/) to write **tests**. I enjoyed mocha (use Assert), but jasmine (does not use Assert) looks promising <small>(install npm+the library globally (-g), then simply enter the command as Node users do)</small>.
-
-<hr class="sl">
-
-## Introduction
-
-As you should have learned by now, you can see the JavaScript inside the console (Web course). You can either log/print something using the console (👍) or using popups (👎)
-
-```js
-console.log("message")
-console.error("error message")
-console.warn("warning message")
-console.info("message")
-// or you can use a popup
-alert('message')
-```
-
-<details class="pt-3">
-<summary><b>HELP!</b> I wrote some JavaScript, but I don't see any changes!?</summary>
-
-They may be two problems, **1**: your code isn't working, or **2**: your page is rendering using the cached JavaScript.
-
-* for **1**: check for errors in the console, try testing selectors in the console too
-* for **2**: <kbd>CTRL+R</kbd> or <kbd>CTRL+SHIFT+R</kbd> or <kbd>SHIFT+F5</kbd> or <kbd>CTRL+F5</kbd>.
-
-</details>
-
 <hr class="sr">
 
 ## Basic Syntax
