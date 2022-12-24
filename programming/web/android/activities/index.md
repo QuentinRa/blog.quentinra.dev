@@ -119,7 +119,7 @@ Android activities' lifecycle is a bit complex. To summarize,
 
 **Note**: **onPause** must be lightweight, otherwise it will delay the other application from showing up in the front screen <small>(ex: a call)</small>.
 
-**Note** (2): A bundles is a **small, in-memory**, dictionary. It's passed to onCreate, if the app was recreated. See [onRestoreInstanceState](https://developer.android.com/reference/android/app/Activity#onRestoreInstanceState(android.os.Bundle)) and [onSaveInstanceState](https://developer.android.com/reference/android/app/Activity#onSaveInstanceState(android.os.Bundle)) too, if you want to use it to store/load data.
+**Note** (2): A bundle is a **small, in-memory**, dictionary. It's passed to onCreate, if the app was recreated. See [onRestoreInstanceState](https://developer.android.com/reference/android/app/Activity#onRestoreInstanceState(android.os.Bundle)) and [onSaveInstanceState](https://developer.android.com/reference/android/app/Activity#onSaveInstanceState(android.os.Bundle)) too, if you want to use it to store/load data.
 </div></div>
 
 <hr class="sep-both">
@@ -182,7 +182,7 @@ val intent = Intent(this, MainActivity::class.java)
 
 #### Implicit intent
 
-[There is a lot of them here](https://developer.android.com/reference/android/content/Intent).
+[There are a lot of them here](https://developer.android.com/reference/android/content/Intent).
 
 <details class="details-e">
 <summary>Open a link/mail/phone</summary>

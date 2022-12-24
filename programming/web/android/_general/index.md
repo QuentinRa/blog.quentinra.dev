@@ -20,7 +20,7 @@ Android Studio <small>(Google)</small> is the most used IDE. It's based on Intel
 * <kbd>CTRL+P</kbd>: in `method(<here>)`, show the arguments of a method
 * <kbd>CTRL+SPACE</kbd>: manually trigger autocompletion <small>(then use <kbd>TAB</kbd>)</small>
 * <kbd>SHIFT+SHIFT</kbd>: search for a method/class/setting...
-* <kbd>ALT+ENTER</kbd>/**hover something** highlighted in red, yellow, grey... to see quick fixes/details.
+* <kbd>ALT+ENTER</kbd>/**hover something** highlighted in red, yellow, gray... to see quick fixes/details.
 
 <details class="details-e">
 <summary>Configure in-editor documentation</summary>
