@@ -20,10 +20,10 @@ Android Views are **XML files** stored in **app/res/layout**.
 If you copy-pasted an XML, or tried to edit it manually, you must know
 
 * 👉 FrameLayout <small>(or the parent of every other)</small> is called the **root**.
-* 👉 **xmlns:** are very important. You can't use **android:** if you didn't add the matching **xmlns:android**. They are added to the **root**.
-* 👉 **tools:context** point to the associated Fragment/Activity in YOUR code, so you must give it an appropriate value.
+* 👉 `xmlns:` are very important. You can't use `android:` if you didn't add the matching `xmlns:android`. They are added to the **root**.
+* 👉 `tools:context` point to the associated Fragment/Activity in YOUR code, so you must give it an appropriate value.
 
-Aside from that, almost every file is an XML file. This is a sort of HTML with tags **<MyTag></MyTag>**, or **<MyTag />**, in which you can add attributes  **<ImageView src="/path/to/my/image" />**.
+Aside from that, almost every file is an XML file. This is a sort of HTML with tags `<MyTag></MyTag>`, or `<MyTag />`, in which you can add attributes  `<ImageView src="/path/to/my/image" />`.
 </div></div>
 
 <hr class="sep-both">

@@ -95,7 +95,7 @@ You can use every usual operator.
 
 ⚠️ It's important to note that any non-boolean value will be casted to a boolean. For instance, `" "` is equals to `false` <small>(`" " == true` is `false`)</small>.
 
-➡️ As always, you can use break/continue in loops.
+➡️ As always, you can use `break`/`continue` in loops.
 
 ##### If and Switch
 
@@ -140,6 +140,15 @@ console.log(`the variable value is ${variable}`)
 // the variable value is 5
 ```
 </div><div>
+
+##### Has property/element
+
+```javascript
+// same as 'array.hasOwnProperty(0)'
+if (0 in [0, 1]) {} // true
+// same as 'obj.hasOwnProperty("x")'
+if ("x" in { "x": "..." }) {} // true
+```
 
 ##### Strings
 
@@ -191,15 +200,11 @@ Stuff that I found, but never read/used yet.
 
 ```javascript
 const f = (args) => (5);
-if ("".trim().length !== 0) {}
-if ("") {} // empty = false
 const {x1, x2} = { x1: 'xxx', x2: 'yyy' }
 const merge = Object.assign({name: 'toto', age: 10}, { age: 15 })
-// filter, forEach, map
+// filter, map
 // reduce((a, b) => a + b, 0)
 // match (/xxx/)
-if (xxx in [0,1]) {}
-if (xxx instanceof XXX) {}
 new Date().toTimeString().substring(0,8)
 class X {
     static xxx = 0;
@@ -209,17 +214,12 @@ class X {
     }
 }
 this.events.splice(0, 0, xxx) // insert at 0
-"xxx,yyy".includes(",") // contains
 
 setTimeout(function () { },  xxx);
 setInterval(function () { },  xxx);
 
-// parseFloat(x);
-// parseInt(x);
-// sNaN(montant)
 // /x/g
 ```
-</div><div>
 
 ```javascript
 const params = {
@@ -230,6 +230,7 @@ const params = {
 await fetch("URL" , params)
 // try catch
 ```
+</div><div>
 
 Learn
 

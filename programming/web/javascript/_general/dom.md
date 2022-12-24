@@ -150,8 +150,6 @@ if (value != null) {
     // ...
 }
 ```
-
-...
 </div></div>
 
 <hr class="sep-both">
