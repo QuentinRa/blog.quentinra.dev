@@ -41,20 +41,6 @@ class X {
 }
 this.events.splice(0, 0, xxx) // insert at 0
 "xxx,yyy".includes(",") // contains
-``` 
-
-```javascript
-const img = 'xxx.png';
-const notification = new Notification(title, { body: body, icon: img });
-
-xxx.removeAttribute("hidden")
-xxx.setAttribute("hidden", "")
-
-document.hidden
-document.addEventListener('visibilitychange', () => {})
-
-setTimeout(function () { },  xxx);
-setInterval(function () { },  xxx);
 ```
 </div><div>
 

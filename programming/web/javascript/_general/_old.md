@@ -4,62 +4,17 @@
 
 JavaScript (JS) base is made of the scripting language ECMAScript. We are currently in **ECMAScript2021** (v12). The most used version of JavaScript is **ECMAScript6** (2015). In the ancient times, jQuery was a popular library adding a lot of useful stuff in JavaScript, but now quite a lot of these are directly served in JavaScript, so modern developers aren't using it as often as before <small>(because removing it makes the website faster, increasing both performances and SEO)</small>. For instance, Bootstrap (the famous CSS framework) removed the jQuery dependency in version 5 <small>(dropping Internet Explorer support in the meantime)</small>.
 
-* Learn the syntax
-* How to validate a form (errors, autocompletion, ...)
-* Handling events (clicks, show/hide something, ...)
-* [Riot.js](https://riot.js.org/) (not available)
-* How to use Web APIs (Rest, Ajax, promises, ...)
-* My list of JavaScript libraries
+* [Riot.js](https://riot.js.org/)
 
 As always, you may learn JavaScript on [W3School](https://www.w3schools.com/Js/default.asp) or [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction). But, maybe those two may be worth a go [javascript.com](https://www.javascript.com/learn/strings) and [JavaScript tutorial](https://www.javascripttutorial.net/).
 
 > **Note**: As you may have seen in the CSS course, instead of writing JavaScript, you can write **TypeScript** (sort of enhanced JavaScript) and **compile it in any version of JavaScript**. You can use [JS minifier](https://javascriptminifier.com/) to reduce the size of your JavaScript (decrease the loading time), and a CDN (see the WEB course).
-> 
-> Some browsers <s>may</s> do not support some features (ex: [fetch](https://caniuse.com/fetch)), and you may like [polyfill](https://polyfill.io/v3/) that try to recreate the missing features. You can pick [which ones here](https://polyfill.io/v3/url-builder/).
-> 
+>
 > You may use [JSDoc](https://jsdoc.app/) for your **documentation** (not tested). You may use [mocha](https://mochajs.org/) or [jasmine](https://jasmine.github.io/) to write **tests**. I enjoyed mocha (use Assert), but jasmine (does not use Assert) looks promising <small>(install npm+the library globally (-g), then simply enter the command as Node users do)</small>.
 
 <hr class="sl">
 
 ## Introduction
-
-<table class="table border-dark table-striped table-bordered">
-<thead><tr><th>Inline JS 🤮</th><th>SCRIPT tag 🤢</th><th>External JS 😍</th></tr></thead>
-<tbody>
-<tr>
-<td>
-
-You can write JavaScript directly inside a component using attributes such as `onmouseover`, `onclick`, `onsubmit` etc. The [list is here (W3Schools)](https://www.w3schools.com/TAGs/ref_eventattributes.asp).
-```HTML
-<p onmouseover="console.log('some code')">
-    ...
-</p>
-```
-</td>
-<td>
-
-You can use one (or more) tag &lt;script&gt;, and put the JS inside.
-
-```HTML
-<script>
-console.log('some code')
-</script>
-```
-</td>
-<td>
-
-You can write JS in an external write, and link it to the HTML with
-
-```html
-<script src="/path/to/file.js"></script>
-```
-
-Same as for CSS, this is the proper way to do it (allows the use of CDN, JS in one place, CSP, etc.).
-
-</td>
-</tr>
-</tbody>
-</table>
 
 As you should have learned by now, you can see the JavaScript inside the console (Web course). You can either log/print something using the console (👍) or using popups (👎)
 

@@ -1,6 +1,6 @@
 # Promises
 
-[Go back](../index.md#rest-api)
+[Go back](../index.md#rest-api) | [See also](promises2.md)
 
 Every **asynchronous code** is returning **Promise**, and we may use them to handle **asynchronous code** like we are doing below. A promise is made of two **callbacks**. A callback is a function that will be called when the asynchronous code is either was successful (**then**) or failed (**catch**).
 
