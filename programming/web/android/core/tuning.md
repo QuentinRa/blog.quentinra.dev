@@ -58,7 +58,7 @@ By convention, each style should have a parent, and be named as the parent, whil
 <details class="details-e">
 <summary>Icons</summary>
 
-Different manufacturers may show app icons in a different shapes than
+Different manufacturers may show app icons in different shapes than
 the circular icon shape: square shape, rounded square, or squircle (between a square and circle)...
 
 <https://developer.android.com/training/multiscreen/screendensities#TaskProvideAltBmp>
@@ -142,7 +142,7 @@ Material design is a library of pre-made components. Google recommends using Mat
 Material design provides both
 
 * 👉 Guidelines (padding, sizes...) to make nice UI
-* 👉 Pre-made Composants <small>(padding, sizes...)</small>
+* 👉 Pre-made Components <small>(padding, sizes...)</small>
 </div><div>
 
 Manually edit the XML and replace AndroidX classes with MaterialUI classes. Aside from the name of the class, and new attributes being available, nothing much will change.
@@ -172,7 +172,7 @@ The default language is defined inside **res/values/strings.xml**.
   * Give the FileName "strings"
   * Select "Locale" in "Available qualifiers"
   * Click on ">>"
-  * Select the language your want. You may select a region too.
+  * Select the language you want. You may select a region too.
 * This will open an empty file
 * Copy-paste inside the default language file.
 

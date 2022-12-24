@@ -27,8 +27,8 @@ You will also have to edit AndroidManifest.xml and allow HTTP
 There are many libraries that you may use at some point
 
 * [retrofit](https://github.com/square/retrofit) (40.9k ⭐): HTTP library
-* [moshi](https://github.com/square/moshi) (8.7k ⭐): JSON library
-* [gson](https://github.com/google/gson) (21.7k ⭐): JSON library
+* [Moshi](https://github.com/square/moshi) (8.7k ⭐): JSON library
+* [Gson](https://github.com/google/gson) (21.7k ⭐): JSON library
 * [okhttp](https://github.com/square/okhttp) (43.3k ⭐): HTTP client used by retrofit/fuel/...
 * [fuel](https://github.com/kittinunf/fuel) (4.3k ⭐, 👻): HTTP library
 * [volley](https://github.com/google/volley) (3.3k ⭐, 👻): HTTP library
@@ -166,11 +166,11 @@ The output is available in the logcat tab after a few seconds.
 
 <hr class="sep-both">
 
-## Retrofit - moshi
+## Retrofit - Moshi
 
 <div class="row row-cols-md-2"><div>
 
-[Moshi](https://github.com/square/moshi) is one of the [converters](https://github.com/square/retrofit/tree/master/retrofit-converters) supported by Retrofit. It's very similar to the popular GSON converter.
+[Moshi](https://github.com/square/moshi) is one of the [converters](https://github.com/square/retrofit/tree/master/retrofit-converters) supported by Retrofit. It's very similar to the popular Gson converter.
 
 **Replace** the previous imports with the two below
 
@@ -403,7 +403,7 @@ Example of working imageURL
 val imageURL = "https://hdqwalls.com/download/far-cry-5-australian-cattle-dog-5k-du-2160x3840.jpg"
 ```
 
-And we will consider an ImageView with the id "image_view".
+And we will consider an ImageView with the Id "image_view".
 
 <br>
 
