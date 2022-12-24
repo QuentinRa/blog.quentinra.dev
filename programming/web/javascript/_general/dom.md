@@ -124,7 +124,7 @@ localStorage.setItem('key', 'value')
 // get
 const value = localStorage.getItem("key")
 if (value != null) { /* ... */ }
-
+// remove
 localStorage.removeItem("key")
 ```
 

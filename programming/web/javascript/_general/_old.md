@@ -6,7 +6,6 @@
 
 ## Basic Syntax
 
-* [Types](syntax/types.md)
 * [Functions](syntax/function.md)
 
 You may use this too, but for some, the syntax above will be enough
@@ -14,62 +13,11 @@ You may use this too, but for some, the syntax above will be enough
 * [Exceptions](syntax/exceptions.md)
 * [Classes and objects](syntax/classes.md)
 
-<table class="table border-dark table-bordered table-striped">
-<tr><th class="text-center">Other notes about the Language</th></tr>
-<tr><td>
-
 The <b>semicolon</b> <code>;</code> at the end of a line is optional. You may use it if you make more than one expression per line.
-</td></tr>
-<tr>
-<td>
+
 You can make <b>comments</b> using <code>/* a comment */</code> or <code>// a comment</code> as you would in Java/C.
-</td>
-</tr>
-<tr>
-<td>
-Some parts in JavaScript are following the properties of <b>functional languages</b>.
-
-* if a function does not return something, then it returns `undefined` (=a function must return a value)
-* everything is a value
-* a function can take a function, returns a function (functions are first-class citizen)
-* [read more here](https://opensource.com/article/17/6/functional-javascript)
-
-</td>
-</tr>
-<tr>
-<td>If you are <b>tired of concatenating variables</b> like this <code>"a="+a</code>, then you can use <code>`a=${a}`</code>. Everything inside the <code>${}</code> will be evaluated when making the string, as long as you used <code>`</code> (inverted quote).</td>
-</tr>
-<tr>
-<td>You can improve a code <b>checking for undefined/null</b>, with some new operators, but in every case, <b>the variable must have been declared</b>
-
-```js
-let request = undefined; // or null
-// Nullish coalescing operator
-// if request is null/undefined, status=200 else status=request
-let status = request ?? 200
-// same as
-// status = request || 200
-
-// Optional chaining
-// if request is undefined, then request?.code is evaluated as undefined,
-// otherwise, it's evaluated as request.code
-status = request?.code ?? 200
-```
-</td>
-</tr>
-<tr>
-<td>
 
 You can add ["use strict"](https://www.w3schools.com/js/js_strict.asp) inside a file/function to disallow the use of non-declared variables, and throw errors instead of ignoring "bad syntax".
-</td>
-</tr>
-</table>
-
-<hr class="sl">
-
-## Advanced syntax
-
-Advanced does not mean more complex, it means that you may not use this right now.
 
 * [Spread syntax](syntax/spread.md)
 

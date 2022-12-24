@@ -45,10 +45,11 @@ There are two "null" values. Note that both are equals (`==`).
 
 You can use the operator `?.` and `??` to write null-safe code
 
-```
-// default value
+```javascript
+// ⭐ Nullish coalescing operator
 const x = null ?? default_value // default
 const x = undefined ?? default_value // default
+// ⭐ Optional chaining
 // call on null/undefined, return null/undefined
 const x = undefined?.toString() // undefined
 const x = null?.property // null
@@ -73,7 +74,7 @@ const str = 'string'
 const str = `template literals/string`
 // Object | typeof(o) === 'object'
 const o = {}
-// Array | typeof(a) === 'object' | ✅ a instanceof Array
+// Array | a instanceof Array | Array.isArray(a)
 const a = []
 ```
 
@@ -129,9 +130,55 @@ for(i in array) { /* i is an index of array */ }
 for(i of array) { /* i is a value of array */ }
 ```
 
+##### Concatenation
+
+```js
+let variable = 5
+console.log("the variable value is "+variable)
+console.log('the variable value is '+variable)
+console.log(`the variable value is ${variable}`)
+// the variable value is 5
+```
 </div><div>
 
-...
+##### Strings
+
+```javascript
+const xxx = "xxx"
+// get info
+xxx.length // 4
+xxx.indexOf("x") // 0
+xxx.lastIndexOf("/") // -1
+xxx.includes("xxx") // true
+xxx[0] // 'x'
+// convert
+xxx.toLowerCase() // "xxx"
+xxx.toUpperCase() // "XXX"
+(" "+xxx+" ").trim() // "xxx"
+// replace
+xxx.replace('x', 'y') // "yxx"
+xxx.replaceAll('x', 'y') // "yyy"
+```
+
+##### Arrays
+
+```javascript
+const array = []
+// get info
+array.length // 0
+array[0] // undefined
+// edit
+array[0] = 25
+array.push(10, 13) // [10, 13]
+array.pop() // [10]
+// generate a new array
+array.concat(["10"]) // [10, 13, "10"]
+array.reverse() // [13, 10]
+array.sort() // [10,13] | array.sort((a,b) => a - b)
+array.slice() // [10,13], deep clone
+// operations
+array.forEach(v => { /* ... */ })
+```
 </div></div>
 
 <hr class="sep-both">
