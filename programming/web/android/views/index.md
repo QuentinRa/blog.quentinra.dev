@@ -17,13 +17,13 @@ Android Views are **XML files** stored in **app/res/layout**.
 ```
 </div><div>
 
-If you copy-pasted a XML, or tried to edit it manually, you must know
+If you copy-pasted an XML, or tried to edit it manually, you must know
 
 * 👉 FrameLayout <small>(or the parent of every other)</small> is called the **root**.
 * 👉 **xmlns:** are very important. You can't use **android:** if you didn't add the matching **xmlns:android**. They are added to the **root**.
 * 👉 **tools:context** point to the associated Fragment/Activity in YOUR code, so you must give it an appropriate value.
 
-Aside from that, almost every file is a XML file. This is a sort of HTML with tags **<MyTag></MyTag>**, or **<MyTag />**, in which you can add attributes  **<ImageView src="/path/to/my/image" />**.
+Aside from that, almost every file is an XML file. This is a sort of HTML with tags **<MyTag></MyTag>**, or **<MyTag />**, in which you can add attributes  **<ImageView src="/path/to/my/image" />**.
 </div></div>
 
 <hr class="sep-both">
@@ -87,7 +87,7 @@ Instead of editing the XML manually, you will usually use the Design mode.
 
 <div class="row row-cols-md-2"><div>
 
-In Android, every composant such as an Image is called a **View**. Every view must have at least these two attributes
+In Android, every component such as an Image is called a **View**. Every view must have at least these two attributes
 
 * **android:layout_width**: wrap, match_parent, a fixed width
 * **android:layout_height**: wrap, match_parent, a fixed height
@@ -157,7 +157,7 @@ And these attributes are available on any View
 
 <div class="row row-cols-md-2"><div>
 
-There composants called **ViewGroup** to group views and apply changes/... on the group.
+There are components called **ViewGroup** to group views and apply changes/... on the group.
 
 Layouts are ViewGroups with predefined settings. For instance, a **GridLayout** will put nested views in a grid-like format.
 
@@ -196,11 +196,11 @@ Layouts are ViewGroups with predefined settings. For instance, a **GridLayout** 
 implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 ```
 
-A constraint layout is rendering element relatively to another component <small>(which could be the screen)</small>. You will set margins which are the gap with the other component.
+A constraint layout is rendering elements relatively to another component <small>(which could be the screen)</small>. You will set margins which are the gap with the other component.
 
 ![Constraint Layout Margins Relative](_images/cl_margins_relative.png)
 
-On a screen of 226px, if you define that the component should have a margin left of 140, and a margin right of 26. The composant will be centered within the 60 remaining px called **free space**.
+On a screen of 226px, if you define that the component should have a margin-left of 140, and a margin-right of 26. The component will be centered within the 60 remaining px called **free space**.
 
 To change the behavior of how the free space is handled, simply edit the layout width/height OR you can use a shortcut by clicking on arrows such as ">>" right where you added margins.
 
@@ -298,7 +298,7 @@ android {
 
 </div><div>
 
-Assume that we have a XML with file with
+Assume that we have an XML file with
 
 ```xml
 <SomeViewHere
@@ -457,7 +457,7 @@ Then, right below `binding.lifecycleOwner`, pass the variables.
 binding.viewModel = GiveAValueMatchingTheType
 ```
 
-Then, in your XML, you can use your variable + expressing inside `@{}`. For instance, if you have a 
+Then, in your XML, you can use your variable + expression inside `@{}`. For instance, if you have a 
 
 ```xml
 <example>
@@ -485,7 +485,7 @@ plugins {
 }
 ```
 
-Either create a specific classes, or use a companion object.
+Either create a specific class, or use a companion object.
 
 ```kotlin
 companion object {
@@ -554,7 +554,7 @@ Switch to the Design View. Create or import your Fragments by clicking on the ph
 ![New destination](_images/new_destination.png)
 </div></div>
 
-➡️ To change the "home" fragment, select on a fragment, and click on the home icon. The home fragment is the one loaded by default.
+➡️ To change the "home" fragment, select a fragment, and click on the home icon. The home fragment is the one loaded by default.
 </div><div>
 
 #### Create a NavHost
@@ -627,7 +627,7 @@ For that, you must create an action. Then, click on the screen that must receive
 
 ```kotlin
 findNavController().navigate(R.id.action_first_to_second, Bundle().apply {
-  // example with passing a string
+  // Ex: passing a string
   putString("key", "value")
 })
 ```

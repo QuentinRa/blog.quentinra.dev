@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-A ViewModel is linking the model of your application <small>(=room database, files, apis)</small> with your [Views](../views/index.md).
+A ViewModel is linking the model of your application <small>(=room database, files, APIs)</small> with your [Views](../views/index.md).
 
 * 👉 If the view changed, you may want to change the model <small>(process the user input...)</small>
 * 👉 If the model changed, you may want to update the view <small>(serve the updated data to the user)</small>
@@ -23,7 +23,7 @@ class BlankViewModel : ViewModel() {
     // implement your ViewModel here
     // ❌ the simplest usage, stock variables
     var count = 0
-    // ✅ see LiveData for proper usages
+    // ✅ see LiveData for proper usage
 }
 ```
 </div></div>
@@ -32,7 +32,7 @@ class BlankViewModel : ViewModel() {
 
 ## Instantiate your ViewModel
 
-You can't do it by calling the constructor, otherwise it won't be a singleton <small>(unique instance)</small>.
+You can't do it by calling the constructor, otherwise, it won't be a singleton <small>(unique instance)</small>.
 
 <div class="row row-cols-md-2"><div>
 
@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
 <details class="details-n">
 <summary>Pass arguments to your ViewModel</summary>
 
-Exemple with an Integer.
+The example below is with an Integer.
 
 ```kotlin
 class XXXViewModel(v: Integer) : ViewModel() {
@@ -128,7 +128,7 @@ class BlankFragment : Fragment() {
 }
 ```
 
-⚠️ The viewModel above **won't be shared** between other fragments or the activity. If a fragment A change a value inside the ViewModel, the fragment B will still have the old value. ⚠️
+⚠️ The viewModel above **won't be shared** between other fragments or the activity. If a fragment "A" change a value inside the ViewModel, the fragment "B" will still have the old value. ⚠️
 
 To fix this, use a ViewModel owned by the Activity.
 
@@ -147,7 +147,7 @@ class BlankFragment : Fragment() {
 
 <div class="row row-cols-md-2"><div>
 
-A **LiveData** is an observable variable. It means a component can execute some code when the variable changed.
+A **LiveData** is an observable variable. It means a component can execute some code when the variable changes.
 
 They are usually used to update the View when a variable in the model changed.
 
@@ -155,7 +155,7 @@ They are usually used to update the View when a variable in the model changed.
 implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
 ```
 
-It's worth noting that LiveData are **life-cycle aware**, so observers are only called when the app is either **Started** or **Resumed**.
+It's worth noting that LiveDatas are **life-cycle aware**, so observers are only called when the app is either **Started** or **Resumed**.
 
 A **LiveData** is wrapping a type inside **value**. For instance, **LiveData<Int>** will have a **value** of type **Int**.
 
@@ -164,7 +164,7 @@ val count : LiveData<Int> = MutableLiveData<Int>(0)
 if (count.value!! == 0) {} // true
 ```
 
-LiveData variables are store inside a ViewModel.
+LiveData variables are stored inside a ViewModel.
 </div><div>
 
 As **value may be null**, we need to use null-safe operators <small>(`!!`, `?`, `?:`...)</small>. The difference between a LiveData and a MutableLiveData is that in the latter, you can change `value`.
@@ -215,7 +215,7 @@ class MainViewModel : ViewModel() {
 }
 ```
 
-It's important to note that you can't simply call `_count.value!!.inc()`. A livedata is only calling `observe` when the property `value` is assigned to a new value, not when the property is modified.
+It's important to note that you can't simply call `_count.value!!.inc()`. A LiveData is only calling `observe` when the property `value` is assigned to a new value, not when the property is modified.
 
 </div><div>
 
@@ -254,7 +254,7 @@ viewModel.count.observe(viewLifecycleOwner) {
 
 Transformations allow us to create a "fake" LiveData from another LiveData.
 
-➡️In the example, we are always converting "count" to a String. Why not creating a `LiveData<String>` instead?
+➡️In the example, we are always converting "count" to a String. Why don't we serve a `LiveData<String>` instead?
 
 ```kotlin
 // When _count is changed, we execute the code below.
