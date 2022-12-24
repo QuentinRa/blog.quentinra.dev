@@ -1,7 +1,5 @@
 # Electron
 
-**[Old notes](_old.md)**
-
 <div class="row row-cols-md-2"><div>
 
 [Electron](https://www.electronjs.org/) is a library to develop **cross-platform applications in JavaScript**. You can use it with frameworks such as Vue.js, React, Angular, or simply HTML+CSS.
@@ -9,18 +7,22 @@
 Electron is actually running your application in a chromium web-browser. If enabled, you can open the devtools with **CTRL+SHIFT+I**.
 
 Some applications made using electron are VSCode, Discord, GitHub Desktop, MongoDBCompass, Microsoft Teams...
+
+* [Documentation](https://www.electronjs.org/docs/latest/)
 </div><div>
 
 Electron is following a fast development workflow, so there are major release often 😥.
 
 * [electron-quick-start](https://github.com/electron/electron-quick-start) (10.2k ⭐)
-* [secure-electron-template](https://github.com/reZach/secure-electron-template) (1.4k ⭐)
+* [secure-electron-template](https://github.com/reZach/secure-electron-template) (1.4k ⭐) and [new-to-electron](https://github.com/reZach/secure-electron-template/blob/master/docs/newtoelectron.md)
 * [electron-sample-apps](https://github.com/hokein/electron-sample-apps)  (3.8k ⭐)
 * [examples-electron](https://github.com/akabekobeko/examples-electron) (0.2k ⭐)
 
 Other interesting projects
 
 * [electron-seamless-titlebar](https://github.com/binaryfunt/electron-seamless-titlebar-tutorial) (0.5k ⭐)
+* [the-ultimate-electron-guid](https://www.debugandrelease.com/the-ultimate-electron-guide/)
+* [awesome-electron](https://github.com/sindresorhus/awesome-electron) (24k ⭐)
 </div></div>
 
 <hr class="sep-both">
@@ -71,8 +73,6 @@ mainWindow.webContents.on("devtools-opened", () => {
     mainWindow.webContents.closeDevTools();
 });
 ```
-
-...
 </div></div>
 
 
@@ -85,7 +85,11 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [electron-build-service](https://github.com/electron-userland/electron-build-service)
+* [electron-devtools-installer](https://github.com/MarshallOfSound/electron-devtools-installer)
+* Auto-updating electron application
+* Secure Electron Source ([article (2019)](https://www.akshaydeo.com/blog/2019/10/28/securing-electron-app-source-code/))
 </div><div>
 
+* [Getting started with electronjs](https://dev.to/milburngomes/getting-started-with-electronjs-ep9) (2020)
 
 </div></div>
