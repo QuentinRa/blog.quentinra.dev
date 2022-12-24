@@ -43,8 +43,8 @@ Then, since Android O, you need to create a **channel**. Developers should group
 
 See also.
 
-* [Create multi-lines notifications, or add images/...](https://developer.android.com/develop/ui/views/notifications/expanded)
-* [Do something if the user click on the notification](https://developer.android.com/develop/ui/views/notifications/navigation)
+* [Create multi-line notifications, or add images/...](https://developer.android.com/develop/ui/views/notifications/expanded)
+* [Do something if the user clicks on the notification](https://developer.android.com/develop/ui/views/notifications/navigation)
 </div><div>
 
 You also have to provide an icon, a title, a message, and [a priority](https://developer.android.com/reference/androidx/core/app/NotificationCompat.Builder#setPriority(int)).
@@ -71,7 +71,7 @@ with(NotificationManagerCompat.from(context)) {
 
 <div class="row row-cols-md-2"><div>
 
-A WorkManager is used to run **long**, **periodic**, or **battery intensive tasks**. Unlike previous APIs, you are guaranteed that you job will be executed, even if the app is closed, or the phone restart.
+A WorkManager is used to run **long**, **periodic**, or **battery intensive tasks**. Unlike previous APIs, you are guaranteed that your job will be executed, even if the app is closed, or the phone restarted.
 
 ```gradle
 implementation "androidx.work:work-runtime-ktx:2.7.1"
@@ -124,7 +124,7 @@ See also **PeriodicWorkRequest** below.
 
 #### Run a WorkRequest
 
-A work manager is taking a **WorKRequest** and run it.
+A work manager is taking a **WorKRequest** and running it.
 
 ```
 // process a request
@@ -144,7 +144,6 @@ workManager.beginWith(request)
 Here is an example of every constraint you can use
 
 ```kotlin
-// here examples of every constraint you can use
 val constraints = Constraints.Builder()
     .setRequiresCharging(true)
     .setRequiresBatteryNotLow(true)
@@ -235,7 +234,7 @@ _work = workManager.getWorkInfosByTagLiveData(TAG)
 
 The LiveData contains a list of WorkInfo, one per worker.
 
-To make thing easier, we use Transformations, and work will only be non-null when the first task (`it[0]`) in completed.
+To make things easier, we use Transformations, and work will only be non-null when the first task (`it[0]`) in completed.
 
 ```kotlin
 // only one job, no need for a list to be public
@@ -259,7 +258,7 @@ Then, do as usual
 ```kotlin
 viewModel.work.observe(viewLifecycleOwner) {
     // do something when the job has finished.
-    // If you passed data, you can use it.outputData
+    // If you have passed data, you can use it.outputData
 }
 ```
 </details>
@@ -379,7 +378,7 @@ MaterialAlertDialogBuilder(this)
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-#### ➡️ Generate a XML 
+#### ➡️ Generate an XML 
 
 * Open the "Ressources Manager"
 * Click on "..."
@@ -438,7 +437,7 @@ class XXXMenuProvider : MenuProvider {
     override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
         return when (menuItem.itemId) {
             R.id.example_menu_item -> {
-                // ... code if the user click on this menu item ...
+                // ... code if the user clicks on this menu item ...
                 true
             }
             else -> false
@@ -474,14 +473,14 @@ class MainActivity : AppCompatActivity() {
         menuInflater.inflate(R.menu.main_menu, menu)
         // you may use
         // menu?.findItem(R.id.example_menu_item)
-        // to setup your menu items
+        // to set up your menu items
         return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.example_menu_item -> {
-                // ... code if the user click on this menu item ...
+                // ... code if the user clicks on this menu item ...
                 true
             }
             else -> super.onOptionsItemSelected(item)
@@ -498,7 +497,7 @@ class MainActivity : AppCompatActivity() {
 
 <div class="row row-cols-md-2"><div>
 
-[RecyclerView](https://developer.android.com/develop/ui/views/layout/recyclerview) is a "new" way of displaying lists, that is more efficient, and use less memory, as it is recycling views that disappeared, to show the new elements of the list that showed up.
+[RecyclerView](https://developer.android.com/develop/ui/views/layout/recyclerview) is a "new" way of displaying lists, that is more efficient, and uses less memory, as it is recycling views that disappeared, to show the new elements of the list that showed up.
 
 ```xml
 <androidx.recyclerview.widget.RecyclerView
@@ -590,7 +589,7 @@ Now, we need to write an **Adapter**. This is a class that will handle displayin
 
 ```kotlin
 class DummyAdapter(private val items: List<Data>) : RecyclerView.Adapter<DummyAdapter.ViewHolder>() {
-    // ➡️ The function bind take a Data, and fill our Item
+    // ➡️ The function bind takes "data", and fills our Item
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val messageView = view.findViewById<TextView>(R.id.message)
 
@@ -653,7 +652,7 @@ with(recyclerView) {
 <details class="details-e">
 <summary>🤔 Dynamic lists: notify 🤔</summary>
 
-The example is using a static unchangeable list. The easy+bad patch would be to rely on **notifyDataSetChanged** which mean we are updating the whole view, for a potentially minor change.
+The example is using a static unchangeable list. The easy+bad patch would be to rely on **notifyDataSetChanged** which means we are updating the whole view, for a potentially minor change.
 
 ```diff
 -class DummyAdapter(private val items: List<Data>) : RecyclerView.Adapter<DummyAdapter.ViewHolder>() {

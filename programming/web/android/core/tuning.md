@@ -4,8 +4,8 @@
 
 These notes are intended
 
-* 👉 For those trying to write reusable/maintenable code
-* 👉 When the core of the application was finished, and there is a need to improve the UserExperience of the user
+* 👉 For those trying to write reusable/maintainable code
+* 👉 When the core of the application was finished, and there is a need to improve the User eXperience of the user
 * 👉 When there is a need to expand the number of users that can use the application
 </div><div>
 
@@ -31,7 +31,7 @@ name="Theme.XXX"
 <item name="switchStyle">@style/Widget.TipTime.CompoundButton.Switch</item>
 ```
 
-By convention, each style should have a parent, and be named as the parent, while replacing the "MaterialComponents" by "YOUR_APP_NAME".
+By convention, each style should have a parent, and be named as the parent, while replacing the "MaterialComponents" with "YOUR_APP_NAME".
 
 ```xml
 <examples>

@@ -63,11 +63,11 @@ For instance, to run the code to create notification channels, if you want to se
     }
 
 +    override fun onStart(owner: LifecycleOwner) {
-+        // App in foreground
++        // App in the foreground
 +    }
 
 +    override fun onStop(owner: LifecycleOwner) {
-+        //App in background
++        //App in the background
 +    }
 }
 ```
@@ -83,7 +83,7 @@ class MainApplication : Application() {
 }
 ```
 
-In you AndroidManifest.xml, look for the tag "application", and add an attribute "android:name" pointing to your newly create file.
+In your AndroidManifest.xml, look for the tag "application", and add an attribute "android:name" pointing to your newly created file.
 
 ```
 <application
@@ -99,11 +99,11 @@ In you AndroidManifest.xml, look for the tag "application", and add an attribute
 
 <div class="row row-cols-md-2 mt-4"><div class="align-self-center">
 
-Android activities lifecycle is a bit complex. To summarize, 
+Android activities' lifecycle is a bit complex. To summarize, 
 
 * 👉 **onCreate** is where you will configure the view
 * 👉 Before presenting the activity, **onStart** is called. If the user press "home"/the activity isn't visible anymore, **onStop** is called.
-* 👉 Before the user can interact with the activity, **onResume** is called. If the user isn't be able to interact with the activity anymore, **onPause** is called.
+* 👉 Before the user can interact with the activity, **onResume** is called. If the user isn't able to interact with the activity anymore, **onPause** is called.
 
 **onDestroy** is called
 
@@ -149,7 +149,7 @@ class MainActivity : AppCompatActivity() {
 
 <div class="row row-cols-md-2"><div>
 
-An [**intent**](https://developer.android.com/guide/components/intents-filters) is an object representing some action to be performed, such as navigating to another activity. There are two kinds of intents
+An [**intent**](https://developer.android.com/guide/components/intents-filters) is an object representing some action to be performed, such as navigating to another activity. There are two kinds of intent
 
 
 * **Explicit**: ask specifically for something <small>(ex: start the Activity XXX)</small>
@@ -173,7 +173,7 @@ val param = intent?.extras?.getString("param")
 
 #### Explicit intent
 
-Example to navigate to "MainActivity"
+Ex: to navigate to "MainActivity"
 
 ```kotlin
 // this = a context
@@ -257,7 +257,7 @@ It's always the activity at the top that is shown to the user.
 
 At the end of the example, we got two instances of "MainActivity". It's important to consider if this behavior is acceptable or not. If not, you should pass flags to your Intent using [Intent#addFlags](https://developer.android.com/reference/android/content/Intent.html#flags).
 
-👉 For instance, if the user log out, he should not be able to press "back", and go back to the "connected area".
+👉 For instance, if the user logs out, he should not be able to press "back", and go back to the "connected area".
 
 * Manual "back" <small>(pop out current)</small>
 
@@ -272,9 +272,9 @@ intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
 
 <div class="row row-cols-md-2"><div>
 
-Fragments are in many way similar to activities. They are loaded by an activity, but they have their own lifecycle.
+Fragments are in many ways similar to activities. They are loaded by an activity, but they have their own lifecycle.
 
-* 👉 `Activity#onCreated` was split in 3 methods
+* 👉 `Activity#onCreated` was split into 3 methods
 * 👉 The navigation is done with a [Navigation Component](../views/index.md#-navigation-component-)
 * 👉 Some code need to be updated <small>(most "`this`" won't work...)</small>
   * Use `requireActivity()` to get an Activity

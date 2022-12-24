@@ -85,7 +85,7 @@ This is where the resources of your application will be stored.
 
 #### Device Emulator
 
-The device emulator allow you to create a virtual device or connect yours. You may (or most likely will) use
+The device emulator allows you to create a virtual device or connect yours. You may (or most likely will) use
 
 <div class="row mx-0"><div class="col-9">
 
@@ -163,7 +163,7 @@ class XXX : YYY() {
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-Most android applications runs on one "main" thread usually called **UI Thread**, which is the one handling rendering the view, processing events, and so on.
+Most android applications run on one "main" thread usually called **UI Thread**, which is the one handling rendering the view, processing events, and so on.
 
 To avoid blocking the Main thread for too long, resulting in an **ANR = Android Not Responding = Crash**.
 
@@ -318,7 +318,7 @@ External
 
 Random
 
-A [flow](https://developer.android.com/kotlin/flow) ([and](https://developer.android.com/topic/libraries/architecture/coroutines#lifecycle-aware).) is canceled when the app goes to background/rotating the screen. We could patch that by giving a timeout to "asLiveData", but by doing that, the flow will continue to be run while the app is in the background, until the timeout that is.
+A [flow](https://developer.android.com/kotlin/flow) is canceled when the app goes to the background/rotating the screen (see [here a patch](https://developer.android.com/topic/libraries/architecture/coroutines#lifecycle-aware)). We could also patch that by giving a timeout to "asLiveData", but by doing that, the flow will continue to be run while the app is in the background, until the timeout that is.
 
 ```kotlin
 // implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
