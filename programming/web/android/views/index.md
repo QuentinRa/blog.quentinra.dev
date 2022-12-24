@@ -32,7 +32,7 @@ Aside from that, almost every file is an XML file. This is a sort of HTML with t
 
 <div class="row row-cols-md-2"><div>
 
-Resources englobes **strings** (texts), **colors**, **dimensions**, **drawables** (images), **mipmap** (icons), and many other things.
+Resources includes **strings** (texts), **colors**, **dimensions**, **drawables** (images), **mipmap** (icons), and many other things.
 
 You can manage them from the **Resources Manager**
 
@@ -157,7 +157,7 @@ And these attributes are available on any View
 
 <div class="row row-cols-md-2"><div>
 
-There are components called **ViewGroup** to group views and apply changes/... on the group.
+There are components called **ViewGroup** to group views and apply changes/... to the group.
 
 Layouts are ViewGroups with predefined settings. For instance, a **GridLayout** will put nested views in a grid-like format.
 

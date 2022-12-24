@@ -380,11 +380,11 @@ MaterialAlertDialogBuilder(this)
 
 #### ➡️ Generate an XML 
 
-* Open the "Ressources Manager"
+* Open the "Resources Manager"
 * Click on "..."
 * Select Menu
 * Click on "+"
-* Enter a FileName, such as "main_menu"
+* Enter a Filename, such as "main_menu"
 * Press OK
 
 <details class="details-e">
