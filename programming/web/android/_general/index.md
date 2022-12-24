@@ -10,16 +10,16 @@ You can develop Android apps with many frameworks such as React Native or Electr
 
 * [Android Courses](https://developer.android.com/courses/) + [CodeLabs](https://codelabs.developers.google.com/?cat=Android) (official, free)
 * [Android Docs](https://developer.android.com/docs)
-* [Android Teach](https://developer.android.com/teach) (see the slides at the bottom)
+* [Android Teach](https://developer.android.com/teach) (scroll down to the slides)
 * [Android Guides](https://developer.android.com/guide) and [Android UI](https://developer.android.com/develop/ui)
 
 </div><div>
 
-Android Studio <small>(Google)</small> is the IDE you will use. It's based on IntelliJ Community <small>(JetBrains)</small> 😎❤️. There are a few life-saving shortcuts
+Android Studio <small>(Google)</small> is the most used IDE. It's based on IntelliJ Community <small>(JetBrains)</small> 😎❤️. There are a few life-saving shortcuts
 
 * <kbd>CTRL+P</kbd>: in `method(<here>)`, show the arguments of a method
 * <kbd>CTRL+SPACE</kbd>: manually trigger autocompletion <small>(then use <kbd>TAB</kbd>)</small>
-* <kbd>SHIFT+SHIFT</kbd>: search for a method/class/...
+* <kbd>SHIFT+SHIFT</kbd>: search for a method/class/setting...
 * <kbd>ALT+ENTER</kbd>/**hover something** highlighted in red, yellow, grey... to see quick fixes/details.
 
 <details class="details-e">
@@ -27,7 +27,7 @@ Android Studio <small>(Google)</small> is the IDE you will use. It's based on In
 
 To see the documentation of a method, use <kbd>CTRL+Q</kbd> or hover a method. By default, you won't see anything interesting.
 
-* Navigate to the source of any Android class. As a remainder, you can use <kbd>CTRL+(MOUSE LEFT)</kbd> like in VSCode/...
+* Navigate to the source of any Android class. As a reminder, you can use <kbd>CTRL+(MOUSE LEFT)</kbd> like in VSCode/...
 * Click on "Download sources"
 * Done
 </details>
@@ -68,7 +68,7 @@ This is a file that describes
 
 #### app/java/com.xxx.yyy
 
-This is where your classes will be store.
+This is where your classes will be stored.
 </div><div>
 
 #### app/res
@@ -115,7 +115,7 @@ Use the Logger instead of print/println to keep track of what your application i
 You must give a tag to your log. You will be able to filter messages by tag in the Logcat tab.
 
 ```kotlin
-// ❌ improper, but easier
+// ❌ improper, but faster
 Log.v("SOME_TAG_NAME", "message")
 ```
 

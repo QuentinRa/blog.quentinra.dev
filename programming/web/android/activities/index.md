@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
 <div class="row row-cols-md-2"><div>
 
-When an Android application is started, the class `Application` is started, and load the main activity.
+When an Android application is started, the class `Application` is started, and loads the main activity.
 
 The implementation by default is enough, so you won't need to write this class. But here are some use case
 
@@ -101,25 +101,25 @@ In you AndroidManifest.xml, look for the tag "application", and add an attribute
 
 Android activities lifecycle is a bit complex. To summarize, 
 
-* 👉 **onCreate** is where you will use the most to configure the view
+* 👉 **onCreate** is where you will configure the view
 * 👉 Before presenting the activity, **onStart** is called. If the user press "home"/the activity isn't visible anymore, **onStop** is called.
-* 👉 Before allow the user to interact with the activity, **onResume** is called. If the user isn't be able to interact with the activity anymore, **onPause** is called.
+* 👉 Before the user can interact with the activity, **onResume** is called. If the user isn't be able to interact with the activity anymore, **onPause** is called.
 
 **onDestroy** is called
 
 * when the user closes the app
-* when the system terminate the app <small>(free up memory...)</small>
+* when the system terminates the app <small>(free up memory...)</small>
 * when it's easier to kill and recreate the app
   * the language changed
-  * **the rotation changed** <small>(on emulated devices, after enabling screen-rotation, you can use the buttons in the bar to rotate the screen)</small>
+  * **the rotation changed** <small>(on emulated devices, after enabling screen-rotation, you can use the buttons in the toolbar to rotate the screen)</small>
 </div><div>
 
 ![android_application_lifecycle](_images/android_application_lifecycle.png)
 
 
-**Note**: **onPause** must be lightweight, otherwise it will delay the other application that is showing up in the front screen.
+**Note**: **onPause** must be lightweight, otherwise it will delay the other application from showing up in the front screen <small>(ex: a call)</small>.
 
-**Note** (2): A bundles is a **small, in-memory**, dictionary. It's passed to onCreate, if the app was recreated. See [onRestoreInstanceState](https://developer.android.com/reference/android/app/Activity#onRestoreInstanceState(android.os.Bundle)) and [onSaveInstanceState](https://developer.android.com/reference/android/app/Activity#onSaveInstanceState(android.os.Bundle)) if you want to store/load data.
+**Note** (2): A bundles is a **small, in-memory**, dictionary. It's passed to onCreate, if the app was recreated. See [onRestoreInstanceState](https://developer.android.com/reference/android/app/Activity#onRestoreInstanceState(android.os.Bundle)) and [onSaveInstanceState](https://developer.android.com/reference/android/app/Activity#onSaveInstanceState(android.os.Bundle)) too, if you want to use it to store/load data.
 </div></div>
 
 <hr class="sep-both">
@@ -128,7 +128,7 @@ Android activities lifecycle is a bit complex. To summarize,
 
 <div class="row row-cols-md-2"><div>
 
-* Set the Activity title from the code. The title is shown is the task list, and in the default menu bar.
+* Set the Activity's title from the code. The title is shown is the task list, and in the default menu bar.
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
@@ -182,7 +182,7 @@ val intent = Intent(this, MainActivity::class.java)
 
 #### Implicit intent
 
-[There is a lot of Intents here](https://developer.android.com/reference/android/content/Intent).
+[There is a lot of them here](https://developer.android.com/reference/android/content/Intent).
 
 <details class="details-e">
 <summary>Open a link/mail/phone</summary>
@@ -218,7 +218,7 @@ val intent = Intent(Intent.ACTION_SEND)
 </details>
 
 <details class="details-e">
-<summary>⚠️ Properly run an implicit intent ⚠️</summary>
+<summary>⚠️ How to properly run an implicit intent ⚠️</summary>
 
 What if you try to open a link in a browser, but the user uninstalled every browser? It will fail. You have to handle errors!
 
@@ -255,7 +255,7 @@ Android activities are pilled up in something called the "back stack". In older 
 
 It's always the activity at the top that is shown to the user.
 
-In the example above, we got two instances of "MainActivity". It's important to consider if this behavior is acceptable or not. If not, you should pass flags to your Intent using [Intent#addFlags](https://developer.android.com/reference/android/content/Intent.html#flags).
+At the end of the example, we got two instances of "MainActivity". It's important to consider if this behavior is acceptable or not. If not, you should pass flags to your Intent using [Intent#addFlags](https://developer.android.com/reference/android/content/Intent.html#flags).
 
 👉 For instance, if the user log out, he should not be able to press "back", and go back to the "connected area".
 

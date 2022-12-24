@@ -16,7 +16,7 @@ For the API provider
 * 💎 Can aggregate multiple data sources <small>(i.g. multiple databases...)</small>
 </div><div>
 
-Some APIs
+Some APIs (search for APIs on [rapidapi](https://rapidapi.com/hub))
 
 * [Github API](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api)
 * [Musicbrainz API](https://musicbrainz.org/doc/MusicBrainz_API) (musics)
