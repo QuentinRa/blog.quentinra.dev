@@ -14,6 +14,8 @@ Some browsers may not support some newly added features.
 
 * 🧪 See [caniuse](https://caniuse.com/) to see which browsers support a specific feature
 * 🚀 If there is a heavy need for a feature, you can use [polyfill](https://polyfill.io/v3/) to load missing features. You can generate one [here](https://polyfill.io/v3/url-builder/).
+
+JavaScript (JS) is based on ECMAScript. Currently, only **ECMAScript2015** (ES5) is fully supported.
 </div></div>
 
 ⚠️ Modern browsers are usually caching JavaScript files. If you changed a file, and don't see any changes, clear the cache, and try again.<br>
@@ -320,6 +322,32 @@ if (value != null) {
 
 <hr class="sep-both">
 
+## Libraries
+
+<div class="row row-cols-md-2"><div>
+
+* [anime.js](https://github.com/juliangarnier/anime/) (animations, 44k ⭐)
+* [typed.js](https://github.com/mattboldt/typed.js/) (typing, 12.6k ⭐)
+* [bideo.js](https://github.com/rishabhp/bideo.js) (video, 4.3k ⭐)
+* [particles.js](https://github.com/VincentGarreau/particles.js/) (show particules, 26.6k ⭐)
+* [GSAP](https://github.com/greensock/GSAP) (animations, 15.4k ⭐)
+* [createjs](https://github.com/createjs) (libraries)
+* [turn.js](https://github.com/blasten/turn.js) (book-like, 6.8k ⭐). See also [StPageFlip](https://github.com/Nodlik/StPageFlip) / [pdf-flipbook](https://github.com/erayakartuna/pdf-flipbook).
+* [d3.js](https://d3-graph-gallery.com/index.html) (plotting..., 104k ⭐)
+</div><div>
+
+#### jQuery
+
+Long time ago, [jQuery](https://github.com/jquery/jquery) was a popular library making the JavaScript shorter/simpler. Nowadays, most features were added to JavaScript, so jQuery is unneeded.
+
+➡️ Bootstrap removed their jQuery dependencies in their 5th version, to make the library more lightweight.
+
+...
+</div></div>
+
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -335,7 +363,4 @@ Stuff that I found, but never read/used yet.
 
 * ➡️ See my scripts (canva+grab hidden)
 * `window.location.href`
-
-JavaScript (JS) base is made of the scripting language ECMAScript. We are currently in **ECMAScript2021** (v12). The most used version of JavaScript is **ECMAScript6** (2015). In the ancient times, jQuery was a popular library adding a lot of useful stuff in JavaScript, but now quite a lot of these are directly served in JavaScript, so modern developers aren't using it as often as before <small>(because removing it makes the website faster, increasing both performances and SEO)</small>. For instance, Bootstrap (the famous CSS framework) removed the jQuery dependency in version 5 <small>(dropping Internet Explorer support in the meantime)</small>.
-
 </div></div>

@@ -26,6 +26,7 @@ Stuff that I found, but never read/used yet.
 * [bootstrapshuffle](https://bootstrapshuffle.com/)
 * [tailwindcss](https://tailwindcss.com/)
 * [primer.style](https://primer.style/css/getting-started)
+* [animate.css](https://github.com/animate-css/animate.css)
 </div><div>
 
 ```css

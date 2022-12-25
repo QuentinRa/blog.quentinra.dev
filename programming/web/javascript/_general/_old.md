@@ -40,60 +40,6 @@ When you are calling an API, you are requesting something from another website, 
 * [Fetch](api/fetch.md) 😍
 * [Async/await](api/async.md)
 * [Example API - MusicBrainz](api/example.md)
-
-<hr class="sr">
-
-## My list of JavaScript libraries
-
-This is more like a list of libraries to make some animations than a list of libraries 😋.
-
-<details class="details-border">
-<summary>Title</summary>
-<br>
-
-With [anime.js](https://animejs.com/) you do something like [this handwritten animation](https://codepen.io/mellis84/pen/JpVZNw)
-
-<div style="width: 500px;">
-
-![title](title/handmade-title.gif)
-</div>
-
-You can use [Typed.js](https://mattboldt.com/demos/typed-js/) to get almost the same, but in a terminal.
-
-You can find a lot of [simple animations here](https://animate.style/).
-</details>
-
-<details class="details-border">
-<summary>Background</summary>
-<br>
-
-You can use a video as your page background with [bideo](https://rishabhp.github.io/bideo.js/).
-
-You can add particles in the background of your pages with [particles](https://vincentgarreau.com/particles.js/).
-
-Some [animations here](https://greensock.com/) are quite beautiful.
-</details>
-
-<details class="details-border">
-<summary>UI</summary>
-<br>
-
-Create carrousels easily with [slick](http://kenwheeler.github.io/slick/).
-
-You can create a sort of image flipper with [preloadjs](https://www.createjs.com/demos/preloadjs/preloadimages)
-
-You can make a lot of funny animations with [anime.js](https://codepen.io/collection/XLebem/?grid_type).
-
-You can use [Turn.js](http://turnjs.com/) to make a book with flippable pages, but I didn't like it. [StPageFlip](https://nodlik.github.io/StPageFlip/) seems better. [PDF.js](http://www.page-flip.info/newspaper_wp/pdf-flipbook/#book_pdf/13) is beautiful too.
-</details>
-
-<details class="details-border">
-<summary>Plots</summary>
-<br>
-
-[d3.js](https://www.d3-graph-gallery.com/index.html) is the most well-known library.
-</details>
-
 <hr class="sl">
 
 ## External resources
